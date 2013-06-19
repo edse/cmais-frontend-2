@@ -4,8 +4,7 @@
 
 // CARREGA AS TELAS SECUNDÁRIAS
 add_stage_load_path("busca", "busca.js");
-add_stage_load_path("sobre", "sobre.js");
-//add_stage_load_path("como_funciona", "como_funciona.js");
+add_stage_load_path("como_funciona", "como_funciona.js");
 
 extend = function(destination, source) {
   for (var property in source)
@@ -162,16 +161,18 @@ var destaque_home = new container({});
 destaque_home.create = function(){
   this.translate = [0,0,5];
   this.visible_p =  false;
+  this.duracao = "";
   this.url_video = "";
   this.components = [
+    this.titulo = "",
     this.frame = new gbox({width:1288, height:728, color:[255,255,255,255], translate:[200,130,0], visible_p: false}),
     this.image = new gimage({ width:1280, height:720, translate:[200,130,0]}),
     this.background = 
         new gbox  ({width: 1280,height: 130, translate: [200,-165,0.1],  color: [0,0,0,180]}),
-        new gbox  ({width: 300, height: 40,  translate: [-270,-125,0.1], color: COLOR_ORANGE}),
-    this.titulo =    new gtext ({width: 300, translate: [-265,-125,0.2], color: [0,0,0,255],       align: LEFT}),
-    this.subtitulo = new gtext ({width: 900, translate: [30,-168,0.2], color: [255,255,255,255], align: LEFT, font_size: 28}),
-    this.descricao = new gtext ({width: 1200,translate: [180,-205,0.2],  color: [255,255,255,255], align: LEFT, font_size: 24}),
+        //new gbox  ({width: 300, height: 40,  translate: [-270,-125,0.1], color: COLOR_ORANGE}),
+    //this.titulo =    new gtext ({width: 300, translate: [-265,-125,0.2], color: [0,0,0,255], align: LEFT}),
+    this.subtitulo = new gtext ({width: 900, translate: [30,-118,0.2], color: [255,255,255,255], align: LEFT, font_size: 28}),
+    this.descricao = new gtextbox ({width: 1200, height: 100, translate: [180,-190,0.2],  color: [255,255,255,255], align: LEFT, font_size: 24}),
   ];
 }
 destaque_home.set_data = function(data){
@@ -183,7 +184,9 @@ destaque_home.set_data = function(data){
   this.verifica_destaque = function(param){
     if(param.destaque == "S" && destaque_selecionado == false){
       this.image.src = param.imagem_destaque;
-      setf_text(this.titulo, param.titulo);
+      //setf_text(this.titulo, param.titulo);
+      this.titulo = param.titulo;
+      this.duracao = param.duracao;
       setf_text(this.subtitulo, param.subtitulo);
       setf_text(this.descricao, param.descricao);      
       this.url_video = param.url_video;
@@ -196,17 +199,39 @@ destaque_home.set_data = function(data){
   this.visible_p = true;
 }
 destaque_home.enter_focus = function(){
+  show_info();
   this.frame.visible_p = true;  
 }
 destaque_home.leave_focus = function(){
   this.frame.visible_p = false;  
 }
 destaque_home.free = function(){
-    this.image.src = "";
-    setf_text(this.titulo, "");
-    setf_text(this.subtitulo, "");
-    setf_text(this.descricao, "");
+ this.image.src = "";
+ //setf_text(this.titulo, "");
+ setf_text(this.subtitulo, "");
+ setf_text(this.descricao, "");
 }
+
+destaque_home.show_hide_info_video = function() {
+  if(cont_info.visible_p == false){
+    cont_info.visible_p = true; 
+    logo.translate = [-772,423,6.1]; 
+    setf_text(programa_info_video, this.titulo);
+    //setf_text(titulo_info_video, this.components[this.cindex].label.text);
+    setf_text(titulo_info_video, this.subtitulo.text);
+    setf_text(descricao_info_video, this.descricao.text+"\n\nDuração: "+this.duracao);
+    force_redraw();
+  }else{
+    cont_info.visible_p = false;
+    logo.translate = [-775,425,0.3];
+    setf_text(programa_info_video, "");
+    setf_text(titulo_info_video, "");
+    setf_text(descricao_info_video, "");
+    force_redraw();
+  }
+};
+
+
 destaque_home.key_hook = function(up_down, key) {
   switch(key) {
    case TXK_LEFT:
@@ -256,6 +281,84 @@ video_player.create = function() {
   this.bar_width = 900;
   this.bar_height = 12;
   this.player = new MoviePlayer2({});
+  
+  this.player.event_hook = function (obj, event, index) {
+      var state = this.state;
+      switch(state) {
+        case this.STAT_STOP:
+          //setf_text(message1, "STOP");
+          break;
+        case this.STAT_PAUSE:
+          //setf_text(message1, "PAUSE");
+          break;
+        case this.STAT_PLAYING:
+          //setf_text(message1, "PLAYING");
+          break;
+        case this.STAT_WAITING:
+          //setf_text(message1, "WAITING");
+          break;    
+       }; 
+       
+      switch(event) {
+       case this.EV_PLAY_OK:
+         // A Cada 250 ms //
+         //message1.set_data("Player OK...");
+        break;
+      case this.EV_DOWNLOADING:
+        //message2.set_data("Carregando...");
+        message2.set_data("Downloading...");
+        break;
+      case this.EV_PLAYING:
+        //message2.set_data("Playing...");
+         //message2.set_data(this.duration);
+        break;
+      case this.EV_BITRATE_SWITCH:
+         //message2.set_data("Bitrate switch...");
+        break;
+      case this.EV_BITRATE_SWITCHED:
+        // message2.set_data("Bitrate switched");
+        break;
+      case this.EV_PAUSED:
+        //message2.set_data("Paused");
+        break;
+      case this.EV_STOPPED:
+        //message2.set_data("Stopped");
+        break;
+      case this.EV_PLAY_FINISH:
+        //OK//message2.set_data("Finished");
+        if(video_player.video_box.width == 1920){
+          full_screen();
+        }
+        break;
+      case this.EV_PLAY_NG:
+        var err = this.get_error(index);
+        switch(err) {
+        case this.NONE_ERROR:
+          //message2.set_data("Nenhum erro");
+          break;
+        case this.URL_ERROR:
+          //message2.set_data("["+index+"]: url error.");
+          this.play();
+          message2.set_data("Carregando...");
+          break;
+        case this.HTTP_ERROR:
+          this.play();
+          message2.set_data("Carregando...");
+          message2.set_data("["+index+"]: http error. (" + this.get_http_status(index) + ")");
+          break;
+        case this.CONTENT_ERROR:
+          message2.set_data("["+index+"]: content error.");
+          break;
+        case this.DECODE_ERROR:
+          message2.set_data("["+index+"]: decode error.");
+          break;
+        }
+        break;
+      default:
+        break;
+      }
+    };  
+  
   this.components = [
     this.video_box = new videobox({width:1280, height:720, color:[0,0,0,0],translate: [0,0, 0],  draw_type: "FULL"}),
     this.box_bar = new gbox({   width:1280, height:50, color: [0,0,0,180], translate: [0,-335,0],}),
@@ -291,11 +394,12 @@ video_player.free = function() {
 };
 video_player.playback = function(url_video_player) {
   try {
-    this.disconnect();
+    this.player.disconnect();
   }catch(e){
   };
   this.player.connect(VideoDev, AudioDev);
   this.player.set_movie(url_video_player);
+  //video_player.player.set_buffering_type();
   this.player.play();  
 };
 video_player.pause_or_resume = function() {
@@ -309,11 +413,21 @@ video_player.pause_or_resume = function() {
 };
 video_player.skip = function(){
   var time_to_end = video_player.player.duration/1000 - video_player.player.elapsed/1000;
-  if(time_to_end > 30){
-    this.player.skip(+30 * 1000);
+  if(time_to_end > 5){
+    this.player.skip(+5 * 1000);
     force_redraw();
    }
 };
+
+video_player.back_skip = function(){
+  var time_to_end = video_player.player.duration/1000 - video_player.player.elapsed/1000;
+  if(time_to_end > 5){
+    this.player.skip(-5 * 1000);
+    force_redraw();
+   }
+};
+
+
 video_player.stop = function() {
   if(this.player.elapsed > 1000){
     this.player.skip(-this.player.elapsed);
@@ -332,10 +446,6 @@ video_player.finalize = function() {
 video_player.key_hook = function(up_down, key){
   if (up_down != KEY_PRESS) return false;
   switch(key) {
-  case TXK_GREEN:
-    this.pause_or_resume();
-    return true;
-
   case TXK_BLUE:
     this.player.skip( 30 * 1000 );
     return true;
@@ -416,10 +526,12 @@ var message1 = new gtext({translate:[-400,480,0], width:512});
 message1.set_data = function (text) {
   setf_text(this,  "State value: " + text.toString());
 };
-var message2 = new gtext({translate:[ 000,480,0], width:512});
+var message2 = new gtext({translate:[ -250,-480,0], width:512});
 message2.set_data = function (text) {
   setf_text(this,  "Latest event value: " + text.toString());
 };
+
+setf_text(message2,  "Event:");
 
 //CARREGA JSON DE UM PROGRAMA SELECIONADO
 function carrega_json_programa (programa){
@@ -437,17 +549,24 @@ function carrega_json_programa (programa){
       var ret = null;
       if (status == 200) {
         ret = self.parse(body);
+      }else{
+        tela_erro.visible_p = true;
+        setf_text(tela_erro.components[2], '\nErro na conexão com o servidor. Erro: '+status+'\n\nVerifique sua conexão com a Internet, pressione a tecla "RETURN" e aguarde alguns segundos para uma nova tentativa de conexão.');
       }
       if (hook) hook(ret);
     };
    
-    if (this.handler > 0) cancel_http_request(this.handler);
+    if (this.handler > 0) {
+      cancel_http_request(this.handler);
+      
+    }
       this.handler = http_request({
         url: url_json_programa,
         method:"GET",
         sync:false,
         onload:hook_func,
       });
+      
     return;
   };
   
@@ -486,7 +605,8 @@ function carrega_json_programa (programa){
 //CRIAÇÃO DAS CORES DO MENU
 const COLOR_BLACK  = [0,0,0,255];
 const COLOR_GRAY   = [102,102,102,255];
-const COLOR_ORANGE = [255,103,51,255];
+//const COLOR_ORANGE = [255,85,51,255];
+const COLOR_ORANGE = [255,97,30,255];
 
 //FUNÇÃO PARA CRIAR OS ITENS DO MENU
 function list_item (param) {
@@ -556,22 +676,33 @@ list_item.prototype.leave_focus = function(){
  list.components[list.pos_item_ativado].frame.visible_p = true;
  list.components[list.pos_item_ativado].label.color = [0,0,0,255];     
 };
+
 list_item.prototype.free = function(){
+this.frame = "";
+this.bg = "";
+this.label = "";  
 };
 
 //var pos_item_ativado = 0; 
 var list = new container({});
-list.create = function(data) {
+
+list.remove = function() {
+   this.components.length = 0;
+   //force_redraw();
+};
+
+list.create = function(data){
+  list.remove();
   if(data){
-    this.TOP_TRANSLATE_LIST = 235;
+    this.TOP_TRANSLATE_LIST = 300;
     for (i=0; i < data.length; i++ ){
         this.components.push(new list_item(data[i]));
         this.components[i].translate = [-700, this.TOP_TRANSLATE_LIST-i*65,0];
       }
-   }
+  }
   this.cindex = 0;
   this.pos_item_ativado = this.cindex;
-  
+  force_redraw();
   this.components[0].action();
   this.components[0].frame.color = COLOR_ORANGE;
   this.components[0].frame.visible_p = true;
@@ -579,6 +710,7 @@ list.create = function(data) {
   //AO CRIAR FAZ A CHAMADA DO ACTION DO PRIMEIRO COMPONENTE
 };
 list.enter_focus = function() {
+  hide_info();
   common_key.set_cursor(this, this.components[this.cindex]);
 };
 list.leave_focus = function() {
@@ -586,7 +718,7 @@ list.leave_focus = function() {
 };
 list.move_down = function() {
    this.LEFT_TRANSLATE = -700;
-   this.TOP_TRANSLATE =   235;
+   this.TOP_TRANSLATE =   300;
    for (i=8;i<50;i++){
     if(this.cindex < i){
       break;
@@ -599,7 +731,7 @@ list.move_down = function() {
 };
 list.move_up = function() {
    this.LEFT_TRANSLATE = -700;
-   this.TOP_TRANSLATE =   235;
+   this.TOP_TRANSLATE =   300;
    for (i=8;i<50;i++){
     if(this.cindex < i){
       break;
@@ -654,8 +786,10 @@ var list_mask = new container({});
 list_mask.create = function() {
   this.translate = [0,0,0.1];
   this.components = [
-    this.to_box =   new gbox({ translate:[-700,410,0.1], color:[0,0,0,255], width:350, height:280, }),
+    this.to_box =   new gbox({ translate:[-700,445,0.1], color:[0,0,0,255], width:350, height:220, }),
     this.down_box = new gbox({ translate:[-700,-500,0.1], color:[0,0,0,255], width:350, height:100, }),
+    //this.to_box =   new gbox({ translate:[-700,450,0.1], color:[255,0,0,255], width:350, height:210, }),
+    //this.down_box = new gbox({ translate:[-700,-500,0.1], color:[255,0,0,255], width:350, height:100, }),    
   ];
 };
 
@@ -665,11 +799,13 @@ function btn_item(param) {
   if (typeof param.index == "number") this.index = param.index;
   if (param.translate != "undefined") this.translate = param.translate;
   if (param.url_video != "undefined") this.url_video = param.url_video;
+  if (param.descricao != "undefined") this.descricao = param.descricao;
+  if (param.duracao != "undefined") this.duracao = param.duracao;
   this.components = [
     this.bg = new gimage({ width:240, height:180, translate: [0,0,0], draw_type: DIRECT }),
     this.frame = new gbox({ width:245, height:185, color:[255,255,255,255],visible_p:false, translate:[0,0,-0.1], }),
-    this.hover = new gbox({ width:240, height:180, color:[0,0,0,180],visible_p:false, translate:[0,0,0], }),
-    this.title = new gtext({ width:240, align:LEFT, font_size: 26,color:[255,150,0,255], translate: [3,55,-0.1] }),
+    this.hover = new gbox({ width:240, height:180, color:[0,0,0,200],visible_p:false, translate:[0,0,0], }),
+    this.title = new gtext({ width:240, align:LEFT, font_size: 28,color: COLOR_ORANGE, translate: [3,55,-0.1] }),
     this.label = new gtextbox({ width:235, height: 100, align:LEFT, font_size: 26, translate:[3,-20,-0.1],}),
         
   ];
@@ -710,6 +846,8 @@ btn_item.prototype.set_data = function(param) {
   if (param.action) this.action = param.action;
   if (param.src) this.bg.src = param.src;
   if (param.url_video) this.url_video = param.url_video;
+  if (param.descricao) this.descricao = param.descricao;
+  if (param.duracao) this.duracao = param.duracao;
   setf_text(this.label, param.label || "");
   setf_text(this.title, param.titulo || "");
 };
@@ -789,11 +927,32 @@ btn_cont.free = function() {
   }
 };
 btn_cont.enter_focus = function() {
+  show_info();
   common_key.set_cursor(this, this.components[this.cindex]);
 };
 btn_cont.leave_focus = function() {
   common_key.set_cursor(this, null);
 };
+
+btn_cont.show_hide_info_video = function() {
+  if(cont_info.visible_p == false){
+    cont_info.visible_p = true; 
+    logo.translate = [-772,423,6.1]; 
+    setf_text(programa_info_video, this.components[this.cindex].title.text);
+    //setf_text(titulo_info_video, this.components[this.cindex].label.text);
+    setf_text(titulo_info_video, this.components[this.cindex].label.text);
+    setf_text(descricao_info_video, this.components[this.cindex].descricao+"\n\nDuração: "+this.components[this.cindex].duracao);
+    force_redraw();
+  }else{
+    cont_info.visible_p = false;
+    logo.translate = [-775,425,0.3];
+    setf_text(programa_info_video, "");
+    setf_text(titulo_info_video, "");
+    setf_text(descricao_info_video, "");
+    force_redraw();
+  }
+};
+
 btn_cont.key_hook = function(up_down, key) {
   switch(key) {
    case TXK_LEFT:
@@ -829,17 +988,17 @@ btn_cont.key_hook = function(up_down, key) {
     destaque_home.visible_p = false;
     // Habilita o VideoBox, Frame e Controles do Vídeo
     video_cont.visible_p = true;
+    
     video_player.visible_p = true;
     video_player.video_box.visible_p = true;
     video_controls_container.visible_p = true;
+    
     //Insere a URL do Vídeo e executa o player (this.connect + play)
     url_video_player = [this.components[this.cindex].url_video];
     video_player.playback(url_video_player);
     timer_manager.start();
     //Seta o cursor nos controles do vídeo
-    //Inserir o video_controls_container.leave_focus para desabilitar o video_box_frame_visible_p.
     common_key.set_cursor(sobj, video_controls_container);
-    
     return true;
   }
   return false;
@@ -856,6 +1015,14 @@ btn_cont_mask.create = function() {
   ];
 };
 
+var tela_erro = new container({});
+tela_erro.visible_p = false;
+tela_erro.components = [
+  new gbox({width: 1920, height: 1080, color: [5,0,0,200], translate: [0,0,5]}),
+  new gbox({width: 750,  height: 270,  color: [255,255,255,255], translate: [0,0,5]}),
+  new gtextbox({width: 700, height: 270, color: [0,0,0,255], translate: [0,0,5], text: "\nErro na conexão com o servidor.!", align: LEFT}),
+];
+
 //URL DO JSON DOS PROGRAMAS E ACTION INCIAL
 //const URL_JSON_PROGRAMAS = "http://172.20.16.219/panasonic/geraPanasonicJSON.php?program=all";
 const URL_JSON_PROGRAMAS = "http://cmais.com.br/panasonic/geraPanasonicJSON.php?program=all";
@@ -870,18 +1037,25 @@ json_request.request = function(param) {
     var ret = null;
     if (status == 200) {
       ret = self.parse(body);
+    }else{
+     //MENSAGEM DE ERRO
+     tela_erro.visible_p = true;
+     setf_text(tela_erro.components[2], '\nErro na conexão com o servidor. Erro: '+status+'\n\nVerifique sua conexão com a Internet, pressione a tecla "RETURN" e aguarde alguns segundos para uma nova tentativa de conexão.');    
     }
     if (hook) hook(ret);
   };
+  
   if (this.handler > 0) cancel_http_request(this.handler);
-    this.handler = http_request({ 
+    this.handler = http_request({
       url:URL_JSON_PROGRAMAS,
       method:"GET",
       sync:false,
       onload:hook_func,
     });
+    
   return;
 };
+
 json_request.parse = function(json) {
   var ret = null;
   try {
@@ -912,7 +1086,7 @@ function video_item (param) {
 video_item.prototype = new container({});
 video_item.prototype.enter_focus = function(){
   this.frame.visible_p = true;
-  this.frame.color = [255,157,0,255];
+  this.frame.color = COLOR_ORANGE;
   this.label.color = [0,0,0,255];
   //HABILITA CONTROLES DO VIDEO_PLAYER
   video_player.box_bar.visible_p = true;
@@ -932,7 +1106,8 @@ video_controls_container.create = function() {
   this.translate = [280,-130,3];
   this.visible_p = false;
   this.components = [
-    new video_item({ src: "imagens/icone-stop.png", text: "",  translate:[-220, 0,0], action: function() { video_player.stop();}}),
+    //new video_item({ src: "imagens/icone-stop.png", text: "",  translate:[-220, 0,0], action: function() { video_player.stop();}}),
+    new video_item({ src: "imagens/icone-back-skip.png", text: "", translate:[-220, 0,0],  action: function() { video_player.back_skip();}}),
     this.play_or_pause = new video_item({ src: "imagens/icone-pause.png", text: "",  translate:[  -100, 0,0],  action: function() { video_player.pause_or_resume();}}),
     new video_item({ src: "imagens/icone-skip.png", text: "", translate:[20, 0,0],  action: function() { video_player.skip();}}),
     new video_item({ src: "imagens/icone-full.png", text: "", translate:[140, 0,0],  action: function() { full_screen();}}),
@@ -940,6 +1115,7 @@ video_controls_container.create = function() {
   this.cindex = 0;
 };
 video_controls_container.enter_focus = function() {
+  hide_info();
   common_key.set_cursor(this, this.components[this.cindex]);
   video_box_frame.visible_p = true;
   this.visible_p = true;
@@ -951,10 +1127,12 @@ video_controls_container.enter_focus = function() {
   video_player.duration.visible_p = true;  
 };
 video_controls_container.leave_focus = function() {
+  show_info();  
   common_key.set_cursor(this, null);
   video_box_frame.visible_p = false;
   this.visible_p = false;
 };
+
 video_controls_container.key_hook = function(up_down, key) {
   common_key.set_cursor(this, this.components[this.cindex]);
   video_box_frame.visible_p = true;
@@ -972,8 +1150,8 @@ video_controls_container.key_hook = function(up_down, key) {
     video_player.pos.visible_p = false;
     video_player.elapsed.visible_p = false;
     video_player.duration.visible_p = false;  
-        
-  });  
+  });
+    
   switch (key) {
    case TXK_LEFT:
     if (this.cindex == 0) return false;
@@ -997,24 +1175,52 @@ video_controls_container.free = function() {
   }
 };
 
-var logo = new gimage({width: 175, height: 156, translate: [-775,380,0.3],   src: "imagens/logotipo.png"});
+var logo = new gimage({width: 175, height: 156, translate: [-775,425,0.3],   src: "imagens/logotipo.png"});
 var video_box_frame = new gbox({width:1288, height:728, color:[255,255,255,255], translate:[0,0,0], visible_p: false});
 var video_cont = new container({translate: [200,130,1],visible_p: false,components: [video_box_frame,]});
+
+//INFORMAÇÕES DO VÍDEO
+var cont_info = new container({});
+cont_info.visible_p = false;
+cont_info.components = [
+  this.background_info_video = new gbox({width: 1980, height: 1080, translate: [0,0,6], color: [0,0,0, 255]}),
+  this.titulo_info = new gtext({translate: [-640, 290, 6], width: 420, color: [255,255,255,255], text: "INFORMAÇÕES DO VÍDEO",font_size: 36,}),
+  this.titulo_info_video = new gtext ({translate: [-150, 100, 6],width: 1400, text: "",color: [255, 255, 255, 255],align: LEFT,}),
+  this.programa_info_video = new gtext ({translate: [-150, 170, 6],width: 1400, text: "",color: [255, 255, 255, 255],align: LEFT,color: COLOR_ORANGE,font_size: 38}),
+  this.descricao_info_video = new gtextbox({translate: [-150, -250, 6],width: 1400, height: 600, text: "",color: [255, 255, 255, 255],align: LEFT}),
+  new gimage({translate: [668, -478, 6],width: 60, height: 60, src: "imagens/icone-retornar.png"}),
+  new gtext ({translate: [751, -478, 6],width: 120,text: "Retornar",color: [255, 255, 255, 255],align: LEFT})    
+];
+  
 
 //FOOTER DA APLICAÇÃO
 var footer = new container({});
 footer.components = [
-  new gbox  ({translate: [-60, -480, 0],width: 30,height: 30,   color: [235,101,74,255]}),     
-  new gtext ({translate: [5,   -480, 1],width: 80,text: "Busca",color: [255, 255, 255, 255],align: LEFT}),
-  new gbox  ({translate: [85,  -480, 0],width: 30,height: 30,   color: [61,175,141,255]}),
-  new gtext ({translate: [150, -480, 0],width: 80,text: "Info", color: [255, 255, 255, 255],align: LEFT}),
-  new gbox  ({translate: [215, -480, 0],width: 30,height: 30,   color: [242,207,53,255]}),
+  new gbox  ({translate: [70, -480, 0],width: 30,height: 30,   color: [202,12,40,255]}),     
+  new gtext ({translate: [135,   -480, 1],width: 80,text: "Busca",color: [255, 255, 255, 255],align: LEFT}),
+  this.info = "", "",
+  new gbox  ({translate: [213, -480, 0],width: 30,height: 30,   color: [250,203,25,255]}),
   new gtext ({translate: [350, -480, 0],width: 230,text: "Como Funciona",color: [255, 255, 255, 255],align: LEFT}),
   new gimage({translate: [490, -480, 0],width: 60,height: 60, src: "imagens/icone-navegar.png"}),
   new gtext ({translate: [580, -480, 0],width: 120, text: "Navegar",color: [255, 255, 255, 255],align: LEFT}),
   new gimage({translate: [670, -480, 0],width: 60, height: 60, src: "imagens/icone-retornar.png"}),
-  new gtext ({translate: [750, -480, 0],width: 120,text: "Retornar",color: [255, 255, 255, 255],align: LEFT}) 
+  new gtext ({translate: [753, -480, 0],width: 120,text: "Retornar",color: [255, 255, 255, 255],align: LEFT}) 
 ];
+
+
+function show_info(){
+ footer.components[0].translate = [-60, -480, 0];
+ footer.components[1].translate = [5,   -480, 1];  
+ footer.components[2] = new gbox  ({translate: [88,  -480, 0],width: 30,height: 30,   color: [52,144,123,255]});
+ footer.components[3] = new gtext ({translate: [153, -480, 0],width: 80,text: "Info", color: [255, 255, 255, 255],align: LEFT});
+}
+
+function hide_info(){
+ footer.components[0].translate = [70, -480, 0];
+ footer.components[1].translate = [135,   -480, 1];  
+ footer.components[2] =  "";
+ footer.components[3] =  "";
+}
 
 //CRIA PLAY/STOP PARA FULL SCREEN
 function full_screen(){
@@ -1078,7 +1284,7 @@ var sobj = stage ({
   ],
   bg_image : [new gbox({ width: 11520, height: 6480, color:[0,0,0,255], translate: [0,0,-3325], })],
   components: [
-    video_player,
+    video_player,            // PLAYER DE VÍDEO
     logo,                    // LOGOTIPO DA FUNDAÇÃO
     list_mask,               // MASCARA DA LISTA DE PROGRAMAS
     list,                    // MENU DOS PROGRAMAS
@@ -1088,6 +1294,10 @@ var sobj = stage ({
     video_controls_container,// CONTROLES DO PLAYER DE VIDEO
     destaque_home,           // DESTAQUE PRINCIPAL DO PROGRAMA
     footer,                  // FOOTER DA APLICAÇÃO
+    tela_erro,               // TELA DE ERRO
+    cont_info,               // INFORMAÇÕES DO VÍDEO
+    message2,
+    
   ],
   key_hook:function(up_down, key) {
     if (up_down != KEY_PRESS) return true;
@@ -1109,19 +1319,27 @@ var sobj = stage ({
       return true;        
     }
     
+    
     switch(key) {
       case TXK_RED:
         on_stage("busca");
         return true;
       
       case TXK_YELLOW:
-        exit_appli(0);
+        on_stage("como_funciona");
         return true;   
 
       case TXK_GREEN:
-        exit_appli(0);
-        return true;  
-
+        if (this.cursor == btn_cont){
+          btn_cont.show_hide_info_video();
+          return true;
+        }
+        
+        if (this.cursor == destaque_home){
+            destaque_home.show_hide_info_video();
+        }
+        return true;
+          
      case TXK_LEFT:
       if (this.cursor == btn_cont || this.cursor == video_controls_container) {
         if(video_player.video_box.width == 1920){
@@ -1196,9 +1414,21 @@ var sobj = stage ({
        }
        break;
      case TXK_RETURN:
+       
+       if(tela_erro.visible_p == true){
+         tela_erro.visible_p = false;
+         force_redraw();
+         return true;
+       }
+     
        if(video_player.video_box.width == 1920){
           full_screen();
           return true;
+       }
+       
+       if(cont_info.visible_p == true){
+         btn_cont.show_hide_info_video();
+         return true;
        }
        exit_appli(0);
        return true;

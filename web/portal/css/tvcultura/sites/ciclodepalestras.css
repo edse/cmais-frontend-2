@@ -1,0 +1,18 @@
+body {background:#f7bc0e url(/portal/images/capaPrograma/ciclodepalestras/bg.jpg);}
+.topo-programa { background:#FFF; height:160px; }
+#apoio{float:right;}
+#conteudo-pagina {width: 990px;}
+#conteudo-pagina  p{width:100%; text-align:left; padding:0 20px;}
+#capa-site { margin-top:-102px !important; }
+#barra-site { min-height:160px;margin-top: 2px;}
+.bg-chamada { margin-bottom:100px; }
+#miolo { margin-top:0; }
+.capa { background:#fff; margin:0; }
+#esquerda { width:640px; margin-bottom:100px; margin-right:0;}
+#esquerda .titulos { margin-bottom:10px; }
+#direita { margin:0px 5px; }
+#rodape-portal { margin-top: -64px; }
+#rodape-portal .box-rodape {padding-left: 116px;}
+.capa-voltar-topo {padding-left: 62px;}
+.grid2 iframe{width:610px!important;height:390px!important;margin-left:10px; margin-bottom:20px;}
+.box-publicidade {margin-top:0;}
