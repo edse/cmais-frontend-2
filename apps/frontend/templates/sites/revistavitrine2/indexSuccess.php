@@ -20,7 +20,13 @@
       <!-- BARRA SITE -->
       <div id="barra-site">
         <div class="topo-programa">
-          <h2><img title="Vitrine" alt="Revista Vitrine" src="/portal/images/capaPrograma/revistavitrine2/logo-vitrine.png"></h2>
+          <?php if(isset($site) && $site->id > 0): ?>
+            <?php if($site->getImageThumb() != ""): ?>
+          <h2><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>"></h2>
+            <?php else: ?>
+          <h2><?php echo $site->getTitle() ?></h2>
+            <?php endif; ?>
+          <?php endif; ?>
         </div>
         
       </div>
@@ -33,36 +39,20 @@
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
-          <div class="menu-vitrine">
-            <ul>
-              <li><a href="/revistavitrine" title="Versão Ipad" class="ativo">Versão Ipad</a><span></span></li>
-              <li><a href="/revistavitrine/online" title="Versão Web">Versão Web</a><span></span></li>
-              <li><a href="javascript:;" title="Sobre a Revista" class="btn-sobre">Sobre a Revista<i class="icon-chevron-down icon-white"></i></a>
-                <p class="sobre" style="display:none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis sed nisi a pharetra. Vestibulum ante leo, accumsan sit amet adipiscing id, blandit eu velit. Sed a leo quam. Pellentesque sed pellentesque enim. Nunc eget elementum leo. Etiam sit amet varius nisl, sit amet scelerisque orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum dignissim erat et adipiscing adipiscing. Mauris ut cursus dui, tincidunt aliquam nibh. </p>
-              </li>
-            </ul>
-            
-          </div>
-         
+          <?php include_partial_from_folder('sites/revistavitrine2','global/menu', array('siteSections' => $siteSections, "site" => $site)) ?>
          
           <?php if(isset($program) && $program->id > 0): ?>
             <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
           <?php endif; ?>
 
-         <!--
-         <div class="capa-revista">
-           <img src="/portal/images/capaPrograma/revistavitrine/capa.png" alt="Revista Vitrine" />
-         </div>
-         -->
-         
           <div class="capa-revista">
             <?php if(isset($displays["destaque-principal"])): ?>
-              <img src="<?php echo $displays["destaque-principal"][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="Revista Vitrine" />
+              <?php if(count($displays["destaque-principal"]) > 0): ?>
+              <img src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" />
+              <?php endif; ?>
             <?php endif ?>
          </div>
 
-         
-                  
         </div>
         <!-- /CONTEUDO PAGINA -->
         
