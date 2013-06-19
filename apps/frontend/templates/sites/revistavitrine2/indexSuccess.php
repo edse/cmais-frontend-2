@@ -39,7 +39,7 @@
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
-          <?php include_partial_from_folder('sites/revistavitrine2','global/menu', array('siteSections' => $siteSections, "site" => $site)) ?>
+          <?php include_partial_from_folder('sites/revistavitrine2','global/menu', array('siteSections' => $siteSections, "site" => $site, "section" => $section)) ?>
          
           <?php if(isset($program) && $program->id > 0): ?>
             <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
