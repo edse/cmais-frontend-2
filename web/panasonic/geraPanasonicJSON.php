@@ -1,5 +1,6 @@
 <?php
-
+error_reporting(E_ALL);
+ini_set('display_errors','On');
 //LE JSON GERAL
 $jsonurl = "http://200.136.27.50/sony/panasonic.json";
 $json = file_get_contents($jsonurl);
@@ -50,6 +51,7 @@ if(isset($_GET['program'])){
                              "url_video" => $av->sources, 
                              "destaque"  => "S",
                              //"imagem_destaque" => $av->thumb,
+                             "duracao" => $av->duration,
                              "imagem_destaque"  =>$av->still,
                             );
             array_push($lista_videos_programa, $list);
@@ -97,6 +99,7 @@ if(isset($_GET['program'])){
                            "url_video" => $av->sources, 
                            "destaque"  => "S",
                            //"imagem_destaque" => $av->thumb,
+                           "duracao" => $av->duration,
                            "imagem_destaque"  =>$av->still,
                           );
             array_push($lista_videos_programa, $list);
