@@ -16,7 +16,8 @@ $(document).ready(function() {
   var tryin   = 3;
   var mult    = 0;
   
-  serverUrl = 'ws://200.136.27.7:80/secondscreencartaoverde';
+  //serverUrl = 'ws://200.136.27.7:80/secondscreencartaoverde';
+  serverUrl = 'ws://200.136.27.8:80/secondscreencartaoverde';
   
   var content_url = "/segundatela/secondscreencartaoverde/contents.json";
   var last_content_url = "/segundatela/secondscreencartaoverde/last-content.json";

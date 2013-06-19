@@ -16,7 +16,7 @@
 ?>
 
 <!--header-->
-<?php include_partial_from_folder('blocks', 'global/headerMob') ?>
+<?php include_partial_from_folder('blocks', 'global/headerMob') ?> 
 <!--/header-->
 
 <script>
