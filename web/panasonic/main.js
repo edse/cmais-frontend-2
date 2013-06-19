@@ -531,7 +531,7 @@ message2.set_data = function (text) {
   setf_text(this,  "Latest event value: " + text.toString());
 };
 
-setf_text(message2,  "Event:");
+//setf_text(message2,  "Event:");
 
 //CARREGA JSON DE UM PROGRAMA SELECIONADO
 function carrega_json_programa (programa){
@@ -1296,7 +1296,7 @@ var sobj = stage ({
     footer,                  // FOOTER DA APLICAÇÃO
     tela_erro,               // TELA DE ERRO
     cont_info,               // INFORMAÇÕES DO VÍDEO
-    message2,
+    //message2,
     
   ],
   key_hook:function(up_down, key) {
