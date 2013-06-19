@@ -16,7 +16,8 @@ $(document).ready(function() {
   var tryin   = 3;
   var mult    = 0;
   
-  serverUrl = 'ws://200.136.27.7:80/secondscreenjornaldacultura';
+  //serverUrl = 'ws://200.136.27.7:80/secondscreenjornaldacultura';
+  serverUrl = 'ws://200.136.27.8:80/secondscreenjornaldacultura';
   
   var content_url = "/segundatela/secondscreenjornaldacultura/contents.json";
   var last_content_url = "/segundatela/secondscreenjornaldacultura/last-content.json";
