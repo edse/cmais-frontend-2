@@ -603,7 +603,7 @@ class _sectionActions extends sfActions
               ->orderBy('a.id desc');
         }
         else{
-          if(in_array($this->site->getSlug(), array("penarua","cartaozinho"))){
+          if($this->site->getSlug() == "penarua"){
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.*')
               ->from('Asset a, SectionAsset sa')
@@ -615,11 +615,7 @@ class _sectionActions extends sfActions
               $this->assetsQuery->andWhere("sa.section_id = ?", (int)$request->getParameter('section'));
             else
               $this->assetsQuery->andWhere('sa.section_id = ?', $this->section->id);
-            
-            if($this->site->getSlug() == "penarua") 
-              $this->assetsQuery->orderBy('sa.display_order');
-            else
-              $this->assetsQuery->orderBy('a.id desc');
+            $this->assetsQuery->orderBy('sa.display_order');
           }
           else if (in_array($this->site->getSlug(), array('rodaviva','provocacoes','metropolis'))) {
             
@@ -691,7 +687,7 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
               $this->assetsQuery->orderBy('a.created_at desc');
             }
-            else if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class", "manha-cultura"))){
+            else if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos"))){
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a')
@@ -712,7 +708,7 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1)
                 ->orderBy('a.created_at desc');
             }
-			
+
             
             else if(in_array($this->site->getSlug(), array("cocorico","cocorico2")) && in_array($this->section->getSlug(), array("convidados"))) {
               $this->assetsQuery = Doctrine_Query::create()
@@ -1743,7 +1739,7 @@ class _sectionActions extends sfActions
         }
       }
       elseif($this->site->getType() == "ProgramaRadio"){
-        if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class","manha-cultura"))){
+        if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos"))){
           if($debug) print "<br>13-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new');
         }
@@ -1830,4 +1826,3 @@ $this->page = 1;
 
   
 }
-
