@@ -597,7 +597,7 @@ class _sectionActions extends sfActions
             else
               $this->assetsQuery->andWhere('sa.section_id = ?', $this->section->id);
             
-            if($this->site->getSlug() == "penarua") 
+            if(in_array($this->site->getSlug(), array("penarua","graduados"))) 
               $this->assetsQuery->orderBy('sa.display_order');
             else
               $this->assetsQuery->orderBy('a.id desc');
