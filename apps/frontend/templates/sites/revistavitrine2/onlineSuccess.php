@@ -57,7 +57,7 @@ if (!isset($asset)) {
               <a href="<?php echo $a->retriveUrl() ?>" title="<?php echo $a->getTitle() ?>">
                 <?php $preview = $a->retriveRelatedAssetsByRelationType("Preview") ?>
                 <?php if($preview): ?>
-                <img src="<?php echo $preview->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $a->getTitle() ?>" />
+                <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $a->getTitle() ?>" />
                 <?php endif; ?>
                 <div class="descricao">
                   <h2><?php echo $a->getTitle() ?></h2>
