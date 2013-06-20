@@ -1,5 +1,19 @@
 <?php
-$assets = $pager->getResults();
+$assets = Doctrine_Query::create()
+  ->select('a.*')
+  ->from('Asset a, SectionAsset sa, Section s')
+  ->where('sa.asset_id = a.id')
+  ->andWhere('sa.section_id = s.id')
+  ->andWhere('s.slug = ?', "online")
+  ->andWhere('a.site_id = ?', (int)$site->id)
+  ->andWhere('a.asset_type_id = 1')
+  ->andWhere('a.is_active = 1')
+  ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+  ->groupBy('sa.asset_id')
+  ->orderBy('sa.display_order')
+  ->limit(50)
+  ->execute();
+
 if (!isset($asset)) {
   $asset = $assets[0];
 }
