@@ -18,7 +18,13 @@ if (!isset($asset)) {
   <!-- BARRA SITE -->
   <div id="barra-site">
     <div class="topo-programa">
-      <h2><img title="Vitrine" alt="Revista Vitrine" src="/portal/images/capaPrograma/revistavitrine2/logo-vitrine.png"></h2>
+      <?php if(isset($site) && $site->id > 0): ?>
+        <?php if($site->getImageThumb() != ""): ?>
+      <h2><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>"></h2>
+        <?php else: ?>
+      <h2><?php echo $site->getTitle() ?></h2>
+        <?php endif; ?>
+      <?php endif; ?>
     </div>
   </div>
   <!-- /BARRA SITE -->
