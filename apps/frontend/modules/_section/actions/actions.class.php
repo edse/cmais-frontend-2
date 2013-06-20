@@ -669,11 +669,8 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1)
                 ->andWhereIn('a.id',$related);
               if($request->getParameter('busca') != '')
-                $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");
-              if($site->getSlug() == "graduados")
-                $this->assetsQuery->orderBy('sa.display_order desc');
-              else               
-                $this->assetsQuery->orderBy('a.created_at desc');
+                $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
+              $this->assetsQuery->orderBy('a.created_at desc');
             }
             else if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class", "manha-cultura"))){
               $this->assetsQuery = Doctrine_Query::create()
@@ -734,16 +731,12 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1);
               if($request->getParameter('busca') != '')
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
-              if(($this->site->getId() == 295)&&($this->section->id == 893))
-                $this->assetsQuery->orderBy('sa.display_order');
-              else if(($this->site->getId() == 282)&&($this->section->id == 778))
+              if(($this->site->getId() == 295)&&($this->section->id == 893) || ($this->site->getId() == 282)&&($this->section->id == 778) || ($this->site->getId() == 1217)&&($this->section->id == 2438) || $this->site->Program->getIsACourse())
                 $this->assetsQuery->orderBy('sa.display_order');
               else if(($this->site->getId() == 1149)&&($this->section->id == 2133))
                 $this->assetsQuery->orderBy('a.id desc');
               else if(($this->site->getId() == 1135)&&($this->section->id == 2355))
                 $this->assetsQuery->orderBy('a.title asc');
-              else if ($this->site->Program->getIsACourse())
-                $this->assetsQuery->orderBy('sa.display_order');
               else
                 $this->assetsQuery->orderBy('a.created_at desc');
             }
