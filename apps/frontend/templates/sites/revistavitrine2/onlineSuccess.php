@@ -30,7 +30,7 @@
       
       <div class="capa-revista online">
         <div class="descricao">
-          <h2>Vitrine #03</h2>
+          <h2><?php echo $asset->getTitle() ?></h2>
           <p class="data">Junho - 2013</p>
           <p>Nesta edição, Eloar Guazzelli tenta desvendar o universo de Fernando Pessoa em HQ. Veja ainda, entrevista com Tom Zé, reportagem sobre o futuro dos televisores e um perfil da nova MPB.</p>
         </div>
