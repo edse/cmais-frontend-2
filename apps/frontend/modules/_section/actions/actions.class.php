@@ -597,7 +597,7 @@ class _sectionActions extends sfActions
             else
               $this->assetsQuery->andWhere('sa.section_id = ?', $this->section->id);
             
-            if(in_array($this->site->getSlug(), array("penarua","graduados"))) 
+            if($this->site->getSlug() == "penarua") 
               $this->assetsQuery->orderBy('sa.display_order');
             else
               $this->assetsQuery->orderBy('a.id desc');
@@ -669,8 +669,11 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1)
                 ->andWhereIn('a.id',$related);
               if($request->getParameter('busca') != '')
-                $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
-              $this->assetsQuery->orderBy('a.created_at desc');
+                $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");
+              if($site->getSlug() == "graduados")
+                $this->assetsQuery->orderBy('sa.display_order desc');
+              else               
+                $this->assetsQuery->orderBy('a.created_at desc');
             }
             else if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class", "manha-cultura"))){
               $this->assetsQuery = Doctrine_Query::create()
