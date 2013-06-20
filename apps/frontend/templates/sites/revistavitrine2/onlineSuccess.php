@@ -37,7 +37,7 @@ if (!isset($asset)) {
       <div class="capa-revista online">
         <div class="descricao">
           <h2><?php echo $asset->getTitle() ?></h2>
-          <p class="data"><?php echo $asset->getHeadline() ?></p>
+          <p class="data"><?php echo $asset->AssetContent->getHeadline() ?></p>
           <p><?php echo $asset->getDescription() ?></p>
         </div>
         <div class="issue">
@@ -61,7 +61,7 @@ if (!isset($asset)) {
                 <?php endif; ?>
                 <div class="descricao">
                   <h2><?php echo $a->getTitle() ?></h2>
-                  <p class="data"><?php echo $a->getHeadline() ?></p>
+                  <p class="data"><?php echo $a->AssetContent->getHeadline() ?></p>
                   <p><?php echo $a->getDescription() ?></p>
                 </div>
               </a>
