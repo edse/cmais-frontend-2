@@ -22,16 +22,11 @@
 
     <!-- CONTEUDO PAGINA -->
     <div id="conteudo-pagina">
-      <div class="menu-vitrine">
-        <ul>
-          <li><a href="/revistavitrine2" title="Versão Ipad">Versão Ipad</a><span></span></li>
-          <li><a href="/revistavitrine2/online" title="Versão Web" class="ativo">Versão Web</a><span></span></li>
-          <li><a href="javascript:;" title="Sobre a Revista" class="btn-sobre">Sobre a Revista<i class="icon-chevron-down icon-white"></i></a><p class="sobre" style="display:none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis sed nisi a pharetra. Vestibulum ante leo, accumsan sit amet adipiscing id, blandit eu velit. Sed a leo quam. Pellentesque sed pellentesque enim. Nunc eget elementum leo. Etiam sit amet varius nisl, sit amet scelerisque orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum dignissim erat et adipiscing adipiscing. Mauris ut cursus dui, tincidunt aliquam nibh. </p></li>
-        </ul>
-      </div>
-      <?php if(isset($program) && $program->id > 0):      ?>
-      <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program))      ?>
-      <?php endif;?>
+      <?php include_partial_from_folder('sites/revistavitrine2','global/menu', array('siteSections' => $siteSections, "site" => $site, "section" => $section)) ?>
+     
+      <?php if(isset($program) && $program->id > 0): ?>
+        <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
+      <?php endif; ?>
       
       <div class="capa-revista online">
         <div class="descricao">
