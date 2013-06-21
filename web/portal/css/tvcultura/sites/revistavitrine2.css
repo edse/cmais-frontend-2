@@ -54,6 +54,9 @@ body { background:#fff url("/portal/images/capaPrograma/revistavitrine2/bg-vitri
 .paginacao ul li { width:auto; margin-right:10px; }
 .paginacao ul li { *width:20px; }
 
-.menu-vitrine li a.btn-sobre { *width: 150px; *float:left; *position:relative; } 
+/* ie */
+.menu-vitrine li a.btn-sobre { *width: 130px; *float:left; *position:relative; } 
 .menu-vitrine .icon-chevron-down { *position:absolute; *top:5px; *right:5px; }
-.menu-vitrine li p { *left:0; }
+.menu-vitrine li p { *left:0; *top:20px; *width:300px; *overflow:hidden }
+.menu-vitrine li { *position:relative; }
+/* /ie */
