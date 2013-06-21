@@ -180,15 +180,15 @@ $assets = $pager->getResults();
           <li class="videos"><a href="http://tvratimbum.cmais.com.br/videos" title="Vídeos" >Vídeos</a></li>
           <li class="jogos"><a href="
           	<?php
-          	if ($site->retriveId == '1230'):
+          	if ($site->id == '1230'):
 			echo "http://http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=1230&section_id=2473";
-			elseif ($site->getId == '8'):
+			elseif ($site->id == '8'):
 			echo "http://http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=8&section_id=585";	
-			elseif ($site->getId == '13'):
+			elseif ($site->id == '13'):
 			echo "http://http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=13&section_id=1071";
-			elseif ($site->getId == '35'):
+			elseif ($site->id == '35'):
           	echo "http://http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=35&section_id=1053";
-			elseif ($site->getId == ''):
+			elseif ($site->id == ''):
           	echo "http://tvratimbum.cmais.com.br/jogos";
 			endif;
           	?>
