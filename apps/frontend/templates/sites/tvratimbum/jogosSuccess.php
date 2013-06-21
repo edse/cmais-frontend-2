@@ -1,9 +1,4 @@
-<?php
 
-$section_id = $_GET['section_id'];
-$site_id = $_GET['site_id'];
-
-?>
 <?php
   if(!isset($section_id)) $section_id = 12;
   if(!isset($site_id) || $site_id == "all") $site_id = "";
@@ -98,6 +93,12 @@ $site_id = $_GET['site_id'];
   }
   $(document).ready(function(){
     $.ajax({
+<?php
+
+$section_id = $_GET['section_id'];
+$site_id = $_GET['site_id'];
+
+?>     
       url: "http://tvratimbum.cmais.com.br<?php echo url_for("@homepage") ?>ajax/infinitescroll",
       data: "page=1&section_id=<?php echo $section_id?>&site_id=<?php echo $site_id?>",
       success: function(data){
