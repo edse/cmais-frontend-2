@@ -181,13 +181,13 @@ $assets = $pager->getResults();
           <li class="jogos"><a href="
           	<?php
           	if ($site->id == '1230'):
-			echo "http://http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=1230&section_id=2473";
+			echo "http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=1230&section_id=2473";
 			elseif ($site->id == '8'):
-			echo "http://http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=8&section_id=585";	
+			echo "http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=8&section_id=585";	
 			elseif ($site->id == '13'):
-			echo "http://http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=13&section_id=1071";
+			echo "http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=13&section_id=1071";
 			elseif ($site->id == '35'):
-          	echo "http://http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=35&section_id=1053";
+          	echo "http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=35&section_id=1053";
 			elseif ($site->id == ''):
           	echo "http://tvratimbum.cmais.com.br/jogos";
 			endif;
