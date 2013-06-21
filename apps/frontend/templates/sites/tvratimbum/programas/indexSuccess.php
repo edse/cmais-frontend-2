@@ -180,7 +180,7 @@ $assets = $pager->getResults();
           <li class="videos"><a href="http://tvratimbum.cmais.com.br/videos" title="Vídeos" >Vídeos</a></li>
           <li class="jogos"><a href="
           	<?php
-          	if ($site->getId == '1230'):
+          	if ($site->retriveId == '1230'):
 			echo "http://http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=1230&section_id=2473";
 			elseif ($site->getId == '8'):
 			echo "http://http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=8&section_id=585";	
