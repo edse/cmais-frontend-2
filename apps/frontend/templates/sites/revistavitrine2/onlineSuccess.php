@@ -34,12 +34,13 @@ if (!isset($asset)) {
     <div class="topo-programa">
       <?php if(isset($site) && $site->id > 0): ?>
         <?php if($site->getImageThumb() != ""): ?>
-      <h2><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>"></h2>
+      <h2><a href="/revistavitrine2" title="Revista Vitrine"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>"></a></h2>
         <?php else: ?>
-      <h2><?php echo $site->getTitle() ?></h2>
+      <h2><a href="/revistavitrine2" title="Revista Vitrine"><?php echo $site->getTitle() ?></a></h2>
         <?php endif; ?>
       <?php endif; ?>
     </div>
+    
   </div>
   <!-- /BARRA SITE -->
   <!-- MIOLO -->
