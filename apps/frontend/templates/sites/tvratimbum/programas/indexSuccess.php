@@ -190,6 +190,7 @@ $assets = $pager->getResults();
           	echo "http://http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=35&section_id=1053";
 			elseif ($site->getId == ''):
           	echo "http://tvratimbum.cmais.com.br/jogos";
+			endif;
           	?>
           	" title="Jogos">Jogos</a></li>
           <li class="atividades"><a href="http://tvratimbum.cmais.com.br/atividades" title="Atividades">Atividades</a></li>
