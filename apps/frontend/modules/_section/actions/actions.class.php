@@ -542,7 +542,9 @@ class _sectionActions extends sfActions
               ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
               ->orderBy('s.display_order')
               ->execute();
-          }elseif($this->section->Site->getSlug() == "sic"){
+          }elseif(in_array($this->section->Site->getSlug(), array("sic","fpa","revistavitrine2","revistavitrine","radarcultura"))){
+            if($this->section->Site->getSlug() == "radarcultura")
+              $this->setLayout('radarcultura');
             $this->siteSections = Doctrine_Query::create()
               ->select('s.*')
               ->from('Section s')
@@ -550,27 +552,6 @@ class _sectionActions extends sfActions
               ->andWhere('parent_section_id IS NULL')
               ->andWhere('s.is_active = ?', 1)
               ->andWhere('s.is_visible = ?', 1)
-              ->orderBy('s.display_order')
-              ->execute();
-          }elseif($this->section->Site->getSlug() == "fpa"){
-            $this->siteSections = Doctrine_Query::create()
-              ->select('s.*')
-              ->from('Section s')
-              ->where('s.site_id = ?', $this->section->getSiteId())
-              ->andWhere('parent_section_id IS NULL')
-              ->andWhere('s.is_active = ?', 1)
-              ->andWhere('s.is_visible = ?', 1)
-              ->orderBy('s.display_order')
-              ->execute();
-          }elseif($this->section->Site->getSlug() == "radarcultura"){
-            $this->setLayout('radarcultura');
-            $this->siteSections = Doctrine_Query::create()
-              ->select('s.*')
-              ->from('Section s')
-              ->where('s.site_id = ?', $this->site->id)
-              ->andWhere('s.is_active = ?', 1)
-              ->andWhere('s.is_visible = ?', 1)
-              ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
               ->orderBy('s.display_order')
               ->execute();
           }else{
@@ -750,16 +731,12 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1);
               if($request->getParameter('busca') != '')
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
-              if(($this->site->getId() == 295)&&($this->section->id == 893))
-                $this->assetsQuery->orderBy('sa.display_order');
-              else if(($this->site->getId() == 282)&&($this->section->id == 778))
+              if((in_array($this->section->Site->getSlug(), array("revistavitrine", "revistavitrine2")) && $this->section->getSlug() == "online") || ($this->site->getId() == 295)&&($this->section->id == 893) || ($this->site->getId() == 282)&&($this->section->id == 778) || ($this->site->getId() == 1217)&&($this->section->id == 2438) || $this->site->Program->getIsACourse())
                 $this->assetsQuery->orderBy('sa.display_order');
               else if(($this->site->getId() == 1149)&&($this->section->id == 2133))
                 $this->assetsQuery->orderBy('a.id desc');
               else if(($this->site->getId() == 1135)&&($this->section->id == 2355))
                 $this->assetsQuery->orderBy('a.title asc');
-              else if ($this->site->Program->getIsACourse())
-                $this->assetsQuery->orderBy('sa.display_order');
               else
                 $this->assetsQuery->orderBy('a.created_at desc');
             }

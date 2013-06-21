@@ -162,27 +162,16 @@ class _assetActions extends sfActions
 	        ->orderBy('s.display_order')
 	        ->execute();
       }
-			elseif($this->asset->Site->getSlug() == "sic"){
+			elseif(in_array($this->asset->Site->getSlug(), array("sic","revistavitrine2","revistavitrine","radarcultura"))){
 	      $this->siteSections = Doctrine_Query::create()
 	        ->select('s.*')
 	        ->from('Section s')
 	        ->where('s.site_id = ?', $this->asset->Site->getId())
 	        ->andWhere('s.is_active = ?', 1)
 	        ->andWhere('s.is_visible = ?', 1)
-	        ->andWhere('parent_section_id IS NULL')
+          ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
 	        ->orderBy('s.display_order')
 	        ->execute();
-      }
-      elseif($this->asset->Site->getSlug() == "radarcultura"){
-        $this->siteSections = Doctrine_Query::create()
-          ->select('s.*')
-          ->from('Section s')
-          ->where('s.site_id = ?', $this->asset->Site->getId())
-          ->andWhere('s.is_active = ?', 1)
-          ->andWhere('s.is_visible = ?', 1)
-          ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
-          ->orderBy('s.display_order')
-          ->execute();
       }
       else{
         $this->siteSections = Doctrine_Query::create()
@@ -1019,8 +1008,14 @@ class _assetActions extends sfActions
       }
       else{
         if($this->site->getType() == "Hotsite" || $this->site->getType() == 1){
-          if($debug) print "<br>3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultHotsite/'.$this->asset->AssetType->getSlug();
-          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultHotsite/'.$this->asset->AssetType->getSlug());
+          if(in_array($this->site->getSlug(), array("revistavitrine","revistavitrine2"))) {
+            if($debug) print "<br>3-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/online';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/online');
+          }
+          else {
+            if($debug) print "<br>3-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultHotsite/'.$this->asset->AssetType->getSlug();
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultHotsite/'.$this->asset->AssetType->getSlug());
+          }
         }
         elseif(($this->site->getType() == "Portal" || $this->site->getType() == 2)&&($this->site->getSlug() != "tvratimbum")){
           if(in_array($this->asset->getId(), array(121120, 121117, 120858, 121146, 121145, 122440))){

@@ -27,7 +27,8 @@ $(document).ready(function() {
   
   //serverUrl = 'ws://200.136.27.7:80/secondscreenqss';
   //serverUrl = 'ws://127.0.0.1:8181/secondscreenqss';
-  serverUrl = 'ws://200.136.27.8:80/secondscreenqss';
+  //serverUrl = 'ws://200.136.27.8:80/secondscreenqss';
+  serverUrl = 'ws://200.136.27.25:80/secondscreenqss';
 
   //var question_url  = "/web/questions.json";
   var question_url  = "/segundatela/secondscreenqss/questions.json";
@@ -295,7 +296,7 @@ $(document).ready(function() {
   window.getRanking();
   interval_rank = setInterval(function(){
     window.getRanking();
-  }, 120000);//120000ms = 2min
+  }, 40000);//120000ms = 2min
 
   startClock = function(){
     tryin = (tryin+mult)*3;
