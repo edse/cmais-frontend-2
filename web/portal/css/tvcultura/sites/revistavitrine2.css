@@ -14,7 +14,7 @@ body { background:#fff url("/portal/images/capaPrograma/revistavitrine2/bg-vitri
 .conteudo-online { margin-bottom:100px; }
 .redes .curtir { float:left; }
 .menu-vitrine { border-top:1px solid #b5b6c0; border-bottom:1px solid #b5b6c0; margin-top:20px; }
-.menu-vitrine ul { width:37.9%; margin:5px auto; overflow:hidden;  }
+.menu-vitrine ul { width:40%; margin:5px auto; overflow:hidden;  }
 .menu-vitrine ul li { float:left; }
 .menu-vitrine li a { color:#474747; font-size:12px; text-transform:uppercase; font-weight:bold; float: left; padding:5px;}
 .menu-vitrine li span { display: block; margin:0 10px; float:left; background:#b5b6c0; width: 1px; height:17px; margin-top:3px;}
@@ -38,7 +38,7 @@ body { background:#fff url("/portal/images/capaPrograma/revistavitrine2/bg-vitri
 .edicoes .tit-edicoes { background:url(/portal/images/capaPrograma/revistavitrine2/bg-tit.jpg) repeat-x bottom; height:22px; }
 .edicoes .tit-edicoes h3 { border-top:1px solid #7f7b7b; background:#464646; color:#fff; text-transform:uppercase; font-size:14px; display: inline; padding:3px 10px;}
 .edicoes ul img { float:left; margin-right:10px; }
-.edicoes ul .descricao { width:295px; }
+.edicoes ul .descricao { width:275px; }
 .edicoes ul .descricao h2 { font-size:28px; }
 .edicoes ul li { width:50%; float: left;  margin-top:40px; }
 .paginacao { margin-top:40px; background:none; }
@@ -53,3 +53,10 @@ body { background:#fff url("/portal/images/capaPrograma/revistavitrine2/bg-vitri
 .paginacao .centraliza {float:left;}
 .paginacao ul li { width:auto; margin-right:10px; }
 .paginacao ul li { *width:20px; }
+
+/* ie */
+.menu-vitrine li a.btn-sobre { *width: 130px; *float:left; *position:relative; } 
+.menu-vitrine .icon-chevron-down { *position:absolute; *top:5px; *right:5px; }
+.menu-vitrine li p { *left:0; *top:20px; *width:300px; *overflow:hidden }
+.menu-vitrine li { *position:relative; }
+/* /ie */

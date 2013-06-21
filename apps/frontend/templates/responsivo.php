@@ -4,14 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Le styles -->
-    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet"/>
-    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="/portal/css/tvcultura/responsivo.css" type="text/css" />
+    <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet"/>
+    <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/responsivo.css" type="text/css" />
     
     
     
-    <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-    <script src="/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>

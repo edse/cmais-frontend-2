@@ -1,3 +1,7 @@
+<?php
+$section_id = $_GET['section_id'];
+$site_id = $_GET['site_id'];
+?>
 
 <?php
   if(!isset($section_id)) $section_id = 12;
@@ -127,29 +131,10 @@
         <div id="box-jogos-home">
           <div class="topo-esq"></div>
           <div class="topo">
-            <a href="" class="enunciado">Jogos</a>
-            <form action="" method="post" name="filter" id="filter">
-              <input type="hidden" name="section_id" id="section_id" value="" />
-              <select name="site_id" id="site_id" onchange="$('#filter').submit();">
-                <option value="all">Todos os programas</option>
-                <?php foreach($sites as $s): ?>
-                  <option value="<?php echo $s->getId()?>"<?php if($s->getId() == $site_id) echo ' selected="selected"'?>><?php echo $s->getTitle()?></option>
-                <?php endforeach; ?>
-              </select>
-            </form>
+            <a href="" class="enunciado">Jogos</a>           
           </div>
           <hr />
-          <div class="categorias">
-            <ul>
-              <li><a href="/jogos"><span class="pontaBarra"></span><span class="miolo">Todos</span><span class="caudaBarra"></span></a></li>
-              <li><a href="javascript: setSection('28');"><span class="pontaBarra"></span><span class="miolo">Aventura</span><span class="caudaBarra"></span></a></li>
-              <li><a href="javascript: setSection('27');"><span class="pontaBarra"></span><span class="miolo">Desafio</span><span class="caudaBarra"></span></a></li>
-              <li><a href="javascript: setSection('26');"><span class="pontaBarra"></span><span class="miolo">Esportes</span><span class="caudaBarra"></span></a></li>
-              <li><a href="javascript: setSection('29');"><span class="pontaBarra"></span><span class="miolo">Educativos</span><span class="caudaBarra"></span></a></li>
-              <li><a href="javascript: setSection('25');"><span class="pontaBarra"></span><span class="miolo">Habilidade</span><span class="caudaBarra"></span></a></li>
-            </ul>
-            <hr />
-          </div>
+          
           
           <?php /* 
           <div class="escolhido"><!-- aparecer� somente quando o item for escolhido -->
