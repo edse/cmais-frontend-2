@@ -49,7 +49,8 @@ if (!isset($asset)) {
 
     <!-- CONTEUDO PAGINA -->
     <div id="conteudo-pagina">
-      <?php include_partial_from_folder('sites/revistavitrine','global/menu', array('siteSections' => $siteSections, "site" => $site, "section" => $section)) ?>
+      <?php $section = $asset->getSections() ?>
+      <?php include_partial_from_folder('sites/revistavitrine','global/menu', array('siteSections' => $siteSections, "site" => $site, "section" => $section[0])) ?>
      
       <?php if(isset($program) && $program->id > 0): ?>
         <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
