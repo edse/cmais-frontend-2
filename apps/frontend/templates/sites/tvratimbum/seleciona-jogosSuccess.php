@@ -134,17 +134,7 @@ $site_id = $_GET['site_id'];
             <a href="" class="enunciado">Jogos</a>           
           </div>
           <hr />
-          <div class="categorias">
-            <ul>
-              <li><a href="/jogos"><span class="pontaBarra"></span><span class="miolo">Todos</span><span class="caudaBarra"></span></a></li>
-              <li><a href="javascript: setSection('28');"><span class="pontaBarra"></span><span class="miolo">Aventura</span><span class="caudaBarra"></span></a></li>
-              <li><a href="javascript: setSection('27');"><span class="pontaBarra"></span><span class="miolo">Desafio</span><span class="caudaBarra"></span></a></li>
-              <li><a href="javascript: setSection('26');"><span class="pontaBarra"></span><span class="miolo">Esportes</span><span class="caudaBarra"></span></a></li>
-              <li><a href="javascript: setSection('29');"><span class="pontaBarra"></span><span class="miolo">Educativos</span><span class="caudaBarra"></span></a></li>
-              <li><a href="javascript: setSection('25');"><span class="pontaBarra"></span><span class="miolo">Habilidade</span><span class="caudaBarra"></span></a></li>
-            </ul>
-            <hr />
-          </div>
+          
           
           <?php /* 
           <div class="escolhido"><!-- aparecer� somente quando o item for escolhido -->
