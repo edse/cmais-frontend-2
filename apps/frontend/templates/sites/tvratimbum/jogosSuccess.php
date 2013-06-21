@@ -100,7 +100,10 @@ $site_id = $_GET['site_id'];
       data: "page=1&section_id=<?php echo $section_id?>&site_id=<?php echo $site_id?>",
       success: function(data){
         $('#infinite_scroll').html(data);
+        <?php if(isset($section_id))?>
+        <?php else: ?>
         loadScroll();
+        <?php endif; ?>
       }
     });
   });
