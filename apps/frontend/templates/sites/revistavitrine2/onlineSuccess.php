@@ -19,7 +19,7 @@ if (!isset($asset)) {
 }
 ?>
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/todos-videos.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/revistavitrine2.css" type="text/css" />
 <?php use_helper('I18N', 'Date')?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))?>
 
