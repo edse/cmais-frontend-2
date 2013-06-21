@@ -296,7 +296,7 @@ $(document).ready(function() {
   window.getRanking();
   interval_rank = setInterval(function(){
     window.getRanking();
-  }, 120000);//120000ms = 2min
+  }, 40000);//120000ms = 2min
 
   startClock = function(){
     tryin = (tryin+mult)*3;
