@@ -1,13 +1,16 @@
 <?php
+/*
 $q = $assets[0]->AssetQuestion->getQuestion()."<br/>";
  
  //imagens respectivas das respostas
 $imgs = $respostas[0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
 $img_0 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg";
 $imgs = $respostas[1]->Asset->retriveRelatedAssetsByAssetTypeId(2);
-$img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg"; 
+$img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImage->file.".jpg"; */
 ?>
 <div class="enquete span12">
+ <?php 
+ /*
   <h3>enquete da semana</h3>
   <p><?php echo $q;?></p>
   <!--Pergunta-->
@@ -36,9 +39,13 @@ $img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImag
       <span class="last"></span>
     </div>
   </form>
+  */
+?>
   <!--/Pergunta-->
   <!--Resposta FORM INATIVA-->
-  <form class="navbar-form pull-left inativo span12" style="display: none;">
+  <form class="navbar-form pull-left inativo span12" >
+    <?php
+    /*
     <div class="versus"></div>
     <?php for($i=0; $i<count($respostas); $i++): ?>
     <div class="span6 <?php if($i>0)echo "last"?>">
@@ -48,6 +55,7 @@ $img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImag
       <p class="resposta-<?php echo $i?>">50%</p>
     </div>
     <?php endfor;?>
+     */ ?>
     <a href="<?php echo $site->retriveUrl();?>/enquetes" title="Ver enquetes anteriores">Ver enquetes anteriores</a>
   </form>
   <!--/Resposta-->

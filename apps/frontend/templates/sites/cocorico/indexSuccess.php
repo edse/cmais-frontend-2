@@ -251,6 +251,7 @@
         <?php endif; ?>
         <!--ENQUETE-->
         <?php
+        /*
         $assets = Doctrine_Query::create()
           ->select('a.*')
           ->from('Asset a, SectionAsset sa, Section s')
@@ -267,6 +268,7 @@
             ->from('AssetAnswer aa')
             ->where('aa.asset_question_id = ?', (int)$assets[0]->AssetQuestion->id)
             ->execute();
+            */
           ?>  
         <?php include_partial_from_folder('sites/cocorico', 'global/tvenquete', array('site'=>$site,'assets'=>$assets, 'respostas'=>$respostas)) ?>
         <!--/ENQUETE-->
