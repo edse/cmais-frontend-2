@@ -14,7 +14,7 @@ body { background:#fff url("/portal/images/capaPrograma/revistavitrine2/bg-vitri
 .conteudo-online { margin-bottom:100px; }
 .redes .curtir { float:left; }
 .menu-vitrine { border-top:1px solid #b5b6c0; border-bottom:1px solid #b5b6c0; margin-top:20px; }
-.menu-vitrine ul { width:39%; margin:5px auto; overflow:hidden;  }
+.menu-vitrine ul { width:40%; margin:5px auto; overflow:hidden;  }
 .menu-vitrine ul li { float:left; }
 .menu-vitrine li a { color:#474747; font-size:12px; text-transform:uppercase; font-weight:bold; float: left; padding:5px;}
 .menu-vitrine li span { display: block; margin:0 10px; float:left; background:#b5b6c0; width: 1px; height:17px; margin-top:3px;}
