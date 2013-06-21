@@ -1,7 +1,5 @@
 <?php
-$ext = 0;
-$ext = $_GET['ext'];
-if (($ext) ==  '1'):?>
+if(isset($_GET['ext'])):
 $section_id = $_GET['section_id'];
 $site_id = $_GET['site_id'];
 endif;
