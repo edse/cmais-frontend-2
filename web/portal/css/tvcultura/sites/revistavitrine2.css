@@ -56,5 +56,5 @@ body { background:#fff url("/portal/images/capaPrograma/revistavitrine2/bg-vitri
 
 .menu-vitrine li a.btn-sobre { *width: 130px; *float:left; *position:relative; } 
 .menu-vitrine .icon-chevron-down { *position:absolute; *top:5px; *right:5px; }
-.menu-vitrine li p { *left:0; top:50px;  }
+.menu-vitrine li p { *left:0; *top:50px; *width:300px; }
 .menu-vitrine li { *position:relative; }
