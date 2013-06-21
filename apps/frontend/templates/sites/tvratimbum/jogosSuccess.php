@@ -1,8 +1,8 @@
 <?php
-if(isset($_GET['ext'])):
+
 $section_id = $_GET['section_id'];
 $site_id = $_GET['site_id'];
-endif;
+
 ?>
 <?php
   if(!isset($section_id)) $section_id = 12;
