@@ -6,12 +6,12 @@
     
     <!-- Le styles -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/vila-sesamo/geral.css" type="text/css" />
+    <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vila-sesamo/geral.css" type="text/css" />
     
 
-    <script src="/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
 
      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
      <!--[if lt IE 9]>
@@ -36,7 +36,7 @@
     <meta property="og:title" content="Vila Sésamo - cmais+ O portal de conteúdo da Cultura" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content=" - cmais+ O portal de conteúdo da Cultura" />
-<meta property="og:url" content="http://172.20.16.219/vila-sesamo" />
+<meta property="og:url" content="http://cmais.com.br/vila-sesamo" />
 <meta property="og:site_name" content="cmais+" />
 <meta property="og:image" content="http://cmais.com.br/portal/images/logoCMAIS.jpg" />
    
@@ -133,7 +133,7 @@
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/vila-sesamo/media.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vila-sesamo/media.css" type="text/css" />
 
   </body>
 </html>    
