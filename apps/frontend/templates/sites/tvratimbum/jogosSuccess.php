@@ -1,6 +1,9 @@
 <?php
+$ext = $_GET['ext'];
+if (($ext) ==  '1'):?>
 $section_id = $_GET['section_id'];
 $site_id = $_GET['site_id'];
+endif;
 ?>
 <?php
   if(!isset($section_id)) $section_id = 12;
@@ -100,7 +103,7 @@ $site_id = $_GET['site_id'];
       data: "page=1&section_id=<?php echo $section_id?>&site_id=<?php echo $site_id?>",
       success: function(data){
         $('#infinite_scroll').html(data);
-        <?php if(isset($section_id)):?>
+        if (($ext) ==  '1'):?>
         <?php else:?>
         loadScroll();
         <?php endif; ?>
