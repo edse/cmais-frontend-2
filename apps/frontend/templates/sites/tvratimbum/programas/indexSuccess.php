@@ -178,7 +178,21 @@ $assets = $pager->getResults();
         	 
         <ul class="menu-secao">
           <li class="videos"><a href="http://tvratimbum.cmais.com.br/videos" title="Vídeos" >Vídeos</a></li>
-          <li class="jogos"><a href="http://tvratimbum.cmais.com.br/jogos" title="Jogos">Jogos</a></li>
+          <li class="jogos"><a href="
+          	<?php
+          	if ($site->id == '1230'):
+			echo "http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=1230&section_id=2473";
+			elseif ($site->id == '8'):
+			echo "http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=8&section_id=585";	
+			elseif ($site->id == '13'):
+			echo "http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=13&section_id=1071";
+			elseif ($site->id == '35'):
+          	echo "http://tvratimbum.cmais.com.br/seleciona-jogos?site_id=35&section_id=1053";
+			elseif ($site->id == ''):
+          	echo "http://tvratimbum.cmais.com.br/jogos";
+			endif;
+          	?>
+          	" title="Jogos">Jogos</a></li>
           <li class="atividades"><a href="http://tvratimbum.cmais.com.br/atividades" title="Atividades">Atividades</a></li>
           <li class="imagens"><a href="http://tvratimbum.cmais.com.br/imagens" title="Imagens">Imagens</a></li>
           <li class="baixar"><a href="http://tvratimbum.cmais.com.br/baixar" title="Baixar">Baixar</a></li>
