@@ -162,27 +162,16 @@ class _assetActions extends sfActions
 	        ->orderBy('s.display_order')
 	        ->execute();
       }
-			elseif($this->asset->Site->getSlug() == "sic"){
+			elseif(in_array($this->asset->Site->getSlug(), array("sic","revistavitrine2","revistavitrine","radarcultura"))){
 	      $this->siteSections = Doctrine_Query::create()
 	        ->select('s.*')
 	        ->from('Section s')
 	        ->where('s.site_id = ?', $this->asset->Site->getId())
 	        ->andWhere('s.is_active = ?', 1)
 	        ->andWhere('s.is_visible = ?', 1)
-	        ->andWhere('parent_section_id IS NULL')
+          ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
 	        ->orderBy('s.display_order')
 	        ->execute();
-      }
-      elseif($this->asset->Site->getSlug() == "radarcultura"){
-        $this->siteSections = Doctrine_Query::create()
-          ->select('s.*')
-          ->from('Section s')
-          ->where('s.site_id = ?', $this->asset->Site->getId())
-          ->andWhere('s.is_active = ?', 1)
-          ->andWhere('s.is_visible = ?', 1)
-          ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
-          ->orderBy('s.display_order')
-          ->execute();
       }
       else{
         $this->siteSections = Doctrine_Query::create()
