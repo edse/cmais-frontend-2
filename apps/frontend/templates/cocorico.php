@@ -21,7 +21,7 @@
     <link rel="shortcut icon" href="http://cmais.com.br/portal/images/favicon.ico" />
 
     <!-- scripts -->
-    <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
@@ -60,15 +60,15 @@
     </script>
     <!-- /scripts -->
     <!-- Le styles -->
-    <link href="/portal/css/tvcultura/sites/cocorico/bootstrap.css" rel="stylesheet">
-    <!--link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet"-->
-    <!--link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet"-->
+    <link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/bootstrap.css" rel="stylesheet">
+    <!--link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet"-->
+    <!--link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet"-->
     
-    <script type="text/javascript" src="/portal/js/bootstrap/bootstrap.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
-    <script type="text/javascript" src="/portal/js/cocorico.js?nocache=<?php echo rand(); ?>"></script>
-    <link href="/portal/css/tvcultura/sites/cocorico/geral.css" rel="stylesheet">
-    <!--link href="/portal/css/tvcultura/sites/cocorico/media.css" rel="stylesheet"-->
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/tab.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/cocorico.js?nocache=<?php echo rand(); ?>"></script>
+    <link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/geral.css" rel="stylesheet">
+    <!--link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/media.css" rel="stylesheet"-->
     
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -76,7 +76,7 @@
     <![endif]-->
     
     <!--[if lte IE 8]>
-  <link type="text/css" rel="stylesheet" href="/portal/css/tvcultura/sites/cocorico/ie8.css" />
+  <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/ie8.css" />
   <![endif]-->
 
   
