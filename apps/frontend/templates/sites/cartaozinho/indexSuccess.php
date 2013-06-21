@@ -139,7 +139,7 @@
           <div class="redes-sociais">
             <a href="https://www.facebook.com/Cartaozinho" class="face" name"Facebook" title="Facebook">Facebook</a>
             <a href="https://twitter.com/cartaozinho" class="twt" name"Twitter" title="Twitter">Twitter</a>
-            <a href="http://www.youtube.com/cultura" class="ytb" name"Youtube" title="Youtube">YouTube</a>
+            <a href="http://www.youtube.com/cultura" class="ytb" name"Youtube" title="YouTube">YouTube</a>
           </div>
           <script>
             $(document).ready(function() {
