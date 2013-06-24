@@ -1,5 +1,5 @@
-<link type="text/css" href="/portal/univesptv/css/geral.css" rel="stylesheet" />
-<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
+<link type="text/css" href="http://cmais.com.br/portal/univesptv/css/geral.css" rel="stylesheet" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
 
 <script>
   var t;
@@ -9,7 +9,7 @@
       success: function(data) {
         eval(data);
       },
-      url: '/ajax/streamingunivesp'
+      url: 'http://cmais.com.br/ajax/streamingunivesp'
     });
   }
   function checkStreamingEnd(){
@@ -18,7 +18,7 @@
       success: function(data) {
         eval(data);
       },
-      url: '/ajax/streamingendunivesp'
+      url: 'http://cmais.com.br/ajax/streamingendunivesp'
     });
   }
   $(window).load(function(){
