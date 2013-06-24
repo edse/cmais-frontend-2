@@ -55,7 +55,7 @@
       <div class="navegacao txt-10">
         <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
         <span>&gt;</span>
-        <a href="<?php echo $asset->retriveUrl()?>" title="<?php echo $asset->getTitle()?>"><?php echo $asset->getTitle() ?></a>
+        <a href="<?php echo $section->retriveUrl()?>" title="<?php echo $section->getTitle()?>"><?php echo $section->getTitle() ?></a>
       </div>
       <?php endif;?>
       <?php endif;?>
