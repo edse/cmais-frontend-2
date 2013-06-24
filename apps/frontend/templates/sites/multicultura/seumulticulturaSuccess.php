@@ -97,8 +97,8 @@
               <?php if(isset($displays['enquete'])): ?>
           		<?php if(count($displays['enquete']) > 0): ?>
               
-                <?php $verifica_video = $displays['enquete'][0]-> Asset -> retriveRelatedAssetsByAssetTypeId(6);
-                $verifica_imagem = ['enquete'][0]-> Asset -> retriveRelatedAssetsByAssetTypeId(2); ?>
+                <?php $verifica_video = $displays'enquete'][0]-> Asset -> retriveRelatedAssetsByAssetTypeId(6);
+                $verifica_imagem = $displays['enquete'][0]-> Asset -> retriveRelatedAssetsByAssetTypeId(2); ?>
 
                 <?php if(count($verifica_video) > 0): ?>
                  <!-- 1 -->
