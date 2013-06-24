@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/videos.css" type="text/css" />
-<link type="text/css" href="/portal/univesptv/css/geral.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/videos.css" type="text/css" />
+<link type="text/css" href="http://cmais.com.br/portal/univesptv/css/geral.css" rel="stylesheet" />
 <script type="text/javascript">
 $(function(){
   //carrossel
