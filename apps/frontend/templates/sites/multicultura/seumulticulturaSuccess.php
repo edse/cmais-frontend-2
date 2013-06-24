@@ -85,7 +85,7 @@
               <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
             </div>
             <div class="texto">
-            	 <?php include_partial_from_folder('sites/multicultura', 'global/videoenqueteSuccess', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+            	 <?php include_partial_from_folder('sites/multicultura', 'global/videoenqueteSuccess', array('site' => $site,'siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
               <!--LISTA-Videos-->
               <p></p>
               <div id="votacao-video">
