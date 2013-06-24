@@ -41,7 +41,7 @@ $img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImag
 
   <!--/Pergunta-->
   <!--Resposta FORM INATIVA-->
-  <form class="navbar-form pull-left inativo span12" >
+  <form class="navbar-form pull-left inativo span12" style="display:none;">
 
     <div class="versus"></div>
     <?php for($i=0; $i<count($respostas); $i++): ?>
