@@ -42,8 +42,7 @@ $img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImag
   <!--/Pergunta-->
   <!--Resposta FORM INATIVA-->
   <form class="navbar-form pull-left inativo span12" >
-    <?php
-    /*
+
     <div class="versus"></div>
     <?php for($i=0; $i<count($respostas); $i++): ?>
     <div class="span6 <?php if($i>0)echo "last"?>">
@@ -53,7 +52,7 @@ $img_1 = "http://midia.cmais.com.br/assets/image/image-4-b/".$imgs[0]->AssetImag
       <p class="resposta-<?php echo $i?>">50%</p>
     </div>
     <?php endfor;?>
-     */ ?>
+     
     <a href="<?php echo $site->retriveUrl();?>/enquetes" title="Ver enquetes anteriores">Ver enquetes anteriores</a>
   </form>
   <!--/Resposta-->
