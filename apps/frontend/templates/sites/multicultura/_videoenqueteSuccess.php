@@ -11,6 +11,3 @@
 
 
 	<iframe allowfullscreen="" frameborder="0" height="390" src="http://www.youtube.com/embed/<?php echo $asset->getTitle(); ?>?wmode=transparent&amp;rel=0#t=0m0s" title="Enquete Multicultura" width="640"></iframe>
-            
-  <?php endif; ?>
-<?php endif;?>
