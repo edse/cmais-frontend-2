@@ -1,7 +1,7 @@
 <?php use_helper('I18N', 'Date')
 ?>
 
-<link href="/portal/css/tvcultura/sites/cocorico/joguinhos.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/joguinhos.css" rel="stylesheet">
 <!-- container-->
 <div class="container tudo">
   <!--topo coco-->

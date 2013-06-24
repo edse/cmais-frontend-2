@@ -6,7 +6,7 @@
   }
   ?>
 
-<link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <script type="text/javascript">
   $(document).ready(function() {

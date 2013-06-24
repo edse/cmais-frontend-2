@@ -4,9 +4,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Cocoric&oacute; 3D - TV Cultura</title>
-		<link href="/portal/cocorico/3d/css/geral.css" type="text/css" rel="stylesheet">
-		<script src="/portal/cocorico/3d/js/jquery.js" type="text/javascript"></script>
-		<script src="/portal/cocorico/3d/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
+		<link href="http://cmais.com.br/portal/cocorico/3d/css/geral.css" type="text/css" rel="stylesheet">
+		<script src="http://cmais.com.br/portal/cocorico/3d/js/jquery.js" type="text/javascript"></script>
+		<script src="http://cmais.com.br/portal/cocorico/3d/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
 
     </head>
     {literal}
