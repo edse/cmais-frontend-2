@@ -90,7 +90,8 @@
               <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?>- Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
               <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
             </div>
-            	<iframe allowfullscreen="" frameborder="0" height="390" src="http://www.youtube.com/embed/<?php echo $texto[1]; ?>&wmode=transparent&amp;rel=0#t=0m0s" title="Enquete Multicultura" width="640"></iframe>
+
+            	<iframe allowfullscreen="" frameborder="0" height="390" src="http://www.youtube.com/embed/<?php echo $texto[1]; ?>?wmode=transparent&amp;rel=0#t=0m0s" title="Enquete Multicultura" width="640"></iframe>
               <!--LISTA-Videos-->
               <p></p>
               <div id="votacao-video">
