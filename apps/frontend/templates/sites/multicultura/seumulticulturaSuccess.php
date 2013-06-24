@@ -85,7 +85,7 @@
               <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
             </div>
             <div class="texto">
-            	<iframe allowfullscreen="" frameborder="0" height="390" src="http://www.youtube.com/embed/gHj46lFpvMM?wmode=transparent&amp;rel=0#t=0m0s" title="Enquete Multicultura" width="640"></iframe>
+            	 <?php include_partial_from_folder('sites/multicultura', 'global/_videoenquete', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
               <!--LISTA-Videos-->
               <p></p>
               <div id="votacao-video">
