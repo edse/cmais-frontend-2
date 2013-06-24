@@ -24,7 +24,7 @@ $contrato_fpa = str_replace(";"," ",$_REQUEST["contrato_fpa"]);
 $projeto = str_replace(";"," ",$_REQUEST["projeto"]);
 $localdeprova = str_replace(";"," ",$_REQUEST["localdeprova"]);
 
-$schedule = "2013-06-24 23:59:59";
+$schedule = "2013-06-26 23:59:59";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
