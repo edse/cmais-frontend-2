@@ -55,7 +55,7 @@
       <div class="navegacao txt-10">
         <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
         <span>&gt;</span>
-        <a href="<?php echo $section->retriveUrl()?>" title="<?php echo $section->getTitle()?>"><?php echo $section->getTitle() ?></a>
+        <a href="<?php echo $asset->retriveUrl()?>" title="<?php echo $asset->getTitle()?>"><?php echo $asset->getTitle() ?></a>
       </div>
       <?php endif;?>
       <?php endif;?>
@@ -77,51 +77,43 @@
         <div id="esquerda" class="grid2">
           <!-- NOTICIA INTERNA -->
           <div class="box-interna grid2">
-            <h3><?php echo $section->getTitle() ?></h3>
-            <p><?php echo $section->getDescription() ?></p>
+            <h3><?php echo $asset->getTitle() ?></h3>
+            <p><?php echo $asset->getDescription() ?></p>
             <div class="assinatura grid2">
-               <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
+              <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
+              <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?>- Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
+              <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
             </div>
             <div class="texto">
-            <?php if(isset($displays['video'])): ?>
-          		<?php if(count($displays['video']) > 0): ?>
-          			
-            	<iframe allowfullscreen="" frameborder="0" height="390" src="http://www.youtube.com/embed/<?php echo $displays['video'][0]->Asset->getTitle(); ?>?wmode=transparent&amp;rel=0#t=0m0s" title="Enquete Multicultura" width="640"></iframe>
-            
-            	<?php endif; ?>
-            <?php endif;?>
+            	<iframe allowfullscreen="" frameborder="0" height="390" src="http://www.youtube.com/embed/gHj46lFpvMM?wmode=transparent&amp;rel=0#t=0m0s" title="Enquete Multicultura" width="640"></iframe>
               <!--LISTA-Videos-->
               <p></p>
-               
               <div id="votacao-video">
-              <?php if(isset($displays['enquete'])): ?>
-          		<?php if(count($displays['enquete']) > 0): ?>
-              
-                <?php $verifica_video = $displays'enquete'][0]-> Asset -> retriveRelatedAssetsByAssetTypeId(6);
-                $verifica_imagem = $displays['enquete'][0]-> Asset -> retriveRelatedAssetsByAssetTypeId(2); ?>
+                <?php $verifica_video = $a[0] -> Asset -> retriveRelatedAssetsByAssetTypeId(6);
+                $verifica_imagem = $a[0] -> Asset -> retriveRelatedAssetsByAssetTypeId(2); ?>
 
                 <?php if(count($verifica_video) > 0): ?>
                  <!-- 1 -->
                 <!--LISTA-Videos-->
-                <form method="post" id="e<?php echo $a[0]->$displays['enquete'][0]->Asset->getId()?>" class="form-votacao">
-                  <p><?php echo $displays['enquete'][0]-> $asset -> AssetQuestion -> getQuestion();?></p>
+                <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
+                  <p><?php echo $asset -> AssetQuestion -> getQuestion();?></p>
                   <ul id="lista-videos">
-                    <?php for($i=0; $i<count($a); $i++){ $v = $a[$i]-> $displays['enquete'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); $opcao = $a[$i]->$displays['enquete'][0]->Asset->AssetAnswer->getAnswer(); ?>
-                    <li><iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0] -> $displays['enquete'][0]->AssetVideo -> getYoutubeId();?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
-                    <input type="radio" name="opcao" id="opcao-<?php echo $i;?>" class="form-contato" value="<?php echo $a[$i] -> $displays['enquete'][0]->Asset -> AssetAnswer -> id;?>"  />
+                    <?php for($i=0; $i<count($a); $i++){ $v = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(6); $opcao = $a[$i]->Asset->AssetAnswer->getAnswer(); ?>
+                    <li><iframe title="<?php echo $opcao ?>" width="310" height="210" src="http://www.youtube.com/embed/<?php echo $v[0] -> AssetVideo -> getYoutubeId();?>?wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
+                    <input type="radio" name="opcao" id="opcao-<?php echo $i;?>" class="form-contato" value="<?php echo $a[$i] -> Asset -> AssetAnswer -> id;?>"  />
                     <label for="opcao-<?php echo $i;?>"> <?php echo $opcao  ?></label></li>
                     <?php };?>
                   </ul>
-                  <?php endif;?> $displays['enquete'][0]-> 
+                  <?php endif;?>
 
                   <?php if(count($verifica_imagem) > 0): ?>
                   <!--LISTA-Videos-->
-                  <form method="post" id="e<?php echo $a[0]->$displays['enquete'][0]->Asset->getId()?>" class="form-votacao">
-                    <p><?php echo $displays['enquete'][0]->$asset -> AssetQuestion -> getQuestion();?></p>
+                  <form method="post" id="e<?php echo $a[0]->Asset->getId()?>" class="form-votacao">
+                    <p><?php echo $asset -> AssetQuestion -> getQuestion();?></p>
                     <ul id="lista-videos">
-                      <?php for($i=0; $i<count($a); $i++){ $img = $a[$i]->$displays['enquete'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); $opcao = $a[$i]->$displays['enquete'][0]->Asset->AssetAnswer->getAnswer(); ?>
+                      <?php for($i=0; $i<count($a); $i++){ $img = $a[$i]->Asset->retriveRelatedAssetsByAssetTypeId(2); $opcao = $a[$i]->Asset->AssetAnswer->getAnswer(); ?>
                       <li><img src="<?php echo $img[0] -> retriveImageUrlByImageUsage('image-3-b');?>" >
-                      <input type="radio" name="opcao" id="opcao-<?php echo $i;?>" class="form-contato" value="<?php echo $a[$i] -> $displays['enquete'][0]-> Asset -> AssetAnswer -> id;?>"  />
+                      <input type="radio" name="opcao" id="opcao-<?php echo $i;?>" class="form-contato" value="<?php echo $a[$i] -> Asset -> AssetAnswer -> id;?>"  />
                       <label for="opcao-<?php echo $i;?>"> <?php echo $opcao  ?></label></li>
                       <?php };?>
                     </ul>
@@ -144,7 +136,7 @@
                     for($i=0; $i<count($a); $i++): ?>
                     <ul class="parcial-<?php echo $i?> classificacao <?php if($i%2==0):?> right <?php else:?> left<?php endif;?>">
                     <li>
-                    <p><?php $a[$i] -> $displays['enquete'][0]-> Asset -> AssetAnswer -> getAnswer();?></p> <span>00%</span>
+                    <p><?php $a[$i] -> Asset -> AssetAnswer -> getAnswer();?></p> <span>00%</span>
                     <div class="progress progress-success">
                       <div class="bar" style="width: 40%"></div>
                     </div>
@@ -155,12 +147,31 @@
                   </div>
                   <!--/RESULTADO PARCIAL-->
                   <span class="picote"></span>
-                 <?php endif; ?>
-          	  <?php endif;?>
               </div>
               <!--/VOTACAO Video-->
             </div>
-            
+            <?php $relacionados = $asset -> retriveRelatedAssetsByRelationType('Asset Relacionado');?>
+            <?php if(count($relacionados) > 0): ?>
+
+            <!-- SAIBA MAIS -->
+            <div class="box-padrao grid2" style="margin-bottom: 20px;">
+              <div id="saibamais">
+                <h4>saiba +</h4>
+                <ul class="conteudo">
+                  <?php foreach($relacionados as $k=>$d):  ?>
+                  <li style="width: auto;"><a class="titulos" href="<?php echo $d->retriveUrl()?>" style="width: auto;"><?php echo $d->getTitle() ?></a><!--
+                  <?php if($d->retriveImageUrlByImageUsage("image-1") != ""): ?>
+                  <a href="<?php echo $d->retriveUrl()?>" class="img-90x54" style="width: auto">
+                  <img src="<?php echo $d->retriveImageUrlByImageUsage("image-1-b") ?>" alt="<?php echo $d->getTitle() ?>" title="<?php echo $d->getTitle() ?>" style="width: auto" />
+                  </a>
+                  <?php endif; ?>
+                  --><!--p><?php echo $d->getDescription()?></p--></li>
+                  <?php endforeach;?>
+                </ul>
+              </div>
+            </div>
+            <!-- SAIBA MAIS -->
+            <?php endif;?>
 
             <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri))  ?>
           </div>
@@ -181,7 +192,22 @@
             </script>
           </div>
           <!-- / BOX PUBLICIDADE -->
-         
+          <?php $relacionados = array(); if ($asset) $relacionados = $asset -> retriveRelatedAssets2(); ?>
+          <?php if(count($relacionados) > 0): ?>
+          <!-- BOX PADRAO Mais recentes -->
+          <div class="box-padrao grid1">
+            <div class="topo claro">
+              <span></span>
+              <div class="capa-titulo">
+                <h4>relacionadas</h4>
+                <a href="#" class="rss" title="rss"></a>
+              </div>
+            </div>
+            <?php if(count($relacionados) > 0) include_partial_from_folder('blocks','global/recent-news', array('displays' => $relacionados)) ?>
+          </div>
+          <!-- BOX PADRAO Mais recentes -->
+          <?php endif;?>
+
           <?php if(isset($displays["destaque-noticias-recentes"])): ?>
           <!-- BOX PADRAO Mais recentes -->
           <div class="box-padrao grid1">
@@ -261,7 +287,7 @@ $(document).ready(function(){
               
 echo "var nome = new Array();\n";
 foreach($a as $key=>$value){
-  $c = $value->$displays['enquete'][0]->Asset->AssetAnswer->getAnswer();
+  $c = $value->Asset->AssetAnswer->getAnswer();
   echo "nome[".$key."]= '".$c."';\n";
 }
  
