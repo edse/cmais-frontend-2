@@ -134,12 +134,12 @@
         
           </a>
 
-          <!--a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/copa" title="Participe da nossa enquete!"></a-->
+          <!--a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/copa-segunda-rodada" title="Participe da nossa enquete!"></a-->
           <div class="juiza"></div>
           <div class="redes-sociais">
             <a href="https://www.facebook.com/Cartaozinho" class="face" name"Facebook" title="Facebook">Facebook</a>
             <a href="https://twitter.com/cartaozinho" class="twt" name"Twitter" title="Twitter">Twitter</a>
-            <a href="http://www.youtube.com/cultura" class="ytb" name"Youtube" title="Youtube">Youtube</a>
+            <a href="http://www.youtube.com/cultura" class="ytb" name"Youtube" title="YouTube">YouTube</a>
           </div>
           <script>
             $(document).ready(function() {

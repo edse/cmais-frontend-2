@@ -4,8 +4,6 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
-
-
 <div class="bg-chamada">
   
   <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
@@ -20,13 +18,12 @@
       <!-- BARRA SITE -->
       <div id="barra-site">
         <div class="topo-programa">
-          <?php if(isset($site) && $site->id > 0): ?>
-            <?php if($site->getImageThumb() != ""): ?>
-          <h2><a href="/revistavitrine2" title="Revista Vitrine"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>"></a></h2>
-            <?php else: ?>
-          <h2><a href="/revistavitrine2" title="Revista Vitrine"><?php echo $site->getTitle() ?></a></h2>
-            <?php endif; ?>
-          <?php endif; ?>
+          <h2><img title="Vitrine" alt="Revista Vitrine" src="/portal/images/capaPrograma/revistavitrine/logo-vitrine.png"></h2>
+          <p class="descricao">Disponível para iPad gratuitamente na <b>App Store</b></p>
+          <p class="baixar"><b>BAIXE AGORA!</b></p>
+          
+         
+
         </div>
         
       </div>
@@ -39,20 +36,30 @@
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
-          <?php include_partial_from_folder('sites/revistavitrine2','global/menu', array('siteSections' => $siteSections, "site" => $site, "section" => $section)) ?>
+
+         <div class="baixar">
+           <a class="app" href="https://itunes.apple.com/us/app/revista-vitrine/id627945721?ls=1&mt=8" alt="App Store" target="_blank"><img src="/portal/images/capaPrograma/revistavitrine/app.png" /></a>
+           <a href="/revistavitrine/online" alt="Leia agora online"><img src="/portal/images/capaPrograma/revistavitrine/online.png" /></a>
+         </div>
          
           <?php if(isset($program) && $program->id > 0): ?>
             <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
           <?php endif; ?>
 
+         <!--
+         <div class="capa-revista">
+           <img src="/portal/images/capaPrograma/revistavitrine/capa.png" alt="Revista Vitrine" />
+         </div>
+         -->
+         
           <div class="capa-revista">
             <?php if(isset($displays["destaque-principal"])): ?>
-              <?php if(count($displays["destaque-principal"]) > 0): ?>
-              <img src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" />
-              <?php endif; ?>
+              <img src="<?php echo $displays["destaque-principal"][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="Revista Vitrine" />
             <?php endif ?>
          </div>
 
+         
+                  
         </div>
         <!-- /CONTEUDO PAGINA -->
         
@@ -62,9 +69,3 @@
     </div>
     <!-- /CAPA SITE -->
     
-<script type="text/javascript">
-  $('.btn-sobre').click(function() {
-    $('.sobre').toggle();
-    $('.btn-sobre').toggleClass("ativo");              
-  });
-</script>

@@ -1,0 +1,14 @@
+body { background:#fff url("/portal/images/capaPrograma/revistavitrine/bg-vitrine.jpg") repeat-x; }
+#barra-site h2 { float:none; margin-top:20px; }
+#barra-site .baixar,
+#barra-site .descricao { margin:0 0 20px 0; display:block; color:#4a4a4a; }
+#barra-site .baixar { margin-bottom:10px; }
+.redes ul { display: none; }
+.redes {    float: none;    margin: 20px auto;    width: 350px !important;}
+.capa-revista { margin:10px 0 20px 0; }
+.baixar .app { margin-right:15px; }
+.issuuembed { margin:40px auto;border: 3px solid #c2c2c2; }
+#miolo { margin-top:0; }
+#rodape-portal { margin-top:-50px; }
+.conteudo-online { margin-bottom:100px; }
+.redes .curtir { float:left; }
