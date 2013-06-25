@@ -161,8 +161,37 @@
             </div>
             <div class="span12 oquee">
               <h3>O que é o que é</h3>
+              
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla fermentum eros non vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vitae enim blandit, congue elit quis, volutpat sapien. Fusce magna odio, ultricies eget blandit eget, sodales ut tortor. Donec a sodales nunc, vitae viverra turpis. Proin id bibendum neque, id fringilla sem. Praesent placerat lectus a nibh commodo, eget condimentum mauris volutpat. Quisque eros risus, imperdiet sed dui a, ornare fringilla erat. Nam sit amet velit nulla. Ut molestie odio eget lorem tincidunt, sit amet adipiscing sem porta. Duis hendrerit ipsum in dignissim pellentesque cras amet.</p>
-            
+              
+              <div class="msgErro" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">Sua mensagem não pode ser enviada.</p>
+                  <p>Confirme se todos os campos foram preenchidos corretamente e verifique seus dados. Você pode ter esquecido de preencher algum campo ou errado alguma informação.</p>
+                </div>
+               
+              </div>
+              <div class="msgAcerto" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg"> 
+                  <p class="aviso">Mensagem enviada com sucesso!</p>
+                  <p>Obrigado por entrar em conosco. Em breve retornaremos sua mensagem.</p>
+                </div>
+              
+              </div>
+              <form class="form-inline form-contato">
+                <label>Seu nome<input type="text" class="input-medium" name="nome" /></label>
+                <label>Seu email<input type="text" class="input-medium" nome=email /></label>
+                <br/>
+                <label>charada [
+                  <p class="contador"><span id="textCounter">250</span>] caracteres restantes</p>
+                  <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"  name="charada"></textarea>
+                </label>
+               
+                
+                <button type="submit" class="btn" id="enviar" value="enviar">Enviar</button>
+              </form>
             </div>
             <span class="barra"></span>
             
@@ -313,129 +342,69 @@
   <div id="fb-root"></div>
   
   <script type="text/javascript">
-    /* <![CDATA[ */
-    function sfWebDebugGetElementsByClassName(strClass, strTag, objContElm) {
-      // http://muffinresearch.co.uk/archives/2006/04/29/getelementsbyclassname-deluxe-edition/
-      strTag = strTag || "*";
-      objContElm = objContElm || document;
-      var objColl = (strTag == '*' && document.all) ? document.all : objContElm.getElementsByTagName(strTag);
-      var arr = new Array();
-      var delim = strClass.indexOf('|') != -1 ? '|' : ' ';
-      var arrClass = strClass.split(delim);
-      var j = objColl.length;
-      for(var i = 0; i < j; i++) {
-        if(objColl[i].className == undefined)
-          continue;
-        var arrObjClass = objColl[i].className.split ? objColl[i].className.split(' ') : [];
-        if(delim == ' ' && arrClass.length > arrObjClass.length)
-          continue;
-        var c = 0; comparisonLoop: {
-          var l = arrObjClass.length;
-          for(var k = 0; k < l; k++) {
-            var n = arrClass.length;
-            for(var m = 0; m < n; m++) {
-              if(arrClass[m] == arrObjClass[k])
-                c++;
-              if((delim == '|' && c == 1) || (delim == ' ' && c == arrClass.length)) {
-                arr.push(objColl[i]);
-                break comparisonLoop;
-              }
+  $(document).ready(function() {
+    $('input#enviar').click(function() {
+      $(".msgAcerto, .msgErro").hide();
+    });
+    var validator = $('#form-contato').validate({
+      submitHandler : function(form) {
+        $.ajax({
+          type : "POST",
+          dataType : "text",
+          data : $("#form-contato").serialize(),
+          beforeSend : function() {
+            $('input#enviar').attr('disabled', 'disabled');
+            $(".msgAcerto").hide();
+            $(".msgErro").hide();
+            $('img#ajax-loader').show();
+          },
+          success : function(data) {
+            $('input#enviar').removeAttr('disabled');
+            window.location.href = "#";
+            if(data == "1") {
+              $("#form-contato").clearForm();
+              $(".msgAcerto").show();
+              $('img#ajax-loader').hide();
+            } else {
+              $(".msgErro").show();
+              $('img#ajax-loader').hide();
             }
           }
+        });
+      },
+      rules : {
+        nome : {
+          required : true,
+          minlength : 2
+        },
+        email : {
+          required : true,
+          email : true
+        },
+        
+        charada : {
+          required : true
         }
+        
+      },
+      messages : {
+        nome : "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+        email : "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+        charada : "Este campo &eacute; Obrigat&oacute;rio."
+      },
+      success : function(label) {
+        // set &nbsp; as text for IE
+        label.html("&nbsp;").addClass("checked");
       }
-      return arr;
-    }
-
-    function sfWebDebugToggleMenu() {
-      var element = document.getElementById('sfWebDebugDetails');
-
-      var cacheElements = sfWebDebugGetElementsByClassName('sfWebDebugCache');
-      var mainCacheElements = sfWebDebugGetElementsByClassName('sfWebDebugActionCache');
-      var panelElements = sfWebDebugGetElementsByClassName('sfWebDebugTop');
-
-      if(element.style.display != 'none') {
-        for(var i = 0; i < panelElements.length; ++i) {
-          panelElements[i].style.display = 'none';
-        }
-
-        // hide all cache information
-        for(var i = 0; i < cacheElements.length; ++i) {
-          cacheElements[i].style.display = 'none';
-        }
-        for(var i = 0; i < mainCacheElements.length; ++i) {
-          mainCacheElements[i].style.border = 'none';
-        }
-      } else {
-        for(var i = 0; i < cacheElements.length; ++i) {
-          cacheElements[i].style.display = '';
-        }
-        for(var i = 0; i < mainCacheElements.length; ++i) {
-          mainCacheElements[i].style.border = '1px solid #f00';
-        }
-      }
-
-      sfWebDebugToggle('sfWebDebugDetails');
-      sfWebDebugToggle('sfWebDebugShowMenu');
-      sfWebDebugToggle('sfWebDebugHideMenu');
-    }
-
-    function sfWebDebugShowDetailsFor(element) {
-      if( typeof element == 'string')
-        element = document.getElementById(element);
-
-      var panelElements = sfWebDebugGetElementsByClassName('sfWebDebugTop');
-      for(var i = 0; i < panelElements.length; ++i) {
-        if(panelElements[i] != element) {
-          panelElements[i].style.display = 'none';
-        }
-      }
-
-      sfWebDebugToggle(element);
-    }
-
-    function sfWebDebugToggle(element) {
-      if( typeof element == 'string')
-        element = document.getElementById(element);
-
-      if(element)
-        element.style.display = element.style.display == 'none' ? '' : 'none';
-    }
-
-    function sfWebDebugToggleMessages(klass) {
-      var elements = sfWebDebugGetElementsByClassName(klass);
-
-      var x = elements.length;
-      for(var i = 0; i < x; ++i) {
-        sfWebDebugToggle(elements[i]);
-      }
-    }
-
-    function sfWebDebugToggleAllLogLines(show, klass) {
-      var elements = sfWebDebugGetElementsByClassName(klass);
-      var x = elements.length;
-      for(var i = 0; i < x; ++i) {
-        elements[i].style.display = show ? '' : 'none';
-      }
-    }
-
-    function sfWebDebugShowOnlyLogLines(type) {
-      var types = new Array();
-      types[0] = 'info';
-      types[1] = 'warning';
-      types[2] = 'error';
-      for(klass in types) {
-        var elements = sfWebDebugGetElementsByClassName('sfWebDebug' + types[klass].substring(0, 1).toUpperCase() + types[klass].substring(1, types[klass].length));
-        var x = elements.length;
-        for(var i = 0; i < x; ++i) {
-          if('tr' == elements[i].tagName.toLowerCase()) {
-            elements[i].style.display = (type == types[klass]) ? '' : 'none';
-          }
-        }
-      }
-    }
-
-    /* ]]> */
-  </script>
+    });
+  });
+  // Contador de Caracters
+  function limitText(limitField, limitNum, textCounter) {
+    if(limitField.value.length > limitNum)
+      limitField.value = limitField.value.substring(0, limitNum);
+    else
+      $(textCounter).html(limitNum - limitField.value.length);
+  }
+</script>
   </body>
 </html>
