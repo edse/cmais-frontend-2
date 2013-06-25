@@ -75,7 +75,7 @@
 
   //print_r($programs_az);
 ?>
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/todosSites.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/todosSites.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>

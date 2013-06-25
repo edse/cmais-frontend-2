@@ -1,5 +1,5 @@
-<script type="text/javascript" src="/portal/js/bootstrap/tooltip.js"></script>
-<link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
+<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/tooltip.js"></script>
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <!-- container-->
 <div class="container tudo">
@@ -33,8 +33,8 @@
     <div class="span12 radio-cocorico">
       <!-- player -->
       <div id="container" class="playlist">
-        <link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
-        <script type="text/javascript" src="/js/audioplayer/jquery.jplayer.min.js"></script>
+        <link href="http://cmais.com.br/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://cmais.com.br/js/audioplayer/jquery.jplayer.min.js"></script>
         
         <script type="text/javascript">
         //<![CDATA[

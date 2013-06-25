@@ -1,4 +1,4 @@
-<link href="/portal/css/tvcultura/sites/cocorico/familia.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/familia.css" rel="stylesheet">
 
 <!-- container-->
 <div class="container tudo">

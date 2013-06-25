@@ -1,5 +1,5 @@
-    <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
-    <link type="text/css" href="/portal/univesptv/css/geral.css" rel="stylesheet" /> 
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/contato.css" type="text/css" />
+    <link type="text/css" href="http://cmais.com.br/portal/univesptv/css/geral.css" rel="stylesheet" /> 
 
     <?php use_helper('I18N', 'Date') ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
@@ -148,7 +148,7 @@
                       <option value="Crítica">Crítica</option>
                       <option value="Comentário">Comentário</option>
                       <option value="Sugestão">Sugestão</option>
-                      <option value="Compra de DVD">Compra de DVD</option>
+                      <!--option value="Compra de DVD">Compra de DVD</option-->
                     </select>
                   </div>
                   <div class="linha t3">

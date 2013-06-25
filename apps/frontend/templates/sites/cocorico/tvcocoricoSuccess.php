@@ -1,5 +1,5 @@
-<link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css?nocache=<?php echo md5(time()); ?>" rel="stylesheet"> 
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/tvcocorico.css?nocache=<?php echo md5(time()); ?>" rel="stylesheet"> 
 <!-- container--> 
 <div class="container tudo">
   <!--topo coco-->
@@ -26,7 +26,7 @@
   <div class="row-fluid conteudo">
     <!-- col direita -->
     <div class="span4 col-dir">
-      <a class="logo" href="/cocorico/tvcocorico"><img class="span12" src="/portal/images/capaPrograma/cocorico/tvcoco.png" /></a>
+      <a class="logo" href="/cocorico/tvcocorico"><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/tvcoco.png" /></a>
       
       
       <!-- tv cocorico -->
