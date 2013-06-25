@@ -269,4 +269,4 @@ p { color:#333; font-size: 14px;}
 .form-contato .contador span { font-size: 12px; color:#fff;}
 .form-contato .contador span { margin:0 5px;}       
 .form-contato .contador { width: 40px; margin-left:30px;} 
-.form-contato textarea { position:absolute; right:0; top:0;}  
+.form-contato textarea { position:absolute; right:3px; top:0; height:96px;}  
