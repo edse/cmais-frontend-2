@@ -252,15 +252,15 @@ p { color:#333; font-size: 14px;}
 .nav-tabs > .joguinhos a p,
 .nav-tabs > .joguinhos:hover a p { padding-left:23px;}  
 #ferias {  background:#dd2b7d; text-align:left;} 
-#ferias .span12 {  margin:0 !important; }
-#ferias .span8 {margin:2% 0 2% 2%;} 
+#ferias .span12 {  margin:0 !important; padding:20px; }
+#ferias .span8 {margin:0;} 
 #ferias .span4 { margin-left:2%; width:29%; text-align:left;} 
 #ferias .span4 h2 {color:#ffed5a; font-size:30px; line-height:34px; text-transform:uppercase;}
 #ferias p { color:#fff; } 
 #ferias .span4 p { color:#fff; max-height:320px; overflow: hidden;} 
 #ferias .barra { width: 100%; display:block; background: url(/portal/images/capaPrograma/maiscrianca2/divisa-ferias.png) repeat-x; height:4px; clear:both; }
 #menu .tab-content {  overflow: hidden;}
-#ferias .oquee { background:#dd2b7d url(/portal/images/capaPrograma/maiscrianca2/bg-pergunta.png) repeat; padding:20px;}
+#ferias .oquee { background:#dd2b7d url(/portal/images/capaPrograma/maiscrianca2/bg-pergunta.png) repeat; }
 #ferias .oquee h3 {background: url(/portal/images/capaPrograma/maiscrianca2/tit-oquee.png) no-repeat; text-indent:-9999px; margin:0;} 
 
 .form-contato label {color:#fff; width:49%; margin:0 2% 2% 0; float: left; font-weight:bold; text-transform:uppercase; height:24px; line-height:24px; position:relative; }
