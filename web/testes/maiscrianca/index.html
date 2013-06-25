@@ -413,15 +413,17 @@
             $('img#ajax-loader').show();
           },
           success : function(data) {
-            $('input#enviar').removeAttr('disabled');
-            window.location.href = "#";
+            //$('input#enviar').removeAttr('disabled');
+            window.location.href = "javascript:;";
             if(data == "1") {
               $("#form-contato").clearForm();
+              alert("fui");
               $(".msgAcerto").show();
-              $('img#ajax-loader').hide();
+              //$('img#ajax-loader').hide();
             } else {
+               alert("nao fui");
               $(".msgErro").show();
-              $('img#ajax-loader').hide();
+              //$('img#ajax-loader').hide();
             }
           }
         });
