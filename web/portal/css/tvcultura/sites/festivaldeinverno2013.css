@@ -9,7 +9,7 @@
     font-style: normal;
 
 }
-.bg-site{background:url(/portal/images/capaPrograma/festivaldeinverno2013/bg.jpg) repeat-x; height:160px; overflow: visible;}
+.bg-site{background:url(/portal/images/capaPrograma/festivaldeinverno2013/bg.jpg) repeat-x; height:160px; overflow: visible;position: relative;z-index: 1;}
 .topo{width:990px; height:160px; display:block; margin: 0 auto;position:relative; background:url(/portal/images/capaPrograma/festivaldeinverno2013/partitura.png) no-repeat center center;}
 .topo .logo{margin:10px 0 0 46px; float:left;}
 .topo .box-direita{float:right; width: 386px;margin-top:60px;}
@@ -24,3 +24,4 @@
 .box-publicidade{margin: 0 0 0 15px;}
 .curtir{width: 214px; float:left;}
 .face div{margin-right:6px!important;}
+.box-publicidade{position:relative; z-index:0;}
