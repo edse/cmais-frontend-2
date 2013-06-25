@@ -7,8 +7,8 @@ if(!isset($asset))
   $asset = $assets[0];
 
 ?>
-<link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
 <!-- container-->
 <div class="container tudo">
   <!--topo coco-->

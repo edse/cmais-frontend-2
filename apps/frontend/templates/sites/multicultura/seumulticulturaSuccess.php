@@ -77,15 +77,21 @@
         <div id="esquerda" class="grid2">
           <!-- NOTICIA INTERNA -->
           <div class="box-interna grid2">
+          	<?php
+			$complemento  = $asset->getDescription();
+			$texto = explode("|", $complemento);
+			
+			
+			?>
             <h3><?php echo $asset->getTitle() ?></h3>
-            <p><?php echo $asset->getDescription() ?></p>
+            <p><?php echo $texto[0]; ?></p>
             <div class="assinatura grid2">
               <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
               <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?>- Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
               <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
             </div>
-            <div class="texto">
-            	<iframe allowfullscreen="" frameborder="0" height="390" src="http://www.youtube.com/embed/gHj46lFpvMM?wmode=transparent&amp;rel=0#t=0m0s" title="Enquete Multicultura" width="640"></iframe>
+
+            	<iframe allowfullscreen="" frameborder="0" height="390" src="http://www.youtube.com/embed/<?php echo $texto[1]; ?>?wmode=transparent&amp;rel=0#t=0m0s" title="Enquete Multicultura" width="640"></iframe>
               <!--LISTA-Videos-->
               <p></p>
               <div id="votacao-video">

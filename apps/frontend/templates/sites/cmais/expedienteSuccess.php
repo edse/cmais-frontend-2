@@ -1,12 +1,12 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/geral.css" />  
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/geral.css" />  
 <?php if($section->Parent->Parent->getSlug() != ""): ?>
-  <link rel="stylesheet" href="/portal/css/tvcultura/secoes/<?php echo $section->Parent->Parent->getSlug() ?>.css" type="text/css" />
+  <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/<?php echo $section->Parent->Parent->getSlug() ?>.css" type="text/css" />
 <?php else: ?>
-  <link rel="stylesheet" href="/portal/css/tvcultura/secoes/<?php echo $section->Parent->getSlug() ?>.css" type="text/css" />
+  <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/<?php echo $section->Parent->getSlug() ?>.css" type="text/css" />
 <?php endif; ?>
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/expediente.css" />
-<link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
-<script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/expediente.css" />
+<link type="text/css" href="http://cmais.com.br/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>

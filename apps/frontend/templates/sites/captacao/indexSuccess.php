@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -20,7 +20,7 @@
                 <h3 class="tit-pagina grid1"><?php echo $program->getTitle() ?></h3>
               <?php endif; ?>
             </a-->
-            <a href="#"><img src="/portal/images/capaPrograma/captacao/logo-captacao.png" alt="Captação" /></a>
+            <a href="#"><img src="http://cmais.com.br/portal/images/capaPrograma/captacao/logo-captacao.png" alt="Captação" /></a>
           </h2>
           <?php endif; ?>
 

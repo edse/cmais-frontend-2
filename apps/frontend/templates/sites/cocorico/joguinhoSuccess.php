@@ -1,6 +1,6 @@
 <?php use_helper('I18N', 'Date') ?>
 
-<link href="/portal/css/tvcultura/sites/cocorico/joguinhos.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/joguinhos.css" rel="stylesheet">
 
 <!-- container-->
 <div class="container tudo">
@@ -38,7 +38,7 @@
       <!--/RANKING -->
   </div>
   <a id="btn_1" href="javascript: vote('<?php echo $asset->getId()?>');" class="curtir" title="Curtir">curtir</a>
-  <img src="/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
+  <img src="http://cmais.com.br/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
   <a id="btn_2" href="javascript:;" class="curtir disabled" title="Curtir">curtir</a>
   <!-- titulo da pagina -->
   

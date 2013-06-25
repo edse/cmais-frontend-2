@@ -7,13 +7,13 @@ if(isset($assets)){
 } 
 ?>	
 <!-- BOOTSTRAP CSS -->
-<link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap-responsive.min.css">
-<link rel="stylesheet" href="/portal/univesptv/css/cursos.css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="http://cmais.com.br/portal/univesptv/css/cursos.css" />
 <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 <!-- /BOOTSTRAP CSS -->
-<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
-<script src="/portal/js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
+<script src="http://cmais.com.br/portal/js/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript">
 	//carrossel
 	$(function() {

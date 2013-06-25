@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/cartaozinho/geral.css" type="text/css" />
 <?php use_helper('I18N', 'Date')
 ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
@@ -134,7 +134,7 @@
         
           </a>
 
-          <a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/copa-segunda-rodada" title="Participe da nossa enquete!"></a>
+          <!--a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/copa-segunda-rodada" title="Participe da nossa enquete!"></a-->
           <div class="juiza"></div>
           <div class="redes-sociais">
             <a href="https://www.facebook.com/Cartaozinho" class="face" name"Facebook" title="Facebook">Facebook</a>

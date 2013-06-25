@@ -232,3 +232,55 @@ p { color:#333; font-size: 14px;}
 
 .destaques.rodape .span4.last { padding:5px; background:url(/portal/images/capaPrograma/maiscrianca2/bg-branco.png) repeat; margin-left:2%; width:310px; height:260px;} 
 .destaques .span12 .box-conteudo { text-align:left;}
+
+/* ferias*/
+.nav-tabs > .ferias > a p
+.nav-tabs > .ferias > a:hover p,
+.nav-tabs > .ferias p,
+.nav-tabs > .ferias.active > a p,
+.nav-tabs > .ferias.active > a:hover p,
+.nav-tabs > .ferias.active p { margin-left:0; background:#dd2b7d; color:#ffed5a; padding-right:26px; padding-left:23px;} 
+.nav-tabs > .joguinhos > a p { padding-left:23px;} 
+.nav-tabs > .joguinhos:hover > a p { margin-left: 0;    padding-right: 13px;}
+.nav-tabs > li:hover > a p,
+.nav-tabs > li:hover > a:hover p { background: none repeat scroll 0 0 #FFCE2B;    color: #FF6525; }
+.nav-tabs > li:hover > a span.ativo, 
+.nav-tabs > li:hover > a span.ativo {  display: block;  background-position: -13px 0;    float: right;} 
+.nav-tabs > .atividades.active span{ display:none;}
+.nav-tabs > .atividades.active .ativo { display:block;}
+.nav-tabs > .atividades p { margin-left:0 !important}
+.nav-tabs > .joguinhos a p,
+.nav-tabs > .joguinhos:hover a p { padding-left:23px;}  
+#ferias {  background:#dd2b7d; text-align:left;} 
+#ferias .span12 {  margin:0 !important; padding:20px; background:#dd2b7d; }
+#ferias .span8 {margin:0;} 
+#ferias .span4 { margin-left:2%; width:32%; text-align:left;} 
+#ferias h2 {color:#ffed5a; font-size:30px; line-height:34px; text-transform:uppercase; margin-top:0;}
+#ferias p { color:#fff; } 
+#ferias .span4 p { color:#fff; max-height:320px; overflow: hidden;} 
+#ferias .barra { width: 100%; display:block; background: url(/portal/images/capaPrograma/maiscrianca2/divisa-ferias.png) repeat-x; height:4px; clear:both; }
+#menu .tab-content {  overflow: hidden;}
+#ferias .oquee { background:#dd2b7d url(/portal/images/capaPrograma/maiscrianca2/bg-pergunta.png) repeat; }
+#ferias .oquee h3 {background: url(/portal/images/capaPrograma/maiscrianca2/tit-oquee.png) no-repeat; text-indent:-9999px; margin:0;} 
+
+.form-contato label {color:#fff; width:49%; margin:0 2% 2% 0; float: left; font-weight:bold; text-transform:uppercase; height:24px; line-height:24px; position:relative; }
+.form-contato textarea,
+.form-contato label input { width:79%; margin:0 0 0 5px; background:#ffed5a; border:none; box-shadow:none; border-radius:0; -moz-border-radius: 0; -webkit-border-radius:0; padding:0 5px;  height:24px; line-height:24px;}
+.form-contato .contador,
+.form-contato .contador span { font-size: 12px; color:#fff;}
+.form-contato .contador span { margin:0 5px;}       
+.form-contato .contador { width: 40px; margin-left:30px;} 
+.form-contato textarea { position:absolute; right:3px; top:0; height:96px; width: 90%;}
+.form-contato  .email { margin-right:0; float:right;} 
+.form-contato  .charada { width:100%; overflow:hidden; height:100px;  }   
+.form-contato #enviar { background:url(/portal/images/capaPrograma/maiscrianca2/btn-enviar.png) no-repeat; width: 116px; height:29px; float:right; color:#dd2b7d;  border:none; box-shadow:none; border-radius:0; -moz-border-radius: 0; -webkit-border-radius:0; text-transform:uppercase; font-weight:bold;} 
+#ferias .carrossel { padding:0; margin:0 !important; width:930px !important; } 
+#ferias .carrossel .jcarousel-prev, 
+#ferias .carrossel .jcarousel-next { background-image: url(/portal/images/capaPrograma/maiscrianca2/seta-carrossel.png); top:30px;}
+#ferias .carrossel .jcarousel-clip.jcarousel-clip-horizontal { width:840px;} 
+#ferias .carrossel li a, 
+#ferias .carrossel .jcarousel-item a img, 
+#ferias .carrossel .jcarousel-item { width:200px;} 
+#ferias .carrossel .jcarousel-item { height:120px;} 
+#ferias .jcarousel-clip.jcarousel-clip-horizontal {  margin-left:45px;}
+#ferias .carrossel .jcarousel-item-horizontal { margin-right:13px;}
