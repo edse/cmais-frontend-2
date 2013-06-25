@@ -33,4 +33,7 @@ input.form-contato {    float: left;    margin-right: 5px;    margin-left: 1px; 
 #lista-videos { *margin-left:0 }
 .box-interna h3 { *width:640px !important; *height:40px !important; *line-height: 40px !important; *padding:0 20px !important;  }
 #lista-videos img { margin-bottom:5px; }
+
+#votar,
+.form-votacao p,
 #lista-videos label { font-size:16px; }
