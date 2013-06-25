@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'GothamMediumRegular';
+    src: url('/potal/css/fontes/gotham/gotham-medium-webfont.eot');
+    src: url('/potal/css/fontes/gotham/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/potal/css/fontes/gotham/gotham-medium-webfont.woff') format('woff'),
+         url('/potal/css/fontes/gotham/gotham-medium-webfont.ttf') format('truetype'),
+         url('/potal/css/fontes/gotham/gotham-medium-webfont.svg#GothamMediumRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.bg-site{background:url(/portal/images/capaPrograma/festivaldeinverno2013/bg.jpg) repeat-x; height:160px;}
+.topo{width:990px; height:160px; display:block; margin: 0 auto;position:relative; background:url(/portal/images/capaPrograma/festivaldeinverno2013/partitura.png) no-repeat center center;}
+.topo .logo{margin:10px 0 0 46px; float:left;}
+.topo .box-direita{float:right; width:340px;margin-top:60px;}
+.topo .box-direita .redes{padding:10px 0 0 30px;}
+.topo #horario p{padding: 4px 0;font-family:'GothamMediumRegular', 'Arial Rounded MT Bold', Arial, Helvetica, sans-serif; font-size: 16px; color:#FFF; text-transform:uppercase; background: url(/portal/images/capaPrograma/festivaldeinverno2013/fundo_texto.png) no-repeat center center;}
+#conteudo-pagina {width: 990px;}
+#capa-site { margin-top:11px !important; }
+#esquerda { width:640px; margin-bottom:100px; margin-right:0; text-align:left;}
+#esquerda .titulos { margin:20px 0 10px 0;width: 100%; }
+#direita { margin:0px 5px; }
+.box-compartilhar {margin-top: 20px;}
+.curtir{width: 214px; float:left;}

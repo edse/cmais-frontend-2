@@ -148,7 +148,7 @@
                       <option value="Crítica">Crítica</option>
                       <option value="Comentário">Comentário</option>
                       <option value="Sugestão">Sugestão</option>
-                      <option value="Compra de DVD">Compra de DVD</option>
+                      <!--option value="Compra de DVD">Compra de DVD</option-->
                     </select>
                   </div>
                   <div class="linha t3">
