@@ -278,3 +278,7 @@ p { color:#333; font-size: 14px;}
 #ferias .carrossel .jcarousel-prev, 
 #ferias .carrossel .jcarousel-next { background-image: url(/portal/images/capaPrograma/maiscrianca2/seta-carrossel.png);}
 #ferias .carrossel .jcarousel-clip.jcarousel-clip-horizontal { width:850px;} 
+#ferias .carrossel li a, 
+#ferias .carrossel .jcarousel-item a img, 
+#ferias .carrossel .jcarousel-item { width:200px;} 
+#ferias .carrossel .jcarousel-item { height:120px;} 
