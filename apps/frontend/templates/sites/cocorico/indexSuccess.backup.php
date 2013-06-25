@@ -1,4 +1,4 @@
-<link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
 
 <style type="text/css">
 /* tooltip*/

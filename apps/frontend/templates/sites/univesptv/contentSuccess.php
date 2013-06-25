@@ -12,10 +12,10 @@ $block = Doctrine::getTable('Block')->findOneById(674);
 if($block)
   $destaque_links_2 = $block->retriveDisplays();
 ?>
-<link type="text/css" href="/portal/univesptv/css/geral.css" rel="stylesheet" />
-<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
-<link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
-<script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
+<link type="text/css" href="http://cmais.com.br/portal/univesptv/css/geral.css" rel="stylesheet" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
+<link type="text/css" href="http://cmais.com.br/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
 
 <script type="text/javascript">
 $(function(){

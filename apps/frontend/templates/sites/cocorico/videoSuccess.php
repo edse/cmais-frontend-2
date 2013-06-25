@@ -5,7 +5,7 @@ if(!isset($asset)){
 }
 ?>
 
-<link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <script type="text/javascript">
   $(document).ready(function() {
@@ -52,7 +52,7 @@ if(!isset($asset)){
   </div>
   
   <a id="btn_1" href="javascript: vote('<?php echo $asset->getId()?>');" class="curtir" title="Curtir">curtir</a>
-  <img src="/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
+  <img src="http://cmais.com.br/images/spinner_bar.gif" style="display: none; float: right;" id="v_load" />
   <a id="btn_2" href="javascript:;" class="curtir disabled" title="Curtir">curtir</a>
 
   <!--row-->

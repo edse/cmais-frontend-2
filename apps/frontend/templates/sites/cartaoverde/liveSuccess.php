@@ -1,13 +1,13 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/rodaviva.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/rodaviva.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
-<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
 <script>
 function stream1() {
-  var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
+  var so = new SWFObject('http://cmais.com.br/portal/js/mediaplayer/player.swf','mpl','640','364','9');
   so.addVariable('controlbar', 'bottom');
   so.addVariable('autostart', 'true');
   so.addVariable('streamer', 'rtmp://200.136.27.12/live');
