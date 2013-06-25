@@ -272,4 +272,4 @@ p { color:#333; font-size: 14px;}
 .form-contato textarea { position:absolute; right:3px; top:0; height:96px; width: 90%;}
 .form-contato  .email { margin-right:0; float:right;} 
 .form-contato  .charada { width:100%; overflow:hidden; height:100px;  }   
-.form-contato #enviar { background:url(/portal/images/capaPrograma/maiscrianca2/btn-enviar.png) no-repeat; width: 116px; height:29px; float:right;} 
+.form-contato #enviar { background:url(/portal/images/capaPrograma/maiscrianca2/btn-enviar.png) no-repeat; width: 116px; height:29px; float:right; color:#dd2b7d;} 
