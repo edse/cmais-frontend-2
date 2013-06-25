@@ -7,11 +7,11 @@
 #lista-videos li iframe {    margin-bottom: 5px;  }
 #votar {    width: 100%;    background: #333;    color: #fff;    text-transform: uppercase;    border: none;    margin-top: 20px;    height: 20px;    line-height: 20px;  }
 #menu-portal-2 .busca-portal .ipt-txt {    padding: 0 0 0 30px;    border-radius: 0;    height: 24px;  }
-#resultado-video li {    list-style: none;    margin-left: 0;    position: relative;  }
+#resultado-video li {    list-style: none;    margin-left: 0;    position: relative; margin-top:20px; }
 #resultado-video .classificacao {    margin-left: 0;  }
 #resultado-video li span {    position: absolute;    right: 0;    top: 0;  }
 input.form-contato {    float: left;    margin-right: 5px;    margin-left: 1px;    width: 14px;  }
-#resultado-video p {    margin-bottom: 0;  }
+#resultado-video p {    margin-bottom: 5px;  font-size:16px;  }
 #barra-site .redes .curtir {    width: auto;  }
 #menu-portal-2 .abas li {    float: right;  }
 #resultado-video h2,
@@ -28,7 +28,7 @@ input.form-contato {    float: left;    margin-right: 5px;    margin-left: 1px; 
 .box-interna .texto { padding-bottom:20px; min-height:400px; }
 #lista-videos label.error { position:absolute; bottom:0; color:red; }
 .box-interna .texto p { padding:0; }
-#resultado-video h2 { padding:20px 0 0; }
+#resultado-video h2 { padding:0; }
 #lista-videos input { margin-left:1px; }
 #lista-videos { *margin-left:0 }
 .box-interna h3 { *width:640px !important; *height:40px !important; *line-height: 40px !important; *padding:0 20px !important;  }
@@ -37,3 +37,4 @@ input.form-contato {    float: left;    margin-right: 5px;    margin-left: 1px; 
 #votar,
 .form-votacao p,
 #lista-videos label { font-size:16px; }
+.progress { margin-bottom:0; }
