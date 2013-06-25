@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'Conv_Futura_Medium_Condensed_BT';
+  src: url('/portal/css/fontes/Futura_Medium_Condensed_BT/fonts/Futura_Medium_Condensed_BT.eot');
+  src: local('☺'), url('/portal/css/fontes/Futura_Medium_Condensed_BT/fonts/Futura_Medium_Condensed_BT.woff') format('woff'), url('/portal/css/fontes/Futura_Medium_Condensed_BT/fonts/Futura_Medium_Condensed_BT.ttf') format('truetype'), url('/portal/css/fontes/Futura_Medium_Condensed_BT/fonts/Futura_Medium_Condensed_BT.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat; }
+.capa-voltar-topo { height:35px; padding-top:39px; }
+#rodape-portal { background:url(/portal/images/capaPrograma/cartaozinho/matinho.png) repeat-x;  }
+.voltar-topo { background:#034005; height:18px; }
+#rodape-portal .box-rodape,
+.capa-rodape { border:none; background:#034005; }
+#capa-site { /*position:relative; top:-810px;*/  margin-top:0 !important;}
+#barra-site .topo-programa { height:147px; }
+#barra-site h2 { margin-top:10px; }
+#barra-site .redes { float:right; }
+#barra-site #horario { clear:both; margin-top:-60px; width:160px; }
+#barra-site #horario p {color:#ebf819;}
+#miolo { margin-top:0; }
+.capa { margin-top:-10px; }
+.menu-interna li { background:#ffff05; }
+.menu-interna li:hover {background:#fff; }
+.menu-interna li:hover a { color:#333; }
+.box-topo .navegacao a,
+.box-topo .navegacao span { color:#fff; }
+
+
+/* home */
+.home { background:url(/portal/images/capaPrograma/cartaozinho/bg-campo.png) no-repeat center 230px; width:1208px; min-height:1400px; margin:0 auto;}
+.home #barra-site .topo-programa { background:none; }
+.home .destaque-video { min-height:460px; width:900px; overflow:hidden; }
+.home .duas-colunas a,
+.home .duas-colunas p { display:none; }
+.home .duas-colunas { float:none; margin:0 0 0 225px; width:528px; height:427px; background:url(/portal/images/capaPrograma/cartaozinho/bg-video.png) no-repeat;  } 
+.home .duas-colunas iframe { margin: 0 0 0 39px; }
+.home .duas-colunas .acompanhe { margin:40px 0 10px 40px; }
+.home .duas-colunas .mais-videos { display: block; float:right; margin:10px 40px 0 0; }
+.home .box-topo { height:26px; }
+
+.home .duas-colunas.enquete {margin: 41px 0 20px 193px; width: 538px; height: 485px; background:url(/portal/images/capaPrograma/cartaozinho/cartaozinho_enquete.png) no-repeat;  }
+.home .duas-colunas.enquete #pergunta-cartaozinho-enquete{width: 457px; height: 462px; float: right; margin: 10px;}
+.home .duas-colunas.enquete #pergunta-cartaozinho-enquete h2{ font-family: 'Conv_Futura_Medium_Condensed_BT', sans-serif;;text-transform: uppercase; font-size: 18px; color: #541fff; padding: 3px 0 0 29px;}
+.home .duas-colunas.enquete #pergunta-cartaozinho-enquete .txt-pergunta{font-family: 'Conv_Futura_Medium_Condensed_BT'; color: #541fff;text-align: center; font-size:30px; width: 100%; display: block; margin-bottom:10px;}
+.home .duas-colunas.enquete .resposta-cartaozinho-enquete{text-align:center;color:#541fff;width: 205px; background: #aef167; border-radius: 5px; padding: 5px; float: left; margin-bottom: 15px;}
+.home .duas-colunas.enquete .resposta-cartaozinho-enquete.nao{float: right;}
+.home .duas-colunas.enquete .versus{text-align: center; width: 27px; display: block; float: left; font-size: 22px; color: #541fff; line-height: 30px;}
+.home .duas-colunas.enquete label{text-transform: uppercase; color: #0b6284;}
+.home .duas-colunas.enquete input[type="submit"]{border: none; background: #541fff; color: #e8e126; padding: 2px 30px; border-radius: 5px; display: block; margin:0 auto;}
+.home .duas-colunas.enquete #img-enquete{width:100%; margin:10px 0 0 0;}
+
+.personagens { width:970px; margin-top:0; }
+.personagens ul { background:url(/portal/images/capaPrograma/cartaozinho/barra.png) no-repeat 0 150px; height:320px; padding-left:100px; margin-top:20px;  }
+.personagens li { height:317px; float: left; margin-right:60px; cursor:pointer; width:142px; }
+.personagens .b-joao { background:url(/portal/images/capaPrograma/cartaozinho/joao.png) no-repeat; }
+.personagens .b-eric { background:url(/portal/images/capaPrograma/cartaozinho/eric.png) no-repeat;   }
+.personagens .b-pedro { background:url(/portal/images/capaPrograma/cartaozinho/pedro.png) no-repeat;  }
+.personagens .b-matheus { background:url(/portal/images/capaPrograma/cartaozinho/matheus.png) no-repeat;  }
+.personagens li:hover { background-position:-142px 0;  }
+.personagens li a { display:block; width:100%; height:100%;  }
+
+.box { background:url(/portal/images/capaPrograma/cartaozinho/bg-bio.png) no-repeat 0 45px; height:430px; width:930px;  }
+.bio .seta { display:block; position:absolute; }
+.bio .bio-joao .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta1.png) no-repeat; width: 60px; height:89px; left:215px;  }
+.bio .bio-eric .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta2.png) no-repeat; width: 70px; height:96px; left:388px;  }
+.bio .bio-pedro .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta3.png) no-repeat; width: 69px; height:69px; right:352px;  }
+.bio .bio-matheus .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta4.png) no-repeat; width: 66px; height:100px; right:183px; }
+.bio .box { display: none; }
+.bio .brasao { width:109px; height:140px; position:relative; top:126px; left:25px; }
+.bio .texto { clear: both; height: 279px; left: 0; overflow: hidden; position: relative; text-align: left; top: 90px; width:900px; z-index: 100;}
+.bio .texto p {    color: #003300;    float: left;    font-size: 16px;    font-style: italic;    margin: 0 0 5px 40px;    width: 410px;}
+.bio .texto a,
+.bio .texto span { color:#3c3787; }
+.bio .texto a { font-size:16px; text-decoration:underline; }
+.bio .texto .titulo { margin-bottom:10px; width: 800px; }
+.bio .fechar { width:33px; height:33px; background:url(/portal/images/capaPrograma/cartaozinho/btfechar.png) no-repeat; display:block; position:absolute; top:0; right:0; text-indent:-9999px; cursor: pointer; }
+
+.juiza { position:absolute; top:230px; background:url(/portal/images/capaPrograma/cartaozinho/juiza.png) no-repeat; width:199px; height:330px; }
+.juiza:hover { background-position:-201px 0; }
+
+.redes-sociais { width: 244px; height:340px; position:absolute; top:91px; right:0; }
+.redes-sociais a { width: 90px; height:90px; display:block; background-repeat:no-repeat; text-indent:-9999px; position:absolute; }
+.redes-sociais .face { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-fb.png); top:37px; left:41px;  }
+.redes-sociais .twt { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-twt.png); bottom:66px; right:26px; }
+.redes-sociais .ytb { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-ytb.png); right:0; top:0; }
+
+.fb_iframe_widget iframe { position:relative; }
+.box-topo .navegacao { margin-bottom:10px; }
+.box-topo { height:63px; }
+/* home */
+
+
+/* videos */
+.videos { height:auto; background-image:none; }
+.videos { background-image:none; }
+.videos #box-videos { background:#86D5F3; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius: 5px; }
+.videos #box-videos .topo{background: #2B8DB2;padding: 2px 10px 10px;}
+.videos #box-videos .claro span { display:none; }
+.videos #box-videos h4{color:#000 !important;}
+.videos .pag3,
+.videos #box-videos .claro .capa-titulo { background:none; }
+.videos .pag3 { border-color:#2B8DB2; }
+#box-videos .carrossel { padding:0 5px; }
+#box-videos .carrossel .jcarousel-prev { background-position:0 -90px; right:35px; }
+#box-videos .carrossel .jcarousel-next { background-position: 0 -72px; right:14px; }
+#box-videos .carrossel .jcarousel-item .img-150x90 { margin-right:5px; border:none; }
+#box-videos .txt { color:#fff; }
+.videos .duas-colunas { background:#86D5F3; }
+.videos .duas-colunas a,
+.videos .duas-colunas p { padding:0 20px; }
+#barra-site .topo-programa { background:url(/portal/images/capaPrograma/cartaozinho/bg-topo.png) no-repeat 200px 15px; }
+#menu-rodape .abas-conteudo { background:#86d5f3; }
+#menu-rodape .blocos a { color:#ffff00 }
+.videos .busca form .busque span,
+.videos .busca form .busque { color:#fff; }
+.videos .busca form .buscar { background:#ffff05; color:#666; }
+.videos .busca form .campo-busca { border:1px solid #fff; }
+.videos .paginacao .centraliza { width:auto !important; float:right; margin-right:5px;  }
+.videos .paginacao ul li a.ativo, 
+.videos .paginacao ul li a:hover { color:#ffff05; }
+.videos .abas { background-image:url(/portal/images/capaPrograma/cartaozinho/bg-abas.png); }
+.videos #menu-rodape .abas .neutro a { background:#ffff05; }
+.videos .paginacao { background:#2b8db2; }
+.videos #menu-rodape .abas .neutro:hover span,
+.videos #menu-rodape .abas .neutro span { background:url(/portal/images/capaPrograma/cartaozinho/detalhe-menu.png) no-repeat;  }
+.videos .blocos li a.bg:hover { border-color:#ffff05;  }
+#menu-rodape .neutro a { line-height:24px; }
+.videos #menu-rodape .abas-conteudo { min-height: 500px; }
+/* /videos */
+
+/* embreve*/
+.embreve { background:url(/portal/images/capaPrograma/cartaozinho/bg-campo2.png) no-repeat center 70px; width:1208px; min-height:1000px; margin:0 auto; }
+.embreve .box { background:url(/portal/images/capaPrograma/cartaozinho/logo-embreve.png) no-repeat 70px bottom; width:534px; height:505px; margin:180px auto;  }
+.embreve .box img { width:251px; height:48px; float:right; }
+.embreve .btn-curtir { width:340px; float:right; clear:both; margin-top:20px; }
+
+/* /embreve*/
+
+/* contato */
+.contato h3 { background:#2b8db2 url(/portal/images/capaPrograma/cartaozinho/tit-faleconosco.png) no-repeat 10px 7px; color:#fff; text-indent:-9999px; }
+.contato { background:#86d5f3; }
+#form-contato { margin:0 10px; }
+.contato form .t1 { width:550px; }
+.contato .codigo .msg, 
+.contato form .t1 label, 
+.contato form .t1 input { width:546px; }
+.contato form .t3 { width: 620px; }
+.contato form textarea,
+.contato form .t3 label, .contato form .t3 input { width:616px; }
+.contato form .linha .enviar { background:#ffff05; color:#666; border-color:#b2b214; }
+.msgAcerto,
+.msgErro { background-color: #ffff05;  }
+.boxMsg p { color:#0a5876; }
+.msgErro .alerta { background:url(/portal/images/capaPrograma/cartaozinho/ico-erro.png) no-repeat; }
+.msgAcerto .alerta { background:url(/portal/images/capaPrograma/cartaozinho/ico-acerto.png) no-repeat; }
+
+/* /contato */
+
+/* interna */
+.box-interna p,
+.box-interna .assinatura,
+.box-interna .texto,
+.box-interna h3 { background:#86d5f3; }
+.box-interna h3 { padding:20px 0 0 10px; }
+.box-interna p,
+.box-interna .assinatura,
+.box-interna .texto { padding:0 10px; }
+.box-interna .texto { padding-bottom:1px; margin-bottom:0; }
+.assinatura { width:600px; }
+.box-compartilhar p { background:none; }
+.box-interna img { max-width:600px }
+/* /interna */
+
+/*secao*/
+.secao { background:#86d5f3; padding:10px; width:600px; }
+/* /secao*/
+
+.bg-site { height:auto; padding-bottom:20px; }
+.box-padrao.content .topo {overflow: visible;}
+.box-padrao.content .claro .capa-titulo {background: #2B8DB2;padding: 10px 10px 3px 10px;margin: 0 0 11px 0;}
+.box-padrao.content {text-align: left;background: #86D5F3;}
+.box-padrao.content li {width: 294px;}
+.box-padrao.content .titulos {width: 294px;}
+.box-padrao.content .conteudo {padding: 7px;}
+
+/* arquivo*/
+.box-padrao {     background: none repeat scroll 0 0 #86D5F3;    border-radius: 5px 5px 5px 5px;}
+.box-padrao .topo {    background: none repeat scroll 0 0 #2B8DB2;    padding: 2px 10px 10px;}
+.box-padrao .topo .capa-titulo { background:transparent; }
+.box-padrao .topo span {  display: none;}
+.box-padrao .topo h4 { font-size:16px; }
+/* /arquivo*/
+
+.contato.sugestao h3 { background: url("/portal/images/capaPrograma/cartaozinho/envie-sua-sugestao.png") no-repeat scroll 10px 5px #2B8DB2; }
+.contato p { margin-left:10px; }
+.envie-sua-sugestao {  position:absolute; top:70px; left:54px; background:url(/portal/images/capaPrograma/cartaozinho/sugestao.png) no-repeat; width:240px; height:174px;  }
+
+.mande-seu-video { background:url(/portal/images/capaPrograma/cartaozinho/mande-seu-video.png) no-repeat; width:520px; height:156px; margin:-62px auto 0; display: block;}
+.mande-seu-video p { padding-top:30px; text-transform:uppercase; color:#fafa88; font-weight:bold;  }
+.mande-seu-video:hover { text-decoration:none; }
+/*.contato.video h3 { background:#2B8DB2 url(/portal/images/capaPrograma/cartaozinho/txt-envievideo.png) no-repeat 0 0; }*/
+.regulamento {    border: 1px solid #DFDFDF;    float: left;    height: 206px;    overflow-x: hidden;    overflow-y: scroll;    padding: 10px 0; background:#fff; }
+.rodape-cmais { background:#86D5F3; padding:10px; }
+.regulamento li ul { margin:-20px 0 20px 20px; }
+.regulamento li ul li { font-size:14px; }
+.regulamento li a { color:#2B8DB2; }
+.contato form .concordo { clear: both;}
+.contato form .concordo .check { width: 15px; }
+
+.box-interna h3,
+.contato h3 {
+    background: none repeat scroll 0 0 #2B8DB2;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 4px 10px;
+    text-indent: 0;
+    text-transform: uppercase;
+    width: 620px;
+}
