@@ -284,4 +284,4 @@ p { color:#333; font-size: 14px;}
 #ferias .carrossel .jcarousel-item { height:120px;} 
 #ferias .jcarousel-clip.jcarousel-clip-horizontal {  margin-left:45px;}
 #ferias .carrossel .jcarousel-item-horizontal { margin-right:13px;}
-#ferias .span12 iframe { *width:900px !important; } 
+#ferias .span12 iframe { *display: none; } 
