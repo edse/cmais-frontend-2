@@ -59,7 +59,7 @@
         
         <!-- ESQUERDA -->
         <div id="esquerda" class="grid2">
-          <iframe width="640" height="390" src="http://www.youtube.com/embed/videoseries?list=PL0Qz-covvhxROHvVGcrw2Zcs_rUsY-mIa" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="http://www.youtube.com/embed/if5gEaIzk7s?rel=0" frameborder="0" allowfullscreen></iframe>
           <p class="titulos">Chamada - Festival de Inverno de Campos do Jordão</p>
           <p>A TV Cultura exibe no sábado, 30 de junho, às 20:30, o concerto de abertura do 43º Festival de Inverno de Campos do Jordão. Não perca ao vivo a apresentação da Osesp sob regência de Thomas Dausgaard.</p>
 
