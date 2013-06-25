@@ -262,5 +262,5 @@ p { color:#333; font-size: 14px;}
 #ferias .oquee { background:#dd2b7d url(/portal/images/capaPrograma/maiscrianca2/bg-pergunta.png) repeat; padding:20px;}
 #ferias .oquee h3 {background: url(/portal/images/capaPrograma/maiscrianca2/tit-oquee.png) no-repeat; text-indent:-9999px; margin:0;} 
 
-.form-contato label {color:#fff; margin-right:5px; width:40%; margin:0 2% 0 0; }
-.form-contato label input { width:80%;}   
+.form-contato label {color:#fff; width:48%; margin:0 2% 0 0; }
+.form-contato label input { width:80%; margin-left:5px; }   
