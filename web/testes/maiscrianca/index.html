@@ -181,7 +181,7 @@
                 </div>
               
               </div>
-              <form class="form-contato">
+              <form class="form-contato" method="post" action="">
                 <label>Seu nome<input type="text" name="nome" /></label>
                 <label class="email">Seu email<input type="text" nome=email /></label>
                 <br/>
@@ -407,10 +407,10 @@
           dataType : "text",
           data : $("#form-contato").serialize(),
           beforeSend : function() {
-            $('input#enviar').attr('disabled', 'disabled');
-            $(".msgAcerto").hide();
-            $(".msgErro").hide();
-            $('img#ajax-loader').show();
+            //$('input#enviar').attr('disabled', 'disabled');
+            //$(".msgAcerto").hide();
+            //$(".msgErro").hide();
+            //$('img#ajax-loader').show();
           },
           success : function(data) {
             //$('input#enviar').removeAttr('disabled');
@@ -425,33 +425,35 @@
               $(".msgErro").show();
               //$('img#ajax-loader').hide();
             }
+          },
+          rules : {
+            nome : {
+              required : true,
+              minlength : 2
+            },
+            email : {
+              required : true,
+              email : true
+            },
+            
+            charada : {
+              required : true
+            }
+            
+          },
+          messages : {
+            nome : "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+            email : "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+            charada : "Este campo &eacute; Obrigat&oacute;rio."
+          },
+          success : function(label) {
+            // set &nbsp; as text for IE
+            label.html("&nbsp;").addClass("checked");
           }
+          
         });
-      },
-      rules : {
-        nome : {
-          required : true,
-          minlength : 2
-        },
-        email : {
-          required : true,
-          email : true
-        },
-        
-        charada : {
-          required : true
-        }
-        
-      },
-      messages : {
-        nome : "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
-        email : "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
-        charada : "Este campo &eacute; Obrigat&oacute;rio."
-      },
-      success : function(label) {
-        // set &nbsp; as text for IE
-        label.html("&nbsp;").addClass("checked");
       }
+     
     });
   });
   // Contador de Caracters
