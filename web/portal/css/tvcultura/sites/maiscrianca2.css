@@ -274,7 +274,7 @@ p { color:#333; font-size: 14px;}
 .form-contato  .email { margin-right:0; float:right;} 
 .form-contato  .charada { width:100%; overflow:hidden; height:100px;  }   
 .form-contato #enviar { background:url(/portal/images/capaPrograma/maiscrianca2/btn-enviar.png) no-repeat; width: 116px; height:29px; float:right; color:#dd2b7d;  border:none; box-shadow:none; border-radius:0; -moz-border-radius: 0; -webkit-border-radius:0; text-transform:uppercase; font-weight:bold;} 
-#ferias .carrossel.span12 { padding:0; margin:0; width:930px; } 
+#ferias .carrossel.span12 { padding:0; margin:0 !important; width:930px !important; } 
 #ferias .carrossel .jcarousel-prev, 
 #ferias .carrossel .jcarousel-next { background-image: url(/portal/images/capaPrograma/maiscrianca2/seta-carrossel.png);}
 #ferias .carrossel .jcarousel-clip.jcarousel-clip-horizontal { width:850px;} 
