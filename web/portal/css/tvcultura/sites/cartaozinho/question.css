@@ -9,9 +9,10 @@
 #menu-portal-2 .busca-portal .ipt-txt {    padding: 0 0 0 30px;    border-radius: 0;    height: 24px;  }
 #resultado-video li {    list-style: none;    margin-left: 0;    position: relative; margin-top:20px; }
 #resultado-video .classificacao {    margin-left: 0;  }
-#resultado-video li span {    position: absolute;    right: 0;    top: 0;  }
+#resultado-video li span {    position: absolute;    right: 0;    top: 0; font-size:16px; }
 input.form-contato {    float: left;    margin-right: 5px;    margin-left: 1px;    width: 14px;  }
 #resultado-video p {    margin-bottom: 5px;  font-size:16px;  }
+
 #barra-site .redes .curtir {    width: auto;  }
 #menu-portal-2 .abas li {    float: right;  }
 #resultado-video h2,
