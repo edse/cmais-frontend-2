@@ -156,9 +156,10 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla fermentum eros non vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vitae enim blandit, congue elit quis, volutpat sapien. Fusce magna odio, ultricies eget blandit eget, sodales ut tortor. Donec a sodales nunc, vitae viverra turpis. Proin id bibendum neque, id fringilla sem. Praesent placerat lectus a nibh commodo, eget condimentum mauris volutpat. Quisque eros risus, imperdiet sed dui a, ornare fringilla erat. Nam sit amet velit nulla. Ut molestie odio eget lorem tincidunt, sit amet adipiscing sem porta. Duis hendrerit ipsum in dignissim pellentesque cras amet.</p>
                
               </div>
-              <span class="barra"></span>
+              
               
             </div>
+            <span class="barra"></span>
             <div class="span12 oquee">
               <h3>O que é o que é</h3>
               
@@ -180,7 +181,7 @@
                 </div>
               
               </div>
-              <form class="form-contato">
+              <form class="form-contato" method="post" action="">
                 <label>Seu nome<input type="text" name="nome" /></label>
                 <label class="email">Seu email<input type="text" nome=email /></label>
                 <br/>
@@ -197,7 +198,11 @@
             <span class="barra"></span>
             <div class="span12">
               <h2>Assista às charadinhas:</h2>
-              <iframe width="930" height="689 " src="http://www.youtube.com/embed/UpWplpTyQhc?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>
+              
+              <iframe id="video-charada" width="930" height="689" src="http://www.youtube.com/embed/UpWplpTyQhc" frameborder="0" allowfullscreen></iframe>
+              <!--[if IE]>
+                <iframe width="900" height="689 " src="http://www.youtube.com/embed/UpWplpTyQhc" frameborder="0" allowfullscreen></iframe>
+              <![endif]-->
             </div>
             <div class="span12">
               <div class="carrossel">
@@ -296,7 +301,7 @@
         <div class="pontilhado row-fluid span12"></div>
       </div>
     </div>
-    <script type="text/javascript" src="/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
+    
     <script type="text/javascript">
       $(function() {
         //carrossel
@@ -390,7 +395,7 @@
   </div>
   
   <div id="fb-root"></div>
-  
+  <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
   <script type="text/javascript">
   $(document).ready(function() {
     $('input#enviar').click(function() {
@@ -403,49 +408,53 @@
           dataType : "text",
           data : $("#form-contato").serialize(),
           beforeSend : function() {
-            $('input#enviar').attr('disabled', 'disabled');
-            $(".msgAcerto").hide();
-            $(".msgErro").hide();
-            $('img#ajax-loader').show();
+            //$('input#enviar').attr('disabled', 'disabled');
+            //$(".msgAcerto").hide();
+            //$(".msgErro").hide();
+            //$('img#ajax-loader').show();
           },
           success : function(data) {
-            $('input#enviar').removeAttr('disabled');
-            window.location.href = "#";
+            //$('input#enviar').removeAttr('disabled');
+            window.location.href = "javascript:;";
             if(data == "1") {
               $("#form-contato").clearForm();
+              alert("fui");
               $(".msgAcerto").show();
-              $('img#ajax-loader').hide();
+              //$('img#ajax-loader').hide();
             } else {
+               alert("nao fui");
               $(".msgErro").show();
-              $('img#ajax-loader').hide();
+              //$('img#ajax-loader').hide();
             }
+          },
+          rules : {
+            nome : {
+              required : true,
+              minlength : 2
+            },
+            email : {
+              required : true,
+              email : true
+            },
+            
+            charada : {
+              required : true
+            }
+            
+          },
+          messages : {
+            nome : "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+            email : "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+            charada : "Este campo &eacute; Obrigat&oacute;rio."
+          },
+          success : function(label) {
+            // set &nbsp; as text for IE
+            label.html("&nbsp;").addClass("checked");
           }
+          
         });
-      },
-      rules : {
-        nome : {
-          required : true,
-          minlength : 2
-        },
-        email : {
-          required : true,
-          email : true
-        },
-        
-        charada : {
-          required : true
-        }
-        
-      },
-      messages : {
-        nome : "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
-        email : "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
-        charada : "Este campo &eacute; Obrigat&oacute;rio."
-      },
-      success : function(label) {
-        // set &nbsp; as text for IE
-        label.html("&nbsp;").addClass("checked");
       }
+     
     });
   });
   // Contador de Caracters

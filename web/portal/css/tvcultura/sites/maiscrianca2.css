@@ -284,3 +284,4 @@ p { color:#333; font-size: 14px;}
 #ferias .carrossel .jcarousel-item { height:120px;} 
 #ferias .jcarousel-clip.jcarousel-clip-horizontal {  margin-left:45px;}
 #ferias .carrossel .jcarousel-item-horizontal { margin-right:13px;}
+#ferias #video-charada { *display: none; } 
