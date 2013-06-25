@@ -183,14 +183,7 @@
               <?php if(isset($displays["destaque-apresentadores"])) include_partial_from_folder('blocks','global/display-1c-hosts', array('displays' => $displays["destaque-apresentadores"])) ?>
               <!-- /BOX PADRAO -->
               
-              <!-- BOX PUBLICIDADE -->
-              <div class="box-publicidade grid1">
-                <!-- programas-assets-300x250 -->
-                <script type='text/javascript'>
-                GA_googleFillSlot("maiscrianca");
-                </script>
-              </div>
-              <!-- / BOX PUBLICIDADE -->
+             
 
               <?php $relacionados = array(); if($asset) $relacionados = $asset->retriveRelatedAssets2(); ?>
               <?php if(count($relacionados) > 0): ?>
