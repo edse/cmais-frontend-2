@@ -12,9 +12,9 @@
 <div class="bg-site">
   <!--topo-->
   <div class="topo">
-    <a href="/festivaldeinverno" target="_self">
+    <a href="/festivaldeinverno2013" target="_self">
       <!--logo-->
-      <img class="logo" src="/portal/images/capaPrograma/festivaldeinverno/logofestival.png" alt="Festival de Inverno na Cultura"/>
+      <img class="logo" src="/portal/images/capaPrograma/festivaldeinverno2013/logofestival.png" alt="Festival de Inverno na Cultura"/>
       <!--/logo-->
     </a>
      
