@@ -48,7 +48,7 @@
           <div class="capa-revista">
             <?php if(isset($displays["destaque-principal"])): ?>
               <?php if(count($displays["destaque-principal"]) > 0): ?>
-              <img src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" />
+              <a href="<?php echo $displays["destaque-principal"][0]->retriveUrl() ?>" title="<?php echo $displays["destaque-principal"][0]->getTitle() ?>"><img src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" /></a>
               <?php endif; ?>
             <?php endif ?>
          </div>
