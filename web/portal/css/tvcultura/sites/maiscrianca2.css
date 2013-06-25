@@ -263,10 +263,10 @@ p { color:#333; font-size: 14px;}
 #ferias .oquee h3 {background: url(/portal/images/capaPrograma/maiscrianca2/tit-oquee.png) no-repeat; text-indent:-9999px; margin:0;} 
 
 .form-contato label {color:#fff; width:48%; margin:0 2% 0 0; float: left; font-weight:bold; text-transform:uppercase; height:24px; line-height:24px; position:relative; }
-.form-contato .textarea,
+.form-contato textarea,
 .form-contato label input { width:79%; margin:0 0 0 5px; background:#ffed5a; border:none; box-shadow:none; border-radius:0; -moz-border-radius: 0; -webkit-border-radius:0; padding:0 5px;  height:24px; line-height:24px;}
 .form-contato .contador,
 .form-contato .contador span { font-size: 12px; color:#fff;}
 .form-contato .contador span { margin:0 5px;}       
 .form-contato .contador { width: 40px; margin-left:30px;} 
-.form-contato .textarea { position:absolute; right:0; top:0;}  
+.form-contato textarea { position:absolute; right:0; top:0;}  
