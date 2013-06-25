@@ -181,7 +181,7 @@
                 </div>
               
               </div>
-              <form class="form-contato">
+              <form class="form-contato" method="post" action="">
                 <label>Seu nome<input type="text" name="nome" /></label>
                 <label class="email">Seu email<input type="text" nome=email /></label>
                 <br/>
@@ -199,6 +199,9 @@
             <div class="span12">
               <h2>Assista às charadinhas:</h2>
               <iframe width="930" height="689 " src="http://www.youtube.com/embed/UpWplpTyQhc" frameborder="0" allowfullscreen></iframe>
+              <!--[if IE]>
+                <iframe width="900" height="689 " src="http://www.youtube.com/embed/UpWplpTyQhc" frameborder="0" allowfullscreen></iframe>
+              <![endif]-->
             </div>
             <div class="span12">
               <div class="carrossel">
@@ -297,7 +300,7 @@
         <div class="pontilhado row-fluid span12"></div>
       </div>
     </div>
-    <script type="text/javascript" src="/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
+    
     <script type="text/javascript">
       $(function() {
         //carrossel
@@ -391,7 +394,7 @@
   </div>
   
   <div id="fb-root"></div>
-  
+  <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
   <script type="text/javascript">
   $(document).ready(function() {
     $('input#enviar').click(function() {
@@ -404,49 +407,53 @@
           dataType : "text",
           data : $("#form-contato").serialize(),
           beforeSend : function() {
-            $('input#enviar').attr('disabled', 'disabled');
-            $(".msgAcerto").hide();
-            $(".msgErro").hide();
-            $('img#ajax-loader').show();
+            //$('input#enviar').attr('disabled', 'disabled');
+            //$(".msgAcerto").hide();
+            //$(".msgErro").hide();
+            //$('img#ajax-loader').show();
           },
           success : function(data) {
-            $('input#enviar').removeAttr('disabled');
-            window.location.href = "#";
+            //$('input#enviar').removeAttr('disabled');
+            window.location.href = "javascript:;";
             if(data == "1") {
               $("#form-contato").clearForm();
+              alert("fui");
               $(".msgAcerto").show();
-              $('img#ajax-loader').hide();
+              //$('img#ajax-loader').hide();
             } else {
+               alert("nao fui");
               $(".msgErro").show();
-              $('img#ajax-loader').hide();
+              //$('img#ajax-loader').hide();
             }
+          },
+          rules : {
+            nome : {
+              required : true,
+              minlength : 2
+            },
+            email : {
+              required : true,
+              email : true
+            },
+            
+            charada : {
+              required : true
+            }
+            
+          },
+          messages : {
+            nome : "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+            email : "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+            charada : "Este campo &eacute; Obrigat&oacute;rio."
+          },
+          success : function(label) {
+            // set &nbsp; as text for IE
+            label.html("&nbsp;").addClass("checked");
           }
+          
         });
-      },
-      rules : {
-        nome : {
-          required : true,
-          minlength : 2
-        },
-        email : {
-          required : true,
-          email : true
-        },
-        
-        charada : {
-          required : true
-        }
-        
-      },
-      messages : {
-        nome : "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
-        email : "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
-        charada : "Este campo &eacute; Obrigat&oacute;rio."
-      },
-      success : function(label) {
-        // set &nbsp; as text for IE
-        label.html("&nbsp;").addClass("checked");
       }
+     
     });
   });
   // Contador de Caracters
