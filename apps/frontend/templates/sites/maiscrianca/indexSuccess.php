@@ -50,7 +50,7 @@ if($feriasSection)
         <?php endif; ?>
         <?php if(isset($displays['destaque-principal-1'])): ?>
           <?php if(count($displays['destaque-principal-1']) > 0): ?>
-        <li class="joguinhos"><a href="#home" data-toggle="tab"><p><?php echo $displays['destaque-principal-1'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li>
+        <li class="joguinhos<?php if(!$feriasSection): ?> active<?php endif; ?>"><a href="#home" data-toggle="tab"><p><?php echo $displays['destaque-principal-1'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li>
           <?php endif; ?>
         <?php endif; ?>
         <?php if(isset($displays['destaque-principal-2'])): ?>
@@ -163,7 +163,7 @@ if($feriasSection)
              
         <?php if(isset($displays['destaque-principal-1'])): ?>
           <?php if(count($displays['destaque-principal-1']) > 0): ?>
-        <div class="tab-pane fade" id="home">
+        <div class="tab-pane fade<?php if(!$feriasSection): ?> active in<?php endif; ?>" id="home">
           <ul class="lista">
             <?php foreach($displays['destaque-principal-1'] as $k=>$d): ?>
             <li class="span3">
