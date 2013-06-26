@@ -292,3 +292,4 @@ p { color:#333; font-size: 14px;}
 #ferias iframe#video-charada {  width:900px\9 !important; *overflow:hidden;}
 #ferias .carrossel .jcarousel-clip.jcarousel-clip-horizontal {  width:810px\9;  } 
 #ferias .boxMsg { text-align:center; margin:50px 0;}  
+#ferias .boxMsg p { font-weight:bold;} 
