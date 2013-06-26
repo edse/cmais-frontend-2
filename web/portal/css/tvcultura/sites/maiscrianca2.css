@@ -287,3 +287,4 @@ p { color:#333; font-size: 14px;}
 #video-charada { *display: none !important; *overflow:hidden; } 
 #ferias .span12 { *width: 900px !important; }
 #ferias iframe#video-charada {  width:900px\9; *overflow:hidden;}
+#ferias .carrossel { *width: 900px} 
