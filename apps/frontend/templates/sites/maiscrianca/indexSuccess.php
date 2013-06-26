@@ -23,9 +23,10 @@
   <div class="row-fluid" id="menu">
     <div class="span12">
       <ul id="myTab" class="nav nav-tabs">
+        <li class="ferias active"><a href="#ferias" data-toggle="tab"><p>Férias</p></a></li>
         <?php if(isset($displays['destaque-principal-1'])): ?>
           <?php if(count($displays['destaque-principal-1']) > 0): ?>
-        <li class="joguinhos active"><a href="#home" data-toggle="tab"><p><?php echo $displays['destaque-principal-1'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li>
+        <li class="joguinhos"><a href="#home" data-toggle="tab"><p><?php echo $displays['destaque-principal-1'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li>
           <?php endif; ?>
         <?php endif; ?>
         <?php if(isset($displays['destaque-principal-2'])): ?>
@@ -35,9 +36,107 @@
         <?php endif; ?>
       </ul>
       <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="ferias">
+          <div class="span12">
+            <img class="span8" src="http://midia.cmais.com.br/assets/image/image-2/78ea44c7c0607f033b7c885f2d30511253f8c898.jpg" alt="Jogo Surfando no Asfalto - DJ Cão" />
+            <div class="span4">
+              <h2>novidades na programação!</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla fermentum eros non vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vitae enim blandit, congue elit quis, volutpat sapien. Fusce magna odio, ultricies eget blandit eget, sodales ut tortor. Donec a sodales nunc, vitae viverra turpis. Proin id bibendum neque, id fringilla sem. Praesent placerat lectus a nibh commodo, eget condimentum mauris volutpat. Quisque eros risus, imperdiet sed dui a, ornare fringilla erat. Nam sit amet velit nulla. Ut molestie odio eget lorem tincidunt, sit amet adipiscing sem porta. Duis hendrerit ipsum in dignissim pellentesque cras amet.</p>
+            </div>
+          </div>
+          <span class="barra"></span>
+          <div class="span12 oquee">
+            <h3>O que é o que é</h3>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla fermentum eros non vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vitae enim blandit, congue elit quis, volutpat sapien. Fusce magna odio, ultricies eget blandit eget, sodales ut tortor. Donec a sodales nunc, vitae viverra turpis. Proin id bibendum neque, id fringilla sem. Praesent placerat lectus a nibh commodo, eget condimentum mauris volutpat. Quisque eros risus, imperdiet sed dui a, ornare fringilla erat. Nam sit amet velit nulla. Ut molestie odio eget lorem tincidunt, sit amet adipiscing sem porta. Duis hendrerit ipsum in dignissim pellentesque cras amet.</p>
+            
+            <div class="msgErro" style="display:none">
+              <span class="alerta"></span>
+              <div class="boxMsg">
+                <p class="aviso">Sua mensagem não pode ser enviada.</p>
+                <p>Confirme se todos os campos foram preenchidos corretamente e verifique seus dados. Você pode ter esquecido de preencher algum campo ou errado alguma informação.</p>
+              </div>
+             
+            </div>
+            <div class="msgAcerto" style="display:none">
+              <span class="alerta"></span>
+              <div class="boxMsg"> 
+                <p class="aviso">Sua charada foi enviada com sucesso!</p>
+                <p>Obrigado por participar! Fique ligado na programação da TV Cultura e no site +Criança para assistir a esta e outras charadas!</p>
+              </div>
+            
+            </div>
+            <form class="form-contato" method="post" action="">
+              <label>Seu nome<input type="text" name="nome" /></label>
+              <label class="email">Seu email<input type="text" nome=email /></label>
+              <br/>
+              <label class="charada">charada <br />
+                <p class="contador">[<span id="textCounter">250</span>]</p>
+                <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,250,'#textCounter');"  name="charada"></textarea>
+              </label>
+              <br />
+             
+              
+              <button type="submit" class="btn" id="enviar" value="enviar">Enviar</button>
+            </form>
+          </div>
+          <span class="barra"></span>
+          <div class="span12">
+            <h2>Assista às charadinhas:</h2>
+            
+            <iframe id="video-charada" width="930" height="689" src="http://www.youtube.com/embed/UpWplpTyQhc" frameborder="0" allowfullscreen></iframe>
+            
+          </div>
+          <div class="span12">
+            <div class="carrossel">
+              <ul class="row-fluid span12">
+                <li><a href="http://tvratimbum.cmais.com.br/123"><img src="/portal/maiscrianca/images/icones/123_logo.jpg" alt="" /></a></li>
+                <li><a href="http://tvratimbum.cmais.com.br/mansaomaluca"><img src="/portal/maiscrianca/images/icones/albumnat_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/arthur"><img src="/portal/maiscrianca/images/icones/logo_arthur.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/bob"><img src="/portal/maiscrianca/images/icones/bob-logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/brincadeirasmusicais"><img src="/portal/maiscrianca/images/icones/brincadeiras-musicais_destaque_logo.jpg" alt="" /></a></li>
+                <li><a href="http://www.tvratimbum.com.br/secoes/programas/?id=35"><img src="/portal/maiscrianca/images/icones/cacalivros_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/carrapatosecatapultas"><img src="/portal/maiscrianca/images/icones/logo_carrapatos-e-catapultas.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/casteloratimbum"><img src="/portal/maiscrianca/images/icones/Castelo_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/cyberchase"><img src="/portal/maiscrianca/images/icones/logo_cyberchase.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/dora"><img src="/portal/maiscrianca/images/icones/dora_logo1.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/doug"><img src="/portal/maiscrianca/images/icones/logo_doug.jpg" alt="" /></a></li>
+                <li><a href="http://www.tvratimbum.com.br/secoes/programas/?id=38"><img src="/portal/maiscrianca/images/icones/ecotur_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/escolapracahorro"><img src="/portal/maiscrianca/images/icones/escola-para-cachorro_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/glubglub"><img src="/portal/maiscrianca/images/icones/Glub_logo.jpg" alt="" /></a></li>
+                <li><a href="http://www.tvratimbum.com.br/secoes/programas/?id=61"><img src="/portal/maiscrianca/images/icones/gravidez_logo.jpg" alt="" /></a></li>
+                <li><a href="http://www.tvratimbum.com.br/secoes/programas/?id=25"><img src="/portal/maiscrianca/images/icones/ilha_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/kiara"><img src="/portal/maiscrianca/images/icones/kiara_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/jakers"><img src="/portal/maiscrianca/images/icones/logo_jackers.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/missspider"><img src="/portal/maiscrianca/images/icones/logo_miss-spider.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/setemonstrinhos"><img src="/portal/maiscrianca/images/icones/logo_os7monstrinhos.jpg" alt="" /></a></li>
+                <li><a href="http://www.tvratimbum.com.br/secoes/programas/?id=9"><img src="/portal/maiscrianca/images/icones/MundodaLua_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/oqueeuvouser"><img src="/portal/maiscrianca/images/icones/oqvouser_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/papeldashistorias"><img src="/portal/maiscrianca/images/icones/papel_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/princesasdomar"><img src="/portal/maiscrianca/images/icones/logo_princesasdomar.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/pingu"><img src="/portal/maiscrianca/images/icones/logo_pingu.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/ratimbum"><img src="/portal/maiscrianca/images/icones/ratimbum_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/superfofos"><img src="/portal/maiscrianca/images/icones/logo-superfofos.jpg" alt="" /></a></li>
+                <li><a href="http://www.tvratimbum.com.br/secoes/programas/?id=18"><img src="/portal/maiscrianca/images/icones/passeio_logo.jpg" alt="" /></a></li>
+                <li><a href="http://www.tvratimbum.com.br/secoes/programas/?id=32"><img src="/portal/maiscrianca/images/icones/pequenos_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/sid"><img src="/portal/maiscrianca/images/icones/sid_logo.jpg" alt="" /></a></li>
+                <li><a href="http://http://www.tvratimbum.com.br/secoes/programas/?id=19"><img src="/portal/maiscrianca/images/icones/simao_logo.jpg" alt="" /></a></li>
+                <li><a href="http://www.tvratimbum.com.br/secoes/programas/?id=10"><img src="/portal/maiscrianca/images/icones/djcao_logo.jpg" alt="" /></a></li>
+                <li><a href="http://www.tvratimbum.com.br/secoes/programas/?id=55"><img src="/portal/maiscrianca/images/icones/tamanho_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/http://www.tvratimbum.com.br/secoes/programas/?id=30"><img src="/portal/maiscrianca/images/icones/teatro_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/timmyeamigos"><img src="/portal/maiscrianca/images/icones/timmy_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/trombatrem"><img src="/portal/maiscrianca/images/icones/logo_tromba-trem.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/toot-puddle"><img src="/portal/maiscrianca/images/icones/Toot_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/tracandoarte"><img src="/portal/maiscrianca/images/icones/tracando-arte_logo.jpg" alt="" /></a></li>
+                <li><a href="http://cmais.com.br/vilasesamo"><img src="/portal/maiscrianca/images/icones/vila-sesamo_logo.jpg" alt="" /></a></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>        
         <?php if(isset($displays['destaque-principal-1'])): ?>
           <?php if(count($displays['destaque-principal-1']) > 0): ?>
-        <div class="tab-pane fade active in" id="home">
+        <div class="tab-pane fade" id="home">
           <ul class="lista">
             <?php foreach($displays['destaque-principal-1'] as $k=>$d): ?>
             <li class="span3">
