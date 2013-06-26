@@ -77,11 +77,11 @@ if($feriasSection)
           
           <span class="barra"></span>
           
-          <?php if($feriasDisplays['destaque-principal']): ?>
+          <?php if($feriasDisplays['o-que-e-o-que-e']): ?>
           <div class="span12 oquee">
-            <h3><?php echo $feriasDisplays['destaque-principal'][0]->Block->getTitle() ?></h3>
+            <h3><?php echo $feriasDisplays['o-que-e-o-que-e'][0]->Block->getTitle() ?></h3>
             
-            <p><?php echo $feriasDisplays['destaque-principal'][0]->Block->getDescription() ?></p>
+            <p><?php echo $feriasDisplays['o-que-e-o-que-e'][0]->Block->getDescription() ?></p>
             
             <div class="msgErro" style="display:none">
               <span class="alerta"></span>
