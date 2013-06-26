@@ -255,7 +255,7 @@ p { color:#333; font-size: 14px;}
 #ferias .span12 {  margin:0 !important; padding:20px; background:#dd2b7d; }
 #ferias .span8 {margin:0;} 
 #ferias .span4 { margin-left:2%; width:32%; text-align:left;} 
-#ferias .boxMsg,
+#ferias .boxMsg p,
 #ferias h2 {color:#ffed5a; font-size:30px; line-height:34px; text-transform:uppercase; margin-top:0;}
 #ferias p { color:#fff; } 
 #ferias .span4 p { color:#fff; max-height:285px; overflow: hidden;} 
