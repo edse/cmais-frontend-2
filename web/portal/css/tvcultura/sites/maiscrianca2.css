@@ -205,8 +205,10 @@ p { color:#333; font-size: 14px;}
 .pagination ul li { float: left\9; width: 40px\9; margin-right:10px\9; }
 .pagination ul .disabled { width:120px\9; }
 */
+/*
 .nav-tabs > .atividades.active span, 
-.nav-tabs > .atividades:hover span.ativo { margin-left:-13px\9;} 
+.nav-tabs > .atividades:hover span.ativo { margin-left:-13px\9;}
+*/ 
 /* /hacks ie */
 
 /* Landscape phones and down */
