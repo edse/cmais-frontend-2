@@ -130,12 +130,7 @@ $(function(){
           	      </ul>
           	    </div>
           	  </div>
-          	  <div class="box-publicidade" style="width: 250px; position: absolute; top:222px; left:5px;">
-          	  	<!-- cmais-assets-250x250 -->
-        				<script type='text/javascript'>
-        				GA_googleFillSlot("maiscrianca");
-        				</script>
-    		      </div>
+          	 
           	 
               <?php if(isset($pager)): ?>
                 <?php if($pager->haveToPaginate()): ?>
