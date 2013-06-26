@@ -112,7 +112,7 @@ if($feriasSection)
               <label class="charada">
                 charada <br />
                 <p class="contador">[<span id="textCounter">250</span>]</p>
-                <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,250,'#textCounter');"  name="charada"></textarea>
+                <textarea id="charada" onKeyDown="limitText(this,250,'#textCounter');"  name="charada"></textarea>
               </label>
               <br />
               <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
@@ -265,24 +265,7 @@ if($feriasSection)
         },
         charada:{
           required: true
-        },
-        captcha: {
-          required: true,
-          remote: "/portal/js/validate/demo/captcha/process.php"
         }
-      },
-      messages:{
-        nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
-        email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
-        cidade: "Este campo &eacute; Obrigat&oacute;rio.",
-        estado: "Este campo &eacute; Obrigat&oacute;rio.",
-        assunto: "Este campo &eacute; Obrigat&oacute;rio.",
-        mensagem: "Este campo &eacute; Obrigat&oacute;rio.",
-        captcha: "Digite corretamente o código que está ao lado."
-      },
-      success: function(label){
-        // set &nbsp; as text for IE
-        label.html("&nbsp;").addClass("checked");
       }
     });
   });
