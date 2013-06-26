@@ -115,9 +115,6 @@ if($feriasSection)
           </div>
           <?php endif; ?>
           
-          <span class="barra"></span>
-
-
           <script>
             function changeVideo(id) {
               $('#player').html('<iframe id="video-charada" width="930" height="689" src="http://www.youtube.com/embed/'+id+'?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>');
@@ -125,6 +122,9 @@ if($feriasSection)
           </script>
           
           <?php if($feriasDisplays['charadinhas']): ?>
+
+          <span class="barra"></span>
+            
             <?php if(count($feriasDisplays['charadinhas']) > 0): ?>
           <div class="span12">
             <h2><?php echo $feriasDisplays['charadinhas'][0]->Block->getTitle() ?></h2>
@@ -139,7 +139,7 @@ if($feriasSection)
           <div class="span12">
             <div class="carrossel">
               <ul class="row-fluid span12">
-                <?php foreach($feriasDisplay['charadinhas'] as $d): ?>
+                <?php foreach($feriasDisplays['charadinhas'] as $d): ?>
                 <li>
                   <a href="javascript: changeVideo('<?php echo $d->Asset->AssetVideo->getYoutubeId(); ?>')" title="<?php echo $d->getTitle() ?>">
                     <img src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
