@@ -99,7 +99,7 @@ if($feriasSection)
               </div>
             
             </div>
-            <form class="form-contato" name="form-contato" method="post" action="">
+            <form id="form-contato" class="form-contato" method="post" action="">
               <label>
                 Seu nome
                 <input type="text" name="nome" id="nome" />
