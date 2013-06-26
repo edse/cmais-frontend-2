@@ -1,3 +1,14 @@
+<?php
+$sectionFerias = Doctrine_Query::create()
+  ->select('s.*')
+  ->from('Section s')
+  ->where('s.site_id = ?', (int)$site->id)
+  ->andWhere('s.slug = "ferias"')
+  ->orderBy('s.display_order ASC')
+  ->fetchOne();
+  
+  echo($sectionFerias->slug);
+?>
 <!-- Le styles -->
 <link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"  >
 <link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
