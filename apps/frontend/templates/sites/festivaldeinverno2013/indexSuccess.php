@@ -62,7 +62,7 @@
           <iframe width="640" height="390" src="http://www.youtube.com/embed/if5gEaIzk7s?rel=0" frameborder="0" allowfullscreen></iframe>
           <p class="titulos">Festival de Inverno de Campos do Jordão na Cultura</p>
           <p> A TV Cultura exibe neste sábado, 29 de junho, às 20h30, o concerto de abertura do 44º Festival de Inverno de Campos do Jordão, considerado o mais importante evento de música clássica do Brasil. Sob o comando de Marin Alsop, a OSESP sobe a serra para apresentar no Auditório Claudio Santoro obras de Camargo Guarnieri, Leonard Bernstein e Luciano Berio.</p>
-
+          <p><a href="http://culturafm.cmais.com.br/festival-de-inverno-de-campos-do-jordao-na-cultura" title="veja a programação completa" target="_blank" style="color: #ff6625 ">VEJA A PROGRAMAÇÃO COMPLETA</a></p>
           <?php include_partial_from_folder('blocks','global/share-2c-w-comments', array('site' => $site, 'uri' => $uri) ) ?>
         </div>
         <!-- /ESQUERDA -->
