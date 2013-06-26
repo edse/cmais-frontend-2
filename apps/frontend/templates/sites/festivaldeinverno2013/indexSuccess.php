@@ -60,8 +60,8 @@
         <!-- ESQUERDA -->
         <div id="esquerda" class="grid2">
           <iframe width="640" height="390" src="http://www.youtube.com/embed/if5gEaIzk7s?rel=0" frameborder="0" allowfullscreen></iframe>
-          <p class="titulos">Chamada - Festival de Inverno de Campos do Jordão</p>
-          <p>A TV Cultura exibe no sábado, 30 de junho, às 20:30, o concerto de abertura do 43º Festival de Inverno de Campos do Jordão. Não perca ao vivo a apresentação da Osesp sob regência de Thomas Dausgaard.</p>
+          <p class="titulos">Festival de Inverno de Campos do Jordão na Cultura</p>
+          <p> A TV Cultura exibe neste sábado, 29 de junho, às 20h30, o concerto de abertura do 44º Festival de Inverno de Campos do Jordão, considerado o mais importante evento de música clássica do Brasil. Sob o comando de Marin Alsop, a OSESP sobe a serra para apresentar no Auditório Claudio Santoro obras de Camargo Guarnieri, Leonard Bernstein e Luciano Berio.</p>
 
           <?php include_partial_from_folder('blocks','global/share-2c-w-comments', array('site' => $site, 'uri' => $uri) ) ?>
         </div>
