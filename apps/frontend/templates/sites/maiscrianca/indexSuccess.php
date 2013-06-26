@@ -75,9 +75,9 @@ if($feriasSection)
             <?php endif; ?>
           <?php endif; ?>
           
+          <?php if($feriasDisplays['o-que-e-o-que-e']): ?>
           <span class="barra"></span>
           
-          <?php if($feriasDisplays['o-que-e-o-que-e']): ?>
           <div class="span12 oquee">
             <h3><?php echo $feriasDisplays['o-que-e-o-que-e'][0]->Block->getTitle() ?></h3>
             
@@ -99,7 +99,7 @@ if($feriasSection)
               </div>
             
             </div>
-            <form class="form-contato" method="post" action="">
+            <form class="form-contato" name="form-contato" method="post" action="">
               <label>
                 Seu nome
                 <input type="text" name="nome" id="nome" />
