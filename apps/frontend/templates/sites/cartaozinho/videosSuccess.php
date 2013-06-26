@@ -178,14 +178,7 @@ $(function(){
 			</div>
 		  </div>
 		
-		  <!-- BOX PUBLICIDADE 2 -->
-		  <div class="box-publicidade pub-grd grid3">
-		    <!-- programas-assets-728x90 -->
-		    <script type='text/javascript'>
-		      GA_googleFillSlot("maiscrianca");
-		    </script>
-		  </div>
-		  <!-- / BOX PUBLICIDADE 2 -->
+		 
 
         </div>
         <!-- /CONTEUDO PAGINA -->
