@@ -62,13 +62,17 @@ if($feriasSection)
       <div id="myTabContent" class="tab-content">
         <?php if($feriasSection): ?>
         <div class="tab-pane fade active in" id="ferias">
+          <?php if($feriasDisplays['destaque-princial']): ?>
+            <?php if(count($feriasDisplays['destaque-principal']) > 0) ?>
           <div class="span12">
-            <img class="span8" src="http://midia.cmais.com.br/assets/image/image-2/78ea44c7c0607f033b7c885f2d30511253f8c898.jpg" alt="Jogo Surfando no Asfalto - DJ Cão" />
+            <img class="span8" src="<?php echo $feriasDisplays['destaque-principal'][0]->retriveImageUrlByImageUsage("image-6-b") ?>" alt="<?php echo $feriasDisplays['destaque-principal'][0]->getTitle() ?>" />
             <div class="span4">
-              <h2>novidades na programação!</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla fermentum eros non vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vitae enim blandit, congue elit quis, volutpat sapien. Fusce magna odio, ultricies eget blandit eget, sodales ut tortor. Donec a sodales nunc, vitae viverra turpis. Proin id bibendum neque, id fringilla sem. Praesent placerat lectus a nibh commodo, eget condimentum mauris volutpat. Quisque eros risus, imperdiet sed dui a, ornare fringilla erat. Nam sit amet velit nulla. Ut molestie odio eget lorem tincidunt, sit amet adipiscing sem porta. Duis hendrerit ipsum in dignissim pellentesque cras amet.</p>
+              <h2><?php echo $feriasDisplays['destaque-principal'][0]->getTitle(); ?></h2>
+              <p><?php echo html_entity_decode($feriasDisplays['destaque-principal'][0]->Asset->AssetContent->render()); ?></p>
             </div>
           </div>
+            <?php endif; ?>
+          <?php endif; ?>
           <span class="barra"></span>
           <div class="span12 oquee">
             <h3>O que é o que é</h3>
