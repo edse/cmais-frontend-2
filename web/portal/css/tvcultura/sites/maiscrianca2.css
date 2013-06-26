@@ -285,6 +285,6 @@ p { color:#333; font-size: 14px;}
 #ferias .jcarousel-clip.jcarousel-clip-horizontal {  margin-left:45px;}
 #ferias .carrossel .jcarousel-item-horizontal { margin-right:13px;}
 #video-charada { *display: none !important; *overflow:hidden; } 
-#ferias #video-charada,
-#ferias .span12 { *width: 900px !important; *overflow:hidden;}
+#ferias iframe#video-charada,
+#ferias .span12 { *width: 900px !important; width:900px\9; *overflow:hidden;}
 
