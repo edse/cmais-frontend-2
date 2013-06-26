@@ -289,4 +289,5 @@ p { color:#333; font-size: 14px;}
 #ferias .span12 { *width: 900px !important; }
 #ferias .carrossel,
 #ferias iframe#video-charada {  width:900px\9 !important; *overflow:hidden;}
+#ferias .carrossel .jcarousel-clip.jcarousel-clip-horizontal {  width:810px\9  } 
  
