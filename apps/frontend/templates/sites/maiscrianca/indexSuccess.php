@@ -62,7 +62,7 @@ if($feriasSection)
       <div id="myTabContent" class="tab-content">
         <?php if($feriasSection): ?>
         <div class="tab-pane fade active in" id="ferias">
-          <?php if($feriasDisplays['destaque-princial']): ?>
+          <?php if($feriasDisplays['destaque-principal']): ?>
             <?php if(count($feriasDisplays['destaque-principal']) > 0): ?>
           <div class="span12">
             <img class="span8" src="<?php echo $feriasDisplays['destaque-principal'][0]->retriveImageUrlByImageUsage("image-6-b") ?>" alt="<?php echo $feriasDisplays['destaque-principal'][0]->getTitle() ?>" />
