@@ -81,7 +81,7 @@ if($feriasSection)
           <div class="span12 oquee">
             <h3><?php echo $feriasDisplays['destaque-principal'][0]->Block->getTitle() ?></h3>
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla fermentum eros non vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vitae enim blandit, congue elit quis, volutpat sapien. Fusce magna odio, ultricies eget blandit eget, sodales ut tortor. Donec a sodales nunc, vitae viverra turpis. Proin id bibendum neque, id fringilla sem. Praesent placerat lectus a nibh commodo, eget condimentum mauris volutpat. Quisque eros risus, imperdiet sed dui a, ornare fringilla erat. Nam sit amet velit nulla. Ut molestie odio eget lorem tincidunt, sit amet adipiscing sem porta. Duis hendrerit ipsum in dignissim pellentesque cras amet.</p>
+            <p><?php echo $feriasDisplays['destaque-principal'][0]->Block->getDescription() ?></p>
             
             <div class="msgErro" style="display:none">
               <span class="alerta"></span>
