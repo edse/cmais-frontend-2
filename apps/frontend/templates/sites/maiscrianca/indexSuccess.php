@@ -1,13 +1,24 @@
 <?php
-$sectionFerias = Doctrine_Query::create()
+// ação temporária de férias
+$feriasSection = Doctrine_Query::create()
   ->select('s.*')
   ->from('Section s')
   ->where('s.site_id = ?', (int)$site->id)
   ->andWhere('s.slug = "ferias"')
+  ->andWhere('s.is_active = ?', 1)
   ->orderBy('s.display_order ASC')
   ->fetchOne();
-  
-  echo($sectionFerias->slug);
+
+if($feriasSection)
+{
+  $feriasBlocks = $feriasSection->Blocks;
+  $feriasDisplays = array();
+  if(count($feriasBlocks) > 0)
+  {
+    foreach($feriasBlocks as $b)
+      $feriasDisplays[$b->getSlug()] = $b->retriveDisplays();
+  }
+}
 ?>
 <!-- Le styles -->
 <link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"  >
@@ -34,7 +45,9 @@ $sectionFerias = Doctrine_Query::create()
   <div class="row-fluid" id="menu">
     <div class="span12">
       <ul id="myTab" class="nav nav-tabs">
+        <?php if($feriasSection): ?>
         <li class="ferias active"><a href="#ferias" data-toggle="tab"><p>Férias</p></a></li>
+        <?php endif; ?>
         <?php if(isset($displays['destaque-principal-1'])): ?>
           <?php if(count($displays['destaque-principal-1']) > 0): ?>
         <li class="joguinhos"><a href="#home" data-toggle="tab"><p><?php echo $displays['destaque-principal-1'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li>
@@ -47,6 +60,7 @@ $sectionFerias = Doctrine_Query::create()
         <?php endif; ?>
       </ul>
       <div id="myTabContent" class="tab-content">
+        <?php if($feriasSection): ?>
         <div class="tab-pane fade active in" id="ferias">
           <div class="span12">
             <img class="span8" src="http://midia.cmais.com.br/assets/image/image-2/78ea44c7c0607f033b7c885f2d30511253f8c898.jpg" alt="Jogo Surfando no Asfalto - DJ Cão" />
@@ -144,7 +158,9 @@ $sectionFerias = Doctrine_Query::create()
             </div>
           </div>
           
-        </div>        
+        </div>
+        <?php endif; ?>
+             
         <?php if(isset($displays['destaque-principal-1'])): ?>
           <?php if(count($displays['destaque-principal-1']) > 0): ?>
         <div class="tab-pane fade" id="home">
