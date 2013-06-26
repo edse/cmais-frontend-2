@@ -100,17 +100,23 @@ if($feriasSection)
             
             </div>
             <form class="form-contato" method="post" action="">
-              <label>Seu nome<input type="text" name="nome" /></label>
-              <label class="email">Seu email<input type="text" nome=email /></label>
+              <label>
+                Seu nome
+                <input type="text" name="nome" id="nome" />
+              </label>
+              <label class="email">
+                Seu email
+                <input type="text" name="email" id="email" />
+              </label>
               <br/>
-              <label class="charada">charada <br />
+              <label class="charada">
+                charada <br />
                 <p class="contador">[<span id="textCounter">250</span>]</p>
                 <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,250,'#textCounter');"  name="charada"></textarea>
               </label>
               <br />
-             
-              
-              <button type="submit" class="btn" id="enviar" value="enviar">Enviar</button>
+              <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+              <button type="submit" class="btn" id="enviar" name="enviar" value="enviar">Enviar</button>
             </form>
           </div>
           <?php endif; ?>
@@ -214,3 +220,79 @@ if($feriasSection)
   </div>
 </div>
 
+<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('input#enviar').click(function(){
+      $(".msgAcerto, .msgErro").hide();
+    });
+    
+    var validator = $('#form-contato').validate({
+      submitHandler: function(form){
+        $.ajax({
+          type: "POST",
+          dataType: "text",
+          data: $("#form-contato").serialize(),
+          beforeSend: function(){
+            $('input#enviar').attr('disabled','disabled');
+            $(".msgAcerto").hide();
+            $(".msgErro").hide();
+            $('img#ajax-loader').show();
+          },
+          success: function(data){
+          $('input#enviar').removeAttr('disabled');
+            window.location.href="#";
+            if(data == "1"){
+              $("#form-contato").clearForm();
+              $(".msgAcerto").show();
+              $('img#ajax-loader').hide();
+            }
+            else {
+              $(".msgErro").show();
+              $('img#ajax-loader').hide();
+            }
+          }
+        });         
+      },
+      rules:{
+        nome:{
+          required: true,
+          minlength: 2
+        },
+        email:{
+          required: true,
+          email: true
+        },
+        charada:{
+          required: true
+        },
+        captcha: {
+          required: true,
+          remote: "/portal/js/validate/demo/captcha/process.php"
+        }
+      },
+      messages:{
+        nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+        email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+        cidade: "Este campo &eacute; Obrigat&oacute;rio.",
+        estado: "Este campo &eacute; Obrigat&oacute;rio.",
+        assunto: "Este campo &eacute; Obrigat&oacute;rio.",
+        mensagem: "Este campo &eacute; Obrigat&oacute;rio.",
+        captcha: "Digite corretamente o código que está ao lado."
+      },
+      success: function(label){
+        // set &nbsp; as text for IE
+        label.html("&nbsp;").addClass("checked");
+      }
+    });
+  });
+      
+  // Contador de Caracters
+  function limitText (limitField, limitNum, textCounter)
+  {
+    if (limitField.value.length > limitNum)
+      limitField.value = limitField.value.substring(0, limitNum);
+    else
+      $(textCounter).html(limitNum - limitField.value.length);
+  }
+</script>
