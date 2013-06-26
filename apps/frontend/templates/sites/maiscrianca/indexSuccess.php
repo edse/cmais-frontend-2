@@ -241,7 +241,7 @@ if($feriasSection)
           },
           success: function(data){
           $('input#enviar').removeAttr('disabled');
-            window.location.href="#";
+            //window.location.href="#";
             if(data == "1"){
               $("#form-contato").clearForm();
               $(".msgAcerto").show();
