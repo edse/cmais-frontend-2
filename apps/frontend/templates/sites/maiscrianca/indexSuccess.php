@@ -62,6 +62,7 @@ if($feriasSection)
       <div id="myTabContent" class="tab-content">
         <?php if($feriasSection): ?>
         <div class="tab-pane fade active in" id="ferias">
+          
           <?php if($feriasDisplays['destaque-principal']): ?>
             <?php if(count($feriasDisplays['destaque-principal']) > 0): ?>
           <div class="span12">
@@ -73,9 +74,12 @@ if($feriasSection)
           </div>
             <?php endif; ?>
           <?php endif; ?>
+          
           <span class="barra"></span>
+          
+          <?php if($feriasDisplays['destaque-principal']): ?>
           <div class="span12 oquee">
-            <h3>O que é o que é</h3>
+            <h3><?php echo $feriasDisplays['destaque-principal']->Block->getTitle() ?></h3>
             
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla fermentum eros non vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vitae enim blandit, congue elit quis, volutpat sapien. Fusce magna odio, ultricies eget blandit eget, sodales ut tortor. Donec a sodales nunc, vitae viverra turpis. Proin id bibendum neque, id fringilla sem. Praesent placerat lectus a nibh commodo, eget condimentum mauris volutpat. Quisque eros risus, imperdiet sed dui a, ornare fringilla erat. Nam sit amet velit nulla. Ut molestie odio eget lorem tincidunt, sit amet adipiscing sem porta. Duis hendrerit ipsum in dignissim pellentesque cras amet.</p>
             
@@ -109,6 +113,7 @@ if($feriasSection)
               <button type="submit" class="btn" id="enviar" value="enviar">Enviar</button>
             </form>
           </div>
+          <?php endif; ?>
           <span class="barra"></span>
           <div class="span12">
             <h2>Assista às charadinhas:</h2>
