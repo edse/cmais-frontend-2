@@ -91,7 +91,7 @@
 			echo $respostas;
             ?>
             
-            <?php if(count($respostas) > 0): ?>
+            <?php if($respostas != ""): ?>
             
             <div class="assinatura grid2">
               <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
