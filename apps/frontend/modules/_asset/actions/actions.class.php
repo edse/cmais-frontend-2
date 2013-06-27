@@ -702,14 +702,7 @@ class _assetActions extends sfActions
       }
 		}
 		
-		if($this->site->getSlug() == "multicultura") {
-        if($this->asset->getSlug()=="seumulticultura" && $this->asset->AssetType->getSlug()=="content") {
-        if ($debug) print "<br>multicultura-1 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/content';
-        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/content');
-      }
-		}
-		
-		
+				
 		
     elseif($this->site->getSlug() == "cocorico") {
       $this->setLayout('cocorico');
