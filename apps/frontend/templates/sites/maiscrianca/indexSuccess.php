@@ -69,7 +69,7 @@ if($feriasSection)
             <img class="span8" src="<?php echo $feriasDisplays['destaque-principal'][0]->retriveImageUrlByImageUsage("image-6-b") ?>" alt="<?php echo $feriasDisplays['destaque-principal'][0]->getTitle() ?>" />
             <div class="span4">
               <h2><?php echo $feriasDisplays['destaque-principal'][0]->getTitle(); ?></h2>
-              <p><?php echo html_entity_decode($feriasDisplays['destaque-principal'][0]->Asset->AssetContent->render()); ?></p>
+              <p><?php echo $feriasDisplays['destaque-principal'][0]->Asset->AssetContent->render(); ?></p>
             </div>
           </div>
             <?php endif; ?>
