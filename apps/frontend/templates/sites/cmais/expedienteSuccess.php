@@ -57,7 +57,7 @@
             <!-- ESQUERDA -->
             <div id="esquerda" class="grid2">
               <!--Expediente-->
-              <h1>Equipe Cmais+</h1><br/>
+              <h1>Equipe cmais+</h1><br/>
               
               <!--h2>Gerência de Multiplataforma</h2>
               <p>Paulo Garcia</p><br/-->
