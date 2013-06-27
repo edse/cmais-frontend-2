@@ -263,9 +263,9 @@ p { color:#333; font-size: 14px;}
 #ferias .span4 p { color:#fff; max-height:285px; overflow: hidden;} 
 #ferias .barra { width: 100%; display:block; background: url(/portal/images/capaPrograma/maiscrianca2/divisa-ferias.png) repeat-x; height:4px; clear:both; }
 #menu .tab-content {  overflow: hidden;}
-#ferias .oquee { background:#dd2b7d url(/portal/images/capaPrograma/maiscrianca2/bg-pergunta.png) repeat; padding:-top:0; }
+#ferias .oquee { background:#dd2b7d url(/portal/images/capaPrograma/maiscrianca2/bg-pergunta.png) repeat; padding-top:0; }
 #ferias .oquee h3 {background: url(/portal/images/capaPrograma/maiscrianca2/oquee.png) no-repeat; text-indent:-9999px; margin:0; width: 524px; height:191px;} 
-#ferias .oquee p { margin:-60px 0 0 85px;} 
+#ferias .oquee p { margin:-60px 0 20px 85px;} 
 #ferias .form-contato label {color:#fff; width:49%; margin:0 2% 2% 0; float: left; font-weight:bold; text-transform:uppercase; height:24px; line-height:24px; position:relative; }
 #ferias .form-contato textarea,
 #ferias .form-contato label input { width:79%; margin:0 0 0 5px; background:#ffed5a; border:none; box-shadow:none; border-radius:0; -moz-border-radius: 0; -webkit-border-radius:0; padding:0 5px;  height:24px; line-height:24px;}
