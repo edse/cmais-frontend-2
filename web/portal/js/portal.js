@@ -268,7 +268,7 @@ $(function(){ //onready
     if(m_tv_tvcultura == ""){
       $.ajax({
         type : "GET",
-        dataType : "jsonp",
+        dataType : "text",
         data: "content=tvcultura",
         url: "http://app.cmais.com.br/index.php/ajax/menuTv",
         success: function(data){
