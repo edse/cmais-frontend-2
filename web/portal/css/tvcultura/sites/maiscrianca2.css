@@ -297,4 +297,4 @@ p { color:#333; font-size: 14px;}
 #ferias .boxMsg p { font-weight:bold;} 
 #ferias .form-contato label.error { font-size:18px; color:#ffed5a; position:absolute;}
 #ferias .form-contato .nome label.error,
-#ferias .form-contato .email label.error { display:none !important;} 
+#ferias .form-contato .email label.error { display:none !important;}  
