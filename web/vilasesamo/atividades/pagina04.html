@@ -3,7 +3,6 @@
   <head>
     <link href="/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
     <link rel="stylesheet" href="../css/geral-portal.css" type="text/css" />
-    
     <!--[if IE]>
     <link rel="stylesheet" type="text/css" href="http://cmais.com.br/portal/css/ie-only.css" />
     <![endif]-->
@@ -32,14 +31,16 @@
       _gaq.push(['_setAccount', 'UA-22770265-1']);
       _gaq.push(['_setDomainName', 'cmais.com.br']);
       _gaq.push(['_setAllowHash', 'false']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      _gaq.push(['_trackPageview']); (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
       })();
-    </script>
 
+    </script>
     <!-- scripts -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <script type="text/javascript">
@@ -47,328 +48,68 @@
       _gaq.push(['_setAccount', 'UA-22770265-1']);
       _gaq.push(['_setDomainName', 'cmais.com.br']);
       _gaq.push(['_setAllowHash', 'false']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      _gaq.push(['_trackPageview']); (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
       })();
-    </script>
 
-<script type="text/javascript" src="../js/jquery-1.5.1.min.js"></script>
-<!--script type="text/javascript" src="../js/portal.js"></script-->
+    </script>
+    <script type="text/javascript" src="../js/jquery-1.5.1.min.js"></script>
+    <!--script type="text/javascript" src="../js/portal.js"></script-->
     <script type="text/javascript" src="../js/jquery.jcarousel.min.js"></script>
-   
-    
-   
   </head>
   <body>
     <link rel="stylesheet" href="../css/cmais.css" type="text/css" />
     <script type="text/javascript" src="../js/swfobject.js"></script>
-    <!-- TOPO PORTAL -->
-    <div id="topo-portal" class="topo-geral capa-topo">
-    <div id="barra-portal">
-    <h1>
-    <a href="http://cmais.com.br" title="cmais+ O portal de conteúdo da Cultura">cmais+ O portal de conteúdo da Cultura</a>
-    </h1>
-    <div class="barra-menu">
-    <ul id="menu-portal">
-    <li class="m-tv">
-    <a href="#" class="filho m_tv_tvcultura" title="TV">
-    TV
-    <span></span>
-    </a>
-    <div class="menu-aberto padrao tv grid3">
-    <ul class="abas-menu abas">
-    <li class="neutro">
-    <p>
-    escolha um canal
-    </p>
-    <span></span>
-    </li>
-    <li class="tvcultura ativo">
-    <a href="javascript:;" title="TV Cultura" class="m_tv_tvcultura">TV Cultura</a>
-    <span class="decoracao"></span>
-    </li>
-    <li class="univesptv">
-    <a href="javascript:;" title="Univesp TV" class="m_tv_univesptv">Univesp TV</a>
-    <span class="decoracao"></span>
-    </li>
-    <li class="multicultura">
-    <a href="javascript:;" title="multiCULTURA" class="m_tv_multicultura">multiCULTURA</a>
-    <span class="decoracao"></span>
-    </li>
-    <li class="tvrtb">
-    <a href="javascript:;" title="TV R&aacute; Tim Bum" class="m_tv_tvrtb">TV R&aacute; Tim Bum</a>
-    <span class="decoracao"></span>
-    </li>
-    </ul>
-    <ul class="abas-conteudo">
-    <li id="tvcultura" class="filho">
-    </li>
-    <li id="univesptv" class="filho" style="display:none;">
-    </li>
-    <li id="multicultura" class="filho" style="display:none;">
-    </li>
-    <li id="tvrtb" class="filho" style="display:none;">
-    </li>
-    </ul>
-    </div>
-    </li>
-    <li class="m-radio">
-    <a href="#" class="filho m_radio_am" title="RADIO">
-    R&Aacute;DIO
-    <span></span>
-    </a>
-    <div class="menu-aberto padrao radio grid3">
-    <ul class="abas-menu abas">
-    <li class="neutro">
-    <p>
-    escolha uma esta&ccedil;&atilde;o
-    </p>
-    <span></span>
-    </li>
-    <li class="radio-cb">
-    <a href="javascript:;" title="R&aacute;dio Cultura Brasil" class="m_radio_am">R&aacute;dio Cultura Brasil</a>
-    <span class="decoracao"></span>
-    </li>
-    <li class="radio-fm">
-    <a href="javascript:;" title="R&aacute;dio FM" class="m_radio_fm">R&aacute;dio Cultura FM</a>
-    <span class="decoracao"></span>
-    </li>
-    <li class="radio-rtb">
-    <a href="#radio-rtb" title="R&aacute;dio R&aacute; Tim Bum">R&aacute;dio R&aacute; Tim Bum</a>
-    <span class="decoracao"></span>
-    </li>
-    <li class="radio-cocorico">
-    <a href="#radio-cocorico" title="TV R&aacute; Tim Bum">R&aacute;dio Cocoric&oacute;</a>
-    <span class="decoracao"></span>
-    </li>
-    </ul>
-    <ul class="abas-conteudo">
-    <li id="radio-cb" class="filho">
-    </li>
-    <li id="radio-fm" class="filho" style="display:none;">
-    </li>
-    <li id="radio-rtb" class="filho" style="display: none; ">
-    <a href="http://www.tvratimbum.com.br/secoes/radiortb/" class="bg-Ratimbum"></a>
-    </li>
-    <li id="radio-cocorico" class="filho" style="display: none; ">
-    <a href="http://www.tvcultura.com.br/cocorico/radio/" class="bg-Cocorico"></a>
-    </li>
-    </ul>
-    </div>
-    </li>
-    <li class="m-noar">
-    <a class="filho m_ar_tvcultura" href="#" title="PROGRAMA&Ccedil;&Atilde;O">
-    PROGRAMA&Ccedil;&Atilde;O
-    <span></span>
-    </a>
-    <div class="menu-aberto padrao ar grid3">
-    <ul class="abas-menu abas">
-    <li class="neutro">
-    <p>
-    escolha um canal
-    </p>
-    <span></span>
-    </li>
-    <li class="tvcultura">
-    <a href="javascript:;" title="TV Cultura" class="m_ar_tvcultura">TV Cultura</a>
-    <span class="decoracao"></span>
-    </li>
-    <li class="univesptv">
-    <a href="javascript:;" title="Univesp TV" class="m_ar_univesptv">Univesp TV</a>
-    <span class="decoracao"></span>
-    </li>
-    <li class="multicultura">
-    <a href="javascript:;" title="multiCULTURA" class="m_ar_multicultura">multiCULTURA</a>
-    <span class="decoracao"></span>
-    </li>
-    <li class="tvrtb">
-    <a href="javascript:;" title="TV R&aacute; Tim Bum" class="m_ar_tvrtb">TV R&aacute; Tim Bum</a>
-    <span class="decoracao"></span>
-    </li>
-    </ul>
-    <ul class="abas-conteudo">
-    <li id="ar-tvcultura" class="filho">
-    </li>
-    <li id="ar-univesptv" class="filho" style="display:none;">
-    </li>
-    <li id="ar-multicultura" class="filho" style="display:none;">
-    </li>
-    <li id="ar-tvrtb" class="filho" style="display:none;">
-    </li>
-    </ul>
-    </div>
-    </li>
-    <li class="m-editorias">
-    <a class="filho" href="#" title="CONTE&Uacute;DO">
-    CONTE&Uacute;DO
-    <span></span>
-    </a>
-    <div class="menu-aberto padrao editorias">
-    <ul class="abas">
-    <li class="neutro">
-    <p>
-    escolha uma editoria
-    </p>
-    <span></span>
-    </li>
-    <li class="m-arte-e-cultura">
-    <a title="Arte &amp; Cultura" href="http://cmais.com.br/arte-e-cultura">Arte &amp; Cultura</a>
-    </li>
-    <li class="m-musica">
-    <a title="Música" href="http://cmais.com.br/musica">Música</a>
-    </li>
-    <li class="m-infantil">
-    <a title="+ Criança" href="http://cmais.com.br/infantil">+ Criança</a>
-    </li>
-    <li class="m-educacao">
-    <a title="Educação" href="http://cmais.com.br/educacao">Educação</a>
-    </li>
-    <li class="m-jornalismo">
-    <a title="Jornalismo" href="http://cmais.com.br/jornalismo">Jornalismo</a>
-    </li>
-    </ul>
-    </div>
-    </li>
-    <li class="m-videos">
-    <a href="http://cmais.com.br/videos" title="VIDEOS">V&Iacute;DEOS</a>
-    </li>
-    <li class="m-aovivo">
-    <a href="http://cmais.com.br/aovivo" title="AO VIVO">AO VIVO</a>
-    </li>
-    <li class="m-compartilhe">
-    <a class="filho" href="#" title="COMPARTILHE">
-    Curtir e Seguir
-    <span></span>
-    </a>
-    <ul class="menu-aberto compartilhe">
-    <li>
-    <a class="face" href="http://www.facebook.com/tvcultura" target="_blank" title="Facebook">Facebook</a>
-    </li>
-    <li>
-    <a class="twitter" href="http://twitter.com/tvcultura" target="_blank" title="Twitter">Twitter</a>
-    </li>
-    <li>
-    <a class="youtube" href="http://www.youtube.com/cultura" target="_blank" title="Youtube">Youtube</a>
-    </li>
-    <li>
-    <a class="flickr" href="http://www.flickr.com/photos/televisaocultura" target="_blank" title="Flickr">Flickr</a>
-    </li>
-    </ul>
-    </li>
-    </ul>
-    <form class="busca-portal" action="/busca" method="post">
-    <input type="hidden" name="site_id" id="site_id" value="" />
-    <input class="ipt-txt" type="text" name="term" id="term" />
-    <input class="ipt-submit" type="submit" value="OK" />
-    </form>
-    </div>
-    </div>
-    </div>
-    <!-- /TOPO PORTAL -->
+    
     <!-- CAPA SITE -->
     <div id="capa-site">
       <!-- CHAMADA -->
       <!-- /CHAMADA -->
       <link rel="stylesheet" href="../css/geral.css" type="text/css" />
       <script type="text/javascript" src="../js/script.js"></script>
-      <div id="mydiv">
-      </div>
+      <div id="mydiv"></div>
       <!-- MIOLO -->
       <div id="miolo">
-        
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
           <!-- CAPA -->
           <div class="capa grid3">
             <ul class="menu-topo">
-              <li class="para-os-pais">
-                <a  href="../para-os-pais/index.html" title="Para os Pais" name="Para os Pais"></a>
-              </li>
-              <li class="natv">
-                <a href="../natv/index.html" title="Na TV" name="Na TV"></a>
-              </li>
-              <li class="habitos">
-                <a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos para uma vida mais saudável" name="Hábitos para uma vida mais saudável">
-</a>
-              </li>
+              <li class="para-os-pais"><a  href="../para-os-pais/index.html" title="Para os Pais" name="Para os Pais"></a></li>
+              <li class="natv"><a href="../natv/index.html" title="Na TV" name="Na TV"></a></li>
+              <li class="habitos"><a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos para uma vida mais saudável" name="Hábitos para uma vida mais saudável"> </a></li>
             </ul>
             <div class="menu-secoes">
-              <h2>
-              <a href="../index.html">
-              <img src="../images/logo.png" />
-              </a>
-              </h2>
+              <h2><a href="../index.html"> <img src="../images/logo.png" /> </a></h2>
               <ul>
-                <li class="jogos">
-                  <a href="../jogos/index.html" title="Jogos" name="jogos"></a>
-                </li>
-                <li class="videos">
-                  <a href="../videos/index.html" title="Vídeos" name="Vídeos"></a>
-                </li>
-                <li class="atividades">
-                  <a  class="ativo" href="../atividades/index.html" title="Atividades" name="Atividades"></a>
-                </li>
-                <li class="personagens">
-                  <a href="../personagens/index.html" title="Personagens" name="Personagens"></a>
-                </li>
+                <li class="jogos"><a href="../jogos/index.html" title="Jogos" name="jogos"></a></li>
+                <li class="videos"><a href="../videos/index.html" title="Vídeos" name="Vídeos"></a></li>
+                <li class="atividades"><a  class="ativo" href="../atividades/index.html" title="Atividades" name="Atividades"></a></li>
+                <li class="personagens"><a href="../personagens/index.html" title="Personagens" name="Personagens"></a></li>
               </ul>
-              <div class="barra-menu">
-              </div>
+              <div class="barra-menu"></div>
             </div>
             <!-- DIREITA -->
             <div id="direita2" class="atividades esq">
               <!-- atividade -->
               <div class="box">
-                <h3>
-                <img src="../images/tit-atividades.png" alt="Atividades" />
-                </h3>
+                <h3><img src="../images/tit-atividades.png" alt="Atividades" /></h3>
                 <p>Baixe, imprima e brinque com o seu personagem favorito!</p>
-                
                 <p class="tit grd"> Escolha um personagem</p>
                 <ul class="lista-personagens">
-                  <li>
-                    <a href="../atividades/bel/index.html" name="Bel" title="Bel">
-                    <img src="../images/personagens/95x81/bel.jpg" alt="Bel" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../atividades/beto/index.html" name="Beto" title="Beto">
-                    <img src="../images/personagens/95x81/beto.jpg" alt="Beto" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../atividades/comecome/index.html" name="Come Come" title="Come Come">
-                    <img src="../images/personagens/95x81/comecome.jpg" alt="Come Come" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../atividades/elmo/index.html" name="Elmo" title="Elmo">
-                    <img src="../images/personagens/95x81/elmo.jpg" alt="Elmo" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../atividades/enio/index.html" name="Enio" title="Enio">
-                    <img src="../images/personagens/95x81/enio.jpg" alt="Enio" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../atividades/garibaldo/index.html" name="Garibaldo" title="Garibaldo">
-                    <img src="../images/personagens/95x81/garibaldo.jpg" alt="Garibaldo" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../atividades/grover/index.html" name="Grover" title="Grover">
-                    <img src="../images/personagens/95x81/grover.jpg" alt="Grover" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../atividades/zoe/index.html" name="Zoe" title="Zoe">
-                    <img src="../images/personagens/95x81/zoe.jpg" alt="Zoe" />
-                    </a>
-                  </li>
+                  <li><a href="../personagens/bel/index.html" name="Bel" title="Bel"> <img src="../images/personagens/95x81/bel.jpg" alt="Bel" /> </a></li>
+                  <li><a href="../personagens/beto/index.html" name="Beto" title="Beto"> <img src="../images/personagens/95x81/beto.jpg" alt="Beto" /> </a></li>
+                  <li><a href="../personagens/comecome/index.html" name="Come Come" title="Come Come"> <img src="../images/personagens/95x81/comecome.jpg" alt="Come Come" /> </a></li>
+                  <li><a href="../personagens/elmo/index.html" name="Elmo" title="Elmo"> <img src="../images/personagens/95x81/elmo.jpg" alt="Elmo" /> </a></li>
+                  <li><a href="../personagens/enio/index.html" name="Enio" title="Enio"> <img src="../images/personagens/95x81/enio.jpg" alt="Enio" /> </a></li>
+                  <li><a href="../personagens/garibaldo/index.html" name="Garibaldo" title="Garibaldo"> <img src="../images/personagens/95x81/garibaldo.jpg" alt="Garibaldo" /> </a></li>
+                  <li><a href="../personagens/grover/index.html" name="Grover" title="Grover"> <img src="../images/personagens/95x81/grover.jpg" alt="Grover" /> </a></li>
+                  <li><a href="../personagens/zoe/index.html" name="Zoe" title="Zoe"> <img src="../images/personagens/95x81/zoe.jpg" alt="Zoe" /> </a></li>
                 </ul>
               </div>
               <!-- /atividade -->
@@ -380,121 +121,84 @@
               <div class="lista-videos filtro">
                 <ul class="galeria">
                   <li>
-                    <div class="thumb-video">
-                      <a href="para-imprimir-5-cores.html" title="5 cores" name="5 cores">
-                      <img src="../jpg/print-and-do_conte_cores_escreva_cinco_thumb.png" alt="5 cores" />
-                      </a>
-                    </div>
-                    <div class="descricao">
-                      <a href="para-imprimir-5-cores.html" class="tit" title="5 cores" name="5 cores">5 cores</a>
-                       <p>Imprima e Brinque</p>
-                    </div>
-                  </li>
+                  <div class="thumb-video">
+                    <a href="para-imprimir-5-cores.html" title="5 cores" name="5 cores"> <img src="../jpg/print-and-do_conte_cores_escreva_cinco_thumb.png" alt="5 cores" /> </a>
+                  </div>
+                  <div class="descricao">
+                    <a href="para-imprimir-5-cores.html" class="tit" title="5 cores" name="5 cores">5 cores</a>
+                    <p>Imprima e Brinque</p>
+                  </div></li>
                   <li>
-                    <div class="thumb-video">
-                      <a href="para-imprimir-12-cores.html" title="12 cores" name="12 cores">
-                      <img src="../jpg/print-and-do_conte_cores_escreva_doze_thumb.png" alt="12 cores" />
-                      </a>
-                    </div>
-                    <div class="descricao">
-                      <a href="para-imprimir-12-cores.html" class="tit" title="12 cores" name="12 cores">12 cores</a>
-                       <p>Imprima e Brinque</p>
-                    </div>
-                  </li>
+                  <div class="thumb-video">
+                    <a href="para-imprimir-12-cores.html" title="12 cores" name="12 cores"> <img src="../jpg/print-and-do_conte_cores_escreva_doze_thumb.png" alt="12 cores" /> </a>
+                  </div>
+                  <div class="descricao">
+                    <a href="para-imprimir-12-cores.html" class="tit" title="12 cores" name="12 cores">12 cores</a>
+                    <p>Imprima e Brinque</p>
+                  </div></li>
                   <li>
-                    <div class="thumb-video">
-                      <a href="para-imprimir-contando-aranhas.html" title="Conte as Aranhas" name="Conte as Aranhas">
-                      <img src="../jpg/print-and-do_conte_insetos-aranhas-pernas_thumb.png" alt="Conte as Aranhas" />
-                      </a>
-                    </div>
-                    <div class="descricao">
-                      <a href="para-imprimir-contando-aranhas.html" class="tit" title="Conte as Aranhas" name="Conte as Aranhas">Conte as Aranhas</a>
-                       <p>Imprima e Brinque</p>
-                    </div>
-                  </li>
+                  <div class="thumb-video">
+                    <a href="para-imprimir-contando-aranhas.html" title="Conte as Aranhas" name="Conte as Aranhas"> <img src="../jpg/print-and-do_conte_insetos-aranhas-pernas_thumb.png" alt="Conte as Aranhas" /> </a>
+                  </div>
+                  <div class="descricao">
+                    <a href="para-imprimir-contando-aranhas.html" class="tit" title="Conte as Aranhas" name="Conte as Aranhas">Conte as Aranhas</a>
+                    <p>Imprima e Brinque</p>
+                  </div></li>
                   <li>
-                    <div class="thumb-video">
-                      <a href="para-imprimir-formas-geometricas.html" title="Pinte as Formas Geométricas" name="Pinte as Formas Geométricas">
-                      <img src="../jpg/print-and-do_cores_formas-geometricas_thumb.png" alt="Pinte as Formas Geométricas" />
-                      </a>
-                    </div>
-                    <div class="descricao">
-                      <a href="para-imprimir-formas-geometricas.html" class="tit" title="Pinte as Formas Geométricas" name="Pinte as Formas Geométricas">Pinte as Formas Geométricas</a>
-                       <p>Imprima e Brinque</p>
-                    </div>
-                  </li>
+                  <div class="thumb-video">
+                    <a href="para-imprimir-formas-geometricas.html" title="Pinte as Formas Geométricas" name="Pinte as Formas Geométricas"> <img src="../jpg/print-and-do_cores_formas-geometricas_thumb.png" alt="Pinte as Formas Geométricas" /> </a>
+                  </div>
+                  <div class="descricao">
+                    <a href="para-imprimir-formas-geometricas.html" class="tit" title="Pinte as Formas Geométricas" name="Pinte as Formas Geométricas">Pinte as Formas Geométricas</a>
+                    <p>Imprima e Brinque</p>
+                  </div></li>
                   <li>
-                    <div class="thumb-video">
-                      <a href="para-imprimir-borboleta.html" title="Desenhe as asas da borboleta" name="Desenhe as asas da borboleta">
-                      <img src="../jpg/print-and-do_desenhe_animal_borboleta_thumb.png" alt="Desenhe as asas da borboleta" />
-                      </a>
-                    </div>
-                    <div class="descricao">
-                      <a href="para-imprimir-borboleta.html" class="tit" title="Desenhe as asas da borboleta" name="Desenhe as asas da borboleta">Desenhe as asas da borboleta</a>
-                       <p>Imprima e Brinque</p>
-                    </div>
-                  </li>
+                  <div class="thumb-video">
+                    <a href="para-imprimir-borboleta.html" title="Desenhe as asas da borboleta" name="Desenhe as asas da borboleta"> <img src="../jpg/print-and-do_desenhe_animal_borboleta_thumb.png" alt="Desenhe as asas da borboleta" /> </a>
+                  </div>
+                  <div class="descricao">
+                    <a href="para-imprimir-borboleta.html" class="tit" title="Desenhe as asas da borboleta" name="Desenhe as asas da borboleta">Desenhe as asas da borboleta</a>
+                    <p>Imprima e Brinque</p>
+                  </div></li>
                   <li>
-                    <div class="thumb-video">
-                      <a href="para-imprimir-seu-bicho-favorito.html" title="Desenhe seu bicho favorito" name="Desenhe seu bicho favorito">
-                      <img src="../jpg/print-and-do_desenhe_bicho_favorito_thumb.png" alt="Desenhe seu bicho favorito" />
-                      </a>
-                    </div>
-                    <div class="descricao">
-                      <a href="para-imprimir-seu-bicho-favorito.html" class="tit" title="Desenhe seu bicho favorito" name="Desenhe seu bicho favorito">Desenhe seu bicho favorito</a>
-                       <p>Imprima e Brinque</p>
-                    </div>
-                  </li>
+                  <div class="thumb-video">
+                    <a href="para-imprimir-seu-bicho-favorito.html" title="Desenhe seu bicho favorito" name="Desenhe seu bicho favorito"> <img src="../jpg/print-and-do_desenhe_bicho_favorito_thumb.png" alt="Desenhe seu bicho favorito" /> </a>
+                  </div>
+                  <div class="descricao">
+                    <a href="para-imprimir-seu-bicho-favorito.html" class="tit" title="Desenhe seu bicho favorito" name="Desenhe seu bicho favorito">Desenhe seu bicho favorito</a>
+                    <p>Imprima e Brinque</p>
+                  </div></li>
                   <li>
-                    <div class="thumb-video">
-                      <a href="para-imprimir-cores-dos-alimentos.html" title="Cores dos alimentos" name="Cores dos alimentos">
-                      <img src="../jpg/print-and-do_desenhe_cores_alimentos_thumb.png" alt="Cores dos alimentos" />
-                      </a>
-                    </div>
-                    <div class="descricao">
-                      <a href="para-imprimir-cores-dos-alimentos.html" class="tit" title="Cores dos alimentos" name="Cores dos alimentos">Cores dos alimentos</a>
-                       <p>Imprima e Brinque</p>
-                    </div>
-                  </li>
+                  <div class="thumb-video">
+                    <a href="para-imprimir-cores-dos-alimentos.html" title="Cores dos alimentos" name="Cores dos alimentos"> <img src="../jpg/print-and-do_desenhe_cores_alimentos_thumb.png" alt="Cores dos alimentos" /> </a>
+                  </div>
+                  <div class="descricao">
+                    <a href="para-imprimir-cores-dos-alimentos.html" class="tit" title="Cores dos alimentos" name="Cores dos alimentos">Cores dos alimentos</a>
+                    <p>Imprima e Brinque</p>
+                  </div></li>
                   <li>
-                    <div class="thumb-video">
-                      <a href="para-imprimir-joaninha.html" title="Desenhe a joaninha" name="Desenhe a joaninha">
-                      <img src="../jpg/print-and-do_desenhe_joaninha_inseto_thumb.png" alt="Desenhe a joaninha" />
-                      </a>
-                    </div>
-                    <div class="descricao">
-                      <a href="para-imprimir-joaninha.html" class="tit" title="Desenhe a joaninha" name="Desenhe a joaninha">Desenhe a joaninha</a>
-                       <p>Imprima e Brinque</p>
-                    </div>
-                  </li>
+                  <div class="thumb-video">
+                    <a href="para-imprimir-joaninha.html" title="Desenhe a joaninha" name="Desenhe a joaninha"> <img src="../jpg/print-and-do_desenhe_joaninha_inseto_thumb.png" alt="Desenhe a joaninha" /> </a>
+                  </div>
+                  <div class="descricao">
+                    <a href="para-imprimir-joaninha.html" class="tit" title="Desenhe a joaninha" name="Desenhe a joaninha">Desenhe a joaninha</a>
+                    <p>Imprima e Brinque</p>
+                  </div></li>
                 </ul>
               </div>
               <!-- /mais videos -->
               <div class="centraliza">
                 <div class="paginacao-vila">
                   <a href="pagina03.html" class="botao anterior"><span></span>anterior</a>
-                  <ul style="width: 135px;">
-                    <li>
-                      <a href="pagina01.html" name="1" title="1">1</a>
-                    </li>
-                    <li>
-                      <a href="pagina02.html" name="2" title="2">2</a>
-                    </li>
-                    <li>
-                      <a href="pagina03.html" name="3" title="3">3</a>
-                    </li>
-                    <li>
-                      <a href="pagina04.html" class="ativo" name="4" title="4">4</a>
-                    </li>
-                    <li>
-                      <a href="pagina05.html" name="5" title="5">5</a>
-                    </li>
-                   
+                  <ul style="width: 162px;">
+                    <li><a href="index.html" name="1" title="1">1</a></li>
+                    <li><a href="pagina02.html" name="2" title="2">2</a></li>
+                    <li><a href="pagina03.html" name="3" title="3">3</a></li>
+                    <li><a href="pagina04.html" class="ativo" name="4" title="4">4</a></li>
+                    <li><a href="pagina05.html" name="5" title="5">5</a></li>
+                    <li><a href="pagina06.html" name="6" title="6">6</a></li>
                   </ul>
-                  <a class="botao proximo" href="pagina05.html">
-                  próxima
-                  <span></span>
-                  </a>
+                  <a class="botao proximo" href="pagina05.html"> próxima <span></span> </a>
                 </div>
               </div>
             </div>
@@ -502,21 +206,11 @@
             <!-- rodape vila -->
             <div class="centraliza">
               <ul class="rodape-vila">
-                <li>
-                  <a href="../2011-vila-sesamo/" name="2011 Vila Sésamo" title="2011 Vila Sésamo">2011 Vila Sésamo</a>
-                </li>
-                <li>
-                  <a href="../termos-de-uso/" name="Termos de Uso" title="Termos de Uso">Termos de Uso</a>
-                </li>
-                <li>
-                  <a href="../politica-de-privacidade/" name="Política de Privacidade" title="Política de Privacidade">Política de Privacidade</a>
-                </li>
-                <li>
-                  <a href="../sobre-nos/" name="Sobre Nós" title="Sobre Nós">Sobre Nós</a>
-                </li>
-                <li class="last">
-                  <a href="../parceiros/" name="Parceiros" title="Parceiros">Parceiros</a>
-                </li>
+                <li><a href="../2011-vila-sesamo/" name="2011 Vila Sésamo" title="2011 Vila Sésamo">2011 Vila Sésamo</a></li>
+                <li><a href="../termos-de-uso/" name="Termos de Uso" title="Termos de Uso">Termos de Uso</a></li>
+                <li><a href="../politica-de-privacidade/" name="Política de Privacidade" title="Política de Privacidade">Política de Privacidade</a></li>
+                <li><a href="../sobre-nos/" name="Sobre Nós" title="Sobre Nós">Sobre Nós</a></li>
+                <li class="last"><a href="../parceiros/" name="Parceiros" title="Parceiros">Parceiros</a></li>
               </ul>
             </div>
             <!-- rodape vila -->
@@ -528,20 +222,20 @@
       <!-- /MIOLO -->
     </div>
     <!-- / CAPA SITE -->
-   
-    <script>window.fbAsyncInit = function() {
-			FB.init({
-				appId: '124792594261614',
-				status: true,
-				cookie: true,
-				xfbml: true
-			});
-		};
-		( function() {
-			var e = document.createElement('script');
-			e.async = true;
-			e.src = document.location.protocol +
-			'//connect.facebook.net/pt_BR/all.js';
-			document.getElementById('fb-root').appendChild(e);
-		}());</script>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId : '124792594261614',
+          status : true,
+          cookie : true,
+          xfbml : true
+        });
+      }; ( function() {
+        var e = document.createElement('script');
+        e.async = true;
+        e.src = document.location.protocol + '//connect.facebook.net/pt_BR/all.js';
+        document.getElementById('fb-root').appendChild(e);
+      }());
+
+    </script>
   </body>

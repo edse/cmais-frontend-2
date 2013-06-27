@@ -139,7 +139,7 @@ h3 img{ *margin:5px 0 9px 10px; }
 .rodape-vila a:hover,
 .rodape-vila a.ativo {color:#009966; text-decoration:underline;}
 
-.paginacao-vila { /*width:307px;*/ width:278px; margin:0 auto; }
+.paginacao-vila { width:307px; /*width:278px;*/ margin:0 auto; }
 .paginacao-vila .botao { width:69px; height:21px; float:left; background:url(../images/bg-botao.jpg) no-repeat; display: block; }
 .paginacao-vila ul {width:auto; float:left; margin-left:5px;}
 .paginacao-vila li {width:22px; float: left; margin-right:5px;}
