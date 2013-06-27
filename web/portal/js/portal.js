@@ -267,7 +267,7 @@ $(function(){ //onready
     //$('#tvcultura').load("http://cmais.com.br/ajax/menutv/tvcultura.json").show();
     if(m_tv_tvcultura == ""){
       $.ajax({
-        url: "http://cmais.com.br/ajax/menutv/tvcultura.json",
+        url: "/ajax/menutv/tvcultura.json",
         success: function(data) {
           console.log(data);
           m_tv_tvcultura = data;
