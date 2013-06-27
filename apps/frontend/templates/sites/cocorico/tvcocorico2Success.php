@@ -1,6 +1,6 @@
 <script type="text/javascript">
-//var error = getParameterByName('error');
-//var success = getParameterByName('success');
+var error = getParameterByName('error');
+var success = getParameterByName('success');
  //alert("error: "+error+"\n"+"success: "+success); 
 
 $(function(){
