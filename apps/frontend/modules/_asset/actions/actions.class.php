@@ -696,14 +696,14 @@ class _assetActions extends sfActions
     }
 		
 		elseif($this->site->getSlug() == "multicultura") {
-        if($this->asset->getSlug()=="seumulticultura" &&  $this->asset->getType()=="10") {
+        if($this->asset->getSlug()=="seumulticultura" &&  $this->asset->getTypeId()=="10") {
         if ($debug) print "<br>multicultura-1 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/seumulticultura';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/seumulticultura');
       }
 		}
 		
 		elseif($this->site->getSlug() == "multicultura") {
-        if($this->asset->getSlug()=="seumulticultura" &&  $this->asset->getType()=="1") {
+        if($this->asset->getSlug()=="seumulticultura" &&  $this->asset->getTypeId()=="1") {
         if ($debug) print "<br>multicultura-1 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/content';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/content');
       }
