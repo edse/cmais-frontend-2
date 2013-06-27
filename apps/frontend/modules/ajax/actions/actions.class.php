@@ -274,6 +274,9 @@ class ajaxActions extends sfActions
           var interval=self.setInterval('checkStreamingEnd()', 60000);
           ";
         }else{
+         if($request->getParameter('test'))
+          var_dump($_SERVER['HTTP_USER_AGENT']);
+          
     	   $devices = array('iphone' => '(iphone|ipod|ipad)');
     	   $useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
     	   $accept = strtolower($_SERVER['HTTP_ACCEPT']);
