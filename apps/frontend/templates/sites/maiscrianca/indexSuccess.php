@@ -251,6 +251,7 @@ if($feriasSection)
               $("#form-contato").clearForm();
               $(".msgAcerto").show();
               $('img#ajax-loader').hide();
+              $("#form-contato").hide();
             }
             else {
               $(".msgErro").show();
