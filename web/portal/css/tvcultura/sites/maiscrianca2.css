@@ -305,3 +305,4 @@ p { color:#333; font-size: 14px;}
 #ferias .form-contato input { *position:absolute; *right:0;} 
 /*#ferias .form-contato .nome label.error,*/
 /*#ferias .form-contato .email label.error { *display: none !important;}*/
+#ferias .form-contato .email label.error { left:-384px;}
