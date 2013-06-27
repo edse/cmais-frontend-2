@@ -274,6 +274,9 @@ class ajaxActions extends sfActions
           var interval=self.setInterval('checkStreamingEnd()', 60000);
           ";
         }else{
+         if($request->getParameter('test'))
+          var_dump($_SERVER['HTTP_USER_AGENT']);
+          
     	   $devices = array('iphone' => '(iphone|ipod|ipad)');
     	   $useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
     	   $accept = strtolower($_SERVER['HTTP_ACCEPT']);
@@ -288,12 +291,14 @@ class ajaxActions extends sfActions
            }
 	       }
 	       if(!$mobile){
+            
             $return .= "
             var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
             so.addVariable('controlbar', 'over');
             so.addVariable('autostart', 'true');
-            so.addVariable('streamer', 'rtmp://200.136.27.12/live');
-            so.addVariable('file', '".$streaming."');
+            so.addVariable('streamer', 'rtmp://200.136.27.12/livepkgr');
+            //so.addVariable('file', '".$streaming."');
+            so.addVariable('file', 'tv?adbe-live-event=liveevent');
             so.addVariable('type', 'video');
             so.addParam('allowscriptaccess','always');
             so.addParam('allowfullscreen','true');
@@ -304,7 +309,7 @@ class ajaxActions extends sfActions
             ";
 	       }
          else{
-           $return .= '<video controls="controls" height="390" src="http://200.136.27.21/hls-live/livepkgr/_definst_/liveevent/multi.m3u8" width="640"></video>';
+           $return .= '$(\'#livestream2\').show();$(\'#livestream2\').html(\'<video controls="controls" height="390" src="http://200.136.27.12/hls-live/livepkgr/_definst_/liveevent/tv.m3u8" width="640"></video>\');';
          }
    
         }
@@ -903,7 +908,12 @@ class ajaxActions extends sfActions
         $return .= '<div class="botoes"><a href="http://tvratimbum.cmais.com.br/grade">Grade completa</a></div>';
       }
     //}
-    echo $return;
+    //echo $return;
+    $a["data"] = $return;
+    $json = json_encode($a);
+    $callback = $request->getParameter('callback');
+    echo $callback.'('. $json . ');';
+    //echo  json_encode($a);
     die();
   }
 
