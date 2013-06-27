@@ -274,6 +274,8 @@ $(function(){ //onready
         success: function(data){
           console.log(data);
           m_tv_tvcultura = data.data;
+          $('#tvcultura').html(m_tv_tvcultura);
+          $('#tvcultura').show();
         }
       });
       /*
