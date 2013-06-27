@@ -75,6 +75,7 @@ if (!isset($asset)) {
           
           <ul>
             <?php foreach($assets as $k=>$a): ?>
+              <?php if($a->id != $asset->id): ?>
             <li>
               <a href="<?php echo $a->retriveUrl() ?>" title="<?php echo $a->getTitle() ?>">
                 <?php $preview = $a->retriveRelatedAssetsByRelationType("Preview") ?>
@@ -88,6 +89,7 @@ if (!isset($asset)) {
                 </div>
               </a>
             </li>
+              <?php endif; ?>
             <?php endforeach; ?>
           </ul>
         </div>
