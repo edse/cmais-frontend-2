@@ -287,11 +287,6 @@ p { color:#333; font-size: 14px;}
 #ferias .carrossel .jcarousel-item { height:120px;} 
 #ferias .jcarousel-clip.jcarousel-clip-horizontal {  margin-left:45px;}
 #ferias .carrossel .jcarousel-item-horizontal { margin-right:13px;}
-#video-charada { *display: none !important; *overflow:hidden; } 
-#ferias .carrossel,
-#ferias .span12 { *width: 900px !important; }
-#ferias .carrossel,
-#ferias iframe#video-charada {  width:900px\9 !important; *overflow:hidden;}
 #ferias .carrossel .jcarousel-clip.jcarousel-clip-horizontal {  width:810px\9;  } 
 #ferias .boxMsg { text-align:center; margin:50px 0;}  
 #ferias .boxMsg p { font-weight:bold; margin-top:0;} 
@@ -302,6 +297,14 @@ p { color:#333; font-size: 14px;}
 #ferias .form-contato .email label.error { position:absolute; bottom:-152px; width:100%;}
 #ferias .form-contato .nome label.error { left:80px;} 
 #ferias .form-contato .email label.error { left:-394px;}
+
+#video-charada { *display: none !important; *overflow:hidden; } 
+#ferias .carrossel,
+#ferias .span12 { *width: 900px !important; }
+#ferias .carrossel,
+#ferias iframe#video-charada {  width:900px\9 !important; *overflow:hidden;}
 #ferias .form-contato input { *position:absolute; *right:0;} 
-/*#ferias .form-contato .nome label.error,*/
-/*#ferias .form-contato .email label.error { *display: none !important;}*/
+#ferias .form-contato .email label.error { *left:-380px; }
+.nav-tabs > li a p,
+.nav-tabs > li:hover a p { *padding:0 26px !important; *margin:0 !important;}  
+.nav-tabs > li > a span { *position:absolute; *right:0;} 
