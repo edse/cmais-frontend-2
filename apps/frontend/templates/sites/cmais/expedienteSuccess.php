@@ -57,10 +57,10 @@
             <!-- ESQUERDA -->
             <div id="esquerda" class="grid2">
               <!--Expediente-->
-              <h1>Equipe Cmais+</h1><br/>
+              <h1>Equipe cmais+</h1><br/>
               
-              <h2>Gerência de Multiplataforma</h2>
-              <p>Paulo Garcia</p><br/>
+              <!--h2>Gerência de Multiplataforma</h2>
+              <p>Paulo Garcia</p><br/-->
  
               <h2>Design e Criação</h2>
               <p>
@@ -101,8 +101,8 @@
               <h2>Presidente</h2>
               <p>Marcos Mendonça</p><br/>
  
-              <h2>Vice Presidente de Conteúdo</h2>
-              <p>Eduardo Brandini</p><br/>
+              <!--h2>Vice Presidente de Conteúdo</h2>
+              <p>Eduardo Brandini</p><br/-->
 
               <!--/Expediente-->
             </div>

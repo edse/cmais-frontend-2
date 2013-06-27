@@ -296,5 +296,12 @@ p { color:#333; font-size: 14px;}
 #ferias .boxMsg { text-align:center; margin:50px 0;}  
 #ferias .boxMsg p { font-weight:bold; margin-top:0;} 
 #ferias .form-contato label.error { font-size:18px; color:#ffed5a; position:absolute; bottom:-23px; left:80px;}
+#form-contato { position:relative;} 
+
 #ferias .form-contato .nome label.error,
-#ferias .form-contato .email label.error { display:none !important;}  
+#ferias .form-contato .email label.error { position:absolute; bottom:-152px; width:100%;}
+#ferias .form-contato .nome label.error { left:80px;} 
+#ferias .form-contato .email label.error { left:-394px;}
+#ferias .form-contato input { *position:absolute; *right:0;} 
+/*#ferias .form-contato .nome label.error,*/
+#ferias .form-contato .email label.error { *display: none !important;}
