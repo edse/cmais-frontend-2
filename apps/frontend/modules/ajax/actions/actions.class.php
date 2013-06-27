@@ -277,9 +277,8 @@ class ajaxActions extends sfActions
     
     <?php 
 	function detectMobile() {
-	$devices = array('iphone' => '(iphone|ipod|ipad)');
- 
-	$useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
+	$devices = array('android' => 'android', 'blackberry' => 'blackberry', 'iphone' => '(iphone|ipod|ipad)', 'opera' => '(opera mini|opera mobi)', 'palm' => '(avantgo|blazer|elaine|hiptop|palm|plucker|xiino)', 'windows' => 'windows ce; (iemobile|ppc|smartphone)', 'generic' => '(kindle|mobile|mmp|midp|o2|pda|pocket|psp|symbian|smartphone|treo|up.browser|up.link|vodafone|wap)');
+ 	$useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
 	$accept = strtolower($_SERVER['HTTP_ACCEPT']);
 	$mobile = false;
  
