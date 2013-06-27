@@ -274,39 +274,20 @@ class ajaxActions extends sfActions
           var interval=self.setInterval('checkStreamingEnd()', 60000);
           ";
         }else{
-    	   $devices = array('iphone' => '(iphone|ipod|ipad)');
-    	   $useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
-    	   $accept = strtolower($_SERVER['HTTP_ACCEPT']);
-    	   $mobile = false;
-    	   if(isset($_SERVER['HTTP_X_WAP_PROFILE']) || isset($_SERVER['HTTP_PROFILE']) || strpos($accept, "application/vnd.wap.xhtml+xml") > 0 || strpos($accept, "text/vnd.wap.wml") > 0) {
-    	     $mobile = "WAP";
-    	   } else {
-    	     foreach ($devices as $device => $keys) {
-    	       if(preg_match("/$keys/i", $useragent)) {
-    	         $mobile = $device;
-    	       }
-           }
-	       }
-	       if(!$mobile){
-            $return .= "
-            var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
-            so.addVariable('controlbar', 'over');
-            so.addVariable('autostart', 'true');
-            so.addVariable('streamer', 'rtmp://200.136.27.12/live');
-            so.addVariable('file', '".$streaming."');
-            so.addVariable('type', 'video');
-            so.addParam('allowscriptaccess','always');
-            so.addParam('allowfullscreen','true');
-            so.addParam('wmode','transparent');
-            so.write('livestream2');
-            $('#livestream2').show();
-            var interval=self.setInterval('checkStreamingEnd()', 60000);
-            ";
-	       }
-         else{
-           $return .= '<video controls="controls" height="390" src="http://200.136.27.21/hls-live/livepkgr/_definst_/liveevent/multi.m3u8" width="640"></video>';
-         }
-   
+          $return .= "
+          var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
+          so.addVariable('controlbar', 'over');
+          so.addVariable('autostart', 'true');
+          so.addVariable('streamer', 'rtmp://200.136.27.12/live');
+          so.addVariable('file', '".$streaming."');
+          so.addVariable('type', 'video');
+          so.addParam('allowscriptaccess','always');
+          so.addParam('allowfullscreen','true');
+          so.addParam('wmode','transparent');
+          so.write('livestream2');
+          $('#livestream2').show();
+          var interval=self.setInterval('checkStreamingEnd()', 60000);
+          ";
         }
       }else{
         $next = Doctrine_Query::create()

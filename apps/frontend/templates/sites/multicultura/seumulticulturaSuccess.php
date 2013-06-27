@@ -85,6 +85,13 @@
 			?>
             <h3><?php echo $asset->getTitle() ?></h3>
             <p><?php echo $texto[0]; ?></p>
+            
+            <?php
+            $respostas = $asset->retriveRelatedAssetsByAssetTypeId(11);
+            ?>
+            
+            <?php if(count($respostas) > 0): ?>
+            
             <div class="assinatura grid2">
               <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
               <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?>- Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
@@ -156,6 +163,7 @@
               </div>
               <!--/VOTACAO Video-->
             </div>
+            <?php endif;?>
             <?php $relacionados = $asset -> retriveRelatedAssetsByRelationType('Asset Relacionado');?>
             <?php if(count($relacionados) > 0): ?>
 
@@ -177,9 +185,10 @@
               </div>
             </div>
             <!-- SAIBA MAIS -->
-            <?php endif;?>
+            
 
             <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri))  ?>
+         <?php endif;?>
           </div>
           <!-- /NOTICIA INTERNA -->
         
