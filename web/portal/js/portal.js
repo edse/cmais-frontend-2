@@ -269,6 +269,7 @@ $(function(){ //onready
       $.ajax({
         url: "http://cmais.com.br/ajax/menutv/tvcultura.json",
         success: function(data) {
+          console.log(data);
           m_tv_tvcultura = data;
           $('#tvcultura').html(m_tv_tvcultura);
           $('#tvcultura').show();
@@ -277,6 +278,7 @@ $(function(){ //onready
     }
     $('#tvcultura').html(m_tv_tvcultura);
     $('#tvcultura').show();
+    console.log(m_tv_tvcultura);
   });
   $('.m_tv_univesptv').click(function(){
     $('#univesptv').load("http://cmais.com.br/ajax/menutv/univesptv.json").show();
