@@ -908,7 +908,7 @@ class ajaxActions extends sfActions
         $return .= '<div class="botoes"><a href="http://tvratimbum.cmais.com.br/grade">Grade completa</a></div>';
       }
     //}
-    echo $return;
+    echo urlencode($return);
     die();
   }
 
