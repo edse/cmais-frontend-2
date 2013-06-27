@@ -181,7 +181,12 @@ class ajaxActions extends sfActions
   }
 
 public function executeStreamingios(sfWebRequest $request){ ?>
+	<?php $ios= '
 	<video controls="controls" height="390" src="http://200.136.27.21/hls-live/livepkgr/_definst_/liveevent/tvcult.m3u8" width="640"></video>
+	';
+	echo $ios;
+    die();
+	?>
 	<?php
 }
 
