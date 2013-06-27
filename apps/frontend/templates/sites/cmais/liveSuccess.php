@@ -34,7 +34,7 @@
       <?php
 	function detectMobile() {
 	$devices = array('iphone' => '(iphone|ipod|ipad)');
-        $useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
+    $useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
 	$accept = strtolower($_SERVER['HTTP_ACCEPT']);
 	$mobile = false;
  
