@@ -302,3 +302,6 @@ p { color:#333; font-size: 14px;}
 #ferias .form-contato .email label.error { position:absolute; bottom:-152px; width:100%;}
 #ferias .form-contato .nome label.error { left:80px;} 
 #ferias .form-contato .email label.error { left:-394px;}
+#ferias .form-contato input { *position:absolute; *right:0;} 
+/*#ferias .form-contato .nome label.error,*/
+/*#ferias .form-contato .email label.error { *display: none !important;}*/
