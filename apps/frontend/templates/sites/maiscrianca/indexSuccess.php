@@ -44,7 +44,7 @@ if($feriasSection)
     
   <div class="row-fluid" id="menu">
     <div class="span12">
-      <ul id="myTab" class="nav nav-tabs">
+      <ul id="myTab" class="nav nav-tabs"> 
         <?php if($feriasSection): ?>
         <li class="ferias active"><a href="#ferias" data-toggle="tab"><p>Férias</p></a></li>
         <?php endif; ?>
@@ -101,7 +101,7 @@ if($feriasSection)
             </div>
             <form id="form-contato" class="form-contato" method="post" action="">
               <input type="hidden" name="ferias" id="ferias" value="true" />
-              <label>
+              <label class="nome">
                 Seu nome
                 <input type="text" name="nome" id="nome" />
               </label>
@@ -271,7 +271,10 @@ if($feriasSection)
         charada:{
           required: true
         }
-      }
+      },
+      messages : {
+        charada : "Todos os campos são obrigatórios."
+          }
     });
   });
       
