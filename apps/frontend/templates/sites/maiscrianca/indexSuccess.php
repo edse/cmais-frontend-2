@@ -228,6 +228,10 @@ if($feriasSection)
       $(".msgAcerto, .msgErro").hide();
     });
     
+    $('input').focus(function(){
+      $(".msgAcerto, .msgErro").hide();
+    });
+    
     var validator = $('#form-contato').validate({
       submitHandler: function(form){
         $.ajax({
