@@ -295,3 +295,6 @@ p { color:#333; font-size: 14px;}
 #ferias .carrossel .jcarousel-clip.jcarousel-clip-horizontal {  width:810px\9;  } 
 #ferias .boxMsg { text-align:center; margin:50px 0;}  
 #ferias .boxMsg p { font-weight:bold;} 
+#ferias .form-contato label.error { font-size:18px; color:#ffed5a; position:absolute;}
+#ferias .form-contato .nome label.error,
+#ferias .form-contato .email label.error { display:none !important;}  
