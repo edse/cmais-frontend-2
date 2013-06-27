@@ -273,37 +273,8 @@ class ajaxActions extends sfActions
           $('#livestream2').show();
           var interval=self.setInterval('checkStreamingEnd()', 60000);
           ";
-        }else{ ?>
-    
-    <?php 
-	function detectMobile() {
-	$devices = array('android' => 'android', 'blackberry' => 'blackberry', 'iphone' => '(iphone|ipod|ipad)', 'opera' => '(opera mini|opera mobi)', 'palm' => '(avantgo|blazer|elaine|hiptop|palm|plucker|xiino)', 'windows' => 'windows ce; (iemobile|ppc|smartphone)', 'generic' => '(kindle|mobile|mmp|midp|o2|pda|pocket|psp|symbian|smartphone|treo|up.browser|up.link|vodafone|wap)');
- 	$useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
-	$accept = strtolower($_SERVER['HTTP_ACCEPT']);
-	$mobile = false;
- 
-	if (isset($_SERVER['HTTP_X_WAP_PROFILE']) || isset($_SERVER['HTTP_PROFILE']) || strpos($accept, "application/vnd.wap.xhtml+xml") > 0 || strpos($accept, "text/vnd.wap.wml") > 0) {
-			$mobile = "WAP";
-	} else {
-		foreach ($devices as $device => $keys) {
-			if(preg_match("/$keys/i", $useragent)) {
-				$mobile = $device;
-			}
-		}
-	}
- 
-	return $mobile;
-}
- 
-if(detectMobile()) {
-?>
-
-$return .= "<video controls="controls" height="390" src="http://200.136.27.21/hls-live/livepkgr/_definst_/liveevent/tvcultura.m3u8" width="640"></video>
-"
-<?php
-} else {
-
-	$return .= "
+        }else{
+          $return .= "
           var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
           so.addVariable('controlbar', 'over');
           so.addVariable('autostart', 'true');
@@ -317,10 +288,7 @@ $return .= "<video controls="controls" height="390" src="http://200.136.27.21/hl
           $('#livestream2').show();
           var interval=self.setInterval('checkStreamingEnd()', 60000);
           ";
-	
-}
-?>
-       <?php  }
+        }
       }else{
         $next = Doctrine_Query::create()
           ->select('s.*')
