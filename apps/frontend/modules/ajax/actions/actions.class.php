@@ -291,7 +291,7 @@ class ajaxActions extends sfActions
            }
 	       }
 	       if(!$mobile){
-           
+            
             $return .= "
             var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
             so.addVariable('controlbar', 'over');
