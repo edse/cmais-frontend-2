@@ -274,6 +274,8 @@ if($feriasSection)
         }
       },
       messages : {
+        nome : "Todos os campos são obrigatórios.",
+        email : "Todos os campos são obrigatórios.",
         charada : "Todos os campos são obrigatórios."
           }
     });
