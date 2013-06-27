@@ -44,7 +44,7 @@ if($feriasSection)
     
   <div class="row-fluid" id="menu">
     <div class="span12">
-      <ul id="myTab" class="nav nav-tabs">
+      <ul id="myTab" class="nav nav-tabs"> 
         <?php if($feriasSection): ?>
         <li class="ferias active"><a href="#ferias" data-toggle="tab"><p>Férias</p></a></li>
         <?php endif; ?>
