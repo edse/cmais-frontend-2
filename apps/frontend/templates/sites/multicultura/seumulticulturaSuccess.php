@@ -87,7 +87,7 @@
             <p><?php echo $texto[0]; ?></p>
             
             <?php
-            $respostas = $asset->retriveRelatedAssetsByTypeId(10);
+            $respostas = $asset->retriveRelatedAssetsByAssetTypeId(10);
             ?>
             
             <?php if(count($respostas) > 0): ?>
