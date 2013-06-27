@@ -29,41 +29,7 @@
       success: function(data) {
         eval(data);
       },
-      
-      
-      <?php
-	function detectMobile() {
-	$devices = array('iphone' => '(iphone|ipod|ipad)');
-    $useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
-	$accept = strtolower($_SERVER['HTTP_ACCEPT']);
-	$mobile = false;
- 
-	if (isset($_SERVER['HTTP_X_WAP_PROFILE']) || isset($_SERVER['HTTP_PROFILE']) || strpos($accept, "application/vnd.wap.xhtml+xml") > 0 || strpos($accept, "text/vnd.wap.wml") > 0) {
-			$mobile = "WAP";
-	} else {
-		foreach ($devices as $device => $keys) {
-			if(preg_match("/$keys/i", $useragent)) {
-				$mobile = $device;
-			}
-		}
-	}
-   
-	return $mobile;
-}
- 
-if(detectMobile()) {
-?>
-
-url: '/ajax/streamingios'
-
-<?php
-} else {
-?>
-url: '/ajax/streaming'
-<?php	
-}
-?>
-      
+      url: '/ajax/streaming'
     });
   }
   function checkStreamingEnd(){
