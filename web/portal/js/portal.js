@@ -264,6 +264,8 @@ $(function(){ //onready
   var m_ar_multicultura = "";
   var m_ar_tvrtb = "";
   $('.m_tv_tvcultura').click(function(){
+    $('#tvcultura').load("http://cmais.com.br/ajax/menutv/tvcultura.json").show();
+    /*
     if(m_tv_tvcultura == ""){
       $.ajax({
         url: "/index.php/ajax/menuTv",
@@ -277,8 +279,11 @@ $(function(){ //onready
     }
     $('#tvcultura').html(m_tv_tvcultura);
     $('#tvcultura').show();
+    */
   });
   $('.m_tv_univesptv').click(function(){
+    $('#univesptv').load("http://cmais.com.br/ajax/menutv/univesptv.json").show();
+    /*
     if(m_tv_univesptv == ""){
       $.ajax({
         url: "/index.php/ajax/menuTv",
@@ -292,8 +297,11 @@ $(function(){ //onready
     }
     $('#univesptv').html(m_tv_univesptv);
     $('#univesptv').show();
+    */
   });
   $('.m_tv_multicultura').click(function(){
+    $('#multicultura').load("http://cmais.com.br/ajax/menutv/multicultura.json").show();
+    /*
     if(m_tv_multicultura == ""){
       $.ajax({
         url: "/index.php/ajax/menuTv",
@@ -307,8 +315,11 @@ $(function(){ //onready
     }
     $('#multicultura').html(m_tv_multicultura);
     $('#multicultura').show();
+    */
   });
   $('.m_tv_tvrtb').click(function(){
+    $('#tvrtb').load("http://cmais.com.br/ajax/menutv/tvrtb.json").show();
+    /*
     if(m_tv_tvrtb == ""){
       $.ajax({
         url: "/index.php/ajax/menuTv",
@@ -322,9 +333,12 @@ $(function(){ //onready
     }
     $('#tvrtb').html(m_tv_tvrtb);
     $('#tvrtb').show();
+    */
   });
   
   $('.m_radio_am').click(function(){
+    $('#radio-cb').load("http://cmais.com.br/ajax/menutv/radioam.json").show();
+    /*
     if(m_radio_am == ""){
       $.ajax({
         url: "/index.php/ajax/menuTv",
@@ -338,8 +352,11 @@ $(function(){ //onready
     }
     $('#radio-cb').html(m_radio_am);
     $('#radio-cb').show();
+    */
   });
   $('.m_radio_fm').click(function(){
+    $('#radio-fm').load("http://cmais.com.br/ajax/menutv/radiofm.json").show();
+    /*
     if(m_radio_fm == ""){
       $.ajax({
         url: "/index.php/ajax/menuTv",
@@ -353,9 +370,12 @@ $(function(){ //onready
     }
     $('#radio-fm').html(m_radio_fm);
     $('#radio-fm').show();
+    */
   });
   
   $('.m_ar_tvcultura').click(function(){
+    $('#ar-tvcultura').load("http://cmais.com.br/ajax/menutv/no-ar-tvcultura.json").show();
+    /*
     if(m_ar_tvcultura == ""){
       $.ajax({
         url: "/index.php/ajax/menuTv",
@@ -369,8 +389,11 @@ $(function(){ //onready
     }
     $('#ar-tvcultura').html(m_ar_tvcultura);
     $('#ar-tvcultura').show();
+    */
   });
   $('.m_ar_univesptv').click(function(){
+    $('#ar-univesptv').load("http://cmais.com.br/ajax/menutv/no-ar-univesptv.json").show();
+    /*
     if(m_ar_univesptv == ""){
       $.ajax({
         url: "/index.php/ajax/menuTv",
@@ -384,8 +407,11 @@ $(function(){ //onready
     }
     $('#ar-univesptv').html(m_ar_univesptv);
     $('#ar-univesptv').show();
+    */
   });
   $('.m_ar_multicultura').click(function(){
+    $('#ar-multicultura').load("http://cmais.com.br/ajax/menutv/no-ar-multicultura.json").show();
+    /*
     if(m_ar_multicultura == ""){
       $.ajax({
         url: "/index.php/ajax/menuTv",
@@ -399,8 +425,11 @@ $(function(){ //onready
     }
     $('#ar-multicultura').html(m_ar_multicultura);
     $('#ar-multicultura').show();
+    */
   });
   $('.m_ar_tvrtb').click(function(){
+    $('#ar-tvrtb').load("http://cmais.com.br/ajax/menutv/no-ar-tvrtb.json").show();
+    /*
     if(m_ar_tvrtb == ""){
       $.ajax({
         url: "/index.php/ajax/menuTv",
@@ -414,6 +443,7 @@ $(function(){ //onready
     }
     $('#ar-tvrtb').html(m_ar_tvrtb);
     $('#ar-tvrtb').show();
+    */
   });
 
 });
