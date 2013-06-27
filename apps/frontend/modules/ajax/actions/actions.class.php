@@ -910,7 +910,10 @@ class ajaxActions extends sfActions
     //}
     //echo $return;
     $a["data"] = $return;
-    echo json_encode($a);
+    $json = json_encode($a);
+    $callback = $request->getParameter('callback');
+    echo $callback.'('. $json . ');';
+    //echo  json_encode($a);
     die();
   }
 
