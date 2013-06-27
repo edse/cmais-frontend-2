@@ -289,12 +289,12 @@ $(function(){ //onready
         url: "http://app.cmais.com.br/index.php/ajax/menuTv",
         success: function(data){
           m_tv_univesptv = data.data;
-          $('#univesptv').html(m_tv_tvcultura);
+          $('#univesptv').html(m_tv_univesptv);
           $('#univesptv').show();
         }
       });
     }
-    $('#univesptv').html(m_tv_tvcultura);
+    $('#univesptv').html(m_tv_univesptv);
     $('#univesptv').show();
   });
   $('.m_tv_multicultura').click(function(){
@@ -306,12 +306,12 @@ $(function(){ //onready
         url: "http://app.cmais.com.br/index.php/ajax/menuTv",
         success: function(data){
           m_tv_multicultura = data.data;
-          $('#multicultura').html(m_tv_tvcultura);
+          $('#multicultura').html(m_tv_multicultura);
           $('#multicultura').show();
         }
       });
     }
-    $('#multicultura').html(m_tv_tvcultura);
+    $('#multicultura').html(m_tv_multicultura);
     $('#multicultura').show();
   });
   $('.m_tv_tvrtb').click(function(){
@@ -323,7 +323,7 @@ $(function(){ //onready
         url: "http://app.cmais.com.br/index.php/ajax/menuTv",
         success: function(data){
           m_tv_tvrtb = data.data;
-          $('#tvrtb').html(m_tv_tvcultura);
+          $('#tvrtb').html(m_tv_tvrtb);
           $('#tvrtb').show();
         }
       });
@@ -341,12 +341,12 @@ $(function(){ //onready
         url: "http://app.cmais.com.br/index.php/ajax/menuTv",
         success: function(data){
           m_radio_am = data.data;
-          $('#radio-cb').html(m_tv_tvcultura);
+          $('#radio-cb').html(m_radio_am);
           $('#radio-cb').show();
         }
       });
     }
-    $('#radio-cb').html(m_tv_tvcultura);
+    $('#radio-cb').html(m_radio_am);
     $('#radio-cb').show();
   });
   $('.m_radio_fm').click(function(){
@@ -358,12 +358,12 @@ $(function(){ //onready
         url: "http://app.cmais.com.br/index.php/ajax/menuTv",
         success: function(data){
           m_radio_fm = data.data;
-          $('#radio-fm').html(m_tv_tvcultura);
+          $('#radio-fm').html(m_radio_fm);
           $('#radio-fm').show();
         }
       });
     }
-    $('#radio-fm').html(m_tv_tvcultura);
+    $('#radio-fm').html(m_radio_fm);
     $('#radio-fm').show();
   });
   
@@ -376,12 +376,12 @@ $(function(){ //onready
         url: "http://app.cmais.com.br/index.php/ajax/menuTv",
         success: function(data){
           m_ar_tvcultura = data.data;
-          $('#ar-tvcultura').html(m_tv_tvcultura);
+          $('#ar-tvcultura').html(m_ar_tvcultura);
           $('#ar-tvcultura').show();
         }
       });
     }
-    $('#ar-tvcultura').html(m_tv_tvcultura);
+    $('#ar-tvcultura').html(m_ar_tvcultura);
     $('#ar-tvcultura').show();
   });
   $('.m_ar_univesptv').click(function(){
@@ -393,12 +393,12 @@ $(function(){ //onready
         url: "http://app.cmais.com.br/index.php/ajax/menuTv",
         success: function(data){
           m_ar_univesptv = data.data;
-          $('#ar-univesptv').html(m_tv_tvcultura);
+          $('#ar-univesptv').html(m_ar_univesptv);
           $('#ar-univesptv').show();
         }
       });
     }
-    $('#ar-univesptv').html(m_tv_tvcultura);
+    $('#ar-univesptv').html(m_ar_univesptv);
     $('#ar-univesptv').show();
   });
   $('.m_ar_multicultura').click(function(){
@@ -410,12 +410,12 @@ $(function(){ //onready
         url: "http://app.cmais.com.br/index.php/ajax/menuTv",
         success: function(data){
           m_ar_multicultura = data.data;
-          $('#ar-multicultura').html(m_tv_tvcultura);
+          $('#ar-multicultura').html(m_ar_multicultura);
           $('#ar-multicultura').show();
         }
       });
     }
-    $('#ar-multicultura').html(m_tv_tvcultura);
+    $('#ar-multicultura').html(m_ar_multicultura);
     $('#ar-multicultura').show();
   });
   $('.m_ar_tvrtb').click(function(){
@@ -427,12 +427,12 @@ $(function(){ //onready
         url: "http://app.cmais.com.br/index.php/ajax/menuTv",
         success: function(data){
           m_ar_tvrtb = data.data;
-          $('#ar-tvrtb').html(m_tv_tvcultura);
+          $('#ar-tvrtb').html(m_ar_tvrtb);
           $('#ar-tvrtb').show();
         }
       });
     }
-    $('#ar-tvrtb').html(m_tv_tvcultura);
+    $('#ar-tvrtb').html(m_ar_tvrtb);
     $('#ar-tvrtb').show();
   });
 
