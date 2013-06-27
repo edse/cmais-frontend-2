@@ -273,7 +273,7 @@ $(function(){ //onready
         url: "http://app.cmais.com.br/index.php/ajax/menuTv",
         success: function(data){
           console.log(data);
-          m_tv_tvcultura = data[0];
+          m_tv_tvcultura = data.data;
         }
       });
       /*
