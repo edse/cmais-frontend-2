@@ -272,7 +272,8 @@ $(function(){ //onready
         data: "content=tvcultura",
         url: "http://app.cmais.com.br/index.php/ajax/menuTv",
         success: function(data){
-          m_tv_tvcultura = data;
+          console.log(data);
+          m_tv_tvcultura = data[0];
         }
       });
       /*

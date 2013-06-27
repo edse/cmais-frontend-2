@@ -909,7 +909,7 @@ class ajaxActions extends sfActions
       }
     //}
     //echo $return;
-    $a[] = $return;
+    $a["data"] = $return;
     echo json_encode($a);
     die();
   }
