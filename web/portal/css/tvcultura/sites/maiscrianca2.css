@@ -275,7 +275,7 @@ p { color:#333; font-size: 14px;}
 #ferias .form-contato .contador { width: 40px; margin-left:30px;} 
 #ferias .form-contato textarea { position:absolute; right:3px; top:0; height:96px; width: 90%;}
 #ferias .form-contato  .email { margin-right:0; float:right;} 
-#ferias .form-contato  .charada { width:100%; overflow:hidden; height:100px;  }   
+#ferias .form-contato  .charada { width:100%; overflow:hidden; height:100px; padding-bottom:20px; }   
 #ferias .form-contato #enviar { background:url(/portal/images/capaPrograma/maiscrianca2/btn-enviar.png) no-repeat; width: 116px; height:29px; float:right; color:#dd2b7d;  border:none; box-shadow:none; border-radius:0; -moz-border-radius: 0; -webkit-border-radius:0; text-transform:uppercase; font-weight:bold;} 
 #ferias .carrossel { padding:0; margin:0 !important; width:930px !important; } 
 #ferias .carrossel .jcarousel-prev, 
@@ -295,6 +295,6 @@ p { color:#333; font-size: 14px;}
 #ferias .carrossel .jcarousel-clip.jcarousel-clip-horizontal {  width:810px\9;  } 
 #ferias .boxMsg { text-align:center; margin:50px 0;}  
 #ferias .boxMsg p { font-weight:bold;} 
-#ferias .form-contato label.error { font-size:18px; color:#ffed5a; position:absolute;}
+#ferias .form-contato label.error { font-size:18px; color:#ffed5a; position:absolute; bottom:-23px; left:80px;}
 #ferias .form-contato .nome label.error,
 #ferias .form-contato .email label.error { display:none !important;}  
