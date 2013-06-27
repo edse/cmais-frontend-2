@@ -264,12 +264,10 @@ $(function(){ //onready
   var m_ar_multicultura = "";
   var m_ar_tvrtb = "";
   $('.m_tv_tvcultura').click(function(){
-    $('#tvcultura').load("http://cmais.com.br/ajax/menutv/tvcultura.json").show();
-    /*
+    //$('#tvcultura').load("http://cmais.com.br/ajax/menutv/tvcultura.json").show();
     if(m_tv_tvcultura == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
-        data: "content=tvcultura",
+        url: "http://cmais.com.br/ajax/menutv/tvcultura.json",
         success: function(data) {
           m_tv_tvcultura = data;
           $('#tvcultura').html(m_tv_tvcultura);
@@ -279,7 +277,6 @@ $(function(){ //onready
     }
     $('#tvcultura').html(m_tv_tvcultura);
     $('#tvcultura').show();
-    */
   });
   $('.m_tv_univesptv').click(function(){
     $('#univesptv').load("http://cmais.com.br/ajax/menutv/univesptv.json").show();
