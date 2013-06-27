@@ -291,8 +291,8 @@ class ajaxActions extends sfActions
            }
 	       }
 	       if(!$mobile){
-           $return .= '$(\'#livestream2\').show();$(\'#livestream2\').html(\'<video controls="controls" height="390" src="http://200.136.27.21/hls-live/livepkgr/_definst_/liveevent/multi.m3u8" width="640"></video>\');';
-           /* $return .= "
+           
+            $return .= "
             var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
             so.addVariable('controlbar', 'over');
             so.addVariable('autostart', 'true');
@@ -305,7 +305,7 @@ class ajaxActions extends sfActions
             so.write('livestream2');
             $('#livestream2').show();
             var interval=self.setInterval('checkStreamingEnd()', 60000);
-            ";*/
+            ";
 	       }
          else{
            $return .= '$(\'#livestream2\').show();$(\'#livestream2\').html(\'<video controls="controls" height="390" src="http://200.136.27.21/hls-live/livepkgr/_definst_/liveevent/multi.m3u8" width="640"></video>\');';
