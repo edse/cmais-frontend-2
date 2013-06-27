@@ -304,7 +304,7 @@ class ajaxActions extends sfActions
             ";
 	       }
          else{
-           $return .= '<video controls="controls" height="390" src="http://200.136.27.21/hls-live/livepkgr/_definst_/liveevent/multi.m3u8" width="640"></video>';
+           $return .= 'video: <video controls="controls" height="390" src="http://200.136.27.21/hls-live/livepkgr/_definst_/liveevent/multi.m3u8" width="640"></video>';
          }
    
         }
