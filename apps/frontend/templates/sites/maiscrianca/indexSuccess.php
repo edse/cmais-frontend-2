@@ -101,7 +101,7 @@ if($feriasSection)
             </div>
             <form id="form-contato" class="form-contato" method="post" action="">
               <input type="hidden" name="ferias" id="ferias" value="true" />
-              <label>
+              <label class="nome">
                 Seu nome
                 <input type="text" name="nome" id="nome" />
               </label>
