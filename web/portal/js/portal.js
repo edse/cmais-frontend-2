@@ -267,6 +267,16 @@ $(function(){ //onready
     //$('#tvcultura').load("http://cmais.com.br/ajax/menutv/tvcultura.json").show();
     if(m_tv_tvcultura == ""){
       $.ajax({
+        type : "GET",
+        dataType : "jsonp",
+        data: "content=tvcultura",
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_tv_tvcultura = data;
+        }
+      });
+      /*
+      $.ajax({
         url: "/ajax/menutv/tvcultura.json",
         success: function(data) {
           console.log(data);
@@ -275,6 +285,7 @@ $(function(){ //onready
           $('#tvcultura').show();
         }
       });
+      */
     }
     $('#tvcultura').html(m_tv_tvcultura);
     $('#tvcultura').show();
