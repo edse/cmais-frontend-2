@@ -1246,7 +1246,10 @@ class _sectionActions extends sfActions
     if(isset($email_site)) {
       if(($request->getParameter('captcha'))||($request->getParameter('mande-seu-tema'))||($this->section->getSlug()=='participe')||($this->section->getSlug()=='ideias-mirabolantes')||($this->section->getSlug()=='tvcocorico')||($this->section->getSlug()=='piadas')||($this->site->getSlug() == "tvcocorico")||($this->section->getSlug() == "cadastrodeestagiario")||($this->site->getSlug() == "qss" && $this->section->getSlug() == "home") || ($this->site->getSlug() == "maiscrianca")){
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
-      
+
+          if ($this->site->getSlug() == "maiscrianca" && $request->getParameter('ferias'))
+            $this->section = Doctrine::getTable('Section')->findOneBySlugAndSiteId("ferias", $this->site->id);
+          
           $email_site = $this->section->getContactEmail();
           $email_user = strip_tags($request->getParameter('email'));
           $nome_user = strip_tags($request->getParameter('nome'));
