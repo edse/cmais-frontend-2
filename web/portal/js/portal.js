@@ -264,7 +264,6 @@ $(function(){ //onready
   var m_ar_multicultura = "";
   var m_ar_tvrtb = "";
   $('.m_tv_tvcultura').click(function(){
-    //$('#tvcultura').load("http://cmais.com.br/ajax/menutv/tvcultura.json").show();
     if(m_tv_tvcultura == ""){
       $.ajax({
         type : "GET",
@@ -272,191 +271,169 @@ $(function(){ //onready
         data: "content=tvcultura",
         url: "http://app.cmais.com.br/index.php/ajax/menuTv",
         success: function(data){
-          console.log(data);
           m_tv_tvcultura = data.data;
           $('#tvcultura').html(m_tv_tvcultura);
           $('#tvcultura').show();
         }
       });
-      /*
-      $.ajax({
-        url: "/ajax/menutv/tvcultura.json",
-        success: function(data) {
-          console.log(data);
-          m_tv_tvcultura = data;
-          $('#tvcultura').html(m_tv_tvcultura);
-          $('#tvcultura').show();
-        }
-      });
-      */
     }
     $('#tvcultura').html(m_tv_tvcultura);
     $('#tvcultura').show();
-    console.log(m_tv_tvcultura);
   });
   $('.m_tv_univesptv').click(function(){
-    $('#univesptv').load("http://cmais.com.br/ajax/menutv/univesptv.json").show();
-    /*
     if(m_tv_univesptv == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=univesptv",
-        success: function(data) {
-          m_tv_univesptv = data;
-          $('#univesptv').html(m_tv_univesptv);
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_tv_univesptv = data.data;
+          $('#univesptv').html(m_tv_tvcultura);
           $('#univesptv').show();
         }
       });
     }
-    $('#univesptv').html(m_tv_univesptv);
+    $('#univesptv').html(m_tv_tvcultura);
     $('#univesptv').show();
-    */
   });
   $('.m_tv_multicultura').click(function(){
-    $('#multicultura').load("http://cmais.com.br/ajax/menutv/multicultura.json").show();
-    /*
     if(m_tv_multicultura == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=multicultura",
-        success: function(data) {
-          m_tv_multicultura = data
-          $('#multicultura').html(m_tv_multicultura);
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_tv_multicultura = data.data;
+          $('#multicultura').html(m_tv_tvcultura);
           $('#multicultura').show();
         }
       });
     }
-    $('#multicultura').html(m_tv_multicultura);
+    $('#multicultura').html(m_tv_tvcultura);
     $('#multicultura').show();
-    */
   });
   $('.m_tv_tvrtb').click(function(){
-    $('#tvrtb').load("http://cmais.com.br/ajax/menutv/tvrtb.json").show();
-    /*
     if(m_tv_tvrtb == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=tvrtb",
-        success: function(data) {
-          m_tv_tvrtb = data
-          $('#tvrtb').html(m_tv_tvrtb);
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_tv_tvrtb = data.data;
+          $('#tvrtb').html(m_tv_tvcultura);
           $('#tvrtb').show();
         }
       });
     }
-    $('#tvrtb').html(m_tv_tvrtb);
+    $('#tvrtb').html(m_tv_tvcultura);
     $('#tvrtb').show();
-    */
   });
   
   $('.m_radio_am').click(function(){
-    $('#radio-cb').load("http://cmais.com.br/ajax/menutv/radioam.json").show();
-    /*
     if(m_radio_am == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=radioam",
-        success: function(data) {
-          m_radio_am = data
-          $('#radio-cb').html(m_radio_am);
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_radio_am = data.data;
+          $('#radio-cb').html(m_tv_tvcultura);
           $('#radio-cb').show();
         }
       });
     }
-    $('#radio-cb').html(m_radio_am);
+    $('#radio-cb').html(m_tv_tvcultura);
     $('#radio-cb').show();
-    */
   });
   $('.m_radio_fm').click(function(){
-    $('#radio-fm').load("http://cmais.com.br/ajax/menutv/radiofm.json").show();
-    /*
     if(m_radio_fm == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=radiofm",
-        success: function(data) {
-          m_radio_fm = data
-          $('#radio-fm').html(m_radio_fm);
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_radio_fm = data.data;
+          $('#radio-fm').html(m_tv_tvcultura);
           $('#radio-fm').show();
         }
       });
     }
-    $('#radio-fm').html(m_radio_fm);
+    $('#radio-fm').html(m_tv_tvcultura);
     $('#radio-fm').show();
-    */
   });
   
   $('.m_ar_tvcultura').click(function(){
-    $('#ar-tvcultura').load("http://cmais.com.br/ajax/menutv/no-ar-tvcultura.json").show();
-    /*
     if(m_ar_tvcultura == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=no-ar-tvcultura",
-        success: function(data) {
-          m_ar_tvcultura = data
-          $('#ar-tvcultura').html(m_ar_tvcultura);
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_ar_tvcultura = data.data;
+          $('#ar-tvcultura').html(m_tv_tvcultura);
           $('#ar-tvcultura').show();
         }
       });
     }
-    $('#ar-tvcultura').html(m_ar_tvcultura);
+    $('#ar-tvcultura').html(m_tv_tvcultura);
     $('#ar-tvcultura').show();
-    */
   });
   $('.m_ar_univesptv').click(function(){
-    $('#ar-univesptv').load("http://cmais.com.br/ajax/menutv/no-ar-univesptv.json").show();
-    /*
     if(m_ar_univesptv == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=no-ar-univesptv",
-        success: function(data) {
-          m_ar_univesptv = data
-          $('#ar-univesptv').html(m_ar_univesptv);
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_ar_univesptv = data.data;
+          $('#ar-univesptv').html(m_tv_tvcultura);
           $('#ar-univesptv').show();
         }
       });
     }
-    $('#ar-univesptv').html(m_ar_univesptv);
+    $('#ar-univesptv').html(m_tv_tvcultura);
     $('#ar-univesptv').show();
-    */
   });
   $('.m_ar_multicultura').click(function(){
-    $('#ar-multicultura').load("http://cmais.com.br/ajax/menutv/no-ar-multicultura.json").show();
-    /*
     if(m_ar_multicultura == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=no-ar-multicultura",
-        success: function(data) {
-          m_ar_multicultura = data
-          $('#ar-multicultura').html(m_ar_multicultura);
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_ar_multicultura = data.data;
+          $('#ar-multicultura').html(m_tv_tvcultura);
           $('#ar-multicultura').show();
         }
       });
     }
-    $('#ar-multicultura').html(m_ar_multicultura);
+    $('#ar-multicultura').html(m_tv_tvcultura);
     $('#ar-multicultura').show();
-    */
   });
   $('.m_ar_tvrtb').click(function(){
-    $('#ar-tvrtb').load("http://cmais.com.br/ajax/menutv/no-ar-tvrtb.json").show();
-    /*
     if(m_ar_tvrtb == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=no-ar-tvrtb",
-        success: function(data) {
-          m_ar_tvrtb = data
-          $('#ar-tvrtb').html(m_ar_tvrtb);
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_ar_tvrtb = data.data;
+          $('#ar-tvrtb').html(m_tv_tvcultura);
           $('#ar-tvrtb').show();
         }
       });
     }
-    $('#ar-tvrtb').html(m_ar_tvrtb);
+    $('#ar-tvrtb').html(m_tv_tvcultura);
     $('#ar-tvrtb').show();
-    */
   });
 
 });
