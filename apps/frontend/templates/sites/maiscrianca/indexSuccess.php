@@ -271,7 +271,10 @@ if($feriasSection)
         charada:{
           required: true
         }
-      }
+      },
+      messages : {
+        charada : "Todos os campos são obrigatórios."
+          }
     });
   });
       
