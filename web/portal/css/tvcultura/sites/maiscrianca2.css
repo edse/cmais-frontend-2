@@ -306,5 +306,5 @@ p { color:#333; font-size: 14px;}
 #ferias .form-contato input { *position:absolute; *right:0;} 
 #ferias .form-contato .email label.error { *left:-380px; }
 .nav-tabs > li a p,
-.nav-tabs > li:hover a p { *padding:0 26px; }  
+.nav-tabs > li:hover a p { *padding:0 26px; *margin:0;}  
 .nav-tabs > li > a span { *position:absolute; *right:0;} 
