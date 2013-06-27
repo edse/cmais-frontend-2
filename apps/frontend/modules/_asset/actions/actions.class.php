@@ -702,6 +702,7 @@ class _assetActions extends sfActions
       }
 		}
 		
+				
 		
     elseif($this->site->getSlug() == "cocorico") {
       $this->setLayout('cocorico');
