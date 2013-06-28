@@ -200,7 +200,7 @@
       <form class="busca-portal" action="/busca" method="post">
         <input type="hidden" name="site_id" id="site_id" value="">
         <input class="ipt-txt" type="text" name="term" id="term" value="">
-                <input class="ipt-submit" type="submit" value="BUSCAR">
+                <input class="ipt-submit" type="submit" value="OK">
       </form>
       <!-- /Busca Portal -->  
          
