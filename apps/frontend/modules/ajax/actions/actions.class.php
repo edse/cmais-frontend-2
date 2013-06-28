@@ -296,7 +296,7 @@ class ajaxActions extends sfActions
             var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
             so.addVariable('controlbar', 'over');
             so.addVariable('autostart', 'true');
-            so.addVariable('streamer', 'rtmp://200.136.27.12/livepkgr');
+            so.addVariable('streamer', 'rtmp://200.136.27.21/livepkgr');
             //so.addVariable('file', '".$streaming."');
             so.addVariable('file', 'tvc?adbe-live-event=liveevent');
             so.addVariable('type', 'video');
@@ -309,7 +309,7 @@ class ajaxActions extends sfActions
             ";
 	       }
          else{
-           $return .= '$(\'#livestream2\').show();$(\'#livestream2\').html(\'<video controls="controls" height="390" src="http://200.136.27.12/hls-live/livepkgr/_definst_/liveevent/tvc.m3u8" width="640"></video>\');';
+           $return .= '$(\'#livestream2\').show();$(\'#livestream2\').html(\'<video controls="controls" height="390" src="http://200.136.27.21/hls-live/livepkgr/_definst_/liveevent/tvc.m3u8" width="640"></video>\');';
          }
    
         }
