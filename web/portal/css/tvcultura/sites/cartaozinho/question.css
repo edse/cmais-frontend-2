@@ -9,11 +9,11 @@
 #menu-portal-2 .busca-portal .ipt-txt {    padding: 0 0 0 30px;    border-radius: 0;    height: 24px;  }
 #resultado-video li {    list-style: none;    margin-left: 0;    position: relative; margin-top:20px; }
 #resultado-video .classificacao {    margin-left: 0;  }
-#resultado-video li span {    position: absolute;    right: 0;    top: 0; font-size:16px; }
+#resultado-video li span {    position: absolute;    right: 0;    top: 0; font-size:18px; }
 input.form-contato {    float: left;    margin-right: 5px;    margin-left: 1px;    width: 14px;  }
-#resultado-video p {    margin-bottom: 5px;  font-size:16px;  }
+#resultado-video p {    margin-bottom: 5px;  font-size:20px;  }
 
-#barra-site .redes .curtir {    width: auto;  }
+#barra-site .redes .curtir {    width: auto;  } 
 #menu-portal-2 .abas li {    float: right;  }
 #resultado-video h2,
 .box-interna h3 { padding:20px 0 0 10px; font-size:25px; line-height: 27px; margin-bottom:0; margin-top:0; }
@@ -37,5 +37,5 @@ input.form-contato {    float: left;    margin-right: 5px;    margin-left: 1px; 
 
 #votar,
 .form-votacao p,
-#lista-videos label { font-size:16px; }
+#lista-videos label { font-size:18px; }
 .progress { margin-bottom:0; }
