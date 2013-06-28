@@ -298,7 +298,7 @@ class ajaxActions extends sfActions
             so.addVariable('autostart', 'true');
             so.addVariable('streamer', 'rtmp://200.136.27.21/livepkgr');
             //so.addVariable('file', '".$streaming."');
-            so.addVariable('file', 'tvc?adbe-live-event=liveevent');
+            so.addVariable('file', 'tv?adbe-live-event=liveevent');
             so.addVariable('type', 'video');
             so.addParam('allowscriptaccess','always');
             so.addParam('allowfullscreen','true');
@@ -309,7 +309,7 @@ class ajaxActions extends sfActions
             ";
 	       }
          else{
-           $return .= '$(\'#livestream2\').show();$(\'#livestream2\').html(\'<video controls="controls" height="390" src="http://200.136.27.21/hls-live/livepkgr/_definst_/liveevent/tvc.m3u8" width="640"></video>\');';
+           $return .= '$(\'#livestream2\').show();$(\'#livestream2\').html(\'<video controls="controls" height="390" src="http://200.136.27.21/hls-live/livepkgr/_definst_/liveevent/tv.m3u8" width="640"></video>\');';
          }
    
         }
