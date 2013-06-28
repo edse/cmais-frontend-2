@@ -584,7 +584,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 
 /** lista **/
 #menu-portal .padrao .lista {width:231px; float:left; margin:0 10px 0 0;}
-#menu-portal .padrao .lista li {height:auto; width:221px; border-bottom:1px dotted #ccc; margin:0 0 5px 10px;}
+#menu-portal .padrao .lista li {height:auto; width:221px; border-bottom:1px dotted #ccc; margin:0 0 10px 10px;}
 #menu-portal .padrao .lista a { height:auto; font-size:12px; width:211px; padding-left:10px; }
 #menu-portal .padrao .lista a:hover { text-decoration: underline;}  
 #menu-portal .menu-aberto {background:#fff; position:absolute; z-index: 1000;}

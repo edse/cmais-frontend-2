@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css?nocache='.time().'" type="text/css" />
     <link type="text/css" rel="stylesheet" href="/doctorwho/setimoano/css/style.css?nocache='.time().'" />
     <script type="text/javascript" src="/portal/js/portal.js?nocache='.time().'"></script>
-   
     
+     
 <div id="guia-topo" align="center">
   <!--topo Cmais-->
   <div id="topo-cmais">
