@@ -203,13 +203,13 @@ $(document).ready(function(){
     });
 });
 <?php
-              
+/*              
 echo "var nome = new Array();\n";
 foreach($a as $key=>$value){
   $c = $value->Asset->AssetAnswer->getAnswer();
   echo "nome[".$key."]= '".$c."';\n";
 }
- 
+*/ 
 ?>
 function computavoto(opcao){
 	$('#opcao').val(opcao);
@@ -233,7 +233,7 @@ function sendAnswer(){
       $("#resultado-video").fadeIn("fast");
       var i=0;
       $.each(data, function(key, val) {
-        $('.parcial-'+i).html("<li><p>"+(i+1)+" - "+nome[i]+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
+        $('.parcial-'+i).html("<li><p>"+(i+1)+" - "+val.answer+"</p><span>"+val.votes+"</span><div class='progress progress-success'><div class='bar' style='width:"+val.votes+"'></div></div></li>")
         i++;
       });      
     }

@@ -58,7 +58,7 @@
             <li style="margin-left: 0!important;">
               <img src="http://cmais.com.br/portal/tvratimbum/image/novomascote.png" border="0" usemap="#mascote"/>
               <map name="mascote" id="mascote">
-                <area shape="circle" coords="137,137,122" title="Novo mascote" href="http://tvratimbum.cmais.com.br/novo-mascote" target="_self" />
+                <area shape="circle" coords="137,137,122" title="Novo mascote" href="http://tvratimbum.cmais.com.br/especial/novo-mascote-da-tv-ra-tim-bum" target="_self" />
               </map>
             </li>
             <li>
