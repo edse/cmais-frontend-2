@@ -1,6 +1,6 @@
 <?php if(isset($_GET["step"])==1):?>
 <script>
-$(document).ready(function(){
+$(document).ready(function(){ 
   $('html, body').animate({
     scrollTop: $('#cadastro').offset().top
   }, "slow");
@@ -13,18 +13,17 @@ $(document).ready(function(){
   <?php include_partial_from_folder('sites/central-de-relacionamento', 'global/topo', array('site' => $site,'siteSections' => $siteSections, 'section' => $section)) ?>
   <!--colunas-->
   <div class="row-fluid">
-    <!--coluna esquerda-->
-    <div class="col-esquerda span5" style="margin:0;">
-      <!--destaque principal-->
-      <div class="central cinza-claro-2"> 
+    <!--coluna esquerda--> 
+    <div class="span5" style="margin:0;"> 
+      <div class="col-esquerda central ">  
       <?php if(isset($displays['chamada'])):?>
         <?php if(count($displays['chamada']) > 0): ?>
           <?php foreach($displays['chamada'] as $k=>$d): ?>
-            <h1><?php echo $d->getTitle() ?></h1>
+            <h1><?php echo $d->getTitle() ?></h1> 
             <h3><?php echo $d->getDescription() ?></h3>
             <?php echo html_entity_decode($d->Asset->AssetContent->getContent()) ?>
             <br/> 
-            <a href="/perguntas-frequentes" class="btn btn-success btn-large btn-block mais-info" title="Perguntas Frequentes">
+            <a href="/perguntas-frequentes" class="btn btn-primary btn-large btn-block mais-info mais-info-a" title="Perguntas Frequentes">
               <div class="container-btn">
                 <i class="ico-perg"></i>Perguntas Frequentes</i>
               </div>
@@ -33,29 +32,61 @@ $(document).ready(function(){
         <?php endif; ?>
       <?php endif; ?>
       </div>
-      <!--/destaque principal-->
-
-      <!--botao-->
-      <?php if(isset($displays['botoes-central'])):?>
-        <?php if(count($displays['botoes-central']) > 0): ?>
-          <?php foreach($displays['botoes-central'] as $k=>$d): ?>
-          <div class="base-btn">  
-            <div class="btn-esquerda cinza-claro-2">
-              <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" title="<?php echo $d->getTitle() ?>">
-                <i class="ico ico-<?php echo $d->Asset->getSlug() ?>"></i>
-                <h1><?php echo $d->getTitle() ?></h1>
-                <p><?php echo $d->Asset->getDescription() ?></p>
-              </a>
-            </div>
-            <div class="btn-esquerda sombra"></div>
-          </div>
-          <?php endforeach; ?>
+      <div class="col-esquerda">
+               
+        <?php if(isset($displays['box-1'])):?>
+        <?php if(count($displays['box-1']) > 0): ?>
+       	<?php foreach($displays['box-1'] as $k=>$d): ?> 
+        <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes green mais-info-a" title="Perguntas Frequentes">
+          <i class="icone"></i>
+          <span class="tit-perg"><?php echo $d->getTitle() ?></span>
+          <span class="desc-perg"><?php echo $d->getDescription() ?></span>
+        </a> 
+        <?php endforeach; ?>      
         <?php endif; ?>
-      <?php endif; ?>
+        <?php endif; ?>
+        
+        <?php if(isset($displays['box-2'])):?>
+        <?php if(count($displays['box-2']) > 0): ?>
+       	<?php foreach($displays['box-2'] as $k=>$d): ?>
+        <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes blue mais-info-a" title="Perguntas Frequentes">
+          <i class="icone sintonia"></i>
+          <span class="tit-perg"><?php echo $d->getTitle() ?></span>
+          <span class="desc-perg"><?php echo $d->getDescription() ?></span>
+        </a>
+        <?php endforeach; ?>
+        <?php endif; ?>
+       	<?php endif; ?>
+         
+          
+        <?php if(isset($displays['box-3'])):?>
+        <?php if(count($displays['box-3']) > 0): ?>
+       	<?php foreach($displays['box-3'] as $k=>$d): ?>
+ 		<a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" class="btn btn-primary btn-large btn-block mais-info botoes red mais-info-a" title="Perguntas Frequentes">          
+ 			<i class="icone trabalhe-conosco"></i>
+          <span class="tit-perg"><?php echo $d->getTitle() ?></span>
+          <span class="desc-perg"><?php echo $d->getDescription() ?></span>
+        </a>
+        <?php endforeach; ?>
+        <?php endif; ?>
+       	<?php endif; ?>
+      </div>
     </div>
     <!--/coluna esquerda-->
     <!--coluna direita-->
     <div class="col-direita span7 ">
+      <div class="coluna-sub cinza-claro-2">
+        <h1>MELHORE SEU RELACIONAMENTO CONOSCO</h1>
+        <p>
+          <ul>
+            <li>1) Mantenha sempre seus dados atualizados</li>
+            <li>2) Preencha os campos complementares de seu cadastro</li>
+            <li>3) Indique se quer ou não receber mensagens nossas via SMS, E-mail</li>
+            <li>4) Indique se quer ser informado sobre ações promovidas pela FPA; pesquisas, concursos, promoções, eventos etc.</li>  
+          </ul>  
+        </p>
+      </div>  
+      <br/>
 
       <!-- COLUNA SUB DIR 1 -->
       <div id="cadastro" class="coluna-sub cinza-claro-2">
@@ -646,7 +677,7 @@ $(document).ready(function(){
                   </form>
                 </div>
                 <!-- /row4 -->
-                
+               
                 <!-- row5 -->
                 <div class="row" id="row5" style="display:none;">
                   <div class="page-header">
@@ -1152,12 +1183,10 @@ $(document).ready(function(){
                     success: function(data){
                       if(data.script != ""){
                         eval(data.script);
-                        if($('#f4_cod_programa option').size()<=1){
-                            $('#f4_cod_programa option').val("00").html("sem programa");
-                            $('#f4_cod_assunto').html('<option value="19">Elogio</option><option value="21">Crítica</option><option value="23">Comentário</option><option value="24">Pedido de Informação</option>');
-                          }else{  
-                            $('#f4_cod_assunto option').html('--').css('display','none');
-                          }
+                        if($('#f4_cod_programa option').size()<=1)
+                            $('#f4_cod_programa, #f4_cod_assunto').attr('disabled','disabled');
+                          else  
+                            $('#f4_cod_programa, #f4_cod_assunto').removeAttr('disabled','disabled');
                       }
                       else{
                         alert('Erro!');
@@ -1212,9 +1241,9 @@ $(document).ready(function(){
                 
 
             </div>
-                
+                <?php $i=0;?>
               <?php foreach($displays["formas-de-atendimento"] as $d): ?>
-                
+                <?php $i++;?>
             <div class="accordion-group">
               <div class="accordion-heading escuro">
                 <i class="icon-circle-arrow-right"></i>  
@@ -1233,18 +1262,7 @@ $(document).ready(function(){
           </div>
           <!-- COLUNA SUB DIR 2 -->
         </div>
-        <!-- COLUNA SUB DIR 1 --> 
-        
-        <div class="coluna-sub cinza-claro-2">
-          <h1>MELHORE SEU RELACIONAMENTO CONOSCO</h1>
-          <ul>
-            <li>1) Mantenha sempre seus dados atualizados</li>
-            <li>2) Preencha os campos complementares de seu cadastro</li>
-            <li>3) Indique se quer ou não receber mensagens nossas via SMS, E-mail</li>
-            <li>4) Indique se quer ser informado sobre ações promovidas pela FPA; pesquisas, concursos, promoções, eventos etc.</li>  
-          </ul>  
-        </div>  
-       
+        <!-- COLUNA SUB DIR 1 -->  
         
  
       
