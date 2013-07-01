@@ -3,7 +3,7 @@
 <script type="text/javascript">
   $(function() {
 
-    $('.m-colunistas, .submenu-interna').mouseover(function() {
+    $('.m-colunistas, .submenu-interna').mouseover(function() {  
 
       $('.toggle-menu').slideDown("fast");
 
