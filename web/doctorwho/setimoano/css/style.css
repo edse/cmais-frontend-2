@@ -101,7 +101,8 @@ a:link { -webkit-tap-highlight-color: #F2DA81; }
 LAYOUT
 ########################################################## */
 
-body { background: #000023 url(/doctorwho/setimoano/img/bga.jpg) no-repeat center 63px; }
+/*body { background: #000023 url(../img/bg.jpg) no-repeat top center; }*/
+body { background: #000023 url(/doctorwho/setimoano/img/bgb.jpg) no-repeat center 63px; }
 
 .doc { width:1002px; margin:auto; }
 
