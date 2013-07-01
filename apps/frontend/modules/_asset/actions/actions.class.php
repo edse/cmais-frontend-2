@@ -964,7 +964,7 @@ class _assetActions extends sfActions
       }
       elseif((is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Success.php'))&&($this->site->getSlug() != "tvratimbum")){
         //die(">".$this->section->slug);
-        if ($this->site->getSlug() == "radarcultura" && in_array($this->section->slug,array("entrevistas","cincosons"))) {
+        if ($this->site->getSlug() == "radarcultura" && in_array($this->section->slug,array("entrevistas","cincosons","quarentoes"))) {
           if($debug) print "<br>2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/contentRadar';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/contentRadar');
         }
