@@ -46,7 +46,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .caret{position:absolute; bottom:8px; left: 48%; margin:0!important;  background: url("/portal/images/capaPrograma/fpa/ico-seta-down.gif") no-repeat; width: 10px; height: 4px; border:none;}
 .caret.active{display:none;}
 .logo-fpa{*top:3px; z-index: 5000; margin:0 0 0 10px;}
-#fundo-topo{width:100%;position:relative;top:0px;left:0;z-index:1000;background-color: #ffffff;border-top:3px solid #696969;border-bottom:none;border-bottom:1px solid #d5d5d5;height: 50px;box-shadow: 0px 0px 10px #ccc, 0px 0px 10px #ccc;}
+#fundo-topo{z-index: 99999999;width:100%;position:relative;top:0px;left:0;z-index:1000;background-color: #ffffff;border-top:3px solid #696969;border-bottom:none;border-bottom:1px solid #d5d5d5;height: 50px;box-shadow: 0px 0px 10px #ccc, 0px 0px 10px #ccc;}
 .fixed{position:fixed;}
 #topo-fpa{position:relative; z-index:30}
 #topo-fpa li {position:relative; z-index:5000;}
