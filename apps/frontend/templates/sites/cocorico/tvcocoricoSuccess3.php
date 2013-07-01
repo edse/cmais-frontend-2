@@ -153,7 +153,7 @@ $(function(){
             <?php if(isset($displays['destaque-principal'])): ?>
           <?php if(count($displays['destaque-principal']) > 0): ?>
             <h2>Concurso Cultural</h2>
-            <img class="promocao" src="/portal/images/capaPrograma/cocorico/destaque-form-concurso.jpg" />
+            <img class="promocao" src="/portal/images/capaPrograma/cocorico/destaque-concurso_tvcocorico_1ano.jpg" />
            
             <div class="destaque span12" style="position:relative;">
               <span></span>
@@ -275,7 +275,7 @@ $(function(){
           <div class="regras">
             <p> 1. Participação:</p> <br>
             <p>Este é um programa de caráter exclusivamente cultural, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. A participação é aberta a crianças representadas por seus pais ou responsáveis legais.</p>
-            <p>Para participar, o interessado (com autorização de pais ou responsáveis) deve enviar um desenho com uma bicicleta. Não há restrições temáticas, desde que o desenho seja livre de preconceitos, palavras obscenas ou conteúdo inadequado ao público infantil.</p>
+            <p>Para participar, o interessado (com autorização de pais ou responsáveis) deve enviar um desenho comemorativo do aniversário de 1 (um) ano do programa TV Cocoricó. Não há restrições temáticas, desde que o desenho seja livre de preconceitos, palavras obscenas ou conteúdo inadequado ao público infantil.</p>
             <p>1.1 Os desenhos deverão ser enviados acompanhados dos seguintes dados pessoais do responsável legal da criança: nome, email e endereço.</p>
             <p> 2. Critérios de Seleção:</p> <br>
             <p>2.1 A seleção dos desenhos serão feita pela equipe de Produção do Cocoricó e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação à faixa etária.</p>
