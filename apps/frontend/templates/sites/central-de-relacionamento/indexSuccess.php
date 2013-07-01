@@ -20,8 +20,8 @@ $(document).ready(function(){
       <?php if(isset($displays['chamada'])):?>
         <?php if(count($displays['chamada']) > 0): ?>
           <?php foreach($displays['chamada'] as $k=>$d): ?>
-            <h1><?php echo $d->getTitle() ?></h1>
-            <h3><?php echo $d->getDescription() ?></h3>
+            <h1><?php echo $d->Asset->getTitle() ?></h1>
+            <h3><?php echo $d->Asset->getDescription() ?></h3>
             <?php echo html_entity_decode($d->Asset->AssetContent->getContent()) ?>
             <br/> 
             <a href="/perguntas-frequentes" class="btn btn-success btn-large btn-block mais-info" title="Perguntas Frequentes">
