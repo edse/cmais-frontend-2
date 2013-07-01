@@ -3,3 +3,6 @@
 #esquerda hr { visibility:visible; margin-bottom:40px; }
 .box-interna p a { color:#ff6633; }
 .box-interna h3 a:hover { text-decoration:none; color:#ff6633; }
+#barra-site h2 { margin-top:15px; }
+#barra-site #horario { width:190px; margin-top:25px; }
+#barra-site .redes { margin-top:40px; }

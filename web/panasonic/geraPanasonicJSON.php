@@ -2,7 +2,8 @@
 error_reporting(E_ALL);
 ini_set('display_errors','On');
 //LE JSON GERAL
-$jsonurl = "http://172.20.1.127/sony/panasonic.json";
+//$jsonurl = "http://172.20.1.127/sony/panasonic.json";
+$jsonurl = "http://tvconectada.cmais.com.br/panasonic/panasonic.json";
 $json = file_get_contents($jsonurl);
 $json_output = json_decode($json);
 
