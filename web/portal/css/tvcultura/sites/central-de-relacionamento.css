@@ -1,4 +1,5 @@
 /* GERAL */
+.container {min-height: 199px;}
 .container.content .col-equerda h1{text-transform: uppercase;}
 .mais-info{ font-size:16px; padding:15px;color:#FFFFFF !important; text-decoration:none !important; text-transform: uppercase; letter-spacing: 0.12em;}
 .linha{border-top:1px solid #acacac; margin: 0 0 20px 0;}
