@@ -210,13 +210,13 @@ $(function(){
             </div>
             <div class="row-fluid">
               <i class="ico-tv ico-contato"></i>
-              <input type="text" class="span11 pull-left" name="email" placeholder="E-mail para contato"/>
+              <input type="text" class="span11 pull-left" name="email"  data-default="E-mail para contato" value="E-mail para contato" id="email"/>
             </div>
             <div class="row-fluid cidade">
               <i class="ico-tv ico-cidade"></i>
               
               <div class="span9">
-                <input type="text" name="cidade" class="span12" placeholder="Sua cidade"/>
+                <input type="text" name="cidade" class="span12" data-default="Sua cidade" value="Sua cidade" id="cidade"/>
               </div>
               <div class="span2 estado">
                 <select id="estado" name="estado" class="span12 required">
@@ -506,11 +506,15 @@ $(document).ready(function(){
           minlength: 2
         },
         email:{
-          required: true,
+          required:function(){
+            validate('#email');
+            },
           email: true
         },
         cidade:{
-          required: true,
+          required:function(){
+            validate('#cidade');
+            },
           minlength: 3
         },
         datafile:{
@@ -527,7 +531,6 @@ $(document).ready(function(){
         nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
         email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
         cidade: "Este campo &eacute; Obrigat&oacute;rio.",
-        link: "Este campo &eacute; Obrigat&oacute;rio.",
         datafile: {
           accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
           filesize: "O arquivo não pode ser maior que 15MB"
