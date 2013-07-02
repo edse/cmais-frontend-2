@@ -206,7 +206,7 @@ $(function(){
             
             <div class="row-fluid">
               <i class="ico-tv ico-pessoa"></i>
-              <input type="text" class="span11 pull-left" name="nome" data-default="Seu nome" value="Seu nome" />
+              <input type="text" class="span11 pull-left" name="nome" data-default="Seu nome" value="Seu nome" id="nome"/>
             </div>
             <div class="row-fluid">
               <i class="ico-tv ico-contato"></i>
@@ -501,7 +501,7 @@ $(document).ready(function(){
       rules:{
         nome:{
           required:function(){
-            validate('#compositor-1');
+            validate('#nome');
             },
           minlength: 2
         },
