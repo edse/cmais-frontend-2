@@ -213,6 +213,10 @@ destaque_home.free = function(){
 }
 
 destaque_home.show_hide_info_video = function() {
+  if(video_controls_container.play_or_pause.bg.src == "imagens/icone-pause.png"){
+   video_player.player.pause();
+   video_controls_container.play_or_pause.bg.src = "imagens/icone-play.png"
+  }
   if(cont_info.visible_p == false){
     cont_info.visible_p = true; 
     logo.translate = [-772,423,6.1]; 
@@ -401,6 +405,7 @@ video_player.playback = function(url_video_player) {
   this.player.set_movie(url_video_player);
   //video_player.player.set_buffering_type();
   this.player.play();  
+  video_controls_container.play_or_pause.bg.src = "imagens/icone-pause.png";
 };
 video_player.pause_or_resume = function() {
   if (this.player.state != this.player.STAT_PAUSE){
@@ -409,7 +414,7 @@ video_player.pause_or_resume = function() {
   }else{
     this.player.play();  
     video_controls_container.play_or_pause.bg.src = "imagens/icone-pause.png";    
-  }    
+  }
 };
 video_player.skip = function(){
   var time_to_end = video_player.player.duration/1000 - video_player.player.elapsed/1000;
@@ -935,6 +940,10 @@ btn_cont.leave_focus = function() {
 };
 
 btn_cont.show_hide_info_video = function() {
+  if(video_controls_container.play_or_pause.bg.src == "imagens/icone-pause.png"){
+   video_player.player.pause();
+   video_controls_container.play_or_pause.bg.src = "imagens/icone-play.png"
+  }
   if(cont_info.visible_p == false){
     cont_info.visible_p = true; 
     logo.translate = [-772,423,6.1]; 
@@ -1108,7 +1117,7 @@ video_controls_container.create = function() {
   this.components = [
     //new video_item({ src: "imagens/icone-stop.png", text: "",  translate:[-220, 0,0], action: function() { video_player.stop();}}),
     new video_item({ src: "imagens/icone-back-skip.png", text: "", translate:[-220, 0,0],  action: function() { video_player.back_skip();}}),
-    this.play_or_pause = new video_item({ src: "imagens/icone-pause.png", text: "",  translate:[  -100, 0,0],  action: function() { video_player.pause_or_resume();}}),
+    this.play_or_pause = new video_item({ src: "imagens/icone-play.png", text: "",  translate:[  -100, 0,0],  action: function() { video_player.pause_or_resume();}}),
     new video_item({ src: "imagens/icone-skip.png", text: "", translate:[20, 0,0],  action: function() { video_player.skip();}}),
     new video_item({ src: "imagens/icone-full.png", text: "", translate:[140, 0,0],  action: function() { full_screen();}}),
   ];

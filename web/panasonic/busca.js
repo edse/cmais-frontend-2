@@ -869,7 +869,8 @@ video_player.playback = function(url_video_player) {
   this.player.connect(VideoDev, AudioDev);
   this.player.set_movie(url_video_player);
   //this.player.set_buffering_type(1,1);
-  this.player.play();  
+  this.player.play();
+  video_controls_container.play_or_pause.bg.src = "imagens/icone-pause.png"  
   //force_redraw();
 };
 video_player.pause_or_resume = function() {
