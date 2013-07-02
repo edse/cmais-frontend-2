@@ -2,13 +2,13 @@
 include("../includes/functions.php");
 
 $current_time = date("Y-m-d H:i:s", time()); 
-$expiration_time = "2013-06-30 00:00:00";
+$expiration_time = "2013-07-30 00:00:00";
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
     if ($current_time < $expiration_time) {
     
-      $to = "jedoljak@gmail.com"; 
+      $to = "tvcocorico@gmail.com"; 
       //$to = "maiscriancatvcultura@gmail.com";
       $email = strip_tags($_REQUEST['email']);
       $name = strip_tags($_REQUEST['nome']);

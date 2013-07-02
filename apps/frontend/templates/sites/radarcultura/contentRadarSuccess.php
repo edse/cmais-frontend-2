@@ -57,6 +57,17 @@
           <!--col esquerda-->
           <div class="span4 direita">
             <link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+            
+              <?php
+                $playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
+                if(count($playlist) > 0) {
+                  $related_audios = $playlist[0]->retriveRelatedAssetsByAssetTypeId(4);
+                }
+                else {
+                  $related_audios = $asset->retriveRelatedAssetsByAssetTypeId(4);
+                }
+              ?>
+              <?php if(count($related_audios) > 0): ?>
             <script type="text/javascript" src="/portal/js/audioplayer/js/jquery.jplayer.min.js"></script>
             <script type="text/javascript">
               //<![CDATA[
@@ -185,16 +196,16 @@
               };
               
               <?php
-                $playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
-                $audios = $playlist[0]->retriveRelatedAssetsByAssetTypeId(4);
+                //$playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
+                //$audios = $playlist[0]->retriveRelatedAssetsByAssetTypeId(4);
               ?>
               var audioPlaylist = new Playlist("1",
               [
-                <?php foreach($audios as $k=>$d): ?>
+                <?php foreach($related_audios as $k=>$d): ?>
                 {
                   name:"<?php echo $d->getTitle(); ?>",
                   mp3:"/uploads/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile(); ?>"
-                }<?php if($k < (count($audios) - 1)): ?>,<?php endif;?>
+                }<?php if($k < (count($related_audios) - 1)): ?>,<?php endif;?>
                 
                 <?php endforeach; ?>
               ],
@@ -218,6 +229,7 @@
             });
             //]]>
           </script>
+          
           
             <div id="jquery_jplayer_1" class="jp-jplayer"></div>
             <div class="jp-audio">
@@ -251,6 +263,8 @@
                 </div>
               </div>
             </div>
+            
+            <?php endif; ?>
 
             <div class="banner-radio">
               <script type='text/javascript'>

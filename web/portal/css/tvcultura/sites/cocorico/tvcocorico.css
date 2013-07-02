@@ -64,15 +64,16 @@
 .interatividade .form-campos .cidade label.error,
 .interatividade .form-campos .estado label.error{margin:0 0 10px 0;}
 .interatividade .form-campos label.error.checked{display:none !important;}
-.interatividade .form-campos label.error { position: absolute;bottom: -40px;left: 0; }
+.interatividade .form-campos label.error { position: absolute;bottom: -113px;left: 0; }
 .interatividade .form-campos .ico-tv{background: url(/portal/images/capaPrograma/cocorico/ico-form-tv.png) no-repeat; width:27px; height:21px; display: block; float:left;margin:4px 10px 0 0;}
 .interatividade .form-campos .ico-pessoa{background-position: 0 top; }
-.interatividade .form-campos .ico-cidade{background-position: 0 -29px; }
+.interatividade .form-campos .ico-cidade{background-position: 0 -57px; }
 .interatividade .form-campos .ico-link{background-position: bottom; }
 .interatividade .form-campos .ico-responsavel {background-position: 0 -82px; }
 .interatividade .form-campos .ico-email {background-position: 0 -109px; }
-.interatividade .form-campos .ico-bike {background-position: 0 -133px; }
+.interatividade .form-campos .ico-bike {background-position: 0 -86px; }
 .interatividade .form-campos .ico-coracao {background-position: 0 -155px;}
+.interatividade .form-campos .ico-contato{background-position: 0 -30px;}
 .interatividade .form-campos .row-fluid .span9 { margin-left:0; }
 .interatividade .form-campos .radio { color:#fff; margin-bottom:0; }
 .interatividade .form-campos .radio input { margin-top:0; }
