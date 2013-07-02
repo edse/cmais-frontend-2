@@ -272,18 +272,21 @@ $(function(){
           <div class="regras">
             <p> 1. Participação:</p> <br>
             <p>Este é um programa de caráter exclusivamente cultural, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. A participação é aberta a crianças representadas por seus pais ou responsáveis legais.</p>
-            <p>Para participar, o interessado (com autorização de pais ou responsáveis) deve enviar um desenho com uma bicicleta. Não há restrições temáticas, desde que o desenho seja livre de preconceitos, palavras obscenas ou conteúdo inadequado ao público infantil.</p>
-            <p>1.1 Os desenhos deverão ser enviados acompanhados dos seguintes dados pessoais do responsável legal da criança: nome, email e endereço.</p>
-            <p> 2. Critérios de Seleção:</p> <br>
-            <p>2.1 A seleção dos desenhos serão feita pela equipe de Produção do Cocoricó e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação à faixa etária.</p>
+            <p>Para participar, o interessado (com autorização de pais ou responsáveis) deve enviar um desenho comemorativo do aniversário de 1 (um) ano do programa TV Cocoricó. Não há restrições temáticas, desde que o desenho seja livre de preconceitos, palavras obscenas ou conteúdo inadequado ao público infantil.</p>
+            <p>1.1 Os desenhos deverão ser enviados acompanhados dos seguintes dados pessoais do responsável legal da criança: nome, email e endereço.</p><br>
+            <p>2. Critérios de Seleção:</p><br>
+             
+            <p>2.1 A seleção dos desenhos será feita pelas equipes de Produção Multimídia e do Cocoricó e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação à faixa etária.</p>
             <p>2.2 Serão desconsiderados os desenhos com dados incorretos; os que fujam da adequação à faixa etária (público infantil); que tenham conteúdo inadequado.</p>
-            <p>2.3 Cada criança poderá participar enviando quantos desenhos desejar.</p>
-            <p>  3. Considerações Gerais:</p> <br>
-            <p>3.1 Os participantes representados por seus pais ou responsáveis legais, declaram, desde já, a autorização de seu nome e cidade onde moram para publicação na programação da TV Cultura e transferem à Fundação Padre Anchieta Centro Paulista de Rádio e TV Educativas, sem qualquer ônus para esta e, em caráter definitivo, plena e totalmente, todos os direitos autorais sobre o referido trabalho, para qualquer tipo de utilização, publicação, reprodução por qualquer meio ou técnica, especialmente na divulgação do resultado.</p> 
+            <p>2.3 Cada criança poderá participar enviando quantos desenhos desejar.</p><br>
+            <p>3. Considerações Gerais:</p><br>
+             
+            <p>3.1 Os participantes representados por seus pais ou responsáveis legais, declaram, desde já, a autorização de seu nome e cidade onde moram para publicação na programação da TV Cultura e transferem à Fundação Padre Anchieta Centro Paulista de Rádio e TV Educativas, sem qualquer ônus para esta e, em caráter definitivo, plena e totalmente, todos os direitos autorais sobre o referido trabalho, para qualquer tipo de utilização, publicação, reprodução por qualquer meio ou técnica, especialmente na divulgação do resultado.</p>
             <p>3.2 A FPA não aceitará qualquer desenho que contenha exposição de pessoas em situações vexatórias, incitando o preconceito, violência e que contenham apelo sexual ou ao consumismo exacerbado.</p>
             <p>3.3 Quaisquer dúvidas, divergências ou situações não previstas neste regulamento serão apreciadas e decididas pela Produção do Cocoricó referida no item 2.1 deste Regulamento.</p>
             <p>3.4 A simples participação neste evento de incentivo à criatividade implica no total conhecimento e aceitação irrestrita deste regulamento.</p>
-            <p>3.5 Os desenhos serão publicados no site <a href="http://cocorico.com.br">cocorico.com.br</a> e os melhores poderão ser exibidos na programação da TV Cultura.</p>
+            <p>3.5 Os desenhos serão publicados no site cocorico.com.br e os melhores poderão ser exibidos na programação da TV Cultura.</p>
+            
           </div> 
           <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           
