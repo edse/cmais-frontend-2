@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
   <head>
-
+    <script>
+      window.onload = function() { 
+        if(screen.width<=480){
+          $('head').prepend('<meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no">')
+        }else{
+          $('head').prepend('<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">')
+        }
+      } 
+      
+      </script>
     
     <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
      
@@ -80,16 +89,7 @@
       })();
     </script>
     
-      <script>
-      window.onload = function() { 
-        if(screen.width<=480){
-          $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=1, user-scalable=no">')
-        }else{
-          $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">')
-        }
-      } 
       
-      </script>
 
   </head>
   <body>
