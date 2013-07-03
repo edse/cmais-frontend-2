@@ -74,6 +74,8 @@ and (max-width : 1224px)
 .filtro .span2 p .sprite-seta-down { display: block; }
 .filtro .filtro-personagem li { width:10.5%; height:10.5%;}
 /*#content section { max-width:990px; }*/
+.topo-vila .nav li { float:left;}  
+.navbar-inverse .navbar-inner.topo-vila .nav-collapse { width: 80%;} 
 
 }
 
