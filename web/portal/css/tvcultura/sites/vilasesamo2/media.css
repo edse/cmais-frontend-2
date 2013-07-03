@@ -76,7 +76,7 @@ and (max-width : 1224px)
 /*#content section { max-width:990px; }*/
 .topo-vila .nav li { float:left;}  
 .navbar-inverse .navbar-inner.topo-vila .nav-collapse { width: 85%;} 
-footer .mapa .col-central { margin-right:-1%; }
+footer .mapa .col-central { width:25%; }
 
 }
 
