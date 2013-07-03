@@ -48,7 +48,7 @@
 .icon-star-empty { background: url(/portal/images/capaPrograma/cocorico/ico-estrela.png) no-repeat; }
 
 
-.enquete.span12 { background: url(/portal/images/capaPrograma/cocorico/divisoria-tvcoco.png) repeat-x 0 -6px; margin-left:0;  }
+.enquete.span12 { background: url(/portal/images/capaPrograma/cocorico/divisoria-tvcoco.png) repeat-x 0 -6px; margin-left:0; display:none; }
 .conteudo .enquete h3 { text-transform:uppercase; font-size: 20px;  margin:15px 0 0 0; background:url(/portal/images/capaPrograma/cocorico/ico-ok.png) no-repeat 10px 11px; padding-left:35px; color:#fff;  }
 .enquete p { margin:0 10px 0 10px; color:#fff; }
 .enquete form.span12 { position:relative; overflow:hidden; margin-left:0;  }
