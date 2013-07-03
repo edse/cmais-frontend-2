@@ -83,7 +83,7 @@
       <script>
       window.onload = function() { 
         if(screen.width<=480){
-          $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=1, user-scalable=no">')
+          $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no">')
         }else{
           $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">')
         }
@@ -104,7 +104,7 @@
       <div class="navbar-inner topo-vila">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <i class="sprite-seta-up-menu"></i>
+            <i class="sprite-seta-down-menu"></i>
             <h1>Menu</h1>
             
           </button>
