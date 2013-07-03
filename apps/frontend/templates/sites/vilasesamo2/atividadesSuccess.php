@@ -5,7 +5,7 @@
 </script>
 
 <!-- HEADER -->
-<?php include_partial_from_folder('sites/vila-sesamo', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+<?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
 <div id="content">
   <section class="scroll row-fluid">
@@ -26,34 +26,34 @@
         <div class="tab-content">
           <div class="tab-pane active" id="clipes" class="aba1">
             <article class="span6 clipes">
-              <a class="img-destaque" href="/vila-sesamo/atividades" title="Para Colorir">
+              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
                 <span class="sprite-selo">Novidade!</span>
                 <img src="/portal/images/capaPrograma/vila-sesamo/img350x350.jpg" alt="Para Colorir" /> 
               </a> 
-              <h1><a href="/vila-sesamo/atividades" title="Para Colorir">Para Colorir</a></h1>
+              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
             </article>
             <article class="span6 clipes">
-              <a class="img-destaque" href="/vila-sesamo/atividades" title="Para Colorir">
+              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
                 <span class="sprite-selo">Novidade!</span>
                 <img src="/portal/images/capaPrograma/vila-sesamo/img350x350.jpg" alt="Para Colorir" /> 
               </a> 
-              <h1><a href="/vila-sesamo/atividades" title="Para Colorir">Para Colorir</a></h1>
+              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
             </article>
           </div>
           <div class="tab-pane" id="episodios">
             <article class="span6 clipes">
-              <a class="img-destaque" href="/vila-sesamo/atividades" title="Para Colorir">
+              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
                 <span class="sprite-selo">Novidade!</span>
                 <img src="/portal/images/capaPrograma/vila-sesamo/img350x350.jpg" alt="Para Colorir" /> 
               </a> 
-              <h1><a href="/vila-sesamo/atividades" title="Para Colorir">Para Colorir 2</a></h1>
+              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
             </article>
             <article class="span6 clipes">
-              <a class="img-destaque" href="/vila-sesamo/atividades" title="Para Colorir">
+              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
                 <span class="sprite-selo">Novidade!</span>
                 <img src="/portal/images/capaPrograma/vila-sesamo/img350x350.jpg" alt="Para Colorir" /> 
               </a> 
-              <h1><a href="/vila-sesamo/atividades" title="Para Colorir">Para Colorir 2</a></h1>
+              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
             </article>
           </div>
           

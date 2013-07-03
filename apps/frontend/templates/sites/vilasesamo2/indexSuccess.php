@@ -1,5 +1,5 @@
 
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vila-sesamo/home.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
 <script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
 <link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
 
@@ -9,29 +9,29 @@
 <div id="content">
     <!-- HEADER -->
   <?php
-  include_partial_from_folder('sites/vila-sesamo', 'global/mobile_detect'); 
+  include_partial_from_folder('sites/vilasesamo2', 'global/mobile_detect'); 
   $detect = new Mobile_Detect(); 
   if ($detect->isTablet()) {
       // Any tablet device. 
       
       //banner           
-      include_partial_from_folder('sites/vila-sesamo', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
-      include_partial_from_folder('sites/vila-sesamo', 'global/bannerprincipal');
+      include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
+      include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal');
       
     }else if($detect->isMobile()){
       // Any mobile device. 
       
       //banner
-      include_partial_from_folder('sites/vila-sesamo', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
-      include_partial_from_folder('sites/vila-sesamo', 'global/bannerprincipalmobile');  
+      include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
+      include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipalmobile');  
       
     }else{
       // Any desktop
       
       //banner 
-      include_partial_from_folder('sites/vila-sesamo', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
-      include_partial_from_folder('sites/vila-sesamo', 'global/bannerprincipal'); 
-      include_partial_from_folder('sites/vila-sesamo', 'global/bannerprincipalmobile');  
+      include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
+      include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal'); 
+      include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipalmobile');  
     }
    ?>
   <!-- /HEADER -->

@@ -7,7 +7,7 @@
 
 </script>
 <!-- HEADER -->
-<?php include_partial_from_folder('sites/vila-sesamo', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
+<?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
 ?>
 <!-- /HEADER -->
 <div id="content">
@@ -26,7 +26,7 @@
   </section>
   <section class="relacionados">
     <h2>Jogos relacionados com:</h2>
-    <p><a href="/vila-sesamo/elmo" alt="Elmo">Elmo</a>, <a href="/vila-sesamo/elmo" alt="Elmo">Elmo</a>, <a href="/vila-sesamo/elmo" alt="Elmo">Elmo</a>, <a href="/vila-sesamo/elmo" alt="Elmo">Elmo</a></p>
+    <p><a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a>, <a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a>, <a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a>, <a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a></p>
     <a class="todos-assets"><i class="sprite-btn-voltar-atividades"></i><p>todos os jogos</p></a>
     <br />
     <h1>CARROSSEL RELACIONADOS - JEFFERSON</h1>

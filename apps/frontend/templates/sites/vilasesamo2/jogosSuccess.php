@@ -6,13 +6,13 @@
 </script>
 
 <!-- HEADER -->
-<?php include_partial_from_folder('sites/vila-sesamo', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+<?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
 <div id="content">
   <section class="filtro row-fluid">
     <div class="span12">
       <?php
-        include_partial_from_folder('sites/vila-sesamo', 'global/mobile_detect'); 
+        include_partial_from_folder('sites/vilasesamo2', 'global/mobile_detect'); 
         $detect = new Mobile_Detect(); 
         if ($detect->isTablet() || $detect->isMobile()) {
             // Any tablet device.
@@ -43,18 +43,18 @@
       
       <div class="span10 destaque-filtro">
         <article class="span6 atividade">
-          <a class="img-destaque" href="/vila-sesamo/atividades" title="Para Colorir">
+          <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
             <span class="sprite-selo">Novidade!</span>
             <img src="/portal/images/capaPrograma/vila-sesamo/img350x350.jpg" alt="Para Colorir" /> 
           </a> 
-          <h1><a href="/vila-sesamo/atividades" title="Para Colorir">Para Colorir</a></h1>
+          <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
         </article>
         <article class="span6 atividade">
-          <a class="img-destaque" href="/vila-sesamo/atividades" title="Para Colorir"> 
+          <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir"> 
             <span class="sprite-selo">Novidade!</span>
             <img src="/portal/images/capaPrograma/vila-sesamo/img350x350.jpg" alt="Para Colorir" /> 
           </a>
-          <h1><a href="/vila-sesamo/atividades" title="Para Colorir">Para Colorir</a></h1>
+          <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
         </article>
       </div>
       <nav class="span2">
