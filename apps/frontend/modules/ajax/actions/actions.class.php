@@ -52,7 +52,7 @@ class ajaxActions extends sfActions
               ->orderBy('s.date_start asc')
               ->execute();
           }
-          /*
+          
           if(count($schedules)>0) {
             foreach($schedules as $s) {
               $d = substr($s->date_start, 8,2);
@@ -63,7 +63,8 @@ class ajaxActions extends sfActions
               }
             }
           }
-          */
+          
+         /*
           if(count($schedules)>0) {
             foreach($schedules as $s) {
               //$d = substr($s->date_start, 8,2);
@@ -79,6 +80,7 @@ class ajaxActions extends sfActions
               }
             }
           }
+          */
           echo json_encode($output);
         }
         elseif($request->getParameter('channel_id') > 0){
