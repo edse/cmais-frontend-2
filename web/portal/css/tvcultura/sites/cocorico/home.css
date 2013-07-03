@@ -36,7 +36,7 @@
 .destaque-home.receitinhas .box ul a { background:#F2722F; }
 /* /destaque home */
 .tvcoco .ajax-loader{margin: 5px auto;width:17px;}
-.tvcoco.span12  { background:#1db186; overflow:hidden; margin:-50px 0 0 0; padding-top:50px; }
+.tvcoco.span12  { background:#1db186; overflow:hidden; margin:-50px 0 0 0; padding-top:50px; position:relative; }
 .logo { display: block; position:relative; z-index: 10; }
 .tvcoco .btn-programacao{width: 100%;display: block;font-size: 14px;text-align: center; background: url(/portal/images/capaPrograma/cocorico/tvcocorico-btn-confira.jpg) no-repeat;line-height: 28px;text-decoration: none;padding-left: 13px;color: #747a39;}
 .tvcoco { position:relative; }
@@ -44,7 +44,7 @@
 .tvcoco h2 i { margin:0 10px; }
 .convidado.span12 { background:#bfd540; color:#747b3a; display: block; margin:0; text-align:center;  }
 .convidado.span12:hover { text-decoration:none; }
-.tvcoco .mais { background:red; width: 36px; height:36px; position:absolute; bottom:291px; right:0;  background:url(/portal/images/capaPrograma/cocorico/mais.png) -72px 0 no-repeat; }
+.tvcoco .mais { background:red; width: 36px; height:36px; position:absolute; top:270px; right:0;  background:url(/portal/images/capaPrograma/cocorico/mais.png) -72px 0 no-repeat; }
 .icon-star-empty { background: url(/portal/images/capaPrograma/cocorico/ico-estrela.png) no-repeat; }
 
 
