@@ -51,51 +51,51 @@
         <div class="header-carrossel-personagens">
           <span class="topo-p"></span>
           <i class="sprite-icon-personagens-peq"></i>
-          <h3><a href="/vila-sesamo/personagens">Personagens</a></h3>
+          <h3><a href="/vilasesamo2/personagens">Personagens</a></h3>
           
           <div class="slider-mask-wrap">
             <div class="slider-mask">
               <ul class="slider-target">
                 <li>
                   <div class="inner personagens">
-                    <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                      <img src="/portal/images/capaPrograma/vila-sesamo/botoes-carrossel/bel_personagem.png" alt="Personagem" />
+                    <a href="/vilasesamo2/beto" title="Bel" class="btn-bel">
+                      <img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="Personagem" />
                     </a>
                   </div>
                 </li>
                 <li>
                   <div class="inner personagens">
-                    <a href="/vila-sesamo/beto" title="Beto" class="btn-beto"><img src="/portal/images/capaPrograma/vila-sesamo/botoes-carrossel/beto_personagem.png" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/beto" title="Beto" class="btn-beto"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/beto_personagem.png" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner personagens">
-                    <a href="/vila-sesamo/beto" title="Come-come" class="btn-comecome"><img src="/portal/images/capaPrograma/vila-sesamo/botoes-carrossel/comecome_personagem.png" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/beto" title="Come-come" class="btn-comecome"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/comecome_personagem.png" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner personagens">
-                    <a href="/vila-sesamo/beto" title="Elmo" class="btn-elmo"><img src="/portal/images/capaPrograma/vila-sesamo/botoes-carrossel/elmo_personagem.png" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/beto" title="Elmo" class="btn-elmo"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/elmo_personagem.png" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner personagens">
-                    <a href="/vila-sesamo/beto" title="Enio" class="btn-enio"><img src="/portal/images/capaPrograma/vila-sesamo/botoes-carrossel/enio_personagem.png" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/beto" title="Enio" class="btn-enio"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/enio_personagem.png" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner personagens">
-                    <a href="/vila-sesamo/beto" title="Garibaldo" class="btn-garibaldo"><img src="/portal/images/capaPrograma/vila-sesamo/botoes-carrossel/garibaldo_personagem.png" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/beto" title="Garibaldo" class="btn-garibaldo"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/garibaldo_personagem.png" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner personagens">
-                    <a href="/vila-sesamo/beto" title="Grover" class="btn-grover"><img src="/portal/images/capaPrograma/vila-sesamo/botoes-carrossel/grover_personagem.png" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/beto" title="Grover" class="btn-grover"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/grover_personagem.png" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner personagens">
-                    <a href="/vila-sesamo/beto" title="Zoe" class="btn-zoe"><img src="/portal/images/capaPrograma/vila-sesamo/botoes-carrossel/zoe_personagem.png" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/beto" title="Zoe" class="btn-zoe"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/zoe_personagem.png" alt="Personagem" /></a>
                   </div>
                 </li>
                 
@@ -121,27 +121,27 @@
     <div class="destaques row-fluid container">
     <section class="span8">
       <article class="span6 jogo">
-        <a href="/vila-sesamo/jogos" title="Jogo">
-          <img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="Jogos" />
+        <a href="/vilasesamo2/jogos" title="Jogo">
+          <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" />
         </a> 
-        <h3><a href="/vila-sesamo/jogos" title="Jogos"><i class="sprite-icon-jogos-grd"></i>Jogo</a></h3>       
+        <h3><a href="/vilasesamo2/jogos" title="Jogos"><i class="sprite-icon-jogos-grd"></i>Jogo</a></h3>       
       </article>
       <article class="span6 video">
-        <a href="/vila-sesamo/clipes" title="Clipes">
-          <img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="Clipes" />
+        <a href="/vilasesamo2/clipes" title="Clipes">
+          <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Clipes" />
         </a> 
-        <h3><a href="/vila-sesamo/clipes" title="Clipes"><i class="sprite-icon-clipes-grd"></i>Clipe</a></h3>       
+        <h3><a href="/vilasesamo2/clipes" title="Clipes"><i class="sprite-icon-clipes-grd"></i>Clipe</a></h3>       
       </article>
       <article class="span6 atividade">
-        <a href="/vila-sesamo/atividades" title="Para Colorir">
-          <img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="Para Colorir" />
+        <a href="/vilasesamo2/atividades" title="Para Colorir">
+          <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Para Colorir" />
         </a> 
-        <h3><a href="/vila-sesamo/atividades" title="Para Colorir"><i class="sprite-icon-colorir-grd"></i>Para Colorir</a></h3>       
+        <h3><a href="/vilasesamo2/atividades" title="Para Colorir"><i class="sprite-icon-colorir-grd"></i>Para Colorir</a></h3>       
       </article>
     
     </section>
     <div class="span4 banner" >
-      <a href="#" title=""><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a>
+      <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
     </div>
     </div>
   </section>

@@ -1,6 +1,6 @@
 body { background:#0172f9; }
 .header-bar ul { margin:12px 0 0 0; }
-.header-bar { position:fixed; background: url(/portal/images/capaPrograma/vila-sesamo/pattern-menu-interna.jpg) repeat-x; height:86px; top:86px; width: 100%; max-width:100%; }
+.header-bar { position:fixed; background: url(/portal/images/capaPrograma/vilasesamo2/pattern-menu-interna.jpg) repeat-x; height:86px; top:86px; width: 100%; max-width:100%; }
 .header-bar .content { max-width:980px; margin:0 auto; }
 .header-bar h1 { /*background:#fff; height:76px;*/ margin:5px 0 0 0; /*width:25%;*/ }
 .header-bar h1 a { float:left; /*width:100%;*/ }
@@ -128,7 +128,7 @@ body { background:#0172f9; }
 .interna.videos .destaque-filtro.especial li { background:#fba500; }
 .interna.videos .destaque-filtro.especial li a { color:#fba500; }
 .interna.videos .interna.videos .destaque-filtro.especial li a { color:#fba500; }
-.interna.videos .destaque-filtro.especial li a { background: url(/portal/images/capaPrograma/vila-sesamo/pattern-diagonal.png) repeat-x; color:#fff;}
+.interna.videos .destaque-filtro.especial li a { background: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal.png) repeat-x; color:#fff;}
 .interna.videos .destaque-filtro.especial li.active a { background:#fff; color:#fba500; border:none; font-size: 25px; }
 .interna.videos .destaque-filtro.especial li.active { background:#fff; }
 .interna.videos #content .scroll h3 { border-color:#F27300; }
@@ -157,7 +157,7 @@ body { background:#0172f9; }
 .interna.atividades .destaque-filtro.especial li { background:#b16af2; }
 .interna.atividades .destaque-filtro.especial li a { color:#fba500; }
 .interna.atividades .interna.videos .destaque-filtro.especial li a { color:#fba500; }
-.interna.atividades .destaque-filtro.especial li a { background: url(/portal/images/capaPrograma/vila-sesamo/pattern-diagonal-atividades.png) repeat-x; color:#fff;}
+.interna.atividades .destaque-filtro.especial li a { background: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png) repeat-x; color:#fff;}
 .interna.atividades .destaque-filtro.especial li.active a { background:#fff; color:#883feb; border:none; }
 .interna.atividades .destaque-filtro.especial li.active { background:#fff; }
 .interna.atividades #content .scroll h3 { border-color:#7732E5; }

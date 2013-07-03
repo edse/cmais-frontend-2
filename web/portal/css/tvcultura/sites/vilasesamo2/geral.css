@@ -113,7 +113,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-seta-down,
 .sprite-seta-esquerda,
 .sprite-seta-up-menu,
-.sprite-seta-up { background-image:url(/portal/images/capaPrograma/vila-sesamo/sprite-setas.png); }
+.sprite-seta-up { background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png); }
 .sprite-btn-voltar-atividades{ background-position: 0 0; width: 32px; height: 49px; } 
 .sprite-btn-voltar-jogos{ background-position: 0 -99px; width: 32px; height: 49px; } 
 .sprite-btn-voltar-videos{ background-position: 0 -198px; width: 32px; height: 49px; } 
@@ -150,7 +150,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-logo-sesamo-interna,
 .sprite-logo-sesamo-peq,
 .sprite-logo-sesamo, 
-.sprite-rodape-incluir { background-image:url(/portal/images/capaPrograma/vila-sesamo/sprite-logos.png); }
+.sprite-rodape-incluir { background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-logos.png); }
 .sprite-logo-cartaozinho{ background-position: 0 0; width: 68px; height: 69px; } 
 .sprite-logo-castelo{ background-position: 0 -119px; width: 85px; height: 62px; } 
 .sprite-logo-cmais{ background-position: 0 -231px; width: 93px; height: 22px; } 
@@ -173,7 +173,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-aspa-direita,
 .sprite-aspa-esquerda,
 .sprite-menu-ball,
-.sprite-selo { background-image:url(/portal/images/capaPrograma/vila-sesamo/sprite-detalhes.png);} 
+.sprite-selo { background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-detalhes.png);} 
 .sprite-aspa-direita{ background-position: 0 0; width: 37px; height: 30px; } 
 .sprite-aspa-esquerda{ background-position: 0 -80px; width: 37px; height: 30px; } 
 .sprite-menu-ball{ background-position: 0 -160px; width: 7px; height: 7px; } 
@@ -204,7 +204,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-icon-personagens-grd,
 .sprite-icon-personagens-med,
 .sprite-icon-personagens-peq,
-.sprite-icon-videos-med{background-image:url(/portal/images/capaPrograma/vila-sesamo/sprite-botoes.png); } 
+.sprite-icon-videos-med{background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-botoes.png); } 
 .sprite-btn-atividades{ background-position: 0 0; width: 60px; height: 60px; } 
 .sprite-btn-jogos{ background-position: 0 -110px; width: 60px; height: 60px; } 
 .sprite-btn-personagens{ background-position: 0 -220px; width: 60px; height: 60px; } 
@@ -235,7 +235,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 
 
 /* topo cmais*/
-.navbar-inverse .navbar-inner.topo-cmais {  background:url(/portal/images/capaPrograma/vila-sesamo/bg-cmais.jpg) repeat-x !important;  height:37px; }
+.navbar-inverse .navbar-inner.topo-cmais {  background:url(/portal/images/capaPrograma/vilasesamo2/bg-cmais.jpg) repeat-x !important;  height:37px; }
 .navbar-inverse .navbar-inner.topo-cmais .container { height:37px; overflow:hidden; }
 .navbar-inverse .navbar-inner.topo-cmais h1, 
 .navbar-inverse .navbar-inner.topo-cmais h2 { float:left; margin:0; padding:0; } 
@@ -249,7 +249,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* topo cmais*/
 
 /* topo vila */
-.navbar-inverse .navbar-inner.topo-vila { background:url(/portal/images/capaPrograma/vila-sesamo/bg-topo-vila.jpg) repeat-x; height:51px; margin-top:-3px; z-index: 0; position:relative; }
+.navbar-inverse .navbar-inner.topo-vila { background:url(/portal/images/capaPrograma/vilasesamo2/bg-topo-vila.jpg) repeat-x; height:51px; margin-top:-3px; z-index: 0; position:relative; }
 .navbar-inverse .navbar-inner.topo-vila .nav-collapse { float:left; width:88%; margin-left:2%; }
 .topo-vila .container { height:51px; }
 .topo-vila h2 { width: 83px; display: block; margin:8px 0 0 10px; float:left;}
@@ -304,7 +304,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques .tipoD { background:#eee; }
 .destaques .banner a img,
 .destaques .banner a { display: block; width:100% }
-.divisa { display: block; width: 100%; background:url(/portal/images/capaPrograma/vila-sesamo/pattern-divisa.png) repeat-x; height:2px; max-width:940px; margin:0 auto 20px; }
+.divisa { display: block; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-divisa.png) repeat-x; height:2px; max-width:940px; margin:0 auto 20px; }
 .bgtotal { width:100%; max-width:100% !important; background:#fee133; padding-top:20px; }
 .destaques section .span6 { width:31.6%; overflow:hidden; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
 .destaques section .span6 img { border-top:2px solid #0191fb; }
@@ -335,7 +335,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* /top menu*/
 
 /* footer*/
-footer { background:#fffb49 url(/portal/images/capaPrograma/vila-sesamo/pattern-copyright.jpg) repeat-x; position:relative;}
+footer { background:#fffb49 url(/portal/images/capaPrograma/vilasesamo2/pattern-copyright.jpg) repeat-x; position:relative;}
 footer .copyright {height:30px;}
 footer .copyright small { max-width:940px; margin:0 auto; display:block; font-size:14px; text-transform:uppercase; height: 25px; line-height:25px; }
 footer a {display:block;}

@@ -10,7 +10,7 @@
   ?>
   <nav class="header-bar">
     <div class="content">
-      <h1><a href="<?php echo $site->retriveUrl(); ?>" class="<?php echo $classLogo; ?>" title="Vila Sésamo"><img src="/portal/images/capaPrograma/vila-sesamo/logo-vila-menu.png" alt="Vila Sésamo" /></a>
+      <h1><a href="<?php echo $site->retriveUrl(); ?>" class="<?php echo $classLogo; ?>" title="Vila Sésamo"><img src="/portal/images/capaPrograma/vilasesamo2/logo-vila-menu.png" alt="Vila Sésamo" /></a>
         <?php /*echo $border*/ ?>
       </h1>
       <ul>

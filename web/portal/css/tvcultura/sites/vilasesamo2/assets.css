@@ -1,7 +1,7 @@
 /*assets */
 .todos-assets { float:right;  }
 .todos-assets i { float:left; margin-right:0 !important; }
-.todos-assets p { background: url(/portal/images/capaPrograma/vila-sesamo/pattern-diagonal-jogos.png) repeat; float:left; margin:0 !important; margin-left:-15px !important; height:49px; line-height:49px; padding:0 10px; color: #FFFFFF;    font-size: 25px;    font-weight: normal;    text-transform: uppercase; }
+.todos-assets p { background: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-jogos.png) repeat; float:left; margin:0 !important; margin-left:-15px !important; height:49px; line-height:49px; padding:0 10px; color: #FFFFFF;    font-size: 25px;    font-weight: normal;    text-transform: uppercase; }
 #content .filtro { border-bottom:none; margin-bottom:0; }
 #content .filtro h3 { padding-right:0; }
 .conteudo-asset { padding:10px 20px 20px; background:#fff; }
@@ -29,7 +29,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .pais .content i { float:left; }
 .pais .content .sprite-aspa-esquerda { margin-right:10px; }
 .pais .content .sprite-aspa-direita { float:right; }
-.pais .content .dica { background:url(/portal/images/capaPrograma/vila-sesamo/pattern-diagonal-amarelo.png) repeat; padding:1%; }
+.pais .content .dica { background:url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-amarelo.png) repeat; padding:1%; }
 .pais .content .span4 { margin-top:20px !important; }
 
 .pais .btn-group { width: 100%; }
@@ -84,13 +84,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 /* /assets */
 
 /* atividades*/
-.interna.atividades .todos-assets p { background-image: url(/portal/images/capaPrograma/vila-sesamo/pattern-diagonal-atividades.png); }
+.interna.atividades .todos-assets p { background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png); }
 .interna.atividades .conteudo-asset h2 { color:#883feb; }
 .interna.atividades #content .relacionados {background:#b16af2; border-color:#b16af2;}
 /* /atividades*/
 
 /* videos */
-.interna.videos .todos-assets p { background-image: url(/portal/images/capaPrograma/vila-sesamo/pattern-diagonal-videos.png); }
+.interna.videos .todos-assets p { background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-videos.png); }
 .interna.videos .conteudo-asset h2 { color:#f27300; }
 .interna.videos #content .relacionados {background:#fba500; border-color:#fba500;}
 /* /videos */

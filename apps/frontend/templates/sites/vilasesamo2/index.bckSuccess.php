@@ -2,7 +2,7 @@
 <link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style.css"/>
 <div id="content">
   <nav class="header-bar">
-    <h1><a href="/vila-sesamo" class="sprite-logo-sesamo" title="Vila Sésamo">Vila Sésamo</a></h1>
+    <h1><a href="/vilasesamo2" class="sprite-logo-sesamo" title="Vila Sésamo">Vila Sésamo</a></h1>
     <style>
     
       /* menu site */
@@ -27,7 +27,7 @@
     </style>
     <ul>
       <li class="btn-jogos" data-width="160">
-        <a href="/vila-sesamo/jogos" title="Jogos">
+        <a href="/vilasesamo2/jogos" title="Jogos">
           <span class="texto">Jogos</span>
           <i class="sprite-btn-jogos"></i>
           <span class="fundo fundo-jogos"></span>
@@ -35,7 +35,7 @@
         </a>
       </li>
       <li class="btn-videos" data-width="170">
-        <a href="/vila-sesamo/videos"  title="Vídeos">
+        <a href="/vilasesamo2/videos"  title="Vídeos">
           <span class="texto">Vídeos</span>
           <i class="sprite-btn-videos"></i>
           <span class="fundo fundo-videos"></span>
@@ -43,7 +43,7 @@
         </a>
       </li>
       <li class="btn-atividades" data-width="225">
-        <a href="/vila-sesamo/atividades"  title="Atividades">
+        <a href="/vilasesamo2/atividades"  title="Atividades">
           <span class="texto">Atividades</span>
           <i class="sprite-btn-atividades"></i>
           <span class="fundo fundo-atividades"></span>
@@ -51,7 +51,7 @@
         </a>
      </li>
       <li class="btn-personagens" data-width="260">
-        <a href="/vila-sesamo/personagens"  title="Personagens">
+        <a href="/vilasesamo2/personagens"  title="Personagens">
           <span class="texto">Personagens</span>
           <i class="sprite-btn-personagens"></i>
           <span class="fundo fundo-personagens"></span>
@@ -75,49 +75,49 @@
         <div class="header-carrossel-personagens">
           <span class="topo-p"></span>
           <i class="sprite-icon-personagens-peq"></i>
-          <h3><a href="/vila-sesamo/personagens">Personagens</a></h3>
+          <h3><a href="/vilasesamo2/personagens">Personagens</a></h3>
           
           <div class="slider-mask-wrap">
             <div class="slider-mask">
               <ul class="slider-target">
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/beto" title="Beto"><img src="/portal/images/capaPrograma/vilasesamo2/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/beto" title="Beto"><img src="/portal/images/capaPrograma/vilasesamo2/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/beto" title="Beto"><img src="/portal/images/capaPrograma/vilasesamo2/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/beto" title="Beto"><img src="/portal/images/capaPrograma/vilasesamo2/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/beto" title="Beto"><img src="/portal/images/capaPrograma/vilasesamo2/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/beto" title="Beto"><img src="/portal/images/capaPrograma/vilasesamo2/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/beto" title="Beto"><img src="/portal/images/capaPrograma/vilasesamo2/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/beto" title="Beto"><img src="/portal/images/capaPrograma/vilasesamo2/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 
@@ -143,27 +143,27 @@
     <div class="destaques row-fluid container">
     <section class="span8">
       <article class="span6 jogo">
-        <a href="/vila-sesamo/jogos" title="Jogo">
-          <img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="Jogos" />
+        <a href="/vilasesamo2/jogos" title="Jogo">
+          <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" />
         </a> 
-        <h3><a href="/vila-sesamo/jogos" title="Jogos"><i class="sprite-icon-jogos-grd"></i>Jogo</a></h3>       
+        <h3><a href="/vilasesamo2/jogos" title="Jogos"><i class="sprite-icon-jogos-grd"></i>Jogo</a></h3>       
       </article>
       <article class="span6 video">
-        <a href="/vila-sesamo/clipes" title="Clipes">
-          <img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="Clipes" />
+        <a href="/vilasesamo2/clipes" title="Clipes">
+          <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Clipes" />
         </a> 
-        <h3><a href="/vila-sesamo/clipes" title="Clipes"><i class="sprite-icon-clipes-grd"></i>Clipe</a></h3>       
+        <h3><a href="/vilasesamo2/clipes" title="Clipes"><i class="sprite-icon-clipes-grd"></i>Clipe</a></h3>       
       </article>
       <article class="span6 atividade">
-        <a href="/vila-sesamo/atividades" title="Para Colorir">
-          <img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="Para Colorir" />
+        <a href="/vilasesamo2/atividades" title="Para Colorir">
+          <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Para Colorir" />
         </a> 
-        <h3><a href="/vila-sesamo/atividades" title="Para Colorir"><i class="sprite-icon-colorir-grd"></i>Para Colorir</a></h3>       
+        <h3><a href="/vilasesamo2/atividades" title="Para Colorir"><i class="sprite-icon-colorir-grd"></i>Para Colorir</a></h3>       
       </article>
     
     </section>
     <div class="span4 banner" >
-      <a href="#" title=""><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a>
+      <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
     </div>
     </div>
   </section>

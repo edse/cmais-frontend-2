@@ -1,7 +1,7 @@
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vila-sesamo/internas.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vila-sesamo/assets.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 <script>
   $("body").addClass("interna atividades");
 
@@ -20,7 +20,7 @@
       <h2>nome do jogo</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat massa, ullamcorper sit amet elementum sed, sollicitudin non massa. Mauris ante tortor, feugiat quis dolor id, congue pharetra nisl. Maecenas suscipit eu diam et pellentesque. Morbi fermentum libero ac diam tristique, in egestas lectus rhoncus. Proin ut pellentesque massa. Morbi metus.</p>
       <div class="asset">
-        <img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" />
+        <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" />
       </div>
     </div>
   </section>
@@ -49,7 +49,7 @@
         <i class="sprite-aspa-direita"></i>
       </div>
       <div class="span4">
-        <a href="#" title=""> <img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /> </a>
+        <a href="#" title=""> <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /> </a>
         <h2><a>Nome jogo</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend.</p>
       </div>

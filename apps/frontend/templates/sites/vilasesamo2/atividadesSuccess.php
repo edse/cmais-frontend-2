@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vila-sesamo/internas.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <script>
   $("body").addClass("interna atividades");
@@ -28,14 +28,14 @@
             <article class="span6 clipes">
               <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
                 <span class="sprite-selo">Novidade!</span>
-                <img src="/portal/images/capaPrograma/vila-sesamo/img350x350.jpg" alt="Para Colorir" /> 
+                <img src="/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
               </a> 
               <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
             </article>
             <article class="span6 clipes">
               <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
                 <span class="sprite-selo">Novidade!</span>
-                <img src="/portal/images/capaPrograma/vila-sesamo/img350x350.jpg" alt="Para Colorir" /> 
+                <img src="/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
               </a> 
               <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
             </article>
@@ -44,14 +44,14 @@
             <article class="span6 clipes">
               <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
                 <span class="sprite-selo">Novidade!</span>
-                <img src="/portal/images/capaPrograma/vila-sesamo/img350x350.jpg" alt="Para Colorir" /> 
+                <img src="/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
               </a> 
               <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
             </article>
             <article class="span6 clipes">
               <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
                 <span class="sprite-selo">Novidade!</span>
-                <img src="/portal/images/capaPrograma/vila-sesamo/img350x350.jpg" alt="Para Colorir" /> 
+                <img src="/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
               </a> 
               <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
             </article>
@@ -65,14 +65,14 @@
       <nav class="span2">
         <p>escolha o jogo por personagem<span class="sprite-seta-down"></span></p>
         <ul class="filtro-personagem">
-          <li><a href="#" title="" data-filter=".bel"><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a></li>
-          <li><a href="#" title="" data-filter=".beto"><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a></li>
-          <li><a href="#" title="" data-filter=".come-come"><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a></li>
-          <li><a href="#" title="" data-filter=".elmo"><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a></li>
-          <li><a href="#" title="" data-filter=".enio"><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a></li>
-          <li><a href="#" title="" data-filter=".garibaldo"><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a></li>
-          <li><a href="#" title="" data-filter=".grover"><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a></li>
-          <li><a href="#" title="" data-filter=".zoe"><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a></li>
+          <li><a href="#" title="" data-filter=".bel"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
+          <li><a href="#" title="" data-filter=".beto"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
+          <li><a href="#" title="" data-filter=".come-come"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
+          <li><a href="#" title="" data-filter=".elmo"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
+          <li><a href="#" title="" data-filter=".enio"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
+          <li><a href="#" title="" data-filter=".garibaldo"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
+          <li><a href="#" title="" data-filter=".grover"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
+          <li><a href="#" title="" data-filter=".zoe"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
           
         </ul>
       </nav> 
@@ -83,39 +83,39 @@
   <section class="todos-itens ">
     <ul  id="container" class="row-fluid">
       <li class="span4 element beto">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a>
+        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
       <li class="span4 element come-come">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a>
+        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
       <li class="span4 element elmo">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a>
+        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
       <li class="span4 element enio">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a>
+        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
       <li class="span4 element enio">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a>
+        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
       <li class="element span4 garibaldo">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a>
+        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
       <li class="element span4 grover">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a>
+        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
       <li class="element span4 zoe">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a>
+        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
       <li class="span4 element bel">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a>
+        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
     </ul>
@@ -126,10 +126,10 @@
 
 <input type="hidden" id="filter-choice" value="">
 <nav id="page_nav">
-  <a href="/testes/vila-sesamo/pages/2.html" class="mais"><i class="sprite-icon-mais"></i>Carregar mais jogos</a>
+  <a href="/testes/vilasesamo2/pages/2.html" class="mais"><i class="sprite-icon-mais"></i>Carregar mais jogos</a>
 </nav>
 <!--scripts-->
 
 <script src="/portal/js/isotope/jquery.isotope.min.js"></script>
 <script src="/portal/js/isotope/jquery.infinitescroll.min.js"></script>
-<script src="/portal/js/vila-sesamo/internas-isotope.js"></script>
+<script src="/portal/js/vilasesamo2/internas-isotope.js"></script>

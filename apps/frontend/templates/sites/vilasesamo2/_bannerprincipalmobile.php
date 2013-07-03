@@ -7,22 +7,22 @@
             <ul class="slider-target">
               <li>
                 <div class="inner">
-                  <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                    <img src="/portal/images/capaPrograma/vila-sesamo/vs_1-home_m-w640.png" alt="Personagem" />
+                  <a href="/vilasesamo2/beto" title="Bel" class="btn-bel">
+                    <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
                   </a>
                 </div>
               </li>
               <li>
                 <div class="inner">
-                  <a href="/vila-sesamo/beto" title="Beto" class="btn-beto">
-                    <img src="/portal/images/capaPrograma/vila-sesamo/vs_1-home_m-w640.png" alt="Personagem" />
+                  <a href="/vilasesamo2/beto" title="Beto" class="btn-beto">
+                    <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
                   </a>
                 </div>
               </li>
               <li>
                 <div class="inner">
-                  <a href="/vila-sesamo/beto" title="Come-come" class="btn-comecome">
-                    <img src="/portal/images/capaPrograma/vila-sesamo/vs_1-home_m-w640.png" alt="Personagem" />
+                  <a href="/vilasesamo2/beto" title="Come-come" class="btn-comecome">
+                    <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
                   </a>
                 </div>
               </li>

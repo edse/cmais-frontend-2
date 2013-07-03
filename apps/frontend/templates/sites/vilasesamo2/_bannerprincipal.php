@@ -6,7 +6,7 @@
       <ul>
 
         <!--item-->
-        <li class="slide01" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vila-sesamo/banner/1/img_pattern-banner-topo.jpg') repeat;">
+        <li class="slide01" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img_pattern-banner-topo.jpg') repeat;">
           <div class="mpc_ls_slide_background total" data-style="scale">
             <a href="#" class="total"></a>
           </div>
@@ -14,10 +14,10 @@
             <h2>Para <br> colorir</h2>
           </div>
           <div class="mpc_ls_slide_item" data-x="350" data-y="120" data-delay="2000" data-duration="500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">
-            <img src="/portal/images/capaPrograma/vila-sesamo/banner/1/img_personagem_banner-topo.png">
+            <img src="/portal/images/capaPrograma/vilasesamo2/banner/1/img_personagem_banner-topo.png">
           </div>
           <div class="mpc_ls_slide_item" data-x="180" data-y="340" data-delay="2000" data-duration="500" data-easing="easeOutElastic" data-effect="slideLeft" data-fade="on">
-            <img src="/portal/images/capaPrograma/vila-sesamo/banner/1/img_objeto_banner-topo.png">
+            <img src="/portal/images/capaPrograma/vilasesamo2/banner/1/img_objeto_banner-topo.png">
           </div>
           <div class="mpc_ls_slide_item total">
             <a href="#" class="total"></a>
