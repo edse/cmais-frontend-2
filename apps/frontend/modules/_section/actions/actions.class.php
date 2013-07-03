@@ -84,7 +84,7 @@ class _sectionActions extends sfActions
 	  if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
         $this->setLayout('responsivo');
       }
-      if(in_array($this->section->Site->getSlug(), array("vila-sesamo","vilasesamo"))) {
+      if(in_array($this->section->Site->getSlug(), array("vila-sesamo","vilasesamo", "vilasesamo2"))) {
         $this->setLayout('vilasesamo');   
       }      
       if(in_array($this->section->Site->getSlug(), array("cocorico2","cocorico"))) {
