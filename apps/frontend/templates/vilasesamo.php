@@ -104,7 +104,7 @@
       <div class="navbar-inner topo-vila">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <i class="sprite-seta-down-menu"></i>
+            <i class="sprite-seta-up-menu"></i>
             <h1>Menu</h1>
             
           </button>
