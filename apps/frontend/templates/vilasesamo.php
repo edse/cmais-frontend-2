@@ -11,7 +11,7 @@
     <!--script type="text/jscript" src="/portal/js/jquery-1.7.2.min.js"></script-->
     <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet">
     <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/vila-sesamo/geral.css" type="text/css" />
+    <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
     
 
     <script src="/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
@@ -120,15 +120,15 @@
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>
-                <a href="/vila-sesamo/paraospais" title="Para os pais" target="_blank">Para os pais</a>
+                <a href="/vilasesamo2/paraospais" title="Para os pais" target="_blank">Para os pais</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>
-                <a href="/vila-sesamo/natv" title="Na TV" target="_blank">Na TV</a>
+                <a href="/vilasesamo2/natv" title="Na TV" target="_blank">Na TV</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>
-                <a href="/vila-sesamo/historia" title="História" target="_blank">História</a>
+                <a href="/vilasesamo2/historia" title="História" target="_blank">História</a>
               </li>            
             </ul>
             
@@ -149,27 +149,27 @@
       <div class="container row-fluid">
       <section>
         <ul class="logos">
-          <li class="col-esq"><a href="/vila-sesamo" title="Vila Sésamo"><img src="/portal/images/capaPrograma/vila-sesamo/logo-sesamo-peq.png" alt="Vila Sésamo" /></a></li>
-          <li class="col-central"><span class="sprite-destalhe-amarelo2"></span><a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis"><img src="/portal/images/capaPrograma/vila-sesamo/logo-habitos-saudaveis.png" alt="Hábitos Saudáveis" /></a><span class="sprite-destalhe-amarelo1"></span></li>
-          <li class="col-dir"><a href="/vila-sesamo/incluirbrincando" title="Incluir Brincando"><img src="/portal/images/capaPrograma/vila-sesamo/logo-incluir-grd.png" alt="Incluir Brincando" /></a></li>
+          <li class="col-esq"><a href="/vilasesamo2" title="Vila Sésamo"><img src="/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="Vila Sésamo" /></a></li>
+          <li class="col-central"><span class="sprite-destalhe-amarelo2"></span><a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis"><img src="/portal/images/capaPrograma/vilasesamo2/logo-habitos-saudaveis.png" alt="Hábitos Saudáveis" /></a><span class="sprite-destalhe-amarelo1"></span></li>
+          <li class="col-dir"><a href="/vilasesamo2/incluirbrincando" title="Incluir Brincando"><img src="/portal/images/capaPrograma/vilasesamo2/logo-incluir-grd.png" alt="Incluir Brincando" /></a></li>
         </ul>
         <div class="mapa">
-          <a href="/vila-sesamo/jogos" class="span12">Jogos</a>
+          <a href="/vilasesamo2/jogos" class="span12">Jogos</a>
           <div class="span12">
-            <a href="/vila-sesamo/videos" class="col-esq">Vídeos</a>
-            <a href="/vila-sesamo/videos" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Clipes</a>
-            <a href="/vila-sesamo/videos" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>Episódios</a>
+            <a href="/vilasesamo2/videos" class="col-esq">Vídeos</a>
+            <a href="/vilasesamo2/videos" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Clipes</a>
+            <a href="/vilasesamo2/videos" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>Episódios</a>
           </div>
           <div class="span12">
-            <a href="/vila-sesamo/atividades" class="col-esq">Atividades</a>
-            <a href="/vila-sesamo/atividades" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Para Colorir</a>
-            <a href="/vila-sesamo/atividades" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>Para Imprimir</a>
+            <a href="/vilasesamo2/atividades" class="col-esq">Atividades</a>
+            <a href="/vilasesamo2/atividades" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Para Colorir</a>
+            <a href="/vilasesamo2/atividades" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>Para Imprimir</a>
           </div>
-          <a href="/vila-sesamo/personagens" class="span12">Personagens</a>
+          <a href="/vilasesamo2/personagens" class="span12">Personagens</a>
           <div class="span12">
-            <a href="/vila-sesamo/paraospais" class="col-esq">Para os Pais</a>
-            <a href="/vila-sesamo/natv" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
-            <a href="/vila-sesamo/historia" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>História</a>
+            <a href="/vilasesamo2/paraospais" class="col-esq">Para os Pais</a>
+            <a href="/vilasesamo2/natv" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
+            <a href="/vilasesamo2/historia" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>História</a>
           </div>
           
         </div>
@@ -191,7 +191,7 @@
     </footer>
     
     <!-- scripts -->
-    <script type="text/javascript" src="/portal/js/vila-sesamo/vilasesamo.js"></script>
+    <script type="text/javascript" src="/portal/js/vilasesamo2/vilasesamo.js"></script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-22770265-1']);
@@ -223,7 +223,7 @@
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/vila-sesamo/media.css" type="text/css" />
+    <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/media.css" type="text/css" />
        
   </body>
 </html>
