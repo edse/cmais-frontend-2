@@ -31,7 +31,7 @@ $(function(){
       <!-- BARRA SITE --> 
       <div id="barra-site">
       	
-      	<h3 class="tit-pagina">Vídeos</h3>
+      	<h3 class="tit-pagina" style="margin-top:30px;">Vídeos</h3>
       	
        <?php if(isset($program) && $program->id > 0): ?>
                   <div class="topo-programa">
