@@ -65,7 +65,7 @@ class ajaxActions extends sfActions
             }
           }
           
-         /*
+          /*
           if(count($schedules)>0) {
             foreach($schedules as $s) {
               //$d = substr($s->date_start, 8,2);
