@@ -386,7 +386,7 @@ footer .relacionados li.last { margin-right:0; }
 /* /footer*/
 
 /* ie */
-/*
+
 .header-bar h1 { *width:250px; *float:left; }
 .filtro .span2 { *padding:0; *margin:0; *width:170px; *min-width:170px; }
 .filtro .span10 { *max-width:77% }
@@ -395,13 +395,10 @@ footer .relacionados li.last { margin-right:0; }
 footer .logos .col-dir { *width:50%; *margin-left:-8%}
 footer .logos .col-dir a { *margin-left:10%; }
 footer .relacionados li { *margin-right:3% }
-*/
+
 /*
 .filtro .filtro-personagem li { *margin:1% }
-
-
 .todos-itens li { *margin-right:0%; }
-
 */
 /* /ie */
 
