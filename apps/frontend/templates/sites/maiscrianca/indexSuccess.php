@@ -63,6 +63,7 @@ if($feriasSection)
         <?php if($feriasSection): ?>
         <div class="tab-pane fade active in" id="ferias">
           
+          <!--
           <?php if($feriasDisplays['destaque-principal']): ?>
             <?php if(count($feriasDisplays['destaque-principal']) > 0): ?>
           <div class="span12">
@@ -74,9 +75,11 @@ if($feriasSection)
           </div>
             <?php endif; ?>
           <?php endif; ?>
+          <span class="barra"></span>
+          -->
           
           <?php if($feriasDisplays['o-que-e-o-que-e']): ?>
-          <span class="barra"></span>
+         
           
           <div class="span12 oquee">
             <h3><?php echo $feriasDisplays['o-que-e-o-que-e'][0]->Block->getTitle() ?></h3>
