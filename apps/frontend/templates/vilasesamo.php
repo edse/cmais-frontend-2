@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
   <head>
+
+    
     <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+     
+    
     <!-- Le styles -->  
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <!--script type="text/jscript" src="/portal/js/jquery-1.7.2.min.js"></script-->
     <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet">
     <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
-    <script>
-      window.onload = function() { 
-        if(screen.width<=480){
-          $('head').prepend('<meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no">')
-        }else{
-          $('head').prepend('<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">')
-        }
-      } 
-      
-      </script>
+    
 
     <script src="/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
 
@@ -85,7 +80,16 @@
       })();
     </script>
     
+      <script>
+      window.onload = function() { 
+        if(screen.width<=480){
+          $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=1, user-scalable=no">')
+        }else{
+          $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">')
+        }
+      } 
       
+      </script>
 
   </head>
   <body>
@@ -100,7 +104,7 @@
       <div class="navbar-inner topo-vila">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <i class="sprite-seta-up-menu"></i>
+            <i class="sprite-seta-down-menu"></i>
             <h1>Menu</h1>
             
           </button>
