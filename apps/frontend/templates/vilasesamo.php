@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
   <head>
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <!-- Le styles -->  
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!--script type="text/jscript" src="/portal/js/jquery-1.7.2.min.js"></script-->
+    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
     <script>
       window.onload = function() { 
         if(screen.width<=480){
@@ -11,17 +18,6 @@
       } 
       
       </script>
-    
-    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
-     
-    
-    <!-- Le styles -->  
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <!--script type="text/jscript" src="/portal/js/jquery-1.7.2.min.js"></script-->
-    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
-    
 
     <script src="/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
 
