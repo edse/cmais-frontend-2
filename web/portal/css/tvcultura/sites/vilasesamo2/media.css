@@ -32,14 +32,6 @@ and (max-device-width : 1024px) {
 /* Styles */
 }
 
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) 
-and (orientation : landscape) {
-.destaque-filtro .span6 { width: 47%;} 
-}
-
 
 /* iPads (landscape) ----------- */
 @media only screen 
@@ -131,6 +123,14 @@ and (min-width : 320px)
 and (max-width : 480px) {
 .header-bar,
 .content { padding:0 !important; margin:0 !important;} 
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : landscape) {
+.destaque-filtro .span6 { width: 47%;} 
 }
 
 /* Desktops and laptops ----------- */
