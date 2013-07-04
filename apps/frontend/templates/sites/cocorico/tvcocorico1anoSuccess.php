@@ -40,7 +40,7 @@
     <?php if(isset($displays["destaque-principal"])): ?>
       <?php if(count($displays["destaque-principal"]) > 0): ?>
     <h2><?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></h2>     
-      <img alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-5-b") ?>">
+      <img alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-5-b") ?>" style="float:left;">
       <?php echo (html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent())) ?>
       <p class="grd">Parabéns!!!</p>
       <p class="grd"><span><?php echo $displays["destaque-principal"][0]->getTitle() ?><br/>
