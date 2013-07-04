@@ -103,7 +103,7 @@ and (max-width : 720px)
 /*.interna .header-bar h1 { width: 15%; overflow:hidden; }*/
 .interna .header-bar ul { display: block;    margin-right: 0;   /* width: 85%; */float:right; }
 .interna .header-bar ul:last-child { margin-left:0;} 
-.header-bar h1 {width:15%; float: left;} 
+.header-bar h1 {width:20%; float: left;} 
 .header-bar h1 a { float:none;} 
 
 @media only screen 
