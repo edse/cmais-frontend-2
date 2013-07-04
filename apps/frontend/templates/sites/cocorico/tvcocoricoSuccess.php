@@ -200,7 +200,7 @@ $(function(){
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
           </p-->
-          <p>Solte sua imaginação e desenhe sua magrela. Você pode ganhar uma bicicleta do Júlio!</p>
+          <p><span style="font-weight: bold; color:yellow;">É aniversário do TV Cocoricó!</span> O que vai ter nessa festa? Que presente você gostaria de dar para a turminha? Os recadinhos e desenhos mais criativos irão ganhar um <span style="font-weight: bold; color:yellow;">DVD do Cocoricó!</span></p>
           <div class="row-fluid form-campos">
             
             

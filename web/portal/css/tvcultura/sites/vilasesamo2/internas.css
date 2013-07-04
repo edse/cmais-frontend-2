@@ -1,0 +1,207 @@
+body { background:#0172f9; }
+.header-bar ul { margin:12px 0 0 0; }
+.header-bar { position:fixed; background: url(/portal/images/capaPrograma/vilasesamo2/pattern-menu-interna.jpg) repeat-x; height:86px; top:86px; width: 100%; max-width:100%; }
+.header-bar .content { max-width:980px; margin:0 auto; }
+.header-bar h1 { /*background:#fff; height:76px;*/ margin:5px 0 0 0; /*width:25%;*/ }
+.header-bar h1 a { float:left; /*width:100%;*/ }
+.header-bar h1 i { float:right; }
+#content { top:176px; margin-bottom:200px; }
+#content section { max-width:940px; margin:20px auto; }
+#content h3 { margin:0; font-size:50px; height:56px; line-height: 56px; padding:0 20px; }
+#content h3 i { margin-right:10px;  }
+.mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; max-width:350px; margin:100px auto; display:block; }
+.mais i { float:left; margin-right:15px; }
+.mais:hover { color:#fff; }
+/* filtro personagem */
+.todos-itens li,
+.scroll,
+.filtro { background:#3aaaec; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
+.filtro h3 { border-bottom:2px solid #0191fb; background:#3AAAEC; }
+#content .filtro h3 { padding-top:7px; }
+.filtro .span2 { margin-left:0; background: #ee3021; width:19.14%; padding:0 0.6%;}
+.filtro .span2 p { color:#fff; text-align:center; text-transform:uppercase; margin-top:10px; overflow:hidden; position:relative; }
+.filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
+.filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1778px; top:0; }
+.filtro .span2 ul { background:#d71c0d; border:1px solid #c31408; overflow:hidden; margin-bottom:0; }
+.filtro .span10 { margin-left:0; width:80.86%; float:right; }
+.filtro .span12 { border-top:2px solid #0191fb; border-bottom:2px solid #0191fb; background:#EE3021;  /*border-left:2px solid #0191fb;*/  }
+.filtro .filtro-personagem { margin-left:0; }
+.filtro .filtro-personagem li { float:left; margin:2%; list-style:none;  /*width:75px; height:75px;*/  width:45.6%; /*height:45.6%;*/}
+
+.filtro .filtro-personagem li a { display:block; overflow:hidden; background:#fff;}
+.filtro .filtro-personagem li img { /*width:75px; height:75px;*/  width:100%; -moz-opacity: 0.50;-khtml-opacity: 0.50;opacity: 0.50;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);filter:alpha(opacity=50); }
+/*.filtro .filtro-personagem li:hover img,*/
+.filtro .filtro-personagem li.ativo img{-moz-opacity: 1;-khtml-opacity: 1;opacity: 1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);filter:alpha(opacity=100);}
+/* /filtro personagem*/
+
+/* filtro tag */
+.filtro-tag { float:left; background:#999; margin:0; width: 97%; padding:5px 10px ; }
+.filtro-tag li { float:left; margin-right:5px; }
+.filtro-tag li span { margin-left:5px; }
+/* /filtro tag */
+
+/*scroll*/
+#content .scroll h3 { height:64px; line-height:73px; border-bottom: 2px solid #0191FB; border-top: 2px solid #0191FB; }
+#content .scroll .seta-scroll { float:right; }
+#content .scroll h3 i { margin-top:10px; }
+/* /scroll*/
+
+
+/* destaque filtro */
+.destaque-filtro { background:#fff; padding:10px 10px 0 10px; }
+.destaque-filtro .img-destaque { position:relative; width:100%; display: block;}
+.todos-itens li h2 { border-bottom:2px solid #0191fb;} 
+.todos-itens li h2,
+.destaque-filtro article h1 { margin:0; line-height: 32px; }
+.destaque-filtro a img { border:2px solid transparent; }
+.destaque-filtro .span6:hover a {color:#02cbff;}
+.destaque-filtro .span6:hover a img {border:2px solid #02cbff;}
+.destaque-filtro.especial li a,
+.todos-itens li h2 a, 
+.destaque-filtro article h1 a { font-size: 18px; font-weight:normal; color:#1993f7; text-transform:uppercase; line-height:32px; height:32px; display:block; }
+.destaque-filtro article span { position: absolute; top:10px; right:-2px; color:#00aa52; text-transform:uppercase; font-size:18px; text-align:right; padding:4px 10px 0 0; width:137px;}
+.destaque-filtro .span10 { margin-left:15%; }
+.destaque-filtro.especial { padding:0; }
+.destaque-filtro.especial li.active,
+.destaque-filtro.especial li > a:hover,
+.destaque-filtro.especial li > a:focus,
+.destaque-filtro.especial li.active > a:hover,
+.destaque-filtro.especial li.active > a:focus { border:none;  color:#fff; }
+.destaque-filtro.especial li a { border:none; color:#fff; padding:0 20px; height:24px; line-height:24px; margin:10px 0 0 0;  }
+.destaque-filtro.especial li.active a { font-family:'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif; background:none; }
+
+.destaque-filtro.especial li.active { background:#ffffff; }
+.destaque-filtro.especial li { border-radius:4px 4px 0 0;  -moz-border-radius:4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border:none;  }
+.destaque-filtro.especial .nav { margin-bottom:0; }
+.destaque-filtro.especial .tab-content { background:#fff; padding:20px 10px 0 10px; }
+.destaque-filtro.especial li.active { width: 68%; }
+.destaque-filtro.especial li { width: 31.7%; }
+.destaque-filtro.especial li.aba1 { margin-right:2px; }
+.destaque-filtro.especial .nav-tabs > li { margin-bottom:0; }
+.destaque-filtro .nav-tabs { border:none; }
+
+/* /destaque filtro */
+
+/* todos itens*/
+.todos-itens { margin-top:20px; overflow:hidden; }
+.todos-itens .row-fluid { margin-left:0; }
+.todos-itens .row-fluid { *margin-left:0; }
+.todos-itens #container { margin-left:8px !important;  }
+.todos-itens ul { margin-left:1% !important; } 
+/*.todos-itens li { margin:0 1.7% 2% 0 !important; }*/
+.todos-itens li h2 a { color:#fff; padding:0 10px; }
+.todos-itens li img { border-bottom:2px solid #0191fb; border-top:2px solid #0191fb; width:100%; }
+.todos-itens li:hover img { -moz-opacity: 0.50;-khtml-opacity: 0.50;opacity: 0.50;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);filter:alpha(opacity=50); }
+.todos-itens li a { background:#fff; display:block; }
+.todos-itens li h2 a { background:none; }
+
+
+/* /todos itens*/
+
+/* interna*/
+.interna-content { min-width:900px; min-height:675px; background:#000; clear: both; }
+/*.interna  footer .container { display: none; }*/
+
+/* /interna*/
+
+/* videos*/
+.interna.videos { background:#f36701; }
+.interna.videos #content .filtro h3 i { margin-top:3px; }
+.interna.videos .todos-itens li,
+.interna.videos .filtro,
+.interna.videos .scroll { border-color:#fba500; }
+.interna.videos .filtro h3,
+.interna.videos .filtro .span2,
+.interna.videos .todos-itens li img,
+.interna.videos .todos-itens li h2,
+.interna.videos .filtro .span12 { border-color:#f27300; }
+.interna.videos .todos-itens li,
+.interna.videos .filtro,
+.interna.videos .filtro h3,
+.interna.videos .scroll {background:#f78701;}
+.interna.videos .todos-itens li h2 a { color:#fff;}
+.interna.videos .destaque-filtro article h1 a { color:#f27300;}
+.interna.videos .destaque-filtro .span6:hover a {color:#fba500;}
+.interna.videos .destaque-filtro .span6:hover a img {border:2px solid #fba500;}
+.interna.videos .filtro .span2 { border-top-color:#f27300 !important; }
+.interna.videos .destaque-filtro.especial { background:#f27300; }
+.interna.videos .destaque-filtro.especial li { background:#fba500; }
+.interna.videos .destaque-filtro.especial li a { color:#fba500; }
+.interna.videos .interna.videos .destaque-filtro.especial li a { color:#fba500; }
+.interna.videos .destaque-filtro.especial li a { background: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal.png) repeat-x; color:#fff;}
+.interna.videos .destaque-filtro.especial li.active a { background:#fff; color:#fba500; border:none; font-size: 25px; }
+.interna.videos .destaque-filtro.especial li.active { background:#fff; }
+.interna.videos #content .scroll h3 { border-color:#F27300; }
+/* videos*/
+
+/* atividades*/
+.interna.atividades { background:#571ed9; }
+.interna.atividades .todos-itens li,
+.interna.atividades .scroll,
+.interna.atividades .filtro { border-color:#b16af2; }
+.interna.atividades .filtro h3,
+.interna.atividades .filtro .span2,
+.interna.atividades .todos-itens li img,
+.interna.atividades .todos-itens li h2,
+.interna.atividades .filtro .span12 { border-color:#7732e5; }
+.interna.atividades .todos-itens li,
+.interna.atividades .filtro,
+.interna.atividades .filtro h3,
+.interna.atividades .scroll {background:#883feb;}
+.interna.atividades .todos-itens li h2 a { color:#fff;}
+.interna.atividades .destaque-filtro article h1 a { color:#883feb;}
+.interna.atividades .destaque-filtro .span6:hover a {color:#b16af2;}
+.interna.atividades .destaque-filtro .span6:hover a img {border:2px solid #b16af2;}
+.interna.atividades .filtro .span2 { border-top-color:#f27300 !important; }
+.interna.atividades .destaque-filtro.especial { background:#7732e5; }
+.interna.atividades .destaque-filtro.especial li { background:#b16af2; }
+.interna.atividades .destaque-filtro.especial li a { color:#fba500; }
+.interna.atividades .interna.videos .destaque-filtro.especial li a { color:#fba500; }
+.interna.atividades .destaque-filtro.especial li a { background: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png) repeat-x; color:#fff;}
+.interna.atividades .destaque-filtro.especial li.active a { background:#fff; color:#883feb; border:none; }
+.interna.atividades .destaque-filtro.especial li.active { background:#fff; }
+.interna.atividades #content .scroll h3 { border-color:#7732E5; }
+
+/* atividades*/
+
+/*smint*/
+.barra-topo{position:absolute; top:60px;margin:0!important;}
+.barra-topo a{width:100%; height:100%;z-index:99999; background:red;}
+
+/* isotope*/
+.todos-itens ul { margin:0!important;  }
+.span4 { margin:6px!important; }
+.element { overflow:hidden; -webkit-border-top-right-radius: 1.2em; -moz-border-radius-topright: 1.2em; border-top-right-radius: 1.2em; }
+.element.bel{background:pink;}
+.element.beto{background:yellow;}
+.element.come-come{background:blue;}
+.element.elmo{background:red;}
+.element.enio{background:orange;}
+.element.garibaldo{background:#565656;}
+.element.grover{background:#455433;}
+.element.zoe{background:#644543;}
+
+/**** Isotope Filtering ****/
+.isotope-item { z-index: 2;}
+.isotope-hidden.isotope-item { pointer-events: none; z-index: 1;}
+
+/**** Isotope CSS3 transitions ****/
+.isotope,
+.isotope .isotope-item { -webkit-transition-duration: 0.8s; -moz-transition-duration: 0.8s; -ms-transition-duration: 0.8s; -o-transition-duration: 0.8s; transition-duration: 0.8s;}
+.isotope {  -webkit-transition-property: height, width;     -moz-transition-property: height, width;      -ms-transition-property: height, width;       -o-transition-property: height, width;          transition-property: height, width;}
+.isotope .isotope-item {  -webkit-transition-property: -webkit-transform, opacity;     -moz-transition-property:    -moz-transform, opacity;      -ms-transition-property:     -ms-transform, opacity;       -o-transition-property:      -o-transform, opacity;          transition-property:         transform, opacity;}
+ /**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {  -webkit-transition-duration: 0s;     -moz-transition-duration: 0s;      -ms-transition-duration: 0s;       -o-transition-duration: 0s;          transition-duration: 0s;}
+/**** Isotope CSS3 transitions ****/
+
+/**** Infinite Scroll ****/
+#infscr-loading {  position: fixed;  text-align: center;  bottom: 30px;  left: 42%;  z-index: 100;  background: white;  background: hsla( 0, 0%, 100%, 0.9 );  padding: 20px;  color: #222;  font-size: 15px;  font-weight: bold;  -webkit-border-radius: 10px;     -moz-border-radius: 10px;          border-radius: 10px;}
+
+/**** Isotope filtering ****/
+.isotope-item {  z-index: 2;}
+.isotope-hidden.isotope-item {  pointer-events: none;  z-index: 1;}
+/* /isotope*/
+
+

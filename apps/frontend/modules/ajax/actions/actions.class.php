@@ -47,12 +47,13 @@ class ajaxActions extends sfActions
               ->select('s.*')
               ->from('Schedule s')
               ->where('s.program_id = ?', (int)$request->getParameter('program_id'))
-              ->andWhere('s.date_start >= ? AND s.date_start < ?', array($year.'-'.$month.'-01 00:00:00', $year.'-'.$month2.'-01 00:00:00'))
+              //->andWhere('s.date_start >= ? AND s.date_start < ?', array($year.'-'.$month.'-01 00:00:00', $year.'-'.$month2.'-01 00:00:00'))
+              ->andWhere('s.date_start >= ? AND s.date_start < ?', array($year.'-'.$month.'-01 04:59:59', $year.'-'.$month2.'-01 05:00:00'))
               ->andWhere('s.channel_id = ?', 1)
               ->orderBy('s.date_start asc')
               ->execute();
           }
-          /*
+          
           if(count($schedules)>0) {
             foreach($schedules as $s) {
               $d = substr($s->date_start, 8,2);
@@ -63,7 +64,8 @@ class ajaxActions extends sfActions
               }
             }
           }
-          */
+          
+          /*
           if(count($schedules)>0) {
             foreach($schedules as $s) {
               //$d = substr($s->date_start, 8,2);
@@ -79,6 +81,7 @@ class ajaxActions extends sfActions
               }
             }
           }
+          */
           echo json_encode($output);
         }
         elseif($request->getParameter('channel_id') > 0){

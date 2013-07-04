@@ -1,0 +1,96 @@
+/*assets */
+.todos-assets { float:right;  }
+.todos-assets i { float:left; margin-right:0 !important; }
+.todos-assets p { background: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-jogos.png) repeat; float:left; margin:0 !important; margin-left:-15px !important; height:49px; line-height:49px; padding:0 10px; color: #FFFFFF;    font-size: 25px;    font-weight: normal;    text-transform: uppercase; }
+#content .filtro { border-bottom:none; margin-bottom:0; }
+#content .filtro h3 { padding-right:0; }
+.conteudo-asset { padding:10px 20px 20px; background:#fff; }
+h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993f7; text-transform:uppercase; }
+.conteudo-asset p { font-size:16px; }
+.conteudo-asset .asset img { width: 100%; }
+#content .relacionados { background:#3aaaec; color:#fff; margin:0 auto; padding:10px 0 10px 10px; max-width:930px; overflow:hidden; position:relative; border-bottom:7px solid #02CBFF; }
+.relacionados h2 { margin:0; color:#fff; }
+.relacionados p {  float:left;}
+.relacionados p a { color:#fff; }
+.relacionados p a:hover { text-decoration:underline; }
+.relacionados .todos-assets  { position:absolute; top:10px; right:0; }
+
+#content .pais { background:#feec3c; margin:0 auto !important; overflow:hidden; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
+.pais .divisa { margin-bottom:0; }
+.pais h2 a,
+.pais h2 {color:#737373; margin:10px;}
+.pais .redes { position:absolute; top:12px; right:0;}
+.pais .content { background:#fee133; margin-left:0; }
+.pais .content .dica h2 { float:left; margin:10px 0 }
+.pais .content h2 a,
+.pais .content h2 { margin:0; }
+.pais .content h2 { margin-top:10px; }
+.pais .content p { font-size: 16px; clear:both; }
+.pais .content i { float:left; }
+.pais .content .sprite-aspa-esquerda { margin-right:10px; }
+.pais .content .sprite-aspa-direita { float:right; }
+.pais .content .dica { background:url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-amarelo.png) repeat; padding:1%; }
+.pais .content .span4 { margin-top:20px !important; }
+
+.pais .btn-group { width: 100%; }
+.pais .dropdown-toggle { width: 96%; }
+.btn-group > .dropdown-menu,
+.btn-group.open .btn.dropdown-toggle,
+.dropdown-menu > li > a,
+.pais .dropdown-toggle { padding:0 2%; text-align:left; float:left; position:relative;  background:#fffb49; color:#737373; border:none; box-shadow: none; }
+.btn-group > .dropdown-menu { padding:0; background:#feec3c; width: 100%; margin-top:-2px; position:absolute;}
+.btn-group > .dropdown-menu a { width:100%; text-transform: uppercase; height: 36px; line-height: 36px;}
+.pais .dropdown-toggle { height:36px; line-height:36px; }
+.dropdown-menu > li { overflow:hidden; margin:1px 1px 0 1px; }
+.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:focus, 
+.dropdown-submenu:hover > a, 
+.dropdown-submenu:focus > a { background:none !important; color:#737373 !important; }
+.dropdown-menu > li:focus,
+.dropdown-menu > li:hover{ 
+*background: rgb(255,251,73);
+background: rgb(255,251,73); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmI0OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZWVjM2MiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  rgba(255,251,73,1) 0%, rgba(254,236,60,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,251,73,1)), color-stop(100%,rgba(254,236,60,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,251,73,1) 0%,rgba(254,236,60,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,251,73,1) 0%,rgba(254,236,60,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,251,73,1) 0%,rgba(254,236,60,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,251,73,1) 0%,rgba(254,236,60,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', endColorstr='#feec3c',GradientType=1 ); /* IE6-8 */
+*background: rgb(255,251,73);
+
+
+}
+
+.pais .btn .caret { position:absolute; top:-5px; right:10px; border:none; } 
+.pais .publicidade { margin-top:20px; display: block; }
+.pais .row-fluid .span4 {  width: 32.05%;}
+.pais .publicidade p { font-family:Arial, Helvetica, sans-serif; font-size:12px; text-transform:uppercase; color:#737373; float:right; }
+.pais .sprite-seta-up,
+.pais .sprite-seta-down { position:absolute; top:-10px; right:0;  cursor:pointer; }
+.pais .sprite-seta-down.inativo { display:none; }
+.pais .linha { width:100%; height:1px; background:#fee133; float:left;  }
+.pais .fechar-toogle {position:relative;  height:36px; line-height: 36px; clear:both; margin:0; display:none;  }
+.pais .sprite-seta-up { top:0; }
+.pais .fechar-toogle.ativo { display:block; }
+/*.pais { position:absolute; right:10px; top:-10px; }*/
+
+/* ie */
+.pais .row-fluid .span4 {  *margin:2px !important;}
+#content .filtro h3 { *position:relative }
+.todos-assets { *position:absolute; *top:7px; *right:0 }
+/* /assets */
+
+/* atividades*/
+.interna.atividades .todos-assets p { background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png); }
+.interna.atividades .conteudo-asset h2 { color:#883feb; }
+.interna.atividades #content .relacionados {background:#b16af2; border-color:#b16af2;}
+/* /atividades*/
+
+/* videos */
+.interna.videos .todos-assets p { background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-videos.png); }
+.interna.videos .conteudo-asset h2 { color:#f27300; }
+.interna.videos #content .relacionados {background:#fba500; border-color:#fba500;}
+/* /videos */
