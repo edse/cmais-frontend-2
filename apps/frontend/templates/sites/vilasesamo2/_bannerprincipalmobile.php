@@ -57,7 +57,7 @@
 <script type="text/javascript" src="/portal/js/hammer.min.js"></script>
 <script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
 <script>
-$('.slider-target li').each(function(i){
+$('#selector-mobile li').each(function(i){
   alert($(this).width());
 });
 
