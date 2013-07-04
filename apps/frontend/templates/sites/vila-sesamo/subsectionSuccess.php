@@ -1,5 +1,7 @@
 <?php
-  $parentSection = Doctrine::getTable('Section')->findOneById((int)$section->getParentSectionId());
+  $parentSection = $section;
+  if($section->getParentSectionId() > 0)
+    $parentSection = Doctrine::getTable('Section')->findOneById((int)$section->getParentSectionId());
 ?>
 
 <?php use_helper('I18N', 'Date') ?>
