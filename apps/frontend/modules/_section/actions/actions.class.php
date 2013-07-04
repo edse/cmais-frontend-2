@@ -88,7 +88,7 @@ class _sectionActions extends sfActions
         $this->setLayout('vilasesamo');
         if($this->section->getSlug() == "videos")
           //if(count($this->section->Children) > 0){
-            $this->section = Doctrine::getTable('Section')->findOneBySlug('episodios');
+            $this->section = Doctrine::getTable('Section')->findOneById(2408);
       }      
       if(in_array($this->section->Site->getSlug(), array("cocorico2","cocorico"))) {
         $this->setLayout('cocorico');   
