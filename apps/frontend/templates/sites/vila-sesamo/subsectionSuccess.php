@@ -65,8 +65,9 @@
        
       </div>
       <?php
-        $sectionPersonagem = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), 'personagem');
-        $personagens = $sectionPersonagem->subsections();
+        $sectionPersonagem = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), 'personagens');
+        if($sectionPersonagem)
+          $personagens = $sectionPersonagem->subsections();
       ?>
       <?php if(isset($personagens)): ?>
         <?php if(count($personagens) > 0): ?>
