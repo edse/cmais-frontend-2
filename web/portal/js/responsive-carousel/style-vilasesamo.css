@@ -64,7 +64,7 @@
 }
 /*carrossel personagens vila sesamo*/
 
-#carrossel-destaque-mobile{background-color:#fee133; width:100%;}
+#carrossel-destaque-mobile{background-color:#fee133; max-width:100%;}
 #carrossel-mobile{max-width: 640px;margin: 0 auto;}
 #carrossel-mobile .slider {position: relative;zoom: 1;}
 #carrossel-mobile .slider-nav {position: absolute;zoom: 1;width: 100%;top: 0;left: 0;}
