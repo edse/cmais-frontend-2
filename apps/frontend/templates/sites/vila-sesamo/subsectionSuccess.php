@@ -20,7 +20,7 @@
       <div class="span10 destaque-filtro especial">
         <?php
           //if($section->getParentSectionId())
-            //$parentSection = Doctrine::getTable('Section')->findOneById($section->getParentSectionId());
+          $parentSection = Doctrine::getTable('Section')->findOneById(2388);
         ?>
         <?php if(isset($parentSection)): ?>
         <?php if($parentSection->subsections()): ?>
