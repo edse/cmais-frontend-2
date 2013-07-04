@@ -19,8 +19,8 @@
       
       <div class="span10 destaque-filtro especial">
         <?php
-          if($section->getParentSectionId())
-            $parentSection = Doctrine::getTable('Section')->findOneById($section->getParentSectionId());
+          //if($section->getParentSectionId())
+            //$parentSection = Doctrine::getTable('Section')->findOneById($section->getParentSectionId());
         ?>
         
         <?php if($parentSection->subsections()): ?>
