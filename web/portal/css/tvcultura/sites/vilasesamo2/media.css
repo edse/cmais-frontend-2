@@ -126,7 +126,7 @@ and (max-width : 480px) {
 .content { padding:0 !important; margin:0 !important;} 
 }
 
-/* iPads (landscape) ----------- */
+
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) 
@@ -135,6 +135,33 @@ and (orientation : landscape) {
 footer .mapa .col-central { width:24.5%; }
 }
 
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 720px) 
+and (orientation : landscape) {
+.navbar .btn-navbar { display:block; }
+.header-bar ul,
+.nav-collapse.collapse,
+.topo-vila h2 { display: none; }
+.header-bar { top:0; z-index: 2000; }
+.navbar .btn-navbar h1 { float:right; font-size: 22px; color:#c6c6c6; text-transform:uppercase; font-weight:normal; margin:0 2% 0 0; text-shadow:none; }
+.navbar .btn-navbar i { float:right; margin-top:10px; }
+.navbar .btn-navbar:hover,
+.navbar .btn-navbar { width:38%; margin-right:4%; }
+.sprite-logo-sesamo { background-position: -415px -214px;    height: 73px;    width: 162px;  }
+.destaques a i { display:none;}
+.destaques h3 { margin:5px 0 0; min-height:55px;   }
+#content h3 a { font-size: 22px; margin:0; text-align:center; }
+.slider .inner { width:104px; height:104px;  }
+#carrossel-personagem .arrow span { margin-top:50%; }
+.interna .header-bar { top:51px; }
+/*.interna .header-bar h1 { width: 15%; overflow:hidden; }*/
+.interna .header-bar ul { display: block;    margin-right: 0;   /* width: 85%; */float:right; }
+.interna .header-bar ul:last-child { margin-left:0;} 
+.header-bar h1 {width:23%; float: left; margin-top:3%;} 
+.header-bar h1 a { float:none;}
+}
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
