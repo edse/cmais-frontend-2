@@ -1,9 +1,13 @@
 <section id="carrossel-destaque-mobile">
   <!--inicio carrossel--> 
   <div id="carrossel-mobile">
+    <!--slider-->
     <div class="slider">
+      <!--slider-mask-wrap-->
       <div class="slider-mask-wrap">
+        <!--slider-mask-->
         <div class="slider-mask">
+          <!--slider-mask-wrap--> 
           <ul class="slider-target">
             <li><div class="inner">One</div></li>
             <li><div class="inner">Two</div></li>
@@ -16,14 +20,19 @@
             <li><div class="inner">Nine</div></li>
             <li><div class="inner">Ten</div></li>
           </ul>
+          <!--slider-mask-->
           <div class="clearit"></div>
         </div>
       </div>
+      <!--slider-mask-wrap--> 
+      <!--slider-nav-->
       <div class="slider-nav">
         <div class="arrow-left arrow"><span title="Back"></span></div>
         <div class="arrow-right arrow"><span title="Next"></span></div>
-      </div>    
+      </div> 
+      <!--slider-nav-->
     </div>
+    <!--/slider-->
   </div>
   <!--/inicio carrossel--> 
   <div>
