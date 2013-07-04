@@ -20,8 +20,10 @@
       <div class="span10 destaque-filtro especial">
         <?php
           //if($section->getParentSectionId())
-            //$parentSection = Doctrine::getTable('Section')->findOneById($section->getParentSectionId());
+          $parentSection = Doctrine::getTable('Section')->findOneById(2388);
+          $subsections = $parentSection->subsections();
         ?>
+        <?php /*
         <?php if(isset($parentSection)): ?>
         <?php if($parentSection->subsections()): ?>
         <ul class="nav nav-tabs" id="myTab">
@@ -32,6 +34,8 @@
         </ul>
         <?php endif; ?>
         <?php endif; ?>
+         */ ?>
+         
  
         <div class="tab-content">
           
