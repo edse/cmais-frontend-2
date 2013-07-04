@@ -542,7 +542,7 @@ message2.set_data = function (text) {
 function carrega_json_programa (programa){
   //var url_json_programa = "http://172.20.16.219/panasonic/geraPanasonicJSON.php?program_id=21";//+programa;
   //var url_json_programa = "http://172.20.16.219/panasonic/geraPanasonicJSON.php?program_id="+programa;
-  var url_json_programa = "http://cmais.com.br/panasonic/geraPanasonicJSON.php?program_id="+programa;
+  var url_json_programa = "http://app.cmais.com.br/panasonic/geraPanasonicJSON.php?program_id="+programa;
   //var url_json_programa = "http://192.168.0.100/sdkapp/video_list.json";
   var json_request1 = {};
    json_request1.request = function(param) {
@@ -1034,7 +1034,7 @@ tela_erro.components = [
 
 //URL DO JSON DOS PROGRAMAS E ACTION INCIAL
 //const URL_JSON_PROGRAMAS = "http://172.20.16.219/panasonic/geraPanasonicJSON.php?program=all";
-const URL_JSON_PROGRAMAS = "http://cmais.com.br/panasonic/geraPanasonicJSON.php?program=all";
+const URL_JSON_PROGRAMAS = "http://app.cmais.com.br/panasonic/geraPanasonicJSON.php?program=all";
 
 var json_request = {};
 json_request.request = function(param) {
