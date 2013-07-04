@@ -72,7 +72,6 @@
 #carrossel-mobile .arrow.disabled {opacity: 0.3;cursor: default;}
 #carrossel-mobile .arrow-left {left: 0;}
 #carrossel-mobile .arrow-right {right: 0;}
-#carrossel-mobile .slider-mask-wrap {margin: 0 48px;}
 #carrossel-mobile .slider-mask {overflow: hidden;position: relative;zoom: 1;}
 #carrossel-mobile .slider-target {width: 2000px;margin: 0 auto;}
 #carrossel-mobile .slider ul {margin: 0;padding: 0;list-style-type: none;}
