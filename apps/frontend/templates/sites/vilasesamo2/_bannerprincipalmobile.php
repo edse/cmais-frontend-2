@@ -44,7 +44,7 @@
       <ul id="selector">
       </ul>
     </div--> 
-    <div class="examples" id="example-2">
+    <div id="carrossel-mobile">
       <div class="slider">
         <div class="slider-mask-wrap">
           <div class="slider-mask">
@@ -70,7 +70,7 @@
       </div>
     </div>
     <div>
-      <ul id="selector">
+      <ul id="selector-mobile">
         <li><a href="#" rel="frame_0"></a></li>
         <li><a href="#" rel="frame_1"></a></li>
         <li><a href="#" rel="frame_2"></a></li>
