@@ -22,6 +22,8 @@
           //if($section->getParentSectionId())
           $parentSection = Doctrine::getTable('Section')->findOneById(2388);
           $subsections = $parentSection->subsections();
+          foreach($subsections as $k=>$s)
+            echo $k;
         ?>
         <?php /*
         <?php if(isset($parentSection)): ?>
