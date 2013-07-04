@@ -107,11 +107,11 @@ and (max-width : 720px)
 .header-bar h1 a { float:none;} 
 .destaque-filtro .span6 { width: 50%; float:left;} 
 .destaque-filtro article h1 { clear:both;} 
+.todos-itens li.span4 { float:left; width:30%;} 
 
 @media only screen 
 and (min-width : 320px) 
 and (max-width : 480px) {
-h1 .sprite-logo-cmais { display:none !important;}
 .header-bar,
 .content { padding:0 !important; margin:0 !important;} 
 }
