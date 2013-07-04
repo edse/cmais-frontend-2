@@ -105,6 +105,9 @@ $(function(){
             <div id="esquerda" class="grid2">
               <div class="contato grid2">
                 <h3 class="tit-pagina grid2"><?php echo $section->getTitle() ?></h3>
+                <p>Inscrições suspensas temporariamente!</p>
+                <?php /*
+                
                 <div id="msgSuccess" style="display:none">
                   <p>Inscrição realizada com sucesso!</p>
                   <div class="bg">
@@ -207,6 +210,10 @@ $(function(){
                   <input class="enviar" type="submit" name="enviar" id="enviar" value="Enviar" style="cursor:pointer" />
                 </form>  
               </div>
+              */ ?>
+              
+              
+              
             </div>
             <!-- /ESQUERDA -->
             

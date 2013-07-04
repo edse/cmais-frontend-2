@@ -21,22 +21,18 @@
         <?php
           //if($section->getParentSectionId())
           $parentSection = Doctrine::getTable('Section')->findOneById(2388);
-          $subsections = $parentSection->subsections();
-          foreach($subsections as $k=>$s)
-            echo $k;
+         // $subsections = $parentSection->subsections();
+          //foreach($subsections as $k=>$s)
+            //echo $k;
         ?>
-        <?php /*
-        <?php if(isset($parentSection)): ?>
         <?php if($parentSection->subsections()): ?>
         <ul class="nav nav-tabs" id="myTab">
-          <?php foreach($parentSection->subsections() as $k=>$s): ?>
-            <?php $k++; ?>
+            <?php foreach($parentSection->subsections() as $k=>$s): ?>
+              <?php $k++; ?>
           <li class="<?php if($s->getId() == $section->getId()): ?>active <?php endif; ?>aba<?php echo $k ?>"><a href="<?php echo $d->retriveUrl() ?>"><?php echo $d->getTitle() ?></a></li>
-          <?php endforeach; ?>
+            <?php endforeach; ?>
         </ul>
         <?php endif; ?>
-        <?php endif; ?>
-         */ ?>
          
  
         <div class="tab-content">
