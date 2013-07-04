@@ -60,7 +60,7 @@
 var total=0;
 $('#selector-mobile li').each(function(i){
   var width = $(this).width();
-  total = width + total + 15; 
+  total = width + total + 10; 
 });
 
 $('#selector-mobile').css('width', total);
