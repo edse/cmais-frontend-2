@@ -206,7 +206,7 @@ tela_erro.components = [
 ];
 
 function carrega_json_programa (palavra){
-  var url_json_programa = "http://cmais.com.br/panasonic/geraPanasonicJSON.php?palavra="+palavra;
+  var url_json_programa = "http://app.cmais.com.br/panasonic/geraPanasonicJSON.php?palavra="+palavra;
   //var url_json_programa = "http://172.20.16.219/panasonic/geraPanasonicJSON.php?palavra="+palavra;
   //var url_json_programa = "http://192.168.0.100/sdkapp/metropolis.json";
   var json_request1 = {};
