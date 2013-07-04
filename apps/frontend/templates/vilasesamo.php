@@ -180,7 +180,7 @@
           <li><a href="#" class="sprite-logo-cultura2"></a></li>
           <li><a href="#" class="sprite-logo-rtb"></a></li>
           <li><a href="#" class="sprite-logo-maiscrianca"></a></li>
-          <li><a href="#" class="sprite-logo-cocorico"></a></li>
+          <li class="cocorico"><a href="#" class="sprite-logo-cocorico"></a></li>
           <li><a href="#" class="sprite-logo-castelo"></a></li>
           <li><a href="#" class="sprite-logo-cartaozinho"></a></li>
           <li class="last"><a href="#" class="sprite-logo-quintal"></a></li>
