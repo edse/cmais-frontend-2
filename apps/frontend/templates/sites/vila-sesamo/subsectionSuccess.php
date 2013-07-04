@@ -24,6 +24,7 @@
       <h3><i class="sprite-icon-<?php echo $parentSection->getSlug() ?>-med"></i><?php echo $parentSection->getTitle() ?></h3>
       
       <div class="span10 destaque-filtro especial">
+        
         <?php if($parentSection->subsections()): ?>
         <ul class="nav nav-tabs">
             <?php foreach($parentSection->subsections() as $k=>$s): ?>
@@ -33,7 +34,6 @@
         </ul>
         <?php endif; ?>
          
- 
         <div class="tab-content">
           
           <div class="tab-pane active">
@@ -64,20 +64,30 @@
         </div>
        
       </div>
+      <?php
+        $sectionPersonagem = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), 'personagens');
+        if($sectionPersonagem)
+          $personagens = $sectionPersonagem->subsections();
+      ?>
+      <?php if(isset($personagens)): ?>
+        <?php if(count($personagens) > 0): ?>
       <nav class="span2">
         <p>escolha o jogo por personagem<span class="sprite-seta-down"></span></p>
         <ul class="filtro-personagem">
-          <li><a href="#" title="" data-filter=".bel"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
-          <li><a href="#" title="" data-filter=".beto"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
+          <?php foreach($personagens as $k=>$p): ?>
+          <li><a href="#" title="<?php echo $p->getTitle() ?>" data-filter=".<?php echo $p->getSlug() ?>"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="<?php echo $p->getTitle() ?>" /></a></li>
+          <?php endforeach; ?>
+          <!--li><a href="#" title="" data-filter=".beto"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
           <li><a href="#" title="" data-filter=".come-come"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
           <li><a href="#" title="" data-filter=".elmo"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
           <li><a href="#" title="" data-filter=".enio"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
           <li><a href="#" title="" data-filter=".garibaldo"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
           <li><a href="#" title="" data-filter=".grover"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
-          <li><a href="#" title="" data-filter=".zoe"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
-          
+          <li><a href="#" title="" data-filter=".zoe"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li-->
         </ul>
-      </nav> 
+      </nav>
+        <?php endif; ?>
+      <?php endif; ?>
     </div>
     
   </section>
