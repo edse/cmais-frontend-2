@@ -48,11 +48,11 @@
 <script>
 $('#carrossel-mobile').responsiveCarousel({
     unitWidth:          'inherit',
-    target:             '#example-2 .slider-target',
-    unitElement:        '#example-2 .slider-target > li',
-    mask:               '#example-2 .slider-mask',
-    arrowLeft:          '#example-2 .arrow-left',
-    arrowRight:         '#example-2 .arrow-right',
+    target:             '#carrossel-mobile .slider-target',
+    unitElement:        '#carrossel-mobile .slider-target > li',
+    mask:               '#carrossel-mobile .slider-mask',
+    arrowLeft:          '#carrossel-mobile .arrow-left',
+    arrowRight:         '#carrossel-mobile .arrow-right',
     dragEvents:         true,
     responsiveUnitSize:function () {
         return 1;
