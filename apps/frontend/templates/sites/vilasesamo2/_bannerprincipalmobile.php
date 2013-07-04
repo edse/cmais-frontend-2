@@ -11,7 +11,7 @@
           <ul class="slider-target">
             <li>
               <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                <img src="/portal/images/capaPrograma/vila-sesamo/vs_1-home_m-w640.png" alt="Personagem" />
+                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
               </a>
             </li>
             <li><div class="inner">Two</div></li>
