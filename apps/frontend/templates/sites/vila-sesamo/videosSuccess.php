@@ -18,11 +18,7 @@
       <h3><i class="sprite-icon-<?php echo $section->getSlug() ?>-med"></i><?php echo $section->getTitle() ?></h3>
       
       <div class="span10 destaque-filtro especial">
-        <?php
-          $parentSection = Doctrine::getTable('Section')->findOneById($section->getParentSectionId());
-        ?>
-        
-        <?php if($parentSection->subsections()): ?>
+        <?php if($section->subsections()): ?>
         <ul class="nav nav-tabs" id="myTab">
           <?php foreach($section->subsections() as $k=>$s): ?>
             <?php $k++; ?>
