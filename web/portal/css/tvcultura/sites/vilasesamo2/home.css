@@ -1,3 +1,6 @@
+.inner{position:relative}
+.inner a{overflow: hidden;width:100%; height:100%;}
+.inner a img{position:absolute; top:0;}
 /* carrossel personagem */
 #carrossel-personagem { margin-bottom:0 !important; }
 #carrossel-personagem .header-carrossel-personagens{position:relative; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;overflow:hidden;}
