@@ -108,6 +108,7 @@ and (max-width : 720px)
 and (min-width : 320px) 
 and (max-width : 480px) {
 .sprite-logo-cmais { display:none;}
+.header-bar,
 .content { padding:0 !important; margin:0 !important;} 
 }
 
