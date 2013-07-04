@@ -18,9 +18,14 @@
       <h3><i class="sprite-icon-<?php echo $section->getSlug() ?>-med"></i><?php echo $section->getTitle() ?></h3>
       
       <div class="span10 destaque-filtro especial">
-        <?php if($section->subsections()): ?>
+        <?php
+          //if($section->getParentSectionId())
+            //$parentSection = Doctrine::getTable('Section')->findOneById($section->getParentSectionId());
+        ?>
+        
+        <?php if($parentSection->subsections()): ?>
         <ul class="nav nav-tabs" id="myTab">
-          <?php foreach($section->subsections() as $k=>$s): ?>
+          <?php foreach($parentSection->subsections() as $k=>$s): ?>
             <?php $k++; ?>
           <li class="<?php if($s->getId() == $section->getId()): ?>active <?php endif; ?>aba<?php echo $k ?>"><a href="<?php echo $d->retriveUrl() ?>"><?php echo $d->getTitle() ?></a></li>
           <?php endforeach; ?>
