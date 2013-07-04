@@ -16,7 +16,7 @@
       <!-- BARRA SITE -->
       <div id="barra-site">
         <div class="topo-programa">
-          <?php if(isset($program) && $program->id > 0): ?>
+          <?php //if(isset($program) && $program->id > 0): ?>
           <h2>
             <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
               <?php if($program->getImageThumb() != ""): ?>
@@ -26,7 +26,7 @@
               <?php endif; ?>
             </a>
           </h2>
-          <?php endif; ?>
+          <?php //endif; ?>
 
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
