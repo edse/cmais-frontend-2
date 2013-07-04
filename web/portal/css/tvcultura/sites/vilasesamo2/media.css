@@ -76,7 +76,9 @@ and (max-width : 1224px)
 /*#content section { max-width:990px; }*/
 .topo-vila .nav li { float:left;}  
 .navbar-inverse .navbar-inner.topo-vila .nav-collapse { width: 85%;} 
-
+.destaque-filtro .span6 { width: 50%; float:left;} 
+.destaque-filtro article h1 { clear:both;} 
+.todos-itens li.span4 { float:left; width:31.4917%;} 
 
 }
 
@@ -105,9 +107,7 @@ and (max-width : 720px)
 .interna .header-bar ul:last-child { margin-left:0;} 
 .header-bar h1 {width:23%; float: left; margin-top:3%;} 
 .header-bar h1 a { float:none;} 
-.destaque-filtro .span6 { width: 50%; float:left;} 
-.destaque-filtro article h1 { clear:both;} 
-.todos-itens li.span4 { float:left; width:30%;} 
+
 
 @media only screen 
 and (min-width : 320px) 
