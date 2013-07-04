@@ -1,6 +1,6 @@
 <?php
   //if($section->getParentSectionId())
-  $section = Doctrine::getTable('Section')->findOneById(2388);
+  $parentSection = Doctrine::getTable('Section')->findOneById(2388);
   //$subsections = $parentSection->subsections();
   //foreach($subsections as $k=>$s)
     //echo $k;
@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <script>
-  $("body").addClass("interna <?php echo $section->getSlug() ?>");
+  $("body").addClass("interna <?php echo $parentSection->getSlug() ?>");
 </script>
 
 <!-- HEADER -->
@@ -19,16 +19,16 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="scroll row-fluid">
-    <h3><i class="sprite-icon-<?php echo $section->getSlug() ?>-med"></i><?php echo $section->getTitle() ?><i class="seta-scroll sprite-scroll-<?php echo $section->getSlug() ?>"></i></h3>
+    <h3><i class="sprite-icon-<?php echo $parentSection->getSlug() ?>-med"></i><?php echo $parentSection->getTitle() ?><i class="seta-scroll sprite-scroll-<?php echo $parentSection->getSlug() ?>"></i></h3>
   </section>
   <section class="filtro row-fluid">
     <div class="span12">
-      <h3><i class="sprite-icon-<?php echo $section->getSlug() ?>-med"></i><?php echo $section->getTitle() ?></h3>
+      <h3><i class="sprite-icon-<?php echo $parentSection->getSlug() ?>-med"></i><?php echo $parentSection->getTitle() ?></h3>
       
       <div class="span10 destaque-filtro especial">
-        <?php if($section->subsections()): ?>
+        <?php if($parentSection->subsections()): ?>
         <ul class="nav nav-tabs" id="myTab">
-            <?php foreach($section->subsections() as $k=>$s): ?>
+            <?php foreach($parentSection->subsections() as $k=>$s): ?>
               <?php $k++; ?>
           <li class="<?php if($s->getId() == $section->getId()): ?>active <?php endif; ?>aba<?php echo $k ?>"><a href="<?php echo $s->retriveUrl() ?>"><?php echo $s->getTitle() ?></a></li>
             <?php endforeach; ?>
