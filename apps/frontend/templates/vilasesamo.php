@@ -138,7 +138,7 @@
     </header>
     <!-- /header -->
     <script>
-      alert(screen.width);
+      //alert(screen.width);
       
     </script>
     
