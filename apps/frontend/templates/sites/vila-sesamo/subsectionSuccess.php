@@ -1,5 +1,4 @@
 <?php
-  $parentSection = $section;
   if($section->getParentSectionId() > 0)
     $parentSection = Doctrine::getTable('Section')->findOneById((int)$section->getParentSectionId());
 ?>
