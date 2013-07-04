@@ -107,7 +107,6 @@ $(function(){
                 <h3 class="tit-pagina grid2"><?php echo $section->getTitle() ?></h3>
                 <p>Inscrições suspensas temporariamente!</p>
                 <?php /*
-                
                 <div id="msgSuccess" style="display:none">
                   <p>Inscrição realizada com sucesso!</p>
                   <div class="bg">
@@ -208,10 +207,9 @@ $(function(){
                   </div>
                   <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                   <input class="enviar" type="submit" name="enviar" id="enviar" value="Enviar" style="cursor:pointer" />
-                </form>  
+                </form> 
+                */ ?>                               
               </div>
-              */ ?>
-              
             </div>
             <!-- /ESQUERDA -->
             
