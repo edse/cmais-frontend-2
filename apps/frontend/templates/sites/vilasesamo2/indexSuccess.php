@@ -1,6 +1,5 @@
 
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
-<script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
 <script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
 <link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
 
@@ -33,7 +32,7 @@
       //banner 
       include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
       include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal'); 
-      include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipalmobile');  
+ 
     }
    ?>
   <!-- /HEADER -->
