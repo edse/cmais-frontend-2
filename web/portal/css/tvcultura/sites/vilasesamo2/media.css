@@ -79,7 +79,7 @@ and (max-width : 1224px)
 .navbar-inverse .navbar-inner.topo-vila .nav-collapse { width: 85%;} 
 .destaque-filtro .span6 { width: 50%; float:left;} 
 .destaque-filtro article h1 { clear:both;} 
-.todos-itens li.span4 { margin-right:1%;} 
+.todos-itens li.span4 { margin-right:1%; width: 48%;} 
 .todos-itens [class*="span"], 
 .todos-itens .uneditable-input[class*="span"], 
 .todos-itens .row-fluid [class*="span"] { width: auto;} 
@@ -159,7 +159,7 @@ and (orientation : landscape) {
 /*.interna .header-bar h1 { width: 15%; overflow:hidden; }*/
 .interna .header-bar ul { display: block;    margin-right: 0;   /* width: 85%; */float:right; }
 .interna .header-bar ul:last-child { margin-left:0;} 
-.header-bar h1 {width:23%; float: left; margin-top:3%;} 
+.header-bar h1 {width:23%; float: left; margin-top:1%;} 
 .header-bar h1 a { float:none;}
 }
 /* Desktops and laptops ----------- */
