@@ -19,34 +19,7 @@
 #selector-mobile a.current {background-color: #309;}
 #selector-mobile ul {margin:0;padding:0;list-style-type: none;}
 #selector-mobile li {display: inline-block; margin-right: 10px;}
-/*carrossel destaque mobile vila sesamo
-#carrossel-destaque-mobile{max-width: 640px;margin: 0 auto; border-radius:8px;}
-#carrossel-mobile{max-width:623px;}
-#carrossel-mobile .slider {position: relative;zoom: 1;background-color: #556b2f;}
-#carrossel-mobile .slider-nav {position: absolute;zoom: 1;width: 100%;top: 0;left: 0;}
-#carrossel-mobile .arrow {width: 42px;height: 110px;position: absolute;zoom: 1;top: 0;}
-#carrossel-mobile .arrow.destaque-mobile {display:block;}
-#carrossel-mobile .arrow span {display: block;width: 112%;height: 66%;cursor: pointer;top: 89px; position: absolute;}
-#carrossel-mobile .arrow span.sprite-seta-esquerda{left: 10px;}
-#carrossel-mobile .arrow span.sprite-seta-direita{right: 10px;}
-#carrossel-mobile .arrow.disabled {opacity: 0.3;cursor: default;}
-#carrossel-mobile .arrow-left {left: 0;}
-#carrossel-mobile .arrow-right {right: 0;}
-/*#carrossel-mobile .slider-mask-wrap {margin: 0 48px;}
-#carrossel-mobile .inner a img{width:100%!important;}
-#carrossel-mobile .slider-mask {overflow: hidden;position: relative;zoom: 1;max-width:640px;}
-#carrossel-mobile .slider-target {width: 2000px;margin: 0 auto;}
-#carrossel-mobile .slider ul {margin: 0;padding: 0;list-style-type: none;}
-#carrossel-mobile .slider li {height: 300px;float: left;margin: 0;padding: 0;}
-#carrossel-mobile .slider .inner {width:623px;height: 100%;}
-#carrossel-mobile .examples {padding: 1em;background-color: #2f4f4f;}
-#carrossel-mobile #menu span {white-space: nowrap;}
-#carrossel-mobile #selector a {display: block;width: 16px;height: 16px;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;border: 1px solid #333;background-color: #99F;}
-#carrossel-mobile #selector a.current {background-color: #309;}
-#carrossel-mobile #selector ul {margin:0;padding:0;list-style-type: none;}
-#carrossel-mobile #selector li {display: inline-block; margin-right: 10px;}
-#carrossel-mobile #menu span { white-space: nowrap;}
-/*carrossel destaque mobile vila sesamo*/
+/*carrossel mobile*/
 
 /*carrossel personagens vila sesamo*/
 #carrossel-p{max-width: 940px;margin: 0 auto; border-radius:8px;}
