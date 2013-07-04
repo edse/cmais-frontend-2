@@ -81,7 +81,7 @@
 #carrossel-mobile .slider .inner {padding: 10px;margin: 0 5px;border: 1px solid #333;height: 100%;background-color: #CCC;}
 
 /* selector styling */
-#selector-mobile{margin:0 auto;}
+#selector-mobile{margin:10px auto;}
 #selector-mobile a {display: block;height: 16px;width:16px;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;border: 1px solid #333;background-color: #99F;}
 #selector-mobile a.current {background-color: #309;}
 #selector-mobile ul {margin:0;padding:0;list-style-type: none;}
