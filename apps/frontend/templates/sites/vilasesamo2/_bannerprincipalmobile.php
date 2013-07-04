@@ -9,7 +9,11 @@
         <div class="slider-mask">
           <!--slider-mask-wrap--> 
           <ul class="slider-target">
-            <li><div class="inner">One</div></li>
+            <li>
+              <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
+                <img src="/portal/images/capaPrograma/vila-sesamo/vs_1-home_m-w640.png" alt="Personagem" />
+              </a>
+            </li>
             <li><div class="inner">Two</div></li>
             <li><div class="inner">Three</div></li>
             <li><div class="inner">Four</div></li>
@@ -36,7 +40,6 @@
   </div>
   <!--/inicio carrossel--> 
   <!--seletor carrossel-->
-  <div>
     <ul id="selector-mobile">
       <li><a href="#" rel="frame_0"></a></li>
       <li><a href="#" rel="frame_1"></a></li>
@@ -49,7 +52,7 @@
       <li><a href="#" rel="frame_8"></a></li>
       <li><a href="#" rel="frame_9"></a></li>
     </ul>
-  </div>
+
   <!--/seletor carrossel-->   
 </section>
 <!--scripts e css carrossel-->
@@ -60,7 +63,7 @@
 var total=0;
 $('#selector-mobile li').each(function(i){
   var width = $(this).width();
-  total = width + total; 
+  total = width + total + 13; 
 });
 
 $('#selector-mobile').css('width', total);
