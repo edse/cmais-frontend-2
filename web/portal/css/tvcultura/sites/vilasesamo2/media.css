@@ -100,9 +100,9 @@ and (max-width : 720px)
 .slider .inner { width:104px; height:104px;  }
 #carrossel-personagem .arrow span { margin-top:50%; }
 .interna .header-bar { top:51px; }
-.interna .header-bar h1 { width: 15%; overflow:hidden; }
+/*.interna .header-bar h1 { width: 15%; overflow:hidden; }*/
 .interna .header-bar ul { display: block;    margin-right: 0;    width: 85%; float:right; }
-
+.interna .header-bar ul:first-child { margin-left:0;} 
 
 @media only screen 
 and (min-width : 320px) 
