@@ -85,14 +85,15 @@ $(document).ready(function() {
   $('.pais .sprite-seta-up').click(function() {
     $('.pais .content').stop().slideToggle('fast');
     $(".pais .sprite-seta-down").toggleClass("inativo");
-    
   });
   
   //menu personagens tablet
+  
   $('#myTab a').click(function (e) {
     e.preventDefault();
     $(this).tab('show');
   });
+  
     
     
 });//document.ready

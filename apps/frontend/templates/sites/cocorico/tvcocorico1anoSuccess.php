@@ -29,16 +29,15 @@
   
   <!-- titulo da pagina -->
   <div class="tit-pagina tit-extra">
-    <h2><i class="ico-bike"></i><?php echo $section->getTitle() ?><span><?php echo $section->getDescription() ?></span></h2>
+    <h2><i class="ico-bike"></i><?php echo $section->getTitle() ?></h2>
   </div>
   <!-- titulo da pagina -->
   <!--row-->
   <div class="row-fluid conteudo">
     <?php if(isset($displays["destaque-principal"])): ?>
-      <?php if(count($displays["destaque-principal"]) > 0): ?> 
-    <a class="span6"><img alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-5-b") ?>"></a>
-    <div class="span6">
-      <?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></p><br><br>
+      <?php if(count($displays["destaque-principal"]) > 0): ?>
+    <h2><?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></h2>     
+      <img alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-5-b") ?>">
       <?php echo (html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent())) ?>
       <p class="grd">Parabéns!!!</p>
       <p class="grd"><span><?php echo $displays["destaque-principal"][0]->getTitle() ?><br/>
@@ -47,13 +46,19 @@
     </div>
       <?php endif; ?>
     <?php endif; ?>
+    <?php
+    /*
     <?php if(isset($pager)): ?>
       <?php if($pager->haveToPaginate()): ?>
     <p class="tit" style="margin-top:30px;">conheça os desenhos participantes:</p>
       <?php endif; ?>
     <?php endif; ?>
+     */
+     ?>
   </div>
   <!--/row-->
+  <?php
+  /*
   <?php if(isset($pager)): ?>
       <?php if($pager->haveToPaginate()): ?>
     <!-- PAGINACAO -->
@@ -83,6 +88,8 @@
     <!--// PAGINACAO -->
     <?php endif; ?>
   <?php endif; ?>
+   */
+   ?>
   
    <?php if(isset($pager)): ?>
   <?php if(count($pager) > 0): ?>
