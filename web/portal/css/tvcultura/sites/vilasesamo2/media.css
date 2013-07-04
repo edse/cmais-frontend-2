@@ -103,6 +103,13 @@ and (max-width : 720px)
 .interna .header-bar h1 { width: 15%; overflow:hidden; }
 .interna .header-bar ul { display: block;    margin-right: 0;    width: 85%; float:right; }
 
+
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+.sprite-logo-cmais { display:none;}
+}
+
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
@@ -112,7 +119,7 @@ and (min-width : 1224px) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (max-width : 640px) {
-body { background:red; }
+
 
 
 
