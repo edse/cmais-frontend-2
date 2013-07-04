@@ -21,7 +21,7 @@
         <?php
           //if($section->getParentSectionId())
           $parentSection = Doctrine::getTable('Section')->findOneById(2388);
-          echo $parentSection->getId();
+          $subsections = $parentSection->subsections();
         ?>
         <?php /*
         <?php if(isset($parentSection)): ?>
