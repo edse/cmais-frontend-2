@@ -22,7 +22,7 @@
           //if($section->getParentSectionId())
             //$parentSection = Doctrine::getTable('Section')->findOneById($section->getParentSectionId());
         ?>
-        
+        <?php if(isset($parentSection)): ?>
         <?php if($parentSection->subsections()): ?>
         <ul class="nav nav-tabs" id="myTab">
           <?php foreach($parentSection->subsections() as $k=>$s): ?>
@@ -30,6 +30,7 @@
           <li class="<?php if($s->getId() == $section->getId()): ?>active <?php endif; ?>aba<?php echo $k ?>"><a href="<?php echo $d->retriveUrl() ?>"><?php echo $d->getTitle() ?></a></li>
           <?php endforeach; ?>
         </ul>
+        <?php endif; ?>
         <?php endif; ?>
  
         <div class="tab-content">
