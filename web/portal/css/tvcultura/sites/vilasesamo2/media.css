@@ -79,6 +79,9 @@ and (max-width : 1224px)
 .destaque-filtro .span6 { width: 50%; float:left;} 
 .destaque-filtro article h1 { clear:both;} 
 .todos-itens li.span4 { margin-right:1%;} 
+.todos-itens [class*="span"], 
+.todos-itens .uneditable-input[class*="span"], 
+.todos-itens .row-fluid [class*="span"] { width: auto;} 
 
 }
 
