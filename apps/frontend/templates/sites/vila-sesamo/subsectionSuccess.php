@@ -24,7 +24,7 @@
       
       <div class="span10 destaque-filtro especial">
         <?php if($parentSection->subsections()): ?>
-        <ul class="nav nav-tabs" id="myTab">
+        <ul class="nav nav-tabs">
             <?php foreach($parentSection->subsections() as $k=>$s): ?>
               <?php $k++; ?>
           <li class="<?php if($s->getId() == $section->getId()): ?>active <?php endif; ?>aba<?php echo $k ?>"><a href="<?php echo $s->retriveUrl() ?>"><?php echo $s->getTitle() ?></a></li>
