@@ -57,9 +57,13 @@
 <script type="text/javascript" src="/portal/js/hammer.min.js"></script>
 <script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
 <script>
+var total=0;
 $('#selector-mobile li').each(function(i){
-  alert($(this).width());
+  var width = $(this).width();
+  total = width + total; 
 });
+
+$('#selector-mobile').css('width', total);
 
 $('#carrossel-mobile').responsiveCarousel({
     unitWidth:          'inherit',
