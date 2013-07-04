@@ -1,9 +1,17 @@
+<?php
+  //if($section->getParentSectionId())
+  $parentSection = Doctrine::getTable('Section')->findOneById(2388);
+  //$subsections = $parentSection->subsections();
+  //foreach($subsections as $k=>$s)
+    //echo $k;
+?>
+
 <?php use_helper('I18N', 'Date') ?>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <script>
-  $("body").addClass("interna <?php echo $section->getSlug() ?>");
+  $("body").addClass("interna <?php echo $parentSection->getSlug() ?>");
 </script>
 
 <!-- HEADER -->
@@ -11,32 +19,21 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="scroll row-fluid">
-    <h3><i class="sprite-icon-<?php echo $section->getSlug() ?>-med"></i><?php echo $section->getTitle() ?><i class="seta-scroll sprite-scroll-<?php echo $section->getSlug() ?>"></i></h3>
+    <h3><i class="sprite-icon-<?php echo $parentSection->getSlug() ?>-med"></i><?php echo $parentSection->getTitle() ?><i class="seta-scroll sprite-scroll-<?php echo $parentSection->getSlug() ?>"></i></h3>
   </section>
   <section class="filtro row-fluid">
     <div class="span12">
-      <h3><i class="sprite-icon-<?php echo $section->getSlug() ?>-med"></i><?php echo $section->getTitle() ?></h3>
+      <h3><i class="sprite-icon-<?php echo $parentSection->getSlug() ?>-med"></i><?php echo $parentSection->getTitle() ?></h3>
       
       <div class="span10 destaque-filtro especial">
-        <?php
-          //if($section->getParentSectionId())
-          $parentSection = Doctrine::getTable('Section')->findOneById(2388);
-          $subsections = $parentSection->subsections();
-          foreach($subsections as $k=>$s)
-            echo $k;
-        ?>
-        <?php /*
-        <?php if(isset($parentSection)): ?>
         <?php if($parentSection->subsections()): ?>
         <ul class="nav nav-tabs" id="myTab">
-          <?php foreach($parentSection->subsections() as $k=>$s): ?>
-            <?php $k++; ?>
-          <li class="<?php if($s->getId() == $section->getId()): ?>active <?php endif; ?>aba<?php echo $k ?>"><a href="<?php echo $d->retriveUrl() ?>"><?php echo $d->getTitle() ?></a></li>
-          <?php endforeach; ?>
+            <?php foreach($parentSection->subsections() as $k=>$s): ?>
+              <?php $k++; ?>
+          <li class="<?php if($s->getId() == $section->getId()): ?>active <?php endif; ?>aba<?php echo $k ?>"><a href="<?php echo $s->retriveUrl() ?>"><?php echo $s->getTitle() ?></a></li>
+            <?php endforeach; ?>
         </ul>
         <?php endif; ?>
-        <?php endif; ?>
-         */ ?>
          
  
         <div class="tab-content">
