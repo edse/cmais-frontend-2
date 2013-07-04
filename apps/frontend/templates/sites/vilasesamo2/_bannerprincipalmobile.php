@@ -35,6 +35,7 @@
     <!--/slider-->
   </div>
   <!--/inicio carrossel--> 
+  <!--seletor carrossel-->
   <div>
     <ul id="selector-mobile">
       <li><a href="#" rel="frame_0"></a></li>
@@ -48,7 +49,8 @@
       <li><a href="#" rel="frame_8"></a></li>
       <li><a href="#" rel="frame_9"></a></li>
     </ul>
-  </div>   
+  </div>
+  <!--/seletor carrossel-->   
 </section>
 <!--scripts e css carrossel-->
 <script type="text/javascript" src="/portal/js/modernizr/modernizr.min.js"></script>
