@@ -89,10 +89,12 @@ $(document).ready(function() {
   });
   
   //menu personagens tablet
+  /*
   $('#myTab a').click(function (e) {
     e.preventDefault();
     $(this).tab('show');
   });
+  */
     
     
 });//document.ready
