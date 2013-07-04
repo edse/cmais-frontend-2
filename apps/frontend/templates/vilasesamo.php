@@ -192,7 +192,7 @@
     
     <!-- scripts -->
     <script type="text/javascript" src="/portal/js/vilasesamo2/vilasesamo.js"></script>
-    <script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
+
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-22770265-1']);
