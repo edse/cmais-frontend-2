@@ -1,9 +1,5 @@
 <?php
-  //if($section->getParentSectionId())
-  $parentSection = Doctrine::getTable('Section')->findOneById(2388);
-  //$subsections = $parentSection->subsections();
-  //foreach($subsections as $k=>$s)
-    //echo $k;
+  $parentSection = Doctrine::getTable('Section')->findOneById((int)$section->getParentSectionId());
 ?>
 
 <?php use_helper('I18N', 'Date') ?>
