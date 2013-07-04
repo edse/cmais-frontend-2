@@ -63,7 +63,7 @@ $('#selector-mobile li').each(function(i){
   total = width + total; 
 });
 
-$('#selector-mobile').attr('width', total);
+$('#selector-mobile').css('width', total);
 
 $('#carrossel-mobile').responsiveCarousel({
     unitWidth:          'inherit',
