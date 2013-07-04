@@ -177,7 +177,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-aspa-direita{ background-position: 0 0; width: 37px; height: 30px; } 
 .sprite-aspa-esquerda{ background-position: 0 -80px; width: 37px; height: 30px; } 
 .sprite-menu-ball{ background-position: 0 -160px; width: 7px; height: 7px; } 
-.sprite-selo{ background-position: 0 -217px; width: 147px; height: 36px; }  
+.sprite-selo{ background-position: 0 -217px; width: 147px; height: 32px; }  
 
 .sprite-btn-atividades,
 .sprite-btn-jogos,
