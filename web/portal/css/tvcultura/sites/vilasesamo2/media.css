@@ -78,7 +78,7 @@ and (max-width : 1224px)
 .navbar-inverse .navbar-inner.topo-vila .nav-collapse { width: 85%;} 
 .destaque-filtro .span6 { width: 50%; float:left;} 
 .destaque-filtro article h1 { clear:both;} 
-.todos-itens li.span4 { float:left; width:31.4917%; margin:0;} 
+.todos-itens li.span4 { float:left; width:31.4917%; margin:0 !important;} 
 
 }
 
