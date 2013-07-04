@@ -92,6 +92,7 @@ and (max-width : 1224px)
 .todos-itens .uneditable-input[class*="span"], 
 .todos-itens .row-fluid [class*="span"] { width: auto;} 
 .todos-itens #container { margin-left:0 !important;} 
+footer .mapa .col-central { width: 24.8%;} 
 }
 
 @media only screen 
