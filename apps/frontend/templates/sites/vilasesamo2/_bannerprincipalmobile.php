@@ -59,7 +59,7 @@ $('#carrossel-mobile').responsiveCarousel({
     },
     step:-1,
     onShift:function (i) {
-        var $current = $('#selector li a[rel=frame_' + i + ']');
+        var $current = $('#selector-mobile li a[rel=frame_' + i + ']');
         $('#selector-mobile li a').removeClass('current');
         $current.addClass('current');
     }
