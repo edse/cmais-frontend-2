@@ -103,13 +103,13 @@ and (max-width : 720px)
 /*.interna .header-bar h1 { width: 15%; overflow:hidden; }*/
 .interna .header-bar ul { display: block;    margin-right: 0;   /* width: 85%; */float:right; }
 .interna .header-bar ul:last-child { margin-left:0;} 
-.header-bar h1 {width:23%; float: left;} 
+.header-bar h1 {width:23%; float: left; margin-top:3%;} 
 .header-bar h1 a { float:none;} 
 
 @media only screen 
 and (min-width : 320px) 
 and (max-width : 480px) {
-.sprite-logo-cmais { display:none;}
+h1 .sprite-logo-cmais { display:none !important;}
 .header-bar,
 .content { padding:0 !important; margin:0 !important;} 
 }
