@@ -5,7 +5,9 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox2.1.4/helpers/jquery.fancybox-media.js" ></script>
 <link rel="stylesheet" href="http://cmais.com.br/portal/js/fancybox2.1.4/jquery.fancybox.css" type="text/css" media="screen" />
 <!--/FANCYBOX-->
-
+<style>
+.conteudo p {clear:none;}
+</style>
 <!-- container-->
 <div class="container tudo">
   <!-- row-->
@@ -37,9 +39,7 @@
     <?php if(isset($displays["destaque-principal"])): ?>
       <?php if(count($displays["destaque-principal"]) > 0): ?>
     <h2><?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></h2>     
-    <a class="span6"><img alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-5-b") ?>"></a>
-    <div class="span6">
-      <?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></p><br><br>
+      <img alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-5-b") ?>">
       <?php echo (html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent())) ?>
       <p class="grd">Parabéns!!!</p>
       <p class="grd"><span><?php echo $displays["destaque-principal"][0]->getTitle() ?><br/>

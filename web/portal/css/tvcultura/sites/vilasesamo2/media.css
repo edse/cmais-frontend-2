@@ -161,7 +161,12 @@ and (orientation : landscape) {
 .interna .header-bar ul:last-child { margin-left:0;} 
 .header-bar h1 {width:23%; float: left; margin-top:1%;} 
 .header-bar h1 a { float:none;}
+footer .relacionados li { height: 100px; }
+footer .relacionados li.cocorico { clear:none; } 
+footer .relacionados ul { margin-left:0; }
 }
+
+
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
