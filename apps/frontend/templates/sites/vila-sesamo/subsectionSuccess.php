@@ -77,13 +77,6 @@
           <?php foreach($personagens as $k=>$p): ?>
           <li><a href="#" title="<?php echo $p->getTitle() ?>" data-filter=".<?php echo $p->getSlug() ?>"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="<?php echo $p->getTitle() ?>" /></a></li>
           <?php endforeach; ?>
-          <!--li><a href="#" title="" data-filter=".beto"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
-          <li><a href="#" title="" data-filter=".come-come"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
-          <li><a href="#" title="" data-filter=".elmo"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
-          <li><a href="#" title="" data-filter=".enio"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
-          <li><a href="#" title="" data-filter=".garibaldo"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
-          <li><a href="#" title="" data-filter=".grover"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
-          <li><a href="#" title="" data-filter=".zoe"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li-->
         </ul>
       </nav>
         <?php endif; ?>
@@ -94,7 +87,7 @@
   <span class="divisa"></span>
   <section class="todos-itens ">
     <ul  id="container" class="row-fluid">
-      <li class="span4 element beto">
+      <li class="span4 element beto come-come">
         <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
