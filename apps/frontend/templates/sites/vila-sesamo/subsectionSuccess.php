@@ -1,3 +1,11 @@
+<?php
+  //if($section->getParentSectionId())
+  $section = Doctrine::getTable('Section')->findOneById(2388);
+  //$subsections = $parentSection->subsections();
+  //foreach($subsections as $k=>$s)
+    //echo $k;
+?>
+
 <?php use_helper('I18N', 'Date') ?>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
@@ -18,16 +26,9 @@
       <h3><i class="sprite-icon-<?php echo $section->getSlug() ?>-med"></i><?php echo $section->getTitle() ?></h3>
       
       <div class="span10 destaque-filtro especial">
-        <?php
-          //if($section->getParentSectionId())
-          $parentSection = Doctrine::getTable('Section')->findOneById(2388);
-          //$subsections = $parentSection->subsections();
-          //foreach($subsections as $k=>$s)
-            //echo $k;
-        ?>
-        <?php if($parentSection->subsections()): ?>
+        <?php if($section->subsections()): ?>
         <ul class="nav nav-tabs" id="myTab">
-            <?php foreach($parentSection->subsections() as $k=>$s): ?>
+            <?php foreach($section->subsections() as $k=>$s): ?>
               <?php $k++; ?>
           <li class="<?php if($s->getId() == $section->getId()): ?>active <?php endif; ?>aba<?php echo $k ?>"><a href="<?php echo $s->retriveUrl() ?>"><?php echo $s->getTitle() ?></a></li>
             <?php endforeach; ?>
