@@ -108,6 +108,7 @@ and (max-width : 720px)
 and (min-width : 320px) 
 and (max-width : 480px) {
 .sprite-logo-cmais { display:none;}
+.content { padding:0; margin:0;} 
 }
 
 /* Desktops and laptops ----------- */
