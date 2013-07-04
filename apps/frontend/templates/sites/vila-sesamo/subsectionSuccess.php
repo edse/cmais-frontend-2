@@ -74,7 +74,7 @@
       <nav class="span2">
         <p>escolha o jogo por personagem<span class="sprite-seta-down"></span></p>
         <ul class="filtro-personagem">
-          <?php foreach($personagem as $k=>$p): ?>
+          <?php foreach($personagens as $k=>$p): ?>
           <li><a href="#" title="<?php echo $p->getTitle() ?>" data-filter=".<?php echo $p->getSlug() ?>"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="<?php echo $p->getTitle() ?>" /></a></li>
           <?php endforeach; ?>
           <!--li><a href="#" title="" data-filter=".beto"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a></li>
