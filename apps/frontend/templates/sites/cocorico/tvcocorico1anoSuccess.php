@@ -7,7 +7,6 @@
 <!--/FANCYBOX-->
 <style>
 .conteudo p {clear:none;}
-.conteudo img{margin:5px;}
 </style>
 <!-- container-->
 <div class="container tudo">
