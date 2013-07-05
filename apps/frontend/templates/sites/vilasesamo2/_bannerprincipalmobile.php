@@ -72,6 +72,7 @@
 <script type="text/javascript" src="/portal/js/hammer.min.js"></script>
 <script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
 <script>
+//carrossel mobile
 var total=0;
 $('#selector-mobile li').each(function(i){
   var width = $(this).width();
@@ -100,23 +101,24 @@ $('#carrossel-mobile').responsiveCarousel({
 });
 
 $(window).on('load', function (ev) {
-    slideShow()
+  $('#carrossel-mobile').responsiveCarousel('redraw');
+  slideShow();
 });
 
+$('.arrow').click(function(){
+  slideShow(); 
+});
 
 $('#selector-mobile a').on('click', function (ev) {
-    ev.preventDefault();
-    var i = /\d/.exec($(this).attr('rel'));
-    $('#carrossel-mobile').responsiveCarousel('goToSlide', i);
-    
-});
-
-$(window).on('load',function(){
-    $('#carrossel-mobile').responsiveCarousel('redraw');
+  ev.preventDefault();
+  var i = /\d/.exec($(this).attr('rel'));
+  $('#carrossel-mobile').responsiveCarousel('goToSlide', i);
+  slideShow();
 });
 
 slideShow = function(ev){
   ev.preventDefault();
   $('#carrossel-mobile').responsiveCarousel('toggleSlideShow');
 };
+//carrossel mobile
 </script>
