@@ -22,9 +22,9 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 1024px) {
- 
+/* 
 .navbar.navbar-fixed-top,
-.header-bar { position:relative; }
+.header-bar { position:relative; }*/
 .header-bar { top:0px !important; }
 #content { top:0 !important; }
 
@@ -141,6 +141,7 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) 
 and (orientation : portrait) {
 .pais .row-fluid .span4 {  width: 31%; float:left; overflow:hidden;}
+.interna .header-bar { position:static; }
 }
 
 
