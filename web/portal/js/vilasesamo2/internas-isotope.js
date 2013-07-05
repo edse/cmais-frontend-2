@@ -28,7 +28,7 @@
       $container.isotope({ filter:filter_selected });
       return false;
     });
-    
+    /*
     $container.infinitescroll({
       navSelector  : '#page_nav',    // selector for the paged navigation 
       nextSelector : '#page_nav a',  // selector for the NEXT link (to page 2)
@@ -43,6 +43,7 @@
         $container.isotope('appended',$(newElements)).isotope({ filter:".element"}).isotope({ filter:filter_selected });
       }
     );
+    */
     
     
   });
