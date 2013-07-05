@@ -99,7 +99,7 @@ $('#carrossel-mobile').responsiveCarousel({
     }
 });
 /* this next part toggles the "auto slide show" option. */
-$('#toggle-slide-show').on('click', function (ev) {
+$(window).on('load', function (ev) {
     ev.preventDefault();
     $('#carrossel-mobile').responsiveCarousel('toggleSlideShow');
 });
