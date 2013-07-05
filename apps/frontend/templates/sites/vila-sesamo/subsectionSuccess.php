@@ -95,6 +95,7 @@
           $assetSections = $d->getSections();
           foreach($assetSections as $a) {
             if($a->getParentSectionId() == $personagensSection->getId()) {
+              echo $a->getSlug();
               $personagens[] = $a->getSlug();
             }
           }
