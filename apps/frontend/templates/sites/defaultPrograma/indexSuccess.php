@@ -22,7 +22,7 @@
               <?php if($program->getImageThumb() != ""): ?>
                 <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
               <?php elseif($site->getImageThumb() != ""): ?>
-                <img src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
+                <img src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" teste />
               <?php else: ?>
                 <h3 class="tit-pagina grid1"><?php echo $program->getTitle() ?></h3>
               <?php endif; ?>
