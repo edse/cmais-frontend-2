@@ -83,6 +83,7 @@ $('#selector-mobile').css('width', total);
 
 $('#carrossel-mobile').responsiveCarousel({
     unitWidth:          'inherit',
+    infinite:           true;
     target:             '#carrossel-mobile .slider-target',
     unitElement:        '#carrossel-mobile .slider-target > li',
     mask:               '#carrossel-mobile .slider-mask',
@@ -105,7 +106,7 @@ $('.arrow, #selector-mobile a').click(function(){
 });
 
 $('#selector-mobile a').on('click', function (ev) {
-  //ev.preventDefault();
+  ev.preventDefault();
   var i = /\d/.exec($(this).attr('rel'));
   $('#carrossel-mobile').responsiveCarousel('goToSlide', i);
 });
