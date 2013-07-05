@@ -14,11 +14,31 @@
                 <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
               </a>
             </li>
-            <li><div class="inner">Two</div></li>
-            <li><div class="inner">Three</div></li>
-            <li><div class="inner">Four</div></li>
-            <li><div class="inner">Five</div></li>
-            <li><div class="inner">Six</div></li>
+            <li>
+              <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
+                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+              </a>
+            </li>
+            <li>
+              <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
+                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+              </a>
+            </li>
+            <li>
+              <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
+                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+              </a>
+            </li>
+            <li>
+              <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
+                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+              </a>
+            </li>
+            <li>
+              <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
+                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+              </a>
+            </li>
           </ul>
           <!--slider-mask-->
           <div class="clearit"></div>
