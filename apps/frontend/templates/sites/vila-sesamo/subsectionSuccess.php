@@ -95,11 +95,11 @@
           $assetSections = $d->getSections();
           foreach($assetSections as $a) {
             if($a->getParentSectionId() == $personagensSection->getId()) {
-              $d->personagens[] = $a->getSlug();
+              $personagens = $a->getSlug();
             }
           }
         ?>
-      <li class="span4 element <?php echo implode(" ",$d->personagens) ?>">
+      <li class="span4 element <?php echo implode(" ",$personagens) ?>">
         
         <?php if($d->AssetType->getSlug() == "video"): ?>
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
