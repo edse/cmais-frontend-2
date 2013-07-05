@@ -54,27 +54,8 @@
       <div class="row-fluid  border-top"></div>
         <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
         <!--/rodapé-->
-      </div>
+</div>
  
 <!-- /container-->
 
-<!--modal produto-->   
-      <script>
-//chamando modal
-$('.btn-produto').click(function(){
-  var imagem = $(this).children('input#imagem-link').val();
-  var nome = $(this).attr('title');
-  var cidade = $(this).children('input#cidade-link').val();
-  $('.modal-header img').attr('src', imagem); 
-  $('.modal-header h3 span#nome').text(nome); 
-  $('.modal-header h3 span#cidade').text(cidade); 
-});
-/*
-$('.btn-modal-prod').not('.btn-modal-prod.ativado').click(function(){
-  var img_ampl_modal = $(this).attr('name');
-  $('.modal-body img').hide().attr('src', img_ampl_modal).show();
-});
-*/
 
-</script>
-<!--/modal produto-->
