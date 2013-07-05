@@ -50,7 +50,7 @@
 #carrossel-mobile .slider-target {width: 2000px;margin: 0 auto;}
 #carrossel-mobile .slider ul {margin: 0;padding: 0;list-style-type: none;}
 #carrossel-mobile .slider li {width: 640px;height: 250px;float: left;margin: 0;padding: 0;}
-#carrossel-mobile .slider li a{display:block; margin: 0 auto;}
+#carrossel-mobile .slider li a img{display:block; margin: 0 auto;}
 #carrossel-mobile .slider .inner {padding: 10px;margin: 0 5px;border: 1px solid #333;height: 100%;background-color: #CCC;}
 
 /* selector styling */
