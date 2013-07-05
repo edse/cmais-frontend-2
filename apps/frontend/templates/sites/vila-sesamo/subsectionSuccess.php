@@ -90,8 +90,27 @@
   <section class="todos-itens ">
     <ul  id="container" class="row-fluid">
       <?php foreach($pager->getResults() as $k=>$d): ?>
+        <?php
+        /*
+          $assetSections = $d->getSections();
+          $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
+          
+          foreach($assetSections as $a) {
+            if($a->getParentSectionId() == $personagemSection->getId()) {
+              
+            }
+          }
+         *
+         */
+        ?>
       <li class="span4 element beto come-come">
+        
+        <?php if($d->AssetType->getSlug() == "video"): ?>
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
+        <?php else: ?>
+          <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" /></a>
+        <?php endif; ?>
         <h2><a><?php echo $d->getTitle() ?></a></h2>
       </li>
       <?php endforeach; ?>
