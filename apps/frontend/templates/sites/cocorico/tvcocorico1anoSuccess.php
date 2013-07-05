@@ -5,7 +5,9 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox2.1.4/helpers/jquery.fancybox-media.js" ></script>
 <link rel="stylesheet" href="http://cmais.com.br/portal/js/fancybox2.1.4/jquery.fancybox.css" type="text/css" media="screen" />
 <!--/FANCYBOX-->
-
+<style>
+.conteudo p {clear:none;}
+</style>
 <!-- container-->
 <div class="container tudo">
   <!-- row-->
