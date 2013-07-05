@@ -19,10 +19,6 @@
             <li><div class="inner">Four</div></li>
             <li><div class="inner">Five</div></li>
             <li><div class="inner">Six</div></li>
-            <li><div class="inner">Seven</div></li>
-            <li><div class="inner">Eight</div></li>
-            <li><div class="inner">Nine</div></li>
-            <li><div class="inner">Ten</div></li>
           </ul>
           <!--slider-mask-->
           <div class="clearit"></div>
@@ -47,10 +43,6 @@
       <li><a href="#" rel="frame_3"></a></li>
       <li><a href="#" rel="frame_4"></a></li>
       <li><a href="#" rel="frame_5"></a></li>
-      <li><a href="#" rel="frame_6"></a></li>
-      <li><a href="#" rel="frame_7"></a></li>
-      <li><a href="#" rel="frame_8"></a></li>
-      <li><a href="#" rel="frame_9"></a></li>
     </ul>
 
   <!--/seletor carrossel-->   
