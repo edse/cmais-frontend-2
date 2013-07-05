@@ -117,7 +117,7 @@ $(window).on('load', function (ev) {
 });
 
 slideShow = function(ev){
-  ev.preventDefault();
+  //ev.preventDefault();
   $('#carrossel-mobile').responsiveCarousel('toggleSlideShow');
 };
 //carrossel mobile
