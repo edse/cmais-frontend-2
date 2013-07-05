@@ -66,7 +66,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 
 .pais .btn .caret { position:absolute; top:-5px; right:10px; border:none; } 
 .pais .publicidade { margin-top:20px; display: block; }
-.pais .row-fluid .span4 {  width: 32.05%;}
+.pais .row-fluid .span4 {  width: 32.05%; float:left;}
 .pais .publicidade p { font-family:Arial, Helvetica, sans-serif; font-size:12px; text-transform:uppercase; color:#737373; float:right; }
 .pais .sprite-seta-up,
 .pais .sprite-seta-down { position:absolute; top:-10px; right:0;  cursor:pointer; }

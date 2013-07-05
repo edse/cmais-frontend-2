@@ -31,15 +31,15 @@
   
   <!-- titulo da pagina -->
   <div class="tit-pagina tit-extra">
-    <h2><i class="ico-bike"></i><?php echo $section->getTitle() ?></h2>
+    <h2><?php echo $section->getTitle() ?></h2>
   </div>
   <!-- titulo da pagina -->
   <!--row-->
   <div class="row-fluid conteudo">
     <?php if(isset($displays["destaque-principal"])): ?>
       <?php if(count($displays["destaque-principal"]) > 0): ?>
-    <h2><?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></h2>     
-      <img alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-5-b") ?>" style="float:left;margin-right: 20px;">
+    <h5><?php echo $displays["destaque-principal"][0]->Asset->getDescription() ?></h5>
+      <img style="display: block; margin:10px auto;" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-5-b") ?>" style="float:left;margin-right: 20px;">
       <?php echo (html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent())) ?>
       <p class="grd">Parabéns!!!</p>
       <p class="grd"><span><?php echo $displays["destaque-principal"][0]->getTitle() ?><br/>
