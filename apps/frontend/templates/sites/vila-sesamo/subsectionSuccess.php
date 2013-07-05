@@ -118,10 +118,10 @@
   <span class="divisa"></span>
 </div>
 
-<!--input type="hidden" id="filter-choice" value="">
+<input type="hidden" id="filter-choice" value="">
 <nav id="page_nav">
   <a href="/testes/vilasesamo2/pages/2.html" class="mais"><i class="sprite-icon-mais"></i>Carregar mais jogos</a>
-</nav-->
+</nav>
 <!--scripts-->
 
 <script src="/portal/js/isotope/jquery.isotope.min.js"></script>
