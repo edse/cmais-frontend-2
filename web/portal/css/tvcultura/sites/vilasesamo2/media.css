@@ -62,7 +62,7 @@ and (max-width : 1224px)
 .navbar-inverse .navbar-inner.topo-vila { margin-top:0; }
 .header-bar { top:51px; }
 .row-fluid .span8 { width:100%; }
-.interna #content { top:141px; margin-bottom:141px; padding:0 2%; }
+.interna #content { margin-top:141px; margin-bottom:141px; padding:0 2%; }
 .navbar .btn-navbar { display:none; }
 .nav-collapse.collapse { overflow:visible; max-width: 90%; clear:none; }
 .topo-vila h2 { left: 0; }
@@ -141,7 +141,7 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) 
 and (orientation : portrait) {
 .pais .row-fluid .span4 {  width: 31%; float:left; overflow:hidden;}
-.interna .header-bar { position:static; }
+.interna .header-bar { position:fixed; }
 }
 
 
