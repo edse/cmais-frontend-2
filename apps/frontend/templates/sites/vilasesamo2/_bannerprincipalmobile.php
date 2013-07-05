@@ -83,7 +83,6 @@ $('#selector-mobile').css('width', total);
 
 $('#carrossel-mobile').responsiveCarousel({
     unitWidth:          'inherit',
-    infinite:           true,
     target:             '#carrossel-mobile .slider-target',
     unitElement:        '#carrossel-mobile .slider-target > li',
     mask:               '#carrossel-mobile .slider-mask',
