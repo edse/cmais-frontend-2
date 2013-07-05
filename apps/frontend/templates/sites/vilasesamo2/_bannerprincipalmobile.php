@@ -100,11 +100,6 @@ $('#carrossel-mobile').responsiveCarousel({
     }
 });
 
-$(window).on('load', function (ev) {
-  $('#carrossel-mobile').responsiveCarousel('redraw');
-  slideShow();
-});
-
 $('.arrow').click(function(){
   slideShow(); 
 });
@@ -113,6 +108,11 @@ $('#selector-mobile a').on('click', function (ev) {
   ev.preventDefault();
   var i = /\d/.exec($(this).attr('rel'));
   $('#carrossel-mobile').responsiveCarousel('goToSlide', i);
+  slideShow();
+});
+
+$(window).on('load', function (ev) {
+  $('#carrossel-mobile').responsiveCarousel('redraw');
   slideShow();
 });
 
