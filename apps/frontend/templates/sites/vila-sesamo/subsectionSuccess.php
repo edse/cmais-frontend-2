@@ -90,8 +90,24 @@
   <section class="todos-itens ">
     <ul  id="container" class="row-fluid">
       <?php foreach($pager->getResults() as $k=>$d): ?>
-      <li class="span4 element beto come-come">
+        <?php
+          $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
+          $assetPersonagens = array();
+          $assetSections = $d->getSections();
+          foreach($assetSections as $a) {
+            if($a->getParentSectionId() == $personagensSection->getId()) {
+              $assetPersonagens[] = $a->getSlug();
+            }
+          }
+        ?>
+      <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?>">
+        
+        <?php if($d->AssetType->getSlug() == "video"): ?>
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
+        <?php else: ?>
+          <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" /></a>
+        <?php endif; ?>
         <h2><a><?php echo $d->getTitle() ?></a></h2>
       </li>
       <?php endforeach; ?>
@@ -102,10 +118,10 @@
   <span class="divisa"></span>
 </div>
 
-<input type="hidden" id="filter-choice" value="">
+<!--input type="hidden" id="filter-choice" value="">
 <nav id="page_nav">
   <a href="/testes/vilasesamo2/pages/2.html" class="mais"><i class="sprite-icon-mais"></i>Carregar mais jogos</a>
-</nav>
+</nav-->
 <!--scripts-->
 
 <script src="/portal/js/isotope/jquery.isotope.min.js"></script>
