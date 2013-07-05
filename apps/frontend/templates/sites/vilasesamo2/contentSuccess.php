@@ -48,7 +48,7 @@
         Aenean at metus.</p>
         <i class="sprite-aspa-direita"></i>
       </div>
-      <div class="span4">
+      <div class="span4 box-select">
         <a href="#" title=""> <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /> </a>
         <h2><a>Nome jogo</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend.</p>
