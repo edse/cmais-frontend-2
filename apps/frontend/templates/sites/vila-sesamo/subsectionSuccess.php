@@ -125,6 +125,6 @@
 <!--scripts-->
 
 <script src="/portal/js/isotope/jquery.isotope.min.js"></script>
-<script src="/portal/js/isotope/jquery.infinitescroll.min.js"></script>
+<!--script src="/portal/js/isotope/jquery.infinitescroll.min.js"></script-->
 <script src="/portal/js/vilasesamo2/internas-isotope.js"></script>
 
