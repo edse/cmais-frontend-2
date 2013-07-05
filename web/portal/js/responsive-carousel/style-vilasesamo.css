@@ -34,8 +34,9 @@
   #carrossel-personagem .slider li {color:white;width: 70px;height: 80px;}
   #carrossel-personagem .slider .inner {width:60px; height:60px; display:block; overflow:hidden; padding:0;border-radius:8px;}
 }
-/*carrossel personagens vila sesamo*/
+/*/carrossel personagens vila sesamo*/
 
+/*carrossel mobile*/
 #carrossel-destaque-mobile{background-color:#fee133; max-width:100%;}
 #carrossel-mobile{max-width: 640px;margin: 0 auto;}
 #carrossel-mobile .slider {position: relative;zoom: 1;}
@@ -49,7 +50,7 @@
 #carrossel-mobile .slider-target {width: 2000px;margin: 0 auto;}
 #carrossel-mobile .slider ul {margin: 0;padding: 0;list-style-type: none;}
 #carrossel-mobile .slider li {width: 640px;height: 250px;float: left;margin: 0;padding: 0;}
-
+#carrossel-mobile .slider li a{display:block; margin: 0 auto;}
 #carrossel-mobile .slider .inner {padding: 10px;margin: 0 5px;border: 1px solid #333;height: 100%;background-color: #CCC;}
 
 /* selector styling */
@@ -58,3 +59,4 @@
 #selector-mobile a.current {background-color: #309;}
 #selector-mobile ul {margin:0;padding:0;list-style-type: none;}
 #selector-mobile li {display: inline-block; margin-right: 10px;}
+/*/carrossel mobile*/
