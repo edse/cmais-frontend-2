@@ -105,7 +105,7 @@ $('.arrow').click(function(){
 });
 
 $('#selector-mobile a').on('click', function (ev) {
-  ev.preventDefault();
+  //ev.preventDefault();
   var i = /\d/.exec($(this).attr('rel'));
   $('#carrossel-mobile').responsiveCarousel('goToSlide', i);
   slideShow();
