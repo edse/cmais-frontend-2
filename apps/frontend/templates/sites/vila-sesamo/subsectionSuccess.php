@@ -85,46 +85,20 @@
     
   </section>
   <span class="divisa"></span>
+  <?php if(isset($pager)): ?>
+    <?php if(count($pager) > 0): ?>
   <section class="todos-itens ">
     <ul  id="container" class="row-fluid">
+      <?php foreach($pager->getResults() as $k=>$d): ?>
       <li class="span4 element beto come-come">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
+        <h2><a><?php echo $d->getTitle() ?></a></h2>
       </li>
-      <li class="span4 element come-come">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="span4 element elmo">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="span4 element enio">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="span4 element enio">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="element span4 garibaldo">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="element span4 grover">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="element span4 zoe">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="span4 element bel">
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
+      <?php endforeach; ?>
     </ul>
   </section>
+    <?php endif; ?>
+  <?php endif; ?>  
   <span class="divisa"></span>
 </div>
 

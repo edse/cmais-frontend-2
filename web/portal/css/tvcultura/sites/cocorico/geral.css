@@ -386,6 +386,7 @@ bold,
 .relacionados .destaques-small.top { padding-top:10px; }
 
 .box-destaque.ytb img { margin: -23px 0;    position: relative;    z-index: 0; }
+.box-destaque.ytb.img img { margin:0;    position: relative;    z-index: 0; }
 .box-destaque.ytb h3 a,
 .box-destaque.ytb h3 { position: relative;    z-index: 1001; border-radius:10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; }
 .box-destaque.ytb a { position: relative; }
