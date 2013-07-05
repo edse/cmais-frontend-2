@@ -94,6 +94,7 @@
           $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
           $assetSections = $d->getSections();
           foreach($assetSections as $a) {
+            echo $a->getSlug();
             if($a->getParentSectionId() == $personagensSection->getId()) {
               echo $a->getSlug();
               $personagens[] = $a->getSlug();
