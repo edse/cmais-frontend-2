@@ -92,16 +92,17 @@
       <?php foreach($pager->getResults() as $k=>$d): ?>
         <?php
           $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
+          $assetPersonagens = array();
           $assetSections = $d->getSections();
           foreach($assetSections as $a) {
             //echo $a->getSlug();
             if($a->getParentSectionId() == $personagensSection->getId()) {
               //echo $a->getSlug();
-              $personagens[] = $a->getSlug();
+              $assetPersonagens[] = $a->getSlug();
             }
           }
         ?>
-      <li class="span4 element<?php if(is_array($personagens)) echo " " . implode(" ", $personagens); ?>">
+      <li class="span4 element<?php if(is_array($assetPersonagens)) echo " " . implode(" ", $assetPersonagens); ?>">
         
         <?php if($d->AssetType->getSlug() == "video"): ?>
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
