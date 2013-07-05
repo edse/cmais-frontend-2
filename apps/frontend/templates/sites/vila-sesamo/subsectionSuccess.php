@@ -91,19 +91,15 @@
     <ul  id="container" class="row-fluid">
       <?php foreach($pager->getResults() as $k=>$d): ?>
         <?php
-        /*
-          $assetSections = $d->getSections();
           $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
-          
+          $assetSections = $d->getSections();
           foreach($assetSections as $a) {
             if($a->getParentSectionId() == $personagemSection->getId()) {
-              
+              $d->personagens[] = $a->getSlug();
             }
           }
-         *
-         */
         ?>
-      <li class="span4 element beto come-come">
+      <li class="span4 element <?php echo implode(" ",$d->personagens) ?>">
         
         <?php if($d->AssetType->getSlug() == "video"): ?>
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
