@@ -22,9 +22,9 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 1024px) {
- 
+/* 
 .navbar.navbar-fixed-top,
-.header-bar { position:relative; }
+.header-bar { position:relative; }*/
 .header-bar { top:0px !important; }
 #content { top:0 !important; }
 
@@ -62,7 +62,7 @@ and (max-width : 1224px)
 .navbar-inverse .navbar-inner.topo-vila { margin-top:0; }
 .header-bar { top:51px; }
 .row-fluid .span8 { width:100%; }
-.interna #content { top:141px; margin-bottom:141px; padding:0 2%; }
+.interna #content { margin-top:141px; margin-bottom:141px; padding:0 2%; }
 .navbar .btn-navbar { display:none; }
 .nav-collapse.collapse { overflow:visible; max-width: 90%; clear:none; }
 .topo-vila h2 { left: 0; }
@@ -109,7 +109,7 @@ and (max-width : 720px)
 #content h3 a { font-size: 22px; margin:0; text-align:center; }
 .slider .inner { width:104px; height:104px;  }
 #carrossel-personagem .arrow span { margin-top:50%; }
-.interna .header-bar { top:51px; }
+.interna .header-bar {margin-top:51px;}
 /*.interna .header-bar h1 { width: 15%; overflow:hidden; }*/
 .interna .header-bar ul { display: block;    margin-right: 0;   /* width: 85%; */float:right; }
 .interna .header-bar ul:last-child { margin-left:0;} 
@@ -136,6 +136,14 @@ footer .mapa .col-central { width:24.5%; }
 footer .relacionados li { margin-right:3.1%; }
 }
 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : portrait) {
+.pais .row-fluid .span4 {  width: 31%; float:left; overflow:hidden;}
+.interna .header-bar { position:fixed; }
+}
+
 
 @media only screen 
 and (min-device-width : 320px) 
@@ -156,7 +164,7 @@ and (orientation : landscape) {
 #content h3 a { font-size: 22px; margin:0; text-align:center; }
 .slider .inner { width:104px; height:104px;  }
 #carrossel-personagem .arrow span { margin-top:50%; }
-.interna .header-bar { top:51px; }
+.interna .header-bar { margin-top:51px; }
 /*.interna .header-bar h1 { width: 15%; overflow:hidden; }*/
 .interna .header-bar ul { display: block;    margin-right: 0;   /* width: 85%; */float:right; }
 .interna .header-bar ul:last-child { margin-left:0;} 
