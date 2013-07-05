@@ -31,7 +31,7 @@
   
   <!-- titulo da pagina -->
   <div class="tit-pagina tit-extra">
-    <h2><?php echo $section->getTitle() ?></h2>
+    <h2><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></h2>
   </div>
   <!-- titulo da pagina -->
   <!--row-->
