@@ -109,6 +109,7 @@ $('#selector-mobile a').on('click', function (ev) {
     ev.preventDefault();
     var i = /\d/.exec($(this).attr('rel'));
     $('#carrossel-mobile').responsiveCarousel('goToSlide', i);
+    $('#carrossel-mobile').responsiveCarousel('toggleSlideShow');
 });
 
 /* bleh... CSS media queries seem to be applied sometime after the document.ready and before the
