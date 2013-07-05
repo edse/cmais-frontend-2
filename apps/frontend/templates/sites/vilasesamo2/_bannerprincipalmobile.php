@@ -14,15 +14,31 @@
                 <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
               </a>
             </li>
-            <li><div class="inner">Two</div></li>
-            <li><div class="inner">Three</div></li>
-            <li><div class="inner">Four</div></li>
-            <li><div class="inner">Five</div></li>
-            <li><div class="inner">Six</div></li>
-            <li><div class="inner">Seven</div></li>
-            <li><div class="inner">Eight</div></li>
-            <li><div class="inner">Nine</div></li>
-            <li><div class="inner">Ten</div></li>
+            <li>
+              <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
+                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+              </a>
+            </li>
+            <li>
+              <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
+                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+              </a>
+            </li>
+            <li>
+              <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
+                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+              </a>
+            </li>
+            <li>
+              <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
+                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+              </a>
+            </li>
+            <li>
+              <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
+                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+              </a>
+            </li>
           </ul>
           <!--slider-mask-->
           <div class="clearit"></div>
@@ -47,10 +63,6 @@
       <li><a href="#" rel="frame_3"></a></li>
       <li><a href="#" rel="frame_4"></a></li>
       <li><a href="#" rel="frame_5"></a></li>
-      <li><a href="#" rel="frame_6"></a></li>
-      <li><a href="#" rel="frame_7"></a></li>
-      <li><a href="#" rel="frame_8"></a></li>
-      <li><a href="#" rel="frame_9"></a></li>
     </ul>
 
   <!--/seletor carrossel-->   
