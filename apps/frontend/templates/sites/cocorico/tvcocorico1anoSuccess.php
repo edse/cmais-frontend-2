@@ -57,7 +57,11 @@
     <?php endif; ?>
      */
      ?>
-  </div>
+     <!-- rodapé-->
+      <div class="row-fluid  border-top"></div>
+        <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+        <!--/rodapé-->
+      </div>
   <!--/row-->
   <?php
   /*
@@ -90,8 +94,7 @@
     <!--// PAGINACAO -->
     <?php endif; ?>
   <?php endif; ?>
-   */
-   ?>
+  
   
    <?php if(isset($pager)): ?>
   <?php if(count($pager) > 0): ?>
@@ -144,11 +147,9 @@
     <!--// PAGINACAO -->
     <?php endif; ?>
   <?php endif; ?>
+   */
+   ?>
   
-  <!-- rodapé-->
-  <div class="row-fluid  border-top"></div>
-  <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
-  <!--/rodapé-->
 </div>
 <!-- /container-->
 
