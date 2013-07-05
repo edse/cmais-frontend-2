@@ -72,6 +72,7 @@
 <script type="text/javascript" src="/portal/js/hammer.min.js"></script>
 <script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
 <script>
+//carrossel mobile
 var total=0;
 $('#selector-mobile li').each(function(i){
   var width = $(this).width();
@@ -98,23 +99,25 @@ $('#carrossel-mobile').responsiveCarousel({
         $current.addClass('current');
     }
 });
-/* this next part toggles the "auto slide show" option. */
-$('#toggle-slide-show').on('click', function (ev) {
-    ev.preventDefault();
-    $('#carrossel-mobile').responsiveCarousel('toggleSlideShow');
+
+$('.arrow, #selector-mobile a').click(function(){
+  slideShow(); 
 });
 
-/* this lets us jump to a slide */
 $('#selector-mobile a').on('click', function (ev) {
-    ev.preventDefault();
-    var i = /\d/.exec($(this).attr('rel'));
-    $('#carrossel-mobile').responsiveCarousel('goToSlide', i);
+  ev.preventDefault();
+  var i = /\d/.exec($(this).attr('rel'));
+  $('#carrossel-mobile').responsiveCarousel('goToSlide', i);
 });
 
-/* bleh... CSS media queries seem to be applied sometime after the document.ready and before the
-window.load events.  If you are using the "onRedraw" callback, you should call it again after the page
-is finished loading. Not my fault! Blame your browser! :-) */
-$(window).on('load',function(){
-    $('#carrossel-mobile').responsiveCarousel('redraw');
+$(window).on('load', function (ev) {
+  $('#carrossel-mobile').responsiveCarousel('redraw');
+  slideShow();
 });
+
+slideShow = function(ev){
+  //ev.preventDefault();
+  $('#carrossel-mobile').responsiveCarousel('toggleSlideShow');
+};
+//carrossel mobile
 </script>
