@@ -38,7 +38,7 @@
       
       //banner 
       include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
-      include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipalmobile'); 
+      include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal'); 
  
     }
    ?>
