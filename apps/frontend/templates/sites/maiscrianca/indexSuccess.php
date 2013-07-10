@@ -173,8 +173,8 @@ if($feriasSection)
             <?php foreach($displays['destaque-principal-1'] as $k=>$d): ?>
             <li class="span3">
               <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                <?php if($d->retriveImageUrlByImageUsage("image-2") != ""): ?>
-                <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2") ?>" alt="<?php echo $d->getTitle() ?>" />
+                <?php if($d->retriveImageUrlByImageUsage("image-2-b") != ""): ?>
+                <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>" />
                 <?php endif; ?>
                 <?php echo $d->getTitle() ?>
               </a>
@@ -192,8 +192,8 @@ if($feriasSection)
             <?php foreach($displays['destaque-principal-2'] as $k=>$d): ?>
             <li class="span3">
               <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                <?php if($d->retriveImageUrlByImageUsage("image-2") != ""): ?>
-                <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2") ?>" alt="<?php echo $d->getTitle() ?>" />
+                <?php if($d->retriveImageUrlByImageUsage("image-2-b") != ""): ?>
+                <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>" />
                 <?php endif; ?>
                 <?php echo $d->getTitle() ?>
               </a>
