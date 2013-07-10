@@ -195,7 +195,7 @@ if($feriasSection)
                 <?php if($d->retriveImageUrlByImageUsage("image-2-b") != ""): ?>
                 <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>" />
                 <?php endif; ?>
-                <?php echo $d->getTitle() ?>
+                <?php echo $d->getTitle() ?> 
               </a>
             </li>
             <?php endforeach; ?>
