@@ -48,7 +48,7 @@ p { color:#333; font-size: 14px;}
 .nav-tabs > .atividades:hover > a,
 .nav-tabs > .atividades > a { margin-left:-13px; }
 .nav-tabs > .atividades:hover > a p,
-.nav-tabs > .atividades > a p { padding-left:23px; }
+.nav-tabs > .atividades > a p { padding-left:23px; } 
 
 .tab-content { background:#ffce2b; }
 #menu .lista { margin:0 0 0 60px; padding:20px 0; overflow:hidden;  }
