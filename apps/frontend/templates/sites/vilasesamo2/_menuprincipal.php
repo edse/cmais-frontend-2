@@ -3,7 +3,7 @@
      $classLogo = "sprite-logo-sesamo";
      $border = "";
    }else{
-    $classLogo = "";
+    $classLogo = "sprite-logo-sesamo";
     $border = "<i class='sprite-detalhe-amarelo4'></i>";
    }
    

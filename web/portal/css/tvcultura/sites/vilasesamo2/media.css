@@ -136,7 +136,7 @@ and (orientation : landscape) {
 .destaque-filtro .span6 { width: 47%;} 
 footer .mapa .col-central { width:24.5%; }
 footer .relacionados li { margin-right:3.1%; }
-.header-bar{display:block;}
+
 }
 
 @media only screen 
