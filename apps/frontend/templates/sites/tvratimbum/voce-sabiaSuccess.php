@@ -28,7 +28,7 @@
     $('.carrossel').jcarousel({
       wrap: "both"
     });
-    startclock();
+    //startclock();
     
     $('dt a').click(function(){
       $(this).parent().next('dd').toggle();

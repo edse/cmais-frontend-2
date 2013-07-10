@@ -29,7 +29,7 @@
     $('.carrossel').jcarousel({
       wrap: "both"
     });
-    startclock();
+    //startclock();
   })
   var timeID=null;
   var timerRunning=false;
