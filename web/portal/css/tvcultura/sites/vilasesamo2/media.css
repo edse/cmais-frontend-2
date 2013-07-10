@@ -152,9 +152,9 @@ and (min-device-width : 320px)
 and (max-device-width : 720px) 
 and (orientation : landscape) {
 .navbar .btn-navbar { display:block; }
-.header-bar ul,
+/*.header-bar ul,
 .nav-collapse.collapse,
-.topo-vila h2 { display: none; }
+.topo-vila h2 { display: none; }*/
 .header-bar { top:0; z-index: 2000; }
 .navbar .btn-navbar h1 { float:right; font-size: 22px; color:#c6c6c6; text-transform:uppercase; font-weight:normal; margin:0 2% 0 0; text-shadow:none; }
 .navbar .btn-navbar i { float:right; margin-top:10px; }
