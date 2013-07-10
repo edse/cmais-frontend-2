@@ -102,7 +102,7 @@ and (max-width : 720px)
 .navbar .btn-navbar i { float:right; margin-top:10px; }
 .navbar .btn-navbar:hover,
 .navbar .btn-navbar { width:38%; margin-right:4%; }
-.sprite-logo-sesamo { background-position: -415px -214px;    height: 73px;    width: 162px;  }
+.sprite-logo-sesamo { /*background-position: -415px -214px;*/    height: 73px;    width: 162px;  }
 .destaques a i { display:none;}
 .destaques h3 { margin:5px 0 0; min-height:55px;   }
 #content h3 a { font-size: 22px; margin:0; text-align:center; }
