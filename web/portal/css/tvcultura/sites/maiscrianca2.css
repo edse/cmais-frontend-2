@@ -52,7 +52,7 @@ p { color:#333; font-size: 14px;}
 
 .tab-content { background:#ffce2b; }
 #menu .lista { margin:0 0 0 60px; padding:20px 0; overflow:hidden;  }
-#menu .lista li { margin:0 0 10px 10px; min-width: 210px;  }
+#menu .lista li { margin:0 0 10px 0; min-width: 210px; min-height:150px;}
 #menu .lista li a { color:#333; font-size:16px; font-weight:bold; text-align:center; display: block; max-height:150px; overflow:hidden; width:210px;}
 #menu .lista li a p{white-space: nowrap; text-overflow: ellipsis; padding: 0 5px; overflow: hidden;} 
 #menu .lista li img { border:5px solid transparent; clear:both; }
