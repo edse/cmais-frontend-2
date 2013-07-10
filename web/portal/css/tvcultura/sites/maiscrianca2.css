@@ -56,7 +56,7 @@ p { color:#333; font-size: 14px;}
 #menu .lista li a { color:#333; font-size:16px; font-weight:bold; text-align:center; display: block; max-height:150px; overflow:hidden; width:210px;}
 #menu .lista li a p{white-space: nowrap; text-overflow: ellipsis; padding: 0 5px;} 
 #menu .lista li img { border:5px solid transparent; clear:both; }
-#menu .lista li a:hover {color:#ff6733; text-decoration:none;}
+#menu .lista li a:hover {color:#ff6733; text-decoration:none;} 
 #menu .lista li:hover img { border-color:#ff6733; }
 #menu .tab-content { border-radius:0 15px 15px 15px; -moz-border-radius: 0 15px 15px 15px; -webkit-border-radius:0 15px 15px 15px;  }
 .row-fluid.pontilhado,
