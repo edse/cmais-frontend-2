@@ -156,7 +156,7 @@ and (orientation : landscape) {
 .header-bar ul,
 .nav-collapse.collapse,
 .topo-vila h2 { display: none; }
-.header-bar { top:0; z-index: 2000; }
+.header-bar { top:0; z-index: 2000; max-width:980px;}
 .navbar .btn-navbar h1 { float:right; font-size: 22px; color:#c6c6c6; text-transform:uppercase; font-weight:normal; margin:0 2% 0 0; text-shadow:none; }
 .navbar .btn-navbar i { float:right; margin-top:10px; }
 .navbar .btn-navbar:hover,
