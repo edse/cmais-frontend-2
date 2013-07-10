@@ -53,7 +53,8 @@ p { color:#333; font-size: 14px;}
 .tab-content { background:#ffce2b; }
 #menu .lista { margin:0 0 0 60px; padding:20px 0; overflow:hidden;  }
 #menu .lista li { margin:0 0 10px 10px; min-width: 210px;  }
-#menu .lista li a { color:#333; font-size:16px; font-weight:bold; text-align:center; display: block; max-height:150px; overflow:hidden; width:210px;white-space: nowrap; text-overflow: ellipsis; padding: 0 5px;} 
+#menu .lista li a { color:#333; font-size:16px; font-weight:bold; text-align:center; display: block; max-height:150px; overflow:hidden; width:210px;}
+#menu .lista li a p{white-space: nowrap; text-overflow: ellipsis; padding: 0 5px;} 
 #menu .lista li img { border:5px solid transparent; clear:both; }
 #menu .lista li a:hover {color:#ff6733; text-decoration:none;}
 #menu .lista li:hover img { border-color:#ff6733; }
