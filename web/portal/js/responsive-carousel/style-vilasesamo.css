@@ -60,5 +60,5 @@
 #selector-mobile a {display: block;height: 16px;width:16px;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;border: 1px solid #333;background-color: #99F;}
 #selector-mobile a.current {background-color: #309;}
 #selector-mobile ul {margin:0;padding:10px auto;list-style-type: none;}
-#selector-mobile li {display: inline-block; margin-right: 10px;}
+#selector-mobile li {display: inline-block; margin-right: 10px; margin-top:63px;}
 /*/carrossel mobile*/
