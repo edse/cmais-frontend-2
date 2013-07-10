@@ -71,20 +71,23 @@
     <!-- direita -->
     <div class="span4">
       
-      <?php if(isset($displays['camera-caruso'])):?> 
+      <?php /*
+      if(isset($displays['camera-caruso'])):?> 
           <?php if(count($displays['camera-caruso']) > 0): ?>
             <div class="box first">
                 <h2><?php echo $displays['camera-caruso'][0]->Block->getTitle() ?></h2> 
                 <iframe width="300" height="213" src="http://www.youtube.com/embed/<?php echo $displays['camera-caruso'][0]->getTitle(); ?>?rel=0" frameborder="0" allowfullscreen></iframe>
             </div>
          <?php endif; ?>
-      <?php endif; ?>
+      <?php endif;
+      */ ?>
      
       <div class="box">
         <!-- CALENDARIO -->
       <?php $nomePrograma = "rodaviva";?>
       <?php include_partial_from_folder('sites/segundatela', 'global/calendarJson', array('nomePrograma' => $nomePrograma, 'date' => $date)) ?>
       <!-- /CALENDARIO -->
+      
         <h2>Redes Sociais</h2>
         <!-- abas -->
         <div class="">
