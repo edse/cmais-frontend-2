@@ -57,8 +57,8 @@
 
 /* selector styling */
 #selector-mobile{margin:0px auto; padding: 10px auto!important;}
-#selector-mobile a {display: block;height: 16px;width:16px;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;border: 1px solid #333;background-color: #99F;}
+#selector-mobile a {display: block;height: 16px;width:16px;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;border: none;background-color: #fcbb00;}
 #selector-mobile a.current {background-color: #fdff33; border: 2px solid #fcbb00;}
 #selector-mobile ul {margin:0;padding:10px auto;list-style-type: none;}
-#selector-mobile li {display: inline-block; margin-right: 10px; margin-top:63px;}
+#selector-mobile li {display: inline-block; margin-right: 10px; margin-top:10px;}
 /*/carrossel mobile*/
