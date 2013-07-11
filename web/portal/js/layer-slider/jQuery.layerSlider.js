@@ -5,7 +5,7 @@
 		var settings = $.extend({
 			'pauseOnHover': false,
 			'slideshow' : false,
-			'delay': 2000,
+			'delay': 3000,
 			'showArrows': true,
 			'showTimer': true,
 			'uiStyle': 'style01',
