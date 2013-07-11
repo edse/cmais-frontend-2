@@ -16,7 +16,7 @@
 			'showControlsOnHover': false,
 			'controlsOpacity': 1,
 			'showBullets': true,
-			'showBulletsTooltip': true,
+			'showBulletsTooltip': false,
 			'bulletsVerticalPosition': 'bottom',
 			'bulletsVerticalOffset': 0,
 			'bulletsHorizontalPosition': 'center',
