@@ -24,7 +24,7 @@
 .col-esquerda a {margin: -10px 0 8px 0;}
 .base-btn{ position:relative;}
 .btn-esquerda.sombra{background: url(/portal/images/capaPrograma/central-de-relacionamento/sombra-btn.png) no-repeat bottom right; width:100%; height:100%; display:block;position: absolute;top: -16px;left: 3px;z-index: -1;}
-.btn-esquerda .ico{width: 70px;height: 70px;display: block;float: left; background:url(/portal/images/capaPrograma/central-de-relacionamento/icones.png)no-repeat 4px;}
+.btn-esquerda .ico{*width: 70px;*height: 70px;*display: block;width: 70px;height: 70px;display: block;float: left; background:red url(/portal/images/capaPrograma/central-de-relacionamento/icones.png)no-repeat 4px;}
 .ico-trabalhe-conosco{ -ms-background-position-y:12px!important;-moz-background-position-y:12px!important;-webkit-background-position-y: 12px!important;*background-position-y: 12px!important;background-position-y: 12px!important;}
 .ico-para-comprar{ background-position-y: -67px!important}
 .ico-fornecedores{ background-position-y: -147px!important}
