@@ -24,6 +24,21 @@
           </div>
         </li>
         <!--/item-->
+        <li class="slide02" data-easing="easeOutExpo" data-transition="slideRight" >
+          <div class="mpc_ls_slide_background" data-style="scale">
+            <img src="/testes/layer-slider/preview/7/slides/slider2slide02.jpg" alt="Image">
+          </div>
+          <div class="mpc_ls_slide_item" data-x="655" data-y="65" data-delay="750" data-duration="750" data-easing="easeOutExpo" data-effect="slideTop" data-fade="on">
+            <iframe src="http://player.vimeo.com/video/35755200?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="445" height="250" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </div>
+      
+          
+          <div class="mpc_ls_slide_item" data-x="700" data-y="335" data-delay="750" data-duration="750" data-easing="easeOutExpo" data-effect="slideBottom" data-fade="on">
+            <p>Behind the scenes video of Lana Del Rey's shoot for the February issue of Interview Russia by Sean & Seng. Image copyright <a href="http://www.screened.com/lana-del-rey/14-885806/all-images/132-2597697/lana_del_rey_complex_2/131-603732/" target="_blank">Complex Magazine</a></p>
+          </div>
+
+        </li>
+
         <!--item-->
         <li class="slide04" data-easing="easeInExpo" data-transition="slideRight">
           <div class="mpc_ls_slide_background" data-style="scale">
