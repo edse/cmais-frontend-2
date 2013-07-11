@@ -3,7 +3,7 @@
 .container.content .col-equerda h1{text-transform: uppercase;}
 .mais-info{ font-size:16px; padding:15px;color:#FFFFFF !important; text-decoration:none !important; text-transform: uppercase; letter-spacing: 0.12em;}
 .linha{border-top:1px solid #acacac; margin: 0 0 20px 0;height: 0px;}
-.logo-central{margin:50px 0 20px 0;}
+.logo-central{margin:50px 0 20px 0;*margin:50px 0 20px 0;}
 .desc-site{float:right; font-weight:bold; font-size:14px; color:#000;bottom: 15px;position: absolute;right: 1px;}
 
 .col-esquerda h1,
@@ -19,7 +19,7 @@
 .btn-esquerda{margin:20px 0 0 0; overflow: hidden;border-radius:5px;}
 .btn-esquerda a{text-decoration: none;}
 .btn-esquerda h1{font-size:16px;line-height:16px;padding-top: 10px;}
-.btn-esquerda p{font-size:14px; text-transform:none; margin-bottom: 10px;}
+.btn-esquerda p{font-size:14px; text-transform:none; margin-bottom: 10px;*letter-spacing: -0.1em;}
 .col-esquerda i {filter: alpha(opacity=100);-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";-moz-opacity: 1;-khtml-opacity: 1;opacity: 1;}
 .col-esquerda a {margin: -10px 0 8px 0;}
 .base-btn{ position:relative;}
