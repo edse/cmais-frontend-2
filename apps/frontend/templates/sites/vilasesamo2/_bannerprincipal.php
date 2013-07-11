@@ -58,23 +58,7 @@
           </div>
         </li>
         <!--/item-->
-        <!--item-->
-        <li class="slide03" data-easing="easeInExpo" data-transition="slide">
-          <div class="mpc_ls_slide_background" data-style="scale">
-            <img src="/testes/layer-slider/preview/6/slides/slide03bg.jpg">
-            <div class="bottom"></div>
-          </div>
-          <div class="mpc_ls_slide_item" data-x="430" data-y="320" data-delay="1000" data-duration="1000" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
-            <h2>LOREM IPSUM DOLOR</h2>
-          </div>
-          <div class="mpc_ls_slide_item" data-x="288" data-y="380" data-delay="1500" data-duration="1000" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-          </div>
-          <div class="mpc_ls_slide_item" data-x="50" data-y="400" data-delay="3000" data-duration="1000" data-easing="easeOutExpo" data-effect="slideRight" data-fade="on">
-            <a href="#" class="read_more">READ MORE</a>
-          </div>
-        </li>
-        <!--/item-->
+
         <!--item-->
         <li class="slide02" data-easing="easeInExpo" data-transition="slideRight">
           <div class="mpc_ls_slide_background" data-style="center">
