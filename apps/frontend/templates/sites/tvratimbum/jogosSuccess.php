@@ -8,7 +8,7 @@
     ->from('Site s, SectionAsset sa, Asset a')
     ->where('s.id = a.site_id')
     ->andWhere('sa.asset_id = a.id')
-  // ->andWhereIn('sa.section_id',  array(12, 28, 27, 26, 29, 25))
+    ->andWhereIn('sa.section_id',  array(12, 28, 27, 26, 29, 25))
     ->orderBy('s.title')
     ->execute();
 
@@ -99,7 +99,7 @@
       success: function(data){
         $('#infinite_scroll').html(data);
 
-        loadScroll();
+        //loadScroll();
 
       }
     });
