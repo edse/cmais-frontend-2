@@ -24,7 +24,7 @@
 .col-esquerda a {margin: -10px 0 8px 0;}
 .base-btn{ position:relative;}
 .btn-esquerda.sombra{background: url(/portal/images/capaPrograma/central-de-relacionamento/sombra-btn.png) no-repeat bottom right; width:100%; height:100%; display:block;position: absolute;top: -16px;left: 3px;z-index: -1;}
-.btn-esquerda .ico{background: url(/portal/images/capaPrograma/central-de-relacionamento/icones.png) no-repeat; width: 70px;height: 70px;display: block;float: left; }
+.btn-esquerda .ico{background: url(/portal/images/capaPrograma/central-de-relacionamento/icones.png) no-repeat; width: 70px;height: 70px; *width: 40px; *height: 70px;display: block;float: left; }
 .ico-trabalhe-conosco{ background-position: 4px 12px!important;}
 .ico-para-comprar{ background-position: 4px -67px!important}
 .ico-fornecedores{ background-position: 4px -147px!important}
@@ -55,9 +55,9 @@
 #col-sub .fundo-cinza {*width:520px;}
 #col-sub{margin-top:15px}
 #col-sub ul{margin:0;}
+#col-sub .accordion-group {*margin-bottom: 2px!important;}
 #col-sub a.formas{display: block;margin: 0 0 0 15px;padding: 13px;color:#333;width:100%;}
 #col-sub {*background: #eaeaea; *list-style:none;*float:left;overflow:hidden;}
-#col-sub .accordion-group {*margin-bottom: 2px!important;}
 #col-sub .icon-circle-arrow-right{ background-position: -241px -143px;float:left; position: absolute; top: 11px; left: 11px;}
 #col-sub .icon-circle-arrow-down{ background-position: -313px -143px;float:left; position: absolute; top: 11px; left: 11px;}
 #col-sub .fundo-cinza{background: #FFF;}
