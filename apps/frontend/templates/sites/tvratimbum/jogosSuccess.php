@@ -69,7 +69,7 @@
 </script>
 <script>
   function loadScroll(){
-    var page = 2;
+    var page = 3;
     $('#infinite_scroll').scrollLoad({
       url : 'http://tvratimbum.cmais.com.br<?php echo url_for("@homepage") ?>ajax/infinitescroll',
       getData : function() {
