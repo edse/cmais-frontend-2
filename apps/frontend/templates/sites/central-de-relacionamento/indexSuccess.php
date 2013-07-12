@@ -36,14 +36,13 @@ $(document).ready(function(){
       <!--/destaque principal-->
 
       <!--botao-->
-      <?php $n=0; ?>
       <?php if(isset($displays['botoes-central'])):?>
         <?php if(count($displays['botoes-central']) > 0): ?>
           <?php foreach($displays['botoes-central'] as $k=>$d): ?>
           <div class="base-btn">  
             <div class="btn-esquerda cinza-claro-2">
               <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" title="<?php echo $d->getTitle() ?>">
-                <i class="ico ico-<?php echo $d->Asset->getSlug() ?>">teste<?php echo $n + 1; ?></i>
+                <i class="ico ico-<?php echo $d->Asset->getSlug() ?>"></i>
                 <h1><?php echo $d->getTitle() ?></h1>
                 <p><?php echo $d->Asset->getDescription() ?></p>
               </a>
