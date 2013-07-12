@@ -99,10 +99,9 @@
       success: function(data){
         $('#infinite_scroll').html(data);
 
-        
+        loadScroll();
 
       }
-      loadScroll();
     });
   });
 </script>
