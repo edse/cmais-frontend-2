@@ -340,8 +340,8 @@
 .noticia p {clear:both;}
 .noticia a { width:310px; height:186px; overflow:hidden; display:block; margin-bottom:10px;}
 .noticia .titulos {margin-bottom:0;}
-.noticia img {width: 331px; float: right; margin-top: -31px;}
-/*.noticia img {width:310px; float:left;}*/
+/*.noticia img {width: 331px; float: right; margin-top: -31px;}*/
+.noticia img {width:310px; float:left;}
 .noticia .img-video {width:350px; float:left; margin:-44px 0 0 -14px;}
 .noticia2 .titulos { margin-top:10px;}
 .noticia2 h3,
