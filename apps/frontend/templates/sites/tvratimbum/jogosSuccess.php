@@ -94,10 +94,10 @@
   $(document).ready(function(){
     $.ajax({
    
-      url: "http://tvratimbum.cmais.com.br<?php echo url_for("@homepage") ?>ajax/infinitescroll",
-      data: "page=2&section_id=<?php echo $section_id?>&site_id=<?php echo $site_id?>",
-      success: function(data){
-        $('#infinite_scroll').html(data);
+     // url: "http://tvratimbum.cmais.com.br<?php echo url_for("@homepage") ?>ajax/infinitescroll",
+      //data: "page=1&section_id=<?php echo $section_id?>&site_id=<?php echo $site_id?>",
+      //success: function(data){
+      //  $('#infinite_scroll').html(data);
 
         loadScroll();
 
