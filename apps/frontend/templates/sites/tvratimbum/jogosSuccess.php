@@ -68,7 +68,7 @@
 </script>
 <script>
   function loadScroll(){
-    var page = 2;
+    var page = 3;
     $('#infinite_scroll').scrollLoad({
       url : 'http://tvratimbum.cmais.com.br<?php echo url_for("@homepage") ?>ajax/infinitescroll',
       getData : function() {
@@ -93,12 +93,12 @@
   }
   $(document).ready(function(){
     $.ajax({
-   <?php/*
+
       url: "http://tvratimbum.cmais.com.br<?php echo url_for("@homepage") ?>ajax/infinitescroll",
       data: "page=1&section_id=<?php echo $section_id?>&site_id=<?php echo $site_id?>",
       success: function(data){
         $('#infinite_scroll').html(data);
-*/?>;
+
         loadScroll();
 
       }
