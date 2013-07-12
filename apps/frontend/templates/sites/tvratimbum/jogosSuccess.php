@@ -95,7 +95,7 @@
     $.ajax({
    
       url: "http://tvratimbum.cmais.com.br<?php echo url_for("@homepage") ?>ajax/infinitescroll",
-      return "page="+$('#pag').val()+"&section_id=<?php echo $section_id?>&site_id=<?php echo $site_id?>",
+      data: "page=<?php echo $page?>&section_id=<?php echo $section_id?>&site_id=<?php echo $site_id?>",
       success: function(data){
         $('#infinite_scroll').html(data);
 
