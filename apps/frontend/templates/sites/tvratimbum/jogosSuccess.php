@@ -9,6 +9,7 @@
     ->where('s.id = a.site_id')
     ->andWhere('sa.asset_id = a.id')
     ->andWhereIn('sa.section_id',  array(12, 28, 27, 26, 29, 25))
+    ->limit(100)
     ->orderBy('s.title')
     ->execute();
 
