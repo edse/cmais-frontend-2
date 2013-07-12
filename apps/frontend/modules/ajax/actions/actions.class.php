@@ -947,7 +947,7 @@ class ajaxActions extends sfActions
   public function executeInfinitescroll(sfWebRequest $request){
     //if($request->isXmlHttpRequest()){
       $return = '';
-      $items = 24;
+      $items = 99;
       $start = 0;
       $asset_id = intval($request->getParameter('asset_id'));
       $section = intval($request->getParameter('section_id'));

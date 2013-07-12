@@ -8,7 +8,7 @@
     ->from('Site s, SectionAsset sa, Asset a')
     ->where('s.id = a.site_id')
     ->andWhere('sa.asset_id = a.id')
-    ->andWhereIn('sa.section_id',  array(12, 28, 27, 26, 29, 25))
+    ->andWhereIn('sa.section_id',  array(28, 27, 26, 29, 25))  
     ->orderBy('s.title')
     ->execute();
 
@@ -93,13 +93,13 @@
   }
   $(document).ready(function(){
     $.ajax({
-   
+
       url: "http://tvratimbum.cmais.com.br<?php echo url_for("@homepage") ?>ajax/infinitescroll",
       data: "page=1&section_id=<?php echo $section_id?>&site_id=<?php echo $site_id?>",
       success: function(data){
         $('#infinite_scroll').html(data);
 
-        loadScroll();
+       // loadScroll();
 
       }
     });
