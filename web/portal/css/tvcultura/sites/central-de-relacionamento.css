@@ -19,7 +19,7 @@
 .btn-esquerda{margin:20px 0 0 0; overflow: hidden;border-radius:5px;}
 .btn-esquerda a{text-decoration: none;}
 .btn-esquerda h1{float: left;font-size:16px;line-height:16px;padding-top: 10px; padding-left:0; width: 200px;}
-.btn-esquerda p{float: right;font-size:13px; text-transform:none; margin-bottom: 10px;*font-size:13px;width: 300px;}
+.btn-esquerda p{float: left;font-size:13px; text-transform:none; margin-bottom: 10px;*font-size:13px;width: 300px;}
 .col-esquerda i {filter: alpha(opacity=100);-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";-moz-opacity: 1;-khtml-opacity: 1;opacity: 1;}
 .col-esquerda a {margin: -10px 0 8px 0;}
 .base-btn{ position:relative;}
