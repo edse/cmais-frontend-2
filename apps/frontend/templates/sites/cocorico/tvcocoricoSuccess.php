@@ -144,8 +144,8 @@ $(function(){
             
         <?php
 
-        if($sectionEnquete->is_visible == 1):
-          echo "--";
+        if(isset($sectionEnquete->is_visible)):
+          echo "---";
           include_partial_from_folder('sites/cocorico', 'global/tvenquete', array('site'=>$site,'assets'=>$assets, 'respostas'=>$respostas));    
         endif;  
         ?>
