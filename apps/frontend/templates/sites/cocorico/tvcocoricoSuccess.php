@@ -133,24 +133,10 @@ $(function(){
             ->from('AssetAnswer aa')
             ->where('aa.asset_question_id = ?', (int)$assets[0]->AssetQuestion->id)
             ->execute();
-         //para puxar enquete  
-          $sectionEnquete = Doctrine_Query::create()
-          ->select('s.*')
-          ->from('Section s')
-          ->andWhere('s.slug = "enquetes"')
-          ->andWhere('s.is_active = 1')
-          ->andWhere('s.site_id = ?', (int)$site->id)
-          ->execute();  
+          
           ?>
-            
-        <?php
-
-        if($sectionEnquete):
-          echo "-";
-          echo $sectionEnquete->section_id;
-          include_partial_from_folder('sites/cocorico', 'global/tvenquete', array('site'=>$site,'assets'=>$assets, 'respostas'=>$respostas));    
-        endif;  
-        ?>
+        <?php echo count($siteSections) ?>    
+        <?php include_partial_from_folder('sites/cocorico', 'global/tvenquete', array('site'=>$site,'assets'=>$assets, 'respostas'=>$respostas)); ?>
         <!-- /enquete -->
         <!-- fale conosco cr-->
       </div>
