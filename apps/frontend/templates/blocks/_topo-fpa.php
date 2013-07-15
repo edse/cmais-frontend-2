@@ -34,11 +34,7 @@
 <?php endif;?>  
 
 
-    <!--LOGO CULTURA-->
-    <a href="/fpa" title="Fundação Padre Anchieta" class="pull-left">
-      <img src="/portal/images/capaPrograma/fpa/logo-fpa.png" class="logo-fpa" alt="Fundação Padre Anchieta" />
-    </a>
-    <!--/LOGO CULTURA-->
+
 
 
     
@@ -53,9 +49,12 @@
             <span class="icon-bar"></span>
           </a>
      
-          <!-- Be sure to leave the brand out there if you want it shown -->
-          <a class="brand" href="#">Project name</a>
-     
+          <!--LOGO CULTURA-->
+          <a href="/fpa" title="Fundação Padre Anchieta" class="brand">
+            <img src="/portal/images/capaPrograma/fpa/logo-fpa.png" class="logo-fpa" alt="Fundação Padre Anchieta" />
+          </a>
+          <!--/LOGO CULTURA-->
+
           <!-- Everything you want hidden at 940px or less, place within here -->
           <div class="nav-collapse collapse">
             <!-- .nav, .navbar-search, .navbar-form, etc -->
