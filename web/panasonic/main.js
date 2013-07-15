@@ -6,6 +6,42 @@
 add_stage_load_path("busca", "busca.js");
 add_stage_load_path("como_funciona", "como_funciona.js");
 
+var loading_anim = new container ({
+  translate: [220,100,6],
+  rotation: [0.0, 0.0, 0.0, 1.0],
+  visible_p: false,
+  components: [ new gimage ({rotation : [0.0, 0.0, 0.0, 1.0],width : 80, height : 80,src : "imagens/loading_circle.png",})]
+});
+
+loading_anim.start_action = function (obj) {
+  if (obj.visible_p) {
+    return;
+  }
+  obj.visible_p = true;
+  force_redraw ();
+  delete_timer (obj);
+  append_timer (obj, 80, function (obj, count) {
+    if (count > 3750) {
+      delete_timer (obj);
+      obj.visible_p = false;
+    } else {
+      obj.components[0].rotation[0] = - (30 * count) % 360;
+    }
+    force_redraw ();
+  });
+}
+
+loading_anim.end_action = function(obj) {
+  delete_timer (obj);
+  if (obj.visible_p == true) {
+    obj.visible_p = false;
+  }
+  force_redraw ();
+}
+
+
+
+
 extend = function(destination, source) {
   for (var property in source)
     destination[property] = source[property];
@@ -310,9 +346,11 @@ video_player.create = function() {
         break;
       case this.EV_DOWNLOADING:
         //message2.set_data("Carregando...");
-        message2.set_data("Downloading...");
+        loading_anim.start_action (loading_anim);
+        //message2.set_data("Downloading...");
         break;
       case this.EV_PLAYING:
+        loading_anim.end_action (loading_anim);
         //message2.set_data("Playing...");
          //message2.set_data(this.duration);
         break;
@@ -401,10 +439,11 @@ video_player.playback = function(url_video_player) {
     this.player.disconnect();
   }catch(e){
   };
+  loading_anim.end_action(loading_anim);
   this.player.connect(VideoDev, AudioDev);
   this.player.set_movie(url_video_player);
-  //video_player.player.set_buffering_type();
-  this.player.play();  
+  //this.video_player.player.set_buffering_type(index,type);
+  this.player.play();
   video_controls_container.play_or_pause.bg.src = "imagens/icone-pause.png";
 };
 video_player.pause_or_resume = function() {
@@ -592,6 +631,7 @@ function carrega_json_programa (programa){
 
   json_request1.request({
     hook_func: function(data) {
+      loading_anim.end_action(loading_anim);
       btn_cont.def.length = 0;
       btn_cont.remove();
       btn_cont.create(data.length);    
@@ -940,6 +980,7 @@ btn_cont.leave_focus = function() {
 };
 
 btn_cont.show_hide_info_video = function() {
+  loading_anim.end_action(loading_anim);
   if(video_controls_container.play_or_pause.bg.src == "imagens/icone-pause.png"){
    video_player.player.pause();
    video_controls_container.play_or_pause.bg.src = "imagens/icone-play.png"
@@ -1239,6 +1280,8 @@ function full_screen(){
     video_cont.translate = [200,130,1];
     video_controls_container.translate = [280,-130,3];
     video_player.translate = [200,130,3];
+    //loading_anim.translate = [720,-125,6];
+    loading_anim.translate = [220,100,6];
   }else{
     video_player.translate = [0,0,3];
     video_player.video_box.width = 1920;
@@ -1251,7 +1294,9 @@ function full_screen(){
     video_player.bar.visible_p = false;
     video_player.pos.visible_p = false;
     video_player.elapsed.visible_p = false;
-    video_player.duration.visible_p = false;      
+    video_player.duration.visible_p = false;
+    
+    loading_anim.translate = [0,0,6];      
   } 
 }
 
@@ -1287,6 +1332,7 @@ var sobj = stage ({
       to:["default"],
       hook:function(obj) {
          video_player.finalize(); //FINALIZA O OJETO DE VÍDEO_PLAYER AO SAIR DA APLICAÇÃO
+         loading_anim.end_action (loading_anim); // FINALIZA A ANIMAÇÃO
          complete_off_stage (obj);
       },
     },
@@ -1305,6 +1351,7 @@ var sobj = stage ({
     footer,                  // FOOTER DA APLICAÇÃO
     tela_erro,               // TELA DE ERRO
     cont_info,               // INFORMAÇÕES DO VÍDEO
+    loading_anim, //LOADING
     //message2,
     
   ],

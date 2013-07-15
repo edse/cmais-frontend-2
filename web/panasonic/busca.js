@@ -7,6 +7,41 @@ add_package_load_path("pkg_usb_keyboard", "_pkg_usb_keyboard.js");
 add_package_load_path("pkg_keyboard", "_pkg_keyboard.js");
 require("common_env");
 
+var loading_anim = new container ({
+  //translate: [530,-425,6],
+  translate: [0,0,6],
+  rotation: [0.0, 0.0, 0.0, 1.0],
+  visible_p: false,
+  components: [ new gimage ({rotation : [0.0, 0.0, 0.0, 1.0],width : 80, height : 80,src : "imagens/loading_circle.png",})]
+});
+
+loading_anim.start_action = function (obj) {
+  if (obj.visible_p) {
+    return;
+  }
+  obj.visible_p = true;
+  force_redraw ();
+  delete_timer (obj);
+  append_timer (obj, 80, function (obj, count) {
+    if (count > 3750) {
+      delete_timer (obj);
+      obj.visible_p = false;
+    } else {
+      obj.components[0].rotation[0] = - (30 * count) % 360;
+    }
+    force_redraw ();
+  });
+}
+
+loading_anim.end_action = function(obj) {
+  delete_timer (obj);
+  if (obj.visible_p == true) {
+    obj.visible_p = false;
+  }
+  force_redraw ();
+}
+
+
 extend = function(destination, source) {
   for (var property in source)
     destination[property] = source[property];
@@ -694,6 +729,7 @@ function close_player(){
     video_controls_container.translate = [0,-250,0];
     message2.set_data("");
     common_key.set_cursor(sobj, btn_cont);
+    loading_anim.end_action (loading_anim);
     force_redraw();
 }
 
@@ -705,6 +741,8 @@ function full_screen(){
     video_controls_container.translate = [0,-420,3];
     video_player.translate = [0,50,1.1];
     message2.visible_p = true;
+    //loading_anim.translate = [530,-425,6];
+    loading_anim.translate = [0,0,6];
     force_redraw();
   }else{
     message2.visible_p = false;
@@ -721,8 +759,11 @@ function full_screen(){
     video_player.pos.visible_p = false;
     video_player.elapsed.visible_p = false;
     video_player.duration.visible_p = false;
-    force_redraw();
 
+    //loading_anim.translate = [530,-485,6];
+    loading_anim.translate = [0,0,6];
+        
+    force_redraw();
   } 
 }
 
@@ -737,7 +778,7 @@ video_player.create = function() {
   
   //CRIAÇÃO DO MOVIE PLAYER E CONTROLE DE STATUS  
   this.player = new MoviePlayer2({});
-  /*
+  
   this.player.event_hook = function (obj, event, index) {
     var state = this.state;
     switch(state) {
@@ -761,10 +802,11 @@ video_player.create = function() {
        //message1.set_data("Player OK...");
       break;
     case this.EV_DOWNLOADING:
-      //message2.set_data("Carregando...");
+      loading_anim.start_action (loading_anim);
       //message2.set_data("Downloading...");
       break;
     case this.EV_PLAYING:
+      loading_anim.end_action (loading_anim);
       //message2.set_data("Playing...");
        //message2.set_data(this.duration);
       break;
@@ -814,7 +856,7 @@ video_player.create = function() {
       break;
     }
   };
-  */
+  
   this.components = [
     this.video_box = new videobox({width:1280, height:720, color:[0,0,0,0],translate: [0,0, 0],  draw_type: "FULL", visible_p: false}),
     this.box_bar = new gbox({   width:1280, height:80, color: [0,0,0,190], translate: [0,-400,0],}),
@@ -981,6 +1023,7 @@ var sobj = stage ({
     message2,
     tela_erro,               // TELA DE ERRO
     cont_info,               // INFORMAÇÕES DO VÍDEO
+    loading_anim,            // LOADING DO VÍDEO
     
   ],
   key_hook:function(up_down, key) {
