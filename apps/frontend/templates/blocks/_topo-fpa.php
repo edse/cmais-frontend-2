@@ -49,17 +49,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-     
-          <!--LOGO CULTURA-->
-          <a href="/fpa" title="Fundação Padre Anchieta" class="pull-left">
-            <img src="/portal/images/capaPrograma/fpa/logo-fpa.png" class="logo-fpa" alt="Fundação Padre Anchieta" />
-          </a>
-          <!--/LOGO CULTURA-->
-             
-          <!-- Everything you want hidden at 940px or less, place within here -->
-          <div class="nav-collapse collapse">
-            <!-- .nav, .navbar-search, .navbar-form, etc -->
-            <!--LISTA DE BOTOES-->
+          
+          <!--LISTA DE BOTOES-->
             <ul id="topo-fpa" class="nav-pills font-btn nav">
               <?php if($site->getSlug()=="fpa" && $section->getSlug()=="quem-somos"){$ativo="active";}else{$ativo="";} ?>
               <li class="<?php echo $ativo?>">
@@ -132,6 +123,17 @@
               </li>
             </ul>
             <!--/LISTA DE BOTOES-->
+            
+          <!--LOGO CULTURA-->
+          <a href="/fpa" title="Fundação Padre Anchieta" class="pull-left">
+            <img src="/portal/images/capaPrograma/fpa/logo-fpa.png" class="logo-fpa" alt="Fundação Padre Anchieta" />
+          </a>
+          <!--/LOGO CULTURA-->
+             
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse collapse">
+            <!-- .nav, .navbar-search, .navbar-form, etc -->
+            
             
           </div>
      
