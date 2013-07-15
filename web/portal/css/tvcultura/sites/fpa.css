@@ -187,8 +187,9 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 /* /RODAPÉ PORTAL */
 
 @media only screen 
-and (max-width : 1024px) {
+and (max-device-width : 1024px) {
 /* Styles */
-  #topo-fpa{display:none;}
   #rodape-portal{display:none;}
 }
+
+
