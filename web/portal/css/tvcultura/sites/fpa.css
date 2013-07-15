@@ -189,6 +189,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 @media only screen 
 and (max-device-width : 1024px) {
 /* Styles */
+  .col-esquerda,.col-direita{clear: both;}
   #rodape-portal{display:none;}
 }
 
