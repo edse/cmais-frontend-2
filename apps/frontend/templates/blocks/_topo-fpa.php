@@ -41,12 +41,12 @@
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container">
-     
+          
           <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar">1</span>
-            <span class="icon-bar">2</span>
-            <span class="icon-bar">3</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </a>
      
           <!--LOGO CULTURA-->
@@ -54,10 +54,12 @@
             <img src="/portal/images/capaPrograma/fpa/logo-fpa.png" class="logo-fpa" alt="Fundação Padre Anchieta" />
           </a>
           <!--/LOGO CULTURA-->
-
+          teste   
           <!-- Everything you want hidden at 940px or less, place within here -->
           <div class="nav-collapse collapse">
             <!-- .nav, .navbar-search, .navbar-form, etc -->
+            teste 2
+            
           </div>
      
         </div>
