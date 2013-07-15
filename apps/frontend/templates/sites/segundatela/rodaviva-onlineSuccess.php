@@ -71,7 +71,7 @@
     <!-- direita -->
     <div class="span4">
       
-      <?php /*
+      <?php 
       if(isset($displays['camera-caruso'])):?> 
           <?php if(count($displays['camera-caruso']) > 0): ?>
             <div class="box first">
@@ -80,7 +80,7 @@
             </div>
          <?php endif; ?>
       <?php endif;
-      */ ?>
+       ?>
      
       <div class="box">
         <!-- CALENDARIO -->
