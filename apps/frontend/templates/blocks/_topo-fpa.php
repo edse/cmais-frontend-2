@@ -3,7 +3,7 @@
 <html lang="pt">
 <!--HEAD-->
 <head>
-  <meta name="viewport" content="width=device-width, max-width:0.7, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7, user-scalable=no">
 
   
   <!-- SCRIPTS -->
