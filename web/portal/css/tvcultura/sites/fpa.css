@@ -191,5 +191,9 @@ and (max-device-width : 1024px) {
 /* Styles */
   #rodape-portal{display:none;}
 }
-
+@media only screen 
+and (max-device-width : 940px) {
+/* Styles */
+  #topo-fpa{display:none;}
+}
 
