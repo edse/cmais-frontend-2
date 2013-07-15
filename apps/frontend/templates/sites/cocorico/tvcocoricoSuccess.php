@@ -135,7 +135,7 @@ $(function(){
             ->execute();
           
           ?>
-        <?php echo count($siteSections) ?>    
+           
         <?php include_partial_from_folder('sites/cocorico', 'global/tvenquete', array('site'=>$site,'assets'=>$assets, 'respostas'=>$respostas)); ?>
         <!-- /enquete -->
         <!-- fale conosco cr-->
