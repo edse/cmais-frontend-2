@@ -8,20 +8,13 @@
   $(document).ready(function() {
     // Announce the new orientation number
     if(window.orientation == 0 || window.orientation == 90){
-      $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7">');
+      $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8">');
     }else if(window.oritation == -90 || window.orientation == -180){
       $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">');
     }
     
   });
-  window.addEventListener("orientationchange", function() {
-    // Announce the new orientation number
-    if(window.orientation == 0 || window.orientation == 90){
-      $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7">');
-    }else if(window.oritation == -90 || window.orientation == -180){
-      $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">');
-    }
-  }, false);
+
   </script>
   <!-- SCRIPTS -->
   <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
