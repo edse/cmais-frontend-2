@@ -40,7 +40,7 @@
   <!--CONTAINER-->
   <div class="container principal">
     <div class="navbar">
-      <div class="navbar-inner">
+      <div class="">
         
           
           <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
