@@ -4,7 +4,13 @@
 <!--HEAD-->
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
-  
+  <script>
+  // Listen for orientation changes
+  window.addEventListener("orientationchange", function() {
+    // Announce the new orientation number
+    alert(window.orientation);
+  }, false);
+  </script>
   <!-- SCRIPTS -->
   <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
   <script src="/portal/js/bootstrap/bootstrap.min.js"></script>
