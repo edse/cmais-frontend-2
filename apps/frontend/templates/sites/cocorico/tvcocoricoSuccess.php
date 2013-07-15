@@ -143,7 +143,7 @@ $(function(){
           ?>
             
         <?php
-        if(isset($sectionEnquete->is_active)):
+        if(isset($sectionEnquete)):
           echo "true";
           include_partial_from_folder('sites/cocorico', 'global/tvenquete', array('site'=>$site,'assets'=>$assets, 'respostas'=>$respostas));
         else:
