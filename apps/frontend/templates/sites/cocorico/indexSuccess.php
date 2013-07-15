@@ -270,7 +270,11 @@
             ->execute();
             
           ?>  
-        <?php include_partial_from_folder('sites/cocorico', 'global/tvenquete', array('site'=>$site,'assets'=>$assets, 'respostas'=>$respostas)) ?>
+        <?php
+        if($assets[0]->is_active):
+         include_partial_from_folder('sites/cocorico', 'global/tvenquete', array('site'=>$site,'assets'=>$assets, 'respostas'=>$respostas));
+        endif; 
+        ?>
         <!--/ENQUETE-->
       </div>
     </div>
