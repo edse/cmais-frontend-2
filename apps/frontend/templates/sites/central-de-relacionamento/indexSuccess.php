@@ -24,7 +24,7 @@ $(document).ready(function(){
             <h3><?php echo $d->Asset->getDescription() ?></h3>
             <p><?php echo html_entity_decode($d->Asset->AssetContent->getContent()) ?></p>
             <br/> 
-            <a href="/central-de-relacionamento/perguntas-frequentes" class="btn btn-success btn-large btn-block mais-info" title="Perguntas Frequentes">
+            <a href="/central-de-relacionamento/perguntas-frequentes" class="" title="Perguntas Frequentes">
               <div class="container-btn">
                 <i class="ico-perg"></i>Perguntas Frequentes
               </div>
