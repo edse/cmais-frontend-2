@@ -41,7 +41,15 @@
     </a>
     <!--/LOGO CULTURA-->
 
-    <!--LISTA DE BOTOES-->
+    
+    
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+     
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <!--LISTA DE BOTOES-->
     <ul id="topo-fpa" class="nav-pills font-btn nav">
       <?php if($site->getSlug()=="fpa" && $section->getSlug()=="quem-somos"){$ativo="active";}else{$ativo="";} ?>
       <li class="<?php echo $ativo?>">
@@ -114,16 +122,6 @@
       </li>
     </ul>
     <!--/LISTA DE BOTOES-->
-    
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">
-     
-          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
           </a>
      
           <!-- Be sure to leave the brand out there if you want it shown -->
