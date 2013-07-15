@@ -14,7 +14,7 @@
 .col-esquerda{border-radius: 5px;}
 .col-esquerda h3{font-size: 20px; padding:0 0 0 9px;}
 .col-esquerda a{color:#333399; font-weight: normal!important; text-decoration: underline;}
-.col-esquerda .container-btn{position:relative;padding-left:52px}
+.col-esquerda .container-btn{position:relative;padding-left:52px; *padding-left:10px;}
 .col-esquerda .ico-perg{margin:-8px 0;background: url(/portal/images/capaPrograma/central-de-relacionamento/icone-perguntas.png) no-repeat; width:35px; height:35px; display: block;position:absolute; left:34px;}
 .btn-esquerda{margin:20px 0 0 0; overflow: hidden;border-radius:5px;}
 .btn-esquerda a{text-decoration: none;}
