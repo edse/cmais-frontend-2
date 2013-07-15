@@ -144,7 +144,7 @@ $(function(){
             
         <?php
         echo $sectionEnquete->is_active;
-        if($sectionEnquete->getIsActive()):
+        if($sectionEnquete):
           include_partial_from_folder('sites/cocorico', 'global/tvenquete', array('site'=>$site,'assets'=>$assets, 'respostas'=>$respostas));    
         endif;  
         ?>
