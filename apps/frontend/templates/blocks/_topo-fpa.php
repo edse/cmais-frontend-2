@@ -5,7 +5,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
   <script>
-  window.addEventListener("onLoad", function() {
+  window.addEventListener("onload", function() {
     // Announce the new orientation number
     alert(window.orientation);
   }, false);
