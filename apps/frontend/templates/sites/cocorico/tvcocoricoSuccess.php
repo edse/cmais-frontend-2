@@ -138,13 +138,14 @@ $(function(){
           ->select('s.*')
           ->from('Section s')
           ->andWhere('s.slug = "enquetes"')
+          ->andWhere('s.is_active = 1')
           ->andWhere('s.site_id = ?', (int)$site->id)
           ->execute();  
           ?>
             
         <?php
 
-        if(isset($sectionEnquete->is_active)):
+        if(isset($sectionEnquete)):
           echo "----";
           include_partial_from_folder('sites/cocorico', 'global/tvenquete', array('site'=>$site,'assets'=>$assets, 'respostas'=>$respostas));    
         endif;  
