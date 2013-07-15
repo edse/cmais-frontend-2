@@ -1,30 +1,6 @@
-<?php use_helper('I18N', 'Date') ?>  
-<!doctype html>
-<html lang="pt">
-<!--HEAD-->
-<head>
- 
-  <!-- SCRIPTS -->
-  <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-  <script src="/portal/js/bootstrap/bootstrap.min.js"></script>
-  <script src="/portal/js/fpa.js" type="text/javascript"></script>
-  <!-- SCRIPTS -->
-  
-  <!-- CSS BOOTSTRAP -->
-  <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap-responsive.min.css">
-  <link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
-  <link rel="stylesheet" href="/portal/css/tvcultura/sites/fpa.css" type="text/css" />
-  <?php if($site->getSlug()=="central-de-relacionamento"):?>
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/central-de-relacionamento.css" type="text/css" />
-  <?php endif;?>  
-  <!-- /CSS BOOTSTRAP -->
-    
-</head>
-<!--HEAD-->
-<?php $slug = substr($section->getSlug(),0, 6); ?>
-<!--BODY-->
-<body <?php if ($site->getSlug()=="fpa" && $slug == "decada") echo "class='linha-do-tempo'";?> >
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/topo-fpa.css" type="text/css" />
+<script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/portal/js/fpa.js"></script>
 
 <!--FUNDO-TOPO-->
 <?php if ($site->getSlug()=="fpa" && $slug == "decada"):?>
@@ -51,7 +27,7 @@
 
       <?php if(substr($section->getSlug(), 0, 6)=="decada"){$ativo="active";}else{$ativo="";} ?>
       <li class="dropdown <?php echo $ativo?>" id="acervo">
-        <a class="link <?php echo $ativo?>" data-toggle="dropdown" href="#" title="Acervo">
+        <a class="link <?php echo $ativo?>" data-toggle="dropdown" href="#acervo" title="Acervo">
           Acervo
           <b class="caret"></b>
         </a>
@@ -118,5 +94,5 @@
   </div>
   <!--/CONTAINER-->
 
-</div> 
+</div>
 <!-- /FUNDO-TOPO-->
