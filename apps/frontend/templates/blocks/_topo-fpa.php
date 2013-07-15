@@ -8,8 +8,7 @@
   
   <!-- SCRIPTS -->
   <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-  <script src="/portal/js/bootstrap/bootstrap.min.js"></script>
-  <script src="/portal/js/bootstrap/bootstrap-collapse.js"></script>
+  <script src="/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js"></script>
   <script src="/portal/js/fpa.js" type="text/javascript"></script>
   <!-- SCRIPTS -->
   
