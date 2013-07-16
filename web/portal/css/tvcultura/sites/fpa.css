@@ -194,10 +194,11 @@ and (max-device-width : 1024px) {
 }
 @media only screen 
 and (max-device-width : 980px) {
-  #topo-fpa{display:none;}
+  
 }
 @media only screen 
 and (max-device-width : 940px) {
+  #topo-fpa{display:none;}
   .btn-esquerda .ico{width:30px }
   .col-esquerda .mais-info{font-size:12px; padding:15px 10px;}
 }
