@@ -111,7 +111,7 @@ and (max-width : 940px) {
 
 @media only screen 
 and (max-width : 480px) {
-  
+  #fundo-top{position:fixed;width:100%;}
   .logo-central{width: 150px;left: 50%;position: relative;clear:both;}
   .desc-site p{display: none;}
 }
