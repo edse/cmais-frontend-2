@@ -196,7 +196,7 @@ and (max-device-width : 1024px) {
 and (max-width : 980px) {
    #topo-fpa{display:none;}
 }
-dia only screen 
+@media only screen 
 and (max-width : 480px) {
   #fundo-topo{padding: 5px;}}
 }
