@@ -213,7 +213,7 @@ class ajaxActions extends sfActions
         if($schedules[0]->getUrl()!=""){
           die("self.location.href='".$schedules[0]->getUrl()."'");
         }
-        
+        /*
         if($schedules[0]->program_id == 542){
           die("self.location.href='http://tvcultura.cmais.com.br/doctorwho/aovivo'");
         }
@@ -221,6 +221,7 @@ class ajaxActions extends sfActions
         if($schedules[0]->program_id == 788){
           die("self.location.href='http://tvcultura.cmais.com.br/sarahjane/aovivo'");
         }
+         * */
         
         $block = false;
         if($schedules[0]->getIsGeoblocked()){
