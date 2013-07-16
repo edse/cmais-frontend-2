@@ -193,11 +193,13 @@ and (max-device-width : 1024px) {
   #rodape-portal{display:none;}
 }
 @media only screen 
-and (max-device-width : 980px) {
-  #topo-fpa{display:none;}
+and (max-width : 980px) {
+   #topo-fpa{display:none;}
 }
 @media only screen 
-and (max-device-width : 940px) {
-  .btn-esquerda .ico{width:30px }
-  .col-esquerda .mais-info{font-size:12px; padding:15px 10px;}
+and (max-width : 480px) {
+  #fundo-topo{padding: 5px;}
+  .container{padding:5px 0 5px 5px;}
+  .desc-site{display:none;}
 }
+
