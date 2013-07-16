@@ -72,7 +72,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 /* LINHA DO TEMPO */
 #linha-do-tempo {margin-top:170px; text-align:left;}
 #linha-do-tempo .navbar-fixed-top{background: #f1f1f1;margin-top:53px;height: 100px;z-index:0;}
-#linha-do-tempo .navbar-fixed-top .container{position:relative;width: 980px;height:96px;}
+#linha-do-tempo .navbar-fixed-top .container{position:relative;max-width: 980px;height:96px;}
 #linha-do-tempo .navbar-fixed-top h1,
 #linha-do-tempo .navbar-fixed-top a.decadas{font-family:"gotham_lightregular"; font-size:36px;color:#333;font-weight: normal;}
 #linha-do-tempo .navbar-fixed-top a.decadas{float: right;color: #666;background: url(/portal/images/capaPrograma/fpa/btn-fundo-anos.png) no-repeat;line-height: 57px;width: 55px;text-align: center;margin: 17px 20px 0 0;background-position: 0 -56px;}
