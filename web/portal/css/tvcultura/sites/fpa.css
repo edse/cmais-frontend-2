@@ -201,5 +201,6 @@ and (max-width : 480px) {
   #fundo-topo{padding: 5px;}
   .container{padding:5px 0 5px 5px;}
   .container.principal{padding:0;}
+  .desc-site{display:none;}
 }
 
