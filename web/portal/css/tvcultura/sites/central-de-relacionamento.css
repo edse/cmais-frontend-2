@@ -97,10 +97,14 @@
 #img-destaque{max-width: 972px; height: 200px; margin:0 0 20px;overflow: hidden;}
 /* /CONTENT */
 
+
 @media only screen 
 and (max-width : 940px) {
   .desc-site p{max-width: 260px; text-align: right;} 
+  .col-esquerda .mais-info{font-size:12px; padding:15px 10px;}
+  .btn-esquerda p{float: left;font-size:13px; text-transform:none; margin-bottom: 10px;*font-size:13px;max-width: 100px;}
 }
+@me
 
 @media only screen 
 and (max-width : 480px) {
