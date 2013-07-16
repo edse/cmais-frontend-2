@@ -3,7 +3,7 @@
 <html lang="pt">
 <!--HEAD-->
 <head>
-  <meta name="viewport" content="width=device-width, content=980px, initial-scale=0.7, maximum-scale=1">
+  
 
   <!-- SCRIPTS -->
   <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
