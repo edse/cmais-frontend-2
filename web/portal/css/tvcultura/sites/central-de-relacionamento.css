@@ -100,5 +100,5 @@
 @media only screen 
 and (max-device-width : 940px) {
   max-width: 260px;
-  text-align: right;
+  text-align: right; 
 }
