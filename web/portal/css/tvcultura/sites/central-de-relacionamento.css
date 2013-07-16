@@ -99,24 +99,12 @@
 
 @media only screen 
 and (max-width : 940px) {
-  .desc-site p{
-    max-width: 260px;
-    text-align: right;
-  } 
+  .desc-site p{max-width: 260px; text-align: right;} 
 }
 
 @media only screen 
 and (max-width : 480px) {
-  body{
-    padding:10px;
-  }
-  .logo-central{
-    width: 150px;
-    left: 50%;
-    position: relative;
-    clear:both;
-  }
-  .desc-site p{
-    display: none;
-  }
+  
+  .logo-central{width: 150px;left: 50%;position: relative;clear:both;}
+  .desc-site p{display: none;}
 }
