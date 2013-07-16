@@ -199,5 +199,5 @@ and (max-device-width : 980px) {
 @media only screen 
 and (max-device-width : 940px) {
   .btn-esquerda .ico{width:30px }
-  .col-esquerda .mais-info{font-size:12px; padding:30px 0;}
+  .col-esquerda .mais-info{font-size:12px; padding:15px 10px;}
 }
