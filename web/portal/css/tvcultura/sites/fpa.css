@@ -189,7 +189,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 @media only screen 
 and (max-device-width : 1024px) {
 /* Styles */
-  #topo-fpa.nav { position: absolute; margin: -3px 0 0 74px; max-width: 890px;}
+  #topo-fpa.nav { position: absolute; margin: -3px 0 0 94px; max-width: 890px;}
   #rodape-portal{display:none;}
 }
 
