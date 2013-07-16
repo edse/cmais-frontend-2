@@ -200,5 +200,6 @@ and (max-width : 980px) {
 and (max-width : 480px) {
   #fundo-topo{padding: 5px;}
   .container{padding:5px 0 5px 5px;}
+  .container.principal{padding:0;}
 }
 
