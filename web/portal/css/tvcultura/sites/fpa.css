@@ -198,6 +198,7 @@ and (max-width : 980px) {
 }
 @media only screen 
 and (max-width : 480px) {
-  #fundo-topo{padding: 5px;}}
+  #fundo-topo{padding: 5px;}
+  .container{padding:5px;}
 }
 
