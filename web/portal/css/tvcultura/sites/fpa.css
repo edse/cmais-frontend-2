@@ -198,6 +198,6 @@ and (max-width : 980px) {
 }
 dia only screen 
 and (max-width : 480px) {
-  #fundo-topo{position:fixed;}
+  #fundo-topo{padding: 5px;}}
 }
 
