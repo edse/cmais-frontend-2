@@ -108,9 +108,10 @@ and (max-width : 940px) {
 @media only screen 
 and (max-width : 940px) {
   .logo-central{
-    width: 50px;
+    width: 150px;
     left: 50%;
-    position: absolute;
+    position: relative;
+    clear:both;
   }
   .desc-site p{
     display: none;
