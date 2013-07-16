@@ -192,5 +192,12 @@ and (max-device-width : 1024px) {
   #topo-fpa.nav { position: absolute; margin: -3px 0 0 94px; max-width: 890px;}
   #rodape-portal{display:none;}
 }
-
-
+@media only screen 
+and (max-device-width : 980px) {
+  #topo-fpa{display:none;}
+}
+@media only screen 
+and (max-device-width : 940px) {
+  .btn-esquerda .ico{width:30px }
+  .col-esquerda .mais-info{font-size:12px;}
+}
