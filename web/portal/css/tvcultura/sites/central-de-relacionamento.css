@@ -99,6 +99,8 @@
 
 @media only screen 
 and (max-width : 940px) {
-  max-width: 260px;
-  text-align: right; 
+  .desc-site p{
+    max-width: 260px;
+    text-align: right;
+  } 
 }
