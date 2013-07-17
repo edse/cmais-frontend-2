@@ -72,7 +72,7 @@
 .texto-preto{color:#333 !important;}
 .texto-verde{color:#106d41 !important}
 
-#row1, #row2, #row3, #row4, #row5, #row6, #row7{margin:7px auto;display:block;}
+#row1, #row2, #row3, #row4, #row5, #row6, #row7{margin:7px auto;}
 #email-central .pageheader{margin:0 0 10px 0;}
 #email-central input[type=text]{max-width: 295px;*margin-left:-120px;}
 #email-central input[type=checkbox]{max-width: 30px;}

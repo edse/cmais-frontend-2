@@ -100,7 +100,7 @@ $(document).ready(function(){
               </div>
               <!-- /row1 -->
               <!-- row2 -->
-              <div class="row" id="row2">
+              <div class="row" id="row2" style="display:block;">
                 <div class="page-header">
                   <h1>Formulário de cadastro</h1>
                   <p><span class="label label-red">Email não cadastrado</span></p>
