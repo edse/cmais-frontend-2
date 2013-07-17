@@ -7,6 +7,7 @@
 <?php use_helper('I18N', 'Date') ?>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<!-- 1 -->
 
 <script>
   $("body").addClass("interna <?php echo $parentSection->getSlug() ?>");
