@@ -36,22 +36,25 @@ $(document).ready(function(){
       <!--/destaque principal-->
 
       <!--botao-->
-      <?php if(isset($displays['botoes-central'])):?>
-        <?php if(count($displays['botoes-central']) > 0): ?>
-          <?php foreach($displays['botoes-central'] as $k=>$d): ?>
-          <div class="base-btn">  
-            <div class="btn-esquerda cinza-claro-2">
-              <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" title="<?php echo $d->getTitle() ?>">
-                <i class="ico ico-<?php echo $d->Asset->getSlug() ?>"></i>
-                <h1><?php echo $d->getTitle() ?></h1>
-                <p><?php echo $d->Asset->getDescription() ?></p>
-              </a>
+      <div class="botoes-central">
+        <?php if(isset($displays['botoes-central'])):?>
+          <?php if(count($displays['botoes-central']) > 0): ?>
+            <?php foreach($displays['botoes-central'] as $k=>$d): ?>
+            <div class="base-btn">  
+              <div class="btn-esquerda cinza-claro-2">
+                <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" title="<?php echo $d->getTitle() ?>">
+                  <i class="ico ico-<?php echo $d->Asset->getSlug() ?>"></i>
+                  <h1><?php echo $d->getTitle() ?></h1>
+                  <p><?php echo $d->Asset->getDescription() ?></p>
+                </a>
+              </div>
+              <div class="btn-esquerda sombra"></div>
             </div>
-            <div class="btn-esquerda sombra"></div>
-          </div>
-          <?php endforeach; ?>
+            <?php endforeach; ?>
+          <?php endif; ?>
         <?php endif; ?>
-      <?php endif; ?>
+      </div>
+      <!--/botao-->
     </div>
     <!--/coluna esquerda-->
     <!--coluna direita-->
@@ -1244,7 +1247,26 @@ $(document).ready(function(){
             <li>4) Indique se quer ser informado sobre ações promovidas pela FPA; pesquisas, concursos, promoções, eventos etc.</li>  
           </ul>  
         </div>  
-       
+        <!--botao-->
+        <div class="botoes-central-celular" style="display:none;">
+          <?php if(isset($displays['botoes-central'])):?>
+            <?php if(count($displays['botoes-central']) > 0): ?>
+              <?php foreach($displays['botoes-central'] as $k=>$d): ?>
+              <div class="base-btn">  
+                <div class="btn-esquerda cinza-claro-2">
+                  <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" title="<?php echo $d->getTitle() ?>">
+                    <i class="ico ico-<?php echo $d->Asset->getSlug() ?>"></i>
+                    <h1><?php echo $d->getTitle() ?></h1>
+                    <p><?php echo $d->Asset->getDescription() ?></p>
+                  </a>
+                </div>
+                <div class="btn-esquerda sombra"></div>
+              </div>
+              <?php endforeach; ?>
+            <?php endif; ?>
+          <?php endif; ?>
+        </div>
+        <!--/botao-->
         
  
       
