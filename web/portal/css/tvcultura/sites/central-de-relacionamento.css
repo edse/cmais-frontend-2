@@ -1,5 +1,5 @@
 /* GERAL */
-.container {min-height: 199px;}
+.container.principal{min-height: 50px;}
 .container.content .col-equerda h1{text-transform: uppercase;}
 .mais-info{ font-size:16px; padding:15px;color:#FFFFFF !important; text-decoration:none !important; text-transform: uppercase; letter-spacing: 0.12em; width:100%; padding:15px 0;}
 .linha{border-top:1px solid #acacac; margin: 0 0 20px 0;*margin: 30px 0 20px 0;height: 0px;}
@@ -54,13 +54,14 @@
 .label{margin:10px 0px}
 
 #col-sub .fundo-cinza {*width:520px;}
+#col-sub ul li{position:relative;}
 #col-sub{margin-top:15px}
 #col-sub ul{margin:0;}
 #col-sub .accordion-group {*margin-bottom: 2px!important;}
 #col-sub a.formas{display: block;margin: 0 0 0 15px;padding: 13px;color:#333;width:100%;}
 #col-sub {*background: #eaeaea; *list-style:none;*float:left;overflow:hidden;}
-#col-sub .icon-circle-arrow-right{ background-position: -241px -143px;float:left; position: absolute; top: 11px; left: 11px;}
-#col-sub .icon-circle-arrow-down{ background-position: -313px -143px;float:left; position: absolute; top: 11px; left: 11px;}
+#col-sub .icon-circle-arrow-right{ background-position: -241px -143px;float:left; position: absolute; top: 13px; left: 11px;}
+#col-sub .icon-circle-arrow-down{ background-position: -313px -143px;float:left; position: absolute; top: 13px; left: 11px;}
 #col-sub .fundo-cinza{background: #FFF;}
 #col-sub .accordion-heading{position:relative;}
 #col-sub .box-inner{margin:10px}
