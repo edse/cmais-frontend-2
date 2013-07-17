@@ -11,5 +11,6 @@
 #barra-site .topo-programa { margin-left:42px; }
 .bg-site { background-position:bottom; }
 #barra-site .redes {  width:auto !important; }
-
+.noticia.video img {width: 310px;float: left;}
+.box-playlist.video a img {width: 173px;margin-top: -17px;float: right;}
 /* /topo site */

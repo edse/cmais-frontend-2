@@ -78,8 +78,8 @@
 /******** BOX-PLAYLIST ********/
 .box-playlist li { width:157px; height:230px; float:left; margin-right:4px; text-align:left; }
 .box-playlist a { display:block; text-align:left; color:#333; font-size:14px; clear:both; max-height:96px; overflow:hidden; }
-.box-playlist a img{width: 173px; margin-top: -17px;float:right;}
-/*.box-playlist a img { width:150px;}*/
+/*.box-playlist a img{width: 173px; margin-top: -17px;float:right;}*/
+.box-playlist a img { width:150px;}
 /*.box-playlist a .img-video {  width:200px; margin:-19px 0 0 -25px;}*/
 .box-playlist .img { margin:0; height:112px; border:3px solid #ffffff; width: 150px }
 .box-playlist .img:hover { border-color:#f08507; }
