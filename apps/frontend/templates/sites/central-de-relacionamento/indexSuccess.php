@@ -268,7 +268,7 @@ $(document).ready(function(){
               </div>
               <!-- /row2 -->
               <!-- row3 -->
-              <div class="row" id="row3">
+              <div class="row" id="row3" style="display:block;">
                 <div class="page-header">
                   <h1>Formulário de cadastro preenchido</h1>
                   <p><span class="label label-success">Email cadastrado</span></p>
@@ -436,7 +436,7 @@ $(document).ready(function(){
                 </div>
                 <!-- /row3 -->
                 <!-- row4 -->
-                <div class="row" id="row4" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:block;";}else{echo"display:none;";}?>">
+                <div class="row" id="row4" style="display:block;" ><!--style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:block;";}else{echo"display:none;";}?>"-->
                   <div class="page-header">
                     <h1>Enviar mensagem</h1>
                     <p><span class="label label-success">Email cadastrado e validado</span></p>
@@ -648,7 +648,7 @@ $(document).ready(function(){
                 <!-- /row4 -->
                 
                 <!-- row5 -->
-                <div class="row" id="row5" style="display:none;">
+                <div class="row" id="row5" style="display:block;">
                   <div class="page-header">
                     <h1>Mensagem de erro</h1>
                     <p><span class="label label-important">Email cadastrado mas não validado</span></p>
@@ -707,7 +707,7 @@ $(document).ready(function(){
                 </div>
                 <!-- /row 8-->
                 <!-- row 9-->
-                <div class="row" id="row9" style="display:none;">
+                <div class="row" id="row9" style="display:block;">
                   <div class="page-header">
                     <h1>Cadastro alterado</h1>
                     <p><span class="label label-success">Cadastrado alterado com sucesso</span></p>
