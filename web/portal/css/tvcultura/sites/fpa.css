@@ -198,11 +198,20 @@ and (max-width : 980px) {
 }
 @media only screen 
 and (max-width : 480px) {
-  #fundo-topo{padding: 5px;}
+  #fundo-topo{padding: 10px;}
   .container{padding:5px 0 5px 5px;}
   .desc-site{display:none;}
   /*form central de relacionamento */
   .form-horizontal .control-group > label {float: left!important;width: 100px!important;padding-top: 5px!important;text-align: right!important;}
+  .col-direita p.help-block{padding:0;}
+}
+@media only screen 
+and (max-width : 320px) {
+  #fundo-topo{padding: 5px;}
+  .container{padding:5px 0 5px 5px;}
+  /*form central de relacionamento */
+ .control-group{padding:5px}
+  .form-horizontal .control-group > label {float: left!important;width: 50px!important;padding-top: 5px!important;text-align: right!important;}
   .col-direita p.help-block{padding:0;}
 }
 
