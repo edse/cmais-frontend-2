@@ -1248,7 +1248,7 @@ $(document).ready(function(){
           </ul>  
         </div>  
         <!--botao-->
-        <div class="botoes-central-celular" style="display:none;">
+        <div class="botoes-central-celular">
           <?php if(isset($displays['botoes-central'])):?>
             <?php if(count($displays['botoes-central']) > 0): ?>
               <?php foreach($displays['botoes-central'] as $k=>$d): ?>
