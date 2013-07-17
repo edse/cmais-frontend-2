@@ -213,6 +213,6 @@ and (max-width : 320px) {
  .control-group{padding:10px}
   .form-horizontal .control-group > label {float: left!important;width: 50px!important;padding-top: 5px!important;text-align: right!important;}
   .col-direita p.help-block{padding:0;}
-  #email-central .form-horizontal .controls {margin-left: 57px;}
+  #email-central .form-horizontal .controls {margin-left: 57px!important;}
 }
 
