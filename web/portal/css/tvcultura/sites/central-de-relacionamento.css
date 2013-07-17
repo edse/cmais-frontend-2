@@ -113,5 +113,5 @@ and (max-width : 940px) {
 and (max-width : 480px) {
   .logo-central{width: 150px;left: 50%;position: relative;clear:both;}
   .desc-site{display: none;}
-  .form-horizontal .control-group > label {float: left!important;width: 100px!important;padding-top: 5px!important;text-align: right!important;}
+  
 }

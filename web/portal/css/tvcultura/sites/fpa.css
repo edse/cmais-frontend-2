@@ -201,5 +201,6 @@ and (max-width : 480px) {
   #fundo-topo{padding: 5px;}
   .container{padding:5px 0 5px 5px;}
   .desc-site{display:none;}
+  .form-horizontal .control-group > label {float: left!important;width: 100px!important;padding-top: 5px!important;text-align: right!important;}
 }
 
