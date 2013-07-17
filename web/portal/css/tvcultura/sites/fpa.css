@@ -215,6 +215,6 @@ and (max-width : 320px) {
   .col-direita p.help-block{padding:0;}
   #email-central .form-horizontal .controls {margin-left: 67px!important;}
   #email-central select{width: 200px;}
-  #email-central .botoes-form {margin-left: 77px;}
+  #email-central .botoes-form {margin-left: 77px!important;}
 }
 
