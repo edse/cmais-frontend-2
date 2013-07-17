@@ -209,7 +209,7 @@ and (max-width : 480px) {
   .logo-central{margin:8px 0 20px 0!important;}
   .form-horizontal .control-group > label {float: left!important;width: 100px!important;padding-top: 5px!important;text-align: right!important;}
   .col-direita p.help-block{padding:0;}
-  #email-central .botoes-form {margin-left: 112px!important;}
+  #email-central .botoes-form {margin-left: 118px!important;}
 }
 @media only screen 
 and (max-width : 320px) {
