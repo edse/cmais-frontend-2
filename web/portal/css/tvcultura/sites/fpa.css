@@ -197,7 +197,7 @@ and (max-width : 980px) {
    #topo-fpa{display:none;}
    #email-central .form-horizontal .control-label {max-width: 81px;}
    #email-central .form-horizontal .controls {margin-left: 90px;}
-   #email-central .botoes-form {margin-left: 88px!important;}
+   #email-central .botoes-form {margin-left: 120px!important;}
    .col-direita p.help-block{padding:0;}
 }
 @media only screen 
