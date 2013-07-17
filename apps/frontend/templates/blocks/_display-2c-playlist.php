@@ -1,6 +1,6 @@
           <?php if(isset($displays)): ?>
             <?php if(count($displays) > 0): ?>
-              <ul class="box-playlist <?php if($d->Asset->AssetType->getSlug() == "video"):?>video<?php endif;?> grid2">
+              <ul class="box-playlist grid2">
                 <?php foreach($displays as $k=>$d): ?>
                   <li style="width: 155px">
                     <?php if($d->retriveImageUrlByImageUsage("image-3") != ""): ?>
