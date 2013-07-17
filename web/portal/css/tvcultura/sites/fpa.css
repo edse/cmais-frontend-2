@@ -203,5 +203,6 @@ and (max-width : 480px) {
   .desc-site{display:none;}
   /*form central de relacionamento */
   .form-horizontal .control-group > label {float: left!important;width: 100px!important;padding-top: 5px!important;text-align: right!important;}
+  .col-direita p.help-block{padding:0;}
 }
 
