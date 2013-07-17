@@ -54,13 +54,14 @@
 .label{margin:10px 0px}
 
 #col-sub .fundo-cinza {*width:520px;}
+#col-sub ul li{position:relative;}
 #col-sub{margin-top:15px}
 #col-sub ul{margin:0;}
 #col-sub .accordion-group {*margin-bottom: 2px!important;}
 #col-sub a.formas{display: block;margin: 0 0 0 15px;padding: 13px;color:#333;width:100%;}
 #col-sub {*background: #eaeaea; *list-style:none;*float:left;overflow:hidden;}
-#col-sub .icon-circle-arrow-right{ background-position: -241px -143px;float:left; position: absolute; top: 11px; left: 11px;}
-#col-sub .icon-circle-arrow-down{ background-position: -313px -143px;float:left; position: absolute; top: 11px; left: 11px;}
+#col-sub .icon-circle-arrow-right{ background-position: -241px -143px;float:left; position: absolute; top: 13px; left: 11px;}
+#col-sub .icon-circle-arrow-down{ background-position: -313px -143px;float:left; position: absolute; top: 13px; left: 11px;}
 #col-sub .fundo-cinza{background: #FFF;}
 #col-sub .accordion-heading{position:relative;}
 #col-sub .box-inner{margin:10px}
