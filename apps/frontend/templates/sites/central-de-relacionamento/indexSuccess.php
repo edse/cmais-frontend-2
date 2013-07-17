@@ -691,7 +691,7 @@ $(document).ready(function(){
                 </div>
                 <!-- /row7 -->
                 <!-- row8 -->
-                <div class="row" id="row8" style="display:block;">
+                <div class="row" id="row8">
                   <div class="page-header">
                     <h1>Erro</h1>
                     <p><span class="label label-success">Usuário <strong>NÃO</strong> cadastrado</span></p>
