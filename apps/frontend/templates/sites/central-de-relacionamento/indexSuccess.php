@@ -100,7 +100,7 @@ $(document).ready(function(){
               </div>
               <!-- /row1 -->
               <!-- row2 -->
-              <div class="row" id="row2" style="display:block;">
+              <div class="row" id="row2">
                 <div class="page-header">
                   <h1>Formulário de cadastro</h1>
                   <p><span class="label label-red">Email não cadastrado</span></p>
@@ -268,7 +268,7 @@ $(document).ready(function(){
               </div>
               <!-- /row2 -->
               <!-- row3 -->
-              <div class="row" id="row3" style="display:block;">
+              <div class="row" id="row3">
                 <div class="page-header">
                   <h1>Formulário de cadastro preenchido</h1>
                   <p><span class="label label-success">Email cadastrado</span></p>
@@ -436,7 +436,7 @@ $(document).ready(function(){
                 </div>
                 <!-- /row3 -->
                 <!-- row4 -->
-                <div class="row" id="row4" style="display:block;" ><!--style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:block;";}else{echo"display:none;";}?>"-->
+                <div class="row" id="row4" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:block;";}else{echo"display:none;";}?>"-->
                   <div class="page-header">
                     <h1>Enviar mensagem</h1>
                     <p><span class="label label-success">Email cadastrado e validado</span></p>
@@ -648,7 +648,7 @@ $(document).ready(function(){
                 <!-- /row4 -->
                 
                 <!-- row5 -->
-                <div class="row" id="row5" style="display:block;">
+                <div class="row" id="row5">
                   <div class="page-header">
                     <h1>Mensagem de erro</h1>
                     <p><span class="label label-important">Email cadastrado mas não validado</span></p>
@@ -666,7 +666,7 @@ $(document).ready(function(){
                 <!-- /row5 -->
                 
                 <!-- row6 -->
-                <div class="row" id="row6" style="display:none;">
+                <div class="row" id="row6" >
                   <div class="page-header">
                     <h1>Mensagem enviada</h1>
                     <p><span class="label label-success">Usuário cadastrado e mensagem enviada</span></p>
@@ -679,7 +679,7 @@ $(document).ready(function(){
                 </div>
                 <!-- /row6 -->
                 <!-- row7 -->
-                <div class="row" id="row7" style="display:none;">
+                <div class="row" id="row7">
                   <div class="page-header">
                     <h1>Usuário cadastrado</h1>
                     <p><span class="label label-success">Usuário cadastrado com sucesso</span></p>
@@ -691,7 +691,7 @@ $(document).ready(function(){
                 </div>
                 <!-- /row7 -->
                 <!-- row8 -->
-                <div class="row" id="row8" style="display:none;">
+                <div class="row" id="row8" style="display:block;">
                   <div class="page-header">
                     <h1>Erro</h1>
                     <p><span class="label label-success">Usuário <strong>NÃO</strong> cadastrado</span></p>
@@ -707,7 +707,7 @@ $(document).ready(function(){
                 </div>
                 <!-- /row 8-->
                 <!-- row 9-->
-                <div class="row" id="row9" style="display:block;">
+                <div class="row" id="row9">
                   <div class="page-header">
                     <h1>Cadastro alterado</h1>
                     <p><span class="label label-success">Cadastrado alterado com sucesso</span></p>
