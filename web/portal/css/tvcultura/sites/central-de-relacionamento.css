@@ -113,5 +113,4 @@ and (max-width : 940px) {
 and (max-width : 480px) {
   .logo-central{width: 150px;left: 50%;position: relative;clear:both;}
   .desc-site{display: none;}
-  #email-central select{max-width: 200px;}
 }
