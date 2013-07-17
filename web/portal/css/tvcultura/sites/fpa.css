@@ -185,7 +185,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 #rodape-portal {margin-top: 150px; position:relative; z-index:0;}
 #rodape-portal .voltar-topo{*float: left; z-index: 0;}
 /* /RODAPÉ PORTAL */
-
+.botoes-central-celular{display:none;}
 @media only screen 
 and (max-device-width : 1024px) {
 /* Styles */
@@ -195,11 +195,37 @@ and (max-device-width : 1024px) {
 @media only screen 
 and (max-width : 980px) {
    #topo-fpa{display:none;}
+   #email-central .form-horizontal .control-label {max-width: 81px!important;}
+   #email-central .form-horizontal .controls {margin-left: 90px!important;}
+   #email-central .botoes-form {margin-left: 89px!important;}
+   .col-direita p.help-block{padding:0;}
 }
 @media only screen 
 and (max-width : 480px) {
-  #fundo-topo{padding: 5px;}
+  #fundo-topo{padding: 10px;}
   .container{padding:5px 0 5px 5px;}
   .desc-site{display:none;}
+  /*form central de relacionamento */
+  .botoes-central{display:none;}
+  .botoes-central-celular{display:block;}
+  .logo-central{margin:8px 0 20px 0!important;}
+  .form-horizontal .control-group > label {float: left!important;width: 100px!important;padding-top: 5px!important;text-align: right!important;}
+  .col-direita p.help-block{padding:0;}
+  #email-central .botoes-form {margin-left: 94px!important;}
+  #email-central .form-horizontal .control-label {max-width: 89px!important;}
+  #email-central .form-horizontal .controls {margin-left: 96px!important;}
+}
+@media only screen 
+and (max-width : 320px) {
+  #fundo-topo{padding: 5px;}
+  .container{padding:5px 0 5px 5px;}
+  /*form central de relacionamento */
+ 
+  .control-group{padding:10px}
+  .form-horizontal .control-group > label {float: left!important;width: 50px!important;padding-top: 5px!important;text-align: right!important;}
+  .col-direita p.help-block{padding:0;}
+  #email-central .form-horizontal .controls {margin-left: 67px!important;}
+  #email-central select{width: 200px;}
+  #email-central .botoes-form {margin-left: 77px!important;}
 }
 

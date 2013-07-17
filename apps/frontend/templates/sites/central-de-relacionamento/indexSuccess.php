@@ -36,22 +36,25 @@ $(document).ready(function(){
       <!--/destaque principal-->
 
       <!--botao-->
-      <?php if(isset($displays['botoes-central'])):?>
-        <?php if(count($displays['botoes-central']) > 0): ?>
-          <?php foreach($displays['botoes-central'] as $k=>$d): ?>
-          <div class="base-btn">  
-            <div class="btn-esquerda cinza-claro-2">
-              <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" title="<?php echo $d->getTitle() ?>">
-                <i class="ico ico-<?php echo $d->Asset->getSlug() ?>"></i>
-                <h1><?php echo $d->getTitle() ?></h1>
-                <p><?php echo $d->Asset->getDescription() ?></p>
-              </a>
+      <div class="botoes-central">
+        <?php if(isset($displays['botoes-central'])):?>
+          <?php if(count($displays['botoes-central']) > 0): ?>
+            <?php foreach($displays['botoes-central'] as $k=>$d): ?>
+            <div class="base-btn">  
+              <div class="btn-esquerda cinza-claro-2">
+                <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" title="<?php echo $d->getTitle() ?>">
+                  <i class="ico ico-<?php echo $d->Asset->getSlug() ?>"></i>
+                  <h1><?php echo $d->getTitle() ?></h1>
+                  <p><?php echo $d->Asset->getDescription() ?></p>
+                </a>
+              </div>
+              <div class="btn-esquerda sombra"></div>
             </div>
-            <div class="btn-esquerda sombra"></div>
-          </div>
-          <?php endforeach; ?>
+            <?php endforeach; ?>
+          <?php endif; ?>
         <?php endif; ?>
-      <?php endif; ?>
+      </div>
+      <!--/botao-->
     </div>
     <!--/coluna esquerda-->
     <!--coluna direita-->
@@ -100,7 +103,7 @@ $(document).ready(function(){
               </div>
               <!-- /row1 -->
               <!-- row2 -->
-              <div class="row" id="row2" style="display:block;">
+              <div class="row" id="row2">
                 <div class="page-header">
                   <h1>Formulário de cadastro</h1>
                   <p><span class="label label-red">Email não cadastrado</span></p>
@@ -436,7 +439,7 @@ $(document).ready(function(){
                 </div>
                 <!-- /row3 -->
                 <!-- row4 -->
-                <div class="row" id="row4" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:block;";}else{echo"display:none;";}?>">
+                <div class="row" id="row4" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:block;";}else{echo"display:none;";}?>"-->
                   <div class="page-header">
                     <h1>Enviar mensagem</h1>
                     <p><span class="label label-success">Email cadastrado e validado</span></p>
@@ -648,7 +651,7 @@ $(document).ready(function(){
                 <!-- /row4 -->
                 
                 <!-- row5 -->
-                <div class="row" id="row5" style="display:none;">
+                <div class="row" id="row5">
                   <div class="page-header">
                     <h1>Mensagem de erro</h1>
                     <p><span class="label label-important">Email cadastrado mas não validado</span></p>
@@ -666,7 +669,7 @@ $(document).ready(function(){
                 <!-- /row5 -->
                 
                 <!-- row6 -->
-                <div class="row" id="row6" style="display:none;">
+                <div class="row" id="row6" >
                   <div class="page-header">
                     <h1>Mensagem enviada</h1>
                     <p><span class="label label-success">Usuário cadastrado e mensagem enviada</span></p>
@@ -679,7 +682,7 @@ $(document).ready(function(){
                 </div>
                 <!-- /row6 -->
                 <!-- row7 -->
-                <div class="row" id="row7" style="display:none;">
+                <div class="row" id="row7">
                   <div class="page-header">
                     <h1>Usuário cadastrado</h1>
                     <p><span class="label label-success">Usuário cadastrado com sucesso</span></p>
@@ -691,7 +694,7 @@ $(document).ready(function(){
                 </div>
                 <!-- /row7 -->
                 <!-- row8 -->
-                <div class="row" id="row8" style="display:none;">
+                <div class="row" id="row8">
                   <div class="page-header">
                     <h1>Erro</h1>
                     <p><span class="label label-success">Usuário <strong>NÃO</strong> cadastrado</span></p>
@@ -707,7 +710,7 @@ $(document).ready(function(){
                 </div>
                 <!-- /row 8-->
                 <!-- row 9-->
-                <div class="row" id="row9" style="display:none;">
+                <div class="row" id="row9">
                   <div class="page-header">
                     <h1>Cadastro alterado</h1>
                     <p><span class="label label-success">Cadastrado alterado com sucesso</span></p>
@@ -1244,7 +1247,26 @@ $(document).ready(function(){
             <li>4) Indique se quer ser informado sobre ações promovidas pela FPA; pesquisas, concursos, promoções, eventos etc.</li>  
           </ul>  
         </div>  
-       
+        <!--botao-->
+        <div class="botoes-central-celular">
+          <?php if(isset($displays['botoes-central'])):?>
+            <?php if(count($displays['botoes-central']) > 0): ?>
+              <?php foreach($displays['botoes-central'] as $k=>$d): ?>
+              <div class="base-btn">  
+                <div class="btn-esquerda cinza-claro-2">
+                  <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" title="<?php echo $d->getTitle() ?>">
+                    <i class="ico ico-<?php echo $d->Asset->getSlug() ?>"></i>
+                    <h1><?php echo $d->getTitle() ?></h1>
+                    <p><?php echo $d->Asset->getDescription() ?></p>
+                  </a>
+                </div>
+                <div class="btn-esquerda sombra"></div>
+              </div>
+              <?php endforeach; ?>
+            <?php endif; ?>
+          <?php endif; ?>
+        </div>
+        <!--/botao-->
         
  
       
