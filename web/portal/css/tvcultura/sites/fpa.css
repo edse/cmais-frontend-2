@@ -202,6 +202,7 @@ and (max-width : 480px) {
   .container{padding:5px 0 5px 5px;}
   .desc-site{display:none;}
   /*form central de relacionamento */
+  .logo-central{margin:8px 0 20px 0!important;}
   .form-horizontal .control-group > label {float: left!important;width: 100px!important;padding-top: 5px!important;text-align: right!important;}
   .col-direita p.help-block{padding:0;}
 }
@@ -210,8 +211,8 @@ and (max-width : 320px) {
   #fundo-topo{padding: 5px;}
   .container{padding:5px 0 5px 5px;}
   /*form central de relacionamento */
- .logo-central{margin:8px 0 20px 0!important;}
- .control-group{padding:10px}
+ 
+  .control-group{padding:10px}
   .form-horizontal .control-group > label {float: left!important;width: 50px!important;padding-top: 5px!important;text-align: right!important;}
   .col-direita p.help-block{padding:0;}
   #email-central .form-horizontal .controls {margin-left: 67px!important;}
