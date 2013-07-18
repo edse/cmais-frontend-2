@@ -55,7 +55,8 @@ class defaultActions extends sfActions
     }
     */
     //if(is_file('sites/culturafm/error404Success.php')){
-    if($param1 == "culturafm")
+      echo $_REQUEST['param1'];
+    //if($this-> "culturafm")
       $this->setTemplate('sites/culturafm/error404', 'default');
    // } 
         // title
