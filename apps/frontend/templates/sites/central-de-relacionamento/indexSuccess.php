@@ -320,7 +320,7 @@ $(document).ready(function(){
                           Para facilitar ainda mais nosso relacionamento
                         </label>
                       </div>
-                    </div>
+                    </div> 
                     <div id="f3_maisinfo">
                       <div class="control-group">
                         <label class="control-label" for="f3_exterior">Reside no exterior?</label>
