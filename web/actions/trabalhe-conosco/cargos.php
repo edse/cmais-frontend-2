@@ -1,5 +1,5 @@
 <?php
-
+  echo "/teste";
   header("Content-Type: text/html;charset=utf8");
 
   //CLASS WEB SERVICE
@@ -35,7 +35,7 @@
   }
   //print_r($xml);
   //$xml = simplexml_load_string($xml);
-  
+   
   //$array = $xml->NewDataSet;
 
   //print_r($array);
