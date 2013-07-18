@@ -56,7 +56,7 @@ class defaultActions extends sfActions
     */
 
         // title
-    $this->getResponse()->setTitle('cmais+ O portal de conteúdo da Cultura - Puxa, puxa que puxa! Não conseguimos encontrar a página...', false);
+    $this->getResponse()->setTitle('cmais+ O portal de conteúdo da Cultura - Puxa, puxa que puxa! Não conseguimos encontrar a página....', false);
 
   }
 
