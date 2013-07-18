@@ -56,7 +56,7 @@ class defaultActions extends sfActions
     */
     if(is_file('/modules/default/templates/sites/culturafm/error404Success.php')){
       $this->setTemplate('/modules/default/templates/sites/culturafm/error404');
-        
+    } 
         // title
     $this->getResponse()->setTitle('cmais+ O portal de conteúdo da Cultura - Puxa, puxa que puxa! Não conseguimos encontrar a página...', false);
 
