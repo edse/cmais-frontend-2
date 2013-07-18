@@ -1,5 +1,5 @@
 <?php
-
+  echo "teste";
   header("Content-Type: text/html;charset=utf8");
 
   //CLASS WEB SERVICE
