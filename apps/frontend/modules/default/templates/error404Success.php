@@ -25,7 +25,6 @@
                   <h3 style="margin-bottom: 15px;">Puxa, puxa que puxa!</h3>
                   <!-- <p class="url"><?php echo $uri ?></p> -->
                   <p>Olha só, nós não conseguimos encontrar a p&aacute;gina que voc&ecirc; procura. Por favor, tente novamente mais tarde ou use a busca do nosso site..</p>
-                  <?php echo "<!--" . $site->getId() . "-->" ?> 
                 </div>
                 <form id="buscaErro" method="post" action="/index.php/busca">
                   <input type="text" class="texto" id="erro" name="erro" />
