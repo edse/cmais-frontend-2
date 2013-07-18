@@ -77,7 +77,7 @@
 #email-central .pageheader{margin:0 0 10px 0;}
 #email-central input[type=text]{max-width: 295px;*margin-left:-120px;}
 #email-central input[type=checkbox]{max-width: 30px;}
-#f2_telefone{max-width:220px!important;}
+#f2_telefone{width:220px!important;}
 #email-central textarea{*margin-left:-120px;}
 #email-central .botoes-form{margin-left:120px;}
 #email-central .help-block{max-width:350px;}
