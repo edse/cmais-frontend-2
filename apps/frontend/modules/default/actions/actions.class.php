@@ -58,7 +58,7 @@ class defaultActions extends sfActions
       //print_r(get_object_vars($this));
     //if($this-> "culturafm")
     echo $this->uri;
-      $this->setTemplate('sites/culturafm/error404', 'default');
+      //$this->setTemplate('sites/culturafm/error404', 'default');
    // } 
         // title
     $this->getResponse()->setTitle('cmais+ O portal de conteúdo da Cultura - Puxa, puxa que puxa! Não conseguimos encontrar a página...', false);
