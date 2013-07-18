@@ -54,9 +54,9 @@ class defaultActions extends sfActions
       $this->coming[$c->slug] = $c->retriveLivePrograms(3,$this->live[$c->slug][0]->getId());
     }
     */
-
+    echo $site->id;
         // title
-    $this->getResponse()->setTitle('cmais+ O portal de conteúdo da Cultura - Puxa, puxa que puxa! Não conseguimos encontrar a página....', false);
+    $this->getResponse()->setTitle('cmais+ O portal de conteúdo da Cultura - Puxa, puxa que puxa! Não conseguimos encontrar a página...', false);
 
   }
 
