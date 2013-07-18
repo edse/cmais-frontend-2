@@ -26,7 +26,7 @@ $(document).ready(function(){
             <br/> 
             <a href="/central-de-relacionamento/perguntas-frequentes" class="btn btn-success btn-large mais-info" title="Perguntas Frequentes">
               <div class="container-btn">
-                <i class="ico-perg"></i>Perguntas Frequentes
+                <i class="ico-perg"></i>Pergunta Frequente
               </div>
             </a>
           <?php endforeach; ?>
