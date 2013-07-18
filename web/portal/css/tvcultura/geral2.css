@@ -343,6 +343,7 @@
 .noticia .titulos {margin-bottom:0;}
 /*.noticia img {width: 331px; float: right; margin-top: -31px;}*/
 .noticia img {width:310px; float:left;}
+.noticia img.img-video {width: 339px;float: right;margin-top: -35px;}
 .noticia .img-video {width:350px; float:left; margin:-44px 0 0 -14px;}
 .noticia2 .titulos { margin-top:10px;}
 .noticia2 h3,
