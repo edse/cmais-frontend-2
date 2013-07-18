@@ -5,7 +5,7 @@
                   <li style="width: 155px">
                     <?php if($d->retriveImageUrlByImageUsage("image-3") != ""): ?>
                     <a href="<?php echo $d->retriveUrl() ?>" class="img">
-                      <img src="<?php echo $d->retriveImageUrlByImageUsage("image-3") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" class="<?php if($d->Asset->AssetType->getSlug() == "video"):?>img-video teste<?php endif;?>"  />
+                      <img src="<?php echo $d->retriveImageUrlByImageUsage("image-3") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" class="<?php if($d->Asset->AssetType->getSlug() == "video"):?>img-video teste <?php endif;?>"  />
                       
                     </a>
                     <?php endif; ?>
