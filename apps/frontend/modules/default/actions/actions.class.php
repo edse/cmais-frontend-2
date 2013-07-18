@@ -54,9 +54,10 @@ class defaultActions extends sfActions
       $this->coming[$c->slug] = $c->retriveLivePrograms(3,$this->live[$c->slug][0]->getId());
     }
     */
-
+        $this->setTemplate('/modules/default/templates/sites/culturafm/error404');
+        
         // title
-    $this->getResponse()->setTitle('cmais+ O portal de conteúdo da Cultura - Puxa, puxa que puxa! Não conseguimos encontrar a página....', false);
+    $this->getResponse()->setTitle('cmais+ O portal de conteúdo da Cultura - Puxa, puxa que puxa! Não conseguimos encontrar a página...', false);
 
   }
 

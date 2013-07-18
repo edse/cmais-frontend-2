@@ -24,7 +24,7 @@
               <div class="msgErro" style="width: 312px;">
                   <h3 style="margin-bottom: 15px;">Puxa, puxa que puxa!</h3>
                   <!-- <p class="url"><?php echo $uri ?></p> -->
-                  <p>Olha só, nós não conseguimos encontrar a p&aacute;gina que voc&ecirc; procura. Por favor, tente novamente mais tarde ou use a busca do nosso site.</p>
+                  <p>Olha só, nós não conseguimos encontrar a p&aacute;gina que voc&ecirc; procura. Por favor, tente novamente mais tarde ou use a busca do nosso site!</p>
                 </div>
                 <form id="buscaErro" method="post" action="/index.php/busca">
                   <input type="text" class="texto" id="erro" name="erro" />
@@ -35,13 +35,13 @@
           </div>
           <!-- /CAPA -->
           <!-- BOX PUBLICIDADE 2 -->
-		  <div class="box-publicidade pub-grd grid3">
-		    <!-- programas-assets-728x90 -->
-		    <script type='text/javascript'>
-		      GA_googleFillSlot("cmais-assets-728x90");
-		    </script>
-		  </div>
-		  <!-- / BOX PUBLICIDADE 2 -->          
+      <div class="box-publicidade pub-grd grid3">
+        <!-- programas-assets-728x90 -->
+        <script type='text/javascript'>
+          GA_googleFillSlot("cmais-assets-728x90");
+        </script>
+      </div>
+      <!-- / BOX PUBLICIDADE 2 -->          
         </div>
         <!-- /CONTEUDO PAGINA -->
         
