@@ -171,44 +171,13 @@ $(document).ready(function(){
                           <select id="f2_local" name="f2_local"></select>
                         </div>
                       </div>
+                      <div class="control-group">
+                        <label class="control-label" for="f2_telefone">Telefone</label>
+                        <div class="controls">
+                          <input type="text" class="span2" id="f2_telefone" name="f2_telefone" placeholder="(xx) XXXX-XXXX">
+                        </div>
+                      </div>
                     </div><!-- /#brasil -->
-                    <div class="control-group">
-                      <label class="control-label" for="f2_sms">SMS</label>
-                      <div class="controls">
-                        <label class="checkbox">
-                          <input type="checkbox" id="f2_sms" name="f2_sms" value="true">
-                          Permito o envio de promoções e novidades via SMS
-                        </label>
-                      </div>
-                    </div>
-                    <div class="control-group">
-                      <label class="control-label" for="f2_newsletter">Newsletter</label>
-                      <div class="controls">
-                        <label class="checkbox">
-                          <input type="checkbox" id="f2_newsletter" name="f2_newsletter" value="true">
-                          Permito o envio de promoções e novidades via email
-                        </label>
-                      </div>
-                    </div>
-                    <div class="control-group">
-                      <label class="control-label" for="f2_convite">Convite</label>
-                      <div class="controls">
-                        <label class="checkbox">
-                          <input type="checkbox" id="f2_convite" name="f2_convite" value="true">
-                          Permito o envio de convites
-                        </label>
-                      </div>
-                    </div>
-                    <div class="control-group">
-                      <label class="control-label" for="f2_terceiros">Terceiros</label>
-                      <div class="controls">
-                        <label class="checkbox">
-                          <input type="checkbox" id="f2_terceiros" name="f2_terceiros" value="true">
-                          Permito o envio de informações para terceiros
-                        </label>
-                      </div>
-                    </div>
-                    <div class="control-group">
                       <label class="control-label" for="f2_mais">Mais informações</label>
                       <div class="controls">
                         <label class="checkbox">
@@ -249,12 +218,6 @@ $(document).ready(function(){
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label" for="f2_telefone">Telefone</label>
-                        <div class="controls">
-                          <input type="text" class="span2" id="f2_telefone" name="f2_telefone" placeholder="(xx) XXXX-XXXX">
-                        </div>
-                      </div>
-                      <div class="control-group">
                         <label class="control-label" for="f2_twitter">Twitter</label>
                         <div class="controls">
                           <input type="text" class="input-xlarge" id="f2_twitter" name="f2_twitter">
@@ -262,6 +225,43 @@ $(document).ready(function(){
                       </div>
                     </div>
                     <!-- /#maisinfo -->
+                    <div class="control-group">
+                      <label class="control-label" for="f2_sms">SMS</label>
+                      <div class="controls">
+                        <label class="checkbox">
+                          <input type="checkbox" id="f2_sms" name="f2_sms" value="true">
+                          Permito o envio de promoções e novidades via SMS
+                        </label>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="f2_newsletter">Newsletter</label>
+                      <div class="controls">
+                        <label class="checkbox">
+                          <input type="checkbox" id="f2_newsletter" name="f2_newsletter" value="true">
+                          Permito o envio de promoções e novidades via email
+                        </label>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="f2_convite">Convite</label>
+                      <div class="controls">
+                        <label class="checkbox">
+                          <input type="checkbox" id="f2_convite" name="f2_convite" value="true">
+                          Permito o envio de convites
+                        </label>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="f2_terceiros">Terceiros</label>
+                      <div class="controls">
+                        <label class="checkbox">
+                          <input type="checkbox" id="f2_terceiros" name="f2_terceiros" value="true">
+                          Permito o envio de informações para terceiros
+                        </label>
+                      </div>
+                    </div>
+                    <div class="control-group">
                     <div class="botoes-form">
                       <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader2" />
                       <button type="submit" class="btn btn-success" id="btn2">Enviar Cadastro</button>
