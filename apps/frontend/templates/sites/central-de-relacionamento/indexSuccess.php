@@ -26,7 +26,7 @@ $(document).ready(function(){
             <br/> 
             <a href="/central-de-relacionamento/perguntas-frequentes" class="btn btn-success btn-large mais-info" title="Perguntas Frequentes">
               <div class="container-btn">
-                <i class="ico-perg"></i>Perguntas Frequentes
+                <i class="ico-perg"></i>Pergunta Frequente 
               </div>
             </a>
           <?php endforeach; ?>
@@ -171,7 +171,60 @@ $(document).ready(function(){
                           <select id="f2_local" name="f2_local"></select>
                         </div>
                       </div>
+                      <div class="control-group">
+                        <label class="control-label" for="f2_telefone">Telefone</label>
+                        <div class="controls">
+                          <input type="text" class="span2" id="f2_telefone" name="f2_telefone" placeholder="(xx) XXXX-XXXX">
+                        </div>
+                      </div>
                     </div><!-- /#brasil -->
+                      <label class="control-label" for="f2_mais">Mais informações</label>
+                      <div class="controls">
+                        <label class="checkbox">
+                          <input type="checkbox" id="f2_mais" name="f2_mais" value="1" onclick="toggleInfo();">
+                          Para facilitar ainda mais nosso relacionamento teste
+                        </label>
+                      </div>
+                    </div>
+                    <div id="f2_maisinfo">
+                      <div class="control-group">
+                        <label class="control-label" for="f2_endereco">Endereço</label>
+                        <div class="controls">
+                          <input type="text" class="input-xlarge" id="f2_endereco" name="f2_endereco">
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label" for="f2_numero">Número</label>
+                        <div class="controls">
+                          <input type="text" class="input-xlarge" id="f2_numero" name="f2_numero">
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label" for="f2_complemento">Complemento</label>
+                        <div class="controls">
+                          <input type="text" class="input-xlarge" id="f2_complemento" name="f2_complemento">
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label" for="f2_cep">CEP</label>
+                        <div class="controls">
+                          <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep">
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label" for="f2_bairro">Bairro</label>
+                        <div class="controls">
+                          <input type="text" class="input-xlarge" id="f2_bairro" name="f2_bairro">
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label" for="f2_twitter">Twitter</label>
+                        <div class="controls">
+                          <input type="text" class="input-xlarge" id="f2_twitter" name="f2_twitter">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /#maisinfo -->
                     <div class="control-group">
                       <label class="control-label" for="f2_sms">SMS</label>
                       <div class="controls">
@@ -209,59 +262,6 @@ $(document).ready(function(){
                       </div>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="f2_mais">Mais informações</label>
-                      <div class="controls">
-                        <label class="checkbox">
-                          <input type="checkbox" id="f2_mais" name="f2_mais" value="1" onclick="toggleInfo();">
-                          Para facilitar ainda mais nosso relacionamento
-                        </label>
-                      </div>
-                    </div>
-                    <div id="f2_maisinfo">
-                      <div class="control-group">
-                        <label class="control-label" for="f2_endereco">Endereço</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_endereco" name="f2_endereco">
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_numero">Número</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_numero" name="f2_numero">
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_complemento">Complemento</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_complemento" name="f2_complemento">
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_cep">CEP</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep">
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_bairro">Bairro</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_bairro" name="f2_bairro">
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_telefone">Telefone</label>
-                        <div class="controls">
-                          <input type="text" class="span2" id="f2_telefone" name="f2_telefone" placeholder="(xx) XXXX-XXXX">
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_twitter">Twitter</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_twitter" name="f2_twitter">
-                        </div>
-                      </div>
-                    </div>
-                    <!-- /#maisinfo -->
                     <div class="botoes-form">
                       <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader2" />
                       <button type="submit" class="btn btn-success" id="btn2">Enviar Cadastro</button>
@@ -320,7 +320,7 @@ $(document).ready(function(){
                           Para facilitar ainda mais nosso relacionamento
                         </label>
                       </div>
-                    </div>
+                    </div> 
                     <div id="f3_maisinfo">
                       <div class="control-group">
                         <label class="control-label" for="f3_exterior">Reside no exterior?</label>
