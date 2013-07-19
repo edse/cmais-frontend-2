@@ -235,8 +235,8 @@ $(function(){
             </div>
             <!-- /DIREITA -->
             <!--FOOTER QUINTAL-->
-        <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?> 
-        <!--/FOOTER QUINTAL-->
+            <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?> 
+            <!--/FOOTER QUINTAL-->
           </div>
           <!-- /CAPA -->
         </div>
