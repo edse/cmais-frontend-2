@@ -57,7 +57,8 @@ class defaultActions extends sfActions
     //if(is_file('sites/culturafm/error404Success.php')){
       //print_r(get_object_vars($this));
     //if($this-> "culturafm")
-    echo $this->site->id;
+    echo $request->getParameter('param1');
+    //echo $this->
       //$this->setTemplate('sites/culturafm/error404', 'default');
    // } 
         // title
