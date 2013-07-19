@@ -19,7 +19,7 @@
         <div id="conteudo-pagina">
 
           <!-- CAPA -->
-          <div class="capa grid3">
+          <div class="capa grid3" style="text-align:left">
             <h3>Página não encontrada!</h3>
             <p>A página que você procura não existe.</p>
             <p>Verifique se digitou o endereço corretamente ou utiliza nossa busca de conteúdo no topo do site.</p>
