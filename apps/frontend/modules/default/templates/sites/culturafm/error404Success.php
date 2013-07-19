@@ -15,16 +15,14 @@
       <!-- MIOLO -->
       <div id="miolo">
 
-        <!-- BOX LATERAL -->
-        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
-        <!-- BOX LATERAL -->
-        
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
 
           <!-- CAPA -->
           <div class="capa grid3">
-            <p>Página não encontrada!</p>
+            <h3>Página não encontrada!</h3>
+            <p>A página que você procura não existe.</p>
+            <p>Verifique se digitou o endereço corretamente ou utiliza nossa busca de conteúdo no topo do site.</p>
           </div>
           <!-- /CAPA -->
 
