@@ -58,7 +58,7 @@ class defaultActions extends sfActions
       //print_r(get_object_vars($this));
     //if($this-> "culturafm")
     echo $request->getParameter('param1');
-    echo $subdomain;
+    echo $request->getHost();
     //echo $this->
       //$this->setTemplate('sites/culturafm/error404', 'default');
    // } 
