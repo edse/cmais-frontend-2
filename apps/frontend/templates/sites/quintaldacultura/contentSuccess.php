@@ -234,13 +234,14 @@ $(function(){
 
             </div>
             <!-- /DIREITA -->
+            <!--FOOTER QUINTAL-->
+        <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?> 
+        <!--/FOOTER QUINTAL-->
           </div>
           <!-- /CAPA -->
         </div>
         <!-- /CONTEUDO PAGINA -->
-        <!--FOOTER QUINTAL-->
-        <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?> 
-        <!--/FOOTER QUINTAL-->
+        
       </div>
       <!-- /MIOLO -->
       
