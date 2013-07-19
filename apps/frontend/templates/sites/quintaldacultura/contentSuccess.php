@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
+<link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
 <script type="text/javascript">
 $(function(){
   //hover states on the static widgets
@@ -22,8 +23,11 @@ $(function(){
 
       <!-- BARRA SITE -->
       <div id="barra-site">
-
+       
         <div class="topo-programa">
+          <?php include_partial_from_folder('sites/quintaldacultura', 'global/menu') ?>
+          <?php
+          /*
           <?php if(isset($program) && $program->id > 0): ?>
           <h2>
             <a href="<?php echo $program->retriveUrl() ?>">
@@ -43,10 +47,15 @@ $(function(){
             </div>
             <!-- /horario -->
           <?php endif; ?>
+          */
+          ?>
         </div>
+        
 
         <?php if(isset($siteSections) && $site->getType() != "Portal"): ?>
         <!-- box-topo -->
+        <?php
+        /*
         <div class="box-topo grid3">
           <?php if(count($siteSections) > 0): ?>
           <!-- menu interna -->
@@ -57,6 +66,7 @@ $(function(){
                   <div class="submenu-interna toggle-menu" style="display:none; width: auto;">
                     <ul style="display:block;">
                     <?php foreach($s->Children as $s): ?>
+                      
                       <li><a href="<?php echo $s->retriveUrl()?>"><?php echo $s->getTitle()?></a></li>
                     <?php endforeach; ?>
                     </ul>
@@ -81,6 +91,22 @@ $(function(){
           <?php endif; ?>
 
         </div>
+        <div class="menuVoltar">
+          <a class="voltar" href="/quintaldacultura"><span class="ico-voltar"></span><span class="tit">Quintal</span></a>
+        </div>
+        */
+        ?>
+        
+        
+        
+        <?php if(isset($section)): ?>
+          <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
+            <div class="menuVoltar">
+              <a class="voltar" href="<?php echo $site->retriveUrl() ?>" title="Home"><span class="ico-voltar"></span>Quintal</a>
+              <p><?php echo $asset->getTitle()?></p>
+            </div>
+          <?php endif; ?>
+        <?php endif; ?>
         <!-- /box-topo -->
         <?php endif; ?>
 
@@ -88,7 +114,7 @@ $(function(){
       <!-- /BARRA SITE -->
 
       <!-- MIOLO -->
-      <div id="miolo">
+      <div id="miolo" class="a-sobre-o-programa">
       
         <!-- BOX LATERAL -->
         <?php include_partial_from_folder('blocks','global/shortcuts') ?>
@@ -212,11 +238,15 @@ $(function(){
           <!-- /CAPA -->
         </div>
         <!-- /CONTEUDO PAGINA -->
-
+        <!--FOOTER QUINTAL-->
+        <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?> 
+        <!--/FOOTER QUINTAL-->
       </div>
       <!-- /MIOLO -->
+      
     </div>
     <!-- / CAPA SITE -->
+    
     
 
 <script type='text/javascript'>

@@ -2722,7 +2722,7 @@ z-index: 503;
 /* itens background */
 /* horario */
 #horario.horario{text-align:right; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin: 10px 0 0 0;}
-#horario.horario p{font-size:12px;color:#2b3377;line-height: 15px;margin: 0 0 10px 0;}
+#horario.horario p{font-size:12px!important;color:#2b3377!important;line-height: 15px;margin: -27px 0 10px 0;width: 280px;}
 #horario.horario p span{font-size: 14px; color:#2b3377;}
 /* /horario */
 
@@ -2744,3 +2744,12 @@ body { background:url(/portal/quintal/images/bg-quintal.jpg) repeat-x !important
 .content { width:990px; }
 .contentWrapper { background:none; display:block; }
 /* ajuste bg ipad */
+
+/* content */
+.menu-interna.grid3{display:none;} 
+#miolo.a-sobre-o-programa .capa.grid3{margin-bottom:164px!important;}
+#miolo.a-sobre-o-programa .menuRodape{margin:0 auto;}
+#miolo.a-sobre-o-programa .box-compartilhar,
+#miolo.a-sobre-o-programa .comentario-fb{display:none!important;}
+#miolo.a-sobre-o-programa .box-interna{background:#efe700;padding:20px 10px;margin-top:40px;border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;} 
+#miolo.a-sobre-o-programa .box-interna h3{font-weight: bold; font-size: 24px;}
