@@ -55,11 +55,12 @@ class defaultActions extends sfActions
     }
     */
     if($request->getHost() == "culturafm.cmais.com.br") {
+      $this->getResponse()->setTitle('cmais+ O portal de conteúdo da Cultura - Página não encontrada!', false);
       $this->setTemplate('sites/culturafm/error404', 'default');
-    } 
-        // title
-    $this->getResponse()->setTitle('cmais+ O portal de conteúdo da Cultura - Puxa, puxa que puxa! Não conseguimos encontrar a página...', false);
-
+    }
+    else { 
+      $this->getResponse()->setTitle('cmais+ O portal de conteúdo da Cultura - Puxa, puxa que puxa! Não conseguimos encontrar a página...', false);
+    }
   }
 
 }
