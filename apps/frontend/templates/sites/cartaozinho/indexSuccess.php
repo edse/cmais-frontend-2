@@ -134,7 +134,7 @@
         
           </a>
 
-          <!--a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/enquete-da-recopa" title="Participe da nossa enquete!"></a-->
+          <a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/enquete-da-recopa" title="Participe da nossa enquete!"></a>
           <div class="juiza"></div>
           <div class="redes-sociais">
             <a href="https://www.facebook.com/Cartaozinho" class="face" name"Facebook" title="Facebook">Facebook</a>
