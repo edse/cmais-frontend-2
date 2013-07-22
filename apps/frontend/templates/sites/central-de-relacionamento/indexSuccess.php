@@ -169,7 +169,7 @@ $(document).ready(function(){
                       <div class="control-group">
                         <label class="control-label" for="f2_estado">Estado</label>
                         <div class="controls">
-                          <select id="f2_estado" name="f2_estado" onchange="municipios('f2');" onpropertychange="municipios('f2');"></select>
+                          <select id="f2_estado" name="f2_estado" onchange="municipios('f2');" onfocus="municipios('f2');"></select>
                         </div>
                       </div>
                       <div class="control-group">
@@ -1210,6 +1210,7 @@ $(document).ready(function(){
                           //console.log($(this).val());
                           if($(this).val() == data.cep.uf){
                             $(this).attr('selected', 'selected');
+                            $('#f2_estado').focus();
                           }else{
                             $(this).removeAttr('selected');
                           }
