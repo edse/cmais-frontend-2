@@ -190,7 +190,7 @@ $(document).ready(function(){
                       <div class="controls">
                         <label class="checkbox">
                           <input type="checkbox" id="f2_mais" name="f2_mais" value="1" onclick="toggleInfo();">
-                          Para facilitar ainda mais nosso relacionamento teste
+                          Para facilitar ainda mais nosso relacionamento
                         </label>
                       </div>
                     </div>
