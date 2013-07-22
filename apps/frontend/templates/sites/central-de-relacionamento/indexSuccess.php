@@ -1207,7 +1207,7 @@ $(document).ready(function(){
                     },
                     success: function(data){
                       if(data.script != ""){
-                        console.log(data)
+                        //console.log(data)
                         //estado
                         $("#f2_estado option").each(function () {
                           //console.log($(this).val());
@@ -1219,7 +1219,7 @@ $(document).ready(function(){
                             $(this).removeAttr('selected');
                           }
                           //cidade
-                          $('#f2_local option').each(function(){
+                          $('#f2_local option').on("each",function(){
                             console.log(data.cep.cidade)
                             if($(this).val() == data.cep.cidade.toUpperCase()){
                               $(this).attr('selected', 'selected');
