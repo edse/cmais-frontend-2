@@ -1205,7 +1205,7 @@ $(document).ready(function(){
                     },
                     success: function(data){
                       if(data.script != ""){
-                        console.log(data.uf)
+                        console.log(data)
                         $("#f2_estado option").each(function () {
                           //console.log($(this).val());
                           if($(this).val() == data.uf){
