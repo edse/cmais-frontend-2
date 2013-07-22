@@ -192,8 +192,9 @@ $(document).ready(function(){
                         <div class="controls">
                           <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep">
                         </div>
+                        <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
                       </div>
-                      <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
+                      
                     <div id="f2_maisinfo">
                       <div class="control-group">
                         <label class="control-label" for="f2_endereco">Endereço</label>
