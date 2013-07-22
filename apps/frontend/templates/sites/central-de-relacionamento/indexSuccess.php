@@ -1208,9 +1208,14 @@ $(document).ready(function(){
                         //console.log(data)
                         $("#f2_estado option").each(function () {
                           console.log($(this).val());
-                          
+                          if($(this).val() == data.uf){
+                            $(this).attr('selected', 'selected');
+                            alert($(this).val() + 'selecionado');
+                          }else{
+                            $(this).removeAttr('selected');
+                          }
                         })
-                        .change();
+                        
                       }
                       else{
                         alert('Erro!');
