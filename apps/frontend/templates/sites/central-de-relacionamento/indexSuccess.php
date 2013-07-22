@@ -1214,18 +1214,19 @@ $(document).ready(function(){
                           if($(this).val() == data.cep.uf){
                             $(this).attr('selected', 'selected');
                             $('#f2_estado').focus();
-                            //cidade
-                            $('#f2_local option').each(function(){
-                              if($(this).val() == data.cep.cidade){
-                                $(this).attr('selected', 'selected');
-                              }else{
-                                $(this).removeAttr('selected');
-                              }
-                            });
+                            
                           }else{
                             $(this).removeAttr('selected');
                           }
-                          
+                          //cidade
+                          $('#f2_local option').each(function(){
+                            if($(this).val() == data.cep.cidade){
+                              $(this).attr('selected', 'selected');
+                              $('#f2_local').focus();
+                            }else{
+                              $(this).removeAttr('selected');
+                            }
+                          });
                           
                         })
                       }
