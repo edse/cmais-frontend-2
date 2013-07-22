@@ -219,7 +219,7 @@ $(function(){
                   <?php foreach($subsections as $s): ?>
                     <li>
                       <div class="box-texto grid2">
-                        <a href="<?php echo $s->retriveUrl() ?>" class="titulos"><?php echo $d->getTitle() ?></a>
+                        <a href="<?php echo $s->retriveUrl() ?>" class="titulos"><?php echo $s->getTitle() ?></a>
                         <p><?php echo $s->getDescription() ?></p>
                       </div>
                     </li>
