@@ -2761,4 +2761,5 @@ body { background:url(/portal/quintal/images/bg-quintal.jpg) repeat-x !important
 #miolo.s-personagens .pag3 .proximo {background-position: 0 -71px;}
 #miolo.s-personagens .pag3 a {background-position: 0 -89px;}
 #miolo.s-personagens .box-padrao.grid1{display:none;}
-#miolo.s-personagens .paginacao p{color:#FFF;}  
+#miolo.s-personagens .paginacao p{color:#FFF;} 
+#miolo.a-sobre-o-programa .rodape-cmais, #miolo.s-personagens .rodape-cmais{display:none;}
