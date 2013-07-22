@@ -1063,13 +1063,13 @@ $(document).ready(function(){
                 function toggleExterior(){
                   if($('#f2_exterior').attr('checked')){
                     $('#f2_brasil').hide();
-                    $('#f2_cep').parent().hide();
+                    $('#f2_cep').parent().parent().hide();
                     $('#f2_estado,#f2_local').attr('disabled','disabled');
                     $('.f2_exterior').show();
                     $('.f2_exterior').removeAttr('disabled');
                   }else{
                     $('#f2_brasil').show();
-                    $('#f2_cep').parent().show();
+                    $('#f2_cep').parent().parent().show();
                     $('#f2_estado,#f2_local').removeAttr('disabled');
                     $('.f2_exterior').hide();
                     $('.f2_exterior').attr('disabled','disabled');
