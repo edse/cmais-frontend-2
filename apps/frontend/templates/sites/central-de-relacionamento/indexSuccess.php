@@ -192,7 +192,7 @@ $(document).ready(function(){
                       <div class="control-group">
                         <label class="control-label" for="f2_cep">CEP</label>
                         <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep">
+                          <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep()">
                           <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
                         </div>
                       </div>
@@ -1185,6 +1185,26 @@ $(document).ready(function(){
                     success: function(data){
                       if(data.script != ""){
                         eval(data.script);
+                      }
+                      else{
+                        alert('Erro!');
+                      }
+                    }
+                  });
+                }
+                
+                function cep(){
+                  $.ajax({
+                    type: "POST",
+                    dataType: "json",
+                    url: "http://cmais.com.br/actions/cep/geraJSONendereco.php?cep=01310-200",
+                    //data: "action=contas&cod_veiculo="+$('#f4_cod_veiculo :selected').val(),
+                    beforeSend: function(){
+                      //$('img#ajax-loader').show();
+                    },
+                    success: function(data){
+                      if(data.script != ""){
+                        console.log(data)
                       }
                       else{
                         alert('Erro!');
