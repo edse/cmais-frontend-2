@@ -158,6 +158,13 @@ $(document).ready(function(){
                         <!-- <p class="help-block">Pais em que reside <code>Chile</code></p> -->
                       </div>
                     </div>
+                    <div class="control-group">
+                      <label class="control-label" for="f2_cep">CEP</label>
+                      <div class="controls">
+                        <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value)">
+                        <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
+                      </div>
+                    </div>
                     <div id="f2_brasil">
                       <div class="control-group">
                         <label class="control-label" for="f2_estado">Estado</label>
@@ -189,13 +196,7 @@ $(document).ready(function(){
                     </div>
                     
                     <div id="f2_maisinfo">
-                      <div class="control-group">
-                        <label class="control-label" for="f2_cep">CEP</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep()">
-                          <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
-                        </div>
-                      </div>
+                      
                       <div class="control-group">
                         <label class="control-label" for="f2_endereco">Endereço</label>
                         <div class="controls">
