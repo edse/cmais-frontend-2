@@ -1205,14 +1205,14 @@ $(document).ready(function(){
                     },
                     success: function(data){
                       if(data.script != ""){
-                        console.log(data)
+                        //console.log(data)
                         $("#f2_estado option").each(function () {
+                          console.log(data.uf);
                           if($(this).val() == data.uf){
                             $(this).attr('selected', 'selected');
                             alert($(this).val() + 'selecionado');
                           }else{
                             $(this).removeAttr('selected');
-                            alert($(this).val() + 'removido');
                           }
                         })
                         .change();
