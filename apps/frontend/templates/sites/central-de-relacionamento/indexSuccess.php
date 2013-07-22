@@ -1207,13 +1207,8 @@ $(document).ready(function(){
                       if(data.script != ""){
                         //console.log(data)
                         $("#f2_estado option").each(function () {
-                          console.log(data.uf);
-                          if($(this).val() == data.uf){
-                            $(this).attr('selected', 'selected');
-                            alert($(this).val() + 'selecionado');
-                          }else{
-                            $(this).removeAttr('selected');
-                          }
+                          console.log($(this).val());
+                          
                         })
                         .change();
                       }
