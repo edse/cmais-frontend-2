@@ -1207,7 +1207,7 @@ $(document).ready(function(){
                     },
                     success: function(data){
                       if(data.script != ""){
-                        console.log(data.cep.uf)
+                        console.log(data)
                         //estado
                         $("#f2_estado option").each(function () {
                           console.log($(this).val());
