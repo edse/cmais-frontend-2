@@ -18,6 +18,7 @@ if(isset($pager)){
 <?php else: ?>
   <link rel="stylesheet" href="/portal/css/tvcultura/secoes/<?php echo $section->Parent->getSlug() ?>.css" type="text/css" />
 <?php endif; ?>
+<link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
 
 
 <script type="text/javascript">
@@ -109,6 +110,9 @@ $(function(){
 
       <!-- BARRA SITE -->
       <div id="barra-site">
+        <?php include_partial_from_folder('sites/quintaldacultura', 'global/menu') ?>
+        <?php
+        /*
         <div class="topo-programa">
           <?php if(isset($program) && $program->id > 0): ?>
           <h2>
@@ -179,7 +183,7 @@ $(function(){
             <a href="<?php echo $section->retriveUrl()?>" title="<?php echo $section->getTitle()?>"><?php echo $section->getTitle()?></a>
           </div>
           <?php endif; ?>
-
+      
           <h3 class="tit-pagina"><a href="#" class="<?php echo $section->getSlug() ?>"><?php echo $section->getTitle() ?></a></h3>
           
           <?php if($section->getDescription() != ""): ?>
@@ -189,12 +193,21 @@ $(function(){
         </div>
         <!-- /box-topo -->
         <?php endif; ?>
-        
+        */
+        ?>
+        <?php if(isset($section)): ?>
+          <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
+            <div class="menuVoltar">
+              <a class="voltar" href="<?php echo $site->retriveUrl() ?>" title="Home"><span class="ico-voltar"></span>Quintal</a>
+              <p><?php echo $section->getTitle()?></p>
+            </div>
+          <?php endif; ?>
+        <?php endif; ?>
       </div>
       <!-- /BARRA SITE -->
 
       <!-- MIOLO -->
-      <div id="miolo">
+      <div id="miolo" class="s-personagens">
         
         <!-- BOX LATERAL -->
         <?php include_partial_from_folder('blocks','global/shortcuts') ?>
@@ -270,14 +283,14 @@ $(function(){
                 <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn anterior"></a>
               </div>
               <form id="page_form" action="" method="post">
-              	<input type="hidden" name="return_url" value="<?php echo $url?>" />
-              	<input type="hidden" name="page" id="page" value="" />
+                <input type="hidden" name="return_url" value="<?php echo $url?>" />
+                <input type="hidden" name="page" id="page" value="" />
               </form>
               <script>
-              	function goToPage(i){
-                	$("#page").val(i);
-                	$("#page_form").submit();
-              	}
+                function goToPage(i){
+                  $("#page").val(i);
+                  $("#page_form").submit();
+                }
               </script>
               
               <?php endif; ?>
@@ -311,15 +324,21 @@ $(function(){
           </div>
           <!-- /CAPA -->
           
+          
         </div>
         <!-- /CONTEUDO PAGINA -->
         
       </div>
       <!-- /MIOLO -->
+      
 
     </div>
     <!-- / CAPA SITE -->
-    
+    <div class="s-personagens">
+      <!--FOOTER QUINTAL-->
+      <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?> 
+      <!--/FOOTER QUINTAL-->
+    </div>
     <form id="send" action="" method="post">
       <input type="hidden" name="d" id="d" value="<?php echo $d ?>" />
     </form>
