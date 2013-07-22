@@ -1218,18 +1218,10 @@ $(document).ready(function(){
                           }else{
                             $(this).removeAttr('selected');
                           }
-                          //cidade
-                          $('#f2_local option').on("each",function(){
+                        }).delay(2000, function(){
                             console.log(data.cep.cidade)
-                            if($(this).val() == data.cep.cidade.toUpperCase()){
-                              $(this).attr('selected', 'selected');
-                              $('#f2_local').focus();
-                            }else{
-                              $(this).removeAttr('selected');
-                            }
+                            
                           });
-                          
-                        })
                       }
                       else{
                         alert('Erro!');
