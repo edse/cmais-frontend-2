@@ -21,7 +21,7 @@
     });
   })
 </script>
-Teste2
+
 <!-- container-->
 <div class="container tudo">
   <!-- row carrossel-->
