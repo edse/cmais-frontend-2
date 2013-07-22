@@ -1216,7 +1216,7 @@ $(document).ready(function(){
                             $('#f2_estado').focus();
                             //cidade
                             $('#f2_local option').each(function(){
-                              if($(this).val() == data.cidade.uf){
+                              if($(this).val() == data.cep.cidade){
                                 $(this).attr('selected', 'selected');
                               }else{
                                 $(this).removeAttr('selected');
