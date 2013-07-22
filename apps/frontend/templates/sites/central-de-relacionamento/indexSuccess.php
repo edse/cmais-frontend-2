@@ -161,7 +161,7 @@ $(document).ready(function(){
                     <div class="control-group">
                       <label class="control-label" for="f2_cep">CEP</label>
                       <div class="controls">
-                        <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value)">
+                        <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value);">
                         <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
                       </div>
                     </div>
@@ -169,7 +169,7 @@ $(document).ready(function(){
                       <div class="control-group">
                         <label class="control-label" for="f2_estado">Estado</label>
                         <div class="controls">
-                          <select id="f2_estado" name="f2_estado" onchange="municipios('f2');"></select>
+                          <select id="f2_estado" name="f2_estado" onchange="municipios('f2');" onafterupdate="municipios('f2');"></select>
                         </div>
                       </div>
                       <div class="control-group">
@@ -1210,7 +1210,6 @@ $(document).ready(function(){
                           //console.log($(this).val());
                           if($(this).val() == data.cep.uf){
                             $(this).attr('selected', 'selected');
-                            alert($(this).val() + 'selecionado');
                           }else{
                             $(this).removeAttr('selected');
                           }
