@@ -1205,10 +1205,10 @@ $(document).ready(function(){
                     },
                     success: function(data){
                       if(data.script != ""){
-                        console.log(data)
+                        console.log(data.cep.uf)
                         $("#f2_estado option").each(function () {
                           //console.log($(this).val());
-                          if($(this).val() == data.uf){
+                          if($(this).val() == data.cep.uf){
                             $(this).attr('selected', 'selected');
                             alert($(this).val() + 'selecionado');
                           }else{
