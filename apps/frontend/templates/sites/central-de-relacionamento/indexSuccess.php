@@ -187,14 +187,15 @@ $(document).ready(function(){
                         </label>
                       </div>
                     </div>
-                    <div class="control-group">
+                    
+                    <div id="f2_maisinfo">
+                      <div class="control-group">
                         <label class="control-label" for="f2_cep">CEP</label>
                         <div class="controls">
                           <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep">
                           <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
                         </div>
                       </div>
-                    <div id="f2_maisinfo">
                       <div class="control-group">
                         <label class="control-label" for="f2_endereco">Endereço</label>
                         <div class="controls">
