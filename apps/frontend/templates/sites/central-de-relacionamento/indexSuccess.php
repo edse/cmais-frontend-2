@@ -1194,11 +1194,11 @@ $(document).ready(function(){
                   });
                 }
                 
-                function cep(){
+                function cep(cep){
                   $.ajax({
                     type: "POST",
                     dataType: "json",
-                    url: "http://cmais.com.br/actions/cep/geraJSONendereco.php?cep=01310-200",
+                    url: "http://cmais.com.br/actions/cep/geraJSONendereco.php?cep="+cep,
                     //data: "action=contas&cod_veiculo="+$('#f4_cod_veiculo :selected').val(),
                     beforeSend: function(){
                       //$('img#ajax-loader').show();
