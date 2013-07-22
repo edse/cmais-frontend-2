@@ -1220,7 +1220,7 @@ $(document).ready(function(){
                           }
                         }).delay(2000, function(){
                             console.log(data.cep.cidade.toUpperCase())
-                            $('#f2_local').each(function(){
+                            $('#f2_local option').each(function(){
                               if($(this).val() == data.cep.cidade.toUpperCase()){
                                 $(this).attr('selected', 'selected');
                                 $('#f2_local').focus();
