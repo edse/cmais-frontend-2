@@ -161,7 +161,7 @@ $(document).ready(function(){
                     <div class="control-group">
                       <label class="control-label" for="f2_cep">CEP</label>
                       <div class="controls">
-                        <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value);" onfocusout="municipios('f2');">
+                        <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value);">
                         <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
                       </div>
                     </div>
@@ -1210,18 +1210,17 @@ $(document).ready(function(){
                         console.log(data.cep.uf)
                         //estado
                         $("#f2_estado option").each(function () {
-                          //console.log($(this).val());
+                          console.log($(this).val());
                           if($(this).val() == data.cep.uf){
                             $(this).attr('selected', 'selected');
-                            $('#f2_estado').focus(function(){
-                              //cidade
-                              $('#f2_local option').each(function(){
-                                if($(this).val() == data.cidade.uf){
-                                  $(this).attr('selected', 'selected');
-                                }else{
-                                  $(this).removeAttr('selected');
-                                }
-                              });  
+                            $('#f2_estado').focus();
+                            //cidade
+                            $('#f2_local option').each(function(){
+                              if($(this).val() == data.cidade.uf){
+                                $(this).attr('selected', 'selected');
+                              }else{
+                                $(this).removeAttr('selected');
+                              }
                             });
                           }else{
                             $(this).removeAttr('selected');
