@@ -187,6 +187,13 @@ $(document).ready(function(){
                         </label>
                       </div>
                     </div>
+                    <div class="control-group">
+                        <label class="control-label" for="f2_cep">CEP</label>
+                        <div class="controls">
+                          <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep">
+                        </div>
+                      </div>
+                      <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
                     <div id="f2_maisinfo">
                       <div class="control-group">
                         <label class="control-label" for="f2_endereco">Endereço</label>
@@ -204,12 +211,6 @@ $(document).ready(function(){
                         <label class="control-label" for="f2_complemento">Complemento</label>
                         <div class="controls">
                           <input type="text" class="input-xlarge" id="f2_complemento" name="f2_complemento">
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_cep">CEP</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep">
                         </div>
                       </div>
                       <div class="control-group">
@@ -544,7 +545,7 @@ $(document).ready(function(){
                           <label class="control-label" for="f4_cep">CEP</label>
                           <div class="controls">
                             <input type="text" class="input-xlarge" id="f4_cep" name="f4_cep">
-                            <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank">Clique aqui</a> e consulte o Correio.</p>
+                            <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
                           </div>
                         </div>
                         <div class="control-group">
