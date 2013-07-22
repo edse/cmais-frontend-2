@@ -1206,16 +1206,27 @@ $(document).ready(function(){
                     success: function(data){
                       if(data.script != ""){
                         console.log(data.cep.uf)
+                        //estado
                         $("#f2_estado option").each(function () {
                           //console.log($(this).val());
                           if($(this).val() == data.cep.uf){
                             $(this).attr('selected', 'selected');
-                            $('#f2_estado').focus();
+                            $('#f2_estado').focus(function(){
+                              //cidade
+                              $('#f2_local option').each(function(){
+                                if($(this).val() == data.cidade.uf){
+                                  $(this).attr('selected', 'selected');
+                                }else{
+                                  $(this).removeAttr('selected');
+                                }
+                              });  
+                            });
                           }else{
                             $(this).removeAttr('selected');
                           }
+                          
+                          
                         })
-                        
                       }
                       else{
                         alert('Erro!');
