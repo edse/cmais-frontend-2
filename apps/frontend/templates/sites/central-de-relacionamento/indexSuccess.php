@@ -1220,7 +1220,14 @@ $(document).ready(function(){
                           }
                         }).delay(2000, function(){
                             console.log(data.cep.cidade)
-                            
+                            $('#f2_local').each(function(){
+                              if($(this).val() == data.cep.cidade.toUpperCase()){
+                                $(this).attr('selected', 'selected');
+                                $('#f2_local').focus();
+                              }else{
+                                $(this).removeAttr('selected');
+                              }
+                            })
                           });
                       }
                       else{
