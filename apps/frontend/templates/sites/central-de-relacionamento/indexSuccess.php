@@ -1206,8 +1206,16 @@ $(document).ready(function(){
                     success: function(data){
                       if(data.script != ""){
                         console.log(data)
-                        $('#f2_estado').val(data.uf);
-                        console.log($('#f2_estado').val())
+                        $("#f2_estado option").each(function () {
+                          if($(this).value() == data.uf){
+                            $(this).attr('selected', 'selected');
+                            alert($(this).value() + 'selecionado');
+                          }else{
+                            $(this).removeAttr('selected');
+                            alert($(this).value() + 'removido');
+                          }
+                        })
+                        .change();
                       }
                       else{
                         alert('Erro!');
