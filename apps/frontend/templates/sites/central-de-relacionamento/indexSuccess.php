@@ -1219,7 +1219,7 @@ $(document).ready(function(){
                             $(this).removeAttr('selected');
                           }
                         }).delay(2000, function(){
-                            console.log(data.cep.cidade)
+                            console.log(data.cep.cidade.toUpperCase())
                             $('#f2_local').each(function(){
                               if($(this).val() == data.cep.cidade.toUpperCase()){
                                 $(this).attr('selected', 'selected');
