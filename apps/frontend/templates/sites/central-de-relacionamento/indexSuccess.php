@@ -1210,7 +1210,7 @@ $(document).ready(function(){
                         console.log(data)
                         //estado
                         $("#f2_estado option").each(function () {
-                          console.log($(this).val());
+                          //console.log($(this).val());
                           if($(this).val() == data.cep.uf){
                             $(this).attr('selected', 'selected');
                             $('#f2_estado').focus();
@@ -1220,7 +1220,8 @@ $(document).ready(function(){
                           }
                           //cidade
                           $('#f2_local option').each(function(){
-                            if($(this).val() == data.cep.cidade){
+                            console.log(data.cep.cidade)
+                            if($(this).val() == data.cep.cidade.toUpperCase()){
                               $(this).attr('selected', 'selected');
                               $('#f2_local').focus();
                             }else{
