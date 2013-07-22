@@ -158,11 +158,18 @@ $(document).ready(function(){
                         <!-- <p class="help-block">Pais em que reside <code>Chile</code></p> -->
                       </div>
                     </div>
+                    <div class="control-group">
+                      <label class="control-label" for="f2_cep">CEP</label>
+                      <div class="controls">
+                        <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value);">
+                        <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
+                      </div>
+                    </div>
                     <div id="f2_brasil">
                       <div class="control-group">
                         <label class="control-label" for="f2_estado">Estado</label>
                         <div class="controls">
-                          <select id="f2_estado" name="f2_estado" onchange="municipios('f2');"></select>
+                          <select id="f2_estado" name="f2_estado" onchange="municipios('f2');" onafterupdate="municipios('f2');"></select>
                         </div>
                       </div>
                       <div class="control-group">
@@ -183,11 +190,13 @@ $(document).ready(function(){
                       <div class="controls">
                         <label class="checkbox">
                           <input type="checkbox" id="f2_mais" name="f2_mais" value="1" onclick="toggleInfo();">
-                          Para facilitar ainda mais nosso relacionamento teste
+                          Para facilitar ainda mais nosso relacionamento
                         </label>
                       </div>
                     </div>
+                    
                     <div id="f2_maisinfo">
+                      
                       <div class="control-group">
                         <label class="control-label" for="f2_endereco">Endereço</label>
                         <div class="controls">
@@ -204,12 +213,6 @@ $(document).ready(function(){
                         <label class="control-label" for="f2_complemento">Complemento</label>
                         <div class="controls">
                           <input type="text" class="input-xlarge" id="f2_complemento" name="f2_complemento">
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_cep">CEP</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep">
                         </div>
                       </div>
                       <div class="control-group">
@@ -544,7 +547,7 @@ $(document).ready(function(){
                           <label class="control-label" for="f4_cep">CEP</label>
                           <div class="controls">
                             <input type="text" class="input-xlarge" id="f4_cep" name="f4_cep">
-                            <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank">Clique aqui</a> e consulte o Correio.</p>
+                            <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
                           </div>
                         </div>
                         <div class="control-group">
@@ -1183,6 +1186,35 @@ $(document).ready(function(){
                     success: function(data){
                       if(data.script != ""){
                         eval(data.script);
+                      }
+                      else{
+                        alert('Erro!');
+                      }
+                    }
+                  });
+                }
+                
+                function cep(cep){
+                  $.ajax({
+                    type: "POST",
+                    dataType: "json",
+                    url: "http://cmais.com.br/actions/cep/geraJSONendereco.php?cep="+cep,
+                    //data: "action=contas&cod_veiculo="+$('#f4_cod_veiculo :selected').val(),
+                    beforeSend: function(){
+                      //$('img#ajax-loader').show();
+                    },
+                    success: function(data){
+                      if(data.script != ""){
+                        console.log(data.cep.uf)
+                        $("#f2_estado option").each(function () {
+                          //console.log($(this).val());
+                          if($(this).val() == data.cep.uf){
+                            $(this).attr('selected', 'selected');
+                          }else{
+                            $(this).removeAttr('selected');
+                          }
+                        })
+                        
                       }
                       else{
                         alert('Erro!');

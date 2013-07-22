@@ -6194,6 +6194,7 @@ form .nome{
   float: left;
   margin: 0 5px 25px 0;
   width: 200px;
+  height: 150px;
 }
 #box-especial-interna .lista-programas li a{
   color: #6b6b6b;

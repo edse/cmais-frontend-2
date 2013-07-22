@@ -2756,5 +2756,10 @@ body { background:url(/portal/quintal/images/bg-quintal.jpg) repeat-x !important
 #miolo.a-sobre-o-programa .box-interna h3{font-weight: bold; font-size: 24px;}
 .s-personagens .rodape{clear: both;margin:0;}
 .s-personagens .rodape .menuRodape {margin: 0 auto; margin-top: 82px; }
-#miolo.s-personagens .paginacao{position: absolute;bottom: 14px;left: 53px; background:#069c00;border:none;}
+#miolo.s-personagens .paginacao{position: absolute;bottom: 26px;left: 53px; background:#069c00;border:none;}
+#miolo.s-personagens .paginacao a {margin:2px 4px 0 0;}
+#miolo.s-personagens .pag3 .proximo {background-position: 0 -71px;}
+#miolo.s-personagens .pag3 a {background-position: 0 -89px;}
 #miolo.s-personagens .box-padrao.grid1{display:none;}
+#miolo.s-personagens .paginacao p{color:#FFF;} 
+#miolo.a-sobre-o-programa .rodape-cmais, #miolo.s-personagens .rodape-cmais{display:none;}
