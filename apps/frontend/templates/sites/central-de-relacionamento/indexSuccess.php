@@ -1207,6 +1207,7 @@ $(document).ready(function(){
                       if(data.script != ""){
                         console.log(data)
                         $('#f2_estado').val(data.uf);
+                        console.log($('#f2_estado').val())
                       }
                       else{
                         alert('Erro!');
