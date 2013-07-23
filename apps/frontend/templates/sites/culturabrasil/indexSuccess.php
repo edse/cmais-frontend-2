@@ -181,10 +181,10 @@
 <script>
 $(document).ready(function(){
   $('#carrossel-radar').mouseenter(function(){
-    $('carousel-control').fadeIn("fast");
+    $('.carousel-control').fadeIn("fast");
   });
   $('#carrossel-radar').mouseleave(function(){
-    $('carousel-control').fadeOut("fast");
+    $('.carousel-control').fadeOut("fast");
   });
 });
 </script>  
