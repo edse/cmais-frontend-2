@@ -98,9 +98,9 @@
                     <hr />
                   </div>
                 <form id="form-contato" method="post" action="">
-                  <b>Primeiro passo:</b> Envie seu vídeo. <br>
+                  
                   <fieldset>
-                   
+                    <legend><h1><b>Primeiro passo:</b> Envie seu vídeo.</h1></legend>
                     <p>Utilize a ferramenta abaixo para enviar seu vídeo.</p>
                     <p>IMPORTANTE: Coloque o seu nome completo como título do vídeo!</p>
                     
@@ -125,8 +125,9 @@
                       <span id="enviar">Fazer upload</span>
                     </a>
                     <div id="ytdContainer-5655612935372800"></div>
+                    <legend><h1><b>Segundo passo:</b> Informe seus dados.</h1></legend>
                   </fieldset>
-                  <b>Segundo passo:</b> Preencha seus dados <br>
+                  
                   <div class="linha t3">
                     <label>nome da crianca</label>
                     <input type="text" name="nome_crianca" id="nome_crianca" />
