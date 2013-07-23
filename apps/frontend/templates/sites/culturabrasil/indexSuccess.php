@@ -13,9 +13,8 @@
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script src="/portal/js/bootstrap/bootstrap.js"></script>
-<!-- Navbar
-================================================== -->
-<div class="navbar navbar-inverse navbar-fixed-top">
+<!-- Navbar -->
+<div class="navbar navbar-inverse">
   <div class="navbar-inner">
     <div class="container" style="width: 414px;">
       <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
