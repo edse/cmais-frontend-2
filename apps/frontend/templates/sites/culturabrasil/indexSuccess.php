@@ -6,7 +6,7 @@
 <!-- Le styles--> 
 <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cultura-brasil.css" rel="stylesheet" type="text/css" />
+<link href="/portal/css/tvcultura/sites/culturabrasil.css" rel="stylesheet" type="text/css" />
 
 <!--fonte-->
 <link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
