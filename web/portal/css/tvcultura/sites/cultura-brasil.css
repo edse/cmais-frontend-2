@@ -14,7 +14,9 @@ img{width:100%;}
 
 /* geral */
 .container{width:1010px; margin:0 auto;}
-.ouca{max-width:150px;}
+.ouca{max-width:150px;display: block;float: right;}
+.menuprincipal{max-width: 853px;float: left;}
+.menuprincipal li a{font-family: 'Asap', Arial, Helvetica, sans-serif; color:#666666; text-transform:uppercase;}
 /* geral */
 
 /* home */
