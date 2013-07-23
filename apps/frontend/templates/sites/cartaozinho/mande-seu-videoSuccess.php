@@ -100,7 +100,7 @@
                 <form id="form-contato" method="post" action="">
                   
                   <fieldset>
-                    <legend><h1><b>Primeiro passo:</b> Envie seu vídeo.</h1><p></legend>
+                    <legend><h1><b>Primeiro passo:</b> Envie seu vídeo.</h1></legend><br><br>
                     <p>Utilize a ferramenta abaixo para enviar seu vídeo.</p>
                     <p>IMPORTANTE: Coloque o seu nome completo como título do vídeo!</p>
                     
