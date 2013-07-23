@@ -31,10 +31,7 @@ $(function(){
           -->
           <?php endif; ?>
           
-          <?php if(isset($program) && $program->id > 0): ?>
-          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
-          
+       
           <?php if(isset($program) && $program->id > 0): ?>
             <!-- horario -->
             <div id="horario">
