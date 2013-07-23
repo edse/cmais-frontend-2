@@ -23,7 +23,9 @@
   <div class="container row-fluid">
     <!--logo-->
     <div class="logo">
-      logo
+       <a href="http://cmais.com.br/culturabrasil" title="Cultura Brasil">
+        <img src="/portal/images/capaPrograma/cultura-brasil/logoculturabrasil.jpg" alt="Cultura Brasil" />
+      </a>
     </div>
     <!--/logo--> 
     
