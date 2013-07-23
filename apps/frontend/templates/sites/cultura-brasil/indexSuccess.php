@@ -77,13 +77,40 @@
 
 <!--section miolo--> 
 <section class="miolo">
-
+  <!-- container miolo -->
   <div class="container row-fluid">
-    miolo
+    <?php if(isset($displays['destaque-principal'])): ?>
+      <?php if(count($displays['destaque-principal']) > 0): ?>
+        <!-- box-carrossel -->
+        <div id="carrossel-radar" class="carousel slide">
+          <div class="carousel-inner">
+            <?php foreach($displays['destaque-principal'] as $k=>$d): ?>          
+              <!-- item -->
+              <div class="<?php if($k==1): ?>active<?php endif; ?> item">
+                <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                  <?php /*<img src="<?php echo $d->retriveImageUrlByImageUsage('image-10-b') ?>" alt="<?php echo $d->getTitle() ?>" /> */ ?>
+                  <img src="<?php echo $d->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" />
+                  <div class="carousel-caption">
+                    <h4><?php echo $d->getTitle() ?></h4>
+                    <h3><?php echo $d->getLabel() ?></h3>
+                    <p><?php echo $d->getDescription() ?></p>
+                  </div>
+                </a>
+              </div>
+              <!-- /item -->
+            <?php endforeach; ?>
+          </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left" href="#carrossel-radar" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#carrossel-radar" data-slide="next">&rsaquo;</a>
+        </div>
+        <!-- /box-carrossel -->
+      <?php endif; ?>
+    <?php endif; ?> 
   </div>
-  
+  <!-- /container miolo -->
 </section>
-<!--section miolo-->
+<!--/section miolo-->
 
 <!--section rodape--> 
 <section class="rodape">
