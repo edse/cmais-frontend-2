@@ -230,9 +230,27 @@
             <p>Seleção reúne artistas marcados para sempre por algum grande sucesso. Com Brylho (foto), Paulo Diniz, , Markinhos Moura e Vanessa Rangel.</p>
           </div>
           <!--item-->  
-          
+          <hr>
+          <span class="mais">+ Playlists</span>
         </div>
         <!--destaque playlist -->
+        
+        <!--destaque frases -->
+        <div class="destaque-cultura">
+          <span>supertonica<i class="borda-titulo"></i></span>
+          <h2>"A gente tem que aprender a ser pequeno!"</h2>
+          <p>Paulo Bellinati, violonista, sobre a música instrumental brasileira</p>
+          <hr>
+          <span class="mais">+ Playlists</span>
+        </div>  
+        <!--destaque frases -->
+        
+        <!--destaque widgets -->
+        <div class="destaque-cultura">
+          <p>Copie o código abaixo para incorporar o Controle Remoto ao seu blog ou site</p>
+          <textarea>&lt;iframe src="http://www.culturabrasil.com.br/widget" frameborder="0" scrolling="no" width="145" height="55"&gt;&lt;/iframe&gt;</textarea>
+        </div>  
+        <!--destaque widgets -->
         
       </div>
       <!--/coluna do meio -->
