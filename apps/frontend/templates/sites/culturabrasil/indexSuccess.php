@@ -1,5 +1,18 @@
 <?php use_helper('I18N', 'Date') ?>
-<!--topo cmais-->
+
+<!-- Le styles--> 
+<link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/culturabrasil.css" rel="stylesheet" type="text/css" />
+
+<!--fonte-->
+<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<!--fonte-->
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="/portal/js/bootstrap/bootstrap.js"></script>
 <!-- Navbar
 ================================================== -->
 <div class="navbar navbar-inverse navbar-fixed-top">
@@ -58,22 +71,9 @@
       </div>
     </div>
   </div>
-</div>
+</div> 
 <!--topo cmais-->
 
-<!-- Le styles--> 
-<link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/culturabrasil.css" rel="stylesheet" type="text/css" />
-
-<!--fonte-->
-<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<!--fonte-->
-<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<script src="/portal/js/bootstrap/bootstrap.js"></script>
  
 <!--section topo--> 
 <section class="topo"> 
