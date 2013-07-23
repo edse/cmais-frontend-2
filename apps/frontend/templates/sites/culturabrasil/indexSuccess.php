@@ -163,7 +163,29 @@
         </div>
         <!-- /box-carrossel -->
       <?php endif; ?>
-    <?php endif; ?> 
+    <?php endif; ?>
+    
+    <!--colunas-->
+    <div class="row-fluid">
+      <!--coluna esquerda -->
+      <div class="span4">
+        esquerda
+      </div>  
+      <!--/coluna esquerda -->
+      
+      <!--coluna do meio -->
+      <div class="span4">
+        meio
+      </div>
+      <!--/coluna do meio -->
+      
+      <!--coluna direita -->
+      <div class="span4">
+        direita
+      </div>
+      <!--/coluna direita -->
+    </div>
+    <!--/colunas-->
   </div>
   <!-- /container miolo -->
 </section>
