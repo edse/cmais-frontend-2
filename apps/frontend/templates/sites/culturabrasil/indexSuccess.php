@@ -148,8 +148,8 @@
                   <?php /*<img src="<?php echo $d->retriveImageUrlByImageUsage('image-10-b') ?>" alt="<?php echo $d->getTitle() ?>" /> */ ?>
                   <img src="<?php echo $d->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" />
                   <div class="carousel-caption">
-                    <h4><?php echo $d->getTitle() ?></h4>
                     <h3><?php echo $d->getLabel() ?></h3>
+                    <h4><?php echo $d->getTitle() ?></h4>
                     <p><?php echo $d->getDescription() ?></p>
                   </div>
                 </a>
