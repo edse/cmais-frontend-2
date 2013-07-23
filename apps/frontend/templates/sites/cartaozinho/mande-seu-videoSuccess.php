@@ -124,7 +124,7 @@
                     <a id="callToActionId-5655612935372800" href="javascript:void(0);" style="text-decoration:none;clear:both; float:left; background-color: yellow; padding: 5px;margin-bottom: 20px;">
                       <span id="enviar">Fazer upload</span>
                     </a>
-                    <div id="ytdContainer-5655612935372800"></div><br>
+                    <div id="ytdContainer-5655612935372800"></div><p>
                     <legend><h1><b>Segundo passo:</b> Informe seus dados.</h1></legend>
                     <br>
                   </fieldset>
