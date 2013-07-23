@@ -19,19 +19,31 @@
  
 <!--section topo--> 
 <section class="topo">
- topo
+  
+  <div class="container">
+    topo
+  </div>
+ 
 </section>
 <!--section topo-->
 
 <!--section miolo--> 
 <section class="miolo">
-miolo
+
+  <div class="container">
+    miolo
+  </div>
+  
 </section>
 <!--section miolo-->
 
 <!--section rodape--> 
 <section class="rodape">
-rodape
+
+  <div class="container">
+    rodape
+  </div>
+  
 </section>
 <!--section rodape-->  
 
