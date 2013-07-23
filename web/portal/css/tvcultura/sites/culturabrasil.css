@@ -55,8 +55,8 @@ img{width:100%;}
 .destaque-cultura p{font-size:14px;}
 .destaque-cultura i.borda-titulo{background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat; width:7px; height:19px; display:block; position: absolute; top:1px; right:0;}
 
-.destaque-playlist h1{font-size:12px; letter-spacing:0.1em; color:#666666; text-transform:uppercase;}
-.destaque-playlist h2{font-size:23px; letter-spacing: 0.1em; color:#333333;}
+.destaque-playlist h1{font-size:12px; letter-spacing:0.1em; color:#666666; text-transform:uppercase; font-weight: normal;}
+.destaque-playlist h2{font-size:23px; letter-spacing: 0.1em; color:#333333;font-weight: normal;}
 .destaque-playlist p{font-size: 14px;}
 
 /* home */
