@@ -98,6 +98,35 @@
                     <hr />
                   </div>
                 <form id="form-contato" method="post" action="">
+                  <b>Primeiro passo:</b> Envie seu vídeo.
+                  <fieldset>
+                    <legend><h1>Vídeo</h1></legend>
+                    <p>Utilize a ferramenta abaixo para enviar seu vídeo.</p>
+                    <p>IMPORTANTE: Coloque o seu nome completo como título do vídeo!</p>
+                    
+                    <script type="text/javascript" src="https://cartaozinhoupload.appspot.com/js/ytd-embed.js"></script>
+                    <script type="text/javascript">
+                    var ytdInitFunction = function() {
+                      var ytd = new Ytd();
+                      ytd.setAssignmentId("5655612935372800");
+                      ytd.setCallToAction("callToActionId-5655612935372800");
+                      var containerWidth = 620;
+                      var containerHeight = 550;
+                      ytd.setYtdContainer("ytdContainer-5655612935372800", containerWidth, containerHeight);
+                      ytd.ready();
+                    };
+                    if (window.addEventListener) {
+                      window.addEventListener("load", ytdInitFunction, false);
+                    } else if (window.attachEvent) {
+                      window.attachEvent("onload", ytdInitFunction);
+                    }
+                    </script>
+                    <a id="callToActionId-5655612935372800" href="javascript:void(0);" style="text-decoration:none;clear:both; float:left; background-color: yellow; padding: 5px;margin-bottom: 20px;">
+                      <span id="enviar">Fazer upload</span>
+                    </a>
+                    <div id="ytdContainer-5655612935372800"></div>
+                  </fieldset>
+                  <b>Segundo passo:</b> Preencha seus dados
                   <div class="linha t3">
                     <label>nome da crianca</label>
                     <input type="text" name="nome_crianca" id="nome_crianca" />
@@ -105,7 +134,7 @@
                   <div class="linha t3">
                     <label>nome dos pais ou responsável legal</label>
                     <input type="text" name="nome_resp" id="nome_resp" />
-                  </div>
+                  </div> 
                  <div class="linha t1">
                     <label>cidade</label>
                     <input type="text" name="cidade" id="cidade" />
@@ -149,33 +178,7 @@
                     <input type="text" name="email" id="email" />
                   </div>
                   <div class="linha t3">
-                  <fieldset>
-                    <legend><h1>Vídeo</h1></legend>
-                    <p>Utilize a ferramenta abaixo para enviar seu vídeo.</p>
-                    <p>IMPORTANTE: Coloque o seu nome completo como título do vídeo!</p>
-                    
-                    <script type="text/javascript" src="https://cartaozinhoupload.appspot.com/js/ytd-embed.js"></script>
-                    <script type="text/javascript">
-                    var ytdInitFunction = function() {
-                      var ytd = new Ytd();
-                      ytd.setAssignmentId("5655612935372800");
-                      ytd.setCallToAction("callToActionId-5655612935372800");
-                      var containerWidth = 620;
-                      var containerHeight = 550;
-                      ytd.setYtdContainer("ytdContainer-5655612935372800", containerWidth, containerHeight);
-                      ytd.ready();
-                    };
-                    if (window.addEventListener) {
-                      window.addEventListener("load", ytdInitFunction, false);
-                    } else if (window.attachEvent) {
-                      window.attachEvent("onload", ytdInitFunction);
-                    }
-                    </script>
-                    <a id="callToActionId-5655612935372800" href="javascript:void(0);" style="text-decoration:none;clear:both; float:left; background-color: yellow; padding: 5px;margin-bottom: 20px;">
-                      <span id="enviar">Fazer upload</span>
-                    </a>
-                    <div id="ytdContainer-5655612935372800"></div>
-                  </fieldset>
+                  
                   </div>
                   
                   <!--
