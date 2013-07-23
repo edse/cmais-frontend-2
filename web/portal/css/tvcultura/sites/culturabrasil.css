@@ -41,7 +41,7 @@ img{width:100%;}
 /* home */
 .carousel-control {position: absolute;top: 50%; display:none;}
 .carousel-caption {position: absolute;left: auto ;right: 0;bottom: 0;padding: 10px 10px 20px 20px ;width: 310px;top: 0;color: white; background:none;}
-.carousel-caption h4{font-family: 'Asap', Arial, Helvetica, sans-serif; font-size:24px;font-weight:normal;line-height:36px;}
-.carousel-caption h3{font-family: 'Asap', Arial, Helvetica, sans-serif; margin: 0;font-weight: normal;font-size: 18px;text-transform: uppercase;}
-.carousel-caption p{padding: 15px 0 0 0px;font-size: 18px;line-height: 24px;}
+.carousel-caption h4{font-family: 'Asap', Arial, Helvetica, sans-serif; font-size:24px;font-weight:normal;line-height:35px;}
+.carousel-caption h3{font-family: 'Asap', Arial, Helvetica, sans-serif; margin: 0;font-weight: normal;font-size: 17px;text-transform: uppercase;}
+.carousel-caption p{padding: 15px 0 0 0px;font-size: 18px;line-height: 23px;}
 /* home */
