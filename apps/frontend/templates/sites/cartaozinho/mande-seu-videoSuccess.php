@@ -100,7 +100,7 @@
                 <form id="form-contato" method="post" action="">
                   
                   <fieldset>
-                    <legend><h1><b>Primeiro passo:</b> Envie seu vídeo.</h1></legend><br><br>
+                    <legend><h1><b>Primeiro passo:</b> Envie seu vídeo</h1></legend><br><br>
                     <p>Utilize a ferramenta abaixo para enviar seu vídeo.</p>
                     <p>IMPORTANTE: Coloque o seu nome completo como título do vídeo!</p>
                     
@@ -125,7 +125,7 @@
                       <span id="enviar">Fazer upload</span>
                     </a>
                     <div id="ytdContainer-5655612935372800"></div><p>
-                    <legend><h1><b>Segundo passo:</b> Informe seus dados.</h1></legend>
+                    <legend><h1><b>Segundo passo:</b> Informe seus dados</h1></legend>
                     <br>
                   </fieldset>
                   
