@@ -178,7 +178,11 @@
   
 </section>
 <!--section rodape-->  
-
-<!--rodape cmais-->
-
-<!--rodape cmais-->
+<script>
+$('#carrossel-radar').mouseenter(function(){
+  alert('entrei');
+});
+$('#carrossel-radar').mouseleave(function(){
+  alert('sai');
+});
+</script>  
