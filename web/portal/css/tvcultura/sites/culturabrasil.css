@@ -45,6 +45,8 @@ img{width:100%;}
 .carousel-caption h4{ font-size:24px;font-weight:normal;line-height:35px;}
 .carousel-caption h3{ margin: 0;font-weight: normal;font-size: 17px;text-transform: uppercase;}
 .carousel-caption p{padding: 15px 0 0 0px;font-size: 18px;line-height: 23px;}
+
+.destaque-cultura{margin-top:20px}
 .destaque-cultura span{font-size:12px; background:#666666; color:#FFFFFF; padding: 5px;letter-spacing: 0.1em;}
 .destaque-cultura h2{font-size:23px;font-weight: normal;margin: 0;line-height: 36px;color: #333333;}
 .destaque-cultura p{font-size:14px;}
