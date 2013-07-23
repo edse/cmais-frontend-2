@@ -167,8 +167,10 @@
     
     <!--colunas-->
     <div class="row-fluid">
+      
       <!--coluna esquerda -->
       <div class="span4">
+        
         <!--destaque-->
         <div class="destaque-cultura">
           <span>Bossamoderna<i class="borda-titulo"></i></span>
@@ -196,13 +198,42 @@
         </div>  
         <!--/destaque-->
         
-        
       </div>  
       <!--/coluna esquerda -->
       
       <!--coluna do meio -->
       <div class="span4">
-        meio
+        
+        <!--destaque playlist -->
+        <div class="destaque-playlist">
+          <h1>Playlists</h1>
+          <!--item-->
+          <div class="item">
+            <a href="http://www.culturabrasil.com.br/playlists/rolling-stones-made-in-brazil">
+              <img src="http://www.culturabrasil.com.br/midia/image/default/rollingstones_01_1303744795.jpg" alt="Rolling Stones made in Brazil">
+            </a>
+            <h2>Rolling Stones made in Brazil</h2>
+            <p>Versões para sucessos da banda inglesa por artistas brasileiros: Caetano Veloso, Jerry Adriani, Ronnie Von, The Bubbles, Os Tarântulas e Claudia Ohana.</p>
+          </div>
+          <!--item--> 
+          
+          <!--item-->
+          <div class="item">
+            <h2>Caetano Experimental</h2>
+            <p>A vontade de Caetano Veloso por fazer algo diferente em música popular o levou ao tropicalismo, à poesia concreta e à dodecafonia.</p>
+          </div>
+          <!--item--> 
+          
+          <!--item-->
+          <div class="item">
+            <h2>Artistas de um sucesso</h2>
+            <p>Seleção reúne artistas marcados para sempre por algum grande sucesso. Com Brylho (foto), Paulo Diniz, , Markinhos Moura e Vanessa Rangel.</p>
+          </div>
+          <!--item-->  
+          
+        </div>
+        <!--destaque playlist -->
+        
       </div>
       <!--/coluna do meio -->
       
