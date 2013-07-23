@@ -16,7 +16,7 @@ img{width:100%;}
 .container{width:1010px; margin:0 auto;}
 .ouca{max-width:150px;display: block;float: right;}
 .menu-principal{max-width: 853px;float: left;}
-.menu-principal li a{font-family: 'Asap', Arial, Helvetica, sans-serif; color:#666666; text-transform:uppercase;}
+.menu-principal li a{font-family: 'Asap', Arial, Helvetica, sans-serif; color:#666666; text-transform:uppercase; font-size: 14px;}
 /* geral */
 
 /* home */
