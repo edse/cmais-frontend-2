@@ -169,7 +169,7 @@ $(document).ready(function(){
                       <div class="control-group">
                         <label class="control-label" for="f2_estado">Estado</label>
                         <div class="controls">
-                          <select id="f2_estado" name="f2_estado" onchange="municipios('f2');" onafterupdate="municipios('f2');"></select>
+                          <select id="f2_estado" name="f2_estado" onchange="municipios('f2');" onfocus="municipios('f2');"></select>
                         </div>
                       </div>
                       <div class="control-group">
@@ -1063,11 +1063,13 @@ $(document).ready(function(){
                 function toggleExterior(){
                   if($('#f2_exterior').attr('checked')){
                     $('#f2_brasil').hide();
+                    $('#f2_cep').parent().parent().hide();
                     $('#f2_estado,#f2_local').attr('disabled','disabled');
                     $('.f2_exterior').show();
                     $('.f2_exterior').removeAttr('disabled');
                   }else{
                     $('#f2_brasil').show();
+                    $('#f2_cep').parent().parent().show();
                     $('#f2_estado,#f2_local').removeAttr('disabled');
                     $('.f2_exterior').hide();
                     $('.f2_exterior').attr('disabled','disabled');
@@ -1205,16 +1207,28 @@ $(document).ready(function(){
                     },
                     success: function(data){
                       if(data.script != ""){
-                        console.log(data.cep.uf)
+                        //console.log(data)
+                        //estado
                         $("#f2_estado option").each(function () {
                           //console.log($(this).val());
                           if($(this).val() == data.cep.uf){
                             $(this).attr('selected', 'selected');
+                            $('#f2_estado').focus();
+                            
                           }else{
                             $(this).removeAttr('selected');
                           }
-                        })
-                        
+                        }).delay(4000, function(){
+                            $('#f2_local option').each(function(){
+                              console.log($(this).val());
+                              if($(this).val() == data.cep.cidade.toUpperCase()){
+                                $(this).attr('selected', 'selected');
+                                $('#f2_local').focus();
+                              }else{
+                                $(this).removeAttr('selected');
+                              }
+                            })
+                          });
                       }
                       else{
                         alert('Erro!');
