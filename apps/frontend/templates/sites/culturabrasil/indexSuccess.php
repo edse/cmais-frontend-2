@@ -150,7 +150,7 @@
                   <div class="carousel-caption">
                     <h3><?php echo $d->getLabel() ?></h3>
                     <h4><?php echo $d->getTitle() ?></h4>
-                    <p><?php echo $d->getDescription() ?></p>
+                    <p><?php echo html_entity_decode($d->getDescription()) ?></p>
                   </div>
                 </a>
               </div>
