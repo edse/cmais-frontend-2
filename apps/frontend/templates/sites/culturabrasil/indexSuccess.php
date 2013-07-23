@@ -163,7 +163,106 @@
         </div>
         <!-- /box-carrossel -->
       <?php endif; ?>
-    <?php endif; ?> 
+    <?php endif; ?>
+    
+    <!--colunas-->
+    <div class="row-fluid">
+      
+      <!--coluna esquerda -->
+      <div class="span4">
+        
+        <!--destaque-->
+        <div class="destaque-cultura">
+          <span>Bossamoderna<i class="borda-titulo"></i></span>
+          <h2>Rios</h2>
+          <img src="http://www.culturabrasil.com.br/midia/image/originais/Geraldo_Azevedo___Interna_1374535758.jpg" alt="" class="big">
+          <p>Tárik de Souza embarca num viagem fluvial com músicas que têm como temática os cursos d’água. Com Geraldo Azevedo, Roberta Sá e Patrícia Bastos.</p>
+        </div>  
+        <!--/destaque-->
+        
+        <!--destaque-->
+        <div class="destaque-cultura">
+          <span>Solano Ribeiro<i class="borda-titulo"></i></span>
+          <h2>Francisco</h2>
+          <img src="http://www.culturabrasil.com.br/midia/image/originais/Franciscos__Interna_1374520304.jpg" alt="" class="big">
+          <p>Na visita do Papa, um especial de Franciscos. Mas não espere um programa religioso. A edição traz obras dos vários Franciscos da música popular brasileira e também alguns apelos...</p>
+        </div>  
+        <!--/destaque-->
+        
+        <!--destaque-->
+        <div class="destaque-cultura">
+          <span>supertonica<i class="borda-titulo"></i></span>
+          <h2>A voz-ritmo de Marcelo Pretto</h2>
+          <img src="http://www.culturabrasil.com.br/midia/image/originais/Marcus_e_Arrigo___Superto_1374278295.jpg" alt="" class="big">
+          <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
+        </div>  
+        <!--/destaque-->
+        
+      </div>  
+      <!--/coluna esquerda -->
+      
+      <!--coluna do meio -->
+      <div class="span4">
+        
+        <!--destaque playlist -->
+        <div class="destaque-playlist">
+          <h1>Playlists</h1>
+          <!--item-->
+          <div class="item">
+            <a href="http://www.culturabrasil.com.br/playlists/rolling-stones-made-in-brazil">
+              <img src="http://www.culturabrasil.com.br/midia/image/default/rollingstones_01_1303744795.jpg" alt="Rolling Stones made in Brazil">
+            </a>
+            <h2>Rolling Stones made in Brazil</h2>
+            <p>Versões para sucessos da banda inglesa por artistas brasileiros: Caetano Veloso, Jerry Adriani, Ronnie Von, The Bubbles, Os Tarântulas e Claudia Ohana.</p>
+          </div>
+          <!--item--> 
+          
+          <!--item-->
+          <div class="item">
+            <h2>Caetano Experimental</h2>
+            <p>A vontade de Caetano Veloso por fazer algo diferente em música popular o levou ao tropicalismo, à poesia concreta e à dodecafonia.</p>
+          </div>
+          <!--item--> 
+          
+          <!--item-->
+          <div class="item">
+            <h2>Artistas de um sucesso</h2>
+            <p>Seleção reúne artistas marcados para sempre por algum grande sucesso. Com Brylho (foto), Paulo Diniz, , Markinhos Moura e Vanessa Rangel.</p>
+          </div>
+          <!--item-->  
+          <hr>
+          <span class="mais">+ Playlists</span>
+        </div>
+        <!--destaque playlist -->
+        
+        <!--destaque frases -->
+        <div class="destaque-cultura">
+          <span>FRASES<i class="borda-titulo"></i></span>
+          <h2>"A gente tem que aprender a ser pequeno!"</h2>
+          <p>Paulo Bellinati, violonista, sobre a música instrumental brasileira</p>
+          <span class="linha-culturabrasil"></span>
+          <span class="mais">+ Playlists</span>
+        </div>  
+        <!--destaque frases -->
+        
+        <!--destaque widgets -->
+        <div class="destaque-cultura">
+          <p>Copie o código abaixo para incorporar o Controle Remoto ao seu blog ou site</p> 
+          <textarea>&lt;iframe src="http://www.culturabrasil.com.br/widget" frameborder="0" scrolling="no" width="145" height="55"&gt;&lt;/iframe&gt;</textarea>
+        </div>  
+        <!--destaque widgets -->
+        <span class="linha-culturabrasil"></span>
+        <span class="mais">+ Frases</span>
+      </div>
+      <!--/coluna do meio -->
+      
+      <!--coluna direita -->
+      <div class="span4">
+        direita
+      </div>
+      <!--/coluna direita -->
+    </div>
+    <!--/colunas-->
   </div>
   <!-- /container miolo -->
 </section>

@@ -35,13 +35,28 @@ img{width:100%;}
 .topo .ouca{max-width:150px;display: block;float: right;}
 .topo .logo{width: 210px; margin-top: 10px;}
 .menu-principal{max-width: 853px;float: left;}
-.menu-principal li a{font-family: 'Asap', Arial, Helvetica, sans-serif; color:#666666; text-transform:uppercase; font-size: 14px;padding: 5px 7px;margin-top: 12px;}
+.menu-principal li a{ color:#666666; text-transform:uppercase; font-size: 14px;padding: 5px 7px;margin-top: 12px;}
+.carousel-caption h4, .carousel-caption h3, 
+.destaque-cultura span, .destaque-cultura h2,
+.destaque-playlist h1, .destaque-playlist h2, 
+.menu-principal li a{font-family: 'Asap', Arial, Helvetica, sans-serif;}
 /* geral */
 
 /* home */
 .carousel-control {position: absolute;top: 50%; display:none;}
 .carousel-caption {position: absolute;left: auto ;right: 0;bottom: 0;padding: 10px 10px 20px 20px ;width: 310px;top: 0;color: white; background:none;}
-.carousel-caption h4{font-family: 'Asap', Arial, Helvetica, sans-serif; font-size:24px;font-weight:normal;line-height:35px;}
-.carousel-caption h3{font-family: 'Asap', Arial, Helvetica, sans-serif; margin: 0;font-weight: normal;font-size: 17px;text-transform: uppercase;}
+.carousel-caption h4{ font-size:24px;font-weight:normal;line-height:35px;}
+.carousel-caption h3{ margin: 0;font-weight: normal;font-size: 17px;text-transform: uppercase;}
 .carousel-caption p{padding: 15px 0 0 0px;font-size: 18px;line-height: 23px;}
+
+.destaque-cultura{margin-bottom:20px}
+.destaque-cultura span{font-size:12px; background:#666666; color:#FFFFFF; padding:3px 5px;letter-spacing: 0.1em;position:relative;width: 100%;}
+.destaque-cultura h2{font-size:23px;font-weight: normal;margin: 0;line-height: 36px;color: #333333;}
+.destaque-cultura p{font-size:14px;}
+.destaque-cultura i.borda-titulo{background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat; width:7px; height:19px; display:block; position: absolute; top:1px; left:100%;}
+
+.destaque-playlist h1{font-size:12px; color:#666666; text-transform:uppercase; font-weight: bold;margin: 0;line-height: 12px;margin-bottom: 10px;}
+.destaque-playlist h2{font-size:23px; color:#333333;font-weight: normal;line-height: 18px;margin: 10px 0px 5px 0px;}
+.destaque-playlist p{font-size: 14px; margin-bottom:15px;}
+
 /* home */
