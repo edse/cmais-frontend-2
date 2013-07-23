@@ -247,7 +247,7 @@
         
         <!--destaque widgets -->
         <div class="destaque-cultura">
-          <p>Copie o código abaixo para incorporar o Controle Remoto ao seu blog ou site</p>
+          <p>Copie o código abaixo para incorporar o Controle Remoto ao seu blog ou site</p> 
           <textarea>&lt;iframe src="http://www.culturabrasil.com.br/widget" frameborder="0" scrolling="no" width="145" height="55"&gt;&lt;/iframe&gt;</textarea>
         </div>  
         <!--destaque widgets -->
