@@ -171,12 +171,32 @@
       <div class="span4">
         <!--destaque-->
         <div class="destaque-cultura">
+          <p>Bossamoderna</p>
+          <h1>Rios</h1>
+          <img src="http://www.culturabrasil.com.br/midia/image/originais/Geraldo_Azevedo___Interna_1374535758.jpg" alt="" class="big">
+          <p>Tárik de Souza embarca num viagem fluvial com músicas que têm como temática os cursos d’água. Com Geraldo Azevedo, Roberta Sá e Patrícia Bastos.</p>
+        </div>  
+        <!--/destaque-->
+        
+        <!--destaque-->
+        <div class="destaque-cultura">
+          <p>Solano Ribeiro</p>
+          <h1>Francisco</h1>
+          <img src="http://www.culturabrasil.com.br/midia/image/originais/Franciscos__Interna_1374520304.jpg" alt="" class="big">
+          <p>Na visita do Papa, um especial de Franciscos. Mas não espere um programa religioso. A edição traz obras dos vários Franciscos da música popular brasileira e também alguns apelos...</p>
+        </div>  
+        <!--/destaque-->
+        
+        <!--destaque-->
+        <div class="destaque-cultura">
           <p>supertonica</p>
           <h1>A voz-ritmo de Marcelo Pretto</h1>
           <img src="http://www.culturabrasil.com.br/midia/image/originais/Marcus_e_Arrigo___Superto_1374278295.jpg" alt="" class="big">
           <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
         </div>  
         <!--/destaque-->
+        
+        
       </div>  
       <!--/coluna esquerda -->
       
