@@ -18,13 +18,13 @@
 <script src="/portal/js/bootstrap/bootstrap.js"></script>
  
 <!--section topo--> 
-<section class="topo">
+<section class="topo"> 
   <!--container topo--> 
   <div class="container row-fluid">
     <!--logo-->
     <div class="logo">
        <a href="http://cmais.com.br/culturabrasil" title="Cultura Brasil">
-        <img src="/portal/images/capaPrograma/cultura-brasil/logoculturabrasil.jpg" alt="Cultura Brasil" />
+        <img src="/portal/images/capaPrograma/culturabrasil/logoculturabrasil.jpg" alt="Cultura Brasil" />
       </a>
     </div>
     <!--/logo--> 
@@ -65,7 +65,7 @@
    
    <!-- ouca a radio -->
    <a id="ouca" class="ouca" href="javascript:;">
-     <img src="/portal/images/capaPrograma/radarcultura/ouca-a-radio.png" alt="Ouça a rádio Cultura Brasil"/>
+     <img src="/portal/images/capaPrograma/culturabrasil/ouca-a-radio.png" alt="Ouça a rádio Cultura Brasil"/>
    </a>
     <!-- ouca a radio -->
     
