@@ -179,10 +179,12 @@
 </section>
 <!--section rodape-->  
 <script>
-$('#carrossel-radar').mouseenter(function(){
-  alert('entrei');
-});
-$('#carrossel-radar').mouseleave(function(){
-  alert('sai');
+$(document).ready(function(){
+  $('#carrossel-radar').mouseenter(function(){
+    alert('entrei');
+  });
+  $('#carrossel-radar').mouseleave(function(){
+    alert('sai');
+  });
 });
 </script>  
