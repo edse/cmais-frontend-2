@@ -417,9 +417,8 @@
     
     <!-- twiter -->
     <div class="span4">
-      <a class="twitter-timeline" href="https://twitter.com/culturabrasil2 " data-widget-id="YOUR-WIDGET-ID-HERE">Tweets by @twitterapi</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      <iframe id="twitter-widget-2" class="twitter-timeline twitter-timeline-rendered" scrolling="no" frameborder="0" allowtransparency="true" title="Twitter Timeline Widget" style="border: none; max-width: 100%; min-width: 180px;" width="320" height="260"></iframe>
+      <a class="twitter-timeline" href="https://twitter.com/tvcultura" data-widget-id="309744604310274048">Tweets by @tvcultura</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div> 
     <!-- /twiter -->
     
