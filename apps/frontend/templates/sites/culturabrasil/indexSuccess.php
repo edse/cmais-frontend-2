@@ -398,7 +398,7 @@
     <!-- / facebook -->
     
     <!-- googleplus -->
-    <div class="span4">
+    <div class="span4 google">
       <!-- Place this tag where you want the widget to render. -->
       <div class="g-page" data-width="320" data-href="https://plus.google.com/105992922006548285318" data-showtagline="false" data-showcoverphoto="false" data-rel="publisher"></div>
       
@@ -416,7 +416,7 @@
     <!-- /googleplus -->
     
     <!-- twiter -->
-    <div class="span4">
+    <div class="span4 twitter">
       <a class="twitter-timeline" href="https://twitter.com/culturabrasil2" data-widget-id="360106760419287041">Tweets de @culturabrasil2</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div> 
