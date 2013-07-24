@@ -32,7 +32,7 @@ $(function(){
           </h2>
           -->
           <?php endif; ?>
-          
+          <?php endif; ?>
        
           <?php if(isset($program) && $program->id > 0): ?>
             <!-- horario -->
@@ -41,7 +41,6 @@ $(function(){
             </div>
             <!-- /horario -->
         </div>
-        <?php endif; ?>
         <?php endif; ?>
 
         <?php if(isset($siteSections) && $site->getType() != "Portal"): ?>
