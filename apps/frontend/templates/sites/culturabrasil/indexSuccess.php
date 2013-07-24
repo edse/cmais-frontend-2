@@ -404,7 +404,7 @@
       
       <!-- Place this tag after the last widget tag. -->
       <script type="text/javascript">
-        window.___gcfg = {lang: 'pt-BR'};
+        window.___gcfg = {lang: 'pt-BR'}; 
       
         (function() {
           var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
