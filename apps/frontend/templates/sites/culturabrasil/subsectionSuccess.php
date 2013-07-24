@@ -31,7 +31,7 @@ if(isset($pager)){
    
     <!--nome programa-->
     <div class="row-fluid subSection">
-      <h1><?php echo $section->getTitle(); ?><small></small>
+      <h1><?php echo $section->getTitle(); ?><small></small></h1>
     </div>
     <!--nome programa-->
     
