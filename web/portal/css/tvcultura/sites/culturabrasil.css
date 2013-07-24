@@ -78,5 +78,6 @@ img{width:100%;}
 .destaque-cultura.agenda h3{font-size: 18px;line-height: 15px;margin-top: 0;margin-bottom: 4px;color: #666; font-weight:normal;}
 
 .rodape span{color:#666666; background:#FFFFFF;}
-.rodape i.borda-titulo.clara{background:red;}
+.rodape i.borda-titulo.clara{background-position:bottom;}
+.rodape .google, .rodape .twitter{margin-top:30px;}
 /* home */
