@@ -398,20 +398,22 @@
     <!-- / facebook -->
     
     <!-- googleplus -->
-    <div class="span4 google">
-      <!-- Place this tag where you want the widget to render. -->
-      <div class="g-page" data-width="310" data-href="https://plus.google.com/105992922006548285318" data-showtagline="false" data-showcoverphoto="false" data-rel="publisher"></div>
-      
-      <!-- Place this tag after the last widget tag. -->
-      <script type="text/javascript">
-        window.___gcfg = {lang: 'pt-BR'}; 
-      
-        (function() {
-          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-          po.src = 'https://apis.google.com/js/plusone.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-        })();
-      </script>
+    <div class="span4 ">
+      <div class="google">
+        <!-- Place this tag where you want the widget to render. -->
+        <div class="g-page" data-width="310" data-href="https://plus.google.com/105992922006548285318" data-showtagline="false" data-showcoverphoto="false" data-rel="publisher"></div>
+        
+        <!-- Place this tag after the last widget tag. -->
+        <script type="text/javascript">
+          window.___gcfg = {lang: 'pt-BR'}; 
+        
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+      </div>
     </div> 
     <!-- /googleplus -->
     
