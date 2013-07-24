@@ -206,7 +206,7 @@
             <h2>A voz-ritmo de Marcelo Pretto</h2>
             <img src="http://www.culturabrasil.com.br/midia/image/originais/Marcus_e_Arrigo___Superto_1374278295.jpg" alt="" class="big">
             <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
-          <a href="#" title="">
+          </a>
         </div>  
         <!--/destaque-->
         
@@ -387,7 +387,26 @@
 <section class="rodape">
 
   <div class="container row-fluid">
-    rodape
+    
+    <!-- faceebook -->
+    <div class="span4">
+      <span>Redes Sociais</span><i class="borda-titulo branca"></i>
+      <fb:like-box href="https://www.facebook.com/culturabrasil" width="320" height="260" show_faces="true" border_color="#DDDDDD" stream="false" header="true"></fb:like-box>
+    </div>  
+    <!-- / facebook -->
+    
+    <!-- googleplus -->
+    <div class="span4">
+    </div> 
+    <!-- /googleplus -->
+    
+    <!-- twiter -->
+    <div class="span4">
+    </div> 
+    <!-- /twiter -->
+    
+    
+    
   </div>
   
 </section>
