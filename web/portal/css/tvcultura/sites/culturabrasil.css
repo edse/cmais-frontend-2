@@ -56,7 +56,7 @@ textarea{width:100%}
 .destaque-cultura span{font-size:12px; background:#666666; color:#FFFFFF; padding:3px 5px;letter-spacing: 0.1em;position:relative;width: 100%;}
 .destaque-cultura h2{font-size:23px;font-weight: normal;margin: 0;line-height: 36px;color: #333333;}
 .destaque-cultura p{font-size:14px;}
-.destaque-cultura i.borda-titulo{ position: absolute; top:1px; right: -7px;background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat; width:7px; height:19px; display:block;}
+.destaque-cultura i.borda-titulo{ float:right; margin-left:-7px;background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat; width:7px; height:19px; display:block;}
 
 .destaque-cultura.frase h2{color:#666666; text-align:center;}
 .destaque-playlist h1{font-size:12px; color:#666666; text-transform:uppercase; font-weight: bold;margin: 0;line-height: 12px;margin-bottom: 10px;}
