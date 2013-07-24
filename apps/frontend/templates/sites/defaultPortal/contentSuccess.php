@@ -20,18 +20,18 @@ $(function(){
 
       <!-- BARRA SITE -->
       <div id="barra-site">
-        <!--
+        <?php/*
         <?php if(isset($program) && $program->id ): ?>
         <div class="topo-programa">
-          
+          <!--
           <h2>
             <a href="<?php echo $program->retriveUrl() ?>">
               <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
             </a>
           </h2>
-          
+          -->
           <?php endif; ?>
-           --> 
+       
           <?php if(isset($program) && $program->id > 0): ?>
             <!-- horario -->
             <div id="horario">
@@ -40,7 +40,8 @@ $(function(){
             <!-- /horario -->
         </div>
         <?php endif; ?>
-
+        */
+        ?>
         <?php if(isset($siteSections) && $site->getType() != "Portal"): ?>
         <!-- box-topo -->
         <div class="box-topo grid3">
