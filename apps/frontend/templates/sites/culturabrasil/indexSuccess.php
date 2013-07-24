@@ -247,11 +247,11 @@
           </div>
           <!--item-->  
           
-          <span class="linha-culturabrasil"></span> 
-          <a href="#" title="mais playlists">
-            <span class="mais">+ Playlists</span>
-          </a>
         </div>
+        <span class="linha-culturabrasil"></span> 
+        <a href="#" title="mais playlists">
+          <span class="mais">+ Playlists</span>
+        </a>
         <!--destaque playlist -->
         
         <!--destaque frases -->
