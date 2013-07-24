@@ -173,7 +173,7 @@
         
         <!--destaque-->
         <div class="destaque-cultura">
-          <span>Bossamoderna<i class="borda-titulo"></i></span>
+          <span>Bossamoderna</span><i class="borda-titulo"></i>
           <h2>Rios</h2>
           <img src="http://www.culturabrasil.com.br/midia/image/originais/Geraldo_Azevedo___Interna_1374535758.jpg" alt="" class="big">
           <p>Tárik de Souza embarca num viagem fluvial com músicas que têm como temática os cursos d’água. Com Geraldo Azevedo, Roberta Sá e Patrícia Bastos.</p>
@@ -230,8 +230,11 @@
             <p>Seleção reúne artistas marcados para sempre por algum grande sucesso. Com Brylho (foto), Paulo Diniz, , Markinhos Moura e Vanessa Rangel.</p>
           </div>
           <!--item-->  
+          
           <span class="linha-culturabrasil"></span> 
-          <span class="mais">+ Playlists</span>
+          <a href="#" title="mais playlists">
+            <span class="mais">+ Playlists</span>
+          </a>
         </div>
         <!--destaque playlist -->
         
@@ -241,8 +244,10 @@
           <h2>"A gente tem que aprender a ser pequeno!"</h2>
           <p>Paulo Bellinati, violonista, sobre a música instrumental brasileira</p>
         </div>
-        <span class="linha-culturabrasil"></span> 
-        <span class="mais">+ Frases</span> 
+        <span class="linha-culturabrasil"></span>
+        <a href="#" title="mais frases"> 
+          <span class="mais">+ Frases</span>
+        </a>   
         <!--destaque frases -->
         
         <!--destaque widgets -->
