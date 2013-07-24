@@ -41,7 +41,8 @@ img{width:100%;}
 .destaque-playlist h1, .destaque-playlist h2, 
 .menu-principal li a, .mais{font-family: 'Asap', Arial, Helvetica, sans-serif;}
 .linha-culturabrasil{border-bottom: 1px dashed #e9e9e9;width: 100%;display: block;margin-bottom: 10px;}
-.mais{float:right!important; color:#666666!important; font-size:10px!important; text-transform:uppercase!important; display: block!important;}
+.mais{float:right; color:#666666; font-size:10px; text-transform:uppercase; display: block;width: 100%;text-align: right;}
+textarea{width:100%}
 /* geral */
 
 /* home */
@@ -55,10 +56,12 @@ img{width:100%;}
 .destaque-cultura span{font-size:12px; background:#666666; color:#FFFFFF; padding:3px 5px;letter-spacing: 0.1em;position:relative;width: 100%;}
 .destaque-cultura h2{font-size:23px;font-weight: normal;margin: 0;line-height: 36px;color: #333333;}
 .destaque-cultura p{font-size:14px;}
-.destaque-cultura i.borda-titulo{background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat; width:7px; height:19px; display:block; position: absolute; top:1px; right: -7px;}
+.destaque-cultura i.borda-titulo{ float:right; margin-left:-7px;background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat; width:7px; height:19px; display:block;}
 
+.destaque-cultura.frase h2{color:#666666; text-align:center;}
 .destaque-playlist h1{font-size:12px; color:#666666; text-transform:uppercase; font-weight: bold;margin: 0;line-height: 12px;margin-bottom: 10px;}
 .destaque-playlist h2{font-size:23px; color:#333333;font-weight: normal;line-height: 18px;margin: 10px 0px 5px 0px;}
 .destaque-playlist p{font-size: 14px; margin-bottom:15px;}
+
 
 /* home */
