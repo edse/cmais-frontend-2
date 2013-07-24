@@ -46,9 +46,9 @@ img{width:100%;}
 .menu-principal li a, .mais{font-family: 'Asap', Arial, Helvetica, sans-serif;}
 .banner-culturabrasil{display: block;overflow: hidden;width: 300px;margin: 20px auto;}
 
-.rodape .container{padding: 10px 5px;background: #eeeeee;margin-bottom: 70px;}
+.rodape .container{padding: 10px 5px;background: #eeeeee;margin-bottom: 70px;min-height:320px;}
 .box-facebook{background:#FFFFFF;}
-#twitter-widget-0 .stream{height:187px!important;}
+
 /* geral */
 
 /* home */
