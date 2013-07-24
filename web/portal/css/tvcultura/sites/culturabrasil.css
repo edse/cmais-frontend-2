@@ -47,7 +47,7 @@ img{width:100%;}
 .banner-culturabrasil{display: block;overflow: hidden;width: 300px;margin: 20px auto;}
 
 .rodape .container{padding: 10px 5px;background: #eeeeee;margin-bottom: 70px;}
-.pluginSkinLight{background:#FFFFFF;}
+.pluginSkinLight{background:#FFFFFF!important;}
 /* geral */
 
 /* home */
