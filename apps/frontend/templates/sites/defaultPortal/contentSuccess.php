@@ -22,7 +22,7 @@ $(function(){
       <div id="barra-site">
        
         <?php if(isset($program) && $program->id ): ?>
-           <?php if($asset->id =! '128660' ): ?> 
+      
         <div class="topo-programa">
           <!--
           <h2>
@@ -32,7 +32,7 @@ $(function(){
           </h2>
           -->
           <?php endif; ?>
-          <?php endif; ?>
+          
        
           <?php if(isset($program) && $program->id > 0): ?>
             <!-- horario -->
