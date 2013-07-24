@@ -20,7 +20,8 @@ $(function(){
 
       <!-- BARRA SITE -->
       <div id="barra-site">
-        <?php/*
+        <?php
+         /*
         <?php if(isset($program) && $program->id ): ?>
         <div class="topo-programa">
           <!--
