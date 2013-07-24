@@ -385,22 +385,24 @@
 
 <!--section rodape--> 
 <section class="rodape">
-  <!-- container -->
+
   <div class="container row-fluid">
     
-    <div>
+    <!-- faceebook -->
+    <div class="span4">
       <span>Redes Sociais</span><i class="borda-titulo branca"></i>
-    </div>
-    <!-- redes -->
-    <div>
-      <!-- faceebook -->  
       <div class="box-facebook">
         <fb:like-box href="https://www.facebook.com/culturabrasil" width="320" height="260" show_faces="true" border_color="#DDDDDD" background_color="#FFFFFF" stream="false" header="true"></fb:like-box>
       </div>
-      <!-- / facebook -->
+    </div>  
+    <!-- / facebook -->
     
-      <!-- googleplus -->
+    <!-- googleplus -->
+    <div class="span4">
+      <!-- Place this tag where you want the widget to render. -->
       <div class="g-page" data-width="320" data-href="https://plus.google.com/105992922006548285318" data-showtagline="false" data-showcoverphoto="false" data-rel="publisher"></div>
+      
+      <!-- Place this tag after the last widget tag. -->
       <script type="text/javascript">
         window.___gcfg = {lang: 'pt-BR'};
       
@@ -410,21 +412,22 @@
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
         })();
       </script>
-      <!-- /googleplus -->
+    </div> 
+    <!-- /googleplus -->
     
-      <!-- twiter -->
-      <a class="twitter-timeline" href="https://twitter.com/culturabrasil2" data-widget-id="360106760419287041">Tweets de @culturabrasil2</a>
+    <!-- twiter -->
+    <div class="span4">
+      <a class="twitter-timeline" href="https://twitter.com/tvcultura" data-widget-id="309744604310274048">Tweets by @tvcultura</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      <!-- /twiter -->
+    </div> 
+    <!-- /twiter -->
     
-    </div>
-    <!-- /redes -->
+    
     
   </div>
-  <!-- /container -->
   
 </section>
-<!--/section rodape-->  
+<!--section rodape-->  
 <script>
 $(document).ready(function(){
   $('#carrossel-radar').mouseenter(function(){
