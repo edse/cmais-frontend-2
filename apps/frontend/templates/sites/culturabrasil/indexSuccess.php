@@ -391,7 +391,7 @@
     <!-- faceebook -->
     <div class="span4">
       <span>Redes Sociais</span><i class="borda-titulo branca"></i>
-      <fb:like-box href="https://www.facebook.com/culturabrasil" width="320" height="260" show_faces="true" border_color="#DDDDDD" background_color="#FFFFFF" stream="false" header="true"></fb:like-box>
+      <div class="fb-like-box" data-href="https://www.facebook.com/culturabrasil" data-width="320" data-height="260" data-show-faces="true" data-stream="false" data-show-border="true" data-header="true"></div>
     </div>  
     <!-- / facebook -->
     
