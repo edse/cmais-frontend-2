@@ -1734,7 +1734,7 @@ class _sectionActions extends sfActions
         }
       }
       elseif($this->site->getType() == "ProgramaRadio"){
-        if($this->site->Program->getChannel() == "culturabrasil") {
+        if($this->site->Program->Channel->getSlug() == "culturabrasil") {
           if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
             if($debug) print "<br>13-a>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
@@ -1762,7 +1762,7 @@ class _sectionActions extends sfActions
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection');
           }elseif(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$sectionSlug.'Success.php')){
             if($debug) print "<br>13-h>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$sectionSlug;
-            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$sectionSlug);
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').  DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$sectionSlug);
           }else{
             if($debug) print "<br>13-i>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/subsection';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/subsection');
