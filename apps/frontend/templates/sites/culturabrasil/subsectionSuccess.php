@@ -28,7 +28,7 @@ if(isset($pager)){
   <!--container-->
   <div class="container">
   
-    <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section)) ?>
+    <?php include_partial_from_folder('sites/culturabrasil', 'global/breadcrumbs', array('site' => $site, 'section' => $section)) ?>
    
     <!--nome programa-->
     <div class="row-fluid subSection">
@@ -147,7 +147,7 @@ if(isset($pager)){
     <!--/coluna principal-->
     
     <!--paginador-->
-    <?php include_partial_from_folder('sites/radarcultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
+    <?php include_partial_from_folder('sites/culturabrasil', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
     <!--paginador-->
   </div>
   <!--/container--> 
