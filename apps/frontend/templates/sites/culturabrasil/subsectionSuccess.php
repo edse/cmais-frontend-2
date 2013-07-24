@@ -21,6 +21,7 @@ if(isset($pager)){
 <script src="/portal/js/bootstrap/bootstrap.js"></script>
 
 <?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
+
 <!-- section miolo -->
 <section class="miolo">
   
