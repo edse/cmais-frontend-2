@@ -397,11 +397,13 @@
     
     <!-- googleplus -->
     <div class="span4">
+      googleplus
     </div> 
     <!-- /googleplus -->
     
     <!-- twiter -->
     <div class="span4">
+      twitter
     </div> 
     <!-- /twiter -->
     
