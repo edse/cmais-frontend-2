@@ -173,7 +173,9 @@
         
         <!--destaque-->
         <div class="destaque-cultura">
-          <span>Bossamoderna</span><i class="borda-titulo"></i>
+          <a href="#" title="">
+            <span>Bossamoderna</span><i class="borda-titulo"></i>
+          </a>
           <h2>Rios</h2>
           <img src="http://www.culturabrasil.com.br/midia/image/originais/Geraldo_Azevedo___Interna_1374535758.jpg" alt="" class="big">
           <p>Tárik de Souza embarca num viagem fluvial com músicas que têm como temática os cursos d’água. Com Geraldo Azevedo, Roberta Sá e Patrícia Bastos.</p>
