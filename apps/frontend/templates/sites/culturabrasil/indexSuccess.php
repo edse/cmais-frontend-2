@@ -610,7 +610,7 @@
     <div class="span4">
       <span>Redes Sociais</span><i class="borda-titulo clara"></i>
       <div class="box-facebook">
-        <fb:like-box href="https://www.facebook.com/culturabrasil" width="330" height="260" show_faces="true" border_color="#DDDDDD" background_color="#FFFFFF" stream="false" header="true"></fb:like-box>
+        <fb:like-box href="https://www.facebook.com/culturabrasil" width="310" height="260" show_faces="true" border_color="#DDDDDD" background_color="#FFFFFF" stream="false" header="true"></fb:like-box>
       </div>
     </div>  
     <!-- / facebook -->
