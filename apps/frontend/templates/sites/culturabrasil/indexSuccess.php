@@ -236,7 +236,7 @@
         <!--destaque playlist -->
         
         <!--destaque frases -->
-        <div class="destaque-cultura">
+        <div class="destaque-cultura frase">
           <span>FRASES<i class="borda-titulo"></i></span>
           <h2>"A gente tem que aprender a ser pequeno!"</h2>
           <p>Paulo Bellinati, violonista, sobre a música instrumental brasileira</p>
@@ -248,7 +248,7 @@
         <!--destaque widgets -->
         <div class="destaque-cultura">
           <p>Copie o código abaixo para incorporar o Controle Remoto ao seu blog ou site</p> 
-          <textarea>&lt;iframe src="http://www.culturabrasil.com.br/widget" frameborder="0" scrolling="no" width="145" height="55"&gt;&lt;/iframe&gt;</textarea>
+          <textarea rows="3">&lt;iframe src="http://www.culturabrasil.com.br/widget" frameborder="0" scrolling="no" width="145" height="55"&gt;&lt;/iframe&gt;</textarea>
         </div>  
         <!--destaque widgets -->
       </div>
