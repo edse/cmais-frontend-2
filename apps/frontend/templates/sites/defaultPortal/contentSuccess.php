@@ -20,7 +20,9 @@ $(function(){
 
       <!-- BARRA SITE -->
       <div id="barra-site">
-        <?php if(isset($program) && $program->id > 0): ?>
+        <?php
+         /*
+        <?php if(isset($program) && $program->id ): ?>
         <div class="topo-programa">
           <!--
           <h2>
@@ -30,11 +32,7 @@ $(function(){
           </h2>
           -->
           <?php endif; ?>
-          
-          <?php if(isset($program) && $program->id > 0): ?>
-          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
-          
+       
           <?php if(isset($program) && $program->id > 0): ?>
             <!-- horario -->
             <div id="horario">
@@ -43,7 +41,8 @@ $(function(){
             <!-- /horario -->
         </div>
         <?php endif; ?>
-
+        */
+        ?>
         <?php if(isset($siteSections) && $site->getType() != "Portal"): ?>
         <!-- box-topo -->
         <div class="box-topo grid3">
