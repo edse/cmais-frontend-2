@@ -400,7 +400,7 @@
     <!-- googleplus -->
     <div class="span4">
       <!-- Place this tag where you want the widget to render. -->
-      <div class="g-page" data-width="320" data-href="https://plus.google.com/105992922006548285318" data-showtagline="false" data-showcoverphoto="false" data-rel="publisher"></div>
+      <div class="g-page" data-width="330" data-href="https://plus.google.com/105992922006548285318" data-showtagline="false" data-showcoverphoto="false" data-rel="publisher"></div>
       
       <!-- Place this tag after the last widget tag. -->
       <script type="text/javascript">
