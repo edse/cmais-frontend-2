@@ -390,9 +390,9 @@
     
     <!-- faceebook -->
     <div class="span4">
-      <span>Redes Sociais</span><i class="borda-titulo"></i>
+      <span>Redes Sociais</span><i class="borda-titulo clara"></i>
       <div class="box-facebook">
-        <fb:like-box href="https://www.facebook.com/culturabrasil" width="320" height="260" show_faces="true" border_color="#DDDDDD" background_color="#FFFFFF" stream="false" header="true"></fb:like-box>
+        <fb:like-box href="https://www.facebook.com/culturabrasil" width="330" height="260" show_faces="true" border_color="#DDDDDD" background_color="#FFFFFF" stream="false" header="true"></fb:like-box>
       </div>
     </div>  
     <!-- / facebook -->
@@ -400,7 +400,7 @@
     <!-- googleplus -->
     <div class="span4">
       <!-- Place this tag where you want the widget to render. -->
-      <div class="g-page" data-width="330" data-href="https://plus.google.com/105992922006548285318" data-showtagline="false" data-showcoverphoto="false" data-rel="publisher"></div>
+      <div class="g-page" data-width="320" data-href="https://plus.google.com/105992922006548285318" data-showtagline="false" data-showcoverphoto="false" data-rel="publisher"></div>
       
       <!-- Place this tag after the last widget tag. -->
       <script type="text/javascript">
