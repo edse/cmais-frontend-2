@@ -173,30 +173,40 @@
         
         <!--destaque-->
         <div class="destaque-cultura">
-          <a href="#" title="">
+          <div href="#" class="programa" title="">
             <span>Bossamoderna</span><i class="borda-titulo"></i>
+          </div>
+          <a href="#" title="">
+            <h2>Rios</h2>
+            <img src="http://www.culturabrasil.com.br/midia/image/originais/Geraldo_Azevedo___Interna_1374535758.jpg" alt="" class="big">
+            <p>Tárik de Souza embarca num viagem fluvial com músicas que têm como temática os cursos d’água. Com Geraldo Azevedo, Roberta Sá e Patrícia Bastos.</p>
           </a>
-          <h2>Rios</h2>
-          <img src="http://www.culturabrasil.com.br/midia/image/originais/Geraldo_Azevedo___Interna_1374535758.jpg" alt="" class="big">
-          <p>Tárik de Souza embarca num viagem fluvial com músicas que têm como temática os cursos d’água. Com Geraldo Azevedo, Roberta Sá e Patrícia Bastos.</p>
         </div>  
         <!--/destaque-->
         
         <!--destaque-->
         <div class="destaque-cultura">
-          <span>Solano Ribeiro<i class="borda-titulo"></i></span>
-          <h2>Francisco</h2>
-          <img src="http://www.culturabrasil.com.br/midia/image/originais/Franciscos__Interna_1374520304.jpg" alt="" class="big">
-          <p>Na visita do Papa, um especial de Franciscos. Mas não espere um programa religioso. A edição traz obras dos vários Franciscos da música popular brasileira e também alguns apelos...</p>
+          <div href="#" class="programa" title="">
+            <span>Solano Ribeiro</span><i class="borda-titulo"></i>
+          </div>
+          <a href="#" title="">
+            <h2>Francisco</h2>
+            <img src="http://www.culturabrasil.com.br/midia/image/originais/Franciscos__Interna_1374520304.jpg" alt="" class="big">
+            <p>Na visita do Papa, um especial de Franciscos. Mas não espere um programa religioso. A edição traz obras dos vários Franciscos da música popular brasileira e também alguns apelos...</p>
+          </a>
         </div>  
         <!--/destaque-->
         
         <!--destaque-->
         <div class="destaque-cultura">
-          <span>supertonica<i class="borda-titulo"></i></span>
-          <h2>A voz-ritmo de Marcelo Pretto</h2>
-          <img src="http://www.culturabrasil.com.br/midia/image/originais/Marcus_e_Arrigo___Superto_1374278295.jpg" alt="" class="big">
-          <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
+          <div href="#" class="programa" title="">
+            <span>supertonica</span><i class="borda-titulo"></i>
+          </div>
+          <a href="#" title="">
+            <h2>A voz-ritmo de Marcelo Pretto</h2>
+            <img src="http://www.culturabrasil.com.br/midia/image/originais/Marcus_e_Arrigo___Superto_1374278295.jpg" alt="" class="big">
+            <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
+          <a href="#" title="">
         </div>  
         <!--/destaque-->
         
@@ -242,7 +252,9 @@
         
         <!--destaque frases -->
         <div class="destaque-cultura frase">
-          <span>FRASES<i class="borda-titulo"></i></span>
+          <div href="#" class="programa" title="">
+            <span>FRASES</span><i class="borda-titulo"></i>
+          </div>
           <h2>"A gente tem que aprender a ser pequeno!"</h2>
           <p>Paulo Bellinati, violonista, sobre a música instrumental brasileira</p>
         </div>
