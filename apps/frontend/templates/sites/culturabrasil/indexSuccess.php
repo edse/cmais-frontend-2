@@ -240,9 +240,9 @@
           <span>FRASES<i class="borda-titulo"></i></span>
           <h2>"A gente tem que aprender a ser pequeno!"</h2>
           <p>Paulo Bellinati, violonista, sobre a música instrumental brasileira</p>
-          <span class="linha-culturabrasil"></span> 
-          <span class="mais">+ Frases</span>
-        </div>  
+        </div>
+        <span class="linha-culturabrasil"></span> 
+        <span class="mais">+ Frases</span> 
         <!--destaque frases -->
         
         <!--destaque widgets -->
