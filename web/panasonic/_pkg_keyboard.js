@@ -3712,7 +3712,7 @@ function DrawCol(init,mode_text,col,this_stage,font,width) {
       this.small_image = new gimage({
 	"draw_type": CIRCUMSCRIBED,
 	"translate":[10,0,0],
-	"src":"common/abc.png"
+	"src":"common/abc-1.png"
       }),
       this.capital_image = new gimage({
 	"draw_type": CIRCUMSCRIBED,
@@ -3736,7 +3736,7 @@ function DrawCol(init,mode_text,col,this_stage,font,width) {
 	"draw_type": CIRCUMSCRIBED,
 	"translate":[10,-2,0],
 	"visible_p" : false,
-	"src":"common/bl_ABC.png"
+	"src":"common/bl_ABC-1.png"
       }),
       this.bl_number_image = new gimage({
 	"draw_type": CIRCUMSCRIBED,
@@ -3847,11 +3847,11 @@ DrawCol.prototype.free = function() {
 };
 DrawCol.prototype.revive = function() {
   setf_text(this.mode_image, this.mode_text);
-  this.small_image.src = "common/abc.png";
+  this.small_image.src = "common/abc-1.png";
   this.capital_image.src = "common/ABC.png";
   this.number_image.src = "common/123.png";
   this.bl_small_image.src = "common/bl_abc.png";
-  this.bl_capital_image.src = "common/bl_ABC.png";
+  this.bl_capital_image.src = "common/bl_ABC-1.png";
   this.bl_number_image.src = "common/bl_123.png";
   setf_text(this.bl_mode_image, this.mode_text);
 
