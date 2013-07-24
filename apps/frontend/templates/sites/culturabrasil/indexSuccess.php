@@ -367,9 +367,11 @@
         <!-- /destaque agenda -->
         
         <!--banner -->
-        <script type='text/javascript'>
-          GA_googleFillSlot("home-geral300x250");
-        </script>
+        <div class="banner">
+          <script type='text/javascript'>
+            GA_googleFillSlot("home-geral300x250");
+          </script>
+        </div>
         <!-- banner -->  
         
       </div>

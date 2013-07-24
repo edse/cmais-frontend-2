@@ -44,6 +44,7 @@ img{width:100%;}
 .destaque-playlist h1, .destaque-playlist h2,
 .destaque-cultura.agenda h3, 
 .menu-principal li a, .mais{font-family: 'Asap', Arial, Helvetica, sans-serif;}
+.banner{margin-top:20px;}
 /* geral */
 
 /* home */
@@ -69,6 +70,6 @@ img{width:100%;}
 .destaque-playlist textarea{width:100%}
 
 .destaque-cultura.agenda a:hover{ text-decoration:none;}
-.destaque-cultura.agenda h3{font-size: 18px;line-height: 15px;margin-top: 0;margin-bottom: 8px;color: #666; font-weight:normal;}
+.destaque-cultura.agenda h3{font-size: 18px;line-height: 15px;margin-top: 0;margin-bottom: 4px;color: #666; font-weight:normal;}
 
 /* home */
