@@ -1,9 +1,52 @@
-@import url(http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic&subset=latin,latin-ext);
+@font-face {
+    font-family: 'asapbold';
+    src: url('/portal/css/fontes/asap/asap-bold-webfont.eot');
+    src: url('/portal/css/fontes/asap/asap-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/asap/asap-bold-webfont.woff') format('woff'),
+         url('/portal/css/fontes/asap/asap-bold-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/asap/asap-bold-webfont.svg#asapbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'asapbold_italic';
+    src: url('/portal/css/fontes/asap/asap-bolditalic-webfont.eot');
+    src: url('/portal/css/fontes/asap/asap-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/asap/asap-bolditalic-webfont.woff') format('woff'),
+         url('/portal/css/fontes/asap/asap-bolditalic-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/asap/asap-bolditalic-webfont.svg#asapbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'asapitalic';
+    src: url('/portal/css/fontes/asap/asap-italic-webfont.eot');
+    src: url('/portal/css/fontes/asap/asap-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/asap/asap-italic-webfont.woff') format('woff'),
+         url('/portal/css/fontes/asap/asap-italic-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/asap/asap-italic-webfont.svg#asapitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'asapregular';
+    src: url('/portal/css/fontes/asap/asap-regular-webfont.eot');
+    src: url('/portal/css/fontes/asap/asap-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/asap/asap-regular-webfont.woff') format('woff'),
+         url('/portal/css/fontes/asap/asap-regular-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/asap/asap-regular-webfont.svg#asapregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body{background: none; padding: 0;text-align:left;position: relative;}
 #rodape-portal {margin-top: 0px;}
 img{width:100%;}
 
-.font-asap{font-family: 'Asap', sans-serif;}
+.font-asap{font-family: 'asapregular', sans-serif;}
 
 /* topo cmais desktop 
 #guia-topo{padding:0;margin:0 0 20px 0;}
@@ -45,7 +88,7 @@ img{width:100%;}
 .destaque-playlist h1, .destaque-playlist h2,
 .destaque-cultura.agenda h3, 
 .menu-principal li a, .mais,
-.rodape span{font-family: 'Asap', Arial, Helvetica, sans-serif;}
+.rodape span{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 .banner-culturabrasil{display: block;overflow: hidden;width: 300px;margin: 20px auto;}
 
 .rodape .container{padding: 10px 5px;background: #eeeeee;margin-bottom: 70px;min-height:295px;}
