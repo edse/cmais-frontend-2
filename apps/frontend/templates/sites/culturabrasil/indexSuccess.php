@@ -223,23 +223,27 @@
           <div class="item">
             <a href="http://www.culturabrasil.com.br/playlists/rolling-stones-made-in-brazil">
               <img src="http://www.culturabrasil.com.br/midia/image/default/rollingstones_01_1303744795.jpg" alt="Rolling Stones made in Brazil">
+              <h2>Rolling Stones made in Brazil</h2>
+              <p>Versões para sucessos da banda inglesa por artistas brasileiros: Caetano Veloso, Jerry Adriani, Ronnie Von, The Bubbles, Os Tarântulas e Claudia Ohana.</p>
             </a>
-            <h2>Rolling Stones made in Brazil</h2>
-            <p>Versões para sucessos da banda inglesa por artistas brasileiros: Caetano Veloso, Jerry Adriani, Ronnie Von, The Bubbles, Os Tarântulas e Claudia Ohana.</p>
           </div>
           <!--item--> 
           
           <!--item-->
           <div class="item">
-            <h2>Caetano Experimental</h2>
-            <p>A vontade de Caetano Veloso por fazer algo diferente em música popular o levou ao tropicalismo, à poesia concreta e à dodecafonia.</p>
+            <a href="http://www.culturabrasil.com.br/playlists/rolling-stones-made-in-brazil">
+              <h2>Caetano Experimental</h2>
+              <p>A vontade de Caetano Veloso por fazer algo diferente em música popular o levou ao tropicalismo, à poesia concreta e à dodecafonia.</p>
+            </a>
           </div>
           <!--item--> 
           
           <!--item-->
           <div class="item">
-            <h2>Artistas de um sucesso</h2>
-            <p>Seleção reúne artistas marcados para sempre por algum grande sucesso. Com Brylho (foto), Paulo Diniz, , Markinhos Moura e Vanessa Rangel.</p>
+            <a href="http://www.culturabrasil.com.br/playlists/rolling-stones-made-in-brazil">
+              <h2>Artistas de um sucesso</h2>
+              <p>Seleção reúne artistas marcados para sempre por algum grande sucesso. Com Brylho (foto), Paulo Diniz, , Markinhos Moura e Vanessa Rangel.</p>
+            </a>
           </div>
           <!--item-->  
           
@@ -275,7 +279,99 @@
       
       <!--coluna direita -->
       <div class="span4">
-        direita
+        
+        <!-- destaque agenda -->
+        <div class="destaque-cultura agenda">
+          <div class="programa">
+            <span>AGENDA</span><i class="borda-titulo"></i>
+          </div>
+          <h2>23 de julho de 2013</h2>
+          
+          <!-- item -->
+          <div class="item">
+            <a href="#" title="">
+              <h3>05:45</h3>
+              <p>Novo Telecurso Ensino Fundamental</p>
+            </a>
+          </div>
+          <!-- /item -->
+          
+          <!-- item -->
+          <div class="item">
+            <a href="#" title="">
+              <h3>06:00</h3>
+              <p>Novo Telecurso Ensino Médio</p>
+            </a>
+          </div>  
+          <!-- /item -->
+          
+          <!-- item -->
+          <div class="item">
+            <a href="#" title="">
+              <h3>06:15</h3>
+              <p>Telecurso TEC</p>
+            </a>
+          </div>  
+          <!-- /item -->
+          
+          <!-- item -->
+          <div class="item">
+            <a href="#" title="">
+              <h3>06:30</h3>
+              <p>Telecurso Profissionalizante</p>
+            </a>
+          </div>
+          <!-- /item -->
+          
+          <!-- item -->
+          <div class="item">
+            <a href="#" title="">
+              <h3>06:50</h3>
+              <p>Guia do Trânsito</p>
+            </a>
+          </div>
+          <!-- /item -->
+          
+          <!-- item -->
+          <div class="item">
+            <a href="#" title="">
+              <h3>07:00</h3>
+              <p>Guia do Dia</p>
+            </a>
+          </div>
+          <!-- /item -->
+          
+          <!-- item -->
+          <div class="item">
+            <a href="#" title="">
+              <h3>08:00</h3>
+              <p>Pronto Atendimento</p>
+            </a>
+          </div>
+          <!-- /item -->
+          
+          <!-- item -->
+          <div class="item">
+            <a href="#" title="">
+              <h3>08:35</h3>
+              <p>Bob, o Construtor</p>
+            </a>
+          </div>
+          <!-- /item -->
+          
+        </div>
+        <span class="linha-culturabrasil"></span>
+        <a href="#" title="agenda completa"> 
+          <span class="mais">Agenda Completa</span>
+        </a> 
+        <!-- /destaque agenda -->
+        
+        <!--banner -->
+        <script type='text/javascript'>
+          GA_googleFillSlot("home-geral300x250");
+        </script>
+        <!-- banner -->  
+        
       </div>
       <!--/coluna direita -->
     </div>
