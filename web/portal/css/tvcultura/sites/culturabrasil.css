@@ -44,7 +44,7 @@ img{width:100%;}
 .destaque-playlist h1, .destaque-playlist h2,
 .destaque-cultura.agenda h3, 
 .menu-principal li a, .mais{font-family: 'Asap', Arial, Helvetica, sans-serif;}
-.banner-culturabrasil{margin-top:20px;}
+.banner-culturabrasil{display: block;overflow: hidden;width: 300px;margin: 20px auto;}
 /* geral */
 
 /* home */
