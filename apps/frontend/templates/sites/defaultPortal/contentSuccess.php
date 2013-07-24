@@ -21,7 +21,7 @@ $(function(){
       <!-- BARRA SITE -->
       <div id="barra-site">
         
-        <?php if(isset($program) && $program->id && $asset->id =! '128660' ): ?>
+        <?php if(isset($program) && $program->id ): ?>
         <div class="topo-programa">
           <!--
           <h2>
