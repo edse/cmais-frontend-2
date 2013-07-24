@@ -389,21 +389,35 @@
   <div class="container row-fluid">
     
     <!-- faceebook -->
-    <div class="span4 box-facebook">
+    <div class="span4">
       <span>Redes Sociais</span><i class="borda-titulo branca"></i>
-      <fb:like-box href="https://www.facebook.com/culturabrasil" width="320" height="260" show_faces="true" border_color="#DDDDDD" background_color="#FFFFFF" stream="false" header="true"></fb:like-box>
+      <div class="box-facebook">
+        <fb:like-box href="https://www.facebook.com/culturabrasil" width="320" height="260" show_faces="true" border_color="#DDDDDD" background_color="#FFFFFF" stream="false" header="true"></fb:like-box>
+      </div>
     </div>  
     <!-- / facebook -->
     
     <!-- googleplus -->
     <div class="span4">
-      googleplus
+      <!-- Place this tag where you want the widget to render. -->
+      <div class="g-page" data-width="320" data-href="https://plus.google.com/105992922006548285318" data-showtagline="false" data-showcoverphoto="false" data-rel="publisher"></div>
+      
+      <!-- Place this tag after the last widget tag. -->
+      <script type="text/javascript">
+        window.___gcfg = {lang: 'pt-BR'};
+      
+        (function() {
+          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+          po.src = 'https://apis.google.com/js/plusone.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+      </script>
     </div> 
     <!-- /googleplus -->
     
     <!-- twiter -->
     <div class="span4">
-      twitter
+      <iframe id="twitter-widget-2" class="twitter-timeline twitter-timeline-rendered" scrolling="no" frameborder="0" allowtransparency="true" title="Twitter Timeline Widget" style="border: none; max-width: 100%; min-width: 180px;" width="320" height="260"></iframe>
     </div> 
     <!-- /twiter -->
     
