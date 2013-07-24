@@ -173,7 +173,7 @@
         
         <!--destaque-->
         <div class="destaque-cultura">
-          <div href="#" class="programa">
+          <div class="programa">
             <span>Bossamoderna</span><i class="borda-titulo"></i>
           </div>
           <a href="#" title="">
@@ -186,7 +186,7 @@
         
         <!--destaque-->
         <div class="destaque-cultura">
-          <div href="#" class="programa">
+          <div class="programa">
             <span>Solano Ribeiro</span><i class="borda-titulo"></i>
           </div>
           <a href="#" title="">
@@ -199,7 +199,7 @@
         
         <!--destaque-->
         <div class="destaque-cultura">
-          <div href="#" class="programa">
+          <div class="programa">
             <span>supertonica</span><i class="borda-titulo"></i>
           </div>
           <a href="#" title="">
@@ -252,7 +252,7 @@
         
         <!--destaque frases -->
         <div class="destaque-cultura frase">
-          <div href="#" class="programa">
+          <div class="programa">
             <span>FRASES</span><i class="borda-titulo"></i>
           </div>
           <h2>"A gente tem que aprender a ser pequeno!"</h2>
