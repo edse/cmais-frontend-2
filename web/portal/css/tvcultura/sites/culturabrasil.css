@@ -69,6 +69,6 @@ img{width:100%;}
 .destaque-playlist textarea{width:100%}
 
 .destaque-cultura.agenda a:hover{ text-decoration:none;}
-.destaque-cultura.agenda h3{font-size: 18px;line-height: 15px;margin-top: 0;margin-bottom: 8px;color: #666;}
+.destaque-cultura.agenda h3{font-size: 18px;line-height: 15px;margin-top: 0;margin-bottom: 8px;color: #666; font-weight:normal;}
 
 /* home */
