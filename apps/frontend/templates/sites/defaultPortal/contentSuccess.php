@@ -20,8 +20,9 @@ $(function(){
 
       <!-- BARRA SITE -->
       <div id="barra-site">
-        <?php if($asset->id =! '128660' ): ?> 
+       
         <?php if(isset($program) && $program->id ): ?>
+           <?php if($asset->id =! '128660' ): ?> 
         <div class="topo-programa">
           <!--
           <h2>
