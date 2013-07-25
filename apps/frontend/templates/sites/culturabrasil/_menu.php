@@ -171,7 +171,7 @@
    
    <!-- ouca a radio -->
    <a id="ouca" class="ouca" href="javascript:;">
-     <img src="/portal/images/capaPrograma/culturabrasil/ouca-a-radio.png" alt="Ouça a rádio Cultura Brasil"/>
+     <img src="/portal/images/capaPrograma/culturabrasil/oucaculturabrasil.jpg" alt="Ouça a rádio Cultura Brasil"/>
    </a>
     <!-- ouca a radio -->
     
