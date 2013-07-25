@@ -3,13 +3,13 @@
   <div class="row">
     <div class="pagination pagination-centered">
       <ul>
-        <li class=""><a href="javascript: goToPage(<?php echo $pager->getFirstPage() ?>);" class="paginacao" title="Primeira"><i class="icon-fast-backward"></i></a></li>
-        <li class=""?><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="paginacao"  title="Anterior"><i class="icon-backward"></i></a></li>
+        <li class="back-pag"><a href="javascript: goToPage(<?php echo $pager->getFirstPage() ?>);" class="paginacao" title="Primeira"><i class="icon-fast-backward"></i></a></li>
+        <li class="back-pag"?><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="paginacao"  title="Anterior"><i class="icon-backward"></i></a></li>
         <?php foreach ($pager->getLinks() as $page): ?>
-        <li <?php if ($page == $pager->getPage()): ?>class="active"<?php endif; ?>><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+        <li class="back-pag <?php if ($page == $pager->getPage()): ?>active<?php endif; ?>" ><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
         <?php endforeach; ?>
-        <li class=""><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="paginacao" title="Próximo"><i class="icon-forward"></i></a></li>
-        <li class=""><a href="javascript: goToPage(<?php echo $pager->getLastPage() ?>);" class="paginacao" title="Última"><i class="icon-fast-forward"></i></a></li>
+        <li class="back-pag"><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="paginacao" title="Próximo"><i class="icon-forward"></i></a></li>
+        <li class="back-pag"><a href="javascript: goToPage(<?php echo $pager->getLastPage() ?>);" class="paginacao" title="Última"><i class="icon-fast-forward"></i></a></li>
       </ul>
     </div>
   </div>

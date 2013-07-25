@@ -142,6 +142,10 @@ img{width:100%;}
 .rodape .google, .rodape .twitter{margin-top:30px;}
 /* home */
 
+/* pagination */
+.pagination .back-pag{background:red;}
+/* /pagination */
+
 /* lista assets subsection */
 .lista-assets a h6{margin:0;text-transform:uppercase;color:#666666;margin: 0 0 -2px 0; font-size:12px; letter-spacing: -0.1em;}
 .lista-assets a h2{color:#333;font-size:18px; font-weight: normal; margin-top: 18px;line-height: 18px;margin-bottom: 6px;}
