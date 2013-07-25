@@ -92,8 +92,10 @@ img{width:100%;}
 .destaque-cultura.agenda h3, 
 .menu-principal li a, .mais,
 .rodape span,
-.lista-assets a h6,
 .lista-assets a h2{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+
+.lista-assets a h6{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
+
 .banner-culturabrasil{display: block;overflow: hidden;width: 300px;margin: 20px auto;}
 
 .rodape .container{padding: 10px 5px;background: #eeeeee;margin-bottom: 70px;min-height:295px;}
@@ -142,7 +144,7 @@ img{width:100%;}
 
 /* lista assets subsection */
 .lista-assets a h6{margin:0;text-transform:uppercase;color:#666666;margin: 0 0 -2px 0; font-size:12px;}
-.lista-assets a h2{color:#333;font-size:18px; font-weight: normal; margin-top: 18px;line-height: 15px;margin-bottom: 6px;}
+.lista-assets a h2{color:#333;font-size:18px; font-weight: normal; margin-top: 18px;line-height: 18px;margin-bottom: 6px;}
 .lista-assets a h4{color:#333; }
 .lista-assets a h6:hover,
 .lista-assets a h4:hover{color:#005580\9;}
