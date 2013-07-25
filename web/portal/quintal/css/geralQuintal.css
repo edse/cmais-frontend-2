@@ -2721,7 +2721,8 @@ z-index: 503;
 
 /* itens background */
 /* horario */
-#horario.horario{text-align:right; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin: 10px 0 0 0;}
+/*#horario.horario{text-align:right; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin: 10px 0 0 0;}*/
+#horario.horario{text-align:right; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin: 39px 0 0 0;width: 288px;float: right;}
 #horario.horario p{font-size:12px!important;color:#2b3377!important;line-height: 15px;margin: -27px 0 10px 0;width: 280px;}
 #horario.horario p span{font-size: 14px; color:#2b3377;}
 /* /horario */
