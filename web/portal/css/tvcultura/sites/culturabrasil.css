@@ -143,6 +143,7 @@ img{width:100%;}
 /* home */
 
 /* pagination */
+.pagination ul{box-shadow: none;}
 .pagination .back-pag a{background: #FFFFFF;height: 30px;width: 26px;padding: 0;text-align: center;line-height: 30px;margin: 0 5px;border: none;color: #999999;}
 .pagination .back-pag a:hover{background: #f5f5f5;}
 .pagination .back-pag a i{opacity:0.5;}
