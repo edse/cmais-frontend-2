@@ -56,12 +56,12 @@ if(isset($pager)){
             <div class="row-fluid">
               <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
               <?php if ($related[0]->getThumbnail2()): ?>
-              <div class="span3" style="margin-left: 0">
+              <div class="span3" style="margin-left: 10px">
                 <?php if ($d->AssetContent->getHeadlineShort()): ?><h6><?php echo $d->AssetContent->getHeadlineShort(); ?></h6><?php endif; ?>
                 <img src="<?php echo $related[0]->getThumbnail2() ?>" alt=" <?php echo $d->getTitle(); ?>" class="thumb">
               </div>
               <?php endif; ?>
-              <div class="span9">
+              <div class="span8">
                 <h2><?php echo $d->getTitle(); ?></h2>
                 <p>
                   <?php echo $d->getDescription(); ?>
