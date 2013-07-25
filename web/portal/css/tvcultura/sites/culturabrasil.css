@@ -98,7 +98,7 @@ img{width:100%;}
 
 .banner-culturabrasil{display: block;overflow: hidden;width: 300px;margin: 20px auto;}
 
-.open a{background:#f5f5f5;}
+.open a{background:#f5f5f5!important;}
 .rodape .container{padding: 10px 5px;background: #eeeeee;margin-bottom: 70px;min-height:295px;}
 .box-facebook{ float:left; margin-top:10px;}
 /* geral */
