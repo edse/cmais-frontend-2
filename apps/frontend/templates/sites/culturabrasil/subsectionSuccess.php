@@ -53,7 +53,7 @@ if(isset($pager)){
                   
                 </div>
                 <?php endif;?>
-            <div class="row-fluid" style="margin-left:0px">
+            <div class="row-fluid" style="margin-left:10px">
               <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
               <?php if ($related[0]->getThumbnail2()): ?>
               <div class="span3" style="margin-left:0px">
