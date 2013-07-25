@@ -57,7 +57,7 @@ if(isset($pager)){
               <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
               <?php if ($related[0]->getThumbnail2()): ?>
               <div class="span3" style="margin-left:0px">
-                <?php if ($d->AssetContent->getHeadlineShort()): ?><h6><?php echo $d->AssetContent->getHeadlineShort(); ?></h6><?php endif; ?>
+                <h6><?php if ($d->AssetContent->getHeadlineShort()): ?><?php echo $d->AssetContent->getHeadlineShort(); ?><?php endif; ?>&nbsp;</h6>
                 <img src="<?php echo $related[0]->getThumbnail2() ?>" alt=" <?php echo $d->getTitle(); ?>" class="thumb">
               </div>
               <?php endif; ?>
