@@ -33,7 +33,7 @@ if(isset($pager)){
     <!--nome programa-->
     <div class="row-fluid subSection">
       <div class="destaque-cultura">
-      <div class="programa">
+      <div class="programa subsection">
         <span><?php echo $section->getTitle(); ?></span><i class="borda-titulo"></i>
       </div>
     </div>
