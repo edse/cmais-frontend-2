@@ -57,8 +57,8 @@
         
         <!--destaque-->
         <div class="destaque-cultura">
-          <div class="programa subsection">
-            <span>Bossamoderna</span><i class="borda-titulo subsection"></i>
+          <div class="programa">
+            <span>Bossamoderna</span><i class="borda-titulo"></i>
           </div>
           <a href="#" title="">
             <h2>Rios</h2>
