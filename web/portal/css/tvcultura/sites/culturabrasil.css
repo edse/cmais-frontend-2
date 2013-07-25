@@ -97,7 +97,8 @@ img{width:100%;}
 .pontilhada{margin-top:-8px; }
 .breadcrumb{background: none;padding: 8px 10px;color: #333333;}
 .breadcrumb li a{color: #999999;}
-.programa.subsection{padding:5px; font-size:24px;}
+.programa.subsection span{padding:5px; font-size:24px;}
+.programa.subsection i.borda-titulo.clara{background-position:0 -90;}
 /* geral */
 
 /* home */
@@ -126,7 +127,7 @@ img{width:100%;}
 .destaque-cultura.agenda h3{font-size: 18px;line-height: 15px;margin-top: 0;margin-bottom: 4px;color: #666; font-weight:normal;}
 
 .rodape span{color:#666666; background:#FFFFFF;}
-.rodape i.borda-titulo.clara{background-position:bottom;}
+.rodape i.borda-titulo.clara{background-position:0 -30;}
 .rodape .google, .rodape .twitter{margin-top:30px;}
 /* home */
 
