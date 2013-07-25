@@ -142,7 +142,7 @@ img{width:100%;}
 
 /* lista assets subsection */
 .lista-assets a h6{margin:0;text-transform:uppercase;color:#666666;margin: 0 0 -2px 0; font-size:12px; font-weight:bold}
-.lista-assets a h2{color:#333;font-size:18px; font-weight: normal; margin-top:0;}
+.lista-assets a h2{color:#333;font-size:18px; font-weight: normal; margin-top: 15px; line-height: 19px;margin-bottom: 2px;}
 .lista-assets a h4{color:#333; }
 .lista-assets a h6:hover,
 .lista-assets a h4:hover{color:#005580\9;}
