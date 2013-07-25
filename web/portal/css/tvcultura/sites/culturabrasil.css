@@ -85,15 +85,15 @@ img{width:100%;}
 
 .carousel-caption h4, 
 .carousel-caption h3, 
-.destaque-cultura span, 
 .destaque-cultura h2,
-.destaque-playlist h1, 
 .destaque-playlist h2,
 .destaque-cultura.agenda h3, 
 .menu-principal li a, .mais,
 .rodape span,
 .lista-assets a h2{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
+.destaque-playlist h1,
+.destaque-cultura span, 
 .lista-assets a h6{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
 
 .banner-culturabrasil{display: block;overflow: hidden;width: 300px;margin: 20px auto;}
