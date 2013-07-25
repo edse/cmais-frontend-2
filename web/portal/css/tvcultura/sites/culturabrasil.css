@@ -98,7 +98,7 @@ img{width:100%;}
 .breadcrumb{background: none;padding: 8px 10px;color: #333333;}
 .breadcrumb li a{color: #999999;}
 .programa.subsection span{padding:5px; font-size:24px;}
-.programa.subsection i.borda-titulo.clara{background-position:0 -90;}
+.programa.subsection i.borda-titulo.subsection{background-position:0 -90;}
 /* geral */
 
 /* home */
