@@ -56,12 +56,12 @@ if(isset($pager)){
             <div class="row-fluid">
               <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
               <?php if ($related[0]->getThumbnail2()): ?>
-              <div class="span3">
+              <div class="span3" style="margin-left: 0">
                 <?php if ($d->AssetContent->getHeadlineShort()): ?><h6><?php echo $d->AssetContent->getHeadlineShort(); ?></h6><?php endif; ?>
                 <img src="<?php echo $related[0]->getThumbnail2() ?>" alt=" <?php echo $d->getTitle(); ?>" class="thumb">
               </div>
               <?php endif; ?>
-              <div class="span10">
+              <div class="span9">
                 <h2><?php echo $d->getTitle(); ?></h2>
                 <p>
                   <?php echo $d->getDescription(); ?>
@@ -77,64 +77,6 @@ if(isset($pager)){
         
       <!--coluna direita-->
       <div class="lista-assets redes span4">
-        <?php
-          $displays = array();
-          $block_sobre = Doctrine_Query::create()
-            ->select('b.*')
-            ->from('Block b, Section s')
-            ->where('b.section_id = s.id')
-            ->andWhere('s.slug = ?', 'home')
-            ->andWhere('b.slug = ?', 'sobre-o-programa')
-            ->andWhere('s.site_id = ?', $site->id)
-            ->execute();
-        
-          if(count($block_sobre) > 0){
-            $displays["sobre-o-programa"] = $block_sobre[0]->retriveDisplays();
-          }
-        ?>
-  
-        <?php if(isset($displays['sobre-o-programa'])):?>
-          <?php if(count($displays['sobre-o-programa']) > 0): ?>
-          <div class="row-fluid">  
-            <div class="span12 thumbnail direita">
-              <div class="page-header"> 
-                <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
-              </div>
-              <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
-              <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-            </div>
-          </div>
-          <?php endif; ?>
-        <?php endif; ?>
-              
-        <?php
-          $displays = array();
-          $block_comoparticipar = Doctrine_Query::create()
-            ->select('b.*')
-            ->from('Block b, Section s')
-            ->where('b.section_id = s.id')
-            ->andWhere('s.slug = ?', 'home')
-            ->andWhere('b.slug = ?', 'como-participar')
-            ->andWhere('s.site_id = ?', $site->id)
-            ->execute();
-        
-          if(count($block_comoparticipar) > 0){
-            $displays["como-participar"] = $block_comoparticipar[0]->retriveDisplays();
-          }
-        ?>
-        <?php if(isset($displays['como-participar'])):?>
-          <?php if(count($displays['como-participar']) > 0): ?> 
-            <div class="row-fluid">      
-              <div class="span12 direita thumbnail">
-                <div class="page-header">
-                  <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
-                </div>
-                <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
-                <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" title="<?php echo $displays['como-participar'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-              </div>
-            </div>
-          <?php endif; ?>
-        <?php endif; ?>
         <div class="row-fluid">      
           <div class="span12 direita">
             <div class="banner-radio">

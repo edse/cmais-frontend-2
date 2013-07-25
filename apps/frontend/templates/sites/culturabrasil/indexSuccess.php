@@ -53,7 +53,7 @@
     <div class="row-fluid">
       
       <!--coluna esquerda -->
-      <div class="span4">
+      <div class="span4" style="margin-left: 0;">
         
         <!--destaque-->
         <div class="destaque-cultura">
@@ -273,7 +273,7 @@
   <div class="container row-fluid">
     
     <!-- faceebook -->
-    <div class="span4">
+    <div class="span4" style="margin-left: 0;">
       <span>Redes Sociais</span><i class="borda-titulo clara"></i>
       <div class="box-facebook">
         <fb:like-box href="https://www.facebook.com/culturabrasil" width="310" height="260" show_faces="true" border_color="#DDDDDD" background_color="#FFFFFF" stream="false" header="true"></fb:like-box>
