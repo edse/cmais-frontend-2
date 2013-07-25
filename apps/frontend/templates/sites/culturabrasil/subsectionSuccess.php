@@ -30,14 +30,14 @@ if(isset($pager)){
   
     <?php include_partial_from_folder('sites/culturabrasil', 'global/breadcrumbs', array('site' => $site, 'section' => $section)) ?>
    
-    <!--nome programa-->
+
     <div class="row-fluid subSection">
       <div class="destaque-cultura">
-      <div class="programa subsection">
-        <span><?php echo $section->getTitle(); ?></span><i class="borda-titulo subsection"></i>
+        <div class="programa subsection">
+          <span><?php echo $section->getTitle(); ?></span><i class="borda-titulo subsection"></i>
+        </div>
       </div>
-    </div>
-    <!--nome programa-->
+
     
     <!--clounaprincipal-->
     <div class="row-fluid">
@@ -95,6 +95,8 @@ if(isset($pager)){
     <!--paginador-->
     <?php include_partial_from_folder('sites/culturabrasil', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
     <!--paginador-->
+    </div>
+    
   </div>
   <!--/container--> 
 </section>
