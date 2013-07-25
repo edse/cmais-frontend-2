@@ -143,7 +143,7 @@ img{width:100%;}
 /* home */
 
 /* pagination */
-.pagination .back-pag{background:red;}
+.pagination .back-pag a{background:red;}
 /* /pagination */
 
 /* lista assets subsection */
