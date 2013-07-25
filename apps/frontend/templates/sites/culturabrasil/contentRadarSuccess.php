@@ -1,16 +1,20 @@
 <?php use_helper('I18N', 'Date') ?>
-<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
-    <!-- Le styles--> 
-    <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
+<!-- Le styles--> 
+<link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="/portal/css/tvcultura/sites/culturabrasil.css" rel="stylesheet" type="text/css" />
     
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <script src="/portal/js/bootstrap/bootstrap.js"></script>
-    
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="/portal/js/bootstrap/bootstrap.js"></script>
+
+<?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
+
+<!-- section miolo -->
+<section class="miolo">
+  
     <!--container-->
     <div class="container">
       
@@ -354,4 +358,6 @@
       
       
     </div>
+    
+</section>
 
