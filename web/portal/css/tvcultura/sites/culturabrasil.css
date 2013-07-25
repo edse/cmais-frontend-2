@@ -98,14 +98,14 @@ img{width:100%;}
 
 .banner-culturabrasil{display: block;overflow: hidden;width: 300px;margin: 20px auto;}
 
-.open a{background:#f5f5f5!important; color:#666666;}
+.open a{background:#f5f5f5!important; color:#666666!important;}
 .nav .dropdown-toggle {margin-bottom:0;}
 .nav .dropdown-toggle .caret,
 .nav li.dropdown.open .caret,
 .nav li.dropdown.open .caret:hover{border-top-color: #666666!important;border-bottom-color: #666666!important;opacity: 1;filter: alpha(opacity=100);}
 .nav .dropdown-menu{box-shadow: none;border: none;border-radius: 0px;margin: 0;padding: 0;}
 .nav .dropdown-menu li a{margin-top:0;}
-.nav .dropdown-menu li a:hover{color:#333333!important;}
+.nav .dropdown-menu li a:hover{color:#999999!important;}
 .rodape .container{padding: 10px 5px;background: #eeeeee;margin-bottom: 70px;min-height:295px;}
 .box-facebook{ float:left; margin-top:10px;}
 /* geral */
