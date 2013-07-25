@@ -50,19 +50,20 @@ if(isset($pager)){
                 <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
                 <?php if ($related[0]->getThumbnail2()): ?>
                 <div class="row-fluid titulo">
-                  <h2><?php echo $d->getTitle(); ?></h2>
+                  
                 </div>
                 <?php endif;?>
             <div class="row-fluid">
               <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
               <?php if ($related[0]->getThumbnail2()): ?>
-              <div class="span2">
+              <div class="span3">
+                <?php if ($d->AssetContent->getHeadlineShort()): ?><h6><?php echo $d->AssetContent->getHeadlineShort(); ?></h6><?php endif; ?>
                 <img src="<?php echo $related[0]->getThumbnail2() ?>" alt=" <?php echo $d->getTitle(); ?>" class="thumb">
               </div>
               <?php endif; ?>
               <div class="span10">
-               <?php if ($d->AssetContent->getHeadlineShort()): ?><h6><?php echo $d->AssetContent->getHeadlineShort(); ?></h6><?php endif; ?>
-               <p>
+                <h2><?php echo $d->getTitle(); ?></h2>
+                <p>
                   <?php echo $d->getDescription(); ?>
                 </p>  
               </div>
