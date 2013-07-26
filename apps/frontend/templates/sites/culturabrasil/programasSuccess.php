@@ -46,7 +46,7 @@ if(isset($pager)){
     <!--/breadcrumb-->
 
     <div class="row-fluid subSection">
-      <div class="destaque-cultura">
+      <div class="destaque-cultura subsection">
         <div class="programa subsection">
           <span class="interna">
             <?php
