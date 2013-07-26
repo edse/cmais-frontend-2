@@ -112,7 +112,7 @@ if(isset($pager)){
         ?>
 
         <?php if(isset($sobre)):?>
-          <!-- Aqui poderia entrar a descrição do programa, por exemplo! Mas pode colocar em qualquer lugar desde o código acima venha antes... -->
+          <!-- Aqui poderia entrar a descrição do programa, por exemplo! Mas pode colocar em qualquer lugar desde que o código acima venha antes... -->
         <?php endif; ?>
       
         <div class="row-fluid">      
