@@ -143,7 +143,7 @@
           <div class="programa">
             <span>FRASES</span><i class="borda-titulo"></i>
           </div>
-          <h2>"A gente tem que aprender a ser pequeno!"</h2>
+          <h2><span class="aspas">"&nbsp;</span>A gente tem que aprender a ser pequeno!<span class="aspas">&nbsp;"</span></h2>
           <p>Paulo Bellinati, violonista, sobre a música instrumental brasileira</p>
         </div>
         <div class="borda-pontilhada"></div>
@@ -153,7 +153,7 @@
         <!--destaque frases -->
         
         <!--destaque widgets -->
-        <div class="destaque-cultura">
+        <div class="destaque-playlist">
           <h1>Widget</h1>
           <p>Copie o código abaixo para incorporar o Controle Remoto ao seu blog ou site</p> 
           <textarea rows="3">&lt;iframe src="http://www.culturabrasil.com.br/widget" frameborder="0" scrolling="no" width="145" height="55"&gt;&lt;/iframe&gt;</textarea>
