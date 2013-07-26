@@ -159,15 +159,9 @@
     <div class="span4">
       
       <!-- CALENDARIO -->
-      <div class="box-padrao grid1">
-        <div class="topo claro">
-          <span></span>
-          <div class="capa-titulo">
-            <h4>arquivo</h4>
-          </div>
-        </div>
-        <div id="datepicker">
-        </div>
+      <div class="destaque-playlist">
+        <h1>Calendário</h1>
+        <div id="datepicker"></div>
       </div>
       <!-- /CALENDARIO -->
       
