@@ -115,7 +115,7 @@ if(isset($pager)){
               <h4><?php echo $sobreSection->getTitle() ?></h4>
             </div>
             <p><?php echo $sobre->getDescription() ?></p>
-            <p><a href="<?php echo $sobre->retriveUrl() ?>" title="<?php echo $dsobre->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+            <p><a href="<?php echo $sobre->retriveUrl() ?>" title="<?php echo $sobre->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
           </div>
         </div>
         <?php endif; ?>
