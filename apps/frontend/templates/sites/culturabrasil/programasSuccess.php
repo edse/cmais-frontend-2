@@ -67,49 +67,49 @@ if(isset($pager)){
       <!--lista assets-->
       <div class="lista-programas span8">
         <a href="#" title="">
-          78RPM
+          <p>78RPM</p>
         </a>
         <a href="#" title="">
-          Bossamoderna
+          <p>Bossamoderna</p>
         </a>
         <a href="#" title="">
-          Cultura Livre
+          <p>Cultura Livre</p>
         </a>
         <a href="#" title="">
-          Estúdio Cultura
+          <p>Estúdio Cultura</p>
         </a>
         <a href="#" title="">
-          Estúdio F
+          <p>Estúdio F</p>
         </a>
         <a href="#" title="">
-          Galeria
+          <p>Galeria</p>
         </a>
         <a href="#" title="">
-          Música Regional
+          <p>Música Regional</p>
         </a>
         <a href="#" title="">
-          Programa do Estudante
+          <p>Programa do Estudante</p>
         </a>
         <a href="#" title="">
-          RadarCultura
+          <p>RadarCultura</p>
         </a>
         <a href="" title="">
-          Reggae de Bamba
+          <p>Reggae de Bamba</p>
         </a>
         <a href="#" title="">
-          Seleção do Ouvinte
+          <p>Seleção do Ouvinte</p>
         </a>
         <a href="#" title="">
-          Solano Ribeiro
+          <p>Solano Ribeiro</p>
         </a>
         <a href="#" title="">
-          Supertônica
+          <p>Supertônica</p>
         </a>
         <a href="#" title="">
-          Todos os Sons
+          <p>Todos os Sons</p>
         </a>
         <a href="#" title="">
-          Veredas
+          <p>Veredas</p>
         </a>  
       </div>
       <!--listaAssets>

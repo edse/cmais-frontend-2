@@ -90,7 +90,8 @@ img{width:100%;}
 .destaque-cultura.agenda h3, 
 .menu-principal li a,
 .programa.subsection span.interna, 
-.lista-assets a h2{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+.lista-assets a h2,
+.lista-programas a {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
@@ -182,5 +183,5 @@ img{width:100%;}
 /* /lista assets subsection */
 
 /* lista programas */
-l
+.lista-programas a {color:#333333; font-size:18px;}
 /* /lista programas */
