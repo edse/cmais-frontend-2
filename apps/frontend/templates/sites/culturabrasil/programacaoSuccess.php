@@ -32,35 +32,106 @@
       </div>
       <!--titulo-->
       
+      <!--lista grade -->
       <div class="lista-grade">
         
+        <!--accordion-->
         <div class="accordion" id="accordion2">
+          
+          <!--item-->
           <div class="accordion-group">
+            
+            <!--titulo-->
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                Collapsible Group Item #1
+                Collapsible Group Item #1<i class="setagrade cima"></i>
               </a>
             </div>
+            <!--titulo-->
+            
+            <!--corpo-->
             <div id="collapseOne" class="accordion-body collapse in">
               <div class="accordion-inner">
                 Anim pariatur cliche...
               </div>
             </div>
+            <!--corpo-->
+            
           </div>
+          <!--/item-->
+          
+          <!--item-->
           <div class="accordion-group">
+            
+            <!--titulo-->
             <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                Collapsible Group Item #2
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                Collapsible Group Item #2<i class="setagrade baixo"></i>
               </a>
             </div>
-            <div id="collapseTwo" class="accordion-body collapse">
+            <!--titulo-->
+            
+            <!--corpo-->
+            <div id="collapseOne" class="accordion-body collapse in">
               <div class="accordion-inner">
                 Anim pariatur cliche...
               </div>
             </div>
+            <!--corpo-->
+            
           </div>
+          <!--/item-->
+          
+          <!--item-->
+          <div class="accordion-group">
+            
+            <!--titulo-->
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                Collapsible Group Item #3<i class="setagrade baixo"></i>
+              </a>
+            </div>
+            <!--titulo-->
+            
+            <!--corpo-->
+            <div id="collapseOne" class="accordion-body collapse in">
+              <div class="accordion-inner">
+                Anim pariatur cliche...
+              </div>
+            </div>
+            <!--corpo-->
+            
+          </div>
+          <!--/item-->
+          
+          <!--item-->
+          <div class="accordion-group">
+            
+            <!--titulo-->
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                Collapsible Group Item #4<i class="setagrade baixo"></i>
+              </a>
+            </div>
+            <!--titulo-->
+            
+            <!--corpo-->
+            <div id="collapseOne" class="accordion-body collapse in">
+              <div class="accordion-inner">
+                Anim pariatur cliche...
+              </div>
+            </div>
+            <!--corpo-->
+            
+          </div>
+          <!--/item-->
+          
         </div>
-      <div>  
+        <!--/accordion-->
+        
+      </div>
+      <!--/lista grade -->
+        
     </div>  
     <!-- /coluna esquerda -->
     
