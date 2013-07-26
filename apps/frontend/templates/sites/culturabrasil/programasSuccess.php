@@ -65,35 +65,52 @@ if(isset($pager)){
     <div class="row-fluid">
       
       <!--lista assets-->
-      <div class="lista-assets span8">
-        <?php if(count($pager) > 0): ?>
-          <?php foreach($pager->getResults() as $d): ?>
-            <a href="<?php echo $uri . '/' . $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
-                <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
-                <?php if ($related[0]->getThumbnail2()): ?>
-                <div class="row-fluid titulo">
-                  
-                </div>
-                <?php endif;?>
-            <div class="row-fluid" style="margin-left:10px">
-              <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
-              <?php if ($related[0]->getThumbnail2()): ?>
-              <div class="span3" style="margin-left:0px">
-                <h6><?php if ($d->AssetContent->getHeadlineShort()): ?><?php echo $d->AssetContent->getHeadlineShort(); ?><?php endif; ?>&nbsp;</h6>
-                <img src="<?php echo $related[0]->getThumbnail2() ?>" alt=" <?php echo $d->getTitle(); ?>" class="thumb">
-              </div>
-              <?php endif; ?>
-              <div class="span9">
-                <h2><?php echo $d->getTitle(); ?></h2>
-                <p>
-                  <?php echo $d->getDescription(); ?>
-                </p>  
-              </div>
-            </div>    
-           </a>
-            
-          <?php endforeach; ?>
-        <?php endif; ?>
+      <div class="lista-programas span8">
+        <a href="#" title="">
+          78RPM
+        </a>
+        <a href="#" title="">
+          Bossamoderna
+        </a>
+        <a href="#" title="">
+          Cultura Livre
+        </a>
+        <a href="#" title="">
+          Estúdio Cultura
+        </a>
+        <a href="#" title="">
+          Estúdio F
+        </a>
+        <a href="#" title="">
+          Galeria
+        </a>
+        <a href="#" title="">
+          Música Regional
+        </a>
+        <a href="#" title="">
+          Programa do Estudante
+        </a>
+        <a href="#" title="">
+          RadarCultura
+        </a>
+        <a href="" title="">
+          Reggae de Bamba
+        </a>
+        <a href="#" title="">
+          Seleção do Ouvinte
+        </a>
+        <a href="#" title="">
+          Solano Ribeiro
+        </a>
+        <a href="#" title="">
+          Supertônica
+        </a>
+        <a href="#" title="">
+          Todos os Sons
+        </a>
+        <a href="#" title="">
+          Veredas
+        </a>  
       </div>
       <!--listaAssets>
         
