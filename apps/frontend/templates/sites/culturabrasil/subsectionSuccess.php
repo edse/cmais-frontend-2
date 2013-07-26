@@ -38,7 +38,7 @@ if(isset($pager)){
         <li><a href="<?php echo url_for('homepage')?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
         <li><?php echo $section->getTitle(); ?> </li>
         <?php else: ?>
-        <li><a href="/programas">Programas</a> <span class="divider">»</span></li>
+        <li><a href="<?php echo url_for('homepage')?>programas">Programas</a> <span class="divider">»</span></li>
         <li><?php echo $site->getTitle(); ?> </li>
         <?php endif; ?>         
       </ul>
