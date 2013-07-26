@@ -92,10 +92,7 @@
           </div>
           <!--/item-->
           
-        </div>
-        <!--/accordion-->
-        
-        <!--item-->
+          <!--item-->
           <div class="accordion-group">
             
             <!--titulo-->
@@ -148,6 +145,10 @@
             
           </div>
           <!--/item-->
+          
+        </div>
+        <!--/accordion-->
+        
       </div>
       <!--/lista grade -->
         
