@@ -99,6 +99,8 @@ if(isset($pager)){
         
       <!--coluna direita-->
       <div class="lista-assets redes span4">
+        
+      
         <div class="row-fluid">      
           <div class="span12 direita">
             <div class="banner-radio">
