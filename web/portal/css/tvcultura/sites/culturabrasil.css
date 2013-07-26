@@ -1,8 +1,52 @@
+@font-face {
+    font-family: 'asapbold';
+    src: url('/portal/css/fontes/asap/asap-bold-webfont.eot');
+    src: url('/portal/css/fontes/asap/asap-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/asap/asap-bold-webfont.woff') format('woff'),
+         url('/portal/css/fontes/asap/asap-bold-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/asap/asap-bold-webfont.svg#asapbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'asapbold_italic';
+    src: url('/portal/css/fontes/asap/asap-bolditalic-webfont.eot');
+    src: url('/portal/css/fontes/asap/asap-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/asap/asap-bolditalic-webfont.woff') format('woff'),
+         url('/portal/css/fontes/asap/asap-bolditalic-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/asap/asap-bolditalic-webfont.svg#asapbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'asapitalic';
+    src: url('/portal/css/fontes/asap/asap-italic-webfont.eot');
+    src: url('/portal/css/fontes/asap/asap-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/asap/asap-italic-webfont.woff') format('woff'),
+         url('/portal/css/fontes/asap/asap-italic-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/asap/asap-italic-webfont.svg#asapitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'asapregular';
+    src: url('/portal/css/fontes/asap/asap-regular-webfont.eot');
+    src: url('/portal/css/fontes/asap/asap-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/asap/asap-regular-webfont.woff') format('woff'),
+         url('/portal/css/fontes/asap/asap-regular-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/asap/asap-regular-webfont.svg#asapregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body{background: none; padding: 0;text-align:left;position: relative;}
 #rodape-portal {margin-top: 0px;}
 img{width:100%;}
 
-.font-asap{font-family: 'Asap', sans-serif;}
+.font-asap{font-family: 'asapregular', sans-serif;}
 
 /* topo cmais desktop 
 #guia-topo{padding:0;margin:0 0 20px 0;}
@@ -35,15 +79,56 @@ img{width:100%;}
 .topo .ouca{max-width:150px;display: block;float: right;}
 .topo .logo{width: 210px; margin-top: 10px;}
 .menu-principal{max-width: 853px;float: left;}
-.menu-principal li a{ color:#666666; text-transform:uppercase; font-size: 14px;padding: 5px 7px;margin-top: 12px;}
-.carousel-caption h4, .carousel-caption h3, 
-.destaque-cultura span, .destaque-cultura h2,
-.destaque-playlist h1, .destaque-playlist h2, 
-.menu-principal li a, .mais{font-family: 'Asap', Arial, Helvetica, sans-serif;}
-.linha-culturabrasil{border-bottom: 1px dashed #e9e9e9;width: 100%;display: block;margin-bottom: 10px;}
-.mais{float:right; color:#666666; font-size:10px; text-transform:uppercase; display: block;width: 100%;text-align: right;}
-textarea{width:100%}
+.menu-principal li a{ color:#666666; text-transform:uppercase; font-size: 14px;padding: 5px 7px;margin-top: 12px; border-radius:0px}
+.linha-culturabrasil{border-bottom: 1px dashed #e9e9e9;width: 100%;display: block;margin-bottom: 1px;}
+.mais{ color:#666666; font-size:10px; text-transform:uppercase; display: block;width: 100%;text-align: right;}
+
+.carousel-caption h4, 
+.carousel-caption h3, 
+.destaque-cultura h2,
+.destaque-playlist h2,
+.destaque-cultura.agenda h3, 
+.menu-principal li a,
+.programa.subsection span.interna, 
+.lista-assets a h2,
+.lista-programas a {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+
+.mais,
+.rodape span,
+.destaque-playlist h1,
+.destaque-cultura span, 
+.lista-assets a h6,
+.lista-programas span.titulo-arquivo{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
+
+.banner-culturabrasil,
+.destaque-cultura span.interna{display: block;overflow: hidden;max-width: 300px;margin: 20px auto;}
+
+.open a{background:#f5f5f5!important; color:#666666!important;}
+.nav .dropdown-toggle {margin-bottom:0;}
+.nav .dropdown-toggle .caret,
+.nav li.dropdown.open .caret,
+.nav li.dropdown.open .caret:hover{border-top-color: #666666!important;border-bottom-color: #666666!important;opacity: 1;filter: alpha(opacity=100);}
+.nav .dropdown-menu{box-shadow: none;border: none;border-radius: 0px;margin: 0;padding: 0;min-width: 108px;}
+.nav .dropdown-menu li a{margin-top:0;}
+.nav .dropdown-menu li a:hover{color:#999999!important;}
+.rodape .container{padding: 10px 5px;background: #eeeeee;margin-bottom: 70px;min-height:295px;}
+.box-facebook{ float:left; margin-top:10px;}
+.fb_iframe_widget {overflow: hidden;width: 315px;}
+.aspas{color:#999999;}
+.nav-pills>.active>a, 
+.nav-pills>.active>a:hover{background-color:#F5f5f5; color:#666666}
 /* geral */
+
+/* subsection */
+.borda-pontilhada{width:100%; height:1px; background: url(/portal/images/capaPrograma/culturabrasil/bg-dotted.png) repeat-x;}
+.pontilhada{margin-top:-8px; }
+.breadcrumb{background: none;padding: 8px 10px;color: #333333;margin-bottom:10px;}
+.breadcrumb li{font-size:12px;}
+.breadcrumb li a{color: #999999; font-size:12px;}
+.subsection{padding: 0 0 0 4px; height: 44px;} 
+.programa.subsection span{padding:5px; font-size:24px; margin:0;}
+.programa.subsection i.borda-titulo.subsection{background-position: 0px -42px;height: 30px;width: 10px;}
+/* subsection */
 
 /* home */
 .carousel-control {position: absolute;top: 50%; display:none;}
@@ -52,16 +137,61 @@ textarea{width:100%}
 .carousel-caption h3{ margin: 0;font-weight: normal;font-size: 17px;text-transform: uppercase;}
 .carousel-caption p{padding: 15px 0 0 0px;font-size: 18px;line-height: 23px;}
 
+.destaque-cultura div.programa{position: relative;overflow: hidden;}
 .destaque-cultura{margin-bottom:20px}
-.destaque-cultura span{font-size:12px; background:#666666; color:#FFFFFF; padding:3px 5px;letter-spacing: 0.1em;position:relative;width: 100%;}
+.destaque-cultura span, .rodape span{text-transform:uppercase; font-size:12px; background:#666666; color:#FFFFFF; padding:0px 5px;letter-spacing: 0.1em; display: block;float:left;}
 .destaque-cultura h2{font-size:23px;font-weight: normal;margin: 0;line-height: 36px;color: #333333;}
 .destaque-cultura p{font-size:14px;}
-.destaque-cultura i.borda-titulo{ float:right; margin-left:-7px;background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat; width:7px; height:19px; display:block;}
+.destaque-cultura i.borda-titulo, .rodape i.borda-titulo{ float:left;background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat; width:7px; height:19px; display:block;}
+.destaque-cultura a:hover{text-decoration:none;}
 
 .destaque-cultura.frase h2{color:#666666; text-align:center;}
-.destaque-playlist h1{font-size:12px; color:#666666; text-transform:uppercase; font-weight: bold;margin: 0;line-height: 12px;margin-bottom: 10px;}
+.destaque-playlist h1{font-size:12px; color:#666666; text-transform:uppercase; margin: 0;line-height: 12px;margin-bottom: 10px;letter-spacing:-0.1em;}
 .destaque-playlist h2{font-size:23px; color:#333333;font-weight: normal;line-height: 18px;margin: 10px 0px 5px 0px;}
 .destaque-playlist p{font-size: 14px; margin-bottom:15px;}
+.destaque-playlist a:hover{ text-decoration:none;}
+textarea{width:100%; font-size:11px;}
 
+.destaque-cultura.agenda a:hover{ text-decoration:none;}
+.destaque-cultura.agenda h3{font-size: 18px;line-height: 15px;margin-top: 0;margin-bottom: 4px;color: #666; font-weight:normal;}
 
+.rodape span{color:#666666; background:#FFFFFF;}
+.rodape i.borda-titulo.clara{background-position: 0px -20px;}
+.rodape .google, .rodape .twitter{margin-top:30px;}
 /* home */
+
+/* pagination */
+.pagination ul{box-shadow: none;}
+.pagination .back-pag a{background: #FFFFFF;height: 30px;width: 26px;padding: 0;text-align: center;line-height: 30px;margin: 0 5px;border: none;color: #999999;}
+.pagination .back-pag a:hover{background: #f5f5f5;}
+.pagination .back-pag a i{opacity:0.5;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter: alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;}
+.pagination .back-pag.active a{background: #f5f5f5;} 
+/* /pagination */
+
+/* lista assets subsection */
+.lista-assets a h6{margin:0;text-transform:uppercase;color:#666666;margin: 0 0 -2px 0; font-size:12px; letter-spacing: -0.1em;}
+.lista-assets a h2{color:#333;font-size:18px; font-weight: normal; margin-top: 18px;line-height: 18px;margin-bottom: 4px;}
+.lista-assets a h4{color:#333; }
+.lista-assets a h6:hover,
+.lista-assets a h4:hover{color:#005580\9;}
+.lista-assets p{font-weight: normal\9;}
+.lista-assets a{text-decoration: none;cursor: hand;}
+.lista-assets .centro.span12{margin-left:-20px\9;} 
+.lista-assets .titulo .row-fluid{margin:-10px;}
+.lista-assets.span4{margin:0px\9;}
+.lista-assets .titulo h2{margin: 0 0 5px;font-weight: normal;font-size: 24px;line-height: 20px;}
+.lista-assets .span10{margin-left:10px}
+.lista-assets .span10 p{margin:0 0 30px 0;}
+.lista-assets .span2{margin: 0 0 20px 0;}
+.lista-assets .span2 img{margin-top:7px;}
+.row-fluid.subSection h1{color:black;margin: 13px 0 30px 0; font-size:24px;}
+/* /lista assets subsection */
+
+/* lista programas */
+.lista-programas{margin-bottom:50px;}
+.lista-programas a {color:#333333; font-size:18px;  padding: 0; }
+.lista-programas a p{margin:0 10px 8px 10px!important;}
+.lista-programas span.titulo-arquivo{font-size:18px;text-transform:uppercase; margin:40px 0 8px 10px; display:block;}
+.programa.subsection span.interna{font-size: 24px; text-transform:none;margin-bottom:8px;}
+.destaque-cultura.subsection{margin:0;}
+/* /lista programas */

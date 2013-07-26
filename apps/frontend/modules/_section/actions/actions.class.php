@@ -528,16 +528,30 @@ class _sectionActions extends sfActions
         
       }else{
         if($this->site->type == 'ProgramaRadio'){
-          $this->siteSections = Doctrine_Query::create()
-            ->select('s.*')
-            ->from('Section s')
-            ->where('s.site_id = ?', 4)
-            ->andWhere('s.is_active = ?', 1)
-            ->andWhere('s.is_visible = ?', 1)
-            ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
-            ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
-            ->orderBy('s.display_order')
-            ->execute();
+          if($this->site->Program->Channel->getSlug() == "culturabrasil"){
+            $this->siteSections = Doctrine_Query::create()
+              ->select('s.*')
+              ->from('Section s')
+              ->where('s.site_id = ?', 1124)
+              ->andWhere('s.is_active = ?', 1)
+              ->andWhere('s.is_visible = ?', 1)
+              ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
+              ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
+              ->orderBy('s.display_order')
+              ->execute();
+          }
+          else {
+            $this->siteSections = Doctrine_Query::create()
+              ->select('s.*')
+              ->from('Section s')
+              ->where('s.site_id = ?', 4)
+              ->andWhere('s.is_active = ?', 1)
+              ->andWhere('s.is_visible = ?', 1)
+              ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
+              ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
+              ->orderBy('s.display_order')
+              ->execute();
+          }
         }
         else{
           if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes")){
@@ -730,6 +744,23 @@ class _sectionActions extends sfActions
               if($request->getParameter('busca') != '')
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%'");               
               $this->assetsQuery->orderBy('av.bitrate desc');
+            }
+            elseif( ($this->site->Program->Channel->getSlug() == 'culturabrasil') && (in_array($this->section->getSlug(), array('home', 'home-page', 'homepage'))) ) {
+              $arquivo[] = "arquivo";
+              if($this->section->subsections()) {
+                foreach($this->section->subsections() as $s) {
+                  $arquivo[] = $s->getSlug();
+                }
+              }
+              $this->assetsQuery = Doctrine_Query::create()
+                ->select('a.*')
+                ->from('Asset a, SectionAsset sa, Section s')
+                ->where('sa.section_id = s.id')
+                ->andWhere('sa.asset_id = a.id')
+                ->andWhereIn('s.slug', $arquivo)
+                ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+                ->andWhere('a.is_active = ?', 1)
+                ->orderBy('a.created_at desc');
             }
             else {
               $this->assetsQuery = Doctrine_Query::create()
@@ -1734,22 +1765,35 @@ class _sectionActions extends sfActions
         }
       }
       elseif($this->site->getType() == "ProgramaRadio"){
-        if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class","manha-cultura", "entrelinhas-1"))){
-          if($debug) print "<br>13-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new';
-          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new');
-        }
-        else {
+        if($this->site->Program->Channel->getSlug() == "culturabrasil") {
+          
           if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
             if($debug) print "<br>13-a>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
           }elseif(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsectionSuccess.php')){
             if($debug) print "<br>13-b>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection');
-          }elseif(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$sectionSlug.'Success.php')){
-            if($debug) print "<br>13-c>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$sectionSlug;
-            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$sectionSlug);
           }else{
-            if($debug) print "<br>13-d>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/subsection';
+            if($debug) print "<br>13-d>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/culturabrasil/subsection';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/culturabrasil/subsection');
+          }
+        }
+        elseif(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class","manha-cultura", "entrelinhas-1"))){
+          if($debug) print "<br>13-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new';
+          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new');
+        }
+        else {
+          if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
+            if($debug) print "<br>13-f>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
+          }elseif(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsectionSuccess.php')){
+            if($debug) print "<br>13-g>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection');
+          }elseif(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$sectionSlug.'Success.php')){
+            if($debug) print "<br>13-h>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$sectionSlug;
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').  DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$sectionSlug);
+          }else{
+            if($debug) print "<br>13-i>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/subsection';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/subsection');
           }
         }

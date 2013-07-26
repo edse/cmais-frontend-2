@@ -5,7 +5,7 @@
 
     <?php include_title() ?>
     <?php include_metas() ?>
-    <?php include_meta_props() ?>
+    <?php include_meta_props() ?> 
 
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
 

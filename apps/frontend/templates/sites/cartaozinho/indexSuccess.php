@@ -170,7 +170,7 @@
                   </div>
                   <p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-joao.png" /></p>
                   <p>Nome: <span>João Braga</span></p>
-                  <p>Idade: <span>9 anos</span></p>
+                  <p>Idade: <span>10 anos</span></p>
                   <p>Que time torce: <span>Corinthians</span></p>
                   <p>Time estrangeiro preferido? <span>Barcelona</span></p>
                   <p>Quem é seu ídolo no futebol: <span>Messi</span></p>

@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
+<link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
 <script type="text/javascript">
 $(function(){
   //hover states on the static widgets
@@ -22,7 +23,9 @@ $(function(){
 
       <!-- BARRA SITE -->
       <div id="barra-site">
-
+        <?php include_partial_from_folder('sites/quintaldacultura', 'global/menu') ?>
+        <?php
+        /*
         <div class="topo-programa">
           <?php if(isset($program) && $program->id > 0): ?>
           <h2>
@@ -83,12 +86,13 @@ $(function(){
         </div>
         <!-- /box-topo -->
         <?php endif; ?>
-
+        */
+        ?>
       </div>
       <!-- /BARRA SITE -->
 
       <!-- MIOLO -->
-      <div id="miolo">
+      <div id="miolo" class="a-sobre-o-programa">
       
         <!-- BOX LATERAL -->
         <?php include_partial_from_folder('blocks','global/shortcuts') ?>
@@ -224,7 +228,11 @@ $(function(){
       <!-- /MIOLO -->
     </div>
     <!-- / CAPA SITE -->
-    
+    <div class="s-personagens">
+      <!--FOOTER QUINTAL-->
+      <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?> 
+      <!--/FOOTER QUINTAL-->
+    </div>
 <script type='text/javascript'>
 var _sf_async_config={};
 /** CONFIGURATION START **/

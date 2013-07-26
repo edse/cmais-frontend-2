@@ -79,7 +79,7 @@
               <div class="contato grid2 video">
 
                 <h3 class="tit-pagina grid2">Entre em campo no cartãozinho: mande seu vídeo!</h3>  
-                <p style="margin: 0 10px 20px;">Você bate um bolão? É o rei das embaixadinhas? Já encontrou aquele craque de um time grande? Inventou um drible imbatível? Não importa se o seu negócio é ser cartola ou líder de torcida, grave seu vídeo e mande para o Cartãozinho! Você pode entrar em campo e aparecer no nosso programa! Preencha o formulário abaixo e participe!</p>
+                <p style="margin: 0 10px 20px;">Você bate um bolão? É o rei das embaixadinhas? Inventou um drible imbatível? Quer fazer uma pergunta para nós? Ou tem um comentário sobre o último jogo da rodada? Não importa se o seu negócio é ser cartola, comentarista ou líder de torcida, grave seu vídeo e mande para o Cartãozinho! Você pode entrar em campo e aparecer no nosso programa! Envie seu vídeo, preencha o formulário abaixo e participe!</p>
 
                   <div class="msgErro" style="display:none">
                     <span class="alerta"></span>

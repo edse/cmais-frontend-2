@@ -20,7 +20,8 @@ $(function(){
 
       <!-- BARRA SITE -->
       <div id="barra-site">
-        
+        <?php
+         /*
         <?php if(isset($program) && $program->id ): ?>
         <div class="topo-programa">
           <!--
@@ -40,7 +41,8 @@ $(function(){
             <!-- /horario -->
         </div>
         <?php endif; ?>
-
+        */
+        ?>
         <?php if(isset($siteSections) && $site->getType() != "Portal"): ?>
         <!-- box-topo -->
         <div class="box-topo grid3">
