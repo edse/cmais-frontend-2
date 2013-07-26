@@ -43,7 +43,7 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .home .duas-colunas.enquete #pergunta-cartaozinho-enquete{width: 457px; height: 462px; float: right; margin: 10px;}
 .home .duas-colunas.enquete #pergunta-cartaozinho-enquete h2{ font-family: 'Conv_Futura_Medium_Condensed_BT', sans-serif;;text-transform: uppercase; font-size: 18px; color: #541fff; padding: 3px 0 0 29px;}
 .home .duas-colunas.enquete #pergunta-cartaozinho-enquete .txt-pergunta{font-family: 'Conv_Futura_Medium_Condensed_BT'; color: #541fff;text-align: center; font-size:30px; width: 100%; display: block; margin-bottom:10px;}
-.home .duas-colunas.enquete .resposta-cartaozinho-enquete{text-align:center;color:#541fff;width: 205px; background: #aef167; border-radius: 5px; padding: 5px; float: left; margin-bottom: 15px;}
+.home .duas-colunas.enquete .resposta-cartaozinho-enquete{font-weight:bold;font-size:18px; text-align:center;color:#541fff;width: 205px; background: #aef167; border-radius: 5px; padding: 5px; float: left; margin-bottom: 15px;}
 .home .duas-colunas.enquete .resposta-cartaozinho-enquete.nao{float: right;}
 .home .duas-colunas.enquete .versus{text-align: center; width: 27px; display: block; float: left; font-size: 22px; color: #541fff; line-height: 30px;}
 .home .duas-colunas.enquete label{text-transform: uppercase; color: #0b6284;}

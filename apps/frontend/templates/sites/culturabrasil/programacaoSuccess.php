@@ -65,14 +65,14 @@
             
             <!--titulo-->
             <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse2">
                 Collapsible Group Item #2<i class="setagrade baixo"></i>
               </a>
             </div>
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapseOne" class="accordion-body collapse in">
+            <div id="collapse2" class="accordion-body collapse in">
               <div class="accordion-inner">
                 Anim pariatur cliche...
               </div>
