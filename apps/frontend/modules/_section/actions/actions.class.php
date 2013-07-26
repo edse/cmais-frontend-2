@@ -528,16 +528,30 @@ class _sectionActions extends sfActions
         
       }else{
         if($this->site->type == 'ProgramaRadio'){
-          $this->siteSections = Doctrine_Query::create()
-            ->select('s.*')
-            ->from('Section s')
-            ->where('s.site_id = ?', 4)
-            ->andWhere('s.is_active = ?', 1)
-            ->andWhere('s.is_visible = ?', 1)
-            ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
-            ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
-            ->orderBy('s.display_order')
-            ->execute();
+          if($this->site->Program->Channel->getSlug() == "culturabrasil"){
+            $this->siteSections = Doctrine_Query::create()
+              ->select('s.*')
+              ->from('Section s')
+              ->where('s.site_id = ?', 1124)
+              ->andWhere('s.is_active = ?', 1)
+              ->andWhere('s.is_visible = ?', 1)
+              ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
+              ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
+              ->orderBy('s.display_order')
+              ->execute();
+          }
+          else {
+            $this->siteSections = Doctrine_Query::create()
+              ->select('s.*')
+              ->from('Section s')
+              ->where('s.site_id = ?', 4)
+              ->andWhere('s.is_active = ?', 1)
+              ->andWhere('s.is_visible = ?', 1)
+              ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
+              ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
+              ->orderBy('s.display_order')
+              ->execute();
+          }
         }
         else{
           if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes")){
