@@ -88,9 +88,10 @@ img{width:100%;}
 .destaque-cultura h2,
 .destaque-playlist h2,
 .destaque-cultura.agenda h3, 
-.menu-principal li a, .mais,
+.menu-principal li a, 
 .lista-assets a h2{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
+.mais,
 .rodape span,
 .destaque-playlist h1,
 .destaque-cultura span, 
