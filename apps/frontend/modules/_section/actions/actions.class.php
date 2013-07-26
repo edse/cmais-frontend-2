@@ -528,7 +528,7 @@ class _sectionActions extends sfActions
         
       }else{
         if($this->site->type == 'ProgramaRadio'){
-          if($this->section->Site->Program->Channel->getSlug == "culturabrasil"){
+          if($this->section->Site->Program->Channel->getSlug() == "culturabrasil"){
             $this->siteSections = Doctrine_Query::create()
               ->select('s.*')
               ->from('Section s')
