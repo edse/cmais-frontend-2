@@ -100,6 +100,25 @@ if(isset($pager)){
       <!--coluna direita-->
       <div class="lista-assets redes span4">
         
+        <?php
+          $sobreSection = Doctrine::getTable('section')->findOneBySiteIdAndSlug($site->id, "sobre");
+          $sobreSectionAssets = $sobreSection->getAssets();
+          if(count($sobreSectionAssets) > 0) {
+            $sobre = $sobreSectionAssets[0];
+          }
+        ?>
+
+        <?php if(isset($sobre)):?>
+        <div class="row-fluid">  
+          <div class="span12 thumbnail direita">
+            <div class="page-header"> 
+              <h4><?php echo $sobreSection->getTitle() ?></h4>
+            </div>
+            <p><?php echo $sobre->getDescription() ?></p>
+            <p><a href="<?php echo $sobre->retriveUrl() ?>" title="<?php echo $dsobre->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+          </div>
+        </div>
+        <?php endif; ?>
       
         <div class="row-fluid">      
           <div class="span12 direita">
