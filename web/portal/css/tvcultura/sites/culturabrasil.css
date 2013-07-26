@@ -120,7 +120,7 @@ img{width:100%;}
 .pontilhada{margin-top:-8px; }
 .breadcrumb{background: none;padding: 8px 10px;color: #333333;}
 .breadcrumb li{font-size:12px;}
-.breadcrumb li a{color: #999999;}
+.breadcrumb li a{color: #999999; font-size:12px;}
 .subsection{padding: 0 0 0 4px; height: 44px;} 
 .programa.subsection span{padding:5px; font-size:24px; margin:0;}
 .programa.subsection i.borda-titulo.subsection{background-position: 0px -42px;height: 30px;width: 10px;}
