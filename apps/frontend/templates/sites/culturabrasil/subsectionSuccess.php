@@ -94,6 +94,9 @@ if(isset($pager)){
             
           <?php endforeach; ?>
         <?php endif; ?>
+        <!--paginador-->
+        <?php include_partial_from_folder('sites/culturabrasil', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
+        <!--paginador-->
       </div>
       <!--listaAssets>
         
@@ -127,9 +130,7 @@ if(isset($pager)){
     </div>
     <!--/coluna principal-->
     
-    <!--paginador-->
-    <?php include_partial_from_folder('sites/culturabrasil', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
-    <!--paginador-->
+    
     </div>
     
   </div>
