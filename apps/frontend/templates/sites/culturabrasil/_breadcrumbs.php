@@ -44,7 +44,7 @@
              <li><a href="<?php echo $section->retriveUrl(); ?>"><?php echo $section->getTitle(); ?></a> <span class="divider">»</span></li>
              <li><?php echo $asset->getTitle(); ?> </li>
                <?php else: ?>
-             <li><?php echo $section->getTitle(); ?> </li>
+             <li><?php echo $section->getTitle(); ?> 1</li>
                <?php endif; ?>
              <?php endif; ?>
            <?php endif; ?>
