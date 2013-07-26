@@ -532,7 +532,7 @@ class _sectionActions extends sfActions
             $this->siteSections = Doctrine_Query::create()
               ->select('s.*')
               ->from('Section s')
-              ->where('s.slug = "culturabrasil"')
+              ->where('s.site_id = ?', 1124)
               ->andWhere('s.is_active = ?', 1)
               ->andWhere('s.is_visible = ?', 1)
               ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
