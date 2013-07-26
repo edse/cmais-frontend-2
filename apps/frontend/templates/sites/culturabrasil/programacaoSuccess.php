@@ -44,7 +44,9 @@
             <!--titulo-->
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                Collapsible Group Item #1<i class="setagrade cima"></i>
+                <span class="hora">05:45</span>
+                <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
+                <i class="setagrade cima"></i>
               </a>
             </div>
             <!--titulo-->
@@ -52,7 +54,10 @@
             <!--corpo-->
             <div id="collapseOne" class="accordion-body collapse in">
               <div class="accordion-inner">
-                Anim pariatur cliche...
+                <p>Matemática 23<br><br>
+                Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
+                <a href="#" title="">acesseo site</a>
+                <a href="#" title="">ouça ao vivo pela web</a>
               </div>
             </div>
             <!--corpo-->
@@ -66,15 +71,20 @@
             <!--titulo-->
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse2">
-                Collapsible Group Item #2<i class="setagrade baixo"></i>
+                <span class="hora">05:45</span>
+                <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
+                <i class="setagrade cima"></i>
               </a>
             </div>
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapse2" class="accordion-body collapse">
+            <div id="collapse2" class="accordion-body collapse in">
               <div class="accordion-inner">
-                Anim pariatur cliche...
+                <p>Matemática 23<br><br>
+                Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
+                <a href="#" title="">acesseo site</a>
+                <a href="#" title="">ouça ao vivo pela web</a>
               </div>
             </div>
             <!--corpo-->
@@ -82,21 +92,29 @@
           </div>
           <!--/item-->
           
-          <!--item-->
+        </div>
+        <!--/accordion-->
+        
+        <!--item-->
           <div class="accordion-group">
             
             <!--titulo-->
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3">
-                Collapsible Group Item #3<i class="setagrade baixo"></i>
+                <span class="hora">05:45</span>
+                <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
+                <i class="setagrade cima"></i>
               </a>
             </div>
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapse3" class="accordion-body collapse">
+            <div id="collapse3" class="accordion-body collapse in">
               <div class="accordion-inner">
-                Anim pariatur cliche...
+                <p>Matemática 23<br><br>
+                Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
+                <a href="#" title="">acesseo site</a>
+                <a href="#" title="">ouça ao vivo pela web</a>
               </div>
             </div>
             <!--corpo-->
@@ -110,25 +128,26 @@
             <!--titulo-->
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse4">
-                Collapsible Group Item #4<i class="setagrade baixo"></i>
+                <span class="hora">05:45</span>
+                <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
+                <i class="setagrade cima"></i>
               </a>
             </div>
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapse4" class="accordion-body collapse">
+            <div id="collapse4" class="accordion-body collapse in">
               <div class="accordion-inner">
-                Anim pariatur cliche...
+                <p>Matemática 23<br><br>
+                Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
+                <a href="#" title="">acesseo site</a>
+                <a href="#" title="">ouça ao vivo pela web</a>
               </div>
             </div>
             <!--corpo-->
             
           </div>
           <!--/item-->
-          
-        </div>
-        <!--/accordion-->
-        
       </div>
       <!--/lista grade -->
         
