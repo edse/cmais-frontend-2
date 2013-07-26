@@ -183,7 +183,7 @@ img{width:100%;}
 /* /lista assets subsection */
 
 /* lista programas */
-.lista-programas a {color:#333333; font-size:18px; margin:0 10px, padding: 0; }
+.lista-programas a {color:#333333; font-size:18px; margin:0 10px; padding: 0; }
 .lista-programas a p{margin:0;}
 .programa.subsection span.interna{font-size: 24px; text-transform:none;}
 /* /lista programas */
