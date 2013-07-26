@@ -119,8 +119,9 @@ img{width:100%;}
 .borda-pontilhada{width:100%; height:1px; background: url(/portal/images/capaPrograma/culturabrasil/bg-dotted.png) repeat-x;}
 .pontilhada{margin-top:-8px; }
 .breadcrumb{background: none;padding: 8px 10px;color: #333333;}
+.breadcrumb li{font-size:12px;}
 .breadcrumb li a{color: #999999;}
-.subsection{padding: 0 0 0 10px; height: 44px;} 
+.subsection{padding: 0 0 0 4px; height: 44px;} 
 .programa.subsection span{padding:5px; font-size:24px; margin:0;}
 .programa.subsection i.borda-titulo.subsection{background-position: 0px -42px;height: 30px;width: 10px;}
 /* subsection */
@@ -183,8 +184,8 @@ img{width:100%;}
 /* /lista assets subsection */
 
 /* lista programas */
-.lista-programas a {color:#333333; font-size:16px;  padding: 0; }
+.lista-programas a {color:#333333; font-size:18px;  padding: 0; }
 .lista-programas a p{margin:0 10px 8px 10px!important;}
-.programa.subsection span.interna{font-size: 20px; text-transform:none;margin-bottom:8px;}
+.programa.subsection span.interna{font-size: 24px; text-transform:none;margin-bottom:8px;}
 .destaque-cultura.subsection{margin:0;}
 /* /lista programas */
