@@ -64,7 +64,7 @@ if(isset($pager)){
     <!--clounaprincipal-->
     <div class="row-fluid">
       
-      <!--lista assets-->
+      <!--lista Programas-->
       <div class="lista-programas span8">
         <a href="#" title="">
           <p>78RPM</p>
@@ -110,9 +110,24 @@ if(isset($pager)){
         </a>
         <a href="#" title="">
           <p>Veredas</p>
-        </a>  
+        </a>
+        
+        
+        <span class="titulo-arquivo">
+          arquivo
+        </span>
+        <a href="#" title="">
+          <p>A Voz Popular</p>
+        </a>
+        <a href="#" title="">
+          <p>Ao Vivo</p>
+        </a>
+        <a href="#" title="">
+          <p>Na Faixa</p>
+        </a>
+          
       </div>
-      <!--listaAssets>
+      <!--listaProgramas>
         
       <!--coluna direita-->
       <div class="lista-assets redes span4">

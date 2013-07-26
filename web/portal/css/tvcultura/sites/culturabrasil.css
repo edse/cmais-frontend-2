@@ -97,7 +97,8 @@ img{width:100%;}
 .rodape span,
 .destaque-playlist h1,
 .destaque-cultura span, 
-.lista-assets a h6{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
+.lista-assets a h6,
+.lista-programas span.titulo-arquivo{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
 
 .banner-culturabrasil,
 .destaque-cultura span.interna{display: block;overflow: hidden;max-width: 300px;margin: 20px auto;}
@@ -184,8 +185,10 @@ img{width:100%;}
 /* /lista assets subsection */
 
 /* lista programas */
+.lista-programas{margin-bottom:50px;}
 .lista-programas a {color:#333333; font-size:18px;  padding: 0; }
 .lista-programas a p{margin:0 10px 8px 10px!important;}
+.lista-programas span.titulo-arquivo{font-size:18px;text-transform:uppercase; margin:40px 0 8px 10px; display:block;}
 .programa.subsection span.interna{font-size: 24px; text-transform:none;margin-bottom:8px;}
 .destaque-cultura.subsection{margin:0;}
 /* /lista programas */
