@@ -111,7 +111,9 @@ if(isset($pager)){
         <a href="#" title="">
           <p>Veredas</p>
         </a>
-        <span class="titulo">
+        
+        
+        <span class="titulo-arquivo">
           arquivo
         </span>
         <a href="#" title="">

@@ -187,7 +187,7 @@ img{width:100%;}
 /* lista programas */
 .lista-programas a {color:#333333; font-size:18px;  padding: 0; }
 .lista-programas a p{margin:0 10px 8px 10px!important;}
-.lista-programas span.titulo{font-size:18px;text-transform:uppercase; margin:50px 0 8px 10px;}
+.lista-programas span.titulo-arquivo{font-size:18px;text-transform:uppercase; margin:50px 0 8px 10px;}
 .programa.subsection span.interna{font-size: 24px; text-transform:none;margin-bottom:8px;}
 .destaque-cultura.subsection{margin:0;}
 /* /lista programas */
