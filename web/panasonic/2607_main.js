@@ -13,32 +13,6 @@ var loading_anim = new container ({
   components: [ new gimage ({rotation : [0.0, 0.0, 0.0, 1.0],width : 80, height : 80,src : "imagens/loading_circle.png",})]
 });
 
-video_replay = false;
-
-show_controls_start = function(){
-  force_redraw ();
-  delete_timer(video_controls_container);
-  append_timer(this, 3000, function () {
-    video_controls_container.visible_p = false; //DESATIVA O BOX DOS CONTROLES
-    video_player.box_bar.visible_p = false;
-    video_player.bar.visible_p = false;
-    video_player.pos.visible_p = false;
-    video_player.elapsed.visible_p = false;
-    video_player.duration.visible_p = false;
-    delete_timer(this);
-  });
-}
-
-show_controls_end_action = function() {
-  delete_timer (obj);
-  if (obj.visible_p == true) {
-    obj.visible_p = false;
-  }
-  force_redraw ();
-}
-
-
-
 loading_anim.start_action = function (obj) {
   if (obj.visible_p) {
     return;
@@ -328,9 +302,7 @@ destaque_home.key_hook = function(up_down, key) {
     
     //Insere a URL do Vídeo e executa o player (this.connect + play)
     url_video_player = [this.url_video];
-    video_replay = false;
     video_player.playback(url_video_player);
-    show_controls_start();
     video_player.pos.visible_p = true;
     timer_manager.start();
     common_key.set_cursor(sobj, video_controls_container);
@@ -374,11 +346,7 @@ video_player.create = function() {
         break;
       case this.EV_DOWNLOADING:
         //message2.set_data("Carregando...");
-        if(video_replay == true){
-          video_replay = false;
-        }else{
-          loading_anim.start_action (loading_anim);
-        }
+        loading_anim.start_action (loading_anim);
         //message2.set_data("Downloading...");
         break;
       case this.EV_PLAYING:
@@ -400,10 +368,6 @@ video_player.create = function() {
         break;
       case this.EV_PLAY_FINISH:
         //OK//message2.set_data("Finished");
-        video_replay = true;
-        video_player.playback (url_video_player);
-        //Seta o cursor nos controles do vídeo
-        common_key.set_cursor(sobj, video_controls_container);
         if(video_player.video_box.width == 1920){
           full_screen();
         }
@@ -475,21 +439,12 @@ video_player.playback = function(url_video_player) {
     this.player.disconnect();
   }catch(e){
   };
-  
   loading_anim.end_action(loading_anim);
   this.player.connect(VideoDev, AudioDev);
   this.player.set_movie(url_video_player);
   //this.video_player.player.set_buffering_type(index,type);
-  if(video_replay == false){
-    this.player.play();
-    video_controls_container.play_or_pause.bg.src = "imagens/icone-pause.png";
-  }else{
-    this.player.play();
-    this.player.pause();
-    loading_anim.end_action(loading_anim);  
-    video_controls_container.play_or_pause.bg.src = "imagens/icone-play.png";
-    //video_replay == false;
-  }
+  this.player.play();
+  video_controls_container.play_or_pause.bg.src = "imagens/icone-pause.png";
 };
 video_player.pause_or_resume = function() {
   if (this.player.state != this.player.STAT_PAUSE){
@@ -510,7 +465,7 @@ video_player.skip = function(){
 
 video_player.back_skip = function(){
   var time_to_end = video_player.player.duration/1000 - video_player.player.elapsed/1000;
-  if(time_to_end > 10){
+  if(time_to_end > 5){
     this.player.skip(-5 * 1000);
     force_redraw();
    }
@@ -686,6 +641,7 @@ function carrega_json_programa (programa){
       video_cont.visible_p = false;
       video_player.video_box.visible_p = false;
       video_controls_container.visible_p = false;
+      video_player.finalize();
       common_key.set_cursor(sobj,destaque_home);
     },
   });
@@ -860,7 +816,6 @@ list.key_hook = function(up_down, key) {
     this.components[this.cindex].frame.color = COLOR_ORANGE;
     this.components[this.cindex].label.color = COLOR_BLACK;
     this.pos_item_ativado = this.cindex;
-    video_player.player.stop();
     this.cursor.action();
     break;
   }
@@ -1090,8 +1045,6 @@ btn_cont.key_hook = function(up_down, key) {
     
     //Insere a URL do Vídeo e executa o player (this.connect + play)
     url_video_player = [this.components[this.cindex].url_video];
-    show_controls_start();
-    //video_replay = false;
     video_player.playback(url_video_player);
     timer_manager.start();
     //Seta o cursor nos controles do vídeo
