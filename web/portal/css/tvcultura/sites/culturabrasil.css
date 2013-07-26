@@ -88,7 +88,8 @@ img{width:100%;}
 .destaque-cultura h2,
 .destaque-playlist h2,
 .destaque-cultura.agenda h3, 
-.menu-principal li a, 
+.menu-principal li a,
+.programa.subsection span, 
 .lista-assets a h2{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
@@ -119,7 +120,7 @@ img{width:100%;}
 .breadcrumb{background: none;padding: 8px 10px;color: #333333;}
 .breadcrumb li a{color: #999999;}
 .subsection{padding: 0 0 0 10px; height: 44px;} 
-.programa.subsection span{padding:5px; font-size:24px;}
+.programa.subsection span{padding:5px; font-size:24px; margin:0;}
 .programa.subsection i.borda-titulo.subsection{background-position: 0px -42px;height: 30px;width: 10px;}
 /* subsection */
 
