@@ -143,7 +143,7 @@
           <div class="programa">
             <span>FRASES</span><i class="borda-titulo"></i>
           </div>
-          <h2><span class="aspas">"&nbsp;</span>A gente tem que aprender a ser pequeno!<span class="aspas">&nbsp;"</span></h2>
+          <h2><i class="aspas">"&nbsp;</i>A gente tem que aprender a ser pequeno!<i class="aspas">&nbsp;"</i></h2>
           <p>Paulo Bellinati, violonista, sobre a música instrumental brasileira</p>
         </div>
         <div class="borda-pontilhada"></div>
