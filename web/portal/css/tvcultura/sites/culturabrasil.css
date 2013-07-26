@@ -85,21 +85,28 @@ img{width:100%;}
 
 .carousel-caption h4, 
 .carousel-caption h3, 
-.destaque-cultura span, 
 .destaque-cultura h2,
-.destaque-playlist h1, 
 .destaque-playlist h2,
 .destaque-cultura.agenda h3, 
-.menu-principal li a, .mais,
-.rodape span,
+.menu-principal li a, 
 .lista-assets a h2{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
+.mais,
+.rodape span,
+.destaque-playlist h1,
+.destaque-cultura span, 
 .lista-assets a h6{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
 
 .banner-culturabrasil{display: block;overflow: hidden;width: 300px;margin: 20px auto;}
 
 .open a{background:#f5f5f5!important; color:#666666!important;}
-.nav li.dropdown.open .caret{border-top-color: #ffffff;border-bottom-color: #ffffff;opacity: 1;filter: alpha(opacity=100);}
+.nav .dropdown-toggle {margin-bottom:0;}
+.nav .dropdown-toggle .caret,
+.nav li.dropdown.open .caret,
+.nav li.dropdown.open .caret:hover{border-top-color: #666666!important;border-bottom-color: #666666!important;opacity: 1;filter: alpha(opacity=100);}
+.nav .dropdown-menu{box-shadow: none;border: none;border-radius: 0px;margin: 0;padding: 0;min-width: 108px;}
+.nav .dropdown-menu li a{margin-top:0;}
+.nav .dropdown-menu li a:hover{color:#999999!important;}
 .rodape .container{padding: 10px 5px;background: #eeeeee;margin-bottom: 70px;min-height:295px;}
 .box-facebook{ float:left; margin-top:10px;}
 /* geral */
@@ -123,14 +130,14 @@ img{width:100%;}
 
 .destaque-cultura div.programa{position: relative;overflow: hidden;}
 .destaque-cultura{margin-bottom:20px}
-.destaque-cultura span, .rodape span{font-size:12px; background:#666666; color:#FFFFFF; padding:0px 5px;letter-spacing: 0.1em; display: block;float:left;}
+.destaque-cultura span, .rodape span{text-transform:uppercase; font-size:12px; background:#666666; color:#FFFFFF; padding:0px 5px;letter-spacing: 0.1em; display: block;float:left;}
 .destaque-cultura h2{font-size:23px;font-weight: normal;margin: 0;line-height: 36px;color: #333333;}
 .destaque-cultura p{font-size:14px;}
 .destaque-cultura i.borda-titulo, .rodape i.borda-titulo{ float:left;background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat; width:7px; height:19px; display:block;}
 .destaque-cultura a:hover{text-decoration:none;}
 
 .destaque-cultura.frase h2{color:#666666; text-align:center;}
-.destaque-playlist h1{font-size:12px; color:#666666; text-transform:uppercase; font-weight: bold;margin: 0;line-height: 12px;margin-bottom: 10px;}
+.destaque-playlist h1{font-size:12px; color:#666666; text-transform:uppercase; margin: 0;line-height: 12px;margin-bottom: 10px;letter-spacing:-0.1em;}
 .destaque-playlist h2{font-size:23px; color:#333333;font-weight: normal;line-height: 18px;margin: 10px 0px 5px 0px;}
 .destaque-playlist p{font-size: 14px; margin-bottom:15px;}
 .destaque-playlist a:hover{ text-decoration:none;}

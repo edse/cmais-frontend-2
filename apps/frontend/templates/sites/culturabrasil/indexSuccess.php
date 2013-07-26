@@ -132,7 +132,7 @@
           <!--item-->  
           
         </div>
-        <span class="linha-culturabrasil"></span> 
+        <div class="borda-pontilhada"></div> 
         <a href="#" title="mais playlists">
           <span class="mais">+ Playlists</span>
         </a>
@@ -146,7 +146,7 @@
           <h2>"A gente tem que aprender a ser pequeno!"</h2>
           <p>Paulo Bellinati, violonista, sobre a música instrumental brasileira</p>
         </div>
-        <span class="linha-culturabrasil"></span>
+        <div class="borda-pontilhada"></div>
         <a href="#" title="mais frases"> 
           <span class="mais">+ Frases</span>
         </a>   
@@ -244,7 +244,7 @@
           <!-- /item -->
           
         </div>
-        <span class="linha-culturabrasil"></span>
+        <div class="borda-pontilhada"></div>
         <a href="#" title="agenda completa"> 
           <span class="mais">Agenda Completa</span>
         </a> 
