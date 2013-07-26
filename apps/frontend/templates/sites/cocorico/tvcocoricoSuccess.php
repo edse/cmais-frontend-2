@@ -1,48 +1,6 @@
-<script type="text/javascript">
-var error = getParameterByName('error');
-var success = getParameterByName('success');
- //alert("error: "+error+"\n"+"success: "+success); 
-
-$(function(){
-  if (error || success)
-  {
-    $("#destaqueForm").hide();
-    $("#formWrapper").show();
-    $("#form-contato").hide();
-    
-    if (success == "1")
-    {
-      $("#formWrapper #msgAcerto").show();
-      $("#formWrapper #msgErro").hide();
-    }
-    if (error == "1")
-    {
-      $("#formWrapper #msgErro").show();
-      $("#formWrapper #msgAcerto").hide();
-    }  
-    if (error == "2")
-    {
-      $("#formWrapper #msgErro2").show();
-      $("#formWrapper #msgAcerto").hide();
-    }  
-    if (error == "3")
-    {
-      $("#formWrapper #msgErro3").show();
-      $("#formWrapper #msgAcerto").hide();
-    }  
-    if (error == "4")
-    {
-      $("#formWrapper #msgErro4").show();
-      $("#formWrapper #msgAcerto").hide();
-    }  
-  }
-});
-</script>
-
-<link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css?nocache=<?php echo md5(time()); ?>" rel="stylesheet">
-<script type="text/javascript" src="/portal/js/bootstrap/bootstrap-fileupload.js"></script>
-<!-- container-->
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/tvcocorico.css?nocache=<?php echo md5(time()); ?>" rel="stylesheet"> 
+<!-- container--> 
 <div class="container tudo">
   <!--topo coco-->
   <?php include_partial_from_folder('sites/cocorico', 'global/topo-coco', array('site'=>$site)) ?>
@@ -68,7 +26,7 @@ $(function(){
   <div class="row-fluid conteudo">
     <!-- col direita -->
     <div class="span4 col-dir">
-      <a class="logo" href="/cocorico/tvcocorico"><img class="span12" src="/portal/images/capaPrograma/cocorico/tvcoco.png" /></a>
+      <a class="logo" href="/cocorico/tvcocorico"><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/tvcoco.png" /></a>
       
       
       <!-- tv cocorico -->
@@ -107,10 +65,10 @@ $(function(){
               }
             ?>
             
-        <a class="convidado span12" href="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->Asset->retriveUrl() ?>" title="Próximo convidado: <?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>" />
+        <a class="convidado span12" href="http://tvcultura.cmais.com.br/cocorico/tvcocorico/convidados/<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->Asset->getSlug() ?>" title="Próximo convidado: <?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>" />
           <?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>
         </a>
-        <a href="<?php echo $site->retriveUrl() ?>/tvcocorico/convidados" title="Convidados">
+        <a href="<?php echo $site->retriveUrl(); ?>/convidados" title="Convidados">
           <span class="mais"></span>
         </a>
           <?php endif; ?>
@@ -133,97 +91,89 @@ $(function(){
             ->from('AssetAnswer aa')
             ->where('aa.asset_question_id = ?', (int)$assets[0]->AssetQuestion->id)
             ->execute();
-          ?>
-            
-        <?php
-        if($assets[0]->is_active):
-          include_partial_from_folder('sites/cocorico', 'global/tvenquete', array('site'=>$site,'assets'=>$assets, 'respostas'=>$respostas)); 
-        endif;  
-        ?>
-          
+          ?>  
+        <?php include_partial_from_folder('sites/cocorico', 'global/tvenquete', array('site'=>$site,'assets'=>$assets, 'respostas'=>$respostas)) ?>
         <!-- /enquete -->
-        <!-- fale conosco cr-->
       </div>
-      <!-- /tv cocorico --> 
+      <!-- /tv cocorico -->
+      <!-- fale conosco cr--> 
+      <!--
       <div class="cr">
         <a href="http://www2.tvcultura.com.br/faleconosco/" title="Fale Conosco" target="_blank">Fale conosco</a>
       </div>
+      -->
       <!-- /fale conosco cr-->
     </div>
     <!-- /col direita -->
-
     <!-- col esquerda --> 
     <div class="span8 col-esq">
       <!-- destaque-home-simples -->
-      <div class="destaque-home-tv span9" id="destaqueForm">
+      <div class="destaque-home-tv span9" id="destaqueForm" style="display:block;">
+        <?php /*
+        <h2>Concurso Cultural</h2>
+        <img class="promocao" src="/portal/images/capaPrograma/cocorico/10apps_destaque-galeria-concurso-resultado.jpg" />
+       
+        <div class="destaque span12" style="position:relative;">
+          <span></span>
+          <a href="<?php echo $site->retriveUrl()?>/concurso-cultural/meu-convidado-favorito" class="btn-destaque" title="Conheça os ganhadores!">Conheça os ganhadores!</a>
+          <!--<a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a>--> 
+          <span class="last"></span>
+        </div>
+        */?>
         
-            <?php if(isset($displays['destaque-principal'])): ?>
+       <?php if(isset($displays['destaque-principal'])): ?>
           <?php if(count($displays['destaque-principal']) > 0): ?>
-            <h2>Concurso Cultural</h2>
-            <img class="promocao" src="/portal/images/capaPrograma/cocorico/destaque-concurso-encerrado_tvcocorico_1ano.jpg" />
-           
-            <div class="destaque span12" style="position:relative;">
-              <span></span>
-              <a href="<?php echo $site->retriveUrl()?>/concurso-cultural/tvcocorico1ano" class="btn-destaque" title="Veja o vencedor!">Veja o vencedor!</a>
-              <!--a href="javascript:;" class="btn-destaque btn-form" title="Participe">Participar</a--> 
-              <span class="last"></span>
-            </div>
-          <?php endif; ?>
-        <?php endif; ?>
-        
-        
-        <?php /*if(isset($displays['destaque-seu-video'])): ?>
-          <?php if(count($displays['destaque-seu-video']) > 0): ?>
-            <h2><?php echo $displays['destaque-seu-video'][0]->getTitle(); ?></h2>
+            <h2><?php echo $displays['destaque-principal'][0]->getTitle(); ?></h2>
             
-            <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-seu-video'][0]->Asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+            <iframe width="460" height="280" src="http://www.youtube.com/embed/<?php echo $displays['destaque-principal'][0]->Asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
             
             <div class="destaque span12">
               <span></span>
-              <a href="<?php $site->retriveUrl()?>/cocorico2/episodios" class="btn-destaque" title="Ver mais episódios completos">Ver mais episódios completos</a>
+              <a href="<?php $site->retriveUrl()?>/cocorico/episodios" class="btn-destaque" title="Ver mais episódios completos">Ver mais episódios completos</a>
               <span class="last"></span>
             </div>
           <?php endif; ?>
-        <?php endif;*/ ?>
-        
+        <?php endif;
+      /*  
       </div>
       <!-- /destaque-home-simples -->
       <!-- form interatividade --> 
-      <div class="destaque-home-tv interatividade span9" id="formWrapper" style="display:none">
+      <div class="destaque-home-tv interatividade span9" id="formWrapper" style="display: none">
         <div class="topo">
           <div class="bac-yellow">
             <h2>Concurso Cultural</h2>
           </div>
         </div>
-        <form id="form-contato" method="post" action="/actions/cocorico/sendmail.php" enctype="multipart/form-data">
-          <?php
-          /*
-          <?php if($_REQUEST['test']): ?>
+        <form id="form-contato" method="post" action="">
+          <?php if(isset($_REQUEST['test'])): ?>
           <input type="hidden" name="test" value="1" />
           <?php endif; ?>
-           */
-          ?>
           <!--p>
             <?php echo $displays['destaque-principal'][0]->getDescription(); ?>
           </p-->
-          <p><span style="font-weight: bold; color:yellow;">É aniversário do TV Cocoricó!</span> O que vai ter nessa festa? Que presente você gostaria de dar para a turminha? Os recadinhos e desenhos mais criativos irão ganhar um <span style="font-weight: bold; color:yellow;">Kit festa do Cocórico</span></p>
+          <p>Diga para a gente qual convidado do dia você mais gostou e por que. As 10 melhores respostas ganham um aplicativo do Cocoricó para iPad!</p>
           <div class="row-fluid form-campos">
             
             
             <div class="row-fluid">
               <i class="ico-tv ico-pessoa"></i>
-              <input type="text" class="span11 pull-left" name="nome" data-default="Seu nome" value="Seu nome" id="nome"/>
+              <input type="text" class="span11 pull-left required" name="nome" id="nome" data-default="Seu nome" value="Seu nome" placeholder="Seu nome">
+            </div>
+            <div class="row-fluid">
+              <i class="ico-tv ico-responsavel"></i>
+              <input type="text" class="span11 pull-left" name="nome_resp" id="nome_resp" data-default="Nome do responsável" value="Nome do responsável" placeholder="Nome do responsável"/>
             </div>
             <div class="row-fluid">
               <i class="ico-tv ico-contato"></i>
-              <input type="text" class="span11 pull-left" name="email"  data-default="E-mail para contato" value="E-mail para contato" id="email"/>
+              <input type="text" class="span11 pull-left" name="email" id="email" data-default="E-mail para contato" value="E-mail para contato" placeholder="E-mail para contato" />
             </div>
             <div class="row-fluid cidade">
               <i class="ico-tv ico-cidade"></i>
               
               <div class="span9">
-                <input type="text" name="cidade" class="span12" data-default="Sua cidade" value="Sua cidade" id="cidade"/>
+                <input type="text" name="cidade" class="span12" id="cidade" data-default="Sua cidade" value="Sua cidade" placeholder="Sua cidade" >
               </div>
+              
               <div class="span2 estado">
                 <select id="estado" name="estado" class="span12 required">
                     <option value="" selected="selected">UF</option>
@@ -257,43 +207,19 @@ $(function(){
                 </select>
               </div>
             </div>
-            <!--div class="row-fluid">
-              <i class="ico-tv ico-link"></i>
-              <input type="text" class="span11 pull-right" name="link" placeholder="Link do seu vídeo no You Tube"/>
-            </div-->
-            <div class="row-fluid last">
-              <i class="ico-tv ico-bike"></i>
-              <input id="datafile" type="file" name="datafile" size="25">
+            
+            <div class="row-fluid">
+              <i class="ico-tv ico-coracao"></i>
+              <textarea name="resposta_concurso" id="resposta_concurso" class="required" data-default="Qual o convidado do dia que você mais gostou e por quê?">Qual o convidado do dia que você mais gostou e por quê?</textarea>
             </div>
-         
-           
             
             <div class="row-fluid">
               <label class="radio" for="concorda">
-                <input type="radio" name="concorda" id="concorda" value="aceite">Estou ciente e de acordo com os Termos e Condições abaixo:
+                <input type="radio" name="concorda" id="concorda" value="aceite">Estou ciente e de acordo com os <a href="#modalTermos" role="button" data-toggle="modal">Termos e Condições</a>.
               </label>             
             </div>
           </div>
           
-          <div class="regras">
-            <p> 1. Participação:</p> <br>
-            <p>Este é um programa de caráter exclusivamente cultural, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. A participação é aberta a crianças representadas por seus pais ou responsáveis legais.</p>
-            <p>Para participar, o interessado (com autorização de pais ou responsáveis) deve enviar um desenho comemorativo do aniversário de 1 (um) ano do programa TV Cocoricó. Não há restrições temáticas, desde que o desenho seja livre de preconceitos, palavras obscenas ou conteúdo inadequado ao público infantil.</p>
-            <p>1.1 Os desenhos deverão ser enviados acompanhados dos seguintes dados pessoais do responsável legal da criança: nome, email e endereço.</p><br>
-            <p>2. Critérios de Seleção:</p><br>
-             
-            <p>2.1 A seleção dos desenhos será feita pelas equipes de Produção Multimídia e do Cocoricó e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação à faixa etária.</p>
-            <p>2.2 Serão desconsiderados os desenhos com dados incorretos; os que fujam da adequação à faixa etária (público infantil); que tenham conteúdo inadequado.</p>
-            <p>2.3 Cada criança poderá participar enviando quantos desenhos desejar.</p><br>
-            <p>3. Considerações Gerais:</p><br>
-             
-            <p>3.1 Os participantes representados por seus pais ou responsáveis legais, declaram, desde já, a autorização de seu nome e cidade onde moram para publicação na programação da TV Cultura e transferem à Fundação Padre Anchieta Centro Paulista de Rádio e TV Educativas, sem qualquer ônus para esta e, em caráter definitivo, plena e totalmente, todos os direitos autorais sobre o referido trabalho, para qualquer tipo de utilização, publicação, reprodução por qualquer meio ou técnica, especialmente na divulgação do resultado.</p>
-            <p>3.2 A FPA não aceitará qualquer desenho que contenha exposição de pessoas em situações vexatórias, incitando o preconceito, violência e que contenham apelo sexual ou ao consumismo exacerbado.</p>
-            <p>3.3 Quaisquer dúvidas, divergências ou situações não previstas neste regulamento serão apreciadas e decididas pela Produção do Cocoricó referida no item 2.1 deste Regulamento.</p>
-            <p>3.4 A simples participação neste evento de incentivo à criatividade implica no total conhecimento e aceitação irrestrita deste regulamento.</p>
-            <p>3.5 Os desenhos serão publicados no site cocorico.com.br e os melhores poderão ser exibidos na programação da TV Cultura.</p>
-            
-          </div> 
           <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           
           <label generated="true" class="error" style="display: none;">*Preencha corretamente os campos em vermelho.</label>
@@ -302,37 +228,18 @@ $(function(){
         </form>
         
         <div id="msgAcerto" style="display:none">
-          <p>Seu desenho foi enviado com sucesso! Obrigado por participar! :)</p>
+          <p>Sua participação foi concluída com sucesso! Obrigado por participar! :)</p>
         </div>
         
         <div id="msgErro" style="display:none">
-          <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
+          <p> Puxa, puxa que puxa... sua participação não foi enviada! :(<br/> 
             <hr>
             Tente novamente mais tarde.
           </p>
         </div>
-
-        <div id="msgErro2" style="display:none">
-          <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
-            <hr>
-            Verifique se o arquivo que você tentou enviar está no formato JPG, GIF ou PNG.
-          </p>
-        </div>
- 
-        <div id="msgErro3" style="display:none">
-          <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
-            <hr>
-            Verifique se o arquivo que você tentou enviar é menor que 15MB.
-          </p>
-        </div>
-        
-        <div id="msgErro4" style="display:none">
-          <p> Puxa, puxa que puxa... seu desenho não foi enviado! :(<br/> 
-            <hr>
-            Este concurso foi encerrado dia 02/03/2013, à meia-noite!
-          </p>
-        </div>
+        */ ?>
       </div>
+      <!-- /form interatividade -->
       
       <?php if(isset($displays['bastidores'])):?> 
         <?php if(count($displays['bastidores']) > 0): ?>
@@ -435,17 +342,15 @@ $(function(){
            */
           ?>
           
-          <div class="span6 box-destaque ytb img">
-            <h3><a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><?php echo $displays['convidado-especial'][0]->Block->getTitle() ?></a></h3><!-- teste 2 /-->
+          <div class="span6 box-destaque tvcocorico">
+            <h3><a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>"><?php echo $displays['convidado-especial'][0]->Block->getTitle() ?></a></h3>
             <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
               <img src="<?php echo $displays['convidado-especial'][0]->retriveImageUrlByImageUsage('image-5-b') ?>" alt="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
             </a>
             <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" title="<?php echo $displays['convidado-especial'][0]->getTitle() ?>">
               <?php $tam=28; $str=$displays['convidado-especial'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
             </a>
-            <?php if(is_array($displays['convidado-especial'][0]->Asset->Sections)): ?>  
-            <a href="<?php echo $displays['convidado-especial'][0]->Asset->Sections[0]->retriveUrl(); ?>" class="ico-mais" title="<?php echo $displays['convidado-especial'][0]->Asset->Sections[0]->getTitle(); ?>"></a>
-            <?php endif; ?>
+            <a href="<?php echo $displays['convidado-especial'][0]->retriveUrl() ?>" class="ico-mais" title="<?php echo $displays['convidado-especial'][0]->getTitle(); ?>"></a>
           </div>
           
        <?php endif; ?>
@@ -453,7 +358,8 @@ $(function(){
     
     <!-- Receitinhas -->
      <?php if(isset($displays['receitinhas'])):?>
-       <?php if(count($displays['receitinhas']) > 0): ?>  
+       <?php if(count($displays['receitinhas']) > 0): ?>
+         <?php /* 
           <?php $related = $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
           <?php $se = $displays['receitinhas'][0]->Asset->Sections[0]->getTitle(); ?>
           <?php $se_link = $displays['receitinhas'][0]->Asset->Sections[0]->getSlug(); ?> 
@@ -465,12 +371,37 @@ $(function(){
         <?php //echo $displays['destaque-imprima'][0]->getDescription() ?>
         <?php $tam=28; $str=$displays['receitinhas'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
       </a>
-      <?php $se = $displays['convidado-especial'][0]->Asset->Sections[0]->getTitle(); ?>
       <a href="<?php echo $site->retriveUrl() ?>/<?php echo $se_link ?>" class="ico-mais"></a>
     </div>
     <!-- / Receitinhas -->
     </div>
-    <?php endif; ?>
+          */
+         ?>
+    <div class="span6 box-destaque ytb">
+      <h3>
+        <?php if(is_array($displays['receitinhas'][0]->Asset->Sections)): ?> 
+        <a href="<?php echo $displays['receitinhas'][0]->Asset->Sections[0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->Block->getTitle() ?>"><?php echo $displays['receitinhas'][0]->Block->getTitle() ?></a>
+        <?php else: ?>
+        <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->Block->getTitle() ?>"><?php echo $displays['receitinhas'][0]->Block->getTitle() ?></a>
+        <?php endif; ?>
+      </h3>
+      <?php $related = $displays['receitinhas'][0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php if($related): ?>
+      <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
+        <img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
+      </a>
+      <?php endif; ?>
+      <a href="<?php echo $displays['receitinhas'][0]->retriveUrl() ?>" title="<?php echo $displays['receitinhas'][0]->getTitle() ?>">
+        <?php $tam=28; $str=$displays['receitinhas'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?> 
+      </a>
+      <?php if ($displays['receitinhas'][0]->Asset->Sections[0]): ?>
+      <a href="<?php echo $displays['receitinhas'][0]->Asset->Sections[0]->retriveUrl(); ?>" class="ico-mais" title="<?php echo $displays['receitinhas'][0]->Asset->Sections[0]->getTitle(); ?>"></a>
+      <?php endif; ?>
+    </div>
+    <!-- / Receitinhas -->
+    </div>
+         
+      <?php endif; ?>
     <?php endif; ?> 
       
     </div>
@@ -482,69 +413,138 @@ $(function(){
   <div class="row-fluid  border-top"></div>
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--/rodapé-->
+  <!-- Modal -->
+  <div id="modalTermos" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Fechar</button>
+      <h3>Concurso cultural <span style="color: #FFF;">meu convidado preferido</span></h3>
+      <h4>termos e condições</h4>
+    </div>
+    <div class="modal-body">
+      <ul style="background: none;">
+        <li><p><strong>Participação:</strong></p></li>
+        <li><p>Este é um programa de caráter exclusivamente cultural, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. A participação é aberta a crianças representadas por seus pais ou responsáveis legais.</p></li>
+        <li><p>Para participar, o interessado (com autorização de pais ou responsáveis) deve enviar um texto dizendo qual o convidado escolhido e explicando a escolha. Não há restrições temáticas, desde que o texto seja livre de preconceitos, palavras obscenas ou conteúdo inadequado ao público infantil. O texto deve ser encaminhado pelo site: tvcocorico.com.br</p></li>
+        <li><p><strong>1.1</strong>Os textos deverão ser enviadas até o dia 05/04/2013, acompanhados dos dados pessoais do participante, utilizando o formulário da página. Caso o participante seja menor de 18 (dezoito) anos, deverá necessariamente ter autorização dos seus pais ou responsáveis, bem como preencher os dados dos seus representantes legais: nome, email, website (opcional), endereço. Cada pessoa pode participar com quantos textos desejar.</p></p></li>
+        <li><p><strong>1.2</strong> A Fundação Padre Anchieta não se responsabiliza por eventuais falhas no envio do material.</p><br></li>
+        
+        <li><p><strong>2. Critérios de Seleção:</strong></p></li>
+        <li><p><strong>2.1</strong> A seleção dos textos será feita pela equipe de Produção da TV Cultura e será baseada na observação dos seguintes critérios e pela ordem: criatividade, originalidade e adequação à faixa etária.</p></li>
+        <li><p><strong>2.2</strong> Serão desconsiderados os textos com dados incorretos; os que fujam da adequação à faixa etária (público infantil); que tenham conteúdo inadequado.</p></li>
+        <li><p><strong>2.3</strong> Cada criança poderá participar enviando quantos textos desejar.</p><br></li>
+          
+        <li><p><strong>3. Considerações Gerais:</strong></li>
+        <li><p><strong>3.1</strong> Os participantes representados por seus pais ou responsáveis legais, declaram, desde já, a autorização de seu nome e cidade onde moram para publicação na programação da TV Cultura e transferem à Fundação Padre Anchieta Centro Paulista de Rádio e TV Educativas, sem qualquer ônus para esta e, em caráter definitivo, plena e totalmente, todos os direitos autorais sobre o referido trabalho, para qualquer tipo de utilização, publicação, reprodução por qualquer meio ou técnica, especialmente na divulgação do resultado</p></li>
+        <li><p><strong>3.2</strong> A FPA não aceitará qualquer texto que contenha exposição de pessoas em situações vexatórias, incitando o preconceito, violência e que contenham apelo sexual ou ao consumismo exacerbado.</p></li>
+        <li><p><strong>3.3</strong> Quaisquer dúvidas, divergências ou situações não previstas neste regulamento serão apreciadas e decididas pela Produção da TV Cultura referida no item 2.1 deste Regulamento.</p></li>
+        <li><p><strong>3.4</strong> A simples participação neste evento de incentivo à criatividade implica no total conhecimento e aceitação irrestrita deste regulamento.</p></li>
+        <li><p><strong>3.5</strong> Os textos poderão ser publicados no site cocorico.com.br e os melhores poderão ser exibidos na programação da TV Cultura.</p></li>
+      </ul>
+    </div>
+  </div>
+  <!--/Modal -->
 </div>
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-<script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
 <script>
-$(document).ready(function(){
-      /* form tv cocorico */
-  $('.btn-form').click(function(){
-   $('.destaque-home-tv').hide();
-   $('.interatividade').fadeIn("fast"); 
-  })
-  $('#votar-input').click(function(){
-    $('label.error').css('display','none');
-  });
+
+$('.btn-form').click(function(){
+ $('.destaque-home-tv').hide();
+ $('.interatividade').fadeIn("fast"); 
+})
+$('#votar-input').click(function(){
+  $('label.error').css('display','none');
 });
 
 </script>
-
 <!--form-->
 <script type="text/javascript">
   $(document).ready(function(){
+    /*
+    var input = $('input, textarea');
+    input.focus(function() {
+      $(this).val('');
+    })
+    
+    input.blur(function() {
+      var el = $(this);
+      if(el.val() == '')
+         el.val(el.attr('data-default'));
+    });
+    */
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
-        form.submit();
+        //form.submit();
+        $.ajax({
+          type: "POST",
+          dataType: "text",
+          data: $("#form-contato").serialize(),
+          beforeSend: function(){
+            $('input#enviar').hide();
+            $('img#ajax-loader').show();
+          },
+          success: function(data){
+            //window.location.href="#";
+            if(data == "1"){
+              $('input#enviar').show()
+              $('img#ajax-loader').hide();
+              $('#form-contato').hide(); 
+              $('#msgAcerto').show();           
+            }
+            else {
+              $('img#ajax-loader').hide();
+              $('input#enviar').show()
+              $('#form-contato').hide();
+              $("#msgErro").show();
+            }
+          }
+        });         
       },
       rules:{
         nome:{
           required:function(){
             validate('#nome');
-            },
+            return true
+          },
           minlength: 2
         },
         email:{
           required:function(){
             validate('#email');
-            },
+            return true
+          },
           email: true
         },
         cidade:{
           required:function(){
             validate('#cidade');
-            },
+            return true
+          },
           minlength: 3
         },
-        datafile:{
-          required: true,
-          accept: "png|jpe?g|gif",
-          filesize: 15728640
+        nome_resp:{
+          required:function(){
+            validate('#nome_resp');
+            return true
+          },
+          minlength: 3
         },
         concorda:{
           required: true
+        },
+        resposta_concurso:{
+          required:function(){
+            validate('#resposta_concurso');
+            return true
+          }
         }
-        
       },
       messages:{
-        nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
-        email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
-        cidade: "Este campo &eacute; Obrigat&oacute;rio.",
-        datafile: {
-          accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
-          filesize: "O arquivo não pode ser maior que 15MB"
-        },
-        concorda: "Este campo &eacute; Obrigat&oacute;rio."
+        nome: "*Preencha corretamente os campos em vermelho.",
+        email: "*Preencha corretamente os campos em vermelho.",
+        cidade: "*Preencha corretamente os campos em vermelho.",
+        link: "*Preencha corretamente os campos em vermelho.",
+        concorda: "*Preencha corretamente os campos em vermelho.",
+        resposta_concurso:"*Preencha corretamente os campos em vermelho."
       },
       success: function(label){
         // set &nbsp; as text for IE
@@ -553,10 +553,10 @@ $(document).ready(function(){
         label.html("&nbsp;");
       }
     });
+    function validate(obj){
+      if($(obj).val()==$(obj).attr("data-default")){
+        $(obj).val('');
+      }
+    }
   });
-  
-  function validate(obj){
-    if($(obj).val()==$(obj).attr("data-default"))
-      $(obj).val('');
-  }
 </script>
