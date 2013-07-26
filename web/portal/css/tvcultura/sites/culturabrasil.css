@@ -115,7 +115,8 @@ img{width:100%;}
 .box-facebook{ float:left; margin-top:10px;}
 .fb_iframe_widget {overflow: hidden;width: 315px;}
 .aspas{color:#999999;}
-.nav-pills>.active>a{background-color:#F5f5f5;}
+.nav-pills>.active>a, 
+.nav-pills>.active>a:hover{background-color:#F5f5f5; color:#666666}
 /* geral */
 
 /* subsection */
