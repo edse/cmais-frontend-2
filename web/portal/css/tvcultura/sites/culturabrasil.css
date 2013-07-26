@@ -99,7 +99,7 @@ img{width:100%;}
 .lista-assets a h6{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
 
 .banner-culturabrasil,
-.destaque-cultura span.interna{display: block;overflow: hidden;width: 300px;margin: 20px auto;}
+.destaque-cultura span.interna{display: block;overflow: hidden;max-width: 300px;margin: 20px auto;}
 
 .open a{background:#f5f5f5!important; color:#666666!important;}
 .nav .dropdown-toggle {margin-bottom:0;}
