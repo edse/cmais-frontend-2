@@ -89,7 +89,7 @@ img{width:100%;}
 .destaque-playlist h2,
 .destaque-cultura.agenda h3, 
 .menu-principal li a,
-.programa.subsection span, 
+.programa.subsection span.interna, 
 .lista-assets a h2{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
