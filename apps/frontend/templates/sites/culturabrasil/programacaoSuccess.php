@@ -21,7 +21,7 @@
   <!-- container miolo -->
   <div class="container row-fluid">
     <!-- coluna esquerda -->
-    <div class="span9">
+    <div class="span8">
       
       <!-- titulo -->
       <h1>Grade de programação</h1>
@@ -72,7 +72,7 @@
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapse2" class="accordion-body collapse in">
+            <div id="collapse2" class="accordion-body collapse">
               <div class="accordion-inner">
                 Anim pariatur cliche...
               </div>
@@ -87,14 +87,14 @@
             
             <!--titulo-->
             <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3">
                 Collapsible Group Item #3<i class="setagrade baixo"></i>
               </a>
             </div>
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapseOne" class="accordion-body collapse in">
+            <div id="collapse3" class="accordion-body collapse">
               <div class="accordion-inner">
                 Anim pariatur cliche...
               </div>
@@ -109,14 +109,14 @@
             
             <!--titulo-->
             <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse4">
                 Collapsible Group Item #4<i class="setagrade baixo"></i>
               </a>
             </div>
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapseOne" class="accordion-body collapse in">
+            <div id="collapse4" class="accordion-body collapse">
               <div class="accordion-inner">
                 Anim pariatur cliche...
               </div>
