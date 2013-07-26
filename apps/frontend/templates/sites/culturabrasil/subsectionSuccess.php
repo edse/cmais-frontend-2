@@ -109,15 +109,7 @@ if(isset($pager)){
         ?>
 
         <?php if(isset($sobre)):?>
-        <div class="row-fluid">  
-          <div class="span12 thumbnail direita">
-            <div class="page-header"> 
-              <h4><?php echo $sobreSection->getTitle() ?></h4>
-            </div>
-            <p><?php echo $sobre->getDescription() ?></p>
-            <p><a href="<?php echo $sobre->retriveUrl() ?>" title="<?php echo $sobre->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-          </div>
-        </div>
+          <!-- Aqui poderia entrar a descrição do programa, por exemplo! Mas pode colocar em qualquer lugar desde o código acima venha antes... -->
         <?php endif; ?>
       
         <div class="row-fluid">      
