@@ -28,8 +28,22 @@ if(isset($pager)){
   <!--container-->
   <div class="container">
   
-    <?php include_partial_from_folder('sites/culturabrasil', 'global/breadcrumbs', array('site' => $site, 'section' => $section)) ?>
-   
+    <?php // include_partial_from_folder('sites/culturabrasil', 'global/breadcrumbs', array('site' => $site, 'section' => $section)) ?>
+    
+    <!--breadcrumb-->
+    <div class="row-fluid pontilhada">
+      <div class="borda-pontilhada"></div> 
+      <ul class="breadcrumb">
+        <?php if($section->Site->getSlug() == "culturabrasil"): ?>
+        <li><a href="<?php echo url_for('homepage')?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
+        <li><?php echo $section->getTitle(); ?> </li>
+        <?php else: ?>
+        <li><a href="/programas">Programas</a> <span class="divider">»</span></li>
+        <li><?php echo $site->getTitle(); ?> </li>
+        <?php endif; ?>         
+      </ul>
+    </div>
+    <!--/breadcrumb-->
 
     <div class="row-fluid subSection">
       <div class="destaque-cultura">
