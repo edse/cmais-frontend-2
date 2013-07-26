@@ -101,33 +101,22 @@ if(isset($pager)){
       <div class="lista-assets redes span4">
         
         <?php
-          $displays = array();
-          $block_sobre = Doctrine_Query::create()
-            ->select('b.*')
-            ->from('Block b, Section s')
-            ->where('b.section_id = s.id')
-            ->andWhere('s.slug = ?', 'home')
-            ->andWhere('b.slug = ?', 'sobre-o-programa')
-            ->andWhere('s.site_id = ?', $site->id)
-            ->execute();
-        
-          if(count($block_sobre) > 0){
-            $displays["sobre-o-programa"] = $block_sobre[0]->retriveDisplays();
-          }
+          $sobreSection = Doctrine::getTable('section')->findOneBySiteIdAndSlug($site->id, "sobre");
+          $sobreSectionAssets = $sobreSection->getAssets();
+          if(count($sobreSectionAssets) > 0)
+            $sobre = $sobreSectionAssets[0];
         ?>
 
-        <?php if(isset($displays['sobre-o-programa'])):?>
-          <?php if(count($displays['sobre-o-programa']) > 0): ?>
+        <?php if(isset($sobre)):?>
         <div class="row-fluid">  
           <div class="span12 thumbnail direita">
             <div class="page-header"> 
-              <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
+              <h4><?php echo $sobreSection->getTitle() ?></h4>
             </div>
-            <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
-            <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" title="<?php echo $displays['sobre-o-programa'][0]->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
+            <p><?php echo $sobre->getDescription() ?></p>
+            <p><a href="<?php echo $sobre->retriveUrl() ?>" title="<?php echo $dsobre->getTitle() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
           </div>
         </div>
-          <?php endif; ?>
         <?php endif; ?>
       
         <div class="row-fluid">      
