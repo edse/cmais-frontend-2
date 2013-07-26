@@ -109,6 +109,7 @@ img{width:100%;}
 .nav .dropdown-menu li a:hover{color:#999999!important;}
 .rodape .container{padding: 10px 5px;background: #eeeeee;margin-bottom: 70px;min-height:295px;}
 .box-facebook{ float:left; margin-top:10px;}
+.fb_iframe_widget {overflow: hidden;width: 315px;}
 /* geral */
 
 /* subsection */
@@ -141,7 +142,7 @@ img{width:100%;}
 .destaque-playlist h2{font-size:23px; color:#333333;font-weight: normal;line-height: 18px;margin: 10px 0px 5px 0px;}
 .destaque-playlist p{font-size: 14px; margin-bottom:15px;}
 .destaque-playlist a:hover{ text-decoration:none;}
-.destaque-cultura textarea{width:100%}
+.destaque-cultura textarea{width:100%, font-size:11px;}
 
 .destaque-cultura.agenda a:hover{ text-decoration:none;}
 .destaque-cultura.agenda h3{font-size: 18px;line-height: 15px;margin-top: 0;margin-bottom: 4px;color: #666; font-weight:normal;}
