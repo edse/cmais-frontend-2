@@ -17,17 +17,55 @@
 
 
 <!--section miolo--> 
-<section class="miolo">
+<section class="miolo grade">
   <!-- container miolo -->
   <div class="container row-fluid">
     <!-- coluna esquerda -->
     <div class="span9">
-      coluna esquerda
+      
+      <!-- titulo -->
+      <h1>Grade de programação</h1>
+      <div>
+        <i class="seta-grade esquerda"></i>
+        <p>23 de julho de 2013</p>
+        <i class="seta-grade direita"></i>
+      </div>
+      <!--titulo-->
+      
+      <div class="lista-grade">
+        
+        <div class="accordion" id="accordion2">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                Collapsible Group Item #1
+              </a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse in">
+              <div class="accordion-inner">
+                Anim pariatur cliche...
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                Collapsible Group Item #2
+              </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+              <div class="accordion-inner">
+                Anim pariatur cliche...
+              </div>
+            </div>
+          </div>
+        </div>
+      <div>  
     </div>  
     <!-- /coluna esquerda -->
     
     <!--coluna direita -->
-    <div class="span3">
+    <div class="span4">
       
       <!--banner -->
       <div class="banner-culturabrasil">
