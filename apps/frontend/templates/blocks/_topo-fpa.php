@@ -143,7 +143,7 @@
                 <h2>acervo</h2>
                 <ul>
                   <li>
-                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Linha do tempo</a>
+                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Linha do Tempo">Linha do tempo</a>
                   </li>  
                 </ul>
               </li>
