@@ -291,13 +291,13 @@
     return [ret, ''];
   }
   $(function(){
-    $('#accordion2 .accordion-body').click(function(){
-      $(this).on("show",function(){
+    $('#accordion2 .accordion-toggle').click(function(){
+      $(this).parent().next().on("show",function(){
         alert("oieee");
       });
     });
-    $('#accordion2 .accordion-body').click(function(){
-      $(this).on("hide",function(){
+    $('#accordion2 .accordion-toggle').click(function(){
+      $(this).parent().next().on("hide",function(){
         alert("oieee");
       });
     });
