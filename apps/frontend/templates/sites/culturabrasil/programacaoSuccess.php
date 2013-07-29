@@ -26,11 +26,11 @@
       <!-- titulo -->
       <h1>Grade de programação</h1>
       <div>
-        <a href="#" class="data-btn" title="dia anterior">
+        <a href="#" class="data-btn" title="anterior">
           <i class="seta-grade esquerda"></i>
         </a>
         <p class="data-grade" >23 de julho de 2013</p>
-        <a href="#" class="data-btn" title="dia anterior">
+        <a href="#" class="data-btn" title="próximo">
           <i class="seta-grade direita"></i>
         </a>
       </div>
@@ -52,11 +52,15 @@
                 <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
                 <i class="setagrade cima"></i>
               </a>
+              <!--linha pontilhada-->
+              <div class="linha-culturabrasil"></div>
+              <!--/linha pontilhada-->
             </div>
             <!--titulo-->
             
             <!--corpo-->
             <div id="collapseOne" class="accordion-body collapse in">
+              
               <div class="accordion-inner">
                 <p>Matemática 23<br><br>
                 Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
@@ -79,6 +83,9 @@
                 <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
                 <i class="setagrade cima"></i>
               </a>
+              <!--linha pontilhada-->
+              <div class="linha-culturabrasil"></div>
+              <!--/linha pontilhada-->
             </div>
             <!--titulo-->
             
@@ -106,6 +113,9 @@
                 <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
                 <i class="setagrade cima"></i>
               </a>
+              <!--linha pontilhada-->
+              <div class="linha-culturabrasil"></div>
+              <!--/linha pontilhada-->
             </div>
             <!--titulo-->
             
@@ -133,6 +143,9 @@
                 <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
                 <i class="setagrade cima"></i>
               </a>
+              <!--linha pontilhada-->
+              <div class="linha-culturabrasil"></div>
+              <!--/linha pontilhada-->
             </div>
             <!--titulo-->
             

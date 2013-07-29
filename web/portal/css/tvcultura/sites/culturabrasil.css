@@ -207,5 +207,7 @@ textarea{width:100%; font-size:11px;}
 .miolo.grade .data-btn .seta-grade.esquerda{background-position:0px -54px}
 .miolo.grade .data-btn .seta-grade.direita{background-position:0px -85px}
 .miolo.grade #accordion2{clear:both;}
-.miolo.grade .accordion-group{border:none}
+.miolo.grade #accordion2 .accordion-group{border:none}
+.miolo.grade #accordion2 .accordion-group .accordion-inner{border:none;}
+
 /* grade programação*/
