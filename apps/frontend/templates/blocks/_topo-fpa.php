@@ -116,32 +116,51 @@
     </ul>
     <!--/LISTA DE BOTOES-->
     
+    <!--menu responsivo-->
     <div class="navbar">
-            <div class="navbar-inner">
-              <div class="container">
-           
-                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </a>
-           
-                <!-- Be sure to leave the brand out there if you want it shown -->
-                <a class="brand" href="#">Project Central</a>
-           
-                <!-- Everything you want hidden at 940px or less, place within here -->
-                <div class="nav-collapse collapse">
-                  <!-- .nav, .navbar-search, .navbar-form, etc -->
-                  <ul>
-                    <li>teste</li>
-                    <li>teste</li> 
-                  </ul>
-                </div>
-           
-              </div>
-            </div>
+      <!--menu pra tablet e celular-->
+      <div class="navbar-inner">
+        <!--container-->
+        <div class="container">
+          <!--botao lateral-->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <!--/botao lateral-->
+          <!--a class="brand" href="#">Project Central</a-->
+          <!--botoes-->
+          <div class="nav-collapse collapse">
+            <!--lista botaoes-->
+            <ul>
+              
+              <li>
+                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Quem somos</a>
+              </li>
+              
+              <li>
+                <h2>acervo</h2>
+                <ul>
+                  <li>
+                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Linha do tempo</a>
+                  </li>  
+                </ul>
+              </li>
+              
+              <li>
+                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Central de relacionamento">central de relacionamento</a>
+              </li>
+            </ul>
+            <!--/lista botaoes-->
           </div>
+          <!--/botoes-->
+        </div>
+        <!--container-->
+      </div>
+      <!--/menu pra tablet e celular-->
+    </div>
+    <!--/menu responsivo-->
      
   </div>
   <!--/CONTAINER-->
