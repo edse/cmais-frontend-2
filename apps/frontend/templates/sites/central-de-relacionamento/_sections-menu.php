@@ -17,7 +17,33 @@
         <?php if(count($siteSections) > 0): ?>
         <!-- MENU SIC -->
         <div class="menu-central">
-        
+          
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="container">
+           
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </a>
+           
+                <!-- Be sure to leave the brand out there if you want it shown -->
+                <a class="brand" href="#">Project Central</a>
+           
+                <!-- Everything you want hidden at 940px or less, place within here -->
+                <div class="nav-collapse collapse">
+                  <!-- .nav, .navbar-search, .navbar-form, etc -->
+                  <ul>
+                    <li>teste</li>
+                    <li>teste</li>
+                  </ul>
+                </div>
+           
+              </div>
+            </div>
+          </div>
           
           <!-- MENU PRINCIPAL -->
           <ul class="nav nav-pills">
@@ -61,28 +87,7 @@
           </ul>
           <!-- /MENU PRINCIPAL -->
           
-          <div class="navbar">
-  <div class="navbar-inner">
-    <div class="container">
- 
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
- 
-      <!-- Be sure to leave the brand out there if you want it shown -->
-      <a class="brand" href="#">Project name</a>
- 
-      <!-- Everything you want hidden at 940px or less, place within here -->
-      <div class="nav-collapse collapse">
-        <!-- .nav, .navbar-search, .navbar-form, etc -->
-      </div>
- 
-    </div>
-  </div>
-</div>
+          
           
         </div>
         <!-- /MENU SIC -->
