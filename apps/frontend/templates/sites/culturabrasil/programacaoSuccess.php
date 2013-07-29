@@ -291,14 +291,15 @@
     return [ret, ''];
   }
   $(function(){
-    $('#accordion2 .accordion-body').click(function(){
-      $(this).on("show",function(){
-        alert("oieee");
+    $('#accordion2 .accordion-toggle').click(function(){
+      $(this).parent().next().on("show",function(){
+        $('.accordion-toggle').find('i').removeClass('cima').addClass('baixo');
+        $(this).prev().children('.accordion-toggle').find('i').removeClass('baixo').addClass('cima')
       });
     });
-    $('#accordion2 .accordion-body').click(function(){
-      $(this).on("hide",function(){
-        alert("oieee");
+    $('#accordion2 .accordion-toggle').click(function(){
+      $(this).parent().next().on("hide",function(){
+        $('.accordion-toggle').find('i').removeClass('cima').addClass('baixo');
       });
     });
   });
