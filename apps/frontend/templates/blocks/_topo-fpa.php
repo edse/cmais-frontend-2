@@ -179,7 +179,7 @@
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Cultura Brasil</a>
                   </li>
                   <li>
-                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Cultura FM</a>
+                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Cultura FM</a> 
                   </li>  
                 </ul>
               </li>
