@@ -71,7 +71,8 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .navbar.fpa-responsivo .container{min-height: 0px}
 .navbar.fpa-responsivo .navbar-inner{border: none;border-radius: 0px;z-index: 0;position: relative;margin-top: 48px;min-height: 0px!important;}
 .navbar.fpa-responsivo .navbar-inner .btn-navbar{margin-top: -41px;}
-.navbar.fpa-responsivo .nav-collapse ul li a{text-align: right;font-weight:bold; text-transform:uppercase; color: #8c8c8c;}
+.navbar.fpa-responsivo .nav-collapse ul li{text-align: right;}
+.navbar.fpa-responsivo .nav-collapse ul li .links{font-weight:bold; text-transform:uppercase; color: #8c8c8c;}
 /* /TOPO FPA */
 
 /* LINHA DO TEMPO */

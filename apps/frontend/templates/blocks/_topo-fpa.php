@@ -136,32 +136,32 @@
             <ul>
               
               <li>
-                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Quem somos</a>
+                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Quem somos">Quem somos</a>
               </li>
               
               <li>
-                <h2>acervo</h2>
+                <h2 class="links" >acervo</h2>
                 <ul>
                   <li>
-                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Linha do Tempo">Linha do tempo</a>
+                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Linha do Tempo">Linha do tempo</a>
                   </li>  
                 </ul>
               </li>
               
               <li>
-                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Central de relacionamento">central de relacionamento</a>
+                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Central de relacionamento">central de relacionamento</a>
               </li>
               
               <li>
-                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Licitações">licitações</a>
+                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Licitações">licitações</a>
               </li>
               
               <li>
-                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Trabalhe Conosco">Trabalhe conosco</a>
+                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Trabalhe Conosco">Trabalhe conosco</a>
               </li>
               
               <li>
-                <h2>emissoras</h2>
+                <h2 class="links">emissoras</h2>
                 <ul>
                   <li>
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="TV Cultura">TV Cultura</a>
@@ -185,7 +185,7 @@
               </li>
               
               <li>
-                <h2>portais</h2>
+                <h2 class="links">portais</h2>
                 <ul>
                   <li>
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="TV Cultura">CMAIS+</a>
