@@ -139,10 +139,10 @@
                 <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Quem somos">Quem somos</a>
               </li>
               
-              <li class="links">
+              <li class="links sub-links-tit">
                 acervo
                 <ul>
-                  <li class="sub-links">
+                  <li class="sub-links ">
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Linha do Tempo">Linha do tempo</a>
                   </li>  
                 </ul>
@@ -160,10 +160,10 @@
                 <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Trabalhe Conosco">Trabalhe conosco</a>
               </li>
               
-              <li class="links">
+              <li class="links sub-links-tit">
                 emissoras
                 <ul>
-                  <li class="sub-links">
+                  <li class="sub-links ">
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="TV Cultura">TV Cultura</a>
                   </li>
                   <li class="sub-links">
@@ -184,7 +184,7 @@
                 </ul>
               </li>
               
-              <li class="links">
+              <li class="links sub-links-tit">
                 portais
                 <ul>
                   <li class="sub-links">
