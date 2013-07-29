@@ -140,10 +140,10 @@
               </li>
               
               <li>
-                <h2 class="links" >acervo</h2>
                 <ul>
+                  <li class="links" >acervo</li>
                   <li>
-                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Linha do Tempo">Linha do tempo</a>
+                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Linha do Tempo">Linha do tempo</a>
                   </li>  
                 </ul>
               </li>
@@ -161,8 +161,8 @@
               </li>
               
               <li>
-                <h2 class="links">emissoras</h2>
                 <ul>
+                  <li class="links">emissoras</li>
                   <li>
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="TV Cultura">TV Cultura</a>
                   </li>
@@ -185,8 +185,8 @@
               </li>
               
               <li>
-                <h2 class="links">portais</h2>
                 <ul>
+                  <li class="links">portais</li>
                   <li>
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="TV Cultura">CMAIS+</a>
                   </li>
