@@ -139,8 +139,8 @@
                 <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Quem somos">Quem somos</a>
               </li>
               
-              <li>
-                <span class="links" >acervo</span>
+              <li class="links">
+                acervo
                 <ul>
                   <li class="sub-links">
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Linha do Tempo">Linha do tempo</a>
@@ -160,8 +160,8 @@
                 <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Trabalhe Conosco">Trabalhe conosco</a>
               </li>
               
-              <li>
-                <span class="links">emissoras</span>
+              <li class="links">
+                emissoras
                 <ul>
                   <li class="sub-links">
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="TV Cultura">TV Cultura</a>
@@ -184,8 +184,8 @@
                 </ul>
               </li>
               
-              <li>
-                <span class="links">portais</span>
+              <li class="links">
+                portais
                 <ul>
                   <li class="sub-links">
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="TV Cultura">CMAIS+</a>
