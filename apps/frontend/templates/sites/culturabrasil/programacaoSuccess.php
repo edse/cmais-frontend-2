@@ -297,7 +297,11 @@
         $(this).prev().children('.accordion-toggle').find('i').removeClass('baixo').addClass('cima')
       });
     });
-
+    $('#accordion2 .accordion-toggle').click(function(){
+      $(this).parent().next().on("hide",function(){
+        $('.accordion-toggle').find('i').removeClass('cima').addClass('baixo');
+      });
+    });
   });
 </script>
   
