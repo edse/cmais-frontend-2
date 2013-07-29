@@ -26,9 +26,13 @@
       <!-- titulo -->
       <h1>Grade de programação</h1>
       <div>
-        <i class="seta-grade esquerda"></i>
+        <a href="#" class="data-btn" title="anterior">
+          <i class="seta-grade esquerda"></i>
+        </a>
         <p class="data-grade" >23 de julho de 2013</p>
-        <i class="seta-grade direita"></i>
+        <a href="#" class="data-btn" title="próximo">
+          <i class="seta-grade direita"></i>
+        </a>
       </div>
       <!--titulo-->
       
@@ -46,13 +50,17 @@
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
                 <span class="hora">05:45</span>
                 <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
-                <i class="setagrade cima"></i>
+                <i class="seta-grade baixo"></i>
               </a>
+              <!--linha pontilhada-->
+              <div class="linha-culturabrasil"></div>
+              <!--/linha pontilhada-->
             </div>
             <!--titulo-->
             
             <!--corpo-->
             <div id="collapseOne" class="accordion-body collapse in">
+              
               <div class="accordion-inner">
                 <p>Matemática 23<br><br>
                 Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
@@ -73,8 +81,11 @@
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse2">
                 <span class="hora">05:45</span>
                 <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
-                <i class="setagrade cima"></i>
+                <i class="seta-grade cima"></i>
               </a>
+              <!--linha pontilhada-->
+              <div class="linha-culturabrasil"></div>
+              <!--/linha pontilhada-->
             </div>
             <!--titulo-->
             
@@ -100,8 +111,11 @@
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3">
                 <span class="hora">05:45</span>
                 <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
-                <i class="setagrade cima"></i>
+                <i class="seta-grade cima"></i>
               </a>
+              <!--linha pontilhada-->
+              <div class="linha-culturabrasil"></div>
+              <!--/linha pontilhada-->
             </div>
             <!--titulo-->
             
@@ -127,8 +141,11 @@
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse4">
                 <span class="hora">05:45</span>
                 <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
-                <i class="setagrade cima"></i>
+                <i class="seta-grade cima"></i>
               </a>
+              <!--linha pontilhada-->
+              <div class="linha-culturabrasil"></div>
+              <!--/linha pontilhada-->
             </div>
             <!--titulo-->
             
