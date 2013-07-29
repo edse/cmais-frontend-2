@@ -142,7 +142,7 @@
               <li>
                 <span class="links" >acervo</span>
                 <ul>
-                  <li>
+                  <li class="sub-links">
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Linha do Tempo">Linha do tempo</a>
                   </li>  
                 </ul>
@@ -163,22 +163,22 @@
               <li>
                 <span class="links">emissoras</span>
                 <ul>
-                  <li>
+                  <li class="sub-links">
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="TV Cultura">TV Cultura</a>
                   </li>
-                  <li>
+                  <li class="sub-links">
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Univesp TV</a>
                   </li>
-                  <li>
+                  <li class="sub-links">
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">multiCultura</a>
                   </li>
-                  <li>
+                  <li class="sub-links">
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">TV Rá Tim Bum!</a>
                   </li>
-                  <li>
+                  <li class="sub-links">
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Cultura Brasil</a>
                   </li>
-                  <li>
+                  <li class="sub-links">
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Cultura FM</a> 
                   </li>  
                 </ul>
@@ -187,10 +187,10 @@
               <li>
                 <span class="links">portais</span>
                 <ul>
-                  <li>
+                  <li class="sub-links">
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="TV Cultura">CMAIS+</a>
                   </li>
-                  <li>
+                  <li class="sub-links">
                     <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Cultura Brasil</a>
                   </li>
                 </ul>
