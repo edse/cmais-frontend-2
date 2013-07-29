@@ -64,8 +64,8 @@
               <div class="accordion-inner">
                 <p>Matemática 23<br><br>
                 Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
-                <a href="#" title="">acesseo site</a>
-                <a href="#" title="">ouça ao vivo pela web</a>
+                <a href="#" class="btn-body" title="">acesseo site</a>
+                <a href="#" class="btn-body" title="">ouça ao vivo pela web</a>
               </div>
             </div>
             <!--corpo-->

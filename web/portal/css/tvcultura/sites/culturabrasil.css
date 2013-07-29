@@ -209,10 +209,11 @@ textarea{width:100%; font-size:11px;}
 .miolo.grade .seta-grade.cima{background-position:0px -149px; float:right;}
 .miolo.grade .seta-grade.baixo{background-position:0px -117px; float:right;}
 .miolo.grade #accordion2 .accordion-toggle .hora, .miolo.grade #accordion2 .accordion-toggle .programa-grade{font-size:18px;font-weight:bold;}
-.miolo.grade #accordion2 .accordion-toggle .programa-grade{color:#666666}
-.miolo.grade #accordion2 .accordion-toggle .hora{color:#333333}
+.miolo.grade #accordion2 .accordion-toggle .programa-grade{color:#333333;}
+.miolo.grade #accordion2 .accordion-toggle .hora{color:#666666;}
 .miolo.grade #accordion2 .accordion-toggle .seta-grade{position:relative; bottom:4px;}
 .miolo.grade #accordion2{clear:both;}
+.miolo.grade #accordion2 .accordion-body .btn-body{padding:5px; background:red;}
 .miolo.grade #accordion2 .accordion-group{border:none}
 .miolo.grade #accordion2 .accordion-group .accordion-inner{border:none;}
 .miolo.grade #accordion2 .accordion-heading a{text-decoration:none; padding:10px 3px;}
