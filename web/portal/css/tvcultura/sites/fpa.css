@@ -72,9 +72,8 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .navbar.fpa-responsivo .navbar-inner{border: none;border-radius: 0px;z-index: 0;position: relative;margin-top: 48px;min-height: 0px!important;}
 .navbar.fpa-responsivo .navbar-inner .btn-navbar{margin-top: -41px;}
 .navbar.fpa-responsivo .nav-collapse ul li{text-align: left;boder-top: 1px solid #626262!important;}
-.navbar.fpa-responsivo .nav-collapse ul li .links{border-bottom:1px solid #5c5c5c;font-weight:bold; text-transform:uppercase; color: #8c8c8c;font-weight: bold;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px; margin:0;}
+.navbar.fpa-responsivo .nav-collapse ul li .links{background:#f7f7f7;border-bottom:1px solid #5c5c5c;font-weight:bold; text-transform:uppercase; color: #8c8c8c;font-weight: bold;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px; margin:0;}
 .navbar.fpa-responsivo .nav-collapse ul li a{width:100%; display: block;padding: 8px 8px 8px 8px!important;}
-.navbar.fpa-responsivo .nav-collapse ul li .sub-links:last-child{border-bottom:none;}
 .navbar.fpa-responsivo .nav-collapse ul li .sub-links{border-bottom:1px dotted #666666;padding: 0px 6px 0px 20px; margin:0;color: #5c5c5c!important;font-family: Arial, Helvetica, sans-serif;font-weight: bold;}
 .navbar.fpa-responsivo .nav-collapse ul li .sub-links-tit{padding-bottom:0px!important;}
 .navbar.fpa-responsivo .nav-collapse ul li:first-child{border-top:1px solid #5c5c5c;}
