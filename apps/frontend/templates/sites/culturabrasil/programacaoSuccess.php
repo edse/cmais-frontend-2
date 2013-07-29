@@ -27,7 +27,7 @@
       <h1>Grade de programação</h1>
       <div>
         <i class="seta-grade esquerda"></i>
-        <p>23 de julho de 2013</p>
+        <p class="data-grade" >23 de julho de 2013</p>
         <i class="seta-grade direita"></i>
       </div>
       <!--titulo-->
