@@ -117,7 +117,7 @@
     <!--/LISTA DE BOTOES-->
     
     <!--menu responsivo-->
-    <div class="navbar">
+    <div class="navbar fpa-responsivo">
       <!--menu pra tablet e celular-->
       <div class="navbar-inner">
         <!--container-->

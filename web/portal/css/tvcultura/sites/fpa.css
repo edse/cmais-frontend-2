@@ -67,6 +67,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 #topo-fpa.nav > li:hover > a {*padding: 18px 8px 18px 8px !important;padding: 18px 8px 18px 8px!important;text-decoration: none; background-color: #f7f7f7!important; color:#1863b7; border-top:3px solid #1863b7; border-bottom:1px solid #1863b7; }
 #topo-fpa.nav-tabs .dropdown-toggle .caret,
 #topo-fpa.nav .dropdown-toggle .caret {position:absolute;left:0;top:0;}
+.nav-bar.fpa-responsivo{display:none;}
 /* /TOPO FPA */
 
 /* LINHA DO TEMPO */
@@ -196,6 +197,7 @@ and (max-device-width : 1024px) {
 @media only screen 
 and (max-width : 980px) {
    #topo-fpa{display:none;}
+   .nav-bar.fpa-responsivo{display:block;}
    #email-central .form-horizontal .control-label {max-width: 81px!important;}
    #email-central .form-horizontal .controls {margin-left: 90px!important;}
    #email-central .botoes-form {margin-left: 89px!important;}
