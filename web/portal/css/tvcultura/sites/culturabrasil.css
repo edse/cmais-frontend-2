@@ -91,7 +91,8 @@ img{width:100%;}
 .menu-principal li a,
 .programa.subsection span.interna, 
 .lista-assets a h2,
-.lista-programas a {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+.lista-programas a,
+.miolo.grade h1 {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
@@ -196,6 +197,7 @@ textarea{width:100%; font-size:11px;}
 .destaque-cultura.subsection{margin:0;}
 /* /lista programas */
 
-/* grade */
+/* grade programação*/
 .banner-culturabrasil{float:left;}
-/* grade*/
+.miolo.grade h1{font-size:20px; color:#333333;}
+/* grade programação*/
