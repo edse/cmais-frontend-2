@@ -92,7 +92,8 @@ img{width:100%;}
 .programa.subsection span.interna, 
 .lista-assets a h2,
 .lista-programas a,
-.miolo.grade h1 {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+.miolo.grade h1,
+.miolo.grade .data-grade {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
@@ -200,8 +201,8 @@ textarea{width:100%; font-size:11px;}
 /* grade programação*/
 .banner-culturabrasil{float:left;}
 .miolo.grade h1{font-size:22px; color:#333333;letter-spacing: -0.1em;}
-.miolo.grade .seta-grade{width:25px; height:26px;display:block; background:url(/portal/images/capaPrograma/culturabrasil/setas-grade.png) no-repeat;}
-.miolo.grade .data-grade{}
+.miolo.grade .seta-grade{width:25px; height:26px;display:block; background:url(/portal/images/capaPrograma/culturabrasil/setas-grade.png) no-repeat;float:left;}
+.miolo.grade .data-grade{float:left; padding:5px; text-align:center;}
 .miolo.grade .seta-grade.esquerda{background-position:0px 0px}
 .seta-grade.direita{background-position:0px 0px}
 /* grade programação*/
