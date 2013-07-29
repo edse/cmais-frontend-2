@@ -71,7 +71,6 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .navbar.fpa-responsivo .container{min-height: 0px}
 .navbar.fpa-responsivo .navbar-inner{border: none;border-radius: 0px;z-index: 0;position: relative;margin-top: 56px;min-height: 0px!important;padding: 0px 0;box-shadow: 10px 10px 5px #999999;}
 .navbar.fpa-responsivo .navbar-inner .btn-navbar{margin-top: -50px;}
-.navbar.fpa-responsivo .navbar-inner .nav-collapse{padding:15px 0;}
 .navbar.fpa-responsivo .nav-collapse ul li{text-align: left;boder-top: 1px solid #626262!important;}
 .navbar.fpa-responsivo .nav-collapse ul li .links{background:#f7f7f7;border-bottom:1px solid #5c5c5c;font-weight:bold; text-transform:uppercase; color: #8c8c8c;font-weight: bold;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px; margin:0;}
 .navbar.fpa-responsivo .nav-collapse ul li a{width:100%; display: block;padding: 8px 8px 8px 8px!important;}

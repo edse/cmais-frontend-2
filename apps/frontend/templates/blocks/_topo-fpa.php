@@ -135,7 +135,7 @@
             <!--lista botaoes-->
             <ul>
               
-              <li>
+              <li style="margin-top:15px">
                 <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Quem somos">Quem somos</a>
               </li>
               
@@ -184,7 +184,7 @@
                 </ul>
               </li>
               
-              <li>
+              <li style="margin-bottom: 15px;">
                 <a href="#" class="links">portais</a>
                 <ul>
                   <li class="sub-links">
