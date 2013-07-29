@@ -143,43 +143,43 @@
                 <a href="#" class="links menu-sub-links">acervo</a>
                 <ul>
                   <li class="sub-links ">
-                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Linha do Tempo">Linha do tempo</a>
+                    <a href="http://cmais.com.br/fpa/decada-60" title="Linha do Tempo">Linha do tempo</a>
                   </li>  
                 </ul>
               </li>
               
               <li>
-                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Central de relacionamento">central de relacionamento</a>
+                <a href="http://cmais.com.br/central-de-relacionamento" class="links" title="Central de relacionamento">central de relacionamento</a>
               </li>
               
               <li>
-                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Licitações">licitações</a>
+                <a href="http://www2.tvcultura.com.br/fpa/institucional/licitacoes.aspx" class="links" title="Licitações">licitações</a>
               </li>
               
               <li>
-                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Trabalhe Conosco">Trabalhe conosco</a>
+                <a href="http://www2.tvcultura.com.br/selecao/" class="links" title="Trabalhe Conosco">Trabalhe conosco</a>
               </li>
               
               <li>
                 <a href="#" class="links menu-sub-links">emissoras</a>
                 <ul>
                   <li class="sub-links ">
-                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="TV Cultura">TV Cultura</a>
+                    <a href="http://tvcultura.cmais.com.br/" title="TV Cultura">TV Cultura</a>
                   </li>
                   <li class="sub-links">
-                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Univesp TV</a>
+                    <a href="http://univesptv.cmais.com.br/" title="Quem somos">Univesp TV</a>
                   </li>
                   <li class="sub-links">
-                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">multiCultura</a>
+                    <a href="http://multicultura.cmais.com.br/" title="Quem somos">multiCultura</a>
                   </li>
                   <li class="sub-links">
-                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">TV Rá Tim Bum!</a>
+                    <a href="http://tvratimbum.cmais.com.br/" title="Quem somos">TV Rá Tim Bum!</a>
                   </li>
                   <li class="sub-links">
-                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Cultura Brasil</a>
+                    <a href="http://www.culturabrasil.com.br/" title="Quem somos">Cultura Brasil</a>
                   </li>
                   <li class="sub-links">
-                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Cultura FM</a> 
+                    <a href="http://culturafm.cmais.com.br/" title="Quem somos">Cultura FM</a> 
                   </li>  
                 </ul>
               </li>
@@ -188,10 +188,10 @@
                 <a href="#" class="links menu-sub-links">portais</a>
                 <ul>
                   <li class="sub-links">
-                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="TV Cultura">CMAIS+</a>
+                    <a href="http://cmais.com.br/" title="TV Cultura">CMAIS+</a>
                   </li>
                   <li class="sub-links">
-                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Cultura Brasil</a>
+                    <a href="http://www.culturabrasil.com.br/" title="Quem somos">Cultura Brasil</a>
                   </li>
                 </ul>
               </li>
