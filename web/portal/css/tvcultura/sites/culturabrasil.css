@@ -218,6 +218,6 @@ textarea{width:100%; font-size:11px;}
 .miolo.grade #accordion2 .accordion-group{border:none}
 .miolo.grade #accordion2 .accordion-group .accordion-inner{border:none;}
 .miolo.grade #accordion2 .accordion-heading a{text-decoration:none; padding:10px 3px;}
-.miolo.grade #accordion2 .accordion-heading a i.borda-grade{width: 10px;height: 30px;display: block;position: absolute;top: 0;right: 0;}
+.miolo.grade #accordion2 i.borda-grade{width: 10px;height: 30px;display: block;position: absolute;top: 0;right: 0;}
 
 /* grade programação*/
