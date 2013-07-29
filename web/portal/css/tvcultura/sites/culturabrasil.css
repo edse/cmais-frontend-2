@@ -200,11 +200,12 @@ textarea{width:100%; font-size:11px;}
 
 /* grade programação*/
 .banner-culturabrasil{float:left;}
-.miolo.grade h1{font-size:22px; color:#333333;letter-spacing: -0.1em;}
-.miolo.grade .seta-grade{width:25px; height:26px;display:block; background:url(/portal/images/capaPrograma/culturabrasil/setas-grade.png) no-repeat;float:left;}
-.miolo.grade .data-grade{float:left; padding:5px; text-align:center;}
-.miolo.grade .seta-grade.esquerda{background-position:0px -54px}
-.miolo.grade .seta-grade.direita{background-position:0px -54px}
+.miolo.grade h1{font-size:22px; color:#333333;}
+.miolo.grade .seta-grade{width:25px; height:26px;display:block; background:url(/portal/images/capaPrograma/culturabrasil/setas-grade.png) no-repeat;}
+.miolo.grade .data-grade{float:left; padding:3px 20px; text-align:center;font-size:18px;}
+.miolo.grade .data-btn{float:left; overflow: hidden;}
+.miolo.grade .data-btn .seta-grade.esquerda{background-position:0px -54px}
+.miolo.grade .data-btn .seta-grade.direita{background-position:0px -85px}
 .miolo.grade #accordion2{clear:both;}
 .miolo.grade .accordion-group{border:none}
 /* grade programação*/

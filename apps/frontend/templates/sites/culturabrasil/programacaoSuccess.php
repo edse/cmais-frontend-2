@@ -26,9 +26,13 @@
       <!-- titulo -->
       <h1>Grade de programação</h1>
       <div>
-        <i class="seta-grade esquerda"></i>
+        <a href="#" class="data-btn" title="dia anterior">
+          <i class="seta-grade esquerda"></i>
+        </a>
         <p class="data-grade" >23 de julho de 2013</p>
-        <i class="seta-grade direita"></i>
+        <a href="#" class="data-btn" title="dia anterior">
+          <i class="seta-grade direita"></i>
+        </a>
       </div>
       <!--titulo-->
       
