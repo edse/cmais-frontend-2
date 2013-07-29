@@ -208,6 +208,7 @@ textarea{width:100%; font-size:11px;}
 .miolo.grade .seta-grade.direita{background-position:0px -85px}
 .miolo.grade .seta-grade.cima{background-position:0px -149px; float:right;}
 .miolo.grade .seta-grade.baixo{background-position:0px -117px; float:right;}
+.miolo.grade #accordion2 .accordion-toggle .seta-grade{position:relative; bottom:4px;}
 .miolo.grade #accordion2{clear:both;}
 .miolo.grade #accordion2 .accordion-group{border:none}
 .miolo.grade #accordion2 .accordion-group .accordion-inner{border:none;}
