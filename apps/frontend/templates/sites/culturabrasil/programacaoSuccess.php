@@ -293,14 +293,11 @@
   $(function(){
     $('#accordion2 .accordion-toggle').click(function(){
       $(this).parent().next().on("show",function(){
-        alert("oieee");
+        $('accordion-toggle').removeClass('cima').addClass('baixo');
+        $(this).prev().children('accordion-toggle').removeClass('baixo').addClass('cima')
       });
     });
-    $('#accordion2 .accordion-toggle').click(function(){
-      $(this).parent().next().on("hide",function(){
-        alert("oieee");
-      });
-    });
+
   });
 </script>
   
