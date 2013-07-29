@@ -1049,16 +1049,23 @@ class _assetActions extends sfActions
         }
         elseif($this->site->getType() == "ProgramaRadio"){
           if(in_array($this->asset->Site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos"))){
-            if($debug) print "<br>2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug();
+            if($debug) print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug();
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug());
           }
           else {
             if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Success.php')){
-              if($debug) print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
+              if($debug) print "<br>2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
-            }else{
-              if($debug) print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug();
-              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug());
+            }
+            else {
+              if($this->site->Program->Channel->getSlug() == "culturabrasil"){
+                if($debug) print "<br>2-1-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/culturabrasil/'.$this->asset->AssetType->getSlug();
+                $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/culturabrasil/'.$this->asset->AssetType->getSlug());
+              }
+              else {
+                if($debug) print "<br>2-1-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug();
+                $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug());
+              }
             }
           }
         }
