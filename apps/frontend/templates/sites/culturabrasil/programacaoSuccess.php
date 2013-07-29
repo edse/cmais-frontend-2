@@ -293,8 +293,8 @@
   $(function(){
     $('#accordion2 .accordion-toggle').click(function(){
       $(this).parent().next().on("show",function(){
-        $('accordion-toggle').removeClass('cima').addClass('baixo');
-        $(this).prev().children('accordion-toggle').removeClass('baixo').addClass('cima')
+        $('.accordion-toggle').removeClass('cima').addClass('baixo');
+        $(this).prev().children('.accordion-toggle').removeClass('baixo').addClass('cima')
       });
     });
 
