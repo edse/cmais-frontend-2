@@ -199,5 +199,6 @@ textarea{width:100%; font-size:11px;}
 
 /* grade programação*/
 .banner-culturabrasil{float:left;}
-.miolo.grade h1{font-size:20px; color:#333333;}
+.miolo.grade h1{font-size:22px; color:#333333;letter-spacing: -0.1em;}
+.seta-grade{width:25px; height:26px; background:url(/portal/images/capaPrograma/culturabrasil/setas-grade.png) no-repeat;}
 /* grade programação*/
