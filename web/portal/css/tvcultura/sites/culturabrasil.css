@@ -93,7 +93,8 @@ img{width:100%;}
 .lista-assets a h2,
 .lista-programas a,
 .miolo.grade h1,
-.miolo.grade .data-grade {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+.miolo.grade .data-grade,
+.miolo.grade #accordion2 .accordion-body .btn-body {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
@@ -144,7 +145,7 @@ img{width:100%;}
 .destaque-cultura span, .rodape span{text-transform:uppercase; font-size:12px; background:#666666; color:#FFFFFF; padding:0px 5px;letter-spacing: 0.1em; display: block;float:left;}
 .destaque-cultura h2{font-size:23px;font-weight: normal;margin: 0;line-height: 36px;color: #333333;}
 .destaque-cultura p{font-size:14px;}
-.destaque-cultura i.borda-titulo, .rodape i.borda-titulo{ float:left;background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat; width:7px; height:19px; display:block;}
+#accordion2 i.borda-titulo, .destaque-cultura i.borda-titulo, .rodape i.borda-titulo{ float:left;background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat  0px 1px; width:7px; height:19px; display:block;}
 .destaque-cultura a:hover{text-decoration:none;}
 
 .destaque-cultura.frase h2{color:#666666; text-align:center;}
@@ -208,9 +209,16 @@ textarea{width:100%; font-size:11px;}
 .miolo.grade .seta-grade.direita{background-position:0px -85px}
 .miolo.grade .seta-grade.cima{background-position:0px -149px; float:right;}
 .miolo.grade .seta-grade.baixo{background-position:0px -117px; float:right;}
+.miolo.grade #accordion2 .accordion-toggle .hora, .miolo.grade #accordion2 .accordion-toggle .programa-grade{font-size:18px;font-weight:bold;}
+.miolo.grade #accordion2 .accordion-toggle .programa-grade{color:#333333;}
+.miolo.grade #accordion2 .accordion-toggle .hora{color:#666666;}
+.miolo.grade #accordion2 .accordion-toggle .seta-grade{position:relative; bottom:4px;}
 .miolo.grade #accordion2{clear:both;}
+.miolo.grade #accordion2 .accordion-body .btn-body{position:relative; padding: 0px 10px;background: #cccccc;float: left;clear: both;margin-bottom: 10px;text-transform: uppercase;font-size: 12px;color: #666666;}
+.miolo.grade #accordion2 .accordion-body .btn-body:hover{text-decoration:none;}
 .miolo.grade #accordion2 .accordion-group{border:none}
 .miolo.grade #accordion2 .accordion-group .accordion-inner{border:none;}
 .miolo.grade #accordion2 .accordion-heading a{text-decoration:none; padding:10px 3px;}
+.miolo.grade #accordion2 i.borda-grade{width: 10px;height: 20px;display: block;position: absolute;top: 0;right: -10px;background-position: 0px -72px;}
 
 /* grade programação*/
