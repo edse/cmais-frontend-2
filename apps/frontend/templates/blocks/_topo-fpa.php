@@ -151,6 +151,50 @@
               <li>
                 <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Central de relacionamento">central de relacionamento</a>
               </li>
+              
+              <li>
+                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Licitações">licitações</a>
+              </li>
+              
+              <li>
+                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Trabalhe Conosco">Trabalhe conosco</a>
+              </li>
+              
+              <li>
+                <h2>emissoras</h2>
+                <ul>
+                  <li>
+                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="TV Cultura">TV Cultura</a>
+                  </li>
+                  <li>
+                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Univesp TV</a>
+                  </li>
+                  <li>
+                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">multiCultura</a>
+                  </li>
+                  <li>
+                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">TV Rá Tim Bum!</a>
+                  </li>
+                  <li>
+                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Cultura Brasil</a>
+                  </li>
+                  <li>
+                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Cultura FM</a>
+                  </li>  
+                </ul>
+              </li>
+              
+              <li>
+                <h2>portais</h2>
+                <ul>
+                  <li>
+                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="TV Cultura">CMAIS+</a>
+                  </li>
+                  <li>
+                    <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" title="Quem somos">Cultura Brasil</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
             <!--/lista botaoes-->
           </div>
