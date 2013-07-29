@@ -50,7 +50,7 @@
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
                 <span class="hora">05:45</span>
                 <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
-                <i class="setagrade cima"></i>
+                <i class="seta-grade baixo"></i>
               </a>
               <!--linha pontilhada-->
               <div class="linha-culturabrasil"></div>
@@ -81,7 +81,7 @@
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse2">
                 <span class="hora">05:45</span>
                 <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
-                <i class="setagrade cima"></i>
+                <i class="seta-grade cima"></i>
               </a>
               <!--linha pontilhada-->
               <div class="linha-culturabrasil"></div>
@@ -111,7 +111,7 @@
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3">
                 <span class="hora">05:45</span>
                 <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
-                <i class="setagrade cima"></i>
+                <i class="seta-grade cima"></i>
               </a>
               <!--linha pontilhada-->
               <div class="linha-culturabrasil"></div>
@@ -141,7 +141,7 @@
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse4">
                 <span class="hora">05:45</span>
                 <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
-                <i class="setagrade cima"></i>
+                <i class="seta-grade cima"></i>
               </a>
               <!--linha pontilhada-->
               <div class="linha-culturabrasil"></div>
