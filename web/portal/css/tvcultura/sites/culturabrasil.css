@@ -204,10 +204,10 @@ textarea{width:100%; font-size:11px;}
 .miolo.grade .seta-grade{width:25px; height:26px;display:block; background:url(/portal/images/capaPrograma/culturabrasil/setas-grade.png) no-repeat;}
 .miolo.grade .data-grade{float:left; padding:3px 20px; text-align:center;font-size:18px;}
 .miolo.grade .data-btn{float:left; overflow: hidden;}
-.miolo.grade .data-btn .seta-grade.esquerda{background-position:0px -54px}
-.miolo.grade .data-btn .seta-grade.direita{background-position:0px -85px}
-.miolo.grade .data-btn .seta-grade.cima{background-position:0px -85px; float:right;}
-.miolo.grade .data-btn .seta-grade.baixo{background-position:0px -85px; float:right;}
+.miolo.grade .seta-grade.esquerda{background-position:0px -54px}
+.miolo.grade .seta-grade.direita{background-position:0px -85px}
+.miolo.grade .seta-grade.cima{background-position:0px -85px; float:right;}
+.miolo.grade .seta-grade.baixo{background-position:0px -85px; float:right;}
 .miolo.grade #accordion2{clear:both;}
 .miolo.grade #accordion2 .accordion-group{border:none}
 .miolo.grade #accordion2 .accordion-group .accordion-inner{border:none;}
