@@ -290,14 +290,16 @@
     }
     return [ret, ''];
   }
-  $('#accordion2 .accordion-body').click(function(){
-    $(this).on("show",function(){
-      alert("oieee");
+  $(function(){
+    $('#accordion2 .accordion-body').click(function(){
+      $(this).on("show",function(){
+        alert("oieee");
+      });
     });
-  });
-  $('#accordion2 .accordion-body').click(function(){
-    $(this).on("hide",function(){
-      alert("oieee");
+    $('#accordion2 .accordion-body').click(function(){
+      $(this).on("hide",function(){
+        alert("oieee");
+      });
     });
   });
 </script>
