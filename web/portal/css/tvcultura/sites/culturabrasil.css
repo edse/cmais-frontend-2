@@ -250,7 +250,7 @@ textarea{width:100%; font-size:11px;}
  #datepicker .ui-widget-header .ui-state-hover, 
  #datepicker .ui-state-focus, 
  #datepicker .ui-widget-content .ui-state-focus, 
- #datepicker .ui-widget-header .ui-state-focus { background:#ff6633; color:#fff; text-decoration:none; }
+ #datepicker .ui-widget-header .ui-state-focus { background:#a8a8a8; color:#fff; text-decoration:none; }
  #datepicker .ui-widget-content .ui-datepicker-next:hover,
  #datepicker .ui-widget-content .ui-datepicker-prev:hover { background:none;  border:none; }
  #datepicker tbody span { background:transparent; color:#333;}
