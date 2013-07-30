@@ -11,21 +11,10 @@
 <script src="/portal/js/bootstrap/bootstrap.js"></script>
 <?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site))?>
 
-<style type="text/css">
-  .span8 .nav li { float:left; background:#ccc; padding:0.2% 0.644%; }
-  .span8 .nav a { color:#666; font-family: 'asapregular',Arial,Helvetica,sans-serif; font-weight:bold; text-transform:uppercase; font-size:12px; }
-  .span8 .nav li.active,
-  .span8 .nav li:hover,
-  .span8 .nav li:hover a { background:#666; }
-  .span8 .nav li:hover a,
-  .span8 .nav li.active a { color:#fff; }
-  .row-fluid .span8 h1 { margin:0; color:#333; font-family: 'asapregular',Arial,Helvetica,sans-serif; font-weight:normal; }
-  
-</style>
 
 
 <!-- section miolo -->
-<section class="miolo">
+<section class="miolo programa">
   <!--container-->
   <div class="container">
     <!--breadcrumb-->

@@ -100,13 +100,15 @@ img{width:100%;}
 .content-asset .content h1,
 .content-asset .content h2,
 .lista-assets a h6,
-.lista-programas span.titulo-arquivo{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+.lista-programas span.titulo-arquivo,
+.miolo.programa .row-fluid .span8 h1 {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
 .destaque-playlist h1,
 .destaque-cultura span,
-.miolo.grade #accordion2 .accordion-body .btn-body{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
+.miolo.grade #accordion2 .accordion-body .btn-body,
+.miolo.programa .span8 .nav a{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
 
 .banner-culturabrasil,
 .destaque-cultura span.interna{display: block;overflow: hidden;max-width: 300px;margin: 20px auto;}
@@ -297,6 +299,17 @@ textarea{width:100%; font-size:11px;}
 .content-asset .fb_iframe_widget {overflow: hidden;width: 610px;}
 .banner-radio{width: 300px;margin: 20px auto;}
 /* /content */
+
+/* programa */
+.miolo.programa .span8 .nav li { float:left; background:#ccc; padding:0.2% 0.644%; }
+.miolo.programa .span8 .nav a {  text-transform:uppercase; font-size:12px; }
+.miolo.programa .span8 .nav li.active,
+.miolo.programa .span8 .nav li:hover,
+.miolo.programa .span8 .nav li:hover a { background:#666; }
+.miolo.programa .span8 .nav li:hover a,
+.miolo.programa .span8 .nav li.active a { color:#fff; }
+.miolo.programa .row-fluid .span8 h1 { margin:0; color:#333; }
+/* programa */
 
 /* player */
 a.jp-play,a.jp-play:hover, a.jp-pause, a.jp-pause:hover, a.jp-stop, a.jp-stop:hover, a.jp-previous, a.jp-previous:hover, a.jp-next, a.jp-next:hover, div.jp-seek-bar, div.jp-play-bar, a.jp-mute, a.jp-mute:hover, a.jp-unmute, a.jp-unmute:hover, div.jp-volume-bar, div.jp-volume-bar-value, div.jp-video div.jp-video-play, div.jp-video div.jp-video-play:hover {
