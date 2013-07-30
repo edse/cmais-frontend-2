@@ -295,3 +295,8 @@ textarea{width:100%; font-size:11px;}
 .content-asset .share.content{margin:0 -28px 0;float: right;width: 245px;}
 .content-asset .fb_iframe_widget {overflow: hidden;width: 610px;}
 /* /content */
+
+/* player */
+a.jp-play,a.jp-play:hover, a.jp-pause, a.jp-pause:hover, a.jp-stop, a.jp-stop:hover, a.jp-previous, a.jp-previous:hover, a.jp-next, a.jp-next:hover, div.jp-seek-bar, div.jp-play-bar, a.jp-mute, a.jp-mute:hover, a.jp-unmute, a.jp-unmute:hover, div.jp-volume-bar, div.jp-volume-bar-value, div.jp-video div.jp-video-play, div.jp-video div.jp-video-play:hover {
+background-image: url(/portal/images/capaPrograma/culturabrasil/jplayer.png) no-repeat !important;}
+/* /player */
