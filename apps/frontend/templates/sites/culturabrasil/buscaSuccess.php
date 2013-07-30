@@ -46,13 +46,13 @@ if(isset($pager)){
 
     <div class="row-fluid">
       <div class="destaque-cultura">
-        <div class="busca">
-          <span class="interna">
+        <div class="busca-titulo">
+          <h1 class="resultadoo">
             Resultado da Busca
-          </span>
-          <span class="encontradas">
+          </h1>
+          <h2 class="encontradas">
             Foram encontrados 300 resultados com a expressão “Elis Regina”
-          </span>
+          </h2>
         </div>
       </div>
 
