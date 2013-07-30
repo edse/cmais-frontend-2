@@ -2,6 +2,7 @@
     <small><?php echo $asset->AssetContent->getAuthor() ?></small>
     <small class="pull-right"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></small>  
   </div>
+  <div class="borda-pontilhada"></div>
   <div class="row-fluid cabecalho">
     <div class="share content">
         <div class="google">

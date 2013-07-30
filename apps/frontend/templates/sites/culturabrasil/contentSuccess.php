@@ -47,7 +47,6 @@
             <img src="<?php echo $related[0]->AssetImage->getOriginalUrl() ?>" alt="">
             <div class="legenda">
               <small><?php echo $related[0]->getDescription()?> <?php if($related[0]->AssetImage->getAuthor()!=""):?> (<?php echo $related[0]->AssetImage->getAuthor() ?>) <?php endif;?></small>
-              <div class="borda-pontilhada"></div>
             </div>
           </p>
           <?php endif; ?>
