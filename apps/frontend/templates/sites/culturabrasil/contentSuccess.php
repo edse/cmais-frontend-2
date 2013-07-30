@@ -22,12 +22,12 @@
     <div class="row-fluid pontilhada">
       <div class="borda-pontilhada"></div> 
       <ul class="breadcrumb">
-        <?php if($section->Site->getSlug() == "culturabrasil"): ?>
-        <li><a href="<?php echo url_for('homepage')?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
-        <li><?php echo $section->getTitle(); ?> </li>
-        <?php else: ?>
+        <li><a href="/">Cultura Brasil</a> <span class="divider">»</span></li>
+        <?php if($asset->Site->Program->Channel->getSlug() == "culturabrasil"): ?>
         <li><a href="<?php echo url_for('homepage')?>programas">Programas</a> <span class="divider">»</span></li>
-        <li><?php echo $site->getTitle(); ?> </li>
+        <li><a href="<?php echo $site->retriveUrl() ?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
+        <?php else: ?>
+        <li><?php echo $asset->getTitle(); ?> </li>
         <?php endif; ?>         
       </ul>
     </div>
