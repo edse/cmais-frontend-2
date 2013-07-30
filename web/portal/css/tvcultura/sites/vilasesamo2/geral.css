@@ -209,8 +209,8 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-btn-jogos{ background-position: 0 -110px; width: 60px; height: 60px; } 
 .sprite-btn-personagens{ background-position: 0 -220px; width: 60px; height: 60px; } 
 .sprite-btn-videos{ background-position: 0 -330px; width: 60px; height: 60px; } 
-.sprite-icon-busca-hover{ background-position: 0 -440px; width: 29px; height: 29px; } 
-.sprite-icon-busca{ background-position: 0 -519px; width: 29px; height: 29px; } 
+.sprite-icon-busca-hover{ background-position: 0 -519px; width: 29px; height: 29px; } 
+.sprite-icon-busca{ background-position: 0 -440px;  width: 29px; height: 29px; } 
 .sprite-icon-clipes-grd-hover{ background-position: 0 -598px; width: 80px; height: 80px; } 
 .sprite-icon-clipes-grd{ background-position: 0 -728px; width: 80px; height: 80px; } 
 .sprite-icon-clipes-med-hover{ background-position: 0 -858px; width: 56px; height: 56px; } 
