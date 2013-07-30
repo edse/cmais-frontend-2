@@ -26,6 +26,9 @@
         <li><a href="<?php echo url_for('homepage')?>programas">Programas</a> <span class="divider">»</span></li>
         <li><a href="<?php echo $site->retriveUrl() ?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
         <?php endif; ?>
+        <?php if(isset($asset->Section)): ?>
+        <li><a href="<?php echo $asset->Section->retriveUrl() ?>"><?php echo $asset->Section->getTitle() ?></a> <span class="divider">»</span></li>
+        <?php endif; ?>
         <li><?php echo $asset->getTitle(); ?> </li>
       </ul>
     </div>
