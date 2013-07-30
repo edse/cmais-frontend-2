@@ -275,8 +275,8 @@ textarea{width:100%; font-size:11px;}
 
 /* content */
 .content-asset{padding:0px 5px}
-.content-asset .content h1{color:#333333; font-size:24px;margin: 0;padding: 0 0 0 10px;line-height: 21px}
-.content-asset .content h2{color:#666666; font-size:18px;margin: 0;padding: 0 0 0 10px;line-height: 14px;}
+.content-asset .content h1{color:#333333; font-size:24px;margin: 0;padding: 0 0 0 0;line-height: 21px}
+.content-asset .content h2{color:#666666; font-size:18px;margin: 0;padding: 8px 0 0 0;line-height: 14px;}
 .content {padding-bottom: 5px;margin: 0px 0 10px;}
 .content h1{font-size:24px;margin-bottom:0px;}
 .content small{color:#6F6F6F;font-size:14px;}
