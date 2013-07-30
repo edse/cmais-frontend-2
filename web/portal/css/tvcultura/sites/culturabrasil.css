@@ -102,14 +102,14 @@ img{width:100%;}
 .lista-assets a h6,
 .lista-programas span.titulo-arquivo,
 .miolo.programa .row-fluid .span8 h1,
-.miolo.programa .span8 .horario{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+.miolo.programa .span8 .horario,
+.miolo.programa .span8 .nav a{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
 .destaque-playlist h1,
 .destaque-cultura span,
-.miolo.grade #accordion2 .accordion-body .btn-body,
-.miolo.programa .span8 .nav a{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
+.miolo.grade #accordion2 .accordion-body .btn-body{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
 
 .banner-culturabrasil,
 .destaque-cultura span.interna{display: block;overflow: hidden;max-width: 300px;margin: 20px auto;}
