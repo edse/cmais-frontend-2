@@ -12,15 +12,19 @@
 <?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site))?>
 
 <style type="text/css">
+  .span8 .nav { overflow:hidden; margin-bottom:10px; }
   .span8 .nav li { float:left; background:#ccc; padding:0.2% 0.644%; }
-  .span8 .nav a { color:#666; font-family: 'asapregular',Arial,Helvetica,sans-serif; font-weight:bold; text-transform:uppercase; font-size:12px; }
+  .span8 .nav a { color:#666; font-weight:bold; text-transform:uppercase; font-size:12px; }
   .span8 .nav li.active,
   .span8 .nav li:hover,
   .span8 .nav li:hover a { background:#666; }
   .span8 .nav li:hover a,
   .span8 .nav li.active a { color:#fff; }
-  .row-fluid .span8 h1 { margin:0; color:#333; font-family: 'asapregular',Arial,Helvetica,sans-serif; font-weight:normal; }
-  
+  .row-fluid .span8 h1 { margin:0; color:#333;  font-weight:normal; }
+  .span8 .horario { color:#666; text-transform:uppercase; font-size:18px; }
+  .span8 .nav a,
+  .row-fluid .span8 h1,
+  .span8 .horario { font-family: 'asapregular',Arial,Helvetica,sans-serif; }
 </style>
 
 
@@ -51,6 +55,7 @@
             <li><a href="#">A música do produtor</a></li>
             <li><a href="#">Achados da cidade</a></li>
           </ul>
+          <p class="horario">Sábado, às 23h15 <br /> Horário alternativo: Terça, à 1h45</p>
           <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/brasileiros-da-ultima-hora-por-fabio-trummer" title=" Brasileiros da última hora, por Fábio Trummer"> <div class="row-fluid titulo"></div>
           <div class="row-fluid" style="margin-left:10px">
             <div class="span3" style="margin-left:0px">
