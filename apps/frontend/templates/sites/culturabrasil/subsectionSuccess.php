@@ -81,7 +81,7 @@ if(isset($pager)){
                 <?php if ($related[0]->getThumbnail2()): ?>
                 <img src="<?php echo $related[0]->getThumbnail2() ?>" alt=" <?php echo $d->getTitle(); ?>" class="thumb">
                 <?php else: ?>
-                <img src="/portal/images/capaPrograma/culturabrasil/defaultThumbnail.png" alt="<?php echo $d->getTitle(); ?>" class="thumb">
+                <img src="/portal/images/capaPrograma/culturabrasil/defaultThumbnail<?php echo rand(1,2) ?>.jpg" alt="<?php echo $d->getTitle(); ?>" class="thumb">
                 <?php endif; ?>
               </div>
               <div class="span9">

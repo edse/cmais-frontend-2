@@ -97,14 +97,16 @@ img{width:100%;}
 .miolo.grade .data-grade,
 .miolo.grade #accordion2 .accordion-body .btn-body,
 .miolo.grade .destaque-playlist h1,
-.busca-titulo {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+.busca-titulo,
+.content-asset .content h1,
+.content-asset .content h2,
+.lista-assets a h6,
+.lista-programas span.titulo-arquivo{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
 .destaque-playlist h1,
-.destaque-cultura span, 
-.lista-assets a h6,
-.lista-programas span.titulo-arquivo{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
+.destaque-cultura span{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
 
 .banner-culturabrasil,
 .destaque-cultura span.interna{display: block;overflow: hidden;max-width: 300px;margin: 20px auto;}
@@ -270,3 +272,14 @@ textarea{width:100%; font-size:11px;}
 .busca-titulo h1{color:#333333; font-size:24px;margin: 0;padding: 0 0 0 10px;line-height: 21px}
 .busca-titulo h2{color:#666666; font-size:18px;margin: 0;padding: 10px 0 0 10px;line-height: 14px;}
 /* /tela busca */
+
+/* content */
+.content-asset{padding:0px 5px}
+.content-asset .content h1{color:#333333; font-size:24px;margin: 0;padding: 0 0 0 0;line-height: 21px}
+.content-asset .content h2{color:#666666; font-size:18px;margin: 0;padding: 8px 0 0 0;line-height: 20px;}
+.content-asset .signature small {font-size: 11px;color: #949494;}
+.content-asset .share.content {margin: 0 -28px 0;float: right;width: 245px;}
+.content-asset .google {float: left;}
+.content-asset .twt.conteudo {width: 75px;float: left;margin-left: 10px;}
+.content-asset .fb {float: left;margin-left: 10px;width: 100px;}
+/* /content */
