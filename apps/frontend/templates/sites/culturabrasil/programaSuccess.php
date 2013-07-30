@@ -21,7 +21,7 @@
   .span8 .nav li:hover a,
   .span8 .nav li.active a { color:#fff; }
   .row-fluid .span8 h1 { margin:0; color:#333;  font-weight:normal; }
-  .span8 .horario { color:#666; text-transform:uppercase; font-size:18px; }
+  .span8 .horario { color:#666; font-size:18px; }
   .span8 .nav a,
   .row-fluid .span8 h1,
   .span8 .horario { font-family: 'asapregular',Arial,Helvetica,sans-serif; }
