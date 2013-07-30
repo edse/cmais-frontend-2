@@ -860,8 +860,8 @@ list.key_hook = function(up_down, key) {
     this.components[this.cindex].frame.color = COLOR_ORANGE;
     this.components[this.cindex].label.color = COLOR_BLACK;
     this.pos_item_ativado = this.cindex;
-    video_player.player.stop();
     this.cursor.action();
+    video_player.player.stop();
     break;
   }
   return false;
