@@ -53,7 +53,7 @@
                 <i class="seta-grade baixo"></i>
               </a>
               <!--linha pontilhada-->
-              <div class="linha-culturabrasil"></div>
+              <div class="borda-pontilhada"></div>
               <!--/linha pontilhada-->
             </div>
             <!--titulo-->
@@ -64,7 +64,7 @@
               <div class="accordion-inner">
                 <p>Matemática 23<br><br>
                 Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
-                <a href="#" class="btn-body" title="">acesseo site<i class="borda-titulo borda-grade"></i></a>
+                <a href="#" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
                 <a href="#" class="btn-body" title="">ouça ao vivo pela web<i class="borda-titulo borda-grade"></i></a>
               </div>
             </div>
@@ -84,7 +84,7 @@
                 <i class="seta-grade cima"></i>
               </a>
               <!--linha pontilhada-->
-              <div class="linha-culturabrasil"></div>
+              <div class="borda-pontilhada"></div>
               <!--/linha pontilhada-->
             </div>
             <!--titulo-->
@@ -94,7 +94,7 @@
               <div class="accordion-inner">
                 <p>Matemática 23<br><br>
                 Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
-                <a href="#" class="btn-body" title="">acesseo site<i class="borda-titulo borda-grade"></i></a>
+                <a href="#" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
                 <a href="#" class="btn-body" title="">ouça ao vivo pela web<i class="borda-titulo borda-grade"></i></a>
               </div>
             </div>
@@ -114,7 +114,7 @@
                 <i class="seta-grade cima"></i>
               </a>
               <!--linha pontilhada-->
-              <div class="linha-culturabrasil"></div>
+              <div class="borda-pontilhada"></div>
               <!--/linha pontilhada-->
             </div>
             <!--titulo-->
@@ -124,7 +124,7 @@
               <div class="accordion-inner">
                 <p>Matemática 23<br><br>
                 Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
-                <a href="#" class="btn-body" title="">acesseo site<i class="borda-titulo borda-grade"></i></a>
+                <a href="#" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
                 <a href="#" class="btn-body" title="">ouça ao vivo pela web<i class="borda-titulo borda-grade"></i></a>
               </div>
             </div>
@@ -144,7 +144,7 @@
                 <i class="seta-grade cima"></i>
               </a>
               <!--linha pontilhada-->
-              <div class="linha-culturabrasil"></div>
+              <div class="borda-pontilhada"></div>
               <!--/linha pontilhada-->
             </div>
             <!--titulo-->
@@ -154,7 +154,7 @@
               <div class="accordion-inner">
                 <p>Matemática 23<br><br>
                 Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
-                <a href="#" class="btn-body" title="">acesseo site<i class="borda-titulo borda-grade"></i></a>
+                <a href="#" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
                 <a href="#" class="btn-body" title="">ouça ao vivo pela web<i class="borda-titulo borda-grade"></i></a>
               </div>
             </div>
@@ -173,7 +173,7 @@
     <!-- /coluna esquerda -->
     
     <!--coluna direita -->
-    <div class="span4">
+    <div class="span4 box-direita">
       
       <!-- CALENDARIO -->
       <div class="destaque-playlist">
