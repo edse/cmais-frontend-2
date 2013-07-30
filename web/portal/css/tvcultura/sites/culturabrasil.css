@@ -217,6 +217,7 @@ textarea{width:100%; font-size:11px;}
 .miolo.grade .seta-grade{width:25px; height:26px;display:block; background:url(/portal/images/capaPrograma/culturabrasil/setas-grade.png) no-repeat;}
 .miolo.grade .data-grade{float:left; padding:3px 20px; text-align:center;font-size:18px; color:#666666;}
 .miolo.grade .data-btn{float:left; overflow: hidden;}
+.miolo.grade .box-direita{margin-top:60px;}
 .miolo.grade .seta-grade.esquerda{background-position:0px -54px}
 .miolo.grade .seta-grade.direita{background-position:0px -85px}
 .miolo.grade .seta-grade.cima{background-position:0px -149px; float:right;}
@@ -293,7 +294,6 @@ textarea{width:100%; font-size:11px;}
 .content-asset .fb{float:left; margin-left: 10px; width: 200px;}
 .content-asset .cabecalho small{font-size:10px; color:black;}
 .content-asset .share.content{margin:0 -28px 0;float: right;width: 245px;}
-.content-asset .box-direita{margin-top:60px;} 
 .content-asset .fb_iframe_widget {overflow: hidden;width: 610px;}
 .banner-radio{width: 300px;margin: 20px auto;}
 /* /content */
