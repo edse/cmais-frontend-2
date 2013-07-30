@@ -99,14 +99,14 @@ img{width:100%;}
 .miolo.grade .destaque-playlist h1,
 .busca-titulo,
 .content-asset .content h1,
-.content-asset .content h2 {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+.content-asset .content h2,
+.lista-assets a h6,
+.lista-programas span.titulo-arquivo{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
 .destaque-playlist h1,
-.destaque-cultura span, 
-.lista-assets a h6,
-.lista-programas span.titulo-arquivo{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
+.destaque-cultura span{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
 
 .banner-culturabrasil,
 .destaque-cultura span.interna{display: block;overflow: hidden;max-width: 300px;margin: 20px auto;}
