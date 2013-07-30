@@ -169,6 +169,16 @@
    <?php endif; ?>
    <!--/menu cultura brasil-->
    
+   <!--search-->
+   <div class="search-culturabrasil">
+    <form class="busca-culturabrasil" action="/busca" method="post">
+      <input type="hidden" name="site_id" id="site_id" value="">
+      <input class="ipt-txt" type="text" name="term" id="term" value="">
+      <input class="ipt-submit" type="submit" value="OK">
+    </form>
+   </div>
+   <!--/search-->
+   
    <!-- ouca a radio -->
    <a id="ouca" class="ouca" href="javascript:;">
      <img src="/portal/images/capaPrograma/culturabrasil/oucaculturabrasil.jpg" alt="Ouça a rádio Cultura Brasil"/>
