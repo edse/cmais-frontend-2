@@ -19,7 +19,7 @@
   .span8 .nav li:hover a { background:#666; }
   .span8 .nav li:hover a,
   .span8 .nav li.active a { color:#fff; }
-  .span8 h1 { margin:0; color:#333; font-family: 'asapregular',Arial,Helvetica,sans-serif; }
+  .row-fluid .span8 h1 { margin:0; color:#333; font-family: 'asapregular',Arial,Helvetica,sans-serif; font-weight:normal; }
   
 </style>
 
