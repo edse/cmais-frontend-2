@@ -71,8 +71,8 @@ if(isset($pager)){
           arquivo
         </span>
             <?php foreach($displays["arquivo"] as $d): ?>
-        <a href="#" title="">
-          <p>A Voz Popular</p>
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+          <p><?php echo $d->getTitle() ?></p>
         </a>
             <?php endforeach; ?>
           <?php endif; ?>
