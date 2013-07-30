@@ -171,6 +171,7 @@
    
    <!--search-->
    <div class="search-culturabrasil">
+    <i class="lupa"></i>
     <form class="busca-culturabrasil" action="/busca" method="post">
       <input type="hidden" name="site_id" id="site_id" value="">
       <input class="ipt-txt" type="text" name="term" id="term" value="">
