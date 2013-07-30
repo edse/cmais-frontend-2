@@ -36,9 +36,9 @@ if(isset($pager)){
         <li><a href="/">Cultura Brasil</a> <span class="divider">»</span></li>
         <?php if($section->Site->Program->Channel->getSlug() == "culturabrasil"): ?>
         <li><a href="<?php echo url_for('homepage')?>programas">Programas</a> <span class="divider">»</span></li>
-        <li><a href="<?php echo $site->retriveUrl() ?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
+        <li><?php echo $site->getTitle() ?> </li>
         <?php else:?>         
-        <li><a href="<?php echo $section->retriveUrl() ?>"><?php echo $section->getTitle() ?></a> <span class="divider">»</span></li>
+        <li><?php echo $section->getTitle() ?> </li>
         <?php endif; ?>         
       </ul>
     </div>
