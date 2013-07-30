@@ -254,7 +254,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .topo-vila .container { height:51px; }
 .topo-vila h2 { width: 83px; display: block; margin:8px 0 0 10px; float:left;}
 .topo-vila .sprite-logo-incluir { display: block; text-indent:-9999px;    }
-.topo-vila .sprite-logo-incluir:hover {   background-position: 0 -197px; width: 83px; height: 36px;  }
+.topo-vila .sprite-logo-incluir:hover {   background-position: 0 -850px; width: 83px; height: 36px;  }
 .topo-vila nav { float:right; margin-right:0;  }
 .topo-vila .nav,
 .topo-vila nav form { float:right; }
