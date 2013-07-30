@@ -323,6 +323,29 @@ Notice: Undefined variable: url in /var/frontend/apps/frontend/templates/sites/c
     
     </div>
     
+    <!-- sem resultado -->
+    <div class="row-fluid">
+      
+      <div class="destaque-cultura">
+        <div class="busca-titulo">
+          <h1 class="resultadoo">
+            Resultado da Busca
+          </h1>
+          <h2 class="encontradas">
+            Sua pesquisa - Lorem Ipsulum - não encontrou nenhum documento correspondente
+          </h2>
+        </div>
+      </div>
+      
+      <div class="row-fluid" style="clear: both;">
+        <h1 class="resultadoo">Sugestões</h1>
+        <h2 class="encontradas">Certifique-se de que todas as palavras estejam escritas corretamente.</h2>
+        <h2 class="encontradas">Tente palavras-chave diferentes.</h2>
+        <h2 class="encontradas">Tente palavras-chave mais genéricas.</h2>
+      </div>
+      
+    </div>  
+    <!-- /sem resultado -->
   </div>
   <!--/container--> 
 </section>
