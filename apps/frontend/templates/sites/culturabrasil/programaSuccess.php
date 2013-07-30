@@ -13,7 +13,7 @@
 
 <style type="text/css">
   .span8 .nav li { float:left; background:#ccc; padding:0.2% 1.338%; }
-  .span8 .nav a { color:#666; }
+  .span8 .nav a { color:#666; font-family: 'asapregular',Arial,Helvetica,sans-serif; font-weight:bold; text-transform:uppercase; font-size:12px; }
   .span8 .nav li.active,
   .span8 .nav li:hover,
   .span8 .nav li:hover a { background:#666; }
