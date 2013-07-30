@@ -24,19 +24,20 @@
     </div>
     <!--/breadcrumb-->
     <div class="row-fluid subSection">
-      <h1>Galeria</h1>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Arquivo</a></li>
-        <li><a href="#">Lançamentos</a></li>
-        <li><a href="#">Minha galeria</a></li>
-        <li><a href="#">Duas versões</a></li>
-        <li><a href="#">A música do produtor</a></li>
-        <li><a href="#">Achados da cidade</a></li>
-      </ul>
+      
       <!--clounaprincipal-->
       <div class="row-fluid">
         <!--lista assets-->
         <div class="lista-assets span8">
+          <h1>Galeria</h1>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Arquivo</a></li>
+            <li><a href="#">Lançamentos</a></li>
+            <li><a href="#">Minha galeria</a></li>
+            <li><a href="#">Duas versões</a></li>
+            <li><a href="#">A música do produtor</a></li>
+            <li><a href="#">Achados da cidade</a></li>
+          </ul>
           <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/brasileiros-da-ultima-hora-por-fabio-trummer" title=" Brasileiros da última hora, por Fábio Trummer"> <div class="row-fluid titulo"></div>
           <div class="row-fluid" style="margin-left:10px">
             <div class="span3" style="margin-left:0px">
