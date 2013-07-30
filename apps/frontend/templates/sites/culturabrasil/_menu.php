@@ -142,14 +142,14 @@
         <?php $subsections = $s->subsections(); ?>
         <?php if(count($subsections) > 0): ?>
           <!-- botao --->
-          <li class="dropdown <?php if($section->getParentSectionId() == $s->id): ?>active<?php endif; ?>" 1>
+          <li class="dropdown <?php if($section->getParentSectionId() == $s->id): ?>active<?php endif; ?>">
             <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" title="<?php echo $s->getTitle()?>">
               <?php echo $s->getTitle()?>
               <b class="caret"></b>
             </a>
-            <ul class="dropdown-menu" 11>
+            <ul class="dropdown-menu">
               <?php foreach($subsections as $s): ?>
-              <li class="" 111>
+              <li class="">
                 <a class="dropdown" href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle()?>"><?php echo $s->getTitle()?></a>
               </li>
               <?php endforeach; ?>
@@ -158,7 +158,7 @@
           <!-- botao --->
         <?php else: ?>  
           <!-- botao --->
-          <li class="<?php if($section->id == $s->id): ?>active<?php endif; ?>" 2>
+          <li class="<?php if($section->id == $s->id && $section->Site->Program->Channel->getSlug() == "culturabrasil"): ?>active<?php endif; ?>">
             <a href="<?php if($s->getSlug() == "home"): ?>/<?php else: ?><?php echo $s->retriveUrl()?><?php endif; ?>" title="<?php echo $s->getTitle()?>"><?php echo $s->getTitle()?></a>
           </li>
           <!-- /botao --->
