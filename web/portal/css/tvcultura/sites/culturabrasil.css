@@ -122,6 +122,10 @@ img{width:100%;}
 .aspas{color:#999999;}
 .nav-pills>.active>a, 
 .nav-pills>.active>a:hover{background-color:#F5f5f5; color:#666666}
+
+.search-culturabrasil{width: 170px;float: right;background: red;}
+.search-culturabrasil .lupa{width: 12px;height: 11px;background: yellow;display: block;float: left;}
+.search-culturabrasil #term{width: 114px;border-radius: 0px;border: none;border-bottom: 1px solid #868686;}
 /* geral */
 
 /* subsection */
