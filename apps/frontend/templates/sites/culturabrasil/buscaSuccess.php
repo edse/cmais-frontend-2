@@ -324,7 +324,7 @@ Notice: Undefined variable: url in /var/frontend/apps/frontend/templates/sites/c
     </div>
     
     <!-- sem resultado -->
-    <div class="row-fluid">
+    <div class="row-fluid" style="margin-bottom:30px">
       
       <div class="destaque-cultura">
         <div class="busca-titulo">
