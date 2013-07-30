@@ -58,7 +58,7 @@ if(isset($pager)){
 
     
     <!--clounaprincipal-->
-    <div class="row-fluid">
+    <div class="row-fluid" style="clear: both;">
       <?php
       /*
       <!--lista assets-->
