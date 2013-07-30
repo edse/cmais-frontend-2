@@ -123,9 +123,10 @@ img{width:100%;}
 .nav-pills>.active>a, 
 .nav-pills>.active>a:hover{background-color:#F5f5f5; color:#666666}
 
-.search-culturabrasil{width: 170px;height: 29px;position: absolute;right: 0;}
-.search-culturabrasil .lupa{width: 12px;height: 11px;background: yellow;display: block;float: left;}
-.search-culturabrasil #term{width: 114px;border-radius: 0px;border: none;border-bottom: 1px solid #868686; box-shadow: none;}
+.search-culturabrasil{width: 162px;height: 29px;position: absolute;right: 0;bottom: 24px;}
+.search-culturabrasil .lupa{width: 12px;height: 11px;background: yellow;display: block;float: left;margin-top: 16px;background: url(/portal/images/capaPrograma/culturabrasil/lupa.jpg) no-repeat;}
+.search-culturabrasil #term{width: 119px;border-radius: 0px;border: none;border-bottom: 1px solid #868686;box-shadow: none;padding: 5px 3px 0px 3px;}
+.search-culturabrasil .ipt-submit{border: none;background: none;margin-top: 6px;}
 /* geral */
 
 /* subsection */
