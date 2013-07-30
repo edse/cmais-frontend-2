@@ -304,6 +304,6 @@ background-image: url("/portal/images/capaPrograma/culturabrasil/jplayer.png")!i
 div.jp-playlist, div.jp-interface, div.jp-type-playlist div.jp-playlist li { border:none!important;}
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #333333 !important;}
 div.jp-type-playlist div.jp-playlist li.jp-playlist-current {list-style-type: none!important; color:#999999!important; padding: 5px 0 4px 20px!important;}
-div.jp-type-playlist div.jp-playlist a:hover {color:#333333!important;}
+div.jp-type-playlist div.jp-playlist a:hover {color:#999999!important;}
 
 /* /player */
