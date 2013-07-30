@@ -3,8 +3,8 @@
        <?php endif; ?>
        <?php if(isset($parentSection) || isset($asset) || isset($section)): ?>
         <!--breadcrumb-->
-        <div class="row-fluid pontilhada">
-           <div class="borda-pontilhada"></div> 
+        <div class="row-fluid pontilhada"> 
+            
            <ul class="breadcrumb">
              <li><a href="<?php echo url_for('homepage')?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
            <?php if($section->getSlug() == "artistas"): ?>
