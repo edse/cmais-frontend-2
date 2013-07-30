@@ -95,7 +95,6 @@ img{width:100%;}
 .lista-programas a,
 .miolo.grade h1,
 .miolo.grade .data-grade,
-.miolo.grade #accordion2 .accordion-body .btn-body,
 .miolo.grade .destaque-playlist h1,
 .busca-titulo,
 .content-asset .content h1,
@@ -106,7 +105,8 @@ img{width:100%;}
 .mais,
 .rodape span,
 .destaque-playlist h1,
-.destaque-cultura span{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
+.destaque-cultura span,
+.miolo.grade #accordion2 .accordion-body .btn-body{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
 
 .banner-culturabrasil,
 .destaque-cultura span.interna{display: block;overflow: hidden;max-width: 300px;margin: 20px auto;}
@@ -239,7 +239,7 @@ textarea{width:100%; font-size:11px;}
 /**** datepicker ****/
  #datepicker .ui-widget { width:310px; }
  #datepicker .ui-datepicker-title { width:120px; float:left; margin:0 20px; text-align:center; }
- #datepicker .ui-datepicker-title span { font:bold 16px arial; color:#333; }
+ #datepicker .ui-datepicker-title span { font: bold 14px arial;color: #666; }
  #datepicker .ui-corner-all { float:left; }
  #datepicker .ui-datepicker-next { float:right; }
  #datepicker .ui-corner-all { -moz-border-radius:none; }
