@@ -17,348 +17,251 @@
   
   <!--container-->
   <div class="container">
-      
+  
+        
     <!--breadcrumb-->
     <div class="row-fluid pontilhada">
-      <div class="borda-pontilhada"></div> 
       <ul class="breadcrumb">
         <li><a href="/">Cultura Brasil</a> <span class="divider">»</span></li>
-        <?php if($asset->Site->Program->Channel->getSlug() == "culturabrasil"): ?>
-        <li><a href="<?php echo url_for('homepage')?>programas">Programas</a> <span class="divider">»</span></li>
-        <li><a href="<?php echo $site->retriveUrl() ?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
-        <?php endif; ?>         
-        <li><?php echo $asset->getTitle(); ?> </li>
+                 
+        <li>Entrevistas </li>
+                 
       </ul>
     </div>
     <!--/breadcrumb-->
 
-    <div class="row-fluid">
-    <!-- asset -->
-       
-      <div class="row-fluid" style="margin:0 0 0 0;">
-        <!--col esquerda-->
-        <div class="span8 content-asset">
-          <div class="content">
-            <h1><?php echo $asset->getTitle() ?></h1>
-            <small><?php echo $asset->getDescription() ?></small>
-            <?php include_partial_from_folder('sites/culturabrasil', 'global/signature', array('uri'=>$uri,'asset'=>$asset)) ?>
-          <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
-          <?php if ($related[0]->AssetImage->getOriginalUrl()): ?>
-          <p>
-            <img src="<?php echo $related[0]->AssetImage->getOriginalUrl() ?>" alt="">
-            <div class="legenda">
-              <small><?php echo $related[0]->getDescription()?> <?php if($related[0]->AssetImage->getAuthor()!=""):?> (<?php echo $related[0]->AssetImage->getAuthor() ?>) <?php endif;?></small>
-            </div>
-          </p>
-          <?php endif; ?>
-          <?php echo html_entity_decode($asset->AssetContent->render()) ?>
-          <?php include_partial_from_folder('blocks', 'global/visite-cmais',array('uri'=>$uri)) ?>
-         <!-- comentario facebook -->
-          <div class="container face">
-            <fb:comments href="<?php echo $uri?>" numposts="3" width="610" publish_feed="true"></fb:comments>
-            <hr />
-          </div>
-          <!-- /comentario facebook -->
-          </div>
-          <!--content-->
+    <div class="row-fluid subSection">
+      <div class="destaque-cultura subsection">
+        <div class="programa subsection">
+          <span class="interna">
+            Entrevistas          </span>
+          <i class="borda-titulo subsection"></i>
         </div>
-        <!--col esquerda-->
-        <div class="span4 direita">
-          <link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
-          
-            <?php
-              $playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
-              if(count($playlist) > 0) {
-                $related_audios = $playlist[0]->retriveRelatedAssetsByAssetTypeId(4);
-              }
-              else {
-                $related_audios = $asset->retriveRelatedAssetsByAssetTypeId(4);
-              }
-            ?>
-            <?php if(count($related_audios) > 0): ?>
-          <script type="text/javascript" src="/portal/js/audioplayer/js/jquery.jplayer.min.js"></script>
-          <script type="text/javascript">
-            //<![CDATA[
-            $(document).ready(function(){
-            
-              var Playlist = function(instance, playlist, options) {
-                
-                var self = this;
-            
-                this.instance = instance; // String: To associate specific HTML with this playlist
-                this.playlist = playlist; // Array of Objects: The playlist
-                this.options = options; // Object: The jPlayer constructor options for this playlist
-            
-                this.current = 0;
-            
-                this.cssId = {
-                  jPlayer: "jquery_jplayer_",
-                  interface: "jp_interface_",
-                  playlist: "jp_playlist_"
-                };
-                this.cssSelector = {};
-            
-                $.each(this.cssId, function(entity, id) {
-                  self.cssSelector[entity] = "#" + id + self.instance;
-                });
-            
-                if(!this.options.cssSelectorAncestor) {
-                  this.options.cssSelectorAncestor = this.cssSelector.interface;
-                }
-            
-                $(this.cssSelector.jPlayer).jPlayer(this.options);
-            
-                $(this.cssSelector.interface + " .jp-previous").click(function() {
-                  self.playlistPrev();
-                  $(this).blur();
-                  return false;
-                });
-            
-                $(this.cssSelector.interface + " .jp-next").click(function() {
-                  self.playlistNext();
-                  $(this).blur();
-                  return false;
-                });
-              };
-            
-              Playlist.prototype = {
-                displayPlaylist: function() {
-                var self = this;
-                $(this.cssSelector.playlist + " ul").empty();
-                for (i=0; i < this.playlist.length; i++) {
-                  var listItem = (i === this.playlist.length-1) ? "<li class='jp-playlist-last'>" : "<li>";
-                  listItem += "<a href='#' id='" + this.cssId.playlist + this.instance + "_item_" + i +"' tabindex='1'>"+ this.playlist[i].name +"</a>";
-            
-                  // Create links to free media
-                  if(this.playlist[i].free) {
-                    var first = true;
-                    listItem += "<div class='jp-free-media'>(";
-                    $.each(this.playlist[i], function(property,value) {
-                      if($.jPlayer.prototype.format[property]) { // Check property is a media format.
-                        if(first) {
-                          first = false;
-                        } else {
-                          listItem += " | ";
-                        }
-                        listItem += "<a id='" + self.cssId.playlist + self.instance + "_item_" + i + "_" + property + "' href='" + value + "' tabindex='1'>" + property + "</a>";
-                      }
-                    });
-                    listItem += ")</span>";
-                  }
-              
-                  listItem += "</li>";
-              
-                  // Associate playlist items with their media
-                  $(this.cssSelector.playlist + " ul").append(listItem);
-                  $(this.cssSelector.playlist + "_item_" + i).data("index", i).click(function() {
-                    var index = $(this).data("index");
-                    if(self.current !== index) {
-                      self.playlistChange(index);
-                    } else {
-                      $(self.cssSelector.jPlayer).jPlayer("play");
-                    } 
-                    $(this).blur();
-                    return false;
-                  });
-               
-                  // Disable free media links to force access via right click
-                  if(this.playlist[i].free) {
-                    $.each(this.playlist[i], function(property,value) {
-                      if($.jPlayer.prototype.format[property]) { // Check property is a media format.
-                        $(self.cssSelector.playlist + "_item_" + i + "_" + property).data("index", i).click(function() {
-                          var index = $(this).data("index");
-                          $(self.cssSelector.playlist + "_item_" + index).click();
-                          $(this).blur();
-                          return false;
-                        });
-                      }
-                    });
-                  }
-                }
-              },
-              playlistInit: function(autoplay) {
-                if(autoplay) {
-                  this.playlistChange(this.current);
-                } else {
-                  this.playlistConfig(this.current);
-                }
-              },
-              playlistConfig: function(index) {
-                $(this.cssSelector.playlist + "_item_" + this.current).removeClass("jp-playlist-current").parent().removeClass("jp-playlist-current");
-                $(this.cssSelector.playlist + "_item_" + index).addClass("jp-playlist-current").parent().addClass("jp-playlist-current");
-                this.current = index;
-                $(this.cssSelector.jPlayer).jPlayer("setMedia", this.playlist[this.current]);
-              },
-              playlistChange: function(index) {
-                this.playlistConfig(index);
-                $(this.cssSelector.jPlayer).jPlayer("play");
-              },
-              playlistNext: function() {
-                var index = (this.current + 1 < this.playlist.length) ? this.current + 1 : 0;
-                this.playlistChange(index);
-              },
-              playlistPrev: function() {
-                var index = (this.current - 1 >= 0) ? this.current - 1 : this.playlist.length - 1;
-                this.playlistChange(index);
-              }
-            };
-            
-            <?php
-              //$playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
-              //$audios = $playlist[0]->retriveRelatedAssetsByAssetTypeId(4);
-            ?>
-            var audioPlaylist = new Playlist("1",
-            [
-              <?php foreach($related_audios as $k=>$d): ?>
-              {
-                name:"<?php echo $d->getTitle(); ?>",
-                mp3:"/uploads/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile(); ?>"
-              }<?php if($k < (count($related_audios) - 1)): ?>,<?php endif;?>
-              
-              <?php endforeach; ?>
-            ],
-            {
-              ready: function()
-              {
-                audioPlaylist.displayPlaylist();
-                audioPlaylist.playlistInit(); // Parameter is a boolean for autoplay.
-              },
-              ended: function()
-              {
-                audioPlaylist.playlistNext();
-              },
-              play: function()
-              {
-                $(this).jPlayer("pauseOthers");
-              },
-              swfPath: "/js/audioplayer",
-              supplied: "mp3"
-            });
-          });
-          //]]>
-        </script>
-        
-        
-          <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-          <div class="jp-audio">
-            <div class="jp-type-playlist">
-              <div id="jp_interface_1" class="jp-interface" style="height:94px;">
-                <ul class="jp-controls">
-                  <li><a href="#" class="jp-play" tabindex="1" style="left:44px;top:10px;">play</a></li>
-                  <li><a href="#" class="jp-pause" tabindex="1" style="left:44px;top:10px;">pause</a></li>
-                  <li><a href="#" class="jp-stop" tabindex="1" style="left:121px;top:16px;">stop</a></li>
-                  <li><a href="#" class="jp-mute" tabindex="1" style="left:166px;top:22px;">mute</a></li>
-                  <li><a href="#" class="jp-unmute" tabindex="1" style="left:166px;top:22px;">unmute</a></li>
-                  <li><a href="#" class="jp-previous" tabindex="1" style="left:17px;top:16px;">previous</a></li>
-                  <li><a href="#" class="jp-next" tabindex="1" style="left:84px;top:16px;">next</a></li>
-                </ul>
-                <div class="jp-progress" style="left:20px;top:56px; width: 85%;">
-                  <div class="jp-seek-bar">
-                    <div class="jp-play-bar"></div>
-                  </div>
-                </div>
-                <div class="jp-volume-bar" style="left:193px;top:27px;">
-                  <div class="jp-volume-bar-value"></div>
-                </div>
-                <div class="jp-current-time" style="left:20px;top:72px;"></div>
-                <div class="jp-duration" style="left:20px;top:72px;"></div>
-              </div>
-              <div id="jp_playlist_1" class="jp-playlist">
-                <ul>
-                  <!-- The method Playlist.displayPlaylist() uses this unordered list -->
-                  <li></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          <?php endif; ?>
-  
-          <div class="banner-radio">
-            <script type='text/javascript'>
-              GA_googleFillSlot("cmais-assets-300x250");
-            </script>
-          </div>
-  
-          <?php
-            $displays = array();
-            $block_sobre = Doctrine_Query::create()
-              ->select('b.*')
-              ->from('Block b, Section s')
-              ->where('b.section_id = s.id')
-              ->andWhere('s.slug = ?', 'home')
-              ->andWhere('b.slug = ?', 'sobre-o-programa')
-              ->andWhere('s.site_id = ?', $site->id)
-              ->execute();
-          
-            if(count($block_sobre) > 0){
-              $displays["sobre-o-programa"] = $block_sobre[0]->retriveDisplays();
-            }
-          ?>
-          <?php if(isset($displays['sobre-o-programa'])):?>
-            <?php if(count($displays['sobre-o-programa']) > 0): ?>
-  
-              <div class="thumbnail">
-                <div class="caption">
-                  <div class="page-header">
-                    <h4><?php echo $displays['sobre-o-programa'][0]->getTitle() ?></h4>
-                  </div>
-                  <p><?php echo $displays['sobre-o-programa'][0]->getDescription() ?></p>
-                  <p><a href="<?php echo $displays['sobre-o-programa'][0]->retriveUrl() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-                </div>
-              </div>
-  
-           <?php endif; ?>
-         <?php endif; ?>
-         
-          <?php
-            $displays = array();
-            $block_comoparticipar = Doctrine_Query::create()
-              ->select('b.*')
-              ->from('Block b, Section s')
-              ->where('b.section_id = s.id')
-              ->andWhere('s.slug = ?', 'home')
-              ->andWhere('b.slug = ?', 'como-participar')
-              ->andWhere('s.site_id = ?', $site->id)
-              ->execute();
-          
-            if(count($block_comoparticipar) > 0){
-              $displays["como-participar"] = $block_comoparticipar[0]->retriveDisplays();
-            }
-          ?>
-         
-         <?php if(isset($displays['como-participar'])):?>
-          <?php if(count($displays['como-participar']) > 0): ?>
-  
-              <div class="thumbnail">
-                <div class="caption">
-                  <div class="page-header">
-                    <h4><?php echo $displays['como-participar'][0]->getTitle() ?></h4>
-                  </div>
-                  <p><?php echo $displays['como-participar'][0]->getDescription() ?></p>
-                  <p><a href="<?php echo $displays['como-participar'][0]->retriveUrl() ?>" class="btn btn-mini btn-inverse"><i class="icon-chevron-right icon-white"></i> saiba mais</a></p>
-                </div>
-              </div>
-  
-           <?php endif; ?>
-         <?php endif; ?>
-          </div> 
-  
-          
       </div>
-  
-      <div class="container pull-left">
-        <div class="banner-radio">
-         <script type='text/javascript'>
-           GA_googleFillSlot("cmais-assets-728x90");
-         </script>
-        </div>
-      </div>  
-          
-    </div>
-    <!-- asset -->
-      
-  </div>
+
     
+    <!--clounaprincipal-->
+    <div class="row-fluid">
+      
+      <!--lista assets-->
+      <div class="lista-assets span8">
+                              <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/brasileiros-da-ultima-hora-por-fabio-trummer" title=" Brasileiros da última hora, por Fábio Trummer">
+                                                <div class="row-fluid titulo">
+                  
+                </div>
+                            <div class="row-fluid" style="margin-left:10px">
+              <div class="span3" style="margin-left:0px">
+                <h6>Destaques 2009&nbsp;</h6>
+                                                <img src="http://midia.cmais.com.br/assets/image/thumbnail/eddietrumer_03_1279818915.jpg" alt=" Brasileiros da última hora, por Fábio Trummer" class="thumb">
+                              </div>
+              <div class="span9">
+                <h2>Brasileiros da última hora, por Fábio Trummer</h2>
+                <p>
+                  Vocalista da banda Eddie elege cinco músicas de discos que se destacaram em 2009. Tem Lucas Santana, Karina Buhr, Cidadão Instigado e Céu.                </p>  
+              </div>
+            </div>    
+           </a>
+            
+                      <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/nove-integrantes-e-coisa-pouca-por-moveis-coloniais-de-acaju" title=" Nove integrantes é coisa pouca?, por Móveis Coloniais de Acaju">
+                                                <div class="row-fluid titulo">
+                  
+                </div>
+                            <div class="row-fluid" style="margin-left:10px">
+              <div class="span3" style="margin-left:0px">
+                <h6>Família grande&nbsp;</h6>
+                                                <img src="http://midia.cmais.com.br/assets/image/thumbnail/moveiscoloniaisdeacaju_03_1279818916.jpg" alt=" Nove integrantes é coisa pouca?, por Móveis Coloniais de Acaju" class="thumb">
+                              </div>
+              <div class="span9">
+                <h2>Nove integrantes é coisa pouca?, por Móveis Coloniais de Acaju</h2>
+                <p>
+                  A banda brasiliense organizou uma seleção musical com conjuntos com, no mínimo, nove integrantes. Com Karnak, Banda Mantiqueira e Karnak.                </p>  
+              </div>
+            </div>    
+           </a>
+            
+                      <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/sons-porretas-com-a-orquestra-contemporanea-de-olinda" title=" Sons porretas com a Orquestra Contemporânea de Olinda">
+                                                <div class="row-fluid titulo">
+                  
+                </div>
+                            <div class="row-fluid" style="margin-left:10px">
+              <div class="span3" style="margin-left:0px">
+                <h6>Volume máximo&nbsp;</h6>
+                                                <img src="http://midia.cmais.com.br/assets/image/thumbnail/orquestracontemporanea_01_1270480433.jpg" alt=" Sons porretas com a Orquestra Contemporânea de Olinda" class="thumb">
+                              </div>
+              <div class="span9">
+                <h2>Sons porretas com a Orquestra Contemporânea de Olinda</h2>
+                <p>
+                  Seleção musical de primeira tem Academia da Berlinda, Isaar e Eddie.                 </p>  
+              </div>
+            </div>    
+           </a>
+            
+                      <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/macumba-de-primeira" title=" Macumba de primeira">
+                                            <div class="row-fluid" style="margin-left:10px">
+              <div class="span3" style="margin-left:0px">
+                <h6>&nbsp;</h6>
+                                                <img src="/portal/images/capaPrograma/culturabrasil/defaultThumbnail.png" alt="Macumba de primeira" class="thumb">
+                              </div>
+              <div class="span9">
+                <h2>Macumba de primeira</h2>
+                <p>
+                  Rodrigo Brandão e Tiago Munhoz, da Mamelo Sound System, enfileiram batucadas sangue azul.                 </p>  
+              </div>
+            </div>    
+           </a>
+            
+                      <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/compositores-em-feminino" title=" Compositores em feminino">
+                                                <div class="row-fluid titulo">
+                  
+                </div>
+                            <div class="row-fluid" style="margin-left:10px">
+              <div class="span3" style="margin-left:0px">
+                <h6>Atrás da porta&nbsp;</h6>
+                                                <img src="http://midia.cmais.com.br/assets/image/thumbnail/mallu_09_1270588633.jpg" alt=" Compositores em feminino" class="thumb">
+                              </div>
+              <div class="span9">
+                <h2>Compositores em feminino</h2>
+                <p>
+                  A cantora e compositora paulistana Mallu Magalhães sugere uma playlist em que compositores criam letras a partir da alma feminina.                </p>  
+              </div>
+            </div>    
+           </a>
+            
+                      <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/brasil-latino" title=" Brasil latino">
+                                                <div class="row-fluid titulo">
+                  
+                </div>
+                            <div class="row-fluid" style="margin-left:10px">
+              <div class="span3" style="margin-left:0px">
+                <h6>Soy loco por ti&nbsp;</h6>
+                                                <img src="http://midia.cmais.com.br/assets/image/thumbnail/gatonegro_03_1273608504.jpg" alt=" Brasil latino" class="thumb">
+                              </div>
+              <div class="span9">
+                <h2>Brasil latino</h2>
+                <p>
+                  Tango, bolero, paixão e língua espanhola temperam a seleção musical assinada por Natalia Mallo e Ramiro Murillo, ambos do gatoNegro.                </p>  
+              </div>
+            </div>    
+           </a>
+            
+                      <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/zeca-baleiro-e-as-letras-nonsenses" title=" Zeca Baleiro e as letras nonsenses">
+                                                <div class="row-fluid titulo">
+                  
+                </div>
+                            <div class="row-fluid" style="margin-left:10px">
+              <div class="span3" style="margin-left:0px">
+                <h6>Sem pé nem cabeça&nbsp;</h6>
+                                                <img src="http://midia.cmais.com.br/assets/image/thumbnail/zecabaleiro_02_1276118769.jpg" alt=" Zeca Baleiro e as letras nonsenses" class="thumb">
+                              </div>
+              <div class="span9">
+                <h2>Zeca Baleiro e as letras nonsenses</h2>
+                <p>
+                  O cantor e compositor Zeca Baleiro seleciona alguns versos curiosos, infames ou inusitados, da música brasileira. Nem Caetano escapa!                 </p>  
+              </div>
+            </div>    
+           </a>
+            
+                      <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/rock-na-veia-por-nico-fornaglia" title=" Rock na veia, por Nico Fornaglia">
+                                                <div class="row-fluid titulo">
+                  
+                </div>
+                            <div class="row-fluid" style="margin-left:10px">
+              <div class="span3" style="margin-left:0px">
+                <h6>Festa de arromba&nbsp;</h6>
+                                                <img src="http://midia.cmais.com.br/assets/image/thumbnail/nicofornaglia_02_1280854829.jpg" alt=" Rock na veia, por Nico Fornaglia" class="thumb">
+                              </div>
+              <div class="span9">
+                <h2>Rock na veia, por Nico Fornaglia</h2>
+                <p>
+                  Diretor de TV promove viagem pela Jovem Guarda, rock psicodélico, progressivo e dos anos 1980. Tem Ronnie Cord, O Bando e Novos Baianos.                </p>  
+              </div>
+            </div>    
+           </a>
+            
+                      <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/sambas-urbanos-sambas-gostosos" title=" Sambas urbanos, sambas gostosos">
+                                                <div class="row-fluid titulo">
+                  
+                </div>
+                            <div class="row-fluid" style="margin-left:10px">
+              <div class="span3" style="margin-left:0px">
+                <h6>&nbsp;</h6>
+                                                <img src="http://midia.cmais.com.br/assets/image/thumbnail/paulalima_01_1272907874.jpg" alt=" Sambas urbanos, sambas gostosos" class="thumb">
+                              </div>
+              <div class="span9">
+                <h2>Sambas urbanos, sambas gostosos</h2>
+                <p>
+                  A cantora Paula Lima convoca Jorge Ben, Arlindo Cruz e Martinália.                </p>  
+              </div>
+            </div>    
+           </a>
+            
+                          <!--paginador-->
+            <div class="row">
+    <div class="pagination pagination-centered">
+      <ul>
+        <li class="back-pag"><a href="javascript: goToPage(1);" class="paginacao" title="Primeira"><i class="icon-fast-backward"></i></a></li>
+        <li class="back-pag"?><a href="javascript: goToPage(1);" class="paginacao"  title="Anterior"><i class="icon-backward"></i></a></li>
+                <li class="back-pag active" ><a href="javascript: goToPage(1);">1</a></li>
+                <li class="back-pag " ><a href="javascript: goToPage(2);">2</a></li>
+                <li class="back-pag " ><a href="javascript: goToPage(3);">3</a></li>
+                <li class="back-pag"><a href="javascript: goToPage(2);" class="paginacao" title="Próximo"><i class="icon-forward"></i></a></li>
+        <li class="back-pag"><a href="javascript: goToPage(3);" class="paginacao" title="Última"><i class="icon-fast-forward"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <!--form id="page_form" action="" method="post">
+    <input type="hidden" name="return_url" value="
+Notice: Undefined variable: url in /var/frontend/apps/frontend/templates/sites/culturabrasil/_paginator.php on line 17
+" />
+    <input type="hidden" name="page" id="page" value="" />
+  </form-->
+  <form id="page_form" action="" method="post">
+      <input type="hidden" name="return_url" value="
+Notice: Undefined variable: url in /var/frontend/apps/frontend/templates/sites/culturabrasil/_paginator.php on line 21
+" />
+      <input type="hidden" name="page" id="page" value="" />
+      <!--input type="hidden" name="letter" id="letter" value="" /-->
+    </form>
+  <script>
+  function goToPage(i){
+    $("#page").val(i);
+    $("#page_form").submit();
+  }
+  function goToLetter(i){
+    $("#letter").val(i);
+    $("#page").val("");
+    $("#page_form").submit();
+  }
+  </script>
+          <!--paginador-->
+      </div>
+      <!--listaAssets>
+        
+      <!--coluna direita-->
+      <div class="lista-assets redes span4">
+        
+        
+              
+        <div class="row-fluid">      
+          <div class="span12 direita">
+            <div class="banner-radio">
+              <script type='text/javascript'>
+                GA_googleFillSlot("home-geral300x250");
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/coluna-direita-->
+      
+    </div>
+    <!--/coluna principal-->
+    
+    
+    </div>
+    
+  </div>
+  <!--/container--> 
 </section>
+<!-- /section miolo --> 
 
