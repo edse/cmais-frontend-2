@@ -19,8 +19,7 @@
   <div class="container">
       
     <!--breadcrumb-->
-    <div class="row-fluid pontilhada">
-      <div class="borda-pontilhada"></div> 
+    <div class="row-fluid pontilhada"> 
       <ul class="breadcrumb">
         <li><a href="/">Cultura Brasil</a> <span class="divider">»</span></li>
         <?php if($asset->Site->Program->Channel->getSlug() == "culturabrasil"): ?>
