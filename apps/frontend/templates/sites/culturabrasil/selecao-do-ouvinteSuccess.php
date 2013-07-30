@@ -17,7 +17,7 @@
 
 
 <!--section miolo--> 
-<section class="miolo programa" style="margin:0; padding:0 10px;">
+<section class="miolo programa" >
   <!-- container miolo -->
   <div class="container row-fluid">
     <!--breadcrumb-->
@@ -29,7 +29,7 @@
     </div>
     <!--/breadcrumb-->
     <!-- coluna esquerda -->
-    <div class="span8">
+    <div class="span8" style="margin:0; padding:0 10px;">
       
       <!-- titulo -->
       <h1>Seleção do ouvinte</h1>
