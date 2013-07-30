@@ -78,17 +78,7 @@
               <p> Seleção musical de primeira tem Academia da Berlinda, Isaar e Eddie. </p>
             </div>
           </div> </a>
-          <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/macumba-de-primeira" title=" Macumba de primeira">
-          <div class="row-fluid" style="margin-left:10px">
-            <div class="span3" style="margin-left:0px">
-              <h6>&nbsp;</h6>
-              <img src="/portal/images/capaPrograma/culturabrasil/defaultThumbnail.png" alt="Macumba de primeira" class="thumb">
-            </div>
-            <div class="span9">
-              <h2>Macumba de primeira</h2>
-              <p> Rodrigo Brandão e Tiago Munhoz, da Mamelo Sound System, enfileiram batucadas sangue azul. </p>
-            </div>
-          </div> </a>
+          
           <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/compositores-em-feminino" title=" Compositores em feminino"> <div class="row-fluid titulo"></div>
           <div class="row-fluid" style="margin-left:10px">
             <div class="span3" style="margin-left:0px">
