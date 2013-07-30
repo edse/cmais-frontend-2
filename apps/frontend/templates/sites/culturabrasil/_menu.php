@@ -174,7 +174,7 @@
      <img src="/portal/images/capaPrograma/culturabrasil/oucaculturabrasil.jpg" alt="Ouça a rádio Cultura Brasil"/>
    </a>
     <!-- ouca a radio -->
-  <div class="borda-pontilhada"></div>  
+  <div class="borda-pontilhada borda-menu"></div>  
   </div>
  <!--/container topo-->
   
