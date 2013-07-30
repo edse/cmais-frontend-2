@@ -44,18 +44,15 @@ if(isset($pager)){
     </div>
     <!--/breadcrumb-->
 
-    <div class="row-fluid subSection">
-      <div class="destaque-cultura subsection">
-        <div class="programa subsection">
+    <div class="row-fluid">
+      <div class="destaque-cultura">
+        <div class="busca">
           <span class="interna">
-            <?php
-              if($section->Site->getSlug() == "culturabrasil")
-                echo $section->getTitle();
-              else
-                echo $site->getTitle();
-            ?>
+            Resultado da Busca
           </span>
-          <i class="borda-titulo subsection"></i>
+          <span class="encontradas">
+            Foram encontrados 300 resultados com a expressão “Elis Regina”
+          </span>
         </div>
       </div>
 
