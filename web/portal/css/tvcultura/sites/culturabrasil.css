@@ -233,9 +233,9 @@ textarea{width:100%; font-size:11px;}
  #datepicker .ui-datepicker-next { float:right; }
  #datepicker .ui-corner-all { -moz-border-radius:none; }
  #datepicker .ui-widget-content { background:none; border:none; }
- #datepicker .ui-widget-header {background: none;border: none;width: 205px;margin-left: 48; }
+ #datepicker .ui-widget-header {background: none;border: none;width: 205px;margin-left: 48px; }
  #datepicker .ui-widget-header .ui-icon { background:url(/portal/images/capaPrograma/culturabrasil/setas-grade.png) no-repeat 0px -28px; height:22px; width:22px; }
- #datepicker .ui-datepicker-next .ui-icon { background-position:0 -4px; } 
+ #datepicker .ui-datepicker-next .ui-icon { background-position:0 -5px; } 
  #datepicker table { width:310px; margin-top:15px; }
  #datepicker caption,
  #datepicker th {  text-align:center; width:44px; float:left; }
