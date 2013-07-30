@@ -156,9 +156,9 @@
             </ul>
           </li>
           <!-- botao --->
-            <?php else: ?>  
+        <?php else: ?>  
           <!-- botao --->
-          <li class="<?php if($section->id == $s->id): ?>active<?php endif; ?>">
+          <li class="<?php if( ($section->id == $s->id) || ($s->getSlug() == "programas" && $section->getSlug() == "home") ): ?>active<?php endif; ?>">
             <a href="<?php if($s->getSlug() == "home"): ?>/<?php else: ?><?php echo $s->retriveUrl()?><?php endif; ?>" title="<?php echo $s->getTitle()?>"><?php echo $s->getTitle()?></a>
           </li>
           <!-- /botao --->
