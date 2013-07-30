@@ -17,7 +17,7 @@
 
 
 <!--section miolo--> 
-<section class="miolo programa">
+<section class="miolo programa" style="margin:0; padding:0 10px;">
   <!-- container miolo -->
   <div class="container row-fluid">
     <!--breadcrumb-->
@@ -32,8 +32,8 @@
     <div class="span8">
       
       <!-- titulo -->
-      <h1>Grade de programação</h1>
-      <p class="horario">Sábado, às 23h15 <br /> Horário alternativo: Terça, à 1h45</p>
+      <h1>Seleção do ouvinte</h1>
+      <p class="horario">Preencha e envie o formulário abaixo com até seis músicas adequadas à programação da rádio.</p>
       <!--titulo-->
       
               
