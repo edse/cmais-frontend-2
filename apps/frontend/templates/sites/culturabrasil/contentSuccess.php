@@ -19,8 +19,7 @@
   <div class="container">
       
     <!--breadcrumb-->
-    <div class="row-fluid pontilhada">
-      <div class="borda-pontilhada"></div> 
+    <div class="row-fluid pontilhada"> 
       <ul class="breadcrumb">
         <li><a href="/">Cultura Brasil</a> <span class="divider">»</span></li>
         <?php if($asset->Site->Program->Channel->getSlug() == "culturabrasil"): ?>
@@ -35,12 +34,12 @@
     <div class="row-fluid">
     <!-- asset -->
        
-      <div class="row-fluid" style="margin:0 0 0 0;">
+      <div class="row-fluid">
         <!--col esquerda-->
         <div class="span8 content-asset">
           <div class="content">
             <h1><?php echo $asset->getTitle() ?></h1>
-            <small><?php echo $asset->getDescription() ?></small>
+            <h2><?php echo $asset->getDescription() ?></h2>
             <?php include_partial_from_folder('sites/culturabrasil', 'global/signature', array('uri'=>$uri,'asset'=>$asset)) ?>
           <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
           <?php if ($related[0]->AssetImage->getOriginalUrl()): ?>
@@ -50,6 +49,7 @@
               <small><?php echo $related[0]->getDescription()?> <?php if($related[0]->AssetImage->getAuthor()!=""):?> (<?php echo $related[0]->AssetImage->getAuthor() ?>) <?php endif;?></small>
             </div>
           </p>
+          <div class="borda-pontilhada"></div> 
           <?php endif; ?>
           <?php echo html_entity_decode($asset->AssetContent->render()) ?>
           <?php include_partial_from_folder('blocks', 'global/visite-cmais',array('uri'=>$uri)) ?>

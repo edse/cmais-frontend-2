@@ -97,7 +97,9 @@ img{width:100%;}
 .miolo.grade .data-grade,
 .miolo.grade #accordion2 .accordion-body .btn-body,
 .miolo.grade .destaque-playlist h1,
-.busca-titulo {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+.busca-titulo,
+.content-asset .content h1,
+.content-asset .content h2 {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
@@ -270,3 +272,8 @@ textarea{width:100%; font-size:11px;}
 .busca-titulo h1{color:#333333; font-size:24px;margin: 0;padding: 0 0 0 10px;line-height: 21px}
 .busca-titulo h2{color:#666666; font-size:18px;margin: 0;padding: 10px 0 0 10px;line-height: 14px;}
 /* /tela busca */
+
+/* content */
+.content-asset .content h1{color:#333333; font-size:24px;margin: 0;padding: 0 0 0 10px;line-height: 21px}
+.content-asset .content h2{color:#666666; font-size:18px;margin: 0;padding: 8px 0 0 10px;line-height: 20px;}
+/* /content */
