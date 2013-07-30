@@ -40,7 +40,6 @@
           <div class="content">
             <h1><?php echo $asset->getTitle() ?></h1>
             <h2><?php echo $asset->getDescription() ?></h2>
-            <div class="borda-pontilhada"></div> 
             <?php include_partial_from_folder('sites/culturabrasil', 'global/signature', array('uri'=>$uri,'asset'=>$asset)) ?>
           <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
           <?php if ($related[0]->AssetImage->getOriginalUrl()): ?>
@@ -50,6 +49,7 @@
               <small><?php echo $related[0]->getDescription()?> <?php if($related[0]->AssetImage->getAuthor()!=""):?> (<?php echo $related[0]->AssetImage->getAuthor() ?>) <?php endif;?></small>
             </div>
           </p>
+          <div class="borda-pontilhada"></div> 
           <?php endif; ?>
           <?php echo html_entity_decode($asset->AssetContent->render()) ?>
           <?php include_partial_from_folder('blocks', 'global/visite-cmais',array('uri'=>$uri)) ?>
