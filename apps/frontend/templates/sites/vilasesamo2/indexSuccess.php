@@ -47,10 +47,10 @@
   <!--carrossel personagens-->
   <?php include_partial_from_folder('sites/vilasesamo2', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
   <!--carrossel personagens-->
-  Teste2
+
   <!-- link seções -->
   <section class="bgtotal">
-    <s  pan class="divisa1"></span>
+    <span class="divisa1"></span>
     <div class="destaques row-fluid container">
       <section class="span8">
         <article class="span6 jogo">
