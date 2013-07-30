@@ -1,8 +1,8 @@
  <div class="row-fluid signature">
     <small><?php echo $asset->AssetContent->getAuthor() ?></small>
     <small class="pull-right"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></small>  
+    <div class="borda-pontilhada"></div>
   </div>
-  <div class="borda-pontilhada"></div>
   <div class="row-fluid cabecalho">
     <div class="share content">
         <div class="google">
