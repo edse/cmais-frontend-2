@@ -101,7 +101,7 @@ img{width:100%;}
 .content-asset .content h2,
 .lista-assets a h6,
 .lista-programas span.titulo-arquivo,
-.miolo.programa .row-fluid .span8 h1 {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+.row-fluid .span8 h1 {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
@@ -303,11 +303,11 @@ textarea{width:100%; font-size:11px;}
 /* programa */
 .miolo.programa .span8 .nav li { float:left; background:#ccc; padding:0.2% 0.644%; }
 .miolo.programa .span8 .nav a {  text-transform:uppercase; font-size:12px; color:#333333 }
-.miolo.programa .span8 .nav li.active,
-.miolo.programa .span8 .nav li:hover,
-.miolo.programa .span8 .nav li:hover a { background:#666; }
-.miolo.programa .span8 .nav li:hover a,
-.miolo.programa .span8 .nav li.active a { color:#fff; }
+.span8 .nav li.active,
+.span8 .nav li:hover,
+.span8 .nav li:hover a { background:#666; }
+.span8 .nav li:hover a,
+.span8 .nav li.active a { color:#fff; }
 .row-fluid .span8 h1 { margin:0; color:#333; }
 /* programa */
 
