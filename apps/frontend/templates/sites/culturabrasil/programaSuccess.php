@@ -11,25 +11,11 @@
 <script src="/portal/js/bootstrap/bootstrap.js"></script>
 <?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site))?>
 
-<style type="text/css">
-  .span8 .nav { overflow:hidden; margin-bottom:10px; }
-  .span8 .nav li { float:left; background:#ccc; padding:0.2% 0.644%; }
-  .span8 .nav a { color:#666; font-weight:bold; text-transform:uppercase; font-size:12px; }
-  .span8 .nav li.active,
-  .span8 .nav li:hover,
-  .span8 .nav li:hover a { background:#666; }
-  .span8 .nav li:hover a,
-  .span8 .nav li.active a { color:#fff; }
-  .row-fluid .span8 h1 { margin:0; color:#333;  font-weight:normal; }
-  .span8 .horario { color:#666; font-size:18px; }
-  .span8 .nav a,
-  .row-fluid .span8 h1,
-  .span8 .horario { font-family: 'asapregular',Arial,Helvetica,sans-serif; }
-</style>
+
 
 
 <!-- section miolo -->
-<section class="miolo">
+<section class="miolo programa">
   <!--container-->
   <div class="container">
     <!--breadcrumb-->
@@ -92,17 +78,7 @@
               <p> Seleção musical de primeira tem Academia da Berlinda, Isaar e Eddie. </p>
             </div>
           </div> </a>
-          <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/macumba-de-primeira" title=" Macumba de primeira">
-          <div class="row-fluid" style="margin-left:10px">
-            <div class="span3" style="margin-left:0px">
-              <h6>&nbsp;</h6>
-              <img src="/portal/images/capaPrograma/culturabrasil/defaultThumbnail.png" alt="Macumba de primeira" class="thumb">
-            </div>
-            <div class="span9">
-              <h2>Macumba de primeira</h2>
-              <p> Rodrigo Brandão e Tiago Munhoz, da Mamelo Sound System, enfileiram batucadas sangue azul. </p>
-            </div>
-          </div> </a>
+          
           <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/compositores-em-feminino" title=" Compositores em feminino"> <div class="row-fluid titulo"></div>
           <div class="row-fluid" style="margin-left:10px">
             <div class="span3" style="margin-left:0px">
