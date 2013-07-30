@@ -303,4 +303,7 @@ a.jp-play,a.jp-play:hover, a.jp-pause, a.jp-pause:hover, a.jp-stop, a.jp-stop:ho
 background-image: url("/portal/images/capaPrograma/culturabrasil/jplayer.png")!important;}
 div.jp-playlist, div.jp-interface, div.jp-type-playlist div.jp-playlist li { border:none!important;}
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #666666 !important;}
+div.jp-type-playlist div.jp-playlist li.jp-playlist-current {list-style-type: none;list-style-position: none; color:#666666}
+div.jp-type-playlist div.jp-playlist li:hover{color:#333333}
+
 /* /player */
