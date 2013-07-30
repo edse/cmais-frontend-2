@@ -291,4 +291,5 @@ textarea{width:100%; font-size:11px;}
 .content-asset .fb{float:left; margin-left: 10px; width: 200px;}
 .content-asset .cabecalho small{font-size:10px; color:black;}
 .content-asset .share.content{margin:0 -28px 0;float: right;width: 245px;}
+.content-asset .fb_iframe_widget {overflow: hidden;width: 610px;}
 /* /content */
