@@ -281,14 +281,14 @@ textarea{width:100%; font-size:11px;}
 .content-asset p,
 .content-asset strong,
 .content-asset span{color:black !important;margin-bottom:0px;}
-.legenda{min-width: 646px;background-color: #E5E5E5;margin-bottom: 10px;padding: 5px 10px;line-height: 1.2em;}
-.legenda small{color:#949494; font-size:11px;}
-div.jp-audio, div.jp-video {margin-bottom: 20px;margin-top:10px;color: #333;}
-div.jp-playlist, div.jp-interface {border:none !important;}
-div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #00b4d5;}
-.signature{margin:10px 0 5px 0;border-bottom: 1px dotted #ccc}
-.signature small{font-size:11px; color:#949494;}
-.cabecalho{font-size:11px; margin-bottom:20px; color:black;}
-.cabecalho small{font-size:10px; color:black;}
-.share.content{margin:0 -28px 0;float: right;width: 245px;}
+.content-asset .legenda {min-width: 635px;background-color: #E5E5E5;margin-bottom: 10px;padding: 5px 10px;line-height: 1.2em;}
+.content-asset .legenda small{color:#949494; font-size:11px;}
+.content-asset .signature{margin:10px 0 5px 0;border-bottom: 1px dotted #ccc}
+.content-asset .signature small{font-size:11px; color:#949494;}
+.content-asset .cabecalho{font-size:11px; margin-bottom:20px; color:black;}
+.content-asset .twt.conteudo{width:75px; float:left;margin-left: 10px;}
+.content-asset .google{float:left;}
+.content-asset .fb{float:left; margin-left: 10px; width: 200px;}
+.content-asset .cabecalho small{font-size:10px; color:black;}
+.content-asset .share.content{margin:0 -28px 0;float: right;width: 245px;}
 /* /content */
