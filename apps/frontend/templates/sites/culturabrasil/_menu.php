@@ -126,7 +126,7 @@
 <!--section topo--> 
 <section class="topo"> 
   <!--container topo--> 
-  <div class="container row-fluid">
+  <div class="container menu row-fluid">
     <!--logo-->
     <div class="logo">
        <a href="http://cmais.com.br/culturabrasil" title="Cultura Brasil">

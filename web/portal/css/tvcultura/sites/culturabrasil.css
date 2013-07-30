@@ -76,6 +76,7 @@ img{width:100%;}
 
 /* geral */
 .container{width:1010px; margin:0 auto;}
+.container.menu{position:relative;}
 .topo .ouca{max-width:150px;display: block;float: right;}
 .topo .logo{width: 210px; margin-top: 10px;}
 .menu-principal{max-width: 853px;float: left;}
@@ -124,7 +125,7 @@ img{width:100%;}
 /* geral */
 
 /* subsection */
-.borda-pontilhada{width:100%; height:1px; background: url(/portal/images/capaPrograma/culturabrasil/bg-dotted.png) repeat-x;}
+.borda-pontilhada{width:100%; height:1px; background: url(/portal/images/capaPrograma/culturabrasil/bg-dotted.png) repeat-x;position: absolute;bottom: 10px;}
 .pontilhada{margin-top:-8px; }
 .breadcrumb{background: none;padding: 8px 10px;color: #333333;margin-bottom:10px;}
 .breadcrumb li{font-size:12px;}
