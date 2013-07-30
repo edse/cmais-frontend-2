@@ -76,7 +76,8 @@ img{width:100%;}
 
 /* geral */
 .container{width:1010px; margin:0 auto;}
-.topo .ouca{max-width:150px;display: block;float: right;}
+.container.menu{position:relative;}
+.topo .ouca{max-width:150px;display: block;position: absolute;top: 0;right: 0;}
 .topo .logo{width: 210px; margin-top: 10px;}
 .menu-principal{max-width: 853px;float: left;}
 .menu-principal li a{ color:#666666; text-transform:uppercase; font-size: 14px;padding: 5px 7px;margin-top: 12px; border-radius:0px}
@@ -91,14 +92,21 @@ img{width:100%;}
 .menu-principal li a,
 .programa.subsection span.interna, 
 .lista-assets a h2,
-.lista-programas a {font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+.lista-programas a,
+.miolo.grade h1,
+.miolo.grade .data-grade,
+.miolo.grade #accordion2 .accordion-body .btn-body,
+.miolo.grade .destaque-playlist h1,
+.busca-titulo,
+.content-asset .content h1,
+.content-asset .content h2,
+.lista-assets a h6,
+.lista-programas span.titulo-arquivo{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
 .destaque-playlist h1,
-.destaque-cultura span, 
-.lista-assets a h6,
-.lista-programas span.titulo-arquivo{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
+.destaque-cultura span{font-family: 'asapbold', Arial, Helvetica, sans-serif;}
 
 .banner-culturabrasil,
 .destaque-cultura span.interna{display: block;overflow: hidden;max-width: 300px;margin: 20px auto;}
@@ -117,10 +125,16 @@ img{width:100%;}
 .aspas{color:#999999;}
 .nav-pills>.active>a, 
 .nav-pills>.active>a:hover{background-color:#F5f5f5; color:#666666}
+
+.search-culturabrasil{width: 150px;height: 29px;position: absolute;right: 0;bottom: 24px;}
+.search-culturabrasil .lupa{width: 12px;height: 11px;display: block;float: left;background: url(/portal/images/capaPrograma/culturabrasil/lupa.jpg) no-repeat; position: absolute;top: 13px;left: -10px}
+.search-culturabrasil #term{width: 119px;border-radius: 0px;border: none;border-bottom: 1px solid #868686;box-shadow: none;padding: 5px 3px 0px 3px;}
+.search-culturabrasil .ipt-submit{border: none;background: none;margin-top: 6px;}
 /* geral */
 
 /* subsection */
 .borda-pontilhada{width:100%; height:1px; background: url(/portal/images/capaPrograma/culturabrasil/bg-dotted.png) repeat-x;}
+.borda-menu{position: absolute;bottom: 10px;}
 .pontilhada{margin-top:-8px; }
 .breadcrumb{background: none;padding: 8px 10px;color: #333333;margin-bottom:10px;}
 .breadcrumb li{font-size:12px;}
@@ -142,7 +156,7 @@ img{width:100%;}
 .destaque-cultura span, .rodape span{text-transform:uppercase; font-size:12px; background:#666666; color:#FFFFFF; padding:0px 5px;letter-spacing: 0.1em; display: block;float:left;}
 .destaque-cultura h2{font-size:23px;font-weight: normal;margin: 0;line-height: 36px;color: #333333;}
 .destaque-cultura p{font-size:14px;}
-.destaque-cultura i.borda-titulo, .rodape i.borda-titulo{ float:left;background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat; width:7px; height:19px; display:block;}
+#accordion2 i.borda-titulo, .destaque-cultura i.borda-titulo, .rodape i.borda-titulo{ float:left;background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat  0px 1px; width:7px; height:19px; display:block;}
 .destaque-cultura a:hover{text-decoration:none;}
 
 .destaque-cultura.frase h2{color:#666666; text-align:center;}
@@ -195,3 +209,97 @@ textarea{width:100%; font-size:11px;}
 .programa.subsection span.interna{font-size: 24px; text-transform:none;margin-bottom:8px;}
 .destaque-cultura.subsection{margin:0;}
 /* /lista programas */
+
+/* grade programação*/
+.banner-culturabrasil{float:left;}
+.miolo.grade h1{font-size:22px; color:#333333;}
+.miolo.grade .destaque-playlist h1{color:#666666; font-size:18px; text-transform: none;}
+.miolo.grade .seta-grade{width:25px; height:26px;display:block; background:url(/portal/images/capaPrograma/culturabrasil/setas-grade.png) no-repeat;}
+.miolo.grade .data-grade{float:left; padding:3px 20px; text-align:center;font-size:18px;}
+.miolo.grade .data-btn{float:left; overflow: hidden;}
+.miolo.grade .seta-grade.esquerda{background-position:0px -54px}
+.miolo.grade .seta-grade.direita{background-position:0px -85px}
+.miolo.grade .seta-grade.cima{background-position:0px -149px; float:right;}
+.miolo.grade .seta-grade.baixo{background-position:0px -117px; float:right;}
+.miolo.grade #accordion2 .accordion-toggle .hora, .miolo.grade #accordion2 .accordion-toggle .programa-grade{font-size:18px;font-weight:bold;}
+.miolo.grade #accordion2 .accordion-toggle .programa-grade{color:#333333;}
+.miolo.grade #accordion2 .accordion-toggle .hora{color:#666666;}
+.miolo.grade #accordion2 .accordion-toggle .seta-grade{position:relative; bottom:4px;}
+.miolo.grade #accordion2{clear:both;}
+.miolo.grade #accordion2 .accordion-body .btn-body{position:relative; padding: 0px 10px;background: #cccccc;float: left;clear: both;margin-bottom: 10px;text-transform: uppercase;font-size: 12px;color: #666666;}
+.miolo.grade #accordion2 .accordion-body .btn-body:hover{text-decoration:none;}
+.miolo.grade #accordion2 .accordion-group{border:none}
+.miolo.grade #accordion2 .accordion-group .accordion-inner{border:none;}
+.miolo.grade #accordion2 .accordion-heading a{text-decoration:none; padding:10px 3px;}
+.miolo.grade #accordion2 i.borda-grade{width: 10px;height: 20px;display: block;position: absolute;top: 0;right: -10px;background-position: 0px -72px;}
+
+/* grade programação*/
+
+/**** datepicker ****/
+ #datepicker .ui-widget { width:310px; }
+ #datepicker .ui-datepicker-title { width:120px; float:left; margin:0 20px; text-align:center; }
+ #datepicker .ui-datepicker-title span { font:bold 16px arial; color:#333; }
+ #datepicker .ui-corner-all { float:left; }
+ #datepicker .ui-datepicker-next { float:right; }
+ #datepicker .ui-corner-all { -moz-border-radius:none; }
+ #datepicker .ui-widget-content { background:none; border:none; }
+ #datepicker .ui-widget-header {background: none;border: none;width: 205px;margin-left: 48px; }
+ #datepicker .ui-widget-header .ui-icon { background:url(/portal/images/capaPrograma/culturabrasil/setas-grade.png) no-repeat 0px -28px; height:22px; width:22px; }
+ #datepicker .ui-datepicker-next .ui-icon { background-position:0 -5px; } 
+ #datepicker table { width:310px; margin-top:15px; }
+ #datepicker caption,
+ #datepicker th {  text-align:center; width:44px; float:left; }
+ #datepicker tr { width:310px; }
+ #datepicker table thead { width:310px; }
+ #datepicker table thead th span { font:bold 10px arial; color:#333; text-transform:uppercase; }
+ #datepicker tbody { margin-top:10px; width:310px; float:left; }
+ #datepicker .ui-state-default { background:transparent; width:42px; height:26px;  text-align:center; display:block; font:bold 12px arial; color:#333; border:none;  line-height:26px; margin:0 2px 2px 0; }  
+ #datepicker .ui-widget-content .ui-state-active,
+ #datepicker .ui-state-hover, 
+ #datepicker .ui-widget-content .ui-state-hover, 
+ #datepicker .ui-widget-header .ui-state-hover, 
+ #datepicker .ui-state-focus, 
+ #datepicker .ui-widget-content .ui-state-focus, 
+ #datepicker .ui-widget-header .ui-state-focus { background:#a8a8a8; color:#fff; text-decoration:none; }
+ #datepicker .ui-widget-content .ui-datepicker-next:hover,
+ #datepicker .ui-widget-content .ui-datepicker-prev:hover { background:none;  border:none; }
+ #datepicker tbody span { background:transparent; color:#333;}
+ #datepicker tbody a { background:#fff; color:#333; text-decoration:none; }
+ #datepicker tbody a:hover {background:#ff6633; color:#fff;}
+/**** /datepicker ****/
+
+/* tela busca */
+.busca-titulo h1{color:#333333; font-size:24px;margin: 0;padding: 0 0 0 10px;line-height: 21px}
+.busca-titulo h2{color:#666666; font-size:18px;margin: 0;padding: 10px 0 0 10px;line-height: 14px;}
+/* /tela busca */
+
+/* content */
+.content-asset{padding:0px 5px}
+.content-asset .content h1{color:#333333; font-size:24px;margin: 0;padding: 0 0 0 0;line-height: 21px}
+.content-asset .content h2{color:#666666; font-size:18px;margin: 0;padding: 8px 0 0 0;line-height: 18px;}
+.content {padding-bottom: 5px;margin: 0px 0 10px;}
+.content h1{font-size:24px;margin-bottom:0px;}
+.content small{color:#6F6F6F;font-size:14px;}
+.content-asset p,
+.content-asset strong,
+.content-asset span{color:black !important;margin-bottom:0px;}
+.content-asset .legenda {min-width: 635px;background-color: #E5E5E5;margin-bottom: 10px;padding: 5px 10px;line-height: 1.2em;}
+.content-asset .legenda small{color:#949494; font-size:11px;}
+.content-asset .signature{margin:10px 0 5px 0;}
+.content-asset .signature small{font-size:11px; color:#949494;}
+.content-asset .cabecalho{font-size:11px; margin-bottom:20px; color:black;}
+.content-asset .twt.conteudo{width:75px; float:left;margin-left: 10px;}
+.content-asset .google{float:left;}
+.content-asset .fb{float:left; margin-left: 10px; width: 200px;}
+.content-asset .cabecalho small{font-size:10px; color:black;}
+.content-asset .share.content{margin:0 -28px 0;float: right;width: 245px;}
+.content-asset .fb_iframe_widget {overflow: hidden;width: 610px;}
+.banner-radio{width: 300px;margin: 20px auto;}
+/* /content */
+
+/* player */
+a.jp-play,a.jp-play:hover, a.jp-pause, a.jp-pause:hover, a.jp-stop, a.jp-stop:hover, a.jp-previous, a.jp-previous:hover, a.jp-next, a.jp-next:hover, div.jp-seek-bar, div.jp-play-bar, a.jp-mute, a.jp-mute:hover, a.jp-unmute, a.jp-unmute:hover, div.jp-volume-bar, div.jp-volume-bar-value, div.jp-video div.jp-video-play, div.jp-video div.jp-video-play:hover {
+background-image: url("/portal/images/capaPrograma/culturabrasil/jplayer.png")!important;}
+div.jp-playlist, div.jp-interface, div.jp-type-playlist div.jp-playlist li { border:none!important;}
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #666666 !important;}
+/* /player */

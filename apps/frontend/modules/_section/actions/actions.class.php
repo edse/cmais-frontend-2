@@ -757,6 +757,7 @@ class _sectionActions extends sfActions
                 ->from('Asset a, SectionAsset sa, Section s')
                 ->where('sa.section_id = s.id')
                 ->andWhere('sa.asset_id = a.id')
+                ->andWhere('a.site_id = ?', $this->site->id)
                 ->andWhereIn('s.slug', $arquivo)
                 ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
                 ->andWhere('a.is_active = ?', 1)

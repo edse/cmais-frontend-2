@@ -151,16 +151,30 @@ class _assetActions extends sfActions
 
       // siteSections
       if($this->asset->Site->getType() == "ProgramaRadio"){
-	      $this->siteSections = Doctrine_Query::create()
-	        ->select('s.*')
-	        ->from('Section s')
-	        ->where('s.site_id = ?', 4)
-	        ->andWhere('s.is_active = ?', 1)
-	        ->andWhere('s.is_visible = ?', 1)
-	        ->andWhere('parent_section_id IS NULL')
-	        ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
-	        ->orderBy('s.display_order')
-	        ->execute();
+        if($this->site->Program->Channel->getSlug() == "culturabrasil"){
+          $this->siteSections = Doctrine_Query::create()
+            ->select('s.*')
+            ->from('Section s')
+            ->where('s.site_id = ?', 1124)
+            ->andWhere('s.is_active = ?', 1)
+            ->andWhere('s.is_visible = ?', 1)
+            ->andWhere('parent_section_id IS NULL')
+            ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
+            ->orderBy('s.display_order')
+            ->execute();
+        }
+        else {
+          $this->siteSections = Doctrine_Query::create()
+            ->select('s.*')
+            ->from('Section s')
+            ->where('s.site_id = ?', 4)
+            ->andWhere('s.is_active = ?', 1)
+            ->andWhere('s.is_visible = ?', 1)
+            ->andWhere('parent_section_id IS NULL')
+            ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
+            ->orderBy('s.display_order')
+            ->execute();
+        }
       }
 			elseif(in_array($this->asset->Site->getSlug(), array("sic","revistavitrine2","revistavitrine","radarcultura"))){
 	      $this->siteSections = Doctrine_Query::create()
@@ -1049,16 +1063,23 @@ class _assetActions extends sfActions
         }
         elseif($this->site->getType() == "ProgramaRadio"){
           if(in_array($this->asset->Site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos"))){
-            if($debug) print "<br>2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug();
+            if($debug) print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug();
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug());
           }
           else {
             if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Success.php')){
-              if($debug) print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
+              if($debug) print "<br>2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
-            }else{
-              if($debug) print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug();
-              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug());
+            }
+            else {
+              if($this->site->Program->Channel->getSlug() == "culturabrasil"){
+                if($debug) print "<br>2-1-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/culturabrasil/'.$this->asset->AssetType->getSlug();
+                $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/culturabrasil/'.$this->asset->AssetType->getSlug());
+              }
+              else {
+                if($debug) print "<br>2-1-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug();
+                $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug());
+              }
             }
           }
         }

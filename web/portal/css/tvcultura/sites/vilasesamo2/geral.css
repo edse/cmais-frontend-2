@@ -209,8 +209,8 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-btn-jogos{ background-position: 0 -110px; width: 60px; height: 60px; } 
 .sprite-btn-personagens{ background-position: 0 -220px; width: 60px; height: 60px; } 
 .sprite-btn-videos{ background-position: 0 -330px; width: 60px; height: 60px; } 
-.sprite-icon-busca-hover{ background-position: 0 -440px; width: 29px; height: 29px; } 
-.sprite-icon-busca{ background-position: 0 -519px; width: 29px; height: 29px; } 
+.sprite-icon-busca-hover{ background-position: 0 -519px; width: 29px; height: 29px; } 
+.sprite-icon-busca{ background-position: 0 -440px;  width: 29px; height: 29px; } 
 .sprite-icon-clipes-grd-hover{ background-position: 0 -598px; width: 80px; height: 80px; } 
 .sprite-icon-clipes-grd{ background-position: 0 -728px; width: 80px; height: 80px; } 
 .sprite-icon-clipes-med-hover{ background-position: 0 -858px; width: 56px; height: 56px; } 
@@ -254,7 +254,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .topo-vila .container { height:51px; }
 .topo-vila h2 { width: 83px; display: block; margin:8px 0 0 10px; float:left;}
 .topo-vila .sprite-logo-incluir { display: block; text-indent:-9999px;    }
-.topo-vila .sprite-logo-incluir:hover {   background-position: 0 -197px; width: 83px; height: 36px;  }
+.topo-vila .sprite-logo-incluir:hover {   background-position: 0 -850px; width: 83px; height: 36px;  }
 .topo-vila nav { float:right; margin-right:0;  }
 .topo-vila .nav,
 .topo-vila nav form { float:right; }
@@ -318,7 +318,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques i.sprite-icon-colorir-grd:hover { background-position: 0 -1070px;}
 .destaques a { display: block;}
 .destaques h3 { overflow:hidden; margin:0; border-bottom:2px solid #0191fb; }
-.destaques h3 a { color:#fff; line-height:27px; text-align:left; display:block; padding:0; margin-top:15px; }
+.destaques h3 a { color:#fff; line-height:27px; text-align:left; display:block; padding:0; margin-top:15px; margin-left:4%; }
 .destaques section .video { background:#f5861f ; border-color:#f9a41b ; }
 .destaques section .video img,
 .destaques section .video h3 { border-color:#f07317 ; }

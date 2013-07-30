@@ -67,6 +67,18 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 #topo-fpa.nav > li:hover > a {*padding: 18px 8px 18px 8px !important;padding: 18px 8px 18px 8px!important;text-decoration: none; background-color: #f7f7f7!important; color:#1863b7; border-top:3px solid #1863b7; border-bottom:1px solid #1863b7; }
 #topo-fpa.nav-tabs .dropdown-toggle .caret,
 #topo-fpa.nav .dropdown-toggle .caret {position:absolute;left:0;top:0;}
+.navbar.fpa-responsivo{display:none;}
+.navbar.fpa-responsivo .container{min-height: 0px}
+.navbar.fpa-responsivo .navbar-inner{border: none;border-radius: 0px;z-index: 0;position: relative;margin-top: 56px;min-height: 0px!important;padding: 0px 0;box-shadow: 10px 10px 5px #999999;}
+.navbar.fpa-responsivo .navbar-inner .btn-navbar{margin-top: -50px;}
+.navbar.fpa-responsivo .nav-collapse ul li{text-align: left;boder-top: 1px solid #626262!important;}
+.navbar.fpa-responsivo .nav-collapse ul li .links{background:#f7f7f7;border-bottom:1px solid #5c5c5c;font-weight:bold; text-transform:uppercase; color: #8c8c8c;font-weight: bold;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px; margin:0;}
+.navbar.fpa-responsivo .nav-collapse ul li a{width:100%; display: block;padding: 8px 8px 8px 8px!important;}
+.navbar.fpa-responsivo .nav-collapse ul li .sub-links{border-bottom:1px dotted #666666;padding: 0px 6px 0px 20px; margin:0;color: #5c5c5c!important;font-family: Arial, Helvetica, sans-serif;font-weight: bold;}
+.navbar.fpa-responsivo .nav-collapse ul li .sub-links-tit{padding-bottom:0px!important;}
+.navbar.fpa-responsivo .nav-collapse ul li:first-child{border-top:1px solid #8c8c8c;}
+.navbar.fpa-responsivo .nav-collapse .menu-sub-links{border-bottom:1px solid #8c8c8c!important;}
+
 /* /TOPO FPA */
 
 /* LINHA DO TEMPO */
@@ -196,6 +208,7 @@ and (max-device-width : 1024px) {
 @media only screen 
 and (max-width : 980px) {
    #topo-fpa{display:none;}
+   .navbar.fpa-responsivo{display:block;}
    #email-central .form-horizontal .control-label {max-width: 81px!important;}
    #email-central .form-horizontal .controls {margin-left: 90px!important;}
    #email-central .botoes-form {margin-left: 89px!important;}
@@ -228,5 +241,5 @@ and (max-width : 320px) {
   #email-central .form-horizontal .controls {margin-left: 67px!important;}
   #email-central select{width: 200px;}
   #email-central .botoes-form {margin-left: 77px!important;}
-}
+} 
 

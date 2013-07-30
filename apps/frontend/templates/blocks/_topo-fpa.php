@@ -115,9 +115,99 @@
       </li>
     </ul>
     <!--/LISTA DE BOTOES-->
+    
+    <!--menu responsivo-->
+    <div class="navbar fpa-responsivo">
+      <!--menu pra tablet e celular-->
+      <div class="navbar-inner">
+        <!--container-->
+        <div class="container">
+          <!--botao lateral-->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <!--/botao lateral-->
+          <!--a class="brand" href="#">Project Central</a-->
+          <!--botoes-->
+          <div class="nav-collapse collapse">
+            <!--lista botaoes-->
+            <ul>
+              
+              <li style="margin-top:15px">
+                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Quem somos">Quem somos</a>
+              </li>
+              
+              <li>
+                <a href="#" class="links menu-sub-links">acervo</a>
+                <ul>
+                  <li class="sub-links ">
+                    <a href="http://cmais.com.br/fpa/decada-60" title="Linha do Tempo">Linha do tempo</a>
+                  </li>  
+                </ul>
+              </li>
+              
+              <li>
+                <a href="http://cmais.com.br/central-de-relacionamento" class="links" title="Central de relacionamento">central de relacionamento</a>
+              </li>
+              
+              <li>
+                <a href="http://www2.tvcultura.com.br/fpa/institucional/licitacoes.aspx" class="links" title="Licitações">licitações</a>
+              </li>
+              
+              <li>
+                <a href="http://www2.tvcultura.com.br/selecao/" class="links" title="Trabalhe Conosco">Trabalhe conosco</a>
+              </li>
+              
+              <li>
+                <a href="#" class="links menu-sub-links">emissoras</a>
+                <ul>
+                  <li class="sub-links ">
+                    <a href="http://tvcultura.cmais.com.br/" title="TV Cultura">TV Cultura</a>
+                  </li>
+                  <li class="sub-links">
+                    <a href="http://univesptv.cmais.com.br/" title="Quem somos">Univesp TV</a>
+                  </li>
+                  <li class="sub-links">
+                    <a href="http://multicultura.cmais.com.br/" title="Quem somos">multiCultura</a>
+                  </li>
+                  <li class="sub-links">
+                    <a href="http://tvratimbum.cmais.com.br/" title="Quem somos">TV Rá Tim Bum!</a>
+                  </li>
+                  <li class="sub-links">
+                    <a href="http://www.culturabrasil.com.br/" title="Quem somos">Cultura Brasil</a>
+                  </li>
+                  <li class="sub-links">
+                    <a href="http://culturafm.cmais.com.br/" title="Quem somos">Cultura FM</a> 
+                  </li>  
+                </ul>
+              </li>
+              
+              <li style="margin-bottom: 15px;">
+                <a href="#" class="links menu-sub-links">portais</a>
+                <ul>
+                  <li class="sub-links">
+                    <a href="http://cmais.com.br/" title="TV Cultura">CMAIS+</a>
+                  </li>
+                  <li class="sub-links">
+                    <a href="http://www.culturabrasil.com.br/" title="Quem somos">Cultura Brasil</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!--/lista botaoes-->
+          </div>
+          <!--/botoes-->
+        </div>
+        <!--container-->
+      </div>
+      <!--/menu pra tablet e celular-->
+    </div>
+    <!--/menu responsivo-->
      
   </div>
   <!--/CONTAINER-->
-
+ 
 </div> 
 <!-- /FUNDO-TOPO-->

@@ -126,7 +126,7 @@
 <!--section topo--> 
 <section class="topo"> 
   <!--container topo--> 
-  <div class="container row-fluid">
+  <div class="container menu row-fluid">
     <!--logo-->
     <div class="logo">
        <a href="http://cmais.com.br/culturabrasil" title="Cultura Brasil">
@@ -156,9 +156,9 @@
             </ul>
           </li>
           <!-- botao --->
-            <?php else: ?>  
+        <?php else: ?>  
           <!-- botao --->
-          <li class="<?php if($section->id == $s->id): ?>active<?php endif; ?>">
+          <li class="<?php if( ($section->id == $s->id) || ($s->getSlug() == "programas" && $section->getSlug() == "home") ): ?>active<?php endif; ?>">
             <a href="<?php if($s->getSlug() == "home"): ?>/<?php else: ?><?php echo $s->retriveUrl()?><?php endif; ?>" title="<?php echo $s->getTitle()?>"><?php echo $s->getTitle()?></a>
           </li>
           <!-- /botao --->
@@ -169,12 +169,23 @@
    <?php endif; ?>
    <!--/menu cultura brasil-->
    
+   <!--search-->
+   <div class="search-culturabrasil">
+    <i class="lupa"></i>
+    <form class="busca-culturabrasil" action="/busca" method="post">
+      <input type="hidden" name="site_id" id="site_id" value="">
+      <input class="ipt-txt" type="text" name="term" id="term" value="">
+      <input class="ipt-submit" type="submit" value="OK">
+    </form>
+   </div>
+   <!--/search-->
+   
    <!-- ouca a radio -->
    <a id="ouca" class="ouca" href="javascript:;">
      <img src="/portal/images/capaPrograma/culturabrasil/oucaculturabrasil.jpg" alt="Ouça a rádio Cultura Brasil"/>
    </a>
     <!-- ouca a radio -->
-    
+  <div class="borda-pontilhada borda-menu"></div>  
   </div>
  <!--/container topo-->
   

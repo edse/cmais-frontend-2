@@ -20,7 +20,7 @@ if(isset($pager)){
 <![endif]-->
 <script src="/portal/js/bootstrap/bootstrap.js"></script>
 
-<?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
+<?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site)) ?>
 
 <!-- section miolo -->
 <section class="miolo">
@@ -32,14 +32,13 @@ if(isset($pager)){
     
     <!--breadcrumb-->
     <div class="row-fluid pontilhada">
-      <div class="borda-pontilhada"></div> 
       <ul class="breadcrumb">
-        <?php if($section->Site->getSlug() == "culturabrasil"): ?>
-        <li><a href="<?php echo url_for('homepage')?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
-        <li><?php echo $section->getTitle(); ?> </li>
-        <?php else: ?>
+        <li><a href="/">Cultura Brasil</a> <span class="divider">»</span></li>
+        <?php if($section->Site->Program->Channel->getSlug() == "culturabrasil"): ?>
         <li><a href="<?php echo url_for('homepage')?>programas">Programas</a> <span class="divider">»</span></li>
-        <li><?php echo $site->getTitle(); ?> </li>
+        <li><?php echo $site->getTitle() ?> </li>
+        <?php else:?>         
+        <li><?php echo $section->getTitle() ?> </li>
         <?php endif; ?>         
       </ul>
     </div>
@@ -76,13 +75,15 @@ if(isset($pager)){
                 </div>
                 <?php endif;?>
             <div class="row-fluid" style="margin-left:10px">
-              <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
-              <?php if ($related[0]->getThumbnail2()): ?>
               <div class="span3" style="margin-left:0px">
                 <h6><?php if ($d->AssetContent->getHeadlineShort()): ?><?php echo $d->AssetContent->getHeadlineShort(); ?><?php endif; ?>&nbsp;</h6>
+                <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
+                <?php if ($related[0]->getThumbnail2()): ?>
                 <img src="<?php echo $related[0]->getThumbnail2() ?>" alt=" <?php echo $d->getTitle(); ?>" class="thumb">
+                <?php else: ?>
+                <img src="/portal/images/capaPrograma/culturabrasil/defaultThumbnail<?php echo rand(1,2) ?>.jpg" alt="<?php echo $d->getTitle(); ?>" class="thumb">
+                <?php endif; ?>
               </div>
-              <?php endif; ?>
               <div class="span9">
                 <h2><?php echo $d->getTitle(); ?></h2>
                 <p>

@@ -17,7 +17,8 @@
         <?php if(count($siteSections) > 0): ?>
         <!-- MENU SIC -->
         <div class="menu-central">
-        
+          
+          
           
           <!-- MENU PRINCIPAL -->
           <ul class="nav nav-pills">
@@ -60,6 +61,8 @@
                                     
           </ul>
           <!-- /MENU PRINCIPAL -->
+          
+          
           
         </div>
         <!-- /MENU SIC -->
