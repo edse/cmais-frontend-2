@@ -41,7 +41,7 @@
           <div class="content">
             <h1><?php echo $asset->getTitle() ?></h1>
             <small><?php echo $asset->getDescription() ?></small>
-            <?php include_partial_from_folder('sites/radarcultura', 'global/signature', array('uri'=>$uri,'asset'=>$asset)) ?>
+            <?php include_partial_from_folder('sites/culturabrasil', 'global/signature', array('uri'=>$uri,'asset'=>$asset)) ?>
           <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
           <?php if ($related[0]->AssetImage->getOriginalUrl()): ?>
           <p>
