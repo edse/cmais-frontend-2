@@ -53,7 +53,7 @@
                 <i class="seta-grade baixo"></i>
               </a>
               <!--linha pontilhada-->
-              <div class="linha-culturabrasil"></div>
+              <div class="borda-pontilhada"></div>
               <!--/linha pontilhada-->
             </div>
             <!--titulo-->
@@ -84,7 +84,7 @@
                 <i class="seta-grade cima"></i>
               </a>
               <!--linha pontilhada-->
-              <div class="linha-culturabrasil"></div>
+              <div class="borda-pontilhada"></div>
               <!--/linha pontilhada-->
             </div>
             <!--titulo-->
@@ -114,7 +114,7 @@
                 <i class="seta-grade cima"></i>
               </a>
               <!--linha pontilhada-->
-              <div class="linha-culturabrasil"></div>
+              <div class="borda-pontilhada"></div>
               <!--/linha pontilhada-->
             </div>
             <!--titulo-->
@@ -144,7 +144,7 @@
                 <i class="seta-grade cima"></i>
               </a>
               <!--linha pontilhada-->
-              <div class="linha-culturabrasil"></div>
+              <div class="borda-pontilhada"></div>
               <!--/linha pontilhada-->
             </div>
             <!--titulo-->
