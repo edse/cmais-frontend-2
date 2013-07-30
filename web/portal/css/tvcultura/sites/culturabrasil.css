@@ -283,7 +283,7 @@ textarea{width:100%; font-size:11px;}
 .content-asset span{color:black !important;margin-bottom:0px;}
 .content-asset .legenda {min-width: 635px;background-color: #E5E5E5;margin-bottom: 10px;padding: 5px 10px;line-height: 1.2em;}
 .content-asset .legenda small{color:#949494; font-size:11px;}
-.content-asset .signature{margin:10px 0 5px 0;border-bottom: 1px dotted #ccc}
+.content-asset .signature{margin:10px 0 5px 0;}
 .content-asset .signature small{font-size:11px; color:#949494;}
 .content-asset .cabecalho{font-size:11px; margin-bottom:20px; color:black;}
 .content-asset .twt.conteudo{width:75px; float:left;margin-left: 10px;}
