@@ -67,7 +67,7 @@ footer .mapa .span12 .col-esq,
 .navbar .btn-navbar:hover,
 .navbar .btn-navbar { background:none; border:none; padding:0; margin:0; box-shadow: none; }
 .navbar-fixed-top { margin-bottom:0; position:fixed;}
-#content {  min-height:500px; position:relative; top:103px; margin-bottom:103px; }
+#content {  min-height:500px; position:relative; top:103px; margin-bottom:90px; }
 .header-bar,
 section { max-width:980px; margin:0 auto; clear:both;}
 .navbar-inverse .navbar-inner { 
@@ -303,7 +303,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques .tipoC { background:#999; }
 .destaques .tipoD { background:#eee; }
 .destaques .banner a img,
-.destaques .banner a { display: block; width:100% }
+.destaques .banner a { display: block; width:100%; height:250px; }
 .divisa { display: block; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-divisa.png) repeat-x; height:2px; max-width:940px; margin:0 auto 20px; }
 .bgtotal { width:100%; max-width:100% !important; background:#fee133; padding-top:20px; }
 .destaques section .span6 { width:31.6%; overflow:hidden; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
