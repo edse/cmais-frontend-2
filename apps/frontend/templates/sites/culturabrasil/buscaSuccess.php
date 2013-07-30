@@ -337,7 +337,7 @@ Notice: Undefined variable: url in /var/frontend/apps/frontend/templates/sites/c
         </div>
       </div>
       
-      <div class="row-fluid destaque-cultura" style="clear: both;">
+      <div class="row-fluid busca-titulo" style="clear: both;">
         <h1 class="resultadoo">Sugestões</h1>
         <h2 class="encontradas">Certifique-se de que todas as palavras estejam escritas corretamente.</h2>
         <h2 class="encontradas">Tente palavras-chave diferentes.</h2>
