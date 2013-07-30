@@ -318,7 +318,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques i.sprite-icon-colorir-grd:hover { background-position: 0 -1070px;}
 .destaques a { display: block;}
 .destaques h3 { overflow:hidden; margin:0; border-bottom:2px solid #0191fb; }
-.destaques h3 a { color:#fff; line-height:27px; text-align:left; display:block; padding:0; margin-top:15px; }
+.destaques h3 a { color:#fff; line-height:27px; text-align:left; display:block; padding:0; margin-top:15px; margin-left:4%; }
 .destaques section .video { background:#f5861f ; border-color:#f9a41b ; }
 .destaques section .video img,
 .destaques section .video h3 { border-color:#f07317 ; }
