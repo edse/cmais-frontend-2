@@ -49,7 +49,6 @@
               <small><?php echo $related[0]->getDescription()?> <?php if($related[0]->AssetImage->getAuthor()!=""):?> (<?php echo $related[0]->AssetImage->getAuthor() ?>) <?php endif;?></small>
             </div>
           </p>
-          <div class="borda-pontilhada"></div> 
           <?php endif; ?>
           <?php echo html_entity_decode($asset->AssetContent->render()) ?>
           <?php include_partial_from_folder('blocks', 'global/visite-cmais',array('uri'=>$uri)) ?>
