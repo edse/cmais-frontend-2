@@ -11,6 +11,15 @@
 <script src="/portal/js/bootstrap/bootstrap.js"></script>
 <?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site))?>
 
+<style type="text/css">
+  .span8 .nav li { float:left }
+  .span8 .nav { background:#ccc; }
+  .span8 .nav a { color:#666; }
+  .span8 .nav li.active { background:#666; }
+  .span8 .nav li.active a { color:#fff; }
+</style>
+
+
 <!-- section miolo -->
 <section class="miolo">
   <!--container-->
