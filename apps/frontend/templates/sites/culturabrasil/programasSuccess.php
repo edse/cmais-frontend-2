@@ -32,7 +32,6 @@ if(isset($pager)){
     
     <!--breadcrumb-->
     <div class="row-fluid pontilhada">
-      <div class="borda-pontilhada"></div> 
       <ul class="breadcrumb">
         <?php if($section->Site->getSlug() == "culturabrasil"): ?>
         <li><a href="<?php echo url_for('homepage')?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
