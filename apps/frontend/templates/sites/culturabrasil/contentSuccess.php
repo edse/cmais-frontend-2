@@ -63,7 +63,7 @@
         </div>
         <!--col esquerda-->
         <div class="span4 direita">
-          <link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+          <!--link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" /-->
           
             <?php
               $playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
