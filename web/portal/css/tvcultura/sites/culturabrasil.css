@@ -275,11 +275,20 @@ textarea{width:100%; font-size:11px;}
 
 /* content */
 .content-asset{padding:0px 5px}
-.content-asset .content h1{color:#333333; font-size:24px;margin: 0;padding: 0 0 0 0;line-height: 21px}
-.content-asset .content h2{color:#666666; font-size:18px;margin: 0;padding: 8px 0 0 0;line-height: 20px;}
-.content-asset .signature small {font-size: 11px;color: #949494;}
-.content-asset .share.content {margin: 0 -28px 0;float: right;width: 245px;}
-.content-asset .google {float: left;}
-.content-asset .twt.conteudo {width: 75px;float: left;margin-left: 10px;}
-.content-asset .fb {float: left;margin-left: 10px;width: 100px;}
+.content {padding-bottom: 5px;margin: 0px 0 10px;}
+.content h1{font-size:24px;margin-bottom:0px;}
+.content small{color:#6F6F6F;font-size:14px;}
+.content-asset p,
+.content-asset strong,
+.content-asset span{color:black !important;margin-bottom:0px;}
+.content-asset .legenda {min-width: 635px;background-color: #E5E5E5;margin-bottom: 10px;padding: 5px 10px;line-height: 1.2em;}
+.content-asset .legenda small{color:#949494; font-size:11px;}
+.content-asset .signature{margin:10px 0 5px 0;}
+.content-asset .signature small{font-size:11px; color:#949494;}
+.content-asset .cabecalho{font-size:11px; margin-bottom:20px; color:black;}
+.content-asset .twt.conteudo{width:75px; float:left;margin-left: 10px;}
+.content-asset .google{float:left;}
+.content-asset .fb{float:left; margin-left: 10px; width: 200px;}
+.content-asset .cabecalho small{font-size:10px; color:black;}
+.content-asset .share.content{margin:0 -28px 0;float: right;width: 245px;}
 /* /content */
