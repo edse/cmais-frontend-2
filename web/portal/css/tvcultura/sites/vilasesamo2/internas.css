@@ -70,7 +70,7 @@ body { background:#0172f9; }
 .destaque-filtro.especial li a { border:none; color:#fff; padding:0 20px; height:24px; line-height:24px; margin:10px 0 0 0;  }
 .destaque-filtro.especial li.active a { font-family:'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif; background:none; }
 
-.destaque-filtro.especial li.active { background:#ffffff; }
+.destaque-filtro.especial li.active { background:#ffffff; font-size:25px; }
 .destaque-filtro.especial li { border-radius:4px 4px 0 0;  -moz-border-radius:4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border:none;  }
 .destaque-filtro.especial .nav { margin-bottom:0; }
 .destaque-filtro.especial .tab-content { background:#fff; padding:20px 10px 0 10px; }
