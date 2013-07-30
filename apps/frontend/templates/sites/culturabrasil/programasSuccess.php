@@ -34,8 +34,7 @@ if(isset($pager)){
     <div class="row-fluid pontilhada">
       <ul class="breadcrumb">
         <li><a href="<?php echo url_for('homepage')?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
-        <li><a href="<?php echo url_for('homepage')?>programas">Programas</a> <span class="divider">»</span></li>
-        <li><?php echo $site->getTitle(); ?> </li>
+        <li>Programas </li>
       </ul>
     </div>
     <!--/breadcrumb-->

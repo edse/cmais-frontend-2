@@ -70,7 +70,7 @@ body { background:#0172f9; }
 .destaque-filtro.especial li a { border:none; color:#fff; padding:0 20px; height:24px; line-height:24px; margin:10px 0 0 0;  }
 .destaque-filtro.especial li.active a { font-family:'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif; background:none; }
 
-.destaque-filtro.especial li.active { background:#ffffff; }
+.destaque-filtro.especial li.active { background:#ffffff;  }
 .destaque-filtro.especial li { border-radius:4px 4px 0 0;  -moz-border-radius:4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border:none;  }
 .destaque-filtro.especial .nav { margin-bottom:0; }
 .destaque-filtro.especial .tab-content { background:#fff; padding:20px 10px 0 10px; }
@@ -158,7 +158,7 @@ body { background:#0172f9; }
 .interna.atividades .destaque-filtro.especial li a { color:#fba500; }
 .interna.atividades .interna.videos .destaque-filtro.especial li a { color:#fba500; }
 .interna.atividades .destaque-filtro.especial li a { background: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png) repeat-x; color:#fff;}
-.interna.atividades .destaque-filtro.especial li.active a { background:#fff; color:#883feb; border:none; }
+.interna.atividades .destaque-filtro.especial li.active a { background:#fff; color:#883feb; border:none; font-size:25px; }
 .interna.atividades .destaque-filtro.especial li.active { background:#fff; }
 .interna.atividades #content .scroll h3 { border-color:#7732E5; }
 
