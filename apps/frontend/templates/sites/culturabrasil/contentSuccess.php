@@ -34,12 +34,12 @@
     <div class="row-fluid">
     <!-- asset -->
        
-      <div class="row-fluid" style="margin:0 0 0 0;">
+      <div class="row-fluid">
         <!--col esquerda-->
         <div class="span8 content-asset">
           <div class="content">
             <h1><?php echo $asset->getTitle() ?></h1>
-            <small><?php echo $asset->getDescription() ?></small>
+            <h2><?php echo $asset->getDescription() ?></h2>
             <?php include_partial_from_folder('sites/culturabrasil', 'global/signature', array('uri'=>$uri,'asset'=>$asset)) ?>
           <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
           <?php if ($related[0]->AssetImage->getOriginalUrl()): ?>

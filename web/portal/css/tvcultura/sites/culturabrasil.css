@@ -274,5 +274,5 @@ textarea{width:100%; font-size:11px;}
 
 /* content */
 .content-asset .content h1{color:#333333; font-size:24px;margin: 0;padding: 0 0 0 10px;line-height: 21px}
-.content-asset .content small{color:#666666; font-size:18px;margin: 0;padding: 10px 0 0 10px;line-height: 14px;}
+.content-asset .content h2{color:#666666; font-size:18px;margin: 0;padding: 10px 0 0 10px;line-height: 14px;}
 /* /content */
