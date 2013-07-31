@@ -299,7 +299,7 @@ class mainActions extends sfActions
       if($param4) {
         $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param4);
         $this->getRequest()->setParameter('object', $asset);
-        $this->forward('_asset', 'index');
+        $this->forwardObject($parm3Object);
         die();
       }
       else {
