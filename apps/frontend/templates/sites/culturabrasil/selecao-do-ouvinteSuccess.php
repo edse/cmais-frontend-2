@@ -17,7 +17,7 @@
 
 
 <!--section miolo--> 
-<section class="miolo programa" >
+<section class="miolo selecao" >
   <!-- container miolo -->
   <div class="container row-fluid">
     <!--breadcrumb-->
