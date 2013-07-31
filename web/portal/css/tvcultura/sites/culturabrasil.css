@@ -324,3 +324,7 @@ div.jp-type-playlist div.jp-playlist a:hover {color:#999999!important;}
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!important;}
 
 /* /player */
+#form-selecao input[type="text"]{width:100%;}
+/* selecao do ouvinte */
+
+/* /selecao do ouvinte */
