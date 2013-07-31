@@ -38,16 +38,17 @@
       
       <!-- row form -->
       <div class="row-fluid">
-        <div class="box msg">
-          <div class="msgErro" style="display:none">
-            <p class="aviso">Sua mensagem não pode ser enviada.</p>
-          </div>
-          <div class="msgAcerto" style="display:none">
-            <p class="aviso">Mensagem enviada com sucesso.</p>
-          </div>
-        </div>
+        
         <!--form-->
         <form id="form-selecao" action="" method="post" >
+          <div class="box msg">
+            <div class="msgErro" style="display:none">
+              <p class="aviso">Sua mensagem não pode ser enviada.</p>
+            </div>
+            <div class="msgAcerto" style="display:none">
+              <p class="aviso">Mensagem enviada com sucesso.</p>
+            </div>
+          </div>
           <!-- form principal -->
           <fieldset>
             
