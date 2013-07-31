@@ -65,7 +65,7 @@
               <input type="text" >
             </div>
           </fieldset>
-          <fieldset>
+          <fieldset> 
             <div class="span4">
               <label>Telefone</label>
               <input type="text" >
