@@ -37,42 +37,71 @@
       <!--titulo-->
       
       <!-- row form -->
-      <div class="row-fluid">
+      <div id="form-seleção" class="row-fluid">
         <!--form-->
         <form>
           <!-- form principal -->
           <fieldset>
             
             <label>Nome</label>
-            <input type="text" >
+            <input id="nome" name="nome" class="required" type="text" >
             
           </fieldset>
           <fieldset>
             <div class="span4">
               <label>Bairro</label>
-              <input type="text" >
+              <input id="bairro" name="bairro" class="required" type="text" >
             </div>
             <div class="span4">
               <label>Cidade</label>
-              <input type="text" >
+              <input id="cidade" name="ciadade" class="required" type="text" >
             </div>
             <div class="span1">
               <label>UF</label>
-              <input type="text" >
+              <select class="estado required" id="estado">
+                <option value="" selected="selected">--</option>
+                <option value="Acre">AC</option>
+                <option value="Alagoas">AL</option>
+                <option value="Amazonas">AM</option>
+                <option value="Amapá">AP</option>
+                <option value="Bahia">BA</option>
+                <option value="Ceará">CE</option>
+                <option value="Distrito Federal">DF</option>
+                <option value="Espirito Santo">ES</option>
+                <option value="Goiás">GO</option>
+                <option value="Maranhão">MA</option>
+                <option value="Minas Gerais">MG</option>
+                <option value="Mato Grosso do Sul">MS</option>
+                <option value="Mato Grosso">MT</option>
+                <option value="Pará">PA</option>
+                <option value="Paraíba">PB</option>
+                <option value="Pernambuco">PE</option>
+                <option value="Piauí">PI</option>
+                <option value="Paraná">PR</option>
+                <option value="Rio de Janeiro">RJ</option>
+                <option value="Rio Grande do Norte">RN</option>
+                <option value="Rondônia">RO</option>
+                <option value="Roraima">RR</option>
+                <option value="Rio Grande do Sul">RS</option>
+                <option value="Santa Catarina">SC</option>
+                <option value="Sergipe">SE</option>
+                <option value="São Paulo">SP</option>
+                <option value="Tocantins">TO</option>
+              </select>
             </div>
             <div class="span3">
               <label>País</label>
-              <input type="text" >
+              <input id="pais" name="pais" class="required" type="text" >
             </div>
           </fieldset>
           <fieldset> 
             <div class="span4">
               <label>Telefone</label>
-              <input type="text" >
+              <input id="telefone" name="telefone" class="required" type="text" >
             </div>
             <div class="span4">
               <label>E-mail</label>
-              <input type="text" >
+              <input id="email" name="email" type="text" >
             </div>
           </fieldset>
           <!-- form principal -->
