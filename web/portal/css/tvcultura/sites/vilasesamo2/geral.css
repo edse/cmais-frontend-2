@@ -63,7 +63,7 @@ footer .mapa .span12 .col-esq,
 /* /border radius*/
 
 .container, 
-.navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { max-width: 980px; }
+.navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { max-width: 940px; }
 .navbar .btn-navbar:hover,
 .navbar .btn-navbar { background:none; border:none; padding:0; margin:0; box-shadow: none; }
 .navbar-fixed-top { margin-bottom:0; position:fixed;}
