@@ -86,7 +86,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 /* atividades*/
 .interna.atividades .todos-assets p { background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png); }
 .interna.atividades .conteudo-asset h2 { color:#883feb; }
-.interna.atividades #content .relacionados {background:#b16af2; border-color:#b16af2;}
+.interna.atividades #content .relacionados {background:/*#b16af2*/#883FEB; border-color:#b16af2;}
 /* /atividades*/
 
 /* videos */
