@@ -33,6 +33,8 @@
         <!--lista assets-->
         <div class="lista-assets span8">
           <h1>Galeria</h1>
+          <p class="horario">Sábado, às 23h15 <br /> Horário alternativo: Terça, à 1h45</p>
+          <!-- menu subsection-->
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Arquivo</a></li>
             <li><a href="#">Lançamentos</a></li>
@@ -41,9 +43,7 @@
             <li><a href="#">A música do produtor</a></li>
             <li><a href="#">Achados da cidade</a></li>
           </ul>
-          <p class="horario">Sábado, às 23h15 <br /> Horário alternativo: Terça, à 1h45</p>
-          <p>No ar desde 1990, Ensaio traz a cada programa um artista diferente que, além de cantar, fala do trabalho, da vida particular e relembra casos vividos. Apresentado por Fernando Faro, o acervo contém informações preciosas sobre os maiores músicos brasileiros</p>
-          <p>No ar desde 1990, Ensaio traz a cada programa um artista diferente que, além de cantar, fala do trabalho, da vida particular e relembra casos vividos. Apresentado por Fernando Faro, o acervo contém informações preciosas sobre os maiores músicos brasileiros</p>
+          <!-- /menu subsection-->
           
           <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas?debug=1/brasileiros-da-ultima-hora-por-fabio-trummer" title=" Brasileiros da última hora, por Fábio Trummer"> <div class="row-fluid titulo"></div>
           <div class="row-fluid" style="margin-left:10px">
