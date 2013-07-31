@@ -126,6 +126,8 @@
           <!-- item musica-->
           <?php endfor; ?>
           
+          <input type="submit" class="enviar pull-right" id="enviar" value="enviar"/>
+          
         </form>
         <!--/form-->
         <!-- /row form -->
