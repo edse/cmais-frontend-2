@@ -36,6 +36,111 @@
       <p class="horario">Preencha e envie o formulário abaixo com até seis músicas adequadas à programação da rádio.</p>
       <!--titulo-->
       
+      <!-- row form -->
+      <div class="row-fluid">
+        <div class="box msg" style="display: none;">
+          <div class="msgErro" style="display:none">
+            <p class="aviso">Sua mensagem não pode ser enviada.</p>
+          </div>
+          <div class="msgAcerto" style="display:none">
+            <p class="aviso">Mensagem enviada com sucesso.</p>
+          </div>
+        </div>
+        <!--form-->
+        <form id="form-selecao" action="" method="post" >
+          <!-- form principal -->
+          <fieldset>
+            
+            <label>Nome</label>
+            <input id="nome" name="nome" class="required span12" type="text" >
+            
+          </fieldset>
+          <fieldset>
+            <div class="span4">
+              <label>Bairro</label>
+              <input id="bairro" name="bairro" class="span12" type="text" >
+            </div>
+            <div class="span4">
+              <label>Cidade</label>
+              <input id="cidade" name="ciadade" class="required span12" type="text" >
+            </div>
+            <div class="span2">
+              <label>UF</label>
+              <select class="span12" id="estado" name="estado">
+                <option value="" selected="selected">--</option>
+                <option value="Acre">AC</option>
+                <option value="Alagoas">AL</option>
+                <option value="Amazonas">AM</option>
+                <option value="Amapá">AP</option>
+                <option value="Bahia">BA</option>
+                <option value="Ceará">CE</option>
+                <option value="Distrito Federal">DF</option>
+                <option value="Espirito Santo">ES</option>
+                <option value="Goiás">GO</option>
+                <option value="Maranhão">MA</option>
+                <option value="Minas Gerais">MG</option>
+                <option value="Mato Grosso do Sul">MS</option>
+                <option value="Mato Grosso">MT</option>
+                <option value="Pará">PA</option>
+                <option value="Paraíba">PB</option>
+                <option value="Pernambuco">PE</option>
+                <option value="Piauí">PI</option>
+                <option value="Paraná">PR</option>
+                <option value="Rio de Janeiro">RJ</option>
+                <option value="Rio Grande do Norte">RN</option>
+                <option value="Rondônia">RO</option>
+                <option value="Roraima">RR</option>
+                <option value="Rio Grande do Sul">RS</option>
+                <option value="Santa Catarina">SC</option>
+                <option value="Sergipe">SE</option>
+                <option value="São Paulo">SP</option>
+                <option value="Tocantins">TO</option>
+              </select>
+            </div>
+            <div class="span2">
+              <label>País</label>
+              <input id="pais" name="pais" class="span12" type="text" >
+            </div>
+          </fieldset>
+          <fieldset> 
+            <div class="span4">
+              <label>Telefone</label>
+              <input id="telefone" name="telefone" class="span12" type="text" >
+            </div>
+            <div class="span4">
+              <label>E-mail</label>
+              <input id="email" name="email" class="span12" type="text" >
+            </div>
+          </fieldset>
+          <!-- form principal -->
+          
+          <?php
+          $itens=19;
+          for($i = 0; $i <= $itens; $i++):
+          ?>
+          <!-- item musica-->
+          <fieldset>
+            <legend>Música <?php echo $i+1; ?></legend>
+            
+            <div class="borda-pontilhada"></div>
+            
+            <label>Música</label>
+            <input id="musica<?php echo $i+1; ?>" name="musica<?php echo $i+1; ?>" class="required span12" type="text">
+            
+            <label>Intérprete</label>
+            <input id="interprete<?php echo $i+1; ?>" name="interprete<?php echo $i+1; ?>" class="required span12" type="text">
+            
+          </fieldset>
+          <!-- item musica-->
+          <?php endfor; ?>
+          <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+          <input type="submit" class="enviar pull-right" id="enviar" value="enviar"/>
+          
+        </form>
+        <!--/form-->
+        <!-- /row form -->
+      </div>
+      
               
     </div>  
     <!-- /coluna esquerda -->
@@ -60,5 +165,63 @@
 </section>
 <!--/section miolo-->
 
-  
+<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  var validator = $('#form-selecao').validate({
+    submitHandler : function(form) {
+      $.ajax({
+        type : "POST",
+        dataType : "text",
+        data : $("#form-selecao").serialize(),
+        beforeSend : function() {
+          $('input#enviar').hide();
+          //$('img#ajax-loader').show();
+        },
+        success : function(data) {
+          $('input#enviar').show();
+          //$('img#ajax-loader').hide();
+          window.location.href = "#";
+          
+          if(data == "1") {
+            //$('.box.msg, .msgAcerto').show();
+            //$(".box.aberto").hide();
+            /*
+            $("#form-contato").clearForm();
+            $(".msgAcerto").show();
+            $('img#ajax-loader').hide();
+            */
+          } else {
+            //$(".box.msg, .msgErro").show();
+            //$(".box.aberto").hide();
+          }
+        }
+      });
+    },
+    rules : {
+      nome : {
+        required : true,
+        minlength : 2
+      },
+      email : {
+        required : true,
+        email : true
+      },
+      cidade : {
+        required : true,
+        minlength : 2
+      }
+    },
+    messages : {
+      nome : "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+      email : "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+      cidade : "Este campo &eacute; obrigat&oacute;rio."
+    },
+    success : function(label) {
+      // set &nbsp; as text for IE
+      label.html("&nbsp;").addClass("checked");
+    }
+  });
+});
+</script> 
 

@@ -103,7 +103,8 @@ img{width:100%;}
 .lista-programas span.titulo-arquivo,
 .miolo.programa .row-fluid .span8 h1,
 .miolo.programa .span8 .horario,
-.miolo.programa .span8 .nav a{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+.miolo.programa .span8 .nav a,
+#form-selecao legend{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
@@ -324,3 +325,13 @@ div.jp-type-playlist div.jp-playlist a:hover {color:#999999!important;}
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!important;}
 
 /* /player */
+
+/* selecao do ouvinte */
+#form-selecao #estado{width:100px;}
+#form-selecao legend{border: none; margin-bottom: 0px; color:#999999; font-size:18px;}
+#form-selecao .borda-pontilhada{margin-bottom:9px;}
+#form-selecao label{color:#333333; font-size:12px;}
+#form-selecao label.error{color:red; font-weight:bold;}
+#form-selecao #enviar{border: none;padding: 2px 4px;text-transform: uppercase;color: #FFF;background: #666666;font-size: 14px;margin: 20px 0;}
+#form-selecao input[type="text"]{ -moz-border-radius: 0px; -webkit-border-radius: 0px; -khtml-border-radius: 0px; border-radius: 0px;border-color: #abadb3;}
+/* /selecao do ouvinte */
