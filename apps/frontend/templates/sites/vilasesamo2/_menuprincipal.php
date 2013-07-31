@@ -2,10 +2,10 @@
    if($section->getSlug() == "home"){
      $classLogo = "sprite-logo-sesamo";
      $border = "";
-   }else{
-    $classLogo = "";
-    $border = "<i class='sprite-detalhe-amarelo4'></i>";
-   }
+   }//else{
+    //$classLogo = "";
+    //$border = "<i class='sprite-detalhe-amarelo4'></i>";
+   //}
    
   ?>
   <nav class="header-bar">
