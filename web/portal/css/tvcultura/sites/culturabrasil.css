@@ -334,6 +334,7 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 .miolo.selecao .span8 h1{font-size:24px; color:#333333; line-height: 25px; margin:0;}
 .miolo.selecao .span8 .horario{font-size:18px; color:#666666;}
 #form-selecao fieldset{position:relative;}
+#form-selecao .box{position:relative;}
 #form-selecao label.error{color:red; font-weight:bold; position:absolute; top:0; right:0;}
 #form-selecao #estado{width:100px;}
 #form-selecao legend{border: none; margin-bottom: 0px; color:#999999; font-size:18px;}
