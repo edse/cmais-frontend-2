@@ -325,10 +325,11 @@ div.jp-type-playlist div.jp-playlist a:hover {color:#999999!important;}
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!important;}
 
 /* /player */
+
+/* selecao do ouvinte */
 #form-selecao #estado{width:100px;}
 #form-selecao legend{border: none; margin-bottom: 0px; color:#999999; font-size:18px;}
-#form-selecao .borda-pontilhada{margin-bottom:20px;}
+#form-selecao .borda-pontilhada{margin-bottom:9px;}
 #form-selecao label{color:#333333; font-size:12px;}
-/* selecao do ouvinte */
-
+#form-selecao #enviar{border: none;padding: 2px 4px;text-transform: uppercase;color: #FFF;background: #666666;font-size: 14px;margin: 20px 0;}
 /* /selecao do ouvinte */
