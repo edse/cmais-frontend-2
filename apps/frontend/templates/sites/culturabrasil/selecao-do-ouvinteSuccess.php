@@ -39,7 +39,7 @@
       <!-- row form -->
       <div class="row-fluid">
         <!--form-->
-        <form id="form-seleção" >
+        <form id="form-selecao" >
           <!-- form principal -->
           <fieldset>
             
