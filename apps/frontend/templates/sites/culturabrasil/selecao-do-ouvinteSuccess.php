@@ -42,6 +42,7 @@
         <form>
           <!-- form principal -->
           <fieldset>
+            
             <legend>Legend</legend>
             <label>Nome</label>
             <input type="text" placeholder="Type something…">
@@ -49,6 +50,25 @@
             
           </fieldset>
           <!-- form principal -->
+          
+          <input type="hidden" value="20">
+          
+          <!-- item musica 1-->
+          <fieldset>
+            <legend>Musica 1</legend>
+            
+            <div class="borda-pontilhada"></div>
+            
+            <label>Musica</label>
+            <input id="musica1" name="musica1" type="text">
+            
+            <label>Intérprete</label>
+            <input id="interprete1" name="interprete1" type="text">
+            
+          </fieldset>
+          <!-- item musica 1 -->
+          
+          
         </form>
         <!--/form-->
         <!-- /row form -->
