@@ -58,7 +58,7 @@
             </div>
             <div class="span1">
               <label>UF</label>
-              <select class="required span1" id="estado">
+              <select class="required span1" id="estado" name="estado">
                 <option value="" selected="selected">--</option>
                 <option value="Acre">AC</option>
                 <option value="Alagoas">AL</option>
@@ -115,10 +115,10 @@
             <div class="borda-pontilhada"></div>
             
             <label>Musica</label>
-            <input id="musica1" name="musica1" type="text">
+            <input id="musica1" name="musica1" class="required span12" type="text">
             
             <label>Intérprete</label>
-            <input id="interprete1" name="interprete1" type="text">
+            <input id="interprete1" name="interprete1" class="required span12" type="text">
             
           </fieldset>
           <!-- item musica 1 -->
