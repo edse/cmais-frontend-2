@@ -48,11 +48,11 @@
             
           </fieldset>
           <fieldset>
-            <div class="span4">
+            <div class="span3">
               <label>Bairro</label>
               <input id="bairro" name="bairro" class="required" type="text" >
             </div>
-            <div class="span4">
+            <div class="span3">
               <label>Cidade</label>
               <input id="cidade" name="ciadade" class="required" type="text" >
             </div>
@@ -89,17 +89,17 @@
                 <option value="Tocantins">TO</option>
               </select>
             </div>
-            <div class="span3">
+            <div class="span2">
               <label>País</label>
               <input id="pais" name="pais" class="required" type="text" >
             </div>
           </fieldset>
           <fieldset> 
-            <div class="span4">
+            <div class="span3">
               <label>Telefone</label>
               <input id="telefone" name="telefone" class="required" type="text" >
             </div>
-            <div class="span4">
+            <div class="span3">
               <label>E-mail</label>
               <input id="email" name="email" type="text" >
             </div>
