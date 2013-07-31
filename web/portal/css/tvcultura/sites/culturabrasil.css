@@ -190,6 +190,7 @@ textarea{width:100%; font-size:11px;}
 /* /pagination */
 
 /* lista assets subsection */
+.lista-assets{padding-left:10px;}
 .lista-assets a h6{margin:0;text-transform:uppercase;color:#666666;margin: 0 0 -2px 0; font-size:12px; letter-spacing: -0.1em;}
 .lista-assets a h2{color:#333;font-size:18px; font-weight: normal; margin-top: 18px;line-height: 18px;margin-bottom: 4px;}
 .lista-assets a h4{color:#333; }
