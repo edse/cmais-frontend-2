@@ -114,25 +114,24 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-seta-esquerda,
 .sprite-seta-up-menu,
 .sprite-seta-up { background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png); }
-.sprite-btn-voltar-atividades{ background-position: 0 0; width: 32px; height: 49px; } 
-.sprite-btn-voltar-jogos{ background-position: 0 -99px; width: 32px; height: 49px; } 
-.sprite-btn-voltar-videos{ background-position: 0 -198px; width: 32px; height: 49px; } 
-.sprite-destalhe-amarelo1{ background-position: 0 -297px; width: 33px; height: 83px; } 
-.sprite-destalhe-amarelo2{ background-position: 0 -430px; width: 33px; height: 83px; } 
-.sprite-destalhe-amarelo3{ background-position: 0 -563px; width: 34px; height: 83px; } 
-.sprite-detalhe-amarelo4{ background-position: 0 -696px; width: 52px; height: 76px; } 
-.sprite-icon-mais{ background-position: 0 -822px; width: 60px; height: 60px; } 
-.sprite-list-style{ background-position: 0 -932px; width: 27px; height: 26px; } 
-.sprite-scroll-atividades{ background-position: 0 -1008px; width: 60px; height: 38px; } 
-.sprite-scroll-jogos{ background-position: 0 -1096px; width: 60px; height: 38px; } 
-.sprite-scroll-videos{ background-position: 0 -1184px; width: 60px; height: 38px; } 
-.sprite-seta-direita{ background-position: 0 -1272px; width: 46px; height: 70px; } 
-.sprite-seta-down-amarela{ background-position: 0 -1392px; width: 49px; height: 32px; } 
-.sprite-seta-down{ background-position: 0 -1474px; width: 60px; height: 46px; } 
-.sprite-seta-esquerda{ background-position: 0 -1570px; width: 46px; height: 70px; } 
-.sprite-seta-up-menu{ background-position: 0 -1690px; width: 48px; height: 38px; } 
-.sprite-seta-up{ background-position: 0 -1778px; width: 60px; height: 46px; } 
-
+.sprite-btn-voltar-atividades{ background-position: 0 0; width: 33px; height: 48px; } 
+.sprite-btn-voltar-jogos{ background-position: 0 -98px; width: 33px; height: 48px; } 
+.sprite-btn-voltar-videos{ background-position: 0 -196px; width: 33px; height: 48px; } 
+.sprite-destalhe-amarelo1{ background-position: 0 -294px; width: 34px; height: 82px; } 
+.sprite-destalhe-amarelo2{ background-position: 0 -426px; width: 33px; height: 82px; } 
+.sprite-destalhe-amarelo3{ background-position: 0 -558px; width: 34px; height: 83px; } 
+.sprite-detalhe-amarelo4{ background-position: 0 -691px; width: 52px; height: 76px; } 
+.sprite-icon-mais{ background-position: 0 -817px; width: 60px; height: 60px; } 
+.sprite-list-style{ background-position: 0 -927px; width: 27px; height: 26px; } 
+.sprite-scroll-atividades{ background-position: 0 -1003px; width: 60px; height: 38px; } 
+.sprite-scroll-jogos{ background-position: 0 -1091px; width: 60px; height: 38px; } 
+.sprite-scroll-videos{ background-position: 0 -1179px; width: 60px; height: 38px; } 
+.sprite-seta-direita{ background-position: 0 -1267px; width: 46px; height: 70px; } 
+.sprite-seta-down-amarela{ background-position: 0 -1387px; width: 49px; height: 32px; } 
+.sprite-seta-down{ background-position: 0 -1469px; width: 60px; height: 46px; } 
+.sprite-seta-esquerda{ background-position: 0 -1565px; width: 46px; height: 70px; } 
+.sprite-seta-up-menu{ background-position: 0 -1685px; width: 48px; height: 38px; } 
+.sprite-seta-up{ background-position: 0 -1773px; width: 60px; height: 46px; } 
  
 .sprite-logo-cartaozinho,
 .sprite-logo-castelo,
