@@ -39,7 +39,7 @@
       <!-- row form -->
       <div class="row-fluid">
         <!--form-->
-        <form id="form-selecao" >
+        <form id="form-selecao" action="" method="post" >
           <!-- form principal -->
           <fieldset>
             
@@ -215,12 +215,5 @@ $(document).ready(function() {
     }
   });
 });
-// Contador de Caracters
-function limitText(limitField, limitNum, textCounter) {
-  if(limitField.value.length > limitNum)
-    limitField.value = limitField.value.substring(0, limitNum);
-  else
-    $(textCounter).html(limitNum - limitField.value.length);
-}
 </script> 
 
