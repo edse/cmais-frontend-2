@@ -50,7 +50,7 @@
           <fieldset>
             <div class="span4">
               <label>Bairro</label>
-              <input id="bairro" name="bairro" class="required span12" type="text" >
+              <input id="bairro" name="bairro" class="span12" type="text" >
             </div>
             <div class="span4">
               <label>Cidade</label>
@@ -58,7 +58,7 @@
             </div>
             <div class="span2">
               <label>UF</label>
-              <select class="required span12" id="estado" name="estado">
+              <select class="span12" id="estado" name="estado">
                 <option value="" selected="selected">--</option>
                 <option value="Acre">AC</option>
                 <option value="Alagoas">AL</option>
@@ -91,13 +91,13 @@
             </div>
             <div class="span2">
               <label>País</label>
-              <input id="pais" name="pais" class="required span12" type="text" >
+              <input id="pais" name="pais" class="span12" type="text" >
             </div>
           </fieldset>
           <fieldset> 
             <div class="span4">
               <label>Telefone</label>
-              <input id="telefone" name="telefone" class="required span12" type="text" >
+              <input id="telefone" name="telefone" class="span12" type="text" >
             </div>
             <div class="span4">
               <label>E-mail</label>
@@ -157,5 +157,70 @@
 </section>
 <!--/section miolo-->
 
-  
+<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  var validator = $('#form-selecao').validate({
+    submitHandler : function(form) {
+      $.ajax({
+        type : "POST",
+        dataType : "text",
+        data : $("#form-selecao").serialize(),
+        beforeSend : function() {
+          $('input#enviar').hide();
+          //$('img#ajax-loader').show();
+        },
+        success : function(data) {
+          $('input#enviar').show();
+          //$('img#ajax-loader').hide();
+          window.location.href = "#";
+          
+          if(data == "1") {
+            //$('.box.msg, .msgAcerto').show();
+            //$(".box.aberto").hide();
+            /*
+            $("#form-contato").clearForm();
+            $(".msgAcerto").show();
+            $('img#ajax-loader').hide();
+            */
+          } else {
+            //$(".box.msg, .msgErro").show();
+            //$(".box.aberto").hide();
+          }
+        }
+      });
+    },
+    rules : {
+      nome : {
+        required : true,
+        minlength : 2
+      },
+      email : {
+        required : true,
+        email : true
+      },
+      cidade : {
+        required : true,
+        minlength : 2
+      }
+    },
+    messages : {
+      nome : "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+      email : "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+      cidade : "Este campo &eacute; obrigat&oacute;rio."
+    },
+    success : function(label) {
+      // set &nbsp; as text for IE
+      label.html("&nbsp;").addClass("checked");
+    }
+  });
+});
+// Contador de Caracters
+function limitText(limitField, limitNum, textCounter) {
+  if(limitField.value.length > limitNum)
+    limitField.value = limitField.value.substring(0, limitNum);
+  else
+    $(textCounter).html(limitNum - limitField.value.length);
+}
+</script> 
 
