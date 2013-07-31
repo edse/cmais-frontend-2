@@ -20,7 +20,7 @@ if(isset($pager)){
 <![endif]-->
 <script src="/portal/js/bootstrap/bootstrap.js"></script>
 
-<?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
+<?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site)) ?>
 
 <!-- section miolo -->
 <section class="miolo">
@@ -69,7 +69,7 @@ if(isset($pager)){
           <?php foreach($pager->getResults() as $d): ?>
             <a href="<?php echo $uri . '/' . $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
                 <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
-                <?php if ($related[0]->getThumbnail2()): ?>
+                <?php if ($related[0]->retriveImageUrlByImageUsage("thumbnail-cultura-brasil")): ?>
                 <div class="row-fluid titulo">
                   
                 </div>
@@ -78,10 +78,10 @@ if(isset($pager)){
               <div class="span3" style="margin-left:0px">
                 <h6><?php if ($d->AssetContent->getHeadlineShort()): ?><?php echo $d->AssetContent->getHeadlineShort(); ?><?php endif; ?>&nbsp;</h6>
                 <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
-                <?php if ($related[0]->getThumbnail2()): ?>
-                <img src="<?php echo $related[0]->getThumbnail2() ?>" alt=" <?php echo $d->getTitle(); ?>" class="thumb">
+                <?php if ($related[0]->retriveImageUrlByImageUsage("thumbnail-cultura-brasil")): ?>
+                <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("thumbnail-cultura-brasil") ?>" alt=" <?php echo $d->getTitle(); ?>" class="thumb">
                 <?php else: ?>
-                <img src="/portal/images/capaPrograma/culturabrasil/defaultThumbnail.png" alt="<?php echo $d->getTitle(); ?>" class="thumb">
+                <img src="/portal/images/capaPrograma/culturabrasil/defaultThumbnail<?php echo rand(1,8) ?>.jpg" alt="<?php echo $d->getTitle(); ?>" class="thumb">
                 <?php endif; ?>
               </div>
               <div class="span9">

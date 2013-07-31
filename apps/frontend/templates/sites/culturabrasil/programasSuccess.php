@@ -20,7 +20,7 @@ if(isset($pager)){
 <![endif]-->
 <script src="/portal/js/bootstrap/bootstrap.js"></script>
 
-<?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
+<?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site)) ?>
 
 <!-- section miolo -->
 <section class="miolo">
@@ -33,13 +33,8 @@ if(isset($pager)){
     <!--breadcrumb-->
     <div class="row-fluid pontilhada">
       <ul class="breadcrumb">
-        <?php if($section->Site->getSlug() == "culturabrasil"): ?>
         <li><a href="<?php echo url_for('homepage')?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
-        <li><?php echo $section->getTitle(); ?> </li>
-        <?php else: ?>
-        <li><a href="<?php echo url_for('homepage')?>programas">Programas</a> <span class="divider">»</span></li>
-        <li><?php echo $site->getTitle(); ?> </li>
-        <?php endif; ?>         
+        <li>Programas </li>
       </ul>
     </div>
     <!--/breadcrumb-->
@@ -47,14 +42,7 @@ if(isset($pager)){
     <div class="row-fluid subSection">
       <div class="destaque-cultura subsection">
         <div class="programa subsection">
-          <span class="interna">
-            <?php
-              if($section->Site->getSlug() == "culturabrasil")
-                echo $section->getTitle();
-              else
-                echo $site->getTitle();
-            ?>
-          </span>
+          <span class="interna"><?php echo $section->getTitle(); ?></span>
           <i class="borda-titulo subsection"></i>
         </div>
       </div>
@@ -65,65 +53,29 @@ if(isset($pager)){
       
       <!--lista Programas-->
       <div class="lista-programas span8">
-        <a href="#" title="">
-          <p>78RPM</p>
-        </a>
-        <a href="#" title="">
-          <p>Bossamoderna</p>
-        </a>
-        <a href="#" title="">
-          <p>Cultura Livre</p>
-        </a>
-        <a href="#" title="">
-          <p>Estúdio Cultura</p>
-        </a>
-        <a href="#" title="">
-          <p>Estúdio F</p>
-        </a>
-        <a href="#" title="">
-          <p>Galeria</p>
-        </a>
-        <a href="#" title="">
-          <p>Música Regional</p>
-        </a>
-        <a href="#" title="">
-          <p>Programa do Estudante</p>
-        </a>
-        <a href="#" title="">
-          <p>RadarCultura</p>
-        </a>
-        <a href="" title="">
-          <p>Reggae de Bamba</p>
-        </a>
-        <a href="#" title="">
-          <p>Seleção do Ouvinte</p>
-        </a>
-        <a href="#" title="">
-          <p>Solano Ribeiro</p>
-        </a>
-        <a href="#" title="">
-          <p>Supertônica</p>
-        </a>
-        <a href="#" title="">
-          <p>Todos os Sons</p>
-        </a>
-        <a href="#" title="">
-          <p>Veredas</p>
-        </a>
         
-        
+        <?php if(isset($displays["programas"])): ?>
+          <?php if(count($displays["programas"]) > 0): ?>
+            <?php foreach($displays["programas"] as $d): ?>
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+          <p><?php echo $d->getTitle() ?></p>
+        </a>
+            <?php endforeach; ?>
+          <?php endif; ?>
+        <?php endif; ?>        
+
+        <?php if(isset($displays["arquivo"])): ?>
+          <?php if(count($displays["arquivo"]) > 0): ?>
         <span class="titulo-arquivo">
           arquivo
         </span>
-        <a href="#" title="">
-          <p>A Voz Popular</p>
+            <?php foreach($displays["arquivo"] as $d): ?>
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+          <p><?php echo $d->getTitle() ?></p>
         </a>
-        <a href="#" title="">
-          <p>Ao Vivo</p>
-        </a>
-        <a href="#" title="">
-          <p>Na Faixa</p>
-        </a>
+            <?php endforeach; ?>
+          <?php endif; ?>
+        <?php endif; ?>        
           
       </div>
       <!--listaProgramas>

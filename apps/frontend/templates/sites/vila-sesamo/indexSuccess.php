@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vila-sesamo/home.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
 <script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
 <link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style.css"/>
 
@@ -123,19 +123,19 @@
         <a href="/vila-sesamo/jogos" title="Jogo">
           <img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="Jogos" />
         </a> 
-        <h3><a href="/vila-sesamo/jogos" title="Jogos"><i class="sprite-icon-jogos-grd"></i>Jogo</a></h3>       
+        <h3><a href="/vila-sesamo/jogos" title="Jogos">Jogo</a></h3>       
       </article>
       <article class="span6 video">
         <a href="/vila-sesamo/clipes" title="Clipes">
           <img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="Clipes" />
         </a> 
-        <h3><a href="/vila-sesamo/clipes" title="Clipes"><i class="sprite-icon-clipes-grd"></i>Clipe</a></h3>       
+        <h3><a href="/vila-sesamo/clipes" title="Clipes">Clipe</a></h3>       
       </article>
       <article class="span6 atividade">
         <a href="/vila-sesamo/atividades" title="Para Colorir">
           <img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="Para Colorir" />
         </a> 
-        <h3><a href="/vila-sesamo/atividades" title="Para Colorir"><i class="sprite-icon-colorir-grd"></i>Para Colorir</a></h3>       
+        <h3><a href="/vila-sesamo/atividades" title="Para Colorir">Para Colorir</a></h3>       
       </article>
     
     </section>

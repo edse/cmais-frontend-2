@@ -47,7 +47,7 @@
   <!--carrossel personagens-->
   <?php include_partial_from_folder('sites/vilasesamo2', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
   <!--carrossel personagens-->
-  Teste2
+
   <!-- link seções -->
   <section class="bgtotal">
     <span class="divisa1"></span>
@@ -57,19 +57,19 @@
           <a href="/vilasesamo2/jogos" title="Jogo">
             <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" />
           </a> 
-          <h3><a href="/vilasesamo2/jogos" title="Jogos"><i class="sprite-icon-jogos-grd"></i>Jogo</a></h3>       
+          <h3><a href="/vilasesamo2/jogos" title="Jogos">Jogo</a></h3>       
         </article>
         <article class="span6 video">
           <a href="/vilasesamo2/clipes" title="Clipes">
             <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Clipes" />
           </a> 
-          <h3><a href="/vilasesamo2/clipes" title="Clipes"><i class="sprite-icon-clipes-grd"></i>Clipe</a></h3>       
+          <h3><a href="/vilasesamo2/clipes" title="Clipes">Clipe</a></h3>       
         </article>
         <article class="span6 atividade">
           <a href="/vilasesamo2/atividades" title="Para Colorir">
             <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Para Colorir" />
           </a> 
-          <h3><a href="/vilasesamo2/atividades" title="Para Colorir"><i class="sprite-icon-colorir-grd"></i>Para Colorir</a></h3>       
+          <h3><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h3>       
         </article>
       
       </section>

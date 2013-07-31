@@ -106,11 +106,21 @@ $(function(){
         <div class="topo-programa">
           <?php if(isset($program) && $program->id > 0): ?>
           <h2>
-            <a href="<?php echo $program->retriveUrl() ?>" style="text-decoration: none;">
+            <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
               <?php if($program->getImageThumb() != ""): ?>
-                <img src="/uploads/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
+                <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
               <?php else: ?>
                 <h3 class="tit-pagina grid1"><?php echo $program->getTitle() ?></h3>
+              <?php endif; ?>
+            </a>
+          </h2>
+          <?php else: ?>
+          <h2>
+            <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
+              <?php if($site->getImageThumb() != ""): ?>
+                <img src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>" alt="<?php echo $site->getTitle() ?>" title="<?php echo $site->getTitle() ?>" />
+              <?php else: ?>
+                <h3 class="tit-pagina grid1"><?php echo $site->getTitle() ?></h3>
               <?php endif; ?>
             </a>
           </h2>

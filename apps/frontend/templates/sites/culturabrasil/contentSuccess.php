@@ -10,7 +10,7 @@
 <![endif]-->
 <script src="/portal/js/bootstrap/bootstrap.js"></script>
 
-<?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
+<?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site)) ?>
 
 <!-- section miolo -->
 <section class="miolo">
@@ -19,14 +19,18 @@
   <div class="container">
       
     <!--breadcrumb-->
-    <div class="row-fluid pontilhada">
-      <div class="borda-pontilhada"></div> 
+    <div class="row-fluid pontilhada"> 
       <ul class="breadcrumb">
         <li><a href="/">Cultura Brasil</a> <span class="divider">»</span></li>
         <?php if($asset->Site->Program->Channel->getSlug() == "culturabrasil"): ?>
         <li><a href="<?php echo url_for('homepage')?>programas">Programas</a> <span class="divider">»</span></li>
         <li><a href="<?php echo $site->retriveUrl() ?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
-        <?php endif; ?>         
+        <?php endif; ?>
+        <?php if(count($asset->getSections()) > 0): ?>
+          <?php $section = $asset->getSections() ?>
+          <?php $section = $section[0] ?>
+        <li><a href="<?php echo $section->retriveUrl() ?>"><?php echo $section->getTitle() ?></a> <span class="divider">»</span></li>
+        <?php endif; ?>
         <li><?php echo $asset->getTitle(); ?> </li>
       </ul>
     </div>
@@ -35,12 +39,12 @@
     <div class="row-fluid">
     <!-- asset -->
        
-      <div class="row-fluid" style="margin:0 0 0 0;">
+      <div class="row-fluid">
         <!--col esquerda-->
         <div class="span8 content-asset">
           <div class="content">
             <h1><?php echo $asset->getTitle() ?></h1>
-            <small><?php echo $asset->getDescription() ?></small>
+            <h2><?php echo $asset->getDescription() ?></h2>
             <?php include_partial_from_folder('sites/culturabrasil', 'global/signature', array('uri'=>$uri,'asset'=>$asset)) ?>
           <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
           <?php if ($related[0]->AssetImage->getOriginalUrl()): ?>
