@@ -44,21 +44,21 @@
           <fieldset>
             
             <label>Nome</label>
-            <input id="nome" name="nome" class="required" type="text" >
+            <input id="nome" name="nome" class="required span12" type="text" >
             
           </fieldset>
           <fieldset>
             <div class="span4">
               <label>Bairro</label>
-              <input id="bairro" name="bairro" class="required" type="text" >
+              <input id="bairro" name="bairro" class="required span12" type="text" >
             </div>
             <div class="span4">
               <label>Cidade</label>
-              <input id="cidade" name="ciadade" class="required" type="text" >
+              <input id="cidade" name="ciadade" class="required span12" type="text" >
             </div>
-            <div class="span1">
+            <div class="span2">
               <label>UF</label>
-              <select class="estado required" id="estado">
+              <select class="required span12" id="estado" name="estado">
                 <option value="" selected="selected">--</option>
                 <option value="Acre">AC</option>
                 <option value="Alagoas">AL</option>
@@ -89,19 +89,19 @@
                 <option value="Tocantins">TO</option>
               </select>
             </div>
-            <div class="span3">
+            <div class="span2">
               <label>País</label>
-              <input id="pais" name="pais" class="required" type="text" >
+              <input id="pais" name="pais" class="required span12" type="text" >
             </div>
           </fieldset>
           <fieldset> 
             <div class="span4">
               <label>Telefone</label>
-              <input id="telefone" name="telefone" class="required" type="text" >
+              <input id="telefone" name="telefone" class="required span12" type="text" >
             </div>
             <div class="span4">
               <label>E-mail</label>
-              <input id="email" name="email" type="text" >
+              <input id="email" name="email" class="span12" type="text" >
             </div>
           </fieldset>
           <!-- form principal -->
@@ -115,10 +115,10 @@
             <div class="borda-pontilhada"></div>
             
             <label>Musica</label>
-            <input id="musica1" name="musica1" type="text">
+            <input id="musica1" name="musica1" class="required span12" type="text">
             
             <label>Intérprete</label>
-            <input id="interprete1" name="interprete1" type="text">
+            <input id="interprete1" name="interprete1" class="required span12" type="text">
             
           </fieldset>
           <!-- item musica 1 -->
