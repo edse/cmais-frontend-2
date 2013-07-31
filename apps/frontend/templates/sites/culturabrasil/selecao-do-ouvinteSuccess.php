@@ -38,8 +38,16 @@
       
       <!-- row form -->
       <div class="row-fluid">
+        <div class="box msg" style="display: none;">
+          <div class="msgErro" style="display:none">
+            <p class="aviso">Sua mensagem não pode ser enviada.</p>
+          </div>
+          <div class="msgAcerto" style="display:none">
+            <p class="aviso">Mensagem enviada com sucesso.</p>
+          </div>
+        </div>
         <!--form-->
-        <form id="form-selecao" >
+        <form id="form-selecao" action="" method="post" >
           <!-- form principal -->
           <fieldset>
             
@@ -125,7 +133,7 @@
           </fieldset>
           <!-- item musica-->
           <?php endfor; ?>
-          
+          <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           <input type="submit" class="enviar pull-right" id="enviar" value="enviar"/>
           
         </form>
@@ -215,12 +223,5 @@ $(document).ready(function() {
     }
   });
 });
-// Contador de Caracters
-function limitText(limitField, limitNum, textCounter) {
-  if(limitField.value.length > limitNum)
-    limitField.value = limitField.value.substring(0, limitNum);
-  else
-    $(textCounter).html(limitNum - limitField.value.length);
-}
 </script> 
 
