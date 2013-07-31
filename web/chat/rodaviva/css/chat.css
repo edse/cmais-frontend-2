@@ -1,0 +1,84 @@
+body{
+  margin: 10px;
+}
+.table thead>tr>th, .table tbody>tr>th, .table tfoot>tr>th, .table thead>tr>td, .table tbody>tr>td, .table tfoot>tr>td {
+ border-bottom: 1px solid #ddd;
+ border-top: 0px;
+}
+tbody{
+  display:block;
+}
+tbody {
+  height: 395px;
+  overflow: auto;
+}
+td {
+  padding: 3px 10px;
+}
+thead > tr, tbody{
+  display:block;
+}
+
+.chat-top {
+  position: relative;
+  padding: 5px 15px 15px;
+  margin-bottom: 0px;
+  background-color: #fff;
+  border-color: #ddd;
+  border-radius: 4px 4px 0px 0px;
+  border-style: solid;
+  border-width: 1px 1px 0;
+  box-shadow: none;
+}
+.chat-bottom {
+  position: relative;
+  padding: 15px 15px 15px;
+  margin-bottom: 10px;
+  background-color: #f7f7f9;
+  border-width: 1px;
+  border-color: #ddd;
+  border-radius: 0px 0px 4px 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: none;
+}
+#chat-wrapper{
+  /*border-top: 1px solid #ddd;*/
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display:block;
+  overflow:auto;
+  height:395px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1) inset;
+}
+#chat-content{
+  width:100%;
+  display: block;
+}
+.title {
+  float: left;
+}
+.status {
+  float: left;
+  margin-top: 30px;
+  margin-left: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.reconnect {
+  float: right;
+  margin-top: 30px;
+  margin-left:  15px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+#input-name{
+  margin-right: 15px;
+}
+#input-comment{
+  margin-right: 15px;
+}
