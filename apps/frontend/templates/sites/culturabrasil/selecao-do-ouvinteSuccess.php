@@ -107,7 +107,7 @@
           <!-- form principal -->
           
           <?php
-          $itens=20;
+          $itens=19;
           for($i = 0; $i <= $itens; $i++):
           ?>
           <!-- item musica-->
