@@ -38,7 +38,7 @@
       
       <!-- row form -->
       <div class="row-fluid">
-        <div class="box msg" style="display: none;">
+        <div class="box msg">
           <div class="msgErro" style="display:none">
             <p class="aviso">Sua mensagem não pode ser enviada.</p>
           </div>
