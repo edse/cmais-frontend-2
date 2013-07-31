@@ -56,7 +56,7 @@
               <label>Cidade</label>
               <input id="cidade" name="ciadade" class="required span4" type="text" >
             </div>
-            <div class="span1">
+            <div class="span2">
               <label>UF</label>
               <select class="required span1" id="estado" name="estado">
                 <option value="" selected="selected">--</option>
@@ -89,7 +89,7 @@
                 <option value="Tocantins">TO</option>
               </select>
             </div>
-            <div class="span3">
+            <div class="span2">
               <label>País</label>
               <input id="pais" name="pais" class="required span3" type="text" >
             </div>
