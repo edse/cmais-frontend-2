@@ -43,11 +43,37 @@
           <!-- form principal -->
           <fieldset>
             
-            <legend>Legend</legend>
             <label>Nome</label>
-            <input type="text" placeholder="Type something…">
-            <span class="help-block">Example block-level help text here.</span>
+            <input type="text" >
             
+          </fieldset>
+          <fieldset>
+            <div class="span4">
+              <label>Bairro</label>
+              <input type="text" >
+            </div>
+            <div class="span4">
+              <label>Cidade</label>
+              <input type="text" >
+            </div>
+            <div class="span1">
+              <label>UF</label>
+              <input type="text" >
+            </div>
+            <div class="span3">
+              <label>País</label>
+              <input type="text" >
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="span4">
+              <label>Telefone</label>
+              <input type="text" >
+            </div>
+            <div class="span4">
+              <label>E-mail</label>
+              <input type="text" >
+            </div>
           </fieldset>
           <!-- form principal -->
           
