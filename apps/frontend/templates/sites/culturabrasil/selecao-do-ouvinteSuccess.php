@@ -36,6 +36,24 @@
       <p class="horario">Preencha e envie o formulário abaixo com até seis músicas adequadas à programação da rádio.</p>
       <!--titulo-->
       
+      <!-- row form -->
+      <div class="row-fluid">
+        <!--form-->
+        <form>
+          <!-- form principal -->
+          <fieldset>
+            <legend>Legend</legend>
+            <label>Nome</label>
+            <input type="text" placeholder="Type something…">
+            <span class="help-block">Example block-level help text here.</span>
+            
+          </fieldset>
+          <!-- form principal -->
+        </form>
+        <!--/form-->
+        <!-- /row form -->
+      </div>
+      
               
     </div>  
     <!-- /coluna esquerda -->
