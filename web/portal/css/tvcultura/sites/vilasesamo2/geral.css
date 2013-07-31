@@ -234,7 +234,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 
 
 /* topo cmais*/
-.navbar-inverse .navbar-inner.topo-cmais {  background:url(/portal/images/capaPrograma/vilasesamo2/bg-cmais.jpg) repeat-x !important;  height:37px; }
+.navbar-inverse .navbar-inner.topo-cmais {  background:url(/portal/images/capaPrograma/vilasesamo2/bg-cmais.jpg) repeat-x !important;  height:37px; display:none; }
 .navbar-inverse .navbar-inner.topo-cmais .container { height:37px; overflow:hidden; }
 .navbar-inverse .navbar-inner.topo-cmais h1, 
 .navbar-inverse .navbar-inner.topo-cmais h2 { float:left; margin:0; padding:0; } 
