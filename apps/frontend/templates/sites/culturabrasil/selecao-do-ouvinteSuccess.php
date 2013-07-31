@@ -134,7 +134,7 @@
           </fieldset>
           <!-- item musica-->
           <?php endfor; ?>
-          <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+          <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" id="ajax-loader" />
           <input type="submit" class="enviar pull-right" id="enviar" value="enviar"/>
           
         </form>
@@ -177,11 +177,11 @@ $(document).ready(function() {
         data : $("#form-selecao").serialize(),
         beforeSend : function() {
           $('input#enviar').hide();
-          //$('img#ajax-loader').show();
+          $('img#ajax-loader').show();
         },
         success : function(data) {
           $('input#enviar').show();
-          //$('img#ajax-loader').hide();
+          $('img#ajax-loader').hide();
           window.location.href = "#";
           
           if(data == "1") {
