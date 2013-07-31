@@ -37,9 +37,9 @@
       <!--titulo-->
       
       <!-- row form -->
-      <div id="form-seleção" class="row-fluid">
+      <div class="row-fluid">
         <!--form-->
-        <form>
+        <form id="form-seleção" >
           <!-- form principal -->
           <fieldset>
             
