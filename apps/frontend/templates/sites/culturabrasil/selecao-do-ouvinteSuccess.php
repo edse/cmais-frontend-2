@@ -182,19 +182,19 @@ $(document).ready(function() {
         success : function(data) {
           $('input#enviar').show();
           $('img#ajax-loader').hide();
-          window.location.href = "#";
+          window.location.href = "javascript:;";
           
           if(data == "1") {
-            //$('.box.msg, .msgAcerto').show();
-            //$(".box.aberto").hide();
-            /*
-            $("#form-contato").clearForm();
-            $(".msgAcerto").show();
-            $('img#ajax-loader').hide();
-            */
+            $('.box.msg, .msgAcerto').show();
+            $('html, body').animate({
+              scrollTop: $('.navbar-inner').offset().top
+            }, "slow");
+            $('input[type="text"]').val("");
           } else {
-            //$(".box.msg, .msgErro").show();
-            //$(".box.aberto").hide();
+            $(".box.msg, .msgErro").show();
+            $('html, body').animate({
+              scrollTop: $('.navbar-inner').offset().top
+            }, "slow");
           }
         }
       });
