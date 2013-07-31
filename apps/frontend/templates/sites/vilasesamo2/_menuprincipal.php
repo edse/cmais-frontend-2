@@ -1,13 +1,13 @@
-  <?php
+  <? /*php
    if($section->getSlug() == "home"){
      $classLogo = "sprite-logo-sesamo";
      $border = "";
-   }//else{
-    //$classLogo = "";
-    //$border = "<i class='sprite-detalhe-amarelo4'></i>";
-   //}
+   }else{
+    $classLogo = "";
+    $border = "<i class='sprite-detalhe-amarelo4'></i>";
+   }
    
-  ?>
+  */?>
   <nav class="header-bar">
     <div class="content">
       <h1><a href="<?php echo $site->retriveUrl(); ?>" class="<?php echo $classLogo; ?>" title="Vila Sésamo"><img src="/portal/images/capaPrograma/vilasesamo2/logo-vila-menu.png" alt="Vila Sésamo" /></a>
