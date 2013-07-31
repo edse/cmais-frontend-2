@@ -103,7 +103,8 @@ img{width:100%;}
 .lista-programas span.titulo-arquivo,
 .miolo.programa .row-fluid .span8 h1,
 .miolo.programa .span8 .horario,
-.miolo.programa .span8 .nav a{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+.miolo.programa .span8 .nav a,
+#form-selecao legend{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
@@ -325,7 +326,7 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 
 /* /player */
 #form-selecao #estado{width:100px;}
-#form-selecao legend{border: none; margin-bottom: 0px;}
+#form-selecao legend{border: none; margin-bottom: 0px; color:#999999; font-size:18px;}
 #form-selecao .borda-pontilhada{margin-bottom:20px;}
 #form-selecao label{color:#333333; font-size:12px;}
 /* selecao do ouvinte */
