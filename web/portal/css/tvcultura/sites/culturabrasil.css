@@ -104,6 +104,8 @@ img{width:100%;}
 .miolo.programa .row-fluid .span8 h1,
 .miolo.programa .span8 .horario,
 .miolo.programa .span8 .nav a,
+.miolo.selecao .span8 h1,
+.miolo.selecao .span8 .horario,
 #form-selecao legend,
 #form-selecao .aviso{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
@@ -188,6 +190,7 @@ textarea{width:100%; font-size:11px;}
 /* /pagination */
 
 /* lista assets subsection */
+.lista-assets{padding-left:10px;}
 .lista-assets a h6{margin:0;text-transform:uppercase;color:#666666;margin: 0 0 -2px 0; font-size:12px; letter-spacing: -0.1em;}
 .lista-assets a h2{color:#333;font-size:18px; font-weight: normal; margin-top: 18px;line-height: 18px;margin-bottom: 4px;}
 .lista-assets a h4{color:#333; }
@@ -312,7 +315,7 @@ textarea{width:100%; font-size:11px;}
 .miolo.programa .span8 .nav li:hover a { background:#666; }
 .miolo.programa .span8 .nav li:hover a,
 .miolo.programa .span8 .nav li.active a { color:#fff; }
-.miolo.programa .row-fluid .span8 h1 { margin:0; color:#333; }
+.miolo.programa .row-fluid .span8 h1 { margin:0; color:#333;line-height: 25px; }
 .miolo.programa .span8 .horario { color:#666; font-size:18px; }
 /* programa */
 
@@ -328,11 +331,14 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 /* /player */
 
 /* selecao do ouvinte */
+.miolo.selecao .span8 h1{font-size:24px; color:#333333; line-height: 25px; margin:0;}
+.miolo.selecao .span8 .horario{font-size:18px; color:#666666;}
+#form-selecao fieldset{position:relative;}
+#form-selecao label.error{color:red; font-weight:bold; position:absolute; top:0; right:0;}
 #form-selecao #estado{width:100px;}
 #form-selecao legend{border: none; margin-bottom: 0px; color:#999999; font-size:18px;}
 #form-selecao .borda-pontilhada{margin-bottom:9px;}
 #form-selecao label{color:#333333; font-size:12px;}
-#form-selecao label.error{color:red; font-weight:bold;}
 #form-selecao #enviar{border: none;padding: 2px 4px;text-transform: uppercase;color: #FFF;background: #666666;font-size: 14px;margin: 20px 0;}
 #form-selecao input[type="text"]{ -moz-border-radius: 0px; -webkit-border-radius: 0px; -khtml-border-radius: 0px; border-radius: 0px;border-color: #abadb3;}
 #form-selecao .box.msg{background:#333333;}

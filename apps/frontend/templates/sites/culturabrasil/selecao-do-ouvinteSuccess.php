@@ -17,7 +17,7 @@
 
 
 <!--section miolo--> 
-<section class="miolo programa" >
+<section class="miolo selecao" >
   <!-- container miolo -->
   <div class="container row-fluid">
     <!--breadcrumb-->
@@ -124,13 +124,14 @@
             <legend>Música <?php echo $i+1; ?></legend>
             
             <div class="borda-pontilhada"></div>
-            
-            <label>Música</label>
-            <input id="musica<?php echo $i+1; ?>" name="musica<?php echo $i+1; ?>" class="required span12" type="text">
-            
-            <label>Intérprete</label>
-            <input id="interprete<?php echo $i+1; ?>" name="interprete<?php echo $i+1; ?>" class="required span12" type="text">
-            
+            <div class="box">
+              <label>Música</label>
+              <input id="musica<?php echo $i+1; ?>" name="musica<?php echo $i+1; ?>" class="required span12" type="text">
+            </div>
+            <div class="box">
+              <label>Intérprete</label>
+              <input id="interprete<?php echo $i+1; ?>" name="interprete<?php echo $i+1; ?>" class="required span12" type="text">
+            </div>
           </fieldset>
           <!-- item musica-->
           <?php endfor; ?>
