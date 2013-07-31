@@ -106,23 +106,25 @@
           </fieldset>
           <!-- form principal -->
           
-          <input type="hidden" value="20">
-          
-          <!-- item musica 1-->
+          <?php
+          $itens=20;
+          for($i = 0; $i <= $itens; $i++):
+          ?>
+          <!-- item musica-->
           <fieldset>
-            <legend>Musica 1</legend>
+            <legend>Música <?php echo $i+1; ?></legend>
             
             <div class="borda-pontilhada"></div>
             
-            <label>Musica</label>
-            <input id="musica1" name="musica1" class="required span12" type="text">
+            <label>Música</label>
+            <input id="musica<?php echo $i+1; ?>" name="musica<?php echo $i+1; ?>" class="required span12" type="text">
             
             <label>Intérprete</label>
-            <input id="interprete1" name="interprete1" class="required span12" type="text">
+            <input id="interprete<?php echo $i+1; ?>" name="interprete<?php echo $i+1; ?>" class="required span12" type="text">
             
           </fieldset>
-          <!-- item musica 1 -->
-          
+          <!-- item musica-->
+          <?php endfor; ?>
           
         </form>
         <!--/form-->
