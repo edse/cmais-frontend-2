@@ -327,7 +327,7 @@ class mainActions extends sfActions
           if(!$param3)
             $this->forwardObject($parm2Object);
           else{
-            if ($parm1Object->slug == "m") {
+            if (in_array($parm1Object->slug, array("m", "culturabrasil"))) {
               $this->getRequest()->setParameter('object', $parm2Object);
               $this->forward('_section', 'index');
             }
