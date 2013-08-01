@@ -29,7 +29,9 @@
         <?php if(count($asset->getSections()) > 0): ?>
           <?php $section = $asset->getSections() ?>
           <?php $section = $section[0] ?>
+          <?php if($section->getSlug() != "arquivo"): ?>
         <li><a href="<?php echo $section->retriveUrl() ?>"><?php echo $section->getTitle() ?></a> <span class="divider">»</span></li>
+          <?php endif; ?>
         <?php endif; ?>
         <li><?php echo $asset->getTitle(); ?> </li>
       </ul>
