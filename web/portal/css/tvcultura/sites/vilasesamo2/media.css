@@ -181,7 +181,7 @@ footer .relacionados ul { margin-left:0; }
 .destaque-filtro .span6 { margin-left:2.3%;}
 .inner a img { width:100% }
 #carrossel-personagem .slider ul {  left:0;}
-/*#carrossel-personagem .slider .inner,*/
+#carrossel-personagem .slider .inner { width:210px; height:210px; }
 #carrossel-personagem .slider li { width:220px; height:220px; }
 
 }
