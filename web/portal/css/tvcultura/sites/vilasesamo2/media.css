@@ -136,6 +136,10 @@ and (orientation: landscape) {
 .destaque-filtro .span6 { width: 49%;  margin-left:2.3%;} 
 footer .mapa .col-central { width:24.5%; }
 footer .relacionados li { margin-right:3.1%; }
+.inner a img { width:100% }
+#carrossel-personagem .slider ul {  left:0;}
+#carrossel-personagem .slider .inner,
+#carrossel-personagem .slider li { width:250px; height:250px; }
 }
 
 @media only screen 
