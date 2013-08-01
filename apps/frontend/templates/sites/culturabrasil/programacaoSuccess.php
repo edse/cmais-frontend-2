@@ -59,7 +59,7 @@
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapseOne" class="accordion-body collapse in" style="*height:auto;">
+            <div id="collapseOne" class="accordion-body collapse in" style="*overflow:hidden;">
               
               <div class="accordion-inner">
                 <p>Matemática 23<br><br>
@@ -90,7 +90,7 @@
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapse2" class="accordion-body collapse"  style="*height:0px;">
+            <div id="collapse2" class="accordion-body collapse"  style="*overflow:hidden;">
               <div class="accordion-inner">
                 <p>Matemática 23<br><br>
                 Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
@@ -120,7 +120,7 @@
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapse3" class="accordion-body collapse"  style="*height:0px;">
+            <div id="collapse3" class="accordion-body collapse"  style="*overflow:hidden;">
               <div class="accordion-inner">
                 <p>Matemática 23<br><br>
                 Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
@@ -150,7 +150,7 @@
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapse4" class="accordion-body collapse"  style="*height:0px;">
+            <div id="collapse4" class="accordion-body collapse"  style="*overflow:hidden;">
               <div class="accordion-inner">
                 <p>Matemática 23<br><br>
                 Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
