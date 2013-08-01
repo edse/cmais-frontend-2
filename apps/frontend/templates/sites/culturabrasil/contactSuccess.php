@@ -24,7 +24,7 @@
     <div class="row-fluid pontilhada">
       <ul class="breadcrumb">
         <li><a href="/">Cultura Brasil</a><span class="divider">»</span></li>
-        <li>Entrevistas </li>
+        <li><?php echo $section->getTitle(); ?></li>
       </ul>
     </div>
     <!--/breadcrumb-->
