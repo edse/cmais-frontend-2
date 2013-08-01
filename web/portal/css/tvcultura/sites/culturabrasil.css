@@ -233,10 +233,11 @@ textarea{width:100%; font-size:11px;}
 .miolo.grade .seta-grade.direita{background-position:0px -85px}
 .miolo.grade .seta-grade.cima{background-position:0px -149px; float:right;}
 .miolo.grade .seta-grade.baixo{background-position:0px -117px; float:right;}
+.miolo.grade #accordion2 .accordion-toggle {position: relative;}
 .miolo.grade #accordion2 .accordion-toggle .hora, .miolo.grade #accordion2 .accordion-toggle .programa-grade{font-size:18px;}
 .miolo.grade #accordion2 .accordion-toggle .programa-grade{color:#333333;padding-left:20px;}
 .miolo.grade #accordion2 .accordion-toggle .hora{color:#666666;}
-.miolo.grade #accordion2 .accordion-toggle .seta-grade{position:relative; bottom:4px;}
+.miolo.grade #accordion2 .accordion-toggle .seta-grade{position:absolute; bottom:4px; right:0px;}
 .miolo.grade #accordion2{clear:both;}
 .miolo.grade #accordion2 .accordion-body .btn-body{position:relative; padding: 0px 10px;background: #cccccc;float: left;clear: both;margin-bottom: 10px;text-transform: uppercase;font-size: 12px;color: #666666;}
 .miolo.grade #accordion2 .accordion-body .btn-body:hover{text-decoration:none;}
