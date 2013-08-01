@@ -21,7 +21,7 @@
   <!-- container miolo -->
   <div class="container row-fluid">
     <!-- coluna esquerda -->
-    <div class="span8">
+    <div class="span8" style="*margin-left: 0px;">
       
       <!-- titulo -->
       <h1>Grade de programação</h1>
