@@ -47,7 +47,7 @@ if($_REQUEST['captcha']){
         case "solano-ribeiro":
           $to = "crsolanoribeiro@radioculturabrasil.com.br";
           break;
-        case "cultura-brasil":
+        case "webmaster":
           $to = "crsiteradio@radioculturabrasil.com.br";
           break;
       }
