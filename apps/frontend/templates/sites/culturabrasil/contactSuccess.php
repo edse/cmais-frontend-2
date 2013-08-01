@@ -24,7 +24,7 @@
     <div class="row-fluid pontilhada">
       <ul class="breadcrumb">
         <li><a href="/">Cultura Brasil</a><span class="divider">»</span></li>
-        <li>Entrevistas </li>
+        <li><?php echo $section->getTitle(); ?></li>
       </ul>
     </div>
     <!--/breadcrumb-->
@@ -32,8 +32,8 @@
     <div class="span8" style="margin:0; padding:0 10px;">
       
       <!-- titulo -->
-      <h1>Seleção do ouvinte</h1>
-      <p class="horario">Preencha e envie o formulário abaixo com até seis músicas adequadas à programação da rádio.</p>
+      <h1><?php echo $section->getTitle(); ?></h1>
+      <!--p class="horario">Preencha e envie o formulário abaixo com até seis músicas adequadas à programação da rádio.</p-->
       <!--titulo-->
       
       <!-- row form -->
@@ -55,7 +55,7 @@
               <label>Nome</label>
               <input id="nome" name="nome" class="required span12" type="text" >
             </div>
-            <div class="span3">
+            <div class="span2">
               <label>Idade</label>
               <input id="idade" name="idade" class="required span12" type="text" >
             </div>
@@ -68,11 +68,11 @@
             </div>
           </fieldset>
           <fieldset>  
-            <div class="span9">
+            <div class="span10">
               <label>Cidade</label>
               <input id="cidade" name="ciadade" class="required span12" type="text" >
             </div>
-            <div class="span3">
+            <div class="span2">
               <label>UF</label>
               <select class="span12" id="estado-contato" name="estado">
                 <option value="" selected="selected">--</option>
@@ -121,22 +121,23 @@
                 <option value="Seleção do Ouvinte">Seleção do Ouvinte</option>
                 <option value="Solano Ribeiro">Solano Ribeiro</option>
                 <option value="Supertônica">Supertônica</option>
+                <option value="Webmaster">Outro</option>
               </select>
             </div>
           </fieldset>
           
           <fieldset>
             <label>Mensagem</label>
-            <textarea name="mensagem" id="mensagem" onkeydown="limitText(this,1000,'#textCounter');"></textarea>
+            <textarea name="mensagem" rows="6" id="mensagem" class="span12" onkeydown="limitText(this,1000,'#textCounter');"></textarea>
             <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
           </fieldset> 
           
           <fieldset>
-            <div class="codigo span2" id="captchaimage">
+            <div class="codigo span3" id="captchaimage">
               <label for="captcha">Confirmação</label>
               <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código"> <img src="/portal/js/validate/demo/captcha/images/image.php?1375217158" width="132" height="46" alt="Captcha image" id="captcha_image"> </a>
             </div>
-            <div class="span10" id="captchaimage">  
+            <div class="span9" id="captchaimage">  
               <label class="msg" for="captcha">Digite no campo abaixo os caracteres que você vê na imagem:</label>
               <input class="caracteres span12" type="text" maxlength="6" name="captcha" id="captcha">
             </div>

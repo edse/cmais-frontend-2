@@ -107,7 +107,8 @@ img{width:100%;}
 .miolo.selecao .span8 h1,
 .miolo.selecao .span8 .horario,
 #form-selecao legend,
-#form-selecao .aviso{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+#form-selecao .aviso,
+.saladetv .page-header h4{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
@@ -150,9 +151,11 @@ img{width:100%;}
 .programa.subsection span{padding:5px; font-size:24px; margin:0;}
 .programa.subsection i.borda-titulo.subsection{background-position: 0px -42px;height: 30px;width: 10px;}
 /* subsection */
-
+ 
 /* home */
 .carousel-control {position: absolute;top: 50%; display:none;}
+.carousel-control.left{background: url(/portal/images/capaPrograma/culturabrasil/seta-esquerda.png) no-repeat;border: none;width: 55px;height: 55px;}
+.carousel-control.right{background: url(/portal/images/capaPrograma/culturabrasil/seta-direita.png) no-repeat;border: none;width: 55px;height: 55px;}
 .carousel-caption {position: absolute;left: auto ;right: 0;bottom: 0;padding: 10px 10px 20px 20px ;width: 310px;top: 0;color: white; background:none;}
 .carousel-caption h4{ font-size:24px;font-weight:normal;line-height:35px;}
 .carousel-caption h3{ margin: 0;font-weight: normal;font-size: 17px;text-transform: uppercase;}
@@ -235,6 +238,7 @@ textarea{width:100%; font-size:11px;}
 .miolo.grade #accordion2 .accordion-toggle .hora{color:#666666;}
 .miolo.grade #accordion2 .accordion-toggle .seta-grade{position:relative; bottom:4px;}
 .miolo.grade #accordion2{clear:both;}
+.miolo.grade #accordion2 .accordion-body{*display:none;}
 .miolo.grade #accordion2 .accordion-body .btn-body{position:relative; padding: 0px 10px;background: #cccccc;float: left;clear: both;margin-bottom: 10px;text-transform: uppercase;font-size: 12px;color: #666666;}
 .miolo.grade #accordion2 .accordion-body .btn-body:hover{text-decoration:none;}
 .miolo.grade #accordion2 .accordion-group{border:none}
@@ -331,7 +335,7 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 /* /player */
 
 /* selecao do ouvinte */
-.miolo.selecao .span8 h1{font-size:24px; color:#333333; line-height: 25px; margin:0;}
+.miolo.selecao .span8 h1{font-size:24px; color:#333333; line-height: 25px; margin:0 0 10px 0;}
 .miolo.selecao .span8 .horario{font-size:18px; color:#666666;}
 #form-selecao fieldset{position:relative;}
 #form-selecao .box{position:relative;}
@@ -340,7 +344,7 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 #form-selecao #estado{width:100px;}
 #form-selecao legend{border: none; margin-bottom: 0px; color:#999999; font-size:18px;}
 #form-selecao .borda-pontilhada{margin-bottom:9px;}
-#form-selecao label{color:#333333; font-size:12px;}
+#form-selecao label{color:#333333; font-size:14px;}
 #form-selecao #enviar{border: none;padding: 2px 4px;text-transform: uppercase;color: #FFF;background: #666666;font-size: 14px;margin: 20px 0;}
 #form-selecao input[type="text"]{ -moz-border-radius: 0px; -webkit-border-radius: 0px; -khtml-border-radius: 0px; border-radius: 0px;border-color: #abadb3;}
 #form-selecao .box.msg{background:#333333;}
@@ -348,3 +352,10 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 #form-selecao .aviso{color: #ffffff;padding: 10px;font-size: 18px;} 
 #form-selecao #captcha_image{width:132px;}
 /* /selecao do ouvinte */
+
+/* sala de tv */
+.saladetv .fb_iframe_widget{width:496px;}
+.saladetv .page-header{border:none;}
+.saladetv .page-header h4{color:#333333; font-size:24px;text-transform: none;}
+.saladetv #videoPlayer{width: 450px; margin: 0 auto;}
+/* /sala de tv */

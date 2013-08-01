@@ -67,7 +67,7 @@ footer .mapa .span12 .col-esq,
 .navbar .btn-navbar:hover,
 .navbar .btn-navbar { background:none; border:none; padding:0; margin:0; box-shadow: none; }
 .navbar-fixed-top { margin-bottom:0; position:fixed;}
-#content {  min-height:500px; position:relative; top:103px; margin-bottom:90px; }
+#content {  min-height:500px; position:relative; top:103px; margin-bottom:51px; }
 .header-bar,
 section { max-width:980px; margin:0 auto; clear:both;}
 .navbar-inverse .navbar-inner { 
@@ -380,7 +380,7 @@ footer .mapa .sprite-destalhe-amarelo1 { position:absolute; left:0; top:0; }
 footer .relacionados { margin-left:4%; }
 footer .relacionados h3 { font-weight:normal; text-transform:uppercase; font-size:22px; }
 footer .relacionados ul { margin:2% 0 0 0; }
-footer .relacionados li { list-style:none; float:left; margin-right:3.8%; }
+footer .relacionados li { list-style:none; float:left; margin-right:3.2%; }
 footer .relacionados li.last { margin-right:0; }
 /* /footer*/
 
