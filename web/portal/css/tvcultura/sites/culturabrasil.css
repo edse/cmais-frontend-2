@@ -341,7 +341,7 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 #form-selecao #estado{width:100px;}
 #form-selecao legend{border: none; margin-bottom: 0px; color:#999999; font-size:18px;}
 #form-selecao .borda-pontilhada{margin-bottom:9px;}
-#form-selecao label{color:#333333; font-size:12px;}
+#form-selecao label{color:#333333; font-size:14px;}
 #form-selecao #enviar{border: none;padding: 2px 4px;text-transform: uppercase;color: #FFF;background: #666666;font-size: 14px;margin: 20px 0;}
 #form-selecao input[type="text"]{ -moz-border-radius: 0px; -webkit-border-radius: 0px; -khtml-border-radius: 0px; border-radius: 0px;border-color: #abadb3;}
 #form-selecao .box.msg{background:#333333;}
@@ -353,6 +353,6 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 /* sala de tv */
 .saladetv .fb_iframe_widget{width:496px;}
 .saladetv .page-header{border:none;}
-.saladetv .page-header h4{color:#333333; font-size:24px;}
+.saladetv .page-header h4{color:#333333; font-size:24px;text-transform: none;}
 .saladetv #videoPlayer{width: 450px; margin: 0 auto;}
 /* /sala de tv */
