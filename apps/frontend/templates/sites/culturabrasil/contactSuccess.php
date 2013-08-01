@@ -51,23 +51,30 @@
           </div>
           <!-- form principal -->
           <fieldset>
-            
-            <label>Nome</label>
-            <input id="nome" name="nome" class="required span12" type="text" >
+            <div class="span10">
+              <label>Nome</label>
+              <input id="nome" name="nome" class="required span12" type="text" >
+            </div>
+            <div class="span3">
+              <label>Idade</label>
+              <input id="idade" name="idade" class="required span12" type="text" >
+            </div>
             
           </fieldset>
           <fieldset>
-            <div class="span4">
-              <label>Bairro</label>
-              <input id="bairro" name="bairro" class="span12" type="text" >
+            <div class="span12">
+              <label>E-mail</label>
+              <input id="email" name="email" class="span12" type="text" >
             </div>
-            <div class="span4">
+          </fieldset>
+          <fieldset>  
+            <div class="span9">
               <label>Cidade</label>
               <input id="cidade" name="ciadade" class="required span12" type="text" >
             </div>
-            <div class="span2">
+            <div class="span3">
               <label>UF</label>
-              <select class="span12" id="estado" name="estado">
+              <select class="span12" id="estado-contato" name="estado">
                 <option value="" selected="selected">--</option>
                 <option value="Acre">AC</option>
                 <option value="Alagoas">AL</option>
@@ -98,43 +105,44 @@
                 <option value="Tocantins">TO</option>
               </select>
             </div>
-            <div class="span2">
-              <label>País</label>
-              <input id="pais" name="pais" class="span12" type="text" >
+          </fieldset>
+          
+          <fieldset>
+            <div class="span4">
+              <label>Programa</label>
+              <select class="span12 required" id="programa" name="programa">
+                <option value="" selected="selected">--</option>
+                <option value="Bamba Jam">Bamba Jam</option>
+                <option value="Cultura Livre">Cultura Livre</option>
+                <option value="Galeria">Galeria</option>
+                <option value="Música Regional Brasileira">Música Regional Brasileira</option>
+                <option value="RadarCultura">RadarCultura</option>
+                <option value="Reggae de Bamba">Reggae de Bamba</option>
+                <option value="Seleção do Ouvinte">Seleção do Ouvinte</option>
+                <option value="Solano Ribeiro">Solano Ribeiro</option>
+                <option value="Supertônica">Supertônica</option>
+              </select>
             </div>
           </fieldset>
-          <fieldset> 
-            <div class="span4">
-              <label>Telefone</label>
-              <input id="telefone" name="telefone" class="span12" type="text" >
+          
+          <fieldset>
+            <label>Mensagem</label>
+            <textarea name="mensagem" id="mensagem" onkeydown="limitText(this,1000,'#textCounter');"></textarea>
+            <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
+          </fieldset> 
+          
+          <fieldset>
+            <div class="codigo" id="captchaimage">
+              <label for="captcha">Confirmação</label>
+              <br>
+              <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código"> <img src="/portal/js/validate/demo/captcha/images/image.php?1375217158" width="132" height="46" alt="Captcha image" id="captcha_image"> </a>
+              <label class="msg" for="captcha">Digite no campo abaixo os caracteres que você vê na imagem:</label>
+              <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha">
             </div>
-            <div class="span4">
-              <label>E-mail</label>
-              <input id="email" name="email" class="span12" type="text" >
-            </div>
-          </fieldset>
+          </fieldset> 
           <!-- form principal -->
           
-          <?php
-          $itens=19;
-          for($i = 0; $i <= $itens; $i++):
-          ?>
-          <!-- item musica-->
-          <fieldset>
-            <legend>Música <?php echo $i+1; ?></legend>
-            
-            <div class="borda-pontilhada"></div>
-            <div class="box">
-              <label>Música</label>
-              <input id="musica<?php echo $i+1; ?>" name="musica<?php echo $i+1; ?>" class="required span12" type="text">
-            </div>
-            <div class="box">
-              <label>Intérprete</label>
-              <input id="interprete<?php echo $i+1; ?>" name="interprete<?php echo $i+1; ?>" class="required span12" type="text">
-            </div>
-          </fieldset>
-          <!-- item musica-->
-          <?php endfor; ?>
+         
           <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" id="ajax-loader" />
           <input type="submit" class="enviar pull-right" id="enviar" value="enviar"/>
           
@@ -169,61 +177,92 @@
 
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript">
-$(document).ready(function() {
-  var validator = $('#form-selecao').validate({
-    submitHandler : function(form) {
-      $.ajax({
-        type : "POST",
-        dataType : "text",
-        data : $("#form-selecao").serialize(),
-        beforeSend : function() {
-          $('input#enviar').hide();
-          $('img#ajax-loader').show();
-        },
-        success : function(data) {
-          $('input#enviar').show();
-          $('img#ajax-loader').hide();
-          window.location.href = "javascript:;";
-          
-          if(data == "1") {
-            $('.box.msg, .msgAcerto').show();
-            $('html, body').animate({
-              scrollTop: $('.navbar-inner').offset().top
-            }, "slow");
-            $('input[type="text"]').val("");
-          } else {
-            $(".box.msg, .msgErro").show();
-            $('html, body').animate({
-              scrollTop: $('.navbar-inner').offset().top
-            }, "slow");
+  $(document).ready(function() {
+    
+    $('input#cancelar').click(function(){
+      $('#form-selecao').clearForm();
+    })
+    var validator = $('#form-selecao').validate({
+      submitHandler : function(form) {
+        $.ajax({
+          type : "POST",
+          dataType : "text",
+          data : $("#form-selecao").serialize(),
+          beforeSend : function() {
+            $('input#enviar').hide();
+            $('img#ajax-loader').show();
+          },
+          success : function(data) {
+            $('input#enviar').show();
+            $('img#ajax-loader').hide();
+            window.location.href = "javascript:;";
+            if(data == "1") {
+              $('.box.msg, .msgAcerto').show();
+              $('html, body').animate({
+                scrollTop: $('.navbar-inner').offset().top
+              }, "slow");
+            } else {
+              $(".box.msg, .msgErro").show();
+              $('html, body').animate({
+                scrollTop: $('.navbar-inner').offset().top
+              }, "slow");
+            }
           }
+        });
+      },
+      rules : {
+        nome : {
+          required : true,
+          minlength : 2
+        },
+        idade : {
+          required : true
+        },
+        email : {
+          required : true,
+          email : true
+        },
+        cidade : {
+          required : true,
+          minlength : 2
+        },
+        estado : {
+          required : true
+        },
+        programa: {
+          required : true
+        },
+        mensagem : {
+          required : true,
+          minlength : 2
+        },
+        captcha : {
+          required : true,
+          remote : "/portal/js/validate/demo/captcha/process.php"
         }
-      });
-    },
-    rules : {
-      nome : {
-        required : true,
-        minlength : 2
       },
-      email : {
-        required : true,
-        email : true
+      messages : {
+        nome : "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+        idade : "Este campo &eacute; obrigat&oacute;rio.",
+        email : "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
+        cidade : "Este campo &eacute; obrigat&oacute;rio.",
+        estado : "Este campo &eacute; obrigat&oacute;rio.",
+        programa : "Este campo &eacute; obrigat&oacute;rio.",
+        mensagem : "Este campo &eacute; obrigat&oacute;rio.",
+        captcha : "Digite corretamente o código que está ao lado."
       },
-      cidade : {
-        required : true,
-        minlength : 2
+      success : function(label) {
+        // set &nbsp; as text for IE
+        label.html("&nbsp;").addClass("checked");
       }
-    },
-    messages : {
-      nome : "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
-      email : "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
-      cidade : "Este campo &eacute; obrigat&oacute;rio."
-    },
-    success : function(label) {
-      // set &nbsp; as text for IE
-      label.html("&nbsp;").addClass("checked");
-    }
+    });
   });
-});
+  // Contador de Caracters
+  function limitText(limitField, limitNum, textCounter) {
+    if(limitField.value.length > limitNum)
+      limitField.value = limitField.value.substring(0, limitNum);
+    else
+      $(textCounter).html(limitNum - limitField.value.length);
+  }
 </script> 
 
