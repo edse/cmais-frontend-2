@@ -139,7 +139,7 @@
            
           $assets = Doctrine_Query::create()
             ->select('a.*')
-            ->from('Asset a')
+            ->from('Asset a, Section s')
             ->where('a.site_id = ?', (int)$site->id)
             ->andWhere('a.asset_type_id = 10')
             ->andWhere('s.slug = "enquetes"')
