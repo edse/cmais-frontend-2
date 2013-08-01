@@ -42,7 +42,7 @@ if($_REQUEST['captcha']){
       $email = strip_tags($_REQUEST['email']);
       $name = strip_tags($_REQUEST['nome']);
       $from = "{$nome} <{$email}>";
-      $subject = '[Cultura Brasil]['.$_REQUEST['program'].'] '.$from;
+      $subject = '[Cultura Brasil]['.$_REQUEST['programa'].'] '.$from;
       
       $message = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
       while(list($field, $value) = each($_REQUEST)) {
