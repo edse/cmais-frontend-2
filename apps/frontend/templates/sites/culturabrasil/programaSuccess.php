@@ -31,7 +31,7 @@
       <!--clounaprincipal-->
       <div class="row-fluid">
         <!--lista assets-->
-        <div class="lista-assets span8">
+        <div class="lista-assets span8" style="*margin-left: 0px;">
           <h1>Galeria</h1>
           <p class="horario">Sábado, às 23h15 <br /> Horário alternativo: Terça, à 1h45</p>
           <!-- menu subsection-->

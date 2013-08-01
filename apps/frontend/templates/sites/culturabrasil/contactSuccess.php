@@ -13,9 +13,6 @@
 
 <?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
 
- 
-
-
 <!--section miolo--> 
 <section class="miolo selecao" >
   <!-- container miolo -->
@@ -29,7 +26,7 @@
     </div>
     <!--/breadcrumb-->
     <!-- coluna esquerda -->
-    <div class="span8" style="margin:0; padding:0 10px;">
+    <div class="span8" style="*margin:0; padding:0 10px;">
       
       <!-- titulo -->
       <h1><?php echo $section->getTitle(); ?></h1>
@@ -40,7 +37,7 @@
       <div class="row-fluid">
         
         <!--form-->
-        <form id="form-selecao" action="" method="post" >
+        <form id="form-selecao" action="/actions/culturabrasil/contact.php" method="post" >
           <div class="box msg">
             <div class="msgErro" style="display:none">
               <p class="aviso">Sua mensagem não pode ser enviada.</p>
@@ -70,11 +67,11 @@
           <fieldset>  
             <div class="span10">
               <label>Cidade</label>
-              <input id="cidade" name="ciadade" class="required span12" type="text" >
+              <input id="cidade" name="cidade" class="required span12" type="text" >
             </div>
             <div class="span2">
               <label>UF</label>
-              <select class="span12" id="estado-contato" name="estado">
+              <select class="span12" id="estado" name="estado">
                 <option value="" selected="selected">--</option>
                 <option value="Acre">AC</option>
                 <option value="Alagoas">AL</option>
@@ -112,16 +109,16 @@
               <label>Programa</label>
               <select class="span12 required" id="programa" name="programa">
                 <option value="" selected="selected">--</option>
-                <option value="Bamba Jam">Bamba Jam</option>
-                <option value="Cultura Livre">Cultura Livre</option>
-                <option value="Galeria">Galeria</option>
-                <option value="Música Regional Brasileira">Música Regional Brasileira</option>
-                <option value="RadarCultura">RadarCultura</option>
-                <option value="Reggae de Bamba">Reggae de Bamba</option>
-                <option value="Seleção do Ouvinte">Seleção do Ouvinte</option>
-                <option value="Solano Ribeiro">Solano Ribeiro</option>
-                <option value="Supertônica">Supertônica</option>
-                <option value="Webmaster">Outro</option>
+                <option value="bamba-jam">Bamba Jam</option>
+                <option value="cultura-livre">Cultura Livre</option>
+                <option value="galeria">Galeria</option>
+                <option value="musica-regional-brasileira">Música Regional Brasileira</option>
+                <option value="radarcultura">RadarCultura</option>
+                <option value="reggae-da-bamba">Reggae de Bamba</option>
+                <option value="selecao-do-ouvinte">Seleção do Ouvinte</option>
+                <option value="solano-ribeiro">Solano Ribeiro</option>
+                <option value="supertonica">Supertônica</option>
+                <option value="webmaster">Outro</option>
               </select>
             </div>
           </fieldset>
@@ -218,7 +215,8 @@
           minlength : 2
         },
         idade : {
-          required : true
+          required : true,
+          number: true
         },
         email : {
           required : true,
@@ -245,7 +243,7 @@
       },
       messages : {
         nome : "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
-        idade : "Este campo &eacute; obrigat&oacute;rio.",
+        idade : "Somente n&uacute;meros. Este campo &eacute; obrigat&oacute;rio.",
         email : "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
         cidade : "Este campo &eacute; obrigat&oacute;rio.",
         estado : "Este campo &eacute; obrigat&oacute;rio.",

@@ -18,7 +18,12 @@ td {
 thead > tr, tbody{
   display:block;
 }
-
+tr, td {
+  width: 100%
+}
+.time {
+  width: 50px;
+}
 .chat-top {
   position: relative;
   padding: 5px 15px 15px;

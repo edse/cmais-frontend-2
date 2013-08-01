@@ -62,7 +62,7 @@ if(isset($pager)){
       <?php
       /*
       <!--lista assets-->
-      <div class="lista-assets span8">
+      <div class="lista-assets span8" style="*margin-left:0px;">
         <?php if(count($pager) > 0): ?>
           <?php foreach($pager->getResults() as $d): ?>
             <a href="<?php echo $uri . '/' . $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
@@ -101,7 +101,7 @@ if(isset($pager)){
        */  
        ?>
        <!--estatico-->
-       <div class="lista-assets span8">
+       <div class="lista-assets span8" style="*margin-left:8px;">
                               <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas/brasileiros-da-ultima-hora-por-fabio-trummer" title=" Brasileiros da última hora, por Fábio Trummer">
                                                 <div class="row-fluid titulo">
                   

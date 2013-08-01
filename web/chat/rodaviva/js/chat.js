@@ -8,7 +8,7 @@ $(document).ready(function() {
   var mult    = 0;
   
   serverUrl = 'ws://200.136.27.25:80/chatrodaviva';
-  //serverUrl = 'ws://172.20.80.2:80/chatapp';
+  //serverUrl = 'ws://172.20.80.2:80/chatrodaviva';
   
   tryToConnect = function() {
     if (window.MozWebSocket) {
@@ -32,6 +32,7 @@ $(document).ready(function() {
     };
 
     socket.onopen = function(msg) {
+      $('#chat-content').html("");
       clearInterval(fakeInterval);
       $('.reconnect').hide();
       $('#tryin').html("10");
@@ -67,7 +68,7 @@ $(document).ready(function() {
   }
 
   contentInfo = function(data, json) {
-    var html = '<tr id="id'+data.id+'"><td class="text-primary">'+data.time+'</td><td><strong>'+data.name+':</strong> '+data.comment+'</td></tr>';  
+    var html = '<tr id="id'+data.id+'"><td class="text-primary time">'+data.time+'</td><td><strong>'+data.name+':</strong> '+data.comment+'</td></tr>';  
     $('#chat-content').append(html);
     $("#chat-content").scrollTop(document.getElementById('chat-content').scrollHeight+2); 
     return;
