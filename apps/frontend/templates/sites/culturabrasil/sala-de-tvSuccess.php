@@ -24,9 +24,7 @@
     <div class="page-header ao-vivo">
       <h4>Transmiss&atilde;o ao vivo</h4>
     </div>
-    
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+   
    <!-- comentario facebook -->
    <fb:comments href="<?php echo $uri?>" numposts="3" width="495" publish_feed="true" style="margin-top:30px;"></fb:comments>
    <hr />
