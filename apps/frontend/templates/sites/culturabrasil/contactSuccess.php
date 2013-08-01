@@ -71,7 +71,7 @@
             </div>
             <div class="span2">
               <label>UF</label>
-              <select class="span12" id="estado-contato" name="estado">
+              <select class="span12" id="estado" name="estado">
                 <option value="" selected="selected">--</option>
                 <option value="Acre">AC</option>
                 <option value="Alagoas">AL</option>
@@ -215,7 +215,8 @@
           minlength : 2
         },
         idade : {
-          required : true
+          required : true,
+          number: true
         },
         email : {
           required : true,
@@ -242,7 +243,7 @@
       },
       messages : {
         nome : "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
-        idade : "Este campo &eacute; obrigat&oacute;rio.",
+        idade : "Somente n&uacute;meros. Este campo &eacute; obrigat&oacute;rio.",
         email : "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
         cidade : "Este campo &eacute; obrigat&oacute;rio.",
         estado : "Este campo &eacute; obrigat&oacute;rio.",
