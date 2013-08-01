@@ -106,7 +106,9 @@ if($asset) {
      <img src="/portal/images/capaPrograma/culturabrasil/oucaculturabrasil.jpg" alt="Ouça a rádio Cultura Brasil"/>
    </a>
     <!-- ouca a radio -->
-  <div class="borda-pontilhada borda-menu" style="*clear:both!important; *margin-top:50px!important;"></div>  
+    <div class="row-fluid">
+      <div class="borda-pontilhada borda-menu"></div>
+    </div>  
   </div>
  <!--/container topo-->
   
