@@ -19,6 +19,14 @@
 <section class="container saladetv">
   
   <div class="row-fluid container">
+    <!--breadcrumb-->
+    <div class="row-fluid pontilhada">
+      <ul class="breadcrumb">
+        <li><a href="/">Cultura Brasil</a><span class="divider">»</span></li>
+        <li><?php echo $section->getTitle(); ?></li>
+      </ul>
+    </div>
+    <!--/breadcrumb-->
   <!--transmissao ao vivo -->
   <div class="span6">  
     <div class="page-header ao-vivo">
