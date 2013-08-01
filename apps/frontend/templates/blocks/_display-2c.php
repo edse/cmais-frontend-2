@@ -14,10 +14,10 @@
                   </a>
                   <?php elseif($displays[0]->Asset->AssetType->getSlug() == "video"): ?>
                     <iframe title="<?php echo $displays[0]->getTitle() ?>" width="640" height="390" src="http://www.youtube.com/embed/<?php echo $displays[0]->Asset->AssetVideo->getYoutubeId(); ?>?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>
-                  <?php elseif($displays[0]->Asset->AssetType->getSlug() == "video-gallery"): ?>
-                    
+                  
+                  <?php elseif($displays[0]->Asset->AssetType->getSlug() == "video-gallery" || $displays[0]->Asset->AssetType->getSlug() == "episode"): ?>
                     <?php 
-                    if($displays[0]->Asset->AssetType->getSlug() == "video-gallery" && !$ipad)
+                    if($displays[0]->Asset->AssetType->getSlug() == "video-gallery")
                       $youtubeid = $displays[0]->Asset->AssetVideoGallery->getYoutubeId();
                     else
                       $youtubeid = "";
@@ -32,6 +32,7 @@
                       $('#player').html('<iframe width="640" height="390" src="http://www.youtube.com/embed/'+id+'?wmode=transparent" frameborder="0" allowfullscreen></iframe>');
                     }
                     </script>
+
                     <?php if(count($videos) > 0): ?>
                       <ul class="box-playlist grid2">
                         <?php foreach($videos as $k=>$dd): ?>
@@ -52,7 +53,7 @@
                     <?php endif; ?>
 
 
-                    <?php/*
+                  <?php elseif($displays[0]->Asset->AssetType->getSlug() == "video-gallery2"): ?>
                     <object height="390" width="640" style="height:390px; width: 640px">
                       <param name="movie" value="http://www.youtube.com/p/<?php echo $displays[0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" />
                       <param name="allowFullScreen" value="true" />
@@ -60,10 +61,7 @@
                       <param name="wmode" value="opaque">
                       <embed allowfullscreen="true" allowscriptaccess="always" src="http://www.youtube.com/p/<?php echo $displays[0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" wmode="opaque" type="application/x-shockwave-flash" width="640" height="390"></embed>
                     </object>
-                    */?>
-                    
-                    
-                  <?php elseif($displays[0]->Asset->AssetType->getSlug() == "episode"): ?>
+                  <?php elseif($displays[0]->Asset->AssetType->getSlug() == "episode2"): ?>
                     <?php echo $displays[0]->Asset->RelatedAssets[0]->Asset->AssetVideo->getYoutubeId(); ?>
                     <object height="390" width="640" style="height:390px; width: 640px">
                       <param name="movie" value="http://www.youtube.com/p/<?php echo $displays[0]->Asset->RelatedAssets[0]->Asset->AssetVideo->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" />
