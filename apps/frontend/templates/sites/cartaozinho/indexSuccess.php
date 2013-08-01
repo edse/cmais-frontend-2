@@ -133,7 +133,20 @@
         <?php endif;?>
         
           </a>
-
+          
+          <?php
+          //enquete
+           
+          $assets = Doctrine_Query::create()
+            ->select('a.*')
+            ->from('Asset a')
+            ->where('a.site_id = ?', (int)$site->id)
+            ->andWhere('a.asset_type_id = 10')
+            ->orderBy('a.id desc')
+            ->execute();
+            
+          echo count($assets).">>>>>>>>>"  
+          ?>
           <!--a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/enquete" title="Participe da nossa enquete!"></a-->
           <div class="juiza"></div>
           <div class="redes-sociais">
