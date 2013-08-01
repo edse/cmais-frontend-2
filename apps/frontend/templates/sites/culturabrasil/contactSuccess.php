@@ -136,7 +136,7 @@
               <label for="captcha">Confirmação</label>
               <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código"> <img src="/portal/js/validate/demo/captcha/images/image.php?1375217158" width="132" height="46" alt="Captcha image" id="captcha_image"> </a>
             </div>
-            <div class="span10" id="captchaimage">  
+            <div class="span9" id="captchaimage">  
               <label class="msg" for="captcha">Digite no campo abaixo os caracteres que você vê na imagem:</label>
               <input class="caracteres span9" type="text" maxlength="6" name="captcha" id="captcha">
             </div>
