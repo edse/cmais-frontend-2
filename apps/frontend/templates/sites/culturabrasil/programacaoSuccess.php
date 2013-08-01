@@ -174,18 +174,17 @@
     
     <!--coluna direita -->
     <div class="span4 box-direita">
-      
+      <!--banner -->
+      <div class="banner-culturabrasil">
+        <script type='text/javascript'>
+          GA_googleFillSlot("home-geral300x250");
+        </script>
+      </div>
+      <!-- /banner --> 
       <!-- CALENDARIO -->
       <div class="destaque-playlist">
         <h1>Calendário</h1>
         <div id="datepicker"></div>
-        <!--banner -->
-        <div class="banner-culturabrasil">
-          <script type='text/javascript'>
-            GA_googleFillSlot("home-geral300x250");
-          </script>
-        </div>
-        <!-- /banner --> 
       </div>
       <!-- /CALENDARIO -->
       
