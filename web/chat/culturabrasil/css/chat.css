@@ -67,6 +67,7 @@ tr, td {
   float: left;
   /*margin-top: 30px;
   margin-left: 15px;*/
+  margin-bottom: 5px;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
@@ -74,8 +75,9 @@ tr, td {
 }
 .reconnect {
   float: right;
-  margin-top: 30px;
-  margin-left:  15px;
+  /*margin-top: 30px;
+  margin-left: 15px;*/
+  margin-bottom: 5px;
   font-size: 12px;
   font-weight: bold;
   text-transform: lowercase;
