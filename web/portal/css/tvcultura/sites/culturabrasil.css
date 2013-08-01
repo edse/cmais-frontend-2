@@ -354,5 +354,5 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 .saladetv .fb_iframe_widget{width:496px;}
 .saladetv .page-header{border:none;}
 .saladetv .page-header h4{color:#333333; font-size:24px;}
-.saladetv .videoPlayer{width: 450px; margin: 0 auto;}
+.saladetv #videoPlayer{width: 450px; margin: 0 auto;}
 /* /sala de tv */
