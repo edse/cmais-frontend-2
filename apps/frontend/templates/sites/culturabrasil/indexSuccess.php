@@ -42,8 +42,8 @@
             <?php endforeach; ?>
           </div>
           <!-- Carousel nav -->
-          <a class="carousel-control left" href="#carrossel-radar" data-slide="prev">&lsaquo;</a>
-          <a class="carousel-control right" href="#carrossel-radar" data-slide="next">&rsaquo;</a>
+          <a class="carousel-control left" href="#carrossel-radar" data-slide="prev"></a>
+          <a class="carousel-control right" href="#carrossel-radar" data-slide="next"></a>
         </div>
         <!-- /box-carrossel -->
       <?php endif; ?>

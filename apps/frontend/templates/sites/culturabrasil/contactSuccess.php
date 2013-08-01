@@ -121,6 +121,7 @@
                 <option value="Seleção do Ouvinte">Seleção do Ouvinte</option>
                 <option value="Solano Ribeiro">Solano Ribeiro</option>
                 <option value="Supertônica">Supertônica</option>
+                <option value="Webmaster">Outro</option>
               </select>
             </div>
           </fieldset>
