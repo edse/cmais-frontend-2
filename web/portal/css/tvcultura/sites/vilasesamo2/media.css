@@ -77,7 +77,7 @@ and (max-width : 1224px)
 /*#content section { max-width:990px; }*/
 .topo-vila .nav li { float:left;}  
 .navbar-inverse .navbar-inner.topo-vila .nav-collapse { width: 85%;} 
-.destaque-filtro .span6 { width: 49%; float:left;} 
+.destaque-filtro .span6 { width: 49%; float:left; margin-left:2.3%;}  
 .destaque-filtro article h1 { clear:both;} 
 .todos-itens li.span4 { margin-right:1%; width: 48%;} 
 .todos-itens [class*="span"], 

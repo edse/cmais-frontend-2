@@ -21,7 +21,7 @@ body { background:#0172f9; }
 .filtro .span2 { margin-left:0; background: #ee3021; width:19.14%; padding:0 0.6%;}
 .filtro .span2 p { color:#fff; text-align:center; text-transform:uppercase; margin-top:10px; overflow:hidden; position:relative; }
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
-.filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1778px; top:0; }
+.filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1773px; top:0; }
 .filtro .span2 ul { background:#d71c0d; border:1px solid #c31408; overflow:hidden; margin-bottom:0; }
 .filtro .span10 { margin-left:0; width:80.86%; float:right; }
 .filtro .span12 { border-top:2px solid #0191fb; border-bottom:2px solid #0191fb; background:#EE3021;  /*border-left:2px solid #0191fb;*/  }
