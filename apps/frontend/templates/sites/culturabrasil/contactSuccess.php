@@ -138,7 +138,7 @@
             </div>
             <div class="span10" id="captchaimage">  
               <label class="msg" for="captcha">Digite no campo abaixo os caracteres que você vê na imagem:</label>
-              <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" class="span12">
+              <input class="caracteres span12" type="text" maxlength="6" name="captcha" id="captcha">
             </div>
           </fieldset> 
           <!-- form principal -->
