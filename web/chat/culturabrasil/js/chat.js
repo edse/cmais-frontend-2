@@ -76,7 +76,7 @@ $(document).ready(function() {
 
   contentInfoAll = function(data) {
     $.each(data, function( key, value ) {
-      console.log(value)
+      //console.log(value)
       contentInfo(value, true);
     });
     return;
@@ -85,7 +85,7 @@ $(document).ready(function() {
   startClock = function(){
     tryin = 10;
     interval = setInterval(function(){
-      console.log(tryin);
+      //console.log(tryin);
       if(tryin>1){
         tryin--;
         $('#tryin').html(tryin);

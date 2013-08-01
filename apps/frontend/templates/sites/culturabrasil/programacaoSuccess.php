@@ -59,7 +59,7 @@
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapseOne" class="accordion-body collapse in">
+            <div id="collapseOne" class="accordion-body collapse in" style="overflow:hidden;">
               
               <div class="accordion-inner">
                 <p>Matemática 23<br><br>
@@ -90,7 +90,7 @@
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapse2" class="accordion-body collapse">
+            <div id="collapse2" class="accordion-body collapse"  style="overflow:hidden;">
               <div class="accordion-inner">
                 <p>Matemática 23<br><br>
                 Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
@@ -120,7 +120,7 @@
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapse3" class="accordion-body collapse">
+            <div id="collapse3" class="accordion-body collapse"  style="overflow:hidden;">
               <div class="accordion-inner">
                 <p>Matemática 23<br><br>
                 Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
@@ -150,7 +150,7 @@
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapse4" class="accordion-body collapse">
+            <div id="collapse4" class="accordion-body collapse"  style="overflow:hidden;">
               <div class="accordion-inner">
                 <p>Matemática 23<br><br>
                 Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
@@ -174,7 +174,13 @@
     
     <!--coluna direita -->
     <div class="span4 box-direita">
-      
+      <!--banner -->
+      <div class="banner-culturabrasil">
+        <script type='text/javascript'>
+          GA_googleFillSlot("home-geral300x250");
+        </script>
+      </div>
+      <!-- /banner --> 
       <!-- CALENDARIO -->
       <div class="destaque-playlist">
         <h1>Calendário</h1>
@@ -182,13 +188,7 @@
       </div>
       <!-- /CALENDARIO -->
       
-      <!--banner -->
-      <div class="banner-culturabrasil">
-        <script type='text/javascript'>
-          GA_googleFillSlot("home-geral300x250");
-        </script>
-      </div>
-      <!-- /banner -->  
+       
       
     </div>
     <!--/coluna direita -->
