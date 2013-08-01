@@ -142,13 +142,14 @@
             ->from('Asset a')
             ->where('a.site_id = ?', (int)$site->id)
             ->andWhere('a.asset_type_id = 10')
+            ->andWhere('s.slug = "enquetes"')
             ->orderBy('a.id desc')
             ->execute();
             
           echo $assets[0]->retriveUrl(); 
           if($assets[0]->is_active): 
           ?>
-          <a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/enquete" title="Participe da nossa enquete!"></a>
+            <a class="envie-sua-sugestao" href="<?php echo $assets[0]->retriveUrl(); ?>" title="Participe da nossa enquete!"></a>
           <?php endif; ?>
           <div class="juiza"></div>
           <div class="redes-sociais">
