@@ -145,9 +145,11 @@
             ->orderBy('a.id desc')
             ->execute();
             
-          echo count($assets).">>>>>>>>>"  
+          echo $assets[0]->Asset->retriveUrl(); 
+          if($assets[0]->is_active): 
           ?>
-          <!--a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/enquete" title="Participe da nossa enquete!"></a-->
+          <a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/enquete" title="Participe da nossa enquete!"></a>
+          <?php endif; ?>
           <div class="juiza"></div>
           <div class="redes-sociais">
             <a href="https://www.facebook.com/Cartaozinho" class="face" name"Facebook" title="Facebook">Facebook</a>
