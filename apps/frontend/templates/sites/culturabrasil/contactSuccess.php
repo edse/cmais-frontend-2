@@ -68,11 +68,11 @@
             </div>
           </fieldset>
           <fieldset>  
-            <div class="span9">
+            <div class="span10">
               <label>Cidade</label>
               <input id="cidade" name="ciadade" class="required span12" type="text" >
             </div>
-            <div class="span3">
+            <div class="span2">
               <label>UF</label>
               <select class="span12" id="estado-contato" name="estado">
                 <option value="" selected="selected">--</option>
