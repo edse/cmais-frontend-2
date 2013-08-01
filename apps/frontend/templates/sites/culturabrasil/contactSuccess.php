@@ -55,7 +55,7 @@
               <label>Nome</label>
               <input id="nome" name="nome" class="required span12" type="text" >
             </div>
-            <div class="span3">
+            <div class="span2">
               <label>Idade</label>
               <input id="idade" name="idade" class="required span12" type="text" >
             </div>
