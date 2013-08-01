@@ -4,22 +4,8 @@ if($_REQUEST['captcha']){
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
       
-      /*
-       * EMAILS:
-          Bamba Jam - 
-          Supertônica - 
-          Seleção do Ouvinte - 
-          Reggae de Bamba -
-          Música Regional Brasileira - 
-          Galeria -
-          Cultura Livre - 
-          RadarCultura - 
-          Solano Ribeiro - 
-          Webmaster Cultura Brasil -
-       * 
-      */ 
       $to = "crsiteradio@radioculturabrasil.com.br";
-      switch ($_REQUEST['program']) {
+      switch ($_REQUEST['programa']) {
         case "bamba-jam":
           $to = "crbambajam@radioculturabrasil.com.br";
           break;
@@ -56,7 +42,7 @@ if($_REQUEST['captcha']){
       $email = strip_tags($_REQUEST['email']);
       $name = strip_tags($_REQUEST['nome']);
       $from = "{$nome} <{$email}>";
-      $subject = '[Cultura Brasil]['.$_REQUEST['program'].'] '.$from;
+      $subject = '[Cultura Brasil]['.$_REQUEST['programa'].'] '.$from;
       
       $message = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
       while(list($field, $value) = each($_REQUEST)) {
