@@ -346,4 +346,5 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 #form-selecao .box.msg{background:#333333;}
 #form-selecao #ajax-loader{height: 16px;width: 16px;float: right;margin-top: 23px;margin-right: 10px;}
 #form-selecao .aviso{color: #ffffff;padding: 10px;font-size: 18px;} 
+#form-selecao #captcha_image{width:132px;}
 /* /selecao do ouvinte */
