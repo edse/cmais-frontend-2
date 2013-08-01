@@ -380,7 +380,7 @@ footer .mapa .sprite-destalhe-amarelo1 { position:absolute; left:0; top:0; }
 footer .relacionados { margin-left:4%; }
 footer .relacionados h3 { font-weight:normal; text-transform:uppercase; font-size:22px; }
 footer .relacionados ul { margin:2% 0 0 0; }
-footer .relacionados li { list-style:none; float:left; margin-right:3.8%; }
+footer .relacionados li { list-style:none; float:left; margin-right:3.2%; }
 footer .relacionados li.last { margin-right:0; }
 /* /footer*/
 
