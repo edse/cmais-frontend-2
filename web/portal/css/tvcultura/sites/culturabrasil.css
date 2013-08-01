@@ -249,6 +249,7 @@ textarea{width:100%; font-size:11px;}
 /* grade programação*/
 
 /**** datepicker ****/
+#datepicker {float:left;}
  #datepicker .ui-widget { width:310px; }
  #datepicker .ui-datepicker-title { width:120px; float:left; margin:0 20px; text-align:center; }
  #datepicker .ui-datepicker-title span { font: bold 14px arial;color: #666; }
