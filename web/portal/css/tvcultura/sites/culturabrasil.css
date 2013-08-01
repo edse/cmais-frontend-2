@@ -222,7 +222,7 @@ textarea{width:100%; font-size:11px;}
 /* /lista programas */
 
 /* grade programação*/
-.banner-culturabrasil{float:left;}
+.banner-culturabrasil{float:left;*float:left;}
 .miolo.grade h1{font-size:22px; color:#333333;}
 .miolo.grade .destaque-playlist h1{color:#666666; font-size:18px; text-transform: none;}
 .miolo.grade .seta-grade{width:25px; height:26px;display:block; background:url(/portal/images/capaPrograma/culturabrasil/setas-grade.png) no-repeat;}
