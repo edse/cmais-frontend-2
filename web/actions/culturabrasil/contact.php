@@ -5,6 +5,7 @@ if($_REQUEST['captcha']){
     if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
       
       $to = "crsiteradio@radioculturabrasil.com.br";
+      
       switch ($_REQUEST['programa']) {
         case "bamba-jam":
           $to = "crbambajam@radioculturabrasil.com.br";
