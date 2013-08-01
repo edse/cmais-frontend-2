@@ -101,7 +101,7 @@ if(isset($pager)){
        */  
        ?>
        <!--estatico-->
-       <div class="lista-assets span8" style="*margin-left:8px;">
+       <div class="lista-assets span8" style="*margin-left:0px;">
                               <a href="http://cmais.com.br/frontend_dev.php/culturabrasil/entrevistas/brasileiros-da-ultima-hora-por-fabio-trummer" title=" Brasileiros da última hora, por Fábio Trummer">
                                                 <div class="row-fluid titulo">
                   
@@ -324,7 +324,7 @@ Notice: Undefined variable: url in /var/frontend/apps/frontend/templates/sites/c
     </div>
     
     <!-- sem resultado -->
-    <div class="row-fluid" style="margin-bottom:30px">
+    <div class="row-fluid" style="*margin:0 0 0 30px; *margin:0 0 0 30px">
       
       <div class="destaque-cultura">
         <div class="busca-titulo">
