@@ -133,11 +133,9 @@ and (max-width : 480px) {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) 
 and (orientation: landscape) {
-.destaque-filtro .span6 { width: 47%;} 
+.destaque-filtro .span6 { width: 47%;  margin-left:2.3%;} 
 footer .mapa .col-central { width:24.5%; }
 footer .relacionados li { margin-right:3.1%; }
-.destaque-filtro .span6 { margin-left:2.3%;}  
-
 }
 
 @media only screen 
@@ -178,6 +176,7 @@ and (orientation : landscape) {
 footer .relacionados li { height: 100px; }
 footer .relacionados li.cocorico { clear:none; } 
 footer .relacionados ul { margin-left:0; }
+.destaque-filtro .span6 { margin-left:2.3%;}
 }
 
 
