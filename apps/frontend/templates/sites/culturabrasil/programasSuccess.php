@@ -52,7 +52,7 @@ if(isset($pager)){
     <div class="row-fluid">
       
       <!--lista Programas-->
-      <div class="lista-programas span8">
+      <div class="lista-programas span8" style="*margin-left:0;">
         
         <?php if(isset($displays["programas"])): ?>
           <?php if(count($displays["programas"]) > 0): ?>
