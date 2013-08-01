@@ -1,3 +1,12 @@
+<?php
+if($asset) {
+  if(count($asset->getSections()) > 0) {
+    $section = $asset->getSections();
+    $section = $section[0];
+  }
+}
+  
+?>
 <!-- Navbar -->
 <div class="navbar navbar-inverse">
   <div class="navbar-inner">
