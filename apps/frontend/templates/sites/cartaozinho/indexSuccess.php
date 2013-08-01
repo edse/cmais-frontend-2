@@ -147,7 +147,7 @@
             ->andWhere('a.asset_type_id = 10')
             ->orderBy('a.id desc')
             ->execute();
-          echo count($assets);  
+            
  
           if($assets[0]->is_active): 
           ?>
