@@ -145,7 +145,7 @@
             ->orderBy('a.id desc')
             ->execute();
             
-          echo $assets[0]->Asset->retriveUrl(); 
+          echo $assets[0]->retriveUrl(); 
           if($assets[0]->is_active): 
           ?>
           <a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/enquete" title="Participe da nossa enquete!"></a>
