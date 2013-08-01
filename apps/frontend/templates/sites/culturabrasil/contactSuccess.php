@@ -127,7 +127,7 @@
           
           <fieldset>
             <label>Mensagem</label>
-            <textarea name="mensagem" id="mensagem" onkeydown="limitText(this,1000,'#textCounter');"></textarea>
+            <textarea name="mensagem" rows="6" id="mensagem" class="span12" onkeydown="limitText(this,1000,'#textCounter');"></textarea>
             <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
           </fieldset> 
           
