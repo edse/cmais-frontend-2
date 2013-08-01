@@ -40,15 +40,7 @@
      </div> 
    </div>
    <!--/Bate papo-->
-   <!--banner horizontal-->    
-   <div class="container">
-     <div class="banner-radio horizontal">
-       <script type='text/javascript'>
-         GA_googleFillSlot("cmais-assets-728x90");
-       </script>
-     </div>
-   </div>
-   <!--banner horizontal-->
+   
    </div>
  </section>
  <!--/Linha Central-->
