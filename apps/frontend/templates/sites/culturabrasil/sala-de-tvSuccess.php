@@ -71,5 +71,4 @@
          <!--banner horizontal-->
        </div>
        <!--/Linha Central-->
-    </div>
-    <!--container-->
+ 
