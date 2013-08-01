@@ -141,8 +141,8 @@
             ->select('a.*')
             ->from('Asset a, Section s')
             ->where('a.site_id = ?', (int)$site->id)
+            ->andWhere('s.slug = "enquetes-assets"')
             ->andWhere('a.asset_type_id = 10')
-            ->andWhere('s.slug = "enquetes"')
             ->orderBy('a.id desc')
             ->execute();
           echo count($assets);  
