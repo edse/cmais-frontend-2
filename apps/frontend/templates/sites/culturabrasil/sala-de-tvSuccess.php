@@ -17,9 +17,7 @@
 
 <!--Linha Central-->
 <section class="container saladetv">
-  
-  <div class="row-fluid container">
-    <!--breadcrumb-->
+  <!--breadcrumb-->
     <div class="row-fluid pontilhada">
       <ul class="breadcrumb">
         <li><a href="/">Cultura Brasil</a><span class="divider">»</span></li>
@@ -27,6 +25,8 @@
       </ul>
     </div>
     <!--/breadcrumb-->
+  <div class="row-fluid container">
+    
   <!--transmissao ao vivo -->
   <div class="span6">  
     <div class="page-header ao-vivo">
