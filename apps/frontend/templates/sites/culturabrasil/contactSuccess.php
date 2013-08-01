@@ -26,7 +26,7 @@
     </div>
     <!--/breadcrumb-->
     <!-- coluna esquerda -->
-    <div class="span8" style="margin:0; padding:0 10px;">
+    <div class="span8" style="*margin:0; padding:0 10px;">
       
       <!-- titulo -->
       <h1><?php echo $section->getTitle(); ?></h1>
