@@ -107,7 +107,8 @@ img{width:100%;}
 .miolo.selecao .span8 h1,
 .miolo.selecao .span8 .horario,
 #form-selecao legend,
-#form-selecao .aviso{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+#form-selecao .aviso,
+.saladetv .page-header h4{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
@@ -348,3 +349,9 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 #form-selecao .aviso{color: #ffffff;padding: 10px;font-size: 18px;} 
 #form-selecao #captcha_image{width:132px;}
 /* /selecao do ouvinte */
+
+/* sala de tv */
+.saladetv .fb_iframe_widget{width:496px;}
+.saladetv .page-header{border:none;}
+.saladetv .page-header h4{color:#333333; font-size:24px;}
+/* /sala de tv */

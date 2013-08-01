@@ -16,7 +16,7 @@
 
 
 <!--Linha Central-->
-<section class="container">
+<section class="container saladetv">
   
   <div class="row-fluid container">
   <!--transmissao ao vivo -->
