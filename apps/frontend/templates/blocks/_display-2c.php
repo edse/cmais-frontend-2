@@ -15,6 +15,44 @@
                   <?php elseif($displays[0]->Asset->AssetType->getSlug() == "video"): ?>
                     <iframe title="<?php echo $displays[0]->getTitle() ?>" width="640" height="390" src="http://www.youtube.com/embed/<?php echo $displays[0]->Asset->AssetVideo->getYoutubeId(); ?>?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>
                   <?php elseif($displays[0]->Asset->AssetType->getSlug() == "video-gallery"): ?>
+                    
+                    <?php 
+                    if($displays[0]->Asset->AssetType->getSlug() == "video-gallery" && !$ipad)
+                      $youtubeid = $displays[0]->Asset->AssetVideoGallery->getYoutubeId();
+                    else
+                      $youtubeid = "";
+                    ?>
+                    <?php if($youtubeid != ""): ?>
+                    <iframe width="640" height="390" src="http://www.youtube.com/embed/videoseries?list=PL<?php echo $youtubeid ?>&amp;hl=en_US&rel=0" frameborder="0" allowfullscreen></iframe>
+                    <?php else: ?>
+                    <?php $videos = $displays[0]->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+                    <div id="player"><iframe title="<?php echo $videos[0]->getTitle() ?>" width="640" height="390" src="http://www.youtube.com/embed/<?php echo $videos[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe></div>
+                    <script>
+                    function changeVideo(id){
+                      $('#player').html('<iframe width="640" height="390" src="http://www.youtube.com/embed/'+id+'?wmode=transparent" frameborder="0" allowfullscreen></iframe>');
+                    }
+                    </script>
+                    <?php if(count($videos) > 0): ?>
+                      <ul class="box-playlist grid2">
+                        <?php foreach($videos as $k=>$dd): ?>
+                          <li style="width: 155px">
+                            <?php if($dd->retriveImageUrlByImageUsage("image-2") != ""): ?>
+                            <a href="javascript:changeVideo('<?php echo $dd->AssetVideo->getYoutubeId(); ?>')" class="img">
+                              <img class="img-150x90" src="<?php echo $dd->retriveImageUrlByImageUsage("image-2") ?>" alt="<?php echo $dd->getTitle() ?>" />
+                            </a>
+                            <?php endif; ?>
+                            <?php if($dd->retriveLabel() != ""): ?>
+                            <h3 class="chapeu"><?php echo $dd->retriveLabel() ?></h3>
+                            <?php endif; ?>
+                            <a href="<?php echo $dd->retriveUrl() ?>"><?php echo $dd->getDescription() ?></a>
+                          </li>
+                        <?php endforeach; ?>
+                      </ul>
+                    <?php endif; ?>
+                    <?php endif; ?>
+
+
+                    <?php/*
                     <object height="390" width="640" style="height:390px; width: 640px">
                       <param name="movie" value="http://www.youtube.com/p/<?php echo $displays[0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" />
                       <param name="allowFullScreen" value="true" />
@@ -22,6 +60,9 @@
                       <param name="wmode" value="opaque">
                       <embed allowfullscreen="true" allowscriptaccess="always" src="http://www.youtube.com/p/<?php echo $displays[0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" wmode="opaque" type="application/x-shockwave-flash" width="640" height="390"></embed>
                     </object>
+                    */?>
+                    
+                    
                   <?php elseif($displays[0]->Asset->AssetType->getSlug() == "episode"): ?>
                     <?php echo $displays[0]->Asset->RelatedAssets[0]->Asset->AssetVideo->getYoutubeId(); ?>
                     <object height="390" width="640" style="height:390px; width: 640px">
