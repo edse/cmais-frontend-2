@@ -32,8 +32,8 @@
     <div class="span8" style="margin:0; padding:0 10px;">
       
       <!-- titulo -->
-      <h1>Seleção do ouvinte</h1>
-      <p class="horario">Preencha e envie o formulário abaixo com até seis músicas adequadas à programação da rádio.</p>
+      <h1><?php echo $section->getTitle(); ?></h1>
+      <!--p class="horario">Preencha e envie o formulário abaixo com até seis músicas adequadas à programação da rádio.</p-->
       <!--titulo-->
       
       <!-- row form -->
