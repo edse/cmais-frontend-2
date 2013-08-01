@@ -4,22 +4,8 @@ if($_REQUEST['captcha']){
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
       
-      /*
-       * EMAILS:
-          Bamba Jam - 
-          Supertônica - 
-          Seleção do Ouvinte - 
-          Reggae de Bamba -
-          Música Regional Brasileira - 
-          Galeria -
-          Cultura Livre - 
-          RadarCultura - 
-          Solano Ribeiro - 
-          Webmaster Cultura Brasil -
-       * 
-      */ 
       $to = "crsiteradio@radioculturabrasil.com.br";
-      switch ($_REQUEST['program']) {
+      switch ($_REQUEST['programa']) {
         case "bamba-jam":
           $to = "crbambajam@radioculturabrasil.com.br";
           break;
