@@ -17,17 +17,17 @@
 <section class="miolo selecao" >
   <!-- container miolo -->
   <div class="container row-fluid">
-    <!--breadcrumb-->
-    <div class="row-fluid pontilhada">
-      <ul class="breadcrumb">
-        <li><a href="/">Cultura Brasil</a><span class="divider">»</span></li>
-        <li><?php echo $section->getTitle(); ?></li>
-      </ul>
-    </div>
-    <!--/breadcrumb-->
+
     <!-- coluna esquerda -->
-    <div class="span8" style="*margin:0; padding:0 10px;">
-      
+    <div class="span8" style="*margin-left:0px; padding:0 10px;">
+      <!--breadcrumb-->
+      <div class="row-fluid pontilhada">
+        <ul class="breadcrumb">
+          <li><a href="/">Cultura Brasil</a><span class="divider">»</span></li>
+          <li><?php echo $section->getTitle(); ?></li>
+        </ul>
+      </div>
+      <!--/breadcrumb-->
       <!-- titulo -->
       <h1><?php echo $section->getTitle(); ?></h1>
       <!--p class="horario">Preencha e envie o formulário abaixo com até seis músicas adequadas à programação da rádio.</p-->
