@@ -65,8 +65,8 @@ tr, td {
 }
 .status {
   float: left;
-  margin-top: 30px;
-  margin-left: 15px;
+  /*margin-top: 30px;
+  margin-left: 15px;*/
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
