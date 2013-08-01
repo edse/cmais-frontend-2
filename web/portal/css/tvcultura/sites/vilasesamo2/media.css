@@ -133,7 +133,7 @@ and (max-width : 480px) {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) 
 and (orientation: landscape) {
-.destaque-filtro .span6 { width: 47%;  margin-left:2.3%;} 
+.destaque-filtro .span6 { width: 49%;  margin-left:2.3%;} 
 footer .mapa .col-central { width:24.5%; }
 footer .relacionados li { margin-right:3.1%; }
 }
