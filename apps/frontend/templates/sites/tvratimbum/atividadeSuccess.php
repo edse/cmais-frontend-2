@@ -25,7 +25,7 @@
 <script src="/portal/tvratimbum/js/galleria/galleria-1.2.4.min.js" type="text/javascript"></script>
 <link href="/portal/tvratimbum/js/galleria/galleria.classic.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript">
-  //carrocel
+  //carrossel
   $(function(){
     $('.carrossel').jcarousel({
       wrap: "both"

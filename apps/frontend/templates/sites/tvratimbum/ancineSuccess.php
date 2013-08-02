@@ -9,7 +9,7 @@
 <script src="/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
 <script src="/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-      //carrocel
+      //carrossel
       $(function(){
         $('.carrossel').jcarousel({ 
         wrap: "both"      
