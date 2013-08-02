@@ -348,15 +348,7 @@
   
            <?php endif; ?>
          <?php endif; ?>
-         <!-- banner -->
-         <div class="container pull-left">
-            <div class="banner-radio">
-             <script type='text/javascript'>
-               GA_googleFillSlot("cmais-assets-728x90");
-             </script>
-            </div>
-          </div>
-          <!-- banner -->
+         
           
           <!-- recentes -->
           <div id="recentes">
