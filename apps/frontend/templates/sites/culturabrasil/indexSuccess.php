@@ -154,7 +154,7 @@
           <div class="item">
             <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
               <h3><?php echo format_datetime($d->getDateStart(), "HH:mm") ?></h3>
-              <p><?php echo $d->getTitle() ?></p>
+              <p><?php echo $d->Program->getTitle() ?></p>
             </a>
           </div>
           <!-- /item -->
