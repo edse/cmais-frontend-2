@@ -19,7 +19,7 @@
   <div class="container row-fluid">
 
     <!-- coluna esquerda -->
-    <div class="span8" style="*margin-left:0px; padding:0 0 0 10px;">
+    <div class="span8" style="*margin-left:-10px; padding:0 0 0 10px;">
       <!--breadcrumb-->
       <div class="row-fluid pontilhada">
         <ul class="breadcrumb">
