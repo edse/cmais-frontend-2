@@ -138,7 +138,7 @@
           <div class="programa">
             <span>AGENDA</span><i class="borda-titulo"></i>
           </div>
-          <h2><?php echo format_datetime(date("Y-m-d"), "D") ?></h2>
+          <h2><?php echo format_date(date("Y-m-d"), "D") ?></h2>
           <?php //foreach($schedules as $k=>$d): ?>
           <!-- item -->
           <div class="item">
