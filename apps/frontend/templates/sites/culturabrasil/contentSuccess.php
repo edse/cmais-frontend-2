@@ -357,13 +357,70 @@
             </h2>
             <!--item-->
             <div class="destaque-recente">
-              <h3>
-                A voz-ritmo de Marcelo Pretto
-              </h3>
-              <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
-              <div class="borda-pontilhada"></div>
+              <a href="#" class="btn-recente" title="">
+                <h3>
+                  A voz-ritmo de Marcelo Pretto
+                </h3>
+                <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
+                <div class="borda-pontilhada"></div>
+              </a>  
             </div>
-            <!--item--> 
+            <!--item-->
+            <!--item-->
+            <div class="destaque-recente">
+              <a href="#" class="btn-recente" title="">
+                <h3>
+                  A voz-ritmo de Marcelo Pretto
+                </h3>
+                <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
+                <div class="borda-pontilhada"></div>
+              </a>  
+            </div>
+            <!--item-->
+            <!--item-->
+            <div class="destaque-recente">
+              <a href="#" class="btn-recente" title="">
+                <h3>
+                  A voz-ritmo de Marcelo Pretto
+                </h3>
+                <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
+                <div class="borda-pontilhada"></div>
+              </a>  
+            </div>
+            <!--item-->
+            <!--item-->
+            <div class="destaque-recente">
+              <a href="#" class="btn-recente" title="">
+                <h3>
+                  A voz-ritmo de Marcelo Pretto
+                </h3>
+                <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
+                <div class="borda-pontilhada"></div>
+              </a>  
+            </div>
+            <!--item-->
+            <!--item-->
+            <div class="destaque-recente">
+              <a href="#" class="btn-recente" title="">
+                <h3>
+                  A voz-ritmo de Marcelo Pretto
+                </h3>
+                <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
+                <div class="borda-pontilhada"></div>
+              </a>  
+            </div>
+            <!--item-->
+            <!--item-->
+            <div class="destaque-recente">
+              <a href="#" class="btn-recente" title="">
+                <h3>
+                  A voz-ritmo de Marcelo Pretto
+                </h3>
+                <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
+                <div class="borda-pontilhada"></div>
+              </a>  
+            </div>
+            <!--item-->
           </div>
           <!-- recentes -->  
           </div> 

@@ -108,7 +108,9 @@ img{width:100%;}
 .miolo.selecao .span8 .horario,
 #form-selecao legend,
 #form-selecao .aviso,
-.saladetv .page-header h4{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+.saladetv .page-header h4,
+#recentes h2,
+#recentes .destaque-recente h3{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
@@ -309,6 +311,10 @@ textarea{width:100%; font-size:11px;}
 .content-asset .share.content{margin:0 -28px 0;float: right;width: 245px;}
 .content-asset .fb_iframe_widget {overflow: hidden;width: 610px;}
 .banner-radio{width: 300px;margin: 20px auto;}
+#recentes h2{font-size:24px; color:#333333; margin: 10px 0 10px 0; line-height: 19px;}
+#recentes h3{font-size:18px; color:#333333;margin: 0 0 6px 0; line-height: 15px;}
+#recentes .borda-pontilhada{margin-bottom: 10px;}
+#recentes .btn-recente{text-decoration:none;}
 /* /content */
 
 /* programa */
