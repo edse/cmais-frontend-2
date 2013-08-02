@@ -6,7 +6,7 @@
       ->andWhereIn('sa.section_id',  array(19))
       ->orderBy('a.id desc')
       ->execute();
-  
+
   $sites = array();
   foreach($assets as $a){
     if(!in_array($a->Site, $sites))
