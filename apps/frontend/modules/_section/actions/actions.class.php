@@ -349,10 +349,12 @@ class _sectionActions extends sfActions
           }
         }
         else{
-          if(($this->section->slug == "grade")||($this->section->slug == "diario-de-programacao")||($this->section->slug == "programacao")||($this->section->slug == "guia-do-ouvinte")){
+          if(in_array($this->section->slug, array("grade", "diario-de-programacao", "programacao", "guia-do-ouvinte", "grade-de-programacao"))){
             $s = 'tvcultura';
             if($request->getParameter('c') == "univesptv")
               $s = 'univesptv';
+            elseif($request->getParameter('c') == "culturabrasil")
+              $s = 'culturabrasil';
             elseif(($request->getParameter('c') == "multicultura")||($this->section->Site->getSlug() == "multicultura"))
               $s = 'multicultura';
             elseif($request->getParameter('c') == "tvratimbum")
