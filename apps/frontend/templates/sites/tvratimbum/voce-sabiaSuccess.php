@@ -25,10 +25,6 @@
 <script type="text/javascript">
   //carrocel
   $(function(){
-    $('.carrossel').jcarousel({
-      wrap: "both"
-    });
-    //startclock();
     
     $('dt a').click(function(){
       $(this).parent().next('dd').toggle();
@@ -43,7 +39,22 @@
       
       
     });
+    
   })
+  
+ //carrossel
+  $(function(){
+    $('.carrossel').jcarousel({
+      wrap: "both"
+    });
+    startclock();
+  })
+  
+  function setSection(i){
+    $('#section_id').val(i);
+    $('#filter').submit();
+  }
+  
   var timeID=null;
   var timerRunning=false;
   function stopclock (){
