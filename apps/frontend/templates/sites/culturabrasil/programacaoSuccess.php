@@ -51,15 +51,16 @@
             }
           ?>
           <!--item-->
-          <?php if($now): ?>
-          <a name="agora" id="agora" style="height:60px; width:10px; display:block;"></a>
-          <script>
-            $(function(){
-              $('html, body').animate({scrollTop: $("#agora").offset().top},'slow');
-            });
-          </script>
-          <?php endif; ?> 
           <div class="accordion-group">
+
+            <?php if($now): ?>
+            <a name="agora" id="agora" style="height:60px; width:10px; display:block;"></a>
+            <script>
+              $(function(){
+                $('html, body').animate({scrollTop: $("#agora").offset().top},'slow');
+              });
+            </script>
+            <?php endif; ?> 
             
             <!--titulo-->
             <div class="accordion-heading">
