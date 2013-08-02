@@ -139,16 +139,19 @@
            
           $assets = Doctrine_Query::create()
             ->select('a.*')
-            ->from('Asset a')
-            ->where('a.site_id = ?', (int)$site->id)
+            ->from('Asset a, SectionAsset sa, Section s')
+            ->where('a.id = sa.asset_id')
+            ->andWhere('s.id = sa.section_id')
+            ->andWhere('s.slug = "enquetes"')
+            ->andWhere('a.site_id = ?', (int)$site->id)
             ->andWhere('a.asset_type_id = 10')
             ->orderBy('a.id desc')
             ->execute();
             
-          echo $assets[0]->retriveUrl(); 
+ 
           if($assets[0]->is_active): 
           ?>
-          <a class="envie-sua-sugestao" href="http://tvcultura.cmais.com.br/cartaozinho/enquete" title="Participe da nossa enquete!"></a>
+            <a class="envie-sua-sugestao" href="<?php echo $assets[0]->retriveUrl(); ?>" title="Participe da nossa enquete!"></a>
           <?php endif; ?>
           <div class="juiza"></div>
           <div class="redes-sociais">
