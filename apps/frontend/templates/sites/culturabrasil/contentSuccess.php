@@ -43,7 +43,7 @@
        
       <div class="row-fluid">
         <!--col esquerda-->
-        <div class="span8 content-asset" style="*margin-left:0px;">
+        <div class="span8 content-asset" style="*margin-left:-10px;">
           <div class="content">
             <h1><?php echo $asset->getTitle() ?></h1>
             <h2><?php echo $asset->getDescription() ?></h2>
