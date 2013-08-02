@@ -155,7 +155,7 @@
     <!-- /coluna esquerda -->
     
     <!--coluna direita -->
-    <div class="span4 box-direita" >
+    <div class="span4 box-direita" style="margin-left:10px;">
       
       <!--banner -->
       <div class="banner-culturabrasil">
