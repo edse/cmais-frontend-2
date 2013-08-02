@@ -29,7 +29,6 @@
               <!-- item -->
               <div class="<?php if($k==1): ?>active<?php endif; ?> item">
                 <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                  <?php /*<img src="<?php echo $d->retriveImageUrlByImageUsage('image-10-b') ?>" alt="<?php echo $d->getTitle() ?>" /> */ ?>
                   <img src="<?php echo $d->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $d->getTitle() ?>" />
                   <div class="carousel-caption">
                     <h3><?php echo $d->getLabel() ?></h3>
@@ -55,44 +54,11 @@
       <!--coluna esquerda -->
       <div class="span4" style="margin-left: 0;">
         
-        <!--destaque-->
-        <div class="destaque-cultura">
-          <div class="programa">
-            <span>Bossamoderna</span><i class="borda-titulo"></i>
-          </div>
-          <a href="#" title="">
-            <h2>Rios</h2>
-            <img src="http://www.culturabrasil.com.br/midia/image/originais/Geraldo_Azevedo___Interna_1374535758.jpg" alt="" class="big">
-            <p>Tárik de Souza embarca num viagem fluvial com músicas que têm como temática os cursos d’água. Com Geraldo Azevedo, Roberta Sá e Patrícia Bastos.</p>
-          </a>
-        </div>  
-        <!--/destaque-->
+        <?php if(isset($displays["destaque-1"])) include_partial_from_folder('sites/culturafm', 'global/display', array('displays' => $displays["destaque-1"])) ?>
         
-        <!--destaque-->
-        <div class="destaque-cultura">
-          <div class="programa">
-            <span>Solano Ribeiro</span><i class="borda-titulo"></i>
-          </div>
-          <a href="#" title="">
-            <h2>Francisco</h2>
-            <img src="http://www.culturabrasil.com.br/midia/image/originais/Franciscos__Interna_1374520304.jpg" alt="" class="big">
-            <p>Na visita do Papa, um especial de Franciscos. Mas não espere um programa religioso. A edição traz obras dos vários Franciscos da música popular brasileira e também alguns apelos...</p>
-          </a>
-        </div>  
-        <!--/destaque-->
+        <?php if(isset($displays["destaque-2"])) include_partial_from_folder('sites/culturafm', 'global/display', array('displays' => $displays["destaque-2"])) ?>
         
-        <!--destaque-->
-        <div class="destaque-cultura">
-          <div class="programa">
-            <span>supertonica</span><i class="borda-titulo"></i>
-          </div>
-          <a href="#" title="">
-            <h2>A voz-ritmo de Marcelo Pretto</h2>
-            <img src="http://www.culturabrasil.com.br/midia/image/originais/Marcus_e_Arrigo___Superto_1374278295.jpg" alt="" class="big">
-            <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
-          </a>
-        </div>  
-        <!--/destaque-->
+        <?php if(isset($displays["destaque-3"])) include_partial_from_folder('sites/culturafm', 'global/display', array('displays' => $displays["destaque-3"])) ?>
         
       </div>  
       <!--/coluna esquerda -->
@@ -100,150 +66,89 @@
       <!--coluna do meio -->
       <div class="span4">
         
+        <?php if(isset($displays["playlists"])): ?>
+          <?php if(count($displays["playlists"]) > 0): ?>
         <!--destaque playlist -->
         <div class="destaque-playlist">
-          <h1>Playlists</h1>
+          <h1>PLAYLISTS</h1>
+            <?php foreach($displays["playlists"] as $k=>$d): ?>
           <!--item-->
           <div class="item">
-            <a href="http://www.culturabrasil.com.br/playlists/rolling-stones-made-in-brazil">
-              <img src="http://www.culturabrasil.com.br/midia/image/default/rollingstones_01_1303744795.jpg" alt="Rolling Stones made in Brazil">
-              <h2>Rolling Stones made in Brazil</h2>
-              <p>Versões para sucessos da banda inglesa por artistas brasileiros: Caetano Veloso, Jerry Adriani, Ronnie Von, The Bubbles, Os Tarântulas e Claudia Ohana.</p>
+            <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+              <?php if($k == 0): ?>
+                <?php if($d->retriveImageUrlByImageUsage("culturabrasil-thumb2")): ?>
+              <img src="<?php echo $d->retriveImageUrlByImageUsage("culturabrasil-thumb2") ?>" alt="<?php echo $d->getTitle() ?>">
+                <?php endif; ?>
+              <?php endif; ?>
+              <h2><?php echo $d->getTitle() ?></h2>
+              <p><?php echo $d->getDescription() ?></p>
             </a>
           </div>
           <!--item--> 
-          
-          <!--item-->
-          <div class="item">
-            <a href="http://www.culturabrasil.com.br/playlists/rolling-stones-made-in-brazil">
-              <h2>Caetano Experimental</h2>
-              <p>A vontade de Caetano Veloso por fazer algo diferente em música popular o levou ao tropicalismo, à poesia concreta e à dodecafonia.</p>
-            </a>
-          </div>
-          <!--item--> 
-          
-          <!--item-->
-          <div class="item">
-            <a href="http://www.culturabrasil.com.br/playlists/rolling-stones-made-in-brazil">
-              <h2>Artistas de um sucesso</h2>
-              <p>Seleção reúne artistas marcados para sempre por algum grande sucesso. Com Brylho (foto), Paulo Diniz, , Markinhos Moura e Vanessa Rangel.</p>
-            </a>
-          </div>
-          <!--item-->  
-          
+            <?php endforeach; ?>
         </div>
         <div class="borda-pontilhada"></div> 
         <a href="#" title="mais playlists">
           <span class="mais">+ Playlists</span>
         </a>
         <!--destaque playlist -->
+          <?php endif; ?>
+        <?php endif; ?>
         
+        <?php if(isset($displays["frases"])): ?>
+          <?php if(count($displays["frases"]) > 0): ?>
         <!--destaque frases -->
         <div class="destaque-cultura frase">
           <div class="programa">
             <span>FRASES</span><i class="borda-titulo"></i>
           </div>
-          <h2><i class="aspas">"&nbsp;</i>A gente tem que aprender a ser pequeno!<i class="aspas">&nbsp;"</i></h2>
-          <p>Paulo Bellinati, violonista, sobre a música instrumental brasileira</p>
+          <h2><i class="aspas">"&nbsp;</i><?php echo $displays["frases"][0]->getTitle() ?><i class="aspas">&nbsp;"</i></h2>
+          <p><?php echo $displays["frases"][0]->getDescription() ?></p>
         </div>
         <div class="borda-pontilhada"></div>
         <a href="#" title="mais frases"> 
           <span class="mais">+ Frases</span>
         </a>   
         <!--destaque frases -->
-        
+          <?php endif; ?>
+        <?php endif; ?>
+
+        <?php if(isset($displays["widget"])): ?>
+          <?php if(count($displays["widget"]) > 0): ?>
         <!--destaque widgets -->
         <div class="destaque-playlist">
           <h1>Widget</h1>
           <p>Copie o código abaixo para incorporar o Controle Remoto ao seu blog ou site</p> 
-          <textarea rows="3">&lt;iframe src="http://www.culturabrasil.com.br/widget" frameborder="0" scrolling="no" width="145" height="55"&gt;&lt;/iframe&gt;</textarea>
+          <textarea rows="3"><?php echo $displays["widget"][0]->getHtml() ?></textarea>
         </div>  
         <!--destaque widgets -->
+          <?php endif; ?>
+        <?php endif; ?>
+        
       </div>
       <!--/coluna do meio -->
       
       <!--coluna direita -->
       <div class="span4">
         
+        <?php if(isset($schedules)): ?>
+        <?php if(count($schedules) > 0): ?>
         <!-- destaque agenda -->
         <div class="destaque-cultura agenda">
           <div class="programa">
             <span>AGENDA</span><i class="borda-titulo"></i>
           </div>
-          <h2>23 de julho de 2013</h2>
-          
+          <h2><?php echo format_datetime(date(), "D") ?></h2>
+          <?php foreach($schedules as $k=>$d): ?>
           <!-- item -->
           <div class="item">
-            <a href="#" title="">
-              <h3>05:45</h3>
-              <p>Novo Telecurso Ensino Fundamental</p>
+            <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+              <h3><?php echo format_datetime($d->getDateStart(), "HH:mm") ?></h3>
+              <p><?php echo $d->getTitle() ?></p>
             </a>
           </div>
           <!-- /item -->
-          
-          <!-- item -->
-          <div class="item">
-            <a href="#" title="">
-              <h3>06:00</h3>
-              <p>Novo Telecurso Ensino Médio</p>
-            </a>
-          </div>  
-          <!-- /item -->
-          
-          <!-- item -->
-          <div class="item">
-            <a href="#" title="">
-              <h3>06:15</h3>
-              <p>Telecurso TEC</p>
-            </a>
-          </div>  
-          <!-- /item -->
-          
-          <!-- item -->
-          <div class="item">
-            <a href="#" title="">
-              <h3>06:30</h3>
-              <p>Telecurso Profissionalizante</p>
-            </a>
-          </div>
-          <!-- /item -->
-          
-          <!-- item -->
-          <div class="item">
-            <a href="#" title="">
-              <h3>06:50</h3>
-              <p>Guia do Trânsito</p>
-            </a>
-          </div>
-          <!-- /item -->
-          
-          <!-- item -->
-          <div class="item">
-            <a href="#" title="">
-              <h3>07:00</h3>
-              <p>Guia do Dia</p>
-            </a>
-          </div>
-          <!-- /item -->
-          
-          <!-- item -->
-          <div class="item">
-            <a href="#" title="">
-              <h3>08:00</h3>
-              <p>Pronto Atendimento</p>
-            </a>
-          </div>
-          <!-- /item -->
-          
-          <!-- item -->
-          <div class="item">
-            <a href="#" title="">
-              <h3>08:35</h3>
-              <p>Bob, o Construtor</p>
-            </a>
-          </div>
-          <!-- /item -->
-          
+          <?php endforeach; ?>          
         </div>
         <div class="borda-pontilhada"></div>
         <a href="#" title="agenda completa"> 
