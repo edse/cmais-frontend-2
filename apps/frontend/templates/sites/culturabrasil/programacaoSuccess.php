@@ -49,7 +49,7 @@
             
             <!--titulo-->
             <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse<?php echo $k ?>">
                 <span class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?></span>
                 <span class="programa-grade"><?php echo $d->Program->getTitle() ?></span>
                 <i class="seta-grade baixo"></i>
@@ -61,7 +61,7 @@
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapseOne" class="accordion-body collapse in" style="overflow:hidden;">
+            <div id="collapse<?php echo $k ?>" class="accordion-body collapse in" style="overflow:hidden;">
               
               <div class="accordion-inner">
                 <p><?php echo $d->retriveTitle() ?><br><br>
