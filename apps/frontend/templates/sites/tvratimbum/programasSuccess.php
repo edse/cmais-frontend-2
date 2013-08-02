@@ -1,6 +1,4 @@
 <?php
-  if(!isset($section_id)) $section_id = 11;
-  if(!isset($site_id) || $site_id == "all") $site_id = "";
   $programs = Doctrine_Query::create()
     ->select('p.*')
     ->from('Program p, ChannelProgram cp')
