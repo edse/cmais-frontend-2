@@ -232,5 +232,18 @@
     });
   });
 </script>
+
+<form id="send" action="" method="post">
+  <input type="hidden" name="c" id="c" value="<?php echo $sChannel->getSlug() ?>" />
+  <input type="hidden" name="d" id="d" value="<?php echo $d?>" />
+</form>
+<script>
+  function send(c,d){
+    $("#c").val(c);
+    $("#d").val(d);
+    $("#send").submit();
+  }
+</script>
+
   
 
