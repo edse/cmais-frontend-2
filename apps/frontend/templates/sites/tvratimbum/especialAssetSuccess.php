@@ -1,25 +1,5 @@
 <?php
-    $assets = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a, SectionAsset sa')
-      ->where('sa.asset_id = a.id')
-      ->andWhereIn('sa.section_id',  array(19))
-      ->orderBy('a.id desc')
-      ->execute();
-
-  $sites = array();
-  foreach($assets as $a){
-    if(!in_array($a->Site, $sites))
-      $sites[] = $a->Site;
-  }
-
-  if(!isset($displays["voce-sabia"])){
-    $block = Doctrine::getTable('Block')->findOneById(587);
-    if($block)
-      $vocesabia = $block->retriveDisplays();
-  }
-
- /* $assets = Doctrine_Query::create()
+  $assets = Doctrine_Query::create()
     ->select('a.*')
     ->from('Asset a, SectionAsset sa')
     ->where('sa.asset_id = a.id')
@@ -39,7 +19,6 @@
     if($block)
       $vocesabia = $block->retriveDisplays();
   }
-  */
 ?>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
@@ -63,7 +42,7 @@
     $('#section_id').val(i);
     $('#filter').submit();
   }
-  //time1
+  //hora
   var timeID=null;
   var timerRunning=false;
   function stopclock (){
