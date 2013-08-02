@@ -53,17 +53,18 @@
           <!--item-->
           <div class="accordion-group">
 
-            <?php if($now): ?>
-            <a name="agora" id="agora" style="height:60px; width:10px; display:block;"></a>
-            <script>
-              $(function(){
-                $('html, body').animate({scrollTop: $("#agora").offset().top},'slow');
-              });
-            </script>
-            <?php endif; ?> 
-            
             <!--titulo-->
             <div class="accordion-heading">
+              
+              <?php if($now): ?>
+              <a name="agora" id="agora" style="height:60px; width:10px; display:block;"></a>
+              <script>
+                $(function(){
+                  $('html, body').animate({scrollTop: $("#agora").offset().top},'slow');
+                });
+              </script>
+              <?php endif; ?> 
+              
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse<?php echo $k ?>">
                 <span class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?></span>
                 <span class="programa-grade"><?php echo $d->Program->getTitle() ?></span>
