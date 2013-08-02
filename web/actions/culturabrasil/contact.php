@@ -9,33 +9,43 @@ if($_REQUEST['captcha']){
       switch ($_REQUEST['programa']) {
         case "bamba-jam":
           $to = "crbambajam@radioculturabrasil.com.br";
+          $programName = "Bamba Jam";
           break;
         case "supertonica":
           $to = "crsupertonica@culturafm.com.br";
+          $programName = "Supertônica";
           break;
         case "selecao-do-ouvinte":
           $to = "crselecao@radioculturabrasil.com.br";
+          $programName = "Seleção do Ouvinte";
           break;
         case "reggae-de-bamba":
           $to = "crreggae@radioculturabrasil.com.br";
+          $programName = "Reggae de Bamba";
           break;
         case "musica-regional-brasileira":
           $to = "crregional@radioculturabrasil.com.br";
+          $programName = "Música Regional Brasileira";
           break;
         case "galeria":
           $to = "crgaleria@radioculturabrasil.com.br";
+          $programName = "Galeria";
           break;
         case "cultura-livre":
           $to = "crculturalivre@radioculturabrasil.com.br";
+          $programName = "Cultura Livre";
           break;
         case "radarcultura":
           $to = "crradar@radioculturabrasil.com.br";
+          $programName = "RadarCultura";
           break;
         case "solano-ribeiro":
           $to = "crsolanoribeiro@radioculturabrasil.com.br";
+          $programName = "Solano Ribeiro";
           break;
         case "webmaster":
           $to = "crsiteradio@radioculturabrasil.com.br";
+          $programName = "Outros";
           break;
       }
       $to = $to . ", cristovamruizjr@gmail.com";
@@ -43,7 +53,7 @@ if($_REQUEST['captcha']){
       $email = strip_tags($_REQUEST['email']);
       $name = strip_tags($_REQUEST['nome']);
       $from = "{$nome} <{$email}>";
-      $subject = '[Cultura Brasil]['.$_REQUEST['programa'].'] '.$from;
+      $subject = '[Cultura Brasil]['.$programName.'] '.$from;
       
       $message = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
       while(list($field, $value) = each($_REQUEST)) {
