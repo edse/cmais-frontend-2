@@ -31,7 +31,7 @@
 <script src="/portal/tvratimbum/js/scroll.jquery.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-  //carrocel
+  //carrossel
   $(function(){
     $('.carrossel').jcarousel({
       wrap: "both"
