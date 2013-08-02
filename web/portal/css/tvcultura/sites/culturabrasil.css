@@ -109,8 +109,8 @@ img{width:100%;}
 #form-selecao legend,
 #form-selecao .aviso,
 .saladetv .page-header h4,
-.recentes .destaque-recente h2,
-.recentes .destaque-recente h3{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
+#recentes .destaque-recente h2,
+#recentes .destaque-recente h3{font-family: 'asapregular', Arial, Helvetica, sans-serif;}
 
 .mais,
 .rodape span,
