@@ -37,7 +37,7 @@
       <div class="row-fluid">
         
         <!--form-->
-        <form id="form-selecao" action="/actions/culturabrasil/contact.php" method="post" >
+        <form id="form-selecao" action="" method="post" >
           <div class="box msg">
             <div class="msgErro" style="display:none">
               <p class="aviso">Sua mensagem não pode ser enviada.</p>
@@ -185,6 +185,7 @@
       submitHandler : function(form) {
         $.ajax({
           type : "POST",
+          url : "/actions/culturabrasil/contact.php",
           dataType : "text",
           data : $("#form-selecao").serialize(),
           beforeSend : function() {
