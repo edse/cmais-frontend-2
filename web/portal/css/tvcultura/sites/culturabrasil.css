@@ -163,10 +163,10 @@ img{width:100%;}
 
 .destaque-cultura div.programa{position: relative;overflow: hidden;}
 .destaque-cultura{margin-bottom:20px}
-.destaque-cultura span, .rodape span{text-transform:uppercase; font-size:12px; background:#666666; color:#FFFFFF; padding:0px 5px;letter-spacing: 0.1em; display: block;float:left;}
+.destaque-cultura span, .rodape span{text-transform:uppercase; font-size:12px; background:#666666; color:#FFFFFF; padding:0px 5px;letter-spacing: 0.1em; display: block;float:left; line-height: 20px;}
 .destaque-cultura h2{font-size:23px;font-weight: normal;margin: 0;line-height: 36px;color: #333333;}
 .destaque-cultura p{font-size:14px;}
-#accordion2 i.borda-titulo, .destaque-cultura i.borda-titulo, .rodape i.borda-titulo{ float:left;background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat  0px 1px; width:7px; height:19px; display:block;}
+#accordion2 i.borda-titulo, .destaque-cultura i.borda-titulo, .rodape i.borda-titulo{ float:left;background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat  0px 0px; width:7px; height:20px; display:block;}
 .destaque-cultura a:hover{text-decoration:none;}
 
 .destaque-cultura.frase h2{color:#666666; text-align:center;}
@@ -180,7 +180,7 @@ textarea{width:100%; font-size:11px;}
 .destaque-cultura.agenda h3{font-size: 18px;line-height: 15px;margin-top: 0;margin-bottom: 4px;color: #666; font-weight:normal;}
 
 .rodape span{color:#666666; background:#FFFFFF;}
-.rodape i.borda-titulo.clara{background-position: 0px -20px;}
+.rodape i.borda-titulo.clara{background-position: 0px -21px;}
 .rodape .google, .rodape .twitter{margin-top:30px;}
 /* home */
 

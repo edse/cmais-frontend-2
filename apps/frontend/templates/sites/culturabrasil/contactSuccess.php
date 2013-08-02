@@ -19,7 +19,7 @@
   <div class="container row-fluid">
 
     <!-- coluna esquerda -->
-    <div class="span8" style="*margin-left:0px; padding:0 0 0 10px;">
+    <div class="span8" style="*margin-left:-10px; padding:0 0 0 10px;">
       <!--breadcrumb-->
       <div class="row-fluid pontilhada">
         <ul class="breadcrumb">
@@ -155,7 +155,7 @@
     <!-- /coluna esquerda -->
     
     <!--coluna direita -->
-    <div class="span4 box-direita" >
+    <div class="span4 box-direita" style="margin-left:15px;">
       
       <!--banner -->
       <div class="banner-culturabrasil">

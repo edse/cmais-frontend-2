@@ -176,7 +176,7 @@
     <div class="span4 box-direita">
       
       <!-- CALENDARIO -->
-      <div class="destaque-playlist" style="width:300px; height:300px; display: block;">
+      <div class="destaque-playlist" style="width:300px; height:300px; display: block; ">
         <h1>Calendário</h1>
         <div id="datepicker"></div>
       </div>
