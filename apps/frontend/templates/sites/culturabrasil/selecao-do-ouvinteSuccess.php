@@ -29,7 +29,7 @@
     </div>
     <!--/breadcrumb-->
     <!-- coluna esquerda -->
-    <div class="span8" style="*margin:-10px;">
+    <div class="span8" style="*margin:-10px;margin:0;">
       
       <!-- titulo -->
       <h1>Seleção do ouvinte</h1>
