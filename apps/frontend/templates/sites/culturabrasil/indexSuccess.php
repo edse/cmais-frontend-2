@@ -130,16 +130,26 @@
       
       <!--coluna direita -->
       <div class="span4">
-        
-        <?php //if(isset($schedules)): ?>
-        <?php //if(count($schedules) > 0): ?>
+        <?php
+          $date = date("Y/m/d");
+          $schedules = Doctrine_Query::create()
+            ->select('s.*')
+            ->from('Schedule s')
+            ->where('s.channel_id = ?', 5)
+            ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($date . ' 00:00:00', $date . ' 23:59:59'))
+            ->orderBy('s.date_start asc')
+            ->limit(50)
+            ->execute();
+        ?>
+        <?php if(isset($schedules)): ?>
+          <?php if(count($schedules) > 0): ?>
         <!-- destaque agenda -->
         <div class="destaque-cultura agenda">
           <div class="programa">
             <span>AGENDA</span><i class="borda-titulo"></i>
           </div>
           <h2><?php echo format_date(date("Y-m-d"), "D") ?></h2>
-          <?php //foreach($schedules as $k=>$d): ?>
+          <?php foreach($schedules as $k=>$d): ?>
           <!-- item -->
           <div class="item">
             <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
@@ -148,13 +158,15 @@
             </a>
           </div>
           <!-- /item -->
-          <?php //endforeach; ?>          
+          <?php endforeach; ?>          
         </div>
         <div class="borda-pontilhada"></div>
-        <a href="#" title="agenda completa"> 
+        <a href="/programacao" title="agenda completa"> 
           <span class="mais">Agenda Completa</span>
         </a> 
         <!-- /destaque agenda -->
+          <?php endif; ?>
+        <?php endif; ?>
         
         <!--banner -->
         <div class="banner-culturabrasil">
