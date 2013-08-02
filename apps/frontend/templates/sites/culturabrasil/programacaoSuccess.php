@@ -44,6 +44,12 @@
         <div class="accordion" id="accordion2">
 
           <?php foreach($schedules as $k=>$d): ?>
+          <?php
+            $now = false;
+            if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
+              $now = true;
+            }
+          ?>
           <!--item-->
           <div class="accordion-group">
             
@@ -61,7 +67,7 @@
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapse<?php echo $k ?>" class="accordion-body collapse in" style="overflow:hidden;">
+            <div id="collapse<?php echo $k ?>" class="accordion-body collapse<?php if($now): ?>in<?php endif; ?>" style="overflow:hidden;">
               
               <div class="accordion-inner">
                 <p><?php echo $d->retriveTitle() ?><br><br>
