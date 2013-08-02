@@ -50,6 +50,15 @@
               $now = true;
             }
           ?>
+          <?php if($now): ?>
+          <a name="agora" id="agora" style="height:60px; width:10px; display:block;"></a>
+          <script>
+            $(function(){
+              $('html, body').animate({scrollTop: $("#agora").offset().top},'slow');
+            });
+          </script>
+          <?php endif; ?> 
+
           <!--item-->
           <div class="accordion-group">
 
@@ -66,18 +75,8 @@
             </div>
             <!--titulo-->
             
-            <?php if($now): ?>
-            <a name="agora" id="agora" style="height:60px; width:10px; display:block;"></a>
-            <script>
-              $(function(){
-                $('html, body').animate({scrollTop: $("#agora").offset().top},'slow');
-              });
-            </script>
-            <?php endif; ?> 
-            
             <!--corpo-->
             <div id="collapse<?php echo $k ?>" class="accordion-body collapse<?php if($now): ?>in<?php endif; ?>" style="overflow:hidden;">
-              
               <div class="accordion-inner">
                 <p><?php echo $d->retriveTitle() ?><br><br>
                 <?php echo $d->retriveDescription() ?></p>
