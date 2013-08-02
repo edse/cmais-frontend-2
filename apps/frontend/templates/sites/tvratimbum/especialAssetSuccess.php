@@ -1,33 +1,4 @@
 <?php
-
-  if((($site_id > 0)&&($site_id != "all")&&($section_id == ""))){
-    $assets = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a, SectionAsset sa')
-      ->where('sa.asset_id = a.id')
-      ->andWhere('a.site_id = ?', (int)$site_id)
-      ->andWhereIn('sa.section_id',  array(19))
-      ->orderBy('a.id desc')
-      ->execute();
-  }elseif(($section_id > 0)&&(($site_id <= 0)||($site_id == "all"))){
-    $assets = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a, SectionAsset sa')
-      ->where('sa.asset_id = a.id')
-      ->andWhereIn('sa.section_id',  array($section_id))
-      ->orderBy('a.id desc')
-      ->execute();
-  }elseif((($site_id > 0)&&($site_id != "all")&&($section_id > 0))){
-    $assets = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a, SectionAsset sa')
-      ->where('sa.asset_id = a.id')
-      ->andWhere('a.site_id = ?', (int)$site_id)
-      ->andWhereIn('sa.section_id',  array($section_id))
-      ->orderBy('a.id desc')
-      ->execute();
-  }
-  else{
     $assets = Doctrine_Query::create()
       ->select('a.*')
       ->from('Asset a, SectionAsset sa')
@@ -35,7 +6,6 @@
       ->andWhereIn('sa.section_id',  array(19))
       ->orderBy('a.id desc')
       ->execute();
-  }
   
   $sites = array();
   foreach($assets as $a){
@@ -93,7 +63,7 @@
     $('#section_id').val(i);
     $('#filter').submit();
   }
-  //time
+  //time1
   var timeID=null;
   var timerRunning=false;
   function stopclock (){
