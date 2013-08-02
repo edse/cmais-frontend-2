@@ -349,11 +349,11 @@ class _sectionActions extends sfActions
           }
         }
         else{
-          if(in_array($this->section->slug, array("grade", "diario-de-programacao", "programacao", "guia-do-ouvinte", "grade-de-programacao"))){
+          if(in_array($this->section->slug, array("grade", "diario-de-programacao", "programacao", "guia-do-ouvinte"))){
             $s = 'tvcultura';
             if($request->getParameter('c') == "univesptv")
               $s = 'univesptv';
-            elseif($request->getParameter('c') == "culturabrasil")
+            elseif(($request->getParameter('c') == "culturabrasil")||($this->section->Site->getSlug() == "culturabrasil"))
               $s = 'culturabrasil';
             elseif(($request->getParameter('c') == "multicultura")||($this->section->Site->getSlug() == "multicultura"))
               $s = 'multicultura';
