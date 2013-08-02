@@ -24,32 +24,34 @@
     <div class="span8" style="*margin-left: 0px;">
       
       <!-- titulo -->
-      <h1>Grade de programação</h1>
+      <h1><?php echo $section->getTitle() ?></h1>
       <div>
-        <a href="#" class="data-btn" title="anterior">
+        <a href="javascript: send('<?php echo $sChannel->getSlug() ?>','<?php echo $prevDate ?>');" class="data-btn" title="anterior">
           <i class="seta-grade esquerda"></i>
         </a>
-        <p class="data-grade" >23 de julho de 2013</p>
-        <a href="#" class="data-btn" title="próximo">
+        <p class="data-grade" ><?php echo format_date($date, 'P') ?></p>
+        <a href="javascript: send('<?php echo $sChannel->getSlug() ?>','<?php echo $nextDate ?>');" class="data-btn" title="próximo">
           <i class="seta-grade direita"></i>
         </a>
       </div>
       <!--titulo-->
       
+      <?php if(isset($schedules)): ?>
       <!--lista grade -->
       <div class="lista-grade">
         
         <!--accordion-->
         <div class="accordion" id="accordion2">
-          
+
+          <?php foreach($schedules as $k=>$d): ?>
           <!--item-->
           <div class="accordion-group">
             
             <!--titulo-->
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                <span class="hora">05:45</span>
-                <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
+                <span class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?></span>
+                <span class="programa-grade"><?php echo $d->Program->getTitle() ?></span>
                 <i class="seta-grade baixo"></i>
               </a>
               <!--linha pontilhada-->
@@ -62,9 +64,9 @@
             <div id="collapseOne" class="accordion-body collapse in" style="overflow:hidden;">
               
               <div class="accordion-inner">
-                <p>Matemática 23<br><br>
-                Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
-                <a href="#" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
+                <p><?php echo $d->retriveTitle() ?><br><br>
+                <?php echo $d->retriveDescription() ?></p>
+                <a href="<?php echo $d->retriveUrl() ?>" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
                 <a href="#" class="btn-body" title="">ouça ao vivo pela web<i class="borda-titulo borda-grade"></i></a>
               </div>
             </div>
@@ -72,102 +74,14 @@
             
           </div>
           <!--/item-->
-          
-          <!--item-->
-          <div class="accordion-group">
-            
-            <!--titulo-->
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse2">
-                <span class="hora">05:45</span>
-                <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
-                <i class="seta-grade cima"></i>
-              </a>
-              <!--linha pontilhada-->
-              <div class="borda-pontilhada"></div>
-              <!--/linha pontilhada-->
-            </div>
-            <!--titulo-->
-            
-            <!--corpo-->
-            <div id="collapse2" class="accordion-body collapse"  style="overflow:hidden;">
-              <div class="accordion-inner">
-                <p>Matemática 23<br><br>
-                Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
-                <a href="#" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
-                <a href="#" class="btn-body" title="">ouça ao vivo pela web<i class="borda-titulo borda-grade"></i></a>
-              </div>
-            </div>
-            <!--corpo-->
-            
-          </div>
-          <!--/item-->
-          
-          <!--item-->
-          <div class="accordion-group">
-            
-            <!--titulo-->
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3">
-                <span class="hora">05:45</span>
-                <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
-                <i class="seta-grade cima"></i>
-              </a>
-              <!--linha pontilhada-->
-              <div class="borda-pontilhada"></div>
-              <!--/linha pontilhada-->
-            </div>
-            <!--titulo-->
-            
-            <!--corpo-->
-            <div id="collapse3" class="accordion-body collapse"  style="overflow:hidden;">
-              <div class="accordion-inner">
-                <p>Matemática 23<br><br>
-                Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
-                <a href="#" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
-                <a href="#" class="btn-body" title="">ouça ao vivo pela web<i class="borda-titulo borda-grade"></i></a>
-              </div>
-            </div>
-            <!--corpo-->
-            
-          </div>
-          <!--/item-->
-          
-          <!--item-->
-          <div class="accordion-group">
-            
-            <!--titulo-->
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse4">
-                <span class="hora">05:45</span>
-                <span class="programa-grade">Novo Telecurso Ensino Fundamental</span>
-                <i class="seta-grade cima"></i>
-              </a>
-              <!--linha pontilhada-->
-              <div class="borda-pontilhada"></div>
-              <!--/linha pontilhada-->
-            </div>
-            <!--titulo-->
-            
-            <!--corpo-->
-            <div id="collapse4" class="accordion-body collapse"  style="overflow:hidden;">
-              <div class="accordion-inner">
-                <p>Matemática 23<br><br>
-                Nesta teleaula 23 você verá que fração é um número que representa parte de um todo que foi dividido em partes exatamente iguais. Além disso, verá alguns exemplos de frações, como 2/3 do total de votos, meia laranja, 1/4 de 12 bolas de futebol.</p>
-                <a href="#" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
-                <a href="#" class="btn-body" title="">ouça ao vivo pela web<i class="borda-titulo borda-grade"></i></a>
-              </div>
-            </div>
-            <!--corpo-->
-            
-          </div>
-          <!--/item-->
+          <?php endforeach; ?>
           
         </div>
         <!--/accordion-->
         
       </div>
       <!--/lista grade -->
+      <?php endif; ?>
         
     </div>  
     <!-- /coluna esquerda -->
