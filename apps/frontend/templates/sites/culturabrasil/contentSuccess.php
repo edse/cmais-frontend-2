@@ -348,18 +348,30 @@
   
            <?php endif; ?>
          <?php endif; ?>
+         
+          
+          <!-- recentes -->
+          <div id="recentes">
+            <h2>
+              + recentes
+            </h2>
+            <!--item-->
+            <div class="destaque-recente">
+              <h3>
+                A voz-ritmo de Marcelo Pretto
+              </h3>
+              <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
+              <div class="borda-pontilhada"></div>
+            </div>
+            <!--item--> 
+          </div>
+          <!-- recentes -->  
           </div> 
   
           
       </div>
   
-      <div class="container pull-left">
-        <div class="banner-radio">
-         <script type='text/javascript'>
-           GA_googleFillSlot("cmais-assets-728x90");
-         </script>
-        </div>
-      </div>  
+       
           
     </div>
     <!-- asset -->
