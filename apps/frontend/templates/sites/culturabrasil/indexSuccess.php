@@ -131,15 +131,15 @@
       <!--coluna direita -->
       <div class="span4">
         
-        <?php if(isset($schedules)): ?>
-        <?php if(count($schedules) > 0): ?>
+        <?php //if(isset($schedules)): ?>
+        <?php //if(count($schedules) > 0): ?>
         <!-- destaque agenda -->
         <div class="destaque-cultura agenda">
           <div class="programa">
             <span>AGENDA</span><i class="borda-titulo"></i>
           </div>
           <h2><?php echo format_datetime(date(), "D") ?></h2>
-          <?php foreach($schedules as $k=>$d): ?>
+          <?php //foreach($schedules as $k=>$d): ?>
           <!-- item -->
           <div class="item">
             <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
@@ -148,7 +148,7 @@
             </a>
           </div>
           <!-- /item -->
-          <?php endforeach; ?>          
+          <?php //endforeach; ?>          
         </div>
         <div class="borda-pontilhada"></div>
         <a href="#" title="agenda completa"> 
