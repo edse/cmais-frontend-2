@@ -58,7 +58,10 @@ if($_REQUEST['captcha']){
       $message = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
       while(list($field, $value) = each($_REQUEST)) {
         if(!in_array(ucwords($field), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
-          $message .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
+          if($field == "programa")
+            $message .= "<b>" . ucwords($field) . ":</b> " . $programName . "<br>";
+          else  
+            $message .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
       }
       $message = stripslashes(nl2br($message));
       
