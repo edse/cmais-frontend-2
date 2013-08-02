@@ -417,7 +417,7 @@
                   A voz-ritmo de Marcelo Pretto
                 </h3>
                 <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
-                <div class="borda-pontilhada"></div>
+                <div class="borda-pontilhada" style="display:none"></div>
               </a>  
             </div>
             <!--item-->
