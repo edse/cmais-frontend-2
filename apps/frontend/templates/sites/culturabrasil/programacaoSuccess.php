@@ -13,9 +13,6 @@
 
 <?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
 
- 
-
-
 <!--section miolo--> 
 <section class="miolo grade">
   <!-- container miolo -->
