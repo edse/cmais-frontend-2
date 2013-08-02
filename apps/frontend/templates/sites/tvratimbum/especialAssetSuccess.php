@@ -1,5 +1,55 @@
 <?php
-  $assets = Doctrine_Query::create()
+
+  if((($site_id > 0)&&($site_id != "all")&&($section_id == ""))){
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a, SectionAsset sa')
+      ->where('sa.asset_id = a.id')
+      ->andWhere('a.site_id = ?', (int)$site_id)
+      ->andWhereIn('sa.section_id',  array(19))
+      ->orderBy('a.id desc')
+      ->execute();
+  }elseif(($section_id > 0)&&(($site_id <= 0)||($site_id == "all"))){
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a, SectionAsset sa')
+      ->where('sa.asset_id = a.id')
+      ->andWhereIn('sa.section_id',  array($section_id))
+      ->orderBy('a.id desc')
+      ->execute();
+  }elseif((($site_id > 0)&&($site_id != "all")&&($section_id > 0))){
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a, SectionAsset sa')
+      ->where('sa.asset_id = a.id')
+      ->andWhere('a.site_id = ?', (int)$site_id)
+      ->andWhereIn('sa.section_id',  array($section_id))
+      ->orderBy('a.id desc')
+      ->execute();
+  }
+  else{
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a, SectionAsset sa')
+      ->where('sa.asset_id = a.id')
+      ->andWhereIn('sa.section_id',  array(19))
+      ->orderBy('a.id desc')
+      ->execute();
+  }
+  
+  $sites = array();
+  foreach($assets as $a){
+    if(!in_array($a->Site, $sites))
+      $sites[] = $a->Site;
+  }
+
+  if(!isset($displays["voce-sabia"])){
+    $block = Doctrine::getTable('Block')->findOneById(587);
+    if($block)
+      $vocesabia = $block->retriveDisplays();
+  }
+
+ /* $assets = Doctrine_Query::create()
     ->select('a.*')
     ->from('Asset a, SectionAsset sa')
     ->where('sa.asset_id = a.id')
@@ -19,6 +69,7 @@
     if($block)
       $vocesabia = $block->retriveDisplays();
   }
+  */
 ?>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
@@ -35,13 +86,14 @@
     $('.carrossel').jcarousel({
       wrap: "both"
     });
+    startclock();
   })
   
   function setSection(i){
     $('#section_id').val(i);
     $('#filter').submit();
   }
-  
+  //time
   var timeID=null;
   var timerRunning=false;
   function stopclock (){
@@ -62,7 +114,7 @@
     document.clock.face.value= timeValue
     timerID = setTimeout("showtime()",1000);
     timerRunning = true;
-  }  
+  }
 </script>
 
 <div id="bodyWrapper">
