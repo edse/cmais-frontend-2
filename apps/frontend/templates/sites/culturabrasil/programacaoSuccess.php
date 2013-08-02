@@ -76,7 +76,7 @@
             <!--titulo-->
             
             <!--corpo-->
-            <div id="collapse<?php echo $k ?>" class="accordion-body collapse<?php if($now): ?>in<?php endif; ?>" style="overflow:hidden;">
+            <div id="collapse<?php echo $k ?>" class="accordion-body collapse<?php if($now): ?> in<?php endif; ?>" style="overflow:hidden;">
               <div class="accordion-inner">
                 <p><?php echo $d->retriveTitle() ?><br><br>
                 <?php echo $d->retriveDescription() ?></p>
