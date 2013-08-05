@@ -1226,9 +1226,7 @@ $(document).ready(function(){
                 }
 
                 function Verifica_Cidade(cidade){
-                  console.log("passou aqui");
                   $('#f2_local option').each(function(){
-                    console.log($(this).text());
                     if($.trim($(this).text()) == cidade.toUpperCase()){
                       $(this).attr('selected', 'selected');
                       $('#f2_local').focus();
