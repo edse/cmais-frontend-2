@@ -1226,7 +1226,7 @@ $(document).ready(function(){
                         }).delay(4000, function(){
                             
                             $('#f2_local option').each(function(){
-                              alert("OK");
+                              //alert("OK");
                               console.log($(this).text());
                               if($.trim($(this).text()) == data.cep.cidade.toUpperCase()){
                                 $(this).attr('selected', 'selected');
