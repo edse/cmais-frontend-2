@@ -1209,12 +1209,10 @@ $(document).ready(function(){
                       if(data.script != ""){
                         //console.log(data)
                         //estado
-                        alert(data.cep.endereco+data.cep.bairro);
-                        $("f2_endereco").val(data.cep.endereco);
-                        $("f2_bairro").val(data.cep.bairro);
+                        alert(data.cep.cidade);
                         
-                        
-                        
+                        $("#f2_endereco").val(data.cep.endereco);
+                        $("#f2_bairro").val(data.cep.bairro);
                         
                         $("#f2_estado option").each(function () {
                           //console.log($(this).val());
