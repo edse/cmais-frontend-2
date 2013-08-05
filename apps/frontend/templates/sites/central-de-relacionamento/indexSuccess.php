@@ -1217,7 +1217,7 @@ $(document).ready(function(){
                             $(this).removeAttr('selected');
                           }
                         })
-                        setTimeout(function() { Verifica_Cidade(data.cep.cidade); }, 1000);
+                        setTimeout(function() { Verifica_Cidade(data.cep.cidade); }, 1200);
                       }else{
                         alert('Erro!');
                       }
