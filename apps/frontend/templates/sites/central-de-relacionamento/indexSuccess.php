@@ -1238,12 +1238,6 @@ $(document).ready(function(){
                   });
                 }
 
-
-                $('#f2_estado').live("change", function(){
-                  console.log("Alterou o Estado");
-                });
-               
-                
                 function goTop2(){
                   $('html, body').animate({
                     scrollTop: $('.coluna-sub').offset().top
