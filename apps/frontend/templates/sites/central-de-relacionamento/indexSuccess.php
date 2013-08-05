@@ -1245,11 +1245,10 @@ $(document).ready(function(){
                 }
                 
                 
-                $('#f2_estado').live("change", function(){
+                $('#f2_estado').on("select", function(){
                   console.log("Alterou o Estado");
                 });
                
-                
                 
                 function goTop2(){
                   $('html, body').animate({
