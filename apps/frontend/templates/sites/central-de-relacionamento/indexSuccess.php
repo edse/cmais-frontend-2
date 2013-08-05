@@ -1222,7 +1222,7 @@ $(document).ready(function(){
                             $(this).removeAttr('selected');
                           }
                           
-                        }).delay(4000, function(){
+                        })
                             $('#f2_local option').each(function(){
                               console.log($(this).text());
                               if($.trim($(this).text()) == data.cep.cidade.toUpperCase()){
@@ -1233,7 +1233,6 @@ $(document).ready(function(){
                                 $(this).removeAttr('selected');
                               }
                             })
-                          });
                       }
                       else{
                         alert('Erro!');
