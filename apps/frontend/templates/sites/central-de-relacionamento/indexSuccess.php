@@ -1223,7 +1223,7 @@ $(document).ready(function(){
                             $(this).removeAttr('selected');
                           }
                           
-                        }).delay(4000, function(){
+                        }).delay(15000, function(){
                             console.log("passou aqui");
                             $('#f2_local option').each(function(){
                               //console.log($(this).text());
