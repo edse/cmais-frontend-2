@@ -112,10 +112,19 @@
         <!-- DIREITA -->
         
         <div id="direita" class="grid1">
+          <!-- BOX PUBLICIDADE -->
+          <div class="box-publicidade grid1" style="margin-top:20px;">
+            <!-- programas-homepage-300x250 -->
+            <script type='text/javascript'>
+              GA_googleFillSlot("cmais-assets-300x250");
+            </script>
+          </div>
+          <!-- / BOX PUBLICIDADE -->
+          <p></p> 
           <h3>Comentários</h3>
           <!-- comentario facebook -->
-          <div class="comentario-fb grid2" style="display:block">
-            <fb:comments href="<?php echo $uri ?>" numposts="10" width="310" publish_feed="true"></fb:comments>
+          <div class="comentario-fb grid23" style="display:block">
+            <fb:comments href="<?php echo $uri ?>" numposts="7" width="310" publish_feed="true"></fb:comments>
             <hr />
           </div>
           <!-- /comentario facebook -->
@@ -128,16 +137,6 @@
           </div>
           <?php endif; ?>
           <?php endif; */?>
-          <p></p> 
-          <!-- BOX PUBLICIDADE -->
-          <div class="box-publicidade grid1" style="margin-top:20px;">
-            <!-- programas-homepage-300x250 -->
-            <script type='text/javascript'>
-              GA_googleFillSlot("cmais-assets-300x250");
-
-            </script>
-          </div>
-          <!-- / BOX PUBLICIDADE -->
         </div>
       
         <!-- /DIREITA -->
