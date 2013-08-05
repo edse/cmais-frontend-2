@@ -1217,7 +1217,7 @@ $(document).ready(function(){
                             $(this).removeAttr('selected');
                           }
                         })
-                        setTimeout(function() { Verifica_Cidade(); }, 4000);
+                        setTimeout(function() { Verifica_Cidade(data.cep.cidade); }, 4000);
                       }else{
                         alert('Erro!');
                       }
@@ -1225,11 +1225,11 @@ $(document).ready(function(){
                   });
                 }
 
-                function Verifica_Cidade(){
+                function Verifica_Cidade(cidade){
                   console.log("passou aqui");
                   $('#f2_local option').each(function(){
                     console.log($(this).text());
-                    if($.trim($(this).text()) == data.cep.cidade.toUpperCase()){
+                    if($.trim($(this).text()) == cidade.toUpperCase()){
                       $(this).attr('selected', 'selected');
                       $('#f2_local').focus();
                     }else{
