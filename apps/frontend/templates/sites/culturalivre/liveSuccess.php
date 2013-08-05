@@ -87,6 +87,16 @@
             </div>
           </div>
           <!-- /barra compartilhar -->
+          
+          <?php if(isset($displays['chat'])):?> 
+          <?php if(count($displays['chat']) > 0): ?>
+          <h3><?php echo $displays['chat'][0]->Block->getTitle() ?></h3>
+          <div class="box">
+            <?php echo html_entity_decode($displays['chat'][0]->getHtml()); ?>
+          </div>
+          <?php endif; ?>
+          <?php endif; ?>
+          
           <h3>Comentários</h3>
           <!-- comentario facebook -->
           <div class="comentario-fb grid2" style="display:block">
@@ -110,14 +120,14 @@
         <!-- DIREITA -->
         
         <div id="direita" class="grid1">
-          <?php if(isset($displays['chat'])):?> 
+          <?php /* if(isset($displays['chat'])):?> 
           <?php if(count($displays['chat']) > 0): ?>
           <h3><?php echo $displays['chat'][0]->Block->getTitle() ?></h3>
           <div class="box">
             <?php echo html_entity_decode($displays['chat'][0]->getHtml()); ?>
           </div>
           <?php endif; ?>
-          <?php endif; ?>
+          <?php endif; */?>
           <p></p> 
           <!-- BOX PUBLICIDADE -->
           <div class="box-publicidade grid1" style="margin-top:20px;">
