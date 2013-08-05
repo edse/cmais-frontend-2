@@ -103,7 +103,8 @@
       
       <div class="coluna">
         <div id="box-noAr">
-          <?php include_partial_from_folder('tvratimbum','global/live') ?>
+          <?php $time_test = time();?>
+          <?php include_partial_from_folder('tvratimbum','global/live?'.$time_test) ?>
           <span class="picote"></span>
           <?php include_partial_from_folder('tvratimbum','global/next') ?>
           <span class="picote"></span>
