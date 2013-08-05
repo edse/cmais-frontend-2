@@ -1245,12 +1245,10 @@ $(document).ready(function(){
                 }
                 
                 
-                $('#f2_local').live.("change",(function(){
+                $('#f2_local').live("change", function(){
                   console.log("alterou a cidade");
-                }));
-                
-                
-                
+                });
+               
                 
                 
                 function goTop2(){
