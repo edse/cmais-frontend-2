@@ -1245,8 +1245,8 @@ $(document).ready(function(){
                 }
                 
                 
-                $('#f2_local').live("change", function(){
-                  console.log("alterou a cidade");
+                $('#f2_estado').live("change", function(){
+                  console.log("Alterou o Estado");
                 });
                
                 
