@@ -1224,7 +1224,7 @@ $(document).ready(function(){
                           }
                           
                         }).delay(4000, function(){
-                            alert("OK");
+                            
                             $('#f2_local option').each(function(){
                               console.log($(this).text());
                               if($.trim($(this).text()) == data.cep.cidade.toUpperCase()){
