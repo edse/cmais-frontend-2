@@ -114,7 +114,7 @@
         <div id="direita" class="grid1">
           <h3>Comentários</h3>
           <!-- comentario facebook -->
-          <div class="comentario-fb grid2" style="display:block">
+          <div class="comentario-fb grid23" style="display:block">
             <fb:comments href="<?php echo $uri ?>" numposts="10" width="310" publish_feed="true"></fb:comments>
             <hr />
           </div>
