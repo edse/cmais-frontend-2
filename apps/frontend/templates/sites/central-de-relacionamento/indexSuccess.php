@@ -1209,6 +1209,10 @@ $(document).ready(function(){
                       if(data.script != ""){
                         //console.log(data)
                         //estado
+                        
+                        $("f2_endereco").val(data.cep.endereco);
+                        $("f2_bairro").val(data.cep.bairro);
+                        
                         $("#f2_estado option").each(function () {
                           //console.log($(this).val());
                           if($(this).val() == data.cep.uf){
@@ -1218,6 +1222,7 @@ $(document).ready(function(){
                           }else{
                             $(this).removeAttr('selected');
                           }
+                          
                         }).delay(4000, function(){
                             $('#f2_local option').each(function(){
                               console.log($(this).val());
