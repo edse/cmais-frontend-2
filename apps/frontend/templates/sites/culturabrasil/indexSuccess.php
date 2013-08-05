@@ -106,9 +106,9 @@
           <p><?php echo $displays["frases"][0]->getDescription() ?></p>
         </div>
         <div class="borda-pontilhada"></div>
-        <a href="#" title="mais frases"> 
+        <!--a href="#" title="mais frases"> 
           <span class="mais">+ Frases</span>
-        </a>   
+        </a-->   
         <!--destaque frases -->
           <?php endif; ?>
         <?php endif; ?>
