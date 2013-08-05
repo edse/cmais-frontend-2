@@ -1207,44 +1207,38 @@ $(document).ready(function(){
                     },
                     success: function(data){
                       if(data.script != ""){
-                        //console.log(data)
-                        //estado
-                        
                         $("#f2_endereco").val(data.cep.endereco);
                         $("#f2_bairro").val(data.cep.bairro);
-                        
                         $("#f2_estado option").each(function () {
-                          //console.log($(this).val());
                           if($(this).val() == data.cep.uf){
                             $(this).attr('selected', 'selected');
                             $('#f2_estado').focus();
-                            
                           }else{
                             $(this).removeAttr('selected');
                           }
-                          
-                        }).delay(15000, function(){
-                            console.log("passou aqui");
-                            $('#f2_local option').each(function(){
-                              //console.log($(this).text());
-                              console.log("local");
-                              if($.trim($(this).text()) == data.cep.cidade.toUpperCase()){
-                                $(this).attr('selected', 'selected');
-                                $('#f2_local').focus();
-                              }else{
-                                $(this).removeAttr('selected');
-                              }
-                            })
-                          });
-                      }
-                      else{
+                        })
+                        setTimeout(function() { Verifica_Cidade(); }, 4000);
+                      }else{
                         alert('Erro!');
                       }
                     }
                   });
                 }
-                
-                
+
+                function Verifica_Cidade(){
+                  console.log("passou aqui");
+                  $('#f2_local option').each(function(){
+                    console.log($(this).text());
+                    if($.trim($(this).text()) == data.cep.cidade.toUpperCase()){
+                      $(this).attr('selected', 'selected');
+                      $('#f2_local').focus();
+                    }else{
+                      $(this).removeAttr('selected');
+                    }
+                  });
+                }
+
+
                 $('#f2_estado').live("change", function(){
                   console.log("Alterou o Estado");
                 });
