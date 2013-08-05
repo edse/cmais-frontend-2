@@ -1209,8 +1209,6 @@ $(document).ready(function(){
                       if(data.script != ""){
                         //console.log(data)
                         //estado
-                        alert(data.cep.cidade);
-                        
                         $("#f2_endereco").val(data.cep.endereco);
                         $("#f2_bairro").val(data.cep.bairro);
                         
@@ -1226,10 +1224,11 @@ $(document).ready(function(){
                           
                         }).delay(4000, function(){
                             $('#f2_local option').each(function(){
-                              console.log($(this).val());
-                              if($(this).val() == data.cep.cidade.toUpperCase()){
+                              console.log($(this).text());
+                              if($.trim($(this).text()) == data.cep.cidade.toUpperCase()){
                                 $(this).attr('selected', 'selected');
                                 $('#f2_local').focus();
+                                console.log($(this).text());
                               }else{
                                 $(this).removeAttr('selected');
                               }
