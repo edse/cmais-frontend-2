@@ -34,6 +34,7 @@ tr, td {
   border-style: solid;
   border-width: 1px 1px 0;
   box-shadow: none;
+  height: 356px;
 }
 .chat-bottom {
   position: relative;
@@ -53,7 +54,7 @@ tr, td {
   border-radius: 4px;
   display:block;
   overflow:hidden;
-  height:395px;
+  height:318px;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1) inset;
 }
 #chat-content{
@@ -86,7 +87,11 @@ tr, td {
 }
 #input-name{
   margin-right: 15px;
+  width: 100%;
+  margin-bottom: 5px;
 }
 #input-comment{
   margin-right: 15px;
+  margin-bottom: 5px
+  width: 100%!important;
 }
