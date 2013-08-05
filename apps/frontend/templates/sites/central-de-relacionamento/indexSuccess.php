@@ -1224,10 +1224,10 @@ $(document).ready(function(){
                           }
                           
                         }).delay(4000, function(){
-                            
+                            console.log("passou aqui");
                             $('#f2_local option').each(function(){
-                              console.log($(this).text());
-                              console.log("1");
+                              //console.log($(this).text());
+                              console.log("local");
                               if($.trim($(this).text()) == data.cep.cidade.toUpperCase()){
                                 $(this).attr('selected', 'selected');
                                 $('#f2_local').focus();
@@ -1245,7 +1245,7 @@ $(document).ready(function(){
                 }
                 
                 
-                $('#f2_estado').on("select", function(){
+                $('#f2_estado').live("change", function(){
                   console.log("Alterou o Estado");
                 });
                
