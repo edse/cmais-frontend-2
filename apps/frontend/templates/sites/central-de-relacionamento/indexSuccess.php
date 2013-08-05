@@ -1209,6 +1209,7 @@ $(document).ready(function(){
                       if(data.script != ""){
                         //console.log(data)
                         //estado
+                        
                         $("#f2_endereco").val(data.cep.endereco);
                         $("#f2_bairro").val(data.cep.bairro);
                         
@@ -1222,17 +1223,18 @@ $(document).ready(function(){
                             $(this).removeAttr('selected');
                           }
                           
-                        })
+                        }).delay(4000, function(){
+                            alert("OK");
                             $('#f2_local option').each(function(){
                               console.log($(this).text());
                               if($.trim($(this).text()) == data.cep.cidade.toUpperCase()){
                                 $(this).attr('selected', 'selected');
                                 $('#f2_local').focus();
-                                console.log($(this).text());
                               }else{
                                 $(this).removeAttr('selected');
                               }
                             })
+                          });
                       }
                       else{
                         alert('Erro!');
