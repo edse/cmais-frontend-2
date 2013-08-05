@@ -87,13 +87,15 @@
             </div>
           </div>
           <!-- /barra compartilhar -->
-          <h3>Comentários</h3>
-          <!-- comentario facebook -->
-          <div class="comentario-fb grid2" style="display:block">
-            <fb:comments href="<?php echo $uri ?>" numposts="3" width="610" publish_feed="true"></fb:comments>
-            <hr />
+          
+          <?php if(isset($displays['chat'])):?> 
+          <?php if(count($displays['chat']) > 0): ?>
+          <h3><?php echo $displays['chat'][0]->Block->getTitle() ?></h3>
+          <div class="box">
+            <?php echo html_entity_decode($displays['chat'][0]->getHtml()); ?>
           </div>
-          <!-- /comentario facebook -->
+          <?php endif; ?>
+          <?php endif; ?>
           <style type="text/css">
             #esquerda .box-compartilhar .comentar {
               text-indent: -9999px;
@@ -110,14 +112,22 @@
         <!-- DIREITA -->
         
         <div id="direita" class="grid1">
-          <?php if(isset($displays['chat'])):?> 
+          <h3>Comentários</h3>
+          <!-- comentario facebook -->
+          <div class="comentario-fb grid2" style="display:block">
+            <fb:comments href="<?php echo $uri ?>" numposts="10" width="310" publish_feed="true"></fb:comments>
+            <hr />
+          </div>
+          <!-- /comentario facebook -->
+
+          <?php /* if(isset($displays['chat'])):?> 
           <?php if(count($displays['chat']) > 0): ?>
           <h3><?php echo $displays['chat'][0]->Block->getTitle() ?></h3>
           <div class="box">
             <?php echo html_entity_decode($displays['chat'][0]->getHtml()); ?>
           </div>
           <?php endif; ?>
-          <?php endif; ?>
+          <?php endif; */?>
           <p></p> 
           <!-- BOX PUBLICIDADE -->
           <div class="box-publicidade grid1" style="margin-top:20px;">
