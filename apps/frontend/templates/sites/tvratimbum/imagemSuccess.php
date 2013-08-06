@@ -77,7 +77,7 @@
                   <?php if(count($related)>0): ?>
                     <?php foreach($related as $d): ?>
                     <a href="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>">
-                      <img src="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $d->getTitle() ?> teste" />
+                      <img src="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $d->getTitle() ?> - <?php echo $d->getDescription() ?>" />
                     </a>
                     <?php endforeach; ?>
                   <?php endif; ?>
