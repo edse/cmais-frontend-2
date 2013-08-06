@@ -107,8 +107,8 @@
     cursor: pointer;
     display: none;
 }
-.galleria-info-close.pai-heroi{
-  display: none;
+.pai .galleria-info-close{
+  display: none!important;
 }
 .galleria-info-close:hover{
     opacity:1;
