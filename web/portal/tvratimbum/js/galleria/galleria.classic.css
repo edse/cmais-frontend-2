@@ -15,7 +15,10 @@
 	height: 440px;
 }
 .pai .galleria-container{
-  height:587px!important;
+  height:543px!important;
+}
+.pai .galleria-thumbnails-list{
+  padding: 0 12px;
 }
 .pai .galleria-container img {
   top:0px!important;
