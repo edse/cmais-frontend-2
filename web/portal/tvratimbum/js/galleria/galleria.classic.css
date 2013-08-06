@@ -17,6 +17,9 @@
 .pai .galleria-container{
   height:587px!important;
 }
+.pai .galleria-container img {
+  top:0px!important;
+}
 .galleria-container img {
     -moz-user-select: none;
     -webkit-user-select: none;
