@@ -97,17 +97,13 @@
                 <p><?php echo $asset->AssetImageGallery->getText()?></p>
               <?php endif;?>
             </div>
-            <?php 
-            if($asset->getSlug()=='meu-pai-heroi'):
-            ?>
+            
             <script>
             $(document).ready(function(){
               $('.galleria-info-close').addClass('pai-heroi');
             })
             </script>
-            <?php  
-            endif;  
-            ?>
+            
             <?php /*
             <hr />  
             <div class="btn-barra">
