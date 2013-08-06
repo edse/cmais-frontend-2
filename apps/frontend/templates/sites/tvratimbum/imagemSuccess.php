@@ -97,6 +97,13 @@
                 <p><?php echo $asset->AssetImageGallery->getText()?></p>
               <?php endif;?>
             </div>
+            <?php 
+            if($asset->getSlug()=='meu-pai-heroi'):
+            ?>
+            teste 2
+            <?php  
+            endif;  
+            ?>
             <?php /*
             <hr />  
             <div class="btn-barra">
