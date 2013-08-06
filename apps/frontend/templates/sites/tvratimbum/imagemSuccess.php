@@ -100,7 +100,11 @@
             <?php 
             if($asset->getSlug()=='meu-pai-heroi'):
             ?>
-            teste 2
+            <script>
+            $(document).ready(function(){
+              $('.galleria-info-close').hide();
+            })
+            </script>
             <?php  
             endif;  
             ?>
