@@ -83,6 +83,9 @@
     display: none;
     /* IE7 */ zoom:1;
 }
+.galleria-info-text.pai-heroi{
+  display: block;
+}
 .galleria-info-title {
     font: bold 12px/1.1 arial,sans-serif;
     margin: 0;
@@ -104,6 +107,9 @@
     cursor: pointer;
     display: none;
 }
+.galleria-info-close.pai-heroi{
+  display: none;
+}
 .galleria-info-close:hover{
     opacity:1;
     filter: alpha(opacity=100);
@@ -116,6 +122,9 @@
     height: 20px;
     cursor: pointer;
     display: block;
+}
+.galleria-info-link.pai-heroi {
+    display: none;
 }
 .galleria-info-link:hover {
     opacity: 1;

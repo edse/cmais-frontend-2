@@ -125,7 +125,7 @@
                   <img src="<?php echo $a->retriveImageUrlByImageUsage("image-1-b") ?>" alt="<?php echo $a->getTitle()?>" />
                 </a>
                 <a class="aTxt" href="<?php echo $a->retriveUrl()?>">
-                  <span class="nomeRlacionado"><?php echo $a->getTitle()?></span>
+                  <span class="nomeRlacionado"><?php echo $a->getTitle()?> - </span>
                 </a>
               </li>
               <?php endforeach; ?>
@@ -152,4 +152,6 @@
     <hr />
   </div>
 </div>
+<script>
 
+</script>
