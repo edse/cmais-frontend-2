@@ -71,7 +71,7 @@
               <p><?php echo $asset->getTitle()?></p>
             </div>
             <div class="info">
-              <div class="galeriaBox">
+              <div class="galeriaBox <?php if($asset->getSlug()=='meu-pai-heroi'): ?>pai<?php endif; ?>">
                 <div id="galleria">
                   <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
                   <?php if(count($related)>0): ?>
@@ -98,11 +98,6 @@
               <?php endif;?>
             </div>
             
-            <script>
-            $(document).ready(function(){
-              $('.galleria-info-close').addClass('pai-heroi');
-            })
-            </script>
             
             <?php /*
             <hr />  
