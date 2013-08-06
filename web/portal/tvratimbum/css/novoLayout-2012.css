@@ -72,3 +72,4 @@ background-image: url("../image/jplayer.png") !important;}
 #box-atividades a.artes:hover{background: url("../image/box-atividades_artes.jpg") no-repeat; text-indent: -9999px; overflow: hidden;}
 
 #box-especial-interna .box-especial-infotxt img{margin: 0!important;}
+.btn-destaque-topo{float: left;margin: 26px 5px 0 -83px;}
