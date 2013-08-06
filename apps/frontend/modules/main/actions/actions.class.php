@@ -234,7 +234,7 @@ class mainActions extends sfActions
     }
     if(!$param1)
       $this->forward('main', 'index');
-    elseif(($param1 == "busca")||($param2 == "busca"))
+    elseif(($param1 == "busca")||($param2 == "busca") && $param1 != "culturabrasil")
       $this->forward('main', 'search');
     elseif(($param1 == "criancasdobrasil")||($param1 == "criancas-do-brasil")){
       header("Location: http://tvcultura.com.br/criancasdobrasil");
