@@ -93,6 +93,9 @@
     /* IE7 */ zoom:1;
 }
 .pai .galleria-info-text{
+  min-height:50px!important;
+}
+.pai .galleria-info-text{
   display: block;
 }
 .galleria-info-title {
