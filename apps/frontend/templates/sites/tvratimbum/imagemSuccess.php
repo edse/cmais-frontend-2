@@ -71,13 +71,13 @@
               <p><?php echo $asset->getTitle()?></p>
             </div>
             <div class="info">
-              <div class="galeriaBox">
+              <div class="galeriaBox <?php if($asset->getSlug()=='meu-pai-heroi'): ?>pai<?php endif; ?>">
                 <div id="galleria">
                   <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
                   <?php if(count($related)>0): ?>
                     <?php foreach($related as $d): ?>
                     <a href="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>">
-                      <img src="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $d->getTitle() ?>" />
+                      <img src="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $d->getTitle() ?> - <?php echo $d->getDescription() ?>" />
                     </a>
                     <?php endforeach; ?>
                   <?php endif; ?>
@@ -97,6 +97,8 @@
                 <p><?php echo $asset->AssetImageGallery->getText()?></p>
               <?php endif;?>
             </div>
+            
+            
             <?php /*
             <hr />  
             <div class="btn-barra">
@@ -152,4 +154,5 @@
     <hr />
   </div>
 </div>
-
+<script>
+</script>
