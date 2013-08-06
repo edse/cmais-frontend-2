@@ -83,7 +83,7 @@
     display: none;
     /* IE7 */ zoom:1;
 }
-.galleria-info-text.pai-heroi{
+.pai .galleria-info-text{
   display: block;
 }
 .galleria-info-title {
@@ -123,7 +123,7 @@
     cursor: pointer;
     display: block;
 }
-.galleria-info-link.pai-heroi {
+.pai .galleria-info-link {
     display: none;
 }
 .galleria-info-link:hover {
