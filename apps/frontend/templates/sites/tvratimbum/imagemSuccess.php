@@ -102,7 +102,7 @@
             ?>
             <script>
             $(document).ready(function(){
-              $('.galleria-info-close').hide();
+              $('.galleria-info-close').addClass('pai-heroi');
             })
             </script>
             <?php  
