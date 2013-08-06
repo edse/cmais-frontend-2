@@ -77,7 +77,7 @@
                   <?php if(count($related)>0): ?>
                     <?php foreach($related as $d): ?>
                     <a href="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>">
-                      <img src="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $d->getTitle() ?>" />
+                      <img src="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $d->getTitle() ?> teste" />
                     </a>
                     <?php endforeach; ?>
                   <?php endif; ?>
@@ -125,7 +125,7 @@
                   <img src="<?php echo $a->retriveImageUrlByImageUsage("image-1-b") ?>" alt="<?php echo $a->getTitle()?>" />
                 </a>
                 <a class="aTxt" href="<?php echo $a->retriveUrl()?>">
-                  <span class="nomeRlacionado"><?php echo $a->getTitle()?> - </span>
+                  <span class="nomeRlacionado"><?php echo $a->getTitle()?></span>
                 </a>
               </li>
               <?php endforeach; ?>
@@ -153,5 +153,4 @@
   </div>
 </div>
 <script>
-
 </script>
