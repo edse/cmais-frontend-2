@@ -621,7 +621,6 @@ class _sectionActions extends sfActions
               $this->assetsQuery->andWhere("sa.section_id = ?", (int)$request->getParameter('section'));
             else
               $this->assetsQuery->andWhere('sa.section_id = ?', $this->section->id);
-            
             if($this->site->getSlug() == "penarua") 
               $this->assetsQuery->orderBy('sa.display_order');
             else
