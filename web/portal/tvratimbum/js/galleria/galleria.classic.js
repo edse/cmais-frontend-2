@@ -26,7 +26,7 @@ Galleria.addTheme({
         // add some elements
         this.addElement('info-link','info-close');
         this.append({
-            'info' : ['info-link','info-close']
+            'info' : ['info-link','info-close', 'pai-heroi']
         });
         
         // cache some stuff
