@@ -527,7 +527,7 @@ class _sectionActions extends sfActions
                 if($this->busca != "")
                   $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->busca.'%', '%'.$this->busca.'%'));
                 $this->assetsQuery->andWhere('a.is_active = ?', 1)
-                  ->orderBy('a.created_at desc'); 
+                  ->orderBy('a.created_at desc');
               }
             }
           }
