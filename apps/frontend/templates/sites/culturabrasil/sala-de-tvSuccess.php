@@ -77,6 +77,7 @@
    <div class="span6">
      <div class="page-header ao-vivo">
       <h4>Bate Papo</h4>
+      <?php echo html_entity_decode($displays["chat"][0]->getHtml()); ?>
      </div> 
    </div>
    <!--/Bate papo-->
