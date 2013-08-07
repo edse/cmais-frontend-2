@@ -58,13 +58,13 @@
     <!-- /videoplayer -->
     <div class="share">
       <div class="google">
-        <g:plusone size="medium" annotation="none" href="http://radarcultura.cmais.com.br"></g:plusone>
+        <g:plusone size="medium" annotation="none" href="https://plus.google.com/u/0/+CulturaBrasil/posts "></g:plusone>
       </div>
       <div class="twt">
-        <a href="https://twitter.com/radarcultura" class="twitter-follow-button" data-show-count="false" data-lang="pt">Seguir @radarcultura</a>
+        <a href="twitter.com/culturabrasil2" class="twitter-follow-button" data-show-count="false" data-lang="pt">Seguir @culturabrasil</a>
       </div>
       <div class="fb">
-        <fb:like href="https://www.facebook.com/programaradarcultura" layout="button_count" width="200" send="true" show_faces="false"></fb:like>
+        <fb:like href="facebook.com/culturabrasil" layout="button_count" width="200" send="true" show_faces="false"></fb:like>
       </div>
     </div> 
    <!-- comentario facebook -->
