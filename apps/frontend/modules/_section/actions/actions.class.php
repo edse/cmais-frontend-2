@@ -511,7 +511,7 @@ class _sectionActions extends sfActions
                   ->orderBy('a.created_at desc')
                   ->limit(20);
               }else{
-                if( ($this->section->site->getSlug() == "culturabrasil") && ($this->section->getSlug() == "busca") ) {
+                if( ($this->section->Site->getSlug() == "culturabrasil") && ($this->section->getSlug() == "busca") ) {
                   if($request->getParameter('debug') != "")
                     print "aqui";
                   
