@@ -94,3 +94,5 @@ tr, td {
 
 #chat-content td{float: left;width: 368px;}
 #chat-content  .text-primary.time{float: left;width: 72px!important;border: none;}
+#input-name{width:100%;}
+#input-comment{width:100%!important;}
