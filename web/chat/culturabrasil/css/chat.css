@@ -90,3 +90,5 @@ tr, td {
 #input-comment{
   margin-right: 15px;
 }
+.text-primary.time{float: left;width: 72px;border: none;}
+#chat-content td{float: left;width: 368px;}
