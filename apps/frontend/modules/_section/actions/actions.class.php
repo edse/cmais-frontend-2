@@ -497,7 +497,7 @@ class _sectionActions extends sfActions
             }
             else{
               if($request->getParameter('debug') != "")
-                print "<br>cb-busca";
+                print "<br>>>s>".$this->site_id." >>>>t>".$this->busca;
         
               if(($this->site_id > 0)&&($this->busca)){
                 $this->assetsQuery = Doctrine_Query::create()
@@ -513,7 +513,7 @@ class _sectionActions extends sfActions
               }else{
                 if( ($this->section->Site->getSlug() == "culturabrasil") && ($this->section->getSlug() == "busca") ) {
                   if($request->getParameter('debug') != "")
-                    print "<br>>>s>".$this->site_id." >>>>t>".$this->busca;
+                    print "<br>busca";
                   
                   $this->assetsQuery = Doctrine_Query::create()
                     ->select('a.*')
