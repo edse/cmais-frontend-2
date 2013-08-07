@@ -1,12 +1,3 @@
-<?php
-if(isset($pager)){
-  if($pager->count() == 1){
-    header("Location: ".$pager->getCurrent()->retriveUrl());
-    die();
-  }  
-}  
-?>
-
 <?php use_helper('I18N', 'Date') ?>
 
 <!-- Le styles--> 
@@ -52,9 +43,9 @@ if(isset($pager)){
           </h1>
           <h2 class="encontradas">
           <?php if(count($pager) > 0): ?>
-            Foram encontrados <?php echo count($pager) ?> resultados com a expressão “<?php echo $term ?>”
+            Foram encontrados <?php echo count($pager) ?> resultados com a expressão “<?php if (isset($term)) echo $term ?>”
           <?php else: ?>
-            Sua pesquisa - <?php echo $term ?> - não encontrou nenhum documento correspondente
+            Sua pesquisa - <?php if (isset($term)) echo $term ?> - não encontrou nenhum documento correspondente
           <?php endif; ?>
           </h2>
         </div>

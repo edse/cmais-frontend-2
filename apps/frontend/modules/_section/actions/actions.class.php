@@ -511,6 +511,8 @@ class _sectionActions extends sfActions
                   ->orderBy('a.created_at desc')
                   ->limit(20);
               }else{
+                if($request->getParameter('debug') != "")
+                  print "aqui";
                 // section assets
                 $this->assetsQuery = Doctrine_Query::create()
                   ->select('a.*')
@@ -626,7 +628,8 @@ class _sectionActions extends sfActions
             else
               $this->assetsQuery->orderBy('a.id desc');
           }
-          else if (in_array($this->site->getSlug(), array('rodaviva','provocacoes','metropolis'))) {
+          elseif (in_array($this->site->getSlug(), array('rodaviva','provocacoes','metropolis'))) {
+
             
             if($this->section->getSlug()=="programas"){
               if($request->getParameter('ordem') == 'alfabetica') {

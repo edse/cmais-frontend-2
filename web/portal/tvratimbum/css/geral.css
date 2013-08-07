@@ -4485,6 +4485,7 @@ form .nome{
   font-size: 12px;
   margin-top: 8px;
   font-weight: normal;
+  max-height:14px;
 }
 #box-imagens-home .lista-programas li a .nomeItem{
   font-size: 15px;
