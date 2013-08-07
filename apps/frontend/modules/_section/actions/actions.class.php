@@ -440,6 +440,7 @@ class _sectionActions extends sfActions
               }
             }
             else if(($request->getParameter('site_id') > 0)&&($request->getParameter('busca') != '')){
+              // aqui
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, AssetVideo av')
@@ -626,7 +627,8 @@ class _sectionActions extends sfActions
             else
               $this->assetsQuery->orderBy('a.id desc');
           }
-          else if (in_array($this->site->getSlug(), array('rodaviva','provocacoes','metropolis'))) {
+          elseif (in_array($this->site->getSlug(), array('rodaviva','provocacoes','metropolis'))) {
+
             
             if($this->section->getSlug()=="programas"){
               if($request->getParameter('ordem') == 'alfabetica') {
@@ -764,6 +766,11 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1)
                 ->orderBy('a.created_at desc');
             }
+          elseif (in_array($this->site->getSlug(), array('culturabrasil'))) {
+            die("1");
+            
+          }
+            
             else {
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
