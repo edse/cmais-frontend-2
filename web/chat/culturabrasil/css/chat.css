@@ -34,6 +34,7 @@ tr, td {
   border-style: solid;
   border-width: 1px 1px 0;
   box-shadow: none;
+  height: 427px;
 }
 .chat-bottom {
   position: relative;
