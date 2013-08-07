@@ -734,8 +734,9 @@ $(document).ready(function(){
                 <script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>
                 <script>
                 //IE 7 e 8
-                data = new Array;
-                data.script = null;
+                data = new Object;
+                data.script = "";
+                alert(data.script);
                 
                 $(document).ready(function(){
                   $(".dicas").click(function(){
