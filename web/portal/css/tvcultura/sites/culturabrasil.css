@@ -365,4 +365,8 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 .saladetv .page-header{border:none;}
 .saladetv .page-header h4{color:#333333; font-size:24px;text-transform: none;}
 .saladetv #videoPlayer{width: 450px; margin: 0 auto;}
+.saladetv .google{width: 40px; float: left;}
+.saladetv .twt{width: 142px; float: left;}
+.saladetv .fb{width: 174px; float: left;}
+.saladetv .share{margin: 13px auto 0 auto;overflow: hidden;display: block;width: 356px;}
 /* /sala de tv */
