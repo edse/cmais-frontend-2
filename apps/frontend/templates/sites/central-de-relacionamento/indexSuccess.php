@@ -733,8 +733,6 @@ $(document).ready(function(){
                 <script src="/portal/js/messages_ptbr.js"></script>
                 <script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>
                 <script>
-                data = "";
-                data.script = "";
                 
                 $(document).ready(function(){
                   $(".dicas").click(function(){
@@ -1139,8 +1137,8 @@ $(document).ready(function(){
                       //$('img#ajax-loader').show();
                     },
                     success: function(data){
-                      if(data.script != ""){
-                        eval(data.script);
+                      if(data != ""){
+                        eval(data);
                       }
                       else{
                         alert('Erro!');

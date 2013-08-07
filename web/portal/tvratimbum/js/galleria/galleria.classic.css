@@ -15,7 +15,13 @@
 	height: 440px;
 }
 .pai .galleria-container{
-  height:587px!important;
+  height:543px!important;
+}
+.pai .galleria-thumbnails-list{
+  padding: 0 12px;
+}
+.pai .galleria-container img {
+  top:0px!important;
 }
 .galleria-container img {
     -moz-user-select: none;
@@ -85,6 +91,9 @@
     padding: 12px;
     display: none;
     /* IE7 */ zoom:1;
+}
+.pai .galleria-info-text{
+  min-height:50px!important;
 }
 .pai .galleria-info-text{
   display: block;
