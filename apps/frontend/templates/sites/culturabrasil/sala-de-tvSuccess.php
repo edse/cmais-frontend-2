@@ -61,10 +61,10 @@
         <g:plusone size="medium" annotation="none" href="https://plus.google.com/u/0/+CulturaBrasil/posts "></g:plusone>
       </div>
       <div class="twt">
-        <a href="twitter.com/culturabrasil2" class="twitter-follow-button" data-show-count="false" data-lang="pt">Seguir @culturabrasil</a>
+        <a href="https://twitter.com/culturabrasil2" class="twitter-follow-button" data-show-count="false" data-lang="pt">Seguir @radarcultura</a>
       </div>
       <div class="fb">
-        <fb:like href="facebook.com/culturabrasil" layout="button_count" width="200" send="true" show_faces="false"></fb:like>
+        <fb:like href="https://facebook.com/culturabrasil" layout="button_count" width="200" send="true" show_faces="false"></fb:like>
       </div>
     </div> 
    <!-- comentario facebook -->
