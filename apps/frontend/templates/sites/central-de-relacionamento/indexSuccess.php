@@ -733,11 +733,6 @@ $(document).ready(function(){
                 <script src="/portal/js/messages_ptbr.js"></script>
                 <script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>
                 <script>
-                //IE 7 e 8
-                data = new Object;
-                data.script = "";
-                alert(data.script);
-                
                 $(document).ready(function(){
                   $(".dicas").click(function(){
                     $(this).prev().toggleClass('icon-minus');
@@ -1132,6 +1127,10 @@ $(document).ready(function(){
                 }
                 
                 function municipios(form){
+                  data = new Array;
+                  data.script = "";
+                  alert(data.script);
+                
                   $.ajax({
                     type: "POST",
                     dataType: "json",
