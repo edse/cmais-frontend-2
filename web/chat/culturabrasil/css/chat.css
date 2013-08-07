@@ -92,4 +92,4 @@ tr, td {
 }
 
 #chat-content td{float: left;width: 368px;}
-#chat-content  .text-primary.time{float: left;width: 72px;border: none;}
+#chat-content  .text-primary.time{float: left;width: 72px!important;border: none;}
