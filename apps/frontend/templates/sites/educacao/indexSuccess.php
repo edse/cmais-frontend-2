@@ -140,7 +140,7 @@ $(function(){
                   <br /><br />
                   <a href="http://twitter.com/educacaoemdia" class="twitter-follow-button">Siga @educacaoemdia</a>
                   <br /><br />
-                  <fb:like-box href="http://facebook.com/educacaoemdia.tvcultura" width="290" show_faces="false" stream="true" header="true"></fb:like-box>
+                  <fb:like-box href="https://www.facebook.com/pages/CMais-Educa%C3%A7%C3%A3o/274753529335094" width="290" show_faces="false" stream="true" header="true"></fb:like-box>
               </div>
               <!-- /BOX FACEBOOK -->
               
