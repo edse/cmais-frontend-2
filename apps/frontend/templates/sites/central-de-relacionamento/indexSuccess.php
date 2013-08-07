@@ -735,7 +735,7 @@ $(document).ready(function(){
                 <script>
                 //IE 7 e 8
                 data = new Array;
-                data.script = "";
+                data.script = null;
                 
                 $(document).ready(function(){
                   $(".dicas").click(function(){
