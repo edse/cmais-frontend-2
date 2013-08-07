@@ -225,6 +225,7 @@ p { color:#333; font-size: 14px;}
 .carrossel li a,
 .carrossel .jcarousel-item a img,
 .carrossel .jcarousel-item { width: 90px; height:auto;}
+.carrossel .jcarousel-item a img { margin-top:-15px;} 
 .carrossel .jcarousel-item { width:90px; height:55px; overflow:hidden; }
 .carrossel .jcarousel-item-horizontal { margin:0 10px 0 0; }
 .carrossel .jcarousel-prev,
