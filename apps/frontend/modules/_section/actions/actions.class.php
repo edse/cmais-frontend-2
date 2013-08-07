@@ -513,7 +513,7 @@ class _sectionActions extends sfActions
               }else{
                 if( ($this->section->Site->getSlug() == "culturabrasil") && ($this->section->getSlug() == "busca") ) {
                   if($request->getParameter('debug') != "")
-                    print "<br>busca";
+                    print "<br>toaqui";
                   
                   $this->assetsQuery = Doctrine_Query::create()
                     ->select('a.*')
