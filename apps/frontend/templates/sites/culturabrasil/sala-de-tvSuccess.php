@@ -56,7 +56,7 @@
     so.write("videoPlayer");
     </script>
     <!-- /videoplayer -->
-    <div class="span9 share">
+    <div class="share">
       <div class="google">
         <g:plusone size="medium" annotation="none" href="http://radarcultura.cmais.com.br"></g:plusone>
       </div>
@@ -68,7 +68,7 @@
       </div>
     </div> 
    <!-- comentario facebook -->
-   <fb:comments href="<?php echo $uri?>" numposts="3" width="495" publish_feed="true" style="margin-top:30px;"></fb:comments>
+   <fb:comments href="<?php echo $uri?>" numposts="3" width="495" publish_feed="true" style="margin-top:11px;"></fb:comments>
    <hr />
    <!-- /comentario facebook -->
    </div>      
