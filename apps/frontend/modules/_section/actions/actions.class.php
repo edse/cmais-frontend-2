@@ -521,7 +521,7 @@ class _sectionActions extends sfActions
                     ->where('a.site_id = s.id')
                     ->andWhere('s.id = p.site_id')
                     ->andWhere('p.id = cp.program_id')
-                    ->andWhere('cp.channel_id = ?', $this->site->Program->Channel->getId());
+                    ->andWhere('cp.channel_id = ?', $this->section->Site->Program->Channel->getId());
                   if($this->busca != "")
                     $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->busca.'%', '%'.$this->busca.'%'));
                   $this->assetsQuery->andWhere('a.is_active = ?', 1)
