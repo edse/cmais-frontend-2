@@ -45,7 +45,7 @@
           <?php if(count($pager) > 0): ?>
             Foram encontrados <?php echo count($pager) ?> resultados com a expressão “<?php echo $term ?>”
           <?php else: ?>
-            Sua pesquisa - <?php echo $term ?> - não encontrou nenhum documento correspondente
+            Sua pesquisa - <?php if ($term) echo $term ?> - não encontrou nenhum documento correspondente
           <?php endif; ?>
           </h2>
         </div>
