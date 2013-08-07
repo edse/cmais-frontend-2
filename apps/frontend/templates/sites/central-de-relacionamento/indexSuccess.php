@@ -1138,7 +1138,7 @@ $(document).ready(function(){
                     },
                     success: function(data){
                       if(data != ""){
-                        eval(data);
+                        eval(data.script);
                       }
                       else{
                         alert('Erro!');
