@@ -1137,8 +1137,8 @@ $(document).ready(function(){
                       //$('img#ajax-loader').show();
                     },
                     success: function(data){
-                      if(data != ""){
-                        eval(data);
+                      if(data.script != ""){
+                        eval(data.script);
                       }
                       else{
                         alert('Erro!');
