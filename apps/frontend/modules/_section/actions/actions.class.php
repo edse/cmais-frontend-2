@@ -511,8 +511,11 @@ class _sectionActions extends sfActions
                   ->orderBy('a.created_at desc')
                   ->limit(20);
               }else{
-                if($request->getParameter('debug') != "")
-                  print "aqui";
+                if( ($this->section->site->getSlug() == "culturabrasil") && ($this->section->getSlug() == "busca") ) {
+                  if($request->getParameter('debug') != "")
+                    print "aqui";
+                  
+                }
                 // section assets
                 $this->assetsQuery = Doctrine_Query::create()
                   ->select('a.*')
