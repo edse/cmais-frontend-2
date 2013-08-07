@@ -56,7 +56,7 @@
     so.write("videoPlayer");
     </script>
     <!-- /videoplayer -->
-    <div class="span8 share">
+    <div class="span9 share">
       <div class="google">
         <g:plusone size="medium" annotation="none" href="http://radarcultura.cmais.com.br"></g:plusone>
       </div>

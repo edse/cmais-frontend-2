@@ -5,7 +5,7 @@
             <img src="/portal/images/capaPrograma/radarcultura/logo-radar-novo.png" alt="Radar Cultura" />
           </a>
         </div>
-        <div class="span9 share">
+        <div class="span8 share">
           <div class="google">
             <g:plusone size="medium" annotation="none" href="http://radarcultura.cmais.com.br"></g:plusone>
           </div>
