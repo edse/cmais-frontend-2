@@ -733,8 +733,9 @@ $(document).ready(function(){
                 <script src="/portal/js/messages_ptbr.js"></script>
                 <script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>
                 <script>
-                data = "";
-                data.script = "";
+                //IE 7 e 8
+                data = undefined;
+                data.script = undefined;
                 
                 $(document).ready(function(){
                   $(".dicas").click(function(){
