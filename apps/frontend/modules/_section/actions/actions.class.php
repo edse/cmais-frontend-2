@@ -512,9 +512,17 @@ class _sectionActions extends sfActions
                   ->limit(20);
               }else{
                 if( ($this->section->Site->getSlug() == "culturabrasil") && ($this->section->getSlug() == "busca") ) {
-                  if($request->getParameter('debug') != "")
-                    print "aqui";
-                  
+                  $this->assetsQuery = Doctrine_Query::create()
+                    ->select('a.*')
+                    ->from('Asset a, Site s, Program p, ChannelProgram cp')
+                    ->where('a.site_id = s.id')
+                    ->andWhere('p.site_id = s.id')
+                    ->andWhere('p.id = cp.program_id')
+                    ->andWhere('cp.channel_id = ?', $this->site->Program->Channel->getId());
+                  if($this->busca != "")
+                    $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->busca.'%', '%'.$this->busca.'%'));
+                  $this->assetsQuery->andWhere('a.is_active = ?', 1)
+                    ->orderBy('a.created_at desc');
                 }
                 // section assets
                 $this->assetsQuery = Doctrine_Query::create()
