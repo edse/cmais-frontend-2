@@ -524,18 +524,20 @@ class _sectionActions extends sfActions
                   $this->assetsQuery->andWhere('a.is_active = ?', 1)
                     ->orderBy('a.created_at desc');
                 }
-                // section assets
-                $this->assetsQuery = Doctrine_Query::create()
-                  ->select('a.*')
-                  ->from('Asset a, SectionAsset sa')
-                  ->where('sa.section_id = ?', $this->section->id)
-                  ->andWhere('sa.asset_id = a.id');
-                if($this->site_id > 0)
-                  $this->assetsQuery->andWhere('a.site_id = ?', (int)$this->site_id);
-                if($this->busca != "")
-                  $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->busca.'%', '%'.$this->busca.'%'));
-                $this->assetsQuery->andWhere('a.is_active = ?', 1)
-                  ->orderBy('a.created_at desc');
+                else {
+                  // section assets
+                  $this->assetsQuery = Doctrine_Query::create()
+                    ->select('a.*')
+                    ->from('Asset a, SectionAsset sa')
+                    ->where('sa.section_id = ?', $this->section->id)
+                    ->andWhere('sa.asset_id = a.id');
+                  if($this->site_id > 0)
+                    $this->assetsQuery->andWhere('a.site_id = ?', (int)$this->site_id);
+                  if($this->busca != "")
+                    $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->busca.'%', '%'.$this->busca.'%'));
+                  $this->assetsQuery->andWhere('a.is_active = ?', 1)
+                    ->orderBy('a.created_at desc');
+                }
               }
             }
           }
