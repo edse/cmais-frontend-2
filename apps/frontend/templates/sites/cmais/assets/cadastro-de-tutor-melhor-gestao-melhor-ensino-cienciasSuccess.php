@@ -331,7 +331,7 @@
                       </div>
                     </div>
                     <!--span class="linhaFundo"></span-->
-                    <div id="funcao" style="display:none">
+                    <div id="funcao" style="display:none; padding-left: 40px; float:left; margin-bottom:20px">
                       <p class="pergunta">6.2. Na rede você exerce a função de:</p>
                       <div class="linha t11" style="clear:both; margin:0; width:auto">
                         <label><input type="radio" name="rede_ensino_sp_funcao" id="pcnp" value="Professores Coordenadores do Núcleo Pedagógico (PCNP)" />Professores Coordenadores do Núcleo Pedagógico (PCNP)</label>
