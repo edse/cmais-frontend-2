@@ -94,8 +94,7 @@ if($asset) {
    <div class="search-culturabrasil">
     <i class="lupa"></i>
     <form class="busca-culturabrasil" action="/busca" method="post">
-      <input type="hidden" name="site_id" id="site_id" value="">
-      <input class="ipt-txt" type="text" name="term" id="term" value="">
+      <input class="ipt-txt" type="text" name="term" id="term" value="<?php if($term) echo $term ?>">
       <input class="ipt-submit" type="submit" value="OK">
     </form>
    </div>

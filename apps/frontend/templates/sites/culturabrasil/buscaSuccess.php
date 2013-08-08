@@ -11,7 +11,7 @@
 <![endif]-->
 <script src="/portal/js/bootstrap/bootstrap.js"></script>
 
-<?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
+<?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'term'=>$term)) ?>
 
 <!-- section miolo -->
 <section class="miolo">
@@ -59,7 +59,7 @@
       <div class="lista-assets span8" style="*margin-left:0px;">
         <?php if(count($pager) > 0): ?>
           <?php foreach($pager->getResults() as $d): ?>
-            <a href="<?php echo $uri . '/' . $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
+            <a href="<?php echo $d->retriveUrl(); ?>" title="<?php echo $d->getTitle(); ?>">
                 <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
                 <?php if ($related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb1")): ?>
                 <div class="row-fluid titulo">
