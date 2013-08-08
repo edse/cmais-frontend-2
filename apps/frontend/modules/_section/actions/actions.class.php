@@ -523,7 +523,7 @@ class _sectionActions extends sfActions
                     ->execute(50);
                     
                   foreach($programs as $p)
-                    $theseSites[] = $p->site_id;
+                    $theseSites[] = $p->getSiteId();
                   
                                     
                   $this->assetsQuery = Doctrine_Query::create()
