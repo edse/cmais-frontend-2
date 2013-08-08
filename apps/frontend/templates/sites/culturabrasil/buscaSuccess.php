@@ -42,10 +42,12 @@
             Resultado da Busca
           </h1>
           <h2 class="encontradas">
-          <?php if(count($pager) > 0): ?>
-            Foram encontrados <?php echo count($pager) ?> resultados com a expressão “<?php if (isset($term)) echo $term ?>”
-          <?php else: ?>
-            Sua pesquisa - <?php if (isset($term)) echo $term ?> - não encontrou nenhum documento correspondente
+          <?php if(isset($term)): ?>
+            <?php if(count($pager) > 0): ?>
+              Foram encontrados <?php echo count($pager) ?> resultados com a expressão “<?php if (isset($term)) echo $term ?>”
+            <?php else: ?>
+              Sua pesquisa - <?php if (isset($term)) echo $term ?> - não encontrou nenhum documento correspondente
+            <?php endif; ?>
           <?php endif; ?>
           </h2>
         </div>
