@@ -315,28 +315,28 @@
                     </div>
                     
                     <!--span class="linhaFundo"></span-->
-                    <div id="tempo" style="display:none; padding-left:40px">
+                    <div id="tempo" style="display:none; padding-left:40px; float:left; margin-bottom:20px">
                        <p class="pergunta">6.1. Há quanto tempo?</p>
-                      <div class="linha t10">
+                      <div class="linha t11" style="clear:both; margin:0;">
                         <label><input type="radio" name="rede_ensino_sp_tempo" id="menosde2anos" value="menos de 2 anos" />menos de 2 anos</label>
                       </div>
-                      <div class="linha t10">
+                      <div class="linha t11" style="clear:both; margin:0;">
                         <label><input type="radio" name="rede_ensino_sp_tempo" id="de2a5anos" value="de 2 a 5 anos" />de 2 a 5 anos</label>
                       </div>
-                      <div class="linha t10">
+                      <div class="linha t11" style="clear:both; margin:0;">
                         <label><input type="radio" name="rede_ensino_sp_tempo" id="de6a10anos" value="de 6 a 10 anos" />de 6 a 10 anos</label>
                       </div>
-                      <div class="linha t10">
+                      <div class="linha t11" style="clear:both; margin:0;">
                         <label><input type="radio" name="rede_ensino_sp_tempo" id="maisde10anos" value="mais de 10 anos" />mais de 10 anos</label>
                       </div>
                     </div>
                     <!--span class="linhaFundo"></span-->
                     <div id="funcao" style="display:none">
                       <p class="pergunta">6.2. Na rede você exerce a função de:</p>
-                      <div class="linha t10">
+                      <div class="linha t11" style="clear:both; margin:0; width:auto">
                         <label><input type="radio" name="rede_ensino_sp_funcao" id="pcnp" value="Professores Coordenadores do Núcleo Pedagógico (PCNP)" />Professores Coordenadores do Núcleo Pedagógico (PCNP)</label>
                       </div>
-                      <div class="linha t10">
+                      <div class="linha t11" style="clear:both; margin:0; width:auto">
                         <label><input type="radio" name="rede_ensino_sp_funcao" id="pc" value="Professor Coordenador (PC) da unidade escolar" />Professor Coordenador (PC) da unidade escolar</label>
                       </div>
                     </div>
