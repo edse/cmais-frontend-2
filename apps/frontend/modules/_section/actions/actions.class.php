@@ -514,7 +514,7 @@ class _sectionActions extends sfActions
                 if( ($this->section->Site->getSlug() == "culturabrasil") && ($this->section->getSlug() == "busca") ) {
                   if($request->getParameter('term'))
                     $this->term = $request->getParameter('term');
-                  $theseSites[] = $this->section->Site->id();
+                  $theseSites[] = $this->section->Site->id;
                   
                   $programs = Doctrine_Query::create()
                     ->select('p.*')
