@@ -536,6 +536,10 @@ class _sectionActions extends sfActions
                     $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->term.'%', '%'.$this->term.'%'));
                   $this->assetsQuery->andWhere('a.is_active = ?', 1)
                     ->orderBy('a.created_at desc');
+                    
+                  if($request->getParameter('debug') != "")
+                    print_r($theseSites);
+                    
                 }
                 else {
                   // section assets
