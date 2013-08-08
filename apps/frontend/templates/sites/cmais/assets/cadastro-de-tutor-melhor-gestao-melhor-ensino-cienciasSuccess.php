@@ -498,7 +498,7 @@
             },
             rede_ensino_sp_tempo:{
               required: function() {
-                if ($('#vinculado_rede_ensino_sp').is(':checked')) {
+                if ($('#sim6').is(':checked')) {
                   return true;
                 }
                 else {
@@ -509,7 +509,7 @@
             },
             rede_ensino_sp_funcao:{
               required: function() {
-                if ($('#vinculado_rede_ensino_sp').is(':checked')) {
+                if ($('#sim6').is(':checked')) {
                   return true;
                 }
                 else {
