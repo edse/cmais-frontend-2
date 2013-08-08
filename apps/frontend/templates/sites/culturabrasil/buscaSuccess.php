@@ -70,7 +70,7 @@
                 <?php endif;?>
             <div class="row-fluid" style="margin-left:10px">
               <div class="span3" style="margin-left:0px">
-                <h6><?php if ($d->AssetContent->getHeadlineShort()): ?><?php echo $d->AssetContent->getHeadlineShort(); ?><?php endif; ?>&nbsp;</h6>
+                <h6><?php if ($d->AssetContent->getHeadlineShort()): ?><?php echo $d->AssetContent->getHeadlineShort(); ?><?php else: ?>Cultura Brasil<?php endif; ?></h6>
                 <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
                 <?php if ($related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb1")): ?>
                 <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb1") ?>" alt=" <?php echo $d->getTitle(); ?>" class="thumb">
