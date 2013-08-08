@@ -520,7 +520,7 @@ class _sectionActions extends sfActions
                     ->select('p.*')
                     ->from('Program p')
                     ->where('p.channel_id = ?', 5)
-                    ->execute(50);
+                    ->execute();
                     
                   foreach($programs as $p)
                     $theseSites[] = $p->getSiteId();
