@@ -513,7 +513,7 @@ class _sectionActions extends sfActions
               }else{
                 if( ($this->section->Site->getSlug() == "culturabrasil") && ($this->section->getSlug() == "busca") ) {
                   if($request->getParameter('term'))
-                    $this->busca = $request->getParameter('term');
+                    $this->term = $request->getParameter('term');
                                     
                   $this->assetsQuery = Doctrine_Query::create()
                     ->select('a.*')
@@ -522,8 +522,8 @@ class _sectionActions extends sfActions
                     ->andWhere('s.id = p.site_id')
                     ->andWhere('p.id = cp.program_id')
                     ->andWhere('cp.channel_id = ?', 5);
-                  if($this->busca != "")
-                    $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->busca.'%', '%'.$this->busca.'%'));
+                  if($this->term != "")
+                    $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->term.'%', '%'.$this->term.'%'));
                   $this->assetsQuery->andWhere('a.is_active = ?', 1)
                     ->orderBy('a.created_at desc');
                 }
