@@ -8,6 +8,12 @@
     <div id="capa-site"><!-- teste -->
       
       <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+      
+      <ul class="menutv">
+        <li><a href="http://cmais.com.br/aovivo" title="Assista à TV Cultura">Assista à TV Cultura</a></li>
+        <li class="center"><a href="javascript:;" id="controle-remoto" class="redesB" title="Ouça as rádios">Ouça as rádios</a></li> 
+        <li><a href="http://tvcultura.cmais.com.br" title="Confira à Programação da TV">Confira a Programação da TV</a></li>
+      </ul>
 
       <!-- MIOLO -->
       <div id="miolo">

@@ -145,3 +145,25 @@ body{background:url(../images/bg-tudo3a.jpg) repeat-x !important;}
 #revista .menu-editorias .mus a:hover {background-position:-137px -300px;}
 #conteudo-pagina {padding-top:0;}
 /* /novo*/
+
+/* botoes novos*/
+@font-face {
+    font-family: 'GothamMediumRegular';
+    src: url('/portal/css/fontes/gotham-medium-webfont.eot');
+    src: url('/portal/css/fontes/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/gotham-medium-webfont.woff') format('woff'),
+         url('/portal/css/fontes/gotham-medium-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/gotham-medium-webfont.svg#GothamMediumRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#menuFloat { display:none !important; }
+.menutv {    float: right; width: 970px;}
+.menutv li { background:#eee; border:3px solid #fff; float:left; width: 31.38%; }
+.menutv li a { color:#ff6633; text-transform:uppercase; text-align:center; font-family:'GothamMediumRegular', Arial, Helvetica, sans-serif; display:block; height:24px; line-height: 24px; }
+.menutv li.center { margin:0 2%; }
+.menutv li a:hover { text-decoration:none; }
+.menutv { *margin-top:-20px; *overflow:hidden;}
+#miolo { *margin-top:20px; }
+/* /botoes novos*/
