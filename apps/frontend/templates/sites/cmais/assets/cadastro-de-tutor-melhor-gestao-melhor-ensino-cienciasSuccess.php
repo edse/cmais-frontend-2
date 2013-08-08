@@ -417,7 +417,7 @@
               type: "POST",
               dataType: "text",
               data: $("#form-contato").serialize(),
-              url: "http://cmais.com.br/actions/cadastro-de-tutores-2/action.php",
+              url: "http://cmais.com.br/actions/cadastro-de-tutores/2013/melhor-gestao-melhor-ensino-ciencias/action.php",
               beforeSend: function(){
                 $('input#enviar').attr('disabled','disabled');
                 $(".msgAcerto").hide();
