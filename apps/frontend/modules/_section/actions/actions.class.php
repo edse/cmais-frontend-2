@@ -514,14 +514,24 @@ class _sectionActions extends sfActions
                 if( ($this->section->Site->getSlug() == "culturabrasil") && ($this->section->getSlug() == "busca") ) {
                   if($request->getParameter('term'))
                     $this->term = $request->getParameter('term');
+                  $theseSites[] = $this->section->Site->id();
+                  
+                  $programs = Doctrine_Query::create()
+                    ->select('p.*')
+                    ->from('Program p')
+                    ->where('p.channel_id = ?', 5)
+                    ->execute(50);
+                    
+                  foreach($programs as $p)
+                    $theseSites[] = $p->site_id;
+                  
                                     
                   $this->assetsQuery = Doctrine_Query::create()
                     ->select('a.*')
-                    ->from('Asset a, Site s, Program p, ChannelProgram cp')
-                    ->where('a.site_id = s.id')
-                    ->andWhere('s.id = p.site_id')
-                    ->andWhere('p.id = cp.program_id')
-                    ->andWhere('cp.channel_id = ?', 5);
+                    ->from('Asset a, SectionAsset sa')
+                    ->where('a.id = sa.asset_id')
+                    ->andWhereIn('a.site_id', $theseSites)
+                    ->andWhereIn('sa.section_id', array(2088));
                   if($this->term != "")
                     $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->term.'%', '%'.$this->term.'%'));
                   $this->assetsQuery->andWhere('a.is_active = ?', 1)
