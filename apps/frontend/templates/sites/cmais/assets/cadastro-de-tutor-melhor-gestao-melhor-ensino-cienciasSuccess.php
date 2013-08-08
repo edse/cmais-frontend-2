@@ -127,7 +127,7 @@
                       <label><input type="radio" name="sms" id="nao" value="nao" />Não</label>
                     </div>
 
-                    <div class="t1" style="clear:left; width: 100%; display:none" id="categoria_diretoria">
+                    <div class="t1" style="clear:left; width: 100%;" id="categoria_diretoria">
                       <label>DE - Diretoria de Ensino</label>
                       <select name="diretoria" id="diretoria" style="width:200px">
                         <option value="">---</option>
@@ -226,6 +226,11 @@
                     </div>
 
                     <!--span class="linhaFundo"></span-->
+
+                    <div class="linha t1 exc">
+                      <label>Endereço completo</label>
+                      <input type="text" name="endereco" id="endereco" style="width:626px" value="" />
+                    </div>
                     
                     <p class="enun">Formação Acadêmica</p>
                     <div class="linha t2">
@@ -280,7 +285,7 @@
                     
                     <!--span class="linhaFundo"></span-->
                     
-                    <p class="pergunta">4. Você tem experiência como Tutor on line?</p>
+                    <p class="pergunta">4. Você tem experiência como Tutor <em>on line</em></p>
                     <div class="linha t10">
                       
                       <label><input type="radio" name="experiente_tutor" id="sim4" value="sim" />Sim</label>
@@ -292,7 +297,7 @@
                     
                     <!--span class="linhaFundo"></span-->
                     
-                     <p class="pergunta">5. Você fez o curso Profort oferecido pela EFAP sobre Tutoria?</p>
+                     <p class="pergunta">5. Você fez o curso Profort (Programa de Formação para Tutores) oferecido pela EFAP sobre Tutoria?</p>
                     <div class="linha t10">
                       
                       <label><input type="radio" name="curso_tutoria_profort_efap" id="sim5" value="sim" />Sim</label>
@@ -352,6 +357,11 @@
                     </div>
 
                     <!--span class="linhaFundo"></span-->
+                    
+                    <div class="linha t1 exc">
+                      <input type="checkbox" name="concordo" id="concordo" style="width:auto" />Declaro que li e concordo os termos do <a href="http://cmais.com.br/cadastro-de-tutores-2013/edital-para-cadastro-formacao-e-contratacao-de-professores-tutores-online-para-curso-2-e-3-de-ciencias" title="EDITAL PARA CADASTRO, FORMAÇÃO E CONTRATAÇÃO DE  PROFESSORES TUTORES ONLINE PARA CURSO 2 E 3 DE CIÊNCIAS" target="_blank">edital</a>.
+                    </div>
+                    
                     
                     <div class="linha t3 codigo" id="captchaimage">
                       <label for="captcha">Confirma&ccedil;&atilde;o</label>
@@ -475,6 +485,9 @@
             diretoria:{
               required: true
             },
+            endereco:{
+              required: true
+            },
             formacao:{
               required: true
             },
@@ -519,6 +532,9 @@
               }
             },
             em_exercicio_ensino_fundamental:{
+              required: true
+            },
+            concordo:{
               required: true
             },
             captcha: {

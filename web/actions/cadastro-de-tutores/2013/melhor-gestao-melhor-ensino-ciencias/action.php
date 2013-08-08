@@ -20,6 +20,7 @@ if($_REQUEST["captcha"]) {
                       $_REQUEST["celular"] . "," .
                       $_REQUEST["sms"] . "," .
                       $_REQUEST["diretoria"] . "," .
+                      $_REQUEST["endereco"] . "," .
                       $_REQUEST["formacao"] . "," .
                       $_REQUEST["experiente_ava_efap"] . "," .
                       $_REQUEST["inscrito_serra_negra"] . "," .
@@ -29,7 +30,8 @@ if($_REQUEST["captcha"]) {
                       $_REQUEST["vinculado_rede_ensino_sp"] . "," .
                       $_REQUEST["rede_ensino_sp_tempo"] . "," .
                       $_REQUEST["rede_ensino_sp_funcao"] . "," .
-                      $_REQUEST["em_exercicio_ensino_fundamental"] . "\n";
+                      $_REQUEST["em_exercicio_ensino_fundamental"] . "," .
+                      $_REQUEST["concordo"] . "\n";
         $csvFp = fopen($csvFile, 'a+');
         if(fwrite($csvFp, $csvContent)){
           $txtFile = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino-ciencias/control/cpf.txt";
