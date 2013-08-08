@@ -59,7 +59,7 @@
       <div class="lista-assets span8" style="*margin-left:0px;">
         <?php if(count($pager) > 0): ?>
           <?php foreach($pager->getResults() as $d): ?>
-            <a href="<?php echo $d->getSlug(); ?>" title="<?php echo $d->getTitle(); ?>">
+            <a href="<?php echo $d->retriveUrl(); ?>" title="<?php echo $d->getTitle(); ?>">
                 <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
                 <?php if ($related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb1")): ?>
                 <div class="row-fluid titulo">
