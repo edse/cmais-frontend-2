@@ -315,7 +315,7 @@
                     </div>
                     
                     <!--span class="linhaFundo"></span-->
-                    <div id="haquantotempo" style="display:none">
+                    <div id="tempo" style="display:none; padding-left:40px">
                        <p class="pergunta">6.1. Há quanto tempo?</p>
                       <div class="linha t10">
                         <label><input type="radio" name="rede_ensino_sp_tempo" id="menosde2anos" value="menos de 2 anos" />menos de 2 anos</label>
