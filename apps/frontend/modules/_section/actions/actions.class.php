@@ -512,7 +512,9 @@ class _sectionActions extends sfActions
                   ->limit(20);
               }else{
                 if( ($this->section->Site->getSlug() == "culturabrasil") && ($this->section->getSlug() == "busca") ) {
-                  
+                  if($request->getParameter('term'))
+                    $this->busca = $request->getParameter('term');
+                                    
                   $this->assetsQuery = Doctrine_Query::create()
                     ->select('a.*')
                     ->from('Asset a, Site s, Program p, ChannelProgram cp')
