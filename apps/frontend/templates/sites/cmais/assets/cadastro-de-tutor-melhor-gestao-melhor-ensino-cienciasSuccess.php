@@ -106,7 +106,7 @@
                       <label>Data de Nascimento</label>
                       <input type="text" name="datanasc" id="datanasc" style="width:308px" />
                     </div>
-                    <div class="linha t2">
+                    <div class="linha t2" style="clear:left; width: 308px;">
                       <label>E-mail</label>
                       <input type="text" name="email" id="email" style="width:308px" />
                     </div>
@@ -315,29 +315,30 @@
                     </div>
                     
                     <!--span class="linhaFundo"></span-->
-
-                     <p class="pergunta">6.1. Há quanto tempo?</p>
-                    <div class="linha t10">
-                      <label><input type="radio" name="rede_ensino_sp_tempo" id="menosde2anos" value="menos de 2 anos" />menos de 2 anos</label>
+                    <div id="haquantotempo" style="display:none">
+                       <p class="pergunta">6.1. Há quanto tempo?</p>
+                      <div class="linha t10">
+                        <label><input type="radio" name="rede_ensino_sp_tempo" id="menosde2anos" value="menos de 2 anos" />menos de 2 anos</label>
+                      </div>
+                      <div class="linha t10">
+                        <label><input type="radio" name="rede_ensino_sp_tempo" id="de2a5anos" value="de 2 a 5 anos" />de 2 a 5 anos</label>
+                      </div>
+                      <div class="linha t10">
+                        <label><input type="radio" name="rede_ensino_sp_tempo" id="de6a10anos" value="de 6 a 10 anos" />de 6 a 10 anos</label>
+                      </div>
+                      <div class="linha t10">
+                        <label><input type="radio" name="rede_ensino_sp_tempo" id="maisde10anos" value="mais de 10 anos" />mais de 10 anos</label>
+                      </div>
                     </div>
-                    <div class="linha t10">
-                      <label><input type="radio" name="rede_ensino_sp_tempo" id="de2a5anos" value="de 2 a 5 anos" />de 2 a 5 anos</label>
-                    </div>
-                    <div class="linha t10">
-                      <label><input type="radio" name="rede_ensino_sp_tempo" id="de6a10anos" value="de 6 a 10 anos" />de 6 a 10 anos</label>
-                    </div>
-                    <div class="linha t10">
-                      <label><input type="radio" name="rede_ensino_sp_tempo" id="maisde10anos" value="mais de 10 anos" />mais de 10 anos</label>
-                    </div>
-                    
                     <!--span class="linhaFundo"></span-->
-
-                     <p class="pergunta">6.2. Na rede você exerce a função de:</p>
-                    <div class="linha t10">
-                      <label><input type="radio" name="rede_ensino_sp_funcao" id="pcnp" value="Professores Coordenadores do Núcleo Pedagógico (PCNP)" />Professores Coordenadores do Núcleo Pedagógico (PCNP)</label>
-                    </div>
-                    <div class="linha t10">
-                      <label><input type="radio" name="rede_ensino_sp_funcao" id="pc" value="Professor Coordenador (PC) da unidade escolar" />Professor Coordenador (PC) da unidade escolar</label>
+                    <div id="funcao" style="display:none">
+                      <p class="pergunta">6.2. Na rede você exerce a função de:</p>
+                      <div class="linha t10">
+                        <label><input type="radio" name="rede_ensino_sp_funcao" id="pcnp" value="Professores Coordenadores do Núcleo Pedagógico (PCNP)" />Professores Coordenadores do Núcleo Pedagógico (PCNP)</label>
+                      </div>
+                      <div class="linha t10">
+                        <label><input type="radio" name="rede_ensino_sp_funcao" id="pc" value="Professor Coordenador (PC) da unidade escolar" />Professor Coordenador (PC) da unidade escolar</label>
+                      </div>
                     </div>
 
                     <!--span class="linhaFundo"></span-->
@@ -379,7 +380,7 @@
             
           </div>
           <!-- /CAPA -->
-          
+            
         </div>
         <!-- /CONTEUDO PAGINA -->
         
@@ -396,15 +397,13 @@
     
     <script type="text/javascript">
       $(document).ready(function(){
-        /*
-        $('.disciplina').click(function() {
-          $("label[for='disciplina1'], label[for='disciplina2'], label[for='disciplina3']").hide();
-        });
-        $('.formacao').click(function() {
-          $("label[for='formacao1'], label[for='formacao2'], label[for='formacao3']").hide();
-        });
-        */
         
+        $('#sim6').click(function() {
+          $("#tempo, #funcao").show();
+        });
+        $('#nao6').click(function() {
+          $("#tempo, #funcao").hide();
+        });
         
         $("#cpf").mask("999.999.999-99");
         $("#rg").mask("9999999?9999");
