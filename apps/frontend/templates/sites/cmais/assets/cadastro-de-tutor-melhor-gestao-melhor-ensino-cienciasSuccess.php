@@ -249,7 +249,7 @@
                     
                     <!--p class="enun">Outras informações</p-->
 
-                    <p class="pergunta">1. Possui experiência no uso de AVA (Ambientes Virtuais de Aprendizagem) EFAP?</p>
+                    <p class="pergunta" style="margin-top:20px">1. Possui experiência no uso de AVA (Ambientes Virtuais de Aprendizagem) EFAP?</p>
                     <div class="linha t10">
                       
                       <label><input type="radio" name="experiente_ava_efap" id="sim1" value="sim" />Sim</label>
@@ -261,7 +261,7 @@
                     
                     <!--span class="linhaFundo"></span-->
                     
-                    <p class="pergunta">2. Você se inscreveu como Participante no Encontro Presencial centralizado a ser realizado pela EFAP/CGEB de 12 a 14 de agosto do ano de 2013, em Serra Negra?</p>
+                    <p class="pergunta" style="margin-top:20px">2. Você se inscreveu como Participante no Encontro Presencial centralizado a ser realizado pela EFAP/CGEB de 12 a 14 de agosto do ano de 2013, em Serra Negra?</p>
                     <div class="linha t10">
                       
                       <label><input type="radio" name="inscrito_serra_negra" id="sim2" value="sim" />Sim</label>
@@ -273,7 +273,7 @@
 
                     <!--span class="linhaFundo"></span--> 
                     
-                    <p class="pergunta">3. Teve ou tem contrato de qualquer espécie (Física, jurídica ou CLT) vigente com a FPA (Fundação Padre Anchieta – TV Cultura), mesmo que já encerrado nos últimos 06 meses?</p>
+                    <p class="pergunta" style="margin-top:20px">3. Teve ou tem contrato de qualquer espécie (Física, jurídica ou CLT) vigente com a FPA (Fundação Padre Anchieta – TV Cultura), mesmo que já encerrado nos últimos 06 meses?</p>
                     <div class="linha t10">
                       
                       <label><input type="radio" name="contrato_fpa" id="sim3" value="sim" />Sim</label>
@@ -285,7 +285,7 @@
                     
                     <!--span class="linhaFundo"></span-->
                     
-                    <p class="pergunta">4. Você tem experiência como Tutor <em>on line</em></p>
+                    <p class="pergunta" style="margin-top:20px">4. Você tem experiência como Tutor <em>on line</em></p>
                     <div class="linha t10">
                       
                       <label><input type="radio" name="experiente_tutor" id="sim4" value="sim" />Sim</label>
@@ -297,7 +297,7 @@
                     
                     <!--span class="linhaFundo"></span-->
                     
-                     <p class="pergunta">5. Você fez o curso Profort (Programa de Formação para Tutores) oferecido pela EFAP sobre Tutoria?</p>
+                     <p class="pergunta" style="margin-top:20px">5. Você fez o curso Profort (Programa de Formação para Tutores) oferecido pela EFAP sobre Tutoria?</p>
                     <div class="linha t10">
                       
                       <label><input type="radio" name="curso_tutoria_profort_efap" id="sim5" value="sim" />Sim</label>
@@ -309,7 +309,7 @@
                     
                     <!--span class="linhaFundo"></span-->
 
-                     <p class="pergunta">6. É Profissional vinculado a Rede de Ensino do Estado de São Paulo?</p>
+                     <p class="pergunta" style="margin-top:20px">6. É Profissional vinculado a Rede de Ensino do Estado de São Paulo?</p>
                     <div class="linha t10">
                       
                       <label><input type="radio" name="vinculado_rede_ensino_sp" id="sim6" value="sim" />Sim</label>
@@ -348,7 +348,7 @@
 
                     <!--span class="linhaFundo"></span-->
 
-                     <p class="pergunta">7. Esta atualmente em exercício como Professor do ensino Fundamental – ANOS FINAIS na Rede de Ensino do estado de São Paulo, incluindo EJA?</p>
+                     <p class="pergunta" style="margin-top:20px">7. Esta atualmente em exercício como Professor do ensino Fundamental – ANOS FINAIS na Rede de Ensino do estado de São Paulo, incluindo EJA?</p>
                     <div class="linha t10">
                       <label><input type="radio" name="em_exercicio_ensino_fundamental" id="sim7" value="sim" />Sim</label>
                     </div>
