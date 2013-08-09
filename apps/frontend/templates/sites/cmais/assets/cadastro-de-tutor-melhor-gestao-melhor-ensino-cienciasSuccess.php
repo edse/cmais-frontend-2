@@ -104,7 +104,7 @@
                     </div>
                     <div class="linha t2">
                       <label>Data de Nascimento</label>
-                      <input type="text" name="datanasc" id="datanasc" style="width:308px" />
+                      <input type="text" name="datanasc" id="datanasc" style="width:149px" />
                     </div>
                     <div class="linha t2" style="clear:left; width: 308px;">
                       <label>E-mail</label>
@@ -386,7 +386,7 @@
                         <label><input type="radio" name="rede_ensino_sp_tempo" id="de2a5anos" value="de 2 a 5 anos" />de 2 a 5 anos</label>
                       </div>
                       <div class="linha t11" style="clear:both; margin:0;">
-                        <label><input type="radio" name="rede_ensino_sp_tempo" id="de6a10anos" value="de 6 a 10 anos" />de 6 a 10 anos</label>
+                        <label><input type="radio" name="rede_ensino_sp_tempo" id="de6a10anos" value="de 6 a 10 anos" />de 5 a 10 anos</label>
                       </div>
                       <div class="linha t11" style="clear:both; margin:0;">
                         <label><input type="radio" name="rede_ensino_sp_tempo" id="maisde10anos" value="mais de 10 anos" />mais de 10 anos</label>
@@ -405,7 +405,7 @@
 
                     <!--span class="linhaFundo"></span-->
 
-                     <p class="pergunta" style="margin-top:20px">7. Esta atualmente em exercício como Professor do ensino Fundamental – ANOS FINAIS na Rede de Ensino do estado de São Paulo, incluindo EJA?</p>
+                     <p class="pergunta" style="margin-top:20px">7. Está atualmente em exercício como Professor do ensino Fundamental – ANOS FINAIS na Rede de Ensino do estado de São Paulo, incluindo EJA?</p>
                     <div class="linha t10">
                       <label><input type="radio" name="em_exercicio_ensino_fundamental" id="sim7" value="sim" />Sim</label>
                     </div>
