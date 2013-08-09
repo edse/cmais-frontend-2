@@ -308,7 +308,10 @@ class mainActions extends sfActions
         $this->forward('_section', 'index');
         die();
       }
-       * */
+      */
+      $this->getRequest()->setParameter('object', $section);
+      $this->forward('_section', 'index');
+      die();
     }
 
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
