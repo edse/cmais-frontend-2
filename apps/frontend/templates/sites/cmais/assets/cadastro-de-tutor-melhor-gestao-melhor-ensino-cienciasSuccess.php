@@ -405,7 +405,7 @@
 
                     <!--span class="linhaFundo"></span-->
 
-                     <p class="pergunta" style="margin-top:20px">7. Esta atualmente em exercício como Professor do ensino Fundamental – ANOS FINAIS na Rede de Ensino do estado de São Paulo, incluindo EJA?</p>
+                     <p class="pergunta" style="margin-top:20px">7. Está atualmente em exercício como Professor do ensino Fundamental – ANOS FINAIS na Rede de Ensino do estado de São Paulo, incluindo EJA?</p>
                     <div class="linha t10">
                       <label><input type="radio" name="em_exercicio_ensino_fundamental" id="sim7" value="sim" />Sim</label>
                     </div>
