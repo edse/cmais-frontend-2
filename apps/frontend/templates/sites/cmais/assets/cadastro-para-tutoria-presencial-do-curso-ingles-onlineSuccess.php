@@ -38,9 +38,8 @@
                   <div class="msgAcerto" style="display:none; min-height: 80px; float:left;" id="statusMsg_0">
                     <span class="alerta"></span>
                     <div class="boxMsg">
-                      <p class="aviso">Obrigado! Seu cadastro foi efetuado com sucesso.</p>
-                      <p>Uma mensagem foi enviada em seu e-mail!</p>
-                      <p>Aguarde que em breve entraremos em contato para maiores informações!</p>
+                      <p class="aviso">Obrigado! Seu pré-cadastro foi efetuado com sucesso.</p>
+                      <p>O seu pré-cadastro foi realizado, para a efetivação e participação do Processo de Seleção de Tutores para o Curso 2 e 3 de Ciências você precisa entregar a documentação dentro do prazo e local descrito no Edital.</p>
                     </div>
                     <hr />
                   </div>

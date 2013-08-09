@@ -42,10 +42,12 @@
             Resultado da Busca
           </h1>
           <h2 class="encontradas">
-          <?php if(count($pager) > 0): ?>
-            Foram encontrados <?php echo count($pager) ?> resultados com a expressão “<?php if (isset($term)) echo $term ?>”
-          <?php else: ?>
-            Sua pesquisa - <?php if (isset($term)) echo $term ?> - não encontrou nenhum documento correspondente
+          <?php if(isset($term)): ?>
+            <?php if(count($pager) > 0): ?>
+              Foram encontrados <?php echo count($pager) ?> resultados com a expressão “<?php if (isset($term)) echo $term ?>”
+            <?php else: ?>
+              Sua pesquisa - <?php if (isset($term)) echo $term ?> - não encontrou nenhum documento correspondente
+            <?php endif; ?>
           <?php endif; ?>
           </h2>
         </div>
@@ -68,7 +70,7 @@
                 <?php endif;?>
             <div class="row-fluid" style="margin-left:10px">
               <div class="span3" style="margin-left:0px">
-                <h6><?php if ($d->AssetContent->getHeadlineShort()): ?><?php echo $d->AssetContent->getHeadlineShort(); ?><?php endif; ?>&nbsp;</h6>
+                <h6><?php if ($d->AssetContent->getHeadlineShort()): ?><?php echo $d->AssetContent->getHeadlineShort(); ?><?php else: ?>Cultura Brasil<?php endif; ?></h6>
                 <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
                 <?php if ($related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb1")): ?>
                 <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb1") ?>" alt=" <?php echo $d->getTitle(); ?>" class="thumb">

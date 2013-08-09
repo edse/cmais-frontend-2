@@ -293,14 +293,6 @@ class mainActions extends sfActions
       $this->forward('_section', 'index');
       die();
     }
-    /*
-    elseif(($param1 == "culturabrasil")&&($param2 == "busca")){
-      $section = $this->site = Doctrine::getTable('Section')->findOneById(2539);
-      $this->getRequest()->setParameter('object', $section);
-      $this->forward('_section', 'index');
-      die();
-    }
-     * */
     elseif(($param1 == "culturabrasil")&&($param2 == "programas")&&($param3 != "")){
       $site = $this->site = Doctrine::getTable('Site')->findOneBySlug($param3);
       $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, "arquivo");

@@ -1031,7 +1031,7 @@ class _assetActions extends sfActions
           }
         }
         elseif(($this->site->getType() == "Portal" || $this->site->getType() == 2)&&($this->site->getSlug() != "tvratimbum")){
-          if(in_array($this->asset->getId(), array(121120, 121117, 120858, 121146, 121145, 122440, 127638,127974,130827,131375,131368))){
+          if(in_array($this->asset->getId(), array(121120, 121117, 120858, 121146, 121145, 122440, 127638,127974,130827,131375,131368,131702))){
             if($debug) print "<br>4-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/cmais/tutores-content'; 
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/cmais/tutores-content');
           }

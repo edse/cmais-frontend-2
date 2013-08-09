@@ -514,14 +514,26 @@ class _sectionActions extends sfActions
                 if( ($this->section->Site->getSlug() == "culturabrasil") && ($this->section->getSlug() == "busca") ) {
                   if($request->getParameter('term'))
                     $this->term = $request->getParameter('term');
+                  
+                  $deniedSections = array(1971,1991,1965,1966,1967,2540); // seções que não importam pra busca
+                  
+                  $programs = Doctrine_Query::create()
+                    ->select('p.*')
+                    ->from('Program p')
+                    ->where('p.channel_id = ?', 5)
+                    ->execute();
+                    
+                  $allowedSites[] = $this->section->Site->id; // cultura brasil entra na busca
+                  foreach($programs as $p) {
+                    $allowedSites[] = $p->getSiteId(); // programas do cultura brasil entram na busca
+                  }
                                     
                   $this->assetsQuery = Doctrine_Query::create()
                     ->select('a.*')
-                    ->from('Asset a, Site s, Program p, ChannelProgram cp')
-                    ->where('a.site_id = s.id')
-                    ->andWhere('s.id = p.site_id')
-                    ->andWhere('p.id = cp.program_id')
-                    ->andWhere('cp.channel_id = ?', 5);
+                    ->from('Asset a, SectionAsset sa')
+                    ->where('a.id = sa.asset_id')
+                    ->andWhereIn('a.site_id', $allowedSites)
+                    ->andWhereNotIn('sa.section_id', $deniedSections);
                   if($this->term != "")
                     $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->term.'%', '%'.$this->term.'%'));
                   $this->assetsQuery->andWhere('a.is_active = ?', 1)
