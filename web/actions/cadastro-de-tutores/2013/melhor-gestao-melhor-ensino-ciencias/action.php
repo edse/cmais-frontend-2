@@ -47,7 +47,6 @@ if($_REQUEST["captcha"]) {
           $txtContent = $_REQUEST["cpf"] . "\n";
           $txtFp = fopen($txtFile, 'a+');
           fwrite($txtFp, $txtContent);
-          die("0");
           
           //envia email de confirmacao para inscrito e para tutoria
           $email = strip_tags($_REQUEST['email']);
