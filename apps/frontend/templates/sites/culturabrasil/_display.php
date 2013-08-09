@@ -7,7 +7,7 @@
           </div>
           <a href="<?php echo $displays[0]->retriveUrl(); ?>" title="<?php echo $displays[0]->getTitle(); ?>">
             <h2><?php echo $displays[0]->getTitle(); ?></h2>
-            <?php echo count($related)?>
+            <?php echo count($related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb2"))?>
             <?php
             /*
             <?php if($related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb2")): ?>
