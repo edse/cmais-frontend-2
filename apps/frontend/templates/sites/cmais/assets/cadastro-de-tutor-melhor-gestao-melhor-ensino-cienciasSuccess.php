@@ -386,7 +386,7 @@
                         <label><input type="radio" name="rede_ensino_sp_tempo" id="de2a5anos" value="de 2 a 5 anos" />de 2 a 5 anos</label>
                       </div>
                       <div class="linha t11" style="clear:both; margin:0;">
-                        <label><input type="radio" name="rede_ensino_sp_tempo" id="de6a10anos" value="de 6 a 10 anos" />de 6 a 10 anos</label>
+                        <label><input type="radio" name="rede_ensino_sp_tempo" id="de6a10anos" value="de 6 a 10 anos" />de 5 a 10 anos</label>
                       </div>
                       <div class="linha t11" style="clear:both; margin:0;">
                         <label><input type="radio" name="rede_ensino_sp_tempo" id="maisde10anos" value="mais de 10 anos" />mais de 10 anos</label>
