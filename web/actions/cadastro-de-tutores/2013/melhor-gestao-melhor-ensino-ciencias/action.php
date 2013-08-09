@@ -4,9 +4,9 @@
 //$rg = str_replace(array('.','-'),"",$_REQUEST["rg"]);
 
 if($_REQUEST["captcha"]) {
-  if($cpf){
+  if($_REQUEST["cpf"]){
     if(date("Y-m-d H:i:s") < "2014-01-01 00:00:00") {
-      if(exec('grep "^'.$cpf.'$" /var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino-ciencias/control/cpf.txt')){
+      if(exec('grep "^'.$_REQUEST["cpf"].'$" /var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino-ciencias/control/cpf.txt')){
         die("3");
       }
       else {
