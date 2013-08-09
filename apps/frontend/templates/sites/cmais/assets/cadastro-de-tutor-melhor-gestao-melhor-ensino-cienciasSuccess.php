@@ -127,9 +127,9 @@
                       <label><input type="radio" name="sms" id="nao" value="nao" />Não</label>
                     </div>
 
-                    <div class="t1" style="clear:left; width: 100%;" id="categoria_diretoria">
-                      <label>DE - Diretoria de Ensino</label>
-                      <select name="diretoria" id="diretoria" style="width:200px">
+                    <div style="clear:left; width: 100%;font-weight:bold; text-transform: uppercase;margin-bottom: 20px;float: left;font-size:11px" id="categoria_diretoria">
+                      <label style="clear: both;float: left;font-size: 12px;">DE - Diretoria de Ensino</label>
+                      <select name="diretoria" id="diretoria" style="width:200px;clear: both;float: left;">
                         <option value="">---</option>
                         <option value="ADAMANTINA">ADAMANTINA</option>
                         <option value="AMERICANA">AMERICANA</option>
@@ -227,7 +227,7 @@
 
                     <!--span class="linhaFundo"></span-->
 
-                    <div class="linha t1 exc">
+                    <div class="linha t1 exc" style="margin-bottom:40px">
                       <label>Endereço completo</label>
                       <input type="text" name="endereco" id="endereco" style="width:626px" value="" />
                     </div>
