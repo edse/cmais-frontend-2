@@ -296,9 +296,9 @@ class mainActions extends sfActions
     elseif(($param1 == "culturabrasil")&&($param2 == "programas")&&($param3 != "")){
       $site = $this->site = Doctrine::getTable('Site')->findOneBySlug($param3);
       $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, "arquivo");
-      /*
-      if($param4) {
-        $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param4);
+      
+      if($param4 == "arquivo") {
+        $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param5);
         $this->getRequest()->setParameter('object', $asset);
         $this->forwardObject($asset);
         die();
@@ -308,10 +308,10 @@ class mainActions extends sfActions
         $this->forward('_section', 'index');
         die();
       }
-      */
+      /*
       $this->getRequest()->setParameter('object', $section);
       $this->forward('_section', 'index');
-      die();
+      die();*/
     }
 
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
