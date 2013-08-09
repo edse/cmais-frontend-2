@@ -227,11 +227,68 @@
 
                     <!--span class="linhaFundo"></span-->
 
-                    <div class="linha t1 exc" style="margin-bottom:40px">
-                      <label>Endereço completo</label>
-                      <input type="text" name="endereco" id="endereco" style="width:626px" value="" />
+
+                    <div class="linha t1" style="clear:left; margin-top: 30px; width: 84%; float:left">
+                      <label>Endereço residencial</label>
+                      <input type="text" name="endereco" id="endereco" style="width: 100%" />
                     </div>
-                    
+                    <div class="linha t2" style="float:left; width: 12%; margin-top: 30px">
+                      <label>Número</label>
+                      <input type="text" name="numero" id="numero" style="width:100%" />
+                    </div>
+                    <div class="linha t2" style="clear:left; width: 33%">
+                      <label>Complemento</label>
+                      <input type="text" name="complemento" id="complemento" style="width:100%" />
+                    </div>
+                    <div class="linha t2" style="width:63%">
+                      <label>Bairro</label>
+                      <input type="text" name="bairro" id="bairro" style="width: 100%" />
+                    </div>
+                    <div class="linha t2" style="clear:left; width: 12%">
+                      <label>CEP</label>
+                      <input type="text" name="cep" id="cep" style="width:100%" />
+                    </div>
+                    <div class="linha t2" style="width:72%">
+                      <label>Cidade</label>
+                      <input type="text" name="cidade" id="cidade" style="width:100%" />
+                    </div>
+                    <div class="linha t2" style="width:11%">
+                      <label>Estado</label>
+                      <br />
+                      <select class="estado" name="estado" id="estado" style="width:100%">
+                        <option value="" selected="selected">--</option>
+                        <option value="Acre">AC</option>
+                        <option value="Alagoas">AL</option>
+                        <option value="Amazonas">AM</option>
+                        <option value="Amap&aacute;">AP</option>
+                        <option value="Bahia">BA</option>
+                        <option value="Cear&aacute;">CE</option>
+                        <option value="Distrito Federal">DF</option>
+                        <option value="Espirito Santo">ES</option>
+                        <option value="Goi&aacute;s">GO</option>
+                        <option value="Maranh&atilde;o">MA</option>
+                        <option value="Minas Gerais">MG</option>
+                        <option value="Mato Grosso do Sul">MS</option>
+                        <option value="Mato Grosso">MT</option>
+                        <option value="Par&aacute;">PA</option>
+                        <option value="Para&iacute;ba">PB</option>
+                        <option value="Pernambuco">PE</option>
+                        <option value="Piau&iacute;">PI</option>
+                        <option value="Paran&aacute;">PR</option>
+                        <option value="Rio de Janeiro">RJ</option>
+                        <option value="Rio Grande do Norte">RN</option>
+                        <option value="Rond&ocirc;nia">RO</option>
+                        <option value="Roraima">RR</option>
+                        <option value="Rio Grande do Sul">RS</option>
+                        <option value="Santa Catarina">SC</option>
+                        <option value="Sergipe">SE</option>
+                        <option value="S&atilde;o Paulo">SP</option>
+                        <option value="Tocantins">TO</option>
+                    </select>
+                    </div>
+
+
+
                     <p class="enun">Formação Acadêmica</p>
                     <div class="linha t2">
                       <label>Escolha</label>
