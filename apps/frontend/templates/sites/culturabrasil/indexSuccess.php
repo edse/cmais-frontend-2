@@ -52,11 +52,11 @@
       <!--coluna esquerda -->
       <div class="span4" style="margin-left: 0;">
         
-        <?php if(isset($displays["destaque-1"])) include_partial_from_folder('sites/culturafm', 'global/display', array('displays' => $displays["destaque-1"])) ?>
+        <?php if(isset($displays["destaque-1"])) include_partial_from_folder('sites/culturabrasil', 'global/display', array('displays' => $displays["destaque-1"])) ?>
         
-        <?php if(isset($displays["destaque-2"])) include_partial_from_folder('sites/culturafm', 'global/display', array('displays' => $displays["destaque-2"])) ?>
+        <?php if(isset($displays["destaque-2"])) include_partial_from_folder('sites/culturabrasil', 'global/display', array('displays' => $displays["destaque-2"])) ?>
         
-        <?php if(isset($displays["destaque-3"])) include_partial_from_folder('sites/culturafm', 'global/display', array('displays' => $displays["destaque-3"])) ?>
+        <?php if(isset($displays["destaque-3"])) include_partial_from_folder('sites/culturabrasil', 'global/display', array('displays' => $displays["destaque-3"])) ?>
         
       </div>  
       <!--/coluna esquerda -->
