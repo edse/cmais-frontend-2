@@ -252,7 +252,7 @@
                       <label>Cidade</label>
                       <input type="text" name="cidade" id="cidade" style="width:100%" />
                     </div>
-                    <div class="linha t2" style="width:11%">
+                    <div class="linha t2" style="width:11%; margin-bottom: 40px">
                       <label>Estado</label>
                       <br />
                       <select class="estado" name="estado" id="estado" style="width:100%">
