@@ -198,6 +198,8 @@
             window.location.href = "javascript:;";
             if(data == "1") {
               $('.box.msg, .msgAcerto').show();
+              $("#form-selecao").clearForm();
+              $("fieldset, #enviar").hide();
               $('html, body').animate({
                 scrollTop: $('.navbar-inner').offset().top
               }, "slow");

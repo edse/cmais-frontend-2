@@ -7,8 +7,8 @@
           </div>
           <a href="<?php echo $displays[0]->retriveUrl(); ?>" title="<?php echo $displays[0]->getTitle(); ?>">
             <h2><?php echo $displays[0]->getTitle(); ?></h2>
-            <?php if($related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb2")): ?>
-            <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb2") ?>" alt="<?php echo $displays[0]->getTitle(); ?>" class="big">
+            <?php if($displays[0]->retriveImageUrlByImageUsage("culturabrasil-thumb2")): ?>
+            <img src="<?php echo $displays[0]->retriveImageUrlByImageUsage("culturabrasil-thumb2") ?>" alt="<?php echo $displays[0]->getTitle(); ?>" class="big">
             <?php endif; ?>
             <p><?php echo $displays[0]->getDescription(); ?></p>
           </a>
