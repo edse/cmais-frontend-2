@@ -477,6 +477,7 @@
         $("#celular").mask("(99) 99999999?9");
         $("#telefone").mask("(99) 99999999");
         $("#datanasc").mask("99/99/9999");
+        $("#cep").mask("99999-999");
         
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
@@ -542,7 +543,21 @@
             diretoria:{
               required: true
             },
-            endereco:{
+            endereco: {
+              required: true,
+              minlength: 5
+            },
+            numero: {
+              required: true
+            },
+            cep: {
+              required: true
+            },
+            cidade: {
+              required: true,
+              minlength: 2
+            },
+            estado:{
               required: true
             },
             formacao:{
