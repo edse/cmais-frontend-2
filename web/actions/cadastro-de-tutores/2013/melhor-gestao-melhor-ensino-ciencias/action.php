@@ -31,7 +31,7 @@ if($_REQUEST["captcha"]) {
                       $_REQUEST["rede_ensino_sp_tempo"] . "," .
                       $_REQUEST["rede_ensino_sp_funcao"] . "," .
                       $_REQUEST["em_exercicio_ensino_fundamental"] . "," .
-                      $_REQUEST["concordo"] . "\n";
+                      (($_REQUEST['concordo'] == "on") ? "sim" : "não") . "\n";
         $csvFp = fopen($csvFile, 'a+');
         if(fwrite($csvFp, $csvContent)){
           $txtFile = "/var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino-ciencias/control/cpf.txt";
