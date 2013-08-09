@@ -358,8 +358,8 @@
 
                     <!--span class="linhaFundo"></span-->
                     
-                    <div class="linha t1 exc" style="margin-top:40px">
-                      <input type="checkbox" name="concordo" id="concordo" style="width:auto" />Declaro que li e concordo os termos do <a href="http://cmais.com.br/cadastro-de-tutores-2013/edital-para-cadastro-formacao-e-contratacao-de-professores-tutores-online-para-curso-2-e-3-de-ciencias" title="EDITAL PARA CADASTRO, FORMAÇÃO E CONTRATAÇÃO DE  PROFESSORES TUTORES ONLINE PARA CURSO 2 E 3 DE CIÊNCIAS" target="_blank">edital</a>.
+                    <div class="linha t1 exc" style="margin-top:40px;font-size: 12px;font-weight: bold;text-transform: uppercase;line-height: 26px;">
+                      <input type="checkbox" name="concordo" id="concordo" style="width:auto;float: left;" />Declaro que li e concordo os termos do <a href="http://cmais.com.br/cadastro-de-tutores-2013/edital-para-cadastro-formacao-e-contratacao-de-professores-tutores-online-para-curso-2-e-3-de-ciencias" title="EDITAL PARA CADASTRO, FORMAÇÃO E CONTRATAÇÃO DE  PROFESSORES TUTORES ONLINE PARA CURSO 2 E 3 DE CIÊNCIAS" target="_blank" style="font-size: 12px;color: #ff6625;">edital</a>.
                     </div>
                     
                     
