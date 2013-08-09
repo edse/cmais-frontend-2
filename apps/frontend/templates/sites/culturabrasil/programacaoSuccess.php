@@ -64,7 +64,7 @@
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse<?php echo $k ?>">
                 <span class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?></span>
                 <span class="programa-grade"><?php echo $d->Program->getTitle() ?></span>
-                <i class="seta-grade<?php if($now): ?> cima<?php else: ?> baixo<?php endif; ?>"></i>
+                <i class="seta-grade<?php if($now): ?> baixo<?php else: ?> cima<?php endif; ?>"></i>
               </a>
               <!--linha pontilhada-->
               <div class="borda-pontilhada"></div>
