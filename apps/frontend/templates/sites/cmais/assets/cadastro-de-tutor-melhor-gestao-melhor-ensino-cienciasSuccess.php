@@ -358,12 +358,12 @@
 
                     <!--span class="linhaFundo"></span-->
                     
-                    <div class="linha t1 exc">
+                    <div class="linha t1 exc" style="margin-top:40px">
                       <input type="checkbox" name="concordo" id="concordo" style="width:auto" />Declaro que li e concordo os termos do <a href="http://cmais.com.br/cadastro-de-tutores-2013/edital-para-cadastro-formacao-e-contratacao-de-professores-tutores-online-para-curso-2-e-3-de-ciencias" title="EDITAL PARA CADASTRO, FORMAÇÃO E CONTRATAÇÃO DE  PROFESSORES TUTORES ONLINE PARA CURSO 2 E 3 DE CIÊNCIAS" target="_blank">edital</a>.
                     </div>
                     
                     
-                    <div class="linha t3 codigo" id="captchaimage">
+                    <div class="linha t3 codigo" id="captchaimage" style="margin-top:40px">
                       <label for="captcha">Confirma&ccedil;&atilde;o</label>
                       <br />
                       <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
