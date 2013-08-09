@@ -104,7 +104,7 @@
                     </div>
                     <div class="linha t2">
                       <label>Data de Nascimento</label>
-                      <input type="text" name="datanasc" id="datanasc" style="width:308px" />
+                      <input type="text" name="datanasc" id="datanasc" style="width:149px" />
                     </div>
                     <div class="linha t2" style="clear:left; width: 308px;">
                       <label>E-mail</label>
