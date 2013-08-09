@@ -21,6 +21,12 @@ if($_REQUEST["captcha"]) {
                       $_REQUEST["sms"] . "," .
                       $_REQUEST["diretoria"] . "," .
                       $_REQUEST["endereco"] . "," .
+                      $_REQUEST["numero"] . "," .
+                      $_REQUEST["bairro"] . "," .
+                      $_REQUEST["complemento"] . "," .
+                      $_REQUEST["cep"] . "," .
+                      $_REQUEST["cidade"] . "," .
+                      $_REQUEST["estado"] . "," .
                       $_REQUEST["formacao"] . "," .
                       $_REQUEST["experiente_ava_efap"] . "," .
                       $_REQUEST["inscrito_serra_negra"] . "," .
