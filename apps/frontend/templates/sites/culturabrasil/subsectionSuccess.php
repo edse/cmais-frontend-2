@@ -68,7 +68,6 @@ if(isset($pager)){
         <?php if(count($pager) > 0): ?>
           <?php foreach($pager->getResults() as $d): ?>
             <a href="<?php echo $d->retriveUrl(); ?>" title=" <?php echo $d->getTitle(); ?>">
-                <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
                 <?php if ($related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb1")): ?>
                 <div class="row-fluid titulo">
                   
