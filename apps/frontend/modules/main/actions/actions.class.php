@@ -306,7 +306,6 @@ class mainActions extends sfActions
         }
         else {
           $this->getRequest()->setParameter('object', $section);
-          $parm2Object = $this->parseWithObject($param2, $parm1Object);          
           $this->forward('_section', 'index');
           die();
         }
