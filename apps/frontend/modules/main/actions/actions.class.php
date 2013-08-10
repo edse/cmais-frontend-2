@@ -306,15 +306,17 @@ class mainActions extends sfActions
         }
         else {
           $this->getRequest()->setParameter('object', $section);
+          $parm2Object = $this->parseWithObject($param2, $parm1Object);          
           $this->forward('_section', 'index');
           die();
         }
       }
+      /*
       else {
         $this->getRequest()->setParameter('object', $section);
         $this->forward('_section', 'index');
         die();
-      }
+      }*/
     }
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
       if($param1 == "fpa")
