@@ -355,7 +355,6 @@ class mainActions extends sfActions
             print "<br>main: 2>>".get_class($parm2Object).">>".$parm2Object->id;
           if(!$param3) {
             if ($parm1Object->slug == "culturabrasil") {
-              $this->getRequest()->setParameter('object', $parm2Object);
               $this->forward('_section', 'index');
             }
             else {
