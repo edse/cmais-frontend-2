@@ -296,7 +296,7 @@ class mainActions extends sfActions
       }
       elseif($param2 == "programas" && $param3 != "") {
         $site = $this->site = Doctrine::getTable('Site')->findOneBySlug($param3);
-        $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, "arquivo");
+        //$section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, "arquivo");
         
         if($param4 == "arquivo") {
           $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param5);
@@ -304,11 +304,12 @@ class mainActions extends sfActions
           $this->forwardObject($asset);
           die();
         }
+        /*
         else {
           $this->getRequest()->setParameter('object', $section);
           $this->forward('_section', 'index');
           die();
-        }
+        }*/
       }
       /*
       else {
