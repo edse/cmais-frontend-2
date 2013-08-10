@@ -352,6 +352,11 @@ class mainActions extends sfActions
         if($request->getParameter('debug') != "")
           print "<br>parseWithObject >>".$param2." - ".$param1;
         if($parm2Object){
+          if ($parm1Object->slug == "culturabrasil") {
+            $this->getRequest()->setParameter('object', $parm2Object);
+            $this->forward('_section', 'index');
+          }
+          
           if($request->getParameter('debug') != "")
             print "<br>main: 2>>".get_class($parm2Object).">>".$parm2Object->id;
           if(!$param3)
@@ -361,11 +366,6 @@ class mainActions extends sfActions
               $this->getRequest()->setParameter('object', $parm2Object);
               $this->forward('_section', 'index');
             }
-            if ($parm1Object->slug == "culturabrasil") {
-              $this->getRequest()->setParameter('object', $parm2Object);
-              $this->forward('_section', 'index');
-            }
-            
             $parm3Object = $this->parseWithObject($param3, $parm2Object);
             if($parm3Object){
               if($request->getParameter('debug') != "")
