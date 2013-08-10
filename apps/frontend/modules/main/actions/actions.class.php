@@ -348,6 +348,11 @@ class mainActions extends sfActions
         $this->forwardObject($parm1Object);
       }
       else{
+        if ($parm1Object->slug == "culturabrasil") {
+          $this->getRequest()->setParameter('object', $parm1Object);
+          $this->forward('_section', 'index');
+        }
+        
         $parm2Object = $this->parseWithObject($param2, $parm1Object);
         if($request->getParameter('debug') != "")
           print "<br>parseWithObject >>".$param2." - ".$param1;
