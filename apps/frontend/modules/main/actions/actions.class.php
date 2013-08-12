@@ -287,6 +287,7 @@ class mainActions extends sfActions
       $this->forward('_section', 'index');
       die();
     }
+    /*
     elseif($param1 == "culturabrasil"){
       if($param2 == "especiais"){
         $section = $this->site = Doctrine::getTable('Section')->findOneById(1929);
@@ -311,14 +312,13 @@ class mainActions extends sfActions
         }
       }
     }
-    /*
+     * */
     elseif($param1 == "culturabrasil" && $param2 == "especiais"){
       $section = $this->site = Doctrine::getTable('Section')->findOneById(1929);
       $this->getRequest()->setParameter('object', $section);
       $this->forward('_section', 'index');
       die();
-    } 
-     * */   
+    }    
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
       if($param1 == "fpa")
         $param1 = "sic";
@@ -349,6 +349,7 @@ class mainActions extends sfActions
         $this->forwardObject($parm1Object);
       }
       else{
+        
         $parm2Object = $this->parseWithObject($param2, $parm1Object);
         if($request->getParameter('debug') != "")
           print "<br>parseWithObject >>".$param2." - ".$param1;
@@ -356,12 +357,11 @@ class mainActions extends sfActions
           if($request->getParameter('debug') != "")
             print "<br>main: 2>>".get_class($parm2Object).">>".$parm2Object->id;
           if(!$param3) {
-            /*
             if($parm1Object->slug == "culturabrasil" && get_class($parm2Object) == "Site") {
               header("Location: http://culturabrasil.cmais.br/programas/".$param2);
               die();
             }
-            else*/
+            else
               $this->forwardObject($parm2Object);
           }
           else{
