@@ -310,7 +310,6 @@ class mainActions extends sfActions
           die();
         }
          */
-        if($param)
         $this->getRequest()->setParameter('object', $section);
         $this->forward('_section', 'index');
         die();
