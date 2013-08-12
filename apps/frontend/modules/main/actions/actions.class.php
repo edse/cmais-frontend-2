@@ -375,7 +375,7 @@ class mainActions extends sfActions
               $this->forward('_section', 'index');
             }
             if ($parm1Object->slug == "culturabrasil") {
-              die($param3);
+              die(get_class($parm2Object));
             }
             $parm3Object = $this->parseWithObject($param3, $parm2Object);
             if($parm3Object){
