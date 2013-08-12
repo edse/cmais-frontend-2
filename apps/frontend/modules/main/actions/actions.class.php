@@ -294,7 +294,7 @@ class mainActions extends sfActions
         $this->forward('_section', 'index');
         die();
       }
-      elseif($param2 == "programas" && $param3 != "") {
+      elseif($param2 == "programas" && $param3 != "" &&  $param4 == "" &&  $param5 == "") {
         $site = $this->site = Doctrine::getTable('Site')->findOneBySlug($param3);
         $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, "arquivo");
         /*
