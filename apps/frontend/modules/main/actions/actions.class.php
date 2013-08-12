@@ -362,8 +362,12 @@ class mainActions extends sfActions
           if($request->getParameter('debug') != "")
             print "<br>main: 2>>".get_class($parm2Object).">>".$parm2Object->id;
           if(!$param3) {
-            //get_class($parm2Object)            
-            $this->forwardObject($parm2Object);
+            if($parm1Object->slug == "culturabrasil" && get_class($parm2Object) == "Site") {
+              header("Location: http://culturabrasil.com.br/programas/".$param2);
+              die();
+            }
+            else
+              $this->forwardObject($parm2Object);
           }
           else{
             if ($parm1Object->slug == "m") {
