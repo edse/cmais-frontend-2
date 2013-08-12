@@ -287,6 +287,7 @@ class mainActions extends sfActions
       $this->forward('_section', 'index');
       die();
     }
+    /*
     elseif($param1 == "culturabrasil"){
       if($param2 == "especiais"){
         $section = $this->site = Doctrine::getTable('Section')->findOneById(1929);
@@ -311,6 +312,13 @@ class mainActions extends sfActions
         }
       }
     }
+     * */
+    elseif($param1 == "culturabrasil" && $param2 == "especiais"){
+      $section = $this->site = Doctrine::getTable('Section')->findOneById(1929);
+      $this->getRequest()->setParameter('object', $section);
+      $this->forward('_section', 'index');
+      die();
+    }    
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
       if($param1 == "fpa")
         $param1 = "sic";
