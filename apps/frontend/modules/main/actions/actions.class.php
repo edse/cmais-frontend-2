@@ -362,18 +362,20 @@ class mainActions extends sfActions
         if($request->getParameter('debug') != "")
           print "<br>parseWithObject >>".$param2." - ".$param1;
         if($parm2Object){
+          if($parm1Object->slug == "culturabrasil" && get_class($parm2Object) == "Site") {
+            
+            $url = "http://culturabrasil.cmais.com.br/programas/$param2";
+            if($param3)
+              $url = "http://culturabrasil.cmais.com.br/programas/$param2/$param3";
+            if($param4)
+              $url = "http://culturabrasil.cmais.com.br/programas/$param2/$param3/$param4";
+            header("Location: ".$url);
+            die();
+          }
           if($request->getParameter('debug') != "")
             print "<br>main: 2>>".get_class($parm2Object).">>".$parm2Object->id;
-          if(!$param3) {
-            
-            if($parm1Object->slug == "culturabrasil" && get_class($parm2Object) == "Site") {
-              header("Location: http://culturabrasil.cmais.com.br/programas/".$param2);
-              die();
-            }
-            else
-              $this->forwardObject($parm2Object);
-             
-          }
+          if(!$param3)
+            $this->forwardObject($parm2Object);
           else{
             if ($parm1Object->slug == "m") {
               $this->getRequest()->setParameter('object', $parm2Object);
