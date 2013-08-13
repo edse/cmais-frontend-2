@@ -316,7 +316,7 @@ class mainActions extends sfActions
           die();
         }
         else {
-          if($param4 == "arquivo" && $param5 != "") {
+          if($param5 != "") {
             $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param5);
             $this->getRequest()->setParameter('object', $asset);
             $this->forwardObject($asset);
