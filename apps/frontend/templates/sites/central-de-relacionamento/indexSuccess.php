@@ -861,8 +861,7 @@ $(document).ready(function(){
                       f2_telefone: {
                         required: function(element) {
                           return $("#f2_sms:checked").length!=0 ? true : false
-                        },
-                        
+                        }
                       },
                       f2_nome: {
                         required: true
@@ -938,6 +937,11 @@ $(document).ready(function(){
                       f3_email: {
                         required: true,
                         email: true
+                      },
+                      f3_telefone: {
+                        required: function(element) {
+                          return $("#f3_sms:checked").length!=0 ? true : false
+                        }
                       },
                       f3_cep: {
                         required: function(element) {
@@ -1051,7 +1055,9 @@ $(document).ready(function(){
                         required: "#f4_mais:!checked"
                       },
                       f4_telefone: {
-                        telefone: true 
+                        required: function(element) {
+                          return $("#f4_sms:checked").length!=0 ? true : false
+                        }
                       }
                     },
                     highlight: function(label) {
