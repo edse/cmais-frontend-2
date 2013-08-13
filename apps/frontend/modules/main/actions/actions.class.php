@@ -298,19 +298,36 @@ class mainActions extends sfActions
         $site = $this->site = Doctrine::getTable('Site')->findOneBySlug($param3);
         $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, "arquivo");
         
-        if($param4 == "arquivo") {
-          $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param5);
-          $this->getRequest()->setParameter('object', $asset);
-          $this->forwardObject($asset);
-          die();
-        }
-        else {
+        if ($param4 == "") {
           $this->getRequest()->setParameter('object', $section);
           $this->forward('_section', 'index');
           die();
         }
+        else {
+          $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, $param4);
+          
+          if($param5 == "") {
+            $this->getRequest()->setParameter('object', $section);
+            $this->forward('_section', 'index');
+            die();
+          }
+          else {
+            $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param5);
+            $this->getRequest()->setParameter('object', $asset);
+            $this->forwardObject($asset);
+            die();
+          }
+        }
       }
     }
+    /*
+    elseif($param1 == "culturabrasil" && $param2 == "especiais"){
+      $section = $this->site = Doctrine::getTable('Section')->findOneById(1929);
+      $this->getRequest()->setParameter('object', $section);
+      $this->forward('_section', 'index');
+      die();
+    }    
+      * */
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
       if($param1 == "fpa")
         $param1 = "sic";
@@ -347,13 +364,25 @@ class mainActions extends sfActions
         if($parm2Object){
           if($request->getParameter('debug') != "")
             print "<br>main: 2>>".get_class($parm2Object).">>".$parm2Object->id;
-          if(!$param3)
-            $this->forwardObject($parm2Object);
+          if(!$param3) {
+            
+            if($parm1Object->slug == "culturabrasil" && get_class($parm2Object) == "Site") {
+              header("Location: http://culturabrasil.cmais.com.br/programas/".$param2);
+              die();
+            }
+            else
+              $this->forwardObject($parm2Object);
+             
+          }
           else{
             if ($parm1Object->slug == "m") {
               $this->getRequest()->setParameter('object', $parm2Object);
               $this->forward('_section', 'index');
-            }
+            }/*
+            if ($parm1Object->slug == "culturabrasil") {
+              $this->getRequest()->setParameter('object', $parm2Object);
+              $this->forward('_section', 'index');
+            }*/
             $parm3Object = $this->parseWithObject($param3, $parm2Object);
             if($parm3Object){
               if($request->getParameter('debug') != "")
