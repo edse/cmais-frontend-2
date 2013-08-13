@@ -288,6 +288,13 @@ class mainActions extends sfActions
       die();
     }
     elseif($param1 == "culturabrasil"){
+      if($param2 == "especiais"){
+        $section = $this->site = Doctrine::getTable('Section')->findOneById(1929);
+        $this->getRequest()->setParameter('object', $section);
+        $this->forward('_section', 'index');
+        die();
+      }
+
       $parm2Object = $this->parse($param2);
       if(get_class($parm2Object) == "Site") {
         $url = "http://culturabrasil.cmais.com.br/programas/$param2";
@@ -299,13 +306,7 @@ class mainActions extends sfActions
         die();
       }
       
-      if($param2 == "especiais"){
-        $section = $this->site = Doctrine::getTable('Section')->findOneById(1929);
-        $this->getRequest()->setParameter('object', $section);
-        $this->forward('_section', 'index');
-        die();
-      }
-      elseif($param2 == "programas" && $param3 != "") {
+      if($param2 == "programas" && $param3 != "") {
         $site = $this->site = Doctrine::getTable('Site')->findOneBySlug($param3);
         $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, "arquivo");
         
@@ -316,8 +317,7 @@ class mainActions extends sfActions
         }
         else {
           $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, $param4);
-          
-          if($param5 == "") {
+          if($section && $param5 == "") {
             $this->getRequest()->setParameter('object', $section);
             $this->forward('_section', 'index');
             die();
@@ -331,14 +331,6 @@ class mainActions extends sfActions
         }
       }
     }
-    /*
-    elseif($param1 == "culturabrasil" && $param2 == "especiais"){
-      $section = $this->site = Doctrine::getTable('Section')->findOneById(1929);
-      $this->getRequest()->setParameter('object', $section);
-      $this->forward('_section', 'index');
-      die();
-    }    
-      * */
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
       if($param1 == "fpa")
         $param1 = "sic";
