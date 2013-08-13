@@ -351,16 +351,18 @@
          
         <?php
           $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, "arquivo");
-          $latests = Doctrine_Query::create()
-            ->select('a.*')
-            ->from('Asset a, SectionAsset sa')
-            ->where('sa.asset_id = a.id')
-            ->andWhere('sa.section_id = ?', $section->id)
-            ->andWhere('a.site_id = ?', $site->id)
-            ->andWhere('a.is_active = ?', 1)
-            ->orderBy('a.created_at')
-            ->limit(5)
-            ->execute();
+          if($section) {
+            $latests = Doctrine_Query::create()
+              ->select('a.*')
+              ->from('Asset a, SectionAsset sa')
+              ->where('sa.asset_id = a.id')
+              ->andWhere('sa.section_id = ?', $section->id)
+              ->andWhere('a.site_id = ?', $site->id)
+              ->andWhere('a.is_active = ?', 1)
+              ->orderBy('a.created_at desc')
+              ->limit(5)
+              ->execute();
+          }
         ?>         
          
           <?php if(isset($latests)): ?>
@@ -373,7 +375,7 @@
             <!--item-->
             <div class="destaque-recente">
               <?php foreach($latests as $d): ?>
-              <a href="#" class="btn-recente" title="">
+              <a href="../<?php echo $d->getSlug() ?>" class="btn-recente" title="<?php echo $d->getTitle() ?>">
                 <h3>
                   <?php echo $d->getTitle(); ?>
                 </h3>
