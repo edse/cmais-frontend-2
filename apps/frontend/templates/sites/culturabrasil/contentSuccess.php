@@ -382,7 +382,7 @@
                 <p><?php echo $d->getDescription(); ?></p>
                 <div class="borda-pontilhada"></div>
               </a>
-              <?php endforeach; ?> 
+              <?php endforeach; ?>
             </div>
             <!--item-->
           </div>
