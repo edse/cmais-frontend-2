@@ -52,7 +52,7 @@ if($_REQUEST["captcha"]) {
           $email = strip_tags($_REQUEST['email']);
           $name = strip_tags($_REQUEST['nome']);
           $from = "{$name} <{$email}>";
-          $to = "tutoriaingles@tvcultura.com.br, cristovamruizjr@gmail.com";
+          $to = "tutoria@tvcultura.com.br, cristovamruizjr@gmail.com";
           ini_set('sendmail_from', $to);
           $subject = '[Cmais+][Melhor Gestão Melhor Ensino - Ciências] '.$from;
           
@@ -95,7 +95,7 @@ if($_REQUEST["captcha"]) {
 
           if(mail($to, $subject, $message, $header)) {
             
-            $from = "Fundação Padre Anchieta <tutoriaingles@tvcultura.com.br>";
+            $from = "Fundação Padre Anchieta <tutoria@tvcultura.com.br>";
             $to = $email;
             ini_set('sendmail_from', $from);
             $subject = '[Cmais+] Confirmação de cadastro para o processo seletivo de tutor melhor gestão melhor ensino de Ciências';

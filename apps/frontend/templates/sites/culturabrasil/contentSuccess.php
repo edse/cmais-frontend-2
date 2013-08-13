@@ -360,7 +360,7 @@
             ->orderBy('a.created_at desc')
             ->limit(5)
             ->execute();
-        ?>         
+        ?>
          
           <?php if(isset($latests)): ?>
             <?php if(count($latests)): ?>
