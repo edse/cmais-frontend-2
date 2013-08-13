@@ -273,7 +273,7 @@
                                 </li>
                                 <?php endforeach; ?>
                               </ul>
-                    <a href="../provocacoes/programas" class="sugestoes"><span>mais vídeos</span></a>
+                    <a href="/provocacoes/programas" class="sugestoes"><span>mais vídeos</span></a>
                   </div>
                    <?php endif; ?>
                           <?php endif; ?>
