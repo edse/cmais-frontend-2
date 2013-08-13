@@ -297,26 +297,21 @@ class mainActions extends sfActions
       elseif($param2 == "programas" && $param3 != "") {
         $site = $this->site = Doctrine::getTable('Site')->findOneBySlug($param3);
         $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, "arquivo");
-        /*
-        if($param4 == "arquivo" && $param5 != "") {
-          $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param5);
-          $this->getRequest()->setParameter('object', $asset);
-          $this->forwardObject($asset);
-          die();
-        }
-        else {
-          $this->getRequest()->setParameter('object', $section);
-          $this->forward('_section', 'index');
-          die();
-        }
-         */
+        
         if ($param4 == "") {
           $this->getRequest()->setParameter('object', $section);
           $this->forward('_section', 'index');
           die();
         }
         else {
-          if($param5 != "") {
+          $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, $param4);
+          
+          if($param5 == "") {
+            $this->getRequest()->setParameter('object', $section);
+            $this->forward('_section', 'index');
+            die();
+          }
+          else {
             $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param5);
             $this->getRequest()->setParameter('object', $asset);
             $this->forwardObject($asset);
