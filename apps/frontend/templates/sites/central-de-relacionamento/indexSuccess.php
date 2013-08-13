@@ -387,7 +387,7 @@ $(document).ready(function(){
                       <div class="control-group">
                         <label class="control-label" for="f3_telefone">Telefone</label>
                         <div class="controls">
-                          <input type="text" class="span2" id="f3_telefone" name="f3_telefone" placeholder="(xx) XXXX-XXXX">
+                          <input type="text" class="input-xlarge" id="f3_telefone" name="f3_telefone" placeholder="(xx) XXXX-XXXX">
                         </div>
                       </div>
                       <div class="control-group">
