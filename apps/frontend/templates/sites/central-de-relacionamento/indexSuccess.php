@@ -559,7 +559,7 @@ $(document).ready(function(){
                         <div class="control-group">
                           <label class="control-label" for="f4_telefone">Telefone</label>
                           <div class="controls">
-                            <input type="text" class="span2" id="f4_telefone" name="f4_telefone" placeholder="(xx) XXXX-XXXX">
+                            <input type="text" class="input-xlarge" id="f4_telefone" name="f4_telefone" placeholder="(xx) XXXX-XXXX">
                           </div>
                         </div>
                         <div class="control-group">
