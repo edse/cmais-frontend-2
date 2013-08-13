@@ -746,7 +746,8 @@ class _sectionActions extends sfActions
                 ->andWhere('av.asset_id = a.id')
                 ->andWhere('av.youtube_id != ""')
                 ->andWhere('a.is_active = ?', 1)
-                ->orderBy('a.created_at desc');
+                //->orderBy('a.created_at desc');
+                ->orderBy('sa.display_order desc');
             }
 			
             
