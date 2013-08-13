@@ -375,14 +375,14 @@
             <!--item-->
             <div class="destaque-recente">
               <?php foreach($latests as $d): ?>
-              <a href="../<?php echo $d->getSlug() ?>" class="btn-recente" title="<?php echo $d->getTitle() ?>">
+              <a href="<?php echo $d->getSlug() ?>" class="btn-recente" title="<?php echo $d->getTitle() ?>">
                 <h3>
                   <?php echo $d->getTitle(); ?>
                 </h3>
                 <p><?php echo $d->getDescription(); ?></p>
                 <div class="borda-pontilhada"></div>
               </a>
-              <?php endforeach; ?> 
+              <?php endforeach; ?>
             </div>
             <!--item-->
           </div>
