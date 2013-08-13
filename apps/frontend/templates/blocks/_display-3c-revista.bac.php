@@ -1,12 +1,31 @@
           <?php if(isset($displays)): ?>
             <?php if(count($displays) > 0): ?>
-            
+            <script>
+            $(document).ready( function() {
+              // comportamento inicial
+              $('.destaque-revista ul li:first').addClass('ativo');
+              $('.destaque-revista #conteudo-revista div:first').fadeIn('slow').addClass('ativo');
+              var currentItem = '';
+              // evento click
+              $('.destaque-revista ul li a').click( function() {
+                if($(this).attr('id') != currentItem){
+                  currentItem = $(this).attr('id'); // pega o Id do item clicado
+                  $(this).parent().parent().find('li.ativo').removeClass('ativo'); // remove a classe 'ativo' de todos os elementos
+                  $(this).parent().addClass('ativo'); // adiciona classe 'ativo' somente no item clicado
+                  // Aplica FadeOut na div de classe 'ativo' e FadeIn na div do item clicado
+                  $(this).parent().parent().next().find('div.ativo').fadeOut('slow', function() {
+                    $('div#conteudo-'+currentItem+'').fadeIn('normal').addClass('ativo');
+                  }).removeClass('ativo');
+                }
+              });
+            })
+            </script>
             <!-- REVISTA -->
             <div id="revista" class="grid3">
               <div class="destaque-revista">
                 <ul id="menu-revista">
                   <?php foreach($displays as $k=>$d): ?>
-                  <li<?php if($k==0) echo ' class="ativo"';?>><a data-order="<?php echo $k + 1; ?>" id="item<?php echo $k+1;?>" href="javascript:;"><?php echo $d->retriveLabel() ?></a></li>
+                  <li<?php if($k==0) echo ' class="ativo"';?>><a id="item<?php echo $k+1;?>" href="javascript:;"><?php echo $d->retriveLabel() ?></a></li>
                   <?php endforeach; ?>
                 </ul>
                 <div id="conteudo-revista">
@@ -77,109 +96,6 @@
                </ul>
               <!-- /Menu Editorias -->
             </div>
-            
             <!-- /REVISTA -->
-            <script>
-            $(document).ready( function() {
-              // comportamento inicial
-              $('.destaque-revista ul li:first').addClass('ativo');
-              $('.destaque-revista #conteudo-revista div:first').fadeIn('slow').addClass('ativo');
-              var currentItem = '';
-              
-              
-              
-              /* evento click antigo
-              $('.destaque-revista ul li a').click( function() {
-                if($(this).attr('id') != currentItem){
-                  cont = $(this).attr('data-order');
-                  console.log(cont)
-                  clearTimeout(roda);
-                  var roda = setInterval(function(){rodadestaque(cont)}, 1000);
-                  currentItem = $(this).attr('id'); // pega o Id do item clicado
-                  $(this).parent().parent().find('li.ativo').removeClass('ativo'); // remove a classe 'ativo' de todos os elementos
-                  $(this).parent().addClass('ativo'); // adiciona classe 'ativo' somente no item clicado
-                  // Aplica FadeOut na div de classe 'ativo' e FadeIn na div do item clicado
-                  $(this).parent().parent().next().find('div.ativo').fadeOut('slow', function() {
-                    $('div#conteudo-'+currentItem+'').fadeIn('normal').addClass('ativo');
-                  }).removeClass('ativo');
-                }
-                
-              });
-              */
-             
-             var roda;
-             var roda2;
-             roda = setInterval(function(){rodadestaque(1)}, 10000);
-             
-             $('.destaque-revista ul li a').click( function(){
-                var posicao = $(this).attr('data-order');
-                console.log(posicao);
-                posicao = posicao - 1;
-                if(posicao <= 0){
-                  posicao = 1;
-                }
-                
-                $('#menu-revista').find('li.ativo').removeClass('ativo');
-                //$(this).parent().addClass('ativo');
-                $('#conteudo-revista').find('.ativo').removeClass('ativo').css('display','none');
-                //$('#conteudo-revista').find('#conteudo-item'+posicao).fadeIn('fast').addClass('ativo');
-                rodadestaque(posicao, true);
-                
-              });
-              var i = 0; 
-              $('#menu-revista').find('li').each(function(index){
-                i = index + 1; 
-              });
-              var cont = 1; 
-              var item;
-              var miolo;
-              
-              function rodadestaque(pos, clique){
-                cont = parseInt(pos);
-                
-                
-                item = $('#item'+ cont);
-                miolo =$('#conteudo-item'+cont);
-                if(!clique){
-                  
-                  cont = cont + 1;
-                }
-                
-                //removendo ativo do botao e passando para o proximo
-                
-                if(cont > i){
-                  cont = 1;
-                  var currentItem = $('#menu-revista').find('li #item1');
-                  $(item.selector).parent().removeClass('ativo');
-                  $(currentItem).parent().addClass('ativo');
-                  $(miolo.selector).removeClass('ativo').css('display','none');
-                  miolo = $('#conteudo-revista').find('#conteudo-item1')
-                  $(miolo).fadeIn('slow').addClass('ativo');
-                }else{
-                  if(clique && cont<=1){
-                    var currentItem = $('#menu-revista').find('li #item1');
-                    $(item.selector).parent().removeClass('ativo');
-                    $(currentItem).parent().addClass('ativo');
-                    $(miolo.selector).removeClass('ativo').css('display','none');
-                    miolo = $('#conteudo-revista').find('#conteudo-item1')
-                    $(miolo).fadeIn('slow').addClass('ativo'); 
-                  }else{
-                    $(item.selector).parent().removeClass('ativo');
-                    $(item.selector).parent().next().addClass('ativo');
-                    $(miolo.selector).removeClass('ativo').css('display','none');
-                    $(miolo.selector).next().fadeIn('slow').addClass('ativo');
-                  }
-                }
-                console.log(item.selector)
-                console.log(miolo.selector)
-                stoproda(roda)
-                roda = setInterval(function(){rodadestaque(cont)}, 10000);
-              }
-              
-              function stoproda(roda){
-                clearInterval(roda)
-              } 
-            });
-            </script>
             <?php endif; ?>
           <?php endif; ?>
