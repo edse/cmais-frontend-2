@@ -316,7 +316,7 @@ class mainActions extends sfActions
           die();
         }
         else {
-          die($param4);
+          //die($param4);
           $param2 = $param4;
         }
       }
