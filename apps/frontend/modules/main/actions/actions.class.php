@@ -320,6 +320,7 @@ class mainActions extends sfActions
           $param1 = $param3;
           $param2 = $param4;
           $param3 = $param5;
+          $param4 = $param6;
         }
       }
     }
