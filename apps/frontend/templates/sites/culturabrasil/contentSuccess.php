@@ -350,19 +350,16 @@
          <?php endif; ?>
          
         <?php
-          $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, "arquivo");
-          if($section) {
-            $latests = Doctrine_Query::create()
-              ->select('a.*')
-              ->from('Asset a, SectionAsset sa')
-              ->where('sa.asset_id = a.id')
-              ->andWhere('sa.section_id = ?', $section->id)
-              ->andWhere('a.site_id = ?', $site->id)
-              ->andWhere('a.is_active = ?', 1)
-              ->orderBy('a.created_at desc')
-              ->limit(5)
-              ->execute();
-          }
+          $latests = Doctrine_Query::create()
+            ->select('a.*')
+            ->from('Asset a, SectionAsset sa')
+            ->where('sa.asset_id = a.id')
+            ->andWhere('a.site_id = ?', $site->id)
+            ->andWhere('a.is_active = ?', 1)
+            ->andWhere('a.asset_type_id = ?', 1)
+            ->orderBy('a.created_at desc')
+            ->limit(5)
+            ->execute();
         ?>         
          
           <?php if(isset($latests)): ?>
@@ -390,16 +387,8 @@
             <?php endif; ?> 
           <?php endif; ?> 
           </div> 
-  
-          
       </div>
-  
-       
-          
     </div>
     <!-- asset -->
-      
   </div>
-    
 </section>
-
