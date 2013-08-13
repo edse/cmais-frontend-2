@@ -294,7 +294,7 @@ class mainActions extends sfActions
         $this->forward('_section', 'index');
         die();
       }
-      elseif($param2 == "programas" && $param3 != "" && $param4 == "") {
+      elseif($param2 == "programas" && $param3 != "") {
         $site = $this->site = Doctrine::getTable('Site')->findOneBySlug($param3);
         $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, "arquivo");
         /*
@@ -310,9 +310,14 @@ class mainActions extends sfActions
           die();
         }
          */
-        $this->getRequest()->setParameter('object', $section);
-        $this->forward('_section', 'index');
-        die();
+        if ($param4 == "") {
+          $this->getRequest()->setParameter('object', $section);
+          $this->forward('_section', 'index');
+          die();
+        }
+        else {
+          $param2 = $param4;
+        }
       }
     }
     /*
@@ -373,11 +378,11 @@ class mainActions extends sfActions
             if ($parm1Object->slug == "m") {
               $this->getRequest()->setParameter('object', $parm2Object);
               $this->forward('_section', 'index');
-            }
+            }/*
             if ($parm1Object->slug == "culturabrasil") {
               $this->getRequest()->setParameter('object', $parm2Object);
               $this->forward('_section', 'index');
-            }
+            }*/
             $parm3Object = $this->parseWithObject($param3, $parm2Object);
             if($parm3Object){
               if($request->getParameter('debug') != "")
