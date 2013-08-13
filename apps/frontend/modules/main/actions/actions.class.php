@@ -288,6 +288,17 @@ class mainActions extends sfActions
       die();
     }
     elseif($param1 == "culturabrasil"){
+      $parm2Object = $this->parse($param2);
+      if(get_class($parm2Object) == "Site") {
+        $url = "http://culturabrasil.cmais.com.br/programas/$param2";
+        if($param3)
+          $url = "http://culturabrasil.cmais.com.br/programas/$param2/$param3";
+        if($param4)
+          $url = "http://culturabrasil.cmais.com.br/programas/$param2/$param3/$param4";
+        header("Location: ".$url);
+        die();
+      }
+      
       if($param2 == "especiais"){
         $section = $this->site = Doctrine::getTable('Section')->findOneById(1929);
         $this->getRequest()->setParameter('object', $section);
@@ -362,16 +373,6 @@ class mainActions extends sfActions
         if($request->getParameter('debug') != "")
           print "<br>parseWithObject >>".$param2." - ".$param1;
         if($parm2Object){
-          if($parm1Object->slug == "culturabrasil" && get_class($parm2Object) == "Site") {
-            
-            $url = "http://culturabrasil.cmais.com.br/programas/$param2";
-            if($param3)
-              $url = "http://culturabrasil.cmais.com.br/programas/$param2/$param3";
-            if($param4)
-              $url = "http://culturabrasil.cmais.com.br/programas/$param2/$param3/$param4";
-            header("Location: ".$url);
-            die();
-          }
           if($request->getParameter('debug') != "")
             print "<br>main: 2>>".get_class($parm2Object).">>".$parm2Object->id;
           if(!$param3)
