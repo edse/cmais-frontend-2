@@ -375,7 +375,7 @@
             <!--item-->
             <div class="destaque-recente">
               <?php foreach($latests as $d): ?>
-              <a href="<?php echo $d->retriveUrl() ?>" class="btn-recente" title="<?php echo $d->getTitle() ?>">
+              <a href="<?php echo $uri ?>" class="btn-recente" title="<?php echo $d->getTitle() ?>">
                 <h3>
                   <?php echo $d->getTitle(); ?>
                 </h3>
