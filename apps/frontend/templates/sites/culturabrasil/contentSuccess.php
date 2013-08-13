@@ -349,7 +349,22 @@
            <?php endif; ?>
          <?php endif; ?>
          
-          
+        <?php
+          $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, "arquivo");
+          $latests = Doctrine_Query::create()
+            ->select('a.*')
+            ->from('Asset a, SectionAsset sa')
+            ->where('sa.asset_id = a.id')
+            ->andWhere('sa.section_id = ?', $section->id)
+            ->andWhere('a.site_id = ?', $site->id)
+            ->andWhere('a.is_active = ?', 1)
+            ->orderBy('a.created_at')
+            ->limit(5)
+            ->execute();
+        ?>         
+         
+          <?php if(isset($latests)): ?>
+            <?php if(count($latests)): ?>
           <!-- recentes -->
           <div id="recentes">
             <h2>
@@ -357,72 +372,21 @@
             </h2>
             <!--item-->
             <div class="destaque-recente">
+              <?php foreach($latests as $d): ?>
               <a href="#" class="btn-recente" title="">
                 <h3>
-                  A voz-ritmo de Marcelo Pretto
+                  <?php echo $d->getTitle(); ?>
                 </h3>
-                <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
+                <p><?php echo $d->getDescription(); ?></p>
                 <div class="borda-pontilhada"></div>
-              </a>  
-            </div>
-            <!--item-->
-            <!--item-->
-            <div class="destaque-recente">
-              <a href="#" class="btn-recente" title="">
-                <h3>
-                  A voz-ritmo de Marcelo Pretto
-                </h3>
-                <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
-                <div class="borda-pontilhada"></div>
-              </a>  
-            </div>
-            <!--item-->
-            <!--item-->
-            <div class="destaque-recente">
-              <a href="#" class="btn-recente" title="">
-                <h3>
-                  A voz-ritmo de Marcelo Pretto
-                </h3>
-                <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
-                <div class="borda-pontilhada"></div>
-              </a>  
-            </div>
-            <!--item-->
-            <!--item-->
-            <div class="destaque-recente">
-              <a href="#" class="btn-recente" title="">
-                <h3>
-                  A voz-ritmo de Marcelo Pretto
-                </h3>
-                <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
-                <div class="borda-pontilhada"></div>
-              </a>  
-            </div>
-            <!--item-->
-            <!--item-->
-            <div class="destaque-recente">
-              <a href="#" class="btn-recente" title="">
-                <h3>
-                  A voz-ritmo de Marcelo Pretto
-                </h3>
-                <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
-                <div class="borda-pontilhada"></div>
-              </a>  
-            </div>
-            <!--item-->
-            <!--item-->
-            <div class="destaque-recente">
-              <a href="#" class="btn-recente" title="">
-                <h3>
-                  A voz-ritmo de Marcelo Pretto
-                </h3>
-                <p>Arrigo Barbané entrevista o cantor autodidata, ator e arte-educador, integrante dos grupos A Barca e Barbatuques.</p>
-                <div class="borda-pontilhada" style="display:none"></div>
-              </a>  
+              </a>
+              <?php endforeach; ?> 
             </div>
             <!--item-->
           </div>
-          <!-- recentes -->  
+          <!-- recentes -->
+            <?php endif; ?> 
+          <?php endif; ?> 
           </div> 
   
           
