@@ -234,7 +234,7 @@ $(document).ready(function(){
                       <div class="controls">
                         <label class="checkbox">
                           <input type="checkbox" id="f2_sms" name="f2_sms" value="true">
-                          Permito o envio de promoções e novidades via SMS
+                          Permito o envio de SMS
                         </label>
                       </div>
                     </div>
@@ -401,7 +401,7 @@ $(document).ready(function(){
                         <div class="controls">
                           <label class="checkbox">
                             <input type="checkbox" id="f3_sms" name="f3_sms" value="true">
-                            Permito o envio de promoções e novidades via SMS
+                            Permito o envio de SMS
                           </label>
                         </div>
                       </div>
@@ -573,7 +573,7 @@ $(document).ready(function(){
                           <div class="controls">
                             <label class="checkbox">
                               <input type="checkbox" id="f4_sms" name="f4_sms" value="true">
-                              Permito o envio de promoções e novidades via SMS
+                              Permito o envio de SMS
                             </label>
                           </div>
                         </div>
@@ -877,6 +877,10 @@ $(document).ready(function(){
                         required: "#f2_exterior:checked",
                         minlength: 2
                       },
+                      f2_cep: {
+                        minlength: 8,
+                        cep: true
+                      },
                       f2_estado: {
                         required: "#f2_exterior:!checked"
                       },
@@ -925,6 +929,10 @@ $(document).ready(function(){
                       f3_email: {
                         required: true,
                         email: true
+                      },
+                      f3_cep: {
+                        minlength: 8,
+                        cep:true
                       },
                       f3_textarea: {
                         minlength: 2,
@@ -997,11 +1005,17 @@ $(document).ready(function(){
                         },
                         number: true
                       },
+                      /*
                       f4_cep: {
                         required: function(element) {
                           return $("#f4_endereco").val()!="" ? true : false
                         },
                         minlength: 9,
+                        cep: true
+                      },
+                      */
+                     f4_cep: {
+                        minlength: 8,
                         cep: true
                       },
                       f4_cod_grupo: {
