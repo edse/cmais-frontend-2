@@ -316,18 +316,20 @@ class mainActions extends sfActions
           die();
         }
         else {
-          $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, $param4);
-          if($section && $param5 == "") {
-            $this->getRequest()->setParameter('object', $section);
-            $this->forward('_section', 'index');
-            die();
+          if($param5 == "") {
+            $parm4Object = $this->parse($param4);
+            if(get_class($parm4Object) == "Section")
+              $this->forwardObject($parm4Object);
+            else
+              $this->forward404();
           }
-          else {
+          else {          
             $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param5);
             $this->getRequest()->setParameter('object', $asset);
             $this->forwardObject($asset);
             die();
           }
+          
         }
       }
     }
