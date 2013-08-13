@@ -294,20 +294,42 @@ class mainActions extends sfActions
         $this->forward('_section', 'index');
         die();
       }
-      elseif($param2 == "programas" && $param3 != "") {
+
+      $parm2Object = $this->parse($param2);
+      if(get_class($parm2Object) == "Site") {
+        $url = "http://culturabrasil.cmais.com.br/programas/$param2";
+        if($param3)
+          $url = "http://culturabrasil.cmais.com.br/programas/$param2/$param3";
+        if($param4)
+          $url = "http://culturabrasil.cmais.com.br/programas/$param2/$param3/$param4";
+        header("Location: ".$url);
+        die();
+      }
+      
+      if($param2 == "programas" && $param3 != "") {
         $site = $this->site = Doctrine::getTable('Site')->findOneBySlug($param3);
         $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, "arquivo");
         
-        if($param4 == "arquivo") {
-          $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param5);
-          $this->getRequest()->setParameter('object', $asset);
-          $this->forwardObject($asset);
-          die();
-        }
-        else {
+        if ($param4 == "") {
           $this->getRequest()->setParameter('object', $section);
           $this->forward('_section', 'index');
           die();
+        }
+        else {
+          if($param5 == "") {
+            $parm4Object = $this->parse($param4);
+            if(get_class($parm4Object) == "Section")
+              $this->forwardObject($parm4Object);
+            else
+              $this->forward404();
+          }
+          else {          
+            $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param5);
+            $this->getRequest()->setParameter('object', $asset);
+            $this->forwardObject($asset);
+            die();
+          }
+          
         }
       }
     }
@@ -353,7 +375,11 @@ class mainActions extends sfActions
             if ($parm1Object->slug == "m") {
               $this->getRequest()->setParameter('object', $parm2Object);
               $this->forward('_section', 'index');
-            }
+            }/*
+            if ($parm1Object->slug == "culturabrasil") {
+              $this->getRequest()->setParameter('object', $parm2Object);
+              $this->forward('_section', 'index');
+            }*/
             $parm3Object = $this->parseWithObject($param3, $parm2Object);
             if($parm3Object){
               if($request->getParameter('debug') != "")
