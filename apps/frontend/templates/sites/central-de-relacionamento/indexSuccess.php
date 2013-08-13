@@ -879,7 +879,7 @@ $(document).ready(function(){
                       },
                       f2_cep: {
                         required: function(element) {
-                          return $("#f2_cep").val()!="" ? true : false
+                          return $("#f2_cep").val()!="_____-___" ? true : false
                         },
                         minlength: 8,
                         cep: true
