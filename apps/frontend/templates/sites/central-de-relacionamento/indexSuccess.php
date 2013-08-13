@@ -879,7 +879,7 @@ $(document).ready(function(){
                       },
                       f2_cep: {
                         required: function(element) {
-                          return $("#f2_cep").val()!="" ? true : false
+                          return $("#f2_cep").val()!="_____-___" ? true : false
                         },
                         minlength: 8,
                         cep: true
@@ -934,8 +934,11 @@ $(document).ready(function(){
                         email: true
                       },
                       f3_cep: {
+                        required: function(element) {
+                          return $("#f2_cep").val()!="_____-___" ? true : false
+                        },
                         minlength: 8,
-                        cep:true
+                        cep: true
                       },
                       f3_textarea: {
                         minlength: 2,
@@ -1018,6 +1021,9 @@ $(document).ready(function(){
                       },
                       */
                      f4_cep: {
+                        required: function(element) {
+                          return $("#f2_cep").val()!="_____-___" ? true : false
+                        },
                         minlength: 8,
                         cep: true
                       },
