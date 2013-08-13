@@ -359,7 +359,7 @@
               ->andWhere('sa.section_id = ?', $section->id)
               ->andWhere('a.site_id = ?', $site->id)
               ->andWhere('a.is_active = ?', 1)
-              ->orderBy('a.created_at')
+              ->orderBy('a.created_at desc')
               ->limit(5)
               ->execute();
           }
@@ -375,7 +375,7 @@
             <!--item-->
             <div class="destaque-recente">
               <?php foreach($latests as $d): ?>
-              <a href="#" class="btn-recente" title="">
+              <a href="<?php echo $d->retriveUrl() ?>" class="btn-recente" title="<?php echo $d->getTitle() ?>">
                 <h3>
                   <?php echo $d->getTitle(); ?>
                 </h3>
