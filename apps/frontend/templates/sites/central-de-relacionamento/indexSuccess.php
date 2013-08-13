@@ -878,6 +878,9 @@ $(document).ready(function(){
                         minlength: 2
                       },
                       f2_cep: {
+                        required: function(element) {
+                          return $("#f2_cep").val()!="" ? true : false
+                        },
                         minlength: 8,
                         cep: true
                       },
