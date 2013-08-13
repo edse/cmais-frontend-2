@@ -540,7 +540,7 @@ $(document).ready(function(){
                         <div class="control-group">
                           <label class="control-label" for="f4_complemento">Complemento</label>
                           <div class="controls">
-                            <input type="text" class="input-xlarge" id="f4_complemento" name="f4_complemento">
+                            <input type="text" class="input-xlarge" id="f4_complemento" name="f4_complemento"> 
                           </div>
                         </div>
                         <div class="control-group">
