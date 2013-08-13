@@ -316,11 +316,12 @@ class mainActions extends sfActions
           die();
         }
         else {
-          //die($param4);
-          $param1 = $param3;
-          $param2 = $param4;
-          $param3 = $param5;
-          $param4 = $param6;
+          if($param4 == "arquivo" && $param5 != "") {
+            $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param5);
+            $this->getRequest()->setParameter('object', $asset);
+            $this->forwardObject($asset);
+            die();
+          }
         }
       }
     }
