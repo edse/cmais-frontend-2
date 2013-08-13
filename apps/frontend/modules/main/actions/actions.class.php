@@ -329,7 +329,7 @@ class mainActions extends sfActions
             else
               $this->forward404();
             */
-            $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, "arquivo");
+            $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, $param4);
             if($section->slug) {
               if($section->slug != "arquivo") {
                 $this->getRequest()->setParameter('object', $section);
