@@ -858,6 +858,12 @@ $(document).ready(function(){
                 
                   $('#form2').validate({
                     rules: {
+                      f2_telefone: {
+                        required: function(element) {
+                          return $("#f2_sms:checked").length!=0 ? true : false
+                        },
+                        
+                      },
                       f2_nome: {
                         required: true
                       },
