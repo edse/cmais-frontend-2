@@ -762,7 +762,7 @@ $(document).ready(function(){
                   $('.backForm.enviar-outra').click(function(){
                     $('#f4_cod_veiculo').val('--');
                     $('.control-group.f4').hide();
-                    $('#f4_cod_programa, #f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
+                   
                   });
                   $('.change-form').click(function(){
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
@@ -1157,13 +1157,13 @@ $(document).ready(function(){
                     $('#btn4').hide();
                     $('#message').hide();
                     $('#f4_cod_programa').attr('value','--');
-                    $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
+                    $('#f4_cod_programa, #f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   }else{
                     $('#f4_maisinfo').hide();
                     $('#btn5').hide();
                     $('#btn4').show();
                     $('#message').show();
-                    $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
+                    $('#f4_cod_programa, #f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
                   }
                   if($('#f3_mais').attr('checked')){
                     $('#f3_maisinfo').show();
