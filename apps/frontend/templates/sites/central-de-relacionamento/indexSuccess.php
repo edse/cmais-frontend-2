@@ -1166,7 +1166,7 @@ $(document).ready(function(){
                     $('#f4_cod_programa, #f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
                   }
                   if($('#f3_mais').attr('checked')){
-                    $('#f3_maisinfo').show();
+                    $('#f3_maisinfo').show(); 
                   }else{
                     $('#f3_maisinfo').hide();
                   }
