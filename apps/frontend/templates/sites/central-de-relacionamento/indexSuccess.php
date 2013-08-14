@@ -760,8 +760,7 @@ $(document).ready(function(){
                     beginAgain();
                   })
                   $('.backForm.enviar-outra').click(function(){
-                    $('#f4_cod_veiculo').val('--');
-                    $('.control-group.f4').hide();
+                    window.locatition = "http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email=k@k.com"
                   });
                   $('.change-form').click(function(){
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
