@@ -764,7 +764,8 @@ $(document).ready(function(){
                     $('.control-group.f4').hide();
                   });
                   $('.change-form').click(function(){
-                   toggleInfo(); 
+                   $('#row6').hide(); 
+                   $('#row4').fadeIn("fast");
                   })
                   $('.backForm').click(function(){
                     $('.row').fadeOut('fast',function(){
