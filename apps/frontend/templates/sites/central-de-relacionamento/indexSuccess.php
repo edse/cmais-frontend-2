@@ -762,11 +762,6 @@ $(document).ready(function(){
                   $('.backForm.enviar-outra').click(function(){
                     window.locatition = "http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email=k@k.com"
                   });
-                  $('.change-form').click(function(){
-                    $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
-                    $('#message, #btn4').hide();  
-                    $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
-                  })
                   $('.backForm').click(function(){
                     $('.row').fadeOut('fast',function(){
                       $('#row4').fadeIn('fast');
