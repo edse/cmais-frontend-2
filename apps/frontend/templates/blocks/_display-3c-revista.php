@@ -115,7 +115,7 @@
                 var posicao = $(this).attr('data-order');
                 console.log(posicao);
                 
-                  posicao = posicao - 1;
+                posicao = posicao - 1;
                 
                 
                 if(posicao <= 0){
@@ -139,7 +139,7 @@
               var miolo;
               
               function rodadestaque(pos, clique){
-                if(posicao != 2){
+                if(pos != 2){
                   cont = parseInt(pos);
                 }
                 
