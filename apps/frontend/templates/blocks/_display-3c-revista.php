@@ -114,13 +114,6 @@
              $('.destaque-revista ul li a').click( function(){
                 var posicao = $(this).attr('data-order');
                 
-
-
-                
-                
-
-                
-                
                 $('#menu-revista').find('li.ativo').removeClass('ativo');
                 //$(this).parent().addClass('ativo');
                 $('#conteudo-revista').find('.ativo').removeClass('ativo').css('display','none');
@@ -137,7 +130,7 @@
               var miolo;
               
               function rodadestaque(pos, clique){
-                console.log(pos + "pos")
+                //console.log(pos + "pos")
                 
                 
                 cont = parseInt(pos);
