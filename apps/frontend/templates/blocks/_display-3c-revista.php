@@ -116,7 +116,7 @@
                 
                 console.log(posicao)
 
-                posicao = posicao - 1
+                posicao = posicao
 
                 
                 
