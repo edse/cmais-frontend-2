@@ -117,7 +117,7 @@
                 console.log(posicao)
                 if(posicao == 2){
                   posicao = posicao;
-                }{
+                }else{
                   posicao = posicao - 1
                 }
                 
