@@ -162,7 +162,7 @@
                   miolo = $('#conteudo-revista').find('#conteudo-item1')
                   $(miolo).fadeIn('slow').addClass('ativo');
                 }else{
-                  if(clique && cont==0){
+                  if(cont==0){
                     var currentItem = $('#menu-revista').find('li #item1');
                     $(item.selector).parent().removeClass('ativo');
                     $(currentItem).parent().addClass('ativo');
