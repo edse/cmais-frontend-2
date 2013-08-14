@@ -114,15 +114,11 @@
              $('.destaque-revista ul li a').click( function(){
                 var posicao = $(this).attr('data-order');
                 
-                console.log(posicao)
 
-                posicao = posicao
 
                 
                 
-                if(posicao <= 0){
-                  posicao = 1;
-                }
+
                 
                 
                 $('#menu-revista').find('li.ativo').removeClass('ativo');
@@ -162,7 +158,7 @@
                   miolo = $('#conteudo-revista').find('#conteudo-item1')
                   $(miolo).fadeIn('slow').addClass('ativo');
                 }else{
-                  if(cont==0){
+                  if(clique && cont==0){
                     var currentItem = $('#menu-revista').find('li #item1');
                     $(item.selector).parent().removeClass('ativo');
                     $(currentItem).parent().addClass('ativo');
