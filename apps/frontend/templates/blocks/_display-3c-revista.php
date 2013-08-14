@@ -139,8 +139,11 @@
               var miolo;
               
               function rodadestaque(pos, clique){
-                if(pos != 2 || pos != 3){
+                if(pos != 2){
                   console.log("a");
+                  cont = parseInt(pos);
+                }else if(pos != 3){
+                  console.log("a1");
                   cont = parseInt(pos);
                 }else if(pos == 2){
                   console.log("b");
