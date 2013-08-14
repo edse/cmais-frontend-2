@@ -2,7 +2,7 @@
 //$cpf = str_replace(array('.','-'),"",$_REQUEST["cpf"]);
 //$cpf = ltrim($cpf, "0");
 //$rg = str_replace(array('.','-'),"",$_REQUEST["rg"]);
-//teste
+
 
 if($_REQUEST["captcha"]) {
   if($_REQUEST["cpf"]){
