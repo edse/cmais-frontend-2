@@ -763,16 +763,7 @@ $(document).ready(function(){
                     $('#f4_cod_veiculo').val('--');
                     $('.control-group.f4').hide();
                   });
-                  $('.change-form').click(function(){
-                    alert('oi');
-                    $('#f4_maisinfo').show();
-                    $('#btn5').show();
-                    $('#btn4').hide();
-                    $('#message').hide();
-                    $('#f4_cod_programa').attr('value','--');
-                    $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
-                  })
-                  $('.backForm').click(function(){
+                  $('.backForm, .change-form').click(function(){
                     $('.row').fadeOut('fast',function(){
                       $('#row4').fadeIn('fast');
                       $('#row4').find('.control-group.f4_mais').show();
