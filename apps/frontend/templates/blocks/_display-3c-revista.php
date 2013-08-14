@@ -149,10 +149,7 @@
                 
                 item = $('#item'+ cont);
                 miolo =$('#conteudo-item'+cont);
-                if(!clique){
-                  
-                  cont = cont + 1;
-                }
+                
                 
                 //removendo ativo do botao e passando para o proximo
                 
@@ -177,6 +174,10 @@
                     $(item.selector).parent().next().addClass('ativo');
                     $(miolo.selector).removeClass('ativo').css('display','none');
                     $(miolo.selector).next().fadeIn('slow').addClass('ativo');
+                  }
+                  if(!clique){
+                  
+                    cont = cont + 1;
                   }
                 }
                 //console.log(item.selector)
