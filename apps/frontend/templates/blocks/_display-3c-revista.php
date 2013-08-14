@@ -114,11 +114,9 @@
              $('.destaque-revista ul li a').click( function(){
                 var posicao = $(this).attr('data-order');
                 console.log(posicao);
-                if(posicao != 2){
-                  posicao = posicao - 1;
-                }else{
-                  posicao = 1
-                }
+                
+                posicao = posicao - 1;
+                
                 
                 if(posicao <= 0){
                   posicao = 1;
@@ -141,8 +139,19 @@
               var miolo;
               
               function rodadestaque(pos, clique){
-                cont = parseInt(pos);
-                
+                if(pos != 2){
+                  console.log("a");
+                  cont = parseInt(pos);
+                }else if(pos != 3){
+                  console.log("a1");
+                  cont = parseInt(pos);
+                }else if(pos == 2){
+                  console.log("b");
+                  cont = 1;
+                }else if(pos == 3){
+                  console.log("c");
+                  cont = 3;
+                }
                 
                 item = $('#item'+ cont);
                 miolo =$('#conteudo-item'+cont);
@@ -179,7 +188,7 @@
                 //console.log(item.selector)
                 //console.log(miolo.selector)
                 stoproda(roda);
-                roda = setInterval(function(){rodadestaque(cont)}, 10000);
+                roda = setInterval(function(){rodadestaque(cont)}, 7000);
               }
               
               function stoproda(roda){
