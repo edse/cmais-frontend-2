@@ -113,7 +113,7 @@
              
              $('.destaque-revista ul li a').click( function(){
                 var posicao = $(this).attr('data-order');
-                console.log(posicao);
+                //console.log(posicao);
                 posicao = posicao - 1;
                 if(posicao <= 0){
                   posicao = 1;
@@ -170,14 +170,14 @@
                     $(miolo.selector).next().fadeIn('slow').addClass('ativo');
                   }
                 }
-                console.log(item.selector)
-                console.log(miolo.selector)
-                stoproda(roda)
+                //console.log(item.selector)
+                //console.log(miolo.selector)
+                stoproda(roda);
                 roda = setInterval(function(){rodadestaque(cont)}, 10000);
               }
               
               function stoproda(roda){
-                clearInterval(roda)
+                clearInterval(roda);
               } 
             });
             </script>
