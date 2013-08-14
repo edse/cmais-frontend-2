@@ -646,7 +646,7 @@ $(document).ready(function(){
                       <div class="botoes-form">
                         <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader4" />
                         <button type="submit" class="btn btn-primary" id="btn4">Enviar Mensagem</button>
-                        <button type="submit" class="btn btn-warning" id="btn5" style="display:none">Alterar Cadastro</button>
+                        <button type="submit" class="btn btn-primary" id="btn5" style="display:none">Salvar Cadastro Alterado</button>
                       </div>
                       
                     </fieldset>
@@ -762,14 +762,12 @@ $(document).ready(function(){
                   $('.backForm.enviar-outra').click(function(){
                     $('#f4_cod_veiculo').val('--');
                     $('.control-group.f4').hide();
+                   
                   });
                   $('.change-form').click(function(){
-                    $('#f4_maisinfo').show();
-                    $('#btn5').show();
-                    $('#btn4').hide();
-                    $('#message').hide();
-                    $('#f4_cod_programa').attr('value','--');
-                    $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
+                    $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
+                    $('#message, #btn4').hide();  
+                    $('#f4_cod_programa, #f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   })
                   $('.backForm').click(function(){
                     $('.row').fadeOut('fast',function(){
@@ -1159,16 +1157,16 @@ $(document).ready(function(){
                     $('#btn4').hide();
                     $('#message').hide();
                     $('#f4_cod_programa').attr('value','--');
-                    $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
+                    $('#f4_cod_programa, #f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   }else{
                     $('#f4_maisinfo').hide();
                     $('#btn5').hide();
                     $('#btn4').show();
                     $('#message').show();
-                    $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
+                    $('#f4_cod_programa, #f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
                   }
                   if($('#f3_mais').attr('checked')){
-                    $('#f3_maisinfo').show();
+                    $('#f3_maisinfo').show(); 
                   }else{
                     $('#f3_maisinfo').hide();
                   }

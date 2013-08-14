@@ -6,7 +6,7 @@
               <div class="destaque-revista">
                 <ul id="menu-revista">
                   <?php foreach($displays as $k=>$d): ?>
-                  <li<?php if($k==0) echo ' class="ativo"';?>><a data-order="<?php echo $k + 1; ?>" id="item<?php echo $k+1;?>" href="javascript:;"><?php echo $d->retriveLabel() ?></a></li>
+                  <li<?php if($k==0) echo ' class="ativo"';?>><a data-order="<?php echo $k?>" id="item<?php echo $k+1;?>" href="javascript:;"><?php echo $d->retriveLabel() ?></a></li>
                   <?php endforeach; ?>
                 </ul>
                 <div id="conteudo-revista">
@@ -114,15 +114,6 @@
              $('.destaque-revista ul li a').click( function(){
                 var posicao = $(this).attr('data-order');
                 
-                
-                posicao = posicao - 1;
-                
-                
-                if(posicao <= 0){
-                  posicao = 1;
-                }
-                
-                
                 $('#menu-revista').find('li.ativo').removeClass('ativo');
                 //$(this).parent().addClass('ativo');
                 $('#conteudo-revista').find('.ativo').removeClass('ativo').css('display','none');
@@ -132,34 +123,22 @@
               });
               var i = 0; 
               $('#menu-revista').find('li').each(function(index){
-                i = index + 1; 
+                i = index; 
               });
               var cont = 1; 
               var item;
               var miolo;
               
               function rodadestaque(pos, clique){
-                console.log(pos)
-                if(pos == 2){
-                  console.log("b");
-                  cont = 2;
-                }else if(pos != 2){
-                  console.log("a");
-                  cont = parseInt(pos);
-                }else if(pos != 3){
-                  console.log("a1");
-                  cont = parseInt(pos);
-                }else if(pos == 3){
-                  console.log("c");
-                  cont = 3;
-                }
+                //console.log(pos + "pos")
+                
+                
+                cont = parseInt(pos);
+                
                 
                 item = $('#item'+ cont);
                 miolo =$('#conteudo-item'+cont);
-                if(!clique){
-                  
-                  cont = cont + 1;
-                }
+                
                 
                 //removendo ativo do botao e passando para o proximo
                 
@@ -172,7 +151,7 @@
                   miolo = $('#conteudo-revista').find('#conteudo-item1')
                   $(miolo).fadeIn('slow').addClass('ativo');
                 }else{
-                  if(clique && cont<=1){
+                  if(clique && cont==0){
                     var currentItem = $('#menu-revista').find('li #item1');
                     $(item.selector).parent().removeClass('ativo');
                     $(currentItem).parent().addClass('ativo');
@@ -184,6 +163,10 @@
                     $(item.selector).parent().next().addClass('ativo');
                     $(miolo.selector).removeClass('ativo').css('display','none');
                     $(miolo.selector).next().fadeIn('slow').addClass('ativo');
+                  }
+                  if(!clique){
+                  
+                    cont = cont + 1;
                   }
                 }
                 //console.log(item.selector)
