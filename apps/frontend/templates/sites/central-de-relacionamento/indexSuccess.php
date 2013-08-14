@@ -646,7 +646,7 @@ $(document).ready(function(){
                       <div class="botoes-form">
                         <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader4" />
                         <button type="submit" class="btn btn-primary" id="btn4">Enviar Mensagem</button>
-                        <button type="submit" class="btn btn-warning" id="btn5" style="display:none">Alterar Cadastro</button>
+                        <button type="submit" class="btn btn-primary" id="btn5" style="display:none">Salvar Cadastro Alterado</button>
                       </div>
                       
                     </fieldset>
@@ -765,7 +765,7 @@ $(document).ready(function(){
                   });
                   $('.change-form').click(function(){
                     $('#row6, .control-group.f4_mais').hide();
-                    $('#row4, #f4_maisinfo').fadeIn('fast');
+                    $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
                     $('#message, #btn4').hide();  
 
                   })
