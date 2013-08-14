@@ -675,13 +675,14 @@ $(document).ready(function(){
                 <!-- row6 -->
                 <div class="row" id="row6" >
                   <div class="page-header">
-                    <h1>Mensagem enviada</h1>
-                    <p><span class="label label-success">Usuário cadastrado e mensagem enviada</span></p>
+                    <h1>Gratos</h1>
+                    <p><span class="label label-success">mensagem enviada</span></p>
                   </div><!-- /.span -->
                   <div class="alert alert-block alert-success fade in">
- 
-                    <h4 class="alert-heading">Obrigado. Sua mensagem foi enviada!</h4>
-                    <p>Se aplicável você receberá uma resposta em seu email.</p>
+                    <h4 class="alert-heading">Sua mensagem foi enviada!</h4>
+                    <p>O que vc quer fazer agora?</p>
+                    <a class="btn btn-success backForm" href="javascript:;"> enviar outra mensagem?</a>
+                    <a class="btn btn-success" href="javascript:;"> alterar seu cadastro?</a>
                   </div>
                 </div>
                 <!-- /row6 -->
