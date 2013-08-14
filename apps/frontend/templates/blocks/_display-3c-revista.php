@@ -142,9 +142,9 @@
                 if(pos != 2 || pos != 3){
                   cont = parseInt(pos);
                 }else if(pos == 2){
-                  cont = 2
+                  cont = parseInt(pos) +1;
                 }else if(pos == 3){
-                  cont = 3
+                  cont = 3;
                 }
                 
                 item = $('#item'+ cont);
