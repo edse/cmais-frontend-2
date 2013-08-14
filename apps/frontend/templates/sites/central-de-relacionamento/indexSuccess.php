@@ -681,8 +681,8 @@ $(document).ready(function(){
                   <div class="alert alert-block alert-success fade in">
                     <h4 class="alert-heading">Sua mensagem foi enviada!</h4>
                     <p>O que vc quer fazer agora?</p>
-                    <a class="btn btn-success backForm enviar-outra" href="javascript:;"> enviar outra mensagem?</a>
-                    <a class="btn btn-success" href="javascript:;"> alterar seu cadastro?</a>
+                    <a class="btn btn-success backForm enviar-outra" href="javascript:;"> Enviar outra mensagem</a>
+                    <a class="btn btn-success change-form" href="javascript:;"> Alterar seu cadastro</a>
                   </div>
                 </div>
                 <!-- /row6 -->
@@ -763,6 +763,14 @@ $(document).ready(function(){
                     $('#f4_cod_veiculo').val('--');
                     $('.control-group.f4').hide();
                   });
+                  $('.change-form').click(function(){
+                    $('#f4_maisinfo').show();
+                    $('#btn5').show();
+                    $('#btn4').hide();
+                    $('#message').hide();
+                    $('#f4_cod_programa').attr('value','--');
+                    $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
+                  })
                   $('.backForm').click(function(){
                     $('.row').fadeOut('fast',function(){
                       $('#row4').fadeIn('fast');

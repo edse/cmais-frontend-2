@@ -128,7 +128,7 @@
               });
               var i = 0; 
               $('#menu-revista').find('li').each(function(index){
-                i = index + 1; 
+                i = index; 
               });
               var cont = 1; 
               var item;
