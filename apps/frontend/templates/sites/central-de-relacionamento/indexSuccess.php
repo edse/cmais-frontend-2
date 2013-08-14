@@ -680,6 +680,9 @@ $(document).ready(function(){
                   </div><!-- /.span -->
                   <div class="alert alert-block alert-success fade in">
                     <h4 class="alert-heading">Sua mensagem foi enviada!</h4>
+                    <p>O que vc quer fazer agora?</p>
+                    <a class="btn btn-success backForm" href="javascript:;"> enviar outra mensagem?</a>
+                    <a class="btn btn-success" href="javascript:;"> alterar seu cadastro?</a>
                   </div>
                 </div>
                 <!-- /row6 -->
