@@ -460,7 +460,7 @@ $(document).ready(function(){
                           <p class="help-block">Se aplicável, você receberá uma resposta nesse email.</p>
                         </div>
                       </div>
-                      <div class="control-group">
+                      <div class="control-group f4_mais">
                         <label class="control-label" for="f4_mais"></label>
                         <div class="controls">
                           <label class="checkbox">
@@ -761,6 +761,7 @@ $(document).ready(function(){
                   $('.backForm').click(function(){
                     $('.row').fadeOut('fast',function(){
                       $('#row4').fadeIn('fast');
+                      $('#row4').find('.control-group.f4_mais').show();
                       $('#f4_mais').removeAttr('checked');
                       $('#btn5, #f4_maisinfo,#row4 label.error.valid').hide();
                       $('#btn4, #message').show(); 
@@ -768,6 +769,9 @@ $(document).ready(function(){
                       $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
                       goTop2();     
                     });
+                  });
+                  $('#f4_mais').click(function(){
+                    $(this).parent().parent().parent().hide();
                   });
                   $.validator.addMethod("cep", function(value, element) {
                     response = (value.indexOf('_')<0) ? true : false;

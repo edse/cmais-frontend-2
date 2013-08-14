@@ -109,7 +109,7 @@
              
              var roda;
              var roda2;
-             roda = setInterval(function(){rodadestaque(1)}, 10000);
+             roda = setInterval(function(){rodadestaque(1)}, 7000);
              
              $('.destaque-revista ul li a').click( function(){
                 var posicao = $(this).attr('data-order');
