@@ -114,9 +114,9 @@
              $('.destaque-revista ul li a').click( function(){
                 var posicao = $(this).attr('data-order');
                 
-                if(posicao != 2){
-                  posicao = posicao - 1;
-                }
+                
+                posicao = posicao;
+                
                 
                 if(posicao <= 0){
                   posicao = 1;
@@ -139,14 +139,11 @@
               var miolo;
               
               function rodadestaque(pos, clique){
-                console.log(pos)
-                if(pos == 2){
-                  console.log("b");
-                  cont = 3;
-                }else if(pos != 2){
-                  console.log("a");
-                  cont = parseInt(pos);
-                }
+                console.log(pos + "pos")
+                
+                
+                cont = parseInt(pos);
+                
                 
                 item = $('#item'+ cont);
                 miolo =$('#conteudo-item'+cont);
