@@ -526,7 +526,7 @@ $(document).ready(function(){
                         </div><!-- /#brasil -->
                         
                         <div class="control-group">
-                          <label class="control-label" for="f4_endereco">Endereço</label>
+                          <label class="control-label" for="f4_endereco">Endereço</label> 
                           <div class="controls">
                             <input type="text" class="input-xlarge" id="f4_endereco" name="f4_endereco">
                           </div>
