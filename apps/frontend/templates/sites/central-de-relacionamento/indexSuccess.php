@@ -763,7 +763,10 @@ $(document).ready(function(){
                     $('#f4_cod_veiculo').val('--');
                     $('.control-group.f4').hide();
                   });
-                  $('.backForm, .change-form').click(function(){
+                  $('.change-form').click(function(){
+                   toggleInfo();
+                  })
+                  $('.backForm').click(function(){
                     $('.row').fadeOut('fast',function(){
                       $('#row4').fadeIn('fast');
                       $('#row4').find('.control-group.f4_mais').show();
