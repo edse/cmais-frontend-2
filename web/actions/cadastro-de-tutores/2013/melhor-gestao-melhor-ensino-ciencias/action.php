@@ -15,7 +15,7 @@ if($_REQUEST["captcha"]) {
         $csvContent = str_replace(","," ",$_REQUEST["nome"]) . "," .
                       str_replace(","," ",$_REQUEST["cpf"]) . "," .
                       str_replace(","," ",$_REQUEST["rg"]) . "," .
-                      str_replace(","," ", $_REQUEST["datanasc"]) . "," .
+                      str_replace(","," ",$_REQUEST["datanasc"]) . "," .
                       str_replace(","," ",$_REQUEST["email"]) . "," .
                       str_replace(","," ",$_REQUEST["telefone"]) . "," .
                       str_replace(","," ",$_REQUEST["celular"]) . "," .
