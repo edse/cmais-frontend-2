@@ -118,6 +118,9 @@
                 if(posicao <= 0){
                   posicao = 1;
                 }
+                if(posicao == 2){
+                  posicao = 2;
+                }
                 
                 $('#menu-revista').find('li.ativo').removeClass('ativo');
                 //$(this).parent().addClass('ativo');
@@ -128,7 +131,7 @@
               });
               var i = 0; 
               $('#menu-revista').find('li').each(function(index){
-                i = index; 
+                i = index + 1; 
               });
               var cont = 1; 
               var item;
