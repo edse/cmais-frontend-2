@@ -142,7 +142,7 @@
                 console.log(pos)
                 if(pos == 2){
                   console.log("b");
-                  cont = 2;
+                  cont = 1;
                 }else if(pos != 2){
                   console.log("a");
                   cont = parseInt(pos);
