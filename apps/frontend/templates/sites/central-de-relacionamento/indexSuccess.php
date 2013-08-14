@@ -460,7 +460,7 @@ $(document).ready(function(){
                           <p class="help-block">Se aplicável, você receberá uma resposta nesse email.</p>
                         </div>
                       </div>
-                      <div class="control-group">
+                      <div class="control-group f4_mais">
                         <label class="control-label" for="f4_mais"></label>
                         <div class="controls">
                           <label class="checkbox">
@@ -761,6 +761,7 @@ $(document).ready(function(){
                   $('.backForm').click(function(){
                     $('.row').fadeOut('fast',function(){
                       $('#row4').fadeIn('fast');
+                      $('#row4').find('.control-group.f4_mais').show();
                       $('#f4_mais').removeAttr('checked');
                       $('#btn5, #f4_maisinfo,#row4 label.error.valid').hide();
                       $('#btn4, #message').show(); 
