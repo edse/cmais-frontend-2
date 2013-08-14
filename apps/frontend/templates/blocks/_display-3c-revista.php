@@ -114,9 +114,9 @@
              $('.destaque-revista ul li a').click( function(){
                 var posicao = $(this).attr('data-order');
                 
-                
-                posicao = posicao - 1;
                 console.log(posicao)
+                posicao = posicao - 1;
+                
                 
                 if(posicao <= 0){
                   posicao = 1;
