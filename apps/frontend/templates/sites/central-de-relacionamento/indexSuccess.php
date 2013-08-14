@@ -761,7 +761,7 @@ $(document).ready(function(){
                   })
                   $('.change-form').click(function(){
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
-                    $('#message, #btn4').hide();
+                    $('#message, #btn4, .control-label.f4_mais').hide();
                     $('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected') 
                     $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   })
