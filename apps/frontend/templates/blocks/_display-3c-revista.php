@@ -6,7 +6,7 @@
               <div class="destaque-revista">
                 <ul id="menu-revista">
                   <?php foreach($displays as $k=>$d): ?>
-                  <li<?php if($k==0) echo ' class="ativo"';?>><a data-order="<?php echo $k + 1; ?>" id="item<?php echo $k+1;?>" href="javascript:;"><?php echo $d->retriveLabel() ?></a></li>
+                  <li<?php if($k==0) echo ' class="ativo"';?>><a data-order="<?php echo $k?>" id="item<?php echo $k+1;?>" href="javascript:;"><?php echo $d->retriveLabel() ?></a></li>
                   <?php endforeach; ?>
                 </ul>
                 <div id="conteudo-revista">
