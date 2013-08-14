@@ -114,9 +114,9 @@
              $('.destaque-revista ul li a').click( function(){
                 var posicao = $(this).attr('data-order');
                 
-                
-                posicao = posicao - 1;
-                
+                if(posicao == 2){
+                  posicao = posicao - 1;
+                }
                 
                 if(posicao <= 0){
                   posicao = 1;
@@ -146,12 +146,6 @@
                 }else if(pos != 2){
                   console.log("a");
                   cont = parseInt(pos);
-                }else if(pos != 3){
-                  console.log("a1");
-                  cont = parseInt(pos);
-                }else if(pos == 3){
-                  console.log("c");
-                  cont = 3;
                 }
                 
                 item = $('#item'+ cont);
