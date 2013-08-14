@@ -769,6 +769,9 @@ $(document).ready(function(){
                       goTop2();     
                     });
                   });
+                  $('#f4_mais').click(function(){
+                    $(this).parent().parent().parent().hide();
+                  });
                   $.validator.addMethod("cep", function(value, element) {
                     response = (value.indexOf('_')<0) ? true : false;
                     return response;
