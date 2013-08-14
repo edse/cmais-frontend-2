@@ -114,10 +114,16 @@
              $('.destaque-revista ul li a').click( function(){
                 var posicao = $(this).attr('data-order');
                 //console.log(posicao);
-                posicao = posicao - 1;
+                if(posicao != 2){
+                  posicao = posicao - 1;
+                }else{
+                  posicao = 2
+                }
+                
                 if(posicao <= 0){
                   posicao = 1;
                 }
+                
                 
                 $('#menu-revista').find('li.ativo').removeClass('ativo');
                 //$(this).parent().addClass('ativo');
