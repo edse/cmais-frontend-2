@@ -140,10 +140,13 @@
               
               function rodadestaque(pos, clique){
                 if(pos != 2 || pos != 3){
+                  console.log("a");
                   cont = parseInt(pos);
                 }else if(pos == 2){
-                  cont = parseInt(pos) +1;
+                  console.log("b");
+                  cont = 1;
                 }else if(pos == 3){
+                  console.log("c");
                   cont = 3;
                 }
                 
@@ -182,7 +185,7 @@
                 //console.log(item.selector)
                 //console.log(miolo.selector)
                 stoproda(roda);
-                roda = setInterval(function(){rodadestaque(cont)}, 10000);
+                roda = setInterval(function(){rodadestaque(cont)}, 7000);
               }
               
               function stoproda(roda){
