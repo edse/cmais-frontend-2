@@ -520,7 +520,7 @@ $(document).ready(function(){
                           <div class="control-group">
                             <label class="control-label" for="f4_local">Cidade</label>
                             <div class="controls">
-                              <select id="f4_local" name="f4_local"></select>
+                              <select id="f4_local" name="f4_local"></select> 
                             </div>
                           </div>
                         </div><!-- /#brasil -->
