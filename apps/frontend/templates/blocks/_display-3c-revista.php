@@ -115,7 +115,7 @@
                 var posicao = $(this).attr('data-order');
                 
                 
-                posicao = posicao;
+                posicao = posicao - 1;
                 
                 
                 if(posicao <= 0){
