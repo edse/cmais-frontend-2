@@ -15,8 +15,8 @@ $(document).ready(function(){
 
 	$("#jquery_jplayer_2").jPlayer({
 		ready: function () {
-			$(this).jPlayer("setMedia", stream {
-				mp3: "http://midiaserver.tvcultura.com.br:8003/;stream/1"
+			$(this).jPlayer("setMedia", {
+				mp3: "http://midiaserver.tvcultura.com.br:8001/;stream/1"
 			});
 		},
 		play: function() { // To avoid both jPlayers playing together..
@@ -53,7 +53,7 @@ $(document).ready(function(){
 		},
 		swfPath: "swf",
 		supplied: "mp3",
-		//solution: 'html, flash',
+		//solution: 'flash',
 		cssSelectorAncestor: "#jp_container_3"
 		//wmode: "window"
 	});
