@@ -140,15 +140,15 @@
               
               function rodadestaque(pos, clique){
                 console.log(pos)
-                if(pos != 2){
+                if(pos == 2){
+                  console.log("b");
+                  cont = 2;
+                }else if(pos != 2){
                   console.log("a");
                   cont = parseInt(pos);
                 }else if(pos != 3){
                   console.log("a1");
                   cont = parseInt(pos);
-                }else if(pos == 2){
-                  console.log("b");
-                  cont = 1;
                 }else if(pos == 3){
                   console.log("c");
                   cont = 3;
