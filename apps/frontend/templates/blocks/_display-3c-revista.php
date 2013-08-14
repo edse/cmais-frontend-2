@@ -116,7 +116,7 @@
                 
                 
                 posicao = posicao - 1;
-                
+                console.log(posicao)
                 
                 if(posicao <= 0){
                   posicao = 1;
