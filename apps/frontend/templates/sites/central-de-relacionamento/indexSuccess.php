@@ -1148,7 +1148,7 @@ $(document).ready(function(){
                     $('#btn4').hide();
                     $('#message').hide();
                     $('#f4_cod_programa').attr('value','--');
-                    $('#f4_cod_programa, #f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
+                    $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   }else{
                     $('#f4_maisinfo').hide();
                     $('#btn5').hide();
