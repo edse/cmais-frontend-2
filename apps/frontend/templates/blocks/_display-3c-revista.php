@@ -117,7 +117,7 @@
                 if(posicao != 2){
                   posicao = posicao - 1;
                 }else{
-                  posicao = posicao
+                  posicao = 2
                 }
                 
                 if(posicao <= 0){
