@@ -298,7 +298,7 @@ else if(($_REQUEST["step"]==3)&&($_REQUEST["nome"]!="")){
   die();
   */
 }
-else if(($_REQUEST["step"]==4)&&($_REQUEST["f4_cod_programa"]!="--") || ($_REQUEST["step"]==4)&&($_REQUEST["f4_cod_programa"]!="00") ){
+else if(($_REQUEST["step"]==4)&&($_REQUEST["f4_cod_programa"]!="--") || ($_REQUEST["step"]==4)&&($_REQUEST["f4_cod_programa"]!="sem programa") ){
   $result = $client->valida_email(array('email'=>$_REQUEST["email"]));
   $xml = simplexml_load_string($result->valida_emailResult->any);
   $usuario = $xml->NewDataSet->usuario;
