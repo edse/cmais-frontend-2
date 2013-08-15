@@ -313,7 +313,7 @@ else if(($_REQUEST["step"]==4)&&($_REQUEST["f4_cod_programa"]!="--")){
     );
     $result = $client->insere_mensagem($arr);
     if($result->insere_mensagemResult > 0){
-      $script = 'alert(teste)';//'$("#row1, #row2, #row3, #row4, #row5, #row7, #row8, #row9").hide();$("#row6").show();';
+      $script = '$("#row1, #row2, #row3, #row4, #row5, #row7, #row8, #row9").hide();$("#row6").show();';
       $title = 'Mensagem enviada';
       if(isset($_REQUEST["f4_mais"]))
         $title = 'Cadastro atualizado e mensagem enviada';
@@ -368,7 +368,7 @@ else if(($_REQUEST["step"]==4)&&($_REQUEST["f4_mais"]!="")){
     $result = $client->altera_pessoa($arr);
     
     if($result->altera_pessoaResult > 0){
-      $script = '$("#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row8").hide();$("#row9").show();';
+      $script = 'alert(teste)';//'$("#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row8").hide();$("#row9").show();';
       $title = 'Cadastro atualizado';
       echo json_encode(array('script'=>$script,'title'=>$title,'msg'=>'Seu cadastro foi alterado com sucesso.', 'form'=>'form9'));
     }else{
