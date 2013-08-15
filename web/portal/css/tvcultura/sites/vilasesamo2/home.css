@@ -19,3 +19,4 @@
 #slider .mpc_ls_slides_thumbs.style02 .mpc_ls_thumb { background:#fcbb00; border:2px solid #FEE133; border-radius: 8px; }
 #slider .mpc_ls_slides_thumbs.style02 .mpc_ls_thumb.active { background:#feff33;  border:2px solid #fcbb00; }
 #slider .mpc_ls_slides_thumbs.style01 { box-shadow: inset 0 1px 1px red;}
+.divisa.tipo2 { background: url("/portal/images/capaPrograma/vilasesamo2/pattern-divisa2.jpg") repeat-x; height: 2px; margin:0 auto; }
