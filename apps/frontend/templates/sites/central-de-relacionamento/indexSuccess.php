@@ -681,7 +681,7 @@ $(document).ready(function(){
                   <div class="alert alert-block alert-success fade in">
                     <h4 class="alert-heading">Sua mensagem foi enviada!</h4>
                     <p>O que vc quer fazer agora?</p>
-                    <a class="btn btn-success backForm enviar-outra"> Enviar outra mensagem</a>
+                    <a class="btn btn-success enviar-outra"> Enviar outra mensagem</a>
                     <a class="btn btn-success change-form" href="javascript:;"> Alterar seu cadastro</a>
                   </div>
                 </div>
