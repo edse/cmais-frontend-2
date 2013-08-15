@@ -681,7 +681,7 @@ $(document).ready(function(){
                   <div class="alert alert-block alert-success fade in">
                     <h4 class="alert-heading">Sua mensagem foi enviada!</h4>
                     <p>O que vc quer fazer agora?</p>
-                    <a class="btn btn-success backForm enviar-outra" href="http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email=<?php echo $_REQUEST["f4_email2"]?>"> Enviar outra mensagem</a>
+                    <a class="btn btn-success backForm enviar-outra"> Enviar outra mensagem</a>
                     <a class="btn btn-success change-form" href="javascript:;"> Alterar seu cadastro</a>
                   </div>
                 </div>
@@ -851,6 +851,7 @@ $(document).ready(function(){
                         url: "/crm-form/soap.php",
                         data: $("#form1").serialize(),
                         beforeSend: function(){
+                          $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+$('#f4_email2').val())
                           $('#loader1').show();
                           $('#btn1').hide();
                         },
