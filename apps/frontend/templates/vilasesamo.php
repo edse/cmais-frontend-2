@@ -108,7 +108,7 @@
             <h1>Menu</h1>
             
           </button>
-          <h2><a href="#" class="sprite-logo-incluir" title="Incluir Brincando" title="Incluir Brincando">Incluir Brincando</a></h2>
+         
           <nav class="nav-collapse collapse">
             <form class="form-search">
               <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';">
@@ -116,11 +116,7 @@
             </form>
             <ul class="nav">
               <li>
-                <a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis" target="_blank">Hábitos Saudáveis</a>
-                <span class="sprite-menu-ball"></span>
-              </li>
-              <li>
-                <a href="/vilasesamo2/paraospais" title="Para os pais" target="_blank">Para os pais</a>
+                <a href="/vilasesamo2/paraospais" title="Para os pais" target="_blank">Para adultos</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>

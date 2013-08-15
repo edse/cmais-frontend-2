@@ -681,7 +681,7 @@ $(document).ready(function(){
                   <div class="alert alert-block alert-success fade in">
                     <h4 class="alert-heading">Sua mensagem foi enviada!</h4>
                     <p>O que vc quer fazer agora?</p>
-                    <a class="btn btn-success backForm enviar-outra"> Enviar outra mensagem</a>
+                    <a class="btn btn-success enviar-outra"> Enviar outra mensagem</a>
                     <a class="btn btn-success change-form" href="javascript:;"> Alterar seu cadastro</a>
                   </div>
                 </div>
@@ -725,7 +725,7 @@ $(document).ready(function(){
                     <h4 class="alert-heading">Obrigado. Seu cadastro foi alterado com sucesso!</h4>
                     <p></p>
                     <p>
-                      <button class="btn btn-success backForm">Continuar Envio</button>
+                      <a class="btn btn-success enviar-outra">Continuar Envio</a>
                     </p>
                   </div>
                 </div>
@@ -766,6 +766,7 @@ $(document).ready(function(){
                     beginAgain();
                   });
                   $('.change-form').click(function(){
+                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email)
                     $('#f4_mais').attr('checked','checked');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
                     $('#row6, #message, #btn4').hide();
