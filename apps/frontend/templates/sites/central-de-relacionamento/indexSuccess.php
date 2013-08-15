@@ -881,7 +881,7 @@ $(document).ready(function(){
                         required: function(element) {
                           if($("#f2_sms:checked").length!=0){
                             return $("#f2_sms:checked").length!=0 ? true : false
-                          else if($("#f2_newsletter:checked").length!=0){  
+                          }else if($("#f2_newsletter:checked").length!=0){  
                             return $("#f2_newsletter:checked").length!=0 ? true : false
                           }
                         }
@@ -965,7 +965,7 @@ $(document).ready(function(){
                         required: function(element) {
                           if($("#f3_sms:checked").length!=0){
                             return $("#f3_sms:checked").length!=0 ? true : false
-                          else if($("#f3_newsletter:checked").length!=0){  
+                          }else if($("#f3_newsletter:checked").length!=0){  
                             return $("#f3_newsletter:checked").length!=0 ? true : false
                           }
                         }
@@ -1085,7 +1085,7 @@ $(document).ready(function(){
                         required: function(element) {
                           if($("#f4_sms:checked").length!=0){
                             return $("#f4_sms:checked").length!=0 ? true : false
-                          else if($("#f4_newsletter:checked").length!=0){  
+                          }else if($("#f4_newsletter:checked").length!=0){  
                             return $("#f4_newsletter:checked").length!=0 ? true : false
                           }
                         }
