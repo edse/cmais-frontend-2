@@ -757,26 +757,18 @@ $(document).ready(function(){
                      goTop();
                   });
                   $('#btn5').click(function(){
-                    $('.enviar-outra').addClass('backForm');
+                    email = $('#f4_email2').val();
+                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email);
                   });
                   $('#btn4').click(function(){
                     email = $('#f4_email2').val();
                     $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email);
-                    $('.enviar-outra').removeClass('backForm');
-                    console.log(email);
                   });
                   $('.backBegin, .outro-email').click(function(){
                     goTop();
                     beginAgain();
                   });
-                  $('.change-form').click(function(){
-                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email)
-                    $('#f4_mais').attr('checked','checked');
-                    $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
-                    $('#row6, #message, #btn4').hide();
-                    $('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected') 
-                    $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
-                  });
+                  
                   $('.backForm').live("click", function(){
                     $('.row').fadeOut('fast',function(){
                       $('#row4').fadeIn('fast');
