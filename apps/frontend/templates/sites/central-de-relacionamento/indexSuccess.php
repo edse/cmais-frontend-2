@@ -1084,7 +1084,7 @@ $(document).ready(function(){
                         required: "#f4_mais:!checked"
                       },
                       f4_cod_programa: {
-                        required: true //"#f4_mais:!checked"
+                        required: "#f4_mais:!checked"
                       },
                       f4_cod_veiculo: {
                         required: "#f4_mais:!checked"
@@ -1197,6 +1197,7 @@ $(document).ready(function(){
                     $('#btn5').hide();
                     $('#btn4').show();
                     $('#message').show();
+                    $('#f4_cod_programa').attr('value','');
                     $('#f4_cod_programa, #f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
                   }
                   if($('#f3_mais').attr('checked')){
@@ -1250,7 +1251,7 @@ $(document).ready(function(){
                       if(data.script != ""){
                         eval(data.script);
                         if($('#f4_cod_programa option').size()<=1){
-                            $('#f4_cod_programa option').val("00").html("sem programa");
+                            $('#f4_cod_programa option').val("00").html("sem programa").attr('val','--');
                             $('#f4_cod_assunto').html('<option value="19">Elogio</option><option value="21">Crítica</option><option value="23">Comentário</option><option value="24">Pedido de Informação</option>');
                           }else{  
                             $('#f4_cod_assunto option').html('--').css('display','none');
