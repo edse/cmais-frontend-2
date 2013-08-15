@@ -736,6 +736,7 @@ $(document).ready(function(){
                 <script>
                 
                 $(document).ready(function(){
+                  var email = '';
                   $(".dicas").click(function(){
                     $(this).prev().toggleClass('icon-minus');
                   });
@@ -755,9 +756,12 @@ $(document).ready(function(){
                   $('.fechar').click(function(){
                      goTop();
                   });
-                  var email = '';
-                  $('.backBegin, .outro-email').click(function(){
+                  $('#btn4').click(function(){
                     email = $('#f4_email2').val();
+                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email)
+                    console.log(email);
+                  });
+                  $('.backBegin, .outro-email').click(function(){
                     goTop();
                     beginAgain();
                   });
@@ -853,7 +857,6 @@ $(document).ready(function(){
                         url: "/crm-form/soap.php",
                         data: $("#form1").serialize(),
                         beforeSend: function(){
-                          $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email)
                           $('#loader1').show();
                           $('#btn1').hide();
                         },
