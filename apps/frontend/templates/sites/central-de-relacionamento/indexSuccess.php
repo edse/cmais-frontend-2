@@ -884,7 +884,7 @@ $(document).ready(function(){
                           }else if($("#f2_newsletter:checked").length!=0){  
                             return $("#f2_newsletter:checked").length!=0 ? true : false
                           }else{
-                            false
+                            false 
                           }
                         }
                       },
