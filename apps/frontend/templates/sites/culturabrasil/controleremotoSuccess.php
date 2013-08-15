@@ -154,7 +154,7 @@
         
         <!-- imagem -->
         <div class="cr-img-pgm">
-          <img src="/portal/images/capaPrograma/culturabrasil/controleremoto/cr-img-layout.jpg" alt="Nome Pgm" />
+          <img src="/portal/control-remoto/css/cr-img-layout.jpg" alt="Nome Pgm" />
         </div>  
         <!-- /imagem -->
         
