@@ -97,6 +97,7 @@
       <!--/lista-->
     </div>
     <!--/Inicio-->
+    <span class="divisa tipo2"></span>
   </section>
   <!-- /carrossel desktop-->
   <!--scripts e css banner-->
