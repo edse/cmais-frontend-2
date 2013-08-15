@@ -620,7 +620,13 @@ $(document).ready(function(){
                           </select>
                         </div>
                       </div>
-                      <div class="control-group f4" style="display:none;">
+                      <div class="control-group">
+                      <label class="control-label" for="f2_cod_recepcaodesinal">Recepção do sinal</label>
+                      <div class="controls">
+                        <select id="f2_cod_recepcaodesinal" name="f2_cod_recepcaodesinal"></select>
+                      </div>
+                    </div>
+                      <div class="control-group f4">
                         <label class="control-label" for="f4_cod_programa">Programa</label>
                         <div class="controls">
                           <select name="f4_cod_programa" id="f4_cod_programa" onchange="assuntos();">
@@ -628,13 +634,13 @@ $(document).ready(function(){
                           </select>
                         </div>
                       </div>
-                      <div class="control-group f4" style="display:none;">
+                      <div class="control-group f4">
                         <label class="control-label" for="f4_cod_assunto">Assunto</label>
                         <div class="controls">
                           <select name="f4_cod_assunto" id="f4_cod_assunto"></select>
                         </div>
                       </div>
-                      <div class="control-group f4" style="display:none;">
+                      <div class="control-group f4">
                         <label class="control-label" for="f4_mensagem">Mensagem</label>
                         <div class="controls">
                           <textarea class="input-xlarge" id="f4_mensagem" name="f4_mensagem" rows="5"></textarea>
@@ -776,7 +782,7 @@ $(document).ready(function(){
                   $('.backForm').click(function(){
                     $('.row').fadeOut('fast',function(){
                       $('#row4').fadeIn('fast');
-                      $('#row4').find('.control-group.f4_mais').show();
+                      //$('#row4').find('.control-group.f4_mais').show();
                       $('#f4_mais').removeAttr('checked');
                       $('#btn5, #f4_maisinfo,#row4 label.error.valid').hide();
                       $('#btn4, #message').show(); 
@@ -1227,7 +1233,7 @@ $(document).ready(function(){
                       }
                     }
                   });
-                  $('.control-group.f4').slideDown('fast');
+                  //$('.control-group.f4').slideDown('fast');
                 }
                 
                 function assuntos(){
