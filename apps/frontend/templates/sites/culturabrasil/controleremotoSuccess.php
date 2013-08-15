@@ -7,9 +7,9 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
-    <link rel="stylesheet" type="text/css" href="css/controleremoto.css">
-    <link href="css/jPlayer.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/jplayer.blue.monday.css" type="text/css" media="all" />    
+    <link rel="stylesheet" type="text/css" href="controle-remoto/css/controleremoto.css">
+    <link href="controle-remoto/css/jPlayer.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />    
     <!-- DFP >
     <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
     <script type='text/javascript'>
