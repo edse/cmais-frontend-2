@@ -681,7 +681,7 @@ $(document).ready(function(){
                   <div class="alert alert-block alert-success fade in">
                     <h4 class="alert-heading">Sua mensagem foi enviada!</h4>
                     <p>O que vc quer fazer agora?</p>
-                    <a class="btn btn-success backForm enviar-outra" href="javascript:;"> Enviar outra mensagem</a>
+                    <a class="btn btn-success backForm enviar-outra"> Enviar outra mensagem</a>
                     <a class="btn btn-success change-form" href="javascript:;"> Alterar seu cadastro</a>
                   </div>
                 </div>
@@ -759,15 +759,12 @@ $(document).ready(function(){
                     goTop();
                     beginAgain();
                   })
-                  $('.backForm.enviar-outra').click(function(){
-                    $('#f4_cod_veiculo').val('--');
-                    $('.control-group.f4').hide();
-                   
-                  });
                   $('.change-form').click(function(){
+                    $('#f4_mais').attr('checked','checked');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
-                    $('#message, #btn4').hide();  
-                    $('#f4_cod_programa, #f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
+                    $('#row6, #message, #btn4').hide();
+                    $('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected') 
+                    $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   })
                   $('.backForm').click(function(){
                     $('.row').fadeOut('fast',function(){
@@ -854,6 +851,7 @@ $(document).ready(function(){
                         url: "/crm-form/soap.php",
                         data: $("#form1").serialize(),
                         beforeSend: function(){
+                          $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+$('#f4_email2').val())
                           $('#loader1').show();
                           $('#btn1').hide();
                         },
@@ -1157,7 +1155,7 @@ $(document).ready(function(){
                     $('#btn4').hide();
                     $('#message').hide();
                     $('#f4_cod_programa').attr('value','--');
-                    $('#f4_cod_programa, #f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
+                    $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   }else{
                     $('#f4_maisinfo').hide();
                     $('#btn5').hide();
