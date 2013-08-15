@@ -769,8 +769,9 @@ $(document).ready(function(){
                     $('#btn6').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email);
                   })
                   $('#btn5').click(function(){
-                    email = $('#f4_email2').val();
-                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email);
+                    //email = $('#f4_email2').val();
+                    //$('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email);
+                    set_checked(false)
                   });
                   $('#btn4').click(function(){
                     email = $('#f4_email2').val();
@@ -1212,6 +1213,10 @@ $(document).ready(function(){
                   }else{
                     $('#f2_maisinfo').hide();
                   }
+                }
+                
+                function set_checked(checked) {
+                  $('input[name=f4_mais]').attr('checked', checked);
                 }
                 
                 function municipios(form){
