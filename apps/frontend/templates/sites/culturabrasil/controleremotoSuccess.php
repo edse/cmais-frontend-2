@@ -47,7 +47,12 @@
       <script type="text/javascript">
       //<![CDATA[
       $(document).ready(function(){
-      
+        
+        if(window.screen.width < 1024){
+          $(".jp-volume_controls").hide();
+          $(".jp-volume-bar").hide();
+        }
+        
         $("#jquery_jplayer_2").jPlayer({
           ready: function () {
             $(this).jPlayer("setMedia", {
@@ -119,9 +124,11 @@
               <li><a href="javascript:;" id="btn-brasil" class="pl" title="Cultura Brasil" >Cultura Brasil</a></li>
               <li><a href="javascript:;" class="jp-pause" tabindex="1" title="Pause">pause</a></li>
               <li><a href="javascript:;" class="jp-stop" tabindex="1" title="Stop">stop</a></li>
-              <li><a href="javascript:;" class="jp-mute" tabindex="1" title="Mute">mute</a></li>
-              <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="">unmute</a></li>
-              <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="Volume Máximo">max volume</a></li>
+              <div class="jp-volume_controls">
+                <li><a href="javascript:;" class="jp-mute" tabindex="1" title="Mute">mute</a></li>
+                <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="">unmute</a></li>
+                <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="Volume Máximo">max volume</a></li>
+              </div>
             </ul>
             <div class="jp-progress">
               <div class="jp-seek-bar">

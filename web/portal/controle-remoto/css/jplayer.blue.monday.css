@@ -446,3 +446,7 @@ div.jp-video-360p div.jp-jplayer {
 div.jp-jplayer {
 	background-color: #000000;
 }
+
+.jp-volume_controls{
+  display: block;  
+}
