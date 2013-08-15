@@ -880,6 +880,7 @@ $(document).ready(function(){
                       f2_telefone: {
                         required: function(element) {
                           return $("#f2_sms:checked").length!=0 ? true : false
+                          return $("#f2_newsletter").length!=0 ? true : false
                         }
                       },
                       f2_nome: {
@@ -960,6 +961,7 @@ $(document).ready(function(){
                       f3_telefone: {
                         required: function(element) {
                           return $("#f3_sms:checked").length!=0 ? true : false
+                          return $("#f3_newsletter").length!=0 ? true : false
                         }
                       },
                       f3_cep: {
@@ -1076,6 +1078,7 @@ $(document).ready(function(){
                       f4_telefone: {
                         required: function(element) {
                           return $("#f4_sms:checked").length!=0 ? true : false
+                          return $("#f4_newsletter").length!=0 ? true : false
                         }
                       }
                     },
