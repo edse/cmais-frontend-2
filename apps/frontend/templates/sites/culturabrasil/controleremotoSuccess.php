@@ -161,7 +161,11 @@
         
         
         
-   <?php if(isset($schedules)): ?>
+   <?php echo "Schedules:". $schedules; 
+   
+   if(isset($schedules)): 
+   
+   ?>
       <!--lista grade -->
       <div class="lista-grade">
         
@@ -315,7 +319,7 @@
         
         <div class="cr-linha"></div>
         
-        <a href="#" class="cr-pgm-completa" title="Veja nossa programação completa">programação completa » </a>
+        <a href="http://cmais.com.br/culturabrasil/programacao" class="cr-pgm-completa" title="Veja nossa programação completa">programação completa » </a>
         
       </section>  
       <!-- /lista a seguir -->
