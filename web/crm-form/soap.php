@@ -368,7 +368,7 @@ else if(($_REQUEST["step"]==4)&&($_REQUEST["f4_mais"]!="")){
     $result = $client->altera_pessoa($arr);
     
     if($result->altera_pessoaResult > 0){
-      $script = '$("#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row8").hide();$("#row9").show();';
+      $script = '$("#row1, #row2, #row3, #row9, #row5, #row6, #row7, #row8").hide();$("#row4").show();';
       $title = 'Cadastro atualizado';
       echo json_encode(array('script'=>$script,'title'=>$title,'msg'=>'Seu cadastro foi alterado com sucesso.', 'form'=>'form9'));
     }else{
