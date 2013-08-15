@@ -725,7 +725,7 @@ $(document).ready(function(){
                     <h4 class="alert-heading">Obrigado. Seu cadastro foi alterado com sucesso!</h4>
                     <p></p>
                     <p>
-                      <button class="btn btn-success enviar-outra">Continuar Envio</button>
+                      <a class="btn btn-success enviar-outra">Continuar Envio</a>
                     </p>
                   </div>
                 </div>
