@@ -141,7 +141,7 @@ $(document).ready(function(){
                     <div class="control-group">
                       <label class="control-label" for="f2_cod_recepcaodesinal">Recepção do sinal</label>
                       <div class="controls">
-                        <select id="f2_cod_recepcaodesinal" name="f2_cod_recepcaodesinal"></select>
+                        <select id="f2_cod_recepcaodesinal" size="3" name="f2_cod_recepcaodesinal"></select>
                       </div>
                     </div>
                     <div class="control-group">
