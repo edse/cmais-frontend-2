@@ -17,5 +17,5 @@
 /* /carrossel personagem */
 
 #slider .mpc_ls_slides_thumbs.style02 .mpc_ls_thumb { background:#fcbb00; }
-#slider .mpc_ls_slides_thumbs.style02 .active { background:red; }
+#slider .mpc_ls_slides_thumbs.style02 .mpc_ls_thumb.active { background:red; }
 #slider .mpc_ls_slides_thumbs.style01 { box-shadow: inset 0 1px 1px red;}
