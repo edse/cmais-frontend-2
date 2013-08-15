@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="/portal/controle-remoto/css/controleremoto.css">
     <link href="/portal/controle-remoto/css/jPlayer.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/portal/controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />    
-    <-- DFP >
+    <!--DFP -->
     <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
     <script type='text/javascript'>
     GS_googleAddAdSenseService("ca-pub-6681834746443470");
@@ -22,7 +22,7 @@
     <script type='text/javascript'>
     GA_googleFetchAds();
     </script>
-    <-- /DFP >
+    <!-- /DFP -->
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -40,7 +40,6 @@
       <script src="/portal/controle-remoto/js/jquery.min.js" type="text/javascript"></script>
       <script src="/portal/controle-remoto/js/main.js" type="text/javascript"></script>
       
-      <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script-->
       <script src="/portal/controle-remoto/js/jquery.min-1.8.js" type="text/javascript"></script>
       <script src="/portal/controle-remoto/js/jquery.jplayer.min.js" type="text/javascript"></script>
       <script type="text/javascript" src="/portal/controle-remoto/js/jquery.jplayer.inspector.js"></script>
@@ -259,7 +258,7 @@
         <div class="cr-box-banner">
           
           <script type='text/javascript'>
-            //GA_googleFillSlot("cultura-brasil");
+            GA_googleFillSlot("cultura-brasil");
           </script>
           
         </div>
