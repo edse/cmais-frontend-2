@@ -368,7 +368,7 @@ else if(($_REQUEST["step"]==4)&&($_REQUEST["f4_mais"]!="")){
     $result = $client->altera_pessoa($arr);
     
     if($result->altera_pessoaResult > 0){
-      $script = '$("#row1, #row2, #row3, #row9, #row5, #row6, #row7, #row8").hide();$("#row4, #message, .control-group.f4_mais, #row9").show();$("#f4_maisinfo, #btn5").hide();set_checked(false);$("#row9").delay(3000).slideUp("fast");$('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').removeAttr('disabled');$("#row4").find(".success").each(function(){$(this).removeClass("success")});';
+      $script = '$("#row1, #row2, #row3, #row9, #row5, #row6, #row7, #row8").hide();$("#row4, #message, .control-group.f4_mais, #row9").show();$("#f4_maisinfo, #btn5").hide();set_checked(false);$("#row9").delay(3000).slideUp("fast");$("#row4").find(".success").each(function(){$(this).removeClass("success")});';
       $title = 'Cadastro atualizado';
       echo json_encode(array('script'=>$script,'title'=>$title,'msg'=>'Seu cadastro foi alterado com sucesso.', 'form'=>'form9'));
     }else{
