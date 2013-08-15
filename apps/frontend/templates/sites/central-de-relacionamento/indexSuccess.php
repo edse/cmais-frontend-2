@@ -493,7 +493,7 @@ $(document).ready(function(){
                         <div class="control-group">
                           <label class="control-label" for="f4_cod_recepcaodesinal">Recepção do sinal</label>
                           <div class="controls">
-                            <select id="f4_cod_recepcaodesinalb" name="f4_cod_recepcaodesinal"></select>
+                            <select id="f4_cod_recepcaodesinal" name="f4_cod_recepcaodesinal"></select>
                           </div>
                         </div>
                         <div class="control-group">
