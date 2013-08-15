@@ -14,6 +14,7 @@
 #slider .mpc_ls_next_slide.style02 { background-position: 0 -1272px; }
 .navbar-inverse .navbar-inner.topo-vila { background:  url("/portal/images/capaPrograma/vilasesamo2/bg-topo-vila-home.jpg") repeat-x; height:55px; }
 #content { top:51px; }
+/* /carrossel personagem */
 
 .mpc_ls_slides_thumbs.style02 .mpc_ls_thumb { background:#fcbb00; }
-/* /carrossel personagem */
+.mpc_ls_slides_thumbs.style01 .mpc_ls_thumb_inside { box-shadow: inset 0 1px 1px red;}
