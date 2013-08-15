@@ -771,7 +771,7 @@ $(document).ready(function(){
                   $('#btn5').click(function(){
                     //email = $('#f4_email2').val();
                     //$('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email);
-                    set_checked(false)
+                    //set_checked(false)
                   });
                   $('#btn4').click(function(){
                     email = $('#f4_email2').val();
