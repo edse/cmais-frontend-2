@@ -681,7 +681,7 @@ $(document).ready(function(){
                   <div class="alert alert-block alert-success fade in">
                     <h4 class="alert-heading">Sua mensagem foi enviada!</h4>
                     <p>O que vc quer fazer agora?</p>
-                    <a class="btn btn-success backForm enviar-outra"> Enviar outra mensagem</a>
+                    <a class="btn btn-success enviar-outra"> Enviar outra mensagem</a>
                     <a class="btn btn-success change-form" href="javascript:;"> Alterar seu cadastro</a>
                   </div>
                 </div>
@@ -725,7 +725,7 @@ $(document).ready(function(){
                     <h4 class="alert-heading">Obrigado. Seu cadastro foi alterado com sucesso!</h4>
                     <p></p>
                     <p>
-                      <button class="btn btn-success backForm">Continuar Envio</button>
+                      <a class="btn btn-success enviar-outra">Continuar Envio</a>
                     </p>
                   </div>
                 </div>
@@ -736,6 +736,7 @@ $(document).ready(function(){
                 <script>
                 
                 $(document).ready(function(){
+                  var email = '';
                   $(".dicas").click(function(){
                     $(this).prev().toggleClass('icon-minus');
                   });
@@ -755,17 +756,23 @@ $(document).ready(function(){
                   $('.fechar').click(function(){
                      goTop();
                   });
+                  $('#btn4').click(function(){
+                    email = $('#f4_email2').val();
+                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email)
+                    console.log(email);
+                  });
                   $('.backBegin, .outro-email').click(function(){
                     goTop();
                     beginAgain();
-                  })
+                  });
                   $('.change-form').click(function(){
+                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email)
                     $('#f4_mais').attr('checked','checked');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
                     $('#row6, #message, #btn4').hide();
                     $('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected') 
                     $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
-                  })
+                  });
                   $('.backForm').click(function(){
                     $('.row').fadeOut('fast',function(){
                       $('#row4').fadeIn('fast');
@@ -851,7 +858,6 @@ $(document).ready(function(){
                         url: "/crm-form/soap.php",
                         data: $("#form1").serialize(),
                         beforeSend: function(){
-                          $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+$('#f4_email2').val())
                           $('#loader1').show();
                           $('#btn1').hide();
                         },
