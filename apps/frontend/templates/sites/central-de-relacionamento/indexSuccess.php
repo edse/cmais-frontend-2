@@ -1084,7 +1084,7 @@ $(document).ready(function(){
                         required: "#f4_mais:!checked"
                       },
                       f4_cod_programa: {
-                        required: "#f4_mais:!checked"
+                        required: true//"#f4_mais:!checked"
                       },
                       f4_cod_veiculo: {
                         required: "#f4_mais:!checked"
