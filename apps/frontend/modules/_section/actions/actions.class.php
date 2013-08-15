@@ -129,6 +129,10 @@ class _sectionActions extends sfActions
         $this->setLayout(false);
       }      
       
+      if($this->site->getSlug() == "culturafm" && $this->section->getSlug()=="controleremoto"){
+        $this->setLayout(false);
+      }   
+
       if(($this->site->getSlug() == "culturafm")&&($this->section->getSlug()=="controle-remoto")){
         $this->setLayout(false);
       }elseif($this->site->getSlug() == "prontoatendimento"){
