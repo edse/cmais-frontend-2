@@ -756,9 +756,13 @@ $(document).ready(function(){
                   $('.fechar').click(function(){
                      goTop();
                   });
+                  $('#btn5').click(function(){
+                    $('.enviar-outra').addClass('backForm');
+                  });
                   $('#btn4').click(function(){
                     email = $('#f4_email2').val();
                     $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email)
+                    $('.enviar-outra').removeClass('backForm');
                     console.log(email);
                   });
                   $('.backBegin, .outro-email').click(function(){
