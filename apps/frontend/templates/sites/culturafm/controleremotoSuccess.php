@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="/portal/controle-remoto/css/controleremoto.css">
     <link href="/portal/controle-remoto/css/jPlayer.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/portal/controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />    
-    <-- DFP >
+    <!-- DFP >
     <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
     <script type='text/javascript'>
     GS_googleAddAdSenseService("ca-pub-6681834746443470");
@@ -22,7 +22,7 @@
     <script type='text/javascript'>
     GA_googleFetchAds();
     </script>
-    <-- /DFP >
+    <!-- /DFP >
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -35,7 +35,7 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    </script>
+    </script-->
 
       <script src="/portal/controle-remoto/js/jquery.min.js" type="text/javascript"></script>
       <script src="/portal/controle-remoto/js/main.js" type="text/javascript"></script>
