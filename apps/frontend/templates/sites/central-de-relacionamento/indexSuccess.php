@@ -647,6 +647,7 @@ $(document).ready(function(){
                         <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader4" />
                         <button type="submit" class="btn btn-primary" id="btn4">Enviar Mensagem</button>
                         <button type="submit" class="btn btn-primary" id="btn5" style="display:none">Salvar Cadastro Alterado</button>
+                        <a type="submit" class="btn btn-danger" href="http://cmais.com.br/frontend_dev.php/central-de-relacionamento" id="btn6">Cancelar</a>
                       </div>
                       
                     </fieldset>
