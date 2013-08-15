@@ -766,6 +766,7 @@ $(document).ready(function(){
                     beginAgain();
                   });
                   $('.change-form').click(function(){
+                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email)
                     $('#f4_mais').attr('checked','checked');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
                     $('#row6, #message, #btn4').hide();
