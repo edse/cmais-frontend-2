@@ -490,12 +490,7 @@ $(document).ready(function(){
                             <select id="f4_cod_sexo" name="f4_cod_sexo"></select>
                           </div>
                         </div>
-                        <div class="control-group">
-                          <label class="control-label" for="f4_cod_recepcaodesinal">Recepção do sinal</label>
-                          <div class="controls">
-                            <select id="f4_cod_recepcaodesinal" name="f4_cod_recepcaodesinal"></select>
-                          </div>
-                        </div>
+                         
                         <div class="control-group">
                           <label class="control-label" for="f4_exterior">Reside no exterior?</label>
                           <div class="controls">
