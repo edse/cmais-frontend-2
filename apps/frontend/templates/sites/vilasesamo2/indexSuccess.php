@@ -1,7 +1,3 @@
-
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
-<link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
-
 <!--scripts e css banner-->
 <script type="text/javascript" src="/portal/js/layer-slider/jQuery.layerSlider.js"></script>
 <script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
@@ -11,8 +7,8 @@
 <link rel="stylesheet" href="/portal/js/layer-slider/model06/jquery.layerSlider.css">
 <link rel="stylesheet" href="/portal/js/layer-slider/model06/main.css">
 
-
-
+<link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
 
 <div id="content">
   <!-- HEADER -->
@@ -43,6 +39,7 @@
     }
    ?>
   <!-- /HEADER -->
+  
 
   <!--carrossel personagens-->
   <?php include_partial_from_folder('sites/vilasesamo2', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>

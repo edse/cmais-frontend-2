@@ -620,7 +620,7 @@ $(document).ready(function(){
                           </select>
                         </div>
                       </div>
-                      <div class="control-group f4" style="display:none;">
+                      <div class="control-group f4">
                         <label class="control-label" for="f4_cod_programa">Programa</label>
                         <div class="controls">
                           <select name="f4_cod_programa" id="f4_cod_programa" onchange="assuntos();">
@@ -628,13 +628,13 @@ $(document).ready(function(){
                           </select>
                         </div>
                       </div>
-                      <div class="control-group f4" style="display:none;">
+                      <div class="control-group f4">
                         <label class="control-label" for="f4_cod_assunto">Assunto</label>
                         <div class="controls">
                           <select name="f4_cod_assunto" id="f4_cod_assunto"></select>
                         </div>
                       </div>
-                      <div class="control-group f4" style="display:none;">
+                      <div class="control-group f4">
                         <label class="control-label" for="f4_mensagem">Mensagem</label>
                         <div class="controls">
                           <textarea class="input-xlarge" id="f4_mensagem" name="f4_mensagem" rows="5"></textarea>
@@ -756,10 +756,13 @@ $(document).ready(function(){
                   $('.fechar').click(function(){
                      goTop();
                   });
+                  $('#btn5').click(function(){
+                    email = $('#f4_email2').val();
+                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email);
+                  });
                   $('#btn4').click(function(){
                     email = $('#f4_email2').val();
-                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email)
-                    console.log(email);
+                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email);
                   });
                   $('.backBegin, .outro-email').click(function(){
                     goTop();
@@ -773,10 +776,10 @@ $(document).ready(function(){
                     $('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected') 
                     $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   });
-                  $('.backForm').click(function(){
+                  $('.backForm').live("click", function(){
                     $('.row').fadeOut('fast',function(){
                       $('#row4').fadeIn('fast');
-                      $('#row4').find('.control-group.f4_mais').show();
+                      //$('#row4').find('.control-group.f4_mais').show();
                       $('#f4_mais').removeAttr('checked');
                       $('#btn5, #f4_maisinfo,#row4 label.error.valid').hide();
                       $('#btn4, #message').show(); 
@@ -879,7 +882,13 @@ $(document).ready(function(){
                     rules: {
                       f2_telefone: {
                         required: function(element) {
-                          return $("#f2_sms:checked").length!=0 ? true : false
+                          if($("#f2_sms:checked").length!=0){
+                            return $("#f2_sms:checked").length!=0 ? true : false
+                          }else if($("#f2_newsletter:checked").length!=0){  
+                            return $("#f2_newsletter:checked").length!=0 ? true : false
+                          }else{
+                            return false 
+                          }
                         }
                       },
                       f2_nome: {
@@ -959,7 +968,13 @@ $(document).ready(function(){
                       },
                       f3_telefone: {
                         required: function(element) {
-                          return $("#f3_sms:checked").length!=0 ? true : false
+                          if($("#f3_sms:checked").length!=0){
+                            return $("#f3_sms:checked").length!=0 ? true : false
+                          }else if($("#f3_newsletter:checked").length!=0){  
+                            return $("#f3_newsletter:checked").length!=0 ? true : false
+                          }else{
+                            return false
+                          }
                         }
                       },
                       f3_cep: {
@@ -1075,7 +1090,13 @@ $(document).ready(function(){
                       },
                       f4_telefone: {
                         required: function(element) {
-                          return $("#f4_sms:checked").length!=0 ? true : false
+                          if($("#f4_sms:checked").length!=0){
+                            return $("#f4_sms:checked").length!=0 ? true : false
+                          }else if($("#f4_newsletter:checked").length!=0){  
+                            return $("#f4_newsletter:checked").length!=0 ? true : false
+                          }else{
+                            return false
+                          }
                         }
                       }
                     },
@@ -1227,7 +1248,7 @@ $(document).ready(function(){
                       }
                     }
                   });
-                  $('.control-group.f4').slideDown('fast');
+                  //$('.control-group.f4').slideDown('fast');
                 }
                 
                 function assuntos(){
