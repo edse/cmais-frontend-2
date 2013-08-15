@@ -141,7 +141,7 @@ $(document).ready(function(){
                     <div class="control-group">
                       <label class="control-label" for="f2_cod_recepcaodesinal">Recepção do sinal</label>
                       <div class="controls">
-                        <select id="f2_cod_recepcaodesinal" size="3" name="f2_cod_recepcaodesinal"></select>
+                        <select id="f2_cod_recepcaodesinal" name="f2_cod_recepcaodesinal"></select>
                       </div>
                     </div>
                     <div class="control-group">
@@ -879,7 +879,11 @@ $(document).ready(function(){
                     rules: {
                       f2_telefone: {
                         required: function(element) {
-                          return $("#f2_sms:checked").length!=0 ? true : false
+                          if($("#f2_sms:checked").length!=0){
+                            return $("#f2_sms:checked").length!=0 ? true : false
+                          }else if($("#f2_newsletter:checked").length!=0){  
+                            return $("#f2_newsletter:checked").length!=0 ? true : false
+                          }
                         }
                       },
                       f2_nome: {
@@ -959,7 +963,11 @@ $(document).ready(function(){
                       },
                       f3_telefone: {
                         required: function(element) {
-                          return $("#f3_sms:checked").length!=0 ? true : false
+                          if($("#f3_sms:checked").length!=0){
+                            return $("#f3_sms:checked").length!=0 ? true : false
+                          }else if($("#f3_newsletter:checked").length!=0){  
+                            return $("#f3_newsletter:checked").length!=0 ? true : false
+                          }
                         }
                       },
                       f3_cep: {
@@ -1075,7 +1083,11 @@ $(document).ready(function(){
                       },
                       f4_telefone: {
                         required: function(element) {
-                          return $("#f4_sms:checked").length!=0 ? true : false
+                          if($("#f4_sms:checked").length!=0){
+                            return $("#f4_sms:checked").length!=0 ? true : false
+                          }else if($("#f4_newsletter:checked").length!=0){  
+                            return $("#f4_newsletter:checked").length!=0 ? true : false
+                          }
                         }
                       }
                     },
