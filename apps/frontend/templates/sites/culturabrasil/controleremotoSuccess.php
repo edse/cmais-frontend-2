@@ -37,10 +37,10 @@
       })();
     </script-->
 
-      <script src="controle-remoto/js/jquery.min.js" type="text/javascript"></script>
-      <script src="controle-remoto/js/main.js" type="text/javascript"></script>
+      <script src="/portal/js/jquery.min.js" type="text/javascript"></script>
+      <script src="/portal/js/main.js" type="text/javascript"></script>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-      <script src="controle-remoto/js/jquery.jplayer.min.js" type="text/javascript"></script>
+      <script src="/portal/js/jquery.jplayer.min.js" type="text/javascript"></script>
       <script type="text/javascript" src="js/jquery.jplayer.inspector.js"></script>
       <script type="text/javascript">
       //<![CDATA[
@@ -52,7 +52,7 @@
               mp3: "http://midiaserver.tvcultura.com.br:8001/;stream/1"
             }).jPlayer("play");
           },
-          swfPath: "controle-remoto/swf",
+          swfPath: "/portal/controle-remoto/swf",
           supplied: "mp3",
           //solution: 'flash, html',
           cssSelectorAncestor: "#jp_container_2",
