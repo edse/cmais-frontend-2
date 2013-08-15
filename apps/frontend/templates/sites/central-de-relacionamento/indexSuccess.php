@@ -442,6 +442,13 @@ $(document).ready(function(){
                   </form>
                 </div>
                 <!-- /row3 -->
+                <!-- row 9-->
+                <div class="row" id="row9">
+                  <div class="alert alert-block alert-success fade in">
+                    <h4 class="alert-heading">Obrigado. Seu cadastro foi alterado com sucesso!</h4>
+                  </div>
+                </div>
+                <!-- /row9 -->
                 <!-- row4 -->
                 <div class="row" id="row4" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:block;";}else{echo"display:none;";}?>"-->
                   <div class="page-header">
@@ -715,12 +722,12 @@ $(document).ready(function(){
                   </div>
                 </div>
                 <!-- /row 8-->
-                <!-- row 9-->
+                <!-- row 9 local antigo>
                 <div class="row" id="row9">
                   <div class="page-header">
                     <h1>Cadastro alterado</h1>
                     <p><span class="label label-success">Cadastrado alterado com sucesso</span></p>
-                  </div><!-- /.span -->
+                  </div><!-- /.span >
                   <div class="alert alert-block alert-success fade in">
                     <button class="close backForm" >×</button>
                     <h4 class="alert-heading">Obrigado. Seu cadastro foi alterado com sucesso!</h4>
