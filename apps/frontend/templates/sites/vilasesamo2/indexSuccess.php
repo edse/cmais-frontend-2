@@ -39,7 +39,7 @@
     }
    ?>
   <!-- /HEADER -->
-  <span class="divisa tipo2"></span>
+  
 
   <!--carrossel personagens-->
   <?php include_partial_from_folder('sites/vilasesamo2', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
