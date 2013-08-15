@@ -762,9 +762,9 @@ $(document).ready(function(){
                   $('.change-form').click(function(){
                     $('#f4_mais').attr('checked','checked');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
-                    $('#message, #btn4').hide();
-                    //$('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected') 
-                    //$('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
+                    $('#row6, #message, #btn4').hide();
+                    $('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected') 
+                    $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   })
                   $('.backForm').click(function(){
                     $('.row').fadeOut('fast',function(){
