@@ -755,17 +755,19 @@ $(document).ready(function(){
                   $('.fechar').click(function(){
                      goTop();
                   });
+                  var email = '';
                   $('.backBegin, .outro-email').click(function(){
+                    email = $('#f4_email2').val();
                     goTop();
                     beginAgain();
-                  })
+                  });
                   $('.change-form').click(function(){
                     $('#f4_mais').attr('checked','checked');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
                     $('#row6, #message, #btn4').hide();
                     $('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected') 
                     $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
-                  })
+                  });
                   $('.backForm').click(function(){
                     $('.row').fadeOut('fast',function(){
                       $('#row4').fadeIn('fast');
@@ -851,7 +853,7 @@ $(document).ready(function(){
                         url: "/crm-form/soap.php",
                         data: $("#form1").serialize(),
                         beforeSend: function(){
-                          $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+$('#f4_email2').val())
+                          $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email)
                           $('#loader1').show();
                           $('#btn1').hide();
                         },
