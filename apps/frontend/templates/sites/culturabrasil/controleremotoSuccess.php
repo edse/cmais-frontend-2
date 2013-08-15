@@ -1,246 +1,276 @@
-<?php use_helper('I18N', 'Date') ?>
+<!DOCTYPE HTML>
+<html lang="pt-br">
+  <head>
+    <link href="http://cmais.com.br/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store" />
+    <meta http-equiv="Pragma" content="no-cache, no-store" />
+    <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+    <link rel="stylesheet" type="text/css" href="/portal/controle-remoto/css/controleremoto.css">
+    <link href="/portal/controle-remoto/css/jPlayer.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/portal/controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />    
+    <!-- DFP >
+    <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
+    <script type='text/javascript'>
+    GS_googleAddAdSenseService("ca-pub-6681834746443470");
+    GS_googleEnableAllServices();
+    </script>
+    <script type='text/javascript'>
+    GA_googleAddSlot("ca-pub-6681834746443470", "cultura-brasil");
+    </script>
+    <script type='text/javascript'>
+    GA_googleFetchAds();
+    </script>
+    <!-- /DFP >
 
-<!-- Le styles--> 
-<link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/culturabrasil.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22770265-1']);
+      _gaq.push(['_setDomainName', 'cmais.com.br']);
+      _gaq.push(['_setAllowHash', 'false']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script-->
 
-<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<script src="/portal/js/bootstrap/bootstrap.js"></script>
-
-<?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
-
-<!--section miolo--> 
-<section class="miolo grade">
-  <!-- container miolo -->
-  <div class="container row-fluid">
-    <!-- coluna esquerda -->
-    <div class="span8" style="*margin-left: 0px;">
+      <script src="/portal/controle-remoto/js/jquery.min.js" type="text/javascript"></script>
+      <script src="/portal/controle-remoto/js/main.js" type="text/javascript"></script>
       
-      <!-- titulo -->
-      <h1><?php echo $section->getTitle() ?></h1>
-      <div>
-        <a href="javascript: send('<?php echo $sChannel->getSlug() ?>','<?php echo $prevDate ?>');" class="data-btn" title="anterior">
-          <i class="seta-grade esquerda"></i>
-        </a>
-        <p class="data-grade" ><?php echo format_date($date, 'P') ?></p>
-        <a href="javascript: send('<?php echo $sChannel->getSlug() ?>','<?php echo $nextDate ?>');" class="data-btn" title="próximo">
-          <i class="seta-grade direita"></i>
-        </a>
-      </div>
-      <!--titulo-->
+      <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script-->
+      <script src="/portal/controle-remoto/js/jquery.min-1.8.js" type="text/javascript"></script>
+      <script src="/portal/controle-remoto/js/jquery.jplayer.min.js" type="text/javascript"></script>
+      <script type="text/javascript" src="/portal/controle-remoto/js/jquery.jplayer.inspector.js"></script>
+      <script type="text/javascript">
+      //<![CDATA[
+      $(document).ready(function(){
       
-      <?php if(isset($schedules)): ?>
-      <!--lista grade -->
-      <div class="lista-grade">
+        $("#jquery_jplayer_2").jPlayer({
+          ready: function () {
+            $(this).jPlayer("setMedia", {
+              mp3: "http://midiaserver.tvcultura.com.br:8001/;stream/1"
+            }).jPlayer("play");
+          },
+          swfPath: "/portal/controle-remoto/swf",
+          supplied: "mp3",
+          //solution: 'flash, html',
+          cssSelectorAncestor: "#jp_container_2",
+          wmode: "window"
+        });
+      
+        //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         
-        <!--accordion-->
-        <div class="accordion" id="accordion2">
-
-          <?php foreach($schedules as $k=>$d): ?>
-          <?php
-            $now = false;
-            if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
-              $now = true;
-            }
-          ?>
-
-          <!--item-->
-          <div class="accordion-group">
-            <?php if($now): ?>
-            <a name="agora" id="agora"></a>
-            <script>
-              $(function(){
-                $('html, body').animate({scrollTop: $("#agora").offset().top},'slow');
-              });
-            </script>
-            <?php endif; ?> 
-
-            <!--titulo-->
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse<?php echo $k ?>">
-                <span class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?></span>
-                <span class="programa-grade"><?php echo $d->Program->getTitle() ?></span>
-                <i class="seta-grade<?php if($now): ?> baixo<?php else: ?> cima<?php endif; ?>"></i>
-              </a>
-              <!--linha pontilhada-->
-              <div class="borda-pontilhada"></div>
-              <!--/linha pontilhada-->
-            </div>
-            <!--titulo-->
-            
-            <!--corpo-->
-            <div id="collapse<?php echo $k ?>" class="accordion-body collapse<?php if($now): ?> in<?php endif; ?>" style="overflow:hidden;">
-              <div class="accordion-inner">
-                <p><?php echo $d->retriveTitle() ?><br><br>
-                <?php echo $d->retriveDescription() ?></p>
-                <a href="<?php echo $d->retriveUrl() ?>" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
-                <a href="#" class="btn-body" title="">ouça ao vivo pela web<i class="borda-titulo borda-grade"></i></a>
+      });
+      //]]>
+      </script>    
+    
+    
+    <!-- /scripts -->
+    
+    <title>Cultura Brasil - Controle Remoto</title>
+    
+    <!-- Le styles--> 
+    <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
+    
+  </head>
+  
+  <body>
+    <!-- /container -->
+    <section class="container">
+      <!--topo menu -->
+      <section class="cr-topo">
+        <h1>
+          controle remoto
+        </h1>
+        <div class="cr-box-escolha pull-right">
+          <span class="cr-escolha">escolha uma </span><span>rádio</span>
+          <a href="javascript:;" class="cr-btn-radio" title="Escolha uma rádio"></a>
+          <!-- radios -->
+          <ul class="cr-radios">
+            <li><a href="javascript:;" title="Cultura Brasil">cultura brasil</a></li>
+            <li><a href="javascript:;" title="Cultura FM">cultura fm</a></li>
+          </ul>  
+          <!-- /radios -->
+        </div>    
+      </section>
+      <!--/topo menu -->
+      
+      <!-- player -->
+      <section class="cr-player">
+        
+        
+          
+    <div id="jquery_jplayer_2" class="jp-jplayer"></div>
+      <div id="jp_container_2" class="jp-audio">
+        <div class="jp-type-single">
+          <div class="jp-gui jp-interface">
+            <ul class="jp-controls">
+              <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+              <li><a href="javascript:;" id="btn-brasil" class="pl" title="Cultura Brasil" >Cultura Brasil</a></li>
+              <li><a href="javascript:;" class="jp-pause" tabindex="1" title="Pause">pause</a></li>
+              <li><a href="javascript:;" class="jp-stop" tabindex="1" title="Stop">stop</a></li>
+              <li><a href="javascript:;" class="jp-mute" tabindex="1" title="Mute">mute</a></li>
+              <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="">unmute</a></li>
+              <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="Volume Máximo">max volume</a></li>
+            </ul>
+            <div class="jp-progress">
+              <div class="jp-seek-bar">
+                <div class="jp-play-bar"></div>
               </div>
             </div>
-            <!--corpo-->
-            
+            <div class="jp-volume-bar">
+              <div class="jp-volume-bar-value"></div>
+            </div>
+            <div class="jp-time-holder">
+              <div class="jp-current-time"></div>
+            </div>
           </div>
-          <!--/item-->
-          <?php endforeach; ?>
+        </div>
+     </div>  
+        
+        
+        
+      </section>
+      <!-- /player -->
+      
+      <!-- descrição programa -->
+      <section class="cr-pgm">
+        
+        <!-- header -->
+        <div class="cr-header-pgm">
+          <span>você esta ouvindo</span>
+        </div>
+        <!-- /header -->
+        
+        <!-- imagem -->
+        <div class="cr-img-pgm">
+          <img src="/portal/images/capaPrograma/culturabrasil/controleremoto/cr-img-layout.jpg" alt="Nome Pgm" />
+        </div>  
+        <!-- /imagem -->
+        
+        <!-- descricao programa -->
+        <div class="cr-desc-pgm">
+          <h2>todos os sons</h2>
+          
+          <!-- detalhe musica -->
+          <div class="cr-det-mus-pgm">
+            
+            <h3>música</h3>
+            <p>Oração ao Tempo</p>
+            
+            <h3>intérprete</h3>
+            <p>Caetano Veloso</p>
+              
+          </div>
+          <!-- /detalhe musica -->
+            
+        </div>
+        <!-- descricao programa -->
+        
+      </section>
+      <!-- /descrição programa -->
+      
+      <!-- lista a seguir -->
+      <section class="cr-lista-a-seguir">
+        <h4>a Seguir</h4>
+        <div class="cr-linha"></div>
+        
+        <!-- lista itens -->
+        <ul>
+          <!-- item -->
+          <li class="par">
+            <h5>Supertônica</h5>
+            <p class="hora">15:30 h</p>
+          </li>
+          <!-- item -->
+          
+          <!-- item -->
+          <li class="impar">
+            <h5>Reggae de Bamba</h5>
+            <p class="hora">16:20 h</p>
+          </li>
+          <!-- item -->
+          
+          <!-- item -->
+          <li class="par">
+            <h5>Galeria</h5>
+            <p class="hora">16:50 h</p>
+          </li>
+          <!-- item -->
+          
+          <!-- item -->
+          <li class="impar">
+            <h5>Programa de Estudante</h5>
+            <p class="hora">17:30 h</p>
+          </li>
+          <!-- item -->
+          
+          <!-- item -->
+          <li class="par">
+            <h5>Seleção do Ouvinte</h5>
+            <p class="hora">18:00 h</p>
+          </li>
+          <!-- item -->
+          
+          <!-- item -->
+          <li class="impar">
+            <h5>Cultura Livre</h5>
+            <p class="hora">19:00 h</p>
+          </li>
+          <!-- item -->
+          
+          <!-- item -->
+          <li class="par">
+            <h5>Bossamoderna</h5>
+            <p class="hora">19:45 h</p>
+          </li>
+          <!-- item -->
+          
+        </ul>  
+        <!-- /lista itens -->
+        
+        <div class="cr-linha"></div>
+        
+        <a href="#" class="cr-pgm-completa" title="Veja nossa programação completa">programação completa » </a>
+        
+      </section>  
+      <!-- /lista a seguir -->
+      
+      <!-- banner -->
+      <section class="cr-banner">
+        
+        <div class="cr-box-banner">
+          
+          <script type='text/javascript'>
+            //GA_googleFillSlot("cultura-brasil");
+          </script>
           
         </div>
-        <!--/accordion-->
         
-      </div>
-      <!--/lista grade -->
-      <?php endif; ?>
-        
-    </div>  
-    <!-- /coluna esquerda -->
-    
-    <!--coluna direita -->
-    <div class="span4 box-direita">
+      </section>
+      <!-- /banner -->
       
-      <!-- CALENDARIO -->
-      <div class="destaque-playlist" style="width:300px; height:300px; display: block; ">
-        <h1>Calendário</h1>
-        <div id="datepicker"></div>
-      </div>
-      <!-- /CALENDARIO -->
+    </section>
+    <!-- /container -->
+    <script>
+      //fade escolha uma rádio
+      $('.cr-box-escolha span').delay(10000).fadeOut("slow");
       
-      <!--banner -->
-      <div class="banner-culturabrasil">
-        <script type='text/javascript'>
-          GA_googleFillSlot("home-geral300x250");
-        </script>
-      </div>
-      <!-- /banner -->  
-      
-    </div>
-    <!--/coluna direita -->
-    
-  </div>  
-  <!-- /container miolo -->  
-
-</section>
-<!--/section miolo-->
-<script type="text/javascript" src="http://cmais.com.br/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
-<script src="http://cmais.com.br/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
-<link type="text/css" href="http://cmais.com.br/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
-<script type="text/javascript">
-  jQuery(function(a){a.datepicker.regional["pt-BR"]={closeText:"Fechar",prevText:"&#x3c;Anterior",nextText:"Pr&oacute;ximo&#x3e;",currentText:"Hoje",monthNames:["Janeiro","Fevereiro","Mar&ccedil;o","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"],monthNamesShort:["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],dayNames:["Domingo","Segunda-feira","Ter&ccedil;a-feira","Quarta-feira","Quinta-feira","Sexta-feira","S&aacute;bado"],dayNamesShort:["Dom","Seg","Ter","Qua","Qui","Sex","S&aacute;b"],dayNamesMin:["Dom","Seg","Ter","Qua","Qui","Sex","S&aacute;b"],weekHeader:"Sm",dateFormat:"dd/mm/yy",firstDay:0,isRTL:false,showMonthAfterYear:false,yearSuffix:""};a.datepicker.setDefaults(a.datepicker.regional["pt-BR"])});
-  
-  $(function(){
-    // comportamento inicial da grade
-    $('.now').parent().addClass('escura');
-    $('.now').parent().next().slideDown(400);
-  });
-
-  $(function(){ //onready
-    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
-    // Datepicker
-    $('#datepicker').datepicker({
-      //beforeShowDay: dateLoading,
-      onSelect: redirect,
-      dateFormat: 'yy/mm/dd',
-      altFormat: 'yy-mm-dd',
-      defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),
-      inline: true
-    });
-    //hover states on the static widgets
-    $('#dialog_link, ul#icons li').hover(
-      function() { $(this).addClass('ui-state-hover'); }, 
-      function() { $(this).removeClass('ui-state-hover'); }
-    );
-  });
-
-  function redirect(d){
-    //self.location.href = './grade?c=<?php echo $sChannel->getSlug() ?>&d='+d;
-    send('<?php echo $sChannel->getSlug() ?>',d);
-  }
-
-  //cache the days and months
-  var cached_days = [];
-  var cached_months = [];
-
-  function dateLoading(date) { 
-    var year_month = ""+ (date.getFullYear()) +"-"+ (date.getMonth()+1) +"";
-    var year_month_day = ""+ year_month+"-"+ date.getDate()+"";
-    var opts = "";
-    var i = 0;
-    var ret = false;
-    i = 0;
-    ret = false;
-
-    for (i in cached_months) {
-      if (cached_months[i] == year_month){
-        // if found the month in the cache
-        ret = true;
-        break;
-      }
-    }
-
-    // check if the month was not cached 
-    if (ret == false) {
-      //  load the month via .ajax
-      opts= "month="+ (date.getMonth()+1);
-      opts=opts +"&year="+ (date.getFullYear());
-      opts=opts +"&channel_id=<?php if($sChannel->id): ?><?php echo $sChannel->id ?><?php endif; ?>";
-      // opts=opts +"&day="+ (date.getDate());
-      // we will use the "async: false" because if we use async call, the datapickr will wait for the data to be loaded
-
-      $.ajax({
-        url: "/ajax/getdays",
-        data: opts,
-        dataType: "json",
-        async: false,
-        success: function(data){
-          // add the month to the cache
-          cached_months[cached_months.length]= year_month ;
-          $.each(data.days, function(i, day){
-            cached_days[cached_days.length]= year_month +"-"+ day.day +"";
-          });
-        }
-      });
-    }
-
-    i = 0;
-    ret = false;
-
-    // check if date from datapicker is in the cache otherwise return false
-    // the .ajax returns only days that exists
-    for (i in cached_days) {
-      if (year_month_day == cached_days[i]) {
-        ret = true;
-      }
-    }
-    return [ret, ''];
-  }
-  $(function(){
-    $('#accordion2 .accordion-toggle').click(function(){
-      $(this).parent().next().on("show",function(){
-        $('.accordion-toggle').find('i').removeClass('baixo').addClass('cima');
-        $(this).prev().children('.accordion-toggle').find('i').removeClass('cima').addClass('baixo')
-      });
-    });
-    $('#accordion2 .accordion-toggle').click(function(){
-      $(this).parent().next().on("hide",function(){
-        $('.accordion-toggle').find('i').removeClass('baixo').addClass('cima');
-      });
-    });
-  });
-</script>
-
-<form id="send" action="" method="post">
-  <input type="hidden" name="c" id="c" value="<?php echo $sChannel->getSlug() ?>" />
-  <input type="hidden" name="d" id="d" value="<?php echo $d?>" />
-</form>
-<script>
-  function send(c,d){
-    $("#c").val(c);
-    $("#d").val(d);
-    $("#send").submit();
-  }
-</script>
-
-  
-
+      //ativo menu radios
+      $('.cr-btn-radio').click(function(){
+        $(this).toggleClass('ativo');
+        $('.cr-radios').toggleClass('ativo');
+      })
+    </script>
+  </body>
+</html>

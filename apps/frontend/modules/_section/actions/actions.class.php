@@ -124,6 +124,10 @@ class _sectionActions extends sfActions
         }
         */
       }
+
+      if($this->site->getSlug() == "culturabrasil" && $this->section->getSlug()=="controleremoto"){
+        $this->setLayout(false);
+      }      
       
       if(($this->site->getSlug() == "culturafm")&&($this->section->getSlug()=="controle-remoto")){
         $this->setLayout(false);
@@ -137,7 +141,7 @@ class _sectionActions extends sfActions
       }elseif($this->site->getSlug()=="controleremoto"){
         $this->setLayout(false);
       }
-      
+
       if(($this->site->getSlug() == "quintaldacultura") && !$request->getParameter('force')){
         if($this->section->getSlug() == 'voceescolhe'){
             header("Location: http://cmais.com.br/quintaldacultura");
