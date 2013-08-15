@@ -883,6 +883,8 @@ $(document).ready(function(){
                             return $("#f2_sms:checked").length!=0 ? true : false
                           }else if($("#f2_newsletter:checked").length!=0){  
                             return $("#f2_newsletter:checked").length!=0 ? true : false
+                          }else{
+                            false
                           }
                         }
                       },
@@ -967,6 +969,8 @@ $(document).ready(function(){
                             return $("#f3_sms:checked").length!=0 ? true : false
                           }else if($("#f3_newsletter:checked").length!=0){  
                             return $("#f3_newsletter:checked").length!=0 ? true : false
+                          }else{
+                            false
                           }
                         }
                       },
@@ -1087,6 +1091,8 @@ $(document).ready(function(){
                             return $("#f4_sms:checked").length!=0 ? true : false
                           }else if($("#f4_newsletter:checked").length!=0){  
                             return $("#f4_newsletter:checked").length!=0 ? true : false
+                          }else{
+                            false
                           }
                         }
                       }
