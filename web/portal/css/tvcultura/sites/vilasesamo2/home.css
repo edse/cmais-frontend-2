@@ -16,5 +16,5 @@
 #content { top:51px; }
 /* /carrossel personagem */
 
-.mpc_ls_slides_thumbs.style02 .mpc_ls_thumb { background:#fcbb00; }
-.mpc_ls_slides_thumbs.style01 .mpc_ls_thumb_inside { box-shadow: inset 0 1px 1px red;}
+#slider .mpc_ls_slides_thumbs.style02 .mpc_ls_thumb { background:#fcbb00; }
+#slider .mpc_ls_slides_thumbs.style01 .mpc_ls_thumb_inside { box-shadow: inset 0 1px 1px red;}
