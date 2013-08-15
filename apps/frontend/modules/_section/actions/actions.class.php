@@ -134,10 +134,10 @@ class _sectionActions extends sfActions
         die(); 
           }
        }
-      }elseif($this->site->getSlug()=="controleremoto"){
+      }elseif($this->site->getSlug()=="controleremoto" || $this->section->getSlug()=="controleremoto"){
         $this->setLayout(false);
       }
-      
+            
       if(($this->site->getSlug() == "quintaldacultura") && !$request->getParameter('force')){
         if($this->section->getSlug() == 'voceescolhe'){
             header("Location: http://cmais.com.br/quintaldacultura");
