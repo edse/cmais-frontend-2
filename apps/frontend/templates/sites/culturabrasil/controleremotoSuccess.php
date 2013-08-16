@@ -166,6 +166,9 @@
         
 
           <?php foreach($schedules as $k=>$d): ?>
+            
+            
+            
           <?php
             $now = false;
             if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
@@ -176,8 +179,8 @@
             
             endif; 
 
-          echo $k ?>
-                <?php echo format_datetime($d->getDateStart(), "HH:mm") ?>
+          //echo $k ?>
+                <?php //echo format_datetime($d->getDateStart(), "HH:mm") ?>
                 <?php echo $d->Program->getTitle() ?>
                 <i class="seta-grade<?php if($now): ?> baixo<?php else: ?> cima<?php endif; ?>
             
