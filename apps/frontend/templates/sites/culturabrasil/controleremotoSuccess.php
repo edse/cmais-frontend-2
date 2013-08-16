@@ -211,7 +211,7 @@
       <?php 
         $cont = 0;
         foreach($schedules as $k=>$d):
-          if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && $cont <= 7) {
+          if((strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateStart())) && $cont <= 7) {
       ?>
             <!-- item -->
             <li class="<?php if($style==0) {$style++;echo"im";}else{$style=0;}?>par">
