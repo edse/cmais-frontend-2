@@ -357,7 +357,7 @@ class _sectionActions extends sfActions
           }
         }
         else{
-          if(in_array($this->section->slug, array("grade", "diario-de-programacao", "programacao", "guia-do-ouvinte"))){
+          if(in_array($this->section->slug, array("grade", "diario-de-programacao", "programacao", "guia-do-ouvinte", "controleremoto"))){
             $s = 'tvcultura';
             if($request->getParameter('c') == "univesptv")
               $s = 'univesptv';
@@ -369,6 +369,8 @@ class _sectionActions extends sfActions
               $s = 'tvratimbum';
             if($this->section->slug == "diario-de-programacao")
               $s = 'culturafm';
+            if($this->section->Site->getSlug() == "culturabrasil" && $this->section->slug == "controleremoto")
+              $s = 'culturabrasil';            
             if($this->section->slug == "guia-do-ouvinte")
               $s = 'culturafm';
             if($request->getParameter('d'))
