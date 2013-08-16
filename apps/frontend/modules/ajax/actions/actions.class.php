@@ -2041,7 +2041,7 @@ EOT;
           //$hora = $d->getDateStart();
           //$primeiro++;
         //}
-        $return["aseguir"][] = array(titulo=> $s->getTitle(), data=> $s->getDateStart(),imagem=> $s->retriveLiveImage());
+        $return["aseguir"][] = array("titulo"=> $s->getTitle(), "data"=> $s->getDateStart(), "imagem"=> $s->retriveLiveImage());
       }
       
       $noar = Doctrine_Query::create()
@@ -2054,7 +2054,7 @@ EOT;
         ->limit('1')
         ->execute();
       foreach($schedules as $s){
-        $return["noar"][] = array(titulo=> $s->getTitle(),  data=> $s->getDateStart(), imagem=> $s->retriveLiveImage());
+        $return["noar"][] = array("titulo"=> $s->getTitle(),  "data"=> $s->getDateStart(), "imagem"=> $s->retriveLiveImage());
       }
     }
     die(json_encode($return));
