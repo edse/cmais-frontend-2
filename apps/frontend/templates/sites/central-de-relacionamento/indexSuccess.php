@@ -768,10 +768,7 @@ $(document).ready(function(){
                     email = $('#f4_email2').val();
                     $('#btn6').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email);
                   })
-                  $('#btn5').click(function(){
-                    email = $('#f4_email2').val();
-                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email);
-                  });
+                  
                   $('#btn4').click(function(){
                     email = $('#f4_email2').val();
                     $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email);
@@ -782,10 +779,10 @@ $(document).ready(function(){
                   });
                   $('.change-form').click(function(){
                     $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email)
-                    $('#f4_mais').attr('checked','checked');
+                    $('#f4_mais').attr('checked','true');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
                     $('#row6, #message, #btn4').hide();
-                    $('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected') 
+                    $('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected');
                     $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   });
                   $('.backForm').live("click", function(){
@@ -1200,6 +1197,7 @@ $(document).ready(function(){
                     $('#btn5').hide();
                     $('#btn4').show();
                     $('#message').show();
+                    $('#f4_cod_programa').attr('value','');
                     $('#f4_cod_programa, #f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
                   }
                   if($('#f3_mais').attr('checked')){
@@ -1212,6 +1210,10 @@ $(document).ready(function(){
                   }else{
                     $('#f2_maisinfo').hide();
                   }
+                }
+                
+                function set_checked(checked) {
+                  $('input[name=f4_mais]').attr('checked', checked);
                 }
                 
                 function municipios(form){
@@ -1249,7 +1251,7 @@ $(document).ready(function(){
                       if(data.script != ""){
                         eval(data.script);
                         if($('#f4_cod_programa option').size()<=1){
-                            $('#f4_cod_programa option').val("00").html("sem programa");
+                            $('#f4_cod_programa option').val("00").html("sem programa").attr('value','--');
                             $('#f4_cod_assunto').html('<option value="19">Elogio</option><option value="21">Crítica</option><option value="23">Comentário</option><option value="24">Pedido de Informação</option>');
                           }else{  
                             $('#f4_cod_assunto option').html('--').css('display','none');
