@@ -52,17 +52,18 @@ if(isset($pager)){
         <!--lista assets-->
         <div class="lista-assets span8" style="*margin-left: 0px;">
           <h1><?php echo $site->getTitle() ?></h1>
-          <p class="horario"><?php echo html_entity_decode($program->getSchedule()) ?></p>
+          <p class="horario"><?php echo nl2br($program->getSchedule()) ?></p>
+          
+          <?php $subsections = $section->Site->subsections(); ?>
+          <?php if($subsections): ?>
           <!-- menu subsection-->
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Arquivo</a></li>
-            <li><a href="#">Lançamentos</a></li>
-            <li><a href="#">Minha galeria</a></li>
-            <li><a href="#">Duas versões</a></li>
-            <li><a href="#">A música do produtor</a></li>
-            <li><a href="#">Achados da cidade</a></li>
+            <?php foreach($subsections as $s): ?>
+            <li><a href="<?php echo $s->retriveUrl() ?>"><?php echo $s->getTitle() ?></a></li>
+            <?php endforeach; ?>
           </ul>
           <!-- /menu subsection-->
+          <?php endif; ?>
       <?php else: ?>
       <div class="destaque-cultura subsection">
         <div class="programa subsection">
