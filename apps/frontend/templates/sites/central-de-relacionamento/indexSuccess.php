@@ -1251,7 +1251,7 @@ $(document).ready(function(){
                       if(data.script != ""){
                         eval(data.script);
                         if($('#f4_cod_programa option').size()<=1){
-                            $('#f4_cod_programa option').attr("value","1").html("sem programa").attr('selected','selected');
+                            $('#f4_cod_programa option').attr("value","sem programa").html("sem programa").attr('selected','selected');
                             $('#f4_cod_assunto').html('<option value="19">Elogio</option><option value="21">Crítica</option><option value="23">Comentário</option><option value="24">Pedido de Informação</option>');
                           }else{  
                             $('#f4_cod_assunto option').html('--').css('display','none');
