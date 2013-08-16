@@ -69,7 +69,7 @@
             <li>
               <img src="http://cmais.com.br/portal/tvratimbum/image/estilingue_destaques-bolhas.png" border="0" usemap="#mascote"/>
               <map name="mascote" id="mascote">
-                <area shape="circle" href="http://tvratimbum.cmais.com.br/jogos/game-do-estilingue" target="_self" />
+                <area shape="circle" coords="136,136,121" href="http://tvratimbum.cmais.com.br/jogos/game-do-estilingue" target="_self" />
               </map>
             </li>
             <li>
