@@ -1095,7 +1095,11 @@ $(document).ready(function(){
                         required: "#f4_mais:!checked"
                       },
                       f4_cod_programa: {
-                        required: "#f4_mais:!checked"
+                        required: function(element){
+                          if("#f4_mais:!checked"){
+                            return true
+                          }
+                        }
                       },
                       f4_cod_veiculo: {
                         required: "#f4_mais:!checked"
@@ -1208,14 +1212,14 @@ $(document).ready(function(){
                     $('#f4_maisinfo').show();
                     $('#btn5').show();
                     $('#btn4, .salvar-alteracoes, #message').hide();
-                    //$('#f4_cod_programa').attr('value','--');
+                    $('#f4_cod_programa').attr('value','--');
                     $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   }else{
                     $('#f4_maisinfo').hide();
                     $('#btn5').hide();
                     $('#btn4').show();
                     $('#message').show();
-                    //$('#f4_cod_programa').attr('value','');
+                    $('#f4_cod_programa').attr('value','');
                     $('#f4_cod_programa, #f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
                   }
                   if($('#f3_mais').attr('checked')){
