@@ -1,3 +1,4 @@
+<?php use_helper('I18N', 'Date') ?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
   <head>
@@ -161,7 +162,7 @@
         
         
         
-   <?php echo "Schedules:". $schedules; 
+   <?php //echo "Schedules:". $schedules; 
    
    if(isset($schedules)): 
    
