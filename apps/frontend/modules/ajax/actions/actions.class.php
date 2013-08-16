@@ -2042,7 +2042,7 @@ EOT;
           //$hora = $d->getDateStart();
           //$primeiro++;
         //}
-        $return["aseguir"][] = array("titulo"=> $s->getProgram(), "data"=> $s->getDateStart(), "imagem"=> $s->retriveLiveImage());
+        $return["aseguir"][] = array("titulo"=> $s->Program->getTitle(), "data"=> $s->getDateStart(), "imagem"=> $s->retriveLiveImage());
       }
       
       $noar = Doctrine_Query::create()
@@ -2055,7 +2055,7 @@ EOT;
         ->limit('1')
         ->execute();
       foreach($noar as $n){
-        $return["noar"][] = array("titulo"=> $n->getProgram(),  "data"=> $n->getDateStart(), "imagem"=> $n->retriveLiveImage());
+        $return["noar"][] = array("titulo"=> $n->getProgram()->getTitle(),  "data"=> $n->getDateStart(), "imagem"=> $n->retriveLiveImage());
       }
     }
     die(json_encode($return));
