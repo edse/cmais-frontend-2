@@ -75,10 +75,11 @@ if(isset($pager)){
       
       <!--clounaprincipal-->
       <div class="row-fluid">
-      <?php endif; ?>   
-         
+        
         <!--lista assets-->
         <div class="lista-assets span8">
+      <?php endif; ?>   
+         
           <?php if(count($pager) > 0): ?>
             <?php foreach($pager->getResults() as $d): ?>
               <?php if($section->Site->getSlug() == "culturabrasil"): ?>
