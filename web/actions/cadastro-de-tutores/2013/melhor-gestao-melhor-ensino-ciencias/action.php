@@ -6,7 +6,7 @@
 
 if($_REQUEST["captcha"]) {
   if($_REQUEST["cpf"]){
-    if(date("Y-m-d H:i:s") < "2014-01-01 00:00:00") {
+    if(date("Y-m-d H:i:s") < "2013-08-16 18:10:00") {
       if(exec('grep "^'.$_REQUEST["cpf"].'$" /var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino-ciencias/control/cpf.txt')){
         die("3");
       }
@@ -72,7 +72,7 @@ if($_REQUEST["captcha"]) {
           $message .= "<b>Cep:</b> " . strip_tags($_REQUEST['cep']) . "<br>";
           $message .= "<b>Cidade:</b> " . strip_tags($_REQUEST['cidade']) . "<br>";
           $message .= "<b>Estado:</b> " . strip_tags($_REQUEST['estado']) . "<br>";
-          $message .= "<b>Formação acadêmica:</b> " . strip_tags($_REQUEST['formacao']) . "<br>";
+          $message .= "<b>Formação acadêmica:</b> " . strip_tags($_REQUEST['formacao']) . "<br>"; 
           $message .= "<b>Possui experiência no uso de AVA (Ambientes Virtuais de Aprendizagem) EFAP?:</b> " . strip_tags($_REQUEST['experiente_ava_efap']) . "<br>";
           $message .= "<b>Você se inscreveu como Participante no Encontro Presencial centralizado a ser realizado pela EFAP/CGEB de 12 a 14 de agosto do ano de 2013, em Serra Negra:</b> " . strip_tags($_REQUEST['inscrito_serra_negra']) . "<br>";
           $message .= "<b>Teve ou tem contrato de qualquer espécie (Física, jurídica ou CLT) vigente com a FPA (Fundação Padre Anchieta – TV Cultura), mesmo que já encerrado nos últimos 06 meses?:</b> " . strip_tags($_REQUEST['contrato_fpa']) . "<br>";
