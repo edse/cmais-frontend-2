@@ -1110,6 +1110,9 @@ $(document).ready(function(){
                       }
                     },
                     focusInvalid: false,
+                    onfocusin:function(label){
+                      alert('teste');
+                    },
                     highlight: function(label) {
                       $(label).closest('.control-group').addClass('error');
                     },
