@@ -52,7 +52,7 @@ if(isset($pager)){
         <!--lista assets-->
         <div class="lista-assets span8" style="*margin-left: 0px;">
           <h1><?php echo $site->getTitle() ?></h1>
-          <p class="horario"><?php echo nl2br($program->getSchedule()) ?></p>
+          <p class="horario"><?php echo html_entity_decode($program->getSchedule()) ?></p>
           <!-- menu subsection-->
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Arquivo</a></li>
