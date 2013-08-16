@@ -2022,9 +2022,12 @@ EOT;
 
   public function executeProgramacaoradio(sfWebRequest $request){
     $this->setLayout(false);
-    $id = 5;
-    if($request->getParameter('channel_id')>0)
+    $slug = "";
+    if($request->getParameter('channel_id')!="")
       $id = $request->getParameter('channel_id');
+    
+      $this->sChannel = Doctrine::getTable('Channel')->findOneBySlug($s);
+    
     $schedules = Doctrine_Query::create()
       ->select('s.*')
       ->from('Schedule s')
@@ -2041,7 +2044,7 @@ EOT;
           //$hora = $d->getDateStart();
           //$primeiro++;
         //}
-        $return["aseguir"][] = array("titulo"=> $s->getTitle(), "data"=> $s->getDateStart(), "imagem"=> $s->retriveLiveImage());
+        $return["aseguir"][] = array("titulo"=> $s->getProgram(), "data"=> $s->getDateStart(), "imagem"=> $s->retriveLiveImage());
       }
       
       $noar = Doctrine_Query::create()
@@ -2054,7 +2057,7 @@ EOT;
         ->limit('1')
         ->execute();
       foreach($noar as $n){
-        $return["noar"][] = array("titulo"=> $n->getTitle(),  "data"=> $n->getDateStart(), "imagem"=> $n->retriveLiveImage());
+        $return["noar"][] = array("titulo"=> $n->getProgram(),  "data"=> $n->getDateStart(), "imagem"=> $n->retriveLiveImage());
       }
     }
     die(json_encode($return));
