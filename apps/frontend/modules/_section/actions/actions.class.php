@@ -370,7 +370,9 @@ class _sectionActions extends sfActions
             if($this->section->slug == "diario-de-programacao")
               $s = 'culturafm';
             if($this->section->Site->getSlug() == "culturabrasil" && $this->section->slug == "controleremoto")
-              $s = 'culturabrasil';            
+              $s = 'culturabrasil';
+            if($this->section->Site->getSlug() == "culturafm" && $this->section->slug == "controleremoto")
+              $s = 'culturafm';
             if($this->section->slug == "guia-do-ouvinte")
               $s = 'culturafm';
             if($request->getParameter('d'))
