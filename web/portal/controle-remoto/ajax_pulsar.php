@@ -12,8 +12,8 @@ foreach ($json_output as $j) {
                 duracao => $j->duracao->{0}
            );
 }
-var_dump($json);
-//echo json_encode($json);
 
+$json = json_encode($json);
+var_dump($json);
  
 ?>
