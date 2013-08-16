@@ -179,16 +179,13 @@
             
             endif; 
 
-          //echo $k ?>
+          echo $k ?>
                 <?php echo format_datetime($d->getDateStart(), "HH:mm") ?>
                 <?php echo $d->Program->getTitle() ?>
                 <i class="seta-grade<?php if($now): ?> baixo<?php else: ?> cima<?php endif; ?>
             
             <div id="collapse<?php echo $k ?>" class="accordion-body collapse<?php if($now): ?> in<?php endif; ?>" style="overflow:hidden;">
                 <p><?php echo $d->retriveTitle() ?><br><br>
-                <?php //echo $d->retriveDescription() ?></p>
-                <a href="<?php echo $d->retriveUrl() ?>" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
-                <a href="#" class="btn-body" title="">ouça ao vivo pela web<i class="borda-titulo borda-grade"></i></a>
               </div>
             </div>
             <!--corpo-->
@@ -203,8 +200,6 @@
       </div>
       <!--/lista grade -->
       <?php endif; ?>
-      
-      
       
       
         
