@@ -14,6 +14,7 @@ foreach ($json_output as $j) {
 }
 
 $json = json_encode($json);
-var_dump($json);
+echo $json;
+//var_dump($json);
  
 ?>
