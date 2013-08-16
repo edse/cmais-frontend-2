@@ -158,7 +158,7 @@ img{width:100%;}
 .carousel-control {position: absolute;top: 50%; display:none;}
 .carousel-control.left{background: url(/portal/images/capaPrograma/culturabrasil/seta-esquerda.png) no-repeat;border: none;width: 55px;height: 55px;}
 .carousel-control.right{background: url(/portal/images/capaPrograma/culturabrasil/seta-direita.png) no-repeat;border: none;width: 55px;height: 55px;}
-.carousel-caption {position: absolute;left: auto ;right: 0;bottom: 0;padding: 42px 10px 20px 20px;width: 310px;top: 0;color: white; background:none;}
+.carousel-caption {position: absolute;left: auto ;right: 0;bottom: 0;padding: 30px 10px 20px 20px;width: 310px;top: 0;color: white; background:none;}
 .carousel-caption h4{ font-size:24px;font-weight:normal;line-height:35px;margin: 15px 0 20px;}
 .carousel-caption h3{ margin: 0;font-weight: normal;font-size: 17px;text-transform: uppercase;}
 .carousel-caption p{padding: 15px 0 0 0px;font-size: 16px;line-height: 23px;}
