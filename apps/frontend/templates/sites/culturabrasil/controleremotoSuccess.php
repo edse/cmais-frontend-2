@@ -153,7 +153,7 @@
       <section class="cr-pgm">
       <?php
       if(isset($schedules)):
-        $cont = 0;
+        $cont = 1;
         
         foreach($schedules as $k=>$d):
           $now = false;
@@ -197,67 +197,36 @@
           </section>
           <!-- /descrição programa -->              
               
-      <?php endif; ?>      
-        
-      <!-- lista a seguir -->
+      <?php endif; 
+        endforeach;
+      ?>
+        <!-- lista a seguir -->
       <section class="cr-lista-a-seguir">
         <h4>a Seguir</h4>
         <div class="cr-linha"></div>
 
         <!-- lista itens -->
         <ul>
+      
+      <?php 
+        foreach($schedules as $k=>$d):
+        $now = false;
+        if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
+          $now = true;
+        }
+       ?>
           <!-- item -->
           <li class="<?php if($cont==0) {$cont++;echo"im";}else{$cont=0;}?>par">
             <h5><?php echo $d->retriveTitle(); ?></h5>
             <p class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?> h</p>
           </li>
           <!-- item -->
-          
-          <!-- item -->
-          <li class="impar">
-            <h5>Reggae de Bamba</h5>
-            <p class="hora">16:20 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="par">
-            <h5>Galeria</h5>
-            <p class="hora">16:50 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="impar">
-            <h5>Programa de Estudante</h5>
-            <p class="hora">17:30 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="par">
-            <h5>Seleção do Ouvinte</h5>
-            <p class="hora">18:00 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="impar">
-            <h5>Cultura Livre</h5>
-            <p class="hora">19:00 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="par">
-            <h5>Bossamoderna</h5>
-            <p class="hora">19:45 h</p>
-          </li>
-          <!-- item -->
+      
       <?php 
         //FIM DA REPETIÇÃO
         endforeach;
       endif; ?>    
+      
           
         </ul>  
         <!-- /lista itens -->
