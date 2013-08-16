@@ -2053,8 +2053,8 @@ EOT;
         ->orderBy('s.date_start asc')
         ->limit('1')
         ->execute();
-      foreach($schedules as $s){
-        $return["noar"][] = array("titulo"=> $s->getTitle(),  "data"=> $s->getDateStart(), "imagem"=> $s->retriveLiveImage());
+      foreach($noar as $n){
+        $return["noar"][] = array("titulo"=> $n->getTitle(),  "data"=> $n->getDateStart(), "imagem"=> $n->retriveLiveImage());
       }
     }
     die(json_encode($return));
