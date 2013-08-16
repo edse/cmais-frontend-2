@@ -1096,7 +1096,9 @@ $(document).ready(function(){
                       },
                       f4_cod_programa: {
                         required: function(element){
-                          if("#f4_mais:!checked"){
+                          if($("#f4_mais:!checked")){
+                            return true
+                          }else if($("#f4_cod_programa").val()=="--"){
                             return true
                           }
                         }
