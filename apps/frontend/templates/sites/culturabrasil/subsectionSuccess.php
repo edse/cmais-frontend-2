@@ -59,7 +59,9 @@ if(isset($pager)){
           <!-- menu subsection-->
           <ul class="nav navbar-nav">
             <?php foreach($subsections as $s): ?>
-            <li><a href="<?php echo $s->retriveUrl() ?>"><?php echo $s->getTitle() ?></a></li>
+              <?php if($s->getSlug() != "home"): ?>
+            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="<?php echo $s->retriveUrl() ?>"><?php echo $s->getTitle() ?></a></li>
+              <?php endif; ?>
             <?php endforeach; ?>
           </ul>
           <!-- /menu subsection-->
