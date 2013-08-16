@@ -6,7 +6,7 @@
 
 if($_REQUEST["captcha"]) {
   if($_REQUEST["cpf"]){
-    if(date("Y-m-d H:i:s") < "2013-08-16 18:10:00") {
+    if(date("Y-m-d H:i:s") < "2013-08-17 00:00:00") {
       if(exec('grep "^'.$_REQUEST["cpf"].'$" /var/frontend/web/tutores-2013/melhor-gestao-melhor-ensino-ciencias/control/cpf.txt')){
         die("3");
       }
