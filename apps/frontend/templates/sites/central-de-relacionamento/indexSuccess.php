@@ -790,6 +790,7 @@ $(document).ready(function(){
                     beginAgain();
                   });
                   $('.change-form').click(function(){
+                    $('salvar-alteracoes').hide();
                     $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email)
                     $('#f4_mais').attr('checked','true');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
