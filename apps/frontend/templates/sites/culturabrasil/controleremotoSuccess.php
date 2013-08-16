@@ -209,7 +209,7 @@
         <ul>
       
       <?php 
-        $cont = 0;
+        $cont = 1;
         foreach($schedules as $k=>$d):
           if((strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateStart())) && $cont <= 7) {
       ?>
