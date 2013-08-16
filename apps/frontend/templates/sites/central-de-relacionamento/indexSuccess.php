@@ -141,7 +141,7 @@ $(document).ready(function(){
                     <div class="control-group">
                       <label class="control-label" for="f2_cod_recepcaodesinal">Recepção do sinal</label>
                       <div class="controls">
-                        <select id="f2_cod_recepcaodesinal" name="f2_cod_recepcaodesinal"></select>
+                        <select id="f2_cod_recepcaodesinal" size="10" name="f2_cod_recepcaodesinal"></select>
                       </div>
                     </div>
                     <div class="control-group">
@@ -313,7 +313,7 @@ $(document).ready(function(){
                     <div class="control-group">
                       <label class="control-label" for="f3_cod_recepcaodesinal">Recepção do sinal</label>
                       <div class="controls">
-                        <select id="f3_cod_recepcaodesinal" name="f3_cod_recepcaodesinal"></select>
+                        <select id="f3_cod_recepcaodesinal" size="10" name="f3_cod_recepcaodesinal"></select>
                       </div>
                     </div>
                     <div class="control-group">
@@ -476,7 +476,13 @@ $(document).ready(function(){
                           </label>
                         </div>
                       </div>
+                      
                       <div id="f4_maisinfo">
+                      <!-- salvar alteracoes -->
+                      <div class="salvar-alteracoes">
+                        lembre-se de clicar em salvar alterações
+                      </div>
+                      <!-- /salvar alteracoes -->
                         <hr />
                         <div class="control-group">
                           <label class="control-label" for="f4_nome">Nome</label>
@@ -500,7 +506,7 @@ $(document).ready(function(){
                         <div class="control-group">
                           <label class="control-label" for="f4_cod_recepcaodesinal">Recepção do sinal</label>
                           <div class="controls">
-                            <select id="f4_cod_recepcaodesinal" name="f4_cod_recepcaodesinal"></select>
+                            <select id="f4_cod_recepcaodesinal" size="10" name="f4_cod_recepcaodesinal"></select>
                           </div>
                         </div>
                         <div class="control-group">
@@ -613,6 +619,11 @@ $(document).ready(function(){
                         </div>
         
                         <hr />
+                        <!-- salvar alteracoes -->
+                        <div class="salvar-alteracoes">
+                          lembre-se de clicar em salvar alterações
+                        </div>
+                        <!-- /salvar alteracoes -->
                         
                       </div><!-- /#maisinfo -->
         
@@ -631,7 +642,7 @@ $(document).ready(function(){
                         <label class="control-label" for="f4_cod_programa">Programa</label>
                         <div class="controls">
                           <select name="f4_cod_programa" id="f4_cod_programa" onchange="assuntos();">
-                            <option value="--" selected="selected"></option>
+                            <option value="--" selected="selected">--</option>
                           </select>
                         </div>
                       </div>
@@ -649,11 +660,11 @@ $(document).ready(function(){
                       </div>
         
                       </div><!-- /#message -->
-        
+                      
                       <div class="botoes-form">
                         <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader4" />
                         <button type="submit" class="btn btn-primary" id="btn4">Enviar Mensagem</button>
-                        <button type="submit" class="btn btn-primary" id="btn5" style="display:none">Salvar Cadastro Alterado</button>
+                        <button type="submit" class="btn btn-Success" id="btn5" style="display:none">Salvar Cadastro</button>
                         <a type="submit" class="btn btn-danger" href="http://cmais.com.br/frontend_dev.php/central-de-relacionamento" id="btn6">Cancelar</a>
                       </div>
                       
@@ -1084,7 +1095,7 @@ $(document).ready(function(){
                         required: "#f4_mais:!checked"
                       },
                       f4_cod_programa: {
-                        required: "#f4_mais:!checked"
+                        required: true //"#f4_mais:!checked"
                       },
                       f4_cod_veiculo: {
                         required: "#f4_mais:!checked"
@@ -1110,6 +1121,11 @@ $(document).ready(function(){
                       }
                     },
                     focusInvalid: false,
+                    onfocusout: function(element){
+                      if($('.salvar-alteracoes').is(":hidden")){
+                        $('.salvar-alteracoes').fadeIn("slow");
+                      }
+                    },
                     highlight: function(label) {
                       $(label).closest('.control-group').addClass('error');
                     },
@@ -1189,8 +1205,7 @@ $(document).ready(function(){
                   if($('#f4_mais').attr('checked')){
                     $('#f4_maisinfo').show();
                     $('#btn5').show();
-                    $('#btn4').hide();
-                    $('#message').hide();
+                    $('#btn4, .salvar-alteracoes, #message').hide();
                     $('#f4_cod_programa').attr('value','--');
                     $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   }else{
