@@ -153,7 +153,7 @@
       <section class="cr-pgm">
       <?php
       if(isset($schedules)):
-        $cont = 1;
+        $style = 1; //Par ou Impar
         
         foreach($schedules as $k=>$d):
           $now = false;
@@ -209,23 +209,22 @@
         <ul>
       
       <?php 
+        $cont = 0;
         foreach($schedules as $k=>$d):
-        $now = false;
-        if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
-          $now = true;
-        }
-       ?>
-          <!-- item -->
-          <li class="<?php if($cont==0) {$cont++;echo"im";}else{$cont=0;}?>par">
-            <h5><?php echo $d->retriveTitle(); ?></h5>
-            <p class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?> h</p>
-          </li>
-          <!-- item -->
-      
-      <?php 
-        //FIM DA REPETIÇÃO
+          if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && $cont <= 7) {
+      ?>
+            <!-- item -->
+            <li class="<?php if($style==0) {$style++;echo"im";}else{$style=0;}?>par">
+              <h5><?php echo $d->retriveTitle(); ?></h5>
+              <p class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?> h</p>
+            </li>
+            <!-- item -->
+    <?php 
+            $cont++;
+          }
         endforeach;
-      endif; ?>    
+      endif; 
+    ?>    
       
           
         </ul>  
