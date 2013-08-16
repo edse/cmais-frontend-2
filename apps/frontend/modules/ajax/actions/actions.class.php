@@ -2022,11 +2022,9 @@ EOT;
 
   public function executeProgramacaoradio(sfWebRequest $request){
     $this->setLayout(false);
-    $slug = "";
-    if($request->getParameter('channel_id')!="")
+    $id = 5;
+    if($request->getParameter('channel_id')>0)
       $id = $request->getParameter('channel_id');
-    
-      $this->sChannel = Doctrine::getTable('Channel')->findOneBySlug($s);
     
     $schedules = Doctrine_Query::create()
       ->select('s.*')
