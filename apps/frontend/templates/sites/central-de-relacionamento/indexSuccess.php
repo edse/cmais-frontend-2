@@ -664,7 +664,7 @@ $(document).ready(function(){
                       <div class="botoes-form">
                         <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader4" />
                         <button type="submit" class="btn btn-primary" id="btn4">Enviar Mensagem</button>
-                        <button type="submit" class="btn btn-Success" id="btn5" style="display:none">Salvar Cadastro</button>
+                        <button type="submit" class="btn btn-success" id="btn5" style="display:none">Salvar Cadastro</button>
                         <a type="submit" class="btn btn-danger" href="http://cmais.com.br/frontend_dev.php/central-de-relacionamento" id="btn6">Cancelar</a>
                       </div>
                       
@@ -756,7 +756,7 @@ $(document).ready(function(){
                 
                 $(document).ready(function(){
                   var email = '';
-                  $("#f4_cod_programa option").attr("value", "")
+                  $("#f4_cod_programa option").attr("value", "");
                   $(".dicas").click(function(){
                     $(this).prev().toggleClass('icon-minus');
                   });
@@ -1204,6 +1204,7 @@ $(document).ready(function(){
                 
                 function toggleInfo(){
                   if($('#f4_mais').attr('checked')){
+                    $("#f4_cod_programa option").attr("value", "--");
                     $('#f4_maisinfo .control-group').removeClass("success");
                     $('#f4_maisinfo .c').find("label.error.valid").remove();
                     $('#f4_maisinfo').show();
@@ -1216,7 +1217,6 @@ $(document).ready(function(){
                     $('#btn5').hide();
                     $('#btn4').show();
                     $('#message').show();
-                    $('#f4_cod_programa').attr('value','');
                     $('#f4_cod_programa, #f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
                   }
                   if($('#f3_mais').attr('checked')){
