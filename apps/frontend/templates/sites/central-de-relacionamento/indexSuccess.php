@@ -756,6 +756,7 @@ $(document).ready(function(){
                 
                 $(document).ready(function(){
                   var email = '';
+                  $("#f4_cod_programa option").attr("value", "")
                   $(".dicas").click(function(){
                     $(this).prev().toggleClass('icon-minus');
                   });
@@ -1095,11 +1096,7 @@ $(document).ready(function(){
                         required: "#f4_mais:!checked"
                       },
                       f4_cod_programa: {
-                        required: function(element){
-                          if($("#f4_mais:!checked")){
-                            return true
-                          }
-                        }
+                        required: true
                       },
                       f4_cod_veiculo: {
                         required: "#f4_mais:!checked"
