@@ -2025,6 +2025,7 @@ EOT;
     $id = 5;
     if($request->getParameter('channel_id')>0)
       $id = $request->getParameter('channel_id');
+    
     $schedules = Doctrine_Query::create()
       ->select('s.*')
       ->from('Schedule s')
@@ -2041,7 +2042,7 @@ EOT;
           //$hora = $d->getDateStart();
           //$primeiro++;
         //}
-        $return["aseguir"][] = array("titulo"=> $s->getTitle(), "data"=> $s->getDateStart(), "imagem"=> $s->retriveLiveImage());
+        $return["aseguir"][] = array("titulo"=> $s->Program->getTitle(), "data"=> $s->getDateStart(), "imagem"=> $s->retriveLiveImage());
       }
       
       $noar = Doctrine_Query::create()
@@ -2053,8 +2054,8 @@ EOT;
         ->orderBy('s.date_start asc')
         ->limit('1')
         ->execute();
-      foreach($schedules as $s){
-        $return["noar"][] = array("titulo"=> $s->getTitle(),  "data"=> $s->getDateStart(), "imagem"=> $s->retriveLiveImage());
+      foreach($noar as $n){
+        $return["noar"][] = array("titulo"=> $n->getProgram()->getTitle(),  "data"=> $n->getDateStart(), "imagem"=> $n->retriveLiveImage());
       }
     }
     die(json_encode($return));
