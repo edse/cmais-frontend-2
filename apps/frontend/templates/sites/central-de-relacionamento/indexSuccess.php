@@ -476,12 +476,13 @@ $(document).ready(function(){
                           </label>
                         </div>
                       </div>
+                      
+                      <div id="f4_maisinfo">
                       <!-- salvar alteracoes -->
                       <div class="salvar-alteracoes">
                         lembre-se de clicar em salvar alterações
                       </div>
                       <!-- /salvar alteracoes -->
-                      <div id="f4_maisinfo">
                         <hr />
                         <div class="control-group">
                           <label class="control-label" for="f4_nome">Nome</label>
@@ -618,6 +619,11 @@ $(document).ready(function(){
                         </div>
         
                         <hr />
+                        <!-- salvar alteracoes -->
+                        <div class="salvar-alteracoes">
+                          lembre-se de clicar em salvar alterações
+                        </div>
+                        <!-- /salvar alteracoes -->
                         
                       </div><!-- /#maisinfo -->
         
@@ -654,11 +660,7 @@ $(document).ready(function(){
                       </div>
         
                       </div><!-- /#message -->
-                      <!-- salvar alteracoes -->
-                      <div class="salvar-alteracoes">
-                        lembre-se de clicar em salvar alterações
-                      </div>
-                      <!-- /salvar alteracoes -->
+                      
                       <div class="botoes-form">
                         <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader4" />
                         <button type="submit" class="btn btn-primary" id="btn4">Enviar Mensagem</button>
