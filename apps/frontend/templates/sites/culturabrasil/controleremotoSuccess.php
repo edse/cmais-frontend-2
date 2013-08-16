@@ -1,5 +1,3 @@
-<?php use_helper('I18N', 'Date') ?>
-<?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
   <head>
