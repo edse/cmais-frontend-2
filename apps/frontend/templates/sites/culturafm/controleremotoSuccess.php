@@ -1,3 +1,4 @@
+<?php use_helper('I18N', 'Date') ?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
   <head>
@@ -10,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="/portal/controle-remoto/css/controleremoto.css">
     <link href="/portal/controle-remoto/css/jPlayer.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/portal/controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />    
-    <!-- DFP >
+    <!--DFP -->
     <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
     <script type='text/javascript'>
     GS_googleAddAdSenseService("ca-pub-6681834746443470");
@@ -22,7 +23,7 @@
     <script type='text/javascript'>
     GA_googleFetchAds();
     </script>
-    <!-- /DFP >
+    <!-- /DFP -->
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -35,24 +36,23 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    </script-->
+    </script>
 
       <script src="/portal/controle-remoto/js/jquery.min.js" type="text/javascript"></script>
       <script src="/portal/controle-remoto/js/main.js" type="text/javascript"></script>
       
-      <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script-->
       <script src="/portal/controle-remoto/js/jquery.min-1.8.js" type="text/javascript"></script>
       <script src="/portal/controle-remoto/js/jquery.jplayer.min.js" type="text/javascript"></script>
       <script type="text/javascript" src="/portal/controle-remoto/js/jquery.jplayer.inspector.js"></script>
       <script type="text/javascript">
       //<![CDATA[
       $(document).ready(function(){
-      
+        
         if(window.screen.width < 1024){
           $(".jp-volume_controls").hide();
           $(".jp-volume-bar").hide();
         }
-      
+        
         $("#jquery_jplayer_2").jPlayer({
           ready: function () {
             $(this).jPlayer("setMedia", {
@@ -124,7 +124,7 @@
               <li><a href="javascript:;" id="btn-brasil" class="pl" title="Cultura Brasil" >Cultura Brasil</a></li>
               <li><a href="javascript:;" class="jp-pause" tabindex="1" title="Pause">pause</a></li>
               <li><a href="javascript:;" class="jp-stop" tabindex="1" title="Stop">stop</a></li>
-             <div class="jp-volume_controls">
+              <div class="jp-volume_controls">
                 <li><a href="javascript:;" class="jp-mute" tabindex="1" title="Mute">mute</a></li>
                 <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="">unmute</a></li>
                 <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="Volume Máximo">max volume</a></li>
@@ -146,112 +146,103 @@
      </div>  
         
         
-        
       </section>
       <!-- /player -->
       
       <!-- descrição programa -->
       <section class="cr-pgm">
+      <?php
+      if(isset($schedules)):
+        $style = 1; //Par ou Impar
         
-        <!-- header -->
-        <div class="cr-header-pgm">
-          <span>você esta ouvindo</span>
-        </div>
-        <!-- /header -->
-        
-        <!-- imagem -->
-        <div class="cr-img-pgm">
-          <img src="/portal/controle-remoto/css/cr-img-layout.jpg" alt="Nome Pgm" />
-        </div>  
-        <!-- /imagem -->
-        
-        <!-- descricao programa -->
-        <div class="cr-desc-pgm">
-          <h2>todos os sons</h2>
-          
-          <!-- detalhe musica -->
-          <div class="cr-det-mus-pgm">
+        foreach($schedules as $k=>$d):
+          $now = false;
+          if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
+            $now = true;
+          }
+    
+          if($now):
+            if($d->retriveLiveImage() != ""){
+              $imagemPrograma = $d->retriveLiveImage();  
+            }else{
+              $imagemPrograma = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
+            }
+          ?>
+            <!-- header -->
+            <div class="cr-header-pgm">
+              <span>você esta ouvindo</span>
+            </div>
+            <!-- /header -->          
             
-            <h3>música</h3>
-            <p>Oração ao Tempo</p>
+            <!-- imagem -->  
+            <div class="cr-img-pgm">
+              <img src="<?php echo $imagemPrograma ?>" alt="<?php echo $d->Program->getTitle()?>" />
+            </div>  
+            <!-- /imagem -->
             
-            <h3>intérprete</h3>
-            <p>Caetano Veloso</p>
+            <!-- descricao programa -->
+            <div class="cr-desc-pgm">
+              <h2><?php echo $d->Program->getTitle()?></h2>
               
-          </div>
-          <!-- /detalhe musica -->
+              <!-- detalhe musica -->
+              <div class="cr-det-mus-pgm">
+                
+                <h3>música</h3>
+                <p>Oração ao Tempo</p>
+                
+                <h3>intérprete</h3>
+                <p>Caetano Veloso</p>
+                  
+              </div>
+              <!-- /detalhe musica -->
+                
+            </div>
+            <!-- descricao programa -->
             
-        </div>
-        <!-- descricao programa -->
-        
-      </section>
-      <!-- /descrição programa -->
-      
-      <!-- lista a seguir -->
+          </section>
+          <!-- /descrição programa -->              
+              
+      <?php endif; 
+        endforeach;
+      ?>
+        <!-- lista a seguir -->
       <section class="cr-lista-a-seguir">
         <h4>a Seguir</h4>
         <div class="cr-linha"></div>
-        
+
         <!-- lista itens -->
         <ul>
-          <!-- item -->
-          <li class="par">
-            <h5>Supertônica</h5>
-            <p class="hora">15:30 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="impar">
-            <h5>Reggae de Bamba</h5>
-            <p class="hora">16:20 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="par">
-            <h5>Galeria</h5>
-            <p class="hora">16:50 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="impar">
-            <h5>Programa de Estudante</h5>
-            <p class="hora">17:30 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="par">
-            <h5>Seleção do Ouvinte</h5>
-            <p class="hora">18:00 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="impar">
-            <h5>Cultura Livre</h5>
-            <p class="hora">19:00 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="par">
-            <h5>Bossamoderna</h5>
-            <p class="hora">19:45 h</p>
-          </li>
-          <!-- item -->
+      
+      <?php 
+        $cont = 1;
+        foreach($schedules as $k=>$d):
+          if((strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateStart())) && $cont <= 7) {
+      ?>
+            <!-- item -->
+            <li class="<?php if($style==0) {$style++;echo"im";}else{$style=0;}?>par">
+              <h5><?php echo $d->retriveTitle(); ?></h5>
+              <p class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?> h</p>
+            </li>
+            <!-- item -->
+    <?php 
+            $cont++;
+          }
+        endforeach;
+      endif; 
+    ?>    
+      
           
         </ul>  
         <!-- /lista itens -->
         
         <div class="cr-linha"></div>
         
-        <a href="#" class="cr-pgm-completa" title="Veja nossa programação completa">programação completa » </a>
+        <a href="http://cmais.com.br/culturabrasil/programacao" class="cr-pgm-completa" title="Veja nossa programação completa">programação completa » </a>
         
       </section>  
       <!-- /lista a seguir -->
+      
+      
       
       <!-- banner -->
       <section class="cr-banner">
@@ -259,7 +250,7 @@
         <div class="cr-box-banner">
           
           <script type='text/javascript'>
-            //GA_googleFillSlot("cultura-brasil");
+            GA_googleFillSlot("cultura-fm");
           </script>
           
         </div>

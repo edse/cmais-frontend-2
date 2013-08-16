@@ -1,3 +1,4 @@
+<?php use_helper('I18N', 'Date') ?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
   <head>
@@ -145,174 +146,94 @@
      </div>  
         
         
-        
       </section>
       <!-- /player -->
       
       <!-- descrição programa -->
       <section class="cr-pgm">
+      <?php
+      if(isset($schedules)):
+        $style = 1; //Par ou Impar
         
-        <!-- header -->
-        <div class="cr-header-pgm">
-          <span>você esta ouvindo</span>
-        </div>
-        <!-- /header -->
-        
-        
-        
-        
-   <?php echo "Schedules:". $schedules; 
-   
-   if(isset($schedules)): 
-   
-   ?>
-      <!--lista grade -->
-      <div class="lista-grade">
-        
-        <!--accordion-->
-        <div class="accordion" id="accordion2">
-
-          <?php foreach($schedules as $k=>$d): ?>
-          <?php
-            $now = false;
-            if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
-              $now = true;
+        foreach($schedules as $k=>$d):
+          $now = false;
+          if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
+            $now = true;
+          }
+    
+          if($now):
+            if($d->retriveLiveImage() != ""){
+              $imagemPrograma = $d->retriveLiveImage();  
+            }else{
+              $imagemPrograma = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
             }
+          
+          
           ?>
 
-          <!--item-->
-          <div class="accordion-group">
-            <?php if($now): ?>
-            <a name="agora" id="agora"></a>
-            <script>
-              $(function(){
-                $('html, body').animate({scrollTop: $("#agora").offset().top},'slow');
-              });
-            </script>
-            <?php endif; ?> 
-
-            <!--titulo-->
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse<?php echo $k ?>">
-                <span class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?></span>
-                <span class="programa-grade"><?php echo $d->Program->getTitle() ?></span>
-                <i class="seta-grade<?php if($now): ?> baixo<?php else: ?> cima<?php endif; ?>"></i>
-              </a>
-              <!--linha pontilhada-->
-              <div class="borda-pontilhada"></div>
-              <!--/linha pontilhada-->
+            <!-- header -->
+            <div class="cr-header-pgm">
+              <span>você esta ouvindo</span>
             </div>
-            <!--titulo-->
+            <!-- /header -->          
             
-            <!--corpo-->
-            <div id="collapse<?php echo $k ?>" class="accordion-body collapse<?php if($now): ?> in<?php endif; ?>" style="overflow:hidden;">
-              <div class="accordion-inner">
-                <p><?php echo $d->retriveTitle() ?><br><br>
-                <?php echo $d->retriveDescription() ?></p>
-                <a href="<?php echo $d->retriveUrl() ?>" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
-                <a href="#" class="btn-body" title="">ouça ao vivo pela web<i class="borda-titulo borda-grade"></i></a>
-              </div>
-            </div>
-            <!--corpo-->
+            <!-- imagem -->  
+            <div class="cr-img-pgm">
+              <img src="<?php echo $imagemPrograma ?>" alt="<?php echo $d->Program->getTitle()?>" />
+            </div>  
+            <!-- /imagem -->
             
-          </div>
-          <!--/item-->
-          <?php endforeach; ?>
-          
-        </div>
-        <!--/accordion-->
-        
-      </div>
-      <!--/lista grade -->
-      <?php endif; ?>
-      
-      
-      
-      
-        
-        <!-- imagem -->
-        <div class="cr-img-pgm">
-          <img src="/portal/controle-remoto/css/cr-img-layout.jpg" alt="Nome Pgm" />
-        </div>  
-        <!-- /imagem -->
-        
-        <!-- descricao programa -->
-        <div class="cr-desc-pgm">
-          <h2>todos os sons</h2>
-          
-          <!-- detalhe musica -->
-          <div class="cr-det-mus-pgm">
-            
-            <h3>música</h3>
-            <p>Oração ao Tempo</p>
-            
-            <h3>intérprete</h3>
-            <p>Caetano Veloso</p>
+            <!-- descricao programa -->
+            <div class="cr-desc-pgm">
+              <h2><?php echo $d->Program->getTitle()?></h2>
               
-          </div>
-          <!-- /detalhe musica -->
+              <!-- detalhe musica -->
+              <div class="cr-det-mus-pgm">
+                
+                <h3>música</h3>
+                <p>Oração ao Tempo</p>
+                
+                <h3>intérprete</h3>
+                <p>Caetano Veloso</p>
+                  
+              </div>
+              <!-- /detalhe musica -->
+                
+            </div>
+            <!-- descricao programa -->
             
-        </div>
-        <!-- descricao programa -->
-        
-      </section>
-      <!-- /descrição programa -->
-      
-      <!-- lista a seguir -->
+          </section>
+          <!-- /descrição programa -->              
+              
+      <?php endif; 
+        endforeach;
+      ?>
+        <!-- lista a seguir -->
       <section class="cr-lista-a-seguir">
         <h4>a Seguir</h4>
         <div class="cr-linha"></div>
-        
+
         <!-- lista itens -->
         <ul>
-          <!-- item -->
-          <li class="par">
-            <h5>Supertônica</h5>
-            <p class="hora">15:30 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="impar">
-            <h5>Reggae de Bamba</h5>
-            <p class="hora">16:20 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="par">
-            <h5>Galeria</h5>
-            <p class="hora">16:50 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="impar">
-            <h5>Programa de Estudante</h5>
-            <p class="hora">17:30 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="par">
-            <h5>Seleção do Ouvinte</h5>
-            <p class="hora">18:00 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="impar">
-            <h5>Cultura Livre</h5>
-            <p class="hora">19:00 h</p>
-          </li>
-          <!-- item -->
-          
-          <!-- item -->
-          <li class="par">
-            <h5>Bossamoderna</h5>
-            <p class="hora">19:45 h</p>
-          </li>
-          <!-- item -->
+      
+      <?php 
+        $cont = 1;
+        foreach($schedules as $k=>$d):
+          if((strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateStart())) && $cont <= 7) {
+      ?>
+            <!-- item -->
+            <li class="<?php if($style==0) {$style++;echo"im";}else{$style=0;}?>par">
+              <h5><?php echo $d->retriveTitle(); ?></h5>
+              <p class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?> h</p>
+            </li>
+            <!-- item -->
+    <?php 
+            $cont++;
+          }
+        endforeach;
+      endif; 
+    ?>    
+      
           
         </ul>  
         <!-- /lista itens -->
@@ -323,6 +244,10 @@
         
       </section>  
       <!-- /lista a seguir -->
+      
+        
+      
+      
       
       <!-- banner -->
       <section class="cr-banner">
