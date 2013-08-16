@@ -476,6 +476,11 @@ $(document).ready(function(){
                           </label>
                         </div>
                       </div>
+                      <!-- salvar alteracoes -->
+                      <div class="salvar-alteracoes">
+                        lembre-se de clicar em salvar alterações
+                      </div>
+                      <!-- /salvar alteracoes -->
                       <div id="f4_maisinfo">
                         <hr />
                         <div class="control-group">
@@ -649,11 +654,15 @@ $(document).ready(function(){
                       </div>
         
                       </div><!-- /#message -->
-        
+                      <!-- salvar alteracoes -->
+                      <div class="salvar-alteracoes">
+                        lembre-se de clicar em salvar alterações
+                      </div>
+                      <!-- /salvar alteracoes -->
                       <div class="botoes-form">
                         <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader4" />
                         <button type="submit" class="btn btn-primary" id="btn4">Enviar Mensagem</button>
-                        <button type="submit" class="btn btn-primary" id="btn5" style="display:none">Salvar Cadastro Alterado</button>
+                        <button type="submit" class="btn btn-Success" id="btn5" style="display:none">Salvar Cadastro</button>
                         <a type="submit" class="btn btn-danger" href="http://cmais.com.br/frontend_dev.php/central-de-relacionamento" id="btn6">Cancelar</a>
                       </div>
                       
@@ -1111,7 +1120,9 @@ $(document).ready(function(){
                     },
                     focusInvalid: false,
                     onfocusout: function(element){
-                      alert('teste');
+                      if($('.salvar-alteracoes').is(":hidden")){
+                        $('.salvar-alteracoes').fadeIn("slow");
+                      }
                     },
                     highlight: function(label) {
                       $(label).closest('.control-group').addClass('error');
