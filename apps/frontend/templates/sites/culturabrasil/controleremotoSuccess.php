@@ -207,7 +207,7 @@
         <!-- lista itens -->
         <ul>
           <!-- item -->
-          <li class="<?if($cont==0) {$cont++;echo"im";}else{$cont=0;}?>par">
+          <li class="<?php if($cont==0) {$cont++;echo"im";}else{$cont=0;}?>par">
             <h5><?php echo $d->retriveTitle(); ?></h5>
             <p class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?> h</p>
           </li>
