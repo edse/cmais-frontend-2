@@ -54,7 +54,7 @@ if(isset($pager)){
           <h1><?php echo $site->getTitle() ?></h1>
           <p class="horario"><?php echo nl2br($program->getSchedule()) ?></p>
           
-          <?php $subsections = $section->Site->subsections(); ?>
+          <?php $subsections = $section->Site->getSections(); ?>
           <?php if($subsections): ?>
           <!-- menu subsection-->
           <ul class="nav navbar-nav">
