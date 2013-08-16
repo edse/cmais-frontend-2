@@ -23,7 +23,7 @@ if(isset($pager)){
 <?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site)) ?>
 
 <!-- section miolo -->
-<section class="miolo">
+<section class="miolo<?php if($section->Site->Program->Channel->getSlug() == "culturabrasil"): ?> programa<?php endif; ?>">
   
   <!--container-->
   <div class="container">
