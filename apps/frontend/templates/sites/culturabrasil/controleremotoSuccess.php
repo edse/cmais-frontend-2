@@ -161,7 +161,15 @@
             $now = true;
           }
     
-          if($now):?>
+          if($now):
+            if(filesize($d->retriveLiveImage()) > 0){
+              $imagemPrograma = $d->retriveLiveImage();  
+            }else{
+              $imagemPrograma = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
+            }
+          
+          
+          ?>
 
             <!-- header -->
             <div class="cr-header-pgm">
@@ -171,7 +179,7 @@
             
             <!-- imagem -->  
             <div class="cr-img-pgm">
-              <img src="<?php echo $d->retriveLiveImage() ?>" alt="Nome Pgm" />
+              <img src="<?php echo $imagemPrograma ?>" alt="<?php echo $d->Program->getTitle()?>" />
             </div>  
             <!-- /imagem -->
             

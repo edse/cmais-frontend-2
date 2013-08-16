@@ -56,7 +56,7 @@
         $("#jquery_jplayer_2").jPlayer({
           ready: function () {
             $(this).jPlayer("setMedia", {
-              mp3: "http://midiaserver.tvcultura.com.br:8001/;stream/1"
+              mp3: "http://midiaserver.tvcultura.com.br:8003/;stream/1"
             }).jPlayer("play");
           },
           swfPath: "/portal/controle-remoto/swf",
@@ -161,8 +161,13 @@
             $now = true;
           }
     
-          if($now):?>
-
+          if($now):
+            if(filesize($d->retriveLiveImage()) > 0){
+              $imagemPrograma = $d->retriveLiveImage();  
+            }else{
+              $imagemPrograma = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
+            }
+          ?>
             <!-- header -->
             <div class="cr-header-pgm">
               <span>você esta ouvindo</span>
@@ -171,7 +176,7 @@
             
             <!-- imagem -->  
             <div class="cr-img-pgm">
-              <img src="<?php echo $d->retriveLiveImage() ?>" alt="Nome Pgm" />
+              <img src="<?php echo $imagemPrograma ?>" alt="<?php echo $d->Program->getTitle()?>" />
             </div>  
             <!-- /imagem -->
             
@@ -237,8 +242,6 @@
       </section>  
       <!-- /lista a seguir -->
       
-        
-      
       
       
       <!-- banner -->
@@ -247,7 +250,7 @@
         <div class="cr-box-banner">
           
           <script type='text/javascript'>
-            GA_googleFillSlot("cultura-brasil");
+            GA_googleFillSlot("cultura-fm");
           </script>
           
         </div>
