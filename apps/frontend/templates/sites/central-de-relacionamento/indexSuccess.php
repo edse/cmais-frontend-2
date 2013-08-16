@@ -1203,7 +1203,7 @@ $(document).ready(function(){
                 
                 function toggleInfo(){
                   if($('#f4_mais').attr('checked')){
-                    $('f4_maisinfo .control-group').each(function(){
+                    $('#f4_maisinfo .control-group').each(function(){
                       $(this).removeClass("valid");
                       $(this).find("label .error.valid").remove();
                     })
