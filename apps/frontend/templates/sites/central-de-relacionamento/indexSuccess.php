@@ -1205,8 +1205,7 @@ $(document).ready(function(){
                   if($('#f4_mais').attr('checked')){
                     $('#f4_maisinfo').show();
                     $('#btn5').show();
-                    $('#btn4').hide();
-                    $('#message').hide();
+                    $('#btn4, .salvar-alteracoes, #message').hide();
                     $('#f4_cod_programa').attr('value','--');
                     $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   }else{
