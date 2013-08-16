@@ -793,7 +793,7 @@ $(document).ready(function(){
                     $('#f4_mais').attr('checked','true');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
                     $('#row6, #message, #btn4').hide();
-                    $('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected');
+                    //$('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected');
                     $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   });
                   $('.backForm').live("click", function(){
@@ -1095,7 +1095,7 @@ $(document).ready(function(){
                         required: "#f4_mais:!checked"
                       },
                       f4_cod_programa: {
-                        required: true //"#f4_mais:!checked"
+                        required: "#f4_mais:!checked"
                       },
                       f4_cod_veiculo: {
                         required: "#f4_mais:!checked"
@@ -1203,17 +1203,19 @@ $(document).ready(function(){
                 
                 function toggleInfo(){
                   if($('#f4_mais').attr('checked')){
+                    $('#f4_maisinfo .control-group').removeClass("success");
+                    $('#f4_maisinfo .c').find("label.error.valid").remove();
                     $('#f4_maisinfo').show();
                     $('#btn5').show();
                     $('#btn4, .salvar-alteracoes, #message').hide();
-                    $('#f4_cod_programa').attr('value','--');
+                    //$('#f4_cod_programa').attr('value','--');
                     $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   }else{
                     $('#f4_maisinfo').hide();
                     $('#btn5').hide();
                     $('#btn4').show();
                     $('#message').show();
-                    $('#f4_cod_programa').attr('value','');
+                    //$('#f4_cod_programa').attr('value','');
                     $('#f4_cod_programa, #f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').removeAttr('disabled');
                   }
                   if($('#f3_mais').attr('checked')){
