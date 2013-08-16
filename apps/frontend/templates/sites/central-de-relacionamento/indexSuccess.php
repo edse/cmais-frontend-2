@@ -642,7 +642,7 @@ $(document).ready(function(){
                         <label class="control-label" for="f4_cod_programa">Programa</label>
                         <div class="controls">
                           <select name="f4_cod_programa" id="f4_cod_programa" onchange="assuntos();">
-                            <option value="--" selected="selected"></option>
+                            <option value="--" ></option>
                           </select>
                         </div>
                       </div>
