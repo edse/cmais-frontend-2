@@ -1109,6 +1109,7 @@ $(document).ready(function(){
                         }
                       }
                     },
+                    focusInvalid: false,
                     highlight: function(label) {
                       $(label).closest('.control-group').addClass('error');
                     },
