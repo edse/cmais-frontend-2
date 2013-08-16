@@ -93,7 +93,7 @@
 #email-central .alert h4 {color:#106d41 ;text-transform: none;}
 #email-central .btn{text-decoration: none !important;}
 .cinza-claro-2 li{border:none;}
-.salvar-alteracoes{display:none;}
+.salvar-alteracoes{display:none;width: 80%;background: yellow;margin: 0 auto;padding: 10px;border: 1px red dashed;color: red;text-align: center;text-transform: uppercase;font-weight: bold;font-size: 14px;}
 /* /GERAL */
 
 /* CONTENT */
