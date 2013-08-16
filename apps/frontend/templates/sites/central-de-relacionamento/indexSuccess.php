@@ -1098,8 +1098,6 @@ $(document).ready(function(){
                         required: function(element){
                           if($("#f4_mais:!checked")){
                             return true
-                          }else if($("#f4_cod_programa").val()=="--"){
-                            return true
                           }
                         }
                       },
