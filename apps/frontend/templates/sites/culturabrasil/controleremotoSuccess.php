@@ -146,82 +146,70 @@
      </div>  
         
         
-        
       </section>
       <!-- /player -->
       
       <!-- descrição programa -->
       <section class="cr-pgm">
-        
-        <!-- header -->
-        <div class="cr-header-pgm">
-          <span>você esta ouvindo</span>
-        </div>
-        <!-- /header -->
-        
-        
-        
-        
-   <?php 
+      <?php
       if(isset($schedules)):
+        $cont = 0;
+        
         foreach($schedules as $k=>$d):
           $now = false;
           if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
             $now = true;
           }
     
-          if($now):
-            echo "Ouvindo: ".$d->Program->getTitle()."-".format_datetime($d->getDateStart(), "HH:mm")."h";          
-          endif;
-      ?>
-            <?php echo $d->retriveLiveImage() ?><br><br>
-            <?php echo format_datetime($d->getDateStart(), "HH:mm") ?>
-            <?php echo $d->retriveTitle() ?><br><br>
-      <?php 
-        endforeach;
-      endif; ?>
-      
-      
-        
-        <!-- imagem -->
-        <div class="cr-img-pgm">
-          <img src="/portal/controle-remoto/css/cr-img-layout.jpg" alt="Nome Pgm" />
-        </div>  
-        <!-- /imagem -->
-        
-        <!-- descricao programa -->
-        <div class="cr-desc-pgm">
-          <h2>todos os sons</h2>
-          
-          <!-- detalhe musica -->
-          <div class="cr-det-mus-pgm">
+          if($now):?>
+
+            <!-- header -->
+            <div class="cr-header-pgm">
+              <span>você esta ouvindo</span>
+            </div>
+            <!-- /header -->          
             
-            <h3>música</h3>
-            <p>Oração ao Tempo</p>
+            <!-- imagem -->  
+            <div class="cr-img-pgm">
+              <img src="<?php echo $d->retriveLiveImage() ?>" alt="Nome Pgm" />
+            </div>  
+            <!-- /imagem -->
             
-            <h3>intérprete</h3>
-            <p>Caetano Veloso</p>
+            <!-- descricao programa -->
+            <div class="cr-desc-pgm">
+              <h2><?php echo $d->Program->getTitle()?></h2>
               
-          </div>
-          <!-- /detalhe musica -->
+              <!-- detalhe musica -->
+              <div class="cr-det-mus-pgm">
+                
+                <h3>música</h3>
+                <p>Oração ao Tempo</p>
+                
+                <h3>intérprete</h3>
+                <p>Caetano Veloso</p>
+                  
+              </div>
+              <!-- /detalhe musica -->
+                
+            </div>
+            <!-- descricao programa -->
             
-        </div>
-        <!-- descricao programa -->
+          </section>
+          <!-- /descrição programa -->              
+              
+      <?php endif; ?>      
         
-      </section>
-      <!-- /descrição programa -->
-      
       <!-- lista a seguir -->
       <section class="cr-lista-a-seguir">
         <h4>a Seguir</h4>
         <div class="cr-linha"></div>
-        
+
         <!-- lista itens -->
         <ul>
           <!-- item -->
-          <li class="par">
-            <h5>Supertônica</h5>
-            <p class="hora">15:30 h</p>
+          <li class="<?if($cont==0) {$cont++;echo"im";}else{$cont=0;}?>par">
+            <h5><?php echo $d->retriveTitle(); ?></h5>
+            <p class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?> h</p>
           </li>
           <!-- item -->
           
@@ -266,6 +254,10 @@
             <p class="hora">19:45 h</p>
           </li>
           <!-- item -->
+      <?php 
+        //FIM DA REPETIÇÃO
+        endforeach;
+      endif; ?>    
           
         </ul>  
         <!-- /lista itens -->
@@ -276,6 +268,10 @@
         
       </section>  
       <!-- /lista a seguir -->
+      
+        
+      
+      
       
       <!-- banner -->
       <section class="cr-banner">
