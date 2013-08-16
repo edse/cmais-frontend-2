@@ -1203,6 +1203,10 @@ $(document).ready(function(){
                 
                 function toggleInfo(){
                   if($('#f4_mais').attr('checked')){
+                    $('f4_maisinfo .control-group').each(function(){
+                      $(this).removeClass("valid");
+                      $(this).find("label .error.valid").remove();
+                    })
                     $('#f4_maisinfo').show();
                     $('#btn5').show();
                     $('#btn4, .salvar-alteracoes, #message').hide();
