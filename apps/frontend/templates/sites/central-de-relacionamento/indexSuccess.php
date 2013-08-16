@@ -1110,7 +1110,7 @@ $(document).ready(function(){
                       }
                     },
                     focusInvalid: false,
-                    onfocusin:function(label){
+                    onfocusout: function(element){
                       alert('teste');
                     },
                     highlight: function(label) {
