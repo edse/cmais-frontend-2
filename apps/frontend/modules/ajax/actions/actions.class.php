@@ -2020,4 +2020,44 @@ EOT;
     die($return);
   }
 
+  public function executeProgramacaoradio(sfWebRequest $request){
+    $this->setLayout(false);
+    $id = 5;
+    if($request->getParameter('channel_id')>0)
+      $id = $request->getParameter('channel_id');
+    $schedules = Doctrine_Query::create()
+      ->select('s.*')
+      ->from('Schedule s')
+      ->where('s.channel_id = ?', $id)
+      ->andWhere('s.date_start > ?', date('Y-m-d H:i:s'))
+      ->orderBy('s.date_start asc')
+      ->limit('7')
+      ->execute();
+    if((isset($schedules)) && (count($schedules) > 0)){
+      $return = array();
+      //$primeiro = 1;
+      foreach($schedules as $s){
+        //if($primeiro == 1){
+          //$hora = $d->getDateStart();
+          //$primeiro++;
+        //}
+        $return["aseguir"][] = array($s->getTitle(), $s->getDateStart(),$s->retriveLiveImage());
+      }
+      
+      $noar = Doctrine_Query::create()
+        ->select('s.*')
+        ->from('Schedule s')
+        ->where('s.channel_id = ?', $id)
+        ->andWhere('s.date_start <= ?', date('Y-m-d H:i:s') )
+        ->andWhere('s.date_end >= ?', date('Y-m-d H:i:s') )
+        ->orderBy('s.date_start asc')
+        ->limit('1')
+        ->execute();
+      foreach($schedules as $s){
+        $return["noar"][] = array($s->getTitle(), $s->getDateStart(),$s->retriveLiveImage());
+      }
+    }
+    die(json_encode($return));
+  }
+
 }
