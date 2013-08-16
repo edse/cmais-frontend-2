@@ -312,14 +312,14 @@ else if(($_REQUEST["step"]==4)&&($_REQUEST["f4_cod_programa"]!="--")){
       'mensagem'              =>  (isset($_REQUEST["f4_mensagem"]))? $_REQUEST["f4_mensagem"] : ""
     );
     $result = $client->insere_mensagem($arr);
-    if($result->insere_mensagemResult > 0){
+    if(count($result->insere_mensagemResult) > 0){
       $script = '$("#row1, #row2, #row3, #row4, #row5, #row7, #row8, #row9").hide();$("#row6").show();';
       $title = 'Mensagem enviada';
       if(isset($_REQUEST["f4_mais"]))
         $title = 'Cadastro atualizado e mensagem enviada';
       echo json_encode(array('script'=>$script,'title'=>$title,'msg'=>'Mensagem enviada', 'form'=>'form6'));
     }else{
-      $script = '$("#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row9").hide();$("#row8").show();';
+      $script = '$("#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row9").hide();$("#row8").show();alert('.count($result->insere_mensagemResult).');';
       $title = 'Mensagem não enviada';
       echo json_encode(array('script'=>$script,'title'=>$title,'msg'=>'Mensagem não enviada', 'form'=>'form8'));
     }
