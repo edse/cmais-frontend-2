@@ -162,7 +162,7 @@
           }
     
           if($now):
-            if(filesize($d->retriveLiveImage()) > 0){
+            if($d->retriveLiveImage() != ""){
               $imagemPrograma = $d->retriveLiveImage();  
             }else{
               $imagemPrograma = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
