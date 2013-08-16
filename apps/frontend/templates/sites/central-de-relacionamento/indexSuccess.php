@@ -141,7 +141,7 @@ $(document).ready(function(){
                     <div class="control-group">
                       <label class="control-label" for="f2_cod_recepcaodesinal">Recepção do sinal</label>
                       <div class="controls">
-                        <select id="f2_cod_recepcaodesinal" name="f2_cod_recepcaodesinal"></select>
+                        <select id="f2_cod_recepcaodesinal" size="10" name="f2_cod_recepcaodesinal"></select>
                       </div>
                     </div>
                     <div class="control-group">
@@ -313,7 +313,7 @@ $(document).ready(function(){
                     <div class="control-group">
                       <label class="control-label" for="f3_cod_recepcaodesinal">Recepção do sinal</label>
                       <div class="controls">
-                        <select id="f3_cod_recepcaodesinal" name="f3_cod_recepcaodesinal"></select>
+                        <select id="f3_cod_recepcaodesinal" size="10" name="f3_cod_recepcaodesinal"></select>
                       </div>
                     </div>
                     <div class="control-group">
@@ -505,7 +505,7 @@ $(document).ready(function(){
                         <div class="control-group">
                           <label class="control-label" for="f4_cod_recepcaodesinal">Recepção do sinal</label>
                           <div class="controls">
-                            <select id="f4_cod_recepcaodesinal" name="f4_cod_recepcaodesinal"></select>
+                            <select id="f4_cod_recepcaodesinal" size="10" name="f4_cod_recepcaodesinal"></select>
                           </div>
                         </div>
                         <div class="control-group">
