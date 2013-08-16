@@ -187,11 +187,11 @@
               <!-- detalhe musica -->
               <div class="cr-det-mus-pgm">
                 
-                <h3>música</h3>
+                <!--h3>música</h3>
                 <p>Oração ao Tempo</p>
                 
                 <h3>intérprete</h3>
-                <p>Caetano Veloso</p>
+                <p>Caetano Veloso</p-->
                   
               </div>
               <!-- /detalhe musica -->

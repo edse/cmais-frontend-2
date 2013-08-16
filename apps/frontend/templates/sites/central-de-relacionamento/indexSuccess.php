@@ -1109,6 +1109,10 @@ $(document).ready(function(){
                         }
                       }
                     },
+                    focusInvalid: false,
+                    onfocusout: function(element){
+                      alert('teste');
+                    },
                     highlight: function(label) {
                       $(label).closest('.control-group').addClass('error');
                     },

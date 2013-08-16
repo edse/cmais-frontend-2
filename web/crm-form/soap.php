@@ -319,7 +319,7 @@ else if(($_REQUEST["step"]==4)&&($_REQUEST["f4_cod_programa"]!="--")){
         $title = 'Cadastro atualizado e mensagem enviada';
       echo json_encode(array('script'=>$script,'title'=>$title,'msg'=>'Mensagem enviada', 'form'=>'form6'));
     }else{
-      $script = '$("#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row9").hide();$("#row8").show();alert('.count($result->insere_mensagemResult).');';
+      $script = '$("#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row9").hide();$("#row8").show();';
       $title = 'Mensagem não enviada';
       echo json_encode(array('script'=>$script,'title'=>$title,'msg'=>'Mensagem não enviada', 'form'=>'form8'));
     }
