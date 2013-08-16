@@ -162,16 +162,8 @@
         
         
         
-   <?php //echo "Schedules:". $schedules; 
-   
-   if(isset($schedules)): 
-   
-   ?>
-      <!--lista grade -->
-      <div class="lista-grade">
+   <?php if(isset($schedules)):?>
         
-        <!--accordion-->
-        <div class="accordion" id="accordion2">
 
           <?php foreach($schedules as $k=>$d): ?>
           <?php
@@ -179,35 +171,17 @@
             if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
               $now = true;
             }
-          ?>
 
-          <!--item-->
-          <div class="accordion-group">
-            <?php if($now): ?>
-            <a name="agora" id="agora"></a>
-            <script>
-              $(function(){
-                $('html, body').animate({scrollTop: $("#agora").offset().top},'slow');
-              });
-            </script>
-            <?php endif; ?> 
-
-            <!--titulo-->
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse<?php echo $k ?>">
-                <span class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?></span>
-                <span class="programa-grade"><?php echo $d->Program->getTitle() ?></span>
-                <i class="seta-grade<?php if($now): ?> baixo<?php else: ?> cima<?php endif; ?>"></i>
-              </a>
-              <!--linha pontilhada-->
-              <div class="borda-pontilhada"></div>
-              <!--/linha pontilhada-->
-            </div>
-            <!--titulo-->
+            if($now):
             
-            <!--corpo-->
+            endif; 
+
+          echo $k ?>
+                <?php echo format_datetime($d->getDateStart(), "HH:mm") ?>
+                <?php echo $d->Program->getTitle() ?>
+                <i class="seta-grade<?php if($now): ?> baixo<?php else: ?> cima<?php endif; ?>
+            
             <div id="collapse<?php echo $k ?>" class="accordion-body collapse<?php if($now): ?> in<?php endif; ?>" style="overflow:hidden;">
-              <div class="accordion-inner">
                 <p><?php echo $d->retriveTitle() ?><br><br>
                 <?php echo $d->retriveDescription() ?></p>
                 <a href="<?php echo $d->retriveUrl() ?>" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
