@@ -158,8 +158,8 @@ img{width:100%;}
 .carousel-control {position: absolute;top: 50%; display:none;}
 .carousel-control.left{background: url(/portal/images/capaPrograma/culturabrasil/seta-esquerda.png) no-repeat;border: none;width: 55px;height: 55px;}
 .carousel-control.right{background: url(/portal/images/capaPrograma/culturabrasil/seta-direita.png) no-repeat;border: none;width: 55px;height: 55px;}
-.carousel-caption {position: absolute;left: auto ;right: 0;bottom: 0;padding: 10px 10px 20px 20px ;width: 310px;top: 0;color: white; background:none;}
-.carousel-caption h4{ font-size:24px;font-weight:normal;line-height:35px;}
+.carousel-caption {position: absolute;left: auto ;right: 0;bottom: 0;padding: 30px 10px 20px 20px;width: 310px;top: 0;color: white; background:none;}
+.carousel-caption h4{ font-size:24px;font-weight:normal;line-height:35px;margin: 15px 0 20px;}
 .carousel-caption h3{ margin: 0;font-weight: normal;font-size: 17px;text-transform: uppercase;}
 .carousel-caption p{padding: 15px 0 0 0px;font-size: 16px;line-height: 23px;}
 
@@ -299,11 +299,11 @@ textarea{width:100%; font-size:11px;}
 .content-asset p,
 .content-asset strong,
 .content-asset span{color:black !important;margin-bottom:0px;}
-.content-asset .legenda {min-width: 635px;background-color: #E5E5E5;margin-bottom: 10px;padding: 5px 10px;line-height: 1.2em;}
+.content-asset .legenda {min-width: 635px;background-color: #E5E5E5;margin-bottom: 20px;padding: 5px 10px;line-height: 1.2em;}
 .content-asset .legenda small{color:#949494; font-size:11px;}
 .content-asset .signature{margin:10px 0 5px 0;}
 .content-asset .signature small{font-size:11px; color:#949494;}
-.content-asset .cabecalho{font-size:11px; margin-bottom:20px; color:black;}
+.content-asset .cabecalho{font-size:11px; margin-bottom:10px; color:black;}
 .content-asset .twt.conteudo{width:75px; float:left;margin-left: 10px;}
 .content-asset .google{float:left;}
 .content-asset .fb{float:left; margin-left: 10px; width: 200px;}
