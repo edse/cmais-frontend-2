@@ -1121,6 +1121,7 @@ $(document).ready(function(){
                         }
                       }
                     },
+                    unhighlight: true,
                     focusInvalid: false,
                     onfocusout: function(element){
                       if($('.salvar-alteracoes').is(":hidden")){
