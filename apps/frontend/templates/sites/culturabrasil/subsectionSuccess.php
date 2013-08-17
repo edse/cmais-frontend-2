@@ -71,7 +71,7 @@ if(isset($pager)){
             <?php foreach($subsections as $s): ?>
               <?php if($s->getSlug() != "home"): ?>
                 <?php if($s->getSlug() == "arquivo"): ?>
-            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="/programas/<?php echo $site->getSlug() "><?php echo $s->getTitle() ?></a></li>
+            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="/programas/<?php echo $site->getSlug() ?>"><?php echo $s->getTitle() ?></a></li>
                 <?php else: ?>
             <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="/programas/<?php echo $site->getSlug() . "/" . $s->getSlug() ?>"><?php echo $s->getTitle() ?></a></li>
                 <?php endif; ?>
