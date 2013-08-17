@@ -54,7 +54,17 @@ if(isset($pager)){
           <h1><?php echo $site->getTitle() ?></h1>
           <p class="horario"><?php echo nl2br($program->getSchedule()) ?></p>
           
-          <?php $subsections = $section->Site->getSections(); ?>
+          <?php
+            $subsections = Doctrine_Query::create()
+              ->select('s.*')
+              ->from('Section s')
+              ->where('s.site_id = ?', (int)$section->Site->id)
+              ->andWhere('s.is_active = ?', 1)
+              ->andWhere('s.is_visible = ?', 1)
+              ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
+              ->orderBy('s.display_order')
+              ->execute();
+           ?>
           <?php if($subsections): ?>
           <!-- menu subsection-->
           <ul class="nav navbar-nav">
