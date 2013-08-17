@@ -58,7 +58,7 @@ if(isset($pager)){
             $subsections = Doctrine_Query::create()
               ->select('s.*')
               ->from('Section s')
-              ->where('s.site_id = ?', (int)$section->Site->id)
+              ->where('s.site_id = ?', $site->id)
               ->andWhere('s.is_active = ?', 1)
               ->andWhere('s.is_visible = ?', 1)
               ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
