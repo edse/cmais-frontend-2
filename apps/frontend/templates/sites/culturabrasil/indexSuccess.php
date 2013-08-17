@@ -136,7 +136,7 @@
             ->where('s.channel_id = ?', 5)
             ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($date . ' 00:00:00', $date . ' 23:59:59'))
             ->orderBy('s.date_start asc')
-            ->limit(7)
+            ->limit(8)
             ->execute();
         ?>
         <?php if(isset($schedules)): ?>
