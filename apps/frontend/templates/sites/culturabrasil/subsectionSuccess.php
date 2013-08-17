@@ -70,7 +70,7 @@ if(isset($pager)){
           <ul class="nav navbar-nav">
             <?php foreach($subsections as $s): ?>
               <?php if($s->getSlug() != "home"): ?>
-            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="<?php echo $s->retriveUrl() ?>"><?php echo $s->getTitle() ?></a></li>
+            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="<?php echo $uri . "programas/" . $site->getSlug() . "/" . $s->getSlug() ?>"><?php echo $s->getTitle() ?></a></li>
               <?php endif; ?>
             <?php endforeach; ?>
           </ul>
