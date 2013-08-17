@@ -136,17 +136,6 @@ if(isset($pager)){
         <!--coluna direita-->
         <div class="lista-assets redes span4">
           
-          <?php
-            $sobreSection = Doctrine::getTable('section')->findOneBySiteIdAndSlug($site->id, "sobre");
-            $sobreSectionAssets = $sobreSection->getAssets();
-            if(count($sobreSectionAssets) > 0) {
-              $sobre = $sobreSectionAssets[0];
-            }
-          ?>
-  
-          <?php if(isset($sobre)):?>
-            <!-- Aqui poderia entrar a descrição do programa, por exemplo! Mas pode colocar em qualquer lugar desde que o código acima venha antes... -->
-          <?php endif; ?>
         
           <div class="row-fluid">      
             <div class="span12 direita">
