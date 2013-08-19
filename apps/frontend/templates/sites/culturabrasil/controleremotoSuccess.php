@@ -76,19 +76,37 @@
          },3000);
          */
         
-        //Voce está ouvindo
+        //Você está ouvindo
         $.ajax({
-           url: "/portal/controle-remoto/ajax_pulsar.php", //URL de destino
+           url: "/portal/controle-remoto/ajax_pulsar.php", 
            dataType: "json",
            success: function(json){
-             alert("Duracao " + json.musica.duracao);
-             //alert("Interprete "+ json.musica.interprete);
-             //alert("Titulo "+ json.musica.titulo);
              $("#nome_interprete_atual").text(json.musica.interprete);
              $("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);
            }
          }); 
-        
+         
+       
+        /* A Seguir
+         * Atualizar Imagem do Programa e Descrição do Programa Atual
+         * Atualizar 7 Próximos programas - Descrição e Horário
+        */
+        $.ajax({
+           url: "http://cmais.com.br/frontend_dev.php/ajax/programacao-radio?channel_id=5",// 5 = Cultura Brasil 
+           dataType: "json",
+           success: function(json){
+             //No Ar
+             $("#titulo_pgm_atual").text(json.noar.titulo); 
+             $("#img_pgm_atual").attr("src",json.noar.imagem);
+             
+             //alert("Interprete "+ json.musica.interprete);
+             //alert("Titulo "+ json.musica.titulo);
+             //$("#nome_interprete_atual").text(json.musica.interprete);
+             //$("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);
+             $("#lista_pgm_a_seguir").html("");
+           }
+         });
+         
       });
       //]]>
       </script>    
@@ -198,13 +216,13 @@
             
             <!-- imagem -->  
             <div class="cr-img-pgm">
-              <img src="<?php echo $imagemPrograma ?>" alt="<?php echo $d->Program->getTitle()?>" />
+              <img src="<?php echo $imagemPrograma ?>" alt="<?php echo $d->Program->getTitle()?>" id="img_pgm_atual" />
             </div>  
             <!-- /imagem -->
             
             <!-- descricao programa -->
             <div class="cr-desc-pgm">
-              <h2><?php echo $d->Program->getTitle()?></h2>
+              <h2 id="titulo_pgm_atual"><?php echo $d->Program->getTitle()?></h2>
               
               <!-- detalhe musica -->
               <div class="cr-det-mus-pgm">
@@ -233,7 +251,7 @@
         <div class="cr-linha"></div>
 
         <!-- lista itens -->
-        <ul>
+        <ul id="lista_pgm_a_seguir">
       
       <?php 
         $cont = 1;
