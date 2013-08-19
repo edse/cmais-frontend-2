@@ -21,7 +21,7 @@
     </ul>
   </div>
   <!--/breadcrumb-->
-  <div class="row-fluid container" style="min-height:2000px;">
+  <div class="row-fluid container">
     <!--transmissao ao vivo -->
     <div class="span6" style="*margin-left:0px;">
        <div class="page-header ao-vivo">
@@ -71,7 +71,7 @@
     </div>
   </div>
 
-  <div class="row-fluid container">
+  <div class="row-fluid container" style="min-height:2000px;">
     <div class="span6" style="*margin-left:0px;">    
       <!-- google -->
       <div class="page-header" style="margin: 0;">
