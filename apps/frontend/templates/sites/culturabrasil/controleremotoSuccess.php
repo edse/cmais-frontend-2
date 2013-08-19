@@ -48,7 +48,7 @@
       //<![CDATA[
       $(document).ready(function(){
         
-        if(window.screen.width < 1024){
+        if(window.screen.width <= 1024){
           $(".jp-volume_controls").hide();
           $(".jp-volume-bar").hide();
         }
@@ -81,17 +81,19 @@
            url: "/portal/controle-remoto/ajax_pulsar.php", 
            dataType: "json",
            success: function(json){
-             $("#nome_interprete_atual").text(json.musica.interprete);
-             $("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);
+             if(json.musica.interprete == "" && json.musica.titulo){
+               $(".cr-det-mus-pgm").hide();
+             }else{
+               //$("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);               
+               $("#nome_interprete_atual").text(json.musica.interprete);
+               $("#nome_musica_atual").text(json.musica.titulo);               
+               $(".cr-det-mus-pgm").show();  
+             }
            }
          }); 
          
-       
-        /* A Seguir
-         * Atualizar Imagem do Programa e Descrição do Programa Atual
-         * Atualizar 7 Próximos programas - Descrição e Horário
-        */
-        $.ajax({
+         //No ar e A Seguir
+         $.ajax({
            url: "http://cmais.com.br/frontend_dev.php/ajax/programacao-radio?channel_id=5",// 5 = Cultura Brasil 
            dataType: "json",
            success: function(json){
@@ -99,30 +101,17 @@
              $("#titulo_pgm_atual").text(json.noar[0].titulo); 
              $("#img_pgm_atual").attr("src",json.noar[0].imagem);
              
-             //console.log(json.noar[0].titulo);
-             //console.log(json.noar[0].imagem);
-             
-             /*
+             //A seguir
              var style = 0;
              var tipo = "im";
              var conteudo = "";
              
-             $(json).find('aseguir').each(function() {
-               if(style==0){ 
-                style++;
-                tipo = "im";
-               }else{
-                 style=0
-                 tipo = "";
-               }
-               
-               conteudo+=  '<li class="'+tipo+'"par">';
-               conteudo+=  '<h5>'+json.aseguir.titulo+'</h5>';
-               conteudo+=  '<p class="hora">' + json.aseguir.data+ 'h</p>';
-               conteudo+=  '</li>';
-              });
-              */
-              //$("#lista_pgm_a_seguir").html(conteudo);
+             $(json.aseguir).each(function(index, program){
+               if(style==0){ style++;tipo = "im";}else{style=0;tipo = "";}
+               conteudo+=  '<li class="'+tipo+'par"> <h5>'+program.titulo+'</h5> <p class="hora">' + program.data+ 'h</p></li>';
+             });
+              
+             $("#lista_pgm_a_seguir").html(conteudo);
              
            }
          });
