@@ -80,7 +80,7 @@
       <div id="comments"></div>
       <script>
       gapi.comments.render('comments', {
-          href: window.location,
+          href: "http://www.culturabrasil.com.br/sala-de-tv",
           width: '490',
           first_party_property: 'BLOGGER',
           view_type: 'FILTERED_POSTMOD'
