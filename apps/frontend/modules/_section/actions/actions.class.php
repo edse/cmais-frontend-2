@@ -81,6 +81,9 @@ class _sectionActions extends sfActions
 	  if($this->section->Site->getSlug()=="cocorico" && $this->section->getSlug()=="3d") {
         $this->setLayout(false);
       }
+    if($this->section->Site->getSlug()=="culturabrasil" && $this->section->getSlug()=="widget") {
+        $this->setLayout(false);
+      }
 	  if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
         $this->setLayout('responsivo');
       }
