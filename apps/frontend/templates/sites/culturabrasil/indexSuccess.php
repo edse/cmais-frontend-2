@@ -115,8 +115,10 @@
         <?php if(isset($displays["widget"])): ?>
           <?php if(count($displays["widget"]) > 0): ?>
         <!--destaque widgets -->
-        <div class="destaque-playlist">
-          <span>Widget</span>
+        <div class="destaque-cultura">
+          <div class="programa">
+            <span>WIDGET</span><i class="borda-titulo"></i>
+          </div>
           <p>Copie o código abaixo para incorporar o Controle Remoto ao seu blog ou site</p> 
           <textarea rows="3"><?php echo $displays["widget"][0]->getHtml() ?></textarea>
         </div>  
