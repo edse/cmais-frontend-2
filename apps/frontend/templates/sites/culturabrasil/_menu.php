@@ -116,6 +116,7 @@ if($asset) {
 
 <script>
 $('.controle-remoto').click(function(){
+  alert('teste')
   controle = window.open('http://culturabrasil.cmais.com.br/controleremoto?width=300,height=600,scrollbars=no'');
 });
   
