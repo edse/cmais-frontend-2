@@ -51,7 +51,7 @@
             <img title="Roda Viva" alt="Roda Viva" src="http://midia.cmais.com.br/programs/891dc87780b6df7358a6960f7cf3966549229f45.png">
           </div>
           <div class="live-image">
-            <img src="http://midia.cmais.com.br/programs/32129e1ef151f91bb63cd8ff2671f5e2715f043c.jpg" alt="Roda Viva ">
+            <img src="http://midia.cmais.com.br/programs/6102b1388d8c7f0c25871ed70755ef802bb59655.jpg" alt="Roda Viva ">
             <span id="rodaviva" style="display: none;">NO AR</span>
           </div>
           <p> 
