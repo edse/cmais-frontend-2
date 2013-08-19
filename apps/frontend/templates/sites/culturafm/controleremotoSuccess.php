@@ -56,7 +56,7 @@
         $("#jquery_jplayer_2").jPlayer({
           ready: function () {
             $(this).jPlayer("setMedia", {
-              mp3: "http://midiaserver.tvcultura.com.br:8001/;stream/1"
+              mp3: "http://midiaserver.tvcultura.com.br:8003/;stream/1"
             }).jPlayer("play");
           },
           swfPath: "/portal/controle-remoto/swf",
@@ -68,31 +68,6 @@
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         
-        /*setTimeout(
-         function(){
-            
-            alert("Hello")
-            
-         },3000);
-         */
-        
-        //Você está ouvindo
-        $.ajax({
-           url: "/portal/controle-remoto/ajax_pulsar.php", 
-           dataType: "json",
-           success: function(json){
-             $("#nome_interprete_atual").text(json.musica.interprete);
-             $("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);
-           }
-         }); 
-         
-       
-        /* A Seguir
-         * Atualizar Imagem do Programa e Descrição do Programa Atual
-         * Atualizar 7 Próximos programas - Descrição e Horário
-        */
-       
-         
       });
       //]]>
       </script>    
@@ -192,8 +167,7 @@
             }else{
               $imagemPrograma = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
             }
-      ?>
-
+          ?>
             <!-- header -->
             <div class="cr-header-pgm">
               <span>você esta ouvindo</span>
@@ -202,22 +176,22 @@
             
             <!-- imagem -->  
             <div class="cr-img-pgm">
-              <img src="<?php //echo $imagemPrograma ?>" alt="<?php //echo $d->Program->getTitle()?>" id="img_pgm_atual" />
+              <img src="<?php echo $imagemPrograma ?>" alt="<?php echo $d->Program->getTitle()?>" />
             </div>  
             <!-- /imagem -->
             
             <!-- descricao programa -->
             <div class="cr-desc-pgm">
-              <h2 id="titulo_pgm_atual"><?php //echo $d->Program->getTitle()?></h2>
+              <h2><?php echo $d->Program->getTitle()?></h2>
               
               <!-- detalhe musica -->
               <div class="cr-det-mus-pgm">
                 
-                <h3>música</h3>
-                <p id="nome_musica_atual"></p>
+                <!--h3>música</h3>
+                <p>Oração ao Tempo</p>
                 
                 <h3>intérprete</h3>
-                <p id="nome_interprete_atual"></p>
+                <p>Caetano Veloso</p-->
                   
               </div>
               <!-- /detalhe musica -->
@@ -237,7 +211,7 @@
         <div class="cr-linha"></div>
 
         <!-- lista itens -->
-        <ul id="lista_pgm_a_seguir">
+        <ul>
       
       <?php 
         $cont = 1;
@@ -250,12 +224,12 @@
               <p class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?> h</p>
             </li>
             <!-- item -->
-      <?php 
+    <?php 
             $cont++;
           }
         endforeach;
       endif; 
-      ?>    
+    ?>    
       
           
         </ul>  
@@ -268,8 +242,6 @@
       </section>  
       <!-- /lista a seguir -->
       
-        
-      
       
       
       <!-- banner -->
@@ -278,7 +250,7 @@
         <div class="cr-box-banner">
           
           <script type='text/javascript'>
-            GA_googleFillSlot("cultura-brasil");
+            GA_googleFillSlot("cultura-fm");
           </script>
           
         </div>
