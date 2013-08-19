@@ -65,7 +65,7 @@
         <h4>Twitter</h4>
       </div>
       <div class="ao-vivo">
-        <a class="twitter-timeline"  href="https://twitter.com/culturabrasil2"  data-widget-id="369534168884998144">Tweets by @culturabrasil2</a>
+        <a class="twitter-timeline" href="https://twitter.com/culturabrasil2" data-widget-id="369534168884998144">Tweets by @culturabrasil2</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
     </div>
@@ -80,7 +80,7 @@
       <div id="comments"></div>
       <script>
       gapi.comments.render('comments', {
-          href: "http://www.culturabrasil.com.br/sala-de-tv",
+          href: "http://culturabrasil.cmais.com.br/sala-de-tv",
           width: '490',
           first_party_property: 'BLOGGER',
           view_type: 'FILTERED_POSTMOD'
@@ -103,7 +103,7 @@
         <h4>Facebook</h4>
       </div>
       <!-- comentario facebook -->
-      <div class="fb-comments" data-href="http://www.culturabrasil.com.br/sala-de-tv" data-width="490"></div>
+      <div class="fb-comments" data-href="http://culturabrasil.cmais.com.br/sala-de-tv" data-width="490px" data-num-posts="10"></div>
       <!-- /comentario facebook -->
       <!--/share-->
     </div>    
