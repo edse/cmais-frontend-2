@@ -28,7 +28,7 @@
   <div class="row-fluid container">
     
   <!--transmissao ao vivo -->
-  <div class="span6" style="*margin-left:0px;">  
+  <div class="span12" style="*margin-left:0px;">  
     <div class="page-header ao-vivo">
       <h4>Transmiss&atilde;o ao vivo</h4>
     </div>
@@ -42,7 +42,7 @@
     <script src="http://www.culturabrasil.com.br//_libs/mediaplayer/swfobject.js" type="text/javascript"></script>
 
     <script>
-    var so = new SWFObject("http://www.culturabrasil.com.br/_libs/mediaplayer/player.swf","cam1","450","338","9");
+    var so = new SWFObject("http://www.culturabrasil.com.br/_libs/mediaplayer/player.swf","cam1","640","480","9");
     
     so.addParam("allowscriptaccess","always");
     so.addParam("allowfullscreen","true");
@@ -56,23 +56,26 @@
     so.write("videoPlayer");
     </script>
     <!-- /videoplayer -->
-    <div class="share">
-      <div class="google">
-        <g:plusone size="medium" annotation="none" href="https://plus.google.com/u/0/+CulturaBrasil/posts "></g:plusone>
-      </div>
-      <div class="twt">
-        <a href="https://twitter.com/culturabrasil2" class="twitter-follow-button" data-show-count="false" data-lang="pt">Seguir @radarcultura</a>
-      </div>
-      <div class="fb">
-        <fb:like href="https://facebook.com/culturabrasil" layout="button_count" width="200" send="true" show_faces="false"></fb:like>
-      </div>
-    </div> 
-   <!-- comentario facebook -->
-   <fb:comments href="<?php echo $uri?>" numposts="3" width="495" publish_feed="true" style="margin-top:11px;"></fb:comments>
-   <hr />
-   <!-- /comentario facebook -->
-   </div>      
+    </div>      
    <!--/transmissao ao vivo -->
+   <!--share-->
+   <div class="share span6">
+     <div class="google">
+       <g:plusone size="medium" annotation="none" href="https://plus.google.com/u/0/+CulturaBrasil/posts "></g:plusone>
+     </div>
+     <div class="twt">
+       <a href="https://twitter.com/culturabrasil2" class="twitter-follow-button" data-show-count="false" data-lang="pt">Seguir @radarcultura</a>
+     </div>
+     <div class="fb">
+       <fb:like href="https://facebook.com/culturabrasil" layout="button_count" width="200" send="true" show_faces="false"></fb:like>
+     </div>
+     <!-- comentario facebook -->
+     <fb:comments href="<?php echo $uri?>" numposts="3" width="490" publish_feed="true" style="margin-top:11px;"></fb:comments>
+     <hr />
+     <!-- /comentario facebook -->
+   </div>
+   <!--/share--> 
+
    <!--Bate papo-->
    <div class="span6">
      <div class="page-header ao-vivo">
