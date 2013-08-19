@@ -23,7 +23,7 @@
   <!--/breadcrumb-->
   <div class="row-fluid container">
     <!--transmissao ao vivo -->
-    <div class="span12" style="*margin-left:0px;>
+    <div class="span12" style="*margin-left:0px;">
       <div class="page-header ao-vivo">
         <h4>Transmiss&atilde;o ao vivo</h4>
       </div>
