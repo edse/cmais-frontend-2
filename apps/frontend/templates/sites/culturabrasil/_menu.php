@@ -101,7 +101,7 @@ if($asset) {
    <!--/search-->
    
    <!-- ouca a radio -->
-   <a id="controle-remoto" class="controle-remoto" href="javascript:;">
+   <a id="ouca" class="ouca controle-remoto" href="javascript:;">
      <img src="/portal/images/capaPrograma/culturabrasil/oucaculturabrasil.jpg" alt="Ouça a rádio Cultura Brasil"/>
    </a>
     <!-- ouca a radio -->
