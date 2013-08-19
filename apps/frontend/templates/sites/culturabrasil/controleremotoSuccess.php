@@ -75,10 +75,11 @@
            dataType: "json", //Tipo de Retorno
            success: function(json){ //Se ocorrer tudo certo
              alert("OK");
+             console.log(json);
               //var msg = "Nome: " + json.nome + "\n";
               //msg += "Sobrenome: " + json.sobrenome + "\n";
               //msg += "Idade: " + json.idade;
-              //alert(msg);
+              //alert(msg); 
            }
          });        
         
