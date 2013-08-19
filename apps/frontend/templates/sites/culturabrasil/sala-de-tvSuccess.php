@@ -74,7 +74,7 @@
     <!--/share-->
     <!--Bate papo-->
     <div class="span6">
-      <div class="page-header ao-vivo">
+      <div class="ao-vivo">
         <?php //echo html_entity_decode($displays["chat"][0]->getHtml());?>
         <a class="twitter-timeline" href="https://twitter.com/culturabrasil2" data-widget-id="369476510362521600">Tweets by @culturabrasil2</a>
         <script>
