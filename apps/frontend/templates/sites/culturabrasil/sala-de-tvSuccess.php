@@ -27,7 +27,7 @@
        <div class="page-header ao-vivo">
         <h4>Transmiss&atilde;o ao vivo</h4>
       </div>
-      <div class="span8">
+      <div class="span8" style="margin-left: 0;">
         <!-- video player -->
       <div id="videoPlayer">
         <span class="falta-flash"> Você precisa ter o flash instalado em seu computador<br/> para acessar esse site.<br/> <a href="http://get.adobe.com/br/flashplayer/"  target="blank" title="Download Flash Player">Clique aqui para fazer o download</a>. </span>
@@ -64,12 +64,11 @@
       <!--/share-->
       </div>
       <div class="span4">
-        <div class="page-header" style="margin-bottom: 0;">
+        <div class="page-header" style="margin: 0;">
           <h4>Redes Sociais</h4>
         </div>
         <!--Bate papo-->
-        <div class="span4">
-          <div class="ao-vivo">
+        <div class="ao-vivo">
             <?php //echo html_entity_decode($displays["chat"][0]->getHtml());?>
             <a class="twitter-timeline" href="https://twitter.com/culturabrasil2" data-widget-id="369476510362521600">Tweets by @culturabrasil2</a>
             <script>
@@ -85,8 +84,7 @@
     
             </script>
           </div>
-        </div>
-        <!--/Bate papo-->
+          <!--/Bate papo-->
         
       </div>
      
