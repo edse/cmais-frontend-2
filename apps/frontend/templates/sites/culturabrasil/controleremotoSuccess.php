@@ -84,8 +84,8 @@
              alert("Duracao " + json.musica.duracao);
              //alert("Interprete "+ json.musica.interprete);
              //alert("Titulo "+ json.musica.titulo);
-             $("#nome_interprete_atual").val(json.musica.interprete);
-             $(".nome_musica_atual").val(json.musica.titulo+" - "+json.musica.duracao);
+             $("#nome_interprete_atual").text(json.musica.interprete);
+             $("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);
            }
          }); 
         
@@ -210,7 +210,7 @@
               <div class="cr-det-mus-pgm">
                 
                 <h3>música</h3>
-                <p class="nome_musica_atual"></p>
+                <p id="nome_musica_atual"></p>
                 
                 <h3>intérprete</h3>
                 <p id="nome_interprete_atual"></p>
