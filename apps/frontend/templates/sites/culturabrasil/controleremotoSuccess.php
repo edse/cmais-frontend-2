@@ -88,7 +88,7 @@
         function LoadProgramacao(){
          time = new Date().getTime();
          $.ajax({
-           url: "http://cmais.com.br/frontend_dev.php/ajax/programacao-radio?channel_id=5&no-cache="+time,// 5 = Cultura Brasil 
+           url: "/ajax/programacao-radio?channel_id=5&no-cache="+time,// 5 = Cultura Brasil 
            dataType: "json",
            success: function(json){
              //No Ar
@@ -117,12 +117,12 @@
         //Você está ouvindo
         setInterval(function(){
           LoadInfoMusica();
-         }, 5000);
+         }, 10000);
          
         //No ar e A Seguir
         setInterval(function(){         
           LoadProgramacao();
-         }, 10000);
+         }, 60000);
          
       });
       //]]>
