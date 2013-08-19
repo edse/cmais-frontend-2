@@ -48,7 +48,7 @@
       //<![CDATA[
       $(document).ready(function(){
         
-        if(window.screen.width < 1024){
+        if(window.screen.width <= 1024){
           $(".jp-volume_controls").hide();
           $(".jp-volume-bar").hide();
         }
@@ -67,26 +67,24 @@
         });
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
-        
-        /*setTimeout(
-         function(){
-            
-            alert("Hello")
-            
-         },3000);
-         */
-        
-        //Você está ouvindo
-        $.ajax({
-           url: "/portal/controle-remoto/ajax_pulsar.php", 
-           dataType: "json",
-           success: function(json){
-             $("#nome_interprete_atual").text(json.musica.interprete);
-             $("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);
-           }
-         }); 
-         
-         //No ar e A Seguir
+        function LoadInfoMusica(){
+          $.ajax({
+             url: "/portal/controle-remoto/ajax_pulsar.php", 
+             dataType: "json",
+             success: function(json){
+               if(json.musica.interprete == null && json.musica.titulo == null){
+                 $(".cr-det-mus-pgm").hide();
+               }else{
+                 //$("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);
+                 $("#nome_interprete_atual").text(json.musica.interprete);
+                 $("#nome_musica_atual").text(json.musica.titulo);               
+                 $(".cr-det-mus-pgm").show();  
+               }
+             }
+           }); 
+        }
+
+        function LoadProgramacao(){
          $.ajax({
            url: "http://cmais.com.br/frontend_dev.php/ajax/programacao-radio?channel_id=5",// 5 = Cultura Brasil 
            dataType: "json",
@@ -107,8 +105,22 @@
               
              $("#lista_pgm_a_seguir").html(conteudo);
              
-           }
-         });
+             }
+          }); 
+        }
+        
+        LoadInfoMusica();
+        LoadProgramacao();
+        
+        //Você está ouvindo
+        setInterval(function(){
+          LoadInfoMusica();
+         }, 5000);
+         
+        //No ar e A Seguir
+        setInterval(function(){         
+          LoadProgramacao();
+         }, 10000);
          
       });
       //]]>
@@ -225,6 +237,7 @@
             
             <!-- descricao programa -->
             <div class="cr-desc-pgm">
+              <a class="cr-links cr-logo-cultura-brasil" href="http://culturabrasil.cmais.com.br/" title="Cultura Brasil"></a>
               <h2 id="titulo_pgm_atual"><?php //echo $d->Program->getTitle()?></h2>
               
               <!-- detalhe musica -->
@@ -279,7 +292,13 @@
         <!-- /lista itens -->
         
         <div class="cr-linha"></div>
-        
+        <!-- redes -->
+        <div class="cr-redes">
+          <a class="cr-links cr-facebook" href="https://www.facebook.com/culturabrasil" title="facebook" target="_blank"></a>
+          <a class="cr-links cr-twitter" href="https://twitter.com/culturabrasil2" title="twitter" target="_blank"></a>
+          <a class="cr-links cr-google" href="https://plus.google.com/u/0/+CulturaBrasil/posts" title="google" target="_blank"></a>
+        </div>
+        <!-- /redes -->
         <a href="http://cmais.com.br/culturabrasil/programacao" class="cr-pgm-completa" title="Veja nossa programação completa">programação completa » </a>
         
       </section>  

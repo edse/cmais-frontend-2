@@ -24,10 +24,11 @@
   <div class="row-fluid container">
     <!--transmissao ao vivo -->
     <div class="span12" style="*margin-left:0px;">
-      <div class="page-header ao-vivo">
+       <div class="page-header ao-vivo">
         <h4>Transmiss&atilde;o ao vivo</h4>
       </div>
-      <!-- video player -->
+      <div class="span8" style="margin:0 0 40px 0;">
+        <!-- video player -->
       <div id="videoPlayer">
         <span class="falta-flash"> Você precisa ter o flash instalado em seu computador<br/> para acessar esse site.<br/> <a href="http://get.adobe.com/br/flashplayer/"  target="blank" title="Download Flash Player">Clique aqui para fazer o download</a>. </span>
       </div>
@@ -48,7 +49,7 @@
 
       </script>
       <!-- /videoplayer -->
-      <!--share-->
+       <!--share-->
       <div class="share" style="margin-top: 5px;">
         <div class="google">
           <g:plusone size="medium" annotation="none" href="https://plus.google.com/u/0/+CulturaBrasil/posts "></g:plusone>
@@ -61,48 +62,40 @@
         </div>
       </div>
       <!--/share-->
-      <div class="page-header" style="margin-bottom: 0;">
-        <h4>Redes Sociais</h4>
       </div>
-    </div>
+      <div class="span4">
+        <div class="page-header" style="margin: 0;">
+          <h4>Redes Sociais</h4>
+        </div>
+        <!--Bate papo-->
+        <div class="ao-vivo">
+          <a class="twitter-timeline"  href="https://twitter.com/culturabrasil2"  data-widget-id="369534168884998144">Tweets by @culturabrasil2</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+        <!--/Bate papo-->      
+      </div>
+     
+     </div>
     <!--/transmissao ao vivo -->
    
     <!--share-->
-    <div class="share span4">
+    <div class="share span6">
       <!-- comentario facebook -->
-      <div class="fb-comments" data-href="http://www.culturabrasil.com.br/sala-de-tv" data-width="320"></div>
+      <div class="fb-comments" data-href="http://www.culturabrasil.com.br/sala-de-tv" data-width="490"></div>
       <!-- /comentario facebook -->
     </div>
     <!--/share-->
-    <!--Bate papo-->
-    <div class="span4">
-      <div class="ao-vivo">
-        <?php //echo html_entity_decode($displays["chat"][0]->getHtml());?>
-        <a class="twitter-timeline" href="https://twitter.com/culturabrasil2" data-widget-id="369476510362521600">Tweets by @culturabrasil2</a>
-        <script>
-          ! function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-            if(!d.getElementById(id)) {
-              js = d.createElement(s);
-              js.id = id;
-              js.src = p + "://platform.twitter.com/widgets.js";
-              fjs.parentNode.insertBefore(js, fjs);
-            }
-          }(document, "script", "twitter-wjs");
-
-        </script>
-      </div>
-    </div>
-    <!--/Bate papo-->
+    
     <!-- google -->
-    <div class="span4">
+    <div class="span6">
       <div class="g-comments"
           data-href="http://www.culturabrasil.com.br/sala-de-tv"
-          data-width="320"
+          data-width="490"
           data-first_party_property="BLOGGER"
           data-view_type="FILTERED_POSTMOD">
       </div>
     </div>
+    
     <!-- /google -->
   </div>
 </section>

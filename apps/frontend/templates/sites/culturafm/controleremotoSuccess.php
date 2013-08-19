@@ -67,6 +67,40 @@
         });
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
+      
+              
+       function LoadProgramacao(){
+         $.ajax({
+           url: "http://cmais.com.br/frontend_dev.php/ajax/programacao-radio?channel_id=6",// 6 = Cultura FM 
+           dataType: "json",
+           success: function(json){
+             //No Ar
+             $("#titulo_pgm_atual").text(json.noar[0].titulo); 
+             $("#img_pgm_atual").attr("src",json.noar[0].imagem);
+             
+             //A seguir
+             var style = 0;
+             var tipo = "im";
+             var conteudo = "";
+             
+             $(json.aseguir).each(function(index, program){
+               if(style==0){ style++;tipo = "im";}else{style=0;tipo = "";}
+               conteudo+=  '<li class="'+tipo+'par"> <h5>'+program.titulo+'</h5> <p class="hora">' + program.data+ 'h</p></li>';
+             });
+              
+             $("#lista_pgm_a_seguir").html(conteudo);
+             
+             }
+          }); 
+       }
+      
+      
+       LoadProgramacao();
+      
+        //No ar e A Seguir
+        setInterval(function(){         
+          LoadProgramacao();
+         }, 60000);
         
       });
       //]]>
@@ -75,7 +109,7 @@
     
     <!-- /scripts -->
     
-    <title>Cultura Brasil - Controle Remoto</title>
+    <title>Cultura FM - Controle Remoto</title>
     
     <!-- Le styles--> 
     <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -176,24 +210,23 @@
             
             <!-- imagem -->  
             <div class="cr-img-pgm">
-              <img src="<?php echo $imagemPrograma ?>" alt="<?php echo $d->Program->getTitle()?>" />
+              <img src="<?php //echo $imagemPrograma ?>" alt="<?php //echo $d->Program->getTitle()?>" id="img_pgm_atual" />
             </div>  
             <!-- /imagem -->
             
             <!-- descricao programa -->
             <div class="cr-desc-pgm">
-              <a class="cr-logo-cultura-fm" href="http://culturafm.cmais.com.br/" title="Cultura FM">cultura fm</a>
-
-              <h2><?php echo $d->Program->getTitle()?></h2>
+              <a class="cr-links cr-logo-cultura-fm" href="http://culturafm.cmais.com.br/" title="Cultura FM"></a>
+              <h2 id="titulo_pgm_atual"><?php //echo $d->Program->getTitle()?></h2>
               
               <!-- detalhe musica -->
               <div class="cr-det-mus-pgm">
                 
                 <!--h3>música</h3>
-                <p>Oração ao Tempo</p>
+                <p></p>
                 
                 <h3>intérprete</h3>
-                <p>Caetano Veloso</p-->
+                <p></p-->
                   
               </div>
               <!-- /detalhe musica -->
@@ -213,7 +246,7 @@
         <div class="cr-linha"></div>
 
         <!-- lista itens -->
-        <ul>
+        <ul id="lista_pgm_a_seguir">
       
       <?php 
         $cont = 1;
@@ -226,7 +259,7 @@
               <p class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?> h</p>
             </li>
             <!-- item -->
-    <?php 
+     <?php 
             $cont++;
           }
         endforeach;
@@ -240,12 +273,12 @@
         <div class="cr-linha"></div>
         <!-- redes -->
         <div class="cr-redes">
-          <a class="cr-facebook" href="https://www.facebook.com/culturafmoficial" title="facebook" target="_blank">facebook</a>
-          <a class="cr-twitter" href="https://twitter.com/_CulturaFM" title="twitter" target="_blank">twitter</a>
-          <a class="cr-google" href="https://plus.google.com/u/0/109016902461199467278/posts" title="google" target="_blank">google</a>
+          <a class="cr-links cr-facebook" href="https://www.facebook.com/culturafmoficial" title="facebook" target="_blank"></a>
+          <a class="cr-links cr-twitter" href="https://twitter.com/_CulturaFM" title="twitter" target="_blank"></a>
+          <a class="cr-links cr-google" href="https://plus.google.com/u/0/109016902461199467278/posts" title="google" target="_blank"></a>
         </div>
         <!-- /redes -->
-        <a href="http://cmais.com.br/culturabrasil/programacao" class="cr-pgm-completa" title="Veja nossa programação completa">programação completa » </a>
+        <a href="http://cmais.com.br/culturafm/programacao" class="cr-pgm-completa" title="Veja nossa programação completa">programação completa » </a>
         
       </section>  
       <!-- /lista a seguir -->
