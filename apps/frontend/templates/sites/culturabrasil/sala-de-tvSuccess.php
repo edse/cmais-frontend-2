@@ -49,7 +49,7 @@
       </script>
       <!-- /videoplayer -->
       <!--share-->
-      <div class="share">
+      <div class="share" style="margin-top: 5px;">
         <div class="google">
           <g:plusone size="medium" annotation="none" href="https://plus.google.com/u/0/+CulturaBrasil/posts "></g:plusone>
         </div>
@@ -61,19 +61,21 @@
         </div>
       </div>
       <!--/share-->
-      <h4>Redes Sociais</h4>
+      <div class="page-header" style="margin-bottom: 0;">
+        <h4>Redes Sociais</h4>
+      </div>
     </div>
     <!--/transmissao ao vivo -->
    
     <!--share-->
-    <div class="share span6">
+    <div class="share span4">
       <!-- comentario facebook -->
-      <fb:comments href="<?php echo $uri?>" numposts="3" width="490" publish_feed="true"></fb:comments>
+      <div class="fb-comments" data-href="http://www.culturabrasil.com.br/sala-de-tv" data-width="320"></div>
       <!-- /comentario facebook -->
     </div>
     <!--/share-->
     <!--Bate papo-->
-    <div class="span6">
+    <div class="span4">
       <div class="ao-vivo">
         <?php //echo html_entity_decode($displays["chat"][0]->getHtml());?>
         <a class="twitter-timeline" href="https://twitter.com/culturabrasil2" data-widget-id="369476510362521600">Tweets by @culturabrasil2</a>
@@ -92,6 +94,16 @@
       </div>
     </div>
     <!--/Bate papo-->
+    <!-- google -->
+    <div class="span4">
+      <div class="g-comments"
+          data-href="http://www.culturabrasil.com.br/sala-de-tv"
+          data-width="320"
+          data-first_party_property="BLOGGER"
+          data-view_type="FILTERED_POSTMOD">
+      </div>
+    </div>
+    <!-- /google -->
   </div>
 </section>
 <!--/Linha Central-->
