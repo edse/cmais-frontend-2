@@ -1616,10 +1616,6 @@ class _sectionActions extends sfActions
       echo sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php';
     }
     
-    if($sectionSlug == "controleremoto"){
-      $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/culturabrasil/controleremotoSuccess.php');
-    }
-    
     if($this->site->id == 1229){
       $this->assets = Doctrine::getTable('Asset')->findBySiteId(1229);
     }
