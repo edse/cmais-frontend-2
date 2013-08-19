@@ -52,7 +52,7 @@ body{padding:0!important;}
 .container .cr-pgm .cr-header-pgm{overflow: hidden; margin-bottom:10px;}
 .container .cr-pgm .cr-header-pgm span{font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:13px; color:#FFFFFF; background:#00bed5; padding: 1px 5px; text-transform:uppercase; display:block; float:left;}
 .container .cr-pgm .cr-img-pgm{min-height:118px; margin-right:5px; float:left;}
-.container .cr-pgm .cr-desc-pgm{float:left;}
+.container .cr-pgm .cr-desc-pgm{float:left;max-width: 230px;}
 .container .cr-pgm .cr-desc-pgm h2{ font-family:'TitilliumBold', Arial, Helvetica, sans-serif; font-size:20px; color:#2d4244; margin:0 0 4px 0; padding:0; text-transform: uppercase; line-height:17px;}
 .container .cr-pgm .cr-desc-pgm h3{ font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:11px; margin: 0; padding: 0; color: #00bed5; text-transform: uppercase; line-height: 13px;}
 .container .cr-pgm .cr-desc-pgm p{ font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:14px; margin: 0 0 5px 0; padding: 0; color: #2d4244; line-height: 16px; max-width: 253px;}
@@ -66,8 +66,13 @@ body{padding:0!important;}
 .container .cr-lista-a-seguir .hora{color:#929c9d; float:right; margin:0; padding: 2px 5px;}
 .container .cr-lista-a-seguir .cr-pgm-completa{font-family:'TitilliumBold', Arial, Helvetica, sans-serif; color:#929c9d; font-size: 11px; float:right;text-transform:uppercase;padding:5px;}
 .container .cr-banner {overflow: hidden;background: #FFFFFF;padding: 10px 20px;}
-
-
+.container .cr-links{background: url(/portal/images/capaPrograma/culturabrasil/controleremoto/cr_links.jpg) no-repeat;}
+.container .cr-redes a{width: 20px;height: 20px;display: block;float: left;margin-right: 2px;margin-top: 4px;}
+.container .cr-logo-cultura-fm{width: 60px;height: 20px;display: block;background: red;margin-bottom: 9px;}
+.container .cr-logo-cultura-brasil{width: 75px;height: 20px;display: block;background: red;margin-bottom: 9px;}
+.container .cr-redes .cr-facebook{background-position: -1px -94px;}
+.container .cr-redes .cr-twitter{background-position: -1px -71px;}
+.container .cr-redes .cr-google{background-position: -1px -49px;}
 @media only screen 
 and (max-width : 360px) {
   .container .cr-box-escolha{width:60px;}

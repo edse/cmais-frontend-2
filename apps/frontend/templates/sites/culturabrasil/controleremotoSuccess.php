@@ -48,7 +48,7 @@
       //<![CDATA[
       $(document).ready(function(){
         
-        if(window.screen.width < 1024){
+        if(window.screen.width <= 1024){
           $(".jp-volume_controls").hide();
           $(".jp-volume-bar").hide();
         }
@@ -68,25 +68,27 @@
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         
-        /*setTimeout(
-         function(){
-            
-            alert("Hello")
-            
-         },3000);
-         */
+        setTimeout(function(){
+          $.ajax({
+             url: "/portal/controle-remoto/ajax_pulsar.php", 
+             dataType: "json",
+             success: function(json){
+               if(json.musica.interprete == null && json.musica.titulo == null){
+                 $(".cr-det-mus-pgm").hide();
+               }else{
+                 //$("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);
+                 $("#nome_interprete_atual").text(json.musica.interprete);
+                 $("#nome_musica_atual").text(json.musica.titulo);               
+                 $(".cr-det-mus-pgm").show();  
+               }
+             }
+           }); 
+         }, 3000);
         
         //Você está ouvindo
-        $.ajax({
-           url: "/portal/controle-remoto/ajax_pulsar.php", 
-           dataType: "json",
-           success: function(json){
-             $("#nome_interprete_atual").text(json.musica.interprete);
-             $("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);
-           }
-         }); 
          
          //No ar e A Seguir
+        setTimeout(function(){         
          $.ajax({
            url: "http://cmais.com.br/frontend_dev.php/ajax/programacao-radio?channel_id=5",// 5 = Cultura Brasil 
            dataType: "json",
@@ -107,9 +109,9 @@
               
              $("#lista_pgm_a_seguir").html(conteudo);
              
-           }
-         });
-         
+             }
+          });
+         }, 10000);
       });
       //]]>
       </script>    
