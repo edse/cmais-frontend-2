@@ -61,40 +61,37 @@
         </div>
       </div>
       <!--/share-->
+      <h4>Redes Sociais</h4>
     </div>
     <!--/transmissao ao vivo -->
-    <!-- redes -->
-    <div class="span12">
-      <h4>Redes Sociais</h4>
-      <!--share-->
-      <div class="span6">
-        <!-- comentario facebook -->
-        <fb:comments href="<?php echo $uri?>" numposts="3" width="490" publish_feed="true" style="margin-top:11px;"></fb:comments>
-        <!-- /comentario facebook -->
-      </div>
-      <!--/share-->
-      <!--Bate papo-->
-      <div class="span6">
-        <div class="page-header ao-vivo">
-          <?php //echo html_entity_decode($displays["chat"][0]->getHtml());?>
-          <a class="twitter-timeline" href="https://twitter.com/culturabrasil2" data-widget-id="369476510362521600">Tweets by @culturabrasil2</a>
-          <script>
-            ! function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-              if(!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = p + "://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-              }
-            }(document, "script", "twitter-wjs");
-
-          </script>
-        </div>
-      </div>
-      <!--/Bate papo-->
+   
+    <!--share-->
+    <div class="span6">
+      <!-- comentario facebook -->
+      <fb:comments href="<?php echo $uri?>" numposts="3" width="490" publish_feed="true" style="margin-top:11px;"></fb:comments>
+      <!-- /comentario facebook -->
     </div>
-    <!-- /redes -->
+    <!--/share-->
+    <!--Bate papo-->
+    <div class="span6">
+      <div class="page-header ao-vivo">
+        <?php //echo html_entity_decode($displays["chat"][0]->getHtml());?>
+        <a class="twitter-timeline" href="https://twitter.com/culturabrasil2" data-widget-id="369476510362521600">Tweets by @culturabrasil2</a>
+        <script>
+          ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+            if(!d.getElementById(id)) {
+              js = d.createElement(s);
+              js.id = id;
+              js.src = p + "://platform.twitter.com/widgets.js";
+              fjs.parentNode.insertBefore(js, fjs);
+            }
+          }(document, "script", "twitter-wjs");
+
+        </script>
+      </div>
+    </div>
+    <!--/Bate papo-->
   </div>
 </section>
 <!--/Linha Central-->
