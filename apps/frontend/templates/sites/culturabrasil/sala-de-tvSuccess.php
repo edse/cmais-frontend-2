@@ -71,7 +71,7 @@
     </div>
   </div>
 
-  <div class="row-fluid container" style="min-height:2000px;">
+  <div class="row-fluid container" style="margin-top:25px;">
     <div class="span6" style="*margin-left:0px;">    
       <!-- google -->
       <div class="page-header" style="margin: 0;">

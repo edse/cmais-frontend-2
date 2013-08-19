@@ -99,7 +99,7 @@ if(isset($pager)){
       <div class="row-fluid">
         
         <!--lista assets-->
-        <div class="lista-assets span8"<?php echo count($section->$asset)?>>
+        <div class="lista-assets span8"<?php echo count($section->Asset).">>>>"?>>
       <?php endif; ?>   
          
           <?php if(count($pager) > 0): ?>
