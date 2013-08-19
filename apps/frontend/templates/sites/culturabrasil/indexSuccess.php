@@ -145,7 +145,7 @@
         <?php if(isset($schedules)): ?>
           <?php if(count($schedules) > 0): ?>
         <!-- destaque agenda -->
-        <div class="destaque-cultura agenda">
+        <div class="destaque-cultura agenda" style="height:418px; overflow-y: auto">
           <div class="programa">
             <span>AGENDA</span><i class="borda-titulo"></i>
           </div>
