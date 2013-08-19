@@ -104,7 +104,7 @@
       </div>
     </div>
     <style type="text/css">
-      .FWuqA { margin-right:0; }
+      .g-comments .FWuqA { margin-right:0 !important; }
     </style>
     <!-- /google -->
   </div>
