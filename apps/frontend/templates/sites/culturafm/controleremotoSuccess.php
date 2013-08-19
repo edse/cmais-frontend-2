@@ -67,7 +67,7 @@
         });
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
-      
+       //new Date().getTime();
               
        function LoadProgramacao(){
          $.ajax({
