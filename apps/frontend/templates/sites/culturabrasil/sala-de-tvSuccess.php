@@ -80,7 +80,9 @@
    <div class="span6">
      <div class="page-header ao-vivo">
       <h4>Bate Papo</h4>
-      <?php echo html_entity_decode($displays["chat"][0]->getHtml()); ?>
+      <?php //echo html_entity_decode($displays["chat"][0]->getHtml()); ?>
+      <a class="twitter-timeline" href="https://twitter.com/culturabrasil2" data-widget-id="369476510362521600">Tweets by @culturabrasil2</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
      </div> 
    </div>
    <!--/Bate papo-->
