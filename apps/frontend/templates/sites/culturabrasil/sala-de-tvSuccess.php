@@ -66,7 +66,7 @@
     <!--/transmissao ao vivo -->
    
     <!--share-->
-    <div class="span6">
+    <div class="share span6">
       <!-- comentario facebook -->
       <fb:comments href="<?php echo $uri?>" numposts="3" width="490" publish_feed="true" style="margin-top:11px;"></fb:comments>
       <!-- /comentario facebook -->
