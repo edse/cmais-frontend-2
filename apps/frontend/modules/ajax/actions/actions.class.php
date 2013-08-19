@@ -2021,6 +2021,9 @@ EOT;
   }
 
   public function executeProgramacaoradio(sfWebRequest $request){
+      
+    require_once('/var/frontend/lib/vendor/symfony/lib/helper/DateHelper.php');
+    
     $this->setLayout(false);
     $id = 5;
     if($request->getParameter('channel_id')>0)
@@ -2036,13 +2039,9 @@ EOT;
       ->execute();
     if((isset($schedules)) && (count($schedules) > 0)){
       $return = array();
-      //$primeiro = 1;
+
       foreach($schedules as $s){
-        //if($primeiro == 1){
-          //$hora = $d->getDateStart();
-          //$primeiro++;
-        //}
-        $return["aseguir"][] = array("titulo"=> $s->Program->getTitle(), "data"=> $s->getDateStart(), "imagem"=> $s->retriveLiveImage());
+        $return["aseguir"][] = array("titulo"=> $s->Program->getTitle(), "data"=> format_datetime($d->getDateStart(), "HH:mm"), "imagem"=> $s->retriveLiveImage());
       }
       
       $noar = Doctrine_Query::create()
@@ -2055,10 +2054,14 @@ EOT;
         ->limit('1')
         ->execute();
       foreach($noar as $n){
-        $return["noar"][] = array("titulo"=> $n->getProgram()->getTitle(),  "data"=> $n->getDateStart(), "imagem"=> $n->retriveLiveImage());
+        if($n->getProgram()->getTitle() == "") $titulo = "-";
+        if($n->getProgram()->getTitle() == "") $data = "-";
+        if($n->getProgram()->getTitle() == "") $imagem = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
+        
+        $return["noar"][] = array("titulo"=> $n->getProgram()->getTitle(),  "data"=> format_datetime($d->getDateStart(), "HH:mm"), "imagem"=> $n->retriveLiveImage());
       }
     }
     die(json_encode($return));
   }
-
+  
 }
