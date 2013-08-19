@@ -182,7 +182,8 @@
             
             <!-- descricao programa -->
             <div class="cr-desc-pgm">
-              <h1 class="cr-logo-cultura-fm"></h1>
+              <a class="cr-logo-cultura-fm" href="http://culturafm.cmais.com.br/" title="Cultura FM">cultura fm</a>
+
               <h2><?php echo $d->Program->getTitle()?></h2>
               
               <!-- detalhe musica -->
