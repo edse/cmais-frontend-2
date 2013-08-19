@@ -101,7 +101,7 @@ if($asset) {
    <!--/search-->
    
    <!-- ouca a radio -->
-   <a id="ouca" class="ouca" href="javascript:;">
+   <a id="ouca" class="controle-remoto" href="javascript:;">
      <img src="/portal/images/capaPrograma/culturabrasil/oucaculturabrasil.jpg" alt="Ouça a rádio Cultura Brasil"/>
    </a>
     <!-- ouca a radio -->
@@ -113,4 +113,11 @@ if($asset) {
   
 </section>
 <!--/section topo-->
+
+<script>
+$('.controle-remoto').click(function(){
+  controle = window.open('http://culturabrasil.cmais.com.br/controleremoto?width=300,height=600,scrollbars=no'');
+});
+  
+</script>
      
