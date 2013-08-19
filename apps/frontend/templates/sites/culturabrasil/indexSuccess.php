@@ -85,10 +85,11 @@
           <!--item--> 
             <?php endforeach; ?>
         </div>
-        <div class="borda-pontilhada"></div> 
         <a href="/playlists" title="mais playlists">
           <span class="mais">+ Playlists</span>
         </a>
+        <div class="borda-pontilhada"></div> 
+        
         <!--destaque playlist -->
           <?php endif; ?>
         <?php endif; ?>
@@ -158,10 +159,11 @@
           <!-- /item -->
           <?php endforeach; ?>          
         </div>
-        <div class="borda-pontilhada"></div>
         <a href="/programacao" title="agenda completa"> 
           <span class="mais">Agenda Completa</span>
         </a> 
+        <div class="borda-pontilhada"></div>
+        
         <!-- /destaque agenda -->
           <?php endif; ?>
         <?php endif; ?>
