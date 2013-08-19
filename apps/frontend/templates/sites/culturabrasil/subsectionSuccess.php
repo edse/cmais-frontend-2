@@ -55,7 +55,7 @@ if(isset($pager)){
       <!--clounaprincipal-->
       <div class="row-fluid">
         <!--lista assets-->
-        <div class="lista-assets span8" style="*margin-left: 0px;">
+        <div class="lista-assets span8" <?php echo count($section->Asset).">>>>"?> style="*margin-left: 0px;">
           <h1><?php echo $site->getTitle() ?></h1>
           <p class="horario"><?php echo nl2br($program->getSchedule()) ?></p>
           
@@ -99,7 +99,7 @@ if(isset($pager)){
       <div class="row-fluid">
         
         <!--lista assets-->
-        <div class="lista-assets span8"<?php echo count($section->Asset).">>>>"?>>
+        <div class="lista-assets span8" ?>>
       <?php endif; ?>   
          
           <?php if(count($pager) > 0): ?>
