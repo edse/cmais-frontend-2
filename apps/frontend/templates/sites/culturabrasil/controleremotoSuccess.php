@@ -116,11 +116,9 @@
                conteudo+=  '<h5>'+json.aseguir.titulo+'</h5>';
                conteudo+=  '<p class="hora">' + json.aseguir.data+ 'h</p>';
                conteudo+=  '</li>';
-              }
+              });
               
               $("#lista_pgm_a_seguir").html(conteudo);
-              
-              });
              
            }
          });
