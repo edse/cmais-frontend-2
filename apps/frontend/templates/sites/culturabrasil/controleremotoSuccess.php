@@ -84,7 +84,7 @@
              alert("Duracao " + json.musica.duracao);
              //alert("Interprete "+ json.musica.interprete);
              //alert("Titulo "+ json.musica.titulo);
-             $(".nome_interprete_atual").val(json.musica.interprete);
+             $("#nome_interprete_atual").val(json.musica.interprete);
              $(".nome_musica_atual").val(json.musica.titulo+" - "+json.musica.duracao);
            }
          }); 
