@@ -789,7 +789,7 @@ $(document).ready(function(){
                     goTop();
                     beginAgain();
                   });
-                  $('.f4_sms, .f4_newsletter, .f4_convite, .f4_terceiros').click(function(){
+                  $('#f4_sms, #f4_newsletter, #f4_convite, #f4_terceiros').click(function(){
                     if($('.salvar-alteracoes').is(":hidden")){
                       $('.salvar-alteracoes').fadeIn("slow");
                     }
