@@ -85,10 +85,11 @@
           <!--item--> 
             <?php endforeach; ?>
         </div>
-        <div class="borda-pontilhada"></div> 
         <a href="/playlists" title="mais playlists">
           <span class="mais">+ Playlists</span>
         </a>
+        <div class="borda-pontilhada"></div> 
+        
         <!--destaque playlist -->
           <?php endif; ?>
         <?php endif; ?>
@@ -114,8 +115,10 @@
         <?php if(isset($displays["widget"])): ?>
           <?php if(count($displays["widget"]) > 0): ?>
         <!--destaque widgets -->
-        <div class="destaque-playlist">
-          <h1>Widget</h1>
+        <div class="destaque-cultura">
+          <div class="programa">
+            <span>WIDGET</span><i class="borda-titulo"></i>
+          </div>
           <p>Copie o código abaixo para incorporar o Controle Remoto ao seu blog ou site</p> 
           <textarea rows="3"><?php echo $displays["widget"][0]->getHtml() ?></textarea>
         </div>  
@@ -158,10 +161,11 @@
           <!-- /item -->
           <?php endforeach; ?>          
         </div>
-        <div class="borda-pontilhada"></div>
         <a href="/programacao" title="agenda completa"> 
           <span class="mais">Agenda Completa</span>
         </a> 
+        <div class="borda-pontilhada"></div>
+        
         <!-- /destaque agenda -->
           <?php endif; ?>
         <?php endif; ?>
