@@ -115,13 +115,11 @@
         //Você está ouvindo
         setInterval(function(){
           LoadInfoMusica();
-          console.log("LoadInfoMusica");
          }, 5000);
          
         //No ar e A Seguir
         setInterval(function(){         
           LoadProgramacao();
-          console.log("LoadProgramacao");
          }, 10000);
          
       });
