@@ -106,6 +106,8 @@ if(isset($pager)){
             <?php foreach($pager->getResults() as $d): ?>
               <?php if( ($section->Site->Program->Channel->getSlug() == "culturabrasil") && ($section->getSlug() == "arquivo") ): ?>
               <a href="<?php echo $uri . '/arquivo/' . $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
+              <?php else if( ($section->Site->Program->Channel->getSlug() == "culturabrasil") && ($section->getSlug() == "arquivo") ): ?>
+                
               <?php else: ?>
               <a href="<?php echo $uri . '/' . $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
               <?php endif; ?>
