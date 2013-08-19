@@ -2,13 +2,14 @@
   <img src="/portal/images/capaPrograma/culturabrasil/oucaculturabrasil.jpg" alt="Ouça a rádio Cultura Brasil"/>
 </a>
 <script>
-var controle = null;
-$('.controle-remoto').click(function(){
-  if(controle == null || controle.closed){
-    controle = window.open('http://culturabrasil.cmais.com.br/controleremoto','controle','width=300,height=600,scrollbars=no');
-  } else {
-    controle.focus();
-  }
-});
-  
+$(document).ready(function(){
+  var controle = null;
+  $('.controle-remoto').click(function(){
+    if(controle == null || controle.closed){
+      controle = window.open('http://culturabrasil.cmais.com.br/controleremoto','controle','width=300,height=600,scrollbars=no');
+    } else {
+      controle.focus();
+    }
+  });
+});  
 </script>
