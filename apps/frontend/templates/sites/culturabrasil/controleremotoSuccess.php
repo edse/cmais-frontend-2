@@ -69,7 +69,7 @@
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         function LoadInfoMusica(){
           $.ajax({
-             url: "/portal/controle-remoto/ajax_pulsar.php", 
+             url: "/portal/controle-remoto/pulsar.json", 
              dataType: "json",
              success: function(json){
                if(json.musica.interprete == null && json.musica.titulo == null){
