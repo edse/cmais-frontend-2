@@ -81,7 +81,7 @@
            url: "/portal/controle-remoto/ajax_pulsar.php", 
            dataType: "json",
            success: function(json){
-             if(json.musica.interprete == "" && json.musica.titulo == ""){
+             if(json.musica.interprete == null && json.musica.titulo == null){
                $(".cr-det-mus-pgm").hide();
                alert("em branco");
              }else{
