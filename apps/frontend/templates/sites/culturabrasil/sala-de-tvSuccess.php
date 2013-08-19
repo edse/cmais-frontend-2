@@ -27,7 +27,7 @@
        <div class="page-header ao-vivo">
         <h4>Transmiss&atilde;o ao vivo</h4>
       </div>
-      <div class="span8" style="margin-left: 0;">
+      <div class="span8" style="margin:0 0 20px 0;">
         <!-- video player -->
       <div id="videoPlayer">
         <span class="falta-flash"> Você precisa ter o flash instalado em seu computador<br/> para acessar esse site.<br/> <a href="http://get.adobe.com/br/flashplayer/"  target="blank" title="Download Flash Player">Clique aqui para fazer o download</a>. </span>
