@@ -308,7 +308,19 @@
       
       
       
-      
+      <!-- banner -->
+      <section class="cr-banner">
+        
+        <div class="cr-box-banner">
+          
+          <script type='text/javascript'>
+            GA_googleFillSlot("cultura-brasil");
+          </script>
+          
+        </div>
+        
+      </section>
+      <!-- /banner -->
       
     </section>
     <!-- /container -->

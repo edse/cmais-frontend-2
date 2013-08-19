@@ -79,6 +79,6 @@ and (max-width : 480px) {
   .container .cr-box-escolha{width:60px;}
   .container .cr-box-escolha .cr-escolha{display:none;}
   .container .jp-audio{width:280px; margin:0 auto;}
-  .container .jp-gui.jp-interface{width: 278px; margin: 0 auto;}
+  .container .jp-gui.jp-interface{width: 278px; margin: 0 auto; overflow:hidden;}
   .container .cr-banner {overflow: hidden;background: #FFFFFF;padding: 10px 0px;}
 }
