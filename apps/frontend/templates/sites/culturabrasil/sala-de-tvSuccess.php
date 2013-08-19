@@ -23,19 +23,17 @@
   <!--/breadcrumb-->
   <div class="row-fluid container">
     <!--transmissao ao vivo -->
-    <div class="span12" style="*margin-left:0px;">
+    <div class="span6" style="*margin-left:0px;">
        <div class="page-header ao-vivo">
         <h4>Transmiss&atilde;o ao vivo</h4>
       </div>
-      <div class="span6" style="margin:0 0 40px 0;">
-        <!-- video player -->
+      <!-- video player -->
       <div id="videoPlayer">
         <span class="falta-flash"> Você precisa ter o flash instalado em seu computador<br/> para acessar esse site.<br/> <a href="http://get.adobe.com/br/flashplayer/"  target="blank" title="Download Flash Player">Clique aqui para fazer o download</a>. </span>
       </div>
       <script src="http://www.culturabrasil.com.br//_libs/mediaplayer/swfobject.js" type="text/javascript"></script>
       <script>
         var so = new SWFObject("http://www.culturabrasil.com.br/_libs/mediaplayer/player.swf", "cam1", "450", "338", "9");
-
         so.addParam("allowscriptaccess", "always");
         so.addParam("allowfullscreen", "true");
         so.addParam("wmode", "transparent");
@@ -46,10 +44,9 @@
         so.addVariable('file', "galeria");
         so.addVariable('type', 'video');
         so.write("videoPlayer");
-
       </script>
       <!-- /videoplayer -->
-       <!--share-->
+      <!--share-->
       <div class="share" style="margin-top: 5px;">
         <div class="google">
           <g:plusone size="medium" annotation="none" href="https://plus.google.com/u/0/+CulturaBrasil/posts "></g:plusone>
@@ -62,49 +59,54 @@
         </div>
       </div>
       <!--/share-->
+    </div>
+    <div class="span6" style="*margin-left:0px;">
+      <div class="page-header ao-vivo">
+        <h4>Twitter</h4>
       </div>
-      <div class="span6">
-        <div class="page-header" style="margin: 0;">
-          <h4>Twitter</h4>
-        </div>
-        <!--Bate papo-->
-        <div class="ao-vivo">
-          <a class="twitter-timeline"  href="https://twitter.com/culturabrasil2"  data-widget-id="369534168884998144">Tweets by @culturabrasil2</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <div class="ao-vivo">
+        <a class="twitter-timeline" href="https://twitter.com/culturabrasil2" data-widget-id="369534168884998144">Tweets by @culturabrasil2</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </div>
+  </div>
 
-        </div>
-        <!--/Bate papo-->      
-      </div>
-     
-     </div>
-    <!--/transmissao ao vivo -->
-    
-    <!-- google -->
-    <div class="share span6">
+  <div class="row-fluid container" style="min-height:2000px;">
+    <div class="span6" style="*margin-left:0px;">    
+      <!-- google -->
       <div class="page-header" style="margin: 0;">
-          <h4>Google+</h4>
-        </div>
+        <h4>Google+</h4>
+      </div>
+      <div id="comments"></div>
+      <script>
+      gapi.comments.render('comments', {
+          href: "http://culturabrasil.cmais.com.br/sala-de-tv",
+          width: '490',
+          first_party_property: 'BLOGGER',
+          view_type: 'FILTERED_POSTMOD'
+      });
+      </script>
+      <?php /*
       <div class="g-comments"
           data-href="http://www.culturabrasil.com.br/sala-de-tv"
           data-width="490"
           data-first_party_property="BLOGGER"
           data-view_type="FILTERED_POSTMOD">
       </div>
+      */ ?>
     </div>
-    
     <!-- /google -->
    
-    <!--share-->
-    <div class=" span6">
+    <div class="span6" style="*margin-left:0px;">    
+      <!--share-->
       <div class="page-header" style="margin: 0;">
-          <h4>Facebook</h4>
-        </div>
+        <h4>Facebook</h4>
+      </div>
       <!-- comentario facebook -->
-      <div class="fb-comments" data-href="http://www.culturabrasil.com.br/sala-de-tv" data-width="490"></div>
+      <div class="fb-comments" data-href="http://culturabrasil.cmais.com.br/sala-de-tv" data-width="490px" data-num-posts="10"></div>
       <!-- /comentario facebook -->
-    </div>
-    <!--/share-->
-    
+      <!--/share-->
+    </div>    
     
   </div>
 </section>
