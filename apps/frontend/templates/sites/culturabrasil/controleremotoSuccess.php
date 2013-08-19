@@ -68,22 +68,24 @@
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         
+        /*setTimeout(
+         function(){
+            
+            alert("Hello")
+            
+         },3000);
+         */
         
         //Voce está ouvindo
         $.ajax({
            url: "/portal/controle-remoto/ajax_pulsar.php", //URL de destino
-           dataType: "json", //Tipo de Retorno
-           success: function(json){ //Se ocorrer tudo certo
-             alert("OK");
-             console.log(json);
-              //var msg = "Nome: " + json.nome + "\n";
-              //msg += "Sobrenome: " + json.sobrenome + "\n";
-              //msg += "Idade: " + json.idade;
-              //alert(msg); 
+           dataType: "json",
+           success: function(json){
+             console.log(json.interprete+" - "+json.duracao);
+             $("#nome_interprete_atual").json.duracao;
+             $("#nome_musica_atual").val(json.interprete+" - "+json.duracao);
            }
-         });        
-        
-        
+         }); 
         
       });
       //]]>
@@ -206,10 +208,10 @@
               <div class="cr-det-mus-pgm">
                 
                 <h3>música</h3>
-                <p>Oração ao Tempo</p>
+                <p id="nome_musica_atual">Oração ao Tempo</p>
                 
                 <h3>intérprete</h3>
-                <p>Caetano Veloso</p>
+                <p id="nome_interprete_atual">Caetano Veloso</p>
                   
               </div>
               <!-- /detalhe musica -->
