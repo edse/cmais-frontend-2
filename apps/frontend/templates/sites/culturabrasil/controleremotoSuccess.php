@@ -81,11 +81,11 @@
            url: "/portal/controle-remoto/ajax_pulsar.php", //URL de destino
            dataType: "json",
            success: function(json){
-             //alert("Duracao " + json.musica.duracao);
+             alert("Duracao " + json.musica.duracao);
              //alert("Interprete "+ json.musica.interprete);
              //alert("Titulo "+ json.musica.titulo);
-             $("#nome_interprete_atual").val(json.musica.interprete);
-             $("#nome_musica_atual").val(json.musica.titulo+" - "+json.musica.duracao);
+             $(".nome_interprete_atual").val(json.musica.interprete);
+             $(".nome_musica_atual").val(json.musica.titulo+" - "+json.musica.duracao);
            }
          }); 
         
@@ -210,10 +210,10 @@
               <div class="cr-det-mus-pgm">
                 
                 <h3>música</h3>
-                <p id="nome_musica_atual">Oração ao Tempo</p>
+                <p class="nome_musica_atual"></p>
                 
                 <h3>intérprete</h3>
-                <p id="nome_interprete_atual">Caetano Veloso</p>
+                <p id="nome_interprete_atual"></p>
                   
               </div>
               <!-- /detalhe musica -->
