@@ -2054,6 +2054,8 @@ EOT;
         ->limit('1')
         ->execute();
       foreach($noar as $n){
+        $titulo =   $n->getProgram()->getTitle();
+        $imagem =   $n->retriveLiveImage();
         if($n->getProgram()->getTitle() == "") $titulo = "-";
         if($n->retriveLiveImage() == "") $imagem = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
         
