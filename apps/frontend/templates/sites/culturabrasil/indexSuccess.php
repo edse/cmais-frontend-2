@@ -115,7 +115,7 @@
         <?php if(isset($displays["widget"])): ?>
           <?php if(count($displays["widget"]) > 0): ?>
         <!--destaque widgets -->
-        <div class="destaque-playlist">
+        <div class="destaque-cultura">
           <div class="programa">
             <span>WIDGET</span><i class="borda-titulo"></i>
           </div>
