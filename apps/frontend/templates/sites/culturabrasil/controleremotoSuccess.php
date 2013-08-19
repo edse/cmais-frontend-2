@@ -115,11 +115,13 @@
         //Você está ouvindo
         setInterval(function(){
           LoadInfoMusica();
+          console.log("LoadInfoMusica");
          }, 5000);
          
         //No ar e A Seguir
         setInterval(function(){         
           LoadProgramacao();
+          console.log("LoadProgramacao");
          }, 10000);
          
       });
@@ -237,6 +239,7 @@
             
             <!-- descricao programa -->
             <div class="cr-desc-pgm">
+              <a class="cr-links cr-logo-cultura-brasil" href="http://culturabrasil.cmais.com.br/" title="Cultura Brasil"></a>
               <h2 id="titulo_pgm_atual"><?php //echo $d->Program->getTitle()?></h2>
               
               <!-- detalhe musica -->
@@ -291,7 +294,13 @@
         <!-- /lista itens -->
         
         <div class="cr-linha"></div>
-        
+        <!-- redes -->
+        <div class="cr-redes">
+          <a class="cr-links cr-facebook" href="https://www.facebook.com/culturabrasil" title="facebook" target="_blank"></a>
+          <a class="cr-links cr-twitter" href="https://twitter.com/culturabrasil2" title="twitter" target="_blank"></a>
+          <a class="cr-links cr-google" href="https://plus.google.com/u/0/+CulturaBrasil/posts" title="google" target="_blank"></a>
+        </div>
+        <!-- /redes -->
         <a href="http://cmais.com.br/culturabrasil/programacao" class="cr-pgm-completa" title="Veja nossa programação completa">programação completa » </a>
         
       </section>  
