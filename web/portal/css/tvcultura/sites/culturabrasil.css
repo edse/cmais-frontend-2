@@ -368,6 +368,6 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 .saladetv .google{width: 40px; float: left;}
 .saladetv .twt{width: 142px; float: left;margin-right:8px;}
 .saladetv .fb{width: 174px; float: left;}
-.saladetv .share{margin: 13px auto 0 auto;overflow: hidden;display: block; /*width: 370px;*/}
+.saladetv .share{margin: 0 auto;overflow: hidden;display: block; /*width: 370px;*/}
 .saladetv .span12 .share { width:370px; }
 /* /sala de tv */
