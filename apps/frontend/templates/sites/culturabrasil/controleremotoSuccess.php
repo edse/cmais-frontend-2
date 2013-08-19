@@ -72,12 +72,12 @@
              url: "/portal/controle-remoto/pulsar.json", 
              dataType: "json",
              success: function(json){
-               if(json.musica.interprete == null && json.musica.titulo == null){
+               if(json.musica.interprete[0] == null && json.musica.titulo[0] == null){
                  $(".cr-det-mus-pgm").hide();
                }else{
                  //$("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);
-                 $("#nome_interprete_atual").text(json.musica.interprete);
-                 $("#nome_musica_atual").text(json.musica.titulo);               
+                 $("#nome_interprete_atual").text(json.musica.interprete[0]);
+                 $("#nome_musica_atual").text(json.musica.titulo[0]);               
                  $(".cr-det-mus-pgm").show();  
                }
              }
