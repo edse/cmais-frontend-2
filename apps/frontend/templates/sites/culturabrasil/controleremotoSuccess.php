@@ -68,6 +68,65 @@
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         
+        /*setTimeout(
+         function(){
+            
+            alert("Hello")
+            
+         },3000);
+         */
+        
+        //Você está ouvindo
+        $.ajax({
+           url: "/portal/controle-remoto/ajax_pulsar.php", 
+           dataType: "json",
+           success: function(json){
+             $("#nome_interprete_atual").text(json.musica.interprete);
+             $("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);
+           }
+         }); 
+         
+       
+        /* A Seguir
+         * Atualizar Imagem do Programa e Descrição do Programa Atual
+         * Atualizar 7 Próximos programas - Descrição e Horário
+        */
+        $.ajax({
+           url: "http://cmais.com.br/frontend_dev.php/ajax/programacao-radio?channel_id=5",// 5 = Cultura Brasil 
+           dataType: "json",
+           success: function(json){
+             //No Ar
+             $("#titulo_pgm_atual").text(json.noar.titulo); 
+             $("#img_pgm_atual").attr("src",json.noar.imagem);
+             
+             console.log(json.noar.titulo);
+             console.log(json.noar.imagem);
+             
+             /*
+             var style = 0;
+             var tipo = "im";
+             var conteudo = "";
+             
+             $(json).find('aseguir').each(function() {
+               if(style==0){ 
+                style++;
+                tipo = "im";
+               }else{
+                 style=0
+                 tipo = "";
+               }
+               
+               conteudo+=  '<li class="'+tipo+'"par">';
+               conteudo+=  '<h5>'+json.aseguir.titulo+'</h5>';
+               conteudo+=  '<p class="hora">' + json.aseguir.data+ 'h</p>';
+               conteudo+=  '</li>';
+              });
+              */
+              $("#lista_pgm_a_seguir").html(conteudo);
+             
+           }
+         });
+         
       });
       //]]>
       </script>    
@@ -177,22 +236,22 @@
             
             <!-- imagem -->  
             <div class="cr-img-pgm">
-              <img src="<?php echo $imagemPrograma ?>" alt="<?php echo $d->Program->getTitle()?>" />
+              <img src="<?php //echo $imagemPrograma ?>" alt="<?php //echo $d->Program->getTitle()?>" id="img_pgm_atual" />
             </div>  
             <!-- /imagem -->
             
             <!-- descricao programa -->
             <div class="cr-desc-pgm">
-              <h2><?php echo $d->Program->getTitle()?></h2>
+              <h2 id="titulo_pgm_atual"><?php //echo $d->Program->getTitle()?></h2>
               
               <!-- detalhe musica -->
               <div class="cr-det-mus-pgm">
                 
                 <h3>música</h3>
-                <p>Oração ao Tempo</p>
+                <p id="nome_musica_atual"></p>
                 
                 <h3>intérprete</h3>
-                <p>Caetano Veloso</p>
+                <p id="nome_interprete_atual"></p>
                   
               </div>
               <!-- /detalhe musica -->
@@ -212,7 +271,7 @@
         <div class="cr-linha"></div>
 
         <!-- lista itens -->
-        <ul>
+        <ul id="lista_pgm_a_seguir">
       
       <?php 
         $cont = 1;

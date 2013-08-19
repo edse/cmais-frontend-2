@@ -52,17 +52,34 @@ if(isset($pager)){
         <!--lista assets-->
         <div class="lista-assets span8" style="*margin-left: 0px;">
           <h1><?php echo $site->getTitle() ?></h1>
-          <p class="horario"><?php echo html_entity_decode($program->getSchedule()) ?></p>
+          <p class="horario"><?php echo nl2br($program->getSchedule()) ?></p>
+          
+          <?php
+            $subsections = Doctrine_Query::create()
+              ->select('s.*')
+              ->from('Section s')
+              ->where('s.site_id = ?', $site->id)
+              ->andWhere('s.is_active = ?', 1)
+              ->andWhere('s.is_visible = ?', 1)
+              ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
+              ->orderBy('s.display_order')
+              ->execute();
+           ?>
+          <?php if($subsections): ?>
           <!-- menu subsection-->
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Arquivo</a></li>
-            <li><a href="#">Lançamentos</a></li>
-            <li><a href="#">Minha galeria</a></li>
-            <li><a href="#">Duas versões</a></li>
-            <li><a href="#">A música do produtor</a></li>
-            <li><a href="#">Achados da cidade</a></li>
+            <?php foreach($subsections as $s): ?>
+              <?php if($s->getSlug() != "home"): ?>
+                <?php if($s->getSlug() == "arquivo"): ?>
+            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="/programas/<?php echo $site->getSlug() ?>"><?php echo $s->getTitle() ?></a></li>
+                <?php else: ?>
+            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="/programas/<?php echo $site->getSlug() . "/" . $s->getSlug() ?>"><?php echo $s->getTitle() ?></a></li>
+                <?php endif; ?>
+              <?php endif; ?>
+            <?php endforeach; ?>
           </ul>
           <!-- /menu subsection-->
+          <?php endif; ?>
       <?php else: ?>
       <div class="destaque-cultura subsection">
         <div class="programa subsection">
@@ -82,10 +99,10 @@ if(isset($pager)){
          
           <?php if(count($pager) > 0): ?>
             <?php foreach($pager->getResults() as $d): ?>
-              <?php if($section->Site->getSlug() == "culturabrasil"): ?>
-              <a href="<?php echo $uri . '/' . $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
-              <?php else: ?>
+              <?php if( ($section->Site->Program->Channel->getSlug() == "culturabrasil") && ($section->getSlug() == "arquivo") ): ?>
               <a href="<?php echo $uri . '/arquivo/' . $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
+              <?php else: ?>
+              <a href="<?php echo $uri . '/' . $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
               <?php endif; ?>
                   <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
                   <?php if ($related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb1")): ?>
@@ -123,17 +140,6 @@ if(isset($pager)){
         <!--coluna direita-->
         <div class="lista-assets redes span4">
           
-          <?php
-            $sobreSection = Doctrine::getTable('section')->findOneBySiteIdAndSlug($site->id, "sobre");
-            $sobreSectionAssets = $sobreSection->getAssets();
-            if(count($sobreSectionAssets) > 0) {
-              $sobre = $sobreSectionAssets[0];
-            }
-          ?>
-  
-          <?php if(isset($sobre)):?>
-            <!-- Aqui poderia entrar a descrição do programa, por exemplo! Mas pode colocar em qualquer lugar desde que o código acima venha antes... -->
-          <?php endif; ?>
         
           <div class="row-fluid">      
             <div class="span12 direita">
