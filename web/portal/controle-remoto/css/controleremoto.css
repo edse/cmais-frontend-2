@@ -47,7 +47,7 @@ body{padding:0!important;}
 .container .cr-box-escolha .cr-radios li{list-style:none;width:100px;}
 .container .cr-box-escolha .cr-radios li a{font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif;font-size: 12px;text-transform:uppercase; color:#ffffff; text-align:center; width: 99px; display: block; background:#00bed5;margin: 0; padding: 4px 0;line-height: 15px;}
 .container .cr-box-escolha .cr-radios li a:hover{background: #3f3f3f; text-decoration: none;}
-.container .cr-player{ background:#eeeeee; padding: 15px 20px; position: relative; z-index: 9000}
+.container .cr-player{ background:#eeeeee; padding: 15px 5px; position: relative; z-index: 9000}
 .container .cr-pgm{background:#eeeeee;padding: 10px 20px; overflow: hidden;}
 .container .cr-pgm .cr-header-pgm{overflow: hidden; margin-bottom:10px;}
 .container .cr-pgm .cr-header-pgm span{font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:13px; color:#FFFFFF; background:#00bed5; padding: 1px 5px; text-transform:uppercase; display:block; float:left;}
@@ -78,5 +78,5 @@ body{padding:0!important;}
 and (max-width : 480px) {
   .container .cr-box-escolha{width:60px;}
   .container .cr-box-escolha .cr-escolha{display:none;}
-  .container .jp-gui.jp-interface{width: 310px!important; margin: 0 auto!important;}
+  .container .jp-gui.jp-interface{width: 278px; margin: 0 auto;}
 }
