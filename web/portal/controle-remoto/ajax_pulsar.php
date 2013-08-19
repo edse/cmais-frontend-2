@@ -2,11 +2,12 @@
 $jsonurl = "pulsar.json";
 $json = file_get_contents($jsonurl);
 $json_output = json_decode($json);
+//$json = array();
 
 foreach ($json_output as $j) {
-  //echo $j->interprete->{0};
-  //echo "\n".$j->titulo->{0};
-  //echo "\n".$j->duracao->{0}."\n";
+  //$json['interprete'] = $j->interprete->{0};
+  //$json['titulo'] = $j->titulo->{0};
+  //$json['duracao'] = $j->duracao->{0};
   $json = array(musica =>
                 array(interprete => $j->interprete->{0},
                 titulo => $j->titulo->{0},
@@ -16,6 +17,5 @@ foreach ($json_output as $j) {
 
 $json = json_encode($json);
 echo $json;
-//var_dump($json);
- 
+
 ?>
