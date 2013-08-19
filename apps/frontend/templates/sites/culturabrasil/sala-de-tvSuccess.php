@@ -70,7 +70,7 @@
     <!--share-->
     <div class="share span4">
       <!-- comentario facebook -->
-      <fb:comments href="<?php echo $uri?>" numposts="3" width="320" publish_feed="true"></fb:comments>
+      <div class="fb-comments" data-href="http://www.culturabrasil.com.br/sala-de-tv" data-width="320"></div>
       <!-- /comentario facebook -->
     </div>
     <!--/share-->
@@ -97,7 +97,7 @@
     <!-- google -->
     <div class="span4">
       <div class="g-comments"
-          data-href="http://culturabrasil.cmais.com.br/sala-de-tv"
+          data-href="http://www.culturabrasil.com.br/sala-de-tv"
           data-width="320"
           data-first_party_property="BLOGGER"
           data-view_type="FILTERED_POSTMOD">
