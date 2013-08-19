@@ -67,8 +67,7 @@
         });
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
-        
-        setTimeout(function(){
+        function LoadInfoMusica(){
           $.ajax({
              url: "/portal/controle-remoto/ajax_pulsar.php", 
              dataType: "json",
@@ -83,12 +82,9 @@
                }
              }
            }); 
-         }, 3000);
-        
-        //Você está ouvindo
-         
-         //No ar e A Seguir
-        setTimeout(function(){         
+        }
+
+        function LoadProgramacao(){
          $.ajax({
            url: "http://cmais.com.br/frontend_dev.php/ajax/programacao-radio?channel_id=5",// 5 = Cultura Brasil 
            dataType: "json",
@@ -110,8 +106,22 @@
              $("#lista_pgm_a_seguir").html(conteudo);
              
              }
-          });
+          }); 
+        }
+        
+        LoadInfoMusica();
+        LoadProgramacao();
+        
+        //Você está ouvindo
+        setInterval(function(){
+          LoadInfoMusica();
+         }, 5000);
+         
+        //No ar e A Seguir
+        setInterval(function(){         
+          LoadProgramacao();
          }, 10000);
+         
       });
       //]]>
       </script>    
