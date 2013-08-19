@@ -34,7 +34,7 @@
             <img src="http://midia.cmais.com.br/programs/457e9bcad211c9c44b0e6dac2e603361c3d1baa8.png">
           </div>
           <div class="live-image">
-            <img src="http://midia.cmais.com.br/programs/f277ca8606ddbca46ece887e5693a20c1d808e2d.jpg" alt="Jornal da Cultura">
+            <img src="http://midia.cmais.com.br/programs/e1ac3a5bcdc6ee20748d54cfb84b85f1105b7148.jpg" alt="Jornal da Cultura">
             <span id="jornaldacultura" style="display: none;">NO AR</span>
           </div>
           <p>
@@ -51,7 +51,7 @@
             <img title="Roda Viva" alt="Roda Viva" src="http://midia.cmais.com.br/programs/891dc87780b6df7358a6960f7cf3966549229f45.png">
           </div>
           <div class="live-image">
-            <img src="http://midia.cmais.com.br/programs/32129e1ef151f91bb63cd8ff2671f5e2715f043c.jpg" alt="Roda Viva ">
+            <img src="http://midia.cmais.com.br/programs/6102b1388d8c7f0c25871ed70755ef802bb59655.jpg" alt="Roda Viva ">
             <span id="rodaviva" style="display: none;">NO AR</span>
           </div>
           <p> 

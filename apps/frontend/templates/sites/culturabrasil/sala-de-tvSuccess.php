@@ -27,14 +27,14 @@
        <div class="page-header ao-vivo">
         <h4>Transmiss&atilde;o ao vivo</h4>
       </div>
-      <div class="span8" style="margin:0 0 20px 0;">
+      <div class="span6" style="margin:0 0 40px 0;">
         <!-- video player -->
       <div id="videoPlayer">
         <span class="falta-flash"> Você precisa ter o flash instalado em seu computador<br/> para acessar esse site.<br/> <a href="http://get.adobe.com/br/flashplayer/"  target="blank" title="Download Flash Player">Clique aqui para fazer o download</a>. </span>
       </div>
       <script src="http://www.culturabrasil.com.br//_libs/mediaplayer/swfobject.js" type="text/javascript"></script>
       <script>
-        var so = new SWFObject("http://www.culturabrasil.com.br/_libs/mediaplayer/player.swf", "cam1", "640", "480", "9");
+        var so = new SWFObject("http://www.culturabrasil.com.br/_libs/mediaplayer/player.swf", "cam1", "450", "338", "9");
 
         so.addParam("allowscriptaccess", "always");
         so.addParam("allowfullscreen", "true");
@@ -63,31 +63,27 @@
       </div>
       <!--/share-->
       </div>
-      <div class="span4">
+      <div class="span6">
         <div class="page-header" style="margin: 0;">
-          <h4>Redes Sociais</h4>
+          <h4>Twitter</h4>
         </div>
         <!--Bate papo-->
         <div class="ao-vivo">
           <a class="twitter-timeline"  href="https://twitter.com/culturabrasil2"  data-widget-id="369534168884998144">Tweets by @culturabrasil2</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
         </div>
         <!--/Bate papo-->      
       </div>
      
      </div>
     <!--/transmissao ao vivo -->
-   
-    <!--share-->
-    <div class="share span6">
-      <!-- comentario facebook -->
-      <div class="fb-comments" data-href="http://www.culturabrasil.com.br/sala-de-tv" data-width="490"></div>
-      <!-- /comentario facebook -->
-    </div>
-    <!--/share-->
     
     <!-- google -->
-    <div class="span6">
+    <div class="share span6">
+      <div class="page-header" style="margin: 0;">
+          <h4>Google+</h4>
+        </div>
       <div class="g-comments"
           data-href="http://www.culturabrasil.com.br/sala-de-tv"
           data-width="490"
@@ -95,10 +91,21 @@
           data-view_type="FILTERED_POSTMOD">
       </div>
     </div>
-    <style type="text/css">
-      .g-comments .FWuqA { margin-right:0 !important; }
-    </style>
+    
     <!-- /google -->
+   
+    <!--share-->
+    <div class=" span6">
+      <div class="page-header" style="margin: 0;">
+          <h4>Facebook</h4>
+        </div>
+      <!-- comentario facebook -->
+      <div class="fb-comments" data-href="http://www.culturabrasil.com.br/sala-de-tv" data-width="490"></div>
+      <!-- /comentario facebook -->
+    </div>
+    <!--/share-->
+    
+    
   </div>
 </section>
 <!--/Linha Central-->

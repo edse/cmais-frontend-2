@@ -86,7 +86,7 @@
             <?php endforeach; ?>
         </div>
         <div class="borda-pontilhada"></div> 
-        <a href="#" title="mais playlists">
+        <a href="/playlists" title="mais playlists">
           <span class="mais">+ Playlists</span>
         </a>
         <!--destaque playlist -->
