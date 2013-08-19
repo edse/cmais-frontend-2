@@ -49,7 +49,7 @@
       </script>
       <!-- /videoplayer -->
       <!--share-->
-      <div class="share">
+      <div class="share" style="margin-top: 5px;">
         <div class="google">
           <g:plusone size="medium" annotation="none" href="https://plus.google.com/u/0/+CulturaBrasil/posts "></g:plusone>
         </div>
@@ -61,7 +61,7 @@
         </div>
       </div>
       <!--/share-->
-      <div class="page-header">
+      <div class="page-header" style="margin-bottom: 0;">
         <h4>Redes Sociais</h4>
       </div>
     </div>
