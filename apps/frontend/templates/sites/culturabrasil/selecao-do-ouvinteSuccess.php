@@ -187,6 +187,7 @@ $(document).ready(function() {
           
           if(data == "1") {
             $('.box.msg, .msgAcerto').show();
+            $("#form-selecao").clearForm();
             $('html, body').animate({
               scrollTop: $('.navbar-inner').offset().top
             }, "slow");

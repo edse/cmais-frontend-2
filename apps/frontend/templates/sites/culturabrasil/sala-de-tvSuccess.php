@@ -103,6 +103,9 @@
           data-view_type="FILTERED_POSTMOD">
       </div>
     </div>
+    <style type="text/css">
+      .g-comments .FWuqA { margin-right:0 !important; }
+    </style>
     <!-- /google -->
   </div>
 </section>
