@@ -78,4 +78,5 @@ body{padding:0!important;}
 and (max-width : 360px) {
   .container .cr-box-escolha{width:60px;}
   .container .cr-box-escolha .cr-escolha{display:none;}
+  .container .jp-gui.jp-interface{width: 310px; margin: 0 auto;}
 }
