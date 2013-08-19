@@ -70,7 +70,7 @@
         function LoadInfoMusica(){
           time = new Date().getTime();
           $.ajax({
-             url: "/portal/controle-remoto/pulsar.json?no-cache="+time, 
+             url: "/controle-remoto/pulsar.json?no-cache="+time, 
              dataType: "json",
              success: function(json){
                if(json.musica.interprete == null && json.musica.titulo == null){
