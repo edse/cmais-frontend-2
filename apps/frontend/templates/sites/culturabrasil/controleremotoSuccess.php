@@ -68,8 +68,9 @@
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         function LoadInfoMusica(){
+          time = new Date().getTime();
           $.ajax({
-             url: "/portal/controle-remoto/pulsar.json", 
+             url: "/portal/controle-remoto/pulsar.json?no-cache="+time, 
              dataType: "json",
              success: function(json){
                if(json.musica.interprete[0] == null && json.musica.titulo[0] == null){
@@ -85,8 +86,9 @@
         }
 
         function LoadProgramacao(){
+         time = new Date().getTime();
          $.ajax({
-           url: "http://cmais.com.br/frontend_dev.php/ajax/programacao-radio?channel_id=5",// 5 = Cultura Brasil 
+           url: "http://cmais.com.br/frontend_dev.php/ajax/programacao-radio?channel_id=5&no-cache="+time,// 5 = Cultura Brasil 
            dataType: "json",
            success: function(json){
              //No Ar
