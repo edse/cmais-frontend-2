@@ -27,7 +27,7 @@
        <div class="page-header ao-vivo">
         <h4>Transmiss&atilde;o ao vivo</h4>
       </div>
-      <div class="span8" style="margin:0 0 40px 0;">
+      <div class="span6" style="margin:0 0 40px 0;">
         <!-- video player -->
       <div id="videoPlayer">
         <span class="falta-flash"> Você precisa ter o flash instalado em seu computador<br/> para acessar esse site.<br/> <a href="http://get.adobe.com/br/flashplayer/"  target="blank" title="Download Flash Player">Clique aqui para fazer o download</a>. </span>
@@ -63,7 +63,7 @@
       </div>
       <!--/share-->
       </div>
-      <div class="span4">
+      <div class="span6">
         <div class="page-header" style="margin: 0;">
           <h4>Twitter</h4>
         </div>
