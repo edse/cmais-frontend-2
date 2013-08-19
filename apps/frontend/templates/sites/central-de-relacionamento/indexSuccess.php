@@ -665,7 +665,7 @@ $(document).ready(function(){
                         <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader4" />
                         <button type="submit" class="btn btn-primary" id="btn4">Enviar Mensagem</button>
                         <button type="submit" class="btn btn-success" id="btn5" style="display:none">Salvar Cadastro</button>
-                        <a type="submit" class="btn btn-danger" href="http://cmais.com.br/frontend_dev.php/central-de-relacionamento" id="btn6">Cancelar</a>
+                        <a type="submit" class="btn btn-danger" href="http://cmais.com.br/central-de-relacionamento" id="btn6">Cancelar</a>
                       </div>
                       
                     </fieldset>
@@ -778,20 +778,25 @@ $(document).ready(function(){
                   });
                   $('#f4_mais').click(function(){
                     email = $('#f4_email2').val();
-                    $('#btn6').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email);
+                    $('#btn6').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                   })
                   
                   $('#btn4').click(function(){
                     email = $('#f4_email2').val();
-                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email);
+                    $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                   });
                   $('.backBegin, .outro-email').click(function(){
                     goTop();
                     beginAgain();
                   });
+                  $('.f4_sms, .f4_newsletter, .f4_convite, .f4_terceiros').click(function(){
+                    if($('.salvar-alteracoes').is(":hidden")){
+                      $('.salvar-alteracoes').fadeIn("slow");
+                    }
+                  })
                   $('.change-form').click(function(){
                     $('.salvar-alteracoes').hide();
-                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email)
+                    $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email)
                     $('#f4_mais').attr('checked','true');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
                     $('#row6, #message, #btn4').hide();
