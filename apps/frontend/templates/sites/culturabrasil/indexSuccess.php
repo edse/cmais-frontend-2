@@ -116,7 +116,7 @@
           <?php if(count($displays["widget"]) > 0): ?>
         <!--destaque widgets -->
         <div class="destaque-playlist">
-          <h1>Widget</h1>
+          <span>Widget</span>
           <p>Copie o código abaixo para incorporar o Controle Remoto ao seu blog ou site</p> 
           <textarea rows="3"><?php echo $displays["widget"][0]->getHtml() ?></textarea>
         </div>  
