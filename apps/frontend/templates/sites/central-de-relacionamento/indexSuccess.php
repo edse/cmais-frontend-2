@@ -1084,13 +1084,23 @@ $(document).ready(function(){
                       f4_local: {
                         required: "#f4_exterior:!checked"
                       },
+                      f4_numero:{
+                        required: function(element) {
+                            if($('#f4_endereco')!=""){
+                              return $("#f2_cep").val()!="_____-___" ? true : false
+                            }else{
+                              return false
+                            }
+                         },
+                       },
+                      /*
                       f4_numero: {
                         required: function(element) {
                           return $("#f4_endereco").val()!="" ? true : false
                         },
                         number: true
                       },
-                      /*
+                      
                       f4_cep: {
                         required: function(element) {
                           return $("#f4_endereco").val()!="" ? true : false
@@ -1101,7 +1111,11 @@ $(document).ready(function(){
                       */
                      f4_cep: {
                         required: function(element) {
-                          return $("#f2_cep").val()!="_____-___" ? true : false
+                          if($('#f4_endereco')!=""){
+                            return $("#f2_cep").val()!="_____-___" ? true : false
+                          }else{
+                            return false
+                          }
                         },
                         minlength: 8,
                         cep: true

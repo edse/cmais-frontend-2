@@ -75,7 +75,7 @@ body{padding:0!important;}
 .container .cr-redes .cr-google{background-position: -1px -49px;}
 .container .cr-box-banner{width: 320px;margin: 0 auto;}
 @media only screen 
-and (max-width : 480px) {
+and (max-width : 399px) {
   .container .cr-box-escolha{width:60px;}
   .container .cr-box-escolha .cr-escolha{display:none;}
   .container .jp-audio{width:280px; margin:0 auto;}
