@@ -1,5 +1,5 @@
 <?php
-if($asset) {
+if(isset($asset)) {
   if(count($asset->getSections()) > 0) {
     $section = $asset->getSections();
     $section = $section[0];
