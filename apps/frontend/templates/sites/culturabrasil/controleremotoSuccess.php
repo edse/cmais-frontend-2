@@ -81,9 +81,12 @@
            url: "/portal/controle-remoto/ajax_pulsar.php", //URL de destino
            dataType: "json",
            success: function(json){
-             console.log(json.interprete+" - "+json.duracao);
-             $("#nome_interprete_atual").json.duracao;
-             $("#nome_musica_atual").val(json.interprete+" - "+json.duracao);
+             alert("Duracao"+json.duracao);
+             alert("Interprete"+json.interprete);
+             alert("Titulo"+json.duracao);
+             //console.log(json.interprete+" - "+json.duracao);
+             //$("#nome_interprete_atual").val(json.interprete+" - "+json.duracao);
+             //$("#nome_musica_atual").val(json.interprete+" - "+json.duracao);
            }
          }); 
         
