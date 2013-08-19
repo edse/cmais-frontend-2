@@ -103,6 +103,9 @@
           data-view_type="FILTERED_POSTMOD">
       </div>
     </div>
+    <style type="text/css">
+      .FWuqA { margin-right:0; }
+    </style>
     <!-- /google -->
   </div>
 </section>
