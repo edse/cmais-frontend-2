@@ -70,7 +70,7 @@
        <fb:like href="https://facebook.com/culturabrasil" layout="button_count" width="200" send="true" show_faces="false"></fb:like>
      </div>
      <!-- comentario facebook -->
-     <fb:comments href="<?php echo $uri?>" numposts="3" width="350" publish_feed="true" style="margin-top:11px;"></fb:comments>
+     <fb:comments href="<?php echo $uri?>" numposts="3" width="450" publish_feed="true" style="margin-top:11px;"></fb:comments>
      <hr />
      <!-- /comentario facebook -->
    </div>
