@@ -82,3 +82,7 @@ and (max-width : 480px) {
   .container .jp-gui.jp-interface{width: 278px; margin: 0 auto; overflow:hidden;}
   .container .cr-banner {overflow: hidden;background: #FFFFFF;padding: 10px 0px;}
 }
+@media only screen 
+and (max-width : 320px) {
+  .container .cr-pgm .cr-desc-pgm {float: left;max-width: 150px;}
+}
