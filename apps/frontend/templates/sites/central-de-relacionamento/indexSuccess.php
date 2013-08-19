@@ -442,13 +442,7 @@ $(document).ready(function(){
                   </form>
                 </div>
                 <!-- /row3 -->
-                <!-- row 9-->
-                <div class="row" id="row9">
-                  <div class="alert alert-block alert-success fade in">
-                    <h4 class="alert-heading">Obrigado. Seu cadastro foi alterado com sucesso!</h4>
-                  </div>
-                </div>
-                <!-- /row9 -->
+                
                 <!-- row4 -->
                 <div class="row" id="row4" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:block;";}else{echo"display:none;";}?>"-->
                   <div class="page-header">
@@ -733,6 +727,20 @@ $(document).ready(function(){
                   </div>
                 </div>
                 <!-- /row 8-->
+                <!-- row9 -->
+                <div class="row" id="row9" >
+                  <div class="page-header">
+                    <h1>Gratos</h1>
+                    <p><span class="label label-success">cadastro alterado</span></p>
+                  </div><!-- /.span -->
+                  <div class="alert alert-block alert-success fade in">
+                    <h4 class="alert-heading">Sua mensagem foi enviada!</h4>
+                    <p>O que vc quer fazer agora?</p>
+                    <a class="btn btn-success enviar-outra"> Continuar o envio</a>
+                    <a class="btn btn-success change-form" href="javascript:;"> Alterar novamente seu cadastro</a>
+                  </div>
+                </div>
+                <!-- /row9 -->
                 <!-- row 9 local antigo>
                 <div class="row" id="row9">
                   <div class="page-header">
