@@ -68,6 +68,22 @@
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         
+        
+        //Voce está ouvindo
+        $.ajax({
+           url: "/portal/controle-remoto/ajax_pulsar.php", //URL de destino
+           dataType: "json", //Tipo de Retorno
+           success: function(json){ //Se ocorrer tudo certo
+             alert("OK");
+              //var msg = "Nome: " + json.nome + "\n";
+              //msg += "Sobrenome: " + json.sobrenome + "\n";
+              //msg += "Idade: " + json.idade;
+              //alert(msg);
+           }
+         });        
+        
+        
+        
       });
       //]]>
       </script>    
