@@ -81,10 +81,12 @@
            url: "/portal/controle-remoto/ajax_pulsar.php", 
            dataType: "json",
            success: function(json){
-             if(json.musica.interprete == "" && json.musica.titulo){
+             if(json.musica.interprete == "" && json.musica.titulo == ""){
                $(".cr-det-mus-pgm").hide();
+               alert("em branco");
              }else{
-               //$("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);               
+               //$("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);
+                              alert("musica encontrada");
                $("#nome_interprete_atual").text(json.musica.interprete);
                $("#nome_musica_atual").text(json.musica.titulo);               
                $(".cr-det-mus-pgm").show();  
