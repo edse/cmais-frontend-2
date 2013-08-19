@@ -34,7 +34,7 @@
 
 }
 body{padding:0!important;}
-.container{min-width:320px; background: yellow;}
+.container{min-width:320px; max-width:400px;background: yellow;}
 .container .cr-topo{padding:15px; background:#FFF; min-height:35px;}
 .container .cr-topo h1{font-family:'TitilliumLtBold',Arial, Helvetica, sans-serif; font-size:26px; margin:0; padding:0; display:block; width:200px; float:left; color:#00bed5; letter-spacing: -0.04em;}
 .container .cr-box-escolha{width:140px; margin-top:10px;position:relative;}
