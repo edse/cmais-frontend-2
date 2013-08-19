@@ -99,6 +99,10 @@
              $("#titulo_pgm_atual").text(json.noar.titulo); 
              $("#img_pgm_atual").attr("src",json.noar.imagem);
              
+             console.log(json.noar.titulo);
+             console.log(json.noar.imagem);
+             
+             /*
              var style = 0;
              var tipo = "im";
              var conteudo = "";
@@ -117,7 +121,7 @@
                conteudo+=  '<p class="hora">' + json.aseguir.data+ 'h</p>';
                conteudo+=  '</li>';
               });
-              
+              */
               $("#lista_pgm_a_seguir").html(conteudo);
              
            }
