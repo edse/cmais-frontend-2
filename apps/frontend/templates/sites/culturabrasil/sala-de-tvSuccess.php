@@ -68,7 +68,7 @@
     <!--share-->
     <div class="share span6">
       <!-- comentario facebook -->
-      <fb:comments href="<?php echo $uri?>" numposts="3" width="490" publish_feed="true" style="margin-top:11px;"></fb:comments>
+      <fb:comments href="<?php echo $uri?>" numposts="3" width="490" publish_feed="true"></fb:comments>
       <!-- /comentario facebook -->
     </div>
     <!--/share-->
