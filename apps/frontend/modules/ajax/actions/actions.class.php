@@ -2041,7 +2041,7 @@ EOT;
       $return = array();
 
       foreach($schedules as $s){
-        $return["aseguir"][] = array("titulo"=> $s->Program->getTitle(), "data"=> format_datetime($d->getDateStart(), "HH:mm"), "imagem"=> $s->retriveLiveImage());
+        $return["aseguir"][] = array("titulo"=> $s->Program->getTitle(), "data"=> format_datetime($s->getDateStart(), "HH:mm"), "imagem"=> $s->retriveLiveImage());
       }
       
       $noar = Doctrine_Query::create()
@@ -2058,7 +2058,7 @@ EOT;
         if($n->getProgram()->getTitle() == "") $data = "-";
         if($n->getProgram()->getTitle() == "") $imagem = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
         
-        $return["noar"][] = array("titulo"=> $n->getProgram()->getTitle(),  "data"=> format_datetime($d->getDateStart(), "HH:mm"), "imagem"=> $n->retriveLiveImage());
+        $return["noar"][] = array("titulo"=> $n->getProgram()->getTitle(),  "data"=> format_datetime($n->getDateStart(), "HH:mm"), "imagem"=> $n->retriveLiveImage());
       }
     }
     die(json_encode($return));
