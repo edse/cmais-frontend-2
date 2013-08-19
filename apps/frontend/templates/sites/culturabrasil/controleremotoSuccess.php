@@ -96,11 +96,11 @@
            dataType: "json",
            success: function(json){
              //No Ar
-             $("#titulo_pgm_atual").text(json.noar.titulo); 
-             $("#img_pgm_atual").attr("src",json.noar.imagem);
+             $("#titulo_pgm_atual").text(json.noar[0].titulo); 
+             $("#img_pgm_atual").attr("src",json.noar[0].imagem);
              
-             console.log(json.noar.titulo);
-             console.log(json.noar.imagem);
+             //console.log(json.noar[0].titulo);
+             //console.log(json.noar[0].imagem);
              
              /*
              var style = 0;
@@ -122,7 +122,7 @@
                conteudo+=  '</li>';
               });
               */
-              $("#lista_pgm_a_seguir").html(conteudo);
+              //$("#lista_pgm_a_seguir").html(conteudo);
              
            }
          });
