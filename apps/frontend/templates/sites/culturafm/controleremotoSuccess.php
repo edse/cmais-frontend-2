@@ -100,7 +100,6 @@
         //No ar e A Seguir
         setInterval(function(){         
           LoadProgramacao();
-          console.log("LoadProgramacao");
          }, 60000);
         
       });
