@@ -77,12 +77,23 @@
       <div class="page-header" style="margin: 0;">
         <h4>Google+</h4>
       </div>
+      <div id="comments"></div>
+      <script>
+      gapi.comments.render('comments', {
+          href: window.location,
+          width: '490',
+          first_party_property: 'BLOGGER',
+          view_type: 'FILTERED_POSTMOD'
+      });
+      </script>
+      <?php /*
       <div class="g-comments"
           data-href="http://www.culturabrasil.com.br/sala-de-tv"
           data-width="490"
           data-first_party_property="BLOGGER"
           data-view_type="FILTERED_POSTMOD">
       </div>
+      */ ?>
     </div>
     <!-- /google -->
    
