@@ -7,7 +7,7 @@ $(document).ready(function(){
   var controle = null;
   $('.controle-remoto').click(function(){
     if(controle == null || controle.closed){
-      controle = window.open('http://culturabrasil.cmais.com.br/controleremoto','controle','width=300,height=600,scrollbars=no');
+      controle = window.open('http://culturabrasil.cmais.com.br/controleremoto','controle','width=400,height=600,scrollbars=no');
     } else {
       controle.focus();
     }
