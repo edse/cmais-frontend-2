@@ -2055,10 +2055,9 @@ EOT;
         ->execute();
       foreach($noar as $n){
         if($n->getProgram()->getTitle() == "") $titulo = "-";
-        if($n->getProgram()->getTitle() == "") $data = "-";
-        if($n->getProgram()->getTitle() == "") $imagem = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
+        if($n->retriveLiveImage() == "") $imagem = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
         
-        $return["noar"][] = array("titulo"=> $n->getProgram()->getTitle(),  "data"=> format_datetime($n->getDateStart(), "HH:mm"), "imagem"=> $n->retriveLiveImage());
+        $return["noar"][] = array("titulo"=> $titulo,  "data"=> format_datetime($n->getDateStart(), "HH:mm"), "imagem"=> $n->retriveLiveImage());
       }
     }
     die(json_encode($return));
