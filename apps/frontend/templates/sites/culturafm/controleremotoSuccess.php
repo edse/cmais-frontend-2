@@ -182,6 +182,7 @@
             
             <!-- descricao programa -->
             <div class="cr-desc-pgm">
+              <h1 class="cr-logo-cultura-fm"></h1>
               <h2><?php echo $d->Program->getTitle()?></h2>
               
               <!-- detalhe musica -->
@@ -236,7 +237,13 @@
         <!-- /lista itens -->
         
         <div class="cr-linha"></div>
-        
+        <!-- redes -->
+        <div class="cr-redes">
+          <a class="cr-facebook" href="https://www.facebook.com/culturafmoficial" title="facebook" target="_blank">facebook</a>
+          <a class="cr-twitter" href="https://twitter.com/_CulturaFM" title="twitter" target="_blank">twitter</a>
+          <a class="cr-google" href="https://plus.google.com/u/0/109016902461199467278/posts" title="google" target="_blank">google</a>
+        </div>
+        <!-- /redes -->
         <a href="http://cmais.com.br/culturabrasil/programacao" class="cr-pgm-completa" title="Veja nossa programação completa">programação completa » </a>
         
       </section>  
