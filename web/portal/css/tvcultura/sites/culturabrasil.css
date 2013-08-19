@@ -363,11 +363,12 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 /* sala de tv */
 .saladetv .fb_iframe_widget{width:496px;}
 .saladetv .page-header{border:none;}
-.saladetv .page-header h4{color:#333333; font-size:24px;text-transform: none;}
+.saladetv .page-header h4{color:#333333; font-size:24px;text-transform: none; margin-top:0;}
 .saladetv #videoPlayer{width: 640px; margin: 0 auto;}
 .saladetv .google{width: 40px; float: left;}
 .saladetv .twt{width: 142px; float: left;margin-right:8px;}
 .saladetv .fb{width: 174px; float: left;}
 .saladetv .share{margin: 0 auto;overflow: hidden;display: block; /*width: 370px;*/}
 .saladetv .span12 .share { width:370px; }
+
 /* /sala de tv */
