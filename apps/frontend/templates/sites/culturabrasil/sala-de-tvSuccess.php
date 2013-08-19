@@ -74,30 +74,26 @@
   <div class="row-fluid container">
     <div class="span6" style="*margin-left:0px;">    
       <!-- google -->
-      <div class="share span6">
-        <div class="page-header" style="margin: 0;">
-            <h4>Google+</h4>
-          </div>
-        <div class="g-comments"
-            data-href="http://www.culturabrasil.com.br/sala-de-tv"
-            data-width="490"
-            data-first_party_property="BLOGGER"
-            data-view_type="FILTERED_POSTMOD">
-        </div>
+      <div class="page-header" style="margin: 0;">
+        <h4>Google+</h4>
+      </div>
+      <div class="g-comments"
+          data-href="http://www.culturabrasil.com.br/sala-de-tv"
+          data-width="490"
+          data-first_party_property="BLOGGER"
+          data-view_type="FILTERED_POSTMOD">
       </div>
     </div>
     <!-- /google -->
    
     <div class="span6" style="*margin-left:0px;">    
       <!--share-->
-      <div class=" span6">
-        <div class="page-header" style="margin: 0;">
-            <h4>Facebook</h4>
-          </div>
-        <!-- comentario facebook -->
-        <div class="fb-comments" data-href="http://www.culturabrasil.com.br/sala-de-tv" data-width="490"></div>
-        <!-- /comentario facebook -->
+      <div class="page-header" style="margin: 0;">
+        <h4>Facebook</h4>
       </div>
+      <!-- comentario facebook -->
+      <div class="fb-comments" data-href="http://www.culturabrasil.com.br/sala-de-tv" data-width="490"></div>
+      <!-- /comentario facebook -->
       <!--/share-->
     </div>    
     
