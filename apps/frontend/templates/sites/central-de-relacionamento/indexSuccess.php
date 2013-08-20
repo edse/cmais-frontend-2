@@ -1119,7 +1119,13 @@ $(document).ready(function(){
                           }
                         },
                         minlength: 8,
-                        cep: true
+                        cep: function(element) {
+                          if($('#f4_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false
+                          }
                       },
                       f4_cod_grupo: {
                         required: "#f4_mais:!checked"
