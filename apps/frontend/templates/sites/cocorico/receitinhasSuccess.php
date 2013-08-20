@@ -149,7 +149,7 @@ $assets = $pager->getResults();
 
       $assets = Doctrine_Query::create()
         ->select('a.*')
-        ->from('Asset a, Block b, Section s')
+        ->from('Asset a, Block b, SectionAsset sa, Section s')
         ->where('a.id = sa.asset_id')
         ->andWhere('s.id = sa.section_id')
         ->andWhere('a.id = b.asset_id')
