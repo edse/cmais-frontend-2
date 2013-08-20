@@ -73,7 +73,7 @@
              url: "http://culturabrasil.cmais.com.br/pulsar.json?no-cache="+time, 
              dataType: "json",
              success: function(json){
-               if(json.musica.interprete == null && json.musica.titulo == null){
+               if((json.musica.interprete == null && json.musica.titulo == null) || (json.musica.interprete == "" && json.musica.titulo == "")){
                  $(".cr-det-mus-pgm").hide();
                }else{
                  //$("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);
