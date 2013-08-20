@@ -1087,7 +1087,7 @@ $(document).ready(function(){
                       f4_numero:{
                         required: function(element) {
                             if($('#f4_endereco')!=""){
-                              return $("#f2_cep").val()!="_____-___" ? true : false
+                              return $("#f4_cep").val()!="_____-___" ? true : false
                             }else{
                               return false
                             }
@@ -1112,7 +1112,7 @@ $(document).ready(function(){
                      f4_cep: {
                         required: function(element) {
                           if($('#f4_endereco')!=""){
-                            return $("#f2_cep").val()!="_____-___" ? true : false
+                            return $("#f4_cep").val()!="_____-___" ? true : false
                           }else{
                             return false
                           }
