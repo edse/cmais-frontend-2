@@ -195,7 +195,7 @@ $assets = $pager->getResults();
         <?php endforeach; ?>      
     
     </div>  
-  <?php endif; */?>
+  <?php endif; ?>
   <?php $cont = 0; ?>
     <?php if (count($displays['receitinhas-especiais']) > 0): ?>      
       <?php foreach($displays['receitinhas-especiais'] as $d): ?>
@@ -225,8 +225,8 @@ $assets = $pager->getResults();
         <?php endforeach; ?>      
     
     </div>  
-  <?php endif; ?>
-
+  <?php endif; */?>
+  <?php echo count($displays['receitinhas-especiais'])?>
   </div>
   <!-- /row-->
 
