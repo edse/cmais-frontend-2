@@ -60,15 +60,7 @@
       </div>
       <!--/share-->
     </div>
-    <div class="span6" style="*margin-left:0px;">
-      <div class="page-header ao-vivo">
-        <h4>Twitter</h4>
-      </div>
-      <div class="ao-vivo">
-        <a class="twitter-timeline" href="https://twitter.com/culturabrasil2" data-widget-id="369534168884998144">Tweets by @culturabrasil2</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-    </div>
+    <iframe width='490' height='338' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-twitter.html' style="overflow: hidden"></iframe>
   </div>
 
  
