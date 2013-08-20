@@ -146,10 +146,14 @@ $assets = $pager->getResults();
     
     <div class="span8">
     <?php
+
       $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, Block b, Section s')
-        ->andWhere('s.slug = "receitinhas"')        
+        ->where('a.id = sa.asset_id')
+        ->andWhere('s.id = sa.section_id')
+        ->andWhere('a.id = b.asset_id')
+        //->andWhere('s.slug = "receitinhas"')        
         ->andWhere('b.slug = "receitinhas-especiais"')
         ->andWhere('a.site_id = ?', (int)$site->id)
         ->andWhere('a.asset_type_id = 1')
