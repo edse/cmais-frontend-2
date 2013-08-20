@@ -152,7 +152,7 @@ $assets = $pager->getResults();
         ->from('Asset a, Block b, SectionAsset sa, Section s')
         ->where('a.id = sa.asset_id')
         ->andWhere('s.id = sa.section_id')
-        //->andWhere('s.slug = "receitinhas"')        
+        ->andWhere('s.slug = "receitinhas"')        
         ->andWhere('b.slug = "receitinhas-especiais"')
         ->andWhere('a.site_id = ?', (int)$site->id)
         ->andWhere('a.asset_type_id = 1')
