@@ -32,6 +32,18 @@ $assets = $pager->getResults();
     <p>Cozinha da Amiga Zazá</p>
   </div>
 
+<<style type="text/css" media="screen">
+  .especial .form { text-align:left; }
+	.especial .form label.error { display: none !important; } 
+  .especial .form .g-regulamento label.error { display: block !important; position:absolute; bottom:50px; left:20px; background: #FDF035; border: 2px solid #F8B145;   color: #F2722F; padding:2px 5px;  } 
+  .especial .form .box-regulamento { background:#fff; height:150px; overflow-y: scroll; overflow-x:hidden; }
+  .especial .form .box-regulamento p {  color:#6A747D; }
+  .especial .form .g-regulamento label { color:#fff; }
+  .especial .form .g-regulamento .check { width: 15px; float: left; }
+  .especial .form .g-regulamento .controls label { float: left; margin:1.5% 0 0 2%; }
+  .especial .form .g-regulamento .controls { margin-bottom:40px; }
+</style>
+
 
   <!--row-->
   
@@ -52,6 +64,14 @@ $assets = $pager->getResults();
               <input type="text" id="nome" name="nome" placeholder="Seu nome">
             </div>
           </div>
+          
+          <div class="control-group g-nome">
+            <label class="control-label nome" for="nome"></label>
+            <div class="controls">
+              <input type="text" id="email" name="email" placeholder="Seu email">
+            </div>
+          </div>
+          
           <div class="control-group g-cidade">
             <label class="control-label cidade" for="cidade"></label>
             <div class="controls">
