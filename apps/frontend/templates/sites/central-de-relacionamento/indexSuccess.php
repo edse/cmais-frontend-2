@@ -1126,6 +1126,7 @@ $(document).ready(function(){
                           }else{
                             return false 
                           }
+                        }
                       },
                       f4_cod_grupo: {
                         required: "#f4_mais:!checked"
