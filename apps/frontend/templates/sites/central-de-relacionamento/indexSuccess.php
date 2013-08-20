@@ -778,7 +778,7 @@ $(document).ready(function(){
                   })
                   $('.collapse').on('show',function(){
                      $(this).prev().find('a.fechar').fadeIn('fast');
-                     if($(this).prev().find('a.fechar').is(":visible"))
+                     if($(this).prev().find('a.fechar').is(":visible"));
                       goTop2();
                   });
                   $('.fechar').click(function(){
@@ -803,11 +803,11 @@ $(document).ready(function(){
                     }
                   })
                   $('.change-form').click(function(){
-                    $('#f4_maisinfo .control-group').removeClass("success");
+                    $('#f4_maisinfo .control-group').removeClass("success").removeClass("error");
                     $('#f4_maisinfo').find("label.error.valid").remove();
                     $('#f4_maisinfo').hide();
                     $('.salvar-alteracoes').hide();
-                    $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email)
+                    $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                     $('#f4_mais').attr('checked','true');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
                     $('#row6, #message, #btn4,#row9').hide();
