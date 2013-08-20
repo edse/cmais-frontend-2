@@ -19,7 +19,7 @@
       <ul>
         <li><a href="<?php echo $siteUrl ?>/tvcocorico/episodios" title="Episódios">Episódios</a></li>
         <li><a href="<?php echo $siteUrl ?>/tvcocorico/convidados" title="Convidado do dia">Convidado do dia</a></li>
-        <li><a href="<?php echo $siteUrl ?>/receitinhas" title="Cozinha da Amiga da Zazá">Cozinha da Amiga da Zazá</a></li>
+        <li><a href="<?php echo $siteUrl ?>/paiol/receitinhas" title="Cozinha da Amiga da Zazá">Cozinha da Amiga da Zazá</a></li>
         <li><a href="<?php echo $siteUrl ?>/tour-virtual" title="Tour Virtual">Tour Virtual</a></li>
         <li><a href="<?php echo $siteUrl ?>/erros-de-gravacao" title="Erros de gravação">Erros de gravação</a></li>
         <li><a href="<?php echo $siteUrl ?>/instagram" title="Instagram">Instagram @TVCocoricó</a></li>
