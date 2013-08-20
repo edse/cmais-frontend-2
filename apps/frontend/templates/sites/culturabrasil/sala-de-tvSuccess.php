@@ -72,6 +72,6 @@
   </div>
 
  
-   <iframe width='1010' height='500' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe.html'></iframe>
+   <iframe width='1010' height='1000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe.html' style="overflow: hidden"></iframe>
 </section>
 <!--/Linha Central-->
