@@ -62,7 +62,7 @@
           $offset = $p[0]."m".$p[1]."s";
         }
       ?>
-      <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php echo $d->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
+      <iframe width="460" height="259" src="http://www.youtube.com/embed/<?php //echo $d->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0<?php echo "#t=".$offset; ?>" frameborder="0" allowfullscreen></iframe>
       <?php endif; ?>
     </div>
   </div>
