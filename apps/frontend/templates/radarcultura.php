@@ -72,7 +72,7 @@
     <!-- /scripts -->
 
   </head>
-  <body>111
+  <body>
 
     <?php echo $sf_content ?>
 
