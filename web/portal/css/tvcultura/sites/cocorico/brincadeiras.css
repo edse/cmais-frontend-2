@@ -244,7 +244,7 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .especial .form .g-regulamento label { color:#fff; }
 .especial .form .g-regulamento .check { width: 15px; float: left; }
 .especial .form .g-regulamento .controls label { float: left; margin:1.5% 0 0 2%; }
-.especial .form .g-regulamento .controls { margin-bottom:90px; }
+.especial .form .g-regulamento .controls { margin-bottom:30px; }
 .especial .form .g-regulamento .controls label.error,
 .especial .form label.error { position:absolute; bottom:50px; left:10px; width:250px; background: #FDF035; border: 2px solid #F8B145;   color: #F2722F; padding:2px 5px; margin:0;  text-align:center; }
 .especial .form label.error.checked { display: none !important; }
