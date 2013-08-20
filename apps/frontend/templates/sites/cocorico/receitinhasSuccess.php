@@ -146,7 +146,7 @@ $assets = $pager->getResults();
     
     <div class="span8">
     <?php
-
+      /*
       $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, Block b, SectionAsset sa, Section s')
@@ -164,10 +164,41 @@ $assets = $pager->getResults();
         ->orderBy('a.display_order asc')
         ->limit(8)
         ->execute();
+        
     ?>
     <?php $cont = 0; ?>
     <?php if (count($assets) > 0): ?>      
       <?php foreach($assets as $d): ?>
+        <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+        
+        <div class="span6">
+          <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
+          <a href="<?php echo $d->retriveUrl() ?>" class="span12 btn" title=""><?php echo $d->getTitle() ?></a>
+          <ul class="likes">
+            <li class="ativo"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <?php 
+          if($cont == 1){
+             $cont=0;?>  
+          </div><div class="span8"> 
+        <?php 
+          }else{
+           $cont++;
+          }
+        ?>        
+          
+        <?php endforeach; ?>      
+    
+    </div>  
+  <?php endif; */?>
+  <?php $cont = 0; ?>
+    <?php if (count($displays['receitinhas-especiais']) > 0): ?>      
+      <?php foreach($displays['receitinhas-especiais'] as $d): ?>
         <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
         
         <div class="span6">
