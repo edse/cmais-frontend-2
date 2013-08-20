@@ -48,8 +48,6 @@ $assets = $pager->getResults();
   <!--row-->
   
   <div class="row-fluid conteudo destaques especial">
-    
- 
     <div class="span4 form-especial">
       <div class="seta"></div>
       <div class="form">
@@ -124,6 +122,19 @@ $assets = $pager->getResults();
           <div class="control-group g-regulamento">
             <label>Regulamento</label>
             <div class="box-regulamento">
+              <?php
+                $AssetRegulamento = Doctrine_Query::create()
+                  ->select('a.*')
+                  ->from('Asset a')
+                  ->where('a.id = ?', 35122)
+                  ->andWhere('a.is_active = ?', 1)
+                  ->limit(6)
+                  ->execute();              
+                foreach ($AssetRegulamento as $a) {
+                  echo $a->getContent(); 
+                }
+               
+              ?>
               <p>1. Participação:</p>
               <p>REGULAMENTO VEM DO ASTOLFO... EX: Esta é uma ação de caráter exclusivamente cultural que visa estimular a interação do participante com o programa de televisão TV Cocoricó, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. Esta ação destina-se ao público em geral, sem qualquer limitação, e está devidamente regulada conforme às
               disposições do Código Civil (10.406/02) e Lei de Direitos Autorais (9.610/98).
