@@ -60,10 +60,10 @@
       </div>
       <!--/share-->
     </div>
-    <iframe width='490' height='405' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-twitter.html' style="overflow: hidden"></iframe>
+    <iframe id="iframe-twitter" width='490' height='405' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-twitter.html' style="overflow:hidden;"></iframe>
   </div>
 
  
-   <iframe width='1010' height='1000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe.html' style="overflow: hidden"></iframe>
+   <iframe width='1010' height='1000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe.html' style="overflow:hidden;"></iframe>
 </section>
 <!--/Linha Central-->
