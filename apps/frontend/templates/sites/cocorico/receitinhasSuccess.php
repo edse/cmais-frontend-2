@@ -301,9 +301,9 @@ $assets = $pager->getResults();
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
 <script>
-$(document).ready(function(){
+/*$(document).ready(function(){
       /* form tv cocorico */
-  $('.btn-form').click(function(){
+/*  $('.btn-form').click(function(){
    $('.destaque-home-tv').hide();
    $('.interatividade').fadeIn("fast"); 
   })
@@ -311,7 +311,7 @@ $(document).ready(function(){
     $('label.error').css('display','none');
   });
 });
-
+*/
 </script>
 
 <!--form-->
@@ -356,7 +356,7 @@ $(document).ready(function(){
         estado: "Puxa, puxa que puxa! Acho que você esqueceu de preencher alguma coisa. Tente de novo!",
         cidade: "Puxa, puxa que puxa! Acho que você esqueceu de preencher alguma coisa. Tente de novo!",
         receita: "Puxa, puxa que puxa! Acho que você esqueceu de preencher alguma coisa. Tente de novo!",
-        regulamento: "Puxa, puxa que puxa! Acho que você esqueceu de preencher alguma coisa. Tente de novo!"
+        regulamento: "Veja o regulamento!"
           
       },
       success: function(label){
