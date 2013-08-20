@@ -70,8 +70,46 @@
       </div>
     </div>
   </div>
-  <iframe width='1010' height='500' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe.html'></iframe>
-  
 
+  <div class="row-fluid container" style="margin-top:25px;">
+    <div class="span6" style="*margin-left:0px;">    
+      <!-- google -->
+      <div class="page-header" style="margin: 0;">
+        <h4>Google+</h4>
+      </div>
+      <div id="comments"></div>
+      <script>
+      gapi.comments.render('comments', {
+          href: "http://culturabrasil.cmais.com.br/sala-de-tv",
+          width: '490',
+          first_party_property: 'BLOGGER',
+          view_type: 'FILTERED_POSTMOD'
+      });
+      </script>
+      <?php /*
+      <div class="g-comments"
+          data-href="http://www.culturabrasil.com.br/sala-de-tv"
+          data-width="490"
+          data-first_party_property="BLOGGER"
+          data-view_type="FILTERED_POSTMOD">
+      </div>
+      */ ?>
+    </div>
+    <!-- /google -->
+   
+    <div class="span6" style="*margin-left:0px;">    
+      <!--share-->
+      <div class="page-header" style="margin: 0;">
+        <h4>Facebook</h4>
+      </div>
+      <!-- comentario facebook -->
+      <div class="fb-comments" data-href="http://culturabrasil.cmais.com.br/sala-de-tv" data-width="490px" data-num-posts="10"></div>
+      <!-- /comentario facebook -->
+      <!--/share-->
+    </div>    
+    
+  </div>
+  
+   <!--iframe width='1010' height='500' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe.html'></iframe-->
 </section>
 <!--/Linha Central-->
