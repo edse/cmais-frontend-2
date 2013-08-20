@@ -158,7 +158,8 @@ $assets = $pager->getResults();
         ->andWhere('a.is_active = ?', 1)
         //->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
         ->groupBy('sa.asset_id')
-        ->orderBy('a.id desc')
+        //->orderBy('a.id desc')
+        ->orderBy('sa.display_order asc')
         ->limit(8)
         ->execute();
     ?>
