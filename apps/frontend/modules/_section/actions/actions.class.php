@@ -81,9 +81,6 @@ class _sectionActions extends sfActions
 	  if($this->section->Site->getSlug()=="cocorico" && $this->section->getSlug()=="3d") {
         $this->setLayout(false);
       }
-    if($this->section->Site->getSlug()=="culturabrasil" && $this->section->getSlug()=="widget") {
-        $this->setLayout(false);
-      }
 	  if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
         $this->setLayout('responsivo');
       }
@@ -128,10 +125,9 @@ class _sectionActions extends sfActions
         */
       }
 
-      if($this->site->getSlug() == "culturabrasil" && $this->section->getSlug()=="controleremoto"){
+      if( ($this->site->getSlug() == "culturabrasil" && $this->section->getSlug()=="controleremoto") || ($this->section->Site->getSlug()=="culturabrasil" && $this->section->getSlug()=="widget") ){
         $this->setLayout(false);
       }      
-      
       if($this->site->getSlug() == "culturafm" && $this->section->getSlug()=="controleremoto"){
         $this->setLayout(false);
       }   
