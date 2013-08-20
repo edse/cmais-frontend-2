@@ -58,7 +58,7 @@ img{width:100%;}
 
 /* topo minimizado */
 .navbar-inverse .brand, .navbar-inverse .nav > li > a { background:url(/portal/images/capaPrograma/cocorico/logocmais.png) no-repeat; text-indent:-9999px; width: 120px; height:30px; padding:0; margin:8px 20px 0 0; }
-.navbar .nav > li > a { display: block;    height: 34px;    margin-top: 6px;    width: 34px; background:url(/portal/images/capaPrograma/cocorico/icones-menu.png) no-repeat; text-indent:-9999px; margin:5px 10px 5px 0; padding:0;}
+.navbar .nav > li > a { display: block;    height: 34px;    margin-top: 3px;    width: 34px; background:url(/portal/images/capaPrograma/cocorico/icones-menu.png) no-repeat; text-indent:-9999px; margin:5px 10px 5px 0; padding:0;}
 .navbar .nav > .tvratimbum > a { background-position:0 -34px; }
 .navbar .nav > .multicultura > a { background-position:0 -68px; }
 .navbar .nav > .univesp > a { background-position:0 -102px; }
@@ -370,5 +370,6 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 .saladetv .fb{width: 174px; float: left;}
 .saladetv .share{margin: 0 auto;overflow: hidden;display: block; /*width: 370px;*/}
 .saladetv .span12 .share { width:370px; }
-.saladetv .span6.twitter  { width:450px !important; overflow:hidden; }
+
+.saladetv .span6  { width:450px !important; overflow:hidden;}
 /* /sala de tv */

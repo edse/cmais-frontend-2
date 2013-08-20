@@ -361,7 +361,7 @@
             ->limit(5)
             ->execute();
         ?>
-         
+          <?php $i = 0; ?>
           <?php if(isset($latests)): ?>
             <?php if(count($latests)): ?>
           <!-- recentes -->
@@ -377,7 +377,10 @@
                   <?php echo $d->getTitle(); ?>
                 </h3>
                 <p><?php echo $d->getDescription(); ?></p>
-                <div class="borda-pontilhada"></div>
+                <?php $i++ ?>
+                <?php if($i < count($latests)):?>
+                  <div class="borda-pontilhada"></div>
+                <?php endif; ?>
               </a>
               <?php endforeach; ?>
             </div>
