@@ -52,7 +52,7 @@ body{padding:0!important;}
 .container .cr-pgm .cr-header-pgm{overflow: hidden; margin-bottom:10px;}
 .container .cr-pgm .cr-header-pgm span{font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:13px; color:#FFFFFF; background:#00bed5; padding: 1px 5px; text-transform:uppercase; display:block; float:left;}
 .container .cr-pgm .cr-img-pgm{min-height:118px; margin-right:5px; float:left;}
-.container .cr-pgm .cr-desc-pgm{float:left;max-width: 400px;}
+.container .cr-pgm .cr-desc-pgm{float:left;}
 .container .cr-pgm .cr-desc-pgm h2{ font-family:'TitilliumBold', Arial, Helvetica, sans-serif; font-size:20px; color:#2d4244; margin:0 0 4px 0; padding:0; text-transform: uppercase; line-height:20px;}
 .container .cr-pgm .cr-desc-pgm h3{ font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:11px; margin: 0; padding: 0; color: #00bed5; text-transform: uppercase; line-height: 13px;}
 .container .cr-pgm .cr-desc-pgm p{ font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:14px; margin: 0 0 5px 0; padding: 0; color: #2d4244; line-height: 16px; max-width: 253px;}
