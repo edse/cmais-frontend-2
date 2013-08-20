@@ -55,7 +55,7 @@ if(isset($pager)){
       <!--clounaprincipal-->
       <div class="row-fluid">
         <!--lista assets-->
-        <div class="lista-assets span8" style="*margin-left: 0px;">
+        <div class="lista-assets span8" style="*margin-left: 0px;<?php if(count($pager) == 0): ?> margin-bottom:40px;<?php endif; ?>">
           <h1><?php echo $site->getTitle() ?></h1>
           <p class="horario"><?php echo nl2br($program->getSchedule()) ?></p>
           
@@ -99,13 +99,15 @@ if(isset($pager)){
       <div class="row-fluid">
         
         <!--lista assets-->
-        <div class="lista-assets span8"<?php echo count($section->Asset).">>>>"?>>
+        <div class="lista-assets span8">
       <?php endif; ?>   
          
           <?php if(count($pager) > 0): ?>
             <?php foreach($pager->getResults() as $d): ?>
               <?php if( ($section->Site->Program->Channel->getSlug() == "culturabrasil") && ($section->getSlug() == "arquivo") ): ?>
               <a href="<?php echo $uri . '/arquivo/' . $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
+              <?php elseif($section->getSlug() == "entrevistas"): ?>
+              <a href="<?php echo $d->retriveUrl(); ?>" title=" <?php echo $d->getTitle(); ?>">
               <?php else: ?>
               <a href="<?php echo $uri . '/' . $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
               <?php endif; ?>

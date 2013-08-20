@@ -442,13 +442,7 @@ $(document).ready(function(){
                   </form>
                 </div>
                 <!-- /row3 -->
-                <!-- row 9-->
-                <div class="row" id="row9">
-                  <div class="alert alert-block alert-success fade in">
-                    <h4 class="alert-heading">Obrigado. Seu cadastro foi alterado com sucesso!</h4>
-                  </div>
-                </div>
-                <!-- /row9 -->
+                
                 <!-- row4 -->
                 <div class="row" id="row4" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:block;";}else{echo"display:none;";}?>"-->
                   <div class="page-header">
@@ -665,7 +659,7 @@ $(document).ready(function(){
                         <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader4" />
                         <button type="submit" class="btn btn-primary" id="btn4">Enviar Mensagem</button>
                         <button type="submit" class="btn btn-success" id="btn5" style="display:none">Salvar Cadastro</button>
-                        <a type="submit" class="btn btn-danger" href="http://cmais.com.br/frontend_dev.php/central-de-relacionamento" id="btn6">Cancelar</a>
+                        <a type="submit" class="btn btn-danger" href="http://cmais.com.br/central-de-relacionamento" id="btn6">Cancelar</a>
                       </div>
                       
                     </fieldset>
@@ -733,6 +727,20 @@ $(document).ready(function(){
                   </div>
                 </div>
                 <!-- /row 8-->
+                <!-- row9 -->
+                <div class="row" id="row9" >
+                  <div class="page-header">
+                    <h1>Gratos</h1>
+                    <p><span class="label label-success">cadastro alterado</span></p>
+                  </div><!-- /.span -->
+                  <div class="alert alert-block alert-success fade in">
+                    <h4 class="alert-heading">Sua mensagem foi enviada!</h4>
+                    <p>O que vc quer fazer agora?</p>
+                    <a class="btn btn-success enviar-outra"> Continuar o envio</a>
+                    <a class="btn btn-success change-form" href="javascript:;"> Alterar novamente seu cadastro</a>
+                  </div>
+                </div>
+                <!-- /row9 -->
                 <!-- row 9 local antigo>
                 <div class="row" id="row9">
                   <div class="page-header">
@@ -770,7 +778,7 @@ $(document).ready(function(){
                   })
                   $('.collapse').on('show',function(){
                      $(this).prev().find('a.fechar').fadeIn('fast');
-                     if($(this).prev().find('a.fechar').is(":visible"))
+                     if($(this).prev().find('a.fechar').is(":visible"));
                       goTop2();
                   });
                   $('.fechar').click(function(){
@@ -778,23 +786,31 @@ $(document).ready(function(){
                   });
                   $('#f4_mais').click(function(){
                     email = $('#f4_email2').val();
-                    $('#btn6').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email);
+                    $('#btn6').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                   })
                   
                   $('#btn4').click(function(){
                     email = $('#f4_email2').val();
-                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email);
+                    $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                   });
                   $('.backBegin, .outro-email').click(function(){
                     goTop();
                     beginAgain();
                   });
+                  $('#f4_sms, #f4_newsletter, #f4_convite, #f4_terceiros').click(function(){
+                    if($('.salvar-alteracoes').is(":hidden")){
+                      $('.salvar-alteracoes').fadeIn("slow");
+                    }
+                  })
                   $('.change-form').click(function(){
+                    $('#f4_maisinfo .control-group').removeClass("success").removeClass("error");
+                    $('#f4_maisinfo').find("label.error.valid").remove();
+                    $('#f4_maisinfo').hide();
                     $('.salvar-alteracoes').hide();
-                    $('.enviar-outra').attr("href","http://cmais.com.br/frontend_dev.php/central-de-relacionamento?step=4&email="+email)
+                    $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                     $('#f4_mais').attr('checked','true');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
-                    $('#row6, #message, #btn4').hide();
+                    $('#row6, #message, #btn4,#row9').hide();
                     //$('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected');
                     $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   });
@@ -932,12 +948,34 @@ $(document).ready(function(){
                         required: "#f2_exterior:checked",
                         minlength: 2
                       },
+                      f2_numero:{
+                        required: function(element) {
+                            if($('#f2_endereco').val()!=""){
+                              return true
+                            }else{
+                              return false
+                            }
+                         }
+                      },
+                     
                       f2_cep: {
                         required: function(element) {
-                          return $("#f2_cep").val()!="_____-___" ? true : false
+                          if($('#f2_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false
+                          }
                         },
                         minlength: 8,
-                        cep: true
+                        cep: function(element) {
+                          if($('#f2_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false 
+                          }
+                        }
                       },
                       f2_estado: {
                         required: "#f2_exterior:!checked"
@@ -1001,10 +1039,22 @@ $(document).ready(function(){
                       },
                       f3_cep: {
                         required: function(element) {
-                          return $("#f2_cep").val()!="_____-___" ? true : false
+                          if($('#f4_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false
+                          }
                         },
                         minlength: 8,
-                        cep: true
+                        cep: function(element) {
+                          if($('#f4_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false 
+                          }
+                        }
                       },
                       f3_textarea: {
                         minlength: 2,
@@ -1071,13 +1121,23 @@ $(document).ready(function(){
                       f4_local: {
                         required: "#f4_exterior:!checked"
                       },
+                      f4_numero:{
+                        required: function(element) {
+                            if($('#f4_endereco').val()!=""){
+                              return true
+                            }else{
+                              return false
+                            }
+                         }
+                       },
+                      /*
                       f4_numero: {
                         required: function(element) {
                           return $("#f4_endereco").val()!="" ? true : false
                         },
                         number: true
                       },
-                      /*
+                      
                       f4_cep: {
                         required: function(element) {
                           return $("#f4_endereco").val()!="" ? true : false
@@ -1088,10 +1148,22 @@ $(document).ready(function(){
                       */
                      f4_cep: {
                         required: function(element) {
-                          return $("#f2_cep").val()!="_____-___" ? true : false
+                          if($('#f4_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false
+                          }
                         },
                         minlength: 8,
-                        cep: true
+                        cep: function(element) {
+                          if($('#f4_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false 
+                          }
+                        }
                       },
                       f4_cod_grupo: {
                         required: "#f4_mais:!checked"
@@ -1208,7 +1280,7 @@ $(document).ready(function(){
                   if($('#f4_mais').attr('checked')){
                     $("#f4_cod_programa option").attr("value", "--");
                     $('#f4_maisinfo .control-group').removeClass("success");
-                    $('#f4_maisinfo .c').find("label.error.valid").remove();
+                    $('#f4_maisinfo').find("label.error.valid").remove();
                     $('#f4_maisinfo').show();
                     $('#btn5').show();
                     $('#btn4, .salvar-alteracoes, #message').hide();

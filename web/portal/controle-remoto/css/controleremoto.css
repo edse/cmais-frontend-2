@@ -52,7 +52,7 @@ body{padding:0!important;}
 .container .cr-pgm .cr-header-pgm{overflow: hidden; margin-bottom:10px;}
 .container .cr-pgm .cr-header-pgm span{font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:13px; color:#FFFFFF; background:#00bed5; padding: 1px 5px; text-transform:uppercase; display:block; float:left;}
 .container .cr-pgm .cr-img-pgm{min-height:118px; margin-right:5px; float:left;}
-.container .cr-pgm .cr-desc-pgm{float:left;max-width: 230px;}
+.container .cr-pgm .cr-desc-pgm{float:left;width: 70%;}
 .container .cr-pgm .cr-desc-pgm h2{ font-family:'TitilliumBold', Arial, Helvetica, sans-serif; font-size:20px; color:#2d4244; margin:0 0 4px 0; padding:0; text-transform: uppercase; line-height:20px;}
 .container .cr-pgm .cr-desc-pgm h3{ font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:11px; margin: 0; padding: 0; color: #00bed5; text-transform: uppercase; line-height: 13px;}
 .container .cr-pgm .cr-desc-pgm p{ font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:14px; margin: 0 0 5px 0; padding: 0; color: #2d4244; line-height: 16px; max-width: 253px;}
@@ -74,8 +74,9 @@ body{padding:0!important;}
 .container .cr-redes .cr-twitter{background-position: -1px -71px;}
 .container .cr-redes .cr-google{background-position: -1px -49px;}
 .container .cr-box-banner{width: 320px;margin: 0 auto;}
+.container #jp_container_2{margin:0 auto;}
 @media only screen 
-and (max-width : 480px) {
+and (max-width : 399px) {
   .container .cr-box-escolha{width:60px;}
   .container .cr-box-escolha .cr-escolha{display:none;}
   .container .jp-audio{width:280px; margin:0 auto;}
@@ -85,4 +86,5 @@ and (max-width : 480px) {
 @media only screen 
 and (max-width : 320px) {
   .container .cr-pgm .cr-desc-pgm {float: left;max-width: 150px;}
+  
 }
