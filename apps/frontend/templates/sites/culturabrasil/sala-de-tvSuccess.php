@@ -60,7 +60,7 @@
       </div>
       <!--/share-->
     </div>
-    <iframe width='490' height='480' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-twitter.html' style="overflow: hidden"></iframe>
+    <iframe width='490' height='405' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-twitter.html' style="overflow: hidden"></iframe>
   </div>
 
  
