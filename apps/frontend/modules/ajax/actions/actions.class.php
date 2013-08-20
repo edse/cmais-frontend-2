@@ -2057,7 +2057,7 @@ EOT;
         $titulo =   $n->getProgram()->getTitle();
         $imagem =   $n->retriveLiveImage();
         if($n->getProgram()->getTitle() == "") $titulo = "-";
-        if($n->retriveLiveImage() == "") $imagem = "http://cmais.com.br/controle-remoto/img_capa.jpg";
+        if($n->retriveLiveImage() == "") $imagem = "http://cmais.com.br/portal/controle-remoto/img_capa.jpg";
         
         $return["noar"][] = array("titulo"=> $titulo,  "data"=> format_datetime($n->getDateStart(), "HH:mm"), "imagem"=> $n->retriveLiveImage());
       }
