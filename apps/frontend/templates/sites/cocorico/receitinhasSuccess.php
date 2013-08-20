@@ -148,12 +148,9 @@ $assets = $pager->getResults();
     <?php
       $assets = Doctrine_Query::create()
         ->select('a.*')
-        ->from('Asset a, Block b, SectionAsset sa, Section s')
-        ->where('a.id = sa.asset_id')
+        ->from('Asset a, Block b, Section s')
+        ->andWhere('s.slug = "receitinhas"')        
         ->andWhere('b.slug = "receitinhas-especiais"')
-        ->andWhere('s.id = sa.section_id')
-        ->andWhere('s.slug = "receitinhas"')
-        //->andWhere('b.id = ?', 1692)
         ->andWhere('a.site_id = ?', (int)$site->id)
         ->andWhere('a.asset_type_id = 1')
         ->andWhere('a.is_active = ?', 1)
@@ -171,7 +168,7 @@ $assets = $pager->getResults();
         
         <div class="span6">
           <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
-          <a href="<?php echo $d->retriveUrl() ?>" class="span12 btn" title=""><?php //echo $d->getTitle() ?><?php echo $assets[0]->getSlug(); ?></a>
+          <a href="<?php echo $d->retriveUrl() ?>" class="span12 btn" title=""><?php echo $d->getTitle() ?></a>
           <ul class="likes">
             <li class="ativo"></li>
             <li></li>
