@@ -143,6 +143,8 @@ $assets = $pager->getResults();
       </div>
     </div>
     
+    
+    <div class="span8">
     <?php
       $assets = Doctrine_Query::create()
         ->select('a.*')
@@ -175,6 +177,7 @@ $assets = $pager->getResults();
         </div>  
         <?php endforeach; ?>      
     
+    </div>  
   <?php endif; ?>
 
   </div>
