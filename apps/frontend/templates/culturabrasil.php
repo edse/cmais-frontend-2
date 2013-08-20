@@ -74,7 +74,7 @@
 
   </head>
   <body>
-    testeje
+    
     <?php echo $sf_content ?>
 
     <?php include_partial_from_folder('blocks', 'global/footer') ?>
