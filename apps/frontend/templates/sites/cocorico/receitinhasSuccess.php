@@ -2,7 +2,8 @@
 $assets = $pager->getResults();
 ?>
 
-<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
+<script type="text/javascript" src="/portal/js/bootstrap/popover.js"></script>
+<link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <!-- container-->
 <div class="container tudo receitinhas">
@@ -48,6 +49,7 @@ $assets = $pager->getResults();
   
   <div class="row-fluid conteudo destaques especial">
     
+ 
     <div class="span4 form-especial">
       <div class="seta"></div>
       <div class="form">
@@ -60,21 +62,19 @@ $assets = $pager->getResults();
           <div class="control-group g-nome">
             <label class="control-label nome" for="nome"></label>
             <div class="controls">
-              <input type="text" id="nome" name="nome" placeholder="Seu nome">
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" value="Seu nome">
             </div>
           </div>
-          
-          <div class="control-group g-nome">
-            <label class="control-label nome" for="nome"></label>
+          <div class="control-group g-email">
+            <label class="control-label email" for="email"></label>
             <div class="controls">
-              <input type="text" id="email" name="email" placeholder="Seu email">
+              <input type="text" id="email" name="email" placeholder="Seu email" value="Seu email">
             </div>
           </div>
-          
           <div class="control-group g-cidade">
             <label class="control-label cidade" for="cidade"></label>
             <div class="controls">
-              <input type="text" id="cidade" name="cidade" placeholder="Sua cidade">
+              <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" value="Sua cidade">
               <select class="span1" id="estado" name="estado">
                  <option value="" selected="selected">UF</option>
                  <option value="Acre">AC</option>
@@ -111,7 +111,7 @@ $assets = $pager->getResults();
           <div class="control-group g-receita">
             <label class="control-label receita" for="receita"></label>
             <div class="controls">
-              <textarea id="receita" placeholder="Escreva aqui sua receitinha" name="receita"></textarea>
+              <textarea id="receita" placeholder="Escreva aqui sua receitinha" value="Escreva aqui sua receitinha" name="receita"></textarea>
             </div>
           </div>
           <div class="control-group g-file">
@@ -135,7 +135,7 @@ $assets = $pager->getResults();
                <input id="regulamento" class="check" type="checkbox" name="regulamento">
                <label>Li e concordo com o regulamento.</label>
             </div>
-           
+           <p class="sucesso">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
             <button type="submit" class="btn">enviar</button>
           </div>
                    
@@ -145,57 +145,6 @@ $assets = $pager->getResults();
     
     
     <div class="span8">
-    <?php
-      /*
-      $assets = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, Block b, SectionAsset sa, Section s')
-        ->where('a.id = sa.asset_id')
-        ->andWhere('s.id = sa.section_id')
-        ->andWhere('s.id = b.section_id')
-        //->andWhere('s.slug = "receitinhas"')        
-        ->andWhere('b.slug = "receitinhas-especiais"')
-        ->andWhere('a.site_id = ?', (int)$site->id)
-        ->andWhere('a.asset_type_id = 1')
-        ->andWhere('a.is_active = ?', 1)
-        //->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
-        //->groupBy('sa.asset_id')
-        //->orderBy('a.id desc')
-        ->orderBy('a.display_order asc')
-        ->limit(8)
-        ->execute();
-        
-    ?>
-    <?php $cont = 0; ?>
-    <?php if (count($assets) > 0): ?>      
-      <?php foreach($assets as $d): ?>
-        <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
-        
-        <div class="span6">
-          <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
-          <a href="<?php echo $d->retriveUrl() ?>" class="span12 btn" title=""><?php echo $d->getTitle() ?></a>
-          <ul class="likes">
-            <li class="ativo"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-        <?php 
-          if($cont == 1){
-             $cont=0;?>  
-          </div><div class="span8"> 
-        <?php 
-          }else{
-           $cont++;
-          }
-        ?>        
-          
-        <?php endforeach; ?>      
-    
-    </div>  
-  <?php endif; */?>
   <?php $cont = 0; ?>
     <?php if (count($displays['receitinhas-especiais']) > 0): ?>      
       <?php foreach($displays['receitinhas-especiais'] as $d): ?>
@@ -339,3 +288,81 @@ $assets = $pager->getResults();
   <!-- /rodape-->
 </div>
 <!-- /container-->
+
+
+
+<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
+<script>
+$(document).ready(function(){
+      /* form tv cocorico */
+  $('.btn-form').click(function(){
+   $('.destaque-home-tv').hide();
+   $('.interatividade').fadeIn("fast"); 
+  })
+  $('#votar-input').click(function(){
+    $('label.error').css('display','none');
+  });
+});
+
+</script>
+
+<!--form-->
+<script type="text/javascript">
+  $(document).ready(function(){
+    var validator = $('#form-contato').validate({
+      
+      submitHandler: function(form){
+        form.submit();
+      },
+      rules:{
+        nome:{
+          required:true,
+          minlength: 2
+        },
+        email:{
+          required:true,
+          email: true
+        },
+        estado:{
+          required:true         
+        },
+        
+        cidade:{
+          required:true,
+          minlength: 3
+        },
+        receita:{
+          required:true,
+          minlength: 2
+        },
+        
+        regulamento:{
+          required:true
+        }
+        
+        
+      },
+      messages:{
+        nome: "Puxa, puxa que puxa! Acho que você esqueceu de preencher alguma coisa. Tente de novo!",
+        email: "Puxa, puxa que puxa! Acho que você esqueceu de preencher alguma coisa. Tente de novo!",
+        estado: "Puxa, puxa que puxa! Acho que você esqueceu de preencher alguma coisa. Tente de novo!",
+        cidade: "Puxa, puxa que puxa! Acho que você esqueceu de preencher alguma coisa. Tente de novo!",
+        receita: "Puxa, puxa que puxa! Acho que você esqueceu de preencher alguma coisa. Tente de novo!",
+        regulamento: "Puxa, puxa que puxa! Acho que você esqueceu de preencher alguma coisa. Tente de novo!"
+          
+      },
+      success: function(label){
+        // set &nbsp; as text for IE
+        label.addClass("checked");
+        $("label.error.checked").css("display","none");
+        label.html("&nbsp;");
+      }
+    });
+  });
+  
+  function validate(obj){
+    if($(obj).val()==$(obj).attr("data-default"))
+      $(obj).val('');
+  }
+</script>
