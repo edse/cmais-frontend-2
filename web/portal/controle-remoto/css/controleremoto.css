@@ -86,5 +86,5 @@ and (max-width : 399px) {
 @media only screen 
 and (max-width : 320px) {
   .container .cr-pgm .cr-desc-pgm {float: left;max-width: 150px;}
-  .container .cr-pgm .cr-desc-pgm{float:left;max-width: 230px;}
+  
 }

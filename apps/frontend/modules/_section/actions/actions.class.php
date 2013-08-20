@@ -124,7 +124,9 @@ class _sectionActions extends sfActions
         }
         */
       }
-
+      if($this->site->getSlug() == "culturabrasil"){
+        $this->setLayout('culturabrasil');
+      }
       if( ($this->site->getSlug() == "culturabrasil" && $this->section->getSlug()=="controleremoto") || ($this->section->Site->getSlug()=="culturabrasil" && $this->section->getSlug()=="widget") ){
         $this->setLayout(false);
       }      
