@@ -21,7 +21,7 @@
     </ul>
   </div>
   <!--/breadcrumb-->
-  <div class="row-fluid container">
+  <div class="row-fluid container twitter">
     <!--transmissao ao vivo -->
     <div class="span6" style="*margin-left:0px;">
        <div class="page-header ao-vivo">
