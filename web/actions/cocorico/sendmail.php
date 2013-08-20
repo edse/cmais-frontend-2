@@ -6,9 +6,8 @@ $expiration_time = "2013-08-30 00:00:00";
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
-    echo "2";
     if ($current_time < $expiration_time) {
-    
+      echo "3";    
       $to = "tvcocorico@gmail.com"; 
       //$to = "maiscriancatvcultura@gmail.com";
       $email = strip_tags($_REQUEST['email']);
