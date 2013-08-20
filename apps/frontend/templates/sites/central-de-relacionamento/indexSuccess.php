@@ -948,12 +948,40 @@ $(document).ready(function(){
                         required: "#f2_exterior:checked",
                         minlength: 2
                       },
+                      f2_numero:{
+                        required: function(element) {
+                            if($('#f4_endereco').val()!=""){
+                              return true
+                            }else{
+                              return false
+                            }
+                         }
+                      },
+                      required: function(element) {
+                            if($('#f4_endereco').val()!=""){
+                              return true
+                            }else{
+                              return false
+                            }
+                         }
                       f2_cep: {
                         required: function(element) {
-                          return $("#f2_cep").val()!="_____-___" ? true : false
+                          if($('#f4_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false
+                          }
                         },
                         minlength: 8,
-                        cep: true
+                        cep: function(element) {
+                          if($('#f4_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false 
+                          }
+                        }
                       },
                       f2_estado: {
                         required: "#f2_exterior:!checked"
@@ -1017,10 +1045,22 @@ $(document).ready(function(){
                       },
                       f3_cep: {
                         required: function(element) {
-                          return $("#f2_cep").val()!="_____-___" ? true : false
+                          if($('#f4_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false
+                          }
                         },
                         minlength: 8,
-                        cep: true
+                        cep: function(element) {
+                          if($('#f4_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false 
+                          }
+                        }
                       },
                       f3_textarea: {
                         minlength: 2,
@@ -1094,7 +1134,7 @@ $(document).ready(function(){
                             }else{
                               return false
                             }
-                         },
+                         }
                        },
                       /*
                       f4_numero: {
