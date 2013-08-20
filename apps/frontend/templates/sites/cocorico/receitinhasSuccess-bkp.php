@@ -35,9 +35,9 @@ $assets = $pager->getResults();
   <?php if(count($favoritos) > 0): ?>
   <div class="row-fluid conteudo destaques ytb">
     <?php if(isset($favoritos[0])): ?>
-      <?php $related = $favoritos[0]->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php// $related = $favoritos[0]->retriveRelatedAssetsByAssetTypeId(6); ?>
     <div class="span4">
-      <a href="<?php echo $favoritos[0]->retriveUrl() ?>" title="<?php echo $favoritos[0]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[0]->getTitle() ?>" /></a>
+      <a href="<?php echo $favoritos[0]->retriveUrl() ?>" title="<?php echo $favoritos[0]->getTitle() ?>"><img class="span12" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $favoritos[0]->getTitle() ?>" /></a>
       <a href="<?php echo $favoritos[0]->retriveUrl() ?>" class="span12 btn" title="<?php echo $favoritos[0]->getTitle() ?>">
         <span class=""></span>
         <?php //echo $favoritos[0]->getTitle() ?>
