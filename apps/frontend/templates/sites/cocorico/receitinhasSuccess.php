@@ -32,7 +32,7 @@ $assets = $pager->getResults();
     <p>Cozinha da Amiga Zazá</p>
   </div>
 
-<<style type="text/css" media="screen">
+<style type="text/css" media="screen">
   .especial .form { text-align:left; }
 	.especial .form label.error { display: none !important; } 
   .especial .form .g-regulamento label.error { display: block !important; position:absolute; bottom:50px; left:20px; background: #FDF035; border: 2px solid #F8B145;   color: #F2722F; padding:2px 5px;  } 
@@ -167,7 +167,7 @@ $assets = $pager->getResults();
         <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
         
         <div class="span6">
-          <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
+          <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
           <a href="<?php echo $d->retriveUrl() ?>" class="span12 btn" title=""><?php echo $d->getTitle() ?></a>
           <ul class="likes">
             <li class="ativo"></li>
