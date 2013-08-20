@@ -198,7 +198,7 @@ $assets = $pager->getResults();
   <?php endif; */?>
   <?php $cont = 0; ?>
     <?php if (count($displays['receitinhas-especiais']) > 0): ?>      
-      <?php foreach($displays['receitinhas-especiais'] as $d): ?>
+      <?php foreach($displays['receitinhas-especiais'][0] as $d): ?>
         <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
         
         <div class="span6">
