@@ -132,7 +132,7 @@ $assets = $pager->getResults();
                   ->limit(1)
                   ->execute(); 
 //                foreach ($AssetRegulamento as $a) {
-                  echo html_entity_decode($a->AssetContent[0]->render()); 
+                  echo html_entity_decode($a[0]->AssetContent->render()); 
   //              }
               ?>
               <!-- /regulamento -->
