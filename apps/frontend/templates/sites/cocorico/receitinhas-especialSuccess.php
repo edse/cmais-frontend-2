@@ -47,7 +47,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
           <div class="control-group g-nome">
             <label class="control-label nome" for="nome"></label>
             <div class="controls">
-              <input type="text" id="nome" name="nome" data-default="Seu nome" value="Seu nome">
+              <input type="text" id="nome" name="nome" data-default="Seu nomea" value="Seu nomea">
             </div>
           </div>
           <div class="control-group g-cidade">
