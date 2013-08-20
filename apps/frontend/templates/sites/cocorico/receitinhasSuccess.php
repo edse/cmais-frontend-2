@@ -160,7 +160,7 @@ $assets = $pager->getResults();
         ->groupBy('sa.asset_id')
         //->orderBy('a.id desc')
         ->orderBy('sa.display_order asc')
-        ->limit(8)
+        ->limit(20)
         ->execute();
     ?>
     <?php $cont = 0; ?>
