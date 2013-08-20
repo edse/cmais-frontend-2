@@ -47,7 +47,7 @@
       <script type="text/javascript">
       //<![CDATA[
       $(document).ready(function(){
-        #("xcr-det-mus-pgm").hide();
+        $(".cr-det-mus-pgm").hide();
         if(window.screen.width <= 1024){
           $(".jp-volume_controls").hide();
           $(".jp-volume-bar").hide();
