@@ -226,7 +226,7 @@ $assets = $pager->getResults();
     
     </div>  
   <?php endif; */?>
-  <?php echo count($displays['receitinhas-especiais'])?>
+  <?php echo count($displays['receitinhas-especiais']). ">>>>>>>>>>"?>
   </div>
   <!-- /row-->
 
