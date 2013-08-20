@@ -152,13 +152,14 @@ $assets = $pager->getResults();
         ->where('a.id = sa.asset_id')
         ->andWhere('s.id = sa.section_id')
         ->andWhere('s.slug = "receitinhas"')
-        ->andWhere('b.slug = "receitinhas-especials"')
+        ->andWhere('b.id = ?', 1928)
         ->andWhere('a.site_id = ?', (int)$site->id)
         ->andWhere('a.asset_type_id = 1')
         ->andWhere('a.is_active = ?', 1)
         //->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
         ->groupBy('sa.asset_id')
-        ->orderBy('a.id desc')
+        //->orderBy('a.id desc')
+        ->orderBy('sa.display_order asc')
         ->limit(8)
         ->execute();
     ?>
