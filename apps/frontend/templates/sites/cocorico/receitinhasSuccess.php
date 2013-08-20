@@ -150,17 +150,18 @@ $assets = $pager->getResults();
         ->select('a.*')
         ->from('Asset a, Block b, SectionAsset sa, Section s')
         ->where('a.id = sa.asset_id')
+        ->andWhere('b.slug = "receitinhas-especiais"')
         ->andWhere('s.id = sa.section_id')
         ->andWhere('s.slug = "receitinhas"')
-        ->andWhere('b.id = ?', 1928)
+        //->andWhere('b.id = ?', 1692)
         ->andWhere('a.site_id = ?', (int)$site->id)
         ->andWhere('a.asset_type_id = 1')
         ->andWhere('a.is_active = ?', 1)
         //->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
-        ->groupBy('sa.asset_id')
+        //->groupBy('sa.asset_id')
         //->orderBy('a.id desc')
-        ->orderBy('sa.display_order asc')
-        ->limit(20)
+        ->orderBy('a.display_order asc')
+        ->limit(8)
         ->execute();
     ?>
     <?php $cont = 0; ?>
@@ -170,7 +171,7 @@ $assets = $pager->getResults();
         
         <div class="span6">
           <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
-          <a href="<?php echo $d->retriveUrl() ?>" class="span12 btn" title=""><?php echo $d->getTitle() ?></a>
+          <a href="<?php echo $d->retriveUrl() ?>" class="span12 btn" title=""><?php //echo $d->getTitle() ?><?php echo $assets[0]->getSlug(); ?></a>
           <ul class="likes">
             <li class="ativo"></li>
             <li></li>
