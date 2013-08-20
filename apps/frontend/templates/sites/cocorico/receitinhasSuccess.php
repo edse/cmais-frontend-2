@@ -126,7 +126,7 @@ $assets = $pager->getResults();
                 $AssetRegulamento = Doctrine_Query::create()
                   ->select('a.*')
                   ->from('Asset a')
-                  ->where('a.id = ?', 35122)
+                  ->where('a.id = ?', 117999)
                   ->andWhere('a.is_active = ?', 1)
                   ->limit(6)
                   ->execute();              
