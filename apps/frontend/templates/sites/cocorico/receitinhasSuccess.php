@@ -142,7 +142,7 @@ $assets = $pager->getResults();
                <input id="regulamento" class="check" type="checkbox" name="regulamento">
                <label>Li e concordo com o regulamento.</label>
             </div>
-           <p class="sucesso" style="display:none;">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
+           <p class="sucesso">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
             <button type="submit" class="btn">enviar</button>
           </div>
                    
@@ -301,9 +301,9 @@ $assets = $pager->getResults();
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
 <script>
-/*$(document).ready(function(){
+$(document).ready(function(){
       /* form tv cocorico */
-/*  $('.btn-form').click(function(){
+  $('.btn-form').click(function(){
    $('.destaque-home-tv').hide();
    $('.interatividade').fadeIn("fast"); 
   })
@@ -311,7 +311,7 @@ $assets = $pager->getResults();
     $('label.error').css('display','none');
   });
 });
-*/
+
 </script>
 
 <!--form-->
@@ -356,7 +356,7 @@ $assets = $pager->getResults();
         estado: "Puxa, puxa que puxa! Acho que você esqueceu de preencher alguma coisa. Tente de novo!",
         cidade: "Puxa, puxa que puxa! Acho que você esqueceu de preencher alguma coisa. Tente de novo!",
         receita: "Puxa, puxa que puxa! Acho que você esqueceu de preencher alguma coisa. Tente de novo!",
-        regulamento: "Veja o regulamento!"
+        regulamento: "Puxa, puxa que puxa! Acho que você esqueceu de preencher alguma coisa. Tente de novo!"
           
       },
       success: function(label){
