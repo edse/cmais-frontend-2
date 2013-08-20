@@ -158,8 +158,8 @@
           <a href="javascript:;" class="cr-btn-radio" title="Escolha uma rádio"></a>
           <!-- radios -->
           <ul class="cr-radios">
-            <li><a href="javascript:;" title="Cultura Brasil">cultura brasil</a></li>
-            <li><a href="javascript:;" title="Cultura FM">cultura fm</a></li>
+            <li><a href="http://culturabrasil.cmais.com.br/controleremoto" title="Cultura Brasil">cultura brasil</a></li>
+            <li><a href="http://culturafm.cmais.com.br/controleremoto" title="Cultura FM">cultura fm</a></li>
           </ul>  
           <!-- /radios -->
         </div>    
