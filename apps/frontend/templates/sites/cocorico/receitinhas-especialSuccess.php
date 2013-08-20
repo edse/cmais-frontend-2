@@ -47,7 +47,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
           <div class="control-group g-nome">
             <label class="control-label nome" for="nome"></label>
             <div class="controls">
-              <input type="text" id="nome" name="nome" placeholder="Seu nome">
+              <input type="text" id="nome" name="nome" data-default="Seu nomea" value="Seu nomea">
             </div>
           </div>
           <div class="control-group g-cidade">
@@ -307,7 +307,9 @@ $(document).ready(function(){
       },
       rules:{
         nome:{
-          required:true,
+          required:required:function(){
+              validate('#nome');
+            },
           minlength: 2
         },
         estado:{
@@ -323,7 +325,7 @@ $(document).ready(function(){
           minlength: 100
         },
         datafile:{
-          required: true,
+          //required: true,
           accept: "png|jpe?g|gif",
           filesize: 15728640
         },
