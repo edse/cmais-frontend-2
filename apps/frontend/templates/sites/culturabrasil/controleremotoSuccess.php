@@ -233,14 +233,14 @@
             
             <!-- imagem -->  
             <div class="cr-img-pgm">
-              <img src="<?php //echo $imagemPrograma ?>" alt="<?php //echo $d->Program->getTitle()?>" id="img_pgm_atual" />
+              <img src="<?php echo $imagemPrograma ?>" alt="<?php echo $d->Program->getTitle()?>" id="img_pgm_atual" />
             </div>  
             <!-- /imagem -->
             
             <!-- descricao programa -->
             <div class="cr-desc-pgm">
               <a class="cr-links cr-logo-cultura-brasil" href="http://culturabrasil.cmais.com.br/" title="Cultura Brasil"></a>
-              <h2 id="titulo_pgm_atual"><?php //echo $d->Program->getTitle()?></h2>
+              <h2 id="titulo_pgm_atual"><?php echo $d->Program->getTitle()?></h2>
               
               <!-- detalhe musica -->
               <div class="cr-det-mus-pgm">
