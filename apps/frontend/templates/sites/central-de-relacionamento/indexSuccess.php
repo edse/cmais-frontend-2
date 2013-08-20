@@ -950,23 +950,17 @@ $(document).ready(function(){
                       },
                       f2_numero:{
                         required: function(element) {
-                            if($('#f4_endereco').val()!=""){
+                            if($('#f2_endereco').val()!=""){
                               return true
                             }else{
                               return false
                             }
                          }
                       },
-                      required: function(element) {
-                            if($('#f4_endereco').val()!=""){
-                              return true
-                            }else{
-                              return false
-                            }
-                         }
+                     
                       f2_cep: {
                         required: function(element) {
-                          if($('#f4_endereco').val()!=""){
+                          if($('#f2_endereco').val()!=""){
                             //return $("#f4_cep").val()!="_____-___" ? true : false
                             return true
                           }else{
@@ -975,7 +969,7 @@ $(document).ready(function(){
                         },
                         minlength: 8,
                         cep: function(element) {
-                          if($('#f4_endereco').val()!=""){
+                          if($('#f2_endereco').val()!=""){
                             //return $("#f4_cep").val()!="_____-___" ? true : false
                             return true
                           }else{
