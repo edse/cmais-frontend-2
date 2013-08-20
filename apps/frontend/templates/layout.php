@@ -32,7 +32,7 @@
     <link rel="icon" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.ico">
     -->
     <?php
-      echo count($site)
+      echo count($programs)
     ?>
     <link rel="SHORTCUT ICON" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.ico">
     <!--link rel="shortcut icon" href="http://cmais.com.br/portal/images/capaPrograma/culturabrasil/ico.png" type="image/x-icon" /-->
