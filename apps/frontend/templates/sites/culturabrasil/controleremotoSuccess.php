@@ -70,7 +70,7 @@
         function LoadInfoMusica(){
           time = new Date().getTime();
           $.ajax({
-             url: "/pulsar.json?no-cache="+time, 
+             url: "http://culturabrasil.cmais.com.br/pulsar.json?no-cache="+time, 
              dataType: "json",
              success: function(json){
                if(json.musica.interprete == null && json.musica.titulo == null){
