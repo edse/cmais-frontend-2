@@ -44,7 +44,6 @@ $assets = $pager->getResults();
   .especial .form .g-regulamento .controls { margin-bottom:40px; }
 </style>
 
-
   <!--row-->
   
   <div class="row-fluid conteudo destaques especial">
