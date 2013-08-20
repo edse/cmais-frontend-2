@@ -131,7 +131,7 @@ $assets = $pager->getResults();
                   ->limit(6)
                   ->execute();              
                 foreach ($AssetRegulamento as $a) {
-                  echo $a->getContent(); 
+                  echo $a->AssetContent->render(); 
                 }
                
               ?>
