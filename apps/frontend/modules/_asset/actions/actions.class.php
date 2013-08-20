@@ -285,7 +285,9 @@ class _assetActions extends sfActions
     if($this->site->slug == 'sic'){
       $this->setLayout(false);
     }
-
+    if($this->site->getSlug() == "culturabrasil"){
+      $this->setLayout('culturabrasil');
+    }
     // mail sender
     $email_site = "";
     if($request->getParameter('section_id') != ""){
