@@ -285,9 +285,7 @@ class _assetActions extends sfActions
     if($this->site->slug == 'sic'){
       $this->setLayout(false);
     }
-    if($this->site->getSlug() == "culturabrasil"){
-      $this->setLayout('culturabrasil');
-    }
+    
     // mail sender
     $email_site = "";
     if($request->getParameter('section_id') != ""){
@@ -701,7 +699,10 @@ class _assetActions extends sfActions
 		*/
     if($this->site->getSlug() == "castelo" && $this->asset->getSlug() != "creditos" && !isset($_REQUEST['layout']))
       $this->setLayout(false);
-			
+		
+		if($this->site->getSlug() == "culturabrasil"){
+      $this->setLayout('culturabrasil');
+    }	
 		if ($request->getHost() == "m.cmais.com.br") {
 			if (is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/m/'.$this->asset->AssetType->getSlug().'Success.php')) {
 	      $this->setLayout(false);
