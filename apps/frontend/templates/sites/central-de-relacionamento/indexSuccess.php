@@ -778,7 +778,7 @@ $(document).ready(function(){
                   })
                   $('.collapse').on('show',function(){
                      $(this).prev().find('a.fechar').fadeIn('fast');
-                     if($(this).prev().find('a.fechar').is(":visible"))
+                     if($(this).prev().find('a.fechar').is(":visible"));
                       goTop2();
                   });
                   $('.fechar').click(function(){
@@ -803,8 +803,11 @@ $(document).ready(function(){
                     }
                   })
                   $('.change-form').click(function(){
+                    $('#f4_maisinfo .control-group').removeClass("success").removeClass("error");
+                    $('#f4_maisinfo').find("label.error.valid").remove();
+                    $('#f4_maisinfo').hide();
                     $('.salvar-alteracoes').hide();
-                    $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email)
+                    $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                     $('#f4_mais').attr('checked','true');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
                     $('#row6, #message, #btn4,#row9').hide();
@@ -945,12 +948,34 @@ $(document).ready(function(){
                         required: "#f2_exterior:checked",
                         minlength: 2
                       },
+                      f2_numero:{
+                        required: function(element) {
+                            if($('#f2_endereco').val()!=""){
+                              return true
+                            }else{
+                              return false
+                            }
+                         }
+                      },
+                     
                       f2_cep: {
                         required: function(element) {
-                          return $("#f2_cep").val()!="_____-___" ? true : false
+                          if($('#f2_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false
+                          }
                         },
                         minlength: 8,
-                        cep: true
+                        cep: function(element) {
+                          if($('#f2_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false 
+                          }
+                        }
                       },
                       f2_estado: {
                         required: "#f2_exterior:!checked"
@@ -1014,10 +1039,22 @@ $(document).ready(function(){
                       },
                       f3_cep: {
                         required: function(element) {
-                          return $("#f2_cep").val()!="_____-___" ? true : false
+                          if($('#f4_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false
+                          }
                         },
                         minlength: 8,
-                        cep: true
+                        cep: function(element) {
+                          if($('#f4_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false 
+                          }
+                        }
                       },
                       f3_textarea: {
                         minlength: 2,
@@ -1086,12 +1123,12 @@ $(document).ready(function(){
                       },
                       f4_numero:{
                         required: function(element) {
-                            if($('#f4_endereco')!=""){
-                              return $("#f2_cep").val()!="_____-___" ? true : false
+                            if($('#f4_endereco').val()!=""){
+                              return true
                             }else{
                               return false
                             }
-                         },
+                         }
                        },
                       /*
                       f4_numero: {
@@ -1111,14 +1148,22 @@ $(document).ready(function(){
                       */
                      f4_cep: {
                         required: function(element) {
-                          if($('#f4_endereco')!=""){
-                            return $("#f2_cep").val()!="_____-___" ? true : false
+                          if($('#f4_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
                           }else{
                             return false
                           }
                         },
                         minlength: 8,
-                        cep: true
+                        cep: function(element) {
+                          if($('#f4_endereco').val()!=""){
+                            //return $("#f4_cep").val()!="_____-___" ? true : false
+                            return true
+                          }else{
+                            return false 
+                          }
+                        }
                       },
                       f4_cod_grupo: {
                         required: "#f4_mais:!checked"
@@ -1235,7 +1280,7 @@ $(document).ready(function(){
                   if($('#f4_mais').attr('checked')){
                     $("#f4_cod_programa option").attr("value", "--");
                     $('#f4_maisinfo .control-group').removeClass("success");
-                    $('#f4_maisinfo .c').find("label.error.valid").remove();
+                    $('#f4_maisinfo').find("label.error.valid").remove();
                     $('#f4_maisinfo').show();
                     $('#btn5').show();
                     $('#btn4, .salvar-alteracoes, #message').hide();

@@ -32,6 +32,207 @@ $assets = $pager->getResults();
     <p>Cozinha da Amiga Zazá</p>
   </div>
 
+<style type="text/css" media="screen">
+  .especial .form { text-align:left; }
+	.especial .form label.error { display: none !important; } 
+  .especial .form .g-regulamento label.error { display: block !important; position:absolute; bottom:50px; left:20px; background: #FDF035; border: 2px solid #F8B145;   color: #F2722F; padding:2px 5px;  } 
+  .especial .form .box-regulamento { background:#fff; height:150px; overflow-y: scroll; overflow-x:hidden; }
+  .especial .form .box-regulamento p {  color:#6A747D; }
+  .especial .form .g-regulamento label { color:#fff; }
+  .especial .form .g-regulamento .check { width: 15px; float: left; }
+  .especial .form .g-regulamento .controls label { float: left; margin:1.5% 0 0 2%; }
+  .especial .form .g-regulamento .controls { margin-bottom:40px; }
+</style>
+
+  <!--row-->
+  
+  <div class="row-fluid conteudo destaques especial">
+    
+    <div class="span4 form-especial">
+      <div class="seta"></div>
+      <div class="form">
+        <h2>Receitinhas com Milho!</h2>
+        <p>Doce ou salgada, todo mundo conhece uma receitinha deliciosa que tenha milho entre os ingredientes. Envie para nós! As 02 (duas) receitinhas mais criativas vão ganhar 01 (um) livro de receitas da Rebeca Chamma! E ainda podem ser apresentadas na Cozinha da Amiga da Zazá!</p>
+        <p>Aproveite e assista a essa seleção de receitinhas com milho que já foram feitas em nossa cozinha!</p>  
+        <div class="divisao"></div>
+        <form class="form-horizontal" id="form-contato" method="post" action="/actions/cocorico/sendmail.php" enctype="multipart/form-data">
+          <h2>Envie sua receitinha com milho:</h2>
+          <div class="control-group g-nome">
+            <label class="control-label nome" for="nome"></label>
+            <div class="controls">
+              <input type="text" id="nome" name="nome" placeholder="Seu nome">
+            </div>
+          </div>
+          
+          <div class="control-group g-nome">
+            <label class="control-label nome" for="nome"></label>
+            <div class="controls">
+              <input type="text" id="email" name="email" placeholder="Seu email">
+            </div>
+          </div>
+          
+          <div class="control-group g-cidade">
+            <label class="control-label cidade" for="cidade"></label>
+            <div class="controls">
+              <input type="text" id="cidade" name="cidade" placeholder="Sua cidade">
+              <select class="span1" id="estado" name="estado">
+                 <option value="" selected="selected">UF</option>
+                 <option value="Acre">AC</option>
+                 <option value="Alagoas">AL</option>
+                 <option value="Amazonas">AM</option>
+                 <option value="Amap&aacute;">AP</option>
+                 <option value="Bahia">BA</option>
+                 <option value="Cear&aacute;">CE</option>
+                 <option value="Distrito Federal">DF</option>
+                 <option value="Espirito Santo">ES</option>
+                 <option value="Goi&aacute;s">GO</option>
+                 <option value="Maranh&atilde;o">MA</option>
+                 <option value="Minas Gerais">MG</option>
+                 <option value="Mato Grosso do Sul">MS</option>
+                 <option value="Mato Grosso">MT</option>
+                 <option value="Par&aacute;">PA</option>
+                 <option value="Para&iacute;ba">PB</option>
+                 <option value="Pernambuco">PE</option>
+                 <option value="Piau&iacute;">PI</option>
+                 <option value="Paran&aacute;">PR</option>
+                 <option value="Rio de Janeiro">RJ</option>
+                 <option value="Rio Grande do Norte">RN</option>
+                 <option value="Rond&ocirc;nia">RO</option>
+                 <option value="Roraima">RR</option>
+                 <option value="Rio Grande do Sul">RS</option>
+                 <option value="Santa Catarina">SC</option>
+                 <option value="Sergipe">SE</option>
+                 <option value="S&atilde;o Paulo">SP</option>
+                 <option value="Tocantins">TO</option>
+              </select>
+            </div>
+           
+          </div>
+          <div class="control-group g-receita">
+            <label class="control-label receita" for="receita"></label>
+            <div class="controls">
+              <textarea id="receita" placeholder="Escreva aqui sua receitinha" name="receita"></textarea>
+            </div>
+          </div>
+          <div class="control-group g-file">
+            <label class="control-label file" for="file"></label>
+            <div class="controls">
+               <input id="datafile" type="file" name="datafile" size="6">
+            </div>
+           
+          </div>
+          <div class="control-group g-regulamento">
+            <label>Regulamento</label>
+            <div class="box-regulamento">
+              <p>1. Participação:</p>
+              <p>REGULAMENTO VEM DO ASTOLFO... EX: Esta é uma ação de caráter exclusivamente cultural que visa estimular a interação do participante com o programa de televisão TV Cocoricó, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. Esta ação destina-se ao público em geral, sem qualquer limitação, e está devidamente regulada conforme às
+              disposições do Código Civil (10.406/02) e Lei de Direitos Autorais (9.610/98).
+              </p>
+              
+            </div>
+            
+            <div class="controls">
+               <input id="regulamento" class="check" type="checkbox" name="regulamento">
+               <label>Li e concordo com o regulamento.</label>
+            </div>
+           
+            <button type="submit" class="btn">enviar</button>
+          </div>
+                   
+        </form>
+      </div>
+    </div>
+    
+    
+    <div class="span8">
+    <?php
+      /*
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, Block b, SectionAsset sa, Section s')
+        ->where('a.id = sa.asset_id')
+        ->andWhere('s.id = sa.section_id')
+        ->andWhere('s.id = b.section_id')
+        //->andWhere('s.slug = "receitinhas"')        
+        ->andWhere('b.slug = "receitinhas-especiais"')
+        ->andWhere('a.site_id = ?', (int)$site->id)
+        ->andWhere('a.asset_type_id = 1')
+        ->andWhere('a.is_active = ?', 1)
+        //->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+        //->groupBy('sa.asset_id')
+        //->orderBy('a.id desc')
+        ->orderBy('a.display_order asc')
+        ->limit(8)
+        ->execute();
+        
+    ?>
+    <?php $cont = 0; ?>
+    <?php if (count($assets) > 0): ?>      
+      <?php foreach($assets as $d): ?>
+        <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+        
+        <div class="span6">
+          <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
+          <a href="<?php echo $d->retriveUrl() ?>" class="span12 btn" title=""><?php echo $d->getTitle() ?></a>
+          <ul class="likes">
+            <li class="ativo"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <?php 
+          if($cont == 1){
+             $cont=0;?>  
+          </div><div class="span8"> 
+        <?php 
+          }else{
+           $cont++;
+          }
+        ?>        
+          
+        <?php endforeach; ?>      
+    
+    </div>  
+  <?php endif; */?>
+  <?php $cont = 0; ?>
+    <?php if (count($displays['receitinhas-especiais']) > 0): ?>      
+      <?php foreach($displays['receitinhas-especiais'] as $d): ?>
+        <?php //$related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+        
+        <div class="span6">
+          <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
+          <a href="<?php echo $d->retriveUrl() ?>" class="span12 btn" title=""><?php echo $d->getTitle() ?></a>
+          <ul class="likes">
+            <li class="ativo"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <?php 
+          if($cont == 1){
+             $cont=0;?>  
+          </div><div class="span8"> 
+        <?php 
+          }else{
+           $cont++;
+          }
+        ?>        
+          
+        <?php endforeach; ?>      
+    
+    </div>  
+  <?php endif; ?>
+  
+  </div>
+  <!-- /row-->
+
+
+
+
   <?php if(count($favoritos) > 0): ?>
   <div class="row-fluid conteudo destaques ytb">
     <?php if(isset($favoritos[0])): ?>
