@@ -67,6 +67,8 @@
 .form-horizontal input { color:#6a747d; font-size:14px; }
 
 .especial .form-horizontal h2 { padding:0; background:none; margin:0 0 10px 0; line-height:16px; font-size:14px; color:#fff; }
+.form-horizontal .file,
+.form-horizontal .email,
 .form-horizontal .nome,
 .form-horizontal .cidade,
 .form-horizontal .receita { background: url("/portal/images/capaPrograma/cocorico/ico-form-receita.png") no-repeat; width:20px; height:19px; text-indent:-9999px; padding:0; margin:0 10px 0 0; }
@@ -235,3 +237,15 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .print.grd { max-width: 460px; max-height:259px; overflow:hidden; position:relative; display: block; }
 .print.grd img { max-width:460px; }
 .print.grd span {background: url("/portal/images/capaPrograma/cocorico/ico-imprimir.png") no-repeat scroll 0 0 transparent;    bottom: 5px;    display: block;    height: 14px;    position: absolute;    right: 5px;    width: 14px;}
+
+.form-horizontal .file { background-position:-60px 0; }
+.form-horizontal .email { background-position:-80px 0; margin-top:5px; }
+.especial .form { text-align:left; }
+.especial .form label.error { display: none !important; } 
+.especial .form .g-regulamento label.error { display: block !important; position:absolute; bottom:50px; left:20px; background: #FDF035; border: 2px solid #F8B145;   color: #F2722F; padding:2px 5px;  } 
+.especial .form .box-regulamento { background:#fff; height:150px; overflow-y: scroll; overflow-x:hidden; }
+.especial .form .box-regulamento p {  color:#6A747D; }
+.especial .form .g-regulamento label { color:#fff; }
+.especial .form .g-regulamento .check { width: 15px; float: left; }
+.especial .form .g-regulamento .controls label { float: left; margin:1.5% 0 0 2%; }
+.especial .form .g-regulamento .controls { margin-bottom:40px; }
