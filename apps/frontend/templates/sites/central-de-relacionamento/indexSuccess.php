@@ -803,6 +803,9 @@ $(document).ready(function(){
                     }
                   })
                   $('.change-form').click(function(){
+                    $('#f4_maisinfo .control-group').removeClass("success");
+                    $('#f4_maisinfo').find("label.error.valid").remove();
+                    $('#f4_maisinfo').hide();
                     $('.salvar-alteracoes').hide();
                     $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email)
                     $('#f4_mais').attr('checked','true');
@@ -1243,7 +1246,7 @@ $(document).ready(function(){
                   if($('#f4_mais').attr('checked')){
                     $("#f4_cod_programa option").attr("value", "--");
                     $('#f4_maisinfo .control-group').removeClass("success");
-                    $('#f4_maisinfo .c').find("label.error.valid").remove();
+                    $('#f4_maisinfo').find("label.error.valid").remove();
                     $('#f4_maisinfo').show();
                     $('#btn5').show();
                     $('#btn4, .salvar-alteracoes, #message').hide();
