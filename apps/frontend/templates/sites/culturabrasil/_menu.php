@@ -51,7 +51,7 @@ if(isset($asset)) {
     <!--logo-->
     <div class="logo">
        <a href="http://cmais.com.br/culturabrasil" title="Cultura Brasil">
-        <img src="/portal/images/capaPrograma/culturabrasil/logoculturabrasil.jpg" alt="Cultura Brasil" />
+        <img src="/portal/images/capaPrograma/culturabrasil/logoculturabrasil.png" alt="Cultura Brasil" />
       </a>
     </div>
     <!--/logo--> 
