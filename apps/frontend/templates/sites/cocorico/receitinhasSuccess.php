@@ -160,10 +160,20 @@ $assets = $pager->getResults();
         ->limit(6)
         ->execute();
     ?>
-
+    <?php $cont = 0; ?>
     <?php if (count($assets) > 0): ?>      
       <?php foreach($assets as $d): ?>
         <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+        <?php 
+          if($cont == 1){
+             $cont=0;?>  
+          </div><div class="span8"> 
+        <?php 
+          }else{
+           $cont++;
+          }
+        ?>
+        
         <div class="span6">
           <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/1.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
           <a href="<?php echo $d->retriveUrl() ?>" class="span12 btn" title=""><?php echo $d->getTitle() ?></a>
