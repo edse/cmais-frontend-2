@@ -131,9 +131,9 @@ $assets = $pager->getResults();
                   ->andWhere('a.is_active = ?', 1)
                   ->limit(1)
                   ->execute(); 
-//                foreach ($AssetRegulamento as $a) {
-                  echo html_entity_decode($a[0]->AssetContent->render()); 
-  //              }
+                foreach ($AssetRegulamento as $a) {
+                  echo html_entity_decode($a->AssetContent->render()); 
+                }
               ?>
               <!-- /regulamento -->
             </div>
