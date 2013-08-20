@@ -118,7 +118,7 @@ if(isset($asset)) {
 var controle = null;
 $('.controle-remoto').click(function(){
   if(controle == null || controle.closed){
-    controle = window.open('http://culturabrasil.cmais.com.br/controleremoto','controle','width=400,height=600,scrollbars=no');
+    controle = window.open('http://culturabrasil.cmais.com.br/controleremoto','controle','width=410,height=610,scrollbars=no');
   } else {
     controle.focus();
   }
