@@ -16,7 +16,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       
       $message = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
       while(list($field, $value) = each($_REQUEST)) {
-        echo "4";
         if(!in_array(ucwords($field), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
           $message .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
       }
@@ -29,6 +28,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       $attach = array();
       $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);
   
+      echo $message;
+      echo " --- ".$_FILES['datafile']['tmp_name'];
           
       if (!in_array($file_mime_type, array("image/gif", "image/png", "image/jpg"))) {
         
