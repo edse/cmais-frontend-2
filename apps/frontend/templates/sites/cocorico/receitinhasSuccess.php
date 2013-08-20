@@ -132,7 +132,7 @@ $assets = $pager->getResults();
                <input id="regulamento" class="check" type="checkbox" name="regulamento">
                <label>Li e concordo com o regulamento.</label>
             </div>
-           <p class="sucesso" style="display:none;">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
+           <p class="sucesso">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
             <button type="submit" class="btn">enviar</button>
           </div>
                    
