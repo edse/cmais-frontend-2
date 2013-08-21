@@ -133,7 +133,7 @@ $assets = $pager->getResults();
                <label>Li e concordo com o regulamento.</label>
             </div>
             
-            <p class="sucesso">&nbsp;</p>
+            <p class="sucesso">&nbsp;</ br></ br></p>
             <button type="submit"name="enviar" id="enviar" class="btn">enviar</button>
             <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           </div>
