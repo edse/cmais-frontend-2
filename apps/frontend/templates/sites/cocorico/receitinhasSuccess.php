@@ -330,6 +330,7 @@ $(document).ready(function(){
               type: "POST",
               dataType: "text",
               url: $("#form-contato").attr("action"),
+              contentType:attr("enctype", "multipart/form-data" ),
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('button#enviar').attr('disabled','disabled');
