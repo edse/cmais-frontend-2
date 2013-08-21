@@ -3,7 +3,7 @@
 
   if (count($displays['receitinhas-especiais']) > 0){
       foreach($displays['receitinhas-especiais'] as $d){
-        $related = $d->retriveRelatedAssetsByAssetTypeId(6);  
+        $related = $d->Asset->retriveRelatedAssetsByAssetTypeId(6);  
         echo count($related)."teste\n";
     }
   }     
