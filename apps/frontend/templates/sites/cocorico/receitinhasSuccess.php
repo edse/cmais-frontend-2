@@ -133,7 +133,7 @@ $assets = $pager->getResults();
                <label>Li e concordo com o regulamento.</label>
             </div>
             
-            <p class="sucesso" style="display:none;">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
+            <p class="sucesso">&nbsp;</p>
             <button type="submit"name="enviar" id="enviar" class="btn">enviar</button>
             <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           </div>
@@ -320,8 +320,6 @@ $(document).ready(function(){
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('button#enviar').attr('disabled','disabled');
-                //$(".msgAcerto").hide();
-                //$(".msgErro").hide();
                 $('img#ajax-loader').show();
               },
               success: function(data){
@@ -329,11 +327,13 @@ $(document).ready(function(){
                   window.location.href="#";
                   if(data == "1"){
                     $("#form-contato").clearForm();
-                    //$(".msgAcerto").show();
                     $('img#ajax-loader').hide();
+                    $(".sucesso").html("Hum... Essa receitinha parece uma delícia! Obrigado!");
+                    console.log("mensagem enviada");
                   }
                   else {
-                    $(".msgErro").show();
+                    console.log("Erro no envio");
+                    $(".sucesso").html("Puxa, puxa que puxa! Alguma coisa não deu certo! Tente de novo!");
                     $('img#ajax-loader').hide();
                   }
                }
@@ -382,6 +382,7 @@ $(document).ready(function(){
         label.addClass("checked");
         $("label.error.checked").css("display","none");
         label.html("&nbsp;");
+        //$("button#enviar").css("margin-top","20px");
       }
     });
   });
