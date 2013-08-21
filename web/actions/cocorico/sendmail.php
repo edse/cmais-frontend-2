@@ -29,9 +29,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $headers .= "From: ".$from;
 
         if(mail($to, $subject, $message, $headers)) {
-          echo "Enviado com sucesso - Sem Anexo";
+          echo "1";
         }else{
-          echo "Erro - Sem Anexo";
+          echo "0";
         }
       }
 
@@ -59,13 +59,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         if(sendMailAtt($to, $from, $subject, $message, $attach)) {
           if (unlink($_FILES['datafile']['tmp_name'])) {
-            header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?success=1");
+            echo "1";
+            //header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?success=1");
             die();
           }
         }
         else{
           if (unlink($_FILES['datafile']['tmp_name'])) {
-            header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=1");
+            //header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=1");
+            echo "0";
             die();
           }
         }
@@ -73,7 +75,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     else {
       if (unlink($_FILES['datafile']['tmp_name'])) {
-        header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=4");
+        //header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=4");
+        echo "0";
         die();
       }
     }
