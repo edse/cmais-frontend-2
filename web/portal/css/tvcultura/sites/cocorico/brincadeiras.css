@@ -88,8 +88,8 @@
 
 .form-horizontal .g-cidade .controls input { width:155px; }
 .form-horizontal .controls textarea { min-height: 340px;}
-.btn-imprimir,
-.form-horizontal .btn { background:#fdf035; border:2px solid #f8b145; float:right; color:#f2722f; padding:0 5px; text-transform:uppercase; min-height:24px; font-weight:bold; margin-top:20px; }
+.btn-imprimir{ background:#fdf035; border:2px solid #f8b145; float:right; color:#f2722f; padding:0 5px; text-transform:uppercase; min-height:24px; font-weight:bold; margin-top:20px; }
+.form-horizontal .btn { background:#fdf035; border:2px solid #f8b145; float:right; color:#f2722f; padding:0 5px; text-transform:uppercase; min-height:24px; font-weight:bold; margin-top:70px; }
 .form-horizontal .g-receita { margin-bottom:10px; }
 /* /receitinhas especial */
 

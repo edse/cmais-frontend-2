@@ -1,4 +1,18 @@
 <?php 
+//var_dump($displays['receitinhas-especiais']);
+
+ // if (count($displays['receitinhas-especiais']) > 0){
+   //   foreach($displays['receitinhas-especiais'] as $d){
+     //   $related = $d->Asset->retriveRelatedAssetsByAssetTypeId(6);  
+       // echo $related[0]->AssetVideo->getYoutubeId();       
+    //}
+  //}     
+
+  //die("\nFIM");
+?>
+
+
+<?php 
 $assets = $pager->getResults();
 ?>
 
@@ -135,8 +149,14 @@ $assets = $pager->getResults();
                <input id="regulamento" class="check" type="checkbox" name="regulamento">
                <label>Li e concordo com o regulamento.</label>
             </div>
-            
+            <?php
+            if(isset($_GET["success"])==1 || isset($_GET["success"])==2){
+            ?>
             <p class="sucesso">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
+            <?php  
+            }
+            ?>
+            
             <button type="submit"name="enviar" id="enviar" class="btn">enviar</button>
           </div>
                    
@@ -149,13 +169,14 @@ $assets = $pager->getResults();
   <?php $cont = 0; ?>
     <?php if (count($displays['receitinhas-especiais']) > 0): ?>      
       <?php foreach($displays['receitinhas-especiais'] as $d): ?>
-        <?php //$related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+        <?php $related = $d->Asset->retriveRelatedAssetsByAssetTypeId(6);?>  
+              
         
         <div class="span6">
-          <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
+          <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId(); ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
           <a href="<?php echo $d->retriveUrl() ?>" class="span12 btn" title=""><?php echo $d->getTitle() ?></a>
           <ul class="likes">
-            <li class="ativo"></li>
+            <li></li>
             <li></li>
             <li></li>
             <li></li>
