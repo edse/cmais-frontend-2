@@ -330,12 +330,14 @@ $(document).ready(function(){
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
-        //form.submit();
+        form.submit();
+        
+        /*var form = $("#form-contato").serialize();
             $.ajax({
               type: "POST",
               dataType: "text",
               url: $("#form-contato").attr("action"),
-              data: $("#form-contato").serialize(),
+              data: form+'&datafile='+encodeURIComponent(datafile),
               beforeSend: function(){
                 $('button#enviar').attr('disabled','disabled');
                 $('img#ajax-loader').show();
@@ -362,6 +364,7 @@ $(document).ready(function(){
                 }
               }
             });
+            */
         
       },
       rules:{
