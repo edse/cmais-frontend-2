@@ -1,3 +1,16 @@
 <!-- comentario facebook -->
 <div class="fb-comments" data-href="http://www.culturabrasil.com.br/sala-de-tv" data-width="490px" data-num-posts="10"></div>
 <!-- /comentario facebook -->
+
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({appId: '124792594261614', status: true, cookie: true, xfbml: true});
+  };
+  (function() {
+    var e = document.createElement('script'); e.async = true;
+    e.src = document.location.protocol +
+    '//connect.facebook.net/pt_BR/all.js';
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script>
