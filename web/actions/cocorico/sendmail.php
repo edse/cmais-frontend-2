@@ -33,6 +33,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             
       //Enviar sem anexo
       if(!$_FILES['datafile']['size']){
+        echo "Passou aqui";
+        
         $headers =  'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
         $headers .= "From: ".$from;
