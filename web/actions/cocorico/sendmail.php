@@ -23,13 +23,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       }
       
       //Enviar sem anexo
-      echo $_FILES['datafile']['tmp_name'];
-      echo $_FILES['datafile']['size'];
-      echo $_FILES['datafile']['name'];
-      die();
+      //echo $_FILES['datafile']['size'];
       
-      
-      if($_FILES['datafile']['tmp_name'] == 0) {
+      if($_FILES['datafile']['tmp_name'] <= 0) {
         $headers =  'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
         $headers .= "From: ".$from;
@@ -65,7 +61,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         if(sendMailAtt($to, $from, $subject, $message, $attach)) {
           if (unlink($_FILES['datafile']['tmp_name'])) {
-            header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?success=1");
+            header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?success=2");
             die();
           }
         }
