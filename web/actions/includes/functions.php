@@ -17,6 +17,7 @@ function sendMailAtt($to, $from, $sub, $msg, $attach=array())
     "Content-Transfer-Encoding: 7bit\n\n".$msg."\n\n";
 
   if (count($attach)>=1) {
+    echo "Passou Aqui";
     for($i=0; $i<count($attach); $i++) {
       if ($file = fopen($attach[$i][0],'rb')) {
         $data = fread($file, filesize($attach[$i][0]));
