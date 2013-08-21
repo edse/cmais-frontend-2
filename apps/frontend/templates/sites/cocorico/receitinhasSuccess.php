@@ -133,7 +133,7 @@ $assets = $pager->getResults();
                <label>Li e concordo com o regulamento.</label>
             </div>
             
-            <p class="sucesso">&nbsp;</p>
+            <p class="sucesso">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
             <button type="submit"name="enviar" id="enviar" class="btn">enviar</button>
             <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           </div>
@@ -328,12 +328,12 @@ $(document).ready(function(){
                   if(data == "1"){
                     $("#form-contato").clearForm();
                     $('img#ajax-loader').hide();
-                    $(".sucesso").html("Hum... Essa receitinha parece uma delícia! Obrigado!");
+                    //$(".sucesso").html("Hum... Essa receitinha parece uma delícia! Obrigado!");
                     console.log("mensagem enviada");
                   }
                   else {
                     console.log("Erro no envio");
-                    $(".sucesso").html("Puxa, puxa que puxa! Alguma coisa não deu certo! Tente de novo!");
+                    //$(".sucesso").show();
                     $('img#ajax-loader').hide();
                   }
                }
