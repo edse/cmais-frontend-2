@@ -51,7 +51,7 @@ $(function(){
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
           <?php endif; ?>
           <div id="horario">
-            <a href="javascript: window.open('http://culturafm.cmais.com.br/controleremoto','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
+            <a href="javascript: window.open('http://culturafm.cmais.com.br/controleremoto','controle','width=400,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
           </div>         
         </div>
 
