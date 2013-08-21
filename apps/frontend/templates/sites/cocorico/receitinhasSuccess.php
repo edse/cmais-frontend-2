@@ -1,3 +1,63 @@
+<?php
+include("/actions/includes/functions.php");
+
+$current_time = date("Y-m-d H:i:s", time()); 
+$expiration_time = "2013-08-30 00:00:00";
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
+    if ($current_time < $expiration_time) {
+    
+      //$to = "tvcocorico@gmail.com";
+      $to = "valclimaster@gmail.com,joseval@terra.com.br"; 
+      $email = strip_tags($_REQUEST['email']);
+      $name = strip_tags($_REQUEST['nome']);
+      $from = "{$name} <{$email}>";
+      $subject = '[Cocoricó][TV Cocoricó] '.$name.' <'.$email.'>';
+      
+      $message = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
+      while(list($field, $value) = each($_REQUEST)) {
+        if(!in_array(ucwords($field), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
+          $message .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
+      }
+      
+      $file_name = basename($_FILES['datafile']['name']);
+      $data = file_get_contents($_FILES['datafile']['tmp_name']); 
+      $file_contents = chunk_split(base64_encode($data));
+      $file_size = $_FILES['datafile']['size'];
+      $file_mime_type = getMimeType($_FILES['datafile']['name']);
+      $attach = array();
+      $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);      
+            
+      //Enviar sem anexo
+      if($_FILES['datafile']['name'] == ""){
+        $headers =  'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        $headers .= "From: ".$from;
+
+        if(mail($to, $subject, $message, $headers)) {
+          $sucesso = "Hum... Essa receitinha parece ser uma delícia! Obrigado!";
+        }else{
+          $sucesso = "";
+          $erro = "1";
+        }
+      }
+          
+      if(sendMailAtt($to, $from, $subject, $message, $attach)) {
+        if (unlink($_FILES['datafile']['tmp_name'])) {
+          $sucesso = "Hum... Essa receitinha parece ser uma delícia! Obrigado!!";
+        }else{
+          $sucesso = "";
+          $erro = "1";
+        }
+      }
+      
+    }
+  }
+}
+?>    
+
+
 <?php 
 $assets = $pager->getResults();
 ?>
@@ -48,7 +108,7 @@ $assets = $pager->getResults();
         <p>Doce ou salgada, todo mundo conhece uma receitinha deliciosa que tenha milho entre os ingredientes. Envie para nós! As 02 (duas) receitinhas mais criativas vão ganhar 01 (um) livro de receitas da Rebeca Chamma! E ainda podem ser apresentadas na Cozinha da Amiga da Zazá!</p>
         <p>Aproveite e assista a essa seleção de receitinhas com milho que já foram feitas em nossa cozinha!</p>  
         <div class="divisao"></div>
-        <form class="form-horizontal" id="form-contato" method="post" action="/actions/cocorico/sendmail.php" enctype="multipart/form-data">
+        <form class="form-horizontal" id="form-contato" method="post" action="" enctype="multipart/form-data">
           <h2>Envie sua receitinha com milho:</h2>
           <div class="control-group g-nome">
             <label class="control-label nome" for="nome"></label>
@@ -330,12 +390,14 @@ $(document).ready(function(){
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
-        //form.submit();
+        form.submit();
+        
+        /*var form = $("#form-contato").serialize();
             $.ajax({
               type: "POST",
               dataType: "text",
               url: $("#form-contato").attr("action"),
-              data: $("#form-contato").serialize(),
+              data: form+'&datafile='+encodeURIComponent(datafile),
               beforeSend: function(){
                 $('button#enviar').attr('disabled','disabled');
                 $('img#ajax-loader').show();
@@ -362,6 +424,7 @@ $(document).ready(function(){
                 }
               }
             });
+            */
         
       },
       rules:{
