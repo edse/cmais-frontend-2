@@ -186,14 +186,14 @@
       <!-- descrição programa -->
       <section class="cr-pgm">
       <?php
-      if(isset($schedules)):
-        $style = 1; //Par ou Impar
+      //if(isset($schedules)):
+      //  $style = 1; //Par ou Impar
         
-        foreach($schedules as $k=>$d):
-          $now = false;
-          if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
-            $now = true;
-          }
+      //  foreach($schedules as $k=>$d):
+      //    $now = false;
+      //   if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
+       //     $now = true;
+       //   }
     
           //if($now):
             //if($d->retriveLiveImage() != ""){
@@ -238,7 +238,7 @@
           <!-- /descrição programa -->              
               
       <?php //endif; 
-        endforeach;
+       // endforeach;
       ?>
         <!-- lista a seguir -->
       <section class="cr-lista-a-seguir">
@@ -249,21 +249,21 @@
         <ul id="lista_pgm_a_seguir">
       
       <?php 
-        $cont = 1;
-        foreach($schedules as $k=>$d):
-          if((strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateStart())) && $cont <= 7) {
+       // $cont = 1;
+       // foreach($schedules as $k=>$d):
+         // if((strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateStart())) && $cont <= 7) {
       ?>
             <!-- item -->
-            <li class="<?php if($style==0) {$style++;echo"im";}else{$style=0;}?>par">
-              <h5><?php echo $d->retriveTitle(); ?></h5>
-              <p class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?> h</p>
+            <li class="<?php //if($style==0) {$style++;echo"im";}else{$style=0;}?>par">
+              <h5><?php //echo $d->retriveTitle(); ?></h5>
+              <p class="hora"><?php //echo format_datetime($d->getDateStart(), "HH:mm") ?> h</p>
             </li>
             <!-- item -->
      <?php 
-            $cont++;
-          }
-        endforeach;
-      endif; 
+            //$cont++;
+        //  }
+       // endforeach;
+     // endif; 
     ?>    
       
           
