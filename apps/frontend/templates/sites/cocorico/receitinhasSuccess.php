@@ -309,6 +309,12 @@ $(document).ready(function(){
 <!--form-->
 <script type="text/javascript">
   $(document).ready(function(){
+    
+    $('button#enviar').click(function(){
+      //$(".msgAcerto, .msgErro").hide();
+      alert("Enviou"); 
+    });
+    
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
