@@ -2065,7 +2065,7 @@ EOT;
         $return["noar"][] = array("titulo"=> $titulo,  "data"=> format_datetime($n->getDateStart(), "HH:mm"), "imagem"=> $n->retriveLiveImage());
       }
       
-      if($return["noar"] == 0){
+      if($return["noar"][] == 0){
         $cont = 0;
         foreach($schedules as $s){
           if($cont == 0){
