@@ -1,5 +1,5 @@
 <?php
-include("/actions/includes/functions.php");
+//include("/var/frontend_/actions/includes/functions.php");
 
 $current_time = date("Y-m-d H:i:s", time()); 
 $expiration_time = "2013-08-30 00:00:00";
@@ -212,7 +212,7 @@ $assets = $pager->getResults();
         <?php //$related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
         
         <div class="span6">
-          <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
+          <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetContent->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
           <a href="<?php echo $d->retriveUrl() ?>" class="span12 btn" title=""><?php echo $d->getTitle() ?></a>
           <ul class="likes">
             <li class="ativo"></li>
