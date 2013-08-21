@@ -330,7 +330,7 @@ $(document).ready(function(){
               type: "POST",
               dataType: "text",
               url: $("#form-contato").attr("action"),
-              contentType:attr("enctype", "multipart/form-data" ),
+              //contentType: attr("enctype", "multipart/form-data"),
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('button#enviar').attr('disabled','disabled');
@@ -339,6 +339,7 @@ $(document).ready(function(){
               success: function(data){
                 $('button#enviar').removeAttr('disabled');
                 window.location.href="#";
+                  alert(data);
                   console.log(data);
                 if($.trim(data) == "1"){
                   //$("#form-contato").clearForm();
