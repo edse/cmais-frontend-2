@@ -339,6 +339,7 @@ $(document).ready(function(){
               success: function(data){
                 $('button#enviar').removeAttr('disabled');
                 window.location.href="#";
+                  alert(data);
                   console.log(data);
                 if($.trim(data) == "1"){
                   //$("#form-contato").clearForm();
