@@ -149,8 +149,14 @@ $assets = $pager->getResults();
                <input id="regulamento" class="check" type="checkbox" name="regulamento">
                <label>Li e concordo com o regulamento.</label>
             </div>
-            
+            <?php
+            if(isset($_GET["success"])==1 || $_GET["success"]==2){
+            ?>
             <p class="sucesso">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
+            <?php  
+            }
+            ?>
+            
             <button type="submit"name="enviar" id="enviar" class="btn">enviar</button>
           </div>
                    
