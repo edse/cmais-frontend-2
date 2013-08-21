@@ -57,7 +57,7 @@
 .conteudo .form-especial { min-width:299px; }
 .especial .seta { background:url(/portal/images/capaPrograma/cocorico/seta-form.png) no-repeat; width: 14px; height:23px; position:absolute; right: 0; top:10px; }
 .especial h2 { background: url(/portal/images/capaPrograma/cocorico/ico-especial.png) no-repeat 10px; font-size:18px; color:#fdf035; padding:0 0 0 40px; text-transform:uppercase; font-weight: normal;}
-.especial .form p { color:#fff; margin:0 10px 10px 10px; }
+.especial .form p { color:#fff; margin:0 5px 0 5px; }
 
 .especial .form  .divisao {    display: block;    float: right;    height: 14px;    margin: 0 0 20px 0;    min-width: 285px; background: url(/portal/images/capaPrograma/cocorico/receitinhas-pattern.png) repeat-x;}
 
@@ -78,7 +78,7 @@
 .form-horizontal .control-group select,
 .form-horizontal .btn,
 .form-horizontal .controls input { height:20px; line-height: 20px; padding:0 5px; }
-.form-horizontal .control-group select { min-height:20px; width: 55px; padding:0; margin:0 0 0 10px; float: right; border:none;  }
+.form-horizontal .control-group select { min-height:20px; width: 55px; padding:0; margin:3px 0 0 10px; float: right; border:none;  }
 
 .form-horizontal .controls textarea,
 .form-horizontal .controls input { border:none; }
