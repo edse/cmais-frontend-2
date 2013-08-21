@@ -2053,6 +2053,9 @@ EOT;
         ->orderBy('s.date_start asc')
         ->limit('1')
         ->execute();
+      
+      $return["noar"] = "";
+      
       foreach($noar as $n){
         $titulo =   $n->getProgram()->getTitle();
         $imagem =   $n->retriveLiveImage();
