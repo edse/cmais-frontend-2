@@ -204,7 +204,7 @@
           ?>
             <!-- header -->
             <div class="cr-header-pgm">
-              <span>você esta ouvindo</span>
+              <span>você está ouvindo</span>
             </div>
             <!-- /header -->          
             

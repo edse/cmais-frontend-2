@@ -60,10 +60,43 @@
       </div>
       <!--/share-->
     </div>
-    <iframe id="iframe-twitter" width='490' height='490' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-twitter.html' style="overflow:hidden;"></iframe>
+    <div class="span6">
+      
+      <div class="page-header ao-vivo">
+        <h4>Facebook</h4>
+      </div>
+      <iframe width='520' height='250' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-facebook.html' style="overflow:hidden;"></iframe>
+      
+    </div>
   </div>
 
  
-   <iframe width='1010' height='1000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe.html' style="overflow:hidden;"></iframe>
+     <div class="row-fluid container" style="margin-top:25px;">
+    <div class="span6" style="*margin-left:0px;">    
+     
+      <div class="page-header" style="margin:0;">
+        <h4>Bate Papo</h4>
+      </div>
+      <iframe src="http://cmais.com.br/chat/culturabrasil" scrolling="no" height="680px" width="587px" frameborder="0" allowtransparency="true"></iframe>
+     <!--iframe width='520' height='2000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-google.html' style="overflow:hidden;"></iframe-->
+    </div>
+
+   
+    <div id="comments-container" class="span6" style="*margin-left:0px;">    
+      <!--share-->
+      <div class="page-header" style="margin: 0;">
+        <h4>Twitter</h4>
+      </div>
+      <div class="ao-vivo">
+        
+        <a class="twitter-timeline" href="https://twitter.com/culturabrasil2" data-widget-id="369534168884998144">Tweets by @culturabrasil2</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+      
+      <!--/share-->
+    </div>    
+    
+  </div>
 </section>
 <!--/Linha Central-->
+

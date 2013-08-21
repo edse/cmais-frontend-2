@@ -33,23 +33,14 @@ $assets = $pager->getResults();
     <p>Cozinha da Amiga Zazá</p>
   </div>
 
-<style type="text/css" media="screen">
-  .especial .form { text-align:left; }
-	.especial .form label.error { display: none !important; } 
-  .especial .form .g-regulamento label.error { display: block !important; position:absolute; bottom:50px; left:20px; background: #FDF035; border: 2px solid #F8B145;   color: #F2722F; padding:2px 5px;  } 
-  .especial .form .box-regulamento { background:#fff; height:150px; overflow-y: scroll; overflow-x:hidden; }
-  .especial .form .box-regulamento p {  color:#6A747D; }
-  .especial .form .g-regulamento label { color:#fff; }
-  .especial .form .g-regulamento .check { width: 15px; float: left; }
-  .especial .form .g-regulamento .controls label { float: left; margin:1.5% 0 0 2%; }
-  .especial .form .g-regulamento .controls { margin-bottom:40px; }
-</style>
-
   <!--row-->
   
+  <?php
+  /* RECEITINHAS
+   */ 
+  ?>
+   
   <div class="row-fluid conteudo destaques especial">
-    
- 
     <div class="span4 form-especial">
       <div class="seta"></div>
       <div class="form">
@@ -124,19 +115,29 @@ $assets = $pager->getResults();
           <div class="control-group g-regulamento">
             <label>Regulamento</label>
             <div class="box-regulamento">
-              <p>1. Participação:</p>
-              <p>REGULAMENTO VEM DO ASTOLFO... EX: Esta é uma ação de caráter exclusivamente cultural que visa estimular a interação do participante com o programa de televisão TV Cocoricó, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. Esta ação destina-se ao público em geral, sem qualquer limitação, e está devidamente regulada conforme às
-              disposições do Código Civil (10.406/02) e Lei de Direitos Autorais (9.610/98).
-              </p>
-              
+              <!-- regulamento -->
+              <?php
+                $AssetRegulamento = Doctrine_Query::create()
+                  ->select('a.*')
+                  ->from('Asset a')
+                  ->where('a.id = ?', 138617)
+                  ->andWhere('a.is_active = ?', 1)
+                  ->limit(1)
+                  ->execute(); 
+                foreach ($AssetRegulamento as $a) {
+                  echo $a->AssetContent->render(); 
+                }
+              ?>
+              <!-- /regulamento -->
             </div>
             
             <div class="controls">
                <input id="regulamento" class="check" type="checkbox" name="regulamento">
                <label>Li e concordo com o regulamento.</label>
             </div>
-           <p class="sucesso">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
-            <button type="submit" class="btn">enviar</button>
+            
+            <p class="sucesso">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
+            <button type="submit"name="enviar" id="enviar" class="btn">enviar</button>
           </div>
                    
         </form>
@@ -144,7 +145,7 @@ $assets = $pager->getResults();
     </div>
     
     
-    <div class="span8">
+    <div class="span8 ytb">
   <?php $cont = 0; ?>
     <?php if (count($displays['receitinhas-especiais']) > 0): ?>      
       <?php foreach($displays['receitinhas-especiais'] as $d): ?>
@@ -164,7 +165,7 @@ $assets = $pager->getResults();
         <?php 
           if($cont == 1){
              $cont=0;?>  
-          </div><div class="span8"> 
+          </div><div class="span8 ytb"> 
         <?php 
           }else{
            $cont++;
@@ -178,9 +179,11 @@ $assets = $pager->getResults();
   
   </div>
   <!-- /row-->
-
-
-
+  
+   <?php
+    /*
+     *  
+    */ ?>
 
   <?php if(count($favoritos) > 0): ?>
   <div class="row-fluid conteudo destaques ytb">
@@ -310,10 +313,59 @@ $(document).ready(function(){
 <!--form-->
 <script type="text/javascript">
   $(document).ready(function(){
+    
+    $('button#enviar').click(function(){
+      //$(".msgAcerto, .msgErro").hide();
+      //alert("Enviou"); 
+    });
+
+    function clearForm(){
+      $(':input','#form-contato')
+      .not(':button, :submit, :reset, :hidden')
+      .val('')
+      .removeAttr('checked')
+      .removeAttr('selected');
+    }
+    
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
         form.submit();
+        
+        /*var form = $("#form-contato").serialize();
+            $.ajax({
+              type: "POST",
+              dataType: "text",
+              url: $("#form-contato").attr("action"),
+              data: form+'&datafile='+encodeURIComponent(datafile),
+              beforeSend: function(){
+                $('button#enviar').attr('disabled','disabled');
+                $('img#ajax-loader').show();
+              },
+              success: function(data){
+                $('button#enviar').removeAttr('disabled');
+                window.location.href="#";
+                  alert(data);
+                  console.log(data);
+                if($.trim(data) == "1"){
+                  //$("#form-contato").clearForm();
+                  clearForm();
+                  $(".sucesso").html("Hum... Essa receitinha parece ser uma delícia! Obrigado!");
+                  console.log("mensagem enviada com sucesso");
+                  
+                }else if($.trim(data) == "2"){
+                  console.log("Puxa, puxa que puxa! Imagem é maior que 15 MB! Escolha uma menor!");
+                  $(".sucesso").html("Puxa, puxa que puxa! Imagem é maior que 15 MB! Escolha uma menor!");
+                  $(".sucesso").show();
+                }else{
+                  console.log("Puxa, puxa que puxa! Alguma coisa deu errado! Tente de novo!");
+                  $(".sucesso").html("Puxa, puxa que puxa! Alguma coisa deu errado! Tente de novo!");
+                  $(".sucesso").show();
+                }
+              }
+            });
+            */
+        
       },
       rules:{
         nome:{
@@ -357,6 +409,7 @@ $(document).ready(function(){
         label.addClass("checked");
         $("label.error.checked").css("display","none");
         label.html("&nbsp;");
+        //$("button#enviar").css("margin-top","20px");
       }
     });
   });
