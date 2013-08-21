@@ -150,7 +150,7 @@ $assets = $pager->getResults();
                <label>Li e concordo com o regulamento.</label>
             </div>
             <?php
-            if(isset($_GET["success"])==1 || $_GET["success"]==2){
+            if(isset($_GET["success"])==1 || isset($_GET["success"])==2){
             ?>
             <p class="sucesso">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
             <?php  
