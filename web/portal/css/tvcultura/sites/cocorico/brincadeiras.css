@@ -78,7 +78,7 @@
 .form-horizontal .control-group select,
 .form-horizontal .btn,
 .form-horizontal .controls input { height:20px; line-height: 20px; padding:0 5px; }
-.form-horizontal .control-group select { min-height:20px; width: 55px; padding:0; margin:0 0 0 10px; float: right; border:none;  }
+.form-horizontal .control-group select { min-height:20px; width: 55px; padding:0; margin:3px 0 0 10px; float: right; border:none;  }
 
 .form-horizontal .controls textarea,
 .form-horizontal .controls input { border:none; }
