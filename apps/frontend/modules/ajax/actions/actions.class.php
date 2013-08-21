@@ -2054,7 +2054,7 @@ EOT;
         ->limit('1')
         ->execute();
       
-      $return["noar"] = "";
+      $return["noar"] = 0;
       
       foreach($noar as $n){
         $titulo =   $n->getProgram()->getTitle();
