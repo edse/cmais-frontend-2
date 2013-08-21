@@ -1,5 +1,24 @@
 <?php
 
+function sendMailSimple($to, $from, $sub, $msg)
+{
+  
+  $headers = 'MIME-Version: 1.0' . "\r\n";
+  $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+  
+  $headers .= "From: ".$from;
+  
+  $msg .= "Content-Type:text/html; charset=\"iso-8859-1\"\n".
+    "Content-Transfer-Encoding: 7bit\n\n".$msg."\n\n";
+
+  if(mail($to, $sub, $msg, $headers))
+    return true;
+  else
+    return false;
+}
+
+
+
 function sendMailAtt($to, $from, $sub, $msg, $attach=array())
 {
   $headers = "From: ".$from;

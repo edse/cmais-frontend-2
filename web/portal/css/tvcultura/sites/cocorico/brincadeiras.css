@@ -51,13 +51,13 @@
 /* receitinhas especial */
 .especial { border:2px solid #f8b145; background:url(/portal/images/capaPrograma/cocorico/fundo-transparente.png) repeat; }
 .especial .span8 { margin-left:0; float:right; padding:10px 10px 0 0; min-width:633px; }
-.especial .form { background:#f2722f; border-right:2px solid #f8b145;  border-radius:8px 0 0 8px; -moz-border-radius:8px 0 0 8px; -webkit-border-radius:8px 0 0 8px; max-width:285px; overflow:hidden; }
+.especial .form { background:#f2722f; border-right:2px solid #f8b145;  border-radius:8px 0 0 8px; -moz-border-radius:8px 0 0 8px; -webkit-border-radius:8px 0 0 8px; max-width:285px; overflow:hidden; text-align:left; }
 .destaques .span6 { position:relative; margin-bottom:10px; }
 .conteudo .span3 { margin-left:2%; }
 .conteudo .form-especial { min-width:299px; }
 .especial .seta { background:url(/portal/images/capaPrograma/cocorico/seta-form.png) no-repeat; width: 14px; height:23px; position:absolute; right: 0; top:10px; }
 .especial h2 { background: url(/portal/images/capaPrograma/cocorico/ico-especial.png) no-repeat 10px; font-size:18px; color:#fdf035; padding:0 0 0 40px; text-transform:uppercase; font-weight: normal;}
-.especial .form p { color:#fff; margin:0 10px 10px 10px; }
+.especial .form p { color:#fff; margin:0 5px 0 5px; }
 
 .especial .form  .divisao {    display: block;    float: right;    height: 14px;    margin: 0 0 20px 0;    min-width: 285px; background: url(/portal/images/capaPrograma/cocorico/receitinhas-pattern.png) repeat-x;}
 
@@ -78,7 +78,7 @@
 .form-horizontal .control-group select,
 .form-horizontal .btn,
 .form-horizontal .controls input { height:20px; line-height: 20px; padding:0 5px; }
-.form-horizontal .control-group select { min-height:20px; width: 55px; padding:0; margin:0 0 0 10px; float: right; border:none;  }
+.form-horizontal .control-group select { min-height:20px; width: 55px; padding:0; margin:3px 0 0 10px; float: right; border:none;  }
 
 .form-horizontal .controls textarea,
 .form-horizontal .controls input { border:none; }
@@ -239,12 +239,12 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .print.grd span {background: url("/portal/images/capaPrograma/cocorico/ico-imprimir.png") no-repeat scroll 0 0 transparent;    bottom: 5px;    display: block;    height: 14px;    position: absolute;    right: 5px;    width: 14px;}
 
 
-.especial .form .box-regulamento { background:#fff; height:150px; overflow-y: scroll; overflow-x:hidden; }
+.especial .form .box-regulamento { background:#fff; height:150px; overflow-y: scroll; overflow-x:hidden; text-align:left; }
 .especial .form .box-regulamento p {  color:#6A747D; }
 .especial .form .g-regulamento label { color:#fff; }
 .especial .form .g-regulamento .check { width: 15px; float: left; }
 .especial .form .g-regulamento .controls label { float: left; margin:1.5% 0 0 2%; }
-.especial .form .g-regulamento .controls { margin-bottom:90px; }
+.especial .form .g-regulamento .controls { margin-bottom:30px; }
 .especial .form .g-regulamento .controls label.error,
 .especial .form label.error { position:absolute; bottom:50px; left:10px; width:250px; background: #FDF035; border: 2px solid #F8B145;   color: #F2722F; padding:2px 5px; margin:0;  text-align:center; }
 .especial .form label.error.checked { display: none !important; }
