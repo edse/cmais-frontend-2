@@ -33,7 +33,7 @@
           <?php endif; ?>
 
           <div id="horario">
-          	<a href="javascript: window.open('http://culturafm.cmais.com.br/controleremoto','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
+          	<a href="javascript: window.open('http://culturafm.cmais.com.br/controleremoto','controle','width=400,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
           </div>         
 
 	       <!-- img src="http://culturafm.cmais.com.br/portal/images/capaPrograma/culturafm/destaque_fm2.jpg" title="Music Nation 2012" alt="Music Nation 2012" //-->
