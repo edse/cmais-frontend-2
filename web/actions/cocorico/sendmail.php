@@ -33,7 +33,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             
       //Enviar sem anexo
       if($_FILES['datafile']['name'] == ""){
-        echo $_FILES['datafile']['tmp_name'] ."+ Passou aqui de novo";
+        echo $_FILES['datafile']['name'] ."N+ Passou aqui de novo";
         
         $headers =  'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
