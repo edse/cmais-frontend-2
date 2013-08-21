@@ -52,7 +52,7 @@ $(function(){
           <?php endif; ?>
 
           <div id="horario">
-          	<a href="javascript: window.open('http://www.culturabrasil.com.br/controle-remoto?start=fm','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
+          	<a href="javascript: window.open('http://culturafm.cmais.com.br/controleremoto','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
           </div>    
         </div>
 
