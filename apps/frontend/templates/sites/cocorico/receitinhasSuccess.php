@@ -2,6 +2,9 @@
 <?php foreach($displays['receitinhas-especiais'] as $d): ?>
   <?php //$related = $d->retriveRelatedAssetsByAssetTypeId(6); 
   var_dump($displays['receitinhas-especiais']);
+  
+      endforeach;
+     endif;
   die();
   
 ?>
