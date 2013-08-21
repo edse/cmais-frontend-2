@@ -330,19 +330,19 @@ $(document).ready(function(){
               },
               success: function(data){
                 $('button#enviar').removeAttr('disabled');
-                  window.location.href="#";
-                  if(data == "1"){
-                    $("#form-contato").clearForm();
-                    $('img#ajax-loader').hide();
-                    //$(".sucesso").html("Hum... Essa receitinha parece uma delícia! Obrigado!");
-                    console.log("mensagem enviada");
-                  }
-                  else {
-                    console.log("Erro no envio");
-                    //$(".sucesso").show();
-                    $('img#ajax-loader').hide();
-                  }
-               }
+                window.location.href="#";
+                alert(data);
+                if(data == "1"){
+                  $("#form-contato").clearForm();
+                  //$('img#ajax-loader').hide();
+                  //$(".sucesso").html("Hum... Essa receitinha parece uma delícia! Obrigado!");
+                  console.log("mensagem enviada");
+                }else{
+                  console.log("Erro no envio");
+                  //$(".sucesso").show();
+                  //$('img#ajax-loader').hide();
+                }
+              }
             });
         
       },
