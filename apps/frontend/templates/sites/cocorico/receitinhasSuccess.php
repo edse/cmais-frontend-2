@@ -4,7 +4,8 @@
   if (count($displays['receitinhas-especiais']) > 0){
       foreach($displays['receitinhas-especiais'] as $d){
         $related = $d->Asset->retriveRelatedAssetsByAssetTypeId(6);  
-        echo count($related)."teste\n";
+        
+        echo $related->AssetVideo->getYoutubeId();
     }
   }     
 
