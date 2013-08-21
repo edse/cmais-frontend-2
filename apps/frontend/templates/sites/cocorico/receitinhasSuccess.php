@@ -388,6 +388,9 @@ $(document).ready(function(){
             */
         
       },
+      beforeSend: function(){
+        $('.successo').hide();
+      },
       rules:{
         nome:{
           required:true,
