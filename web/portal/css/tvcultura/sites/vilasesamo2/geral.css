@@ -304,7 +304,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques .banner a img,
 .destaques .banner a { display: block; width:100%; height:250px; }
 .divisa { display: block; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-divisa.png) repeat-x; height:2px; max-width:940px; margin:0 auto 20px; }
-.bgtotal { width:100%; max-width:100% !important; background:#fee133; padding-top:20px; }
+.bgtotal { width:100%; max-width:100% !important; background:#fee133; padding-top:5px; }
 .destaques section .span6 { width:31.6%; overflow:hidden; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
 .destaques section .span6 img { border-top:2px solid #0191fb; }
 .destaques .jogo { background:#3aaaec; }
