@@ -7,7 +7,7 @@ $expiration_time = "2013-08-30 00:00:00";
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
     if ($current_time < $expiration_time) {
-
+    
       $to = "tvcocorico@gmail.com"; 
       //$to = "maiscriancatvcultura@gmail.com";
       $email = strip_tags($_REQUEST['email']);
@@ -29,16 +29,21 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       $attach = array();
       $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);
   
+      if(!$_FILES['datafile']['tmp_name']){
+        if(sendMailAtt($to, $from, $subject, $message, $attach)) {
+          echo "Enviado com sucesso - Sem Anexo";
+        }else{
+          echo "Erro - Sem Anexo";
+        }
+      }
           
       if (!in_array($file_mime_type, array("image/gif", "image/png", "image/jpg"))) {
-        echo $file_mime_type."-000";
         if (unlink($_FILES['datafile']['tmp_name'])) {
           header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=2");
           die();
         }
       }
       else if ($file_size > 15728640) { // 15MB
-        echo $file_size."-1111";
         if (unlink($_FILES['datafile']['tmp_name'])) {
           header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=3");
           die();
@@ -47,13 +52,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       else {
         
         if(sendMailAtt($to, $from, $subject, $message, $attach)) {
-                echo "1";
           if (unlink($_FILES['datafile']['tmp_name'])) {
-                  echo "2";
             header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?success=1");
             die();
-          }else{
-            echo "4";
           }
         }
         else{
