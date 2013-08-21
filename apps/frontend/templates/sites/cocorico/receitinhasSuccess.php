@@ -217,7 +217,7 @@ $assets = $pager->getResults();
         ?>
         
         <div class="span6">
-          <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
+          <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
           <a href="<?php echo $d->retriveUrl() ?>" class="span12 btn" title=""><?php echo $d->getTitle() ?></a>
           <ul class="likes">
             <li class="ativo"></li>
