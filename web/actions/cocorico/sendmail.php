@@ -24,7 +24,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       
       //Enviar sem anexo
       if(!$_FILES['datafile']['tmp_name']){
-        if(sendMailAtt($to, $from, $subject, $message, 0)) {
+        if(sendMailSimple($to, $from, $subject, $message)) {
           echo "Enviado com sucesso - Sem Anexo";
         }else{
           echo "Erro - Sem Anexo";
