@@ -32,9 +32,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);      
             
       //Enviar sem anexo
-      die($_FILES['datafile']['size'].$_FILES['datafile']['name']);
-      
-      if($_FILES['datafile']['size']){
+      if(!$_FILES['datafile']['size']){
         $headers =  'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
         $headers .= "From: ".$from;
