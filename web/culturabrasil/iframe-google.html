@@ -1,10 +1,16 @@
 <!-- comentario google-->
-<script src="https://apis.google.com/js/plusone.js"></script>
-<g:comments
-    href="http://www.culturabrasil.com.br/sala-de-tv"
-    width="490"
-    first_party_property="BLOGGER"
-    view_type="FILTERED_POSTMOD">
-</g:comments>
+<script type="text/javascript" src="http://apis.google.com/js/plusone.js">
+  {lang: 'pt-BR'}
+</script>
+
+<div id="comments"></div>
+<script>
+  gapi.comments.render('comments', {
+    href: "http://www.culturabrasil.com.br/sala-de-tv",
+    width: '490',
+    first_party_property: 'BLOGGER',
+    view_type: 'FILTERED_POSTMOD'
+  });
+</script>
 
 <!-- comentario google-->
