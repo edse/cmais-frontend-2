@@ -51,7 +51,7 @@
 /* receitinhas especial */
 .especial { border:2px solid #f8b145; background:url(/portal/images/capaPrograma/cocorico/fundo-transparente.png) repeat; }
 .especial .span8 { margin-left:0; float:right; padding:10px 10px 0 0; min-width:633px; }
-.especial .form { background:#f2722f; border-right:2px solid #f8b145;  border-radius:8px 0 0 8px; -moz-border-radius:8px 0 0 8px; -webkit-border-radius:8px 0 0 8px; max-width:285px; overflow:hidden; }
+.especial .form { background:#f2722f; border-right:2px solid #f8b145;  border-radius:8px 0 0 8px; -moz-border-radius:8px 0 0 8px; -webkit-border-radius:8px 0 0 8px; max-width:285px; overflow:hidden; text-align:left; }
 .destaques .span6 { position:relative; margin-bottom:10px; }
 .conteudo .span3 { margin-left:2%; }
 .conteudo .form-especial { min-width:299px; }
