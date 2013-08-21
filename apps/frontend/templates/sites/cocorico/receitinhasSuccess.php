@@ -37,6 +37,10 @@ $assets = $pager->getResults();
 
   <!--row-->
   
+  <?php
+  
+  /**** NOT NOW
+  
   <div class="row-fluid conteudo destaques especial">
     <div class="span4 form-especial">
       <div class="seta"></div>
@@ -176,7 +180,9 @@ $assets = $pager->getResults();
   
   </div>
   <!-- /row-->
-
+  
+   * 
+   */ ?>
 
 
 
