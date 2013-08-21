@@ -239,7 +239,7 @@ h3.episodio { text-transform:uppercase; color:#f2722f; font-size: 30px; margin:0
 .print.grd span {background: url("/portal/images/capaPrograma/cocorico/ico-imprimir.png") no-repeat scroll 0 0 transparent;    bottom: 5px;    display: block;    height: 14px;    position: absolute;    right: 5px;    width: 14px;}
 
 
-.especial .form .box-regulamento { background:#fff; height:150px; overflow-y: scroll; overflow-x:hidden; }
+.especial .form .box-regulamento { background:#fff; height:150px; overflow-y: scroll; overflow-x:hidden; text-align:left; }
 .especial .form .box-regulamento p {  color:#6A747D; }
 .especial .form .g-regulamento label { color:#fff; }
 .especial .form .g-regulamento .check { width: 15px; float: left; }
