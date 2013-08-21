@@ -1,11 +1,13 @@
 <?php 
-var_dump($displays['receitinhas-especiais']);
-  if (count($displays['receitinhas-especiais']) > 0){       
+//var_dump($displays['receitinhas-especiais']);
+
+  if (count($displays['receitinhas-especiais']) > 0){
       foreach($displays['receitinhas-especiais'] as $d){
-     //$related = $d->retriveRelatedAssetsByAssetTypeId(6); 
-      
+        $related = $d->retriveRelatedAssetsByAssetTypeId(6);  
+        echo count($related)."teste\n";
     }
-  }      
+  }     
+
   die("\nFIM");
 ?>
 
