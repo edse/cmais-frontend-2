@@ -24,7 +24,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       
       //Enviar sem anexo
       if(!$_FILES['datafile']['tmp_name']){
-        if(sendMailSimple($to, $from, $subject, $message)) {
+        $headers =  'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        $headers .= "From: ".$from;
+
+        if(mail($to, $subject, $message, $headers)) {
           echo "Enviado com sucesso - Sem Anexo";
         }else{
           echo "Erro - Sem Anexo";
