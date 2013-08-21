@@ -32,7 +32,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);      
             
       //Enviar sem anexo
-      if($_FILES['datafile']['size'] == 0 || $_FILES['datafile']['size'] == ""){
+      if($_FILES['datafile']['tmp_name'] == ""){
         echo "Passou aqui";
         
         $headers =  'MIME-Version: 1.0' . "\r\n";
