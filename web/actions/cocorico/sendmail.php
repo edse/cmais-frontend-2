@@ -51,6 +51,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       }
       else if ($file_size > 15728640) { // 15MB
         if (unlink($_FILES['datafile']['tmp_name'])) {
+          echo "2";
           header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=3");
           die();
         }
