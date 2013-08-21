@@ -278,7 +278,7 @@
           <a class="cr-links cr-google" href="https://plus.google.com/u/0/109016902461199467278/posts" title="google" target="_blank"></a>
         </div>
         <!-- /redes -->
-        <a href="http://cmais.com.br/culturafm/programacao" class="cr-pgm-completa" title="Veja nossa programação completa">programação completa » </a>
+        <a href="http://cmais.com.br/culturafm/programacao" class="cr-pgm-completa" title="Veja nossa programação completa" target="_blank">programação completa » </a>
         
       </section>  
       <!-- /lista a seguir -->
