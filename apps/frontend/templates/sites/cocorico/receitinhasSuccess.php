@@ -1,6 +1,6 @@
 <?php
 //include("/var/frontend_/actions/includes/functions.php");
-
+/*
 $current_time = date("Y-m-d H:i:s", time()); 
 $expiration_time = "2013-08-30 00:00:00";
 
@@ -55,6 +55,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
   }
 }
+*/
 ?>    
 
 
