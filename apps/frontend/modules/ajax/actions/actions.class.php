@@ -2063,11 +2063,12 @@ EOT;
         $return["noar"][] = array("titulo"=> $titulo,  "data"=> format_datetime($n->getDateStart(), "HH:mm"), "imagem"=> $n->retriveLiveImage());
       }
       
-      if(!$return["noar"]){
+      if(!@$return["noar"]){
         $cont = 0;
         foreach($schedules as $s){
           if($cont == 0){
-          $return["noar"][] = array("titulo"=> $s->Program->getTitle(), "data"=> format_datetime($s->getDateStart(), "HH:mm"), "imagem"=> $s->retriveLiveImage());
+            $return["noar"][] = array("titulo"=> $s->Program->getTitle(), "data"=> format_datetime($s->getDateStart(), "HH:mm"), "imagem"=> $s->retriveLiveImage());
+            $cont++;
           }
         }
       }
