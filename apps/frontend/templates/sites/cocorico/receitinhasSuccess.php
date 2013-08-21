@@ -5,7 +5,7 @@
       foreach($displays['receitinhas-especiais'] as $d){
         $related = $d->Asset->retriveRelatedAssetsByAssetTypeId(6);  
         
-        echo $related->Asset->AssetVideo->getTitle();
+        var_dump($related);
     }
   }     
 
