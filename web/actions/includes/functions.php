@@ -3,8 +3,8 @@
 function sendMailSimple($to, $from, $sub, $msg)
 {
   $headers = "From: ".$from;
-  $headers .= "\nMIME-Version: 1.0\n".
-    "Content-Type: multipart/mixed;\n";
+  $headers .= 'MIME-Version: 1.0' . "\r\n";
+  $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
   $msg .= "Content-Type:text/html; charset=\"iso-8859-1\"\n".
     "Content-Transfer-Encoding: 7bit\n\n".$msg."\n\n";
