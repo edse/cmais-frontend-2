@@ -117,7 +117,7 @@ $assets = $pager->getResults();
                 $AssetRegulamento = Doctrine_Query::create()
                   ->select('a.*')
                   ->from('Asset a')
-                  ->where('a.id = ?', 117999)
+                  ->where('a.id = ?', 138617)
                   ->andWhere('a.is_active = ?', 1)
                   ->limit(1)
                   ->execute(); 
@@ -330,7 +330,7 @@ $(document).ready(function(){
               type: "POST",
               dataType: "text",
               url: $("#form-contato").attr("action"),
-              //contentType: attr("enctype", "multipart/form-data"),
+              contentType:attr( "enctype", "multipart/form-data" ),
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('button#enviar').attr('disabled','disabled');
