@@ -21,9 +21,20 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         if(!in_array(ucwords($field), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
           $message .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
       }
+
       
+      $file_name = basename($_FILES['datafile']['name']);
+      $data = file_get_contents($_FILES['datafile']['tmp_name']); 
+      $file_contents = chunk_split(base64_encode($data));
+      $file_size = $_FILES['datafile']['size'];
+      $file_mime_type = getMimeType($_FILES['datafile']['name']);
+      $attach = array();
+      $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);      
+            
       //Enviar sem anexo
-      if($_FILES['datafile']['size'] <= 0){
+      die($_FILES['datafile']['size'].$_FILES['datafile']['name']);
+      
+      if($_FILES['datafile']['size']){
         $headers =  'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
         $headers .= "From: ".$from;
@@ -34,14 +45,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
           echo "0";
         }
       }
-
-      $file_name = basename($_FILES['datafile']['name']);
-      $data = file_get_contents($_FILES['datafile']['tmp_name']); 
-      $file_contents = chunk_split(base64_encode($data));
-      $file_size = $_FILES['datafile']['size'];
-      $file_mime_type = getMimeType($_FILES['datafile']['name']);
-      $attach = array();
-      $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);
+      
           
       if (!in_array($file_mime_type, array("image/gif", "image/png", "image/jpg"))) {
         if (unlink($_FILES['datafile']['tmp_name'])) {

@@ -338,7 +338,7 @@ $(document).ready(function(){
               success: function(data){
                 $('button#enviar').removeAttr('disabled');
                 window.location.href="#";
-                  
+                  console.log(data);
                 if($.trim(data) == "1"){
                   //$("#form-contato").clearForm();
                   clearForm();
