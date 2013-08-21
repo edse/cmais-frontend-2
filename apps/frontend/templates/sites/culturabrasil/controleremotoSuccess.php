@@ -217,12 +217,12 @@
             $now = true;
           }
     
-          if($now):
-            if($d->retriveLiveImage() != ""){
-              $imagemPrograma = $d->retriveLiveImage();  
-            }else{
-              $imagemPrograma = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
-            }
+         // if($now):
+           // if($d->retriveLiveImage() != ""){
+             // $imagemPrograma = $d->retriveLiveImage();  
+            //}else{
+              //$imagemPrograma = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
+            //}
       ?>
 
             <!-- header -->
@@ -233,7 +233,7 @@
             
             <!-- imagem -->  
             <div class="cr-img-pgm">
-              <img src="<?php echo $imagemPrograma ?>" alt="<?php echo $d->Program->getTitle()?>" id="img_pgm_atual" />
+              <img src="<?php //echo $imagemPrograma ?>" alt="<?php //echo $d->Program->getTitle()?>" id="img_pgm_atual" />
             </div>  
             <!-- /imagem -->
             
@@ -260,7 +260,7 @@
           </section>
           <!-- /descrição programa -->              
               
-      <?php endif; 
+      <?php //endif; 
         endforeach;
       ?>
         <!-- lista a seguir -->
