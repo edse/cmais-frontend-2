@@ -9,7 +9,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($current_time < $expiration_time) {
     
       //$to = "tvcocorico@gmail.com";
-      $to = "valclimaster@gmail.com"; 
+      $to = "valclimaster@gmail.com,joseval@terra.com.br"; 
       //$to = "maiscriancatvcultura@gmail.com";
       $email = strip_tags($_REQUEST['email']);
       $name = strip_tags($_REQUEST['nome']);
