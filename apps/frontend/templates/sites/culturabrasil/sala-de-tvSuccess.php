@@ -65,7 +65,7 @@
         <h4>Twitter</h4>
       </div>
       <div class="ao-vivo">
-        <iframe id="iframe-twitter" width='490' height='490' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-twitter.html' style="overflow:hidden;"></iframe>
+        <iframe width='490' height='490' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-twitter.html' style="overflow:hidden;"></iframe>
       </div>
     </div>
   </div>
@@ -77,7 +77,7 @@
       <div class="page-header" style="margin:0;">
         <h4>Google+</h4>
       </div>
-     <iframe id="iframe-twitter" width='520' height='2000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-google.html' style="overflow:hidden;"></iframe>
+     <iframe width='520' height='2000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-google.html' style="overflow:hidden;"></iframe>
     </div>
 
    
@@ -86,7 +86,7 @@
       <div class="page-header" style="margin: 0;">
         <h4>Facebook</h4>
       </div>
-      <iframe id="iframe-twitter" width='520' height='2000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-facebook.html' style="overflow:hidden;"></iframe>
+      <iframe width='520' height='2000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-facebook.html' style="overflow:hidden;"></iframe>
       <!--/share-->
     </div>    
     
