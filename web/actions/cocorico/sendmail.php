@@ -23,13 +23,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       }
       
       //Enviar sem anexo
-      echo $_FILES['datafile']['tmp_name'];
       echo $_FILES['datafile']['size'];
-      echo $_FILES['datafile']['name'];
       die();
       
       
-      if($_FILES['datafile']['tmp_name'] == 0) {
+      if($_FILES['datafile']['tmp_name'] <= 0) {
         $headers =  'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
         $headers .= "From: ".$from;
