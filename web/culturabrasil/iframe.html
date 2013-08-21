@@ -6,8 +6,9 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
-
     
+    <meta http-equiv="refresh" content="30" >
+
     <meta name="language" content="pt_BR" />
     <meta name="robots" content="index, follow" />
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
@@ -19,9 +20,7 @@
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
-
     
-
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-22770265-1']);
@@ -52,8 +51,6 @@
      
 <!--Linha Central-->
 <section class="container saladetv">
-  
-  
 
   <div class="row-fluid container" style="margin-top:25px;">
     <div class="span6" style="*margin-left:0px;">    
@@ -64,7 +61,7 @@
       <div id="comments"></div>
       <script>
       gapi.comments.render('comments', {
-          href: "http://culturabrasil.cmais.com.br/sala-de-tv",
+          href: "http://www.culturabrasil.com.br/sala-de-tv",
           width: '490',
           first_party_property: 'BLOGGER',
           view_type: 'FILTERED_POSTMOD'
@@ -73,13 +70,13 @@
           </div>
     <!-- /google -->
    
-    <div class="span6" style="*margin-left:0px;">    
+    <div id="comments-container" class="span6" style="*margin-left:0px;">    
       <!--share-->
       <div class="page-header" style="margin: 0;">
         <h4>Facebook</h4>
       </div>
       <!-- comentario facebook -->
-      <div class="fb-comments" data-href="http://culturabrasil.cmais.com.br/sala-de-tv" data-width="490px" data-num-posts="10"></div>
+      <div class="fb-comments" data-href="http://www.culturabrasil.com.br/sala-de-tv" data-width="490px" data-num-posts="10"></div>
       <!-- /comentario facebook -->
       <!--/share-->
     </div>    
@@ -94,6 +91,11 @@
     <script>
       window.fbAsyncInit = function() {
         FB.init({appId: '124792594261614', status: true, cookie: true, xfbml: true});
+        /*
+        FB.Event.subscribe('comment.create', function(response){
+          FB.XFBML.parse(document.getElementById("comments-container"));
+        });
+        */
       };
       (function() {
         var e = document.createElement('script'); e.async = true;
@@ -102,6 +104,5 @@
         document.getElementById('fb-root').appendChild(e);
       }());
     </script>
-
   </body>
 </html>
