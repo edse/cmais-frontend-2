@@ -135,7 +135,6 @@ $assets = $pager->getResults();
             
             <p class="sucesso">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
             <button type="submit"name="enviar" id="enviar" class="btn">enviar</button>
-            <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           </div>
                    
         </form>
@@ -309,6 +308,20 @@ $(document).ready(function(){
 <!--form-->
 <script type="text/javascript">
   $(document).ready(function(){
+    
+    $('button#enviar').click(function(){
+      //$(".msgAcerto, .msgErro").hide();
+      //alert("Enviou"); 
+    });
+
+    function clearForm(){
+      $(':input','#form-contato')
+      .not(':button, :submit, :reset, :hidden')
+      .val('')
+      .removeAttr('checked')
+      .removeAttr('selected');
+    }
+    
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
@@ -316,7 +329,8 @@ $(document).ready(function(){
             $.ajax({
               type: "POST",
               dataType: "text",
-              url: form.attr("action"),
+              url: $("#form-contato").attr("action"),
+              contentType:attr("enctype", "multipart/form-data" ),
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('button#enviar').attr('disabled','disabled');
@@ -324,19 +338,24 @@ $(document).ready(function(){
               },
               success: function(data){
                 $('button#enviar').removeAttr('disabled');
-                  window.location.href="#";
-                  if(data == "1"){
-                    $("#form-contato").clearForm();
-                    $('img#ajax-loader').hide();
-                    //$(".sucesso").html("Hum... Essa receitinha parece uma delícia! Obrigado!");
-                    console.log("mensagem enviada");
-                  }
-                  else {
-                    console.log("Erro no envio");
-                    //$(".sucesso").show();
-                    $('img#ajax-loader').hide();
-                  }
-               }
+                window.location.href="#";
+                  console.log(data);
+                if($.trim(data) == "1"){
+                  //$("#form-contato").clearForm();
+                  clearForm();
+                  $(".sucesso").html("Hum... Essa receitinha parece ser uma delícia! Obrigado!");
+                  console.log("mensagem enviada com sucesso");
+                  
+                }else if($.trim(data) == "2"){
+                  console.log("Puxa, puxa que puxa! Imagem é maior que 15 MB! Escolha uma menor!");
+                  $(".sucesso").html("Puxa, puxa que puxa! Imagem é maior que 15 MB! Escolha uma menor!");
+                  $(".sucesso").show();
+                }else{
+                  console.log("Puxa, puxa que puxa! Alguma coisa deu errado! Tente de novo!");
+                  $(".sucesso").html("Puxa, puxa que puxa! Alguma coisa deu errado! Tente de novo!");
+                  $(".sucesso").show();
+                }
+              }
             });
         
       },
