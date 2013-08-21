@@ -149,10 +149,12 @@ $assets = $pager->getResults();
   <?php $cont = 0; ?>
     <?php if (count($displays['receitinhas-especiais']) > 0): ?>      
       <?php foreach($displays['receitinhas-especiais'] as $d): ?>
-        <?php //$related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+        
+        
+        <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
         
         <div class="span6">
-          <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
+          <a href="<?php echo $d->retriveUrl() ?>" title="link do jogo"><img class="span12" src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
           <a href="<?php echo $d->retriveUrl() ?>" class="span12 btn" title=""><?php echo $d->getTitle() ?></a>
           <ul class="likes">
             <li class="ativo"></li>
