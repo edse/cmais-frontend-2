@@ -1,14 +1,14 @@
 <?php 
 //var_dump($displays['receitinhas-especiais']);
 
-  if (count($displays['receitinhas-especiais']) > 0){
-      foreach($displays['receitinhas-especiais'] as $d){
-        $related = $d->Asset->retriveRelatedAssetsByAssetTypeId(6);  
-        echo $related[0]->AssetVideo->getYoutubeId();       
-    }
-  }     
+ // if (count($displays['receitinhas-especiais']) > 0){
+   //   foreach($displays['receitinhas-especiais'] as $d){
+     //   $related = $d->Asset->retriveRelatedAssetsByAssetTypeId(6);  
+       // echo $related[0]->AssetVideo->getYoutubeId();       
+    //}
+  //}     
 
-  die("\nFIM");
+  //die("\nFIM");
 ?>
 
 
