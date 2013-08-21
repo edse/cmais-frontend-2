@@ -316,7 +316,7 @@ $(document).ready(function(){
             $.ajax({
               type: "POST",
               dataType: "text",
-              url: form.attr("action"),
+              url: $("#form-contato").attr("action"),
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('button#enviar').attr('disabled','disabled');
