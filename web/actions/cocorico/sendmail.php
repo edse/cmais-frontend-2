@@ -22,6 +22,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
           $message .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
       }
       
+      //Enviar sem anexo
+      if(!$_FILES['datafile']['tmp_name']){
+        if(sendMailAtt($to, $from, $subject, $message, 0)) {
+          echo "Enviado com sucesso - Sem Anexo";
+        }else{
+          echo "Erro - Sem Anexo";
+        }
+      }
+
       $file_name = basename($_FILES['datafile']['name']);
       $data = file_get_contents($_FILES['datafile']['tmp_name']); 
       $file_contents = chunk_split(base64_encode($data));
@@ -29,14 +38,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       $file_mime_type = getMimeType($_FILES['datafile']['name']);
       $attach = array();
       $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);
-  
-      if(!$_FILES['datafile']['tmp_name']){
-        if(sendMailAtt($to, $from, $subject, $message, $attach)) {
-          echo "Enviado com sucesso - Sem Anexo";
-        }else{
-          echo "Erro - Sem Anexo";
-        }
-      }
           
       if (!in_array($file_mime_type, array("image/gif", "image/png", "image/jpg"))) {
         if (unlink($_FILES['datafile']['tmp_name'])) {
