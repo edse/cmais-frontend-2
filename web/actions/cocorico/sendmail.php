@@ -30,7 +30,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $headers .= "From: ".$from;
 
         if(mail($to, $subject, $message, $headers)) {
-          header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?sucesso=1");
+          header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?success=1");
         }else{
           header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=2");
         }
