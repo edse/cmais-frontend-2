@@ -132,8 +132,10 @@ $assets = $pager->getResults();
                <input id="regulamento" class="check" type="checkbox" name="regulamento">
                <label>Li e concordo com o regulamento.</label>
             </div>
-           <p class="sucesso">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
-            <button type="submit" class="btn">enviar</button>
+            
+            <p class="sucesso" style="display:none;">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
+            <button type="submit"name="enviar" id="enviar" class="btn">enviar</button>
+            <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           </div>
                    
         </form>
@@ -141,7 +143,7 @@ $assets = $pager->getResults();
     </div>
     
     
-    <div class="span8">
+    <div class="span8 ytb">
   <?php $cont = 0; ?>
     <?php if (count($displays['receitinhas-especiais']) > 0): ?>      
       <?php foreach($displays['receitinhas-especiais'] as $d): ?>
@@ -161,7 +163,7 @@ $assets = $pager->getResults();
         <?php 
           if($cont == 1){
              $cont=0;?>  
-          </div><div class="span8"> 
+          </div><div class="span8 ytb"> 
         <?php 
           }else{
            $cont++;
@@ -310,7 +312,33 @@ $(document).ready(function(){
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
-        form.submit();
+        //form.submit();
+            $.ajax({
+              type: "POST",
+              dataType: "text",
+              url: form.attr("action"),
+              data: $("#form-contato").serialize(),
+              beforeSend: function(){
+                $('button#enviar').attr('disabled','disabled');
+                //$(".msgAcerto").hide();
+                //$(".msgErro").hide();
+                $('img#ajax-loader').show();
+              },
+              success: function(data){
+                $('button#enviar').removeAttr('disabled');
+                  window.location.href="#";
+                  if(data == "1"){
+                    $("#form-contato").clearForm();
+                    //$(".msgAcerto").show();
+                    $('img#ajax-loader').hide();
+                  }
+                  else {
+                    $(".msgErro").show();
+                    $('img#ajax-loader').hide();
+                  }
+               }
+            });
+        
       },
       rules:{
         nome:{
