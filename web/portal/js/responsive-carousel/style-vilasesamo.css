@@ -12,8 +12,8 @@
 #carrossel-personagem .arrow-left { left: 0;}
 #carrossel-personagem .arrow-right { right: 0;}
 
-#carrossel-personagem .slider-mask-wrap { margin:0; max-width:940px; background:#ffffff; margin-bottom:10px; border-bottom:1px solid #c31408; border-top:1px solid #c31408;}
-#carrossel-personagem .slider-mask { overflow: hidden; position: relative; zoom: 1; max-width:940px;}
+#carrossel-personagem .slider-mask-wrap { margin:0; max-width:940px; background:#ffffff; margin-bottom:10px; border-bottom:1px solid #c31408; border-top:1px solid #c31408; position:relative; height:200px;}
+#carrossel-personagem .slider-mask { overflow: hidden; position: absolute; zoom: 1; max-width:940px;}
 #carrossel-personagem .slider-target { width: 2000px; margin: 0 auto; }
 #carrossel-personagem .slider ul { margin: 0; padding: 0; list-style-type: none;}
 #carrossel-personagem .slider li { width: 150px; height: 160px; float: left; margin: 0; padding: 0;}
