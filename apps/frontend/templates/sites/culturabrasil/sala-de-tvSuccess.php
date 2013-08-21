@@ -79,7 +79,7 @@
       <div class="page-header" style="margin:0;">
         <h4>Google+</h4>
       </div>
-     <iframe width='520' height='1500' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-google.html' style="overflow:hidden;"></iframe>
+     <iframe width='520' height='2000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-google.html' style="overflow:hidden;"></iframe>
     </div>
 
    
@@ -88,7 +88,7 @@
       <div class="page-header" style="margin: 0;">
         <h4>Facebook</h4>
       </div>
-      <iframe width='520' height='1500' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-facebook.html' style="overflow:hidden;"></iframe>
+      <iframe width='520' height='2000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-facebook.html' style="overflow:hidden;"></iframe>
       <!--/share-->
     </div>    
     
