@@ -1,3 +1,12 @@
+<?php if (count($displays['receitinhas-especiais']) > 0): ?>      
+<?php foreach($displays['receitinhas-especiais'] as $d): ?>
+  <?php //$related = $d->retriveRelatedAssetsByAssetTypeId(6); 
+  var_dump($displays['receitinhas-especiais']);
+  die();
+  
+?>
+
+
 <?php 
 $assets = $pager->getResults();
 ?>
