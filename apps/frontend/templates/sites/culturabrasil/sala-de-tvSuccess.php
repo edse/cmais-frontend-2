@@ -60,10 +60,37 @@
       </div>
       <!--/share-->
     </div>
-    <iframe id="iframe-twitter" width='490' height='490' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-twitter.html' style="overflow:hidden;"></iframe>
+    <div class="span6">
+      <div class="page-header ao-vivo">
+        <h4>Twitter</h4>
+      </div>
+      <div class="ao-vivo">
+        <iframe width='490' height='490' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-twitter.html' style="overflow:hidden;"></iframe>
+      </div>
+    </div>
   </div>
 
  
-   <iframe width='1010' height='1000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe.html' style="overflow:hidden;"></iframe>
+     <div class="row-fluid container" style="margin-top:25px;">
+    <div class="span6" style="*margin-left:0px;">    
+     
+      <div class="page-header" style="margin:0;">
+        <h4>Google+</h4>
+      </div>
+     <iframe width='520' height='2000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-google.html' style="overflow:hidden;"></iframe>
+    </div>
+
+   
+    <div id="comments-container" class="span6" style="*margin-left:0px;">    
+      <!--share-->
+      <div class="page-header" style="margin: 0;">
+        <h4>Facebook</h4>
+      </div>
+      <iframe width='520' height='2000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-facebook.html' style="overflow:hidden;"></iframe>
+      <!--/share-->
+    </div>    
+    
+  </div>
 </section>
 <!--/Linha Central-->
+
