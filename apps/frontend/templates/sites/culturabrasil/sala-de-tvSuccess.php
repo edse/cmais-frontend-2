@@ -77,15 +77,7 @@
       <div class="page-header" style="margin:0;">
         <h4>Google+</h4>
       </div>
-      <div id="comments"></div>
-      <script>
-      gapi.comments.render('comments', {
-          href: "http://www.culturabrasil.com.br/sala-de-tv",
-          width: '490',
-          first_party_property: 'BLOGGER',
-          view_type: 'FILTERED_POSTMOD'
-      });
-      </script>
+     <iframe id="iframe-twitter" width='490' height='1000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-google.html' style="overflow:hidden;"></iframe>
     </div>
 
    
