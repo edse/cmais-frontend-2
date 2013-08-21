@@ -354,10 +354,13 @@ bold,
 .modal.alerta.fade.in { top:50%; }
 /* ytb*/
 .bastidores.ytb .item,
+.ytb .span6 a,
 .ytb .span4 a { overflow:hidden;  border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0;  }
 .ytb .destaque1 img,
+.ytb .span6 a img, 
 .ytb .span4 a img { margin:-27px 0 !important;  }
 .ytb .destaque1 img { max-width:310px; }
+.ytb .span6 .btn,
 .ytb .span4 .btn { border-radius:0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px;}
 .ytb .destaques-small li a { overflow:hidden; } 
 .ytb .destaques-small li a img { margin:-13px 0 !important; }

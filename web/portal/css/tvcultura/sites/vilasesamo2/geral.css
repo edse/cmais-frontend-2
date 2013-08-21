@@ -249,7 +249,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 
 /* topo vila */
 .navbar-inverse .navbar-inner.topo-vila { background:url(/portal/images/capaPrograma/vilasesamo2/bg-topo-vila.jpg) repeat-x; height:51px; margin-top:-3px; z-index: 0; position:relative; }
-.navbar-inverse .navbar-inner.topo-vila .nav-collapse { float:left; width:88%; margin-left:2%; }
+.navbar-inverse .navbar-inner.topo-vila .nav-collapse { float:left; width:98%; margin-left:2%; }
 .topo-vila .container { height:51px; }
 .topo-vila h2 { width: 83px; display: block; margin:8px 0 0 10px; float:left;}
 .topo-vila .sprite-logo-incluir { display: block; text-indent:-9999px;    }
