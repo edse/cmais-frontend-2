@@ -75,9 +75,10 @@
     <div class="span6" style="*margin-left:0px;">    
      
       <div class="page-header" style="margin:0;">
-        <h4>Google+</h4>
+        <h4>Bate Papo</h4>
       </div>
-     <iframe width='520' height='2000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-google.html' style="overflow:hidden;"></iframe>
+      <iframe src="http://cmais.com.br/chat/culturabrasil" scrolling="no" height="680px" width="587px" frameborder="0" allowtransparency="true"></iframe>
+     <!--iframe width='520' height='2000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-google.html' style="overflow:hidden;"></iframe-->
     </div>
 
    
