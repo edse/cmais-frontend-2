@@ -31,13 +31,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   
           
       if (!in_array($file_mime_type, array("image/gif", "image/png", "image/jpg"))) {
-        
+        echo $file_mime_type."-000";
         if (unlink($_FILES['datafile']['tmp_name'])) {
           header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=2");
           die();
         }
       }
       else if ($file_size > 15728640) { // 15MB
+        echo $file_size."-1111";
         if (unlink($_FILES['datafile']['tmp_name'])) {
           header("Location: http://tvcultura.cmais.com.br/cocorico/tvcocorico?error=3");
           die();
