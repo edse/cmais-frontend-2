@@ -389,7 +389,7 @@ $(document).ready(function(){
         
       },
       beforeSend: function(){
-        $('.successo').hide();
+        $('.sucesso').hide();
       },
       rules:{
         nome:{
