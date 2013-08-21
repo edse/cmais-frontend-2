@@ -33,14 +33,13 @@ $assets = $pager->getResults();
     <p>Cozinha da Amiga Zazá</p>
   </div>
 
-
-
   <!--row-->
   
   <?php
-  
-  /**** NOT NOW
-  
+  /* RECEITINHAS
+   */ 
+  ?>
+   
   <div class="row-fluid conteudo destaques especial">
     <div class="span4 form-especial">
       <div class="seta"></div>
@@ -181,9 +180,10 @@ $assets = $pager->getResults();
   </div>
   <!-- /row-->
   
-   * 
-   */ ?>
-
+   <?php
+    /*
+     *  
+    */ ?>
 
 
   <?php if(count($favoritos) > 0): ?>
@@ -336,7 +336,6 @@ $(document).ready(function(){
               type: "POST",
               dataType: "text",
               url: $("#form-contato").attr("action"),
-              contentType:attr( "enctype", "multipart/form-data" ),
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('button#enviar').attr('disabled','disabled');
