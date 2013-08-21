@@ -337,7 +337,8 @@ $(document).ready(function(){
     
     $('button#enviar').click(function(){
       //$(".msgAcerto, .msgErro").hide();
-      //alert("Enviou"); 
+      //alert("Enviou");
+      $('.sucesso').hide(); 
     });
 
     function clearForm(){
@@ -387,9 +388,6 @@ $(document).ready(function(){
             });
             */
         
-      },
-      beforeSend: function(){
-        $('.sucesso').hide();
       },
       rules:{
         nome:{
