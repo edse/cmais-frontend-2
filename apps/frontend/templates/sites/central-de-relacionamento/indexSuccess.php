@@ -789,7 +789,7 @@ $(document).ready(function(){
                     $('#btn6').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                   })
                   
-                  $('#btn4').click(function(){
+                  $('#btn4, #btn5').click(function(){
                     email = $('#f4_email2').val();
                     $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                   });
