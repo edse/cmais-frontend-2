@@ -66,6 +66,7 @@ tr, td {
   height:393px;
   width:100%;
   display: block;
+  *overflow-y: scroll;
   
 }
 .title {
