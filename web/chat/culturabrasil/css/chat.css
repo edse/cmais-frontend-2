@@ -37,6 +37,7 @@ tr, td {
   height: 459px;
   width:493px;
   *width:493px;
+  *height:400px;
 }
 .chat-bottom {
   position: relative;
