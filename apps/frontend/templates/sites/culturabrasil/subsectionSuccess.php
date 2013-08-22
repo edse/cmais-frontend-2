@@ -42,6 +42,13 @@ if(isset($pager)){
           <?php else: ?>
         <li><?php echo $site->getTitle() ?> </li>
           <?php endif; ?>
+        <?php elseif($site->getSlug() == "especiais-1"): ?>
+          <?php if($section->getSlug() != "home"): ?>
+        <li><?php echo $site->getTitle() ?>  <span class="divider">»</span></li>
+        <li><?php echo $section->getTitle() ?> </li>
+          <?php else: ?>
+        <li><?php echo $site->getTitle() ?> </li>
+          <?php endif; ?>
         <?php else:?>         
         <li><?php echo $section->getTitle() ?> </li>
         <?php endif; ?>         
@@ -85,6 +92,21 @@ if(isset($pager)){
           </ul>
           <!-- /menu subsection-->
           <?php endif; ?>
+      <?php elseif($site->getSlug() == "especiais-1"): ?>
+      <div class="destaque-cultura subsection">
+        <div class="programa subsection">
+          <span class="interna">
+            <?php echo $site->getTitle(); ?>
+          </span>
+          <i class="borda-titulo subsection"></i>
+        </div>
+      </div>
+      
+      <!--clounaprincipal-->
+      <div class="row-fluid">
+        
+        <!--lista assets-->
+        <div class="lista-assets span8">
       <?php else: ?>
       <div class="destaque-cultura subsection">
         <div class="programa subsection">
