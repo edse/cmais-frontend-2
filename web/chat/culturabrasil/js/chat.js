@@ -68,9 +68,11 @@ $(document).ready(function() {
   }
 
   contentInfo = function(data, json) {
-    var html = '<tr id="id'+data.id+'"><td class="text-primary time">'+data.time+'</td><td><strong>'+data.name+':</strong> '+data.comment+'</td></tr>';  
+    var html = '<tr id="id'+data.id+'"><td class="text-primary time">'+data.time+'</td><td><strong>'+data.name+':</strong> '+data.comment+'</td></tr>';
+    var height = document.getElementById('chat-content').scrollHeight+2;  
     $('#chat-content').append(html);
-    $("#chat-content").scrollTop(document.getElementById('chat-content').scrollHeight+2); 
+    console.log(height)
+    $("#chat-content").scrollTop(height); 
     return;
   };
 
