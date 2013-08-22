@@ -41,7 +41,7 @@ class _assetActions extends sfActions
         */
       }
       
-      if($this->asset->Site->getSlug() == "culturabrasil"){
+      if(in_array($this->asset->Site->getSlug(), array("culturabrasil"))){
         $this->setLayout('culturabrasil');
       }
       
