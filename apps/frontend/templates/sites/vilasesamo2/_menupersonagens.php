@@ -14,11 +14,11 @@
               <ul class="slider-target">
                 <li>
                   <div class="inner personagens bel">
-                    <a href="/vilasesamo2/beto" title="Bel" class="btn-bel">
+                    <a href="/vilasesamo2/bel" title="Bel" class="btn-bel">
                       <img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="Personagem" />
-                      <p>Bel</p>
-                    </a>
+                     </a>
                   </div>
+                  <a href="/vilasesamo2/bel" title="Bel">Bel</a>
                 </li>
                 <li>
                   <div class="inner personagens beto">
