@@ -31,4 +31,4 @@
 #carrossel-personagem .slider .inner.zoe { background:#ce62cf !important;}
 
 #carrossel-personagem .slider .nome { font-size:18px; color:#d71c0d; text-transform:uppercase; display:block; text-align:center; }
-#carrossel-personagem .slider .nome:hover { font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif; }
+#carrossel-personagem .slider li:hover .nome { font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif; }
