@@ -36,7 +36,7 @@ tr, td {
   box-shadow: none;
   height: 459px;
   width:493px;
-  *width:493px;
+  *width:493px!important;
 }
 .chat-bottom {
   position: relative;
@@ -50,7 +50,7 @@ tr, td {
   border-width: 1px;
   box-shadow: none;
   width:493px;
-  *width:493px;
+  *width:493px!important;
 }
 #chat-wrapper{
   /*border-top: 1px solid #ddd;*/
