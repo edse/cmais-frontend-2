@@ -53,7 +53,7 @@
         <article class="span6 jogo">
           
           <a href="/vilasesamo2/jogos" title="Jogo">
-            <i class=".sprite-icon-jogos-peq"></i>Jogos
+            <i class="sprite-icon-jogos-peq"></i>Jogos
             <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" />
           </a> 
           <a href="/vilasesamo2/jogos" title="Jogos">Nome do Jogo</a>  
