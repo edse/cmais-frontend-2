@@ -92,6 +92,21 @@ if(isset($pager)){
           </ul>
           <!-- /menu subsection-->
           <?php endif; ?>
+      <?php elseif($site->getSlug() == "especiais-1"): ?>
+      <div class="destaque-cultura subsection">
+        <div class="programa subsection">
+          <span class="interna">
+            <?php echo $site->getTitle(); ?>
+          </span>
+          <i class="borda-titulo subsection"></i>
+        </div>
+      </div>
+      
+      <!--clounaprincipal-->
+      <div class="row-fluid">
+        
+        <!--lista assets-->
+        <div class="lista-assets span8">
       <?php else: ?>
       <div class="destaque-cultura subsection">
         <div class="programa subsection">
