@@ -43,7 +43,7 @@ if(isset($pager)){
         <li><?php echo $site->getTitle() ?> </li>
           <?php endif; ?>
         <?php elseif($site->getSlug() == "especiais-1"): ?>
-          <?php if($section != "home"): ?>
+          <?php if($section->getSlug() != "home"): ?>
         <li><?php echo $site->getTitle() ?>  <span class="divider">»</span></li>
         <li><?php echo $section->getTitle() ?> </li>
           <?php else: ?>
