@@ -44,7 +44,8 @@ footer .mapa .span12 .col-esq,
 .mais,
 #content h3,
 .header-bar li a,
-.topo-vila .nav li a:hover {font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.topo-vila .nav li a:hover,
+.destaques a {font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif;}
 /* /din-blackregular*/
 
 /* border radius*/
@@ -318,13 +319,16 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques .video { background:#f5861f; }
 .destaques .atividade { background:#883feb; }
 .destaques.container { max-width:940px; }
-.destaques i { float:left; margin-top:-15px;}
+.destaques i { float:left; }
 .destaques i.sprite-icon-jogos-grd:hover { background-position: -130px 0; }
 .destaques i.sprite-icon-clipes-grd:hover { background-position: 0 -598px; }
 .destaques i.sprite-icon-colorir-grd:hover { background-position: 0 -1070px;}
-.destaques a { display: block;}
+.destaques a { display: block; font-size:25px; color:#fff; text-transform:uppercase; font-weight:normal; padding-top:5px; text-align:left; }
+.destaques a  i { margin:0 5px; }
+/*
 .destaques h3 { overflow:hidden; margin:0; border-bottom:2px solid #0191fb; }
 .destaques h3 a { color:#fff; line-height:27px; text-align:left; display:block; padding:0; margin:4%; }
+*/
 .destaques section .video { background:#f5861f ; border-color:#f9a41b ; }
 .destaques section .video img,
 .destaques section .video h3 { border-color:#f07317 ; }
