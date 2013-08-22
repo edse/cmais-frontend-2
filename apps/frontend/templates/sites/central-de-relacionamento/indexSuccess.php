@@ -813,6 +813,7 @@ $(document).ready(function(){
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
                     $('#row6, #message, #btn4,#row9').hide();
                     //$('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected');
+                    $('f4_cod_programa').attr('value', '--')
                     $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   });
                   $('.backForm').live("click", function(){
