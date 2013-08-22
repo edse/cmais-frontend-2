@@ -28,6 +28,7 @@ a:hover { text-decoration:none; }
 
 /* dinmedium */
 input, button, select, textarea,
+.destaques a.asset,
 body { font-family: 'dinmedium', "Helvetica Neue", Helvetica, Arial, sans-serif; color:#737373; }
 /* /din-blackregular*/
 
@@ -314,7 +315,8 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .divisa { display: block; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-divisa.png) repeat-x; height:2px; max-width:940px; margin:0 auto 20px; }
 .bgtotal { width:100%; max-width:100% !important; background:#fee133; padding-top:5px; padding-bottom:25px; }
 .destaques section .span6 { width:31.6%; overflow:hidden; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
-.destaques section .span6 img { border-top:2px solid #0191fb; }
+.destaques section .span6 img { border:2px solid transparent; border-top:2px solid #0191fb; margin:-2px; overflow: hidden; }
+.destaques section .span6:hover img { border:2px solid red;}
 .destaques .jogo { background:#3aaaec; }
 .destaques .video { background:#f5861f; }
 .destaques .atividade { background:#883feb; }
@@ -323,8 +325,9 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques i.sprite-icon-jogos-grd:hover { background-position: -130px 0; }
 .destaques i.sprite-icon-clipes-grd:hover { background-position: 0 -598px; }
 .destaques i.sprite-icon-colorir-grd:hover { background-position: 0 -1070px;}
-.destaques a { display: block; font-size:25px; color:#fff; text-transform:uppercase; font-weight:normal; padding-top:1%; text-align:left; }
-.destaques a  i { margin:0 2%; }
+.destaques a { display: block; font-size:25px; line-height:30px; color:#fff; text-transform:uppercase; font-weight:normal; padding-top:4%; text-align:left; }
+.destaques a  i { margin:0 4%; }
+.destaques a.asset { font-size:18px; padding:4%; color:#fff; }
 /*
 .destaques h3 { overflow:hidden; margin:0; border-bottom:2px solid #0191fb; }
 .destaques h3 a { color:#fff; line-height:27px; text-align:left; display:block; padding:0; margin:4%; }
@@ -336,7 +339,10 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques section .atividade img,
 .destaques section .atividade h3 { border-color:#7732e5 ; }
 .destaques section { margin-bottom:20px; }
+.destaques section .atividade i { margin-top:-3%; }
+.destaques section .atividade img { margin-top:1%; }
 /* /home*/
+
 
 /* top menu*/
 .header-bar h1 { float:left; }

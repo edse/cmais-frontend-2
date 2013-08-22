@@ -51,24 +51,25 @@
     <div class="destaques row-fluid container">
       <section class="span8">
         <article class="span6 jogo">
-          
           <a href="/vilasesamo2/jogos" title="Jogo">
             <i class="sprite-icon-jogos-peq"></i>Jogos
             <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" />
           </a> 
-          <a class="asset" href="/vilasesamo2/jogos" title="Jogos">Nome do Jogo</a>  
+          <a class="asset" href="/vilasesamo2/jogos-interna" title="Jogos">Nome do Jogo</a>  
         </article>
         <article class="span6 video">
           <a href="/vilasesamo2/clipes" title="Clipes">
+            <i class="sprite-icon-videos-peq"></i>Vídeos
             <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Clipes" />
           </a> 
-          <h3><a href="/vilasesamo2/clipes" title="Clipes">Clipe</a></h3>       
+          <a class="asset" href="/vilasesamo2/videos-interna" title="Clipes">Nome do Video</a>      
         </article>
         <article class="span6 atividade">
           <a href="/vilasesamo2/atividades" title="Para Colorir">
+            <i class="sprite-icon-atividades-peq"></i>atividades
             <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Para Colorir" />
           </a> 
-          <h3><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h3>       
+          <a class="asset" href="/vilasesamo2/atividades-interna" title="Para Colorir">Nome da atividade</a>       
         </article>
       
       </section>
