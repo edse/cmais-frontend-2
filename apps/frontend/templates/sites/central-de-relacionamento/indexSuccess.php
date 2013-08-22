@@ -764,7 +764,7 @@ $(document).ready(function(){
                 
                 $(document).ready(function(){
                   var email = '';
-                  $("#f4_mais").attr("checked","false");
+                  $("#f4_mais").removeAttr("checked");
                   $("#f4_cod_programa option").attr("value", "");
                   $(".dicas").click(function(){
                     $(this).prev().toggleClass('icon-minus');
