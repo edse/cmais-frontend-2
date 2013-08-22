@@ -64,7 +64,7 @@
 
       <!-- remover este estilo  depois q acabar campanha da radio-->
       <div id="horario" style="margin-top:10px;">
-        <a href="javascript: window.open('http://www.culturabrasil.com.br/controle-remoto?start=fm','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
+        <a href="javascript: window.open('http://culturafm.cmais.com.br/controleremoto','controle','width=400,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
       </div>
       <img style="position: absolute; left: 0px;*left:0px;" usemap="#cultura" src="/portal/images/capaPrograma/culturafm/destaqueDEZEMBRO.png" title="Fim de ano na TV Cultura com música clássica" alt="Fim de ano na TV Cultura com música clássica" >
       <map name="cultura" id="cultura">

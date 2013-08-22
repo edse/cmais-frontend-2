@@ -179,7 +179,7 @@
               <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
               <li><a href="javascript:;" id="btn-brasil" class="pl" title="Cultura Brasil" >Cultura Brasil</a></li>
               <li><a href="javascript:;" class="jp-pause" tabindex="1" title="Pause">pause</a></li>
-              <li><a href="javascript:;" class="jp-stop" tabindex="1" title="Stop">stop</a></li>
+              <!--li><a href="javascript:;" class="jp-stop" tabindex="1" title="Stop">stop</a></li-->
               <div class="jp-volume_controls">
                 <li><a href="javascript:;" class="jp-mute" tabindex="1" title="Mute">mute</a></li>
                 <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="">unmute</a></li>
@@ -208,21 +208,21 @@
       <!-- descrição programa -->
       <section class="cr-pgm">
       <?php
-      if(isset($schedules)):
-        $style = 1; //Par ou Impar
+      //if(isset($schedules)):
+        //$style = 1; //Par ou Impar
         
-        foreach($schedules as $k=>$d):
-          $now = false;
-          if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
-            $now = true;
-          }
+        //foreach($schedules as $k=>$d):
+          //$now = false;
+          //if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
+            //$now = true;
+          //}
     
-          if($now):
-            if($d->retriveLiveImage() != ""){
-              $imagemPrograma = $d->retriveLiveImage();  
-            }else{
-              $imagemPrograma = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
-            }
+         // if($now):
+           // if($d->retriveLiveImage() != ""){
+             // $imagemPrograma = $d->retriveLiveImage();  
+            //}else{
+              //$imagemPrograma = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
+            //}
       ?>
 
             <!-- header -->
@@ -233,14 +233,14 @@
             
             <!-- imagem -->  
             <div class="cr-img-pgm">
-              <img src="<?php echo $imagemPrograma ?>" alt="<?php echo $d->Program->getTitle()?>" id="img_pgm_atual" />
+              <img src="<?php //echo $imagemPrograma ?>" alt="<?php //echo $d->Program->getTitle()?>" id="img_pgm_atual" />
             </div>  
             <!-- /imagem -->
             
             <!-- descricao programa -->
             <div class="cr-desc-pgm">
               <a class="cr-links cr-logo-cultura-brasil" href="http://culturabrasil.cmais.com.br/" title="Cultura Brasil"></a>
-              <h2 id="titulo_pgm_atual"><?php echo $d->Program->getTitle()?></h2>
+              <h2 id="titulo_pgm_atual"><?php //echo $d->Program->getTitle()?></h2>
               
               <!-- detalhe musica -->
               <div class="cr-det-mus-pgm">
@@ -260,8 +260,8 @@
           </section>
           <!-- /descrição programa -->              
               
-      <?php endif; 
-        endforeach;
+      <?php //endif; 
+       // endforeach;
       ?>
         <!-- lista a seguir -->
       <section class="cr-lista-a-seguir">
@@ -272,21 +272,21 @@
         <ul id="lista_pgm_a_seguir">
       
       <?php 
-        $cont = 1;
-        foreach($schedules as $k=>$d):
-          if((strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateStart())) && $cont <= 7) {
+        //$cont = 1;
+        //foreach($schedules as $k=>$d):
+          //if((strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateStart())) && $cont <= 7) {
       ?>
             <!-- item -->
-            <li class="<?php if($style==0) {$style++;echo"im";}else{$style=0;}?>par">
-              <h5><?php echo $d->retriveTitle(); ?></h5>
-              <p class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?> h</p>
+            <li class="<?php //if($style==0) {$style++;echo"im";}else{$style=0;}?>par">
+              <h5><?php //echo $d->retriveTitle(); ?></h5>
+              <p class="hora"><?php //echo format_datetime($d->getDateStart(), "HH:mm") ?> h</p>
             </li>
             <!-- item -->
       <?php 
-            $cont++;
-          }
-        endforeach;
-      endif; 
+            //$cont++;
+        //  }
+        //endforeach;
+      //endif; 
       ?>    
       
           

@@ -2053,6 +2053,7 @@ EOT;
         ->orderBy('s.date_start asc')
         ->limit('1')
         ->execute();
+      
       foreach($noar as $n){
         $titulo =   $n->getProgram()->getTitle();
         $imagem =   $n->retriveLiveImage();
@@ -2061,6 +2062,17 @@ EOT;
         
         $return["noar"][] = array("titulo"=> $titulo,  "data"=> format_datetime($n->getDateStart(), "HH:mm"), "imagem"=> $n->retriveLiveImage());
       }
+      
+      if(!@$return["noar"]){
+        $cont = 0;
+        foreach($schedules as $s){
+          if($cont == 0){
+            $return["noar"][] = array("titulo"=> $s->Program->getTitle(), "data"=> format_datetime($s->getDateStart(), "HH:mm"), "imagem"=> $s->retriveLiveImage());
+            $cont++;
+          }
+        }
+      }
+      
     }
     die(json_encode($return));
   }

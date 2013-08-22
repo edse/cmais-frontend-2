@@ -38,7 +38,7 @@
     <div class="topo-programa" id="home">
       
       <div id="horario" style="margin-top:10px;top:20px;">
-        <a href="javascript: window.open('http://www.culturabrasil.com.br/controle-remoto?start=fm','controle','width=300,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
+        <a href="javascript: window.open('http://culturafm.cmais.com.br/controleremoto','controle','width=400,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
       </div>
     
       <!-- descomentar esta linha depois q acabar campanha da radio -->

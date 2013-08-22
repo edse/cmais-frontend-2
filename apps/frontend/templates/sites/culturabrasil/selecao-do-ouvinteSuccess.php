@@ -33,7 +33,7 @@
       
       <!-- titulo -->
       <h1>Seleção do ouvinte</h1>
-      <p class="horario">Preencha e envie o formulário abaixo com até seis músicas adequadas à programação da rádio.</p>
+      <p class="horario"><?php echo $section->getDescription() ?></p>
       <!--titulo-->
       
       <!-- row form -->

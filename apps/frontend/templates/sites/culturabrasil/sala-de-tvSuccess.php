@@ -31,9 +31,9 @@
       <div id="videoPlayer">
         <span class="falta-flash"> Você precisa ter o flash instalado em seu computador<br/> para acessar esse site.<br/> <a href="http://get.adobe.com/br/flashplayer/"  target="blank" title="Download Flash Player">Clique aqui para fazer o download</a>. </span>
       </div>
-      <script src="http://www.culturabrasil.com.br//_libs/mediaplayer/swfobject.js" type="text/javascript"></script>
+      <script src="/portal/js/mediaplayer/swfobject.js" type="text/javascript"></script>
       <script>
-        var so = new SWFObject("http://www.culturabrasil.com.br/_libs/mediaplayer/player.swf", "cam1", "450", "338", "9");
+        var so = new SWFObject("/portal/js/mediaplayer/player.swf", "cam1", "450", "338", "9");
         so.addParam("allowscriptaccess", "always");
         so.addParam("allowfullscreen", "true");
         so.addParam("wmode", "transparent");
