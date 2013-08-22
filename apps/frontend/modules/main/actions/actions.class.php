@@ -298,7 +298,7 @@ class mainActions extends sfActions
         else {
           $parm3Object = $this->parse($param3);
           if(get_class($parm3Object) == "Section") {
-            $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, $param3);
+            $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1253, $param3);
             $this->getRequest()->setParameter('object', $section);
             $this->forward('_section', 'index');
             die();
