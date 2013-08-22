@@ -316,7 +316,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .bgtotal { width:100%; max-width:100% !important; background:#fee133; padding-top:5px; padding-bottom:25px; }
 .destaques section .span6 { width:31.6%; overflow:hidden; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
 .destaques section .span6 img { border-top:2px solid #0191fb; margin-top:2%; }
-.destaques section .span6:hover img { border:2px solid red; margin:-2px; overflow: hidden; }
+.destaques section .span6:hover img { -moz-box-shadow: inset 0 0 10px red; }
 .destaques .jogo { background:#3aaaec; }
 .destaques .video { background:#f5861f; }
 .destaques .atividade { background:#883feb; }
