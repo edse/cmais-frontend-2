@@ -51,12 +51,12 @@
     <div class="destaques row-fluid container">
       <section class="span8">
         <article class="span6 jogo">
-          <h3><a href="/vilasesamo2/jogos" title="Jogos"><i class=".sprite-icon-jogos-peq"></i>Jogos</a></h3>   
+          
           <a href="/vilasesamo2/jogos" title="Jogo">
+            <i class=".sprite-icon-jogos-peq"></i>Jogos
             <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" />
           </a> 
-          <a href="/vilasesamo2/jogos-interna" title="Jogo">Nome do Jogo</a>
-              
+          <a href="/vilasesamo2/jogos" title="Jogos">Nome do Jogo</a>  
         </article>
         <article class="span6 video">
           <a href="/vilasesamo2/clipes" title="Clipes">
