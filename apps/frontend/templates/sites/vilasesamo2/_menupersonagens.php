@@ -18,7 +18,7 @@
                       <img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="Personagem" />
                      </a>
                   </div>
-                  <a href="/vilasesamo2/bel" title="Bel">Bel</a>
+                  <a class="nome" href="/vilasesamo2/bel" title="Bel">Bel</a>
                 </li>
                 <li>
                   <div class="inner personagens beto">
