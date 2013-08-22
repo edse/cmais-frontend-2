@@ -700,7 +700,7 @@ class _assetActions extends sfActions
     if($this->site->getSlug() == "castelo" && $this->asset->getSlug() != "creditos" && !isset($_REQUEST['layout']))
       $this->setLayout(false);
 		
-		if($this->site->getSlug() == "culturabrasil"){
+		if($this->site->getSlug() == "culturabrasil" || $this->site->Program->Channel->getSlug() == "culturabrasil" || $this->site->getSlug() == "especiais-1"){
       $this->setLayout('culturabrasil');
     }	
 		if ($request->getHost() == "m.cmais.com.br") {
