@@ -44,7 +44,8 @@ footer .mapa .span12 .col-esq,
 .mais,
 #content h3,
 .header-bar li a,
-.topo-vila .nav li a:hover {font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.topo-vila .nav li a:hover,
+.destaques a {font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif;}
 /* /din-blackregular*/
 
 /* border radius*/
@@ -230,6 +231,13 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-icon-personagens-med{ background-position: -130px -602px; width: 56px; height: 56px; } 
 .sprite-icon-personagens-peq{ background-position: -130px -708px; width: 38px; height: 38px; } 
 .sprite-icon-videos-med{ background-position: -130px -796px; width: 54px; height: 45px; } 
+
+.sprite-icon-atividades-peq,
+.sprite-icon-jogos-peq,
+.sprite-icon-videos-peq { background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-destaque.png); } 
+.sprite-icon-atividades-peq{ background-position: 0 0; width: 31px; height: 39px; } 
+.sprite-icon-jogos-peq{ background-position: 0 -89px; width: 38px; height: 27px; } 
+.sprite-icon-videos-peq{ background-position: 0 -166px; width: 38px; height: 31px; } 
 /*/sprite*/
 
 
@@ -304,20 +312,23 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques .banner a img,
 .destaques .banner a { display: block; width:100%; height:250px; }
 .divisa { display: block; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-divisa.png) repeat-x; height:2px; max-width:940px; margin:0 auto 20px; }
-.bgtotal { width:100%; max-width:100% !important; background:#fee133; padding-top:5px; }
+.bgtotal { width:100%; max-width:100% !important; background:#fee133; padding-top:5px; padding-bottom:25px; }
 .destaques section .span6 { width:31.6%; overflow:hidden; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
 .destaques section .span6 img { border-top:2px solid #0191fb; }
 .destaques .jogo { background:#3aaaec; }
 .destaques .video { background:#f5861f; }
 .destaques .atividade { background:#883feb; }
 .destaques.container { max-width:940px; }
-.destaques i { float:left; margin-top:-15px;}
+.destaques i { float:left; }
 .destaques i.sprite-icon-jogos-grd:hover { background-position: -130px 0; }
 .destaques i.sprite-icon-clipes-grd:hover { background-position: 0 -598px; }
 .destaques i.sprite-icon-colorir-grd:hover { background-position: 0 -1070px;}
-.destaques a { display: block;}
+.destaques a { display: block; font-size:25px; color:#fff; text-transform:uppercase; font-weight:normal; padding-top:5px; text-align:left; }
+.destaques a  i { margin:0 5px; }
+/*
 .destaques h3 { overflow:hidden; margin:0; border-bottom:2px solid #0191fb; }
 .destaques h3 a { color:#fff; line-height:27px; text-align:left; display:block; padding:0; margin:4%; }
+*/
 .destaques section .video { background:#f5861f ; border-color:#f9a41b ; }
 .destaques section .video img,
 .destaques section .video h3 { border-color:#f07317 ; }

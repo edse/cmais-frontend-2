@@ -40,7 +40,11 @@ class _assetActions extends sfActions
         }
         */
       }
-
+      
+      if(in_array($this->asset->Site->getSlug(), array("culturabrasil"))){
+        $this->setLayout('culturabrasil');
+      }
+      
       if(in_array($this->asset->Site->getSlug(), array("cedoc","cedoc2"))) {
         $this->setLayout('cedoc');   
         /*
