@@ -289,7 +289,7 @@ class mainActions extends sfActions
     }
     elseif($param1 == "culturabrasil"){
       if($param2 == "especiais"){
-        $section = $this->site = Doctrine::getTable('Section')->findOneById(1929);
+        $section = $this->site = Doctrine::getTable('Section')->findOneById(2578);
         $this->getRequest()->setParameter('object', $section);
         $this->forward('_section', 'index');
         die();
@@ -317,18 +317,6 @@ class mainActions extends sfActions
         }
         else {
           if($param5 == "") {
-            /*
-            $parm4Object = $this->parse($param4);
-            if(get_class($parm4Object) == "Section") {
-              if($parm4Object->slug != "arquivo")
-                $this->forwardObject($parm4Object);
-              else
-                header("Location: http://culturabrasil.cmais.com.br/programas/" . $param3);
-                die();
-            }
-            else
-              $this->forward404();
-            */
             $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, $param4);
             if($section->slug) {
               if($section->slug != "arquivo") {
