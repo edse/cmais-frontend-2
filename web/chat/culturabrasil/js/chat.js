@@ -69,12 +69,8 @@ $(document).ready(function() {
 
   contentInfo = function(data, json) {
     var html = '<tr id="id'+data.id+'"><td class="text-primary time">'+data.time+'</td><td><strong>'+data.name+':</strong> '+data.comment+'</td></tr>';
-    var height = 0;
-    $("#id"+data.id).each(function(){
-      height = height + document.getElementById('chat-content').scrollHeight+2;
-    });  
+    var height = document.getElementById('chat-content').scrollHeight+2;  
     $('#chat-content').append(html);
-    console.log(height + "teste")
     $("#chat-content").scrollTop(height); 
     return;
   };
