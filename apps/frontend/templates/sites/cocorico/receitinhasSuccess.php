@@ -149,12 +149,32 @@ $assets = $pager->getResults();
                <input id="regulamento" class="check" type="checkbox" name="regulamento">
                <label>Li e concordo com o regulamento.</label>
             </div>
+            <p class="sucesso" style="display:none;">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
+            
+            <script type="text/javascript">
+              function getSuccess(variable) {
+                var query = window.location.search.substring(1);
+                var vars = query.split("&");
+                for (var i=0;i<vars.length;i++){
+                  var pair = vars[i].split("=");
+                  if (pair[0] == variable) {
+                    return pair[1];
+                  }
+                }
+              }
+              var success = getSuccess("success");
+              if(success == 1 || success ==2){
+                alert("Humm... esta receitinha parece ser uma delícia"+success);
+                $(".sucesso").show();  
+              }
+            </script>
+            
             <?php
-            if(isset($_GET["success"])=="1" || isset($_GET["success"])=="2"){
+            //if(isset($_GET["success"])=="1" || isset($_GET["success"])=="2"){
             ?>
-              <p class="sucesso">Hum... Essa receitinha parece uma delícia! Obrigado!</p>
+              <!-- p class="sucesso">Hum... Essa receitinha parece uma delícia! Obrigado!</p -->
             <?php  
-            }
+            //}
             ?>
             
             <button type="submit"name="enviar" id="enviar" class="btn">enviar</button>
