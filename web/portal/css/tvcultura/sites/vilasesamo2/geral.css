@@ -338,7 +338,10 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques section .atividade img,
 .destaques section .atividade h3 { border-color:#7732e5 ; }
 .destaques section { margin-bottom:20px; }
+.destaques section .atividade i { margin-top:-3%; }
+.destaques section .atividade img { margin-top:1%; }
 /* /home*/
+
 
 /* top menu*/
 .header-bar h1 { float:left; }
