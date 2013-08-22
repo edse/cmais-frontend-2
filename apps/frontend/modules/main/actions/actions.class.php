@@ -289,10 +289,21 @@ class mainActions extends sfActions
     }
     elseif($param1 == "culturabrasil"){
       if($param2 == "especiais"){
-        $section = $this->site = Doctrine::getTable('Section')->findOneById(2578);
-        $this->getRequest()->setParameter('object', $section);
-        $this->forward('_section', 'index');
-        die();
+        if($param3 == "") {
+          $section = $this->site = Doctrine::getTable('Section')->findOneById(2578);
+          $this->getRequest()->setParameter('object', $section);
+          $this->forward('_section', 'index');
+          die();
+        }
+        else {
+          $parm3Object = $this->parse($param3);
+          if(get_class($parm3Object) == "Section") {
+            $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1253, $param3);
+            $this->getRequest()->setParameter('object', $section);
+            $this->forward('_section', 'index');
+            die();
+          }
+        }
       }
 
       $parm2Object = $this->parse($param2);
