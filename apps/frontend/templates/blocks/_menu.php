@@ -6,16 +6,18 @@
 <script src="http://www.culturabrasil.com.br/js/User.class.js" type="text/javascript"></script>
 
 <script type="text/javascript">
+/*
     var Menu    = new Menu(); 
     var User    = new User(); 
-
+*/
     $(function(){
+      /*
       $('#logo').click(function(){
         location.href=URL;
       });
       Menu.initHandler();
       User.initHandler();
-
+      */
       var controle = null;
 
       $('#controle-remoto, #ouca').click(function(){
