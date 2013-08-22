@@ -70,7 +70,7 @@ $(document).ready(function() {
   contentInfo = function(data, json) {
     var html = '<tr id="id'+data.id+'"><td class="text-primary time">'+data.time+'</td><td><strong>'+data.name+':</strong> '+data.comment+'</td></tr>';  
     $('#chat-content').append(html);
-    $("#chat-content").scrollTop($('#chat-content').scrollHeight+2); 
+    $("#chat-content").scrollTop($('chat-content').height()); 
     return;
   };
 
