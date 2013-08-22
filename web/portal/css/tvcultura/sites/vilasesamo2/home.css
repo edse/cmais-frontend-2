@@ -30,3 +30,5 @@
 #carrossel-personagem .slider .inner.comecome { background:#9928ce !important; }
 #carrossel-personagem .slider .inner.zoe { background:#ce62cf !important;}
 
+#carrossel-personagem .slider ul li a { font-size:18px; color:#d71c0d; text-transform:uppercase; }
+#carrossel-personagem .slider ul li a:hover { font-weight:bold; }
