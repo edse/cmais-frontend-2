@@ -809,6 +809,7 @@ $(document).ready(function(){
                     $('#f4_maisinfo').hide();
                     $('.salvar-alteracoes').hide();
                     $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
+                    $(.)
                     $('#f4_mais').attr('checked','true');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
                     $('#row6, #message, #btn4,#row9').hide();
