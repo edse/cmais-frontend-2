@@ -323,8 +323,8 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques i.sprite-icon-jogos-grd:hover { background-position: -130px 0; }
 .destaques i.sprite-icon-clipes-grd:hover { background-position: 0 -598px; }
 .destaques i.sprite-icon-colorir-grd:hover { background-position: 0 -1070px;}
-.destaques a { display: block; font-size:25px; color:#fff; text-transform:uppercase; font-weight:normal; padding-top:5px; text-align:left; }
-.destaques a  i { margin:0 5px; }
+.destaques a { display: block; font-size:25px; color:#fff; text-transform:uppercase; font-weight:normal; padding-top:1%; text-align:left; }
+.destaques a  i { margin:0 2%; }
 /*
 .destaques h3 { overflow:hidden; margin:0; border-bottom:2px solid #0191fb; }
 .destaques h3 a { color:#fff; line-height:27px; text-align:left; display:block; padding:0; margin:4%; }
