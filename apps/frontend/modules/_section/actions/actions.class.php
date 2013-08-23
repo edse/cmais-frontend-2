@@ -790,23 +790,35 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%'");               
               $this->assetsQuery->orderBy('av.bitrate desc');
             }
-            elseif( ($this->site->Program->Channel->getSlug() == 'culturabrasil') && (in_array($this->section->getSlug(), array('home', 'home-page', 'homepage'))) ) {
-              $arquivo[] = "arquivo";
-              if($this->section->subsections()) {
-                foreach($this->section->subsections() as $s) {
-                  $arquivo[] = $s->getSlug();
+            elseif( ($this->site->Program->Channel->getSlug() == 'culturabrasil') && (in_array($this->section->getSlug(), array('home', 'home-page', 'homepage'))) || $this->section->getSlug() == "especiais-1" ) {
+              if ($this->section->getSlug() == "especiais-1") {
+                  
+                $siteAssets = $this->section->Site->getAssets();
+                
+                foreach($siteAssets as $a) {
+                  echo $a->getTitle() . "<br>";
                 }
+                die();
+                
               }
-              $this->assetsQuery = Doctrine_Query::create()
-                ->select('a.*')
-                ->from('Asset a, SectionAsset sa, Section s')
-                ->where('sa.section_id = s.id')
-                ->andWhere('sa.asset_id = a.id')
-                ->andWhere('a.site_id = ?', $this->site->id)
-                ->andWhereIn('s.slug', $arquivo)
-                ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
-                ->andWhere('a.is_active = ?', 1)
-                ->orderBy('a.created_at desc');
+              else {
+                $arquivo[] = "arquivo";
+                if($this->section->subsections()) {
+                  foreach($this->section->subsections() as $s) {
+                    $arquivo[] = $s->getSlug();
+                  }
+                }
+                $this->assetsQuery = Doctrine_Query::create()
+                  ->select('a.*')
+                  ->from('Asset a, SectionAsset sa, Section s')
+                  ->where('sa.section_id = s.id')
+                  ->andWhere('sa.asset_id = a.id')
+                  ->andWhere('a.site_id = ?', $this->site->id)
+                  ->andWhereIn('s.slug', $arquivo)
+                  ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+                  ->andWhere('a.is_active = ?', 1)
+                  ->orderBy('a.created_at desc');
+              }
             }
             else {
               $this->assetsQuery = Doctrine_Query::create()
