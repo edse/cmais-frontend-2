@@ -155,7 +155,7 @@ class _assetActions extends sfActions
 
       // siteSections
       if($this->asset->Site->getType() == "ProgramaRadio"){
-        if($this->site->Program->Channel->getSlug() == "culturabrasil"){
+        if( ($this->site->Program->Channel->getSlug() == "culturabrasil") || ($this->site->getSlug() == "especiais-1") ){
           $this->siteSections = Doctrine_Query::create()
             ->select('s.*')
             ->from('Section s')
@@ -1079,7 +1079,7 @@ class _assetActions extends sfActions
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
             }
             else {
-              if($this->site->Program->Channel->getSlug() == "culturabrasil"){
+              if($this->site->Program->Channel->getSlug() == "culturabrasil" || $this->site->getSlug() == "especiais-1"){
                 if($debug) print "<br>2-1-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/culturabrasil/'.$this->asset->AssetType->getSlug();
                 $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/culturabrasil/'.$this->asset->AssetType->getSlug());
               }
