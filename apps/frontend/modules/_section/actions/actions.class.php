@@ -822,10 +822,18 @@ class _sectionActions extends sfActions
               
                 echo "Total: ".count($siteAssets);
                 
-                foreach($siteAssets as $a) {
-                  echo $a->getTitle() . "<br>";
-                }
                 
+                foreach($siteAssets as $a) {
+                  $currentAssetSections = array();
+                  $sections = $a->getSections();
+                  foreach($sections as $s) {
+                    $currentAssetSections[] = $s->getSLug();
+                  }
+                  if ( (in_array(array('home', 'home-page', 'homepage'), $currentAssetSections)) ) {
+                    $assetIds[] = $a->getId();
+                  }
+                }
+                echo implode(",", $assetIds);
                 die();
                 
             }
