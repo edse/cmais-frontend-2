@@ -436,10 +436,20 @@ footer .relacionados li { *margin-right:3% }
 .todos-itens li { *margin-right:0%; }
 */
 
-.destaques section .span6 img { *border:2px solid transparent; *border-top:2px solid #0191fb;  *border-bottom:2px solid #0191fb; *margin:-2px; }
-.destaques section .span6 img { border:2px solid transparent\9; border-top:2px solid #0191fb\9;  border-bottom:2px solid #0191fb\9; margin:-2px\9; }
-.destaques section .span6:hover img { border:2px solid #02CBFF\9; }
-.destaques section .span6:hover img { *border:2px solid #02CBFF; }
+.destaques .span6 img { *border:2px solid transparent; *border-top:2px solid #0191fb;  *border-bottom:2px solid #0191fb; *margin:-2px; }
+.destaques .span6 img { border:2px solid transparent\9; border-top:2px solid #0191fb\9;  border-bottom:2px solid #0191fb\9; margin:-2px\9; }
+.destaques .span6:hover img { border:2px solid #02CBFF\9; }
+.destaques .span6:hover img { *border:2px solid #02CBFF; }
+
+.destaques .span6.video img { *border:2px solid transparent; *border-top:2px solid #F07317;  *border-bottom:2px solid #0191fb; *margin:-2px; }
+.destaques .span6.video img { border:2px solid transparent\9; border-top:2px solid #0191fb\9;  border-bottom:2px solid #0191fb\9; margin:-2px\9; }
+.destaques .span6.video:hover img { border:2px solid #F9A41B\9; }
+.destaques .span6.video:hover img { *border:2px solid #F9A41B; }
+
+.destaques .span6.atividade img { *border:2px solid transparent; *border-top:2px solid #0191fb;  *border-bottom:2px solid #0191fb; *margin:-2px; }
+.destaques .span6.atividade img { border:2px solid transparent\9; border-top:2px solid #0191fb\9;  border-bottom:2px solid #0191fb\9; margin:-2px\9; }
+.destaques .span6.atividade:hover img { border:2px solid #B16AF2\9; }
+.destaques .span6.atividade:hover img { *border:2px solid #B16AF2; }
 /* /ie */
 
 
