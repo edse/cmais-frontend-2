@@ -820,8 +820,7 @@ class _sectionActions extends sfActions
                   ->orderBy('a.display_order DESC')
                   ->execute();
               
-                echo "Total: ".count($siteAssets);
-                
+                echo "Total: ".count($siteAssets) . "<br>";
                 
                 foreach($siteAssets as $a) {
                   $currentAssetSections = array();
@@ -834,7 +833,7 @@ class _sectionActions extends sfActions
                   }
                 }
                 echo "total em home:" . count($assetIds) . "<br>";
-                echo implode(",", $assetIds);
+                echo "IDs dos assets em home: " . implode(",", $assetIds);
                 die();
                 
             }
