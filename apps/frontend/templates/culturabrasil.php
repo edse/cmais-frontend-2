@@ -15,7 +15,7 @@
     <title>Cultura Brasil - Portal de Música Brasileira</title>
     <meta name="title" content="Cultura Brasil - Portal de Música Brasileira" />
     <meta name="description" content="Portal de música brasileira da Rádio Cultura Brasil" />
-    <meta name="keywords" content="musica, musica brasileira, radio cultura, radio cultura brasil" />
+    <meta name="keywords" content="musica, musica brasileira, radio cultura, radio cultura brasil, playlist" />
     <meta name="language" content="pt_BR" />
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="Cultura Brasil - Portal de Música Brasileira" />
