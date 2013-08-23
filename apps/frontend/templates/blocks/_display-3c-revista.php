@@ -172,7 +172,7 @@
                 //console.log(item.selector)
                 //console.log(miolo.selector)
                 stoproda(roda);
-                roda = setInterval(function(){rodadestaque(cont)}, 7000);
+                roda = setInterval(function(){rodadestaque(cont)}, 10000);
               }
               
               function stoproda(roda){
