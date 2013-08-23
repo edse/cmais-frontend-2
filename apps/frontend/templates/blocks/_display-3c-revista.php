@@ -109,7 +109,7 @@
              
              var roda;
              var roda2;
-             roda = setInterval(function(){rodadestaque(1)}, 7000);
+             roda = setInterval(function(){rodadestaque(1)}, 10000);
              
              $('.destaque-revista ul li a').click( function(){
                 var posicao = $(this).attr('data-order');
@@ -118,7 +118,7 @@
                 //$(this).parent().addClass('ativo');
                 $('#conteudo-revista').find('.ativo').removeClass('ativo').css('display','none');
                 //$('#conteudo-revista').find('#conteudo-item'+posicao).fadeIn('fast').addClass('ativo');
-                rodadestaque(posicao, true);
+                //rodadestaque(posicao, true);
                 
               });
               var i = 0; 
