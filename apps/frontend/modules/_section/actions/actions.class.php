@@ -808,6 +808,35 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1)
                 ->orderBy('a.created_at desc');
             }
+            elseif( ($this->site->getSlug() == 'especiais-1') && (in_array($this->section->getSlug(), array('home', 'home-page', 'homepage'))) ) {
+                  
+                $siteAssets = Doctrine_Query::create()
+                  ->select('a.*')
+                  ->from('Asset a')
+                  ->where('a.asset_type_id = ?', 1)
+                  ->andWhere('a.site_id = ?', 1253)
+                  ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+                  ->andWhere('a.is_active = ?', 1)
+                  ->orderBy('a.display_order DESC')
+                  ->execute();
+              
+                echo "Total: ".count($siteAssets) . "<br>";
+                
+                foreach($siteAssets as $a) {
+                  $currentAssetSections = array();
+                  $sections = $a->getSections();
+                  foreach($sections as $s) {
+                    $currentAssetSections[] = $s->getSLug();
+                  }
+                  if ( (in_array('home', $currentAssetSections)) ) {
+                    $assetIds[] = $a->getId();
+                  }
+                }
+                echo "total em home:" . count($assetIds) . "<br>";
+                echo "IDs dos assets em home: " . implode(",", $assetIds);
+                die();
+                
+            }
             else {
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
