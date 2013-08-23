@@ -66,7 +66,7 @@
           wmode: "window"
         });
       
-        //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
+        $("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         function LoadInfoMusica(){
           time = new Date().getTime();
           $.ajax({
