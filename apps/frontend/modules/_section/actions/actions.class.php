@@ -833,6 +833,7 @@ class _sectionActions extends sfActions
                     $assetIds[] = $a->getId();
                   }
                 }
+                echo "total em home:" . count($assetIds) . "<br>";
                 echo implode(",", $assetIds);
                 die();
                 
