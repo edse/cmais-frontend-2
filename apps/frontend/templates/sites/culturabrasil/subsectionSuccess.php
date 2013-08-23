@@ -44,7 +44,7 @@ if(isset($pager)){
           <?php endif; ?>
         <?php elseif($site->getSlug() == "especiais-1"): ?>
           <?php if($section->getSlug() != "home"): ?>
-        <li><?php echo $site->getTitle() ?>  <span class="divider">»</span></li>
+        <li><a href="<?php echo url_for('homepage')?>especiais"><?php echo $site->getTitle() ?></a>  <span class="divider">»</span></li>
         <li><?php echo $section->getTitle() ?> </li>
           <?php else: ?>
         <li><?php echo $site->getTitle() ?> </li>
