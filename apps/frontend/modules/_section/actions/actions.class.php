@@ -563,7 +563,7 @@ class _sectionActions extends sfActions
                   if($this->busca != "")
                     $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->busca.'%', '%'.$this->busca.'%'));
                   $this->assetsQuery->andWhere('a.is_active = ?', 1);
-                  $this->assetsQuery->andWhere('a.date_start = IS NULL OR a.date_start > ?', date("Y-m-d H:i:s"));
+                  //$this->assetsQuery->andWhere('a.date_start = IS NULL OR a.date_start > ?', date("Y-m-d H:i:s"));
                   $this->assetsQuery->orderBy('a.created_at desc');
                 }
               }
