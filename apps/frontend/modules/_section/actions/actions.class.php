@@ -74,14 +74,14 @@ class _sectionActions extends sfActions
       }
       if($this->section->Site->getSlug()=="segundatela" && $this->section->getSlug()=="home" || $this->section->Site->getSlug()=="segundatela" && $this->section->getSlug()=="qss") {
         $this->setLayout('responsivo');
-	  }
+    }
       if($this->section->Site->getSlug()=="qss-fb" && $this->section->getSlug()=="home") {
         $this->setLayout(false);
       }
-	  if($this->section->Site->getSlug()=="cocorico" && $this->section->getSlug()=="3d") {
+    if($this->section->Site->getSlug()=="cocorico" && $this->section->getSlug()=="3d") {
         $this->setLayout(false);
       }
-	  if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
+    if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
         $this->setLayout('responsivo');
       }
       if(in_array($this->section->Site->getSlug(), array("vila-sesamo","vilasesamo", "vilasesamo2"))) {
@@ -763,7 +763,7 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1)
                 ->orderBy('a.created_at desc');
             }
-			
+      
             
             else if(in_array($this->site->getSlug(), array("cocorico","cocorico2")) && in_array($this->section->getSlug(), array("convidados"))) {
               $this->assetsQuery = Doctrine_Query::create()
@@ -778,7 +778,7 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->andWhere("a.title like '".$request->getParameter('letra-cocorico')."%'");               
               //$this->assetsQuery->orderBy('a.created_at desc');
               $this->assetsQuery->orderBy('sa.display_order asc');
-			      }
+            }
             else if($this->site->getSlug() == "jornaldacultura" && $this->section->getSlug() == "videos") {
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
@@ -812,43 +812,50 @@ class _sectionActions extends sfActions
             }
             elseif( ($this->site->getSlug() == 'especiais-1') && (in_array($this->section->getSlug(), array('home', 'home-page', 'homepage'))) ) {
                   
-                $siteAssets = Doctrine_Query::create()
-                  ->select('a.*')
-                  ->from('Asset a, SectionAsset sa')
-                  ->andWhere('a.asset_type_id = ?', 1)
-                  ->where('a.id = sa.asset_id')
-                  ->andWhere('a.site_id = ?', 1253)
-                  ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
-                  ->andWhere('a.is_active = ?', 1)
-                  ->orderBy('sa.display_order DESC')
-                  ->execute();
+              $siteAssets = Doctrine_Query::create()
+                ->select('a.*')
+                ->from('Asset a, SectionAsset sa')
+                ->where('a.id = sa.asset_id')
+                ->andWhere('a.asset_type_id = ?', 1)
+                ->andWhere('a.site_id = ?', 1253)
+                ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+                ->andWhere('a.is_active = ?', 1)
+                ->orderBy('sa.display_order')
+                ->execute();
+            
+              //echo "Total: ".count($siteAssets) . "<br>";
               
-                echo "Total: ".count($siteAssets) . "<br>";
-                
-                $assetIds = array();
-                $listedSections = array();
-                
-                foreach($siteAssets as $a) {
-                  $currentAssetSections = array();
-                  foreach($a->getSections() as $s) {
-                    $currentAssetSections[] = $s->getSLug();
-                  }
-                  if ( (in_array('home', $currentAssetSections)) ) {
+              $assetIds = array();
+              $listedSections = array();
+              
+              foreach($siteAssets as $a) {
+                $currentAssetSections = array();
+                foreach($a->getSections() as $s) {
+                  $currentAssetSections[] = $s->getSLug();
+                }
+                if ( (in_array('home', $currentAssetSections)) ) {
+                  $assetIds[] = $a->getId();
+                }
+                foreach($currentAssetSections as $c) {
+                  if( (!in_array($c, $listedSections)) && (!in_array($a->getId(), $assetIds)) ) {
                     $assetIds[] = $a->getId();
-                  }
-                  foreach($currentAssetSections as $c) {
-                    if( (!in_array($c, $listedSections)) && (!in_array($a->getId(), $assetIds)) ) {
-                      $assetIds[] = $a->getId();
-                      $listedSections[] = $c;
-                    }
+                    $listedSections[] = $c;
                   }
                 }
-
-                echo "total assets:" . count($assetIds) . "<br>"; 
-                echo "ids: " . implode(", ", $assetIds) . "<br>";
-                echo "listed sections: " . implode(", ", $listedSections) . "<br>";
-                die();
-                
+              }
+              /*
+              echo "total assets:" . count($assetIds) . "<br>";  
+              echo "ids: " . implode(", ", $assetIds) . "<br>";
+              echo "listed sections: " . implode(", ", $listedSections) . "<br>";
+              die();
+              */
+              $this->assetsQuery = Doctrine_Query::create()
+                ->select('a.*')
+                ->from('Asset a')
+                ->where('a.asset_type_id = ?', 1)
+                ->andWhere('a.site_id = ?', 1253)
+                ->andWhere('a.is_active = ?', 1)
+                ->andWhereIn('a.id', $assetIds);
             }
             else {
               $this->assetsQuery = Doctrine_Query::create()
@@ -1595,10 +1602,10 @@ class _sectionActions extends sfActions
       if($this->section->getSlug() == "todos" || $this->section->Parent->slug == "jogos " || $this->section->getSlug() == "para-colorir")
         $pagelimit = 72;
     }
-  	if($this->site->Program->Channel->getSlug() == "tvratimbum") {
+    if($this->site->Program->Channel->getSlug() == "tvratimbum") {
         if($this->section->getSlug() == "homepage")
           $pagelimit = 1;
-  	}
+    }
     if($this->site->getSlug() == "educacaoemdia")
       $pagelimit = 3;
     if(!isset($pagelimit))
@@ -1988,4 +1995,3 @@ $this->page = 1;
 
   
 }
-
