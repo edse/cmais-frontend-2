@@ -54,11 +54,15 @@
          
           <?php if(isset($pager) > 0): ?>
             <?php foreach($pager->getResults() as $d): ?>
+              <?php $assetSections = $d->getSections(); ?>
+              <?php if(!in_array($assetSections[0]->getSlug(), array('home', 'home-page', 'homepage'))): ?>
+              <a href="<?php echo $assetSections[0]->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
+              <?php else: ?>
               <a href="<?php echo $uri . '/' . $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
+              <?php endif; ?>
                   <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
                   <?php if ($related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb1")): ?>
                   <div class="row-fluid titulo">
-                    
                   </div>
                   <?php endif;?>
               <div class="row-fluid" style="margin-left:10px">
