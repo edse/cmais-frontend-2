@@ -351,13 +351,15 @@ section { max-width:980px; margin:0 auto; clear:both;}
 */
 .destaques .video { background:#f5861f ; border-color:#f9a41b ; }
 .destaques .video img,
+.destaques .video a.asset,
 .destaques .video h3 { border-color:#f07317 ; }
 .destaques .atividade { background:#883feb ; border-color:#b16af2 ; }
 .destaques .atividade img,
+.destaques .atividade a.asset,
 .destaques .atividade h3 { border-color:#7732e5 ; }
 .destaques { margin-bottom:20px; }
 .destaques .atividade i { margin-top:-3%; }
-.destaques .atividade img { margin-top:1%; }
+.destaques .atividade img { margin-top:-1%; }
 /* /home*/
 
 
