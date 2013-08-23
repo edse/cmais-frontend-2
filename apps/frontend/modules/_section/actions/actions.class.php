@@ -842,7 +842,7 @@ class _sectionActions extends sfActions
                   }
                 }
 
-                echo "total assets:" . count($assetIds) . "<br>";
+                echo "total assets:" . count($assetIds) . "<br>"; 
                 echo "ids: " . implode(", ", $assetIds) . "<br>";
                 echo "listed sections: " . implode(", ", $listedSections) . "<br>";
                 die();
