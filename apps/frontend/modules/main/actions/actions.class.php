@@ -303,6 +303,12 @@ class mainActions extends sfActions
             $this->forward('_section', 'index');
             die();
           }
+          elseif(get_class($parm3Object) == "Asset") {
+            $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param3);
+            $this->getRequest()->setParameter('object', $asset);
+            $this->forwardObject($asset);
+            die();
+          }
         }
       }
 
