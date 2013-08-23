@@ -1395,6 +1395,7 @@ class _sectionActions extends sfActions
       }
     }
     else */
+    
     if($sectionSlug != 'index')
       $title = $this->site->getTitle().' - '.$this->section->getTitle().' - cmais+ O portal de conteúdo da Cultura';
     else{
@@ -1403,26 +1404,48 @@ class _sectionActions extends sfActions
       else
         $title = 'cmais+ O portal de conteúdo da Cultura';
     }
-    if(!isset($title))
-      $title = 'cmais+ O portal de conteúdo da Cultura';
-
-    $this->getResponse()->setTitle($title, false);
+    
+    if(!isset($title)) $title = 'cmais+ O portal de conteúdo da Cultura';
     
     if($this->section->getDescription() != "")
       $description = $this->section->getDescription().' - cmais+ O portal de conteúdo da Cultura';
     else
       $description = $this->site->getDescription().' - cmais+ O portal de conteúdo da Cultura';
     
-    $this->getResponse()->addMeta('description', $description);
     $keywords = 'cultura, educacao, infantil, jornalismo';
     if($this->section->keywords != ""){
       foreach(explode(",",$this->section->keywords) as $k){
         $keywords .= ', '.trim($k);
       }
     }
-    $this->getResponse()->addMeta('keywords', $keywords);
+    
+    if($this->site->getSlug() == "culturabrasil" || $this->site->Program->Channel->getSlug() == "culturabrasil" || $this->site->getSlug() == "especiais-1"){
+      if($this->site->getSlug() == "culturabrasil"){
+        $title = $this->site->getTitle()." - Portal de Música Brasileira";
+      }else{
+        $title = "Cultura Brasil - ". $this->site->getTitle();  
+      }
+      $description = $this->site->getDescription();
+      if($this->site->getDescription() == ""){
+        $description = "Portal de música brasileira da Rádio Cultura Brasil";
+      }
+      
+      if($this->section->keywords != ""){
+        $keywords = '';
+        foreach(explode(",",$this->section->keywords) as $k){
+          $keywords .= ', '.trim($k);
+        }
+      }else{
+        $keywords = "musica, musica brasileira, radio cultura, radio cultura brasil, playlist";  
+      }      
+    }
+      
+   $this->getResponse()->setTitle($title, false);
+   $this->getResponse()->addMeta('description', $description);
+   $this->getResponse()->addMeta('keywords', $keywords);
 
-    $this->getResponse()->addMetaProp('og:title', $title);
+   $this->getResponse()->addMetaProp('og:title', $title);
+   
     if(in_array($this->site->getType(), array('Programa Simples','Programa')))
       $this->getResponse()->addMetaProp('og:type', 'tv_show');
     else
@@ -1434,74 +1457,29 @@ class _sectionActions extends sfActions
     
     if($this->site->getSlug() == "radarcultura"){
       $this->getResponse()->addMetaProp('og:description', $title." ".$description);
-      $this->getResponse()->addMetaProp('og:image', 'http://radarcultura.cmais.com.br/portal/images/capaPrograma/radarcultura/logo-radar-novo.png');
+      $og_image = 'http://radarcultura.cmais.com.br/portal/images/capaPrograma/radarcultura/logo-radar-novo.png';
     }else{
       if($this->site->Program->getImageLive() != "")
-        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageLive());
+        $og_image = 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageLive();
       elseif($this->site->Program->getImageThumb() != "")
-        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageThumb());
+        $og_image = 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageThumb();
       elseif($this->site->getImageThumb() != "")
-        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->getImageThumb());
+        $og_image = 'http://midia.cmais.com.br/programs/'.$this->site->getImageThumb();
       else
-        $this->getResponse()->addMetaProp('og:image', 'http://cmais.com.br/portal/images/logoCMAIS.jpg');
+        $og_image = 'http://cmais.com.br/portal/images/logoCMAIS.jpg';
   
       if($this->site->getSlug() == "socrates")
-        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/assets/image/image-2/ede959d3d1ebe912bb45850f59c92b07f243837a.jpg');
-    }
-    
-    //METAS CULTURA BRASIL     
-    if($this->site->getSlug() == "culturabrasil" || $this->site->Program->Channel->getSlug() == "culturabrasil" || $this->site->getSlug() == "especiais-1"){
-      if($this->site->getSlug() == "culturabrasil"){
-        $title = $this->site->getTitle()." - Portal de Música Brasileira";
-      }else{
-        $title = "Cultura Brasil - ". $this->site->getTitle();  
-      }
+        $og_image = 'http://midia.cmais.com.br/assets/image/image-2/ede959d3d1ebe912bb45850f59c92b07f243837a.jpg';
       
-      $description = $this->site->getDescription();
-      
-      if($this->site->getDescription() == ""){
-        $description = "Portal de música brasileira da Rádio Cultura Brasil";
-      }
-      
-      $this->getResponse()->addMeta('title', $title);
-      $this->getResponse()->addMeta('description', $description);
-      
-      if($this->section->keywords != ""){
-        $keywords = '';
-        foreach(explode(",",$this->section->keywords) as $k){
-          $keywords .= ', '.trim($k);
+      if($this->site->getSlug() == "culturabrasil" || $this->site->Program->Channel->getSlug() == "culturabrasil" || $this->site->getSlug() == "especiais-1"){
+        if($og_image == "http://cmais.com.br/portal/images/logoCMAIS.jpg"){
+          $og_image = "http://midia.cmais.com.br/programs/2cc51003abe67b67284933012d9558611c68c17e.jpg";
         }
-      }else{
-        $keywords = "musica, musica brasileira, radio cultura, radio cultura brasil, playlist";  
       }
-      $this->getResponse()->addMeta('keywords', $keywords);
-      $this->getResponse()->addMeta('language', "pt_BR");
-      $this->getResponse()->addMeta('robots', "index, follow");
-      
-      
-      //microdata
-      //opengraph
-         
-       
-       
-      /*
-      //METAS PROPERTIES 
-      $this->getResponse()->addMetaProp('og:title', $title);
-      $this->getResponse()->addMetaProp('og:description', $description);
-
-      if($this->site->Program->getImageLive() != "")
-        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageLive());
-      elseif($this->site->Program->getImageThumb() != "")
-        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageThumb());
-      elseif($this->site->getImageThumb() != "")
-        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->getImageThumb());
-      else
-        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/2cc51003abe67b67284933012d9558611c68c17e.jpg');
-      */
     }
     
-    
-    
+    $this->getResponse()->addMetaProp('og:image', $og_image);    
+
     // pagination
     if($sectionSlug == 'recadinhos'){
       $this->assetsQuery = Doctrine_Query::create()
