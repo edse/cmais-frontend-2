@@ -812,28 +812,39 @@ class _sectionActions extends sfActions
                   
                 $siteAssets = Doctrine_Query::create()
                   ->select('a.*')
-                  ->from('Asset a')
-                  ->where('a.asset_type_id = ?', 1)
+                  ->from('Asset a, SectionAsset sa')
+                  ->andWhere('a.asset_type_id = ?', 1)
+                  ->where('a.id = sa.asset_id')
                   ->andWhere('a.site_id = ?', 1253)
                   ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
                   ->andWhere('a.is_active = ?', 1)
-                  ->orderBy('a.display_order DESC')
+                  ->orderBy('sa.display_order DESC')
                   ->execute();
               
                 echo "Total: ".count($siteAssets) . "<br>";
                 
+                $assetIds = array();
+                $listedSections = array();
+                
                 foreach($siteAssets as $a) {
                   $currentAssetSections = array();
-                  $sections = $a->getSections();
-                  foreach($sections as $s) {
+                  foreach($a->getSections() as $s) {
                     $currentAssetSections[] = $s->getSLug();
                   }
                   if ( (in_array('home', $currentAssetSections)) ) {
                     $assetIds[] = $a->getId();
                   }
+                  foreach($currentAssetSections as $c) {
+                    if( (!in_array($c, $listed)) && (!in_array($a->getId(), $assetIds)) ) {
+                      $assetIds[] = $a->getId();
+                      $listedSections[] = $c;
+                    }
+                  }
                 }
-                echo "total em home:" . count($assetIds) . "<br>";
-                echo "IDs dos assets em home: " . implode(",", $assetIds);
+
+                echo "total assets:" . count($assetIds) . "<br>";
+                echo "ids: " . implode(", ", $assetIds) . "<br>";
+                echo "listed sections: " . implode(", ", $listedSections) . "<br>";
                 die();
                 
             }
