@@ -829,7 +829,7 @@ class _sectionActions extends sfActions
                   foreach($sections as $s) {
                     $currentAssetSections[] = $s->getSLug();
                   }
-                  if ( (in_array(array('home', 'home-page', 'homepage'), $currentAssetSections)) ) {
+                  if ( (in_array('home', $currentAssetSections)) ) {
                     $assetIds[] = $a->getId();
                   }
                 }
