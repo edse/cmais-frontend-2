@@ -321,7 +321,7 @@ class mainActions extends sfActions
       }
 
       $parm2Object = $this->parse($param2);
-      if(get_class($parm2Object) == "Site") {
+      if(get_class($parm2Object) == "Site" && $param2 != "selecao-do-ouvinte") {
         $url = "http://culturabrasil.cmais.com.br/programas/$param2";
         if($param3)
           $url = "http://culturabrasil.cmais.com.br/programas/$param2/$param3";
