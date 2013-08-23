@@ -1477,7 +1477,14 @@ class _sectionActions extends sfActions
       $this->getResponse()->addMeta('keywords', $keywords);
       $this->getResponse()->addMeta('language', "pt_BR");
       $this->getResponse()->addMeta('robots', "index, follow");
-     
+      
+      
+      //microdata
+      //opengraph
+         
+       
+       
+      /*
       //METAS PROPERTIES 
       $this->getResponse()->addMetaProp('og:title', $title);
       $this->getResponse()->addMetaProp('og:description', $description);
@@ -1490,7 +1497,7 @@ class _sectionActions extends sfActions
         $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->getImageThumb());
       else
         $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/2cc51003abe67b67284933012d9558611c68c17e.jpg');
-      
+      */
     }
     
     
