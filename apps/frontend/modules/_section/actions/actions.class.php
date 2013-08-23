@@ -810,7 +810,14 @@ class _sectionActions extends sfActions
             }
             elseif( ($this->site->getSlug() == 'especiais-1') && (in_array($this->section->getSlug(), array('home', 'home-page', 'homepage'))) ) {
                   
-                $siteAssets = $this->section->Site->getAssets();
+                $siteAssets = Doctrine_Query::create()
+                  ->select('a.*')
+                  ->from('Asset a')
+                  ->where('a.asset_type_id = ?', 1)
+                  ->andWhere('a.site_id = ?', 1253)
+                  ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+                  ->andWhere('a.is_active = ?', 1)
+                  ->orderBy('a.display_order');
               
                 echo "Total: ".count($siteAssets);
                 
