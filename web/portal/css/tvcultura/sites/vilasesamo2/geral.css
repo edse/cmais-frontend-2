@@ -318,21 +318,21 @@ section { max-width:980px; margin:0 auto; clear:both;}
 
 .destaques .span6.jogo img { border-top:2px solid #0191fb;  border-bottom:2px solid #0191fb; }
 .destaques .span6.jogo:hover img { 
-  box-shadow: 0 0 .25em #0191fb; /* Implementação W3C */
-  -moz-box-shadow: 0 0 .25em #0191fb; /* Implementação Mozilla */
-  -webkit-box-shadow: 0 0 .25em #0191fb; /* Implementação para browsers que renderizam via webkit */}
+  box-shadow: 0 0 .25em blue; /* Implementação W3C */
+  -moz-box-shadow: 0 0 .25em blue; /* Implementação Mozilla */
+  -webkit-box-shadow: 0 0 .25em blue; /* Implementação para browsers que renderizam via webkit */}
 
 .destaques .span6.video img { border-top:2px solid #F07317;  border-bottom:2px solid #F07317; }
 .destaques .span6.video:hover img { 
-  box-shadow: 0 0 .25em #F07317; /* Implementação W3C */
-  -moz-box-shadow: 0 0 .25em #F07317; /* Implementação Mozilla */
-  -webkit-box-shadow: 0 0 .25em #0F07317191fb; /* Implementação para browsers que renderizam via webkit */}
+  box-shadow: 0 0 .25em red; /* Implementação W3C */
+  -moz-box-shadow: 0 0 .25em red; /* Implementação Mozilla */
+  -webkit-box-shadow: 0 0 .25em red; /* Implementação para browsers que renderizam via webkit */}
   
 .destaques .span6.atividade img { border-top:2px solid #7732E5;  border-bottom:2px solid #7732E5; }
 .destaques .span6.atividade:hover img { 
-  box-shadow: 0 0 .25em #7732E5; /* Implementação W3C */
-  -moz-box-shadow: 0 0 .25em #7732E5; /* Implementação Mozilla */
-  -webkit-box-shadow: 0 0 .25em #7732E5; /* Implementação para browsers que renderizam via webkit */}
+  box-shadow: 0 0 .25em black; /* Implementação W3C */
+  -moz-box-shadow: 0 0 .25em black; /* Implementação Mozilla */
+  -webkit-box-shadow: 0 0 .25em black; /* Implementação para browsers que renderizam via webkit */}
   
 .destaques .jogo { background:#3aaaec; }
 .destaques .video { background:#f5861f; }
