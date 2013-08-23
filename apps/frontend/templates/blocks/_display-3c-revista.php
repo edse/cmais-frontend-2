@@ -109,7 +109,7 @@
              
              var roda;
              var roda2;
-             roda = setInterval(function(){rodadestaque(1)}, 7000);
+             roda = setInterval(function(){rodadestaque(1)}, 10000);
              
              $('.destaque-revista ul li a').click( function(){
                 var posicao = $(this).attr('data-order');
@@ -172,7 +172,9 @@
                 //console.log(item.selector)
                 //console.log(miolo.selector)
                 stoproda(roda);
-                roda = setInterval(function(){rodadestaque(cont)}, 7000);
+                if(!clique){
+                  roda = setInterval(function(){rodadestaque(cont)}, 10000);
+                }
               }
               
               function stoproda(roda){

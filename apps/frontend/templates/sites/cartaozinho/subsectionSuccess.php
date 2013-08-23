@@ -280,7 +280,7 @@ $(function(){
             <div id="direita" class="grid1">
               
               <!-- BOX PUBLICIDADE -->
-              <div class="box-publicidade grid1">
+              <div class="box-publicidade grid1" style="margin-top: 0;">
                 <!-- programas-assets-300x250 -->
                 <script type='text/javascript'>
                 GA_googleFillSlot("maiscrianca");
@@ -289,7 +289,7 @@ $(function(){
               <!-- / BOX PUBLICIDADE -->
               
               <!-- CALENDARIO -->
-              <div class="box-padrao grid1">
+              <!--div class="box-padrao grid1">
                 <div class="topo">
                   <span></span>
                   <div class="capa-titulo">
@@ -297,7 +297,7 @@ $(function(){
                   </div>
                 </div>
                 <div id="datepicker"></div>
-              </div>
+              </div-->
               <!-- /CALENDARIO -->
               
             </div>
