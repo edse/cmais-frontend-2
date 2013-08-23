@@ -296,15 +296,23 @@ class mainActions extends sfActions
           die();
         }
         else {
-          $parm3Object = $this->parse($param3);
-          if(get_class($parm3Object) == "Section") {
-            $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1253, $param3);
-            $this->getRequest()->setParameter('object', $section);
-            $this->forward('_section', 'index');
-            die();
+          if($param4 == "") {
+            $parm3Object = $this->parse($param3);
+            if(get_class($parm3Object) == "Section") {
+              $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1253, $param3);
+              $this->getRequest()->setParameter('object', $section);
+              $this->forward('_section', 'index');
+              die();
+            }
+            elseif(get_class($parm3Object) == "Asset") {
+              $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param3);
+              $this->getRequest()->setParameter('object', $asset);
+              $this->forwardObject($asset);
+              die();
+            }
           }
-          elseif(get_class($parm3Object) == "Asset") {
-            $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param3);
+          else {
+            $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param4);
             $this->getRequest()->setParameter('object', $asset);
             $this->forwardObject($asset);
             die();
