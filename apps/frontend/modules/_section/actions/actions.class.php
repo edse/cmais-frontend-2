@@ -1481,7 +1481,7 @@ class _sectionActions extends sfActions
       
       //microdata
       //opengraph
-        
+         
        
        
       /*
