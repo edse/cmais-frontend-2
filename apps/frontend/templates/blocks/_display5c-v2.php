@@ -23,7 +23,7 @@
               -->
               <!-- /banner promo-->
               <div class="enunciado">
-                <h2><a href="http://tvcultura.cmais.com.br/grade">Confira na tela da Cultura</a></h2>
+                <h2><a href="http://tvcultura.cmais.com.br/grade">Veja a grade completa</a></h2>
                 <span></span>
               </div>
               <div class="destaque-5">
