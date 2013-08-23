@@ -422,7 +422,7 @@ footer .relacionados li { *margin-right:3% }
 .todos-itens li { *margin-right:0%; }
 */
 .destaques section .span6 img { *border:2px solid transparent; *border-top:2px solid #0191fb;  *border-bottom:2px solid #0191fb; margin:-2px; overflow: hidden; }
-.destaques section .span6:hover img { *border:2px solid #02CBFF; }
+.destaques section .span6:hover img /*\**/ { border\9:2px solid #02CBFF; }
 /* /ie */
 
 
