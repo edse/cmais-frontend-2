@@ -22,7 +22,7 @@
     <div class="row-fluid pontilhada"> 
       <ul class="breadcrumb">
         <li><a href="/">Cultura Brasil</a> <span class="divider">»</span></li>
-        <?php if($site->getSlug() == "especiais"): ?>
+        <?php if($site->getSlug() == "especiais-1"): ?>
         <li><a href="<?php echo url_for('homepage')?>especiais">Especiais</a> <span class="divider">»</span></li>
         <?php endif; ?>        
         <?php if($asset->Site->Program->Channel->getSlug() == "culturabrasil"): ?>
