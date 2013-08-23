@@ -54,13 +54,7 @@
          
           <?php if(isset($pager) > 0): ?>
             <?php foreach($pager->getResults() as $d): ?>
-              <?php if( ($section->Site->Program->Channel->getSlug() == "culturabrasil") && ($section->getSlug() == "arquivo") ): ?>
-              <a href="<?php echo $uri . '/arquivo/' . $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
-              <?php elseif($section->getSlug() == "entrevistas"): ?>
-              <a href="<?php echo $d->retriveUrl(); ?>" title=" <?php echo $d->getTitle(); ?>">
-              <?php else: ?>
               <a href="<?php echo $uri . '/' . $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
-              <?php endif; ?>
                   <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
                   <?php if ($related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb1")): ?>
                   <div class="row-fluid titulo">
