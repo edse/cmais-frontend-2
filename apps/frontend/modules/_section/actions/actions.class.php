@@ -811,10 +811,13 @@ class _sectionActions extends sfActions
             elseif( ($this->site->getSlug() == 'especiais-1') && (in_array($this->section->getSlug(), array('home', 'home-page', 'homepage'))) ) {
                   
                 $siteAssets = $this->section->Site->getAssets();
+              
+                echo "Total: ".count($siteAssets);
                 
                 foreach($siteAssets as $a) {
                   echo $a->getTitle() . "<br>";
                 }
+                
                 die();
                 
             }
