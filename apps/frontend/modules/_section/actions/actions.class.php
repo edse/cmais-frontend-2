@@ -217,7 +217,6 @@ class _sectionActions extends sfActions
               $end = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)+1 ,substr($this->date,0,4))); 
               $this->nextDate = $end;
               $this->prevDate = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)-1 ,substr($this->date,0,4)));
-              
               if($this->site->Program->id == 111){
                 $next = Doctrine_Query::create()
                   ->select('s.*')
@@ -563,8 +562,9 @@ class _sectionActions extends sfActions
                     $this->assetsQuery->andWhere('a.site_id = ?', (int)$this->site_id);
                   if($this->busca != "")
                     $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->busca.'%', '%'.$this->busca.'%'));
-                  $this->assetsQuery->andWhere('a.is_active = ?', 1)
-                    ->orderBy('a.created_at desc');
+                  $this->assetsQuery->andWhere('a.is_active = ?', 1);
+                  $this->assetsQuery->andWhere('a.date_start = IS NULL OR a.date_start > ?', date("Y-m-d H:i:s"));
+                  $this->assetsQuery->orderBy('a.created_at desc');
                 }
               }
             }
@@ -657,7 +657,9 @@ class _sectionActions extends sfActions
               ->select('a.*')
               ->from('Asset a, SectionAsset sa')
               ->where('sa.asset_id = a.id')
-              ->andWhere('a.is_active = ?', 1);
+              ->andWhere('a.is_active = ?', 1)
+              ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"));
+
             if($request->getParameter('busca') != '') 
               $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");
             if($request->getParameter('section') != '') 
