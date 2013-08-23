@@ -835,7 +835,7 @@ class _sectionActions extends sfActions
                     $assetIds[] = $a->getId();
                   }
                   foreach($currentAssetSections as $c) {
-                    if( (!in_array($c, $listed)) && (!in_array($a->getId(), $assetIds)) ) {
+                    if( (!in_array($c, $listedSections)) && (!in_array($a->getId(), $assetIds)) ) {
                       $assetIds[] = $a->getId();
                       $listedSections[] = $c;
                     }
