@@ -118,7 +118,7 @@
                 //$(this).parent().addClass('ativo');
                 $('#conteudo-revista').find('.ativo').removeClass('ativo').css('display','none');
                 //$('#conteudo-revista').find('#conteudo-item'+posicao).fadeIn('fast').addClass('ativo');
-                //rodadestaque(posicao, true);
+                rodadestaque(posicao, true);
                 
               });
               var i = 0; 
@@ -172,7 +172,9 @@
                 //console.log(item.selector)
                 //console.log(miolo.selector)
                 stoproda(roda);
-                roda = setInterval(function(){rodadestaque(cont)}, 10000);
+                if(!clique){
+                  roda = setInterval(function(){rodadestaque(cont)}, 10000);
+                }
               }
               
               function stoproda(roda){
