@@ -1479,7 +1479,8 @@ class _sectionActions extends sfActions
       $this->getResponse()->addMeta('robots', "index, follow");
       
       
-      
+      //microdata
+      //opengraph
         
        
        
