@@ -764,6 +764,7 @@ $(document).ready(function(){
                 
                 $(document).ready(function(){
                   var email = '';
+                  $("#f4_mais").removeAttr("checked");
                   $("#f4_cod_programa option").attr("value", "");
                   $(".dicas").click(function(){
                     $(this).prev().toggleClass('icon-minus');
@@ -789,7 +790,7 @@ $(document).ready(function(){
                     $('#btn6').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                   })
                   
-                  $('#btn4').click(function(){
+                  $('#btn4, #btn5').click(function(){
                     email = $('#f4_email2').val();
                     $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                   });
@@ -808,7 +809,8 @@ $(document).ready(function(){
                     $('#f4_maisinfo').hide();
                     $('.salvar-alteracoes').hide();
                     $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
-                    $('#f4_mais').attr('checked','true');
+                    $('.control-group.f4_mais').hide()
+                    //$('#f4_mais').attr('checked','true');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
                     $('#row6, #message, #btn4,#row9').hide();
                     //$('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected');

@@ -1815,7 +1815,7 @@ class _sectionActions extends sfActions
         }
       }
       elseif($this->site->getType() == "ProgramaRadio"){
-        if($this->site->Program->Channel->getSlug() == "culturabrasil") {
+        if($this->site->Program->Channel->getSlug() == "culturabrasil" || $this->site->getSlug() == "especiais-1") {
           
           if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
             if($debug) print "<br>13-a>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
