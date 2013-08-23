@@ -11,19 +11,10 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
-
-    <title>Cultura Brasil - Portal de Música Brasileira</title>
-    <meta name="title" content="Cultura Brasil - Portal de Música Brasileira" />
-    <meta name="description" content="Portal de música brasileira da Rádio Cultura Brasil" />
-    <meta name="keywords" content="musica, musica brasileira, radio cultura, radio cultura brasil" />
-    <meta name="language" content="pt_BR" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Cultura Brasil - Portal de Música Brasileira" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Portal de música brasileira da Rádio Cultura Brasil" />
-    <meta property="og:url" content="http://culturabrasil.cmais.com.br/" />
-    <meta property="og:site_name" content="cmais+" />
-    <meta property="og:image" content="http://midia.cmais.com.br/programs/2cc51003abe67b67284933012d9558611c68c17e.jpg" />
+    
+    <?php include_title() ?>
+    <?php include_metas() ?>
+    <?php include_meta_props() ?>
 
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
 

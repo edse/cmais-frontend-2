@@ -369,11 +369,11 @@ else if(($_REQUEST["step"]==4)&&($_REQUEST["f4_mais"]!="")){
     
     if($result->altera_pessoaResult > 0){
       //$script = '$("#f4_cod_programa option").attr("value", "");$(".control-group").removeClass("error");$(".f4_cod_programa").removeAttr("selected");$(".salvar-alteracoes").hide();$("#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem").removeAttr("disabled");$("#row4, #message, .control-group.f4_mais, #row9").show();$("#f4_maisinfo, #btn5").hide();set_checked(false);$("#row9").delay(3000).slideUp("fast");$("#row4").find(".success").each(function(){$(this).removeClass("success")});$("#row4").find("label.valid").each(function(){$(this).remove()});';
-      $script = '$("#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row8").hide();$("#row9").show();';
+      $script = '$("#f4_mais").attr("checked","false");$("#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row8").hide();$("#row9").show();';
       $title = 'Cadastro atualizado';
       echo json_encode(array('script'=>$script,'title'=>$title,'msg'=>'Seu cadastro foi alterado com sucesso.', 'form'=>'form9'));
     }else{
-      $script = '$("#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row9").hide();$("#row8").show();';
+      $script = '$("#f4_mais").attr("checked","false");$("#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row9").hide();$("#row8").show();';
       $title = 'Cadastro não atualizado';
       echo json_encode(array('script'=>$script,'title'=>$title,'msg'=>'Seu cadastro não foi alterado.', 'form'=>'form8'));
     }
