@@ -252,6 +252,6 @@
     codeAddress();
   });
   
-  $("#map-canvas").hide().delay(1000).fadeIn("slow");
+  //$("#map-canvas").hide().delay(1000).fadeIn("slow");
 
 </script>
