@@ -2,13 +2,15 @@
 
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <style>
+#capa-site {position:relative;}
 #capa-site h1{text-align: left; margin-top: 40px; font-size: 24px; margin-bottom: 20px;}
-#form-map{float: left;width:540px;position: absolute;z-index: 1;right: 0px;top: 0px;}
+#form-map{float: left;width:540px;position: absolute;z-index: 1;right: -20px;top: 20px;}
  .barra-grade{margin-bottom: 51px;}
  .barra-grade .tit {width: 95%;padding: 0 10px;}
  .lista-calendario .barra-grade .tit {width:100%;}
  .mapa{height:750px; border: 1px solid #333;background:#ccc;clear:both; margin-top:20px;}
  .toggle{width:100%;}
+ .lista-calendario .barra-grade .botao {position: relative; margin: 0; right: 5px; top: -22px;}
  .search-map{margin: 20px -3px 5px 20px;border: none;padding: 5px 15px;width: 400px;float: left;}
  #search{border: none;display:block;width: 70px;height: 30px;float: left;margin-top: 20px;background:#4a8cf6 url(/portal/images/lupa-azul-branca.jpg) no-repeat center center;float: left;}
 #map-canvas{top: -40px; z-index: 0;}
