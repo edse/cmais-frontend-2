@@ -131,7 +131,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-scroll-videos{ background-position: 0 -1179px; width: 60px; height: 38px; } 
 .sprite-seta-direita{ background-position: 0 -1267px; width: 46px; height: 70px; } 
 .sprite-seta-down-amarela{ background-position: 0 -1387px; width: 49px; height: 32px; } 
-.sprite-seta-down{ background-position: 0 -1469px; width: 60px; height: 46px; } 
+.sprite-seta-down{ background-position: 0 -1469px; width: 60px; height: 46px; display: none; } 
 .sprite-seta-esquerda{ background-position: 0 -1565px; width: 46px; height: 70px; } 
 .sprite-seta-up-menu{ background-position: 0 -1685px; width: 48px; height: 38px; } 
 .sprite-seta-up{ background-position: 0 -1773px; width: 60px; height: 46px; } 
