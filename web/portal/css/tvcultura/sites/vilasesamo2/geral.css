@@ -360,6 +360,8 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques { margin-bottom:20px; }
 .destaques .atividade i { margin-top:-3%; }
 .destaques .atividade img { margin-top:-1%; }
+
+.destaques .banner a { margin:0; }
 /* /home*/
 
 
