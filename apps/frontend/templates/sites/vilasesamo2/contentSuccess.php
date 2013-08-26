@@ -19,22 +19,26 @@
     <div class="conteudo-asset">
       <h2>nome do jogo</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat massa, ullamcorper sit amet elementum sed, sollicitudin non massa. Mauris ante tortor, feugiat quis dolor id, congue pharetra nisl. Maecenas suscipit eu diam et pellentesque. Morbi fermentum libero ac diam tristique, in egestas lectus rhoncus. Proin ut pellentesque massa. Morbi metus.</p>
+      <a href="#" title="Hábitos para uma vida saudável" class="sprite-btn-habitos"></a>
       <div class="asset">
         <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" />
       </div>
     </div>
   </section>
   <section class="relacionados">
-    <h2>Jogos relacionados com:</h2>
+    <h2>Brinque também com:</h2>
+    <!--
     <p><a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a>, <a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a>, <a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a>, <a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a></p>
     <a class="todos-assets"><i class="sprite-btn-voltar-jogos"></i><p>todos os jogos</p></a>
     <br />
+    -->
+    
     <h1>CARROSSEL RELACIONADOS - JEFFERSON</h1>
   </section>
   <section class="pais">
     <span class="divisa"></span>
     <h2>para os pais <i class="sprite-seta-down"></i></h2>
-    <div class="content span12 row-fluid" style="display: none;">
+    <div class="content span12 row-fluid">
       <div class="redes">
         <g:plusone size="medium" count="false"></g:plusone>
         <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" style="margin-top:-10px;" /></a>

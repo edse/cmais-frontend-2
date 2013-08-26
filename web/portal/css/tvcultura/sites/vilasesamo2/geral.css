@@ -34,12 +34,13 @@ body { font-family: 'dinmedium', "Helvetica Neue", Helvetica, Arial, sans-serif;
 /* /din-blackregular*/
 
 /* din-blackregular*/
+.conteudo-asset h2,
+footer .mapa ul a:hover,
 footer .mapa .span12,
 .dropdown-submenu:hover > a, 
 .dropdown-submenu:focus > a,
 .pais .content .dica h2,
 .todos-assets p,
-.relacionados h2,
 .navbar .btn-navbar h1,
 .destaque-filtro h2 a,
 .mais,
@@ -130,7 +131,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-scroll-videos{ background-position: 0 -1179px; width: 60px; height: 38px; } 
 .sprite-seta-direita{ background-position: 0 -1267px; width: 46px; height: 70px; } 
 .sprite-seta-down-amarela{ background-position: 0 -1387px; width: 49px; height: 32px; } 
-.sprite-seta-down{ background-position: 0 -1469px; width: 60px; height: 46px; } 
+.sprite-seta-down{ background-position: 0 -1469px; width: 60px; height: 46px; display: none; } 
 .sprite-seta-esquerda{ background-position: 0 -1565px; width: 46px; height: 70px; } 
 .sprite-seta-up-menu{ background-position: 0 -1685px; width: 48px; height: 38px; } 
 .sprite-seta-up{ background-position: 0 -1773px; width: 60px; height: 46px; } 
@@ -239,6 +240,19 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-icon-atividades-peq{ background-position: 0 0; width: 31px; height: 39px; } 
 .sprite-icon-jogos-peq{ background-position: 0 -89px; width: 38px; height: 27px; } 
 .sprite-icon-videos-peq{ background-position: 0 -166px; width: 38px; height: 31px; } 
+
+.sprite-btn-contato,
+.sprite-btn-habitos-hover,
+.sprite-btn-habitos,
+.sprite-btn-incluir-hover,
+.sprite-btn-incluir {  background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-btns-home.png); } 
+.sprite-btn-contato{ background-position: 0 0; width: 255px; height: 57px; } 
+.sprite-btn-habitos:hover,
+.sprite-btn-habitos-hover{ background-position: 0 -107px; width: 300px; height: 100px; } 
+.sprite-btn-habitos{ background-position: 0 -257px; width: 300px; height: 100px; } 
+.sprite-btn-incluir:hover,
+.sprite-btn-incluir-hover{ background-position: 0 -407px; width: 300px; height: 100px; } 
+.sprite-btn-incluir{ background-position: 0 -557px; width: 300px; height: 100px; } 
 /*/sprite*/
 
 
@@ -421,6 +435,7 @@ footer .mapa .sprite-destalhe-amarelo2,
 footer .mapa .sprite-destalhe-amarelo1 { position:absolute; left:0; top:0; }
 footer .mapa .ul { float:left; width:78%;  }
 footer .mapa ul a { width:auto; padding:0 0 0 1.5%; margin:0;  }
+footer .mapa ul a:hover { text-decoration:underline; }
 
 footer .relacionados h3 { font-weight:normal; text-transform:uppercase; font-size:14px; }
 footer .relacionados ul { margin:2% 0 0 0; }
