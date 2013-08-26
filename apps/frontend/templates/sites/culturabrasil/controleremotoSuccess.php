@@ -10,7 +10,8 @@
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
     <link rel="stylesheet" type="text/css" href="/portal/controle-remoto/css/controleremoto.css">
     <link href="/portal/controle-remoto/css/jPlayer.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="/portal/controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />    
+    <link rel="stylesheet" href="/portal/controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />
+    <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>    
     <!--DFP -->
     <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
     <script type='text/javascript'>
@@ -108,8 +109,6 @@
             $('#livestream2').hide();               
           });
         } 
-      
-      
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         function LoadInfoMusica(){
@@ -381,5 +380,6 @@
         $('.cr-radios').toggleClass('ativo');
       })
     </script>
+    <div id="livestream2"></div>
   </body>
 </html>
