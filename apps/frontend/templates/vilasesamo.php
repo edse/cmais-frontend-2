@@ -151,24 +151,19 @@
           <img class="sombra" src="/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" />
         </ul>
         <div class="mapa">
-          <a href="/vilasesamo2/jogos" class="span12">Jogos</a>
+          
           <div class="span12">
-            <a href="/vilasesamo2/videos" class="col-esq">Vídeos</a>
-            <a href="/vilasesamo2/videos" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Clipes</a>
-            <a href="/vilasesamo2/videos" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>Episódios</a>
-          </div>
-          <div class="span12">
-            <a href="/vilasesamo2/atividades" class="col-esq">Atividades</a>
-            <a href="/vilasesamo2/atividades" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Para Colorir</a>
-            <a href="/vilasesamo2/atividades" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>Para Imprimir</a>
+            <a href="/vilasesamo2/videos" class="col-esq">Jogos</a>
+            <a href="/vilasesamo2/videos" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Víeos</a>
+            <a href="/vilasesamo2/videos" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>Atividades</a>
           </div>
           <a href="/vilasesamo2/personagens" class="span12">Personagens</a>
           <div class="span12">
-            <a href="/vilasesamo2/paraospais" class="col-esq">Para os Pais</a>
-            <a href="/vilasesamo2/natv" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
-            <a href="/vilasesamo2/historia" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>História</a>
+            <a href="/vilasesamo2/atividades" class="col-esq">Para adultos</a>
+            <a href="/vilasesamo2/atividades" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
+            <a href="/vilasesamo2/atividades" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>História</a>
           </div>
-          
+                
         </div>
       </section>
       <section class="relacionados">
