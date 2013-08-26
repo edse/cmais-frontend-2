@@ -948,4 +948,6 @@ div.jp-audio {clear:both;}
 
 .box-interna .texto hr { visibility:inherit; }
 
-#map-canvas th{padding:5px;}
+#map-canvas caption{font-weight:bold; color:red;}
+#map-canvas th{padding:5px;font-weight:bold;background:#E5E5E5; text-align:center;}
+#map-canvas td{padding:3px;}
