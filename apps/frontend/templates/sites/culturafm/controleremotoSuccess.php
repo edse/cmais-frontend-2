@@ -74,6 +74,9 @@
           });
 
        }else{
+          $(".jp-volume_controls").hide();
+          $(".jp-volume-bar").hide();
+         
           var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','1','1','9');
           so.addVariable('autostart', 'true');
           so.addVariable('streamer', 'rtmp://200.136.27.12/live');
