@@ -296,18 +296,32 @@ class mainActions extends sfActions
           die();
         }
         else {
-          $parm3Object = $this->parse($param3);
-          if(get_class($parm3Object) == "Section") {
-            $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1253, $param3);
-            $this->getRequest()->setParameter('object', $section);
-            $this->forward('_section', 'index');
+          if($param4 == "") {
+            $parm3Object = $this->parse($param3);
+            if(get_class($parm3Object) == "Section") {
+              $section = $this->site = Doctrine::getTable('Section')->findOneBySiteIdAndSlug(1253, $param3);
+              $this->getRequest()->setParameter('object', $section);
+              $this->forward('_section', 'index');
+              die();
+            }
+            elseif(get_class($parm3Object) == "Asset") {
+              $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param3);
+              $this->getRequest()->setParameter('object', $asset);
+              $this->forwardObject($asset);
+              die();
+            }
+          }
+          else {
+            $asset = $this->site = Doctrine::getTable('Asset')->findOneBySlug($param4);
+            $this->getRequest()->setParameter('object', $asset);
+            $this->forwardObject($asset);
             die();
           }
         }
       }
 
       $parm2Object = $this->parse($param2);
-      if(get_class($parm2Object) == "Site") {
+      if(get_class($parm2Object) == "Site" && $param2 != "selecao-do-ouvinte") {
         $url = "http://culturabrasil.cmais.com.br/programas/$param2";
         if($param3)
           $url = "http://culturabrasil.cmais.com.br/programas/$param2/$param3";

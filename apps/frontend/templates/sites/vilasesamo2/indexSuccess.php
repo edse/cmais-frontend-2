@@ -74,7 +74,9 @@
       
       </section>
       <div class="span4 banner" >
-        <a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
+        <a href="#" title="Incluir Brincando" class="sprite-btn-incluir"></a>
+        <a href="#" title="Hábitos para uma vida saudável" class="sprite-btn-habitos"></a>
+        <a href="#" title="O que achou do novo site?" class="sprite-btn-contato"></a>
       </div>
     </div>
   </section>

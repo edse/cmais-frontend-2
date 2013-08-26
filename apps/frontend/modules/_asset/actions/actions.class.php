@@ -155,7 +155,7 @@ class _assetActions extends sfActions
 
       // siteSections
       if($this->asset->Site->getType() == "ProgramaRadio"){
-        if($this->site->Program->Channel->getSlug() == "culturabrasil"){
+        if( ($this->site->Program->Channel->getSlug() == "culturabrasil") || ($this->site->getSlug() == "especiais-1") ){
           $this->siteSections = Doctrine_Query::create()
             ->select('s.*')
             ->from('Section s')
@@ -1038,7 +1038,7 @@ class _assetActions extends sfActions
           }
         }
         elseif(($this->site->getType() == "Portal" || $this->site->getType() == 2)&&($this->site->getSlug() != "tvratimbum")){
-          if(in_array($this->asset->getId(), array(121120, 121117, 120858, 121146, 121145, 122440, 127638,127974,130827,131375,131368,131702))){
+          if(in_array($this->asset->getId(), array(121120, 121117, 120858, 121146, 121145, 122440, 127638,127974,130827,131375,131368,131702,139908))){
             if($debug) print "<br>4-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/cmais/tutores-content'; 
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/cmais/tutores-content');
           }
@@ -1079,7 +1079,7 @@ class _assetActions extends sfActions
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
             }
             else {
-              if($this->site->Program->Channel->getSlug() == "culturabrasil"){
+              if($this->site->Program->Channel->getSlug() == "culturabrasil" || $this->site->getSlug() == "especiais-1"){
                 if($debug) print "<br>2-1-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/culturabrasil/'.$this->asset->AssetType->getSlug();
                 $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/culturabrasil/'.$this->asset->AssetType->getSlug());
               }
