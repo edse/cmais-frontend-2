@@ -57,11 +57,10 @@
           ready: function () {
             $(this).jPlayer("setMedia", {
               mp3: "http://midiaserver.tvcultura.com.br:8003/;stream/1",
-              m4a: "rmtp://200.136.27.12/live"
             }).jPlayer("play");
           },
           swfPath: "/portal/controle-remoto/swf",
-          supplied: "mp3,rmtpa",
+          supplied: "mp3",
           solution: 'flash',
           cssSelectorAncestor: "#jp_container_2",
           wmode: "window"
