@@ -61,7 +61,7 @@
           },
           swfPath: "/portal/controle-remoto/swf",
           supplied: "mp3",
-          solution: 'flash',
+          solution: 'flash,html',
           cssSelectorAncestor: "#jp_container_2",
           wmode: "window"
         });
