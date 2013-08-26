@@ -19,6 +19,7 @@
     <div class="conteudo-asset">
       <h2>nome do jogo</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat massa, ullamcorper sit amet elementum sed, sollicitudin non massa. Mauris ante tortor, feugiat quis dolor id, congue pharetra nisl. Maecenas suscipit eu diam et pellentesque. Morbi fermentum libero ac diam tristique, in egestas lectus rhoncus. Proin ut pellentesque massa. Morbi metus.</p>
+      <a ></a>
       <div class="asset">
         <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" />
       </div>
