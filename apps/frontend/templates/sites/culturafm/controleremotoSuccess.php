@@ -10,7 +10,8 @@
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
     <link rel="stylesheet" type="text/css" href="/portal/controle-remoto/css/controleremoto.css">
     <link href="/portal/controle-remoto/css/jPlayer.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="/portal/controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />    
+    <link rel="stylesheet" href="/portal/controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />
+    <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>    
     <!--DFP -->
     <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
     <script type='text/javascript'>
@@ -48,25 +49,67 @@
       //<![CDATA[
       $(document).ready(function(){
         
-        if(window.screen.width < 1024){
-          $(".jp-volume_controls").hide();
-          $(".jp-volume-bar").hide();
-        }
+        function supportsAudio() {
+            return !!document.createElement('audio').canPlayType;
+        }        
         
-        $("#jquery_jplayer_2").jPlayer({
-          ready: function () {
-            $(this).jPlayer("setMedia", {
-              mp3: "http://midiaserver.tvcultura.com.br:8003/;stream/1",
-            }).jPlayer("play");
-          },
-          swfPath: "/portal/controle-remoto/swf",
-          supplied: "mp3",
-          solution: 'flash,html',
-          cssSelectorAncestor: "#jp_container_2",
-          wmode: "window"
-        });
-      
-        //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
+        if(supportsAudio() == false) {
+          
+          if(window.screen.width < 1024){
+            $(".jp-volume_controls").hide();
+            $(".jp-volume-bar").hide();
+          }
+          
+          $("#jquery_jplayer_2").jPlayer({
+            ready: function () {
+              $(this).jPlayer("setMedia", {
+                mp3: "http://midiaserver.tvcultura.com.br:8003/;stream/1",
+              }).jPlayer("play");
+            },
+            swfPath: "/portal/controle-remoto/swf",
+            supplied: "mp3",
+            //solution: 'flash,html',
+            cssSelectorAncestor: "#jp_container_2",
+            wmode: "window"
+          });
+
+       }else{
+          var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','1','1','9');
+          so.addVariable('autostart', 'true');
+          so.addVariable('streamer', 'rtmp://200.136.27.12/live');
+          so.addVariable('file', 'radioam');
+          so.addVariable('type', 'video');
+          so.addParam('allowscriptaccess','always');
+          so.addParam('allowfullscreen','false');
+          so.addParam('wmode','transparent');
+          so.write('livestream2');
+             
+          $('.jp-play').hide();
+          $('.jp-pause').show(); 
+              
+          $(".jp-play").click(function(){
+             $('#livestream2').show();
+             $('.jp-play').hide();
+             $('.jp-pause').show();
+             
+            var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','1','1','9');
+            so.addVariable('autostart', 'true');
+            so.addVariable('streamer', 'rtmp://200.136.27.12/live');
+            so.addVariable('file', 'radiofm');
+            so.addVariable('type', 'video');
+            so.addParam('allowscriptaccess','always');
+            so.addParam('allowfullscreen','false');
+            so.addParam('wmode','transparent');
+            so.write('livestream2');
+          });
+                
+          $(".jp-pause").click(function(){
+             $('.jp-play').show();
+             $('.jp-pause').hide();
+             $('#livestream2').html("");
+            $('#livestream2').hide();               
+          });
+        } 
               
        function LoadProgramacao(){
          time = new Date().getTime();
@@ -311,5 +354,6 @@
         $('.cr-radios').toggleClass('ativo');
       })
     </script>
+    <div id="livestream2"></div>
   </body>
 </html>
