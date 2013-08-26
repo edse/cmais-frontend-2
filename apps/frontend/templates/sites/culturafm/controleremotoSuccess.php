@@ -53,7 +53,7 @@
             return !!document.createElement('audio').canPlayType;
         }        
         
-        if(supportsAudio() == false) {
+        if(supportsAudio() == true) {
           
           if(window.screen.width < 1024){
             $(".jp-volume_controls").hide();
