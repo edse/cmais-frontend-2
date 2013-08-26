@@ -177,6 +177,7 @@
           </div>
                 
         </div>
+        <img class="sombra" src="/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" />
       </section>
       <section class="relacionados">
         <h3>Sites relacionados</h3>
