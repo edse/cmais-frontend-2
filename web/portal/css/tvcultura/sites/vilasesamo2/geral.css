@@ -373,7 +373,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* /top menu*/
 
 /* footer*/
-footer { background:#fff url(/portal/images/capaPrograma/vilasesamo2/pattern-copyright.jpg) repeat-x; position:relative; padding-bottom:4%;}
+footer { background:#fff url(/portal/images/capaPrograma/vilasesamo2/pattern-copyright.jpg) repeat-x; position:absolute; padding-bottom:4%; width:100%;}
 footer .copyright {height:30px;}
 footer .copyright small { max-width:940px; margin:0 auto; display:block; font-size:14px; text-transform:uppercase; height: 25px; line-height:25px; }
 footer a {display:block;}
