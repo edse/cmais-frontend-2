@@ -154,10 +154,21 @@
           
           <div class="span12">
             <a href="/vilasesamo2/videos" class="col-esq">Jogos</a>
-            <a href="/vilasesamo2/videos" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Víeos</a>
+            <a href="/vilasesamo2/videos" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Vídeos</a>
             <a href="/vilasesamo2/videos" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>Atividades</a>
           </div>
-          <a href="/vilasesamo2/personagens" class="span12">Personagens</a>
+          <div href="/vilasesamo2/personagens" class="span12">
+            <h2>Personagens:</h2>
+            <ul>
+              <li><a href="/vilasesamo2/personagens/garibaldo" title="Garibaldo">Garibaldo,</a></li>
+              <li><a href="/vilasesamo2/personagens/bel" title="Bel">Bel,</a></li>
+              <li><a href="/vilasesamo2/personagens/elmo" title="Elmo">Elmo,</a></li>
+              <li><a href="/vilasesamo2/personagens/grover" title="Grover">Grover,</a></li>
+              <li><a href="/vilasesamo2/personagens/beto" title="Beto">Beto,</a></li>
+              <li><a href="/vilasesamo2/personagens/enio" title="Ênio">Ênio,</a></li>
+              <li><a href="/vilasesamo2/personagens/comecome" title="Come-Come">Come-Come,</a></li>
+              <li><a href="/vilasesamo2/personagens/zoe" title="Zoe">Zoe</a></li>
+            </ul>
           <div class="span12">
             <a href="/vilasesamo2/atividades" class="col-esq">Para adultos</a>
             <a href="/vilasesamo2/atividades" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
