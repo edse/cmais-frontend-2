@@ -240,6 +240,19 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-icon-atividades-peq{ background-position: 0 0; width: 31px; height: 39px; } 
 .sprite-icon-jogos-peq{ background-position: 0 -89px; width: 38px; height: 27px; } 
 .sprite-icon-videos-peq{ background-position: 0 -166px; width: 38px; height: 31px; } 
+
+.sprite-btn-contato,
+.sprite-btn-habitos-hover,
+.sprite-btn-habitos,
+.sprite-btn-incluir-hover,
+.sprite-btn-incluir {  background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-btns-home.png); } 
+.sprite-btn-contato{ background-position: 0 0; width: 255px; height: 57px; } 
+.sprite-btn-habitos:hover,
+.sprite-btn-habitos-hover{ background-position: 0 -107px; width: 300px; height: 100px; } 
+.sprite-btn-habitos{ background-position: 0 -257px; width: 300px; height: 100px; } 
+.sprite-btn-incluir:hover,
+.sprite-btn-incluir-hover{ background-position: 0 -407px; width: 300px; height: 100px; } 
+.sprite-btn-incluir{ background-position: 0 -557px; width: 300px; height: 100px; } 
 /*/sprite*/
 
 
