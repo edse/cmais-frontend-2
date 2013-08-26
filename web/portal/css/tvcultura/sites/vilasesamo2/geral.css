@@ -34,12 +34,13 @@ body { font-family: 'dinmedium', "Helvetica Neue", Helvetica, Arial, sans-serif;
 /* /din-blackregular*/
 
 /* din-blackregular*/
+.conteudo-asset h2,
+footer .mapa ul a:hover,
 footer .mapa .span12,
 .dropdown-submenu:hover > a, 
 .dropdown-submenu:focus > a,
 .pais .content .dica h2,
 .todos-assets p,
-.relacionados h2,
 .navbar .btn-navbar h1,
 .destaque-filtro h2 a,
 .mais,
@@ -130,7 +131,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-scroll-videos{ background-position: 0 -1179px; width: 60px; height: 38px; } 
 .sprite-seta-direita{ background-position: 0 -1267px; width: 46px; height: 70px; } 
 .sprite-seta-down-amarela{ background-position: 0 -1387px; width: 49px; height: 32px; } 
-.sprite-seta-down{ background-position: 0 -1469px; width: 60px; height: 46px; } 
+.sprite-seta-down{ background-position: 0 -1469px; width: 60px; height: 46px; display: none; } 
 .sprite-seta-esquerda{ background-position: 0 -1565px; width: 46px; height: 70px; } 
 .sprite-seta-up-menu{ background-position: 0 -1685px; width: 48px; height: 38px; } 
 .sprite-seta-up{ background-position: 0 -1773px; width: 60px; height: 46px; } 
@@ -239,6 +240,19 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-icon-atividades-peq{ background-position: 0 0; width: 31px; height: 39px; } 
 .sprite-icon-jogos-peq{ background-position: 0 -89px; width: 38px; height: 27px; } 
 .sprite-icon-videos-peq{ background-position: 0 -166px; width: 38px; height: 31px; } 
+
+.sprite-btn-contato,
+.sprite-btn-habitos-hover,
+.sprite-btn-habitos,
+.sprite-btn-incluir-hover,
+.sprite-btn-incluir {  background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-btns-home.png); } 
+.sprite-btn-contato{ background-position: 0 0; width: 255px; height: 57px; } 
+.sprite-btn-habitos:hover,
+.sprite-btn-habitos-hover{ background-position: 0 -107px; width: 300px; height: 100px; } 
+.sprite-btn-habitos{ background-position: 0 -257px; width: 300px; height: 100px; } 
+.sprite-btn-incluir:hover,
+.sprite-btn-incluir-hover{ background-position: 0 -407px; width: 300px; height: 100px; } 
+.sprite-btn-incluir{ background-position: 0 -557px; width: 300px; height: 100px; } 
 /*/sprite*/
 
 
@@ -343,6 +357,9 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques a { display: block; font-size:25px; line-height:30px; color:#fff; text-transform:uppercase; font-weight:normal; padding-top:4%; text-align:left; }
 .destaques a  i { margin:0 4%; }
 .destaques a.asset { font-size:18px; padding:4%; color:#fff; line-height:18px; border-bottom:2px solid #0191fb; }
+.destaques .span6.jogo:hover a.asset { color:#02cbff; }
+.destaques .span6.video:hover a.asset { color:#f9a41b; }
+.destaques .span6.atividade:hover a.asset { color:#b16af2; }
 /*
 .destaques h3 { overflow:hidden; margin:0; border-bottom:2px solid #0191fb; }
 .destaques h3 a { color:#fff; line-height:27px; text-align:left; display:block; padding:0; margin:4%; }
@@ -370,7 +387,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* /top menu*/
 
 /* footer*/
-footer { background:#fff url(/portal/images/capaPrograma/vilasesamo2/pattern-copyright.jpg) repeat-x; position:relative; padding-bottom:4%;}
+footer { background:#fff url(/portal/images/capaPrograma/vilasesamo2/pattern-copyright.jpg) repeat-x; position:absolute; padding-bottom:4%; width:100%;}
 footer .copyright {height:30px;}
 footer .copyright small { max-width:940px; margin:0 auto; display:block; font-size:14px; text-transform:uppercase; height: 25px; line-height:25px; }
 footer a {display:block;}
@@ -411,18 +428,18 @@ footer .mapa h2  {height:83px; line-height:83px; padding-left:2.1%; margin:0; fo
 footer .mapa a {margin:0 !important; height:83px; line-height:83px; padding:0 8%; position:relative; width:20%; text-align:center; }
 
 footer .mapa a.span12 { padding-left:20px; }
-footer .mapa .col-esq { width: 9.1%; }
-footer .mapa .col-central { width:16.02%; background:#feec3c; }
-footer .mapa .col-dir { width:26.89%; float:right; background:#fee133;  }
+footer .mapa .col-esq { width: 33%; padding:0; }
+footer .mapa .col-central { width:34%; background:#feec3c; padding:0;  }
+footer .mapa .col-dir { width:33%; float:right; background:#fee133; padding:0;  }
 footer .mapa .sprite-destalhe-amarelo2,
 footer .mapa .sprite-destalhe-amarelo1 { position:absolute; left:0; top:0; }
 footer .mapa .ul { float:left; width:78%;  }
 footer .mapa ul a { width:auto; padding:0 0 0 1.5%; margin:0;  }
+footer .mapa ul a:hover { text-decoration:underline; }
 
-footer .relacionados { margin-left:4%; }
-footer .relacionados h3 { font-weight:normal; text-transform:uppercase; font-size:22px; }
+footer .relacionados h3 { font-weight:normal; text-transform:uppercase; font-size:14px; }
 footer .relacionados ul { margin:2% 0 0 0; }
-footer .relacionados li { list-style:none; float:left; margin-right:3.2%; }
+footer .relacionados li { list-style:none; float:left; margin-right:3.79%; }
 footer .relacionados li.last { margin-right:0; }
 /* /footer*/
 
