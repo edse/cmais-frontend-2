@@ -57,7 +57,6 @@
           ready: function () {
             $(this).jPlayer("setMedia", {
               mp3: "http://midiaserver.tvcultura.com.br:8001/;stream/1",
-              m4a: "rmtp://200.136.27.12/live"
             }).jPlayer("play");
           },
           swfPath: "/portal/controle-remoto/js",
