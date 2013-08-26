@@ -6419,7 +6419,7 @@ form .nome{
 }
 .internas iframe{
   border: none;
-  margin-left: 100px;
+  /*margin-left: 100px;*/
   overflow: hidden;
   position: relative;
 }
