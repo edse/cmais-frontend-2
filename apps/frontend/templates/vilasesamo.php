@@ -169,6 +169,7 @@
               <li><a href="/vilasesamo2/personagens/comecome" title="Come-Come">Come-Come,</a></li>
               <li><a href="/vilasesamo2/personagens/zoe" title="Zoe">Zoe</a></li>
             </ul>
+          </div>
           <div class="span12">
             <a href="/vilasesamo2/atividades" class="col-esq">Para adultos</a>
             <a href="/vilasesamo2/atividades" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
