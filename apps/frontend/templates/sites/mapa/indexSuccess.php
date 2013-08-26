@@ -23,10 +23,7 @@
 <div id="capa-site">
   <h1>TV Cultura - Mapa de Cobertura</h1>
   
-  <form id="form-map" action="" method="post">
-    <input type="text" id="address" name="address" placeholder="nome da cidade" class="search-map" />
-    <input type="button" id="search" name="search" value="" />
-  </form>
+  
     
   <div class="lista-calendario">
     <div class="barra-grade">                    
@@ -37,6 +34,10 @@
       teste de conteudo
     </div>
     
+    <form id="form-map" action="" method="post">
+      <input type="text" id="address" name="address" placeholder="nome da cidade" class="search-map" />
+      <input type="button" id="search" name="search" value="" />
+    </form>
     <div id="map-canvas" class="mapa"></div>
       
   </div>
