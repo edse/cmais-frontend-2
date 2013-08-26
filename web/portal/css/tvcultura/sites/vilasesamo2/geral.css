@@ -370,13 +370,13 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* /top menu*/
 
 /* footer*/
-footer { background:#fffb49 url(/portal/images/capaPrograma/vilasesamo2/pattern-copyright.jpg) repeat-x; position:relative; padding-bottom:4%;}
+footer { background:#fff url(/portal/images/capaPrograma/vilasesamo2/pattern-copyright.jpg) repeat-x; position:relative; padding-bottom:4%;}
 footer .copyright {height:30px;}
 footer .copyright small { max-width:940px; margin:0 auto; display:block; font-size:14px; text-transform:uppercase; height: 25px; line-height:25px; }
 footer a {display:block;}
 footer h1 a,
 footer h2 a { text-indent:-9999px; }
-footer .container { background:#fffb49;}
+footer .container { background:#fff;}
 footer h1,
 footer h2 { width:auto; float:left; }
 footer h2 { float:right; }
@@ -384,7 +384,7 @@ footer .mapa a,
 footer .logos li { float:left; }
 footer .logos a { /*text-indent:-9999px; */float:left;}
 footer .logos .sombra { margin:0 auto; width: 100%; }
-footer .col-central { margin:0 0 0 8%; background:#ffee1b; position:relative; width:33%; }
+footer .col-central { margin:0 0 0 8%; background:#fff; position:relative; width:33%; }
 footer .col-central a { width: 63%; }
 footer .mapa .col-central,
 footer .logos .col-central a { margin:3% 10%; }
@@ -395,18 +395,18 @@ footer .col-dir a { width: 81%; }
 footer span { display: block; float:left; }
 footer .sprite-destalhe-amarelo1 { position:absolute; right:-33px; }
 footer .mapa,
-footer .logos { margin:0 0 0 2%; }
+footer .logos { margin:0; }
 footer .mapa .col-esq,
 footer .logos .col-esq a { margin-top:3px; }
 footer .mapa .col-dir,
-footer .logos .col-dir { background:#fee133; margin:0; }
+footer .logos .col-dir { background:#fff; margin:0; }
 footer .mapa .col-dir,
 footer .logos .col-dir a { margin:18px 5% 0 15%; }
 footer .mapa a,
 footer .logos li { height:83px; }
 footer .mapa a { font-size:22px; text-transform:uppercase; color:#434343;  }
-footer .mapa { border:2px solid #fee133; clear:both; overflow: hidden; margin-right:4px; width:97.4%; }
-footer .mapa .span12 { border-bottom:1px solid #fee133; margin-left:0;  clear:both; height: 83px;  }
+footer .mapa { border:2px solid #f0f0f0; clear:both; overflow: hidden;  }
+footer .mapa .span12 { border-bottom:1px solid #f0f0f0; margin-left:0;  clear:both; height: 83px;  }
 footer .mapa a {margin:0 !important; height:83px; line-height:83px; padding:0 8%; position:relative; width:20%; }
 footer .mapa a.span12 { padding-left:20px; }
 footer .mapa .col-esq { padding-left:2.1%; width: 15% }

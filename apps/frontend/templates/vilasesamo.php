@@ -146,7 +146,7 @@
       <section>
         <ul class="logos">
           <li class="col-esq"><a href="/vilasesamo2" title="Vila Sésamo"><img src="/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="Vila Sésamo" /></a></li>
-          <li class="col-central"><span class="sprite-destalhe-amarelo2"></span><a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis"><img src="/portal/images/capaPrograma/vilasesamo2/logo-habitos-saudaveis.png" alt="Hábitos Saudáveis" /></a><span class="sprite-destalhe-amarelo1"></span></li>
+          <li class="col-central"><a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis"><img src="/portal/images/capaPrograma/vilasesamo2/logo-habitos-saudaveis.png" alt="Hábitos Saudáveis" /></a></li>
           <li class="col-dir"><a href="/vilasesamo2/incluirbrincando" title="Incluir Brincando"><img src="/portal/images/capaPrograma/vilasesamo2/logo-incluir-grd.png" alt="Incluir Brincando" /></a></li>
           <img class="sombra" src="/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" />
         </ul>
