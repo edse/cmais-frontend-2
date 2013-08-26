@@ -3,8 +3,10 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <style>
 #capa-site h1{text-align: left; margin-top: 40px; font-size: 24px; margin-bottom: 20px;}
-#form-map{float: left;width:540px;position: absolute;z-index: 1;left: 70px;top: 25px;}
+#form-map{float: left;width:540px;position: absolute;z-index: 1;right: 0px;top: 0px;}
+ .barra-grade{margin-bottom: 51px;}
  .barra-grade .tit {width: 95%;padding: 0 10px;}
+ .lista-calendario .barra-grade .tit {width:100%;}
  .mapa{height:750px; border: 1px solid #333;background:#ccc;clear:both; margin-top:20px;}
  .toggle{width:100%;}
  .search-map{margin: 20px -3px 5px 20px;border: none;padding: 5px 15px;width: 400px;float: left;}
