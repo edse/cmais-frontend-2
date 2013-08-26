@@ -343,6 +343,9 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques a { display: block; font-size:25px; line-height:30px; color:#fff; text-transform:uppercase; font-weight:normal; padding-top:4%; text-align:left; }
 .destaques a  i { margin:0 4%; }
 .destaques a.asset { font-size:18px; padding:4%; color:#fff; line-height:18px; border-bottom:2px solid #0191fb; }
+.destaques .span6.jogo:hover a.asset { color:#02cbff; }
+.destaques .span6.video:hover a.asset { color:#f9a41b; }
+.destaques .span6.atividade:hover a.asset { color:#b16af2; }
 /*
 .destaques h3 { overflow:hidden; margin:0; border-bottom:2px solid #0191fb; }
 .destaques h3 a { color:#fff; line-height:27px; text-align:left; display:block; padding:0; margin:4%; }
@@ -370,7 +373,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* /top menu*/
 
 /* footer*/
-footer { background:#fff url(/portal/images/capaPrograma/vilasesamo2/pattern-copyright.jpg) repeat-x; position:relative; padding-bottom:4%;}
+footer { background:#fff url(/portal/images/capaPrograma/vilasesamo2/pattern-copyright.jpg) repeat-x; position:absolute; padding-bottom:4%; width:100%;}
 footer .copyright {height:30px;}
 footer .copyright small { max-width:940px; margin:0 auto; display:block; font-size:14px; text-transform:uppercase; height: 25px; line-height:25px; }
 footer a {display:block;}
@@ -411,18 +414,17 @@ footer .mapa h2  {height:83px; line-height:83px; padding-left:2.1%; margin:0; fo
 footer .mapa a {margin:0 !important; height:83px; line-height:83px; padding:0 8%; position:relative; width:20%; text-align:center; }
 
 footer .mapa a.span12 { padding-left:20px; }
-footer .mapa .col-esq { width: 9.1%; }
-footer .mapa .col-central { width:16.02%; background:#feec3c; }
-footer .mapa .col-dir { width:26.89%; float:right; background:#fee133;  }
+footer .mapa .col-esq { width: 33%; padding:0; }
+footer .mapa .col-central { width:34%; background:#feec3c; padding:0;  }
+footer .mapa .col-dir { width:33%; float:right; background:#fee133; padding:0;  }
 footer .mapa .sprite-destalhe-amarelo2,
 footer .mapa .sprite-destalhe-amarelo1 { position:absolute; left:0; top:0; }
 footer .mapa .ul { float:left; width:78%;  }
 footer .mapa ul a { width:auto; padding:0 0 0 1.5%; margin:0;  }
 
-footer .relacionados { margin-left:4%; }
-footer .relacionados h3 { font-weight:normal; text-transform:uppercase; font-size:22px; }
+footer .relacionados h3 { font-weight:normal; text-transform:uppercase; font-size:14px; }
 footer .relacionados ul { margin:2% 0 0 0; }
-footer .relacionados li { list-style:none; float:left; margin-right:3.2%; }
+footer .relacionados li { list-style:none; float:left; margin-right:3.79%; }
 footer .relacionados li.last { margin-right:0; }
 /* /footer*/
 
