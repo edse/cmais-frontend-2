@@ -26,10 +26,13 @@
     </div>
   </section>
   <section class="relacionados">
-    <h2>Jogos relacionados com:</h2>
+    <h2>Brinque também com:</h2>
+    <!--
     <p><a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a>, <a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a>, <a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a>, <a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a></p>
     <a class="todos-assets"><i class="sprite-btn-voltar-jogos"></i><p>todos os jogos</p></a>
     <br />
+    -->
+    
     <h1>CARROSSEL RELACIONADOS - JEFFERSON</h1>
   </section>
   <section class="pais">
