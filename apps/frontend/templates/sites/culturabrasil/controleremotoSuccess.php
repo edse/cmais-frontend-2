@@ -42,7 +42,7 @@
       <script src="/portal/controle-remoto/js/main.js" type="text/javascript"></script>
       
       <script src="/portal/controle-remoto/js/jquery.min-1.8.js" type="text/javascript"></script>
-      <script src="/portal/controle-remoto/js/jquery.jplayer.min.js" type="text/javascript"></script>
+      <script src="/portal/controle-remoto/js/jquery.jplayer.js" type="text/javascript"></script>
       <script type="text/javascript" src="/portal/controle-remoto/js/jquery.jplayer.inspector.js"></script>
       <script type="text/javascript">
       //<![CDATA[
