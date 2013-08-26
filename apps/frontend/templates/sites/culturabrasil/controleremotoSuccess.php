@@ -47,24 +47,69 @@
       <script type="text/javascript">
       //<![CDATA[
       $(document).ready(function(){
-        $(".cr-det-mus-pgm").hide();
-        if(window.screen.width <= 1024){
-          $(".jp-volume_controls").hide();
-          $(".jp-volume-bar").hide();
-        }
+        $(".cr-det-mus-pgm").hide();        
         
-        $("#jquery_jplayer_2").jPlayer({
-          ready: function () {
-            $(this).jPlayer("setMedia", {
-              mp3: "http://midiaserver.tvcultura.com.br:8001/;stream/1",
-            }).jPlayer("play");
-          },
-          swfPath: "/portal/controle-remoto/js",
-          supplied: "mp3",
-          solution: 'flash,html',
-          cssSelectorAncestor: "#jp_container_2",
-          wmode: "window"
-        });
+        function supportsAudio() {
+            return !!document.createElement('audio').canPlayType;
+        }      
+          
+        if(supportsAudio() == false) {
+          if(window.screen.width <= 1024){
+            $(".jp-volume_controls").hide();
+            $(".jp-volume-bar").hide();
+          }
+          
+          $("#jquery_jplayer_2").jPlayer({
+            ready: function () {
+              $(this).jPlayer("setMedia", {
+                mp3: "http://midiaserver.tvcultura.com.br:8001/;stream/1",
+              }).jPlayer("play");
+            },
+            swfPath: "/portal/controle-remoto/swf",
+            supplied: "mp3",
+            //solution: 'html,flash',
+            cssSelectorAncestor: "#jp_container_2",
+            wmode: "window"
+          });
+       }else{
+          var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','1','1','9');
+          so.addVariable('autostart', 'true');
+          so.addVariable('streamer', 'rtmp://200.136.27.12/live');
+          so.addVariable('file', 'radioam');
+          so.addVariable('type', 'video');
+          so.addParam('allowscriptaccess','always');
+          so.addParam('allowfullscreen','false');
+          so.addParam('wmode','transparent');
+          so.write('livestream2');
+             
+          $('.jp-play').hide();
+          $('.jp-pause').show(); 
+              
+          $(".jp-play").click(function(){
+             $('#livestream2').show();
+             $('.jp-play').hide();
+             $('.jp-pause').show();
+             
+            var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','1','1','9');
+            so.addVariable('autostart', 'true');
+            so.addVariable('streamer', 'rtmp://200.136.27.12/live');
+            so.addVariable('file', 'radiofm');
+            so.addVariable('type', 'video');
+            so.addParam('allowscriptaccess','always');
+            so.addParam('allowfullscreen','false');
+            so.addParam('wmode','transparent');
+            so.write('livestream2');
+          });
+                
+          $(".jp-pause").click(function(){
+             $('.jp-play').show();
+             $('.jp-pause').hide();
+             $('#livestream2').html("");
+            $('#livestream2').hide();               
+          });
+        } 
+      
+      
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         function LoadInfoMusica(){
