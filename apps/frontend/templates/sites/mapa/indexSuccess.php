@@ -31,12 +31,14 @@
       teste de conteudo
     </div>
     
-    <form id="form-map" action="" method="post">
+      
+
+    <div id="map-canvas" class="mapa">
+      <form id="form-map" action="" method="post">
       <input type="text" id="address" name="address" placeholder="nome da cidade" class="search-map" />
       <input type="button" id="search" name="search" value="" />
-    </form>  
-
-    <div id="map-canvas" class="mapa"></div>
+    </form>
+    </div>
       
   </div>
 </div>
