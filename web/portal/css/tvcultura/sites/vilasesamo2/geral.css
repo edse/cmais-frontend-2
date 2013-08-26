@@ -27,6 +27,7 @@ i { display:block; }
 a:hover { text-decoration:none; }
 
 /* dinmedium */
+footer .mapa .span12 ul a,
 input, button, select, textarea,
 .destaques a.asset,
 body { font-family: 'dinmedium', "Helvetica Neue", Helvetica, Arial, sans-serif; color:#737373; }
@@ -403,6 +404,7 @@ footer .mapa .col-dir,
 footer .logos .col-dir a { margin:18px 5% 0 15%; }
 footer .mapa a,
 footer .logos li { height:83px; }
+footer .mapa h2,
 footer .mapa a { font-size:22px; text-transform:uppercase; color:#434343;  }
 footer .mapa { border:2px solid #f0f0f0; clear:both; overflow: hidden; background:#fffb49;  }
 footer .mapa .span12 { border-bottom:1px solid #f0f0f0; margin-left:0;  clear:both; height: 83px;  }
