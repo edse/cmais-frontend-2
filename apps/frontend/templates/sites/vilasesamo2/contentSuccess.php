@@ -34,7 +34,7 @@
   <section class="pais">
     <span class="divisa"></span>
     <h2>para os pais <i class="sprite-seta-down"></i></h2>
-    <div class="content span12 row-fluid" style="display: none;">
+    <div class="content span12 row-fluid">
       <div class="redes">
         <g:plusone size="medium" count="false"></g:plusone>
         <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" style="margin-top:-10px;" /></a>
