@@ -6422,6 +6422,7 @@ form .nome{
   /*margin-left: 100px;*/
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 .box-especial-infoTxt iframe{
   border: none;
