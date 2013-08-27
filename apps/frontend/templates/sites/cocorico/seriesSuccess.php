@@ -1,8 +1,9 @@
 <?php
-if(isset($asset))
+if(isset($asset)){
   echo "teste>>>>";
-
-$assets = $pager->getResults();
+  $assets = $asset;
+}
+//$assets = $pager->getResults();
 ?>
 
 <link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
