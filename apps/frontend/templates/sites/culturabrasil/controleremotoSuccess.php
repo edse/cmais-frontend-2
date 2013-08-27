@@ -79,8 +79,10 @@
               file: "rtmp://200.136.27.12/live/radioam",
               width: 360,
               height: 40,
+              autostart: true,
               title: "Rádio Cultura Brasil"
-          }).play();
+          });
+          $(".cr-player").css("padding","15px 20px");
         } 
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
