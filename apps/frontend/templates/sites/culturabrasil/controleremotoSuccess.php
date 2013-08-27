@@ -11,7 +11,9 @@
     <link rel="stylesheet" type="text/css" href="/portal/controle-remoto/css/controleremoto.css">
     <link href="/portal/controle-remoto/css/jPlayer.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/portal/controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />
-    <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>    
+    
+    <script type="text/javascript" src="http://jwpsrv.com/library/CSQ2LAE6EeOsRSIACusDuQ.js"></script>
+        
     <!--DFP -->
     <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
     <script type='text/javascript'>
@@ -52,9 +54,9 @@
         
         function supportsAudio() {
             return !!document.createElement('audio').canPlayType;
-        }      
+        } 
           
-        if(supportsAudio() == true) {
+        if(supportsAudio() != true) {
           if(window.screen.width <= 1024){
             $(".jp-volume_controls").hide();
             $(".jp-volume-bar").hide();
@@ -72,45 +74,13 @@
             cssSelectorAncestor: "#jp_container_2",
             wmode: "window"
           });
-       }else{
-          $(".jp-volume_controls").hide();
-          $(".jp-volume-bar").hide();
-         
-          var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','1','1','9');
-          so.addVariable('autostart', 'true');
-          so.addVariable('streamer', 'rtmp://200.136.27.12/live');
-          so.addVariable('file', 'radioam');
-          so.addVariable('type', 'video');
-          so.addParam('allowscriptaccess','always');
-          so.addParam('allowfullscreen','false');
-          so.addParam('wmode','transparent');
-          so.write('livestream2');
-             
-          $('.jp-play').hide();
-          $('.jp-pause').show(); 
-              
-          $(".jp-play").click(function(){
-             $('#livestream2').show();
-             $('.jp-play').hide();
-             $('.jp-pause').show();
-             
-            var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','1','1','9');
-            so.addVariable('autostart', 'true');
-            so.addVariable('streamer', 'rtmp://200.136.27.12/live');
-            so.addVariable('file', 'radioam');
-            so.addVariable('type', 'video');
-            so.addParam('allowscriptaccess','always');
-            so.addParam('allowfullscreen','false');
-            so.addParam('wmode','transparent');
-            so.write('livestream2');
-          });
-                
-          $(".jp-pause").click(function(){
-             $('.jp-play').show();
-             $('.jp-pause').hide();
-             $('#livestream2').html("");
-            $('#livestream2').hide();               
-          });
+        }else{
+          jwplayer("div_player").setup({
+              file: "rtmp://200.136.27.12/live/radioam",
+              width: 360,
+              height: 40,
+              title: "Rádio Cultura Brasil"
+          }).play();
         } 
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
@@ -217,7 +187,7 @@
       <section class="cr-player">
         
         
-          
+ <div id="div_player">            
     <div id="jquery_jplayer_2" class="jp-jplayer"></div>
       <div id="jp_container_2" class="jp-audio">
         <div class="jp-type-single">
@@ -247,31 +217,13 @@
           </div>
         </div>
      </div>  
-        
+   </div>     
         
       </section>
       <!-- /player -->
       
       <!-- descrição programa -->
       <section class="cr-pgm">
-      <?php
-      //if(isset($schedules)):
-        //$style = 1; //Par ou Impar
-        
-        //foreach($schedules as $k=>$d):
-          //$now = false;
-          //if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
-            //$now = true;
-          //}
-    
-         // if($now):
-           // if($d->retriveLiveImage() != ""){
-             // $imagemPrograma = $d->retriveLiveImage();  
-            //}else{
-              //$imagemPrograma = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
-            //}
-      ?>
-
             <!-- header -->
             <div class="cr-header-pgm">
               <span>você está ouvindo</span>
@@ -280,14 +232,14 @@
             
             <!-- imagem -->  
             <div class="cr-img-pgm">
-              <img src="<?php //echo $imagemPrograma ?>" alt="<?php //echo $d->Program->getTitle()?>" id="img_pgm_atual" />
+              <img src="" alt="" id="img_pgm_atual" />
             </div>  
             <!-- /imagem -->
             
             <!-- descricao programa -->
             <div class="cr-desc-pgm">
               <a class="cr-links cr-logo-cultura-brasil" href="http://culturabrasil.cmais.com.br/" title="Cultura Brasil"></a>
-              <h2 id="titulo_pgm_atual"><?php //echo $d->Program->getTitle()?></h2>
+              <h2 id="titulo_pgm_atual"></h2>
               
               <!-- detalhe musica -->
               <div class="cr-det-mus-pgm">
@@ -307,9 +259,6 @@
           </section>
           <!-- /descrição programa -->              
               
-      <?php //endif; 
-       // endforeach;
-      ?>
         <!-- lista a seguir -->
       <section class="cr-lista-a-seguir">
         <h4>a Seguir</h4>
@@ -317,25 +266,12 @@
 
         <!-- lista itens -->
         <ul id="lista_pgm_a_seguir">
-      
-      <?php 
-        //$cont = 1;
-        //foreach($schedules as $k=>$d):
-          //if((strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateStart())) && $cont <= 7) {
-      ?>
             <!-- item -->
-            <li class="<?php //if($style==0) {$style++;echo"im";}else{$style=0;}?>par">
-              <h5><?php //echo $d->retriveTitle(); ?></h5>
-              <p class="hora"><?php //echo format_datetime($d->getDateStart(), "HH:mm") ?> h</p>
+            <li class="par">
+              <h5></h5>
+              <p class="hora"> h</p>
             </li>
             <!-- item -->
-      <?php 
-            //$cont++;
-        //  }
-        //endforeach;
-      //endif; 
-      ?>    
-      
           
         </ul>  
         <!-- /lista itens -->
@@ -352,10 +288,6 @@
         
       </section>  
       <!-- /lista a seguir -->
-      
-        
-      
-      
       
       <!-- banner -->
       <section class="cr-banner">
@@ -383,6 +315,5 @@
         $('.cr-radios').toggleClass('ativo');
       })
     </script>
-    <div id="livestream2"></div>
   </body>
 </html>

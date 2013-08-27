@@ -1,17 +1,3 @@
-<!--scripts e css banner-->
-<script type="text/javascript" src="/portal/js/layer-slider/jQuery.layerSlider.js"></script>
-<script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-<script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
-<script src="/portal/js/hammer.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
-<link rel="stylesheet" href="/portal/js/layer-slider/model06/jquery.layerSlider.css">
-<link rel="stylesheet" href="/portal/js/layer-slider/model06/main.css">
-
-<link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
-<!--link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" /-->
-
-<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 <script>
@@ -45,85 +31,72 @@
     <br />
     -->
 
-  <div id="carrossel-personagem">
-    <span class="divisa1"></span>
-    <div class="carrossel-p" id="carrossel-p">
-      <div class="slider">
-        <div class="header-carrossel-personagens">
-          <span class="topo-p"></span>
-          <i class="sprite-icon-personagens-peq"></i>
-          <h3><a href="/vilasesamo2/personagens">Personagens</a></h3>
-          
-          <div class="slider-mask-wrap">
-            <div class="slider-mask">
-              <ul class="slider-target">
-                <li>
-                  <div class="inner personagens bel">
-                    <a href="/vilasesamo2/personagens/bel" title="Bel" class="btn-bel">
-                      <img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="Personagem" />
-                     </a>
-                  </div>
-                  <a class="nome" href="/vilasesamo2/personagens/bel" title="Bel">Bel</a>
-                </li>
-                <li>
-                  <div class="inner personagens beto">
-                    <a href="/vilasesamo2/personagens/beto" title="Beto" class="btn-beto"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/beto_personagem.png" alt="Personagem" /></a>
-                  </div>
-                  <a class="nome" href="/vilasesamo2/personagens/beto" title="Bel">Beto</a>
-                </li>
-                <li>
-                  <div class="inner personagens comecome">
-                    <a href="/vilasesamo2/personagens/come-come" title="Come-come" class="btn-comecome"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/comecome_personagem.png" alt="Personagem" /></a>
-                  </div>
-                  <a class="nome" href="/vilasesamo2/personagens/comecome" title="Come-come">Come-come</a>
-                </li>
-                <li>
-                  <div class="inner personagens elmo">
-                    <a href="/vilasesamo2/personagens/elmo" title="Elmo" class="btn-elmo"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/elmo_personagem.png" alt="Personagem" /></a>
-                  </div>
-                  <a class="nome" href="/vilasesamo2/personagens/elmo" title="Elmo">Elmo</a>
-                </li>
-                <li>
-                  <div class="inner personagens enio">
-                    <a href="/vilasesamo2/personagens/enio" title="Ênio" class="btn-enio"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/enio_personagem.png" alt="Personagem" /></a>
-                   </div>
-                   <a class="nome" href="/vilasesamo2/personagens/enio" title="Ênio">Ênio</a>
-                </li>
-                <li>
-                  <div class="inner personagens garibaldo">
-                    <a href="/vilasesamo2/personagens/garibaldo" title="Garibaldo" class="btn-garibaldo"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/garibaldo_personagem.png" alt="Personagem" /></a>
-                  </div>
-                  <a class="nome" href="/vilasesamo2/personagens/garibaldo" title="Garibaldo">Garibaldo</a>
-                </li>
-                <li>
-                  <div class="inner personagens grover">
-                    <a href="/vilasesamo2/personagens/grover" title="Grover" class="btn-grover"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/grover_personagem.png" alt="Personagem" /></a>
-                  </div>
-                  <a class="nome" href="/vilasesamo2/personagens/grover" title="Grover">Grover</a>
-                </li>
-                <li>
-                  <div class="inner personagens zoe">
-                    <a href="/vilasesamo2/personagens/zoe" title="Zoe" class="btn-zoe"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/zoe_personagem.png" alt="Personagem" /></a>
-                   </div>
-                   <a class="nome" href="/vilasesamo2/personagens/zoe" title="Zoe">Zoe</a>
-                </li>
-                
-              </ul>
-              <div class="clearit"></div>
-            </div>
-          </div>
-        </div>  
-        <div class="slider-nav">
-          <div class="arrow-left arrow personagem">
-            <span title="Back" class="sprite-seta-esquerda personagens"></span>
-          </div>
-          <div class="arrow-right arrow personagem">
-            <span title="Next" class="sprite-seta-direita personagens"></span>
-          </div>
+
+  </section>
+  <section class="form">
+    <h2>Brincar é um direito da criança</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices sapien at massa condimentum venenatis. In luctus vulputate massa, quis faucibus tellus pharetra nec. Donec convallis ligula eu augue mattis luctus. Aliquam scelerisque quam metus. Desenhe sua brincadeira preferida e envie para a galeria do site! </p>
+    <form class="form-horizontal">
+      <div class="control-group">
+        <label class="control-label" for="nome">Nome</label>
+        <div class="controls">
+          <input type="text" id="nome" placeholder="Nome" value="Nome">
         </div>
       </div>
-    </div>
-  </div>
+      
+      <div class="control-group">
+        <label class="control-label" for="idade">Idade</label>
+        <div class="controls">
+          <input type="text" id="idade" placeholder="Idade" value="Idade">
+        </div>
+      </div>
+      
+      <div class="control-group">
+        <label class="control-label" for="cidade">Cidade</label>
+        <div class="controls">
+          <input type="text" id="cidade" placeholder="Cidade" value="Cidade">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="estado">UF</label>
+        <div class="controls">
+          <input type="text" id="estado" placeholder="Estado" value="Estado">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="email">Email</label>
+        <div class="controls">
+          <input type="text" id="email" placeholder="Email" value="Email">
+        </div>
+      </div>
+       <div class="control-group">
+        <label class="control-label" for="anexo">Anexo</label>
+        <div class="controls">
+          <input type="text" id="anexo" placeholder="Anexo" value="Anexo">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="mensagem">Mensagem</label>
+        <div class="controls">
+          <textarea id="mensagem" placeholder="Mensagem" value="Mensagem"></textarea>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="radio">
+          <input type="radio" name="concorco" id="concorco" value="concorco" checked>
+          Declaro que li e estou de acordo com os <a href="#">Termos e Condições</a>.
+        </label>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <label class="checkbox">
+            <input type="checkbox"> Remember me
+          </label>
+          <button type="submit" class="btn">Sign in</button>
+        </div>
+      </div>
+    </form>
+
 
   </section>
   <section class="pais">

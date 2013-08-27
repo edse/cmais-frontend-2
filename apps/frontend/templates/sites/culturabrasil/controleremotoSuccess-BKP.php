@@ -11,9 +11,7 @@
     <link rel="stylesheet" type="text/css" href="/portal/controle-remoto/css/controleremoto.css">
     <link href="/portal/controle-remoto/css/jPlayer.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/portal/controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />
-    
-    <script type="text/javascript" src="http://jwpsrv.com/library/CSQ2LAE6EeOsRSIACusDuQ.js"></script>    
-    
+    <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>    
     <!--DFP -->
     <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
     <script type='text/javascript'>
@@ -45,19 +43,19 @@
       <script src="/portal/controle-remoto/js/main.js" type="text/javascript"></script>
       
       <script src="/portal/controle-remoto/js/jquery.min-1.8.js" type="text/javascript"></script>
-      <script src="/portal/controle-remoto/js/jquery.jplayer.min.js" type="text/javascript"></script>
+      <script src="/portal/controle-remoto/js/jquery.jplayer.js" type="text/javascript"></script>
       <script type="text/javascript" src="/portal/controle-remoto/js/jquery.jplayer.inspector.js"></script>
       <script type="text/javascript">
       //<![CDATA[
       $(document).ready(function(){
+        $(".cr-det-mus-pgm").hide();        
         
         function supportsAudio() {
             return !!document.createElement('audio').canPlayType;
-        }        
-        
-        if(supportsAudio() == true) {
+        }      
           
-          if(window.screen.width < 1024){
+        if(supportsAudio() == true) {
+          if(window.screen.width <= 1024){
             $(".jp-volume_controls").hide();
             $(".jp-volume-bar").hide();
           }
@@ -65,29 +63,79 @@
           $("#jquery_jplayer_2").jPlayer({
             ready: function () {
               $(this).jPlayer("setMedia", {
-                mp3: "http://midiaserver.tvcultura.com.br:8003/;stream/1",
+                mp3: "http://midiaserver.tvcultura.com.br:8001/;stream/1",
               }).jPlayer("play");
             },
             swfPath: "/portal/controle-remoto/swf",
             supplied: "mp3",
-            //solution: 'flash,html',
+            //solution: 'html,flash',
             cssSelectorAncestor: "#jp_container_2",
             wmode: "window"
           });
-
-         }else{
-          jwplayer("div_player").setup({
-              file: "rtmp://200.136.27.12/live/radioam",
-              width: 360,
-              height: 40,
-              title: "Rádio Cultura Brasil"
-          }).play();
-        } 
+       }else{
+          $(".jp-volume_controls").hide();
+          $(".jp-volume-bar").hide();
+         
+          var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','1','1','9');
+          so.addVariable('autostart', 'true');
+          so.addVariable('streamer', 'rtmp://200.136.27.12/live');
+          so.addVariable('file', 'radioam');
+          so.addVariable('type', 'video');
+          so.addParam('allowscriptaccess','always');
+          so.addParam('allowfullscreen','false');
+          so.addParam('wmode','transparent');
+          so.write('livestream2');
+             
+          $('.jp-play').hide();
+          $('.jp-pause').show(); 
               
-       function LoadProgramacao(){
+          $(".jp-play").click(function(){
+             $('#livestream2').show();
+             $('.jp-play').hide();
+             $('.jp-pause').show();
+             
+            var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','1','1','9');
+            so.addVariable('autostart', 'true');
+            so.addVariable('streamer', 'rtmp://200.136.27.12/live');
+            so.addVariable('file', 'radioam');
+            so.addVariable('type', 'video');
+            so.addParam('allowscriptaccess','always');
+            so.addParam('allowfullscreen','false');
+            so.addParam('wmode','transparent');
+            so.write('livestream2');
+          });
+                
+          $(".jp-pause").click(function(){
+             $('.jp-play').show();
+             $('.jp-pause').hide();
+             $('#livestream2').html("");
+            $('#livestream2').hide();               
+          });
+        } 
+      
+        //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
+        function LoadInfoMusica(){
+          time = new Date().getTime();
+          $.ajax({
+             url: "http://culturabrasil.cmais.com.br/pulsar.json?no-cache="+time, 
+             dataType: "json",
+             success: function(json){
+               if((json.musica.interprete == null && json.musica.titulo == null) || (json.musica.interprete == "" && json.musica.titulo == "")){
+                 $(".cr-det-mus-pgm").hide();
+               }else{
+                 //$("#nome_musica_atual").text(json.musica.titulo+" - "+json.musica.duracao);
+                 $("#nome_interprete_atual").text(json.musica.interprete);
+                 $("#nome_musica_atual").text(json.musica.titulo);               
+                 $(".cr-det-mus-pgm").show();  
+               }
+             }
+           }); 
+        }
+
+        function LoadProgramacao(){
          time = new Date().getTime();
          $.ajax({
-           url: "/ajax/programacao-radio?channel_id=6&no-cache="+time,// 6 = Cultura FM 
+           url: "/ajax/programacao-radio?channel_id=5&no-cache="+time,// 5 = Cultura Brasil 
            dataType: "json",
            success: function(json){
              //No Ar
@@ -108,16 +156,21 @@
              
              }
           }); 
-       }
-      
-      
-       LoadProgramacao();
-      
+        }
+        
+        LoadInfoMusica();
+        LoadProgramacao();
+        
+        //Você está ouvindo
+        setInterval(function(){
+          LoadInfoMusica();
+         }, 10000);
+         
         //No ar e A Seguir
         setInterval(function(){         
           LoadProgramacao();
          }, 60000);
-        
+         
       });
       //]]>
       </script>    
@@ -125,7 +178,7 @@
     
     <!-- /scripts -->
     
-    <title>Cultura FM - Controle Remoto</title>
+    <title>Cultura Brasil - Controle Remoto</title>
     
     <!-- Le styles--> 
     <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -164,7 +217,7 @@
       <section class="cr-player">
         
         
-  <div id="div_player">        
+          
     <div id="jquery_jplayer_2" class="jp-jplayer"></div>
       <div id="jp_container_2" class="jp-audio">
         <div class="jp-type-single">
@@ -194,13 +247,31 @@
           </div>
         </div>
      </div>  
-  </div>
+        
         
       </section>
       <!-- /player -->
       
       <!-- descrição programa -->
       <section class="cr-pgm">
+      <?php
+      //if(isset($schedules)):
+        //$style = 1; //Par ou Impar
+        
+        //foreach($schedules as $k=>$d):
+          //$now = false;
+          //if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) {
+            //$now = true;
+          //}
+    
+         // if($now):
+           // if($d->retriveLiveImage() != ""){
+             // $imagemPrograma = $d->retriveLiveImage();  
+            //}else{
+              //$imagemPrograma = "http://midia.cmais.com.br/displays/a40e6943be7ab8870e5dd0dde035d98451b58fe7.jpg";
+            //}
+      ?>
+
             <!-- header -->
             <div class="cr-header-pgm">
               <span>você está ouvindo</span>
@@ -209,23 +280,23 @@
             
             <!-- imagem -->  
             <div class="cr-img-pgm">
-              <img src="" alt="" id="img_pgm_atual" />
+              <img src="<?php //echo $imagemPrograma ?>" alt="<?php //echo $d->Program->getTitle()?>" id="img_pgm_atual" />
             </div>  
             <!-- /imagem -->
             
             <!-- descricao programa -->
             <div class="cr-desc-pgm">
-              <a class="cr-links cr-logo-cultura-fm" href="http://culturafm.cmais.com.br/" title="Cultura FM"></a>
-              <h2 id="titulo_pgm_atual"></h2>
+              <a class="cr-links cr-logo-cultura-brasil" href="http://culturabrasil.cmais.com.br/" title="Cultura Brasil"></a>
+              <h2 id="titulo_pgm_atual"><?php //echo $d->Program->getTitle()?></h2>
               
               <!-- detalhe musica -->
               <div class="cr-det-mus-pgm">
                 
-                <!--span class="titulo">música</span>
-                <p></p>
+                <span class="titulo">música</span>
+                <p id="nome_musica_atual"></p>
                 
                 <span class="titulo">intérprete</span>
-                <p></p-->
+                <p id="nome_interprete_atual"></p>
                   
               </div>
               <!-- /detalhe musica -->
@@ -236,6 +307,9 @@
           </section>
           <!-- /descrição programa -->              
               
+      <?php //endif; 
+       // endforeach;
+      ?>
         <!-- lista a seguir -->
       <section class="cr-lista-a-seguir">
         <h4>a Seguir</h4>
@@ -243,27 +317,43 @@
 
         <!-- lista itens -->
         <ul id="lista_pgm_a_seguir">
+      
+      <?php 
+        //$cont = 1;
+        //foreach($schedules as $k=>$d):
+          //if((strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateStart())) && $cont <= 7) {
+      ?>
             <!-- item -->
-            <li class="par">
-              <h5></h5>
-              <p class="hora"> h</p>
+            <li class="<?php //if($style==0) {$style++;echo"im";}else{$style=0;}?>par">
+              <h5><?php //echo $d->retriveTitle(); ?></h5>
+              <p class="hora"><?php //echo format_datetime($d->getDateStart(), "HH:mm") ?> h</p>
             </li>
             <!-- item -->
+      <?php 
+            //$cont++;
+        //  }
+        //endforeach;
+      //endif; 
+      ?>    
+      
+          
         </ul>  
         <!-- /lista itens -->
         
         <div class="cr-linha"></div>
         <!-- redes -->
         <div class="cr-redes">
-          <a class="cr-links cr-facebook" href="https://www.facebook.com/culturafmoficial" title="facebook" target="_blank"></a>
-          <a class="cr-links cr-twitter" href="https://twitter.com/_CulturaFM" title="twitter" target="_blank"></a>
-          <a class="cr-links cr-google" href="https://plus.google.com/u/0/109016902461199467278/posts" title="google" target="_blank"></a>
+          <a class="cr-links cr-facebook" href="https://www.facebook.com/culturabrasil" title="facebook" target="_blank"></a>
+          <a class="cr-links cr-twitter" href="https://twitter.com/culturabrasil2" title="twitter" target="_blank"></a>
+          <a class="cr-links cr-google" href="https://plus.google.com/u/0/+CulturaBrasil/posts" title="google" target="_blank"></a>
         </div>
         <!-- /redes -->
-        <a href="http://cmais.com.br/culturafm/programacao" class="cr-pgm-completa" title="Veja nossa programação completa" target="_blank">programação completa » </a>
+        <a href="http://cmais.com.br/culturabrasil/programacao" class="cr-pgm-completa" title="Veja nossa programação completa" target="_blank">programação completa » </a>
         
       </section>  
       <!-- /lista a seguir -->
+      
+        
       
       
       
@@ -273,7 +363,7 @@
         <div class="cr-box-banner">
           
           <script type='text/javascript'>
-            GA_googleFillSlot("cultura-fm");
+            GA_googleFillSlot("cultura-brasil");
           </script>
           
         </div>
@@ -293,5 +383,6 @@
         $('.cr-radios').toggleClass('ativo');
       })
     </script>
+    <div id="livestream2"></div>
   </body>
 </html>
