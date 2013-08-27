@@ -80,6 +80,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .pais .sprite-seta-up { top:0; }
 .pais .fechar-toogle.ativo { display:block; }
 /*.pais { position:absolute; right:10px; top:-10px; }*/
+section.form { background:#3aaaec; } 
 
 /* ie */
 .pais .row-fluid .span4 {  *margin:2px !important;}
