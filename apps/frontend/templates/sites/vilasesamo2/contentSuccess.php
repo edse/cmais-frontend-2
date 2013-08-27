@@ -167,7 +167,7 @@ $('#carrossel-i').responsiveCarousel({
   responsiveUnitSize : function() {
     return 2;
   },
-  step : -1
+  step : -4
 });
 
 
