@@ -153,3 +153,45 @@
     <span class="linha"></span>
   </section>
 </div>
+<script>
+$('#carrossel-p').responsiveCarousel({
+  arrowLeft: '.arrow-left span.personagens',
+  arrowRight: '.arrow-right span.personagens',
+  target:'#carrossel-p .slider-target',
+  unitElement:'#carrossel-p .slider-target > li',
+  mask:'#carrossel-p .slider-mask',
+  easing:'linear',
+  dragEvents:true,
+  speed:200,
+  slideSpeed:1000,
+  responsiveUnitSize : function() {
+    return 2;
+  },
+  step : -1
+});
+
+
+if(screen.width > 1024){
+  $('#carrossel-p').mouseenter(function(){
+    $('.arrow.personagem').fadeIn('fast');
+  });
+  
+  $('#carrossel-mobile').mouseenter(function(){
+    $('.arrow.destaque-mobile').fadeIn('fast');
+  });
+};
+if(navigator.appName!='Microsoft Internet Explorer')
+{
+  //carrossel personagens redraw pra tablet e celular home
+  window.addEventListener('load', function() {
+    $('.carrossel-p, #carrossel-mobile').responsiveCarousel('redraw');
+  });
+  window.addEventListener("orientationchange", function() {
+    $('.carrossel-p, #carrossel-mobile').responsiveCarousel('redraw');
+  }, false);
+  window.addEventListener("resize", function() {
+    $('.carrossel-p, #carrossel-mobile').responsiveCarousel('redraw');
+  }, false);
+  //carrossel personagens redraw pra tablet e celular home
+}
+</script>
