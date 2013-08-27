@@ -4,10 +4,10 @@
     <span class="divisa1"></span>
     <div class="carrossel-i" id="carrossel-i">
       <div class="slider">
-        <div class="header-carrossel-interna">
-          <span class="topo-p"></span>
-          <i class="sprite-icon-interna-peq"></i>
-          <h3><a href="/vilasesamo2/interna">Personagens</a></h3>
+
+          
+          
+
           
           <div class="slider-mask-wrap">
             <div class="slider-mask">
@@ -67,7 +67,7 @@
               <div class="clearit"></div>
             </div>
           </div>
-        </div>  
+          
         <div class="slider-nav">
           <div class="arrow-left arrow personagem">
             <span title="Back" class="sprite-seta-esquerda personagens"></span>

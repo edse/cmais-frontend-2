@@ -19,6 +19,6 @@ if($result->valida_usuarioResult != " " && $result->valida_usuarioResult != ""){
 }
 else{
   /*header("Location: http://172.20.18.133/crm-form/form.html?erro=1");*/
-  header("Location: http://http://cmais.com.br/central-de-relacionamento?erro=1");
+  header("Location: http://cmais.com.br/central-de-relacionamento?erro=1");
 }
 die();
