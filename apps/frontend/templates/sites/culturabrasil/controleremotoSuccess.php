@@ -56,7 +56,7 @@
             return !!document.createElement('audio').canPlayType;
         } 
           
-        if(supportsAudio() != true) {
+        if(supportsAudio() == true) {
           if(window.screen.width <= 1024){
             $(".jp-volume_controls").hide();
             $(".jp-volume-bar").hide();
@@ -82,7 +82,7 @@
               autostart: true,
               title: "Rádio Cultura Brasil"
           });
-          //$(".cr-player").css("padding","15px 20px");
+          $(".cr-player").css("padding","15px 20px");
         } 
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
