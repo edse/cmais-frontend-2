@@ -1,8 +1,8 @@
-<section>
+<section class="bgtotal">
   <span class="divisa tipo2"></span>
-  <div id="carrossel-interna">
+  <div id="carrossel-personagem">
     <span class="divisa1"></span>
-    <div class="carrossel-p" id="carrossel-i">
+    <div class="carrossel-p" id="carrossel-p">
       <div class="slider">
         <div class="header-carrossel-personagens">
           <span class="topo-p"></span>
