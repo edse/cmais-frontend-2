@@ -48,9 +48,9 @@ body{padding:0!important;}
 .container .cr-box-escolha .cr-radios li a{font-weight:normal;font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif;font-size: 12px;text-transform:uppercase; color:#ffffff; text-align:center; width: 99px; display: block; background:#00bed5;margin: 0; padding: 4px 0;line-height: 15px;}
 .container .cr-box-escolha .cr-radios li a:hover{background: #3f3f3f; text-decoration: none;}
 .container .cr-player{ background:#eeeeee; padding: 15px 5px; position: relative; z-index: 9000}
-.container .cr-pgm{background:#eeeeee;padding:0px 10px 20px 10px; overflow: hidden;}
+.container .cr-pgm{background:#eeeeee;padding:0px 20px; overflow: hidden;}
 .container .cr-pgm .cr-header-pgm{overflow: hidden; margin-bottom:10px;}
-.container .cr-pgm .cr-header-pgm span{font-weight:normal;font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:13px; color:#FFFFFF; background:#00bed5; padding: 3px 6px; text-transform:uppercase; display:block; float:left;}
+.container .cr-pgm .cr-header-pgm span{font-weight:normal;font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:12px; color:#FFFFFF; background:#00bed5; padding: 0px 6px; text-transform:uppercase; display:block; float:left;}
 .container .cr-pgm .cr-img-pgm{min-height:118px; margin-right:5px; float:left;}
 .container .cr-pgm .cr-desc-pgm{float:left;width: 70%;}
 .container .cr-pgm .cr-desc-pgm h2{ font-weight:normal;font-family:'TitilliumBold', Arial, Helvetica, sans-serif; font-size:19px; color:#2d4244; margin:0 0 0 0; padding:0; text-transform: uppercase; line-height:20px;}
