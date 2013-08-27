@@ -154,12 +154,12 @@
   </section>
 </div>
 <script>
-$('#carrossel-p').responsiveCarousel({
+$('#carrossel-i').responsiveCarousel({
   arrowLeft: '.arrow-left span.personagens',
   arrowRight: '.arrow-right span.personagens',
-  target:'#carrossel-p .slider-target',
-  unitElement:'#carrossel-p .slider-target > li',
-  mask:'#carrossel-p .slider-mask',
+  target:'#carrossel-i .slider-target',
+  unitElement:'#carrossel-i .slider-target > li',
+  mask:'#carrossel-i .slider-mask',
   easing:'linear',
   dragEvents:true,
   speed:200,
@@ -172,7 +172,7 @@ $('#carrossel-p').responsiveCarousel({
 
 
 if(screen.width > 1024){
-  $('#carrossel-p').mouseenter(function(){
+  $('#carrossel-i').mouseenter(function(){
     $('.arrow.personagem').fadeIn('fast');
   });
   
@@ -182,16 +182,16 @@ if(screen.width > 1024){
 };
 if(navigator.appName!='Microsoft Internet Explorer')
 {
-  //carrossel personagens redraw pra tablet e celular home
+  //carrossel interna redraw pra tablet e celular home
   window.addEventListener('load', function() {
-    $('.carrossel-p, #carrossel-mobile').responsiveCarousel('redraw');
+    $('.carrossel-i, #carrossel-mobile').responsiveCarousel('redraw');
   });
   window.addEventListener("orientationchange", function() {
-    $('.carrossel-p, #carrossel-mobile').responsiveCarousel('redraw');
+    $('.carrossel-i, #carrossel-mobile').responsiveCarousel('redraw');
   }, false);
   window.addEventListener("resize", function() {
-    $('.carrossel-p, #carrossel-mobile').responsiveCarousel('redraw');
+    $('.carrossel-i, #carrossel-mobile').responsiveCarousel('redraw');
   }, false);
-  //carrossel personagens redraw pra tablet e celular home
+  //carrossel interna redraw pra tablet e celular home
 }
 </script>
