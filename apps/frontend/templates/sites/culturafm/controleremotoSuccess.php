@@ -77,11 +77,13 @@
 
          }else{
           jwplayer("div_player").setup({
-              file: "rtmp://200.136.27.12/live/radioam",
+              file: "rtmp://200.136.27.12/live/radiofm",
               width: 360,
               height: 40,
-              title: "Rádio Cultura Brasil"
-          }).play();
+              autostart: true,
+              title: "Rádio Cultura FM"
+          });
+          $(".cr-player").css("padding","15px 20px");
         } 
               
        function LoadProgramacao(){
