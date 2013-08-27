@@ -401,6 +401,9 @@
                       <div class="linha t11" style="clear:both; margin:0; width:auto">
                         <label><input type="radio" name="rede_ensino_sp_funcao" id="pc" value="Professor Coordenador (PC) da unidade escolar" />Professor Coordenador (PC) da unidade escolar</label>
                       </div>
+                      <div class="linha t11" style="clear:both; margin:0; width:auto">
+                        <label><input type="radio" name="rede_ensino_sp_funcao" id="outros" value="Outros" />Outros</label>
+                      </div>
                     </div>
 
                     <!--span class="linhaFundo"></span-->
