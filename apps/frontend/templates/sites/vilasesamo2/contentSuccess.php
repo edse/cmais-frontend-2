@@ -165,9 +165,9 @@ $('#carrossel-i').responsiveCarousel({
   speed:200,
   slideSpeed:1000,
   responsiveUnitSize : function() {
-    return 7;
+    return 4;
   },
-  step : -1
+  step : -2
 
 });
 
