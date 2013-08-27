@@ -76,10 +76,10 @@
           
         <div class="slider-nav">
           <div class="arrow-left arrow personagem">
-            <span title="Back" class="sprite-seta-esquerda personagens"></span>
+            <span title="Back" class="sprite-seta-esquerda personagens" style="display:block;"></span>
           </div>
           <div class="arrow-right arrow personagem">
-            <span title="Next" class="sprite-seta-direita personagens"></span>
+            <span title="Next" class="sprite-seta-direita personagens" style="display:block;"></span>
           </div>
         </div>
       </div>
