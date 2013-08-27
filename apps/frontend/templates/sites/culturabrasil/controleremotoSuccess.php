@@ -143,7 +143,7 @@
              $("#img_pgm_atual").attr("src",json.noar[0].imagem);
              
              //A seguir
-             var style = 0;
+             var style = 1;
              var tipo = "im";
              var conteudo = "";
              
@@ -292,10 +292,10 @@
               <!-- detalhe musica -->
               <div class="cr-det-mus-pgm">
                 
-                <h3>música</h3>
+                <span class="titulo">música</span>
                 <p id="nome_musica_atual"></p>
                 
-                <h3>intérprete</h3>
+                <span class="titulo">intérprete</span>
                 <p id="nome_interprete_atual"></p>
                   
               </div>
