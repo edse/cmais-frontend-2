@@ -50,7 +50,7 @@
       <script type="text/javascript">
       //<![CDATA[
       $(document).ready(function(){
-        
+         
         if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
           jwplayer("div_player").setup({
               file: "rtmp://200.136.27.12/live/radiofm",
@@ -79,7 +79,9 @@
             wmode: "window"
           });
        } 
-
+       
+       $("#div_player").show();
+       
        function LoadProgramacao(){
          time = new Date().getTime();
          $.ajax({
@@ -160,7 +162,7 @@
       <section class="cr-player">
         
         
-  <div id="div_player">        
+  <div id="div_player" style="display:none">        
     <div id="jquery_jplayer_2" class="jp-jplayer"></div>
       <div id="jp_container_2" class="jp-audio">
         <div class="jp-type-single">
