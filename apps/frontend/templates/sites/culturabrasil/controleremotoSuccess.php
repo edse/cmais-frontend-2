@@ -82,7 +82,9 @@
             wmode: "window"
           });
         } 
-      
+        
+        $("#div_player").show();
+        
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         function LoadInfoMusica(){
           time = new Date().getTime();
@@ -187,7 +189,7 @@
       <section class="cr-player">
         
         
- <div id="div_player">            
+ <div id="div_player" style="display:none">           
     <div id="jquery_jplayer_2" class="jp-jplayer"></div>
       <div id="jp_container_2" class="jp-audio">
         <div class="jp-type-single">
