@@ -179,12 +179,12 @@ $(document).ready(function(){
 });
 */
 //carrossel personagens home
-$('#carrossel-p').responsiveCarousel({
+$('#carrossel2').responsiveCarousel({
   arrowLeft: '.arrow-left span.personagens',
   arrowRight: '.arrow-right span.personagens',
-  target:'#carrossel-p .slider-target',
-  unitElement:'#carrossel-p .slider-target > li',
-  mask:'#carrossel-p .slider-mask',
+  target:'#carrossel2 .slider-target',
+  unitElement:'#carrossel2 .slider-target > li',
+  mask:'#carrossel2 .slider-mask',
   easing:'linear',
   dragEvents:true,
   speed:200,
@@ -197,7 +197,7 @@ $('#carrossel-p').responsiveCarousel({
 
 
 if(screen.width > 1024){
-  $('#carrossel-p').mouseenter(function(){
+  $('#carrossel2').mouseenter(function(){
     $('.arrow.personagem').fadeIn('fast');
   });
   
