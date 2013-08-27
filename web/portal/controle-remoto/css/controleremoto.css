@@ -76,6 +76,7 @@ body{padding:0!important;}
 .container .cr-box-banner{width: 320px;margin: 0 auto;}
 .container #jp_container_2{margin:0 auto;}
 .container div.jp-audio div.jp-type-single div.jp-progress {left: 60px;width: 200px;}
+.container div.jp-audio div.jp-type-single div.jp-current-time, div.jp-audio div.jp-type-single div.jp-duration {left: 221px;}
 @media only screen 
 and (max-width : 399px) {
   .container .cr-box-escolha{width:60px;}
