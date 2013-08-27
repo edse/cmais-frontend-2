@@ -1,10 +1,10 @@
 <section>
   <span class="divisa tipo2"></span>
-  <div id="carrossel-personagem">
+  <div id="carrossel-interna">
     <span class="divisa1"></span>
     <div class="carrossel-p" id="carrossel-i">
       <div class="slider">
-        <div class="header-carrossel-interna">
+        <div class="header-carrossel-personagens">
           <span class="topo-p"></span>
           <i class="sprite-icon-personagens-peq"></i>
           <h3><a href="/vilasesamo2/personagens">Personagens</a></h3>
