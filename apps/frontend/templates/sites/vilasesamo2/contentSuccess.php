@@ -164,10 +164,7 @@ $('#carrossel-i').responsiveCarousel({
   dragEvents:true,
   speed:200,
   slideSpeed:1000,
-  responsiveUnitSize : 4,
-  responsiveStep: true,
-  step : -4
-
+  responsiveUnitSize : 4
 });
 
 
