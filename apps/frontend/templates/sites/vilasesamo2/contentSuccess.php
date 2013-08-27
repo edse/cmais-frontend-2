@@ -2,8 +2,8 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
 <script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
-<script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
 <link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
+<script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
 
 <script>
   $("body").addClass("interna");
