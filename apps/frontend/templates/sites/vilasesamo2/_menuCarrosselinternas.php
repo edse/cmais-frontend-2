@@ -1,70 +1,76 @@
 <section>
   <span class="divisa tipo2"></span>
   <div id="carrossel-interna">
-    <span class="divisa1"></span>
     <div class="carrossel-i" id="carrossel-i">
       <div class="slider">
-
-          
-          
-
-          
           <div class="slider-mask-wrap">
             <div class="slider-mask">
               <ul class="slider-target">
                 <li>
                   <div class="inner personagens bel">
-                    <a href="/vilasesamo2/personagens/bel" title="Bel" class="btn-bel">
-                      <img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="Personagem" />
+                    <a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel">
+                      1
                      </a>
                   </div>
-                  <a class="nome" href="/vilasesamo2/personagens/bel" title="Bel">Bel</a>
+                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo1" title="Nome do Jogo 1">Nome do Jogo 1</a>
                 </li>
                 <li>
                   <div class="inner personagens beto">
-                    <a href="/vilasesamo2/personagens/beto" title="Beto" class="btn-beto"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/beto_personagem.png" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/jogos/nomedojogo2" title="Nome do jogo 2" class="">
+                      2
+                    </a>
                   </div>
-                  <a class="nome" href="/vilasesamo2/personagens/beto" title="Bel">Beto</a>
+                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo2" title="Nome do Jogo 2">Nome do Jogo 2</a>
                 </li>
                 <li>
                   <div class="inner personagens comecome">
-                    <a href="/vilasesamo2/personagens/come-come" title="Come-come" class="btn-comecome"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/comecome_personagem.png" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/jogos/nomedojogo3" title="Nome do jogo 3" class="">
+                      3
+                    </a>
                   </div>
-                  <a class="nome" href="/vilasesamo2/personagens/comecome" title="Come-come">Come-come</a>
+                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo3" title="Nome do Jogo 3">Nome do Jogo 3</a>
                 </li>
                 <li>
                   <div class="inner personagens elmo">
-                    <a href="/vilasesamo2/personagens/elmo" title="Elmo" class="btn-elmo"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/elmo_personagem.png" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/jogos/nomedojogo4" title="Nome do jogo 4" class="">
+                      4
+                    </a>
                   </div>
-                  <a class="nome" href="/vilasesamo2/personagens/elmo" title="Elmo">Elmo</a>
+                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo4" title="Nome do Jogo 4">Nome do Jogo 4</a>
                 </li>
                 <li>
                   <div class="inner personagens enio">
-                    <a href="/vilasesamo2/personagens/enio" title="Ênio" class="btn-enio"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/enio_personagem.png" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/jogos/nomedojogo5" title="Nome do Jogo 5" class="">
+                      5
+                    </a>
                    </div>
-                   <a class="nome" href="/vilasesamo2/personagens/enio" title="Ênio">Ênio</a>
+                   <a class="nome" href="/vilasesamo2/jogos/nomedojogo5" title="Nome do Jogo 5">Nome do Jogo 5</a>
                 </li>
                 <li>
                   <div class="inner personagens garibaldo">
-                    <a href="/vilasesamo2/personagens/garibaldo" title="Garibaldo" class="btn-garibaldo"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/garibaldo_personagem.png" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/jogos/nomedojogo6" title="Nome do Jogo 6" class="">
+                      6
+                    </a>
                   </div>
-                  <a class="nome" href="/vilasesamo2/personagens/garibaldo" title="Garibaldo">Garibaldo</a>
+                  <a class="nome" href="/vilasesamo2/personagens/garibaldo" title="Nome do Jogo 6">Nome do Jogo 6</a>
                 </li>
                 <li>
                   <div class="inner personagens grover">
-                    <a href="/vilasesamo2/personagens/grover" title="Grover" class="btn-grover"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/grover_personagem.png" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/jogos/nomedojogo7" title="Nome do Jogo 7" class="">
+                      7
+                    </a>
                   </div>
-                  <a class="nome" href="/vilasesamo2/personagens/grover" title="Grover">Grover</a>
+                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo7" title="Nome do Jogo 7">Nome do Jogo 7</a>
                 </li>
                 <li>
                   <div class="inner personagens zoe">
-                    <a href="/vilasesamo2/personagens/zoe" title="Zoe" class="btn-zoe"><img src="/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/zoe_personagem.png" alt="Personagem" /></a>
+                    <a href="/vilasesamo2/jogos/nomedojogo8" title="Nome do Jogo 8" class="">
+                      8
+                    </a>
                    </div>
-                   <a class="nome" href="/vilasesamo2/personagens/zoe" title="Zoe">Zoe</a>
+                   <a class="nome" href="/vilasesamo2/jogos/nomedojogo8" title="Nome do Jogo 8">Nome do Jogo 8</a>
                 </li>
-                
               </ul>
-              <div class="clearit"></div>
             </div>
           </div>
           
