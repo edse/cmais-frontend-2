@@ -1,11 +1,10 @@
 <?php
  if(isset($asset)){
-    echo $asset->AssetVideo->getHeadline()."<br>";
-  echo $asset->getDescription()."<br>";
-  echo $asset->AssetVideo->getYoutubeId()."<br>";
+  $assets = $asset;
+}else{
+  $assets = $pager->getResults();
+  $assets = $assets[0];
 }
-$assets = $pager->getResults();
-$assets = $assets[0];
 ?>
 
 <link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
