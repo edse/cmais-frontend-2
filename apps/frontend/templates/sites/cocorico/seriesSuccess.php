@@ -1,4 +1,6 @@
 <?php
+if(isset($asset))
+  echo "teste>>>>";
 
 $assets = $pager->getResults();
 ?>
