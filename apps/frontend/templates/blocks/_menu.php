@@ -1,23 +1,12 @@
 <!--Controle-Remoto-->
-<script src="http://www.culturabrasil.com.br/js/config.js" type="text/javascript"></script>
+<!--script src="http://www.culturabrasil.com.br/js/config.js" type="text/javascript"></script>
 
 <script src="http://www.culturabrasil.com.br/js/jquery.xmldom.min.js" type="text/javascript"></script>
 <script src="http://www.culturabrasil.com.br/js/Menu.class.js" type="text/javascript"></script>
-<script src="http://www.culturabrasil.com.br/js/User.class.js" type="text/javascript"></script>
+<script src="http://www.culturabrasil.com.br/js/User.class.js" type="text/javascript"></script-->
 
 <script type="text/javascript">
-/*
-    var Menu    = new Menu(); 
-    var User    = new User(); 
-*/
     $(function(){
-      /*
-      $('#logo').click(function(){
-        location.href=URL;
-      });
-      Menu.initHandler();
-      User.initHandler();
-      */
       var controle = null;
 
       $('#controle-remoto, #ouca').click(function(){
