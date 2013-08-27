@@ -1,4 +1,5 @@
-<?php 
+<?php
+echo "teste>>>>>>";  
 $assets = $pager->getResults();
 ?>
 
