@@ -268,10 +268,10 @@
               <!-- detalhe musica -->
               <div class="cr-det-mus-pgm">
                 
-                <!--h3>música</h3>
+                <!--span class="titulo">música</span>
                 <p></p>
                 
-                <h3>intérprete</h3>
+                <span class="titulo">intérprete</span>
                 <p></p-->
                   
               </div>
