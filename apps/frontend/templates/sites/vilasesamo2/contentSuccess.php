@@ -165,7 +165,8 @@ $('#carrossel-i').responsiveCarousel({
   speed:200,
   slideSpeed:1000,
   responsiveUnitSize : 5,
-  step: -5
+  step: 5,
+  infinite: true
 });
 
 
