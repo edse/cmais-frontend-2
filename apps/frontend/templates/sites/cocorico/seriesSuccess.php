@@ -1,6 +1,6 @@
 <?php
 if(isset($asset)){
-  echo $assets->AssetVideo->getHeadline()."<br>";
+  echo $asset->AssetVideo->getHeadline()."<br>";
   echo $asset->getDescription()."<br>";
   echo $asset->AssetVideo->getYoutubeId()."<br>";
 }
