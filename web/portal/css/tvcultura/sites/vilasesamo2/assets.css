@@ -82,7 +82,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 /*.pais { position:absolute; right:10px; top:-10px; }*/
 
 /* form */
-#content section.form { background:#3aaaec; margin:0 auto; }
+#content section.form { background:#3aaaec; margin:0 auto; padding:20px; }
 #content section.form p,
 #content section.form label,
 #content section.form h2 { color:#fff; }
