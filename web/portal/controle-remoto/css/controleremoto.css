@@ -53,9 +53,9 @@ body{padding:0!important;}
 .container .cr-pgm .cr-header-pgm span{font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:13px; color:#FFFFFF; background:#00bed5; padding: 1px 5px; text-transform:uppercase; display:block; float:left;}
 .container .cr-pgm .cr-img-pgm{min-height:118px; margin-right:5px; float:left;}
 .container .cr-pgm .cr-desc-pgm{float:left;width: 70%;}
-.container .cr-pgm .cr-desc-pgm h2{ font-family:'TitilliumBold', Arial, Helvetica, sans-serif; font-size:20px; color:#2d4244; margin:0 0 4px 0; padding:0; text-transform: uppercase; line-height:20px;}
-.container .cr-pgm .cr-desc-pgm h3{ font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:11px; margin: 0; padding: 0; color: #00bed5; text-transform: uppercase; line-height: 13px;}
-.container .cr-pgm .cr-desc-pgm p{ font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:14px; margin: 0 0 5px 0; padding: 0; color: #2d4244; line-height: 16px; max-width: 253px;}
+.container .cr-pgm .cr-desc-pgm h2{ font-family:'TitilliumBold', Arial, Helvetica, sans-serif; font-size:19px; color:#2d4244; margin:0 0 4px 0; padding:0; text-transform: uppercase; line-height:20px;}
+.container .cr-pgm .cr-desc-pgm h3{ font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:10px; margin: 0; padding: 0; color: #00bed5; text-transform: uppercase; line-height: 13px;}
+.container .cr-pgm .cr-desc-pgm p{ font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:13px; margin: 0 0 5px 0; padding: 0; color: #2d4244; line-height: 16px; max-width: 253px;}
 .container .cr-lista-a-seguir{background: #eeeeee; padding: 0 20px; overflow: hidden;}
 .container .cr-lista-a-seguir h4{font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; margin: 0;text-transform: uppercase;font-size: 13px;color: #707070;}
 .container .cr-lista-a-seguir .cr-linha{height:0; width:100%; border-top:#c6c6c6 1px solid; border-bottom: #FFFFFF solid 1px;}
