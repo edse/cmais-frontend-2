@@ -1,9 +1,5 @@
 <?php
-if(isset($asset)){
-  echo $asset->AssetVideo->getHeadline()."<br>";
-  echo $asset->getDescription()."<br>";
-  echo $asset->AssetVideo->getYoutubeId()."<br>";
-}
+
 $assets = $pager->getResults();
 ?>
 
@@ -39,7 +35,14 @@ $assets = $pager->getResults();
   <?php if(count($pager) > 0): ?>
 
     <!--row-->
-    <div class="row-fluid conteudo">  
+    <div class="row-fluid conteudo"> 
+     <?php
+     if(isset($asset)){
+        echo $asset->AssetVideo->getHeadline()."<br>";
+        echo $asset->getDescription()."<br>";
+        echo $asset->AssetVideo->getYoutubeId()."<br>";
+      }
+     ?>  
      <h3 class="episodio"><?php echo $assets[0]->AssetVideo->getHeadline()?></h3>  
      <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?> <p>
       <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
