@@ -1,5 +1,5 @@
 <?php
-echo $asset->AssetContent->getTitle().">>>>>>";  
+
 $assets = $pager->getResults();
 ?>
 
