@@ -125,7 +125,7 @@
              $("#img_pgm_atual").attr("src",json.noar[0].imagem);
              
              //A seguir
-             var style = 0;
+             var style = 1;
              var tipo = "im";
              var conteudo = "";
              
