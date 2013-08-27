@@ -1,9 +1,10 @@
 <?php
 if(isset($asset)){
-  echo "teste>>>>";
-  $assets = $asset;
+  echo $asset->AssetVideo->getHeadline()."<br>";
+  echo $asset->getDescription()."<br>";
+  echo $asset->AssetVideo->getYoutubeId()."<br>";
 }
-//$assets = $pager->getResults();
+$assets = $pager->getResults();
 ?>
 
 <link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
@@ -41,7 +42,7 @@ if(isset($asset)){
     <div class="row-fluid conteudo">  
      <h3 class="episodio"><?php echo $assets[0]->AssetVideo->getHeadline()?></h3>  
      <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?> <p>
-      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets[0]->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
     <!-- /row-->
 

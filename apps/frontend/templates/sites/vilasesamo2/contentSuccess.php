@@ -33,6 +33,72 @@
 
 
   </section>
+  <section class="form">
+    <h2>Brincar é um direito da criança</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices sapien at massa condimentum venenatis. In luctus vulputate massa, quis faucibus tellus pharetra nec. Donec convallis ligula eu augue mattis luctus. Aliquam scelerisque quam metus. Desenhe sua brincadeira preferida e envie para a galeria do site! </p>
+    <form class="form-horizontal">
+      <div class="control-group">
+        <label class="control-label" for="nome">Nome</label>
+        <div class="controls">
+          <input type="text" id="nome" placeholder="Nome" value="Nome">
+        </div>
+      </div>
+      
+      <div class="control-group">
+        <label class="control-label" for="idade">Idade</label>
+        <div class="controls">
+          <input type="text" id="idade" placeholder="Idade" value="Idade">
+        </div>
+      </div>
+      
+      <div class="control-group">
+        <label class="control-label" for="cidade">Cidade</label>
+        <div class="controls">
+          <input type="text" id="cidade" placeholder="Cidade" value="Cidade">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="estado">UF</label>
+        <div class="controls">
+          <input type="text" id="estado" placeholder="Estado" value="Estado">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="email">Email</label>
+        <div class="controls">
+          <input type="text" id="email" placeholder="Email" value="Email">
+        </div>
+      </div>
+       <div class="control-group">
+        <label class="control-label" for="anexo">Anexo</label>
+        <div class="controls">
+          <input type="text" id="anexo" placeholder="Anexo" value="Anexo">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="mensagem">Mensagem</label>
+        <div class="controls">
+          <textarea id="mensagem" placeholder="Mensagem" value="Mensagem"></textarea>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="radio">
+          <input type="radio" name="concorco" id="concorco" value="concorco" checked>
+          Declaro que li e estou de acordo com os <a href="#">Termos e Condições</a>.
+        </label>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <label class="checkbox">
+            <input type="checkbox"> Remember me
+          </label>
+          <button type="submit" class="btn">Sign in</button>
+        </div>
+      </div>
+    </form>
+
+
+  </section>
   <section class="pais">
     <span class="divisa"></span>
     <h2>para os pais <i class="sprite-seta-down"></i></h2>
