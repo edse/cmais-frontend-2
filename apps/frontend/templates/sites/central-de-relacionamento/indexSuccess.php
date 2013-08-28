@@ -139,10 +139,24 @@ $(document).ready(function(){
                       </div>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="f2_cod_recepcaodesinal">Recepção do sinal</label>
+                      <label class="control-label" for="f2_cep">CEP</label>
                       <div class="controls">
-                        <select id="f2_cod_recepcaodesinal" size="10" name="f2_cod_recepcaodesinal"></select>
+                        <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value);">
+                        <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
                       </div>
+                    </div>
+                    <div id="f2_brasil">
+                      <div class="control-group">
+                        <label class="control-label" for="f2_estado">Estado</label>
+                        <div class="controls">
+                          <select id="f2_estado" name="f2_estado" onchange="municipios('f2');" onfocus="municipios('f2');"></select>
+                        </div>
+                      </div>
+                    <div class="control-group">
+                        <label class="control-label" for="f2_local">Cidade</label>
+                        <div class="controls">
+                          <select id="f2_local" name="f2_local"></select>
+                        </div>
                     </div>
                     <div class="control-group">
                       <label class="control-label" for="f2_exterior">Reside no exterior?</label>
@@ -159,25 +173,15 @@ $(document).ready(function(){
                       </div>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="f2_cep">CEP</label>
+                      <label class="control-label" for="f2_cod_recepcaodesinal">Recepção do sinal</label>
                       <div class="controls">
-                        <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value);">
-                        <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
+                        <select id="f2_cod_recepcaodesinal" name="f2_cod_recepcaodesinal"></select>
                       </div>
                     </div>
-                    <div id="f2_brasil">
-                      <div class="control-group">
-                        <label class="control-label" for="f2_estado">Estado</label>
-                        <div class="controls">
-                          <select id="f2_estado" name="f2_estado" onchange="municipios('f2');" onfocus="municipios('f2');"></select>
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_local">Cidade</label>
-                        <div class="controls">
-                          <select id="f2_local" name="f2_local"></select>
-                        </div>
-                      </div>
+                    
+                    
+                    
+                      
                       <div class="control-group">
                         <label class="control-label" for="f2_telefone">Telefone</label>
                         <div class="controls">
