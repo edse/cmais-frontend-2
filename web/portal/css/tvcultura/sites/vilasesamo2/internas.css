@@ -41,9 +41,8 @@ body { background:#0172f9; }
 /* /filtro tag */
 
 /*scroll*/
-#content .scroll h3 { height:64px; line-height:73px; border-bottom: 2px solid #0191FB; border-top: 2px solid #0191FB; }
+#content .scroll h3 { border-bottom: 2px solid #0191FB; border-top: 2px solid #0191FB; padding-top:5px; }
 #content .scroll .seta-scroll { float:right; }
-#content .scroll h3 i { margin-top:10px; }
 /* /scroll*/
 
 
