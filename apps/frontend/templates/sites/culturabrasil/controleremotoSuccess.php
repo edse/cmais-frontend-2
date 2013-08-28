@@ -51,6 +51,7 @@
       //<![CDATA[
        $(document).ready(function(){
         $(".cr-det-mus-pgm").hide();        
+        $("#div_player").html('<img src="/portal/controle-remoto/loader.gif" border="0"/>');
         
         if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
           jwplayer("div_player").setup({
