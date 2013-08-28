@@ -276,7 +276,7 @@
           <script type='text/javascript'>
             GA_googleFillSlot("cultura-fm");
           </script>
-          <!--a href="#" class="cr-problemas" title="Está com problemas? Dê a sua opinião" target="_blank">Está com problemas? Dê a sua opinião</a-->
+          <a href="https://docs.google.com/forms/d/1CWq8uyNNxMQTUpAA5dNSK-PXj6kPoF_zJ-uCAIoFDok/viewform" class="cr-problemas" title="Está com problemas? Dê a sua opinião" target="_blank">Está com problemas? Dê a sua opinião</a>
         </div>
         
       </section>
