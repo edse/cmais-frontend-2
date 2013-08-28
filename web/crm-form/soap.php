@@ -123,7 +123,7 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="")){
       echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado','msg'=>'Preencha os campos abaixo.', 'form'=>'form4'));
     }
     else{
-      $script = '$("#row1").hide();$("#row2").hide();$("#row3").hide();$("#row5").show();$("f1_email").val("");';
+      $script = '$("#row1").hide();alert("teste");$("#row2").hide();$("#row3").hide();$("#row5").show();$("f1_email").val("");';
       echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado e não validado','msg'=>'Email não validado', 'form'=>'form5'));
     }
   }else{
