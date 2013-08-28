@@ -301,7 +301,7 @@
           </script>
           
         </div>
-        
+        <a href="#" class="cr-problemas" title="Está com problemas? Dê a sua opinião" target="_blank">Está com problemas? Dê a sua opinião</a>
       </section>
       <!-- /banner -->
       
