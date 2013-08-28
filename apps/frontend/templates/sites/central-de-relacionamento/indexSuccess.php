@@ -763,9 +763,8 @@ $(document).ready(function(){
                 <script>
                 
                 $(document).ready(function(){
-                  var email = '';$('select option').each(function(){
-                    console.log($(this).text());
-                  })
+                  var email = '';
+                  
                   $("#f4_mais").removeAttr("checked");
                   $("#f4_cod_programa option").attr("value", "");
                   $(".dicas").click(function(){
