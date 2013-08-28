@@ -1,9 +1,6 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
-<script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-<script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
-<script src="/portal/js/hammer.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
 <link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
 
@@ -153,41 +150,3 @@
     <span class="linha"></span>
   </section>
 </div>
-<script>
-$('#carrossel-i').responsiveCarousel({
-  arrowLeft: '.arrow-left span.personagens',
-  arrowRight: '.arrow-right span.personagens',
-  target:'#carrossel-i .slider-target',
-  unitElement:'#carrossel-i .slider-target > li',
-  mask:'#carrossel-i .slider-mask',
-  easing:'linear',
-  dragEvents:true,
-  speed:200,
-  slideSpeed:1000,
-});
-
-
-if(screen.width > 1024){
-  $('#carrossel-i').mouseenter(function(){
-    $('.arrow.personagem').fadeIn('fast');
-  });
-  
-  $('#carrossel-mobile').mouseenter(function(){
-    $('.arrow.destaque-mobile').fadeIn('fast');
-  });
-};
-if(navigator.appName!='Microsoft Internet Explorer')
-{
-  //carrossel interna redraw pra tablet e celular home
-  window.addEventListener('load', function() {
-    $('.carrossel-i, #carrossel-mobile').responsiveCarousel('redraw');
-  });
-  window.addEventListener("orientationchange", function() {
-    $('.carrossel-i, #carrossel-mobile').responsiveCarousel('redraw');
-  }, false);
-  window.addEventListener("resize", function() {
-    $('.carrossel-i, #carrossel-mobile').responsiveCarousel('redraw');
-  }, false);
-  //carrossel interna redraw pra tablet e celular home
-}
-</script>

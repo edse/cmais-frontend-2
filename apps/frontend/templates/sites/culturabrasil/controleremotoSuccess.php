@@ -52,18 +52,11 @@
       $(document).ready(function(){
         $(".cr-det-mus-pgm").hide();        
         
-        if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
-          jwplayer("div_player").setup({
-              file: "rtmp://200.136.27.12/live/radioam",
-              width: 360,
-              height: 30,
-              autostart: true,
-              title: "Rádio Cultura Brasil"
-          });
-          $(".cr-player").css("padding","15px 20px");
-
-        }else{
-
+        function supportsAudio() {
+            return !!document.createElement('audio').canPlayType;
+        } 
+          
+        if(supportsAudio() == true) {
           if(window.screen.width <= 1024){
             $(".jp-volume_controls").hide();
             $(".jp-volume-bar").hide();
@@ -81,10 +74,17 @@
             cssSelectorAncestor: "#jp_container_2",
             wmode: "window"
           });
+        }else{
+          jwplayer("div_player").setup({
+              file: "rtmp://200.136.27.12/live/radioam",
+              width: 360,
+              height: 30,
+              autostart: true,
+              title: "Rádio Cultura Brasil"
+          });
+          $(".cr-player").css("padding","15px 20px");
         } 
-        
-        $("#div_player").show();
-        
+      
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         function LoadInfoMusica(){
           time = new Date().getTime();
@@ -189,7 +189,7 @@
       <section class="cr-player">
         
         
- <div id="div_player" style="display:none">           
+ <div id="div_player">            
     <div id="jquery_jplayer_2" class="jp-jplayer"></div>
       <div id="jp_container_2" class="jp-audio">
         <div class="jp-type-single">
