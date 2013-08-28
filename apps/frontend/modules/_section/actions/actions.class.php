@@ -658,7 +658,8 @@ class _sectionActions extends sfActions
               ->from('Asset a, SectionAsset sa')
               ->where('sa.asset_id = a.id')
               ->andWhere('a.is_active = ?', 1)
-              ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"));
+              ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+              ->andWhere('a.date_end IS NULL OR a.date_end > ?', date("Y-m-d H:i:s"));
 
             if($request->getParameter('busca') != '') 
               $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");
