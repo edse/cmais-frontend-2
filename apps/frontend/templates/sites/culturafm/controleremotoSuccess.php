@@ -51,11 +51,16 @@
       //<![CDATA[
       $(document).ready(function(){
         
-        function supportsAudio() {
-            return !!document.createElement('audio').canPlayType;
-        }        
-        
-        if(supportsAudio() == true) {
+        if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
+          jwplayer("div_player").setup({
+              file: "rtmp://200.136.27.12/live/radiofm",
+              width: 360,
+              height: 30,
+              autostart: true,
+              title: "Rádio Cultura FM"
+          });
+          $(".cr-player").css("padding","15px 20px");
+        }else{
           if(window.screen.width < 1024){
             $(".jp-volume_controls").hide();
             $(".jp-volume-bar").hide();
@@ -73,17 +78,7 @@
             cssSelectorAncestor: "#jp_container_2",
             wmode: "window"
           });
-
-         }else{
-          jwplayer("div_player").setup({
-              file: "rtmp://200.136.27.12/live/radiofm",
-              width: 360,
-              height: 30,
-              autostart: true,
-              title: "Rádio Cultura FM"
-          });
-          $(".cr-player").css("padding","15px 20px");
-        } 
+       } 
               
        function LoadProgramacao(){
          time = new Date().getTime();
@@ -276,7 +271,7 @@
           <script type='text/javascript'>
             GA_googleFillSlot("cultura-fm");
           </script>
-          <!--a href="#" class="cr-problemas" title="Está com problemas? Dê a sua opinião" target="_blank">Está com problemas? Dê a sua opinião</a-->
+          <a href="https://docs.google.com/forms/d/1CWq8uyNNxMQTUpAA5dNSK-PXj6kPoF_zJ-uCAIoFDok/viewform" class="cr-problemas" title="Está com problemas? Dê a sua opinião" target="_blank">Está com problemas? Dê a sua opinião</a>
         </div>
         
       </section>
