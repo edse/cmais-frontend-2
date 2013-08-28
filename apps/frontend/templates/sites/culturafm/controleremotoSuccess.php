@@ -56,7 +56,6 @@
         }        
         
         if(supportsAudio() == true) {
-          
           if(window.screen.width < 1024){
             $(".jp-volume_controls").hide();
             $(".jp-volume-bar").hide();
@@ -77,11 +76,13 @@
 
          }else{
           jwplayer("div_player").setup({
-              file: "rtmp://200.136.27.12/live/radioam",
+              file: "rtmp://200.136.27.12/live/radiofm",
               width: 360,
-              height: 40,
-              title: "Rádio Cultura Brasil"
-          }).play();
+              height: 30,
+              autostart: true,
+              title: "Rádio Cultura FM"
+          });
+          $(".cr-player").css("padding","15px 20px");
         } 
               
        function LoadProgramacao(){
@@ -275,7 +276,7 @@
           <script type='text/javascript'>
             GA_googleFillSlot("cultura-fm");
           </script>
-          
+          <a href="#" class="cr-problemas" title="Está com problemas? Dê a sua opinião" target="_blank">Está com problemas? Dê a sua opinião</a>
         </div>
         
       </section>

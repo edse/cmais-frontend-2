@@ -65,7 +65,8 @@ body{padding:0!important;}
 .container .cr-lista-a-seguir .impar{color:#00bed5; background:#f7f7f7;}
 .container .cr-lista-a-seguir .hora{color:#929c9d; float:right; margin:0; padding: 2px 5px;}
 .container .cr-lista-a-seguir .cr-pgm-completa{font-weight:normal;font-family:'TitilliumBold', Arial, Helvetica, sans-serif; color:#929c9d; font-size: 11px; float:right;text-transform:uppercase;padding:5px;}
-.container .cr-banner {overflow: hidden;background: #FFFFFF;padding: 10px 20px;}
+.container .cr-problemas{font-weight:normal;font-family:'TitilliumBold', Arial, Helvetica, sans-serif; color:#929c9d; font-size: 11px; float:right;padding:5px;position: absolute;right: 19px;bottom: -9px;}
+.container .cr-banner {overflow: hidden;background: #FFFFFF;padding: 10px 20px;position:relative;}
 .container .cr-links{background: url(/portal/images/capaPrograma/culturabrasil/controleremoto/cr_links.jpg) no-repeat;}
 .container .cr-redes a{width: 20px;height: 20px;display: block;float: left;margin-right: 2px;margin-top: 4px;}
 .container .cr-logo-cultura-fm{width: 60px;height: 20px;display: block;margin-bottom: 4px; background-position:-1px -5px;}

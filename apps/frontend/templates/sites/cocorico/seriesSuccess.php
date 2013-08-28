@@ -1,10 +1,10 @@
 <?php
-if(isset($asset)){
-  echo $assets->AssetVideo->getHeadline()."<br>";
-  echo $asset->getDescription()."<br>";
-  echo $asset->AssetVideo->getYoutubeId()."<br>";
+ if(isset($asset)){
+  $assets = $asset;
+}else{
+  $assets = $pager->getResults();
+  $assets = $assets[0];
 }
-$assets = $pager->getResults();
 ?>
 
 <link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
@@ -34,18 +34,18 @@ $assets = $pager->getResults();
 <?php include_partial_from_folder('sites/cocorico', 'global/breadcrumb-section', array('site'=>$site,'section'=>$section, 'asset'=>$asset)) ?> 
   <!-- /breadcrumb-->
   
-  <h2 class="tit-pagina"><?php $tam=46; $str=$assets[0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
+  <h2 class="tit-pagina"><?php $tam=46; $str=$assets->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?></h2>
   
-  <?php if(count($pager) > 0): ?>
+  <?php //if(count($pager) > 0): ?>
 
     <!--row-->
-    <div class="row-fluid conteudo">  
-     <h3 class="episodio"><?php echo $assets[0]->AssetVideo->getHeadline()?></h3>  
-     <?php if($assets[0]->getDescription()!="") echo "<p>".$assets[0]->getDescription()."</p>"; ?> <p>
-      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+    <div class="row-fluid conteudo"> 
+     <h3 class="episodio"><?php echo $assets->AssetVideo->getHeadline()?></h3>  
+     <?php if($assets->getDescription()!="") echo "<p>".$assets->getDescription()."</p>"; ?> <p>
+      <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $assets->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
     <!-- /row-->
-
+ 
     <!--row-->
   <?php if(count($pager) > 0): ?>
     <div class="row-fluid relacionados ytb">
@@ -61,7 +61,7 @@ $assets = $pager->getResults();
     </ul>
 
    </div>
-  <?php endif; ?>
+  <?php //endif; ?>
   <!-- /row-->
   
   <?php if(count($pager) > 0): ?>

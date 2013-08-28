@@ -81,6 +81,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .pais .fechar-toogle.ativo { display:block; }
 /*.pais { position:absolute; right:10px; top:-10px; }*/
 
+/* form */
+#content section.form { background:#3aaaec; margin:0 auto; padding:20px; }
+#content section.form p,
+#content section.form label,
+#content section.form h2 { color:#fff; }
+ 
+/* /form */
+
 /* ie */
 .pais .row-fluid .span4 {  *margin:2px !important;}
 #content .filtro h3 { *position:relative }

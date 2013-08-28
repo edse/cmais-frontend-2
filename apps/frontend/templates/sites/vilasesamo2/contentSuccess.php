@@ -1,5 +1,9 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
+
+<script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
+<link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
+
 <script>
   $("body").addClass("interna");
 
@@ -30,6 +34,8 @@
     <a class="todos-assets"><i class="sprite-btn-voltar-jogos"></i><p>todos os jogos</p></a>
     <br />
     -->
+    <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuCarrosselinternas', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
+    
 
 
   </section>
