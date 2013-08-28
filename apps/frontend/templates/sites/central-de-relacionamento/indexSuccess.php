@@ -765,9 +765,9 @@ $(document).ready(function(){
                 $(document).ready(function(){
                   var email = '';
                   $('select').each(function(i){
-                    i + 1;
+                    var j = i + 1;
                   });
-                  console.log(i)
+                  console.log(j)
                   $("#f4_mais").removeAttr("checked");
                   $("#f4_cod_programa option").attr("value", "");
                   $(".dicas").click(function(){
