@@ -167,7 +167,7 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="")){
     //$script = "";
     //if($usuario->local == "99999")
     //  $script = '$("#f2_localexterior").val(\''.$usuario->pais.'\');$("#f2_exterior").attr("checked", true);';
-    $script = '$("#f2_email2").val(\''.$_REQUEST["f1_email"].'\');$("#f2_email").val(\''.$_REQUEST["f1_email"].'\');$("#f2_cod_faixaetaria").append(\''.$idade_options.'\');$("#f2_cod_sexo").append(\''.$sexo_options.'\');$("#f2_cod_recepcaodesinal").append(\''.$recepcao_options.'\');$("#f2_estado").append(\''.$uf_options.'\');$("#row1").hide();$("#row2").show();$("#f2_mensagem").val("");toggleExterior();$("f1_email").val("");$("select").each(function(i){$("option").each(function(j){//console.log($(this).text(); if($(this).text()=="SIC"){console.log("teste")});});});';
+    $script = '$("#f2_email2").val(\''.$_REQUEST["f1_email"].'\');$("#f2_email").val(\''.$_REQUEST["f1_email"].'\');$("#f2_cod_faixaetaria").append(\''.$idade_options.'\');$("#f2_cod_sexo").append(\''.$sexo_options.'\');$("#f2_cod_recepcaodesinal").append(\''.$recepcao_options.'\');$("#f2_estado").append(\''.$uf_options.'\');$("#row1").hide();$("#row2").show();$("#f2_mensagem").val("");toggleExterior();$("f1_email").val("");$("select").each(function(i){$("option").each(function(j){//console.log($(this).text(); if($(this).text()=="SIC"){console.log("teste")}});});});';
     echo json_encode(array('script'=>$script,'title'=>'Usuário não cadastrado','msg'=>'Preencha os campos abaixo.', 'form'=>'form2'));
   }
   die();
