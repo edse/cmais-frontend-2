@@ -49,14 +49,21 @@
       <script type="text/javascript" src="/portal/controle-remoto/js/jquery.jplayer.inspector.js"></script>
       <script type="text/javascript">
       //<![CDATA[
-      $(document).ready(function(){
+       $(document).ready(function(){
         $(".cr-det-mus-pgm").hide();        
         
-        function supportsAudio() {
-            return !!document.createElement('audio').canPlayType;
-        } 
-          
-        if(supportsAudio() == true) {
+        if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
+          jwplayer("div_player").setup({
+              file: "rtmp://200.136.27.12/live/radioam",
+              width: 360,
+              height: 30,
+              autostart: true,
+              title: "Rádio Cultura Brasil"
+          });
+          $(".cr-player").css("padding","15px 20px");
+
+        }else{
+
           if(window.screen.width <= 1024){
             $(".jp-volume_controls").hide();
             $(".jp-volume-bar").hide();
@@ -74,16 +81,7 @@
             cssSelectorAncestor: "#jp_container_2",
             wmode: "window"
           });
-        }else{
-          jwplayer("div_player").setup({
-              file: "rtmp://200.136.27.12/live/radioam",
-              width: 360,
-              height: 30,
-              autostart: true,
-              title: "Rádio Cultura Brasil"
-          });
-          $(".cr-player").css("padding","15px 20px");
-        } 
+        }
       
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         function LoadInfoMusica(){
