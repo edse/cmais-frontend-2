@@ -7,10 +7,8 @@
 #content .filtro h3 { padding-right:0; }
 .conteudo-asset { padding:10px 20px 20px; background:#fff; }
 h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993f7; text-transform:uppercase; }
-.conteudo-asset p,
-.conteudo-asset h2 { width:70%; float: left; }
 .conteudo-asset p { font-size:16px; }
-.conteudo-asset a { width:30%; float:left; }
+
 .conteudo-asset .asset img { width: 100%; }
 #content .relacionados { background:#3aaaec; color:#fff; margin:0 auto; padding:10px 0 10px 10px; max-width:930px; overflow:hidden; position:relative; border-bottom:7px solid #02CBFF; }
 .relacionados h2 { margin:0; color:#fff; }
