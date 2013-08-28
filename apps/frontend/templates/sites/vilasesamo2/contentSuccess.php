@@ -1,6 +1,9 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
+<script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
+<script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
+<script src="/portal/js/hammer.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
 <link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
 
@@ -20,8 +23,8 @@
     <h3><i class="sprite-icon-jogos-med"></i>Jogos<a class="todos-assets"><i class="sprite-btn-voltar-jogos"></i><p>todos os jogos</p></a></h3>
     <div class="conteudo-asset">
       <h2>nome do jogo</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat massa, ullamcorper sit amet elementum sed, sollicitudin non massa. Mauris ante tortor, feugiat quis dolor id, congue pharetra nisl. Maecenas suscipit eu diam et pellentesque. Morbi fermentum libero ac diam tristique, in egestas lectus rhoncus. Proin ut pellentesque massa. Morbi metus.</p>
-      <a href="#" title="Hábitos para uma vida saudável" class="sprite-btn-habitos"></a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat massa, ullamcorper sit amet elementum sed, sollicitudin non massa. Mauris ante tortor, feugiat quis dolor id, congue pharetra nisl. Maecenas suscipit eu diam et pellentesque. Morbi fermentum libero ac diam tristique, in egestas lectus rhoncus. Proin ut pellentesque massa. Morbi metus. <a href="#" title="Hábitos para uma vida saudável"><img src="/portal/images/capaPrograma/vilasesamo2/btn-habitos-peq.png" alt="Hábitos para uma vida saudável" /></a></p>
+      
       <div class="asset">
         <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" />
       </div>
@@ -150,3 +153,42 @@
     <span class="linha"></span>
   </section>
 </div>
+<script>
+//carrossel interna
+$('#carrossel-i').responsiveCarousel({
+  arrowLeft: '.arrow-left span.personagens',
+  arrowRight: '.arrow-right span.personagens',
+  target:'#carrossel-i .slider-target',
+  unitElement:'#carrossel-i .slider-target > li',
+  mask:'#carrossel-i .slider-mask',
+  easing:'linear',
+  dragEvents:true,
+  speed:200,
+  slideSpeed:1000
+});
+
+
+if(screen.width > 1024){
+  $('#carrossel-i').mouseenter(function(){
+    $('.arrow.personagem').fadeIn('fast');
+  });
+  
+  $('#carrossel-mobile').mouseenter(function(){
+    $('.arrow.destaque-mobile').fadeIn('fast');
+  });
+};
+if(navigator.appName!='Microsoft Internet Explorer')
+{
+  //carrossel personagens redraw pra tablet e celular home
+  window.addEventListener('load', function() {
+    $('.carrossel-i, #carrossel-mobile').responsiveCarousel('redraw');
+  });
+  window.addEventListener("orientationchange", function() {
+    $('.carrossel-i, #carrossel-mobile').responsiveCarousel('redraw');
+  }, false);
+  window.addEventListener("resize", function() {
+    $('.carrossel-i, #carrossel-mobile').responsiveCarousel('redraw');
+  }, false);
+  //carrossel personagens redraw pra tablet e celular home
+}
+</script>
