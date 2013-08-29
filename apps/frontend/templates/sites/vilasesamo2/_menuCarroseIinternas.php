@@ -1,7 +1,5 @@
-<section class="bgtotal">
-  
-  <div id="carrossel-personagem">
-    <span class="divisa1"></span>
+ <div id="carrossel-personagem">
+
     <div class="carrossel-p" id="carrossel-p">
       <div class="slider">
         <div class="header-carrossel-personagens">
@@ -79,4 +77,3 @@
       </div>
     </div>
   </div>
-</section>
