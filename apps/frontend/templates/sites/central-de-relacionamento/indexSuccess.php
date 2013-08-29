@@ -147,7 +147,7 @@ $(document).ready(function(){
                     <div class="control-group">
                       <label class="control-label" for="f2_exterior">Reside no exterior?</label>
                       <div class="controls">
-                        <input type="checkbox" name="f2_exterior" id="f2_exterior" value="1" onchange="toggleExterior();" />
+                        <input type="checkbox" name="f2_exterior" id="f2_exterior" value="1" onchange="toggleExterior(this.id);" />
                         <!-- <select id="f2_exterior" name="f2_exterior" onchange="toggleExterior();"></select> -->
                       </div>
                     </div>
@@ -1239,7 +1239,8 @@ $(document).ready(function(){
                   
                 });
                 
-                function toggleExterior(){
+                function toggleExterior(obj){
+                  console.log($(obj)))
                   if($('#f2_exterior').attr('checked')){
                     $('#f2_brasil').hide();
                     $('#f2_cep').parent().parent().hide();
