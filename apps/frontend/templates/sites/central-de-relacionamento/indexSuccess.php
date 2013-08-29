@@ -148,13 +148,13 @@ $(document).ready(function(){
                     </div>
                     <div id="f2_brasil">
                       <div class="control-group">
-                        <label class="control-label" for="f2_estado">Estado *</label>
+                        <label class="control-label" for="f2_estado">Estado <span class="atencao">*</span></label>
                         <div class="controls">
                           <select id="f2_estado" name="f2_estado" onchange="municipios('f2');" onfocus="municipios('f2');"></select>
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label" for="f2_local">Cidade *</label>
+                        <label class="control-label" for="f2_local">Cidade <span class="atencao">*</span></label>
                         <div class="controls">
                           <select id="f2_local" name="f2_local"></select>
                         </div>
@@ -167,7 +167,7 @@ $(document).ready(function(){
                       </div>
                     </div><!-- /#brasil -->
                     <div class="control-group f2_exterior">
-                      <label class="control-label" for="f2_localexterior">Pais *</label>
+                      <label class="control-label" for="f2_localexterior">Pais <span class="atencao">*</span></label>
                       <div class="controls">
                         <input type="text" class="input-xlarge" id="f2_localexterior" name="f2_localexterior">
                         <!-- <p class="help-block">Pais em que reside <code>Chile</code></p> -->
@@ -181,7 +181,7 @@ $(document).ready(function(){
                       </div>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="f2_cod_recepcaodesinal">Recepção do sinal *</label>
+                      <label class="control-label" for="f2_cod_recepcaodesinal">Recepção do sinal <span class="atencao">*</span></label>
                       <div class="controls">
                         <select id="f2_cod_recepcaodesinal" name="f2_cod_recepcaodesinal"></select>
                       </div>
