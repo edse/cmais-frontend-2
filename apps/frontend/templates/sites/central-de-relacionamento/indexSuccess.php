@@ -166,6 +166,13 @@ $(document).ready(function(){
                         </div>
                       </div>
                       <div class="control-group">
+                        <label class="control-label" for="f2_telefone">Telefone</label>
+                        <div class="controls">
+                          <input type="text" class="input-xlarge" id="f2_telefone" name="f2_telefone" placeholder="(xx) XXXX-XXXX">
+                        </div>
+                      </div>
+                    </div><!-- /#brasil -->
+                    <div class="control-group">
                       <label class="control-label" for="f2_exterior">Reside no exterior?</label>
                       <div class="controls">
                         <input type="checkbox" name="f2_exterior" id="f2_exterior" value="1" onchange="toggleExterior();" />
@@ -179,13 +186,6 @@ $(document).ready(function(){
                         <!-- <p class="help-block">Pais em que reside <code>Chile</code></p> -->
                       </div>
                     </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_telefone">Telefone</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_telefone" name="f2_telefone" placeholder="(xx) XXXX-XXXX">
-                        </div>
-                      </div>
-                    </div><!-- /#brasil -->
                     <div class="control-group">
                       <label class="control-label" for="f2_mais">Mais informações</label>
                       <div class="controls">
