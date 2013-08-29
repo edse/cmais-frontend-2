@@ -451,7 +451,7 @@ $(document).ready(function(){
                 <!-- /row3 -->
                  
                 <!-- row4 -->
-                <div class="row" id="row4" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:block;";}else{echo"display:none;";}?>"-->
+                <div class="row" id="row4" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:none;";}else{echo"display:block;";}?>"-->
                   <div class="page-header">
                     <h1>Enviar mensagem</h1>
                     <p><span class="label label-success">Email cadastrado e validado</span></p>
