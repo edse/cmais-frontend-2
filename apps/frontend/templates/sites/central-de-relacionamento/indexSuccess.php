@@ -468,7 +468,7 @@ $(document).ready(function(){
                           <p class="help-block">Se aplicável, você receberá uma resposta nesse email.</p>
                         </div>
                       </div>
-                      <?php if(!isset($_GET["validacao"])):?>
+                      <?php if(!isset($_GET["validacao"])==1):?>
                       <div class="control-group f4_mais">
                         <label class="control-label" for="f4_mais"></label>
                         <div class="controls">
