@@ -144,20 +144,7 @@ $(document).ready(function(){
                         <select id="f2_cod_recepcaodesinal" name="f2_cod_recepcaodesinal"></select>
                       </div>
                     </div>
-                    <div class="control-group">
-                      <label class="control-label" for="f2_exterior">Reside no exterior?</label>
-                      <div class="controls">
-                        <input type="checkbox" name="f2_exterior" id="f2_exterior" value="1" onchange="toggleExterior(this.id);" />
-                        <!-- <select id="f2_exterior" name="f2_exterior" onchange="toggleExterior();"></select> -->
-                      </div>
-                    </div>
-                    <div class="control-group f2_exterior">
-                      <label class="control-label" for="f2_localexterior">Pais</label>
-                      <div class="controls">
-                        <input type="text" class="input-xlarge" id="f2_localexterior" name="f2_localexterior">
-                        <!-- <p class="help-block">Pais em que reside <code>Chile</code></p> -->
-                      </div>
-                    </div>
+                    
                     <div class="control-group">
                       <label class="control-label" for="f2_cep">CEP</label>
                       <div class="controls">
@@ -178,6 +165,20 @@ $(document).ready(function(){
                           <select id="f2_local" name="f2_local"></select>
                         </div>
                       </div>
+                      <div class="control-group">
+                      <label class="control-label" for="f2_exterior">Reside no exterior?</label>
+                      <div class="controls">
+                        <input type="checkbox" name="f2_exterior" id="f2_exterior" value="1" onchange="toggleExterior();" />
+                        <!-- <select id="f2_exterior" name="f2_exterior" onchange="toggleExterior();"></select> -->
+                      </div>
+                    </div>
+                    <div class="control-group f2_exterior">
+                      <label class="control-label" for="f2_localexterior">Pais</label>
+                      <div class="controls">
+                        <input type="text" class="input-xlarge" id="f2_localexterior" name="f2_localexterior">
+                        <!-- <p class="help-block">Pais em que reside <code>Chile</code></p> -->
+                      </div>
+                    </div>
                       <div class="control-group">
                         <label class="control-label" for="f2_telefone">Telefone</label>
                         <div class="controls">
@@ -1240,7 +1241,7 @@ $(document).ready(function(){
                 });
                 
                 function toggleExterior(obj){
-                  console.log($("#"+obj.selector))
+                  //console.log($(obj))
                   if($('#f2_exterior').attr('checked')){
                     $('#f2_brasil').hide();
                     $('#f2_cep').parent().parent().hide();
