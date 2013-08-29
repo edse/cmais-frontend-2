@@ -35,6 +35,7 @@
     <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuCarrosselinternas', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
     <span class="divisa tipo2"></span>
 
+
   </section>
   <section class="form row-fluid">
     <div class="span8">
