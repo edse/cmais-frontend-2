@@ -511,7 +511,7 @@ em{font-style:oblique !important;}
 .chamada-home .media img{ clear:both; width:100% !important; max-height:390px; margin-top:20px; }
 #destaque.chamada-home p { margin-left:0; }
 
-.menu-interna li.m-controle-remoto { background:#005ca8; }
+.menu-interna li.m-controle-remoto { background:#005ca8;  }
 .home #conteudo-pagina,
 .home #miolo { margin-top:0; }
 #destaque.chamada-home .media {  margin-top:0 !important;  }
