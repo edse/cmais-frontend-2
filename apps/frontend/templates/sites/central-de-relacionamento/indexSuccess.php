@@ -766,7 +766,7 @@ $(document).ready(function(){
                   </div>
                 </div>
                 <!-- /row9 -->
-                <?php if(!isset($_GET["validacao"])==1):?>
+                <?php if(isset($_GET["validacao"])==1):?>
                 <!-- row10 -->
                 <div class="row" id="row10" >
                   <div class="page-header">
@@ -782,7 +782,7 @@ $(document).ready(function(){
                 </div>
                 <!-- /row10 -->
                 <?php endif; ?>
-                <?php if(!isset($_GET["erro"])==1):?>
+                <?php if(isset($_GET["erro"])==1):?>
                 <!-- row11 -->
                 <div class="row" id="row11" >
                   <div class="page-header">
