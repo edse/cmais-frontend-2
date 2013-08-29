@@ -117,7 +117,7 @@ $(document).ready(function(){
                       <div class="controls">
                         <input type="text" class="input-xlarge disabled" id="f2_email2" name="f2_email2" placeholder="" disabled="disabled">
                         <p class="help-block">Você receberá uma mensagem de confirmação para validar este email após enviar o cadastro preenchido.</p>
-                        <p class="help-block atencao">(*) Campos obrigatórios</p>
+                        <span class="atencao">* Campos obrigatórios</span>
                       </div>
                     </div>
                     <div class="control-group">
