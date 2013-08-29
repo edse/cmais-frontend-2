@@ -809,9 +809,6 @@ $(document).ready(function(){
                 
                 $(document).ready(function(){
                   var email = '';
-                  <?php if(isset($_GET["step"])&&$_GET["step"]==4):?>
-                    $("#f4_cod_programa").find("option").attr("value", "--");
-                  <?php endif; ?>
                   $("#f4_cod_programa").find("option").attr("value", "--");
                   
                   $("#f4_mais").removeAttr("checked");
