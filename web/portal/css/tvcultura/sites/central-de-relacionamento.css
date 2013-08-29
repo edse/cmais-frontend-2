@@ -1,5 +1,5 @@
 /* GERAL */
-#textCounter{padding:0px 5px 11px 0px;} 
+ 
 .atencao{font-weight:bold; color:red;}
 .container.principal{min-height: 50px;}
 .container.content .col-equerda h1{text-transform: uppercase;}
@@ -35,7 +35,7 @@
 
 .col-direita{text-align:left; margin-bottom: 20px;margin-bottom: 20px\9;}
 .col-direita p{padding: 5px 5px 11px 17px;}
-
+.col-direita .txt-10{padding:0px 5px 11px 0px;}
 .col-direita h1{padding:0; line-height: 22px;margin-bottom:10px;}
 
 .col-esquerda h3,
