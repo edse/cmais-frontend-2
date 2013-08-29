@@ -96,14 +96,20 @@ if(isset($pager)){
   	<?php $related = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
     	<?php if (count($related) > 0): ?>
     		<p class="tit">Assista à participação na íntegra:</p>
-    	<?php foreach ($related as $r): ?>
-    	<iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $r->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>  	
-    	<!-- iframe width="940" height="529" src="http://www.youtube.com/embed/<?php //echo $related[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe-->
-   		<?php endforeach;?>
-   		<?php endif; ?>
+    			<iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+   		 <?php endif; ?>
   </div>
   <!-- /row-->
-
+  <!-- new-->
+  <div class="row-fluid conteudo convidado">
+    <?php $related1 = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php if (count($related1) > 0): ?>
+        <p class="tit">Assista à participação na íntegra :</p>
+      <?php foreach ($related as $r): ?>
+        <iframe width="940" height="529" src="http://www.youtube.com/embed/<?php echo $r[0]->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>    
+      <?php endforeach;?>
+      <?php endif; ?>
+  </div>
  
   <div class="row-fluid">
   	  <!-- PAGINACAO -->  
