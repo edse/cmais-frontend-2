@@ -449,7 +449,7 @@ $(document).ready(function(){
                   </form>
                 </div>
                 <!-- /row3 -->
-                 <?php if(isset($_GET["validacao"])==1):?>
+                 <?php if(!isset($_GET["validacao"])==1):?>
                 <!-- row4 -->
                 <div class="row" id="row4" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:block;";}else{echo"display:none;";}?>"-->
                   <div class="page-header">
