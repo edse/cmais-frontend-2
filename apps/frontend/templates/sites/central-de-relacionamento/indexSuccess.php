@@ -117,29 +117,30 @@ $(document).ready(function(){
                       <div class="controls">
                         <input type="text" class="input-xlarge disabled" id="f2_email2" name="f2_email2" placeholder="" disabled="disabled">
                         <p class="help-block">Você receberá uma mensagem de confirmação para validar este email após enviar o cadastro preenchido.</p>
+                        <span class="atencao">* Campos obrigatórios</span>
                       </div>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="f2_nome">Nome</label>
+                      <label class="control-label" for="f2_nome">Nome <span class="atencao">*</span></label>
                       <div class="controls">
                         <input type="text" class="input-xlarge" id="f2_nome" name="f2_nome">
                         <p class="help-block">Entre com seu nome completo.</p>
                       </div>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="f2_cod_faixaetaria">Idade</label>
+                      <label class="control-label" for="f2_cod_faixaetaria">Idade <span class="atencao">*</span></label>
                       <div class="controls">
                         <select id="f2_cod_faixaetaria" name="f2_cod_faixaetaria"></select>
                       </div>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="f2_cod_sexo">Sexo</label>
+                      <label class="control-label" for="f2_cod_sexo">Sexo <span class="atencao">*</span></label>
                       <div class="controls">
                         <select id="f2_cod_sexo" name="f2_cod_sexo"></select>
                       </div>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="f2_cep">CEP</label>
+                      <label class="control-label" for="f2_cep">CEP <span class="atencao">*</span></label>
                       <div class="controls">
                         <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value);">
                         <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
@@ -147,13 +148,13 @@ $(document).ready(function(){
                     </div>
                     <div id="f2_brasil">
                       <div class="control-group">
-                        <label class="control-label" for="f2_estado">Estado</label>
+                        <label class="control-label" for="f2_estado">Estado <span class="atencao">*</span></label>
                         <div class="controls">
                           <select id="f2_estado" name="f2_estado" onchange="municipios('f2');" onfocus="municipios('f2');"></select>
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label" for="f2_local">Cidade</label>
+                        <label class="control-label" for="f2_local">Cidade <span class="atencao">*</span></label>
                         <div class="controls">
                           <select id="f2_local" name="f2_local"></select>
                         </div>
@@ -166,7 +167,7 @@ $(document).ready(function(){
                       </div>
                     </div><!-- /#brasil -->
                     <div class="control-group f2_exterior">
-                      <label class="control-label" for="f2_localexterior">Pais</label>
+                      <label class="control-label" for="f2_localexterior">Pais <span class="atencao">*</span></label>
                       <div class="controls">
                         <input type="text" class="input-xlarge" id="f2_localexterior" name="f2_localexterior">
                         <!-- <p class="help-block">Pais em que reside <code>Chile</code></p> -->
@@ -180,7 +181,7 @@ $(document).ready(function(){
                       </div>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="f2_cod_recepcaodesinal">Recepção do sinal</label>
+                      <label class="control-label" for="f2_cod_recepcaodesinal">Recepção do sinal <span class="atencao">*</span></label>
                       <div class="controls">
                         <select id="f2_cod_recepcaodesinal" name="f2_cod_recepcaodesinal"></select>
                       </div>
