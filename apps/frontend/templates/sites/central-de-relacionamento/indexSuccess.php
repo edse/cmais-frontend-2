@@ -650,7 +650,8 @@ $(document).ready(function(){
                       <div class="control-group f4">
                         <label class="control-label" for="f4_mensagem">Mensagem</label>
                         <div class="controls">
-                          <textarea class="input-xlarge" id="f4_mensagem" name="f4_mensagem" rows="5"></textarea>
+                          <textarea class="input-xlarge" id="f4_mensagem" name="f4_mensagem" rows="5" onkeydown="limitText(this,1000,'#textCounter');"></textarea>
+                          <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
                         </div>
                       </div>
         
@@ -1443,7 +1444,13 @@ $(document).ready(function(){
                     $('#f1_email').val("");     
                   });
                 }
-                
+                // Contador de Caracters
+                function limitText(limitField, limitNum, textCounter) {
+                  if(limitField.value.length > limitNum)
+                    limitField.value = limitField.value.substring(0, limitNum);
+                  else
+                    $(textCounter).html(limitNum - limitField.value.length);
+                }
                 </script>
               <!--form envio-->
               </div>
