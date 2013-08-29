@@ -139,13 +139,7 @@ $(document).ready(function(){
                         <select id="f2_cod_sexo" name="f2_cod_sexo"></select>
                       </div>
                     </div>
-                    <div class="control-group">
-                      <label class="control-label" for="f2_cep">CEP <span class="atencao">*</span></label>
-                      <div class="controls">
-                        <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value);">
-                        <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
-                      </div>
-                    </div>
+                    
                     <div id="f2_brasil">
                       <div class="control-group">
                         <label class="control-label" for="f2_estado">Estado <span class="atencao">*</span></label>
@@ -159,12 +153,7 @@ $(document).ready(function(){
                           <select id="f2_local" name="f2_local"></select>
                         </div>
                       </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_telefone">Telefone</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_telefone" name="f2_telefone" placeholder="(xx) XXXX-XXXX">
-                        </div>
-                      </div>
+                      
                     </div><!-- /#brasil -->
                     <div class="control-group f2_exterior">
                       <label class="control-label" for="f2_localexterior">Pais <span class="atencao">*</span></label>
@@ -186,6 +175,8 @@ $(document).ready(function(){
                         <select id="f2_cod_recepcaodesinal" name="f2_cod_recepcaodesinal"></select>
                       </div>
                     </div>
+                    <?php
+                    /*
                     <div class="control-group">
                       <label class="control-label" for="f2_mais">Mais informações</label>
                       <div class="controls">
@@ -197,7 +188,13 @@ $(document).ready(function(){
                     </div>
                     
                     <div id="f2_maisinfo">
-                      
+                      <div class="control-group">
+                        <label class="control-label" for="f2_cep">CEP <span class="atencao">*</span></label>
+                        <div class="controls">
+                          <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value);">
+                          <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
+                        </div>
+                      </div>
                       <div class="control-group">
                         <label class="control-label" for="f2_endereco">Endereço</label>
                         <div class="controls">
@@ -214,6 +211,12 @@ $(document).ready(function(){
                         <label class="control-label" for="f2_complemento">Complemento</label>
                         <div class="controls">
                           <input type="text" class="input-xlarge" id="f2_complemento" name="f2_complemento">
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label" for="f2_telefone">Telefone</label>
+                        <div class="controls">
+                          <input type="text" class="input-xlarge" id="f2_telefone" name="f2_telefone" placeholder="(xx) XXXX-XXXX">
                         </div>
                       </div>
                       <div class="control-group">
@@ -266,6 +269,9 @@ $(document).ready(function(){
                         </label>
                       </div>
                     </div>
+                     * 
+                     */
+                    ?>
                     <div class="control-group">
                     <div class="botoes-form">
                       <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader2" />
@@ -462,6 +468,7 @@ $(document).ready(function(){
                           <p class="help-block">Se aplicável, você receberá uma resposta nesse email.</p>
                         </div>
                       </div>
+                      <?php if(!isset($_GET["validacao"])==1):?>
                       <div class="control-group f4_mais">
                         <label class="control-label" for="f4_mais"></label>
                         <div class="controls">
@@ -471,7 +478,7 @@ $(document).ready(function(){
                           </label>
                         </div>
                       </div>
-                      
+                      <?php endif; ?>
                       <div id="f4_maisinfo">
                       <!-- salvar alteracoes -->
                       <div class="salvar-alteracoes">
@@ -650,7 +657,8 @@ $(document).ready(function(){
                       <div class="control-group f4">
                         <label class="control-label" for="f4_mensagem">Mensagem</label>
                         <div class="controls">
-                          <textarea class="input-xlarge" id="f4_mensagem" name="f4_mensagem" rows="5"></textarea>
+                          <textarea class="input-xlarge" id="f4_mensagem" name="f4_mensagem" rows="5" onkeydown="limitText(this,1000,'#textCounter');"></textarea>
+                          <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
                         </div>
                       </div>
         
@@ -1443,7 +1451,13 @@ $(document).ready(function(){
                     $('#f1_email').val("");     
                   });
                 }
-                
+                // Contador de Caracters
+                function limitText(limitField, limitNum, textCounter) {
+                  if(limitField.value.length > limitNum)
+                    limitField.value = limitField.value.substring(0, limitNum);
+                  else
+                    $(textCounter).html(limitNum - limitField.value.length);
+                }
                 </script>
               <!--form envio-->
               </div>

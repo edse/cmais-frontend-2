@@ -23,7 +23,7 @@
     <h3><i class="sprite-icon-jogos-med"></i>Jogos<a class="todos-assets"><i class="sprite-btn-voltar-jogos"></i><p>todos os jogos</p></a></h3>
     <div class="conteudo-asset">
       <h2>nome do jogo</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat massa, ullamcorper sit amet elementum sed, sollicitudin non massa. Mauris ante tortor, feugiat quis dolor id, congue pharetra nisl. Maecenas suscipit eu diam et pellentesque. Morbi fermentum libero ac diam tristique, in egestas lectus rhoncus. Proin ut pellentesque massa. Morbi metus. <a href="#" title="Hábitos para uma vida saudável"><img src="/portal/images/capaPrograma/vilasesamo2/btn-habitos-peq.png" alt="Hábitos para uma vida saudável" /></a></p>
+    <p><a href="#" title="Hábitos para uma vida saudável"><img src="/portal/images/capaPrograma/vilasesamo2/btn-habitos-peq.png" alt="Hábitos para uma vida saudável" /></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat massa, ullamcorper sit amet elementum sed, sollicitudin non massa. Mauris ante tortor, feugiat quis dolor id, congue pharetra nisl. Maecenas suscipit eu diam et pellentesque. Morbi fermentum libero ac diam tristique, in egestas lectus rhoncus. Proin ut pellentesque massa. Morbi metus. </p>
       
       <div class="asset">
         <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" />
@@ -32,17 +32,13 @@
   </section>
   <section class="relacionados">
     <h2>Brinque também com:</h2>
-    <!--
-    <p><a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a>, <a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a>, <a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a>, <a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a></p>
-    <a class="todos-assets"><i class="sprite-btn-voltar-jogos"></i><p>todos os jogos</p></a>
-    <br />
-    -->
     <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuCarrosselinternas', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
-    
+    <span class="divisa tipo2"></span>
 
 
   </section>
-  <section class="form">
+  <section class="form row-fluid">
+    <div class="span8">
     <h2>Brincar é um direito da criança</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices sapien at massa condimentum venenatis. In luctus vulputate massa, quis faucibus tellus pharetra nec. Donec convallis ligula eu augue mattis luctus. Aliquam scelerisque quam metus. Desenhe sua brincadeira preferida e envie para a galeria do site! </p>
     <form class="form-horizontal">
@@ -105,6 +101,10 @@
         </div>
       </div>
     </form>
+    </div>
+    <div class="span4">
+      <iframe width="300" height="169" src="//www.youtube.com/embed/gjQA0n_1fg4" frameborder="0" allowfullscreen></iframe>
+    </div>
 
 
   </section>
