@@ -139,13 +139,6 @@ $(document).ready(function(){
                       </div>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="f2_cod_recepcaodesinal">Recepção do sinal</label>
-                      <div class="controls">
-                        <select id="f2_cod_recepcaodesinal" name="f2_cod_recepcaodesinal"></select>
-                      </div>
-                    </div>
-                    
-                    <div class="control-group">
                       <label class="control-label" for="f2_cep">CEP</label>
                       <div class="controls">
                         <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value);">
@@ -172,6 +165,13 @@ $(document).ready(function(){
                         </div>
                       </div>
                     </div><!-- /#brasil -->
+                    <div class="control-group f2_exterior">
+                      <label class="control-label" for="f2_localexterior">Pais</label>
+                      <div class="controls">
+                        <input type="text" class="input-xlarge" id="f2_localexterior" name="f2_localexterior">
+                        <!-- <p class="help-block">Pais em que reside <code>Chile</code></p> -->
+                      </div>
+                    </div>
                     <div class="control-group">
                       <label class="control-label" for="f2_exterior">Reside no exterior?</label>
                       <div class="controls">
@@ -179,11 +179,10 @@ $(document).ready(function(){
                         <!-- <select id="f2_exterior" name="f2_exterior" onchange="toggleExterior();"></select> -->
                       </div>
                     </div>
-                    <div class="control-group f2_exterior">
-                      <label class="control-label" for="f2_localexterior">Pais</label>
+                    <div class="control-group">
+                      <label class="control-label" for="f2_cod_recepcaodesinal">Recepção do sinal</label>
                       <div class="controls">
-                        <input type="text" class="input-xlarge" id="f2_localexterior" name="f2_localexterior">
-                        <!-- <p class="help-block">Pais em que reside <code>Chile</code></p> -->
+                        <select id="f2_cod_recepcaodesinal" name="f2_cod_recepcaodesinal"></select>
                       </div>
                     </div>
                     <div class="control-group">
