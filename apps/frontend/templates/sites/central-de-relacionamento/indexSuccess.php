@@ -449,7 +449,7 @@ $(document).ready(function(){
                   </form>
                 </div>
                 <!-- /row3 -->
-                 <?php if(isset($_GET["validacao"])==1):?>
+                 <?php if(!isset($_GET["validacao"])==1):?>
                 <!-- row4 -->
                 <div class="row" id="row4" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:block;";}else{echo"display:none;";}?>"-->
                   <div class="page-header">
@@ -464,7 +464,11 @@ $(document).ready(function(){
                       <div class="control-group">
                         <label class="control-label" for="f4_email2">Email</label>
                         <div class="controls">
-                          <input type="text" class="input-xlarge disabled" id="f4_email2" name="f4_email2" placeholder="" disabled="disabled">
+                          <?php if(isset($_GET["validacao"])==1 && isset($_GET["email"])): ?>
+                            <input type="text" class="input-xlarge disabled" id="f4_email2" name="f4_email2" placeholder="" disabled="disabled" value="<?php echo $_GET["email"]; ?>">
+                          <?php else: ?>
+                            <input type="text" class="input-xlarge disabled" id="f4_email2" name="f4_email2" placeholder="" disabled="disabled">
+                          <?php endif;?>
                           <p class="help-block">Se aplicável, você receberá uma resposta nesse email.</p>
                         </div>
                       </div>

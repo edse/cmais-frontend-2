@@ -454,7 +454,7 @@ background:#89B6CD;
 /* /GRADE DE PROGRAMACAO */
 #barra-site h2,
 .box-topo { *margin-left:20px; }
-#barra-site h2 { *margin-top:-20px; }
+#barra-site h2 { *margin-top:-20px;margin-top:20px; }
 #destaque p { margin-bottom:20px; }
 #barra-site .topo-programa {min-height:140px;}
 .bg-cinza2 .col-esq { margin-top:30px; }
@@ -511,7 +511,7 @@ em{font-style:oblique !important;}
 .chamada-home .media img{ clear:both; width:100% !important; max-height:390px; margin-top:20px; }
 #destaque.chamada-home p { margin-left:0; }
 
-.menu-interna li.m-controle-remoto { background:#136b9b; }
+.menu-interna li.m-controle-remoto { background:#005ca8;  }
 .home #conteudo-pagina,
 .home #miolo { margin-top:0; }
 #destaque.chamada-home .media {  margin-top:0 !important;  }
