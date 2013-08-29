@@ -12,8 +12,8 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 
 
 .conteudo-asset .asset img { width: 100%; }
-#content .relacionados { background:#3aaaec; color:#fff; margin:0 auto; padding:10px 0 10px 10px; max-width:930px; overflow:hidden; position:relative; border-bottom:7px solid #02CBFF; }
-.relacionados h2 { margin:0; color:#fff; }
+#content .relacionados { background:#0191fb; color:#fff; margin:0 auto; padding:0; max-width:940px; overflow:hidden; position:relative; border-bottom:7px solid #02CBFF; }
+.relacionados h2 { margin:0; color:#fff; padding:10px; background:#3aaaec}
 .relacionados p {  float:left;}
 .relacionados p a { color:#fff; }
 .relacionados p a:hover { text-decoration:underline; }

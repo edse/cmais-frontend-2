@@ -32,17 +32,12 @@
   </section>
   <section class="relacionados">
     <h2>Brinque também com:</h2>
-    <!--
-    <p><a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a>, <a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a>, <a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a>, <a href="/vilasesamo2/elmo" alt="Elmo">Elmo</a></p>
-    <a class="todos-assets"><i class="sprite-btn-voltar-jogos"></i><p>todos os jogos</p></a>
-    <br />
-    -->
     <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuCarrosselinternas', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
-    
+    <span class="divisa tipo2"></span>
 
 
   </section>
-  <section class="form">
+  <section class="form row-fluid">
     <div class="span8">
     <h2>Brincar é um direito da criança</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices sapien at massa condimentum venenatis. In luctus vulputate massa, quis faucibus tellus pharetra nec. Donec convallis ligula eu augue mattis luctus. Aliquam scelerisque quam metus. Desenhe sua brincadeira preferida e envie para a galeria do site! </p>
