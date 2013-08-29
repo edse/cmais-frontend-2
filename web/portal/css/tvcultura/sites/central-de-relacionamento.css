@@ -1,5 +1,5 @@
 /* GERAL */
-#textCounter{padding:0px 5px 11px 0px;}
+##textCounter{padding:0px 5px 11px 0px;}
 .atencao{font-weight:bold; color:red;}
 .container.principal{min-height: 50px;}
 .container.content .col-equerda h1{text-transform: uppercase;}
