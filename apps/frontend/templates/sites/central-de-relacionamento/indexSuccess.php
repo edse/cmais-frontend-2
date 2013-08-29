@@ -449,7 +449,7 @@ $(document).ready(function(){
                   </form>
                 </div>
                 <!-- /row3 -->
-                
+                 <?php if(isset($_GET["validacao"])==1):?>
                 <!-- row4 -->
                 <div class="row" id="row4" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:block;";}else{echo"display:none;";}?>"-->
                   <div class="page-header">
@@ -675,7 +675,7 @@ $(document).ready(function(){
                   </form>
                 </div>
                 <!-- /row4 -->
-                
+                <?php endif; ?>
                 <!-- row5 -->
                 <div class="row" id="row5">
                   <div class="page-header">
@@ -768,7 +768,7 @@ $(document).ready(function(){
                 <!-- /row9 -->
                 <?php if(isset($_GET["validacao"])==1):?>
                 <!-- row10 -->
-                <div class="row" id="row10" >
+                <div class="row" id="row10" style="display:block" >
                   <div class="page-header">
                     <h1>E-mail Cadastrado e validado</h1>
                     <p><span class="label label-success">e-mail validado</span></p>
@@ -784,7 +784,7 @@ $(document).ready(function(){
                 <?php endif; ?>
                 <?php if(isset($_GET["erro"])==1):?>
                 <!-- row11 -->
-                <div class="row" id="row11" >
+                <div class="row" id="row11" style="display:block">
                   <div class="page-header">
                     <h1>Erro na</h1>
                     <p><span class="label label-success">e-mail validado</span></p>
