@@ -1,7 +1,7 @@
 <section>
   <span class="divisa tipo2"></span>
   <div id="carrossel-interna">
-    <div class="carrossel-i" id="carrossel-i">
+    <div class="carrossel-i" id="carrossel-i"> 
       <div class="slider">
           <div class="slider-mask-wrap">
             <div class="slider-mask">

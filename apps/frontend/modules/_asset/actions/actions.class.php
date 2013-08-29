@@ -557,23 +557,44 @@ class _assetActions extends sfActions
       $title = $this->asset->getTitle().' - '.$this->asset->Site->getTitle().' - cmais+ O portal de conteúdo da Cultura';
     else
       $title = $this->asset->getTitle().' - '.$this->asset->Site->getTitle().' O portal de conteúdo da Cultura';
-    $this->getResponse()->setTitle($title, false);
-    $this->getResponse()->addMeta('description', $this->asset->getDescription());
-    $tags = "";    
+    
+    $og_description = $this->asset->getDescription().' - cmais+ O portal de conteúdo da Cultura';
+    
+    $tags = "";
     if(count($this->asset->getTags())>0){
       foreach($this->asset->getTags() as $t)
         $tags .= $t.', ';
     }
     $tags .= "cultura, educacao, infantil, jornalismo";
-    $this->getResponse()->addMeta('keywords', $tags);
-    $this->getResponse()->addMeta('keywords', $tags);
-
-    $this->getResponse()->addMetaProp('og:title', $title);
-    $this->getResponse()->addMetaProp('og:type', 'article');
-    $this->getResponse()->addMetaProp('og:description', $this->asset->getDescription().' - cmais+ O portal de conteúdo da Cultura');
-    $this->getResponse()->addMetaProp('og:url', $this->uri);
-    $this->getResponse()->addMetaProp('og:site_name', 'cmais+');
-    $this->getResponse()->addMetaProp('og:image', 'http://cmais.com.br/portal/images/logoCMAIS.jpg');
+    
+    if($this->site->getSlug() == "culturabrasil" || $this->site->Program->Channel->getSlug() == "culturabrasil" || $this->site->getSlug() == "especiais-1"){
+      if($this->site->getSlug() == "culturabrasil"){
+        $title = $this->site->getTitle()." - ".$this->asset->getTitle();
+      }else{
+        $title = "Cultura Brasil - ". $this->site->getTitle()." - ".$this->asset->getTitle();  
+      }
+        
+      $tags = "";
+      if(count($this->asset->getTags())>0){
+        foreach($this->asset->getTags() as $t)
+          $tags .= $t.', ';
+      }
+      $tags .= "musica, musica brasileira, radio cultura, radio cultura brasil, playlist";  
+      
+      $og_description = "Cultura Brasil - ". $this->asset->getDescription();
+    }
+    
+    $this->getResponse()->setTitle($title, false);    //OK
+    $this->getResponse()->addMeta('description', $this->asset->getDescription()); //OK
+    $this->getResponse()->addMeta('keywords', $tags);   //OK
+    
+    $this->getResponse()->addMetaProp('og:title', $title);  //OK
+    $this->getResponse()->addMetaProp('og:type', 'article');  //OK
+    $this->getResponse()->addMetaProp('og:description', $og_description); //OK
+    $this->getResponse()->addMetaProp('og:url', $this->uri); //OK
+    $this->getResponse()->addMetaProp('og:site_name', 'cmais+');  //OK
+    
+    $og_image =  'http://cmais.com.br/portal/images/logoCMAIS.jpg'; //OK
     
     //ogp
     if($this->asset->AssetType->getSlug() == "video"){
@@ -582,7 +603,7 @@ class _assetActions extends sfActions
       $this->getResponse()->addMetaProp('og:video:type', 'application/x-shockwave-flash');
       $this->getResponse()->addMetaProp('og:video:width', '640');
       $this->getResponse()->addMetaProp('og:video:height', '390');
-      $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$this->asset->AssetVideo->getYoutubeId().'/0.jpg');
+      $og_image = 'http://i4.ytimg.com/vi/'.$this->asset->AssetVideo->getYoutubeId().'/0.jpg';
     }
     elseif($this->asset->AssetType->getSlug() == "video-gallery"){
       $rel = $this->asset->retriveRelatedAssetsByAssetTypeId(6);
@@ -592,7 +613,7 @@ class _assetActions extends sfActions
         $this->getResponse()->addMetaProp('og:video:type', 'application/x-shockwave-flash');
         $this->getResponse()->addMetaProp('og:video:width', '640');
         $this->getResponse()->addMetaProp('og:video:height', '390');
-        $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$rel[0]->AssetVideo->getYoutubeId().'/default.jpg');
+        $og_image =  'http://i4.ytimg.com/vi/'.$rel[0]->AssetVideo->getYoutubeId().'/default.jpg';
       }
     }
     elseif($this->asset->AssetType->getSlug() == "audio"){
@@ -600,10 +621,10 @@ class _assetActions extends sfActions
       $this->getResponse()->addMetaProp('og:audio', 'http://midia.cmais.com.br/assets/audio/default/'.$this->asset->AssetAudio->getFile().'.mp3');
       $this->getResponse()->addMetaProp('og:audio:title', $this->asset->getTitle());
       $this->getResponse()->addMetaProp('og:audio:type', 'application/mp3');
-      $this->getResponse()->addMetaProp('og:image', 'http://cmais.com.br/portal/images/logoCMAIS.jpg');
+      $og_image =  'http://cmais.com.br/portal/images/logoCMAIS.jpg';
     }
     elseif($this->asset->AssetType->getSlug() == "image"){
-      $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/assets/image/default/'.$this->asset->AssetImage->getFile().'.jpg');
+      $og_image =  'http://midia.cmais.com.br/assets/image/default/'.$this->asset->AssetImage->getFile().'.jpg';
     }
     elseif($this->asset->AssetType->getSlug() == "content"){
       $rel = $this->asset->retriveRelatedAssets();
@@ -614,7 +635,7 @@ class _assetActions extends sfActions
           $this->getResponse()->addMetaProp('og:video:type', 'application/x-shockwave-flash');
           $this->getResponse()->addMetaProp('og:video:width', '640');
           $this->getResponse()->addMetaProp('og:video:height', '390');
-          $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$rel[0]->AssetVideo->getYoutubeId().'/0.jpg');
+          $og_image =  'http://i4.ytimg.com/vi/'.$rel[0]->AssetVideo->getYoutubeId().'/0.jpg';
         }
         elseif($rel[0]->AssetType->getSlug() == "video-gallery"){
           $relatedVideos = $rel[0]->retriveRelatedAssetsByAssetTypeId(6);
@@ -624,7 +645,7 @@ class _assetActions extends sfActions
             $this->getResponse()->addMetaProp('og:video:type', 'application/x-shockwave-flash');
             $this->getResponse()->addMetaProp('og:video:width', '640');
             $this->getResponse()->addMetaProp('og:video:height', '390');
-            $this->getResponse()->addMetaProp('og:image', 'http://i4.ytimg.com/vi/'.$relatedVideos[0]->AssetVideo->getYoutubeId().'/0.jpg');
+            $og_image =  'http://i4.ytimg.com/vi/'.$relatedVideos[0]->AssetVideo->getYoutubeId().'/0.jpg';
           }
         }
         elseif($rel[0]->AssetType->getSlug() == "audio"){
@@ -634,9 +655,9 @@ class _assetActions extends sfActions
           $this->getResponse()->addMetaProp('og:audio:title', $related->getTitle());
           $this->getResponse()->addMetaProp('og:audio:type', 'application/mp3');
           */
-          $this->getResponse()->addMetaProp('og:image', 'http://cmais.com.br/portal/images/logoCMAIS.jpg');
+          $og_image =  'http://cmais.com.br/portal/images/logoCMAIS.jpg';
         }elseif($rel[0]->AssetType->getSlug() == "image"){
-          $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/assets/image/default/'.$rel[0]->AssetImage->getFile().'.jpg');
+          $og_image =  'http://midia.cmais.com.br/assets/image/default/'.$rel[0]->AssetImage->getFile().'.jpg';
         }
         /*
         foreach($rel as $related){
@@ -663,17 +684,25 @@ class _assetActions extends sfActions
     }
     else{
       if($this->site->Program->getImageLive() != "")
-        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageLive());
+        $og_image =  'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageLive();
       elseif($this->site->Program->getImageThumb() != "")
-        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageThumb());
+        $og_image =  'http://midia.cmais.com.br/programs/'.$this->site->Program->getImageThumb();
       elseif($this->site->getImageThumb() != "")
-        $this->getResponse()->addMetaProp('og:image', 'http://midia.cmais.com.br/programs/'.$this->site->getImageThumb());
+        $og_image =  'http://midia.cmais.com.br/programs/'.$this->site->getImageThumb();
     }
     
     if($this->site->getSlug() == "radarcultura"){
-      $this->getResponse()->addMetaProp('og:image', 'http://radarcultura.cmais.com.br/portal/images/capaPrograma/radarcultura/logo-radar-novo.png');
+      $og_image =  'http://radarcultura.cmais.com.br/portal/images/capaPrograma/radarcultura/logo-radar-novo.png';
       $this->getResponse()->addMetaProp('og:description', $title." ".$description);
     }
+    
+    if($this->site->getSlug() == "culturabrasil" || $this->site->Program->Channel->getSlug() == "culturabrasil" || $this->site->getSlug() == "especiais-1"){
+      if($og_image == "http://cmais.com.br/portal/images/logoCMAIS.jpg"){
+        $og_image = "http://midia.cmais.com.br/programs/2cc51003abe67b67284933012d9558611c68c17e.jpg";
+      }
+    }    
+    
+    $this->getResponse()->addMetaProp('og:image', $og_image);
     
     if(!$this->section)
       $this->section = Doctrine::getTable('Section')->findOneById(1);

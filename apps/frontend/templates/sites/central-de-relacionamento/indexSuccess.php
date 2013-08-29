@@ -117,49 +117,30 @@ $(document).ready(function(){
                       <div class="controls">
                         <input type="text" class="input-xlarge disabled" id="f2_email2" name="f2_email2" placeholder="" disabled="disabled">
                         <p class="help-block">Você receberá uma mensagem de confirmação para validar este email após enviar o cadastro preenchido.</p>
+                        <span class="atencao">* Campos obrigatórios</span>
                       </div>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="f2_nome">Nome</label>
+                      <label class="control-label" for="f2_nome">Nome <span class="atencao">*</span></label>
                       <div class="controls">
                         <input type="text" class="input-xlarge" id="f2_nome" name="f2_nome">
                         <p class="help-block">Entre com seu nome completo.</p>
                       </div>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="f2_cod_faixaetaria">Idade</label>
+                      <label class="control-label" for="f2_cod_faixaetaria">Idade <span class="atencao">*</span></label>
                       <div class="controls">
                         <select id="f2_cod_faixaetaria" name="f2_cod_faixaetaria"></select>
                       </div>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="f2_cod_sexo">Sexo</label>
+                      <label class="control-label" for="f2_cod_sexo">Sexo <span class="atencao">*</span></label>
                       <div class="controls">
                         <select id="f2_cod_sexo" name="f2_cod_sexo"></select>
                       </div>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" for="f2_cod_recepcaodesinal">Recepção do sinal</label>
-                      <div class="controls">
-                        <select id="f2_cod_recepcaodesinal" size="10" name="f2_cod_recepcaodesinal"></select>
-                      </div>
-                    </div>
-                    <div class="control-group">
-                      <label class="control-label" for="f2_exterior">Reside no exterior?</label>
-                      <div class="controls">
-                        <input type="checkbox" name="f2_exterior" id="f2_exterior" value="1" onchange="toggleExterior();" />
-                        <!-- <select id="f2_exterior" name="f2_exterior" onchange="toggleExterior();"></select> -->
-                      </div>
-                    </div>
-                    <div class="control-group f2_exterior">
-                      <label class="control-label" for="f2_localexterior">Pais</label>
-                      <div class="controls">
-                        <input type="text" class="input-xlarge" id="f2_localexterior" name="f2_localexterior">
-                        <!-- <p class="help-block">Pais em que reside <code>Chile</code></p> -->
-                      </div>
-                    </div>
-                    <div class="control-group">
-                      <label class="control-label" for="f2_cep">CEP</label>
+                      <label class="control-label" for="f2_cep">CEP <span class="atencao">*</span></label>
                       <div class="controls">
                         <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value);">
                         <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
@@ -167,13 +148,13 @@ $(document).ready(function(){
                     </div>
                     <div id="f2_brasil">
                       <div class="control-group">
-                        <label class="control-label" for="f2_estado">Estado</label>
+                        <label class="control-label" for="f2_estado">Estado <span class="atencao">*</span></label>
                         <div class="controls">
                           <select id="f2_estado" name="f2_estado" onchange="municipios('f2');" onfocus="municipios('f2');"></select>
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label" for="f2_local">Cidade</label>
+                        <label class="control-label" for="f2_local">Cidade <span class="atencao">*</span></label>
                         <div class="controls">
                           <select id="f2_local" name="f2_local"></select>
                         </div>
@@ -185,6 +166,26 @@ $(document).ready(function(){
                         </div>
                       </div>
                     </div><!-- /#brasil -->
+                    <div class="control-group f2_exterior">
+                      <label class="control-label" for="f2_localexterior">Pais <span class="atencao">*</span></label>
+                      <div class="controls">
+                        <input type="text" class="input-xlarge" id="f2_localexterior" name="f2_localexterior">
+                        <!-- <p class="help-block">Pais em que reside <code>Chile</code></p> -->
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="f2_exterior">Reside no exterior?</label>
+                      <div class="controls">
+                        <input type="checkbox" name="f2_exterior" id="f2_exterior" value="1" onchange="toggleExterior();" />
+                        <!-- <select id="f2_exterior" name="f2_exterior" onchange="toggleExterior();"></select> -->
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label" for="f2_cod_recepcaodesinal">Recepção do sinal <span class="atencao">*</span></label>
+                      <div class="controls">
+                        <select id="f2_cod_recepcaodesinal" name="f2_cod_recepcaodesinal"></select>
+                      </div>
+                    </div>
                     <div class="control-group">
                       <label class="control-label" for="f2_mais">Mais informações</label>
                       <div class="controls">
@@ -649,7 +650,8 @@ $(document).ready(function(){
                       <div class="control-group f4">
                         <label class="control-label" for="f4_mensagem">Mensagem</label>
                         <div class="controls">
-                          <textarea class="input-xlarge" id="f4_mensagem" name="f4_mensagem" rows="5"></textarea>
+                          <textarea class="input-xlarge" id="f4_mensagem" name="f4_mensagem" rows="5" onkeydown="limitText(this,1000,'#textCounter');"></textarea>
+                          <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
                         </div>
                       </div>
         
@@ -764,6 +766,7 @@ $(document).ready(function(){
                 
                 $(document).ready(function(){
                   var email = '';
+                  
                   $("#f4_mais").removeAttr("checked");
                   $("#f4_cod_programa option").attr("value", "");
                   $(".dicas").click(function(){
@@ -1238,7 +1241,8 @@ $(document).ready(function(){
                   
                 });
                 
-                function toggleExterior(){
+                function toggleExterior(obj){
+                  //console.log($(obj))
                   if($('#f2_exterior').attr('checked')){
                     $('#f2_brasil').hide();
                     $('#f2_cep').parent().parent().hide();
@@ -1440,7 +1444,13 @@ $(document).ready(function(){
                     $('#f1_email').val("");     
                   });
                 }
-                
+                // Contador de Caracters
+                function limitText(limitField, limitNum, textCounter) {
+                  if(limitField.value.length > limitNum)
+                    limitField.value = limitField.value.substring(0, limitNum);
+                  else
+                    $(textCounter).html(limitNum - limitField.value.length);
+                }
                 </script>
               <!--form envio-->
               </div>
