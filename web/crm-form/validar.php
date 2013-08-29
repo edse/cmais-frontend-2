@@ -15,7 +15,7 @@ $client = new SoapClient("http://intranet3/crm_webservices/crm.asmx?WSDL");
 $result = $client->valida_usuario(array('id'=>$_REQUEST["id"]));
 if($result->valida_usuarioResult != " " && $result->valida_usuarioResult != ""){
   /*header("Location: http://172.20.18.133/crm-form/form.html?step=1&email=".$result->valida_usuarioResult);*/
-  header("Location: http://cmais.com.br/central-de-relacionamento?step=1&email=".$result->valida_usuarioResult);
+  header("Location: http://cmais.com.br/central-de-relacionamento?step=1&email=".$result->valida_usuarioResult."&validacao=1");
 }
 else{
   /*header("Location: http://172.20.18.133/crm-form/form.html?erro=1");*/
