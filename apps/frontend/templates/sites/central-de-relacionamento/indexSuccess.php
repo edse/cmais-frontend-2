@@ -1240,7 +1240,7 @@ $(document).ready(function(){
                 });
                 
                 function toggleExterior(obj){
-                  console.log($(obj))
+                  console.log($("#"+obj.selector))
                   if($('#f2_exterior').attr('checked')){
                     $('#f2_brasil').hide();
                     $('#f2_cep').parent().parent().hide();
