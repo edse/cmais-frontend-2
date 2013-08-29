@@ -42,7 +42,7 @@
 
 
   </section>
-  <section class="form">
+  <section class="form row-fluid">
     <div class="span8">
     <h2>Brincar é um direito da criança</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices sapien at massa condimentum venenatis. In luctus vulputate massa, quis faucibus tellus pharetra nec. Donec convallis ligula eu augue mattis luctus. Aliquam scelerisque quam metus. Desenhe sua brincadeira preferida e envie para a galeria do site! </p>
