@@ -43,6 +43,7 @@
 
   </section>
   <section class="form">
+    <div class="span8">
     <h2>Brincar é um direito da criança</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices sapien at massa condimentum venenatis. In luctus vulputate massa, quis faucibus tellus pharetra nec. Donec convallis ligula eu augue mattis luctus. Aliquam scelerisque quam metus. Desenhe sua brincadeira preferida e envie para a galeria do site! </p>
     <form class="form-horizontal">
@@ -105,6 +106,10 @@
         </div>
       </div>
     </form>
+    </div>
+    <div class="span4">
+      <iframe width="300" height="169" src="//www.youtube.com/embed/gjQA0n_1fg4" frameborder="0" allowfullscreen></iframe>
+    </div>
 
 
   </section>

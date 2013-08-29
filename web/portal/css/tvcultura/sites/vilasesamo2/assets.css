@@ -8,7 +8,8 @@
 .conteudo-asset { padding:10px 20px 20px; background:#fff; }
 h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993f7; text-transform:uppercase; }
 .conteudo-asset p { font-size:16px; float:left; }
-.conteudo-asset p a { float:left; width: 220px; }
+.conteudo-asset p a { float:right; width: 220px; margin-left:2%; }
+
 
 .conteudo-asset .asset img { width: 100%; }
 #content .relacionados { background:#3aaaec; color:#fff; margin:0 auto; padding:10px 0 10px 10px; max-width:930px; overflow:hidden; position:relative; border-bottom:7px solid #02CBFF; }
@@ -85,6 +86,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 #content section.form p,
 #content section.form label,
 #content section.form h2 { color:#fff; }
+.form-horizontal .control-label { }
  
 /* /form */
 
