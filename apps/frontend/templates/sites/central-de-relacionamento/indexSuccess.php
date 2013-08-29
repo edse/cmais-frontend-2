@@ -464,7 +464,11 @@ $(document).ready(function(){
                       <div class="control-group">
                         <label class="control-label" for="f4_email2">Email</label>
                         <div class="controls">
-                          <input type="text" class="input-xlarge disabled" id="f4_email2" name="f4_email2" placeholder="" disabled="disabled">
+                          <?php if(isset($_GET["validacao"])==1 && isset($_GET["email"])): ?>
+                            <input type="text" class="input-xlarge disabled" id="f4_email2" name="f4_email2" placeholder="" disabled="disabled" value="<?php echo $_GET["email"]; ?>">
+                          <?php else: ?>
+                            <input type="text" class="input-xlarge disabled" id="f4_email2" name="f4_email2" placeholder="" disabled="disabled">
+                          <?php endif;?>
                           <p class="help-block">Se aplicável, você receberá uma resposta nesse email.</p>
                         </div>
                       </div>
