@@ -809,6 +809,10 @@ $(document).ready(function(){
                 
                 $(document).ready(function(){
                   var email = '';
+                  <?php if(isset($_GET["step"])&&$_GET["step"]==4):?>
+                    $("#f4_cod_programa").find("option").attr("value", "--");
+                  <?php endif; ?>
+                  $("#f4_cod_programa").find("option").attr("value", "--");
                   
                   $("#f4_mais").removeAttr("checked");
                   $("#f4_cod_programa option").attr("value", "");
@@ -838,7 +842,6 @@ $(document).ready(function(){
                   
                   $('#btn4, #btn5').click(function(){
                     email = $('#f4_email2').val();
-                    $("#f4_cod_programa").find("option").attr("value", "--");
                     $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                   });
                   $('.backBegin, .outro-email').click(function(){
