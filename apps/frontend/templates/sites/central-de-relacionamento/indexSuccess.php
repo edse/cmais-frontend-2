@@ -766,6 +766,38 @@ $(document).ready(function(){
                   </div>
                 </div>
                 <!-- /row9 -->
+                <?php if(!isset($_GET["validacao"])==1):?>
+                <!-- row10 -->
+                <div class="row" id="row10" >
+                  <div class="page-header">
+                    <h1>E-mail Cadastrado e validado</h1>
+                    <p><span class="label label-success">e-mail validado</span></p>
+                  </div><!-- /.span -->
+                  <div class="alert alert-block alert-success fade in">
+                    <h4 class="alert-heading">Seu cadastro está validado!</h4>
+                    <p>O que vc quer fazer agora?</p>
+                    <a class="btn btn-success enviar-outra"> Enviar uma mensagem</a>
+                    <a class="btn btn-success change-form" href="javascript:;"> Preencher os campos complementares de seu cadastro</a>
+                  </div>
+                </div>
+                <!-- /row10 -->
+                <?php endif; ?>
+                <?php if(!isset($_GET["erro"])==1):?>
+                <!-- row11 -->
+                <div class="row" id="row11" >
+                  <div class="page-header">
+                    <h1>Erro na</h1>
+                    <p><span class="label label-success">e-mail validado</span></p>
+                  </div><!-- /.span -->
+                  <div class="alert alert-block alert-success fade in">
+                    <h4 class="alert-heading">Sua mensagem foi enviada!</h4>
+                    <p>O que vc quer fazer agora?</p>
+                    <a class="btn btn-success enviar-outra"> Continuar o envio</a>
+                    <a class="btn btn-success change-form" href="javascript:;"> Alterar novamente seu cadastro</a>
+                  </div>
+                </div>
+                <!-- /row11 -->
+                <?php endif; ?>
                 <script src="/portal/js/validate/jquery.validate.min.js"></script>
                 <script src="/portal/js/messages_ptbr.js"></script>
                 <script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>
