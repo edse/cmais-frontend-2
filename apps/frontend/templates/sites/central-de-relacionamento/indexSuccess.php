@@ -139,13 +139,7 @@ $(document).ready(function(){
                         <select id="f2_cod_sexo" name="f2_cod_sexo"></select>
                       </div>
                     </div>
-                    <div class="control-group">
-                      <label class="control-label" for="f2_cep">CEP <span class="atencao">*</span></label>
-                      <div class="controls">
-                        <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value);">
-                        <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
-                      </div>
-                    </div>
+                    
                     <div id="f2_brasil">
                       <div class="control-group">
                         <label class="control-label" for="f2_estado">Estado <span class="atencao">*</span></label>
@@ -159,12 +153,7 @@ $(document).ready(function(){
                           <select id="f2_local" name="f2_local"></select>
                         </div>
                       </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_telefone">Telefone</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_telefone" name="f2_telefone" placeholder="(xx) XXXX-XXXX">
-                        </div>
-                      </div>
+                      
                     </div><!-- /#brasil -->
                     <div class="control-group f2_exterior">
                       <label class="control-label" for="f2_localexterior">Pais <span class="atencao">*</span></label>
@@ -186,6 +175,8 @@ $(document).ready(function(){
                         <select id="f2_cod_recepcaodesinal" name="f2_cod_recepcaodesinal"></select>
                       </div>
                     </div>
+                    <?php
+                    /*
                     <div class="control-group">
                       <label class="control-label" for="f2_mais">Mais informações</label>
                       <div class="controls">
@@ -197,7 +188,13 @@ $(document).ready(function(){
                     </div>
                     
                     <div id="f2_maisinfo">
-                      
+                      <div class="control-group">
+                        <label class="control-label" for="f2_cep">CEP <span class="atencao">*</span></label>
+                        <div class="controls">
+                          <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value);">
+                          <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
+                        </div>
+                      </div>
                       <div class="control-group">
                         <label class="control-label" for="f2_endereco">Endereço</label>
                         <div class="controls">
@@ -214,6 +211,12 @@ $(document).ready(function(){
                         <label class="control-label" for="f2_complemento">Complemento</label>
                         <div class="controls">
                           <input type="text" class="input-xlarge" id="f2_complemento" name="f2_complemento">
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label" for="f2_telefone">Telefone</label>
+                        <div class="controls">
+                          <input type="text" class="input-xlarge" id="f2_telefone" name="f2_telefone" placeholder="(xx) XXXX-XXXX">
                         </div>
                       </div>
                       <div class="control-group">
@@ -266,6 +269,9 @@ $(document).ready(function(){
                         </label>
                       </div>
                     </div>
+                     * 
+                     */
+                    ?>
                     <div class="control-group">
                     <div class="botoes-form">
                       <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader2" />
