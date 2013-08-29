@@ -46,13 +46,17 @@
       
       <script src="/portal/controle-remoto/js/jquery.min-1.8.js" type="text/javascript"></script>
       <script src="/portal/controle-remoto/js/jquery.jplayer.js" type="text/javascript"></script>
+      
+      <script src="/portal/controle-remoto/js/flash_detect.js" type="text/javascript"></script>
+            
       <script type="text/javascript" src="/portal/controle-remoto/js/jquery.jplayer.inspector.js"></script>
       <script type="text/javascript">
       //<![CDATA[
        $(document).ready(function(){
         $(".cr-det-mus-pgm").hide();        
         
-        if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
+        //if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
+        if(FlashDetect.installed){ 
           jwplayer("div_player").setup({
               file: "rtmp://200.136.27.12/live/radioam",
               width: 360,
