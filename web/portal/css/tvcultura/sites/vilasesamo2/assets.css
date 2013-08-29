@@ -19,6 +19,9 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .relacionados p a:hover { text-decoration:underline; }
 .relacionados .todos-assets  { position:absolute; top:10px; right:0; }
 .relacionados .divisa { margin:0 auto; }
+#carrossel-interna .slider-mask-wrap { margin:0 auto; }
+#carrossel-interna { margin:20px auto 0; }
+
 #content .pais { background:#feec3c; margin:0 auto !important; overflow:hidden; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 .pais .divisa { margin-bottom:0; }
 .pais h2 a,
