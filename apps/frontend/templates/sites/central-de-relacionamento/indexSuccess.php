@@ -786,7 +786,7 @@ $(document).ready(function(){
                 </div>
                 <!-- /row10 -->
                 <?php endif; ?>
-                <?php if(isset($_GET["erro"])==1):?>
+                <?php if(isset($_GET["erro"])==1): ?>
                 <!-- row11 -->
                 <div class="row" id="row11" style="display:block">
                   <div class="page-header">
