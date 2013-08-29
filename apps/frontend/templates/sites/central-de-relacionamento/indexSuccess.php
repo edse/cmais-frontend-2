@@ -838,6 +838,7 @@ $(document).ready(function(){
                   
                   $('#btn4, #btn5').click(function(){
                     email = $('#f4_email2').val();
+                    $("#f4_cod_programa").find("option").attr("value", "--");
                     $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                   });
                   $('.backBegin, .outro-email').click(function(){
