@@ -78,9 +78,9 @@
 #carrossel-interna .slider-mask-wrap { margin: 0 auto;max-width: 825px;margin-bottom: 10px;position: relative;height: 230px;}
 #carrossel-interna .slider-mask { overflow: hidden; position: absolute; zoom: 1; max-width:840px;} 
 #carrossel-interna .slider-target { width: 2000px; margin: 0 auto; } 
-#carrossel-interna .slider ul { margin: 0; padding: 0; list-style-type: none;}
-#carrossel-interna .slider li { width: 210px; height: 230px; float: left; padding: 0;}
-#carrossel-interna .slider .inner { background:#9933cc!important; width:200px; height:200px; display:block; overflow:hidden; padding:0;}
+#carrossel-interna .slider ul { margin: 0; padding: 0; list-style-type: none; width:1800px !important;}
+#carrossel-interna .slider li { width: 200px; float: left; padding: 0; margin-right:0.6%;}
+#carrossel-interna .slider .inner { width:200px; height:200px; display:block; overflow:hidden; padding:0;}
 #carrossel-interna .examples { padding: 1em; background-color: #2f4f4f;}
 #carrossel-interna #menu span {white-space: nowrap; }
 
