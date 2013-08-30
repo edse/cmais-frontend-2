@@ -100,6 +100,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 #content section.form h2 { color:#fff; }
 .form-horizontal .control-label {text-align:left; }
 .form-horizontal .controls { margin-left:10%; }
+.form-horizontal .estado .control-label { width:auto; }
+.form-horizontal .estado .controls { margin:0; }
  
 /* /form */
 

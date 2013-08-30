@@ -62,7 +62,7 @@
           <input type="text" id="cidade" placeholder="Cidade" value="Cidade">
         </div>
       </div>
-      <div class="control-group">
+      <div class="control-group estado">
         <label class="control-label" for="estado"></label>
         <div class="controls">
           <input type="text" id="estado" placeholder="Estado" value="Estado">
