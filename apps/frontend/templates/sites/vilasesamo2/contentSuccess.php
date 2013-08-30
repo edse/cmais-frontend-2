@@ -43,45 +43,45 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices sapien at massa condimentum venenatis. In luctus vulputate massa, quis faucibus tellus pharetra nec. Donec convallis ligula eu augue mattis luctus. Aliquam scelerisque quam metus. Desenhe sua brincadeira preferida e envie para a galeria do site! </p>
     <form class="form-horizontal">
       <div class="control-group">
-        <label class="control-label" for="nome">Nome</label>
+        <label class="control-label sprite-ico-nome" for="nome"></label>
         <div class="controls">
           <input type="text" id="nome" placeholder="Nome" value="Nome">
         </div>
       </div>
       
       <div class="control-group">
-        <label class="control-label" for="idade">Idade</label>
+        <label class="control-label sprite-ico-idade" for="idade"></label>
         <div class="controls">
           <input type="text" id="idade" placeholder="Idade" value="Idade">
         </div>
       </div>
       
       <div class="control-group">
-        <label class="control-label" for="cidade">Cidade</label>
+        <label class="control-label sprite-ico-cidade" for="cidade"></label>
         <div class="controls">
           <input type="text" id="cidade" placeholder="Cidade" value="Cidade">
         </div>
       </div>
       <div class="control-group">
-        <label class="control-label" for="estado">UF</label>
+        <label class="control-label" for="estado"></label>
         <div class="controls">
           <input type="text" id="estado" placeholder="Estado" value="Estado">
         </div>
       </div>
       <div class="control-group">
-        <label class="control-label" for="email">Email</label>
+        <label class="control-label sprite-ico-email" for="email"></label>
         <div class="controls">
           <input type="text" id="email" placeholder="Email" value="Email">
         </div>
       </div>
        <div class="control-group">
-        <label class="control-label" for="anexo">Anexo</label>
+        <label class="control-label sprite-ico-anexo" for="anexo"></label>
         <div class="controls">
           <input type="text" id="anexo" placeholder="Anexo" value="Anexo">
         </div>
       </div>
       <div class="control-group">
-        <label class="control-label" for="mensagem">Mensagem</label>
+        <label class="control-label sprite-ico-mensagem" for="mensagem">Mensagem</label>
         <div class="controls">
           <textarea id="mensagem" placeholder="Mensagem" value="Mensagem"></textarea>
         </div>
@@ -91,14 +91,7 @@
           <input type="radio" name="concorco" id="concorco" value="concorco" checked>
           Declaro que li e estou de acordo com os <a href="#">Termos e Condições</a>.
         </label>
-      </div>
-      <div class="control-group">
-        <div class="controls">
-          <label class="checkbox">
-            <input type="checkbox"> Remember me
-          </label>
-          <button type="submit" class="btn">Sign in</button>
-        </div>
+        <button type="submit" class="btn">Sign in</button>
       </div>
     </form>
     </div>
