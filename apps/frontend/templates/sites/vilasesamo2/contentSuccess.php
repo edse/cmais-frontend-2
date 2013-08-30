@@ -81,7 +81,7 @@
         </div>
       </div>
       <div class="control-group">
-        <label class="control-label sprite-ico-mensagem" for="mensagem">Mensagem</label>
+        <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
         <div class="controls">
           <textarea id="mensagem" placeholder="Mensagem" value="Mensagem"></textarea>
         </div>
@@ -91,7 +91,7 @@
           <input type="radio" name="concorco" id="concorco" value="concorco" checked>
           Declaro que li e estou de acordo com os <a href="#">Termos e Condições</a>.
         </label>
-        <button type="submit" class="btn">Sign in</button>
+        <button type="submit" class="btn">enviar minha brincadeira</button>
       </div>
     </form>
     </div>
