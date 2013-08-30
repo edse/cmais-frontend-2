@@ -451,7 +451,7 @@ $(document).ready(function(){
                 <!-- /row3 -->
                  
                 <!-- row4 -->
-                <div class="row" id="row4" style="<?php if(isset($_GET['step'])&&$_GET['step']==1 || !isset($_GET["validacao"])==1){echo"display:block;";}else{echo"display:none;";}?>"-->
+                <div class="row" id="row4" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:none;";}else{echo"display:block;";}?>">
                   <div class="page-header">
                     <h1>Enviar mensagem</h1>
                     <p><span class="label label-success">Email cadastrado e validado</span></p>
@@ -464,7 +464,7 @@ $(document).ready(function(){
                       <div class="control-group">
                         <label class="control-label" for="f4_email2">Email</label>
                         <div class="controls">
-                          <?php if(isset($_GET["validacao"])==1 && isset($_GET["email"])): ?>
+                          <?php if(isset($_GET["validacao"]) && isset($_GET["email"])): ?>
                             <input type="text" class="input-xlarge disabled" id="f4_email2" name="f4_email2" placeholder="" disabled="disabled" value="<?php echo $_GET["email"]; ?>">
                           <?php else: ?>
                             <input type="text" class="input-xlarge disabled" id="f4_email2" name="f4_email2" placeholder="" disabled="disabled">
@@ -512,7 +512,7 @@ $(document).ready(function(){
                         <div class="control-group">
                           <label class="control-label" for="f4_cod_recepcaodesinal">Recepção do sinal</label>
                           <div class="controls">
-                            <select id="f4_cod_recepcaodesinal" size="10" name="f4_cod_recepcaodesinal"></select>
+                            <select id="f4_cod_recepcaodesinal" name="f4_cod_recepcaodesinal"></select>
                           </div>
                         </div>
                         <div class="control-group">
@@ -786,7 +786,7 @@ $(document).ready(function(){
                 </div>
                 <!-- /row10 -->
                 <?php endif; ?>
-                <?php if(isset($_GET["erro"])==1):?>
+                <?php if(isset($_GET["erro"])==1): ?>
                 <!-- row11 -->
                 <div class="row" id="row11" style="display:block">
                   <div class="page-header">
@@ -809,6 +809,7 @@ $(document).ready(function(){
                 
                 $(document).ready(function(){
                   var email = '';
+                  $("#f4_cod_programa").find("option").attr("value", "--");
                   
                   $("#f4_mais").removeAttr("checked");
                   $("#f4_cod_programa option").attr("value", "");
@@ -859,7 +860,7 @@ $(document).ready(function(){
                     //$('#f4_mais').attr('checked','true');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
                     $('#row6, #message, #btn4,#row9').hide();
-                    //$('#f4_cod_programa').find('option').attr('value','--').attr('selected','selected');
+                    $('#f4_cod_programa').find('option').attr('value','valida').attr('selected','selected');
                     $('#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem').attr('disabled','disabled');
                   });
                   $('.backForm').live("click", function(){
