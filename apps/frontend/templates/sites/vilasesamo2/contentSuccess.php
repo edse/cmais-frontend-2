@@ -42,14 +42,14 @@
     <h2>Brincar é um direito da criança</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices sapien at massa condimentum venenatis. In luctus vulputate massa, quis faucibus tellus pharetra nec. Donec convallis ligula eu augue mattis luctus. Aliquam scelerisque quam metus. Desenhe sua brincadeira preferida e envie para a galeria do site! </p>
     <form class="form-horizontal">
-      <div class="control-group span6">
+      <div class="control-group span8">
         <label class="control-label sprite-ico-nome" for="nome"></label>
         <div class="controls">
           <input type="text" id="nome" placeholder="Nome" value="Nome">
         </div>
       </div>
       
-      <div class="control-group span6">
+      <div class="control-group idade span2">
         <label class="control-label sprite-ico-idade" for="idade"></label>
         <div class="controls">
           <input type="text" id="idade" placeholder="Idade" value="Idade">
