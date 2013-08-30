@@ -103,7 +103,7 @@
     </form>
     </div>
     <div class="span4">
-      <iframe width="300" height="169" src="//www.youtube.com/embed/gjQA0n_1fg4" frameborder="0" allowfullscreen></iframe>
+      <iframe width="300" height="246" src="//www.youtube.com/embed/gjQA0n_1fg4" frameborder="0" allowfullscreen></iframe>
     </div>
 
 
