@@ -154,7 +154,7 @@ form.selecao .item,
 .box-padrao .topo {background:#f7f6f6; height:50px;}
 
 .box-padrao .topo h4 {color:#333; font-weight:normal; font-size: 24px; text-transform:none; }
-.setas { background: url(/portal/images/capaPrograma/culturafm/setas.jpg) no-repeat; width:17px; height:17px; display: block; float:right; margin:11px 5px 0 0; }
+.setas { background: url(/portal/images/capaPrograma/culturafm/setas.png) no-repeat; width:17px; height:17px; display: block; float:right; margin:11px 5px 0 0; }
 
 .paraouvir { background: #f7f6f6; float: left; padding-bottom: 20px; padding-bottom:20px; width: 310px; height:388px; margin-top:-20px; }
 .paraouvir .chapeu,
@@ -200,7 +200,7 @@ div.jp-playlist {border:none !important;}
 .contato form .linha .enviar {background:#666; width: 72px;}
 
 .box-padrao .nav-menu2 { background:#fff; }
-.menu-calendario .btn { background: url(/portal/images/capaPrograma/culturafm/setas.jpg) no-repeat 0 -17px; width:17px; height:17px; }
+.menu-calendario .btn { background: url(/portal/images/capaPrograma/culturafm/setas.png) no-repeat 0 -17px; width:17px; height:17px; }
 .menu-calendario .proximo {background-position:0 -34px;}
 .menu-calendario .carrossel-menu li {width:295px; text-align:center;}
 .menu-calendario .carrossel-menu {width:350px;}
