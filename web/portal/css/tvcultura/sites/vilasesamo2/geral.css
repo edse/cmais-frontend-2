@@ -254,10 +254,15 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-btn-incluir-hover{ background-position: 0 -407px; width: 300px; height: 100px; } 
 .sprite-btn-incluir{ background-position: 0 -557px; width: 300px; height: 100px; } 
 
+.form-horizontal .control-label.sprite-ico-anexo,
 .sprite-ico-anexo,
+.form-horizontal .control-label.sprite-ico-cidade,
 .sprite-ico-cidade, 
+.form-horizontal .control-label.sprite-ico-email,
 .sprite-ico-email,
+.form-horizontal .control-label.sprite-ico-idade,
 .sprite-ico-idade,
+.form-horizontal .control-label.sprite-ico-mensagem,
 .sprite-ico-mensagem,
 .sprite-ico-nome{  background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-form.png);} 
 
