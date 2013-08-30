@@ -4,7 +4,7 @@
           <div class="slider-mask-wrap">
             <div class="slider-mask">
               <ul class="slider-target">
-                <li>
+                <li class="video">
                   <div class="inner personagens bel">
                     <a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel">
                       1
@@ -12,7 +12,7 @@
                   </div>
                   <a class="nome" href="/vilasesamo2/jogos/nomedojogo1" title="Nome do Jogo 1">Nome do Jogo 1</a>
                 </li>
-                <li>
+                <li class="jogo">
                   <div class="inner personagens beto">
                     <a href="/vilasesamo2/jogos/nomedojogo2" title="Nome do jogo 2" class="">
                       2
@@ -20,7 +20,7 @@
                   </div>
                   <a class="nome" href="/vilasesamo2/jogos/nomedojogo2" title="Nome do Jogo 2">Nome do Jogo 2</a>
                 </li>
-                <li>
+                <li class="atividade">
                   <div class="inner personagens comecome">
                     <a href="/vilasesamo2/jogos/nomedojogo3" title="Nome do jogo 3" class="">
                       3
