@@ -99,12 +99,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 #content section.form label,
 #content section.form h2 { color:#fff; }
 .form-horizontal .control-label {text-align:left; float:left;}
-.form-horizontal .controls { float: left;    margin-left: 2%;    width: 84%; }
-.form-horizontal .controls input { width:95%; }
+.form-horizontal .controls { float: right;    margin-left: 0;    margin-right: 10px;    width: 85%; }
+.form-horizontal .controls input {float: right;    margin: 0;    width: 100%; }
 .form-horizontal .estado .control-label { width:auto; }
 .form-horizontal .estado .controls { margin:0; }
 .form-horizontal .control-group { margin:0 0 2% 0; }
-.form-horizontal .control-group.idade  .controls { width: 52%; } 
+.form-horizontal .control-group.idade  .controls { width: 43%; } 
+.form-horizontal .span2 { width:18%; }
 /* /form */
 
 /* ie */
