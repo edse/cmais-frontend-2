@@ -78,7 +78,7 @@ $(document).ready(function(){
              <div id="email-central" class="fundo-cinza collapse in" style="overflow: hidden; clear: both;">
               <!--form envio-->
               <!-- row1 -->
-              <div class="row" id="row1" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:none;";}else{echo"display:block;";}?>">
+              <div class="row" id="row1" style="<?php if(isset($_GET['step'])&&$_GET['step']==1 || isset($_GET["erro"])){echo"display:none;";}else{echo"display:block;";}?>">
                 <div class="page-header">
                   <h1>Email</h1>
                   <span class="label label-green">Verificação se o email está cadastrado</span> 
@@ -790,14 +790,12 @@ $(document).ready(function(){
                 <!-- row11 -->
                 <div class="row" id="row11" style="display:block">
                   <div class="page-header">
-                    <h1>Erro na</h1>
-                    <p><span class="label label-success">e-mail validado</span></p>
+                    <h1>Erro</h1>
+                    <p><span class="label label-success">Erro de validação</span></p>
                   </div><!-- /.span -->
                   <div class="alert alert-block alert-success fade in">
-                    <h4 class="alert-heading">Sua mensagem foi enviada!</h4>
-                    <p>O que vc quer fazer agora?</p>
-                    <a class="btn btn-success enviar-outra"> Continuar o envio</a>
-                    <a class="btn btn-success change-form" href="javascript:;"> Alterar novamente seu cadastro</a>
+                    <h4 class="alert-heading"></h4>
+                    <p>Houve algum erro na validação do seu e-mail</p>
                   </div>
                 </div>
                 <!-- /row11 -->
