@@ -38,7 +38,7 @@ body{padding:0!important;}
 .container .cr-topo{padding:15px; background:#FFF; min-height:23px;}
 .container .cr-topo h1{font-weight:normal;font-family:'TitilliumLtBold',Arial, Helvetica, sans-serif; font-size:26px; margin:0; padding:0; display:block; width:200px; float:left; color:#00bed5; letter-spacing: -0.04em;line-height:23px;}
 .container .cr-box-escolha{width:140px; position:relative;}
-.container .cr-box-escolha span{font-weight:normal;font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:11px; color:#dedede!important; text-transform: uppercase;}
+.container .cr-box-escolha span{font-weight:normal;font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:11px; color:#dedede; text-transform: uppercase;}
 .container .cr-box-escolha .cr-btn-radio{width:27px; height:25px; display:block; float:right; background:url(/portal/images/capaPrograma/culturabrasil/controleremoto/cr-btn-radios.jpg) no-repeat 0px 0px; position:absolute; top:0; right:0;}
 .container .cr-box-escolha .cr-btn-radio:hover,
 .container .cr-box-escolha .cr-btn-radio.ativo{background:url(/portal/images/capaPrograma/culturabrasil/controleremoto/cr-btn-radios.jpg) no-repeat 0px bottom;}
@@ -60,10 +60,11 @@ body{padding:0!important;}
 .container .cr-lista-a-seguir h4{font-weight:normal;font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; margin: 0;text-transform: uppercase;font-size: 13px;color: #707070;}
 .container .cr-lista-a-seguir .cr-linha{height:0; width:100%; border-top:#c6c6c6 1px solid; border-bottom: #FFFFFF solid 1px;}
 .container .cr-lista-a-seguir ul{padding:5px 0; margin:0;}
-.container .cr-lista-a-seguir ul li{font-weight:normal;list-style:none;font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:12px; color:#2d4244!important; overflow: hidden;}
+.container .cr-lista-a-seguir ul li{font-weight:normal;list-style:none;font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:12px; color:#2d4244; overflow: hidden;}
 .container .cr-lista-a-seguir ul li h5{float: left;margin: 0;padding: 2px 5px}
-.container .cr-lista-a-seguir .impar h5{color:#00bed5!important; background:#f7f7f7;}
-.container .cr-lista-a-seguir .hora{color:#929c9d!important; float:right; margin:0; padding: 2px 5px;}
+.container .cr-lista-a-seguir .par h5{color:#2d4244}
+.container .cr-lista-a-seguir .impar h5{color:#00bed5; background:#f7f7f7;}
+.container .cr-lista-a-seguir .hora{color:#929c9d; float:right; margin:0; padding: 2px 5px;}
 .container .cr-lista-a-seguir .cr-pgm-completa{font-weight:normal;font-family:'TitilliumBold', Arial, Helvetica, sans-serif; color:#929c9d; font-size: 11px; float:right;text-transform:uppercase;padding:5px;}
 .container .cr-problemas{font-weight:normal;font-family:'TitilliumBold', Arial, Helvetica, sans-serif; color:#929c9d; font-size: 11px; float:right;padding:5px;position: absolute;right: 19px;bottom: -9px;}
 .container .cr-banner {overflow: hidden;background: #FFFFFF;padding: 10px 20px;position:relative;}
