@@ -806,9 +806,6 @@ $(document).ready(function(){
                 <script>
                 
                 $(document).ready(function(){
-                  <?php if(isset($_GET['erro'])):?>
-                    $("#row1").hide();
-                  <?php endif;?>
                   var email = '';
                   $("#f4_cod_programa").find("option").attr("value", "--");
                   

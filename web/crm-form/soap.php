@@ -10,7 +10,9 @@ $client = new SoapClient("http://intranet3/crm_webservices/crm.asmx?WSDL");
 if(!isset($_REQUEST["step"]))
   $_REQUEST["step"] = 0;
 
-if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="")){
+if($_REQUEST["erro"]==1){
+  $script = "$(#row1).hide();";
+}elseif(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="")){
 
   //CHECK EMAIL
   $result = $client->valida_email(array('email'=>$_REQUEST["f1_email"]));
