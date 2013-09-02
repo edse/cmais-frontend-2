@@ -292,7 +292,9 @@
       </section>  
       <!-- /lista a seguir -->
       
-      
+      <section class="duvidas">
+        <a href="https://docs.google.com/forms/d/1CWq8uyNNxMQTUpAA5dNSK-PXj6kPoF_zJ-uCAIoFDok/viewform" class="cr-problemas" title="Está com problemas? Dê a sua opinião" target="_blank">Estamos fazendo atualizações no Controle Remoto.<br> Está com problemas? Dê a sua opinião!</a>
+      </section>      
       
       <!-- banner -->
       <section class="cr-banner">
@@ -313,7 +315,7 @@
            */
            ?>
            
-          <a href="https://docs.google.com/forms/d/1CWq8uyNNxMQTUpAA5dNSK-PXj6kPoF_zJ-uCAIoFDok/viewform" class="cr-problemas" title="Está com problemas? Dê a sua opinião" target="_blank">Está com problemas? Dê a sua opinião</a>
+          
         </div>
         
       </section>
@@ -323,6 +325,7 @@
     <!-- /container -->
     <script>
       //fade escolha uma rádio
+      /*
       $('.cr-box-escolha span').delay(10000).fadeOut("slow");
       
       //ativo menu radios
@@ -330,6 +333,7 @@
         $(this).toggleClass('ativo');
         $('.cr-radios').toggleClass('ativo');
       })
+      */
     </script>
   </body>
 </html>

@@ -313,6 +313,7 @@
     <!-- /container -->
     <script>
       //fade escolha uma rádio
+      /*
       $('.cr-box-escolha span').delay(10000).fadeOut("slow");
       
       //ativo menu radios
@@ -320,6 +321,7 @@
         $(this).toggleClass('ativo');
         $('.cr-radios').toggleClass('ativo');
       })
+      */
     </script>
   </body>
 </html>
