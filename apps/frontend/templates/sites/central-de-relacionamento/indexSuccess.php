@@ -790,7 +790,7 @@ $(document).ready(function(){
                 <?php endif; //if na row1?>
                 <?php if(isset($_GET["erro"])==1): ?>
                 <!-- row11 -->
-                <div class="row" id="row11" style="display:block">
+                <div class="row" id="row11" style="display:block; margin-top: 10px;">
                   <div class="page-header">
                     <h1>Erro</h1>
                     <p><span class="label label-success">Erro de validação</span></p>
