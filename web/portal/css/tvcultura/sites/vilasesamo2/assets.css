@@ -21,6 +21,15 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .relacionados .divisa { margin:0 auto; }
 #carrossel-interna .slider-mask-wrap { margin:0 auto; }
 #carrossel-interna { margin:20px auto 0; }
+#carrossel-interna .slider li { border-bottom:1px solid #7732e5;  background:#883feb; }
+#carrossel-interna .slider li a { color:#fff; text-transform:uppercase; }
+#carrossel-interna .slider li img { border:1px solid #7732e5; }
+#carrossel-interna .slider li.video { background:#883feb; }
+#carrossel-interna .slider li.jogo { background:#3aaaec; border-color:#0191fb; }
+#carrossel-interna .slider li.jogo img { border-color:#0191fb; }
+#carrossel-interna .slider li.atividade { background:#f5861f; border-color:#f07317; }
+#carrossel-interna .slider li.atividade img { border-color:#f07317; }
+#carrossel-interna .slider li .nome { padding:4%; display: block; }
 
 #content .pais { background:#feec3c; margin:0 auto !important; overflow:hidden; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 .pais .divisa { margin-bottom:0; }
@@ -89,8 +98,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 #content section.form p,
 #content section.form label,
 #content section.form h2 { color:#fff; }
-.form-horizontal .control-label { }
- 
+.form-horizontal .control-label {text-align:left; float:left;}
+.form-horizontal .controls { float: left;    margin-left: 0;    margin-right: 0;    width: 93%; }
+.form-horizontal .controls input {float: right;    margin: 0;    width: 95%; }
+.form-horizontal .estado .control-label { width:auto; }
+.form-horizontal .estado .controls { margin:0; }
+.form-horizontal .control-group { margin:0 0 2% 0; }
+.form-horizontal .control-group.idade  .controls { width: 43%; } 
+.form-horizontal .span2 { width:17%; float:right; }
+.form-horizontal .span8 { width: 81%; }
+.form-horizontal .span2 input { width: 85%; }
+.form-horizontal .span2 .controls { margin-right:0; }
 /* /form */
 
 /* ie */

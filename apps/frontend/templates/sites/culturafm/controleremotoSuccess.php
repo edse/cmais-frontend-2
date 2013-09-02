@@ -21,7 +21,7 @@
     GS_googleEnableAllServices();
     </script>
     <script type='text/javascript'>
-    GA_googleAddSlot("ca-pub-6681834746443470", "cultura-brasil");
+    GA_googleAddSlot("ca-pub-6681834746443470", "cultura-fm-controle-remoto");
     </script>
     <script type='text/javascript'>
     GA_googleFetchAds();
@@ -273,7 +273,7 @@
         <div class="cr-box-banner">
           
           <script type='text/javascript'>
-            GA_googleFillSlot("cultura-fm");
+            GA_googleFillSlot("cultura-fm-controle-remoto");
           </script>
           <a href="https://docs.google.com/forms/d/1CWq8uyNNxMQTUpAA5dNSK-PXj6kPoF_zJ-uCAIoFDok/viewform" class="cr-problemas" title="Está com problemas? Dê a sua opinião" target="_blank">Está com problemas? Dê a sua opinião</a>
         </div>

@@ -28,9 +28,9 @@ $(window).load(function() {
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
-<a href="http://culturafm.cmais.com.br/contato" class="position" title="Dê sua opinião">
+<!--a href="http://culturafm.cmais.com.br/contato" class="position" title="Dê sua opinião" style="display: none;">
   <div style="position: fixed;top:247px; left:0;" class="btn-feedback"></div>
-</a>
+</a-->
 
     <!-- CAPA SITE -->
     <div id="capa-site">
