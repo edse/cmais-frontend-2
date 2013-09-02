@@ -14,6 +14,8 @@
     
     <script type="text/javascript" src="http://jwpsrv.com/library/CSQ2LAE6EeOsRSIACusDuQ.js"></script>    
     
+    <?php
+    /*
     <!--DFP -->
     <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
     <script type='text/javascript'>
@@ -27,7 +29,32 @@
     GA_googleFetchAds();
     </script>
     <!-- /DFP -->
-
+    */
+    ?>
+    
+    <script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') + 
+    '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+    })();
+    </script>
+    
+    <script type='text/javascript'>
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/4079539/cultura-fm-controle-remoto', [320, 50], 'div-gpt-ad-1378134219040-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+    });
+    </script>
+    <!-- /DFP -->
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-22770265-1']);
@@ -271,10 +298,21 @@
       <section class="cr-banner">
         
         <div class="cr-box-banner">
-          
+          <!-- cultura-fm-controle-remoto -->
+          <div id='div-gpt-ad-1378134219040-0' style='width:320px; height:50px;'>
+            <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1378134219040-0'); });
+            </script>
+          </div>
+          <?php
+          /*
           <script type='text/javascript'>
             GA_googleFillSlot("cultura-fm-controle-remoto");
           </script>
+           * 
+           */
+           ?>
+           
           <a href="https://docs.google.com/forms/d/1CWq8uyNNxMQTUpAA5dNSK-PXj6kPoF_zJ-uCAIoFDok/viewform" class="cr-problemas" title="Está com problemas? Dê a sua opinião" target="_blank">Está com problemas? Dê a sua opinião</a>
         </div>
         
