@@ -56,37 +56,37 @@
         </div>
       </div>
       
-      <div class="control-group span6">
+      <div class="control-group span8">
         <label class="control-label sprite-ico-cidade" for="cidade"></label>
         <div class="controls">
           <input type="text" id="cidade" placeholder="Cidade" value="Cidade">
         </div>
       </div>
-      <div class="control-group estado span6">
+      <div class="control-group estado span2">
         <label class="control-label" for="estado"></label>
         <div class="controls">
           <input type="text" id="estado" placeholder="Estado" value="Estado">
         </div>
       </div>
-      <div class="control-group span6">
+      <div class="control-group span8">
         <label class="control-label sprite-ico-email" for="email"></label>
         <div class="controls">
           <input type="text" id="email" placeholder="Email" value="Email">
         </div>
       </div>
-       <div class="control-group span6">
+       <div class="control-group span2">
         <label class="control-label sprite-ico-anexo" for="anexo"></label>
         <div class="controls">
           <input type="text" id="anexo" placeholder="Anexo" value="Anexo">
         </div>
       </div>
-      <div class="control-group span6">
+      <div class="control-group span12">
         <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
         <div class="controls">
           <textarea id="mensagem" placeholder="Mensagem" value="Mensagem"></textarea>
         </div>
       </div>
-      <div class="control-group span6">
+      <div class="control-group span12">
         <label class="radio">
           <input type="radio" name="concorco" id="concorco" value="concorco" checked>
           Declaro que li e estou de acordo com os <a href="#">Termos e Condições</a>.
