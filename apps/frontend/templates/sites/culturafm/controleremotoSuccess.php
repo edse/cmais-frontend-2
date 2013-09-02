@@ -100,7 +100,7 @@
           $("#jquery_jplayer_2").jPlayer({
             ready: function () {
               $(this).jPlayer("setMedia", {
-                mp3: "http://midiaserver.tvcultura.com.br:8003/;stream/1",
+                mp3: "http://midiaserver.tvcultura.com.br:8003/;stream/1"
               }).jPlayer("play");
             },
             swfPath: "/portal/controle-remoto/swf",
