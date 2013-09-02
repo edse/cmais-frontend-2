@@ -775,12 +775,12 @@ $(document).ready(function(){
                 <!-- row10 -->
                 <div class="row" id="row10" style="display:block;margin-top:10px;" >
                   <div class="page-header">
-                    <h1>E-mail Cadastrado e validado</h1>
+                    <h1>Validação</h1>
                     <p><span class="label label-success">e-mail validado</span></p>
                   </div><!-- /.span -->
                   <div class="alert alert-block alert-success fade in">
                     <h4 class="alert-heading">Seu cadastro está validado!</h4>
-                    <p>O que vc quer fazer agora?</p>
+                    <p>O que você quer fazer agora?</p>
                     <a class="btn btn-success mensagem-validada">Enviar Mensagem</a>
                     <a class="btn btn-primary change-form">Preencher dados complementares</a>
                   </div>
