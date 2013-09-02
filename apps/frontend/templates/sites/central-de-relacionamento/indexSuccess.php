@@ -773,7 +773,7 @@ $(document).ready(function(){
                 <!-- /row9 -->
                 <?php if(isset($_GET["validacao"])==1):?>
                 <!-- row10 -->
-                <div class="row" id="row10" style="display:block" >
+                <div class="row" id="row10" style="display:block;margin-top:10px;" >
                   <div class="page-header">
                     <h1>E-mail Cadastrado e validado</h1>
                     <p><span class="label label-success">e-mail validado</span></p>
