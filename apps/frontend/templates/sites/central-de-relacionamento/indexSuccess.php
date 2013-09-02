@@ -77,9 +77,6 @@ $(document).ready(function(){
 
              <div id="email-central" class="fundo-cinza collapse in" style="overflow: hidden; clear: both;">
               <!--form envio-->
-              <?php
-              if(!isset($_GET['erro'])):
-              ?>
               <!-- row1 -->
               <div class="row" id="row1" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:none;";}else{echo"display:block;";}?>">
                 <div class="page-header">
@@ -105,9 +102,6 @@ $(document).ready(function(){
                 </form>
               </div>
               <!-- /row1 -->
-              <?php
-              endif;
-              ?>
               <!-- row2 -->
               <div class="row" id="row2">
                 <div class="page-header">
@@ -812,6 +806,9 @@ $(document).ready(function(){
                 <script>
                 
                 $(document).ready(function(){
+                  <?php if(isset($_GET['erro'])):?>
+                    $("#row1").hide();
+                  <?php endif;?>
                   var email = '';
                   $("#f4_cod_programa").find("option").attr("value", "--");
                   
