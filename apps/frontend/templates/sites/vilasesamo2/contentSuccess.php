@@ -74,7 +74,7 @@
           <input type="text" id="email" placeholder="Email" value="Email">
         </div>
       </div>
-       <div class="control-group span2">
+       <div class="control-group span2 idade">
         <label class="control-label sprite-ico-anexo" for="anexo"></label>
         <div class="controls">
           <input type="text" id="anexo" placeholder="Anexo" value="Anexo">
