@@ -78,7 +78,7 @@ $(document).ready(function(){
              <div id="email-central" class="fundo-cinza collapse in" style="overflow: hidden; clear: both;">
               <!--form envio-->
               <!-- row1 -->
-              <div class="row" id="row1" style="<?php if(isset($_GET['step'])&&$_GET['step']==1 || isset($_GET["erro"])){echo"display:none!important;";}else{echo"display:block;";}?>">
+              <div class="row" id="row1" style="<?php if(isset($_GET['step'])&&$_GET['step']==1 || isset($_GET['erro'])){echo"display:none;";}else{echo"display:block;";}?>">
                 <div class="page-header">
                   <h1>Email</h1>
                   <span class="label label-green">Verificação se o email está cadastrado</span> 
