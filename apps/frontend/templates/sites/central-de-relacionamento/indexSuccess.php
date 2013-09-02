@@ -781,8 +781,8 @@ $(document).ready(function(){
                   <div class="alert alert-block alert-success fade in">
                     <h4 class="alert-heading">Seu cadastro está validado!</h4>
                     <p>O que vc quer fazer agora?</p>
-                    <button type="submit" class="btn btn-success">Salvar Cadastro</button>
-                    <a type="submit" class="btn btn-primary">Cancelar</a>
+                    <button type="submit" class="btn btn-success">Enviar Mensagem</button>
+                    <a type="submit" class="btn btn-primary change-form">Preencher dados complementares</a>
                   </div>
                 </div>
                 <!-- /row10 -->
