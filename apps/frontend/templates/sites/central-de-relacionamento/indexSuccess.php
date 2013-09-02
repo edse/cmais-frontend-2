@@ -77,7 +77,7 @@ $(document).ready(function(){
 
              <div id="email-central" class="fundo-cinza collapse in" style="overflow: hidden; clear: both;">
               <!--form envio-->
-              <?php if(!isset($_GET["erro"])&&$_GET["erro"]!=1):?>
+              <?php if(!isset($_GET["erro"])&&isset($_GET["erro"])!=1):?>
               <!-- row1 -->
               <div class="row" id="row1" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:none;";}else{echo"display:block;";}?>">
                 <div class="page-header">
