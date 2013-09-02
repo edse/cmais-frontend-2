@@ -853,8 +853,7 @@ $(document).ready(function(){
                   $('.change-form').click(function(){
                     $('#f4_maisinfo .control-group').removeClass("success").removeClass("error");
                     $('#f4_maisinfo').find("label.error.valid").remove();
-                    $('#f4_maisinfo').hide();
-                    $('.salvar-alteracoes').hide();
+                    $('#f4_maisinfo, #row10, .salvar-alteracoes').hide();
                     $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                     $('.control-group.f4_mais').hide()
                     //$('#f4_mais').attr('checked','true');
