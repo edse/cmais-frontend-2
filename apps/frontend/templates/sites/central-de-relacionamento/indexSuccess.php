@@ -77,8 +77,9 @@ $(document).ready(function(){
 
              <div id="email-central" class="fundo-cinza collapse in" style="overflow: hidden; clear: both;">
               <!--form envio-->
+              <?php if(!isset($_GET["erro"])&& isset($_GET["erro"])!=1):?>
               <!-- row1 -->
-              <div class="row" id="row1" style="<?php if(isset($_GET['step'])&&$_GET['step']==1 || isset($_GET["erro"])){echo"display:none;";}else{echo"display:block;";}?>">
+              <div class="row" id="row1" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:none;";}else{echo"display:block;";}?>">
                 <div class="page-header">
                   <h1>Email</h1>
                   <span class="label label-green">Verificação se o email está cadastrado</span> 
@@ -707,7 +708,7 @@ $(document).ready(function(){
                   <div class="alert alert-block alert-success fade in">
                     <h4 class="alert-heading">Sua mensagem foi enviada!</h4>
                     <p>O que vc quer fazer agora?</p>
-                    <a class="btn btn-success enviar-outra"> Enviar outra mensagem</a>
+                    <a class="btn btn-success enviar-outra"> Enviar mensagem</a>
                     <a class="btn btn-success change-form" href="javascript:;"> Alterar seu cadastro</a>
                   </div>
                 </div>
@@ -772,30 +773,31 @@ $(document).ready(function(){
                 <!-- /row9 -->
                 <?php if(isset($_GET["validacao"])==1):?>
                 <!-- row10 -->
-                <div class="row" id="row10" style="display:block" >
+                <div class="row" id="row10" style="display:block;margin-top:10px;" >
                   <div class="page-header">
-                    <h1>E-mail Cadastrado e validado</h1>
+                    <h1>Validação</h1>
                     <p><span class="label label-success">e-mail validado</span></p>
                   </div><!-- /.span -->
                   <div class="alert alert-block alert-success fade in">
                     <h4 class="alert-heading">Seu cadastro está validado!</h4>
-                    <p>O que vc quer fazer agora?</p>
-                    <a class="btn btn-success enviar-outra"> Enviar uma mensagem</a>
-                    <a class="btn btn-success change-form" href="javascript:;"> Preencher os campos complementares de seu cadastro</a>
+                    <p>O que você quer fazer agora?</p>
+                    <a class="btn btn-success mensagem-validada">Enviar Mensagem</a>
+                    <a class="btn btn-primary change-form">Preencher dados complementares</a>
                   </div>
                 </div>
                 <!-- /row10 -->
                 <?php endif; ?>
+                <?php endif; //if na row1?>
                 <?php if(isset($_GET["erro"])==1): ?>
                 <!-- row11 -->
-                <div class="row" id="row11" style="display:block">
+                <div class="row" id="row11" style="display:block; margin-top: 10px;">
                   <div class="page-header">
                     <h1>Erro</h1>
                     <p><span class="label label-success">Erro de validação</span></p>
                   </div><!-- /.span -->
                   <div class="alert alert-block alert-success fade in">
                     <h4 class="alert-heading"></h4>
-                    <p>Houve algum erro na validação do seu e-mail</p>
+                    <p>Houve algum erro na validação do seu e-mail.</p>
                   </div>
                 </div>
                 <!-- /row11 -->
@@ -851,8 +853,7 @@ $(document).ready(function(){
                   $('.change-form').click(function(){
                     $('#f4_maisinfo .control-group').removeClass("success").removeClass("error");
                     $('#f4_maisinfo').find("label.error.valid").remove();
-                    $('#f4_maisinfo').hide();
-                    $('.salvar-alteracoes').hide();
+                    $('#f4_maisinfo, #row10, .salvar-alteracoes').hide();
                     $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                     $('.control-group.f4_mais').hide()
                     //$('#f4_mais').attr('checked','true');
