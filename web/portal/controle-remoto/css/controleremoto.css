@@ -35,7 +35,7 @@
 }
 body{padding:0!important;}
 .container{min-width:320px; max-width:400px;background: yellow;}
-.container .cr-topo{padding:15px; background:#FFF; min-height:23px;}
+.container .cr-topo{padding:15px; background:#FFF; min-height:23px;position:relative; z-index:10000;*z-index:10000;}
 .container .cr-topo h1{font-weight:normal;font-family:'TitilliumLtBold',Arial, Helvetica, sans-serif; font-size:26px; margin:0; padding:0; display:block; width:200px; float:left; color:#00bed5; letter-spacing: -0.04em;line-height:23px;}
 .container .cr-box-escolha{width:140px; position:relative;}
 .container .cr-box-escolha span{font-weight:normal;font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:11px; color:#dedede; text-transform: uppercase;}
