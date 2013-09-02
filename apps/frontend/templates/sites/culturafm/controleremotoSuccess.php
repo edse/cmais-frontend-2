@@ -299,7 +299,7 @@
         
         <div class="cr-box-banner">
           <!-- cultura-fm-controle-remoto -->
-          <div id='div-gpt-ad-1378134219040-0' style='width:320px; height:50px;'>
+          <div id='div-gpt-ad-1378134219040-0' style='width:320px; height:55px;'>
             <script type='text/javascript'>
             googletag.cmd.push(function() { googletag.display('div-gpt-ad-1378134219040-0'); });
             </script>
