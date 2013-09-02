@@ -782,7 +782,7 @@ $(document).ready(function(){
                     <h4 class="alert-heading">Seu cadastro está validado!</h4>
                     <p>O que vc quer fazer agora?</p>
                     <a class="btn btn-success enviar-outra"> Enviar uma mensagem</a>
-                    <a class="btn btn-success change-form" href="javascript:;"> Preencher os campos complementares de seu cadastro</a>
+                    <a class="btn btn-success change-form" href="javascript:;"> Preencher os campos complementares</a>
                   </div>
                 </div>
                 <!-- /row10 -->
@@ -797,7 +797,7 @@ $(document).ready(function(){
                   </div><!-- /.span -->
                   <div class="alert alert-block alert-success fade in">
                     <h4 class="alert-heading"></h4>
-                    <p>Houve algum erro na validação do seu e-mail</p>
+                    <p>Houve algum erro na validação do seu e-mail.</p>
                   </div>
                 </div>
                 <!-- /row11 -->
