@@ -451,13 +451,19 @@ class mainActions extends sfActions
               }
             }
             else{
-              if($parm2Object->type == "Programa Simples"){
-                //print "<br>parseWithObject >>".$param2." - ".$param3;
-                $this->getRequest()->setParameter('date', $param3);
-                $this->forwardObject($parm2Object);
-              }else{
-                $this->forward404();
+              if(get_class($parm2Object) == "Site") {
+                if($parm2Object->type == "Programa Simples"){
+                  $this->getRequest()->setParameter('date', $param3);
+                  $this->forwardObject($parm2Object);
+                }
               }
+              else if(get_class($parm2Object) == "Section") {
+                if($parm2Object->slug == "grade"){
+                  $this->getRequest()->setParameter('date', $param3);
+                  $this->forwardObject($parm2Object);
+                }
+              }
+              $this->forward404();
             }
           }
         }
