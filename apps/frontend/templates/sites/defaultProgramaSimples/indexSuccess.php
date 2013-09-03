@@ -35,9 +35,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
       function() { $(this).removeClass('ui-state-hover'); }
     );
   });
-</script>
 
-<script type="text/javascript">
   function redirect(d){
     self.location.href = '<?php echo $base_url ?>/'+d;
   }
