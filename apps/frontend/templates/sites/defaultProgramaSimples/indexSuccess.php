@@ -78,7 +78,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
         async: false,
         success: function(data){
           // add the month to the cache
-          cached_months[cached_months.length]= year_month ;
+          cached_months[cached_months.length] = year_month ;
           $.each(data.days, function(i, day){
             cached_days[cached_days.length]= year_month +"-"+ day.day +"";
           });
