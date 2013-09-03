@@ -144,7 +144,6 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
           
           <!-- estilo menu -->
           <div id="estilo-menu">
-            
             <!-- menu da busca -->
             <ul class="abas grid3">
               <li class="tvcultura<?php if($sChannel->slug == "tvcultura") echo ' ativo'; ?>"><a href="javascript: send('tvcultura','');" title="TV Cultura">TV Cultura</a><span class="decoracao"></span></li>
@@ -153,7 +152,6 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
               <li class="tvrtb<?php if($sChannel->slug == "tvratimbum") echo ' ativo'; ?> last"><a href="javascript: send('tvratimbum','');" title="TV R&aacute; Tim Bum">TV R&aacute; Tim Bum</a><span class="decoracao"></span></li>
             </ul>
             <!-- /menu da busca -->
-            
           </div>
           <!-- /estilo menu -->
           
