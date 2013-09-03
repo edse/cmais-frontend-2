@@ -1,3 +1,10 @@
+<?php
+$u = explode("/", $url);
+array_pop($u);
+$base_url = implode("/", $u);
+$nextDateUrl = $base_url."/".str_replace("/","-",$nextDate); 
+$prevDateUrl = $base_url."/".str_replace("/","-",$prevDate); 
+?>
 <script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
 <script src="/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/programas.css" type="text/css" />
@@ -17,7 +24,7 @@
     $('#datepicker').datepicker({
       beforeShowDay: dateLoading,
       onSelect: redirect,
-      dateFormat: 'yy/mm/dd',
+      dateFormat: 'yy-mm-dd',
       altFormat: 'yy-mm-dd',
       <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
       inline: true
@@ -28,11 +35,9 @@
       function() { $(this).removeClass('ui-state-hover'); }
     );
   });
-</script>
 
-<script type="text/javascript">
   function redirect(d){
-     self.location.href = '<?php echo $url ?>?d='+d;
+    self.location.href = '<?php echo $base_url ?>/'+d;
   }
 
   //cache the days and months
@@ -164,8 +169,8 @@
             <div class="menu-calendario">
               <div class="box-padrao grid1 carrossel-menu">
                 <div class="nav-menu2 topo">
-                  <a href="/<?php echo $site->getSlug()?>?d=<?php echo $nextDate ?>" class="btn proximo"></a>
-                  <a href="/<?php echo $site->getSlug()?>?d=<?php echo $prevDate ?>" class="btn anterior"></a>
+                  <a href="<?php echo $nextDateUrl ?>" class="btn proximo"></a>
+                  <a href="<?php echo $prevDateUrl ?>" class="btn anterior"></a>
                 </div>
                 <ul class="nav-conteudo conteudo">
                   <li class="filho ativo"><?php echo format_date($date, 'P') ?></li>

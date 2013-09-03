@@ -450,8 +450,21 @@ class mainActions extends sfActions
                   $this->forward404();
               }
             }
-            else
+            else{
+              if(get_class($parm2Object) == "Site") {
+                if($parm2Object->type == "Programa Simples"){
+                  $this->getRequest()->setParameter('date', $param3);
+                  $this->forwardObject($parm2Object);
+                }
+              }
+              else if(get_class($parm2Object) == "Section") {
+                if(in_array($parm2Object->slug, array("grade", "programacao"))){
+                  $this->getRequest()->setParameter('date', $param3);
+                  $this->forwardObject($parm2Object);
+                }
+              }
               $this->forward404();
+            }
           }
         }
         else{
