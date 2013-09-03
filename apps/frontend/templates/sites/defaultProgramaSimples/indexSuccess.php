@@ -39,8 +39,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
 
 <script type="text/javascript">
   function redirect(d){
-    //self.location.href = '<?php echo $url ?>/'+d;
-    self.location.href = '<?php echo $base_url ?>/'+d.replace("/","-");
+    self.location.href = '<?php echo $base_url ?>/'+d;
   }
 
   //cache the days and months
