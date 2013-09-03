@@ -378,9 +378,13 @@ class _sectionActions extends sfActions
               $s = 'culturafm';
             if($request->getParameter('d'))
               $this->date = $request->getParameter('d');
-            else
-              $this->date = date("Y/m/d");
-            
+            elseif($request->getParameter('date'))
+              $this->date = $request->getParameter('date');
+            else{
+              header("Location: ".$this->uri."/".date("Y-m-d"));
+              die();
+            }
+
             if($this->site->getSlug() == "tvratimbum")
               $s = 'tvratimbum';
             else if($this->site->getSlug() == "univesptv")
