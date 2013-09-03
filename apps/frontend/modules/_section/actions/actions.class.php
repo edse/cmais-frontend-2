@@ -245,9 +245,9 @@ class _sectionActions extends sfActions
               if(count($next)>0){
                 $d = explode(" ",$next[0]->date_start);
                 if ($d[1] < "04:59:59") { // apenas um primeiro teste. Vou melhorar isso (Cristovam)
-                  $d[0] = date("Y/m/d", mktime(0,0,0, substr($next[0]->date_start,5,2), substr($next[0]->date_start,8,2)-1 ,substr($next[0]->date_start,0,4)));
+                  $d[0] = date("Y-m-d", mktime(0,0,0, substr($next[0]->date_start,5,2), substr($next[0]->date_start,8,2)-1 ,substr($next[0]->date_start,0,4)));
                 } 
-                header("Location: ".$this->uri."/".str_replace("-","/",$d[0])."&1".time());
+                header("Location: ".$this->uri."/".$d[0]."&1".time());
                 die();
               }else{
                 $prev = Doctrine_Query::create()
@@ -260,7 +260,7 @@ class _sectionActions extends sfActions
                   ->execute();
                 if(count($prev)>0){
                   $d = explode(" ",$prev[0]->date_start);
-                  header("Location: ".$this->uri."/".str_replace("-","/",$d[0])."&2".time());
+                  header("Location: ".$this->uri."/".$d[0]."&2".time());
                   die();
                 }
               }
@@ -312,7 +312,7 @@ class _sectionActions extends sfActions
             $this->prevDate = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)-1 ,substr($this->date,0,4)));
           }
           else{
-            $date = date("Y/m/d");
+            $date = date("Y-m-d");
             header("Location: ".$this->uri."/".str_replace("-","/",$date));
             die();
           }
