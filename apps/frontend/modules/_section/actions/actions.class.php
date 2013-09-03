@@ -246,10 +246,10 @@ class _sectionActions extends sfActions
                 if ($d[1] < "04:59:59") { // apenas um primeiro teste. Vou melhorar isso (Cristovam)
                   $d[0] = date("Y-m-d", mktime(0,0,0, substr($next[0]->date_start,5,2), substr($next[0]->date_start,8,2)-1 ,substr($next[0]->date_start,0,4)));
                 }
-                if($this->section->Site->getSlug() != "culturabrasil" || $this->section->Site->getSlug() != "culturafm") {
+                //if($this->section->Site->getSlug() != "culturabrasil" || $this->section->Site->getSlug() != "culturafm") {
                   header("Location: ".$this->uri."/".$d[0]);
                   die();
-                }
+                //}
               }else{
                 $prev = Doctrine_Query::create()
                   ->select('s.*')
