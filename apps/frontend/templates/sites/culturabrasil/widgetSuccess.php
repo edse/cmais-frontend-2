@@ -1,4 +1,6 @@
 <html>
+  <head>
+  </head>  
   <body style="margin: 0; padding: 0;">
 <script src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
 <a id="ouca" class="ouca controle-remoto" href="javascript:;" style="width: 144px;height: 40px;display: block;overflow: hidden;float: left;">
