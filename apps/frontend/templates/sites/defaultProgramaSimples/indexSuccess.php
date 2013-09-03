@@ -1,6 +1,9 @@
 <?php
-$nextDateUrl = implode("/", array_pop(explode("/", $url)))."/".str_replace("/","-",$nextDate); 
-$prevDateUrl = implode("/", array_pop(explode("/", $url)))."/".str_replace("/","-",$prevDate); 
+$u = explode("/", $url);
+array_pop($u);
+$u = implode("/", $u);
+$nextDateUrl = $u."/".str_replace("/","-",$nextDate); 
+$prevDateUrl = $u."/".str_replace("/","-",$prevDate); 
 ?>
 <script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
 <script src="/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
