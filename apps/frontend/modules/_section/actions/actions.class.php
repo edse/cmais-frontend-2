@@ -247,7 +247,7 @@ class _sectionActions extends sfActions
                   $d[0] = date("Y-m-d", mktime(0,0,0, substr($next[0]->date_start,5,2), substr($next[0]->date_start,8,2)-1 ,substr($next[0]->date_start,0,4)));
                 }
                 if($this->section->Site->getSlug() != "culturabrasil" || $this->section->Site->getSlug() != "culturafm") {
-                  header("Location: ".$this->uri."/".$d[0]);
+                  //header("Location: ".$this->uri."/".$d[0]);
                   die();
                 }
               }else{
