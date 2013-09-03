@@ -71,9 +71,10 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
       // we will use the "async: false" because if we use async call, the datapickr will wait for the data to be loaded
 
       $.ajax({
-        url: "/ajax/getdays",
+        type : "GET",
+        dataType : "jsonp",
         data: opts,
-        dataType: "json",
+        url: "http://app.cmais.com.br/index.php/ajax/getdays",
         async: false,
         success: function(data){
           // add the month to the cache
@@ -83,6 +84,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
           });
         }
       });
+
     }
 
     i = 0;
