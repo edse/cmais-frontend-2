@@ -382,7 +382,7 @@ class _sectionActions extends sfActions
               $this->date = $request->getParameter('date');
             else{
               if($this->section->Site->getSlug() == "culturabrasil" || $this->section->Site->getSlug() == "culturafm") {
-                $this->date = date("yy/mm/dd");
+                $this->date = date("y/m/d");
               }
               else {
                 header("Location: ".$this->uri."/".date("Y-m-d"));
