@@ -248,7 +248,7 @@ class _sectionActions extends sfActions
                 }
                 if($this->section->Site->getSlug() != "culturabrasil" || $this->section->Site->getSlug() != "culturafm") {
                   //header("Location: ".$this->uri."/".$d[0]);
-                  die();
+                  //die();
                 }
               }else{
                 $prev = Doctrine_Query::create()
@@ -262,8 +262,8 @@ class _sectionActions extends sfActions
                 if(count($prev)>0){
                   $d = explode(" ",$prev[0]->date_start);
                   if($this->section->Site->getSlug() != "culturabrasil" || $this->section->Site->getSlug() != "culturafm") {
-                    header("Location: ".$this->uri."/".$d[0]);
-                    die();
+                   // header("Location: ".$this->uri."/".$d[0]);
+                    //die();
                   }
                 }
               }
