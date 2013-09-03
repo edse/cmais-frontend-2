@@ -32,8 +32,11 @@
 
 <script type="text/javascript">
   function redirect(d){
-     //self.location.href = '<?php echo $url ?>/'+d;
-     self.location.href = '<?php echo $site->retriveUrl() ?>/'+d;
+    //self.location.href = '<?php echo $url ?>/'+d;
+    <?php 
+    $u = implode("/", array_pop(explode("/", $url)));
+    ?>
+    self.location.href = '<?php echo implode("/", $u) ?>/'+d.replace("/","-");
   }
 
   //cache the days and months
