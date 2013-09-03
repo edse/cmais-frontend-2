@@ -94,7 +94,14 @@
                     </div>
                     <hr />
                   </div>
-                                    
+                  <div class="linha t1">
+                    <p>As gravações acontecerão no Centro Cultural São Paulo nos dias 02, 09, 23, 30 de outubro:<br>  
+ 
+                    Site: <a href="http://www.centrocultural.sp.gov.br/" target="_blank" title="Centro Cultural">http://www.centrocultural.sp.gov.br/</a><br>
+                    Endereço: R. Vergueiro, 1000 - Paraíso  São Paulo, 01504-000 – Perto da estação do Metrô.<br>
+                    Telefone: (11) 3397-4002
+                    </p>
+                  </div>                  
                   <form id="form-contato" name="form-contato" method="post" action="">
                   <!-- <input type="hidden" name="email" value="<?php echo $section->Site->getContactEmail() ?>"> -->
                   <div class="linha t1">
