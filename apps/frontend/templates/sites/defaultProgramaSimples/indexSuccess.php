@@ -32,7 +32,8 @@
 
 <script type="text/javascript">
   function redirect(d){
-     self.location.href = '<?php echo $url ?>/'+d;
+     //self.location.href = '<?php echo $url ?>/'+d;
+     self.location.href = '<?php echo $site->retriveUrl() ?>/'+d;
   }
 
   //cache the days and months
@@ -164,8 +165,8 @@
             <div class="menu-calendario">
               <div class="box-padrao grid1 carrossel-menu">
                 <div class="nav-menu2 topo">
-                  <a href="/<?php echo $site->getSlug()?>?d=<?php echo $nextDate ?>" class="btn proximo"></a>
-                  <a href="/<?php echo $site->getSlug()?>?d=<?php echo $prevDate ?>" class="btn anterior"></a>
+                  <a href="/<?php echo $site->getSlug()?>/<?php echo $nextDate ?>" class="btn proximo"></a>
+                  <a href="/<?php echo $site->getSlug()?>/<?php echo $prevDate ?>" class="btn anterior"></a>
                 </div>
                 <ul class="nav-conteudo conteudo">
                   <li class="filho ativo"><?php echo format_date($date, 'P') ?></li>
