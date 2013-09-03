@@ -1,5 +1,7 @@
+<html>
+  <body>
 <script src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-<a id="ouca" class="ouca controle-remoto" href="javascript:;">
+<a id="ouca" class="ouca controle-remoto" href="javascript:;" style="width: 146px;height: 40px;display: block;overflow: hidden;float: left;">
   <img src="/portal/images/capaPrograma/culturabrasil/oucaculturabrasil.jpg" alt="Ouça a rádio Cultura Brasil"/>
 </a>
 <script>
@@ -26,3 +28,5 @@ $(document).ready(function(){
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+</body>
+</html>
