@@ -450,8 +450,15 @@ class mainActions extends sfActions
                   $this->forward404();
               }
             }
-            else
-              $this->forward404();
+            else{
+              if($parm2Object->type == "Programa Simples"){
+                print "<br>parseWithObject >>".$param2." - ".$param3;
+                $this->getRequest()->setParameter('date', $param3);
+                $this->forwardObject($parm2Object);
+              }else{
+                $this->forward404();
+              }
+            }
           }
         }
         else{

@@ -181,8 +181,10 @@ class _sectionActions extends sfActions
       if(($this->section->Site->type == "Programa Simples")||($this->section->Site->type == "Programa TVRTB" && $this->section->getSlug() == "programacao")){
         if($this->section->getSlug() == "diario-de-programacao" || $this->section->getSlug() == "home" || $this->section->getSlug() == "homepage" || $this->section->getSlug() == "programacao"){
           if($request->getParameter('object')){
-            if($request->getParameter('d')){
+            if($request->getParameter('d') || $request->getParameter('date')){
               $this->date = $request->getParameter('d');
+              if($request->getParameter('date'))
+                $this->date = $request->getParameter('date');
               $start = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2) ,substr($this->date,0,4)));
               $end = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)+1 ,substr($this->date,0,4))); 
               $this->nextDate = $end;
