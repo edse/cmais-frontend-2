@@ -1,3 +1,7 @@
+<?php
+$nextDateUrl = implode("/", array_pop(explode("/", $url)))."/".str_replace("/","-",$nextDate); 
+$prevDateUrl = implode("/", array_pop(explode("/", $url)))."/".str_replace("/","-",$prevDate); 
+?>
 <script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
 <script src="/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/programas.css" type="text/css" />
@@ -168,8 +172,8 @@
             <div class="menu-calendario">
               <div class="box-padrao grid1 carrossel-menu">
                 <div class="nav-menu2 topo">
-                  <a href="/<?php echo $site->getSlug()?>/<?php echo $nextDate ?>" class="btn proximo"></a>
-                  <a href="/<?php echo $site->getSlug()?>/<?php echo $prevDate ?>" class="btn anterior"></a>
+                  <a href="<?php echo $nextDateUrl ?>" class="btn proximo"></a>
+                  <a href="<?php echo $prevDateUrl ?>" class="btn anterior"></a>
                 </div>
                 <ul class="nav-conteudo conteudo">
                   <li class="filho ativo"><?php echo format_date($date, 'P') ?></li>
