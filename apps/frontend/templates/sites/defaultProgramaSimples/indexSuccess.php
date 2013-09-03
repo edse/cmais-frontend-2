@@ -1,9 +1,9 @@
 <?php
 $u = explode("/", $url);
 array_pop($u);
-$u = implode("/", $u);
-$nextDateUrl = $u."/".str_replace("/","-",$nextDate); 
-$prevDateUrl = $u."/".str_replace("/","-",$prevDate); 
+$base_url = implode("/", $u);
+$nextDateUrl = $base_url."/".str_replace("/","-",$nextDate); 
+$prevDateUrl = $base_url."/".str_replace("/","-",$prevDate); 
 ?>
 <script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
 <script src="/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
@@ -40,10 +40,7 @@ $prevDateUrl = $u."/".str_replace("/","-",$prevDate);
 <script type="text/javascript">
   function redirect(d){
     //self.location.href = '<?php echo $url ?>/'+d;
-    <?php 
-    $u = implode("/", array_pop(explode("/", $url)));
-    ?>
-    self.location.href = '<?php echo implode("/", $u) ?>/'+d.replace("/","-");
+    self.location.href = '<?php echo $base_url ?>/'+d.replace("/","-");
   }
 
   //cache the days and months
