@@ -65,7 +65,7 @@
       <div class="page-header ao-vivo">
         <h4>Facebook</h4>
       </div>
-      <iframe width='490' height='340' frameborder='0' src='http://cmais.com.br/widget/culturabrasil/iframe-facebook.html' ></iframe>
+      <iframe width='490' height='340' frameborder='0' src='http://cmais.com.br/widgets/culturabrasil/iframe-facebook.html' ></iframe>
       
     </div>
   </div>
