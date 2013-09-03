@@ -241,7 +241,6 @@ class _sectionActions extends sfActions
                   ->limit(1)
                   ->execute();
               }
-
               if(count($next)>0){
                 $d = explode(" ",$next[0]->date_start);
                 if ($d[1] < "04:59:59") { // apenas um primeiro teste. Vou melhorar isso (Cristovam)
