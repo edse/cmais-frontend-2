@@ -95,9 +95,9 @@
                     <hr />
                   </div>
                   <div class="linha t1">
-                    <p>As gravações acontecerão no Centro Cultural São Paulo nos dias 02, 09, 23, 30 de outubro:<br>  
+                    <p>As gravações acontecerão no Centro Cultural São Paulo nos dias 02, 09, 23, 30 de outubro:<br><br>  
  
-                    Site: <a href="http://www.centrocultural.sp.gov.br/" target="_blank" title="Centro Cultural">http://www.centrocultural.sp.gov.br/</a><br>
+                    Site: <a href="http://www.centrocultural.sp.gov.br/" target="_blank" title="Centro Cultural" style="color: #ff6633; font-weight: bold;">http://www.centrocultural.sp.gov.br/</a><br>
                     Endereço: R. Vergueiro, 1000 - Paraíso  São Paulo, 01504-000 – Perto da estação do Metrô.<br>
                     Telefone: (11) 3397-4002
                     </p>
