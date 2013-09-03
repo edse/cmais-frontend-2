@@ -386,8 +386,8 @@ class _sectionActions extends sfActions
               $this->date = $request->getParameter('date');
             else{
               if($this->section->Site->getSlug() != "culturabrasil" || $this->section->Site->getSlug() != "culturafm") {
-                header("Location: ".$this->uri."/".date("Y-m-d"));
-                die();
+                //header("Location: ".$this->uri."/".date("Y-m-d"));
+                //die();
               }
             }
 
