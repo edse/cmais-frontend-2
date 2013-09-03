@@ -24,7 +24,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
     $('#datepicker').datepicker({
       beforeShowDay: dateLoading,
       onSelect: redirect,
-      dateFormat: 'yy/mm/dd',
+      dateFormat: 'yy-mm-dd',
       altFormat: 'yy-mm-dd',
       <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
       inline: true
@@ -35,9 +35,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
       function() { $(this).removeClass('ui-state-hover'); }
     );
   });
-</script>
 
-<script type="text/javascript">
   function redirect(d){
     self.location.href = '<?php echo $base_url ?>/'+d;
   }

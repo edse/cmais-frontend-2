@@ -1,3 +1,10 @@
+<?php
+$u = explode("/", $url);
+array_pop($u);
+$base_url = implode("/", $u);
+$nextDateUrl = $base_url."/".str_replace("/","-",$nextDate); 
+$prevDateUrl = $base_url."/".str_replace("/","-",$prevDate); 
+?>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
 <script src="http://cmais.com.br/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/grade.css" type="text/css" />
@@ -20,7 +27,7 @@
     $('#datepicker').datepicker({
       //beforeShowDay: dateLoading,
       onSelect: redirect,
-      dateFormat: 'yy/mm/dd',
+      dateFormat: 'yy-mm-dd',
       altFormat: 'yy-mm-dd',
       defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),
       inline: true
@@ -33,8 +40,8 @@
   });
 
   function redirect(d){
-  	//self.location.href = './programacao?c=<?php echo $sChannel->getSlug() ?>&d='+d;
-	send('univesptv',d);
+	  //send('univesptv',d);
+	  self.location.href = '<?php echo $base_url ?>/'+d;
   }
 
   //cache the days and months
@@ -158,6 +165,19 @@
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
           
+          <!-- estilo menu -->
+          <div id="estilo-menu">
+            <!-- menu da busca -->
+            <ul class="abas grid3">
+              <li class="tvcultura<?php if($sChannel->slug == "tvcultura") echo ' ativo'; ?>"><a href="http://tvcultura.cmais.com.br/grade" title="TV Cultura">TV Cultura</a><span class="decoracao"></span></li>
+              <li class="univesptv<?php if($sChannel->slug == "univesptv") echo ' ativo'; ?>"><a href="http://univesptv.cmais.com.br/programacao" title="Univesp TV">Univesp TV</a><span class="decoracao"></span></li>
+              <li class="multicultura<?php if($sChannel->slug == "multicultura") echo ' ativo'; ?>"><a href="http://multicultura.cmais.com.br/programacao" title="multiCULTURA">multiCULTURA</a><span class="decoracao"></span></li>
+              <li class="tvrtb<?php if($sChannel->slug == "tvratimbum") echo ' ativo'; ?> last"><a href="http://tvratimbum.cmais.com.br/grade" title="TV R&aacute; Tim Bum">TV R&aacute; Tim Bum</a><span class="decoracao"></span></li>
+            </ul>
+            <!-- /menu da busca -->
+          </div>
+          <!-- /estilo menu -->
+
           <!-- ESQUERDA -->
           <div id="esquerda" class="grid2">
             
@@ -165,8 +185,8 @@
             <div class="menu-calendario">
               <div class="box-padrao grid1 carrossel-menu">
                 <div class="nav-menu2 topo">
-                  <a href="/grade?c=<?php echo $sChannel->getSlug() ?>&d=<?php echo $nextDate ?>" class="btn proximo"></a>
-                  <a href="/grade?c=<?php echo $sChannel->getSlug() ?>&d=<?php echo $prevDate ?>" class="btn anterior" id="anterior"></a>
+                  <a href="<?php echo $nextDateUrl ?>" class="btn proximo"></a>
+                  <a href="<?php echo $prevDateUrl ?>" class="btn anterior"></a>
                 </div>
                 <ul class="nav-conteudo conteudo">
                   <li class="filho ativo"><?php echo format_date($date, 'P') ?></li>
