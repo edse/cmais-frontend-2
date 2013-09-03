@@ -169,10 +169,10 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
           <div id="estilo-menu">
             <!-- menu da busca -->
             <ul class="abas grid3">
-              <li class="tvcultura<?php if($sChannel->slug == "tvcultura") echo ' ativo'; ?>"><a href="javascript: send('tvcultura','');" title="TV Cultura">TV Cultura</a><span class="decoracao"></span></li>
-              <li class="univesptv<?php if($sChannel->slug == "univesptv") echo ' ativo'; ?>"><a href="javascript: send('univesptv','');" title="Univesp TV">Univesp TV</a><span class="decoracao"></span></li>
-              <li class="multicultura<?php if($sChannel->slug == "multicultura") echo ' ativo'; ?>"><a href="javascript: send('multicultura','');" title="multiCULTURA">multiCULTURA</a><span class="decoracao"></span></li>
-              <li class="tvrtb<?php if($sChannel->slug == "tvratimbum") echo ' ativo'; ?> last"><a href="javascript: send('tvratimbum','');" title="TV R&aacute; Tim Bum">TV R&aacute; Tim Bum</a><span class="decoracao"></span></li>
+              <li class="tvcultura<?php if($sChannel->slug == "tvcultura") echo ' ativo'; ?>"><a href="http://tvcultura.cmais.com.br/grade" title="TV Cultura">TV Cultura</a><span class="decoracao"></span></li>
+              <li class="univesptv<?php if($sChannel->slug == "univesptv") echo ' ativo'; ?>"><a href="http://univesptv.cmais.com.br/programacao" title="Univesp TV">Univesp TV</a><span class="decoracao"></span></li>
+              <li class="multicultura<?php if($sChannel->slug == "multicultura") echo ' ativo'; ?>"><a href="http://multicultura.cmais.com.br/programacao" title="multiCULTURA">multiCULTURA</a><span class="decoracao"></span></li>
+              <li class="tvrtb<?php if($sChannel->slug == "tvratimbum") echo ' ativo'; ?> last"><a href="http://tvratimbum.cmais.com.br/grade" title="TV R&aacute; Tim Bum">TV R&aacute; Tim Bum</a><span class="decoracao"></span></li>
             </ul>
             <!-- /menu da busca -->
           </div>
