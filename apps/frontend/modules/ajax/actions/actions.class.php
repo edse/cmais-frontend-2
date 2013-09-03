@@ -25,7 +25,7 @@ class ajaxActions extends sfActions
   public function executeGetdays(sfWebRequest $request)
   {
     $this->setLayout(false);
-    if($request->isXmlHttpRequest()){
+    //if($request->isXmlHttpRequest()){
       if($request->getParameter('section_id') > 0 || $request->getParameter('category_id') > 0 || $request->getParameter('channel_id') > 0 || $request->getParameter('program_id') > 0 || $request->getParameter('event') > 0){
         $year = $request->getParameter('year');
         $month = $request->getParameter('month');
@@ -179,7 +179,7 @@ class ajaxActions extends sfActions
           echo json_encode($output);
         }
       }
-    }
+    //}
     die();
   }
 
