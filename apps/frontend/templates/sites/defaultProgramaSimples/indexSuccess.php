@@ -17,9 +17,9 @@
     $('#datepicker').datepicker({
       beforeShowDay: dateLoading,
       onSelect: redirect,
-      dateFormat: 'yy-mm-dd',
+      dateFormat: 'yy/mm/dd',
       altFormat: 'yy-mm-dd',
-      <?php if($date): ?>defaultDate: new Date("<?php echo $date ?>"),<?php endif; ?>
+      <?php if($date): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
       inline: true
     });
     //hover states on the static widgets
