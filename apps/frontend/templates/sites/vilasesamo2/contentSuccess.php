@@ -6,6 +6,7 @@
 <script src="/portal/js/hammer.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
 <link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
+<script type="text/javascript" src="/portal/js/bootstrap/bootstrap-fileupload.js"></script>
 
 <script>
   $("body").addClass("interna");
@@ -105,7 +106,7 @@
        <div class="control-group span2 idade">
         <label class="control-label sprite-ico-anexo" for="anexo"></label>
         <div class="controls">
-          <input type="text" id="anexo" placeholder="Anexo" value="Anexo">
+          <input id="datafile" type="file" name="datafile" size="25">
         </div>
       </div>
       <div class="control-group span12 msg">
