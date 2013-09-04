@@ -96,6 +96,7 @@ $(document).ready(function(){
 });
 */
 //carrossel personagens home
+/*
 $('#carrossel-p').responsiveCarousel({
   arrowLeft: '.arrow-left span.personagens',
   arrowRight: '.arrow-right span.personagens',
@@ -111,7 +112,7 @@ $('#carrossel-p').responsiveCarousel({
   },
   step : -1
 });
-
+*/
 
 if(screen.width > 1024){
   $('#carrossel-p').mouseenter(function(){
