@@ -4,6 +4,7 @@
 <script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
 <script src="/portal/js/hammer.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
+<script type="text/javascript" src="/portal/js/jquery.broswer/jquery.broswer.min.js"></script>
 <link rel="stylesheet" href="/portal/js/layer-slider/model06/jquery.layerSlider.css">
 <link rel="stylesheet" href="/portal/js/layer-slider/model06/main.css">
 
