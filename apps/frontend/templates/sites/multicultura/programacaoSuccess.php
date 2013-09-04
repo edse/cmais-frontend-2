@@ -168,7 +168,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
           <!-- estilo menu -->
           <div id="estilo-menu">
             <!-- menu da busca -->
-            <ul class="abas grid3">
+            <ul class="abas grid3" style="margin-bottom: 35px;">
               <li class="tvcultura<?php if($sChannel->slug == "tvcultura") echo ' ativo'; ?>"><a href="http://tvcultura.cmais.com.br/grade" title="TV Cultura">TV Cultura</a><span class="decoracao"></span></li>
               <li class="univesptv<?php if($sChannel->slug == "univesptv") echo ' ativo'; ?>"><a href="http://univesptv.cmais.com.br/programacao" title="Univesp TV">Univesp TV</a><span class="decoracao"></span></li>
               <li class="multicultura<?php if($sChannel->slug == "multicultura") echo ' ativo'; ?>"><a href="http://multicultura.cmais.com.br/programacao" title="multiCULTURA">multiCULTURA</a><span class="decoracao"></span></li>
