@@ -113,9 +113,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .form-horizontal .span2 input { width: 75%; }
 .form-horizontal .span2 .controls { margin-right:0; }
 
-.form-horizontal .anexo .controls { overflow:hidden; width: 61%; }
+.form-horizontal .anexo .controls { overflow:hidden; width: 61% !important; }
 /*.form-horizontal .anexo input { overflow:hidden; margin-left: -37px; float:left; }*/
-.form-horizontal .anexo a { background:url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x; display: block; padding:2px 5px; color:#737373; text-transform:uppercase; }
+.form-horizontal .anexo a { background:url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x; display: block; padding:2px 5px; color:#737373; text-transform:uppercase; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
 /* /form */
 
 /* ie */
