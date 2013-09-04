@@ -1,3 +1,10 @@
+<?php
+$u = explode("/", $url);
+array_pop($u);
+$base_url = implode("/", $u);
+$nextDateUrl = $base_url."/".str_replace("/","-",$nextDate); 
+$prevDateUrl = $base_url."/".str_replace("/","-",$prevDate); 
+?>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
@@ -25,7 +32,7 @@
     $('#datepicker').datepicker({
       //beforeShowDay: dateLoading,
       onSelect: redirect,
-      dateFormat: 'yy/mm/dd',
+      dateFormat: 'yy-mm-dd',
       altFormat: 'yy-mm-dd',
       defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),
       inline: true
@@ -33,8 +40,8 @@
   });
 
   function redirect(d){
-    //self.location.href = '/grade?d='+d;
-    send('<?php echo $sChannel->getSlug() ?>',d);
+    //send('<?php echo $sChannel->getSlug() ?>',d);
+    self.location.href = '<?php echo $base_url ?>/'+d;
   }
 
   //cache the days and months
@@ -114,9 +121,9 @@
               <a href="" class="enunciado">Programação</a>
             </div>
             <div class="btn-episodio">
-              <span class="pontaBarra"><a href="/grade?d=<?php echo $prevDate ?>"><span class="setaEsquerda">Anterior</span></a></span>
+              <span class="pontaBarra"><a href="<?php echo $prevDateUrl ?>"><span class="setaEsquerda">Anterior</span></a></span>
               <span class="nome"><?php echo format_date($date, 'P') ?></span>
-              <span class="caudaBarra"><a href="/grade?d=<?php echo $nextDate ?>"><span class="setaDireita">Próximo</span></a></span>
+              <span class="caudaBarra"><a href="<?php echo $nextDateUrl ?>"><span class="setaDireita">Próximo</span></a></span>
             </div>
             <div id="accordion">
             <?php if(isset($schedules)): ?>
