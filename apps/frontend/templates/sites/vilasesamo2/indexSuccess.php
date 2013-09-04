@@ -11,7 +11,12 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
 
 <div id="content">
+  <script>
+    
+  </script>
+  <div id="content-top">
   
+  </div>  
   <!-- HEADER -->
   <?php
   /*
