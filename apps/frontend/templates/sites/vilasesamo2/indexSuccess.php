@@ -1,5 +1,5 @@
 <!--scripts e css banner-->
-<script type="text/javascript" src="/portal/js/layer-slider/jQuery.layerSlider.js"></script>
+<!--script type="text/javascript" src="/portal/js/layer-slider/jQuery.layerSlider.js"></script-->
 <script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
 <script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
 <script src="/portal/js/hammer.min.js" type="text/javascript"></script>
