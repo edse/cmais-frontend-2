@@ -80,7 +80,7 @@
           <input type="text" id="anexo" placeholder="Anexo" value="Anexo">
         </div>
       </div>
-      <div class="control-group span12">
+      <div class="control-group span12 msg">
         <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
         <div class="controls">
           <textarea id="mensagem" placeholder="Mensagem" value="Mensagem"></textarea>
