@@ -116,7 +116,7 @@
           <textarea id="mensagem" placeholder="Mensagem" value="Mensagem"></textarea>
         </div>
       </div>
-      <div class="control-group span12">
+      <div class="control-group span11">
         <label class="radio">
           <input type="radio" name="concorco" id="concorco" value="concorco" checked>
           Declaro que li e estou de acordo com os <a href="#">Termos e Condições</a>.
