@@ -114,6 +114,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .form-horizontal .span2 .controls { margin-right:0; }
 .form-horizontal .anexo .controls { overflow:hidden; width: 61%; }
 .form-horizontal .anexo input { overflow:hidden; margin-left: -37px; float:left; }
+.form-horizontal .anexo a { background:url(/portal/images/capaPrograma/vilasesamo2/bg-botao.jpg) repeat-x; color:#737373; text-transform:uppercase; }
 /* /form */
 
 /* ie */

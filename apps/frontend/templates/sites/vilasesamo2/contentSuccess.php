@@ -106,7 +106,8 @@
        <div class="control-group span2 idade anexo">
         <label class="control-label sprite-ico-anexo" for="anexo"></label>
         <div class="controls">
-          <input id="datafile" type="file" name="datafile" size="1">
+          <!--input id="datafile" type="file" name="datafile" size="1"-->
+          <a href="#" title="Anexar">Anexar</a>
         </div>
       </div>
       <div class="control-group span12 msg">
