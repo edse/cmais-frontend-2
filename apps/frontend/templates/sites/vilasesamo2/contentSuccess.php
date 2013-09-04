@@ -103,7 +103,7 @@
           <input type="text" id="email" placeholder="Email" value="Email">
         </div>
       </div>
-       <div class="control-group span2 idade">
+       <div class="control-group span2 idade anexo">
         <label class="control-label sprite-ico-anexo" for="anexo"></label>
         <div class="controls">
           <input id="datafile" type="file" name="datafile" size="1">

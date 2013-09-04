@@ -112,7 +112,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .form-horizontal .span8 { width: 81%; }
 .form-horizontal .span2 input { width: 75%; }
 .form-horizontal .span2 .controls { margin-right:0; }
-.form-horizontal .span2 #datafile { overflow:hidden; margin-left: -37px; }
+.form-horizontal .anexo .controls { overflow:hidden; }
+.form-horizontal .anexo input { overflow:hidden; margin-left: -37px; float:left; }
 /* /form */
 
 /* ie */
