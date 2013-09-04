@@ -96,7 +96,7 @@ $(document).ready(function(){
 */
 //carrossel personagens home
 alert($.os.name);
-alert($.broswer.name);
+alert($.browser.name);
 $('#carrossel-p').responsiveCarousel({
   arrowLeft: '.arrow-left span.personagens',
   arrowRight: '.arrow-right span.personagens',
