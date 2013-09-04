@@ -95,6 +95,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 
 /* form */
 #content section.form { background:#3aaaec; margin:0 auto; padding:20px; max-width:900px; }
+#content section.form .span4 { margin:0; float:right; width:300px; }
 #content section.form p,
 #content section.form label,
 #content section.form h2 { color:#fff; }
