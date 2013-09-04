@@ -11,8 +11,10 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
 
 <div id="content">
+  <div id="content-top"></div>  
   <!-- HEADER -->
   <?php
+  /*
   include_partial_from_folder('sites/vilasesamo2', 'global/mobile_detect'); 
   $detect = new Mobile_Detect(); 
   if ($detect->isTablet()) {
@@ -37,6 +39,7 @@
       include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal');  
  
     }
+   */
    ?>
   <!-- /HEADER -->
   
