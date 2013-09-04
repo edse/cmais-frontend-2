@@ -1,9 +1,9 @@
 <!--scripts e css banner-->
-<!--script type="text/javascript" src="/portal/js/layer-slider/jQuery.layerSlider.js"></script-->
-<!--script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script-->
+<script type="text/javascript" src="/portal/js/layer-slider/jQuery.layerSlider.js"></script>
+<script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
 <script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
 <script src="/portal/js/hammer.min.js" type="text/javascript"></script>
-<!--script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script-->
+<script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
 <link rel="stylesheet" href="/portal/js/layer-slider/model06/jquery.layerSlider.css">
 <link rel="stylesheet" href="/portal/js/layer-slider/model06/main.css">
 
@@ -11,10 +11,9 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
 
 <div id="content">
-  <div id="content-top"></div>  
+  <div id="content-top">teste</div>
   <!-- HEADER -->
   <?php
-  /*
   include_partial_from_folder('sites/vilasesamo2', 'global/mobile_detect'); 
   $detect = new Mobile_Detect(); 
   if ($detect->isTablet()) {
@@ -39,7 +38,6 @@
       include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal');  
  
     }
-   */
    ?>
   <!-- /HEADER -->
   
@@ -96,7 +94,6 @@ $(document).ready(function(){
 });
 */
 //carrossel personagens home
-/*
 $('#carrossel-p').responsiveCarousel({
   arrowLeft: '.arrow-left span.personagens',
   arrowRight: '.arrow-right span.personagens',
