@@ -10,6 +10,7 @@
 <link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
 
+<script type="text/javascript" src="/portal/js/jquery.broswer/jquery.browser.min.js"></script>
 <div id="content">
   <div id="content-top">teste</div>
   <!-- HEADER -->
@@ -94,6 +95,8 @@ $(document).ready(function(){
 });
 */
 //carrossel personagens home
+alert($.os.name);
+alert($.broswer.name);
 $('#carrossel-p').responsiveCarousel({
   arrowLeft: '.arrow-left span.personagens',
   arrowRight: '.arrow-right span.personagens',
