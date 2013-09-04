@@ -98,12 +98,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 #content section.form p,
 #content section.form label,
 #content section.form h2 { color:#fff; }
-.form-horizontal .control-label {text-align:left; float:left;}
-.form-horizontal .controls { float: left;    margin-left: 0;    margin-right: 0;    width: 93%; }
+.form-horizontal .control-label {text-align:left; float:left; width:40px !important;}
+.form-horizontal .controls textarea { width:99%; margin-left:1%; }
+.form-horizontal .controls { float: left;    margin-left: 0;    margin-right: 0;    width: 91%; }
 .form-horizontal .controls input {float: right;    margin: 0;    width: 95%; }
 .form-horizontal .estado .control-label { width:auto; }
+.form-horizontal .estado .controls,
+.form-horizontal .estado select { width:100%; }
 .form-horizontal .estado .controls { margin:0; }
-.form-horizontal .control-group { margin:0 0 2% 0; }
+.form-horizontal .control-group { margin:0 0 2% 0; min-height:50px; }
 .form-horizontal .control-group.idade  .controls { width: 55%; float:right; } 
 .form-horizontal .span2 { width:17%; float:right; }
 .form-horizontal .span8 { width: 81%; }

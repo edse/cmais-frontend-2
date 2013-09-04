@@ -6,6 +6,7 @@
 <script src="/portal/js/hammer.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
 <link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
+<script type="text/javascript" src="/portal/js/bootstrap/bootstrap-fileupload.js"></script>
 
 <script>
   $("body").addClass("interna");
@@ -63,9 +64,37 @@
         </div>
       </div>
       <div class="control-group estado span2">
-        <label class="control-label" for="estado"></label>
         <div class="controls">
-          <input type="text" id="estado" placeholder="Estado" value="Estado">
+          <select id="estado">
+            <option selected="selected" value="">UF</option>
+            <option value="Acre">AC</option>
+            <option value="Alagoas">AL</option>
+            <option value="Amazonas">AM</option>
+            <option value="Amapá">AP</option>
+            <option value="Bahia">BA</option>
+            <option value="Ceará">CE</option>
+            <option value="Distrito Federal">DF</option>
+            <option value="Espirito Santo">ES</option>
+            <option value="Goiás">GO</option>
+            <option value="Maranhão">MA</option>
+            <option value="Minas Gerais">MG</option>
+            <option value="Mato Grosso do Sul">MS</option>
+            <option value="Mato Grosso">MT</option>
+            <option value="Pará">PA</option>
+            <option value="Paraíba">PB</option>
+            <option value="Pernambuco">PE</option>
+            <option value="Piauí">PI</option>
+            <option value="Paraná">PR</option>
+            <option value="Rio de Janeiro">RJ</option>
+            <option value="Rio Grande do Norte">RN</option>
+            <option value="Rondônia">RO</option>
+            <option value="Roraima">RR</option>
+            <option value="Rio Grande do Sul">RS</option>
+            <option value="Santa Catarina">SC</option>
+            <option value="Sergipe">SE</option>
+            <option value="São Paulo">SP</option>
+            <option value="Tocantins">TO</option>
+          </select>
         </div>
       </div>
       <div class="control-group span8">
@@ -77,10 +106,10 @@
        <div class="control-group span2 idade">
         <label class="control-label sprite-ico-anexo" for="anexo"></label>
         <div class="controls">
-          <input type="text" id="anexo" placeholder="Anexo" value="Anexo">
+          <input id="datafile" type="file" name="datafile" size="25">
         </div>
       </div>
-      <div class="control-group span12">
+      <div class="control-group span12 msg">
         <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
         <div class="controls">
           <textarea id="mensagem" placeholder="Mensagem" value="Mensagem"></textarea>
