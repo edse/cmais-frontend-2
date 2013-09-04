@@ -13,7 +13,8 @@
 
 <div id="content">
   <script>
-    
+    alert($.browser.name)
+    alert($.os.name); 
   </script>
   <div id="content-top">
   
