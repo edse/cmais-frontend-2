@@ -112,7 +112,7 @@ $('#carrossel-p').responsiveCarousel({
   },
   step : -1
 });
-*/
+
 
 if(screen.width > 1024){
   $('#carrossel-p').mouseenter(function(){
