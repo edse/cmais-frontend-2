@@ -22,7 +22,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
     $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     // Datepicker
     $('#datepicker').datepicker({
-      //beforeShowDay: dateLoading,
+      beforeShowDay: dateLoading,
       onSelect: redirect,
       dateFormat: 'yy-mm-dd',
       altFormat: 'yy-mm-dd',
@@ -41,20 +41,41 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
   }
 
   //cache the days and months
-  var cached_days = [];
-  var cached_months = [];
+  window.cached_days = [];
+  window.cached_months = [];
+  
+  //  load the month via .ajax
+  <?php $aux = explode("/", str_replace("-","/",$date)); ?>
+  var year_month = ""+"<?php echo $aux[0]?>"+"-"+"<?php echo $aux[1]?>"+"";
+  var opts = "month=<?php echo $aux[1]?>";
+  opts = opts +"&year=<?php echo $aux[0]?>";
+  opts = opts +"&program_id=<?php echo $site->Program->id ?>";
+  $.ajax({
+    type : "GET",
+    dataType : "jsonp",
+    data: opts,
+    url: "http://app.cmais.com.br/index.php/ajax/getdays",
+    async: true,
+    success: function(data){
+      // add the month to the cache
+      window.cached_months.push(year_month);
+      $.each(data.data.days, function(i, day){
+        window.cached_days.push(year_month+"-"+day.day+"");
+      });
+    }
+  });
 
   function dateLoading(date) {
-    var year_month = ""+ (date.getFullYear()) +"-"+ (date.getMonth()+1) +"";
-    var year_month_day = ""+ year_month+"-"+ date.getDate()+"";
+    var year_month = ""+ (date.getFullYear()) +"-"+ ('0' + (date.getMonth()+1)).slice(-2) +"";
+    var year_month_day = ""+ year_month+"-"+ ('0' + date.getDate()).slice(-2)+"";
     var opts = "";
     var i = 0;
     var ret = false;
     i = 0;
     ret = false;
 
-    for (i in cached_months) {
-      if (cached_months[i] == year_month){
+    for (i in window.cached_months) {
+      if (window.cached_months[i] == year_month){
         // if found the month in the cache
         ret = true;
         break;
@@ -64,27 +85,24 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
     // check if the month was not cached 
     if (ret == false) {
       //  load the month via .ajax
-      opts= "month="+ (date.getMonth()+1);
+      opts= "month="+ ('0' + (date.getMonth()+1)).slice(-2);
       opts=opts +"&year="+ (date.getFullYear());
       opts=opts +"&program_id=<?php echo $site->Program->id ?>";
-      // opts=opts +"&day="+ (date.getDate());
       // we will use the "async: false" because if we use async call, the datapickr will wait for the data to be loaded
-
       $.ajax({
         type : "GET",
         dataType : "jsonp",
         data: opts,
         url: "http://app.cmais.com.br/index.php/ajax/getdays",
-        async: false,
+        async: true,
         success: function(data){
           // add the month to the cache
-          cached_months[cached_months.length] = year_month ;
-          $.each(data.days, function(i, day){
-            cached_days[cached_days.length]= year_month +"-"+ day.day +"";
+          window.cached_months[window.cached_months.length] = year_month ;
+          $.each(data.data.days, function(i, day){
+            window.cached_days[window.cached_days.length]= year_month +"-"+ day.day +"";
           });
         }
       });
-
     }
 
     i = 0;
@@ -92,8 +110,8 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
 
     // check if date from datapicker is in the cache otherwise return false
     // the .ajax returns only days that exists
-    for (i in cached_days) {
-      if (year_month_day == cached_days[i]) {
+    for (i in window.cached_days) {
+      if (year_month_day == window.cached_days[i]) {
         ret = true;
       }
     }
