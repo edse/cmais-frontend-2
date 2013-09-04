@@ -255,7 +255,7 @@ $assets = $pager->getResults();
     </div>
     <?php endif; ?>
   </div>
-  <!-- /row--> 
+  <!-- /rows--> 
   <?php endif; ?>
  
   <!--row-->
