@@ -127,7 +127,7 @@ class _sectionActions extends sfActions
       if($this->site->getSlug() == "culturabrasil" || $this->site->Program->Channel->getSlug() == "culturabrasil" || $this->site->getSlug() == "especiais-1"){
         $this->setLayout('culturabrasil');
       } 
-      if( ($this->site->getSlug() == "culturabrasil" && $this->section->getSlug()=="controleremoto") || ($this->section->Site->getSlug()=="culturabrasil" && $this->section->getSlug()=="widget") ){
+      if( ($this->site->getSlug() == "culturabrasil" && $this->section->getSlug()=="controleremoto") || ($this->section->Site->getSlug()=="culturabrasil" && $this->section->getSlug()=="widget")  || ($this->section->Site->getSlug()=="culturafm" && $this->section->getSlug()=="widget") ){
         $this->setLayout(false);
       }      
       if($this->site->getSlug() == "culturafm" && $this->section->getSlug()=="controleremoto"){
@@ -374,7 +374,7 @@ class _sectionActions extends sfActions
               $s = 'culturabrasil';
             if($this->section->Site->getSlug() == "culturafm" && $this->section->slug == "controleremoto")
               $s = 'culturafm';
-            if($this->section->slug == "guia-do-ouvinte") {
+            if($this->section->slug == "guia-do-ouvinte")
               $s = 'culturafm';
             if($request->getParameter('d'))
               $this->date = $request->getParameter('d');
@@ -382,7 +382,7 @@ class _sectionActions extends sfActions
               $this->date = $request->getParameter('date');
             else{
               if($this->section->Site->getSlug() == "culturabrasil" || $this->section->Site->getSlug() == "culturafm") {
-                $this->date = date("yy/mm/dd");
+                $this->date = date("Y-m-d");
               }
               else {
                 header("Location: ".$this->uri."/".date("Y-m-d"));
