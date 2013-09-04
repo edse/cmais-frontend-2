@@ -65,7 +65,7 @@
       <div class="control-group estado span2">
         <div class="controls">
           <select id="estado">
-            <option selected="selected" value="">--</option>
+            <option selected="selected" value="">UF</option>
             <option value="Acre">AC</option>
             <option value="Alagoas">AL</option>
             <option value="Amazonas">AM</option>
