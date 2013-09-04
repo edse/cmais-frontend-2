@@ -12,7 +12,10 @@
 
 <script type="text/javascript" src="/portal/js/jquery.broswer/jquery.browser.min.js"></script>
 <div id="content">
-  <div id="content-top">teste</div>
+  <script>
+    console.log(navigator);
+  </script>
+  <div id="content-top"></div>
   <!-- HEADER -->
   <?php
   include_partial_from_folder('sites/vilasesamo2', 'global/mobile_detect'); 
