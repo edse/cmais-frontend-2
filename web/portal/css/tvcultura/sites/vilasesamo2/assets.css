@@ -94,12 +94,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 /*.pais { position:absolute; right:10px; top:-10px; }*/
 
 /* form */
-#content section.form { background:#3aaaec; margin:0 auto; padding:20px; max-width:900px; }
-#content section.form .span8 { width: 64%; }
-#content section.form .span4 { margin:0 !important; float:right; width:300px; }
-#content section.form p,
-#content section.form label,
-#content section.form h2 { color:#fff; }
+section.form { background:#3aaaec; margin:0 auto; padding:20px; max-width:900px; }
+section.form .span8 { width: 64%; }
+section.form .span4 { margin:0 !important; float:right; width:300px; }
+section.form p,
+section.form label,
+section.form h2 { color:#fff; }
 .form-horizontal .control-label {text-align:left; float:left; width:40px !important;}
 .form-horizontal .controls textarea { width:99%; margin-left:1%; height:80px; }
 
