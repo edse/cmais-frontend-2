@@ -1,5 +1,11 @@
 <?php use_helper('I18N', 'Date') ?>
-
+<?php
+$u = explode("/", $url);
+array_pop($u);
+$base_url = implode("/", $u);
+$nextDateUrl = $base_url."/".str_replace("/","-",$nextDate); 
+$prevDateUrl = $base_url."/".str_replace("/","-",$prevDate); 
+?>
 <!-- Le styles--> 
 <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -23,11 +29,11 @@
       <!-- titulo -->
       <h1><?php echo $section->getTitle() ?></h1>
       <div>
-        <a href="javascript: send('<?php echo $sChannel->getSlug() ?>','<?php echo $prevDate ?>');" class="data-btn" title="anterior">
+        <a href="<?php echo $prevDateUrl ?>" class="data-btn" title="anterior">
           <i class="seta-grade esquerda"></i>
         </a>
         <p class="data-grade" ><?php echo format_date($date, 'P') ?></p>
-        <a href="javascript: send('<?php echo $sChannel->getSlug() ?>','<?php echo $nextDate ?>');" class="data-btn" title="próximo">
+        <a href="<?php echo $nextDateUrl ?>" class="data-btn" title="próximo">
           <i class="seta-grade direita"></i>
         </a>
       </div>
@@ -77,7 +83,7 @@
               <div class="accordion-inner">
                 <p><?php echo $d->retriveTitle() ?><br><br>
                 <?php echo $d->retriveDescription() ?></p>
-                <a href="<?php if ($d->getSlug() != "programacao-musical") echo $d->retriveUrl() ?>" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
+                <a href="<?php if ($d->Program->getSlug() != "programacao-musical") echo $d->retriveUrl() ?>" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
                 <a href="#" class="btn-body controle-remoto" title="">ouça ao vivo pela web<i class="borda-titulo borda-grade"></i></a>
               </div>
             </div>
@@ -141,7 +147,7 @@
     $('#datepicker').datepicker({
       //beforeShowDay: dateLoading,
       onSelect: redirect,
-      dateFormat: 'yy/mm/dd',
+      dateFormat: 'yy-mm-dd',
       altFormat: 'yy-mm-dd',
       defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),
       inline: true
@@ -154,8 +160,8 @@
   });
 
   function redirect(d){
-    //self.location.href = './grade?c=<?php echo $sChannel->getSlug() ?>&d='+d;
-    send('<?php echo $sChannel->getSlug() ?>',d);
+    //send('<?php echo $sChannel->getSlug() ?>',d);
+    self.location.href = '<?php echo $base_url ?>/'+d;
   }
 
   //cache the days and months
@@ -251,7 +257,3 @@ $('.controle-remoto').click(function(){
   }
 });
 </script>
-
-
-  
-
