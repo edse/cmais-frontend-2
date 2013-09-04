@@ -29,11 +29,11 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
       <!-- titulo -->
       <h1><?php echo $section->getTitle() ?></h1>
       <div>
-        <a href="<?php echo $nextDateUrl ?>" class="data-btn" title="anterior">
+        <a href="<?php echo $prevDateUrl ?>" class="data-btn" title="anterior">
           <i class="seta-grade esquerda"></i>
         </a>
         <p class="data-grade" ><?php echo format_date($date, 'P') ?></p>
-        <a href="<?php echo $prevDateUrl ?>" class="data-btn" title="próximo">
+        <a href="<?php echo $nextDateUrl ?>" class="data-btn" title="próximo">
           <i class="seta-grade direita"></i>
         </a>
       </div>
