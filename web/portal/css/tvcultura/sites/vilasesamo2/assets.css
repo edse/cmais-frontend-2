@@ -102,6 +102,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .form-horizontal .controls { float: left;    margin-left: 0;    margin-right: 0;    width: 93%; }
 .form-horizontal .controls input {float: right;    margin: 0;    width: 95%; }
 .form-horizontal .estado .control-label { width:auto; }
+.form-horizontal .estado .controls,
 .form-horizontal .estado select { width:100%; }
 .form-horizontal .estado .controls { margin:0; }
 .form-horizontal .control-group { margin:0 0 2% 0; min-height:50px; }
