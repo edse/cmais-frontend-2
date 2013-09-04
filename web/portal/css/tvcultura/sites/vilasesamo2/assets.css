@@ -102,6 +102,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .form-horizontal .controls textarea { width:99%; margin-left:1%; }
 .form-horizontal .controls { float: left;    margin-left: 0;    margin-right: 0;    width: 91%; }
 .form-horizontal .controls input {float: right;    margin: 0;    width: 95%; }
+.form-horizontal .controls input,
+.form-horizontal .controls select,
+.form-horizontal .controls a  { height:26px; line-height:26px; }
 .form-horizontal .estado .control-label { width:auto; }
 .form-horizontal .estado .controls,
 .form-horizontal .estado select { width:100%; }
