@@ -77,8 +77,8 @@
               <div class="accordion-inner">
                 <p><?php echo $d->retriveTitle() ?><br><br>
                 <?php echo $d->retriveDescription() ?></p>
-                <a href="<?php echo $d->retriveUrl() ?>" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
-                <a href="#" class="btn-body" title="">ouça ao vivo pela web<i class="borda-titulo borda-grade"></i></a>
+                <a href="<?php if ($d->Program->getSlug() != "programacao-musical") echo $d->retriveUrl() ?>" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
+                <a href="#" class="btn-body controle-remoto" title="">ouça ao vivo pela web<i class="borda-titulo borda-grade"></i></a>
               </div>
             </div>
             <!--corpo-->
@@ -241,6 +241,17 @@
     $("#send").submit();
   }
 </script>
+<script>
+var controle = null;
+$('.controle-remoto').click(function(){
+  if(controle == null || controle.closed){
+    controle = window.open('http://culturabrasil.cmais.com.br/controleremoto','controle','width=400,height=640,scrollbars=no');
+  } else {
+    controle.focus();
+  }
+});
+</script>
+
 
   
 

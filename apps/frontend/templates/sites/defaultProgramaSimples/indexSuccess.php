@@ -22,7 +22,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
     $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     // Datepicker
     $('#datepicker').datepicker({
-      beforeShowDay: dateLoading,
+      //beforeShowDay: dateLoading,
       onSelect: redirect,
       dateFormat: 'yy-mm-dd',
       altFormat: 'yy-mm-dd',
@@ -44,7 +44,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
   var cached_days = [];
   var cached_months = [];
 
-  function dateLoading(date) { 
+  function dateLoading(date) {
     var year_month = ""+ (date.getFullYear()) +"-"+ (date.getMonth()+1) +"";
     var year_month_day = ""+ year_month+"-"+ date.getDate()+"";
     var opts = "";
