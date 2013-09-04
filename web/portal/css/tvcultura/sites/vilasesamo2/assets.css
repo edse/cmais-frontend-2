@@ -94,12 +94,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 /*.pais { position:absolute; right:10px; top:-10px; }*/
 
 /* form */
-section.form { background:#3aaaec; margin:0 auto; padding:20px; max-width:900px; }
-section.form .span8 { width: 64%; }
-section.form .span4 { margin:0 !important; float:right; width:300px; }
-section.form p,
-section.form label,
-section.form h2 { color:#fff; }
+#content section.form { background:#3aaaec; margin:0 auto; padding:20px; max-width:900px; }
+#content section.form .span8 { width: 64%; }
+#content section.form .span4 { margin:0 !important; float:right; width:300px; }
+#content section.form p,
+#content section.form label,
+#content section.form h2 { color:#fff; }
 .form-horizontal .control-label {text-align:left; float:left; width:40px !important;}
 .form-horizontal .controls textarea { width:99%; margin-left:1%; height:80px; }
 
@@ -115,7 +115,7 @@ section.form h2 { color:#fff; }
 .form-horizontal .control-group { margin:0 0 2% 0; min-height:50px; }
 .form-horizontal .control-group.idade  .controls { width: 55%; float:right; } 
 .form-horizontal .span2 { width:17%; float:right; }
-.form-horizontal .span8 { width: 81%; }
+#content .form-horizontal .span8 { width: 81%; }
 .form-horizontal .span2 input { width: 75%; }
 .form-horizontal .span2 .controls { margin-right:0; }
 .form-horizontal .anexo .controls { overflow:hidden; width: 61% !important; }
