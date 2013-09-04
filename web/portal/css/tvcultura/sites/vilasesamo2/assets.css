@@ -99,12 +99,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 #content section.form label,
 #content section.form h2 { color:#fff; }
 .form-horizontal .control-label {text-align:left; float:left; width:40px !important;}
-.form-horizontal .controls textarea { width:99%; margin-left:1%; }
+.form-horizontal .controls textarea { width:99%; margin-left:1%; height:80px; }
+
 .form-horizontal .controls { float: left;    margin-left: 0;    margin-right: 0;    width: 91%; }
 .form-horizontal .controls input {float: right;    margin: 0;    width: 95%; }
+.form-horizontal .controls input,
+.form-horizontal .controls a  { height:26px; line-height:26px; display: block; }
 .form-horizontal .estado .control-label { width:auto; }
 .form-horizontal .estado .controls,
 .form-horizontal .estado select { width:100%; }
+.form-horizontal .estado select { height:36px; line-height:36px; }
 .form-horizontal .estado .controls { margin:0; }
 .form-horizontal .control-group { margin:0 0 2% 0; min-height:50px; }
 .form-horizontal .control-group.idade  .controls { width: 55%; float:right; } 
@@ -112,6 +116,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .form-horizontal .span8 { width: 81%; }
 .form-horizontal .span2 input { width: 75%; }
 .form-horizontal .span2 .controls { margin-right:0; }
+.form-horizontal .anexo .controls { overflow:hidden; width: 61% !important; }
+/*.form-horizontal .anexo input { overflow:hidden; margin-left: -37px; float:left; }*/
+.form-horizontal .anexo a { background:url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x; display: block; padding:2px 5px; color:#737373; text-transform:uppercase; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.form-horizontal .control-label.sprite-ico-email, 
+.sprite-ico-email { margin-top:4px; }
 /* /form */
 
 /* ie */
