@@ -458,7 +458,7 @@ class mainActions extends sfActions
                 }
               }
               else if(get_class($parm2Object) == "Section") {
-                if(in_array($parm2Object->slug, array("grade", "programacao"))){
+                if(in_array($parm2Object->slug, array("grade", "programacao", "guia-do-ouvinte"))){
                   $this->getRequest()->setParameter('date', $param3);
                   $this->forwardObject($parm2Object);
                 }
