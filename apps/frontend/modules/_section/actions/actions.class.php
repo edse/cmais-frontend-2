@@ -127,7 +127,7 @@ class _sectionActions extends sfActions
       if($this->site->getSlug() == "culturabrasil" || $this->site->Program->Channel->getSlug() == "culturabrasil" || $this->site->getSlug() == "especiais-1"){
         $this->setLayout('culturabrasil');
       } 
-      if( ($this->site->getSlug() == "culturabrasil" && $this->section->getSlug()=="controleremoto") || ($this->section->Site->getSlug()=="culturabrasil" && $this->section->getSlug()=="widget") ){
+      if( ($this->site->getSlug() == "culturabrasil" && $this->section->getSlug()=="controleremoto") || ($this->section->Site->getSlug()=="culturabrasil" && $this->section->getSlug()=="widget")  || ($this->section->Site->getSlug()=="culturafm" && $this->section->getSlug()=="widget") ){
         $this->setLayout(false);
       }      
       if($this->site->getSlug() == "culturafm" && $this->section->getSlug()=="controleremoto"){
