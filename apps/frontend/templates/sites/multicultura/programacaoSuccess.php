@@ -185,8 +185,8 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
             <div class="menu-calendario">
               <div class="box-padrao grid1 carrossel-menu">
                 <div class="nav-menu2 topo">
-                  <a href="javascript: send('<?php echo $sChannel->getSlug() ?>','<?php echo $nextDate ?>');" class="btn proximo"></a>
-                  <a href="javascript: send('<?php echo $sChannel->getSlug() ?>','<?php echo $prevDate ?>');" class="btn anterior" id="anterior"></a>
+                  <a href="<?php echo $nextDateUrl ?>" class="btn proximo"></a>
+                  <a href="<?php echo $prevDateUrl ?>" class="btn anterior" id="anterior"></a>
                 </div>
                 <ul class="nav-conteudo conteudo">
                   <li class="filho ativo"><?php echo format_date($date, 'P') ?></li>

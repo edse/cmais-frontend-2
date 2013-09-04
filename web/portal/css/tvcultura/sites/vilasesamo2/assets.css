@@ -94,7 +94,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 /*.pais { position:absolute; right:10px; top:-10px; }*/
 
 /* form */
-#content section.form { background:#3aaaec; margin:0 auto; padding:20px 10px; max-width:920px; }
+#content section.form { background:#3aaaec; margin:0 auto; padding:20px; max-width:900px; }
+#content section.form .span8 { width: 64%; }
+#content section.form .span4 { margin:0 !important; float:right; width:300px; }
 #content section.form p,
 #content section.form label,
 #content section.form h2 { color:#fff; }
@@ -113,14 +115,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .form-horizontal .control-group { margin:0 0 2% 0; min-height:50px; }
 .form-horizontal .control-group.idade  .controls { width: 55%; float:right; } 
 .form-horizontal .span2 { width:17%; float:right; }
-.form-horizontal .span8 { width: 81%; }
+#content section.form .form-horizontal .span8 { width: 81%; }
 .form-horizontal .span2 input { width: 75%; }
 .form-horizontal .span2 .controls { margin-right:0; }
 .form-horizontal .anexo .controls { overflow:hidden; width: 61% !important; }
 /*.form-horizontal .anexo input { overflow:hidden; margin-left: -37px; float:left; }*/
-.form-horizontal .anexo a { background:url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x; display: block; padding:2px 5px; color:#737373; text-transform:uppercase; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.form-horizontal .span11 .btn,
+.form-horizontal .anexo a { height:36px; line-height:36px; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x; display: block; padding:0 5px; color:#737373; text-transform:uppercase; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
 .form-horizontal .control-label.sprite-ico-email, 
-.sprite-ico-email { margin-top:4px; }
+.form-horizontal .sprite-ico-email { margin-top:4px; }
+.form-horizontal .sprite-ico-anexo { width:28px !important; }
+.form-horizontal .anexo .controls { width:64% !important; }
+.form-horizontal .span11 { float:right; }
+.form-horizontal .span11 a { color:#fffb49;}
+.form-horizontal .span11 .btn { width:100%; border:none; box-shadow:none; text-shadow:none; }
 /* /form */
 
 /* ie */

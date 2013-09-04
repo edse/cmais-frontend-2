@@ -60,7 +60,7 @@ and (max-width : 1224px)
 .row-fluid.destaques .span8 { margin-left:1.5%; margin-bottom:1.5%; overflow:hidden; }
 .navbar-inverse .navbar-inner.topo-cmais { display:none !important; }
 .navbar-inverse .navbar-inner.topo-vila { margin-top:0; }
-.header-bar { margin-top:51px; }
+/*.header-bar { margin-top:51px; }*/
 .row-fluid .span8 { width:100%; }
 .interna #content { margin-top:141px; margin-bottom:141px; padding:0 2%; }
 .navbar .btn-navbar { display:none; }

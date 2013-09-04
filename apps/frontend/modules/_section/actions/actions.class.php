@@ -215,6 +215,8 @@ class _sectionActions extends sfActions
             }
             else{
               $this->date = date("Y-m-d");
+              header("Location: ".$this->uri."/".$this->date);
+              die();
               $start = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2) ,substr($this->date,0,4)));
               $end = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)+1 ,substr($this->date,0,4))); 
               $this->nextDate = $end;
@@ -1654,7 +1656,7 @@ class _sectionActions extends sfActions
         $pagelimit = 12;
         
         if (in_array($this->section->getSlug(), array("receitinhas","imprima-e-brinque")))
-          $pagelimit = 72;
+          $pagelimit = 73;
 
         $this->pager = new sfDoctrinePager('Asset', $pagelimit);
         $this->pager->setQuery($this->assetsQuery);

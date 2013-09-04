@@ -116,7 +116,7 @@
           <textarea id="mensagem" placeholder="Mensagem" value="Mensagem"></textarea>
         </div>
       </div>
-      <div class="control-group span12">
+      <div class="control-group span11">
         <label class="radio">
           <input type="radio" name="concorco" id="concorco" value="concorco" checked>
           Declaro que li e estou de acordo com os <a href="#">Termos e Condições</a>.
@@ -133,8 +133,9 @@
   </section>
   <section class="pais">
     <span class="divisa"></span>
-    <h2>para os pais <i class="sprite-seta-down"></i></h2>
+    <h2>Para adultos <i class="sprite-seta-down"></i></h2>
     <div class="content span12 row-fluid">
+      <p>Compartilhe esta brincadeira:</p>
       <div class="redes">
         <g:plusone size="medium" count="false"></g:plusone>
         <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" style="margin-top:-10px;" /></a>

@@ -255,9 +255,9 @@ $assets = $pager->getResults();
     </div>
     <?php endif; ?>
   </div>
-  <!-- /row--> 
+  <!-- /rows--> 
   <?php endif; ?>
-  
+ 
   <!--row-->
   <?php if(count($pager) > 0): ?>
   <div class="row-fluid conteudo ytb">
