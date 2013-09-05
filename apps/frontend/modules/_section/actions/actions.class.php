@@ -844,8 +844,6 @@ class _sectionActions extends sfActions
                 ->orderBy('sa.updated_at')
                 ->execute();
             
-              //echo "Total: ".count($siteAssets) . "<br>";
-              
               $assetIds = array();
               $listedSections = array();
               
@@ -864,15 +862,16 @@ class _sectionActions extends sfActions
                   }
                 }
               }
-              die(implode(",",$assetIds));
-              
+              //die(implode(",",$assetIds));
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
-                ->from('Asset a')
-                ->where('a.asset_type_id = ?', 1)
+                ->from('Asset a, SectionAsset sa')
+                ->where('a.id = sa.asset_id')
+                ->andWhere('a.asset_type_id = ?', 1)
                 ->andWhere('a.site_id = ?', 1253)
                 ->andWhere('a.is_active = ?', 1)
-                ->andWhereIn('a.id', $assetIds);
+                ->andWhereIn('a.id', $assetIds)
+                ->orderBy('sa.updated_at DESC');
             }
             else {
               $this->assetsQuery = Doctrine_Query::create()
@@ -885,8 +884,6 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
               if((in_array($this->section->Site->getSlug(), array("revistavitrine", "revistavitrine2")) && $this->section->getSlug() == "online") || ($this->site->getId() == 295)&&($this->section->id == 893) || ($this->site->getId() == 282)&&($this->section->id == 778) || ($this->site->getId() == 1217)&&($this->section->id == 2438) || $this->site->Program->getIsACourse())
                 $this->assetsQuery->orderBy('sa.display_order');
-              else if($this->site->getSlug() == "especiais-1")
-                $this->assetsQuery->orderBy('sa.updated_at DESC');
               else if(($this->site->getId() == 1218)&&($this->section->id == 2428))
                 $this->assetsQuery->orderBy('sa.display_order desc');
               else if(($this->site->getId() == 1149)&&($this->section->id == 2133))
