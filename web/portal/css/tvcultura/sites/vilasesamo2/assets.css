@@ -36,6 +36,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .pais h2 a,
 .pais h2 {color:#737373; margin:10px;}
 .pais .redes { position:absolute; top:12px; right:0;}
+.pais .redes p { float:left; margin-right:10px; }
 .pais .content { background:#fee133; margin-left:0; }
 .pais .content .dica h2 { float:left; margin:10px 0 }
 .pais .content h2 a,
