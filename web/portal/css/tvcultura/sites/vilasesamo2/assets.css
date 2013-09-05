@@ -24,20 +24,25 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 #carrossel-interna .slider li { border-bottom:1px solid #7732e5;  background:#883feb; }
 #carrossel-interna .slider li a { color:#fff; text-transform:uppercase; }
 #carrossel-interna .slider li img { border:1px solid #7732e5; }
-#carrossel-interna .slider li.video { background:#883feb; }
+#carrossel-interna .slider li.atividade { background:#883feb; }
 #carrossel-interna .slider li.jogo { background:#3aaaec; border-color:#0191fb; }
 #carrossel-interna .slider li.jogo img { border-color:#0191fb; }
-#carrossel-interna .slider li.atividade { background:#f5861f; border-color:#f07317; }
-#carrossel-interna .slider li.atividade img { border-color:#f07317; }
-#carrossel-interna .slider li .nome { padding:4%; display: block; }
+#carrossel-interna .slider li.video { background:#f5861f; border-color:#f07317; }
+#carrossel-interna .slider li.video img { border-color:#f07317; }
+#carrossel-interna .slider li .nome { padding:0; display: block; height:40px; line-height: 40px; }
 
+#carrossel-interna .slider li .nome i { float:left; margin:0 15px; }
+#carrossel-interna .slider li .nome i.sprite-ico-videos-p { margin-top:4px; }
+#carrossel-interna .slider li .nome i.sprite-ico-jogos-p { margin-top:7px; }
 #content .pais { background:#feec3c; margin:0 auto !important; overflow:hidden; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 .pais .divisa { margin-bottom:0; }
 .pais h2 a,
 .pais h2 {color:#737373; margin:10px;}
 .pais .redes { position:absolute; top:12px; right:0;}
+.pais .redes p { float:left; margin-right:10px; }
 .pais .content { background:#fee133; margin-left:0; }
 .pais .content .dica h2 { float:left; margin:10px 0 }
+.pais .content .dica .btn { clear:both; margin-top:4%; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/bg-btn.jpg) repeat-x; }
 .pais .content h2 a,
 .pais .content h2 { margin:0; }
 .pais .content h2 { margin-top:10px; }
@@ -94,24 +99,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 /*.pais { position:absolute; right:10px; top:-10px; }*/
 
 /* form */
-#content section.form { background:#3aaaec; margin:0 auto; padding:20px 10px; max-width:920px; }
+#content section.form { background:#3aaaec; margin:0 auto; padding:20px; max-width:900px; }
+#content section.form .span8 { width: 64%; }
+#content section.form .span4 { margin:0 !important; float:right; width:300px; }
 #content section.form p,
 #content section.form label,
 #content section.form h2 { color:#fff; }
 .form-horizontal .control-label {text-align:left; float:left; width:40px !important;}
-.form-horizontal .controls textarea { width:99%; margin-left:1%; }
+.form-horizontal .controls textarea { width:99%; margin-left:1%; height:80px; }
+
 .form-horizontal .controls { float: left;    margin-left: 0;    margin-right: 0;    width: 91%; }
 .form-horizontal .controls input {float: right;    margin: 0;    width: 95%; }
+.form-horizontal .controls input,
+.form-horizontal .controls a  { height:26px; line-height:26px; display: block; }
 .form-horizontal .estado .control-label { width:auto; }
 .form-horizontal .estado .controls,
 .form-horizontal .estado select { width:100%; }
+.form-horizontal .estado select { height:36px; line-height:36px; }
 .form-horizontal .estado .controls { margin:0; }
 .form-horizontal .control-group { margin:0 0 2% 0; min-height:50px; }
 .form-horizontal .control-group.idade  .controls { width: 55%; float:right; } 
 .form-horizontal .span2 { width:17%; float:right; }
-.form-horizontal .span8 { width: 81%; }
+#content section.form .form-horizontal .span8 { width: 81%; }
 .form-horizontal .span2 input { width: 75%; }
 .form-horizontal .span2 .controls { margin-right:0; }
+.form-horizontal .anexo .controls { overflow:hidden; width: 61% !important; }
+/*.form-horizontal .anexo input { overflow:hidden; margin-left: -37px; float:left; }*/
+.form-horizontal .span11 .btn,
+.form-horizontal .anexo a { height:36px; line-height:36px; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x; display: block; padding:0 5px; color:#737373; text-transform:uppercase; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.form-horizontal .control-label.sprite-ico-email, 
+.form-horizontal .sprite-ico-email { margin-top:4px; }
+.form-horizontal .sprite-ico-anexo { width:28px !important; }
+.form-horizontal .anexo .controls { width:64% !important; }
+.form-horizontal .span11 { float:right; }
+.form-horizontal .span11 a { color:#fffb49;}
+.form-horizontal .span11 .btn { width:100%; border:none; box-shadow:none; text-shadow:none; }
 /* /form */
 
 /* ie */

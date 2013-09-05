@@ -38,6 +38,7 @@ $(document).ready(function() {
        el = $(this);
        if(i%6==0){
          $(el).css('margin-left', '0');
+         $(el).css('clear', 'both');
          i = 0;
        }else{
          i++;

@@ -103,10 +103,11 @@
           <input type="text" id="email" placeholder="Email" value="Email">
         </div>
       </div>
-       <div class="control-group span2 idade">
+       <div class="control-group span2 idade anexo">
         <label class="control-label sprite-ico-anexo" for="anexo"></label>
         <div class="controls">
-          <input id="datafile" type="file" name="datafile" size="25">
+          <!--input id="datafile" type="file" name="datafile" size="1"-->
+          <a href="#" title="Anexar">Anexar</a>
         </div>
       </div>
       <div class="control-group span12 msg">
@@ -115,7 +116,7 @@
           <textarea id="mensagem" placeholder="Mensagem" value="Mensagem"></textarea>
         </div>
       </div>
-      <div class="control-group span12">
+      <div class="control-group span11">
         <label class="radio">
           <input type="radio" name="concorco" id="concorco" value="concorco" checked>
           Declaro que li e estou de acordo com os <a href="#">Termos e Condições</a>.
@@ -132,9 +133,11 @@
   </section>
   <section class="pais">
     <span class="divisa"></span>
-    <h2>para os pais <i class="sprite-seta-down"></i></h2>
+    <h2>Para adultos <i class="sprite-seta-down"></i></h2>
     <div class="content span12 row-fluid">
+      
       <div class="redes">
+        <p>Compartilhe esta brincadeira:</p>
         <g:plusone size="medium" count="false"></g:plusone>
         <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" style="margin-top:-10px;" /></a>
         <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false"></fb:like>
@@ -146,6 +149,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend. Duis vel mauris et nunc posuere vehicula a id arcu. Maecenas malesuada ante ac consequat viverra. Vivamus tempor, nulla quis facilisis ullamcorper, tortor odio elementum eros, sit amet cursus felis elit vel diam. Fusce fringilla, nulla eu luctus lacinia, risus turpis varius orci, vel fringilla sem eros eu diam. Pellentesque sodales cursus elit, ac suscipit eros consectetur nec.
         Aenean at metus.</p>
         <i class="sprite-aspa-direita"></i>
+        <button type="submit" class="btn">enviar minha brincadeira</button>
       </div>
       <div class="span4 box-select">
         <a href="#" title=""> <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /> </a>
@@ -163,11 +167,12 @@
             <li><a href="#">categoria 04</a></li>
           </ul>
         </div>
-        <a class="publicidade" href="#" title="Publicidade"> <!-- vilasesamo -->
-        <script type='text/javascript'>
-          GA_googleFillSlot("vilasesamo");
-        </script>
-        <p>Publicidade</p> </a>
+        <a class="publicidade" href="#" title="Publicidade">
+          <img src="/portal/images/capaPrograma/vilasesamo2/banner-sesc.png" alt="Sesc" />
+        </a>
+        <a class="publicidade" href="#" title="Publicidade">
+          <img src="/portal/images/capaPrograma/vilasesamo2/banner-mapa.png" alt="Mapa do Brincar" />
+        </a>
       </div>
       <h2 class="fechar-toogle ativo"><i class="sprite-seta-up"></i></h2>
     </div>
