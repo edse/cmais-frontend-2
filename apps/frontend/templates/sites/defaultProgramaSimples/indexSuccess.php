@@ -22,7 +22,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
     $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
     // Datepicker
     $('#datepicker').datepicker({
-      beforeShowDay: dateLoading,
+      //beforeShowDay: dateLoading,
       onSelect: redirect,
       dateFormat: 'yy-mm-dd',
       altFormat: 'yy-mm-dd',
