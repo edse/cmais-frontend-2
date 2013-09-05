@@ -167,11 +167,12 @@
             <li><a href="#">categoria 04</a></li>
           </ul>
         </div>
-        <a class="publicidade" href="#" title="Publicidade"> <!-- vilasesamo -->
-        <script type='text/javascript'>
-          GA_googleFillSlot("vilasesamo");
-        </script>
-        <p>Publicidade</p> </a>
+        <a class="publicidade" href="#" title="Publicidade">
+          <img src="/portal/images/capaPrograma/vilasesamo2/banner-sesc.png" alt="Sesc" />
+        </a>
+        <a class="publicidade" href="#" title="Publicidade">
+          <img src="/portal/images/capaPrograma/vilasesamo2/banner-mapa.png" alt="Mapa do Brincar" />
+        </a>
       </div>
       <h2 class="fechar-toogle ativo"><i class="sprite-seta-up"></i></h2>
     </div>
