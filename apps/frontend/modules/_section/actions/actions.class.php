@@ -862,7 +862,7 @@ class _sectionActions extends sfActions
                   }
                 }
               }
-              die(implode(",",$assetIds));
+              //die(implode(",",$assetIds));
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, SectionAsset sa')
