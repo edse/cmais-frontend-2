@@ -389,7 +389,7 @@ class _sectionActions extends sfActions
               }
               else {
               */
-              if($this->section->slug != "controleremoto")
+              if($this->section->slug != "controleremoto"){
                 header("Location: ".$this->uri."/".date("Y-m-d"));
                 die();
               }
