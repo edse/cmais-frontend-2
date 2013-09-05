@@ -830,7 +830,7 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1)
                 ->orderBy('a.created_at desc');
             }
-            /*
+            
             elseif( ($this->site->getSlug() == 'especiais-1') && (in_array($this->section->getSlug(), array('home', 'home-page', 'homepage'))) ) {
                   
               $siteAssets = Doctrine_Query::create()
@@ -866,12 +866,14 @@ class _sectionActions extends sfActions
               }
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
-                ->from('Asset a')
-                ->where('a.asset_type_id = ?', 1)
+                ->from('Asset a, SectionAsset sa')
+                ->where('a.id = sa.asset_id')
+                ->andWhere('a.asset_type_id = ?', 1)
                 ->andWhere('a.site_id = ?', 1253)
                 ->andWhere('a.is_active = ?', 1)
-                ->andWhereIn('a.id', $assetIds);
-            }*/
+                ->andWhereIn('a.id', $assetIds)
+                ->orderBy('sa.updated_at DESC');
+            }
             else {
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
