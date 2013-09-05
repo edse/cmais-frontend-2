@@ -840,7 +840,7 @@ class _sectionActions extends sfActions
                 ->andWhere('a.site_id = ?', 1253)
                 ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
                 ->andWhere('a.is_active = ?', 1)
-                ->orderBy('sa.display_order')
+                ->orderBy('sa.updated_at')
                 ->execute();
             
               //echo "Total: ".count($siteAssets) . "<br>";
