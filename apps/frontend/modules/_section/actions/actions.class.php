@@ -840,7 +840,7 @@ class _sectionActions extends sfActions
                 ->andWhere('a.site_id = ?', 1253)
                 ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
                 ->andWhere('a.is_active = ?', 1)
-                ->orderBy('sa.display_order')
+                ->orderBy('a.display_order')
                 ->execute();
             
               //echo "Total: ".count($siteAssets) . "<br>";
@@ -886,8 +886,10 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1);
               if($request->getParameter('busca') != '')
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
-              if((in_array($this->section->Site->getSlug(), array("revistavitrine", "revistavitrine2")) && $this->section->getSlug() == "online") || ($this->site->getId() == 295)&&($this->section->id == 893) || ($this->site->getId() == 282)&&($this->section->id == 778) || ($this->site->getId() == 1217)&&($this->section->id == 2438) || $this->site->Program->getIsACourse() || $this->site->getSlug() == "especiais-1")
+              if((in_array($this->section->Site->getSlug(), array("revistavitrine", "revistavitrine2")) && $this->section->getSlug() == "online") || ($this->site->getId() == 295)&&($this->section->id == 893) || ($this->site->getId() == 282)&&($this->section->id == 778) || ($this->site->getId() == 1217)&&($this->section->id == 2438) || $this->site->Program->getIsACourse())
                 $this->assetsQuery->orderBy('sa.display_order');
+              else if($this->site->getSlug() == "especiais-1")
+                $this->assetsQuery->orderBy('sa.updated_at DESC');
               else if(($this->site->getId() == 1218)&&($this->section->id == 2428))
                 $this->assetsQuery->orderBy('sa.display_order desc');
               else if(($this->site->getId() == 1149)&&($this->section->id == 2133))
