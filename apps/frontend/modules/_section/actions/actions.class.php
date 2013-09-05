@@ -830,6 +830,7 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1)
                 ->orderBy('a.created_at desc');
             }
+            /*
             elseif( ($this->site->getSlug() == 'especiais-1') && (in_array($this->section->getSlug(), array('home', 'home-page', 'homepage'))) ) {
                   
               $siteAssets = Doctrine_Query::create()
@@ -863,12 +864,6 @@ class _sectionActions extends sfActions
                   }
                 }
               }
-              /*
-              echo "total assets:" . count($assetIds) . "<br>";  
-              echo "ids: " . implode(", ", $assetIds) . "<br>";
-              echo "listed sections: " . implode(", ", $listedSections) . "<br>";
-              die();
-              */
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a')
@@ -876,7 +871,7 @@ class _sectionActions extends sfActions
                 ->andWhere('a.site_id = ?', 1253)
                 ->andWhere('a.is_active = ?', 1)
                 ->andWhereIn('a.id', $assetIds);
-            }
+            }*/
             else {
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
