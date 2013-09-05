@@ -884,7 +884,7 @@ class _sectionActions extends sfActions
               if((in_array($this->section->Site->getSlug(), array("revistavitrine", "revistavitrine2")) && $this->section->getSlug() == "online") || ($this->site->getId() == 295)&&($this->section->id == 893) || ($this->site->getId() == 282)&&($this->section->id == 778) || ($this->site->getId() == 1217)&&($this->section->id == 2438) || $this->site->Program->getIsACourse())
                 $this->assetsQuery->orderBy('sa.display_order');
               else if($this->site->getSlug() == "especiais-1")
-                $this->assetsQuery->orderBy('sa.updated_at DESC');
+                $this->assetsQuery->orderBy('sa.updated_at ASC');
               else if(($this->site->getId() == 1218)&&($this->section->id == 2428))
                 $this->assetsQuery->orderBy('sa.display_order desc');
               else if(($this->site->getId() == 1149)&&($this->section->id == 2133))
