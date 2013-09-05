@@ -156,7 +156,7 @@
                   <h4>Colunistas</h4>
                 </div>
               </div>
-              <ul class="programacao">
+              <ul class="programacao" style="height:auto; overflow:hidden;">
                 <li><a href="http://culturafm.cmais.com.br/colunistas/amaral-vieira">Amaral Vieira</a></li>
                 <li><a href="http://culturafm.cmais.com.br/colunistas/joao-marcos-coelho">João Marcos Coelho</a></li>
                 <li><a href="http://culturafm.cmais.com.br/colunistas/joao-mauricio-galindo">João Maurício Galindo</a></li>
