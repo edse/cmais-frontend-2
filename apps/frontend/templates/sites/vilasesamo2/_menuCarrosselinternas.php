@@ -10,7 +10,7 @@
                      <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg">
                      </a>
                   </div>
-                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo1" title="Nome do Jogo 1"><i class="sprite-ico-atividades-p"></i>Nome do Jogo 1</a>
+                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo1" title="Nome do Jogo 1"><i class="sprite-ico-videos-p"></i>Nome do Jogo 1</a>
                 </li>
                 <li class="jogo">
                   <div class="inner personagens beto">
@@ -18,7 +18,7 @@
                      <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg">
                     </a>
                   </div>
-                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo2" title="Nome do Jogo 2"><i class="sprite-ico-videos-p"></i>Nome do Jogo 2</a>
+                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo2" title="Nome do Jogo 2"><i class="sprite-ico-jogos-p"></i>Nome do Jogo 2</a>
                 </li>
                 <li class="atividade">
                   <div class="inner personagens comecome">
@@ -26,7 +26,7 @@
                       <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg">
                     </a>
                   </div>
-                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo3" title="Nome do Jogo 3"><i class="sprite-ico-jogos-p"></i>Nome do Jogo 3</a>
+                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo3" title="Nome do Jogo 3"><i class="sprite-ico-atividades-p"></i>Nome do Jogo 3</a>
                 </li>
                 <li>
                   <div class="inner personagens elmo">
