@@ -275,6 +275,14 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-ico-mensagem{ background-position: 0 -350px; width: 40px; height: 40px; }
 .form-horizontal .control-label.sprite-ico-nome, 
 .sprite-ico-nome{ background-position: 0 -440px; width: 30px; height: 29px; } 
+
+.sprite-ico-atividades-p,
+.sprite-ico-jogos-p,
+.sprite-ico-videos-p{  background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-ico-p.png);} 
+
+.sprite-ico-atividades-p{ background-position: 0 0; width: 31px; height: 39px; } 
+.sprite-ico-jogos-p{ background-position: 0 -89px; width: 38px; height: 27px; } 
+.sprite-ico-videos-p{ background-position: 0 -166px; width: 38px; height: 31px; } 
 /*/sprite*/
 
 
