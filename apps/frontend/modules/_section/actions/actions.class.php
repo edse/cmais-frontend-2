@@ -389,8 +389,10 @@ class _sectionActions extends sfActions
               }
               else {
               */
+              if($this->section->slug != "controleremoto"){
                 header("Location: ".$this->uri."/".date("Y-m-d"));
                 die();
+              }
               //}
             }
 
@@ -832,7 +834,7 @@ class _sectionActions extends sfActions
             }
             
             elseif( ($this->site->getSlug() == 'especiais-1') && (in_array($this->section->getSlug(), array('home', 'home-page', 'homepage'))) ) {
-              
+               
               $siteAssets = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, SectionAsset sa')
