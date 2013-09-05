@@ -832,7 +832,7 @@ class _sectionActions extends sfActions
             }
             
             elseif( ($this->site->getSlug() == 'especiais-1') && (in_array($this->section->getSlug(), array('home', 'home-page', 'homepage'))) ) {
-                  
+                  die();
               $siteAssets = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, SectionAsset sa')
@@ -841,7 +841,7 @@ class _sectionActions extends sfActions
                 ->andWhere('a.site_id = ?', 1253)
                 ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
                 ->andWhere('a.is_active = ?', 1)
-                ->orderBy('a.display_order')
+                ->orderBy('sa.updated_at')
                 ->execute();
             
               //echo "Total: ".count($siteAssets) . "<br>";
@@ -866,14 +866,11 @@ class _sectionActions extends sfActions
               }
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
-                ->from('Asset a, SectionAsset sa')
-                ->where('a.id = sa.asset_id')
-                ->andWhere('a.asset_type_id = ?', 1)
+                ->from('Asset a')
+                ->where('a.asset_type_id = ?', 1)
                 ->andWhere('a.site_id = ?', 1253)
                 ->andWhere('a.is_active = ?', 1)
                 ->andWhereIn('a.id', $assetIds);
-                //->groupBy('a.id')
-                //->orderBy('sa.updated_at DESC');
             }
             else {
               $this->assetsQuery = Doctrine_Query::create()
