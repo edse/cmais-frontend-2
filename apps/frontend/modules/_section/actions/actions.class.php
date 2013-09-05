@@ -871,9 +871,9 @@ class _sectionActions extends sfActions
                 ->andWhere('a.asset_type_id = ?', 1)
                 ->andWhere('a.site_id = ?', 1253)
                 ->andWhere('a.is_active = ?', 1)
-                ->andWhereIn('a.id', $assetIds)
-                ->groupBy('a.id')
-                ->orderBy('sa.updated_at DESC');
+                ->andWhereIn('a.id', $assetIds);
+                //->groupBy('a.id')
+                //->orderBy('sa.updated_at DESC');
             }
             else {
               $this->assetsQuery = Doctrine_Query::create()
