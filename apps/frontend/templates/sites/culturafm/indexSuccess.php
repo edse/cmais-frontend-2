@@ -148,6 +148,25 @@
           </div>
           <!-- / BOX PUBLICIDADE -->
           
+          <!-- BOX PADRAO -->
+            <div class="box-padrao grid1">
+              <div class="topo claro">
+                <span></span>
+                <div class="capa-titulo">
+                  <h4>Colunistas</h4>
+                </div>
+              </div>
+              <ul class="programacao">
+                <li><a href="http://culturafm.cmais.com.br/colunistas/amaral-vieira">Amaral Vieira</a></li>
+                <li><a href="http://culturafm.cmais.com.br/colunistas/joao-marcos-coelho">João Marcos Coelho</a></li>
+                <li><a href="http://culturafm.cmais.com.br/colunistas/joao-mauricio-galindo">João Maurício Galindo</a></li>
+                <li><a href="http://culturafm.cmais.com.br/colunistas/julio-medaglia">Júlio Medaglia</a></li>
+                <li><a href="http://culturafm.cmais.com.br/colunistas/walter-lourencao">Walter Lourenção</a></li>
+              </ul>
+              
+            </div>
+            <!-- BOX PADRAO -->
+          
           <?php include_partial_from_folder('sites/culturafm','global/facebook-likeBox', array('site' => $site, 'uri' => $uri)) ?>
           
         </div>
