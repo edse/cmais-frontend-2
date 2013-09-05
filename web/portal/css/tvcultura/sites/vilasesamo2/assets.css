@@ -24,20 +24,25 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 #carrossel-interna .slider li { border-bottom:1px solid #7732e5;  background:#883feb; }
 #carrossel-interna .slider li a { color:#fff; text-transform:uppercase; }
 #carrossel-interna .slider li img { border:1px solid #7732e5; }
-#carrossel-interna .slider li.video { background:#883feb; }
+#carrossel-interna .slider li.atividade { background:#883feb; }
 #carrossel-interna .slider li.jogo { background:#3aaaec; border-color:#0191fb; }
 #carrossel-interna .slider li.jogo img { border-color:#0191fb; }
-#carrossel-interna .slider li.atividade { background:#f5861f; border-color:#f07317; }
-#carrossel-interna .slider li.atividade img { border-color:#f07317; }
-#carrossel-interna .slider li .nome { padding:4%; display: block; }
+#carrossel-interna .slider li.video { background:#f5861f; border-color:#f07317; }
+#carrossel-interna .slider li.video img { border-color:#f07317; }
+#carrossel-interna .slider li .nome { padding:0; display: block; height:40px; line-height: 40px; }
 
+#carrossel-interna .slider li .nome i { float:left; margin:0 15px; }
+#carrossel-interna .slider li .nome i.sprite-ico-videos-p { margin-top:4px; }
+#carrossel-interna .slider li .nome i.sprite-ico-jogos-p { margin-top:7px; }
 #content .pais { background:#feec3c; margin:0 auto !important; overflow:hidden; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 .pais .divisa { margin-bottom:0; }
 .pais h2 a,
 .pais h2 {color:#737373; margin:10px;}
 .pais .redes { position:absolute; top:12px; right:0;}
+.pais .redes p { float:left; margin-right:10px; }
 .pais .content { background:#fee133; margin-left:0; }
 .pais .content .dica h2 { float:left; margin:10px 0 }
+.pais .content .dica .btn { clear:both; margin-top:4%; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/bg-btn.jpg) repeat-x; }
 .pais .content h2 a,
 .pais .content h2 { margin:0; }
 .pais .content h2 { margin-top:10px; }

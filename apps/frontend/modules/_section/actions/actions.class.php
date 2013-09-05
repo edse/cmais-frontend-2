@@ -756,7 +756,7 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
               $this->assetsQuery->orderBy('a.created_at desc');
             }
-            else if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class", "manha-cultura", "entrelinhas-1", "cd-da-semana"))){
+            else if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class", "manha-cultura", "entrelinhas-1", "cd-da-semana", "alma-brasileira", "arquivo-vivo"))){
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, SectionAsset sa')
@@ -830,8 +830,9 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1)
                 ->orderBy('a.created_at desc');
             }
+            
             elseif( ($this->site->getSlug() == 'especiais-1') && (in_array($this->section->getSlug(), array('home', 'home-page', 'homepage'))) ) {
-                  
+              
               $siteAssets = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, SectionAsset sa')
@@ -840,11 +841,9 @@ class _sectionActions extends sfActions
                 ->andWhere('a.site_id = ?', 1253)
                 ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
                 ->andWhere('a.is_active = ?', 1)
-                ->orderBy('sa.display_order')
+                ->orderBy('sa.updated_at')
                 ->execute();
             
-              //echo "Total: ".count($siteAssets) . "<br>";
-              
               $assetIds = array();
               $listedSections = array();
               
@@ -863,19 +862,16 @@ class _sectionActions extends sfActions
                   }
                 }
               }
-              /*
-              echo "total assets:" . count($assetIds) . "<br>";  
-              echo "ids: " . implode(", ", $assetIds) . "<br>";
-              echo "listed sections: " . implode(", ", $listedSections) . "<br>";
-              die();
-              */
+              //die(implode(",",$assetIds));
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
-                ->from('Asset a')
-                ->where('a.asset_type_id = ?', 1)
+                ->from('Asset a, SectionAsset sa')
+                ->where('a.id = sa.asset_id')
+                ->andWhere('a.asset_type_id = ?', 1)
                 ->andWhere('a.site_id = ?', 1253)
                 ->andWhere('a.is_active = ?', 1)
-                ->andWhereIn('a.id', $assetIds);
+                ->andWhereIn('a.id', $assetIds)
+                ->orderBy('sa.updated_at DESC');
             }
             else {
               $this->assetsQuery = Doctrine_Query::create()
@@ -886,7 +882,7 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1);
               if($request->getParameter('busca') != '')
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
-              if((in_array($this->section->Site->getSlug(), array("revistavitrine", "revistavitrine2")) && $this->section->getSlug() == "online") || ($this->site->getId() == 295)&&($this->section->id == 893) || ($this->site->getId() == 282)&&($this->section->id == 778) || ($this->site->getId() == 1217)&&($this->section->id == 2438) || $this->site->Program->getIsACourse() || $this->site->getSlug() == "especiais-1")
+              if((in_array($this->section->Site->getSlug(), array("revistavitrine", "revistavitrine2")) && $this->section->getSlug() == "online") || ($this->site->getId() == 295)&&($this->section->id == 893) || ($this->site->getId() == 282)&&($this->section->id == 778) || ($this->site->getId() == 1217)&&($this->section->id == 2438) || $this->site->Program->getIsACourse())
                 $this->assetsQuery->orderBy('sa.display_order');
               else if(($this->site->getId() == 1218)&&($this->section->id == 2428))
                 $this->assetsQuery->orderBy('sa.display_order desc');
@@ -1928,7 +1924,7 @@ class _sectionActions extends sfActions
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/culturabrasil/subsection');
           }
         }
-        elseif(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class","manha-cultura", "entrelinhas-1", "cd-da-semana"))){
+        elseif(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class","manha-cultura", "entrelinhas-1", "cd-da-semana", "alma-brasileira", "arquivo-vivo"))){
           if($debug) print "<br>13-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new');
         }

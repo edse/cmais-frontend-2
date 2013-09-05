@@ -10,7 +10,7 @@
                      <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg">
                      </a>
                   </div>
-                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo1" title="Nome do Jogo 1">Nome do Jogo 1</a>
+                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo1" title="Nome do Jogo 1"><i class="sprite-ico-videos-p"></i>Nome do Jogo 1</a>
                 </li>
                 <li class="jogo">
                   <div class="inner personagens beto">
@@ -18,7 +18,7 @@
                      <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg">
                     </a>
                   </div>
-                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo2" title="Nome do Jogo 2">Nome do Jogo 2</a>
+                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo2" title="Nome do Jogo 2"><i class="sprite-ico-jogos-p"></i>Nome do Jogo 2</a>
                 </li>
                 <li class="atividade">
                   <div class="inner personagens comecome">
@@ -26,7 +26,7 @@
                       <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg">
                     </a>
                   </div>
-                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo3" title="Nome do Jogo 3">Nome do Jogo 3</a>
+                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo3" title="Nome do Jogo 3"><i class="sprite-ico-atividades-p"></i>Nome do Jogo 3</a>
                 </li>
                 <li>
                   <div class="inner personagens elmo">
@@ -34,7 +34,7 @@
                       <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg">
                     </a>
                   </div>
-                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo4" title="Nome do Jogo 4">Nome do Jogo 4</a>
+                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo4" title="Nome do Jogo 4"><i class="sprite-ico-atividades-p"></i>Nome do Jogo 4</a>
                 </li>
                 <li>
                   <div class="inner personagens enio">
@@ -42,7 +42,7 @@
                       <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg">
                     </a>
                    </div>
-                   <a class="nome" href="/vilasesamo2/jogos/nomedojogo5" title="Nome do Jogo 5">Nome do Jogo 5</a>
+                   <a class="nome" href="/vilasesamo2/jogos/nomedojogo5" title="Nome do Jogo 5"><i class="sprite-ico-atividades-p"></i>Nome do Jogo 5</a>
                 </li>
                 <li>
                   <div class="inner personagens garibaldo">
@@ -50,7 +50,7 @@
                       <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg">
                     </a>
                   </div>
-                  <a class="nome" href="/vilasesamo2/personagens/garibaldo" title="Nome do Jogo 6">Nome do Jogo 6</a>
+                  <a class="nome" href="/vilasesamo2/personagens/garibaldo" title="Nome do Jogo 6"><i class="sprite-ico-atividades-p"></i>Nome do Jogo 6</a>
                 </li>
                 <li>
                   <div class="inner personagens grover">
@@ -58,7 +58,7 @@
                       <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg">
                     </a>
                   </div>
-                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo7" title="Nome do Jogo 7">Nome do Jogo 7</a>
+                  <a class="nome" href="/vilasesamo2/jogos/nomedojogo7" title="Nome do Jogo 7"><i class="sprite-ico-atividades-p"></i>Nome do Jogo 7</a>
                 </li>
                 <li>
                   <div class="inner personagens zoe">
@@ -66,7 +66,7 @@
                       <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg">
                     </a>
                    </div>
-                   <a class="nome" href="/vilasesamo2/jogos/nomedojogo8" title="Nome do Jogo 8">Nome do Jogo 8</a>
+                   <a class="nome" href="/vilasesamo2/jogos/nomedojogo8" title="Nome do Jogo 8"><i class="sprite-ico-atividades-p"></i>Nome do Jogo 8</a>
                 </li>
               </ul>
             </div>
