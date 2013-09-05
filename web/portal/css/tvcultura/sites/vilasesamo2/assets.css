@@ -29,7 +29,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 #carrossel-interna .slider li.jogo img { border-color:#0191fb; }
 #carrossel-interna .slider li.video { background:#f5861f; border-color:#f07317; }
 #carrossel-interna .slider li.video img { border-color:#f07317; }
-#carrossel-interna .slider li .nome { padding:0; display: block; }
+#carrossel-interna .slider li .nome { padding:0; display: block; height:40px; line-height: 40px; }
 #carrossel-interna .slider li .nome i { float:left; margin:0 15px; }
 #content .pais { background:#feec3c; margin:0 auto !important; overflow:hidden; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 .pais .divisa { margin-bottom:0; }
