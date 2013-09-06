@@ -1,16 +1,11 @@
-<!--scripts e css banner-->
-<script type="text/javascript" src="/portal/js/layer-slider/jQuery.layerSlider.js"></script>
-<script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-<script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
-<script src="/portal/js/hammer.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
+
 <link rel="stylesheet" href="/portal/js/layer-slider/model06/jquery.layerSlider.css">
 <link rel="stylesheet" href="/portal/js/layer-slider/model06/main.css">
 
 <link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
 
-<script type="text/javascript" src="/portal/js/jquery.broswer/jquery.browser.min.js"></script>
+
 <div id="content">
 
   <div id="content-top"></div>
@@ -87,7 +82,12 @@
   
 </div>
 
-
+<!--scripts e css banner-->
+<script type="text/javascript" src="/portal/js/layer-slider/jQuery.layerSlider.js"></script>
+<script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
+<script type="text/javascript" src="/portal/js/modernizr/modernizr.min.js"></script>
+<script type="text/javascript" src="/portal/js/hammer.min.js"></script>
+<script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
 
 <script>
 /*
