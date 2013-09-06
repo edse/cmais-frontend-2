@@ -227,12 +227,14 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
                     <p class="bold"><?php //echo $d->AssetBroadcast->getHeadline() ?></p>
                     <p class="bold"><?php //echo $d->AssetBroadcast->getHeadlineLong() ?></p>
                     -->
+                    <?php if($d->Program->Site->getId()>0): ?>
                     <a class="site" href="<?php echo $d->retriveUrl() ?>">ir ao site</a>
-                    <?php if($d->getIsLive()): ?>
                     <br />
-                    <a class="site" href="http://cmais.com.br/aovivo">assista ao vivo pela web</a>
                     <?php endif; ?>
+                    <?php if($d->getIsLive()): ?>
+                    <a class="site" href="http://cmais.com.br/aovivo">assista ao vivo pela web</a>
                     <br />
+                    <?php endif; ?>
                     <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=<?php echo urlencode($d->retriveTitle()) ?>&dates=<?php echo DateTime::createFromFormat('Y-m-d H:i:s', $d->getDateStart())->format('Ymd\THis\Z') ?>/<?php echo DateTime::createFromFormat('Y-m-d H:i:s', $d->getDateStart())->format('Ymd\THis\Z') ?>&details=&location=<?php echo urlencode($d->Program->getTitle()) ?>&trp=false&sprop=http%3A%2F%2Fcmais.com.br&sprop=name:TV%20Cultura" target="_blank" class="google-agenda"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" border=0 style="width:100px;height:25px;" /></a>
                   </div>
                 </li>
