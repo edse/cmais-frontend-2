@@ -181,7 +181,7 @@ function machineScreenSize(){
       botoesPersonagensTablet();
     }else{
       //alert("Aplicar Versão Desktop");
-      $('#content-top').append(" $desktop = true; ");
+      <?php $desktop = true; ?>
     }
   }
 }
