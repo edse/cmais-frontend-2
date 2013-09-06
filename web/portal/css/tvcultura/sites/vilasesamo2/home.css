@@ -37,7 +37,7 @@
 #carrossel-destaque{display:block;}
 
 @media only screen 
-and (max-width : 640px) {
+and (max-width : 641px) {
   #carrossel-destaque-mobile{display:block;}
   #carrossel-destaque{display:none!important;}
 }
