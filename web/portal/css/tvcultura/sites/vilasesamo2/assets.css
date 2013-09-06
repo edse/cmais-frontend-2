@@ -105,6 +105,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 #content section.form p,
 #content section.form label,
 #content section.form h2 { color:#fff; }
+#content section.form h2 { font-size: 25px; }
 .form-horizontal .control-label {text-align:left; float:left; width:40px !important;}
 .form-horizontal .controls textarea { width:99%; margin-left:1%; height:80px; }
 
