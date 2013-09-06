@@ -216,8 +216,10 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
                   <div class="grade toggle" style="display:none; width:auto; padding-bottom:25px;">
                     <div class="capa-foto">
                       <!-- <p class="reprise">18:30 - Reprise deste episódio</p> -->
+                      <?php if ($d->retriveLiveImage()): ?>
                       <img src="<?php echo $d->retriveLiveImage() ?>" alt="<?php echo $d->retriveTitle() ?>" />
                       <?php if($d->image_source != ""): ?><p class="legenda"><?php echo $d->image_source ?></p><?php endif; ?>
+                      <?php endif; ?>
                     </div>
                     <?php if($d->getTitle() != ""): ?>
                       <p class="bold"><?php echo $d->getTitle() ?></p>
