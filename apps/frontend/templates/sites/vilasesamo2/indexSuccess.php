@@ -7,37 +7,11 @@
 
 
 <div id="content">
-  <?php $desktop = true; ?>
-  <div id="content-top"></div>
-  <!-- HEADER -->
-  <?php
-  
-  include_partial_from_folder('sites/vilasesamo2', 'global/mobile_detect'); 
-  $detect = new Mobile_Detect(); 
-  if ($detect->isTablet()) {
-      // Any tablet device. 
-      
-      //banner           
-      include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
-      include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal');
-      
-    }else if($detect->isMobile()){
-      // Any mobile device. 
-      
-      //banner
-      include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
-      include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipalmobile');  
-      
-    }elseif($desktop==true){
-      // Any desktop
-      
-      //banner
-      include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
-      include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal');  
-    }
-   ?>
-  <!-- /HEADER -->
-  
+
+  <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)); ?>
+  <?php include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal'); ?>
+  <?php include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipalmobile'); ?> 
+
 
   <!--carrossel personagens-->
   <?php include_partial_from_folder('sites/vilasesamo2', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
