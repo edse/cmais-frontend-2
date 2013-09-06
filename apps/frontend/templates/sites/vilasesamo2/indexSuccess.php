@@ -30,10 +30,11 @@
     }else{
       // Any desktop
       
-      //banner 
+      //banner
+      /* 
       include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
       include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal');  
- 
+      */
     }
    ?>
   <!-- /HEADER -->
@@ -123,8 +124,7 @@ if(screen.width > 1024){
     $('.arrow.destaque-mobile').fadeIn('fast');
   });
 };
-if(navigator.appName!='Microsoft Internet Explorer')
-{
+if(navigator.appName!='Microsoft Internet Explorer'){
   //carrossel personagens redraw pra tablet e celular home
   window.addEventListener('load', function() {
     $('.carrossel-p, #carrossel-mobile').responsiveCarousel('redraw');
@@ -160,27 +160,6 @@ $('.inner.personagens a').mouseleave(function(){
   $(this).find('img').animate({top:0, easing:"swing"},'fast');  
 });
 
-<?php
-if ($detect->isTablet()) {
-?>
-  $(document).ready(function(){
-    $('.inner.personagens a').each(function(i){
-      $(this).find('img').delay(1000 + (i*400)).animate({top:60},'fast');
-    });
-  });
-
-<?php
-}
-if($detect->isMobile()){
-?>
-  $(document).ready(function(){
-    $('.inner.personagens a').each(function(i){
-      $(this).find('img').delay(1000 + (i*400)).animate({top:-50},'fast');
-    });
-  }); 
-<?php 
-}
-?>
 //carrossel personagens
 
 function machineScreenSize(){
@@ -190,17 +169,32 @@ function machineScreenSize(){
   //alert(ua);
 
   if(ua.indexOf("mobile") > -1 && (ua.indexOf("iphone") > -1 || ua.indexOf("android") > -1)) {
-    alert("Aplicar Versão Mobile");
+    //alert("Aplicar Versão Mobile");
+    botoesPersonagensMobile();
     //Verificar Windows Phone
   }else{
     if(window.screen.width <= 640){
-      alert("Aplicar Versão Mobile");
+      //alert("Aplicar Versão Mobile");
+      botoesPersonagensMobile();
+      
     }else if(window.screen.width <= 1024){
-      alert("Aplicar Versão TABLET");
+      //alert("Aplicar Versão TABLET");
+      botoesPersonagensTablet();
     }else{
-      alert("Aplicar Versão Desktop");
+      //alert("Aplicar Versão Desktop");
+      $('#content-top').append('include_partial_from_folder("sites/vilasesamo2", "global/menuprincipal", array("site" => $site, "mainSite" => $mainSite, "section" => $section));include_partial_from_folder("sites/vilasesamo2", "global/bannerprincipal");"');
     }
   }
 }
+function botoesPersonagensMobile(){
+  $('.inner.personagens a').each(function(i){
+    $(this).find('img').delay(1000 + (i*400)).animate({top:-50},'fast');
+  });
+}
 
+function botoesPersonagensTablet(){
+  $('.inner.personagens a').each(function(i){
+    $(this).find('img').delay(1000 + (i*400)).animate({top:60},'fast');
+  });
+}
 </script>
