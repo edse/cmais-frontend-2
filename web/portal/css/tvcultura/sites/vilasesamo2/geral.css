@@ -238,6 +238,8 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-icon-personagens-peq{ background-position: -130px -708px; width: 38px; height: 38px; } 
 .sprite-icon-videos-med{ background-position: -130px -796px; width: 54px; height: 45px; } 
 
+.sprite-icon-videos-grd { background:url(/portal/images/capaPrograma/vilasesamo2/icon-videos-grd.png); width: 68px; height:57px;  }
+
 .sprite-icon-atividades-peq,
 .sprite-icon-jogos-peq,
 .sprite-icon-videos-peq { background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-destaque.png); } 
