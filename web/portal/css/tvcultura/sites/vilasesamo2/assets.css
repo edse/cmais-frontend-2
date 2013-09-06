@@ -42,7 +42,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .pais .redes p { float:left; margin-right:10px; }
 .pais .content { background:#fee133; margin-left:0; }
 .pais .content .dica h2 { float:left; margin:10px 0 }
-.pais .content .dica .btn { clear:both; margin-top:4%; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/bg-btn.jpg) repeat-x; }
+.pais .content .dica .btn { clear:both; margin-top:4%; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/bg-btn.jpg) repeat-x; text-transform:uppercase; }
 .pais .content h2 a,
 .pais .content h2 { margin:0; }
 .pais .content h2 { margin-top:10px; }
