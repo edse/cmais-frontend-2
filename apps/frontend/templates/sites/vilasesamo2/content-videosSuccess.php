@@ -13,7 +13,7 @@
 <div id="content">
   <section class="scroll row-fluid">
     <h3><i class="sprite-icon-clipes-med"></i>Vídeos<i class="seta-scroll sprite-scroll-videos"></i></h3>
-  </section>
+  </section> 
   <section class="filtro row-fluid">
     <h3><i class="sprite-icon-clipes-med"></i>Vídeos<a class="todos-assets"><i class="sprite-btn-voltar-videos"></i><p>todos os jogos</p></a></h3>
     <div class="conteudo-asset">
