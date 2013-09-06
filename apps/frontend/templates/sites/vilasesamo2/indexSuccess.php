@@ -7,7 +7,7 @@
 
 
 <div id="content">
-  <? $desktop = false; ?>
+  <?php $desktop = false; ?>
   <div id="content-top"></div>
   <!-- HEADER -->
   <?php
