@@ -219,7 +219,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
                       <?php if ($d->retriveLiveImage()): ?>
                       <img src="<?php echo $d->retriveLiveImage() ?>" alt="<?php echo $d->retriveTitle() ?>" />
                       <?php else: ?>
-                      <img src="/portal/images/capaPrograma/univesptv/univesptv-logo.jpg" alt="<?php echo $d->retriveTitle() ?>" />
+                      <img src="/portal/multicultura/images/logo-multicultura.png" alt="<?php echo $d->retriveTitle() ?>" />
                       <?php endif; ?>
                       <?php if($d->image_source != ""): ?><p class="legenda"><?php echo $d->image_source ?></p><?php endif; ?>
                     </div>
