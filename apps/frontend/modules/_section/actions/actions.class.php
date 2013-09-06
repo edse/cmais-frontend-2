@@ -200,7 +200,6 @@ class _sectionActions extends sfActions
                   ->limit(80)
                   ->execute();
               }
-             
               else{
                 $this->schedules = Doctrine_Query::create()
                   ->select('s.*')
@@ -215,34 +214,21 @@ class _sectionActions extends sfActions
             }
             else{
               $this->date = date("Y-m-d");
-              header("Location: ".$this->uri."/".$this->date);
-              die();
+              //header("Location: ".$this->uri."/".$this->date);
+              //die();
               $start = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2) ,substr($this->date,0,4)));
               $end = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)+1 ,substr($this->date,0,4))); 
               $this->nextDate = $end;
               $this->prevDate = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2)-1 ,substr($this->date,0,4)));
-              if($this->site->Program->id == 111){
-                $next = Doctrine_Query::create()
-                  ->select('s.*')
-                  ->from('Schedule s')
-                  ->where('s.program_id = ?', $this->site->Program->id)
-                  ->andWhere('s.channel_id = ?', 1)
-                  ->andWhere('s.date_start > ?', date("Y-m-d"))
-                  ->orderBy('s.date_start asc')
-                  ->limit(1)
-                  ->execute();
-              }
-              else{
-                $next = Doctrine_Query::create()
-                  ->select('s.*')
-                  ->from('Schedule s')
-                  ->where('s.program_id = ?', $this->site->Program->id)
-                  ->andWhere('s.channel_id = ?', 1)
-                  ->andWhere('s.date_start > ?', date("Y-m-d"))
-                  ->orderBy('s.date_start asc')
-                  ->limit(1)
-                  ->execute();
-              }
+              $next = Doctrine_Query::create()
+                ->select('s.*')
+                ->from('Schedule s')
+                ->where('s.program_id = ?', $this->site->Program->id)
+                ->andWhere('s.channel_id = ?', 1)
+                ->andWhere('s.date_start > ?', date("Y-m-d"))
+                ->orderBy('s.date_start asc')
+                ->limit(1)
+                ->execute();
               if(count($next)>0){
                 $d = explode(" ",$next[0]->date_start);
                 if ($d[1] < "04:59:59") { // apenas um primeiro teste. Vou melhorar isso (Cristovam)
