@@ -22,23 +22,23 @@
     //timerStart();
   });
   
-  
   function checkStreamingStart(){
     var request = $.ajax({
       dataType: 'jsonp',
       success: function(data) {
         eval(data);
       },
-      url: '/ajax/streaming'
+      url: 'http://app.cmais.com.br/ajax/streaming'
     });
   }
+
   function checkStreamingEnd(){
     var request = $.ajax({
       dataType: 'jsonp',
       success: function(data) {
         eval(data);
       },
-      url: '/ajax/streamingend'
+      url: 'http://app.cmais.com.br/ajax/streamingend'
     });
   }
   

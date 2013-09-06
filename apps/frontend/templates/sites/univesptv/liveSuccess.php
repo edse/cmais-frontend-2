@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/aovivo.css" type="text/css" />
-<link type="text/css" href="http://cmais.com.br/portal/univesptv/css/geral.css" rel="stylesheet" /> 
+<link type="text/css" href="http://cmais.com.br/portal/univesptv/css/geral.css" rel="stylesheet" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
+ 
 <style>
 #direita { margin-top:0;}
 #esquerda .stream {float: left; margin-top: 5px;}
@@ -14,7 +16,7 @@
   
   function checkStreamingStart(){
     $.ajax({
-      url: "/ajax/streaming",
+      url: "http://app.cmais.com.br/ajax/streaming",
       data: "channel_id=3",
       dataType: "text",
       success: function(data){
@@ -25,7 +27,7 @@
 
   function checkStreamingEnd(){
     $.ajax({
-      url: "/ajax/streamingend",
+      url: "http://app.cmais.com.br/ajax/streamingend",
       data: "channel_id=3",
       dataType: "text",
       success: function(data){
@@ -36,7 +38,7 @@
 
   function timerStart(){
     $.ajax({
-      url: "/ajax/timer",
+      url: "http://app.cmais.com.br/ajax/timer",
       data: "channel_id=3",
       dataType: "text",
       success: function(data){
