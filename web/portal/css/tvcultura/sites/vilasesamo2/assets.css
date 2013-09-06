@@ -118,19 +118,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .form-horizontal .estado select { height:36px; line-height:36px; }
 .form-horizontal .estado .controls { margin:0; }
 .form-horizontal .control-group { margin:0 0 2% 0; min-height:50px; }
-.form-horizontal .control-group.idade  .controls { width: 55%; float:right; } 
-.form-horizontal .span2 { width:17%; float:right; }
-#content section.form .form-horizontal .span8 { width: 81%; }
+.form-horizontal .control-group.idade  .controls { width: 66%; float:right; } 
+.form-horizontal .span2 { width:21%; float:right; }
+#content section.form .form-horizontal .span8 { width: 78%; }
 .form-horizontal .span2 input { width: 75%; }
 .form-horizontal .span2 .controls { margin-right:0; }
 .form-horizontal .anexo .controls { overflow:hidden; width: 61% !important; }
 /*.form-horizontal .anexo input { overflow:hidden; margin-left: -37px; float:left; }*/
 .form-horizontal .span11 .btn,
-.form-horizontal .anexo a { height:36px; line-height:36px; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x; display: block; padding:0 5px; color:#737373; text-transform:uppercase; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-size: 18px; }
+.form-horizontal .anexo a { height:36px; line-height:36px; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x; display: block; padding:0 5px; color:#737373; text-transform:uppercase; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-size: 18px; text-align:center; }
 .form-horizontal .control-label.sprite-ico-email, 
 .form-horizontal .sprite-ico-email { margin-top:4px; }
 .form-horizontal .sprite-ico-anexo { width:28px !important; }
-.form-horizontal .anexo .controls { width:64% !important; }
+.form-horizontal .anexo .controls { width:71% !important; }
 .form-horizontal .span11 { float:right; }
 .form-horizontal .span11 a { color:#fffb49;}
 .form-horizontal .span11 .btn { width:100%; border:none; box-shadow:none; text-shadow:none; font-size:18px; }
