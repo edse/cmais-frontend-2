@@ -204,9 +204,11 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
                     <p class="bold"><?php //echo $d->AssetBroadcast->getHeadline() ?></p>
                     <p class="bold"><?php //echo $d->AssetBroadcast->getHeadlineLong() ?></p>
                     -->
+                    <?php if($d->Program->Site->getId()>0): ?>
                     <a class="site" href="<?php echo $d->retriveUrl() ?>">ir ao site</a>
                     <?php if($d->getIsLive()): ?>
                     <br />
+                    <?php endif; ?>
                     <a class="site" href="http://cmais.com.br/aovivo">assista ao vivo pela web</a>
                     <?php endif; ?>
                     <br />
