@@ -4,6 +4,7 @@ body { background:#0172f9; }
 .header-bar .content { max-width:940px; margin:0 auto; }
 .header-bar h1 { /*background:#fff; height:76px;*/ margin:5px 0 0 0; /*width:25%;*/ }
 .header-bar h1 a { float:left; /*width:100%;*/ }
+.header-bar h1 span,
 .header-bar h1 i { float:right; }
 #content { top:134px; margin-bottom:200px; }
 #content section { max-width:940px; margin:20px auto; }
