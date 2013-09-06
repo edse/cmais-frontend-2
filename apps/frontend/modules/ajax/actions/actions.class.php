@@ -25,6 +25,7 @@ class ajaxActions extends sfActions
   public function executeGetdays(sfWebRequest $request)
   {
     $this->setLayout(false);
+    header("content-type: application/json");
     //if($request->isXmlHttpRequest()){
       if($request->getParameter('section_id') > 0 || $request->getParameter('category_id') > 0 || $request->getParameter('channel_id') > 0 || $request->getParameter('program_id') > 0 || $request->getParameter('event') > 0){
         $year = $request->getParameter('year');
