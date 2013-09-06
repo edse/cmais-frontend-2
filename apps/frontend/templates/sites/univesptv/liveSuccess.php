@@ -16,7 +16,7 @@
   
   function checkStreamingStart(){
     $.ajax({
-      url: "http://app.cmais.com.br/ajax/streaming",
+      url: "http://app.cmais.com.br/ajax/streamingunivesp",
       data: "channel_id=3",
       dataType: 'jsonp',
       success: function(data){
@@ -27,7 +27,7 @@
 
   function checkStreamingEnd(){
     $.ajax({
-      url: "http://app.cmais.com.br/ajax/streamingend",
+      url: "http://app.cmais.com.br/ajax/streamingendunivesp",
       data: "channel_id=3",
       dataType: 'jsonp',
       success: function(data){

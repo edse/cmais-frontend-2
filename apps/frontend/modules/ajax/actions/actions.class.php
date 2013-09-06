@@ -1169,7 +1169,6 @@ class ajaxActions extends sfActions
     $this->setLayout(false);
     $return = "";
     //if($request->isXmlHttpRequest()){
-      $streaming = "univesptv";
       $channel_id = 3;
       $streaming = "univesptv";
       $url = "http://univesptv.cmais.com.br";
