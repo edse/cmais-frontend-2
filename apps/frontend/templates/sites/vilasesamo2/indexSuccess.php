@@ -182,7 +182,7 @@ function machineScreenSize(){
       botoesPersonagensTablet();
     }else{
       //alert("Aplicar Versão Desktop");
-      $('#content-top').append('<?php include_partial_from_folder("sites/vilasesamo2", "global/menuprincipal", array("site" => $site, "mainSite" => $mainSite, "section" => $section));include_partial_from_folder("sites/vilasesamo2", "global/bannerprincipal");?>');
+      $('#content-top').append('<?php rtrim ( include_partial_from_folder("sites/vilasesamo2", "global/menuprincipal", array("site" => $site, "mainSite" => $mainSite, "section" => $section)));rtrim ( include_partial_from_folder("sites/vilasesamo2", "global/bannerprincipal"));?>');
     }
   }
 }
