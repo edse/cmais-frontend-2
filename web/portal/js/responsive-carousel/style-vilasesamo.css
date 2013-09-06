@@ -65,7 +65,7 @@
 
 /*carrossel interna vila sesamo*/
 #carrossel-i{max-width: 940px;margin: 0 auto; border-radius:8px;}
-#carrossel-interna{max-width:980px;margin:20px auto;}
+#carrossel-interna{max-width:980px;margin:0 auto;}
 #carrossel-interna .slider {position: relative; overflow: hidden; zoom: 1; }
 #carrossel-interna .slider-nav { position: absolute; zoom: 1; width: 100%; top: 0; left: 0;}
 
