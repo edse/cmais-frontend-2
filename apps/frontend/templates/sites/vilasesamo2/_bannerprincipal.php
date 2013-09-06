@@ -14,10 +14,10 @@
             <h2>Para <br> colorir</h2>
           </div>
           <div class="mpc_ls_slide_item" data-x="350" data-y="120" data-delay="2000" data-duration="500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">
-            <img src="/portal/images/capaPrograma/vilasesamo2/banner/1/img_personagem_banner-topo.png">
+            <img src="/portal/images/capaPrograma/vilasesamo2/banner/1/img_personagem_banner-topo.png" alt="Banner topo">
           </div>
           <div class="mpc_ls_slide_item" data-x="180" data-y="340" data-delay="2000" data-duration="500" data-easing="easeOutElastic" data-effect="slideLeft" data-fade="on">
-            <img src="/portal/images/capaPrograma/vilasesamo2/banner/1/img_objeto_banner-topo.png">
+            <img src="/portal/images/capaPrograma/vilasesamo2/banner/1/img_objeto_banner-topo.png" alt="Banner topo">
           </div>
           <div class="mpc_ls_slide_item total">
             <a href="#" class="total"></a>
@@ -42,7 +42,7 @@
         <!--item-->
         <li class="slide04" data-easing="easeInExpo" data-transition="slideRight">
           <div class="mpc_ls_slide_background" data-style="scale">
-            <img src="/testes/layer-slider/preview/6/slides/slide04bg.jpg">
+            <img src="/testes/layer-slider/preview/6/slides/slide04bg.jpg" alt="Banner topo">
           </div>
           <div class="mpc_ls_slide_item" data-x="796" data-y="70" data-delay="1000" data-duration="1000" data-easing="swing" data-effect="slideTop" data-fade="on">
             <h2>LOREM IPSUM</h2>
@@ -77,7 +77,7 @@
         <!--item-->
         <li class="slide02" data-easing="easeInExpo" data-transition="slideRight">
           <div class="mpc_ls_slide_background" data-style="center">
-            <img src="/testes/layer-slider/preview/6/slides/slide02bg.jpg" >
+            <img src="/testes/layer-slider/preview/6/slides/slide02bg.jpg" alt="Banner topo" >
           </div>
           <div class="mpc_ls_slide_item" data-x="248" data-y="124" data-delay="1000" data-duration="1000" data-easing="easeOutBack" data-effect="slideLeft" data-fade="on">
             <h2>LOREM IPSUM DOLOR</h2>

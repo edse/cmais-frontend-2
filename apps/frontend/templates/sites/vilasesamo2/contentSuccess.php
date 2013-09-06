@@ -27,7 +27,7 @@
     <p><a href="#" title="Hábitos para uma vida saudável"><img src="/portal/images/capaPrograma/vilasesamo2/btn-habitos-peq.png" alt="Hábitos para uma vida saudável" /></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat massa, ullamcorper sit amet elementum sed, sollicitudin non massa. Mauris ante tortor, feugiat quis dolor id, congue pharetra nisl. Maecenas suscipit eu diam et pellentesque. Morbi fermentum libero ac diam tristique, in egestas lectus rhoncus. Proin ut pellentesque massa. Morbi metus. </p>
       
       <div class="asset">
-        <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" />
+        <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="exemplo" />
       </div>
     </div>
   </section>
@@ -139,7 +139,7 @@
       <div class="redes">
         <p>Compartilhe esta brincadeira:</p>
         <g:plusone size="medium" count="false"></g:plusone>
-        <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" style="margin-top:-10px;" /></a>
+        <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pinterest" style="margin-top:-10px;" /></a>
         <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false"></fb:like>
         <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
       </div>
@@ -152,7 +152,7 @@
         <button type="submit" class="btn">baixar</button>
       </div>
       <div class="span4 box-select">
-        <a href="#" title=""> <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /> </a>
+        <a href="#" title=""> <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="thumb do jogo" /> </a>
         <h2><a>Nome jogo</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend.</p>
       </div>
