@@ -18,16 +18,16 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="scroll row-fluid">
-    <h3><i class="sprite-icon-jogos-med"></i>Jogos<i class="seta-scroll sprite-scroll-jogos"></i></h3>
+    <h3><span class="sprite-icon-jogos-med"></span>Jogos<span class="seta-scroll sprite-scroll-jogos"></span></h3>
   </section>
   <section class="filtro row-fluid">
-    <h3><i class="sprite-icon-jogos-med"></i>Jogos<a class="todos-assets"><i class="sprite-btn-voltar-jogos"></i><p>todos os jogos</p></a></h3>
+    <h3><span class="sprite-icon-jogos-med"></span>Jogos<a class="todos-assets"><span class="sprite-btn-voltar-jogos"></span><p>todos os jogos</p></a></h3>
     <div class="conteudo-asset">
       <h2>nome do jogo</h2>
     <p><a href="#" title="Hábitos para uma vida saudável"><img src="/portal/images/capaPrograma/vilasesamo2/btn-habitos-peq.png" alt="Hábitos para uma vida saudável" /></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat massa, ullamcorper sit amet elementum sed, sollicitudin non massa. Mauris ante tortor, feugiat quis dolor id, congue pharetra nisl. Maecenas suscipit eu diam et pellentesque. Morbi fermentum libero ac diam tristique, in egestas lectus rhoncus. Proin ut pellentesque massa. Morbi metus. </p>
       
       <div class="asset">
-        <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" />
+        <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="exemplo" />
       </div>
     </div>
   </section>
@@ -46,21 +46,21 @@
       <div class="control-group span8">
         <label class="control-label sprite-ico-nome" for="nome"></label>
         <div class="controls">
-          <input type="text" id="nome" placeholder="Nome" value="Nome">
+          <input type="text" id="nome" placeholder="Nome" value="Nome" accesskey="n">
         </div>
       </div>
       
       <div class="control-group idade span2">
         <label class="control-label sprite-ico-idade" for="idade"></label>
         <div class="controls">
-          <input type="text" id="idade" placeholder="Idade" value="Idade">
+          <input type="text" id="idade" placeholder="Idade" value="Idade" accesskey="i">
         </div>
       </div>
       
       <div class="control-group span8">
         <label class="control-label sprite-ico-cidade" for="cidade"></label>
         <div class="controls">
-          <input type="text" id="cidade" placeholder="Cidade" value="Cidade">
+          <input type="text" id="cidade" placeholder="Cidade" value="Cidade" accesskey="c">
         </div>
       </div>
       <div class="control-group estado span2">
@@ -100,11 +100,11 @@
       <div class="control-group span8">
         <label class="control-label sprite-ico-email" for="email"></label>
         <div class="controls">
-          <input type="text" id="email" placeholder="Email" value="Email">
+          <input type="text" id="email" placeholder="Email" value="Email" accesskey="e">
         </div>
       </div>
        <div class="control-group span2 idade anexo">
-        <label class="control-label sprite-ico-anexo" for="anexo"></label>
+        <label class="control-label sprite-ico-anexo" for="anexo" accesskey="a"></label>
         <div class="controls">
           <!--input id="datafile" type="file" name="datafile" size="1"-->
           <a href="#" title="Anexar">Anexar</a>
@@ -113,7 +113,7 @@
       <div class="control-group span12 msg">
         <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
         <div class="controls">
-          <textarea id="mensagem" placeholder="Mensagem" value="Mensagem"></textarea>
+          <textarea id="mensagem" placeholder="Mensagem" value="Mensagem" accesskey="m"></textarea>
         </div>
       </div>
       <div class="control-group span11">
@@ -133,26 +133,26 @@
   </section>
   <section class="pais">
     <span class="divisa"></span>
-    <h2>Para adultos <i class="sprite-seta-down"></i></h2>
+    <h2>Para adultos <span class="sprite-seta-down"></span></h2>
     <div class="content span12 row-fluid">
       
       <div class="redes">
         <p>Compartilhe esta brincadeira:</p>
         <g:plusone size="medium" count="false"></g:plusone>
-        <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" style="margin-top:-10px;" /></a>
+        <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pinterest" style="margin-top:-10px;" /></a>
         <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false"></fb:like>
         <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
       </div>
       <div class="span4 dica">
-        <i class="sprite-aspa-esquerda"></i>
+        <span class="sprite-aspa-esquerda"></span>
         <h2><a href="#">Nome da Dica</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend. Duis vel mauris et nunc posuere vehicula a id arcu. Maecenas malesuada ante ac consequat viverra. Vivamus tempor, nulla quis facilisis ullamcorper, tortor odio elementum eros, sit amet cursus felis elit vel diam. Fusce fringilla, nulla eu luctus lacinia, risus turpis varius orci, vel fringilla sem eros eu diam. Pellentesque sodales cursus elit, ac suscipit eros consectetur nec.
         Aenean at metus.</p>
-        <i class="sprite-aspa-direita"></i>
+        <span class="sprite-aspa-direita"></span>
         <button type="submit" class="btn">baixar</button>
       </div>
       <div class="span4 box-select">
-        <a href="#" title=""> <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /> </a>
+        <a href="#" title=""> <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="thumb do jogo" /> </a>
         <h2><a>Nome jogo</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend.</p>
       </div>
@@ -176,7 +176,7 @@
           </ul>
         </div>
       </div>
-      <h2 class="fechar-toogle ativo"><i class="sprite-seta-up"></i></h2>
+      <h2 class="fechar-toogle ativo"><span class="sprite-seta-up"></span></h2>
     </div>
     
     <span class="linha"></span>

@@ -7,10 +7,11 @@
 
 
 <div id="content">
-
+  <?php $desktop = true; ?>
   <div id="content-top"></div>
   <!-- HEADER -->
   <?php
+  
   include_partial_from_folder('sites/vilasesamo2', 'global/mobile_detect'); 
   $detect = new Mobile_Detect(); 
   if ($detect->isTablet()) {
@@ -27,13 +28,12 @@
       include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
       include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipalmobile');  
       
-    }else{
+    }elseif($desktop==true){
       // Any desktop
       
-      //banner 
+      //banner
       include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
       include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal');  
- 
     }
    ?>
   <!-- /HEADER -->
@@ -180,7 +180,8 @@ function machineScreenSize(){
       //alert("Aplicar Versão TABLET");
       botoesPersonagensTablet();
     }else{
-      alert("Aplicar Versão Desktop");
+      //alert("Aplicar Versão Desktop");
+      <?php $desktop = true; ?>
     }
   }
 }
