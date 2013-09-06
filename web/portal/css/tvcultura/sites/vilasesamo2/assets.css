@@ -47,6 +47,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .pais .content h2 { margin:0; }
 .pais .content h2 { margin-top:10px; }
 .pais .content p { font-size: 16px; clear:both; }
+.pais .content span,
 .pais .content i { float:left; }
 .pais .content .sprite-aspa-esquerda { margin-right:10px; }
 .pais .content .sprite-aspa-direita { float:right; }
@@ -156,7 +157,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .interna.videos .todos-assets p { background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-videos.png); }
 .interna.videos .conteudo-asset h2 { color:#f27300; }
 .interna.videos #content .relacionados {background:#f57301; border:none;}
+.interna.videos #content .filtro h3 span,
 .interna.videos #content .filtro h3 i,
+.interna.videos #content h3 span,
 .interna.videos #content h3 i { margin-top:-6px; }
 .interna.videos #content section.form,
 .interna.videos #content .relacionados h2 { background:#f78701; }

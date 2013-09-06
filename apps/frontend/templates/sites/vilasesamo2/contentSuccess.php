@@ -18,10 +18,10 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="scroll row-fluid">
-    <h3><i class="sprite-icon-jogos-med"></i>Jogos<i class="seta-scroll sprite-scroll-jogos"></i></h3>
+    <h3><span class="sprite-icon-jogos-med"></span>Jogos<span class="seta-scroll sprite-scroll-jogos"></span></h3>
   </section>
   <section class="filtro row-fluid">
-    <h3><i class="sprite-icon-jogos-med"></i>Jogos<a class="todos-assets"><i class="sprite-btn-voltar-jogos"></i><p>todos os jogos</p></a></h3>
+    <h3><span class="sprite-icon-jogos-med"></span>Jogos<a class="todos-assets"><span class="sprite-btn-voltar-jogos"></span><p>todos os jogos</p></a></h3>
     <div class="conteudo-asset">
       <h2>nome do jogo</h2>
     <p><a href="#" title="Hábitos para uma vida saudável"><img src="/portal/images/capaPrograma/vilasesamo2/btn-habitos-peq.png" alt="Hábitos para uma vida saudável" /></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat massa, ullamcorper sit amet elementum sed, sollicitudin non massa. Mauris ante tortor, feugiat quis dolor id, congue pharetra nisl. Maecenas suscipit eu diam et pellentesque. Morbi fermentum libero ac diam tristique, in egestas lectus rhoncus. Proin ut pellentesque massa. Morbi metus. </p>
@@ -133,7 +133,7 @@
   </section>
   <section class="pais">
     <span class="divisa"></span>
-    <h2>Para adultos <i class="sprite-seta-down"></i></h2>
+    <h2>Para adultos <span class="sprite-seta-down"></span></h2>
     <div class="content span12 row-fluid">
       
       <div class="redes">
@@ -144,11 +144,11 @@
         <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
       </div>
       <div class="span4 dica">
-        <i class="sprite-aspa-esquerda"></i>
+        <span class="sprite-aspa-esquerda"></span>
         <h2><a href="#">Nome da Dica</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend. Duis vel mauris et nunc posuere vehicula a id arcu. Maecenas malesuada ante ac consequat viverra. Vivamus tempor, nulla quis facilisis ullamcorper, tortor odio elementum eros, sit amet cursus felis elit vel diam. Fusce fringilla, nulla eu luctus lacinia, risus turpis varius orci, vel fringilla sem eros eu diam. Pellentesque sodales cursus elit, ac suscipit eros consectetur nec.
         Aenean at metus.</p>
-        <i class="sprite-aspa-direita"></i>
+        <span class="sprite-aspa-direita"></span>
         <button type="submit" class="btn">baixar</button>
       </div>
       <div class="span4 box-select">
@@ -176,7 +176,7 @@
           </ul>
         </div>
       </div>
-      <h2 class="fechar-toogle ativo"><i class="sprite-seta-up"></i></h2>
+      <h2 class="fechar-toogle ativo"><span class="sprite-seta-up"></span></h2>
     </div>
     
     <span class="linha"></span>
