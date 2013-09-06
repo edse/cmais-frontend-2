@@ -83,7 +83,7 @@ class ajaxActions extends sfActions
             }
           }
           */
-          echo json_encode($output);
+          //echo json_encode($output);
         }
         elseif($request->getParameter('channel_id') > 0){
           // schedules
@@ -104,7 +104,7 @@ class ajaxActions extends sfActions
               }
             }
           }
-          echo json_encode($output);
+          //echo json_encode($output);
         }
         elseif($request->getParameter('category_id') > 0){
           // category assets
@@ -126,7 +126,7 @@ class ajaxActions extends sfActions
               }
             }
           }
-          echo json_encode($output);
+          //echo json_encode($output);
         }
         elseif($request->getParameter('section_id') > 0){
           // category assets
@@ -148,7 +148,7 @@ class ajaxActions extends sfActions
               }
             }
           }
-          echo json_encode($output);
+          //echo json_encode($output);
         }
         elseif($request->getParameter('event') > 0){
           $assets = Doctrine_Query::create()
@@ -177,7 +177,7 @@ class ajaxActions extends sfActions
               }
             }
           }
-          echo json_encode($output);
+          //echo json_encode($output);
         }
       }
     //}
