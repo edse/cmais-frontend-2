@@ -25,6 +25,7 @@ class ajaxActions extends sfActions
   public function executeGetdays(sfWebRequest $request)
   {
     $this->setLayout(false);
+    header("content-type: application/json");
     //if($request->isXmlHttpRequest()){
       if($request->getParameter('section_id') > 0 || $request->getParameter('category_id') > 0 || $request->getParameter('channel_id') > 0 || $request->getParameter('program_id') > 0 || $request->getParameter('event') > 0){
         $year = $request->getParameter('year');
@@ -57,8 +58,8 @@ class ajaxActions extends sfActions
           if(count($schedules)>0) {
             foreach($schedules as $s) {
               $d = substr($s->date_start, 8,2);
-              if(substr($d,0,1) == "0")
-                $d = substr($s->date_start, 9,1);
+              //if(substr($d,0,1) == "0")
+                //$d = substr($s->date_start, 9,1);
               if(!in_array(array('day'=> $d), $output['days'])) {
                 $output['days'][] = array('day'=> $d);
               }
@@ -82,7 +83,7 @@ class ajaxActions extends sfActions
             }
           }
           */
-          echo json_encode($output);
+          //echo json_encode($output);
         }
         elseif($request->getParameter('channel_id') > 0){
           // schedules
@@ -96,14 +97,14 @@ class ajaxActions extends sfActions
           if(count($schedules)>0) {
             foreach($schedules as $s) {
               $d = substr($s->date_start, 8,2);
-              if(substr($d,0,1) == "0")
-                $d = substr($s->date_start, 9,1);
+              //if(substr($d,0,1) == "0")
+                //$d = substr($s->date_start, 9,1);
               if(!in_array(array('day'=> $d), $output['days'])) {
                 $output['days'][] = array('day'=> $d);
               }
             }
           }
-          echo json_encode($output);
+          //echo json_encode($output);
         }
         elseif($request->getParameter('category_id') > 0){
           // category assets
@@ -118,14 +119,14 @@ class ajaxActions extends sfActions
           if(count($assets)>0) {
             foreach($assets as $a) {
               $d = substr($a->created_at, 8,2);
-              if(substr($d,0,1) == "0")
-                $d = substr($a->created_at, 9,1);
+              //if(substr($d,0,1) == "0")
+                //$d = substr($a->created_at, 9,1);
               if(!in_array(array('day'=> $d), $output['days'])) {
                 $output['days'][] = array('day'=> $d);
               }
             }
           }
-          echo json_encode($output);
+          //echo json_encode($output);
         }
         elseif($request->getParameter('section_id') > 0){
           // category assets
@@ -140,14 +141,14 @@ class ajaxActions extends sfActions
           if(count($assets)>0) {
             foreach($assets as $a) {
               $d = substr($a->created_at, 8,2);
-              if(substr($d,0,1) == "0")
-                $d = substr($a->created_at, 9,1);
+              //if(substr($d,0,1) == "0")
+                //$d = substr($a->created_at, 9,1);
               if(!in_array(array('day'=> $d), $output['days'])) {
                 $output['days'][] = array('day'=> $d);
               }
             }
           }
-          echo json_encode($output);
+          //echo json_encode($output);
         }
         elseif($request->getParameter('event') > 0){
           $assets = Doctrine_Query::create()
@@ -169,17 +170,25 @@ class ajaxActions extends sfActions
           if(count($assets)>0) {
             foreach($assets as $a) {
               $d = substr($a->date, 8,2);
-              if(substr($d,0,1) == "0")
-                $d = substr($a->date, 9,1);
+              //if(substr($d,0,1) == "0")
+                //$d = substr($a->date, 9,1);
               if(!in_array(array('day'=> $d), $output['days'])) {
                 $output['days'][] = array('day'=> $d);
               }
             }
           }
-          echo json_encode($output);
+          //echo json_encode($output);
         }
       }
     //}
+    if($request->getParameter('callback')!=""){
+      $a["data"] = $output;
+      $json = json_encode($a);
+      $callback = $request->getParameter('callback');
+      echo $callback.'('. $json . ');';
+    }else{
+      echo json_encode($output);
+    }
     die();
   }
 
@@ -1169,7 +1178,6 @@ class ajaxActions extends sfActions
     $this->setLayout(false);
     $return = "";
     //if($request->isXmlHttpRequest()){
-      $streaming = "univesptv";
       $channel_id = 3;
       $streaming = "univesptv";
       $url = "http://univesptv.cmais.com.br";

@@ -54,16 +54,24 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
     type : "GET",
     dataType : "jsonp",
     data: opts,
-    url: "http://app.cmais.com.br/index.php/ajax/getdays",
-    async: true,
+    url: "http://app.cmais.com.br/ajax/getdays",
+    async: false,
     success: function(data){
+      console.log(year_month)
       // add the month to the cache
       window.cached_months.push(year_month);
       $.each(data.data.days, function(i, day){
-        window.cached_days.push(year_month+"-"+day.day+"");
+        if(day.day!=0){
+          console.log(day.day)
+          window.cached_days.push(year_month+"-"+day.day+"");
+          console.log(window.cached_days)
+        }
       });
     }
   });
+  console.log(window.cached_days)
+  
+  //console.log(cached_days)
 
   function dateLoading(date) {
     var year_month = ""+ (date.getFullYear()) +"-"+ ('0' + (date.getMonth()+1)).slice(-2) +"";
@@ -93,7 +101,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
         type : "GET",
         dataType : "jsonp",
         data: opts,
-        url: "http://app.cmais.com.br/index.php/ajax/getdays",
+        url: "http://app.cmais.com.br/ajax/getdays",
         async: true,
         success: function(data){
           // add the month to the cache
