@@ -42,7 +42,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .pais .redes p { float:left; margin-right:10px; }
 .pais .content { background:#fee133; margin-left:0; }
 .pais .content .dica h2 { float:left; margin:10px 0 }
-.pais .content .dica .btn { clear:both; margin-top:4%; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/bg-btn.jpg) repeat-x; text-transform:uppercase; }
+.pais .content .dica .btn { clear:both; margin-top:4%; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/bg-btn.jpg) repeat-x; text-transform:uppercase; font-size: 18px; }
 .pais .content h2 a,
 .pais .content h2 { margin:0; }
 .pais .content h2 { margin-top:10px; }
@@ -126,14 +126,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .form-horizontal .anexo .controls { overflow:hidden; width: 61% !important; }
 /*.form-horizontal .anexo input { overflow:hidden; margin-left: -37px; float:left; }*/
 .form-horizontal .span11 .btn,
-.form-horizontal .anexo a { height:36px; line-height:36px; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x; display: block; padding:0 5px; color:#737373; text-transform:uppercase; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.form-horizontal .anexo a { height:36px; line-height:36px; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x; display: block; padding:0 5px; color:#737373; text-transform:uppercase; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-size: 18px; }
 .form-horizontal .control-label.sprite-ico-email, 
 .form-horizontal .sprite-ico-email { margin-top:4px; }
 .form-horizontal .sprite-ico-anexo { width:28px !important; }
 .form-horizontal .anexo .controls { width:64% !important; }
 .form-horizontal .span11 { float:right; }
 .form-horizontal .span11 a { color:#fffb49;}
-.form-horizontal .span11 .btn { width:100%; border:none; box-shadow:none; text-shadow:none; }
+.form-horizontal .span11 .btn { width:100%; border:none; box-shadow:none; text-shadow:none; font-size:18px; }
 /* /form */
 
 /* ie */

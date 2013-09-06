@@ -157,6 +157,14 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend.</p>
       </div>
       <div class="span4">
+        <p>Conheça nossos parceiros:</p>
+        <a class="publicidade" href="#" title="Publicidade">
+          <img src="/portal/images/capaPrograma/vilasesamo2/banner-sesc.png" alt="Sesc" />
+        </a>
+        <a class="publicidade" href="#" title="Publicidade">
+          <img src="/portal/images/capaPrograma/vilasesamo2/banner-mapa.png" alt="Mapa do Brincar" />
+        </a>
+        
         <p>Você também pode escolher o jogo de acordo com as preferências da criança:</p>
         <div class="btn-group">
           <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
@@ -167,12 +175,6 @@
             <li><a href="#">categoria 04</a></li>
           </ul>
         </div>
-        <a class="publicidade" href="#" title="Publicidade">
-          <img src="/portal/images/capaPrograma/vilasesamo2/banner-sesc.png" alt="Sesc" />
-        </a>
-        <a class="publicidade" href="#" title="Publicidade">
-          <img src="/portal/images/capaPrograma/vilasesamo2/banner-mapa.png" alt="Mapa do Brincar" />
-        </a>
       </div>
       <h2 class="fechar-toogle ativo"><i class="sprite-seta-up"></i></h2>
     </div>
