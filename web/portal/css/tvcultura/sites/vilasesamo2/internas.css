@@ -7,7 +7,7 @@ body { background:#0172f9; }
 .header-bar h1 i { float:right; }
 #content { top:134px; margin-bottom:200px; }
 #content section { max-width:940px; margin:20px auto; }
-#content h3 { margin:0; font-size:50px; height:50px; line-height: 50px; padding:0 20px; }
+#content h3 { margin:0; font-size:50px; height:55px; line-height: 55px; padding:0 20px; }
 #content h3 i { margin-right:10px;  }
 .mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; max-width:350px; margin:100px auto; display:block; }
 .mais i { float:left; margin-right:15px; }
@@ -160,9 +160,8 @@ body { background:#0172f9; }
 .interna.atividades .destaque-filtro.especial li.active a { background:#fff; color:#883feb; border:none; font-size:25px; }
 .interna.atividades .destaque-filtro.especial li.active { background:#fff; }
 .interna.atividades #content .scroll h3 { border-color:#7732E5; }
-.interna.atividades #content .scroll h3,
-.interna.atividades #content .filtro h3 {    height: 60px;    line-height: 60px;    padding-top: 0;}
-.interna.atividades #content .filtro h3 i { margin-top:2px; }
+
+
 
 /* atividades*/
 
