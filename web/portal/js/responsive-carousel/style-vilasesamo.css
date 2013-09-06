@@ -65,7 +65,7 @@
 
 /*carrossel interna vila sesamo*/
 #carrossel-i{max-width: 940px;margin: 0 auto; border-radius:8px;}
-#carrossel-interna{max-width:980px;margin:20px auto;}
+#carrossel-interna{max-width:980px;margin:0 auto;}
 #carrossel-interna .slider {position: relative; overflow: hidden; zoom: 1; }
 #carrossel-interna .slider-nav { position: absolute; zoom: 1; width: 100%; top: 0; left: 0;}
 
@@ -76,7 +76,7 @@
 #carrossel-interna .arrow-right { right: 0;}
 
 #carrossel-interna .slider-mask-wrap { margin: 0 auto;max-width: 825px;margin-bottom: 10px;position: relative;height: 230px;}
-#carrossel-interna .slider-mask { overflow: hidden; position: absolute; zoom: 1; max-width:840px;} 
+#carrossel-interna .slider-mask { overflow: hidden; position: absolute; zoom: 1; max-width:825px;} 
 #carrossel-interna .slider-target { width: 2000px; margin: 0 auto; } 
 #carrossel-interna .slider ul { margin: 0; padding: 0; list-style-type: none; width:1800px !important;}
 #carrossel-interna .slider li { width: 200px; float: left; padding: 0; margin-right:0.6%;}
