@@ -90,14 +90,14 @@
 <script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
 
 <script>
-/*
-$(document).ready(function(){
-  $('.mpc_ls_thumb_inside').remove();  
+//verificação de tela
+window.addEventListener('load', function() {
+  machineScreenSize();
 });
-*/
+window.addEventListener("orientationchange", function() {
+  machineScreenSize();
+}, false);
 //carrossel personagens home
-alert($.os.name);
-alert($.browser.name);
 $('#carrossel-p').responsiveCarousel({
   arrowLeft: '.arrow-left span.personagens',
   arrowRight: '.arrow-right span.personagens',
@@ -113,7 +113,6 @@ $('#carrossel-p').responsiveCarousel({
   },
   step : -1
 });
-
 
 if(screen.width > 1024){
   $('#carrossel-p').mouseenter(function(){
@@ -183,5 +182,25 @@ if($detect->isMobile()){
 }
 ?>
 //carrossel personagens
+
+function machineScreenSize(){
+  //alert(window.innerWidth);
+  //alert(window.screen.width);
+  var ua = navigator.userAgent.toLowerCase();
+  //alert(ua);
+
+  if(ua.indexOf("mobile") > -1 && (ua.indexOf("iphone") > -1 || ua.indexOf("android") > -1)) {
+    alert("Aplicar Versão Mobile");
+    //Verificar Windows Phone
+  }else{
+    if(window.screen.width <= 640){
+      alert("Aplicar Versão Mobile");
+    }else if(window.screen.width <= 1024){
+      alert("Aplicar Versão TABLET");
+    }else{
+      alert("Aplicar Versão Desktop");
+    }
+  }
+}
 
 </script>
