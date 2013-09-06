@@ -105,7 +105,6 @@ body { background:#0172f9; }
 
 /* videos*/
 .interna.videos { background:#f36701; }
-.interna.videos #content .filtro h3 i { margin-top:3px; }
 .interna.videos .todos-itens li,
 .interna.videos .filtro,
 .interna.videos .scroll { border-color:#fba500; }
