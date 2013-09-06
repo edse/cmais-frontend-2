@@ -14,7 +14,7 @@
   
   function checkStreamingStart(){
     $.ajax({
-      url: "/ajax/streaming",
+      url: "http://app.cmais.com.br/ajax/streaming",
       data: "channel_id=3",
       dataType: "text",
       success: function(data){
@@ -25,7 +25,7 @@
 
   function checkStreamingEnd(){
     $.ajax({
-      url: "/ajax/streamingend",
+      url: "http://app.cmais.com.br/ajax/streamingend",
       data: "channel_id=3",
       dataType: "text",
       success: function(data){
@@ -36,7 +36,7 @@
 
   function timerStart(){
     $.ajax({
-      url: "/ajax/timer",
+      url: "http://app.cmais.com.br/ajax/timer",
       data: "channel_id=3",
       dataType: "text",
       success: function(data){
