@@ -123,8 +123,7 @@ if(screen.width > 1024){
     $('.arrow.destaque-mobile').fadeIn('fast');
   });
 };
-if(navigator.appName!='Microsoft Internet Explorer')
-{
+if(navigator.appName!='Microsoft Internet Explorer'){
   //carrossel personagens redraw pra tablet e celular home
   window.addEventListener('load', function() {
     $('.carrossel-p, #carrossel-mobile').responsiveCarousel('redraw');
@@ -185,13 +184,13 @@ function machineScreenSize(){
     }
   }
 }
-function botoesPersonagensMobile{
+function botoesPersonagensMobile(){
   $('.inner.personagens a').each(function(i){
     $(this).find('img').delay(1000 + (i*400)).animate({top:-50},'fast');
   });
 }
 
-function botoesPersonagensTablet{
+function botoesPersonagensTablet(){
   $('.inner.personagens a').each(function(i){
     $(this).find('img').delay(1000 + (i*400)).animate({top:60},'fast');
   });
