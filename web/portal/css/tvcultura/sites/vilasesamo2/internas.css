@@ -9,6 +9,7 @@ body { background:#0172f9; }
 #content { top:134px; margin-bottom:200px; }
 #content section { max-width:940px; margin:20px auto; }
 #content h3 { margin:0; font-size:50px; height:55px; line-height: 55px; padding:0 20px; }
+#content h3 span,
 #content h3 i { margin-right:10px;  }
 .mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; max-width:350px; margin:100px auto; display:block; }
 .mais span,
