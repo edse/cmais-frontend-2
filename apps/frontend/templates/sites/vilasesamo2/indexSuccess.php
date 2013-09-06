@@ -1,16 +1,11 @@
-<!--scripts e css banner-->
-<script type="text/javascript" src="/portal/js/layer-slider/jQuery.layerSlider.js"></script>
-<script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-<script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
-<script src="/portal/js/hammer.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
+
 <link rel="stylesheet" href="/portal/js/layer-slider/model06/jquery.layerSlider.css">
 <link rel="stylesheet" href="/portal/js/layer-slider/model06/main.css">
 
 <link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
 
-<script type="text/javascript" src="/portal/js/jquery.broswer/jquery.browser.min.js"></script>
+
 <div id="content">
 
   <div id="content-top"></div>
@@ -87,17 +82,22 @@
   
 </div>
 
-
+<!--scripts e css banner-->
+<script type="text/javascript" src="/portal/js/layer-slider/jQuery.layerSlider.js"></script>
+<script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
+<script type="text/javascript" src="/portal/js/modernizr/modernizr.min.js"></script>
+<script type="text/javascript" src="/portal/js/hammer.min.js"></script>
+<script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
 
 <script>
-/*
-$(document).ready(function(){
-  $('.mpc_ls_thumb_inside').remove();  
+//verificação de tela
+window.addEventListener('load', function() {
+  machineScreenSize();
 });
-*/
+window.addEventListener("orientationchange", function() {
+  machineScreenSize();
+}, false);
 //carrossel personagens home
-alert($.os.name);
-alert($.browser.name);
 $('#carrossel-p').responsiveCarousel({
   arrowLeft: '.arrow-left span.personagens',
   arrowRight: '.arrow-right span.personagens',
@@ -113,7 +113,6 @@ $('#carrossel-p').responsiveCarousel({
   },
   step : -1
 });
-
 
 if(screen.width > 1024){
   $('#carrossel-p').mouseenter(function(){
@@ -183,5 +182,25 @@ if($detect->isMobile()){
 }
 ?>
 //carrossel personagens
+
+function machineScreenSize(){
+  //alert(window.innerWidth);
+  //alert(window.screen.width);
+  var ua = navigator.userAgent.toLowerCase();
+  //alert(ua);
+
+  if(ua.indexOf("mobile") > -1 && (ua.indexOf("iphone") > -1 || ua.indexOf("android") > -1)) {
+    alert("Aplicar Versão Mobile");
+    //Verificar Windows Phone
+  }else{
+    if(window.screen.width <= 640){
+      alert("Aplicar Versão Mobile");
+    }else if(window.screen.width <= 1024){
+      alert("Aplicar Versão TABLET");
+    }else{
+      alert("Aplicar Versão Desktop");
+    }
+  }
+}
 
 </script>
