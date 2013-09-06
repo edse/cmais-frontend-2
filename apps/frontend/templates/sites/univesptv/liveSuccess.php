@@ -18,7 +18,7 @@
     $.ajax({
       url: "http://app.cmais.com.br/ajax/streaming",
       data: "channel_id=3",
-      dataType: "text",
+      dataType: 'jsonp',
       success: function(data){
         eval(data);
       }
@@ -29,7 +29,7 @@
     $.ajax({
       url: "http://app.cmais.com.br/ajax/streamingend",
       data: "channel_id=3",
-      dataType: "text",
+      dataType: 'jsonp',
       success: function(data){
         eval(data);
       }
@@ -40,7 +40,7 @@
     $.ajax({
       url: "http://app.cmais.com.br/ajax/timer",
       data: "channel_id=3",
-      dataType: "text",
+      dataType: 'jsonp',
       success: function(data){
         eval(data);
       }
