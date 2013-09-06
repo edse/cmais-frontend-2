@@ -27,14 +27,12 @@
       include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
       include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipalmobile');  
       
-    }else{
+    }elseif($desktop==true){
       // Any desktop
       
       //banner
-      /* 
       include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
       include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal');  
-      */
     }
    ?>
   <!-- /HEADER -->
@@ -183,8 +181,7 @@ function machineScreenSize(){
     }else{
       //alert("Aplicar Versão Desktop");
     <?php 
-    include_partial_from_folder("sites/vilasesamo2", "global/menuprincipal", array("site" => $site, "mainSite" => $mainSite, "section" => $section)); 
-    include_partial_from_folder("sites/vilasesamo2", "global/bannerprincipal");
+    $desktop = true;
     ?>
     }
   }
