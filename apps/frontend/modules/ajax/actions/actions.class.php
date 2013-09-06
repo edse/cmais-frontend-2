@@ -58,8 +58,8 @@ class ajaxActions extends sfActions
           if(count($schedules)>0) {
             foreach($schedules as $s) {
               $d = substr($s->date_start, 8,2);
-              if(substr($d,0,1) == "0")
-                $d = substr($s->date_start, 9,1);
+              //if(substr($d,0,1) == "0")
+                //$d = substr($s->date_start, 9,1);
               if(!in_array(array('day'=> $d), $output['days'])) {
                 $output['days'][] = array('day'=> $d);
               }
@@ -97,8 +97,8 @@ class ajaxActions extends sfActions
           if(count($schedules)>0) {
             foreach($schedules as $s) {
               $d = substr($s->date_start, 8,2);
-              if(substr($d,0,1) == "0")
-                $d = substr($s->date_start, 9,1);
+              //if(substr($d,0,1) == "0")
+                //$d = substr($s->date_start, 9,1);
               if(!in_array(array('day'=> $d), $output['days'])) {
                 $output['days'][] = array('day'=> $d);
               }
@@ -119,8 +119,8 @@ class ajaxActions extends sfActions
           if(count($assets)>0) {
             foreach($assets as $a) {
               $d = substr($a->created_at, 8,2);
-              if(substr($d,0,1) == "0")
-                $d = substr($a->created_at, 9,1);
+              //if(substr($d,0,1) == "0")
+                //$d = substr($a->created_at, 9,1);
               if(!in_array(array('day'=> $d), $output['days'])) {
                 $output['days'][] = array('day'=> $d);
               }
@@ -141,8 +141,8 @@ class ajaxActions extends sfActions
           if(count($assets)>0) {
             foreach($assets as $a) {
               $d = substr($a->created_at, 8,2);
-              if(substr($d,0,1) == "0")
-                $d = substr($a->created_at, 9,1);
+              //if(substr($d,0,1) == "0")
+                //$d = substr($a->created_at, 9,1);
               if(!in_array(array('day'=> $d), $output['days'])) {
                 $output['days'][] = array('day'=> $d);
               }
@@ -170,8 +170,8 @@ class ajaxActions extends sfActions
           if(count($assets)>0) {
             foreach($assets as $a) {
               $d = substr($a->date, 8,2);
-              if(substr($d,0,1) == "0")
-                $d = substr($a->date, 9,1);
+              //if(substr($d,0,1) == "0")
+                //$d = substr($a->date, 9,1);
               if(!in_array(array('day'=> $d), $output['days'])) {
                 $output['days'][] = array('day'=> $d);
               }
@@ -181,6 +181,14 @@ class ajaxActions extends sfActions
         }
       }
     //}
+    if($request->getParameter('callback')!=""){
+      $a["data"] = $output;
+      $json = json_encode($a);
+      $callback = $request->getParameter('callback');
+      echo $callback.'('. $json . ');';
+    }else{
+      echo json_encode($output);
+    }
     die();
   }
 
