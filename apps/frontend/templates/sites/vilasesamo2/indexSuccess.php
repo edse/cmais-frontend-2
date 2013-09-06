@@ -7,11 +7,11 @@
 
 
 <div id="content">
-
+  <? $desktop = false; ?>
   <div id="content-top"></div>
   <!-- HEADER -->
   <?php
-  $desktop = false;
+  
   include_partial_from_folder('sites/vilasesamo2', 'global/mobile_detect'); 
   $detect = new Mobile_Detect(); 
   if ($detect->isTablet()) {
@@ -181,9 +181,7 @@ function machineScreenSize(){
       botoesPersonagensTablet();
     }else{
       //alert("Aplicar Versão Desktop");
-    <?php 
-    $desktop = true;
-    ?>
+      $('#content-top').append("<?php $desktop = true; ?>");
     }
   }
 }
