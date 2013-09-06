@@ -34,11 +34,17 @@
 #carrossel-personagem .slider li:hover .nome { font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 #carrossel-destaque-mobile{display:none;}
-#carrossel-destaque{display:block;}
+#carrossel-destaque{display:none;}
 
 @media only screen 
-and (max-width : 700px) {
+and (min-device-width : 641px) {
+  #carrossel-destaque-mobile{display:none;}
+  #carrossel-destaque{display:block;}
+}
+
+@media only screen 
+and (max-device-width : 640px) {
   #carrossel-destaque-mobile{display:block;}
-  #carrossel-destaque{display:none!important;}
+  #carrossel-destaque{display:none;}
 }
 
