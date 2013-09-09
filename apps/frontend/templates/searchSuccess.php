@@ -31,7 +31,7 @@
         <div id="conteudo-pagina">
 
           <!-- RESULTADO BUSCA -->
-        <div id="row-fluid">
+        <div style="text-align:left">
           <script type="text/javascript">
             (function() {
               var cx = '005232987476052626260:gkqgz9ihn4w';
