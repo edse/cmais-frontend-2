@@ -37,18 +37,6 @@
 #carrossel-personagem .slider .nome { font-size:18px; color:#d71c0d; text-transform:uppercase; display:block; text-align:center; }
 #carrossel-personagem .slider li:hover .nome { font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-#carrossel-destaque-mobile{display:none;}
-#carrossel-destaque{display:none;}
 
-@media only screen 
-and (min-width : 641px) {
-  #carrossel-destaque-mobile{display:none!important;}
-  #carrossel-destaque{display:block!important;}
-}
 
-@media only screen 
-and (max-width : 640px) {
-  #carrossel-destaque-mobile{display:block!important;}
-  #carrossel-destaque{display:none!important;}
-}
 
