@@ -9,8 +9,8 @@
     <!-- Le styles -->  
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <!--script type="text/jscript" src="/portal/js/jquery-1.7.2.min.js"></script-->
-    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
     
 
