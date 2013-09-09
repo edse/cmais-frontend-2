@@ -10,8 +10,8 @@
       <!-- BARRA SITE -->
       <div id="barra-site">
         <div class="box-topo grid3">
-          <?php if(isset($_REQUEST['term'])):?>
-                  <h3 class="tit-pagina">Resultado de busca para "<?php echo $_REQUEST['term'] ?>".</h3>
+          <?php if(isset($_GET['term'])):?>
+                  <h3 class="tit-pagina">Resultado de busca para "<?php echo $_GET['term'] ?>".</h3>
           <?php else:?>
                   <h3 class="tit-pagina">Digite o texto desejado no campo de busca e clique no botão "OK".</h3-->
           <?php endif;?>
