@@ -31,7 +31,7 @@
         <div id="conteudo-pagina">
 
           <!-- RESULTADO BUSCA -->
-
+            <script type="text/javascript" async="" src="http://www.google.com/cse/cse.js?cx=005232987476052626260:gkqgz9ihn4w"></script>
             <script type="text/javascript">
               (function() {
                 var cx = '005232987476052626260:gkqgz9ihn4w';
