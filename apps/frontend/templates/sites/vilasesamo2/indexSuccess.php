@@ -65,7 +65,7 @@
 
 <script>
 //verificação de tela
-alert(screen.innerWidth);
+alert(window.innerWidth);
 window.addEventListener("resize", function() {
   machineScreenSize();
 }, false);
