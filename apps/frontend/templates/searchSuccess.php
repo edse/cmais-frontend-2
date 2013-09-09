@@ -29,12 +29,23 @@
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
-          <div class="row-fluid">
+
           <!-- RESULTADO BUSCA -->
-            <script type="text/javascript" async="" src="http://www.google.com/cse/cse.js?cx=005232987476052626260:gkqgz9ihn4w"></script>
-            <gcse:searchresults-only>Buscando...</gcse:searchresults-only>
-            <div id=script></div>
-           </div>
+
+          <script type="text/javascript">
+            (function() {
+              var cx = '005232987476052626260:gkqgz9ihn4w';
+              var gcse = document.createElement('resultados-busca-google');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                  '//www.google.com/cse/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('resultados-busca-google')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:searchresults-only>Buscando...</gcse:searchresults-only>
+
           <!-- /RESULTADO BUSCA -->
 
           <!-- BOX PUBLICIDADE -->
