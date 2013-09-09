@@ -31,7 +31,7 @@
         <div id="conteudo-pagina">
 
           <!-- RESULTADO BUSCA -->
-
+        <div id="row-fluid">
           <script type="text/javascript">
             (function() {
               var cx = '005232987476052626260:gkqgz9ihn4w';
@@ -45,7 +45,7 @@
             })();
           </script>
           <gcse:searchresults-only>Buscando...</gcse:searchresults-only>
-
+         </div>
           <!-- /RESULTADO BUSCA -->
 
           <!-- BOX PUBLICIDADE -->
