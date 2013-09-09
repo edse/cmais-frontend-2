@@ -138,11 +138,11 @@ $('.inner.personagens a').mouseleave(function(){
 //carrossel personagens
 function windowSize(){
   if(screen.width >= 640){
-    $('#carrossel-destaque').css('display','block!important');
-    $('#carrossel-destaque-mobile').css('display','none!important');
+    $('#carrossel-destaque').css('display','block');
+    $('#carrossel-destaque-mobile').css('display','none');
   }else{
-    $('#carrossel-destaque').css('display','none!important');
-    $('#carrossel-destaque-mobile').css('display','block!important');
+    $('#carrossel-destaque').css('display','none');
+    $('#carrossel-destaque-mobile').css('display','block');
   }
 }
 function machineScreenSize(){
