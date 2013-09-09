@@ -1,50 +1,17 @@
-<!--scripts e css banner-->
-<script type="text/javascript" src="/portal/js/layer-slider/jQuery.layerSlider.js"></script>
-<script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-<script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
-<script src="/portal/js/hammer.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
+
 <link rel="stylesheet" href="/portal/js/layer-slider/model06/jquery.layerSlider.css">
 <link rel="stylesheet" href="/portal/js/layer-slider/model06/main.css">
 
 <link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
 
-<script type="text/javascript" src="/portal/js/jquery.broswer/jquery.browser.min.js"></script>
+
 <div id="content">
-  <script>
-    console.log(navigator);
-  </script>
-  <div id="content-top"></div>
-  <!-- HEADER -->
-  <?php
-  include_partial_from_folder('sites/vilasesamo2', 'global/mobile_detect'); 
-  $detect = new Mobile_Detect(); 
-  if ($detect->isTablet()) {
-      // Any tablet device. 
-      
-      //banner           
-      include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
-      include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal');
-      
-    }else if($detect->isMobile()){
-      // Any mobile device. 
-      
-      //banner
-      include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
-      include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipalmobile');  
-      
-    }else{
-      // Any desktop
-      
-      //banner 
-      include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));
-      include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal');  
- 
-    }
-   ?>
-  <!-- /HEADER -->
-  
+
+  <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)); ?>
+  <?php include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal'); ?>
+  <?php include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipalmobile'); ?> 
+
 
   <!--carrossel personagens-->
   <?php include_partial_from_folder('sites/vilasesamo2', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
@@ -89,17 +56,25 @@
   
 </div>
 
-
+<!--scripts e css banner-->
+<script type="text/javascript" src="/portal/js/layer-slider/jQuery.layerSlider.js"></script>
+<script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
+<script type="text/javascript" src="/portal/js/modernizr/modernizr.min.js"></script>
+<script type="text/javascript" src="/portal/js/hammer.min.js"></script>
+<script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
 
 <script>
-/*
-$(document).ready(function(){
-  $('.mpc_ls_thumb_inside').remove();  
+//verificação de tela
+window.addEventListener("resize", function() {
+  machineScreenSize();
+}, false);
+window.addEventListener('load', function() {
+  machineScreenSize();
 });
-*/
+window.addEventListener("orientationchange", function() {
+  machineScreenSize();
+}, false);
 //carrossel personagens home
-alert($.os.name);
-alert($.browser.name);
 $('#carrossel-p').responsiveCarousel({
   arrowLeft: '.arrow-left span.personagens',
   arrowRight: '.arrow-right span.personagens',
@@ -116,7 +91,6 @@ $('#carrossel-p').responsiveCarousel({
   step : -1
 });
 
-
 if(screen.width > 1024){
   $('#carrossel-p').mouseenter(function(){
     $('.arrow.personagem').fadeIn('fast');
@@ -126,8 +100,7 @@ if(screen.width > 1024){
     $('.arrow.destaque-mobile').fadeIn('fast');
   });
 };
-if(navigator.appName!='Microsoft Internet Explorer')
-{
+if(navigator.appName!='Microsoft Internet Explorer'){
   //carrossel personagens redraw pra tablet e celular home
   window.addEventListener('load', function() {
     $('.carrossel-p, #carrossel-mobile').responsiveCarousel('redraw');
@@ -163,27 +136,41 @@ $('.inner.personagens a').mouseleave(function(){
   $(this).find('img').animate({top:0, easing:"swing"},'fast');  
 });
 
-<?php
-if ($detect->isTablet()) {
-?>
-  $(document).ready(function(){
-    $('.inner.personagens a').each(function(i){
-      $(this).find('img').delay(1000 + (i*400)).animate({top:60},'fast');
-    });
-  });
-
-<?php
-}
-if($detect->isMobile()){
-?>
-  $(document).ready(function(){
-    $('.inner.personagens a').each(function(i){
-      $(this).find('img').delay(1000 + (i*400)).animate({top:-50},'fast');
-    });
-  }); 
-<?php 
-}
-?>
 //carrossel personagens
 
+function machineScreenSize(){
+  //alert(window.innerWidth);
+  //alert(window.screen.width);
+  var ua = navigator.userAgent.toLowerCase();
+  //alert(ua);
+
+  if(ua.indexOf("mobile") > -1 && (ua.indexOf("iphone") > -1 || ua.indexOf("android") > -1)) {
+    //alert("Aplicar Versão Mobile");
+    botoesPersonagensMobile();
+    //Verificar Windows Phone
+  }else{
+    if(window.screen.width <= 640){
+      //alert("Aplicar Versão Mobile");
+      botoesPersonagensMobile();
+      
+    }else if(window.screen.width <= 1024){
+      //alert("Aplicar Versão TABLET");
+      botoesPersonagensTablet();
+    }else{
+      //alert("Aplicar Versão Desktop");
+      <?php $desktop = true; ?>
+    }
+  }
+}
+function botoesPersonagensMobile(){
+  $('.inner.personagens a').each(function(i){
+    $(this).find('img').delay(1000 + (i*400)).animate({top:-50},'fast');
+  });
+}
+
+function botoesPersonagensTablet(){
+  $('.inner.personagens a').each(function(i){
+    $(this).find('img').delay(1000 + (i*400)).animate({top:60},'fast');
+  });
+}
 </script>

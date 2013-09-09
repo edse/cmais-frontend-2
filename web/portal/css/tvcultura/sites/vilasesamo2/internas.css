@@ -4,20 +4,23 @@ body { background:#0172f9; }
 .header-bar .content { max-width:940px; margin:0 auto; }
 .header-bar h1 { /*background:#fff; height:76px;*/ margin:5px 0 0 0; /*width:25%;*/ }
 .header-bar h1 a { float:left; /*width:100%;*/ }
+.header-bar h1 span,
 .header-bar h1 i { float:right; }
 #content { top:134px; margin-bottom:200px; }
 #content section { max-width:940px; margin:20px auto; }
-#content h3 { margin:0; font-size:50px; height:50px; line-height: 50px; padding:0 20px; }
+#content h3 { margin:0; font-size:50px; height:55px; line-height: 55px; padding:0 20px; }
+#content h3 span,
 #content h3 i { margin-right:10px;  }
 .mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; max-width:350px; margin:100px auto; display:block; }
+.mais span,
 .mais i { float:left; margin-right:15px; }
 .mais:hover { color:#fff; }
 /* filtro personagem */
 .todos-itens li,
 .scroll,
 .filtro { background:#3aaaec; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
-.filtro h3 { border-bottom:2px solid #0191fb; background:#3AAAEC; }
-#content .filtro h3 { padding-top:10px; }
+.filtro h3 { border-bottom:2px solid #0191fb; border-top:2px solid #0191fb; background:#3AAAEC; }
+#content .filtro h3 { padding-top:10px;  }
 .filtro .span2 { margin-left:0; background: #ee3021; width:19.14%; padding:0 0.6%;}
 .filtro .span2 p { color:#fff; text-align:center; text-transform:uppercase; margin-top:10px; overflow:hidden; position:relative; }
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
@@ -105,7 +108,6 @@ body { background:#0172f9; }
 
 /* videos*/
 .interna.videos { background:#f36701; }
-.interna.videos #content .filtro h3 i { margin-top:3px; }
 .interna.videos .todos-itens li,
 .interna.videos .filtro,
 .interna.videos .scroll { border-color:#fba500; }
@@ -160,6 +162,8 @@ body { background:#0172f9; }
 .interna.atividades .destaque-filtro.especial li.active a { background:#fff; color:#883feb; border:none; font-size:25px; }
 .interna.atividades .destaque-filtro.especial li.active { background:#fff; }
 .interna.atividades #content .scroll h3 { border-color:#7732E5; }
+
+
 
 /* atividades*/
 
