@@ -1,9 +1,6 @@
 .inner{position:relative}
 .inner a{overflow: hidden;width:100%; height:100%;}
 .inner a img{position:absolute; top:0;}
-
-
-
 /* carrossel personagem */
 #carrossel-personagem { margin-bottom:0 !important; }
 #carrossel-personagem .header-carrossel-personagens{position:relative; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;overflow:hidden;}
@@ -36,6 +33,18 @@
 #carrossel-personagem .slider .nome { font-size:18px; color:#d71c0d; text-transform:uppercase; display:block; text-align:center; }
 #carrossel-personagem .slider li:hover .nome { font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+#carrossel-destaque-mobile{display:none;}
+#carrossel-destaque{display:none;}
 
+@media only screen 
+and (min-device-width : 981px) {
+  #carrossel-destaque-mobile{display:none;}
+  #carrossel-destaque{display:block;}
+}
 
+@media only screen 
+and (max-device-width : 980px) {
+  #carrossel-destaque-mobile{display:block;}
+  #carrossel-destaque{display:none;}
+}
 
