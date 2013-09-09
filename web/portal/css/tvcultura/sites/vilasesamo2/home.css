@@ -36,15 +36,5 @@
 #carrossel-destaque-mobile{display:none;}
 #carrossel-destaque{display:none;}
 
-@media only screen 
-and (min-width : 641px) {
-  #carrossel-destaque-mobile{display:none;}
-  #carrossel-destaque{display:block;}
-}
 
-@media only screen 
-and (max-width : 640px) {
-  #carrossel-destaque-mobile{display:block;}
-  #carrossel-destaque{display:none;}
-}
 
