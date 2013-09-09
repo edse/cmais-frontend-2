@@ -720,7 +720,7 @@ $(document).ready(function(){
                     <p><span class="label label-success">Usuário cadastrado com sucesso</span></p>
                   </div>
                   <div class="alert alert-block fade in">
-                    <h4 class="alert-heading" style="color: red;">SEU CADASTRO FOI EFETUADO COM SUCESSO!</h4>
+                    <h4 class="alert-heading" style="color: red;margin: 10px;">SEU CADASTRO FOI EFETUADO COM SUCESSO!</h4>
                     <p>Para validar seu e-mail e ativar seu cadastro, verifique agora a mensagem enviada para sua Caixa de Entrada.</p>
                   </div>
                 </div>
