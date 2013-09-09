@@ -1,6 +1,10 @@
 .inner{position:relative}
 .inner a{overflow: hidden;width:100%; height:100%;}
 .inner a img{position:absolute; top:0;}
+
+#carrossel-destaque{display:none;}
+#carrossel-destaque-mobile{display:none;}
+
 /* carrossel personagem */
 #carrossel-personagem { margin-bottom:0 !important; }
 #carrossel-personagem .header-carrossel-personagens{position:relative; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;overflow:hidden;}
@@ -38,13 +42,13 @@
 
 @media only screen 
 and (min-width : 641px) {
-  #carrossel-destaque-mobile{display:none;}
-  #carrossel-destaque{display:block;}
+  #carrossel-destaque-mobile{display:none!important;}
+  #carrossel-destaque{display:block!important;}
 }
 
 @media only screen 
 and (max-width : 640px) {
-  #carrossel-destaque-mobile{display:block;}
-  #carrossel-destaque{display:none;}
+  #carrossel-destaque-mobile{display:block!important;}
+  #carrossel-destaque{display:none!important;}
 }
 
