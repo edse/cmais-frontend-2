@@ -10,8 +10,8 @@
       <!-- BARRA SITE -->
       <div id="barra-site">
         <div class="box-topo grid3">
-          <?php if(isset($_REQUEST['term'])):?>
-                  <h3 class="tit-pagina">Resultado de busca para "<?php echo $_REQUEST['term'] ?>".</h3>
+          <?php if(isset($request->setParameter('term'))):?>
+                  <h3 class="tit-pagina">Resultado de busca para "<?php echo $request->setParameter('term') ?>".</h3>
           <?php else:?>
                   <h3 class="tit-pagina">Nenhuma busca realizada.</h3>
           <?php endif;?>
