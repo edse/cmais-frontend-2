@@ -42,13 +42,13 @@
 
 @media only screen 
 and (min-width : 641px) {
-  #carrossel-destaque-mobile{display:none;}
-  #carrossel-destaque{display:block;}
+  #carrossel-destaque-mobile{display:none!important;}
+  #carrossel-destaque{display:block!important;}
 }
 
 @media only screen 
 and (max-width : 640px) {
-  #carrossel-destaque-mobile{display:block;}
-  #carrossel-destaque{display:none;}
+  #carrossel-destaque-mobile{display:block!important;}
+  #carrossel-destaque{display:none!important;}
 }
 
