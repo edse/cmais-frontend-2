@@ -67,13 +67,15 @@
 //verificação de tela
 
 window.addEventListener("resize", function() {
-  alert(screen.width)
+  windowSize();
   machineScreenSize();
 }, false);
 window.addEventListener('load', function() {
+  windowSize();
   machineScreenSize();
 });
 window.addEventListener("orientationchange", function() {
+  windowSize();
   machineScreenSize();
 }, false);
 //carrossel personagens home
@@ -139,7 +141,15 @@ $('.inner.personagens a').mouseleave(function(){
 });
 
 //carrossel personagens
-
+function windowSize(){
+  if(screen.width >= 640){
+    $('#carrossel-destaque').css('display','block');
+    $('#carrossel-destaque-mobile').css('display','none');
+  }else{
+    $('#carrossel-destaque').css('display','none');
+    $('#carrossel-destaque-mobile').css('display','block');
+  }
+}
 function machineScreenSize(){
   //alert(window.innerWidth);
   //alert(window.screen.width);
