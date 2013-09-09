@@ -50,14 +50,26 @@
       <!--menu editorias-->
       
       <!-- Busca Portal -->
-      <form class="busca-portal" action="/busca" method="post">
-        <input type="hidden" name="site_id" id="site_id" value="<?php if((isset($site)) && (($site->type == "Programa Simples") || ($site->type == "Programa"))) echo $site->getId();?>" />
+      <?php 
+        /* Busca antiga
+        <form class="busca-portal" action="/busca" method="post">
+          <input type="hidden" name="site_id" id="site_id" value="<?php if((isset($site)) && (($site->type == "Programa Simples") || ($site->type == "Programa"))) echo $site->getId();?>" />
+          <input class="ipt-txt" type="text" name="term" id="term" value="<?php if(isset($_REQUEST['term'])) echo $_REQUEST['term']; ?>" />
+          <?php if(isset($_REQUEST['filter'])): ?>
+          <input type="hidden" name="filter" id="filter" value="<?php echo $_REQUEST['filter']; ?>" />
+          <?php endif; ?>
+          <input class="ipt-submit" type="submit" value="OK" />
+        </form>
+        */
+      ?>
+
+      <form class="busca-portal" action="/busca" method="get">
         <input class="ipt-txt" type="text" name="term" id="term" value="<?php if(isset($_REQUEST['term'])) echo $_REQUEST['term']; ?>" />
-        <?php if(isset($_REQUEST['filter'])): ?>
-        <input type="hidden" name="filter" id="filter" value="<?php echo $_REQUEST['filter']; ?>" />
-        <?php endif; ?>
         <input class="ipt-submit" type="submit" value="OK" />
       </form>
+
+
+      
       <!-- /Busca Portal -->  
          
     </div>
@@ -172,7 +184,7 @@
       <div id="redesnovo">
         <a href="javascript:;" id="controle-remoto" class="redesB" title="controle-remoto" target="_blank"></a>
         <a href="http://itunes.apple.com/br/app/radio-cultura/id370066053" id="apple" class="redesA" title="Apple store" target="_blank"></a>
-        <a href="https://google.com/+tvcultura" id="google" class="redesA" title="Google+" target="_blank"></a>
+        <a href="https://google.com/+tvcultura" id="google1" class="redesA" title="Google+" target="_blank"></a>
         <a href="http://instagram.com/tvcultura" id="instangram" class="redesA" title="Instagram" target="_blank"></a>
         <a href="http://facebook.com/tvcultura" id="face" class="redesA" title="Facebook" target="_blank"></a>
         <a href="http://twitter.com/tvcultura" id="twit" class="redesA" title="Twitter" target="_blank"></a>
