@@ -66,15 +66,7 @@
 <script>
 //verificação de tela
 
-window.addEventListener("resize", function() {
-  machineScreenSize();
-}, false);
-window.addEventListener('load', function() {
-  machineScreenSize();
-});
-window.addEventListener("orientationchange", function() {
-  machineScreenSize();
-}, false);
+
 //carrossel personagens home
 $('#carrossel-p').responsiveCarousel({
   arrowLeft: '.arrow-left span.personagens',
@@ -105,12 +97,18 @@ if(navigator.appName!='Microsoft Internet Explorer'){
   //carrossel personagens redraw pra tablet e celular home
   window.addEventListener('load', function() {
     $('.carrossel-p, #carrossel-mobile').responsiveCarousel('redraw');
+    machineScreenSize();
+    windowSize();
   });
   window.addEventListener("orientationchange", function() {
     $('.carrossel-p, #carrossel-mobile').responsiveCarousel('redraw');
+    machineScreenSize();
+    windowSize();
   }, false);
   window.addEventListener("resize", function() {
     $('.carrossel-p, #carrossel-mobile').responsiveCarousel('redraw');
+    machineScreenSize();
+    windowSize();
   }, false);
   //carrossel personagens redraw pra tablet e celular home
 }
