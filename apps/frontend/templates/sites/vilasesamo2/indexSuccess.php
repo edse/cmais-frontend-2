@@ -67,15 +67,12 @@
 //verificação de tela
 
 window.addEventListener("resize", function() {
-  windowSize();
   machineScreenSize();
 }, false);
 window.addEventListener('load', function() {
-  windowSize();
   machineScreenSize();
 });
 window.addEventListener("orientationchange", function() {
-  windowSize();
   machineScreenSize();
 }, false);
 //carrossel personagens home
@@ -159,18 +156,22 @@ function machineScreenSize(){
   if(ua.indexOf("mobile") > -1 && (ua.indexOf("iphone") > -1 || ua.indexOf("android") > -1)) {
     //alert("Aplicar Versão Mobile");
     botoesPersonagensMobile();
+    windowSize();
     //Verificar Windows Phone
   }else{
     if(window.screen.width <= 640){
       //alert("Aplicar Versão Mobile");
       botoesPersonagensMobile();
+      windowSize();
       
     }else if(window.screen.width <= 1024){
       //alert("Aplicar Versão TABLET");
       botoesPersonagensTablet();
+      windowSize();
     }else{
       //alert("Aplicar Versão Desktop");
-      <?php $desktop = true; ?>
+      windowSize();
+
     }
   }
 }
