@@ -1,0 +1,195 @@
+/**
+ * Buttons
+ */
+
+.textured
+{
+  position:relative;
+  display:inline-block;/*needed for firefox*/
+  background-image:url('images/tile.jpg');
+  border: solid 3px #333;
+}
+.ie6 .textured { width:100%; padding:0; }
+
+a.textured
+{
+  color:#222;
+  color: rgba(0, 0, 0, 0.75);
+  text-decoration:none;
+  text-align:center;
+  cursor: pointer;
+}
+.ie a.textured { color:#222; } /* IE loses text color if the rgba is in there. ? */
+
+a.textured:visited {
+  color:#222; /* same as unvisited */
+  color: rgba(0, 0, 0, 0.75);
+}
+a.textured:hover { color:#fff; text-decoration:none; }
+a.textured:active { color: #000; }
+
+.textured .bg
+{
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+}
+.ie6 .textured .bg { width:100%; }
+
+.textured *
+{
+  position:relative;
+  top:0;bottom:0;left:0;right:0;
+}
+.textured .label
+{
+  padding:0 5px 0 5px;
+  font: normal 1.4em SilverAgeUCBBBold, 'Comic Sans MS', sans-serif;
+  text-transform:uppercase;
+}
+
+/*
+  Need to specify the background color 3 times:
+  
+  1) background-color: #000;
+  Solid color fallback for browsers that don't support rgba (IE 6, FF <= 2.x, Safari <= 2.x, Opera <= 9.x)
+  Must come before rgba and be in hex due to some bugs in IE: http://css-tricks.com/rgba-browser-support/
+  
+  2) background-color: rgba(0, 0, 0, .67);
+  For modern browsers.
+  
+  3) background:transparent;
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#aa000000,endColorStr=#aa000000);
+     -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa000000,endColorstr=#aa000000)";
+     zoom: 1;
+  This enables transparent elements in IE 7 & 8. The hex format is #AARRGGBB, and since we're using 67% alpha = 0.67 * 255 = #aa.
+*/
+
+.textured.red .bg {
+  background-color: #c00;
+  background-color: rgba(204, 0, 0, .57);
+}
+.ie .textured.red .bg {
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#91cc0000,endColorStr=#91cc0000);
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#91cc0000,endColorstr=#91cc0000)";
+  zoom: 1;
+}
+
+.textured.orange .bg {
+  background-color: #f60;
+  background-color: rgba(255, 102, 0, .67);
+}
+.ie .textured.orange .bg {
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#aaff6600,endColorStr=#aaff6600);
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#aaff6600,endColorstr=#aaff6600)";
+  zoom: 1;
+}
+
+.textured.yellow .bg {
+  background-color: #ff0;
+  background-color: rgba(255, 255, 0, .67);
+}
+.ie .textured.yellow .bg {
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#aaffff00,endColorStr=#aaffff00);
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#aaffff00,endColorstr=#aaffff00)";
+  zoom: 1;
+}
+
+.textured.green .bg {
+  background-color: #260;
+  background-color: rgba(34, 102, 0, 0.5);
+}
+.ie .textured.green .bg {
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#80226600,endColorStr=#80226600);
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#80226600,endColorstr=#80226600)";
+  zoom: 1;
+}
+
+.textured.light_blue .bg {
+  background-color: #36c;
+  background: rgb(51, 102, 204);
+  background-color: rgba(51, 102, 204, .67);
+}
+.ie .textured.light_blue .bg {
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#aa3366cc,endColorStr=#aa3366cc);
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa3366cc,endColorstr=#aa3366cc)";
+  zoom: 1;
+}
+
+.textured.blue .bg {
+  background-color: #039;
+  background-color: rgba(0, 51, 153, .67);
+}
+.ie .textured.blue .bg {
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#aa003399,endColorStr=#aa003399);
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa003399,endColorstr=#aa003399)";
+  zoom: 1;
+}
+
+.textured.light_violet .bg {
+  background-color: #639;
+  background-color: rgba(102, 51, 153, .67);
+}
+.ie .textured.light_violet .bg {
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#aa663399,endColorStr=#aa663399);
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa663399,endColorstr=#aa663399)";
+  zoom: 1;
+}
+
+.textured.violet .bg {
+  background-color: #306;
+  background-color: rgba(51, 0, 102, .67);
+}
+.ie .textured.violet .bg {
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#aaff0000,endColorStr=#aaff0000);
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#aaff0000,endColorstr=#aaff0000)";
+  zoom: 1;
+}
+
+.textured.light_gray .bg {
+  background-color: #b4b4b4;
+  background-color: rgba(180, 180, 180, .67);
+}
+.ie .textured.light_gray .bg {
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#aab4b4b4,endColorStr=#aab4b4b4);
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#aab4b4b4,endColorstr=#aab4b4b4)";
+  zoom: 1;
+}
+
+.textured.gray .bg {
+  background-color: #333;
+  background-color: rgba(51, 51, 51, .67);
+}
+.ie .textured.gray .bg {
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#aa333333,endColorStr=#aa333333);
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa333333,endColorstr=#aa333333)";
+  zoom: 1;
+}
+
+.textured.white .bg {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, .67);
+}
+.ie .textured.white .bg {
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#aaffffff,endColorStr=#aaffffff);
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#aaffffff,endColorstr=#aaffffff)";
+  zoom: 1;
+}
+
+/* Darker backgrounds need lighter font */
+.textured.dark .label { color: #fff; }
+.textured.dark:hover .label { color:#000; }
+.textured.dark:active .label { color: #fff; }
