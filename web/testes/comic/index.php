@@ -27,21 +27,21 @@
   <script src="/javascripts/application.js?<?php echo time(); ?>" type="text/javascript"></script>
 
   <!--[if !IE 7]>
-                <style type="text/css">
-                        #creator-container {display:table;height:100%}
-                </style>
-        <![endif]-->
+      <style type="text/css">
+              #creator-container {display:table;height:100%}
+      </style>
+  <![endif]-->
 
   <style type="text/css">
     /* Change the default so we can make the comic creator use 100% of the available area. */
     body {
-      background:#e3e3e3 url('/images/newsprint_tile.jpg');
+      background:#e3e3e3 url('images/newsprint_tile.jpg');
     }
     #creator-container {
       width:100%;
       height:100%;
       /*background:url(/images/blue_tile.jpg);*/
-      background:#e3e3e3 url('/images/newsprint_tile.jpg');
+      background:#e3e3e3 url('images/newsprint_tile.jpg');
     }
     #creator-header {
       clear:both;
@@ -49,7 +49,7 @@
       min-width:765px;
       /*height:100px;*/
       height:60px;
-      background:url('/images/creator-header-bg.png') repeat-x;
+      background:url('images/creator-header-bg.png') repeat-x;
     }
     #creator-header #left {
       float:left;
@@ -172,14 +172,14 @@
     }
   </style>
 
+  <!--script src="/javascripts/jquery.js?1299443147" type="text/javascript"></script>
+  <script src="/javascripts/rails.js?1299443147" type="text/javascript"></script-->
+  <script src="http://cmais.com.br/portal/js/swfobject/swfobject.js" type="text/javascript"></script>
+  <!--script src="/javascripts/application.js?1299443147" type="text/javascript"></script>
   <script src="/javascripts/jquery.js?1299443147" type="text/javascript"></script>
-<script src="/javascripts/rails.js?1299443147" type="text/javascript"></script>
-<script src="/javascripts/swfobject.js?1299443147" type="text/javascript"></script>
-<script src="/javascripts/application.js?1299443147" type="text/javascript"></script>
-  <script src="/javascripts/jquery.js?1299443147" type="text/javascript"></script>
-<script src="/javascripts/rails.js?1299443147" type="text/javascript"></script>
-<script src="/javascripts/extMouseWheel.js?1299443147" type="text/javascript"></script>
-<script src="/javascripts/application.js?1299443147" type="text/javascript"></script>
+  <script src="/javascripts/rails.js?1299443147" type="text/javascript"></script-->
+  <script src="/javascripts/extMouseWheel.js" type="text/javascript"></script>
+  <!--script src="/javascripts/application.js?1299443147" type="text/javascript"></script-->
 
   <script type="text/javascript">
     var flashvars = {
@@ -195,7 +195,7 @@
       name: "creator"
     };
 
-    swfobject.embedSWF("/swf/creator.swf", "replace_swf", "100%", "100%", "10.0.0", "/swf/expressInstall.swf", flashvars, params, attributes);
+    swfobject.embedSWF("/swf/creator.swf", "replace_swf", "100%", "100%", "10.0.0", "/portal/js/swfobject/expressInstall.swf", flashvars, params, attributes);
 
     var changedHover = false;
     $(function(){
@@ -257,14 +257,14 @@
           height: 60
         }, 500, function() {
           $("#initial-div").show();
-          $("#creator-header").css("background","url('/images/creator-header-bg.png') repeat-x");
+          $("#creator-header").css("background","url('images/creator-header-bg.png') repeat-x");
         });
       });
     });
     
     function hideTop(moveTabs) {
       $("#initial-div").hide();
-      $("#creator-header").css("background","url('/images/blue_tile.jpg')");
+      $("#creator-header").css("background","url('images/blue_tile.jpg')");
       if (moveTabs) {
         $("#creator-header #left #creator-tabs").animate({
           "margin-top":"60px"
@@ -434,7 +434,7 @@
       }
       }
     })(jQuery)
-    jQuery.preLoadImages("/images/blue_tile.jpg");
+    jQuery.preLoadImages("images/blue_tile.jpg");
 
   </script>
 </head>
@@ -444,7 +444,7 @@
     <header id="creator-header">
       <div id="left">
         <div id="logo-div">
-          <img alt="Chogger-logo-100" id="logo" src="/images/logo/chogger-logo-100.png?1299443147" title="Chogger" />
+          <img alt="Chogger-logo-100" id="logo" src="images/logo/chogger-logo-100.png" title="Chogger" />
         </div>
         <div id="creator-tabs">
           <div>
