@@ -444,7 +444,7 @@
     <header id="creator-header">
       <div id="left">
         <div id="logo-div">
-          <img alt="Chogger-logo-100" id="logo" src="images/logo/chogger-logo-100.png" title="Chogger" />
+          <img alt="Chogger-logo-100" id="logo" src="images/chogger-logo-100.png" title="Chogger" />
         </div>
         <div id="creator-tabs">
           <div>
@@ -582,7 +582,7 @@
                   
                   <br /><br />
                   <div style="margin-top:14px;">
-                    <a href="#"><img src="/images/authbuttons/facebook_32.png"></a>&nbsp;&nbsp;<a href="#"><img src="/images/authbuttons/twitter_32.png"></a>
+                    <a href="#">facebook<!--img src="/images/authbuttons/facebook_32.png"--></a>&nbsp;&nbsp;<a href="#">twitter<!--img src="/images/authbuttons/twitter_32.png"--></a>
                     <a href="#" class="textured blue dark" id="sign-up-submit" style="width:150px; padding:2px; font-size:13px"><span class="bg"></span><span class="label">Sign Up</span></a>
                     <a href="#" class="cancel-button" style="color:#000; font-size:20px">Cancel</a>
                   </div>
