@@ -18,7 +18,7 @@
 
  
 
-  <link href="css/button.css?<?php echo time(); ?>" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/buttons.css?<?php echo time(); ?>" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/style.css?<?php echo time(); ?>" media="screen" rel="stylesheet" type="text/css" />
   <script src="http://cmais.com.br/portal/js/jquery-1.4.4.min.js?<?php echo time(); ?>" type="text/javascript"></script>
   <script src="http://cmais.com.br/portal/js/rails.js?<?php echo time(); ?>" type="text/javascript"></script>
