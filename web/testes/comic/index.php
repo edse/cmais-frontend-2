@@ -195,7 +195,7 @@
       name: "creator"
     };
 
-    swfobject.embedSWF("/swf/creator.swf", "replace_swf", "100%", "100%", "10.0.0", "/portal/js/swfobject/expressInstall.swf", flashvars, params, attributes);
+    swfobject.embedSWF("swf/creator.swf", "replace_swf", "100%", "100%", "10.0.0", "/portal/js/swfobject/expressInstall.swf", flashvars, params, attributes);
 
     var changedHover = false;
     $(function(){
