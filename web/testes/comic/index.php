@@ -172,14 +172,10 @@
     }
   </style>
 
-  <!--script src="/javascripts/jquery.js?1299443147" type="text/javascript"></script>
-  <script src="/javascripts/rails.js?1299443147" type="text/javascript"></script-->
+
   <script src="http://cmais.com.br/portal/js/swfobject/swfobject.js" type="text/javascript"></script>
-  <!--script src="/javascripts/application.js?1299443147" type="text/javascript"></script>
-  <script src="/javascripts/jquery.js?1299443147" type="text/javascript"></script>
-  <script src="/javascripts/rails.js?1299443147" type="text/javascript"></script-->
-  <script src="/javascripts/extMouseWheel.js" type="text/javascript"></script>
-  <!--script src="/javascripts/application.js?1299443147" type="text/javascript"></script-->
+  <script src="js/extMouseWheel.js" type="text/javascript"></script>
+  
 
   <script type="text/javascript">
     var flashvars = {
