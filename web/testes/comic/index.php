@@ -24,7 +24,7 @@
   <script src="http://cmais.com.br/portal/js/rails.js?<?php echo time(); ?>" type="text/javascript"></script>
   <script src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js?<?php echo time(); ?>" type="text/javascript"></script>
   <!--script src="/javascripts/modernizr-1.6.min.js?<?php echo time(); ?>" type="text/javascript"></script-->
-  <script src="/javascripts/application.js?<?php echo time(); ?>" type="text/javascript"></script>
+  <script src="js/application.js?<?php echo time(); ?>" type="text/javascript"></script>
 
   <!--[if !IE 7]>
       <style type="text/css">
