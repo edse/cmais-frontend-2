@@ -37,13 +37,13 @@
 #carrossel-destaque{display:none;}
 
 @media only screen 
-and (min-width : 641px) {
+and (min-device-width : 981px){
   #carrossel-destaque-mobile{display:none;}
   #carrossel-destaque{display:block;}
 }
 
 @media only screen 
-and (max-width : 640px) {
+and (max-device-width : 980px){
   #carrossel-destaque-mobile{display:block;}
   #carrossel-destaque{display:none;}
 }
