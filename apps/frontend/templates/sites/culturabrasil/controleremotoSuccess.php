@@ -61,7 +61,7 @@
         }
         
         //if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
-        if(FlashDetect.installed && FlashDetect.major >= 20){ 
+        if(FlashDetect.installed && FlashDetect.major >= 10){ 
           jwplayer("div_player").setup({
               file: "rtmp://200.136.27.12/live/radioam",
               width: 360,
