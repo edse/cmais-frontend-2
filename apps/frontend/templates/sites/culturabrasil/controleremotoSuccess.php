@@ -78,7 +78,7 @@
             $(".jp-volume-bar").hide();
           }
         
-          if(supportsAudio() != true) {
+          if(supportsAudio() == true) {
             $("#jquery_jplayer_2").jPlayer({
               ready: function () {
                 $(this).jPlayer("setMedia", {
@@ -92,8 +92,9 @@
               wmode: "window"
             });
           }else{
-            //NAO SUPORTA SWF NEM HTML5
-            $("#div_player").html("Navegador não suporta HTML5 e o plugin do Flash desatualizado. Clique aqui para instalar/atualizar plugin do Flash.")
+            //NAO SUPORTA FLASH E HTML5
+            $("#div_player").html('Não foi possível carregar o Player do Audio pois o seu navegador não suporta HTML5 e o plugin do Adobe Flash também não está instalado/atualizado. <a href="http://get.adobe.com/br/flashplayer/" target="_blank">Clique aqui</a> para instalar/atualizar plugin do Adobe Flash.');
+            $(".cr-header-pgm").hide();
           }
         }
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
