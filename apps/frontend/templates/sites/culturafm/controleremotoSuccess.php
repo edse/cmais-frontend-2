@@ -81,8 +81,11 @@
       //<![CDATA[
       $(document).ready(function(){
         
+        function supportsAudio() {
+          return !!document.createElement('audio').canPlayType;
+        }
         //if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
-        if(FlashDetect.installed){
+        if(FlashDetect.installed && FlashDetect.major >= 10){
           jwplayer("div_player").setup({
               file: "rtmp://200.136.27.12/live/radiofm",
               width: 360,
@@ -96,21 +99,26 @@
             $(".jp-volume_controls").hide();
             $(".jp-volume-bar").hide();
           }
-          
-          $("#jquery_jplayer_2").jPlayer({
-            ready: function () {
-              $(this).jPlayer("setMedia", {
-                mp3: "http://midiaserver.tvcultura.com.br:8003/;stream/1"
-              }).jPlayer("play");
-            },
-            swfPath: "/portal/controle-remoto/swf",
-            supplied: "mp3",
-            //solution: 'flash,html',
-            cssSelectorAncestor: "#jp_container_2",
-            wmode: "window"
-          });
-       } 
-              
+          if(supportsAudio() == true) {
+            $("#jquery_jplayer_2").jPlayer({
+              ready: function () {
+                $(this).jPlayer("setMedia", {
+                  mp3: "http://midiaserver.tvcultura.com.br:8003/;stream/1"
+                }).jPlayer("play");
+              },
+              swfPath: "/portal/controle-remoto/swf",
+              supplied: "mp3",
+              //solution: 'flash,html',
+              cssSelectorAncestor: "#jp_container_2",
+              wmode: "window"
+            });
+           }else{
+              //NAO SUPORTA FLASH E HTML5
+              $("#div_player").html('Não foi possível carregar o audio pois o seu navegador não suporta HTML5 e o plugin do Flash não está instalado/atualizado. <a href="http://get.adobe.com/br/flashplayer/" target="_blank">Clique aqui</a> para instalar/atualizar plugin do Flash.');
+              $(".cr-header-pgm").hide();
+           }
+         } 
+
        function LoadProgramacao(){
          time = new Date().getTime();
          $.ajax({
