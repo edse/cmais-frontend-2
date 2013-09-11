@@ -55,6 +55,11 @@
        $(document).ready(function(){
         $(".cr-det-mus-pgm").hide();        
         
+        
+        function supportsAudio() {
+          return !!document.createElement('audio').canPlayType;
+        }
+        
         //if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
         if(FlashDetect.installed){ 
           jwplayer("div_player").setup({
@@ -72,21 +77,25 @@
             $(".jp-volume_controls").hide();
             $(".jp-volume-bar").hide();
           }
-          
-          $("#jquery_jplayer_2").jPlayer({
-            ready: function () {
-              $(this).jPlayer("setMedia", {
-                mp3: "http://midiaserver.tvcultura.com.br:8001/;stream/1"
-              }).jPlayer("play");
-            },
-            swfPath: "/portal/controle-remoto/swf",
-            supplied: "mp3",
-            solution: 'html,flash',
-            cssSelectorAncestor: "#jp_container_2",
-            wmode: "window"
-          });
+        
+          if(supportsAudio() == true) {
+            $("#jquery_jplayer_2").jPlayer({
+              ready: function () {
+                $(this).jPlayer("setMedia", {
+                  mp3: "http://midiaserver.tvcultura.com.br:8001/;stream/1"
+                }).jPlayer("play");
+              },
+              swfPath: "/portal/controle-remoto/swf",
+              supplied: "mp3",
+              solution: 'html',
+              cssSelectorAncestor: "#jp_container_2",
+              wmode: "window"
+            });
+          }else{
+            //NAO SUPORTA SWF NEM HTML5
+            $("#div_player").html("Navegador não suporta html5 e/ou flash está desatualizado. Instale agora o plugin do flash")
+          }
         }
-      
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         function LoadInfoMusica(){
           time = new Date().getTime();
