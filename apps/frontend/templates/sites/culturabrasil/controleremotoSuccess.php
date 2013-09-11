@@ -78,7 +78,7 @@
             $(".jp-volume-bar").hide();
           }
         
-          if(supportsAudio() == true) {
+          if(supportsAudio() != true) {
             $("#jquery_jplayer_2").jPlayer({
               ready: function () {
                 $(this).jPlayer("setMedia", {
