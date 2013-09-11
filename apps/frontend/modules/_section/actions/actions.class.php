@@ -538,9 +538,11 @@ class _sectionActions extends sfActions
                     ->execute();
                     
                   $allowedSites[] = $this->section->Site->id; // cultura brasil entra na busca
+                  $allowedSites[] = 1253; // cultura brasil entra na busca
                   foreach($programs as $p) {
                     $allowedSites[] = $p->getSiteId(); // programas do cultura brasil entram na busca
                   }
+                  
                                     
                   $this->assetsQuery = Doctrine_Query::create()
                     ->select('a.*')
