@@ -2,7 +2,7 @@
 <?php
 $u = explode("/", $url);
 array_pop($u);
-$base_url = implode("/", $u);
+$base_url = str_replace("/index.php", "", implode("/", $u));
 $nextDateUrl = $base_url."/".str_replace("/","-",$nextDate); 
 $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate); 
 ?>
