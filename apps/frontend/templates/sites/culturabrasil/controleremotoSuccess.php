@@ -93,7 +93,7 @@
             });
           }else{
             //NAO SUPORTA SWF NEM HTML5
-            $("#div_player").html("Navegador não suporta html5 e/ou flash está desatualizado. Instale agora o plugin do flash")
+            $("#div_player").html("Navegador não suporta HTML5 e o plugin do Flash desatualizado. Clique aqui para instalar/atualizar plugin do Flash.")
           }
         }
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
