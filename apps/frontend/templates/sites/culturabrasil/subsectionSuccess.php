@@ -96,7 +96,11 @@ if(isset($pager)){
       <div class="destaque-cultura subsection">
         <div class="programa subsection">
           <span class="interna">
-            <?php echo $site->getTitle(); ?>
+            <?php if($section->getSlug() != "home"): ?>
+              <?php echo $section->getTitle(); ?>
+            <?php else: ?>
+              <?php echo $site->getTitle(); ?>
+            <?php endif; ?>
           </span>
           <i class="borda-titulo subsection"></i>
         </div>

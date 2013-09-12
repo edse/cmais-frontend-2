@@ -538,9 +538,11 @@ class _sectionActions extends sfActions
                     ->execute();
                     
                   $allowedSites[] = $this->section->Site->id; // cultura brasil entra na busca
+                  $allowedSites[] = 1253; // cultura brasil entra na busca
                   foreach($programs as $p) {
                     $allowedSites[] = $p->getSiteId(); // programas do cultura brasil entram na busca
                   }
+                  
                                     
                   $this->assetsQuery = Doctrine_Query::create()
                     ->select('a.*')
@@ -744,7 +746,7 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
               $this->assetsQuery->orderBy('a.created_at desc');
             }
-            else if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class", "manha-cultura", "entrelinhas-1", "cd-da-semana", "alma-brasileira", "arquivo-vivo"))){
+            else if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class", "manha-cultura", "entrelinhas-1", "cd-da-semana", "alma-brasileira", "arquivo-vivo", "bravo", "na-vertigem-do-dia", "joao-carlos-martins", "seguindo-a-opera"))){
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, SectionAsset sa')
@@ -1912,7 +1914,7 @@ class _sectionActions extends sfActions
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/culturabrasil/subsection');
           }
         }
-        elseif(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class","manha-cultura", "entrelinhas-1", "cd-da-semana", "alma-brasileira", "arquivo-vivo"))){
+        elseif(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class","manha-cultura", "entrelinhas-1", "cd-da-semana", "alma-brasileira", "arquivo-vivo","bravo", "na-vertigem-do-dia", "joao-carlos-martins", "seguindo-a-opera"))){
           if($debug) print "<br>13-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new');
         }

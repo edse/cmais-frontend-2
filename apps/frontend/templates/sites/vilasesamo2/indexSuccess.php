@@ -65,15 +65,8 @@
 
 <script>
 //verificação de tela
-window.addEventListener("resize", function() {
-  machineScreenSize();
-}, false);
-window.addEventListener('load', function() {
-  machineScreenSize();
-});
-window.addEventListener("orientationchange", function() {
-  machineScreenSize();
-}, false);
+
+
 //carrossel personagens home
 $('#carrossel-p').responsiveCarousel({
   arrowLeft: '.arrow-left span.personagens',
@@ -104,12 +97,15 @@ if(navigator.appName!='Microsoft Internet Explorer'){
   //carrossel personagens redraw pra tablet e celular home
   window.addEventListener('load', function() {
     $('.carrossel-p, #carrossel-mobile').responsiveCarousel('redraw');
+    machineScreenSize();
   });
   window.addEventListener("orientationchange", function() {
     $('.carrossel-p, #carrossel-mobile').responsiveCarousel('redraw');
+    machineScreenSize();
   }, false);
   window.addEventListener("resize", function() {
     $('.carrossel-p, #carrossel-mobile').responsiveCarousel('redraw');
+    machineScreenSize();
   }, false);
   //carrossel personagens redraw pra tablet e celular home
 }
@@ -137,7 +133,15 @@ $('.inner.personagens a').mouseleave(function(){
 });
 
 //carrossel personagens
-
+function windowSize(){
+  if(screen.width >= 640){
+    $('#carrossel-destaque').css('display','block');
+    $('#carrossel-destaque-mobile').css('display','none');
+  }else{
+    $('#carrossel-destaque').css('display','none');
+    $('#carrossel-destaque-mobile').css('display','block');
+  }
+}
 function machineScreenSize(){
   //alert(window.innerWidth);
   //alert(window.screen.width);
@@ -158,7 +162,7 @@ function machineScreenSize(){
       botoesPersonagensTablet();
     }else{
       //alert("Aplicar Versão Desktop");
-      <?php $desktop = true; ?>
+
     }
   }
 }
