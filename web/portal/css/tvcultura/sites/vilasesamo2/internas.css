@@ -210,6 +210,8 @@ body { background:#0172f9; }
 
 /* incluir */
 .bg-incluir { background:#fee133; }
+.bg-incluir #content { margin-top:15px; }
+
 .incluir h2 { color:#434343; font-weight:bold; font-size: 25px; line-height:28px; }
 .incluir h2.tit { line-height:60px; height:60px; margin:0; border-bottom:2px solid #fbc227; border-top:2px solid #fbc227; padding-left:2%; }
 .incluir .redes  { right:0.7%;  }
