@@ -10,18 +10,18 @@
 <!-- /HEADER -->
 <div id="content">
   
-    <section class="pais">
+    <section class="pais incluir">
     <span class="divisa"></span>
-    <h2>Para adultos <span class="sprite-seta-down"></span></h2>
+    <h2>Incluir Brincando</h2>
+    <div class="redes">
+      <ul class="dropdown-menu">
+          <li><a href="#">categoria 01</a></li>
+          <li><a href="#">categoria 02</a></li>
+          <li><a href="#">categoria 03</a></li>
+          <li><a href="#">categoria 04</a></li>
+        </ul>
+    </div>
     <div class="content span12 row-fluid">
-      
-      <div class="redes">
-        <p>Compartilhe esta brincadeira:</p>
-        <g:plusone size="medium" count="false"></g:plusone>
-        <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pinterest" style="margin-top:-10px;" /></a>
-        <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false"></fb:like>
-        <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
-      </div>
       <div class="span4 dica">
         <span class="sprite-aspa-esquerda"></span>
         <h2><a href="#">Nome da Dica</a></h2>
