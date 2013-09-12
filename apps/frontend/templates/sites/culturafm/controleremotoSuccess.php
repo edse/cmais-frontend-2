@@ -12,10 +12,8 @@
     <link href="/portal/controle-remoto/css/jPlayer.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/portal/controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />
     
-    <script type="text/javascript" src="http://jwpsrv.com/library/ho1pahu4EeOIrSIACusDuQ.js"></script>    
+    <script type="text/javascript" src="http://jwpsrv.com/library/CSQ2LAE6EeOsRSIACusDuQ.js"></script>    
     
-    <?php
-    /*
     <!--DFP -->
     <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
     <script type='text/javascript'>
@@ -29,8 +27,6 @@
     GA_googleFetchAds();
     </script>
     <!-- /DFP -->
-    */
-    ?>
     
     <script type='text/javascript'>
     var googletag = googletag || {};
