@@ -208,4 +208,8 @@ body { background:#0172f9; }
 .isotope-hidden.isotope-item {  pointer-events: none;  z-index: 1;}
 /* /isotope*/
 
-
+.incluir h2 { color:#434343; font-weight:bold; font-size: 25px; line-height:28px; }
+.incluir h2.tit { line-height:60px; height:60px; margin:0; border-bottom:2px solid #fbc227; border-top:2px solid #fbc227; }
+.incluir .redes  { right:0.7%;  }
+.incluir .redes.btn-group {   width:32%;  }
+.incluir { border-bottom: 7px solid #fffb49;    border-top: 7px solid #fffb49;}
