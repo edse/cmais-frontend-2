@@ -17,7 +17,7 @@
                   rel="publisher" target="_top" style="text-decoration:none;">
                   <img src="//ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="margin: 2px;border:0;width:20px;height:20px;"/>
                 </a>
-              <?php endif;?>
+              <?php endif;?> 
               </li>                        
               <li><a class="fb" href="<?php if($site->getFacebookUrl()): ?><?php echo $site->getFacebookUrl() ?><?php else: ?>http://facebook.com/tvcultura<?php endif; ?>" title="Facebook" target="_blank">Facebook</a></li>
               <li><a class="twt" href="<?php if($site->getTwitterUrl()): ?><?php echo $site->getTwitterUrl() ?><?php else: ?>http://twitter.com/tvcultura<?php endif; ?>" title="Twitter" target="_blank">Twitter</a></li>
