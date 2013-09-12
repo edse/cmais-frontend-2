@@ -208,4 +208,6 @@ body { background:#0172f9; }
 .isotope-hidden.isotope-item {  pointer-events: none;  z-index: 1;}
 /* /isotope*/
 
+.incluir h2 { color:#434343; font-weight:bold; font-size: 25px; line-height:28px; }
+
 
