@@ -5,7 +5,12 @@
               <?php if($site->getSlug()!="culturalivre"):?>  
                 <g:plusone size="medium" count="false"></g:plusone>
               <?php else: ?>
-                c
+                <!-- Place this code where you want the badge to render. -->
+                <a href="https://plus.google.com/109467063583927278542?prsrc=3"
+                  rel="publisher" target="_top" style="text-decoration:none;">
+                  <img src="//ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="border:0;width:16px;height:16px;"/>
+                </a>
+                
               <?php endif;?>
               </div>
               <fb:like href="<?php if($site->getFacebookUrl()): ?><?php echo $site->getFacebookUrl() ?><?php else: ?><?php echo $uri ?><?php endif; ?>" layout="button_count" show_faces="false" send="true" width="160"></fb:like>
