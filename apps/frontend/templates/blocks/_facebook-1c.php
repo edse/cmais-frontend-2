@@ -1,6 +1,6 @@
               <!-- BOX FACEBOOK -->
               <div class="box-padrao facebook" style="background-color: white; width:300px; margin:0 0 20px 0; float:left;">
-                  <?php if($site->getSlug()=="culturalivre"):?>
+                  <?php if($site->getSlug()!="culturalivre"):?>
                     <g:plusone></g:plusone>
                   <?php else: ?>
                     <!-- Place this tag where you want the widget to render. -->
