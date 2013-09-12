@@ -52,6 +52,7 @@
   </div>
     <div class="span6">
       <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php $related_image = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
       <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
       <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>
           
@@ -68,9 +69,9 @@
         
         <ul class="imprimir"> 
         <!-- figura -->
-         
-            
-      <?php if(count($related_preview)>0): ?>
+      <?php if (count($related_image) > 0): ?>   
+           <img src="<?php echo $related_image[0]->retriveImageUrlByImageUsage("original") ?>"> 
+      <?php elseif(count($related_preview)>0): ?>
       <?php for($i=1; $i < count($related_preview); $i++): ?>   
         <li class="span4">
           
@@ -84,7 +85,8 @@
 
         <?php endif; ?>
         <?php endif; ?>
-       <?php endif; ?>   
+       <?php endif; ?>
+          
          
       <?php if(count($related_video)==0): ?>
       <!-- figura -->
