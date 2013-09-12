@@ -3,7 +3,7 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/tooltip.js"></script>
 <link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
-<!-- container-->
+<!-- container-->teste
 <div class="container tudo">
   <!--topo coco-->
   <?php include_partial_from_folder('sites/cocorico', 'global/topo-coco', array('site'=>$site)) ?>
