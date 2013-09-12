@@ -9,16 +9,19 @@
 <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))?>
 <!-- /HEADER -->
 <div id="content">
-  <section class="pais incluir">
+  <section class="pais">
     <span class="divisa"></span>
     <h2>Incluir Brincando</h2>
-    <ul class="dropdown-menu">
-      <li><a href="#">categoria 01</a></li>
-      <li><a href="#">categoria 02</a></li>
-      <li><a href="#">categoria 03</a></li>
-      <li><a href="#">categoria 04</a></li>
-    </ul>
     <div class="content span12 row-fluid">
+      <div class="btn-group">
+        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">categoria 01</a></li>
+          <li><a href="#">categoria 02</a></li>
+          <li><a href="#">categoria 03</a></li>
+          <li><a href="#">categoria 04</a></li>
+        </ul>
+      </div>
       <div class="span4 dica">
         <span class="sprite-aspa-esquerda"></span>
         <h2><a href="#">Nome da Dica</a></h2>
@@ -55,11 +58,11 @@
   </section>
   <section class="filtro row-fluid">
     <div class="span12">
-      <?php 
-      include_partial_from_folder('sites/vilasesamo2', 'global/mobile_detect');
-      $detect = new Mobile_Detect();
-      if ($detect->isTablet() || $detect->isMobile()) {
-      // Any tablet device.
+      <?php
+include_partial_from_folder('sites/vilasesamo2', 'global/mobile_detect');
+$detect = new Mobile_Detect();
+if ($detect->isTablet() || $detect->isMobile()) {
+// Any tablet device.
       ?>
       <!--script-->
       <script type="text/javascript" src="/portal/js/smint/jquery.smint.js"></script>
@@ -82,7 +85,9 @@
         $('.barra-topo').smint();
 
       </script>
-      <?php      }      ?>
+      <?php
+      }
+      ?>
 
       <h3><i class="sprite-icon-jogos-med"></i>Jogos</h3>
       <div class="span10 destaque-filtro">
