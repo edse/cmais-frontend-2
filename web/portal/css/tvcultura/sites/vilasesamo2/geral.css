@@ -541,6 +541,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .pais .fechar-toogle {position:relative;  height:36px; line-height: 36px; clear:both; margin:0; display:none;  }
 .pais .sprite-seta-up { top:0; }
 .pais .fechar-toogle.ativo { display:block; }
+.pais .twitter-share-button { width: 90px; }
 /* /pais*/
 
 /* ie */
