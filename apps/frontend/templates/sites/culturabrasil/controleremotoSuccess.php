@@ -75,7 +75,7 @@
           
           */
           $(".cr-player").css("padding","15px 20px");
-          $("#div_player").html('<div id="audio" style="display:block;width:350px;height:25px;background-color:#000000;"> </div>');
+          $("#div_player").html('<div id="audio" style="display:block;width:360px;height:25px;background-color:#000000;"> </div>');
           
           //TESTE FLOWPLAYER
           $f("audio", 
