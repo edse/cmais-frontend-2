@@ -34,6 +34,8 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 #carrossel-interna .slider li .nome i { float:left; margin:0 15px; }
 #carrossel-interna .slider li .nome i.sprite-ico-videos-p { margin-top:4px; }
 #carrossel-interna .slider li .nome i.sprite-ico-jogos-p { margin-top:7px; }
+
+/* pais*/
 #content .pais { background:#feec3c; margin:0 auto !important; overflow:hidden; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 .pais .divisa { margin-bottom:0; }
 .pais h2 a,
@@ -53,23 +55,22 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .pais .content .sprite-aspa-direita { float:right; }
 .pais .content .dica { background:url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-amarelo.png) repeat; padding:1%; }
 .pais .content .span4 { margin-top:20px !important; }
-
 .pais .btn-group { width: 100%; }
 .pais .dropdown-toggle { width: 96%; }
-.btn-group > .dropdown-menu,
-.btn-group.open .btn.dropdown-toggle,
-.dropdown-menu > li > a,
+.pais .btn-group > .dropdown-menu,
+.pais .btn-group.open .btn.dropdown-toggle,
+.pais .dropdown-menu > li > a,
 .pais .dropdown-toggle { padding:0 2%; text-align:left; float:left; position:relative;  background:#fffb49; color:#737373; border:none; box-shadow: none; }
-.btn-group > .dropdown-menu { padding:0; background:#feec3c; width: 100%; margin-top:-2px;}
-.btn-group > .dropdown-menu a { width:100%; text-transform: uppercase; height: 36px; line-height: 36px;}
+.pais .btn-group > .dropdown-menu { padding:0; background:#feec3c; width: 100%; margin-top:-2px;}
+.pais .btn-group > .dropdown-menu a { width:100%; text-transform: uppercase; height: 36px; line-height: 36px;}
 .pais .dropdown-toggle { height:36px; line-height:36px; }
-.dropdown-menu > li { overflow:hidden; margin:1px 1px 0 1px; }
-.dropdown-menu > li > a:hover, 
-.dropdown-menu > li > a:focus, 
-.dropdown-submenu:hover > a, 
-.dropdown-submenu:focus > a { background:none !important; color:#737373 !important; }
-.dropdown-menu > li:focus,
-.dropdown-menu > li:hover{ 
+.pais .dropdown-menu > li { overflow:hidden; margin:1px 1px 0 1px; }
+.pais .dropdown-menu > li > a:hover, 
+.pais .dropdown-menu > li > a:focus, 
+.pais .dropdown-submenu:hover > a, 
+.pais .dropdown-submenu:focus > a { background:none !important; color:#737373 !important; }
+.pais .dropdown-menu > li:focus,
+.pais .dropdown-menu > li:hover{ 
 *background: rgb(255,251,73);
 background: rgb(255,251,73); /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -82,10 +83,7 @@ background: -ms-linear-gradient(left,  rgba(255,251,73,1) 0%,rgba(254,236,60,1) 
 background: linear-gradient(to right,  rgba(255,251,73,1) 0%,rgba(254,236,60,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', endColorstr='#feec3c',GradientType=1 ); /* IE6-8 */
 *background: rgb(255,251,73);
-
-
 }
-
 .pais .btn .caret { position:absolute; top:-5px; right:10px; border:none; } 
 .pais .publicidade { margin-top:20px; display: block; }
 .pais .row-fluid .span4 {  width: 32.05%; float:left;}
@@ -97,7 +95,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .pais .fechar-toogle {position:relative;  height:36px; line-height: 36px; clear:both; margin:0; display:none;  }
 .pais .sprite-seta-up { top:0; }
 .pais .fechar-toogle.ativo { display:block; }
-/*.pais { position:absolute; right:10px; top:-10px; }*/
+/* /pais*/
 
 /* form */
 #content section.form { background:#3aaaec; margin:0 auto; padding:20px; max-width:900px; }
