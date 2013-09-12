@@ -89,7 +89,11 @@
               width: 360,
               height: 30,
               autostart: true,
-              title: "Rádio Cultura FM"
+              title: "Rádio Cultura FM",
+              analytics: {
+                enabled: false,
+                cookies: false
+              }
           });
           $(".cr-player").css("padding","15px 20px");
         }else{
