@@ -1,7 +1,7 @@
           <!-- curtir -->
           <div class="redes">
             <div class="curtir">
-              <div style="display:block; float: left; margin-right:10px;">
+              <div style="display:block; float: left; margin-right:10px;<?php if($site->getSlug()=="culturalivre") echo "width:210px;" ?>">
               <?php if($site->getSlug()!="culturalivre"):?>  
                 <g:plusone size="medium" count="false"></g:plusone>
               <?php endif; ?>
@@ -15,7 +15,7 @@
                 <!-- Place this code where you want the badge to render. -->
                 <a href="https://plus.google.com/109467063583927278542?prsrc=3"
                   rel="publisher" target="_top" style="text-decoration:none;">
-                  <img src="//ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="margin: 2px;border:0;width:20px;height:20px;"/>
+                  <img src="//ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="margin: 0px 5px 2px 0px;border: 0;width: 24px;height: 24px;float: left;"/>
                 </a>
                
               <?php endif;?> 
