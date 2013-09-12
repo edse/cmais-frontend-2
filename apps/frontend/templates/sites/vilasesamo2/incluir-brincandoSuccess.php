@@ -10,7 +10,6 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="pais incluir">
-    <span class="divisa"></span>
     <h2>Incluir Brincando</h2>
     <div class="btn-group redes">
         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
