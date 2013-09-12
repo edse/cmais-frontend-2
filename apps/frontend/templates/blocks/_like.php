@@ -14,7 +14,7 @@
               
                 <!-- Place this code where you want the badge to render. -->
                 <a href="https://plus.google.com/109467063583927278542?prsrc=3"
-                  rel="publisher" target="_top" style="text-decoration:none;">
+                  rel="publisher" target="_top" style="text-decoration:none;" target="_blank">
                   <img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="margin: 0px 5px 2px 0px;border: 0;width: 24px;height: 24px;float: left;"/>
                 </a>
                
