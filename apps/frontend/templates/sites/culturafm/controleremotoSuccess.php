@@ -116,7 +116,7 @@
             });
            }else{
               //NAO SUPORTA FLASH E HTML5
-              $("#div_player").html('Não foi possível carregar o audio pois o seu navegador não suporta HTML5 e o plugin do Flash não está instalado/atualizado. <a href="http://get.adobe.com/br/flashplayer/" target="_blank">Clique aqui</a> para instalar/atualizar plugin do Flash.');
+              $("#div_player").html('Não foi possível carregar o Player do Audio pois o seu navegador não suporta HTML5 e o plugin do Adobe Flash também não está instalado/atualizado. <a href="http://get.adobe.com/br/flashplayer/" target="_blank">Clique aqui</a> para instalar/atualizar plugin do Adobe Flash.');
               $(".cr-header-pgm").hide();
            }
          } 
