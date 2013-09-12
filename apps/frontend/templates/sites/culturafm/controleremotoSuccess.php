@@ -104,7 +104,7 @@
                   mp3: "http://midiaserver.tvcultura.com.br:8003/;stream/1"
                 }).jPlayer("play");
               },
-              swfPath: "/portal/controle-remoto/swf",
+              swfPath: "/portal/controle-remoto/js",
               supplied: "mp3",
               //solution: 'flash,html',
               cssSelectorAncestor: "#jp_container_2",
