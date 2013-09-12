@@ -8,7 +8,7 @@
                 <!-- Place this code where you want the badge to render. -->
                 <a href="https://plus.google.com/109467063583927278542?prsrc=3"
                   rel="publisher" target="_top" style="text-decoration:none;">
-                  <img src="//ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="border:0;width:16px;height:16px;"/>
+                  <img src="//ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="margin: 2px;border:0;width:16px;height:16px;"/>
                 </a>
                 
               <?php endif;?>
