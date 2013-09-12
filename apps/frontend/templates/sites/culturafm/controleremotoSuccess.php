@@ -12,7 +12,7 @@
     <link href="/portal/controle-remoto/css/jPlayer.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/portal/controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />
     
-    <script type="text/javascript" src="http://jwpsrv.com/library/CSQ2LAE6EeOsRSIACusDuQ.js"></script>    
+    <script type="text/javascript" src="http://jwpsrv.com/library/ho1pahu4EeOIrSIACusDuQ.js"></script>    
     
     <?php
     /*
