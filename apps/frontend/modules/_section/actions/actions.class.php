@@ -832,6 +832,7 @@ class _sectionActions extends sfActions
                 ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
                 ->andWhere('a.is_active = ?', 1)
                 ->orderBy('sa.updated_at DESC')
+                ->limit(180)
                 ->execute();
             
               $assetIds = array();
