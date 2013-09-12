@@ -129,7 +129,7 @@
                         }
                       },
                   clip: {
-                    url: "radioam",
+                    url: "radiofm",
                     provider: "rtmp",
                     live: true,
                   },
