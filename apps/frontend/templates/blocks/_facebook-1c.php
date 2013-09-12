@@ -16,6 +16,9 @@
                        var s = document.getElementsByTagName('script')[0]; 
                        s.parentNode.insertBefore(po, s);
                      })();
+                     $(function(){
+                       $('#I1_1379014357203').css('height','335px');
+                     })
                     </script>
                   <?php endif; ?>    
                   <br /><br />
