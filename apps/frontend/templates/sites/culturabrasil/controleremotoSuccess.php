@@ -55,8 +55,15 @@
        $(document).ready(function(){
         $(".cr-det-mus-pgm").hide();        
         
+        
+        function supportsAudio() {
+            //return !!document.createElement('audio').canPlayType;
+            var a = document.createElement('audio');
+            return !!(a.canPlayType && a.canPlayType('audio/mpeg;').replace(/no/, ''));
+        }
+        
         //if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
-        if(FlashDetect.installed){ 
+        if(FlashDetect.installed && FlashDetect.major >= 10){ 
           jwplayer("div_player").setup({
               file: "rtmp://200.136.27.12/live/radioam",
               width: 360,
@@ -72,21 +79,26 @@
             $(".jp-volume_controls").hide();
             $(".jp-volume-bar").hide();
           }
-          
-          $("#jquery_jplayer_2").jPlayer({
-            ready: function () {
-              $(this).jPlayer("setMedia", {
-                mp3: "http://midiaserver.tvcultura.com.br:8001/;stream/1"
-              }).jPlayer("play");
-            },
-            swfPath: "/portal/controle-remoto/swf",
-            supplied: "mp3",
-            //solution: 'html,flash',
-            cssSelectorAncestor: "#jp_container_2",
-            wmode: "window"
-          });
+        
+          if(supportsAudio() == true) {
+            $("#jquery_jplayer_2").jPlayer({
+              ready: function () {
+                $(this).jPlayer("setMedia", {
+                  mp3: "http://midiaserver.tvcultura.com.br:8001/;stream/1"
+                }).jPlayer("play");
+              },
+              swfPath: "/portal/controle-remoto/swf",
+              supplied: "mp3",
+              solution: 'html',
+              cssSelectorAncestor: "#jp_container_2",
+              wmode: "window"
+            });
+          }else{
+            //NAO SUPORTA FLASH E HTML5
+            $("#div_player").html('Não foi possível carregar o Player do Audio pois o seu navegador não suporta HTML5 e o plugin do Adobe Flash também não está instalado/atualizado. <a href="http://get.adobe.com/br/flashplayer/" target="_blank">Clique aqui</a> para instalar/atualizar plugin do Adobe Flash.');
+            $(".cr-header-pgm").hide();
+          }
         }
-      
         //$("#jplayer_inspector_2").jPlayerInspector({jPlayer:$("#jquery_jplayer_2")});
         function LoadInfoMusica(){
           time = new Date().getTime();
