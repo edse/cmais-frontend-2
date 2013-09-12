@@ -209,5 +209,6 @@ body { background:#0172f9; }
 /* /isotope*/
 
 .incluir h2 { color:#434343; font-weight:bold; font-size: 25px; line-height:28px; }
-.incluir .redes  { right:1%; width:32%; }
+.incluir .redes  { right:1%;  }
+.incluir .btn-group { width:32%;  }
 .incluir { border-bottom: 7px solid #fffb49;    border-top: 7px solid #fffb49;}
