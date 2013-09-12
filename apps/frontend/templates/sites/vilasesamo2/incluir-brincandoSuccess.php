@@ -10,7 +10,7 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="pais incluir">
-    <h2>Incluir Brincando</h2>
+    <h2 class="tit">Incluir Brincando</h2>
     <div class="btn-group redes">
         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
         <ul class="dropdown-menu">
