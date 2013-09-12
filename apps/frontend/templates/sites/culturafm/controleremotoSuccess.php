@@ -73,7 +73,7 @@
       <script src="/portal/controle-remoto/js/flash_detect.js" type="text/javascript"></script>
       
       <script type="text/javascript" src="/portal/controle-remoto/js/jquery.jplayer.inspector.js"></script>
-      <script type="text/javascript" src="http://releases.flowplayer.org/js/flowplayer-3.2.12.min.js"></script>
+      <script type="text/javascript" src="/portal/controle-remoto/flowplayer/flowplayer-3.2.12.min.js"></script>
       
       <script type="text/javascript">
       //<![CDATA[
@@ -104,7 +104,7 @@
           //TESTE FLOWPLAYER
           $f("audio", 
                   {
-                    src: "http://releases.flowplayer.org/swf/flowplayer-3.2.16.swf", 
+                    src: "/portal/controle-remoto/flowplayer/flowplayer-3.2.16.swf", 
                     title: "Rádio Cultura Brasil",
                     bgcolor: "#000000"
                   },
@@ -113,7 +113,7 @@
                      plugins:
                      {
                         rtmp: {
-                          url: "flowplayer.rtmp-3.2.12.swf",
+                          url: "/portal/controle-remoto/flowplayer/flowplayer.rtmp-3.2.12.swf",
                           netConnectionUrl: "rtmp://200.136.27.12/live",
                           failOverDelay: 4000
                         },
