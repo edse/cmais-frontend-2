@@ -217,5 +217,5 @@ body { background:#0172f9; }
 .incluir .redes  { right:0.7%;  }
 .incluir .redes.btn-group {   width:32%;  }
 .incluir { border-bottom: 7px solid #fffb49;    border-top: 7px solid #fffb49;}
-.incluir .span4 { margin-top:0; }
+.incluir .span4 { margin-top:0 !important; }
 /* incluir */
