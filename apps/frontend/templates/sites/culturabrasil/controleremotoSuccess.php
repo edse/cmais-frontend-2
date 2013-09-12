@@ -107,8 +107,8 @@
                   clip: {
                     url: "radioam",
                     provider: "rtmp",
-                    live: true,
-                  },
+                    live: true
+                  }
                 //play: null // no need to load the play button
                 });
 
