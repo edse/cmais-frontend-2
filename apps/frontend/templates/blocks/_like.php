@@ -1,7 +1,7 @@
           <!-- curtir -->
           <div class="redes">
-            <div class="curtir">
-              <div style="display:block; float: left; margin-right:10px;<?php if($site->getSlug()=="culturalivre") echo "width:210px;" ?>">
+            <div class="curtir" <?php if($site->getSlug()=="culturalivre") echo "style='width:210px;'" ?>>
+              <div style="display:block; float: left; margin-right:10px;">
               <?php if($site->getSlug()!="culturalivre"):?>  
                 <g:plusone size="medium" count="false"></g:plusone>
               <?php endif; ?>
