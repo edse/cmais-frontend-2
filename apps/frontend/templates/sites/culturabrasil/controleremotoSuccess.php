@@ -72,8 +72,9 @@
               autostart: true,
               title: "Rádio Cultura Brasil"
           });
-          $(".cr-player").css("padding","15px 20px");
+          
           */
+          $(".cr-player").css("padding","15px 20px");
           $("#div_player").html('<div id="audio" style="display:block;width:350px;height:25px;background-color:#000000;"> </div>');
           
           //TESTE FLOWPLAYER
