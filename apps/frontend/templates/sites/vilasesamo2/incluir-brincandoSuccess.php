@@ -9,11 +9,10 @@
 <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))?>
 <!-- /HEADER -->
 <div id="content">
-  <section class="pais">
+  <section class="pais incluir">
     <span class="divisa"></span>
     <h2>Incluir Brincando</h2>
-    <div class="content span12 row-fluid">
-      <div class="btn-group">
+    <div class="btn-group redes">
         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
         <ul class="dropdown-menu">
           <li><a href="#">categoria 01</a></li>
@@ -21,7 +20,9 @@
           <li><a href="#">categoria 03</a></li>
           <li><a href="#">categoria 04</a></li>
         </ul>
-      </div>
+    </div>
+    <div class="content span12 row-fluid">
+     
       <div class="span4 dica">
         <span class="sprite-aspa-esquerda"></span>
         <h2><a href="#">Nome da Dica</a></h2>
