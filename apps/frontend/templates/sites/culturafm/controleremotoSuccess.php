@@ -132,7 +132,7 @@
                     url: "radiofm",
                     provider: "rtmp",
                     live: true,
-                  },
+                  }
                 //play: null // no need to load the play button
                 });
           
