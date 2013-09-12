@@ -71,7 +71,8 @@
         <!-- figura -->
       <?php if (count($related_image) > 0): ?>   
            <img src="<?php echo $related_image[0]->retriveImageUrlByImageUsage("original") ?>"> 
-      <?php elseif(count($related_preview)>0): ?>
+      <?php endif; ?>
+      <?php if(count($related_preview)>0): ?>
       <?php for($i=1; $i < count($related_preview); $i++): ?>   
         <li class="span4">
           
