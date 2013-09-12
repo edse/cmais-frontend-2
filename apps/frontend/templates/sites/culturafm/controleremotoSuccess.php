@@ -82,7 +82,9 @@
       $(document).ready(function(){
         
         function supportsAudio() {
-          return !!document.createElement('audio').canPlayType;
+          //return !!document.createElement('audio').canPlayType;
+          var a = document.createElement('audio');
+          return !!(a.canPlayType && a.canPlayType('audio/mpeg;').replace(/no/, ''));
         }
         //if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
         if(FlashDetect.installed && FlashDetect.major >= 10){
