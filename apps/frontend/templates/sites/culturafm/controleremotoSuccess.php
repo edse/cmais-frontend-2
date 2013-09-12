@@ -82,7 +82,9 @@
       $(document).ready(function(){
         
         function supportsAudio() {
-          return !!document.createElement('audio').canPlayType;
+          //return !!document.createElement('audio').canPlayType;
+          var a = document.createElement('audio');
+          return !!(a.canPlayType && a.canPlayType('audio/mpeg;').replace(/no/, ''));
         }
         //if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
         if(FlashDetect.installed && FlashDetect.major >= 10){
@@ -114,7 +116,7 @@
             });
            }else{
               //NAO SUPORTA FLASH E HTML5
-              $("#div_player").html('Não foi possível carregar o audio pois o seu navegador não suporta HTML5 e o plugin do Flash não está instalado/atualizado. <a href="http://get.adobe.com/br/flashplayer/" target="_blank">Clique aqui</a> para instalar/atualizar plugin do Flash.');
+              $("#div_player").html('Não foi possível carregar o Player do Audio pois o seu navegador não suporta HTML5 e o plugin do Adobe Flash também não está instalado/atualizado. <a href="http://get.adobe.com/br/flashplayer/" target="_blank">Clique aqui</a> para instalar/atualizar plugin do Adobe Flash.');
               $(".cr-header-pgm").hide();
            }
          } 
