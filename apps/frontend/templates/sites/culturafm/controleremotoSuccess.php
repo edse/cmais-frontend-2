@@ -12,10 +12,8 @@
     <link href="/portal/controle-remoto/css/jPlayer.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/portal/controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />
     
-    <script type="text/javascript" src="http://jwpsrv.com/library/ho1pahu4EeOIrSIACusDuQ.js"></script>    
+    <script type="text/javascript" src="http://jwpsrv.com/library/CSQ2LAE6EeOsRSIACusDuQ.js"></script>    
     
-    <?php
-    /*
     <!--DFP -->
     <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
     <script type='text/javascript'>
@@ -29,8 +27,6 @@
     GA_googleFetchAds();
     </script>
     <!-- /DFP -->
-    */
-    ?>
     
     <script type='text/javascript'>
     var googletag = googletag || {};
@@ -83,11 +79,11 @@
         
         function supportsAudio() {
           //return !!document.createElement('audio').canPlayType;
-          var a = document.createElement('audio');
-          return !!(a.canPlayType && a.canPlayType('audio/mpeg;').replace(/no/, ''));
+          //var a = document.createElement('audio');
+          //return !!(a.canPlayType && a.canPlayType('audio/mpeg;').replace(/no/, ''));
         }
         //if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
-        if(FlashDetect.installed && FlashDetect.major >= 10){
+        if(FlashDetect.installed){
           jwplayer("div_player").setup({
               file: "rtmp://200.136.27.12/live/radiofm",
               width: 360,
@@ -101,7 +97,7 @@
             $(".jp-volume_controls").hide();
             $(".jp-volume-bar").hide();
           }
-          if(supportsAudio() == true) {
+          //if(supportsAudio() == true) {
             $("#jquery_jplayer_2").jPlayer({
               ready: function () {
                 $(this).jPlayer("setMedia", {
@@ -114,11 +110,11 @@
               cssSelectorAncestor: "#jp_container_2",
               wmode: "window"
             });
-           }else{
+           //}else{
               //NAO SUPORTA FLASH E HTML5
-              $("#div_player").html('Não foi possível carregar o Player do Audio pois o seu navegador não suporta HTML5 e o plugin do Adobe Flash também não está instalado/atualizado. <a href="http://get.adobe.com/br/flashplayer/" target="_blank">Clique aqui</a> para instalar/atualizar plugin do Adobe Flash.');
-              $(".cr-header-pgm").hide();
-           }
+             // $("#div_player").html('Não foi possível carregar o Player do Audio pois o seu navegador não suporta HTML5 e o plugin do Adobe Flash também não está instalado/atualizado. <a href="http://get.adobe.com/br/flashplayer/" target="_blank">Clique aqui</a> para instalar/atualizar plugin do Adobe Flash.');
+              //$(".cr-header-pgm").hide();
+           //}
          } 
 
        function LoadProgramacao(){
