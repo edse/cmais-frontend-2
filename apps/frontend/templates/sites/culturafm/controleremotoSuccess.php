@@ -73,6 +73,8 @@
       <script src="/portal/controle-remoto/js/flash_detect.js" type="text/javascript"></script>
       
       <script type="text/javascript" src="/portal/controle-remoto/js/jquery.jplayer.inspector.js"></script>
+      <script type="text/javascript" src="http://releases.flowplayer.org/js/flowplayer-3.2.12.min.js"></script>
+      
       <script type="text/javascript">
       //<![CDATA[
       $(document).ready(function(){
@@ -84,7 +86,7 @@
         }
         //if (navigator.mimeTypes["application/x-shockwave-flash"] != undefined && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
         if(FlashDetect.installed && FlashDetect.major >= 10){
-          jwplayer("div_player").setup({
+          /*jwplayer("div_player").setup({
               file: "rtmp://200.136.27.12/live/radiofm",
               width: 360,
               height: 30,
@@ -95,7 +97,45 @@
                 cookies: false
               }
           });
+          */
           $(".cr-player").css("padding","15px 20px");
+          $("#div_player").html('<div id="audio" style="display:block;width:360px;height:25px;background-color:#000000;"> </div>');
+          
+          //TESTE FLOWPLAYER
+          $f("audio", 
+                  {
+                    src: "http://releases.flowplayer.org/swf/flowplayer-3.2.16.swf", 
+                    title: "Rádio Cultura Brasil",
+                    bgcolor: "#000000"
+                  },
+                   
+                  {
+                     plugins:
+                     {
+                        rtmp: {
+                          url: "flowplayer.rtmp-3.2.12.swf",
+                          netConnectionUrl: "rtmp://200.136.27.12/live",
+                          failOverDelay: 4000
+                        },
+                        
+                        controls: {
+                          scrubber: true,
+                          fullscreen: false,
+                          autoHide: false,
+                          height: 25,
+                          timeFontSize: 15,
+                          backgroundColor: "#000000",
+                          backgroundGradient: [0.3, 0]
+                        }
+                      },
+                  clip: {
+                    url: "radiofm",
+                    provider: "rtmp",
+                    live: true
+                  }
+                //play: null // no need to load the play button
+                });
+          
         }else{
           if(window.screen.width < 1024){
             $(".jp-volume_controls").hide();
