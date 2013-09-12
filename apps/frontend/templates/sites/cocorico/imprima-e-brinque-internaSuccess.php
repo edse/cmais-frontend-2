@@ -55,7 +55,7 @@
       <?php $related_image = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
       <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
       <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>
-       <?php echo count($related_image).">>>>" ?>    
+          
        <?php if(count($related_video)>0): ?>
       <?php 
       if (count($related_video) > 0):
@@ -92,17 +92,27 @@
               
       <?php if(count($related_preview)>0): ?>
        
-       <a href="javascript:printDiv('div0')" class="print grd" datasrc="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" data-original-title="imprimir" rel="tooltip" class="btn-tooltip print">
-         <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" alt="Imprimir" />
-         <span></span>
-       </a>
-      <div id="div0" style="display: none;page-break-after:always;">
-        <img src="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
-      </div>
-    
+       
+        <?php 
+        $number = 0;
+        if(isset($related_image[0])):
+        ?>
+          <?php echo $number . ">>>>"?>
+        <?php else: ?>
+         <a href="javascript:printDiv('div0')" class="print grd" datasrc="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" data-original-title="imprimir" rel="tooltip" class="btn-tooltip print">
+           <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" alt="Imprimir" />
+           <span></span>
+         </a>
+        <div id="div0" style="display: none;page-break-after:always;">
+          <img src="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
+        </div>
+        <?php $number = 1 ?>
+        <?php endif;?>
+        
+      
        <ul class="imprimir"> 
          
-      <?php if(count($related_preview)>1): ?>
+      <?php if(count($related_preview)> $number): ?>
       <?php for($i=1; $i < count($related_preview); $i++): ?>  
         
         <li class="span4"> 
