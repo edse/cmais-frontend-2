@@ -74,7 +74,7 @@
       <?php if(count($related_preview)>0): ?>
       <?php for($i=1; $i < count($related_preview); $i++): ?>   
         <li class="span4">
-          <?php echo count($related_image).">>>>" ?>
+          <?php echo count($related_image).">>>>" ?> 
           <a href="javascript:printDiv('div<?php echo $i ?>')" class="btn-tooltip print" datasrc="<?php echo $related_download[$i]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir"> <img src="<?php echo $related_preview[$i]->retriveImageUrlByImageUsage("original") ?>" 
             alt="nome brincadeira" /><span></span></a>
           <div id="div<?php echo $i ?>" style="display: none;page-break-after:always;">
