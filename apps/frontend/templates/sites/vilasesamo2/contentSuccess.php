@@ -106,7 +106,7 @@
        <div class="control-group span2 idade anexo">
         <label class="control-label sprite-ico-anexo" for="anexo" accesskey="a"></label>
         <div class="controls">
-          <input id="datafile" type="file" name="datafile" size="1">
+          <input id="datafile" type="file" name="datafile" size="1" name="datafile">
           <!--a href="#" title="Anexar">Anexar</a!-->
         </div>
       </div>
@@ -254,35 +254,40 @@ $(document).ready(function(){
       },
       rules:{
         nome:{
-          required:function(){
-            validate('#nome');
-            },
+          required:true,
           minlength: 2
         },
-        email:{
-          required:function(){
-            validate('#email');
-            },
-          email: true
+        idade:{
+          required:true
         },
         cidade:{
-          required:function(){
-            validate('#cidade');
-            },
+          required:true,
           minlength: 3
         },
+        estado:{
+          required:true          
+        },
+        email:{
+          required:true,
+          email: true
+        },        
         datafile:{
           required: true,
           accept: "png|jpe?g|gif",
           filesize: 15728640
+        },
+        mensagem:{
+          required:true,
+          minlength: 3
         },
         concorda:{
           required: true
         }
         
       },
-      messages:{
+      /*messages:{
         nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+        
         email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
         cidade: "Este campo &eacute; Obrigat&oacute;rio.",
         datafile: {
@@ -290,7 +295,7 @@ $(document).ready(function(){
           filesize: "O arquivo não pode ser maior que 15MB"
         },
         concorda: "Este campo &eacute; Obrigat&oacute;rio."
-      },
+      },*/
       success: function(label){
         // set &nbsp; as text for IE
         label.addClass("checked");
