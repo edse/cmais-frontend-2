@@ -169,8 +169,7 @@ $assets = $pager->getResults();
         
       </div>
     </div>
-    */ 
-    ?>
+
     
     <div class="span8 ytb">
   <?php $cont = 0; ?>
@@ -208,8 +207,6 @@ $assets = $pager->getResults();
   </div>
   <!-- /row-->
   
-   <?php
-    /*
      *  
     */ ?>
 
