@@ -92,19 +92,33 @@
               
       <?php if(count($related_preview)>0): ?>
        
-       <?php echo count($related_destaque).">>>>>"?>
-       <a href="javascript:printDiv('div0')" class="print grd" datasrc="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" data-original-title="imprimir" rel="tooltip" class="btn-tooltip print">
-         <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" alt="Imprimir" />
+       <?php //echo count($related_destaque).">>>>>"?>
+       <?php
+        $number = 0;
+        if(count($related_destaque) > 0):
+          $number = 0;
+          echo $number . ">>>>>>>";
+       ?>
+       
+       <?php
+        else:
+       ?>  
+       <a href="javascript:printDiv('div0')" class="print grd" datasrc="<?php echo $related_download[$number]->retriveImageUrlByImageUsage("original") ?>" data-original-title="imprimir" rel="tooltip" class="btn-tooltip print">
+         <img src="<?php echo $related_preview[$number]->retriveImageUrlByImageUsage("original") ?>" alt="Imprimir" />
          <span></span>
        </a>
       <div id="div0" style="display: none;page-break-after:always;">
-        <img src="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
+        <img src="<?php echo $related_download[$number]->retriveImageUrlByImageUsage("original") ?>" style="width:95%">
       </div>
-    
+      <?php
+        $number = 1;
+        echo $number . ">>>>>>>";
+        endif;
+      ?>
        <ul class="imprimir"> 
          
-      <?php if(count($related_preview)>1): ?>
-      <?php for($i=1; $i < count($related_preview); $i++): ?>  
+      <?php if(count($related_preview)>$number): ?>
+      <?php for($i=$number; $i < count($related_preview); $i++): ?>  
         
         <li class="span4"> 
           <a href="javascript:printDiv('div<?php echo $i ?>')" class="btn-tooltip print" datasrc="<?php echo $related_download[$i]->retriveImageUrlByImageUsage("original") ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir">
