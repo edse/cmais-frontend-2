@@ -38,10 +38,10 @@
         <!-- RESULTADO BUSCA -->
         <div style="text-align:left">
           <!--input search-->
-          <form id="form-search" action="" method="post">
+          <form id="form-search" action="/busca" method="get">
             <div id="content-search">
               <input type="text" id="term" name="term" placeholder="Busca" class="search-term" />
-              <input type="button" id="search" name="search" value="" />
+              <input type="submit" id="search" name="search" value="" />
             </div>
           </form>
           <!--/input search-->
