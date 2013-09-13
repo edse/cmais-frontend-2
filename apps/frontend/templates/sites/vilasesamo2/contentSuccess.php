@@ -113,7 +113,7 @@
       <div class="control-group span12 msg">
         <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
         <div class="controls">
-          <textarea id="mensagem" name="mensagem" value="Mensagem" accesskey="m"></textarea>
+          <textarea id="mensagem" name="mensagem" value="Mensagem" accesskey="m">Mensagem</textarea>
         </div>
       </div>
       <div class="control-group span11">
