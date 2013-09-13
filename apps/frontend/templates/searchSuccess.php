@@ -41,7 +41,7 @@
           <form id="form-search" action="/busca" method="get">
             <div id="content-search">
               <input type="text" id="term" name="term" placeholder="Busca" class="search-term" value="<?php if(isset($_GET['term'])) echo $_GET['term']?>" />
-              <input type="submit" id="search" name="search" style="cursor:pointer"/>
+              <input type="submit" id="search" name="search" value="" style="cursor:pointer"/>
             </div>
           </form>
           <!--/input search-->
