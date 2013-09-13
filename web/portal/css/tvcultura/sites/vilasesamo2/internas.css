@@ -222,5 +222,6 @@ body { background:#0172f9; }
 .incluir .content .span12 p { clear:none; }
 .incluir .content { background:#feec3c;  }
 .bg-incluir .mais { color:#f0792c; }
+.bg-incluir .todos-itens #conteudo { overflow:auto !important; position:static !important; }
 /* incluir */
 

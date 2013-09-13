@@ -35,6 +35,8 @@ body { font-family: 'dinmedium', "Helvetica Neue", Helvetica, Arial, sans-serif;
 /* /din-blackregular*/
 
 /* din-blackregular*/
+.form .sucesso .btn,
+.form .sucesso p,
 #content section.form h2,
 .pais .content .dica .btn,
 .form-horizontal .span11 .btn,
@@ -366,28 +368,34 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques .tipoD { background:#eee; }
 .divisa { display: block; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-divisa.png) repeat-x; height:2px; max-width:940px; margin:0 auto 20px; }
 .bgtotal { width:100%; max-width:100% !important; background:#fee133; padding-top:5px; padding-bottom:25px; }
+#container-lista li,
 .destaques .span6 { width:31.6%; overflow:hidden; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
-
+#container-lista .jogo img,
 .destaques .span6.jogo img { border-top:2px solid #0191fb;  border-bottom:2px solid #0191fb; }
+#container-lista .jogo:hover img,
 .destaques .span6.jogo:hover img { 
   box-shadow: 0 0 .25em blue; /* Implementação W3C */
   -moz-box-shadow: 0 0 .25em blue; /* Implementação Mozilla */
   -webkit-box-shadow: 0 0 .25em blue; /* Implementação para browsers que renderizam via webkit */}
-
+#container-lista .video img,
 .destaques .span6.video img { border-top:2px solid #F07317;  border-bottom:2px solid #F07317; }
+#container-lista .video:hover img,
 .destaques .span6.video:hover img { 
   box-shadow: 0 0 .25em red; /* Implementação W3C */
   -moz-box-shadow: 0 0 .25em red; /* Implementação Mozilla */
   -webkit-box-shadow: 0 0 .25em red; /* Implementação para browsers que renderizam via webkit */}
-  
+#container-lista .atividade img,  
 .destaques .span6.atividade img { border-top:2px solid #7732E5;  border-bottom:2px solid #7732E5; }
+#container-lista .atividade:hover img,
 .destaques .span6.atividade:hover img { 
   box-shadow: 0 0 .25em black; /* Implementação W3C */
   -moz-box-shadow: 0 0 .25em black; /* Implementação Mozilla */
   -webkit-box-shadow: 0 0 .25em black; /* Implementação para browsers que renderizam via webkit */}
-  
+#container-lista .jogo,  
 .destaques .jogo { background:#3aaaec; }
+#container-lista .video,
 .destaques .video { background:#f5861f; }
+#container-lista .atividade,
 .destaques .atividade { background:#883feb; }
 .destaques.container { max-width:940px; }
 .destaques i { float:left; }
@@ -396,19 +404,29 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques i.sprite-icon-colorir-grd:hover { background-position: 0 -1070px;}
 .destaques a { display: block; font-size:25px; line-height:30px; color:#fff; text-transform:uppercase; font-weight:normal; padding-top:4%; text-align:left; }
 .destaques a  i { margin:0 4%; }
+#container-lista h2 a,
 .destaques a.asset { font-size:18px; padding:4%; color:#fff; line-height:18px; border-bottom:2px solid #0191fb; }
+#container-lista .jogo:hover h2 a,
 .destaques .span6.jogo:hover a.asset { color:#02cbff; }
+#container-lista .video:hover h2 a,
 .destaques .span6.video:hover a.asset { color:#f9a41b; }
+#container-lista .atividade:hover h2 a,
 .destaques .span6.atividade:hover a.asset { color:#b16af2; }
 /*
 .destaques h3 { overflow:hidden; margin:0; border-bottom:2px solid #0191fb; }
 .destaques h3 a { color:#fff; line-height:27px; text-align:left; display:block; padding:0; margin:4%; }
 */
+#container-lista .video,
 .destaques .video { background:#f5861f ; border-color:#f9a41b ; }
+#container-lista .video img,
+#container-lista .video h2,
 .destaques .video img,
 .destaques .video a.asset,
 .destaques .video h3 { border-color:#f07317 ; }
+#container-lista .atividade,
 .destaques .atividade { background:#883feb ; border-color:#b16af2 ; }
+#container-lista .atividade img,
+#container-lista .atividade h2,
 .destaques .atividade img,
 .destaques .atividade a.asset,
 .destaques .atividade h3 { border-color:#7732e5 ; }

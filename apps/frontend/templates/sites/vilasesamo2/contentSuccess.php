@@ -42,30 +42,30 @@
     <div class="span8">
     <h2>Brincar é um direito da criança</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices sapien at massa condimentum venenatis. In luctus vulputate massa, quis faucibus tellus pharetra nec. Donec convallis ligula eu augue mattis luctus. Aliquam scelerisque quam metus. Desenhe sua brincadeira preferida e envie para a galeria do site! </p>
-    <form class="form-horizontal">
+    <form class="form-horizontal" id="form-contato">
       <div class="control-group span8">
         <label class="control-label sprite-ico-nome" for="nome"></label>
         <div class="controls">
-          <input type="text" id="nome" placeholder="Nome" value="Nome" accesskey="n">
+          <input type="text" id="nome" name="nome" value="Nome" accesskey="n">
         </div>
       </div>
       
       <div class="control-group idade span2">
         <label class="control-label sprite-ico-idade" for="idade"></label>
         <div class="controls">
-          <input type="text" id="idade" placeholder="Idade" value="Idade" accesskey="i">
+          <input type="text" id="idade" name="idade" value="Idade" accesskey="i">
         </div>
       </div>
       
       <div class="control-group span8">
         <label class="control-label sprite-ico-cidade" for="cidade"></label>
         <div class="controls">
-          <input type="text" id="cidade" placeholder="Cidade" value="Cidade" accesskey="c">
+          <input type="text" id="cidade" name="cidade" value="Cidade" accesskey="c">
         </div>
       </div>
       <div class="control-group estado span2">
         <div class="controls">
-          <select id="estado">
+          <select id="estado" name="estado">
             <option selected="selected" value="">UF</option>
             <option value="Acre">AC</option>
             <option value="Alagoas">AL</option>
@@ -100,30 +100,35 @@
       <div class="control-group span8">
         <label class="control-label sprite-ico-email" for="email"></label>
         <div class="controls">
-          <input type="text" id="email" placeholder="Email" value="Email" accesskey="e">
+          <input type="text" id="email" name="email" value="Email" accesskey="e">
         </div>
       </div>
        <div class="control-group span2 idade anexo">
         <label class="control-label sprite-ico-anexo" for="anexo" accesskey="a"></label>
         <div class="controls">
-          <!--input id="datafile" type="file" name="datafile" size="1"-->
-          <a href="#" title="Anexar">Anexar</a>
+          <input id="datafile" type="file" name="datafile" size="1" name="datafile">
+          <!--a href="#" title="Anexar">Anexar</a!-->
         </div>
       </div>
       <div class="control-group span12 msg">
         <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
         <div class="controls">
-          <textarea id="mensagem" placeholder="Mensagem" value="Mensagem" accesskey="m"></textarea>
+          <textarea id="mensagem" name="mensagem" value="Mensagem" accesskey="m">Mensagem</textarea>
         </div>
       </div>
       <div class="control-group span11">
         <label class="radio">
-          <input type="radio" name="concorco" id="concorco" value="concorco" checked>
+          <input type="radio" name="concorda" id="concorda">
           Declaro que li e estou de acordo com os <a href="#">Termos e Condições</a>.
         </label>
         <button type="submit" class="btn">enviar minha brincadeira</button>
       </div>
     </form>
+    <div class="sucesso" style="display: none;">
+     <p>Sua brincadeira foi enviada com sucesso e em breve estará em nossa galeria de brincadeiras!</p>
+     <button type="submit" class="btn">visitar a galeria de brincadeiras</button>
+    </div>
+    
     </div>
     <div class="span4">
       <iframe width="300" height="246" src="//www.youtube.com/embed/gjQA0n_1fg4" frameborder="0" allowfullscreen></iframe>
@@ -221,4 +226,84 @@ if(navigator.appName!='Microsoft Internet Explorer')
   }, false);
   //carrossel personagens redraw pra tablet e celular home
 }
+</script>
+
+<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
+<script>
+$(document).ready(function(){
+  $('.btn-form').click(function(){
+   $('#form-contato').hide();
+   $('.sucesso').fadeIn("fast"); 
+  })
+  //$('#votar-input').click(function(){
+    //$('label.error').css('display','none');
+  //});
+});
+
+</script>
+
+<!--form-->
+<script type="text/javascript">
+  $(document).ready(function(){
+    var validator = $('#form-contato').validate({
+      
+      submitHandler: function(form){
+        form.submit();
+      },
+      rules:{
+        nome:{
+          required:true,
+          minlength: 5
+        },
+        idade:{
+          required:true
+        },
+        
+        estado:{
+          required:true          
+        },
+        email:{
+          required:true,
+          email: true
+        },        
+        datafile:{
+          required: true,
+          accept: "png|jpe?g|gif",
+          filesize: 15728640
+        },
+        mensagem:{
+          required:true,
+          minlength: 10
+        },
+        concorda:{
+          required: true
+        }
+        
+      },
+      messages:{
+        nome: "Este campo &eacute; obrigat&oacute;rio.",
+        mensagem: "Este campo &eacute; obrigat&oacute;rio."
+        /*
+        email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+        cidade: "Este campo &eacute; Obrigat&oacute;rio.",
+        datafile: {
+          accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
+          filesize: "O arquivo não pode ser maior que 15MB"
+        },
+        concorda: "Este campo &eacute; Obrigat&oacute;rio."*/
+      },
+      success: function(label){
+        // set &nbsp; as text for IE
+        label.addClass("checked");
+        $("label.error.checked").css("display","none");
+        label.html("&nbsp;");
+      }
+    });
+  });
+  
+  function validate(obj){
+    if($(obj).val()==$(obj).attr("data-default"))
+      $(obj).val('');
+  }
 </script>
