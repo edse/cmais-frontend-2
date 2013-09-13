@@ -91,12 +91,23 @@ if(isset($asset)) {
    <?php endif; ?>
    <!--/menu cultura brasil-->
    
+   <script type="text/javascript">
+      $(document).ready(function(){
+        $('#form-busca-culturabrasil').submit(function() {
+           if($("#term").val() == ""){
+             $("#term").focus();
+             return false;
+           }         
+        });      
+      });
+   </script>
+
    <!--search-->
    <div class="search-culturabrasil">
     <i class="lupa"></i>
-    <form class="busca-culturabrasil" action="/busca" method="get">
+    <form class="busca-culturabrasil" action="/busca" method="get" id="form-busca-culturabrasil">
       <input class="ipt-txt" type="text" name="term" id="term" value="<?php if(isset($term)) echo $term ?>">
-      <input class="ipt-submit" type="submit" value="OK">
+      <input class="ipt-submit" type="submit" value="OK" id="btn-submit-busca">
     </form>
    </div>
    <!--/search-->
