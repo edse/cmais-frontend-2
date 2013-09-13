@@ -176,14 +176,14 @@ body { background:#0172f9; }
 .todos-itens ul { margin:0!important;  }
 .span4 { margin:6px!important; }
 .element { overflow:hidden; -webkit-border-top-right-radius: 1.2em; -moz-border-radius-topright: 1.2em; border-top-right-radius: 1.2em; }
-.element.bel{background:pink;}
-.element.beto{background:yellow;}
-.element.come-come{background:blue;}
-.element.elmo{background:red;}
-.element.enio{background:orange;}
-.element.garibaldo{background:#565656;}
-.element.grover{background:#455433;}
-.element.zoe{background:#644543;}
+.element.bel{background:#FECE00;}
+.element.beto{background:#00CCCD;}
+.element.come-come{background:#9928CE;}
+.element.elmo{background:#9ACD34;}
+.element.enio{background:#61CBFF;}
+.element.garibaldo{background:#FF6525;}
+.element.grover{background:#FFFF33;}
+.element.zoe{background:#CE62CF;}
 
 /**** Isotope Filtering ****/
 .isotope-item { z-index: 2;}
