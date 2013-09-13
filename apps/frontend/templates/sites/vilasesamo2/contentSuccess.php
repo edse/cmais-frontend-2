@@ -46,21 +46,21 @@
       <div class="control-group span8">
         <label class="control-label sprite-ico-nome" for="nome"></label>
         <div class="controls">
-          <input type="text" id="nome" name="nome" placeholder="Nome" value="Nome" accesskey="n">
+          <input type="text" id="nome" name="nome" value="Nome" accesskey="n">
         </div>
       </div>
       
       <div class="control-group idade span2">
         <label class="control-label sprite-ico-idade" for="idade"></label>
         <div class="controls">
-          <input type="text" id="idade" name="idade" placeholder="Idade" value="Idade" accesskey="i">
+          <input type="text" id="idade" name="idade" value="Idade" accesskey="i">
         </div>
       </div>
       
       <div class="control-group span8">
         <label class="control-label sprite-ico-cidade" for="cidade"></label>
         <div class="controls">
-          <input type="text" id="cidade" name="cidade" placeholder="Cidade" value="Cidade" accesskey="c">
+          <input type="text" id="cidade" name="cidade" value="Cidade" accesskey="c">
         </div>
       </div>
       <div class="control-group estado span2">
@@ -100,31 +100,31 @@
       <div class="control-group span8">
         <label class="control-label sprite-ico-email" for="email"></label>
         <div class="controls">
-          <input type="text" id="email" name="email" placeholder="Email" value="Email" accesskey="e">
+          <input type="text" id="email" name="email" value="Email" accesskey="e">
         </div>
       </div>
        <div class="control-group span2 idade anexo">
         <label class="control-label sprite-ico-anexo" for="anexo" accesskey="a"></label>
         <div class="controls">
-          <input id="datafile" type="file" name="datafile" size="1">
+          <input id="datafile" type="file" name="datafile" size="1" name="datafile">
           <!--a href="#" title="Anexar">Anexar</a!-->
         </div>
       </div>
       <div class="control-group span12 msg">
         <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
         <div class="controls">
-          <textarea id="mensagem" name="mensagem" placeholder="Mensagem" value="Mensagem" accesskey="m"></textarea>
+          <textarea id="mensagem" name="mensagem" value="Mensagem" accesskey="m">Mensagem</textarea>
         </div>
       </div>
       <div class="control-group span11">
         <label class="radio">
-          <input type="radio" name="concorco" id="concorco" value="concorco" checked>
+          <input type="radio" name="concorda" id="concorda">
           Declaro que li e estou de acordo com os <a href="#">Termos e Condições</a>.
         </label>
         <button type="submit" class="btn">enviar minha brincadeira</button>
       </div>
     </form>
-    <div class="sucesso">
+    <div class="sucesso" style="display: none;">
      <p>Sua brincadeira foi enviada com sucesso e em breve estará em nossa galeria de brincadeiras!</p>
      <button type="submit" class="btn">visitar a galeria de brincadeiras</button>
     </div>
@@ -230,19 +230,18 @@ if(navigator.appName!='Microsoft Internet Explorer')
 
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
-<!--script>
+<script>
 $(document).ready(function(){
-      /* form tv cocorico */
   $('.btn-form').click(function(){
-   $('.destaque-home-tv').hide();
-   $('.interatividade').fadeIn("fast"); 
+   $('#form-contato').hide();
+   $('.sucesso').fadeIn("fast"); 
   })
-  $('#votar-input').click(function(){
-    $('label.error').css('display','none');
-  });
+  //$('#votar-input').click(function(){
+    //$('label.error').css('display','none');
+  //});
 });
 
-</script-->
+</script>
 
 <!--form-->
 <script type="text/javascript">
@@ -254,27 +253,28 @@ $(document).ready(function(){
       },
       rules:{
         nome:{
-          required:function(){
-            validate('#nome');
-            },
-          minlength: 2
+          required:true,
+          minlength: 5
+        },
+        idade:{
+          required:true
+        },
+        
+        estado:{
+          required:true          
         },
         email:{
-          required:function(){
-            validate('#email');
-            },
+          required:true,
           email: true
-        },
-        cidade:{
-          required:function(){
-            validate('#cidade');
-            },
-          minlength: 3
-        },
+        },        
         datafile:{
           required: true,
           accept: "png|jpe?g|gif",
           filesize: 15728640
+        },
+        mensagem:{
+          required:true,
+          minlength: 10
         },
         concorda:{
           required: true
@@ -282,14 +282,16 @@ $(document).ready(function(){
         
       },
       messages:{
-        nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
+        nome: "Este campo &eacute; obrigat&oacute;rio.",
+        mensagem: "Este campo &eacute; obrigat&oacute;rio."
+        /*
         email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
         cidade: "Este campo &eacute; Obrigat&oacute;rio.",
         datafile: {
           accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
           filesize: "O arquivo não pode ser maior que 15MB"
         },
-        concorda: "Este campo &eacute; Obrigat&oacute;rio."
+        concorda: "Este campo &eacute; Obrigat&oacute;rio."*/
       },
       success: function(label){
         // set &nbsp; as text for IE
