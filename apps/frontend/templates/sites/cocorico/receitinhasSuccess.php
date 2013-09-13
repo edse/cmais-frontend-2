@@ -50,10 +50,7 @@ $assets = $pager->getResults();
   <!--row-->
   
   <?php
-  /* RECEITINHAS
-   */ 
-  ?>
-   
+  /* CONCURSO RECEITINHAS
   <div class="row-fluid conteudo destaques especial">
     <div class="span4 form-especial">
       <div class="seta"></div>
@@ -169,11 +166,10 @@ $assets = $pager->getResults();
           </div>
                    
         </form>
-        */
-       ?>
+        
       </div>
     </div>
-    
+
     
     <div class="span8 ytb">
   <?php $cont = 0; ?>
@@ -211,8 +207,6 @@ $assets = $pager->getResults();
   </div>
   <!-- /row-->
   
-   <?php
-    /*
      *  
     */ ?>
 

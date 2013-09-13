@@ -176,15 +176,14 @@ body { background:#0172f9; }
 .todos-itens ul { margin:0!important;  }
 .span4 { margin:6px!important; }
 .element { overflow:hidden; -webkit-border-top-right-radius: 1.2em; -moz-border-radius-topright: 1.2em; border-top-right-radius: 1.2em; }
-.element.bel{background:pink;}
-.element.beto{background:yellow;}
-.element.come-come{background:blue;}
-.element.elmo{background:red;}
-.element.enio{background:orange;}
-.element.garibaldo{background:#565656;}
-.element.grover{background:#455433;}
-.element.zoe{background:#644543;}
-
+.element.bel{background:#FECE00;}
+.element.beto{background:#00CCCD;}
+.element.come-come{background:#9928CE;}
+.element.elmo{background:#9ACD34;}
+.element.enio{background:#61CBFF;}
+.element.garibaldo{background:#FF6525;}
+.element.grover{background:#FFFF33;}
+.element.zoe{background:#CE62CF;}
 /**** Isotope Filtering ****/
 .isotope-item { z-index: 2;}
 .isotope-hidden.isotope-item { pointer-events: none; z-index: 1;}
@@ -217,9 +216,11 @@ body { background:#0172f9; }
 .incluir .redes  { right:0.7%;  }
 .incluir .redes.btn-group {   width:32%;  }
 .incluir { border-bottom: 7px solid #fffb49;    border-top: 7px solid #fffb49;}
-.incluir .content .span4 { }
+.incluir .content .span4 h2 { color: #737373;   font-size: 18px;   font-weight: normal;    line-height: 22px;    margin: 10px;    text-transform: uppercase;}
 .incluir .content .span12 { background:#fff; padding:2%; }
 .incluir .content .span12 a { display: block; float:left; margin:0 2% 2% 0; }
 .incluir .content .span12 p { clear:none; }
 .incluir .content { background:#feec3c;  }
+.bg-incluir .mais { color:#f0792c; }
 /* incluir */
+
