@@ -2,9 +2,9 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <style>
-#form-search{width: 500px; z-index: 1;margin: 0 auto;display: block;background: #FFFFFF;padding-top: 20px;}
+#form-search{ z-index: 1;margin: 0 auto;display: block;background: #FFFFFF;padding-top: 20px;}
 .search-term{border: none;padding: 5px 15px;width: 400px;float: left;}
-#content-search{overflow: hidden;margin: 0 auto;display: block;width: 540px;border:1px solid #CCCCCC;}
+#content-search{overflow: hidden;margin: 0 auto;display: block;width: 500px;border:1px solid #CCCCCC;}
 #search{border: none;display:block;width: 70px;height: 30px;float: left;background:#4a8cf6 url(/portal/images/lupa-azul-branca.jpg) no-repeat center center;float: left;}
 </style>
     <!-- CAPA SITE -->
