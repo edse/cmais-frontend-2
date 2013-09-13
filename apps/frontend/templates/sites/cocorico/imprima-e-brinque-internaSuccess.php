@@ -52,6 +52,7 @@
   </div>
     <div class="span6">
       <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
+      <?php $related_destaque = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado') ?> 
       <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
       <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>
           
@@ -91,6 +92,7 @@
               
       <?php if(count($related_preview)>0): ?>
        
+       <?php echo count($related_destaque).">>>>>"?>
        <a href="javascript:printDiv('div0')" class="print grd" datasrc="<?php echo $related_download[0]->retriveImageUrlByImageUsage("original") ?>" data-original-title="imprimir" rel="tooltip" class="btn-tooltip print">
          <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("original") ?>" alt="Imprimir" />
          <span></span>
