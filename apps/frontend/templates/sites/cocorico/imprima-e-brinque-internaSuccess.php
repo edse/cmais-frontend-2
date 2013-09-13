@@ -44,7 +44,7 @@
   <div class="row-fluid conteudo">
     <p class="span12"></p>
     <div class="span6 esq">
-    <p class="alerta"><span></span>Tenha Cuidado! peça ajuda a um adulto!</p>
+    <p class="alerta"><span></span>Peça ajuda a um adulto!</p>
     
     <p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
 
