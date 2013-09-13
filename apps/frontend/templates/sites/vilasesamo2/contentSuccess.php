@@ -254,15 +254,12 @@ $(document).ready(function(){
       rules:{
         nome:{
           required:true,
-          minlength: 2
+          minlength: 5
         },
         idade:{
           required:true
         },
-        cidade:{
-          required:true,
-          minlength: 3
-        },
+        
         estado:{
           required:true          
         },
@@ -277,7 +274,7 @@ $(document).ready(function(){
         },
         mensagem:{
           required:true,
-          minlength: 3
+          minlength: 10
         },
         concorda:{
           required: true
