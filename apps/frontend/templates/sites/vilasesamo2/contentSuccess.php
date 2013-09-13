@@ -118,7 +118,7 @@
       </div>
       <div class="control-group span11">
         <label class="radio">
-          <input type="radio" name="concorco" id="concorco" value="concorco" checked>
+          <input type="radio" name="concorda" id="concorda">
           Declaro que li e estou de acordo com os <a href="#">Termos e Condições</a>.
         </label>
         <button type="submit" class="btn">enviar minha brincadeira</button>
@@ -281,17 +281,18 @@ $(document).ready(function(){
         }
         
       },
-      /*messages:{
-        nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
-        
+      messages:{
+        nome: "Este campo &eacute; obrigat&oacute;rio.",
+        mensagem: "Este campo &eacute; obrigat&oacute;rio."
+        /*
         email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
         cidade: "Este campo &eacute; Obrigat&oacute;rio.",
         datafile: {
           accept: "O arquivo precisa estar no formato JPG, GIF ou PNG",
           filesize: "O arquivo não pode ser maior que 15MB"
         },
-        concorda: "Este campo &eacute; Obrigat&oacute;rio."
-      },*/
+        concorda: "Este campo &eacute; Obrigat&oacute;rio."*/
+      },
       success: function(label){
         // set &nbsp; as text for IE
         label.addClass("checked");
