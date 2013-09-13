@@ -230,19 +230,18 @@ if(navigator.appName!='Microsoft Internet Explorer')
 
 <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
-<!--script>
+<script>
 $(document).ready(function(){
-      /* form tv cocorico */
   $('.btn-form').click(function(){
-   $('.destaque-home-tv').hide();
-   $('.interatividade').fadeIn("fast"); 
+   $('#form-contato').hide();
+   $('.sucesso').fadeIn("fast"); 
   })
-  $('#votar-input').click(function(){
-    $('label.error').css('display','none');
-  });
+  //$('#votar-input').click(function(){
+    //$('label.error').css('display','none');
+  //});
 });
 
-</script-->
+</script>
 
 <!--form-->
 <script type="text/javascript">
