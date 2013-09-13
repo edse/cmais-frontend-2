@@ -124,7 +124,7 @@
         <button type="submit" class="btn">enviar minha brincadeira</button>
       </div>
     </form>
-    <div class="sucesso">
+    <div class="sucesso" style="display: none;">
      <p>Sua brincadeira foi enviada com sucesso e em breve estará em nossa galeria de brincadeiras!</p>
      <button type="submit" class="btn">visitar a galeria de brincadeiras</button>
     </div>
