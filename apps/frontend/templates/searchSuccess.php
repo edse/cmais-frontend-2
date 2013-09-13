@@ -2,7 +2,8 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <style>
-#form-search{float: left;width:540px;position: absolute;z-index: 1;right: -20px;top: 20px;}
+#conteudo-pagina{position:relative;}
+#form-search{width:540px;position: absolute;z-index: 1;top: 20px;}
 .search-term{margin: 20px -3px 5px 20px;border: none;padding: 5px 15px;width: 400px;float: left;}
 #search{border: none;display:block;width: 70px;height: 30px;float: left;margin-top: 20px;background:#4a8cf6 url(/portal/images/lupa-azul-branca.jpg) no-repeat center center;float: left;}
 </style>
