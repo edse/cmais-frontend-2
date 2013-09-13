@@ -293,7 +293,7 @@
             
             <!-- descricao programa -->
             <div class="cr-desc-pgm">
-              <a class="cr-links cr-logo-cultura-brasil" href="http://culturabrasil.cmais.com.br/" title="Cultura Brasil"></a>
+              <a class="cr-links cr-logo-cultura-brasil" href="http://culturabrasil.cmais.com.br/" title="Cultura Brasil" target="_blank"></a>
               <h2 id="titulo_pgm_atual"></h2>
               
               <!-- detalhe musica -->
