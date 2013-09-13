@@ -69,7 +69,7 @@
 
   <span class="divisa"></span>
   <section class="todos-itens ">
-    <ul  id="container" class="row-fluid">
+    <ul  id="container-lista" class="row-fluid">
       <li class="span4 jogo"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
       <li class="span4 video"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
       <li class="span4 atividade"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
