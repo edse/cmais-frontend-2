@@ -41,15 +41,21 @@
           <h1 class="resultadoo">
             Resultado da Busca
           </h1>
-          <h2 class="encontradas">
-          <?php if(isset($term)): ?>
-            <?php if(count($pager) > 0): ?>
-              Foram encontrados <?php echo count($pager) ?> resultados com a expressão “<?php if (isset($term)) echo $term ?>”
-            <?php else: ?>
-              Sua pesquisa - <?php if (isset($term)) echo $term ?> - não encontrou nenhum documento correspondente
+         
+         <?php
+          /*
+            <h2 class="encontradas">
+            <?php if(isset($term)): ?>
+              <?php if(count($pager) > 0): ?>
+                Foram encontrados <?php echo count($pager) ?> resultados com a expressão “<?php if (isset($term)) echo $term ?>”
+              <?php else: ?>
+                Sua pesquisa - <?php if (isset($term)) echo $term ?> - não encontrou nenhum documento correspondente
+              <?php endif; ?>
             <?php endif; ?>
-          <?php endif; ?>
-          </h2>
+            </h2>
+          */
+          ?>
+          
         </div>
       </div>
 
@@ -59,6 +65,26 @@
  
       <!--lista assets-->
       <div class="lista-assets span8" style="*margin-left:0px;">
+        <script>
+          (function() {
+            var cx = '005232987476052626260:fa_a_oppnxc';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+         <gcse:searchresults-only>Carregando...</gcse:searchresults-only>
+      
+      </div>
+      
+      <?php
+      /*
+      <div class="lista-assets span8" style="*margin-left:0px;">
+        
         <?php if(count($pager) > 0): ?>
           <?php foreach($pager->getResults() as $d): ?>
             <a href="<?php echo $d->retriveUrl(); ?>" title="<?php echo $d->getTitle(); ?>">
@@ -101,6 +127,9 @@
         <!--paginador-->
       </div>
       <!--listaAssets>
+      */
+      ?>
+      
       
       <!--coluna direita-->
       <div class="lista-assets redes span4">
