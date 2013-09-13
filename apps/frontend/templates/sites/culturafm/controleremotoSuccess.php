@@ -292,7 +292,7 @@
             
             <!-- descricao programa -->
             <div class="cr-desc-pgm">
-              <a class="cr-links cr-logo-cultura-fm" href="http://culturafm.cmais.com.br/" title="Cultura FM"></a>
+              <a class="cr-links cr-logo-cultura-fm" href="http://culturafm.cmais.com.br/" title="Cultura FM" target="_blank"></a>
               <h2 id="titulo_pgm_atual"></h2>
               
               <!-- detalhe musica -->
