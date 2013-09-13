@@ -64,7 +64,7 @@
     <div class="row-fluid" style="clear: both;">
  
       <!--lista assets-->
-      
+      <div class="lista-assets span8" style="*margin-left:0px;">
         <script>
           (function() {
             var cx = '005232987476052626260:fa_a_oppnxc';
@@ -79,7 +79,7 @@
         </script>
          <gcse:searchresults-only>Carregando...</gcse:searchresults-only>
       
-      
+      </div>
       
       <?php
       /*
