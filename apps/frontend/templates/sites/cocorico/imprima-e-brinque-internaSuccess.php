@@ -99,7 +99,7 @@
           $number = 0;
           //echo $number . ">>>>>>>";
        ?>
-       <img src="<img src="<?php echo $related_destaque[0]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $asset->getTitle; ?>" />">
+       <img src="<img src="<?php echo $related_destaque[0]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $asset->getTitle(); ?>" />">
        <?php
         else:
        ?>  
