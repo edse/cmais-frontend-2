@@ -46,21 +46,21 @@
       <div class="control-group span8">
         <label class="control-label sprite-ico-nome" for="nome"></label>
         <div class="controls">
-          <input type="text" id="nome" name="nome" placeholder="Nome" value="Nome" accesskey="n">
+          <input type="text" id="nome" name="nome" value="Nome" accesskey="n">
         </div>
       </div>
       
       <div class="control-group idade span2">
         <label class="control-label sprite-ico-idade" for="idade"></label>
         <div class="controls">
-          <input type="text" id="idade" name="idade" placeholder="Idade" value="Idade" accesskey="i">
+          <input type="text" id="idade" name="idade" value="Idade" accesskey="i">
         </div>
       </div>
       
       <div class="control-group span8">
         <label class="control-label sprite-ico-cidade" for="cidade"></label>
         <div class="controls">
-          <input type="text" id="cidade" name="cidade" placeholder="Cidade" value="Cidade" accesskey="c">
+          <input type="text" id="cidade" name="cidade" value="Cidade" accesskey="c">
         </div>
       </div>
       <div class="control-group estado span2">
@@ -100,7 +100,7 @@
       <div class="control-group span8">
         <label class="control-label sprite-ico-email" for="email"></label>
         <div class="controls">
-          <input type="text" id="email" name="email" placeholder="Email" value="Email" accesskey="e">
+          <input type="text" id="email" name="email" value="Email" accesskey="e">
         </div>
       </div>
        <div class="control-group span2 idade anexo">
@@ -113,7 +113,7 @@
       <div class="control-group span12 msg">
         <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
         <div class="controls">
-          <textarea id="mensagem" name="mensagem" placeholder="Mensagem" value="Mensagem" accesskey="m"></textarea>
+          <textarea id="mensagem" name="mensagem" value="Mensagem" accesskey="m"></textarea>
         </div>
       </div>
       <div class="control-group span11">
