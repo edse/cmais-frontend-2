@@ -124,6 +124,11 @@
         <button type="submit" class="btn">enviar minha brincadeira</button>
       </div>
     </form>
+    <div class="sucesso">
+     <p>Sua brincadeira foi enviada com sucesso e em breve estará em nossa galeria de brincadeiras!</p>
+     <button type="submit" class="btn">visitar a galeria de brincadeiras</button>
+    </div>
+    
     </div>
     <div class="span4">
       <iframe width="300" height="246" src="//www.youtube.com/embed/gjQA0n_1fg4" frameborder="0" allowfullscreen></iframe>
