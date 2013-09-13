@@ -4,6 +4,7 @@
 <style>
 #form-search{width: 540px; z-index: 1;margin: 0 auto;display: block;background: red;height: 70px;}
 .search-term{margin: 20px -3px 5px 20px;border: none;padding: 5px 15px;width: 400px;float: left;}
+#content-search{overflow:hidden;margin:0 auto;}
 #search{border: none;display:block;width: 70px;height: 30px;float: left;margin-top: 20px;background:#4a8cf6 url(/portal/images/lupa-azul-branca.jpg) no-repeat center center;float: left;}
 </style>
     <!-- CAPA SITE -->
@@ -17,7 +18,7 @@
           <?php if(isset($_GET['term'])):?>
                   <h3 class="tit-pagina">Resultado de busca para "<?php echo $_GET['term'] ?>".</h3>
           <?php else:?>
-                  <h3 class="tit-pagina">Resultado da busca.</h3-->
+                  <h3 class="tit-pagina">Resultado da busca.</h3>
           <?php endif;?>
         </div>
         
@@ -38,8 +39,10 @@
         <div style="text-align:left">
           <!--input search-->
           <form id="form-search" action="" method="post">
-            <input type="text" id="term" name="term" placeholder="Busca" class="search-term" />
-            <input type="button" id="search" name="search" value="" />
+            <div id="content-search">
+              <input type="text" id="term" name="term" placeholder="Busca" class="search-term" />
+              <input type="button" id="search" name="search" value="" />
+            </div>
           </form>
           <!--/input search-->
           <script type="text/javascript">
