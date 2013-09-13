@@ -31,8 +31,8 @@
         
         <h2><span class="sprite-aspa-esquerda"></span>guia do brincar inclusivo</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend. Duis vel mauris et nunc posuere vehicula a id arcu. Maecenas malesuada ante ac consequat viverra. Vivamus tempor, nulla quis facilisis ullamcorper, tortor odio elementum eros, sit amet cursus felis elit vel diam. Fusce fringilla, nulla eu luctus lacinia, risus turpis varius orci, vel fringilla sem eros eu diam. Pellentesque sodales cursus elit, ac suscipit eros consectetur nec.
-        Aenean at metus.</p>
-        <span class="sprite-aspa-direita"></span>
+        Aenean at metus.<span class="sprite-aspa-direita"></span></p>
+        
         <button type="submit" class="btn">
           baixar
         </button>
