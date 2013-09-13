@@ -218,7 +218,7 @@ body { background:#0172f9; }
 .incluir .redes.btn-group {   width:32%;  }
 .incluir { border-bottom: 7px solid #fffb49;    border-top: 7px solid #fffb49;}
 .incluir .content .span4 { margin-top:0 !important; }
-.incluir .content .span12 { background:#fff; }
-.incluir .content .span12 a { display: block; float:left; margin:2%; }
+.incluir .content .span12 { background:#fff; padding:2%; }
+.incluir .content .span12 a { display: block; float:left; margin:0 2% 2% 0; }
 .incluir .content .span12 p { clear:none; margin:2% 0; }
 /* incluir */
