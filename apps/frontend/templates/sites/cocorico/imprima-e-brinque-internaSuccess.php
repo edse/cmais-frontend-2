@@ -52,10 +52,9 @@
   </div>
     <div class="span6">
       <?php $related_video = $asset->retriveRelatedAssetsByAssetTypeId(6); ?>
-      <?php $related_image = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
       <?php $related_preview = $asset->retriveRelatedAssetsByRelationType('Preview') ?> 
       <?php $related_download = $asset->retriveRelatedAssetsByRelationType('Download') ?>
-       <?php echo count($related_image).">>>>" ?>    
+          
        <?php if(count($related_video)>0): ?>
       <?php 
       if (count($related_video) > 0):
