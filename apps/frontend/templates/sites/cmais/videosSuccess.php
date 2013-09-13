@@ -99,33 +99,16 @@ $(function(){
           	  	  <?php endforeach; ?>
           	  	</ul>
           	  		
-          	  	<form id="busca-galeria" name="busca" action="" method="get">
+          	  	<form id="busca-galeria" name="busca" action="" method="post">
+          	  	  <input type="hidden" value="<?php if(isset($_REQUEST['site_id'])) echo $_REQUEST['site_id']; ?>" name="site_id" id="site_id" />
           	  	  <label class="busque">Busque por <span>palavra-chave</span></label>
-          	  	  <input type="text" class="campo-busca" name="term" id="campo-busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca']; ?>"/>
+          	  	  <input type="text" class="campo-busca" name="busca" id="campo-busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca']; ?>"/>
           	  	  <input type="submit" class="buscar" name="buscar" id="buscar" value="buscar" style="cursor:pointer" />
           	  	</form>
           	  </div>
           	  
           	  <div id="todas" class="filho blocos" style="display:block;">
           	  	<div class="capa">
-          	  	  
-                <script>
-                  (function() {
-                    var cx = '005232987476052626260:gkqgz9ihn4w';
-                    var gcse = document.createElement('script');
-                    gcse.type = 'text/javascript';
-                    gcse.async = true;
-                    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                        '//www.google.com/cse/cse.js?cx=' + cx;
-                    var s = document.getElementsByTagName('script')[0];
-                    s.parentNode.insertBefore(gcse, s);
-                  })();
-                </script>
-                <gcse:searchresults-only>Carregando...</gcse:searchresults-only>
-          	  	  
-          	  	  
-          	  	  <?php
-          	  	  /*
           	  	  <ul>
                   <?php if(count($pager) > 0): ?>
                     <?php foreach($pager->getResults() as $d): ?>
@@ -136,8 +119,6 @@ $(function(){
           	  	  	<?php endforeach; ?>
           	  	  <?php endif; ?>
           	      </ul>
-          	      */
-          	     ?>
           	    </div>
           	  </div>
           	  <div class="box-publicidade" style="width: 250px; position: absolute; top:450px; left:5px;">
