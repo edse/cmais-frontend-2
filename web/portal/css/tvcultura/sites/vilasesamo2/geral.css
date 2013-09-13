@@ -386,7 +386,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
   -webkit-box-shadow: 0 0 .25em red; /* Implementação para browsers que renderizam via webkit */}
 #container-lista .atividade img,  
 .destaques .span6.atividade img { border-top:2px solid #7732E5;  border-bottom:2px solid #7732E5; }
-#container-lista .atividade:hover img,
+/*#container-lista .atividade:hover img,*/
 .destaques .span6.atividade:hover img { 
   box-shadow: 0 0 .25em black; /* Implementação W3C */
   -moz-box-shadow: 0 0 .25em black; /* Implementação Mozilla */
@@ -406,6 +406,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques a  i { margin:0 4%; }
 #container-lista h2 a,
 .destaques a.asset { font-size:18px; padding:4%; color:#fff; line-height:18px; border-bottom:2px solid #0191fb; }
+#container-lista h2 a { border-bottom:none; padding:0 4%; line-height: 34px; }
 #container-lista .jogo:hover h2 a,
 .destaques .span6.jogo:hover a.asset { color:#02cbff; }
 #container-lista .video:hover h2 a,
