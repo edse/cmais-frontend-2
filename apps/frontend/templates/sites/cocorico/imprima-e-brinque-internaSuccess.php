@@ -97,9 +97,9 @@
         $number = 0;
         if(count($related_destaque) > 0):
           $number = 0;
-          echo $number . ">>>>>>>";
+          //echo $number . ">>>>>>>";
        ?>
-       
+       <img src="<img src="<?php echo $related_destaque[0]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $asset->getTitle; ?>" />">
        <?php
         else:
        ?>  
@@ -112,7 +112,7 @@
       </div>
       <?php
         $number = 1;
-        echo $number . ">>>>>>>";
+        //echo $number . ">>>>>>>";
         endif;
       ?>
        <ul class="imprimir"> 
