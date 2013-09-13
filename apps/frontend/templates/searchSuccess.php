@@ -1,7 +1,11 @@
   <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/busca.css" type="text/css" />
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
-
+<style>
+#form-search{float: left;width:540px;position: absolute;z-index: 1;right: -20px;top: 20px;}
+.search-term{margin: 20px -3px 5px 20px;border: none;padding: 5px 15px;width: 400px;float: left;}
+#search{border: none;display:block;width: 70px;height: 30px;float: left;margin-top: 20px;background:#4a8cf6 url(/portal/images/lupa-azul-branca.jpg) no-repeat center center;float: left;}
+</style>
     <!-- CAPA SITE -->
     <div id="capa-site">
 
@@ -29,8 +33,13 @@
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
-
-          <!-- RESULTADO BUSCA -->
+        <!--input search-->
+        <form id="form-search" action="" method="post">
+          <input type="text" id="term" name="term" placeholder="Busca" class="search-term" />
+          <input type="button" id="search" name="search" value="" />
+        </form>
+        <!--/input search-->
+        <!-- RESULTADO BUSCA -->
         <div style="text-align:left">
           <script type="text/javascript">
             (function() {
