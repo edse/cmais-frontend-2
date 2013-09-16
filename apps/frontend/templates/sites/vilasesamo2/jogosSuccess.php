@@ -58,7 +58,7 @@
         </article>
       </div>
       <nav class="span2">
-        <p>escolha o jogo por personagem<span class="sprite-seta-down"></span></p>
+        <p>escolha por personagem<span class="sprite-seta-down"></span></p>
         
         <ul class="filtro-personagem">
           <li><a href="javascript:;" title="" data-filter=".bel"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
