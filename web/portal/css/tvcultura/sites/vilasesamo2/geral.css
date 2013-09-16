@@ -427,8 +427,8 @@ section { max-width:980px; margin:0 auto; clear:both;}
 #container-lista .jogo img,
 .destaques .span6.jogo img { border-top:2px solid #0191fb; /* border-bottom:2px solid #0191fb;*/ }
 .destaques .span6 a.img { padding-top:0; border-top:none; }
-.destaques .span6 a.img:hover { background:#fff; margin:0 !important; padding:0 !important; }
-.destaques .span6 a:hover img { -moz-opacity: 0.50;-khtml-opacity: 0.50;opacity: 0.50;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);filter:alpha(opacity=50); margin:0 !important; padding:0 !important; }
+.destaques .span6 a.img:hover { background:#fff; }
+.destaques .span6 a:hover img { -moz-opacity: 0.50;-khtml-opacity: 0.50;opacity: 0.50;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);filter:alpha(opacity=50); margin:-2px 0 0 0 !important; padding:0 !important; }
 #container-lista .video img,
 .destaques .span6.video img { border-top:2px solid #F07317; /* border-bottom:2px solid #F07317;*/ }
 /*
