@@ -482,8 +482,8 @@ section { max-width:980px; margin:0 auto; clear:both;}
 
 .destaques .banner a { margin:0 0 4% 0; padding:0;  }
 .destaques .span6 a { border-top: 2px solid #0191FB; }
-.destaques .span6 a.video { border-color: #f57301; }
-.destaques .span6 a.atividade { border-color: #7732e5; }
+.destaques .span6.video a { border-color: #f57301; }
+.destaques .span6.atividade a { border-color: #7732e5; }
 /* /home*/
 
 
