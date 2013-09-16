@@ -27,21 +27,23 @@
             <i class="sprite-icon-jogos-peq"></i>Jogos
             
           </a>
-          <a class="img"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" /></a> 
+          <a href="/vilasesamo2/jogos" class="img" ><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" /></a> 
           <a class="asset" href="/vilasesamo2/jogos-interna" title="Jogos">Nome do Jogo</a>  
         </article>
         <article class="span6 video">
-          <a href="/vilasesamo2/clipes" title="Clipes">
+          <a href="/vilasesamo2/clipes" title="Vídeos">
             <i class="sprite-icon-videos-peq"></i>Vídeos
-            <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Clipes" />
-          </a> 
+            
+          </a>
+          <a href="/vilasesamo2/clipes" class="img"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Clipes" /></a> 
           <a class="asset" href="/vilasesamo2/videos-interna" title="Clipes">Nome do Video</a>      
         </article>
         <article class="span6 atividade">
-          <a href="/vilasesamo2/atividades" title="Para Colorir">
+          <a href="/vilasesamo2/atividades" title="Atividades">
             <i class="sprite-icon-atividades-peq"></i>atividades
-            <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Para Colorir" />
+            
           </a> 
+          <a href="/vilasesamo2/atividades" class="img" ><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Atividades" /></a>
           <a class="asset" href="/vilasesamo2/atividades-interna" title="Para Colorir">Nome da atividade</a>       
         </article>
       
