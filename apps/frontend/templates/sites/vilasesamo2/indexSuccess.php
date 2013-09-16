@@ -25,8 +25,9 @@
         <article class="span6 jogo">
           <a href="/vilasesamo2/jogos" title="Jogo">
             <i class="sprite-icon-jogos-peq"></i>Jogos
-            <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" />
-          </a> 
+            
+          </a>
+          <a class="img"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" /></a> 
           <a class="asset" href="/vilasesamo2/jogos-interna" title="Jogos">Nome do Jogo</a>  
         </article>
         <article class="span6 video">
