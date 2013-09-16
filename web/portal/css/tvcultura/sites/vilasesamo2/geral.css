@@ -272,8 +272,6 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-icon-personagens-med,
 .sprite-icon-personagens-peq,
 .sprite-icon-videos-med{background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-botoes.png); } 
-
-
 .sprite-btn-atividades{ background-position: 0 0; width: 60px; height: 60px; } 
 .sprite-btn-jogos{ background-position: 0 -110px; width: 60px; height: 60px; } 
 .sprite-btn-personagens{ background-position: 0 -220px; width: 60px; height: 60px; } 
@@ -287,20 +285,19 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-icon-colorir-grd-hover{ background-position: 0 -1070px; width: 80px; height: 80px; } 
 .sprite-icon-colorir-grd{ background-position: 0 -1200px; width: 80px; height: 80px; } 
 .sprite-icon-colorir-med-hover{ background-position: 0 -1330px; width: 56px; height: 56px; } 
-.sprite-icon-colorir-med{ background-position: 0 -1436px; width: 80px; height: 80px; } 
-.sprite-icon-episodios-grd-hover{ background-position: 0 -1566px; width: 80px; height: 80px; } 
-.sprite-icon-episodios-grd{ background-position: 0 -1696px; width: 80px; height: 80px; } 
-.sprite-icon-imprimir-grd-hover{ background-position: 0 -1826px; width: 80px; height: 80px; } 
-.sprite-icon-imprimir-grd{ background-position: -130px 0; width: 80px; height: 80px; } 
-.sprite-icon-jogos-grd-hover{ background-position: -130px -130px; width: 80px; height: 80px; } 
-.sprite-icon-jogos-grd{ background-position: -130px -260px; width: 80px; height: 80px; } 
-.sprite-icon-jogos-med-hover{ background-position: -130px -390px; width: 56px; height: 56px; } 
-.sprite-icon-jogos-med{ background-position: -130px -496px; width: 80px; height: 80px; } 
-.sprite-icon-personagens-grd{ background-position: -130px -626px; width: 80px; height: 80px; } 
-.sprite-icon-personagens-med{ background-position: -130px -756px; width: 80px; height: 80px; } 
-.sprite-icon-personagens-peq{ background-position: -130px -886px; width: 38px; height: 38px; } 
-.sprite-icon-videos-med{ background-position: -130px -974px; width: 80px; height: 80px; } 
-
+.sprite-icon-colorir-med{ background-position: 0 -1436px; width: 47px; height: 59px; } 
+.sprite-icon-episodios-grd-hover{ background-position: 0 -1545px; width: 80px; height: 80px; } 
+.sprite-icon-episodios-grd{ background-position: 0 -1675px; width: 80px; height: 80px; } 
+.sprite-icon-imprimir-grd-hover{ background-position: 0 -1805px; width: 80px; height: 80px; } 
+.sprite-icon-imprimir-grd{ background-position: 0 -1935px; width: 80px; height: 80px; } 
+.sprite-icon-jogos-grd-hover{ background-position: -130px 0; width: 80px; height: 80px; } 
+.sprite-icon-jogos-grd{ background-position: -130px -130px; width: 80px; height: 80px; } 
+.sprite-icon-jogos-med-hover{ background-position: -130px -260px; width: 56px; height: 56px; } 
+.sprite-icon-jogos-med{ background-position: -130px -366px; width: 58px; height: 41px; } 
+.sprite-icon-personagens-grd{ background-position: -130px -457px; width: 80px; height: 80px; } 
+.sprite-icon-personagens-med{ background-position: -130px -587px; width: 58px; height: 57px; } 
+.sprite-icon-personagens-peq{ background-position: -130px -694px; width: 38px; height: 38px; } 
+.sprite-icon-videos-med{ background-position: -130px -782px; width: 58px; height: 48px; } 
 
 .sprite-icon-videos-grd { background:url(/portal/images/capaPrograma/vilasesamo2/icon-videos-grd.png); width: 68px; height:57px;  }
 
