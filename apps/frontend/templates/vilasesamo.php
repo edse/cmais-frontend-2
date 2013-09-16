@@ -112,7 +112,7 @@
           <nav class="nav-collapse collapse">
             <form class="form-search">
               <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';">
-              <button type="submit" class="btn sprite-icon-busca" accesskey="p" value="Encontre no site" ></button>
+              <button type="submit" class="btn sprite-icon-busca-hover" accesskey="p" value="Encontre no site" ></button>
             </form>
             <ul class="nav">
               <li>
