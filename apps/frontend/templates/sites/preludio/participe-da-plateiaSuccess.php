@@ -99,7 +99,8 @@
  
                     Site: <a href="http://www.centrocultural.sp.gov.br/" target="_blank" title="Centro Cultural" style="color: #ff6633; font-weight: bold;">http://www.centrocultural.sp.gov.br/</a><br>
                     Endereço: R. Vergueiro, 1000 - Paraíso  São Paulo, 01504-000 – Perto da estação do Metrô.<br>
-                    Telefone: (11) 3397-4002
+                    Telefone: (11) 3397-4002<br>
+                    A plateia deve estar no local às <strong>16h30</strong>
                     </p>
                   </div>                  
                   <form id="form-contato" name="form-contato" method="post" action="">
