@@ -617,6 +617,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .pais .sprite-seta-up { top:0; }
 .pais .fechar-toogle.ativo { display:block; }
 .pais .twitter-share-button { width: 90px !important; }
+.pais .content .span4 a:hover { text-decoration:underline;}
 /* /pais*/
 
 /* ie */
