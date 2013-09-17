@@ -16,7 +16,7 @@ body { background:#0172f9; }
 .mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; max-width:350px; margin:100px auto; display:block; }
 .mais span,
 .mais i { float:left; margin-right:15px; }
-.mais:hover { color:#fff; }
+.mais:hover { color:#fff; text-decoration:underline; }
 /* filtro personagem */
 .todos-itens li,
 .scroll,
