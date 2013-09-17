@@ -80,11 +80,13 @@ $(document).ready(function() {
     $('.pais .content').stop().slideToggle('slow');
     $(".pais .sprite-seta-down").toggleClass("inativo");
     $(".pais .sprite-seta-up").toggleClass("ativo");
+    $(".pais .redes").toggleClass("");
   });
   
   $('.pais .sprite-seta-up').click(function() {
     $('.pais .content').stop().slideToggle('fast');
     $(".pais .sprite-seta-down").toggleClass("inativo");
+    $(".pais .redes").toggleClass("inativo");
   });
   
   //menu personagens tablet
