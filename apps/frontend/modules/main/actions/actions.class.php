@@ -367,7 +367,8 @@ class mainActions extends sfActions
       }
     }
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
-      die("FPA/SIC");
+      header("http://www.terra.com.br");
+      die(0);
       if($param1 == "fpa")
         $param1 = "sic";
       if($param2 == "sic"){
