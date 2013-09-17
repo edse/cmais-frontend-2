@@ -28,10 +28,9 @@ class mainActions extends sfActions
     }
     
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
-      //die('123');
+      die('123');
       $this->getRequest()->setParameter('object', $this->site = Doctrine::getTable('Site')->findOneBySlug("sic"));
       $this->forward('_site', 'index');
-      die("FPA");
     }
     
     $subdomain = @current(explode(".", $request->getHost()));
