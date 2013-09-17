@@ -442,7 +442,8 @@ section { max-width:980px; margin:0 auto; clear:both;}
 */
 
 #container-lista .atividade img,  
-.destaques .span6.atividade img { border-top:2px solid #7732E5;  /*border-bottom:2px solid #7732E5;*/ }  
+.destaques .span6.atividade img { border-top:2px solid #7732E5;  /*border-bottom:2px solid #7732E5;*/ }
+
 #container-lista .jogo,  
 .destaques .jogo { background:#3aaaec; }
 #container-lista .video,
