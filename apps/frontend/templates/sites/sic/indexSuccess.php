@@ -1,3 +1,9 @@
+<?php
+echo "FPA";
+die("0");
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
