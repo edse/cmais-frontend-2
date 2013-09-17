@@ -1098,7 +1098,7 @@ class _assetActions extends sfActions
 						}
         }
         elseif($this->site->getType() == "ProgramaRadio"){
-          if(in_array($this->asset->Site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class","manha-cultura", "entrelinhas-1", "cd-da-semana"))){
+          if(in_array($this->asset->Site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class","manha-cultura", "entrelinhas-1", "cd-da-semana", "arquivo-vivo"))){
             if($debug) print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug();
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug());
           }
