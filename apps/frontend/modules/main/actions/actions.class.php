@@ -28,7 +28,7 @@ class mainActions extends sfActions
     }
     
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
-      die('FPA');
+      //die('123');
       $this->getRequest()->setParameter('object', $this->site = Doctrine::getTable('Site')->findOneBySlug("sic"));
       $this->forward('_site', 'index');
     }
@@ -367,6 +367,7 @@ class mainActions extends sfActions
       }
     }
     if(($request->getHost() == "fpa.com.br")||($request->getHost() == "www.fpa.com.br")){
+      die("FPA/SIC");
       if($param1 == "fpa")
         $param1 = "sic";
       if($param2 == "sic"){
