@@ -31,11 +31,10 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 #carrossel-interna .slider li.video { background:#f5861f; border-color:#f07317; }
 #carrossel-interna .slider li.video img { border-color:#f07317; }
 #carrossel-interna .slider li .nome { padding:0; display: block; height:40px; line-height: 40px; }
-
 #carrossel-interna .slider li .nome i { float:left; margin:0 15px; }
 #carrossel-interna .slider li .nome i.sprite-ico-videos-p { margin-top:4px; }
 #carrossel-interna .slider li .nome i.sprite-ico-jogos-p { margin-top:7px; }
-
+#carrossel-interna .slider li:hover a { text-decoration:underline; }
 /* form */
 #content section.form { background:#3aaaec; margin:0 auto; padding:20px; max-width:900px; }
 #content section.form .span8 { width: 64%; }
