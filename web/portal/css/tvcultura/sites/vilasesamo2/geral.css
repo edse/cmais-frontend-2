@@ -458,7 +458,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques a  i { margin:0 4%; }
 #container-lista h2 a,
 .destaques a.asset { font-size:18px; padding:4%; color:#fff; line-height:18px; border-bottom:2px solid #0191fb; }
-.destaques a.asset:hover { text-decoration:underline; }
+.destaques .span6:hover a.asset { text-decoration:underline; }
 #container-lista h2 a { border-bottom:none; padding:0 4%; line-height: 34px; }
 #container-lista .jogo:hover h2 a,
 .destaques .span6.jogo:hover a.asset { color:#02cbff; }
