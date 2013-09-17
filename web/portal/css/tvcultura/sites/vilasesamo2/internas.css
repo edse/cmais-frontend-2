@@ -16,7 +16,7 @@ body { background:#0172f9; }
 .mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; max-width:350px; margin:100px auto; display:block; }
 .mais span,
 .mais i { float:left; margin-right:15px; }
-.mais:hover { color:#fff; }
+.mais:hover { color:#fff; text-decoration:underline; }
 /* filtro personagem */
 .todos-itens li,
 .scroll,
@@ -59,7 +59,7 @@ body { background:#0172f9; }
 .todos-itens li h2,
 .destaque-filtro article h1 { margin:0; line-height: 32px; }
 .destaque-filtro a img { border:2px solid transparent; }
-.destaque-filtro .span6:hover a {color:#02cbff;}
+.destaque-filtro .span6:hover a {color:#02cbff; text-decoration:underline;}
 .destaque-filtro .span6:hover a img {border:2px solid #02cbff;}
 .destaque-filtro.especial li a,
 .todos-itens li h2 a, 
@@ -99,7 +99,7 @@ body { background:#0172f9; }
 .todos-itens li:hover img { -moz-opacity: 0.50;-khtml-opacity: 0.50;opacity: 0.50;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);filter:alpha(opacity=50); }
 .todos-itens li a { background:#fff; display:block; }
 .todos-itens li h2 a { background:none; }
-
+.todos-itens li:hover a { text-decoration:underline; }
 
 /* /todos itens*/
 

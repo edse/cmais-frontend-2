@@ -21,7 +21,7 @@
     <h3><span class="sprite-icon-jogos-med"></span>Jogos<span class="seta-scroll sprite-scroll-jogos"></span></h3>
   </section>
   <section class="filtro row-fluid">
-    <h3><span class="sprite-icon-jogos-med"></span>Jogos<a class="todos-assets"><span class="sprite-btn-voltar-jogos"></span><p>todos os jogos</p></a></h3>
+    <h3><span class="sprite-icon-jogos-med"></span>Jogos<a class="todos-assets" href="/vilasesamo2/jogos"><span class="sprite-btn-voltar-jogos"></span><p>todos os jogos</p></a></h3>
     <div class="conteudo-asset">
       <h2>nome do jogo</h2>
     <p><a href="#" title="Hábitos para uma vida saudável"><img src="/portal/images/capaPrograma/vilasesamo2/btn-habitos-peq.png" alt="Hábitos para uma vida saudável" /></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat massa, ullamcorper sit amet elementum sed, sollicitudin non massa. Mauris ante tortor, feugiat quis dolor id, congue pharetra nisl. Maecenas suscipit eu diam et pellentesque. Morbi fermentum libero ac diam tristique, in egestas lectus rhoncus. Proin ut pellentesque massa. Morbi metus. </p>
