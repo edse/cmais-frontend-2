@@ -68,7 +68,7 @@
             cont = 0; 
           }else{
             $(this).addClass('q-pers-0'+ number);
-            classes.push('q-pers-0'+ number)
+            classes[j]=='q-pers-0'+ number;
           }
         }
         cont++;
