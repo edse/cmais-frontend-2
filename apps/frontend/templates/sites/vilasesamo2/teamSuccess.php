@@ -71,6 +71,7 @@
         if(contA < 2 || contB < 2 || contC < 2 || contD < 2){
           cont=0;
         }else{
+          console.log('q-pers-0'+number);
           for(var i=0; i< classes.length; i++){
             if(classes[i] == 'q-pers-0'+number){
               cont = 0;
