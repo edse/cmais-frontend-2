@@ -43,7 +43,7 @@
     itemSelector : '.element'
   });
   var classes = new Array();
-  classes[0] = '';
+  classes[0] = 'teste';
   $('#toggle-sizes').click(function(){
     var contA = 1;
     var contB = 1;
