@@ -17,7 +17,7 @@
     
       
       <div class="asset">
-        <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="exemplo" />
+        teste
       </div>
     </div>
   </section>
