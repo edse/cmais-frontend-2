@@ -56,8 +56,9 @@
       }
       var cont = 0;
       var number = 0;
-      number = Math.floor((Math.random()*4)+1);
+      
       while(cont<1){
+        number = Math.floor((Math.random()*4)+1);
         if(number == 1) contA++;
         if(number == 2) contB++;
         if(number == 3) contC++;
