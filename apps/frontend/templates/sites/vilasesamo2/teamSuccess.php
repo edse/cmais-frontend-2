@@ -83,7 +83,7 @@
       }
       classes[vetor] = 'q-pers-0'+number;
       vetor++;
-      
+      console.log(contA+"/"+contB+"/"+contC+"/"+contD)
     });
     console.log(classes)
     $container.isotope('reLayout')
