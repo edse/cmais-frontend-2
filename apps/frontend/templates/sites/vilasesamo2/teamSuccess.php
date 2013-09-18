@@ -68,18 +68,17 @@
         if(number == 2)contB++;
         if(number == 3)contC++;
         if(number == 4)contD++;
+         console.log(number);
         if(contA < 2 || contB < 2 || contC < 2 || contD < 2){
           cont=0;
         }else{
           console.log('q-pers-0'+number);
-          for(var j=0;j<8; j++){
-            for(var i=0; i< classes.length; i++){
-              if(classes[j] == 'q-pers-0'+number){
-                cont = 0;
-              }else{  
-                $(this).addClass('q-pers-0'+number);
-                cont++;
-              }
+          for(var i=0; i< classes.length; i++){
+            if(classes[i] == 'q-pers-0'+number){
+              cont = 0;
+            }else{  
+              $(this).addClass('q-pers-0'+number);
+              cont++;
             }
           }
         }
