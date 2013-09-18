@@ -20,7 +20,7 @@
     <h3><span class="sprite-icon-jogos-med"></span>Jogos<a class="todos-assets" href="/vilasesamo2/jogos"><span class="sprite-btn-voltar-jogos"></span><p>todos os jogos</p></a></h3>
     <div class="conteudo-asset">
       <h2>Personagens</h2>
-      <a href="javascript:;" id="toggle-sizes">
+      <a href="javascript:;" id="toggle-sizes">teste</a>
       
       <div id="container-personagens" class="asset">
         <div class="q-pers-01"></div>
