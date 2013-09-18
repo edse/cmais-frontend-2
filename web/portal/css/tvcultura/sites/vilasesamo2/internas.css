@@ -227,3 +227,6 @@ body { background:#0172f9; }
 .bg-incluir .todos-itens #conteudo { overflow:auto !important; position:static !important; }
 /* incluir */
 
+/* busca */
+.busca h3 {  }  
+
