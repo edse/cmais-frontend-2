@@ -29,7 +29,7 @@
     <div class="row-fluid">
       <!--item-->
       <div class="span3 item jornal" style="margin-left:0px;">
-        <a href="http://cmais.com.br/segundatela/jornaldacultura/17-09-2013" target="_blank">
+        <a href="http://cmais.com.br/segundatela/jornaldacultura" target="_blank">
           <div class="logo-programa">
             <img src="http://midia.cmais.com.br/programs/457e9bcad211c9c44b0e6dac2e603361c3d1baa8.png">
           </div>
