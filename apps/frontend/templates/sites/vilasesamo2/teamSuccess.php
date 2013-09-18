@@ -59,34 +59,14 @@
       var cont = 0;
       var number = 0;
       
-      
+      while(cont == 0){
         number = Math.floor((Math.random()*4)+1);
-        $(this).addClass('q-pers-0'+number);
-        /*
-       while(cont == 0){
-        if(number == 1 && contA < 2){
-          contA++;
-          if(!$(this).hasClass('q-pers-01') && contB < 2)$(this).addClass('q-pers-0'+number);
+        if(!$(this).hasClass('q-pers-0'+number)){
+          $(this).addClass('q-pers-0'+number);
+          cont++;
         }
-        if(number == 2 && contB < 2){
-          contB++;
-          if(!$(this).hasClass('q-pers-02') && contB < 2)$(this).addClass('q-pers-0'+number);
-        } 
-        if(number == 3 && contC < 2){
-          contC++;
-          if(!$(this).hasClass('q-pers-03') && contB < 2)$(this).addClass('q-pers-0'+number);
-        }
-        if(number == 4 && contD < 2){
-          contD++;
-          if(!$(this).hasClass('q-pers-04') && contB < 2)$(this).addClass('q-pers-0'+number);
-        }
-        
-        if(contA == 2 || contB == 2 || contC == 2 || contD == 2 ){
-          cont=1; //sai do looping
-        }
-        
       }
-*/
+      
     });
     console.log(contA + '/' + contB + '/' + contC + '/' + contD )
     $container.isotope('reLayout')
