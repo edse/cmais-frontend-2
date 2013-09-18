@@ -65,7 +65,7 @@
         number = Math.floor((Math.random()*4)+1);
         for(var i=0; i< classes.length; i++){
           if(classes[i] == 'q-pers-0'+number){
-            return false;
+            cont = 0
           }else{  
             $(this).addClass('q-pers-0'+number);
             cont++;
