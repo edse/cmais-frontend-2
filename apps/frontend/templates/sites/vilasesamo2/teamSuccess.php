@@ -51,9 +51,11 @@
       
     $container.find('.element').each(function(){
       
-      for(var i=0; i<3; i++){
-        if($(this).hasClass('q-pers-0'+ i ))$(this).removeClass('q-pers-0' + i);
-      }
+      $(this).removeClass('q-pers-01');
+      $(this).removeClass('q-pers-02');
+      $(this).removeClass('q-pers-03');
+      $(this).removeClass('q-pers-04');
+      
       var cont = 0;
       var number = 0;
       
