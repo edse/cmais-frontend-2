@@ -52,7 +52,7 @@
       if($(this).hasClass('q-pers-02'))$(this).removeClass('q-pers-02');
       if($(this).hasClass('q-pers-03'))$(this).removeClass('q-pers-03');
       if($(this).hasClass('q-pers-04'))$(this).removeClass('q-pers-04');
-      $(this).addClass('q-pers-0'+Math.floor((Math.random()*4)+1););
+      $(this).addClass('q-pers-0'+Math.floor((Math.random()*4)+1));
     });
     $container.isotope('reLayout')
     return false;
