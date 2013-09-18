@@ -5,6 +5,12 @@
   $("body").addClass("interna");
 
 </script>
+<style>
+.q-pers-01{display:block; width: 140px; height:140px; background:#00000;}
+.q-pers-02{display:block; width: 140px; height:140px; background:#00000;}
+.q-pers-03{display:block; width: 140px; height:140px; background:#00000;}
+.q-pers-04{display:block; width: 140px; height:140px; background:#00000;}
+</style>
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
 ?>
@@ -17,7 +23,10 @@
     
       
       <div class="asset">
-        teste
+        <div class="q-pers-01"></div>
+        <div class="q-pers-02"></div>
+        <div class="q-pers-03"></div>
+        <div class="q-pers-04"></div>
       </div>
     </div>
   </section>
