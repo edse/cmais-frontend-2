@@ -71,6 +71,7 @@ class Asset extends BaseAsset
       ->where('a.id = ra.asset_id')
       ->andWhere('ra.parent_asset_id = ?', (int)$this->getId())
       ->andWhere('a.asset_type_id = ?', (int)$type)
+      ->andWhere('a.date_start IS NULL OR a.date_start > ?', date("Y-m-d H:i:s"))
       ->groupBy('ra.id')
       ->orderBy('ra.display_order')
       ->execute();
