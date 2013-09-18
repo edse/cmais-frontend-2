@@ -60,35 +60,24 @@
       var cont = 0;
       var number = 0;
         
-     
       
-      while(cont == 0){
-        number = Math.floor((Math.random()*4)+1);
-        if(number == 1)contA++;
-        if(number == 2)contB++;
-        if(number == 3)contC++;
-        if(number == 4)contD++;
-         console.log(number);
-        if(contA < 2 || contB < 2 || contC < 2 || contD < 2){
-          cont=0;
-        }else{
-          console.log('q-pers-0'+number);
-          for(var i=0; i< classes.length; i++){
-            if(classes[i] == 'q-pers-0'+number){
-              cont = 0;
-            }else{  
-              $(this).addClass('q-pers-0'+number);
-              cont++;
-              classes[vetor] = 'q-pers-0'+number;
-            }
+      
+      
+      for(var i=0; i< classes.length; i++){
+        while(cont == 0){
+          number = Math.floor((Math.random()*4)+1);
+          if(classes[i] == 'q-pers-0'+number){
+            cont = 0;
+          }else{  
+            $(this).addClass('q-pers-0'+number);
+            cont++;
           }
         }
       }
-      
+      classes[vetor] = 'q-pers-0'+number;
       vetor++;
       
     });
-    console.log(contA+"/"+contB+"/"+contC+"/"+contD)
     console.log(classes)
     $container.isotope('reLayout')
     return false;
