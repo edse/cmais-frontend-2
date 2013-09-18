@@ -68,7 +68,7 @@
         if(number==3)contC++;
         if(number==4)contD++;
         for(var j=0; j<classes.length; j++){
-          if(classes[j] == 'q-pers-0'+ number || contA >= 2 || contB >= 2 || contC >= 2 || contD >= 2){
+          if(classes[i] == 'q-pers-0'+ number || contA >= 2 || contB >= 2 || contC >= 2 || contD >= 2){
             cont = 0; 
           }else{
             $(this).addClass('q-pers-0'+ number);
