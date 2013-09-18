@@ -63,9 +63,8 @@
       
       while(cont==0){
         number = Math.floor((Math.random()*4)+1);
-        
         for(var j=0; j<classes.length; j++){
-          if(classes[i] == 'q-pers-0'+ number){
+          if(classes[j] == 'q-pers-0'+ number){
             cont = 0; 
           }else{
             $(this).addClass('q-pers-0'+ number);
