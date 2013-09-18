@@ -66,8 +66,11 @@
         if(number == 4) contD++;
         
         if(contA > 2 || contB > 2 || contC > 2 || contD > 2 ){
-          cont --;
+          cont--;
+        }else{
+          cont++;
         }
+        
       }
       
 
