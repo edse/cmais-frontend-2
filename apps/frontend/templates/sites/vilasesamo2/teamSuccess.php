@@ -58,7 +58,10 @@
   });
   
   $container.isotope({
-    itemSelector : '.element'
+    itemSelector : '.element',
+    masonryHorizontal: {
+      rowHeight: 360
+    }
   });
   
   $('#toggle-sizes').click(function(){
