@@ -72,7 +72,7 @@
           cont=0;
         }else{
           console.log('q-pers-0'+number);
-          for(var j=0;j<classes.length; j++){
+          for(var j=0;j<8; j++){
             for(var i=0; i< classes.length; i++){
               if(classes[j] == 'q-pers-0'+number){
                 cont = 0;
