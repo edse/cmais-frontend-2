@@ -79,7 +79,7 @@
             }
           }
         }
-      
+      }
       classes[vetor] = 'q-pers-0'+number;
       vetor++;
       
