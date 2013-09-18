@@ -79,11 +79,12 @@
             }else{  
               $(this).addClass('q-pers-0'+number);
               cont++;
+              classes[vetor] = 'q-pers-0'+number;
             }
           }
         }
       }
-      classes[vetor] = 'q-pers-0'+number;
+      
       vetor++;
       
     });
