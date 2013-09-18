@@ -51,8 +51,13 @@
       for(var i=0; i<3; i++){
         if($(this).hasClass('q-pers-0'+ i ))$(this).removeClass('q-pers-0' + i);
       }
-      
-      $(this).addClass('q-pers-0'+Math.floor((Math.random()*4)+1));
+      var contA, contB, contC, contD = 0;
+      var number = 0;
+      for(var  j=0; j<7; j++){
+        number = Math.floor((Math.random()*4)+1);
+        console.log(number)
+      }
+      //$(this).addClass('q-pers-0'+);
     });
     $container.isotope('reLayout')
     return false;
