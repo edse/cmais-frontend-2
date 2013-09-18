@@ -37,6 +37,7 @@ body { font-family: 'dinmedium', "Helvetica Neue", Helvetica, Arial, sans-serif;
 /* din-blackregular*/
 .form .sucesso .btn,
 .form .sucesso p,
+#content .section.form h2,
 #content section.form h2,
 .pais .content .dica .btn,
 .form-horizontal .span11 .btn,
@@ -67,6 +68,7 @@ footer .mapa .span12,
 .todos-itens li,
 .filtro .filtro-personagem li,
 .filtro,
+.destaques .section .span6,
 .destaques section .span6,
 .header-bar li:hover,
 .scroll,
@@ -80,6 +82,7 @@ footer .mapa .span12,
 .navbar-fixed-top { margin-bottom:0; position:fixed;}
 #content {  min-height:500px; position:relative; top:103px; margin-bottom:51px; }
 .header-bar,
+.section,
 section { max-width:980px; margin:0 auto; clear:both;}
 .navbar-inverse .navbar-inner { 
   padding:0;

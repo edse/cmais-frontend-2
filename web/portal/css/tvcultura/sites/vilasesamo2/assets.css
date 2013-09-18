@@ -36,12 +36,19 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 #carrossel-interna .slider li .nome i.sprite-ico-jogos-p { margin-top:7px; }
 #carrossel-interna .slider li:hover a { text-decoration:underline; }
 /* form */
+#content .section.form,
 #content section.form { background:#3aaaec; margin:0 auto; padding:20px; max-width:900px; }
+#content .section.form .span8,
 #content section.form .span8 { width: 64%; }
+#content .section.form .span4,
 #content section.form .span4 { margin:0 !important; float:right; width:300px; }
+#content .section.form p,
 #content section.form p,
+#content .section.form label,
 #content section.form label,
+#content .section.form h2, 
 #content section.form h2 { color:#fff; }
+#content .section.form h2,
 #content section.form h2 { font-size: 25px; }
 .form-horizontal .control-label {text-align:left; float:left; width:40px !important;}
 .form-horizontal .controls textarea { width:99%; margin-left:1%; height:80px; }
@@ -58,6 +65,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form-horizontal .control-group { margin:0 0 2% 0; min-height:50px; }
 .form-horizontal .control-group.idade  .controls { width: 66%; float:right; } 
 .form-horizontal .span2 { width:21%; float:right; }
+#content .section.form .form-horizontal .span8 { width: 78%; }
 #content section.form .form-horizontal .span8 { width: 78%; }
 .form-horizontal .span2 input { width: 75%; }
 .form-horizontal .span2 .controls { margin-right:0; }
@@ -88,6 +96,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .interna.atividades .todos-assets p { background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png); }
 .interna.atividades .conteudo-asset h2 { color:#883feb; }
 .interna.atividades #content .relacionados {background:#7732e5; border-bottom:none;}
+.interna.videos #content .section.form,
 .interna.atividades #content section.form,
 .interna.atividades .relacionados h2 { background:#883feb } 
  
@@ -101,6 +110,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .interna.videos #content .filtro h3 i,
 .interna.videos #content h3 span,
 .interna.videos #content h3 i { margin-top:-6px; }
+.interna.videos #content .section.form,
 .interna.videos #content section.form,
 .interna.videos #content .relacionados h2 { background:#f78701; }
 /* /videos */
