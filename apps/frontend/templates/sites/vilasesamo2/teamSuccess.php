@@ -23,10 +23,10 @@
       <a href="javascript:;" id="toggle-sizes">teste</a>
       
       <div id="container-personagens" class="asset">
-        <div class="q-pers-01"></div>
-        <div class="q-pers-02"></div>
-        <div class="q-pers-03"></div>
-        <div class="q-pers-04"></div>
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+        <div class="element">4</div>
       </div>
     </div>
   </section>
@@ -34,7 +34,22 @@
 <script src="/portal/js/isotope/jquery.isotope.min.js"></script>
 <script>
   var $container = $('#container-personagens');
-  $container.isotope();
+  
+  // add randomish size classes
+  $container.find('.element').each(function(){
+    var $this = $(this),
+    number = parseInt( $this.text(), 10 );
+    if ( number % 7 % 2 === 1 ) {
+      $this.addClass('q-pers-01');
+    }
+    if ( number % 3 === 0 ) {
+      $this.addClass('q-pers-02');
+    }
+  });
+  
+  $container.isotope({
+    itemSelector : '.element'
+  });
   
   $('#toggle-sizes').click(function(){
     $container
