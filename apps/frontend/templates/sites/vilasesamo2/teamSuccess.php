@@ -40,14 +40,17 @@
   var $container = $('#container-personagens');
 
   $container.isotope({
-    itemSelector : '.element',
+    itemSelector : '.element'
   });
   
   $('#toggle-sizes').click(function(){
     console.log('clk');
     $container.find('.element').each(function(){
-      $(this).removeClass();
-    }).isotope('reLayout');
+      if($(this).hasClass('q-pers-01'))$(this).removeClass('q-pers-01');
+      if($(this).hasClass('q-pers-02'))$(this).removeClass('q-pers-02');
+      if($(this).hasClass('q-pers-03'))$(this).removeClass('q-pers-03');
+      if($(this).hasClass('q-pers-04'))$(this).removeClass('q-pers-04');
+    })
     return false;
   });
 </script>  
