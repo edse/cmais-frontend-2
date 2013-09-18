@@ -13,7 +13,7 @@
     <h2 class="tit">Palavra-chave buscada</h2>
     
     <div class="content span12 row-fluid">
-      <h2>Foram encontrados <span>00</span> resultados para sua pesquisa.</h2>
+      <p class="busca">Foram encontrados <span>00</span> resultados para sua pesquisa.</p>
      
     </div>
     <span class="linha"></span>
