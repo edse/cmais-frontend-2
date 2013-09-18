@@ -23,14 +23,14 @@
       <a href="javascript:;" id="toggle-sizes">teste</a>
       
       <div id="container-personagens" class="asset">
-        <div class="element">1</div>
-        <div class="element">2</div>
-        <div class="element">3</div>
-        <div class="element">4</div>
-        <div class="element">5</div>
-        <div class="element">6</div>
-        <div class="element">7</div>
-        <div class="element">8</div>
+        <div class="element" data-order="1"></div>
+        <div class="element" data-order="2"></div>
+        <div class="element" data-order="3"></div>
+        <div class="element" data-order="4"></div>
+        <div class="element" data-order="5"></div>
+        <div class="element" data-order="6"></div>
+        <div class="element" data-order="7"></div>
+        <div class="element" data-order="8"></div>
       </div>
     </div>
   </section>
@@ -42,7 +42,7 @@
   // add randomish size classes
   $container.find('.element').each(function(){
     var $this = $(this),
-    number = parseInt( $this.text());
+    number = parseInt( $this.attr('data-order'));
     if ( number == 1 || number == 5 ) {
       $this.addClass('q-pers-01');
     }
