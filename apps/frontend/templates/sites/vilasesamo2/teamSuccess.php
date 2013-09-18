@@ -48,7 +48,7 @@
     var contB = 1;
     var contC = 1; 
     var contD = 1;
-      
+    var classes = new Array(); 
     $container.find('.element').each(function(){
       
       $(this).removeClass('q-pers-01');
@@ -58,7 +58,6 @@
       
       var cont = 0;
       var number = 0;
-      var classes = new Array();
       var vetor = 0  
 
       while(cont == 0){
