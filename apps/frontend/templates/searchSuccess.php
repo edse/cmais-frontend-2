@@ -14,6 +14,8 @@
 
       <!-- BARRA SITE -->
       <div id="barra-site">
+        <?php
+        /*
         <div class="box-topo grid3">
           <?php if(isset($_GET['term'])):?>
                   <h3 class="tit-pagina">Resultado de busca para "<?php echo $_GET['term'] ?>".</h3>
@@ -21,7 +23,8 @@
                   <h3 class="tit-pagina">Resultado da busca.</h3>
           <?php endif;?>
         </div>
-        
+        */
+        ?>
       </div>
       <!-- /BARRA SITE -->
 
