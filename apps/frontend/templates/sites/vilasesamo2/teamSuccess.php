@@ -59,10 +59,11 @@
       var cont = 0;
       var number = 0;
       
-      while(cont == 0){
+      
         number = Math.floor((Math.random()*4)+1);
         $(this).addClass('q-pers-0'+number);
         /*
+       while(cont == 0){
         if(number == 1 && contA < 2){
           contA++;
           if(!$(this).hasClass('q-pers-01') && contB < 2)$(this).addClass('q-pers-0'+number);
