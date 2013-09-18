@@ -72,12 +72,14 @@
           cont=0;
         }else{
           console.log('q-pers-0'+number);
-          for(var i=0; i< classes.length; i++){
-            if(classes[i] == 'q-pers-0'+number){
-              cont = 0;
-            }else{  
-              $(this).addClass('q-pers-0'+number);
-              cont++;
+          for(var j=0;j<classes.length; j++){
+            for(var i=0; i< classes.length; i++){
+              if(classes[j] == 'q-pers-0'+number){
+                cont = 0;
+              }else{  
+                $(this).addClass('q-pers-0'+number);
+                cont++;
+              }
             }
           }
         }
