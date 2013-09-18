@@ -45,7 +45,7 @@
   
   $('#toggle-sizes').click(function(){
     console.log('clk');
-    $container.find('.element').each(function({
+    $container.find('.element').each(function(){
       $(this).removeClass();
     }).isotope('reLayout');
     return false;
