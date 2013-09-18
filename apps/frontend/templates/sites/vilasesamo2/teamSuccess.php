@@ -61,19 +61,19 @@
         number = Math.floor((Math.random()*4)+1);
         if(number == 1 && contA < 2){
           contA++;
-          $(this).addClass('q-pers-0'+number);
+          if(!$(this).hasClass('q-pers-02') && contB < 2)$(this).addClass('q-pers-0'+number);
         }
         if(number == 2 && contB < 2){
           contB++;
-          $(this).addClass('q-pers-0'+number);
+          if(!$(this).hasClass('q-pers-02') && contB < 2)$(this).addClass('q-pers-0'+number);
         } 
         if(number == 3 && contC < 2){
           contC++;
-          $(this).addClass('q-pers-0'+number);
+          if(!$(this).hasClass('q-pers-02') && contB < 2)$(this).addClass('q-pers-0'+number);
         }
         if(number == 4 && contD < 2){
           contD++;
-          $(this).addClass('q-pers-0'+number);
+          if(!$(this).hasClass('q-pers-02') && contB < 2)$(this).addClass('q-pers-0'+number);
         }
         
         if(contA == 2 && contB == 2 && contC == 2 && contD == 2 ){
