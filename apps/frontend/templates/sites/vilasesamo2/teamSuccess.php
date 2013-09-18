@@ -56,17 +56,24 @@
       for(var i=0; i<3; i++){
         if($(this).hasClass('q-pers-0'+ i ))$(this).removeClass('q-pers-0' + i);
       }
+      var cont = 0;
       var number = 0;
+      while(cont<1){
+        number = Math.floor((Math.random()*4)+1);
+        if(number == 1) contA++;
+        if(number == 2) contB++;
+        if(number == 3) contC++;
+        if(number == 4) contD++;
+        
+        if(contA > 2 || contB > 2 || contC > 2 || contD > 2 ){
+          cont --;
+        }
+      }
       
-      number = Math.floor((Math.random()*4)+1);
-      if(number == 1) contA++;
-      if(number == 2) contB++;
-      if(number == 3) contC++;
-      if(number == 4) contD++;
-      console.log(contA + '/' + contB + '/' + contC + '/' + contD )
 
       //$(this).addClass('q-pers-0'+);
     });
+    console.log(contA + '/' + contB + '/' + contC + '/' + contD )
     $container.isotope('reLayout')
     return false;
   });
