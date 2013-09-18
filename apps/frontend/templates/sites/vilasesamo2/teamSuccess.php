@@ -48,7 +48,7 @@
     var contB = 1;
     var contC = 1; 
     var contD = 1;
-     
+    var vetor = 0; 
     $container.find('.element').each(function(){
       
       $(this).removeClass('q-pers-01');
@@ -58,7 +58,7 @@
       
       var cont = 0;
       var number = 0;
-      var vetor = 0  
+        
 
       while(cont == 0){
         number = Math.floor((Math.random()*4)+1);
