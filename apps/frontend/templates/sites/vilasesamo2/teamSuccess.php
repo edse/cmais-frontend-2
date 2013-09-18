@@ -59,9 +59,6 @@
   
   $container.isotope({
     itemSelector : '.element',
-    masonryHorizontal: {
-      rowHeight: 360
-    }
   });
   
   $('#toggle-sizes').click(function(){
