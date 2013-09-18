@@ -6,10 +6,10 @@
 
 </script>
 <style>
- .q-pers-01{display:block; width: 140px; height:140px; background:#000000; float:left;}
- .q-pers-02{display:block; width: 200px; height:200px; background:blue; float:left;}
- .q-pers-03{display:block; width: 300px; height:300px; background:red; float:left;}
- .q-pers-04{display:block; width: 350px; height:350px; background:yellow; float:left;}
+ .q-pers-01{display:block; width: 140px; height:140px; background:#000000;}
+ .q-pers-02{display:block; width: 200px; height:200px; background:blue;}
+ .q-pers-03{display:block; width: 300px; height:300px; background:red;}
+ .q-pers-04{display:block; width: 350px; height:350px; background:yellow;}
 </style>
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
