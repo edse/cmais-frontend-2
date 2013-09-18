@@ -44,10 +44,10 @@
   });
   
   $('#toggle-sizes').click(function(){
-    var contA = 1;
-    var contB = 1;
-    var contC = 1; 
-    var contD = 1;
+    var contA = 0;
+    var contB = 0;
+    var contC = 0; 
+    var contD = 0;
       
     $container.find('.element').each(function(){
       
