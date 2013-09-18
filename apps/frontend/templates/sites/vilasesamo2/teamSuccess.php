@@ -44,8 +44,6 @@
   });
   
   $('#toggle-sizes').click(function(){
-    console.log('clk');
-    
     var contA = 0;
     var contB = 0;
     var contC = 0; 
@@ -68,9 +66,9 @@
         if(contA > 2 || contB > 2 || contC > 2 || contD > 2 ){
           cont--;
         }else{
-          cont++;
+          cont++; 
         }
-        
+        console.log('clk foi');
       }
       
 
