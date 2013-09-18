@@ -78,7 +78,7 @@
           if(!$(this).hasClass('q-pers-04') && contB < 2)$(this).addClass('q-pers-0'+number);
         }
         
-        if(contA == 2 && contB == 2 && contC == 2 && contD == 2 ){
+        if(contA == 2 || contB == 2 || contC == 2 || contD == 2 ){
           cont=1; //sai do looping
         }
       }
