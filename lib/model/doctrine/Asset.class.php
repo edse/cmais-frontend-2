@@ -62,6 +62,24 @@ class Asset extends BaseAsset
     return $r;
   }
 
+  public function retriveRelatedAssetsByAssetTypeId22($type){
+    $r = array();
+    if($this->getId() > 0 && $type){
+      $r = Doctrine_Query::create()
+      ->select('a.*, ra.id related_asset_id, ra.type related_asset_type, ra.description related_asset_description')
+      ->from('Asset a, RelatedAsset ra')
+      ->where('a.id = ra.asset_id')
+      ->andWhere('ra.parent_asset_id = ?', (int)$this->getId())
+      ->andWhere('a.asset_type_id = ?', (int)$type)
+      ->andWhere('a.is_active = 1')
+      ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+      ->groupBy('ra.id')
+      ->orderBy('ra.display_order')
+      ->execute();
+    }
+    return $r;
+  }
+
   public function retriveRelatedAssetsByAssetTypeId($type){
     $r = array();
     if($this->getId() > 0 && $type){
@@ -71,7 +89,6 @@ class Asset extends BaseAsset
       ->where('a.id = ra.asset_id')
       ->andWhere('ra.parent_asset_id = ?', (int)$this->getId())
       ->andWhere('a.asset_type_id = ?', (int)$type)
-      ->andWhere('a.date_start IS NULL OR a.date_start > ?', date("Y-m-d H:i:s"))
       ->groupBy('ra.id')
       ->orderBy('ra.display_order')
       ->execute();

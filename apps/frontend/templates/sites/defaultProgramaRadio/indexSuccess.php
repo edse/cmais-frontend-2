@@ -119,7 +119,7 @@
                   
                   <!-- BOX RADIO -->
                   <div class="paraouvir">
-                  	
+                    
                     <!--p><?php echo $asset->getTitle()?></p>
                     <p><?php echo $asset->getDescription()?></p-->
 
@@ -131,7 +131,7 @@
                         
                       <?php if($asset->AssetType->getSlug() == "audio-gallery"): ?>
                         
-                      <?php $audioAssets = $asset->retriveRelatedAssetsByAssetTypeId(4); ?>
+                      <?php $audioAssets = $asset->retriveRelatedAssetsByAssetTypeId22(4); ?>
                         <script type="text/javascript" src="/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script>
                         <link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
                         <script type="text/javascript" src="/js/audioplayer/jquery.jplayer.min.js"></script>
