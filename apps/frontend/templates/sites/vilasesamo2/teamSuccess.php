@@ -61,6 +61,8 @@
       
       while(cont == 0){
         number = Math.floor((Math.random()*4)+1);
+        $(this).addClass('q-pers-0'+number);
+        /*
         if(number == 1 && contA < 2){
           contA++;
           if(!$(this).hasClass('q-pers-01') && contB < 2)$(this).addClass('q-pers-0'+number);
@@ -81,6 +83,7 @@
         if(contA == 2 || contB == 2 || contC == 2 || contD == 2 ){
           cont=1; //sai do looping
         }
+        */
       }
 
     });
