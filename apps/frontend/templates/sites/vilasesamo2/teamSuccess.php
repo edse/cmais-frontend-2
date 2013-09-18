@@ -68,7 +68,7 @@
         if(number == 2)contB++;
         if(number == 3)contC++;
         if(number == 4)contD++;
-        if(contA <=2 || contB <=2 || contC <=2 || contD <=2){
+        if(contA < 2 || contB < 2 || contC < 2 || contD < 2){
           cont=0;
         }else{
           for(var i=0; i< classes.length; i++){
