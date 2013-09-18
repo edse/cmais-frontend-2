@@ -60,21 +60,11 @@
       var cont = 0;
       var number = 0;
         
+      number = Math.floor((Math.random()*4)+1);
+      $(this).addClass('q-pers-0'+ number);
+      classes[vetor] = 'q-pers-0'+ number;
       
       
-      
-      for(var i=0; i< classes.length; i++){
-        while(cont == 0){
-          number = Math.floor((Math.random()*4)+1);
-          if(classes[i] == 'q-pers-0'+number){
-            cont = 0;
-          }else{  
-            $(this).addClass('q-pers-0'+number);
-            classes[i] = 'q-pers-0'+number;
-            cont++;
-          }
-        }
-      }
       
       vetor++;
       
