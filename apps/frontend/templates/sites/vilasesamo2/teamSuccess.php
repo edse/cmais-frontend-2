@@ -47,11 +47,12 @@
     console.log('clk');
     
     $container.find('.element').each(function(){
+      var arr = (1, 2, 3, 4);
       if($(this).hasClass('q-pers-01'))$(this).removeClass('q-pers-01');
       if($(this).hasClass('q-pers-02'))$(this).removeClass('q-pers-02');
       if($(this).hasClass('q-pers-03'))$(this).removeClass('q-pers-03');
       if($(this).hasClass('q-pers-04'))$(this).removeClass('q-pers-04');
-      $(this).addClass('q-pers-01');
+      $(this).addClass('q-pers-0'+Math.random(arr));
     });
     $container.isotope('reLayout')
     return false;
