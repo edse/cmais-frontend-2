@@ -62,16 +62,24 @@
         
       number = Math.floor((Math.random()*4)+1);
       while(cont == 0){
+        if(number == 1)contA++;
+        if(number == 2)contB++;
+        if(number == 3)contC++;
+        if(number == 4)contD++;
         
-        for(var i=0; i< classes.length; i++){
-          if(classes[i] == 'q-pers-0'+number){
-            cont = 0
-          }else{  
-            $(this).addClass('q-pers-0'+number);
-            cont++;
+        if(contA <=2 || contA <=2 || contA <=2 || contA <=2){
+          cont=0;
+        }else{
+          for(var i=0; i< classes.length; i++){
+            if(classes[i] == 'q-pers-0'+number){
+              cont = 0;
+            }else{  
+              $(this).addClass('q-pers-0'+number);
+              cont++;
+            }
           }
         }
-      }
+      
       classes[vetor] = 'q-pers-0'+number;
       vetor++;
       
