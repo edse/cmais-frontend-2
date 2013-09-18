@@ -44,10 +44,10 @@
   });
   
   $('#toggle-sizes').click(function(){
-    var contA = 0;
-    var contB = 0;
-    var contC = 0; 
-    var contD = 0;
+    var contA = 1;
+    var contB = 1;
+    var contC = 1; 
+    var contD = 1;
       
     $container.find('.element').each(function(){
       
@@ -59,19 +59,19 @@
       
       while(cont == 0){
         number = Math.floor((Math.random()*4)+1);
-        if(number == 1 && contA <2){
+        if(number == 1 && contA < 2){
           contA++;
           $(this).addClass('q-pers-0'+number);
         }
-        if(number == 2 && contB <2){
+        if(number == 2 && contB < 2){
           contB++;
           $(this).addClass('q-pers-0'+number);
         } 
-        if(number == 3 && contC <2){
+        if(number == 3 && contC < 2){
           contC++;
           $(this).addClass('q-pers-0'+number);
         }
-        if(number == 4 && contD <2){
+        if(number == 4 && contD < 2){
           contD++;
           $(this).addClass('q-pers-0'+number);
         }
