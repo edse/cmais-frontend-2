@@ -65,9 +65,8 @@
   });
   
   $('#toggle-sizes').click(function(){
-    $container
-      .toggleClass('variable-sizes')
-      .isotope('reLayout');
+    console.log('clk');
+    $container.isotope('reLayout');
     return false;
   });
 </script>  
