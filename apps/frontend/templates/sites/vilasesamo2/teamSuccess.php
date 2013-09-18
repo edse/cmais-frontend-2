@@ -63,7 +63,7 @@
       
       while(cont==0){
         number = Math.floor((Math.random()*4)+1);
-        classes[i] = 'q-pers-0'+ number;
+        
         for(var j=0; j<classes.length; j++){
           if(classes[j] == 'q-pers-0'+ number){
             cont = 0; 
