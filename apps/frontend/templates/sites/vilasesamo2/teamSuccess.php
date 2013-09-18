@@ -66,7 +66,7 @@
         classes[i] = 'q-pers-0'+ number;
         for(var j=0; j<classes.length; j++){
           if(classes[j] == classes[i]){
-            cont = 0;
+            cont = 0; 
           }else{
             $(this).addClass('q-pers-0'+ number);
             $(this).attr('data-order','q-pers-0'+ number);
