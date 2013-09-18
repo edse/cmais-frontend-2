@@ -58,17 +58,21 @@
       
       var cont = 0;
       var number = 0;
-      
+      var classes = new Array();
+      var vetor = 0  
+
       while(cont == 0){
         number = Math.floor((Math.random()*4)+1);
         if(!$(this).hasClass('q-pers-0'+number)){
           $(this).addClass('q-pers-0'+number);
+          classes[vetor] = 'q-pers-0'+number;
+          vetor++       
           cont++;
         }
       }
       
     });
-    console.log(contA + '/' + contB + '/' + contC + '/' + contD )
+    console.log(classes)
     $container.isotope('reLayout')
     return false;
   });
