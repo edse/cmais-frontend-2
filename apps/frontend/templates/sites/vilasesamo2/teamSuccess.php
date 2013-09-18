@@ -6,7 +6,7 @@
 
 </script>
 <style>
-.q-pers-01{display:block; width: 140px; height:140px; background:#00000;}
+.q-pers-01{display:block; width: 140px; height:140px; background:#000000;}
 .q-pers-02{display:block; width: 200px; height:200px; background:blue;}
 .q-pers-03{display:block; width: 300px; height:300px; background:red;}
 .q-pers-04{display:block; width: 350px; height:350px; background:yellow;}
@@ -20,9 +20,9 @@
     <h3><span class="sprite-icon-jogos-med"></span>Jogos<a class="todos-assets" href="/vilasesamo2/jogos"><span class="sprite-btn-voltar-jogos"></span><p>todos os jogos</p></a></h3>
     <div class="conteudo-asset">
       <h2>Personagens</h2>
-    
+      <a href="javascript:;" id="toggle-sizes">
       
-      <div class="asset">
+      <div id="container-personagens" class="asset">
         <div class="q-pers-01"></div>
         <div class="q-pers-02"></div>
         <div class="q-pers-03"></div>
@@ -31,3 +31,14 @@
     </div>
   </section>
 </div>
+<script src="/portal/js/isotope/jquery.isotope.min.js"></script>
+<script>
+  var $container = $('#container-personagens');
+  
+  $('#toggle-sizes').click(function(){
+    $container
+      .toggleClass('variable-sizes')
+      .isotope('reLayout');
+    return false;
+  });
+</script>  
