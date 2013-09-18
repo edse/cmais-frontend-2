@@ -66,13 +66,13 @@
         if(contA > 2 || contB > 2 || contC > 2 || contD > 2 ){
           cont--;
         }else{
-          cont++; 
+          cont++;
         }
         console.log('clk foi');
       }
       
 
-      //$(this).addClass('q-pers-0'+);
+      $(this).addClass('q-pers-0'+number);
     });
     console.log(contA + '/' + contB + '/' + contC + '/' + contD )
     $container.isotope('reLayout')
