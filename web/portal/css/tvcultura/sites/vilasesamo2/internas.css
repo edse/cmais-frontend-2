@@ -228,6 +228,6 @@ body { background:#0172f9; }
 /* incluir */
 
 /* busca */
-.busca p { background:#fff; height:56px; line-height: 56px;  }
-.busca p span {float:none; display:inline;  }  
+.bg-incluir .busca { background:#fff; height:56px; line-height: 56px;  }
+.bg-incluir .busca span {float:none; display:inline;  }  
 
