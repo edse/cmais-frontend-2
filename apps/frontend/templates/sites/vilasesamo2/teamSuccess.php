@@ -44,13 +44,14 @@
   });
   var classes = new Array();
   classes[0] = 'teste';
+  
   $('#toggle-sizes').click(function(){
     var contA = 0;
     var contB = 0;
     var contC = 0; 
     var contD = 0;
     var vetor = 0; 
-    $container.find('.element').each(function(){
+    $container.find('.element').each(function(i){
       
       $(this).removeClass('q-pers-01');
       $(this).removeClass('q-pers-02');
@@ -59,14 +60,22 @@
       
       var cont = 0;
       var number = 0;
-        
-      number = Math.floor((Math.random()*4)+1);
-      $(this).addClass('q-pers-0'+ number);
-      classes[vetor] = 'q-pers-0'+ number;
+      
+      while(cont==0){
+        number = Math.floor((Math.random()*4)+1);
+        classes[i] = 'q-pers-0'+ number;
+        for(var j=0; j<classes.length; j++){
+          if(classes[j] == classes[i]){
+            cont = 0;
+          }else{
+            $(this).addClass('q-pers-0'+ number);
+            $(this).attr('data-order','q-pers-0'+ number);
+          }
+        }
+      }
       
       
       
-      vetor++;
       
     });
     console.log(classes)
