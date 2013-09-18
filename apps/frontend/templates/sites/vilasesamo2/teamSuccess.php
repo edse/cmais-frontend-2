@@ -60,7 +60,7 @@
         if(number == 2) contB++;
         if(number == 3) contC++;
         if(number == 4) contD++;
-        console.log(contA + '/' + contB + '/' + conC + '/' + contD )
+        console.log(contA + '/' + contB + '/' + contC + '/' + contD )
       }
       //$(this).addClass('q-pers-0'+);
     });
