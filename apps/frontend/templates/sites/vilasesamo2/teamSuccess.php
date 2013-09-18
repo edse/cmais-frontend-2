@@ -45,10 +45,10 @@
   var classes = new Array();
   classes[0] = 'teste';
   $('#toggle-sizes').click(function(){
-    var contA = 1;
-    var contB = 1;
-    var contC = 1; 
-    var contD = 1;
+    var contA = 0;
+    var contB = 0;
+    var contC = 0; 
+    var contD = 0;
     var vetor = 0; 
     $container.find('.element').each(function(){
       
@@ -67,7 +67,7 @@
         if(number == 3)contC++;
         if(number == 4)contD++;
         
-        if(contA <=2 || contA <=2 || contA <=2 || contA <=2){
+        if(contA <=2 || contB <=2 || contC <=2 || contD <=2){
           cont=0;
         }else{
           for(var i=0; i< classes.length; i++){
