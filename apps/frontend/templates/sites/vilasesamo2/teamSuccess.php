@@ -42,13 +42,13 @@
   $container.isotope({
     itemSelector : '.element'
   });
-  
+  var classes = new Array();
   $('#toggle-sizes').click(function(){
     var contA = 1;
     var contB = 1;
     var contC = 1; 
     var contD = 1;
-    var classes = new Array(); 
+     
     $container.find('.element').each(function(){
       
       $(this).removeClass('q-pers-01');
