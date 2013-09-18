@@ -70,7 +70,7 @@
           }else{
             $(this).addClass('q-pers-0'+ number);
             $(this).attr('data-order','q-pers-0'+ number);
-            classes[i] = 'q-pers-0'+ number;
+            classes.push('q-pers-0'+ number)
             cont++;
           }
         }
