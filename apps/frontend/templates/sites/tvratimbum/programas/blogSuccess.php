@@ -75,7 +75,7 @@
            <?php if(count($pager) > 0): ?>
         
         <?php foreach($pager->getResults() as $d): ?>	        
-        <div class="assets">
+        <div class="assets blog">
            <h3><?php echo $d->getTitle() ?></h3>
 	       <p><?php echo html_entity_decode($d->AssetContent->render()) ?></p>
         </div>
