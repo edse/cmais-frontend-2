@@ -10,7 +10,7 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="pais incluir">
-    <h2 class="tit">hábitos para uma vida mais saudável</h2>
+    <h2 class="tit">Palavra</h2>
     <div class="btn-group redes">
         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
         <ul class="dropdown-menu">
