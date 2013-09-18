@@ -34,6 +34,7 @@
 <script src="/portal/js/isotope/jquery.isotope.min.js"></script>
 <script>
   var $container = $('#container-personagens');
+  $container.isotope();
   
   $('#toggle-sizes').click(function(){
     $container
