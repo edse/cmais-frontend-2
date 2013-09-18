@@ -84,9 +84,9 @@
         if(contA == 2 || contB == 2 || contC == 2 || contD == 2 ){
           cont=1; //sai do looping
         }
-        */
+        
       }
-
+*/
     });
     console.log(contA + '/' + contB + '/' + contC + '/' + contD )
     $container.isotope('reLayout')
