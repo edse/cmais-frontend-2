@@ -27,6 +27,10 @@
         <div class="element">2</div>
         <div class="element">3</div>
         <div class="element">4</div>
+        <div class="element">5</div>
+        <div class="element">6</div>
+        <div class="element">7</div>
+        <div class="element">8</div>
       </div>
     </div>
   </section>
@@ -38,12 +42,18 @@
   // add randomish size classes
   $container.find('.element').each(function(){
     var $this = $(this),
-    number = parseInt( $this.text(), 10 );
-    if ( number % 7 % 2 === 1 ) {
+    number = parseInt( $this.text());
+    if ( number == 1 || number == 5 ) {
       $this.addClass('q-pers-01');
     }
-    if ( number % 3 === 0 ) {
+    if ( number == 2 || number == 6 ) {
       $this.addClass('q-pers-02');
+    }
+    if ( number == 3 || number == 7 ) {
+      $this.addClass('q-pers-03');
+    }
+    if ( number == 4 || number == 8 ) {
+      $this.addClass('q-pers-04');
     }
   });
   
