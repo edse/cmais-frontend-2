@@ -61,7 +61,7 @@
         number = Math.floor((Math.random()*4)+1);
         if(number == 1 && contA < 2){
           contA++;
-          if(!$(this).hasClass('q-pers-02') && contB < 2)$(this).addClass('q-pers-0'+number);
+          if(!$(this).hasClass('q-pers-01') && contB < 2)$(this).addClass('q-pers-0'+number);
         }
         if(number == 2 && contB < 2){
           contB++;
@@ -69,11 +69,11 @@
         } 
         if(number == 3 && contC < 2){
           contC++;
-          if(!$(this).hasClass('q-pers-02') && contB < 2)$(this).addClass('q-pers-0'+number);
+          if(!$(this).hasClass('q-pers-03') && contB < 2)$(this).addClass('q-pers-0'+number);
         }
         if(number == 4 && contD < 2){
           contD++;
-          if(!$(this).hasClass('q-pers-02') && contB < 2)$(this).addClass('q-pers-0'+number);
+          if(!$(this).hasClass('q-pers-04') && contB < 2)$(this).addClass('q-pers-0'+number);
         }
         
         if(contA == 2 && contB == 2 && contC == 2 && contD == 2 ){
