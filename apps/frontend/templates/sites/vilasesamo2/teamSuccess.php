@@ -51,11 +51,16 @@
       for(var i=0; i<3; i++){
         if($(this).hasClass('q-pers-0'+ i ))$(this).removeClass('q-pers-0' + i);
       }
+      
       var contA, contB, contC, contD = 0;
       var number = 0;
       for(var  j=0; j<7; j++){
         number = Math.floor((Math.random()*4)+1);
-        console.log(number)
+        if(number == 1) contA++;
+        if(number == 2) contB++;
+        if(number == 3) contC++;
+        if(number == 4) contD++;
+        console.log(contA + '/' + contB + '/' + conC + '/' + contD )
       }
       //$(this).addClass('q-pers-0'+);
     });
