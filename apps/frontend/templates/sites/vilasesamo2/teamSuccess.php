@@ -57,18 +57,17 @@
       var cont = 0;
       var number = 0;
       
-      while(cont<1){
+      while(cont == 0){
         number = Math.floor((Math.random()*4)+1);
         if(number == 1 && contA <=2) contA++;
         if(number == 2 && contB <=2) contB++;
         if(number == 3 && contC <=2) contC++;
         if(number == 4 && contD <=2) contD++;
         
-        if(contA >= 2 || contB >= 2 || contC >= 2 || contD >= 2 ){
-          cont=1;
-        }else{
-          cont++;
+        if(contA == 2 && contB == 2 && contC == 2 && contD == 2 ){
+          cont=1; //sai do looping
         }
+        
         console.log('clk foi');
       }
       
