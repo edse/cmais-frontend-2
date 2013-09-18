@@ -52,7 +52,10 @@
         if($(this).hasClass('q-pers-0'+ i ))$(this).removeClass('q-pers-0' + i);
       }
       
-      var contA, contB, contC, contD = 0;
+      var contA = 0;
+      var contB = 0;
+      var contC = 0; 
+      var contD = 0;
       var number = 0;
       for(var  j=0; j<7; j++){
         number = Math.floor((Math.random()*4)+1);
