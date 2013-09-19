@@ -40,9 +40,21 @@
 <script src="/portal/js/isotope/jquery.isotope.min.js"></script>
 <script>
   var $container = $('#container-personagens');
-  $container.isotope({ 
-    masonryHorizontal: {
-      rowHeight: 400
+  $container.isotope({
+    itemSelector : '.element',
+    masonry : {
+      columnWidth : 120
+    },
+    masonryHorizontal : {
+      rowHeight: 120
+    },
+    cellsByRow : {
+      columnWidth : 240,
+      rowHeight : 240
+    },
+    cellsByColumn : {
+      columnWidth : 240,
+      rowHeight : 240
     }
   });
   /*
