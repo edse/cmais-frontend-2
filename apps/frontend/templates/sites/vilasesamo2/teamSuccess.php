@@ -62,6 +62,6 @@
       if(number==3)contC++;
       if(number==4)contD++;
     }
-    console.log(contA +"/"+ contB +"/"+contC"/"contD)
+    console.log(contA +"/"+ contB +"/"+contC+"/"+contD)
   });
 </script>  
