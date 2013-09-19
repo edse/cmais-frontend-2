@@ -50,6 +50,7 @@
     var contB = 0;
     var contC = 0; 
     var contD = 0;
+    var number = 0;
     var contWhile = 0; 
     $container.find('.element').each(function(i){
       cont = i;
@@ -58,7 +59,7 @@
     for(var j=0; j<cont+1;j++){
       contWhile=0;
       while(contWhile==0){
-      var number = Math.floor((Math.random()*4)+1);
+        number = Math.floor((Math.random()*4)+1);
         if(number==1)contA++;
         if(number==2)contB++;
         if(number==3)contC++;
