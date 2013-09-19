@@ -42,9 +42,9 @@
   var $container = $('#container-personagens');
   $container.isotope({ 
     itemSelector : '.element', 
-    masonry: {
-      columnWidth: 950
-    } 
+    masonryHorizontal: {
+      rowHeight: 360
+    }
   });
   /*
   $container.isotope({
