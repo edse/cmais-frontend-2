@@ -61,7 +61,7 @@
       var cont = 0;
       var number = 0;
       
-      while(cont==0){
+      do{
         number = Math.floor((Math.random()*4)+1);
         if(number==1)contA++;
         if(number==2)contB++;
@@ -74,9 +74,9 @@
             $(this).addClass('q-pers-0'+ number);
             classes[i]='q-pers-0'+ number;
           }
-        }
+        } 
         cont++;
-      }
+      }while(cont==0)
       
       
       
