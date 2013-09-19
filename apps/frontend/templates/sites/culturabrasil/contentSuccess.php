@@ -240,6 +240,7 @@
               {
                 $(this).jPlayer("pauseOthers");
               },
+              solution:"flash, html",
               swfPath: "/js/audioplayer",
               supplied: "mp3"
             });
