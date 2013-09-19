@@ -6,7 +6,8 @@
 
 </script>
 <style>
- #container-personagens{width:950px;height:100%;}
+ #container-personagens{width:950px;}
+ .conteudo-asset {padding: 0;}
  .q-pers-01{float:left;width: 140px; height:140px; margin:5px;background:#000000;}
  .q-pers-02{float:left; width: 200px; height:200px; margin:5px;background:blue;}
  .q-pers-03{float:left; width: 300px; height:300px; margin:5px;background:red;}
@@ -39,7 +40,7 @@
 <script src="/portal/js/isotope/jquery.isotope.min.js"></script>
 <script>
   var $container = $('#container-personagens');
-  $container.isotope({ layoutMode : 'fitrows' });
+  $container.isotope({ itemSelector : '.element', layoutMode : 'fitrows' });
   /*
   $container.isotope({
     itemSelector : '.element',
