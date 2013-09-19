@@ -66,6 +66,9 @@
       if(number==4)contD++; 
       
       
+        classes[vetor] = number;
+        vetor++;
+      
       contWhile++;
     }
   
