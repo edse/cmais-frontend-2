@@ -52,12 +52,16 @@
     var contD = 0;
     var vetor = 0; 
     $container.find('.element').each(function(i){
-      console.log(i);
       cont = i;
     });
     console.log(cont)
     for(var j=0; j<cont;j++){
-      console.log(j);
+      number = Math.floor((Math.random()*4)+1);
+      if(number==1)contA++;
+      if(number==2)contB++;
+      if(number==3)contC++;
+      if(number==4)contD++;
     }
+    console.log(contA +"/"+ contB +"/"+contC"/"contD)
   });
 </script>  
