@@ -50,18 +50,27 @@
     var contB = 0;
     var contC = 0; 
     var contD = 0;
-    var vetor = 0; 
+    var contWhile = 0; 
     $container.find('.element').each(function(i){
       cont = i;
     });
     console.log(cont)
-    for(var j=0; j<cont;j++){
-      number = Math.floor((Math.random()*4)+1);
-      if(number==1)contA++;
-      if(number==2)contB++;
-      if(number==3)contC++;
-      if(number==4)contD++;
+    for(var j=0; j<cont+1;j++){
+      while(contWhile==0){
+      var number = Math.floor((Math.random()*4)+1);
+        if(number==1)contA++;
+        if(number==2)contB++;
+        if(number==3)contC++;
+        if(number==4)contD++;
+        
+        if(contA >=2 || contB >=2 || contC >=2 || contD >=2){
+          contWhile = 0;
+        }else{
+          classes[j] = number
+        }
+      }
     }
     console.log(contA +"/"+ contB +"/"+contC+"/"+contD)
+    console.log(classes)
   });
 </script>  
