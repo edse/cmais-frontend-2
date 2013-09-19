@@ -53,7 +53,12 @@
     var number = 0;
     var contWhile = 0; 
     var vetor = 0;
+
     $container.find('.element').each(function(i){
+      $(this).removeClass('q-pers-01');
+      $(this).removeClass('q-pers-02');
+      $(this).removeClass('q-pers-03');
+      $(this).removeClass('q-pers-04');
       cont = i;
     });
     console.log(cont)
