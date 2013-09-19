@@ -8,9 +8,9 @@
 <style>
  #container-personagens{width:950px;height:750px;}
  .conteudo-asset {padding: 0;}
- .q-pers-01{float:left; width: 90px; height:100px; margin:5px;background:#000000;}
+ .q-pers-01{float:left; width: 140px; height:140px; margin:5px;background:#000000;}
  .q-pers-02{float:left; width: 200px; height:200px; margin:5px;background:blue;}
- .q-pers-03{float:left; width: 400px; height:400px; margin:5px;background:red;}
+ .q-pers-03{float:left; width: 300px; height:300px; margin:5px;background:red;}
  .q-pers-04{float:left; width: 350px; height:350px; margin:5px;background:yellow;}
 </style>
 <!-- HEADER -->
@@ -26,10 +26,12 @@
       
       <div id="container-personagens" class="asset">
         <div class="element q-pers-03" data-order="1"></div>
+        <div class="element q-pers-04" data-order="2"></div>
         <div class="element q-pers-01" data-order="3"></div>
         <div class="element q-pers-02" data-order="4"></div>
         <div class="element q-pers-02" data-order="5"></div>
         <div class="element q-pers-01" data-order="6"></div>
+        <div class="element q-pers-04" data-order="7"></div>
         <div class="element q-pers-03" data-order="8"></div>
       </div>
     </div>
