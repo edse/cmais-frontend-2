@@ -87,9 +87,10 @@
     }
     $container.find('.element').each(function(j){
       $(this).addClass(classes[j]);
+      console.log(classes[j])
     });
     $container.isotope('reLayout');
-    //console.log(contA +"/"+ contB +"/"+contC+"/"+contD)
-    //console.log(classes)
+    console.log(contA +"/"+ contB +"/"+contC+"/"+contD)
+    console.log(classes)
   });
 </script>  
