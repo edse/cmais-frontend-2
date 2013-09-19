@@ -39,7 +39,7 @@
 <script src="/portal/js/isotope/jquery.isotope.min.js"></script>
 <script>
   var $container = $('#container-personagens');
-  $container.isotope({ layoutMode : 'masonry' });
+  $container.isotope({ layoutMode : 'straightAcross' });
   /*
   $container.isotope({
     itemSelector : '.element',
