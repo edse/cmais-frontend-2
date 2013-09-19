@@ -52,31 +52,9 @@
     var contD = 0;
     var vetor = 0; 
     $container.find('.element').each(function(i){
+      console.log(i)
       
-      $(this).removeClass('q-pers-01');
-      $(this).removeClass('q-pers-02');
-      $(this).removeClass('q-pers-03');
-      $(this).removeClass('q-pers-04');
       
-      var cont = 0;
-      var number = 0;
-      
-      do{
-        number = Math.floor((Math.random()*4)+1);
-        if(number==1)contA++;
-        if(number==2)contB++;
-        if(number==3)contC++;
-        if(number==4)contD++;
-        for(var j=0; j<classes.length; j++){
-          if(classes[j] == 'q-pers-0'+ number && contA >= 2 || classes[j] == 'q-pers-0'+ number && contB >= 2 || classes[j] == 'q-pers-0'+ number && contC >= 2 || classes[j] == 'q-pers-0'+ number && contD >= 2){
-            cont = 0; 
-          }else{
-            classes[i]='q-pers-0'+ number;
-            $(this).addClass(classes[i]);
-          }
-        } 
-        cont++;
-      }while(cont==0)
       
       
       
