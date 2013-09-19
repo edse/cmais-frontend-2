@@ -56,23 +56,22 @@
       cont = i;
     });
     console.log(cont)
-    for(var j=0; j<cont+1;j++){
-      contWhile=0;
-      while(contWhile==0){
-        number = Math.floor((Math.random()*4)+1);
-        if(number==1)contA++;
-        if(number==2)contB++;
-        if(number==3)contC++;
-        if(number==4)contD++;
-        
-        if(contA >=2 || contB >=2 || contC >=2 || contD >=2){
-          contWhile = 0;
-        }else{
-          classes[j] = number
-          contWhile++;
-        }
+
+    while(contWhile==0){
+      number = Math.floor((Math.random()*4)+1);
+      if(number==1)contA++;
+      if(number==2)contB++;
+      if(number==3)contC++;
+      if(number==4)contD++;
+      
+      if(contA >=2 || contB >=2 || contC >=2 || contD >=2){
+        contWhile = 0;
+      }else{
+        classes[0] = number
+        contWhile++;
       }
     }
+  
     console.log(contA +"/"+ contB +"/"+contC+"/"+contD)
     console.log(classes)
   });
