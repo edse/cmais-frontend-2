@@ -43,7 +43,7 @@
   $container.isotope({
     itemSelector : '.element',
     masonryHorizontal : {
-      rowHeight: 0
+      rowHeight: 360
     },
 
   });
@@ -104,7 +104,7 @@
       $(this).addClass(classes[j]);
       //console.log(classes[j])
     });
-    $container.isotope('fitRows');
+    $container.isotope('shuffle');
     //console.log(contA +"/"+ contB +"/"+contC+"/"+contD)
     //console.log(classes)
   });
