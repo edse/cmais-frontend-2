@@ -38,11 +38,12 @@
 <script src="/portal/js/isotope/jquery.isotope.min.js"></script>
 <script>
   var $container = $('#container-personagens');
-
+  $container.isotope({ layoutMode : 'fitRows' });
+  /*
   $container.isotope({
     itemSelector : '.element',
     layoutMode: 'masonryHorizontal'
-  });
+  });*/
   
   var classes = new Array();
   $('#toggle-sizes').click(function(){
