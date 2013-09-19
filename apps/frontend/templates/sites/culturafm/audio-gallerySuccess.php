@@ -231,7 +231,7 @@ $(document).ready(function(){
   ], {
     ready: function() {
       audioPlaylist.displayPlaylist();
-      audioPlaylist.playlistInit(true); // Parameter is a boolean for autoplay.
+      audioPlaylist.playlistInit(false); // Parameter is a boolean for autoplay.
     },
     ended: function() {
       audioPlaylist.playlistNext();
