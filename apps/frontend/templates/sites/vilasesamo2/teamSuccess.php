@@ -49,12 +49,12 @@
       rowHeight: 120
     },
     cellsByRow : {
-      columnWidth : 240,
-      rowHeight : 240
+      columnWidth : 140,
+      rowHeight : 140
     },
     cellsByColumn : {
-      columnWidth : 240,
-      rowHeight : 240
+      columnWidth : 140,
+      rowHeight : 140
     }
   });
   /*
