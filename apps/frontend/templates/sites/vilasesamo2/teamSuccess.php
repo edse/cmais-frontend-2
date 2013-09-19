@@ -70,7 +70,7 @@
       }else{
         classes[vetor] = number;
         vetor++;
-      }
+      } 
       contWhile++;
     }
   
