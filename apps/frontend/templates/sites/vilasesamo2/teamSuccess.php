@@ -40,7 +40,7 @@
 <script src="/portal/js/isotope/jquery.isotope.min.js"></script>
 <script>
   var $container = $('#container-personagens');
-  $container.isotope({ itemSelector : '.element', layoutMode : 'fitrows' });
+  $container.isotope({ itemSelector : '.element', layoutMode : 'fitRows' });
   /*
   $container.isotope({
     itemSelector : '.element',
