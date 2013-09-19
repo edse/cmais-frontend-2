@@ -8,10 +8,10 @@
 <style>
  #container-personagens{width:950px;height:750px;}
  .conteudo-asset {padding: 0;}
- .q-pers-01{float:left;width: 140px; height:140px; margin:5px;background:#000000;}
- .q-pers-02{float:left; width: 180px; height:180px; margin:5px;background:blue;}
- .q-pers-03{float:left; width: 300px; height:300px; margin:5px;background:red;}
- .q-pers-04{float:left; width: 350px; height:350px; margin:5px;background:yellow;}
+ .q-pers-01{width: 140px; height:140px; margin:5px;background:#000000;}
+ .q-pers-02{ width: 200px; height:200px; margin:5px;background:blue;}
+ .q-pers-03{ width: 300px; height:300px; margin:5px;background:red;}
+ .q-pers-04{ width: 350px; height:350px; margin:5px;background:yellow;}
 </style>
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
