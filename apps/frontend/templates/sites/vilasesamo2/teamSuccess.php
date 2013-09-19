@@ -60,16 +60,29 @@
 
     while(contWhile==0){
       number = Math.floor((Math.random()*4)+1);
-      if(number==1 && contA < 2)contA++;
-      if(number==2 && contB < 2)contB++;
-      if(number==3 && contC < 2)contC++;
-      if(number==4 && contD < 2)contD++; 
+      if(number==1 && contA < 2){
+        contA++;
+        classes[vetor] = number; 
+        vetor++;
+        }
+      if(number==2 && contB < 2){
+        contB++;
+        classes[vetor] = number; 
+        vetor++;
+        }
+      if(number==3 && contC < 2){
+        contC++;
+        classes[vetor] = number; 
+        vetor++;
+        }
+      if(number==4 && contD < 2){
+        contD++;
+        classes[vetor] = number; 
+        vetor++;
+        }
       
       if(contA >=2 && contB >=2 && contC >=2 && contD >=2){
         contWhile++;
-      }else{
-        classes[vetor] = number; 
-        vetor++;
       } 
     }
   
