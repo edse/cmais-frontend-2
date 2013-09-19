@@ -68,11 +68,11 @@
         if(number==3)contC++;
         if(number==4)contD++;
         for(var j=0; j<classes.length; j++){
-          if(classes[i] == 'q-pers-0'+ number && contA >= 2 || classes[i] == 'q-pers-0'+ number && contB >= 2 || classes[i] == 'q-pers-0'+ number && contC >= 2 || classes[i] == 'q-pers-0'+ number && contD >= 2){
+          if(classes[j] == 'q-pers-0'+ number && contA >= 2 || classes[j] == 'q-pers-0'+ number && contB >= 2 || classes[j] == 'q-pers-0'+ number && contC >= 2 || classes[j] == 'q-pers-0'+ number && contD >= 2){
             cont = 0; 
           }else{
-            $(this).addClass(classes[i]);
             classes[i]='q-pers-0'+ number;
+            $(this).addClass(classes[i]);
           }
         } 
         cont++;
