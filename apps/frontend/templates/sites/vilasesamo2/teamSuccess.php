@@ -52,12 +52,13 @@
     var contD = 0;
     var number = 0;
     var contWhile = 0; 
+    var vetor = 0;
     $container.find('.element').each(function(i){
       cont = i;
     });
     console.log(cont)
 
-    while(contWhile==0){
+    while(contWhile==7){
       number = Math.floor((Math.random()*4)+1);
       if(number==1)contA++;
       if(number==2)contB++;
@@ -67,7 +68,8 @@
       if(contA >=2 || contB >=2 || contC >=2 || contD >=2){
         contWhile = 0;
       }else{
-        classes[0] = number
+        classes[vetor] = number
+        vetor++
         contWhile++;
       }
     }
