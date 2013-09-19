@@ -6,10 +6,10 @@
 
 </script>
 <style>
- .q-pers-01{position:absolute; display:block; width: 140px; height:140px; background:#000000;}
- .q-pers-02{position:absolute; display:block; width: 200px; height:200px; background:blue;}
- .q-pers-03{position:absolute; display:block; width: 300px; height:300px; background:red;}
- .q-pers-04{position:absolute; display:block; width: 350px; height:350px; background:yellow;}
+ .q-pers-01{ width: 140px; height:140px; background:#000000;}
+ .q-pers-02{ width: 200px; height:200px; background:blue;}
+ .q-pers-03{ width: 300px; height:300px; background:red;}
+ .q-pers-04{ width: 350px; height:350px; background:yellow;}
 </style>
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
@@ -23,14 +23,14 @@
       <a href="javascript:;" id="toggle-sizes">teste</a>
       
       <div id="container-personagens" class="asset">
-        <div class="element q-pers-01" data-order="1"></div>
-        <div class="element q-pers-02" data-order="2"></div>
-        <div class="element q-pers-03" data-order="3"></div>
-        <div class="element q-pers-04" data-order="4"></div>
-        <div class="element q-pers-01" data-order="5"></div>
-        <div class="element q-pers-02" data-order="6"></div>
-        <div class="element q-pers-03" data-order="7"></div>
-        <div class="element q-pers-04" data-order="8"></div>
+        <div class="element q-pers-03" data-order="1"></div>
+        <div class="element q-pers-04" data-order="2"></div>
+        <div class="element q-pers-01" data-order="3"></div>
+        <div class="element q-pers-02" data-order="4"></div>
+        <div class="element q-pers-02" data-order="5"></div>
+        <div class="element q-pers-01" data-order="6"></div>
+        <div class="element q-pers-04" data-order="7"></div>
+        <div class="element q-pers-03" data-order="8"></div>
       </div>
     </div>
   </section>
@@ -43,8 +43,8 @@
     itemSelector : '.element',
     layoutMode: 'masonry'
   });
-  var classes = new Array();
   
+  var classes = new Array();
   $('#toggle-sizes').click(function(){
     var cont = 0;
     var contA = 0;
