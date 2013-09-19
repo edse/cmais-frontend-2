@@ -68,7 +68,7 @@
       if(contA >=2 && contB >=2 && contC >=2 && contD >=2){
         contWhile++;
       }else{
-        classes[vetor] = number;
+        classes[vetor] = number; 
         vetor++;
       } 
     }
