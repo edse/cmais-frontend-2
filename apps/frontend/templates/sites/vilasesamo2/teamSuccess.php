@@ -48,14 +48,7 @@
     masonryHorizontal : {
       rowHeight: 0
     },
-    cellsByRow : {
-      columnWidth : 0,
-      rowHeight : 0
-    },
-    cellsByColumn : {
-      columnWidth : 0,
-      rowHeight : 0
-    }
+
   });
   /*
   $container.isotope({
@@ -115,7 +108,6 @@
       //console.log(classes[j])
     });
     $container.isotope('reLayout');
-    //$container.isotope('reLayout');
     //console.log(contA +"/"+ contB +"/"+contC+"/"+contD)
     //console.log(classes)
   });
