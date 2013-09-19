@@ -177,7 +177,7 @@
                               $(this).blur();
                               return false;
                             });
-                          }
+                          };
                         
                           Playlist.prototype = {
                             displayPlaylist: function() {
@@ -185,7 +185,7 @@
                               $(this.cssSelector.playlist + " ul").empty();
                               for (i=0; i < this.playlist.length; i++) {
                                 var listItem = (i === this.playlist.length-1) ? "<li class='jp-playlist-last'>" : "<li>";
-                                listItem += "<a href='#' id='" + this.cssId.playlist + this.instance + "_item_" + i +"' tabindex='1'>"+ this.playlist[i].name +"</a><span><a href='"+this.playlist[i].url+"' style='float: right;'>info</a></span>";
+                                listItem += console.log(playlist[i])+"<a href='#' id='" + this.cssId.playlist + this.instance + "_item_" + i +"' tabindex='1'>"+ this.playlist[i].name +"</a><span><a href='"+this.playlist[i].url+"' style='float: right;'>info</a></span>";
                                 // Create links to free media
                                 if(this.playlist[i].free) {
                                   var first = true;
