@@ -24,9 +24,9 @@
       <a href="javascript:;" id="toggle-sizes">teste</a>
       
       <div id="container-personagens" class="asset">
-        <div class="element q-pers-03" data-order="1"></div>
+        <div class="element q-pers-01" data-order="1"></div>
         <div class="element q-pers-04" data-order="2"></div>
-        <div class="element q-pers-01" data-order="3"></div>
+        <div class="element q-pers-03" data-order="3"></div>
         <div class="element q-pers-02" data-order="4"></div>
         <div class="element q-pers-02" data-order="5"></div>
         <div class="element q-pers-01" data-order="6"></div>
