@@ -9,7 +9,7 @@
  #container-personagens{width:950px;height:750px;}
  .conteudo-asset {padding: 0;}
  .q-pers-01{float:left;width: 140px; height:140px; margin:5px;background:#000000;}
- .q-pers-02{float:left; width: 190px; height:190px; margin:5px;background:blue;}
+ .q-pers-02{float:left; width: 180px; height:180px; margin:5px;background:blue;}
  .q-pers-03{float:left; width: 300px; height:300px; margin:5px;background:red;}
  .q-pers-04{float:left; width: 350px; height:350px; margin:5px;background:yellow;}
 </style>
