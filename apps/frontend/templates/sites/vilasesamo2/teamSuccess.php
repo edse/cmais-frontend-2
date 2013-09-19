@@ -71,7 +71,7 @@
           if(classes[i] == 'q-pers-0'+ number && contA >= 2 || classes[i] == 'q-pers-0'+ number && contB >= 2 || classes[i] == 'q-pers-0'+ number && contC >= 2 || classes[i] == 'q-pers-0'+ number && contD >= 2){
             cont = 0; 
           }else{
-            $(this).addClass('q-pers-0'+ number);
+            $(this).addClass(classes[i]);
             classes[i]='q-pers-0'+ number;
           }
         } 
