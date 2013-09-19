@@ -40,7 +40,8 @@
   var $container = $('#container-personagens');
 
   $container.isotope({
-    itemSelector : '.element'
+    itemSelector : '.element',
+    layoutMode: 'masonry'
   });
   var classes = new Array();
   
