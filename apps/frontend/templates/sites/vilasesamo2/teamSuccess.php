@@ -55,6 +55,7 @@
   
   var classes = new Array();
   $('#toggle-sizes').click(function(){
+    /*
     var cont = 0;
     var contA = 0;
     var contB = 0;
@@ -104,6 +105,7 @@
       $(this).addClass(classes[j]);
       //console.log(classes[j])
     });
+    */
     $container.isotope('shuffle');
     //console.log(contA +"/"+ contB +"/"+contC+"/"+contD)
     //console.log(classes)
