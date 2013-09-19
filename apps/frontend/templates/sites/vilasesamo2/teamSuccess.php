@@ -60,10 +60,10 @@
 
     while(contWhile<cont){
       number = Math.floor((Math.random()*4)+1);
-      if(number==1)contA++;
-      if(number==2)contB++;
-      if(number==3)contC++;
-      if(number==4)contD++; 
+      if(number==1 && contA < 2)contA++;
+      if(number==2 && contB < 2)contB++;
+      if(number==3 && contC < 2)contC++;
+      if(number==4 && contD < 2)contD++; 
       
       if(contA >=2 && contB >=2 && contC >=2 && contD >=2){
         contWhile--;
