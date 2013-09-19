@@ -58,7 +58,7 @@
     });
     console.log(cont)
 
-    while(contWhile<cont){
+    while(contWhile==0){
       number = Math.floor((Math.random()*4)+1);
       if(number==1 && contA < 2)contA++;
       if(number==2 && contB < 2)contB++;
@@ -66,11 +66,10 @@
       if(number==4 && contD < 2)contD++; 
       
       if(contA >=2 && contB >=2 && contC >=2 && contD >=2){
-        contWhile--;
+        contWhile++;
       }else{
         classes[vetor] = number;
         vetor++;
-        contWhile++;
       } 
     }
   
