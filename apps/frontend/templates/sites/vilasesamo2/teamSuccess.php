@@ -43,25 +43,20 @@
     itemSelector : '.element'
   });
   var classes = new Array();
-  classes[0] = 'teste';
   
   $('#toggle-sizes').click(function(){
+    var cont = 0;
     var contA = 0;
     var contB = 0;
     var contC = 0; 
     var contD = 0;
     var vetor = 0; 
     $container.find('.element').each(function(i){
-      console.log(i)
-      
-      
-      
-      
-      
-      
+      console.log(i);
+      cont = i;
     });
-    console.log(classes)
-    $container.isotope('reLayout')
-    return false;
+    for(var j=0; j<cont;j++){
+      console.log(j);
+    }
   });
 </script>  
