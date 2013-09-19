@@ -63,7 +63,7 @@
       if(number==1)contA++;
       if(number==2)contB++;
       if(number==3)contC++;
-      if(number==4)contD++;
+      if(number==4)contD++; 
       
       if(contA >=2 || contB >=2 || contC >=2 || contD >=2){
         contWhile--;
