@@ -55,6 +55,7 @@
       console.log(i);
       cont = i;
     });
+    console.log(cont)
     for(var j=0; j<cont;j++){
       console.log(j);
     }
