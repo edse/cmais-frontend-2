@@ -41,7 +41,7 @@
 
   $container.isotope({
     itemSelector : '.element',
-    layoutMode: 'masonry'
+    layoutMode: 'masonryHorizontal'
   });
   
   var classes = new Array();
