@@ -56,6 +56,7 @@
     });
     console.log(cont)
     for(var j=0; j<cont+1;j++){
+      contWhile=0;
       while(contWhile==0){
       var number = Math.floor((Math.random()*4)+1);
         if(number==1)contA++;
@@ -67,6 +68,7 @@
           contWhile = 0;
         }else{
           classes[j] = number
+          contWhile++;
         }
       }
     }
