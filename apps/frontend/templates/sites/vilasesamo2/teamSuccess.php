@@ -104,7 +104,7 @@
       $(this).addClass(classes[j]);
       //console.log(classes[j])
     });
-    $container.isotope('shuffle');
+    $container.isotope('fitRows');
     //console.log(contA +"/"+ contB +"/"+contC+"/"+contD)
     //console.log(classes)
   });
