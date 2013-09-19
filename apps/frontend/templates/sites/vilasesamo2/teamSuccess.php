@@ -65,11 +65,13 @@
       if(number==3)contC++;
       if(number==4)contD++; 
       
-      
+      if(contA >=2){
+        contWhile--;
+      }else{
         classes[vetor] = number;
         vetor++;
-      
-      contWhile++;
+        contWhile++;
+      } 
     }
   
     console.log(contA +"/"+ contB +"/"+contC+"/"+contD)
