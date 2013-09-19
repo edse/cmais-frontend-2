@@ -104,7 +104,7 @@
       $(this).addClass(classes[j]);
       //console.log(classes[j])
     });
-    $container.isotope('reLayout');
+    $container.isotope('shuffle');
     //console.log(contA +"/"+ contB +"/"+contC+"/"+contD)
     //console.log(classes)
   });
