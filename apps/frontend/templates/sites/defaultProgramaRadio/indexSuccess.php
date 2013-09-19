@@ -177,7 +177,7 @@
                               $(this).blur();
                               return false;
                             });
-                          };
+                          }
                         
                           Playlist.prototype = {
                             displayPlaylist: function() {
