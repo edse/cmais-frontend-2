@@ -58,7 +58,7 @@
     });
     console.log(cont)
 
-    while(contWhile<7){
+    while(contWhile<cont){
       number = Math.floor((Math.random()*4)+1);
       if(number==1)contA++;
       if(number==2)contB++;
@@ -68,10 +68,10 @@
       if(contA >=2 || contB >=2 || contC >=2 || contD >=2){
         contWhile--;
       }else{
-        classes[vetor] = number
-        vetor++
-        contWhile++;
+        classes[vetor] = number;
+        vetor++;
       }
+      contWhile++;
     }
   
     console.log(contA +"/"+ contB +"/"+contC+"/"+contD)
