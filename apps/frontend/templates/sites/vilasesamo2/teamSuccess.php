@@ -42,9 +42,6 @@
   var $container = $('#container-personagens');
   $container.isotope({
     itemSelector : '.element',
-    masonry : {
-      columnWidth : 0
-    },
     masonryHorizontal : {
       rowHeight: 0
     },
