@@ -43,18 +43,18 @@
   $container.isotope({
     itemSelector : '.element',
     masonry : {
-      columnWidth : 20
+      columnWidth : 0
     },
     masonryHorizontal : {
-      rowHeight: 20
+      rowHeight: 0
     },
     cellsByRow : {
-      columnWidth : 40,
-      rowHeight : 40
+      columnWidth : 0,
+      rowHeight : 0
     },
     cellsByColumn : {
-      columnWidth : 40,
-      rowHeight : 40
+      columnWidth : 0,
+      rowHeight : 0
     }
   });
   /*
