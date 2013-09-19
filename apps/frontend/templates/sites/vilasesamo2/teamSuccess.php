@@ -43,8 +43,8 @@
   $container.isotope({ 
     itemSelector : '.element', 
     masonry: {
-      columnHeight: 10
-      columnWidth: 10
+      columnHeight: 10,
+      columnWidth: 950
     } 
   });
   /*
