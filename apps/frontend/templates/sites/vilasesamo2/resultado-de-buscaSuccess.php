@@ -8,7 +8,7 @@
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))?>
 <!-- /HEADER -->
-<div id="content">
+<div id="content" class="resultado">
   <section class="pais incluir">
     <h2 class="tit">Palavra-chave buscada</h2>
     
@@ -24,45 +24,51 @@
     <ul>
       <li>
         <a href="#">
-          <span class="video"></span><h3>Titulo do vídeo</h3>
+          <span class="sprite-icon-videos-med"></span><h3>Titulo do vídeo</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla ultricies arcu, ac gravida risus vulputate non. Nulla nisl lacus, viverra vitae ullamcorper at, pharetra a eros. Maecenas ornare neque nec sem sollicitudin, sit amet cras ampet.</p>
         </a>
+        <span class="divisa"></span>
       </li>
       <li>
         <a href="#">
-          <span class="jogo"></span><h3>Titulo do jogo</h3>
+          <span class="sprite-icon-jogos-med"></span><h3>Titulo do jogo</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla ultricies arcu, ac gravida risus vulputate non. Nulla nisl lacus, viverra vitae ullamcorper at, pharetra a eros. Maecenas ornare neque nec sem sollicitudin, sit amet cras ampet.</p>
         </a>
+        <span class="divisa"></span>
       </li>
       <li>
         <a href="#">
-          <span class="atividade"></span><h3>Titulo da atividade</h3>
+          <span class="sprite-icon-colorir-med"></span><h3>Titulo da atividade</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla ultricies arcu, ac gravida risus vulputate non. Nulla nisl lacus, viverra vitae ullamcorper at, pharetra a eros. Maecenas ornare neque nec sem sollicitudin, sit amet cras ampet.</p>
         </a>
+        <span class="divisa"></span>
       </li>
       <li>
         <a href="#">
-          <span class="artigo"></span><h3>Titulo do artigo</h3>
+          <span class="sprite-icon-arquivos-med"></span><h3>Titulo do artigo</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla ultricies arcu, ac gravida risus vulputate non. Nulla nisl lacus, viverra vitae ullamcorper at, pharetra a eros. Maecenas ornare neque nec sem sollicitudin, sit amet cras ampet.</p>
         </a>
+        <span class="divisa"></span>
       </li>
       <li>
         <a href="#">
-          <span class="personagem"></span><h3>Titulo do personagem</h3>
+          <span class="sprite-icon-personagens-med"></span><h3>Titulo do personagem</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla ultricies arcu, ac gravida risus vulputate non. Nulla nisl lacus, viverra vitae ullamcorper at, pharetra a eros. Maecenas ornare neque nec sem sollicitudin, sit amet cras ampet.</p>
         </a>
+        <span class="divisa"></span>
       </li>
       <li>
         <a href="#">
-          <span class="historia"></span><h3>Titulo da historia</h3>
+          <span class="sprite-icon-historias-med"></span><h3>Titulo da historia</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla ultricies arcu, ac gravida risus vulputate non. Nulla nisl lacus, viverra vitae ullamcorper at, pharetra a eros. Maecenas ornare neque nec sem sollicitudin, sit amet cras ampet.</p>
         </a>
+        <span class="divisa"></span>
       </li>
     </ul>
     
     
   </div>
-  <span class="divisa"></span>
+  
 </div>
 <input type="hidden" id="filter-choice" value="">
 <nav id="page_nav">
