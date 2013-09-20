@@ -27,42 +27,48 @@
           <span class="sprite-icon-videos-med"></span><h3>Titulo do vídeo</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla ultricies arcu, ac gravida risus vulputate non. Nulla nisl lacus, viverra vitae ullamcorper at, pharetra a eros. Maecenas ornare neque nec sem sollicitudin, sit amet cras ampet.</p>
         </a>
+        <span class="divisa"></span>
       </li>
       <li>
         <a href="#">
           <span class="sprite-icon-jogos-med"></span><h3>Titulo do jogo</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla ultricies arcu, ac gravida risus vulputate non. Nulla nisl lacus, viverra vitae ullamcorper at, pharetra a eros. Maecenas ornare neque nec sem sollicitudin, sit amet cras ampet.</p>
         </a>
+        <span class="divisa"></span>
       </li>
       <li>
         <a href="#">
           <span class="sprite-icon-colorir-med"></span><h3>Titulo da atividade</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla ultricies arcu, ac gravida risus vulputate non. Nulla nisl lacus, viverra vitae ullamcorper at, pharetra a eros. Maecenas ornare neque nec sem sollicitudin, sit amet cras ampet.</p>
         </a>
+        <span class="divisa"></span>
       </li>
       <li>
         <a href="#">
           <span class="sprite-icon-arquivos-med"></span><h3>Titulo do artigo</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla ultricies arcu, ac gravida risus vulputate non. Nulla nisl lacus, viverra vitae ullamcorper at, pharetra a eros. Maecenas ornare neque nec sem sollicitudin, sit amet cras ampet.</p>
         </a>
+        <span class="divisa"></span>
       </li>
       <li>
         <a href="#">
           <span class="sprite-icon-personagens-med"></span><h3>Titulo do personagem</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla ultricies arcu, ac gravida risus vulputate non. Nulla nisl lacus, viverra vitae ullamcorper at, pharetra a eros. Maecenas ornare neque nec sem sollicitudin, sit amet cras ampet.</p>
         </a>
+        <span class="divisa"></span>
       </li>
       <li>
         <a href="#">
           <span class="sprite-icon-historias-med"></span><h3>Titulo da historia</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla ultricies arcu, ac gravida risus vulputate non. Nulla nisl lacus, viverra vitae ullamcorper at, pharetra a eros. Maecenas ornare neque nec sem sollicitudin, sit amet cras ampet.</p>
         </a>
+        <span class="divisa"></span>
       </li>
     </ul>
     
     
   </div>
-  <span class="divisa"></span>
+  
 </div>
 <input type="hidden" id="filter-choice" value="">
 <nav id="page_nav">
