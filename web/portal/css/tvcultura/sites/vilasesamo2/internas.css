@@ -232,3 +232,5 @@ body { background:#0172f9; }
 .bg-incluir .busca { background:#fff; height:56px; line-height: 56px; padding:0 2%; margin-bottom:0; border-bottom:2px solid #FBC227; font-weight:normal; }
 .bg-incluir .busca span {float:none; display:inline;  }  
 .resultado .incluir h2.tit { font-weight: normal; }
+.resultado li h3 { color:#434343; }
+.resultado li span { float: left; margin-right:1%; }
