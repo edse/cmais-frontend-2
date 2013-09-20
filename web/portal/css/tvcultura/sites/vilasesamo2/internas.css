@@ -237,3 +237,5 @@ body { background:#0172f9; }
 .resultado li span { float: left; margin-right:1%; }
 .resultado .sprite-icon-jogos-med { margin-top:4px; }
 .resultado a p { clear:both; margin-left:8%; }
+.resultado a:hover h3,
+.resultado a:hover p { text-decoration:underline; }
