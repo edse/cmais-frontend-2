@@ -188,7 +188,7 @@
             <a href="https://www.facebook.com/Cartaozinho" class="face" name"Facebook" title="Facebook">Facebook</a>
             <a href="https://twitter.com/cartaozinho" class="twt" name"Twitter" title="Twitter">Twitter</a>
             <a href="http://www.youtube.com/cultura" class="ytb" name"Youtube" title="YouTube">YouTube</a>
-            <a href="http://www.youtube.com/cultura" class="int" name"Youtube" title="YouTube">Instagram</a>
+            <a href="http://instagram.com/cartaozinho" class="int" name"Instagram" title="Instagram">Instagram</a>
             <div class="setas"></div>
           </div>
           
