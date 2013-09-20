@@ -8,7 +8,7 @@
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))?>
 <!-- /HEADER -->
-<div id="content">
+<div id="content" class="resultado">
   <section class="pais incluir">
     <h2 class="tit">Palavra-chave buscada</h2>
     
