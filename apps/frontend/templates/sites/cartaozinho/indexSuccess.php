@@ -15,12 +15,22 @@
     <!-- BARRA SITE -->
     <div id="barra-site">
       <div class="topo-programa">
-        <?php if(isset($program) && $program->id > 0):?>
-        <h2><a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;"> <?php if($program->getImageThumb() != ""):?><img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" /> <?php else:?>
-        <h3 class="tit-pagina grid1"><?php echo $program->getTitle() ?></h3> <?php endif;?></a>
-        </h2>
-        <?php endif;?>
-
+        <?php 
+          if(date('d')>=21){
+            if(date("H:i") >= "14:10"){
+              echo "<div class='juiza-nova'></div>";
+            }
+          }else{
+        ?>   
+          
+            <?php if(isset($program) && $program->id > 0):?>
+            <h2><a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;"> <?php if($program->getImageThumb() != ""):?><img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" /> <?php else:?>
+            <h3 class="tit-pagina grid1"><?php echo $program->getTitle() ?></h3> <?php endif;?></a>
+            </h2>
+            <?php endif;?>
+            
+        <?php } ?>
+        
         <?php if(isset($program) && $program->id > 0): ?>
         <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
         <?php endif;?>
@@ -157,7 +167,7 @@
           <?php 
           if(date('d')>=21){
             if(date("H:i") >= "14:10"){
-              echo "<div class='juiza-nova'></div>";
+              
             }
           }else{
             echo "<div class='juiza'></div>";
