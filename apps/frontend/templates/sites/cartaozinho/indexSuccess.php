@@ -20,7 +20,9 @@
             if(date("H:i") >= "14:10"){
         ?>      
               <script>
+              $(function(){
                 $('.topo-programa .menu-interna').css('width','559px');
+              });
               </script>
               <div class='juiza-nova'>teste2</div>
         <?php      
