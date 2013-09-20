@@ -153,14 +153,13 @@
           ?>
             <a class="envie-sua-sugestao" href="<?php echo $assets[0]->retriveUrl(); ?>" title="Participe da nossa enquete!"></a>
           <?php endif; ?>
-          <div class="juiza"></div>
+          
           <?php 
-          if(date('d')==20){
-            
-            if(date("H:i") > "18:20"){
-              echo "maior";
+          if(date('d')>=21){
+            if(date("H:i") > "14:10"){
+              echo "<div class='juiza-nova'></div>";
             }else{
-              echo "menor";
+              echo "<div class='juiza'></div>";
             }
           } 
           ?>
