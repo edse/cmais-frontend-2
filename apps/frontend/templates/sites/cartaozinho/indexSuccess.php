@@ -154,8 +154,11 @@
             <a class="envie-sua-sugestao" href="<?php echo $assets[0]->retriveUrl(); ?>" title="Participe da nossa enquete!"></a>
           <?php endif; ?>
           <div class="juiza"></div>
-          <?php echo time();?>
-          <div class="teste">teste</div>
+          <?php 
+          $amanha = time() + (7 * 24 * 60 * 60);
+          echo date('Y-m-d', $amanha) 
+          ?>
+          <div class="teste" style="display:none">teste</div>
           <div class="redes-sociais">
             <a href="https://www.facebook.com/Cartaozinho" class="face" name"Facebook" title="Facebook">Facebook</a>
             <a href="https://twitter.com/cartaozinho" class="twt" name"Twitter" title="Twitter">Twitter</a>
