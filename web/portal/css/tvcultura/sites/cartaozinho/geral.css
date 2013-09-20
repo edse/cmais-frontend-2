@@ -86,6 +86,7 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .redes-sociais .twt { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-twt.png); bottom:66px; right:26px; }
 .redes-sociais .ytb { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-ytb.png); right:0; top:0; }
 .redes-sociais .iwt { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-int.png); bottom:66px; right:26px; }
+.redes-sociais .setas{display:block; width:10px; height:10px; position:absolute; top:0; left:0; background-image:url(/portal/images/capaPrograma/cartaozinho/setas-cartaozinho.png); }
 
 .fb_iframe_widget iframe { position:relative; }
 .box-topo .navegacao { margin-bottom:10px; }
@@ -220,4 +221,4 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
     text-transform: uppercase;
     width: 620px;
 }
-.setas{display:block; width:10px; height:10px; bac}
+
