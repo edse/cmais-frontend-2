@@ -17,14 +17,14 @@
       <div class="topo-programa">
         
         <?php 
-          if(date('d')>=20){
+          if(date('d')>=21){
             if(date("H:i") >= "14:10"){
         ?>      
               <style>
                 .menu-gabi{width:559px; float:right;}
-                .horario-gabi{margin-top:70px!important; margin-right:6px;}
+                .horario-gabi{margin-top:12px!important; margin-right:6px;}
                 .juiza-nova{display:block;width:312px; height:486px; position:absolute; top:71px; left: 0; background:url(/portal/images/capaPrograma/cartaozinho/gabi-estreia.png) no-repeat;}
-                .texto-novo{display:block; width:314px; height:66px; position:absolute; top:71px; left:100px; background:url(/portal/images/capaPrograma/cartaozinho/gabi-dona-da-bola.png) no-repeat;}
+                .texto-novo{display:block; width:314px; height:66px; position:absolute; top:68px; left:277px; background:url(/portal/images/capaPrograma/cartaozinho/gabi-dona-da-bola.png) no-repeat;}
               </style>
               <div class='juiza-nova'></div>
               <div class='texto-novo'></div>
