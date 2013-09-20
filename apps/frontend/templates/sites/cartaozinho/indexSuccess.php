@@ -185,10 +185,10 @@
           ?>
           
           <div class="redes-sociais">
-            <a href="https://www.facebook.com/Cartaozinho" class="face" name"Facebook" title="Facebook">Facebook</a>
-            <a href="https://twitter.com/cartaozinho" class="twt" name"Twitter" title="Twitter">Twitter</a>
-            <a href="http://www.youtube.com/cultura" class="ytb" name"Youtube" title="YouTube">YouTube</a>
-            <a href="http://instagram.com/cartaozinho" class="int" name"Instagram" title="Instagram">Instagram</a>
+            <a href="https://www.facebook.com/Cartaozinho" class="face" name"Facebook" title="Facebook" target="_blank">Facebook</a>
+            <a href="https://twitter.com/cartaozinho" class="twt" name"Twitter" title="Twitter" target="_blank">Twitter</a>
+            <a href="http://www.youtube.com/cultura" class="ytb" name"Youtube" title="YouTube" target="_blank">YouTube</a>
+            <a href="http://instagram.com/cartaozinho" class="int" name"Instagram" title="Instagram" target="_blank">Instagram</a>
             <div class="setas"></div>
           </div>
           
