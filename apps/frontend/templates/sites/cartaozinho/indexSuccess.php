@@ -17,8 +17,8 @@
       <div class="topo-programa">
         
         <?php 
-          if(date('d')>=20){
-            if(date("H:i") >= "20:25"){
+          if(date('d')>=21){
+            if(date("H:i") >= "14:10"){
         ?>      
               <style>
                 .menu-gabi{width:559px; float:right;}
@@ -175,8 +175,8 @@
           <?php endif; ?>
           
           <?php 
-          if(date('d')>=20){
-            if(date("H:i") >= "20:25"){
+          if(date('d')>=21){
+            if(date("H:i") >= "14:10"){
               
             }
           }else{
