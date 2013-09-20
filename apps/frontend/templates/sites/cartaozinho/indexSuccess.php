@@ -155,7 +155,7 @@
           <?php endif; ?>
           <div class="juiza"></div>
           <?php 
-          if(date('d')==20){
+          if(date('d')==21){
             echo "hoje";
           } 
           ?>
