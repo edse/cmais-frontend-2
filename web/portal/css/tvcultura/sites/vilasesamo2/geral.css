@@ -28,6 +28,7 @@ i { display:block; }
 a:hover { text-decoration:none; }
 
 /* dinmedium */
+.pais .content .box-select h2,
 footer .mapa .span12 ul a,
 input, button, select, textarea,
 .destaques a.asset,
