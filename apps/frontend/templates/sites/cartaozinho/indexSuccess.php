@@ -17,7 +17,7 @@
       <div class="topo-programa">
         
         <?php 
-          if(date('d')>=20){
+          if(date('d')>=21){
             if(date("H:i") >= "14:10"){
         ?>      
               <style>
@@ -173,7 +173,7 @@
           <?php endif; ?>
           
           <?php 
-          if(date('d')>=20){
+          if(date('d')>=21){
             if(date("H:i") >= "14:10"){
               
             }
