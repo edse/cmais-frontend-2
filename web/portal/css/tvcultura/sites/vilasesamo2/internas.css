@@ -235,3 +235,5 @@ body { background:#0172f9; }
 #content.resultado a p,
 #content.resultado a h3 { color:#434343; }
 .resultado li span { float: left; margin-right:1%; }
+.resultado .sprite-icon-jogos-med { margin-top:4px; }
+.resultado a p { clear:both; margin-left:8%; }
