@@ -179,7 +179,7 @@ body { background:#0172f9; }
 .todos-itens ul { margin:0!important;  }
 .span4 { margin:6px!important; }
 .element { overflow:hidden; -webkit-border-top-right-radius: 1.2em; -moz-border-radius-topright: 1.2em; border-top-right-radius: 1.2em; }
-.element.bel{background:#FECE00;}
+.element.bel{background:#ffcccb;}
 .element.beto{background:#00CCCD;}
 .element.come-come{background:#9928CE;}
 .element.elmo{background:#9ACD34;}

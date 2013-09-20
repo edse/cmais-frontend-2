@@ -35,6 +35,7 @@ body { font-family: 'dinmedium', "Helvetica Neue", Helvetica, Arial, sans-serif;
 /* /din-blackregular*/
 
 /* din-blackregular*/
+.pais h2,
 .form .sucesso .btn,
 .form .sucesso p,
 #content .section.form h2,
@@ -563,7 +564,7 @@ footer .relacionados li.last { margin-right:0; }
 #content .pais { background:#feec3c; margin:0 auto !important; overflow:hidden; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 .pais .divisa { margin-bottom:0; }
 .pais h2 a,
-.pais h2 {color:#737373; margin:10px; font-size: 18px; font-weight: normal; line-height: 22px; text-transform: uppercase;}
+.pais h2 {color:#434343; margin:10px; font-size: 18px; font-weight: normal; line-height: 22px; text-transform: uppercase;}
 .pais .redes { position:absolute; top:12px; right:0;}
 .pais .redes p { float:left; margin-right:10px; }
 .pais .content { background:#fee133; margin-left:0; }
