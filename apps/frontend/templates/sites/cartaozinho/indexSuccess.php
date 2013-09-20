@@ -157,8 +157,10 @@
           <?php 
           if(date('d')==20){
             
-            if(date("H:i") > "18:15"){
+            if(date("H:i") > "18:20"){
               echo "maior";
+            }else{
+              echo "menor";
             }
           } 
           ?>
