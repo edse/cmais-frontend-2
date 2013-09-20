@@ -82,11 +82,11 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 
 .redes-sociais { width: 244px; height:340px; position:absolute; top:91px; right:0; }
 .redes-sociais a { width: 90px; height:90px; display:block; background-repeat:no-repeat; text-indent:-9999px; position:absolute; }
-.redes-sociais .face { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-fb.png); top:37px; left:41px;  }
-.redes-sociais .twt { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-twt.png); bottom:66px; right:26px; }
-.redes-sociais .ytb { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-ytb.png); right:0; top:0; }
-.redes-sociais .iwt { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-int.png); bottom:66px; right:26px; }
-.redes-sociais .setas{display:block; width:10px; height:10px; position:absolute; top:0; left:0; background-image:url(/portal/images/capaPrograma/cartaozinho/setas-cartaozinho.png); }
+.redes-sociais .face { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-fb.png); top: 162px; left: 12px;}
+.redes-sociais .twt { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-twt.png); bottom: 7px; right: 20px; }
+.redes-sociais .ytb { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-ytb.png); right: 124px; top: -22px; }
+.redes-sociais .int { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-int.png); right: 0px; top: 69px; }
+.redes-sociais .setas{display: block;width: 220px;height: 468px;position: absolute;top: -44px;left: 16px; background-image:url(/portal/images/capaPrograma/cartaozinho/setas-cartaozinho.png); }
 
 .fb_iframe_widget iframe { position:relative; }
 .box-topo .navegacao { margin-bottom:10px; }
