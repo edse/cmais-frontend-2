@@ -22,8 +22,9 @@
         ?>      
               <style>
                 .menu-gabi{width:559px; float:right;}
+                .horario-gabi{margin-top:70px;}
               </style>
-              <div class='juiza-nova'>teste2</div>
+              <div class='juiza-nova'></div>
         <?php      
             }
           }else{
@@ -43,7 +44,7 @@
 
         <?php if(isset($program) && $program->id > 0): ?>
         <!-- horario -->
-        <div id="horario">
+        <div id="horario horario-gabi">
           <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
         </div>
         <!-- /horario -->
