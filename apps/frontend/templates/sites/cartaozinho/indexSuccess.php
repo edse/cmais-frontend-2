@@ -44,7 +44,7 @@
 
         <?php if(isset($program) && $program->id > 0): ?>
         <!-- horario -->
-        <div id="horario horario-gabi">
+        <div id="horario" class="horario-gabi">
           <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
         </div>
         <!-- /horario -->
