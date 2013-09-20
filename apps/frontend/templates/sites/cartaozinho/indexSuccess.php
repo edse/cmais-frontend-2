@@ -21,7 +21,7 @@
             if(date("H:i") >= "14:10"){
         ?>      
               <style>
-                .menu-gabi{width:559px; float:left;}
+                .menu-gabi{width:559px; float:right;}
               </style>
               <div class='juiza-nova'>teste2</div>
         <?php      
