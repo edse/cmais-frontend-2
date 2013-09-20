@@ -156,7 +156,10 @@
           <div class="juiza"></div>
           <?php 
           if(date('d')==20){
-            echo date("H:i");
+            
+            if(date("H:i") > "18:15"){
+              echo "maior";
+            }
           } 
           ?>
           <div class="teste" style="display:none">teste</div>
