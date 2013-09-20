@@ -18,7 +18,7 @@
         
         <?php 
           if(date('d')>=20){
-            if(date("H:i") >= "14:23"){
+            if(date("H:i") >= "20:25"){
         ?>      
               <style>
                 .menu-gabi{width:559px; float:right;}
@@ -176,7 +176,7 @@
           
           <?php 
           if(date('d')>=20){
-            if(date("H:i") >= "14:23"){
+            if(date("H:i") >= "20:25"){
               
             }
           }else{
