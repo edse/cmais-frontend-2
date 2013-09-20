@@ -22,7 +22,7 @@
         ?>      
               <style>
                 .menu-gabi{width:559px; float:right;}
-                .horario-gabi{margin-top:70px;}
+                .horario-gabi{margin-top:70px!important;}
               </style>
               <div class='juiza-nova'></div>
         <?php      
