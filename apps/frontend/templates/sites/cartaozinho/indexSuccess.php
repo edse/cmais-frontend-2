@@ -156,11 +156,11 @@
           
           <?php 
           if(date('d')>=21){
-            if(date("H:i") > "14:10"){
+            if(date("H:i") >= "14:10"){
               echo "<div class='juiza-nova'></div>";
-            }else{
-              echo "<div class='juiza'></div>";
             }
+          }else{
+            echo "<div class='juiza'></div>";
           } 
           ?>
           <div class="teste" style="display:none">teste</div>
