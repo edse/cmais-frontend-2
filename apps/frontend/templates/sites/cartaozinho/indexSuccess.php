@@ -18,7 +18,12 @@
         <?php 
           if(date('d')>=20){
             if(date("H:i") >= "14:10"){
-              echo "<div class='juiza-nova'>teste</div>";
+        ?>      
+              <script>
+                $('.topo-programa .menu-interna').css('width','559px');
+              </script>
+              <div class='juiza-nova'>teste</div>
+        <?php      
             }
           }else{
         ?>   
