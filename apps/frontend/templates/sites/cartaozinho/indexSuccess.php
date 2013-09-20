@@ -155,9 +155,9 @@
           <?php endif; ?>
           
           <?php 
-          if(date('d')>=20){
+          if(date('d')>=21){
             if(date("H:i") >= "14:10"){
-              echo "<div class='juiza-nova'>teste</div>";
+              echo "<div class='juiza-nova'></div>";
             }
           }else{
             echo "<div class='juiza'></div>";
