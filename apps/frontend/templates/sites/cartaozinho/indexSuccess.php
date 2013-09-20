@@ -155,7 +155,7 @@
           <?php endif; ?>
           <div class="juiza"></div>
           <?php 
-          $amanha = time() + (7 * 24 * 60 * 60);
+          $amanha = (7 * 24 * 60 * 60);
           echo date('Y-m-d', $amanha) 
           ?>
           <div class="teste" style="display:none">teste</div>
