@@ -1,6 +1,6 @@
           <?php if(count($siteSections) > 0): ?>
           <!-- menu interna -->
-          <ul class="menu-interna grid3">
+          <ul class="menu-interna grid3 menu-gabi">
             <?php foreach($siteSections as $s): ?>
               <?php $subsections = $s->subsections(); ?>
               <?php if(count($subsections) > 0): ?>
