@@ -17,13 +17,13 @@
       <div class="topo-programa">
         
         <?php 
-          if(date('d')>=21){
+          if(date('d')>=20){
             if(date("H:i") >= "14:10"){
         ?>      
               <style>
                 .menu-gabi{width:559px; float:right;}
                 .horario-gabi{margin-top:70px!important; margin-right:6px;}
-                .juiza-nova{}
+                .juiza-nova{width:312px; height:486px; position:absolute; top:0; left: 0; background:url(/images/capaPrograma/cartaozinho/gabi-estreia.png) no-repeat;}
               </style>
               <div class='juiza-nova'></div>
         <?php      
