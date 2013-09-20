@@ -183,12 +183,15 @@
             echo "<div class='juiza'></div>";
           } 
           ?>
-          <div class="teste" style="display:none">teste</div>
+          
           <div class="redes-sociais">
             <a href="https://www.facebook.com/Cartaozinho" class="face" name"Facebook" title="Facebook">Facebook</a>
             <a href="https://twitter.com/cartaozinho" class="twt" name"Twitter" title="Twitter">Twitter</a>
             <a href="http://www.youtube.com/cultura" class="ytb" name"Youtube" title="YouTube">YouTube</a>
+            <a href="http://www.youtube.com/cultura" class="int" name"Youtube" title="YouTube">Instagram</a>
+            <div class="setas"></div>
           </div>
+          
           <script>
             $(document).ready(function() {
               $('.fechar').click(function() {
