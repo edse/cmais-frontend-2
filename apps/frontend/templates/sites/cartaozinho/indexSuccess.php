@@ -22,7 +22,7 @@
               <script>
                 $('.topo-programa .menu-interna').css('width','559px');
               </script>
-              <div class='juiza-nova'>teste</div>
+              <div class='juiza-nova'>teste2</div>
         <?php      
             }
           }else{
