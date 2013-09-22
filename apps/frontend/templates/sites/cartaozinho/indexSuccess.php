@@ -18,7 +18,7 @@
         
         <?php 
           if(date('d')>=21){
-            if(date("H:i") >= "14:10"){
+            //if(date("H:i") >= "14:10"){
         ?>      
               <style>
                 .menu-gabi{width:559px; float:right;}
@@ -29,7 +29,7 @@
               <div class='juiza-nova'></div>
               <div class='texto-novo'></div>
         <?php      
-            }
+            //}
           }else{
         ?>   
           
