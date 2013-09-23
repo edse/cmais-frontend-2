@@ -244,3 +244,6 @@ body { background:#0172f9; }
 .personagens .todos-itens li, 
 .personagens .scroll, 
 .personagens .filtro  { border-color:#ee3021; }
+.personagens #content .filtro h3 { background:#d71c0d; border-color: #c31408; }
+.personagens #content h3 span, 
+.personagens #content h3 i { margin-top:-5px; }
