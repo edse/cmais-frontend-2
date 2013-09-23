@@ -241,3 +241,6 @@ body { background:#0172f9; }
 .resultado a:hover p { text-decoration:underline; }
 
 .personagens { background:#b60401; }
+.personagens .todos-itens li, 
+.personagens .scroll, 
+.personagens .filtro  { border-color:#ee3021; }
