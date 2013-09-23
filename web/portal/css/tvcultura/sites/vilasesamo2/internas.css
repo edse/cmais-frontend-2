@@ -247,3 +247,5 @@ body { background:#0172f9; }
 .personagens #content .filtro h3 { background:#d71c0d; border-color: #c31408; }
 .personagens #content h3 span, 
 .personagens #content h3 i { margin-top:-5px; }
+.personagens #container-personagens a { isplay: block;    height: 300px;    position: relative;    width: 300px; }
+.personagens #container-personagens p { bottom: 0;   margin: 0;    position: absolute; color:#fff; text-align:center; }
