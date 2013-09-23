@@ -19,7 +19,7 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="filtro row-fluid">
-    <h3><span class="sprite-icon-jogos-med"></span>Jogos<a class="todos-assets" href="/vilasesamo2/jogos"><span class="sprite-btn-voltar-jogos"></span><p>todos os jogos</p></a></h3>
+    <h3><span class="sprite-icon-personagens-med"></span>Personagens<a class="todos-assets" href="/vilasesamo2/jogos"><span class="sprite-btn-voltar-jogos"></span><p>todos os jogos</p></a></h3>
     <div class="conteudo-asset">
       <h2>Personagens</h2>
       <a href="javascript:;" id="toggle-sizes">teste</a>
