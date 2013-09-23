@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
 <script>
-  $("body").addClass("interna");
+  $("body").addClass("interna personagens");
 
 </script>
 <style>
