@@ -19,13 +19,17 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="filtro row-fluid">
-    <h3><span class="sprite-icon-personagens-med"></span>Personagens<a class="todos-assets" href="/vilasesamo2/jogos"><span class="sprite-btn-voltar-jogos"></span><p>todos os jogos</p></a></h3>
+    <h3><span class="sprite-icon-personagens-med"></span>Personagens</h3>
     <div class="conteudo-asset">
-      <h2>Personagens</h2>
       <a href="javascript:;" id="toggle-sizes">teste</a>
       
       <div id="container-personagens" class="asset">
-        <div class="element q-pers-03" data-order="1"></div>
+        <div class="element q-pers-03" data-order="1">
+          <a href="#">
+            <img src="/portal/images/capaPrograma/vilasesamo2/bel.png" alt="Bel" />
+            <p>Bel</p>
+          </a>
+        </div>
         <div class="element q-pers-04" data-order="2"></div>
         <div class="element q-pers-01" data-order="3"></div>
         <div class="element q-pers-02" data-order="4"></div>
