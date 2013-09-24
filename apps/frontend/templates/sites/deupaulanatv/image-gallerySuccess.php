@@ -1,8 +1,8 @@
-<link type="text/css" href="/portal/js/orbit/orbit-1.2.3.css" rel="stylesheet" />
-<script type="text/javascript" src="/portal/js/orbit/jquery.orbit-1.2.3.min.js"></script>
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/programaVideosInterna.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/deupaulanatv.css" type="text/css" />
+<link type="text/css" href="http://cmais.com.br/portal/js/orbit/orbit-1.2.3.css" rel="stylesheet" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/orbit/jquery.orbit-1.2.3.min.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/programaVideosInterna.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/deupaulanatv.css" type="text/css" />
 <script type="text/javascript">
 $(window).load(function() {
   $('#featured').orbit({
@@ -156,7 +156,7 @@ $(window).load(function() {
                 <p>Mande o seu #tema</p>
                 <input class="seutema" type="text" name="tema" id="tema" />
                 <input class="enviar" type="submit" name="enviar-tema" id="enviar-tema" value="enviar" />
-                <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader-tema" />             
+                <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader-tema" />             
               </form>
               <script type="text/javascript">
                 $(document).ready(function(){

@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -14,7 +14,7 @@
   <div class="topo">
     <a href="/festivaldeinverno2013" target="_self">
       <!--logo-->
-      <img class="logo" src="/portal/images/capaPrograma/festivaldeinverno2013/logofestival.png" alt="Festival de Inverno na Cultura"/>
+      <img class="logo" src="http://cmais.com.br/portal/images/capaPrograma/festivaldeinverno2013/logofestival.png" alt="Festival de Inverno na Cultura"/>
       <!--/logo-->
     </a>
      
