@@ -88,16 +88,16 @@
     <!-- <input id="scale" max="6" min="2" step="1" type="range" value="4" />--> <label>Dif&iacute;cil</label>
     <input type="button" id="musica" value="Sem música" style="margin-left: 25px;" />
     <audio id="bg">
-      <source src="/portal/quintal/games/puzzle/audio/bg1.mp3" />
-      <source src="/portal/quintal/games/puzzle/audio/bg1.ogg" />
+      <source src="http://cmais.com.br/portal/quintal/games/puzzle/audio/bg1.mp3" />
+      <source src="http://cmais.com.br/portal/quintal/games/puzzle/audio/bg1.ogg" />
     </audio>
     <audio id="click">
-      <source src="/portal/quintal/games/puzzle/audio/click.mp3" />
-      <source src="/portal/quintal/games/puzzle/audio/click.ogg" />
+      <source src="http://cmais.com.br/portal/quintal/games/puzzle/audio/click.mp3" />
+      <source src="http://cmais.com.br/portal/quintal/games/puzzle/audio/click.ogg" />
     </audio>
   </form>
 </div>
-<script src="/portal/quintal/games/puzzle/js/main.js"></script>
+<script src="http://cmais.com.br/portal/quintal/games/puzzle/js/main.js"></script>
 <div class="main" id="main">
     <canvas height="600px" id="puzzle" width="600px"></canvas>
 </div>

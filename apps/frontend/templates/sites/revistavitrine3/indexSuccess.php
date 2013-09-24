@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -18,7 +18,7 @@
       <!-- BARRA SITE -->
       <div id="barra-site">
         <div class="topo-programa">
-          <h2><img title="Vitrine" alt="Revista Vitrine" src="/portal/images/capaPrograma/revistavitrine/logo-vitrine.png"></h2>
+          <h2><img title="Vitrine" alt="Revista Vitrine" src="http://cmais.com.br/portal/images/capaPrograma/revistavitrine/logo-vitrine.png"></h2>
           <p class="descricao">Disponível para iPad gratuitamente na <b>App Store</b></p>
           <p class="baixar"><b>BAIXE AGORA!</b></p>
           
@@ -38,8 +38,8 @@
         <div id="conteudo-pagina">
 
          <div class="baixar">
-           <a class="app" href="https://itunes.apple.com/us/app/revista-vitrine/id627945721?ls=1&mt=8" alt="App Store" target="_blank"><img src="/portal/images/capaPrograma/revistavitrine/app.png" /></a>
-           <a href="/revistavitrine/online" alt="Leia agora online"><img src="/portal/images/capaPrograma/revistavitrine/online.png" /></a>
+           <a class="app" href="https://itunes.apple.com/us/app/revista-vitrine/id627945721?ls=1&mt=8" alt="App Store" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/revistavitrine/app.png" /></a>
+           <a href="/revistavitrine/online" alt="Leia agora online"><img src="http://cmais.com.br/portal/images/capaPrograma/revistavitrine/online.png" /></a>
          </div>
          
           <?php if(isset($program) && $program->id > 0): ?>
@@ -48,7 +48,7 @@
 
          <!--
          <div class="capa-revista">
-           <img src="/portal/images/capaPrograma/revistavitrine/capa.png" alt="Revista Vitrine" />
+           <img src="http://cmais.com.br/portal/images/capaPrograma/revistavitrine/capa.png" alt="Revista Vitrine" />
          </div>
          -->
          

@@ -15,10 +15,10 @@ $apresentador = Doctrine_Query::create()
  */
 ?>
 
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
 <script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
-<script src="/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
-<link type="text/css" href="/portal/js/jquery-ui/css/ui-lightness/jquery-ui-1.8.11.custom.css" rel="stylesheet" />
+<script src="http://cmais.com.br/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
+<link type="text/css" href="http://cmais.com.br/portal/js/jquery-ui/css/ui-lightness/jquery-ui-1.8.11.custom.css" rel="stylesheet" />
 
 
 <?php use_helper('I18N', 'Date') ?>
@@ -181,7 +181,7 @@ $apresentador = Doctrine_Query::create()
                     <?php if(count($videos) > 0): ?>
                     <a class="imgTumb" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"> <img src="http://img.youtube.com/vi/<?php echo $videos[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" /> </a>
                     <?php else:?>
-                    <a class="imgTumb" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"> <img src="/portal/images/capaPrograma/rodaviva/img-padrao.png" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" /> </a>
+                    <a class="imgTumb" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"> <img src="http://cmais.com.br/portal/images/capaPrograma/rodaviva/img-padrao.png" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" /> </a>
                     <?php endif;?>
                     <span class="faixa"></span>
                     <h4><a href="<?php echo $d->retriveUrl() ?>"><?php echo $d->getTitle() ?></a></h4>

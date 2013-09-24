@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/qss-site.css" type="text/css" />
-<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/qss-site.css" type="text/css" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
 
 <style type="text/css">
   #esquerda h3 { text-align:left; color:#fff; }

@@ -7,7 +7,7 @@
   </div>
   
   <script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
-  <script src="/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
+  <script src="http://cmais.com.br/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
   
   <!--script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script-->
   <!--script type="text/javascript" src="https://www.youtube.com/iframe_api"></script--> 

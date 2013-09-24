@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/quemsabesabe.css?nocache=<?php echo time()?>" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/segundatela/quemsabesabe.css?nocache=<?php echo time()?>" type="text/css" />
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
@@ -218,7 +218,7 @@
  });
  </script>
  <!--SCRIPT-->
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script>
 $(document).ready(function(){
   

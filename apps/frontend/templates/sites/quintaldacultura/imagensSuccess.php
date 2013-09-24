@@ -12,21 +12,21 @@
     <meta property="fb:admins" content="100000889563712"/>
     <meta property="fb:app_id" content="124792594261614"/>
 
-    <link rel="shortcut icon" href="/portal/images/icon/favicon.png" type="image/x-icon" />
-    <link rel="image_src" href="/portal/images/logoCMAIS.jpg" />
+    <link rel="shortcut icon" href="http://cmais.com.br/portal/images/icon/favicon.png" type="image/x-icon" />
+    <link rel="image_src" href="http://cmais.com.br/portal/images/logoCMAIS.jpg" />
 
     <meta name="description" content="cmais+ O portal de conteúdo da Cultura" />
     <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
     
-    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
-    <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css?nocache=1234" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/quintal/css/geralQuintal.css" type="text/css" />
     
     <!-- scripts -->
-    <script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
-    <script type="text/javascript" src="/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="/portal/js/portal.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/portal.js"></script>
 
-    <script type="text/javascript" src="/portal/quintal/js/jPlayer/js/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/quintal/js/jPlayer/js/jquery.jplayer.min.js"></script>
 
     <script type="text/javascript">
     //carrocel
@@ -115,27 +115,27 @@
                         <ul class="dropdown">
                           <li><a href=""><span class="esq"></span><span class="centro">Ou escolha pelo desenho</span><span class="dir"></span></a>
                             <ul class="carinha" style="visibility: visible;">
-							    <li><a href="/quintaldacultura/imagens?s=7"><img src="/portal/maiscrianca/images/icones/123_logo.jpg" alt="" /></a></li>
-							    <li><a href="/quintaldacultura/imagens?s=10"><img src="/portal/maiscrianca/images/icones/albumnat_logo.jpg" alt="" /></a></li>
-	                            <li><a href="/quintaldacultura/imagens?s=45"><img src="/portal/maiscrianca/images/icones/cacalivros_logo.jpg" alt="" /></a></li>
-	                            <li><a href="/quintaldacultura/imagens?s=19"><img src="/portal/maiscrianca/images/icones/Castelo_logo.jpg" alt="" /></a></li>
-	                            <li><a href="/quintaldacultura/imagens?s=46"><img src="/portal/maiscrianca/images/icones/ecotur_logo.jpg" alt="" /></a></li>
-	                            <li><a href="/quintaldacultura/imagens?s=98"><img src="/portal/maiscrianca/images/icones/escola-para-cachorro_logo.jpg" alt="" /></a></li>
-	                            <li><a href="/quintaldacultura/imagens?s=32"><img src="/portal/maiscrianca/images/icones/Glub_logo.jpg" alt="" /></a></li>
-	                            <li><a href="/quintaldacultura/imagens?s=34"><img src="/portal/maiscrianca/images/icones/gravidez_logo.jpg" alt="" /></a></li>
-	                            <li><a href="/quintaldacultura/imagens?s=34"><img src="/portal/maiscrianca/images/icones/ilha_logo.jpg" alt="" /></a></li>
-							    <li><a href="/quintaldacultura/imagens?s=38"><img src="/portal/maiscrianca/images/icones/kiara_logo.jpg" alt="" /></a></li>
-	                            <li><a href="/quintaldacultura/imagens?s=44"><img src="/portal/maiscrianca/images/icones/oqvouser_logo.jpg" alt="" /></a></li>
-	                            <li><a href="/quintaldacultura/imagens?s=43"><img src="/portal/maiscrianca/images/icones/papel_logo.jpg" alt="" /></a></li>
-      							<li><a href="/quintaldacultura/imagens?s=49"><img src="/portal/maiscrianca/images/icones/passeio_logo.jpg" alt="" /></a></li>
-      							<li><a href="/quintaldacultura/imagens?s=50"><img src="/portal/maiscrianca/images/icones/pequenos_logo.jpg" alt="" /></a></li>
-      							<li><a href="/quintaldacultura/imagens?s=105"><img src="/portal/maiscrianca/images/icones/sid_logo.jpg" alt="" /></a></li>
-      							<li><a href="/quintaldacultura/imagens?s=57"><img src="/portal/maiscrianca/images/icones/simao_logo.jpg" alt="" /></a></li>
-      							<li><a href="/quintaldacultura/imagens?s=55"><img src="/portal/maiscrianca/images/icones/djcao_logo.jpg" alt="" /></a></li>
-      							<li><a href="/quintaldacultura/imagens?s=101"><img src="/portal/maiscrianca/images/icones/timmy_logo.jpg" alt="" /></a></li>
-      							<li><a href="/quintaldacultura/imagens?s=104"><img src="/portal/maiscrianca/images/icones/Toot_logo.jpg" alt="" /></a></li>
-      							<li><a href="/quintaldacultura/imagens?s=62"><img src="/portal/maiscrianca/images/icones/tracando-arte_logo.jpg" alt="" /></a></li>
-      							<li><a href="/quintaldacultura/imagens?s=64"><img src="/portal/maiscrianca/images/icones/vila-sesamo_logo.jpg" alt="" /></a></li>
+							    <li><a href="/quintaldacultura/imagens?s=7"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/123_logo.jpg" alt="" /></a></li>
+							    <li><a href="/quintaldacultura/imagens?s=10"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/albumnat_logo.jpg" alt="" /></a></li>
+	                            <li><a href="/quintaldacultura/imagens?s=45"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/cacalivros_logo.jpg" alt="" /></a></li>
+	                            <li><a href="/quintaldacultura/imagens?s=19"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/Castelo_logo.jpg" alt="" /></a></li>
+	                            <li><a href="/quintaldacultura/imagens?s=46"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/ecotur_logo.jpg" alt="" /></a></li>
+	                            <li><a href="/quintaldacultura/imagens?s=98"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/escola-para-cachorro_logo.jpg" alt="" /></a></li>
+	                            <li><a href="/quintaldacultura/imagens?s=32"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/Glub_logo.jpg" alt="" /></a></li>
+	                            <li><a href="/quintaldacultura/imagens?s=34"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/gravidez_logo.jpg" alt="" /></a></li>
+	                            <li><a href="/quintaldacultura/imagens?s=34"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/ilha_logo.jpg" alt="" /></a></li>
+							    <li><a href="/quintaldacultura/imagens?s=38"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/kiara_logo.jpg" alt="" /></a></li>
+	                            <li><a href="/quintaldacultura/imagens?s=44"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/oqvouser_logo.jpg" alt="" /></a></li>
+	                            <li><a href="/quintaldacultura/imagens?s=43"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/papel_logo.jpg" alt="" /></a></li>
+      							<li><a href="/quintaldacultura/imagens?s=49"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/passeio_logo.jpg" alt="" /></a></li>
+      							<li><a href="/quintaldacultura/imagens?s=50"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/pequenos_logo.jpg" alt="" /></a></li>
+      							<li><a href="/quintaldacultura/imagens?s=105"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/sid_logo.jpg" alt="" /></a></li>
+      							<li><a href="/quintaldacultura/imagens?s=57"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/simao_logo.jpg" alt="" /></a></li>
+      							<li><a href="/quintaldacultura/imagens?s=55"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/djcao_logo.jpg" alt="" /></a></li>
+      							<li><a href="/quintaldacultura/imagens?s=101"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/timmy_logo.jpg" alt="" /></a></li>
+      							<li><a href="/quintaldacultura/imagens?s=104"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/Toot_logo.jpg" alt="" /></a></li>
+      							<li><a href="/quintaldacultura/imagens?s=62"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/tracando-arte_logo.jpg" alt="" /></a></li>
+      							<li><a href="/quintaldacultura/imagens?s=64"><img src="http://cmais.com.br/portal/maiscrianca/images/icones/vila-sesamo_logo.jpg" alt="" /></a></li>
                             </ul>                                                                                                                                      
                           </li>
                         </ul>

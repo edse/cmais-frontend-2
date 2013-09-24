@@ -2,16 +2,16 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
     <!-- Le styles -->
-    <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
+    <link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <script src="/portal/js/bootstrap/bootstrap.js"></script>
+    <script src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
     
     <!--container-->
     <div class="container">
@@ -20,7 +20,7 @@
         
         <!--topo menu/alert/logo-->
         <div id="socialLoading" class="alert alert-info radarIndex alert-in hide">
-          <span class="badge"><strong>Aguarde um momento</strong><img src="/portal/images/ajax-loader.gif" alt="carregando..." style="margin: 0 30px;" width="16px" height="16px" id="loader3" /></span><button type="button" class="close" data-dismiss="alert">×</button>
+          <span class="badge"><strong>Aguarde um momento</strong><img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="carregando..." style="margin: 0 30px;" width="16px" height="16px" id="loader3" /></span><button type="button" class="close" data-dismiss="alert">×</button>
         </div>
         <div class="row-fluid" style="margin:10px 0 0 0;"> 
           <div id="socialAlertOk" class="alert alert-info radarIndex alert-in hide">
@@ -148,14 +148,14 @@
               <div class="row-fluid">
                 <div class="modal-footer musica">
                   <!--<a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>-->
-                  <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader3" />
+                  <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader3" />
                   <input type="submit" class="btn btn-info btn-enviar" value="Enviar"/>
                 </div>
               </div>
             </form> 
             <!--scripts-->
-        <script type="text/javascript" src="/portal/js/validate/jquery.validate.min.js"></script>
-        <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.min.js"></script>
+        <script src="http://cmais.com.br/portal/js/messages_ptbr.js" type="text/javascript"></script>
         <script type="text/javascript">
         $(document).ready(function(){
           

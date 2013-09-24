@@ -1,11 +1,11 @@
-<script type="text/javascript" src="/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<script type="text/javascript" src="/portal/js/fancybox/jquery.easing-1.3.pack.js"></script>
-<script type="text/javascript" src="/portal/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-<link rel="stylesheet" href="/portal/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 
-<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
-<script type="text/javascript" src="/portal/js/jquery.nivo.slider.pack.js"></script>
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 
 <script type="text/javascript">
 	$(function() {
@@ -23,8 +23,8 @@
 
 </script>
 
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/provocacoes.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/provocacoes.css" type="text/css" />
 
 
 <?php use_helper('I18N', 'Date') ?>
@@ -42,7 +42,7 @@
       <div class="topo-programa">
         <?php if(isset($program) && $program->id > 0):
         ?>
-        <h2><a href="<?php echo $program->retriveUrl() ?>" title="<?php echo $program->getTitle() ?>"> <img title="<?php echo $program->getTitle() ?>" alt="<?php echo $program->getTitle() ?>" src="/portal/images/capaPrograma/provocacoes/logo.png"> </a></h2>
+        <h2><a href="<?php echo $program->retriveUrl() ?>" title="<?php echo $program->getTitle() ?>"> <img title="<?php echo $program->getTitle() ?>" alt="<?php echo $program->getTitle() ?>" src="http://cmais.com.br/portal/images/capaPrograma/provocacoes/logo.png"> </a></h2>
         <?php endif;?>
 
         <?php if(isset($program) && $program->id > 0):

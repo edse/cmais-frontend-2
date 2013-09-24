@@ -3,12 +3,12 @@
 <head>
 	<title><?php echo $site->getTitle()." - ".$section->getTitle() ?></title>
 	<!-- SCRIPTS -->
-    <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-    <script src="/portal/js/validate/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
-    <script src="/portal/js/bootstrap/bootstrap.min.js"></script>
-    <script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>
-    <script src="/portal/js/libs/modernizr-2.5.3-respond-1.1.0.min.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/js/validate/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/js/messages_ptbr.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/js/bootstrap/bootstrap.min.js"></script>
+    <script src="http://cmais.com.br/portal/js/jquery.maskedinput-1.3.min.js"></script>
+    <script src="http://cmais.com.br/portal/js/libs/modernizr-2.5.3-respond-1.1.0.min.js" type="text/javascript"></script>
   	<script>
       $(".collapse").collapse();
       
@@ -24,13 +24,13 @@
 	<!-- /SCRIPTS -->
       
     <!-- CSS BOOTSTRAP -->
-    <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="/portal/js/bootstrap/css/style.css">
+    <link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/style.css">
     <!-- /CSS BOOTSTRAP -->
       
     <!-- CSS SIC -->
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
     <!-- /CSS SIC-->
 </head>
 <body>
@@ -62,7 +62,7 @@
 
              <div class="container">
       
-              <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:block" width="16px" height="16px" id="loader" />
+              <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="carregando..." style="display:block" width="16px" height="16px" id="loader" />
         
               <!-- Acompanhar solicitacao -->
               <div class="row" id="row1">
@@ -89,7 +89,7 @@
                         </div>
                       </div>
                       <div class="float">
-                        <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader1" />
+                        <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader1" />
                         <button type="submit" class="btn btn-success" id="btn1">Próximo Passo</button>
                       </div>
                     </fieldset>
@@ -135,7 +135,7 @@
                           </div>
                         </div>
                         <div class="form-actions" style="padding-left: 25px;">
-                          <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader2" />
+                          <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader2" />
                           <button types"submit" class="btn btn-danger" id="btn2">Enviar pedido de recurso</button>
                         </div>
                       </fieldset>

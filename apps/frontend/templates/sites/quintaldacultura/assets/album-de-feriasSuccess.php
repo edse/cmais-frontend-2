@@ -4,7 +4,7 @@
     <link href="/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css" type="text/css" />
     <!--[if IE]>
-      <link rel="stylesheet" type="text/css" href="/portal/css/ie-only.css" />
+      <link rel="stylesheet" type="text/css" href="http://cmais.com.br/portal/css/ie-only.css" />
     <![endif]-->
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
@@ -29,7 +29,7 @@
     <meta property="fb:admins" content="100000889563712"/>
     <meta property="fb:app_id" content="124792594261614"/>
 
-    <link rel="shortcut icon" href="/portal/images/icon/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://cmais.com.br/portal/images/icon/favicon.png" type="image/x-icon" />
 
     <!-- scripts -->
     <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
@@ -37,11 +37,11 @@
     <script type="text/javascript" src="http://cmais.com.br/portal/js/portal.js"></script>
     <script type="text/javascript" src="http://cmais.com.br/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
 
-    <!--linh nova--><script type="text/javascript" src="/portal/quintal/js/jquery.lightbox-0.5.js"></script><!--linh nova-->
+    <!--linh nova--><script type="text/javascript" src="http://cmais.com.br/portal/quintal/js/jquery.lightbox-0.5.js"></script><!--linh nova-->
     <!--linh nova--><script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script><!--linh nova-->
-    <!--linh nova--><script type="text/javascript" src="/portal/quintal/js/jquery.nivo.slider.pack.js"></script><!--linh nova-->
+    <!--linh nova--><script type="text/javascript" src="http://cmais.com.br/portal/quintal/js/jquery.nivo.slider.pack.js"></script><!--linh nova-->
     <!--linh nova--><script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script><!--linh nova-->
-    <!--linh nova--><link rel="stylesheet" href="/portal/quintal/css/album-ferias.css" type="text/css" /><!--linh nova-->
+    <!--linh nova--><link rel="stylesheet" href="http://cmais.com.br/portal/quintal/css/album-ferias.css" type="text/css" /><!--linh nova-->
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -84,8 +84,8 @@
       <!-- BARRA SITE -->
       <div id="barra-site">
 	      <div class="topo-programa">
-		      <h2><a href="http://cmais.com.br/quintaldacultura"><img title="Quintal da Cultura" alt="Quintal da Cultura" src="/portal/quintal/images/logo_QuintalAlbum.png"></a></h2>
-		      <img class="imgTitulo" src="/portal/quintal/images/album-de-ferias.png" title="Álbum de Férias" alt="Álbum de Férias" />
+		      <h2><a href="http://cmais.com.br/quintaldacultura"><img title="Quintal da Cultura" alt="Quintal da Cultura" src="http://cmais.com.br/portal/quintal/images/logo_QuintalAlbum.png"></a></h2>
+		      <img class="imgTitulo" src="http://cmais.com.br/portal/quintal/images/album-de-ferias.png" title="Álbum de Férias" alt="Álbum de Férias" />
 		
 		      <a href="http://cmais.com.br/quintaldacultura/album-de-ferias" name="Álbum de Férias" title="Álbum de Férias" style="display:block; overflow:hidden;"></a>
 		    

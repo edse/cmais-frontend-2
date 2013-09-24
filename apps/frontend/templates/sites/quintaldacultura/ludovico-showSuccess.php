@@ -28,22 +28,22 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
     <meta property="fb:admins" content="100000889563712"/>
     <meta property="fb:app_id" content="124792594261614"/>
 
-    <link rel="shortcut icon" href="/portal/images/icon/favicon.png" type="image/x-icon" />
-    <link rel="image_src" href="/portal/images/logoCMAIS.jpg" />
+    <link rel="shortcut icon" href="http://cmais.com.br/portal/images/icon/favicon.png" type="image/x-icon" />
+    <link rel="image_src" href="http://cmais.com.br/portal/images/logoCMAIS.jpg" />
 
     <meta name="description" content="cmais+ O portal de conteúdo da Cultura" />
     <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
     
     <!--CSS-->
-    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
-    <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
-    <link rel="stylesheet" href="/portal/quintal/css/ludovico-show.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css?nocache=1234" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/quintal/css/geralQuintal.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/quintal/css/ludovico-show.css" type="text/css" />
     <!--/CSS-->
      
     <!--SCRIPT--> 
-    <script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
-    <script type="text/javascript" src="/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="/portal/js/portal.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/portal.js"></script>
     <!--/SCRIPT-->
     
     <script type="text/javascript">
@@ -281,7 +281,7 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
                 
                 <!--BOX ESPERA-->
                 <div id="espera" align="center" style="display:none">
-                  <img src="/portal/quintal/images/ludovicoshow/ajax-loader.gif" />
+                  <img src="http://cmais.com.br/portal/quintal/images/ludovicoshow/ajax-loader.gif" />
                   <p>
                     Aguarde só um pouquinho!
                   </p>

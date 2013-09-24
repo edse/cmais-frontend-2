@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/rodaviva.css?nocache=<?php echo time()?>" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/segundatela/rodaviva.css?nocache=<?php echo time()?>" type="text/css" />
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
@@ -112,15 +112,15 @@
   </div>
 
   <audio id="audio-ping">
-    <source src="/portal/audio/ping.mp3" />
-    <source src="/portal/audio/ping.ogg" />
+    <source src="http://cmais.com.br/portal/audio/ping.mp3" />
+    <source src="http://cmais.com.br/portal/audio/ping.ogg" />
   </audio>
 
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>    
-  <script type="text/javascript" src="/portal/js/websocket-js/swfobject.js"></script>
-  <script type="text/javascript" src="/portal/js/websocket-js/web_socket.js?a"></script>
-  <script type="text/javascript" src="/portal/js/json2.js"></script>
-  <script type="text/javascript" src="/portal/js/segundatela/secondscreenrodaviva/app.js?nocache=<?php echo time()?>"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/swfobject.js"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/web_socket.js?a"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/json2.js"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/secondscreenrodaviva/app.js?nocache=<?php echo time()?>"></script>
   <script>
     $(document).ready(function() {
       setInterval( function() {

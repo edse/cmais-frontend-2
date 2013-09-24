@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
 <script type="text/javascript">
 $(function(){
   //carrossel
@@ -193,7 +193,7 @@ $(function(){
             <!-- /DIREITA -->
             <!-- rodape preestreia-->
 		    <div class="grid3 apoio">
-		      <img src="/portal/images/capaPrograma/preestreia/rodape_preestreia.jpg" />	
+		      <img src="http://cmais.com.br/portal/images/capaPrograma/preestreia/rodape_preestreia.jpg" />	
 		     </div>
 		     <!-- /rodape preestreia-->
           </div>

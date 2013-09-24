@@ -1,12 +1,12 @@
 <script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
-<link type="text/css" href="/portal/js/jquery-ui/css/ui-lightness/jquery-ui-1.8.11.custom.css" rel="stylesheet" />	
+<link type="text/css" href="http://cmais.com.br/portal/js/jquery-ui/css/ui-lightness/jquery-ui-1.8.11.custom.css" rel="stylesheet" />	
 
 <?php
   $sites = Doctrine_Query::create() -> select('s.*') -> from('Site s') -> where("s.slug IN ('rodaviva','metropolis','cartaoverde','vitrine','culturaretro','manoseminas','provocacoes','jornaldacultura')") -> orderBy('s.title asc') -> limit(9) -> execute();?>
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php  echo $section -> Site -> getSlug();?>.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/todos-videos.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/videos.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php  echo $section -> Site -> getSlug();?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/todos-videos.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/videos.css" type="text/css" />
 <script type="text/javascript">$( function() {
     //carrossel
     $('.carrossel').jcarousel({
@@ -75,7 +75,7 @@
           <!--li class="recentes"><p title="+ Recentes" href="#recentes" class="ativo">+ Recentes</p><span class="decoracao"></span></li-->
         </ul>
         <div id="galeria-videos" class="abas-conteudo conteudo-rodape grid3">
-          <link rel="stylesheet" href="/portal/css/tvcultura/secoes/videos3.css" type="text/css" />
+          <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/videos3.css" type="text/css" />
           <div class="busca">
             <form id="busca" name="busca" action="" method="post">
   				  	<input type="hidden" name="ordem" id="ordem" value="" />

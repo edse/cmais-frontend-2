@@ -8,19 +8,19 @@
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
     <meta property="fb:admins" content="100000889563712"/>
     <meta property="fb:app_id" content="124792594261614"/>
-    <link rel="shortcut icon" href="/portal/images/icon/favicon.png" type="image/x-icon" />
-    <link rel="image_src" href="/portal/images/logoCMAIS.jpg" />
+    <link rel="shortcut icon" href="http://cmais.com.br/portal/images/icon/favicon.png" type="image/x-icon" />
+    <link rel="image_src" href="http://cmais.com.br/portal/images/logoCMAIS.jpg" />
     <meta name="description" content="cmais+ O portal de conteúdo da Cultura" />
     <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
-    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css?nocache=1234" type="text/css" />
     <!--[if IE]>
-      <link rel="stylesheet" type="text/css" href="/portal/css/ie-only.css" />
+      <link rel="stylesheet" type="text/css" href="http://cmais.com.br/portal/css/ie-only.css" />
     <![endif]-->
-    <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/quintal/css/geralQuintal.css" type="text/css" />
     <!-- scripts -->
-    <script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
-    <script type="text/javascript" src="/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="/portal/js/portal.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/portal.js"></script>
     <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
     <script type="text/javascript">//carrocel
 		$( function() {
@@ -65,7 +65,7 @@
 			document.getElementById('fb-root').appendChild(e);
 		}());</script>
     <!--linh nova-->
-    <link rel="stylesheet" href="/portal/quintal/css/album-ferias.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/quintal/css/album-ferias.css" type="text/css" />
     <!--linh nova-->
     <!-- TOPO PORTAL -->
     <div id="topo-portal" class="topo-geral capa-topo">
@@ -83,10 +83,10 @@
           <div class="topo-programa">
             <h2>
             <a href="http://cmais.com.br/quintaldacultura">
-            <img title="Quintal da Cultura" alt="Quintal da Cultura" src="/portal/quintal/images/logo_QuintalAlbum.png">
+            <img title="Quintal da Cultura" alt="Quintal da Cultura" src="http://cmais.com.br/portal/quintal/images/logo_QuintalAlbum.png">
             </a>
             </h2>
-            <img class="imgTitulo" src="/portal/quintal/images/album-de-ferias.png" title="Álbum de Férias" alt="Álbum de Férias" />
+            <img class="imgTitulo" src="http://cmais.com.br/portal/quintal/images/album-de-ferias.png" title="Álbum de Férias" alt="Álbum de Férias" />
             <a href="http://cmais.com.br/quintaldacultura/album-de-ferias" name="Álbum de Férias" title="Álbum de Férias" style="display:block; overflow:hidden;"></a>
             <a class="icoVeja" href="http://cmais.com.br/quintaldacultura/album-de-ferias"></a>
           </div>
