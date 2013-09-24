@@ -14,9 +14,10 @@ body { background:#0172f9; }
 #content h3 i { margin-right:10px;  }
 #content h3 .sprite-icon-colorir-med { margin-top:-6px; }
 #content h3 .sprite-icon-jogos-med { margin-top:4px; }
-.mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; max-width:350px; margin:100px auto; display:block; }
+#page_nav { max-width:940px; }
+.mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; max-width:350px; margin:100px 0; float:right; display:block; }
 .mais span,
-.mais i { float:left; margin-right:15px; }
+.mais i { float:right; margin-right:15px; }
 .mais:hover { color:#fff; text-decoration:underline; }
 /* filtro personagem */
 .todos-itens li,
