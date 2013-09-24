@@ -8,7 +8,7 @@
 
       <div id="barra-site">
         <div class="topo-programa" id="home">
-          <h2><a href="http://culturafm.cmais.com.br"><img title="Rádio Cultura FM - 103.3 MHz" alt="Rádio Cultura FM - 103.3 MHz" src="http://culturabrasil.cmais.com.br/portal/images/capaPrograma/culturabrasil/logoam.png"></a></h2>
+          <h2><a href="http://culturafm.cmais.com.br"><img title="Rádio Cultura FM - 103.3 MHz" alt="Rádio Cultura FM - 103.3 MHz" src="http://culturafm.cmais.com.br/portal/images/capaPrograma/culturafm/logo.png"></a></h2>
         </div>
       </div>
       
