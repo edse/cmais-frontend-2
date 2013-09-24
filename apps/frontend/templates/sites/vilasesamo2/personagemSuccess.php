@@ -96,7 +96,7 @@
 
 <input type="hidden" id="filter-choice" value="">
 <nav id="page_nav">
-  <a href="/testes/vilasesamo2/pages/2.html" class="mais"><i class="sprite-icon-mais"></i>Carregar mais jogos</a>
+  <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais jogos<i class="sprite-icon-mais"></i></a>
 </nav>
 <!--scripts-->
 
