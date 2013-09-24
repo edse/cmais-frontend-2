@@ -67,7 +67,7 @@
       <!--/NOTICIA ITEM-->
 			*/ ?>
     </ul> 
-    <img class="loader" id="maisnoticiasLoader" src="/portal/images/capaPrograma/mob/ajax-loader.gif" style="display:none">
+    <img class="loader" id="maisnoticiasLoader" src="http://cmais.com.br/portal/images/capaPrograma/mob/ajax-loader.gif" style="display:none">
     <a href="javascript:mobileGetContents()" class="mais">
       mais notícias
     </a>  

@@ -21,17 +21,17 @@
     <title>Home - +crian&ccedil;a - cmais+ O portal de conteúdo da Cultura</title>
     
     
-    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css?nocache=1234" type="text/css" />
     
-    <link href="/portal/maiscrianca/css/geralCrianca.css?nocache=1234" type="text/css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/maiscrianca/css/geralCrianca.css?nocache=1234" type="text/css" rel="stylesheet">
     
     <!–-[if IE 7]>
-    <link rel="stylesheet" href="/portal/maiscrianca/css/ie7.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/maiscrianca/css/ie7.css" type="text/css" />
     <![endif]-–>
-    <script src="/portal/maiscrianca/js/jquery.js" type="text/javascript"></script>
-    <script src="/portal/maiscrianca/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
-    <script src="/portal/maiscrianca/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/portal/js/portal.js"></script>
+    <script src="http://cmais.com.br/portal/maiscrianca/js/jquery.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/maiscrianca/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/maiscrianca/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/portal.js"></script>
   </head>
   <script type="text/javascript">
     //carrocel 

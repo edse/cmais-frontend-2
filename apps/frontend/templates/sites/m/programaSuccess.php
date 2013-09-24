@@ -101,7 +101,7 @@
 					<div class="video-item" align="center">
 						<ul id="videoList">
 						</ul>
-						<img class="loader" id="maisvideosLoader" src="/portal/images/capaPrograma/mob/ajax-loader.gif" style="display:none">
+						<img class="loader" id="maisvideosLoader" src="http://cmais.com.br/portal/images/capaPrograma/mob/ajax-loader.gif" style="display:none">
 						<a href="javascript:mobileGetVideos()" id="maisvideos" class="gradeCompleta" data-direction="slide" data-rel="external">mais vídeos</a>
 					</div>
 					
@@ -121,7 +121,7 @@
 					<div class="noticias"  align="center">
 						<ul id="contentList">
 						</ul>
-						<img class="loader" id="maisnoticiasLoader" src="/portal/images/capaPrograma/mob/ajax-loader.gif" style="display:none;">
+						<img class="loader" id="maisnoticiasLoader" src="http://cmais.com.br/portal/images/capaPrograma/mob/ajax-loader.gif" style="display:none;">
 						<a href="javascript:mobileGetContents()" id="maisnoticias" class="gradeCompleta" data-rel="external">mais notícias</a>
 					</div>
 				</div>

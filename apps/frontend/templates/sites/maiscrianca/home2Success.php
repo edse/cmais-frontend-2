@@ -1,20 +1,20 @@
 <!-- Le styles -->
-<link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"  >
-<link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"  >
+<link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script type="text/javascript" src="/portal/js/bootstrap/bootstrap.js"></script>
-<script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/maiscrianca2.css" type="text/css" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/tab.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/maiscrianca2.css" type="text/css" />
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
 <div class="bg"></div>
   <div class="header">
-    <h1 class="logo span12"><a href="<?php echo $site->retriveUrl() ?>" title="+Criança"><img class="row-fluid span12" src="/portal/images/capaPrograma/maiscrianca2/logo.jpg" alt="+criança" /></a></h1>
+    <h1 class="logo span12"><a href="<?php echo $site->retriveUrl() ?>" title="+Criança"><img class="row-fluid span12" src="http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/logo.jpg" alt="+criança" /></a></h1>
   </div>
   <div class="container">
     

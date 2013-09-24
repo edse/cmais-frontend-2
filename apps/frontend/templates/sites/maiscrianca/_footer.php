@@ -73,9 +73,9 @@
                 <div class="colunaUm">
                   <div class="wrapperColunaUma">
                     <a href="http://cmais.com.br/relembre-a-vila-sesamo-dos-anos-70">
-                      <img src="/portal/maiscrianca/images/vilasesamo_crop.jpg" alt="" />
-                      <img class="banner-crianca" src="/portal/maiscrianca/images/banner-crianca.png" alt="" />
-                      <img class="ioio" src="/portal/maiscrianca/images/img-ioio.png" alt="" />
+                      <img src="http://cmais.com.br/portal/maiscrianca/images/vilasesamo_crop.jpg" alt="" />
+                      <img class="banner-crianca" src="http://cmais.com.br/portal/maiscrianca/images/banner-crianca.png" alt="" />
+                      <img class="ioio" src="http://cmais.com.br/portal/maiscrianca/images/img-ioio.png" alt="" />
                     </a>
                     <hr />
                     <div class="info">
@@ -136,7 +136,7 @@
 
                 <div class="colunaTres">
                   <div class="merchan1">
-                    <img src="/portal/maiscrianca/images/img-ex5.png" alt="" />
+                    <img src="http://cmais.com.br/portal/maiscrianca/images/img-ex5.png" alt="" />
                     <p class="tit">Como adquirir?</p>
                     <p>Para adquirir produtos licenciados, acesse o site <a href="http://cmais.com.br/culturamundo">Cultura Marcas</a>.</p>
                   </div>
@@ -146,7 +146,7 @@
                   <?php if(isset($displays["publicidade-300x50"])):?>
                     <?php include_partial_from_folder('blocks','global/banner-300x50', array('displays' => $displays["publicidade-300x50"])) ?>
                   <?php else:?>
-                    <a href="http://www.tvcultura.com.br/cocorico/" title="Cocoric&oacute;: aos s&aacute;bados novas aventuras"><img src="/portal/maiscrianca/images/julho_cocorico.jpg" alt="Cocoric&oacute;: aos s&aacute;bados novas aventuras" /></a>
+                    <a href="http://www.tvcultura.com.br/cocorico/" title="Cocoric&oacute;: aos s&aacute;bados novas aventuras"><img src="http://cmais.com.br/portal/maiscrianca/images/julho_cocorico.jpg" alt="Cocoric&oacute;: aos s&aacute;bados novas aventuras" /></a>
                   <?php endif;?>
                   <!-- / BOX PUBLICIDADE 3 -->
                   </div>

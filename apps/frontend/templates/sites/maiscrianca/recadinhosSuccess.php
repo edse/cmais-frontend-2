@@ -4,13 +4,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Recadinhos - +crian&ccedil;a - cmais+ O portal de conteúdo da Cultura</title>
-    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
-    <link href="/portal/maiscrianca/css/geralCrianca.css?nocache=1234" type="text/css" rel="stylesheet">
-    <script src="/portal/maiscrianca/js/jquery.js" type="text/javascript"></script>
-    <script src="/portal/maiscrianca/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
-    <script src="/portal/maiscrianca/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
-    <script src="/portal/js/validate/jquery.validate.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/portal/js/portal.js"></script>
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css?nocache=1234" type="text/css" />
+    <link href="http://cmais.com.br/portal/maiscrianca/css/geralCrianca.css?nocache=1234" type="text/css" rel="stylesheet">
+    <script src="http://cmais.com.br/portal/maiscrianca/js/jquery.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/maiscrianca/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/maiscrianca/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/js/validate/jquery.validate.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/portal.js"></script>
   </head>
   <script type="text/javascript">
     //carrocel
@@ -196,52 +196,52 @@
                         <p>Para:</p>
                         <div class="moldura">
                           <ul class="dropdown">
-                            <li><img class="fotoMoldura" src="/portal/maiscrianca/images/icones/img-ex8.png" alt="" />
+                            <li><img class="fotoMoldura" src="http://cmais.com.br/portal/maiscrianca/images/icones/img-ex8.png" alt="" />
 
                               <ul class="carinha">
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/123_logo.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/albumnat_logo.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/logo_arthur.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/bob-logo.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/brincadeiras-musicais_destaque_logo.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/cacalivros_logo.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/logo_carrapatos-e-catapultas.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/Castelo_logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/123_logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/albumnat_logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/logo_arthur.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/bob-logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/brincadeiras-musicais_destaque_logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/cacalivros_logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/logo_carrapatos-e-catapultas.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/Castelo_logo.jpg" alt="" /></a></li>
 
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/logo_cyberchase.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/dora_logo1.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/logo_doug.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/ecotur_logo.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/escola-para-cachorro_logo.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/Glub_logo.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/gravidez_logo.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/ilha_logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/logo_cyberchase.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/dora_logo1.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/logo_doug.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/ecotur_logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/escola-para-cachorro_logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/Glub_logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/gravidez_logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/ilha_logo.jpg" alt="" /></a></li>
 
-								<li><a href=""><img src="/portal/maiscrianca/images/icones/kiara_logo.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/logo_jackers.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/logo_miss-spider.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/logo_os7monstrinhos.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/MundodaLua_logo.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/oqvouser_logo.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/papel_logo.jpg" alt="" /></a></li>
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/logo_princesasdomar.jpg" alt="" /></a></li>
+								<li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/kiara_logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/logo_jackers.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/logo_miss-spider.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/logo_os7monstrinhos.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/MundodaLua_logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/oqvouser_logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/papel_logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/logo_princesasdomar.jpg" alt="" /></a></li>
                                 
-								<li><a href=""><img src="/portal/maiscrianca/images/icones/logo_pingu.jpg" alt="" /></a></li>
-								<li><a href=""><img src="/portal/maiscrianca/images/icones/ratimbum_logo.jpg" alt="" /></a></li>
-								<li><a href=""><img src="/portal/maiscrianca/images/icones/logo-superfofos.jpg" alt="" /></a></li>
-								<li><a href=""><img src="/portal/maiscrianca/images/icones/passeio_logo.jpg" alt="" /></a></li>
-								<li><a href=""><img src="/portal/maiscrianca/images/icones/pequenos_logo.jpg" alt="" /></a></li>
-								<li><a href=""><img src="/portal/maiscrianca/images/icones/sid_logo.jpg" alt="" /></a></li>
-								<li><a href=""><img src="/portal/maiscrianca/images/icones/simao_logo.jpg" alt="" /></a></li>
-								<li><a href=""><img src="/portal/maiscrianca/images/icones/djcao_logo.jpg" alt="" /></a></li>
+								<li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/logo_pingu.jpg" alt="" /></a></li>
+								<li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/ratimbum_logo.jpg" alt="" /></a></li>
+								<li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/logo-superfofos.jpg" alt="" /></a></li>
+								<li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/passeio_logo.jpg" alt="" /></a></li>
+								<li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/pequenos_logo.jpg" alt="" /></a></li>
+								<li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/sid_logo.jpg" alt="" /></a></li>
+								<li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/simao_logo.jpg" alt="" /></a></li>
+								<li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/djcao_logo.jpg" alt="" /></a></li>
 								
-                                <li><a href=""><img src="/portal/maiscrianca/images/icones/tamanho_logo.jpg" alt="" /></a></li>
-								<li><a href=""><img src="/portal/maiscrianca/images/icones/teatro_logo.jpg" alt="" /></a></li>
-								<li><a href=""><img src="/portal/maiscrianca/images/icones/timmy_logo.jpg" alt="" /></a></li>
-								<li><a href=""><img src="/portal/maiscrianca/images/icones/logo_tromba-trem.jpg" alt="" /></a></li>
-								<li><a href=""><img src="/portal/maiscrianca/images/icones/Toot_logo.jpg" alt="" /></a></li>
-								<li><a href=""><img src="/portal/maiscrianca/images/icones/tracando-arte_logo.jpg" alt="" /></a></li>
-								<li><a href=""><img src="/portal/maiscrianca/images/icones/vila-sesamo_logo.jpg" alt="" /></a></li>
+                                <li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/tamanho_logo.jpg" alt="" /></a></li>
+								<li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/teatro_logo.jpg" alt="" /></a></li>
+								<li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/timmy_logo.jpg" alt="" /></a></li>
+								<li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/logo_tromba-trem.jpg" alt="" /></a></li>
+								<li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/Toot_logo.jpg" alt="" /></a></li>
+								<li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/tracando-arte_logo.jpg" alt="" /></a></li>
+								<li><a href=""><img src="http://cmais.com.br/portal/maiscrianca/images/icones/vila-sesamo_logo.jpg" alt="" /></a></li>
 								
 								<hr />
                               </ul>
@@ -261,7 +261,7 @@
 							<p class="estado"><label class="withe">Estado:</label><input name="estado" id="estado" type="text" /></p>
 							<p class="idade"><label class="withe">Idade:</label><input type="text" name="idade" id="idade" /></p>
 							<p class="mensagem"><label class="withe">Escreva seu recadinho:</label><textarea id="recado" name="recado"></textarea></p>
-							<img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+							<img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
 							<input id="signupsubmit" class="enviar" name="signup" type="submit" value="Enviar" />
 						</form>
                       <p class="atencao"><span class="withe">Aten&ccedil;&atilde;o!</span> Os campos destacados apresentam erro.</p>
@@ -271,7 +271,7 @@
                       <p>Seu recadinho ser&aacute; verificado e em breve aparecer&aacute; aqui no <span>+ Crian&ccedil;a</span>.</p>
                       <span class="dots">...</span>
                       <a class="enviarOutro" href="/maiscrianca/recadinhos">Enviar outro recadinho</a>
-                      <img src="/portal/maiscrianca/images/img-smile.png" alt="=]" />
+                      <img src="http://cmais.com.br/portal/maiscrianca/images/img-smile.png" alt="=]" />
                     </div>
                   </div>
                 </div>

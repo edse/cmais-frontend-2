@@ -1,9 +1,9 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/novostempos.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/novostempos.css" type="text/css" />
 <!-- topo -->
 <div class="topo">
   <div class="container" id="voltar">
     <div class="span4">
-      <h1><a href="http://tvcultura.cmais.com.br/novostempos" title="Novos Tempos"><img src="/portal/images/capaPrograma/novostempos/logo.png" alt="Novos Tempos" /></a></h1>
+      <h1><a href="http://tvcultura.cmais.com.br/novostempos" title="Novos Tempos"><img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/logo.png" alt="Novos Tempos" /></a></h1>
       <div class="redes">
         <div class="gplus">
           <g:plusone size="medium" count="false"></g:plusone>
@@ -62,7 +62,7 @@
   </div>
   <!-- qss -->
   <div class="row-fluid" id="qss">
-    <img src="/portal/images/capaPrograma/novostempos/qss.jpg" alt="Quem Sabe Sabe" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/qss.jpg" alt="Quem Sabe Sabe" />
     <div class="row-fluid">
       <h2 class="span6">Quem Sabe, Sabe! usa tecnologia para testar conhecimento</h2>
       <a  class="span6 link" href="http://cmais.com.br/qss" title="cmais.com.br/qss"><i class="seta"></i>cmais.com.br/qss</a>
@@ -90,7 +90,7 @@
   
   <!-- cocorico -->
   <div class="row-fluid" id="cocorico">
-    <img src="/portal/images/capaPrograma/novostempos/cocorico.jpg" alt="Cocoricó Conta Clássicos" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/cocorico.jpg" alt="Cocoricó Conta Clássicos" />
     <div class="row-fluid">
       <h2 class="span6">Cocoricó traz contos clássicos com roupagem brasileira</h2>
       <a class="span6 link" href="http://cocorico.com.br" title="Cocoricó"><i class="seta"></i>cocorico.com.br</a>
@@ -113,7 +113,7 @@
   
   <!-- peixonauticos -->
   <div class="row-fluid" id="peixonauticos">
-    <img src="/portal/images/capaPrograma/novostempos/peixonauticos.jpg" alt="Peixonáuticos" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/peixonauticos.jpg" alt="Peixonáuticos" />
     <div class="row-fluid">
       <h2 class="span6">Live action e animação vivem aventuras juntos em Peixonáuticos</h2>
     </div>
@@ -134,7 +134,7 @@
   
   <!-- nilba -->
   <div class="row-fluid" id="nilba">
-    <img src="/portal/images/capaPrograma/novostempos/nilba.jpg" alt="Nilba e os Desastronautas" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/nilba.jpg" alt="Nilba e os Desastronautas" />
     <div class="row-fluid">
       <h2 class="span6">Nilba e os Desastronautas aterrissam na Cultura</h2>
     </div>
@@ -157,7 +157,7 @@
   
   <!-- trexci -->
   <div class="row-fluid" id="trexci">
-    <img src="/portal/images/capaPrograma/novostempos/trexci.jpg" alt="T.R.EX.C.I." />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/trexci.jpg" alt="T.R.EX.C.I." />
     <div class="row-fluid">
       <h2 class="span6">T.R.EX.C.I. vem descobrir como é a vida na Terra</h2>
     </div>
@@ -178,7 +178,7 @@
   
   <!-- osmar -->
   <div class="row-fluid" id="osmar">
-    <img src="/portal/images/capaPrograma/novostempos/osmar.jpg" alt="Osmar A Primeira Fatia do Pão de Forma" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/osmar.jpg" alt="Osmar A Primeira Fatia do Pão de Forma" />
     <div class="row-fluid">
       <h2 class="span6">A primeira fatia do pão de forma vira série animada</h2>
     </div>
@@ -199,7 +199,7 @@
   
   <!-- historietas -->
   <div class="row-fluid" id="historietas">
-    <img src="/portal/images/capaPrograma/novostempos/historietas.jpg" alt="Historietas Assombradas" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/historietas.jpg" alt="Historietas Assombradas" />
     <div class="row-fluid">
       <h2 class="span6">Histórias de terror com muito humor para as crianças</h2>
       
@@ -222,7 +222,7 @@
   
   <!-- cartaozinho -->
   <div class="row-fluid" id="cartaozinho">
-    <img src="/portal/images/capaPrograma/novostempos/cartaozinho.jpg" alt="Cartãozinho Verde" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/cartaozinho.jpg" alt="Cartãozinho Verde" />
     <div class="row-fluid">
       <h2 class="span6">Cartãozinho Verde ganha mais tempo e vai ao ar ao vivo</h2>
       <a class="span6 link" href="http://cmais.com.br/cartaozinho" title="Cartãozinho Verde"><i class="seta"></i>cmais.com.br/cartaozinho</a>
@@ -245,7 +245,7 @@
   
    <!-- pedroebianca -->
   <div class="row-fluid" id="pedroebianca">
-    <img src="/portal/images/capaPrograma/novostempos/pedroebianca.jpg" alt="Pedro e Bianca" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/pedroebianca.jpg" alt="Pedro e Bianca" />
     <div class="row-fluid">
       <h2 class="span6">Série Pedro & Bianca terá temporada completa</h2>
       <a class="span6 link" href="http://cmais.com.br/pedroebianca" title="Pedro e Bianca"><i class="seta"></i>cmais.com.br/pedroebianca</a>
@@ -271,7 +271,7 @@
   
   <!-- poli -->
   <div class="row-fluid" id="poli">
-    <img src="/portal/images/capaPrograma/novostempos/poli.jpg" alt="Poli" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/poli.jpg" alt="Poli" />
     <div class="row-fluid">
       <h2 class="span6">Poli revela histórias de grandes personalidades</h2>
       <a class="span6 link" href="http://cmais.com.br/poli" title="Poli"><i class="seta"></i>cmais.com.br/poli</a>
@@ -299,7 +299,7 @@
   
   <!-- guiadodia -->
   <div class="row-fluid" id="guiadodia">
-    <img src="/portal/images/capaPrograma/novostempos/guiadodia.jpg" alt="Guia do Dia" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/guiadodia.jpg" alt="Guia do Dia" />
     <div class="row-fluid">
       <h2 class="span6">Guia do Dia traz notícias, entrevistas e prestação de serviços</h2>
       <a class="span6 link" href="http://cmais.com.br/guiadodia" title="Guia do Dia"><i class="seta"></i>cmais.com.br/guiadodia</a>
@@ -325,7 +325,7 @@
   
   <!-- madmen -->
   <div class="row-fluid" id="madmen">
-    <img src="/portal/images/capaPrograma/novostempos/madmen.jpg" alt="Mad Men" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/madmen.jpg" alt="Mad Men" />
     <div class="row-fluid">
       <h2 class="span6">Mad Men e o universo da publicidade</h2>
       <a class="span6 link" href="http://cmais.com.br/madmen" title="Mad Men"><i class="seta"></i>cmais.com.br/madmen</a>
@@ -349,7 +349,7 @@
   
   <!-- doctorwho -->
   <div class="row-fluid" id="doctorwho">
-    <img src="/portal/images/capaPrograma/novostempos/doctorwho.jpg" alt="Doctor Who" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/doctorwho.jpg" alt="Doctor Who" />
     <div class="row-fluid">
       <h2 class="span6">Cultura exibe sétima temporada de Doctor Who</h2>
       <a class="span6 link" href="http://cmais.com.br/doctorwho" title="Doctor Who"><i class="seta"></i>cmais.com.br/doctorwho</a>
@@ -375,7 +375,7 @@
   
   <!-- mostra -->
   <div class="row-fluid" id="mostra">
-    <img src="/portal/images/capaPrograma/novostempos/mostra.jpg" alt="Mostra" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/mostra.jpg" alt="Mostra" />
     <div class="row-fluid">
       <h2 class="span6">As faixas de filmes e documentários mais acessíveis da TV</h2>
     </div>
@@ -415,7 +415,7 @@
   
   <!-- telefilmes -->
   <div class="row-fluid" id="telefilmes">
-    <img src="/portal/images/capaPrograma/novostempos/telefilmes.jpg" alt="Telefilmes" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/telefilmes.jpg" alt="Telefilmes" />
     <div class="row-fluid">
       <h2 class="span6">Música é tema da quarta edição do Telefilmes Cultura</h2>
       <a class="span6 link" href="http://cmais.com.br/telefilmes" title="Telefilmes"><i class="seta"></i>cmais.com.br/telefilmes</a>
@@ -438,7 +438,7 @@
   
   <!-- etudoverdade -->
   <div class="row-fluid" id="etudoverdade">
-    <img src="/portal/images/capaPrograma/novostempos/etudoverdade.jpg" alt="É Tudo Verdade" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/etudoverdade.jpg" alt="É Tudo Verdade" />
     <div class="row-fluid">
       <h2 class="span6">Os melhores documentários estão no É Tudo Verdade Internacional</h2>
       <a class="span6 link" href="http://cmais.com.br/etudoverdade" title="É Tudo Verdade"><i class="seta"></i>cmais.com.br/etudoverdade</a>
@@ -460,7 +460,7 @@
   
   <!-- classicos -->
   <div class="row-fluid" id="classicos">
-    <img src="/portal/images/capaPrograma/novostempos/classicos.jpg" alt="Clássicos" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/classicos.jpg" alt="Clássicos" />
     <div class="row-fluid">
       <h2 class="span6">Clássicos inova com grandes óperas</h2>
       <a class="span6 link" href="http://cmais.com.br/classicos" title="Clássicos"><i class="seta"></i>cmais.com.br/classicos</a>
@@ -485,7 +485,7 @@
   
     <!-- grade -->
   <div class="row-fluid" id="gradeatual">
-    <img src="/portal/images/capaPrograma/novostempos/gradeatual.jpg" alt="Grade Atual" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/gradeatual.jpg" alt="Grade Atual" />
     <div class="row-fluid">
       <h2 class="span6">As novidades se somam às <br/>atrações atuais</h2>
     </div>
@@ -529,7 +529,7 @@
   
    <!-- segundatela -->
   <div class="row-fluid" id="segundatela">
-    <img src="/portal/images/capaPrograma/novostempos/segundatela.jpg" alt="Segunda Tela" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/segundatela.jpg" alt="Segunda Tela" />
     <div class="row-fluid">
       <h2 class="span6">Segunda Tela permite transmissão de conteúdos paralelos</h2>
       <a class="span6 link" href="http://cmais.com.br/jornaldacultura" title="Jornal da Cultura"><i class="seta"></i>cmais.com.br/jornaldacultura</a>
@@ -551,7 +551,7 @@
   
   <!-- vitrine -->
   <div class="row-fluid" id="revistavitrine">
-    <img src="/portal/images/capaPrograma/novostempos/revistavitrine.jpg" alt="Vitrine" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/revistavitrine.jpg" alt="Vitrine" />
     <div class="row-fluid">
       <h2 class="span6">Revista para iPad é nova ferramenta da Cultura</h2>
     </div>
@@ -573,7 +573,7 @@
   
   <!-- sitio -->
   <div class="row-fluid" id="sitio">
-    <img src="/portal/images/capaPrograma/novostempos/sitio.jpg" alt="Sítio do Pica Pau Amarelo" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/novostempos/sitio.jpg" alt="Sítio do Pica Pau Amarelo" />
     <div class="row-fluid">
       <h2 class="span6">Sítio do Picapau Amarelo completa grade de produções nacionais</h2>
     </div>
