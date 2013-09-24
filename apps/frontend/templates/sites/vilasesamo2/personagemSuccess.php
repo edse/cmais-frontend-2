@@ -39,7 +39,7 @@
         }
         ?>   
       
-      <h3><i class="sprite-icon-jogos-med"></i>Jogos</h3>
+      <h3><i class="sprite-icon-personagens-med"></i>Personagens</h3>
       
       <div class="span10 destaque-filtro">
         <article class="span6 atividade">
@@ -96,7 +96,7 @@
 
 <input type="hidden" id="filter-choice" value="">
 <nav id="page_nav">
-  <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais jogos<i class="sprite-icon-mais"></i></a>
+  <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
 </nav>
 <!--scripts-->
 
