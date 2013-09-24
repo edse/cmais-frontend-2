@@ -10,8 +10,6 @@
     ->execute();
   if(count($assets) >= 1)
     $asset = $assets[0];
-  
-  
 ?>
 
     <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
