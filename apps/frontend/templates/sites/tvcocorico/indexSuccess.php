@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug(); ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/geral.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $site->getSlug(); ?>.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <!-- TOPO CMAIS REDUZIDO-->
@@ -28,7 +28,7 @@
       <!--LOGO TVCOCORICO -->
       <h1>
         <a href="/tvcocorico" title="TV Cocórico" target="_self">
-          <img src="/portal/images/capaPrograma/cocoricoHome/logo-tv-cocorico.png" alt="TV Cocorico" />
+          <img src="http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/logo-tv-cocorico.png" alt="TV Cocorico" />
       </a>
       </h1>  
       <!--LOGO TVCOCORICO -->
@@ -41,14 +41,14 @@
       <div id="horario-tv">
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <a href="http://youtube.com/tvcocorico" target="_blank" title="Canal TV Cocoricó">
-          <img src="/portal/images/capaPrograma/cocoricoHome/youtube-tvcocorico.png" alt="TV Cocorico" />
+          <img src="http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/youtube-tvcocorico.png" alt="TV Cocorico" />
         </a>
       </div>
       <!-- HORARIO -->
       
       <!--VIDEO-->
       <div id="video-tv-cocorico">
-        <img src="/portal/images/capaPrograma/cocoricoHome/no_ar.jpg" />
+        <img src="http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/no_ar.jpg" />
       </div>
       <!--/VIDEO-->
       

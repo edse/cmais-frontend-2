@@ -1,12 +1,12 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
-<link href="/portal/tvratimbum/css/geral.css?nocache=123" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
-<script src="/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
+<link href="http://cmais.com.br/portal/tvratimbum/css/geral.css?nocache=123" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
 <script type="text/javascript">
   //carrocel
   $(function(){
@@ -185,7 +185,7 @@
             <label for="termos"><input type="radio" class="radio" id="termos" name="termos" />Declaro que li e estou de acordo comos <a href="#">Termos e Condições</a>.</label>
             
             <input type="submit" value="enviar" id="enviar" class="btn-enviar"/>
-            <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+            <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
              
           </form>
        
@@ -209,7 +209,7 @@
   </div>
 </div>
 
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     $('input#enviar').click(function() {

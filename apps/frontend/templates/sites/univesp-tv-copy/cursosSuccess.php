@@ -1,14 +1,14 @@
-<script type="text/javascript" src="/portal/js/coverflow/jquery-ui-1.8.9.custom.min.js"></script>
-<script type="text/javascript" src="/portal/js/coverflow/ui.coverflow.js"></script>
-<link type="text/css" href="/portal/js/coverflow/css/demos.css" rel="stylesheet" />	
-<script src="/portal/js/coverflow/sylvester.js" type="text/javascript"></script>
-<script src="/portal/js/coverflow/transformie.js" type="text/javascript"></script>
-<script src="/portal/js/fancybox/jquery.mousewheel-3.0.4.pack.js" type="text/javascript"></script>
-<script src="/portal/js/coverflow/app.js?a=2" type="text/javascript"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/coverflow/jquery-ui-1.8.9.custom.min.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/coverflow/ui.coverflow.js"></script>
+<link type="text/css" href="http://cmais.com.br/portal/js/coverflow/css/demos.css" rel="stylesheet" />	
+<script src="http://cmais.com.br/portal/js/coverflow/sylvester.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/js/coverflow/transformie.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/js/fancybox/jquery.mousewheel-3.0.4.pack.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/js/coverflow/app.js?a=2" type="text/javascript"></script>
 
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/2012.css" type="text/css" />
-<link href="/portal/univesptv/css/geral.css" type="text/css" rel="stylesheet" />
-<link href="/portal/css/tvcultura/sites/univesptv.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/2012.css" type="text/css" />
+<link href="http://cmais.com.br/portal/univesptv/css/geral.css" type="text/css" rel="stylesheet" />
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/univesptv.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript">
 	$(function(){	
 
@@ -117,10 +117,10 @@
 
         <div class="topo-programa">
           <?php /*
-          <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/univesptv/images/logo-univesptv.png" /></a></h2>
+          <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://cmais.com.br/portal/univesptv/images/logo-univesptv.png" /></a></h2>
 		   */
 		  ?>
-          <h2><img title="Univesp Online - Conhecimento como Bem Público" alt="Univesp Online - Conhecimento como Bem Público" src="/portal/univesptv/images/univesptvcursos_logo.png" /></h2>
+          <h2><img title="Univesp Online - Conhecimento como Bem Público" alt="Univesp Online - Conhecimento como Bem Público" src="http://cmais.com.br/portal/univesptv/images/univesptvcursos_logo.png" /></h2>
 		  <?php /*
           
           <?php if(isset($program) && $program->id > 0): ?>
@@ -135,7 +135,7 @@
           <!-- /horario -->
           <?php endif; ?>
 		  */ ?>
-		  <h3 style="float:right; padding-top:30px"><img title="Cursos Livres para Todos" alt="Cursos Livres para Todos" src="/portal/univesptv/images/univespcursos_livres.png" /></h3>
+		  <h3 style="float:right; padding-top:30px"><img title="Cursos Livres para Todos" alt="Cursos Livres para Todos" src="http://cmais.com.br/portal/univesptv/images/univespcursos_livres.png" /></h3>
         </div>
         
         <?php /*
@@ -245,13 +245,13 @@
             <!-- /DIREITA -->
             <!-- APOIO -->
 	          <ul id="apoio" class="grid3">
-	              <li><a href="http://www.desenvolvimento.sp.gov.br" class="governoSp"><img src="/portal/univesptv/images/logo-goversoSp.jpg" alt="Governo do Estado de S&atilde;o Paulo" /></a></li>
-	              <li><a href="http://www.fapesp.br" class="fapesp"><img src="/portal/univesptv/images/logo-fapesp.png" alt="FAPESP" /></a></li>
-	              <li><a href="http://www.unicamp.br" class="unicamp"><img src="/portal/univesptv/images/logo-unicamp.png" alt="UNICAMP" /></a></li>
-	              <li><a href="http://www.unesp.br" class="unesp"><img src="/portal/univesptv/images/logo-unesp.png" alt="UNESP" /></a></li>
-	              <li><a href="http://www.usp.br" class="usp"><img src="/portal/univesptv/images/logo-usp.png" alt="USP" /></a></li>
-	              <li><a href="http://www.fundap.sp.gov.br" class="fundap"><img src="/portal/univesptv/images/logo-fundap.jpg" alt="FUNDAP" /></a></li>
-	              <li><a href="http://www.centropaulasouza.sp.gov.br" class="cps"><img src="/portal/univesptv/images/logo-cps.png" alt="Centro Paula Souza" /></a></li>
+	              <li><a href="http://www.desenvolvimento.sp.gov.br" class="governoSp"><img src="http://cmais.com.br/portal/univesptv/images/logo-goversoSp.jpg" alt="Governo do Estado de S&atilde;o Paulo" /></a></li>
+	              <li><a href="http://www.fapesp.br" class="fapesp"><img src="http://cmais.com.br/portal/univesptv/images/logo-fapesp.png" alt="FAPESP" /></a></li>
+	              <li><a href="http://www.unicamp.br" class="unicamp"><img src="http://cmais.com.br/portal/univesptv/images/logo-unicamp.png" alt="UNICAMP" /></a></li>
+	              <li><a href="http://www.unesp.br" class="unesp"><img src="http://cmais.com.br/portal/univesptv/images/logo-unesp.png" alt="UNESP" /></a></li>
+	              <li><a href="http://www.usp.br" class="usp"><img src="http://cmais.com.br/portal/univesptv/images/logo-usp.png" alt="USP" /></a></li>
+	              <li><a href="http://www.fundap.sp.gov.br" class="fundap"><img src="http://cmais.com.br/portal/univesptv/images/logo-fundap.jpg" alt="FUNDAP" /></a></li>
+	              <li><a href="http://www.centropaulasouza.sp.gov.br" class="cps"><img src="http://cmais.com.br/portal/univesptv/images/logo-cps.png" alt="Centro Paula Souza" /></a></li>
 	          </ul>
 	          <!-- APOIO -->
           </div>

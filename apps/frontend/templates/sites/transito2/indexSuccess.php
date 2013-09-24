@@ -1,6 +1,6 @@
 
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
-<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
 
 <?php
   $xmlTransitoAgoraCET = file_get_contents('http://cetsp1.cetsp.com.br/monitransmapa/xmltransitoagora.asp');
@@ -458,65 +458,65 @@
                             <td>A.Senna/Castelo<br></td>
                             <td>18.5</td>
                             <td>28,3% </td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
                           </tr>
                           <tr class="table-cor2">
                             <td >Castelo/A.Senna</td>
                             <td>22.6</td>
                             <td>2,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
                           </tr>
                           <tr class="table-cor1">
                             <td  class="sbesquerda table-av" rowspan="2">2 - Marginal Pinheiros</td>
                             <td>Castelo/Interlagos</td>
                             <td>18.5</td>
                             <td>28,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
                           </tr>
                           <tr class="table-cor2">
                             <td>Interlagos/Castelo</td>
                             <td>22.6</td>
                             <td>2,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
                           </tr>
                           <tr  class="table-cor1">
                             <td class="sbesquerda table-av" rowspan="2">3 - Bandeirantes</td>
                             <td>Imigrantes/Marginal</td>
                             <td>18.5</td>
                             <td>28,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
                           </tr>
                           <tr class="table-cor2">
                             <td>Marginal/Imigrantes</td>
                             <td>22.6</td>
                             <td>2,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png"></td>
                           </tr>
                           <tr  class="table-cor1">
                             <td class="sbesquerda table-av" rowspan="2">4 - Eixo Norte-Sul</td>
                             <td>Aeroporto/Santana</td>
                             <td>18.5</td>
                             <td>28,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
                           </tr>
                           <tr class="table-cor2">
                             <td>Santana/Aeroporto</td>
                             <td>22.6</td>
                             <td>2,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
                           </tr>
                           <tr  class="table-cor1">
                             <td class="sbesquerda sbembaixo table-av" rowspan="2">5 - Eixo Leste-Oeste</td>
                             <td>Lapa/Penha</td>
                             <td>18.5</td>
                             <td>28,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png"></td>
                           </tr>
                           <tr  class="table-cor2">
                             <td class="sbembaixo">Penha/Lapa</td>
                             <td class="sbembaixo">22.6</td>
                             <td class="sbembaixo">2,3%</td>
-                            <td class="sbembaixo sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
+                            <td class="sbembaixo sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
                           </tr>
                         </table> 
                       

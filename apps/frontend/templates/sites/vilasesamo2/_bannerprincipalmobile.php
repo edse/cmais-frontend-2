@@ -11,32 +11,32 @@
           <ul class="slider-target">
             <li>
               <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
               </a>
             </li>
             <li>
               <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
               </a>
             </li>
             <li>
               <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
               </a>
             </li>
             <li>
               <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
               </a>
             </li>
             <li>
               <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
               </a>
             </li>
             <li>
               <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
               </a>
             </li>
           </ul>
@@ -68,9 +68,9 @@
   <!--/seletor carrossel-->   
 </section>
 <!--scripts e css carrossel-->
-<script type="text/javascript" src="/portal/js/modernizr/modernizr.min.js"></script>
-<script type="text/javascript" src="/portal/js/hammer.min.js"></script>
-<script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
 <script>
 //carrossel mobile
 var total=0;

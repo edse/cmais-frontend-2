@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/geral2.css?a=11234" type="text/css" />
     <link href="http://cmais.com.br/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
     <!--[if IE]>
-      <link rel="stylesheet" type="text/css" href="/portal/css/ie-only.css" />
+      <link rel="stylesheet" type="text/css" href="http://cmais.com.br/portal/css/ie-only.css" />
     <![endif]-->
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
@@ -26,7 +26,7 @@
 
     <!-- scripts -->
     <script src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-    <!--script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script-->
+    <!--script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script-->
     <script type="text/javascript" src="http://cmais.com.br/portal/js/portal.js"></script>
     
     <script type="text/javascript" src="http://cmais.com.br/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>

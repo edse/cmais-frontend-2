@@ -123,14 +123,14 @@
         <p>escolha por personagem<span class="sprite-seta-down"></span></p>
         
         <ul class="filtro-personagem">
-          <li><a href="javascript:;" title="" data-filter=".bel"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
-          <li><a href="javascript:;" title="" data-filter=".beto"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
-          <li><a href="javascript:;" title="" data-filter=".come-come"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
-          <li><a href="javascript:;" title="" data-filter=".elmo"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
-          <li><a href="javascript:;" title="" data-filter=".enio"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
-          <li><a href="javascript:;" title="" data-filter=".garibaldo"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
-          <li><a href="javascript:;" title="" data-filter=".grover"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
-          <li><a href="javascript:;" title="" data-filter=".zoe"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
+          <li><a href="javascript:;" title="" data-filter=".bel"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
+          <li><a href="javascript:;" title="" data-filter=".beto"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
+          <li><a href="javascript:;" title="" data-filter=".come-come"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
+          <li><a href="javascript:;" title="" data-filter=".elmo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
+          <li><a href="javascript:;" title="" data-filter=".enio"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
+          <li><a href="javascript:;" title="" data-filter=".garibaldo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
+          <li><a href="javascript:;" title="" data-filter=".grover"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
+          <li><a href="javascript:;" title="" data-filter=".zoe"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
         </ul>
       </nav>
     </div>
@@ -141,15 +141,15 @@
 
   <section class="todos-itens ">
     <ul  id="container-lista" class="row-fluid">
-      <li class="span4 jogo"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 video"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 atividade"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 jogo"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 video"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 atividade"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 jogo"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 video"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 atividade"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 jogo"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 video"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 atividade"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 jogo"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 video"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 atividade"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 jogo"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 video"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 atividade"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
     </ul>
   </section>
   

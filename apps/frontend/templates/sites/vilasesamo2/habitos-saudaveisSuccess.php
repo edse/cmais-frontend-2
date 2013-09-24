@@ -1,6 +1,6 @@
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <script>
   $("body").addClass("interna bg-incluir");
 
@@ -38,14 +38,14 @@
         </button>
       </div>
       <div class="span4 box-select">
-        <a href="#" title=""> <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="thumb do jogo" /> </a>
+        <a href="#" title=""> <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="thumb do jogo" /> </a>
         <h2><a>Nome jogo</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend.</p>
       </div>
       <div class="span4">
         <p>Conheça nossos parceiros:</p>
-        <a class="publicidade" href="#" title="Publicidade"> <img src="/portal/images/capaPrograma/vilasesamo2/banner-sesc.png" alt="Sesc" /> </a>
-        <a class="publicidade" href="#" title="Publicidade"> <img src="/portal/images/capaPrograma/vilasesamo2/banner-mapa.png" alt="Mapa do Brincar" /> </a>
+        <a class="publicidade" href="#" title="Publicidade"> <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner-sesc.png" alt="Sesc" /> </a>
+        <a class="publicidade" href="#" title="Publicidade"> <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner-mapa.png" alt="Mapa do Brincar" /> </a>
         <p>Você também pode escolher o jogo de acordo com as preferências da criança:</p>
         <div class="btn-group">
           <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
@@ -65,15 +65,15 @@
   <span class="divisa"></span>
   <section class="todos-itens ">
     <ul  id="container-lista" class="row-fluid">
-      <li class="span4 jogo"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 video"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 atividade"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 jogo"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 video"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 atividade"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 jogo"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 video"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 atividade"><a href="#" title=""><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 jogo"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 video"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 atividade"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 jogo"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 video"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 atividade"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 jogo"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 video"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 atividade"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
     </ul>
   </section>
   <span class="divisa"></span>
@@ -83,6 +83,6 @@
   <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais-laranja"></i></a>
 </nav>
 <!--scripts-->
-<script src="/portal/js/isotope/jquery.isotope.min.js"></script>
-<script src="/portal/js/isotope/jquery.infinitescroll.min.js"></script>
-<script src="/portal/js/vilasesamo2/internas-isotope.js"></script>
+<script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
+<script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script>
+<script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>

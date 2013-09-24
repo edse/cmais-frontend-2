@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/aovivo.css" type="text/css" />
-<link type="text/css" href="/portal/univesptv/css/geral.css" rel="stylesheet" /> 
-<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>  
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/aovivo.css" type="text/css" />
+<link type="text/css" href="http://cmais.com.br/portal/univesptv/css/geral.css" rel="stylesheet" /> 
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>  
 <style>
 #direita { margin-top:0;}
 #esquerda .stream {float: left; margin-top: 5px;}
@@ -57,7 +57,7 @@
 
       <!-- BARRA SITE -->
       <div id="barra-site">
-         <h2 class="grid3"><img style="float:left;" src="/portal/images/capaPrograma/logo-univesptv.png" alt="Univesp TV" title="Univesp TV" /></h2>
+         <h2 class="grid3"><img style="float:left;" src="http://cmais.com.br/portal/images/capaPrograma/logo-univesptv.png" alt="Univesp TV" title="Univesp TV" /></h2>
 
         <!-- box-topo -->
         <div class="box-topo grid3">
@@ -122,13 +122,13 @@
             
             <!-- APOIO -->
           <ul id="apoio" class="grid3">
-              <li><a href="http://www.desenvolvimento.sp.gov.br" class="governoSp"><img src="/portal/univesptv/images/logo-goversoSp.jpg" alt="Governo do Estado de S&atilde;o Paulo" /></a></li>
-              <li><a href="http://www.fapesp.br" class="fapesp"><img src="/portal/univesptv/images/logo-fapesp.png" alt="FAPESP" /></a></li>
-              <li><a href="http://www.unicamp.br" class="unicamp"><img src="/portal/univesptv/images/logo-unicamp.png" alt="UNICAMP" /></a></li>
-              <li><a href="http://www.unesp.br" class="unesp"><img src="/portal/univesptv/images/logo-unesp.png" alt="UNESP" /></a></li>
-              <li><a href="http://www.usp.br" class="usp"><img src="/portal/univesptv/images/logo-usp.png" alt="USP" /></a></li>
-              <li><a href="http://www.fundap.sp.gov.br" class="fundap"><img src="/portal/univesptv/images/logo-fundap.jpg" alt="FUNDAP" /></a></li>
-              <li><a href="http://www.centropaulasouza.sp.gov.br" class="cps"><img src="/portal/univesptv/images/logo-cps.png" alt="Centro Paula Souza" /></a></li>
+              <li><a href="http://www.desenvolvimento.sp.gov.br" class="governoSp"><img src="http://cmais.com.br/portal/univesptv/images/logo-goversoSp.jpg" alt="Governo do Estado de S&atilde;o Paulo" /></a></li>
+              <li><a href="http://www.fapesp.br" class="fapesp"><img src="http://cmais.com.br/portal/univesptv/images/logo-fapesp.png" alt="FAPESP" /></a></li>
+              <li><a href="http://www.unicamp.br" class="unicamp"><img src="http://cmais.com.br/portal/univesptv/images/logo-unicamp.png" alt="UNICAMP" /></a></li>
+              <li><a href="http://www.unesp.br" class="unesp"><img src="http://cmais.com.br/portal/univesptv/images/logo-unesp.png" alt="UNESP" /></a></li>
+              <li><a href="http://www.usp.br" class="usp"><img src="http://cmais.com.br/portal/univesptv/images/logo-usp.png" alt="USP" /></a></li>
+              <li><a href="http://www.fundap.sp.gov.br" class="fundap"><img src="http://cmais.com.br/portal/univesptv/images/logo-fundap.jpg" alt="FUNDAP" /></a></li>
+              <li><a href="http://www.centropaulasouza.sp.gov.br" class="cps"><img src="http://cmais.com.br/portal/univesptv/images/logo-cps.png" alt="Centro Paula Souza" /></a></li>
           </ul>
           <!-- APOIO -->
             

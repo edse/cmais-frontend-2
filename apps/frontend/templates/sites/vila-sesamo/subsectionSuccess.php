@@ -6,7 +6,7 @@
 
 <?php use_helper('I18N', 'Date') ?>
 
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <!-- 2 -->
 
 <script>
@@ -76,7 +76,7 @@
         <p>escolha o jogo por personagem<span class="sprite-seta-down"></span></p>
         <ul class="filtro-personagem">
           <?php foreach($personagens as $k=>$p): ?>
-          <li><a href="#" title="<?php echo $p->getTitle() ?>" data-filter=".<?php echo $p->getSlug() ?>"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="<?php echo $p->getTitle() ?>" /></a></li>
+          <li><a href="#" title="<?php echo $p->getTitle() ?>" data-filter=".<?php echo $p->getSlug() ?>"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="<?php echo $p->getTitle() ?>" /></a></li>
           <?php endforeach; ?>
         </ul>
       </nav>
@@ -125,7 +125,7 @@
 </nav-->
 <!--scripts-->
 
-<script src="/portal/js/isotope/jquery.isotope.min.js"></script>
-<!--script src="/portal/js/isotope/jquery.infinitescroll.min.js"></script-->
-<script src="/portal/js/vilasesamo2/internas-isotope.js"></script>
+<script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
+<!--script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script-->
+<script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 

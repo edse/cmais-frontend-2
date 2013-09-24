@@ -1,6 +1,6 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
-<script type="text/javascript" src="/portal/js/redirect_mobile.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/redirect_mobile.js"></script>
 <!-- CAPA SITE -->
 <div id="capa-site">
   <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"]))  ?>
@@ -29,7 +29,7 @@
 
     <!-- CONTEUDO PAGINA -->
     <div id="conteudo-pagina">
-      <link rel="stylesheet" href="/portal/css/tvcultura/sites/home-madmen.css" type="text/css" />
+      <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/home-madmen.css" type="text/css" />
       <div class="detalhe esq"></div>
       <div class="detalhe dir"></div>
       <!--
@@ -46,9 +46,9 @@
       <!-- DESTAQUE 5C -->
       <div class="novoDestaque">
         <div id="topo-destaque">
-          <a class="banner-topo" href="http://tvcultura.cmais.com.br/madmen" title="Mad Men"><img src="/portal/images/capaPrograma/home-madmen/img-topo.jpg" alt="Mad Men" /></a>
+          <a class="banner-topo" href="http://tvcultura.cmais.com.br/madmen" title="Mad Men"><img src="http://cmais.com.br/portal/images/capaPrograma/home-madmen/img-topo.jpg" alt="Mad Men" /></a>
           <div class="logo">
-            <a class="logo" href="http://tvcultura.cmais.com.br/madmen" title="Mad Men"><img src="/portal/images/capaPrograma/home-madmen/logomadmen.png" alt="Mad Men" /></a>
+            <a class="logo" href="http://tvcultura.cmais.com.br/madmen" title="Mad Men"><img src="http://cmais.com.br/portal/images/capaPrograma/home-madmen/logomadmen.png" alt="Mad Men" /></a>
             <p>estreia 24 de abril | Quarta, às 22h</p>
           </div>
         </div>

@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
-<!--link rel="stylesheet" href="/portal/css/tvcultura/sites/doctorwho-home.css" type="text/css" /-->
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/cocorico-home.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/geral.css" type="text/css" />
+<!--link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/doctorwho-home.css" type="text/css" /-->
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico-home.css" type="text/css" />
 <!-- teste -->
 
 
@@ -16,7 +16,7 @@
       <!-- banner -->
       <div class="banner">
         <a href="http://cmais.com.br/tvcocorico" target="_blank" title="TV Cocoricó">
-          <img src="/portal/images/capaPrograma/cocoricoHome/img-topo-logo.png" alt="TV Cocoricó"/>
+          <img src="http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/img-topo-logo.png" alt="TV Cocoricó"/>
         </a>
         <?php /*
         <h2><a href="http://tvcultura.cmais.com.br">Tv Cultura</a></h2>

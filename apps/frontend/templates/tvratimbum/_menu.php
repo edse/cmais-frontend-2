@@ -53,7 +53,7 @@
         </div>
         <!--destaque imagem >
         <a href=" http://tvratimbum.cmais.com.br/especial/dia-dos-pais-super-poderosos" title="Dia dos Pais Super-poderosos" class="btn-destaque-topo">
-          <img class="destaqueTopo" src="/portal/tvratimbum/image/topo_pais_tvrtb.png" alt="A TV que cresce com você!" />
+          <img class="destaqueTopo" src="http://cmais.com.br/portal/tvratimbum/image/topo_pais_tvrtb.png" alt="A TV que cresce com você!" />
         </a>
         <!--/destaque imagem -->
         <!-- destaque antigo ul-->
@@ -82,25 +82,25 @@
         
           <!-- destaque antigo ul>
             <li>
-              <img src="/portal/tvratimbum/image/btn-missaominuto.png" usemap="#missao"/>
+              <img src="http://cmais.com.br/portal/tvratimbum/image/btn-missaominuto.png" usemap="#missao"/>
               <map name="missao" id="missao">
                 <area title="Missão Minuto Rá Tim Bum" alt="Missão Minuto Rá Tim Bum" shape="circle" coords="109,110,99" href="/missao-minuto" />
               </map>
             </li>
             <li>
-              <img src="/portal/tvratimbum/image/btn-seupedido.png" usemap="#speuo"/>
+              <img src="http://cmais.com.br/portal/tvratimbum/image/btn-seupedido.png" usemap="#speuo"/>
               <map name="speuo" id="speuo">
                 <area title="Seu pedido é uma ordem" alt="Seu pedido é uma ordem" shape="circle" coords="109,110,99" href="/seu-pedido-e-uma-ordem" />
               </map>
             </li>
             <li>
-              <img src="/portal/tvratimbum/image/btn-ideiasmirabolantes.png" usemap="#ideia"/>
+              <img src="http://cmais.com.br/portal/tvratimbum/image/btn-ideiasmirabolantes.png" usemap="#ideia"/>
               <map name="ideia" id="ideia">
                 <area title="Ideias mirabolantes para melhorar o mundo" alt="Ideias mirabolantes para melhorar o mundo" shape="circle" coords="109,110,99" href="/ideias-mirabolantes" />
               </map>
             </li>
             <li>
-              <img src="/portal/tvratimbum/image/btn-sessaopiada.png" usemap="#piada"/>
+              <img src="http://cmais.com.br/portal/tvratimbum/image/btn-sessaopiada.png" usemap="#piada"/>
               <map name="piada" id="piada">
                 <area title="Sessão Piada Rá Tim Bum" alt="Sessão Piada Rá Tim Bum" shape="circle" coords="109,110,99" href="/piadas" />
               </map>
