@@ -41,7 +41,7 @@
             </article>
           </div>
           <div class="tab-pane" id="episodios">
-            carrossel
+            carrossel 
             
           </div>
           
