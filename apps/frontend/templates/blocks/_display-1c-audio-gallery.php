@@ -2,7 +2,7 @@
               <?php if(count($displays) > 0): ?>
 
               <?php if($displays[0]->Asset->AssetType->getSlug() == "content" || $displays[0]->Asset->AssetType->getSlug() == "audio-gallery"): ?>
-                <?php $audioAssets = $displays[0]->Asset->retriveRelatedAssetsByAssetTypeId(4); ?>
+                <?php $audioAssets = $displays[0]->Asset->retriveRelatedAssetsByAssetTypeId22(4); ?>
               <?php endif; ?>
 
               <!-- BOX PADRAO Noticia -->
