@@ -1,6 +1,13 @@
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/layer-slider/model06/jquery.layerSlider.css">
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/layer-slider/model06/main.css">
+
+<link type="text/css" rel="stylesheet" href="http:/cmais.com.br//portal/js/responsive-carousel/style-vilasesamo.css"/>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
+
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <script>
   $("body").addClass("interna personagens");
 </script>
@@ -18,9 +25,9 @@
             // Any tablet device.
       ?> 
          <!--script--> 
-         <script type="text/javascript" src="/portal/js/smint/jquery.smint.js"></script>  
-         <script type="text/javascript" src="/portal/js/superscrollorama/greensock/TweenMax.min.js"></script> 
-         <script type="text/javascript" src="/portal/js/superscrollorama/jquery.superscrollorama.js"></script>
+         <script type="text/javascript" src="http://cmais.com.br/portal/js/smint/jquery.smint.js"></script>  
+         <script type="text/javascript" src="http://cmais.com.br/portal/js/superscrollorama/greensock/TweenMax.min.js"></script> 
+         <script type="text/javascript" src="http://cmais.com.br/portal/js/superscrollorama/jquery.superscrollorama.js"></script>
          
          <section class="scroll barra-topo row-fluid" >
            <a href="#content"></a>
@@ -55,32 +62,32 @@
           <ul class="slider-target">
             <li>
               <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
               </a>
             </li>
             <li>
               <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
               </a>
             </li>
             <li>
               <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
               </a>
             </li>
             <li>
               <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
               </a>
             </li>
             <li>
               <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
               </a>
             </li>
             <li>
               <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                <img src="/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
               </a>
             </li>
           </ul>
@@ -155,14 +162,14 @@
 </nav>
 <!--scripts-->
 
-<script src="/portal/js/isotope/jquery.isotope.min.js"></script>
-<script src="/portal/js/isotope/jquery.infinitescroll.min.js"></script>
-<script src="/portal/js/vilasesamo2/internas-isotope.js"></script>
+<script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
+<script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script>
+<script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 
 <!--scripts e css carrossel-->
-<script type="text/javascript" src="/portal/js/modernizr/modernizr.min.js"></script>
-<script type="text/javascript" src="/portal/js/hammer.min.js"></script>
-<script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
 <script>
 //carrossel mobile
 var total=0;
