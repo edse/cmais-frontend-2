@@ -1,13 +1,13 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/arraiacultura.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/arraiacultura.css" type="text/css" />
 
 
 
 <!--FANCYBOX-->
-<script type="text/javascript" src="/portal/js/fancybox2.1.4/jquery.fancybox.pack.js" ></script>
-<script type="text/javascript" src="/portal/js/fancybox2.1.4/helpers/jquery.fancybox-media.js" ></script>
-<link rel="stylesheet" href="/portal/js/fancybox2.1.4/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox2.1.4/jquery.fancybox.pack.js" ></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox2.1.4/helpers/jquery.fancybox-media.js" ></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/fancybox2.1.4/jquery.fancybox.css" type="text/css" media="screen" />
 <!--/FANCYBOX-->
 <link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/js/audioplayer/jplayer_min.js"></script>
@@ -166,7 +166,7 @@
 </div>
 <!-- /CAPA SITE -->
 <!--fancybox-->
-<script type="text/javascript" src="/portal/js/jquery-instagram/jquery.instagram.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-instagram/jquery.instagram.js"></script>
 <script>
 
 var url = new Array;

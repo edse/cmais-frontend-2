@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/contato.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 
 <script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
 <script type="text/javascript">
@@ -123,7 +123,7 @@
                   <?php include_partial_from_folder('blocks','global/display-2c', array('displays' => $displays["videos"])) ?>
                 </div>
                 <div id="liveStream" style="display:none">
-                  <embed type="application/x-shockwave-flash" src="/portal/js/mediaplayer/player.swf" width="640" height="364" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=tv&amp;type=video" />
+                  <embed type="application/x-shockwave-flash" src="http://cmais.com.br/portal/js/mediaplayer/player.swf" width="640" height="364" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=tv&amp;type=video" />
                 </div>
               </div>
               <!-- /DESTAQUE 2 COLUNAS -->
@@ -246,7 +246,7 @@
                       <label class="msg" for="captcha">Digite no campo abaixo os caracteres que voc&ecirc;<br/> v&ecirc; na imagem:</label>
  					  <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
                       <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
-                      <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                      <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                     </div>                                 
                   </form>
                 </div>	              	         	

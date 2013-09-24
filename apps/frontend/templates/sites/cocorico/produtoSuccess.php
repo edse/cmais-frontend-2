@@ -133,7 +133,7 @@
   })();
 </script>
 <!--tooltip estilizado-->
-<script type="text/javascript" src="/portal/js/jquery-tooltip/jquery.tooltip.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-tooltip/jquery.tooltip.js"></script>
 <script type="text/javascript">
 $('#produto-grid').tooltip({ 
     track: true, 

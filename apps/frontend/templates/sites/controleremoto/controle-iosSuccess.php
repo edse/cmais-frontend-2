@@ -7,17 +7,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!--bootstrap-->
-    <link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="/portal/css/tvcultura/sites/controleremoto/normalize.css" rel="stylesheet">
-    <link href="/portal/css/tvcultura/sites/controleremoto/player.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/css/tvcultura/sites/controleremoto/normalize.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/css/tvcultura/sites/controleremoto/player.css" rel="stylesheet">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!--/bootstrap-->
-    <!--<script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>-->
-    <script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
+    <!--<script src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>-->
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
     <!-- banner-->
     <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
     <script type='text/javascript'>
@@ -31,7 +31,7 @@
       GA_googleFetchAds();
     </script>
     <!-- /banner-->
-    <script src="/portal/js/bootstrap/jquery.js"></script>
+    <script src="http://cmais.com.br/portal/js/bootstrap/jquery.js"></script>
     <link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="http://cmais.com.br/js/audioplayer/jquery.jplayer.min.js"></script>
     
@@ -41,7 +41,7 @@
     <div id="controle-remoto" class="container">
       <!--header controle remoto -->
       <div id="header">
-        <img class="imgHeader"src="/portal/images/capaPrograma/controleremoto/header-controleremoto.jpg" alt="Controle Remoto" class="header-jpg"/>
+        <img class="imgHeader"src="http://cmais.com.br/portal/images/capaPrograma/controleremoto/header-controleremoto.jpg" alt="Controle Remoto" class="header-jpg"/>
       </div>
 
       <!--radios-->
@@ -196,7 +196,7 @@
       <!--banner-->
       <div class="row">
         <!--a class="destaque">
-          <img src="/portal/images/capaPrograma/controleremoto/destaque.jpg" alt="destaque" />
+          <img src="http://cmais.com.br/portal/images/capaPrograma/controleremoto/destaque.jpg" alt="destaque" />
         </a-->
         <!-- banner-controle-remoto -->
         <script type='text/javascript'>
@@ -239,8 +239,8 @@
     <!-- bootstrap -->
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
-    <script src="/portal/js/bootstrap/modal.js"></script>
-    <script src="/portal/js/bootstrap/collapse.js"></script>
+    <script src="http://cmais.com.br/portal/js/bootstrap/modal.js"></script>
+    <script src="http://cmais.com.br/portal/js/bootstrap/collapse.js"></script>
     <!-- /bootstrap -->
     <!--Modal-->
     <div id="modalAjuda" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

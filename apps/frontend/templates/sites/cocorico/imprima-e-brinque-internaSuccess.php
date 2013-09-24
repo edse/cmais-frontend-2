@@ -188,7 +188,7 @@
 
 <!--tooltip estilizado-->
 <!--
-<script type="text/javascript" src="/portal/js/jquery-tooltip/jquery.tooltip.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-tooltip/jquery.tooltip.js"></script>
 <script type="text/javascript">
 $('.conteudo').tooltip({ 
     extraClass:"tp-imprimir"

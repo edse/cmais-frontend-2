@@ -9,8 +9,8 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/portal/css/geral.css?nocache=1234" type="text/css" />
-    <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css?a=1" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css?nocache=1234" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/geral2.css?a=1" type="text/css" />
     <link rel="stylesheet" href="http://172.20.17.129/radar2012/css/radarcultura.css" type="text/css" />    
     <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
@@ -27,7 +27,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./bootstrap/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="./bootstrap/ico/apple-touch-icon-57-precomposed.png">
     
-    <script src="/portal/js/jquery-1.7.2.min.js"></script>
+    <script src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js"></script>
     <script src="/radar2012/bootstrap/js/bootstrap.js"></script>
     <style type="text/css">
       .row { width: 415px; }

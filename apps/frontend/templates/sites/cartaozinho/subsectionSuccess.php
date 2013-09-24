@@ -293,7 +293,7 @@ $(function(){
                 <div class="topo">
                   <span></span>
                   <div class="capa-titulo">
-                    <img src="/portal/images/capaPrograma/cartaozinho/txtarquivo.png" />
+                    <img src="http://cmais.com.br/portal/images/capaPrograma/cartaozinho/txtarquivo.png" />
                   </div>
                 </div>
                 <div id="datepicker"></div>

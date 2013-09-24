@@ -202,13 +202,13 @@
                   	  <label for="captcha">Confirmação</label>
                       <br />
                       <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
-                        <img src="/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
+                        <img src="http://cmais.com.br/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
                       </a>
                       <label class="msg" for="captcha">Digite no campo abaixo os caracteres que você vê na imagem:</label>
  					  <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
                       <br />
                       <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
-                      <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                      <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                     </div>                                 
                   </form>
 	         	</div>	              	         		

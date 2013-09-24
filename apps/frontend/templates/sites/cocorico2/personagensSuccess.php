@@ -1,4 +1,4 @@
-<link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 <style type="text/css">
 /* tooltip*/
 .tooltip-inner { background:#747a3a; padding:3px 10px; font-size: 13px; line-height:15px; margin-top:-5px; }

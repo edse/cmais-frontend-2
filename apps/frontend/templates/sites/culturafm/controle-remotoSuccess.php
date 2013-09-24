@@ -74,7 +74,7 @@
   <body>
     <div id="bg">
       <div id="logo">
-        <img id="logo_img" src="/portal/images/capaPrograma/culturafm/logo-cultura-fm.png" />
+        <img id="logo_img" src="http://cmais.com.br/portal/images/capaPrograma/culturafm/logo-cultura-fm.png" />
       </div>
       <div id="player">
         <div id="jquery_jplayer_1" class="jp-jplayer"></div>
@@ -106,7 +106,7 @@
         </div>
       </div>
       <div id="botao">
-        <a href="http://culturafm.cmais.com.br?w=1" alt="Versão web" title="Versão web"><img id="btn_img" src="/portal/images/capaPrograma/culturafm/btn-versao-web.png" /></a>
+        <a href="http://culturafm.cmais.com.br?w=1" alt="Versão web" title="Versão web"><img id="btn_img" src="http://cmais.com.br/portal/images/capaPrograma/culturafm/btn-versao-web.png" /></a>
       </div>
       <!--
       <div id="ad">

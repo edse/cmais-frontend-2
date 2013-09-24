@@ -182,6 +182,6 @@ ciências</a></li>
             </div> 
             <!-- /RODAPE -->
 		</div>
-		<script src="/portal/cocorico/3d/js/google-analytics.js" type="text/javascript"></script>        
+		<script src="http://cmais.com.br/portal/cocorico/3d/js/google-analytics.js" type="text/javascript"></script>        
     </body>
 </html>

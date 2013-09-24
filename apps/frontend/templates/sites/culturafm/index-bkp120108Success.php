@@ -1,6 +1,6 @@
-<script type="text/javascript" src="/portal/js/culturafm.js"></script>
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
-<script type="text/javascript" src="/portal/js/swfobject/swfobject.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/culturafm.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/swfobject/swfobject.js"></script>
 <?php use_helper('I18N', 'Date')
 ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))
@@ -55,7 +55,7 @@
     <!-- remover esta linha depois q acabar campanha da radio -->
     <div class="topo-programa" id="home" style="height:313px; ">
       <!-- descomentar esta linha depois q acabar campanha da radio -->
-      <!--h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/images/capaPrograma/culturafm/logo.png"></a></h2-->
+      <!--h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://cmais.com.br/portal/images/capaPrograma/culturafm/logo.png"></a></h2-->
       <?php if(isset($program) && $program->id > 0):
       ?>
       <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program))
@@ -66,7 +66,7 @@
       <div id="horario" style="margin-top:10px;">
         <a href="javascript: window.open('http://culturafm.cmais.com.br/controleremoto','controle','width=400,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
       </div>
-      <img style="position: absolute; left: 0px;*left:0px;" usemap="#cultura" src="/portal/images/capaPrograma/culturafm/destaqueDEZEMBRO.png" title="Fim de ano na TV Cultura com música clássica" alt="Fim de ano na TV Cultura com música clássica" >
+      <img style="position: absolute; left: 0px;*left:0px;" usemap="#cultura" src="http://cmais.com.br/portal/images/capaPrograma/culturafm/destaqueDEZEMBRO.png" title="Fim de ano na TV Cultura com música clássica" alt="Fim de ano na TV Cultura com música clássica" >
       <map name="cultura" id="cultura">
         <area shape="poly" coords="4,305,2,4,418,2,880,80,968,100,966,304" href="http://cmais.com.br/fim-de-ano-na-tv-cultura-com-musica-classica" title="Fim de ano na TV Cultura com música clássica" target="_blank"/>
       </map>

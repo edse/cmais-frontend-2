@@ -155,7 +155,7 @@ $(function(){
             <?php /*if(isset($displays['destaque-principal'])): ?>
           <?php if(count($displays['destaque-principal']) > 0): ?>
             <h2>Concurso Cultural</h2>
-            <img class="promocao" src="/portal/images/capaPrograma/cocorico/destaque-concurso-encerrado.jpg" />
+            <img class="promocao" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/destaque-concurso-encerrado.jpg" />
             <?php
             
             <div class="destaque span12" style="position:relative;">
@@ -290,7 +290,7 @@ $(function(){
             <p>3.4 A simples participação neste evento de incentivo à criatividade implica no total conhecimento e aceitação irrestrita deste regulamento.</p>
             <p>3.5 Os desenhos serão publicados no site <a href="http://cocorico.com.br">cocorico.com.br</a> e os melhores poderão ser exibidos na programação da TV Cultura.</p>
           </div> 
-          <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+          <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           
           <label generated="true" class="error" style="display: none;">*Preencha corretamente os campos em vermelho.</label>
           
@@ -351,7 +351,7 @@ $(function(){
         <a href="<?php echo $site->retriveUrl(); ?>/tour-virtual" title="Tour Virtual">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/cocorico/destaque-tour-virtual.jpg" alt="Tour Virtual"/>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/destaque-tour-virtual.jpg" alt="Tour Virtual"/>
             </div>
             <span>Tour Virtual</span>
           </div>
@@ -363,7 +363,7 @@ $(function(){
         <a href="<?php echo $site->retriveUrl(); ?>/erros-de-gravacao" title="Erros de Gravação">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/cocorico/destaque-erro-gravacao.jpg" alt="Erros de Gravação"/>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/destaque-erro-gravacao.jpg" alt="Erros de Gravação"/>
             </div>
             <span>Erros de Gravação</span>
           </div>
@@ -375,7 +375,7 @@ $(function(){
         <a href="<?php echo $site->retriveUrl(); ?>/instagram" title="Instagram">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/cocorico/destaque-instagram.jpg" alt="Instagram"/>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/destaque-instagram.jpg" alt="Instagram"/>
             </div>
             <span>Instagram</span>
           </div>
@@ -507,8 +507,8 @@ $(function(){
 </div>
 <?php
 /*
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-<script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script>
 $(document).ready(function(){
   $('.btn-form').click(function(){

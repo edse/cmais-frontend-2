@@ -17,7 +17,7 @@ if(count($blocks) > 0){
 <div id="topo-central">
   <div class="row-fluid" style="position: relative;">
     <a href="http://fpa.com.br/central-de-relacionamento" class="pull-left logo-central" title="Fundação Padre Anchieta - Central de Relacionamento">
-      <img src="/portal/images/capaPrograma/central-de-relacionamento/logo-centralderelacionamento.png" border="0" />
+      <img src="http://cmais.com.br/portal/images/capaPrograma/central-de-relacionamento/logo-centralderelacionamento.png" border="0" />
     </a>
     <!--DESCRIÇÃO-->
     <div class="desc-site">

@@ -96,7 +96,7 @@ $(document).ready(function(){
                       </div>
                     </div>
                     <div class="botoes-form">
-                      <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader1" />
+                      <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader1" />
                       <button type="submit" class="btn btn-primary" id="btn1">Próximo Passo</button>
                     </div>
                   </fieldset>
@@ -275,7 +275,7 @@ $(document).ready(function(){
                     ?>
                     <div class="control-group">
                     <div class="botoes-form">
-                      <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader2" />
+                      <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader2" />
                       <button type="submit" class="btn btn-success" id="btn2">Enviar Cadastro</button>
                     </div>
                   </fieldset>
@@ -442,7 +442,7 @@ $(document).ready(function(){
                       </div>
                     </div><!-- /#maisinfo -->
                     <div class="botoes-form">
-                      <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader3" />
+                      <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader3" />
                       <button type="submit" class="btn btn-primary" id="btn3">Próximo Passo</button>
                       <button class="btn">Cancel</button>
                     </div>
@@ -670,7 +670,7 @@ $(document).ready(function(){
                       </div><!-- /#message -->
                       
                       <div class="botoes-form">
-                        <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader4" />
+                        <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader4" />
                         <button type="submit" class="btn btn-primary" id="btn4">Enviar Mensagem</button>
                         <button type="submit" class="btn btn-success" id="btn5" style="display:none">Salvar Cadastro</button>
                         <a type="submit" class="btn btn-danger" href="http://cmais.com.br/central-de-relacionamento" id="btn6">Cancelar</a>
@@ -802,9 +802,9 @@ $(document).ready(function(){
                 </div>
                 <!-- /row11 -->
                 <?php endif; ?>
-                <script src="/portal/js/validate/jquery.validate.min.js"></script>
-                <script src="/portal/js/messages_ptbr.js"></script>
-                <script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>
+                <script src="http://cmais.com.br/portal/js/validate/jquery.validate.min.js"></script>
+                <script src="http://cmais.com.br/portal/js/messages_ptbr.js"></script>
+                <script src="http://cmais.com.br/portal/js/jquery.maskedinput-1.3.min.js"></script>
                 <script>
                 
                 $(document).ready(function(){

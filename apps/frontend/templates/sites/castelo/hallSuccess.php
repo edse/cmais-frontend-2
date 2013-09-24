@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/hall.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/castelo/hall.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -15,8 +15,8 @@
     <div id="capa-site"> 
       
       <!--FANCYBOX-->
-      <script type="text/javascript" src="/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js" ></script>
-      <link rel="stylesheet" href="/portal/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+      <script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js" ></script>
+      <link rel="stylesheet" href="http://cmais.com.br/portal/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
       <!--/FANCYBOX-->     
      
 
@@ -29,7 +29,7 @@
           <h2>
             <a href="http://cmais.com.br/castelo" style="text-decoration: none;">
           
-                <img src="/portal/images/capaPrograma/castelo/img-logo-castelo.png" class="logo" alt="Castelo Ra Tim Bum" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/img-logo-castelo.png" class="logo" alt="Castelo Ra Tim Bum" />
               
             </a>
           </h2>
@@ -79,9 +79,9 @@
             <?php if(isset($displays["ratinho"])): ?>
               <?php if(count($displays["ratinho"]) > 0): ?>
             <!--ratinho-->
-              <img src="/portal/images/capaPrograma/castelo/gif-personagem-ratinho.gif" class="antena">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-ratinho.gif" class="antena">
               <div class="botao-ratinho">
-                <img class="gif-ratinho" src="/portal/images/capaPrograma/castelo/gif-personagem-ratinho.png" width="100%">
+                <img class="gif-ratinho" src="http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-ratinho.png" width="100%">
               </div>
               <script type="text/javascript">
               
@@ -106,10 +106,10 @@
             
             <!--NAVEGAÇÃO PG A PG-->
             <a href="/castelo/home" class="nav-Esquerda" title="Anterior" target="_self">
-              <img src="/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" style="display: none;" />
+              <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" style="display: none;" />
             </a>
             <a href="/castelo/arvore" class="nav-Direita" title="Próxima" target="_self">
-              <img src="/portal/images/capaPrograma/castelo/btn-tela-proxima.png" alt="Próxima Tela" style="display: none;"/>
+              <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-tela-proxima.png" alt="Próxima Tela" style="display: none;"/>
             </a>
             <!--/NAVEGAÇÃO PG A PG-->
             

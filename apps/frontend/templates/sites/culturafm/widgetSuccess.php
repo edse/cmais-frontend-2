@@ -1,6 +1,6 @@
 <script src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
 <a id="ouca" class="ouca controle-remoto" href="javascript:;">
-  <img src="/portal/images/capaPrograma/culturabrasil/oucaculturabrasil.jpg" alt="Ouça a rádio Cultura FM"/>
+  <img src="http://cmais.com.br/portal/images/capaPrograma/culturabrasil/oucaculturabrasil.jpg" alt="Ouça a rádio Cultura FM"/>
 </a>
 <script>
 $(document).ready(function(){

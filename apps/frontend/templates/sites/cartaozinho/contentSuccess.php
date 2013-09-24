@@ -159,7 +159,7 @@
               <div class="box-padrao content grid1">
                 <div class="topo claro">
                   <div class="capa-titulo">
-                    <img src="/portal/images/capaPrograma/cartaozinho/tit-relacionadas.png" />
+                    <img src="http://cmais.com.br/portal/images/capaPrograma/cartaozinho/tit-relacionadas.png" />
                     <a href="#" class="rss" title="rss"></a>
                   </div>
                 </div>
