@@ -41,20 +41,8 @@
             </article>
           </div>
           <div class="tab-pane" id="episodios">
-            <article class="span6 clipes">
-              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
-                <span class="sprite-selo">Novidade!</span>
-                <img src="/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
-              </a> 
-              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
-            </article>
-            <article class="span6 clipes">
-              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
-                <span class="sprite-selo">Novidade!</span>
-                <img src="/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
-              </a> 
-              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
-            </article>
+            carrossel
+            
           </div>
           
         </div>
