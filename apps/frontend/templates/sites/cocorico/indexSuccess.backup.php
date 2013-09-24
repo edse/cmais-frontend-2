@@ -209,7 +209,7 @@
     </div>
     <div class="span4 col-dir">
       <a class="logo" href="<?php echo $site->retriveUrl() ?>/tvcocorico">
-        <img class="span12" src="/portal/images/capaPrograma/cocorico2/tvcoco.png" />
+        <img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico2/tvcoco.png" />
       </a>
       <div class="tvcoco span12">
         <a class="btn-programacao" href="<?php echo $site->retriveUrl(); ?>/natv" title="">
@@ -270,7 +270,7 @@
 <!-- /container-->
 
 <!-- script enquete -->
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script>
 $(document).ready(function(){
   $('#votar-input').click(function(){

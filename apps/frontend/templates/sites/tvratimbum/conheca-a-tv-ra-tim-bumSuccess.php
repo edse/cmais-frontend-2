@@ -1,13 +1,13 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
-<link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/institucional.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
-<script src="/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
+<link href="http://cmais.com.br/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/institucional.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
 <script type="text/javascript">
       //carrossel
       $(function(){
@@ -96,7 +96,7 @@
                 
                 <!--explicacao-->
                 <div class="explicacao">
-                  <img src="/portal/tvratimbum/image/institucional.jpg" alt="" />
+                  <img src="http://cmais.com.br/portal/tvratimbum/image/institucional.jpg" alt="" />
                   <p>Caro visitante,</p>
                   <p>Esta &aacute;rea traz informa&ccedil;&otilde;es institucionais da <span class="bold">Funda&ccedil;&atilde;o Padre Anchieta</span>, mantenedora do canal <span class="bold">TV R&aacute; Tim Bum</span>. Nossos objetivos, valores e hist&oacute;ria est&atilde;o dispon&iacute;veis para que voc&ecirc; conhe&ccedil;a um pouco mais do nosso canal, que &eacute; um marco na hist&oacute;ria da TV brasileira.</p>
                   <?php include_partial_from_folder('blocks','global/visite-cmais', array('uri' => $uri)) ?>
@@ -122,7 +122,7 @@
                     
                     <!--#tab_1-->
                     <div id="cont-historia" name="historia">
-                      <img src="/portal/tvratimbum/image/logo-fundacao.png" alt="" />
+                      <img src="http://cmais.com.br/portal/tvratimbum/image/logo-fundacao.png" alt="" />
                       <p>A id&eacute;ia de criar um canal infantil brasileiro de TV por assinatura surgiu e se desenvolveu na <span class="bold">Funda&ccedil;&atilde;o Padre Anchieta</span>, a mantenedora da <span class="bold">TV Cultura</span> e das <span class="bold">R&aacute;dios Cultura AM</span> e <span class="bold">FM</span></p>
                       <p>Em 12 de dezembro de 2004, a <span class="bold">TV R&aacute; Tim Bum</span> entrou no ar pela primeira vez. O canal rapidamente se transformou em uma plataforma de lan&ccedil;o para novos conte&uacute;dos infantis, estimulando a produ&ccedil;&atilde;o nacional, formatando parcerias com criadores e produtores independentes e trazendo para a crian&ccedil;a brasileira uma programa&ccedil;&atilde;o com a sua linguagem.</p>
                       <p>Toda programa&ccedil;o infantil da <span class="bold">TV R&aacute; Tim Bum</span> &eacute; produzida sob a supervis&atilde;o de profissionais ligados &agrave; educa&ccedil;&atilde;o infantil, com pedagogos e psic&oacute;s. A preocupa&ccedil;&atilde;o com a abordagem de temas importantes ao desenvolvimento, como relacionamento social, alfabetiza&ccedil;o, sa&uacute;de, higiene, artes e diversidade cultural, &eacute; constante em todo o processo de produ&ccedil;&atilde;o.</p>
@@ -277,7 +277,7 @@
                       <dl>
                         <dt><a href="javascript:;" >TRE.XC.I (2º temporada)</a></dt>
                         <dd style="display:none;"  class="text-educ">
-                          <img src="/portal/tvratimbum/image/imagem-estreia-trexci.jpg" alt="TRE.XC.I (2º temporada)" />
+                          <img src="http://cmais.com.br/portal/tvratimbum/image/imagem-estreia-trexci.jpg" alt="TRE.XC.I (2º temporada)" />
                           <p>na primeira temporada o robozinho TRE.XC.I chega na Terra para investigar o planeta, conhecer a natureza, tecnologia e coisas que cercam a vida humana.<br/>
                           Na segunda temporada, ele vai explorar complexos e profundos temas: os próprios sentimentos humanos!<br/>
                           Serão 13 novos episódios!</p>
@@ -294,7 +294,7 @@
                       <dl>
                         <dt><a href="javascript:;" >Traçando Arte (2º temporada)</a></dt>
                         <dd style="display:none;"  class="text-educ">
-                          <img src="/portal/tvratimbum/image/imagem-estreia-tracando-arte.jpg" alt="Traçando Arte (2º temporada)" />
+                          <img src="http://cmais.com.br/portal/tvratimbum/image/imagem-estreia-tracando-arte.jpg" alt="Traçando Arte (2º temporada)" />
                           <p>Jean Pierre e Trácio conquistaram o público na primeira temporada da série apresentando alguns dos principais artistas brasileiros da pintura. Agora é a vez de apresentar os artistas que formaram escolas artísticas e influenciam a arte até hoje.<br/>
                           Na segunda temporada, com 13 novos episódios, Jean e Trácio vão trazer os grandes mestres da pintura internacional.</p>           
                         </dd>
@@ -303,7 +303,7 @@
                       <dl>
                         <dt><a href="javascript:;" >Dr. Raio X (2º temporada)</a></dt>
                         <dd style="display:none;"  class="text-educ">
-                          <img src="/portal/tvratimbum/image/imagem-estreia-dr-raiox.jpg" alt="Dr. Raio X (2º temporada)" />
+                          <img src="http://cmais.com.br/portal/tvratimbum/image/imagem-estreia-dr-raiox.jpg" alt="Dr. Raio X (2º temporada)" />
                           <p>Quem nunca se perguntou da onde vem o suor, ou a lágrima, ou o chulé?<br/>
                           Na segunda temporada de Dr. Raio X cada episódio vai trazer de uma forma muito divertida histórias sobre as coisas que saem do nosso corpo.</p>           
                         </dd>
@@ -351,7 +351,7 @@
               <span class="top"></span>
               <div class="propaganda">
                 <a href="http://www.facebook.com/ratimbum" title="fanpage" target="_blank">
-                  <img src="/portal/tvratimbum/image/fanpagetvrtb.jpg" alt="propaganda" />
+                  <img src="http://cmais.com.br/portal/tvratimbum/image/fanpagetvrtb.jpg" alt="propaganda" />
                 </a>
               </div>
               <span class="bottom"></span>
@@ -375,7 +375,7 @@
               <h3>Voc&ecirc; Sabia<span></span></h3>
               <p>Escolhendo brinquedos com pouca embalagem voce ajuda o planeta, pois produz menos lixo.</p>
               <p class="exclamacao">Fa&ccedil;a sua parte!</p>
-              <img alt="mundo" src="/portal/tvratimbum/image/ex-24.png"><!--tamanho maximo da imagem: 125x130>
+              <img alt="mundo" src="http://cmais.com.br/portal/tvratimbum/image/ex-24.png"><!--tamanho maximo da imagem: 125x130>
             
             </div-->
       </div>

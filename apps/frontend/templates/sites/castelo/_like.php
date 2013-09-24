@@ -13,7 +13,7 @@
       
                    
           <!--TIMER-->
-          <!--script type="text/javascript" src="/portal/js/jTimer/jquery.timer.js"></script-->
+          <!--script type="text/javascript" src="http://cmais.com.br/portal/js/jTimer/jquery.timer.js"></script-->
           <!--/TIMER-->
           <!-- curtir -->
           <div class="redes">

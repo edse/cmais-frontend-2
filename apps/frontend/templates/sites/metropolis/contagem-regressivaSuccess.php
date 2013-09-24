@@ -48,8 +48,8 @@ $('#countdown_dashboard').startCountDown();
 <meta http-equiv="Pragma" content="no-cache, no-store" />
 <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
 
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/contato.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('channels' => $channels, 'live' => $live, 'editorials' => $editorials, 'site' => $site, 'mainSite' => $mainSite, 'coming' => $coming, 'important' => $important)) ?>
@@ -73,9 +73,9 @@ $('#countdown_dashboard').startCountDown();
           	<div class="contador metrocounter">
                 
                 <div class="capa-contador"> 
-					<link rel="stylesheet" href="/portal/js/contador/style/main.css" type="text/css" />
-		            <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contador.css" type="text/css" />
-                    <script language="Javascript" type="text/javascript" src="/portal/js/contador/js/jquery.lwtCountdown-1.0.js"></script>
+					<link rel="stylesheet" href="http://cmais.com.br/portal/js/contador/style/main.css" type="text/css" />
+		            <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/contador.css" type="text/css" />
+                    <script language="Javascript" type="text/javascript" src="http://cmais.com.br/portal/js/contador/js/jquery.lwtCountdown-1.0.js"></script>
                   <!-- Countdown dashboard start -->
                   <div id="countdown_dashboard" style="width:520px;">
 					

@@ -1,6 +1,6 @@
 <div id="mask"></div>  
 
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
 
 <script type="text/javascript">
@@ -64,7 +64,7 @@
         <div class="topo-programa">
           <h2>
             <a style="text-decoration: none;" href="http://tvcultura.cmais.com.br/animacultura">
-                <img title="Anima Cultura" alt="Anima Cultura" src="/portal/images/capaPrograma/logo-anima.png">
+                <img title="Anima Cultura" alt="Anima Cultura" src="http://cmais.com.br/portal/images/capaPrograma/logo-anima.png">
                 </a>
             </h2>                                                      
         </div>
@@ -114,7 +114,7 @@
 
     
       <div class="rodapePatrocinadores">
-        <!--img tiltle="patrocinadores" alt="patrocinadores" src="/portal/images/bkg-rodape.png" class="patrocinadores"-->
+        <!--img tiltle="patrocinadores" alt="patrocinadores" src="http://cmais.com.br/portal/images/bkg-rodape.png" class="patrocinadores"-->
       </div>
    
     </div>

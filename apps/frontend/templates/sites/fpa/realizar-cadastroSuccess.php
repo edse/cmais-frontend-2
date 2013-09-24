@@ -48,7 +48,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
         <!--row2 - informacoes pessoais-->
         <div class="row-fluid" id="row2" style="display:none;">
           <div class="linha-cadastro">
-            <img src="/portal/images/capaPrograma/fpa/linha-dados-pessoais.png">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/fpa/linha-dados-pessoais.png">
           </div>
           <h2>DADOS DE ENTRADA</h2>
           <hr/>
@@ -674,8 +674,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
   <!--colunas-->
 </div>
 <!--CONTAINER-->
-<script src="/portal/js/validate/jquery.validate.min.js"></script>
-<script src="/portal/js/jquery.maskedinput-1.3.min.js"></script>  
+<script src="http://cmais.com.br/portal/js/validate/jquery.validate.min.js"></script>
+<script src="http://cmais.com.br/portal/js/jquery.maskedinput-1.3.min.js"></script>  
 <script>
 function blankInput(el){
   if($(el).val() == ""){

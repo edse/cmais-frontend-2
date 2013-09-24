@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/amigosecreto.css" type="text/css" />
-<script type="text/javascript" src="/portal/js/scrollTo/scripts/jquery.min.js"></script>
-<script type="text/javascript" src="/portal/js/scrollTo/scripts/jquery.scrollto.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/amigosecreto.css" type="text/css" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/scrollTo/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/scrollTo/scripts/jquery.scrollto.js"></script>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!--/CONTANER-->

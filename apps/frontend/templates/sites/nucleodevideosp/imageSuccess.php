@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/videos.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/videos.css" type="text/css" />
 <script type="text/javascript">
 $(function(){
   //carrossel
@@ -171,7 +171,7 @@ $(function(){
                <!-- BOX PUBLICIDADE -->
               <div style="width: 300px; height: 50px; overflow: hidden" class="box-publicidade grid1">
                   <a target="_blank" href="http://www.educacao.sp.gov.br" name="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o" title="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o">
-                  	<img src="/portal/images/capaPrograma/nucleodevideosp/banner-educacao.gif" alt="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o">
+                  	<img src="http://cmais.com.br/portal/images/capaPrograma/nucleodevideosp/banner-educacao.gif" alt="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o">
                   </a>
               </div>                                                
               <!-- / BOX PUBLICIDADE -->

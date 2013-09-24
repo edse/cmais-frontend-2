@@ -32,7 +32,7 @@
 <!--/HEADER PADRAO JQUERY MOBILE-->
 
 <!--css-->
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/mob.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/mob.css" type="text/css" />
 <!--/css-->
 
 <!--Body-->
@@ -46,13 +46,13 @@
 		
 		<!--LogoCmais-->
 		<h2 class="logoLive">
-			<img src="/portal/images/capaPrograma/mob/aovivoLogo.png" width="100%">
+			<img src="http://cmais.com.br/portal/images/capaPrograma/mob/aovivoLogo.png" width="100%">
 		</h2>
 		<!--/LogoCmais-->
 		
 		<!--LogoCmais-->
 		<h1 class="logoCmais">
-			<img src="/portal/images/capaPrograma/mob/logoCmaisLive.png" width="100%">
+			<img src="http://cmais.com.br/portal/images/capaPrograma/mob/logoCmaisLive.png" width="100%">
 		</h1>
 		<!--/LogoCmais-->
 		
@@ -102,7 +102,7 @@
 	</script>
 	<!-- CONTEUDO -->
 	<div class="conteudoLive" style="margin: 0 auto">
-		<embed type="application/x-shockwave-flash" src="/portal/js/mediaplayer/player.swf" width="640" height="360" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=tv&amp;type=video">
+		<embed type="application/x-shockwave-flash" src="http://cmais.com.br/portal/js/mediaplayer/player.swf" width="640" height="360" id="mpl" name="mpl" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="controlbar=over&amp;autostart=true&amp;streamer=rtmp://200.136.27.12/live&amp;file=tv&amp;type=video">
 	</div>
 	<!-- /CONTEUDO -->
 	
@@ -119,7 +119,7 @@
 		
 		<div class="voltarLive" align="center">
 			<a href="#" data-transition="slideup" data-rel="back" >
-				<img src="/portal/images/capaPrograma/mob/voltar-ao-site.png" width="88%">
+				<img src="http://cmais.com.br/portal/images/capaPrograma/mob/voltar-ao-site.png" width="88%">
 			</a>
 		</div>
 		<div class="fio"></>

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -165,7 +165,7 @@
               <!-- BOX PUBLICIDADE -->
               <div style="width: 300px; height: 50px; overflow: hidden" class="box-publicidade grid1">
                   <a target="_blank" href="http://www.educacao.sp.gov.br" name="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o" title="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o">
-                  	<img src="/portal/images/capaPrograma/nucleodevideosp/banner-educacao.gif" alt="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o">
+                  	<img src="http://cmais.com.br/portal/images/capaPrograma/nucleodevideosp/banner-educacao.gif" alt="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o">
                   </a>
               </div>
                                                 
@@ -178,8 +178,8 @@
             
             <!-- APOIO -->
 	          <ul id="apoio" class="grid3">
-	              <li><a href="http://www.fde.sp.gov.br" target="_blank"><img src="/portal/images/capaPrograma/nucleodevideosp/logo-fde.png" alt="FDE" /></a></li>
-	              <li><a href="http://www.saopaulo.sp.gov.br/" target="_blank"><img src="/portal/images/capaPrograma/nucleodevideosp/logo-sp.png" alt="Governo do Estado de S&atilde;o Paulo" /></a></li>
+	              <li><a href="http://www.fde.sp.gov.br" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/nucleodevideosp/logo-fde.png" alt="FDE" /></a></li>
+	              <li><a href="http://www.saopaulo.sp.gov.br/" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/nucleodevideosp/logo-sp.png" alt="Governo do Estado de S&atilde;o Paulo" /></a></li>
 		      </ul>
 	          <!-- APOIO -->
             

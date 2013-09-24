@@ -6,10 +6,10 @@ $section = Doctrine_Query::create()
   ->andWhere('s.slug = ?', 'creditos2')
   ->fetchOne();
 ?>
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/interna.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/creditos.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/castelo/interna.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/castelo/creditos.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -30,7 +30,7 @@ $section = Doctrine_Query::create()
           <h2>
             <a href="http://cmais.com.br/castelo" style="text-decoration: none;">
           
-                <img src="/portal/images/capaPrograma/castelo/img-logo-castelo.png" class="logo" alt="Castelo Ra Tim Bum" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/img-logo-castelo.png" class="logo" alt="Castelo Ra Tim Bum" />
               
             </a>
           </h2>
@@ -63,7 +63,7 @@ $section = Doctrine_Query::create()
           
           
           <h1 id="creditos">
-            <img src="/portal/images/capaPrograma/castelo/img-titulo-creditos.png" alt="Créditos">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/img-titulo-creditos.png" alt="Créditos">
           </h1>
           
                       

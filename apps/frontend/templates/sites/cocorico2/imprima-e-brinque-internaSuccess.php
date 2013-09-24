@@ -1,5 +1,5 @@
-<script type="text/javascript" src="/portal/js/bootstrap/tooltip.js"></script>
-<link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
+<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/tooltip.js"></script>
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <!-- container-->
 <div class="container tudo">
@@ -172,7 +172,7 @@
 
 <!--tooltip estilizado-->
 <!--
-<script type="text/javascript" src="/portal/js/jquery-tooltip/jquery.tooltip.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-tooltip/jquery.tooltip.js"></script>
 <script type="text/javascript">
 $('.conteudo').tooltip({ 
     extraClass:"tp-imprimir"

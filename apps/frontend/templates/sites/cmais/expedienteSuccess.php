@@ -65,7 +65,6 @@
               <h2>Design e Criação</h2>
               <p>
                 Ariane Corniani<br/>
-                Debora Soares<br/>
                 Giuliana Xavier<br/>
               </p><br/>  
  
@@ -75,7 +74,6 @@
                 Felipe  Tringoni <br />
                 Juliano Nunes<br/>
                 Marília Fredini<br/>
-                Pedro Nakano<br/>
                 Priscila Lima<br/>
                 Thábata Mondoni<br/>
               </p><br/>  
@@ -85,7 +83,7 @@
                 Cristovam Ruiz Jr.<br/>
                 Emerson Estrella<br/>
                 Jefferson M. Doljak<br/>
-                Rafael Cruz<br/> 
+                Joseval Lima<br/>
                 Renata Noronha<br/>
               </p><br/>   
 

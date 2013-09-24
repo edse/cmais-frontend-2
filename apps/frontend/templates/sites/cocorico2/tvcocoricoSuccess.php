@@ -1,6 +1,6 @@
-<link href="/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
-<script type="text/javascript" src="/portal/js/bootstrap/bootstrap-fileupload.js"></script>
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/home.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
+<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
 <!-- container-->
 <div class="container tudo">
   <!--topo coco-->
@@ -27,7 +27,7 @@
   <div class="row-fluid conteudo">
     <!-- col direita -->
     <div class="span4 col-dir">
-      <a class="logo" href="/cocorico/tvcocorico"><img class="span12" src="/portal/images/capaPrograma/cocorico/tvcoco.png" /></a>
+      <a class="logo" href="/cocorico/tvcocorico"><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/tvcoco.png" /></a>
       
       
       <!-- tv cocorico -->
@@ -113,7 +113,7 @@
             <?php if(isset($displays['destaque-principal'])): ?>
           <?php if(count($displays['destaque-principal']) > 0): ?>
             <h2>Concurso Cultural</h2>
-            <img class="promocao" src="/portal/images/capaPrograma/cocorico/destaque-form-concurso.jpg" />
+            <img class="promocao" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/destaque-form-concurso.jpg" />
            
             <div class="destaque span12" style="position:relative; display: none;">
               <span></span>
@@ -240,7 +240,7 @@
             <p>3.4 A simples participação neste evento de incentivo à criatividade implica no total conhecimento e aceitação irrestrita deste regulamento.</p>
             <p>3.5 Os desenhos serão publicados no site <a href="http://cocorico.com.br">cocorico.com.br</a> e os melhores poderão ser exibidos na programação da TV Cultura.</p>
           </div> 
-          <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+          <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           
           <label generated="true" class="error" style="display: none;">*Preencha corretamente os campos em vermelho.</label>
           
@@ -385,7 +385,7 @@
             <p>3.4 A simples participação neste evento de incentivo à criatividade implica no total conhecimento e aceitação irrestrita deste regulamento.</p>
             <p>3.5 Os desenhos serão publicados no site <a href="http://cocorico.com.br">cocorico.com.br</a> e os melhores poderão ser exibidos na programação da TV Cultura.</p>
           </div> 
-          <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+          <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           
           <label generated="true" class="error" style="display: block;">*Preencha corretamente os campos em vermelho.</label>
           
@@ -428,7 +428,7 @@
         <a href="<?php echo $site->retriveUrl(); ?>/tour-virtual" title="Tour Virtual">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/cocorico/destaque-tour-virtual.jpg" alt="Tour Virtual"/>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/destaque-tour-virtual.jpg" alt="Tour Virtual"/>
             </div>
             <span>Tour Virtual</span>
           </div>
@@ -440,7 +440,7 @@
         <a href="<?php echo $site->retriveUrl(); ?>/erros-de-gravacao" title="Erros de Gravação">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/cocorico/destaque-erro-gravacao.jpg" alt="Erros de Gravação"/>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/destaque-erro-gravacao.jpg" alt="Erros de Gravação"/>
             </div>
             <span>Erros de Gravação</span>
           </div>
@@ -452,7 +452,7 @@
         <a href="<?php echo $site->retriveUrl(); ?>/instagram" title="Instagram">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/cocorico/destaque-instagram.jpg" alt="Instagram"/>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/destaque-instagram.jpg" alt="Instagram"/>
             </div>
             <span>Instagram</span>
           </div>
@@ -527,7 +527,7 @@
   <?php include_partial_from_folder('sites/cocorico', 'global/rodape', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
   <!--/rodapé-->
 </div>
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script>
 $(document).ready(function(){
       /* form tv cocorico */

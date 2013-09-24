@@ -57,7 +57,7 @@
 <!--/HEADER PADRAO JQUERY MOBILE-->
 
 <!--css-->
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/mob.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/mob.css" type="text/css" />
 <!--/css-->
 
 <!--Body-->
@@ -71,13 +71,13 @@
 		
 		<!--LogoCmais-->
 		<h2 class="logoLive">
-			<img src="/portal/images/capaPrograma/mob/aovivoLogo.png" width="100%">
+			<img src="http://cmais.com.br/portal/images/capaPrograma/mob/aovivoLogo.png" width="100%">
 		</h2>
 		<!--/LogoCmais-->
 		
 		<!--LogoCmais-->
 		<h1 class="logoCmais">
-			<img src="/portal/images/capaPrograma/mob/logoCmaisLive.png" width="100%">
+			<img src="http://cmais.com.br/portal/images/capaPrograma/mob/logoCmaisLive.png" width="100%">
 		</h1>
 		<!--/LogoCmais-->
 		
@@ -125,7 +125,7 @@
 				
 				<!--PROGRAMA SETA-->
 				<span class="seta">
-					<img src="/portal/images/capaPrograma/mob/seta-no-ar.png" width="100%">
+					<img src="http://cmais.com.br/portal/images/capaPrograma/mob/seta-no-ar.png" width="100%">
 				</span>
 				<!--PROGRAMA SETA-->
 			</li>
@@ -160,7 +160,7 @@
 				 
 				<!--PROGRAMA SETA-->
 				<span class="seta">
-					<img src="/portal/images/capaPrograma/mob/seta-not-no-ar.png" width="100%">
+					<img src="http://cmais.com.br/portal/images/capaPrograma/mob/seta-not-no-ar.png" width="100%">
 				</span>
 				<!--PROGRAMA SETA-->
 			</li>
@@ -186,7 +186,7 @@
 		
 		<div class="voltarLive" align="center">
 			<a href="#" data-transition="slideup" data-rel="back" >
-				<img src="/portal/images/capaPrograma/mob/voltar-ao-site.png" width="88%">
+				<img src="http://cmais.com.br/portal/images/capaPrograma/mob/voltar-ao-site.png" width="88%">
 			</a>
 		</div>
 		<div class="fio"></>

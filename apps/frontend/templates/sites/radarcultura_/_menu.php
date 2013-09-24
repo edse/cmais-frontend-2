@@ -2,7 +2,7 @@
       <div class="row-fluid logo">
         <div class="span4">
           <a href="http://radarcultura.cmais.com.br/" title="Radar Cultura">
-            <img src="/portal/images/capaPrograma/radarcultura/logo-radar-novo.png" alt="Radar Cultura" />
+            <img src="http://cmais.com.br/portal/images/capaPrograma/radarcultura/logo-radar-novo.png" alt="Radar Cultura" />
           </a>
         </div>
         <div class="span8 share">
@@ -53,7 +53,7 @@
        <?php endif; ?>
                                       
        <a id="ouca" class="ouca" href="javascript:;">
-         <img src="/portal/images/capaPrograma/radarcultura/ouca-a-radio.png" alt="Ouça a rádio Cultura Brasil"/>
+         <img src="http://cmais.com.br/portal/images/capaPrograma/radarcultura/ouca-a-radio.png" alt="Ouça a rádio Cultura Brasil"/>
        </a>
        
      </div>

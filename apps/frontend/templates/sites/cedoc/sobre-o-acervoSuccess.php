@@ -33,7 +33,7 @@
               <!-- Exibe destaque com vídeo -->
               <?php if(count($related_video) > 0): ?>
                 
-               <!--<img src="/portal/images/capaPrograma/cedoc/thumb-2.jpg" alt="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" />-->
+               <!--<img src="http://cmais.com.br/portal/images/capaPrograma/cedoc/thumb-2.jpg" alt="<?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?>" />-->
                 <iframe width="700" height="433" src="http://www.youtube.com/embed/<?php echo $related_video[0]->AssetVideo->getYoutubeId() ?>?rel=0" frameborder="0" allowfullscreen></iframe>
               
                 <h2><?php echo $displays["destaque-principal"][0]->Asset->getTitle() ?></h2>

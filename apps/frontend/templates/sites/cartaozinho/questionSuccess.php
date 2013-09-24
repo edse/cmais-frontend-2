@@ -137,7 +137,7 @@
                     <div class="votacao">
                       <input id="votar" type="submit" value="votar" />
                       <div id="enviando-voto" align="center"style="display:none">
-                        <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
+                        <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
                         Registrando voto, aguarde um momentinho...
                       </div>
                     </div>
@@ -191,7 +191,7 @@
               <div class="box-padrao content grid1">
                 <div class="topo claro">
                   <div class="capa-titulo">
-                    <img src="/portal/images/capaPrograma/cartaozinho/tit-relacionadas.png" />
+                    <img src="http://cmais.com.br/portal/images/capaPrograma/cartaozinho/tit-relacionadas.png" />
                     <a href="#" class="rss" title="rss"></a>
                   </div>
                 </div>

@@ -109,7 +109,7 @@
         <a href="<?php echo $site->retriveUrl() ?>/series/cocorico-na-franca" title="Cocoricó na França">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/<?php echo $site->getSlug() ?>/destaque-cocorico-na-franca.jpg" alt="Cocoricó na França"/>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/<?php echo $site->getSlug() ?>/destaque-cocorico-na-franca.jpg" alt="Cocoricó na França"/>
             </div>
             <span>
               Cocoricó na França
@@ -122,7 +122,7 @@
         <a href="<?php echo $site->retriveUrl() ?>/series/toda-crianca-tem-direito">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/<?php echo $site->getSlug() ?>/destaque-toda-crianca-tem-direito.jpg" alt="Toda Criança tem Direito"/>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/<?php echo $site->getSlug() ?>/destaque-toda-crianca-tem-direito.jpg" alt="Toda Criança tem Direito"/>
             </div>
             <span>
               Toda Criança tem Direito
@@ -135,7 +135,7 @@
         <a href="<?php echo $site->retriveUrl() ?>/series/se-liga-no-perigo">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/<?php echo $site->getSlug() ?>/destaque-se-ligue-no-perigo.jpg" alt="Se Liga no Perigo"/>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/<?php echo $site->getSlug() ?>/destaque-se-ligue-no-perigo.jpg" alt="Se Liga no Perigo"/>
             </div>
             <span>
               Se Liga no Perigo

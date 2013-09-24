@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/videos.css" type="text/css" />
-<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/videos.css" type="text/css" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
 <script type="text/javascript">
   $(function(){
     //carrossel

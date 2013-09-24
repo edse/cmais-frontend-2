@@ -75,7 +75,7 @@
 
   //print_r($programs_az);
 ?>
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/todosSites.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/todosSites.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
@@ -91,7 +91,7 @@
 
         <div class="topo-programa">
           
-          <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/univesptv/images/logo-univesptv.png" /></a></h2>
+          <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://cmais.com.br/portal/univesptv/images/logo-univesptv.png" /></a></h2>
           
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
@@ -174,7 +174,7 @@
             			<ul>
             				<?php foreach($programs as $p): ?>
                             <li>
-                              <a href="<?php echo str_replace("tvcultura.cmais.com.br/", "", $p->retriveUrl()); ?>"><?php echo $p->getTitle(); ?><?php if ($p->getImageIcon() || $p->getSchedule()): ?><span><p style="min-height:80px"><?php if ($p->getImageIcon()): ?><img class="logo" src="http://midia.cmais.com.br/programs/<?php echo $p->getImageIcon(); ?>" /><?php endif; ?></p><img class="seta" src="/portal/images/ico-bg-indiceOver.png" /><p><?php echo $p->getSchedule(); ?></p></span><?php endif; ?></a>
+                              <a href="<?php echo str_replace("tvcultura.cmais.com.br/", "", $p->retriveUrl()); ?>"><?php echo $p->getTitle(); ?><?php if ($p->getImageIcon() || $p->getSchedule()): ?><span><p style="min-height:80px"><?php if ($p->getImageIcon()): ?><img class="logo" src="http://midia.cmais.com.br/programs/<?php echo $p->getImageIcon(); ?>" /><?php endif; ?></p><img class="seta" src="http://cmais.com.br/portal/images/ico-bg-indiceOver.png" /><p><?php echo $p->getSchedule(); ?></p></span><?php endif; ?></a>
                             </li>
                             <?php endforeach; ?>
                         </ul>

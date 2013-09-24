@@ -8,13 +8,13 @@
     
     <!-- Le styles -->  
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <!--script type="text/jscript" src="/portal/js/jquery-1.7.2.min.js"></script-->
-    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
+    <!--script type="text/jscript" src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js"></script-->
+    <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
     
 
-    <script src="/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
 
      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
      <!--[if lt IE 9]>
@@ -22,7 +22,7 @@
      <![endif]-->
         
      <!--[if lte IE 8]>
-       <link type="text/css" rel="stylesheet" href="/portal/css/tvcultura/sites/cocorico/ie.css" />
+       <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/ie.css" />
      <![endif]-->
 
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -145,10 +145,10 @@
       <div class="container row-fluid">
       <section>
         <ul class="logos">
-          <li class="col-esq"><a href="/vilasesamo2" title="Vila Sésamo"><img src="/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="Vila Sésamo" /></a></li>
-          <li class="col-central"><a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis"><img src="/portal/images/capaPrograma/vilasesamo2/logo-habitos-saudaveis.png" alt="Hábitos Saudáveis" /></a></li>
-          <li class="col-dir"><a href="/vilasesamo2/incluirbrincando" title="Incluir Brincando"><img src="/portal/images/capaPrograma/vilasesamo2/logo-incluir-grd.png" alt="Incluir Brincando" /></a></li>
-          <img class="sombra" src="/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" />
+          <li class="col-esq"><a href="/vilasesamo2" title="Vila Sésamo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="Vila Sésamo" /></a></li>
+          <li class="col-central"><a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-habitos-saudaveis.png" alt="Hábitos Saudáveis" /></a></li>
+          <li class="col-dir"><a href="/vilasesamo2/incluirbrincando" title="Incluir Brincando"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-incluir-grd.png" alt="Incluir Brincando" /></a></li>
+          <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" />
         </ul>
         <div class="mapa">
           
@@ -177,7 +177,7 @@
           </div>
                 
         </div>
-        <img class="sombra" src="/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" />
+        <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" />
       </section>
       <section class="relacionados">
         <h3>Sites relacionados</h3>
@@ -196,7 +196,7 @@
     </footer>
     
     <!-- scripts -->
-    <script type="text/javascript" src="/portal/js/vilasesamo2/vilasesamo.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/vilasesamo.js"></script>
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -229,7 +229,7 @@
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/media.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media.css" type="text/css" />
        
   </body>
 </html>

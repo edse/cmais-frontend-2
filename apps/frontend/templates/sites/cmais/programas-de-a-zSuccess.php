@@ -151,9 +151,9 @@
                                   <p style="height:auto;">
                                       <img class="logo" src="http://midia.cmais.com.br/programs/<?php echo $p->getImageIcon(); ?>" />
                                   </p>
-                                      <img class="seta" src="/portal/images/ico-bg-indiceOver.png" />
+                                      <img class="seta" src="http://cmais.com.br/portal/images/ico-bg-indiceOver.png" />
                                   <?php }else{ ?>
-                                      <img class="seta" src="/portal/images/ico-bg-indiceOver.png" />
+                                      <img class="seta" src="http://cmais.com.br/portal/images/ico-bg-indiceOver.png" />
                                   <?php }?>
                                   <p>
                                   <?php  

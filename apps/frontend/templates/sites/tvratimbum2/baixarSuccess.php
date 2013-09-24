@@ -20,13 +20,13 @@
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
-<link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
-<script src="/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/scroll.jquery.js" type="text/javascript"></script>
+<link href="http://cmais.com.br/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/scroll.jquery.js" type="text/javascript"></script>
 
 <script type="text/javascript">
   //carrocel
@@ -73,7 +73,7 @@
         return "page="+$('#pag').val()+"&section_id=<?php echo $section_id?>&site_id=<?php echo $site_id?>";
       },
       start : function() {
-        $('<div class="loading"><img src="/portal/tvratimbum/image/loading.gif"/></div>').appendTo(this);
+        $('<div class="loading"><img src="http://cmais.com.br/portal/tvratimbum/image/loading.gif"/></div>').appendTo(this);
       },
       ScrollAfterHeight : 95,     //this is the height in percentage
       onload : function( data ) {

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/grade2013.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/segundatela/grade2013.css" type="text/css" />
 
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -17,7 +17,7 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <div class="bgtopo"><h1><img src="/portal/images/capaPrograma/segundatela/grade2013/logo.png" alt="Cultura 2013" /></h1></div>
+        <div class="bgtopo"><h1><img src="http://cmais.com.br/portal/images/capaPrograma/segundatela/grade2013/logo.png" alt="Cultura 2013" /></h1></div>
         <div class="col-dir">
           <div class="menu-topo">
             <a href="#myModal" role="button" data-toggle="modal" class="como">como funciona</a><span class="barra">|</span><p class="online hide"><span class="numero"></span><span class="seta"></span>pessoas online</p><p class="offline">Desconectado</p>
@@ -49,7 +49,7 @@
             <div class="accordion-group">
               <div class="accordion-heading">
                 <a class="accordion-toggle ativo" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne" >
-                  <i class="icon-user icon-white"></i>Collapsible Group Item #1 <img class="loader"  src="/portal/images/capaPrograma/segundatela/jornaldacultura/ajax-loader.gif" alt="carregando" />
+                  <i class="icon-user icon-white"></i>Collapsible Group Item #1 <img class="loader"  src="http://cmais.com.br/portal/images/capaPrograma/segundatela/jornaldacultura/ajax-loader.gif" alt="carregando" />
                 </a>
               </div>
               <div id="collapseOne" class="accordion-body collapse in" name="collapseOne">

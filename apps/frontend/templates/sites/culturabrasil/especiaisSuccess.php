@@ -1,15 +1,15 @@
 <?php use_helper('I18N', 'Date') ?>
 
 <!-- Le styles--> 
-<link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/culturabrasil.css" rel="stylesheet" type="text/css" />
+<link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/culturabrasil.css" rel="stylesheet" type="text/css" />
     
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script src="/portal/js/bootstrap/bootstrap.js"></script>
+<script src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
 
 <?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site)) ?>
 
@@ -72,7 +72,7 @@
                   <?php if ($related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb1")): ?>
                   <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb1") ?>" alt=" <?php echo $d->getTitle(); ?>" class="thumb">
                   <?php else: ?>
-                  <img src="/portal/images/capaPrograma/culturabrasil/defaultThumbnail<?php echo rand(1,8) ?>.jpg" alt="<?php echo $d->getTitle(); ?>" class="thumb">
+                  <img src="http://cmais.com.br/portal/images/capaPrograma/culturabrasil/defaultThumbnail<?php echo rand(1,8) ?>.jpg" alt="<?php echo $d->getTitle(); ?>" class="thumb">
                   <?php endif; ?>
                 </div>
                 <div class="span9">

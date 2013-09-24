@@ -14,21 +14,21 @@
     <meta property="fb:admins" content="100000889563712"/>
     <meta property="fb:app_id" content="124792594261614"/>
 
-    <link rel="shortcut icon" href="/portal/images/icon/favicon.png" type="image/x-icon" />
-    <link rel="image_src" href="/portal/images/logoCMAIS.jpg" />
+    <link rel="shortcut icon" href="http://cmais.com.br/portal/images/icon/favicon.png" type="image/x-icon" />
+    <link rel="image_src" href="http://cmais.com.br/portal/images/logoCMAIS.jpg" />
 
     <meta name="description" content="cmais+ O portal de conteúdo da Cultura" />
     <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
 
-    <link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
-    <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
-    <link rel="stylesheet" href="/portal/quintal/css/indexQuintal.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/quintal/css/geralQuintal.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/quintal/css/indexQuintal.css" type="text/css" />
     <!-- scripts -->
 
-    <script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
-    <script type="text/javascript" src="/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="/portal/js/portal.js"></script>
-    <script type="text/javascript" src="/portal/js/jPlayer/js/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/portal.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/jPlayer/js/jquery.jplayer.min.js"></script>
 
   </head>
 
@@ -105,7 +105,7 @@
               })
               </script>
               <!--MENU-BOTOES-->
-              <img class="over" src="/portal/quintal/images/indexNovo/img-todos-personagens.png" border="0" usemap="#personagensMap" id="personagens"/>
+              <img class="over" src="http://cmais.com.br/portal/quintal/images/indexNovo/img-todos-personagens.png" border="0" usemap="#personagensMap" id="personagens"/>
 
               <map name="personagensMap">
                 <area shape="poly" id="btn-teobaldo" name="teobaldo" title="videos" alt="videos" coords="74,557,72,541,84,528,82,502,76,475,46,395,37,328,52,298,50,285,22,284,12,242,25,180,44,167,55,142,50,124,30,99,32,65,60,39,98,41,132,62,139,86,138,115,126,135,105,140,121,150,148,152,174,160,231,90,240,66,274,31,286,31,291,38,294,48,269,84,258,92,246,126,237,202,227,211,202,212,176,232,164,247,242,391,257,485,249,495,243,502,242,518,242,542,218,537,223,513,217,471,184,416,148,372,124,374,108,398,117,523,131,550,128,560" href="/quintaldacultura/videos/todos">
@@ -118,32 +118,32 @@
               </map>
               <!--/MENU-BOTOES-->
               
-              <img id="over-teobaldo" class="over" src="/portal/quintal/images/indexNovo/over-videos-teobaldo.png" usemap="#over-teobaldoMap" style="display:none;"/>
+              <img id="over-teobaldo" class="over" src="http://cmais.com.br/portal/quintal/images/indexNovo/over-videos-teobaldo.png" usemap="#over-teobaldoMap" style="display:none;"/>
               <map name="over-teobaldoMap">
                 <area id="map-teobaldo" name="teobaldo" title="videos" alt="videos" shape="poly" coords="81,193,156,192,152,115,156,83,122,32,123,10,38,6,5,21,2,35,24,66,23,91,22,186,50,196" href="/quintaldacultura/videos/todos">
               </map>
               
-              <img id="over-quelonio" class="over" src="/portal/quintal/images/indexNovo/over-cartinhas-quelonio.png" usemap="#over-quelonioMap" style="display:none;"/>
+              <img id="over-quelonio" class="over" src="http://cmais.com.br/portal/quintal/images/indexNovo/over-cartinhas-quelonio.png" usemap="#over-quelonioMap" style="display:none;"/>
               <map name="over-quelonioMap">
                 <area id="map-quelonio" name="quelonio" title="Como escrever uma cartinha para a turma do quintal" alt="Como escrever uma cartinha para a turma do quintal" shape="poly" coords="97,245,160,235,243,223,240,158,220,148,173,60,180,34,126,7,93,35,128,79,98,90,2,106,2,133,27,196" href="/quintaldacultura/como-escrever-uma-cartinha-para-a-turma-do-quintal">
               </map>
               
-              <img id="over-minhoquias" class="over" src="/portal/quintal/images/indexNovo/over-baixar-minhoquias.png" usemap="#over-minhoquiasMap" usemap="#over-minhoquiasMap" style="display:none;"/>
+              <img id="over-minhoquias" class="over" src="http://cmais.com.br/portal/quintal/images/indexNovo/over-baixar-minhoquias.png" usemap="#over-minhoquiasMap" usemap="#over-minhoquiasMap" style="display:none;"/>
               <map name="over-minhoquiasMap">
                 <area id="map-minhoquias" name="minhoquias" title="baixar" alt="baixar" shape="poly" coords="3,129,47,203,194,198,195,64,165,29,103,4,35,1" href="/quintaldacultura/baixar">
               </map>  
               
-              <img id="over-osorio" class="over" src="/portal/quintal/images/indexNovo/over-atividades-osorio.png" usemap="#over-osorioMap" style="display:none;"/>
+              <img id="over-osorio" class="over" src="http://cmais.com.br/portal/quintal/images/indexNovo/over-atividades-osorio.png" usemap="#over-osorioMap" style="display:none;"/>
               <map name="over-osorioMap">
                 <area id="map-osorio" name="osorio" title="atividades" alt="atividades" shape="poly" coords="51,241,298,237,298,155,299,93,283,89,261,91,243,44,87,4,36,4,38,73,7,89,2,156,15,195,23,221" href="/quintaldacultura/atividades">
               </map>
               
-              <img id="over-doroteia" class="over" src="/portal/quintal/images/indexNovo/over-imagens-filomena.png"  usemap="#over-doroteiaMap" style="display:none;"/>
+              <img id="over-doroteia" class="over" src="http://cmais.com.br/portal/quintal/images/indexNovo/over-imagens-filomena.png"  usemap="#over-doroteiaMap" style="display:none;"/>
               <map name="over-doroteiaMap">
                 <area id="map-doroteia" name="doroteia" title="imagens" alt="imagens" shape="poly" coords="81,4,3,38,3,274,211,276,210,97,220,76,124,11" href="http://tvcultura.cmais.com.br/sid/turminha-do-sid">
               </map>
               
-              <img id="over-ludovico" class="over" src="/portal/quintal/images/indexNovo/over-jogos-ludovico.png" usemap="#over-ludovicoMap" style="display:none;"/>
+              <img id="over-ludovico" class="over" src="http://cmais.com.br/portal/quintal/images/indexNovo/over-jogos-ludovico.png" usemap="#over-ludovicoMap" style="display:none;"/>
               <map name="over-ludovicoMap">
                 <area id="map-ludovico" name="ludovico" title="jogos" alt="jogos"  shape="poly" coords="115,4,221,5,227,54,291,111,306,154,294,172,280,174,242,303,113,331,87,358,41,365,3,351,0,289,26,253,12,175,7,99,15,31,20,11" href="/quintaldacultura/jogos">
               </map>

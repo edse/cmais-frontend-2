@@ -1,12 +1,12 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
-<script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-<script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
-<script src="/portal/js/hammer.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
-<link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
-<script type="text/javascript" src="/portal/js/bootstrap/bootstrap-fileupload.js"></script>
+<script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
+<script src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/js/hammer.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
+<link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/js/responsive-carousel/style-vilasesamo.css"/>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
 
 <script>
   $("body").addClass("interna videos");
@@ -24,10 +24,10 @@
     <h3><i class="sprite-icon-videos-grd"></i>Vídeos<a class="todos-assets"><i class="sprite-btn-voltar-videos"></i><p>todos os jogos</p></a></h3>
     <div class="conteudo-asset">
       <h2>nome do jogo</h2>
-    <p><a href="#" title="Hábitos para uma vida saudável"><img src="/portal/images/capaPrograma/vilasesamo2/btn-habitos-peq.png" alt="Hábitos para uma vida saudável" /></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat massa, ullamcorper sit amet elementum sed, sollicitudin non massa. Mauris ante tortor, feugiat quis dolor id, congue pharetra nisl. Maecenas suscipit eu diam et pellentesque. Morbi fermentum libero ac diam tristique, in egestas lectus rhoncus. Proin ut pellentesque massa. Morbi metus. </p>
+    <p><a href="#" title="Hábitos para uma vida saudável"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn-habitos-peq.png" alt="Hábitos para uma vida saudável" /></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat massa, ullamcorper sit amet elementum sed, sollicitudin non massa. Mauris ante tortor, feugiat quis dolor id, congue pharetra nisl. Maecenas suscipit eu diam et pellentesque. Morbi fermentum libero ac diam tristique, in egestas lectus rhoncus. Proin ut pellentesque massa. Morbi metus. </p>
       
       <div class="asset">
-        <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="thumb" />
+        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="thumb" />
       </div>
     </div>
   </section>
@@ -152,17 +152,17 @@
         <button type="submit" class="btn">baixar</button>
       </div>
       <div class="span4 box-select">
-        <a href="#" title=""> <img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /> </a>
+        <a href="#" title=""> <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /> </a>
         <h2><a>Nome jogo</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend.</p>
       </div>
       <div class="span4">
         <p>Conheça nossos parceiros:</p>
         <a class="publicidade" href="#" title="Publicidade">
-          <img src="/portal/images/capaPrograma/vilasesamo2/banner-sesc.png" alt="Sesc" />
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner-sesc.png" alt="Sesc" />
         </a>
         <a class="publicidade" href="#" title="Publicidade">
-          <img src="/portal/images/capaPrograma/vilasesamo2/banner-mapa.png" alt="Mapa do Brincar" />
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner-mapa.png" alt="Mapa do Brincar" />
         </a>
         
         <p>Você também pode escolher o jogo de acordo com as preferências da criança:</p>

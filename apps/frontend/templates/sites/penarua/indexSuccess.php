@@ -1,6 +1,6 @@
 <!-- bg tudo -->
 <div class="bg-tudo">
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('channels' => $channels, 'live' => $live, 'editorials' => $editorials, 'site' => $site, 'mainSite' => $mainSite, 'coming' => $coming, 'important' => $important, 'asset' => $asset, 'section' => $section)) ?>
@@ -11,7 +11,7 @@ $(function() {
 });
 </script>
 
-<script src="/portal/js/jclock/jquery.jclock-1.2.0.js" type="text/javascript"></script> 
+<script src="http://cmais.com.br/portal/js/jclock/jquery.jclock-1.2.0.js" type="text/javascript"></script> 
 
 
     <!-- CAPA SITE -->
@@ -43,7 +43,7 @@ $(function() {
      
       	         
           <div class="relogio">
-          	<a href="/penarua/sobre-o-programa" title="Apresentadores" name="Apresentadores"><img src="/portal/images/capaPrograma/penarua/fotoApresentadores.jpg" alt="Apresentadores" /></a>
+          	<a href="/penarua/sobre-o-programa" title="Apresentadores" name="Apresentadores"><img src="http://cmais.com.br/portal/images/capaPrograma/penarua/fotoApresentadores.jpg" alt="Apresentadores" /></a>
           	<script type="text/javascript">
 				$(function($) {
 				    $('.jclock').jclock();

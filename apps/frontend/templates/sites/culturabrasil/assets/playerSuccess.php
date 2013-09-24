@@ -8,9 +8,9 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
+    <link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
 
     
     <!-- Le fav and touch icons -->
@@ -20,8 +20,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./bootstrap/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="./bootstrap/ico/apple-touch-icon-57-precomposed.png">
     
-    <script src="/portal/js/jwPlayer/jquery-1.7.2.min.js"></script>
-    <script src="/portal/js/bootstrap/bootstrap.js"></script>
+    <script src="http://cmais.com.br/portal/js/jwPlayer/jquery-1.7.2.min.js"></script>
+    <script src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
     <style type="text/css">
       .row { width: 415px; }
     	h1 a { text-indent:-9999px; background:url(/portal/images/radarcultura/i-logo-cultura-brasil-cinza.gif) no-repeat; width:216px; height:54px; display: block; margin:0 auto; }
@@ -35,7 +35,7 @@
        
      <div class="row">
         <h1><a href="#" title="Radar Cultura">Radar Cultura</a></h1>
-        <script type="text/javascript" src="/portal/js/jwPlayer/jwplayer.js?start=am"></script>
+        <script type="text/javascript" src="http://cmais.com.br/portal/js/jwPlayer/jwplayer.js?start=am"></script>
         <!-- Add-On Info Here -->
         <div id='mediaplayer'></div>
         <script type="text/javascript">

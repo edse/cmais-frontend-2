@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
-<script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
-<link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style.css"/>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
+<script src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/js/responsive-carousel/style.css"/>
 
 <div id="content">
   <nav class="header-bar">
@@ -59,42 +59,42 @@
               <ul class="slider-target">
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vila-sesamo/beto" title="Beto"><img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vila-sesamo/beto" title="Beto"><img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vila-sesamo/beto" title="Beto"><img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vila-sesamo/beto" title="Beto"><img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vila-sesamo/beto" title="Beto"><img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vila-sesamo/beto" title="Beto"><img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vila-sesamo/beto" title="Beto"><img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 <li>
                   <div class="inner">
-                    <a href="/vila-sesamo/beto" title="Beto"><img src="/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
+                    <a href="/vila-sesamo/beto" title="Beto"><img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/personagem.jpg" alt="Personagem" /></a>
                   </div>
                 </li>
                 
@@ -121,35 +121,35 @@
     <section class="span8">
       <article class="span6 jogo">
         <a href="/vila-sesamo/jogos" title="Jogo">
-          <img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="Jogos" />
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="Jogos" />
         </a> 
         <h3><a href="/vila-sesamo/jogos" title="Jogos">Jogo</a></h3>       
       </article>
       <article class="span6 video">
         <a href="/vila-sesamo/clipes" title="Clipes">
-          <img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="Clipes" />
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="Clipes" />
         </a> 
         <h3><a href="/vila-sesamo/clipes" title="Clipes">Clipe</a></h3>       
       </article>
       <article class="span6 atividade">
         <a href="/vila-sesamo/atividades" title="Para Colorir">
-          <img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="Para Colorir" />
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="Para Colorir" />
         </a> 
         <h3><a href="/vila-sesamo/atividades" title="Para Colorir">Para Colorir</a></h3>       
       </article>
     
     </section>
     <div class="span4 banner" >
-      <a href="#" title=""><img src="/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a>
+      <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/escola-pra-cachorro.jpg" alt="" /></a>
     </div>
     </div>
   </section>
 </div>
-<script src="/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
-<link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
-<script src="/portal/js/jquery-ui/js/jquery-ui.min.js"></script>
-<script src="/portal/js/hammer.min.js"></script>
-<script src="/portal/js/responsive-carousel/script.js"></script>
+<script src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/js/responsive-carousel/style-vilasesamo.css"/>
+<script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui.min.js"></script>
+<script src="http://cmais.com.br/portal/js/hammer.min.js"></script>
+<script src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
 <script>
   $(document).ready(function() {
     //carrossel personagens

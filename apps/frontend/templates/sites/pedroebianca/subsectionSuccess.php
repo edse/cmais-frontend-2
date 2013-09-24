@@ -6,11 +6,11 @@ if (isset($pager)) {
 	}
 }
 ?>
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/<?php echo $section->Parent->getSlug() ?>.css" type="text/css" />
-<link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/todos-videos.css" type="text/css" />
-<script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/<?php echo $section->Parent->getSlug() ?>.css" type="text/css" />
+<link type="text/css" href="http://cmais.com.br/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/todos-videos.css" type="text/css" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <script type="text/javascript">
 		$(function(){
 	// Datepicker
@@ -106,7 +106,7 @@ if (isset($pager)) {
 		<!-- BARRA SITE -->
 		<div id="barra-site">
 			<div class="topo-programa">
-				<h2><a href="http://www.cmais.com.br/pedroebianca" title="Metrópolis"> <img title="Metrópolis" alt="Metrópolis" src="/portal/images/capaPrograma/pedroebianca/logo.png"> </a></h2>
+				<h2><a href="http://www.cmais.com.br/pedroebianca" title="Metrópolis"> <img title="Metrópolis" alt="Metrópolis" src="http://cmais.com.br/portal/images/capaPrograma/pedroebianca/logo.png"> </a></h2>
 				<!--
 				<?php if(isset($program) && $program->id > 0):
 				?>

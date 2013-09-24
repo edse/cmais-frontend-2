@@ -25,21 +25,21 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!--CSS-->
-<link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap-responsive.min.css">
-<link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
-<link href="/portal/tvratimbum/css/ferias-especial.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css">
+<link href="http://cmais.com.br/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
+<link href="http://cmais.com.br/portal/tvratimbum/css/ferias-especial.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 <!--CSS-->
 
 <!--SCRIPT-->
-<script src="/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
-<!--script src="/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script-->
-<script src="/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<!--script src="http://cmais.com.br/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script-->
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
 
-<script src="/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
 
 <!--SCRIPT-->
 
@@ -91,7 +91,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                 
 
                 <!--LOGO PIADA-->
-                <img id="logo-piada" src="/portal/tvratimbum/image/piada-da-semana.png" border="0" />
+                <img id="logo-piada" src="http://cmais.com.br/portal/tvratimbum/image/piada-da-semana.png" border="0" />
                 <!--/LOGO PIADA-->
                 
                 <!--PIADA DESTAQUE-->
@@ -145,7 +145,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                       <input id="votar" type="submit" value="votar" />
                       <span class="caudaBarra"></span>
                       <div id="enviando-voto" align="center"style="display:none">
-                        <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
+                        <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
                         Registrando voto, aguarde um momentinho...
                       </div>
                   </div>
@@ -223,7 +223,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
             endif;
             ?>
             <!--SCRIPT-->
-            <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+            <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
             <script type="text/javascript">
               $(document).ready(function(){
                 //carrossel programas
@@ -471,7 +471,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                 <input id="enviar" type="submit" value="enviar" />
                 <span class="caudaBarra"></span>
                 <div id="enviando" align="center"style="display:none">
-                  <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader">
+                  <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader">
                   Enviando piada, aguarde um momentinho...
                 </div>  
               </div>

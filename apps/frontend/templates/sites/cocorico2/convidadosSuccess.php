@@ -2,7 +2,7 @@
 $assets = $pager->getResults();
 ?>
 
-<link href="/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/tvcocorico.css" rel="stylesheet">
  
 
 <script type="text/javascript">

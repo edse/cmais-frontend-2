@@ -1,9 +1,9 @@
 
-<link rel="stylesheet" href="/portal/js/layer-slider/model06/jquery.layerSlider.css">
-<link rel="stylesheet" href="/portal/js/layer-slider/model06/main.css">
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/layer-slider/model06/jquery.layerSlider.css">
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/layer-slider/model06/main.css">
 
-<link type="text/css" rel="stylesheet" href="/portal/js/responsive-carousel/style-vilasesamo.css"/>
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
+<link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/js/responsive-carousel/style-vilasesamo.css"/>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
 
 
 <div id="content">
@@ -27,7 +27,7 @@
             <i class="sprite-icon-jogos-peq"></i>Jogos
             
           </a>
-          <a href="/vilasesamo2/jogos" class="img" ><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" /></a> 
+          <a href="/vilasesamo2/jogos" class="img" ><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" /></a> 
           <a class="asset" href="/vilasesamo2/jogos-interna" title="Jogos">Nome do Jogo</a>  
         </article>
         <article class="span6 video">
@@ -35,7 +35,7 @@
             <i class="sprite-icon-videos-peq"></i>Vídeos
             
           </a>
-          <a href="/vilasesamo2/clipes" class="img"><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Clipes" /></a> 
+          <a href="/vilasesamo2/clipes" class="img"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Clipes" /></a> 
           <a class="asset" href="/vilasesamo2/videos-interna" title="Clipes">Nome do Video</a>      
         </article>
         <article class="span6 atividade">
@@ -43,7 +43,7 @@
             <i class="sprite-icon-atividades-peq"></i>atividades
             
           </a> 
-          <a href="/vilasesamo2/atividades" class="img" ><img src="/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Atividades" /></a>
+          <a href="/vilasesamo2/atividades" class="img" ><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Atividades" /></a>
           <a class="asset" href="/vilasesamo2/atividades-interna" title="Para Colorir">Nome da atividade</a>       
         </article>
       
@@ -60,11 +60,11 @@
 </div>
 
 <!--scripts e css banner-->
-<script type="text/javascript" src="/portal/js/layer-slider/jQuery.layerSlider.js"></script>
-<script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-<script type="text/javascript" src="/portal/js/modernizr/modernizr.min.js"></script>
-<script type="text/javascript" src="/portal/js/hammer.min.js"></script>
-<script type="text/javascript" src="/portal/js/responsive-carousel/script.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/layer-slider/jQuery.layerSlider.js"></script>
+<script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
 
 <script>
 //verificação de tela

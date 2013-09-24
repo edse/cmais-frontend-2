@@ -22,18 +22,18 @@ if(count($block) > 0){
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!--CSS-->
-<link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
-<link href="/portal/tvratimbum/css/ferias-especial.css" rel="stylesheet" type="text/css" />
+<link href="http://cmais.com.br/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
+<link href="http://cmais.com.br/portal/tvratimbum/css/ferias-especial.css" rel="stylesheet" type="text/css" />
 <!--CSS-->
 
 <!--SCRIPT-->
-<script src="/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
-<!--script src="/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script-->
-<script src="/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/scroll.jquery.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<!--script src="http://cmais.com.br/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script-->
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/scroll.jquery.js" type="text/javascript"></script>
 <script>
   $(document).ready(function(){
     //carrossel programas
@@ -53,7 +53,7 @@ if(count($block) > 0){
         return "page="+$('#pag').val()+"&section_id=<?php echo $section->getId()?>&site_id=<?php echo $section->Site->getId()?>&piadas=1";
       },
       start : function() {
-        $('<div class="loading" style="width:220px;margin:20px auto;"><img src="/portal/images/ajax-loader-especial.gif"/></div>').appendTo(this);
+        $('<div class="loading" style="width:220px;margin:20px auto;"><img src="http://cmais.com.br/portal/images/ajax-loader-especial.gif"/></div>').appendTo(this);
       },
       ScrollAfterHeight : 95,     //this is the height in percentage
       onload : function( data ) {
@@ -128,7 +128,7 @@ if(count($block) > 0){
             <div id="piada-da-semana">
             
               <!--LOGO PIADA-->
-              <img id="logo-piada" src="/portal/tvratimbum/image/piada-da-semana.png" border="0" />
+              <img id="logo-piada" src="http://cmais.com.br/portal/tvratimbum/image/piada-da-semana.png" border="0" />
               <!--/LOGO PIADA-->
               
               <!--PIADA DESTAQUE-->
@@ -153,7 +153,7 @@ if(count($block) > 0){
                 <h2>LISTÃO DE PIADAS</h2>
                 <!--LISTA-PIADA-->
                 <div class="loading inicial" style="width:220px;margin:20px auto;">
-                  <img src="/portal/images/ajax-loader-especial.gif"/>
+                  <img src="http://cmais.com.br/portal/images/ajax-loader-especial.gif"/>
                 </div>
                 <ul class="lista-piadas" id="infinite_scroll">
                 

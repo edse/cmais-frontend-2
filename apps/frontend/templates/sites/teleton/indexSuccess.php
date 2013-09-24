@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script> 
-<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
       
 <script>
 
@@ -34,7 +34,7 @@
 
         <div class="topo-programa">
           
-          <h2><img src="/portal/images/capaPrograma/teleton/logo.png" /></h2>
+          <h2><img src="http://cmais.com.br/portal/images/capaPrograma/teleton/logo.png" /></h2>
           <a href="http://teleton.org.br/welcome.html" title="Teleton" target="_blank" class="numeros"></a>          
               
         </div>

@@ -15,13 +15,13 @@
 ?>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
-<link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
-<script src="/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
+<link href="http://cmais.com.br/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
 <script type="text/javascript">
   $(function(){
     $('dt a').click(function(){
@@ -102,7 +102,7 @@
               <dt><a href="javascript:;">Coisas estranhas e engraçadas</a></dt>
               <dd style="display:none;">
                 <div>
-                  <img src="/portal/tvratimbum/image/coisas-engracadas.jpg" alt="Coisas estranhas e engraçadas"/>
+                  <img src="http://cmais.com.br/portal/tvratimbum/image/coisas-engracadas.jpg" alt="Coisas estranhas e engraçadas"/>
                 </div>  
                 <ul>  
                   <li><span>»</span> Que de cada seis habitantes do planeta Terra, um mora na China.</li>
@@ -120,7 +120,7 @@
               <dt><a href="javascript:;">Coisas científicas</a></dt>
               <dd style="display:none;">
                 <div>
-                  <img src="/portal/tvratimbum/image/coisas-cientificas.jpg" alt="Coisas científicas"/>
+                  <img src="http://cmais.com.br/portal/tvratimbum/image/coisas-cientificas.jpg" alt="Coisas científicas"/>
                 </div>
                 <ul>
                   <li><span>»</span> Que quando você refrigera alguma coisa, você não está esfriando essa coisa, apenas retirando o seu calor.</li> 
@@ -143,7 +143,7 @@
               <dt><a href="javascript:;">Coisas de bicho</a></dt>
               <dd style="display:none;">
                 <div>
-                  <img src="/portal/tvratimbum/image/coisas-bicho.jpg" alt="Coisa de bicho"/>
+                  <img src="http://cmais.com.br/portal/tvratimbum/image/coisas-bicho.jpg" alt="Coisa de bicho"/>
                 </div>
                 <ul>
                   <li><span>»</span> Que as tarântulas são os insetos que podem viver até 30 anos. E por isso são os mais longevos da Terra.0</li>

@@ -1,6 +1,6 @@
-<script type="text/javascript" src="/portal/js/culturafm.js"></script>
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
-<script type="text/javascript" src="/portal/js/swfobject/swfobject.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/culturafm.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/swfobject/swfobject.js"></script>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <!-- remover este css depois que acabar campanha da radio -->

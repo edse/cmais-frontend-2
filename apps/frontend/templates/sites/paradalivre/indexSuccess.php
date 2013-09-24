@@ -1,7 +1,7 @@
-<script type="text/javascript" src="/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<script type="text/javascript" src="/portal/js/fancybox/jquery.easing-1.3.pack.js"></script>
-<link rel="stylesheet" href="/portal/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/paradalivre.css" type="text/css" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox/jquery.easing-1.3.pack.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/paradalivre.css" type="text/css" />
 
 
 
@@ -21,7 +21,7 @@
 		
 		<div class="busca-google">
 			<?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
-			<h2><a href="http://tvcultura.cmais.com.br/paradalivre" name="Parada Livre" name=""><img src="/portal/images/capaPrograma/paradalivre/logo.jpg" alt="Parada Livre" /></a></h2>
+			<h2><a href="http://tvcultura.cmais.com.br/paradalivre" name="Parada Livre" name=""><img src="http://cmais.com.br/portal/images/capaPrograma/paradalivre/logo.jpg" alt="Parada Livre" /></a></h2>
 			<div class="barra"></div>
 			<div class="botao"></div>
 		</div>
@@ -123,7 +123,7 @@
 	    					<p class="hashtag">#m&uacute;sica</p>
 	    					<div class="estrelas"></div>
     					</div>
-    					<div id="faces"><img src="/portal/images/capaPrograma/paradalivre/roberta.jpg" alt="Roberta Martinelli" /></div>    					    					
+    					<div id="faces"><img src="http://cmais.com.br/portal/images/capaPrograma/paradalivre/roberta.jpg" alt="Roberta Martinelli" /></div>    					    					
     				</li>
     				<li class="box" id="box-deupaulanatv">
 						<div class="balao" id="b-deupaulanatv" value="deupaulanatv"><span></span></div>
@@ -134,7 +134,7 @@
 	    					<p class="hashtag">#humor</p>
 	    					<div class="estrelas"></div>
     					</div>
-    					<div id="faces"><img src="/portal/images/capaPrograma/paradalivre/paula.jpg" alt="Paula Vilhena" /></div>    					    					
+    					<div id="faces"><img src="http://cmais.com.br/portal/images/capaPrograma/paradalivre/paula.jpg" alt="Paula Vilhena" /></div>    					    					
     				</li>
     				<li class="box" id="box-inglescommusica">
 						<div class="balao" id="b-inglescommusica" value="inglescommusica"><span></span></div>
@@ -145,7 +145,7 @@
 	    					<p class="hashtag">#cultura</p>
 	    					<div class="estrelas"></div>
     					</div>
-    					<div id="faces"><img src="/portal/images/capaPrograma/paradalivre/amanda.jpg" alt="Amanda Acosta" /></div>    					    				
+    					<div id="faces"><img src="http://cmais.com.br/portal/images/capaPrograma/paradalivre/amanda.jpg" alt="Amanda Acosta" /></div>    					    				
     				</li>
     				<li class="box" id="box-penarua">
 						<div class="balao" id="b-penarua" value="penarua"><span></span></div>
@@ -156,7 +156,7 @@
 	    					<p class="hashtag">#comportamento</p>
 	    					<div class="estrelas"></div>
     					</div>
-    					<div id="faces"><img src="/portal/images/capaPrograma/paradalivre/gabriela.jpg" alt="Gabriela Fran&ccedil;a" /></div>    					    				
+    					<div id="faces"><img src="http://cmais.com.br/portal/images/capaPrograma/paradalivre/gabriela.jpg" alt="Gabriela Fran&ccedil;a" /></div>    					    				
     				</li>
     				<li class="box" id="box-woohoonews">
 						<div class="balao" id="b-woohoonews" value="woohoonews"><span></span></div>
@@ -167,12 +167,12 @@
 	    					<p class="hashtag">#esportes</p>
 	    					<div class="estrelas"></div>
     					</div>
-    					<div id="faces"><img src="/portal/images/capaPrograma/paradalivre/bianca.jpg" alt="Bianca Medeiros" /></div>    					    				
+    					<div id="faces"><img src="http://cmais.com.br/portal/images/capaPrograma/paradalivre/bianca.jpg" alt="Bianca Medeiros" /></div>    					    				
     				</li>
     			</ul>
     		</div>
     		<div class="dir">    						
-				<img src="/portal/images/capaPrograma/paradalivre/mapa.jpg" usemap="#mapa" border="0">
+				<img src="http://cmais.com.br/portal/images/capaPrograma/paradalivre/mapa.jpg" usemap="#mapa" border="0">
 				<map name="mapa">										
 					<area id="tp-culturalivre" class="tp" value="culturalivre" shape="rect" coords="342,471,382,528" alt="Cultura Livre" />
 					<area id="tp-deupaulanatv" class="tp" value="deupaulanatv" shape="rect" coords="348,285,388,342" alt="Deu Paula na TV" />
@@ -189,7 +189,7 @@
 	    				<p>Roberta Martinelli comanda o melhor da nova m&uacute;sica brasileira na TV, no r&aacute;dio e na internet. </p>
 	    				<div class="estrelas"></div>
     				</div>
-    				<img src="/portal/images/capaPrograma/paradalivre/roberta.jpg" alt="Roberta Martinelli" />
+    				<img src="http://cmais.com.br/portal/images/capaPrograma/paradalivre/roberta.jpg" alt="Roberta Martinelli" />
     				<div class="acao">
     					<p>Às 19:55h</p>
     					<a href="http://cmais.com.br/culturalivre">cmais.com.br/culturalivre</a>
@@ -204,7 +204,7 @@
 	    				<p>Depois do sucesso na internet, Paula Vilhena invade a TV com muita descontra&ccedil;&atilde;o.</p>
 	    				<div class="estrelas"></div>
     				</div>
-    				<img src="/portal/images/capaPrograma/paradalivre/paula.jpg" alt="Paula Vilhena" />
+    				<img src="http://cmais.com.br/portal/images/capaPrograma/paradalivre/paula.jpg" alt="Paula Vilhena" />
     				<div class="acao">
     					<p>Às 19:25h</p>
     					<a href="http://cmais.com.br/deupaulanatv">cmais.com.br/deupaulanatv</a>
@@ -218,7 +218,7 @@
 	    				<p>Aprenda ingl&ecirc;s cantando com Amanda Acosta os maiores sucessos da m&uacute;sica internacional.</p>
 	    				<div class="estrelas"></div>
     				</div>
-    				<img src="/portal/images/capaPrograma/paradalivre/amanda.jpg" alt="Amanda Acosta" />
+    				<img src="http://cmais.com.br/portal/images/capaPrograma/paradalivre/amanda.jpg" alt="Amanda Acosta" />
     				<div class="acao">
     					<p>Às 19:30h</p>
     					<a href="http://cmais.com.br/inglescommusica">cmais.com.br/ingles-com-musica</a>
@@ -232,7 +232,7 @@
 	    				<p>V&aacute; &agrave;s ruas com Gabriela Fran&ccedil;a e saiba as tend&ecirc;ncias que est&atilde;o fazendo a cabe&ccedil;a da galera.</p>
 	    				<div class="estrelas"></div>
     				</div>
-    				<img src="/portal/images/capaPrograma/paradalivre/gabriela.jpg" alt="Gabriela Fran&ccedil;a" />
+    				<img src="http://cmais.com.br/portal/images/capaPrograma/paradalivre/gabriela.jpg" alt="Gabriela Fran&ccedil;a" />
     				<div class="acao">
     					<p>Às 19:15h</p>
     					<a href="http://cmais.com.br/penarua">cmais.com.br/penarua</a>
@@ -246,7 +246,7 @@
 	    				<p>Bianca Medeiros traz as &uacute;ltimas not&iacute;cias dos esportes radicais no Brasil e no mundo.</p>
 	    				<div class="estrelas"></div>
     				</div>
-    				<img src="/portal/images/capaPrograma/paradalivre/bianca.jpg" alt="Bianca Medeiros" />
+    				<img src="http://cmais.com.br/portal/images/capaPrograma/paradalivre/bianca.jpg" alt="Bianca Medeiros" />
     				<div class="acao">
     					<p>Às 19:45h</p>
     					<a href="http://cmais.com.br/woohoonews">cmais.com.br/woohoonews</a>

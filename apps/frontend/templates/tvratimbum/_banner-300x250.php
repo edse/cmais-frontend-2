@@ -5,7 +5,7 @@
   <!--/TOPO-->
   <div id="banner">
     <a href="http://www.facebook.com/ratimbum" title="fanpage">
-      <img src="/portal/tvratimbum/image/fanpagetvrtb.jpg" alt="propaganda" />
+      <img src="http://cmais.com.br/portal/tvratimbum/image/fanpagetvrtb.jpg" alt="propaganda" />
     </a>
   </div>
   <!--RODAPE-->

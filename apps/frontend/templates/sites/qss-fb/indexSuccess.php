@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/qss.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/qss.css" type="text/css" />
 
 <style type="text/css">
 #capa-site {max-width: 780px; padding:10px}
@@ -19,7 +19,7 @@
     </div>  
 </div> 
 <!-- /capa site-->
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
     var validator = $('#form-contato').validate({

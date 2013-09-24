@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/SomosTodosSP.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/SomosTodosSP.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -13,7 +13,7 @@
         <div class="topo-programa">
           <h2>
             <a href="/SomosTodosSP" title="Somos todos SP">
-                <img src="/portal/images/capaPrograma/somostodossp/logo.png" alt="Somos Todos SP"/>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/somostodossp/logo.png" alt="Somos Todos SP"/>
             </a>
           </h2>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>

@@ -88,7 +88,7 @@
                     <?php if(count($img) > 0):?>
                       <img src="<?php echo "http://midia.cmais.com.br/assets/image/original/".$img[0]->AssetImage->original_file; ?>" title="<?php echo $img[0]->getTitle(); ?>" />
                     <?php else:?>
-                      <img src="/portal/images/capaPrograma/cartaozinho/cartaozinho_enquete_padrao.jpg" title="Enquete Cartãozinho" />
+                      <img src="http://cmais.com.br/portal/images/capaPrograma/cartaozinho/cartaozinho_enquete_padrao.jpg" title="Enquete Cartãozinho" />
                     <?php endif; ?>  
                   </div>  
                   <span class="txt-pergunta"><?php echo $displays["enquete"][0]->Asset->AssetQuestion->getQuestion() ?></span>
@@ -136,11 +136,11 @@
             <?php if(isset($displays["destaque-principal"])): ?>
               <?php if(count($displays["destaque-principal"])>0): ?>
               <div class="duas-colunas destaque grid2">
-                <img class="acompanhe" src="/portal/images/capaPrograma/cartaozinho/acompanhe.png" alt="Acompanhe o Cartãozinho" />
+                <img class="acompanhe" src="http://cmais.com.br/portal/images/capaPrograma/cartaozinho/acompanhe.png" alt="Acompanhe o Cartãozinho" />
                 <?php if($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "video"): ?>
                 <iframe title="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" width="450" height="259" src="http://www.youtube.com/embed/<?php echo $displays["destaque-principal"][0] -> Asset -> AssetVideo -> getYoutubeId();?>?rel=0&wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
                 <?php endif;?>
-                <a  id="ancora" href="/cartaozinho/videos" class="mais-videos" title="Mais Vídeos" name="Mais Vídeos"><img src="/portal/images/capaPrograma/cartaozinho/mais-videos.png" alt="Mais Vídeos"/></a>
+                <a  id="ancora" href="/cartaozinho/videos" class="mais-videos" title="Mais Vídeos" name="Mais Vídeos"><img src="http://cmais.com.br/portal/images/capaPrograma/cartaozinho/mais-videos.png" alt="Mais Vídeos"/></a>
               </div>
               <?php endif;?>
             <?php endif;?>
@@ -219,7 +219,7 @@
                   <div class="fechar" name="Fechar" title="Fechar">
                     Fechar
                   </div>
-                  <p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-joao.png" /></p>
+                  <p class="titulo"><img src="http://cmais.com.br/portal/images/capaPrograma/cartaozinho/tit-joao.png" /></p>
                   <p>Nome: <span>João Braga</span></p>
                   <p>Idade: <span>10 anos</span></p>
                   <p>Que time torce: <span>Corinthians</span></p>
@@ -245,7 +245,7 @@
                   <div class="fechar" name="Fechar" title="Fechar">
                     Fechar
                   </div>
-                  <p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-eric.png" /></p>
+                  <p class="titulo"><img src="http://cmais.com.br/portal/images/capaPrograma/cartaozinho/tit-eric.png" /></p>
                   <p>Nome: <span>Eric Lanfredi</span></p>
                   <p>Idade: <span>13 anos</span></p>
                   <p>Que time torce: <span>Palmeiras</span></p>
@@ -271,7 +271,7 @@
                   <div class="fechar" name="Fechar" title="Fechar">
                     Fechar
                   </div>
-                  <p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-pedro.png" /></p>
+                  <p class="titulo"><img src="http://cmais.com.br/portal/images/capaPrograma/cartaozinho/tit-pedro.png" /></p>
                   <p>Nome: <span>Pedro Crema</span></p>
                   <p>Idade: <span>9 anos</span></p>
                   <p>Que time torce: <span>São Paulo</span></p>
@@ -297,7 +297,7 @@
                   <div class="fechar" name="Fechar" title="Fechar">
                     Fechar
                   </div>
-                  <p class="titulo"><img src="/portal/images/capaPrograma/cartaozinho/tit-matheus.png" /></p>
+                  <p class="titulo"><img src="http://cmais.com.br/portal/images/capaPrograma/cartaozinho/tit-matheus.png" /></p>
                   <p>Nome: <span>Matheus Ribeiro </span></p>
                   <p>Idade: <span>10 anos</span></p>
                   <p>Que time torce: <span>Santos</span></p>
@@ -329,7 +329,7 @@
   <!-- /CAPA SITE -->
 </div>
 
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script>
 //valida form
 var validator = $('.form-voto').validate({

@@ -6,11 +6,11 @@ $nextDateUrl = $base_url."/".str_replace("/","-",$nextDate);
 $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate); 
 ?>
 <script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
-<script src="/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/grade.css" type="text/css" />
-<link type="text/css" href="/portal/multicultura/css/geral.css" rel="stylesheet" /> 
+<script src="http://cmais.com.br/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/grade.css" type="text/css" />
+<link type="text/css" href="http://cmais.com.br/portal/multicultura/css/geral.css" rel="stylesheet" /> 
 <!-- <link rel="stylesheet" href="/js/jquery-ui-1.8.7/css/ui-lightness/jquery-ui-1.8.7.custom.css" type="text/css" /> -->
-<link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+<link type="text/css" href="http://cmais.com.br/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
 
 <script type="text/javascript">
   jQuery(function(a){a.datepicker.regional["pt-BR"]={closeText:"Fechar",prevText:"&#x3c;Anterior",nextText:"Pr&oacute;ximo&#x3e;",currentText:"Hoje",monthNames:["Janeiro","Fevereiro","Mar&ccedil;o","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"],monthNamesShort:["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],dayNames:["Domingo","Segunda-feira","Ter&ccedil;a-feira","Quarta-feira","Quinta-feira","Sexta-feira","S&aacute;bado"],dayNamesShort:["Dom","Seg","Ter","Qua","Qui","Sex","S&aacute;b"],dayNamesMin:["Dom","Seg","Ter","Qua","Qui","Sex","S&aacute;b"],weekHeader:"Sm",dateFormat:"dd/mm/yy",firstDay:0,isRTL:false,showMonthAfterYear:false,yearSuffix:""};a.datepicker.setDefaults(a.datepicker.regional["pt-BR"])});
@@ -116,7 +116,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
 
         <div class="topo-programa">
           
-          <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/multicultura/images/logo-multicultura.png" /></a></h2>
+          <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://cmais.com.br/portal/multicultura/images/logo-multicultura.png" /></a></h2>
           
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
@@ -219,7 +219,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
                       <?php if ($d->retriveLiveImage()): ?>
                       <img src="<?php echo $d->retriveLiveImage() ?>" alt="<?php echo $d->retriveTitle() ?>" />
                       <?php else: ?>
-                      <img src="/portal/multicultura/images/multicultura-logo.jpg" alt="<?php echo $d->retriveTitle() ?>" />
+                      <img src="http://cmais.com.br/portal/multicultura/images/multicultura-logo.jpg" alt="<?php echo $d->retriveTitle() ?>" />
                       <?php endif; ?>
                       <?php if($d->image_source != ""): ?><p class="legenda"><?php echo $d->image_source ?></p><?php endif; ?>
                     </div>

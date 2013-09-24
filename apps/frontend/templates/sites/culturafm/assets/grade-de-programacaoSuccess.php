@@ -1,4 +1,4 @@
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
     <style>
     #direita {
         margin-top: 10px;

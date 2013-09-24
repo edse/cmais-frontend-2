@@ -1,6 +1,6 @@
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <script>
   $("body").addClass("interna bg-incluir");
 
@@ -72,9 +72,9 @@
 </div>
 <input type="hidden" id="filter-choice" value="">
 <nav id="page_nav">
-  <a href="/testes/vilasesamo2/pages/2.html" class="mais"><i class="sprite-icon-mais-laranja"></i>Carregar mais jogos</a>
+  <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais-laranja"></i></a>
 </nav>
 <!--scripts-->
-<script src="/portal/js/isotope/jquery.isotope.min.js"></script>
-<script src="/portal/js/isotope/jquery.infinitescroll.min.js"></script>
-<script src="/portal/js/vilasesamo2/internas-isotope.js"></script>
+<script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
+<script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script>
+<script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>

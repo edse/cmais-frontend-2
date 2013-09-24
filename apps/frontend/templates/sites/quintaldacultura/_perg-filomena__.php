@@ -1,4 +1,4 @@
-<script type="text/javascript" src="/portal/quintal/js/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/quintal/js/jquery.validate.js"></script>
 <script type="text/javascript">
       $(document).ready(function(){
         
@@ -103,7 +103,7 @@
 
     <!--ENVIAR-->
     <div id="btn-nav" align="center">
-      <img src="/portal/quintal/images/ludovicoshow/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader" />
+      <img src="http://cmais.com.br/portal/quintal/images/ludovicoshow/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader" />
       <input type="submit" name="enviar" id="enviar" class="btn-enviar" value="Enviar"/>
     </div>
     <!--/ENVIAR-->

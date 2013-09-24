@@ -14,9 +14,10 @@ body { background:#0172f9; }
 #content h3 i { margin-right:10px;  }
 #content h3 .sprite-icon-colorir-med { margin-top:-6px; }
 #content h3 .sprite-icon-jogos-med { margin-top:4px; }
-.mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; max-width:350px; margin:100px auto; display:block; }
+#page_nav { max-width:940px;  margin:3% auto; overflow:hidden; }
+.mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; max-width:350px; float:right; display:block; }
 .mais span,
-.mais i { float:left; margin-right:15px; }
+.mais i { float:right; margin-left:15px; }
 .mais:hover { color:#fff; text-decoration:underline; }
 /* filtro personagem */
 .todos-itens li,
@@ -240,12 +241,15 @@ body { background:#0172f9; }
 .resultado a:hover h3,
 .resultado a:hover p { text-decoration:underline; }
 
-.personagens { background:#b60401; }
+body.personagens { background:#b60401; }
 .personagens .todos-itens li, 
+.personagens .filtro .span12,
 .personagens .scroll, 
 .personagens .filtro  { border-color:#ee3021; }
 .personagens #content .filtro h3 { background:#d71c0d; border-color: #c31408; }
 .personagens #content h3 span, 
 .personagens #content h3 i { margin-top:-5px; }
 .personagens #container-personagens a { display: block;    height: 300px;    position: relative;    width: 300px; }
-.personagens #container-personagens p { bottom: 0;   margin: 0;    position: absolute; color:#fff; text-align:center; }
+.personagens #container-personagens a:hover p { background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bg-transparente.png)  repeat; color:#d71c0d; }
+.personagens #container-personagens p { bottom: 0;   margin: 0;    position: absolute; color:#fff; text-align:center; width:100%; font-size: 25px; text-transform:uppercase; padding:2% 0;  }
+

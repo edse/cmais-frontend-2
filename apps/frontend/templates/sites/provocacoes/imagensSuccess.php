@@ -1,7 +1,7 @@
 <script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
-<script src="/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
-<link type="text/css" href="/portal/js/jquery-ui/css/ui-lightness/jquery-ui-1.8.11.custom.css" rel="stylesheet" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
+<script src="http://cmais.com.br/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
+<link type="text/css" href="http://cmais.com.br/portal/js/jquery-ui/css/ui-lightness/jquery-ui-1.8.11.custom.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
 <script type="text/javascript">
 	$(function() {
 		$("#rodape-portal, body").addClass('branco');
@@ -111,7 +111,7 @@
                 <div class="centro">
                   <div class="centrowrapper">
                     <span class="faixa"></span>
-                    <a title="Diogo Mainardi" href="http://tvcultura.cmais.com.br/rodaviva/diogo-mainardi" class="imgTumb"> <img name="Diogo Mainardi" alt="Diogo Mainardi" src="/portal/images/capaPrograma/rodaviva/img-padrao.png"> </a>
+                    <a title="Diogo Mainardi" href="http://tvcultura.cmais.com.br/rodaviva/diogo-mainardi" class="imgTumb"> <img name="Diogo Mainardi" alt="Diogo Mainardi" src="http://cmais.com.br/portal/images/capaPrograma/rodaviva/img-padrao.png"> </a>
                     <span class="faixa"></span>
                     <h4><a href="http://tvcultura.cmais.com.br/rodaviva/diogo-mainardi">Diogo Mainardi</a></h4>
                     
