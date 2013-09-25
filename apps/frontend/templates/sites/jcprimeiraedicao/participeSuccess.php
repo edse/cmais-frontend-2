@@ -103,7 +103,7 @@
                 <a href="#" class="btn-toggle tit">Cobertura Nacional</a>
                 <a href="#" class="botao btn-toggle"></a>
               </div>
-              <div class="grade toggle" style="background:none; padding-bottom: 25px; display: none;">
+              <div class="grade toggle" style="background:none; padding-bottom: 25px;">
                 
                 <form id="form-contato" method="post" action="">
                   <div class="linha t1">
