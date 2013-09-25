@@ -14,4 +14,5 @@
 .barra-grade.escura a {color: #fff;}
 .barra-grade a:hover{ text-decoration:none;}
 .barra-grade .tit {width: 90%;overflow: hidden;text-align: left;height: 24px;font-weight: bold;font-size: 18px;display:block; float:left;padding: 4px 15px;}
+.box-compartilhar{display: none;}
 /** /JORNAL DA CULTURA **/
