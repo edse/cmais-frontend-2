@@ -146,31 +146,31 @@
          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/tit-vamos-brincar.png" alt="Vamos Brincar!" />
          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bel-interna.png" alt="Bel" />
        </div>
-      <div class="section span8">
-        <article class="span6 jogo">
+      <div class="span8">
+        <div class="span6 jogo">
           <a href="/vilasesamo2/jogos" title="Jogo">
             <i class="sprite-icon-jogos-peq"></i>Jogos
             
           </a>
           <a href="/vilasesamo2/jogos" class="img" ><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" /></a> 
           <a class="asset" href="/vilasesamo2/jogos-interna" title="Jogos">Nome do Jogo</a>  
-        </article>
-        <article class="span6 video">
+        </div>
+        <div class="span6 video">
           <a href="/vilasesamo2/clipes" title="Vídeos">
             <i class="sprite-icon-videos-peq"></i>Vídeos
             
           </a>
           <a href="/vilasesamo2/clipes" class="img"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Clipes" /></a> 
           <a class="asset" href="/vilasesamo2/videos-interna" title="Clipes">Nome do Video</a>      
-        </article>
-        <article class="span6 atividade">
+        </div>
+        <div class="span6 atividade">
           <a href="/vilasesamo2/atividades" title="Atividades">
             <i class="sprite-icon-atividades-peq"></i>atividades
             
           </a> 
           <a href="/vilasesamo2/atividades" class="img" ><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Atividades" /></a>
           <a class="asset" href="/vilasesamo2/atividades-interna" title="Para Colorir">Nome da atividade</a>       
-        </article>
+        </div>
       
       </div>
      
