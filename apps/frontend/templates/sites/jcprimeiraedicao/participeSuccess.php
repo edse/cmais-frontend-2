@@ -191,7 +191,7 @@
                   <a href="#" class="botao btn-toggle"></a>
                 </div>
                 <div class="grade toggle" style="background:none; padding-bottom: 25px;display:none;overflow: hidden;">
-                  <?php include_partial_from_folder('blocks','global/share-2c-close', array('site' => $site, 'uri' => $uri)) ?>
+                  <?php include_partial_from_folder('blocks','global/share-2c-w-comments', array('site' => $site, 'uri' => $uri)) ?>
                 </div>
                   
               </div>
