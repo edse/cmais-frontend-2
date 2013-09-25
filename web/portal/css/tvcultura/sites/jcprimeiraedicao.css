@@ -12,6 +12,6 @@
 .barra-grade.escura {background: #333;}
 .barra-grade.escura .botao {background-position: 0 -16px;}
 .barra-grade.escura a {color: #fff;}
-.barra-grade.escura a:hover{ text-decoration:none;}
+.barra-grade a:hover{ text-decoration:none;}
 .barra-grade .tit {width: 90%;overflow: hidden;text-align: left;height: 24px;font-weight: bold;font-size: 18px;display:block; float:left;padding: 4px 15px;}
 /** /JORNAL DA CULTURA **/
