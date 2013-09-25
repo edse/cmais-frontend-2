@@ -180,6 +180,10 @@
     </div>
   </div>
   <!-- link seções -->
+  <input type="hidden" id="filter-choice" value="">
+  <div id="page_nav">
+    <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
+  </div>
 
   <div class="section todos-itens ">
     <ul  id="container-lista" class="row-fluid">
@@ -198,10 +202,7 @@
   <span class="divisa"></span>
 </div> 
 
-<input type="hidden" id="filter-choice" value="">
-<div id="page_nav">
-  <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
-</div>
+
 <!--scripts-->
 
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
