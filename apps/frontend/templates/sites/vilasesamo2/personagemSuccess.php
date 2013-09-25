@@ -185,7 +185,7 @@
     <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
   </div>
   
-  <div class="section todos-itens" display="none;">
+  <div class="section todos-itens" style="display:none;">
     <ul  id="container-lista" class="row-fluid">
       <li class="span4 jogo"><a href="#" title="thumb do jogo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a href="#" alt="Nome do jogo">Nome jogo</a></h2></li>
       <li class="span4 video"><a href="#" title="thumb do jogo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a href="#" alt="Nome do jogo">Nome jogo</a></h2></li>
