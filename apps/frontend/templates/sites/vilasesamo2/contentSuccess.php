@@ -17,10 +17,10 @@
 ?>
 <!-- /HEADER -->
 <div id="content">
-  <section class="scroll row-fluid">
+  <div class="section scroll row-fluid">
     <h3><span class="sprite-icon-jogos-med"></span>Jogos<span class="seta-scroll sprite-scroll-jogos"></span></h3>
-  </section>
-  <section class="filtro row-fluid">
+  </div>
+  <div class="section filtro row-fluid">
     <h3><span class="sprite-icon-jogos-med"></span>Jogos<a class="todos-assets" href="/vilasesamo2/jogos"><span class="sprite-btn-voltar-jogos"></span><p>todos os jogos</p></a></h3>
     <div class="conteudo-asset">
       <h2>nome do jogo</h2>
@@ -30,15 +30,15 @@
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="exemplo" />
       </div>
     </div>
-  </section>
-  <section class="relacionados">
+  </div>
+  <div class="section relacionados">
     <h2>Brinque também com:</h2>
     <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuCarrosselinternas', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
     <span class="divisa tipo2"></span>
 
 
-  </section>
-  <section class="form row-fluid">
+  </div>
+  <div class="section form row-fluid">
     <div class="span8">
     <h2>Brincar é um direito da criança</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices sapien at massa condimentum venenatis. In luctus vulputate massa, quis faucibus tellus pharetra nec. Donec convallis ligula eu augue mattis luctus. Aliquam scelerisque quam metus. Desenhe sua brincadeira preferida e envie para a galeria do site! </p>
@@ -135,8 +135,8 @@
     </div>
 
 
-  </section>
-  <section class="pais">
+  </div>
+  <div class="section pais">
     <span class="divisa"></span>
     <h2>Para adultos <span class="sprite-seta-down"></span></h2>
     <div class="redes">
@@ -186,7 +186,7 @@
     </div>
     
     <span class="linha"></span>
-  </section>
+  </div>
 </div>
 <script>
 //carrossel interna
