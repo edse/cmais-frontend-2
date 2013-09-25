@@ -16,7 +16,7 @@
 <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
 <div id="content">
-  <section class="filtro row-fluid">
+  <div class="section filtro row-fluid">
     <div class="span12">
       <?php
         include_partial_from_folder('sites/vilasesamo2', 'global/mobile_detect'); 
@@ -49,7 +49,7 @@
       <h3><i class="sprite-icon-personagens-med"></i>Personagens</h3>
       
       <div class="span10 destaque-filtro">
-        <section id="carrossel-destaque-mobile">
+        <div class="section" id="carrossel-destaque-mobile">
   <!--inicio carrossel--> 
   <div id="carrossel-mobile">
     <!--slider-->
@@ -117,7 +117,7 @@
     </ul>
 
   <!--/seletor carrossel-->   
-</section>
+</div>
       </div>
       <nav class="span2">
         <p>escolha por personagem<span class="sprite-seta-down"></span></p>
@@ -135,31 +135,128 @@
       </nav>
     </div>
     
-  </section>
+  </div>
 
   <span class="divisa"></span>
-
-  <section class="todos-itens ">
+  <!-- link seções -->
+  <div class="section vamosbrincar">
+    <span class="divisa1"></span>
+    <div class="destaques row-fluid container">
+       <div class="span4 banner">
+         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/tit-vamos-brincar.png" alt="Vamos Brincar!" />
+         <img class="thumb-personagem" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bel-interna.png" alt="Bel" />
+       </div>
+      <div class="span8">
+        <div class="span6 jogo">
+          <a href="/vilasesamo2/jogos" title="Jogo">
+            <i class="sprite-icon-jogos-peq"></i>Jogos
+            
+          </a>
+          <a href="/vilasesamo2/jogos" class="img" ><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" /></a> 
+          <a class="asset" href="/vilasesamo2/jogos-interna" title="Jogos">Nome do Jogo</a>  
+        </div>
+        <div class="span6 video">
+          <a href="/vilasesamo2/clipes" title="Vídeos">
+            <i class="sprite-icon-videos-peq"></i>Vídeos
+            
+          </a>
+          <a href="/vilasesamo2/clipes" class="img"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Clipes" /></a> 
+          <a class="asset" href="/vilasesamo2/videos-interna" title="Clipes">Nome do Video</a>      
+        </div>
+        <div class="span6 atividade">
+          <a href="/vilasesamo2/atividades" title="Atividades">
+            <i class="sprite-icon-atividades-peq"></i>atividades
+            
+          </a> 
+          <a href="/vilasesamo2/atividades" class="img" ><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Atividades" /></a>
+          <a class="asset" href="/vilasesamo2/atividades-interna" title="Para Colorir">Nome da atividade</a>       
+        </div>
+      
+      </div>
+      <div class="span12">
+        <p>Mais brincadeiras:</p>
+      </div>
+     
+    </div>
+  </div>
+  <!-- link seções -->
+  <input type="hidden" id="filter-choice" value="">
+  <div id="page_nav">
+    <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
+  </div>
+  
+  <div class="section todos-itens" style="display:none;">
     <ul  id="container-lista" class="row-fluid">
-      <li class="span4 jogo"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 video"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 atividade"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 jogo"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 video"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 atividade"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 jogo"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 video"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
-      <li class="span4 atividade"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
+      <li class="span4 jogo"><a href="#" title="thumb do jogo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a href="#" alt="Nome do jogo">Nome jogo</a></h2></li>
+      <li class="span4 video"><a href="#" title="thumb do jogo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a href="#" alt="Nome do jogo">Nome jogo</a></h2></li>
+      <li class="span4 atividade"><a href="#" title="thumb do jogo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2 href="#" alt="Nome do jogo"><a>Nome jogo</a></h2></li>
+      <li class="span4 jogo"><a href="#" title="thumb do jogo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a href="#" alt="Nome do jogo">Nome jogo</a></h2></li>
+      <li class="span4 video"><a href="#" title="thumb do jogo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a href="#" alt="Nome do jogo">Nome jogo</a></h2></li>
+      <li class="span4 atividade"><a href="#" title="thumb do jogo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a href="#" alt="Nome do jogo">Nome jogo</a></h2></li>
+      <li class="span4 jogo"><a href="#" title="thumb do jogo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a href="#" alt="Nome do jogo">Nome jogo</a></h2></li>
+      <li class="span4 video"><a href="#" title="thumb do jogo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a href="#" alt="Nome do jogo">Nome jogo</a></h2></li>
+      <li class="span4 atividade"><a href="#" title="thumb do jogo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a href="#" alt="Nome do jogo">Nome jogo</a></h2></li>
     </ul>
-  </section>
+  </div>
+  
+  <div class="section pais">
+    <span class="divisa"></span>
+    <h2>Para adultos <span class="sprite-seta-down"></span></h2>
+    <div class="redes">
+        <p>Compartilhe esta brincadeira:</p>
+        <g:plusone size="medium" count="false"></g:plusone>
+        <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pinterest" style="margin-top:-10px;" /></a>
+        <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false"></fb:like>
+        <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura" style="width: 80px;">Tweet</a>
+      </div>
+    <div class="content span12 row-fluid">
+      
+      
+      <div class="span4 dica">
+        
+        <h2><span class="sprite-aspa-esquerda"></span><a href="#">Nome da Dica</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend. Duis vel mauris et nunc posuere vehicula a id arcu. Maecenas malesuada ante ac consequat viverra. Vivamus tempor, nulla quis facilisis ullamcorper, tortor odio elementum eros, sit amet cursus felis elit vel diam. Fusce fringilla, nulla eu luctus lacinia, risus turpis varius orci, vel fringilla sem eros eu diam. Pellentesque sodales cursus elit, ac suscipit eros consectetur nec.
+        Aenean at metus.<span class="sprite-aspa-direita"></span></p>
+        
+        <button type="submit" class="btn">baixar</button>
+      </div>
+      <div class="span4 box-select">
+        <a href="#" title=""> <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="thumb do jogo" /> </a>
+        <h2><a>Nome jogo</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend.</p>
+      </div>
+      <div class="span4">
+        <p>Conheça nossos parceiros:</p>
+        <a class="publicidade" href="#" title="Publicidade">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner-sesc.png" alt="Sesc" />
+        </a>
+        <a class="publicidade" href="#" title="Publicidade">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner-mapa.png" alt="Mapa do Brincar" />
+        </a>
+        
+        <p>Você também pode escolher o jogo de acordo com as preferências da criança:</p>
+        <div class="btn-group">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">categoria 01</a></li>
+            <li><a href="#">categoria 02</a></li>
+            <li><a href="#">categoria 03</a></li>
+            <li><a href="#">categoria 04</a></li>
+          </ul>
+        </div>
+      </div>
+      <h2 class="fechar-toogle ativo"><span class="sprite-seta-up"></span></h2>
+    </div>
+    
+    <span class="linha"></span>
+  </div>
+
+  
   
   <span class="divisa"></span>
 </div> 
 
-<input type="hidden" id="filter-choice" value="">
-<nav id="page_nav">
-  <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
-</nav>
+
 <!--scripts-->
 
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
