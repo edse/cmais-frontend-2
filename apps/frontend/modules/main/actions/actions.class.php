@@ -59,9 +59,11 @@ class mainActions extends sfActions
     if($request->getParameter('site_id')>0)
       $this->search_site = Doctrine::getTable('Site')->findOneById($request->getParameter('site_id'));
     
-    if($this->term=="")
+    if($this->term==""){
       $this->term = "ver todo o conteúdo";
-    
+	  $this->verify = true;
+	}
+	
     if($this->term) {
       //$this->assets = Doctrine_Core::getTable('Asset')->getForLuceneQuery($query);
       //$this->query = Doctrine_Core::getTable('Asset')->getQueryFromLucene($this->term);
@@ -203,7 +205,7 @@ class mainActions extends sfActions
     else
       $this->getResponse()->setTitle('Resultado de busca para "'.$this->term.'" cmais+ O portal de conteúdo da Cultura', false);
 	
-	if($this->term == "ver todo o conteúdo")
+	if($this->term == "ver todo o conteúdo" && !$this->verify)
 		$this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'/tudo');
 	else
 		$this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'/search');
