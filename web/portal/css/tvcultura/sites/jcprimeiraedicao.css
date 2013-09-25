@@ -2,11 +2,11 @@
 
 /** JORNAL DA CULTURA **/
 #barra-site { background:url("http://cmais.com.br/portal/images/capaPrograma/bg-jornalCultura.png") no-repeat right -4px; margin-top:0; min-height:136px;}
-#barra-site {_background-image:url("http://cmais.com.br/images/capaPrograma/bg-jornalCultura.gif");}
+#barra-site {_background-image:url("http://cmais.com.br/portal/images/capaPrograma/bg-jornalCultura.gif");}
 .submenu-interna {width:116px;}
 #chamada {margin-bottom:0;}
 #barra-site h2 {margin-top:15px;}
 #barra-site #horario {width: 280px;}
 .barra-grade {background: #fff;height: 30px;border-bottom: 2px solid #f5f5f5;border-right: 2px solid #f5f5f5;}
-.barra-grade .botao {background: url("http://cmais.com.br/images/ico-drop.png") no-repeat;width: 16px;height: 16px;display: block;float: right;margin: 7px 7px 0 0;}
+.barra-grade .botao {background: url("http://cmais.com.br/portal/images/ico-drop.png") no-repeat;width: 16px;height: 16px;display: block;float: right;margin: 7px 7px 0 0;}
 /** /JORNAL DA CULTURA **/
