@@ -173,6 +173,9 @@
         </div>
       
       </div>
+      <div class="span12">
+        <p>Mais brincadeiras da Bel:</p>
+      </div>
      
     </div>
   </div>

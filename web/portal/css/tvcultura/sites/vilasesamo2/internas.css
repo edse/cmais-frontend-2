@@ -254,4 +254,5 @@ body.personagens { background:#b60401; }
 .personagens #container-personagens p { bottom: 0;   margin: 0;    position: absolute; color:#fff; text-align:center; width:100%; font-size: 25px; text-transform:uppercase; padding:2% 0;  }
 .personagens .vamosbrincar .span8 { float:right; margin-left:0; margin-right:0; }
 .personagens .vamosbrincar .span4 { margin:0 !important; }
-.personagens .vamosbrincar .thumb-personagem  { margin-top:-2%; }
+.personagens .vamosbrincar .thumb-personagem  { margin-top:-4%; }
+.personagens .vamosbrincar .span12 p { color:#fff; text-transform:uppercase; background:#ee3021; }
