@@ -14,10 +14,10 @@
             <h2>Para <br> colorir</h2>
           </div>
           <div class="mpc_ls_slide_item" data-x="350" data-y="120" data-delay="2000" data-duration="500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">
-            <img src="/portal/images/capaPrograma/vilasesamo2/banner/1/img_personagem_banner-topo.png" alt="Banner topo">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/1/img_personagem_banner-topo.png" alt="Banner topo">
           </div>
           <div class="mpc_ls_slide_item" data-x="180" data-y="340" data-delay="2000" data-duration="500" data-easing="easeOutElastic" data-effect="slideLeft" data-fade="on">
-            <img src="/portal/images/capaPrograma/vilasesamo2/banner/1/img_objeto_banner-topo.png" alt="Banner topo">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/1/img_objeto_banner-topo.png" alt="Banner topo">
           </div>
           <div class="mpc_ls_slide_item total">
             <a href="#" class="total"></a>
@@ -101,10 +101,10 @@
   </section>
   <!-- /carrossel desktop-->
   <!--scripts e css banner-->
-  <script type="text/javascript" src="/portal/js/layer-slider/jQuery.layerSlider.js"></script>
-  <script src="/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-  <link rel="stylesheet" href="/portal/js/layer-slider/model06/jquery.layerSlider.css">
-  <link rel="stylesheet" href="/portal/js/layer-slider/model06/main.css">
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/layer-slider/jQuery.layerSlider.js"></script>
+  <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
+  <link rel="stylesheet" href="http://cmais.com.br/portal/js/layer-slider/model06/jquery.layerSlider.css">
+  <link rel="stylesheet" href="http://cmais.com.br/portal/js/layer-slider/model06/main.css">
 
   <script>
   //banner principal

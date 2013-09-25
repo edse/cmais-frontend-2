@@ -12,13 +12,13 @@
     <div class="data">
       <div class="seta-esquerda">
         <a href="javascript: send('<?php echo $sChannel->getSlug() ?>','<?php echo $prevDate ?>');">
-          <img src="/portal/images/capaPrograma/mob/seta-esquerda-grade.png" width="100%">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/mob/seta-esquerda-grade.png" width="100%">
         </a>
       </div>
       <p><?php echo format_date($date, 'P') ?></p>  
       <div class="seta-direita">
         <a href="javascript: send('<?php echo $sChannel->getSlug() ?>','<?php echo $nextDate ?>');">
-          <img src="/portal/images/capaPrograma/mob/seta-direita-grade.png" width="100%">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/mob/seta-direita-grade.png" width="100%">
         </a>
       </div>  
     </div>

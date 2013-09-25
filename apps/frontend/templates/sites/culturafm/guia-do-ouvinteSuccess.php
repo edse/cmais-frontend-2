@@ -5,11 +5,11 @@ $base_url = str_replace("/index.php", "", implode("/", $u));
 $nextDateUrl = $base_url."/".str_replace("/","-",$nextDate); 
 $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate); 
 ?>
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/programas.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/programas.css" type="text/css" />
 <!-- <link rel="stylesheet" href="/js/jquery-ui-1.8.7/css/ui-lightness/jquery-ui-1.8.7.custom.css" type="text/css" /> -->
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
-<link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
-<script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
+<link type="text/css" href="http://cmais.com.br/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
 
 <script type="text/javascript">
 $(function(){

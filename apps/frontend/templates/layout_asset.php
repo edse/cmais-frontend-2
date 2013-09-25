@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css?nocache=54321" type="text/css" />
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/geral2.css?a=131325" type="text/css" />
     <!--[if IE]>
-      <link rel="stylesheet" type="text/css" href="/portal/css/ie-only.css" />
+      <link rel="stylesheet" type="text/css" href="http://cmais.com.br/portal/css/ie-only.css" />
     <![endif]-->
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />

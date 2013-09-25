@@ -115,7 +115,7 @@
       <div class="destaque-home-tv span9" id="destaqueForm" style="display:block;">
         <?php /*
         <h2>Concurso Cultural</h2>
-        <img class="promocao" src="/portal/images/capaPrograma/cocorico/10apps_destaque-galeria-concurso-resultado.jpg" />
+        <img class="promocao" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/10apps_destaque-galeria-concurso-resultado.jpg" />
        
         <div class="destaque span12" style="position:relative;">
           <span></span>
@@ -224,7 +224,7 @@
             </div>
           </div>
           
-          <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+          <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           
           <label generated="true" class="error" style="display: none;">*Preencha corretamente os campos em vermelho.</label>
           
@@ -264,7 +264,7 @@
         <a href="<?php echo $site->retriveUrl(); ?>/tour-virtual" title="Tour Virtual">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/cocorico/destaque-tour-virtual.jpg" alt="Tour Virtual"/>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/destaque-tour-virtual.jpg" alt="Tour Virtual"/>
             </div>
             <span>Tour Virtual</span>
           </div>
@@ -276,7 +276,7 @@
         <a href="<?php echo $site->retriveUrl(); ?>/erros-de-gravacao" title="Erros de Gravação">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/cocorico/destaque-erro-gravacao.jpg" alt="Erros de Gravação"/>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/destaque-erro-gravacao.jpg" alt="Erros de Gravação"/>
             </div>
             <span>Erros de Gravação</span>
           </div>
@@ -288,7 +288,7 @@
         <a href="<?php echo $site->retriveUrl(); ?>/instagram" title="Instagram">
           <div class="item">
             <div class="img-bast">
-                <img src="/portal/images/capaPrograma/cocorico/destaque-instagram.jpg" alt="Instagram"/>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/destaque-instagram.jpg" alt="Instagram"/>
             </div>
             <span>Instagram</span>
           </div>

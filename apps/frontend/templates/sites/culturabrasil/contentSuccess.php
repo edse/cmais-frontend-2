@@ -1,14 +1,14 @@
 <?php use_helper('I18N', 'Date') ?>
 <!-- Le styles--> 
-<link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/culturabrasil.css" rel="stylesheet" type="text/css" />
+<link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/culturabrasil.css" rel="stylesheet" type="text/css" />
     
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script src="/portal/js/bootstrap/bootstrap.js"></script>
+<script src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
 
 <?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site, 'asset'=>$asset)) ?>
 
@@ -73,7 +73,7 @@
         </div>
         <!--col esquerda-->
         <div class="span4 direita">
-          <link href="/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+          <link href="http://cmais.com.br/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
           
             <?php
               $playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
@@ -85,7 +85,7 @@
               }
             ?>
             <?php if(count($related_audios) > 0): ?>
-          <script type="text/javascript" src="/portal/js/audioplayer/js/jquery.jplayer.min.js"></script>
+          <script type="text/javascript" src="http://cmais.com.br/portal/js/audioplayer/js/jquery.jplayer.min.js"></script>
           <script type="text/javascript">
             //<![CDATA[
             $(document).ready(function(){

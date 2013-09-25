@@ -98,7 +98,7 @@
     <!-- facebook e twitter -->
     <div class="twitter span4">
       <a href="https://twitter.com/tvcultura" title="Cocórico no Twitter" target="_blank">
-        <img src="/portal/images/capaPrograma/cocorico/naweb-btn-twitter.png"/>
+        <img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/naweb-btn-twitter.png"/>
       </a>
       <br>
       
@@ -124,7 +124,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <!--embedagram-->
-<script type="text/javascript" src="/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
+<script type="text/javascript" src="http://cmais.com.br/portal/js/embedagram/jquery-embedagram.pack.js"></script> 
 <script type="text/javascript">
 $('#slideTvCocorico').embedagram({
     instagram_id: 290753701,

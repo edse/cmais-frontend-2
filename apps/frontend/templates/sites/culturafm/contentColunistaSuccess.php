@@ -1,7 +1,7 @@
-<link type="text/css" href="/portal/css/tvcultura/secoes/programas.css" rel="stylesheet">
-<link type="text/css" href="/portal/css/tvcultura/sites/culturafm.css" rel="stylesheet">
-<link rel="stylesheet" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" type="text/css">
-<script src="/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js" type="text/javascript">
+<link type="text/css" href="http://cmais.com.br/portal/css/tvcultura/secoes/programas.css" rel="stylesheet">
+<link type="text/css" href="http://cmais.com.br/portal/css/tvcultura/sites/culturafm.css" rel="stylesheet">
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" type="text/css">
+<script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js" type="text/javascript">
 <script type="text/javascript">
 	$(function() {
 		

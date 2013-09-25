@@ -174,7 +174,7 @@
                             <button class="btn" type="submit" name="enviar" id="enviar" value="sim">
                               enviar
                             </button>
-                            <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                            <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                           </div>
                         </div>
                       </fieldset>

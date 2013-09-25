@@ -1,13 +1,13 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
-<link href="/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/institucional.css" type="text/css" rel="stylesheet">
-<link href="/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
-<script src="/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
-<script src="/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
+<link href="http://cmais.com.br/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/institucional.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
 <script type="text/javascript">
       //carrossel
       $(function(){
@@ -158,7 +158,7 @@
               <span class="top"></span>
               <div class="propaganda">
                 <a href="http://www.facebook.com/ratimbum" title="fanpage" target="_blank">
-                  <img src="/portal/tvratimbum/image/fanpagetvrtb.jpg" alt="propaganda" />
+                  <img src="http://cmais.com.br/portal/tvratimbum/image/fanpagetvrtb.jpg" alt="propaganda" />
                 </a>
               </div>
               <span class="bottom"></span>
@@ -182,7 +182,7 @@
               <h3>Voc&ecirc; Sabia<span></span></h3>
               <p>Escolhendo brinquedos com pouca embalagem voce ajuda o planeta, pois produz menos lixo.</p>
               <p class="exclamacao">Fa&ccedil;a sua parte!</p>
-              <img alt="mundo" src="/portal/tvratimbum/image/ex-24.png"><!--tamanho maximo da imagem: 125x130>
+              <img alt="mundo" src="http://cmais.com.br/portal/tvratimbum/image/ex-24.png"><!--tamanho maximo da imagem: 125x130>
             
             </div-->
       </div>

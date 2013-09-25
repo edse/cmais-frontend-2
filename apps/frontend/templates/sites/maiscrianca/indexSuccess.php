@@ -21,16 +21,16 @@ if($feriasSection)
 }
 ?>
 <!-- Le styles -->
-<link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"  >
-<link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"  >
+<link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script type="text/javascript" src="/portal/js/bootstrap/bootstrap.js"></script>
-<script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/maiscrianca2.css" type="text/css" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/tab.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/maiscrianca2.css" type="text/css" />
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
@@ -119,7 +119,7 @@ if($feriasSection)
                 <textarea id="charada" onKeyDown="limitText(this,250,'#textCounter');"  name="charada"></textarea>
               </label>
               <br />
-              <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+              <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
               <button type="submit" class="btn" id="enviar" name="enviar" value="enviar">Enviar</button>
             </form>
           </div>
@@ -224,7 +224,7 @@ if($feriasSection)
   </div>
 </div>
 
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
     $('input#enviar').click(function(){

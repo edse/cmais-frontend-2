@@ -16,8 +16,8 @@
 $assets = $pager->getResults();
 ?>
 
-<script type="text/javascript" src="/portal/js/bootstrap/popover.js"></script>
-<link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
+<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/popover.js"></script>
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <!-- container-->
 <div class="container tudo receitinhas">
@@ -319,8 +319,8 @@ $assets = $pager->getResults();
 
 
 
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-<script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script>
 $(document).ready(function(){
       /* form tv cocorico */

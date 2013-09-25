@@ -1,7 +1,7 @@
 <?php $a = Doctrine_Query::create() -> select('aa.*') -> from('AssetAnswer aa, RelatedAsset ra, Asset a') -> where('aa.asset_id = a.id') -> andWhere('a.id = ra.asset_id') -> andWhere('ra.parent_asset_id = ?', (int)$asset->id) -> orderBy('ra.display_order') -> execute();?>
 
-<link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css">
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 
 <style type="text/css">
   #menuFloat {    margin-left: 0;  }
@@ -32,7 +32,7 @@
   <!-- BARRA SITE -->
   <div id="barra-site">
     <div class="topo-programa">
-      <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/multicultura/images/logo-multicultura.png" /></a></h2>
+      <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://cmais.com.br/portal/multicultura/images/logo-multicultura.png" /></a></h2>
       <?php if(isset($program) && $program->id > 0): ?>
       <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program))  ?>
       <?php endif;?>
@@ -135,7 +135,7 @@
                     <div class="votacao">
                       <input id="votar" type="submit" value="votar" />
                       <div id="enviando-voto" align="center"style="display:none">
-                        <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
+                        <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
                         Registrando voto, aguarde um momentinho...
                       </div>
                     </div>

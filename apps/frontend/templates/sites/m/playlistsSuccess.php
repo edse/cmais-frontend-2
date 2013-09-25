@@ -34,7 +34,7 @@ $podcasts = new SimpleXMLElement($xml);
   			    Playlists
   			  </a>
   			  
-  			  <img src="/portal/images/capaPrograma/mob/seta-playlist.gif" height="10px">
+  			  <img src="http://cmais.com.br/portal/images/capaPrograma/mob/seta-playlist.gif" height="10px">
   			  
   			  <a href="#" class="escolhida">
   			    <?php echo $_REQUEST['playlist'] ?>

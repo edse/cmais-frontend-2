@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
 <script>
   $("body").addClass("interna personagens");
@@ -26,7 +26,7 @@
       <div id="container-personagens" class="asset">
         <div class="element q-pers-03" data-order="1">
           <a href="#">
-            <img src="/portal/images/capaPrograma/vilasesamo2/bel.png" alt="Bel" />
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bel.png" alt="Bel" />
             <p>Bel</p>
           </a>
         </div>
@@ -41,7 +41,7 @@
     </div>
   </section>
 </div>
-<script src="/portal/js/isotope/jquery.isotope.min.js"></script>
+<script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
 <script>
   var $container = $('#container-personagens');
   $container.isotope({

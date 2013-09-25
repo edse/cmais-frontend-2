@@ -184,7 +184,7 @@
         <a class="tit todos" href="http://cmais.com.br/busca?term=ver+todo+o+conte%C3%BAdo">Todo o conteúdo</a>
       </div>
       <div class="span2 logo">
-        <a title="TV Cultura" href="http://tvcultura.cmais.com.br/" class="cultura"><img src="/portal/images/logo-cultura.png" alt="TV Cultura" /></a>
+        <a title="TV Cultura" href="http://tvcultura.cmais.com.br/" class="cultura"><img src="http://cmais.com.br/portal/images/logo-cultura.png" alt="TV Cultura" /></a>
       </div>
       <p class="copyright">Copyright &copy; 2013 Fundação Padre Anchieta</p>
     </div>

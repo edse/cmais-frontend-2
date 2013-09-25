@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/geral.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/tvcocorico.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/geral.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/tvcocorico.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <!-- TOPO CMAIS REDUZIDO-->
@@ -27,7 +27,7 @@
       
       <!--LOGO TVCOCORICO -->
       <h1>
-        <img src="/portal/images/capaPrograma/cocoricoHome/logo-tv-cocorico.png" alt="TV Cocorico" />
+        <img src="http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/logo-tv-cocorico.png" alt="TV Cocorico" />
       </h1>  
       <!--LOGO TVCOCORICO -->
       
@@ -39,7 +39,7 @@
       <div id="horario-tv">
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <a href="http://youtube.com.br" title="Canal TV Cocoricó">
-          <img src="/portal/images/capaPrograma/cocoricoHome/youtube-tvcocorico.png" alt="TV Cocorico" />
+          <img src="http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/youtube-tvcocorico.png" alt="TV Cocorico" />
         </a>
       </div>
       <!-- HORARIO -->
@@ -128,11 +128,11 @@
                     <label for="captcha">Confirma&ccedil;&atilde;o</label>
                     <br />
                     <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
-                      <img src="/portal/js/validate/demo/captcha/images/image.php?1342047830" width="132" height="46" alt="Captcha image" id="captcha_image" />
+                      <img src="http://cmais.com.br/portal/js/validate/demo/captcha/images/image.php?1342047830" width="132" height="46" alt="Captcha image" id="captcha_image" />
                     </a>
                     <label class="msg" for="captcha">Digite no campo abaixo os caracteres que voc&ecirc; v&ecirc; na imagem:</label>
                     <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
-                    <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                    <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                     <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar" />
                   </div>
                 </form>
@@ -154,7 +154,7 @@
     <!-- /CAPA SITE -->
 </div>
 
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         $('input#enviar').click(function(){

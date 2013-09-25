@@ -2,8 +2,8 @@
 $assets = $pager->getResults(); //depois tem de ordenar por ranking...
 ?>
 
-<script type="text/javascript" src="/portal/js/bootstrap/popover.js"></script>
-<link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
+<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/popover.js"></script>
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <!-- container-->
 <div class="container tudo receitinhas">
@@ -125,7 +125,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     
     <div class="span8">
       <div class="span6">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" /></a>
+        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" /></a>
         <a href="/cocorico/receitinhas-interna" class="span12 btn" title="">Nome do Joguinho</a>
         <ul class="likes">
           <li class="ativo"></li>
@@ -137,7 +137,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
       </div>
       
       <div class="span6">
-        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" /></a>
+        <a href="/cocorico/receitinhas-interna" title="link do jogo"><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" /></a>
         <a href="/cocorico/receitinhas-interna" class="span12 btn" title="">Nome do Joguinho</a>
         <ul class="likes">
           <li class="ativo"></li>
@@ -150,22 +150,22 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
     </div>
     <div class="span8">
       <ul class="destaques-small destaque-especial ">
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span3"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
       
     </ul>
     </div>
@@ -176,30 +176,30 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
  <!--row-->
   <div class="row-fluid conteudo">
     <ul class="destaques-small destaque2">
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
-      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
+      <li class="span2"><a href="/cocorico/receitinhas-interna" title=""><img class="span12" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/jogo-home.jpg" alt="jogo" />Nome do Joguinho</a></li>
     </ul>
   </div>
   <!-- /row-->
@@ -281,8 +281,8 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
 </div>
 <!-- /container-->
 
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-<script type="text/javascript" src="/portal/js/validate/additional-methods.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script>
 $(document).ready(function(){
       /* form tv cocorico */

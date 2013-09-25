@@ -8,10 +8,10 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
-    <link rel="stylesheet" type="text/css" href="/portal/controle-remoto/css/controleremoto.css">
-    <link href="/portal/controle-remoto/css/jPlayer.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="/portal/controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />
-    <script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>    
+    <link rel="stylesheet" type="text/css" href="http://cmais.com.br/portal/controle-remoto/css/controleremoto.css">
+    <link href="http://cmais.com.br/portal/controle-remoto/css/jPlayer.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/controle-remoto/css/jplayer.blue.monday.css" type="text/css" media="all" />
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>    
     <!--DFP -->
     <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
     <script type='text/javascript'>
@@ -39,12 +39,12 @@
       })();
     </script>
 
-      <script src="/portal/controle-remoto/js/jquery.min.js" type="text/javascript"></script>
-      <script src="/portal/controle-remoto/js/main.js" type="text/javascript"></script>
+      <script src="http://cmais.com.br/portal/controle-remoto/js/jquery.min.js" type="text/javascript"></script>
+      <script src="http://cmais.com.br/portal/controle-remoto/js/main.js" type="text/javascript"></script>
       
-      <script src="/portal/controle-remoto/js/jquery.min-1.8.js" type="text/javascript"></script>
-      <script src="/portal/controle-remoto/js/jquery.jplayer.min.js" type="text/javascript"></script>
-      <script type="text/javascript" src="/portal/controle-remoto/js/jquery.jplayer.inspector.js"></script>
+      <script src="http://cmais.com.br/portal/controle-remoto/js/jquery.min-1.8.js" type="text/javascript"></script>
+      <script src="http://cmais.com.br/portal/controle-remoto/js/jquery.jplayer.min.js" type="text/javascript"></script>
+      <script type="text/javascript" src="http://cmais.com.br/portal/controle-remoto/js/jquery.jplayer.inspector.js"></script>
       <script type="text/javascript">
       //<![CDATA[
       $(document).ready(function(){
@@ -158,8 +158,8 @@
     <title>Cultura FM - Controle Remoto</title>
     
     <!-- Le styles--> 
-    <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>

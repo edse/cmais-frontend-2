@@ -1,9 +1,9 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/contato.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 
-<script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
-<script src="/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
-<link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
+<script src="http://cmais.com.br/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
+<link type="text/css" href="http://cmais.com.br/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
 
 <?php /*
 <script type="text/javascript">
@@ -155,11 +155,11 @@
                     <div class="codigo" id="captchaimage">
                       <label for="captcha">Confirmação</label>
                       <br />
-                      <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código"> <img src="/portal/js/validate/demo/captcha/images/image.php?<?php echo time();?>" width="132" height="46" alt="Captcha image" id="captcha_image" /> </a>
+                      <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código"> <img src="http://cmais.com.br/portal/js/validate/demo/captcha/images/image.php?<?php echo time();?>" width="132" height="46" alt="Captcha image" id="captcha_image" /> </a>
                       <label class="msg" for="captcha">Digite no campo abaixo os caracteres que você vê na imagem:</label>
                       <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
                     </div>
-                    <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                    <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                     <input type="submit" value="confirmar" id="enviar" name="enviar" class="btn">
                     <input type="submit" value="cancelar" id="cancelar" name="cancelar" class="btn">
                   </form>
@@ -256,7 +256,7 @@
   <!-- / CAPA SITE -->
 </div>
 <!--/bg provoca-->
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     /* somente para teste

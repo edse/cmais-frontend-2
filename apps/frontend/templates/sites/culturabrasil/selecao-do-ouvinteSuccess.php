@@ -1,15 +1,15 @@
 <?php use_helper('I18N', 'Date') ?>
 
 <!-- Le styles--> 
-<link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="/portal/css/tvcultura/sites/culturabrasil.css" rel="stylesheet" type="text/css" />
+<link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/culturabrasil.css" rel="stylesheet" type="text/css" />
 
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script src="/portal/js/bootstrap/bootstrap.js"></script>
+<script src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
 
 <?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
 
@@ -135,7 +135,7 @@
           </fieldset>
           <!-- item musica-->
           <?php endfor; ?>
-          <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" id="ajax-loader" />
+          <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" id="ajax-loader" />
           <input type="submit" class="enviar pull-right" id="enviar" value="enviar"/>
           
         </form>
@@ -167,7 +167,7 @@
 </section>
 <!--/section miolo-->
 
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
   var validator = $('#form-selecao').validate({

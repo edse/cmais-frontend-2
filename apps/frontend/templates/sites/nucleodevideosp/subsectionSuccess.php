@@ -6,10 +6,10 @@ if(isset($pager)){
   }  
 } 
 ?>
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/<?php echo $section->Parent->getSlug() ?>.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
-<link type="text/css" href="/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
-<script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/<?php echo $section->Parent->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link type="text/css" href="http://cmais.com.br/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
 <script type="text/javascript">
 $(function(){
   // Datepicker
@@ -279,7 +279,7 @@ $(function(){
                <!-- BOX PUBLICIDADE -->
               <div style="width: 300px; height: 50px; overflow: hidden" class="box-publicidade grid1">
                   <a target="_blank" href="http://www.educacao.sp.gov.br" name="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o" title="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o">
-                  	<img src="/portal/images/capaPrograma/nucleodevideosp/banner-educacao.gif" alt="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o">
+                  	<img src="http://cmais.com.br/portal/images/capaPrograma/nucleodevideosp/banner-educacao.gif" alt="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o">
                   </a>
               </div>                                                
               <!-- / BOX PUBLICIDADE -->

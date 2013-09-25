@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
 <script type="text/javascript">
 $(function(){
   //hover states on the static widgets
@@ -116,7 +116,7 @@ $(function(){
                 <?php endif; ?>
                 
               <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-              <script type="text/javascript" src="/portal/js/beforeafter/jquery.qbeforeafter.js"></script>
+              <script type="text/javascript" src="http://cmais.com.br/portal/js/beforeafter/jquery.qbeforeafter.js"></script>
               <script type="text/javascript">$( function () {
       					$('.pic1').qbeforeafter({
       						defaultgap:50,
@@ -127,7 +127,7 @@ $(function(){
       					});
       				});
       				</script>
-              <link rel="stylesheet" href="/portal/js/beforeafter/qbeforeafter.css" />
+              <link rel="stylesheet" href="http://cmais.com.br/portal/js/beforeafter/qbeforeafter.css" />
                <style type="text/css">		
                 #container {margin-top:20px; width:10000px;}
               	#container p {margin-bottom:20px; text-align:left;}
@@ -145,8 +145,8 @@ $(function(){
                 <ul class="nav-conteudo conteudo" id="container">
                   <li class="filho ativo" style="display:block;">
                     <div class="pic1">
-                      <img src="/portal/images/beforeafter/regina/foto1a.jpg" alt="" width="640" height="390"/>
-                      <img src="/portal/images/beforeafter/regina/foto1b.jpg" alt="" width="640" height="390"/>
+                      <img src="http://cmais.com.br/portal/images/beforeafter/regina/foto1a.jpg" alt="" width="640" height="390"/>
+                      <img src="http://cmais.com.br/portal/images/beforeafter/regina/foto1b.jpg" alt="" width="640" height="390"/>
                     </div>
                     <p>
                      Gravação do programa Panorama com Regina Duarte em 1983
@@ -154,8 +154,8 @@ $(function(){
                   </li>
                   <li class="filho">
                     <div class="pic1">
-                      <img src="/portal/images/beforeafter/regina/foto2a.jpg" alt="" width="640" height="390"/>
-                      <img src="/portal/images/beforeafter/regina/foto2b.jpg" alt="" width="640" height="390"/>
+                      <img src="http://cmais.com.br/portal/images/beforeafter/regina/foto2a.jpg" alt="" width="640" height="390"/>
+                      <img src="http://cmais.com.br/portal/images/beforeafter/regina/foto2b.jpg" alt="" width="640" height="390"/>
                     </div>
                     <p>
                       Em 1977, Regina Duarte participava do Vox Populi
@@ -163,8 +163,8 @@ $(function(){
                   </li>
                   <li class="filho">
                     <div class="pic1">
-                      <img src="/portal/images/beforeafter/regina/foto3a.jpg" alt="" width="640" height="390"/>
-                      <img src="/portal/images/beforeafter/regina/foto3b.jpg" alt="" width="640" height="390"/>
+                      <img src="http://cmais.com.br/portal/images/beforeafter/regina/foto3a.jpg" alt="" width="640" height="390"/>
+                      <img src="http://cmais.com.br/portal/images/beforeafter/regina/foto3b.jpg" alt="" width="640" height="390"/>
                     </div>
                     <p>
                      Mais uma vez o Vox Populi recebia Regina Duarte 1984

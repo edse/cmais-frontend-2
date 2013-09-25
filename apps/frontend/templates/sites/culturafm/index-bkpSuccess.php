@@ -1,6 +1,6 @@
-<script type="text/javascript" src="/portal/js/culturafm.js"></script>
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
-<script type="text/javascript" src="/portal/js/swfobject/swfobject.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/culturafm.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/swfobject/swfobject.js"></script>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <script>
@@ -26,7 +26,7 @@
 
         <!-- <div class="topo-programa" id="home" style="background-image:url('http://culturafm.cmais.com.br/portal/images/capaPrograma/culturafm/destaque_fm2.jpg');"> -->
         <div class="topo-programa" id="home" style="height: 334px;">
-          <h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/images/capaPrograma/culturafm/logo.png"></a></h2>
+          <h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://cmais.com.br/portal/images/capaPrograma/culturafm/logo.png"></a></h2>
           
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>

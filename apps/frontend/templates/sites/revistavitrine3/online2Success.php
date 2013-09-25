@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/todos-videos.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/todos-videos.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <?php use_helper('I18N', 'Date')?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))?>
 
@@ -12,7 +12,7 @@
   <!-- BARRA SITE -->
   <div id="barra-site">
     <div class="topo-programa">
-      <h2><img title="Vitrine" alt="Revista Vitrine" src="/portal/images/capaPrograma/revistavitrine/logo-vitrine.png"></h2>
+      <h2><img title="Vitrine" alt="Revista Vitrine" src="http://cmais.com.br/portal/images/capaPrograma/revistavitrine/logo-vitrine.png"></h2>
     </div>
   </div>
   <!-- /BARRA SITE -->
@@ -54,7 +54,7 @@
           <ul>
             <li>
               <a href="#" title="Edição #1">
-                <img src="/portal/images/capaPrograma/revistavitrine/thumb-revista.jpg" alt="Edicao #1" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/revistavitrine/thumb-revista.jpg" alt="Edicao #1" />
                 <div class="descricao">
                   <h2>Vitrine #03</h2>
                   <p class="data">Junho - 2013</p>
@@ -64,7 +64,7 @@
             </li>
             <li>
               <a href="#" title="Edição #1">
-                <img src="/portal/images/capaPrograma/revistavitrine/thumb-revista.jpg" alt="Edicao #1" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/revistavitrine/thumb-revista.jpg" alt="Edicao #1" />
                 <div class="descricao">
                   <h2>Vitrine #03</h2>
                   <p class="data">Junho - 2013</p>
@@ -74,7 +74,7 @@
             </li>
             <li>
               <a href="#" title="Edição #1">
-                <img src="/portal/images/capaPrograma/revistavitrine/thumb-revista.jpg" alt="Edicao #1" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/revistavitrine/thumb-revista.jpg" alt="Edicao #1" />
                 <div class="descricao">
                   <h2>Vitrine #03</h2>
                   <p class="data">Junho - 2013</p>
@@ -84,7 +84,7 @@
             </li>
             <li>
               <a href="#" title="Edição #1">
-                <img src="/portal/images/capaPrograma/revistavitrine/thumb-revista.jpg" alt="Edicao #1" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/revistavitrine/thumb-revista.jpg" alt="Edicao #1" />
                 <div class="descricao">
                   <h2>Vitrine #03</h2>
                   <p class="data">Junho - 2013</p>
@@ -94,7 +94,7 @@
             </li>
             <li>
               <a href="#" title="Edição #1">
-                <img src="/portal/images/capaPrograma/revistavitrine/thumb-revista.jpg" alt="Edicao #1" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/revistavitrine/thumb-revista.jpg" alt="Edicao #1" />
                 <div class="descricao">
                   <h2>Vitrine #03</h2>
                   <p class="data">Junho - 2013</p>

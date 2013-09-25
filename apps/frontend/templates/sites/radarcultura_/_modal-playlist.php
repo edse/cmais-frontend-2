@@ -102,7 +102,7 @@
                    </div>
                    <div class="modal-footer">
                       <!--<a data-dismiss="modal" aria-hidden="true" class="btn btn-fechar">Fechar</a>-->
-                      <img src="/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader3"/>
+                      <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="carregando..." style="display:none; margin: 0 30px;" width="16px" height="16px" id="loader3"/>
                       <input type="submit" class="btn btn-info btn-enviar" value="Enviar"/>
                     </div>
                 </form> 
@@ -113,8 +113,8 @@
         </div>
         <!--/topo Playlists/contagem-->
         
-        <script type="text/javascript" src="/portal/js/validate/jquery.validate.min.js"></script>
-        <script src="/portal/js/messages_ptbr.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.min.js"></script>
+        <script src="http://cmais.com.br/portal/js/messages_ptbr.js" type="text/javascript"></script>
         <script type="text/javascript">
           $(document).ready(function(){
 

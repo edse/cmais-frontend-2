@@ -1,11 +1,11 @@
 <!--BOOTSTRAP-->
-<script src="/portal/js/bootstrap/bootstrap.min.js"></script>
+<script src="http://cmais.com.br/portal/js/bootstrap/bootstrap.min.js"></script>
 <!--BOOTSTRAP-->
 
 <!-- CSS BOOTSTRAP -->
-<link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap-responsive.min.css">
-<link rel="stylesheet" href="/portal/js/bootstrap/css/style.css">
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/style.css">
 <!-- /CSS BOOTSTRAP -->
 
 <!--ENQUETE RAPIDA-->
@@ -36,7 +36,7 @@
       
       <!--ENVIAR-->
       <div id="btn-nav" align="center">
-        <img src="/portal/images/ajax-loader.gif" alt="computando voto..." width="16px" height="16px" id="ajax-loader" style="display:none;" />
+        <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="computando voto..." width="16px" height="16px" id="ajax-loader" style="display:none;" />
         <input type="submit" name="votar" id="votar" class="btn-votar" value=""/>
       </div>
       <!--/ENVIAR-->
@@ -77,7 +77,7 @@
 <!--ENQUETE RAPIDA-->
 
 <!--SCRIPT-->
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script>
 $(document).ready(function(){
   

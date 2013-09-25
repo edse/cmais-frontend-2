@@ -1,5 +1,5 @@
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
-    <link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 
     <?php use_helper('I18N', 'Date') ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
@@ -179,11 +179,11 @@
                     <label for="captcha">Confirma&ccedil;&atilde;o</label>
                     <br />
                     <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
-                      <img src="/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
+                      <img src="http://cmais.com.br/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
                     </a>
                     <label class="msg" for="captcha">Digite no campo abaixo os caracteres que voc&ecirc; v&ecirc; na imagem:</label>
                     <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
-                    <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                    <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                     <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
                   </div>
                 </form>
@@ -196,7 +196,7 @@
               <!-- BOX PUBLICIDADE -->
               <div style="width: 300px; height: 50px; overflow: hidden" class="box-publicidade grid1">
                   <a target="_blank" href="http://www.educacao.sp.gov.br" name="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o" title="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o">
-                  	<img src="/portal/images/capaPrograma/nucleodevideosp/banner-educacao.gif" alt="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o">
+                  	<img src="http://cmais.com.br/portal/images/capaPrograma/nucleodevideosp/banner-educacao.gif" alt="Veja nossos v&iacute;deos no portal da Secretaria de Educa&ccedil;&atilde;o">
                   </a>
               </div>                                                
               <!-- / BOX PUBLICIDADE -->
@@ -215,7 +215,7 @@
     </div>
     <!-- / CAPA SITE -->
 
-    <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
       	$('input#enviar').click(function(){

@@ -5,8 +5,8 @@
       $bio = $block->retriveDisplays();
   }
 ?>
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/deupaulanatv.css" type="text/css" />
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/deupaulanatv.css" type="text/css" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 
 <script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
 
@@ -168,7 +168,7 @@
                 <p>Mande o seu #tema</p> 
                 <input class="seutema" type="text" name="tema" id="tema" />
                 <input class="enviar" type="submit" name="enviar-tema" id="enviar-tema" value="enviar" />
-                <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader-tema" />             
+                <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader-tema" />             
               </form>
               <script type="text/javascript">
                 $(document).ready(function(){

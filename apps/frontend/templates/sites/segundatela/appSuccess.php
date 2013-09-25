@@ -8,10 +8,10 @@
     <meta name="author" content="Emerson Estrella">
 
     <!-- Le styles -->
-    <link href="/portal/js/bootstrap-edse/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap-edse/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/js/bootstrap-edse/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/js/bootstrap-edse/assets/css/bootstrap-responsive.css" rel="stylesheet">
 
-    <link href="/portal/js/bootstrap-edse/assets/css/docs.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/js/bootstrap-edse/assets/css/docs.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -86,19 +86,19 @@
     <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png"></a><br /><a href="http://second-screen.appengine.com">Second Screen Application</span> developed by <a href="http://emersonestrella.appspot.com">Emerson Estrella</a>.<br />Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
   </footer>
     
-  <script src="/portal/js/bootstrap-edse/assets/js/jquery.js"></script>
-  <script src="/portal/js/bootstrap-edse/assets/js/bootstrap.min.js"></script>
+  <script src="http://cmais.com.br/portal/js/bootstrap-edse/assets/js/jquery.js"></script>
+  <script src="http://cmais.com.br/portal/js/bootstrap-edse/assets/js/bootstrap.min.js"></script>
 
   <audio id="audio-ping">
-    <source src="/portal/audio/ping.mp3" />
-    <source src="/portal/audio/ping.ogg" />
+    <source src="http://cmais.com.br/portal/audio/ping.mp3" />
+    <source src="http://cmais.com.br/portal/audio/ping.ogg" />
   </audio>
 
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>    
-  <script type="text/javascript" src="/portal/js/websocket-js/swfobject.js"></script>
-  <script type="text/javascript" src="/portal/js/websocket-js/web_socket.js?a"></script>
-  <script type="text/javascript" src="/portal/js/json2.js"></script>
-  <script type="text/javascript" src="/portal/js/segundatela/secondscreenapp/app.js?nocache=<?php echo time()?>"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/swfobject.js"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/web_socket.js?a"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/json2.js"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/segundatela/secondscreenapp/app.js?nocache=<?php echo time()?>"></script>
 
   <div id="fb-root"></div>
   <script>(function(d, s, id) {

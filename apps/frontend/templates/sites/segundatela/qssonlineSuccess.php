@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/quemsabesabe.css?nocache=<?php echo time()?>" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/segundatela/quemsabesabe.css?nocache=<?php echo time()?>" type="text/css" />
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
@@ -114,7 +114,7 @@
               
               <div id="ranking-user"class="row-fluid"></div>  
               <div id="ranking-diario"class="row-fluid"></div>  
-                 <img id="ajax-loader-qss" src="/portal/images/ajax-loader-qss.gif" style="margin: 5% auto; display:block;">
+                 <img id="ajax-loader-qss" src="http://cmais.com.br/portal/images/ajax-loader-qss.gif" style="margin: 5% auto; display:block;">
               </div>
               <!--item lista-->
             
@@ -142,8 +142,8 @@
 <!--/section-body-->
 
 
-<script type="text/javascript" src="/portal/js/websocket-js/swfobject.js"></script>
-<script type="text/javascript" src="/portal/js/websocket-js/web_socket.js?a"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/swfobject.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/websocket-js/web_socket.js?a"></script>
 <script>
   $(document).ready(function() {
     setInterval( function() {
@@ -179,22 +179,22 @@
  */
  ?>
 </script>
-<script src="/portal/js/segundatela/secondscreenqss/json2.js"></script>
-<script src="/portal/js/segundatela/secondscreenqss/app.js"></script>
+<script src="http://cmais.com.br/portal/js/segundatela/secondscreenqss/json2.js"></script>
+<script src="http://cmais.com.br/portal/js/segundatela/secondscreenqss/app.js"></script>
 
 <audio id="audio-ping">
-  <source src="/portal/audio/ping.mp3" />
-  <source src="/portal/audio/ping.ogg" />
+  <source src="http://cmais.com.br/portal/audio/ping.mp3" />
+  <source src="http://cmais.com.br/portal/audio/ping.ogg" />
 </audio>
 <audio id="audio_tictac" loop>
-  <source src="/portal/audio/tictac.mp3" />
-  <source src="/portal/audio/tictac.ogg" />
+  <source src="http://cmais.com.br/portal/audio/tictac.mp3" />
+  <source src="http://cmais.com.br/portal/audio/tictac.ogg" />
 </audio>
 <audio id="audio_correct">
-  <source src="/portal/audio/correct.mp3" />
-  <source src="/portal/audio/correct.ogg" />
+  <source src="http://cmais.com.br/portal/audio/correct.mp3" />
+  <source src="http://cmais.com.br/portal/audio/correct.ogg" />
 </audio>
 <audio id="audio_wrong">
-  <source src="/portal/audio/wrong.mp3" />
-  <source src="/portal/audio/wrong.ogg" />
+  <source src="http://cmais.com.br/portal/audio/wrong.mp3" />
+  <source src="http://cmais.com.br/portal/audio/wrong.ogg" />
 </audio>

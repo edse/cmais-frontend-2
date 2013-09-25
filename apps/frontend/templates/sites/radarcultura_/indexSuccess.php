@@ -2,16 +2,16 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
     <!-- Le styles -->
-    <link href="/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
+    <link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/css/tvcultura/sites/radarcultura.css" rel="stylesheet" type="text/css" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <script src="/portal/js/bootstrap/bootstrap.js"></script>
+    <script src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
     
     <script>
       $(function(){

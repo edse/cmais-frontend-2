@@ -87,11 +87,11 @@ $sections = Doctrine_Query::create()
       <?php if($i > 0): ?>
         <?php if ($sections[$i-1]->getSlug() == 'home2'): ?>
   <a href="<?php echo url_for('homepage') . $site->getSlug(); ?>" class="anteriorC" title="Anterior">
-    <img src="/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" />
   </a>
         <?php else: ?>
   <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $sections[$i-1]->getSlug(); ?>" class="anteriorC" title="Anterior">
-    <img src="/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" />
   </a>
         <?php endif; ?>
       <?php endif; ?>
@@ -99,7 +99,7 @@ $sections = Doctrine_Query::create()
       <?php if($i < count($sections)): ?>
         <?php if($sections[$i+1]->getSlug() != ''): ?>
   <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $sections[$i+1]->getSlug(); ?>" class="posterior"  title="Próxima">
-    <img src="/portal/images/capaPrograma/castelo/btn-tela-proxima.png" alt="Próxima Tela" />
+    <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-tela-proxima.png" alt="Próxima Tela" />
   </a>
         <?php endif; ?>
       <?php endif; ?>
@@ -129,9 +129,9 @@ $sections = Doctrine_Query::create()
                 <?php for($i=0; $i<count($sections); $i++): ?>
                   <?php if($sections[$i]->getSlug() != ''): ?>
                     <?php if($sections[$i]->getSlug() == $section->getSlug()): ?>
-                    <img class="on" src="/portal/images/capaPrograma/castelo/img-navegacao-bullet-on.png" />
+                    <img class="on" src="http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-bullet-on.png" />
                     <?php else: ?>
-                    <img class="off" src="/portal/images/capaPrograma/castelo/img-navegacao-bullet-off.png" />
+                    <img class="off" src="http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-bullet-off.png" />
                     <?php endif; ?>
                   <?php endif; ?>                   
                 <?php endfor;?>

@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/castelo/arquivo.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/castelo/arquivo.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -15,8 +15,8 @@
     <div id="capa-site">
       
       <!--FANCYBOX-->
-      <script type="text/javascript" src="/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js" ></script>
-      <link rel="stylesheet" href="/portal/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+      <script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js" ></script>
+      <link rel="stylesheet" href="http://cmais.com.br/portal/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
       <!--/FANCYBOX-->      
 
       <!-- BARRA SITE -->
@@ -28,7 +28,7 @@
           <h2>
             <a href="http://cmais.com.br/castelo" style="text-decoration: none;">
           
-                <img src="/portal/images/capaPrograma/castelo/img-logo-castelo.png" class="logo" alt="Castelo Ra Tim Bum" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/img-logo-castelo.png" class="logo" alt="Castelo Ra Tim Bum" />
               
             </a>
           </h2>
@@ -63,10 +63,10 @@
             
             <!--NAVEGAÇÃO PG A PG-->
             <a hef="#" class="nav-Esquerda" title="Anterior">
-              <img src="/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" style="display: none;" />
+              <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" style="display: none;" />
             </a>
             <a hef="#" class="nav-Direita" title="Próxima">
-              <img src="/portal/images/capaPrograma/castelo/btn-tela-proxima.png" alt="Próxima Tela" style="display: none;"/>
+              <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-tela-proxima.png" alt="Próxima Tela" style="display: none;"/>
             </a>
             <!--/NAVEGAÇÃO PG A PG-->
             

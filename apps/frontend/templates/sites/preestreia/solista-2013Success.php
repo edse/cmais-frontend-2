@@ -7,9 +7,9 @@
     die();
   }
 ?>
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/contato.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/preestreia-sol-conj.css?<?php echo time ?>" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/contato.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/preestreia-sol-conj.css?<?php echo time ?>" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
@@ -932,7 +932,7 @@
                 
                 <label for="captcha">Confirma&ccedil;&atilde;o</label>
                 <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
-                  <img src="/portal/js/validate/demo/captcha/images/image.php?<?php echo time();?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
+                  <img src="http://cmais.com.br/portal/js/validate/demo/captcha/images/image.php?<?php echo time();?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
                 </a>
               </div>
               
@@ -940,7 +940,7 @@
                 Digite no campo abaixo os caracteres que voc&ecirc; v&ecirc; na imagem:
                 <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
                 <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
-                <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
               </div>
               <!--captcha-->
               
@@ -968,7 +968,7 @@
         <!-- /DIREITA -->
         <!-- rodape preestreia-->
         <div class="grid3 apoio">
-          <img src="/portal/images/capaPrograma/preestreia/rodape_preestreia.jpg" />  
+          <img src="http://cmais.com.br/portal/images/capaPrograma/preestreia/rodape_preestreia.jpg" />  
          </div>
          <!-- /rodape preestreia-->
         
@@ -980,8 +980,8 @@
   <!-- /MIOLO -->
 </div>
 <!-- / CAPA SITE -->
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-<script src="/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+<script src="http://cmais.com.br/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
 
 <!--script diversos-->
 <script type="text/javascript">

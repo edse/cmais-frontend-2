@@ -114,7 +114,7 @@
     <!-- / CAPA SITE -->
     </div>
 
-    <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         // validate signup form on keyup and submit

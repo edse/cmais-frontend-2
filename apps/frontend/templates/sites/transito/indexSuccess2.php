@@ -20,12 +20,12 @@ function isDevice(OSName)
     window.location.href="http://tvcultura.cmais.com.br/transito2/mobile/index.php";
   }
 </script>
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css?a=0000" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css?a=0000" type="text/css" />
 <style>
 .azul .window { background-color: #6AACD2; }
 .verde .window { background-color: #136F13; }
 </style>
-<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
 
 <?php
   $xmlTransitoAgoraCET = file_get_contents('http://cetsp1.cetsp.com.br/monitransmapa/xmltransitoagora.asp');
@@ -205,7 +205,7 @@ function isDevice(OSName)
                     <option value="http://www.dersa.sp.gov.br/ilhabela.jpg">Balsa de Ilha Bela - São Sebastião</option>
                   </select>
                 </form>
-                <div class="pageload" style="float: left; margin-top: 6px;"><img src="/portal/images/capaPrograma/transito/transparent_loading.gif" alt="carregando..." /></div>
+                <div class="pageload" style="float: left; margin-top: 6px;"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/transparent_loading.gif" alt="carregando..." /></div>
                 <img id="img-litoral" src="http://www.dersa.sp.gov.br/santos.jpg" alt="Balsa de Santos - Guarujá" style="width: 310px; height: 240px;" />  
               </div>
               
@@ -651,13 +651,13 @@ function isDevice(OSName)
                   <div id="dialogaSenna" class="window">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img style="width: 310px; height: 240px;" alt="Ayrton Senna" src="/portal/images/capaPrograma/transito/transparent_loading.gif" id="img-ayrtonsenna">
+                      <img style="width: 310px; height: 240px;" alt="Ayrton Senna" src="http://cmais.com.br/portal/images/capaPrograma/transito/transparent_loading.gif" id="img-ayrtonsenna">
                       <h4>Ayrton Senna</h4>
                       <form id="opcoes-ayrton-senna" action="" method="post" style="float: left;">
                         <select id="ayrton-senna" class="required">
                         </select>
                       </form> 
-                      <div class="pageload" style="float: left; margin-top: 6px;"><img src="/portal/images/capaPrograma/transito/transparent_loading.gif" alt="carregando..." /></div>
+                      <div class="pageload" style="float: left; margin-top: 6px;"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/transparent_loading.gif" alt="carregando..." /></div>
                     </div>
                   </div>
                   <!-- Máscara para cobrir a tela -->
@@ -670,13 +670,13 @@ function isDevice(OSName)
                   <div id="dialogaImigrantes" class="window" style="top: 195px">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img style="width: 310px; height: 240px;" alt="Imigrantes" src="/portal/images/capaPrograma/transito/transparent_loading.gif" id="img-imigrantes">
+                      <img style="width: 310px; height: 240px;" alt="Imigrantes" src="http://cmais.com.br/portal/images/capaPrograma/transito/transparent_loading.gif" id="img-imigrantes">
                       <h4>Imigrantes</h4>
                       <form id="opcoes-imigrantes" action="" method="post" style="float: left;">
                         <select id="imigrantes" class="required">
                         </select>
                       </form> 
-                      <div class="pageload" style="float: left; margin-top: 6px;"><img src="/portal/images/capaPrograma/transito/transparent_loading.gif" alt="carregando..." /></div>
+                      <div class="pageload" style="float: left; margin-top: 6px;"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/transparent_loading.gif" alt="carregando..." /></div>
                     </div>
                   </div>
                   <!-- Máscara para cobrir a tela -->
@@ -689,13 +689,13 @@ function isDevice(OSName)
                   <div id="dialogaAnchieta" class="window" style="top: 310px; left: 240px">
                     <a href="#" class="close"></a><br />
                     <div class="textoModal">
-                      <img style="width: 310px; height: 240px;" alt="Anchieta" src="/portal/images/capaPrograma/transito/transparent_loading.gif" id="img-anchieta">
+                      <img style="width: 310px; height: 240px;" alt="Anchieta" src="http://cmais.com.br/portal/images/capaPrograma/transito/transparent_loading.gif" id="img-anchieta">
                       <h4>Anchieta</h4>
                       <form id="opcoes-anchieta" action="" method="post" style="float: left;">
                         <select id="anchieta" class="required">
                         </select>
                       </form> 
-                      <div class="pageload" style="float: left; margin-top: 6px;"><img src="/portal/images/capaPrograma/transito/transparent_loading.gif" alt="carregando..." /></div>
+                      <div class="pageload" style="float: left; margin-top: 6px;"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/transparent_loading.gif" alt="carregando..." /></div>
                     </div>
                   </div>
                   <!-- Máscara para cobrir a tela -->
@@ -795,65 +795,65 @@ function isDevice(OSName)
                             <td>A.Senna/Castelo<br></td>
                             <td>18.5</td>
                             <td>28,3% </td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
                           </tr>
                           <tr class="table-cor2">
                             <td >Castelo/A.Senna</td>
                             <td>22.6</td>
                             <td>2,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
                           </tr>
                           <tr class="table-cor1">
                             <td  class="sbesquerda table-av" rowspan="2">2 - Marginal Pinheiros</td>
                             <td>Castelo/Interlagos</td>
                             <td>18.5</td>
                             <td>28,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
                           </tr>
                           <tr class="table-cor2">
                             <td>Interlagos/Castelo</td>
                             <td>22.6</td>
                             <td>2,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
                           </tr>
                           <tr  class="table-cor1">
                             <td class="sbesquerda table-av" rowspan="2">3 - Bandeirantes</td>
                             <td>Imigrantes/Marginal</td>
                             <td>18.5</td>
                             <td>28,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
                           </tr>
                           <tr class="table-cor2">
                             <td>Marginal/Imigrantes</td>
                             <td>22.6</td>
                             <td>2,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png"></td>
                           </tr>
                           <tr  class="table-cor1">
                             <td class="sbesquerda table-av" rowspan="2">4 - Eixo Norte-Sul</td>
                             <td>Aeroporto/Santana</td>
                             <td>18.5</td>
                             <td>28,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
                           </tr>
                           <tr class="table-cor2">
                             <td>Santana/Aeroporto</td>
                             <td>22.6</td>
                             <td>2,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png"></td>
                           </tr>
                           <tr  class="table-cor1">
                             <td class="sbesquerda sbembaixo table-av" rowspan="2">5 - Eixo Leste-Oeste</td>
                             <td>Lapa/Penha</td>
                             <td>18.5</td>
                             <td>28,3%</td>
-                            <td class="sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png"></td>
+                            <td class="sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png"></td>
                           </tr>
                           <tr  class="table-cor2">
                             <td class="sbembaixo">Penha/Lapa</td>
                             <td class="sbembaixo">22.6</td>
                             <td class="sbembaixo">2,3%</td>
-                            <td class="sbembaixo sbdireita"><img src="/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
+                            <td class="sbembaixo sbdireita"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png"></td>
                           </tr>
                         </table> 
                       

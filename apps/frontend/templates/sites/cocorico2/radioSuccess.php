@@ -1,5 +1,5 @@
-<script type="text/javascript" src="/portal/js/bootstrap/tooltip.js"></script>
-<link href="/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
+<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/tooltip.js"></script>
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/brincadeiras.css" rel="stylesheet">
 
 <!-- container-->
 <div class="container tudo">
@@ -362,7 +362,7 @@
         </div>
       </div>
       <!-- player -->  
-      <img src="/portal/images/capaPrograma/cocorico/bg-radio.jpg" />     
+      <img src="http://cmais.com.br/portal/images/capaPrograma/cocorico/bg-radio.jpg" />     
       <p class="tit" style="margin: 20px 0 -20px 0">Cante e dance com a turma do Cocoricó! Confira mais clipes aqui:</p> 
     </div>
     <!-- row clipes relacionados -->

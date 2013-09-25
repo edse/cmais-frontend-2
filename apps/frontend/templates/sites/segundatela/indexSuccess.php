@@ -1,5 +1,5 @@
 <meta http-equiv="pragma" content="no-cache" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/index.css?nocache=<?php echo time()?>" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/segundatela/index.css?nocache=<?php echo time()?>" type="text/css" />
 
   <div class="bgtopo2">
   <!--container--> 

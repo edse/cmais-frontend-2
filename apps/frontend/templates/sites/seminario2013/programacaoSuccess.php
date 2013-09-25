@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <?php use_helper('I18N', 'Date')
 ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
@@ -18,7 +18,7 @@
   <!-- BARRA SITE -->
   <div id="barra-site">
     <div class="topo-programa">
-      <h2><a href="http://cmais.com.br/seminario2013"> <img alt="Seminário 2013" src="/portal/images/capaPrograma/seminario2013/logo.png"> </a></h2>
+      <h2><a href="http://cmais.com.br/seminario2013"> <img alt="Seminário 2013" src="http://cmais.com.br/portal/images/capaPrograma/seminario2013/logo.png"> </a></h2>
       <!-- horario -->
       <div id="horario">
         <p>25 e 26 de fevereiro</p>

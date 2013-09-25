@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -14,7 +14,7 @@
         <div class="topo-programa">
           <h2>
             <a href="/SomosTodosSP">
-                <img src="/portal/images/capaPrograma/somostodossp/logo.png" alt="Somos Todos SP"/>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/somostodossp/logo.png" alt="Somos Todos SP"/>
             </a>
           </h2>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
@@ -58,9 +58,9 @@
             <!-- /texto -->  
             <!-- galeria -->
             <?php if(isset($displays["galeria"]) && count($displays["galeria"])>0): ?>
-              <script type="text/javascript" src="/portal/js/jquery.montage.min.js"></script>
-              <script src="/portal/js/lightbox/js/lightbox.js"></script>
-              <link href="/portal/js/lightbox/css/lightbox.css" rel="stylesheet" />
+              <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery.montage.min.js"></script>
+              <script src="http://cmais.com.br/portal/js/lightbox/js/lightbox.js"></script>
+              <link href="http://cmais.com.br/portal/js/lightbox/css/lightbox.css" rel="stylesheet" />
               <script type="text/javascript">
                 $(function() {
                   var $container = $('#am-container'),

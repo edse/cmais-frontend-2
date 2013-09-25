@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -20,7 +20,7 @@
       <!-- BARRA SITE -->
       <div id="barra-site">
         <div class="topo-programa">
-          <h2><img title="Vitrine" alt="Revista Vitrine" src="/portal/images/capaPrograma/revistavitrine/logo-vitrine.png"></h2>
+          <h2><img title="Vitrine" alt="Revista Vitrine" src="http://cmais.com.br/portal/images/capaPrograma/revistavitrine/logo-vitrine.png"></h2>
     
           
          
@@ -55,7 +55,7 @@
 
          <!--
          <div class="capa-revista">
-           <img src="/portal/images/capaPrograma/revistavitrine/capa.png" alt="Revista Vitrine" />
+           <img src="http://cmais.com.br/portal/images/capaPrograma/revistavitrine/capa.png" alt="Revista Vitrine" />
          </div>
          -->
          

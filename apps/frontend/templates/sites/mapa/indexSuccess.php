@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/geral2.css?a=<?php echo time() ?>" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/geral2.css?a=<?php echo time() ?>" type="text/css" />
 
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <style>

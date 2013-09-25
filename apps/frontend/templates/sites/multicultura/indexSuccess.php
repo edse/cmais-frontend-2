@@ -1,5 +1,5 @@
-<link type="text/css" href="/portal/multicultura/css/geral.css" rel="stylesheet" />
-<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
+<link type="text/css" href="http://cmais.com.br/portal/multicultura/css/geral.css" rel="stylesheet" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -14,7 +14,7 @@
 
         <div class="topo-programa">
           
-          <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/multicultura/images/logo-multicultura.png" /></a></h2>
+          <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://cmais.com.br/portal/multicultura/images/logo-multicultura.png" /></a></h2>
           
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>

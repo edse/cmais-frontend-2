@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <?php use_helper('I18N', 'Date')
 ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
@@ -16,10 +16,10 @@
     <div class="topo-programa">
       <h2>
         <a href="http://cmais.com.br/ciclodepalestras">
-          <img alt="Ciclo de Palestras" src="/portal/images/capaPrograma/ciclodepalestras/logo_palestras.jpg"> 
+          <img alt="Ciclo de Palestras" src="http://cmais.com.br/portal/images/capaPrograma/ciclodepalestras/logo_palestras.jpg"> 
         </a>
       </h2>
-      <img id="apoio" alt="Ciclo de Palestras" src="/portal/images/capaPrograma/ciclodepalestras/logos_palestras.jpg">  
+      <img id="apoio" alt="Ciclo de Palestras" src="http://cmais.com.br/portal/images/capaPrograma/ciclodepalestras/logos_palestras.jpg">  
       
     </div>
     <!-- box-topo -->

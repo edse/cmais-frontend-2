@@ -174,7 +174,7 @@
             			<ul>
             				<?php foreach($programs as $p): ?>
                             <li>
-                              <a href="<?php echo str_replace("tvcultura.cmais.com.br/", "", $p->retriveUrl()); ?>"><?php echo $p->getTitle(); ?><?php if ($p->getImageIcon() || $p->getSchedule()): ?><span><p style="min-height:80px"><?php if ($p->getImageIcon()): ?><img class="logo" src="http://midia.cmais.com.br/programs/<?php echo $p->getImageIcon(); ?>" /><?php endif; ?></p><img class="seta" src="/portal/images/ico-bg-indiceOver.png" /><p><?php echo $p->getSchedule(); ?></p></span><?php endif; ?></a>
+                              <a href="<?php echo str_replace("tvcultura.cmais.com.br/", "", $p->retriveUrl()); ?>"><?php echo $p->getTitle(); ?><?php if ($p->getImageIcon() || $p->getSchedule()): ?><span><p style="min-height:80px"><?php if ($p->getImageIcon()): ?><img class="logo" src="http://midia.cmais.com.br/programs/<?php echo $p->getImageIcon(); ?>" /><?php endif; ?></p><img class="seta" src="http://cmais.com.br/portal/images/ico-bg-indiceOver.png" /><p><?php echo $p->getSchedule(); ?></p></span><?php endif; ?></a>
                             </li>
                             <?php endforeach; ?>
                         </ul>
