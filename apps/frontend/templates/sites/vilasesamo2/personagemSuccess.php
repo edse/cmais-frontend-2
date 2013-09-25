@@ -139,7 +139,7 @@
 
   <span class="divisa"></span>
   <!-- link seções -->
-  <div class="section">
+  <div class="section vamosbrincar">
     <span class="divisa1"></span>
     <div class="destaques row-fluid container">
        <div class="span4 banner">
