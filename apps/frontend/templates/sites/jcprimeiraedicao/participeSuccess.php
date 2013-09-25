@@ -100,7 +100,7 @@
                   </div>
 
               <div class="barra-grade">                    
-                <a href="#" class="btn-toggle tit">Cobertura Nacional</a>
+                <a href="#" class="btn-toggle tit">Envie sua pergunta</a>
                 <a href="#" class="botao btn-toggle"></a>
               </div>
               <div class="grade toggle" style="background:none; padding-bottom: 25px;display:none;">
