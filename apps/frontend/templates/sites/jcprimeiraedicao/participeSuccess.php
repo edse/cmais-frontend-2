@@ -175,6 +175,23 @@
                   </div>
                 </form>
                 </div>
+                
+                <div class="barra-grade">                    
+                  <a href="#" class="btn-toggle tit">Twitter</a>
+                  <a href="#" class="botao btn-toggle"></a>
+                </div>
+                <div class="grade toggle" style="background:none; padding-bottom: 25px;display:none;">
+                  twitter
+                </div>
+                
+                <div class="barra-grade">                    
+                  <a href="#" class="btn-toggle tit">Facebook</a>
+                  <a href="#" class="botao btn-toggle"></a>
+                </div>
+                <div class="grade toggle" style="background:none; padding-bottom: 25px;display:none;">
+                  facebook
+                </div>
+                  
               </div>
             </div>
             <!-- /ESQUERDA -->
