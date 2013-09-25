@@ -202,9 +202,11 @@ class mainActions extends sfActions
       $this->getResponse()->setTitle('cmais+ O portal de conteúdo da Cultura', false);
     else
       $this->getResponse()->setTitle('Resultado de busca para "'.$this->term.'" cmais+ O portal de conteúdo da Cultura', false);
-
-    $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'/search');
-
+	
+	if($this->term == "ver todo o conteúdo")
+		$this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'/tudo');
+	else
+		$this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'/search');
   }
 
  /**
