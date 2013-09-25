@@ -16,7 +16,7 @@
 <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
 <div id="content">
-  <section class="filtro row-fluid">
+  <div class="section filtro row-fluid">
     <div class="span12">
       <?php
         include_partial_from_folder('sites/vilasesamo2', 'global/mobile_detect'); 
@@ -49,7 +49,7 @@
       <h3><i class="sprite-icon-personagens-med"></i>Personagens</h3>
       
       <div class="span10 destaque-filtro">
-        <section id="carrossel-destaque-mobile">
+        <div class="section" id="carrossel-destaque-mobile">
   <!--inicio carrossel--> 
   <div id="carrossel-mobile">
     <!--slider-->
@@ -117,7 +117,7 @@
     </ul>
 
   <!--/seletor carrossel-->   
-</section>
+</div>
       </div>
       <nav class="span2">
         <p>escolha por personagem<span class="sprite-seta-down"></span></p>
@@ -135,11 +135,11 @@
       </nav>
     </div>
     
-  </section>
+  </div>
 
   <span class="divisa"></span>
   <!-- link seções -->
-  <section class="bgtotal">
+  <div class="section">
     <span class="divisa1"></span>
     <div class="destaques row-fluid container">
        <div class="span4 banner">
@@ -174,10 +174,10 @@
       </div>
      
     </div>
-  </section>
+  </div>
   <!-- link seções -->
 
-  <section class="todos-itens ">
+  <div class="section todos-itens ">
     <ul  id="container-lista" class="row-fluid">
       <li class="span4 jogo"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
       <li class="span4 video"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
@@ -189,7 +189,7 @@
       <li class="span4 video"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
       <li class="span4 atividade"><a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a><h2><a>Nome jogo</a></h2></li>
     </ul>
-  </section>
+  </div>
   
   <span class="divisa"></span>
 </div> 
