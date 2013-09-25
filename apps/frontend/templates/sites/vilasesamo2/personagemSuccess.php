@@ -174,7 +174,7 @@
       
       </div>
       <div class="span12">
-        <p>Mais brincadeiras da Bel:</p>
+        <p>Mais brincadeiras:</p>
       </div>
      
     </div>
@@ -199,9 +199,9 @@
 </div> 
 
 <input type="hidden" id="filter-choice" value="">
-<nav id="page_nav">
+<div id="page_nav">
   <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
-</nav>
+</div>
 <!--scripts-->
 
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
