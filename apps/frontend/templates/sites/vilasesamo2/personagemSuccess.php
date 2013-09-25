@@ -144,7 +144,7 @@
     <div class="destaques row-fluid container">
        <div class="span4 banner">
          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/tit-vamos-brincar.png" alt="Vamos Brincar!" />
-         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bel-interna.png" alt="Bel" />
+         <img class="thumb-personagem" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bel-interna.png" alt="Bel" />
        </div>
       <div class="span8">
         <div class="span6 jogo">
