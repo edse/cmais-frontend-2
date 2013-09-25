@@ -1227,7 +1227,7 @@ $(document).ready(function(){
                       },
                       f4_mensagem: {
                         minlength: 2,
-                        maxlength: 500,
+                        maxlength: 1000,
                         required: "#f4_mais:!checked"
                       },
                       f4_telefone: {
