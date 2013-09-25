@@ -258,3 +258,4 @@ body.personagens { background:#b60401; }
 .personagens .vamosbrincar .thumb-personagem  { margin-top:-4%; }
 .personagens .vamosbrincar .span12 { margin:-3% 0 0 0; }
 .personagens .vamosbrincar .span12 p { color:#fff; text-transform:uppercase; background:#ee3021; text-align:left; padding:0.5%; }
+.personagens .span8 .span6 {border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
