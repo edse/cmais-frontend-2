@@ -143,7 +143,8 @@
     <span class="divisa1"></span>
     <div class="destaques row-fluid container">
        <div class="span4 banner">
-         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bel.png" alt="Bel" /></a>
+         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/tit-vamos-brincar.png" alt="Vamos Brincar!" />
+         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bel-interna.png" alt="Bel" />
        </div>
       <div class="section span8">
         <article class="span6 jogo">
