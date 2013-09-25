@@ -188,7 +188,7 @@
                       margin:"15px auto 0px auto",
                       display:"block"
                     };
-                    $('#twitter-widget-2').css(styles);
+                    $('#twitter-widget-2').live("css", styles);
                   </script>
                 </div>
                 
