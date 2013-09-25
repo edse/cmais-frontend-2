@@ -98,6 +98,13 @@
                     </div>
                     <hr />
                   </div>
+
+              <div class="barra-grade">                    
+                <a href="#" class="btn-toggle tit">Cobertura Nacional</a>
+                <a href="#" class="botao btn-toggle"></a>
+              </div>
+              <div class="grade toggle" style="background:none; padding-bottom: 25px; display: none;">
+                
                 <form id="form-contato" method="post" action="">
                   <div class="linha t1">
                     <label>nome</label>
@@ -167,6 +174,7 @@
                     <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                   </div>
                 </form>
+                </div>
               </div>
             </div>
             <!-- /ESQUERDA -->
