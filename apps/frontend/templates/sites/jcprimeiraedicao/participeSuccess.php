@@ -103,7 +103,7 @@
                 <a href="#" class="btn-toggle tit">Envie sua pergunta</a>
                 <a href="#" class="botao btn-toggle"></a>
               </div>
-              <div class="grade toggle" style="background:none; padding-bottom: 25px;display:none;">
+              <div class="grade toggle" style="background:none; padding-bottom: 25px;display:none;overflow: hidden;">
                 
                 <form id="form-contato" method="post" action="">
                   <div class="linha t1">
@@ -180,7 +180,7 @@
                   <a href="#" class="btn-toggle tit">Twitter</a>
                   <a href="#" class="botao btn-toggle"></a>
                 </div>
-                <div class="grade toggle" style="background:none; padding-bottom: 25px;display:none;">
+                <div class="grade toggle" style="background:none; padding-bottom: 25px;display:none;overflow: hidden;">
                   twitter
                 </div>
                 
@@ -188,7 +188,7 @@
                   <a href="#" class="btn-toggle tit">Facebook</a>
                   <a href="#" class="botao btn-toggle"></a>
                 </div>
-                <div class="grade toggle" style="background:none; padding-bottom: 25px;display:none;">
+                <div class="grade toggle" style="background:none; padding-bottom: 25px;display:none;overflow: hidden;">
                   facebook
                 </div>
                   
