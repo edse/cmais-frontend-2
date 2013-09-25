@@ -181,7 +181,7 @@
                   <a href="#" class="botao btn-toggle"></a>
                 </div>
                 <div class="grade toggle" style="background:none; padding-bottom: 25px;display:none;overflow: hidden;">
-                  <a class="twitter-timeline" href="https://twitter.com/JCPrimeira" data-widget-id="382988383032590336" data-width="638">Tweets by @JCPrimeira</a>
+                  <a class="twitter-timeline" href="https://twitter.com/JCPrimeira" data-widget-id="382988383032590336">Tweets by @JCPrimeira</a>
                   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
                 </div>
@@ -193,7 +193,7 @@
                 <div class="grade toggle" style="background:none; padding-bottom: 25px;display:none;overflow: hidden;">
                   <?php include_partial_from_folder('blocks','global/share-2c-w-comments', array('site' => $site, 'uri' => $uri)) ?>
                 </div>
-                  
+                   
               </div>
             </div>
             <!-- /ESQUERDA -->
