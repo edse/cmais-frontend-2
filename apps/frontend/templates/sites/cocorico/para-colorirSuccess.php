@@ -93,7 +93,7 @@
   <!-- /row-->
 
   <?php if($pager->haveToPaginate()): ?>
-  <!-- PAGINACAO -->
+  <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
   <div class="pagination pagination-centered">
     <ul>
       <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>

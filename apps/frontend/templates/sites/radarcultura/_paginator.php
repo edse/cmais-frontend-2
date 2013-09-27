@@ -1,5 +1,6 @@
 <?php if(isset($pager)): ?>
   <?php if($pager->haveToPaginate()): ?>
+  <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
   <div class="row">
     <div class="pagination pagination-centered">
       <ul>

@@ -134,7 +134,7 @@
               <p> A cantora Paula Lima convoca Jorge Ben, Arlindo Cruz e Martinália. </p>
             </div>
           </div> </a>
-          <!--paginador-->
+          <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
           <div class="row">
             <div class="pagination pagination-centered">
               <ul>

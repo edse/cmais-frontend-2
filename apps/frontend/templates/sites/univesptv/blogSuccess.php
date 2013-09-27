@@ -213,7 +213,8 @@ $(function(){
 
 	  <!-- PAGINACAO -->
       <?php if(isset($pager)): ?>
-        <?php if($pager->haveToPaginate()): ?>      
+        <?php if($pager->haveToPaginate()): ?>
+        <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
         <div class="paginacao grid2">
           <div class="centraliza">
             <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn-ante"></a>

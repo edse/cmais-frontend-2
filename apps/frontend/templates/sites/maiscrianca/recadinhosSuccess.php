@@ -160,13 +160,7 @@
                     <hr>
                     <?php if(isset($pager)): ?>
                       <?php if($pager->haveToPaginate()): ?>
-                      <!-- PAGINACAO -->
-                      <!-- div class="paginacao">
-                        <p>Página <?php echo $pager->getPage() ?> de <?php echo $pager->getLastPage() ?></p>
-                        <a class="pagRight" href="<?php echo $url ?>?page=<?php echo $pager->getNextPage() ?>">ir</a>
-                        <a class="pagLeft" href="<?php echo $url ?>?page=<?php echo $pager->getPreviousPage() ?>">vir</a>
-                      </div -->
-                      <!-- PAGINACAO -->
+                      <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
               <div class="paginacao pag3 grid2">
                 <p class="txt-12">P&aacute;gina <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></p>
                 <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn proximo"></a>

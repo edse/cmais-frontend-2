@@ -160,6 +160,7 @@
       <!--/centro pagina-->
       <!--paginaçao-->
        <?php if ($pager->haveToPaginate()): ?>
+        <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
         <div class="pagination pagination-centered">
           <ul>
             <li<?php if($pager->getPage() == 1): ?> class="disabled"<?php endif; ?>><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior">«</a></li>

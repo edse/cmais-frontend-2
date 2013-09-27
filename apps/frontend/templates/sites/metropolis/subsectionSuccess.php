@@ -257,7 +257,7 @@ if (isset($pager)) {
 								?>
 								<?php if($pager->haveToPaginate()):
 								?>
-								<!-- PAGINACAO -->
+								<!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
 								<div class="paginacao grid3">
 									<div class="centraliza" style="float:left; margin-left: 10px;">
 										<a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn-ante"></a>
