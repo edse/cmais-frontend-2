@@ -1,7 +1,7 @@
 @import url("../geral.css");
 
 /** JORNAL DA CULTURA **/
-#barra-site { background:url("http://cmais.com.br/portal/images/capaPrograma/bg-jornalCultura.png") no-repeat right -4px; margin-top:0; min-height:136px;}
+/*#barra-site { background:url("http://cmais.com.br/portal/images/capaPrograma/bg-jornalCultura.png") no-repeat right -4px; margin-top:0; min-height:136px;}*/
 #barra-site {_background-image:url("http://cmais.com.br/portal/images/capaPrograma/bg-jornalCultura.gif");}
 .submenu-interna {width:116px;}
 #chamada {margin-bottom:0;}
