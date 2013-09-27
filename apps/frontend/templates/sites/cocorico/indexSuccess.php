@@ -228,7 +228,7 @@
         <a class="btn-programacao" href="<?php echo $site->retriveUrl(); ?>/natv" title="">
          Confira os horários da programação 
         </a>
-        <h2><i class="icon-star-empty"></i>Próximo Convidado<i class="icon-star-empty"></i></h2>
+        <h2><i class="icon-star-empty"></i>Agenda Cultural<i class="icon-star-empty"></i></h2>
         <?php if(isset($displays['destaque-tv-cocorico'])):?>
           <?php if(count($displays['destaque-tv-cocorico']) > 0): ?>
             <?php
@@ -239,14 +239,14 @@
               }
             ?>
             
-        <a class="convidado span12" href="http://tvcultura.cmais.com.br/cocorico/tvcocorico/convidados/<?php echo $displays['destaque-tv-cocorico'][0]->Asset->getSlug() ?>" title="Próximo convidado: <?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>">
+        <!--a class="convidado span12" href="http://tvcultura.cmais.com.br/cocorico/tvcocorico/convidados/<?php echo $displays['destaque-tv-cocorico'][0]->Asset->getSlug() ?>" title="Próximo convidado: <?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>">
           <img src="<?php echo $display_img_src ?>" alt="<?php echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>" />
           <?php //echo $displays['destaque-tv-cocorico'][0]->getTitle() ?>
           <?php $tam=35; $str=$displays['destaque-tv-cocorico'][0]->getTitle(); mb_internal_encoding("UTF-8"); if(strlen($str) <= $tam) echo $str; else echo mb_substr($str, 0, $tam-1)."&hellip;" ?>
-        </a>
-        <a href="<?php echo $site->retriveUrl() ?>/tvcocorico/convidados">
+        </a-->
+        <!--a href="<?php echo $site->retriveUrl() ?>/tvcocorico/convidados">
           <span class="mais"></span>
-        </a>
+        </a-->
           <?php endif; ?>
         <?php endif; ?>
         <!--ENQUETE-->
