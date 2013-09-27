@@ -38,6 +38,7 @@
       </ul>
       <?php if(isset($pager)): ?>
         <?php if($pager->haveToPaginate()): ?>
+      <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
       <div class="row-fluid span12">
         <div class="span12 pagination">
           <ul>

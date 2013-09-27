@@ -72,7 +72,7 @@
         
         <?php if($pager->haveToPaginate()): ?> 
 
-        <!-- PAGINACAO -->
+        <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
         
         <div class="paginacao-programa">
           <a class="btn primeira" href="javascript: goToPage(1);" title="Primeira"><span></span>Primeira</a>

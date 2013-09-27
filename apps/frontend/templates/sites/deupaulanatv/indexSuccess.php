@@ -112,7 +112,7 @@ if(isset($pager)){
                   
                   <?php if(isset($pager)): ?>
                     <?php if($pager->haveToPaginate()): ?>
-                    <!-- PAGINACAO -->
+                    <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
                     <?php /* <p class="txt-12">P&aacute;gina <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></p> */ ?>
                     <?php if(($page != $pager->getPreviousPage())&&($page != "")): ?>
                     <a href="javascript: goToPage(<?php echo $pager->getPreviousPage ?>);" class="btn proxima"></a>

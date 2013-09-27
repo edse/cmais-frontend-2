@@ -123,10 +123,7 @@
                  <!-- PAGINACAO -->
             <?php if(isset($pager)): ?>
               <?php if($pager->haveToPaginate()): ?>
-              <!-- div id="botoes" class="grid2">
-                <a href="<?php echo $url ?>?page=<?php echo $pager->getPreviousPage() ?>" class="anterior">< Anterior</a>
-                <a href="<?php echo $url ?>?page=<?php echo $pager->getNextPage() ?>" class="proxima">Próxima ></a>
-              </div -->
+              <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
               <div class="paginacao pag3 grid2">
                 <p class="txt-12">P&aacute;gina <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></p>
                 <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn proximo"></a>

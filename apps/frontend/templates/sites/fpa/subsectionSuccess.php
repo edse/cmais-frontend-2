@@ -64,6 +64,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <!-- /assets relacionados a subseção -->
       <!-- paginacao -->
       <?php if($pager->haveToPaginate()): ?>
+      <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
       <div class="pagination pagination-centered">
         <ul>
            <li>

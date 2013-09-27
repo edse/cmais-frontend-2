@@ -48,6 +48,7 @@ if(isset($pager)){
   	 <!-- PAGINACAO -->  	
      <?php if(isset($pager)): ?>
      <?php if($pager->haveToPaginate()): ?>
+       <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
   	<!--row-->
   	
     <div class="paginacao">

@@ -231,6 +231,7 @@
               
                 <?php if(isset($pager)): ?>
               <?php if($pager->haveToPaginate()): ?>
+                <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
                 <div class="paginacao grid3">
                   <div class="centraliza">
                     
