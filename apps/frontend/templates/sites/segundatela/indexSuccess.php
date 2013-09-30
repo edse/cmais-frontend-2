@@ -31,10 +31,10 @@
       <div class="span3 item jornal" style="margin-left:0px;">
         <a href="http://cmais.com.br/segundatela/jornaldacultura" target="_blank">
           <div class="logo-programa">
-            <img src="http://midia.cmais.com.br/programs/457e9bcad211c9c44b0e6dac2e603361c3d1baa8.png">
+            <img src="http://midia.cmais.com.br/programs/4ecf99eeeb853f1f4692de0d641a2cc1d66fbdf3.png">
           </div>
           <div class="live-image">
-            <img src="http://midia.cmais.com.br/programs/e1ac3a5bcdc6ee20748d54cfb84b85f1105b7148.jpg" alt="Jornal da Cultura">
+            <img src="http://midia.cmais.com.br/programs/bfdbfec1716bf0c91e82fa9cde4e99d9db5fd6dc.jpg" alt="Jornal da Cultura">
             <span id="jornaldacultura" style="display: none;">NO AR</span>
           </div>
           <p>
@@ -80,20 +80,24 @@
       </div>
       <!-- /item-->
       <!--item -->
-      <div class="span3 item jornal"> 
-        <a href="http://cmais.com.br/segundatela/qss" target="_blank">
-          <div class="logo-programa">
-            <img src="http://midia.cmais.com.br/programs/22e4d406790e4dcf2285230b5a5362ad2a754ad9.png">
-          </div>
-          <div class="live-image">
-           <img src="http://midia.cmais.com.br/programs/6808396803e029296b6a6e8f9ab1879938cfc0a0.jpg" alt="Quem sabe, sabe!">
-          </div>
-          <p>
-            Um game show de conhecimento,<br> estratégia e sorte<br>
-            Segunda a sexta, às 19h20
-          </p>
-        </a>
-      </div>
+      <?php
+	      /*
+	      <div class="span3 item jornal"> 
+	        <a href="http://cmais.com.br/segundatela/qss" target="_blank">
+	          <div class="logo-programa">
+	            <img src="http://midia.cmais.com.br/programs/22e4d406790e4dcf2285230b5a5362ad2a754ad9.png">
+	          </div>
+	          <div class="live-image">
+	           <img src="http://midia.cmais.com.br/programs/6808396803e029296b6a6e8f9ab1879938cfc0a0.jpg" alt="Quem sabe, sabe!">
+	          </div>
+	          <p>
+	            Um game show de conhecimento,<br> estratégia e sorte<br>
+	            Segunda a sexta, às 19h20
+	          </p>
+	        </a>
+	      </div>
+		  */
+      ?>
       <!--item -->
       <!--item>
       <div class="span3 item">
