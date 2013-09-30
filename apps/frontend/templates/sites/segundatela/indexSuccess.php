@@ -31,7 +31,7 @@
       <div class="span3 item jornal" style="margin-left:0px;">
         <a href="http://cmais.com.br/segundatela/jornaldacultura" target="_blank">
           <div class="logo-programa">
-            <img src="http://midia.cmais.com.br/programs/4ecf99eeeb853f1f4692de0d641a2cc1d66fbdf3.png">
+            <img src="http://midia.cmais.com.br/programs/2cc4c093e59c09daf50a2d462291d2732bbd5c6f.png">
           </div>
           <div class="live-image">
             <img src="http://midia.cmais.com.br/programs/bfdbfec1716bf0c91e82fa9cde4e99d9db5fd6dc.jpg" alt="Jornal da Cultura">
