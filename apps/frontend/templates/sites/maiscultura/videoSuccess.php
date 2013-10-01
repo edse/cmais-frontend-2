@@ -7,40 +7,77 @@ $(function(){
         wrap: "both",
         scroll: 1
     });
+   //carrossel
+    $('#carrossel4').jcarousel({
+        wrap: "both",
+        scroll: 4
+    });
 });
 </script>
+
+<?php
+  $vid1 = Doctrine_Query::create()
+    ->select('a.*')
+    ->from('Asset a, AssetVideo av')
+    ->where('a.id = av.asset_id')
+    ->andWhere('a.site_id = ?', (int)$site->id)
+    ->andWhere('a.is_active = 1')
+    ->andWhere('a.asset_type_id = 6')
+    ->andWhere("av.youtube_id != ''")
+    ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+    ->limit(90)
+    ->orderBy('a.id desc')
+    ->execute();
+  if(!isset($asset)) $asset = $vid1[0];
+
+  $vid2 = Doctrine_Query::create()
+    ->select('a.*')
+    ->from('Asset a, AssetVideo av')
+    ->where('a.id = av.asset_id')
+    ->andWhere('a.is_active = 1')
+    ->andWhere('a.asset_type_id = 6')
+    ->andWhere("av.youtube_id != ''")
+    ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+    ->limit(30)
+    ->orderBy('a.id desc')
+    ->execute();
+?>
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
+	<div class="bg-chamada">
+	  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+	</div>
+	<div class="bg-site videos">
+
     <!-- / CAPA SITE -->
     <div id="capa-site">
 
-      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
-
       <!-- BARRA SITE -->
       <div id="barra-site">
-        <?php if(isset($program) && $program->id > 0): ?>
         <div class="topo-programa">
-          <!--h2>
+         
+          <?php if(isset($program) && $program->id > 0): ?>
+          <h2>
             <a href="<?php echo $program->retriveUrl() ?>">
-              <img src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>" alt="<?php echo $site->getTitle() ?>" title="<?php echo $site->getTitle() ?>" />
+              <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
             </a>
-          </h2-->
+          </h2>
           <?php endif; ?>
-
+			
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
           <?php endif; ?>
-
+          
           <?php if(isset($program) && $program->id > 0): ?>
           <!-- horario -->
           <div id="horario">
             <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
           </div>
           <!-- /horario -->
+          <?php endif; ?>
         </div>
-        <?php endif; ?>
 
         <?php if(isset($siteSections)): ?>
         <!-- box-topo -->
@@ -81,9 +118,9 @@ $(function(){
             <!-- ESQUERDA -->
             <div id="esquerda" class="grid2">
 
-              <?php if(isset($asset)) include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $asset, 'ipad' => $ipad)) ?>
+              <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $asset, 'ipad' => $ipad)) ?>
 
-              <!--?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?-->
+              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
 
             </div>
             <!-- /ESQUERDA -->
@@ -91,16 +128,20 @@ $(function(){
             <!-- DIREITA -->
             <div id="direita" class="grid1">
 
-              <?php include_partial_from_folder('blocks','global/display-1c-list-carrossel', array('displays' => $displays["destaque-secundario"])) ?>
+              <?php include_partial_from_folder('sites/cartaozinho','global/display-1c-list-carrossel', array('displays' => $vid1)) ?>
+              
+              
+
+             
               
               <!-- BOX PUBLICIDADE -->
               <div class="box-publicidade grid1">
-                <!-- cmais-assets-300x250 -->
+                <!-- programas-assets-300x250 -->
                 <script type='text/javascript'>
-                GA_googleFillSlot("cmais-assets-300x250");
+                GA_googleFillSlot("maiscrianca");
                 </script>
               </div>
-              <!-- /BOX PUBLICIDADE -->
+              <!-- / BOX PUBLICIDADE -->
               
               <?php if(isset($displays["destaque-noticias"])): ?>
               <!-- BOX PADRAO Noticia -->
@@ -122,18 +163,9 @@ $(function(){
           </div>
           <!-- /CAPA -->
 
-          <!-- MENU-RODAPE -->
-          <?php if(isset($displays["ultimos-videos"])) include_partial_from_folder('blocks','global/display-3c-last-videos', array('displays' => $displays["ultimos-videos"])) ?>
-          <!-- /MENU-RODAPE -->
+         
 
-          <!-- BOX PUBLICIDADE 2 -->
-          <div class="box-publicidade pub-grd grid3">
-            <!-- cmais-assets-728x90 -->
-            <script type='text/javascript'>
-            GA_googleFillSlot("cmais-assets-728x90");
-            </script>
-          </div>
-          <!-- / BOX PUBLICIDADE 2 -->
+         
 
         </div>
         <!-- /CONTEUDO PAGINA -->
@@ -141,5 +173,4 @@ $(function(){
       <!-- /MIOLO -->
     </div>
     <!-- / CAPA SITE -->
-
-
+    </div>
