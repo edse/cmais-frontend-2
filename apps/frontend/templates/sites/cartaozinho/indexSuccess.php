@@ -180,7 +180,7 @@
               
             }
           }else{
-            echo "<div class='juiza'></div>";
+            //echo "<div class='juiza'></div>";
           } 
           ?>
           
