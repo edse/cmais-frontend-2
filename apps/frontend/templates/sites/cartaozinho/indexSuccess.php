@@ -28,18 +28,20 @@
               </style>
               <div class='juiza-nova'></div>
               <div class='texto-novo'></div>
-        <?php      
-            //}
-          //}else{
-        ?>   
-          
-            <?php if(isset($program) && $program->id > 0):?>
-            <h2><a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;"> <?php if($program->getImageThumb() != ""):?><img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" /> <?php else:?>
-            <h3 class="tit-pagina grid1"><?php echo $program->getTitle() ?></h3> <?php endif;?></a>
-            </h2>
-            <?php endif;?>
-            
-        <?php //} ?>
+       <?php
+	       /*      
+	            }
+	          }else{
+	           
+	            <?php if(isset($program) && $program->id > 0):?>
+	            <h2><a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;"> <?php if($program->getImageThumb() != ""):?><img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" /> <?php else:?>
+	            <h3 class="tit-pagina grid1"><?php echo $program->getTitle() ?></h3> <?php endif;?></a>
+	            </h2>
+	            <?php endif;?>
+	            
+	        } 
+	        */
+       ?>
         
         <?php if(isset($program) && $program->id > 0): ?>
         <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
