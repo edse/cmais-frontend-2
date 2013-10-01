@@ -17,7 +17,7 @@
       <div class="topo-programa">
         
         <?php 
-          if(date('d')>=21){
+          //if(date('d')>=21){
             //if(date("H:i") >= "14:10"){
         ?>      
               <style>
@@ -30,7 +30,7 @@
               <div class='texto-novo'></div>
         <?php      
             //}
-          }else{
+          //}else{
         ?>   
           
             <?php if(isset($program) && $program->id > 0):?>
@@ -39,7 +39,7 @@
             </h2>
             <?php endif;?>
             
-        <?php } ?>
+        <?php //} ?>
         
         <?php if(isset($program) && $program->id > 0): ?>
         <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
