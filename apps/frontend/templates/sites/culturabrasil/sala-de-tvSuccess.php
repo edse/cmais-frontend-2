@@ -99,3 +99,26 @@
 </section>
 <!--/Linha Central-->
 
+<script>
+  //TIMER TRANSMISSAO
+  
+  function timer1(){
+    var request = $.ajax({
+      data: {
+        asset_id: '145270',
+        url_in: 'http://tvcultura.cmais.com.br/culturalivre/aovivo'
+      },
+      dataType: 'jsonp',
+      success: function(data) {
+        eval(data);
+      },
+      url: '/ajax/timer'
+    });
+  }
+  
+  $(window).load(function(){
+    var t=setInterval("timer1()",5000);
+  });
+  
+</script>
+
