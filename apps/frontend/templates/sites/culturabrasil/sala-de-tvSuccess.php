@@ -117,7 +117,7 @@
   }
   
   $(window).load(function(){
-    var t=setInterval("timer1()",60000);
+    var t=setInterval("timer1()",5000);
   });
   
 </script>
