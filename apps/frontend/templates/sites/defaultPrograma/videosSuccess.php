@@ -103,9 +103,12 @@ $(function(){
                     <?php foreach($pager->getResults() as $d): ?>
 	          			<?php 
 		                    if($d->AssetType->getSlug() == "video-gallery"){
-							  //$videos = $d->Asset->retriveRelatedAssetsByAssetTypeId(6);
-							  //$youtubeid = "http://img.youtube.com/vi/".$videos[0]->AssetVideo->getYoutubeId()."/1.jpg";	
-							  $url = "http://img.youtube.com/vi/".$d->AssetVideoGallery->getYoutubeId()."/1.jpg";
+							  $videos = $d->retriveRelatedAssetsByAssetTypeId(6);
+							  
+							  $youtubeid = $videos[0]->AssetVideo->getYoutubeId();
+							  $url = 	"http://img.youtube.com/vi/".$youtubeid."/1.jpg";
+							  //$url = "http://img.youtube.com/vi/".$d->AssetVideoGallery->getYoutubeId()."/1.jpg";
+							  
 							}else{
 		                      $url = $d->retriveImageUrlByImageUsage("image-3");
 							}
