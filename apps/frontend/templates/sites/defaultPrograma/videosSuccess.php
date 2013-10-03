@@ -102,10 +102,10 @@ $(function(){
                   <?php if(count($pager) > 0): ?>
                     <?php foreach($pager->getResults() as $d): ?>
 	          			<?php 
-		                    if($d->Asset->AssetType->getSlug() == "video-gallery"){
+		                    if($d->AssetType->getSlug() == "video-gallery"){
 							  //$videos = $d->Asset->retriveRelatedAssetsByAssetTypeId(6);
 							  //$youtubeid = "http://img.youtube.com/vi/".$videos[0]->AssetVideo->getYoutubeId()."/1.jpg";	
-							  $youtubeid = "http://img.youtube.com/vi/".$d->Asset->AssetVideoGallery->getYoutubeId()."/1.jpg";
+							  $youtubeid = "http://img.youtube.com/vi/".$d->AssetVideoGallery->getYoutubeId()."/1.jpg";
 							}else{
 		                      $url = $d->retriveImageUrlByImageUsage("image-3");
 							}
