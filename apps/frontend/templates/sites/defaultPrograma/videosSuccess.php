@@ -105,7 +105,7 @@ $(function(){
 		                    if($d->AssetType->getSlug() == "video-gallery"){
 							  //$videos = $d->Asset->retriveRelatedAssetsByAssetTypeId(6);
 							  //$youtubeid = "http://img.youtube.com/vi/".$videos[0]->AssetVideo->getYoutubeId()."/1.jpg";	
-							  $youtubeid = "http://img.youtube.com/vi/".$d->AssetVideoGallery->getYoutubeId()."/1.jpg";
+							  $url = "http://img.youtube.com/vi/".$d->AssetVideoGallery->getYoutubeId()."/1.jpg";
 							}else{
 		                      $url = $d->retriveImageUrlByImageUsage("image-3");
 							}
