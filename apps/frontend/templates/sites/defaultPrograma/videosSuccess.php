@@ -101,10 +101,19 @@ $(function(){
           	  	  <ul>
                   <?php if(count($pager) > 0): ?>
                     <?php foreach($pager->getResults() as $d): ?>
-          	  	  	<li class="conteudo-lista">
-          	  	  	  <a href="<?php echo $d->retriveUrl() ?>" class="bg" title="<?php echo $d->getTitle() ?>"><img class="" src="<?php echo $d->retriveImageUrlByImageUsage("image-3") ?>" alt="<?php echo $d->getTitle() ?>" /><span></span></a>
-          	  	  	  <a href="<?php echo $d->retriveUrl() ?>" class="titulos" title="<?php echo $d->getTitle() ?>"><?php echo $d->getTitle() ?></a>
-          	  	  	</li>
+	          			<?php 
+		                    if($d->Asset->AssetType->getSlug() == "video-gallery"){
+							  //$videos = $d->Asset->retriveRelatedAssetsByAssetTypeId(6);
+							  //$youtubeid = "http://img.youtube.com/vi/".$videos[0]->AssetVideo->getYoutubeId()."/1.jpg";	
+							  $youtubeid = "http://img.youtube.com/vi/".$d->Asset->AssetVideoGallery->getYoutubeId()."/1.jpg";
+							}else{
+		                      $url = $d->retriveImageUrlByImageUsage("image-3");
+							}
+	                    ?>             	
+	          	  	  	<li class="conteudo-lista">
+	          	  	  	  <a href="<?php echo $d->retriveUrl() ?>" class="bg" title="<?php echo $d->getTitle() ?>"><img class="" src="<?php echo $url ?>" alt="<?php echo $d->getTitle() ?>" /><span></span></a>
+	          	  	  	  <a href="<?php echo $d->retriveUrl() ?>" class="titulos" title="<?php echo $d->getTitle() ?>"><?php echo $d->getTitle() ?></a>
+	          	  	  	</li>
           	  	  	<?php endforeach; ?>
           	  	  <?php endif; ?>
           	      </ul>
