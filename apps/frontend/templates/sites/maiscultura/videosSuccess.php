@@ -189,7 +189,7 @@ $(function(){
               </div>
           <!-- PAGINACAO -->
               <form id="page_form" action="" method="post">
-                <input type="hidden" name="return_url" value="<?php echo $url?>" />
+                <input type="hidden" name="return_url" value="<?php echo $url ?>" />
                 <input type="hidden" name="page" id="page" value="" />
                 <input type="hidden" name="section" id="section" value="<?php if(isset($_REQUEST['section'])) echo $_REQUEST['section']; ?>" />
                 <input type="hidden" name="busca" id="busca" value="<?php echo $busca ?>" />
