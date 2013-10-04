@@ -657,7 +657,6 @@ class _sectionActions extends sfActions
         }
         else{
           if(in_array($this->site->getSlug(), array("penarua","cartaozinho","maiscultura"))){
-            die("1");
             $this->assetsQuery = Doctrine_Query::create()
               ->select('a.*')
               ->from('Asset a, SectionAsset sa')
