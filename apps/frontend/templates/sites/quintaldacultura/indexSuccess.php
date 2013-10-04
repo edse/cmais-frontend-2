@@ -105,8 +105,8 @@
               })
               </script>
               <!--MENU-BOTOES-->
-              <br /><br />
-              <img class="over" src="http://cmais.com.br/portal/quintal/images/novosite.png" border="0" usemap="#personagensMap" id="personagens"/>
+              <br><br>
+              <img class="over" src="http://cmais.com.br/portal/quintal/images/novosite.png" border="0" usemap="#personagensMap" id="personagens" style="margin-top: 30px"/>
 
            
               
