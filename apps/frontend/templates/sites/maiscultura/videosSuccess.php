@@ -209,12 +209,11 @@ $(function(){
       </div>
     
       <!-- BOX PUBLICIDADE 2 -->
-      <div class="box-publicidade pub-grd grid3">
-        <!-- programas-assets-728x90 -->
+      <!--div class="box-publicidade pub-grd grid3">
         <script type='text/javascript'>
           GA_googleFillSlot("cmais-assets-728x90");
         </script>
-      </div>
+      </div-->
       <!-- / BOX PUBLICIDADE 2 -->
 
         </div>
