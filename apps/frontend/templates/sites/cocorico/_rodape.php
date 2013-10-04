@@ -33,7 +33,7 @@
         <!--li><a href="#myModal" onclick="javascript:changeUrl('http://cocoricoshow.com.br/', '#myModal a.adulto');" data-toggle="modal" title="No Teatro" target="_blank">No Teatro</a></li-->
         <li><a href="#myModal" onclick="javascript:changeUrl('<?php echo $siteUrl ?>/nocinema', '#myModal a.adulto');" data-toggle="modal" title="Nos Cinemas">No Cinema</a></li>
         <li><a href="#myModal" onclick="javascript:changeUrl('<?php echo $siteUrl ?>/naweb', '#myModal a.adulto');" data-toggle="modal" title="Na Web">Na Web</a></li>
-        <li><a href="#myModal" onclick="javascript:changeUrl('<?php echo $siteUrl ?>/agenda', '#myModal a.adulto');" data-toggle="modal" title="Agenda">Agenda</a></li>
+        <li><a href="<?php echo $siteUrl ?>/agenda" title="Agenda">Agenda</a></li>
         <!--li><a href="#myModal" onclick="javascript:changeUrl('http://www2.tvcultura.com.br/faleconosco/', '#myModal a.adulto');" data-toggle="modal" title="Fale Conosco">Fale Conosco</a></li-->
       </ul>
     </div>
