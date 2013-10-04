@@ -66,7 +66,7 @@
             ?>
             
         <!--a class="convidado span12" href="http://tvcultura.cmais.com.br/cocorico/tvcocorico/convidados/<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->Asset->getSlug() ?>" title="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>" /-->  
-        <a class="convidado span12" href="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->Asset->getLink() ?>" title="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>" /-->  
+        <a class="convidado span12" href="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->retriveUrl() ?>" title="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>"><img src="<?php echo $display_img_src ?>" alt="<?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>" /-->  
           <?php echo $displays_tv_cocorico['destaque-tv-cocorico'][0]->getTitle() ?>
         </a>
         <!--a href="<?php echo $site->retriveUrl(); ?>/convidados" title="Convidados">
