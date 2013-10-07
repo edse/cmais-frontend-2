@@ -76,6 +76,16 @@
             </div>
           </div>
 
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Sobre</a></li>
+            <li><a href="#">Entrevistas</a></li>
+            <li><a href="#">Crônicas</a></li>
+            <li><a href="#">Programas na Íntegra</a></li>
+          </ul>
+
+
+          
+
             <?php if(isset($pager)): ?>
               <?php if(count($pager) > 0): ?>
               <!-- BOX LISTAO -->
