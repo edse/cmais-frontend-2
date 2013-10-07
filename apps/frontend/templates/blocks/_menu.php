@@ -152,19 +152,19 @@
                   </li>
                   <li class="radio-cb"><a href="javascript:;" title="R&aacute;dio Cultura Brasil" class="m_radio_am">Cultura Brasil</a><span class="decoracao"></span></li>
                   <li class="radio-fm"><a href="javascript:;" title="R&aacute;dio FM" class="m_radio_fm">Cultura FM</a><span class="decoracao"></span></li>
-                  <li class="radio-rtb"><a href="#radio-rtb"  title="R&aacute;dio R&aacute; Tim Bum">R&aacute;dio R&aacute; Tim Bum</a><span class="decoracao"></span></li>
-                  <li class="radio-cocorico"><a href="#radio-cocorico" title="TV R&aacute; Tim Bum">R&aacute;dio Cocoric&oacute;</a><span class="decoracao"></span></li>
+                  <!--li class="radio-rtb"><a href="#radio-rtb"  title="R&aacute;dio R&aacute; Tim Bum">R&aacute;dio R&aacute; Tim Bum</a><span class="decoracao"></span></li>
+                  <li class="radio-cocorico"><a href="#radio-cocorico" title="TV R&aacute; Tim Bum">R&aacute;dio Cocoric&oacute;</a><span class="decoracao"></span></li-->
                 </ul>
                 <!-- Abas Conteudo -->
                 <ul class="abas-conteudo">
                   <li id="radio-cb" class="filho"></li>
                   <li id="radio-fm" class="filho" style="display:none;"></li>
-                  <li id="radio-rtb" class="filho" style="display: none; ">
+                  <!--li id="radio-rtb" class="filho" style="display: none; ">
                     <a href="http://tvratimbum.cmais.com.br/radio" class="bg-Ratimbum"></a>
                   </li>
                   <li id="radio-cocorico" class="filho" style="display: none; ">
                     <a href="http://www3.tvcultura.com.br/cocorico/radio" class="bg-Cocorico"></a>
-                  </li>
+                  </li-->
                 </ul>
                 <!-- /Abas Conteudo -->
               </div>
