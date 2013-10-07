@@ -71,20 +71,35 @@
           <div class="box-interna grid2">
             <div class="texto">
               <p><?php echo $site->getDescription() ?></p>
-              
-              
             </div>
           </div>
 
+          <?php
+            $sections = Doctrine_Query::create()
+              ->select('s.*')
+              ->from('Section s')
+              ->where('s.site_id = ?', $site->id)
+              ->andWhere('s.is_active = ?', 1)
+              ->andWhere('s.is_visible = ?', 1)
+              ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
+              ->orderBy('s.display_order')
+              ->execute();
+           ?>
+          <?php if($sections): ?>
+          <!-- menu subsection-->
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Sobre</a></li>
-            <li><a href="#">Entrevistas</a></li>
-            <li><a href="#">Crônicas</a></li>
-            <li><a href="#">Programas na Íntegra</a></li>
+            <?php foreach($sections as $s): ?>
+              <?php if($s->getSlug() != "home"): ?>
+                <?php if($s->getSlug() == "arquivo"): ?>
+            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="/programas/<?php echo $site->getSlug() ?>"><?php echo $s->getTitle() ?></a></li>
+                <?php else: ?>
+            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="/programas/<?php echo $site->getSlug() . "/" . $s->getSlug() ?>"><?php echo $s->getTitle() ?></a></li>
+                <?php endif; ?>
+              <?php endif; ?>
+            <?php endforeach; ?>
           </ul>
-
-
-          
+          <!-- /menu subsection-->
+          <?php endif; ?>
 
             <?php if(isset($pager)): ?>
               <?php if(count($pager) > 0): ?>
