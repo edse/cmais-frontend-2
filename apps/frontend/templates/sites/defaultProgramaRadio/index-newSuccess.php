@@ -89,13 +89,7 @@
           <!-- menu subsection-->
           <ul class="nav navbar-nav">
             <?php foreach($sections as $s): ?>
-              <?php if($s->getSlug() != "home"): ?>
-                <?php if($s->getSlug() == "arquivo"): ?>
-            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="/programas/<?php echo $site->getSlug() ?>"><?php echo $s->getTitle() ?></a></li>
-                <?php else: ?>
-            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="/programas/<?php echo $site->getSlug() . "/" . $s->getSlug() ?>"><?php echo $s->getTitle() ?></a></li>
-                <?php endif; ?>
-              <?php endif; ?>
+            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="<?php echo $s->retriveUrl() ?>"><?php echo $s->getTitle() ?></a></li>
             <?php endforeach; ?>
           </ul>
           <!-- /menu subsection-->
