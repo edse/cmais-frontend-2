@@ -520,8 +520,9 @@ em{font-style:oblique !important;}
 .uma-coluna .media { max-height:390px; }
 
 #esquerda .navbar-nav { background: none repeat scroll 0 0 #666666;    margin: 0 0 20px 0; float:left; }
-#esquerda .navbar-nav li { background: none repeat scroll 0 0 #666666;    margin-right: 0;    padding: 5px 29px; float: left;}
+#esquerda .navbar-nav li { background: none repeat scroll 0 0 #666666;    margin-right: 0;    padding: 5px 29px; float: left; font-weight:bold;}
 #esquerda .navbar-nav li a { text-transform: uppercase; color:#fff; }
 #esquerda .navbar-nav li:hover,
-#esquerda .navbar-nav li.ativo { background: none repeat scroll 0 0 #005CA8; text-decoration:none;}
-
+#esquerda .navbar-nav li.ativo { background: none repeat scroll 0 0 #005CA8; }
+#esquerda .navbar-nav li:hover a,
+#esquerda .navbar-nav li.ativo a { text-decoration:none; }
