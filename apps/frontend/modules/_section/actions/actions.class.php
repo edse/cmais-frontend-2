@@ -759,9 +759,9 @@ class _sectionActions extends sfActions
                 ->andWhere('a.id = sa.asset_id')
                 ->andWhere('sa.section_id = ?', $this->section->id)
                 ->andWhere('a.is_active = ?', 1)
-                ->andWhere('a.asset_type_id = ?', 1);
-				
-				if(!$section_verify) $this->assetsQuery->andWhere('a.asset_type_id = ?', 4);
+                ->andWhere('a.asset_type_id = ?', 1)
+				->andWhere('a.asset_type_id = ?', 4);
+				//if(!$section_verify) $this->assetsQuery->andWhere('a.asset_type_id = ?', 4);
                 
                 $this->assetsQuery->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"));
 				
