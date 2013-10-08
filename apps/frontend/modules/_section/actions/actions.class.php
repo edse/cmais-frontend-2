@@ -747,6 +747,11 @@ class _sectionActions extends sfActions
               $this->assetsQuery->orderBy('a.created_at desc');
             }
             else if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class", "manha-cultura", "entrelinhas-1", "cd-da-semana", "arquivo-vivo", "interprete","radiometropolis", "diario-da-manha","de-volta-pra-casa"))){
+              	
+			  if(in_array($this->section->getSlug(), array('home', 'home-page', 'homepage'))){
+			  	$section_verify = false;
+			  } 
+				  
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, SectionAsset sa')
@@ -754,8 +759,12 @@ class _sectionActions extends sfActions
                 ->andWhere('a.id = sa.asset_id')
                 ->andWhere('sa.section_id = ?', $this->section->id)
                 ->andWhere('a.is_active = ?', 1)
-                ->andWhere('a.asset_type_id = ?', 1)
-                ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"));
+                ->andWhere('a.asset_type_id = ?', 1);
+				
+				if($section_verify) $this->assetsQuery->andWhere('a.asset_type_id = ?', 4);
+                
+                $this->assetsQuery->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"));
+				
                 if($this->site->getSlug() == "entrelinhas-1")
                   $this->assetsQuery->orderBy('sa.display_order');
                 else
