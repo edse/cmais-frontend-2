@@ -519,7 +519,9 @@ em{font-style:oblique !important;}
 #destaque.chamada-home .media img { margin-top:10px; }
 .uma-coluna .media { max-height:390px; }
 
-.box-interna .navbar-nav {    background: none repeat scroll 0 0 #666666;    margin-top: 0;}
-.box-interna .navbar-nav li {    background: none repeat scroll 0 0 #666666;    margin-right: 0;    padding: 5px 29px; float: left;}
-.box-interna .navbar-nav li a {    text-transform: uppercase; }
+#esquerda .navbar-nav { background: none repeat scroll 0 0 #666666;    margin-top: 0;}
+#esquerda .navbar-nav li { background: none repeat scroll 0 0 #666666;    margin-right: 0;    padding: 5px 29px; float: left;}
+#esquerda .navbar-nav li a { text-transform: uppercase; color:#fff; }
+#esquerda .navbar-nav li:hover,
+#esquerda .navbar-nav li.ativo { background: none repeat scroll 0 0 #005CA8;}
 
