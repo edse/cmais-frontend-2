@@ -755,8 +755,8 @@ class _sectionActions extends sfActions
                 ->andWhere('sa.section_id = ?', $this->section->id)
                 ->andWhere('a.is_active = ?', 1);
                 
-                if($this->site->getSlug() == "diario-da-manha"){
-                	//$this->assetsQuery->andWhere('a.asset_type_id = ?', 4);
+                if($this->section->getSlug() == "programas-na-integra"){
+                	$this->assetsQuery->andWhere('a.asset_type_id = ?', 4);
                 }else{
                 	$this->assetsQuery->andWhere('a.asset_type_id = ?', 1);
                 }
