@@ -67,6 +67,24 @@
     });
     </script>
   <body>
+  	
+  	
+  	
+<?php
+  $assets = Doctrine_Query::create()
+	  ->select('a.*')
+	  ->from('Asset a, SectionAsset sa')
+	  ->whereIn('sa.section_id', array(119)) //Para os pais
+	  ->andWhere('sa.asset_id = a.id')
+	  ->andWhere('a.description != ""')
+	  ->orderBy('a.id desc')
+	  ->limit(3)
+	  ->execute();
+?>   	
+  	
+  	
+  	
+  	
     <?php use_helper('I18N', 'Date')    ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))    ?>
 
@@ -82,18 +100,48 @@
               <div class="menu-quintal">
                 <ul class="navegacao">
                   <li><a href="/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
+                  <li><span>/</span><p><a href="/quintaldacultura/agenda" title="Quintal da Cultura">Agenda</a></p></li>
                 </ul>
-                <h2><?php echo $section->getTitle()              ?></h2>
-                <small><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></small>
+                <h2><?php echo $asset->getTitle() ?></h2>
+                <small><?php echo $asset->getDescription() ?></small>
+		          
+		          <form id="busca" method="get" action="/quintaldacultura/agenda">
+		            <input type="text" name="search" id="search" placeholder="Pesquisar" />
+		            <button class="sprite-ico-busca"></button>
+		          </form>
+		                
               </div>
               <!-- /menu-->
               <div class="box-content">
-      			  <?php echo html_entity_decode($asset->AssetContent->render()) ?> 
+              	<p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
               </div>
              
             </div>
             <div class="col-dir">
-             
+              <div class="leiamais">Para os Pais</div>
+              
+              
+   				<?php if($assets): ?>
+	                <?php if(count($assets) > 0): ?>
+	                  <?php foreach($assets as $k=>$d): ?>
+			              <div class="box-content">
+			              	<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+			                      <?php if(strlen($d->getTitle()) > 22):?> 
+			                      	<h2><?php echo substr($d->getTitle(),0,20) ?>...</h2>
+								  <?php else: ?>
+								  	<h2><?php echo $d->getTitle() ?></h2>
+								  <?php	endif;?>				                
+				                
+				                	<?php if($d->retriveImageUrlByImageUsage("image-4-b")): ?>
+				                		<img src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>"/>
+				                	<?php endif;?>
+				                <p><?php echo $d->getDescription() ?></p>
+			              	</a>
+			              </div>	                  	
+	                  <?php endforeach; ?>
+	                <?php endif; ?>
+	              <?php endif; ?>    
+              
               <!-- maiscrianca -->
               <div id='div-gpt-ad-1380814177723-0' style='width:300px; height:250px;'>
               <script type='text/javascript'>

@@ -963,16 +963,29 @@ class _assetActions extends sfActions
             $this->jogoSubsection = Doctrine::getTable('Section')->findOneBySlug($request->getParameter('param3'));
           else
             $this->jogoSubsection = Doctrine::getTable('Section')->findOneBySlug('todos');
-        }
+        }elseif ($s->Parent->slug == "diversao") {
+			$this->section = Doctrine::getTable('Section')->findOneById($s->id);
+			$slug = "diversao-content";
+		}
+        elseif ($s->slug == "agenda") {
+			$this->section = Doctrine::getTable('Section')->findOneById($s->id);
+			$slug = "agenda-interna";
+		}
+		/*
         elseif(in_array($s->id, array('94', '103', '106', '104', '105', '127'))){
           $this->section = Doctrine::getTable('Section')->findOneById($s->id);
-          $slug = "atividade";
+          //$slug = "atividade";
+		  $slug = "diversao-content";
         }
         elseif($s->id == '107')
-          $slug = "atividade-colorir";
+          //$slug = "atividade-colorir";
+		  $slug = "diversao-content";
         elseif(in_array($s->id, array('97', '765', '764', '763', '762'))){
-          $slug = "baixar-content";
+          //$slug = "baixar-content";
+		  $slug = "diversao-content";
         }
+		*/
+		
       }
       
       if($this->section->getId() == 1)

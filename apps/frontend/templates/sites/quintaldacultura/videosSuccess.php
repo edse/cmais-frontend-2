@@ -19,8 +19,7 @@
     <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
     
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css?nocache=1234" type="text/css" />
-    <link rel="stylesheet" href="http://cmais.com.br/portal/quintal/css/geralQuintal.css" type="text/css" />
-       
+    <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
     
     <!-- scripts -->
     <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
@@ -33,21 +32,8 @@
       $('.carrossel').jcarousel({
         wrap: "both"
       });
-      $("ul.dropdown li").hover(function(){
-          $(this).addClass("hover");
-          $('ul:first', this).css('visibility','visible');
-      },
-      function(){
-          $(this).removeClass("hover");
-          $('ul:first',this).css('visibility', 'hidden');
-      });
-      $("ul.dropdown li ul li:has(ul)").find("a:first").append("  ");
     })
     </script>
-    <style>
-    .rodape.rodVid {*margin-top: -10px !important;}
-    .allWrapper #rodape-portal{margin-top: 53px !important;*margin-top: 88px !important;}
-  </style>
   </head>
   <script type="text/javascript"> 
     var _gaq = _gaq || [];
@@ -62,8 +48,9 @@
     })();
   </script> 
   <body>
-   <link rel="stylesheet" href="http://cmais.com.br/portal/quintal/css/videosQuintal.css" type="text/css" />
-  <div class="allWrapper">
+
+   
+
 
   <?php use_helper('I18N', 'Date') ?>
   <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
@@ -71,131 +58,136 @@
       <div class="contentWrapper" align="center">
 
 
-      <div class="content videos">
+      <div class="content internas">
         <?php include_partial_from_folder('sites/quintaldacultura', 'global/menu') ?>
-        <hr />
-
-        <div class="conteudo">
+           <div class="conteudo">
 
           <div class="conteudoWrapper">
             <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
-            <div class="menuVoltar">
-                <a class="voltar" href="/quintaldacultura"><span class="ico-voltar"></span><span class="tit">Quintal</span></a>
-            </div>
-            <hr />
-
-            <div class="videosBox">
-              <span class="palhaco"></span>
-                <div class="rodaGigante">
-                  <a class="todosVideos" href="/quintaldacultura/videos/todos" title="Todos os vídeos"><span>Todos os V&iacute;deos</span></a>
-                  <a class="musicasquintal" href="/quintaldacultura/videos/musicas-do-quintal" title="Músicas da Quintal">Músicas do Quintal</a>
-                  <a class="historiadesenhada" href="/quintaldacultura/videos/historia-desenhada" title="História Desenhada">História Desenhada</a>
-                  <a class="momentofabuloso" href="/quintaldacultura/videos/momento-fabuloso" title="Momento Fabuloso">Momento Fabuloso</a>
-                  <a class="historiapraboi" href="/quintaldacultura/videos/historias-pra-boi-nao-dormir" title="Histórias pra boi não dormir">Histórias pra Boi não dormir</a>
-                  <a class="quintaldascriancas" href="/quintaldacultura/videos/quintal-das-criancas" title="Quintal das crianças">Quintal das crianças</a>
-
-                    
-                </div>
-                <span class="palhaca"></span>
-            </div>
-
-
-                      </div>
-                        <div class="allpages">
-                          
-                          <!--div class="carrossel activo">
-                          <?php
-                          // section assets
-                          $assets = Doctrine_Query::create()
-                            ->select('a.*')
-                            ->from('Asset a, Site s')
-                            ->where('s.type = ? OR s.id=67', 'Programa Infantil')
-                            ->andWhere('a.site_id = s.id')
-                            ->andWhere('a.asset_type_id = 6')
-                            ->andWhere('a.is_active = 1')
-                            ->orderBy('a.id desc')
-                            ->execute();
-                          ?>
-                            <ul>
-                              <?php if($assets): ?>
-                                <?php if(count($assets) > 0): ?>
-                                  <?php foreach($assets as $k=>$d): ?>
-                                    <li>
-                                      <a href="<?php echo $d->retriveUrl() ?>"><span class="top"><span class="text1"><?php echo $d->getTitle() ?></span></span></span>
-                                      <?php if($d->retriveImageUrlByImageUsage("image-2") != ""): ?>
-                                        <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width: 200px;" />
-                                      <?php endif; ?><span class="bottom"><span class="text2">assistir</span></span></a>
-                                    </li>
-                                  <?php endforeach; ?>
-                                <?php endif; ?>
-                              <?php endif; ?>
-                            </ul>
-                            </div>
-                            <hr />
-                            <div class="boxDestaque" align="center">
-                              <div class="destaque jg">
-                                  <span class="minhoca"></span>
-                                    <h2><span class="ico-cross"></span><span class="tit">Jogos</span></h2>
-
-                                    <div class="boxVideos">
-                                      <div class="videoThumbs">
-                                        <ul>
-                                          <?php if(isset($displays['destaque-jogos'])): ?>
-                                            <?php if(count($displays['destaque-jogos']) > 0): ?>
-                                              <?php foreach($displays['destaque-jogos'] as $k=>$d): ?>
-                                                <?php if(($d->retriveImageUrlByImageUsage("image-1") != "")&&($k>0)): ?>
-                                                  <li><a href="<?php echo $d->retriveUrl() ?>"><img src="<?php echo $d->retriveImageUrlByImageUsage("image-1") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width:90px" /></a></li>
-                                                <?php endif; ?>
-                                              <?php endforeach; ?>
-                                            <?php endif; ?>
-                                          <?php endif; ?>
-                                        </ul>
-                                        </div>
-                                        <div class="videoBig">
-                                        <?php if(isset($displays['destaque-jogos'][0])): ?>
-                                          <?php if($displays['destaque-jogos'][0]->retriveImageUrlByImageUsage("image-3") != ""): ?>
-                                            <a href="<?php echo $displays['destaque-jogos'][0]->retriveUrl() ?>"><img src="<?php echo $displays['destaque-jogos'][0]->retriveImageUrlByImageUsage("image-3") ?>" alt="<?php echo $displays['destaque-jogos'][0]->getTitle() ?>" style="width:310px" /></a>
-                                          <?php endif; ?>
-                                        <?php endif; ?>
-                                        </div>
-                                    </div>
-                                </div>
-
-        				                <?php
-        				                if(!isset($curiosidades)){
-        				                  $block = Doctrine::getTable('Block')->findOneById(332);
-        				                  if($block)
-        				                    $curiosidades = $block->retriveDisplays();
-        				                }
-        				                ?>
-        				                <?php if(isset($curiosidades[0])): ?>
-        				                <div class="curiosidades">
-        				                  <p><?php echo $curiosidades[0]->getDescription() ?></p>
-        				                  <h3><?php echo $curiosidades[0]->getTitle() ?></h3>
-        				                </div>
-        				                <?php endif; ?>
-
-                                <hr />
-                            </div-->
-                            <!--DESTAQUE JOGUINHOS -->
-                            <?php include_partial_from_folder('sites/quintaldacultura', 'global/destaque-joguinhos') ?>
-                            <!--DESTAQUE JOGUINHOS -->
-                        </div>      
+        <ul class="sidebar">
+          <li class="sprite-balao-categoria">Escolha por <br/>categoria</li>
+          
+          
+          
+         <?php
+			$secoes = Doctrine_Query::create()
+			  ->select('s.*')
+			  ->from('Section s')
+			  ->where('s.parent_section_id = ?', 93)
+			  ->addWhere('s.is_active = 1')
+			  ->orderBy('s.display_order asc')
+			  ->execute(); 
+         ?>
+         
+         <?php if(count($secoes) > 0): ?>
+	     <?php    foreach ($secoes as $s):?>
+	     			<?php if($section->getSlug() == "videos" && $s->getSlug() == "todos"):?>
+	     					<li class="ativo"> <a href="/quintaldacultura/diversao" title="Todos">Todos</a></li>
+					<?php else :?>
+							<li <?php if($section->getSlug() == $s->getSlug() || $s->getSlug() == "videos") echo 'class="ativo" ';?>>
+								<a href="/quintaldacultura/videos<?php if($s->getSlug() != "todas") echo "/".$s->getSlug()?>" title="<?php echo $s->getTitle()?>">
+								
+			                      	<?php if(strlen($s->getTitle()) > 17):?> 
+			                      		<?php echo substr($s->getTitle(),0,15) ?>...
+								  	<?php else: ?>
+								  		<?php echo $s->getTitle() ?>
+								  	<?php endif;?>	
+								
+								</a>
+							</li>
+					<?php endif; ?>						 
+		 <?php    endforeach; ?> 
+		 <?php  endif; ?>
+          
+         
+        </ul>
+        <div class="lista">
+          <ul class="navegacao">
+            <li><a href="/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
+            <?php if($section->getSlug() != "videos" || @$term != "" ): ?>     
+            	<li><span>/</span><a href="/quintaldacultura/videos" title="Vídeos">Vídeos</a></li>
+            <?php endif; ?>
             
-                    </div>
-          <hr />
+          </ul>
+          
+          <?php if(@$term): ?> 
+	          <h2><?php echo @$term ?></h2>
+		 <?php else: ?>	          
+	          <h2><?php echo $section->getTitle()?></h2>
+          <?php endif; ?>
+          
+          <!-- BUSCA -->
+          <form id="busca" method="get">
+            <input type="text" name="search" id="search" placeholder="Pesquisar em Vídeos" />
+            <button class="sprite-ico-busca"></button>
+          </form>
+          <!-- BUSCA -->
+          
+          
+          <ul class="assets">
+          	
+       	 <?php if(@$term):?>
+								 
+			<script>
+			  (function() {
+			    var cx = '005232987476052626260:czy5dx_z-m4';
+			    var gcse = document.createElement('script');
+			    gcse.type = 'text/javascript';
+			    gcse.async = true;
+			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+			        '//www.google.com/cse/cse.js?cx=' + cx;
+			    var s = document.getElementsByTagName('script')[0];
+			    s.parentNode.insertBefore(gcse, s);
+			  })();
+			</script>
+			<gcse:searchresults-only></gcse:searchresults-only>	 
+					 
+			</ul>
+					 
+		 <?php else: ?>
+		         	
+		            <?php if(count($pager) > 0): ?>
+		              <?php foreach($pager->getResults() as $d): ?>
+		                <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+		                <li>
+		                 	 <?php /*<a href="/quintaldacultura<?php if($section->slug != "videos") echo "/videos/".$section->slug ?>/<?php echo $d->slug ?>" title="<?php echo $d->getTitle() ?>">*/?>
+		                 	 <a href="/quintaldacultura/videos/<?php echo $d->slug ?>" title="<?php echo $d->getTitle() ?>">
+			                      <?php if(strlen($d->getTitle()) > 19):?> 
+			                      	<h3><?php echo substr($d->getTitle(),0,15) ?>...</h3>
+								  <?php else: ?>
+								  	<h3><?php echo $d->getTitle() ?></h3>
+								  <?php	endif;?>
+			          			  <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" alt="<?php echo $d->getTitle() ?>" />
+			          			  <p><?php echo $d->getDescription() ?></p>
+			          			  <p class="btn">Assistir</p>
+		        		  	 </a>
+		                </li>
+		              <?php endforeach; ?>
+		              </ul>	
+		          	<?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
+		        	<?php endif; ?> 
+		          
+          
+          <?php endif;?>
+          
+        </div>
+        </div>
+        <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
+        </div>
+        
+        
+
         </div>
 
-      <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
+      
 
     </div>
 
     <?php include_partial_from_folder('blocks', 'global/footer') ?>
 
-  </div>
   <div id="miolo"></div>
   <div class="box-lateral"></div>
-
+  
 
   
 </body>

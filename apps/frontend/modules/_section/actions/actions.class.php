@@ -1346,24 +1346,33 @@ class _sectionActions extends sfActions
 
     if($this->site->slug == 'quintaldacultura'){
       if(($sectionSlug == 'todos')||($sectionSlug == 'todas')||($sectionSlug == 'tudo')){
-        if($this->section->Parent->getSlug() == "imagens")
+       /* if($this->section->Parent->getSlug() == "imagens")
           $sectionSlug = "imagem";
         elseif($this->section->Parent->getSlug() == "baixar")
           $sectionSlug = "baixar-content";
        elseif($this->section->Parent->getSlug() == "jogos")
           $sectionSlug = "jogosSubsection";
+        else*/
+       if($this->section->Parent->getSlug() == "jogos")
+          //$sectionSlug = "jogosSubsection";
+          $sectionSlug = "jogos";
+	   elseif($this->section->Parent->getSlug() == "videos")
+          $sectionSlug = "videos";
+	   elseif($this->section->Parent->getSlug() == "diversao")
+          $sectionSlug = "diversao";	   
         else
-          $sectionSlug = substr($this->section->Parent->getSlug(),0,strlen($this->section->Parent->getSlug())-1);
+          //$sectionSlug = substr($this->section->Parent->getSlug(),0,strlen($this->section->Parent->getSlug())-1);
+		$sectionSlug = "index";	 
       }else{
         //if(in_array($sectionSlug, array('desafio','esportes','habilidade','educativos','aventura','peixonauta')))
-        if($this->section->Parent->slug == "jogos")
+        if($this->section->Parent->slug == "jogoss")
           $sectionSlug = 'jogosSubsection';
         elseif(in_array($sectionSlug, array('artes','brincadeiras','receitas','experiencia')))
-          $sectionSlug = 'atividade';
+          $sectionSlug = 'diversao';
         elseif(in_array($sectionSlug, array('paracolorir','para-colorir','colorir')))
-          $sectionSlug = 'atividade-colorir';
+          $sectionSlug = 'diversaor';
         elseif(in_array($sectionSlug, array('papel-de-parede','folhinha','toque-para-celular','carinhas')))
-          $sectionSlug = 'baixar-content';
+          $sectionSlug = 'diversao';
         elseif($sectionSlug == 'videos'){
           if($request->getParameter('s')>0){
             $sectionSlug = 'video';
@@ -1372,10 +1381,36 @@ class _sectionActions extends sfActions
         }
         elseif($sectionSlug == 'imagens'){
           if($request->getParameter('s')>0){
-            $sectionSlug = 'imagem';
+            $sectionSlug = 'diversao';
             $this->s = Doctrine::getTable('Site')->findOneById($request->getParameter('s'));
           }
         }
+
+		if($this->site->slug == 'quintaldacultura'){
+			
+			if($this->section->slug == 'jogos')    $sections_list = array(92, 98, 99, 100, 101, 102);
+			if($this->section->slug == 'videos')   $sections_list = array(93, 940, 941, 942, 943, 952);
+			if($this->section->slug == 'diversao') $sections_list = array(94, 103, 106, 104, 105, 107, 127, 765, 764, 762);
+			//if($this->section->slug == 'agenda') $sections_list = array(1000);
+			
+			if($request->getParameter('search')) $this->term = $request->getParameter('search');
+			
+			if(count($sections_list) > 1){
+			 $this->assetsQuery = Doctrine_Query::create()
+	          ->select('a.*')
+	          ->from('Asset a, SectionAsset sa')
+	          ->whereIn('sa.section_id', $sections_list)
+	          ->andWhere('sa.asset_id = a.id')
+	          ->orderBy('sa.id asc');
+
+	          if($this->term != "")
+	            $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->term.'%', '%'.$this->term.'%'));
+	          $this->assetsQuery->andWhere('a.is_active = ?', 1);			  
+			} 
+			  
+		}
+
+
       }
       if(!in_array($sectionSlug, array('team','desenhos','diretrizes-pedagogicas','sobre-o-quintal-da-cultura','publico-alvo'))){ 
         $this->setLayout(false);
@@ -1613,8 +1648,8 @@ class _sectionActions extends sfActions
         $pagelimit = 20;
     }
     if($this->section->Site->getSlug() == "quintaldacultura") {
-      if($this->section->getSlug() == "todos" || $this->section->Parent->slug == "jogos " || $this->section->getSlug() == "para-colorir")
-        $pagelimit = 72;
+      if($this->section->getSlug() == "todos" || $this->section->getSlug() == "jogos" || $this->section->Parent->slug == "jogos" || $this->section->getSlug() == "videos" || $this->section->getSlug() == "diversao")
+        $pagelimit = 18;
     }
     if($this->site->Program->Channel->getSlug() == "tvratimbum") {
         if($this->section->getSlug() == "homepage")

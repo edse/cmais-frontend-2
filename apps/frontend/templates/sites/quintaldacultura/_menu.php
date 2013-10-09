@@ -1,17 +1,30 @@
-        <div class="cabecalho">
-          <h1><a href="http://cmais.com.br/quintaldacultura">Quintal da Cultura</a></h1>
-          <ul>
-            <li><a class="jogos" href="/quintaldacultura/jogos" title="Jogos"><span>Jogos</span></a></li>
-            <li><a class="videos" href="/quintaldacultura/videos/todos" title="Vídeos"><span>V&iacute;deos</span></a></li>
-            <li><a class="atividades" href="/quintaldacultura/atividades" title="Atividades"><span>Atividades</span></a></li>
-            <li><a class="musica" href="http://tvratimbum.cmais.com.br/radio" target="_blank"><span>M&uacute;sica</span></a></li>
-            <li><a class="imagens" href="http://tvcultura.cmais.com.br/sid/turminha-do-sid" title="Imagens"><span>Imagens</span></a></li>
-            <li><a class="baixar" href="/quintaldacultura/baixar" title="Baixar"><span>Baixar</span></a></li>
-            <li><a class="cultura" href="/paraospais" title="para os pais"><span>Pais</span></a></li>
-          </ul>
-          
-          <div id="horario" class="horario">
-            <p><span>TV CULTURA</span><br/>SEGUNDA a SEXTA:<br> 9h30 às 11h30 • 14h30 às 18h<br>SÁBADO:<BR> 8h às 13h30</p>
-            <!--p><span>TV Rá Tim Bum!</span><br/>SEG a SEX: 7h • 19h • 1h<br/>SÁB e DOM: 15h</p-->
-          </div>  
-        </div>
+<div class="cabecalho">
+  <div id="horario">
+    <a class="cultura" href="#">
+      <img src="/portal/quintal/images/logo-tv.png" />
+      <h2>TV Cultura</h2>
+      <p>segunda a sexta: 9h30 • 14h30 | sábado: 8h45</p>      
+      <span class="divisa"></span>
+    </a>
+    
+    <a class="rtb" href="#">
+      <img src="/portal/quintal/images/logo-rtb.png" />
+      <h2>TV Rá Tim Bum!</h2>
+      <p>segunda a sexta: 7h • 1h</p>      
+      <span class="divisa"></span>
+    </a>
+    
+    <a class="agenda" href="/quintaldacultura/agenda">
+      <h2><span class="sprite-ico-agenda"></span>Agenda</h2>
+    </a>
+    
+  </div>
+  <h1><a href="http://cmais.com.br/quintaldacultura">Quintal da Cultura</a></h1>
+  <ul>
+    <li><a class="jogos" href="/quintaldacultura/jogos" title="Jogos"><span class="sprite-ico-jogos"></span>Jogos</a></li>
+    <li><a class="videos" href="/quintaldacultura/videos" title="Vídeos"><span  class="sprite-ico-videos"></span>V&iacute;deos</a></li>
+    <li><a class="musica" href="/quintaldacultura/musicas"><span  class="sprite-ico-musicas"></span>M&uacute;sica</a></li>
+    <li><a class="atividades" href="/quintaldacultura/diversao" title="Diversão"><span  class="sprite-ico-diversao"></span>Diversão</a></li>
+    <li><a class="atividades" href="/quintaldacultura/turma" title="A Turma"><span  class="sprite-ico-aturma"></span>A Turma</a></li>
+  </ul>
+</div>

@@ -19,7 +19,7 @@
     <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
     
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css?nocache=1234" type="text/css" />
-    <link rel="stylesheet" href="http://cmais.com.br/portal/quintal/css/geralQuintal.css" type="text/css" />
+    <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
     
     <!-- scripts -->
     <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script>
@@ -49,7 +49,6 @@
   </script> 
   <body>
 
-  <div class="allWrapper">
 
   <?php use_helper('I18N', 'Date') ?>
   <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
@@ -57,136 +56,101 @@
       <div class="contentWrapper" align="center">
 
 
-      <div class="content">
+      <div class="content internas">
         <?php include_partial_from_folder('sites/quintaldacultura', 'global/menu') ?>
-        <hr />
-
-        <div class="conteudo">
+           <div class="conteudo">
 
           <div class="conteudoWrapper">
             <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
-
-            <div class="menuVoltar">
-                <a class="voltar" href="/quintaldacultura"><span class="ico-voltar"></span><span class="tit">Quintal</span></a>
-            </div>
-            <hr />
-
-            <div class="jogosBox">
-              <!--<span class="palhaca"></span>-->
-              <span class="ludovico"></span>
-                <div class="rodaGigante">
-                  <a class="todosJogos" href="/quintaldacultura/jogos/todos"><span>Todos os jogos</span></a>
-                  <a class="vila" href="http://cmais.com.br/vilasesamo/jogos/index.html"><span>Vila Sesamo</span></a>
-                  <a class="desafio" href="/quintaldacultura/jogos/desafio"><span>Desafio</span></a>
-                  <a class="habilidade" href="/quintaldacultura/jogos/habilidade"><span>Habilidade</span></a>
-                  <a class="aventura" href="/quintaldacultura/jogos/aventura"><span>Aventura</span></a>
-                  <a class="educativo" href="/quintaldacultura/jogos/gui-e-estopa"><span>Gui e Estopa <span></a>
-                  <a class="esporte" href="/quintaldacultura/jogos/esportes"><span>Esportes</span></a>
-                  <a class="peixonauta" href="/quintaldacultura/jogos/joguinhosdopeixonauta"><span>Peixonauta</span></a>
-                </div>
-              <!--<span class="palhaco"></span>-->
-            </div>
-            
-            
-          </div>
-
-          <div class="allpages">
-
-            <?php
-            $assets = Doctrine_Query::create()
-              ->select('a.*')
-              ->from('Asset a, SectionAsset sa')
-              ->whereIn('sa.section_id',  array(92, 98, 99, 100, 101))
-              ->andWhere('sa.asset_id = a.id')
-              ->orderBy('a.id desc')
-              ->execute();
-            ?>
-
-            <div class="carrossel activo">
-              <ul>
-                <?php if($assets): ?>
-                  <?php if(count($assets) > 0): ?>
-                    <?php foreach($assets as $k=>$d): ?>
-                      <li>
-                        <a href="<?php echo $d->retriveUrl() ?>"><span class="top"><span class="text1"><?php echo $d->getTitle() ?></span></span></span>
-                        <?php if($d->retriveImageUrlByImageUsage("image-2-b") != ""): ?>
-                          <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width: 200px;" />
-                        <?php endif; ?><span class="bottom"><span class="text2">brincar</span></span></a>
-                      </li>
-                    <?php endforeach; ?>
-                  <?php endif; ?>
-                <?php endif; ?>
-              </ul>
-            </div>
-            
-            <!--QUINTAL PERGUNTE FILOMENA-->
-            <?php /*include_partial_from_folder('sites/quintaldacultura', 'global/perg-filomena') */ ?>
-            <!--/QUINTAL PERGUNTE-->
-            <hr />
-            <!--div class="boxDestaque">
-              <div class="destaque jg">
-                <span class="minhoca"></span>
-                  <h2><span class="ico-cross"></span><span class="tit">Atividades</span></h2>
-                  <div class="boxVideos">
-                    <div class="videoThumbs">
-                      <ul>
-                      <?php if(isset($displays['destaque-atividades'])): ?>
-                        <?php if(count($displays['destaque-atividades']) > 0): ?>
-                          <?php foreach($displays['destaque-atividades'] as $k=>$d): ?>
-                            <?php if(($d->retriveImageUrlByImageUsage("image-1") != "")&&($k>0)): ?>
-                              <li><a href="<?php echo $d->retriveUrl() ?>"><img src="<?php echo $d->retriveImageUrlByImageUsage("image-1") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width:90px" /></a></li>
-                            <?php endif; ?>
-                          <?php endforeach; ?>
-                        <?php endif; ?>
-                      <?php endif; ?>
-                      </ul>
-                    </div>
-                    <div class="videoBig">
-                    <?php if(isset($displays['destaque-atividades'][0])): ?>
-                      <?php if($displays['destaque-atividades'][0]->retriveImageUrlByImageUsage("image-3") != ""): ?>
-                        <a href="<?php echo $displays['destaque-atividades'][0]->retriveUrl() ?>"><img src="<?php echo $displays['destaque-atividades'][0]->retriveImageUrlByImageUsage("image-3") ?>" alt="<?php echo $displays['destaque-atividades'][0]->getTitle() ?>" style="width:310px" /></a>
-                      <?php endif; ?>
-                    <?php endif; ?>
-                    </div>
-                  </div>
-                </div>
-
-                <?php
-                if(!isset($curiosidades)){
-                  $block = Doctrine::getTable('Block')->findOneById(332);
-                  if($block)
-                    $curiosidades = $block->retriveDisplays();
-                }
-                ?>
-                <?php if(isset($curiosidades[0])): ?>
-                <div class="curiosidades">
-                  <p><?php echo $curiosidades[0]->getDescription() ?></p>
-                  <h3><?php echo $curiosidades[0]->getTitle() ?></h3>
-                </div>
-                <?php endif; ?>
-
-                <hr />
-              </div-->
+        <ul class="sidebar">
+          <li class="sprite-balao-categoria">Escolha por <br/>categoria</li>
           
-            <!--DESTAQUE JOGUINHOS -->
-            <?php include_partial_from_folder('sites/quintaldacultura', 'global/destaque-joguinhos') ?>
-            <!--DESTAQUE JOGUINHOS -->
-              
-            </div>
+          <li <?php if($section->getSlug() == "todos" || $section->getSlug() == "jogos") echo 'class="ativo" ';?>><a href="/quintaldacultura/jogos" title="Todos">Todos</a></li>
+          <li <?php if($section->getSlug() == "joguinhosdopeixonauta") echo 'class="ativo" ';?>><a href="/quintaldacultura/jogos/joguinhosdopeixonauta" title="Peixonauta">Peixonauta</a></li>
+          <li <?php if($section->getSlug() == "desafio") echo 'class="ativo" ';?>><a href="/quintaldacultura/jogos/desafio" title="Desafio">Desafio</a></li>
+          <li <?php if($section->getSlug() == "habilidade") echo 'class="ativo" ';?>><a href="/quintaldacultura/jogos/habilidade" title="Habilidade">Habilidade</a></li>
+          <li <?php if($section->getSlug() == "aventura") echo 'class="ativo" ';?>><a href="/quintaldacultura/jogos/aventura" title="Aventura">Aventura</a></li>
+          <li <?php if($section->getSlug() == "esportes") echo 'class="ativo" ';?>><a href="/quintaldacultura/jogos/esportes" title="Esportes">Esportes</a></li>
+          <li <?php if($section->getSlug() == "gui-e-estopa") echo 'class="ativo" ';?>><a href="/quintaldacultura/jogos/gui-e-estopa" title="Gui e Estopa">Gui e Estopa</a></li>
+          <li><a href="http://cmais.com.br/vilasesamo/jogos/index.html" title="Vila Sésamo">Vila Sésamo</a></li>
+         
+        </ul>
+        <div class="lista">
+          <ul class="navegacao">
+            <li><a href="/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
+            <?php if($section->getSlug() != "jogos" || @$term != "" ): ?>     
+            	<li><span>/</span><a href="/quintaldacultura/jogos" title="Jogos">Jogos</a></li>
+            <?php endif; ?>
             
-          </div>
+          </ul>
+          
+          <?php if(@$term): ?> 
+	          <h2><?php echo @$term ?></h2>
+		 <?php else: ?>	          
+	          <h2><?php echo $section->getTitle()?></h2>
+          <?php endif; ?>
+          
+          
+         <form id="busca" method="get">
+            <input type="text" name="search" id="search" placeholder="Pesquisar em Vídeos" />
+            <button class="sprite-ico-busca"></button>
+          </form>
+          <!-- BUSCA -->
+          
+          
+          <ul class="assets">
+          	
+       	 <?php if(@$term):?>
+								 
+			<script>
+			  (function() {
+			    var cx = '005232987476052626260:czy5dx_z-m4';
+			    var gcse = document.createElement('script');
+			    gcse.type = 'text/javascript';
+			    gcse.async = true;
+			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+			        '//www.google.com/cse/cse.js?cx=' + cx;
+			    var s = document.getElementsByTagName('script')[0];
+			    s.parentNode.insertBefore(gcse, s);
+			  })();
+			</script>
+			<gcse:searchresults-only></gcse:searchresults-only>	 
+					 
+			</ul>
+					 
+		 <?php else: ?>
 
-          <hr />
-
+	            <?php if(count($pager) > 0): ?>
+	              <?php foreach($pager->getResults() as $d): ?>
+	                <?php $related = $d->retriveRelatedAssetsByRelationType('preview'); ?>
+	                <li>
+	                 	 <a href="/quintaldacultura<?php if($section->slug != "jogos") echo "/jogos/".$section->slug ?>/<?php echo $d->slug ?>" title="<?php echo $d->getTitle() ?>">
+		                      <?php if(strlen($d->getTitle()) > 19):?> 
+		                      	<h3><?php echo substr($d->getTitle(),0,15) ?>...</h3>
+							  <?php else: ?>
+							  	<h3><?php echo $d->getTitle() ?></h3>
+							  <?php	endif;?>
+		          			  <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>" alt="<?php echo $d->getTitle() ?>" />
+		          			  <p><?php echo $d->getDescription() ?></p>
+		          			  <p class="btn">Jogar</p>
+	        		  	 </a>
+	                </li>
+	              <?php endforeach; ?>
+	            <?php endif; ?>          	
+        	  </ul>
+	          <?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
+	       	  <?php endif; ?>
+         </div>
+        </div>
+        <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
         </div>
 
-      <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
+        </div>
 
     </div>
 
     <?php include_partial_from_folder('blocks', 'global/footer') ?>
 
-  </div>
   <div id="miolo"></div>
   <div class="box-lateral"></div>
   

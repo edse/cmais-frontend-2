@@ -67,6 +67,23 @@
     });
     </script>
   <body>
+  	
+  	
+  	
+<?php
+  $assets = Doctrine_Query::create()
+	  ->select('a.*')
+	  ->from('Asset a, SectionAsset sa')
+	  //->whereIn('sa.section_id', array(94, 103, 106, 104, 105, 107, 127))
+	  ->whereIn('sa.section_id', array(119))
+	  ->andWhere('sa.asset_id = a.id')
+	  ->andWhere('a.description != ""')
+	  ->orderBy('a.id desc')
+	  ->limit(3)
+	  ->execute();
+ ?>  	
+  	
+  	
     <?php use_helper('I18N', 'Date')    ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))    ?>
 
@@ -81,19 +98,89 @@
               <!-- menu-->
               <div class="menu-quintal">
                 <ul class="navegacao">
-                  <li><a href="/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
+                  <li><a href="/quintaldacultura/jogos" title="Quintal da Cultura">Quintal da Cultura</a></li>
+			            <?php if($section->getSlug() != "agenda" || @$term != "" ): ?>     
+			            	<li><span>/</span><a href="/quintaldacultura/agenda" title="Agenda">Agenda</a></li>
+			            <?php endif; ?>
                 </ul>
-                <h2><?php echo $section->getTitle()              ?></h2>
-                <small><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></small>
+                
+				 <?php if(@$term): ?> 
+			          <h2><?php echo @$term ?></h2>
+				 <?php else: ?>	          
+			          <h2><?php echo $section->getTitle()?></h2>
+		         <?php endif; ?>
+                
+		          <form id="busca">
+		            <input type="text" name="search" id="search" placeholder="Pesquisar" />
+		            <button class="sprite-ico-busca"></button>
+		          </form>       
               </div>
               <!-- /menu-->
-              <div class="box-content">
-      			  <?php echo html_entity_decode($asset->AssetContent->render()) ?> 
+              <ul class="box-content">
+		       	 
+		   <?php if(@$term):?>
+										 
+					<script>
+					  (function() {
+					    var cx = '005232987476052626260:czy5dx_z-m4';
+					    var gcse = document.createElement('script');
+					    gcse.type = 'text/javascript';
+					    gcse.async = true;
+					    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+					        '//www.google.com/cse/cse.js?cx=' + cx;
+					    var s = document.getElementsByTagName('script')[0];
+					    s.parentNode.insertBefore(gcse, s);
+					  })();
+					</script>
+					<gcse:searchresults-only></gcse:searchresults-only>	 
+							 
+					</ul>
+      		<?php else: ?>        	
+              	<?php if(count($pager) > 0): ?>
+	              <?php foreach($pager->getResults() as $d): ?>
+	                <li>
+	                  <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle() ?>">
+	                    <h2><?php echo $d->getTitle() ?></h2>
+	                    <small><?php echo format_date($d->getCreatedAt(), "g") ?></small>
+	                    <p><?php echo html_entity_decode($d->AssetContent->getHeadlineLong())?></p>
+	                  </a>
+	                  <div class="divisa"></div>
+	                </li>
+	              <?php endforeach; ?>
+	            <?php endif; ?>          	
+
+                 </ul>
+                 <?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
+   			<?php endif; ?>          	
+                 
               </div>
-             
             </div>
+
+
             <div class="col-dir">
-             
+              <div class="leiamais">Para os Pais</div>
+	      
+	       		 <?php if($assets): ?>
+	                <?php if(count($assets) > 0): ?>
+	                  <?php foreach($assets as $k=>$d): ?>
+			              <div class="box-content">
+			              	<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+			                      <?php if(strlen($d->getTitle()) > 22):?> 
+			                      	<h2><?php echo substr($d->getTitle(),0,20) ?>...</h2>
+								  <?php else: ?>
+								  	<h2><?php echo $d->getTitle() ?></h2>
+								  <?php	endif;?>
+								  <?php if($d->retriveImageUrlByImageUsage("image-4-b")): ?>
+					                <img src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>"/>
+					              <?php	endif;?>
+					                <p><?php echo $d->getDescription() ?></p>
+					              
+			              	</a>
+			              </div>	                  	
+	                  <?php endforeach; ?>
+	                <?php endif; ?>
+	              <?php endif; ?>                        
+	      
               <!-- maiscrianca -->
               <div id='div-gpt-ad-1380814177723-0' style='width:300px; height:250px;'>
               <script type='text/javascript'>
