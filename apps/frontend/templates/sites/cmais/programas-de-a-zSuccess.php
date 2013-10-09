@@ -1,5 +1,5 @@
 <?php
-  //header('Content-Type: text/html; charset=utf-8');
+  
   //pega todas as letras do alfabeto
   $char = 'A';
   $programs_az["#"] = array();	  
@@ -22,45 +22,30 @@
     foreach($programs as $p)
     {
       $firstChar = substr($p->getTitle(),0,1);
-	  //echo $firstChar;
-	  //$teste = $p->getTitle();
-	  //echo $teste[0];
-	  
-	  if ($k==0 && preg_match("/[^A-Z]/",$firstChar))
-	  {
-	  	/*
-        if (in_array($firstChar,array("Á","Â")))
-          $programs_az["A"][] = $p;
-        if (in_array($firstChar,array("É","Ê")))
-	      $programs_az["E"][] = $p;
-	    if (in_array($firstChar,array("Í")))
-	      $programs_az["I"][] = $p;
-	    if (in_array($firstChar,array("Ó","Ô")))
-	      $programs_az["O"][] = $p;
-	    if (in_array($firstChar,array("Ú")))
-	      $programs_az["U"][] = $p;
-		 * 
-		 */
-	    if (preg_match("/[0-9]/",$firstChar))
-	      $programs_az["#"][] = $p;
-	    /*
-		 else
-	      $programs_az["#"][] = $p;
-		 * 
-		 */
-	  }
-	  else
+      
+	    if ($k==0 && preg_match("/[^A-Z]/",$firstChar))
+	    {
+	      if (preg_match("/[0-9]/",$firstChar))
+	        $programs_az["#"][] = $p;
+      }
+	    else
+      {
         if ($firstChar == "$c")
+        {
           $programs_az["$c"][] = $p;
-		  
-		
-		
-		
-		
+        }
+        else
+        {
+          if (preg_match("/[ÁÀÃÂ]/", $firstChar)) {
+            $programs_az["A"][] = $p; 
+          }
+        }
+      }
     }
   }
   // O bloco abaixo foi um jeito que encontrei de jogar dentro do array os programas cuja letra inicial começa com acento.
   // Vou arrumar isso assim que resolver o problema do encoding
+  /*
   foreach($programs as $p)
   {
     if ($p->getSiteId() == 159)
@@ -70,6 +55,8 @@
     if ($p->getSiteId() == 10)
       $programs_az["A"][] = $p;
   }
+   * */
+   
 
   //print_r($programs_az);
 ?>
