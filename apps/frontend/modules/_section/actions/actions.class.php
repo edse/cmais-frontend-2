@@ -1365,6 +1365,7 @@ class _sectionActions extends sfActions
 		$sectionSlug = "index";	 
       }else{
         //if(in_array($sectionSlug, array('desafio','esportes','habilidade','educativos','aventura','peixonauta')))
+        
         if($this->section->Parent->slug == "jogoss")
           $sectionSlug = 'jogosSubsection';
         elseif(in_array($sectionSlug, array('artes','brincadeiras','receitas','experiencia')))
@@ -1389,8 +1390,8 @@ class _sectionActions extends sfActions
 		if($this->site->slug == 'quintaldacultura'){
 			
 			if($this->section->slug == 'jogos')    $sections_list = array(92, 98, 99, 100, 101, 102);
-			if($this->section->slug == 'videos')   $sections_list = array(93, 940, 941, 942, 943, 952);
-			if($this->section->slug == 'diversao') $sections_list = array(94, 103, 106, 104, 105, 107, 127, 765, 764, 762);
+			if($this->section->slug == 'videos')   $sections_list = array(93, 940, 941, 942, 943, 952, 3169, 3170, 3171, 3172, 3173, 3174, 3175, 3176);
+			if($this->section->slug == 'diversao') $sections_list = array(3163, 3164, 97, 104, 105, 106, 107, 127, 765, 764, 762);
 			//if($this->section->slug == 'agenda') $sections_list = array(1000);
 			
 			if($request->getParameter('search')) $this->term = $request->getParameter('search');

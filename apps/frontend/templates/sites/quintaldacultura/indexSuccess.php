@@ -130,6 +130,10 @@
               <!--/MENU PRINCIPAL-->
             </div>
             <!--/CONTEUDO WRAPPER-->
+            
+            <?php
+            /*
+            <!-- FORM DESTAQUE -->
             <div id="destaque">
               <div class="minhoquias"></div>
               <div class="col-dir">
@@ -165,6 +169,9 @@
                 <p>a <span>supresa</span>!</p>
               </div>
             </div>
+            <!-- FORM DESTAQUE -->
+            */
+            ?>
             
             <!--DESTAQUE JOGUINHOS -->
             <?php //include_partial_from_folder('sites/quintaldacultura', 'global/destaque-joguinhos')            ?>
