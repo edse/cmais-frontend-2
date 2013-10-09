@@ -36,9 +36,9 @@
         }
         else
         {
-          if (preg_match("/[ÁÀÃÂ]/", $firstChar)) {
-            $programs_az["A"][] = $p; 
-          }
+          //if (preg_match("/[ÁÀÃÂ]/", $firstChar)) {
+          //  $programs_az["A"][] = $p; 
+          //}
         }
       }
     }
