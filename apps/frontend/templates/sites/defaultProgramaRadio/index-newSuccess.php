@@ -71,10 +71,29 @@
           <div class="box-interna grid2">
             <div class="texto">
               <p><?php echo $site->getDescription() ?></p>
-              
-              
             </div>
           </div>
+
+          <?php
+            $sections = Doctrine_Query::create()
+              ->select('s.*')
+              ->from('Section s')
+              ->where('s.site_id = ?', $site->id)
+              ->andWhere('s.is_active = ?', 1)
+              ->andWhere('s.is_visible = ?', 1)
+              ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
+              ->orderBy('s.display_order')
+              ->execute();
+           ?>
+          <?php if($sections): ?>
+          <!-- menu subsection-->
+          <ul class="nav navbar-nav">
+            <?php foreach($sections as $s): ?>
+            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="<?php echo $s->retriveUrl() ?>"><?php echo $s->getTitle() ?></a></li>
+            <?php endforeach; ?>
+          </ul>
+          <!-- /menu subsection-->
+          <?php endif; ?>
 
             <?php if(isset($pager)): ?>
               <?php if(count($pager) > 0): ?>

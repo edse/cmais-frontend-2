@@ -753,9 +753,16 @@ class _sectionActions extends sfActions
                 ->where('a.site_id = ?', $this->site->getId())
                 ->andWhere('a.id = sa.asset_id')
                 ->andWhere('sa.section_id = ?', $this->section->id)
-                ->andWhere('a.is_active = ?', 1)
-                ->andWhere('a.asset_type_id = ?', 1)
-                ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"));
+                ->andWhere('a.is_active = ?', 1);
+                
+                if($this->section->getSlug() == "programas-na-integra"){
+                	$this->assetsQuery->andWhere('a.asset_type_id = ?', 4);
+                }else{
+                	$this->assetsQuery->andWhere('a.asset_type_id = ?', 1);
+                }
+                
+                $this->assetsQuery->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"));
+                
                 if($this->site->getSlug() == "entrelinhas-1")
                   $this->assetsQuery->orderBy('sa.display_order');
                 else
