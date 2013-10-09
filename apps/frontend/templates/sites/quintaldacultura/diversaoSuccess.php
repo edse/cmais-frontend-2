@@ -69,7 +69,7 @@
 					$secoes = Doctrine_Query::create()
 					  ->select('s.*')
 					  ->from('Section s')
-					  ->where('s.parent_section_id = ?', 94)
+					  ->where('s.parent_section_id = ?', 3163)
 					  ->addWhere('s.is_active = 1')
 					  ->orderBy('s.display_order asc')
 					  ->execute(); 
