@@ -34,28 +34,20 @@
         {
           $programs_az["$c"][] = $p;
         }
-        else
-        {
-          //if (preg_match("/[ÁÀÃÂ]/", $firstChar)) {
-          //  $programs_az["A"][] = $p; 
-          //}
-        }
       }
     }
   }
   // O bloco abaixo foi um jeito que encontrei de jogar dentro do array os programas cuja letra inicial começa com acento.
   // Vou arrumar isso assim que resolver o problema do encoding
-  /*
+  
   foreach($programs as $p)
   {
-    if ($p->getSiteId() == 159)
-      $programs_az["E"][] = $p;
-    if ($p->getSiteId() == 262)
+    if (in_array($p->getSiteId(), array(159,262,1205)))
       $programs_az["E"][] = $p;
     if ($p->getSiteId() == 10)
       $programs_az["A"][] = $p;
   }
-   * */
+  
    
 
   //print_r($programs_az);
