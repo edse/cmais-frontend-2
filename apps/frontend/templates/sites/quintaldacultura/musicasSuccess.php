@@ -208,6 +208,7 @@
              	{name:"<?php echo $i."-".$d->getTitle()?>",
 		        description:"<?php echo $i."-".$d->getTitle()?>",
 		        mp3:"/uploads/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile() ?>"},
+		        <?php $i++ ?>
         	<?php endforeach; ?>     	 
     	<?php endif; ?> 
         
