@@ -1,2766 +1,373 @@
 @import url("jquery-ui-1.7.2.custom.css");
 @import url("jquery.jcarousel.css");
 
-/******** RESET ********/
-/*
-Copyright (c) 2010, Yahoo! Inc. All rights reserved.
-Code licensed under the BSD License:
-http://developer.yahoo.com/yui/license.html
-version: 2.8.2r1
-*/
-html{color:#000;/*background:#FFF;*/}
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
-table{border-collapse:collapse;border-spacing:0;}
-fieldset,img{border:0;}
-address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}
-del,ins{text-decoration:none;}
-li{list-style:none;}
-caption,th{text-align:left;}
-h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
-q:before,q:after{content:'';}
-abbr,acronym{border:0;font-variant:normal;}
-sup{vertical-align:baseline;}
-sub{vertical-align:baseline;}
-legend{color:#000;}
-input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
-input,button,textarea,select{*font-size:100%;}
-body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}
-select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}
-table{font-size:inherit;font:100%;}
-pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
-body{}
-#doc,#doc2,#doc3,#doc4,.yui-t1,.yui-t2,.yui-t3,.yui-t4,.yui-t5,.yui-t6,.yui-t7{margin:auto;text-align:left;width:57.69em;*width:56.25em;}
-#doc2{width:73.076em;*width:71.25em;}
-#doc3{margin:auto 10px;width:auto;}
-#doc4{width:74.923em;*width:73.05em;}
-.yui-b{position:relative;}
-.yui-b{_position:static;}
-#yui-main .yui-b{position:static;}
-#yui-main,.yui-g .yui-u .yui-g{width:100%;}
-.yui-t1 #yui-main,.yui-t2 #yui-main,.yui-t3 #yui-main{float:right;margin-left:-25em;}
-.yui-t4 #yui-main,.yui-t5 #yui-main,.yui-t6 #yui-main{float:left;margin-right:-25em;}
-.yui-t1 .yui-b{float:left;width:12.30769em;*width:12.00em;}
-.yui-t1 #yui-main .yui-b{margin-left:13.30769em;*margin-left:13.05em;}
-.yui-t2 .yui-b{float:left;width:13.8461em;*width:13.50em;}
-.yui-t2 #yui-main .yui-b{margin-left:14.8461em;*margin-left:14.55em;}
-.yui-t3 .yui-b{float:left;width:23.0769em;*width:22.50em;}
-.yui-t3 #yui-main .yui-b{margin-left:24.0769em;*margin-left:23.62em;}
-.yui-t4 .yui-b{float:right;width:13.8456em;*width:13.50em;}
-.yui-t4 #yui-main .yui-b{margin-right:14.8456em;*margin-right:14.55em;}
-.yui-t5 .yui-b{float:right;width:18.4615em;*width:18.00em;}
-.yui-t5 #yui-main .yui-b{margin-right:19.4615em;*margin-right:19.125em;}
-.yui-t6 .yui-b{float:right;width:23.0769em;*width:22.50em;}
-.yui-t6 #yui-main .yui-b{margin-right:24.0769em;*margin-right:23.62em;}
-.yui-t7 #yui-main .yui-b{display:block;margin:0 0 1em 0;}
-#yui-main .yui-b{float:none;width:auto;}
-.yui-gb .yui-u,.yui-g .yui-gb .yui-u,.yui-gb .yui-g,.yui-gb .yui-gb,.yui-gb .yui-gc,.yui-gb .yui-gd,.yui-gb .yui-ge,.yui-gb .yui-gf,.yui-gc .yui-u,.yui-gc .yui-g,.yui-gd .yui-u{float:left;}.yui-g .yui-u,.yui-g .yui-g,.yui-g .yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf,.yui-gc .yui-u,.yui-gd .yui-g,.yui-g .yui-gc .yui-u,.yui-ge .yui-u,.yui-ge .yui-g,.yui-gf .yui-g,.yui-gf .yui-u{float:right;}.yui-g div.first,.yui-gb div.first,.yui-gc div.first,.yui-gd div.first,.yui-ge div.first,.yui-gf div.first,.yui-g .yui-gc div.first,.yui-g .yui-ge div.first,.yui-gc div.first div.first{float:left;}.yui-g .yui-u,.yui-g .yui-g,.yui-g .yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf{width:49.1%;}.yui-gb .yui-u,.yui-g .yui-gb .yui-u,.yui-gb .yui-g,.yui-gb .yui-gb,.yui-gb .yui-gc,.yui-gb .yui-gd,.yui-gb .yui-ge,.yui-gb .yui-gf,.yui-gc .yui-u,.yui-gc .yui-g,.yui-gd .yui-u{width:32%;margin-left:1.99%;}.yui-gb .yui-u{*margin-left:1.9%;*width:31.9%;}.yui-gc div.first,.yui-gd .yui-u{width:66%;}.yui-gd div.first{width:32%;}.yui-ge div.first,.yui-gf .yui-u{width:74.2%;}.yui-ge .yui-u,.yui-gf div.first{width:24%;}.yui-g .yui-gb div.first,.yui-gb div.first,.yui-gc div.first,.yui-gd div.first{margin-left:0;}.yui-g .yui-g .yui-u,.yui-gb .yui-g .yui-u,.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u,.yui-ge .yui-g .yui-u,.yui-gf .yui-g .yui-u{width:49%;*width:48.1%;*margin-left:0;}.yui-g .yui-g .yui-u{width:48.1%;}.yui-g .yui-gb div.first,.yui-gb .yui-gb div.first{*margin-right:0;*width:32%;_width:31.7%;}.yui-g .yui-gc div.first,.yui-gd .yui-g{width:66%;}.yui-gb .yui-g div.first{*margin-right:4%;_margin-right:1.3%;}.yui-gb .yui-gc div.first,.yui-gb .yui-gd div.first{*margin-right:0;}.yui-gb .yui-gb .yui-u,.yui-gb .yui-gc .yui-u{*margin-left:1.8%;_margin-left:4%;}.yui-g .yui-gb .yui-u{_margin-left:1.0%;}.yui-gb .yui-gd .yui-u{*width:66%;_width:61.2%;}.yui-gb .yui-gd div.first{*width:31%;_width:29.5%;}.yui-g .yui-gc .yui-u,.yui-gb .yui-gc .yui-u{width:32%;_float:right;margin-right:0;_margin-left:0;}.yui-gb .yui-gc div.first{width:66%;*float:left;*margin-left:0;}.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf .yui-u{margin:0;}.yui-gb .yui-gb .yui-u{_margin-left:.7%;}.yui-gb .yui-g div.first,.yui-gb .yui-gb div.first{*margin-left:0;}.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u{*width:48.1%;*margin-left:0;}.yui-gb .yui-gd div.first{width:32%;}.yui-g .yui-gd div.first{_width:29.9%;}.yui-ge .yui-g{width:24%;}.yui-gf .yui-g{width:74.2%;}.yui-gb .yui-ge div.yui-u,.yui-gb .yui-gf div.yui-u{float:right;}.yui-gb .yui-ge div.first,.yui-gb .yui-gf div.first{float:left;}.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf div.first{*width:24%;_width:20%;}.yui-gb .yui-ge div.first,.yui-gb .yui-gf .yui-u{*width:73.5%;_width:65.5%;}.yui-ge div.first .yui-gd .yui-u{width:65%;}.yui-ge div.first .yui-gd div.first{width:32%;}#hd:after,#bd:after,#ft:after,.yui-g:after,.yui-gb:after,.yui-gc:after,.yui-gd:after,.yui-ge:after,.yui-gf:after{content:".";display:block;height:0;clear:both;visibility:hidden;}#hd,#bd,#ft,.yui-g,.yui-gb,.yui-gc,.yui-gd,.yui-ge,.yui-gf{zoom:1;}
-a{
-  color: #333;
-  outline:none;
-  text-decoration: none;
-}
-#miolo{
-  margin-top: 0px;
-}
-.allWrapper{
-  color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  margin: 0 auto;
-}
-.allWrapper #rodape-portal,
-.allWrapper .capa-voltar-topo{
-    margin-top: -79px !important;
-    /*margin-top: -25px !important;*/
-}
-hr{
-  clear: both;
-  display: block;
-  height: 0px;
-  visibility: hidden; 
-}
-.contentWrapper{
-  background: url(/portal/quintal/images/pattern-bg-quintal.jpg) scroll repeat-x;
-  /*background: url(../images/bg.jpg) no-repeat top;*/
-  padding-bottom: 0 !important;
-  width: 100%;
-  height: 1229px;
-  margin: auto;
-  margin-top:3px;
-  overflow: hidden;
-  /*padding: 0 auto*/
-}
-.contentWrapper .cerca{
-  background: url(../images/cerca.png) repeat-x;
-  height: 240px;
-}
-.content{
-  width: 970px;
-  height: 1229px;
-}
-.conteudoWrapper{
-  width: 970px;
-  height: 430px;
-  position:relative;
-  z-index: 0;
-}
-/*cabe�alho*/
-.cabecalho{
-  float: left;
-  text-align: left;
-  width: 990px;
-  position: relative;
-  margin: 15px 0 0 0;
-  z-index: 10;
-}
-.cabecalho .pontilhado{
-  background: url(../images/bg-pontilhado.png) no-repeat;
-  display: block;
-  width: 697px;
-  height: 54px;
-}
-.cabecalho h1 a{
-  background: url(../images/logo-quintal.png) no-repeat;
-  display: block;
-  float: left;
-  margin: 7px 10px 0 0;
-  overflow: hidden;
-  text-indent: -9999px;
-  width: 129px;
-  height: 108px;
-}
-.cabecalho ul{
-  /*float: left;
-  margin-top: 15px;*/
-  position: absolute;
-  left: 138px;
-  top: 15px;
-  z-index: 10;
-}
-.cabecalho ul li{
-  float: left;
-}
-.cabecalho li a{
-  background: url(../images/btn-menu.png) no-repeat;
-  display: block;
-  height: 76px;
-  margin-right: 4px;
-}
-
-.cabecalho li a span{
-  float: left;
-  font-size: 15px;
-  font-weight: bold;
-  margin: 52px 0 0 12px;
-  text-transform: uppercase;
-}
-.cabecalho li a.jogos{
-  background-position: 0 0;
-  width: 76px;
-}
-.cabecalho li a.videos{
-  background-position: 0 -152px;
-  width: 79px;
-}
-.cabecalho li a.atividades{
-  background-position: 0 -1291px;
-  width: 112px;
-}
-.cabecalho li a.musica{
-  background-position: 0 -456px;
-  width: 92px;
-}
-.cabecalho li a.cultura{
-  background-position: 0 -1446px;
-  width: 92px;
-}
-.cabecalho li a.imagens{
-  background-position: 0 -608px;
-  width: 92px;
-}
-.cabecalho li a.baixar{
-  background-position: 0 -760px;
-  width: 79px;
-}
-.cabecalho li a.jogos:hover{
-  background-position: 0 -76px;
-  text-decoration:none;
-}
-.cabecalho li a.videos:hover{
-  background-position: 0 -228px;
-  text-decoration:none;
-}
-.cabecalho li a.atividades:hover{
-  background-position: 0 -1368px;
-  text-decoration:none;
-}
-.cabecalho li a.musica:hover{
-  background-position: 0 -533px;
-  text-decoration:none;
-}
-.cabecalho li a.cultura span{margin-left: 32px !important;color: #fff;}
-.cabecalho li a.cultura:hover{
-  background-position: 0 -1526px;
-  text-decoration:none;
-}
-.cabecalho li a.imagens:hover{
-  background-position: 0 -684px;
-  text-decoration:none;
-}
-.cabecalho li a.baixar:hover{
-  background-position: 0 -836px;
-  text-decoration:none;
-}
-.cabecalho a.paraPais{
-  background: url(../images/btn-cabecalho.png) no-repeat 0 -384px;
-  display: block;
-  width: 201px;
-  height: 64px;
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  top: 29px;
-}
-.cabecalho a.paraPais:hover{
-  background-position: 0 -448px;
-  text-decoration:none;
-}
-.cabecalho a.paraPais span{
-  float: left;
-  font-size: 15px;
-  font-weight: bold;
-  margin: 17px 0 0 70px;
-  text-transform: uppercase;
-}
-
-.cabecalho .fonte{
-  float: left;
-  margin-left: 130px;
-}
-.cabecalho .fonte a{
-  background: url(../images/btn-fonte.png) no-repeat;
-  display: block;
-  float: left;
-  font-weight: bold;
-  width: 45px;
-  height: 45px;
-}
-.cabecalho .fonte a.maior{
-  background-position: -45px 0;
-  margin-left: 10px;
-}
-.cabecalho .fonte a.menor span{
-  float: left;
-  font-size: 12px;
-  margin: 14px 0 0 17px;
-}
-.cabecalho .fonte a.maior span{
-  float: left;
-  font-size: 16px;
-  margin: 12px 0 0 10px;
-}
-/*rodap�1*/
-.boxDestaque{
-  width: 970px;
-  position: relative;
-}
-.pagImag{
-  margin-top: -9px;
-}
-.boxDestaque .destaque{
-  background: url(../images/bg-destaque.png) no-repeat;
-  display: block;
-  float: left;
-  margin-left: -10px;
-  position: relative;
-  width: 662px;
-  height: 256px;
-}
-.destaque .minhoca{
-  background: url(../images/minhoquias.png) no-repeat;
-  display: block;
-  position: absolute;
-  top: 98px;
-  left: -24px;
-  width: 112px;
-  height: 164px;
-}
-.papel .palhaco {  }
-.destaque h2{
-  background: url(../images/bg-tituloh2.jpg) no-repeat;
-  float: left;
-  font-size: 30px;
-  font-weight: bold;
-  margin: 35px 0 0 19px;
-  width: 513px;
-  height: 44px;
-}
-.destaque h2 .ico-cross{
-  background: url(../images/ico-cross.png) no-repeat;
-  display: block;
-  float: left;
-  margin: -15px 0 0 15px;
-  width: 68px;
-  height: 71px;
-}
-.destaque h2 .tit{
-  float: left;
-  margin: 3px 0 0 20px;
-}
-.destaque .boxVideos{
-  float: left;
-}
-.boxVideos .videoThumbs{
-  float: left;
-  margin: 5px 0 0 100px;
-  width: 200px;
-}
-.videoThumbs ul li{
-  float: left;
-  margin: 5px;
-}
-.videoThumbs li a,
-.videoThumbs li a img{
-  float: left;
-  overflow: hidden;
-}
-.videoThumbs li a:hover{
-  border: 3px solid #ffb912;
-}
-.videoThumbs li a:hover img{
-  margin: -3px;
-}
-.boxVideos .videoBig{
-  float: left;
-  margin: -43px 0 0 32px;
-  width: 310px;
-}
-.boxDestaque .curiosidades{
-  background: url(../images/img-tataruga.png) no-repeat;
-  display: block;
-  position: absolute;
-  left: 641px;
-  top: 15px;
-  width: 367px;
-  height: 337px;
-  padding-left:50px;
-}
-.curiosidades p,
-.curiosidades h3{
-  text-align: left;
-  width: 255px;
-}
-.curiosidades p{
-  margin: 45px 0 0 0px;
-}
-.curiosidades h3{
-  font-weight: bold;
-  margin: 5px 0 0 0px;
-}
-@media screen and (-webkit-min-device-pixel-ratio:0){
-  .curiosidades p{
-    padding: 0 0 0 52px;
-  }
-  .curiosidades h3{
-    font-weight: bold;
-    padding: 0 0 0 52px;
-  }
-}
-/*rodap�2*/
-.rodape{
-  /*background: url(../images/cerca_pattern.png) repeat-x;*/
-  margin-top: -228px;
-  display: block;
-  height: 228px;
-}
-.rodape .menuRodape{
-  background: url(../images/bg-rodape.png) no-repeat;
-  display: block;
-  margin-top: 84px;
-  clear: both;
-  width: 774px;
-  height: 32px;
-}
-@media screen and (-webkit-min-device-pixel-ratio:0){
-  .rodape .menuRodape{
-    margin-top: 90px;
-  }
-}
-.menuRodape ul{
-margin: 0px auto;
-height: 34px;
-width: 680px;
-}
-.menuRodape ul li{
-  float: left;
-  margin: 8px 33px 0 0;
-}
-.menuRodape li a{
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: uppercase; 
-}
-.menuRodape li a:hover{
-  text-decoration: underline;
-}
-/*conteudo*/
-.destaque.carta{margin: -13px 0 0 0;}
-.conteudo{
-  position: relative;
-  width: 970px;
-}
-.conteudo .roda-gigante{
-  background: url(../images/img-rodaGigante.png) no-repeat;
-  display: block;
-  position: absolute;
-  width: 328px;
-  height: 425px;
-}
-.conteudo p.breadcrumb a,
-.conteudo p.breadcrumb{
-  font-size: 10px;
-  text-align: left;
-}
-.conteudo .videoWrapper{
-  float: left;
-  margin-top: 15px;
-  width: 640px;
-  height: 354px;
-}
-.conteudo .carnaval,
-.conteudo .destaque-home {
-  float: left;
-  position: relative; 
-  left: 10px;
-  top:15px;
-  width: 310px;
-}
-.conteudo .carnaval a,
-.conteudo .destaque-home a,
-.conteudo .carta a{ 
-  display: block; 
-  text-decoration: none;  
-}
-.conteudo .carta a { background: url(../images/poste-carta.png) no-repeat; float: left; width: 310px; height: 453px; top: -25px; }
-.conteudo .carta a:hover{
-  background: url(../images/poste-cartaOver.png) no-repeat;
-  text-decoration: none;
-}
-.conteudo .carta a h3{
-  background: url(../images/logo-carta2.png) no-repeat;
-  display: block;
-  float: left;
-  margin: 65px 0 0 17px;
-  overflow: hidden;
-  text-indent: -9999px;
-  width: 276px;
-  height: 34px;
-}
-.conteudo .carta a p{
-  color: #fff;
-  float: left;
-  font-size: 18px;
-  margin: 12px 0 0 45px;
-  text-align: left;
-  text-transform: uppercase;
-  width: 205px;
-}
-.conteudo .album{
-  position: absolute;
-  top: 10px;
-  right: -20px;
-  width: 335px;
-  height: 441px;
-}
-.conteudo .album a{
-  background: url(../images/Quintal_home.png) no-repeat;
-  display: block;
-  text-decoration: none;
-  text-indent: -9999px;
-  width: 391px;
-  height: 424px;
-}
-.conteudo .album a:hover{
-  background: url(../images/Quintal_home_txt.png) no-repeat;
-}
-.conteudo .carnaval a { background:url(../images/destaque-carnaval.png) no-repeat; width:310px; height:388px; text-indent:-9999px; display: block; }
-.conteudo .carnaval a:hover { background-image:url(../images/destaque-carnaval-hover.png) }
-/*
-.conteudo .radioCarro{
-  background: url(../images/bg-radioCarro.png) no-repeat;
-  display: block;
-  float: left;
-  margin: 25px 0 0 4px;
-  position: relative;
-  width: 324px;
-  height: 327px;
-}
-.conteudo .radioCarro .farolEsq{
-  background: url(../images/farol-esquerda.gif) no-repeat;
-  display: block;
-  position: absolute;
-  top: 160px;
-  left: 39px;
-  width: 106px;
-  height: 112px;
-}
-.conteudo .radioCarro .farolDir{
-  background: url(../images/farol-direita.gif) no-repeat;
-  display: block;
-  position: absolute;
-  top: 160px;
-  left: 241px;
-  width: 84px;
-  height: 112px;
-}
-.relogio{
-  position: absolute;
-  top: 97px;
-  left: 85px;
-  width: 125px;
-}
-.relogio .hora{
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  float: left;
-  font-size: 48px;
-  font-weight: bold;
-}
-.radioCarro .radioControl{
-  margin: 218px 0 0 65px;
-  width: 260px;
-}
-.radioCarro .radioControl #container{
-  background: none!important;
-  width: 260px;
-}
-.radioCarro .radioControl #container .jp-jplayer{
-  height: 0px;
-}
-.radioControl .jp-interface ul.jp-controls li {
-    display: inline;
-}
-.radioControl .jp-controls a{
-  position: absolute;
-  text-indent: -9999px;
-  overflow: hidden;
-}
-.radioControl .jp-controls .jp-play{
-  left: 170px;
-}
-.radioControl .jp-controls .jp-pause{
-  left: 165px;
-}
-.radioControl .jp-controls .jp-play{
-  background: url(../images/btn-play.png) no-repeat;
-  display: block;
-  width: 35px;
-  height: 42px;
-}
-.radioControl .jp-controls .jp-pause{
-  background: url(../images/btn-pause.png) no-repeat;
-  display: block;
-  width: 47px;
-  height: 42px;
-}
-.radioControl .jp-controls .jp-previous,
-.radioControl .jp-controls .jp-next{
-  background: url(../images/btn-setas.png) no-repeat;
-  display: block;
-  float: left;
-  width: 29px;
-  height: 34px;
-}
-.radioControl .jp-controls .jp-previous{
-  bottom: 30px;
-}
-.radioControl .jp-controls .jp-next{
-  background-position: -29px 0; 
-  bottom: 30px;
-  left: 289px;
-}
-.radioControl .jp-controls .jp-previous:hover{ 
-  background-position: 0 -34px;
-}
-.radioControl .jp-controls .jp-next:hover{
-  background-position: -29px -34px;
-}
-/*
-.radioControl a.play{
-  background: url(../images/btn-play.png) no-repeat;
-  width: 35px;
-  height: 42px;
-}
-.radioControl a.pause{
-  background: url(../images/btn-pause.png) no-repeat;
-  width: 47px;
-  height: 42px;
-}
-.radioControl a{
-  background: url(../images/btn-setas.png) no-repeat;
-  display: block;
-  overflow: hidden;
-  text-indent: -9999px;
-  width: 29px;
-  height: 34px;
-}
-.radioControl a.esquerda{
-  float: left;
-  margin-left: -8px;
-}
-.radioControl a.direita{
-  background-position: -29px 0; 
-  float: left;
-  margin-left: 56px;
-}
-.radioControl a.esquerda:hover{ 
-  background-position: 0 -34px;
-}
-.radioControl a.direita:hover{
-  background-position: -29px -34px;
-}
-
-.radioControl .placa{
-  background: url(../images/bg-placa.png) no-repeat;
-  position: absolute;
-  left: 143px;
-  bottom: 26px;
-  width: 94px;
-  height: 37px;
-}
-.placa p{
-  font-weight: bold;
-  padding-top: 9px;
-}
-@media screen and (-webkit-min-device-pixel-ratio:0){
-  .radioCarro .radioControl{
-    margin: 218px 0 0 0;
-    padding-left: 64px;
-  }
-}
-*/
-.allpages{
-  width: 970px;
-}
-.allpages .carrossel{
-  float: left;
-  /*margin: 30px 0 0 -8px;
-  top:20px;*/
-  height: 190px;
-}
-.carrocel .jcarousel-container{
-  margin-left: 0px;
-  width: 275px;
-  height: 55px;
+h1, h2, h3, h4, h5, h6 { font-weight:normal; }
+body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
+#guia-topo { background:none; }
+.content { width:990px; padding-left:20px; }
+@font-face {
+    font-family: 'gotham_mediumregular';
+    src: url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot');
+    src: url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.woff') format('woff'),
+         url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.svg#gotham_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
-.carrossel .jcarousel-clip{
-  left: 40px;
-  padding-top: 2px;
-  width: 880px;
-  height: 190px;
-  margin:0 0 30px 0;
-}
-.carrossel .jcarousel-item{
-  width: 200px;
-  height: 120px;
-}
-.carrossel .jcarousel-item a img{
-  width: 200px;
-  height: 120px;
-}
-.carrossel .jcarousel-item-horizontal{
-  height: 190px;
-  margin-left: 20px;
-}
-.carrossel .jcarousel-item a span.top{
-  background: url(../images/img-topLI.png) no-repeat;
-  display: block;
-  float: left;
-  width: 200px;
-  height: 35px;
-}
-.carrossel .jcarousel-item a span.top .text1{
-  display: none;
-  font-size: 13px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 3px 0 0 5px;
-}
-.carrossel .jcarousel-item a:hover span.top .text1{
-  display: block;
-}
-.carrossel .jcarousel-item a span.bottom{
-  background: url(../images/img-bottomLI.png) no-repeat;
-  display: block;
-  float: left;
-  width: 200px;
-  height: 35px;
-}
-.carrossel .jcarousel-item a span.bottom .text2{
-  display: none;
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-top:5px;
-  text-align:center;
-}
-.carrossel .jcarousel-item a:hover span.bottom .text2{
-  display: block;
-}
-.carrossel .jcarousel-item a:hover span.top{
-  background: url(../images/img-topLIover.png) no-repeat;
-  text-align:center;
-}
-.carrossel .jcarousel-item a:hover span.bottom{
-  background: url(../images/img-bottomLIover.png) no-repeat;
-}
-.carrossel .jcarousel-item a,
-.carrossel .jcarousel-item a img{
-  overflow: hidden;
-  float: left;
-}
-.carrossel .jcarousel-next{
-  background: url(../images/btn-setas.png) no-repeat -35px -68px;
-  cursor: pointer;
-  position: absolute;
-  top: 38px;
-  right: -85px;
-  width: 35px;
-  height: 120px;
-}
-.carrossel .jcarousel-prev{
-  background: url(../images/btn-setas.png) no-repeat 0 -68px;
-  cursor: pointer;
-  position: absolute;
-  top: 38px;
-  left: 15px;
-  width: 35px;
-  height: 120px;
-}
-.carrossel .jcarousel-prev:hover{
-  background-position: 0 -187px;
-}
-.carrossel .jcarousel-next:hover{
-  background-position: -35px -187px;
-}
-/*jogos*/
-.menuVoltar{
-  float: left;
-}
-.menuVoltar a{
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.menuVoltar a.voltar{
-  background: url(../images/bg-voltar.png) no-repeat;
-  display: block;
-  width: 113px;
-  height: 20px;
-}
-.menuVoltar a.voltar .ico-voltar{
-  background: url(../images/ico-setaVoltar.png) no-repeat;
-  display: block;
-  float: left;
-  margin: 1px 0 0 10px;
-  width: 15px;
-  height: 18px;
-}
-.menuVoltar a.voltar .tit{
-  float: left;
-  margin: 2px 0 0 10px;
-}
-.menuVoltar a.voltar:hover .ico-voltar{
-  background: url(../images/ico-setaVoltarOver.png) no-repeat;
-}
-.jogosBox{
-  margin-top: 20px;
-  width: 970px;
-  position:relative;
-}
-.jogosBox .ludovico{background: url(../images/img-ludovico.png) no-repeat;width:306px;height:462px;display: block; float:left;float: left;margin: 0 0 -63px 56px;}
-.jogosBox .ludovico.jogo{position:absolute; top:0; right:-30px;}
-.jogosBox .palhaca{
-  background: url(../images/img-palhaca.png) no-repeat;
-  display: block;
-  margin: 25px 0 0 75px;
-  float: left;
-  width: 161px;
-  height: 349px;
-}
-.papel .palhaco,
-.jogosBox .palhaco{
-  background: url(../images/img-minhoquias.png) no-repeat;
-  display: block;
-  position:absolute;
-  right:20px;
-  top:110px;
-  margin-left: 10px;
-  width: 298px;
-  height: 248px;
-}
-.papel .palhaco { right:0; z-index: 0; }
-.jogosBox .rodaGigante{
-  background: url(../images/bg-rodaGigante.png) no-repeat;
-  margin-left: 15px;
-  position: absolute;
-  width: 378px;
-  height: 381px;
-  right:0;
-}
-.rodaGigante a.todosJogos{
-  background: url(../images/btn-bola.png) no-repeat;
-  display: block;
-  position: absolute;
-  top: 95px;
-  left: 138px;
-  width: 103px;
-  height: 103px;
-}
-.rodaGigante a.todosJogos:hover{
-  background: url(../images/btn-bolaOver.png) no-repeat;
-}
-.rodaGigante a.todosJogos span{
-  float: left;
-  margin: 37px 0 0 11px;
-  width: 80px;
-}
-.rodaGigante a:hover {text-decoration:none;}
-.rodaGigante a{
-  background: url(../images/btn-menu.png) no-repeat;
-  display: block;
-  font-size: 15px;
-  font-weight: bold;
-  position: absolute;
-  text-transform: uppercase;
-  width: 112px;
-  height: 76px;
-}
-.rodaGigante a.vila{
-  background-position: 0 -1610px;
-  right: 60px;
-  top: 225px;
-  height:84px !important;
-}
-.rodaGigante a.desafio{
-  background-position: 0 -911px;
-  top: 45px;
-  left: 8px;
-}
-.rodaGigante a.habilidade{
-  background-position: 0 -987px;
-  top: 135px;
-  left: 5px;
-}
-.rodaGigante a.aventura{
-  background-position: 0 -1063px;
-  top: 225px;
-  left: 60px;
-}
-.rodaGigante a.educativo{
-  background-position: 0 -1793px;
-  top: 122px;
-  left: 272px;
-  width: 124px;
-  height: 110px;
-}
-.rodaGigante a.esporte{
-  background-position: 0 -1215px;
-  left: 254px;
-  top: 35px;
-}
-.rodaGigante a.peixonauta { background-position:0px -1696px;   top: -27px;  left: 129px; width: 124px; height:97px; }
 
-.rodaGigante a.vila span{ float: left;margin: 61px 0 0 6px;}
-.rodaGigante a.peixonauta span,
-.rodaGigante a.desafio span,
-.rodaGigante a.habilidade span,
-.rodaGigante a.aventura span,
-.rodaGigante a.esporte span{
-  float: left;
-  margin: 50px 0 0 8px;
-}
-a.educativo span{float: left;margin: 74px 0 0 10px;}
-.rodaGigante a.peixonauta span{  margin-left: 17px; margin-top:70px;}
 
-.rodaGigante a.desafio span{
-  margin-left: 22px;
-}
-.rodaGigante a.aventura span{
-  margin-left: 16px;
-}
-.rodaGigante a.aventura span{
-  margin-left: 16px;
-}
-.rodaGigante a.esporte span{
-  margin-left: 13px;
-}
-.jg .videoBig img{
-  width: 310px;
-  height: 186px;
-}
-/*jogos - interna*/
-.menuVoltar a.voltar{
-  float: left;
-}
-.menuVoltar a.voltarBig{
-  background: url(../images/bg-voltarBig.png) no-repeat;
-  display: block;
-  float: left;
-  height: 20px;
-  margin-left: -4px;
-}
-.menuVoltar a.voltarBig .ico-voltar{
-  background: url(../images/ico-setaVoltar.png) no-repeat;
-  display: block;
-  float: left;
-  margin: 1px 0 0 10px;
-  width: 15px;
-  height: 18px;
-}
-.menuVoltar a.voltarBig:hover .ico-voltar{
-  background: url(../images/ico-setaVoltarOver.png) no-repeat;
-}
-.menuVoltar a.voltarBig .tit{
-  float: left;
-  margin: 2px 0 0 10px;
-  padding-right: 10px;
-}
-.menuVoltar p{
-  float: left;
-  font-size: 15px;
-  font-weight: bold;
-  margin: 2px 0 0 10px;
-  text-transform: uppercase;
-}
-.game{
-  border: 1px solid #000;
-  float: left;
-  min-width: 640px;
-  min-height: 384px;
-}
-.interna{
-  position: relative;
-}
-.interna .palhaca{
-  margin: 0px;
-  position: absolute;
-  top: 43px;
-  left: 650px;
-}
-.interna .palhaco{
-  margin: 0px;
-  position: absolute;
-  top: 18px;
-  left: 710px;
-}
-.btn-legal{
-  float: left; /*retirar quand for para o html final*/
-  margin-left: 25px;
-  width: 130px;
-}
-.btn-legal a{
-  background: url(../images/btn-legal.png) no-repeat;
-  float: left;
-  padding-left: 5px;
-  text-align: center; 
-  text-decoration: none; 
-  width: 84px;
-  height: 28px;
-}
-.btn-legal a span{
-  background: none;
-  color: #6b6b6b;
-  font-size: 15px;
-  font-weight: bold;
-  position: relative;
-  top: 5px;
-  text-transform: uppercase;
-}
-.btn-legal .box-contador{
-  float: left;
-  margin-top: 7px;
-  text-align: center;
-  width: 41px;
-  height: 17px;
-}
-.btn-legal .box-contador .pontaBarra{
-  background: url(../images/bg-contadorPonta.png) no-repeat;
-  display: block;
-  float: left;
-  width: 5px;
-  height: 17px;
-}
-.btn-legal .box-contador .contador{
-  background-color: #fff;
-  border-bottom: 1px solid #c1c1c1;
-  border-right: 1px solid #c1c1c1;
-  border-top: 1px solid #c1c1c1;
-  color: #333;
-  float: left;
-  font-size: 11px;
-  font-weight: bold;
-  padding: 2px 3px 0 4px;
-}
-.carrosselWrapper{
-  background: url(../images/bg-categorias.png) repeat-x;
-  float: left;
-  position: relative;
-  margin: 60px 0 30px 0;
-  width: 970px;
-  height: 130px;
-}
-.carrosselWrapper .categorias{
-  float: left;
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  width: 175px;
-}
-.categorias a.mais{
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-}
-.categorias a.mais .tit{
-  float: left;
-  margin: 10px 0 0 5px;
-}
-.categorias a.mais .icoBtn{
-  background: url(../images/ico-cross.png) no-repeat 0 -142px;
-  display: block;
-  float: left;
-  width: 47px;
-  height: 50px;
-}
-.categorias  p.categoriaSelecionada{
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 5px 0 0 25px;
-  text-transform: uppercase;
-}
-.carrosselWrapper .carrossel{
-    float: left;
-    margin: -33px 0 0 220px;
-}
-.carrosselWrapper .carrossel .jcarousel-clip{
-    left: 40px;
-    padding-top: 2px;
-    width: 660px;
-}
-.carrosselWrapper .carrossel .jcarousel-item a span.top{
-  background: none;
-}
-.carrosselWrapper .carrossel .jcarousel-item a span.bottom{
-  background: none;
-}
-.carrosselWrapper .carrossel .jcarousel-item a:hover span.top{
-    background: url("../images/img-topLIover.png") no-repeat scroll 0 0 transparent;
-}
-.carrosselWrapper .carrossel .jcarousel-item a:hover span.bottom{
-    background: url("../images/img-bottomLIover.png") no-repeat scroll 0 0 transparent;
-}
-.inter{
-  margin-top: 20px;
-}
-/*atividades*/
-.atividadesBox{
-  margin-top: 20px;
-  width: 970px;
-}
-.atividadesBox .palhaca{
-  background: url(../images/img-palhaca3.png) no-repeat;
-  display: block;
-  margin: 42px 0 0 90px;
-  float: left;
-  width: 146px;
-  height: 354px;  
-}
-.atividadesBox .palhaco{
-  background: url(../images/img-palhaco3.png) no-repeat;
-  display: block;
-  float: left;
-  margin: 70px 0 0 25px;
-  width: 167px;
-  height: 324px;
-}
-.atividadesBox .palhaco-osorio,
-.atividadesBox.colorir.inter .palhaco-osorio,
-.atividadesBox.inter .palhaco-osorio{background:url(/portal/quintal/images/img-osorio.png) no-repeat; width: 368px; height: 599px;}
+@font-face {
+    font-family: 'gotham_blackregular';
+    src: url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot');
+    src: url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.woff') format('woff'),
+         url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.svg#gotham_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-.atividadesBox .palhaco-osorio{position:absolute; right: -57px;top: -11px;}
-.atividadesBox.inter .palhaco-osorio{position:absolute; right: 8px;top: 5px;}
-.atividadesBox.colorir .palhaco-osorio{position:absolute; right: -9px;top: -40px;}
-
-.atividadesBox.colorir .balao-dowload{width:163px; height: 104px;background: url(/portal/quintal/images/balao-paracolorir.png) no-repeat; position:absolute;top: -51px;right: 124px;z-index: 3}
-.atividadesBox.inter .balao-orientacao{display:block;background: url(/portal/quintal/images/balao-passos.png) no-repeat; width:267px;height:331px; position:absolute; right: 49px; top: 98px;}
-
-.atividadesBox.inter .galleria-container {overflow: visible;}
-.atividadesBox.inter .galleria-info-link{display:none;}
-.galleria-info-text {display: block !important;width: 227px !important;position: absolute !important;right: -291px !important;top: 122px !important;height: 224px !important; overflow: auto !important;}
-#descricao-video{position: absolute;right: 64px;top: 179px;width: 237px;height: 250px;overflow: auto;}
-#descricao-video p{padding:10px;}
-  
-.atividadesBox .rodaGigante{
-  background: url(../images/bg-rodaGigante.png) no-repeat;
-  float: left;
-  margin: 0 0 13px 180px;
-  position: relative;
-  width: 378px;
-  height: 381px;
-}
-.rodaGigante a.ativit{
-  background: url(../images/btn-bola.png) no-repeat!important;
-  display: block;
-  position: absolute;
-  top: 95px;
-  left: 138px!important;
-  width: 103px!important;
-  height: 103px!important;
-}
-.rodaGigante a.ativit:hover{
-  background: url(../images/btn-bolaOver.png) no-repeat!important;
-}
-.rodaGigante a.todosJogos span{
-  float: left;
-  margin: 37px 0 0 11px;
-  width: 80px;
-  text-align: center;
-}
-.atividadesBox .rodaGigante a{
-  background: url(../images/btn-menu2.png) no-repeat;
-  display: block;
-  font-size: 15px;
-  font-weight: bold;
-  position: absolute;
-  text-transform: uppercase;
-  height: 76px;
-}
-.rodaGigante a.experiencias{
-  background-position: 0 0;
-  top: 30px;
-  left: 15px;
-  width: 133px;
-}
-.rodaGigante a.colorir{
-  background-position: 0 -76px;
-  top: 165px;
-  width: 111px;
-}
-.rodaGigante a.artes{
-  background-position: 0 -152px;
-  top: 225px;
-  left: 145px;
-  width: 111px;
-}
-.rodaGigante a.brincadeiras{
-  background-position: 0 -304px;
-  top: 130px;
-  left: 270px;
-  width: 131px;
-  height: 95px;
-}
-.rodaGigante a.receitinhas{
-  background-position: 0 -228px;
-  left: 213px;
-  width: 132px;
-}
-.rodaGigante a.experiencias span,
-.rodaGigante a.colorir span,
-.rodaGigante a.artes span,
-.rodaGigante a.brincadeiras span,
-.rodaGigante a.receitinhas span{
-  float: left;
-  margin: 52px 0 0 10px;
-}
-.rodaGigante a.experiencias span{
-  margin-left: 16px;
-}
-.rodaGigante a.colorir span{
-  margin-left: 18px;
-}
-.rodaGigante a.artes span{
-  margin-left: 30px;
-}
-.rodaGigante a.brincadeiras span{
-  margin-left: 0px;
-  text-align:center;
-}
-.rodaGigante a.receitinhas span{
-  margin-left: 15px;
-}
-.activ{
-  margin-top: -6px!important;
-}
-/*atividades - colorir*/
-.dois .gameAtividade{
-  float: left;
-  width: 640px;
-  height: 384px;
-}
-.dois .palhaca{
-  background: url(../images/img-palhaca2.png) no-repeat;
-  margin: 0px;
-  position: absolute;
-  top: 25px;
-  left: 641px;
-  width: 118px;
-  height: 345px;
-}
-.dois .palhaco{
-  margin: 0px;
-  position: absolute;
-  top: 54px;
-  left: -78px;
-  width: 79px;
-  height: 324px;
-}
-.dois .boxBaixarImprimir{
-  float: left;
-  margin: 59px 0 0 63px;
-  width: 246px;
-  height: 232px;
-}
-.boxBaixarImprimir a{
-  background: url(../images/img-cliqueDownload.png) no-repeat;
-  display: block;
-  overflow: hidden;
-  text-indent: -9999px;
-  width: 246px;
-  height: 232px;
-}
-/*atividades - interna*/
-.inter .palhaco{
-  background: url(../images/img-palhaco3.png) no-repeat;
-  margin: 0px;
-  position: absolute;
-  top: 132px;
-  left: -218px;
-  width: 167px;
-  height: 324px;
-}
-.inter #galleria{
-  float: left;
-  text-align: left;
-  width: 640px;
-  height: 384px;
-}
-.carousel{
-  float: left;
-  position: relative;
-  width: 640px;
-}
-.carousel ul{
-  position:absolute;
-  overflow:hidden;
-  margin:0;
-  padding:0;
-  list-style:none;
-}
-.carousel .mask{
-  position:relative;
-  overflow:hidden;
-}
-.carousel ul li{
-  float: left;
-  width: 640px;
-  height: 384px;
-  margin:0;
-}
-.carousel .pagination-links{
-  display: none;
-}
-.carousel .disabled{
-  color:gray;
-  cursor:default;
-}
-.carousel a.prev{
-  background: url(../images/btn-setas.png) no-repeat 0 -68px;
-  cursor: pointer;
-  overflow: hidden;
-  display: block;
-  text-indent: -9999px;
-  position: absolute;
-  top: 130px;
-  left: -11px;
-  width: 35px;
-  height: 120px;
-}
-.carousel a.next{
-  background: url(../images/btn-setas.png) no-repeat -35px -68px;
-  cursor: pointer;
-  overflow: hidden;
-  display: block;
-  text-indent: -9999px; 
-  position: absolute;
-  top: 130px;
-  right: -11px;
-  width: 35px;
-  height: 120px;
-}
-.carousel a.prev:hover{
-  background: url(../images/btn-setas.png) no-repeat 0 -187px;
-}
-.carousel a.next:hover{
-  background: url(../images/btn-setas.png) no-repeat -35px -187px;
-}
-.btn-change{
-  float: right;
-  width: 150px;
-  height: 20px;
-}
-.igm .palhaco{
-  background: url(../images/img-palhaco7.png) no-repeat;
-  margin: 0px;
-  position: absolute;
-  top: 261px;
-  left: 899px;
-  width: 149px;
-  height: 300px;
-}
-.btn-change a{
-  float: right;
-  font-size: 15px;
-  font-weight: bold;
-  margin-right: 13px;
-  text-transform: uppercase;
-}
-.btn-change a.btn-video{
-  background: url(../images/bg-btnchangevideo.png) no-repeat;
-  width: 128px;
-  height: 20px;
-}
-.btn-change a.btn-video span{
-  margin-right: 10px;
-  float: right;
-}
-.btn-change a.btn-imagens{
-  background: url(../images/bg-btnchangeImagens.png) no-repeat;
-  width: 148px;
-  height: 20px;
-}
-.btn-change a.btn-imagens span{
-  margin-right: 10px;
-  float: right;
-}
-.videoIntrucao{
-/*background: url(../images/bg-videoIntrucao.png) no-repeat;*/
-  display: block;
-  float: left;
-  margin: 10px 0 0 8px;
-  width: 322px;
-  height: 374px;
-}
-.videoIntrucao .videoWrapperSmall{
-  margin-top: 13px;
-}
-.carousel2{
-  float: left;
-  margin: 37px 0 0 10px;
-  position: relative;
-  width: 295px;
-}
-.carousel2 ul{
-  position:absolute;
-  overflow:hidden;
-  margin:0;
-  padding:0;
-  list-style:none;
-}
-@media screen and (-webkit-min-device-pixel-ratio:0){
-  .carousel2{
-    margin-top: -30px;
-  }
-  .carousel2 ul{
-    width: 300px!important;
-  }
-}
-.carousel2 .mask{
-  position:relative;
-  overflow:hidden;
-}
-@media screen and (-webkit-min-device-pixel-ratio:0){
-  .carousel2 .mask{
-    height: 115px!important;
-    width: 295px!important;
-  }
-}
-.carousel2 ul li{
-  float: left;
-  margin:0;
-}
-.carousel2 ul li a{
-  margin: 5px;
-}
-.carousel2 .pagination-links{
-  background: #C33;
-  list-style:none;
-  margin: 5px 0 0 103px;
-  padding:0;
-}
-.carousel2 .pagination-links li{
-  background-color: #fdfdfd;
-  float: left;
-  padding: 3px 2px;
-}
-.carousel2 .pagination-links li a{
-  background: url(../images/ico-ball.png) no-repeat;
-  display: block;
-  margin-right: 5px;
-  overflow: hidden;
-  text-indent: -9999px;
-  width: 16px;
-  height: 16px;
-}
-.carousel2 .pagination-links li a:hover{
-  background: url(../images/ico-ballOver.png) no-repeat;
-}
-.carousel2 .pagination-links li.current a{
-  background: url(../images/ico-ballOver.png) no-repeat;
-}
-.carousel2 .disabled{
-  color:gray;
-  cursor:default;
-}
-.carousel2 a.prev,
-.carousel2 a.next{
-  display: none;
-}
-.aviso{
-  background: url(../images/img-aviso.png) no-repeat;
-  display: block;
-  float: left;
-  margin-left: 15px;
-  overflow: hidden;
-  text-indent: -9999px;
-  width: 310px;
-  height: 150px;
-}
-/*baixar*/
-.activo{
-  margin-top: -4px!important;
-}
-.rodaGigante a.downloads span{
-  float: left;
-  margin: 37px 0 0 6px;
-  width: 90px;
-  text-align:center;
-}
-.down a{
-  background: url(../images/btn-menu3.png) no-repeat;
-  display: block;
-  font-size: 15px;
-  font-weight: bold;
-  position: absolute;
-  text-transform: uppercase;
-}
-.down a.papel{
-  background-position: 0 0;
-  top: 30px;
-  right: 0px;
-  width: 132px;
-  height: 96px;
-}
-.down a.carinhas{
-  background-position: -131px 0;
-  top: 120px;
-  width: 112px;
-  height: 77px;
-}
-.down a.toques{
-  background-position: -242px 0;
-  top: 130px;
-  left: 270px;
-  width: 134px;
-  height: 96px;
-}
-.down a.folhinhas{
-  background-position: -375px 0;
-  left: 213px;
-  width: 112px;
-  height: 76px;
-  top:230px;
-}
-.down a.papel span,
-.down a.carinhas span,
-.down a.toques span,
-.down a.folhinhas span{
-  float: left;
-  margin: 52px 0 0 10px;
-  text-align:center;
-}
-.down a.papel span{
-  margin-left: 0px;
-}
-.down a.carinhas span{
-  margin-left: 18px;
-}
-.down a.toques span{
-  margin-left: 0px;
-}
-.down a.folhinhas span{
-  margin-left: 18px;
-}
-.down a.receitinhas span{
-  margin-left: 15px;
-}
-/*baixar - folhinha*/
-.folhinha{
-  float: left;
-  width: 640px;
-  height: 384px;
-  border: 1px solid #000;
-}
-.folha .palhaca{
-  margin: 0px;
-  position: absolute;
-  top: 10px;
-  left: 937px;
-}
-.folha .palhaco{
-  background: url(../images/img-palhaco4.png) no-repeat;
-  margin: 0px;
-  position: absolute;
-  top: 18px;
-  left: -203px;
-  width: 153px;
-  height: 382px;
-}
-.baixarFolhinha{
-  background: url(../images/img-mesbaixar.png) no-repeat;
-  display: block;
-  float: left;
-  margin: 60px 0 0 55px; 
-  overflow: hidden;
-  text-indent: -9999px;
-  width: 258px;
-  height: 185px;
-}
-.folha .mes{
-  background: url(../images/bg-mes.jpg) repeat-x;
-  display: block;
-  float: left;
-  margin: 70px 0 0 18px;
-  width: 310px;
-  height: 41px;
-}
-.folha .mes a{
-  float: left;
-}
-.folha .mes a.voltar{
-  background: url(../images/ico-setaVoltar.png) no-repeat;
-  display: block;
-  margin: 12px 0 0 10px;
-  overflow: hidden;
-  text-indent: -9999px;
-  width: 15px;
-  height: 18px;
-}
-.folha .mes a.ir{
-  background: url(../images/ico-setaVoltar2.png) no-repeat;
-  display: block;
-  overflow: hidden;
-  margin: 12px 0 0 86px;
-  text-indent: -9999px;
-  width: 15px;
-  height: 18px;
-}
-.folha .mes .mesEscolhido{
-  float: left;
-  margin: 12px 0 0 45px;
-  width: 130px;
-}
-.folha .mes .mesEscolhido p{
-  font-size: 15px;
-  font-weight: bold;
-  text-align: right;
-  text-transform: uppercase;
-}
-/*baixar - papel*/
-.papelParede{
-  float: left;
-  width: 640px;
-  height: 384px;
-  border: 1px solid #000;
-}
-.papel .tamanhoWallpaper{
-  float: left;
-  width: 115px;
-}
-.papel .tamanhoWallpaper a{
-  float: left;
-  font-size: 15px;
-  font-weight: bold;
-  margin-top: 10px;
-  text-align: right;
-  height: 22px;
-}
-.papel .tamanhoWallpaper a span{
-  margin-right: 10px;
-  position: relative;
-  top: 2px;
-}
-.papel .tamanhoWallpaper a.tamanhoA{
-  background: url(../images/bg-imgsize1.png) no-repeat;
-  width: 115px;
-}
-.papel .tamanhoWallpaper a.tamanhoB{
-  background: url(../images/bg-imgsize2.png) no-repeat;
-  width: 107px;
-}
-.papel .tamanhoWallpaper a.tamanhoC{
-  background: url(../images/bg-imgsize3.png) no-repeat;
-  width: 100px;
-}
-.papel .tamanhoWallpaper a.tamanhoA:hover{
-  background: url(../images/bg-imgsize1Over.png) no-repeat;
-}
-.papel .tamanhoWallpaper a.tamanhoB:hover{
-  background: url(../images/bg-imgsize2Over.png) no-repeat;
-}
-.papel .tamanhoWallpaper a.tamanhoC:hover{
-  background: url(../images/bg-imgsize3Over.png) no-repeat;
-}
-.papel .palhaca{
-  margin: 0px;
-  position: absolute;
-  top: 118px;
-  left: -98px;
-}
-/*
-.papel .palhaco{
-  background: url(../images/img-palhaco4.png) no-repeat;
-  margin: 0px;
-  position: absolute;
-  top: 74px;
-  left: 915px;
-  width: 153px;
-  height: 382px;
-}
-*/
-.papel .baixarPapelParede{
-  background: url(../images/img-balao-folhinha.png) no-repeat;
-  position: absolute;
-  text-indent: -999px;
-  overflow: hidden;
-  top: 8px;
-  left: 718px;
-  width: 177px;
-  height: 121px;
-}
-.papel .boxDesenho{
-  background: url(../images/bg-mes.jpg) repeat-x;
-  display: block;
-  float: left;
-  margin: 202px 0 0 18px;
-  width: 310px;
-  height: 41px;
-}
-.papel .boxDesenho a{
-  float: left;
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.papel .boxDesenho a .centro{
-  float: left;
-  margin: 13px 0 0 10px;
-}
-.papel .boxDesenho a .esq,
-.papel .boxDesenho a .dir{
-  background: url(../images/ico-setaUp.png) no-repeat;
-  display: block;
-  float: left;
-  margin-top: 13px; 
-  width: 18px;
-  height: 15px;
-}
-.papel .boxDesenho a .esq{
-  margin-left: 15px;
-}
-.papel .boxDesenho a .dir{
-  margin-left: 15px;
-}
-.boxDesenho .dropdown{
-  position: relative;
-}
-.boxDesenho .carinha{
-  background: url(../images/bg-droplist.png) repeat;
-  overflow: auto;
-  visibility: hidden;
-  position: absolute;
-  display: block;
-  bottom: 1px;
-  width: 309px;
-  height: 198px;
-}
-.carinha li a{
-  margin: 7px 0 0 6px;
-}
-/* videos*/
-.videosBox{
-  margin-top: 20px;
-  width: 970px;
-}
-.videosBox .palhaca{
-  background: url(../images/img-palhaca4.png) no-repeat;
-  display: block;
-  margin: 0px 0 0 60px;
-  float: left;
-  width: 196px;
-  height: 360px;
-}
-.videosBox .palhaco{
-  background: url(../images/img-palhaco5.png) no-repeat;
-  display: block;
-  float: left;
-  margin-left: 75px;
-  width: 168px;
-  height: 367px;
-}
-.videosBox .rodaGigante{
-  background: url(../images/bg-rodaGigante.png) no-repeat;
-  float: left;
-  margin-left: 45px;
-  position: relative;
-  width: 378px;
-  height: 381px;
-}
-.videosBox a.ativit{
-  background: url(../images/btn-bola.png) no-repeat!important;
-  display: block;
-  position: absolute;
-  top: 95px;
-  left: 138px!important;
-  width: 103px!important;
-  height: 103px!important;
-  text-align:center;
-}
-.videosBox .rodaGigante a.ativit:hover{
-  background: url(../images/btn-bolaOver.png) no-repeat!important;
-}
-.videosBox .rodaGigante a.todosVideos span{
-  float: left;
-  margin: 26px 0 0 12px;
-  width: 80px;
-}
-.videosBox .rodaGigante a{
-  background: url(../images/btn-menu2.png) no-repeat;
-  display: block;
-  font-size: 15px;
-  font-weight: bold;
-  position: absolute;
-  text-transform: uppercase;
-  height: 76px;
-}
-.videosBox .rodaGigante a.quintalCriancas{
-  background: url(../images/btn-videos_quintal-das-criancas.png) no-repeat;
-  top: -13px;
-  left: 10px;
-  width: 124px;
-  height: 97px;
-}
-.videosBox .rodaGigante a.boi{
-  background: url(../images/btn-videos_historias-pra-boi.png) no-repeat;
-  top: 144px;
-  left: -17px;
-  width: 144px;
-  height: 97px;
-}
-.videosBox .rodaGigante a.fab{
-  background: url(../images/btn-videos_momento-fabuloso.png) no-repeat;
-  top: 207px;
-  left: 155px;
-  width: 114px;
-  height: 97px;
-}
-.videosBox .rodaGigante a.music{
-  background: url(../images/btn-videos_musicas-do-quintal.png) no-repeat;
-  top: 120px;
-  left: 292px;
-  width: 114px;
-  height: 95px;
-}
-.videosBox .rodaGigante a.desenhada{
-  background: url(../images/btn-videos_historia-desenhada.png) no-repeat;
-  top: -17px;
-  left: 213px;
-  width: 114px;
-  height: 97px;
-}
-.videosBox .rodaGigante a.quintalCriancas span,
-.videosBox .rodaGigante a.boi span,
-.videosBox .rodaGigante a.fab span,
-.videosBox .rodaGigante a.music span,
-.videosBox .rodaGigante a.desenhada span{
-  float: left;
-  margin: 54px 0 0 10px;
-}
-.videosBox .rodaGigante a span {text-align:center;}
-.videosBox .rodaGigante a.quintalCriancas span{
-  margin-left: 1px;
-}
-.videosBox .rodaGigante a.boi span{
-  margin-left: 1px;
-}
-.videosBox .rodaGigante a.fab span{
-  margin-left: 3px;
-}
-.videosBox .rodaGigante a.music span{
-  margin-left: 0px;
-}
-.videosBox .rodaGigante a.desenhada span{
-  margin-left: 1px;
-}
-.videosBox .activ{
-  margin-top: -6px!important;
-}
-/*
-.videosBox .rodaGigante a{
-  background-image: none;
-}
-.videosBox a.todosVideos{
-  background: url(../images/btn-bola.png) no-repeat;
-  display: block;
-  position: absolute;
-  top: -29px;
-  left: 138px;
-  width: 103px;
-  height: 103px;
-}
-.videosBox a.todosVideos:hover{
-  background: url(../images/btn-bolaOver.png) no-repeat;
-}
-.videosBox a.todosVideos span{
-  float: left;
-  margin: 37px 0 0 11px;
-  width: 81px;
-}
-.videosBox .boxVideo{
-  background: url(../images/bg-mes.jpg) repeat-x;
-  display: block;
-  float: left;
-  margin: 107px 0 0 33px;
-  width: 310px;
-  height: 41px;
-}
-.videosBox .boxVideo a{
-    background: none repeat scroll 0 0 transparent;
-    float: left;
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    width: auto;
-}
-.videosBox .boxVideo a.esc{
-  background: none;
-  float: left;
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  width: auto;
-}
-.videosBox .boxVideo a .centro{
-  float: left;
-  margin: 13px 0 0 10px;
-}
-.videosBox .boxVideo a .esq,
-.videosBox .boxVideo a .dir{
-  background: url(../images/ico-setaUp.png) no-repeat;
-  display: block;
-  float: left;
-  margin-top: 13px; 
-  width: 18px;
-  height: 15px;
-}
-.videosBox .boxVideo a .esq{
-  margin-left: 15px;
-}
-.videosBox .boxVideo a .dir{
-  margin-left: 15px;
-}
-.videosBox .boxVideo .dropdown{
-  position: relative;
-}
-.videosBox .rodaGigante .boxVideo .carinha{
-  background: url(../images/bg-droplist.png) repeat;
-  overflow: auto;
-  visibility: visible;
-  position: absolute;
-  display: block;
-  top: 42px;
-  width: 309px;
-  height: 198px;
-}
-.videosBox .rodaGigante .boxVideo .carinha li a{
-  float: left;
-  margin: 7px 0 0 6px;
-  position: inherit;
-  width: 90px;
-  height: 54px;
-}
-.videosBox .rodaGigante .boxVideo .carinha li a img{
-  width: 90px;
-  height: 54px;
-}
-*/
-/*videos - interna*/
-.videointerna{
-  float: left;
-  width: 640px;
-  height: 384px;
-}
-.video1 .palhaca{
-  background: url(../images/img-palhaca4.png) no-repeat;  
-  margin: 0px;
-  position: absolute;
-  top: 52px;
-  left: 875px;
-  width: 196px;
-  height: 360px;
-}
-.video1 .palhaco{
-  background: url(../images/img-palhaco5.png) no-repeat;
-  margin: 0px;
-  position: absolute;
-  top: 35px;
-  left: 985px;
-  width: 168px;
-  height: 367px;
-}
-.video1 a.assitir{
-  background: url(../images/img-assistir.png) no-repeat;
-  display: block;
-  float: left;
-  margin: 30px 0 0 10px;
-  overflow: hidden;
-  text-indent: -9999px;
-  width: 264px;
-  height: 196px;
-}
-/*imagens*/
-.imagensBox .palhaca{
-  background: url(../images/img-palhaca5.png) no-repeat;
-  display: block;
-  margin: 0px 0 0 60px;
-  float: left;
-  width: 198px;
-  height: 362px;
-}
-.imagensBox .palhaco{
-  background: url(../images/img-palhaco6.png) no-repeat;
-  display: block;
-  float: left;
-  margin-left: 75px;
-  width: 147px;
-  height: 384px;
-}
-/*imagens - interna*/
-.imagensInter{
-  position: relative;
-}
-.imagensInter .palhaca{
-  background: url(../images/img-palhaca5.png) no-repeat;
-  display: block;
-  float: left;
-  position: absolute;
-  top: 70px;
-  left: -327px;
-  width: 198px;
-  height: 362px;
-}
-.imagensInter .palhaco{
-  background: url(../images/img-palhaco6.png) no-repeat;
-  display: block;
-  float: left;
-  position: absolute;
-  left: 976px;
-  top: -23px;
-  width: 147px;
-  height: 384px;
-}
-.imagensTxt{
-  background-color: #fff;
-  float: left;
-  overflow: auto;
-  width: 640px;
-  height: 384px;
-}
-.imagensTxtWrapper{
-  margin: 13px 0 0 13px;  
-  text-align: left;
-  width: 590px;
-}
-.imagensTxtWrapper h2{
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.imagensTxtWrapper h3{
-  font-size: 15px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-.imagensTxtWrapper p{
-  font-size: 15px;
-  margin: 10px 0;
-}
-.imagensInter .conheca{
-  background: url(../images/img-conhecaMais.png) no-repeat;
-  display: block;
-  float: left;
-  margin: 5px 0 0 10px;
-  overflow: hidden;
-  text-indent: -9999px;
-  width: 269px;
-  height: 132px;
-}
-/*baixar-carinha*/
-.baixar-carinha{
-  float: left;
-  width: 640px;
-  height: 384px;
-}
-.baixar-carinhaWrapper{
-  background-color: #fff;
-  overflow: auto;
-  text-align: left;
-  width: 640px;
-  height: 384px;
-  position:relative;
-  z-index: 10;
-}
-.baixar-carinhaWrapper ul{
-  margin: 5px 0 0 5px;
-}
-.baixar-carinhaWrapper ul li{
-  float: left;
-  margin: 5px 5px 0 5px;
-}
-.baixar-carinhaWrapper li a{}
-.baixarCarinha{
-  background: url(../images/img-balao-carinha.png) no-repeat;
-  display: block;
-  text-indent: -9999px;
-  width: 173px;
-  height: 117px;
-  position:absolute;
-  right:40px;
-  top:-10px;
-}
-.boxCarinha{
-  margin: 64px 0 0 19px!important;
-}
-/*baixar-toque*/
-.baixar-toque{
-  float: left;
-  width: 640px;
-  height: 384px;
-}
-.baixar-toqueWrapper{
-  background-color: #fff;
-  overflow: auto;
-  text-align: left;
-  width: 640px;
-  height: 384px;
-}
-.baixar-toqueWrapper ul{
-  margin: 20px 0 0 15px;
-}
-.baixar-toqueWrapper ul li{
-  float: left;
-  margin: 0 40px 20px 0;
-  width: 264px;
-}
-.baixar-toqueWrapper ul li a.seta{
-  background: url(../images/ico-setaBaixar.png) no-repeat;
-  float: left;
-  display: block;
-  overflow: hidden;
-  text-indent: -9999px;
-  width: 40px;
-  height: 39px;
-}
-.baixar-toqueWrapper ul li span{
-  float: left;
-  font-size: 15px;
-  font-weight: bold;
-  margin-left: 15px;
-  text-transform: uppercase;
-}
-.baixarToque{
-  background: url(../images/img-setaBaixar.png) no-repeat;
-  display: block;
-  float: left;
-  margin: 15px 0 0 24px;
-  overflow: hidden;
-  text-indent: -9999px;
-  width: 298px;
-  height: 233px;
-}
-.boxToque{
-  margin: 95px 0 0 19px!important;
-}
-.baixar-toqueWrapper .playlist{
-  position: relative;
-}
-.baixar-toqueWrapper .jp-controls{
-  position: absolute;
-  height: 40px;
-    position: absolute;
-    width: 100px;
-}
-.baixar-toqueWrapper .jp-controls .jp-play{
-  background: url(../images/bg-playToque.png) no-repeat;
-  display: block;
-  float: left;
-  font-size: 15px;
-  font-weight: bold;
-  margin: 1px 0 0 38px;
-  text-transform: uppercase;
-  width: 65px;
-  height: 26px;
-}
-.baixar-toqueWrapper .jp-controls .jp-play span{
-  margin: 4px 0 0 9px;
-}
-.baixar-toqueWrapper .jp-controls .jp-play:hover{
-  background: url(../images/bg-playToqueOver.png) no-repeat;
-}
-.baixar-toqueWrapper .jp-controls .jp-pause{
-  background: url(../images/bg-playToque.png) no-repeat;
-  display: block;
-  float: left;
-  font-size: 15px;
-  font-weight: bold;
-  margin: -18px 0 0 38px;
-  text-transform: uppercase;
-  width: 65px;
-  height: 26px;
-}
-.baixar-toqueWrapper .jp-controls .jp-pause span{
-  margin: 4px 0 0 9px;
-}
-.baixar-toqueWrapper .jp-controls .jp-pause:hover{
-  background: url(../images/bg-playToqueOver.png) no-repeat;
-}
-/*musica*/
-.music{
-  height: auto;
-}
-.musicaBox{
-  padding-bottom: 5px;
-  width: 970px;
-}
-.musicaBox .turma{
-  background: url(../images/img-turma.png) no-repeat;
-  display: block;
-  width: 726px;
-  height: 165px;
-}
-#container{
-  background: url(../images/bg-playerMusica.png) no-repeat;
-  display: block;
-  width: 974px;
-  height: 387px; 
-}
-#radioHolder{
-  background-repeat: no-repeat;
-  background-position: 0px 0px;
-  position: relative;
-  width: 974px;
-  height: 387px;
-  zoom: 1;
-}
-.ex .thumb{
-  background-image: url(../images/img-geral.JPG);
-}
-#radio0 .thumb{
-  background-image: url(../images/img-geral.JPG);
-}
-#radio1 .thumb{
-  background-image: url(../images/img-castelo.JPG);
-}
-#radio2 .thumb{
-  background-image: url(../images/img-cocorico.JPG);
-}
-#radio3 .thumb{
-  background-image: url(../images/img-ilha.JPG);
-}
-#radio4 .thumb{
-  background-image: url(../images/img-vila.JPG);
-}
-#radioHolder .controlsWrapper .leftpoint{
-  background: url(../images/bg-leftpoint.png) no-repeat;
-  display: block;
-  float: left;
-  width: 6px;
-  height: 44px;
-}
-#radioHolder .controlsWrapper .rightpoint{
-  background: url(../images/bg-rightpoint.png) no-repeat;
-  display: block;
-  float: left;
-  width: 6px;
-  height: 44px;
-}
-#radioHolder #controls{
-  background: url(../images/bg-middletpoint.png) repeat-x;
-  float: left;
-  display: block;
-  width: 958px;
-  height: 44px;
-}
-#radioHolder #controls a:active,
-#radioHolder #controls a:active #ico {
-background-position: 1px 1px;
-_background-position: 0px 0px;
-}
-#radioHolder #controls a#popout:active #text {
-left: 39px;
-top: 11px;
-}
-#radioHolder #controls #back{
-  background: url(../images/bg-iconsPlayer.png) no-repeat scroll 0 -75px transparent;
-  position: absolute;
-  left: 20px;
-  top: 3px;
-  overflow: hidden;
-  text-indent: -9999px;
-    height: 38px;
-    width: 49px;
-}
-#radioHolder #controls #next{
-  background: url(../images/bg-iconsPlayer.png) no-repeat scroll 0 -114px transparent;
-  position: absolute;
-    height: 38px;
-    left: 125px;
-    top: 4px;
-    overflow: hidden;
-  text-indent: -9999px;
-    width: 49px;
-}
-#radioHolder #controls #play{
-  background: url(../images/bg-iconsPlayer.png) no-repeat scroll transparent;
-  position: absolute;
-    left: 80px;
-    top: 3px;
-    overflow: hidden;
-    text-indent: -9999px;
-    width: 41px;
-    height: 38px;
-}
-#radioHolder #controls #back:hover{
-  background: url(../images/bg-iconsPlayer.png) no-repeat scroll -49px -75px transparent;
-}
-#radioHolder #controls #next:hover{
-  background: url(../images/bg-iconsPlayer.png) no-repeat scroll -49px -115px transparent;
-}
-#radioHolder #controls #play:hover{
-  background: url(../images/bg-iconsPlayer.png) no-repeat scroll -48px 0px transparent;
-  left: 83px;
-}
-/*
-#radioHolder #controls #play #ico {
-background-repeat: no-repeat;
-height: 18px;
-width: 16px;
-position: absolute;
-left: 45px;
-top: 15px;
-cursor: pointer;
-}
-#radioHolder #controls #play .play {
-background-image: url(../images/icoPlay.png);
-_background-image: url(../images/icoPlay.gif);
-}
-#radioHolder #controls #play .pause {
-background-image: url(../images/icoPause.png);
-_background-image: url(../images/icoPause.gif);
-}
-*/
-#radioHolder #controls #progress{
-  position: absolute;
-  left: 200px;
-  width: 463px;
-  height: 40px;
-  border-left: 1px solid #c0c6bf;
-}
-#radioHolder #controls #progress #scrollMask{
-  color: #333;
-  font-weight: bold;
-  text-transform: uppercase;
-  position: absolute; 
-  left: 10px;
-  top: 7px;
-  width: auto;
-}
-#radioHolder #controls #progress #scrollMask #songName {
-  white-space: nowrap;
-  display: inline;
-  position: relative;
-  padding-left: 8px;
-}
-#radioHolder #controls #progress #time{
-  font-weight: bold;
-  text-transform: uppercase;
-  position: absolute;
-  color: #333;
-  top: 7px;
-  right: 10px;
-}
-#radioHolder #controls #progress #progressBar {
-  position: absolute;
-  width: 430px;
-  bottom: 7px;
-  left: 18px;
-  right: 10px;
-  top: 25px;
-  height: 10px;
-  border: 1px solid red;
-}
-#radioHolder #controls #volume{
-  position: absolute;
-  left: 680px;
-  height: 40px;
-  width: 115px;
-  border-left: 1px solid #c0c6bf;
-}
-#radioHolder #controls #volume #text{
-  color: #333;
-  left: 3px;
-  top: 7px;
-  position: absolute;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-left: 10px;
-}
-#radioHolder #controls #volume #volumeBar{
-  position: absolute;
-  font: bold 11px Arial, Helvetica, sans-serif;
-  background: #c4c4c4;
-  width: 109px;
-  color: #FFFFFF;
-  height: 10px;
-  left: 10px;
-  bottom: 4px;
-  right: 9px;
-}
-#radioHolder #controls #popout{
-  border-left: 1px solid #C0C6BF;
-  position: absolute;
-  left: 822px;
-  height: 40px;
-  width: 130px;
-  text-decoration: none;
-}
-#radioHolder #controls #popout .ico-janelinha{
-  background: url(../images/ico-janelinha.png) no-repeat;
-  display: block;
-  position: absolute;
-  top: 2px;
-  left: 8px;
-  width: 38px;
-  height: 36px;
-}
-#radioHolder #controls #popout #text{
-  position: absolute;
-  left: 38px;
-  color: #333;
-  top: 3px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-#radioHolder #channels,
-#radioHolder #playlist,
-#radioHolder #lyric{
-  background: url(../images/bg-threeColumn.png) no-repeat;
-  overflow: auto; 
-  position: absolute;
-  top: 47px;
-  text-align: left;
-  width: 306px;
-  height: 337px;
-}
-#radioHolder #channels a { cursor: pointer; }
-#radioHolder #channels a .item .description{
-  _font-weight: normal !important;
-  margin-left: 100px;
-}
-#radioHolder #channels a:hover .item .description { _font-weight: bold !important; }
-#radioHolder #channels{
-  left: 20px;
-}
-#radioHolder #playlist{
-  left: 335px;
-}
-#radioHolder #lyric{
-  left: 650px;
-}
-#radioHolder #channelsScroll .ui-slider-handle,
-#radioHolder #playlistScroll .ui-slider-handle,
-#radioHolder #lyricScroll .ui-slider-handle {
-width: 10px;
-height: 25px;
-border: none;
-background: orange none;
-left: 0px;
-}
-#radioHolder #controls #progress #progressBar .ui-slider-handle,
-#radioHolder #controls #volume #volumeBar .ui-slider-handle {
-width: 9px;
-height: 9px;
-border: none;
-background: transparent url(../images/imgSliderHandle.gif) no-repeat;
-top: -2px;
-margin-left: -4px;
-}
-#radioHolder #controls #progress #progressBar .ui-slider-range-min,
-#radioHolder #controls #volume #volumeBar .ui-slider-range-min {
-height: 5px !important;
-overflow: hidden;
-background: #830000 none;
--moz-border-radius: 3px;
--webkit-border-radius: 3px;
-border-radius: 3px;
-}
-#radioHolder #channelsScroll.ui-slider,
-#radioHolder #playlistScroll.ui-slider,
-#radioHolder #lyricScroll.ui-slider {
-background-color: transparent;
-background-image: url(../images/bkgOpacity.png);
-background-repeat: repeat;
-_background: #fff none;
-border: none;
-}
-#radioHolder #controls #volume #volumeBar.ui-slider {
-border: none;
-background: #FFF none;
-}
-#radioHolder #controls #progress #progressBar.ui-slider {
-border: none;
-background-image: url(../images/bkgLoaded.gif);
-background-position: right center;
-}
-#radioHolder .scroll {
-position: absolute;
-height: 195px;
-width: 10px;
-top: 205px;
-}
-#radioHolder #channelsScroll {
-right: 510px;
-z-index: 501;
-}
-#radioHolder #playlistScroll {
-right: 271px;
-z-index: 502;
-}
-#radioHolder #lyricScroll {
-right: 50px;
-z-index: 503;
-}
-#radioHolder #channels a { text-decoration: none; }
-#radioHolder #channels .item{
-  clear: both;
-  float: left;
-  height: 64px;
-  margin: 9px 0 0 3px;
-}
-#radioHolder #channels .item .thumb{
-  float: left;
-  margin: 5px 0 0 4px;
-  width: 90px;
-  height: 54px;
-}
-#radioHolder #channels .item .title{
-  color: #323232;
-  float: left;
-  font-size: 15px;
-  font-weight: bold;
-  margin: 5px 0 0 5px;
-  text-transform: uppercase;
-}
-#radioHolder #channels .item .description {
-  font-weight: bold;
-  font-size: 14px;
-  color: #323232;
-  margin-top: 3px;
-}
-#radioHolder #playlist #playlistHolder {
-  overflow: hidden;
-  height: 192px;
-}
-#radioHolder #playlist .title{
-  color: #323232;
-  font-size: 15px;
-  font-weight: bold;
-  margin: 15px 0 0 15px;
-  text-transform: uppercase;
-}
-#radioHolder #playlist #playlistHolder .item{
-  color: #323232;
-  clear: both;
-  display: block;
-  font-size: 15px;
-  font-weight: bold;
-  height: 28px;
-  margin: 9px 0 0 3px;
-  padding-left: 10px; 
-  text-decoration: none;
-}
-#radioHolder #channels .item:hover,
-#radioHolder #channels .selected{
-  background-image: url(../images/bg-musicaGeralSelected.jpg);
-  _background: transparent none;
-  _color: #323232;
-  margin: 9px 0 0 3px;
-  width: 300px;
-  height: 64px;
-}
-#radioHolder #playlist #playlistHolder .item:hover{
-  background-image: url(../images/bg-musicaPlaylistOver.png);
-  _background: transparent none;
-  _color: #323232;
-  margin: 9px 0 0 3px;
-  width: 300px;
-  height: 28px;
-  color: #323232;
-}
-#radioHolder #playlist #playlistHolder .selected{
-  background-image: url(../images/bg-musicaPlaylistSelected.png);
-  _background: transparent none;
-  _color: #323232;
-  margin: 9px 0 0 3px;
-  padding-left: 10px;
-  width: 290px;
-  height: 28px;
-  color: #323232;
-}
-#radioHolder #lyric .title{
-  font: bold 14px Arial, Helvetica, sans-serif;
-  color: #323232;
-  margin: 10px 20px 10px 10px;
-}
-#radioHolder #lyric #lyricHolder {
-  font-size: 15px;
-  font-weight: bold;
-  color: #323232;
-  padding-right: 20px;
-  padding-left: 10px;
-  overflow: hidden;
-  
 }
 
-/***** box videos *****/
-.videosBox .rodaGigante a{
-  background-image: none;
-}
-.videosBox a.todosVideos{
-  background: url(../images/btn-bola.png) no-repeat;
-  display: block;
-  position: absolute;
-  top: -29px;
-  left: 138px;
-  width: 103px;
-  height: 103px;
-  text-align:center;
-}
-.videosBox a.todosVideos:hover{
-  background: url(../images/btn-bolaOver.png) no-repeat;
-}
-.videosBox a.todosVideos span{
-  float: left;
-  margin: 37px 0 0 11px;
-  width: 81px;
-}
-.videosBox .boxVideo{
-  background: url(../images/bg-mes.jpg) repeat-x;
-  display: block;
-  float: left;
-  margin: 107px 0 0 33px;
-  width: 310px;
-  height: 41px;
-}
-.videosBox .boxVideo a{
-    background: none repeat scroll 0 0 transparent;
-    float: left;
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    width: auto;
-}
-.videosBox .boxVideo a:hover {text-decoration:none;}
-.videosBox .boxVideo a.esc{
-  background: none;
-  float: left;
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  width: auto;
-}
-.videosBox .boxVideo a .centro{
-  float: left;
-  margin: 13px 0 0 10px;
-}
-.videosBox .boxVideo a .esq,
-.videosBox .boxVideo a .dir{
-  background: url(../images/ico-setaUp.png) no-repeat;
-  display: block;
-  float: left;
-  margin-top: 13px; 
-  width: 18px;
-  height: 15px;
-}
-.videosBox .boxVideo a .esq{
-  margin-left: 15px;
-}
-.videosBox .boxVideo a .dir{
-  margin-left: 15px;
-}
-.videosBox .boxVideo .dropdown{
-  position: relative;
-}
+body,
+.internas .conteudo h2,
+.internas .navegacao li,
+.internas .sidebar li,
+#horario h2,
+.cabecalho li a { font-family:'gotham_mediumregular', Arial, Helvetica, sans-serif;  }
 
-.videosBox .boxVideo .dropdown li {margin-bottom:0; float:left;}
+.internas .asset .btn,
+#destaque .col-esq p,
+.internas .mais h4,
+.internas .assets li h3,
+#agenda .paginacao li a,
+#agenda .leiamais,
+.internas .sidebar .sprite-balao-categoria,
+.internas .sidebar li.ativo,
+.internas .sidebar li:hover,
+.menuRodape li a:hover,
+.cabecalho li a:hover,
+bold,
+.internas .assets li .btn,
+.internas .conteudo h2,
+.internas .assets li bold,
+#horario h2  { font-family: 'gotham_blackregular', Arial, Helvetica, sans-serif; }
 
-.videosBox .rodaGigante .boxVideo .carinha{
-  background: url(../images/bg-droplist.png) repeat;
-  overflow: auto;
-  visibility: visible;
-  position: absolute;
-  display: block;
-  top: 42px;
-  width: 309px;
-  height: 198px;
-}
-.videosBox .rodaGigante .boxVideo .carinha li a{
-  float: left;
-  margin: 7px 0 0 6px;
-  position: inherit;
-  width: 90px;
-  height: 54px;
-}
-.videosBox .rodaGigante .boxVideo .carinha li a img{
-  width: 90px;
-  height: 54px;
-}
+span,
+a,
+p,
+h1,h2,h3,h4,h5,h6,
+input,
+textarea { color:#2B3377 !important;}
 
-.carrossel .jcarousel-item a:hover {text-decoration:none;}
-/***** /box videos *****/
+#menu-portal-2 .busca-portal .ipt-submit,
+#guia-topo a,
+#guia-topo p,
+#rodape-portal a,
+#rodape-portal p { color:#fff !important;}
 
-/* pergunte a filomena */
-#personagens{top:-30px;}
-.troca.tFilo{width: 236px;height: 81px;position: absolute;top: 2px;right: 36px;background:  url(../images/btn-pergunte.png) no-repeat top left;}
-.troca.tFilo:hover{background:  url(../images/btn-pergunte-over.png) no-repeat top left;}
-.troca.tCha{width: 242px;height: 81px;position: absolute;top: 2px;right: 36px;background:  url(../images/btn-charada.png) no-repeat top left;}
-.troca.tCha:hover{background:  url(../images/btn-charada-over.png) no-repeat top left;}
-#pFilomena {position: relative;z-index: 4000;clear: both;width: 700px;margin: -76px 0 0 50px;padding: 93px 0 0 230px;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-pergunteparafilomena.png) no-repeat;}
-#pFilomena h2{font-size: 30px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin:0 0 5px 0;}
-#pFilomena label{clear:both;float:left; font-size:18px;font-weight:bold;}
-#pFilomena input{border: none;padding: 4px;background-color:#F5E700;margin: 0 0 0 10px;color:#333;}
-#pFilomena input.nome {width: 180px;}
-#pFilomena input.email {width: 276px;}
-#pFilomena .t1input{width: 296px;float: left;margin:4px 0;}
-#pFilomena select{width:100px; border:none;background-color:#F5E700;float:left;}
-#pFilomena .t2input{width: 396px;float: left;margin:4px 0;}
-#pFilomena .t2message label{margin: 4px 8px 0 33px; text-align:right}
-#pFilomena .t2message label span{font-weight:normal;}
-#pFilomena .t2message textarea{width:538px;height: 97px;border: none;padding: 4px;background-color:#F5E700;color:#333;}
-#pFilomena .t2message textarea#mensagem{width: 461px;}
-#pFilomena .btn-enviar{float: right;font-size: 24px;font-weight: bold;padding: 0px 11px;border-radius: 10px;margin:15px 34px 0 0;background:url(/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
-#pFilomena label.error{color: red;position: absolute;left: 30px;bottom: 17px;margin: 0 0 0 0 !important;font-size: 18px;background: yellow;padding: 5px;}
-#pFilomena .nome.error, #pFilomena .email.error, #pFilomena .cidade.error,#pFilomena .estado.error, #pFilomena .mensagem.error{border:2px red solid !important;}
-#pFilomena span.verm{width:100px; height:50px; position: absolute; bottom:0px; left:0px;}
+#menu-portal-1 a,
+#menu-portal-1 p { color:#333 !important; }
 
-#cha {position: relative;z-index: 4000;clear: both;width: 700px;margin: -76px 0 0 50px;padding: 93px 0 0 230px;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-chacomcharadas.png) no-repeat;}
-#cha h2{font-size: 30px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin:0 0 5px 0;}
-#cha label{clear:both;float:left; font-size:18px;font-weight:bold;}
-#cha input{border: none;padding: 4px;background-color:#F5E700;margin: 0 0 0 10px;color:#333;}
-#cha input.nome {width: 180px;}
-#cha input.email {width: 276px;}
-#cha .t1input{width: 296px;float: left;margin:4px 0;}
-#cha select{width:100px; border:none;background-color:#F5E700;float:left;}
-#cha .t2input{width: 396px;float: left;margin:4px 0;}
-#cha .t2message label{margin: 4px 8px 0 33px; text-align:right}
-#cha .t2message label span{font-weight:normal;}
-#cha .t2message textarea{width:538px;height: 97px;border: none;padding: 4px;background-color:#F5E700;color:#333;}
-#cha .t2message textarea#mensagem{width: 461px;}
-#cha .btn-enviar{float: right;font-size: 24px;font-weight: bold;padding: 0px 11px;border-radius: 10px;margin:15px 34px 0 0;background:url(/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
-#cha label.error{color: red;position: absolute;left: 30px;bottom: 17px;margin: 0 0 0 0 !important;font-size: 18px;background: yellow;padding: 5px;}
-#cha .nome.error, #cha .email.error, #cha .cidade.error,#cha .estado.error, #cha .mensagem.error{border:2px red solid !important;}
-#cha span.verm{width:100px; height:50px; position: absolute; bottom:0px; left:0px;}
+.internas .asset .btn,
+#destaque .col-dir .enviar,
+#destaque .col-dir textarea,
+#destaque .col-dir input,
+#destaque .col-dir,
+.paginacao,
+#agenda .paginacao,
+#agenda .box-content,
+#agenda .box-contet,
+.internas .mais,
+.internas .mais h4,
+.internas .asset,
+.internas .assets li .btn,
+.internas .assets li,
+.internas .conteudo input,
+#horario {border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
 
-#respCha{clear: both;position: relative;width: 700px;margin: -76px 0 0 50px;padding: 20px 0 0 230px;z-index: 3000;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-chacomcharadas.png) no-repeat;}
-#respCha p{margin-top: 17px;text-align:center;font-family: Arial, Helvetica, sans-serif;font-size: 24px !important;font-weight: bold !important;}
-#respCha .btn-enviar{text-decoration:none; float: right;font-size: 24px;font-weight: bold;padding: 2px 11px;border-radius: 10px;margin:25px 34px 0 0;background:url(/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
-#respCha .recebeu{  line-height: 29px;text-align: left;margin-top: 81px;text-align: center;width: 616px;}
+.paginacao,
+#agenda .paginacao,
+.internas .mais,
+.internas .conteudo form input,
+#horario {background:url(../images/bg-transparente.png) repeat;}
 
-#respFilomena{clear: both;position: relative;width: 700px;margin: -76px 0 0 50px;padding: 20px 0 0 230px;z-index: 3000;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-pergunteparafilomena.png) no-repeat;}
-#respFilomena p{margin-top: 17px;text-align:center;font-family: Arial, Helvetica, sans-serif;font-size: 24px !important;font-weight: bold !important;}
-#respFilomena .btn-enviar{text-decoration:none; float: right;font-size: 24px;font-weight: bold;padding: 2px 11px;border-radius: 10px;margin:25px 34px 0 0;background:url(/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
-#respFilomena .recebeu{  line-height: 29px;text-align: left;margin-top: 81px;text-align: center;width: 616px;}
+.internas .assets li,
+#agenda .box-content {background:url(../images/bg-transparente90.png) repeat;}
 
-/* pergunte a filomena */
-/* itens background */
+#miolo{  margin-top: 0px;}
+.allWrapper{  color: #333;  font-family: Arial, Helvetica, sans-serif;  font-size: 14px;  margin: 0 auto;}
+
+body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
+#guia-topo { background:none; }
+.content { width:990px; padding-left:20px; }
+.conteudo{  position: relative;  width: 970px; clear:both; float: right; min-height: 880px;}
 .conteudoWrapper #back{position: relative; z-index: -1}
 .conteudoWrapper #back .pos{position:absolute;}
-#nuvem1{width:266px; height:212px; top:-25px; left:-280px;background: url(/portal/quintal/back-novo/img-bg-nuvem1.png) no-repeat; z-index:0;}
-#nuvem2{width:188px; height:155px; top:10px; right: -156px;background: url(/portal/quintal/back-novo/img-bg-nuvem2.png) no-repeat; z-index:0;}
-#nuvem3{width:260px; height:234px; top: -134px; left: 650px;background: url(/portal/quintal/back-novo/img-bg-nuvem1.png) no-repeat; z-index:0;}
-#balao{width:196px; height:348px; top:-109px; left:-191px;background: url(/portal/quintal/back-novo/img-bg-balao.png) no-repeat; z-index:0;}
-#bola{width:190px; height:174px;top: 293px;left: -220px;background: url(/portal/quintal/back-novo/img-bg-futebol.png) no-repeat; z-index:0;}
-#bau{width:441px; height:407px;top: 478px;left: -320px;background: url(/portal/quintal/back-novo/img-bg-bau.png) no-repeat; z-index:0;}
-#peteca{width:410px; height:464px;top: 307px;right: -301px; background: url(/portal/quintal/back-novo/img-bg-peteca-bola.png) no-repeat; z-index:0;}
-/*#balao{width:196px; height:348px; top:-109px; right:-4px;background: url(/portal/quintal/back-novo/img-bg-balao.png) no-repeat; z-index:0;} aniversario 2 anos*/
-/*#bola{width:190px; height:174px;top: 700px;right: -191px;background: url(/portal/quintal/back-novo/img-bg-futebol.png) no-repeat; z-index:0;}aniversario 2 anos*/
-/*#niver2anos{width: 503px;height: 959px;background: url(/portal/quintal/images/aniversario2anos/img_baloes-bau.png) no-repeat;z-index: 0;left: -391px;top: -68px;}aniversario 2 anos*/
+#nuvem1{width:266px; height:212px; top:-198px; left:-300px;background: url(../back-novo/img-bg-nuvem1.png) no-repeat; z-index:0;}
+#nuvem2{width:188px; height:155px; top:-71px; left: -86px;background: url(../back-novo/img-bg-nuvem2.png) no-repeat; z-index:0;}
+#nuvem3{width:260px; height:234px; top: -200px; right: -50px;background: url(../back-novo/img-bg-nuvem1.png) no-repeat; z-index:0;}
+#balao{width:196px; height:348px; top:-200px; left:-250px;background: url(../back-novo/img-bg-balao.png) no-repeat; z-index:0;}
+#bola{width:190px; height:174px;top: 293px;left: -220px;background: url(../back-novo/img-bg-futebol.png) no-repeat; z-index:0;}
+#bau{width:441px; height:407px;top: 478px;left: -320px;background: url(../back-novo/img-bg-bau.png) no-repeat; z-index:0;}
+#peteca{width:410px; height:464px;top: 307px;right: -301px; background: url(../back-novo/img-bg-peteca-bola.png) no-repeat; z-index:0;}
 
-/* itens background */
+.contentWrapper{  padding-bottom: 0 !important;  width: 100%; margin: auto;  margin-top:3px;  overflow: hidden; }
+.contentWrapper .cerca{  background: url(../images/cerca.png) repeat-x;  height: 240px;}
+.content{  width: 970px;  }
+.conteudoWrapper{  width: 970px;  position:relative;  z-index: 0;}
+
+/*cabecalho*/
+.cabecalho{  float: left;  text-align: left;  width: 970px;  position: relative;  margin: 15px 0 0 0;  z-index: 10; float: right;}
+.cabecalho .pontilhado{  background: url(../images/bg-pontilhado.png) no-repeat;  display: block;  width: 697px;  height: 54px;}
+.cabecalho h1 a{  background: url(../images/logo-quintal.png) no-repeat;  display: block;  float: left;  margin: 7px 10px 0 0;  overflow: hidden;  text-indent: -9999px;  width: 180px;  height: 168px;}
+.cabecalho ul { float:right; margin:20px 0; }
+.cabecalho ul li{  float: left;  width: 143px; height:102px; background: url(../images/btn.png) no-repeat; margin-left:9px;}
+.cabecalho ul li:hover {  background: url(../images/btn-hover.png) no-repeat; }
+.cabecalho li a { font-size: 22px;  text-transform: uppercase; width:100%; height:40px; line-height:40px; text-align:center; display: block;}
+.cabecalho li span { display:block; margin:10px auto 0; }
+.cabecalho li a:hover { text-decoration:none; }
+
+.sprite-ico-agenda,
+.sprite-ico-aturma,
+.sprite-ico-diversao, 
+.sprite-ico-jogos, 
+.sprite-ico-musicas, 
+.sprite-ico-videos{ background:url(../images/sprite-menu.png) no-repeat; } 
+
+.sprite-ico-agenda{ background-position: 0 0; width: 37px; height: 41px; } 
+.sprite-ico-aturma{ background-position: 0 -91px; width: 49px; height: 50px; } 
+.sprite-ico-diversao{ background-position: 0 -191px; width: 44px; height: 46px; } 
+.sprite-ico-jogos{ background-position: 0 -287px; width: 52px; height: 47px; } 
+.sprite-ico-musicas{ background-position: 0 -384px; width: 45px; height: 43px; margin-left:44px !important; } 
+.sprite-ico-videos{ background-position: 0 -477px; width: 51px; height: 45px; } 
+
+.sprite-ico-aniversario,
+.sprite-ico-cidade,
+.sprite-ico-email,
+.sprite-ico-nome,
+.sprite-ico-responsavel{  background:url(../images/sprite-ico-form.png) no-repeat;} 
+
+.sprite-ico-aniversario{ background-position: 0 0; width: 20px; height: 22px; } 
+.sprite-ico-cidade{ background-position: 0 -72px; width: 12px; height: 19px; } 
+.sprite-ico-email{ background-position: 0 -141px; width: 20px; height: 13px; } 
+.sprite-ico-nome{ background-position: 0 -204px; width: 20px; height: 19px; } 
+.sprite-ico-responsavel{ background-position: 0 -273px; width: 27px; height: 17px; } 
+
 /* horario */
-/*#horario.horario{text-align:right; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin: 10px 0 0 0;}*/
-#horario.horario{text-align:right; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin: 39px 0 0 0;width: 288px;float: right;}
-#horario.horario p{font-size:12px!important;color:#2b3377!important;line-height: 15px;margin: -27px 0 10px 0;width: 280px;}
-#horario.horario p span{font-size: 14px; color:#2b3377;}
+#horario {  margin: 0; width: 750px;float: right; overflow:hidden;}
+#horario a img,
+#horario a { float: left; }
+#horario a {position:relative;}
+#horario a img { margin:2px 10px; }
+#horario p{font-size:13px; line-height: 15px; margin: 0 0 10px 0; font-weight:normal;}
+#horario span{font-size: 14px; color:#2b3377; display:block;}
+#horario .divisa { background:url(../images/pattern-divisa.png) ; width: 2px; height:43px; position:absolute; top:4px; right:0; }  
+#horario .cultura { width:376px; }
+#horario .rtb { width:244px; }
+#horario .agenda { width:129px; }
+#horario .agenda h2 { height:43px; line-height: 43px; }
+#horario .sprite-ico-agenda { float:left; margin: 1px 10px }
+#horario h2 {color:#2b3377;  text-transform:uppercase; font-size:14px; line-height: 24px; margin-top:4px;}
+#horario a:hover { background:#fffd00; }
 /* /horario */
 
-/* jogo novo */
-.tags { margin-top:230px; float:right; }
-.tags li { background:#ffb912; color:#323232; font-size:15px; /* width:90px ;*/padding:5px; height:20px; margin-bottom:10px; border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; line-height:20px; height: 20px; text-align:center; display:block; font-size:15px;}
-.tags li a { line-height:20px; height: 20px; text-align:center; display:block; font-size:15px; }
-.tags li a:hover { text-decoration:none; }
-.destaque-promocao { background:url(/portal/quintal/images/destaque-peixonauta.png) no-repeat; width:925px; height:275px; display:block;  clear:both; text-align:center; margin-left:50px; z-index: 100; position:relative; margin-top:-15px; }
-.destaque-promocao:hover { text-decoration:none; }
-.destaque-promocao p { text-transform:uppercase; color:#fff; font-weight:bold; position:relative; width: 250px; top:65px; left:270px; }
-.destaque-promocao strong { clear:both; color:#bdda28; font-size:27px; display: block; margin:30px 0 10px 0;  }
-.destaque-promocao span { color:#cfecf7; }
-/* /jogo novo */
+/*rodape2*/
+.rodape{ float: left;    margin-left: 0;    margin-top: 20px;    overflow: hidden;    position: relative;    width: 970px;    z-index: 10; }
+.rodape .menuRodape{ background:#fffd00; border:2px solid #85d88a; /*width: 966px; */ margin:0 auto; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+.menuRodape ul{margin: 0px auto;height:45px; line-height:45px; width: 920px;}
+.menuRodape ul li{  float: left;  margin: 0 12px 0 0; position:relative; padding-right:12px;}
+.menuRodape li a{  font-size: 20px; text-transform: uppercase; color:#2b3377;}
+.menuRodape li a:hover { text-decoration:none; }
+.menuRodape ul span { background: url(../images/pattern-divisa-rodape.png) repeat-y; width:2px; display:block; height: 43px; position:absolute; top:1px; right:0;  }
 
-/* ajuste bg ipad */
-body { background:url(/portal/quintal/images/bg-quintal.jpg) repeat-x !important; }
-#guia-topo { background:none; }
-.content { width:990px; }
-.contentWrapper { background:none; display:block; }
-/* ajuste bg ipad */
+/*internas*/
+.sprite-balao-categoria,
+.sprite-detalhe,
+.sprite-ico-autografo-dir,
+.sprite-ico-autografo-esq,
+.sprite-ico-autografo,
+.sprite-ico-baixar,
+.sprite-ico-busca-hover,
+.sprite-ico-busca,
+.sprite-ico-imprimir,
+.sprite-seta-direita, 
+.sprite-seta-esquerda, 
+.sprite-seta-pag-dir, 
+.sprite-seta-pag-esq{ background-image: url(../images/sprite-internas.png) !important; background-repeat: no-repeat; } 
 
-/* content */
-.menu-interna.grid3{display:none;} 
-#miolo.a-sobre-o-programa .capa.grid3{margin-bottom:146px!important;}
-#miolo.a-sobre-o-programa .menuRodape{margin:0 auto; margin-top: 111px;}
-#miolo.a-sobre-o-programa .box-compartilhar,
-#miolo.a-sobre-o-programa .comentario-fb{display:none!important;}
-#miolo.a-sobre-o-programa .box-interna,
-#miolo.s-personagens .box-listao{background:#efe700;padding:20px 10px;margin-top:40px;border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;} 
-#miolo.a-sobre-o-programa .box-interna h3{font-weight: bold; font-size: 24px;}
-.s-personagens .rodape{clear: both;margin:0;}
-.s-personagens .rodape .menuRodape {margin: 0 auto; margin-top: 82px; }
-#miolo.s-personagens .paginacao{position: absolute;bottom: 26px;left: 53px; background:#069c00;border:none;}
-#miolo.s-personagens .paginacao a {margin:2px 4px 0 0;}
-#miolo.s-personagens .pag3 .proximo {background-position: 0 -71px;}
-#miolo.s-personagens .pag3 a {background-position: 0 -89px;}
-#miolo.s-personagens .box-padrao.grid1{display:none;}
-#miolo.s-personagens .paginacao p{color:#FFF;} 
-#miolo.a-sobre-o-programa .rodape-cmais, #miolo.s-personagens .rodape-cmais{display:none;}
+.sprite-balao-categoria{ background-position: 0 0; width: 181px; height: 63px; } 
+.sprite-detalhe{ background-position: 0 -113px; width: 23px; height: 13px; } 
+.sprite-ico-autografo-dir{ background-position: 0 -176px; width: 22px; height: 44px; } 
+.sprite-ico-autografo-esq{ background-position: 0 -270px; width: 22px; height: 44px; } 
+.sprite-ico-autografo{ background-position: 0 -364px; width: 47px; height: 48px; } 
+.sprite-ico-baixar{ background-position: 0 -462px; width: 41px; height: 47px; } 
+.sprite-ico-busca-hover{ background-position: 0 -559px; width: 41px; height: 41px; } 
+.sprite-ico-busca{ background-position: 0 -650px; width: 41px; height: 41px; } 
+.sprite-ico-imprimir{ background-position: 0 -741px; width: 46px; height: 43px; } 
+.sprite-seta-direita{ background-position: 0 -834px; width: 40px; height: 80px; } 
+.sprite-seta-esquerda{ background-position: 0 -964px; width: 40px; height: 80px; } 
+.sprite-seta-pag-dir{ background-position: 0 -1094px; width: 20px; height: 40px; } 
+.sprite-seta-pag-esq{ background-position: 0 -1184px; width: 20px; height: 40px; } 
+
+.internas .sidebar { width:180px; float:left; }
+.internas .sidebar li { background:url(../images/bg-categoria.png) no-repeat; width: 180px; height: 49px; margin-top:10px; }
+.internas .sidebar li.ativo,
+.internas .sidebar li:hover { background-image:url(../images/bg-categoria-hover.png); text-decoration:none; }
+.internas .sidebar li.ativo a,
+.internas .sidebar li:hover a { text-decoration:none; }
+.internas .sidebar li,
+.internas .sidebar li a { width:100%; text-align:center;  font-size:14px; color:#2b3377; display: block; text-transform:uppercase; line-height: 49px; height:49px; overflow: hidden; }
+.internas .sidebar .sprite-balao-categoria {  width: 181px; height: 53px; padding-top:10px; color:#2949c6 !important; text-transform:none; line-height:16px;  }
+.internas .lista .navegacao { margin-left:10px; }
+.internas .navegacao li p,
+.internas .navegacao li { float:left; }
+.internas .conteudo h2,
+.internas .navegacao li,
+.internas .navegacao li a { text-transform:uppercase;  }
+.internas .navegacao li span { display: block; margin:0 5px; width:5px; float: left; }
+.internas .navegacao li { margin-bottom:0; }
+.internas .lista { width:761px; float:right; }
+.internas .conteudo h2 { font-size: 30px; clear:both;  color:#2b3377; width:67%; float:left; }
+.internas .lista h2 { margin-left:10px; }
+.internas .menu-quintal { position:relative; }
+.internas .conteudo form { position:absolute; top:0; right:0; }
+.internas .conteudo form input { border:none; height:45px; line-height:45px; position:relative; overflow:hidden; width:220px; color:#2b3377; padding-left:20px; font-size: 13px;}
+.internas .conteudo form .sprite-ico-busca { border:none; background-color:transparent; position:absolute; right:0; top:0;}
+.internas .conteudo form:hover .sprite-ico-busca { background-position:  0 -559px; }
+.menu-quintal { overflow:hidden; margin-bottom:20px; }
+/* lista assets*/
+.internas .assets  { float:left; margin:0.967% 0; width:100%; }
+.internas .assets li { width:226px; overflow:hidden; padding:0 10px; float:left; margin:0 0 0.967% 0.967%; height:315px;}
+.internas .assets li h3 { font-size: 20px; text-transform:uppercase; text-align:center; height:40px; line-height: 40px; } 
+.internas .assets li a { display:block; }
+.internas .assets li a p { height:64px; overflow:hidden; }
+.internas .assets li img { width: 100%; height:145px; }
+.internas .asset .btn,
+.internas .assets li .btn { background:url(../images/bg-amarelo.png) repeat; height:45px; line-height: 45px; text-transform:uppercase; width:216px; margin:10px auto; text-align:center; font-size: 20px;  }
+.internas .assets li a:hover { text-decoration:none; }
+.internas .assets li a:hover p,
+.internas .assets li a:hover h3 { text-decoration:underline; }
+.internas .assets li a:hover .btn { text-decoration:none !important; }
+/* asset*/
+.internas .asset { background:#fff; float:left; width: 950px; padding:20px 10px; margin-top:10px;}
+.internas .asset object,
+.internas .asset .iframe { max-width:940px; margin:10px 10%;}
+.internas .asset .iframe img { width:100%; }
+.internas .asset p { margin-bottom:20px; }
+.internas .asset .btn { display: block; float:right; margin-left:20px; position:relative; }
+.internas .asset .btn span { display: block; position:absolute; right:-8px; top:0;}
+.internas .mais h4 { background:url(../images/bg-mais.png) repeat; height:56px; line-height: 56px; color:#2949c6 !important; font-size: 14px; text-transform:uppercase; text-align:center; position:relative; }
+.internas .mais h4 .sprite-detalhe { position:absolute; bottom:-8px; left:49%; display:block;  }
+.internas .mais .carrossel { margin-top:30px; }
+.internas .mais { float:left; width:970px; margin-top:20px;}
+.internas .mais .jcarousel-clip { height:350px; width:780px; margin:0 auto;   }
+.internas .mais .jcarousel-next,
+.internas .mais .jcarousel-prev { background-image: url(../images/sprite-internas.png) !important; background-repeat: no-repeat; position:absolute; top:40%}
+/*.internas .mais .jcarousel-next {background-position: 0 -964px; width: 40px; height: 80px; left:20px;  }*/
+/*.internas .mais .jcarousel-prev { background-position: 0 -834px; width: 40px; height: 80px; right:20px; }*/
+.internas .mais .jcarousel-next {background-position: 0 -834px;width: 40px;height: 80px;right: 20px;}
+.internas .mais .jcarousel-prev {background-position: 0 -962px;width: 40px;height: 80px;left: 20px;}
+.internas .jcarousel-container,
+.internas .assets.jcarousel-list { height:350px; }
+.internas .assets.jcarousel-list li { margin:0 20px 0 0; }
+/*jogos - interna*/
+
+
+/*turma*/
+#turma .jcarousel-next,
+#turma .jcarousel-prev {  background-image: url(../images/sprite-internas.png) !important; background-repeat: no-repeat; position:absolute; top:0;   }
+/* #turma .jcarousel-next { background-position: 0 -270px; width: 22px; height: 44px; left:0; }
+#turma .jcarousel-prev { background-position: 0 -176px; width: 22px; height: 44px; right:0;  } */
+#turma .jcarousel-next { background-position: 0 -176px; width: 22px; height: 44px; right:0; }
+#turma .jcarousel-prev { background-position: 0 -270px; width: 22px; height: 44px; left:0;  }
+#turma li { width:440px; margin: 0 20px 20px 0; height:478px; }
+#turma .btn { width:auto; position:relative; }
+#turma .sprite-ico-autografo {display:block; position:absolute; right:0; top:0; }
+#turma li img { height:280px; }
+/* agenda */
+#agenda .col-esq { width:640px; float:left; }
+#agenda .col-dir { width:300px; float:right; }
+#agenda .menu-quintal { position:relative;  }
+#agenda .menu-quintal h2 { width:62%; }
+#agenda .box-content { padding:20px 10px 10px; }
+#agenda .box-content small {clear:both; display: block; }
+#agenda .box-content .divisa { background: url(../images/pattern-divisa-agenda.png) repeat-x; width: 100%; height:1px; margin:10px 0 15px 0; clear:both;}
+#agenda .box-content h2 { font-size: 20px; width:100%; }
+#agenda .box-content img { width: 100%; }
+.paginacao,
+#agenda .paginacao { clear:both; width: 100%; overflow: hidden; margin-top:20px; position:relative;}
+.paginacao a,
+#agenda .paginacao a { display: block; float:left; }
+.paginacao ul,
+#agenda .paginacao ul {  width: auto; max-width:290px; margin-left:32%; }
+.paginacao li,
+#agenda .paginacao li { float:left; margin:0 10px 0 0; }
+.paginacao li a,
+#agenda .paginacao li a { font-size: 20px; height:45px; line-height:45px; width:15px; }
+.paginacao li.ativo a,
+.paginacao li a:hover,
+#agenda .paginacao li.ativo a,
+#agenda .paginacao li a:hover { color:#fff !important; font-size:30px; }
+.paginacao .sprite-seta-pag-dir,
+.paginacao .sprite-seta-pag-esq,
+#agenda .paginacao .sprite-seta-pag-dir,
+#agenda .paginacao .sprite-seta-pag-esq { position:absolute; top:2px; width: 22px; }
+.paginacao .sprite-seta-pag-dir,
+#agenda .paginacao .sprite-seta-pag-dir { right:10px; }
+.paginacao .sprite-seta-pag-esq,
+#agenda .paginacao .sprite-seta-pag-esq { left:10px; }
+.paginacao li span,
+#agenda .paginacao li span { margin:0 0 0 5px; display:block; float:left; height:45px; line-height:45px; }
+
+#agenda .leiamais { margin-bottom:10px; width:300px; height:66px; background:url(../images/leiamais.png) no-repeat;  color:#2949c6 !important; font-size: 14px; text-transform:uppercase; text-align:center; line-height: 52px; }
+#agenda .col-dir .box-content h2 { text-align:center; width: 100%; margin-bottom:10px; } 
+#agenda .col-dir .box-content { padding-top:10px; margin-bottom:20px; }
+#agenda .col-dir .box-content p { max-height:84px; overflow:hidden; clear:both; margin-bottom:20px; }
+#agenda .col-esq .box-content { overflow: hidden; }
+#agenda .col-esq .box-content p img { width:auto; float:left; margin-right:10px; max-width:620px; }
+#agenda .col-esq .box-content p { margin-bottom:20px; float:left; }
+#agenda .menu-quintal small {clear:both; display: block; font-size: 14px; color:#2B3377; }
+
+#musicas { background:url(../images/bg-musica.png) no-repeat; width: 960px; height:558px; padding:0; }
+#musicas #container { margin-right:25px; }
+#musicas div.jp-playlist ul { height:300px; overflow-x: hidden; overflow-y:scroll; }
+#musicas .jp-audio { float:right; }
+
+/* home */
+#destaque { width:960px; height:330px; background:url(../images/bg-destaque.png) no-repeat; position:relative; }
+#destaque .minhoquias { width:290px; height:400px; background:url(../images/minhoquias.png) no-repeat; position:absolute; top:-75px; left:-35px; }
+#destaque .col-esq { width: 306px; margin:35px 10px 0 0; text-align:center;  }
+#destaque .col-dir { width: 450px; margin:65px 10px 0 0; background:#e4f527; padding:10px; }
+#destaque .col-esq,
+#destaque .col-dir { float:right; position: relative; }
+#destaque .col-esq p { font-size:20px; line-height:28px; display:inline; background:#cb35a4; color:#fff !important; text-transform:uppercase; margin-bottom:20px; clear:both; padding:3px 5px;  }
+#destaque .col-esq p span { color:#e4f527 !important; text-align:center;  }
+#destaque .col-dir label { width:100%; margin-bottom:10px; display:block; float:left; }
+#destaque .col-dir span { display: block; float:left; }
+#destaque .col-dir input { float:right; width:92%; height: 20px; line-height: 20px; border:none; padding:0 10px; color:#6a747d !important; }
+#destaque .col-dir .cidade { width: 88%; margin-left:5px; }
+#destaque .col-dir .estado { width: 10% }
+#destaque .col-dir .data { float: left; margin:0 0 10px 0;}
+#destaque .col-dir .data input { width: 8%; float:left; margin-right:5px; text-align:center; padding:0;  }  
+#destaque .col-dir .data span { float: left; display:block; margin:0 5px 0 0; }
+#destaque .col-dir .data .sprite-ico-aniversario { margin:0 17px 0 0; }
+#destaque .col-dir .data span,
+#destaque .col-dir .concordo { color:#cb35a4 !important; }
+#destaque .col-dir .concordo input { width:13px; float:left; margin:0 7px 0 3px; }
+#destaque .col-dir textarea { width: 100%; padding:10px; height:72px; overflow-x:hidden; overflow-y: scroll; background:#d0e229; box-shadow:none; border:none; color:#6a747d !important; line-height: 18px; }
+#destaque .col-dir .enviar { background:#cb35a4; color:#e4f527 !important; padding:2px 10px; display: block; border: none; box-shadow: none; font-weight:bold; text-transform:uppercase; margin-top:10px; float:right; cursor: pointer;}
+
+/* hacks ie*/
+.menuRodape ul li{  margin: 0 10px 0 0\9; padding-right:16px\9;}
+.menuRodape ul { margin-left:30px\9; }
+
+#destaque #form-contato label.error{ position: absolute;left:0; bottom: 0;color: #e4f527;background-color: #cb35a4;width: 325px;text-align: center;text-transform: uppercase; margin-left:35px; font-weight:bold;}
+#destaque #form-contato label.error.checked{display:none!important;}
+
+.btn-formats {margin:10px 20px 0px 0px; background: url(/portal/quintal/images/bg-amarelo.png) repeat;height: 45px;line-height: 45px;text-transform: uppercase;width: 216px;text-align: center;font-size: 20px; float:left!important;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;}
+.sem-margem-r{margin-right:0px;}
+.sem-margem-l{margin-left:0px;}
+.box-formatos-papel{display: block; overflow: hidden; margin:0 auto;width:735px;}
+
