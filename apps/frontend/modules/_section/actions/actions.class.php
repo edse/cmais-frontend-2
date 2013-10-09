@@ -508,7 +508,6 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1)
                 ->andWhere('a.created_at >= ? AND a.created_at <= ?', array($this->date.' 00:00:00', $this->date.' 23:59:59'))
                 ->orderBy('a.id desc');
-                if($_REQUEST["teste"] == 1)
                   die("1");
             }
             else{
@@ -748,7 +747,7 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
               $this->assetsQuery->orderBy('a.created_at desc');
             }
-            else if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class", "manha-cultura", "entrelinhas-1", "cd-da-semana", "arquivo-vivo", "interprete","radiometropolis", "diario-da-manha","de-volta-pra-casa", "cultura-agora"))){
+            else if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class", "manha-cultura", "entrelinhas-1", "cd-da-semana", "arquivo-vivo", "interprete","radiometropolis", "diario-da-manha","de-volta-pra-casa"))){
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, SectionAsset sa')
@@ -1924,7 +1923,7 @@ class _sectionActions extends sfActions
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/culturabrasil/subsection');
           }
         }
-        elseif(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class","manha-cultura", "entrelinhas-1", "cd-da-semana", "arquivo-vivo", "interprete","radiometropolis", "diario-da-manha", "de-volta-pra-casa", "cultura-agora"))){
+        elseif(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class","manha-cultura", "entrelinhas-1", "cd-da-semana", "arquivo-vivo", "interprete","radiometropolis", "diario-da-manha", "de-volta-pra-casa"))){
           if($debug) print "<br>13-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new'); 
         }
