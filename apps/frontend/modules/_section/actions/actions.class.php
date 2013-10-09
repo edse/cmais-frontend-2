@@ -508,7 +508,6 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1)
                 ->andWhere('a.created_at >= ? AND a.created_at <= ?', array($this->date.' 00:00:00', $this->date.' 23:59:59'))
                 ->orderBy('a.id desc');
-                  die("1");
             }
             else{
               if($request->getParameter('debug') != "")
