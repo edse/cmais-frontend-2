@@ -1395,7 +1395,7 @@ class _sectionActions extends sfActions
 			
 			if($request->getParameter('search')) $this->term = $request->getParameter('search');
 			
-			if(count($sections_list) > 1){
+			if(count(@$sections_list) > 1){
 			 $this->assetsQuery = Doctrine_Query::create()
 	          ->select('a.*')
 	          ->from('Asset a, SectionAsset sa')
