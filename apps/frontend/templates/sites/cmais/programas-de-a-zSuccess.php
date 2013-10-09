@@ -1,5 +1,5 @@
 <?php
-  //header('Content-Type: text/html; charset=utf-8');
+  
   //pega todas as letras do alfabeto
   $char = 'A';
   $programs_az["#"] = array();	  
@@ -16,60 +16,43 @@
     ->orderBy('p.title ASC')
     ->execute();
 	
+  $comAcentos = array('à', 'á', 'â', 'ã', 'ä', 'å', 'ç', 'è', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', 'ù', 'ü', 'ú', 'ÿ', 'À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Ç', 'È', 'É', 'Ê', 'Ë', 'Ì', 'Í', 'Î', 'Ï', 'Ñ', 'Ò', 'Ó', 'Ô', 'Õ', 'Ö', 'O', 'Ù', 'Ü', 'Ú');
+  $semAcentos = array('a', 'a', 'a', 'a', 'a', 'a', 'c', 'e', 'e', 'e', 'e', 'i', 'i', 'i', 'i', 'n', 'o', 'o', 'o', 'o', 'o', 'u', 'u', 'u', 'y', 'A', 'A', 'A', 'A', 'A', 'A', 'C', 'E', 'E', 'E', 'E', 'I', 'I', 'I', 'I', 'N', 'O', 'O', 'O', 'O', 'O', '0', 'U', 'U', 'U');
+        
   // separa os programas de acordo com a letra inicial
   foreach($chars as $k=>$c)
   {
     foreach($programs as $p)
     {
+      str_replace($comAcentos, $semAcentos, $p->getTitle());
       $firstChar = substr($p->getTitle(),0,1);
-	  //echo $firstChar;
-	  //$teste = $p->getTitle();
-	  //echo $teste[0];
-	  
-	  if ($k==0 && preg_match("/[^A-Z]/",$firstChar))
-	  {
-	  	/*
-        if (in_array($firstChar,array("Á","Â")))
-          $programs_az["A"][] = $p;
-        if (in_array($firstChar,array("É","Ê")))
-	      $programs_az["E"][] = $p;
-	    if (in_array($firstChar,array("Í")))
-	      $programs_az["I"][] = $p;
-	    if (in_array($firstChar,array("Ó","Ô")))
-	      $programs_az["O"][] = $p;
-	    if (in_array($firstChar,array("Ú")))
-	      $programs_az["U"][] = $p;
-		 * 
-		 */
-	    if (preg_match("/[0-9]/",$firstChar))
-	      $programs_az["#"][] = $p;
-	    /*
-		 else
-	      $programs_az["#"][] = $p;
-		 * 
-		 */
-	  }
-	  else
+      
+	    if ($k==0 && preg_match("/[^A-Z]/",$firstChar))
+	    {
+	      if (preg_match("/[0-9]/",$firstChar))
+	        $programs_az["#"][] = $p;
+      }
+	    else
+      {
         if ($firstChar == "$c")
+        {
           $programs_az["$c"][] = $p;
-		  
-		
-		
-		
-		
+        }
+      }
     }
   }
   // O bloco abaixo foi um jeito que encontrei de jogar dentro do array os programas cuja letra inicial começa com acento.
   // Vou arrumar isso assim que resolver o problema do encoding
+  
   foreach($programs as $p)
   {
-    if ($p->getSiteId() == 159)
-      $programs_az["E"][] = $p;
-    if ($p->getSiteId() == 262)
+    if (in_array($p->getSiteId(), array(159,262,1205)))
       $programs_az["E"][] = $p;
     if ($p->getSiteId() == 10)
       $programs_az["A"][] = $p;
   }
+  
+   
 
   //print_r($programs_az);
 ?>
