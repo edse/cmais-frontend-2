@@ -111,7 +111,7 @@
 		         <?php endif; ?>
                 
 		          <form id="busca">
-		            <input type="text" name="search" id="search" placeholder="Pesquisar" value="Pesquisar" />
+		            <input type="text" name="search" id="search" placeholder="Pesquisar" value="" />
 		            <button class="sprite-ico-busca"></button>
 		          </form>       
               </div>

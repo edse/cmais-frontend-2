@@ -112,7 +112,7 @@
 	         
 	         <!-- BUSCA -->
 	         <form id="busca" method="get" action="/quintaldacultura/diversao">
-	            <input type="text" name="search" id="search" placeholder="Pesquisar" value="Pesquisar" />
+	            <input type="text" name="search" id="search" placeholder="Pesquisar" />
 	            <button class="sprite-ico-busca" onclick="javascript: ExecuteSearch()"></button>
 	          </form>
 	          <!-- BUSCA -->
