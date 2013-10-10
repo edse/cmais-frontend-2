@@ -285,10 +285,14 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #turma .jcarousel-prev { background-position: 0 -176px; width: 22px; height: 44px; right:0;  } */
 #turma .jcarousel-next { background-position: 0 -176px; width: 22px; height: 44px; right:0; }
 #turma .jcarousel-prev { background-position: 0 -270px; width: 22px; height: 44px; left:0;  }
-#turma li { width:440px; margin: 0 20px 20px 0; height:478px; }
+#turma li { width:440px; margin: 0 20px 20px 0; height:432px; }
 #turma .btn { width:auto; position:relative; }
 #turma .sprite-ico-autografo {display:block; position:absolute; right:0; top:0; }
 #turma li img { height:280px; }
+#turma li p.desc {height:44px;}
+           
+
+
 /* agenda */
 #agenda .col-esq { width:640px; float:left; }
 #agenda .col-dir { width:300px; float:right; }

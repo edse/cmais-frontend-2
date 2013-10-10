@@ -58,9 +58,7 @@
               <h2>A turma do quintal da cultura</h2>
               
               <ul class="assets" id="turma">
-                <style>
-              #turma li p.desc{min-height:60px;}
-            </style>
+               
             <?php
             $assets = Doctrine_Query::create()
               ->select('a.*')
