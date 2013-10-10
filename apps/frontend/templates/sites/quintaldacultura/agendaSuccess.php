@@ -68,8 +68,6 @@
     </script>
   <body>
   	
-  	
-  	
 <?php
   $assets = Doctrine_Query::create()
 	  ->select('a.*')
@@ -83,9 +81,8 @@
 	  ->execute();
  ?>  	
   	
-  	
-    <?php use_helper('I18N', 'Date')    ?>
-    <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))    ?>
+<?php use_helper('I18N', 'Date')    ?>
+<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))    ?>
 
     <div class="contentWrapper" align="center">
       <div class="content internas">
@@ -115,6 +112,7 @@
 		            <button class="sprite-ico-busca"></button>
 		          </form>       
               </div>
+              
 		<ul class="box-content">            
             <div id="google_search" style="display:none">  
 					<script>
@@ -153,7 +151,6 @@
           </div>
         </div>
         <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
-        </div>
         </div>
         
 <script>
