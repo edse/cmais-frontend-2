@@ -80,7 +80,7 @@ if($especial)
         <?php if(isset($displays['destaque-principal-1'])): ?>
           <?php if(count($displays['destaque-principal-1']) > 0): ?>
         <!--li class="joguinhos<?php if(!$feriasSection): ?> active<?php endif; ?>"><a href="#home" data-toggle="tab"><p><?php echo $displays['destaque-principal-1'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li-->
-        <li class="joguinhos<?php if(!$especial): ?> active<?php endif; ?>"><a href="#home" data-toggle="tab"><p><?php echo $displays['destaque-principal-1'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li> */ ?>
+        <li class="joguinhos<?php if(!$especial): ?> active<?php endif; ?>"><a href="#home" data-toggle="tab"><p><?php echo $displays['destaque-principal-1'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li>
           <?php endif; ?>
         <?php endif; ?>
         <?php if(isset($displays['destaque-principal-2'])): ?>
