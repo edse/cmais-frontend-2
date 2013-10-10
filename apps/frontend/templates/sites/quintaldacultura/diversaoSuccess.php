@@ -118,7 +118,7 @@
 	          <!-- BUSCA -->
 	            <script>
 				  function ExecuteSearch(i){
-				    $("#page_form").submit();
+				    $("#busca").submit();
 				  }
 				</script>
           <ul class="assets">
