@@ -119,7 +119,7 @@
 	          
           <ul class="assets">
        	 
-       	 <?php if($term):?>
+       	 <?php if($_GET["search"]):?>
 			<script>
 			  (function() {
 			    var cx = '005232987476052626260:czy5dx_z-m4';
