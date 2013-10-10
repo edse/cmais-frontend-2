@@ -119,7 +119,7 @@
 	          
           <ul class="assets">
        	 
-       	 <?php if($_GET["search"]):?>
+       	 <?php //if($_GET["search"]):?>
 			<script>
 			  (function() {
 			    var cx = '005232987476052626260:czy5dx_z-m4';
@@ -135,7 +135,7 @@
 			<gcse:searchresults-only></gcse:searchresults-only>	 
 		</ul>
 
-		 <?php else: ?>
+		 <?php //else: ?>
         
             <?php if(count($pager) > 0): ?>
               <?php foreach($pager->getResults() as $d): ?>
@@ -176,7 +176,7 @@
               <?php endforeach; ?>
             <?php endif; ?>          	
           	</ul>	
-         <?php endif; ?>    
+         <?php //endif; ?>    
           
           
           <?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
