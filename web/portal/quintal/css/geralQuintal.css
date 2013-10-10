@@ -160,7 +160,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #horario a img,
 #horario a { float: left; }
 #horario a {position:relative;}
-#horario a img { margin:2px 10px; }
+#horario a img { margin:4px 10px; }
 #horario p{font-size:13px; line-height: 15px; margin: 0 0 10px 0; font-weight:normal;}
 #horario span{font-size: 14px; color:#2b3377; display:block;}
 #horario .divisa { background:url(../images/pattern-divisa.png) ; width: 2px; height:43px; position:absolute; top:4px; right:0; }  
@@ -171,6 +171,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #horario .sprite-ico-agenda { float:left; margin: 1px 10px }
 #horario h2 {color:#2b3377;  text-transform:uppercase; font-size:14px; line-height: 24px; margin-top:4px;}
 #horario a:hover { background:#fffd00; }
+#horario h1 { width:208px; float:left; }
 /* /horario */
 
 /*rodape2*/
