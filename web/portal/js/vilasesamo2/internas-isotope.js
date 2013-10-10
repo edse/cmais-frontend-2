@@ -35,7 +35,7 @@
     
     $('.inner a').mouseenter(function(){
      if($(this).parent().hasClass('jogos')){ 
-      $(this).find('img').animate({top:-37, easing:"swing"},'fast');
+      $(this).find('img').animate({top:-33, easing:"swing"},'fast');
      }else{
       $(this).find('img').animate({top:-25, easing:"swing"},'fast');  
      }
