@@ -7,11 +7,11 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 .content { width:990px; padding-left:20px; }
 @font-face {
     font-family: 'gotham_mediumregular';
-    src: url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot');
-    src: url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.woff') format('woff'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.svg#gotham_mediumregular') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.svg#gotham_mediumregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -20,11 +20,11 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 
 @font-face {
     font-family: 'gotham_blackregular';
-    src: url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot');
-    src: url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.woff') format('woff'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.svg#gotham_blackregular') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.svg#gotham_blackregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -373,7 +373,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #destaque #form-contato label.error{ position: absolute;left:0; bottom: 0;color: #e4f527;background-color: #cb35a4;width: 325px;text-align: center;text-transform: uppercase; margin-left:35px; font-weight:bold;}
 #destaque #form-contato label.error.checked{display:none!important;}
 
-.btn-formats {margin:10px 20px 0px 0px; background: url(/portal/quintal/images/bg-amarelo.png) repeat;height: 45px;line-height: 45px;text-transform: uppercase;width: 216px;text-align: center;font-size: 20px; float:left!important;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;}
+.btn-formats {margin:10px 20px 0px 0px; background: url(http://cmais.com.br/portal/quintal/images/bg-amarelo.png) repeat;height: 45px;line-height: 45px;text-transform: uppercase;width: 216px;text-align: center;font-size: 20px; float:left!important;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;}
 .sem-margem-r{margin-right:0px;}
 .sem-margem-l{margin-left:0px;}
 .box-formatos-papel{display: block; overflow: hidden; margin:0 auto;width:735px;}
