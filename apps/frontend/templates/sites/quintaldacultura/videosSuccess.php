@@ -107,6 +107,7 @@
             <?php if($section->getSlug() != "videos" || @$_GET["search"] != "" ): ?>     
             	<li><span>/</span><a href="/quintaldacultura/videos" title="Vídeos">Vídeos</a></li>
             <?php endif; ?>
+            
           </ul>
           
           <?php if(@$_GET["search"]): ?> 
@@ -122,45 +123,50 @@
           </form>
           <!-- BUSCA -->
           
-          <ul class="assets">
-          	<div id="google_search" style="display:none">
-				<script>
-				  (function() {
-				    var cx = '005232987476052626260:czy5dx_z-m4';
-				    var gcse = document.createElement('script');
-				    gcse.type = 'text/javascript';
-				    gcse.async = true;
-				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-				        '//www.google.com/cse/cse.js?cx=' + cx;
-				    var s = document.getElementsByTagName('script')[0];
-				    s.parentNode.insertBefore(gcse, s);
-				  })();
-				</script>
-				<gcse:searchresults-only></gcse:searchresults-only>
+          <div id="google_search" style="display:none">
+	          <ul class="assets">
+					<script>
+					  (function() {
+					    var cx = '005232987476052626260:czy5dx_z-m4';
+					    var gcse = document.createElement('script');
+					    gcse.type = 'text/javascript';
+					    gcse.async = true;
+					    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+					        '//www.google.com/cse/cse.js?cx=' + cx;
+					    var s = document.getElementsByTagName('script')[0];
+					    s.parentNode.insertBefore(gcse, s);
+					  })();
+					</script>
+					<gcse:searchresults-only></gcse:searchresults-only>	 
+				</ul>
 			</div>
-			
+				
 			<div id="resultados_busca" style="display:none">			 
-	            <?php if(count($pager) > 0): ?>
-	              <?php foreach($pager->getResults() as $d): ?>
-	                <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
-	                <li>
-	                 	 <?php /*<a href="/quintaldacultura<?php if($section->slug != "videos") echo "/videos/".$section->slug ?>/<?php echo $d->slug ?>" title="<?php echo $d->getTitle() ?>">*/?>
-	                 	 <a href="/quintaldacultura/videos/<?php echo $d->slug ?>" title="<?php echo $d->getTitle() ?>">
-		                      <?php if(strlen($d->getTitle()) > 19):?> 
-		                      	<h3><?php echo substr($d->getTitle(),0,15) ?>...</h3>
-							  <?php else: ?>
-							  	<h3><?php echo $d->getTitle() ?></h3>
-							  <?php	endif;?>
-		          			  <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" alt="<?php echo $d->getTitle() ?>" />
-		          			  <p><?php echo $d->getDescription() ?></p>
-		          			  <p class="btn">Assistir</p>
-	        		  	 </a>
-	                </li>
-	              <?php endforeach; ?>
-	        	<?php endif; ?> 
+		       <ul class="assets">    	
+		            <?php if(count($pager) > 0): ?>
+		              <?php foreach($pager->getResults() as $d): ?>
+		                <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+		                <li>
+		                 	 <?php /*<a href="/quintaldacultura<?php if($section->slug != "videos") echo "/videos/".$section->slug ?>/<?php echo $d->slug ?>" title="<?php echo $d->getTitle() ?>">*/?>
+		                 	 <a href="/quintaldacultura/videos/<?php echo $d->slug ?>" title="<?php echo $d->getTitle() ?>">
+			                      <?php if(strlen($d->getTitle()) > 19):?> 
+			                      	<h3><?php echo substr($d->getTitle(),0,15) ?>...</h3>
+								  <?php else: ?>
+								  	<h3><?php echo $d->getTitle() ?></h3>
+								  <?php	endif;?>
+			          			  <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" alt="<?php echo $d->getTitle() ?>" />
+			          			  <p><?php echo $d->getDescription() ?></p>
+			          			  <p class="btn">Assistir</p>
+		        		  	 </a>
+		                </li>
+		              <?php endforeach; ?>
+		              </ul>	
+		          	
+		        	<?php endif; ?> 
+				</ul>
+				<?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>          
         	</div>
-		 	</ul>
-        	<?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
+        	
           </div>
         </div>
         <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
