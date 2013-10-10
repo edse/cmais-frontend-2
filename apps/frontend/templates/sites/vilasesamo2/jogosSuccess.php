@@ -61,6 +61,8 @@
         <p>escolha por personagem<span class="sprite-seta-down"></span></p>
         
         <ul class="filtro-personagem">
+         <?php 
+          /*
           <li><a href="javascript:;" title="" data-filter=".bel"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
           <li><a href="javascript:;" title="" data-filter=".beto"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
           <li><a href="javascript:;" title="" data-filter=".come-come"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
@@ -69,6 +71,50 @@
           <li><a href="javascript:;" title="" data-filter=".garibaldo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
           <li><a href="javascript:;" title="" data-filter=".grover"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
           <li><a href="javascript:;" title="" data-filter=".zoe"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
+          */
+         ?>
+         <li>
+          <div class="inner personagens bel">
+            <a href="/vilasesamo2/personagens/bel" title="Bel" class="btn-bel">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="Personagem" />
+             </a>
+          </div>
+         </li>
+          <li>
+            <div class="inner personagens beto">
+              <a href="/vilasesamo2/personagens/beto" title="Beto" class="btn-beto"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/beto_personagem.png" alt="Personagem" /></a>
+            </div>
+          </li>
+          <li>
+            <div class="inner personagens comecome">
+              <a href="/vilasesamo2/personagens/come-come" title="Come-come" class="btn-comecome"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/comecome_personagem.png" alt="Personagem" /></a>
+            </div>
+          </li>
+          <li>
+            <div class="inner personagens elmo">
+              <a href="/vilasesamo2/personagens/elmo" title="Elmo" class="btn-elmo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/elmo_personagem.png" alt="Personagem" /></a>
+            </div>
+          </li>
+          <li>
+            <div class="inner personagens enio">
+              <a href="/vilasesamo2/personagens/enio" title="Ênio" class="btn-enio"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/enio_personagem.png" alt="Personagem" /></a>
+             </div>
+          </li>
+          <li>
+            <div class="inner personagens garibaldo">
+              <a href="/vilasesamo2/personagens/garibaldo" title="Garibaldo" class="btn-garibaldo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/garibaldo_personagem.png" alt="Personagem" /></a>
+            </div>
+          </li>
+          <li>
+            <div class="inner personagens grover">
+              <a href="/vilasesamo2/personagens/grover" title="Grover" class="btn-grover"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/grover_personagem.png" alt="Personagem" /></a>
+            </div>
+          </li>
+          <li>
+            <div class="inner personagens zoe">
+              <a href="/vilasesamo2/personagens/zoe" title="Zoe" class="btn-zoe"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/zoe_personagem.png" alt="Personagem" /></a>
+             </div>
+          </li>
         </ul>
       </nav>
     </div>
@@ -130,3 +176,4 @@
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
 <script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script>
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
+<>
