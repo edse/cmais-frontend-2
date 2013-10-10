@@ -210,7 +210,7 @@ if($especial)
           
           <?php if($especialDisplays['destaques']): ?>
 
-          <span class="barra"></span>
+          <!--span class="barra"></span-->
             
             <?php if(count($especialDisplays['destaques']) > 0): ?>
           <div class="span12">
