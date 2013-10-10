@@ -15,7 +15,7 @@
     $('.filtro-personagem a').click(function(){
 
       filter_selected = "";
-      $(this).parent().toggleClass("ativo");
+      $(this).parent().parent().toggleClass("ativo");
       
       $('.filtro-personagem li.ativo').each(function(i){
         if(i > 0){
