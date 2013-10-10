@@ -116,9 +116,9 @@
 	            <button class="sprite-ico-busca" onclick="javascript: ExecuteSearch()"></button>
 	          </form>
 	          <!-- BUSCA -->
-				
+		
+		<ul class="assets">				
           <div id="google_search" style="display:none">
-          	<ul class="assets">
 				<script>
 				  (function() {
 				    var cx = '005232987476052626260:czy5dx_z-m4';
@@ -132,11 +132,9 @@
 				  })();
 				</script>
 				<gcse:searchresults-only></gcse:searchresults-only>	 
-			</ul>		  
 		  </div>
 		  
 		  <div id="resultados_busca" style="display:none">
-			  <ul class="assets">
 	            <?php if(count($pager) > 0): ?>
 	              <?php foreach($pager->getResults() as $d): ?>
 	                <?php $related 	= $d->retriveRelatedAssetsByAssetTypeId(6); ?>
@@ -172,21 +170,20 @@
           			  	
           			  	<p class="btn">Brincar</p>
         		  	 </a>
-                </li>
-              <?php endforeach; ?>
-            <?php endif; ?>          	
-          	</ul>	
-          
-          
-          <?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
-        </div>
-        
-        </div>
+                	</li>
+	              <?php endforeach; ?>
+	        	<?php endif; ?> 
+	    	</div>
+        </ul>
+		
+		<?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
+		        
+          </div>
         </div>
         <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
         </div>
         </div>
-
+        
 <script>
 	function ExecuteSearch(){
 		$("#busca").submit();
@@ -199,6 +196,7 @@
 	}
 	if(getURLParameter("search") == "null" || getURLParameter("search") == ""){
 		$('#resultados_busca').show();
+		$('.paginacao').show();
 	}else{
 		$('#resultados_busca').hide();
 		$('#google_search').show();
