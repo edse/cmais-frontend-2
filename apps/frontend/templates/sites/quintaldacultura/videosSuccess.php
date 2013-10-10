@@ -157,11 +157,10 @@
 	        		  	 </a>
 	                </li>
 	              <?php endforeach; ?>
-	          	<?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
 	        	<?php endif; ?> 
         	</div>
-		 </ul>
-        	
+		 	</ul>
+        	<?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
           </div>
         </div>
         <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
