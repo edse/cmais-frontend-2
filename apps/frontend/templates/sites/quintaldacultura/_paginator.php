@@ -7,11 +7,16 @@
         <!--li><a href="javascript: goToPage(<?php //echo $pager->getPreviousPage() ?>);" class="sprite-seta-pag-esq"  title="Anterior"><i class="icon-backward"></i></a></li-->
         <?php $i=0; ?>
         <?php foreach ($pager->getLinks() as $page): ?>
-        	<li id="pgNumber" <?php if($page == count($pager->getLinks())):?>style="margin:0!important;"<?php endif; if ($page == $pager->getPage()): ?>class="ativo"<?php endif; ?>><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a><?php if($page != count($pager->getLinks())):?><span>.</span><?php endif; ?></li> 
+          <li id="pgNumber" <?php if($i == 4 ):?>style="margin:0!important;"<?php endif; if ($page == $pager->getPage()): ?>class="ativo"<?php endif; ?>>
+            <a <?php if($i == 2 ):?>style="width:21px!important;"<?php endif; ?> href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a>
+            <?php if($i < 4 ):?><span>.</span><?php endif; ?>
+            <?php $i++; ?>  
+              
+          </li> 
         <?php endforeach; ?>
         <script>
           var i = <?php echo count($pager->getLinks()); ?>;
-          var width = ($("#pgNumber").width() * i) + (10 * i) - 15;
+          var width = ($("#pgNumber").width() * i) + (10 * i) - 10;
           $('#pgContainer').css({'width':width,"margin":"0 auto"}) 
         </script>
         
