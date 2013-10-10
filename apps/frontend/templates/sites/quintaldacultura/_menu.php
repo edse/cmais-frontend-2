@@ -23,7 +23,7 @@
   <ul>
     <li><a class="jogos" href="/quintaldacultura/jogos" title="Jogos"><span class="sprite-ico-jogos"></span>Jogos</a></li>
     <li><a class="videos" href="/quintaldacultura/videos" title="Vídeos"><span  class="sprite-ico-videos"></span>V&iacute;deos</a></li>
-    <li><a class="musica" href="/quintaldacultura/musicas"><span  class="sprite-ico-musicas"></span>M&uacute;sica</a></li>
+    <li><a class="musica" href="/quintaldacultura/musicas"><span  class="sprite-ico-musicas"></span>M&uacute;sicas</a></li>
     <li><a class="atividades" href="/quintaldacultura/diversao" title="Diversão"><span  class="sprite-ico-diversao"></span>Diversão</a></li>
     <li><a class="atividades" href="/quintaldacultura/turma" title="A Turma"><span  class="sprite-ico-aturma"></span>A Turma</a></li>
   </ul>
