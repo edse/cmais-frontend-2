@@ -60,7 +60,7 @@ if($feriasSection)
         <?php endif; ?>
         <?php if(isset($displays['destaque-principal-3'])): ?>
           <?php if(count($displays['destaque-principal-3']) > 0): ?>
-        <li class="atividades"><a href="#diadascriancas" data-toggle="tab"><span></span><p><?php echo $displays['destaque-principal-3'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li>
+        <li class="ferias"><a href="#diadascriancas" data-toggle="tab"><span></span><p><?php echo $displays['destaque-principal-3'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li>
           <?php endif; ?>
         <?php endif; ?>
       </ul>
