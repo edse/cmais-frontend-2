@@ -118,7 +118,7 @@
           
           <!-- BUSCA -->
           <form id="busca" method="get">
-            <input type="text" name="search" id="search" placeholder="Pesquisar em Vídeos" />
+            <input type="text" name="search" id="search" placeholder="Pesquisar em Vídeos" value="Pesquisar em Vídeos" />
             <button class="sprite-ico-busca"></button>
           </form>
           <!-- BUSCA -->
