@@ -100,7 +100,7 @@
 	          <ul class="navegacao">
 	            <li><a href="/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
 	            <?php if($section->getSlug() != "diversao" || $_REQUEST["search"] != "" ): ?>     
-	            	<li><span>/</span><a href="/quintaldacultura/diversao" title="Diversão">Diversão/<?php echo $_GET["search"] ?></a></li>
+	            	<li><span>/</span><a href="/quintaldacultura/diversao" title="Diversão">Diversão</a></li>
 	            <?php endif; ?>
           	  </ul>
           		
