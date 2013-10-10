@@ -118,35 +118,35 @@
         <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
-      <li class="span4 element">
+      <li class="span4 element beto">
         <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
-      <li class="span4 element">
+      <li class="span4 element bel">
         <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
-      <li class="span4 element">
+      <li class="span4 element come-come">
         <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
-      <li class="span4 element">
+      <li class="span4 element elmo">
         <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
-      <li class="element span4">
+      <li class="element span4 grover">
         <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
-      <li class="element span4">
+      <li class="element span4 zoe">
         <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
-      <li class="element span4">
+      <li class="element span4 grover">
         <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
-      <li class="span4 element">
+      <li class="span4 element elmo">
         <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
