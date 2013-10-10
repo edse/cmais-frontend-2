@@ -1008,7 +1008,7 @@ class _assetActions extends sfActions
       }
       elseif(($slug == "image-gallery")||($slug == "image")){
         if($debug) print "<br>5-0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/imagem';
-        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/imagem');
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/diversao-content');
       }
       else{
         if($debug) print "<br>5-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$slug;
@@ -1136,7 +1136,7 @@ class _assetActions extends sfActions
           if(($this->asset->AssetType->getSlug()=="image-gallery")||($this->asset->AssetType->getSlug()=="image")){
             $this->setLayout(false);
             if($debug) print "<br>6-0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/imagem';
-            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/imagem');
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/diversao-content');
           }elseif(($this->asset->AssetType->getSlug()!="content")&&($this->asset->AssetType->getSlug()!="video")&&($this->asset->AssetType->getSlug()!="person")){
             if($debug) print "<br>6-0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaSimples/'.$this->asset->AssetType->getSlug();
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaSimples/'.$this->asset->AssetType->getSlug());
