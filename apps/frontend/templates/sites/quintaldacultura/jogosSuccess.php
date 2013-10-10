@@ -86,19 +86,19 @@
           
           <?php if(@$_GET["search"]): ?> 
 	          <h2><?php echo @$_GET["search"] ?></h2>
-		 <?php else: ?>	          
+		  <?php else: ?>	          
 	          <h2><?php echo $section->getTitle()?></h2>
           <?php endif; ?>
           
-          
-         <!-- BUSCA -->
-         <form id="busca" method="get" action="/quintaldacultura/jogos">
-            <input type="text" name="search" id="search" placeholder="Pesquisar" />
-            <button class="sprite-ico-busca" onclick="javascript: ExecuteSearch()"></button>
+          <!-- BUSCA -->
+          <form id="busca" method="get">
+            <input type="text" name="search" id="search" placeholder="Pesquisar" value="" />
+            <button class="sprite-ico-busca"></button>
           </form>
           <!-- BUSCA -->
-        <ul class="assets">
-          <div id="google_search" style="display:none">
+		
+		<ul class="assets">          
+          	<div id="google_search" style="display:none">
 				<script>
 				  (function() {
 				    var cx = '005232987476052626260:czy5dx_z-m4';
@@ -111,8 +111,8 @@
 				    s.parentNode.insertBefore(gcse, s);
 				  })();
 				</script>
-				<gcse:searchresults-only></gcse:searchresults-only>
-		  </div>
+				<gcse:searchresults-only></gcse:searchresults-only>	 
+			</div>
 			
 			<div id="resultados_busca" style="display:none">
 		            <?php if(count($pager) > 0): ?>
@@ -128,10 +128,10 @@
 			          			  <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>" alt="<?php echo $d->getTitle() ?>" />
 			          			  <p><?php echo $d->getDescription() ?></p>
 			          			  <p class="btn">Jogar</p>
-		        		  	 </a>
+		        		  	</a>
 		                </li>
 		              <?php endforeach; ?>
-	        	<?php endif; ?> 
+		        	<?php endif; ?> 
         	</div>
         </ul>
 		
@@ -161,6 +161,7 @@
 		$('#google_search').show();
 	}
 </script>
+              
 
     </div>
 

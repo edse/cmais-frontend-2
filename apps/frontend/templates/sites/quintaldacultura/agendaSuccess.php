@@ -68,6 +68,8 @@
     </script>
   <body>
   	
+  	
+  	
 <?php
   $assets = Doctrine_Query::create()
 	  ->select('a.*')
@@ -81,8 +83,9 @@
 	  ->execute();
  ?>  	
   	
-<?php use_helper('I18N', 'Date')    ?>
-<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))    ?>
+  	
+    <?php use_helper('I18N', 'Date')    ?>
+    <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))    ?>
 
     <div class="contentWrapper" align="center">
       <div class="content internas">
@@ -112,9 +115,9 @@
 		            <button class="sprite-ico-busca"></button>
 		          </form>       
               </div>
-              
-		<ul class="box-content">            
+            
             <div id="google_search" style="display:none">  
+              <ul class="box-content">
 					<script>
 					  (function() {
 					    var cx = '005232987476052626260:czy5dx_z-m4';
@@ -128,9 +131,11 @@
 					  })();
 					</script>
 					<gcse:searchresults-only></gcse:searchresults-only>	 
+				</ul>
 			</div>
 			
 			<div id="resultados_busca" style="display:none">
+				<ul class="box-content">
 	              	<?php if(count($pager) > 0): ?>
 		              <?php foreach($pager->getResults() as $d): ?>
 		                <li>
@@ -141,18 +146,15 @@
 		                  </a>
 		                  <div class="divisa"></div>
 		                </li>
-		            <?php endforeach; ?>
-	        	<?php endif; ?> 
-        	</div>
-        </ul>
-		
-		<?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
-		        
-          </div>
-        </div>
-        <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
-        </div>
-        
+		              <?php endforeach; ?>
+		            <?php endif; ?>          	
+                 </ul>
+                 <?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
+              </div>
+              
+            </div>
+			</div>
+
 <script>
 	function ExecuteSearch(){
 		$("#busca").submit();
@@ -165,7 +167,6 @@
 	}
 	if(getURLParameter("search") == "null" || getURLParameter("search") == ""){
 		$('#resultados_busca').show();
-		$('.paginacao').show();
 	}else{
 		$('#resultados_busca').hide();
 		$('#google_search').show();
