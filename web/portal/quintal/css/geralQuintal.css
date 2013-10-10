@@ -46,7 +46,7 @@ body,
 .internas .sidebar .sprite-balao-categoria,
 .internas .sidebar li.ativo,
 .internas .sidebar li:hover,
-.menuRodape li a:hover,
+.menuRodape li a,
 .cabecalho li a:hover,
 bold,
 .internas .assets li .btn,
@@ -183,7 +183,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 .menuRodape li a{  font-size: 20px; text-transform: uppercase; color:#2b3377;}
 .menuRodape li a:hover { text-decoration:none; }
 .menuRodape ul span { background: url(../images/pattern-divisa-rodape.png) repeat-y; width:2px; display:block; height: 43px; position:absolute; top:1px; right:0;  }
-
+.menuRodape li a:hover { text-decoration:underline; }
 /*internas*/
 .sprite-balao-categoria,
 .sprite-detalhe,
