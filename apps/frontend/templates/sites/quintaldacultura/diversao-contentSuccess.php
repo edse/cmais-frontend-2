@@ -212,7 +212,7 @@
           ?>
                     <div class="asset">
                       <p><?php echo $d->getTitle() ?><br>
-                      <?php echo $d->getDescription() ?></p>
+                      <?php echo html_entity_decode($d->getDescription()) ?></p>
                     </div>
                     <img title="<?php echo $asset->getTitle() ?>" src="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>" />
                     
