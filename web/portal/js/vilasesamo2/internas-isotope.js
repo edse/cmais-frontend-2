@@ -25,12 +25,12 @@
       });
 
       $container.isotope({ filter:filter_selected });
-      return false;
       
       if($(this).parent().parent().hasClass('ativo')){
         console.log("tenho")
         $(this).find('img').css('top','33px!important');
       }
+      return false;
     });
     
     $('.inner a').mouseenter(function(){
