@@ -63,44 +63,44 @@
         <ul class="filtro-personagem">
          
          <li>
-          <div class="inner bel">
+          <div class="inner jogos bel">
             <a href="/vilasesamo2/personagens/bel" title="Bel" class="btn-bel" data-filter=".bel">
               <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="Personagem" />
              </a>
           </div>
          </li>
           <li>
-            <div class="inner beto">
+            <div class="inner jogos beto">
               <a href="/vilasesamo2/personagens/beto" title="Beto" class="btn-beto" data-filter=".beto"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/beto_personagem.png" alt="Personagem" /></a>
             </div>
           </li>
           <li>
-            <div class="inner comecome">
+            <div class="inner jogos comecome">
               <a href="/vilasesamo2/personagens/come-come" title="Come-come" class="btn-comecome" data-filter=".come-come"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/comecome_personagem.png" alt="Personagem" /></a>
             </div>
           </li>
           <li>
-            <div class="inner elmo">
+            <div class="inner jogos elmo">
               <a href="/vilasesamo2/personagens/elmo" title="Elmo" class="btn-elmo" data-filter=".elmo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/elmo_personagem.png" alt="Personagem" /></a>
             </div>
           </li>
           <li>
-            <div class="inner enio">
+            <div class="innerv jogos enio">
               <a href="/vilasesamo2/personagens/enio" title="Ênio" class="btn-enio" data-filter=".enio"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/enio_personagem.png" alt="Personagem" /></a>
              </div>
           </li>
           <li>
-            <div class="inner garibaldo">
+            <div class="inner jogos garibaldo">
               <a href="/vilasesamo2/personagens/garibaldo" title="Garibaldo" class="btn-garibaldo" data-filter=".garibaldo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/garibaldo_personagem.png" alt="Personagem" /></a>
             </div>
           </li>
           <li>
-            <div class="inner grover">
+            <div class="inner jogos grover">
               <a href="/vilasesamo2/personagens/grover" title="Grover" class="btn-grover" data-filter=".grover"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/grover_personagem.png" alt="Personagem" /></a>
             </div>
           </li>
           <li>
-            <div class="inner zoe">
+            <div class="inner jogos zoe">
               <a href="/vilasesamo2/personagens/zoe" title="Zoe" class="btn-zoe" data-filter=".zoe"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/zoe_personagem.png" alt="Personagem" /></a>
              </div>
           </li>
