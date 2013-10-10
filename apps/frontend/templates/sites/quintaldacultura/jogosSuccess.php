@@ -78,14 +78,14 @@
         <div class="lista">
           <ul class="navegacao">
             <li><a href="/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
-            <?php if($section->getSlug() != "jogos" || @$term != "" ): ?>     
+            <?php if($section->getSlug() != "jogos" || @$_GET["search"] != "" ): ?>     
             	<li><span>/</span><a href="/quintaldacultura/jogos" title="Jogos">Jogos</a></li>
             <?php endif; ?>
             
           </ul>
           
-          <?php if(@$term): ?> 
-	          <h2><?php echo @$term ?></h2>
+          <?php if(@$_GET["search"]): ?> 
+	          <h2><?php echo @$_GET["search"] ?></h2>
 		 <?php else: ?>	          
 	          <h2><?php echo $section->getTitle()?></h2>
           <?php endif; ?>

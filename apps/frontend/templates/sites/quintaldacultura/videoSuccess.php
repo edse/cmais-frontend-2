@@ -52,20 +52,6 @@
   <body>
  
 <?php
-
-if ($section->getSlug() != 'todos') {
-	$assets = Doctrine_Query::create()
-	  ->select('a.*')
-	  ->from('Asset a, SectionAsset sa, AssetVideo av')
-	  ->where('sa.section_id = ?', 93)
-	  ->andWhere('sa.asset_id = a.id')
-	  ->andWhere('av.asset_id = a.id')
-	  ->andWhere('a.is_active = ?', 1)
-	  ->andWhere('av.youtube_id != ""')
-	  ->orderBy('a.id desc')
-	  ->limit(50)
-	  ->execute();
-}else {
     $assets = Doctrine_Query::create()
 	  ->select('a.*')
 	  ->from('Asset a, SectionAsset sa, AssetVideo av')
@@ -77,10 +63,6 @@ if ($section->getSlug() != 'todos') {
 	  ->orderBy('a.id desc')
 	  ->limit(50)
 	  ->execute();
-}
-//if(!isset($asset)){
-   // $asset = $assets[0];
-//}
 ?>
   	
 	<?php use_helper('I18N', 'Date')    ?>

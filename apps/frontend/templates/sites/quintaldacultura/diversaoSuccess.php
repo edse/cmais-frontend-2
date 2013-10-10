@@ -99,13 +99,13 @@
 	        <div class="lista">
 	          <ul class="navegacao">
 	            <li><a href="/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
-	            <?php if($section->getSlug() != "diversao" || @$term != "" ): ?>     
+	            <?php if($section->getSlug() != "diversao" || $_GET["search"] != "" ): ?>     
 	            	<li><span>/</span><a href="/quintaldacultura/diversao" title="Diversão">Diversão</a></li>
 	            <?php endif; ?>
           	  </ul>
           
-	          <?php if(@$term): ?> 
-		          <h2><?php echo @$term ?></h2>
+	          <?php if(@$_GET["search"]): ?> 
+		          <h2><?php echo $_GET["search"] ?></h2>
 			 <?php else: ?>	          
 		          <h2><?php echo $section->getTitle()?></h2>
 	          <?php endif; ?>
