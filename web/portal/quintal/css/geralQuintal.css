@@ -121,6 +121,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 /*cabecalho*/
 .cabecalho{  float: left;  text-align: left;  width: 970px;  position: relative;  margin: 15px 0 0 0;  z-index: 10; float: right;}
 .cabecalho .pontilhado{  background: url(../images/bg-pontilhado.png) no-repeat;  display: block;  width: 697px;  height: 54px;}
+.cabecalho h1 { width:208px; float:left; }  
 .cabecalho h1 a{  background: url(../images/logo-quintal.png) no-repeat;  display: block;  float: left;  margin: 7px 10px 0 0;  overflow: hidden;  text-indent: -9999px;  width: 208px;  height: 207px;}
 .cabecalho ul { float:right; margin:20px 0; }
 .cabecalho ul li{  float: left;  width: 143px; height:102px; background: url(../images/btn.png) no-repeat; margin-left:9px;}
@@ -171,7 +172,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #horario .sprite-ico-agenda { float:left; margin: 1px 10px }
 #horario h2 {color:#2b3377;  text-transform:uppercase; font-size:14px; line-height: 24px; margin-top:4px;}
 #horario a:hover { background:#fffd00; }
-#horario h1 { width:208px; float:left; }
+
 /* /horario */
 
 /*rodape2*/
