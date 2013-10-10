@@ -28,7 +28,7 @@
       return false;
       
       if($(this).parent().parent().hasClass('ativo')){
-        $(this).find('img').css('top','33px');
+        $(this).find('img').css('top','33px!important');
       }
     });
     
