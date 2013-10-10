@@ -118,6 +118,7 @@
 	          <!-- BUSCA -->
 				
           <div id="google_search" style="display:none">
+          	 <ul class="assets">
 			<script>
 			  (function() {
 			    var cx = '005232987476052626260:czy5dx_z-m4';
@@ -132,7 +133,7 @@
 			</script>
 			<gcse:searchresults-only></gcse:searchresults-only>	 
 		  </div>
-
+		</ul>
 		<div id="resultados_busca" style="display:none">
 		
 		  <ul class="assets">
