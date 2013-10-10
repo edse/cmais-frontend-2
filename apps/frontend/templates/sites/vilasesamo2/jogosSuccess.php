@@ -114,7 +114,7 @@
 
   <section class="todos-itens ">
     <ul  id="container" class="row-fluid">
-      <li class="span4 element">
+      <li class="span4 element garibaldo">
         <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
