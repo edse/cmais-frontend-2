@@ -34,7 +34,11 @@
     });
     
     $('.inner a').mouseenter(function(){
-     $(this).find('img').animate({top:-33, easing:"swing"},'fast');
+     if($(this).parent().hasClass('jogos')){ 
+      $(this).find('img').animate({top:-33, easing:"swing"},'fast');
+     }else{
+      $(this).find('img').animate({top:-25, easing:"swing"},'fast');  
+     }
     });
     $('.inner a').mouseleave(function(){
       if(!$(this).parent().parent().hasClass('ativo')){
