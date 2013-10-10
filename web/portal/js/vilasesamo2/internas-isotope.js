@@ -34,7 +34,7 @@
     });
     
     $('.inner a').mouseenter(function(){
-     $(this).find('img').animate({top:-33, easing:"swing"},'fast');
+     $(this).find('img').animate({top:-20, easing:"swing"},'fast');
     });
     $('.inner a').mouseleave(function(){
       if(!$(this).parent().parent().hasClass('ativo')){
