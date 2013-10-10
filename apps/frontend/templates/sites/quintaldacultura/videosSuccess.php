@@ -98,21 +98,20 @@
 					<?php endif; ?>						 
 		 <?php    endforeach; ?> 
 		 <?php  endif; ?>
-          
          
         </ul>
+        
         <div class="lista">
           <ul class="navegacao">
             <li><a href="/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
             <?php if($section->getSlug() != "videos" || @$_GET["search"] != "" ): ?>     
             	<li><span>/</span><a href="/quintaldacultura/videos" title="Vídeos">Vídeos</a></li>
             <?php endif; ?>
-            
           </ul>
           
           <?php if(@$_GET["search"]): ?> 
 	          <h2><?php echo @$_GET["search"] ?></h2>
-		 <?php else: ?>	          
+		  <?php else: ?>	          
 	          <h2><?php echo $section->getTitle()?></h2>
           <?php endif; ?>
           
@@ -124,7 +123,7 @@
           <!-- BUSCA -->
 		
 		<ul class="assets">          
-          <div id="google_search" style="display:none">
+          	<div id="google_search" style="display:none">
 				<script>
 				  (function() {
 				    var cx = '005232987476052626260:czy5dx_z-m4';
@@ -189,8 +188,6 @@
 	}
 </script>
               
-
-      
 
     </div>
 
