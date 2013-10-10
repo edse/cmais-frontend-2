@@ -133,7 +133,7 @@
 			</script>
 			<gcse:searchresults-only></gcse:searchresults-only>	 
 		  </div>
-		</ul>
+			</ul>
 		<div id="resultados_busca" style="display:none">
 		
 		  <ul class="assets">
