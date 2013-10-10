@@ -112,7 +112,7 @@
 	         
 	         <!-- BUSCA -->
 	         <form id="busca" method="get" action="/quintaldacultura/diversao">
-	            <input type="text" name="search" id="search" placeholder="Pesquisar" />
+	            <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar" />
 	            <button class="sprite-ico-busca" onclick="javascript: ExecuteSearch()"></button>
 	          </form>
 	          <!-- BUSCA -->
@@ -195,7 +195,7 @@
 	        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
 	    );
 	}
-	if(getURLParameter("search") == ""){
+	if(getURLParameter("pesquisa") == ""){
 		$('#resultados_busca').show();
 	}else{
 		$('#resultados_busca').hide();
