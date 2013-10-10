@@ -85,7 +85,7 @@
             </div>
           </li>
           <li>
-            <div class="innerv jogos enio">
+            <div class="inner jogos enio">
               <a href="/vilasesamo2/personagens/enio" title="Ênio" class="btn-enio" data-filter=".enio"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/enio_personagem.png" alt="Personagem" /></a>
              </div>
           </li>
