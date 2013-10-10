@@ -99,27 +99,31 @@
 	        <div class="lista">
 	          <ul class="navegacao">
 	            <li><a href="/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
-	            <?php if($section->getSlug() != "diversao" || @$term != "" ): ?>     
-	            	<li><span>/</span><a href="/quintaldacultura/diversao" title="Diversão">Diversão</a></li>
+	            <?php if($section->getSlug() != "diversao" || $_REQUEST["search"] != "" ): ?>     
+	            	<li><span>/</span><a href="/quintaldacultura/diversao" title="Diversão">Diversão/<?php echo $_GET["search"] ?></a></li>
 	            <?php endif; ?>
           	  </ul>
-          
-	          <?php if(@$term): ?> 
-		          <h2><?php echo @$term ?></h2>
+          		
+	          <?php if(@$_REQUEST["search"]): ?> 
+		          <h2><?php echo $_REQUEST["search"] ?></h2>
 			 <?php else: ?>	          
 		          <h2><?php echo $section->getTitle()?></h2>
 	          <?php endif; ?>
 	         
 	         <!-- BUSCA -->
-	         <form id="busca" method="get">
-	            <input type="text" name="search" id="search" placeholder="Pesquisar em Vídeos" />
-	            <button class="sprite-ico-busca"></button>
+	         <form id="busca" method="get" action="/quintaldacultura/diversao">
+	            <input type="text" name="search" id="search" placeholder="Pesquisar" />
+	            <button class="sprite-ico-busca" onclick="javascript: ExecuteSearch()"></button>
 	          </form>
 	          <!-- BUSCA -->
-	          
+	            <script>
+				  function ExecuteSearch(i){
+				    $("#busca").submit();
+				  }
+				</script>
           <ul class="assets">
        	 
-       	 <?php if($term):?>
+       	 <?php //if($_GET["search"]):?>
 			<script>
 			  (function() {
 			    var cx = '005232987476052626260:czy5dx_z-m4';
@@ -135,7 +139,9 @@
 			<gcse:searchresults-only></gcse:searchresults-only>	 
 		</ul>
 
-		 <?php else: ?>
+
+		<ul class="assets">
+		 <?php //else: ?>
         
             <?php if(count($pager) > 0): ?>
               <?php foreach($pager->getResults() as $d): ?>
@@ -176,7 +182,7 @@
               <?php endforeach; ?>
             <?php endif; ?>          	
           	</ul>	
-         <?php endif; ?>    
+         <?php //endif; ?>    
           
           
           <?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>

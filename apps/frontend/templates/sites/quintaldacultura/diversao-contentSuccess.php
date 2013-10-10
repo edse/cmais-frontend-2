@@ -102,7 +102,7 @@
         $assets = Doctrine_Query::create()
           ->select('a.*')
           ->from('Asset a, SectionAsset sa')
-          ->whereIn('sa.section_id', array(94, 103, 106, 104, 105, 107, 127))
+          ->whereIn('sa.section_id', array(3163, 3164, 97, 104, 105, 106, 107, 127, 765, 764, 762))
           ->andWhere('sa.asset_id = a.id')
           ->orderBy('a.id desc')
           ->execute();
@@ -112,10 +112,6 @@
   if(!isset($asset))
     $asset = $assets[0];
   ?>
-  	
-  	
-  	
-  	
   	
   	
 	<?php use_helper('I18N', 'Date')    ?>
@@ -216,7 +212,7 @@
           ?>
                     <div class="asset">
                       <p><?php echo $d->getTitle() ?><br>
-                      <?php echo $d->getDescription() ?></p>
+                      <?php echo html_entity_decode($d->getDescription()) ?></p>
                     </div>
                     <img title="<?php echo $asset->getTitle() ?>" src="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>" />
                     
