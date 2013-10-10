@@ -28,6 +28,7 @@
       return false;
       
       if($(this).parent().parent().hasClass('ativo')){
+        console.log("tenho")
         $(this).find('img').css('top','33px!important');
       }
     });
