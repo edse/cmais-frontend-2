@@ -111,12 +111,16 @@
 	          <?php endif; ?>
 	         
 	         <!-- BUSCA -->
-	         <form id="busca" method="get">
-	            <input type="text" name="search" id="search" placeholder="Pesquisar em Vídeos" />
-	            <button class="sprite-ico-busca"></button>
+	         <form id="busca" method="get" action="/quintaldacultura/diversao">
+	            <input type="text" name="search" id="search" placeholder="Pesquisar" />
+	            <button class="sprite-ico-busca" onclick="javascript: ExecuteSearch()"></button>
 	          </form>
 	          <!-- BUSCA -->
-	          
+	            <script>
+				  function ExecuteSearch(i){
+				    $("#page_form").submit();
+				  }
+				</script>
           <ul class="assets">
        	 
        	 <?php //if($_GET["search"]):?>
