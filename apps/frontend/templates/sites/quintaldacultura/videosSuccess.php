@@ -118,31 +118,34 @@
           
           <!-- BUSCA -->
           <form id="busca" method="get">
-            <input type="text" name="search" id="search" placeholder="Pesquisar" value="" />
+            <input type="text" name="search" id="search" placeholder="Pesquisar em Vídeos" />
             <button class="sprite-ico-busca"></button>
           </form>
           <!-- BUSCA -->
           
-          <div id="google_search" style="display:none">
-	          <ul class="assets">
-					<script>
-					  (function() {
-					    var cx = '005232987476052626260:czy5dx_z-m4';
-					    var gcse = document.createElement('script');
-					    gcse.type = 'text/javascript';
-					    gcse.async = true;
-					    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-					        '//www.google.com/cse/cse.js?cx=' + cx;
-					    var s = document.getElementsByTagName('script')[0];
-					    s.parentNode.insertBefore(gcse, s);
-					  })();
-					</script>
-					<gcse:searchresults-only></gcse:searchresults-only>	 
-				</ul>
-			</div>
-				
-			<div id="resultados_busca" style="display:none">			 
-		       <ul class="assets">    	
+          
+          <ul class="assets">
+          	
+       	 <?php if(@$_GET["search"]):?>
+								 
+			<script>
+			  (function() {
+			    var cx = '005232987476052626260:czy5dx_z-m4';
+			    var gcse = document.createElement('script');
+			    gcse.type = 'text/javascript';
+			    gcse.async = true;
+			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+			        '//www.google.com/cse/cse.js?cx=' + cx;
+			    var s = document.getElementsByTagName('script')[0];
+			    s.parentNode.insertBefore(gcse, s);
+			  })();
+			</script>
+			<gcse:searchresults-only></gcse:searchresults-only>	 
+					 
+			</ul>
+					 
+		 <?php else: ?>
+		         	
 		            <?php if(count($pager) > 0): ?>
 		              <?php foreach($pager->getResults() as $d): ?>
 		                <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
@@ -163,33 +166,18 @@
 		              </ul>	
 		          	<?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
 		        	<?php endif; ?> 
-				</ul>          
-        	</div>
-        	
-          </div>
+		          
+          
+          <?php endif;?>
+          
+        </div>
         </div>
         <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
         </div>
-        </div>
         
-<script>
-	function ExecuteSearch(){
-		$("#busca").submit();
-	}
+        
 
-	function getURLParameter(name) {
-	    return decodeURI(
-	        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
-	    );
-	}
-	if(getURLParameter("search") == "null" || getURLParameter("search") == ""){
-		$('#resultados_busca').show();
-	}else{
-		$('#resultados_busca').hide();
-		$('#google_search').show();
-	}
-</script>
-              
+        </div>
 
       
 
