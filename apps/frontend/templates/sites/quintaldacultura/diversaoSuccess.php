@@ -116,14 +116,8 @@
 	            <button class="sprite-ico-busca" onclick="javascript: ExecuteSearch()"></button>
 	          </form>
 	          <!-- BUSCA -->
-	            <script>
-				  function ExecuteSearch(i){
-				    $("#busca").submit();
-				  }
-				</script>
-          <ul class="assets">
-       	 
-       	 <?php //if($_GET["search"]):?>
+				
+          <div id="google_search" style="display:none">
 			<script>
 			  (function() {
 			    var cx = '005232987476052626260:czy5dx_z-m4';
@@ -137,12 +131,11 @@
 			  })();
 			</script>
 			<gcse:searchresults-only></gcse:searchresults-only>	 
-		</ul>
+		  </div>
 
-
-		<ul class="assets">
-		 <?php //else: ?>
-        
+		<div id="resultados_busca" style="display:none">
+		
+		  <ul class="assets">
             <?php if(count($pager) > 0): ?>
               <?php foreach($pager->getResults() as $d): ?>
                 <?php $related 	= $d->retriveRelatedAssetsByAssetTypeId(6); ?>
@@ -182,19 +175,33 @@
               <?php endforeach; ?>
             <?php endif; ?>          	
           	</ul>	
-         <?php //endif; ?>    
           
           
           <?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
         </div>
         </div>
+        </div>
         <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
         </div>
-        
-        
-
         </div>
 
+<script>
+	function ExecuteSearch(){
+		$("#busca").submit();
+	}
+
+	function getURLParameter(name) {
+	    return decodeURI(
+	        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+	    );
+	}
+	if(getURLParameter("search") == ""){
+		$('#resultados_busca').show();
+	}else{
+		$('#resultados_busca').hide();
+		$('#google_search').show();
+	}
+</script>
       
 
     </div>
