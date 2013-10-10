@@ -1,4 +1,5 @@
 <?php
+/*
 // ação temporária de férias
 $feriasSection = Doctrine_Query::create()
   ->select('s.*')
@@ -17,6 +18,27 @@ if($feriasSection)
   {
     foreach($feriasBlocks as $b)
       $feriasDisplays[$b->getSlug()] = $b->retriveDisplays();
+  }
+}
+ */
+// ação temporária de férias
+$especial = Doctrine_Query::create()
+  ->select('s.*')
+  ->from('Section s')
+  ->where('s.site_id = ?', (int)$site->id)
+  ->andWhere('s.slug = "dia-das-criancas"')
+  ->andWhere('s.is_active = ?', 1)
+  ->orderBy('s.display_order ASC')
+  ->fetchOne();
+
+if($especial)
+{
+  $especialBlocks = $especial->Blocks;
+  $especialDisplays = array();
+  if(count($especialBlocks) > 0)
+  {
+    foreach($especialBlocks as $b)
+      $especialDisplays[$b->getSlug()] = $b->retriveDisplays();
   }
 }
 ?>
@@ -44,9 +66,16 @@ if($feriasSection)
     
   <div class="row-fluid" id="menu">
     <div class="span12">
-      <ul id="myTab" class="nav nav-tabs"> 
+      <ul id="myTab" class="nav nav-tabs">
+        <?php
+        /* 
         <?php if($feriasSection): ?>
         <li class="ferias active"><a href="#ferias" data-toggle="tab"><p>Férias</p></a></li>
+        <?php endif; ?>
+         */
+        ?>
+        <?php if($especial): ?>
+        <li class="ferias active"><a href="#ferias" data-toggle="tab"><p><?php echo $especial->getTitle() ?></p></a></li>
         <?php endif; ?>
         <?php if(isset($displays['destaque-principal-1'])): ?>
           <?php if(count($displays['destaque-principal-1']) > 0): ?>
@@ -58,13 +87,9 @@ if($feriasSection)
         <li class="atividades"><a href="#profile" data-toggle="tab"><span></span><p><?php echo $displays['destaque-principal-2'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li>
           <?php endif; ?>
         <?php endif; ?>
-        <?php if(isset($displays['destaque-principal-3'])): ?>
-          <?php if(count($displays['destaque-principal-3']) > 0): ?>
-        <li class="ferias"><a href="#diadascriancas" data-toggle="tab"><span></span><p><?php echo $displays['destaque-principal-3'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li>
-          <?php endif; ?>
-        <?php endif; ?>
       </ul>
       <div id="myTabContent" class="tab-content">
+        <?php /*
         <?php if($feriasSection): ?>
         <div class="tab-pane fade active in" id="ferias">
           
@@ -170,6 +195,55 @@ if($feriasSection)
           
         </div>
         <?php endif; ?>
+        */ ?>
+
+
+        <?php if($especial): ?>
+        <div class="tab-pane fade active in" id="ferias">
+          
+          <script>
+            function changeVideo(id) {
+              $('#player').html('<iframe id="video-charada" width="930" height="689" src="http://www.youtube.com/embed/'+id+'?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>');
+            }
+          </script>
+          
+          <?php if($especialDisplays['destaques']): ?>
+
+          <span class="barra"></span>
+            
+            <?php if(count($especialDisplays['destaques']) > 0): ?>
+          <div class="span12">
+            <h2><?php echo $especialDisplays['destaques'][0]->Block->getTitle() ?></h2>
+            
+            <div id="player">
+              <iframe id="video-charada" title="<?php echo $especialDisplays['destaques'][0]->getTitle() ?>" width="930" height="689" src="http://www.youtube.com/embed/<?php echo $especialDisplays['destaques'][0]->Asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+          </div>
+          
+              <?php if(count($especialDisplays['destaques']) > 1): ?>
+          <div class="span12">
+            <div class="carrossel">
+              <ul class="row-fluid span12">
+                <?php foreach($especialDisplays['destaques'] as $d): ?>
+                <li>
+                  <a href="javascript: changeVideo('<?php echo $d->Asset->AssetVideo->getYoutubeId(); ?>')" title="<?php echo $d->getTitle() ?>">
+                    <img src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
+                  </a>
+                </li>
+                <?php endforeach; ?>
+              </ul>
+            </div>
+          </div>
+              <?php endif; ?>
+            <?php endif; ?>
+          <?php endif; ?>
+          
+        </div>
+        <?php endif; ?>
+
+
+
              
         <?php if(isset($displays['destaque-principal-1'])): ?>
           <?php if(count($displays['destaque-principal-1']) > 0): ?>
