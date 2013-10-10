@@ -118,32 +118,32 @@
 	          <!-- BUSCA -->
 				
           <div id="google_search" style="display:none">
-          	 <ul class="assets">
-			<script>
-			  (function() {
-			    var cx = '005232987476052626260:czy5dx_z-m4';
-			    var gcse = document.createElement('script');
-			    gcse.type = 'text/javascript';
-			    gcse.async = true;
-			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-			        '//www.google.com/cse/cse.js?cx=' + cx;
-			    var s = document.getElementsByTagName('script')[0];
-			    s.parentNode.insertBefore(gcse, s);
-			  })();
-			</script>
-			<gcse:searchresults-only></gcse:searchresults-only>	 
+          	<ul class="assets">
+				<script>
+				  (function() {
+				    var cx = '005232987476052626260:czy5dx_z-m4';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:searchresults-only></gcse:searchresults-only>	 
+			</ul>		  
 		  </div>
-			</ul>
-		<div id="resultados_busca" style="display:none">
-		
-		  <ul class="assets">
-            <?php if(count($pager) > 0): ?>
-              <?php foreach($pager->getResults() as $d): ?>
-                <?php $related 	= $d->retriveRelatedAssetsByAssetTypeId(6); ?>
-                <?php $preview 	= $d->retriveRelatedAssetsByRelationType('Preview'); ?>
-                <?php $download = $d->retriveRelatedAssetsByRelationType('Download'); ?>
-                <?php $imagem 	= $d->retriveRelatedAssetsByAssetTypeId(2); ?>
-                <li>
+		  
+		  <div id="resultados_busca" style="display:none">
+			  <ul class="assets">
+	            <?php if(count($pager) > 0): ?>
+	              <?php foreach($pager->getResults() as $d): ?>
+	                <?php $related 	= $d->retriveRelatedAssetsByAssetTypeId(6); ?>
+	                <?php $preview 	= $d->retriveRelatedAssetsByRelationType('Preview'); ?>
+	                <?php $download = $d->retriveRelatedAssetsByRelationType('Download'); ?>
+	                <?php $imagem 	= $d->retriveRelatedAssetsByAssetTypeId(2); ?>
+	                <li>
                  	 <a href="/quintaldacultura/<?php if($section->getSlug() != "diversao") echo $section->getSlug()."/";?><?php echo $d->slug ?>" title="<?php echo $d->getTitle() ?>">
                       	<?php if(strlen($d->getTitle()) > 17):?> 
                       		<h3><?php echo substr($d->getTitle(),0,14) ?>...</h3>
@@ -180,6 +180,7 @@
           
           <?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
         </div>
+        
         </div>
         </div>
         <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
