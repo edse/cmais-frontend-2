@@ -58,6 +58,11 @@ if($feriasSection)
         <li class="atividades"><a href="#profile" data-toggle="tab"><span></span><p><?php echo $displays['destaque-principal-2'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li>
           <?php endif; ?>
         <?php endif; ?>
+        <?php if(isset($displays['destaque-principal-3'])): ?>
+          <?php if(count($displays['destaque-principal-3']) > 0): ?>
+        <li class="atividades"><a href="#profile" data-toggle="tab"><span></span><p><?php echo $displays['destaque-principal-3'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li>
+          <?php endif; ?>
+        <?php endif; ?>
       </ul>
       <div id="myTabContent" class="tab-content">
         <?php if($feriasSection): ?>
@@ -203,6 +208,26 @@ if($feriasSection)
         </div>
           <?php endif; ?>
         <?php endif; ?>
+        
+        <?php if(isset($displays['destaque-principal-3'])): ?>
+          <?php if(count($displays['destaque-principal-3']) > 0): ?>
+        <div class="tab-pane fade" id="profile">
+          <ul class="lista">
+            <?php foreach($displays['destaque-principal-3'] as $k=>$d): ?>
+            <li class="span3">
+              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                <?php if($d->retriveImageUrlByImageUsage("image-2-b") != ""): ?>
+                <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+                <?php endif; ?>
+                <p><?php echo $d->getTitle() ?></p> 
+              </a>
+            </li>
+            <?php endforeach; ?>
+          </ul>
+        </div>
+          <?php endif; ?>
+        <?php endif; ?>
+        
       </div>
       <div class="pontilhado row-fluid span12"></div>
     </div>
