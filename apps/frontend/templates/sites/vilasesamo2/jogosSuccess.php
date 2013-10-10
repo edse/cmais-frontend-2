@@ -61,18 +61,7 @@
         <p>escolha por personagem<span class="sprite-seta-down"></span></p>
         
         <ul class="filtro-personagem">
-         <?php 
-          /*
-          <li><a href="javascript:;" title="" data-filter=".bel"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
-          <li><a href="javascript:;" title="" data-filter=".beto"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
-          <li><a href="javascript:;" title="" data-filter=".come-come"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
-          <li><a href="javascript:;" title="" data-filter=".elmo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
-          <li><a href="javascript:;" title="" data-filter=".enio"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
-          <li><a href="javascript:;" title="" data-filter=".garibaldo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
-          <li><a href="javascript:;" title="" data-filter=".grover"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
-          <li><a href="javascript:;" title="" data-filter=".zoe"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="personagem" /></a></li>
-          */
-         ?>
+         
          <li>
           <div class="inner bel">
             <a href="/vilasesamo2/personagens/bel" title="Bel" class="btn-bel" data-filter=".bel">

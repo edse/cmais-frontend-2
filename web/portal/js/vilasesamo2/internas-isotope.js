@@ -22,11 +22,14 @@
           filter_selected += ",";
         }
         filter_selected += $(this).find('a').attr('data-filter');
-        
       });
 
       $container.isotope({ filter:filter_selected });
       return false;
+      
+      if($(this).parent().parent().hasClass('ativo')){
+        $(this).find('img').css('top','33px');
+      }
     });
     
     $('.inner a').mouseenter(function(){
