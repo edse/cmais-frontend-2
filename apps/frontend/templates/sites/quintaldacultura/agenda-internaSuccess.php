@@ -106,7 +106,7 @@
                 <small><?php echo $asset->getDescription() ?></small>
 		          
 		          <form id="busca" method="get" action="/quintaldacultura/agenda">
-		            <input type="text" name="search" id="search" placeholder="Pesquisar" />
+		            <input type="text" name="search" id="search" placeholder="Pesquisar" value="Pesquisar" />
 		            <button class="sprite-ico-busca"></button>
 		          </form>
 		                
