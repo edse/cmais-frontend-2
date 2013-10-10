@@ -139,6 +139,8 @@
 			<gcse:searchresults-only></gcse:searchresults-only>	 
 		</ul>
 
+
+		<ul class="assets">
 		 <?php //else: ?>
         
             <?php if(count($pager) > 0): ?>
