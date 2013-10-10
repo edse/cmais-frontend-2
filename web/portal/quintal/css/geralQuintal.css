@@ -334,7 +334,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #agenda .col-dir .box-content p { max-height:84px; overflow:hidden; clear:both; margin-bottom:20px; }
 #agenda .col-esq .box-content { overflow: hidden; }
 #agenda .col-esq .box-content p img { width:auto; float:left; margin-right:10px; max-width:620px; }
-#agenda .col-esq .box-content p { margin-bottom:20px; float:left; }
+#agenda .col-esq .box-content p { margin-bottom:20px; float:left; width:100%; }
 #agenda .col-esq .box-content p strong { font-weight:bold; }
 #agenda .col-esq .box-content p a { text-decoration:underline; }
 #agenda .menu-quintal small {clear:both; display: block; font-size: 14px; color:#2B3377; }
