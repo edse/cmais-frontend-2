@@ -15,7 +15,7 @@
     $('.filtro-personagem a').click(function(){
 
       filter_selected = "";
-      $(this).parent().toggleClass("ativo");
+      $(this).parent().parent().toggleClass("ativo");
       
       $('.filtro-personagem li.ativo').each(function(i){
         if(i > 0){
@@ -27,6 +27,16 @@
 
       $container.isotope({ filter:filter_selected });
       return false;
+    });
+    
+    $('.inner a').mouseenter(function(){
+      console.log("oi");
+     $(this).find('img').animate({top:-33, easing:"swing"},'fast');
+    });
+    $('.inner a').mouseleave(function(){
+      console.log("oi sai");
+      $(this).find('img').stop();
+      $(this).find('img').animate({top:0, easing:"swing"},'fast');  
     });
     /*
     $container.infinitescroll({
