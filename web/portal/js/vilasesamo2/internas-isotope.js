@@ -31,7 +31,7 @@
     
     $('.inner a').mouseenter(function(){
       console.log("oi");
-     $(this).find('img').animate({top:-40, easing:"swing"},'fast');
+     $(this).find('img').animate({top:-36, easing:"swing"},'fast');
     });
     $('.inner a').mouseleave(function(){
       console.log("oi sai");
