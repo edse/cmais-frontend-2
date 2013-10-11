@@ -27,7 +27,7 @@
                 .texto-novo{display:block; width:314px; height:66px; position:absolute; top:68px; left:277px; background:url(/portal/images/capaPrograma/cartaozinho/gabi-dona-da-bola.png) no-repeat;}
               </style>
               <div class='juiza-nova'></div>
-              <div class='texto-novo'></div>
+              <!--div class='texto-novo'></div-->
        <?php
 	       /*      
 	            }
