@@ -25,7 +25,6 @@
         <article class="span6 jogo">
           <a href="/vilasesamo2/jogos" title="Jogo">
             <i class="sprite-icon-jogos-peq"></i>Jogos
-            
           </a>
           <a href="/vilasesamo2/jogos" class="img" ><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" /></a> 
           <a class="asset" href="/vilasesamo2/jogos-interna" title="Jogos">Nome do Jogo</a>  
@@ -47,7 +46,7 @@
           <a class="asset" href="/vilasesamo2/atividades-interna" title="Para Colorir">Nome da atividade</a>       
         </article>
       
-      </section>
+      </sect0ion>
       <div class="span4 banner" >
         <a href="#" title="Incluir Brincando" class="sprite-btn-incluir"></a>
         <a href="#" title="Hábitos para uma vida saudável" class="sprite-btn-habitos"></a>
