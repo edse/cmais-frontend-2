@@ -601,7 +601,7 @@ class ajaxActions extends sfActions
         foreach($pc4 as $p)
           $return .= '<li><a href="'.$p->retriveUrl().'">'.$p->getTitle().'</a></li>';
         $return .= '</ul><div class="botoes"><a href="http://tvratimbum.cmais.com.br/grade">Grade completa</a><a href="http://cmais.com.br/programas-de-a-z">Todos os programas de A a Z</a></div>';
-      }
+      }/*
       elseif($request->getParameter('content') == "radioam"){
         $programs = array(); $pc1 = array(); $pc2 = array(); $pc3 = array(); $pc4 = array();
         $programs = Doctrine_Query::create()
@@ -665,7 +665,7 @@ class ajaxActions extends sfActions
         foreach($pc4 as $p)
           $return .= '<li><a href="'.$p->retriveUrl().'">'.$p->getTitle().'</a></li>';
         $return .= '</ul><div class="botoes"><a href="http://culturafm.cmais.com.br/grade">Grade completa</a><a href="http://culturafm.cmais.com.br/programas-de-a-z">Todos os programas de A a Z</a></div>';
-      }
+      }*/
       elseif($request->getParameter('content') == "no-ar-tvcultura"){
         $live = Doctrine_Query::create()
           ->select('s.*')
