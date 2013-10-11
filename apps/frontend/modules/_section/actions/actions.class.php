@@ -1402,28 +1402,21 @@ class _sectionActions extends sfActions
 			if($request->getParameter('search')) $this->term = $request->getParameter('search');
 			
 			if(count(@$sections_list) >= 1){
-			 $this->assetsQuery = Doctrine_Query::create()
-	          ->select('a.*')
-	          ->from('Asset a, SectionAsset sa')
-	          ->whereIn('sa.section_id', $sections_list)
-	          ->andWhere('sa.asset_id = a.id');
-	          //->orderBy('sa.id asc');
-	          $this->assetsQuery->andWhere('a.is_active = ?', 1);
-			  
+				 $this->assetsQuery = Doctrine_Query::create()
+		          ->select('a.*');
+		          
 	          if($this->section->Parent->slug == 'videos' || $this->section->slug == 'videos'){
-				    $this->assetsQuery = Doctrine_Query::create()
-					  ->select('a.*')
-					  ->from('Asset a, SectionAsset sa, AssetVideo av')
-					  ->where('sa.section_id = ?', $sections_list)
-					  ->andWhere('sa.asset_id = a.id')
-					  ->andWhere('av.asset_id = a.id')
-					  ->andWhere('a.is_active = ?', 1)
-					  ->andWhere('av.youtube_id != ""')
-					  ->orderBy('a.id desc');
+				  $this->assetsQuery->from('Asset a, SectionAsset sa, AssetVideo av')
+				  ->andWhere('av.asset_id = a.id')
+				  ->andWhere('av.youtube_id != ""')
+				  ->orderBy('a.id desc');
 	          }else{
-	          	$this->assetsQuery->orderBy('rand()');	
+	          	$this->assetsQuery
+	          	  ->from('Asset a, SectionAsset sa')
+		          ->whereIn('sa.section_id', $sections_list)
+		          ->andWhere('sa.asset_id = a.id')
+				  ->orderBy('rand()');
 	          }
-	          
 	          //if($this->term != "")
 	            //$this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->term.'%', '%'.$this->term.'%'));
 			  			  
