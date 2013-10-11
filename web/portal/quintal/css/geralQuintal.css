@@ -343,7 +343,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #musicas .jp-audio { float:right; }
 #musicas div.jp-interface { border:none; }
 #musicas div.jp-playlist, 
-#musicas div.jp-interface { background:#b8f67d; }
+#musicas div.jp-interface { background:#fffd00; }
 
 /* home */
 #destaque { width:960px; height:330px; background:url(../images/bg-destaque.png) no-repeat; position:relative; }
