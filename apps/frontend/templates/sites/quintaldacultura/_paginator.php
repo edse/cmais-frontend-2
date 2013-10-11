@@ -1,7 +1,7 @@
 <?php if(isset($pager)): ?>
   <?php if($pager->haveToPaginate()): ?>
   <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
-  <div class="paginacao">
+  <div class="paginacao" style="display: none">
       <ul id="pgContainer">
         <li><a href="javascript: goToPage(<?php echo $pager->getFirstPage() ?>);" class="sprite-seta-pag-esq" title="Primeira"></a></li>
         <!--li><a href="javascript: goToPage(<?php //echo $pager->getPreviousPage() ?>);" class="sprite-seta-pag-esq"  title="Anterior"><i class="icon-backward"></i></a></li-->
