@@ -74,7 +74,7 @@
             ?>
             
             <li>
-              <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $download[0]->AssetImage->getOriginalFile() ?>" title="Title">
+              <a href="http://midia.cmais.com.br/assets/image/original/<?php echo $download[0]->AssetImage->getOriginalFile() ?>" title="Title" target="blank">
                 <h3><?php echo $d->getTitle(); ?></h3>
                 <?php?>
                 <img alt="<?php echo $d->getTitle(); ?>" src="http://midia.cmais.com.br/assets/image/original/<?php echo $preview[0]->AssetImage->getOriginalFile() ?>">
