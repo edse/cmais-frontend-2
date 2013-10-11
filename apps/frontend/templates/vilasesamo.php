@@ -93,25 +93,33 @@
   <body>
     <!-- header -->
     <header class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner topo-cmais">
+      <!--div class="navbar-inner topo-cmais">
         <div class="container">
           <h2><a href="http://tvcultura.cmais.com.br/" title="TV Cultura" class="sprite-logo-cultura"></a></h2>
           <h1><a class="sprite-logo-cmais brand" href="http://cmais.com.br/" title="Cmais"></a></h1>     
         </div>
-      </div>
+      </div-->
+      <!--topo-vila-->
       <div class="navbar-inner topo-vila">
+        <!--/container-->
         <div class="container">
+          <!--button-->          
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <i class="sprite-seta-up-menu"></i>
             <h1>Menu</h1>
-            
           </button>
-         
+          <!--button-->
+          
+          <!--nav--> 
           <nav class="nav-collapse collapse">
+            <!--form-->
             <form class="form-search">
-              <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';">
-              <button type="submit" class="btn sprite-icon-busca-hover" accesskey="p" value="Encontre no site" ></button>
+              <input type="text" class="input-medium search-query" accesskey="p" value="Encontre no site" onfocus="this.value='';">
+              <button type="submit" class="btn sprite-icon-busca-hover" value="Encontre no site" ></button>
             </form>
+            <!--/form-->
+            
+            <!--ul.nav-->
             <ul class="nav">
               <li>
                 <a href="/vilasesamo2/paraospais" title="Para os pais" target="_blank">Para adultos</a>
@@ -125,16 +133,15 @@
                 <a href="/vilasesamo2/historia" title="História" target="_blank">História</a>
               </li>            
             </ul>
-            
+            <!--ul.nav-->
           </nav>
+          <!--/nav-->
         </div>
+        <!--/container-->
       </div>
+      <!--/topo-vila-->
     </header>
     <!-- /header -->
-    <script>
-      //alert(screen.width);
-      
-    </script>
     
     <?php echo $sf_content ?>
     
