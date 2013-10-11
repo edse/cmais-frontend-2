@@ -62,6 +62,7 @@
 
           <div class="conteudoWrapper">
             <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
+       
         <ul class="sidebar">
           <li class="sprite-balao-categoria">Escolha por <br/>categoria</li>
           
@@ -73,15 +74,14 @@
           <li <?php if($section->getSlug() == "esportes") echo 'class="ativo" ';?>><a href="/quintaldacultura/jogos/esportes" title="Esportes">Esportes</a></li>
           <li <?php if($section->getSlug() == "gui-e-estopa") echo 'class="ativo" ';?>><a href="/quintaldacultura/jogos/gui-e-estopa" title="Gui e Estopa">Gui e Estopa</a></li>
           <li><a href="http://cmais.com.br/vilasesamo/jogos/index.html" title="Vila Sésamo">Vila Sésamo</a></li>
-         
         </ul>
+        
         <div class="lista">
           <ul class="navegacao">
             <li><a href="/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
             <?php if($section->getSlug() != "jogos" || @$_GET["search"] != "" ): ?>     
             	<li><span>/</span><a href="/quintaldacultura/jogos" title="Jogos">Jogos</a></li>
             <?php endif; ?>
-            
           </ul>
           
           <?php if(@$_GET["search"]): ?> 

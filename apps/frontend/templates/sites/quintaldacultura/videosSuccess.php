@@ -66,39 +66,35 @@
             <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
         <ul class="sidebar">
           <li class="sprite-balao-categoria">Escolha por <br/>categoria</li>
-          
-          
-          
-         <?php
-			$secoes = Doctrine_Query::create()
-			  ->select('s.*')
-			  ->from('Section s')
-			  ->where('s.parent_section_id = ?', 93)
-			  ->addWhere('s.is_active = 1')
-			  ->orderBy('s.display_order asc')
-			  ->execute(); 
-         ?>
-         
-         <?php if(count($secoes) > 0): ?>
-	     <?php    foreach ($secoes as $s):?>
-	     			<?php if($section->getSlug() == "videos" && $s->getSlug() == "todos"):?>
-	     					<li class="ativo"> <a href="/quintaldacultura/diversao" title="Todos">Todos</a></li>
-					<?php else :?>
-							<li <?php if($section->getSlug() == $s->getSlug() || $s->getSlug() == "videos") echo 'class="ativo" ';?>>
-								<a href="/quintaldacultura/videos<?php if($s->getSlug() != "todas") echo "/".$s->getSlug()?>" title="<?php echo $s->getTitle()?>">
-								
-			                      	<?php if(strlen($s->getTitle()) > 17):?> 
-			                      		<?php echo substr($s->getTitle(),0,15) ?>...
-								  	<?php else: ?>
-								  		<?php echo $s->getTitle() ?>
-								  	<?php endif;?>	
-								
-								</a>
-							</li>
-					<?php endif; ?>						 
-		 <?php    endforeach; ?> 
-		 <?php  endif; ?>
-         
+	         <?php
+				$secoes = Doctrine_Query::create()
+				  ->select('s.*')
+				  ->from('Section s')
+				  ->where('s.parent_section_id = ?', 93)
+				  ->addWhere('s.is_active = 1')
+				  ->orderBy('s.display_order asc')
+				  ->execute(); 
+	         ?>
+
+	         <?php if(count($secoes) > 0): ?>
+		     <?php    foreach ($secoes as $s):?>
+		     			<?php if($section->getSlug() == "videos" && $s->getSlug() == "todos"):?>
+		     					<li class="ativo"> <a href="/quintaldacultura/diversao" title="Todos">Todos</a></li>
+						<?php else :?>
+								<li <?php if($section->getSlug() == $s->getSlug() || $s->getSlug() == "videos") echo 'class="ativo" ';?>>
+									<a href="/quintaldacultura/videos<?php if($s->getSlug() != "todas") echo "/".$s->getSlug()?>" title="<?php echo $s->getTitle()?>">
+									
+				                      	<?php if(strlen($s->getTitle()) > 17):?> 
+				                      		<?php echo substr($s->getTitle(),0,15) ?>...
+									  	<?php else: ?>
+									  		<?php echo $s->getTitle() ?>
+									  	<?php endif;?>	
+									
+									</a>
+								</li>
+						<?php endif; ?>						 
+			 <?php    endforeach; ?> 
+			 <?php  endif; ?>
         </ul>
         
         <div class="lista">
@@ -144,7 +140,6 @@
 		              <?php foreach($pager->getResults() as $d): ?>
 		                <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
 		                <li>
-		                 	 <?php /*<a href="/quintaldacultura<?php if($section->slug != "videos") echo "/videos/".$section->slug ?>/<?php echo $d->slug ?>" title="<?php echo $d->getTitle() ?>">*/?>
 		                 	 <a href="/quintaldacultura/videos/<?php echo $d->slug ?>" title="<?php echo $d->getTitle() ?>">
 			                      <?php if(strlen($d->getTitle()) > 19):?> 
 			                      	<h3><?php echo substr($d->getTitle(),0,15) ?>...</h3>
