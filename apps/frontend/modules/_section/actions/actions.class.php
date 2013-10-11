@@ -1407,14 +1407,18 @@ class _sectionActions extends sfActions
 		          
 	          if($this->section->Parent->slug == 'videos' || $this->section->slug == 'videos'){
 				  $this->assetsQuery->from('Asset a, SectionAsset sa, AssetVideo av')
+				  ->whereIn('sa.section_id', $sections_list)
+				  ->andWhere('sa.asset_id = a.id')
 				  ->andWhere('av.asset_id = a.id')
 				  ->andWhere('av.youtube_id != ""')
+				  ->andWhere('a.is_active = ?', 1)
 				  ->orderBy('a.id desc');
 	          }else{
 	          	$this->assetsQuery
 	          	  ->from('Asset a, SectionAsset sa')
 		          ->whereIn('sa.section_id', $sections_list)
 		          ->andWhere('sa.asset_id = a.id')
+				  ->andWhere('a.is_active = ?', 1)
 				  ->orderBy('rand()');
 	          }
 	          //if($this->term != "")
