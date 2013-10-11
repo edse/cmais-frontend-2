@@ -104,11 +104,7 @@
 			            <?php endif; ?>
                 </ul>
                 
-				 <?php if(@$term): ?> 
-			          <h2><?php echo @$term ?></h2>
-				 <?php else: ?>	          
-			          <h2><?php echo $section->getTitle()?></h2>
-		         <?php endif; ?>
+				<h2 id="titulo_pagina"><?php echo $section->getTitle()?></h2>
                 
 		          <form id="busca">
 		            <input type="text" name="search" id="search" placeholder="Pesquisar" value="" />
@@ -169,6 +165,10 @@
 		$('#resultados_busca').show();
 		$('.paginacao').show();
 	}else{
+		var busca = getURLParameter("search");
+		$('#titulo_pagina').text(busca);
+		$('#search').val(busca);
+		
 		$('#resultados_busca').hide();
 		$('#google_search').show();
 	}

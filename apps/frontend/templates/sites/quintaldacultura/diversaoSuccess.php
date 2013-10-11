@@ -104,11 +104,7 @@
 	            <?php endif; ?>
           	  </ul>
           		
-	          <?php if(@$_REQUEST["search"]): ?> 
-		          <h2><?php echo $_REQUEST["search"] ?></h2>
-			 <?php else: ?>	          
-		          <h2><?php echo $section->getTitle()?></h2>
-	          <?php endif; ?>
+			<h2 id="titulo_pagina"><?php echo $section->getTitle()?></h2>
 	         
 	         <!-- BUSCA -->
 	         <form id="busca" method="get" action="/quintaldacultura/diversao">
@@ -198,6 +194,10 @@
 		$('#resultados_busca').show();
 		$('.paginacao').show();
 	}else{
+		var busca = getURLParameter("search");
+		$('#titulo_pagina').text(busca);
+		$('#search').val(busca);
+		
 		$('#resultados_busca').hide();
 		$('#google_search').show();
 	}
