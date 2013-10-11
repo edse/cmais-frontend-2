@@ -51,12 +51,12 @@
             </ul>
           </div>
         </div>
-        <!--destaque imagem >
-        <a href=" http://tvratimbum.cmais.com.br/especial/dia-dos-pais-super-poderosos" title="Dia dos Pais Super-poderosos" class="btn-destaque-topo">
-          <img class="destaqueTopo" src="http://cmais.com.br/portal/tvratimbum/image/topo_pais_tvrtb.png" alt="A TV que cresce com você!" />
+        <!--destaque imagem -->
+        <a href="http://tvratimbum.cmais.com.br/especial/mes-das-criancas-e-na-tv-ra-tim-bum-1" title="Dia dos Pais Super-poderosos" class="btn-destaque-topo">
+          <img class="destaqueTopo" src="http://cmais.com.br/portal/tvratimbum/image/topo-site-tvrtb.png" alt="A TV que cresce com você!" />
         </a>
         <!--/destaque imagem -->
-        <!-- destaque antigo ul-->
+        <!-- destaque antigo ul>
         <div id="destaque-ferias">
           
           <ul>
@@ -79,7 +79,7 @@
               </map>
             </li>
           </ul>
-        
+          -->
           <!-- destaque antigo ul>
             <li>
               <img src="http://cmais.com.br/portal/tvratimbum/image/btn-missaominuto.png" usemap="#missao"/>
