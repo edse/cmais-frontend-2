@@ -23,49 +23,42 @@
       <div class="span10 destaque-filtro especial">
     
         <?php if($parentSection->subsections()): ?>
-        <ul class="nav nav-tabs" id="myTab">
+        <ul class="nav nav-tabs">
             <?php foreach($parentSection->subsections() as $k=>$s): ?>
               <?php $k++; ?>
           <li class="<?php if($s->getId() == $section->getId()): ?>active <?php endif; ?>aba<?php echo $k ?>"><a href="<?php echo $s->retriveUrl() ?>"><?php echo $s->getTitle() ?></a></li>
             <?php endforeach; ?>
         </ul>
         <?php endif; ?>
- 
+         
         <div class="tab-content">
-          <div class="tab-pane active" id="clipes" class="aba1">
-            <article class="span6 clipes">
-              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
+          
+          <div class="tab-pane active">
+            <?php if(isset($displays['destaque-1'])): ?>
+              <?php if(count($displays['destaque-1']) > 0): ?>
+            <article class="span6">
+              <a class="img-destaque" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-1'][0]->getTitle() ?>">
                 <span class="sprite-selo">Novidade!</span>
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
+                <img src="<?php echo $displays['destaque-1'][0]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" /> 
               </a> 
-              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
+              <h1><a href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-1'][0]->getTitle() ?>"><?php echo $displays['destaque-1'][0]->getTitle() ?></a></h1>
             </article>
-            <article class="span6 clipes">
-              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
+              <?php endif; ?>
+            <?php endif; ?>
+            <?php if(isset($displays['destaque-2'])): ?>
+              <?php if(count($displays['destaque-2']) > 0): ?>
+            <article class="span6">
+              <a class="img-destaque" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-2'][0]->getTitle() ?>">
                 <span class="sprite-selo">Novidade!</span>
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
+                <img src="<?php echo $displays['destaque-2'][0]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" /> 
               </a> 
-              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
+              <h1><a href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-2'][0]->getTitle() ?>"><?php echo $displays['destaque-2'][0]->getTitle() ?></a></h1>
             </article>
+              <?php endif; ?>
+            <?php endif; ?>
           </div>
-          <div class="tab-pane" id="episodios">
-            <article class="span6 clipes">
-              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
-                <span class="sprite-selo">Novidade!</span>
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
-              </a> 
-              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
-            </article>
-            <article class="span6 clipes">
-              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
-                <span class="sprite-selo">Novidade!</span>
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
-              </a> 
-              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
-            </article>
-          </div>
-        </div>
-       
+          
+        </div>       
       </div>
 
       <?php include_partial_from_folder('sites/vilasesamo', 'global/sidebar-personagens') ?>
