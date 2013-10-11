@@ -1394,6 +1394,9 @@ class _sectionActions extends sfActions
 			if($this->section->slug == 'diversao') $sections_list = array(3163, 3164, 97, 104, 105, 106, 107, 127, 765, 764, 762);
 			//if($this->section->slug == 'agenda') $sections_list = array(1000);
 			
+			if($this->section->Parent->slug == 'diversao') $sections_list = array($this->section->id);
+			
+			
 			if($request->getParameter('search')) $this->term = $request->getParameter('search');
 			
 			if(count(@$sections_list) > 1){
