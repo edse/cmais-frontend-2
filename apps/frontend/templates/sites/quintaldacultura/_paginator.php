@@ -18,8 +18,9 @@
  
 	        <script>
 	          var i = <?php echo count($pager->getLinks()); ?>;
-	          var width = ($("#pgNumber").width() * i) + (10 * i) - 10;
-	          $('#pgContainer').css({'width':width,"margin":"0 auto"}) 
+	          console.log(i)
+	          //var width = ($("#pgNumber").width() * i) + (10 * i) - 10;
+	          //$('#pgContainer').css({'width':width,"margin":"0 auto"}) 
 	        </script>
         
         
