@@ -8,15 +8,12 @@
    }
    
   ?>
-  <nav class="header-bar">
+  <nav class="header-bar" accesskey="1" title="menu principal vila sesamo">
     <div class="content">
       <h1><a href="<?php echo $site->retriveUrl(); ?>" class="<?php echo $classLogo; ?>" title="Vila Sésamo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-vila-menu.jpg" alt="Vila Sésamo" /></a>
         <?php //echo $border ?>
       </h1>
       <ul>
-        
-        
-       
         <li class="btn-personagens" data-width="260" data-time="1000" data-back="500">
           <a href="<?php echo $site->retriveUrl(); ?>/personagens"  title="Personagens">
             <span class="texto">Personagens</span>

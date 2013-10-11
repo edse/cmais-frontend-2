@@ -1,7 +1,9 @@
-<!DOCTYPE html>
-<html xmls:lang="pt-br" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
+<!DOCTYPE html lang="pt-br">
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
   <head>
-
+    <?php include_title() ?>
+    <?php include_metas() ?>
+    <?php include_meta_props() ?>
     
     <!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->
      
@@ -30,10 +32,6 @@
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
     
-    <?php include_title() ?>
-    <?php include_metas() ?>
-    <?php include_meta_props() ?>
-   
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
 
     <meta property="fb:admins" content="100000889563712"/>
@@ -95,25 +93,33 @@
   <body>
     <!-- header -->
     <header class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner topo-cmais">
+      <!--div class="navbar-inner topo-cmais">
         <div class="container">
           <h2><a href="http://tvcultura.cmais.com.br/" title="TV Cultura" class="sprite-logo-cultura"></a></h2>
           <h1><a class="sprite-logo-cmais brand" href="http://cmais.com.br/" title="Cmais"></a></h1>     
         </div>
-      </div>
+      </div-->
+      <!--topo-vila-->
       <div class="navbar-inner topo-vila">
+        <!--/container-->
         <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <!--button-->          
+          <!--button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <i class="sprite-seta-up-menu"></i>
             <h1>Menu</h1>
-            
-          </button>
-         
-          <nav class="nav-collapse collapse">
+          </button-->
+          <!--button-->
+          
+          <!--nav--> 
+          <nav class="nav-collapse collapse" title="menu principal">
+            <!--form-->
             <form class="form-search">
-              <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';">
-              <button type="submit" class="btn sprite-icon-busca-hover" accesskey="p" value="Encontre no site" ></button>
+              <input type="text" class="input-medium search-query" accesskey="p" value="Encontre no site" onfocus="this.value='';">
+              <button type="submit" class="btn sprite-icon-busca-hover" value="Encontre no site" ></button>
             </form>
+            <!--/form-->
+            
+            <!--ul.nav-->
             <ul class="nav">
               <li>
                 <a href="/vilasesamo2/paraospais" title="Para os pais" target="_blank">Para adultos</a>
@@ -127,16 +133,15 @@
                 <a href="/vilasesamo2/historia" title="História" target="_blank">História</a>
               </li>            
             </ul>
-            
+            <!--ul.nav-->
           </nav>
+          <!--/nav-->
         </div>
+        <!--/container-->
       </div>
+      <!--/topo-vila-->
     </header>
     <!-- /header -->
-    <script>
-      //alert(screen.width);
-      
-    </script>
     
     <?php echo $sf_content ?>
     
