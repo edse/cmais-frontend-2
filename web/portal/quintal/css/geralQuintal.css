@@ -232,7 +232,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 .internas .navegacao li span { display: block; margin:0 5px; width:5px; float: left; }
 .internas .navegacao li { margin-bottom:0; }
 .internas .lista { width:761px; float:right; }
-.internas .conteudo h2 { font-size: 30px; clear:both;  color:#2b3377; width:67%; float:left; }
+.internas .conteudo h2 { font-size: 30px; clear:both;  color:#2b3377; /*width:67%;*/ width:100%; float:left; }
 .internas .lista h2 { margin-left:10px; }
 .internas .menu-quintal { position:relative; }
 .internas .conteudo form { position:absolute; top:0; right:0; }
