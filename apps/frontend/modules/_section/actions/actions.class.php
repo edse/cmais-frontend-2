@@ -1346,21 +1346,32 @@ class _sectionActions extends sfActions
 
     if($this->site->slug == 'quintaldacultura'){
       if(($sectionSlug == 'todos')||($sectionSlug == 'todas')||($sectionSlug == 'tudo')){
+       /* if($this->section->Parent->getSlug() == "imagens")
+          $sectionSlug = "imagem";
+        elseif($this->section->Parent->getSlug() == "baixar")
+          $sectionSlug = "baixar-content";
+       elseif($this->section->Parent->getSlug() == "jogos")
+          $sectionSlug = "jogosSubsection";
+        else*/
        if($this->section->Parent->getSlug() == "jogos")
+          //$sectionSlug = "jogosSubsection";
           $sectionSlug = "jogos";
 	   elseif($this->section->Parent->getSlug() == "videos")
           $sectionSlug = "videos";
 	   elseif($this->section->Parent->getSlug() == "diversao")
           $sectionSlug = "diversao";	   
         else
+          //$sectionSlug = substr($this->section->Parent->getSlug(),0,strlen($this->section->Parent->getSlug())-1);
 		$sectionSlug = "index";	 
       }else{
+        //if(in_array($sectionSlug, array('desafio','esportes','habilidade','educativos','aventura','peixonauta')))
+        
         if($this->section->Parent->slug == "jogoss")
           $sectionSlug = 'jogosSubsection';
         elseif(in_array($sectionSlug, array('artes','brincadeiras','receitas','experiencia')))
           $sectionSlug = 'diversao';
         elseif(in_array($sectionSlug, array('paracolorir','para-colorir','colorir')))
-          $sectionSlug = 'diversao';
+          $sectionSlug = 'diversaor';
         elseif(in_array($sectionSlug, array('papel-de-parede','folhinha','toque-para-celular','carinhas')))
           $sectionSlug = 'diversao';
         elseif($sectionSlug == 'videos'){
@@ -1377,9 +1388,11 @@ class _sectionActions extends sfActions
         }
 
 		if($this->site->slug == 'quintaldacultura'){
+			
 			if($this->section->slug == 'jogos')    $sections_list = array(92, 98, 99, 100, 101, 102);
 			if($this->section->slug == 'videos')   $sections_list = array(93, 940, 941, 942, 943, 952, 3169, 3170, 3171, 3172, 3173, 3174, 3175, 3176);
 			if($this->section->slug == 'diversao') $sections_list = array(3163, 3164, 97, 104, 105, 106, 107, 127, 765, 764, 762);
+			//if($this->section->slug == 'agenda') $sections_list = array(1000);
 			
 			if($this->section->Parent->slug == 'jogos') $sections_list = array($this->section->id);
 			if($this->section->Parent->slug == 'videos') $sections_list = array($this->section->id);
@@ -1389,24 +1402,28 @@ class _sectionActions extends sfActions
 			if($request->getParameter('search')) $this->term = $request->getParameter('search');
 			
 			if(count(@$sections_list) >= 1){
-			 $this->assetsQuery = Doctrine_Query::create()
-	          ->select('a.*')
-	          ->from('Asset a, SectionAsset sa, AssetVideo av')
-	          ->whereIn('sa.section_id', $sections_list)
-	          ->andWhere('sa.asset_id = a.id');
-	          //->orderBy('sa.id asc');
-	          
+				 $this->assetsQuery = Doctrine_Query::create()
+		          ->select('a.*');
+		          
 	          if($this->section->Parent->slug == 'videos' || $this->section->slug == 'videos'){
-	          	$this->assetsQuery->orderBy('av.youtube_id != "" ');
-	          	$this->assetsQuery->orderBy('a.id desc');
+				  $this->assetsQuery->from('Asset a, SectionAsset sa, AssetVideo av')
+				  ->whereIn('sa.section_id', $sections_list)
+				  ->andWhere('sa.asset_id = a.id')
+				  ->andWhere('av.asset_id = a.id')
+				  ->andWhere('av.youtube_id != ""')
+				  ->andWhere('a.is_active = ?', 1)
+				  ->orderBy('a.id desc');
 	          }else{
-	          	$this->assetsQuery->orderBy('rand()');	
+	          	$this->assetsQuery
+	          	  ->from('Asset a, SectionAsset sa')
+		          ->whereIn('sa.section_id', $sections_list)
+		          ->andWhere('sa.asset_id = a.id')
+				  ->andWhere('a.is_active = ?', 1)
+				  ->orderBy('rand()');
 	          }
-	          
-
-	          if($this->term != "")
-	            $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->term.'%', '%'.$this->term.'%'));
-	          $this->assetsQuery->andWhere('a.is_active = ?', 1);			  
+	          //if($this->term != "")
+	            //$this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->term.'%', '%'.$this->term.'%'));
+			  			  
 			} 
 			  
 		}
