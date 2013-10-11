@@ -1391,13 +1391,12 @@ class _sectionActions extends sfActions
 			if(count(@$sections_list) >= 1){
 			 $this->assetsQuery = Doctrine_Query::create()
 	          ->select('a.*')
-	          ->from('Asset a, SectionAsset sa, AssetVideo av')
+	          ->from('Asset a, SectionAsset sa')
 	          ->whereIn('sa.section_id', $sections_list)
 	          ->andWhere('sa.asset_id = a.id');
 	          //->orderBy('sa.id asc');
 	          
 	          if($this->section->Parent->slug == 'videos' || $this->section->slug == 'videos'){
-	          	$this->assetsQuery->orderBy('av.youtube_id != "" ');
 	          	$this->assetsQuery->orderBy('a.id desc');
 	          }else{
 	          	$this->assetsQuery->orderBy('rand()');	
