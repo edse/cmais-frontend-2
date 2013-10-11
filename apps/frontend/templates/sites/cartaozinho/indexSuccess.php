@@ -4,7 +4,18 @@
 ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
 ?>
-
+<?php
+$assets = Doctrine_Query::create()
+  ->select('a.*')
+  ->from('Asset a, SectionAsset sa, Section s')
+  ->where('a.id = sa.asset_id')
+  ->andWhere('s.id = sa.section_id')
+  ->andWhere('s.slug = "enquetes"')
+  ->andWhere('a.site_id = ?', (int)$site->id)
+  ->andWhere('a.asset_type_id = 10')
+  ->orderBy('a.id desc')
+  ->execute();
+?>
 <div class="bg-chamada">
   <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"]))
   ?>
@@ -30,16 +41,7 @@
               <?php
               //enquete
                
-              $assets = Doctrine_Query::create()
-                ->select('a.*')
-                ->from('Asset a, SectionAsset sa, Section s')
-                ->where('a.id = sa.asset_id')
-                ->andWhere('s.id = sa.section_id')
-                ->andWhere('s.slug = "enquetes"')
-                ->andWhere('a.site_id = ?', (int)$site->id)
-                ->andWhere('a.asset_type_id = 10')
-                ->orderBy('a.id desc')
-                ->execute();
+              
                 
      
               if($assets[0]->is_active): 
