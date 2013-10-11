@@ -149,12 +149,12 @@ cultura = {
         // Adiciona classe "ativo" no <li> clicado
         if(!$(this).hasClass('m_radio_am')){
           $(this).parent().addClass('ativo');
-        }
-        if (!$(this).parent().is(':nth-child(4)'))
-        {
-          $(this).next().find('.abas-conteudo .filho').css('display','none');
-          $(this).next().find('.abas-menu li:nth-child(2)').addClass('ativo');
-          $(this).next().find('.abas-conteudo li:first').addClass('ativo').css('display','block');
+          if (!$(this).parent().is(':nth-child(4)'))
+          {
+            $(this).next().find('.abas-conteudo .filho').css('display','none');
+            $(this).next().find('.abas-menu li:nth-child(2)').addClass('ativo');
+            $(this).next().find('.abas-conteudo li:first').addClass('ativo').css('display','block');
+          }
         }
       }
       
