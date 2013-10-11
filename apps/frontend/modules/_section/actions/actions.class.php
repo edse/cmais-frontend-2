@@ -1408,7 +1408,8 @@ class _sectionActions extends sfActions
 	          ->whereIn('sa.section_id', $sections_list)
 	          ->andWhere('sa.asset_id = a.id');
 	          //->orderBy('sa.id asc');
-	          
+	          $this->assetsQuery->andWhere('a.is_active = ?', 1);
+			  
 	          if($this->section->Parent->slug == 'videos' || $this->section->slug == 'videos'){
 				    $this->assetsQuery = Doctrine_Query::create()
 					  ->select('a.*')
@@ -1423,10 +1424,9 @@ class _sectionActions extends sfActions
 	          	$this->assetsQuery->orderBy('rand()');	
 	          }
 	          
-
-	          if($this->term != "")
-	            $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->term.'%', '%'.$this->term.'%'));
-	          $this->assetsQuery->andWhere('a.is_active = ?', 1);			  
+	          //if($this->term != "")
+	            //$this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->term.'%', '%'.$this->term.'%'));
+			  			  
 			} 
 			  
 		}
