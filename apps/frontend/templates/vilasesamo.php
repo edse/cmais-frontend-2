@@ -1,7 +1,9 @@
 <!DOCTYPE html lang="pt-br">
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
   <head>
-
+    <?php include_title() ?>
+    <?php include_metas() ?>
+    <?php include_meta_props() ?>
     
     <!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->
      
@@ -30,10 +32,6 @@
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
     
-    <?php include_title() ?>
-    <?php include_metas() ?>
-    <?php include_meta_props() ?>
-   
     <meta name="google-site-verification" content="sPxYSUnxlnoyUdly_hNwIHma64gh9iosgNcOBrZBYdo" />
 
     <meta property="fb:admins" content="100000889563712"/>
