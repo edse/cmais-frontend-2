@@ -220,7 +220,9 @@
       </div>
     </div> 
     <!-- /googleplus -->
-    
+    <style>
+      .span4.twitter iframe{height:270px;}
+    </style>
     <!-- twiter -->
     <div class="span4 twitter">
       <a class="twitter-timeline" href="https://twitter.com/culturabrasil2" data-widget-id="370274710744862720">Tweets by @culturabrasil2</a>
