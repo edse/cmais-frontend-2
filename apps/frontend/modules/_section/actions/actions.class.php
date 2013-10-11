@@ -1402,7 +1402,8 @@ class _sectionActions extends sfActions
 	          ->from('Asset a, SectionAsset sa')
 	          ->whereIn('sa.section_id', $sections_list)
 	          ->andWhere('sa.asset_id = a.id')
-	          ->orderBy('sa.id asc');
+	          //->orderBy('sa.id asc');
+	          ->orderBy('rand()');
 
 	          if($this->term != "")
 	            $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->term.'%', '%'.$this->term.'%'));
