@@ -223,3 +223,9 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
     width: 620px;
 }
 
+#barra-site .redes .curtir {
+    width: 207px;
+    float: left;
+    margin-left: 0;
+    text-align: left;
+}
