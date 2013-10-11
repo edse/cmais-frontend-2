@@ -14,11 +14,17 @@
               
           </li> 
         <?php endforeach; ?>
-        <script>
-          var i = <?php echo count($pager->getLinks()); ?>;
-          var width = ($("#pgNumber").width() * i) + (10 * i) - 10;
-          $('#pgContainer').css({'width':width,"margin":"0 auto"}) 
-        </script>
+        
+        <?php
+        /*CENTRALIZAR PÁGINAÇÃO 
+	        <script>
+	          var i = <?php echo count($pager->getLinks()); ?>;
+	          var width = ($("#pgNumber").width() * i) + (10 * i) - 10;
+	          $('#pgContainer').css({'width':width,"margin":"0 auto"}) 
+	        </script>
+		 */
+        ?>
+        
         
         <!--li><a href="javascript: goToPage(<?php //echo $pager->getNextPage() ?>);" class="paginacao" title="Próximo"><i class="sprite-seta-pag-dir"></i></a></li-->
         <li><a href="javascript: goToPage(<?php echo $pager->getLastPage() ?>);" class="sprite-seta-pag-dir" title="Última"></a></li>

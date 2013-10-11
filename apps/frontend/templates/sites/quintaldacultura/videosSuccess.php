@@ -182,6 +182,7 @@
 	}
 	if(getURLParameter("search") == "null" || getURLParameter("search") == ""){
 		$('#resultados_busca').show();
+		$('.paginacao').show();
 	}else{
 		$('#resultados_busca').hide();
 		$('#google_search').show();
