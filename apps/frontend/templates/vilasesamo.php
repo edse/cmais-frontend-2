@@ -3,7 +3,7 @@
   <head>
 
     
-    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->
      
     
     <!-- Le styles -->  
