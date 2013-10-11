@@ -1392,6 +1392,7 @@ class _sectionActions extends sfActions
 			if($this->section->slug == 'jogos')    $sections_list = array(92, 98, 99, 100, 101, 102);
 			if($this->section->slug == 'videos')   $sections_list = array(93, 940, 941, 942, 943, 952, 3169, 3170, 3171, 3172, 3173, 3174, 3175, 3176);
 			if($this->section->slug == 'diversao') $sections_list = array(3163, 3164, 97, 104, 105, 106, 107, 127, 765, 764, 762);
+			//if($this->section->slug == 'agenda') $sections_list = array(1000);
 			
 			if($this->section->Parent->slug == 'jogos') $sections_list = array($this->section->id);
 			if($this->section->Parent->slug == 'videos') $sections_list = array($this->section->id);
@@ -1405,9 +1406,15 @@ class _sectionActions extends sfActions
 	          ->select('a.*')
 	          ->from('Asset a, SectionAsset sa')
 	          ->whereIn('sa.section_id', $sections_list)
-	          ->andWhere('sa.asset_id = a.id')
+	          ->andWhere('sa.asset_id = a.id');
 	          //->orderBy('sa.id asc');
-	          ->orderBy('rand()');
+	          
+	          if($this->section->Parent->slug == 'videos'){
+	          	$this->assetsQuery->orderBy('a.id');
+	          }else{
+	          	$this->assetsQuery->orderBy('rand()');	
+	          }
+	          
 
 	          if($this->term != "")
 	            $this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->term.'%', '%'.$this->term.'%'));
