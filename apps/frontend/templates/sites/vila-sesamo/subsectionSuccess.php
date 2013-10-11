@@ -33,30 +33,36 @@
  
         <div class="tab-content">
           <div class="tab-pane active" id="clipes" class="aba1">
-            <?php if(isset($displays['destaque-1'])): ?>
-              <?php if(count($displays['destaque-1']) > 0): ?>
-            <article class="span6">
-              <a class="img-destaque" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-1'][0]->getTitle() ?>">
+            <article class="span6 clipes">
+              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
                 <span class="sprite-selo">Novidade!</span>
-                <img src="<?php echo $displays['destaque-1'][0]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" /> 
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
               </a> 
-              <h1><a href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-1'][0]->getTitle() ?>"><?php echo $displays['destaque-1'][0]->getTitle() ?></a></h1>
+              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
             </article>
-              <?php endif; ?>
-            <?php endif; ?>
+            <article class="span6 clipes">
+              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
+                <span class="sprite-selo">Novidade!</span>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
+              </a> 
+              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
+            </article>
           </div>
           <div class="tab-pane" id="episodios">
-            <?php if(isset($displays['destaque-2'])): ?>
-              <?php if(count($displays['destaque-2']) > 0): ?>
-            <article class="span6">
-              <a class="img-destaque" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-2'][0]->getTitle() ?>">
+            <article class="span6 clipes">
+              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
                 <span class="sprite-selo">Novidade!</span>
-                <img src="<?php echo $displays['destaque-2'][0]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" /> 
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
               </a> 
-              <h1><a href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-2'][0]->getTitle() ?>"><?php echo $displays['destaque-2'][0]->getTitle() ?></a></h1>
+              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
             </article>
-              <?php endif; ?>
-            <?php endif; ?>
+            <article class="span6 clipes">
+              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
+                <span class="sprite-selo">Novidade!</span>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
+              </a> 
+              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
+            </article>
           </div>
         </div>
        
