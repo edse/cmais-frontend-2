@@ -1391,7 +1391,7 @@ class _sectionActions extends sfActions
 			if(count(@$sections_list) >= 1){
 			 $this->assetsQuery = Doctrine_Query::create()
 	          ->select('a.*')
-	          ->from('Asset a, SectionAsset sa, av AssetVideo')
+	          ->from('Asset a, SectionAsset sa, AssetVideo av')
 	          ->whereIn('sa.section_id', $sections_list)
 	          ->andWhere('sa.asset_id = a.id');
 	          //->orderBy('sa.id asc');
