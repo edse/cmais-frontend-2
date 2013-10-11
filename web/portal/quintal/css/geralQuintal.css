@@ -341,6 +341,9 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #musicas #container { margin-right:25px; }
 #musicas div.jp-playlist ul { height:300px; overflow-x: hidden; overflow-y:scroll; }
 #musicas .jp-audio { float:right; }
+#musicas div.jp-interface { border:none; }
+#musicas div.jp-playlist, 
+#musicas div.jp-interface { background:#fffd00; }
 
 /* home */
 #destaque { width:960px; height:330px; background:url(../images/bg-destaque.png) no-repeat; position:relative; }
@@ -377,4 +380,6 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 .sem-margem-r{margin-right:0px;}
 .sem-margem-l{margin-left:0px;}
 .box-formatos-papel{display: block; overflow: hidden; margin:0 auto;width:735px;}
+
+
 
