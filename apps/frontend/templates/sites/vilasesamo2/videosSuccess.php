@@ -24,8 +24,8 @@
         </ul>
  
         <div class="tab-content">
-          <div class="tab-pane active">
-            <article class="span6">
+          <div class="tab-pane active" id="clipes" class="aba1">
+            <article class="span6 clipes">
               <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
                 <span class="sprite-selo">Novidade!</span>
                 <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 

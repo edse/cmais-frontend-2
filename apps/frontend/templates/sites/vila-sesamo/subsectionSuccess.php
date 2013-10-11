@@ -32,150 +32,82 @@
         <?php endif; ?>
  
         <div class="tab-content">
-          
-          <div class="tab-pane active" id="clipes" class="aba1">
-            <article class="span6 clipes">
-              
-              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
+          <div class="tab-pane active">
+            <?php if(isset($displays['destaque-1'])): ?>
+              <?php if(count($displays['destaque-1']) > 0): ?>
+            <article class="span6">
+              <a class="img-destaque" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-1'][0]->getTitle() ?>">
                 <span class="sprite-selo">Novidade!</span>
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
+                <img src="<?php echo $displays['destaque-1'][0]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" /> 
               </a> 
-              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
+              <h1><a href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-1'][0]->getTitle() ?>"><?php echo $displays['destaque-1'][0]->getTitle() ?></a></h1>
             </article>
-            <article class="span6 clipes">
-              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
+              <?php endif; ?>
+            <?php endif; ?>
+            <?php if(isset($displays['destaque-2'])): ?>
+              <?php if(count($displays['destaque-2']) > 0): ?>
+            <article class="span6">
+              <a class="img-destaque" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-2'][0]->getTitle() ?>">
                 <span class="sprite-selo">Novidade!</span>
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
+                <img src="<?php echo $displays['destaque-2'][0]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" /> 
               </a> 
-              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
+              <h1><a href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>" title="<?php echo $displays['destaque-2'][0]->getTitle() ?>"><?php echo $displays['destaque-2'][0]->getTitle() ?></a></h1>
             </article>
+              <?php endif; ?>
+            <?php endif; ?>
           </div>
-          <div class="tab-pane" id="episodios">
-            <article class="span6 clipes">
-              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
-                <span class="sprite-selo">Novidade!</span>
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
-              </a> 
-              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
-            </article>
-            <article class="span6 clipes">
-              <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
-                <span class="sprite-selo">Novidade!</span>
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
-              </a> 
-              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
-            </article>
-          </div>
-          
         </div>
-        
- 
        
       </div>
-      <nav class="span2">
-        <p>escolha por personagem<span class="sprite-seta-down"></span></p>
-        <ul class="filtro-personagem">
-          <ul class="filtro-personagem">
-         
-         <li>
-          <div class="inner bel">
-            <a href="/vilasesamo2/personagens/bel" title="Bel" class="btn-bel" data-filter=".bel">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="Personagem" />
-             </a>
-          </div>
-         </li>
-          <li>
-            <div class="inner beto">
-              <a href="/vilasesamo2/personagens/beto" title="Beto" class="btn-beto" data-filter=".beto"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/beto_personagem.png" alt="Personagem" /></a>
-            </div>
-          </li>
-          <li>
-            <div class="inner comecome">
-              <a href="/vilasesamo2/personagens/come-come" title="Come-come" class="btn-comecome" data-filter=".come-come"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/comecome_personagem.png" alt="Personagem" /></a>
-            </div>
-          </li>
-          <li>
-            <div class="inner elmo">
-              <a href="/vilasesamo2/personagens/elmo" title="Elmo" class="btn-elmo" data-filter=".elmo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/elmo_personagem.png" alt="Personagem" /></a>
-            </div>
-          </li>
-          <li>
-            <div class="inner enio">
-              <a href="/vilasesamo2/personagens/enio" title="Ênio" class="btn-enio" data-filter=".enio"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/enio_personagem.png" alt="Personagem" /></a>
-             </div>
-          </li>
-          <li>
-            <div class="inner garibaldo">
-              <a href="/vilasesamo2/personagens/garibaldo" title="Garibaldo" class="btn-garibaldo" data-filter=".garibaldo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/garibaldo_personagem.png" alt="Personagem" /></a>
-            </div>
-          </li>
-          <li>
-            <div class="inner grover">
-              <a href="/vilasesamo2/personagens/grover" title="Grover" class="btn-grover" data-filter=".grover"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/grover_personagem.png" alt="Personagem" /></a>
-            </div>
-          </li>
-          <li>
-            <div class="inner zoe">
-              <a href="/vilasesamo2/personagens/zoe" title="Zoe" class="btn-zoe" data-filter=".zoe"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/zoe_personagem.png" alt="Personagem" /></a>
-             </div>
-          </li>
-        </ul>
-        </ul>
-      </nav> 
+
+      <?php include_partial_from_folder('sites/vilasesamo', 'global/sidebar-personagens') ?>
+
     </div>
     
   </section>
   <span class="divisa"></span>
+  <?php if(isset($pager)): ?>
+    <?php if(count($pager) > 0): ?>
   <section class="todos-itens ">
     <ul  id="container" class="row-fluid">
-      <li class="span4 element beto">
-        <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
+      <?php foreach($pager->getResults() as $k=>$d): ?>
+        <?php
+          $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
+          $assetPersonagens = array();
+          $assetSections = $d->getSections();
+          foreach($assetSections as $a) {
+            if($a->getParentSectionId() == $personagensSection->getId()) {
+              $assetPersonagens[] = $a->getSlug();
+            }
+          }
+        ?>
+      <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?>">
+        <?php if($d->AssetType->getSlug() == "video"): ?>
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" /></a>
+        <?php else: ?>
+          <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
+        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" /></a>
+        <?php endif; ?>
+        <h2><a><?php echo $d->getTitle() ?></a></h2>
       </li>
-      <li class="span4 element come-come">
-        <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="span4 element elmo">
-        <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="span4 element enio">
-        <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="span4 element enio">
-        <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="element span4 garibaldo">
-        <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="element span4 grover">
-        <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="element span4 zoe">
-        <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="span4 element bel">
-        <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
+      <?php endforeach; ?>
     </ul>
   </section>
+    <?php endif; ?>
+  <?php endif; ?>  
   <span class="divisa"></span>
 </div>
 
 <input type="hidden" id="filter-choice" value="">
+
+<!--
 <nav id="page_nav">
   <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
 </nav>
+-->
+
 <!--scripts-->
 
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
-<script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script>
+<!--<script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script>-->
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
-
