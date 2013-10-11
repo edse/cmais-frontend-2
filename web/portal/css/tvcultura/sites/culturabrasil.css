@@ -155,6 +155,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 /* subsection */
  
 /* home */
+.span4.twitter iframe{height:250px;}
 .carousel-control {position: absolute;top: 50%; display:none;}
 .carousel-control.left{background: url(/portal/images/capaPrograma/culturabrasil/seta-esquerda.png) no-repeat;border: none;width: 55px;height: 55px;}
 .carousel-control.right{background: url(/portal/images/capaPrograma/culturabrasil/seta-direita.png) no-repeat;border: none;width: 55px;height: 55px;}
