@@ -26,8 +26,28 @@
                 .juiza-nova{display:block;width:312px; height:486px; position:absolute; top:71px; left: 0; background:url(/portal/images/capaPrograma/cartaozinho/gabi-estreia.png) no-repeat;}
                 .texto-novo{display:block; width:314px; height:66px; position:absolute; top:68px; left:277px; background:url(/portal/images/capaPrograma/cartaozinho/gabi-dona-da-bola.png) no-repeat;}
               </style>
-              <div class='juiza-nova'></div>
+              
+              <?php
+              //enquete
+               
+              $assets = Doctrine_Query::create()
+                ->select('a.*')
+                ->from('Asset a, SectionAsset sa, Section s')
+                ->where('a.id = sa.asset_id')
+                ->andWhere('s.id = sa.section_id')
+                ->andWhere('s.slug = "enquetes"')
+                ->andWhere('a.site_id = ?', (int)$site->id)
+                ->andWhere('a.asset_type_id = 10')
+                ->orderBy('a.id desc')
+                ->execute();
+                
+     
+              if($assets[0]->is_active): 
+              ?>
+                <a class="envie-sua-sugestao" href="<?php echo $assets[0]->retriveUrl(); ?>" title="Participe da nossa enquete!"></a>
+              <?php endif; ?>
               <!--div class='texto-novo'></div-->
+              <div class='juiza-nova'></div>
        <?php
 	       /*      
 	            }
@@ -156,25 +176,7 @@
         
           </a>
           
-          <?php
-          //enquete
-           
-          $assets = Doctrine_Query::create()
-            ->select('a.*')
-            ->from('Asset a, SectionAsset sa, Section s')
-            ->where('a.id = sa.asset_id')
-            ->andWhere('s.id = sa.section_id')
-            ->andWhere('s.slug = "enquetes"')
-            ->andWhere('a.site_id = ?', (int)$site->id)
-            ->andWhere('a.asset_type_id = 10')
-            ->orderBy('a.id desc')
-            ->execute();
-            
- 
-          if($assets[0]->is_active): 
-          ?>
-            <a class="envie-sua-sugestao" href="<?php echo $assets[0]->retriveUrl(); ?>" title="Participe da nossa enquete!"></a>
-          <?php endif; ?>
+          
           
           <?php 
           if(date('d')>=21){
