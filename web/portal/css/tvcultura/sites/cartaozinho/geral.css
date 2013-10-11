@@ -197,7 +197,8 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 
 .contato.sugestao h3 { background: url("/portal/images/capaPrograma/cartaozinho/envie-sua-sugestao.png") no-repeat scroll 10px 5px #2B8DB2; }
 .contato p { margin-left:10px; }
-.envie-sua-sugestao {  position:absolute; top:70px; left:54px; background:url(/portal/images/capaPrograma/cartaozinho/sugestao.png) no-repeat; width:240px; height:174px;  }
+/*.envie-sua-sugestao {  position:absolute; top:70px; left:54px; background:url(/portal/images/capaPrograma/cartaozinho/sugestao.png) no-repeat; width:240px; height:174px;  }*/
+.envie-sua-sugestao {  position:absolute; background:url(/portal/images/capaPrograma/cartaozinho/enquete-gabi.png) no-repeat;top: 29px;left: 218px;width: 394px;height: 118px; z-index: 100000; }
 
 .mande-seu-video { background:url(/portal/images/capaPrograma/cartaozinho/mande-seu-video.png) no-repeat; width:520px; height:156px; margin:-62px auto 0; display: block;}
 .mande-seu-video p { padding-top:30px; text-transform:uppercase; color:#fafa88; font-weight:bold;  }
