@@ -346,6 +346,26 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #musicas div.jp-interface { border:none; }
 #musicas div.jp-playlist, 
 #musicas div.jp-interface {background:url(../images/bg-amarelo50.png) repeat; }
+#musicas a.jp-play,
+#musicas a.jp-play:hover,
+#musicas a.jp-pause,
+#musicas a.jp-pause:hover, 
+#musicas a.jp-stop,
+#musicas a.jp-stop:hover,
+#musicas a.jp-previous,
+#musicas a.jp-previous:hover,
+#musicas a.jp-next, 
+#musicas a.jp-next:hover,
+#musicas div.jp-seek-bar,
+#musicas div.jp-play-bar,
+#musicas a.jp-mute,
+#musicas a.jp-mute:hover,
+#musicas a.jp-unmute,
+#musicas a.jp-unmute:hover,
+#musicas div.jp-volume-bar,
+#musicas div.jp-volume-bar-value,
+#musicas div.jp-video div.jp-video-play,
+#musicas div.jp-video div.jp-video-play:hover {background:url(../images/jcplayer.png) repeat; }
 
 /* home */
 #destaque { width:960px; height:330px; background:url(../images/bg-destaque.png) no-repeat; position:relative; }
