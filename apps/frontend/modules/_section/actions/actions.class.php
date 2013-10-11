@@ -1410,7 +1410,7 @@ class _sectionActions extends sfActions
 	          //->orderBy('sa.id asc');
 	          
 	          if($this->section->Parent->slug == 'videos' || $this->section->slug == 'videos'){
-	          	$this->assetsQuery->orderBy('a.id');
+	          	$this->assetsQuery->orderBy('a.id desc');
 	          }else{
 	          	$this->assetsQuery->orderBy('rand()');	
 	          }
