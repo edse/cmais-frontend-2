@@ -141,20 +141,20 @@ cultura = {
       // Remove todas as classes "ativo" nos elementos <li>
       $("ul#menu-portal").find("li").removeClass('ativo');
       
-      if(!$(this).hasClass('m_radio_am')){
-        // Verifica se o mï¿½dulo clicado estï¿½ aberto
-        if(!$(this).next().is(":visible")){
-          // Abre o mï¿½dulo clicado
-          $(this).next().slideDown("fast");
-          $(this).next().css("z-index","2000");
-          // Adiciona classe "ativo" no <li> clicado
+      // Verifica se o mï¿½dulo clicado estï¿½ aberto
+      if(!$(this).next().is(":visible")){
+        // Abre o mï¿½dulo clicado
+        $(this).next().slideDown("fast");
+        $(this).next().css("z-index","2000");
+        // Adiciona classe "ativo" no <li> clicado
+        if(!$(this).hasClass('m_radio_am')){
           $(this).parent().addClass('ativo');
-          if (!$(this).parent().is(':nth-child(4)'))
-          {
-            $(this).next().find('.abas-conteudo .filho').css('display','none');
-            $(this).next().find('.abas-menu li:nth-child(2)').addClass('ativo');
-            $(this).next().find('.abas-conteudo li:first').addClass('ativo').css('display','block');
-          }
+        }
+        if (!$(this).parent().is(':nth-child(4)'))
+        {
+          $(this).next().find('.abas-conteudo .filho').css('display','none');
+          $(this).next().find('.abas-menu li:nth-child(2)').addClass('ativo');
+          $(this).next().find('.abas-conteudo li:first').addClass('ativo').css('display','block');
         }
       }
       
