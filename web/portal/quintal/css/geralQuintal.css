@@ -367,6 +367,8 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #musicas div.jp-volume-bar-value,
 #musicas div.jp-video div.jp-video-play,
 #musicas div.jp-video div.jp-video-play:hover {background-image:url("http://tvcultura.cmais.com.br/portal/quintal/images/jcplayer.png"); }
+#musicas div.jp-audio div.jp-type-playlist div.jp-current-time, 
+#musicas div.jp-audio div.jp-type-playlist div.jp-duration,
 #musicas div.jp-type-playlist div.jp-playlist a,
 #musicas div.jp-type-playlist div.jp-playlist a:hover { color:#793785 !important; }
 #musicas div.jp-type-playlist div.jp-playlist li { border-bottom:1px solid #c7e51f; }
