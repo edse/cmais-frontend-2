@@ -365,7 +365,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #musicas div.jp-volume-bar,
 #musicas div.jp-volume-bar-value,
 #musicas div.jp-video div.jp-video-play,
-#musicas div.jp-video div.jp-video-play:hover {background:url(../images/jcplayer.png) repeat; }
+#musicas div.jp-video div.jp-video-play:hover {background:url(../images/jcplayer.png) no-repeat; }
 #musicas div.jp-type-playlist div.jp-playlist a,
 #musicas div.jp-type-playlist div.jp-playlist a:hover { color:#793785 !important; }
 
