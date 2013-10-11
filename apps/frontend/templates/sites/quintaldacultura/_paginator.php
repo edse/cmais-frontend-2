@@ -20,7 +20,7 @@
 	          $(function(){ 
   	          var i = <?php echo count($pager->getLinks()); ?>;
   	          //var width = ($("#pgNumber").width() * i) + (10 * i) - 10;
-  	          var width = $(".pgNumber").widt();
+  	          var width = $(".pgNumber").width();
   	          console.log(width);
   	          //$('#pgContainer').css({'width':width,"margin":"0 auto"})
 	          }); 
