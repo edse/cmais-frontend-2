@@ -110,42 +110,33 @@
             
           </ul>
           
-          <?php if(@$_GET["search"]): ?> 
-	          <h2><?php echo @$_GET["search"] ?></h2>
-		 <?php else: ?>	          
-	          <h2><?php echo $section->getTitle()?></h2>
-          <?php endif; ?>
+	      <h2 id="titulo_pagina"><?php echo $section->getTitle()?></h2>
           
           <!-- BUSCA -->
           <form id="busca" method="get">
-            <input type="text" name="search" id="search" placeholder="Pesquisar em Vídeos" value="Pesquisar em Vídeos" />
+            <input type="text" name="search" id="search" placeholder="Pesquisar" value="" />
             <button class="sprite-ico-busca"></button>
           </form>
           <!-- BUSCA -->
-          
-          
-          <ul class="assets">
-          	
-       	 <?php if(@$_GET["search"]):?>
-								 
-			<script>
-			  (function() {
-			    var cx = '005232987476052626260:czy5dx_z-m4';
-			    var gcse = document.createElement('script');
-			    gcse.type = 'text/javascript';
-			    gcse.async = true;
-			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-			        '//www.google.com/cse/cse.js?cx=' + cx;
-			    var s = document.getElementsByTagName('script')[0];
-			    s.parentNode.insertBefore(gcse, s);
-			  })();
-			</script>
-			<gcse:searchresults-only></gcse:searchresults-only>	 
-					 
-			</ul>
-					 
-		 <?php else: ?>
-		         	
+		
+		<ul class="assets">          
+          <div id="google_search" style="display:none">
+				<script>
+				  (function() {
+				    var cx = '005232987476052626260:czy5dx_z-m4';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:searchresults-only></gcse:searchresults-only>	 
+			</div>
+				
+			<div id="resultados_busca" style="display:none">			 
 		            <?php if(count($pager) > 0): ?>
 		              <?php foreach($pager->getResults() as $d): ?>
 		                <?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>
@@ -163,21 +154,41 @@
 		        		  	 </a>
 		                </li>
 		              <?php endforeach; ?>
-		              </ul>	
-		          	<?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
 		        	<?php endif; ?> 
-		          
-          
-          <?php endif;?>
-          
-        </div>
+        	</div>
+        </ul>
+		
+		<?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
+		        
+          </div>
         </div>
         <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
         </div>
-        
-        
-
         </div>
+        
+<script>
+	function ExecuteSearch(){
+		$("#busca").submit();
+	}
+
+	function getURLParameter(name) {
+	    return decodeURI(
+	        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+	    );
+	}
+	if(getURLParameter("search") == "null" || getURLParameter("search") == ""){
+		$('#resultados_busca').show();
+		$('.paginacao').show();
+	}else{
+		var busca = getURLParameter("search");
+		$('#titulo_pagina').text(busca);
+		$('#search').val(busca);
+		
+		$('#resultados_busca').hide();
+		$('#google_search').show();
+	}
+</script>
+              
 
       
 

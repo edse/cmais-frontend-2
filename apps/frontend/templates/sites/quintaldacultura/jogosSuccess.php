@@ -62,6 +62,7 @@
 
           <div class="conteudoWrapper">
             <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground') ?>
+       
         <ul class="sidebar">
           <li class="sprite-balao-categoria">Escolha por <br/>categoria</li>
           
@@ -73,79 +74,94 @@
           <li <?php if($section->getSlug() == "esportes") echo 'class="ativo" ';?>><a href="/quintaldacultura/jogos/esportes" title="Esportes">Esportes</a></li>
           <li <?php if($section->getSlug() == "gui-e-estopa") echo 'class="ativo" ';?>><a href="/quintaldacultura/jogos/gui-e-estopa" title="Gui e Estopa">Gui e Estopa</a></li>
           <li><a href="http://cmais.com.br/vilasesamo/jogos/index.html" title="Vila Sésamo">Vila Sésamo</a></li>
-         
         </ul>
+        
         <div class="lista">
           <ul class="navegacao">
             <li><a href="/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
             <?php if($section->getSlug() != "jogos" || @$_GET["search"] != "" ): ?>     
             	<li><span>/</span><a href="/quintaldacultura/jogos" title="Jogos">Jogos</a></li>
             <?php endif; ?>
-            
           </ul>
           
-          <?php if(@$_GET["search"]): ?> 
-	          <h2><?php echo @$_GET["search"] ?></h2>
-		 <?php else: ?>	          
-	          <h2><?php echo $section->getTitle()?></h2>
-          <?php endif; ?>
+		<h2 id="titulo_pagina"><?php echo $section->getTitle()?></h2>
           
-          
-         <form id="busca" method="get">
-            <input type="text" name="search" id="search" placeholder="Pesquisar em Vídeos" value="Pesquisar em Vídeos" />
+          <!-- BUSCA -->
+          <form id="busca" method="get">
+            <input type="text" name="search" id="search" placeholder="Pesquisar" value="" />
             <button class="sprite-ico-busca"></button>
           </form>
           <!-- BUSCA -->
-          
-          
-          <ul class="assets">
-          	
-       	 <?php if(@$term):?>
-								 
-			<script>
-			  (function() {
-			    var cx = '005232987476052626260:czy5dx_z-m4';
-			    var gcse = document.createElement('script');
-			    gcse.type = 'text/javascript';
-			    gcse.async = true;
-			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-			        '//www.google.com/cse/cse.js?cx=' + cx;
-			    var s = document.getElementsByTagName('script')[0];
-			    s.parentNode.insertBefore(gcse, s);
-			  })();
-			</script>
-			<gcse:searchresults-only></gcse:searchresults-only>	 
-					 
-			</ul>
-					 
-		 <?php else: ?>
-
-	            <?php if(count($pager) > 0): ?>
-	              <?php foreach($pager->getResults() as $d): ?>
-	                <?php $related = $d->retriveRelatedAssetsByRelationType('preview'); ?>
-	                <li>
-	                 	 <a href="/quintaldacultura<?php if($section->slug != "jogos") echo "/jogos/".$section->slug ?>/<?php echo $d->slug ?>" title="<?php echo $d->getTitle() ?>">
-		                      <?php if(strlen($d->getTitle()) > 19):?> 
-		                      	<h3><?php echo substr($d->getTitle(),0,15) ?>...</h3>
-							  <?php else: ?>
-							  	<h3><?php echo $d->getTitle() ?></h3>
-							  <?php	endif;?>
-		          			  <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>" alt="<?php echo $d->getTitle() ?>" />
-		          			  <p><?php echo $d->getDescription() ?></p>
-		          			  <p class="btn">Jogar</p>
-	        		  	 </a>
-	                </li>
-	              <?php endforeach; ?>
-	            <?php endif; ?>          	
-        	  </ul>
-	          <?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
-	       	  <?php endif; ?>
-         </div>
+		
+		<ul class="assets">          
+          	<div id="google_search" style="display:none">
+				<script>
+				  (function() {
+				    var cx = '005232987476052626260:czy5dx_z-m4';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:searchresults-only></gcse:searchresults-only>	 
+			</div>
+			
+			<div id="resultados_busca" style="display:none">
+		            <?php if(count($pager) > 0): ?>
+		              <?php foreach($pager->getResults() as $d): ?>
+		                <?php $related = $d->retriveRelatedAssetsByRelationType('preview'); ?>
+		                <li>
+		                 	 <a href="/quintaldacultura<?php if($section->slug != "jogos") echo "/jogos/".$section->slug ?>/<?php echo $d->slug ?>" title="<?php echo $d->getTitle() ?>">
+			                      <?php if(strlen($d->getTitle()) > 19):?> 
+			                      	<h3><?php echo substr($d->getTitle(),0,15) ?>...</h3>
+								  <?php else: ?>
+								  	<h3><?php echo $d->getTitle() ?></h3>
+								  <?php	endif;?>
+			          			  <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>" alt="<?php echo $d->getTitle() ?>" />
+			          			  <p><?php echo $d->getDescription() ?></p>
+			          			  <p class="btn">Jogar</p>
+		        		  	</a>
+		                </li>
+		              <?php endforeach; ?>
+		        	<?php endif; ?> 
+        	</div>
+        </ul>
+		
+		<?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
+		        
+          </div>
         </div>
         <?php include_partial_from_folder('sites/quintaldacultura', 'global/footer') ?>
         </div>
-
         </div>
+        
+<script>
+	function ExecuteSearch(){
+		$("#busca").submit();
+	}
+
+	function getURLParameter(name) {
+	    return decodeURI(
+	        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+	    );
+	}
+	if(getURLParameter("search") == "null" || getURLParameter("search") == ""){
+		$('#resultados_busca').show();
+		$('.paginacao').show();
+	}else{
+		var busca = getURLParameter("search");
+		$('#titulo_pagina').text(busca);
+		$('#search').val(busca);
+		
+		$('#resultados_busca').hide();
+		$('#google_search').show();
+	}
+</script>
+              
 
     </div>
 

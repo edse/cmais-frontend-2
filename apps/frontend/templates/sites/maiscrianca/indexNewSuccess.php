@@ -1,5 +1,4 @@
 <?php
-/*
 // ação temporária de férias
 $feriasSection = Doctrine_Query::create()
   ->select('s.*')
@@ -18,27 +17,6 @@ if($feriasSection)
   {
     foreach($feriasBlocks as $b)
       $feriasDisplays[$b->getSlug()] = $b->retriveDisplays();
-  }
-}
- */
-// ação temporária de férias
-$especial = Doctrine_Query::create()
-  ->select('s.*')
-  ->from('Section s')
-  ->where('s.site_id = ?', (int)$site->id)
-  ->andWhere('s.slug = "dia-das-criancas"')
-  ->andWhere('s.is_active = ?', 1)
-  ->orderBy('s.display_order ASC')
-  ->fetchOne();
-
-if($especial)
-{
-  $especialBlocks = $especial->Blocks;
-  $especialDisplays = array();
-  if(count($especialBlocks) > 0)
-  {
-    foreach($especialBlocks as $b)
-      $especialDisplays[$b->getSlug()] = $b->retriveDisplays();
   }
 }
 ?>
@@ -66,21 +44,13 @@ if($especial)
     
   <div class="row-fluid" id="menu">
     <div class="span12">
-      <ul id="myTab" class="nav nav-tabs">
-        <?php
-        /* 
+      <ul id="myTab" class="nav nav-tabs"> 
         <?php if($feriasSection): ?>
         <li class="ferias active"><a href="#ferias" data-toggle="tab"><p>Férias</p></a></li>
         <?php endif; ?>
-         */
-        ?>
-        <?php if($especial): ?>
-        <li class="ferias active"><a href="#ferias" data-toggle="tab"><p><?php echo $especial->getTitle() ?></p></a></li>
-        <?php endif; ?>
         <?php if(isset($displays['destaque-principal-1'])): ?>
           <?php if(count($displays['destaque-principal-1']) > 0): ?>
-        <!--li class="joguinhos<?php if(!$feriasSection): ?> active<?php endif; ?>"><a href="#home" data-toggle="tab"><p><?php echo $displays['destaque-principal-1'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li-->
-        <li class="joguinhos<?php if(!$especial): ?> active<?php endif; ?>"><a href="#home" data-toggle="tab"><p><?php echo $displays['destaque-principal-1'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li>
+        <li class="joguinhos<?php if(!$feriasSection): ?> active<?php endif; ?>"><a href="#home" data-toggle="tab"><p><?php echo $displays['destaque-principal-1'][0]->Block->getTitle() ?></p><span class="ativo"></span></a></li>
           <?php endif; ?>
         <?php endif; ?>
         <?php if(isset($displays['destaque-principal-2'])): ?>
@@ -90,7 +60,6 @@ if($especial)
         <?php endif; ?>
       </ul>
       <div id="myTabContent" class="tab-content">
-        <?php /*
         <?php if($feriasSection): ?>
         <div class="tab-pane fade active in" id="ferias">
           
@@ -196,60 +165,10 @@ if($especial)
           
         </div>
         <?php endif; ?>
-        */ ?>
-
-
-        <?php if($especial): ?>
-        <div class="tab-pane fade active in" id="ferias">
-          
-          <script>
-            function changeVideo(id) {
-              $('#player').html('<iframe id="video-charada" width="930" height="689" src="http://www.youtube.com/embed/'+id+'?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>');
-            }
-          </script>
-          
-          <?php if($especialDisplays['destaques']): ?>
-
-          <!--span class="barra"></span-->
-            
-            <?php if(count($especialDisplays['destaques']) > 0): ?>
-          <div class="span12">
-            <h2><?php echo $especialDisplays['destaques'][0]->Block->getTitle() ?></h2>
-            
-            <div id="player">
-              <iframe id="video-charada" title="<?php echo $especialDisplays['destaques'][0]->getTitle() ?>" width="930" height="689" src="http://www.youtube.com/embed/<?php echo $especialDisplays['destaques'][0]->Asset->AssetVideo->getYoutubeId(); ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-            </div>
-            
-          </div>
-          
-              <?php if(count($especialDisplays['destaques']) > 1): ?>
-          <div class="span12">
-            <div class="carrossel">
-              <ul class="row-fluid span12">
-                <?php foreach($especialDisplays['destaques'] as $d): ?>
-                <li>
-                  <a href="javascript: changeVideo('<?php echo $d->Asset->AssetVideo->getYoutubeId(); ?>')" title="<?php echo $d->getTitle() ?>">
-                    <img src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
-                  </a>
-                </li>
-                <?php endforeach; ?>
-              </ul>
-            </div>
-          </div>
-              <?php endif; ?>
-            <?php endif; ?>
-          <?php endif; ?>
-          
-        </div>
-        <?php endif; ?>
-
-
-
              
         <?php if(isset($displays['destaque-principal-1'])): ?>
           <?php if(count($displays['destaque-principal-1']) > 0): ?>
-        <!--div class="tab-pane fade<?php if(!$feriasSection): ?> active in<?php endif; ?>" id="home"-->
-        <div class="tab-pane fade<?php if(!$especial): ?> active in<?php endif; ?>" id="home">
+        <div class="tab-pane fade<?php if(!$feriasSection): ?> active in<?php endif; ?>" id="home">
           <ul class="lista">
             <?php foreach($displays['destaque-principal-1'] as $k=>$d): ?>
             <li class="span3">
@@ -284,26 +203,6 @@ if($especial)
         </div>
           <?php endif; ?>
         <?php endif; ?>
-        
-        <?php if(isset($displays['destaque-principal-3'])): ?>
-          <?php if(count($displays['destaque-principal-3']) > 0): ?>
-        <div class="tab-pane fade" id="diadascriancas">
-          <ul class="lista">
-            <?php foreach($displays['destaque-principal-3'] as $k=>$d): ?>
-            <li class="span3">
-              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                <?php if($d->retriveImageUrlByImageUsage("image-2-b") != ""): ?>
-                <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>" />
-                <?php endif; ?>
-                <p><?php echo $d->getTitle() ?></p> 
-              </a>
-            </li>
-            <?php endforeach; ?>
-          </ul>
-        </div>
-          <?php endif; ?>
-        <?php endif; ?>
-        
       </div>
       <div class="pontilhado row-fluid span12"></div>
     </div>

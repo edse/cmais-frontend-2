@@ -15,18 +15,36 @@
     $('.filtro-personagem a').click(function(){
 
       filter_selected = "";
-      $(this).parent().toggleClass("ativo");
+      $(this).parent().parent().toggleClass("ativo");
       
       $('.filtro-personagem li.ativo').each(function(i){
         if(i > 0){
           filter_selected += ",";
         }
         filter_selected += $(this).find('a').attr('data-filter');
-        
       });
 
       $container.isotope({ filter:filter_selected });
+      
+      if($(this).parent().parent().hasClass('ativo')){
+        console.log("tenho")
+        $(this).find('img').css('top','33px!important');
+      }
       return false;
+    });
+    
+    $('.inner a').mouseenter(function(){
+     if($(this).parent().hasClass('jogos')){ 
+      $(this).find('img').animate({top:-33, easing:"swing"},'fast');
+     }else{
+      $(this).find('img').animate({top:-25, easing:"swing"},'fast');  
+     }
+    });
+    $('.inner a').mouseleave(function(){
+      if(!$(this).parent().parent().hasClass('ativo')){
+        $(this).find('img').stop();
+        $(this).find('img').animate({top:0, easing:"swing"},'fast'); 
+      } 
     });
     /*
     $container.infinitescroll({

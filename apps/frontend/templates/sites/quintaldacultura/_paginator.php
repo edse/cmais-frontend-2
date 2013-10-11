@@ -1,24 +1,30 @@
 <?php if(isset($pager)): ?>
   <?php if($pager->haveToPaginate()): ?>
   <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
-  <div class="paginacao">
+  <div class="paginacao" style="display: none">
       <ul id="pgContainer">
         <li><a href="javascript: goToPage(<?php echo $pager->getFirstPage() ?>);" class="sprite-seta-pag-esq" title="Primeira"></a></li>
         <!--li><a href="javascript: goToPage(<?php //echo $pager->getPreviousPage() ?>);" class="sprite-seta-pag-esq"  title="Anterior"><i class="icon-backward"></i></a></li-->
         <?php $i=0; ?>
         <?php foreach ($pager->getLinks() as $page): ?>
-          <li id="pgNumber" <?php if($i == 4 ):?>style="margin:0!important;"<?php endif; if ($page == $pager->getPage()): ?>class="ativo"<?php endif; ?>>
+          
+          <li id="pgNumber" <?php if($i == 4 || $i == $pager->getLastPage() - 1):?>style="margin:0!important;"<?php endif; if ($page == $pager->getPage()): ?>class="ativo"<?php endif; ?>>
             <a <?php if($i == 2 ):?>style="width:21px!important;"<?php endif; ?> href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a>
-            <?php if($i < 4 ):?><span>.</span><?php endif; ?>
+            <?php if( $i < 4 && $i != $pager->getLastPage() -1):?><span>.</span><?php endif; ?>
             <?php $i++; ?>  
               
           </li> 
         <?php endforeach; ?>
-        <script>
-          var i = <?php echo count($pager->getLinks()); ?>;
-          var width = ($("#pgNumber").width() * i) + (10 * i) - 10;
-          $('#pgContainer').css({'width':width,"margin":"0 auto"}) 
-        </script>
+        
+ 
+	        <script>
+	          $(function(){ 
+  	          var i = <?php echo count($pager->getLinks()); ?>;
+  	          var width = ($("#pgNumber").width() * i) + (10 * i) - 10;
+  	          $('#pgContainer').css({'width':width,"margin":"0 auto"})
+	          }); 
+	        </script>
+        
         
         <!--li><a href="javascript: goToPage(<?php //echo $pager->getNextPage() ?>);" class="paginacao" title="Próximo"><i class="sprite-seta-pag-dir"></i></a></li-->
         <li><a href="javascript: goToPage(<?php echo $pager->getLastPage() ?>);" class="sprite-seta-pag-dir" title="Última"></a></li>

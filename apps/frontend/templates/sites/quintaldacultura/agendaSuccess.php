@@ -98,28 +98,22 @@
               <!-- menu-->
               <div class="menu-quintal">
                 <ul class="navegacao">
-                  <li><a href="/quintaldacultura/jogos" title="Quintal da Cultura">Quintal da Cultura</a></li>
+                  <li><a href="/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
 			            <?php if($section->getSlug() != "agenda" || @$term != "" ): ?>     
 			            	<li><span>/</span><a href="/quintaldacultura/agenda" title="Agenda">Agenda</a></li>
 			            <?php endif; ?>
                 </ul>
                 
-				 <?php if(@$term): ?> 
-			          <h2><?php echo @$term ?></h2>
-				 <?php else: ?>	          
-			          <h2><?php echo $section->getTitle()?></h2>
-		         <?php endif; ?>
+				<h2 id="titulo_pagina"><?php echo $section->getTitle()?></h2>
                 
 		          <form id="busca">
-		            <input type="text" name="search" id="search" placeholder="Pesquisar" value="Pesquisar" />
+		            <input type="text" name="search" id="search" placeholder="Pesquisar" value="" />
 		            <button class="sprite-ico-busca"></button>
 		          </form>       
               </div>
-              <!-- /menu-->
+            
+            <div id="google_search" style="display:none">  
               <ul class="box-content">
-		       	 
-		   <?php if(@$term):?>
-										 
 					<script>
 					  (function() {
 					    var cx = '005232987476052626260:czy5dx_z-m4';
@@ -133,29 +127,52 @@
 					  })();
 					</script>
 					<gcse:searchresults-only></gcse:searchresults-only>	 
-							 
-					</ul>
-      		<?php else: ?>        	
-              	<?php if(count($pager) > 0): ?>
-	              <?php foreach($pager->getResults() as $d): ?>
-	                <li>
-	                  <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle() ?>">
-	                    <h2><?php echo $d->getTitle() ?></h2>
-	                    <small><?php echo format_date($d->getCreatedAt(), "g") ?></small>
-	                    <p><?php echo html_entity_decode($d->AssetContent->getHeadlineLong())?></p>
-	                  </a>
-	                  <div class="divisa"></div>
-	                </li>
-	              <?php endforeach; ?>
-	            <?php endif; ?>          	
-
+				</ul>
+			</div>
+			
+			<div id="resultados_busca" style="display:none">
+				<ul class="box-content">
+	              	<?php if(count($pager) > 0): ?>
+		              <?php foreach($pager->getResults() as $d): ?>
+		                <li>
+		                  <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle() ?>">
+		                    <h2><?php echo $d->getTitle() ?></h2>
+		                    <small><?php echo format_date($d->getCreatedAt(), "g") ?></small>
+		                    <p><?php echo html_entity_decode($d->AssetContent->getHeadlineLong())?></p>
+		                  </a>
+		                  <div class="divisa"></div>
+		                </li>
+		              <?php endforeach; ?>
+		            <?php endif; ?>          	
                  </ul>
                  <?php include_partial_from_folder('sites/quintaldacultura', 'global/paginator', array('page' => $page, 'pager' => $pager)) ?>
-   			<?php endif; ?>          	
-                 
               </div>
+              
             </div>
+			</div>
 
+<script>
+	function ExecuteSearch(){
+		$("#busca").submit();
+	}
+
+	function getURLParameter(name) {
+	    return decodeURI(
+	        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+	    );
+	}
+	if(getURLParameter("search") == "null" || getURLParameter("search") == ""){
+		$('#resultados_busca').show();
+		$('.paginacao').show();
+	}else{
+		var busca = getURLParameter("search");
+		$('#titulo_pagina').text(busca);
+		$('#search').val(busca);
+		
+		$('#resultados_busca').hide();
+		$('#google_search').show();
+	}
+</script>
 
             <div class="col-dir">
               <div class="leiamais">Para os Pais</div>
