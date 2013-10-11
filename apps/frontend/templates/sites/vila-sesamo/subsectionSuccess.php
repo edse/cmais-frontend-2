@@ -32,7 +32,7 @@
         <?php endif; ?>
  
         <div class="tab-content">
-          <div class="tab-pane active">
+          <div class="tab-pane active" id="clipes" class="aba1">
             <?php if(isset($displays['destaque-1'])): ?>
               <?php if(count($displays['destaque-1']) > 0): ?>
             <article class="span6">
@@ -44,6 +44,8 @@
             </article>
               <?php endif; ?>
             <?php endif; ?>
+          </div>
+          <div class="tab-pane" id="episodios">
             <?php if(isset($displays['destaque-2'])): ?>
               <?php if(count($displays['destaque-2']) > 0): ?>
             <article class="span6">
