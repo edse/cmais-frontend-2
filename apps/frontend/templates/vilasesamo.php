@@ -104,14 +104,14 @@
         <!--/container-->
         <div class="container">
           <!--button-->          
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <!--button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <i class="sprite-seta-up-menu"></i>
             <h1>Menu</h1>
-          </button>
+          </button-->
           <!--button-->
           
           <!--nav--> 
-          <nav class="nav-collapse collapse">
+          <nav class="nav-collapse collapse" title="menu principal">
             <!--form-->
             <form class="form-search">
               <input type="text" class="input-medium search-query" accesskey="p" value="Encontre no site" onfocus="this.value='';">
