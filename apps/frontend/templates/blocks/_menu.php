@@ -150,8 +150,8 @@
                     <p>escolha uma esta&ccedil;&atilde;o</p>
                     <span></span>
                   </li>
-                  <li class="radio-cb"><a href="javascript:;" title="R&aacute;dio Cultura Brasil" class="m_radio_am">Cultura Brasil</a><span class="decoracao"></span></li>
-                  <li class="radio-fm"><a href="javascript:;" title="R&aacute;dio FM" class="m_radio_fm">Cultura FM</a><span class="decoracao"></span></li>
+                  <li class="radio-cb"><a href="http://culturabrasil.cmais.com.br" title="R&aacute;dio Cultura Brasil" class="m_radio_am">Cultura Brasil</a><span class="decoracao"></span></li>
+                  <li class="radio-fm"><a href="http://culturafm.cmais.com.br" title="R&aacute;dio FM" class="m_radio_fm">Cultura FM</a><span class="decoracao"></span></li>
                   <!--li class="radio-rtb"><a href="#radio-rtb"  title="R&aacute;dio R&aacute; Tim Bum">R&aacute;dio R&aacute; Tim Bum</a><span class="decoracao"></span></li>
                   <li class="radio-cocorico"><a href="#radio-cocorico" title="TV R&aacute; Tim Bum">R&aacute;dio Cocoric&oacute;</a><span class="decoracao"></span></li-->
                 </ul>

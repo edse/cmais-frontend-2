@@ -331,7 +331,7 @@ $(function(){ //onready
     $('#tvrtb').html(m_tv_tvcultura);
     $('#tvrtb').show();
   });
-  
+  /*
   $('.m_radio_am').click(function(){
     if(m_radio_am == ""){
       $.ajax({
@@ -366,7 +366,7 @@ $(function(){ //onready
     $('#radio-fm').html(m_radio_fm);
     $('#radio-fm').show();
   });
-  
+  */
   $('.m_ar_tvcultura').click(function(){
     if(m_ar_tvcultura == ""){
       $.ajax({
