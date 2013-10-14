@@ -183,10 +183,10 @@
           <div class="mapa">
             
             <!--nav sites Vila Sesamo-->
-            <nav class="span12" title="Sites Vila Sésamo">
-              <a href="/vilasesamo2/videos" name="jogos" class="col-esq" alt="">Jogos</a>
-              <a href="/vilasesamo2/videos" class="col-central" alt=""><span class="sprite-destalhe-amarelo2"></span>Vídeos</a>
-              <a href="/vilasesamo2/videos" class="col-dir" alt=""><span class="sprite-destalhe-amarelo1"></span>Atividades</a>
+            <nav class="span12" title="Sites Vila Sésamo" role="presentation">
+              <a href="/vilasesamo2/videos" class="col-esq">Jogos</a>
+              <a href="/vilasesamo2/videos" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Vídeos</a>
+              <a href="/vilasesamo2/videos" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>Atividades</a>
             </nav>
             <!--nav sites Vila Sesamo-->
             
