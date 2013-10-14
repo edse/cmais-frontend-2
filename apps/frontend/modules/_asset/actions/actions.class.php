@@ -996,15 +996,15 @@ class _assetActions extends sfActions
 
       if($this->asset->getId() == 59156){
         if($debug) print "<br>5-5>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/assets/quebra-cabeca-1Success.php';
-        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/assets/quebra-cabeca-1');
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/diversao-content');
       }
       elseif($this->asset->getSlug() == 'album-de-ferias'){
         if($debug) print "<br>5-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/assets/album-de-ferias';
-        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/assets/album-de-ferias');
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/diversao-content');
       }
       elseif($this->asset->getId() == 49018){
       	if($debug) print "<br>5-4>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/assets/test-8';
-      	$this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/assets/test-8');
+      	$this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/diversao-content');
       }
       elseif(($slug == "image-gallery")||($slug == "image")){
         if($debug) print "<br>5-0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/imagem';
