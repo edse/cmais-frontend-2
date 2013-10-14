@@ -33,7 +33,7 @@
       </div>
         <!--topo menu/alert/logo-->
       
-      <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'artist' => $artist)) ?>
+      <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'artist' => @$artist)) ?>
       
       <!--topo Artista/contagem-->
       <div id="row-fluid">
@@ -42,7 +42,7 @@
             <?php if(isset($letter)):?>
               <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
             <?php else:?>
-              <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small>
+              <!--small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small-->
             <?php endif; ?>  
             <div class="span5 pull-right">
               <!--busca-->
@@ -75,7 +75,7 @@
           <a class="avancar" href="javascript:postGoogle();">Avançar</a>
         </div>  
         <!--/modal google-->
-      <?php if($artist == ""): ?>
+      <?php if(@$artist == ""): ?>
       <!--letras-->
       <div class="row-fluid pagination pagination-centered">
         <ul>
