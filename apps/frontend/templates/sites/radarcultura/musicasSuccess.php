@@ -33,7 +33,7 @@
       </div>
         <!--topo menu/alert/logo-->
       
-      <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'artist' => @$artist)) ?>
+      <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'artist' => $artist)) ?>
       
       <!--topo Artista/contagem-->
       <div id="row-fluid">
@@ -46,11 +46,11 @@
             <?php endif; ?>  
             <div class="span5 pull-right">
               <!--busca-->
-              <form action="" method="get" id="busca-radar" name="busca-radar">
+              <form action="" method="get" id="busca-radar">
                 <div class="row-fluid">
                   <input class="btn pull-right btn-busca" type="submit" value="Busca">
                   <div class="input-prepend">
-                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" value="" /> <span class="add-on pull-right"><i class="icon-search"></i></span>
+                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" /><span class="add-on pull-right"><i class="icon-search"></i></span>
                   </div>
                 </div>  
               </form>
@@ -75,7 +75,7 @@
           <a class="avancar" href="javascript:postGoogle();">Avançar</a>
         </div>  
         <!--/modal google-->
-      <?php if(@$artist == ""): ?>
+      <?php if($artist == ""): ?>
       <!--letras-->
       <div class="row-fluid pagination pagination-centered">
         <ul>
@@ -308,7 +308,7 @@
         <script src="http://cmais.com.br/portal/js/messages_ptbr.js" type="text/javascript"></script>
         <script type="text/javascript">
         $(document).ready(function(){
-
+		  /*	
           $('#busca-radar').submit(function() {
             if($("#busca-por1").is(':checked'))
               self.location.href = "/musicas/busca-por/"+$('#busca-input').val();
@@ -316,7 +316,7 @@
               self.location.href = "/artistas/busca-por/"+$('#busca-input').val();
             return false;
           });                    
-          
+          */
           var validator = $('#form-indicacao').validate({
             rules:{
               nome:{
