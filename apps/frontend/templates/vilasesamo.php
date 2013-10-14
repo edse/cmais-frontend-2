@@ -146,56 +146,86 @@
     
     <?php echo $sf_content ?>
     
+    <!--footer-->
     <footer>
-      <div class="copyright"><small>© 2013 - Vila Sésamo</small></div>
+      
+      <div class="copyright">
+        <small>© 2013 - Vila Sésamo</small>
+      </div>
+      
+      <!--container-->
       <div class="container row-fluid">
-      <section>
-        <ul class="logos">
-          <li class="col-esq">
-            <a href="http://cmais.com.br/vilasesamo2" title="Vila Sésamo">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="Vila Sésamo" />
-            </a>
-          </li>
-          <li class="col-central">
-            <a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-habitos-saudaveis.png" alt="Hábitos Saudáveis" />
-            </a>
-          </li>
-          <li class="col-dir"><a href="/vilasesamo2/incluirbrincando" title="Incluir Brincando">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-incluir-grd.png" alt="Incluir Brincando" />
-            </a>
-          </li>
-          <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt=""/>
-        </ul>
-        <div class="mapa">
+        
+        <!--section-->  
+        <section>
           
-          <div class="span12">
-            <a href="/vilasesamo2/videos" class="col-esq">Jogos</a>
-            <a href="/vilasesamo2/videos" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Vídeos</a>
-            <a href="/vilasesamo2/videos" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>Atividades</a>
+          <!--logos-->
+          <ul class="logos">
+            <li class="col-esq">
+              <a href="http://cmais.com.br/vilasesamo2" title="Vila Sésamo">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="Vila Sésamo" />
+              </a>
+            </li>
+            <li class="col-central">
+              <a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-habitos-saudaveis.png" alt="Hábitos Saudáveis" />
+              </a>
+            </li>
+            <li class="col-dir"><a href="/vilasesamo2/incluirbrincando" title="Incluir Brincando">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-incluir-grd.png" alt="Incluir Brincando" />
+              </a>
+            </li>
+            <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt="" />
+          </ul>
+          <!--/logos-->
+          
+          <!--mapa-->
+          <div class="mapa">
+            
+            <!--nav sites Vila Sesamo-->
+            <nav class="span12" title="Sites Vila Sésamo">
+              <a href="/vilasesamo2/videos" class="col-esq">Jogos</a>
+              <a href="/vilasesamo2/videos" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Vídeos</a>
+              <a href="/vilasesamo2/videos" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>Atividades</a>
+            </nav>
+            <!--nav sites Vila Sesamo-->
+            
+            <!--nav Personagens-->
+            <nav class="span12" title="Menu Personagens">
+              <h2>Personagens:</h2>
+              <ul>
+                <li>
+                  <a href="/vilasesamo2/personagens/garibaldo" title="Garibaldo">Garibaldo,</a>
+                </li>
+                <li>
+                  <a href="/vilasesamo2/personagens/bel" title="Bel">Bel,</a>
+                </li>
+                <li>
+                  <a href="/vilasesamo2/personagens/elmo" title="Elmo">Elmo,</a>
+                </li>
+                <li><a href="/vilasesamo2/personagens/grover" title="Grover">Grover,</a></li>
+                <li><a href="/vilasesamo2/personagens/beto" title="Beto">Beto,</a></li>
+                <li><a href="/vilasesamo2/personagens/enio" title="Ênio">Ênio,</a></li>
+                <li><a href="/vilasesamo2/personagens/comecome" title="Come-Come">Come-Come,</a></li>
+                <li><a href="/vilasesamo2/personagens/zoe" title="Zoe">Zoe</a></li>
+              </ul>
+            </nav>
+            <!--/nav Personagens-->
+            
+            <!--nav-->
+            <nav class="span12">
+              <a href="/vilasesamo2/atividades" class="col-esq" title="">Para adultos</a>
+              <a href="/vilasesamo2/atividades" class="col-central" title=""><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
+              <a href="/vilasesamo2/atividades" class="col-dir" title=""><span class="sprite-destalhe-amarelo1"></span>História</a>
+            </nav>
+            <!--/nav-->
+                  
           </div>
-          <div href="/vilasesamo2/personagens" class="span12">
-            <h2>Personagens:</h2>
-            <ul>
-              <li><a href="/vilasesamo2/personagens/garibaldo" title="Garibaldo">Garibaldo,</a></li>
-              <li><a href="/vilasesamo2/personagens/bel" title="Bel">Bel,</a></li>
-              <li><a href="/vilasesamo2/personagens/elmo" title="Elmo">Elmo,</a></li>
-              <li><a href="/vilasesamo2/personagens/grover" title="Grover">Grover,</a></li>
-              <li><a href="/vilasesamo2/personagens/beto" title="Beto">Beto,</a></li>
-              <li><a href="/vilasesamo2/personagens/enio" title="Ênio">Ênio,</a></li>
-              <li><a href="/vilasesamo2/personagens/comecome" title="Come-Come">Come-Come,</a></li>
-              <li><a href="/vilasesamo2/personagens/zoe" title="Zoe">Zoe</a></li>
-            </ul>
-          </div>
-          <div class="span12">
-            <a href="/vilasesamo2/atividades" class="col-esq">Para adultos</a>
-            <a href="/vilasesamo2/atividades" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
-            <a href="/vilasesamo2/atividades" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>História</a>
-          </div>
-                
-        </div>
-        <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" />
-      </section>
+          <!--/mapa-->
+          
+          <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt="" />
+        </section>
+        <!--/section-->
       <section class="relacionados">
         <h3>Sites relacionados</h3>
         <ul>
@@ -210,7 +240,10 @@
         </ul>
       </section>
       </div>
+      <!--/container-->
+      
     </footer>
+    <!--/footer-->
     
     <!-- scripts -->
     <script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/vilasesamo.js"></script>
