@@ -90,15 +90,15 @@ $(function(){
             <div id="galeria-videos" class="abas-conteudo conteudo-rodape grid3">
               
               <div class="busca">
-                <form id="busca-galeria" name="busca" action="" method="post">
+                <form id="busca-galeria" name="busca" action="" method="get">
                   <label class="busque">Busque por <span>palavra-chave</span></label>
-                  <input type="text" class="campo-busca" name="busca" id="campo-busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca']; ?>"/>
+                  <input type="text" class="campo-busca" name="busca" id="campo-busca" value=""/>
                   <input type="submit" class="buscar" name="buscar" id="buscar" value="buscar" style="cursor:pointer" />
                 </form>
               </div>
               
               <div id="todas" class="filho blocos" style="display:block;">
-                <div class="capa">
+                <div class="capa" style="display: none">
                   <ul>
                   <?php if(count($pager) > 0): ?>
                     <?php foreach($pager->getResults() as $d): ?>
@@ -110,74 +110,86 @@ $(function(){
                   <?php endif; ?>
                   </ul>
                 </div>
+                
+                <div id="google_search" style="display:none">
+	                <script>
+					  (function() {
+					    var cx = '005232987476052626260:vi5b5ziiyl0';
+					    var gcse = document.createElement('script');
+					    gcse.type = 'text/javascript';
+					    gcse.async = true;
+					    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+					        '//www.google.com/cse/cse.js?cx=' + cx;
+					    var s = document.getElementsByTagName('script')[0];
+					    s.parentNode.insertBefore(gcse, s);
+					  })();
+					</script>
+					<gcse:searchresults-only></gcse:searchresults-only>
+               	</div> 
+                
               </div>
-               <div class="box-publicidade" style="width: 250px; position: absolute; top:97px; left:5px;">
+           	
+           	<div class="box-publicidade" style="width: 250px; position: absolute; top:97px; left:5px;">
                 <!-- cmais-assets-250x250 -->
-        <script type='text/javascript'>
-        GA_googleFillSlot("cmais-assets-250x250");
-        </script>
-        </div>
-              
-              <!--div id="recentes" class="filho blocos" style="display:none;">
-                <div class="capa">
-                  <ul>
-                    <li class="conteudo-lista ativo">
-                      <a href="#" class="bg"><img class="" src="images/exemplo5.jpg" alt="200x120" /><span></span></a>
-                      <a href="#" class="titulos">As aventuras e dicas para curtir o show de Paul McCartney</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div id="vistos" class="filho blocos" style="display:none;">
-                <div class="capa">
-                  <ul>
-                    <li class="conteudo-lista ativo">
-                      <a href="#" class="bg"><img class="" src="images/exemplo5.jpg" alt="200x120" /><span></span></a>
-                      <a href="#" class="titulos">As aventuras e dicas para curtir o show de Paul McCartney</a>
-                    </li>
-                  </ul>
-                </div>
-              </div -->
+		        <script type='text/javascript'>
+		        GA_googleFillSlot("cmais-assets-250x250");
+		        </script>
+        	</div>
               
               <?php if(isset($pager)): ?>
                 <?php if($pager->haveToPaginate()): ?>
-              <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
-              <div class="paginacao grid3">
-                <div class="centraliza">
-                  <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn-ante"></a>
-                  <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);">Anterior</a>
-                  <ul>
-                    <?php foreach ($pager->getLinks() as $page): ?>
-                      <?php if ($page == $pager->getPage()): ?>
-                    <li><a href="javascript: goToPage(<?php echo $page ?>);" class="ativo"><?php echo $page ?></a></li>
-                      <?php else: ?>
-                    <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
-                      <?php endif; ?>
-                    <?php endforeach; ?>
-                  </ul>
-                  <a class="btn proxima" href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);">Pr&oacute;xima</a>
-                  <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn-prox"></a>
-                </div>
-              </div>
-          <!-- PAGINACAO -->
-              <form id="page_form" action="" method="post">
-                <input type="hidden" name="return_url" value="<?php echo $url?>" />
-                <input type="hidden" name="page" id="page" value="" />
-                <input type="hidden" name="busca" id="busca" value="<?php echo $busca ?>" />
-              </form>
-              <script>
-                function goToPage(i){
-                  $("#page").val(i);
-                  $("#page_form").submit();
-                }
-              </script>
-          <!-- PAGINACAO -->
-            <?php endif; ?>
-          <?php endif; ?>
-         
-          
-      </div>
+	              <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
+	              <div class="paginacao grid3" style="display: none">
+	                <div class="centraliza">
+	                  <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn-ante"></a>
+	                  <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);">Anterior</a>
+	                  <ul>
+	                    <?php foreach ($pager->getLinks() as $page): ?>
+	                      <?php if ($page == $pager->getPage()): ?>
+	                    <li><a href="javascript: goToPage(<?php echo $page ?>);" class="ativo"><?php echo $page ?></a></li>
+	                      <?php else: ?>
+	                    <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
+	                      <?php endif; ?>
+	                    <?php endforeach; ?>
+	                  </ul>
+	                  <a class="btn proxima" href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);">Pr&oacute;xima</a>
+	                  <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn-prox"></a>
+	                </div>
+	              </div>
+		          <!-- PAGINACAO -->
+		              <form id="page_form" action="" method="post">
+		                <input type="hidden" name="return_url" value="<?php echo $url?>" />
+		                <input type="hidden" name="page" id="page" value="" />
+		                <input type="hidden" name="busca" id="busca" value="<?php echo $busca ?>" />
+		              </form>
+		              <script>
+		                function goToPage(i){
+		                  $("#page").val(i);
+		                  $("#page_form").submit();
+		                }
+		              </script>
+		          <!-- PAGINACAO -->
+	            <?php endif; ?>
+	          <?php endif; ?>
+		         
+			<script>
+				function getURLParameter(name) {
+				    return decodeURI(
+				        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+				    );
+				}
+				if(getURLParameter("busca") == "null" || getURLParameter("busca") == ""){
+					$('.capa').show();
+					$('.paginacao grid3').show();
+				}else{
+					var busca = getURLParameter("busca");
+					$('#campo-busca').val(busca);
+					$('#google_search').show();
+					$('.paginacao grid3').hide();
+				}
+			</script>
+			          
+	      </div>
       </div>
     
       <!-- BOX PUBLICIDADE 2 -->
