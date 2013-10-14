@@ -181,14 +181,20 @@
           
           <!--mapa-->
           <div class="mapa">
-            
+            <MAP title="Navigation Bar">    
+               <P>
+               [<A href="#how">Bypass navigation bar</A>]
+               [<A href="home.html">Home</A>]
+               [<A href="search.html">Search</A>]
+               [<A href="new.html">New and highlighted</A>]
+               [<A href="sitemap.html">Site map</A>]
+               </P>
+             </MAP>
             <!--nav sites Vila Sesamo-->
             <nav class="span12" title="Sites Vila Sésamo">
-              <img alt="">
-                <a href="/vilasesamo2/videos" class="col-esq" alt="">Jogos</a>
-                <a href="/vilasesamo2/videos" class="col-central" alt=""><span class="sprite-destalhe-amarelo2"></span>Vídeos</a>
-                <a href="/vilasesamo2/videos" class="col-dir" alt=""><span class="sprite-destalhe-amarelo1"></span>Atividades</a>
-              </img>
+              <a href="/vilasesamo2/videos" class="col-esq" alt="">Jogos</a>
+              <a href="/vilasesamo2/videos" class="col-central" alt=""><span class="sprite-destalhe-amarelo2"></span>Vídeos</a>
+              <a href="/vilasesamo2/videos" class="col-dir" alt=""><span class="sprite-destalhe-amarelo1"></span>Atividades</a>
             </nav>
             <!--nav sites Vila Sesamo-->
             
