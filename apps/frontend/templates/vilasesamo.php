@@ -151,10 +151,21 @@
       <div class="container row-fluid">
       <section>
         <ul class="logos">
-          <li class="col-esq"><a href="/vilasesamo2" title="Vila Sésamo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="Vila Sésamo" /></a></li>
-          <li class="col-central"><a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-habitos-saudaveis.png" alt="Hábitos Saudáveis" /></a></li>
-          <li class="col-dir"><a href="/vilasesamo2/incluirbrincando" title="Incluir Brincando"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-incluir-grd.png" alt="Incluir Brincando" /></a></li>
-          <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" />
+          <li class="col-esq">
+            <a href="http://cmais.com.br/vilasesamo2" title="Vila Sésamo">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="Vila Sésamo" />
+            </a>
+          </li>
+          <li class="col-central">
+            <a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-habitos-saudaveis.png" alt="Hábitos Saudáveis" />
+            </a>
+          </li>
+          <li class="col-dir"><a href="/vilasesamo2/incluirbrincando" title="Incluir Brincando">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-incluir-grd.png" alt="Incluir Brincando" />
+            </a>
+          </li>
+          <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt=""/>
         </ul>
         <div class="mapa">
           
