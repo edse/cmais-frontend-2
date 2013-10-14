@@ -42,7 +42,7 @@
         </article>
         
         <article class="span6 atividade">
-          <a href="/vilasesamo2/atividades" title="Atividades" role="presentation" aria-hidden="true">>
+          <a href="/vilasesamo2/atividades" title="Atividades" role="presentation" aria-hidden="true">
             <i class="sprite-icon-atividades-peq"></i>atividades
           </a> 
           <a href="/vilasesamo2/atividades" class="img" role="presentation" aria-hidden="true" >
