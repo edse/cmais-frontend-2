@@ -33,7 +33,7 @@
       </div>
         <!--topo menu/alert/logo-->
       
-      <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'artist' => $artist)) ?>
+      <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'artist' => @$artist)) ?>
       
       <!--topo Artista/contagem-->
       <div id="row-fluid">
@@ -50,7 +50,7 @@
                 <div class="row-fluid">
                   <input class="btn pull-right btn-busca" type="submit" value="Busca">
                   <div class="input-prepend">
-                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" value="<?php if(isset($busca_radar)) echo $busca_radar?>" /><span class="add-on pull-right"><i class="icon-search"></i></span>
+                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" value="" /><span class="add-on pull-right"><i class="icon-search"></i></span>
                   </div>
                 </div>  
               </form>
@@ -75,7 +75,7 @@
           <a class="avancar" href="javascript:postGoogle();">Avançar</a>
         </div>  
         <!--/modal google-->
-      <?php if($artist == ""): ?>
+      <?php if(@$artist == ""): ?>
       <!--letras-->
       <div class="row-fluid pagination pagination-centered">
         <ul>
