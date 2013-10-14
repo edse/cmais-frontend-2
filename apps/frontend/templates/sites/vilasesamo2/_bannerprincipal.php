@@ -1,13 +1,13 @@
   <!--itens acessibidade-->
   <nav title="banner destaques">
-    <a href="#" title="destaque 1 exemplo">&nbsp;</a>
-    <a href="#" title="destaque 2 exemplo">&nbsp;</a>
-    <a href="#" title="destaque 3 exemplo">&nbsp;</a>
-    <a href="#" title="destaque 4 exemplo">&nbsp;</a>
+    <a href="#" title="destaque 1 exemplo"></a>
+    <a href="#" title="destaque 2 exemplo"></a>
+    <a href="#" title="destaque 3 exemplo"></a>
+    <a href="#" title="destaque 4 exemplo"></a>
   </nav>
   <!--/itens acessibildade-->
   <!-- carrossel desktop-->
-  <section id="carrossel-destaque" role="presentation" aria-hidden="true">
+  <div id="carrossel-destaque" role="presentation" aria-hidden="true">
     <!--Inicio-->
     <div id="slider">
       <!--lista-->
@@ -106,7 +106,7 @@
     </div>
     <!--/Inicio-->
     
-  </section>
+  </div>
   <!-- /carrossel desktop-->
   <!--scripts e css banner-->
   <script type="text/javascript" src="http://cmais.com.br/portal/js/layer-slider/jQuery.layerSlider.js"></script>
