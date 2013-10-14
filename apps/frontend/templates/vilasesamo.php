@@ -162,7 +162,7 @@
           <!--logos-->
           <ul class="logos">
             <li class="col-esq">
-              <a href="http://cmais.com.br/vilasesamo2" title="Vila Sésamo">
+              <a href="http://cmais.com.br/vilasesamo2" rel="foo" title="Vila Sésamo">
                 <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="" />
               </a>
             </li>
