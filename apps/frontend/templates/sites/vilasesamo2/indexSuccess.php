@@ -57,6 +57,7 @@ $('.inner.personagens a').mouseleave(function(){
   $(this).find('img').animate({top:0, easing:"swing"},'fast');  
 });
 
+$('.mpc_ls_thumb').attr('role','presentation').attr('aria-hidden','true');
 /*
 if(navigator.appName!='Microsoft Internet Explorer'){
   //carrossel personagens redraw pra tablet e celular home
