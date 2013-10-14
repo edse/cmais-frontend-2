@@ -1,9 +1,9 @@
   <!--itens acessibidade-->
   <nav title="banner destaques">
-    <a href="#" title="destaque 1 exemplo"></a>
-    <a href="#" title="destaque 2 exemplo"></a>
-    <a href="#" title="destaque 3 exemplo"></a>
-    <a href="#" title="destaque 4 exemplo"></a>
+    <a href="#" title="destaque 1 exemplo">1</a>
+    <a href="#" title="destaque 2 exemplo">2</a>
+    <a href="#" title="destaque 3 exemplo">3</a>
+    <a href="#" title="destaque 4 exemplo">4</a>
   </nav>
   <!--/itens acessibildade-->
   <!-- carrossel desktop-->
