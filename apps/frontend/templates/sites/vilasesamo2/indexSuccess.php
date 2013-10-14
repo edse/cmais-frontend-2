@@ -5,12 +5,54 @@
 <div id="content">
   <!--menu principal && banner promocional-->
   <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)); ?>
-  <?php include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal'); ?>
+  <?php //include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal'); ?>
   <!--/menu principal && banner promocional-->
   
   <!--carrossel personagens-->
   <?php include_partial_from_folder('sites/vilasesamo2', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
   <!--carrossel personagens-->
+  
+  <!-- link seções -->
+  <section class="bgtotal">
+    
+    <span class="divisa1"></span>
+    
+    <div class="destaques row-fluid container">
+      <section class="span8">
+        <article class="span6 jogo">
+          <a href="/vilasesamo2/jogos" title="Jogo">
+            <i class="sprite-icon-jogos-peq"></i>Jogos
+          </a>
+          <a href="/vilasesamo2/jogos" class="img" ><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Jogos" /></a> 
+          <a class="asset" href="/vilasesamo2/jogos-interna" title="Jogos">Nome do Jogo</a>  
+        </article>
+        <article class="span6 video">
+          <a href="/vilasesamo2/clipes" title="Vídeos">
+            <i class="sprite-icon-videos-peq"></i>Vídeos
+            
+          </a>
+          <a href="/vilasesamo2/clipes" class="img"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Clipes" /></a> 
+          <a class="asset" href="/vilasesamo2/videos-interna" title="Clipes">Nome do Video</a>      
+        </article>
+        <article class="span6 atividade">
+          <a href="/vilasesamo2/atividades" title="Atividades">
+            <i class="sprite-icon-atividades-peq"></i>atividades
+            
+          </a> 
+          <a href="/vilasesamo2/atividades" class="img" ><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="Atividades" /></a>
+          <a class="asset" href="/vilasesamo2/atividades-interna" title="Para Colorir">Nome da atividade</a>       
+        </article>
+      </section>
+
+      <div class="span4 banner" >
+        <a href="#" title="Incluir Brincando" class="sprite-btn-incluir"></a>
+        <a href="#" title="Hábitos para uma vida saudável" class="sprite-btn-habitos"></a>
+        <a href="#" title="O que achou do novo site?" class="sprite-btn-contato"></a>
+      </div>
+    </div>
+  </section>
+  <!-- link seções -->
+  
 </div>
 <!--/content-->
 

@@ -47,7 +47,7 @@
           <a class="asset" href="/vilasesamo2/atividades-interna" title="Para Colorir">Nome da atividade</a>       
         </article>
       
-      </sect0ion>
+
       <div class="span4 banner" >
         <a href="#" title="Incluir Brincando" class="sprite-btn-incluir"></a>
         <a href="#" title="Hábitos para uma vida saudável" class="sprite-btn-habitos"></a>

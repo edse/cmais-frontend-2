@@ -1,7 +1,7 @@
   <!-- carrossel desktop-->
   <section id="carrossel-destaque">
     <!--Inicio-->
-    <div id="slider">
+    <div id="slider" role="presentation" >
       <!--lista-->
       <ul>
 
