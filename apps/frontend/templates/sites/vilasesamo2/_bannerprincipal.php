@@ -1,11 +1,4 @@
-   <!--itens acessibidade-->
-  <nav title="banner destaques">
-    <a href="#">destaque do mês exemplo 1</a>
-    <a href="#">destaque do mês exemplo 2</a>
-    <a href="#">destaque do mês exemplo 3</a>
-    <a href="#">destaque do mês exemplo 4</a>
-  </nav>
-  <!--/itens acessibildade-->
+
   <!-- carrossel desktop-->
   <div class="section" id="carrossel-destaque" role="presentation" aria-hidden="true">
     <!--Inicio-->
