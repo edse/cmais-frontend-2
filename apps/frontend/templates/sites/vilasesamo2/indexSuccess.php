@@ -52,6 +52,7 @@ $('#carrossel-p').responsiveCarousel({
     $('.arrow.destaque-mobile').fadeIn('fast');
   });
 //};
+/*
 if(navigator.appName!='Microsoft Internet Explorer'){
   //carrossel personagens redraw pra tablet e celular home
   window.addEventListener('load', function() {
@@ -68,6 +69,7 @@ if(navigator.appName!='Microsoft Internet Explorer'){
   }, false);
   //carrossel personagens redraw pra tablet e celular home
 }
+*/ 
 
 $('.inner.personagens a').mouseenter(function(){
   $(this).find('img').animate({top:-70, easing:"swing"},'fast');
