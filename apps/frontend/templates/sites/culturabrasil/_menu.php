@@ -106,7 +106,7 @@ if(isset($asset)) {
    <div class="search-culturabrasil">
     <i class="lupa"></i>
     <form class="busca-culturabrasil" action="/busca" method="get" id="form-busca-culturabrasil">
-      <input class="ipt-txt" type="text" name="term" id="term" value="<?php if(isset($term)) echo $term ?>">
+      <input class="ipt-txt" type="text" name="term" id="term">
       <input class="ipt-submit" type="submit" value="OK" id="btn-submit-busca">
     </form>
    </div>

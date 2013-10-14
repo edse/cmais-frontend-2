@@ -81,6 +81,22 @@
       
       </div>
       
+      
+      	<!-- TERMO BUSCA -->
+		<script>
+			function getURLParameter(name) {
+			    return decodeURI(
+			        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+			    );
+			}
+			if(getURLParameter("term") != "" && getURLParameter("term") != "null"){
+				var busca = getURLParameter("term");
+				$('#term').val(busca);
+			}
+		</script>      
+     	<!-- TERMO BUSCA -->
+      
+      
       <?php
       /*
       <div class="lista-assets span8" style="*margin-left:0px;">

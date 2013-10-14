@@ -43,7 +43,7 @@
           <!--input search-->
           <form id="form-search" action="/busca" method="get">
             <div id="content-search">
-              <input type="text" id="term" name="term" placeholder="Busca" class="search-term" value="<?php if(isset($_GET['term'])) echo $_GET['term']?>" />
+              <input type="text" id="term" name="term" placeholder="Busca" class="search-term" />
               <input type="submit" id="search" name="search" value="" style="cursor:pointer"/>
             </div>
           </form>
@@ -63,6 +63,21 @@
           <gcse:searchresults-only>Buscando...</gcse:searchresults-only>
          </div>
           <!-- /RESULTADO BUSCA -->
+
+
+		<script>
+			function getURLParameter(name) {
+			    return decodeURI(
+			        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+			    );
+			}
+			if(getURLParameter("term") != "" && getURLParameter("term") != "null"){
+				var busca = getURLParameter("term");
+				$('.search-term').val(busca);
+			}
+		</script>
+
+
 
           <!-- BOX PUBLICIDADE -->
           <div class="box-publicidade pub-grd grid3">
