@@ -174,13 +174,13 @@ $assets = $pager->getResults();
 		    );
 		}
 		if(getURLParameter("busca") == "null" || getURLParameter("busca") == ""){
-			$('.row-fluid conteudo destaques').show();
-			$('.pagination pagination-centered').show();
+			$('.destaques').show();
+			$('.pagination').show();
 		}else{
 			var busca = getURLParameter("busca");
 			$('#busca').val(busca);
 			$('#google_search').show();
-			$('.pagination pagination-centered').hide();
+			$('.pagination').hide();
 		}
 	</script>
   
