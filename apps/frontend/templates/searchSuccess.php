@@ -64,6 +64,22 @@
          </div>
           <!-- /RESULTADO BUSCA -->
 
+
+		<script>
+		
+			function getURLParameter(name) {
+			    return decodeURI(
+			        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+			    );
+			}
+			if(getURLParameter("search") != "" && getURLParameter("search") != "null"){
+				var busca = getURLParameter("search");
+				$('.search-term').val(busca);
+			}
+		</script>
+
+
+
           <!-- BOX PUBLICIDADE -->
           <div class="box-publicidade pub-grd grid3">
             <!-- cmais-homepage-300x250 -->
