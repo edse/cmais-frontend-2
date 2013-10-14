@@ -1,12 +1,12 @@
   <!-- carrossel desktop-->
   <section id="carrossel-destaque">
     <!--Inicio-->
-    <div id="slider">
+    <div id="slider" role="presentation" >
       <!--lista-->
       <ul>
 
         <!--item-->
-        <li class="slide01" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img_pattern-banner-topo.jpg') repeat;">
+        <li class="slide01" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img_pattern-banner-topo.jpg') repeat;" role="presentation" aria-hidden="true">
           <div class="mpc_ls_slide_background total" data-style="scale">
             <a href="#" class="total"></a>
           </div>
@@ -26,7 +26,7 @@
         <!--/item-->
         
         <!--item-->
-        <li class="slide01" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img_pattern-banner-topo.jpg') repeat;">
+        <li class="slide01" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img_pattern-banner-topo.jpg') repeat;" role="presentation" aria-hidden="true">
           <div class="mpc_ls_slide_background total" data-style="scale">
             <a href="#" class="total"></a>
           </div>
@@ -68,7 +68,7 @@
     'pauseOnHover' : false,
     'slideshow' : true,
     'uiStyle': 'style02',
-    //'delay': 6800,
+    'delay': 6800,
     'showThumbTooltip':false, 
     'arrowsOffset': -35,
     'showControlsOnHover': true,

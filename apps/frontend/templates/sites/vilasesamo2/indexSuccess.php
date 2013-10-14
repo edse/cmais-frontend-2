@@ -11,6 +11,64 @@
   <!--carrossel personagens-->
   <?php include_partial_from_folder('sites/vilasesamo2', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
   <!--carrossel personagens-->
+  
+  <!-- link seções -->
+  <section class="bgtotal">
+    
+    <span class="divisa1"></span>
+    <!--destaques-->
+    <div class="destaques row-fluid container">
+      <!--section-->
+      <section class="span8">
+        
+        <article class="span6 jogo">
+          <div>
+            <a href="/vilasesamo2/jogos" role="presentation" aria-hidden="true">
+              <i class="sprite-icon-jogos-peq"></i>Jogos
+            </a>
+            <a href="/vilasesamo2/jogos" class="img" role="presentation" aria-hidden="true">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg"  />
+            </a>
+          </div> 
+          <a class="asset" href="/vilasesamo2/jogos-interna" title="Jogos: Nome do Jogo">Nome do Jogo</a>  
+        </article>
+        
+        <article class="span6 video">
+          <div>
+            <a href="/vilasesamo2/clipes" role="presentation" aria-hidden="true">
+              <i class="sprite-icon-videos-peq"></i>Vídeos
+            </a>
+            <a href="/vilasesamo2/clipes" class="img" role="presentation" aria-hidden="true">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg"/>
+            </a> 
+          </div>
+          <a class="asset" href="/vilasesamo2/videos-interna" title="Clipe: Nome do Video">Nome do Video</a>      
+        </article>
+        
+        <article class="span6 atividade">
+          <div>
+            <a href="/vilasesamo2/atividades" role="presentation" aria-hidden="true">
+              <i class="sprite-icon-atividades-peq"></i>atividades
+            </a> 
+            <a href="/vilasesamo2/atividades" class="img" role="presentation" aria-hidden="true" >
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" />
+            </a>
+          </div>
+          <a class="asset" href="/vilasesamo2/atividades-interna" title="Atividade: Nome da atividade">Nome da atividade</a>       
+        </article>
+      </section>
+      <!--section-->
+      <div class="span4 banner" >
+        <a href="#" title="Incluir Brincando" class="sprite-btn-incluir"></a>
+        <a href="#" title="Hábitos para uma vida saudável" class="sprite-btn-habitos"></a>
+        <a href="#" title="O que achou do novo site?" class="sprite-btn-contato"></a>
+      </div>
+    </div>
+    <!--destaques-->
+    
+  </section>
+  <!-- link seções -->
+  
 </div>
 <!--/content-->
 
@@ -57,7 +115,7 @@ $('.inner.personagens a').mouseleave(function(){
   $(this).find('img').animate({top:0, easing:"swing"},'fast');  
 });
 
-//$('.mpc_ls_thumb, .mpc_ls_prev_slide, .mpc_ls_next_slide').attr('role','presentation').attr('aria-hidden','true').attr('tabindex', '100');
+$('.mpc_ls_thumb, .mpc_ls_prev_slide, .mpc_ls_next_slide').attr('role','presentation').attr('aria-hidden','true').attr('tabindex', '100'); 
 
 /*
 if(navigator.appName!='Microsoft Internet Explorer'){

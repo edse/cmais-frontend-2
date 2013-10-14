@@ -7,7 +7,7 @@
         <div class="header-carrossel-personagens">
           <span class="topo-p"></span>
           <i class="sprite-icon-personagens-peq"></i>
-          <h3><a href="/vilasesamo2/personagens" role="presentation" aria-hidden="true">Personagens</a></h3>
+          <h3>Personagens</h3>
           
           <div class="slider-mask-wrap">
             <div class="slider-mask">
