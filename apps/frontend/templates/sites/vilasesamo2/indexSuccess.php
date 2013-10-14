@@ -1,7 +1,3 @@
-<script type="text/javascript" src="http://cmais.com.br/portal/js/layer-slider/jQuery.layerSlider.js"></script>
-<link rel="stylesheet" href="http://cmais.com.br/portal/js/layer-slider/model06/jquery.layerSlider.css">
-<link rel="stylesheet" href="http://cmais.com.br/portal/js/layer-slider/model06/main.css">
-
 <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/js/responsive-carousel/style-vilasesamo.css"/>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
 
@@ -13,7 +9,7 @@
   <!--/menu principal && banner promocional-->
   
   <!--carrossel personagens-->
-  <?php //include_partial_from_folder('sites/vilasesamo2', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
+  <?php include_partial_from_folder('sites/vilasesamo2', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
   <!--carrossel personagens-->
 </div>
 <!--/content-->

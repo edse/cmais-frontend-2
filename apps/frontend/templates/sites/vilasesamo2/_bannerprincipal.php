@@ -7,7 +7,7 @@
   </nav>
   <!--/itens acessibildade-->
   <!-- carrossel desktop-->
-  <section id="carrossel-destaque" role="presentation" aria-hidden="true">
+  <section id="carrossel-destaque">
     <!--Inicio-->
     <div id="slider">
       <!--lista-->
@@ -109,8 +109,8 @@
   </section>
   <!-- /carrossel desktop-->
   <!--scripts e css banner-->
-  <!--script type="text/javascript" src="http://cmais.com.br/portal/js/layer-slider/jQuery.layerSlider.js"></script-->
-  <!--script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script-->
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/layer-slider/jQuery.layerSlider.js"></script>
+  <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
   <link rel="stylesheet" href="http://cmais.com.br/portal/js/layer-slider/model06/jquery.layerSlider.css">
   <link rel="stylesheet" href="http://cmais.com.br/portal/js/layer-slider/model06/main.css">
 
