@@ -15,25 +15,23 @@
     <div class="content">
       
       <h1>
-        <a href="/vilasesamo2" class="<?php echo $classLogo; ?>">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-vila-menu.jpg"  alt="logo Vila Sésamo"/>
+        <a href="<?php echo $site->retriveUrl(); ?>" class="<?php echo $classLogo; ?>" title="Logo Vila Sésamo">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-vila-menu.jpg"  alt=""/>
         </a>
         <?php //echo $border ?>
       </h1>
       
       <!--lista menu-->
       <ul>
-        
-        <!--lista item-->
         <li class="btn-personagens" data-width="260" data-time="1000" data-back="500">
-          <a href="<?php echo $site->retriveUrl(); ?>/personagens"  title="Personagens">
+          <a href="<?php echo $site->retriveUrl(); ?>/personagens" title="Personagens">
             <span class="texto">Personagens</span>
             <i class="sprite-btn-personagens"></i>
             <span class="fundo fundo-personagens"></span>
             <span class="borda borda-personagens"></span>
           </a>
         </li>
-        <!--/lista item-->
+        
         
         <!--lista item-->
         <li class="btn-atividades" data-width="225" data-time="800" data-back="500">
