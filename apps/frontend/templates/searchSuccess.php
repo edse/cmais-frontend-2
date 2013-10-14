@@ -72,8 +72,8 @@
 			        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
 			    );
 			}
-			if(getURLParameter("search") != "" && getURLParameter("search") != "null"){
-				var busca = getURLParameter("search");
+			if(getURLParameter("term") != "" && getURLParameter("term") != "null"){
+				var busca = getURLParameter("term");
 				$('.search-term').val(busca);
 			}
 		</script>
