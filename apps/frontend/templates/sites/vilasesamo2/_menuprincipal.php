@@ -26,7 +26,7 @@
         
         <!--lista item-->
         <li class="btn-personagens" data-width="260" data-time="1000" data-back="500">
-          <a href="<?php echo $site->retriveUrl(); ?>/personagens"  title="Personagens">
+          <a href="<?php echo $site->retriveUrl(); ?>/personagens" title="Personagens">
             <span class="texto">Personagens</span>
             <i class="sprite-btn-personagens"></i>
             <span class="fundo fundo-personagens"></span>

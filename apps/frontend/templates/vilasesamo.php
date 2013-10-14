@@ -161,9 +161,8 @@
           
           <!--logos-->
           <ul class="logos">
-            
             <li class="col-esq">
-              <a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis">
+              <a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Site Vila Sésamo">
                 <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="" />
               </a>
             </li>
