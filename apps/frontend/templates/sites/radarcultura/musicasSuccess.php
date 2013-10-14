@@ -126,7 +126,7 @@
 				    s.parentNode.insertBefore(gcse, s);
 				  })();
 				</script>
-				<gcse:searchresults-only></gcse:searchresults-only>
+				<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
            	</div>           
           
           
