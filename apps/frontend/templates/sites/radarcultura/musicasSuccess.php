@@ -46,23 +46,13 @@
             <?php endif; ?>  
             <div class="span5 pull-right">
               <!--busca-->
-              <form action="" method="post" id="busca-radar">
+              <form action="" method="get" id="busca-radar">
                 <div class="row-fluid">
                   <input class="btn pull-right btn-busca" type="submit" value="Busca">
                   <div class="input-prepend">
                    <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" value="<?php if(isset($busca_radar)) echo $busca_radar?>" /><span class="add-on pull-right"><i class="icon-search"></i></span>
                   </div>
                 </div>  
-                <div class="row-fluid">
-                  <label class="radio inline" style="margin-left: 35px">
-                    <input type="radio" name="busca-por" id="busca-por1" value="musicas" checked="checked" />
-                    Por Título
-                  </label>
-                  <label class="radio inline">
-                    <input type="radio" name="busca-por" id="busca-por2" value="artistas" />
-                    Por Artista
-                  </label>
-                </div>
               </form>
               <!--/busca--> 
             </div>
@@ -122,7 +112,25 @@
       <!--Centro pagina-->
       <div class="row-fluid musicas" >
           <input type="hidden" id="btn-pressed" value="" name="">
-          <table class="table table-striped musica">
+          
+            <div id="google_search" style="display:none">
+				<script>
+				  (function() {
+				    var cx = '005232987476052626260:sje2yjrqtmq';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:searchresults-only></gcse:searchresults-only>
+           	</div>           
+          
+          
+          <table class="table table-striped musica" style="display: none">
             <tbody>
               <thead>
                 <tr>
@@ -167,15 +175,30 @@
               });
             });
           </script>
-
-
-         
       </div>
       <!--/centro pagina-->
       <!--paginador-->
       <?php include_partial_from_folder('sites/radarcultura', 'global/paginator', array('page' => $page, 'pager' => $pager,'letter'=>$letter)) ?>
       <!--paginador-->
-      <!--banner horizontal-->    
+      
+	<script>
+		function getURLParameter(name) {
+		    return decodeURI(
+		        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+		    );
+		}
+		if(getURLParameter("busca-input") == "null" || getURLParameter("busca-input") == ""){
+			$('.table-striped').show();
+			$('.pagination-centered').show();
+		}else{
+			var busca = getURLParameter("busca-input");
+			$('#busca-input').val(busca);
+			$('#google_search').show();
+			$('.pagination-centered').hide();
+		}
+	</script>      
+      
+      <!--banner horizontal-->
         <div class="container">
           <div class="banner-radio horizontal">
             <script type='text/javascript'>
