@@ -15,7 +15,7 @@
     <div class="content">
       
       <h1>
-        <a href="<?php echo $site->retriveUrl(); ?>" class="<?php echo $classLogo; ?>">
+        <a href="/vilasesamo2" class="<?php echo $classLogo; ?>">
           <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-vila-menu.jpg"  alt="logo Vila Sésamo"/>
         </a>
         <?php //echo $border ?>
