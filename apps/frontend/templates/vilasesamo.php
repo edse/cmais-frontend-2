@@ -164,7 +164,7 @@
             
             <li class="col-esq">
               <a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-habitos-saudaveis.png" alt="" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="" />
               </a>
             </li>
             <li class="col-central">
