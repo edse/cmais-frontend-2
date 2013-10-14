@@ -184,9 +184,9 @@
             
             <!--nav sites Vila Sesamo-->
             <nav class="span12" title="Sites Vila Sésamo">
-              <a href="/vilasesamo2/videos" class="col-esq" title="">Jogos</a>
-              <a href="/vilasesamo2/videos" class="col-central" title=""><span class="sprite-destalhe-amarelo2"></span>Vídeos</a>
-              <a href="/vilasesamo2/videos" class="col-dir" title=""><span class="sprite-destalhe-amarelo1"></span>Atividades</a>
+              <a href="/vilasesamo2/videos" class="col-esq" alt="">Jogos</a>
+              <a href="/vilasesamo2/videos" class="col-central" alt=""><span class="sprite-destalhe-amarelo2"></span>Vídeos</a>
+              <a href="/vilasesamo2/videos" class="col-dir" alt=""><span class="sprite-destalhe-amarelo1"></span>Atividades</a>
             </nav>
             <!--nav sites Vila Sesamo-->
             
