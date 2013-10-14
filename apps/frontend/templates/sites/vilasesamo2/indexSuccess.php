@@ -28,7 +28,7 @@
           <a href="/vilasesamo2/jogos" class="img" role="presentation" aria-hidden="true">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
           </a> 
-          <a class="asset" href="/vilasesamo2/jogos-interna" title="Nome do Jogo">Nome do Jogo</a>  
+          <a class="asset" href="/vilasesamo2/jogos-interna" title="Jogos: Nome do Jogo">Nome do Jogo</a>  
         </article>
         
         <article class="span6 video">
@@ -38,7 +38,7 @@
           <a href="/vilasesamo2/clipes" class="img" role="presentation" aria-hidden="true">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
           </a> 
-          <a class="asset" href="/vilasesamo2/videos-interna" title="Nome do Video">Nome do Video</a>      
+          <a class="asset" href="/vilasesamo2/videos-interna" title="Clipe: Nome do Video">Nome do Video</a>      
         </article>
         
         <article class="span6 atividade">
@@ -48,7 +48,7 @@
           <a href="/vilasesamo2/atividades" class="img" role="presentation" aria-hidden="true" >
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
           </a>
-          <a class="asset" href="/vilasesamo2/atividades-interna" title="Nome da atividade">Nome da atividade</a>       
+          <a class="asset" href="/vilasesamo2/atividades-interna" title="Atividade: Nome da atividade">Nome da atividade</a>       
         </article>
       </section>
       <!--section-->
