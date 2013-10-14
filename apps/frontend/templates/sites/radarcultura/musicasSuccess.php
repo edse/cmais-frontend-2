@@ -46,11 +46,11 @@
             <?php endif; ?>  
             <div class="span5 pull-right">
               <!--busca-->
-              <form action="" method="get" id="busca-radar">
+              <form action="" method="get" id="busca-radar" name="busca-radar">
                 <div class="row-fluid">
                   <input class="btn pull-right btn-busca" type="submit" value="Busca">
                   <div class="input-prepend">
-                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" value="" /><span class="add-on pull-right"><i class="icon-search"></i></span>
+                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" value="" /> <span class="add-on pull-right"><i class="icon-search"></i></span>
                   </div>
                 </div>  
               </form>
