@@ -9,14 +9,14 @@
    
   ?>
   <!--nav-->
-  <nav class="header-bar" accesskey="1" title="menu principal vila sesamo">
+  <nav class="header-bar" title="menu principal vila sesamo">
     
     <!--content-->
     <div class="content">
       
       <h1>
-        <a href="<?php echo $site->retriveUrl(); ?>" class="<?php echo $classLogo; ?>" title="Site Vila Sésamo">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-vila-menu.jpg" alt="Vila Sésamo" />
+        <a href="<?php echo $site->retriveUrl(); ?>" class="<?php echo $classLogo; ?>" title="logo Vila Sésamo">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-vila-menu.jpg"/>
         </a>
         <?php //echo $border ?>
       </h1>
@@ -26,7 +26,7 @@
         
         <!--lista item-->
         <li class="btn-personagens" data-width="260" data-time="1000" data-back="500">
-          <a href="<?php echo $site->retriveUrl(); ?>/personagens"  title="Personagens">
+          <a href="<?php echo $site->retriveUrl(); ?>/personagens">
             <span class="texto">Personagens</span>
             <i class="sprite-btn-personagens"></i>
             <span class="fundo fundo-personagens"></span>
