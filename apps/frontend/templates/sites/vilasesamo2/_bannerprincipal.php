@@ -1,5 +1,5 @@
   <!-- carrossel desktop-->
-  <section id="carrossel-destaque" role="banner">
+  <section id="carrossel-destaque">
     <!--Inicio-->
     <div id="slider">
       <!--lista-->
