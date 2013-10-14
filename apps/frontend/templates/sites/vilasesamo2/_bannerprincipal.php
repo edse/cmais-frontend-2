@@ -1,6 +1,13 @@
-
+   <!--itens acessibidade-->
+  <nav title="banner destaques">
+    <a href="#">destaque do mês exemplo 1</a>
+    <a href="#">destaque do mês exemplo 2</a>
+    <a href="#">destaque do mês exemplo 3</a>
+    <a href="#">destaque do mês exemplo 4</a>
+  </nav>
+  <!--/itens acessibildade-->
   <!-- carrossel desktop-->
-  <div class="section" id="carrossel-destaque" role="presentation" aria-hidden="true">
+  <section id="carrossel-destaque" role="presentation" aria-hidden="true">
     <!--Inicio-->
     <div id="slider">
       <!--lista-->
@@ -99,7 +106,7 @@
     </div>
     <!--/Inicio-->
     
-  </div>
+  </section>
   <!-- /carrossel desktop-->
   <!--scripts e css banner-->
   <script type="text/javascript" src="http://cmais.com.br/portal/js/layer-slider/jQuery.layerSlider.js"></script>
