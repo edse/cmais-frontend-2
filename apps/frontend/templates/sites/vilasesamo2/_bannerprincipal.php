@@ -1,5 +1,13 @@
+  <!--itens acessibidade-->
+  <nav title="banner destaques">
+    <a href="#" title="destaque 1 exemplo">&nbsp;</a>
+    <a href="#" title="destaque 2 exemplo">&nbsp;</a>
+    <a href="#" title="destaque 3 exemplo">&nbsp;</a>
+    <a href="#" title="destaque 4 exemplo">&nbsp;</a>
+  </nav>
+  <!--/itens acessibildade-->
   <!-- carrossel desktop-->
-  <section id="carrossel-destaque">
+  <section id="carrossel-destaque" role="presentation" aria-hidden="true">
     <!--Inicio-->
     <div id="slider">
       <!--lista-->
