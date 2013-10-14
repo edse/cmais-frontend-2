@@ -23,12 +23,6 @@
       
       <!--lista menu-->
       <ul>
-        <li class="col-esq">
-              <a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Site Vila Sésamo">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="" />
-              </a>
-            </li>
-        <!--lista item-->
         <li class="btn-personagens" data-width="260" data-time="1000" data-back="500">
           <a href="<?php echo $site->retriveUrl(); ?>/personagens" title="Personagens">
             <span class="texto">Personagens</span>
@@ -37,7 +31,7 @@
             <span class="borda borda-personagens"></span>
           </a>
         </li>
-        <!--/lista item-->
+        
         
         <!--lista item-->
         <li class="btn-atividades" data-width="225" data-time="800" data-back="500">
