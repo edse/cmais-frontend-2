@@ -48,6 +48,16 @@ $('#carrossel-p').responsiveCarousel({
     $('.arrow.destaque-mobile').fadeIn('fast');
   });
 //};
+
+$('.inner.personagens a').mouseenter(function(){
+  $(this).find('img').animate({top:-70, easing:"swing"},'fast');
+});
+$('.inner.personagens a').mouseleave(function(){
+  $(this).find('img').stop();
+  $(this).find('img').animate({top:0, easing:"swing"},'fast');  
+});
+
+$('.mpc_ls_thumb').attr('role','presentation').attr('aria-hidden','true');
 /*
 if(navigator.appName!='Microsoft Internet Explorer'){
   //carrossel personagens redraw pra tablet e celular home
@@ -65,17 +75,7 @@ if(navigator.appName!='Microsoft Internet Explorer'){
   }, false);
   //carrossel personagens redraw pra tablet e celular home
 }
-*/ 
 
-$('.inner.personagens a').mouseenter(function(){
-  $(this).find('img').animate({top:-70, easing:"swing"},'fast');
-});
-$('.inner.personagens a').mouseleave(function(){
-  $(this).find('img').stop();
-  $(this).find('img').animate({top:0, easing:"swing"},'fast');  
-});
-
-/*
 //carrossel personagens
 function windowSize(){
   if(screen.width >= 640){

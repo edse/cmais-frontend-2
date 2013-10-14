@@ -186,7 +186,7 @@
           <div class="mapa">
             
             <!--nav sites Vila Sesamo-->
-            <nav class="span12"  role="presentation" aria-hidden="true" title="Sites Vila Sésamo" >
+            <nav class="span12" title="Sites Vila Sésamo" aria-disabled="true">
               <a href="/vilasesamo2/videos" class="col-esq">Jogos</a>
               <a href="/vilasesamo2/videos" class="col-central"><span class="sprite-destalhe-amarelo2"></span>Vídeos</a>
               <a href="/vilasesamo2/videos" class="col-dir"><span class="sprite-destalhe-amarelo1"></span>Atividades</a>
@@ -226,7 +226,7 @@
             <!--/nav Personagens-->
             
             <!--nav-->
-            <nav class="span12" role="presentation" aria-hidden="true">
+            <nav class="span12" aria-disabled="true">
               <a href="/vilasesamo2/atividades" class="col-esq" title="">Para adultos</a>
               <a href="/vilasesamo2/atividades" class="col-central" title=""><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
               <a href="/vilasesamo2/atividades" class="col-dir" title=""><span class="sprite-destalhe-amarelo1"></span>História</a>
