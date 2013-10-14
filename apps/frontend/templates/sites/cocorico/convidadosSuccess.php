@@ -175,12 +175,12 @@ $assets = $pager->getResults();
 		}
 		if(getURLParameter("busca") == "null" || getURLParameter("busca") == ""){
 			$('.destaques').show();
-			$('.pagination').show();
+			$('.pagination-centered').show();
 		}else{
 			var busca = getURLParameter("busca");
 			$('#busca').val(busca);
 			$('#google_search').show();
-			$('.pagination').hide();
+			$('.pagination-centered').hide();
 		}
 	</script>
   
