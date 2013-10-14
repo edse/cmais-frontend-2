@@ -132,7 +132,7 @@
             <!--form-->
             <form class="form-search">
               <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';">
-              <button type="submit" class="btn sprite-icon-busca-hover" title="botão buscar"></button>
+              <button type="submit" class="btn sprite-icon-busca-hover" title="buscar no site vila sesamo"></button>
             </form>
             <!--/form-->
           </nav>
