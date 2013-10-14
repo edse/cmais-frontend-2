@@ -163,16 +163,16 @@
           <ul class="logos">
             <li class="col-esq">
               <a href="http://cmais.com.br/vilasesamo2" title="Vila Sésamo">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="Vila Sésamo" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="" />
               </a>
             </li>
             <li class="col-central">
               <a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-habitos-saudaveis.png" alt="Hábitos Saudáveis" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-habitos-saudaveis.png" alt="" />
               </a>
             </li>
             <li class="col-dir"><a href="/vilasesamo2/incluirbrincando" title="Incluir Brincando">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-incluir-grd.png" alt="Incluir Brincando" />
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-incluir-grd.png" alt="" />
               </a>
             </li>
             <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt="" />
@@ -203,17 +203,27 @@
                 <li>
                   <a href="/vilasesamo2/personagens/elmo" title="Elmo">Elmo,</a>
                 </li>
-                <li><a href="/vilasesamo2/personagens/grover" title="Grover">Grover,</a></li>
-                <li><a href="/vilasesamo2/personagens/beto" title="Beto">Beto,</a></li>
-                <li><a href="/vilasesamo2/personagens/enio" title="Ênio">Ênio,</a></li>
-                <li><a href="/vilasesamo2/personagens/comecome" title="Come-Come">Come-Come,</a></li>
-                <li><a href="/vilasesamo2/personagens/zoe" title="Zoe">Zoe</a></li>
+                <li>
+                  <a href="/vilasesamo2/personagens/grover" title="Grover">Grover,</a>
+                </li>
+                <li>
+                  <a href="/vilasesamo2/personagens/beto" title="Beto">Beto,</a>
+                </li>
+                <li>
+                  <a href="/vilasesamo2/personagens/enio" title="Ênio">Ênio,</a>
+                </li>
+                <li>
+                  <a href="/vilasesamo2/personagens/comecome" title="Come-Come">Come-Come,</a>
+                </li>
+                <li>
+                  <a href="/vilasesamo2/personagens/zoe" title="Zoe">Zoe</a>
+                </li>
               </ul>
             </nav>
             <!--/nav Personagens-->
             
             <!--nav-->
-            <nav class="span12">
+            <nav class="span12" role="presentation" aria-hidden="true">
               <a href="/vilasesamo2/atividades" class="col-esq" title="">Para adultos</a>
               <a href="/vilasesamo2/atividades" class="col-central" title=""><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
               <a href="/vilasesamo2/atividades" class="col-dir" title=""><span class="sprite-destalhe-amarelo1"></span>História</a>
