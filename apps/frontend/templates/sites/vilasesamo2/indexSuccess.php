@@ -1,6 +1,3 @@
-<link rel="stylesheet" href="http://cmais.com.br/portal/js/layer-slider/model06/jquery.layerSlider.css">
-<link rel="stylesheet" href="http://cmais.com.br/portal/js/layer-slider/model06/main.css">
-
 <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/js/responsive-carousel/style-vilasesamo.css"/>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
 
@@ -18,7 +15,7 @@
 <!--/content-->
 
 <!--scripts e css banner-->
-<script type="text/javascript" src="http://cmais.com.br/portal/js/layer-slider/jQuery.layerSlider.js"></script>
+
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
@@ -51,6 +48,7 @@ $('#carrossel-p').responsiveCarousel({
     $('.arrow.destaque-mobile').fadeIn('fast');
   });
 //};
+/*
 if(navigator.appName!='Microsoft Internet Explorer'){
   //carrossel personagens redraw pra tablet e celular home
   window.addEventListener('load', function() {
@@ -67,6 +65,7 @@ if(navigator.appName!='Microsoft Internet Explorer'){
   }, false);
   //carrossel personagens redraw pra tablet e celular home
 }
+*/ 
 
 $('.inner.personagens a').mouseenter(function(){
   $(this).find('img').animate({top:-70, easing:"swing"},'fast');
