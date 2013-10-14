@@ -100,10 +100,10 @@ $assets = $pager->getResults();
     <!--// PAGINACAO -->
     <?php endif; ?>
     
-  <div class="row-fluid conteudo destaques">
+  <div class="row-fluid conteudo destaques" style="display: none">
     <?php if(count($pager) > 0): ?>
       
-    <ul id="convidados" style="display: none">
+    <ul id="convidados">
       <?php foreach($pager->getResults() as $d): ?>
       <li class="span4">
         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
@@ -116,25 +116,24 @@ $assets = $pager->getResults();
     <?php else: ?>
     <p style="margin-top: 20px;">Nenhum resultado encontrado para a sua busca.</p>
     <?php endif; ?>  
-    
-	 <div id="google_search" style="display:none">
-			<script>
-			  (function() {
-			    var cx = '005232987476052626260:cib-ufkaquy';
-			    var gcse = document.createElement('script');
-			    gcse.type = 'text/javascript';
-			    gcse.async = true;
-			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-			        '//www.google.com/cse/cse.js?cx=' + cx;
-			    var s = document.getElementsByTagName('script')[0];
-			    s.parentNode.insertBefore(gcse, s);
-			  })();
-			</script>
-			<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
-	   </div>	    
-    
-    
   </div>
+  
+  
+   <div id="google_search" style="display:none">
+		<script>
+		  (function() {
+		    var cx = '005232987476052626260:cib-ufkaquy';
+		    var gcse = document.createElement('script');
+		    gcse.type = 'text/javascript';
+		    gcse.async = true;
+		    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+		        '//www.google.com/cse/cse.js?cx=' + cx;
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(gcse, s);
+		  })();
+		</script>
+		<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
+   </div>	
   
   
      <?php if($pager->haveToPaginate()): ?>
@@ -175,7 +174,7 @@ $assets = $pager->getResults();
 		    );
 		}
 		if(getURLParameter("busca") == "null" || getURLParameter("busca") == ""){
-			$('.convidados').show();
+			$('.destaques').show();
 			$('.pagination-centered').show();
 		}else{
 			var busca = getURLParameter("busca");
