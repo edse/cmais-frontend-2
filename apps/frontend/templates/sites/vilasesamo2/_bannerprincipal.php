@@ -7,7 +7,7 @@
   </nav>
   <!--/itens acessibildade-->
   <!-- carrossel desktop-->
-  <section id="carrossel-destaque" role="presentation">
+  <section id="carrossel-destaque" role="presentation" aria-level="2">
     <!--Inicio-->
     <div id="slider" role="presentation">
       <!--lista-->
