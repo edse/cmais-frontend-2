@@ -57,7 +57,7 @@ $('.inner.personagens a').mouseleave(function(){
   $(this).find('img').animate({top:0, easing:"swing"},'fast');  
 });
 
-//$('.mpc_ls_thumb, .mpc_ls_prev_slide, .mpc_ls_next_slide').attr('role','presentation').attr('aria-hidden','true').attr('tabindex', '100');
+$('.mpc_ls_thumb, .mpc_ls_prev_slide, .mpc_ls_next_slide').attr('role','presentation').attr('aria-hidden','true').attr('tabindex', '100');
 
 /*
 if(navigator.appName!='Microsoft Internet Explorer'){
