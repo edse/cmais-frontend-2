@@ -149,7 +149,7 @@
     <!--footer-->
     <footer>
       
-      <div class="copyright">
+      <div class="copyright" role="presentation" aria-hidden="true" >
         <small>© 2013 - Vila Sésamo</small>
       </div>
       
