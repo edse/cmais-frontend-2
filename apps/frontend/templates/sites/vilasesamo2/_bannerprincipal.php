@@ -68,7 +68,7 @@
     'pauseOnHover' : false,
     'slideshow' : true,
     'uiStyle': 'style02',
-    //'delay': 6800,
+    'delay': 6800,
     'showThumbTooltip':false, 
     'arrowsOffset': -35,
     'showControlsOnHover': true,
