@@ -62,9 +62,9 @@ $assets = $pager->getResults();
       <?php endforeach; ?>
     </ul>
     <span class="divider last">|</span>
-    <form class="form-search" action="" name="frmBusca" id="frmBusca" method="post">
+    <form class="form-search" action="" name="frmBusca" id="frmBusca" method="get">
       <input type="hidden" name="letra-cocorico" id="letra" value="">
-      <input type="text" class="input-medium search-query" name="busca" id="busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca'] ?>">
+      <input type="text" class="input-medium search-query" name="busca" id="busca">
       <button type="submit" class="btn"><i class="icon-search"></i></button>
     </form>
   </div>  
@@ -72,7 +72,7 @@ $assets = $pager->getResults();
   
    <?php if($pager->haveToPaginate()): ?>
     <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
-    <div class="pagination pagination-centered">
+    <div class="pagination pagination-centered" style="display: none">
       <ul>
         <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
         <?php foreach ($pager->getLinks() as $page): ?>
@@ -100,63 +100,7 @@ $assets = $pager->getResults();
     <!--// PAGINACAO -->
     <?php endif; ?>
     
-  <!-- titulo da pagina -->
-  
-  <!-- paginacao -->
-  <!--<div class="pagination" id="alfabeto">
-    <ul>
-      <li class="active"><a href="#" title="1">A</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">B</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">C</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">D</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">E</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">F</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">G</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">H</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">I</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">J</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">K</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">L</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">M</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">N</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">O</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">P</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">Q</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">R</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">S</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">T</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">U</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">V</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">W</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">X</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">Y</a><span class="divider">|</span></li>
-      <li><a href="#" title="1">Z</a></li>
-    </ul>
-    <span class="divider last">|</span>
-    <form class="form-search">
-      <input type="text" class="input-medium search-query">
-      <button type="submit" class="btn"><i class="icon-search"></i></button>
-    </form>
-  </div>
-  <!-- /paginacao -->
-  
-  <!-- paginacao -->
-  <!--<div class="pagination pagination-centered">
-    <ul>
-      <li class="anterior"><a href="#" title="Anterior"></a></li>
-      <li class="active"><a href="#" title="1">1</a></li>
-      <li><a href="#" title="1">2</a></li>
-      <li><a href="#" title="1">3</a></li>
-      <li><a href="#" title="1">...</a></li>
-      <li><a href="#" title="1">18</a></li>
-      <li class="proximo" title="Próximo"><a href="#"></a></li>
-    </ul>
-  </div>
-  <!-- /paginacao -->
-  <!--row-->
-  
-  
-  <div class="row-fluid conteudo destaques">
+  <div class="row-fluid conteudo destaques" style="display: none">
     <?php if(count($pager) > 0): ?>
       
     <ul id="convidados">
@@ -174,9 +118,27 @@ $assets = $pager->getResults();
     <?php endif; ?>  
   </div>
   
+  
+   <div id="google_search" style="display:none">
+		<script>
+		  (function() {
+		    var cx = '005232987476052626260:cib-ufkaquy';
+		    var gcse = document.createElement('script');
+		    gcse.type = 'text/javascript';
+		    gcse.async = true;
+		    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+		        '//www.google.com/cse/cse.js?cx=' + cx;
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(gcse, s);
+		  })();
+		</script>
+		<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
+   </div>	
+  
+  
      <?php if($pager->haveToPaginate()): ?>
     <!-- PAGINACAO -->
-    <div class="pagination pagination-centered">
+    <div class="pagination pagination-centered" style="display: none">
       <ul>
         <li class="anterior"><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" title="Anterior"></a></li>
         <?php foreach ($pager->getLinks() as $page): ?>
@@ -204,21 +166,23 @@ $assets = $pager->getResults();
     <!--// PAGINACAO -->
     <?php endif; ?>
   
-  <!-- /row-->
- <!-- paginacao -->
-  <!--<div class="pagination pagination-centered">
-    <ul>
-      <li class="anterior"><a href="#" title="Anterior"></a></li>
-      <li class="active"><a href="#" title="1">1</a></li>
-      <li><a href="#" title="1">2</a></li>
-      <li><a href="#" title="1">3</a></li>
-      <li><a href="#" title="1">...</a></li>
-      <li><a href="#" title="1">18</a></li>
-      <li class="proximo" title="Próximo"><a href="#"></a></li>
-    </ul>
-  </div>
-  <!-- /paginacao -->
- 
+  
+	<script>
+		function getURLParameter(name) {
+		    return decodeURI(
+		        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+		    );
+		}
+		if(getURLParameter("busca") == "null" || getURLParameter("busca") == ""){
+			$('.row-fluid conteudo destaques').show();
+			$('.pagination pagination-centered').show();
+		}else{
+			var busca = getURLParameter("busca");
+			$('#busca').val(busca);
+			$('#google_search').show();
+			$('.pagination pagination-centered').hide();
+		}
+	</script>
   
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
