@@ -112,12 +112,6 @@
           
           <!--nav--> 
           <nav class="nav-collapse collapse" title="menu principal">
-            <!--form-->
-            <form class="form-search">
-              <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';">
-              <button type="submit" class="btn sprite-icon-busca-hover" title="botão buscar"></button>
-            </form>
-            <!--/form-->
             
             <!--ul.nav-->
             <ul class="nav">
@@ -134,6 +128,13 @@
               </li>            
             </ul>
             <!--ul.nav-->
+            
+            <!--form-->
+            <form class="form-search">
+              <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';">
+              <button type="submit" class="btn sprite-icon-busca-hover" title="botão buscar"></button>
+            </form>
+            <!--/form-->
           </nav>
           <!--/nav-->
         </div>
