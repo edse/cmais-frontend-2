@@ -115,7 +115,7 @@
             <!--form-->
             <form class="form-search">
               <input type="text" class="input-medium search-query" accesskey="p" value="Encontre no site" onfocus="this.value='';">
-              <button type="submit" class="btn sprite-icon-busca-hover" value="Encontre no site" ></button>
+              <button type="submit" class="btn sprite-icon-busca-hover" value="Encontre no site" title="botão buscar"></button>
             </form>
             <!--/form-->
             
