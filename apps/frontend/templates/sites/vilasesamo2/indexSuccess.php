@@ -23,11 +23,11 @@
         
         <article class="span6 jogo">
           <div>
-            <a href="/vilasesamo2/jogos" title="Jogo" role="presentation" aria-hidden="true">
+            <a href="/vilasesamo2/jogos" role="presentation" aria-hidden="true">
               <i class="sprite-icon-jogos-peq"></i>Jogos
             </a>
             <a href="/vilasesamo2/jogos" class="img" role="presentation" aria-hidden="true">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg"  />
             </a>
           </div> 
           <a class="asset" href="/vilasesamo2/jogos-interna" title="Jogos: Nome do Jogo">Nome do Jogo</a>  
@@ -35,11 +35,11 @@
         
         <article class="span6 video">
           <div>
-            <a href="/vilasesamo2/clipes" title="Vídeos" role="presentation" aria-hidden="true">
+            <a href="/vilasesamo2/clipes" role="presentation" aria-hidden="true">
               <i class="sprite-icon-videos-peq"></i>Vídeos
             </a>
             <a href="/vilasesamo2/clipes" class="img" role="presentation" aria-hidden="true">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg"/>
             </a> 
           </div>
           <a class="asset" href="/vilasesamo2/videos-interna" title="Clipe: Nome do Video">Nome do Video</a>      
@@ -47,11 +47,11 @@
         
         <article class="span6 atividade">
           <div>
-            <a href="/vilasesamo2/atividades" title="Atividades" role="presentation" aria-hidden="true">
+            <a href="/vilasesamo2/atividades" role="presentation" aria-hidden="true">
               <i class="sprite-icon-atividades-peq"></i>atividades
             </a> 
             <a href="/vilasesamo2/atividades" class="img" role="presentation" aria-hidden="true" >
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" />
             </a>
           </div>
           <a class="asset" href="/vilasesamo2/atividades-interna" title="Atividade: Nome da atividade">Nome da atividade</a>       
