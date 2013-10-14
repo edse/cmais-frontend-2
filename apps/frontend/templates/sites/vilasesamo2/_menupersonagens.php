@@ -1,4 +1,4 @@
-<section class="bgtotal">
+<section class="bgtotal" role="presentation" aria-hidden="true">
   <span class="divisa tipo2"></span>
   <div id="carrossel-personagem">
     <span class="divisa1"></span>
