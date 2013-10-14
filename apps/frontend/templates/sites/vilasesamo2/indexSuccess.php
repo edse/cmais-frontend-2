@@ -13,7 +13,7 @@
   <!--/menu principal && banner promocional-->
   
   <!--carrossel personagens-->
-  <?php include_partial_from_folder('sites/vilasesamo2', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
+  <?php //include_partial_from_folder('sites/vilasesamo2', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
   <!--carrossel personagens-->
 </div>
 <!--/content-->
