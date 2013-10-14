@@ -9,7 +9,7 @@
    
   ?>
   <!--nav-->
-  <nav class="header-bar" title="menu principal vila sesamo">
+  <nav class="header-bar" role="navigation" aria-label="Site Navigation" >
     
     <!--content-->
     <div class="content">
