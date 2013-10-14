@@ -131,7 +131,7 @@
             
             <!--form-->
             <form class="form-search">
-              <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';">
+              <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';" title="Encontre no site">
               <button type="submit" class="btn sprite-icon-busca-hover" title="buscar no site vila sesamo"></button>
             </form>
             <!--/form-->
