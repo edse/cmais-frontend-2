@@ -170,10 +170,6 @@
               <form id="page_form" action="" method="post">
                 <input type="hidden" name="return_url" value="<?php echo $url?>" />
                 <input type="hidden" name="page" id="page" value="" />
-                <input type="hidden" name="palavra" id="palavra" value="<?php echo $palavra ?>" />
-                <input type="hidden" name="ordem" id="ordem" value="<?php echo $ordem ?>" />
-                <input type="hidden" name="sequencia" id="sequencia" value="<?php echo $sequencia ?>" />
-                <input type="hidden" name="ate" id="ate" value="<?php echo $ate ?>" />
               </form>
               <script>
 				function goToPage(i) {
