@@ -106,7 +106,6 @@ $apresentador = Doctrine_Query::create()
               </div>
             </div>
             <span class="bordaBottomRV"></span>
-            
             <div class="listaVideos" style="display: none">
               <?php if(count($pager) > 0): ?>
               <?php foreach($pager->getResults() as $d): ?>

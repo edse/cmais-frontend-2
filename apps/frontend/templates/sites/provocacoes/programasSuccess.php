@@ -95,7 +95,7 @@
                   <form class="chave" name="busca" id="busca" method="get">
                     <div class="palavra-chave">
                       <p>Buscar palavra-chave</p>
-                      <input class="campo" type="text" name="palavra" id="palavra" />
+                      <input class="campo" type="text" name="palavra" id="palavra" value=""  />
                       <a href="javascript: document.busca.submit()" class="confirmar"><span>buscar</span></a>
                     </div>
                   </form>
@@ -103,15 +103,10 @@
               </div>
             </div>
             <span class="bordaBottomRV"></span>
-            
             <div class="listaVideos" style="display: none">
-              <?php if(count($pager) > 0):
-              ?>
-              <?php foreach($pager->getResults() as $d):
-              ?>
-              <?php $videos = $d -> retriveRelatedAssetsByAssetTypeId(6);
-			//$guest = $d->retriveRelatedAssetsByRelationType('entrevistado');
-              ?>
+              <?php if(count($pager) > 0):?>
+              <?php foreach($pager->getResults() as $d):?>
+              <?php $videos = $d -> retriveRelatedAssetsByAssetTypeId(6);?>
               <div class="boxLista-video">
                 <span class="topo"></span>
                 <div class="centro">
@@ -181,11 +176,11 @@
               <?php endif;?>
             </div>
             
-        
-            <div id="google_search" style="display:none; text-align: left">
+            
+          <div id="google_search" style="display:none; text-align: left">
 				<script>
 				  (function() {
-				    var cx = '005232987476052626260:lghsxq1b8ti';
+				    var cx = '005232987476052626260:njc1dibo15k';
 				    var gcse = document.createElement('script');
 				    gcse.type = 'text/javascript';
 				    gcse.async = true;
@@ -197,6 +192,7 @@
 				</script>
 				<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
            	</div>
+           	
 			<script>
 				function getURLParameter(name) {
 				    return decodeURI(
@@ -211,9 +207,6 @@
 					$('#google_search').show();
 				}
 			</script>
-        
-        
-            
             
             <!-- BOX PUBLICIDADE 2 -->
 		  <div class="box-publicidade pub-grd grid3">
