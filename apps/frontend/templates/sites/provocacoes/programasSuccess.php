@@ -180,7 +180,7 @@
           <div id="google_search" style="display:none; text-align: left">
 				<script>
 				  (function() {
-				    var cx = '005232987476052626260:njc1dibo15k';
+				    var cx = '005232987476052626260:lghsxq1b8ti';
 				    var gcse = document.createElement('script');
 				    gcse.type = 'text/javascript';
 				    gcse.async = true;
