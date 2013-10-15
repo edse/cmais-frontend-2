@@ -170,7 +170,7 @@ $apresentador = Doctrine_Query::create()
               <?php endif;?>
             </div>
             
-            <div id="google_search" style="display:none">
+            <div id="google_search" style="display:none; text-align: left">
 				<script>
 				  (function() {
 				    var cx = '005232987476052626260:njc1dibo15k';
