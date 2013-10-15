@@ -166,7 +166,7 @@ function slugfy($string){
        <div id="google_search" style="display:none">
 			<script>
 			  (function() {
-			    var cx = '005232987476052626260:sje2yjrqtmq';
+			    var cx = '005232987476052626260:vt2ifk1fbhg';
 			    var gcse = document.createElement('script');
 			    gcse.type = 'text/javascript';
 			    gcse.async = true;
