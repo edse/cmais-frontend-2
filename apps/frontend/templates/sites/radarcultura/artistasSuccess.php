@@ -163,8 +163,6 @@ function slugfy($string){
        <!--letras-->
        <!--lista-->
        <div class="row-fluid">
-        <div class=" span6">
-       
        <div id="google_search" style="display:none">
 			<script>
 			  (function() {
@@ -179,8 +177,8 @@ function slugfy($string){
 			  })();
 			</script>
 			<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
-       	</div>           	
-        	
+       	</div>
+        <div class=" span6">
           <table class="table table-striped artista" style="display:none">
             <tbody>
               <thead>
