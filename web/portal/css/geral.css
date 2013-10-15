@@ -533,7 +533,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 #menu-portal .menu-aberto .abas li.ativo a,
 #menu-portal .menu-aberto .abas li:hover a { background:#ff6633; }
 #menu-portal .box-logo {display:none;}
-
+#menu-portal .abas-menu.abas li a{color:#FFFFFF!important;}
 /** tv **/
 #menu-portal .menu-aberto  .abas .tvcultura.ativo span,
 #menu-portal .menu-aberto  .abas .tvcultura:hover span { left:41px; }
