@@ -15,9 +15,8 @@
   <!--span12-->
   <div class="span12">
     
-    <h1><i class="sprite-icon-colorir-med"></i>Atividades</h1>
+    <h3><i class="sprite-icon-colorir-med"></i>Atividades</h3>
     
-    <!--destaque-->
     <div class="span10 destaque-filtro especial">
  
         <div class="tab-content">
@@ -58,8 +57,7 @@
         
  
        
-    </div>
-    <!--destaque-->
+      </div>
     <nav class="span2">
       <p>escolha por personagem<span class="sprite-seta-down"></span></p>
       <ul class="filtro-personagem">
