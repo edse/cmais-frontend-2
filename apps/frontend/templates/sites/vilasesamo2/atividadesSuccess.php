@@ -19,45 +19,44 @@
     
     <!--destaque-->
     <div class="span10 destaque-filtro especial">
- 
-        <div class="tab-content">
-        <div class="tab-pane active" id="clipes" class="aba1">
-          <article class="span6 clipes">
-            <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
-              <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
-            </a> 
-            <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
-          </article>
-          <article class="span6 clipes">
-            <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
-              <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
-            </a> 
-            <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
-          </article>
-        </div>
-        <div class="tab-pane" id="episodios">
-          <article class="span6 clipes">
-            <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
-              <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
-            </a> 
-            <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
-          </article>
-          <article class="span6 clipes">
-            <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
-              <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
-            </a> 
-            <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
-          </article>
-        </div>
-        
+      
+      <div class="tab-pane active" id="clipes" class="aba1">
+        <article class="span6 clipes">
+          <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
+            <span class="sprite-selo">Novidade!</span>
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
+          </a> 
+          <h2><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h2>
+        </article>
+        <article class="span6 clipes">
+          <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
+            <span class="sprite-selo">Novidade!</span>
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
+          </a> 
+          <h2><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h2>
+        </article>
       </div>
-       
+      
+      <div class="tab-pane" id="episodios">
+        <article class="span6 clipes">
+          <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
+            <span class="sprite-selo">Novidade!</span>
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
+          </a> 
+          <h2><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h12>
+        </article>
+        <article class="span6 clipes">
+          <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
+            <span class="sprite-selo">Novidade!</span>
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
+          </a> 
+          <h2><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h2>
+        </article>
+      </div>
+      
     </div>
     <!--destaque-->
+    
     <nav class="span2">
       <p>escolha por personagem<span class="sprite-seta-down"></span></p>
       <ul class="filtro-personagem">
