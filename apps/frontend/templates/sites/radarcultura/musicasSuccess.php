@@ -40,7 +40,7 @@
         <div class="row-fluid musicas">
             <h1>Lista de músicas por título</h1>
             <?php if(isset($letter)):?>
-              <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS COM A LETRA "<?php echo strtoupper(@$letter)?>"</small>
+              <small id="small-letras"><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS COM A LETRA "<?php echo strtoupper(@$letter)?>"</small>
             <?php else:?>
               <!--small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small-->
             <?php endif; ?>  
@@ -195,6 +195,7 @@
 			$('#busca-input').val(busca);
 			$('#google_search').show();
 			$('.pagination-centered').hide();
+			$('#small-letras').hide();
 		}
 	</script>      
       
