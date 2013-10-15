@@ -108,7 +108,7 @@ function slugfy($string){
             
             <div class="span5 pull-right">
               <!--busca-->
-              <form action="" method="get" id="busca-radar">
+              <form action="radarcultura/artistas" method="get" id="busca-radar">
                 <div class="row-fluid">
                   <input class="btn pull-right btn-busca" type="submit" value="Busca">
                   <div class="input-prepend">
