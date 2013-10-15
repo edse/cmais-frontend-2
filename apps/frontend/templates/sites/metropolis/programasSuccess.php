@@ -224,41 +224,43 @@ $apresentador = Doctrine_Query::create()
               </script>
           	  
 		      <!-- PAGINACAO -->
+		     </div> 
+		      
 		        <?php endif; ?>
 		      <?php endif; ?>
-		            
-		          <div id="google_search" style="display:none; text-align: left">
-						<script>
-						  (function() {
-						    var cx = '005232987476052626260:lghsxq1b8ti';
-						    var gcse = document.createElement('script');
-						    gcse.type = 'text/javascript';
-						    gcse.async = true;
-						    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-						        '//www.google.com/cse/cse.js?cx=' + cx;
-						    var s = document.getElementsByTagName('script')[0];
-						    s.parentNode.insertBefore(gcse, s);
-						  })();
-						</script>
-						<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
-		           	</div>
-		           	
+		      
+	            
+	          <div id="google_search" style="display:none; text-align: left">
 					<script>
-						function getURLParameter(name) {
-						    return decodeURI(
-						        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
-						    );
-						}
-						if(getURLParameter("palavra") == "null" || getURLParameter("palavra") == ""){
-							$('.listaVideos').show();
-						}else{
-							var busca = getURLParameter("palavra");
-							$('#palavra').val(busca);
-							$('#google_search').show();
-						}
+					  (function() {
+					    var cx = '005232987476052626260:lghsxq1b8ti';
+					    var gcse = document.createElement('script');
+					    gcse.type = 'text/javascript';
+					    gcse.async = true;
+					    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+					        '//www.google.com/cse/cse.js?cx=' + cx;
+					    var s = document.getElementsByTagName('script')[0];
+					    s.parentNode.insertBefore(gcse, s);
+					  })();
 					</script>
-		            
-          		</div>
+					<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
+	           	</div>
+	           	
+				<script>
+					function getURLParameter(name) {
+					    return decodeURI(
+					        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+					    );
+					}
+					if(getURLParameter("palavra") == "null" || getURLParameter("palavra") == ""){
+						$('.listaVideos').show();
+					}else{
+						var busca = getURLParameter("palavra");
+						$('#palavra').val(busca);
+						$('#google_search').show();
+					}
+				</script>
+          		
           	</div>
           </div>
            <!-- BOX PUBLICIDADE 2 -->
