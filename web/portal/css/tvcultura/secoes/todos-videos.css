@@ -1,6 +1,6 @@
 @import url("../geral.css");
 .box-padrao {margin:0 0 20px 0;}
-#menu-rodape {max-height:960px; height:auto; margin-top:0;}
+#menu-rodape {/*max-height:960px;*/ height:auto; margin-top:0;}
 #menu-rodape .neutro a {color:#333; height:24px;}
 #menu-rodape .abas {padding-left:0; width:970px;}
 #menu-rodape .abas .neutro { margin-left:0; padding:0; background:none; }
@@ -8,7 +8,7 @@
 #menu-rodape .abas .neutro:hover span, 
 #menu-rodape .abas .neutro span { background: url("../../../images/detalhe-menu.png") no-repeat scroll transparent -13px 0; float: left;  height: 24px; width: 13px;}
 #menu-rodape .abas-conteudo {height:auto; margin-top:-8px; padding-top:0; position:relative;}
-#galeria-videos .blocos {height:auto; max-height:900px; overflow:hidden;}
+#galeria-videos .blocos {height:auto; /*max-height:900px;*/ overflow:hidden;}
 #galeria-videos .blocos ul {margin:10px 0; height:auto; max-height:880px;}
 #galeria-videos .blocos li {_margin:0 5px;}
 #galeria-videos .capa ul {*margin-left:0;}
@@ -54,4 +54,4 @@
 .abas li { margin-right:20px;}
 #galeria-videos .blocos,
 #menu-rodape .abas-conteudo { min-height:734px; }
-
+#menu-rodape .blocos a {color: #0000CC;text-align: left!important;float: left;}
