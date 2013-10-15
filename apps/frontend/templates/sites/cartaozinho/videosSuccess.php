@@ -130,9 +130,9 @@ $(function(){
           	    </div>
 
                 <div id="google_search" style="display:none">
-	                <script>
+					<script>
 					  (function() {
-					    var cx = '005232987476052626260:vi5b5ziiyl0';
+					    var cx = '005232987476052626260:qcszwkdqhje';
 					    var gcse = document.createElement('script');
 					    gcse.type = 'text/javascript';
 					    gcse.async = true;
@@ -142,7 +142,7 @@ $(function(){
 					    s.parentNode.insertBefore(gcse, s);
 					  })();
 					</script>
-					<gcse:searchresults-only></gcse:searchresults-only>
+					<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
                	</div>           	    
           	    
           	  </div>
