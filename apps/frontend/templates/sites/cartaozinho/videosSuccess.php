@@ -83,7 +83,7 @@ $(function(){
           <div id="menu-rodape" class="grid3">
           	
           	<ul class="abas">
-          	  <li class="neutro"><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value',''); $('#busca-galeria').submit()">Todos os V&iacute;deos</a><span></span></li>
+          	  <li class="neutro"><a href="videos">Todos os V&iacute;deos</a><span></span></li>
           	</ul>
           	
           	<div id="galeria-videos" class="abas-conteudo conteudo-rodape grid3">
@@ -104,15 +104,20 @@ $(function(){
                                     
                   ?>
                   <?php foreach($subsections as $s): ?>                   
-                  <li><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value','<?php echo $s->getId(); ?>'); $('#busca-galeria').submit()" <?php if($_REQUEST['section'] == $s->getId()): ?>class="ativo"<?php endif; ?>><strong><?php echo $s->getTitle(); ?></strong></a></li>
+                  <li><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value','<?php echo $s->getId(); ?>'); $('#busca').val(); $('#busca-galeria').submit()" <?php if($_REQUEST['section'] == $s->getId()): ?>class="ativo"<?php endif; ?>><strong><?php echo $s->getTitle(); ?></strong></a></li>
                   <?php endforeach; ?>
                 </ul>
           	    
-          	  	<form id="busca-galeria" name="busca" action="" method="get">
+          	  	<form id="busca-video" name="busca" action="" method="get">
           	  	  <label class="busque">Busque por <span>palavra-chave</span></label>
           	  	  <input type="text" class="campo-busca" name="busca" id="campo-busca" />
           	  	  <input type="submit" class="buscar"  id="buscar" value="buscar" style="cursor:pointer" />
           	  	</form>
+          	  	
+          	  	<form id="busca-galeria" name="busca-galeria" action="" method="post">
+          	  	  <input type="hidden" name="section" id="section" />
+          	  	</form>
+          	  	
           	  </div>
           	  
           	  <div id="todas" class="filho blocos" style="display:block;">
