@@ -12,9 +12,12 @@
 <div id="content">
 <!--section-->
 <section class="filtro row-fluid">
+  <!--span12-->
   <div class="span12">
-    <h3><i class="sprite-icon-colorir-med"></i>Atividades</h3>
     
+    <h1><i class="sprite-icon-colorir-med"></i>Atividades</h1>
+    
+    <!--destaque-->
     <div class="span10 destaque-filtro especial">
  
         <div class="tab-content">
@@ -52,10 +55,9 @@
         </div>
         
       </div>
-        
- 
        
-      </div>
+    </div>
+    <!--destaque-->
     <nav class="span2">
       <p>escolha por personagem<span class="sprite-seta-down"></span></p>
       <ul class="filtro-personagem">
@@ -105,7 +107,7 @@
       </ul>
     </nav> 
   </div>
-  
+  <!--/span12-->
 </section>
 <!--/section-->
 <span class="divisa"></span>
