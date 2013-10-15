@@ -224,12 +224,11 @@ $apresentador = Doctrine_Query::create()
               </script>
           	  
 		      <!-- PAGINACAO -->
-		     </div> 
 		      
 		        <?php endif; ?>
 		      <?php endif; ?>
-		      
-	            
+		      </div> 
+		        
 	          <div id="google_search" style="display:none; text-align: left">
 					<script>
 					  (function() {
@@ -261,8 +260,7 @@ $apresentador = Doctrine_Query::create()
 					}
 				</script>
           		
-          	</div>
-          </div>
+          	
            <!-- BOX PUBLICIDADE 2 -->
 		  <div class="box-publicidade pub-grd grid3">
 		    <!-- programas-assets-728x90 -->
