@@ -409,6 +409,6 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 .sem-margem-r{margin-right:0px;}
 .sem-margem-l{margin-left:0px;}
 .box-formatos-papel{display: block; overflow: hidden; margin:0 auto;width:735px;}
-.abas-menu.abas{color:#FFFFFF!important;}
+.abas-menu.abas li a{color:#FFFFFF!important;}
 
 
