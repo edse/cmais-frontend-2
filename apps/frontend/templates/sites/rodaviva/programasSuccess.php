@@ -158,10 +158,6 @@ $apresentador = Doctrine_Query::create()
               <form id="page_form" action="" method="post">
                 <input type="hidden" name="return_url" value="<?php if(isset($_REQUEST['url'])) echo $_REQUEST['url']; ?>" />
                 <input type="hidden" name="page" id="page" value="" />
-                <input type="hidden" name="palavra" id="palavra" value="<?php if(isset($_REQUEST['palavra'])) echo $_REQUEST['palavra']; ?>" />
-                <input type="hidden" name="ordem" id="ordem" value="<?php if(isset($_REQUEST['ordem'])) echo $_REQUEST['ordem']; ?>" />
-                <input type="hidden" name="sequencia" id="sequencia" value="<?php if(isset($_REQUEST['sequencia'])) echo $_REQUEST['sequencia']; ?>" />
-                <input type="hidden" name="ate" id="ate" value="<?php if(isset($_REQUEST['ate'])) echo $_REQUEST['ate']; ?>" />
               </form>
               <script>
 				function goToPage(i) {
@@ -175,9 +171,9 @@ $apresentador = Doctrine_Query::create()
             </div>
             
             <div id="google_search" style="display:none">
-                <script>
+				<script>
 				  (function() {
-				    var cx = '005232987476052626260:vi5b5ziiyl0';
+				    var cx = '005232987476052626260:njc1dibo15k';
 				    var gcse = document.createElement('script');
 				    gcse.type = 'text/javascript';
 				    gcse.async = true;
@@ -187,22 +183,20 @@ $apresentador = Doctrine_Query::create()
 				    s.parentNode.insertBefore(gcse, s);
 				  })();
 				</script>
-				<gcse:searchresults-only></gcse:searchresults-only>
-           	</div> 
+				<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
+           	</div>
 			<script>
 				function getURLParameter(name) {
 				    return decodeURI(
 				        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
 				    );
 				}
-				if(getURLParameter("busca") == "null" || getURLParameter("busca") == ""){
-					$('.capa').show();
-					$('.paginacao grid3').show();
+				if(getURLParameter("palavra") == "null" || getURLParameter("palavra") == ""){
+					$('.listaVideos').show();
 				}else{
-					var busca = getURLParameter("busca");
-					$('#campo-busca').val(busca);
+					var busca = getURLParameter("palavra");
+					$('#palavra').val(busca);
 					$('#google_search').show();
-					$('.paginacao grid3').hide();
 				}
 			</script>
         
