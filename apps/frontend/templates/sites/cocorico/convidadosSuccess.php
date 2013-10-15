@@ -37,6 +37,7 @@ $assets = $pager->getResults();
   <!-- titulo da pagina -->
   <h2 class="tit-pagina">Convidados</h2>
    <script>
+   /*
     $(function() {
       $('#alfabeto ul li a').click(function(){
         var letra = $(this).attr('title');
@@ -45,6 +46,7 @@ $assets = $pager->getResults();
         $('#frmBusca').submit();
       });
     });
+    */
    </script>
    
    <?php
