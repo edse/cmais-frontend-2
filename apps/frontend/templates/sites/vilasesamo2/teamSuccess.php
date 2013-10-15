@@ -10,7 +10,7 @@
  .conteudo-asset {padding: 0;}
  .q-pers-01{float:left; width: 110px; height:110px; margin:5px;background:#000000;}
  .q-pers-02{float:left; width: 200px; height:200px; margin:5px;background:blue;}
- .q-pers-03{float:left; width: 300px; height:300px; margin:5px;background:red;}
+ .q-pers-03{float:left; width: 290px; height:290px; margin:5px;background:red;}
  .q-pers-04{float:left; width: 410px; height:410px; margin:5px;background:yellow;}
 </style>
 <!-- HEADER -->
@@ -110,7 +110,7 @@
       //console.log(classes[j])
     });
     */
-    $container.isotope('shuffle');
+    $container.isotope('mansory');
     //console.log(contA +"/"+ contB +"/"+contC+"/"+contD)
     //console.log(classes)
   });
