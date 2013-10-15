@@ -99,7 +99,7 @@ $apresentador = Doctrine_Query::create()
                     <div class="palavra-chave">
                       <p>Buscar palavra-chave</p>
                       <input class="campo" type="text" name="palavra" id="palavra" value="" />
-                      <a href="javascript: document.busca.submit()" class="confirmar"><span>confirmar</span></a>
+                      <a href="javascript: document.busca.submit()" class="confirmar"><span>buscar</span></a>
                     </div>
                   </form>
                 </div>
