@@ -83,7 +83,7 @@ $(function(){
           <div id="menu-rodape" class="grid3">
           	
           	<ul class="abas">
-          	  <li class="neutro"><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value',''); $('#busca-galeria').submit()">Todos os V&iacute;deos</a><span></span></li>
+          	  <li class="neutro"><a href="videos">Todos os V&iacute;deos</a><span></span></li>
           	</ul>
           	
           	<div id="galeria-videos" class="abas-conteudo conteudo-rodape grid3">
@@ -104,20 +104,24 @@ $(function(){
                                     
                   ?>
                   <?php foreach($subsections as $s): ?>                   
-                  <li><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value','<?php echo $s->getId(); ?>'); $('#busca-galeria').submit()" <?php if($_REQUEST['section'] == $s->getId()): ?>class="ativo"<?php endif; ?>><strong><?php echo $s->getTitle(); ?></strong></a></li>
+                  <li><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value','<?php echo $s->getId(); ?>'); $('#busca').val(); $('#busca-galeria').submit()" <?php if($_REQUEST['section'] == $s->getId()): ?>class="ativo"<?php endif; ?>><strong><?php echo $s->getTitle(); ?></strong></a></li>
                   <?php endforeach; ?>
                 </ul>
           	    
-          	  	<form id="busca-galeria" name="busca" action="" method="post">
+          	  	<form id="busca-video" name="busca" action="" method="get">
           	  	  <label class="busque">Busque por <span>palavra-chave</span></label>
-          	  	  <input type="text" class="campo-busca" name="busca" id="campo-busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca']; ?>"/>
-                  <input type="hidden" name="section" id="section" value="<?php if(isset($_REQUEST['section'])) echo $_REQUEST['section']; ?>"/>
-          	  	  <input type="submit" class="buscar" name="buscar" id="buscar" value="buscar" style="cursor:pointer" />
+          	  	  <input type="text" class="campo-busca" name="busca" id="campo-busca" />
+          	  	  <input type="submit" class="buscar"  id="buscar" value="buscar" style="cursor:pointer" />
           	  	</form>
+          	  	
+          	  	<form id="busca-galeria" name="busca-galeria" action="" method="post">
+          	  	  <input type="hidden" name="section" id="section" />
+          	  	</form>
+          	  	
           	  </div>
           	  
           	  <div id="todas" class="filho blocos" style="display:block;">
-          	  	<div class="capa">
+          	  	<div class="capa" style="display:none;">
           	  	  <ul>
                   <?php if(count($pager) > 0): ?>
                     <?php foreach($pager->getResults() as $d): ?>
@@ -129,13 +133,30 @@ $(function(){
           	  	  <?php endif; ?>
           	      </ul>
           	    </div>
+
+                <div id="google_search" style="display:none">
+					<script>
+					  (function() {
+					    var cx = '005232987476052626260:qcszwkdqhje';
+					    var gcse = document.createElement('script');
+					    gcse.type = 'text/javascript';
+					    gcse.async = true;
+					    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+					        '//www.google.com/cse/cse.js?cx=' + cx;
+					    var s = document.getElementsByTagName('script')[0];
+					    s.parentNode.insertBefore(gcse, s);
+					  })();
+					</script>
+					<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
+               	</div>           	    
+          	    
           	  </div>
           	 
           	 
               <?php if(isset($pager)): ?>
                 <?php if($pager->haveToPaginate()): ?>
           	  <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
-          	  <div class="paginacao grid3">
+          	  <div class="paginacao grid3" style="display:none">
           	    <div class="centraliza">
           	      <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn-ante"></a>
           	      <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);">Anterior</a>
@@ -169,6 +190,22 @@ $(function(){
 		        <?php endif; ?>
 		      <?php endif; ?>
 		     
+				<script>
+					function getURLParameter(name) {
+					    return decodeURI(
+					        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+					    );
+					}
+					if(getURLParameter("busca") == "null" || getURLParameter("busca") == ""){
+						$('.capa').show();
+						$('.paginacao grid3').show();
+					}else{
+						var busca = getURLParameter("busca");
+						$('#campo-busca').val(busca);
+						$('#google_search').show();
+						$('.paginacao grid3').hide();
+					}
+				</script>		     
 		      
 			</div>
 		  </div>
