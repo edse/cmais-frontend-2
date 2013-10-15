@@ -233,7 +233,7 @@ $apresentador = Doctrine_Query::create()
 	          <div id="google_search" style="display:none; text-align: left">
 					<script>
 					  (function() {
-					    var cx = '005232987476052626260:lghsxq1b8ti';
+					    var cx = '005232987476052626260:rlhl_bfsopk';
 					    var gcse = document.createElement('script');
 					    gcse.type = 'text/javascript';
 					    gcse.async = true;
