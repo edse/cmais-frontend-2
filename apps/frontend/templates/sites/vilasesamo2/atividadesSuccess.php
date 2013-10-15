@@ -10,12 +10,12 @@
 
 <!--content-->
 <div id="content">
-  <div class="section scroll row-fluid">
+  <section class="section scroll row-fluid">
     <h3><i class="sprite-icon-colorir-med"></i>Atividades <i class="seta-scroll sprite-scroll-atividades"></i></h3>
-  </div>
-  <div class="scroll row-fluid">
+  </section>
+  <section class="scroll row-fluid">
     <h1><i class="section sprite-icon-colorir-med"></i>Atividades <i class="seta-scroll sprite-scroll-atividades"></i></h1>
-  </div>
+  </section>
 
 </div>
 <!--/content-->
