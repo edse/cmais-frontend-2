@@ -95,81 +95,19 @@ $apresentador = Doctrine_Query::create()
                   <h2><?php echo $section->getTitle() ?></h2>
                 </div>
                 <div class="busca">
-                  <form class="chave" name="busca" id="busca" method="post">
-                    <input type="hidden" name="ordem" id="ordem" value="" />
-                    <input type="hidden" name="sequencia" id="sequencia" value="" />
+                  <form class="chave" name="busca" id="busca" method="get">
                     <div class="palavra-chave">
                       <p>Buscar palavra-chave</p>
-                      <input class="campo" type="text" name="palavra" id="palavra" value="<?php if(isset($_REQUEST['palavra'])) echo $_REQUEST['palavra'] ?>" />
+                      <input class="campo" type="text" name="palavra" id="palavra" value="" />
                       <a href="javascript: document.busca.submit()" class="confirmar"><span>confirmar</span></a>
-                    </div>
-                    <span class="divisoria"></span>
-                    <div class="filtro">
-                      <!--div class="entrevistas">
-                      <p>Filtrar entrevistas</p>
-                      <label><input type="checkbox" name="checkbox" />na &iacute;ntegra</label>
-                      <label><input type="checkbox" name="checkbox" />com transcri&ccedil;&atilde;o</label>
-                      <label><input type="checkbox" name="checkbox" />internacional</label>
-                      </div-->
-                      <!--div class="formWrapper">
-                      <label><input type="radio" name="filtrar_por" value="tema" />Filtrar por tema</label>
-                      <select name="tema" id="tema">
-                      <option value="" selected="selected"> </option>
-                      <option value="Ciências">Ciências</option>
-                      <option value="Cultura">Cultura</option>
-                      <option value="Economia">Economia</option>
-                      <option value="Esporte">Esporte</option>
-                      <option value="Política">Política</option>
-                      </select>
-                      </div>
-                      <div class="formWrapper">
-                      <label><input type="radio" name="filtrar_por" value="apresentador" />Filtrar por apresentador</label>
-                      <select name="apresentador" id="apresentador">
-                      <option value="" selected="selected"> </option>
-                      <?php foreach($apresentador as $a): ?>
-                      <option value="<?php echo $a->getTitle() ?>"><?php echo $a->getTitle() ?></option>
-                      <?php endforeach; ?>
-                      </select>
-                      </div-->
-                      <div class="formWrapper">
-                        <script type="text/javascript">
-							$(function() {//onready
-								// Datepicker
-								$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
-								$('.datepicker').datepicker({
-									dateFormat : 'yy-mm-dd',
-									changeYear : true,
-									yearRange : '1987:c'
-								});
-							});
-
-                        </script>
-                        <label>
-                          <input type="radio" name="filtrar_por" value="periodo" />
-                          Filtrar por per&iacute;odo</label>
-                        <p class="de">de</p>
-                        <input type="text" name="de" id="de" class="datepicker" value="<?php if(isset($_REQUEST['de'])) echo $_REQUEST['de'] ?>" />
-                        <p class="ate">at&eacute;</p>
-                        <input type="text" name="ate" id="ate" class="datepicker" value="<?php if(isset($_REQUEST['ate'])) echo $_REQUEST['ate'] ?>" />
-                        <a href="javascript: document.busca.submit()" class="confirmar"><span>confirmar</span></a>
-                      </div>
-                    </div>
-                    <span class="divisoria"></span>
-                    <div class="organizacao">
-                      <p>Organizar por</p>
-                      <button onclick="$('#busca #ordem').attr('value','cronologica'); $('#busca #sequencia').attr('value','<?php if($_REQUEST['sequencia'] == 'asc'): ?>desc<?php else:?>asc<?php endif;?>'); $('#busca').submit()" <?php if($_REQUEST['ordem'] == 'cronologica'): ?>onmouseover="$(this).children('span').html('inverter seleção')" onmouseout="$(this).children('span').html('ordem cronológica')" class="cronologica ativo"<?php else:?> class="cronologica"<?php endif;?>>
-                        <span>ordem cronol&oacute;gica</span>
-                      </button>
-                      <button onclick="$('#busca #ordem').attr('value','alfabetica'); $('#busca #sequencia').attr('value','<?php if($_REQUEST['sequencia'] == 'asc'): ?>desc<?php else:?>asc<?php endif;?>'); $('#busca').submit()" <?php if($_REQUEST['ordem'] == 'alfabetica'): ?>onmouseover="$(this).children('span').html('inverter seleção')" onmouseout="$(this).children('span').html('ordem alfabética')" class="alfabetica ativo"<?php else:?> class="alfabetica"<?php endif;?>>
-                        <span>ordem alfab&eacute;tica</span>
-                      </button>
                     </div>
                   </form>
                 </div>
               </div>
             </div>
             <span class="bordaBottomRV"></span>
-            <div class="listaVideos">
+            
+            <div class="listaVideos" style="display: none">
               <?php if(count($pager) > 0): ?>
               <?php foreach($pager->getResults() as $d): ?>
               <?php $videos = $d -> retriveRelatedAssetsByAssetTypeId(6); ?>
@@ -235,6 +173,39 @@ $apresentador = Doctrine_Query::create()
               <?php endif;?>
               <?php endif;?>
             </div>
+            
+            <div id="google_search" style="display:none">
+                <script>
+				  (function() {
+				    var cx = '005232987476052626260:vi5b5ziiyl0';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:searchresults-only></gcse:searchresults-only>
+           	</div> 
+			<script>
+				function getURLParameter(name) {
+				    return decodeURI(
+				        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+				    );
+				}
+				if(getURLParameter("busca") == "null" || getURLParameter("busca") == ""){
+					$('.capa').show();
+					$('.paginacao grid3').show();
+				}else{
+					var busca = getURLParameter("busca");
+					$('#campo-busca').val(busca);
+					$('#google_search').show();
+					$('.paginacao grid3').hide();
+				}
+			</script>
+        
             <!-- BOX PUBLICIDADE 2 -->
             <div class="box-publicidade pub-grd grid3">
               <!-- programas-assets-728x90 -->

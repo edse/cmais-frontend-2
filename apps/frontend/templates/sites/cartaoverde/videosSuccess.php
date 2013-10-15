@@ -93,7 +93,7 @@ $(function(){
                 <form id="busca-galeria" name="busca" action="" method="get">
                   <label class="busque">Busque por <span>palavra-chave</span></label>
                   <input type="text" class="campo-busca" name="busca" id="campo-busca" value=""/>
-                  <input type="submit" class="buscar" name="buscar" id="buscar" value="buscar" style="cursor:pointer" />
+                  <input type="submit" class="buscar" id="buscar" value="buscar" style="cursor:pointer" />
                 </form>
               </div>
               

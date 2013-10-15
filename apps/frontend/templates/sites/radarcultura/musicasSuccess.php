@@ -40,17 +40,17 @@
         <div class="row-fluid musicas">
             <h1>Lista de músicas por título</h1>
             <?php if(isset($letter)):?>
-              <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
+              <small id="small-letras"><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS COM A LETRA "<?php echo strtoupper(@$letter)?>"</small>
             <?php else:?>
-              <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small>
+              <!--small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small-->
             <?php endif; ?>  
             <div class="span5 pull-right">
               <!--busca-->
-              <form action="" method="get" id="busca-radar">
+              <form action="/musicas" method="get" id="busca-radar">
                 <div class="row-fluid">
                   <input class="btn pull-right btn-busca" type="submit" value="Busca">
                   <div class="input-prepend">
-                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" value="" /><span class="add-on pull-right"><i class="icon-search"></i></span>
+                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" /><span class="add-on pull-right"><i class="icon-search"></i></span>
                   </div>
                 </div>  
               </form>
@@ -126,7 +126,7 @@
 				    s.parentNode.insertBefore(gcse, s);
 				  })();
 				</script>
-				<gcse:searchresults-only></gcse:searchresults-only>
+				<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
            	</div>           
           
           
@@ -195,6 +195,7 @@
 			$('#busca-input').val(busca);
 			$('#google_search').show();
 			$('.pagination-centered').hide();
+			$('#small-letras').hide();
 		}
 	</script>      
       
@@ -308,7 +309,7 @@
         <script src="http://cmais.com.br/portal/js/messages_ptbr.js" type="text/javascript"></script>
         <script type="text/javascript">
         $(document).ready(function(){
-
+		  /*	
           $('#busca-radar').submit(function() {
             if($("#busca-por1").is(':checked'))
               self.location.href = "/musicas/busca-por/"+$('#busca-input').val();
@@ -316,7 +317,7 @@
               self.location.href = "/artistas/busca-por/"+$('#busca-input').val();
             return false;
           });                    
-          
+          */
           var validator = $('#form-indicacao').validate({
             rules:{
               nome:{
