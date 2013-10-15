@@ -151,9 +151,9 @@ function slugfy($string){
             <br/>
             
             <?php if(isset($letter)):?>
-              <small><strong><?php echo $pager->count()?></strong> ARTISTAS CADASTRADOS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
+              <small class="small-letras"><strong><?php echo $pager->count()?></strong> ARTISTAS CADASTRADOS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
             <?php else:?>
-              <small><strong><?php echo $pager->count()?></strong> ARTISTAS CADASTRADOS</small>
+              <small class="small-letras"><strong><?php echo $pager->count()?></strong> ARTISTAS CADASTRADOS</small>
             <?php endif; ?>
           
           </div>
@@ -254,6 +254,7 @@ function slugfy($string){
 			$('#busca-input').val(busca);
 			$('#google_search').show();
 			$('.pagination-centered').hide();
+			$('.small-letras').hide();
 		}
 	</script>
 
