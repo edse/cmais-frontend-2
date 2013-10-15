@@ -163,21 +163,6 @@ function slugfy($string){
        <!--letras-->
        <!--lista-->
        <div class="row-fluid">
-       <div id="google_search" style="display:none">
-			<script>
-			  (function() {
-			    var cx = '005232987476052626260:vt2ifk1fbhg';
-			    var gcse = document.createElement('script');
-			    gcse.type = 'text/javascript';
-			    gcse.async = true;
-			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-			        '//www.google.com/cse/cse.js?cx=' + cx;
-			    var s = document.getElementsByTagName('script')[0];
-			    s.parentNode.insertBefore(gcse, s);
-			  })();
-			</script>
-			<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
-       	</div>
         <div class=" span6">
           <table class="table table-striped artista" style="display:none">
             <tbody>
@@ -230,6 +215,23 @@ function slugfy($string){
             </tbody>
           </table>
         </div>
+       
+       <div id="google_search" style="display:none">
+			<script>
+			  (function() {
+			    var cx = '005232987476052626260:vt2ifk1fbhg';
+			    var gcse = document.createElement('script');
+			    gcse.type = 'text/javascript';
+			    gcse.async = true;
+			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+			        '//www.google.com/cse/cse.js?cx=' + cx;
+			    var s = document.getElementsByTagName('script')[0];
+			    s.parentNode.insertBefore(gcse, s);
+			  })();
+			</script>
+			<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
+       	</div>        
+        
       </div>
       <!--lista-->
 
