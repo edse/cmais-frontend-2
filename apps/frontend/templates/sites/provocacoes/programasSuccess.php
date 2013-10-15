@@ -93,8 +93,6 @@
                 </div>
                 <div class="busca">
                   <form class="chave" name="busca" id="busca" method="get">
-                    <input type="hidden" name="ordem" id="ordem" value="" />
-                    <input type="hidden" name="sequencia" id="sequencia" value="" />
                     <div class="palavra-chave">
                       <p>Buscar palavra-chave</p>
                       <input class="campo" type="text" name="palavra" id="palavra" />
@@ -105,6 +103,7 @@
               </div>
             </div>
             <span class="bordaBottomRV"></span>
+            
             <div class="listaVideos" style="display: none">
               <?php if(count($pager) > 0):
               ?>
@@ -182,38 +181,38 @@
               <?php endif;?>
             </div>
             
-            
-	            <div id="google_search" style="display:none; text-align: left">
-					<script>
-					  (function() {
-					    var cx = '005232987476052626260:lghsxq1b8ti';
-					    var gcse = document.createElement('script');
-					    gcse.type = 'text/javascript';
-					    gcse.async = true;
-					    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-					        '//www.google.com/cse/cse.js?cx=' + cx;
-					    var s = document.getElementsByTagName('script')[0];
-					    s.parentNode.insertBefore(gcse, s);
-					  })();
-					</script>
-					<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
-	           	</div>
+        
+            <div id="google_search" style="display:none; text-align: left">
 				<script>
-					function getURLParameter(name) {
-					    return decodeURI(
-					        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
-					    );
-					}
-					if(getURLParameter("palavra") == "null" || getURLParameter("palavra") == ""){
-						$('.listaVideos').show();
-					}else{
-						var busca = getURLParameter("palavra");
-						$('#palavra').val(busca);
-						$('#google_search').show();
-					}
+				  (function() {
+				    var cx = '005232987476052626260:lghsxq1b8ti';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
 				</script>
-            
-            
+				<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
+           	</div>
+			<script>
+				function getURLParameter(name) {
+				    return decodeURI(
+				        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+				    );
+				}
+				if(getURLParameter("palavra") == "null" || getURLParameter("palavra") == ""){
+					$('.listaVideos').show();
+				}else{
+					var busca = getURLParameter("palavra");
+					$('#palavra').val(busca);
+					$('#google_search').show();
+				}
+			</script>
+        
+        
             
             
             <!-- BOX PUBLICIDADE 2 -->
