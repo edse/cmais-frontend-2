@@ -54,4 +54,4 @@
 .abas li { margin-right:20px;}
 #galeria-videos .blocos,
 #menu-rodape .abas-conteudo { min-height:734px; }
-
+#menu-rodape .blocos a {color: #0000CC;text-align: left!important;float: left;}
