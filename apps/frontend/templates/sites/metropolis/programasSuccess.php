@@ -103,7 +103,7 @@ $apresentador = Doctrine_Query::create()
           					<h2><?php echo $section->getTitle() ?></h2>
           				</div>
           				<div class="busca">
-      				  <form class="chave" name="busca" id="busca" method="post">
+      				  <form class="chave" name="busca" id="busca" method="get">
       				    <div class="palavra-chave">
       				      <p>Buscar palavra-chave</p>
       				      <input class="campo" type="text" name="palavra" id="palavra />

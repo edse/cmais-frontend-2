@@ -92,7 +92,7 @@
                   ?></h2>
                 </div>
                 <div class="busca">
-                  <form class="chave" name="busca" id="busca" method="post">
+                  <form class="chave" name="busca" id="busca" method="get">
                     <input type="hidden" name="ordem" id="ordem" value="" />
                     <input type="hidden" name="sequencia" id="sequencia" value="" />
                     <div class="palavra-chave">
