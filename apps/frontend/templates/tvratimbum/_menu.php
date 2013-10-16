@@ -51,12 +51,12 @@
             </ul>
           </div>
         </div>
-        <!--destaque imagem -->
+        <!--destaque imagem >
         <a href="http://tvratimbum.cmais.com.br/especial/mes-das-criancas-e-na-tv-ra-tim-bum-1" title="Mês das crianças e na TV Rá Tim Bum!" class="btn-destaque-topo">
           <img class="destaqueTopo" src="http://cmais.com.br/portal/tvratimbum/image/topo-site-tvrtb.png" alt="A TV que cresce com você!" />
         </a>
         <!--/destaque imagem -->
-        <!-- destaque antigo ul>
+        <!-- destaque antigo ul-->
         <div id="destaque-ferias">
           
           <ul>
@@ -79,7 +79,7 @@
               </map>
             </li>
           </ul>
-          -->
+          
           <!-- destaque antigo ul>
             <li>
               <img src="http://cmais.com.br/portal/tvratimbum/image/btn-missaominuto.png" usemap="#missao"/>
@@ -105,7 +105,7 @@
                 <area title="Sessão Piada Rá Tim Bum" alt="Sessão Piada Rá Tim Bum" shape="circle" coords="109,110,99" href="/piadas" />
               </map>
             </li>
-          </ul
-          
+          </ul>
+        -->  
         </div>
-        -->
+        
