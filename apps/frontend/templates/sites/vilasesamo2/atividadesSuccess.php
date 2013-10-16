@@ -1,5 +1,8 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
-
+<!--scripts-->
+<script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
+<!--script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script-->
+<script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <script>
   $("body").addClass("interna atividades");
 </script>
@@ -157,7 +160,4 @@
   <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
 </nav>
 
-<!--scripts-->
-<script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
-<!--script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script-->
-<script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
+
