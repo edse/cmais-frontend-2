@@ -19,43 +19,29 @@
     <h1 title="Destaque Atividades"><i class="sprite-icon-colorir-med"></i>Atividades</h1>
     
     <!--destaque-filtro-->
-    <div class="span10 destaque-filtro especial">
- 
-
-        <div class="tab-pane active" id="clipes" class="aba1">
+    <div class="span10 destaque-filtro">
+      <!--/destaques-->
+      <div class="aba1">
+        <h2 title="Novidade Atividade">
           <article class="span6 clipes">
             <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
               <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Descrição Figura" /> 
             </a> 
-            <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
+            <a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a>
           </article>
+        </h2>
+        <h2 title="Novidade Atividade">
           <article class="span6 clipes">
             <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
               <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Descrição Figura" /> 
             </a> 
-            <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
+            <a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a>
           </article>
-        </div>
-        <div class="tab-pane" id="episodios">
-          <article class="span6 clipes">
-            <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
-              <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
-            </a> 
-            <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
-          </article>
-          <article class="span6 clipes">
-            <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
-              <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
-            </a> 
-            <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
-          </article>
-        </div>
-        
-
+        </h2>
+      </div>
+      <!--/destaques-->
     </div>
     <!--destaque-filtro-->
     <nav class="span2">
