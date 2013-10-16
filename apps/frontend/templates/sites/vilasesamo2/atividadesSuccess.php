@@ -125,21 +125,21 @@
       <a href="#" title="">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
         <i class="sprite-icone_atividade"></i>
-        <p>Nome jogo 1</p>
+        <p class="nav-atividades">Nome jogo 1</p>
       </a>
     </li>
     <li class="span4 element beto">
       <a href="#" title="">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
         <i class="sprite-icone_atividade"></i>
-        <p>Nome jogo 2 <br> quebra de linha</p>
+        <p class="nav-atividades">Nome jogo 2 <br> quebra de linha</p>
       </a>
     </li>
     <li class="span4 element beto">
       <a href="#" title="">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
         <i class="sprite-icone_atividade"></i>
-        <p>Nome jogo 3</p>
+        <p class="nav-atividades">Nome jogo 3</p>
       </a>
     </li>
   </ul> 
