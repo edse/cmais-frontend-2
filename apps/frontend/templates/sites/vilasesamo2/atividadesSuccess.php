@@ -16,11 +16,12 @@
   <div class="span12">
     
     <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
-    <h1><i class="sprite-icon-colorir-med"></i>Atividades</h1>
+    <h1 title="Destaque Atividades"><i class="sprite-icon-colorir-med"></i>Atividades</h1>
     
+    <!--destaque-filtro-->
     <div class="span10 destaque-filtro especial">
  
-        <div class="tab-content">
+
         <div class="tab-pane active" id="clipes" class="aba1">
           <article class="span6 clipes">
             <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
@@ -54,11 +55,9 @@
           </article>
         </div>
         
-      </div>
-        
- 
-       
-      </div>
+
+    </div>
+    <!--destaque-filtro-->
     <nav class="span2">
       <p>escolha por personagem<span class="sprite-seta-down"></span></p>
       <ul class="filtro-personagem">
