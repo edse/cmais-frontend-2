@@ -104,7 +104,7 @@ $(function(){
                                     
                   ?>
                   <?php foreach($subsections as $s): ?>                   
-                  <li><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value','<?php echo $s->getId(); ?>'); $('#busca').val(); $('#busca-galeria').submit()" <?php if($_REQUEST['section'] == $s->getId()): ?>class="ativo"<?php endif; ?>><strong><?php echo $s->getTitle(); ?></strong></a></li>
+                  <li><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value','<?php echo $s->getId(); ?>'); $('#campo-busca').val(''); $('#busca-galeria').submit()" <?php if($_REQUEST['section'] == $s->getId()): ?>class="ativo"<?php endif; ?>><strong><?php echo $s->getTitle(); ?></strong></a></li>
                   <?php endforeach; ?>
                 </ul>
           	    
@@ -114,7 +114,7 @@ $(function(){
           	  	  <input type="submit" class="buscar"  id="buscar" value="buscar" style="cursor:pointer" />
           	  	</form>
           	  	
-          	  	<form id="busca-galeria" name="busca-galeria" action="" method="post">
+          	  	<form id="busca-galeria" name="busca-galeria" action="videos" method="post">
           	  	  <input type="hidden" name="section" id="section" />
           	  	</form>
           	  	
