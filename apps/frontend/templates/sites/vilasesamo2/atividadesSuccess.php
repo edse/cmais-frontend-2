@@ -120,10 +120,10 @@
 <!--/section-->
 <section class="todos-itens ">
   <!--lista-->
- <div class="row-fluid show-grid">
+ <div class="row-fluid">
               <div class="span4">4</div>
               <div class="span4">4</div>
-              <div class="span4">4</div>
+              <div class="span3">4</div>
             </div>
   <!--lista-->  
 </section>
