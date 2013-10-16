@@ -197,12 +197,15 @@ $(function(){
               	<input type="hidden" name="page" id="page" value="" />
               </form>
               <script>
-              	function goToPage(i){
-                	$("#page").val(i);
-                	$("#page_form").submit();
-              	}
+                function goToPage(i){
+                  $("#page").val(i);
+                  $("#page_form").submit();
+                }
               </script>
-		      
+              <!-- PAGINACAO -->
+	        <?php endif; ?>
+	      <?php endif; ?>
+	      
 				<script>
 					function getURLParameter(name) {
 					    return decodeURI(
