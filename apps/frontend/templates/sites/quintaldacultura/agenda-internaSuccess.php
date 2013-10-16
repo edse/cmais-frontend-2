@@ -113,7 +113,7 @@
               </div>
               <!-- /menu-->
               <div class="box-content">
-              	<p><?php echo html_entity_decode($asset->AssetContent->render()) ?></p>
+              	<?php echo html_entity_decode($asset->AssetContent->render()) ?>
               </div>
              
             </div>
