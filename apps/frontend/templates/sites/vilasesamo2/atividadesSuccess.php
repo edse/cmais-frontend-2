@@ -107,21 +107,7 @@
         </li>
       </ul>
     </nav>
-    <script>
-    $('filtro-personagem ul li a').keypress(
-      function(e){
-        if (e.keyCode == 13) {
-            if ($(this).index() == 0) {
-                // code for first textarea;
-                alert($(this).index());
-            }
-            else {
-                // code for others
-                alert("not the first; this is numero " + $(this).index() + '!');
-            }
-        }
-    });
-    </script> 
+    
   </div>
   <!--/span12-->
 </section>

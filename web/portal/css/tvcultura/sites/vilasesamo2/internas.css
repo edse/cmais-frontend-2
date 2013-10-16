@@ -1,3 +1,4 @@
+@import("geral.css")
 body { background:#0172f9; }
 .header-bar ul { margin:12px 0 0 0; }
 .header-bar { position:fixed; background: url(/portal/images/capaPrograma/vilasesamo2/pattern-menu-interna.jpg) repeat-x; height:81px; top:48px; width: 100%; max-width:100%; }
@@ -26,10 +27,10 @@ body { background:#0172f9; }
 .filtro h1 { border-bottom:2px solid #0191fb; border-top:2px solid #0191fb; background:#3AAAEC; }
 #content .filtro h1 { padding-top:10px;  }
 .filtro .span2 { margin-left:0; background: #ee3021; width:19.14%; padding:0 0.6%;}
-.filtro .span2 p { color:#fff; text-align:center; text-transform:uppercase; margin-top:10px; overflow:hidden; position:relative; }
+.filtro .span2 h3 { color:#fff; text-align:center; text-transform:uppercase; margin-top:10px; overflow:hidden; position:relative;font-size: 16px;line-height: 21px; font-family:'dinmedium' }
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
 .filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1773px; top:0; }
-.filtro .span2 ul { background:#d71c0d; border:1px solid #c31408; overflow:hidden; margin-bottom:0; }
+.filtro .span2{ background:#d71c0d; border:1px solid #c31408; overflow:hidden; width: 175px;margin-left: 3px;display: block }
 .filtro .span10 { margin-left:0; width:80.86%; float:right; }
 .filtro .span12 { border-top:0px solid #0191fb; border-bottom:2px solid #0191fb; background:#EE3021;  /*border-left:2px solid #0191fb;*/  }
 .filtro .filtro-personagem { margin-left:0; }
@@ -156,7 +157,6 @@ body { background:#0172f9; }
 .interna.atividades .scroll,
 .interna.atividades .filtro { border-color:#b16af2; }
 .interna.atividades .filtro h1,
-.interna.atividades .filtro .span2,
 .interna.atividades .todos-itens li img,
 .interna.atividades .todos-itens li h2,
 .interna.atividades .filtro .span12 { border-color:#7732e5; }
