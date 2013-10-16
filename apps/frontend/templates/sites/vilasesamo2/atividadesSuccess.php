@@ -13,99 +13,115 @@
 <!--section-->
 <section class="filtro row-fluid">
   <!--span12-->
-  <div class="span12">
+  <div class="span12" role="navigation">
     
-    <h3><i class="sprite-icon-colorir-med"></i>Atividades</h3>
+    <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
+    <h1 title="Destaque Atividades"><i class="sprite-icon-colorir-med"></i>Atividades</h1>
     
-    <div class="span10 destaque-filtro especial">
- 
-        <div class="tab-content">
-        <div class="tab-pane active" id="clipes" class="aba1">
+    <!--destaque-filtro-->
+    <div class="span10 destaque-filtro">
+      <!--/destaques-->
+      <div class="aba1">
+        <h2 aria-describedby="Novidade Atividade">
           <article class="span6 clipes">
-            <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
+            <a class="img-destaque" href="/vilasesamo2/atividades">
               <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Descrição Figura destaque 1" />
+              <p>Nome Atividade</p> 
             </a> 
-            <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
           </article>
+        </h2>
+        <h2 aria-describedby="Novidade Atividade 2">
           <article class="span6 clipes">
-            <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
+            <a class="img-destaque" href="/vilasesamo2/atividades">
               <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Descrição Figura destaque 2" />
+              <p>Nome Atividade</p> 
             </a> 
-            <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
           </article>
-        </div>
-        <div class="tab-pane" id="episodios">
-          <article class="span6 clipes">
-            <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
-              <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
-            </a> 
-            <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
-          </article>
-          <article class="span6 clipes">
-            <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
-              <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Para Colorir" /> 
-            </a> 
-            <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir 2</a></h1>
-          </article>
-        </div>
-        
+        </h2>
       </div>
-        
- 
-       
-      </div>
-    <nav class="span2">
-      <p>escolha por personagem<span class="sprite-seta-down"></span></p>
+      <!--/destaques-->
+    </div>
+    <!--destaque-filtro-->
+    
+    <nav role="navigation" class="span2">
+      <h3>escolha por personagem</h3>
+      
       <ul class="filtro-personagem">
        
        <li>
         <div class="inner bel">
-          <a href="/vilasesamo2/personagens/bel" title="Bel" class="btn-bel" data-filter=".bel">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="Personagem" />
-           </a>
+          <a href="/vilasesamo2/personagens/bel" class="btn-bel" data-filter=".bel">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="filtro bel" />
+          </a>
         </div>
        </li>
         <li>
           <div class="inner beto">
-            <a href="/vilasesamo2/personagens/beto" title="Beto" class="btn-beto" data-filter=".beto"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/beto_personagem.png" alt="Personagem" /></a>
+            <a href="/vilasesamo2/personagens/beto" class="btn-beto" data-filter=".beto">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/beto_personagem.png" alt="filtro beto" />
+            </a>
           </div>
         </li>
         <li>
           <div class="inner comecome">
-            <a href="/vilasesamo2/personagens/come-come" title="Come-come" class="btn-comecome" data-filter=".come-come"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/comecome_personagem.png" alt="Personagem" /></a>
+            <a href="/vilasesamo2/personagens/come-come" class="btn-comecome" data-filter=".come-come">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/comecome_personagem.png" alt="filtro Come-come" />
+            </a>
           </div>
         </li>
         <li>
           <div class="inner elmo">
-            <a href="/vilasesamo2/personagens/elmo" title="Elmo" class="btn-elmo" data-filter=".elmo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/elmo_personagem.png" alt="Personagem" /></a>
+            <a href="/vilasesamo2/personagens/elmo" class="btn-elmo" data-filter=".elmo">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/elmo_personagem.png" alt="filtro Elmo" />
+            </a>
           </div>
         </li>
         <li>
           <div class="inner enio">
-            <a href="/vilasesamo2/personagens/enio" title="Ênio" class="btn-enio" data-filter=".enio"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/enio_personagem.png" alt="Personagem" /></a>
+            <a href="/vilasesamo2/personagens/enio" class="btn-enio" data-filter=".enio">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/enio_personagem.png" alt="filtro Enio" /></a>
            </div>
         </li>
         <li>
           <div class="inner garibaldo">
-            <a href="/vilasesamo2/personagens/garibaldo" title="Garibaldo" class="btn-garibaldo" data-filter=".garibaldo"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/garibaldo_personagem.png" alt="Personagem" /></a>
+            <a href="/vilasesamo2/personagens/garibaldo" class="btn-garibaldo" data-filter=".garibaldo">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/garibaldo_personagem.png" alt="filtro Garibaldo" />
+            </a>
           </div>
         </li>
         <li>
           <div class="inner grover">
-            <a href="/vilasesamo2/personagens/grover" title="Grover" class="btn-grover" data-filter=".grover"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/grover_personagem.png" alt="Personagem" /></a>
+            <a href="/vilasesamo2/personagens/grover" class="btn-grover" data-filter=".grover">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/grover_personagem.png" alt="filtro Grover" />
+            </a>
           </div>
         </li>
         <li>
           <div class="inner zoe">
-            <a href="/vilasesamo2/personagens/zoe" title="Zoe" class="btn-zoe" data-filter=".zoe"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/zoe_personagem.png" alt="Personagem" /></a>
+            <a href="/vilasesamo2/personagens/zoe" class="btn-zoe" data-filter=".zoe">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/zoe_personagem.png" alt="filtro Zoe" />
+            </a>
            </div>
         </li>
       </ul>
-    </nav> 
+    </nav>
+    <script>
+    $('filtro-personagem ul li a').keypress(
+      function(e){
+        if (e.keyCode == 13) {
+            if ($(this).index() == 0) {
+                // code for first textarea;
+                alert($(this).index());
+            }
+            else {
+                // code for others
+                alert("not the first; this is numero " + $(this).index() + '!');
+            }
+        }
+    });
+    </script> 
   </div>
   <!--/span12-->
 </section>

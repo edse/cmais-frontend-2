@@ -9,11 +9,11 @@ body { background:#0172f9; }
 #content { top:134px; margin-bottom:200px; }
 #content .section,
 #content section { max-width:940px; margin:20px auto; }
-#content h3 { margin:0; font-size:50px; height:55px; line-height: 55px; padding:0 20px; }
-#content h3 span,
-#content h3 i { margin-right:10px;  }
-#content h3 .sprite-icon-colorir-med { margin-top:-6px; }
-#content h3 .sprite-icon-jogos-med { margin-top:4px; }
+#content h1 { margin:0; font-size:50px; height:55px; line-height: 55px; padding:0 20px; }
+#content h1 span,
+#content h1 i { margin-right:10px;  }
+#content h1 .sprite-icon-colorir-med { margin-top:-6px; }
+#content h1 .sprite-icon-jogos-med { margin-top:4px; }
 #page_nav { max-width:940px;  margin:3% auto; overflow:hidden; }
 .mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; max-width:350px; float:right; display:block; }
 .mais span,
@@ -23,8 +23,7 @@ body { background:#0172f9; }
 .todos-itens li,
 .scroll,
 .filtro { background:#3aaaec; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
-.filtro h3 { border-bottom:2px solid #0191fb; border-top:2px solid #0191fb; background:#3AAAEC; }
-#content .filtro h3 { padding-top:10px;  }
+.filtro h1 { border-bottom:2px solid #0191fb; border-top:2px solid #0191fb; background:#3AAAEC; }
 #content .filtro h1 { padding-top:10px;  }
 .filtro .span2 { margin-left:0; background: #ee3021; width:19.14%; padding:0 0.6%;}
 .filtro .span2 p { color:#fff; text-align:center; text-transform:uppercase; margin-top:10px; overflow:hidden; position:relative; }
@@ -32,7 +31,7 @@ body { background:#0172f9; }
 .filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1773px; top:0; }
 .filtro .span2 ul { background:#d71c0d; border:1px solid #c31408; overflow:hidden; margin-bottom:0; }
 .filtro .span10 { margin-left:0; width:80.86%; float:right; }
-.filtro .span12 { border-top:2px solid #0191fb; border-bottom:2px solid #0191fb; background:#EE3021;  /*border-left:2px solid #0191fb;*/  }
+.filtro .span12 { border-top:0px solid #0191fb; border-bottom:2px solid #0191fb; background:#EE3021;  /*border-left:2px solid #0191fb;*/  }
 .filtro .filtro-personagem { margin-left:0; }
 .filtro .filtro-personagem li { float:left; margin:2%; list-style:none;  /*width:75px; height:75px;*/  width:45.6%; overflow: hidden;/*height:45.6%;*/}
 
@@ -156,14 +155,14 @@ body { background:#0172f9; }
 .interna.atividades .todos-itens li,
 .interna.atividades .scroll,
 .interna.atividades .filtro { border-color:#b16af2; }
-.interna.atividades .filtro h3,
+.interna.atividades .filtro h1,
 .interna.atividades .filtro .span2,
 .interna.atividades .todos-itens li img,
 .interna.atividades .todos-itens li h2,
 .interna.atividades .filtro .span12 { border-color:#7732e5; }
 .interna.atividades .todos-itens li,
 .interna.atividades .filtro,
-.interna.atividades .filtro h3,
+.interna.atividades .filtro h1,
 .interna.atividades .scroll {background:#883feb;}
 .interna.atividades .todos-itens li h2 a { color:#fff;}
 .interna.atividades .destaque-filtro article h1 a { color:#883feb;}
