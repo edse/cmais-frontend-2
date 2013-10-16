@@ -1,5 +1,5 @@
   $(function(){
-    /*lista destaque small*/
+    /*lista destaque small
      $('.todos-itens li').each(function(i){
        el = $(this);
        if(i%3==0){
@@ -10,7 +10,7 @@
          $(el).css('margin-left', '15px');
          i++;
        }
-     });
+     });*/
      
     var $container = $('#container');
     
