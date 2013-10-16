@@ -116,7 +116,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-seta-up*/
 /*incluir-grd-hover*/
  
-.sprite-icons-new { background:red; width: 36px; height:36px; display:block; float:left; }
+.sprite-icons-new { background:red; width: 36px; height:36px; display:block; float:left; margin:3px}
 
 .sprite-icon-mais-laranja,
 .sprite-btn-voltar-atividades,
