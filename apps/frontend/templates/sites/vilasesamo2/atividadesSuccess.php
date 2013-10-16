@@ -144,7 +144,7 @@
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
         <i class="sprite-icons-new sprite-icone_atividade"></i>
         <p class="nav-atividades">
-          <img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo 3 Nome jogo 3 Nome jogo 3
+          <img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo3Nomejogo3Nomejogo3
         </p>
       </a>
     </li>
