@@ -108,7 +108,7 @@
       </ul>
     </nav>
     <script>
-    $('filtro-personagem ul li a').keypress(
+    $('.filtro-personagem ul li a').keypress(
       function(e){
         if (e.keyCode == 13) {
             if ($(this).index() == 0) {
