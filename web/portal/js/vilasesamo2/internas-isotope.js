@@ -2,7 +2,7 @@
     /*lista destaque small*/
      $('.todos-itens li').each(function(i){
        el = $(this);
-       if(i%2==0){
+       if(i%3==0){
          $(el).css('margin-left', '0px');
          //$(el).css('clear', 'both');
          //i = 0;
