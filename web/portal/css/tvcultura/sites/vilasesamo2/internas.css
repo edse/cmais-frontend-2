@@ -102,7 +102,8 @@ body { background:#0172f9; }
 
 /* todos itens*/
 .todos-itens { margin-top:20px; overflow:hidden; }
-.todos-itens a p{font-family: 'dinmedium';color: #FFF;font-size: 18px;text-transform: uppercase;margin: 0;line-height: 20px;vertical-align: middle;height: 42px;text-overflow: ellipsis;}
+.todos-itens a div{text-overflow: ellipsis; overflow: hidden;}
+.todos-itens a p{font-family: 'dinmedium';color: #FFF;font-size: 18px;text-transform: uppercase;margin: 0;line-height: 20px;vertical-align: middle;height: 42px;}
 .todos-itens a p img{width: 1px;height: 38px;}
 .todos-itens a:hover{color:#FFF;}
 .todos-itens .row-fluid { margin-left:0; width:980px; *margin-left:-20px; margin-left: -20px!important; }
