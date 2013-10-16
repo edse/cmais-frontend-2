@@ -120,7 +120,7 @@
 <!--/section-->
 <section class="todos-itens ">
   <!--lista-->
-  <ul role="navigation" id="container" class="row-fluid span12">
+  <ul role="navigation" id="container">
     <li class="span4 element beto">
       <a href="#" title="">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
