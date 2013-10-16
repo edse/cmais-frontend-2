@@ -28,7 +28,6 @@
               <span class="sprite-selo">Novidade!</span>
               <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Descrição Figura destaque 1" />
               <p>Nome Atividade</p> 
-              <h1><a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a></h1>
             </a> 
           </article>
         </h2>
