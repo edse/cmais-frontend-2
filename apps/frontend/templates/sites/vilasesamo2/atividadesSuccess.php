@@ -133,7 +133,7 @@
         <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
         <h2><a>Nome jogo</a></h2>
       </li>
-    </ul>
+  </ul> 
     <!--lista-->  
 </section>
 <!--/section-->
