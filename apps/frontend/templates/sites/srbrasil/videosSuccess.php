@@ -89,7 +89,7 @@ $(function(){
             <div id="galeria-videos" class="abas-conteudo conteudo-rodape grid3">
               
               <div class="busca">
-                <form id="busca-galeria" name="busca" action="" method="post">
+                <form id="busca-galeria" name="busca" action="" method="get">
                   <label class="busque">Busque por <span>palavra-chave</span></label>
                   <input type="text" class="campo-busca" name="busca" id="campo-busca" />
                   <input type="submit" class="buscar" id="buscar" value="buscar" style="cursor:pointer" />
