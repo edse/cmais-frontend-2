@@ -3,11 +3,11 @@
      $('.todos-itens li').each(function(i){
        el = $(this);
        if(i%3==0){
-         $(el).css('margin-left', '0pximportant');
+         $(el).css('margin-left', '0px');
          //$(el).css('clear', 'both');
          i = 0;
        }else{
-         $(el).css('margin-left', '20px!important');
+         $(el).css('margin-left', '20px');
          i++;
        }
      });
