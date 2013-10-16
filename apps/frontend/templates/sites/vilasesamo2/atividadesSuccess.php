@@ -45,10 +45,11 @@
     </div>
     <!--destaque-filtro-->
     
-    <!-- filtro personagem -->
-    <nav class="span2 filtro-personagem">
-      <p>escolha por personagem<span class="sprite-seta-down"></span></p>
-      <ul>
+    <nav class="span2">
+      <h3>escolha por personagem</h3>
+      
+      <ul class="filtro-personagem">
+       
        <li>
         <div class="inner bel">
           <a href="/vilasesamo2/personagens/bel" title="Bel" class="btn-bel" data-filter=".bel">
@@ -92,8 +93,7 @@
            </div>
         </li>
       </ul>
-    </nav>
-    <!-- /filtro personagem --> 
+    </nav> 
   </div>
   <!--/span12-->
 </section>
