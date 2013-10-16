@@ -7,9 +7,9 @@
     });
     
     //pra não encalavar em mobile
-    //$(document).ready(function(){
-      //$container.isotope();
-    //}); 
+    $(document).ready(function(){
+      $container.isotope();
+    }); 
     
     var filter_selected
     $('.filtro-personagem a').click(function(){
@@ -27,7 +27,7 @@
       $container.isotope({ filter:filter_selected });
       
       if($(this).parent().parent().hasClass('ativo')){
-        //console.log("tenho")
+        console.log("tenho")
         $(this).find('img').css('top','33px!important');
       }
       return false;
