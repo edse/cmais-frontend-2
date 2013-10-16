@@ -106,8 +106,8 @@ body { background:#0172f9; }
 .todos-itens .row-fluid { *margin-left:0; }
 /*.todos-itens #container { margin-left:8px !important;  }
 .todos-itens ul { margin-left:1% !important; } 
-.todos-itens li { margin:0 1.7% 2% 0 !important; }*/
-.todos-itens #container li{margin:0 0 0 20px!important;}
+.todos-itens li { margin:0 1.7% 2% 0 !important; }
+.todos-itens #container li{margin:0 0 0 20px!important;}*/
 .todos-itens .row-fluid .span4 {min-width: 300px;}
 .todos-itens li h2 a { color:#fff; padding:0 10px; }
 .todos-itens li img { border-bottom:2px solid #0191fb; border-top:2px solid #0191fb; width:300px; height:300px; }

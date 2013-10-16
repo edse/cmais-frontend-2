@@ -7,6 +7,7 @@
          //$(el).css('clear', 'both');
          i = 0;
        }else{
+         $(el).css('margin-left', '20px!important');
          i++;
        }
      });
