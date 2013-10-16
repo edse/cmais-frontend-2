@@ -27,7 +27,7 @@
       $container.isotope({ filter:filter_selected });
       
       if($(this).parent().parent().hasClass('ativo')){
-        enterAlert()
+        //console.log("tenho")
         $(this).find('img').css('top','33px!important');
       }
       return false;
@@ -46,12 +46,6 @@
         $(this).find('img').animate({top:0, easing:"swing"},'fast'); 
       } 
     });
-    
-    function enterAlert(e){
-          if (e.keyCode == 13) {
-              alert("apertado")
-          }
-        }
     /*
     $container.infinitescroll({
       navSelector  : '#page_nav',    // selector for the paged navigation 
