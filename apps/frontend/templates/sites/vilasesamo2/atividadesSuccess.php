@@ -125,42 +125,54 @@
       <a href="#" title="">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
         <i class="sprite-icons-new sprite-icone_atividade"></i>
-        <p class="nav-atividades">Nome jogo 1</p>
+        <p class="nav-atividades">
+          <img src="/portal/images/capaPrograma/vilasessamo2/altura.png" alt=""/>Nome jogo 1
+        </p>
       </a>
     </li>
     <li class="span4 element beto">
       <a href="#" title="">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
         <i class="sprite-icons-new sprite-icone_atividade"></i>
-        <p class="nav-atividades">Nome jogo 2 </p>
+        <p class="nav-atividades">
+          <img src="/portal/images/capaPrograma/vilasessamo2/altura.png" alt=""/>Nome jogo 2
+        </p>
       </a>
     </li>
     <li class="span4 element bel"> 
       <a href="#" title="">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
         <i class="sprite-icons-new sprite-icone_atividade"></i>
-        <p class="nav-atividades">Nome jogo 3</p>
+        <p class="nav-atividades">
+          <img src="/portal/images/capaPrograma/vilasessamo2/altura.png" alt=""/>Nome jogo 3 Nome jogo 3 Nome jogo 3
+        </p>
       </a>
     </li>
     <li class="span4 element beto">
       <a href="#" title="">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
         <i class="sprite-icons-new sprite-icone_atividade"></i>
-        <p class="nav-atividades">Nome jogo 1</p>
+        <p class="nav-atividades">
+          <img src="/portal/images/capaPrograma/vilasessamo2/altura.png" alt=""/>Nome jogo 4
+        </p>
       </a>
     </li>
     <li class="span4 element beto">
       <a href="#" title="">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
         <i class="sprite-icons-new sprite-icone_atividade"></i>
-        <p class="nav-atividades">Nome jogo 2</p>
+        <p class="nav-atividades">
+          <img src="/portal/images/capaPrograma/vilasessamo2/altura.png" alt=""/>Nome jogo 5Nome jogo 5Nome jogo 5Nome jogo 5Nome jogo 5Nome jogo 5Nome jogo 5
+        </p>
       </a>
     </li>
     <li class="span4 element bel"> 
       <a href="#" title="">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
         <i class="sprite-icons-new sprite-icone_atividade"></i>
-        <p class="nav-atividades">Nome jogo 3</p>
+        <p class="nav-atividades">
+          <img src="/portal/images/capaPrograma/vilasessamo2/altura.png" alt=""/>Nome jogo 6
+        </p>
       </a>
     </li>
   </ul> 
