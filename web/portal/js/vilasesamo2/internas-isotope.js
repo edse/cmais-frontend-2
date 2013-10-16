@@ -7,7 +7,7 @@
          //$(el).css('clear', 'both');
          //i = 0;
        }else{
-         $(el).css('margin-left', '19px');
+         $(el).css('margin-left', '15px');
          i++;
        }
      });
