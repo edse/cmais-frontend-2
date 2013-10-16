@@ -45,6 +45,7 @@
     </div>
     <!--destaque-filtro-->
     
+    <!--nav filtro personagem-->
     <nav role="navigation" class="span2">
       <h3>escolha por personagem</h3>
       
@@ -107,12 +108,35 @@
         </li>
       </ul>
     </nav>
+    <!--/nav filtro personagem-->
     
   </div>
   <!--/span12-->
 </section>
 <!--/section-->
 <span class="divisa"></span>
+
+
+<!--/section-->
+<section class="todos-itens ">
+  <!--lista-->
+  <ul  id="container" class="row-fluid">
+      <li class="span4 element beto">
+        <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
+        <h2><a>Nome jogo</a></h2>
+      </li>
+      <li class="span4 element come-come">
+        <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
+        <h2><a>Nome jogo</a></h2>
+      </li>
+      <li class="span4 element elmo">
+        <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
+        <h2><a>Nome jogo</a></h2>
+      </li>
+    </ul>
+    <!--lista-->  
+</section>
+<!--/section-->
 
 </div>
 <!--/content-->
