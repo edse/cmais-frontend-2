@@ -115,13 +115,8 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-icon-colorir-grd-hover{ background-position: 0 -1635px; width: 80px; height: 80px; } 
 .sprite-seta-up*/
 /*incluir-grd-hover*/
-.sprite-icone_artigo{ background-position: 0 0; width: 58px; height: 58px; } 
-.sprite-icone_atividade{ background-position: 0 -108px; width: 58px; height: 58px; } 
-.sprite-icone_historia{ background-position: 0 -216px; width: 58px; height: 58px; } 
-.sprite-icone_jogo{ background-position: 0 -324px; width: 58px; height: 58px; } 
-.sprite-icone_personagem{ background-position: 0 -432px; width: 58px; height: 58px; } 
-.sprite-icone_video{ background-position: 0 -540px; width: 58px; height: 58px; } 
-.sprite-icons-new { background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-icones-atualizados.png); width: 58px; height:58px; display:block; float:left; }
+ 
+.sprite-icons-new { background:red; width: 36px; height:36px; display:block; float:left; }
 
 .sprite-icon-mais-laranja,
 .sprite-btn-voltar-atividades,
