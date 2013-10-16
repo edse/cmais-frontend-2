@@ -99,16 +99,20 @@ $(function(){
           	  	  <?php endforeach; ?>
           	  	</ul>
           	  		
-          	  	<form id="busca-galeria" name="busca" action="" method="post">
-          	  	  <input type="hidden" value="<?php if(isset($_REQUEST['site_id'])) echo $_REQUEST['site_id']; ?>" name="site_id" id="site_id" />
+          	  	<form id="busca-video" name="busca-video" action="" method="get">
           	  	  <label class="busque">Busque por <span>palavra-chave</span></label>
-          	  	  <input type="text" class="campo-busca" name="busca" id="campo-busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca']; ?>"/>
-          	  	  <input type="submit" class="buscar" name="buscar" id="buscar" value="buscar" style="cursor:pointer" />
+          	  	  <input type="text" class="campo-busca" name="busca" id="campo-busca" />
+          	  	  <input type="submit" class="buscar" id="buscar" value="buscar" style="cursor:pointer" />
           	  	</form>
+          	  	
+          	  	<form id="busca-galeria" name="busca-galeria" action="videos" method="post">
+          	  	  <input type="hidden" name="site_id" id="site_id" />
+          	  	</form>
+          	  	
           	  </div>
           	  
           	  <div id="todas" class="filho blocos" style="display:block;">
-          	  	<div class="capa">
+          	  	<div class="capa" style="display:none;">
           	  	  <ul>
                   <?php if(count($pager) > 0): ?>
                     <?php foreach($pager->getResults() as $d): ?>
@@ -120,6 +124,23 @@ $(function(){
           	  	  <?php endif; ?>
           	      </ul>
           	    </div>
+          	    
+                <div id="google_search" style="display:none">
+					<script>
+					  (function() {
+					    var cx = '005232987476052626260:jbpyp4bzle0';
+					    var gcse = document.createElement('script');
+					    gcse.type = 'text/javascript';
+					    gcse.async = true;
+					    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+					        '//www.google.com/cse/cse.js?cx=' + cx;
+					    var s = document.getElementsByTagName('script')[0];
+					    s.parentNode.insertBefore(gcse, s);
+					  })();
+					</script>
+					<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
+               	</div>            	    
+          	    
           	  </div>
           	  <div class="box-publicidade" style="width: 250px; position: absolute; top:450px; left:5px;">
           	  	<!-- cmais-assets-250x250 -->
@@ -174,8 +195,6 @@ $(function(){
               <form id="page_form" action="" method="post">
               	<input type="hidden" name="return_url" value="<?php echo $url?>" />
               	<input type="hidden" name="page" id="page" value="" />
-              	<input type="hidden" name="busca" id="busca" value="<?php echo $busca ?>" />
-              	<input type="hidden" name="site_id" id="site_id" value="<?php echo $site_id ?>" />
               </form>
               <script>
               	function goToPage(i){
@@ -184,9 +203,22 @@ $(function(){
               	}
               </script>
 		      
-		        <?php endif; ?>
-		      <?php endif; ?>
-		     
+				<script>
+					function getURLParameter(name) {
+					    return decodeURI(
+					        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+					    );
+					}
+					if(getURLParameter("busca") == "null" || getURLParameter("busca") == ""){
+						$('.capa').show();
+						$('.paginacao grid3').show();
+					}else{
+						var busca = getURLParameter("busca");
+						$('#campo-busca').val(busca);
+						$('#google_search').show();
+						$('.paginacao grid3').hide();
+					}
+				</script>		     
 		      
 			</div>
 		  </div>
