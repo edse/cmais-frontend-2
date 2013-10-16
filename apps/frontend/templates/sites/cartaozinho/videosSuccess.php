@@ -108,7 +108,7 @@ $(function(){
                   <?php endforeach; ?>
                 </ul>
           	    
-          	  	<form id="busca-video" name="busca" action="" method="get">
+          	  	<form id="busca-video" name="busca-video" action="" method="get">
           	  	  <label class="busque">Busque por <span>palavra-chave</span></label>
           	  	  <input type="text" class="campo-busca" name="busca" id="campo-busca" />
           	  	  <input type="submit" class="buscar"  id="buscar" value="buscar" style="cursor:pointer" />
@@ -177,8 +177,6 @@ $(function(){
               <form id="page_form" action="" method="post">
                 <input type="hidden" name="return_url" value="<?php echo $url ?>" />
                 <input type="hidden" name="page" id="page" value="" />
-                <input type="hidden" name="section" id="section" value="<?php if(isset($_REQUEST['section'])) echo $_REQUEST['section']; ?>" />
-                <input type="hidden" name="busca" id="busca" value="<?php if(isset($_REQUEST['busca'])) echo $_REQUEST['busca']; ?>" />
               </form>
               <script>
                 function goToPage(i){
