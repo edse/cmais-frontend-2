@@ -9,11 +9,11 @@ body { background:#0172f9; }
 #content { top:134px; margin-bottom:200px; }
 #content .section,
 #content section { max-width:940px; margin:20px auto; }
-#content h3 { margin:0; font-size:50px; height:55px; line-height: 55px; padding:0 20px; }
-#content h3 span,
-#content h3 i { margin-right:10px;  }
-#content h3 .sprite-icon-colorir-med { margin-top:-6px; }
-#content h3 .sprite-icon-jogos-med { margin-top:4px; }
+#content h1 { margin:0; font-size:50px; height:55px; line-height: 55px; padding:0 20px; }
+#content h1 span,
+#content h1 i { margin-right:10px;  }
+#content h1 .sprite-icon-colorir-med { margin-top:-6px; }
+#content h1 .sprite-icon-jogos-med { margin-top:4px; }
 #page_nav { max-width:940px;  margin:3% auto; overflow:hidden; }
 .mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; max-width:350px; float:right; display:block; }
 .mais span,
@@ -25,6 +25,7 @@ body { background:#0172f9; }
 .filtro { background:#3aaaec; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
 .filtro h3 { border-bottom:2px solid #0191fb; border-top:2px solid #0191fb; background:#3AAAEC; }
 #content .filtro h3 { padding-top:10px;  }
+#content .filtro h1 { padding-top:10px;  }
 .filtro .span2 { margin-left:0; background: #ee3021; width:19.14%; padding:0 0.6%;}
 .filtro .span2 p { color:#fff; text-align:center; text-transform:uppercase; margin-top:10px; overflow:hidden; position:relative; }
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
@@ -39,8 +40,8 @@ body { background:#0172f9; }
 .filtro .filtro-personagem li img { /*width:75px; height:75px;*/  position:relative; width:100%; -moz-opacity: 0.50;-khtml-opacity: 0.50;opacity: 0.50;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);filter:alpha(opacity=50); }
 /*.filtro .filtro-personagem li:hover img,*/
 .filtro .filtro-personagem li.ativo img{-moz-opacity: 1;-khtml-opacity: 1;opacity: 1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);filter:alpha(opacity=100);}
-.filtro .filtro-personagem .inner{height:87px;}
-.filtro .filtro-personagem .inner.jogos{height:77px;}
+.filtro .filtro-personagem .inner{height:77px;}
+/*.filtro .filtro-personagem .inner.jogos{height:77px;}*/
 .filtro .filtro-personagem .inner.garibaldo { background:#ff6525 !important; }
 .filtro .filtro-personagem .inner.bel { background:#ffcccb !important; }
 .filtro .filtro-personagem .inner.enio { background:#61cbff !important; }
