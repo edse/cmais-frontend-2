@@ -192,7 +192,7 @@ body { background:#0172f9; }
 
 /* isotope*/
 .todos-itens ul { margin:0!important;  }
-.todos-itens .span4 { margin:0px; }
+.todos-itens .span4 { margin:0 0 20px 20px!important; }
 .element { overflow:hidden; -webkit-border-top-right-radius: 1.2em; -moz-border-radius-topright: 1.2em; border-top-right-radius: 1.2em; }
 .element.bel{background:#ffcccb;}
 .element.beto{background:#00CCCD;}

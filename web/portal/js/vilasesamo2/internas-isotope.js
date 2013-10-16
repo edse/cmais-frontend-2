@@ -15,11 +15,7 @@
     var $container = $('#container');
     
     $container.isotope({
-      itemSelector : '.element',
-      cellsByRow : {
-          columnWidth : 300,
-          rowHeight : 240
-        }
+      itemSelector : '.element'
     }); 
     
     var filter_selected
