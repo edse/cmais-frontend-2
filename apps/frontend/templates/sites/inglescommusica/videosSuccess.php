@@ -78,7 +78,7 @@
             
       <div id="galeria-videos" class="abas-conteudo conteudo-rodape grid3">
               <div class="busca">
-                  <form id="busca" method="post" action="">
+                  <form id="busca" method="get" action="">
                     <label class="busque" for="campo-busca">Busque por <span>palavra-chave</span></label>
                     <input type="text" class="campo-busca" name="busca" id="busca" />
                     <input type="submit" class="buscar" id="buscar" value="buscar" style="cursor:pointer" />
