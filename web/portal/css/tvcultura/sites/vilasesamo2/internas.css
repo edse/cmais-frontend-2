@@ -1,3 +1,4 @@
+@import("geral.css")
 body { background:#0172f9; }
 .header-bar ul { margin:12px 0 0 0; }
 .header-bar { position:fixed; background: url(/portal/images/capaPrograma/vilasesamo2/pattern-menu-interna.jpg) repeat-x; height:81px; top:48px; width: 100%; max-width:100%; }
