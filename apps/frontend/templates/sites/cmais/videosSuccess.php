@@ -214,12 +214,12 @@ $(function(){
 					}
 					if(getURLParameter("busca") == "null" || getURLParameter("busca") == ""){
 						$('.capa').show();
-						$('.paginacao grid3').show();
+						$('.paginacao').show();
 					}else{
 						var busca = getURLParameter("busca");
 						$('#campo-busca').val(busca);
 						$('#google_search').show();
-						$('.paginacao grid3').hide();
+						$('.paginacao').hide();
 					}
 				</script>		     
 		      
