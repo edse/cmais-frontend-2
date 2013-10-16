@@ -15,7 +15,8 @@
   <!--span12-->
   <div class="span12">
     
-    <h3><i class="sprite-icon-colorir-med"></i>Atividades</h3>
+    <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
+    <h1><i class="sprite-icon-colorir-med"></i>Atividades</h1>
     
     <div class="span10 destaque-filtro especial">
  

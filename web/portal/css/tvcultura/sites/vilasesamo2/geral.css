@@ -55,6 +55,7 @@ footer .mapa .span12,
 .navbar .btn-navbar h1,
 .destaque-filtro h2 a,
 .mais,
+#content h1,
 #content h3,
 .header-bar li a,
 .topo-vila .nav li a:hover,
@@ -102,9 +103,13 @@ section { max-width:980px; margin:0 auto; clear:both;}
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#7d7e7d',GradientType=0 ); /* IE6-8 */ }
 
 #content h3 a,
-#content h3 { font-size:25px; color:#fff; text-transform:uppercase; font-weight:normal;  }
+#content h3,
+#content h1 a,
+#content h1{ font-size:25px; color:#fff; text-transform:uppercase; font-weight:normal;  }
 #content h3 span,
-#content h3 i { float: left; }
+#content h3 i,
+#content h1 span,
+#content h1 i{ float: left; }
 /* geral */
 
 /* sprite*/
