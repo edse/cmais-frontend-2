@@ -102,7 +102,7 @@ body { background:#0172f9; }
 
 /* todos itens*/
 .todos-itens { margin-top:20px; overflow:hidden; }
-.todos-itens .row-fluid { margin-left:0; }
+.todos-itens .row-fluid { margin-left:0; width:950px }
 .todos-itens .row-fluid { *margin-left:0; }
 /*.todos-itens #container { margin-left:8px !important;  }
 .todos-itens ul { margin-left:1% !important; } 
