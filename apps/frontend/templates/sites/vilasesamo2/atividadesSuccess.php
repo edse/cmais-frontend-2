@@ -46,7 +46,7 @@
     <!--destaque-filtro-->
     
     <nav role="navigation" class="span2">
-      <h3><p>escolha por personagem</p></h3>
+      <h3>escolha por personagem</h3>
       
       <ul class="filtro-personagem">
        
