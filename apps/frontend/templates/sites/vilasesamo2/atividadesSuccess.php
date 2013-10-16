@@ -34,7 +34,7 @@
         <h2 aria-describedby="Novidade Atividade 2">
           <article class="span6 clipes">
             <a class="img-destaque" href="/vilasesamo2/atividades">
-              <span class="sprite-selo">Novidade!</span>
+              <span class="sprite-selo">Novidade! teste</span>
               <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Descrição Figura destaque 2" />
               <p>Nome Atividade</p> 
             </a> 
