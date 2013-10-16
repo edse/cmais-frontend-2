@@ -34,7 +34,7 @@
         <h2 aria-describedby="Novidade Atividade 2">
           <article class="span6 clipes">
             <a class="img-destaque" href="/vilasesamo2/atividades">
-              <span class="sprite-selo">Novidade! teste</span>
+              <span class="sprite-selo">Novidade!</span>
               <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Descrição Figura destaque 2" />
               <p>Nome Atividade</p> 
             </a> 
@@ -120,21 +120,30 @@
 <!--/section-->
 <section class="todos-itens ">
   <!--lista-->
-  <ul  id="container" class="row-fluid">
-      <li class="span4 element beto">
-        <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="span4 element come-come">
-        <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
-      <li class="span4 element elmo">
-        <a href="#" title=""><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" /></a>
-        <h2><a>Nome jogo</a></h2>
-      </li>
+  <ul role="navigation" id="container" class="row-fluid">
+    <li class="span4 element beto">
+      <a href="#" title="">
+        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+        <i class=".sprite-icone_atividade"></i>
+        <p>Nome jogo 1</p>
+      </a>
+    </li>
+    <li class="span4 element beto">
+      <a href="#" title="">
+        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+        <i class=".sprite-icone_atividade"></i>
+        <p>Nome jogo 2 <br> quebra de linha</p>
+      </a>
+    </li>
+    <li class="span4 element beto">
+      <a href="#" title="">
+        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+        <i class=".sprite-icone_atividade"></i>
+        <p>Nome jogo 3</p>
+      </a>
+    </li>
   </ul> 
-    <!--lista-->  
+  <!--lista-->  
 </section>
 <!--/section-->
 
@@ -150,5 +159,5 @@
 
 <!--scripts-->
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
-<script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script>
+<!--script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script-->
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
