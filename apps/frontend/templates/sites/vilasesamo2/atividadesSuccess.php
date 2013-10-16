@@ -120,17 +120,11 @@
 <!--/section-->
 <section class="todos-itens ">
   <!--lista-->
-  <ul role="navigation" id="container" class="row-fluid">
-    <li class="span4 element beto">
-      1
-    </li>
-    <li class="span4 element beto">
-      2
-    </li>
-    <li class="span4 element bel">
-      3
-    </li>
-  </ul> 
+ <div class="row-fluid show-grid">
+              <div class="span4">4</div>
+              <div class="span4">4</div>
+              <div class="span4">4</div>
+            </div>
   <!--lista-->  
 </section>
 <!--/section-->
