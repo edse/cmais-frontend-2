@@ -15,7 +15,10 @@
     var $container = $('#container');
     
     $container.isotope({
-      itemSelector : '.element'
+      itemSelector : '.element',
+      masonry : {
+          columnWidth : 120
+        }
     }); 
     
     var filter_selected
