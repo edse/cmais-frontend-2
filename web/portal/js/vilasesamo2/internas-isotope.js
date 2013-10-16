@@ -7,9 +7,9 @@
     });
     
     //pra não encalavar em mobile
-    $(document).ready(function(){
-      $container.isotope();
-    }); 
+    //$(document).ready(function(){
+      //$container.isotope();
+    //}); 
     
     var filter_selected
     $('.filtro-personagem a').click(function(){
