@@ -114,7 +114,7 @@ $(function(){
           	  	  <input type="submit" class="buscar"  id="buscar" value="buscar" style="cursor:pointer" />
           	  	</form>
           	  	
-          	  	<form id="busca-galeria" name="busca-galeria" action="" method="post">
+          	  	<form id="busca-galeria" name="busca-galeria" action="videos" method="post">
           	  	  <input type="hidden" name="section" id="section" />
           	  	</form>
           	  	
