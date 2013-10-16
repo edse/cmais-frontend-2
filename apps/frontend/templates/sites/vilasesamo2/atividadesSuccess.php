@@ -27,7 +27,7 @@
             <a class="img-destaque" href="/vilasesamo2/atividades">
               <span class="sprite-selo">Novidade!</span>
               <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Descrição Figura destaque 1" />
-              <p>Para Colorir</p> 
+              <p>Nome Atividade</p> 
             </a> 
           </article>
         </h2>
@@ -36,7 +36,7 @@
             <a class="img-destaque" href="/vilasesamo2/atividades">
               <span class="sprite-selo">Novidade!</span>
               <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Descrição Figura destaque 2" />
-              <p>Para Colorir</p> 
+              <p>Nome Atividade</p> 
             </a> 
           </article>
         </h2>
@@ -44,10 +44,11 @@
       <!--/destaques-->
     </div>
     <!--destaque-filtro-->
-    <nav class="span2">
+    
+    <!-- filtro personagem -->
+    <nav class="span2 filtro-personagem">
       <p>escolha por personagem<span class="sprite-seta-down"></span></p>
-      <ul class="filtro-personagem">
-       
+      <ul>
        <li>
         <div class="inner bel">
           <a href="/vilasesamo2/personagens/bel" title="Bel" class="btn-bel" data-filter=".bel">
@@ -91,7 +92,8 @@
            </div>
         </li>
       </ul>
-    </nav> 
+    </nav>
+    <!-- /filtro personagem --> 
   </div>
   <!--/span12-->
 </section>
