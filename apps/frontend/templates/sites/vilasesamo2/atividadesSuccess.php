@@ -24,20 +24,20 @@
       <div class="aba1">
         <h2 title="Novidade Atividade">
           <article class="span6 clipes">
-            <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
+            <a class="img-destaque" href="/vilasesamo2/atividades">
               <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Descrição Figura" /> 
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Descrição Figura destaque 1" />
+              <p>Para Colorir</p> 
             </a> 
-            <a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a>
           </article>
         </h2>
         <h2 title="Novidade Atividade">
           <article class="span6 clipes">
-            <a class="img-destaque" href="/vilasesamo2/atividades" title="Para Colorir">
+            <a class="img-destaque" href="/vilasesamo2/atividades">
               <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Descrição Figura" /> 
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Descrição Figura destaque 2" />
+              <p>Para Colorir</p> 
             </a> 
-            <a href="/vilasesamo2/atividades" title="Para Colorir">Para Colorir</a>
           </article>
         </h2>
       </div>
