@@ -27,18 +27,18 @@
       $container.isotope({ filter:filter_selected });
       
       if($(this).parent().parent().hasClass('ativo')){
-        
-        if (e.keyCode == 13) {
-            if ($(this).index() == 0) {
-                // code for first textarea;
-                alert($(this).index());
-            }
-            else {
-                // code for others
-                alert("not the first; this is numero " + $(this).index() + '!');
-            }
+        function(e){
+          if (e.keyCode == 13) {
+              if ($(this).index() == 0) {
+                  // code for first textarea;
+                  alert($(this).index());
+              }
+              else {
+                  // code for others
+                  alert("not the first; this is numero " + $(this).index() + '!');
+              }
+          }
         }
-    
         $(this).find('img').css('top','33px!important');
       }
       return false;
