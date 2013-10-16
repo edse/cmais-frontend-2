@@ -78,10 +78,10 @@
             
       <div id="galeria-videos" class="abas-conteudo conteudo-rodape grid3">
               <div class="busca">
-                  <form id="busca" method="post" action="">
+                  <form id="busca" method="get" action="">
                     <label class="busque" for="campo-busca">Busque por <span>palavra-chave</span></label>
-                    <input type="text" class="campo-busca" name="busca" id="busca" value="<?php echo $busca ?>" />
-                    <input type="submit" class="buscar" name="buscar" id="buscar" value="buscar" style="cursor:pointer" />
+                    <input type="text" class="campo-busca" name="busca" id="busca" />
+                    <input type="submit" class="buscar" id="buscar" value="buscar" style="cursor:pointer" />
                     <?php /*
                     <?php
                       $programs = Doctrine_Query::create()
@@ -116,7 +116,7 @@
               <!-- BLOCOS -->
 
         <div id="todas" class="filho blocos" style="display:block;">
-          <div class="capa">
+          <div class="capa" style="display:none">
             <ul class="" style="display:block">
               <?php if(count($pager) > 0): ?>
                 <?php foreach($pager->getResults() as $d): ?>
@@ -128,13 +128,30 @@
               <?php endif; ?>
               </ul>
           </div>
+              
+	        <div id="google_search" style="display:none">
+				<script>
+				  (function() {
+				    var cx = '005232987476052626260:0lag_4gvts0';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
+	       	</div>          
+          
         </div>
         <!-- / BLOCOS -->
 
       <?php if(isset($pager)): ?>
         <?php if($pager->haveToPaginate()): ?>
         <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
-        <div class="paginacao grid3">
+        <div class="paginacao grid3" style="display:none">
           <div class="centraliza">
             <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn-ante"></a>
             <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);">Anterior</a>
@@ -156,8 +173,6 @@
         <form id="page_form" action="" method="post">
           <input type="hidden" name="return_url" value="<?php echo $url?>" />
           <input type="hidden" name="page" id="page" value="" />
-          <input type="hidden" name="term" id="term" value="<?php echo $term ?>" />
-          <input type="hidden" name="filter" id="filter" value="<?php echo filter ?>" />
         </form>
         <script>
           function goToPage(i){
@@ -169,6 +184,25 @@
         <!-- PAGINACAO -->
         <?php endif; ?>
       <?php endif; ?>
+      
+		<script>
+			function getURLParameter(name) {
+			    return decodeURI(
+			        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+			    );
+			}
+			if(getURLParameter("busca") == "null" || getURLParameter("busca") == ""){
+				$('.capa').show();
+				$('.paginacao').show();
+			}else{
+				var busca = getURLParameter("busca");
+				$('#campo-busca').val(busca);
+				$('#google_search').show();
+				$('.paginacao').hide();
+			}
+		</script>      
+      
+      
     </div>
       
     </div>
