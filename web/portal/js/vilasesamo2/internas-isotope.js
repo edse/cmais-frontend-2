@@ -4,11 +4,6 @@
     
     $container.isotope({
       itemSelector : '.element'
-    });
-    
-    //pra não encalavar em mobile
-    $(document).ready(function(){
-      $container.isotope("mansory");
     }); 
     
     var filter_selected
