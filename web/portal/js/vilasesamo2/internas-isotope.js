@@ -1,5 +1,16 @@
   $(function(){
-
+    /*lista destaque small*/
+     $('.todos-itens li').each(function(i){
+       el = $(this);
+       if(i%3==0){
+         $(el).css('margin-left', '0');
+         //$(el).css('clear', 'both');
+         i = 0;
+       }else{
+         i++;
+       }
+     });
+     
     var $container = $('#container');
     
     $container.isotope({
