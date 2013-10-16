@@ -1,8 +1,5 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
-<!--scripts-->
-<script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
-<!--script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script-->
-<script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
+
 <script>
   $("body").addClass("interna atividades");
 </script>
@@ -135,7 +132,7 @@
       <a href="#" title="">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
         <i class="sprite-icons-new sprite-icone_atividade"></i>
-        <p class="nav-atividades">Nome jogo 2</p>
+        <p class="nav-atividades">Nome jogo 2 <br> quebra de linha</p>
       </a>
     </li>
     <li class="span4 element bel"> 
@@ -160,4 +157,7 @@
   <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
 </nav>
 
-
+<!--scripts-->
+<!--script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script-->
+<!--script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script-->
+<!--script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script-->
