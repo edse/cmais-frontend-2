@@ -13,7 +13,7 @@
 <!--section-->
 <section class="filtro row-fluid">
   <!--span12-->
-  <div class="span12">
+  <div class="span12" role="navigation">
     
     <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
     <h1 title="Destaque Atividades"><i class="sprite-icon-colorir-med"></i>Atividades</h1>
@@ -22,7 +22,7 @@
     <div class="span10 destaque-filtro">
       <!--/destaques-->
       <div class="aba1">
-        <h2 title="Novidade Atividade">
+        <h2 aria-describedby="Novidade Atividade">
           <article class="span6 clipes">
             <a class="img-destaque" href="/vilasesamo2/atividades">
               <span class="sprite-selo">Novidade!</span>
@@ -31,7 +31,7 @@
             </a> 
           </article>
         </h2>
-        <h2 title="Novidade Atividade">
+        <h2 aria-describedby="Novidade Atividade 2">
           <article class="span6 clipes">
             <a class="img-destaque" href="/vilasesamo2/atividades">
               <span class="sprite-selo">Novidade!</span>
