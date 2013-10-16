@@ -132,7 +132,7 @@
 	        <div id="google_search" style="display:none">
 				<script>
 				  (function() {
-				    var cx = '005232987476052626260:jvsvsjz2ooc';
+				    var cx = '005232987476052626260:0lag_4gvts0';
 				    var gcse = document.createElement('script');
 				    gcse.type = 'text/javascript';
 				    gcse.async = true;
