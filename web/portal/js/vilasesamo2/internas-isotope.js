@@ -17,9 +17,9 @@
     $container.isotope({
       itemSelector : '.element',
       cellsByRow : {
-          columnWidth : 240,
+          columnWidth : 300,
           rowHeight : 240
-        },
+        }
     }); 
     
     var filter_selected
