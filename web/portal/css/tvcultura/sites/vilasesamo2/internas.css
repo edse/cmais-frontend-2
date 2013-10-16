@@ -90,6 +90,7 @@ body { background:#0172f9; }
 .todos-itens li h2 { border-bottom:2px solid #0191fb;} 
 .todos-itens li h2,
 .destaque-filtro article h1 { margin:0; line-height: 32px; }
+.destaque-filtro article a p{font-family: 'dinmedium';color: #883feb;font-size: 18px;text-transform: uppercase;}
 .destaque-filtro a img { border:2px solid transparent; }
 .destaque-filtro .span6:hover a {color:#02cbff; text-decoration:underline;}
 .destaque-filtro .span6:hover a img {border:2px solid #02cbff;}
