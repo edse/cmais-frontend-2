@@ -143,7 +143,7 @@
       <a href="#" title="">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
         <i class="sprite-icons-new sprite-icone_atividade"></i>
-        <div><p>Nome jogo3 Nomejogo3 Nomejogo3</p></div> 
+        <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/><>Nome jogo3 Nomejogo3 Nomejogo3</div>
       </a>
     </li>
     <li class="span4 element beto">
