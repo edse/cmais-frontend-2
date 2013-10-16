@@ -50,7 +50,7 @@ body { background:#0172f9; }
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
 .filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1773px; top:0; }
 .filtro .span2{ background:#d71c0d; border:1px solid #c31408; overflow:hidden; width: 175px;margin-left: 3px;display: block }
-.filtro .span10 { margin-left:0; width:80.86%; float:right; }
+.filtro .span10 { margin-left:0; width:80.86%; float:right; border-left: 2px solid #7732e5;; }
 .filtro .span12 { border-top:0px solid #0191fb; border-bottom:2px solid #0191fb; background:#EE3021;  /*border-left:2px solid #0191fb;*/  }
 .filtro .filtro-personagem { margin-left:0; }
 .filtro .filtro-personagem li { float:left; margin:2%; list-style:none;  /*width:75px; height:75px;*/  width:45.6%; overflow: hidden;/*height:45.6%;*/}
@@ -90,7 +90,7 @@ body { background:#0172f9; }
 .todos-itens li h2 { border-bottom:2px solid #0191fb;} 
 .todos-itens li h2,
 .destaque-filtro article h1 { margin:0; line-height: 32px; }
-.destaque-filtro article a p{font-family: 'dinmedium';color: #883feb;font-size: 18px;text-transform: uppercase; margin:0;}
+.destaque-filtro article a p{font-family: 'dinmedium';color: #883feb;font-size: 18px;text-transform: uppercase; margin:0; line-height:34px;}
 .destaque-filtro a img { border:2px solid transparent; }
 .destaque-filtro .span6:hover a {color:#02cbff; text-decoration:underline;}
 .destaque-filtro .span6:hover a img {border:2px solid #02cbff;}
