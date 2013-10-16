@@ -28,10 +28,7 @@
       
       if($(this).parent().parent().hasClass('ativo')){
         //console.log("tenho")
-        $(this).append('<span>selecinado</span>')
         $(this).find('img').css('top','33px!important');
-      }else{
-        $(this).append('<span>nao selecinado</span>')
       }
       return false;
     });
