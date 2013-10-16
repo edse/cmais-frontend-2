@@ -174,7 +174,7 @@ $(function(){
               <?php if(isset($pager)): ?>
                 <?php if($pager->haveToPaginate()): ?>
           	  <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
-          	  <div class="paginacao grid3">
+          	  <div class="paginacao grid3" style="display: none">
           	    <div class="centraliza">
           	      <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn-ante"></a>
           	      <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);">Anterior</a>
