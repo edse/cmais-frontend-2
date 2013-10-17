@@ -37,11 +37,7 @@
         
         $i++;
         
-        $('#container.isotope .element').each(function(i){
-        if(!$(this).hasClass('isotope-hidden')){
-            $j++;  
-          }
-        });
+        
       });
       
       
@@ -54,6 +50,12 @@
       } 
 
       $container.isotope({ filter:filter_selected });
+      
+      $('#container.isotope .element').each(function(i){
+        if(!$(this).hasClass('isotope-hidden')){
+          $j++;  
+        }
+      });
       
       return false;
     });
