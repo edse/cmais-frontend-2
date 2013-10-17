@@ -40,7 +40,9 @@
       });
       
       $('#container.isotope .element').each(function(i){
-        $j++
+        if(!$(this).hasClass('isotope-hidden')){
+          $j++;  
+        }
       });
       console.log($select);
       console.log($j);
