@@ -30,7 +30,7 @@
               $related_preview_url = "";
               if($displays['destaque-1'][0]->Asset->getAssetType() == "video") {
                 die("video");
-                $related_preview_url = "http://img.youtube.com/vi/" . $videos[0]->AssetVideo->getYoutubeId() . "/0.jpg";
+                $related_preview_url = "http://img.youtube.com/vi/" . $displays['destaque-1'][0]->Asset->AssetVideo->getYoutubeId() . "/0.jpg";
               }
               else {
                 die("outro");
