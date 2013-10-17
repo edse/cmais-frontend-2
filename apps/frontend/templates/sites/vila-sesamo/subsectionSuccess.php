@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <script>
-  $("body").addClass("interna atividades");
+  $("body").addClass("interna <?php $section->getSlug() ?>");
 </script>
 
 <!-- HEADER -->
@@ -16,7 +16,7 @@
   <div class="span12" role="main">
     
     <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
-    <h1 title="Destaque Atividades"><i class="sprite-icon-colorir-med"></i>Atividades</h1>
+    <h1 title="Destaque <?php $section->getSlug() ?>"><i class="sprite-icon-colorir-med"></i>Atividades</h1>
     
     <!--destaque-filtro-->
     <div class="span10 destaque-filtro">
