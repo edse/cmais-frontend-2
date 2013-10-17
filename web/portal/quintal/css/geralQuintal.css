@@ -338,7 +338,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #agenda .col-esq .box-content p { margin-bottom:15px; /*float:left;*/ }
 #agenda .col-esq .box-content a {color:#4A5DF; text-decoration:underline;}
 #agenda .menu-quintal small {clear:both; display: block; font-size: 14px; color:#2B3377; }
-#agenda .box-content{font-weight:bold!important;}
+#agenda .col-dir .box-content{font-weight:bold!important;}
 #musicas { background:url(../images/bg-musica.png) no-repeat; width: 960px; height:558px; padding:0; }
 #musicas #container { margin-right:25px; }
 #musicas div.jp-playlist ul { height:300px; overflow-x: hidden; overflow-y:scroll; }
