@@ -27,10 +27,11 @@
       $(this).parent().parent().toggleClass("ativo");
       
       $('.filtro-personagem li.ativo').each(function(i){
+        console.log(i)
         if(i > 0){
           filter_selected += $(this).find('a').attr('data-filter') + ",";
           $select += $(this).find('a').attr('data-filter') + ', ';
-          $('#filtro-descricao').html('Você selecionou filtrar os links pelos personagens:' + $selecionados);
+          $('#filtro-descricao').html('Você selecionou filtrar os links pelos personagens:' + $select);
         }else{
           $('#filtro-descricao').html('Todos os links dos personagens estão ativos');
         } 
