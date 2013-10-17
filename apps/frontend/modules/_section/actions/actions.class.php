@@ -1983,8 +1983,8 @@ class _sectionActions extends sfActions
 		
         elseif($this->site->getSlug() == "guiadotransito"){
 
-          if($debug) print "<br>13-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/index';
-          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/guiadodia/index'); 
+          if($debug) print "<br>13-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/transito';
+          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/guiadodia/transito'); 
         }		
 		
         else {
