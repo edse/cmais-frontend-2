@@ -1351,13 +1351,6 @@ class _sectionActions extends sfActions
 	}
     
     
-    
-    
-    
-    
-    
-    
-    
     if($this->site->slug == 'quintaldacultura'){
       if(($sectionSlug == 'todos')||($sectionSlug == 'todas')||($sectionSlug == 'tudo')){
        /* if($this->section->Parent->getSlug() == "imagens")
