@@ -27,7 +27,8 @@
         <?php if(isset($displays['destaque-1'])): ?>
           <?php if(count($displays['destaque-1']) > 0): ?>
             <?php
-              if($displays['destaque-1'][0]->Asset->getAssetType() == "video") {
+              $related_preview_url = "";
+              if($displays['destaque-1'][0]->Asset->getAssetType() == "Video") {
                 $related_preview_url = "http://img.youtube.com/vi/" . $videos[0]->AssetVideo->getYoutubeId() . "/0.jpg";
               }
               else {
