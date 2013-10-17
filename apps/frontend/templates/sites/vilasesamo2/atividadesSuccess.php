@@ -51,11 +51,12 @@
       
       <ul class="filtro-personagem">
        
-       <li aria-live="polite">
+       <li>
         <div class="inner bel">
           <a href="/vilasesamo2/personagens/bel" class="btn-bel" data-filter=".bel">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="filtro bel" />
           </a>
+          
         </div>
        </li>
         <li>
@@ -109,7 +110,7 @@
       </ul>
     </nav>
     <!--/nav filtro personagem-->
-    
+    <p aria-live="polite" id="filtro-descricao"></p>
   </div>
   <!--/span12-->
 </section>
