@@ -30,7 +30,6 @@
         if(i > 0){
           filter_selected += $(this).find('a').attr('data-filter') + ",";
           $select += $(this).find('a').attr('data-filter') + ', ';
-          $i++;
         }
         
         console.log($select);
