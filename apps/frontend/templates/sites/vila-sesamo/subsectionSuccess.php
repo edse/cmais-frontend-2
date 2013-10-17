@@ -16,7 +16,7 @@
   <div class="span12" role="main">
     
     <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
-    <h1 title="Destaque Atividades"><i class="sprite-icon-colorir-med"></i>Atividades</h1>
+    <h1 title="Destaque <?php $section->getSlug() ?>"><i class="sprite-icon-colorir-med"></i>Atividades</h1>
     
     <!--destaque-filtro-->
     <div class="span10 destaque-filtro">
