@@ -39,7 +39,7 @@
         
       });
       
-      $('#container.isotope element').each(function(i){
+      $('#container.isotope .element').each(function(i){
         $j++
       });
       console.log($select);
