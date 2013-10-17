@@ -48,7 +48,7 @@
     <!--nav filtro personagem-->
     <nav role="navigation" class="span2">
       <h3>escolha por personagem</h3>
-      
+      <h3 aria-live="polite" id="filtro-descricao">todas as atividades estão para selecionar</h3>
       <ul class="filtro-personagem">
        
        <li>
@@ -110,7 +110,7 @@
       </ul>
     </nav>
     <!--/nav filtro personagem-->
-    <p aria-live="polite" id="filtro-descricao">todas as atividades estão para selecionar</p>
+    
   </div>
   <!--/span12-->
 </section>
