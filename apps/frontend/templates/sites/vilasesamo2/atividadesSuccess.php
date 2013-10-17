@@ -13,7 +13,7 @@
 <!--section-->
 <section class="filtro row-fluid">
   <!--span12-->
-  <div class="span12" role="navigation">
+  <div class="span12" role="main">
     
     <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
     <h1 title="Destaque Atividades"><i class="sprite-icon-colorir-med"></i>Atividades</h1>
@@ -51,7 +51,7 @@
       
       <ul class="filtro-personagem">
        
-       <li>
+       <li aria-live="polite">
         <div class="inner bel">
           <a href="/vilasesamo2/personagens/bel" class="btn-bel" data-filter=".bel">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="filtro bel" />
@@ -120,7 +120,7 @@
 <!--/section-->
 <section class="todos-itens ">
   <!--lista-->
-  <ul role="navigation" id="container" class="row-fluid">
+  <ul role="contentinfo" id="container" class="row-fluid">
     <li class="span4 element bel"> 
       <a href="#" title="">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
