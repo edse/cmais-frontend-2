@@ -38,9 +38,9 @@
         $('.filtro-personagem ativo').each(function(i){
           $selecionados += $(this).find('a').attr('data-filter') + ', ';
         });
-        console.log($selecionados)
-        $('filtro-personagem #filtro-descricao').remove();
-        $('filtro-personagem').append('<p aria-live="polite" id="filtro-descricao">Você escolheu as atividades específicas das personagens'+$selecionados+'</p>');
+        console.log($(this).find('a').attr('data-filter'))
+        $('.filtro-personagem #filtro-descricao').remove();
+        $('.filtro-personagem').append('<p aria-live="polite" id="filtro-descricao">Você escolheu as atividades específicas das personagens'+$selecionados+'</p>');
         $(this).find('img').css('top','33px!important');
       }
       return false;
