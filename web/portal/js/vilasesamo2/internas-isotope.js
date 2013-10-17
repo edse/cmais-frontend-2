@@ -43,9 +43,7 @@
       $container.isotope({ filter:filter_selected });
       
       $('#container.isotope .element').each(function(i){
-        if($(this).hasClass('isotope-hidden')){
-          $j=$j;  
-        }else{
+        if(!$(this).hasClass('isotope-hidden')){
           $j++;
         }
       });
