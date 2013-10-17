@@ -26,11 +26,17 @@
       <div class="aba1">
         <?php if(isset($displays['destaque-1'])): ?>
           <?php if(count($displays['destaque-1']) > 0): ?>
+            <?php
+              $related_preview = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByRelationType("Preview");
+              if(count($related_preview) > 0)
+                $related_preview = $related_preview[0];
+            ?>
+            
         <h2 aria-describedby="Novidade">
           <article class="span6 clipes">
             <a class="img-destaque" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>">
               <span class="sprite-selo">Novidade!</span>
-              <img src="<?php echo $displays['destaque-1'][0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" />
+              <img src="<?php echo $related_preview->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" />
               <p><?php echo $displays['destaque-1'][0]->getTitle() ?></p> 
             </a> 
           </article>
