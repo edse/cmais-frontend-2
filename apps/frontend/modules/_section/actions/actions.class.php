@@ -1960,12 +1960,12 @@ class _sectionActions extends sfActions
         
         elseif($this->site->getSlug() == "guiadotransito"){
 
-          if($debug) print "<br>13-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/transito';
+          if($debug) print "<br>11-d>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/transito';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/guiadodia/transito'); 
         }	        
         
         else{
-          if($debug) print "<br>11-d>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/subsection';
+          if($debug) print "<br>11-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/subsection';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/subsection');
         }
       }
