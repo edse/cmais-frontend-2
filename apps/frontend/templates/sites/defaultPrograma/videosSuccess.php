@@ -122,10 +122,10 @@ $(function(){
           	    <?php
 	          	    if($site->getSlug() == "materiadecapa")   $code_search = "005232987476052626260:vkawbzjvfoq";
 	          	    if($site->getSlug() == "jornaldacultura") $code_search = "005232987476052626260:5urer8wgbji";
-					if($site->getSlug() == "viola") 	  $code_search = "005232987476052626260:rjkecerv2xm";
-					if($site->getSlug() == "ensaio") 	  $code_search = "005232987476052626260:t9jlojqtnng";
-					if($site->getSlug() == "entrelinhas") $code_search = "005232987476052626260:46hjnvta1yg";
-					if($site->getSlug() == "mobile") $code_search = "005232987476052626260:xzm1zokhe9i";
+					if($site->getSlug() == "viola") 	  	  $code_search = "005232987476052626260:rjkecerv2xm";
+					if($site->getSlug() == "ensaio") 	  	  $code_search = "005232987476052626260:t9jlojqtnng";
+					if($site->getSlug() == "entrelinhas") 	  $code_search = "005232987476052626260:46hjnvta1yg";
+					if($site->getSlug() == "mobile") 		  $code_search = "005232987476052626260:xzm1zokhe9i";
 					
 					if($code_search == "") $code_search = ""; //BUSCA DE VÍDEOS DO CMAIS
           	    ?>
