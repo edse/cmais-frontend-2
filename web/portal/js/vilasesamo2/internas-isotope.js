@@ -40,14 +40,7 @@
         
       });
       
-      
-      console.log($select);
-      console.log($j);
-      if($i > 0){
-        $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens</span>');
-      }else{
-        $('#filtro-descricao').html('Todos os links dos personagens estão ativos');
-      } 
+      $container.isotope({ filter:filter_selected });
       
       $('#container.isotope .element').each(function(i){
         if($(this).hasClass('isotope-hidden')){
@@ -56,10 +49,13 @@
           $j++;
         }
       });
-      
-      $container.isotope({ filter:filter_selected });
-      
-      
+      console.log($select);
+      console.log($j);
+      if($i > 0){
+        $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens</span>');
+      }else{
+        $('#filtro-descricao').html('Todos os links dos personagens estão ativos');
+      }
       
       return false;
     });
