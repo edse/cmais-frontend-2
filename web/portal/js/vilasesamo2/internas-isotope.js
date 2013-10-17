@@ -38,7 +38,7 @@
         $('.filtro-personagem ativo').each(function(i){
           $selecionados += $(this).find('a').attr('data-filter') + ', ';
         });
-        console.log($(this).find('inner a').attr('data-filter'))
+        console.log($(this).attr('data-filter'))
         
         $(this).find('a').attr('data-filter')
         $('#filtro-descricao').html('teste');
