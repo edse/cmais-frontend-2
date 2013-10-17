@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <script>
-  $("body").addClass("interna <?php $section->getSlug() ?>");
+  $("body").addClass("interna atividades");
 </script>
 
 <!-- HEADER -->
