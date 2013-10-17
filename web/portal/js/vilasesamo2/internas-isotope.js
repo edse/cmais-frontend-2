@@ -20,27 +20,20 @@
     
     var filter_selected
     $('.filtro-personagem a').click(function(){
-
+      
+      var $select = '';
+      var $i=0;
       filter_selected = "";
+      
       $(this).parent().parent().toggleClass("ativo");
       
       $('.filtro-personagem li.ativo').each(function(i){
         if(i > 0){
-          filter_selected += ",";
-        }
-        filter_selected += $(this).find('a').attr('data-filter');
-      });
-
-      $container.isotope({ filter:filter_selected });
-      
-      var $selecionados = '';
-      var $i=0;
-      if($(this).parent().parent().hasClass('ativo')){
-        
-        $('.filtro-personagem ativo').each(function(i){
-          $selecionados += $(this).attr('data-filter') + ', ';
+          filter_selected += $(this).find('a').attr('data-filter') + ",";
+          $select += $(this).attr('data-filter') + ', ';
           $i++;
-        });
+        }
+        
         console.log($selecionados);
         console.log($i)
         if($i!=0){
@@ -49,7 +42,11 @@
           $('#filtro-descricao').html('Todos os links dos personagens estão ativos');
         } 
         $(this).find('img').css('top','33px!important');
-      }
+        
+      });
+
+      $container.isotope({ filter:filter_selected });
+      
       return false;
     });
     
