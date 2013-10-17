@@ -159,7 +159,7 @@ $(function(){
                	</div>                    
                 
               </div>
-               <div class="box-publicidade" style="width: 250px; position: absolute; top:450px; left:5px;">
+               <div class="box-publicidade" style="width: 250px; position: absolute; top:185px; left:5px;">
                 <!-- cmais-assets-250x250 -->
         <script type='text/javascript'>
         GA_googleFillSlot("cmais-assets-250x250");
