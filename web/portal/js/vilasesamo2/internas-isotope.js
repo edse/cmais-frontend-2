@@ -21,6 +21,7 @@
     var filter_selected
     $('.filtro-personagem a').click(function(){
       var $i=0;
+      var $j=0
       var $select = '';
       filter_selected = "";
       
@@ -38,8 +39,12 @@
         
       });
       console.log($select);
+      $('#container.istope element').each(function(i){
+        $j++
+      });
+      
       if($i > 0){
-        $('#filtro-descricao').html('Você selecionou filtrar os links pelos personagens:' + $select);
+        $('#filtro-descricao').html('Você selecionou filtrar os links pelos personagens:' + $select +',com '+ $j +' itens');
       }else{
         $('#filtro-descricao').html('Todos os links dos personagens estão ativos');
       } 
