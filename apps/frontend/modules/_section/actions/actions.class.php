@@ -1344,6 +1344,20 @@ class _sectionActions extends sfActions
     if(in_array($this->section->getSlug(), array('infantil')))
       $this->setLayout(false);
 
+    
+    
+    if($this->site->slug == 'guiadotransito'){
+    	$sectionSlug = "guiadodia"; 
+	}
+    
+    
+    
+    
+    
+    
+    
+    
+    
     if($this->site->slug == 'quintaldacultura'){
       if(($sectionSlug == 'todos')||($sectionSlug == 'todas')||($sectionSlug == 'tudo')){
        /* if($this->section->Parent->getSlug() == "imagens")
