@@ -37,13 +37,14 @@
         
         $i++;
         
+        $('#container.isotope .element').each(function(i){
+        if(!$(this).hasClass('isotope-hidden')){
+            $j++;  
+          }
+        });
       });
       
-      $('#container.isotope .element').each(function(i){
-        if(!$(this).hasClass('isotope-hidden')){
-          $j++;  
-        }
-      });
+      
       console.log($select);
       console.log($j);
       if($i > 0){
