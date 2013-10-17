@@ -46,8 +46,7 @@
           $('#filtro-descricao').html('Você selecionou filtrar os links pelos personagens:' + $selecionados);
         }else{
           $('#filtro-descricao').html('Todos os links dos personagens estão ativos');
-        }
-        
+        } 
         $(this).find('img').css('top','33px!important');
       }
       return false;
