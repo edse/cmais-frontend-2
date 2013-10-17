@@ -336,7 +336,8 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #agenda .col-esq .box-content { overflow: hidden; }
 #agenda .col-esq .box-content p img { float:left; margin-right:10px; /*max-width:620px;*/ width:100%; padding:0 }
 #agenda .col-esq .box-content p { margin-bottom:15px; /*float:left;*/ }
-#agenda .col-esq .box-content a {color:#4A5DF; text-decoration:underline;}
+#agenda .col-esq .box-content strong{ font-family: 'gotham_blackregular',"Arial Black";}
+#agenda .col-esq .box-content a {color:#4457FF!important; text-decoration:underline;}
 #agenda .menu-quintal small {clear:both; display: block; font-size: 14px; color:#2B3377; }
 #agenda .col-dir .box-content{font-weight:bold!important;}
 #musicas { background:url(../images/bg-musica.png) no-repeat; width: 960px; height:558px; padding:0; }
