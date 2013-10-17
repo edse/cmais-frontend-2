@@ -30,15 +30,13 @@
         if(i > 0){
           filter_selected += $(this).find('a').attr('data-filter') + ",";
           $select += $(this).find('a').attr('data-filter') + ', ';
-        }
-        
-        console.log($select);
-
-        if($i!=0){
           $('#filtro-descricao').html('Você selecionou filtrar os links pelos personagens:' + $selecionados);
         }else{
           $('#filtro-descricao').html('Todos os links dos personagens estão ativos');
         } 
+        
+        console.log($select);
+
         $(this).find('img').css('top','33px!important');
         
       });
