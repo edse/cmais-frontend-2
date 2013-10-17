@@ -20,7 +20,7 @@
     
     var filter_selected
     $('.filtro-personagem a').click(function(){
-      var $i=1;
+      var $i=0;
       var $select = '';
       filter_selected = "";
       
@@ -35,6 +35,8 @@
         console.log($select);
 
         $(this).find('img').css('top','33px!important');
+        
+        $i++;
         
       });
       
