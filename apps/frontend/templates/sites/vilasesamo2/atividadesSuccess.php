@@ -110,7 +110,7 @@
       </ul>
     </nav>
     <!--/nav filtro personagem-->
-    <p aria-live="polite" id="filtro-descricao"></p>
+    <p aria-live="polite" id="filtro-descricao">todas as atividades estão para selecionar</p>
   </div>
   <!--/span12-->
 </section>
