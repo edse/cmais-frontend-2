@@ -44,7 +44,7 @@
       console.log($select);
       console.log($j);
       if($i > 0){
-        $('#filtro-descricao').html('Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens');
+        $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens</span>');
       }else{
         $('#filtro-descricao').html('Todos os links dos personagens estão ativos');
       } 
