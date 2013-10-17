@@ -29,10 +29,11 @@
             <?php
               $related_preview_url = "";
               if($displays['destaque-1'][0]->Asset->getAssetType() == "Video") {
-                die("nem");
+                die("video");
                 $related_preview_url = "http://img.youtube.com/vi/" . $videos[0]->AssetVideo->getYoutubeId() . "/0.jpg";
               }
               else {
+                die("outro");
                 $related_preview = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByRelationType("Preview");
                 if(count($related_preview) > 0)
                   $related_preview_url = $related_preview[0]->retriveImageUrlByImageUsage("image-13-b");
