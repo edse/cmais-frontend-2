@@ -22,7 +22,6 @@
     $('.filtro-personagem a').click(function(){
       
       var $select = '';
-      var $i=0;
       filter_selected = "";
       
       $(this).parent().parent().toggleClass("ativo");
@@ -30,12 +29,12 @@
       $('.filtro-personagem li.ativo').each(function(i){
         if(i > 0){
           filter_selected += $(this).find('a').attr('data-filter') + ",";
-          $select += $(this).attr('data-filter') + ', ';
+          $select += $(this).find('a').attr('data-filter') + ', ';
           $i++;
         }
         
         console.log($select);
-        console.log($i)
+
         if($i!=0){
           $('#filtro-descricao').html('Você selecionou filtrar os links pelos personagens:' + $selecionados);
         }else{
