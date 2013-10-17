@@ -89,12 +89,14 @@ class _sectionActions extends sfActions
         /*
          * Como não tem template para algumas seções (videos,atividades, etc), seta como seção a primeira seção filha que encontrar
          */
+        /*
         if(in_array($this->section->getSlug(), array("videos","atividades"))) {
           if($this->section->subsections()) {
             $subsections = $this->section->subsections();
             $this->section = Doctrine::getTable('Section')->findOneBySiteIdAndSlug((int)$this->site->getId(), $subsections[0]->getSlug());
           }
         }
+         * */
       }      
       if(in_array($this->section->Site->getSlug(), array("cocorico2","cocorico"))) {
         $this->setLayout('cocorico');   
