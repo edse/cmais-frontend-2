@@ -39,7 +39,7 @@
         
         $('.filtro-personagem ativo').each(function(i){
           $selecionados += $(this).attr('data-filter') + ', ';
-          var $i++;
+          $i++;
         });
         
         if($i!=0){
