@@ -32,14 +32,12 @@
         filter_selected += $(this).find('a').attr('data-filter') + ",";
         $select += $(this).find('a').attr('data-filter') + ', ';
         
-        console.log($select);
-
         $(this).find('img').css('top','33px!important');
         
         $i++;
         
       });
-      
+      console.log($select);
       if($i > 0){
         $('#filtro-descricao').html('Você selecionou filtrar os links pelos personagens:' + $select);
       }else{
