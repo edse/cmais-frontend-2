@@ -1956,18 +1956,16 @@ class _sectionActions extends sfActions
         }elseif(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/'.$sectionSlug.'Success.php')){
           if($debug) print "<br>11-c>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/'.$sectionSlug;
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/'.$sectionSlug);
-        }
-        
-        elseif($this->site->getSlug() == "guiadotransito"){
-
-          if($debug) print "<br>11-d>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/transito';
-          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/guiadodia/transito'); 
-        }	        
-        
-        else{
-          if($debug) print "<br>11-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/subsection';
+        }else{
+          if($debug) print "<br>11-d>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/subsection';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/subsection');
         }
+		
+		if($this->site->getSlug() == "guiadotransito"){
+          if($debug) print "<br>11-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/transito';
+          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/guiadodia/transito'); 
+        }	        		
+		
       }
       elseif($this->site->getType() == "ProgramaRadio"){
         if($this->site->Program->Channel->getSlug() == "culturabrasil" || $this->site->getSlug() == "especiais-1") {
