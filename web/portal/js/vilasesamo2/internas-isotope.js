@@ -41,7 +41,8 @@
           $selecionados += $(this).attr('data-filter') + ', ';
           $i++;
         });
-        
+        console.log($selecionados);
+        console.log($i)
         if($i!=0){
           $('#filtro-descricao').html('Você selecionou filtrar os links pelos personagens:' + $selecionados);
         }else{
