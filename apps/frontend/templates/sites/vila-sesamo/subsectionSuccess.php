@@ -22,24 +22,32 @@
     <div class="span10 destaque-filtro">
       <!--/destaques-->
       <div class="aba1">
+        <?php if(isset($displays['destaque-1'])): ?>
+          <?php if(count($displays['destaque-1']) > 0): ?>
         <h2 aria-describedby="Novidade">
           <article class="span6 clipes">
-            <a class="img-destaque" href="/vilasesamo2/atividades">
+            <a class="img-destaque" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>">
               <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Descrição Figura destaque 1" />
-              <p>Nome Atividade</p> 
+              <img src="<?php echo $displays['destaque-1'][0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" />
+              <p><?php echo $displays['destaque-1'][0]->getTitle() ?></p> 
             </a> 
           </article>
         </h2>
-        <h2 aria-describedby="Novidade Atividade 2">
+          <?php endif; ?>
+        <?php endif; ?>
+        <?php if(isset($displays['destaque-2'])): ?>
+          <?php if(count($displays['destaque-2']) > 0): ?>
+        <h2 aria-describedby="Novidade">
           <article class="span6 clipes">
-            <a class="img-destaque" href="/vilasesamo2/atividades">
+            <a class="img-destaque" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>">
               <span class="sprite-selo">Novidade!</span>
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/img350x350.jpg" alt="Descrição Figura destaque 2" />
-              <p>Nome Atividade</p> 
+              <img src="<?php echo $displays['destaque-2'][0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
+              <p><?php echo $displays['destaque-2'][0]->getTitle() ?></p> 
             </a> 
           </article>
         </h2>
+          <?php endif; ?>
+        <?php endif; ?>
       </div>
       <!--/destaques-->
     </div>
