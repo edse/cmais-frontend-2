@@ -20,31 +20,41 @@
     
     var filter_selected
     $('.filtro-personagem a').click(function(){
-
+      var $i=0;
+      var $j=0
+      var $select = '';
       filter_selected = "";
+      
       $(this).parent().parent().toggleClass("ativo");
       
       $('.filtro-personagem li.ativo').each(function(i){
-        if(i > 0){
-          filter_selected += ",";
-        }
-        filter_selected += $(this).find('a').attr('data-filter');
+        
+        
+        filter_selected += $(this).find('a').attr('data-filter') + ",";
+        $select += $(this).find('a').attr('data-filter') + ', ';
+        
+        $(this).find('img').css('top','33px!important');
+        
+        $i++;
+        
+        
       });
-
+      
       $container.isotope({ filter:filter_selected });
       
-      var $selecionados = '';
-      if($(this).parent().parent().hasClass('ativo')){
-        $('.filtro-personagem ativo').each(function(i){
-          $selecionados += $(this).find('a').attr('data-filter') + ', ';
-        });
-        console.log($(this).find('a').attr('data-filter'))
-        
-        $(this).find('a').attr('data-filter')
-        $('#filtro-descricao').html('teste');
-       
-        $(this).find('img').css('top','33px!important');
+      $('#container.isotope .element').each(function(i){
+        if(!$(this).hasClass('isotope-hidden')){
+          $j++;
+        }
+      });
+      console.log($select);
+      console.log($j);
+      if($i > 0){
+        $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens</span>');
+      }else{
+        $('#filtro-descricao').html('Todos os links dos personagens estão ativos');
       }
+      
       return false;
     });
     
