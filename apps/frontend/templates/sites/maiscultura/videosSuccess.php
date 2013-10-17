@@ -164,7 +164,7 @@ $(function(){
         <script type='text/javascript'>
         GA_googleFillSlot("cmais-assets-250x250");
         </script>
-        </div-->
+        </div>
               
               <!--div id="recentes" class="filho blocos" style="display:none;">
                 <div class="capa">
