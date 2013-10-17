@@ -1344,13 +1344,6 @@ class _sectionActions extends sfActions
     if(in_array($this->section->getSlug(), array('infantil')))
       $this->setLayout(false);
 
-    
-    
-    if($this->site->slug == 'guiadotransito'){
-    	$sectionSlug = "guiadodia"; 
-	}
-    
-    
     if($this->site->slug == 'quintaldacultura'){
       if(($sectionSlug == 'todos')||($sectionSlug == 'todas')||($sectionSlug == 'tudo')){
        /* if($this->section->Parent->getSlug() == "imagens")
@@ -1987,6 +1980,13 @@ class _sectionActions extends sfActions
           if($debug) print "<br>13-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new'); 
         }
+		
+        elseif($this->site->getSlug() == "guiadotransito"){
+
+          if($debug) print "<br>13-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/index';
+          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/guiadodia/index'); 
+        }		
+		
         else {
           if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
             if($debug) print "<br>13-f>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
