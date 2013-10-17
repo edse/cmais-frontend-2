@@ -50,8 +50,10 @@
       } 
       
       $('#container.isotope .element').each(function(i){
-        if(!$(this).hasClass('isotope-hidden')){
-          $j++;  
+        if($(this).hasClass('isotope-hidden')){
+          $j=$j;  
+        }else{
+          $j++;
         }
       });
       
