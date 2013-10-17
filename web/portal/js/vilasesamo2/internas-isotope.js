@@ -28,7 +28,7 @@
       $(this).parent().parent().toggleClass("ativo");
       
       $('.filtro-personagem li.ativo').each(function(i){
-        console.log(i)
+        
         
         filter_selected += $(this).find('a').attr('data-filter') + ",";
         $select += $(this).find('a').attr('data-filter') + ', ';
@@ -38,13 +38,14 @@
         $i++;
         
       });
-      console.log($select);
-      $('#container.istope element').each(function(i){
+      
+      $('#container.isotope element').each(function(i){
         $j++
       });
-      
+      console.log($select);
+      console.log($j);
       if($i > 0){
-        $('#filtro-descricao').html('Você selecionou filtrar os links pelos personagens:' + $select +',com '+ $j +' itens');
+        $('#filtro-descricao').html('Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens');
       }else{
         $('#filtro-descricao').html('Todos os links dos personagens estão ativos');
       } 
