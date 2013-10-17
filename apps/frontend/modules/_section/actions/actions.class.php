@@ -1961,7 +1961,7 @@ class _sectionActions extends sfActions
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/subsection');
         }
 		
-		if($this->site->getSlug() == "guiadotransito"){
+		if($this->site->getSlug() == "guiadotransito" && ($this->section->getSlug() == "transito")){
           if($debug) print "<br>11-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/guiadodia/'.$sectionSlug;
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/guiadodia/'.$sectionSlug); 
         }	        		
