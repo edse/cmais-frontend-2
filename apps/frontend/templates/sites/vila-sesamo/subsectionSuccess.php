@@ -16,13 +16,13 @@
   <div class="span12" role="main">
     
     <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
-    <h1 title="Destaque <?php echo $section->getSlug() ?>"><i class="sprite-icon-colorir-med"></i>Atividades</h1>
+    <h1 title="Destaque"><i class="sprite-icon-colorir-med"></i><?php echo $section->getTitle() ?></h1>
     
     <!--destaque-filtro-->
     <div class="span10 destaque-filtro">
       <!--/destaques-->
       <div class="aba1">
-        <h2 aria-describedby="Novidade Atividade">
+        <h2 aria-describedby="Novidade">
           <article class="span6 clipes">
             <a class="img-destaque" href="/vilasesamo2/atividades">
               <span class="sprite-selo">Novidade!</span>
