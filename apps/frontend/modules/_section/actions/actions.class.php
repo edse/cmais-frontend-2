@@ -765,7 +765,7 @@ class _sectionActions extends sfActions
                 
                 $this->assetsQuery->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"));
                 
-                if($this->site->getSlug() == "entrelinhas-1")
+                if(in_array($this->site->getSlug(), array("programas-na-integra","entrelinhas-1")))
                   $this->assetsQuery->orderBy('sa.display_order');
                 else
                   $this->assetsQuery->orderBy('a.created_at DESC');
