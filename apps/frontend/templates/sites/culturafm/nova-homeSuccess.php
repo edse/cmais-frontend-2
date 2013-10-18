@@ -253,11 +253,11 @@
 		<!-- DESTAQUE MAIS OUVIDOS -->
 		
 		<?php if(isset($displays["destaque-mais-ouvidos"])): ?>
-			<?php foreach ($displays["destaque-compositor-mes"] as $k => $d): ?>	 		
+			<?php foreach ($displays["destaque-mais-ouvidos"] as $k => $d): ?>	 		
 				<div style="padding:5px; float: left; width: 205px; padding-bottom: 20px; text-align: left">
 					<a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
 						<h2 style="color:blue">Mais Ouvidos</h2>
-						<img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getLabel() ?>" />
+						<img src="http://midia.cmais.com.br/displays/<?php echo $d->getImage() ?>" alt="<?php echo $d->getLabel() ?>" />
 						<p><?php echo $d->getTitle() ?></p>
 					</a>
 				</div>	
