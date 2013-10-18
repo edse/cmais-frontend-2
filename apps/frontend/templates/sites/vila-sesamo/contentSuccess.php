@@ -4,10 +4,13 @@
     foreach($sections as $s) {
       if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
         $section = $s;
+        
         break;
+        
       }
     }
   }
+  
 ?>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
@@ -45,7 +48,7 @@
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
         <div>
           <a href="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" title="Imprimir" target="_blank">Imprimir</a>
-          <a href="http://cmais.com.br/actions/vilasesamo/download.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" title="Baixar">Baixar</a>
+          <a href="http://cmais.com.br/actions/vilasesamo/download.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("image-2-b") ?>" title="Baixar">Baixar</a>
         </div>
           <?php else: ?>
             <?php echo html_entity_decode($asset->AssetContent->render()) ?>
