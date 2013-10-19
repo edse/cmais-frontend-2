@@ -1,12 +1,19 @@
 <?php
   if(isset($asset)) {
+    /*
+     * Procura por duas seções no asset: uma entre as seções "videos", "jogos" e "atividades"; e outra que seja filha de "campanhas".
+     */
+    $sectionChecked = false;
+    $campaignChecked = false;
     $sections = $asset->getSections();
     foreach($sections as $s) {
-      if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
+      if(in_array($s->getSlug(),array("videos","jogos","atividades")) && $sectionChecked == false) { // Se uma entre as seções "videos", "jogos" e "atividades" ainda não foi achada, continua procurando...
         $section = $s;
-        
-        break;
-        
+        $sectionChecked = true;
+      }
+      if($s->getParentSectionId() == 3181 && $campaignChecked == false) { // Se a campanha ainda não foi achada, continua procurando...
+        $campaign = $s;
+        $campaignChecked = true;
       }
     }
   }
@@ -48,7 +55,7 @@
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
         <div>
           <a href="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" title="Imprimir" target="_blank">Imprimir</a>
-          <a href="http://cmais.com.br/actions/vilasesamo/download.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("image-2-b") ?>" title="Baixar">Baixar</a>
+          <a href="http://cmais.com.br/actions/vilasesamo/download.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" title="Baixar">Baixar</a>
         </div>
           <?php else: ?>
             <?php echo html_entity_decode($asset->AssetContent->render()) ?>
