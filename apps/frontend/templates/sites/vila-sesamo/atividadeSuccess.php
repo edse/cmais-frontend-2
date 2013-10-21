@@ -1,6 +1,9 @@
 <?php
   if(isset($asset)) {
+    
     $section = false;
+    $campaign = false;
+    $categories = array();
     $sections = $asset->getSections();
     foreach($sections as $s) {
       if($s->getSlug() == "atividades" && !$section) {
