@@ -1063,7 +1063,7 @@ class _assetActions extends sfActions
 			      }
 			    }
           if ($this->site->getSlug() == "vila-sesamo") {
-            $sections = $asset->getSections();
+            $sections = $this->asset->getSections();
             foreach($sections as $s) {
               if(in_array($s->getSlug(), array("atividades", "jogos", "videos"))) {
                 $this->section = $s;
