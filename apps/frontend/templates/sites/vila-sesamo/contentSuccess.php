@@ -16,6 +16,38 @@
         $campaignChecked = true;
       }
     }
+    
+    if($campaign) { // se o asset fizer parte de uma campanha, o "veja também" só terá assets dessa campanha...
+      $see_also = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->where('a.site_id = ?', $site->getId())
+        ->andWhere('sa.asset_id = a.id')
+        ->andWhere('sa.section_id = ?', $campaign->getId())
+        //->andWhere('a.asset_type_id = ?', 1)
+        ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+        ->andWhere('a.is_active = ?', 1)
+        ->orderby('sa.display_order')
+        ->limit(80)
+        ->execute();
+    }
+    else { // senão, prioriza assets com a mesma tag e depois concatena com assets da mesma categoria.
+      $tags = $asset->getTags();
+      print_r($tags);
+      $see_also = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->where('a.site_id = ?', $site->getId())
+        ->andWhere('sa.asset_id = a.id')
+        ->andWhere('sa.section_id = ?', $campaign->getId())
+        //->andWhere('a.asset_type_id = ?', 1)
+        ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+        ->andWhere('a.is_active = ?', 1)
+        ->orderby('sa.display_order')
+        ->limit(80)
+        ->execute();
+       
+    }
   }
   
 ?>
