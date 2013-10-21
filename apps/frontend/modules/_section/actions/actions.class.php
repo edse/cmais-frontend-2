@@ -765,7 +765,7 @@ class _sectionActions extends sfActions
                 
                 $this->assetsQuery->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"));
                 
-                if($this->site->getSlug() == "entrelinhas-1")
+                if($this->site->getSlug() == "entrelinhas-1" || $this->section->getSlug() == "programas-na-integra")
                   $this->assetsQuery->orderBy('sa.display_order');
                 else
                   $this->assetsQuery->orderBy('a.created_at DESC');
@@ -879,6 +879,7 @@ class _sectionActions extends sfActions
                 ->from('Asset a, SectionAsset sa')
                 ->where('sa.section_id = ?', $this->section->id)
                 ->andWhere('sa.asset_id = a.id')
+                ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
                 ->andWhere('a.is_active = ?', 1);
               if($request->getParameter('busca') != '')
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
