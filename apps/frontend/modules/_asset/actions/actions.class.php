@@ -1071,15 +1071,15 @@ class _assetActions extends sfActions
               }
             }
             if($this->section->getSlug() == "atividades") {
-              if($debug) print "<br>2-3-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().' /atividade';
+              if($debug) print "<br>2-3-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/atividade';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/atividade');
             }
             elseif($this->section->getSlug() == "jogos") {
-              if($debug) print "<br>2-3-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().' /jogo';
+              if($debug) print "<br>2-3-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/jogo';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/jogo');
             }
             elseif($this->section->getSlug() == "videos") {
-              if($debug) print "<br>2-3-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().' /video';
+              if($debug) print "<br>2-3-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/video';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/video');
             }
             else {
