@@ -33,9 +33,8 @@
       $tags = array();
       if(count($asset->getTags())>0){
         foreach($asset->getTags() as $t)
-          $tags[] .= $t;
+          $tags[] = $t;
       }
-      
       $see_also_by_tag = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa, tag t, tagging tg')
