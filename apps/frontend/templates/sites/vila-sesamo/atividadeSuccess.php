@@ -45,7 +45,7 @@
         ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
         ->andWhere('a.is_active = ?', 1)
         ->andWhere('tg.taggable_id = a.id')
-        ->andWhere('t2.tag_id = t.id')
+        ->andWhere('tg.tag_id = t.id')
         ->andWhereIn('t.name', $tags)
         ->andWhere('a.asset_type_id = ?', 1)
         ->limit(80)
