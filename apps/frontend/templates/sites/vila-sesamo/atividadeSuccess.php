@@ -38,21 +38,22 @@
         foreach($asset->getTags() as $t)
           $tags[] = $t;
       }
-      $see_also_by_tag = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, SectionAsset sa, tag t, tagging tg')
-        ->where('a.site_id = ?', $site->getId())
-        ->andWhere('sa.asset_id = a.id')
-        ->andWhere('sa.section_id = ?', 2389)
-        ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
-        ->andWhere('a.is_active = ?', 1)
-        ->andWhere('tg.taggable_id = a.id')
-        ->andWhere('tg.tag_id = t.id')
-        ->andWhereIn('t.name', $tags)
-        ->andWhere('a.asset_type_id = ?', 1)
-        ->limit(80)
-        ->execute();
-        
+      if(count($tags) > 0) {
+        $see_also_by_tag = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa, tag t, tagging tg')
+          ->where('a.site_id = ?', $site->getId())
+          ->andWhere('sa.asset_id = a.id')
+          ->andWhere('sa.section_id = ?', 2389)
+          ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+          ->andWhere('a.is_active = ?', 1)
+          ->andWhere('tg.taggable_id = a.id')
+          ->andWhere('tg.tag_id = t.id')
+          ->andWhereIn('t.name', $tags)
+          ->andWhere('a.asset_type_id = ?', 1)
+          ->limit(80)
+          ->execute();
+      }
       if(count($categories) > 0) {
         $see_also_by_categories = Doctrine_Query::create()
           ->select('a.*')
