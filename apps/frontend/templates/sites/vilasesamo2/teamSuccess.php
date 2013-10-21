@@ -3,16 +3,7 @@
 
 <script>
   $("body").addClass("interna personagens");
-
 </script>
-<style>
- #container-personagens{width:950px;height:750px;}
- .conteudo-asset {padding: 0;}
- .q-pers-01{float:left; width: 200px; height:200px; margin:5px;background:#000000;}
- .q-pers-02{float:left; width: 200px; height:200px; margin:5px;background:blue;}
- .q-pers-03{float:left; width: 200px; height:200px; margin:5px;background:red;}
- .q-pers-04{float:left; width: 200px; height:200px; margin:5px;background:yellow;}
-</style>
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
 ?>
@@ -24,19 +15,55 @@
       <a href="javascript:;" id="toggle-sizes">teste</a>
       
       <div id="container-personagens" class="asset">
-        <div class="element q-pers-03" data-order="1">
+        <div class="element q-pers" data-order="1">
           <a href="#">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bel.png" alt="Bel" />
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_bel.png" alt="Bel" />
             <p>Bel</p>
           </a>
         </div>
-        <div class="element q-pers-04" data-order="2"></div>
-        <div class="element q-pers-01" data-order="3"></div>
-        <div class="element q-pers-02" data-order="4"></div>
-        <div class="element q-pers-02" data-order="5"></div>
-        <div class="element q-pers-01" data-order="6"></div>
-        <div class="element q-pers-04" data-order="7"></div>
-        <div class="element q-pers-03" data-order="8"></div>
+        <div class="element q-pers" data-order="1">
+          <a href="#">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_beto.png" alt="Beto" />
+            <p>Beto</p>
+          </a>
+        </div>
+        <div class="element q-pers" data-order="1">
+          <a href="#">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_comecome.png" alt="Come-Come" />
+            <p>Come-Come</p>
+          </a>
+        </div>
+        <div class="element q-pers" data-order="1">
+          <a href="#">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_elmo.png" alt="Elmo" />
+            <p>Elmo</p>
+          </a>
+        </div>
+        <div class="element q-pers" data-order="1">
+          <a href="#">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_enio.png" alt="Enio" />
+            <p>Enio</p>
+          </a>
+        </div>
+        <div class="element q-pers" data-order="1">
+          <a href="#">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_garibaldo.png" alt="Garibaldo" />
+            <p>Garibaldo</p>
+          </a>
+        </div>
+        <div class="element q-pers" data-order="1">
+          <a href="#">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_grover.png" alt="Grover" />
+            <p>Grover</p>
+          </a>
+        </div>
+        <div class="element q-pers" data-order="1">
+          <a href="#">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_zoe.png" alt="Zoe" />
+            <p>Zoe</p>
+          </a>
+        </div>
+        
       </div>
     </div>
   </section>
@@ -59,6 +86,7 @@
   
   var classes = new Array();
   $('#toggle-sizes').click(function(){
+    $container.isotope('shuffle');
     /*
     var cont = 0;
     var contA = 0;
@@ -68,15 +96,15 @@
     var number = 0;
     var contWhile = 0; 
     var vetor = 0;
-
+    
     $container.find('.element').each(function(i){
-      $(this).removeClass('q-pers-01');
-      $(this).removeClass('q-pers-02');
-      $(this).removeClass('q-pers-03');
-      $(this).removeClass('q-pers-04');
+      //$(this).removeClass('q-pers-01');
+      //$(this).removeClass('q-pers-02');
+      //$(this).removeClass('q-pers-03');
+      //$(this).removeClass('q-pers-04');
       cont = i;
     });
-    console.log(cont)
+    //console.log(cont)
 
     while(contWhile==0){
       number = Math.floor((Math.random()*4)+1);
@@ -110,7 +138,7 @@
       //console.log(classes[j])
     });
     */
-    $container.isotope('mansory');
+    //$container.isotope('mansory');
     //console.log(contA +"/"+ contB +"/"+contC+"/"+contD)
     //console.log(classes)
   });

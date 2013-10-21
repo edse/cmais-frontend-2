@@ -74,7 +74,7 @@
                   
                 </script>
                 <!--MENU-BOTOES-->
-                <img class="over" src="http://172.20.16.219/portal/quintal/images/personagens-home.png" border="0" usemap="#personagensMap" id="personagens"/>
+                <img class="over" src="http://cmais.com.br/portal/quintal/images/personagens-home.png" border="0" usemap="#personagensMap" id="personagens"/>
                 <map name="personagensMap">
                   <area shape="poly" id="btn-teobaldo" name="teobaldo" title="Música" alt="Música"  coords="444,54,491,16,552,17,589,51,598,99,581,156,595,169,651,133,688,122,708,139,704,171,632,213,606,291,660,489,645,525,606,470,576,469,535,439,474,463,465,482,462,629,416,606,406,542,440,509,427,447,400,437,419,385,407,362,395,321,394,302,368,299,370,269,450,179,482,157,450,111" href="http://cmais.com.br/quintaldacultura/musicas">
                   <area shape="poly" id="btn-ludovico" name="ludovico" title="Jogos" alt="Jogos" coords="275,501,306,448,356,428,422,451,436,508,412,525,400,547,398,602,452,625,533,712,532,754,495,769,497,853,533,925,531,980,544,1151,101,1057,99,956,167,956,274,1006,209,873,261,793,136,704,157,665,263,600,322,578" href="http://cmais.com.br/quintaldacultura/jogos">
@@ -87,12 +87,12 @@
                
                 
                 <!--/MENU-BOTOES-->
-                <img id="over-teobaldo" class="over" alt="Músicas" src="http://172.20.16.219/portal/quintal/images/hover-musica.png"  usemap="#over-teobaldoMap" style="display:none;" />
-                <img id="over-ludovico" class="over" src="http://172.20.16.219/portal/quintal/images/hover-jogos.png" alt="Jogos" usemap="#over-ludovicoMap" style="display:none;"/>
-                <img id="over-osorio" class="over" src="http://172.20.16.219/portal/quintal/images/hover-diversao.png" alt="Diversão" usemap="#over-osorioMap"  style="display:none;"/>
-                <img id="over-filomena" class="over" src="http://172.20.16.219/portal/quintal/images/hover-aturma.png" alt="A turma"  usemap="#over-filomenaMap" style="display:none;"/>
-                <img id="over-doroteia" class="over" src="http://172.20.16.219/portal/quintal/images/hover-videos.png" alt="Vídeos"  usemap="#over-doroteiaMap" style="display:none;"/>
-                <img id="over-quelonio" class="over" src="http://172.20.16.219/portal/quintal/images/hover-agenda.png" usemap="#over-quelonioMap" style="display:none;"/>
+                <img id="over-teobaldo" class="over" alt="Músicas" src="http://cmais.com.br/portal/quintal/images/hover-musica.png"  usemap="#over-teobaldoMap" style="display:none;" />
+                <img id="over-ludovico" class="over" src="http://cmais.com.br/portal/quintal/images/hover-jogos.png" alt="Jogos" usemap="#over-ludovicoMap" style="display:none;"/>
+                <img id="over-osorio" class="over" src="http://cmais.com.br/portal/quintal/images/hover-diversao.png" alt="Diversão" usemap="#over-osorioMap"  style="display:none;"/>
+                <img id="over-filomena" class="over" src="http://cmais.com.br/portal/quintal/images/hover-aturma.png" alt="A turma"  usemap="#over-filomenaMap" style="display:none;"/>
+                <img id="over-doroteia" class="over" src="http://cmais.com.br/portal/quintal/images/hover-videos.png" alt="Vídeos"  usemap="#over-doroteiaMap" style="display:none;"/>
+                <img id="over-quelonio" class="over" src="http://cmais.com.br/portal/quintal/images/hover-agenda.png" usemap="#over-quelonioMap" style="display:none;"/>
                
                 <map name="over-teobaldoMap">
                   <area id="map-teobaldo" name="teobaldo" title="Músicas" alt="Músicas" shape="poly" coords="29,359,67,365,114,374,167,369,171,217,167,82,175,6,139,3,64,39,36,76,-2,125,-1,196,21,199,25,221,-1,248,-1,282,29,302" href="http://cmais.com.br/quintaldacultura/musicas">
