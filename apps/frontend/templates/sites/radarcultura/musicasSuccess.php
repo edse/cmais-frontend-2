@@ -33,26 +33,36 @@
       </div>
         <!--topo menu/alert/logo-->
       
-      <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'artist' => @$artist)) ?>
+      <?php include_partial_from_folder('sites/radarcultura', 'global/breadcrumbs', array('site' => $site, 'section' => $section, 'artist' => $artist)) ?>
       
       <!--topo Artista/contagem-->
       <div id="row-fluid">
         <div class="row-fluid musicas">
             <h1>Lista de músicas por título</h1>
             <?php if(isset($letter)):?>
-              <small id="small-letras"><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS COM A LETRA "<?php echo strtoupper(@$letter)?>"</small>
+              <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
             <?php else:?>
-              <!--small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small-->
+              <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small>
             <?php endif; ?>  
             <div class="span5 pull-right">
               <!--busca-->
-              <form action="/musicas" method="get" id="busca-radar">
+              <form action="" method="post" id="busca-radar">
                 <div class="row-fluid">
                   <input class="btn pull-right btn-busca" type="submit" value="Busca">
                   <div class="input-prepend">
-                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" /><span class="add-on pull-right"><i class="icon-search"></i></span>
+                   <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" value="<?php if(isset($busca_radar)) echo $busca_radar?>" /><span class="add-on pull-right"><i class="icon-search"></i></span>
                   </div>
                 </div>  
+                <div class="row-fluid">
+                  <label class="radio inline" style="margin-left: 35px">
+                    <input type="radio" name="busca-por" id="busca-por1" value="musicas" checked="checked" />
+                    Por Título
+                  </label>
+                  <label class="radio inline">
+                    <input type="radio" name="busca-por" id="busca-por2" value="artistas" />
+                    Por Artista
+                  </label>
+                </div>
               </form>
               <!--/busca--> 
             </div>
@@ -75,7 +85,7 @@
           <a class="avancar" href="javascript:postGoogle();">Avançar</a>
         </div>  
         <!--/modal google-->
-      <?php if(@$artist == ""): ?>
+      <?php if($artist == ""): ?>
       <!--letras-->
       <div class="row-fluid pagination pagination-centered">
         <ul>
@@ -112,25 +122,7 @@
       <!--Centro pagina-->
       <div class="row-fluid musicas" >
           <input type="hidden" id="btn-pressed" value="" name="">
-          
-            <div id="google_search" style="display:none">
-				<script>
-				  (function() {
-				    var cx = '005232987476052626260:sje2yjrqtmq';
-				    var gcse = document.createElement('script');
-				    gcse.type = 'text/javascript';
-				    gcse.async = true;
-				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-				        '//www.google.com/cse/cse.js?cx=' + cx;
-				    var s = document.getElementsByTagName('script')[0];
-				    s.parentNode.insertBefore(gcse, s);
-				  })();
-				</script>
-				<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
-           	</div>           
-          
-          
-          <table class="table table-striped musica" style="display: none">
+          <table class="table table-striped musica">
             <tbody>
               <thead>
                 <tr>
@@ -175,31 +167,15 @@
               });
             });
           </script>
+
+
+         
       </div>
       <!--/centro pagina-->
       <!--paginador-->
       <?php include_partial_from_folder('sites/radarcultura', 'global/paginator', array('page' => $page, 'pager' => $pager,'letter'=>$letter)) ?>
       <!--paginador-->
-      
-	<script>
-		function getURLParameter(name) {
-		    return decodeURI(
-		        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
-		    );
-		}
-		if(getURLParameter("busca-input") == "null" || getURLParameter("busca-input") == ""){
-			$('.table-striped').show();
-			$('.pagination-centered').show();
-		}else{
-			var busca = getURLParameter("busca-input");
-			$('#busca-input').val(busca);
-			$('#google_search').show();
-			$('.pagination-centered').hide();
-			$('#small-letras').hide();
-		}
-	</script>      
-      
-      <!--banner horizontal-->
+      <!--banner horizontal-->    
         <div class="container">
           <div class="banner-radio horizontal">
             <script type='text/javascript'>
@@ -309,7 +285,7 @@
         <script src="http://cmais.com.br/portal/js/messages_ptbr.js" type="text/javascript"></script>
         <script type="text/javascript">
         $(document).ready(function(){
-		  /*	
+
           $('#busca-radar').submit(function() {
             if($("#busca-por1").is(':checked'))
               self.location.href = "/musicas/busca-por/"+$('#busca-input').val();
@@ -317,7 +293,7 @@
               self.location.href = "/artistas/busca-por/"+$('#busca-input').val();
             return false;
           });                    
-          */
+          
           var validator = $('#form-indicacao').validate({
             rules:{
               nome:{
