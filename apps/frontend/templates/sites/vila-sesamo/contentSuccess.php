@@ -16,34 +16,8 @@
         $campaignChecked = true;
       }
     }
-    
+    /*
     if(isset($campaign)) { // se o asset fizer parte de uma campanha, o "veja também" só terá assets dessa campanha...
-      /*
-      $see_also = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, SectionAsset sa')
-        ->where('a.site_id = ?', $site->getId())
-        ->andWhere('sa.asset_id = a.id')
-        ->andWhere('sa.section_id = ?', $campaign->getId())
-        //->andWhere('a.asset_type_id = ?', 1)
-        ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
-        ->andWhere('a.is_active = ?', 1)
-        ->orderby('sa.display_order')
-        ->limit(80)
-        ->execute();*/
-    }
-    else { // senão, prioriza assets com a mesma tag e depois concatena com assets da mesma categoria.
-      $tags = array();
-      if(count($asset->getTags())>0){
-        foreach($asset->getTags() as $t)
-          $tags[] .= $t;
-      }
-      
-      $teste = implode(",", $tags);
-      echo $teste;
-      //print_r($tags);
-      
-      /*
       $see_also = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa')
@@ -56,9 +30,31 @@
         ->orderby('sa.display_order')
         ->limit(80)
         ->execute();
-       * 
-       */
     }
+    else { // senão, prioriza assets com a mesma tag e depois concatena com assets da mesma categoria.
+      $tags = array();
+      if(count($asset->getTags())>0){
+        foreach($asset->getTags() as $t)
+          $tags[] .= $t;
+      }
+      //$teste = implode(",", $tags);
+      
+      
+      $see_also = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa, tag t, tagging tg')
+        ->where('a.site_id = ?', $site->getId())
+        ->andWhere('sa.asset_id = a.id')
+        ->andWhere('(t2.taggable_id = a.id AND t2.tag_id = t.id AND t.name IN ('.implode(',',$tags).')')
+        ->andWhere('sa.section_id = ?', $campaign->getId())
+        //->andWhere('a.asset_type_id = ?', 1)
+        ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+        ->andWhere('a.is_active = ?', 1)
+        ->orderby('sa.display_order')
+        ->limit(80)
+        ->execute();
+    }
+     */
   }
   
 ?>
