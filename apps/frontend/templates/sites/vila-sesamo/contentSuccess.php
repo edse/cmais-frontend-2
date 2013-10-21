@@ -33,8 +33,12 @@
         ->execute();*/
     }
     else { // senão, prioriza assets com a mesma tag e depois concatena com assets da mesma categoria.
+      $tags = array();
+      if(count($asset->getTags())>0){
+        foreach($asset->getTags() as $t)
+          $tags[] .= $t;
+      }
       
-      $tags = $asset->getTags();
       $teste = implode(",", $tags);
       echo $teste;
       //print_r($tags);
