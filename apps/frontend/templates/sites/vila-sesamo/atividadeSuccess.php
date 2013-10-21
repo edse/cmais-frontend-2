@@ -1,38 +1,29 @@
 <?php
   if(isset($asset)) {
-    /*
-     * Procura por duas seções no asset: uma entre as seções "videos", "jogos" e "atividades"; e outra que seja filha de "campanhas".
-     */
-    $sectionChecked = false;
-    $campaignChecked = false;
+    $section = false;
     $sections = $asset->getSections();
     foreach($sections as $s) {
-      if(in_array($s->getSlug(),array("videos","jogos","atividades")) && $sectionChecked == false) { // Se uma entre as seções "videos", "jogos" e "atividades" ainda não foi achada, continua procurando...
+      if($s->getSlug() == "atividades" && !$section) {
         $section = $s;
-        $sectionChecked = true;
       }
-      if($s->getParentSectionId() == 3181 && $campaignChecked == false) { // Se a campanha ainda não foi achada, continua procurando...
+      if($s->getParentSectionId() == 3181 && !$campaign) {
         $campaign = $s;
-        $campaignChecked = true;
+      }
+      if($s->getParentSectionId() == 3194) {
+        $categories[] = $s;
       }
     }
     
-    if(isset($campaign)) { // se o asset fizer parte de uma campanha, o "veja também" só terá assets dessa campanha...
+    if(isset($campaign)) { // se o asset fizer parte de uma campanha, o "veja também" só terá assets da mesma...
       $see_also = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa')
         ->where('a.site_id = ?', $site->getId())
         ->andWhere('sa.asset_id = a.id')
-        ->andWhere('sa.section_id = ?', $campaign->getId());
-        if($section == "jogos") 
-          $see_also->andWhere('sa.section_id = ?', 2387);
-        if($section == "videos")
-          $see_also->andWhere('sa.section_id = ?', 2388);
-        if($section == "atividades")
-          $see_also->andWhere('sa.section_id = ?', 2389);
-                
-        //->andWhere('a.asset_type_id = ?', 1)
-        $see_also->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+        ->andWhere('sa.section_id = ?', $campaign->getId())
+        ->andWhere('sa.section_id = ?', 2389)
+        ->andWhere('a.asset_type_id = ?', 1)
+        ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
         ->andWhere('a.is_active = ?', 1)
         ->orderby('sa.display_order')
         ->limit(80)
@@ -44,17 +35,30 @@
         foreach($asset->getTags() as $t)
           $tags[] .= $t;
       }
-      //$teste = implode(",", $tags);
       
-      
-      $see_also = Doctrine_Query::create()
+      $see_also_by_tag = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa, tag t, tagging tg')
         ->where('a.site_id = ?', $site->getId())
         ->andWhere('sa.asset_id = a.id')
-        ->andWhere('(t2.taggable_id = a.id AND t2.tag_id = t.id AND t.name IN ('.implode(',',$tags).')')
-        ->andWhere('sa.section_id = ?', $campaign->getId())
-        //->andWhere('a.asset_type_id = ?', 1)
+        ->andWhere('sa.section_id = ?', 2389)
+        ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+        ->andWhere('a.is_active = ?', 1)
+        ->andWhere('tg.taggable_id = a.id')
+        ->andWhere('t2.tag_id = t.id')
+        ->andWhereIn('t.name', $tags)
+        ->andWhere('a.asset_type_id = ?', 1)
+        ->limit(80)
+        ->execute();
+        
+      $see_also_by_categories = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->where('a.site_id = ?', $site->getId())
+        ->andWhere('sa.asset_id = a.id')
+        ->andWhereIn('sa.section_id', $categories)
+        ->andWhere('sa.section_id = ?', 2389)
+        ->andWhere('a.asset_type_id = ?', 1)
         ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
         ->andWhere('a.is_active = ?', 1)
         ->orderby('sa.display_order')
@@ -83,32 +87,25 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="scroll row-fluid">
-    <h3><i class="sprite-icon-colorir-med"></i><?php echo $section->getTitle() ?><i class="seta-scroll sprite-scroll-<?php echo $section->getSlug() ?>"></i></h3>
+    <h3><i class="sprite-icon-colorir-med"></i>Atividades<i class="seta-scroll sprite-scroll-<?php echo $section->getSlug() ?>"></i></h3>
   </section>
   <section class="filtro row-fluid">
-    <h3><i class="sprite-icon-colorir-med"></i><?php echo $section->getTitle() ?><a class="todos-assets"><i class="sprite-btn-voltar-<?php echo $section->getSlug() ?>"></i><p>todos os jogos</p></a></h3>
+    <h3><i class="sprite-icon-colorir-med"></i>Atividades<a class="todos-assets"><i class="sprite-btn-voltar-<?php echo $section->getSlug() ?>"></i><p>todos os jogos</p></a></h3>
     <div class="conteudo-asset">
       <h2><?php echo $asset->getTitle() ?></h2>
-    <p><a href="#" title="Hábitos para uma vida saudável"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn-habitos-peq.png" alt="Hábitos para uma vida saudável" /></a><?php echo $asset->getDescription() ?></p>
+      <p><a href="#" title="Hábitos para uma vida saudável"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn-habitos-peq.png" alt="Hábitos para uma vida saudável" /></a><?php echo $asset->getDescription() ?></p>
       
+      <?php if(isset($asset)): ?>
       <div class="asset">
-        <?php if($asset->AssetType->getSlug() == "video"): ?>
-        <iframe width="900" height="675" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-        <?php elseif($asset->AssetType->getSlug() == "content"): ?>
-          <?php if($section->getSlug() == "atividades"): ?>
-            <?php $related = $asset->retriveRelatedAssetsByRelationType("Download"); ?>
+        <?php $related = $asset->retriveRelatedAssetsByRelationType("Download"); ?>
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
         <div>
           <a href="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" title="Imprimir" target="_blank">Imprimir</a>
           <a href="http://cmais.com.br/actions/vilasesamo/download.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" title="Baixar">Baixar</a>
         </div>
-          <?php else: ?>
-            <?php echo html_entity_decode($asset->AssetContent->render()) ?>
-          <?php endif; ?>
-        <?php elseif($asset->AssetType->getSlug() == "image"): ?>
-        <img src="<?php echo $asset->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
-        <?php endif; ?>
       </div>
+      <?php endif; ?>
+      
     </div>
   </section>
   
