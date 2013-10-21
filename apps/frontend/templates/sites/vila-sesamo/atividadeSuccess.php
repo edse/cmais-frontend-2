@@ -50,19 +50,21 @@
         ->limit(80)
         ->execute();
         
-      $see_also_by_categories = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, SectionAsset sa')
-        ->where('a.site_id = ?', $site->getId())
-        ->andWhere('sa.asset_id = a.id')
-        ->andWhereIn('sa.section_id', $categories)
-        ->andWhere('sa.section_id = ?', 2389)
-        ->andWhere('a.asset_type_id = ?', 1)
-        ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
-        ->andWhere('a.is_active = ?', 1)
-        ->orderby('sa.display_order')
-        ->limit(80)
-        ->execute();
+      if(count($categories) > 0) {
+        $see_also_by_categories = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa')
+          ->where('a.site_id = ?', $site->getId())
+          ->andWhere('sa.asset_id = a.id')
+          ->andWhereIn('sa.section_id', $categories)
+          ->andWhere('sa.section_id = ?', 2389)
+          ->andWhere('a.asset_type_id = ?', 1)
+          ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+          ->andWhere('a.is_active = ?', 1)
+          ->orderby('sa.display_order')
+          ->limit(80)
+          ->execute();
+        }
     }
   }
   
