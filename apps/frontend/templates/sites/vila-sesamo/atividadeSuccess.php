@@ -1,6 +1,5 @@
 <?php
   if(isset($asset)) {
-    echo $section->getSlug();
     $categories = array();
     $sections = $asset->getSections();
     foreach($sections as $s) {
