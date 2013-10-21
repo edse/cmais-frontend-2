@@ -77,10 +77,10 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="scroll row-fluid">
-    <h3><i class="sprite-icon-colorir-med"></i><?php $section->getTitle() ?><i class="seta-scroll sprite-scroll-<?php echo $section->getSlug() ?>"></i></h3>
+    <h3><i class="sprite-icon-colorir-med"></i><?php echo $section->getTitle() ?><i class="seta-scroll sprite-scroll-<?php echo $section->getSlug() ?>"></i></h3>
   </section>
   <section class="filtro row-fluid">
-    <h3><i class="sprite-icon-colorir-med"></i><?php $section->getTitle() ?><a class="todos-assets"><i class="sprite-btn-voltar-<?php echo $section->getSlug() ?>"></i><p>todos os jogos</p></a></h3>
+    <h3><i class="sprite-icon-colorir-med"></i><?php echo $section->getTitle() ?><a class="todos-assets"><i class="sprite-btn-voltar-<?php echo $section->getSlug() ?>"></i><p>todos os jogos</p></a></h3>
     <div class="conteudo-asset">
       <h2><?php echo $asset->getTitle() ?></h2>
     <p><a href="#" title="Hábitos para uma vida saudável"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn-habitos-peq.png" alt="Hábitos para uma vida saudável" /></a><?php echo $asset->getDescription() ?></p>
