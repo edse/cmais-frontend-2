@@ -192,13 +192,13 @@
 
               <!--a href="http://cmais.com.br/segundatela" target="_blank" style="margin-bottom: 10px;"><b>Clique aqui para acessar o aplicativo de segunda tela do Jornal da Cultura e receba informações complementares em tempo real.</b></a><br /><br /-->
 
-              <?php if(isset($displays["segunda-tela"])): ?>
+              <?php /*if(isset($displays["segunda-tela"])): ?>
                 <?php if(count($displays["segunda-tela"]) > 0): ?>
                   <?php if($displays["segunda-tela"][0]->Asset->AssetType->getSlug() == "image"): ?>
-              <a href="<?php echo $displays["segunda-tela"][0]->getUrl() ?>" title="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" target="_blank" style="display:block; margin-bottom:10px"><img src="<?php echo $displays["segunda-tela"][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" /></a>
+                  <a href="<?php echo $displays["segunda-tela"][0]->getUrl() ?>" title="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" target="_blank" style="display:block; margin-bottom:10px"><img src="<?php echo $displays["segunda-tela"][0]->Asset->retriveImageUrlByImageUsage('original') ?>" alt="<?php echo $displays["segunda-tela"][0]->getTitle() ?>" /></a>
                   <?php endif; ?> 
                 <?php endif; ?>
-              <?php endif; ?>
+              <?php endif; */ ?>
               
               <!--a class="twitter-timeline" href="https://twitter.com/jornal_cultura" data-widget-id="311256597148073986">Tweets de @jornal_cultura</a-->
               <a class="twitter-timeline" href="https://twitter.com/jornal_cultura" data-widget-id="316640392126808065">Tweets de @jornal_cultura</a>
