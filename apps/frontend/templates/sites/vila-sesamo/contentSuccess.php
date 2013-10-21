@@ -17,7 +17,7 @@
       }
     }
     
-    if(iasset($campaign)) { // se o asset fizer parte de uma campanha, o "veja também" só terá assets dessa campanha...
+    if(isset($campaign)) { // se o asset fizer parte de uma campanha, o "veja também" só terá assets dessa campanha...
       /*
       $see_also = Doctrine_Query::create()
         ->select('a.*')
