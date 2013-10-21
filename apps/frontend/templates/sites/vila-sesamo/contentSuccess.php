@@ -35,7 +35,8 @@
     else { // senão, prioriza assets com a mesma tag e depois concatena com assets da mesma categoria.
       
       $tags = $asset->getTags();
-      die(implode(",", $tags));
+      $teste = implode(",", $tags);
+      echo $teste;
       //print_r($tags);
       
       /*
