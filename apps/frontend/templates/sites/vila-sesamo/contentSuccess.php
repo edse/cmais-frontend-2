@@ -18,6 +18,7 @@
     }
     
     if(iasset($campaign)) { // se o asset fizer parte de uma campanha, o "veja também" só terá assets dessa campanha...
+      /*
       $see_also = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa')
@@ -29,11 +30,12 @@
         ->andWhere('a.is_active = ?', 1)
         ->orderby('sa.display_order')
         ->limit(80)
-        ->execute();
+        ->execute();*/
     }
     else { // senão, prioriza assets com a mesma tag e depois concatena com assets da mesma categoria.
-      $tags = $asset->getTags();
-      print_r($tags);
+      //$tags = $asset->getTags();
+      //print_r($tags);
+      /*
       $see_also = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa')
@@ -46,6 +48,8 @@
         ->orderby('sa.display_order')
         ->limit(80)
         ->execute();
+       * 
+       */
     }
   }
   
