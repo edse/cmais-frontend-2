@@ -33,8 +33,10 @@
         ->execute();*/
     }
     else { // senão, prioriza assets com a mesma tag e depois concatena com assets da mesma categoria.
-      //$tags = $asset->getTags();
-      //print_r($tags);
+      
+      $tags = $asset->getTags();
+      print_r($tags);
+      
       /*
       $see_also = Doctrine_Query::create()
         ->select('a.*')
