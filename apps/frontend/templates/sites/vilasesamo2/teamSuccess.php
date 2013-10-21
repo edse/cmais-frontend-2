@@ -3,16 +3,7 @@
 
 <script>
   $("body").addClass("interna personagens");
-
 </script>
-<style>
- #container-personagens{width:950px;height:750px;}
- .conteudo-asset {padding: 0;}
- .q-pers-01{float:left; width: 200px; height:200px; margin:5px;background:#000000;}
- .q-pers-02{float:left; width: 200px; height:200px; margin:5px;background:blue;}
- .q-pers-03{float:left; width: 200px; height:200px; margin:5px;background:red;}
- .q-pers-04{float:left; width: 200px; height:200px; margin:5px;background:yellow;}
-</style>
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
 ?>
@@ -30,13 +21,13 @@
             <p>Bel</p>
           </a>
         </div>
-        <div class="element q-pers-04" data-order="2"></div>
-        <div class="element q-pers-01" data-order="3"></div>
-        <div class="element q-pers-02" data-order="4"></div>
-        <div class="element q-pers-02" data-order="5"></div>
-        <div class="element q-pers-01" data-order="6"></div>
-        <div class="element q-pers-04" data-order="7"></div>
-        <div class="element q-pers-03" data-order="8"></div>
+        <div class="element q-pers" data-order="2"></div>
+        <div class="element q-pers" data-order="3"></div>
+        <div class="element q-pers" data-order="4"></div>
+        <div class="element q-pers" data-order="5"></div>
+        <div class="element q-pers" data-order="6"></div>
+        <div class="element q-pers" data-order="7"></div>
+        <div class="element q-pers" data-order="8"></div>
       </div>
     </div>
   </section>
