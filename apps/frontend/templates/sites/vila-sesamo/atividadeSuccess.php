@@ -67,6 +67,19 @@
           ->limit(80)
           ->execute();
         }
+      $see_also_by_section = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->where('a.site_id = ?', $site->getId())
+        ->andWhere('sa.asset_id = a.id')
+        ->andWhere('sa.section_id = ?', $section->getId())
+        ->andWhere('a.asset_type_id = ?', 1)
+        ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+        ->andWhere('a.id != ?', $asset->getId())
+        ->andWhere('a.is_active = ?', 1)
+        ->orderby('sa.display_order')
+        ->limit(80)
+        ->execute();
     }
   }
   
@@ -112,7 +125,7 @@
     </div>
   </section>
   
-  <?php if(isset($see_also) || isset($see_also_by_tag) || isset($see_also_by_categories)): ?>
+  <?php if(isset($see_also_by_campaign) || isset($see_also_by_tag) || isset($see_also_by_categories) || isset($see_also_by_section)): ?>
   <section class="relacionados">
     <h2>Brinque também com:</h2>
     <div id="carrossel-interna">
@@ -180,7 +193,7 @@
                           $sections = $d->getSections();
                           foreach($sections as $s) {
                             if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
-                              //$assetSection = $s;
+                              $assetSection = $s;
                               break;
                             }
                           }
@@ -199,6 +212,26 @@
                       <?php endforeach; ?>
                     <?php endif; ?>
                   <?php endif; ?>
+                  
+                  
+                  <?php if(isset($see_also_by_section)): ?>
+                    <?php if(count($see_also_by_section) > 0): ?>
+                      <?php foreach($see_also_by_section as $k=>$d): ?>
+                <!--li class="video"-->
+                <li class="<?php echo $section->getTitle() ?>">
+                  <!--div class="inner personagens bel"-->
+                  <div>
+                    <!--a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel"-->
+                    <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                      <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
+                    </a>
+                  </div>
+                  <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-ico-videos-p"></i><?php echo $d->getTitle() ?></a>
+                </li>
+                      <?php endforeach; ?>
+                    <?php endif; ?>
+                  <?php endif; ?>
+                  
                 <?php endif; ?>
               </ul>
             </div>
