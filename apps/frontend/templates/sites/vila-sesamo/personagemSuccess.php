@@ -188,6 +188,10 @@
       arrowLeft:          '#carrossel-mobile .arrow-left',
       arrowRight:         '#carrossel-mobile .arrow-right',
       dragEvents:         true,
+      responsiveUnitSize:function () {
+          return 1;
+      },
+      step:-1,
       onShift:function (i) {
           var $current = $('#selector-mobile li a[rel=frame_' + i + ']');
           $('#selector-mobile li a').removeClass('current');
