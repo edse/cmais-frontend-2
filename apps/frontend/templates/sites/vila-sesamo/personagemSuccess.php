@@ -1,5 +1,3 @@
-<link type="text/css" rel="stylesheet" href="http:/cmais.com.br/portal/js/responsive-carousel/style-vilasesamo.css"/>
-
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
@@ -167,9 +165,12 @@
   </section>
   <!--/content-->
   <!--scripts e css carrossel-->
+  <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
+  <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/js/responsive-carousel/style-vilasesamo.css"/>
+  
   <script>
   //carrossel mobile
   var total=0;
@@ -188,9 +189,6 @@
       arrowLeft:          '#carrossel-mobile .arrow-left',
       arrowRight:         '#carrossel-mobile .arrow-right',
       dragEvents:         true,
-      responsiveUnitSize:function () {
-          return 1;
-      },
       step:-1,
       onShift:function (i) {
           var $current = $('#selector-mobile li a[rel=frame_' + i + ']');

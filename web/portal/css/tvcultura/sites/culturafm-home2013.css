@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'gotham_mediumregular';
+    src: url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot');
+    src: url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.woff') format('woff'),
+         url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.svg#gotham_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'gotham_blackregular';
+    src: url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot');
+    src: url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.woff') format('woff'),
+         url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.svg#gotham_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x;}
+#container-home{width:100%;}
+#guia-topo {padding: 0;}
+#barra-site h2 {margin-top: 20px;}
+.marginLeft10{margin-left:10px}
+.marginBottom20{margin-bottom:20px;}
+#main-header{width:980px; margin:3px auto;overflow:hidden;*margin-bottom:15px;}
+#main-header h1{float:left; margin-top:18px;}
+
+#main-header .redes {position: relative;z-index: 2;width: 460px;float: left;margin: 25px 0 0 40px;}
+#main-header .redes .curtir{width:202px; float: left;}
+#main-header .redes iframe#twitter-widget-0{margin-left: -130px;}
+
+#main-header #listen{width:240px; overflow:hidden; float:right;}
+#main-header #listen h1{float:left; font-family:'gotham_blackregular', Arial, Helvetica, sans-serif; color:#666666; clear:both; font-size:13px; width: 100%; text-align: left;text-transform:uppercase; letter-spacing: 0.03em;}
+#main-header #listen .link-radio{padding:4px 4px; font-family:'gotham_mediumregular', Arial, Helvetica, sans-serif; font-size:13px;color:#FFFFFF; float:left;text-transform:uppercase; letter-spacing: 0.03em;}
+#main-header #listen .cbrasil{background:#999999;}
+#main-header #listen .cfm{background:#0054a6; margin-left:4px;}
+#main-header #main-nav .menu-interna{margin-bottom:15px;}
+#main-header #main-nav .menu-interna li {height: 35px;margin-top: 10px;font-size:12px;font-family:'gotham_mediumregular', Arial, Helvetica, sans-serif; color:#fff!important; margin-right: 0;background: #666;border-radius: 0;text-transform: uppercase;}
+#main-header #main-nav .menu-interna li:hover{background: #005ca8;}
+#main-header #main-nav .menu-interna li a{color:#fff; padding: 7px 10px; font-size:13px;}
+#main-header #main-nav .menu-interna .m-search{width:0!important;}
+#main-header #main-nav {position:relative;margin-top: 10px;overflow: hidden;clear: both;}
+#main-header #main-nav #search{margin-left: -9px; background: #666; width: 211px; *width: 200px; height: 35px; display: block; position:absolute; /*right: 0;top: 15px;*right:0!important;*top:15px!important;*/}
+#main-header #main-nav #search #search_submit{border:none; background: none; font-family:'gotham_mediumregular', Arial, Helvetica, sans-serif; color:#FFF; text-transform:uppercase; background:#666; } 
+#main-header #main-nav #search #search_field{font-family:'gotham_mediumregular', Arial, Helvetica, sans-serif; width: 150px;border: none;height: 20px;margin-top: 7px; padding-left: 5px; font-size:13px;color:#666;}
+
+#content-holder{width: 980px;margin: 0 auto;overflow: hidden;}
+#content-holder .destaque{width:320px; float:left;}
+#content-holder .grid2{overflow:hidden;float:left;width:210px;}
+#content-holder .grid3{overflow:hidden;float:left;width:310px;}
+#content-holder .grid4{overflow:hidden;float:left;width:430px;} 
+
+#content-holder .seta2{width:10px; height:16px; background:url('/portal/images/capaPrograma/culturafm/novahome/seta-2.png') no-repeat; position:absolute;top:16px;left:7px;}
+#content-holder .seta{width:10px; height:16px; background:url('/portal/images/capaPrograma/culturafm/novahome/seta.jpg') no-repeat; position:absolute; top:0; right:-10px;}
+#content-holder .linha-hr{width:100%; height:1px; background:url('/portal/images/capaPrograma/culturafm/novahome/linha-pontilhada.jpg') repeat-x;}
+
+#content-holder h2{font-size:20px; color:#0546a6; text-align: left; margin-top: 4px;max-height: 73px;overflow: hidden;}
+
+#content-holder .destaque.c-agora h1{*left:0;font-size: 11px;color: #fff;background-color: #0054a6;padding:1px 3px;text-transform: uppercase;display: block;width: 100px; position:relative;}
+#content-holder .destaque.c-agora h2:hover{ color:#0546a6;}
+#content-holder .destaque.c-agora p{font-size:14px; color:#000; text-align:left; margin-bottom: 8px;overflow: hidden;max-height: 60px; width:96%;}
+
+#content-holder .programacao{float: left;background: #d9e6f2;width: 292px;padding: 5px 10px;margin: -2px 0 20px 0; position:relative;}
+#content-holder .programacao h2{margin:5px 0 20px 20px; }
+#content-holder .programacao ul{height: 133px;overflow: auto; margin-left:20px;width:279px;}
+#content-holder .programacao ul li{list-style: none;text-align: left;margin-bottom: 20px;}
+#content-holder .programacao::-webkit-scrollbar {height: 12px;width: 12px;background: -webkit-gradient(linear, 0% 50%, 0% 50%, from(#e4e4e4), to(white));}
+#content-holder .programacao::-webkit-scrollbar-thumb {background: #c2c2c2;-webkit-border-radius: 1ex;}
+#content-holder .programacao::-webkit-scrollbar-corner {background: #fff;}
+
+#content-holder .c-classicos{float: left; width: 100%; position:relative;margin-bottom:20px;}
+#content-holder .c-classicos h2{padding-left:20px; margin-top: 10px; max-height: 24px; overflow: hidden;}
+#content-holder .c-classicos .titulo{font-weight:bold; text-align: left;max-height:20px; overflow:hidden;}
+#content-holder .c-classicos{text-align:left;}
+#contait-holder .c-classicos p{max-height: 38px;}
+
+#content-holder .container-destaque{width: 430px;overflow: hidden;}
+#content-holder .container-destaque .destaque-small{width:210px; float:left;}
+#content-holder .container-destaque .destaque-small.compositor h2{margin-left:15px;}
+#content-holder .container-destaque .destaque-small h2{font-size:12px; color:#0054a6; font-weight:bold; font-family:Arial, Helvetica, sans-serif; margin-bottom: 5px;height: 15px;}
+#content-holder .container-destaque .destaque-small img{width:210px;}
+#content-holder .container-destaque .destaque-small p{font-size:12px; font-family:Arial, Helvetica, sans-serif; text-align:left; margin-bottom:20px;max-height: 38px;overflow: hidden;}
+
+#content-holder #mais-ouvidos h2{font-size:20px; color:#666666;margin: 0 0 5px 0; line-height: 17px; }
+#content-holder #mais-ouvidos .mais-ouvidos{background:#ebebeb;overflow: hidden; padding: 10px;}
+#content-holder #mais-ouvidos .mais-ouvidos li{overflow: hidden; margin-bottom:10px;}
+#content-holder #mais-ouvidos .mais-ouvidos img{width:50px;float:left; margin-right:10px;}
+#content-holder #mais-ouvidos .mais-ouvidos p{text-align:left; font-size:12px; color:#000; font-weight:normal;height: 40px;overflow: hidden;}
+
+#content-holder .compositor{position:relative;}
+#content-holder #news-radio h2{position:relative; margin-left:15px;overflow: visible}
+#content-holder .compositor .seta2{top:5px;left:2px;}
+#content-holder #news-radio h2 .seta2{top:2px;left:-15px;}
+#content-holder #news-radio img{width: 100px;float: left; margin-left:-4px;}
+#content-holder #news-radio p{float:left;width: 110px;font-size: 12px;line-height: 18px;margin-left:3px;max-height: 70px;}
+#content-holder #news-radio form{overflow:visible; width:100%; position:relative;}
+#content-holder #news-radio form label{float:left;}
+#content-holder #news-radio form input#news{width:98%;}
+#content-holder #news-radio form input#send_news{border: none; width: 100%;height: 26px;text-transform: uppercase;font-weight: bold;color: #FFF;*color: #FFF!important;margin-top: 6px;}
+#content-holder #news-radio form label.error{font-size: 9px;position: absolute;top: 75px;left: 0;font-weight:bold;color:red;}
+#content-holder #news-radio form #msgAcerto{position: absolute;top: 132px;text-align: center;width: 100%;font-weight: bold;color: green;}
+#content-holder #news-radio form #msgErro{position: absolute;top: 132px;text-align: center;width: 100%;font-weight: bold;color: red;}
+
+#content-holder .carousel h2{overflow: hidden;height: 22px;}
+#content-holder .carousel p{text-align:left;color:#000; font-size:14px; font-family:Arial, Helvetica, sans-serif;max-height: 60px;}
+#content-holder .carousel {position: relative;margin-bottom: 20px;line-height: 1;}
+#content-holder .carousel-inner {overflow: hidden;width: 100%;position: relative;}
+#content-holder .carousel .item {display: none;position: relative;-webkit-transition: 0.6s ease-in-out left;-moz-transition: 0.6s ease-in-out left;-o-transition: 0.6s ease-in-out left;transition: 0.6s ease-in-out left;}
+#content-holder .carousel .item > img {display: block;line-height: 1;}
+#content-holder .carousel .active,
+#content-holder .carousel .next,
+#content-holder .carousel .prev {display: block;}
+#content-holder .carousel .active {left: 0;}
+#content-holder .carousel .next,
+#content-holder .carousel .prev {position: absolute;top: 0;width: 100%;}
+#content-holder .carousel .next {left: 100%;}
+#content-holder .carousel .prev {left: -100%;}
+#content-holder .carousel .next.left,
+#content-holder .carousel .prev.right {left: 0;}
+#content-holder .carousel .active.left {left: -100%;}
+#content-holder .carousel .active.right {left: 100%;}
+#content-holder .carousel-control {*display:block;background:#222222 url('/portal/images/capaPrograma/culturafm/novahome/setas-carrossel.png') no-repeat 6px center;position: absolute;*top: 46px;top: 46px;left: 3px;width: 20px; height:126px; margin-top: -20px;font-size: 60px;font-weight: 100;line-height: 30px;color: #ffffff;text-align: center;opacity: 0.9;filter: alpha(opacity=90); *z-index: 100000;}
+#content-holder .carousel-control.right {left: auto;right: 3px;background-position: -11px center;}
+#content-holder .carousel-control:hover {color: #ffffff;text-decoration: none;opacity: 0.9;filter: alpha(opacity=90);}
+
+#content-holder .c-radio{background:#dae6f4; position:relative;}
+#content-holder .c-radio .titulos{font-size: 20px; margin: 10px 0 0 20px;color:#0546a6;}
+#content-holder .jp-audio{margin-top: -20px;}
+#content-holder div.jp-interface{background:none; border:none;}
+#content-holder .playlist div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #000;}
+#content-holder .playlist div.jp-playlist ul {background: #dae6f4;padding: 10px 20px 20px;text-align: left;height: 185px;overflow:auto;}
+#content-holder .playlist div.jp-playlist::-webkit-scrollbar {height: 12px;width: 12px;background: -webkit-gradient(linear, 0% 50%, 0% 50%, from(#e4e4e4), to(white));}
+#content-holder .playlist div.jp-playlist::-webkit-scrollbar-thumb {background: #dae6f4;-webkit-border-radius: 1ex;}
+#content-holder .playlist div.jp-playlist::-webkit-scrollbar-corner {background: #fff;}
+#content-holder .jp-play,
+a.jp-play, a.jp-play:hover, a.jp-pause, a.jp-pause:hover, a.jp-stop, a.jp-stop:hover, a.jp-previous, a.jp-previous:hover, a.jp-next, a.jp-next:hover, div.jp-seek-bar, div.jp-play-bar, a.jp-mute, a.jp-mute:hover, a.jp-unmute, a.jp-unmute:hover, div.jp-volume-bar, div.jp-volume-bar-value, div.jp-video div.jp-video-play, div.jp-video div.jp-video-play:hover {
+background-image: url(/portal/images/capaPrograma/culturafm/novahome/player.png)!important;
+}
