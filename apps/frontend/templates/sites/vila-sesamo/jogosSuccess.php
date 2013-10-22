@@ -87,14 +87,9 @@
       }
     ?>
     <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?>"> 
-      <?php if($d->AssetType->getSlug() == "video"): ?>
-      <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-        <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
-      <?php else: ?>
-      <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+      <a href="<?php echo $site->getSlug() ?>/jogos/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
         <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
-      <?php endif; ?>
         <i class="sprite-icons-new sprite-icone_jogos"></i>
         <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/><?php echo $d->getTitle() ?></div>
       </a>
