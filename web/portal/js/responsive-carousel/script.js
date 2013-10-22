@@ -19,7 +19,7 @@
     // note: any vars declared out here are read-writeable by each instance of the carousel.
     var instanceCount = 0;
 
-    $.widget("li.responsiveCarousel", {
+    $.widget("ri.responsiveCarousel", {
 
         // default options for every instance of the widget
         options: {
