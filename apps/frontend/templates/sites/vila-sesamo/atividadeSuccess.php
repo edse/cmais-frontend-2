@@ -4,9 +4,11 @@
     $categories = array();
     $sections = $asset->getSections();
     foreach($sections as $s) {
-      if($s->getParentSectionId() == 3181 && !$campaign) {
-        if($s->getIsActive() == 1) 
+      if($s->getParentSectionId() == 3181) {
+        if($s->getIsActive() == 1) { 
           $campaign = $s;
+          break;
+        }
       }
       if($s->getParentSectionId() == 3194) {
         $categories[] = $s;
