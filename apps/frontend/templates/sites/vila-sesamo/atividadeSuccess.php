@@ -23,8 +23,8 @@
         $seloTitle = $c->getTitle();
         $seloUrl = $c->retriveUrl();
         $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($c->getId(), "selo");
-        $displayss["selo"] = $block->retriveDisplays();
-        $seloImageUrl = $displayss["selo"][0]->retriveImageUrlByImageUsage("original");
+        $category_displays["selo"] = $block->retriveDisplays();
+        $seloImageUrl = $category_displays["selo"][0]->retriveImageUrlByImageUsage("original");
       }
     }
     
