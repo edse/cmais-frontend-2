@@ -1830,11 +1830,11 @@ class _sectionActions extends sfActions
             if($debug) print "<br>4-4-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/personagem';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/personagem');          
           }
-          elseif($parentSection->getSlug() == "categoria") {
+          elseif($parentSection->getSlug() == "categorias") {
             if($debug) print "<br>4-4-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/categoria';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/categoria');          
           }
-          elseif($parentSection->getSlug() == "campaign") {
+          elseif($parentSection->getSlug() == "campanhas") {
             if($debug) print "<br>4-4-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/campanha';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/campanha');          
           }
@@ -1911,11 +1911,11 @@ class _sectionActions extends sfActions
               if($debug) print "<br>9-2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/personagem';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/personagem');          
             }
-            elseif($parentSection->getSlug() == "categoria") {
+            elseif($parentSection->getSlug() == "categorias") {
               if($debug) print "<br>9-2-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/categoria';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/categoria');          
             }
-            elseif($parentSection->getSlug() == "campaign") {
+            elseif($parentSection->getSlug() == "campanhas") {
               if($debug) print "<br>9-2-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/campanha';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/campanha');          
             }
