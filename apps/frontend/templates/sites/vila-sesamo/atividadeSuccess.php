@@ -147,17 +147,18 @@
                     <?php endforeach; ?>
                   <?php endif; ?>
                 <?php else: ?>
-                  <?php if(count($see_also_by_tag) > 0): ?>
-                    <?php foreach($see_also_by_tag as $k=>$d): ?>
-                      <?php
-                        $sections = $d->getSections();
-                        foreach($sections as $s) {
-                          if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
-                            //$assetSecion = $s;
-                            break;
+                  <?php if(isset($see_also_by_tag)): ?>
+                    <?php if(count($see_also_by_tag) > 0): ?>
+                      <?php foreach($see_also_by_tag as $k=>$d): ?>
+                        <?php
+                          $sections = $d->getSections();
+                          foreach($sections as $s) {
+                            if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
+                              //$assetSecion = $s;
+                              break;
+                            }
                           }
-                        }
-                      ?>
+                        ?>
                 <!--li class="video"-->
                 <li class="<?php echo $assetSecion ?>">
                   <!--div class="inner personagens bel"-->
@@ -169,19 +170,21 @@
                   </div>
                   <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-ico-videos-p"></i><?php echo $d->getTitle() ?></a>
                 </li>
-                    <?php endforeach; ?>
+                      <?php endforeach; ?>
+                    <?php endif; ?>
                   <?php endif; ?>
-                  <?php if(count($see_also_by_categories) > 0): ?>
-                    <?php foreach($see_also_by_categories as $k=>$d): ?>
-                      <?php
-                        $sections = $d->getSections();
-                        foreach($sections as $s) {
-                          if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
-                            //$assetSecion = $s;
-                            break;
+                  <?php if(isset($see_also_by_categories)): ?>
+                    <?php if(count($see_also_by_categories) > 0): ?>
+                      <?php foreach($see_also_by_categories as $k=>$d): ?>
+                        <?php
+                          $sections = $d->getSections();
+                          foreach($sections as $s) {
+                            if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
+                              //$assetSecion = $s;
+                              break;
+                            }
                           }
-                        }
-                      ?>
+                        ?>
                 <!--li class="video"-->
                 <li class="<?php echo $assetSecion ?>">
                   <!--div class="inner personagens bel"-->
@@ -193,7 +196,8 @@
                   </div>
                   <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-ico-videos-p"></i><?php echo $d->getTitle() ?></a>
                 </li>
-                    <?php endforeach; ?>
+                      <?php endforeach; ?>
+                    <?php endif; ?>
                   <?php endif; ?>
                 <?php endif; ?>
               </ul>
