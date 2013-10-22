@@ -196,7 +196,7 @@
           $current.addClass('current');
       }
   });
-  /*
+  
   $('.arrow, #selector-mobile a').click(function(){
     slideShow(); 
   });
