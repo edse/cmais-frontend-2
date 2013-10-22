@@ -171,7 +171,7 @@
                               break;
                             }
                           }
-                          $assetIDs[] = $d->getId();
+                          $assetID[] = $d->getId();
                         ?>
                 <!--li class="video"-->
                 <li class="<?php echo $assetSection ?>">
