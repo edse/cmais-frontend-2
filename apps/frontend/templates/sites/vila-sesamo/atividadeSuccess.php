@@ -128,13 +128,13 @@
                         $sections = $d->getSections();
                         foreach($sections as $s) {
                           if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
-                            //$d->Section = $s;
+                            $assetSection = $s;
                             break;
                           }
                         }
                       ?>
                 <!--li class="video"-->
-                <li class="<?php //echo $d->Section; ?>">
+                <li class="<?php echo $assetSecion; ?>">
                   <!--div class="inner personagens bel"-->
                   <div>
                     <!--a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel"-->
@@ -153,13 +153,13 @@
                         $sections = $d->getSections();
                         foreach($sections as $s) {
                           if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
-                            //$d->Section = $s;
+                            //$assetSecion = $s;
                             break;
                           }
                         }
                       ?>
                 <!--li class="video"-->
-                <li class="<?php //echo $d->Section ?>">
+                <li class="<?php echo $assetSecion ?>">
                   <!--div class="inner personagens bel"-->
                   <div>
                     <!--a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel"-->
@@ -177,13 +177,13 @@
                         $sections = $d->getSections();
                         foreach($sections as $s) {
                           if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
-                            //$d->Section = $s;
+                            //$assetSecion = $s;
                             break;
                           }
                         }
                       ?>
                 <!--li class="video"-->
-                <li class="<?php //echo $d->Section ?>">
+                <li class="<?php echo $assetSecion ?>">
                   <!--div class="inner personagens bel"-->
                   <div>
                     <!--a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel"-->
