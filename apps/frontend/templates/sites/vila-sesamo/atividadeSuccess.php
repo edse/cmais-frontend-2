@@ -1,5 +1,6 @@
 <?php
   if(isset($asset)) {
+    
     $categories = array();
     $sections = $asset->getSections();
     foreach($sections as $s) {
@@ -12,6 +13,7 @@
       }
     }
     
+    $see_also = false;
     if(isset($campaign)) { // se o asset fizer parte de uma campanha, o "veja também" só terá assets da mesma...
       $see_also_by_campaign = Doctrine_Query::create()
         ->select('a.*')
