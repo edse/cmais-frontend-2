@@ -171,6 +171,7 @@
                               break;
                             }
                           }
+                          $assetID[] = $d->getId();
                         ?>
                 <!--li class="video"-->
                 <li class="<?php echo $assetSection ?>">
@@ -189,15 +190,17 @@
                   <?php if(isset($see_also_by_categories)): ?>
                     <?php if(count($see_also_by_categories) > 0): ?>
                       <?php foreach($see_also_by_categories as $k=>$d): ?>
-                        <?php
-                          $sections = $d->getSections();
-                          foreach($sections as $s) {
-                            if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
-                              $assetSection = $s;
-                              break;
+                        <?php if(!in_array($d->getId(), $assetID)): ?>
+                          <?php
+                            $sections = $d->getSections();
+                            foreach($sections as $s) {
+                              if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
+                                $assetSection = $s;
+                                break;
+                              }
                             }
-                          }
-                        ?>
+                            $assetID[] = $d->getId();
+                          ?>
                 <!--li class="video"-->
                 <li class="<?php echo $assetSection ?>">
                   <!--div class="inner personagens bel"-->
@@ -209,6 +212,7 @@
                   </div>
                   <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-ico-videos-p"></i><?php echo $d->getTitle() ?></a>
                 </li>
+                        <?php endif; ?>
                       <?php endforeach; ?>
                     <?php endif; ?>
                   <?php endif; ?>
@@ -217,6 +221,8 @@
                   <?php if(isset($see_also_by_section)): ?>
                     <?php if(count($see_also_by_section) > 0): ?>
                       <?php foreach($see_also_by_section as $k=>$d): ?>
+                        <?php if(!in_array($d->getId(), $assetID)): ?> 
+                          <?php $assetID[] = $d->getId(); ?>
                 <!--li class="video"-->
                 <li class="<?php echo $section->getTitle() ?>">
                   <!--div class="inner personagens bel"-->
@@ -228,6 +234,7 @@
                   </div>
                   <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-ico-videos-p"></i><?php echo $d->getTitle() ?></a>
                 </li>
+                        <?php endif; ?>
                       <?php endforeach; ?>
                     <?php endif; ?>
                   <?php endif; ?>
