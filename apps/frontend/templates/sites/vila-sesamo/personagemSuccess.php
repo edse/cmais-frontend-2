@@ -199,7 +199,7 @@
   $('.arrow, #selector-mobile a').click(function(){
     slideShow(); 
   });
-  
+  /*
   $('#selector-mobile a').on('click', function (ev) {
     ev.preventDefault();
     var i = /\d/.exec($(this).attr('rel'));
