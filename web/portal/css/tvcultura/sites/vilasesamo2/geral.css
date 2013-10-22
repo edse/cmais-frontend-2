@@ -442,7 +442,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques .atividades img,
 .destaques .atividades a.asset,
 .destaques .atividades h3 { border-color:#7732e5 ; }
-.destaques { margin-bottom:20px; }
+/*.destaques { margin-bottom:20px; }*/
 .destaques .atividades span,
 .destaques .atividades i { margin-top:-3%; }
 /*.destaques .atividades img { margin-top:-1%; }*/
