@@ -178,25 +178,25 @@
         </article>
         <!-- jogo -->
         
-        <!-- jogo -->
-        <article class="span6 jogo">
+        <!-- video -->
+        <article class="span6 video">
           <a href="/vilasesamo2/jogos">
             <img class="img-destaque" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
             <i class="sprite-icons-new sprite-icone_atividade"></i>
             <p>Nome jogo1 Nomejogo3 Nomejogo3</p>  
           </a>  
         </article>
-        <!-- jogo -->
+        <!-- video -->
         
-        <!-- jogo -->
-        <article class="span6 jogo">
+        <!-- atividade -->
+        <article class="span6 atividades">
           <a href="/vilasesamo2/jogos">
             <img class="img-destaque" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
             <i class="sprite-icons-new sprite-icone_atividade"></i>
             <p>Nome jogo1 Nomejogo3 Nomejogo3</p>  
           </a>  
         </article>
-        <!-- jogo -->
+        <!-- atividade -->
         
         
         
