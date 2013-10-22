@@ -23,6 +23,7 @@
         ->andWhereIn('sa.section_id', array(2387,2388,2389))
         ->andWhere('a.asset_type_id = ?', 1)
         ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+        ->andWhere('a.id != ?', $asset->getId())
         ->andWhere('a.is_active = ?', 1)
         ->orderby('sa.display_order')
         ->limit(80)
@@ -47,6 +48,7 @@
           ->andWhere('tg.taggable_id = a.id')
           ->andWhere('tg.tag_id = t.id')
           ->andWhereIn('t.name', $tags)
+          ->andWhere('a.id != ?', $asset->getId())
           ->andWhere('a.asset_type_id = ?', 1)
           ->limit(80)
           ->execute();
@@ -62,6 +64,7 @@
           ->andWhereIn('sa.section_id', array(2387,2388,2389))
           ->andWhere('a.asset_type_id = ?', 1)
           ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+          ->andWhere('a.id != ?', $asset->getId())
           ->andWhere('a.is_active = ?', 1)
           ->orderby('sa.display_order')
           ->limit(80)
@@ -101,10 +104,10 @@
       <?php if(isset($asset)): ?>
       <div class="asset">
         <?php $related = $asset->retriveRelatedAssetsByRelationType("Download"); ?>
-        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
+        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14") ?>" alt="<?php echo $asset->getTitle() ?>" />
         <div>
-          <a href="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" title="Imprimir" target="_blank">Imprimir</a>
-          <a href="http://cmais.com.br/actions/vilasesamo/download.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" title="Baixar">Baixar</a>
+          <a href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">Imprimir</a>
+          <a href="http://cmais.com.br/actions/vilasesamo/download.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">Baixar</a>
         </div>
       </div>
       <?php endif; ?>
@@ -128,13 +131,13 @@
                         $sections = $d->getSections();
                         foreach($sections as $s) {
                           if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
-                            $d->Section = $s;
+                            $assetSection = $s;
                             break;
                           }
                         }
                       ?>
                 <!--li class="video"-->
-                <li class="<?php echo $d->Section; ?>">
+                <li class="<?php echo $assetSection; ?>">
                   <!--div class="inner personagens bel"-->
                   <div>
                     <!--a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel"-->
@@ -147,19 +150,20 @@
                     <?php endforeach; ?>
                   <?php endif; ?>
                 <?php else: ?>
-                  <?php if(count($see_also_by_tag) > 0): ?>
-                    <?php foreach($see_also_by_tag as $k=>$d): ?>
-                      <?php
-                        $sections = $d->getSections();
-                        foreach($sections as $s) {
-                          if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
-                            $d->Section = $s;
-                            break;
+                  <?php if(isset($see_also_by_tag)): ?>
+                    <?php if(count($see_also_by_tag) > 0): ?>
+                      <?php foreach($see_also_by_tag as $k=>$d): ?>
+                        <?php
+                          $sections = $d->getSections();
+                          foreach($sections as $s) {
+                            if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
+                              //$assetSection = $s;
+                              break;
+                            }
                           }
-                        }
-                      ?>
+                        ?>
                 <!--li class="video"-->
-                <li class="<?php echo $d->Section ?>">
+                <li class="<?php echo $assetSection ?>">
                   <!--div class="inner personagens bel"-->
                   <div>
                     <!--a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel"-->
@@ -169,21 +173,23 @@
                   </div>
                   <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-ico-videos-p"></i><?php echo $d->getTitle() ?></a>
                 </li>
-                    <?php endforeach; ?>
+                      <?php endforeach; ?>
+                    <?php endif; ?>
                   <?php endif; ?>
-                  <?php if(count($see_also_by_categories) > 0): ?>
-                    <?php foreach($see_also_by_categories as $k=>$d): ?>
-                      <?php
-                        $sections = $d->getSections();
-                        foreach($sections as $s) {
-                          if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
-                            $d->Section = $s;
-                            break;
+                  <?php if(isset($see_also_by_categories)): ?>
+                    <?php if(count($see_also_by_categories) > 0): ?>
+                      <?php foreach($see_also_by_categories as $k=>$d): ?>
+                        <?php
+                          $sections = $d->getSections();
+                          foreach($sections as $s) {
+                            if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
+                              //$assetSection = $s;
+                              break;
+                            }
                           }
-                        }
-                      ?>
+                        ?>
                 <!--li class="video"-->
-                <li class="<?php echo $d->Section ?>">
+                <li class="<?php echo $assetSection ?>">
                   <!--div class="inner personagens bel"-->
                   <div>
                     <!--a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel"-->
@@ -193,7 +199,8 @@
                   </div>
                   <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-ico-videos-p"></i><?php echo $d->getTitle() ?></a>
                 </li>
-                    <?php endforeach; ?>
+                      <?php endforeach; ?>
+                    <?php endif; ?>
                   <?php endif; ?>
                 <?php endif; ?>
               </ul>
