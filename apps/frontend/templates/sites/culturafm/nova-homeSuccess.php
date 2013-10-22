@@ -39,14 +39,7 @@
     <?php if(isset($siteSections)): ?>
     <!-- main-nav -->    
     <nav role="navigation" id="main-nav">
-      <?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
-      <!--search-->
-      <form id="search" role="search" class="fixed-font clearfix" action="" method="get">
-    <input type="text" name="search" id="search_field" title="Campo de busca" value="BUSCA" required="">
-        <input type="submit" id="search_submit" value="ok">
-        <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
-      </form>
-      <!--/search-->
+      <?php include_partial_from_folder('sites/culturafm','global/menuNovo', array('siteSections' => $siteSections))?>
     </nav>
     <!-- /main-nav -->
     <?php endif;?>
@@ -135,7 +128,7 @@
       <!--/classicos na tv cultura-->
       
       <!--destaque cd-->
-      <div class="destaque c-classicos">
+      <div class="destaque c-radio">
         <?php if(isset($displays["destaque-cd-da-semana"]))  include_partial_from_folder('blocks','global/display-1c-audio-gallery', array('displays' => $displays["destaque-cd-da-semana"])) ?>
       </div>
       <!--/destaque cd-->
@@ -157,7 +150,7 @@
 			      <div class="<?php if($k == 0): ?>active<?php endif; ?> item">
 			        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
 			          <h2><?php echo $d->getTitle() ?></h2>
-			          <img style="width: 430px; height: 130px" src="<?php echo $d->retriveImageUrlByImageUsage("image-5-b") ?>" alt="<?php echo $d->getTitle() ?>">
+			          <img width="424" src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>">
 			          <p> <?php echo $d->getDescription() ?></p>
 			        </a>
 			      </div>
@@ -211,15 +204,16 @@
         <!--destaque small-->
         <div id="news-radio" class="destaque-small marginLeft10">
           <h2>Newsletter<i class="seta2"></i></h2>
-          <img src="/portal/images/capaPrograma/culturafm/novahome/envelope.jpg" alt="">
+          <img src="/portal/images/capaPrograma/culturafm/novahome/envelope.jpg" alt="Newsletter">
           <p>Cadastre-se para receber e-mails com destaques da nossa programação</p>
           
           <!--form send news-->
           <form id="form-email" action="" method="post">
-            <label for="newsletter">Digite aqui seu e-mail</label>
+            <label for="newsletter" id="lbl_news">Digite aqui seu e-mail</label>
             <div id="msgAcerto" style="display:none;">Cadastro efetuado com sucesso</div>
             <div id="msgErro" style="display:none;">Erro! Tente novamente mais tarde.</div>
-            <input type="text" name="newsletter" id="news" class="news">
+            <input type="text" name="email_newsletter" id="news" class="news">
+            <input type="hidden" name="site" value="culturafm">
             <input type="submit" name="send_news" id="send_news" class="send_news" value="Enviar">
             <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none; width: 16px!important;height:16px!important;position: absolute;bottom: -26px;left: 50%; " id="ajax-loader" />
           </form>
@@ -292,14 +286,16 @@ var validator = $('#form-email').validate({
         $.ajax({
           type: "POST",
           dataType: "text",
+          //url: "http://app.cmais.com.br/actions/culturafm/newsletter.php",
+          url: "/actions/culturafm/newsletter.php",
           data: $("#form-email").serialize(),
           beforeSend: function(){
-            $('#send_news, #news').hide();
+            $('#send_news, #news, #lbl_news').hide();
             $('#ajax-loader').show();
           },
           success: function(data){
             //window.location.href="#";
-            if(data == "1"){
+            if(data == "0"){
               $('#ajax-loader, #news').hide();
               $('#msgAcerto').show();
             }
