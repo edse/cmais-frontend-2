@@ -166,11 +166,11 @@
     <div class="destaques row-fluid container">
       
       <!--section-->
-      <section class="span8">
+      <section class="span8 dest-pers">
         
         <!-- jogo -->
         <article class="span6 jogo">
-          <a href="/vilasesamo2/jogos" class="img" role="presentation" aria-hidden="true">
+          <a href="/vilasesamo2/jogos" class="img-destaque">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
             <i class="sprite-icons-new sprite-icone_atividade"></i>
             <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>  
