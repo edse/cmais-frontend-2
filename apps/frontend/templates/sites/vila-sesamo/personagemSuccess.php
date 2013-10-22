@@ -189,7 +189,7 @@
         <!-- video -->
         
         <!-- atividade -->
-        <article class="span6 atividades">
+        <article class="span6 atividade">
           <a href="/vilasesamo2/jogos">
             <img class="img-destaque" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
             <i class="sprite-icons-new sprite-icone_atividade"></i>
