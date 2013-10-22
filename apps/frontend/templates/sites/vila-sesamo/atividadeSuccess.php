@@ -3,15 +3,17 @@
     $categories = array();
     $sections = $asset->getSections();
     foreach($sections as $s) {
-      $parentSection = Doctrine::getTable('Section')->find($s->getParentSectionId());
-      if($parentSection->getSlug() == "campanhas") {
-        if($s->getIsActive() == 1) { 
-          $campaign = $s;
-          break;
+      if($s->getParentSectionId() > 0) {
+        $parentSection = Doctrine::getTable('Section')->findOneById($s->getParentSectionId());
+        if($parentSection->getSlug() == "campanhas") {
+          if($s->getIsActive() == 1) { 
+            $campaign = $s;
+            break;
+          }
         }
-      }
-      if($parentSection->getSlug() == "categorias") {
-        $categories[] = $s;
+        if($parentSection->getSlug() == "categorias") {
+          $categories[] = $s;
+        }
       }
     }
     
