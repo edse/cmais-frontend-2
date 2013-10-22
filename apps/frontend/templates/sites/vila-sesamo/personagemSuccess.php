@@ -169,16 +169,12 @@
       <section class="span8">
         
         <!-- jogo -->
-        <article class=" jogo">
-          <div>
-            <a href="/vilasesamo2/jogos" role="presentation" aria-hidden="true">
-              <i class="sprite-icon-jogos-peq"></i>Jogos
-            </a>
-            <a href="/vilasesamo2/jogos" class="img" role="presentation" aria-hidden="true">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg"  />
-            </a>
-          </div> 
-          <a class="asset" href="/vilasesamo2/jogos-interna" title="Jogos: Nome do Jogo">Nome do Jogo</a>  
+        <article class="span6 jogo">
+          <a href="/vilasesamo2/jogos" class="img" role="presentation" aria-hidden="true">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+            <i class="sprite-icons-new sprite-icone_atividade"></i>
+            <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>  
+          </a>  
         </article>
         <!-- jogo -->
         
@@ -197,7 +193,7 @@
         <!--/vídeo-->
         
         <!--atividade-->
-        <article class=" atividade">
+        <article class="span6 atividade">
           <div>
             <a href="/vilasesamo2/atividades" role="presentation" aria-hidden="true">
               <i class="sprite-icon-atividades-peq"></i>atividades
