@@ -16,7 +16,7 @@
   <div class="span12" role="main">
     
     <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
-    <h1 title="Destaque Jogos"><i class="sprite-icon-colorir-med"></i>Jogos</h1>
+    <h1><i class="sprite-icon-colorir-med"></i>Jogos</h1>
     
     <?php if(isset($displays['destaque-1']) || isset($displays['destaque-2'])): ?>
       <?php if(count($displays['destaque-1']) > 0 || count($displays['destaque-2']) > 0): ?>
