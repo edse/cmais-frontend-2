@@ -265,6 +265,8 @@ body.personagens { background:#b60401; }
 .personagens .dest-pers .img-destaque { position:relative; width:100%; display: block;}
 .personagens .dest-pers .span6 a{border:none;}
 .personagens .dest-pers .span6 a img{width:200px; height:200px; border-bottom:2px solid #0191fb;}
+.personagens .dest-pers .span6.videos a img{width:200px; height:200px; border-bottom:2px solid #fba500;}
+.personagens .dest-pers .span6.atividades a img{width:200px; height:200px; border-bottom:2px solid #b16af2;}
 .personagens .filtro .span12,
 .personagens .scroll, 
 .personagens .filtro  { border-color:#ee3021; }
