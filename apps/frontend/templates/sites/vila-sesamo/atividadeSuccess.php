@@ -125,7 +125,8 @@
     </div>
   </section>
   
-  <?php if(count($see_also_by_campaign) > 0 || count($see_also_by_tag) > 0 || count($see_also_by_categories) > 0 || count($see_also_by_section) > 0): ?>
+  <?php if(isset($see_also_by_campaign) || isset($see_also_by_tag) || isset($see_also_by_categories) || isset($see_also_by_section)): ?>
+    <?php if(count($see_also_by_campaign) > 0 || count($see_also_by_tag) > 0 || count($see_also_by_categories) > 0 || count($see_also_by_section) > 0): ?>
   <section class="relacionados">
     <h2>Brinque também com:</h2>
     <div id="carrossel-interna">
@@ -258,6 +259,7 @@
     </div>    
     <span class="divisa tipo2"></span>
   </section>
+    <?php endif; ?>
   <?php endif; ?>
   
   <?php if(isset($campaign)): ?>
