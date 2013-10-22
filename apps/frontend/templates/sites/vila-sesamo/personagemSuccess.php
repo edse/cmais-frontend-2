@@ -160,18 +160,65 @@
 
     </div>
     <!--/span12-->
-
+    <span class="divisa"></span>
+    
+    <!--destaques-->
+    <div class="destaques row-fluid container">
+      
+      <!--section-->
+      <section class="span8 dest-pers">
+        
+        <!-- jogo -->
+        <article class="span6 jogos">
+          <a href="/vilasesamo2/jogos">
+            <img class="img-destaque" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+            <i class="sprite-icons-new sprite-icone_atividade"></i>
+            <p>Nome jogo1 Nomejogo3 Nomejogo3</p>  
+          </a>  
+        </article>
+        <!-- jogo -->
+        
+        <!-- video -->
+        <article class="span6 videos">
+          <a href="/vilasesamo2/jogos">
+            <img class="img-destaque" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+            <i class="sprite-icons-new sprite-icone_atividade"></i>
+            <p>Nome jogo1 Nomejogo3 Nomejogo3</p>  
+          </a>  
+        </article>
+        <!-- video -->
+        
+        <!-- atividade -->
+        <article class="span6 atividades">
+          <a href="/vilasesamo2/jogos">
+            <img class="img-destaque" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+            <i class="sprite-icons-new sprite-icone_atividade"></i>
+            <p>Nome jogo1 Nomejogo3 Nomejogo3</p>  
+          </a>  
+        </article>
+        <!-- atividade -->
+        
+        
+        
+      </section>
+      <!--section-->
+    </div>
+    <!--destaques-->
+    
+    
+    
 
   </section>
   <!--/content-->
   <!--scripts e css carrossel-->
+  <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
   <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/js/responsive-carousel/style-vilasesamo.css"/>
   
   <script>
-  //carrossel mobile
+  //carrossel
   var total=0;
   $('#selector-mobile li').each(function(i){
     var width = $(this).width();
@@ -195,7 +242,7 @@
           $current.addClass('current');
       }
   });
-  /*
+  
   $('.arrow, #selector-mobile a').click(function(){
     slideShow(); 
   });
@@ -215,7 +262,6 @@
     //ev.preventDefault();
     $('#carrossel-mobile').responsiveCarousel('toggleSlideShow');
   };
-  //carrossel mobile
   </script>
 </div>
 <!--/section-->

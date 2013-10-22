@@ -386,11 +386,11 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .bgtotal { width:100%; max-width:100% !important; background:#fee133; padding-top:5px; padding-bottom:25px; }
 #container-lista li,
 .destaques .span6 { width:31.6%; overflow:hidden; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
-#container-lista .jogo img,
-.destaques .span6.jogo img { border-top:2px solid #0191fb; /* border-bottom:2px solid #0191fb;*/ }
+#container-lista .jogos img,
+.destaques .span6.jogos img { border-top:2px solid #0191fb; /* border-bottom:2px solid #0191fb;*/ }
 .destaques .span6 a.img { padding-top:0; border-top:none; }
 .destaques .span6.video a.img img { margin-top:-1px; }
-.destaques .span6.atividade a.img  img { margin-top:-3px; } 
+.destaques .span6.atividades a.img  img { margin-top:-3px; } 
 .destaques .span6:hover a.img { background:#fff; }
 .destaques .span6:hover a img { -moz-opacity: 0.50;-khtml-opacity: 0.50;opacity: 0.50;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);filter:alpha(opacity=50); }
 #container-lista .video img,
@@ -398,19 +398,19 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /*
 #container-lista .video:hover img,
 .destaques .span6.video:hover img { box-shadow: 0 0 .25em red; -moz-box-shadow: 0 0 .25em red; -webkit-box-shadow: 0 0 .25em red;}
-.destaques .span6.atividade:hover img { box-shadow: 0 0 .25em black; -moz-box-shadow: 0 0 .25em black;  -webkit-box-shadow: 0 0 .25em black;}  
-#container-lista .jogo:hover img,
-.destaques .span6.jogo:hover img { box-shadow: 0 0 .25em blue; -moz-box-shadow: 0 0 .25em blue; -webkit-box-shadow: 0 0 .25em blue;}
+.destaques .span6.atividades:hover img { box-shadow: 0 0 .25em black; -moz-box-shadow: 0 0 .25em black;  -webkit-box-shadow: 0 0 .25em black;}  
+#container-lista .jogos:hover img,
+.destaques .span6.jogos:hover img { box-shadow: 0 0 .25em blue; -moz-box-shadow: 0 0 .25em blue; -webkit-box-shadow: 0 0 .25em blue;}
 */
 
-#container-lista .atividade img,  
-.destaques .span6.atividade img { border-top:2px solid #7732E5;  /*border-bottom:2px solid #7732E5;*/ }
-#container-lista .jogo,  
-.destaques .jogo { background:#3aaaec; }
+#container-lista .atividades img,  
+.destaques .span6.atividades img { border-top:2px solid #7732E5;  /*border-bottom:2px solid #7732E5;*/ }
+#container-lista .jogos,  
+.destaques .jogos { background:#3aaaec; }
 #container-lista .video,
 .destaques .video { background:#f5861f; }
-#container-lista .atividade,
-.destaques .atividade { background:#883feb; }
+#container-lista .atividades,
+.destaques .atividades { background:#883feb; }
 .destaques.container { max-width:940px; }
 .destaques i { float:left; }
 .destaques i.sprite-icon-jogos-grd:hover { background-position: -130px -130px; }
@@ -422,35 +422,35 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques a.asset { font-size:18px; padding:4%; color:#fff; line-height:18px; border-bottom:2px solid #0191fb; }
 .destaques .span6:hover a.asset { text-decoration:underline; }
 #container-lista h2 a { border-bottom:none; padding:0 4%; line-height: 34px; }
-#container-lista .jogo:hover h2 a,
-.destaques .span6.jogo:hover a.asset { color:#02cbff; }
-#container-lista .video:hover h2 a,
-.destaques .span6.video:hover a.asset { color:#f9a41b; }
-#container-lista .atividade:hover h2 a,
-.destaques .span6.atividade:hover a.asset { color:#b16af2; }
-#container-lista .video,
-.destaques .video { background:#f5861f ; border-color:#f9a41b ; }
-#container-lista .video img,
-#container-lista .video h2,
-.destaques .video img,
-.destaques .video a.asset,
-.destaques .video h3 { border-color:#f07317 ; }
-#container-lista .atividade,
-.destaques .atividade { background:#883feb ; border-color:#b16af2 ; }
-#container-lista .atividade img,
-#container-lista .atividade h2,
-.destaques .atividade img,
-.destaques .atividade a.asset,
-.destaques .atividade h3 { border-color:#7732e5 ; }
+#container-lista .jogos:hover h2 a,
+.destaques .span6.jogos:hover a.asset { color:#02cbff; }
+#container-lista .videos:hover h2 a,
+.destaques .span6.videos:hover a.asset { color:#f9a41b; }
+#container-lista .atividades:hover h2 a,
+.destaques .span6.atividades:hover a.asset { color:#b16af2; }
+#container-lista .videos,
+.destaques .videos { background:#f5861f ; border-color:#f9a41b ; }
+#container-lista .videos img,
+#container-lista .videos h2,
+.destaques .videos img,
+.destaques .videos a.asset,
+.destaques .videos h3 { border-color:#f07317 ; }
+#container-lista .atividades,
+.destaques .atividades { background:#883feb ; border-color:#b16af2 ; }
+#container-lista .atividades img,
+#container-lista .atividades h2,
+.destaques .atividades img,
+.destaques .atividades a.asset,
+.destaques .atividades h3 { border-color:#7732e5 ; }
 .destaques { margin-bottom:20px; }
-.destaques .atividade span,
-.destaques .atividade i { margin-top:-3%; }
-/*.destaques .atividade img { margin-top:-1%; }*/
+.destaques .atividades span,
+.destaques .atividades i { margin-top:-3%; }
+/*.destaques .atividades img { margin-top:-1%; }*/
 
 .destaques .banner a { margin:0 0 4% 0; padding:0;  }
 .destaques .span6 a { border-top: 2px solid #0191FB; }
-.destaques .span6.video a { border-color: #f57301; }
-.destaques .span6.atividade a { border-color: #7732e5; }
+.destaques .span6.videos a { border-color: #f57301; }
+.destaques .span6.atividades a { border-color: #7732e5; }
 /* /home*/
 
 
@@ -601,14 +601,14 @@ footer .relacionados li { *margin-right:3% }
 .destaques .span6 img { border:2px solid transparent\9; border-top:2px solid #0191fb\9;  border-bottom:2px solid #0191fb\9; margin:-2px\9; }
 .destaques .span6:hover img { border:2px solid #02CBFF\9; }
 .destaques .span6:hover img { *border:2px solid #02CBFF; }
-.destaques .span6.video img { *border:2px solid transparent; *border-top:2px solid #F07317;  *border-bottom:2px solid #0191fb; *margin:-2px; }
-.destaques .span6.video img { border:2px solid transparent\9; border-top:2px solid #0191fb\9;  border-bottom:2px solid #0191fb\9; margin:-2px\9; }
-.destaques .span6.video:hover img { border:2px solid #F9A41B\9; }
-.destaques .span6.video:hover img { *border:2px solid #F9A41B; }
-.destaques .span6.atividade img { *border:2px solid transparent; *border-top:2px solid #0191fb;  *border-bottom:2px solid #0191fb; *margin:-2px; }
-.destaques .span6.atividade img { border:2px solid transparent\9; border-top:2px solid #0191fb\9;  border-bottom:2px solid #0191fb\9; margin:-2px\9; }
-.destaques .span6.atividade:hover img { border:2px solid #B16AF2\9; }
-.destaques .span6.atividade:hover img { *border:2px solid #B16AF2; }
+.destaques .span6.videos img { *border:2px solid transparent; *border-top:2px solid #F07317;  *border-bottom:2px solid #0191fb; *margin:-2px; }
+.destaques .span6.videos img { border:2px solid transparent\9; border-top:2px solid #0191fb\9;  border-bottom:2px solid #0191fb\9; margin:-2px\9; }
+.destaques .span6.videos:hover img { border:2px solid #F9A41B\9; }
+.destaques .span6.videos:hover img { *border:2px solid #F9A41B; }
+.destaques .span6.atividades img { *border:2px solid transparent; *border-top:2px solid #0191fb;  *border-bottom:2px solid #0191fb; *margin:-2px; }
+.destaques .span6.atividades img { border:2px solid transparent\9; border-top:2px solid #0191fb\9;  border-bottom:2px solid #0191fb\9; margin:-2px\9; }
+.destaques .span6.atividades:hover img { border:2px solid #B16AF2\9; }
+.destaques .span6.atividades:hover img { *border:2px solid #B16AF2; }
 /* /ie */
 
 

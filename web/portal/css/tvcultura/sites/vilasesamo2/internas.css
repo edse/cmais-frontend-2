@@ -259,7 +259,15 @@ body { background:#0172f9; }
 .resultado a:hover p { text-decoration:underline; }
 
 body.personagens { background:#b60401; }
-.personagens .todos-itens li, 
+.personagens .todos-itens li,
+.personagens .dest-pers{margin:20px 10px;}
+.personagens .dest-pers a{padding:0; overflow: hidden; border-top:2px solid #0191fb; border-bottom:2px solid #0191fb;}
+.personagens .dest-pers a p{font-size:17px;font-family: 'dinmedium', Arial, Helvetica, sans-serif;line-height: 39px;overflow: hidden;width: 143px;text-overflow: ellipsis;white-space: nowrap; margin:0;}
+.personagens .dest-pers .img-destaque { position:relative; width:100%; display: block;}
+.personagens .dest-pers .span6 a{border:none;}
+.personagens .dest-pers .span6.jogos a img{width:200px; height:200px; border-bottom:2px solid #0191fb;}
+.personagens .dest-pers .span6.videos a img{width:200px; height:200px; border-bottom:2px solid #fba500;}
+.personagens .dest-pers .span6.atividades a img{width:200px; height:200px; border-bottom:2px solid #b16af2;}
 .personagens .filtro .span12,
 .personagens .scroll, 
 .personagens .filtro  { border-color:#ee3021; }
