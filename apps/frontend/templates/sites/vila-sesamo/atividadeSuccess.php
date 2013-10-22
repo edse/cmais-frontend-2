@@ -17,6 +17,17 @@
       }
     }
     
+    foreach($categories as $c) {
+      $categorySlugs[] = $c->getSlug();
+      if($c->getIsHomepage() == 1) {
+        $seloTitle = $c->getTitle();
+        $seloUrl = $c->retriveUrl();
+        $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($c->getId(), "selo");
+        $displays["selo"] = $block->getDisplays();
+        $seloImageUrl = $displays["selo"][0]->retriveImageUrlByImageUsage("original");
+      }
+    }
+    
     $see_also = false;
     if(isset($campaign)) { // se o asset fizer parte de uma campanha, o "veja também" só terá assets da mesma...
       $see_also_by_campaign = Doctrine_Query::create()
@@ -62,13 +73,14 @@
         if(count($see_also_by_tags) > 0)
           $see_also = true;
       }
+      
       if(count($categories) > 0) {
         $see_also_by_categories = Doctrine_Query::create()
           ->select('a.*')
           ->from('Asset a, SectionAsset sa')
           ->where('a.site_id = ?', $site->getId())
           ->andWhere('sa.asset_id = a.id')
-          ->andWhereIn('sa.section_id', $categories)
+          ->andWhereIn('sa.section_id', $categorySlugs)
           ->andWhereIn('sa.section_id', array(2387,2388,2389))
           ->andWhere('a.asset_type_id = ?', 1)
           ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
@@ -128,9 +140,9 @@
     <div class="conteudo-asset">
       <h2><?php echo $asset->getTitle() ?></h2>
       <?php
-        //Doctrine::getTable('Block')->findOneBySectionIdAndSlug(, "selo");
+        //Doctrine::getTable('Block')->findOneBySectionIdAndSlug($categories, "selo");
       ?>
-      <p><a href="#" title="Hábitos para uma vida saudável"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn-habitos-peq.png" alt="Hábitos para uma vida saudável" /></a><?php echo $asset->getDescription() ?></p>
+      <p><a href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>"><img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" /></a><?php echo $asset->getDescription() ?></p>
       
       <?php if(isset($asset)): ?>
       <div class="asset">
