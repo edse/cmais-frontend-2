@@ -1824,6 +1824,27 @@ class _sectionActions extends sfActions
     }
     elseif($this->section->Parent->id > 0){
       if($this->site->getType() == "Hotsite" || $this->site->getType() == 1){
+        if(in_array($this->site->getSlug(), array("vila-sesamo","vilasesamo"))) {
+          $parentSection = $this->section->getParent();
+          if($parentSection->getSlug() == "personagens") {
+            if($debug) print "<br>4-4-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/personagem';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/personagem');          
+          }
+          elseif($parentSection->getSlug() == "categoria") {
+            if($debug) print "<br>4-4-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/categoria';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/categoria');          
+          }
+          elseif($parentSection->getSlug() == "campaign") {
+            if($debug) print "<br>4-4-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/campanha';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/campanha');          
+          }
+          else {
+            if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsectionSuccess.php')){
+              if($debug) print "<br>4-4-4>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection';
+              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection');          
+            }
+          }
+        }
         if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
           if($debug) print "<br>4-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
