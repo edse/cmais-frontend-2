@@ -23,6 +23,7 @@
         ->andWhereIn('sa.section_id', array(2387,2388,2389))
         ->andWhere('a.asset_type_id = ?', 1)
         ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+        ->andWhere('a.id = ?', $asset->getId())
         ->andWhere('a.is_active = ?', 1)
         ->orderby('sa.display_order')
         ->limit(80)
@@ -47,6 +48,7 @@
           ->andWhere('tg.taggable_id = a.id')
           ->andWhere('tg.tag_id = t.id')
           ->andWhereIn('t.name', $tags)
+          ->andWhere('a.id = ?', $asset->getId())
           ->andWhere('a.asset_type_id = ?', 1)
           ->limit(80)
           ->execute();
@@ -62,6 +64,7 @@
           ->andWhereIn('sa.section_id', array(2387,2388,2389))
           ->andWhere('a.asset_type_id = ?', 1)
           ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+          ->andWhere('a.id = ?', $asset->getId())
           ->andWhere('a.is_active = ?', 1)
           ->orderby('sa.display_order')
           ->limit(80)
@@ -101,10 +104,10 @@
       <?php if(isset($asset)): ?>
       <div class="asset">
         <?php $related = $asset->retriveRelatedAssetsByRelationType("Download"); ?>
-        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
+        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14") ?>" alt="<?php echo $asset->getTitle() ?>" />
         <div>
-          <a href="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" title="Imprimir" target="_blank">Imprimir</a>
-          <a href="http://cmais.com.br/actions/vilasesamo/download.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" title="Baixar">Baixar</a>
+          <a href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">Imprimir</a>
+          <a href="http://cmais.com.br/actions/vilasesamo/download.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">Baixar</a>
         </div>
       </div>
       <?php endif; ?>
