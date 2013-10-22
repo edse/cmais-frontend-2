@@ -170,8 +170,8 @@
         
         <!-- jogo -->
         <article class="span6 jogo">
-          <a href="/vilasesamo2/jogos" class="img-destaque">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+          <a href="/vilasesamo2/jogos">
+            <img class="img-destaque" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
             <i class="sprite-icons-new sprite-icone_atividade"></i>
             <p>Nome jogo1 Nomejogo3 Nomejogo3</p>  
           </a>  
