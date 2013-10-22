@@ -163,12 +163,12 @@
     <span class="divisa"></span>
     
     <!--destaques-->
-    <div class="destaques row-fluid container">
+    <div class="destaques dest-pers bel row-fluid container">
       
        
         
       <!--section-->
-      <section class="span8 pull-right dest-pers bel ">
+      <section class="span8 pull-right">
         
         <!-- jogo -->
         <article class="span6 jogos">
