@@ -165,8 +165,10 @@
     <!--destaques-->
     <div class="destaques row-fluid container">
       
+       
+        
       <!--section-->
-      <section class="span8 dest-pers">
+      <section class="span8 pull-right dest-pers bel ">
         
         <!-- jogo -->
         <article class="span6 jogos">
