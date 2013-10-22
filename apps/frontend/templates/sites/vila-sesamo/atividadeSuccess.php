@@ -28,7 +28,7 @@
         ->limit(80)
         ->execute();
     }
-    else { // senão, prioriza assets com a mesma tag e depois concatena com assets da mesma categoria.
+    else { // senão, prioriza assets com a mesma tag, depois concatena com assets da mesma categoria e por último com assets da mesma seção.
       $tags = array();
       if(count($asset->getTags())>0){
         foreach($asset->getTags() as $t)
