@@ -28,7 +28,7 @@
         ->limit(80)
         ->execute();
     }
-    else { // senão, prioriza assets com a mesma tag e depois concatena com assets da mesma categoria.
+    else { // senão, prioriza assets com a mesma tag, depois concatena com assets da mesma categoria e por último com assets da mesma seção.
       $tags = array();
       if(count($asset->getTags())>0){
         foreach($asset->getTags() as $t)
@@ -103,10 +103,10 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="scroll row-fluid">
-    <h3><i class="sprite-icon-colorir-med"></i>Atividades<i class="seta-scroll sprite-scroll-<?php echo $section->getSlug() ?>"></i></h3>
+    <h3><i class="sprite-icon-colorir-med"></i><?php echo $section->getTitle() ?><i class="seta-scroll sprite-scroll-<?php echo $section->getSlug() ?>"></i></h3>
   </section>
   <section class="filtro row-fluid">
-    <h3><i class="sprite-icon-colorir-med"></i>Atividades<a class="todos-assets"><i class="sprite-btn-voltar-<?php echo $section->getSlug() ?>"></i><p>todos os jogos</p></a></h3>
+    <h3><i class="sprite-icon-colorir-med"></i><?php echo $section->getTitle() ?><a class="todos-assets"><i class="sprite-btn-voltar-<?php echo $section->getSlug() ?>"></i><p>todos os jogos</p></a></h3>
     <div class="conteudo-asset">
       <h2><?php echo $asset->getTitle() ?></h2>
       <p><a href="#" title="Hábitos para uma vida saudável"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn-habitos-peq.png" alt="Hábitos para uma vida saudável" /></a><?php echo $asset->getDescription() ?></p>
@@ -114,7 +114,7 @@
       <?php if(isset($asset)): ?>
       <div class="asset">
         <?php $related = $asset->retriveRelatedAssetsByRelationType("Download"); ?>
-        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14") ?>" alt="<?php echo $asset->getTitle() ?>" />
+        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
         <div>
           <a href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">Imprimir</a>
           <a href="http://cmais.com.br/actions/vilasesamo/download.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">Baixar</a>
@@ -125,7 +125,7 @@
     </div>
   </section>
   
-  <?php if(isset($see_also_by_campaign) || isset($see_also_by_tag) || isset($see_also_by_categories) || isset($see_also_by_section)): ?>
+  <?php if(count($see_also_by_campaign) > 0 || count($see_also_by_tag) > 0 || count($see_also_by_categories) > 0 || count($see_also_by_section) > 0): ?>
   <section class="relacionados">
     <h2>Brinque também com:</h2>
     <div id="carrossel-interna">

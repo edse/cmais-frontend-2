@@ -1065,7 +1065,7 @@ class _assetActions extends sfActions
           if ($this->site->getSlug() == "vila-sesamo") {
             $sections = $this->asset->getSections();
             foreach($sections as $s) {
-              if(in_array($s->getSlug(), array("atividades", "jogos", "videos"))) {
+              if(in_array($s->getSlug(), array("atividades", "jogos", "videos","para-os-pais"))) {
                 $this->section = $s;
                 break;
               }
