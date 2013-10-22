@@ -1,6 +1,5 @@
 <?php
   if(isset($asset)) {
-    
     $categories = array();
     $sections = $asset->getSections();
     foreach($sections as $s) {
@@ -127,7 +126,7 @@
     <div class="conteudo-asset">
       <h2><?php echo $asset->getTitle() ?></h2>
       <?php
-        Doctrine::getTable('Block')->findOneBySectionIdAndSlug(, "selo");
+        //Doctrine::getTable('Block')->findOneBySectionIdAndSlug(, "selo");
       ?>
       <p><a href="#" title="Hábitos para uma vida saudável"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn-habitos-peq.png" alt="Hábitos para uma vida saudável" /></a><?php echo $asset->getDescription() ?></p>
       
