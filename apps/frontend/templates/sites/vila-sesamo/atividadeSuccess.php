@@ -1,5 +1,6 @@
 <?php
   if(isset($asset)) {
+    
     $categories = array();
     $sections = $asset->getSections();
     foreach($sections as $s) {
@@ -12,6 +13,7 @@
       }
     }
     
+    $see_also = false;
     if(isset($campaign)) { // se o asset fizer parte de uma campanha, o "veja também" só terá assets da mesma...
       $see_also_by_campaign = Doctrine_Query::create()
         ->select('a.*')
@@ -27,6 +29,8 @@
         ->orderby('sa.display_order')
         ->limit(80)
         ->execute();
+      if(count($see_also_by_campaign) > 0)
+        $see_also = true;
     }
     else { // senão, prioriza assets com a mesma tag, depois concatena com assets da mesma categoria e por último com assets da mesma seção.
       $tags = array();
@@ -35,7 +39,7 @@
           $tags[] = $t;
       }
       if(count($tags) > 0) {
-        $see_also_by_tag = Doctrine_Query::create()
+        $see_also_by_tags = Doctrine_Query::create()
           ->select('a.*')
           ->from('Asset a, SectionAsset sa, tag t, tagging tg')
           ->where('a.site_id = ?', $site->getId())
@@ -50,6 +54,9 @@
           ->andWhere('a.asset_type_id = ?', 1)
           ->limit(80)
           ->execute();
+          
+        if(count($see_also_by_tags) > 0)
+          $see_also = true;
       }
       if(count($categories) > 0) {
         $see_also_by_categories = Doctrine_Query::create()
@@ -66,6 +73,9 @@
           ->orderby('sa.display_order')
           ->limit(80)
           ->execute();
+          
+        if(count($see_also_by_categories) > 0)
+          $see_also = true;
         }
       $see_also_by_section = Doctrine_Query::create()
         ->select('a.*')
@@ -80,6 +90,10 @@
         ->orderby('sa.display_order')
         ->limit(80)
         ->execute();
+        
+        if(count($see_also_by_section) > 0)
+          $see_also = true;
+        
     }
   }
   
@@ -125,8 +139,7 @@
     </div>
   </section>
   
-  <?php if(isset($see_also_by_campaign) || isset($see_also_by_tag) || isset($see_also_by_categories) || isset($see_also_by_section)): ?>
-    <?php if(count($see_also_by_campaign) > 0 || count($see_also_by_tag) > 0 || count($see_also_by_categories) > 0 || count($see_also_by_section) > 0): ?>
+  <?php if($see_also): ?>
   <section class="relacionados">
     <h2>Brinque também com:</h2>
     <div id="carrossel-interna">
@@ -161,9 +174,9 @@
                     <?php endforeach; ?>
                   <?php endif; ?>
                 <?php else: ?>
-                  <?php if(isset($see_also_by_tag)): ?>
-                    <?php if(count($see_also_by_tag) > 0): ?>
-                      <?php foreach($see_also_by_tag as $k=>$d): ?>
+                  <?php if(isset($see_also_by_tags)): ?>
+                    <?php if(count($see_also_by_tags) > 0): ?>
+                      <?php foreach($see_also_by_tags as $k=>$d): ?>
                         <?php
                           $sections = $d->getSections();
                           foreach($sections as $s) {
@@ -259,7 +272,6 @@
     </div>    
     <span class="divisa tipo2"></span>
   </section>
-    <?php endif; ?>
   <?php endif; ?>
   
   <?php if(isset($campaign)): ?>
