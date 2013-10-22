@@ -260,7 +260,7 @@ body { background:#0172f9; }
 
 body.personagens { background:#b60401; }
 .personagens .todos-itens li,
-.personagens .dest-pers .span6 a .img{width:1px; height:40px;}
+.personagens .dest-pers .span6 a img{width:1px; height:40px;}
 .personagens .filtro .span12,
 .personagens .scroll, 
 .personagens .filtro  { border-color:#ee3021; }
