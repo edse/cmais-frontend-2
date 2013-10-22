@@ -137,7 +137,7 @@
                         }
                       ?>
                 <!--li class="video"-->
-                <li class="<?php echo $assetSecion; ?>">
+                <li class="<?php echo $assetSection; ?>">
                   <!--div class="inner personagens bel"-->
                   <div>
                     <!--a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel"-->
@@ -157,13 +157,13 @@
                           $sections = $d->getSections();
                           foreach($sections as $s) {
                             if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
-                              //$assetSecion = $s;
+                              //$assetSection = $s;
                               break;
                             }
                           }
                         ?>
                 <!--li class="video"-->
-                <li class="<?php echo $assetSecion ?>">
+                <li class="<?php echo $assetSection ?>">
                   <!--div class="inner personagens bel"-->
                   <div>
                     <!--a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel"-->
@@ -183,13 +183,13 @@
                           $sections = $d->getSections();
                           foreach($sections as $s) {
                             if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
-                              //$assetSecion = $s;
+                              //$assetSection = $s;
                               break;
                             }
                           }
                         ?>
                 <!--li class="video"-->
-                <li class="<?php echo $assetSecion ?>">
+                <li class="<?php echo $assetSection ?>">
                   <!--div class="inner personagens bel"-->
                   <div>
                     <!--a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel"-->
