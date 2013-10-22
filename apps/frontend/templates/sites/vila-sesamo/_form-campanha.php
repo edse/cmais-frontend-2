@@ -1,4 +1,4 @@
-  <?php if(isset($campaign)): ?>
+  <?php if($campaign): ?>
   <section class="form row-fluid">
     <div class="span8">
     <h2><?php echo $campaign->getTitle(); ?></h2>

@@ -25,8 +25,10 @@
       ->orderby('sa.display_order')
       ->limit(80)
       ->execute();
-    if(count($see_also_by_campaign) > 0)
+      
+    if(count($see_also_by_campaign) > 0) {
       $see_also = true;
+    }
   }
   else { // senão, prioriza assets com a mesma tag, concatenando em seguida com assets da mesma categoria e por último com assets da mesma seção, juntando tudo isso em um só carrossel.
     $tags = array();
@@ -50,14 +52,14 @@
         ->andWhere('a.asset_type_id = ?', 1)
         ->limit(80)
         ->execute();
-        
-      if(count($see_also_by_tags) > 0)
+      if(count($see_also_by_tags) > 0) {
         $see_also = true;
+      }
     }
 
-    foreach($categories as $c)
+    foreach($categories as $c) {
       $categorySlugs[] = $c->getSlug();
-    
+    }
     if(count($categories) > 0) {
       $see_also_by_categories = Doctrine_Query::create()
         ->select('a.*')
@@ -73,10 +75,11 @@
         ->orderby('sa.display_order')
         ->limit(80)
         ->execute();
-        
-      if(count($see_also_by_categories) > 0)
+      if(count($see_also_by_categories) > 0) {
         $see_also = true;
       }
+    }
+    
     $see_also_by_section = Doctrine_Query::create()
       ->select('a.*')
       ->from('Asset a, SectionAsset sa')
@@ -90,11 +93,10 @@
       ->orderby('sa.display_order')
       ->limit(80)
       ->execute();
-      
-      if(count($see_also_by_section) > 0)
-        $see_also = true;
+    if(count($see_also_by_section) > 0) {
+      $see_also = true;
+    }
   }   
-
 ?>
   <?php if($see_also): ?>
   <section class="relacionados">
@@ -105,7 +107,7 @@
           <div class="slider-mask-wrap">
             <div class="slider-mask">
               <ul class="slider-target">
-                <?php if(isset($campaign)): ?>
+                <?php if($campaign): ?>
                   <?php if(count($see_also_by_campaign) > 0): ?>
                     <?php foreach($see_also_by_campaign as $k=>$d): ?>
                       <?php
