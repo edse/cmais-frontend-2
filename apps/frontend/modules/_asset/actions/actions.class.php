@@ -1063,6 +1063,7 @@ class _assetActions extends sfActions
 			      }
 			    }
           if ($this->site->getSlug() == "vila-sesamo") {
+            /*
             $sections = $this->asset->getSections();
             foreach($sections as $s) {
               if(in_array($s->getSlug(), array("atividades", "jogos", "videos"))) {
@@ -1070,6 +1071,7 @@ class _assetActions extends sfActions
                 break;
               }
             }
+            
             if($this->section->getSlug() == "atividades") {
               if($debug) print "<br>2-3-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/atividade';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/atividade');
@@ -1082,7 +1084,19 @@ class _assetActions extends sfActions
               if($debug) print "<br>2-3-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/video';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/video');
             }
-            elseif($this->section->getSlug() == "para-os-pais") {
+            else {
+              if($debug) print "<br>2-3-5>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
+              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
+            }
+             */
+            $sections = $this->asset->getSections();
+            foreach($sections as $s) {
+              if(in_array($s->getSlug(), array("para-os-pais"))) {
+                $this->section = $s;
+                break;
+              }
+            }
+            if($this->section->getSlug() == "para-os-pais") {
               if($debug) print "<br>2-3-4>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/article';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/article');
             }
