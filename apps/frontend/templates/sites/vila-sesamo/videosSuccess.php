@@ -28,7 +28,7 @@
           <?php if(count($displays['destaque-1']) > 0): ?>
         <h2 aria-describedby="Novidade">
           <article class="span6 clipes">
-            <a class="img-destaque" href="<?php echo $displays['destaque-1'][0]->retriveUrl() ?>">
+            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/videos/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
               <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-1'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" />
               <p><?php echo $displays['destaque-1'][0]->getTitle() ?></p> 
@@ -41,7 +41,7 @@
           <?php if(count($displays['destaque-2']) > 0): ?>
         <h2 aria-describedby="Novidade">
           <article class="span6 clipes">
-            <a class="img-destaque" href="<?php echo $displays['destaque-2'][0]->retriveUrl() ?>">
+            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
               <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-2'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
               <p><?php echo $displays['destaque-2'][0]->getTitle() ?></p> 
@@ -86,7 +86,7 @@
       }
     ?>
     <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?>"> 
-      <a href="<?php echo $site->getSlug() ?>/videos/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
+      <a href="/<?php echo $site->getSlug() ?>/videos/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
         <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
         <i class="sprite-icons-new sprite-icone_videos"></i>
         <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/><?php echo $d->getTitle() ?></div>
