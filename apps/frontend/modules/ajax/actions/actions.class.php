@@ -2085,12 +2085,12 @@ EOT;
     die(json_encode($return));
   }
   
-  public function executeRadarbuscaartista(sfWebRequest $request){
+  public function executeRadarartista(sfWebRequest $request){
     $this->setLayout(false);
 	die("Artista");
   }    
   
-  public function executeRadarbuscamusica(sfWebRequest $request){
+  public function executeRadarmusica(sfWebRequest $request){
     $this->setLayout(false);
  	die("Musica");
 	
