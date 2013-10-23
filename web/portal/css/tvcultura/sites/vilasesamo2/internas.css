@@ -259,7 +259,7 @@ body { background:#0172f9; }
 .resultado a:hover p { text-decoration:underline; }
 
 body.personagens { background:#b60401; }
-.personagens .filtro-personagem ul li.ativo img{top:-25px;}
+.personagens .filtro-personagem .ativo img{top:-25px;}
 .personagens .filtro .span12{border:none;}
 .personagens .todos-itens li{clear:both; background:#d71c0d;}
 .personagens .divisa{clear:both; background-color: #d71c0d;height: 20px;margin: 0;}
