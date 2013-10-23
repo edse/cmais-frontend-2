@@ -210,10 +210,6 @@
         <p>Mais brincadeiras da Bel:</p>
       </div>
      
-           
-      </div>
-      <!--/content-->
-        
       <!--/section-->
       <section class="todos-itens ">
         <!--lista-->
@@ -265,6 +261,11 @@
       </section>
       <!--/section-->
       
+      </div>
+      <!--/content-->
+        
+      
+      
       <input type="hidden" id="filter-choice" value="">
       <nav id="page_nav">
         <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
@@ -272,27 +273,21 @@
     </div>
     <!--destaques-->
     
-    <!-- Para os pais -->
+    
+    <!-- para os pais -->
     <div class="section pais">
-      
     <span class="divisa"></span>
-    
     <h2>Para adultos <span class="sprite-seta-down"></span></h2>
-    
-    <!--redes-->
     <div class="redes">
-      <p>Compartilhe esta brincadeira:</p>
-      <g:plusone size="medium" count="false"></g:plusone>
-      <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pinterest" style="margin-top:-10px;" /></a>
-      <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false"></fb:like>
-      <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura" style="width: 80px;">Tweet</a>
-    </div>
-    <!--redes-->
-    
-    <!--content-->
+        <p>Compartilhe esta brincadeira:</p>
+        <g:plusone size="medium" count="false"></g:plusone>
+        <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pinterest" style="margin-top:-10px;" /></a>
+        <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false"></fb:like>
+        <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura" style="width: 80px;">Tweet</a>
+      </div>
     <div class="content span12 row-fluid">
       
-      <!--dica-->
+      
       <div class="span4 dica">
         
         <h2><span class="sprite-aspa-esquerda"></span><a href="#">Nome da Dica</a></h2>
@@ -301,17 +296,11 @@
         
         <button type="submit" class="btn">baixar</button>
       </div>
-      <!--/dica-->
-      
-      <!--jogo escolhido-->
       <div class="span4 box-select">
         <a href="#" title=""> <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="thumb do jogo" /> </a>
         <h2><a>Nome jogo</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend.</p>
       </div>
-      <!--/jogo escolhido-->
-      
-      <!--parceiros-->
       <div class="span4">
         <p>Conheça nossos parceiros:</p>
         <a class="publicidade" href="#" title="Publicidade">
@@ -332,17 +321,13 @@
           </ul>
         </div>
       </div>
-      <!--/parceiros-->
-
       <h2 class="fechar-toogle ativo"><span class="sprite-seta-up"></span></h2>
-
     </div>
-    <!--content-->
     
     <span class="linha"></span>
+  </div>  
+    <!-- /para os pais -->
     
-  </div>
-  <!-- Para os pais -->  
     
     
 
