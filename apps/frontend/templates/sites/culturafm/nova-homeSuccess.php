@@ -86,9 +86,7 @@
       ?>
       <div class="programacao">
         <i class="seta2"></i>
-        <a href="#" title="Programação do Dia">
           <h2>Programação do Dia</h2>
-        </a>
         <!--lista-->    
         <ul>
         <?php foreach($schedules as $k=>$d): 
@@ -111,9 +109,7 @@
       <!--classicos na tv cultura-->
       <div class="destaque c-classicos">
         <i class="seta2"></i>
-        <a href="#" title="">
           <h2>Classicos na Tv Cultura</h2>
-        </a>
 		<?php if(isset($displays["destaque-classicos"])): ?>
 			<?php foreach ($displays["destaque-classicos"] as $k => $d): ?>
 		        <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>" title="<?php echo $d->getTitle() ?>">
@@ -131,26 +127,28 @@
       <!--destaque cd-->
       <div class="destaque c-radio">
         
-       <!--cd da semana-->
-	   <?php if(isset($displays["destaque-foto-cd-da-semana"])): ?>
-			<?php foreach ($displays["destaque-foto-cd-da-semana"] as $k => $d): ?>
-		        <div class="destaque c-radio-dest">
-		          <i class="seta2"></i>
-		          <a href="#" title="">
-		            <h2>CD da Semana</h2>
-		          </a>
-		          
-		          <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>" title="<?php echo $d->getTitle() ?>">
-		            <article>
-		              <img src="<?php echo $d->retriveImageUrlByImageUsage("default") ?>" alt="<?php echo $d->getTitle() ?>">
-		              <p class="titulo"><?php echo $d->getTitle() ?></p>
-		              <p><?php echo $d->getDescription() ?></p>
-		            </article>
-		          </a>
-	    	<?php endforeach; ?>
-    	<?php endif; ?>	      
+        
+   <?php if(isset($displays["destaque-foto-cd-da-semana"])): ?>
+	<?php foreach ($displays["destaque-foto-cd-da-semana"] as $k => $d): ?>    
+        
+    	 <!--cd da semana-->
+        <div class="destaque c-classicos">
+          <i class="seta2"></i>
+            <h2>CD da Semana</h2>
+          
+          <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>" title="<?php echo $d->getTitle() ?>">
+            <article>
+              <img src="<?php echo $d->retriveImageUrlByImageUsage("default") ?>" alt="<?php echo $d->getTitle() ?>">
+              <p class="titulo"><?php echo $d->getTitle() ?></p>
+              <p><?php echo $d->getDescription() ?></p>
+            </article>
+          </a>
+          
         </div>  
         <!--/cd da semana-->
+        
+    	<?php endforeach; ?>
+	<?php endif; ?>	   
         
         <?php if(isset($displays["destaque-cd-da-semana"]))  include_partial_from_folder('blocks','global/display-1c-audio-gallery', array('displays' => $displays["destaque-cd-da-semana"])) ?>
       </div>
@@ -171,8 +169,8 @@
 				<?php foreach ($displays["destaque-carrossel"] as $k => $d): ?>          
 			      <!--item-->
 			      <div class="<?php if($k == 0): ?>active<?php endif; ?> item">
+			      	<h2><?php echo $d->getTitle() ?></h2>
 			        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-			          <h2><?php echo $d->getTitle() ?></h2>
 			          <img width="424" src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>">
 			          <p> <?php echo $d->getDescription() ?></p>
 			        </a>
@@ -193,8 +191,8 @@
 			<?php foreach ($displays["destaque-programas"] as $k => $d): ?>	 	    
 		        <!--destaque small-->
 		        <div class="destaque-small <?php if($k == 1 || $k == 3) echo "marginLeft10"?>">
+		          <h2><?php echo $d->getTitle() ?></h2>
 		          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-		            <h2><?php echo $d->getTitle() ?></h2>
 		            <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>">
 		            <p> <?php echo $d->getDescription() ?></p>
 		          </a>
@@ -213,8 +211,8 @@
 			<?php foreach ($displays["destaque-compositor-mes"] as $k => $d): ?>	
 		        <!--destaque small-->
 		        <div class="destaque-small compositor">
+		         <h2><?php echo $d->getTitle() ?><i class="seta2"></i></h2>
 		          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-		            <h2><?php echo $d->getTitle() ?><i class="seta2"></i></h2>
 		            <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>">
 		            <p><?php echo $d->getTitle() ?> </p>
 		          </a>
