@@ -210,6 +210,10 @@
         <p>Mais brincadeiras da Bel:</p>
       </div>
      
+           
+      </div>
+      <!--/content-->
+        
       <!--/section-->
       <section class="todos-itens ">
         <!--lista-->
@@ -260,11 +264,6 @@
         <!--lista-->  
       </section>
       <!--/section-->
-      
-      </div>
-      <!--/content-->
-        
-      
       
       <input type="hidden" id="filter-choice" value="">
       <nav id="page_nav">

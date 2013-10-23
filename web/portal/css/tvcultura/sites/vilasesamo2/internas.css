@@ -103,7 +103,7 @@ body { background:#0172f9; }
 /* todos itens*/
 .todos-itens { margin-top:20px; overflow:hidden; }
 .todos-itens a div{white-space:nowrap; text-overflow: ellipsis; overflow: hidden;}
-.todos-itens a {font-family: 'dinmedium';color: #FFF;font-size: 18px;text-transform: uppercase;margin: 0;line-height: 20px;vertical-align: middle;height: 42px;}
+.todos-itens a {font-family: 'dinmedium';color: #FFF;font-size: 18px;text-transform: uppercase;margin: 0;line-height: 20px;vertical-align: middle;/*height: 42px;*/}
 .todos-itens a div img{width: 1px;height: 38px;}
 .todos-itens a:hover{color:#FFF;}
 .todos-itens .row-fluid { margin-left:0; width:980px; *margin-left:-20px; margin-left: -20px!important; }
@@ -272,7 +272,7 @@ body.personagens { background:#b60401; }
 .personagens .dest-pers .span6.videos a img{width:200px; height:200px; border-bottom:2px solid #fba500;}
 .personagens .dest-pers .span6.atividades a img{width:200px; height:200px; border-bottom:2px solid #b16af2;}
 .personagens .dest-pers .span8{clear:none;}
-.personagens .dest-pers .mais-brincadeiras{margin: 0;text-align: left;height: 30px;padding-left: 15px;}
+.personagens .dest-pers .mais-brincadeiras{margin: 0;text-align: left;height: 30px;padding-left: 15px; margin-bottom: 20px;}
 .personagens .dest-pers .mais-brincadeiras p{color: #fff;text-transform: uppercase;line-height: 31px;}
 .personagens .filtro .span12,
 .personagens .scroll, 
