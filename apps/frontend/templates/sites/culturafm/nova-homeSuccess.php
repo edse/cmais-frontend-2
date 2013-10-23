@@ -134,7 +134,7 @@
     	 <!--cd da semana-->
         <div class="destaque c-classicos">
           <i class="seta2"></i>
-            <h2>CD da Semana</h2>
+          <h2>CD da Semana</h2>
           
           <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>" title="<?php echo $d->getTitle() ?>">
             <article>
