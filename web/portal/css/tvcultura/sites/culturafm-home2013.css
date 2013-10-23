@@ -54,6 +54,8 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #content-holder{width: 980px;margin: 0 auto;overflow: hidden;}
 #content-holder .destaque{width:320px; float:left;}
 #content-holder .grid2{overflow:hidden;float:left;width:210px;}
+#content-holder .grid3 p,
+#content-holder .grid3 h2{max-width:310px;}
 #content-holder .grid3{overflow:hidden;float:left;width:310px;}
 #content-holder .grid4{overflow:hidden;float:left;width:430px;} 
 
