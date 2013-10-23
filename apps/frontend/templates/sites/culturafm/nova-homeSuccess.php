@@ -129,6 +129,25 @@
       
       <!--destaque cd-->
       <div class="destaque c-radio">
+        
+        <!--classicos na tv cultura-->
+        <div class="destaque c-classicos">
+          <i class="seta2"></i>
+          <a href="#" title="">
+            <h2>Classicos na Tv Cultura</h2>
+          </a>
+          
+          <a href="#" title="">
+            <article>
+              <img src="http://midia.cmais.com.br/assets/image/image-3-b/58df365cdb5a3370939e480cfd1171a6dcffd538.jpg" alt="">
+              <p class="titulo">Orquestra Simón Bolívar</p>
+              <p>Conduzida pelo maestro Gustavo Dudamel. 12 de outubro, sábado, às 21h45</p>
+            </article>
+          </a>
+          
+        </div>  
+        <!--/classicos na tv cultura-->
+        
         <?php if(isset($displays["destaque-cd-da-semana"]))  include_partial_from_folder('blocks','global/display-1c-audio-gallery', array('displays' => $displays["destaque-cd-da-semana"])) ?>
       </div>
       <!--/destaque cd-->
