@@ -183,7 +183,6 @@
           <li><a href="#" rel="frame_2"></a></li>
           <li><a href="#" rel="frame_3"></a></li>
           <li><a href="#" rel="frame_4"></a></li>
-          <li><a href="#" rel="frame_5"></a></li>
         </ul>
       </div>
       <!--/seletor carrossel--> 
