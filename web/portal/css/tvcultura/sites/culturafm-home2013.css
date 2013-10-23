@@ -95,6 +95,7 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #content-holder #mais-ouvidos .mais-ouvidos li{overflow: hidden; margin-bottom:10px;}
 #content-holder #mais-ouvidos .mais-ouvidos img{width:50px;float:left; margin-right:10px;}
 #content-holder #mais-ouvidos .mais-ouvidos p{text-align:left; font-size:12px; color:#000; font-weight:normal;height: 40px;overflow: hidden;}
+#content-holder #mais-ouvidos .mais-ouvidos strong{font-weight:bold;}
 
 #content-holder .compositor{position:relative;}
 #content-holder #news-radio h2{position:relative; margin-left:15px;overflow: visible}
@@ -128,11 +129,11 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #content-holder .carousel .prev.right {left: 0;}
 #content-holder .carousel .active.left {left: -100%;}
 #content-holder .carousel .active.right {left: 100%;}
-#content-holder .carousel-control {*display:block;background:#222222 url('/portal/images/capaPrograma/culturafm/novahome/setas-carrossel.png') no-repeat 6px center;position: absolute;*top: 46px;top: 46px;left: 3px;width: 20px; height:126px; margin-top: -20px;font-size: 60px;font-weight: 100;line-height: 30px;color: #ffffff;text-align: center;opacity: 0.9;filter: alpha(opacity=90); *z-index: 100000;}
+#content-holder .carousel-control {*display:block;background:#222222 url('/portal/images/capaPrograma/culturafm/novahome/setas-carrossel.png') no-repeat 6px center;position: absolute;*top: 46px;top: 46px;left: 3px;width: 20px; height:259px; margin-top: -20px;font-size: 60px;font-weight: 100;line-height: 30px;color: #ffffff;text-align: center;opacity: 0.9;filter: alpha(opacity=90); *z-index: 100000;}
 #content-holder .carousel-control.right {left: auto;right: 3px;background-position: -11px center;}
 #content-holder .carousel-control:hover {color: #ffffff;text-decoration: none;opacity: 0.9;filter: alpha(opacity=90);}
 #content-holder .c-radio .c-classicos{padding: 0 6px;}
-#content-holder .c-radio .c-classicos p{width: 297px;overflow: hidden;height: 56px;margin-bottom: -18px;}
+#content-holder .c-radio .c-classicos p{width: 297px;overflow: hidden;max-height: 56px;margin-bottom: -18px;}
 #content-holder .c-radio .c-classicos p.titulo{margin-bottom:0;}
 #content-holder .c-radio .c-classicos img{width:298px;}
 #content-holder .c-radio{background:#dae6f4; position:relative;}

@@ -275,7 +275,11 @@
 				<li>
 					<a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
 						<img src="http://midia.cmais.com.br/displays/<?php echo $d->getImage() ?>" alt="<?php echo $d->getTitle() ?>" width="50px" height="50px"/>
-						<p><?php echo $d->getDescription() ?> <br> <?php echo $d->getTitle() ?> </p>
+						<p>
+						  <strong><?php echo $d->getDescription() ?></strong>
+						  <br>
+						  <?php echo $d->getTitle() ?><br />
+					  </p>
 					</a>
 				</li>
 		    <?php endforeach; ?>
