@@ -165,6 +165,9 @@
     <!--destaques-->
     <div class="destaques dest-pers bel row-fluid container">
       
+      <div class="span2 pull-left">
+        <img src=""
+      </div>
       <!--section-->
       <section class="span8 pull-right">
         
