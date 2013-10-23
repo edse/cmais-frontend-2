@@ -70,8 +70,8 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #content-holder .destaque.c-agora p{font-size:14px; color:#000; text-align:left; margin-bottom: 8px;overflow: hidden;max-height: 60px; width:96%;}
 
 #content-holder .programacao{float: left;background: #d9e6f2;width: 292px;padding: 5px 10px;margin: -2px 0 20px 0; position:relative;}
-#content-holder .programacao h2{margin:5px 0 20px 20px; }
-#content-holder .programacao ul{height: 133px;overflow: auto; margin-left:20px;width:279px;}
+#content-holder .programacao h2{margin:5px 0 20px 10px; }
+#content-holder .programacao ul{height: 133px;overflow: auto; margin-left:10px;width:279px;}
 #content-holder .programacao ul li{list-style: none;text-align: left;margin-bottom: 20px;}
 #content-holder .programacao::-webkit-scrollbar {height: 12px;width: 12px;background: -webkit-gradient(linear, 0% 50%, 0% 50%, from(#e4e4e4), to(white));}
 #content-holder .programacao::-webkit-scrollbar-thumb {background: #c2c2c2;-webkit-border-radius: 1ex;}
