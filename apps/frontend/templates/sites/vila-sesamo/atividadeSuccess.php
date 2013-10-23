@@ -1,6 +1,6 @@
 <?php
   /*
-   * Pega a campanha e as categorias as quais o asset pertence
+   * Pega a campanha (seção filha de "campanhas") e as categorias (seçao filha de "categorias") as quais o asset pertence
    */
   $categories = array();
   $sections = $asset->getSections();
@@ -84,7 +84,7 @@
   
   <?php include_partial_from_folder('sites/vila-sesamo', 'global/form-campanha', array("site" => $site, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
 
-  <?php include_partial_from_folder('sites/vila-sesamo', 'global/para-os-pais', array("site" => $site, "uri" => $uri)) ?>
+  <?php include_partial_from_folder('sites/vila-sesamo', 'global/para-os-pais', array("site" => $site, "asset" => $asset, "categories" => $categories, "uri" => $uri)) ?>
 
 </div>
 <script>
