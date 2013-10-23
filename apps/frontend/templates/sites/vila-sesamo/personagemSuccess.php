@@ -102,7 +102,9 @@
             <ul class="slider-target">
               <!--item-->
               <li>
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
+                <div class="pull-left videoorimage">
+                  <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
+                </div>
                 <div class="pull-right descritivo">
                   <h3>BEL</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
@@ -112,33 +114,49 @@
               
               <!--item-->
               <li>
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
-                <h3>BEL</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+                <div class="pull-left videoorimage">
+                  <iframe width="420" height="315" src="//www.youtube.com/embed/oI3GnTuldaw" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="pull-right descritivo">
+                  <h3>BEL</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+                </div>
               </li>
               <!--/item-->
               
               <!--item-->
               <li>
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
-                <h3>BEL</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+                <div class="pull-left videoorimage">
+                  <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
+                </div>
+                <div class="pull-right descritivo">
+                  <h3>BEL</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+                </div>
               </li>
               <!--/item-->
               
               <!--item-->
               <li>
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
-                <h3>BEL</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+                <div class="pull-left videoorimage">
+                  <iframe width="420" height="315" src="//www.youtube.com/embed/oI3GnTuldaw" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="pull-right descritivo">
+                  <h3>BEL</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+                </div>
               </li>
               <!--/item-->
               
               <!--item-->
               <li>
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
-                <h3>BEL</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+                <div class="pull-left videoorimage">
+                  <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
+                </div>
+                <div class="pull-right descritivo">
+                  <h3>BEL</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+                </div>
               </li>
               <!--/item-->
               
