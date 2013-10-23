@@ -275,7 +275,7 @@
     
     
     <!-- para os pais -->
-    <div class="section pais">
+    <div class="pais">
     <span class="divisa"></span>
     <h2>Para adultos <span class="sprite-seta-down"></span></h2>
     <div class="redes">
