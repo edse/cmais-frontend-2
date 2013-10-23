@@ -259,8 +259,8 @@ body { background:#0172f9; }
 .resultado a:hover p { text-decoration:underline; }
 
 body.personagens { background:#b60401; }
-.personagens .todos-itens li,
-.personagens .divisa{clear:both; background:#d71c0d;}
+.personagens .todos-itens li{clear:both; background:#d71c0d;}
+.personagens .divisa{clear:both; background:#d71c0d;background-color: #d71c0d;height: 20px;margin: 0;}
 .personagens .dest-pers{margin:0px;}
 .personagens .dest-pers.bel{background:#d71c0d url('/portal/images/capaPrograma/vilasesamo2/personagens/int-pers-bel.png') no-repeat bottom left;}
 .personagens .dest-pers .span8{margin: 0px 10px 20px 0px!important;}

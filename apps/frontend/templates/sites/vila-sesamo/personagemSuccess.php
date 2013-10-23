@@ -202,8 +202,15 @@
         
       </section>
       <!--section-->
+      
+      <div class="span12">
+        <p>Mais brincadeiras:</p>
+      </div>
+      
     </div>
     <!--destaques-->
+    
+    
     
     
     
