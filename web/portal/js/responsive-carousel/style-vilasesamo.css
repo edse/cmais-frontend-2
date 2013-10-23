@@ -91,3 +91,29 @@
 #carrossel-interna #selector ul { margin:0; padding:0; list-style-type: none;}
 #carrossel-interna #selector li { display: inline-block; margin-right: 10px;}
 /*carrossel interna vila sesamo*/
+
+/*carrossel interna-personagem*/
+#carrossel-interna-personagem{max-width: 640px;margin: 0 auto;}
+#carrossel-interna-personagem .slider {position: relative;zoom: 1;}
+#carrossel-interna-personagem .slider-nav {position: absolute;zoom: 1;width: 100%;top: 0;left: 0;}
+#carrossel-interna-personagem .arrow {width: 70px;height: 250px;position: absolute;zoom: 1;top: 0;}
+#carrossel-interna-personagem .arrow span.back{position: absolute; top: 90px; left: 20px;width:50px; height:71px; display:block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1570px;}
+#carrossel-interna-personagem .arrow span.next{position: absolute; right: 19px; top: 91px; width: 50px; height: 70px; display: block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1273px;}
+#carrossel-interna-personagem .arrow span {display: block;width: 100%;height: 250px;cursor: pointer;}
+#carrossel-interna-personagem .arrow.disabled {opacity: 0.3;cursor: default;}
+#carrossel-interna-personagem .arrow-left {left: 0;}
+#carrossel-interna-personagem .arrow-right {right: 0;}
+#carrossel-interna-personagem .slider-mask {overflow: hidden;position: relative;zoom: 1;}
+#carrossel-interna-personagem .slider-target {width: 2000px;margin: 0 auto;}
+#carrossel-interna-personagem .slider ul {margin: 0;padding: 0;list-style-type: none;}
+#carrossel-interna-personagem .slider li {width: 640px;height: 250px;float: left;margin: 0;padding: 0;}
+#carrossel-interna-personagem .slider li a img{display:block; margin: 0 auto;}
+#carrossel-interna-personagem .slider .inner {padding: 10px;margin: 0 5px;border: 1px solid #333;height: 100%;background-color: #CCC;}
+
+/* selector styling */
+#selector-interna-personagem{margin:0px auto; padding: 10px auto!important;}
+#selector-interna-personagem a {display: block;height: 16px;width:16px;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;border: none;background-color: #fcbb00;}
+#selector-interna-personagem a.current {background-color: #fdff33; border: 2px solid #fcbb00;}
+#selector-interna-personagem ul {margin:0;padding:10px auto;list-style-type: none;}
+#selector-interna-personagem li {display: inline-block; margin-right: 10px; margin-top:10px;}
+/*/carrossel mobile*/

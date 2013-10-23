@@ -91,7 +91,7 @@
     
 
     <!--inicio carrossel--> 
-    <div id="carrossel-mobile">
+    <div id="carrossel-interna-personagem">
       <!--slider-->
       <div class="slider">
         <!--slider-mask-wrap-->
@@ -147,7 +147,7 @@
     </div>
     <!--/inicio carrossel--> 
     <!--seletor carrossel-->
-      <ul id="selector-mobile">
+      <ul id="selector-interna-personagem">
         <li><a href="#" rel="frame_0"></a></li>
         <li><a href="#" rel="frame_1"></a></li>
         <li><a href="#" rel="frame_2"></a></li>
@@ -369,47 +369,47 @@
   <script>
   //carrossel
   var total=0;
-  $('#selector-mobile li').each(function(i){
+  $('#selector-interna-personagem li').each(function(i){
     var width = $(this).width();
     total = width + total + 14; 
   });
   
-  $('#selector-mobile').css('width', total);
+  $('#selector-interna-personagem').css('width', total);
   
-  $('#carrossel-mobile').responsiveCarousel({
+  $('#carrossel-interna-personagem').responsiveCarousel({
       unitWidth:          'inherit',
-      target:             '#carrossel-mobile .slider-target',
-      unitElement:        '#carrossel-mobile .slider-target > li',
-      mask:               '#carrossel-mobile .slider-mask',
-      arrowLeft:          '#carrossel-mobile .arrow-left',
-      arrowRight:         '#carrossel-mobile .arrow-right',
+      target:             '#carrossel-interna-personagem .slider-target',
+      unitElement:        '#carrossel-interna-personagem .slider-target > li',
+      mask:               '#carrossel-interna-personagem .slider-mask',
+      arrowLeft:          '#carrossel-interna-personagem .arrow-left',
+      arrowRight:         '#carrossel-interna-personagem .arrow-right',
       dragEvents:         true,
       step:-1,
       onShift:function (i) {
-          var $current = $('#selector-mobile li a[rel=frame_' + i + ']');
-          $('#selector-mobile li a').removeClass('current');
+          var $current = $('#selector-interna-personagem li a[rel=frame_' + i + ']');
+          $('#selector-interna-personagem li a').removeClass('current');
           $current.addClass('current');
       }
   });
   
-  $('.arrow, #selector-mobile a').click(function(){
+  $('.arrow, #selector-interna-personagem a').click(function(){
     slideShow(); 
   });
   
-  $('#selector-mobile a').on('click', function (ev) {
+  $('#selector-interna-personagem a').on('click', function (ev) {
     ev.preventDefault();
     var i = /\d/.exec($(this).attr('rel'));
-    $('#carrossel-mobile').responsiveCarousel('goToSlide', i);
+    $('#carrossel-interna-personagem').responsiveCarousel('goToSlide', i);
   });
   
   $(window).on('load', function (ev) {
-    $('#carrossel-mobile').responsiveCarousel('redraw');
+    $('#carrossel-interna-personagem').responsiveCarousel('redraw');
     slideShow();
   });
   
   slideShow = function(ev){
     //ev.preventDefault();
-    $('#carrossel-mobile').responsiveCarousel('toggleSlideShow');
+    $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
   };
   </script>
 </div>
