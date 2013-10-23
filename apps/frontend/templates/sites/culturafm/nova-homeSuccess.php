@@ -133,7 +133,7 @@
        <!--cd da semana-->
 	   <?php if(isset($displays["destaque-foto-cd-da-semana"])): ?>
 			<?php foreach ($displays["destaque-foto-cd-da-semana"] as $k => $d): ?>
-		        <div class="destaque c-classicos">
+		        <div class="destaque c-radio-dest">
 		          <i class="seta2"></i>
 		          <a href="#" title="">
 		            <h2>CD da Semana</h2>

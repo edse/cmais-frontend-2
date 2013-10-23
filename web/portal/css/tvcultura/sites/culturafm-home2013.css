@@ -134,11 +134,11 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #content-holder .carousel-control {*display:block;background:#222222 url('/portal/images/capaPrograma/culturafm/novahome/setas-carrossel.png') no-repeat 6px center;position: absolute;*top: 46px;top: 46px;left: 3px;width: 20px; height:259px; margin-top: -20px;font-size: 60px;font-weight: 100;line-height: 30px;color: #ffffff;text-align: center;opacity: 0.9;filter: alpha(opacity=90); *z-index: 100000;}
 #content-holder .carousel-control.right {left: auto;right: 3px;background-position: -11px center;}
 #content-holder .carousel-control:hover {color: #ffffff;text-decoration: none;opacity: 0.9;filter: alpha(opacity=90);}
-#content-holder .c-radio .c-classicos{padding: 0 6px;}
-#content-holder .c-radio .c-classicos h2{margin: 10px 0 5px -6px;}
-#content-holder .c-radio .c-classicos p{width: 297px;overflow: hidden;max-height: 56px;margin-bottom: -18px;}
-#content-holder .c-radio .c-classicos p.titulo{margin-bottom:0;}
-#content-holder .c-radio .c-classicos img{width:298px;}
+#content-holder .c-radio .c-radio-dest{padding: 0 6px;}
+#content-holder .c-radio .c-radio-dest h2{margin: 10px 0 5px -6px;}
+#content-holder .c-radio .c-radio-dest p{width: 297px;overflow: hidden;max-height: 56px;margin-bottom: -18px;}
+#content-holder .c-radio .c-radio-dest p.titulo{margin-bottom:0;}
+#content-holder .c-radio .c-radio-dest img{width:298px;}
 #content-holder .c-radio{background:#dae6f4; position:relative;}
 #content-holder .c-radio .titulos{font-size: 20px; margin: 10px 0 0 20px;color:#0546a6;}
 #content-holder .jp-audio{margin-top: -20px;}
