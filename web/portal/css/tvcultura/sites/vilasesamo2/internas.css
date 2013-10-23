@@ -289,6 +289,7 @@ body.personagens { background:#b60401; }
 .personagens .conteudo-asset {padding: 0;}
 .personagens .q-pers{float:left; width: 240px; height:240px; margin:5px;}
 
-#pais .divisa {clear: both;background-color: #feec3c;height: 2px;margin: 0;}
-#pais .redes p{text-transform:uppercase;}
-#pais .content{display: block; padding: 20px 10px; background:#ffe303;}
+#dica-pais .divisa {clear: both;background-color: #feec3c;height: 2px;margin: 0;}
+#dica-pais .redes p{text-transform:uppercase;}
+#dica-pais .content{display: block; padding: 20px 10px; background:#ffe303;}
+#dica-pais .content .span4{margin-top:0px;}

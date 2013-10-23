@@ -271,8 +271,8 @@
         <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
       </nav>
       
-      <!-- para os pais -->
-    <div id="dicas-pais">
+    <!-- para os pais -->
+    <div id="dicas-pais" class="pais">
       <span class="divisa"></span>
       <h2>Para adultos <span class="sprite-seta-down"></span></h2>
       <!--redes-->
@@ -285,7 +285,7 @@
       </div>
       <!--/redes-->
       
-      <div class="content span12 row-fluid">
+      <div class="content span12">
         
         
         <div class="span4 dica">
