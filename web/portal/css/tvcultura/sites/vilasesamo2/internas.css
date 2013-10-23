@@ -272,11 +272,11 @@ body.personagens { background:#b60401; }
 .personagens .dest-pers .span6.videos a img{width:200px; height:200px; border-bottom:2px solid #fba500;}
 .personagens .dest-pers .span6.atividades a img{width:200px; height:200px; border-bottom:2px solid #b16af2;}
 .personagens .dest-pers .span8{clear:none;}
-.personagens .dest-pers .mais-brincadeiras{margin: 0;text-align: left;height: 30px;padding-left: 15px; margin-bottom: 20px;}
+.personagens .dest-pers .mais-brincadeiras{margin: 0;text-align: left;height: 30px;padding-left: 15px;}
 .personagens .dest-pers .mais-brincadeiras p{color: #fff;text-transform: uppercase;line-height: 31px;}
 .personagens .filtro .span12,
 .personagens .scroll, 
-.personagens .filtro  { border-color:#ee3021; }
+.personagens .filtro  { border-color:#ee3021;background:#b60401; }
 .personagens #content .filtro h3 { background:#d71c0d; border-color: #c31408; }
 .personagens #content h3 span, 
 .personagens #content h3 i { margin-top:-5px; }
