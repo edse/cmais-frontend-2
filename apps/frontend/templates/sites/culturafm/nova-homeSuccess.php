@@ -60,8 +60,9 @@
 				<?php foreach ($displays["destaque-cultura-agora"] as $k => $d): ?>
 			        <!--item-->
 			        <article>
+			          
+			          <h2><?php echo $d->getTitle()?></h2>
 			          <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
-			            <h2><?php echo $d->getTitle()?></h2>
 			            <p><?php echo $d->getDescription()?></p>  
 			          </a>
 			          <div class="linha-hr"></div>     
@@ -133,7 +134,7 @@
        <!--cd da semana-->
 	   <?php if(isset($displays["destaque-foto-cd-da-semana"])): ?>
 			<?php foreach ($displays["destaque-foto-cd-da-semana"] as $k => $d): ?>
-		        <div class="destaque c-classicos">
+		        <div class="destaque c-radio-dest">
 		          <i class="seta2"></i>
 		          <a href="#" title="">
 		            <h2>CD da Semana</h2>
