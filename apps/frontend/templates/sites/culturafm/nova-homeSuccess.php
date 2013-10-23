@@ -296,7 +296,8 @@
 
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script>
-$('.c-radio .chapeu, .c-radio .destaque .titulos').remove()
+$('.c-radio .chapeu').remove();
+$('.c-radio').find('.titulos').remove();
 
 $//('.c-radio').append('<div class="seta2" style="top: 14px;left: 10px;"></div>')
 var validator = $('#form-email').validate({

@@ -133,6 +133,7 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #content-holder .carousel-control:hover {color: #ffffff;text-decoration: none;opacity: 0.9;filter: alpha(opacity=90);}
 #content-holder .c-radio .c-classicos{padding: 0 6px;}
 #content-holder .c-radio .c-classicos p{width: 297px;overflow: hidden;height: 56px;margin-bottom: -18px;}
+#content-holder .c-radio .c-classicos p.titulo{margin-bottom:0;}
 #content-holder .c-radio .c-classicos img{width:298px;}
 #content-holder .c-radio{background:#dae6f4; position:relative;}
 #content-holder .c-radio .titulos{font-size: 20px; margin: 10px 0 0 20px;color:#0546a6;}
