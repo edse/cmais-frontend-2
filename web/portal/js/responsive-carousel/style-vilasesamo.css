@@ -93,7 +93,7 @@
 /*carrossel interna vila sesamo*/
 
 /*carrossel interna-personagem*/
-#carrossel-interna-personagem{max-width: 640px;margin: 0 auto;}
+#carrossel-interna-personagem{max-width: 757px;float: right;height: 409px;background-color: #FFF;}
 #carrossel-interna-personagem .slider {position: relative;zoom: 1;}
 #carrossel-interna-personagem .slider-nav {position: absolute;zoom: 1;width: 100%;top: 0;left: 0;}
 #carrossel-interna-personagem .arrow {width: 70px;height: 250px;position: absolute;zoom: 1;top: 0;}
