@@ -60,8 +60,9 @@
 				<?php foreach ($displays["destaque-cultura-agora"] as $k => $d): ?>
 			        <!--item-->
 			        <article>
+			          
+			          <h2><?php echo $d->getTitle()?></h2>
 			          <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
-			            <h2><?php echo $d->getTitle()?></h2>
 			            <p><?php echo $d->getDescription()?></p>  
 			          </a>
 			          <div class="linha-hr"></div>     
