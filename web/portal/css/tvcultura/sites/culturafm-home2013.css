@@ -139,7 +139,7 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #content-holder .c-radio .c-radio-dest article{width: 299px;}
 #content-holder .c-radio .c-radio-dest{padding: 0 6px;}
 #content-holder .c-radio .c-radio-dest h2{margin: 10px 0 5px 13px;}
-#content-holder .c-radio .c-radio-dest p{width: 297px;overflow: hidden;max-height: 56px;margin-bottom: -18px; text-align: left;}
+#content-holder .c-radio .c-radio-dest p{width: 297px;overflow: hidden;max-height: 56px; text-align: left;}
 #content-holder .c-radio .c-radio-dest p.titulo{margin-bottom:0; text-align: left; font-weight:bold;}
 #content-holder .c-radio .c-radio-dest img{width:298px;}
 #content-holder .c-radio{background:#dae6f4; position:relative;}
