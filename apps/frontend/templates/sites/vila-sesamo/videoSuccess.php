@@ -31,7 +31,7 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
 
 <script>
-  $("body").addClass("interna atividades");
+  $("body").addClass("interna videos");
 
 </script>
 <!-- HEADER -->
@@ -39,10 +39,10 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="scroll row-fluid">
-    <h3><i class="sprite-icon-colorir-med"></i><?php echo $section->getTitle() ?><i class="seta-scroll sprite-scroll-atividades"></i></h3>
+    <h3><i class="sprite-icon-colorir-med"></i><?php echo $section->getTitle() ?><i class="seta-scroll sprite-scroll-videos"></i></h3>
   </section>
   <section class="filtro row-fluid">
-    <h3><i class="sprite-icon-colorir-med"></i><?php echo $section->getTitle() ?><a class="todos-assets"><i class="sprite-btn-voltar-atividades"></i><p>todos as atividades</p></a></h3>
+    <h3><i class="sprite-icon-colorir-med"></i><?php echo $section->getTitle() ?><a class="todos-assets"><i class="sprite-btn-voltar-videos"></i><p>todos os vídeos</p></a></h3>
     <div class="conteudo-asset">
       
       <h2><?php echo $asset->getTitle() ?></h2>
