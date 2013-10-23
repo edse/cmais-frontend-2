@@ -203,7 +203,7 @@
       </section>
       <!--section-->
       
-      <div class="span12 mais brincadeiras">
+      <div class="span12 mais-brincadeiras">
         <p>Mais brincadeiras da Bel:</p>
       </div>
      
