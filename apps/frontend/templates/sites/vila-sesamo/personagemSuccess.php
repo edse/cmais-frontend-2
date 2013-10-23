@@ -203,10 +203,70 @@
       </section>
       <!--section-->
       
-      <div class="span12">
-        <p>Mais brincadeiras:</p>
+      <div class="span12 mais brincadeiras">
+        <p>Mais brincadeiras da Bel:</p>
       </div>
+     
+      <!--/section-->
+      <section class="todos-itens ">
+        <!--lista-->
+        <ul role="contentinfo" id="container" class="row-fluid">
+          <li class="span4 element bel"> 
+            <a href="#" title="">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+              <i class="sprite-icons-new sprite-icone_atividade"></i>
+              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
+            </a>
+          </li>
+          <li class="span4 element bel"> 
+            <a href="#" title="">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+              <i class="sprite-icons-new sprite-icone_atividade"></i>
+              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo2 Nomejogo3 Nomejogo3</div>
+            </a>
+          </li>
+          <li class="span4 element bel"> 
+            <a href="#" title="">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+              <i class="sprite-icons-new sprite-icone_atividade"></i>
+              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo3 Nomejogo3 Nomejogo3</div>
+            </a>
+          </li>
+          <li class="span4 element bel"> 
+            <a href="#" title="">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+              <i class="sprite-icons-new sprite-icone_atividade"></i>
+              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo4 Nomejogo3 Nomejogo3</div>
+            </a>
+          </li>
+          <li class="span4 element bel"> 
+            <a href="#" title="">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+              <i class="sprite-icons-new sprite-icone_atividade"></i>
+              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo5 Nomejogo3 Nomejogo3</div>
+            </a>
+          </li>
+          <li class="span4 element bel"> 
+            <a href="#" title="">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+              <i class="sprite-icons-new sprite-icone_atividade"></i>
+              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo6 Nomejogo3 Nomejogo3</div>
+            </a>
+          </li>
+        </ul> 
+        <!--lista-->  
+      </section>
+      <!--/section-->
       
+      </div>
+      <!--/content-->
+        
+      
+      
+      <input type="hidden" id="filter-choice" value="">
+      <nav id="page_nav">
+        <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
+      </nav>
     </div>
     <!--destaques-->
     
