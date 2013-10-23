@@ -266,7 +266,7 @@
       </section>
       <!--/section-->
         
-      
+      <span class="divisa"></span>
       
       <input type="hidden" id="filter-choice" value="">
       <nav id="page_nav">
@@ -275,7 +275,9 @@
       
     <!-- para os pais -->
     <div id="dicas-pais" class="pais">
+      
       <span class="divisa"></span>
+      
       <h2>Para adultos <span class="sprite-seta-down"></span></h2>
       <!--redes-->
       <div class="redes">
