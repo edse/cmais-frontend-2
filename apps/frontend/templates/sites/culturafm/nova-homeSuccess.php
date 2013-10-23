@@ -271,7 +271,6 @@
       <!--lista-->
       <ul class="mais-ouvidos">
 
-		<?php for($i=0;$i<=4;$i++):?>
         <!--/item-->
 		<?php if(isset($displays["destaque-mais-ouvidos"])): ?>
 			<?php foreach ($displays["destaque-mais-ouvidos"] as $k => $d): ?>	 		
@@ -279,16 +278,15 @@
 					<a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
 						<img src="http://midia.cmais.com.br/displays/<?php echo $d->getImage() ?>" alt="<?php echo $d->getTitle() ?>" width="50px" height="50px"/>
 						<p>
-						  <strong><?php echo $d->getDescription() ?></strong>
+						  <strong><?php echo $d->getTitle() ?></strong> <br />
 						  <br>
-						  <?php echo $d->getTitle() ?><br />
+						  <?php echo $d->getDescription() ?>
 					  </p>
 					</a>
 				</li>
 		    <?php endforeach; ?>
 		 <?php endif; ?>
         <!--item-->
-        <?php endfor;?>
       </ul>  
       <!--/lista-->
       
