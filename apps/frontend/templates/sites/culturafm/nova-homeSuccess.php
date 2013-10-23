@@ -129,7 +129,7 @@
         
         
    <?php if(isset($displays["destaque-foto-cd-da-semana"])): ?>
-	<?php foreach ($displays["destaque-foto-cd-da-semana"] as $k => $d): ?>    
+	   <?php foreach ($displays["destaque-foto-cd-da-semana"] as $k => $d): ?>    
         
     	 <!--cd da semana-->
         <div class="destaque c-radio-dest">
@@ -147,8 +147,8 @@
         </div>  
         <!--/cd da semana-->
         
-    	<?php endforeach; ?>
-	<?php endif; ?>	   
+    	 <?php endforeach; ?>
+	   <?php endif; ?>	   
         
         <?php if(isset($displays["destaque-cd-da-semana"]))  include_partial_from_folder('blocks','global/display-1c-audio-gallery', array('displays' => $displays["destaque-cd-da-semana"])) ?>
       </div>
