@@ -279,7 +279,6 @@
 						<img src="http://midia.cmais.com.br/displays/<?php echo $d->getImage() ?>" alt="<?php echo $d->getTitle() ?>" width="50px" height="50px"/>
 						<p>
 						  <strong><?php echo $d->getTitle() ?></strong> <br />
-						  <br>
 						  <?php echo $d->getDescription() ?>
 					  </p>
 					</a>
