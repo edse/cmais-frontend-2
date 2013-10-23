@@ -102,7 +102,7 @@
             <ul class="slider-target">
               <!--item-->
               <li>
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrossel-bel" alt="foto da bel" />
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrossel-bel.jpg" alt="foto da bel" />
                 <h3>BEL</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
               </li>
