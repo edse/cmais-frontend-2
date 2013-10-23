@@ -115,7 +115,7 @@
               <!--item-->
               <li>
                 <div class="pull-left videoorimage">
-                  <iframe width="420" height="315" src="//www.youtube.com/embed/oI3GnTuldaw" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="420" height="315" src="//www.youtube.com/embed/52GWILDxOcA" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="descritivo">
                   <h3>BEL</h3>
@@ -139,7 +139,7 @@
               <!--item-->
               <li>
                 <div class="pull-left videoorimage">
-                  <iframe width="420" height="315" src="//www.youtube.com/embed/oI3GnTuldaw" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="420" height="315" src="//www.youtube.com/embed/52GWILDxOcA" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="descritivo">
                   <h3>BEL</h3>
