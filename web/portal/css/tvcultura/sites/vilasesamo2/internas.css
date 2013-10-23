@@ -263,6 +263,7 @@ body.personagens { background:#b60401; }
 .personagens .divisa{clear:both; background:#d71c0d;}
 .personagens .dest-pers{margin:0px;}
 .personagens .dest-pers.bel{background:#d71c0d url('/portal/images/capaPrograma/vilasesamo2/personagens/int-pers-bel.png') no-repeat bottom left;}
+.personagens .dest-pers .span8{margin: 0px 10px 20px 0px;}
 .personagens .dest-pers a{padding:0; overflow: hidden; border-top:2px solid #0191fb; border-bottom:2px solid #0191fb;}
 .personagens .dest-pers a p{font-size:17px;font-family: 'dinmedium', Arial, Helvetica, sans-serif;line-height: 39px;overflow: hidden;width: 143px;text-overflow: ellipsis;white-space: nowrap; margin:0;}
 .personagens .dest-pers .img-destaque { position:relative; width:100%; display: block;}
@@ -284,7 +285,7 @@ body.personagens { background:#b60401; }
 .personagens .vamosbrincar .span4 img { width: auto;float:left; }
 .personagens .vamosbrincar .thumb-personagem  { margin-top:-4%; }
 .personagens .vamosbrincar .span12 p { color:#fff; text-transform:uppercase; background:#ee3021; text-align:left; padding:0.5%; }
-.personagens .span8 .span6 {border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; margin-top:2%;}
+.personagens .span8 .span6 {border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
 .personagens #container-personagens{}
 .personagens .conteudo-asset {padding: 0;}
 .personagens .q-pers{float:left; width: 240px; height:240px; margin:5px;}
