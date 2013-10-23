@@ -167,7 +167,7 @@
           </div>
         </div>
         <!--slider-mask-wrap--> 
-        <!--slider-nav-->
+        <!--slider-nav>
         <div class="slider-nav">
           <div class="arrow-left arrow"><span title="Anterior" class="back"></span></div>
           <div class="arrow-right arrow"><span title="Proximo" class="next"></span></div>

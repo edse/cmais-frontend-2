@@ -109,7 +109,7 @@
 #carrossel-interna-personagem .slider li {width: 757px;height: 409px;float: left;margin: 0;}
 #carrossel-interna-personagem .slider li a img{display:block; margin: 0 auto;}
 #carrossel-interna-personagem .slider .videoorimage{max-width:420px;padding:20px 10px 20px 20px;}
-#carrossel-interna-personagem .slider .descritivo{width:306px;float: right; padding:20px 20px 20px 10px;}
+#carrossel-interna-personagem .slider .descritivo{min-width:267px;float: right; padding:20px 20px 20px 10px;}
 #carrossel-interna-personagem .slider .inner {padding: 10px;margin: 0 5px;border: 1px solid #333;height: 100%;background-color: #CCC;}
 
 /* selector styling */
