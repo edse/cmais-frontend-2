@@ -270,11 +270,8 @@
       <nav id="page_nav">
         <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
       </nav>
-    </div>
-    <!--destaques-->
-    
-    
-    <!-- para os pais -->
+      
+      <!-- para os pais -->
     <div class="pais">
     <span class="divisa"></span>
     <h2>Para adultos <span class="sprite-seta-down"></span></h2>
@@ -327,6 +324,11 @@
     <span class="linha"></span>
   </div>  
     <!-- /para os pais -->
+    </div>
+    <!--destaques-->
+    
+    
+    
     
     
     
