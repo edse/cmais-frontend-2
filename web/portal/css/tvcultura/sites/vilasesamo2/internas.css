@@ -259,11 +259,10 @@ body { background:#0172f9; }
 .resultado a:hover p { text-decoration:underline; }
 
 body.personagens { background:#b60401; }
-.personagens .todos-itens li,
-.personagens .divisa{clear:both; background:#d71c0d;}
-.personagens .dest-pers{margin:0px;}
-.personagens .dest-pers.bel{background:#d71c0d url('/portal/images/capaPrograma/vilasesamo2/personagens/int-pers-bel.png') no-repeat bottom left;}
-.personagens .dest-pers .span8{margin: 0px 10px 20px 0px;}
+.personagens .todos-itens li{clear:both; background:#d71c0d;}
+.personagens .divisa{clear:both; background-color: #d71c0d;height: 20px;margin: 0;}
+.personagens .dest-pers{margin:0px;background-color: #d71c0d;}
+.personagens .dest-pers .span8{margin: 0px 10px 20px 0px!important;}
 .personagens .dest-pers a{padding:0; overflow: hidden; border-top:2px solid #0191fb; border-bottom:2px solid #0191fb;}
 .personagens .dest-pers a p{font-size:17px;font-family: 'dinmedium', Arial, Helvetica, sans-serif;line-height: 39px;overflow: hidden;width: 143px;text-overflow: ellipsis;white-space: nowrap; margin:0;}
 .personagens .dest-pers .img-destaque { position:relative; width:100%; display: block;}
@@ -271,6 +270,9 @@ body.personagens { background:#b60401; }
 .personagens .dest-pers .span6.jogos a img{width:200px; height:200px; border-bottom:2px solid #0191fb;}
 .personagens .dest-pers .span6.videos a img{width:200px; height:200px; border-bottom:2px solid #fba500;}
 .personagens .dest-pers .span6.atividades a img{width:200px; height:200px; border-bottom:2px solid #b16af2;}
+.personagens .dest-pers .span8{clear:none;}
+.personagens .dest-pers .mais-brincadeiras{margin: 0;text-align: left;height: 30px;padding-left: 15px;}
+.personagens .dest-pers .mais-brincadeiras p{color: #fff;text-transform: uppercase;line-height: 31px;}
 .personagens .filtro .span12,
 .personagens .scroll, 
 .personagens .filtro  { border-color:#ee3021; }
@@ -280,11 +282,6 @@ body.personagens { background:#b60401; }
 .personagens #container-personagens a { display: block;    height: 300px;    position: relative;    width: 300px; }
 .personagens #container-personagens a:hover p { background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bg-transparente.png)  repeat; color:#d71c0d; }
 .personagens #container-personagens p { bottom: 0;   margin: 0;    position: absolute; color:#fff; text-align:center; width:100%; font-size: 25px; text-transform:uppercase; padding:2% 0;  }
-.personagens .vamosbrincar .span8 { float:right; margin-left:0; margin-right:0; }
-.personagens .vamosbrincar .span4 { margin:0 !important; }
-.personagens .vamosbrincar .span4 img { width: auto;float:left; }
-.personagens .vamosbrincar .thumb-personagem  { margin-top:-4%; }
-.personagens .vamosbrincar .span12 p { color:#fff; text-transform:uppercase; background:#ee3021; text-align:left; padding:0.5%; }
 .personagens .span8 .span6 {border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
 .personagens #container-personagens{}
 .personagens .conteudo-asset {padding: 0;}

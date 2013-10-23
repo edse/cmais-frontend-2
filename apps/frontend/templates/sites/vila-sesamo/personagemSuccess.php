@@ -165,6 +165,9 @@
     <!--destaques-->
     <div class="destaques dest-pers bel row-fluid container">
       
+      <div class="span4 pull-left">
+        <img src="/portal/images/capaPrograma/vilasesamo2/personagens/int-pers-bel.png" alt=""/>
+      </div>
       <!--section-->
       <section class="span8 pull-right">
         
@@ -202,8 +205,75 @@
         
       </section>
       <!--section-->
+      
+      <div class="span12 mais-brincadeiras">
+        <p>Mais brincadeiras da Bel:</p>
+      </div>
+     
+      <!--/section-->
+      <section class="todos-itens ">
+        <!--lista-->
+        <ul role="contentinfo" id="container" class="row-fluid">
+          <li class="span4 element bel"> 
+            <a href="#" title="">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+              <i class="sprite-icons-new sprite-icone_atividade"></i>
+              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
+            </a>
+          </li>
+          <li class="span4 element bel"> 
+            <a href="#" title="">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+              <i class="sprite-icons-new sprite-icone_atividade"></i>
+              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo2 Nomejogo3 Nomejogo3</div>
+            </a>
+          </li>
+          <li class="span4 element bel"> 
+            <a href="#" title="">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+              <i class="sprite-icons-new sprite-icone_atividade"></i>
+              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo3 Nomejogo3 Nomejogo3</div>
+            </a>
+          </li>
+          <li class="span4 element bel"> 
+            <a href="#" title="">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+              <i class="sprite-icons-new sprite-icone_atividade"></i>
+              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo4 Nomejogo3 Nomejogo3</div>
+            </a>
+          </li>
+          <li class="span4 element bel"> 
+            <a href="#" title="">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+              <i class="sprite-icons-new sprite-icone_atividade"></i>
+              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo5 Nomejogo3 Nomejogo3</div>
+            </a>
+          </li>
+          <li class="span4 element bel"> 
+            <a href="#" title="">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
+              <i class="sprite-icons-new sprite-icone_atividade"></i>
+              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo6 Nomejogo3 Nomejogo3</div>
+            </a>
+          </li>
+        </ul> 
+        <!--lista-->  
+      </section>
+      <!--/section-->
+      
+      </div>
+      <!--/content-->
+        
+      
+      
+      <input type="hidden" id="filter-choice" value="">
+      <nav id="page_nav">
+        <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
+      </nav>
     </div>
     <!--destaques-->
+    
+    
     
     
     
@@ -211,11 +281,15 @@
   </section>
   <!--/content-->
   <!--scripts e css carrossel-->
+  <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
+  <script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script>
+  <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
   <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
   <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/js/responsive-carousel/style-vilasesamo.css"/>
+  
   
   <script>
   //carrossel
@@ -265,3 +339,5 @@
   </script>
 </div>
 <!--/section-->
+<!--scripts-->
+
