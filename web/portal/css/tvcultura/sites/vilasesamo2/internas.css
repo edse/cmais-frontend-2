@@ -263,9 +263,10 @@ body.personagens { background:#b60401; }
 .personagens .divisa{clear:both; background-color: #d71c0d;height: 20px;margin: 0;}
 .personagens .dest-pers{margin:0px;background-color: #d71c0d;}
 .personagens .dest-pers .span8{margin: 0px 10px 20px 0px!important;}
-.personagens .dest-pers a{padding:0; overflow: hidden; border-top:2px solid #0191fb; border-bottom:2px solid #0191fb;}
+.personagens .dest-pers a{padding:0; border-top:2px solid #0191fb; border-bottom:2px solid #0191fb;}
 .personagens .dest-pers a p{font-size:17px;font-family: 'dinmedium', Arial, Helvetica, sans-serif;line-height: 39px;overflow: hidden;width: 143px;text-overflow: ellipsis;white-space: nowrap; margin:0;}
 .personagens .dest-pers .img-destaque { position:relative; width:100%; display: block;}
+.personagens .dest-pers .span4.pull-left{min-height:280px;}
 .personagens .dest-pers .span6 a{border:none;}
 .personagens .dest-pers .span6.jogos a img{width:200px; height:200px; border-bottom:2px solid #0191fb;}
 .personagens .dest-pers .span6.videos a img{width:200px; height:200px; border-bottom:2px solid #fba500;}
