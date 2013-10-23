@@ -274,7 +274,6 @@ body.personagens { background:#b60401; }
 .personagens .dest-pers .span8{clear:none;}
 .personagens .dest-pers .mais-brincadeiras{margin: 0;text-align: left;height: 30px;padding-left: 15px;}
 .personagens .dest-pers .mais-brincadeiras p{color: #fff;text-transform: uppercase;line-height: 31px;}
-.personagens .filtro .span12,
 .personagens .scroll, 
 .personagens .filtro  { border-color:#ee3021;background:#b60401; }
 .personagens #content .filtro h3 { background:#d71c0d; border-color: #c31408; }
