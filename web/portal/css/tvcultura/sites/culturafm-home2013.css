@@ -60,6 +60,7 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #content-holder .grid4{overflow:hidden;float:left;width:430px;} 
 
 #content-holder .seta2{width:10px; height:16px; background:url('/portal/images/capaPrograma/culturafm/novahome/seta-2.png') no-repeat; position:absolute;top:16px;left:7px;}
+#content-holder .c-classico .seta2{left:0;}
 #content-holder .seta{width:10px; height:16px; background:url('/portal/images/capaPrograma/culturafm/novahome/seta.jpg') no-repeat; position:absolute; top:0; right:-10px;}
 #content-holder .linha-hr{width:100%; height:1px; background:url('/portal/images/capaPrograma/culturafm/novahome/linha-pontilhada.jpg') repeat-x;}
 
@@ -78,15 +79,15 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #content-holder .programacao::-webkit-scrollbar-corner {background: #fff;}
 
 #content-holder .c-classicos{float: left; width: 100%; position:relative;margin-bottom:20px;}
-#content-holder .c-classicos h2{padding-left:20px; margin-top: 10px; max-height: 24px; overflow: hidden;}
+#content-holder .c-classicos h2{padding-left:10px; margin-top: 10px; max-height: 24px; overflow: hidden;}
 #content-holder .c-classicos .titulo{font-weight:bold; text-align: left;max-height:20px; overflow:hidden;}
 #content-holder .c-classicos{text-align:left;}
 #contait-holder .c-classicos p{max-height: 38px;}
 
 #content-holder .container-destaque{width: 430px;overflow: hidden;}
 #content-holder .container-destaque .destaque-small{width:210px; float:left;}
-#content-holder .container-destaque #news-radio h2{ font-size:14px;}
-#content-holder .container-destaque .destaque-small.compositor h2{margin-left:15px; font-size:14px;}
+#content-holder .container-destaque #news-radio h2{ margin: 3px 0 5px 15px; font-size:14px;}
+#content-holder .container-destaque .destaque-small.compositor h2{margin: 3px 0 5px 15px; font-size:14px;}
 #content-holder .container-destaque .destaque-small h2{font-size:12px; color:#0054a6; font-weight:bold; font-family:Arial, Helvetica, sans-serif; margin-bottom: 5px;height: 15px;}
 #content-holder .container-destaque .destaque-small img{width:210px;}
 #content-holder .container-destaque .destaque-small p{font-size:12px; font-family:Arial, Helvetica, sans-serif; text-align:left; margin-bottom:20px;max-height: 38px;overflow: hidden;}
@@ -134,6 +135,7 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #content-holder .carousel-control.right {left: auto;right: 3px;background-position: -11px center;}
 #content-holder .carousel-control:hover {color: #ffffff;text-decoration: none;opacity: 0.9;filter: alpha(opacity=90);}
 #content-holder .c-radio .c-classicos{padding: 0 6px;}
+#content-holder .c-radio .c-classicos h2{margin: 10px 0 5px -6px;}
 #content-holder .c-radio .c-classicos p{width: 297px;overflow: hidden;max-height: 56px;margin-bottom: -18px;}
 #content-holder .c-radio .c-classicos p.titulo{margin-bottom:0;}
 #content-holder .c-radio .c-classicos img{width:298px;}
