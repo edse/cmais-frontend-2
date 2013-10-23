@@ -175,20 +175,21 @@
         <!--slider-nav-->
       </div>
       <!--/slider-->
+      <!--seletor carrossel-->
+      <div class="container-itens"> 
+        <ul id="selector-interna-personagem">
+          <li><a href="#" rel="frame_0"></a></li>
+          <li><a href="#" rel="frame_1"></a></li>
+          <li><a href="#" rel="frame_2"></a></li>
+          <li><a href="#" rel="frame_3"></a></li>
+          <li><a href="#" rel="frame_4"></a></li>
+          <li><a href="#" rel="frame_5"></a></li>
+        </ul>
+      </div>
+      <!--/seletor carrossel--> 
     </div>
     <!--/inicio carrossel--> 
-    <!--seletor carrossel-->
-    <div class="container-itens"> 
-      <ul id="selector-interna-personagem">
-        <li><a href="#" rel="frame_0"></a></li>
-        <li><a href="#" rel="frame_1"></a></li>
-        <li><a href="#" rel="frame_2"></a></li>
-        <li><a href="#" rel="frame_3"></a></li>
-        <li><a href="#" rel="frame_4"></a></li>
-        <li><a href="#" rel="frame_5"></a></li>
-      </ul>
-    </div>
-    <!--/seletor carrossel-->   
+      
 
 
     </div>
