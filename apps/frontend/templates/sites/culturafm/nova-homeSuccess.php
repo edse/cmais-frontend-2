@@ -132,7 +132,7 @@
 	<?php foreach ($displays["destaque-foto-cd-da-semana"] as $k => $d): ?>    
         
     	 <!--cd da semana-->
-        <div class="destaque c-classicos">
+        <div class="destaque c-radio-dest">
           <i class="seta2"></i>
           <h2>CD da Semana</h2>
           
