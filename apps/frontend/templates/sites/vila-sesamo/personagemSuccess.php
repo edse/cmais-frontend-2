@@ -100,36 +100,47 @@
           <div class="slider-mask">
             <!--slider-mask-wrap--> 
             <ul class="slider-target">
+              <!--item-->
               <li>
-                <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                  <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
-                </a>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrossel-bel" alt="foto da bel" />
+                <h3>BEL</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
               </li>
+              <!--/item-->
+              
+              <!--item-->
               <li>
-                <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                  <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
-                </a>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrossel-bel" alt="foto da bel" />
+                <h3>BEL</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
               </li>
+              <!--/item-->
+              
+              <!--item-->
               <li>
-                <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                  <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
-                </a>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrossel-bel" alt="foto da bel" />
+                <h3>BEL</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
               </li>
+              <!--/item-->
+              
+              <!--item-->
               <li>
-                <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                  <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
-                </a>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrossel-bel" alt="foto da bel" />
+                <h3>BEL</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
               </li>
+              <!--/item-->
+              
+              <!--item-->
               <li>
-                <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                  <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
-                </a>
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrossel-bel" alt="foto da bel" />
+                <h3>BEL</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
               </li>
-              <li>
-                <a href="/vila-sesamo/beto" title="Bel" class="btn-bel">
-                  <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vs_1-home_m-w640.png" alt="Personagem" />
-                </a>
-              </li>
+              <!--/item-->
+              
+              
             </ul>
             <!--slider-mask-->
             <div class="clearit"></div>
