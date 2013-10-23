@@ -521,11 +521,15 @@ footer .relacionados li.last { margin-right:0; }
 /* pais*/
 #content .pais { background:#feec3c; margin:0 auto !important; overflow:hidden; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 .pais .divisa { margin-bottom:0; }
+.pais .divisa {clear: both;background-color: #feec3c;height: 2px;margin: 0;}
+.pais p{text-transform:uppercase;}
+.pais .content{display: block; padding: 20px 10px; background:#ffe303!important;}
+.pais .content .span4{margin-top:0px;}
 .pais h2 a,
 .pais h2 {color:#434343; margin:10px; font-size: 18px; font-weight: normal; line-height: 22px; text-transform: uppercase;}
 .pais h2 { font-size: 25px; }
 .pais .redes { position:absolute; top:12px; right:0;}
-.pais .redes p { float:left; margin-right:10px; }
+.pais .redes p { float:left; margin-right:10px; text-transform:uppercase; }
 .pais .content { background:#fee133; margin-left:0; }
 .pais .content .dica h2 { float:left; margin:10px 0 }
 .pais .content .dica .btn { clear:both; margin-top:4%; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/bg-btn.jpg) repeat-x; text-transform:uppercase; font-size: 18px; }
@@ -538,7 +542,6 @@ footer .relacionados li.last { margin-right:0; }
 .pais .content .sprite-aspa-esquerda { margin-right:10px; }
 .pais .content .sprite-aspa-direita { float:right; }
 .pais .content .dica { background:url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-amarelo.png) repeat; padding:1%; }
-.pais .content .span4 { margin-top:20px !important; }
 .pais .btn-group { width: 100%; }
 .pais .dropdown-toggle { width: 96%; }
 .pais .btn-group > .dropdown-menu,
