@@ -16,6 +16,7 @@ $(document).ready(function() {
   });
   
   $('.container-itens a').click(function(){
+    if($(this).hasClass('current')){
       console.log('temho');
     }else{
       console.log('nao tenho');
