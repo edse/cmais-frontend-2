@@ -431,6 +431,10 @@
     ev.preventDefault();
     $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
   };
+  stop = function(ev){
+    ev.preventDefault();
+    return false
+  };
   </script>
 </div>
 <!--/section-->
