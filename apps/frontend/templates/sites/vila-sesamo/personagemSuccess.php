@@ -415,7 +415,7 @@
       },
       slideSpeed: 8000
   });
-  $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
+  
   //$('.arrow, #selector-interna-personagem a').click(function(){
     //slideShow(); 
   //});
@@ -433,6 +433,7 @@
   
   $(window).on('load', function (ev) {
     $('#carrossel-interna-personagem').responsiveCarousel('redraw');
+    $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
     slideShow();
   });
   
