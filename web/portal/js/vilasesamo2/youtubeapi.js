@@ -17,6 +17,9 @@ $(document).ready(function() {
   
   $('.container-itens a').click(function(){
       console.log('temho');
+    }else{
+      console.log('nao tenho');
+    }
     //if(playing)
       //playing.pauseVideo(); 
   });
