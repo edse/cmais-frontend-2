@@ -432,6 +432,7 @@
   });
   
   $(window).on('load', function (ev) {
+    ev.preventDefault();
     $('#carrossel-interna-personagem').responsiveCarousel('redraw');
     $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
     slideShow();
