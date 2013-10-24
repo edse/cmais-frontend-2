@@ -63,8 +63,8 @@
             <?php foreach($displays['dicas'] as $d): ?>
       <div class="span4 dica">
         <i class="sprite-aspa-esquerda"></i>
-        <h2><a href="#"><?php $d->getTitle(); ?></a></h2>
-        <p><?php $d->getDescription(); ?></p>
+        <h2><a href="#"><?php echo $d->getTitle(); ?></a></h2>
+        <p><?php echo $d->getDescription(); ?></p>
         <i class="sprite-aspa-direita"></i>
               <?php $related = $d->Asset->retriveRelatedAssetsByRelationType("Download") ?>
               <?php if(count($related) > 0): ?>
@@ -81,8 +81,8 @@
             <?php echo "destaques" ?>
       <div class="span4 dica">
         <i class="sprite-aspa-esquerda"></i>
-        <h2><a href="#"><?php $displays['dicas'][0]->getTitle(); ?></a></h2>
-        <p><?php $displays['dicas'][0]->getDescription(); ?></p>
+        <h2><a href="#"><?php echo $displays['dicas'][0]->getTitle(); ?></a></h2>
+        <p><?php echo $displays['dicas'][0]->getDescription(); ?></p>
         <i class="sprite-aspa-direita"></i>
             <?php $download = $displays['dicas'][0]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
             <?php if(count($download) > 0): ?>
@@ -107,8 +107,8 @@
 
       <div class="span4 dica">
         <i class="sprite-aspa-esquerda"></i>
-        <h2><a href="#"><?php $dica->getTitle(); ?></a></h2>
-        <p><?php $dica->getDescription(); ?></p>
+        <h2><a href="#"><?php echo $dica->getTitle(); ?></a></h2>
+        <p><?php echo $dica->getDescription(); ?></p>
         <i class="sprite-aspa-direita"></i>
           <?php $download = $dica->Asset->retriveRelatedAssetsByRelationType("Download") ?>
           <?php if(count($download) > 0): ?>
