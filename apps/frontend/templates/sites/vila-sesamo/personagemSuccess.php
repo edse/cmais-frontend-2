@@ -193,7 +193,7 @@
 
     </div>
     <!--/span12-->
-    <span class="divisa"></span>
+    <span class="divisa personagem"></span>
     
     <!--destaques-->
     <div class="destaques dest-pers bel row-fluid container">
