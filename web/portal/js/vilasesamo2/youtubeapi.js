@@ -6,20 +6,7 @@ $(document).ready(function() {
   var playing;
   var playing_id = false;
   
-  $('.videoorimage iframe').each(function(i){
-    if($(this).attr('src').indexOf("youtube") != -1){
-      cont++;
-      console.log(cont);
-      $(this).attr("id","player"+cont);
-      onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
-    }
-  });
-  
-  $('.container-itens a').click(function(){
-    if($(this).hasClass('current')){
-      playing.pauseVideo();
-    }    
-  });
+ 
  
   
   onYouTubeIframeAPIReadyPlayer = function(obj, cont) {
@@ -35,6 +22,20 @@ $(document).ready(function() {
       }
     });
   }
-
+  
+  $('.videoorimage iframe').each(function(i){
+    if($(this).attr('src').indexOf("youtube") != -1){
+      cont++;
+      console.log(cont);
+      $(this).attr("id","player"+cont);
+      onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
+    }
+  });
+  
+  $('.container-itens a').click(function(){
+    if($(this).hasClass('current')){
+      playing.pauseVideo();
+    }    
+  });
   
 });
