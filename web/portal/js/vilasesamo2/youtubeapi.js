@@ -33,7 +33,7 @@ $(document).ready(function() {
   });
   
   $('.container-itens a').click(function(){
-    if($(this).hasClass('current')){
+    if(!$(this).hasClass('current')){
       playing.pauseVideo();
     }    
   });
