@@ -153,7 +153,7 @@
           <?php if(count($dica) > 0): ?>
       <div class="span4 dica">
         <i class="sprite-aspa-esquerda"></i>
-        <h2><a href="#"><?php echo $dica->getTitle(); ?></a></h2>
+        <h2><a href="#"><?php echo $dica[0]->getTitle(); ?></a></h2>
         <p><?php echo $dica->getDescription(); ?></p>
         <i class="sprite-aspa-direita"></i>
             <?php $download = $dica->Asset->retriveRelatedAssetsByRelationType("Download") ?>
