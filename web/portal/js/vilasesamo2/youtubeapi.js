@@ -15,7 +15,7 @@ $(document).ready(function() {
     }
   });
   
-  $('.videoorimage a').click(function(){
+  $('.container-itens a').click(function(){
       console.log('temho');
     //if(playing)
       //playing.pauseVideo(); 
