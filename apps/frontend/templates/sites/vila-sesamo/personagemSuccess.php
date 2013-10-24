@@ -23,7 +23,7 @@
       <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
       <h1><i class="sprite-icon-personagens-med"></i>Personagens</h1>
       
-<!--nav filtro personagem-->
+    <!--nav filtro personagem-->
     <nav role="navigation" class="span2">
       <h3>escolha o personagem</h3>
       <h3 aria-live="polite" id="filtro-descricao">todas as atividades estão para selecionar</h3>
@@ -105,62 +105,8 @@
                 <div class="pull-left videoorimage">
                   <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
                 </div>
-                <div class="descritivo">
-                  <h3>BEL</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
-                </div>
               </li>
               <!--/item-->
-              
-              <!--item-->
-              <li>
-                <div class="pull-left videoorimage">
-                  <iframe width="420" height="315" src="//www.youtube.com/embed/52GWILDxOcA" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="descritivo">
-                  <h3>BEL</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
-                </div>
-              </li>
-              <!--/item-->
-              
-              <!--item-->
-              <li>
-                <div class="pull-left videoorimage">
-                  <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
-                </div>
-                <div class="descritivo">
-                  <h3>BEL</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
-                </div>
-              </li>
-              <!--/item-->
-              
-              <!--item-->
-              <li>
-                <div class="pull-left videoorimage">
-                  <iframe width="420" height="315" src="//www.youtube.com/embed/52GWILDxOcA" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="descritivo">
-                  <h3>BEL</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
-                </div>
-              </li>
-              <!--/item-->
-              
-              <!--item-->
-              <li>
-                <div class="pull-left videoorimage">
-                  <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
-                </div>
-                <div class="descritivo">
-                  <h3>BEL</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
-                </div>
-              </li>
-              <!--/item-->
-              
-              
             </ul>
             <!--slider-mask-->
             <div class="clearit"></div>
@@ -188,7 +134,10 @@
       <!--/seletor carrossel--> 
     </div>
     <!--/inicio carrossel--> 
-      
+    <div class="descritivo">
+      <h3>BEL</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+    </div>  
 
 
     </div>
