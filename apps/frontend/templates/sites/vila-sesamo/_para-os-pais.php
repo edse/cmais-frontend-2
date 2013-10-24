@@ -44,7 +44,8 @@
             ->andWhere('tg.tag_id = t.id')
             ->andWhereIn('t.name', $tags)
             ->andWhere('a.asset_type_id = ?', 1)
-            ->fetchOne();
+            ->limit(2)
+            ->execute();
             
           $artigo = Doctrine_Query::create()
             ->select('a.*')
@@ -72,7 +73,8 @@
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('a.asset_type_id = ?', 1)
           //->orderBy('rand()')
-          ->fetchOne();
+          ->limit(2)
+          ->execute();
           
         $artigo = Doctrine_Query::create()
           ->select('a.*')
@@ -149,30 +151,43 @@
         
       <?php else: ?>
         
-        <?php if(isset($dica)): ?>
-          <?php if(count($dica) > 0): ?>
+        <?php if(isset($dica[0])): ?>
       <div class="span4 dica">
         <i class="sprite-aspa-esquerda"></i>
-        <h2><a href="#"><?php echo $dica->getTitle(); ?></a></h2>
-        <p><?php echo $dica->getDescription(); ?></p>
+        <h2><a href="#"><?php echo $dica[0]->getTitle(); ?></a></h2>
+        <p><?php echo $dica[0]->getDescription(); ?></p>
         <i class="sprite-aspa-direita"></i>
-            <?php $download = $dica->retriveRelatedAssetsByRelationType("Download") ?>
-            <?php if(count($download) > 0): ?>
-              <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+          <?php $download = $dica[0]->retriveRelatedAssetsByRelationType("Download") ?>
+          <?php if(count($download) > 0): ?>
+            <?php if($download[0]->AssetType->getSlug() == "file"): ?>
         <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
-              <?php endif; ?>
             <?php endif; ?>
-      </div>
           <?php endif; ?>
+      </div>
         <?php endif; ?>
       
         <?php if($artigo): ?>
-            <?php $preview = $artigo->retriveRelatedAssetsByRelationType("Preview") ?>
+          <?php $preview = $artigo->retriveRelatedAssetsByRelationType("Preview") ?>
       <div class="span4 box-select">
         <a href="<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $artigo->getSlug() ?>" title="<?php echo $artigo->getTitle() ?>"> <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $artigo->getTitle() ?>" /> </a>
         <h2><a><?php echo $artigo->getTitle() ?></a></h2>
         <p><?php echo $artigo->getDescription() ?></p>
       </div>
+        <?php else: ?>
+          <?php if(isset($dica[1])): ?>
+        <div class="span4 dica">
+          <i class="sprite-aspa-esquerda"></i>
+          <h2><a href="#"><?php echo $dica[1]->getTitle(); ?></a></h2>
+          <p><?php echo $dica[1]->getDescription(); ?></p>
+          <i class="sprite-aspa-direita"></i>
+            <?php $download = $dica[1]->retriveRelatedAssetsByRelationType("Download") ?>
+            <?php if(count($download) > 0): ?>
+              <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+          <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
+              <?php endif; ?>
+            <?php endif; ?>
+        </div>
+          <?php endif; ?>
         <?php endif; ?>
         
       <?php endif; ?>
