@@ -58,6 +58,31 @@
           ->andWhere('a.asset_type_id = ?', 1)
           ->fetchOne();
       }
+      else {
+        $dica = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa')
+          ->where('a.site_id = ?', $site->getId())
+          ->andWhere('sa.asset_id = a.id')
+          ->andWhereIn('sa.section_id', $sectionDicas->getId())
+          ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+          ->andWhere('a.is_active = ?', 1)
+          ->andWhere('a.asset_type_id = ?', 1)
+          ->orderBy('rand()')
+          ->fetchOne();
+          
+        $artigo = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa')
+          ->where('a.site_id = ?', $site->getId())
+          ->andWhere('sa.asset_id = a.id')
+          ->andWhereIn('sa.section_id', $forParents->getId())
+          ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+          ->andWhere('a.is_active = ?', 1)
+          ->andWhere('a.asset_type_id = ?', 1)
+          ->orderBy('rand()')
+          ->fetchOne();
+      }
     }
     
   ?>
