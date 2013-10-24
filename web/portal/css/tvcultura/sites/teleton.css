@@ -16,7 +16,7 @@ h2 a {text-indent:-9999px;  height: 176px; width: 322px; display: block;}
 .assinatura .sup {height:1px; padding-bottom:0; border-color: #a4002f;}
 .box-interna .cp-sembg {top:0; }
 .cp-sembg .compartilhar {border-color:#a4002f;}
-.assinatura .print {/*display:none*/}
+.assinatura .print {/*display:none*/} 
 
 .box-interna .texto {margin:20px 0 0 0;  float:left;}
 #direita h3 { color:#a4002f; margin-bottom: 20px; text-align: left;}
