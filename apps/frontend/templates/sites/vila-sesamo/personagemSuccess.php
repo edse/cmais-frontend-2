@@ -424,7 +424,7 @@
     
     var i = /\d/.exec($(this).attr('rel'));
     $('#carrossel-interna-personagem').responsiveCarousel('goToSlide', i);
-    $('#carrossel-interna-personagem').stopSlideShow();
+    $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow');
   });
   
   $(window).on('load', function (ev) {
