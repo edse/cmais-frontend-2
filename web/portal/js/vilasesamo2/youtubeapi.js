@@ -17,12 +17,10 @@ $(document).ready(function() {
   
   $('.container-itens a').click(function(){
     if($(this).hasClass('current')){
-      if(playing)
-        playing.pauseVideo();
+      playing.pauseVideo();
     }    
   });
-  if(playing)
-      playing.pauseVideo(); 
+ 
   
   onYouTubeIframeAPIReadyPlayer = function(obj, cont) {
     //console.log("start"+cont);
