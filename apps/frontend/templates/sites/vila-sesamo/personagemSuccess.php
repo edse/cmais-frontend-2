@@ -434,11 +434,11 @@
   });
   
   slideShow = function(ev){
-    ev.preventDefault();
+    //ev.preventDefault();
     $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
   };
   stop = function(ev){
-    ev.preventDefault();
+    //ev.preventDefault();
     $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow');
   };
   </script>
