@@ -424,6 +424,9 @@
     ev.preventDefault();
     var i = /\d/.exec($(this).attr('rel'));
     $('#carrossel-interna-personagem').responsiveCarousel('goToSlide', i);
+    if(!$(this).hasClass('current')){
+      playing.pauseVideo();
+    } 
     stop();
     slideShow(); 
   });
