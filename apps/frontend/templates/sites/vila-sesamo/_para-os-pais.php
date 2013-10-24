@@ -1,8 +1,5 @@
   <?php
     $forParents = Doctrine::getTable('Section')->findOneById(2399);
-    $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($forParents->getId(), "parceiros"); // Pega o bloco "parceiros" da seção para os pais
-    if ($block)
-      $displays["parceiros"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceitos"    
     
     foreach($categories as $c) {
       if($c->getIsHomepage() == 1) { // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando".
@@ -14,9 +11,7 @@
       /*
       $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($specialCategory->getId(), "dicas"); // Pega o bloco "dicas" da seção filha
       if ($block) $displays["dicas"] = $block->retriveDisplays(); // Pega os destaques do bloco "dicas"
-      // falta pegar o artigo nessa condição
-       * 
-       */
+      */
       $bs = $specialCategory->Blocks;
       $displays = array();
       if(count($bs) > 0){
@@ -24,10 +19,10 @@
           $displays[$b->getSlug()] = $b->retriveDisplays();
         }
       }
-             
     }
     else {
-      $section= Doctrine::getTable('Section')->findOneBySiteIdAndlug($site->getId(),"dicas");
+      $sectionDicas = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"dicas");
+      
       $tags = array();
       if(count($asset->getTags())>0){
         foreach($asset->getTags() as $t)
@@ -39,7 +34,21 @@
           ->from('Asset a, SectionAsset sa, tag t, tagging tg')
           ->where('a.site_id = ?', $site->getId())
           ->andWhere('sa.asset_id = a.id')
-          ->andWhereIn('sa.section_id', $section->getId())
+          ->andWhereIn('sa.section_id', $sectionDicas->getId())
+          ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+          ->andWhere('a.is_active = ?', 1)
+          ->andWhere('tg.taggable_id = a.id')
+          ->andWhere('tg.tag_id = t.id')
+          ->andWhereIn('t.name', $tags)
+          ->andWhere('a.asset_type_id = ?', 1)
+          ->fetchOne();
+          
+        $artigo = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa, tag t, tagging tg')
+          ->where('a.site_id = ?', $site->getId())
+          ->andWhere('sa.asset_id = a.id')
+          ->andWhereIn('sa.section_id', $forParents->getId())
           ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('tg.taggable_id = a.id')
@@ -48,7 +57,6 @@
           ->andWhere('a.asset_type_id = ?', 1)
           ->fetchOne();
       }
-      // falta pegar o artigo nessa condição também
     }
     
   ?>
@@ -144,6 +152,11 @@
       <?php endif; ?>
       
       <div class="span4">
+        <?php
+          $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($forParents->getId(), "parceiros"); // Pega o bloco "parceiros" da seção para os pais
+          if ($block)
+            $displays["parceiros"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceiros"    
+        ?>
         <?php if(isset($displays['parceiros'])): ?>
           <?php if(count($displays['parceiros']) > 0): ?>
         <p>Conheça nossos parceiros:</p>
@@ -153,13 +166,17 @@
           <?php endif; ?>
         <?php endif; ?>
         
-        <?php if(isset($categories)): ?>
-          <?php if(count($categories) > 0): ?>
+        <?php
+          $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
+          $allCategories = $sectionCategorias->subsections();
+        ?>        
+        <?php if(isset($allCategories)): ?>
+          <?php if(count($allCategories) > 0): ?>
         <p>Você também pode escolher o jogo de acordo com as preferências da criança:</p>
         <div class="btn-group">
           <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
           <ul class="dropdown-menu">
-            <?php foreach($categories as $c): ?>
+            <?php foreach($allCategories as $c): ?>
             <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
             <?php endforeach; ?>
           </ul>
