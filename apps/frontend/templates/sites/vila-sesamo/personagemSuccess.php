@@ -252,42 +252,42 @@
       <section class="todos-itens ">
         <!--lista-->
         <ul role="contentinfo" id="container" class="row-fluid">
-          <li class="span4 element bel"> 
+          <li class="span4 element jogos bel"> 
             <a href="#" title="">
               <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
               <i class="sprite-icons-new sprite-icone_atividade"></i>
               <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
             </a>
           </li>
-          <li class="span4 element bel"> 
+          <li class="span4 element atividades bel"> 
             <a href="#" title="">
               <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
               <i class="sprite-icons-new sprite-icone_atividade"></i>
               <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo2 Nomejogo3 Nomejogo3</div>
             </a>
           </li>
-          <li class="span4 element bel"> 
+          <li class="span4 element videos bel"> 
             <a href="#" title="">
               <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
               <i class="sprite-icons-new sprite-icone_atividade"></i>
               <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo3 Nomejogo3 Nomejogo3</div>
             </a>
           </li>
-          <li class="span4 element bel"> 
+          <li class="span4 element atividades bel"> 
             <a href="#" title="">
               <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
               <i class="sprite-icons-new sprite-icone_atividade"></i>
               <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo4 Nomejogo3 Nomejogo3</div>
             </a>
           </li>
-          <li class="span4 element bel"> 
+          <li class="span4 element videos bel"> 
             <a href="#" title="">
               <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
               <i class="sprite-icons-new sprite-icone_atividade"></i>
               <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo5 Nomejogo3 Nomejogo3</div>
             </a>
           </li>
-          <li class="span4 element bel"> 
+          <li class="span4 element jogos bel"> 
             <a href="#" title="">
               <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
               <i class="sprite-icons-new sprite-icone_atividade"></i>
