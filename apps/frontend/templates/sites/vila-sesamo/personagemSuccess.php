@@ -410,9 +410,9 @@
           $current.addClass('current');
       }
   });
-  
+  slideShow();
   $('.arrow, #selector-interna-personagem a').click(function(){
-    //slideShow(); 
+    slideShow(); 
   });
   
   $('#selector-interna-personagem a').on('click', function (ev) {
@@ -423,7 +423,7 @@
   
   $(window).on('load', function (ev) {
     $('#carrossel-interna-personagem').responsiveCarousel('redraw');
-    //slideShow();
+    slideShow();
   });
   
   slideShow = function(ev){
