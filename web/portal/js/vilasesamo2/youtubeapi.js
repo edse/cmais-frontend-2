@@ -11,7 +11,7 @@ $(document).ready(function() {
       cont++;
       console.log(cont);
       $(this).attr("id","player"+cont);
-      //onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
+      onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
     }
   });
   
