@@ -71,7 +71,7 @@
           ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('a.asset_type_id = ?', 1)
-          ->orderBy('rand()')
+          //->orderBy('rand()')
           ->fetchOne();
           
         $artigo = Doctrine_Query::create()
@@ -83,7 +83,7 @@
           ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('a.asset_type_id = ?', 1)
-          ->orderBy('rand()')
+          //->orderBy('rand()')
           ->fetchOne();
       }
     }
@@ -153,7 +153,7 @@
           <?php if(count($dica) > 0): ?>
       <div class="span4 dica">
         <i class="sprite-aspa-esquerda"></i>
-        <h2><a href="#"><?php echo $dica[0]->getTitle(); ?></a></h2>
+        <h2><a href="#"><?php echo $dica->getTitle(); ?></a></h2>
         <p><?php echo $dica->getDescription(); ?></p>
         <i class="sprite-aspa-direita"></i>
             <?php $download = $dica->Asset->retriveRelatedAssetsByRelationType("Download") ?>
