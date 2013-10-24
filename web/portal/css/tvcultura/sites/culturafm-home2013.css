@@ -63,6 +63,7 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #content-holder .c-classico .seta2{left:0;}
 #content-holder .seta{width:10px; height:16px; background:url('/portal/images/capaPrograma/culturafm/novahome/seta.jpg') no-repeat; position:absolute; top:0; right:-10px;}
 #content-holder .linha-hr{width:100%; height:1px; background:url('/portal/images/capaPrograma/culturafm/novahome/linha-pontilhada.jpg') repeat-x;}
+#content-holder #cfm-carrossel p{overflow: hidden; max-height:40px; text-align:left;}
 
 #content-holder h2{font-size:18px; color:#0546a6; text-align: left; margin-top: 4px;max-height: 70px;overflow: hidden;}
 #content-holder h2:hover{text-decoration-color:#0546a6;}
