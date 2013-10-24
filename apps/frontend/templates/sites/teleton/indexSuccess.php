@@ -99,7 +99,7 @@ $(function(){ //onready
             
             <!-- DIREITA -->
             <div id="direita" class="grid1">
-              <h3>Bastidores</h3> 
+              <!--h3>Bastidores</h3--> 
                 <?php
                 /*
                 <div id="canal" class="grid1">
