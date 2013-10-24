@@ -424,12 +424,13 @@
     ev.preventDefault();
     var i = /\d/.exec($(this).attr('rel'));
     $('#carrossel-interna-personagem').responsiveCarousel('goToSlide', i);
-    $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow'); 
+    stop($('#carrossel-interna-personagem'))
+    slideShow($('#carrossel-interna-personagem')); 
   });
   
   $(window).on('load', function (ev) {
     $('#carrossel-interna-personagem').responsiveCarousel('redraw');
-    slideShow();
+    slideShow($('#carrossel-interna-personagem'));
   });
   
   slideShow = function(ev){
@@ -438,7 +439,7 @@
   };
   stop = function(ev){
     ev.preventDefault();
-    return false
+    $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow');
   };
   </script>
 </div>
