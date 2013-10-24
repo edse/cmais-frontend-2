@@ -31,7 +31,7 @@ $(document).ready(function() {
     player[cont].addEventListener("onStateChange", function(res){
       if(res.data == 1){
         playing = res.target;
-        //console.log('playing:'+playing);
+        console.log('playing:'+playing);
       }
     });
   }
