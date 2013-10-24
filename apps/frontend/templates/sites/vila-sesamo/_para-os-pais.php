@@ -21,7 +21,7 @@
       }
     }
     else {
-      $sectionDicas = Doctrine::getTable('Section')->findOneBySiteIdAndlug($site->getId(),"dicas");
+      $sectionDicas = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"dicas");
       
       $tags = array();
       if(count($asset->getTags())>0){
