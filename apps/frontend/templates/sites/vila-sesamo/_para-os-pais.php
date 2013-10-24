@@ -5,10 +5,11 @@
      * Senão busca assets com semelhança de tags
      */
     $forParents = Doctrine::getTable('Section')->findOneById(2399);
-    
-    foreach($categories as $c) {
-      if($c->getIsHomepage() == 1) { // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando".
-        $specialCategory = $c; 
+    if(isset($categories)) {
+      foreach($categories as $c) {
+        if($c->getIsHomepage() == 1) { // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando".
+          $specialCategory = $c; 
+        }
       }
     }
     
@@ -23,11 +24,12 @@
     }
     else { // senão traz pela semelhança de tags com o asset em questão
       $sectionDicas = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"dicas");
-      
-      $tags = array();
-      if(count($asset->getTags())>0){
-        foreach($asset->getTags() as $t)
-          $tags[] = $t;
+      if(isset($asset)) {
+        $tags = array();
+        if(count($asset->getTags())>0){
+          foreach($asset->getTags() as $t)
+            $tags[] = $t;
+        }
       }
       if(count($tags) > 0) {
         $dica = Doctrine_Query::create()
