@@ -299,7 +299,7 @@
       </section>
       <!--/section-->
         
-      <span class="divisa personagem"></span
+      <span class="divisa carregar"></span
       
       <input type="hidden" id="filter-choice" value="">
       <nav id="page_nav">
