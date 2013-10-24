@@ -1,5 +1,8 @@
   <?php
     $forParents = Doctrine::getTable('Section')->findOneById(2399);
+    $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($forParents->getId(), "parceiros"); // Pega o bloco "parceiros" da seção para os pais
+    if ($block)
+      $displays["parceiros"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceitos"    
     
     foreach($categories as $c) {
       if($c->getIsHomepage() == 1) { // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando".
@@ -8,12 +11,23 @@
     }
     
     if(isset($specialCategory)) {
+      /*
       $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($specialCategory->getId(), "dicas"); // Pega o bloco "dicas" da seção filha
       if ($block) $displays["dicas"] = $block->retriveDisplays(); // Pega os destaques do bloco "dicas"
       // falta pegar o artigo nessa condição
+       * 
+       */
+      $bs = $specialCategory->Blocks;
+      $displays = array();
+      if(count($bs) > 0){
+        foreach($bs as $b){
+          $displays[$b->getSlug()] = $b->retriveDisplays();
+        }
+      }
+             
     }
     else {
-      $sectionDicas = Doctrine::getTable('Section')->findOneBySiteIdAndlug($site->getId(),"dicas");
+      $section= Doctrine::getTable('Section')->findOneBySiteIdAndlug($site->getId(),"dicas");
       $tags = array();
       if(count($asset->getTags())>0){
         foreach($asset->getTags() as $t)
@@ -25,7 +39,7 @@
           ->from('Asset a, SectionAsset sa, tag t, tagging tg')
           ->where('a.site_id = ?', $site->getId())
           ->andWhere('sa.asset_id = a.id')
-          ->andWhereIn('sa.section_id', $sectionDicas->getId())
+          ->andWhereIn('sa.section_id', $section->getId())
           ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('tg.taggable_id = a.id')
@@ -54,26 +68,7 @@
       
       <?php if(isset($specialCategory)): ?>
         
-        <?php if($specialCategory->getSlug() == "incluir-brincando"): ?>
-          
-          <?php if(count($displays['dicas']) > 0): ?>
-            <?php foreach($displays['dicas'] as $d): ?>
-      <div class="span4 dica">
-        <i class="sprite-aspa-esquerda"></i>
-        <h2><a href="#"><?php echo $d->getTitle(); ?></a></h2>
-        <p><?php echo $d->getDescription(); ?></p>
-        <i class="sprite-aspa-direita"></i>
-              <?php $download = $d->Asset->retriveRelatedAssetsByRelationType("Download") ?>
-              <?php if(count($download) > 0): ?>
-                <?php if($download[0]->AssetType->getSlug() == "file"): ?>
-        <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
-                <?php endif; ?>
-              <?php endif; ?>
-      </div>
-            <?php endforeach; ?>
-          <?php endif; ?>
-        
-        <?php else: ?>
+        <?php if(isset($displays['dicas']) > 0): ?>
           <?php if(count($displays['dicas']) > 0): ?>
       <div class="span4 dica">
         <i class="sprite-aspa-esquerda"></i>
@@ -87,40 +82,65 @@
               <?php endif; ?>
             <?php endif; ?>
       </div>
-      
-            <?php if(isset($artigo)): ?>
-              <?php $preview = $artigo->Asset->retriveRelatedAssetsByRelationType("Preview") ?>
+          <?php endif; ?>
+        <?php endif; ?>
+        
+        <?php if(isset($displays['artigos']) > 0): ?>
+          <?php if(count($displays['artigos']) > 0): ?>
+            <?php $preview = $displays['artigos'][0]->Asset->retriveRelatedAssetsByRelationType("Preview") ?>
       <div class="span4 box-select">
-        <a href="<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $artigo->getSlug() ?>" title="<?php echo $artigo->getTitle() ?>"> <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $artigo->getTitle() ?>" /> </a>
-        <h2><a><?php echo $artigo->getTitle() ?></a></h2>
-        <p><?php echo $artigo->getDescription() ?></p>
+        <a href="<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $displays['artigos'][0]->getSlug() ?>" title="<?php echo $displays['artigos'][0]->getTitle() ?>"> <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['artigos'][0]->getTitle() ?>" /> </a>
+        <h2><a><?php echo $displays['artigos'][0]->getTitle() ?></a></h2>
+        <p><?php echo $displays['artigos'][0]->getDescription() ?></p>
       </div>
+          <?php endif; ?>
+        <?php else: ?>
+          <?php if(isset($displays['dicas'][1]) > 0): ?>
+      <div class="span4 dica">
+        <i class="sprite-aspa-esquerda"></i>
+        <h2><a href="#"><?php echo $displays['dicas'][1]->getTitle(); ?></a></h2>
+        <p><?php echo $displays['dicas'][1]->getDescription(); ?></p>
+        <i class="sprite-aspa-direita"></i>
+            <?php $download = $displays['dicas'][1]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
+            <?php if(count($download) > 0): ?>
+              <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+        <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
+              <?php endif; ?>
             <?php endif; ?>
+      </div>
           <?php endif; ?>
         <?php endif; ?>
         
       <?php else: ?>
-
+        
+        <?php if(isset($dica)): ?>
+          <?php if(count($dica) > 0): ?>
       <div class="span4 dica">
         <i class="sprite-aspa-esquerda"></i>
         <h2><a href="#"><?php echo $dica->getTitle(); ?></a></h2>
         <p><?php echo $dica->getDescription(); ?></p>
         <i class="sprite-aspa-direita"></i>
-          <?php $download = $dica->Asset->retriveRelatedAssetsByRelationType("Download") ?>
-          <?php if(count($download) > 0): ?>
-            <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+            <?php $download = $dica->Asset->retriveRelatedAssetsByRelationType("Download") ?>
+            <?php if(count($download) > 0): ?>
+              <?php if($download[0]->AssetType->getSlug() == "file"): ?>
         <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
+              <?php endif; ?>
             <?php endif; ?>
-          <?php endif; ?>
       </div>
+          <?php endif; ?>
+        <?php endif; ?>
       
-          <?php if(isset($artigo)): ?>
+        <?php if(isset($artigo)): ?>
+          <?php if(count($artigo) > 0): ?>
             <?php $preview = $artigo->Asset->retriveRelatedAssetsByRelationType("Preview") ?>
       <div class="span4 box-select">
         <a href="<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $artigo->getSlug() ?>" title="<?php echo $artigo->getTitle() ?>"> <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $artigo->getTitle() ?>" /> </a>
         <h2><a><?php echo $artigo->getTitle() ?></a></h2>
         <p><?php echo $artigo->getDescription() ?></p>
       </div>
+          <?php endif;?>
+        <?php endif; ?>
+        
       <?php endif; ?>
       
       <div class="span4">
@@ -152,5 +172,4 @@
     
     <span class="linha"></span>
   </section>
-    <?php endif; ?>
   <?php endif; ?>
