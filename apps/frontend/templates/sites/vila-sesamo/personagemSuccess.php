@@ -415,7 +415,7 @@
       },
       slideSpeed: 8000
   });
-  $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
+  
   //$('.arrow, #selector-interna-personagem a').click(function(){
     //slideShow(); 
   //});
@@ -424,12 +424,17 @@
     ev.preventDefault();
     var i = /\d/.exec($(this).attr('rel'));
     $('#carrossel-interna-personagem').responsiveCarousel('goToSlide', i);
+    if(!$(this).hasClass('current')){
+      playing.pauseVideo();
+    } 
     stop();
     slideShow(); 
   });
   
   $(window).on('load', function (ev) {
+    ev.preventDefault();
     $('#carrossel-interna-personagem').responsiveCarousel('redraw');
+    $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
     slideShow();
   });
   
