@@ -298,13 +298,17 @@
         <!--lista-->  
       </section>
       <!--/section-->
-        
-      <span class="divisa carregar"></span
       
-      <input type="hidden" id="filter-choice" value="">
-      <nav id="page_nav">
-        <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
-      </nav>
+      <!--pagina-->
+      <div class="pagina">  
+        <span class="divisa carregar"></span
+        
+        <input type="hidden" id="filter-choice" value="">
+        <nav id="page_nav">
+          <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
+        </nav>
+      </div>
+      <!--pagina-->
       
       <!-- para os pais -->
       <div id="dicas-pais" class="pais">
