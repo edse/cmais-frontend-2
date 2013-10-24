@@ -23,123 +23,124 @@
       <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
       <h1><i class="sprite-icon-personagens-med"></i>Personagens</h1>
       
-    <!--nav filtro personagem-->
-    <nav role="navigation" class="span2">
-      <h3>escolha o personagem</h3>
-      <h3 aria-live="polite" id="filtro-descricao">todas as atividades estão para selecionar</h3>
-      <ul class="filtro-personagem">
-       
-       <li class="ativo">
-        <div class="inner bel">
-          <a href="javascript:;" class="btn-bel " data-filter=".bel">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="filtro bel" />
-          </a>
-          
-        </div>
-       </li>
-        <li>
-          <div class="inner beto">
-            <a href="javascript:;" class="btn-beto " data-filter=".beto">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/beto_personagem.png" alt="filtro beto" />
+      <!--nav filtro personagem-->
+      <nav role="navigation" class="span2">
+        <h3>escolha o personagem</h3>
+        <h3 aria-live="polite" id="filtro-descricao">todas as atividades estão para selecionar</h3>
+        <ul class="filtro-personagem">
+         
+         <li class="ativo">
+          <div class="inner bel">
+            <a href="javascript:;" class="btn-bel " data-filter=".bel">
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="filtro bel" />
             </a>
+            
           </div>
-        </li>
-        <li>
-          <div class="inner comecome">
-            <a href="javascript:;" class="btn-comecome " data-filter=".come-come">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/comecome_personagem.png" alt="filtro Come-come" />
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="inner elmo">
-            <a href="javascript:;" class="btn-elmo " data-filter=".elmo">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/elmo_personagem.png" alt="filtro Elmo" />
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="inner enio">
-            <a href="javascript:;" class="btn-enio " data-filter=".enio">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/enio_personagem.png" alt="filtro Enio" /></a>
-           </div>
-        </li>
-        <li>
-          <div class="inner garibaldo">
-            <a href="javascript:;" class="btn-garibaldo " data-filter=".garibaldo">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/garibaldo_personagem.png" alt="filtro Garibaldo" />
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="inner grover">
-            <a href="javascript:;" class="btn-grover " data-filter=".grover">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/grover_personagem.png" alt="filtro Grover" />
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="inner zoe">
-            <a href="javascript:;" class="btn-zoe " data-filter=".zoe">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/zoe_personagem.png" alt="filtro Zoe" />
-            </a>
-           </div>
-        </li>
-      </ul>
-    </nav>
-    <!--/nav filtro personagem-->
-    
-
-    <!--inicio carrossel--> 
-    <div id="carrossel-interna-personagem">
-      <!--slider-->
-      <div class="slider">
-        <!--slider-mask-wrap-->
-        <div class="slider-mask-wrap">
-          <!--slider-mask-->
-          <div class="slider-mask">
-            <!--slider-mask-wrap--> 
-            <ul class="slider-target">
-              <!--item-->
-              <li>
-                <div class="pull-left videoorimage">
-                  <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
-                </div>
-              </li>
-              <!--/item-->
-            </ul>
-            <!--slider-mask-->
-            <div class="clearit"></div>
-          </div>
-        </div>
-        <!--slider-mask-wrap--> 
-        <!--slider-nav>
-        <div class="slider-nav">
-          <div class="arrow-left arrow"><span title="Anterior" class="back"></span></div>
-          <div class="arrow-right arrow"><span title="Proximo" class="next"></span></div>
-        </div> 
-        <!--slider-nav-->
-      </div>
-      <!--/slider-->
-      <!--seletor carrossel-->
-      <div class="container-itens"> 
-        <ul id="selector-interna-personagem">
-          <li><a href="#" rel="frame_0"></a></li>
-          <li><a href="#" rel="frame_1"></a></li>
-          <li><a href="#" rel="frame_2"></a></li>
-          <li><a href="#" rel="frame_3"></a></li>
-          <li><a href="#" rel="frame_4"></a></li>
+         </li>
+          <li>
+            <div class="inner beto">
+              <a href="javascript:;" class="btn-beto " data-filter=".beto">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/beto_personagem.png" alt="filtro beto" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="inner comecome">
+              <a href="javascript:;" class="btn-comecome " data-filter=".come-come">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/comecome_personagem.png" alt="filtro Come-come" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="inner elmo">
+              <a href="javascript:;" class="btn-elmo " data-filter=".elmo">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/elmo_personagem.png" alt="filtro Elmo" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="inner enio">
+              <a href="javascript:;" class="btn-enio " data-filter=".enio">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/enio_personagem.png" alt="filtro Enio" /></a>
+             </div>
+          </li>
+          <li>
+            <div class="inner garibaldo">
+              <a href="javascript:;" class="btn-garibaldo " data-filter=".garibaldo">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/garibaldo_personagem.png" alt="filtro Garibaldo" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="inner grover">
+              <a href="javascript:;" class="btn-grover " data-filter=".grover">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/grover_personagem.png" alt="filtro Grover" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="inner zoe">
+              <a href="javascript:;" class="btn-zoe " data-filter=".zoe">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/zoe_personagem.png" alt="filtro Zoe" />
+              </a>
+             </div>
+          </li>
         </ul>
+      </nav>
+      <!--/nav filtro personagem-->
+      
+      <!--box-personagem-->
+      <div class="desc-personagem">
+        <!--inicio carrossel--> 
+        <div id="carrossel-interna-personagem">
+          <!--slider-->
+          <div class="slider">
+            <!--slider-mask-wrap-->
+            <div class="slider-mask-wrap">
+              <!--slider-mask-->
+              <div class="slider-mask">
+                <!--slider-mask-wrap--> 
+                <ul class="slider-target">
+                  <!--item-->
+                  <li>
+                    <div class="pull-left videoorimage">
+                      <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
+                    </div>
+                  </li>
+                  <!--/item-->
+                </ul>
+                <!--slider-mask-->
+                <div class="clearit"></div>
+              </div>
+            </div>
+            <!--slider-mask-wrap--> 
+            <!--slider-nav>
+            <div class="slider-nav">
+              <div class="arrow-left arrow"><span title="Anterior" class="back"></span></div>
+              <div class="arrow-right arrow"><span title="Proximo" class="next"></span></div>
+            </div> 
+            <!--slider-nav-->
+          </div>
+          <!--/slider-->
+          <!--seletor carrossel-->
+          <div class="container-itens"> 
+            <ul id="selector-interna-personagem">
+              <li><a href="#" rel="frame_0"></a></li>
+              <li><a href="#" rel="frame_1"></a></li>
+              <li><a href="#" rel="frame_2"></a></li>
+              <li><a href="#" rel="frame_3"></a></li>
+              <li><a href="#" rel="frame_4"></a></li>
+            </ul>
+          </div>
+          <!--/seletor carrossel--> 
+        </div>
+        <!--/inicio carrossel--> 
+        <div class="descritivo">
+          <h3>BEL</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+        </div>  
       </div>
-      <!--/seletor carrossel--> 
-    </div>
-    <!--/inicio carrossel--> 
-    <div class="descritivo">
-      <h3>BEL</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
-    </div>  
-
-
+      <!--/box-personagem-->
     </div>
     <!--/span12-->
     <span class="divisa personagem"></span>
