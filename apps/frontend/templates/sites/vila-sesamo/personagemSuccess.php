@@ -369,7 +369,7 @@
        */
       ?>
       
-      <?php include_partial_from_folder('sites/vila-sesamo', 'global/para-os-pais') ?>
+      <?php include_partial_from_folder('sites/vila-sesamo', 'global/para-os-pais', array("site" => $site, "asset" => $asset, "categories" => $categories, "uri" => $uri)) ?>
       
     </div>
     <!--destaques-->
