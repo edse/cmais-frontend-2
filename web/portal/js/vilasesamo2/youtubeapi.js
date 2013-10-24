@@ -11,10 +11,10 @@ $(document).ready(function() {
   
   onYouTubeIframeAPIReadyPlayer = function(obj, cont) {
     console.log("start"+cont);
-    console.log("obj:"+obj);
-    console.log("contador:"+cont);
+    //console.log("obj:"+obj);
+    //console.log("contador:"+cont);
     player[cont] = new YT.Player(obj);
-    console.log("player:"+player[cont]);
+    //console.log("player:"+player[cont]);
     player[cont].addEventListener("onStateChange", function(res){
       if(res.data == 1){
         playing = res.target;
@@ -33,7 +33,7 @@ $(document).ready(function() {
   });
   
   $('.container-itens a').click(function(){
-    if($(this).hasClass('current')){
+    if(!$(this).hasClass('current')){
       playing.pauseVideo();
     }    
   });
