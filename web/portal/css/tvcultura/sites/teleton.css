@@ -13,9 +13,9 @@ h2 a {text-indent:-9999px;  height: 176px; width: 322px; display: block;}
 #menuFloat {display:none !important; }
 .box-interna h3 {color:#03939c; } 
 .assinatura {margin-top:0;}
-.assinatura .sup {height:1px; padding-bottom:0; border-color: #a4002f;}
+.assinatura .sup {height:1px; padding-bottom:0; border-color: #03939c;}
 .box-interna .cp-sembg {top:0; }
-.cp-sembg .compartilhar {border-color:#a4002f;}
+.cp-sembg .compartilhar {border-color:#03939c;}
 .assinatura .print {/*display:none*/} 
 
 .box-interna .texto {margin:20px 0 0 0;  float:left;}
@@ -37,7 +37,7 @@ h2 a {text-indent:-9999px;  height: 176px; width: 322px; display: block;}
 #twitter { margin-bottom:50px; }
 .topo-programa h2 { margin-top:20px; }
 .numeros { display: block;    float: right;    height: 166px;    overflow: hidden;    width: 555px;  }
-#miolo {margin: 133px 0 50px 2px;z-index: 20000;background: #fff;width: 974px;border-left: 2px solid #8ca223;border-right: 3px solid #8ca223;border-bottom: 3px solid #8ca223; border-bottom-left-radius: 3px;border-bottom-right-radius: 3px;}
+#miolo {margin: 133px 0 50px 3px;z-index: 20000;background: #fff;width: 974px;border-left: 2px solid #8ca223;border-right: 3px solid #8ca223;border-bottom: 3px solid #8ca223; border-bottom-left-radius: 3px;border-bottom-right-radius: 3px;}
 #barra-site { background: url(/portal/images/capaPrograma/teleton/textura.png) no-repeat;}
 .gplus { margin:6px 0 0 5px; float:left; }
 .box-compartilhar .btn-compartilhar { width: 200px; }
