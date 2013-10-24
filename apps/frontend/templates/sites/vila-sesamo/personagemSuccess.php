@@ -424,13 +424,13 @@
     ev.preventDefault();
     var i = /\d/.exec($(this).attr('rel'));
     $('#carrossel-interna-personagem').responsiveCarousel('goToSlide', i);
-    stop($('#carrossel-interna-personagem'))
-    slideShow($('#carrossel-interna-personagem')); 
+    stop();
+    slideShow(); 
   });
   
   $(window).on('load', function (ev) {
     $('#carrossel-interna-personagem').responsiveCarousel('redraw');
-    slideShow($('#carrossel-interna-personagem'));
+    slideShow();
   });
   
   slideShow = function(ev){
