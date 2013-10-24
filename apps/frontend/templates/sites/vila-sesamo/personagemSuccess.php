@@ -410,10 +410,10 @@
           $current.addClass('current');
       }
   });
-  slideShow();
-  $('.arrow, #selector-interna-personagem a').click(function(){
-    slideShow(); 
-  });
+  $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
+  //$('.arrow, #selector-interna-personagem a').click(function(){
+    //slideShow(); 
+  //});
   
   $('#selector-interna-personagem a').on('click', function (ev) {
     ev.preventDefault();
@@ -427,7 +427,7 @@
   });
   
   slideShow = function(ev){
-    //ev.preventDefault();
+    ev.preventDefault();
     $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
   };
   </script>
