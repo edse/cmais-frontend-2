@@ -25,40 +25,41 @@
     else { // senão traz pela semelhança de tags com o asset em questão
       $sectionDicas = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"dicas");
       if(isset($asset)) {
-        $tags = array();
         if(count($asset->getTags())>0){
           foreach($asset->getTags() as $t)
             $tags[] = $t;
         }
       }
-      if(count($tags) > 0) {
-        $dica = Doctrine_Query::create()
-          ->select('a.*')
-          ->from('Asset a, SectionAsset sa, tag t, tagging tg')
-          ->where('a.site_id = ?', $site->getId())
-          ->andWhere('sa.asset_id = a.id')
-          ->andWhereIn('sa.section_id', $sectionDicas->getId())
-          ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
-          ->andWhere('a.is_active = ?', 1)
-          ->andWhere('tg.taggable_id = a.id')
-          ->andWhere('tg.tag_id = t.id')
-          ->andWhereIn('t.name', $tags)
-          ->andWhere('a.asset_type_id = ?', 1)
-          ->fetchOne();
-          
-        $artigo = Doctrine_Query::create()
-          ->select('a.*')
-          ->from('Asset a, SectionAsset sa, tag t, tagging tg')
-          ->where('a.site_id = ?', $site->getId())
-          ->andWhere('sa.asset_id = a.id')
-          ->andWhereIn('sa.section_id', $forParents->getId())
-          ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
-          ->andWhere('a.is_active = ?', 1)
-          ->andWhere('tg.taggable_id = a.id')
-          ->andWhere('tg.tag_id = t.id')
-          ->andWhereIn('t.name', $tags)
-          ->andWhere('a.asset_type_id = ?', 1)
-          ->fetchOne();
+      if(isset($tags)) {
+        if(count($tags) > 0) {
+          $dica = Doctrine_Query::create()
+            ->select('a.*')
+            ->from('Asset a, SectionAsset sa, tag t, tagging tg')
+            ->where('a.site_id = ?', $site->getId())
+            ->andWhere('sa.asset_id = a.id')
+            ->andWhereIn('sa.section_id', $sectionDicas->getId())
+            ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+            ->andWhere('a.is_active = ?', 1)
+            ->andWhere('tg.taggable_id = a.id')
+            ->andWhere('tg.tag_id = t.id')
+            ->andWhereIn('t.name', $tags)
+            ->andWhere('a.asset_type_id = ?', 1)
+            ->fetchOne();
+            
+          $artigo = Doctrine_Query::create()
+            ->select('a.*')
+            ->from('Asset a, SectionAsset sa, tag t, tagging tg')
+            ->where('a.site_id = ?', $site->getId())
+            ->andWhere('sa.asset_id = a.id')
+            ->andWhereIn('sa.section_id', $forParents->getId())
+            ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+            ->andWhere('a.is_active = ?', 1)
+            ->andWhere('tg.taggable_id = a.id')
+            ->andWhere('tg.tag_id = t.id')
+            ->andWhereIn('t.name', $tags)
+            ->andWhere('a.asset_type_id = ?', 1)
+            ->fetchOne();
+        }
       }
       else {
         $dica = Doctrine_Query::create()
@@ -70,7 +71,7 @@
           ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('a.asset_type_id = ?', 1)
-          ->orderBy('rand()')
+          //->orderBy('rand()')
           ->fetchOne();
           
         $artigo = Doctrine_Query::create()
@@ -82,7 +83,7 @@
           ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('a.asset_type_id = ?', 1)
-          ->orderBy('rand()')
+          //->orderBy('rand()')
           ->fetchOne();
       }
     }
