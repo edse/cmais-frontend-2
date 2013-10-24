@@ -408,8 +408,8 @@
           var $current = $('#selector-interna-personagem li a[rel=frame_' + i + ']');
           $('#selector-interna-personagem li a').removeClass('current');
           $current.addClass('current');
-      }
-       slideSpeed: 4000,
+      },
+      slideSpeed: 4000
   });
   $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
   //$('.arrow, #selector-interna-personagem a').click(function(){
