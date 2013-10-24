@@ -277,9 +277,9 @@ body.personagens { background:#b60401; }
 .personagens .dest-pers .span8{clear:none;}
 .personagens .dest-pers .mais-brincadeiras{margin: 0;text-align: left;height: 30px;padding-left: 15px;}
 .personagens .dest-pers .mais-brincadeiras p{color: #fff;text-transform: uppercase;line-height: 31px;}
-.personagens .dest-pers .descritivo{ padding:20px 20px 20px 0px; }
-.personagens .dest-pers .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:25px;}
-.personagens .dest-pers .descritivo p{font-size:16px;}
+.personagens .filtro .descritivo{ padding:20px 20px 20px 0px; }
+.personagens .filtro .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:25px;}
+.personagens .filtro .descritivo p{font-size:16px;}
 .personagens .scroll, 
 .personagens .filtro  { border-color:#ee3021;background:#b60401; }
 .personagens #carrossel-interna-personagem .slider .descritivo h3{font-family:'din-blackregular',Arial, Helvetica, sans-serif;}
