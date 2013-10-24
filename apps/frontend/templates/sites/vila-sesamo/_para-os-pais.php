@@ -62,6 +62,7 @@
         }
       }
       else {
+        die("1");
         $dica = Doctrine_Query::create()
           ->select('a.*')
           ->from('Asset a, SectionAsset sa')
