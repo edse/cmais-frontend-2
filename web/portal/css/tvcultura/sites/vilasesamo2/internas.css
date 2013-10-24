@@ -29,8 +29,8 @@ body { background:#0172f9; }
 .filtro .span2 h3 { color:#fff; text-align:center; text-transform:uppercase; margin-top:10px; overflow:hidden; position:relative;font-size: 16px;line-height: 21px; font-family:'dinmedium' }
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
 .filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1773px; top:0; }
-.filtro .span2{ background:#d71c0d; border:1px solid #c31408; overflow:hidden; width: 175px;margin-left: 3px;display: block }
-.filtro .span10 { margin-left:0; width:80.86%; float:right; border-left: 2px solid #7732e5;; }
+.filtro .span2{ background:#d71c0d; border:1px solid #c31408; overflow:hidden; width: 175px;margin: 3px;display: block }
+.filtro .span10 { margin-left: 0;width: 758px;float: right;border-left: 2px solid #7732e5;height: 412px; }
 .filtro .span12 { border-top:0px solid #0191fb; border-bottom:2px solid #0191fb; background:#EE3021;  /*border-left:2px solid #0191fb;*/  }
 .filtro .filtro-personagem { margin-left:0; }
 .filtro .filtro-personagem li { float:left; margin:2%; list-style:none;  /*width:75px; height:75px;*/  width:45.6%; overflow: hidden;/*height:45.6%;*/}
@@ -103,7 +103,7 @@ body { background:#0172f9; }
 /* todos itens*/
 .todos-itens { margin-top:20px; overflow:hidden; }
 .todos-itens a div{white-space:nowrap; text-overflow: ellipsis; overflow: hidden;}
-.todos-itens a {font-family: 'dinmedium';color: #FFF;font-size: 18px;text-transform: uppercase;margin: 0;line-height: 20px;vertical-align: middle;height: 42px;}
+.todos-itens a {font-family: 'dinmedium';color: #FFF;font-size: 18px;text-transform: uppercase;margin: 0;line-height: 20px;vertical-align: middle;/*height: 42px;*/}
 .todos-itens a div img{width: 1px;height: 38px;}
 .todos-itens a:hover{color:#FFF;}
 .todos-itens .row-fluid { margin-left:0; width:980px; *margin-left:-20px; margin-left: -20px!important; }
@@ -185,8 +185,6 @@ body { background:#0172f9; }
 .interna.atividades .destaque-filtro.especial li.active { background:#fff; }
 .interna.atividades #content .scroll h3 { border-color:#7732E5; }
 .filtro .span2 h3#filtro-descricao{font-size:1px!important; text-indent:999999!important; width: 0!important; height:0!important;}
-
-
 /* atividades*/
 
 /*smint*/
@@ -259,24 +257,33 @@ body { background:#0172f9; }
 .resultado a:hover p { text-decoration:underline; }
 
 body.personagens { background:#b60401; }
+.personagens .filtro-personagem .ativo img{top:-25px;}
+.personagens .filtro .span12{border:none;}
+.personagens .filtro .span2{margin:0 4px;}
+.personagens #page_nav {background-color:#ee3021;padding:0 20px 20px 20px; margin: 0;}
 .personagens .todos-itens li{clear:both; background:#d71c0d;}
-.personagens .divisa{clear:both; background-color: #d71c0d;height: 20px;margin: 0;}
+.personagens #content h1{background: #d71c0d;border-color: #c31408;padding: 10px 30px 10px 30px;}
+.personagens .filtro .divisa.personagem{background-color: #d71c0d;clear:both;height: 20px;margin: 0;}
+.personagens .filtro .divisa.carregar{background-color: #ee3021;clear:both;height: 20px;margin: 0;} 
 .personagens .dest-pers{margin:0px;background-color: #d71c0d;}
-.personagens .dest-pers .span8{margin: 0px 10px 20px 0px!important;}
-.personagens .dest-pers a{padding:0; overflow: hidden; border-top:2px solid #0191fb; border-bottom:2px solid #0191fb;}
+.personagens .dest-pers .span8{margin: 0px 10px 15px 0px!important;}
+.personagens .dest-pers a{padding:0; border-top:2px solid #0191fb; border-bottom:2px solid #0191fb;}
 .personagens .dest-pers a p{font-size:17px;font-family: 'dinmedium', Arial, Helvetica, sans-serif;line-height: 39px;overflow: hidden;width: 143px;text-overflow: ellipsis;white-space: nowrap; margin:0;}
 .personagens .dest-pers .img-destaque { position:relative; width:100%; display: block;}
-.personagens .dest-pers .span6 a{border:none;}
-.personagens .dest-pers .span6.jogos a img{width:200px; height:200px; border-bottom:2px solid #0191fb;}
-.personagens .dest-pers .span6.videos a img{width:200px; height:200px; border-bottom:2px solid #fba500;}
-.personagens .dest-pers .span6.atividades a img{width:200px; height:200px; border-bottom:2px solid #b16af2;}
+.personagens .dest-pers .span4.pull-left{min-height:275px;}
+.personagens .dest-pers .span6.jogos a img{width:200px;border-top:none; border-bottom:2px solid #008dff;border-top:none;}
+.personagens .dest-pers .span6.videos a img{width:200px;border-top:none; border-bottom:2px solid #f77400;}
+.personagens .dest-pers .span6.atividades a img{width:200px;border-top:none; border-bottom:2px solid #7825e9;}
 .personagens .dest-pers .span8{clear:none;}
 .personagens .dest-pers .mais-brincadeiras{margin: 0;text-align: left;height: 30px;padding-left: 15px;}
 .personagens .dest-pers .mais-brincadeiras p{color: #fff;text-transform: uppercase;line-height: 31px;}
-.personagens .filtro .span12,
+.personagens .desc-personagem{overflow: hidden; background: #FFF;}
+.personagens .filtro .descritivo{ padding:20px 20px 20px 0px; }
+.personagens .filtro .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:25px;}
+.personagens .filtro .descritivo p{font-size:16px;}
 .personagens .scroll, 
-.personagens .filtro  { border-color:#ee3021; }
-.personagens #content .filtro h3 { background:#d71c0d; border-color: #c31408; }
+.personagens .filtro  { border-color:#ee3021;background:#b60401; }
+.personagens #carrossel-interna-personagem .slider .descritivo h3{font-family:'din-blackregular',Arial, Helvetica, sans-serif;}
 .personagens #content h3 span, 
 .personagens #content h3 i { margin-top:-5px; }
 .personagens #container-personagens a { display: block;    height: 300px;    position: relative;    width: 300px; }
@@ -288,5 +295,15 @@ body.personagens { background:#b60401; }
 .personagens .q-pers{float:left; width: 240px; height:240px; margin:5px;}
 
 
+.todos-itens #container li.atividades{background-color:#8935ef;border-top: 7px solid #b16af2; border-bottom: 7px solid #b16af2;}
+.todos-itens #container li.videos{background-color:#f78701;border-top: 7px solid #fba500;border-bottom: 7px solid #fba500;}
+.todos-itens #container li.jogos{background-color:#32a8ee;border-top: 7px solid #02cbff;border-bottom: 7px solid #02cbff;}
 
+.todos-itens #container li.atividades img{border-bottom-color:#7825e9;border-top:none;}
+.todos-itens #container li.atividades a{border-bottom:#7825e9 3px solid;border-top:#7825e9  3px solid;}
 
+.todos-itens #container li.videos img{border-bottom-color:#f77400;border-top:none;}
+.todos-itens #container li.videos a{border-bottom:#f77400 3px solid;border-top:#f77400  3px solid;}
+
+.todos-itens #container li.jogos img{border-bottom-color:#008dff;border-top:none;}
+.todos-itens #container li.jogos a{border-bottom:#008dff 3px solid;border-top:#008dff  3px solid;}

@@ -3,7 +3,7 @@
     <div class="span8">
     <h2><?php echo $campaign->getTitle(); ?></h2>
     <p><?php echo $campaign->getDescription(); ?></p>
-    <form class="form-horizontal">
+    <form class="form-horizontal" action="/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php">
       <div class="control-group span8">
         <label class="control-label sprite-ico-nome" for="nome"></label>
         <div class="controls">
@@ -87,7 +87,21 @@
     </form>
     </div>
     <div class="span4">
-      <iframe width="300" height="246" src="//www.youtube.com/embed/gjQA0n_1fg4" frameborder="0" allowfullscreen></iframe>
+      <?php
+        $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($campaign->getId(), "destaque-principal");
+        if($block) $displays["destaque-promocional"] = $block->retriveDisplays();
+      ?>
+      <?php if(isset($displays["destaque-promocional"])): ?>
+        <?php if(count($displays["destaque-promocional"]) > 0): ?>
+          <?php if($displays["destaque-promocional"][0]->Asset->AssetType->getSlug() == "video"): ?>
+      <iframe width="300" height="246" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+          <?php elseif($displays["destaque-promocional"][0]->Asset->AssetType->getSlug() == "image"): ?>
+      <img src="<?php echo $displays["destaque-promocional"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-promocional"][0]->getTitle() ?>" />           
+          <?php else: ?>
+      <?php echo $displays["destaque-promocional"][0]->getDescription(); ?>            
+          <?php endif; ?>
+        <?php endif; ?>
+      <?php endif; ?>
     </div>
   </section>
   <?php endif; ?>
