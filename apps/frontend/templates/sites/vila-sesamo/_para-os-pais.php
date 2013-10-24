@@ -1,4 +1,9 @@
   <?php
+    /*
+     * PARA OS PAIS
+     * Se o asset chamado pertencer a uma categoria especial (seção filha de "categorias" e marcada como "is homepage") as dicas e artigos serão destaques dos blocos "dicas" e "artigos", respectivamente, da seção dessa categoria.
+     * Senão busca assets com semelhança de tags
+     */
     $forParents = Doctrine::getTable('Section')->findOneById(2399);
     
     foreach($categories as $c) {
@@ -7,11 +12,7 @@
       }
     }
     
-    if(isset($specialCategory)) {
-      /*
-      $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($specialCategory->getId(), "dicas"); // Pega o bloco "dicas" da seção filha
-      if ($block) $displays["dicas"] = $block->retriveDisplays(); // Pega os destaques do bloco "dicas"
-      */
+    if(isset($specialCategory)) { // se ela for especial, traz as dicas e artigos por meio de blocos que estão nas categorias (seções filha de "categorias")
       $bs = $specialCategory->Blocks;
       $displays = array();
       if(count($bs) > 0){
@@ -20,7 +21,7 @@
         }
       }
     }
-    else {
+    else { // senão traz pela semelhança de tags com o asset em questão
       $sectionDicas = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"dicas");
       
       $tags = array();
@@ -75,7 +76,6 @@
       </div>
       
       <?php if(isset($specialCategory)): ?>
-        
         <?php if(isset($displays['dicas']) > 0): ?>
           <?php if(count($displays['dicas']) > 0): ?>
       <div class="span4 dica">
@@ -102,7 +102,7 @@
         <p><?php echo $displays['artigos'][0]->getDescription() ?></p>
       </div>
           <?php endif; ?>
-        <?php else: ?>
+        <?php else: // senão existir artigo, tenta pegar um segundo destaque do bloco "dicas" pra preencher o espaço ?>
           <?php if(isset($displays['dicas'][1]) > 0): ?>
       <div class="span4 dica">
         <i class="sprite-aspa-esquerda"></i>
@@ -153,7 +153,7 @@
       
       <div class="span4">
         <?php
-          $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($forParents->getId(), "parceiros"); // Pega o bloco "parceiros" da seção para os pais
+          $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($forParents->getId(), "parceiros"); // Pega o bloco "parceiros" da seção "para os pais"
           if ($block)
             $displays["parceiros"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceiros"    
         ?>
@@ -168,7 +168,7 @@
         
         <?php
           $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
-          $allCategories = $sectionCategorias->subsections();
+          $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
         ?>        
         <?php if(isset($allCategories)): ?>
           <?php if(count($allCategories) > 0): ?>
