@@ -3,7 +3,7 @@
     <div class="span8">
     <h2><?php echo $campaign->getTitle(); ?></h2>
     <p><?php echo $campaign->getDescription(); ?></p>
-    <form class="form-horizontal" action="/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php">
+    <form class="form-horizontal" action="/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post">
       <div class="control-group span8">
         <label class="control-label sprite-ico-nome" for="nome"></label>
         <div class="controls">
@@ -79,7 +79,7 @@
       </div>
       <div class="control-group span11">
         <label class="radio">
-          <input type="radio" name="concorco" id="concorco" value="concorco" checked>
+          <input type="radio" name="concordo" id="concordo" value="concodco" checked>
           Declaro que li e estou de acordo com os <a href="#">Termos e Condições</a>.
         </label>
         <button type="submit" class="btn">enviar minha brincadeira</button>
