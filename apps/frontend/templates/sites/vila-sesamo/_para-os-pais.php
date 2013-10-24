@@ -167,8 +167,8 @@
         <?php endif; ?>
         
         <?php
-          $section = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
-          $allCategories = subsections();
+          $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
+          $allCategories = $sectionCategorias->subsections();
         ?>        
         <?php if(isset($allCategories)): ?>
           <?php if(count($allCategories) > 0): ?>
