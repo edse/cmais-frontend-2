@@ -424,6 +424,7 @@
     ev.preventDefault();
     var i = /\d/.exec($(this).attr('rel'));
     $('#carrossel-interna-personagem').responsiveCarousel('goToSlide', i);
+    stop();
   });
   
   $(window).on('load', function (ev) {
