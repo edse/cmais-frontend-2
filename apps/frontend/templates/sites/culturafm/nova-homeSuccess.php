@@ -161,11 +161,8 @@
     <!--coluna meio-->
     <div class="grid4 marginLeft10">
       
-      <!--carrossel-->
-      <!--div id="myCarousel" class="carousel slide">
-        <!-- Carousel items -->
-        <!--div class="carousel-inner"-->
-        	<div class="container-destaque" style="margin-bottom: 10px;">
+
+        	<div id="cfm-carrossel" class="container-destaque" style="margin-bottom: 10px;">
 				<?php if(isset($displays["destaque-carrossel"])): ?>
 					<?php foreach ($displays["destaque-carrossel"] as $k => $d): ?>          
 				      <!--item-->
@@ -182,11 +179,7 @@
 				    <?php endforeach; ?>
 			  	 <?php endif; ?>         
 		  	 </div>
-        <!--/div>
-        <!-- Carousel nav -->
-        <!--a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
-      </div>
+
       <!--carrossel-->
       
       <!--destaque programas-->
