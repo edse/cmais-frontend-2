@@ -293,7 +293,9 @@
       </div>
       <!--pagina-->
       
+      
       <!-- para os pais -->
+      <?php /*
       <div id="dicas-pais" class="pais">
         
         <span class="divisa"></span>
@@ -364,6 +366,11 @@
         
       </div>  
       <!-- /para os pais -->
+       */
+      ?>
+      
+      <?php include_partial_from_folder('sites/vila-sesamo', 'global/para-os-pais') ?>
+      
     </div>
     <!--destaques-->
     
