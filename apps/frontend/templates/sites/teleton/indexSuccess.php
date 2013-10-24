@@ -76,10 +76,11 @@ $(function(){ //onready
                 </div>
                 
                 <div class="texto">
-            <?php /*      
+               
             <?php if(isset($displays['destaque-principal'])): ?>
               <!-- DESTAQUE 2 COLUNAS -->
-              <div class="duas-colunas destaque grid2"> 
+              <div class="duas-colunas destaque grid2">
+                <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?> 
                 <!--<iframe width="640" height="360" src="http://www.youtube.com/embed/9hgSRNhKPlY?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>-->
                 <!--iframe width="640" height="360" src="http://www.youtube.com/embed/VVO6Mu6sFvQ?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe-->
                 <?php if($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "video"): ?>
@@ -90,41 +91,8 @@ $(function(){ //onready
               </div>
               <!-- /DESTAQUE 2 COLUNAS -->
           <?php endif; ?>
-          */ ?>
-          <?php if(isset($displays['destaque-principal'])): ?>
-              <!-- DESTAQUE 2 COLUNAS -->
-              <div class="duas-colunas destaque grid2"> 
-
-                  <?php if($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "image"): ?>
-                  <a class="" href="<?php echo $displays[0]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal'][0]->getTitle() ?>">
-                  <img src="<?php echo $displays['destaque-principal'][0]->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $displays['destaque-principal'][0]->Asset->getTitle() ?>" name="<?php echo $displays['destaque-principal'][0]->Asset->getTitle() ?>" />
-                  
-                  <?php elseif($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "content" || $displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "image-gallery"): ?>
-                    <?php $imgs = $displays['destaque-principal'][0]->Asset->retriveRelatedAssetsByAssetTypeId(2); ?>
-                    <?php if(count($imgs) > 0): ?>
-                      <img src="http://midia.cmais.com.br/assets/image/image-6/<?php echo $imgs[0]->AssetImage->getFile() ?>.jpg" alt="<?php echo $displays['destaque-principal'][0]->Asset->getTitle() ?>" name="<?php echo $displays['destaque-principal'][0]->Asset->getTitle() ?>" />
-                    <?php endif; ?>
-                  </a>
-                  <?php elseif($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "video"): ?>
-                    <iframe title="<?php echo $displays['destaque-principal'][0]->getTitle() ?>" width="640" height="384" src="http://www.youtube.com/embed/<?php echo $displays['destaque-principal'][0]->Asset->AssetVideo->getYoutubeId(); ?>?rel=0&wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
-                  <?php elseif($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "video-gallery"): ?>
-                    <object height="390" width="640" style="height:390px; width: 640px">
-                      <param name="movie" value="http://www.youtube.com/p/<?php echo $displays['destaque-principal'][0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" />
-                      <param name="allowFullScreen" value="true" />
-                      <param name="allowscriptaccess" value="always" />
-                      <param name="wmode" value="opaque">
-                      <embed allowfullscreen="true" allowscriptaccess="always" src="http://www.youtube.com/p/<?php echo $displays['destaque-principal'][0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" wmode="opaque" type="application/x-shockwave-flash" width="640" height="390"></embed>
-                    </object>
-                  <?php else: ?>
-                  <a class="" href="<?php echo $displays[0]->retriveUrl() ?>" title="<?php echo $displays['destaque-principal'][0]->getTitle() ?>">
-                  <img src="<?php echo $displays['destaque-principal'][0]->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $displays['destaque-principal'][0]->getTitle() ?>" name="<?php echo $displays['destaque-principal'][0]->getTitle() ?>" />
-                  <?php endif; ?>
-
-                <p class="titulos" style="margin-bottom:0px"><?php echo $displays['destaque-principal'][0]->getTitle() ?></p>
-                <p><?php echo $displays['destaque-principal'][0]->getDescription() ?></p>
-              </div>
-              <!-- /DESTAQUE 2 COLUNAS -->
-          <?php endif; ?>
+          
+          
                 </div>
                 
                 <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
