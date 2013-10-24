@@ -21,6 +21,9 @@ $(document).ready(function() {
         playing = res.target;
         console.log('playing:'+playing);
       }
+      if(res.data == 0){
+        $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
+      }
     });
   }
   
