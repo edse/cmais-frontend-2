@@ -156,7 +156,7 @@
         <h2><a href="#"><?php echo $dica->getTitle(); ?></a></h2>
         <p><?php echo $dica->getDescription(); ?></p>
         <i class="sprite-aspa-direita"></i>
-            <?php $download = $dica->Asset->retriveRelatedAssetsByRelationType("Download") ?>
+            <?php $download = $dica->retriveRelatedAssetsByRelationType("Download") ?>
             <?php if(count($download) > 0): ?>
               <?php if($download[0]->AssetType->getSlug() == "file"): ?>
         <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
