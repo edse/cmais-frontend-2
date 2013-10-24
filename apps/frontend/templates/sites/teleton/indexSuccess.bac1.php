@@ -1,28 +1,25 @@
-<!--link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" /-->
-<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script> 
 <script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
       
 <script>
-/*
- *old twitter monitor
-// Update Twitter Statuses
-function updateTweets(){
-  $.ajax({
-    url: "/ajax/tweetmonitor",
-    data: "monitor_id=5",
-    success: function(data) {
-      $('#twitter').html(data);
-    }
+
+  // Update Twitter Statuses
+  function updateTweets(){
+    $.ajax({
+      url: "/ajax/tweetmonitor",
+      data: "monitor_id=5",
+      success: function(data) {
+        $('#twitter').html(data);
+      }
+    });
+  }
+
+
+  $(function(){ //onready
+    updateTweets();
+    var t=setInterval("updateTweets()",60000);
   });
-}
-
-
-$(function(){ //onready
-  updateTweets();
-  var t=setInterval("updateTweets()",60000);
-});
-*/
 </script>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -36,11 +33,14 @@ $(function(){ //onready
       <div id="barra-site">
 
         <div class="topo-programa">
-          <!--
-          <h2><img src="http://cmais.com.br/portal/images/capaPrograma/teleton/logo.png" /></h2>-->
-            <a href="http://teleton.org.br/welcome.html" title="Teleton" target="_blank" class="numeros"></a>          
-          </div>     
-        
+          
+          <h2><img src="http://cmais.com.br/portal/images/capaPrograma/teleton/logo.png" /></h2>
+          <a href="http://teleton.org.br/welcome.html" title="Teleton" target="_blank" class="numeros"></a>          
+              
+        </div>
+
+       
+
       </div>
       <!-- /BARRA SITE -->
 
@@ -81,7 +81,7 @@ $(function(){ //onready
               <!-- DESTAQUE 2 COLUNAS -->
               <div class="duas-colunas destaque grid2"> 
                 <!--<iframe width="640" height="360" src="http://www.youtube.com/embed/9hgSRNhKPlY?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>-->
-                <iframe width="640" height="360" src="http://www.youtube.com/embed/VVO6Mu6sFvQ?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>
+                <!--<iframe width="640" height="360" src="http://www.youtube.com/embed/VVO6Mu6sFvQ?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>-->
                 <p class="titulos" style="margin-bottom:0px"><?php echo $displays['destaque-principal'][0]->getTitle() ?></p>
                 <p><?php echo $displays['destaque-principal'][0]->getDescription() ?></p>
               </div>
@@ -100,26 +100,17 @@ $(function(){ //onready
             <!-- DIREITA -->
             <div id="direita" class="grid1">
               <h3>Bastidores</h3> 
-                <?php
-                /*
-                <div id="canal" class="grid1">
+              <div id="canal" class="grid1">
                   <!-- BOX CANAL YOUTUBE -->
                   <script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/youtube.xml&up_channel=culturanoteleton&synd=open&w=300&h=390&title=&border=%23ffffff%7C3px%2C1px+solid+%23999999&output=js"></script>
                   <!-- /BOX CANAL YOUTUBE -->
-                </div>
-                 */
-                ?>  
-                <!-- BOX TWITTER -->
+                </div>  
+              <!-- BOX TWITTER -->
                 <div class="grid1">
-                  <?php
-                  /*
-                   * old twitter monitor
                   <a href="http://twitter.com/teletonoficial" class="twitter-follow-button" target="_blank">Siga @teletonoficial</a>
+                 
                   <div id="twitter"></div>
-                  */
-                  ?>
-                  <a class="twitter-timeline" href="https://twitter.com/search?q=%23TeletonBrasil2013+%23FamiliaTeleton" data-widget-id="393407348665880576">Tweets about "#TeletonBrasil2013 #FamiliaTeleton"</a>
-                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                  
                 </div>
               <!-- /BOX TWITTER -->              
             </div>

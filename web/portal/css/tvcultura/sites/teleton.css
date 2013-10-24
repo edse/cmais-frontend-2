@@ -1,4 +1,50 @@
-/* TELETON*/
+/* TELETON 2013 */
+body { background:#00a0b2 url(/portal/images/capaPrograma/teleton/_2013/fundo.jpg) no-repeat center 69px;}
+#conteudo-pagina {  width:970px;   margin-left:20px;  margin-top:20px;  }
+.comentario-fb { max-height:864px; overflow-x:hidden;} 
+#capa-site{width:981px}
+#rodape-portal {margin-top:-25px;}
+h2 a {text-indent:-9999px;  height: 176px; width: 322px; display: block;}
+#barra-site {margin-top:0; height:186px;}
+#barra-site .redes,
+.box-publicidade,
+.facebook,
+#chamada,
+#menuFloat {display:none !important; }
+.box-interna h3 {color:#a4002f;}
+.assinatura {margin-top:0;}
+.assinatura .sup {height:1px; padding-bottom:0; border-color: #a4002f;}
+.box-interna .cp-sembg {top:0; }
+.cp-sembg .compartilhar {border-color:#a4002f;}
+.assinatura .print {/*display:none*/}
+
+.box-interna .texto {margin:20px 0 0 0;  float:left;}
+#direita h3 { color:#a4002f; margin-bottom: 20px; text-align: left;}
+.carrossel-videos {margin-bottom:20px;}
+.carrossel-videos .conteudo {height:206px; overflow:hidden; margin-bottom:0;}
+
+#live {margin-top:20px; float:left;}
+
+#canal {margin-bottom:20px;}
+#canal table.gadget {background:#fff; border:none; padding:0; margin:0;}
+#canal iframe html #vs { background:#fff !important; border:none;}
+.container {*height:470px; *overflow:hidden;}
+.orbit-bullets {*height:70px; *overflow: hidden;}
+
+.box-topo {display:none;}
+
+#barra-site h2 a {color:#000;}
+#twitter { margin-bottom:50px; }
+.topo-programa h2 { margin-top:20px; }
+.numeros { display: block;    float: right;    height: 166px;    overflow: hidden;    width: 555px;  }
+#miolo {margin: 133px 0 50px 2px;z-index: 20000;background: #fff;width: 974px;border-left: 2px solid #8ca223;border-right: 3px solid #8ca223;border-bottom: 3px solid #8ca223; border-bottom-left-radius: 3px;border-bottom-right-radius: 3px;}
+#barra-site { background: url(/portal/images/capaPrograma/teleton/textura.png) no-repeat;}
+.gplus { margin:6px 0 0 5px; float:left; }
+.box-compartilhar .btn-compartilhar { width: 200px; }
+#twitter-widget-1{min-width: 149px!important;max-width: 282px!important;float: left;}
+/* TELETON 2013 */
+
+/* TELE TON 2012
 body { background:#acd134 url(/portal/images/capaPrograma/teleton/fundo.jpg) repeat-x center 0;}
 #conteudo-pagina {  width:970px;   margin-left:20px;  margin-top:20px;  }
 .comentario-fb { max-height:864px; overflow-x:hidden;} 
@@ -17,8 +63,8 @@ h2 a {text-indent:-9999px;  height: 176px; width: 322px; display: block;}
 .box-interna .cp-sembg {top:0; }
 .cp-sembg .compartilhar {border-color:#a4002f;}
 .assinatura .print {/*display:none*/}
-
-.box-interna .texto {margin:20px 0 0 0; float:left;}
+/*
+.box-interna .texto {margin:20px 0 0 0;  float:left;}
 #direita h3 { color:#a4002f; margin-bottom: 20px; text-align: left;}
 .carrossel-videos {margin-bottom:20px;}
 .carrossel-videos .conteudo {height:206px; overflow:hidden; margin-bottom:0;}
@@ -41,5 +87,6 @@ h2 a {text-indent:-9999px;  height: 176px; width: 322px; display: block;}
 #barra-site { background: url(/portal/images/capaPrograma/teleton/textura.png) no-repeat;}
 .gplus { margin:6px 0 0 5px; float:left; }
 .box-compartilhar .btn-compartilhar { width: 200px; }
-/* /TELETON */
+
+/* /TELE TON 2012 */
 
