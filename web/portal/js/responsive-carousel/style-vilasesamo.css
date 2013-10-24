@@ -113,11 +113,11 @@
 #carrossel-interna-personagem .slider .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:25px;}
 #carrossel-interna-personagem .slider .descritivo p{font-size:16px;}
 #carrossel-interna-personagem .slider .inner {padding: 10px;margin: 0 5px;border: 1px solid #333;height: 100%;background-color: #CCC;}
-#carrossel-interna-personagem .container-itens{position:absolute; width:420px; height:30px; top: 445px;}
+#carrossel-interna-personagem .container-itens{position:absolute; width:420px; height:30px; top: 453px;}
 
 /* selector styling */
 #selector-interna-personagem{margin:0px auto; padding: 10px auto!important;}
-#selector-interna-personagem a {display: block;height: 16px;width:16px;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;border: none;background-color: #fcbb00;}
+#selector-interna-personagem a {display: block;height: 16px;width:16px;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;border:2px solid #FFFFFF;background-color: #fcbb00;}
 #selector-interna-personagem a.current {background-color: #fdff33; border: 2px solid #fcbb00;}
 #selector-interna-personagem ul {margin:0;padding:10px auto;list-style-type: none;}
 #selector-interna-personagem li {display: inline-block; margin-right: 10px; margin-top:10px;}

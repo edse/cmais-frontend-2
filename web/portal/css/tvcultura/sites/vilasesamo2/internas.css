@@ -263,6 +263,7 @@ body.personagens { background:#b60401; }
 .personagens .filtro .span12{border:none;}
 .personagens .todos-itens li{clear:both; background:#d71c0d;}
 .personagens #content h1{background: #d71c0d;border-color: #c31408;padding: 10px 30px 10px 30px;}
+.personagens .filtro .divisa.personagem{background: #d71c0d;clear:both;} 
 .personagens .dest-pers{margin:0px;background-color: #d71c0d;}
 .personagens .dest-pers .span8{margin: 0px 10px 20px 0px!important;}
 .personagens .dest-pers a{padding:0; border-top:2px solid #0191fb; border-bottom:2px solid #0191fb;}
