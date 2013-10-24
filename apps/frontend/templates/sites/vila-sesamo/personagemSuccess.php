@@ -421,9 +421,10 @@
   //});
   
   $('#selector-interna-personagem a').on('click', function (ev) {
-    $('#carrossel-interna-personagem').stopPropagation();
+    
     var i = /\d/.exec($(this).attr('rel'));
     $('#carrossel-interna-personagem').responsiveCarousel('goToSlide', i);
+    $('#carrossel-interna-personagem').stopSlideShow();
   });
   
   $(window).on('load', function (ev) {
