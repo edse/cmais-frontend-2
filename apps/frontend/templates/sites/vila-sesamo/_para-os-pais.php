@@ -8,6 +8,7 @@
     }
     
     if(isset($specialCategory)) {
+      echo "1";
       $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($specialCategory->getId(), "dicas"); // Pega o bloco "dicas" da seção filha
       if ($block) $displays["dicas"] = $block->retriveDisplays(); // Pega os destaques do bloco "dicas"
       // falta pegar o artigo nessa condição
