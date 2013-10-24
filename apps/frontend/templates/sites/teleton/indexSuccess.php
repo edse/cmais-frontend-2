@@ -80,7 +80,7 @@ $(function(){ //onready
             <?php if(isset($displays['destaque-principal'])): ?>
               <!-- DESTAQUE 2 COLUNAS -->
               <div class="duas-colunas destaque grid2">
-                <?php echo html_entity_decode($displays['destaque-principal'][0]->AssetContent->render()) ?> 
+                <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?> 
                 <!--<iframe width="640" height="360" src="http://www.youtube.com/embed/9hgSRNhKPlY?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>-->
                 <!--iframe width="640" height="360" src="http://www.youtube.com/embed/VVO6Mu6sFvQ?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe-->
                 <?php if($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "video"): ?>
