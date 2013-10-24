@@ -300,10 +300,8 @@
 $('.c-radio .chapeu').remove();
 $('.c-radio').find('.titulos').remove();
 $('search_field').focus(function(){
+  alert('oi');
   $(this).val('');
-});
-$('search_field').focusout(function(){
-  $(this).val('busca');
 });
 
 $//('.c-radio').append('<div class="seta2" style="top: 14px;left: 10px;"></div>')

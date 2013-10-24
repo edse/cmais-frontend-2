@@ -149,7 +149,7 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #content-holder .jp-audio{margin-top: -20px;}
 #content-holder div.jp-interface{background:none; border:none;}
 #content-holder .playlist div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #000;}
-#content-holder .playlist div.jp-playlist ul {background: #dae6f4;padding: 10px 20px 20px;text-align: left;height: 57px;overflow:auto; border:none;}
+#content-holder .playlist div.jp-playlist ul {background: #dae6f4;padding: 10px 20px 20px;text-align: left;height: 77px;overflow:auto; border:none;}
 #content-holder .playlist div.jp-playlist::-webkit-scrollbar {height: 12px;width: 12px;background: -webkit-gradient(linear, 0% 50%, 0% 50%, from(#e4e4e4), to(white));}
 #content-holder .playlist div.jp-playlist::-webkit-scrollbar-thumb {background: #dae6f4;-webkit-border-radius: 1ex;}
 #content-holder .playlist div.jp-playlist::-webkit-scrollbar-corner {background: #fff;}
