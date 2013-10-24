@@ -108,6 +108,38 @@
                     </div>
                   </li>
                   <!--/item-->
+                  
+                  <!--item-->
+                  <li>
+                    <div class="pull-left videoorimage">
+                      <iframe width="351" height="263" src="//www.youtube.com/embed/65O-ZV0ge9s?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </li>
+                  <!--/item-->
+                  
+                  <!--item-->
+                  <li>
+                    <div class="pull-left videoorimage">
+                      <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
+                    </div>
+                  </li>
+                  <!--/item-->
+                  
+                  <!--item-->
+                  <li>
+                    <div class="pull-left videoorimage">
+                      <iframe width="351" height="263" src="//www.youtube.com/embed/65O-ZV0ge9s?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </li>
+                  <!--/item-->
+                  
+                  <!--item-->
+                  <li>
+                    <div class="pull-left videoorimage">
+                      <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
+                    </div>
+                  </li>
+                  <!--/item-->
                 </ul>
                 <!--slider-mask-->
                 <div class="clearit"></div>
