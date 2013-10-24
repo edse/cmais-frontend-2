@@ -17,8 +17,12 @@ $(document).ready(function() {
     //console.log("player:"+player[cont]);
     player[cont].addEventListener("onStateChange", function(res){
       if(res.data == 1){
+        $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow');
         playing = res.target;
         console.log('playing:'+playing);
+      }
+      if(res.data == 0){
+        $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
       }
     });
   }
