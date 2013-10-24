@@ -35,11 +35,6 @@ $(document).ready(function() {
       onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
     }
   });
-  
-  $('.container-itens a').click(function(){
-    if(!$(this).hasClass('current')){
-      playing.pauseVideo();
-    }    
-  });
+
   
 });
