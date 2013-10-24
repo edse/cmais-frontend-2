@@ -17,12 +17,9 @@ $(document).ready(function() {
   
   $('.container-itens a').click(function(){
     if($(this).hasClass('current')){
-      console.log('temho');
-    }else{
-      console.log('nao tenho');
-    }
-    //if(playing)
-      //playing.pauseVideo(); 
+      if(playing)
+        playing.pauseVideo();
+    }    
   });
   if(playing)
       playing.pauseVideo(); 
