@@ -169,13 +169,15 @@
 				<?php if(isset($displays["destaque-carrossel"])): ?>
 					<?php foreach ($displays["destaque-carrossel"] as $k => $d): ?>          
 				      <!--item-->
-				      <div class="<?php if($k == 0): ?>active<?php endif; ?> item">
+				      <!--div class="<?php if($k == 0): ?>active<?php endif; ?> item"-->
+				      	
 				      	<h2><?php echo $d->getTitle() ?></h2>
 				        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
 				          <img width="424" src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>">
 				          <p> <?php echo $d->getDescription() ?></p>
 				        </a>
-				      </div>
+				      
+				      <!--/div-->
 				      <!--/item-->
 				    <?php endforeach; ?>
 			  	 <?php endif; ?>         
