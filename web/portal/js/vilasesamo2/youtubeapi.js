@@ -16,11 +16,7 @@ $(document).ready(function() {
   });
   
   $('.videoorimage a').click(function(){
-    if($(this).hasClass('current')){
       console.log('temho');
-    }else{
-      console.log('nao tenho');
-    }
     //if(playing)
       //playing.pauseVideo(); 
   });
