@@ -413,7 +413,7 @@
           $('#selector-interna-personagem li a').removeClass('current');
           $current.addClass('current');
       },
-      slideSpeed: 4000
+      slideSpeed: 8000
   });
   $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
   //$('.arrow, #selector-interna-personagem a').click(function(){
@@ -434,11 +434,11 @@
   });
   
   slideShow = function(ev){
-    //ev.preventDefault();
+    ev.preventDefault();
     $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
   };
   stop = function(ev){
-    //ev.preventDefault();
+    ev.preventDefault();
     $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow');
   };
   </script>
