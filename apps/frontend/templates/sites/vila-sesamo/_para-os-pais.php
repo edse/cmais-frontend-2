@@ -9,10 +9,7 @@
     
     if(isset($specialCategory)) {
       $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($specialCategory->getId(), "dicas"); // Pega o bloco "dicas" da seção filha
-      if ($block) {
-        echo "bloco";
-        $displays["dicas"] = $block->retriveDisplays(); // Pega os destaques do bloco "dicas"
-      }
+      if ($block) $displays["dicas"] = $block->retriveDisplays(); // Pega os destaques do bloco "dicas"
       // falta pegar o artigo nessa condição
     }
     else {
@@ -78,7 +75,6 @@
         
         <?php else: ?>
           <?php if(count($displays['dicas']) > 0): ?>
-            <?php echo "destaques" ?>
       <div class="span4 dica">
         <i class="sprite-aspa-esquerda"></i>
         <h2><a href="#"><?php echo $displays['dicas'][0]->getTitle(); ?></a></h2>
