@@ -57,7 +57,7 @@ $(function(){ //onready
 
               <!-- NOTICIA INTERNA -->
               <div class="box-interna grid2">
-                <h3><?php echo $displays['destaque-principal'][0]->getTitle() ?></h3>
+                <h3><?php echo $displays['destaque-principal'][0]->getTitle() ?> teste</h3>
                 <div class="assinatura grid2">
                   <p class="sup"></p>
                   <div class="box-compartilhar cp-sembg grid2">                  
