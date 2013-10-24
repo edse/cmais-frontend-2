@@ -1,7 +1,8 @@
   <?php if($campaign): ?>
     <?php
-      $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($campaign->getId(), "destaque-promocional");
-      $displays["destaque-promocional"] = $block->retriveDisplays();
+      $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($campaign->getId(), "destaque-promoco");
+      if($block)
+        $displays["destaque-promocional"] = $block->retriveDisplays();
     ?>
   <section class="form row-fluid">
     <div class="span8">
