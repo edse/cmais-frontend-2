@@ -63,10 +63,10 @@
         <h2><a href="#"><?php echo $d->getTitle(); ?></a></h2>
         <p><?php echo $d->getDescription(); ?></p>
         <i class="sprite-aspa-direita"></i>
-              <?php $related = $d->Asset->retriveRelatedAssetsByRelationType("Download") ?>
-              <?php if(count($related) > 0): ?>
-                <?php if($related[0]->AssetType->getSlug() == "file"): ?>
-        <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $related[0]->AssetFile->getFile() ?>" title="Baixar">baixar</button>
+              <?php $download = $d->Asset->retriveRelatedAssetsByRelationType("Download") ?>
+              <?php if(count($download) > 0): ?>
+                <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+        <a href="http://cmais.com.br/actions/vilasesamo/download.php?file=<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar">baixar</button>
                 <?php endif; ?>
               <?php endif; ?>
       </div>
@@ -83,7 +83,7 @@
             <?php $download = $displays['dicas'][0]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
             <?php if(count($download) > 0): ?>
               <?php if($download[0]->AssetType->getSlug() == "file"): ?>
-        <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar">baixar</button>
+        <a href="http://cmais.com.br/actions/vilasesamo/download.php?file=<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar">baixar</button>
               <?php endif; ?>
             <?php endif; ?>
       </div>
@@ -109,7 +109,7 @@
           <?php $download = $dica->Asset->retriveRelatedAssetsByRelationType("Download") ?>
           <?php if(count($download) > 0): ?>
             <?php if($download[0]->AssetType->getSlug() == "file"): ?>
-        <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar">baixar</button>
+        <a href="http://cmais.com.br/actions/vilasesamo/download.php?file=<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar">baixar</button>
             <?php endif; ?>
           <?php endif; ?>
       </div>
