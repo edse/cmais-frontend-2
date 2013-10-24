@@ -11,7 +11,7 @@ $(document).ready(function() {
       cont++;
       console.log(cont);
       $(this).attr("id","player"+cont);
-      //onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
+      onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
     }
   });
   
@@ -31,7 +31,7 @@ $(document).ready(function() {
     player[cont].addEventListener("onStateChange", function(res){
       if(res.data == 1){
         playing = res.target;
-        //console.log('playing:'+playing);
+        console.log('playing:'+playing);
       }
     });
   }
