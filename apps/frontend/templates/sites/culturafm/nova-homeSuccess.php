@@ -225,6 +225,7 @@
           <img src="/portal/images/capaPrograma/culturafm/novahome/envelope.jpg" alt="Newsletter">
           <p>Cadastre-se para receber e-mails com destaques da nossa programação</p>
           
+            
           <!--form send news-->
           <form id="form-email" action="" method="post">
             <label for="newsletter" id="lbl_news">Digite aqui seu e-mail</label>
@@ -328,7 +329,7 @@ var validator = $('#form-email').validate({
         });         
       },
       rules:{
-        newsletter:{
+        email_newsletter:{
           required:true,
           email: true
         }

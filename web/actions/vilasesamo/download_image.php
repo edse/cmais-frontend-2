@@ -5,7 +5,10 @@
     header("Content-type: image/jpg");
     readfile("{$file}");
   }
+  /*
   else {
     die("parameter 'file' needed!");
   }
+   * 
+   */
 ?>
