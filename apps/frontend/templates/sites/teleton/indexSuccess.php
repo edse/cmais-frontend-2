@@ -56,7 +56,7 @@ $(function(){ //onready
 
               <!-- NOTICIA INTERNA -->
               <div class="box-interna grid2">
-                <h3><?php echo $displays['destaque-principal'][0]->getTitle() ?> teste</h3>
+                <h3><?php echo $displays['destaque-principal'][0]->getTitle() ?></h3>
                 <div class="assinatura grid2">
                   <p class="sup"></p>
                   <div class="box-compartilhar cp-sembg grid2">                  
@@ -86,8 +86,8 @@ $(function(){ //onready
                 <?php if($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "video"): ?>
                     <iframe title="<?php echo $displays['destaque-principal'][0]->getTitle() ?>" width="640" height="384" src="http://www.youtube.com/embed/<?php echo $displays['destaque-principal'][0]->Asset->AssetVideo->getYoutubeId(); ?>?rel=0&wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
                 <?php endif; ?>    
-                <p class="titulos" style="margin-bottom:0px"><?php echo $displays['destaque-principal'][0]->getTitle() ?></p>
-                <p><?php echo $displays['destaque-principal'][0]->getDescription() ?></p>
+                <!--p class="titulos" style="margin-bottom:0px"><?php echo $displays['destaque-principal'][0]->getTitle() ?></p-->
+                <!--p><?php echo $displays['destaque-principal'][0]->getDescription() ?></p-->
               </div>
               <!-- /DESTAQUE 2 COLUNAS -->
           <?php endif; ?>
