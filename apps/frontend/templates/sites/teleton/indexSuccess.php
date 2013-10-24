@@ -81,7 +81,10 @@ $(function(){ //onready
               <!-- DESTAQUE 2 COLUNAS -->
               <div class="duas-colunas destaque grid2"> 
                 <!--<iframe width="640" height="360" src="http://www.youtube.com/embed/9hgSRNhKPlY?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>-->
-                <iframe width="640" height="360" src="http://www.youtube.com/embed/VVO6Mu6sFvQ?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe>
+                <!--iframe width="640" height="360" src="http://www.youtube.com/embed/VVO6Mu6sFvQ?rel=0&wmode=transparent#t=0m0s?version=3&amp;hl=en_US&amp;fs=1" frameborder="0" allowfullscreen></iframe-->
+                <?php if($displays['destaque-principal'][0]->Asset->AssetType->getSlug() == "video"): ?>
+                    <iframe title="<?php echo $displays['destaque-principal'][0]->getTitle() ?>" width="640" height="384" src="http://www.youtube.com/embed/<?php echo $displays['destaque-principal'][0]->Asset->AssetVideo->getYoutubeId(); ?>?rel=0&wmode=transparent#t=0m0s" frameborder="0" allowfullscreen></iframe>
+                <?php endif; ?>    
                 <p class="titulos" style="margin-bottom:0px"><?php echo $displays['destaque-principal'][0]->getTitle() ?></p>
                 <p><?php echo $displays['destaque-principal'][0]->getDescription() ?></p>
               </div>
