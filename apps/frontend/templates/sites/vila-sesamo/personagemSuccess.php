@@ -384,6 +384,9 @@
   <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
   <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/js/responsive-carousel/style-vilasesamo.css"/>
   
+  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/youtubeapi.js"></script> 
+  
   
   <script>
   //carrossel
@@ -428,11 +431,11 @@
   });
   
   slideShow = function(ev){
-    ev.preventDefault();
+    //ev.preventDefault();
     $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
   };
   stop = function(ev){
-    ev.preventDefault();
+    //ev.preventDefault();
     return false
   };
   </script>
