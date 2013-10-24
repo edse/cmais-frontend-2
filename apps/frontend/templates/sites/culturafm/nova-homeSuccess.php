@@ -165,7 +165,7 @@
       <!--div id="myCarousel" class="carousel slide">
         <!-- Carousel items -->
         <!--div class="carousel-inner"-->
-        	<div class="container-destaque">
+        	<div class="container-destaque" style="margin-bottom: 10px;">
 				<?php if(isset($displays["destaque-carrossel"])): ?>
 					<?php foreach ($displays["destaque-carrossel"] as $k => $d): ?>          
 				      <!--item-->
