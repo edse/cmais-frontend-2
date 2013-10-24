@@ -1,8 +1,4 @@
   <?php if($campaign): ?>
-    <?php
-      $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($campaign->getId(), "destaque-promocional");
-      $displays["destaque-promocional"] = $block->retriveDisplays();
-    ?>
   <section class="form row-fluid">
     <div class="span8">
     <h2><?php echo $campaign->getTitle(); ?></h2>
@@ -91,6 +87,10 @@
     </form>
     </div>
     <div class="span4">
+      <?php
+        $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($campaign->getId(), "destaque-principal");
+        if($block) $displays["destaque-promocional"] = $block->retriveDisplays();
+      ?>
       <?php if(isset($displays["destaque-promocional"])): ?>
         <?php if(count($displays["destaque-promocional"]) > 0): ?>
           <?php if($displays["destaque-promocional"][0]->Asset->AssetType->getSlug() == "video"): ?>
