@@ -28,6 +28,8 @@
       
     if(count($see_also_by_campaign) > 0) {
       $see_also = true;
+      die("1");
+      
     }
   }
   else { // senão, prioriza assets com a mesma tag, concatenando em seguida com assets da mesma categoria e por último com assets da mesma seção, juntando tudo isso em um só carrossel.
