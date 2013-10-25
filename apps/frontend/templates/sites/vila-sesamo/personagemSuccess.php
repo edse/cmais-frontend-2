@@ -133,7 +133,7 @@
               $assetPersonagens[] = $a->getSlug();
             }
             if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
-              $assetSection = $s;
+              $assetSection = $a;
               break;
             }
           }
