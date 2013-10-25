@@ -75,12 +75,13 @@
       ?>
       <?php if($seloImageUrl): ?>
         <p>
+          <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
+            <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
+          </a>
           <?php echo $asset->getDescription() ?>
           
         </p>
-        <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
-            <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
-          </a>
+        
       <?php endif; ?>
       
       <?php if(isset($asset)): ?>
