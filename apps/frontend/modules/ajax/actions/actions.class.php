@@ -2085,16 +2085,261 @@ EOT;
     die(json_encode($return));
   }
   
-  public function executeRadarbuscaartista(sfWebRequest $request){
+ public function executeRadarartista(sfWebRequest $request){
     $this->setLayout(false);
-	die("Artista");
+	if($request->getParameter('busca-input') != "") {
+		
+		function slugfy($string){
+			$array1 = array( "á", "à", "â", "ã", "ä", "é", "è", "ê", "ë", "í", "ì", "î", "ï", "ó", "ò", "ô", "õ", "ö", "ú", "ù", "û", "ü", "ç", "Á", "À", 
+			"Â", "Ã", "Ä", "É", "È", "Ê", "Ë", "Í", "Ì", "Î", "Ï", "Ó", "Ò", "Ô", "Õ", "Ö", "Ú", "Ù", "Û", "Ü", "Ç" ); 
+			$array2 = array( "a", "a", "a", "a", "a", "e", "e", "e", "e", "i", "i", "i", "i", "o", "o", "o", "o", "o", "u", "u", "u", "u", "c", "A", "A", 
+			"A", "A", "A", "E", "E", "E", "E", "I", "I", "I", "I", "O", "O", "O", "O", "O", "U", "U", "U", "U", "C" ); 
+			$string = str_replace($array1, $array2, $string); 
+		
+			$string = str_ireplace("'", "-", $string);
+			$string = str_ireplace("&", "e", $string);
+		
+			  $text = preg_replace('~[^\\pL\d]+~u', '-', $string);
+			  // trim
+			  $text = trim($text, '-');
+			  // transliterate
+			  if (function_exists('iconv')) $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+			  // lowercase
+			  $text = strtolower($text);
+			  // remove unwanted characters
+			  $text = preg_replace('~[^-\w]+~', '', $text);
+			  if (empty($text)) $text = 'n-a';
+			  
+			  $slug = $text;
+			  
+			  return str_replace("por-", "", str_replace(" ", "", $slug));
+		}
+		$busca_input = $request->getParameter('busca-input');
+	  
+	 	$assetsQuery = Doctrine_Query::create()
+	    ->select('DISTINCT description as description')
+	    ->from('Asset a')
+	    ->where('description LIKE ?', 'Por %'.$request->getParameter('busca-input').'%')
+	    ->andWhere('site_id = 189')
+	    ->orderBy('a.description');
+	  
+		$countQuery = Doctrine_Query::create()
+	    ->select('COUNT(DISTINCT description) as description')
+	    ->from('Asset a')
+	    ->where('description LIKE ?', 'Por %'.$request->getParameter('busca-input').'%')
+	    ->andWhere('site_id = 189')
+	    ->fetchArray();
+	
+	    $pagelimit = 20;
+			
+		if($request->getParameter('page') != "") $pagina_atual = $request->getParameter('page');
+			
+        $pager = new sfDoctrinePager('', $pagelimit);
+        $pager->setQuery($assetsQuery);
+        $pager->setPage($request->getParameter('page', $pagina_atual));
+        $pager->init();
+        $pager->setNbResults($countQuery[0]["description"]);
+        $pager->setLastPage(ceil($countQuery[0]["description"]/$pagelimit));
+        $page = $request->getParameter('page');
+		
+		if($request->getParameter('page') > 0) $page = $request->getParameter('page');
+		
+		$resultado = '<table class="table table-striped artista"> <tbody> <thead> <tr> <th>Artista / Intérprete</th> <th></th> </tr> </thead>';
+        if(count($pager) > 0){
+        	$counter = 0; 
+            foreach($pager->getResults() as $d){
+              //if($counter >= 25)
+                //break;
+              //$counter++;
+              $resultado .= '<tr>
+                	 <td><a href="/radarcultura/artistas/'.slugfy($d->getDescription()).'">'.str_ireplace("Por ", "", $d->getDescription()).'</a></td>
+              		 <td><a href="/radarcultura/artistas/'.slugfy($d->getDescription()).'" class="btn btn-mini btn-inverse pull-right" >
+                		<i class="icon-list icon-white"></i> listar musicas </a></td>
+             		</tr>';
+          	}
+          }
+              
+		 $resultado .= '</tbody> </table>';
+	
+		if(isset($pager)){
+		  	if($pager->haveToPaginate()){
+				$paginacao = ' 
+				    <div class="pagination pagination-centered">
+				      <ul>
+				        <li class=""><a href="javascript: goToPage('.$pager->getFirstPage().');" class="paginacao" title="Primeira"><i class="icon-fast-backward"></i></a></li>
+				        <li class=""><a href="javascript: goToPage('.$pager->getPreviousPage().');" class="paginacao"  title="Anterior"><i class="icon-backward"></i></a></li>
+				        ';
+		
+		        foreach ($pager->getLinks() as $page){
+		        	$paginacao .= '<li '; 
+		        					if ($page == $pager->getPage()) $paginacao .= 'class="active"';
+		        					$paginacao .= '><a href="javascript: goToPage('.$page.');">' .$page. '</a></li>';
+				}
+		        $paginacao .= '<li class=""><a href="javascript: goToPage('.$pager->getNextPage().');" class="paginacao" title="Próximo"><i class="icon-forward"></i></a></li>
+		        			   <li class=""><a href="javascript: goToPage('.$pager->getLastPage().');" class="paginacao" title="Última"><i class="icon-fast-forward"></i></a></li>
+				      </ul>
+				    </div>
+				  
+				  <form id="page_form" action="" method="GET">
+				      <input type="hidden" name="page" id="page" value="" />
+				      <input type="hidden" name="busca-input" id="busca-input" value="'.$busca_input.'" />
+				    </form>
+				  
+				  <script>
+					  function goToPage(i){
+					    $("#page").val(i);
+			 			$("#resultado_busca").html("");
+				 		$.ajax({
+				           type : "GET", 
+				           dataType: "jsonp",
+				           data: $("#page_form").serialize(),
+				           url: "http://app.cmais.com.br/index.php/ajax/radar-artista",
+				           success: function(json){
+				             	$("#qtd_result").text(json.qtd_result);
+				             	$("#resultado_busca").html(json.data);
+				             	$("#resultado_paginacao").html(json.paginacao);
+				          }
+				        });
+				      }	
+				  </script>';
+			}
+		}
+
+		$a["qtd_result"] = count($pager);
+	    $a["data"] = $resultado;
+		$a["paginacao"] = $paginacao;
+		
+	    $json = json_encode($a);
+	    $callback = $request->getParameter('callback');
+	    echo $callback.'('. $json . ');';
+	}
+
+	die();
   }    
   
-  public function executeRadarbuscamusica(sfWebRequest $request){
+  public function executeRadarmusica(sfWebRequest $request){
     $this->setLayout(false);
- 	die("Musica");
+	if($request->getParameter('busca-input') != "") {
+		$busca_input = $request->getParameter('busca-input');
+		
+      	$assetsQuery = Doctrine_Query::create()
+	        ->select('a.*')
+	        ->from('Asset a, SectionAsset sa')
+	        ->where('sa.section_id = ?', 1952)
+	        ->andWhere('sa.asset_id = a.id')
+	        ->andWhere('a.is_active = ?', 1)
+	        ->andWhere('title LIKE ?', '%'.$request->getParameter('busca-input').'%')
+			->orderBy('a.title asc');
 	
-  }
+		$countQuery = count($assetsQuery);
+		
+	    $pagelimit = 20;
+			
+		if($request->getParameter('page') != "") $pagina_atual = $request->getParameter('page');
+			
+        $pager = new sfDoctrinePager('', $pagelimit);
+        $pager->setQuery($assetsQuery);
+        $pager->setPage($request->getParameter('page', $pagina_atual));
+        $pager->init();
+       	$pager->setNbResults($countQuery);
+        $pager->setLastPage(ceil($countQuery/$pagelimit));
+        $page = $request->getParameter('page');
+		
+		if($request->getParameter('page') > 0) $page = $request->getParameter('page');
+		
+		
+		$resultado = '<input type="hidden" id="btn-pressed" value="" name="">
+					  <table class="table table-striped musica"> <tbody> <thead> <tr> <th>Música</th> <th>Intérprete</th> <th>Compositor</th> <th style="text-align: right;"></th> </tr> </thead>';
+		
+            if(count($pager) > 0):
+              foreach($pager->getResults() as $value=>$d):
+                $aux = explode(";", $d->AssetContent->getHeadlineShort());
+                 
+                 $resultado .= '<tr>
+                  <td class="music-'.$value.'">'.$d->getTitle().'</td>
+                  <td class="performer-'.$value.'">'. str_ireplace("Por ", "", $d->getDescription()).'</td>
+                  <td class="composer-'.$value.'">'. $aux[4] .'</td>
+                  <td class="play">
+                    <span id="indicada-'. $value.'" class="btn btn-mini btn-success indicada" disabled="disabled"  style="display:none;"><i class="icon-ok icon-white"></i> Música sugerida</span>
+                    <a href="http://radarcultura.cmais.com.br/musicas/'.$d->getSlug().'" class="btn btn-mini btn-inverse pull-right" style="margin-left: 5px;"><i class="icon-list icon-white"></i> ver detalhes </a>
+                    <a href="javascript:;" class="btn btn-mini btn-info pull-right socialBtn" id="socialBtn-'.$value.'" name="'.$value.'" rel="popover" data-content=\'<div class="btn-toolbar"><div class="btn-group">
+                    <a class="btn" href="https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer='.urlencode("http://radarcultura.cmais.com.br/musicas/".$d->getSlug()).'&source=tweetbutton&text='
+                    .urlencode("Minha indicação para o @radarcultura é: ".$d->getTitle()).'&url="http://radarcultura.cmais.com.br/musicas/'.$d->getSlug().'">Twitter</a>
+                    <a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-facebook">Facebook</a>
+                    <a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-google">Google+</a></div>
+                    <div class="btn-group"><a class="btn btn-email" href="#" onClick="goTop();" data-toggle="modal" data-target="#modal">Email</a></div></div>\' data-original-title="Selecione sua rede social...">
+                    <i class="icon-share-alt icon-white"></i> Sugira esta música</a>
+                    <input type="hidden" class="url-'.$value.'" value="http://radarcultura.cmais.com.br/musicas/' . $d->getSlug().' " />
+                  </td>
+                </tr>';
+              	endforeach; 
+             endif; 
+         
+         $resultado .= '</tbody> </table>
+         	<script>
+                 $(".socialBtn").popover({
+          			placement:"left"
+        		});
+			</script>		
+         ';
+
+		
+		if(isset($pager)){
+		  	if($pager->haveToPaginate()){
+				$paginacao = ' 
+				    <div class="pagination pagination-centered">
+				      <ul>
+				        <li class=""><a href="javascript: goToPage('.$pager->getFirstPage().');" class="paginacao" title="Primeira"><i class="icon-fast-backward"></i></a></li>
+				        <li class=""><a href="javascript: goToPage('.$pager->getPreviousPage().');" class="paginacao"  title="Anterior"><i class="icon-backward"></i></a></li>
+				        ';
+		
+		        foreach ($pager->getLinks() as $page){
+		        	$paginacao .= '<li '; 
+		        					if ($page == $pager->getPage()) $paginacao .= 'class="active"';
+		        					$paginacao .= '><a href="javascript: goToPage('.$page.');">' .$page. '</a></li>';
+				}
+		        $paginacao .= '<li class=""><a href="javascript: goToPage('.$pager->getNextPage().');" class="paginacao" title="Próximo"><i class="icon-forward"></i></a></li>
+		        			   <li class=""><a href="javascript: goToPage('.$pager->getLastPage().');" class="paginacao" title="Última"><i class="icon-fast-forward"></i></a></li>
+				      </ul>
+				    </div>
+				  
+				  <form id="page_form" action="" method="GET">
+				      <input type="hidden" name="page" id="page" value="" />
+				      <input type="hidden" name="busca-input" id="busca-input" value="'.$busca_input.'" />
+				    </form>
+				  
+				  <script>
+					  function goToPage(i){
+					    $("#page").val(i);
+			 			$("#resultado_busca").html("");
+						$(".popover").hide();
+				 		$.ajax({
+				           type : "GET", 
+				           dataType: "jsonp",
+				           data: $("#page_form").serialize(),
+				           url: "http://app.cmais.com.br/index.php/ajax/radar-musica",
+				           success: function(json){
+				             	$("#qtd_result").text(json.qtd_result);
+				             	$("#resultado_busca").html(json.data);
+				             	$("#resultado_paginacao").html(json.paginacao);
+				          }
+				        });
+				      }	
+				  </script>';
+			}
+		}
+
+		$a["qtd_result"] = count($pager);
+	    $a["data"] = $resultado;
+		$a["paginacao"] = $paginacao;
+		
+	    $json = json_encode($a);
+	    $callback = $request->getParameter('callback');
+	    echo $callback.'('. $json . ');';
+	}		
+		
+	die();	
+  }  
 
   
 }
