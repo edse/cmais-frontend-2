@@ -129,18 +129,19 @@
                           }
                         }
                       ?>
+
+                      
                       <li class="<?php echo $assetSection->getSlug(); ?>">
-                        <div>
-                          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                           <?php if($d->AssetType->getSlug() == "video"): ?>
                             <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                           <?php else: ?>
                             <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
                             <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
                           <?php endif; ?>
-                          </a>
-                        </div>
-                        <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i><?php echo $d->getTitle() ?></a>
+                          <i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i>
+                          <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/><?php echo $d->getTitle() ?></div>
+                        </a>
                       </li>
                     <?php endforeach; ?>
                   <?php endif; ?>
