@@ -29,7 +29,7 @@
         <div class="control-group idade span2">
           <label class="control-label sprite-ico-idade" for="idade"></label>
           <div class="controls">
-            <input type="text" id="idade" placeholder="Idade" name="idade">
+            <input type="text" id="idade" placeholder="Idade" name="idade" maxlength="2">
           </div>
         </div>
         <!--/Idade-->
@@ -173,7 +173,8 @@
           minlength: 2
         },
         idade:{
-          required: true
+          required: true,
+          number: true
         },
         email:{
           required: true,
