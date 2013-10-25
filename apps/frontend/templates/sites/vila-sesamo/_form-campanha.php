@@ -15,7 +15,7 @@
       
       <!--form-->    
       <form class="form-horizontal" id="form" action="/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post">
-        
+        <input type="hidden" id="campanha" name="campanha" value="<?php echo $campaign->getTitle() ?>" />
         <!--Nome-->
         <div class="control-group span8">
           <label class="control-label sprite-ico-nome" for="nome"></label>
@@ -120,7 +120,7 @@
         <!--concorda-->
         <div class="control-group span11">
           <label class="radio">
-            <input type="radio" name="concordo" id="concordo" value="concodco" checked>
+            <input type="radio" name="concordo" id="concordo" value="concordo" checked>
             Declaro que li e estou de acordo com os Termos e Condições acima.
           </label>
           <button type="submit" class="btn">enviar minha brincadeira</button>
