@@ -147,12 +147,14 @@ cultura = {
         $(this).next().slideDown("fast");
         $(this).next().css("z-index","2000");
         // Adiciona classe "ativo" no <li> clicado
-        $(this).parent().addClass('ativo');
-        if (!$(this).parent().is(':nth-child(4)'))
-        {
-          $(this).next().find('.abas-conteudo .filho').css('display','none');
-          $(this).next().find('.abas-menu li:nth-child(2)').addClass('ativo');
-          $(this).next().find('.abas-conteudo li:first').addClass('ativo').css('display','block');
+        if(!$(this).hasClass('m_radio_am')){
+          $(this).parent().addClass('ativo');
+          if (!$(this).parent().is(':nth-child(4)'))
+          {
+            $(this).next().find('.abas-conteudo .filho').css('display','none');
+            $(this).next().find('.abas-menu li:nth-child(2)').addClass('ativo');
+            $(this).next().find('.abas-conteudo li:first').addClass('ativo').css('display','block');
+          }
         }
       }
       
@@ -266,10 +268,12 @@ $(function(){ //onready
   $('.m_tv_tvcultura').click(function(){
     if(m_tv_tvcultura == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=tvcultura",
-        success: function(data) {
-          m_tv_tvcultura = data;
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_tv_tvcultura = data.data;
           $('#tvcultura').html(m_tv_tvcultura);
           $('#tvcultura').show();
         }
@@ -281,10 +285,12 @@ $(function(){ //onready
   $('.m_tv_univesptv').click(function(){
     if(m_tv_univesptv == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=univesptv",
-        success: function(data) {
-          m_tv_univesptv = data;
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_tv_univesptv = data.data;
           $('#univesptv').html(m_tv_univesptv);
           $('#univesptv').show();
         }
@@ -296,10 +302,12 @@ $(function(){ //onready
   $('.m_tv_multicultura').click(function(){
     if(m_tv_multicultura == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=multicultura",
-        success: function(data) {
-          m_tv_multicultura = data
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_tv_multicultura = data.data;
           $('#multicultura').html(m_tv_multicultura);
           $('#multicultura').show();
         }
@@ -311,26 +319,30 @@ $(function(){ //onready
   $('.m_tv_tvrtb').click(function(){
     if(m_tv_tvrtb == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=tvrtb",
-        success: function(data) {
-          m_tv_tvrtb = data
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_tv_tvrtb = data.data;
           $('#tvrtb').html(m_tv_tvrtb);
           $('#tvrtb').show();
         }
       });
     }
-    $('#tvrtb').html(m_tv_tvrtb);
+    $('#tvrtb').html(m_tv_tvcultura);
     $('#tvrtb').show();
   });
-  
+  /*
   $('.m_radio_am').click(function(){
     if(m_radio_am == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=radioam",
-        success: function(data) {
-          m_radio_am = data
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_radio_am = data.data;
           $('#radio-cb').html(m_radio_am);
           $('#radio-cb').show();
         }
@@ -342,10 +354,12 @@ $(function(){ //onready
   $('.m_radio_fm').click(function(){
     if(m_radio_fm == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=radiofm",
-        success: function(data) {
-          m_radio_fm = data
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_radio_fm = data.data;
           $('#radio-fm').html(m_radio_fm);
           $('#radio-fm').show();
         }
@@ -354,14 +368,16 @@ $(function(){ //onready
     $('#radio-fm').html(m_radio_fm);
     $('#radio-fm').show();
   });
-  
+  */
   $('.m_ar_tvcultura').click(function(){
     if(m_ar_tvcultura == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=no-ar-tvcultura",
-        success: function(data) {
-          m_ar_tvcultura = data
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_ar_tvcultura = data.data;
           $('#ar-tvcultura').html(m_ar_tvcultura);
           $('#ar-tvcultura').show();
         }
@@ -373,10 +389,12 @@ $(function(){ //onready
   $('.m_ar_univesptv').click(function(){
     if(m_ar_univesptv == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=no-ar-univesptv",
-        success: function(data) {
-          m_ar_univesptv = data
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_ar_univesptv = data.data;
           $('#ar-univesptv').html(m_ar_univesptv);
           $('#ar-univesptv').show();
         }
@@ -388,10 +406,12 @@ $(function(){ //onready
   $('.m_ar_multicultura').click(function(){
     if(m_ar_multicultura == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=no-ar-multicultura",
-        success: function(data) {
-          m_ar_multicultura = data
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_ar_multicultura = data.data;
           $('#ar-multicultura').html(m_ar_multicultura);
           $('#ar-multicultura').show();
         }
@@ -403,10 +423,12 @@ $(function(){ //onready
   $('.m_ar_tvrtb').click(function(){
     if(m_ar_tvrtb == ""){
       $.ajax({
-        url: "/index.php/ajax/menuTv",
+        type : "GET",
+        dataType : "jsonp",
         data: "content=no-ar-tvrtb",
-        success: function(data) {
-          m_ar_tvrtb = data
+        url: "http://app.cmais.com.br/index.php/ajax/menuTv",
+        success: function(data){
+          m_ar_tvrtb = data.data;
           $('#ar-tvrtb').html(m_ar_tvrtb);
           $('#ar-tvrtb').show();
         }
@@ -420,35 +442,82 @@ $(function(){ //onready
 
 $.fn.clearForm = function() {
   return this.each(function() {
-    var type = this.type, tag = this.tagName.toLowerCase();
-    if (tag == 'form')
-      return $(':input',this).clearForm();
-    if (type == 'text' || type == 'password' || tag == 'textarea')
-      this.value = '';
-    else if (type == 'checkbox' || type == 'radio')
-      this.checked = false;
-    else if (tag == 'select')
-      this.selectedIndex = -1;
+  	var type = this.type, tag = this.tagName.toLowerCase();
+  	if (tag == 'form')
+  	  return $(':input',this).clearForm();
+  	if (type == 'text' || type == 'password' || tag == 'textarea')
+  	  this.value = '';
+  	else if (type == 'checkbox' || type == 'radio')
+  	  this.checked = false;
+  	else if (tag == 'select')
+  	  this.selectedIndex = -1;
   });
 };
-/*
- * esta parte agora esta sendo puxada pelo script.js 
- 
-var request_header = jQuery.ajax({ 
-  dataType: 'html',
-  success: function(data) {
-    if (data)
-      jQuery('body #capa-site').before(data);
-  },
-  url: '/vilasesamo/ajax/insert_header.php?randNum='+ new Date().getTime()
-});
 
-var request_footer = jQuery.ajax({
-  dataType: 'html',
-  success: function(data) {
-    if (data)
-      jQuery('body').append(data);
-  },
-  url: '/vilasesamo/ajax/insert_footer.php?randNum='+ new Date().getTime()
-});
-*/
+/* 
+ * Cookies Functionalities: Get, Set and Print Cookies
+ */
+function getCookie(w)
+{
+	cName = "";
+	pCOOKIES = new Array();
+	//document.cookie = unescape(document.cookie); 
+	pCOOKIES = document.cookie.split('; ');
+	for(bb = 0; bb < pCOOKIES.length; bb++)
+	{
+		NmeVal  = new Array();
+		NmeVal  = pCOOKIES[bb].split('=');
+		if(NmeVal[0] == w)
+		{
+			cName = unescape(NmeVal[1]);
+		}
+	}
+	return cName;
+}
+
+function printCookies(w)
+{
+	cStr = "";
+	pCOOKIES = new Array();
+	pCOOKIES = document.cookie.split('; ');
+	for(bb = 0; bb < pCOOKIES.length; bb++)
+	{
+		NmeVal  = new Array();
+		NmeVal  = pCOOKIES[bb].split('=');
+		if(NmeVal[0])
+		{
+			cStr += NmeVal[0] + '=' + unescape(NmeVal[1]) + '; ';
+		}
+	}
+	return cStr;
+}
+
+function setCookie (name,value,expires,path,domain,secure) {
+	var curCookie = name + "=" + escape (value) +
+    ((expires > 0) ? "; expires=" + setExpiration(expires) : "") +
+    ((path) ? "; path=" + path : "") +
+    ((domain) ? "; domain=" + domain : "") +
+    ((secure) ? "; secure" : "");
+  document.cookie = curCookie;
+}
+
+function setExpiration(cookieLife)
+{
+	if ('number' === typeof expires) {
+	  expires = new Date(new Date().getTime() + cookieLife * 24 * 60 * 60 * 1000);
+	}
+  return expires.toUTCString(); 
+}
+
+// get queryString parameters from URI
+function getParameterByName(name) {
+  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+  var regexS = "[\\?&]" + name + "=([^&#]*)";
+  var regex = new RegExp(regexS);
+  var results = regex.exec(window.location.search);
+  if(results == null)
+    return "";
+  else
+    return decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+

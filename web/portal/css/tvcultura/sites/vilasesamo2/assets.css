@@ -90,6 +90,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .pais .row-fluid .span4 {  *margin:2px !important;}
 #content .filtro h3 { *position:relative }
 .todos-assets { *position:absolute; *top:7px; *right:0 }
+.option-assets{width:100px; height:40px; display: block; background:red; float:right; font-size: 25px; color:#571ed9;}
 /* /assets */
 
 /* atividades*/

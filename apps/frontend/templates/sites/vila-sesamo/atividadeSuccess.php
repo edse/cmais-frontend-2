@@ -74,14 +74,14 @@
         }
       ?>
       <?php if($seloImageUrl): ?>
-      <div style="overflow: hidden; position:relative">  
+        
         <p>
-          <a style="position: absolute; bottom:0; right:0" href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
+          <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
             <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
           </a>
           <?php echo $asset->getDescription() ?>
         </p>
-      </div>
+        
       <?php endif; ?>
       
       <?php if(isset($asset)): ?>
@@ -89,10 +89,11 @@
         <?php $related = $asset->retriveRelatedAssetsByRelationType("Preview"); ?>
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
         <div>
-          <i class="sprite-icon-colorir-med"></i>
-          <a href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">Imprimir</a>
-          <i class="sprite-icon-colorir-med"></i>
-          <a href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">Baixar</a>
+          
+
+          <a class="option-assets" href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">Imprimir</a>
+
+          <a class="option-assets" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">Baixar</a>
         </div>
       </div>
       <?php endif; ?>
@@ -103,7 +104,7 @@
   </section>
   <!--/section -->
   
-  <?php //include_partial_from_folder('sites/vila-sesamo', 'global/brinque-tambem-com', array("site" => $site, "section" => $section, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
+  <?php include_partial_from_folder('sites/vila-sesamo', 'global/brinque-tambem-com', array("site" => $site, "section" => $section, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
   
   <?php //include_partial_from_folder('sites/vila-sesamo', 'global/form-campanha', array("site" => $site, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
 
