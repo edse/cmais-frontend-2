@@ -33,8 +33,9 @@
   else { // senão, prioriza assets com a mesma tag, concatenando em seguida com assets da mesma categoria e por último com assets da mesma seção, juntando tudo isso em um só carrossel.
     $tags = array();
     if(count($asset->getTags())>0){
-      foreach($asset->getTags() as $t)
+      foreach($asset->getTags() as $t) {
         $tags[] = $t;
+      }
     }
     if(count($tags) > 0) {
       $see_also_by_tags = Doctrine_Query::create()

@@ -879,7 +879,8 @@ class _sectionActions extends sfActions
                 ->from('Asset a, SectionAsset sa')
                 ->where('sa.section_id = ?', $this->section->id)
                 ->andWhere('sa.asset_id = a.id')
-                ->andWhere("(a.date_start IS NULL OR a.date_start <= CURRENT_TIMESTAMP)")
+                ->andWhere("a.date_start IS NULL OR a.date_start >= CURRENT_TIMESTAMP")
+				//->andWhere("a.date_end IS NULL OR a.date_end <= CURRENT_TIMESTAMP")
                 ->andWhere('a.is_active = ?', 1);
               if($request->getParameter('busca') != '')
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
@@ -1307,7 +1308,7 @@ class _sectionActions extends sfActions
       $sectionSlug = 'list';
     elseif(in_array($sectionSlug, array('sobre','entrevistadores','entrevistados')))
       $sectionSlug = 'asset';
-    elseif((in_array($sectionSlug, array('equipe','apresentadores','personagens'))) && ($this->site->slug != 'cocorico' && $this->site->slug != 'cocorico2')) 
+    elseif((in_array($sectionSlug, array('equipe','apresentadores','personagens'))) && ($this->site->slug != 'cocorico' && $this->site->slug != 'cocorico2') && ($this->site->slug != 'vila-sesamo' && $this->site->slug != 'vilasesamo')) 
       $sectionSlug = 'team';
     elseif(in_array($sectionSlug, array('fotos')))
       $sectionSlug = 'imagens';
