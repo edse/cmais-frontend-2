@@ -74,20 +74,13 @@
         }
       ?>
       <?php if($seloImageUrl): ?>
-        <div  id="pos-selo">
+        <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
+          <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
+        </a>
+        <p>
+          <?php echo $asset->getDescription() ?>
+        </p>
         
-          <p style="float: none;">
-            <?php echo $asset->getDescription() ?>
-          </p>
-          <a style="float: right; margin-top: 100px;" href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
-            <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
-          </a>
-          
-        </div>
-        <script>
-          $('#pos-selo').width() + "/" + $('pos-selo').height()
-          
-        </script>
       <?php endif; ?>
       
       <?php if(isset($asset)): ?>
