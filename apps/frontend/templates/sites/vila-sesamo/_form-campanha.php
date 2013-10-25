@@ -20,7 +20,7 @@
         <div class="control-group span8">
           <label class="control-label sprite-ico-nome" for="nome"></label>
           <div class="controls">
-            <input type="text" id="nome" placeholder="Nome" value="Nome" name="nome">
+            <input type="text" id="nome" placeholder="Nome" name="nome">
           </div>
         </div>
         <!--/Nome-->
@@ -29,7 +29,7 @@
         <div class="control-group idade span2">
           <label class="control-label sprite-ico-idade" for="idade"></label>
           <div class="controls">
-            <input type="text" id="idade" placeholder="Idade" value="Idade" name="idade">
+            <input type="text" id="idade" placeholder="Idade" name="idade">
           </div>
         </div>
         <!--/Idade-->
@@ -38,7 +38,7 @@
         <div class="control-group span8">
           <label class="control-label sprite-ico-cidade" for="cidade"></label>
           <div class="controls">
-            <input type="text" id="cidade" placeholder="Cidade" value="Cidade" name="cidade">
+            <input type="text" id="cidade" placeholder="Cidade" name="cidade">
           </div>
         </div>
         <!--/Cidade-->
@@ -84,7 +84,7 @@
         <div class="control-group span8">
           <label class="control-label sprite-ico-email" for="email"></label>
           <div class="controls">
-            <input type="text" id="email" placeholder="Email" value="Email" name="email">
+            <input type="text" id="email" placeholder="Email" name="email">
           </div>
         </div>
         <!--/Email-->
@@ -103,7 +103,7 @@
         <div class="control-group span12 msg">
           <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
           <div class="controls">
-            <textarea id="mensagem" placeholder="Mensagem" value="Mensagem" name="mensagem"></textarea>
+            <textarea id="mensagem" placeholder="Mensagem" name="mensagem"></textarea>
           </div>
         </div>
         <!--/Msg-->
