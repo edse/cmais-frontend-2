@@ -1,4 +1,5 @@
 <?php
+die("teste");
   /*
    * "BRINQUE TAMBÉM COM"
    * 
