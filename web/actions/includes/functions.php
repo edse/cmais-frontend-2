@@ -41,6 +41,7 @@ function sendMailAtt($to, $from, $sub, $msg, $attach=array())
 
 function getMimeType($file)
 {
+  die($file);
   $mime_types = array(
     "pdf"=>"application/pdf",
     "exe"=>"application/octet-stream",
