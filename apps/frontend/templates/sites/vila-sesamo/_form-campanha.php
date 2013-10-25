@@ -14,7 +14,7 @@
     <div class="span8">
       
       <!--form-->    
-      <form class="form-horizontal" id="form" action="/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post">
+      <form class="form-horizontal" id="form" action="/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="POST">
         <input type="hidden" id="campanha" name="campanha" value="<?php echo $campaign->getTitle() ?>" />
         <!--Nome-->
         <div class="control-group span8">
@@ -29,7 +29,7 @@
         <div class="control-group idade span2">
           <label class="control-label sprite-ico-idade" for="idade"></label>
           <div class="controls">
-            <input type="text" id="idade" placeholder="Idade" name="idade">
+            <input type="text" id="idade" placeholder="Idade" name="idade" maxlength="2">
           </div>
         </div>
         <!--/Idade-->
@@ -173,7 +173,8 @@
           minlength: 2
         },
         idade:{
-          required: true
+          required: true,
+          number: true
         },
         email:{
           required: true,
