@@ -17,7 +17,7 @@
       ->where('a.site_id = ?', $site->getId())
       ->andWhere('sa.asset_id = a.id')
       ->andWhere('sa.section_id = ?', $campaign->getId())
-      ->andWhereIn('sa.section_id', array(2387,2388,2389))
+      //->andWhereIn('sa.section_id', array(2387,2388,2389))
       ->andWhere('a.asset_type_id = ?', 1)
       ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
       ->andWhere('a.id != ?', $asset->getId())
@@ -28,7 +28,6 @@
       
     if(count($see_also_by_campaign) > 0) {
       $see_also = true;
-      die("1");
       
     }
   }
