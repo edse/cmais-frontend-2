@@ -259,8 +259,7 @@ if ($episode) {
 									<?php if ($episode):
 									?>
 									<p class="dataPost">
-										Programa exibido em <?php echo format_date($episode->AssetEpisode->getDateRelease(),'D')
-										?>
+										<!-- Programa exibido em <?php echo format_date($episode->AssetEpisode->getDateRelease(),'D')?> -->
 									</p>
 									<?php else:?>
 									<p class="dataPost">
