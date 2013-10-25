@@ -126,10 +126,13 @@
                       ?>
                 <li class="<?php echo $assetSection->getSlug(); ?>">
                   <div>
-                    <!--a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel"-->
-                    <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
                     <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                    <?php if($d->AssetType->getSlug() == "video"): ?>
+                      <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
+                    <?php else: ?>
+                      <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
                       <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
+                    <?php endif; ?>
                     </a>
                   </div>
                   <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-ico-videos-p"></i><?php echo $d->getTitle() ?></a>
