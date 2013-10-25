@@ -26,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     //$file_mime_type = "image/jpg";
     $attach = array();
     $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);
-    
+    die($file_mime_type)
     if (!in_array($file_mime_type, array("image/gif", "image/png", "image/jpg"))) {
       //if (unlink($_FILES['datafile']['tmp_name'])) {
         //header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=2");
