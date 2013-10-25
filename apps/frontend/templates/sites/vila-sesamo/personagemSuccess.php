@@ -111,7 +111,7 @@
       <?php endif; ?>
       
       <div class="span12 mais-brincadeiras">
-        <p>Mais brincadeiras <?php if(in_array($section->getSlug(), array("Bel","Zoe"))): ?>da <?php else: ?>do <?php endif; ?><?php echo $section->getTitle() ?>:</p>
+        <p>Mais brincadeiras <?php if(in_array($section->getSlug(), array("bel","zoe"))): ?>da <?php else: ?>do <?php endif; ?><?php echo $section->getTitle() ?>:</p>
       </div>
       
     </div>
