@@ -208,7 +208,7 @@
 			<?php foreach ($displays["destaque-compositor-mes"] as $k => $d): ?>	
 		        <!--destaque small-->
 		        <div class="destaque-small compositor">
-		         <h2><?php echo $d->getTitle() ?><i class="seta2"></i></h2>
+		         <h2><?php echo $displays["destaque-compositor-mes"]->getTitle() ?><i class="seta2"></i></h2>
 		          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
 		            <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>">
 		            <p><?php echo $d->getTitle() ?> </p>
@@ -263,7 +263,7 @@
     
     <!--coluna esquerda-->
     <div id="mais-ouvidos" class="grid2">
-      <h2>Mais Ouvidos</h2>
+      <!--h2>Mais Ouvidos</h2-->
   
       <!--lista-->
       <ul class="mais-ouvidos">
@@ -275,7 +275,7 @@
 					<a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
 						<img src="http://midia.cmais.com.br/displays/<?php echo $d->getImage() ?>" alt="<?php echo $d->getTitle() ?>" width="50px" height="50px"/>
 						<p>
-						  <?php echo $d->getTitle() ?> <br />
+						  <?php echo $d->getTitle() ?>&nbsp;<br />
 						  <?php echo $d->getDescription() ?>
 					  </p>
 					</a>
