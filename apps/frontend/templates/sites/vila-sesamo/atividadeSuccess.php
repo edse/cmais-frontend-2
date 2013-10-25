@@ -74,14 +74,14 @@
         }
       ?>
       <?php if($seloImageUrl): ?>
-      <div>  
+      <div >  
         <p>
           
           <?php echo $asset->getDescription() ?>
-        </p>
-        <a href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
+          <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
             <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
-        </a>
+          </a>
+        </p>
       </div>
       <?php endif; ?>
       
