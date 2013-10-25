@@ -2152,8 +2152,8 @@ EOT;
                 //break;
               //$counter++;
               $resultado .= '<tr>
-                	 <td><a href="/radarcultura/artistas/'.slugfy($d->getDescription()).'">'.str_ireplace("Por ", "", $d->getDescription()).'</a></td>
-              		 <td><a href="/radarcultura/artistas/'.slugfy($d->getDescription()).'" class="btn btn-mini btn-inverse pull-right" >
+                	 <td><a href="http://radarcultura.cmais.com.br/'.slugfy($d->getDescription()).'">'.str_ireplace("Por ", "", $d->getDescription()).'</a></td>
+              		 <td><a href="http://radarcultura.cmais.com.br/'.slugfy($d->getDescription()).'" class="btn btn-mini btn-inverse pull-right" >
                 		<i class="icon-list icon-white"></i> listar musicas </a></td>
              		</tr>';
           	}
