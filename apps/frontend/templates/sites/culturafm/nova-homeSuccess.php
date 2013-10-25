@@ -303,7 +303,9 @@ $('#search_field').focus(function(){
   $(this).val('');
 });
 $('#search_field').focusout(function(){
-  $(this).val('busca');
+  if($(this).val() == ''){
+		$(this).val('BUSCA');  	
+  }
 });
 
 $//('.c-radio').append('<div class="seta2" style="top: 14px;left: 10px;"></div>')

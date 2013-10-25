@@ -68,7 +68,7 @@
       
       <?php if(isset($asset)): ?>
       <div class="asset">
-        <?php $related = $asset->retriveRelatedAssetsByRelationType("Download"); ?>
+        <?php $related = $asset->retriveRelatedAssetsByRelationType("Preview"); ?>
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
         <div>
           <a href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">Imprimir</a>
