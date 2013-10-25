@@ -140,7 +140,7 @@
         <div class="control-group span12 msg">
           <label class="control-label sprite-ico-mensagem" for="termos"></label>
           <div class="controls">
-            <textarea id="termos"><?php include_partial_from_folder('sites/vila-sesamo', 'global/termos') ?></textarea>
+            <textarea id="termos" readonly><?php include_partial_from_folder('sites/vila-sesamo', 'global/termos') ?></textarea>
           </div>
         </div>
         <!--/Termos e condições-->
