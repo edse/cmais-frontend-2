@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     //Enviar sem anexo
     //echo $_FILES['datafile']['size'];
-    
+    print_r($_FILES);
     if($_FILES['datafile']['size'] <= 0) {
       $headers =  'MIME-Version: 1.0' . "\r\n";
       $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
