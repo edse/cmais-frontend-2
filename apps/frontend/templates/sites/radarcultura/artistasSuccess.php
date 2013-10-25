@@ -108,14 +108,14 @@ function slugfy($string){
             
             <div class="span5 pull-right">
               <!--busca-->
-              <form action="" method="GET" id="busca-radar">
+              <form action="" method="post" id="busca-radar">
                 <div class="row-fluid">
                   <input class="btn pull-right btn-busca" type="submit" value="Busca">
                   <div class="input-prepend">
                    <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" value="<?php if(isset($busca_radar)) echo $busca_radar?>" /><span class="add-on pull-right"><i class="icon-search"></i></span>
                   </div>
                 </div>  
-                <!-- div class="row-fluid">
+                <div class="row-fluid">
                   <label class="radio inline" style="margin-left: 35px">
                     <input type="radio" name="busca-por" id="busca-por1" value="musicas" />
                     Por Título
@@ -124,7 +124,7 @@ function slugfy($string){
                     <input type="radio" name="busca-por" id="busca-por2" value="artistas" checked="checked" />
                     Por Artista
                   </label>
-                </div-->
+                </div>
               </form>
               <!--/busca--> 
             </div> 
@@ -161,9 +161,9 @@ function slugfy($string){
             <br/>
             
             <?php if(isset($letter)):?>
-              <small><strong id="qtd_result"><?php echo $pager->count()?></strong> ARTISTAS CADASTRADOS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
+              <small><strong><?php echo $pager->count()?></strong> ARTISTAS CADASTRADOS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
             <?php else:?>
-              <small><strong id="qtd_result"><?php echo $pager->count()?></strong> ARTISTAS CADASTRADOS</small>
+              <small><strong><?php echo $pager->count()?></strong> ARTISTAS CADASTRADOS</small>
             <?php endif; ?>
           
           </div>
@@ -172,7 +172,7 @@ function slugfy($string){
        </div>
        <!--letras-->
        <!--lista-->
-       <div class="row-fluid" id="resultado_busca">
+       <div class="row-fluid">
         <div class=" span6">
           <table class="table table-striped artista">
             <tbody>
@@ -246,22 +246,10 @@ function slugfy($string){
     
     <script>
       $('#busca-radar').submit(function() {
-
-		$("#resultado_busca").html("");
-		$("#resultado_paginacao").html("");
-		
- 		$.ajax({
-           type : "GET", 
-           dataType: "jsonp",
-           data: $('#busca-radar').serialize(),
-           url: "http://172.20.16.219/index.php/ajax/radar-artista",
-           success: function(json){
-             	$("#qtd_result").text(json.qtd_result);
-             	$("#resultado_busca").html(json.data);
-             	$("#resultado_paginacao").html(json.paginacao);
-          }
-        });
-	    
+        if($("#busca-por1").is(':checked'))
+          self.location.href = "/musicas/busca-por/"+$('#busca-input').val();
+        else if($("#busca-por2").is(':checked'))
+          self.location.href = "/artistas/busca-por/"+$('#busca-input').val();
         return false;
-      });
+      });                    
     </script>

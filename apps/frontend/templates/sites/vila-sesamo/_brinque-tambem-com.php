@@ -260,8 +260,7 @@ $('#carrossel-i').responsiveCarousel({
   mask:'#carrossel-i .slider-mask',
   easing:'linear',
   dragEvents:true,
-  //speed:200,
-  //slideSpeed:1000
+  step:-1
 });
 
 if(navigator.appName!='Microsoft Internet Explorer')
