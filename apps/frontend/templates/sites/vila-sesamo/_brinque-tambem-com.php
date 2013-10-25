@@ -70,7 +70,7 @@
         ->where('a.site_id = ?', $site->getId())
         ->andWhere('sa.asset_id = a.id')
         ->andWhereIn('sa.section_id', $categorySlugs)
-        ->andWhereIn('sa.section_id', array(2387,2388,2389))
+        //->andWhereIn('sa.section_id', array(2387,2388,2389))
         ->andWhere('a.asset_type_id = ?', 1)
         ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
         ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
