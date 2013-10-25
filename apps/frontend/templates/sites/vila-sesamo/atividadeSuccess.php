@@ -113,32 +113,4 @@
 </div>
 <!--content-->
 
-<script>
-//carrossel interna
-$('#carrossel-i').responsiveCarousel({
-  arrowLeft: '.arrow-left span.interna',
-  arrowRight: '.arrow-right span.interna',
-  target:'#carrossel-i .slider-target',
-  unitElement:'#carrossel-i .slider-target > li',
-  mask:'#carrossel-i .slider-mask',
-  easing:'linear',
-  dragEvents:true,
-  //speed:200,
-  //slideSpeed:1000
-});
 
-if(navigator.appName!='Microsoft Internet Explorer')
-{
-  //carrossel personagens redraw pra tablet e celular home
-  window.addEventListener('load', function() {
-    $('.carrossel-i, #carrossel-mobile').responsiveCarousel('redraw');
-  });
-  window.addEventListener("orientationchange", function() {
-    $('.carrossel-i, #carrossel-mobile').responsiveCarousel('redraw');
-  }, false);
-  window.addEventListener("resize", function() {
-    $('.carrossel-i, #carrossel-mobile').responsiveCarousel('redraw');
-  }, false);
-  //carrossel personagens redraw pra tablet e celular home
-}
-</script>
