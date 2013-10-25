@@ -275,8 +275,14 @@
 					<a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
 						<img src="http://midia.cmais.com.br/displays/<?php echo $d->getImage() ?>" alt="<?php echo $d->getTitle() ?>" width="50px" height="50px"/>
 						<p>
-						  <?php echo $d->getTitle() ?><br />
-						  <?php echo $d->getDescription() ?>
+						  
+						  <?php if(isset($d->getDescription())){ 
+								  echo $d->getTitle()."<br />";
+								  echo $d->getDescription();
+								}else{
+									echo "<br />".$d->getTitle();
+								}
+							?>	
 					  </p>
 					</a>
 				</li>
