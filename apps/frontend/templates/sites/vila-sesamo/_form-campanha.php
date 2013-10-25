@@ -108,11 +108,20 @@
         </div>
         <!--/Msg-->
         
+        <!--Termos e condições-->
+        <div class="control-group span12 msg">
+          <label class="control-label sprite-ico-mensagem" for="termos"></label>
+          <div class="controls">
+            <textarea id="termos"><?php include_partial_from_folder('sites/vila-sesamo', 'global/termos') ?></textarea>
+          </div>
+        </div>
+        <!--/Termos e condições-->
+        
         <!--concorda-->
         <div class="control-group span11">
           <label class="radio">
             <input type="radio" name="concordo" id="concordo" value="concodco" checked>
-            Declaro que li e estou de acordo com os <a href="#">Termos e Condições</a>.
+            Declaro que li e estou de acordo com os Termos e Condições acima.
           </label>
           <button type="submit" class="btn">enviar minha brincadeira</button>
         </div>
