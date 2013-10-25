@@ -33,11 +33,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         die("1");
       }
     }*/
-    die("1");
+   
     $file_name = basename($_FILES['datafile']['name']);
     $data = file_get_contents($_FILES['datafile']['tmp_name']); 
     $file_contents = chunk_split(base64_encode($data));
     $file_size = $_FILES['datafile']['size'];
+    die("1");
     $file_mime_type = getMimeType($_FILES['datafile']['name']);
     $attach = array();
     $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);
