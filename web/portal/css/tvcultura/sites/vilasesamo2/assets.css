@@ -93,7 +93,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 /* /assets */
 
 /* atividades*/
-.interna.atividades .todos-assets p { background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png);font-size:25px; }
+.interna.atividades .todos-assets p { background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png);font-size:25px!important; }
 .interna.atividades .conteudo-asset h2 { color:#883feb; }
 .interna.atividades #content .relacionados {background:#7732e5; border-bottom:none;}
 .interna.videos #content .section.form,
