@@ -91,9 +91,9 @@
         <div>
           
 
-          <a href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">Imprimir</a>
+          <a class="option-asset" href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">Imprimir</a>
 
-          <a href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">Baixar</a>
+          <a class="option-asset" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">Baixar</a>
         </div>
       </div>
       <?php endif; ?>
@@ -104,7 +104,7 @@
   </section>
   <!--/section -->
   
-  <?php //include_partial_from_folder('sites/vila-sesamo', 'global/brinque-tambem-com', array("site" => $site, "section" => $section, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
+  <?php include_partial_from_folder('sites/vila-sesamo', 'global/brinque-tambem-com', array("site" => $site, "section" => $section, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
   
   <?php //include_partial_from_folder('sites/vila-sesamo', 'global/form-campanha', array("site" => $site, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
 
