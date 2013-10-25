@@ -227,6 +227,6 @@
         </div>
       </div>
     </div>    
-    <span class="divisa tipo2"></span>
+    <!--span class="divisa tipo2"></span-->
   </section>
   <?php endif; ?>
