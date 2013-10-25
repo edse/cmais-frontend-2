@@ -39,10 +39,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $file_contents = chunk_split(base64_encode($data));
     $file_size = $_FILES['datafile']['size'];
     //die($_FILES['datafile']['name']);
-    
+    echo $_FILES['datafile']['name'];
     $file_mime_type = getMimeType($_FILES['datafile']['name']);
     //$file_mime_type = "image/jpg";
-    echo "1";
     $attach = array();
     $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);
     
