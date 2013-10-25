@@ -36,6 +36,9 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 #carrossel-interna .slider li .nome i.sprite-ico-jogos-p { margin-top:7px; }
 #carrossel-interna .slider li:hover a { text-decoration:underline; }
 /* form */
+#content .form .span12{margin-bottom:20px;}
+#content .form .span8{margin:0;}
+#content .form .span4{margin-left:20px;}
 #content .section.form,
 #content section.form { background:#3aaaec; margin:0 auto; padding:20px; max-width:900px; }
 #content .section.form .span8,

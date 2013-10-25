@@ -879,7 +879,7 @@ class _sectionActions extends sfActions
                 ->from('Asset a, SectionAsset sa')
                 ->where('sa.section_id = ?', $this->section->id)
                 ->andWhere('sa.asset_id = a.id')
-                ->andWhere("a.date_start IS NULL OR a.date_start >= CURRENT_TIMESTAMP")
+                //->andWhere("a.date_start IS NULL OR a.date_start >= CURRENT_TIMESTAMP")
 				//->andWhere("a.date_end IS NULL OR a.date_end <= CURRENT_TIMESTAMP")
                 ->andWhere('a.is_active = ?', 1);
               if($request->getParameter('busca') != '')
