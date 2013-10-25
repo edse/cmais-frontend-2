@@ -1,5 +1,7 @@
   <?php if($campaign): ?>
+  <span class="divisa carregar"></span>
   <section class="form row-fluid">
+
     <div class="span8">
     <h2><?php echo $campaign->getTitle(); ?></h2>
     <p><?php echo $campaign->getDescription(); ?></p>
