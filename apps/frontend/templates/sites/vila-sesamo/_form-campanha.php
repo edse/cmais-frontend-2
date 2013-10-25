@@ -13,8 +13,36 @@
     <!--span8-->
     <div class="span8">
       
+      <div class="msgAcerto" id="statusMsg_0" style="display:none">
+        <p>
+          Sua brincadeira foi enviada com sucesso<br/>
+          e em breve estará em nossa galeria de brincadeiras!
+        </p>
+      </div>
+
+      <div class="msgErro" id="statusMsg_1" style="display:none">
+        <p>
+          Formato de imagem inválido<br/>
+          Por favor, tente com JPG, PNG ou GIF!
+        </p>
+      </div>
+
+      <div class="msgErro" id="statusMsg_2" style="display:none">
+        <p>
+          Arquivo muito grande<br/>
+          Por favor, tente com um arquivo de até 15 MB!
+        </p>
+      </div>
+      
+      <div class="msgErro" id="statusMsg_3" style="display:none">
+        <p>
+          Erro inesperado<br/>
+          Por favor, tente mais tarde!
+        </p>
+      </div>
+      
       <!--form-->    
-      <form class="form-horizontal" id="form" action="/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post" enctype="multipart/form-data">
+      <form class="form-horizontal" id="form-contato" action="" method="post" enctype="multipart/form-data">
         <input type="hidden" id="campanha" name="campanha" value="<?php echo $campaign->getTitle() ?>" />
         <!--Nome-->
         <div class="control-group span8">
@@ -162,10 +190,40 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
-    var validator = $('#form').validate({
+    var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
-        form.submit();
+        $.ajax({
+          type: "POST",
+          dataType: "text",
+          data: $("#form-contato").serialize(),
+          url: "/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php",
+          beforeSend: function(){
+            $('input#enviar').attr('disabled','disabled');
+            $(".msgAcerto").hide();
+            $(".msgErro").hide();
+            $('img#ajax-loader').show();
+          },
+          success: function(data){
+            $('input#enviar').removeAttr('disabled');
+            window.location.href="#";
+            if(data == "0"){
+              $("#form-contato").clearForm();
+              $("#form-contato").hide();
+              $("#statusMsg_0").show();
+              $('img#ajax-loader').hide();
+            }
+            else if(data > 0) {
+              $(".msgErro").hide();
+              $("#statusMsg_"+data).show();
+              $('img#ajax-loader').hide();
+            }
+            else {
+              alert('Erro inesperado!');
+            }
+          }
+        });         
+        
       },
       rules:{
         nome:{
