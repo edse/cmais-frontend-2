@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     //Enviar sem anexo
     //echo $_FILES['datafile']['size'];
-    
+    /*
     if($_FILES['datafile']['size'] <= 0) {
       $headers =  'MIME-Version: 1.0' . "\r\n";
       $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
@@ -33,7 +33,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         //header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=2");
         die("1");
       }
-    }
+    }*/
 
     $file_name = basename($_FILES['datafile']['name']);
     $data = file_get_contents($_FILES['datafile']['tmp_name']); 
