@@ -1233,7 +1233,7 @@ class _sectionActions extends sfActions
         $this->assetsQuery->andWhere("sa.section_id = ?", (int)$request->getParameter('section'));
       else
         $this->assetsQuery->andWhere('sa.section_id = ?', $this->section->id);
-      $this->assetsQuery->orderBy('sa.display_order');
+      $this->assetsQuery->orderBy('a.created_at asc');
       $test = $this->assetsQuery->execute();
     }    
 
