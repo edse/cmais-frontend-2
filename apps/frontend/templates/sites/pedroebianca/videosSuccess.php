@@ -256,8 +256,6 @@ if ($episode) {
 									<span class="faixa" style="height:5px; margin-top:5px;"></span>
 									<h3><?php echo $asset->getTitle() 
 									?> </h3>
-									<!-- TESTE -->
-									<!-- 
 										<?php if ($episode):?>
 												
 											<p class="dataPost">
@@ -269,7 +267,7 @@ if ($episode) {
 												?>
 											</p>
 										<?php endif;?>
-									-->
+
 									<?php if(($asset->AssetVideo->getHeadline() != "")&&($asset->AssetVideo->getHeadline() != $asset->getTitle())):
 									?>
 									<p style="font-size: 10px;">
