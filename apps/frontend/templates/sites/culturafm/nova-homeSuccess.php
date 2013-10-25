@@ -208,10 +208,10 @@
 			<?php foreach ($displays["destaque-compositor-mes"] as $k => $d): ?>	
 		        <!--destaque small-->
 		        <div class="destaque-small compositor">
-		         <h2><?php echo $displays["destaque-compositor-mes"]->getTitle() ?><i class="seta2"></i></h2>
+		         <h2><?php echo $d->getTitle() ?><i class="seta2"></i></h2>
 		          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
 		            <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>">
-		            <p><?php echo $d->getTitle() ?> </p>
+		            <p><?php echo $d->getDescription() ?> </p>
 		          </a>
 		        </div>  
 		        <!--/destaque small-->
