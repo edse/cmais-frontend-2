@@ -157,7 +157,7 @@
       
       <!--pagina-->
       <div class="pagina">  
-        <span class="divisa carregar"></span
+        <span class="divisa carregar"></span>
         
         <input type="hidden" id="filter-choice" value="">
         <nav id="page_nav">
