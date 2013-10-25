@@ -20,7 +20,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .relacionados p a:hover { text-decoration:underline; }
 .relacionados .todos-assets  { position:absolute; top:10px; right:0; }
 .relacionados .divisa { margin:0 auto; }
-#carrossel-interna .slider-mask-wrap { margin:0 auto; }
+/*#carrossel-interna .slider-mask-wrap { margin:0 auto; }
 #carrossel-interna { margin:20px auto 0; }
 #carrossel-interna .slider li { border-bottom:1px solid #7732e5;  background:#883feb; }
 #carrossel-interna .slider li a { color:#fff; text-transform:uppercase; }
@@ -34,7 +34,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 #carrossel-interna .slider li .nome i { float:left; margin:0 15px; }
 #carrossel-interna .slider li .nome i.sprite-ico-videos-p { margin-top:4px; }
 #carrossel-interna .slider li .nome i.sprite-ico-jogos-p { margin-top:7px; }
-#carrossel-interna .slider li:hover a { text-decoration:underline; }
+#carrossel-interna .slider li:hover a { text-decoration:underline; }*/
 /* form */
 #content .form .span12{margin-bottom:20px;}
 #content .form .span8{margin:0;}
