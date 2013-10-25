@@ -60,13 +60,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       if(sendMailAtt($to, $from, $subject, $message, $attach)) {
         if (unlink($_FILES['datafile']['tmp_name'])) {
           //header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?success=2");
-          die("0");
+          die("4");
         }
       }
       else{
         if (unlink($_FILES['datafile']['tmp_name'])) {
           //header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=1");
-          die("1");
+          die("5");
         }
       }
     }
