@@ -1,5 +1,5 @@
 <?php
-require("../includes/functions.php");
+include("/var/frontend/web/actions/includes/functions.php");
 
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
