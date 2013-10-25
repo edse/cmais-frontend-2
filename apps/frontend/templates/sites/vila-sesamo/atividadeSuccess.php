@@ -75,14 +75,12 @@
       ?>
       <?php if($seloImageUrl): ?>
       <div style="overflow: hidden; float:left">  
-        <p>
-          
-          <?php echo $asset->getDescription() ?>
-          
-        </p>
         <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
-            <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
-          </a>
+          <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
+        </a>
+        <p>
+          <?php echo $asset->getDescription() ?>
+        </p>
       </div>
       <?php endif; ?>
       
