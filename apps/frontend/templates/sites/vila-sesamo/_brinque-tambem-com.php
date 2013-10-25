@@ -37,7 +37,7 @@
         $tags[] = $t;
     }
     if(count($tags) > 0) {
-      die("teste");
+      die("1");
       $see_also_by_tags = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa, tag t, tagging tg')
