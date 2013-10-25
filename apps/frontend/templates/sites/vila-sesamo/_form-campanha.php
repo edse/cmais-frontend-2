@@ -14,13 +14,13 @@
     <div class="span8">
       
       <!--form-->    
-      <form class="form-horizontal" action="/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post">
+      <form class="form-horizontal" id="form" action="/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post">
         
         <!--Nome-->
         <div class="control-group span8">
           <label class="control-label sprite-ico-nome" for="nome"></label>
           <div class="controls">
-            <input type="text" id="nome" placeholder="Nome" value="Nome">
+            <input type="text" id="nome" placeholder="Nome" value="Nome" name="nome">
           </div>
         </div>
         <!--/Nome-->
@@ -29,7 +29,7 @@
         <div class="control-group idade span2">
           <label class="control-label sprite-ico-idade" for="idade"></label>
           <div class="controls">
-            <input type="text" id="idade" placeholder="Idade" value="Idade">
+            <input type="text" id="idade" placeholder="Idade" value="Idade" name="idade">
           </div>
         </div>
         <!--/Idade-->
@@ -38,7 +38,7 @@
         <div class="control-group span8">
           <label class="control-label sprite-ico-cidade" for="cidade"></label>
           <div class="controls">
-            <input type="text" id="cidade" placeholder="Cidade" value="Cidade">
+            <input type="text" id="cidade" placeholder="Cidade" value="Cidade" name="cidade">
           </div>
         </div>
         <!--/Cidade-->
@@ -46,7 +46,7 @@
         <!--Estado-->
         <div class="control-group estado span2">
           <div class="controls">
-            <select id="estado">
+            <select id="estado" name="estado">
               <option selected="selected" value="">UF</option>
               <option value="Acre">AC</option>
               <option value="Alagoas">AL</option>
@@ -84,7 +84,7 @@
         <div class="control-group span8">
           <label class="control-label sprite-ico-email" for="email"></label>
           <div class="controls">
-            <input type="text" id="email" placeholder="Email" value="Email">
+            <input type="text" id="email" placeholder="Email" value="Email" name="email">
           </div>
         </div>
         <!--/Email-->
@@ -93,8 +93,8 @@
          <div class="control-group span2 idade anexo">
           <label class="control-label sprite-ico-anexo" for="anexo"></label>
           <div class="controls">
-            <!--input id="datafile" type="file" name="datafile" size="1"-->
-            <a href="#" title="Anexar">Anexar</a>
+            <input id="datafile" type="file" name="datafile">
+            <!--a href="#" title="Anexar">Anexar</a-->
           </div>
         </div>
         <!--/Anexo-->
@@ -103,7 +103,7 @@
         <div class="control-group span12 msg">
           <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
           <div class="controls">
-            <textarea id="mensagem" placeholder="Mensagem" value="Mensagem"></textarea>
+            <textarea id="mensagem" placeholder="Mensagem" value="Mensagem" name="mensagem"></textarea>
           </div>
         </div>
         <!--/Msg-->
@@ -157,3 +157,55 @@
   </section>
   <!--/section-->
   <?php endif; ?>
+
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    var validator = $('#form').validate({
+      
+      submitHandler: function(form){
+        form.submit();
+      },
+      rules:{
+        nome:{
+          required: true,
+          minlength: 2
+        },
+        idade:{
+          required: true
+        },
+        email:{
+          required: true,
+          email: true
+        },
+        cidade:{
+          required: true,
+          minlength: 3
+        },
+        estado:{
+          required: true
+        },
+        mensagem:{
+          required: true
+        },
+        datafile:{
+          required: true,
+          accept: "png|jpe?g|gif",
+          filesize: 15728640
+        },
+        concordo:{
+          required: true
+        }
+        
+      },
+      success: function(label){
+      }
+    });
+  });
+  
+  function validate(obj){
+    if($(obj).val()==$(obj).attr("data-default"))
+      $(obj).val('');
+  }
+</script>  
