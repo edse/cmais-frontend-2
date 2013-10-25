@@ -6,7 +6,7 @@
 .todos-assets p { background: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-jogos.png) repeat; float:left; margin:0 !important; margin-left:-15px !important; height:48px; line-height:48px; padding:0 10px 0 20px; color: #FFFFFF;    font-size: 25px;    font-weight: normal;    text-transform: uppercase; }
 #content .filtro { border-bottom:none; margin-bottom:0; }
 #content .filtro h3 { padding-right:0; }
-.conteudo-asset { padding:10px 20px 20px; background:#fff; }
+.conteudo-asset { padding:10px 20px 20px; background:#fff; overflow: hidden; }
 h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993f7; text-transform:uppercase; }
 #content p { font-size:16px; float:left; }
 .conteudo-asset p a { float:right; width: 220px; margin-left:2%; }
@@ -90,7 +90,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .pais .row-fluid .span4 {  *margin:2px !important;}
 #content .filtro h3 { *position:relative }
 .todos-assets { *position:absolute; *top:7px; *right:0 }
-.option-assets{width:100px; height:40px; display: block; background:red; float:right; font-size: 25px; color:#571ed9;font-family: 'din-blackregular',Arial, Helvetica, sans-serif; text-transform:uppercase;}
+.option-assets{ display: block; float:right; font-size: 25px; color:#571ed9;font-family: 'din-blackregular',Arial, Helvetica, sans-serif; text-transform:uppercase; padding: 10px 10px 10px 50px; margin: 10px 0 30px 0;}
 /* /assets */
 
 /* atividades*/
