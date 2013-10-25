@@ -157,7 +157,9 @@
   </section>
   <!--/section-->
   <?php endif; ?>
-  
+
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
     var validator = $('#form').validate({
