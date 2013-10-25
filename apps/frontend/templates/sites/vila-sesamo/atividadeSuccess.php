@@ -80,22 +80,20 @@
             <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
           </a>
           <?php echo $asset->getDescription() ?>
-        
+        </p>
+      </div>
+      <?php endif; ?>
       
-          <?php if(isset($asset)): ?>
-          <div class="asset">
-            <?php $related = $asset->retriveRelatedAssetsByRelationType("Preview"); ?>
-            <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
-            <div>
-              <i class="sprite-icon-colorir-med"></i>
-              <a href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">Imprimir</a>
-              <i class="sprite-icon-colorir-med"></i>
-              <a href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">Baixar</a>
-            </div>
-          </div>
-          <?php endif; ?>
-      
-      </p>
+      <?php if(isset($asset)): ?>
+      <div class="asset">
+        <?php $related = $asset->retriveRelatedAssetsByRelationType("Preview"); ?>
+        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
+        <div>
+          <i class="sprite-icon-colorir-med"></i>
+          <a href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">Imprimir</a>
+          <i class="sprite-icon-colorir-med"></i>
+          <a href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">Baixar</a>
+        </div>
       </div>
       <?php endif; ?>
       
