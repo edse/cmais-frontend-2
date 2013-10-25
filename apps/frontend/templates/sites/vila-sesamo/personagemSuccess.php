@@ -14,13 +14,10 @@
 <!--content-->
 <div id="content">
   
-  <!--section-->
   <section class="filtro row-fluid">
     
-    <!--span12-->
     <div class="span12" role="main">
       
-      <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
       <h1><i class="sprite-icon-personagens-med"></i>Personagens</h1>
       
       <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens') ?>
@@ -116,64 +113,47 @@
       <div class="span12 mais-brincadeiras">
         <p>Mais brincadeiras <?php if(in_array($section->getSlug(), array("Bel","Zoe"))): ?>da <?php else: ?>do <?php endif; ?><?php echo $section->getTitle() ?>:</p>
       </div>
-     
       
-      
-      </div>
-      <!--/content-->
-      
-      
-      
-      <!--/section-->
-      <section class="todos-itens">
-        <!--lista-->
-        <ul role="contentinfo" id="container" class="row-fluid">
-          <li class="span4 element jogos bel"> 
-            <a href="#" title="">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-              <i class="sprite-icons-new sprite-icone_atividade"></i>
-              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
-            </a>
-          </li>
-          <li class="span4 element atividades bel"> 
-            <a href="#" title="">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-              <i class="sprite-icons-new sprite-icone_atividade"></i>
-              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo2 Nomejogo3 Nomejogo3</div>
-            </a>
-          </li>
-          <li class="span4 element videos bel"> 
-            <a href="#" title="">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-              <i class="sprite-icons-new sprite-icone_atividade"></i>
-              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo3 Nomejogo3 Nomejogo3</div>
-            </a>
-          </li>
-          <li class="span4 element atividades bel"> 
-            <a href="#" title="">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-              <i class="sprite-icons-new sprite-icone_atividade"></i>
-              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo4 Nomejogo3 Nomejogo3</div>
-            </a>
-          </li>
-          <li class="span4 element videos bel"> 
-            <a href="#" title="">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-              <i class="sprite-icons-new sprite-icone_atividade"></i>
-              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo5 Nomejogo3 Nomejogo3</div>
-            </a>
-          </li>
-          <li class="span4 element jogos bel"> 
-            <a href="#" title="">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-              <i class="sprite-icons-new sprite-icone_atividade"></i>
-              <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo6 Nomejogo3 Nomejogo3</div>
-            </a>
-          </li>
-        </ul> 
-        <!--lista-->  
-      </section>
-      <!--/section-->
+    </div>
+    <!--/destaques-->
+    
+    <?php if(isset($pager)): ?>
+      <?php if(count($pager) > 0): ?>
+    <!--/assets-->
+    <section class="todos-itens">
+      <!--lista-->
+      <ul role="contentinfo" id="container" class="row-fluid">
+        <?php foreach($pager->getResults() as $k=>$d): ?>
+        <?php
+          $assetPersonagens = array();
+          $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
+          $assetSections = $d->getSections();
+          foreach($assetSections as $a) {
+            if($a->getParentSectionId() == $personagensSection->getId()) {
+              $assetPersonagens[] = $a->getSlug();
+            }
+            if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
+              $assetSection = $s;
+              break;
+            }
+          }
+        ?>
+          
+        <li class="span4 element jogos<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?>"> 
+          <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
+            <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
+            <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+            <i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i>
+            <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="<?php echo $assetSection->getSlug() ?>"/><?php echo $d->getTitle() ?></div>
+          </a>
+        </li>
+        <?php endforeach; ?>
+      </ul> 
+      <!--lista-->  
+    </section>
+    <!--/assets-->
+      <?php endif; ?>
+    <?php endif; ?>
       
       <!--pagina-->
       <div class="pagina">  
