@@ -256,7 +256,7 @@ if ($episode) {
 									<span class="faixa" style="height:5px; margin-top:5px;"></span>
 									<h3><?php echo $asset->getTitle()
 									?></h3>
-									<!--
+									<!-- 
 										<?php if ($episode):?>
 												
 											<p class="dataPost">
