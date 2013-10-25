@@ -119,9 +119,7 @@
                           }
                         }
                       ?>
-                <!--li class="video"-->
-                <li class="<?php echo $assetSection; ?>">
-                  <!--div class="inner personagens bel"-->
+                <li class="<?php echo $assetSection->getSlug(); ?>">
                   <div>
                     <!--a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel"-->
                     <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
@@ -147,9 +145,7 @@
                           }
                           $assetID[] = $d->getId();
                         ?>
-                <!--li class="video"-->
-                <li class="<?php echo $assetSection ?>">
-                  <!--div class="inner personagens bel"-->
+                <li class="<?php echo $assetSection->getSlug() ?>">
                   <div>
                     <!--a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel"-->
                     <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
@@ -176,9 +172,7 @@
                             }
                             $assetID[] = $d->getId();
                           ?>
-                <!--li class="video"-->
-                <li class="<?php echo $assetSection ?>">
-                  <!--div class="inner personagens bel"-->
+                <li class="<?php echo $assetSection->getSlug() ?>">
                   <div>
                     <!--a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel"-->
                     <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
@@ -199,9 +193,7 @@
                       <?php foreach($see_also_by_section as $k=>$d): ?>
                         <?php if(!in_array($d->getId(), $assetID)): ?> 
                           <?php $assetID[] = $d->getId(); ?>
-                <!--li class="video"-->
                 <li class="<?php echo $section->getTitle() ?>">
-                  <!--div class="inner personagens bel"-->
                   <div>
                     <!--a href="/vilasesamo2jogos/nomedojogo1" title="Nome do jogo 1" class="btn-bel"-->
                     <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>

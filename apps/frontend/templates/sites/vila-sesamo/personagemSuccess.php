@@ -23,207 +23,98 @@
       <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
       <h1><i class="sprite-icon-personagens-med"></i>Personagens</h1>
       
-      <!--nav filtro personagem-->
-      <nav role="navigation" class="span2">
-        <h3>escolha o personagem</h3>
-        <h3 aria-live="polite" id="filtro-descricao">todas as atividades estão para selecionar</h3>
-        <ul class="filtro-personagem">
-         
-         <li class="ativo">
-          <div class="inner bel">
-            <a href="javascript:;" class="btn-bel " data-filter=".bel">
-              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="filtro bel" />
-            </a>
-            
-          </div>
-         </li>
-          <li>
-            <div class="inner beto">
-              <a href="javascript:;" class="btn-beto " data-filter=".beto">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/beto_personagem.png" alt="filtro beto" />
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="inner comecome">
-              <a href="javascript:;" class="btn-comecome " data-filter=".come-come">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/comecome_personagem.png" alt="filtro Come-come" />
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="inner elmo">
-              <a href="javascript:;" class="btn-elmo " data-filter=".elmo">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/elmo_personagem.png" alt="filtro Elmo" />
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="inner enio">
-              <a href="javascript:;" class="btn-enio " data-filter=".enio">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/enio_personagem.png" alt="filtro Enio" /></a>
-             </div>
-          </li>
-          <li>
-            <div class="inner garibaldo">
-              <a href="javascript:;" class="btn-garibaldo " data-filter=".garibaldo">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/garibaldo_personagem.png" alt="filtro Garibaldo" />
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="inner grover">
-              <a href="javascript:;" class="btn-grover " data-filter=".grover">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/grover_personagem.png" alt="filtro Grover" />
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="inner zoe">
-              <a href="javascript:;" class="btn-zoe " data-filter=".zoe">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/zoe_personagem.png" alt="filtro Zoe" />
-              </a>
-             </div>
-          </li>
-        </ul>
-      </nav>
-      <!--/nav filtro personagem-->
+      <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens') ?>
       
+      <?php if(isset($displays['destaque-principal'])): ?>
+        <?php if(count($displays['destaque-principal']) > 0): ?>
       <!--box-personagem-->
       <div class="desc-personagem">
-        <!--inicio carrossel--> 
+        
+        <!--carrossel--> 
         <div id="carrossel-interna-personagem">
-          <!--slider-->
+          
+          <!--destaques carrossel-->
           <div class="slider">
-            <!--slider-mask-wrap-->
             <div class="slider-mask-wrap">
-              <!--slider-mask-->
               <div class="slider-mask">
-                <!--slider-mask-wrap--> 
                 <ul class="slider-target">
-                  <!--item-->
+                  <?php foreach($displays['destaque-principal'] as $d): ?>
                   <li>
                     <div class="pull-left videoorimage">
-                      <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
+                    <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
+                      <iframe width="351" height="263" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+                    <?php elseif($d->Asset->AssetType->getSlug() == "image"): ?>
+                      <img src="<?php $d->retriveImageUrlByImageUsage() ?>" alt="<?php echo $d->getTitle() ?>" />
+                    <?php endif; ?>
                     </div>
                   </li>
-                  <!--/item-->
-                  
-                  <!--item-->
-                  <li>
-                    <div class="pull-left videoorimage">
-                      <iframe width="351" height="263" src="//www.youtube.com/embed/65O-ZV0ge9s?rel=0" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                  </li>
-                  <!--/item-->
-                  
-                  <!--item-->
-                  <li>
-                    <div class="pull-left videoorimage">
-                      <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
-                    </div>
-                  </li>
-                  <!--/item-->
-                  
-                  <!--item-->
-                  <li>
-                    <div class="pull-left videoorimage">
-                      <iframe width="351" height="263" src="//www.youtube.com/embed/65O-ZV0ge9s?rel=0" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                  </li>
-                  <!--/item-->
-                  
-                  <!--item-->
-                  <li>
-                    <div class="pull-left videoorimage">
-                      <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
-                    </div>
-                  </li>
-                  <!--/item-->
-                  
+                  <?php endforeach; ?>
                 </ul>
-                <!--slider-mask-->
                 <div class="clearit"></div>
               </div>
             </div>
-            <!--slider-mask-wrap--> 
-            <!--slider-nav>
-            <div class="slider-nav">
-              <div class="arrow-left arrow"><span title="Anterior" class="back"></span></div>
-              <div class="arrow-right arrow"><span title="Proximo" class="next"></span></div>
-            </div> 
-            <!--slider-nav-->
           </div>
-          <!--/slider-->
+          <!--/destaques carrosel-->
+          
           <!--seletor carrossel-->
           <div class="container-itens"> 
             <ul id="selector-interna-personagem">
-              <li><a href="#" rel="frame_0"></a></li>
-              <li><a href="#" rel="frame_1"></a></li>
-              <li><a href="#" rel="frame_2"></a></li>
-              <li><a href="#" rel="frame_3"></a></li>
-              <li><a href="#" rel="frame_4"></a></li>
+              <?php foreach($displays['destaque-principal'] as $k=>$d): ?>
+              <li><a href="#" rel="frame_<?php echo $k ?>"></a></li>
+              <?php endforeach; ?>
             </ul>
           </div>
           <!--/seletor carrossel--> 
         </div>
-        <!--/inicio carrossel--> 
+        <!--/inicio carrossel-->
+        
         <div class="descritivo">
-          <h3>BEL</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+          <h3><?php echo $section->getTitle() ?></h3>
+          <p><?php echo html_entity_decode($displays["sobre-a-personagem"][0]->Asset->AssetContent->render()) ?></p>
         </div>  
       </div>
       <!--/box-personagem-->
+        <?php endif; ?>
+      <?php endif; ?>
     </div>
     <!--/span12-->
     <span class="divisa personagem"></span>
     
+    
     <!--destaques-->
     <div class="destaques dest-pers bel row-fluid container">
-      
       <div class="span4 pull-left">
-        <img src="/portal/images/capaPrograma/vilasesamo2/personagens/int-pers-bel.png" alt=""/>
+        <img src="/portal/images/capaPrograma/vilasesamo2/personagens/int-pers-<?php echo $section->getSlug() ?>.png" alt=""/>
       </div>
-      <!--section-->
+      
+      <?php if(isset($displays['destaques-de-assets'])): ?>
+        <?php if(count($displays['destaques-de-assets']) > 0): ?>
       <section class="span8 pull-right">
-        
-        <!-- jogo -->
-        <article class="span6 jogos">
-          <a href="/vilasesamo2/jogos">
-            <img class="img-destaque" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-            <i class="sprite-icons-new sprite-icone_atividade"></i>
-            <p>Nome jogo1 Nomejogo3 Nomejogo3</p>  
+        <?php foreach($displays['destaques-de-assets'] as $d): ?>
+          <?php
+            $sections = $d->getSections();
+            foreach($sections as $s) {
+              if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
+                $assetSection = $s;
+                break;
+              }
+            }
+            $preview = $d->retriveRelatedAssetsByRelationType('Preview')
+          ?>
+        <article class="span6 <?php echo $assetSection->getSlug() ?>">
+          <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
+            <img class="img-destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+            <i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i>
+            <p><?php echo $d->getTitle() ?></p>  
           </a>  
         </article>
-        <!-- jogo -->
-        
-        <!-- video -->
-        <article class="span6 videos">
-          <a href="/vilasesamo2/jogos">
-            <img class="img-destaque" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-            <i class="sprite-icons-new sprite-icone_atividade"></i>
-            <p>Nome jogo1 Nomejogo3 Nomejogo3</p>  
-          </a>  
-        </article>
-        <!-- video -->
-        
-        <!-- atividade -->
-        <article class="span6 atividades">
-          <a href="/vilasesamo2/jogos">
-            <img class="img-destaque" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-            <i class="sprite-icons-new sprite-icone_atividade"></i>
-            <p>Nome jogo1 Nomejogo3 Nomejogo3</p>  
-          </a>  
-        </article>
-        <!-- atividade -->
-        
-        
-        
+        <?php endforeach; ?>
       </section>
-      <!--section-->
+        <?php endif; ?>
+      <?php endif; ?>
       
       <div class="span12 mais-brincadeiras">
-        <p>Mais brincadeiras da Bel:</p>
+        <p>Mais brincadeiras <?php if(in_array($section->getSlug(), array("Bel","Zoe"))): ?>da <?php else: ?>do <?php endif; ?><?php echo $section->getTitle() ?>:</p>
       </div>
      
       
@@ -231,8 +122,10 @@
       </div>
       <!--/content-->
       
+      
+      
       <!--/section-->
-      <section class="todos-itens ">
+      <section class="todos-itens">
         <!--lista-->
         <ul role="contentinfo" id="container" class="row-fluid">
           <li class="span4 element jogos bel"> 
