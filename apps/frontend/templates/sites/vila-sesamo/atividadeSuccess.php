@@ -74,13 +74,13 @@
         }
       ?>
       <?php if($seloImageUrl): ?>
-      <div >  
+      <div style="position: relative;" >  
         <p>
           
           <?php echo $asset->getDescription() ?>
-          <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
-            <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
-          </a>
+          <!--a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>"-->
+            <img style="position: absolute" src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
+          <!--/a-->
         </p>
       </div>
       <?php endif; ?>
