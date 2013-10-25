@@ -256,18 +256,19 @@ if ($episode) {
 									<span class="faixa" style="height:5px; margin-top:5px;"></span>
 									<h3><?php echo $asset->getTitle()
 									?></h3>
-									<?php if ($episode):
-									?>
-									<p class="dataPost">
-										Programa exibido em <?php echo format_date($episode->AssetEpisode->getDateRelease(),'D')
-										?>
-									</p>
-									<?php else:?>
-									<p class="dataPost">
-										Programa exibido em <?php echo format_date($asset->getCreatedAt(),'D')
-										?>
-									</p>
-									<?php endif;?>
+									<!--
+										<?php if ($episode):?>
+												
+											<p class="dataPost">
+												Programa exibido em <?php echo format_date($episode->AssetEpisode->getDateRelease(),'D')?> 
+											</p>
+											<?php else:?>
+											<p class="dataPost">
+												Programa exibido em <?php echo format_date($asset->getCreatedAt(),'D')
+												?>
+											</p>
+										<?php endif;?>
+									-->
 									<?php if(($asset->AssetVideo->getHeadline() != "")&&($asset->AssetVideo->getHeadline() != $asset->getTitle())):
 									?>
 									<p style="font-size: 10px;">
