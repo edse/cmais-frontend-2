@@ -11,7 +11,6 @@
   $see_also = false; // somente uma flag de controle. Se falso, nada aqui aparece no site. Se verdadeiro, foi porque atendeu alguma das condições abaixo...
   
   if($campaign) { // se o asset fizer parte de uma campanha, o "brinque também com" só terá assets da mesma...
-    die("1");
     $see_also_by_campaign = Doctrine_Query::create()
       ->select('a.*')
       ->from('Asset a, SectionAsset sa')
