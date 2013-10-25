@@ -276,7 +276,7 @@
 						<img src="http://midia.cmais.com.br/displays/<?php echo $d->getImage() ?>" alt="<?php echo $d->getTitle() ?>" width="50px" height="50px"/>
 						<p>
 						  
-						  <?php if($d->getDescription() == ""){ 
+						  <?php if($d->getDescription() != ""){ 
 								  echo $d->getTitle()."<br />";
 								  echo $d->getDescription();
 								}else{
