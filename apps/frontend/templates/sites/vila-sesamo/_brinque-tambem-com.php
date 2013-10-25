@@ -231,11 +231,11 @@
           </div>
               
           <div class="slider-nav">
-            <div class="arrow-left arrow interna">
-              <span title="Back" class="sprite-seta-esquerda"></span>
+            <div class="arrow-left arrow">
+              <span title="Back" class="sprite-seta-esquerda interna"></span>
             </div>
-            <div class="arrow-right arrow interna">
-              <span title="Next" class="sprite-seta-direita"></span>
+            <div class="arrow-right arrow">
+              <span title="Next" class="sprite-seta-direita interna"></span>
             </div>
           </div>
           
