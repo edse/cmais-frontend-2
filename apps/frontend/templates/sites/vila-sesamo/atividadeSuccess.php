@@ -89,9 +89,10 @@
         <?php $related = $asset->retriveRelatedAssetsByRelationType("Preview"); ?>
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
         <div>
-          <span class="sprite-selo"></span>
+          
+
           <a href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">Imprimir</a>
-          <span class="sprite-selo"></span>
+
           <a href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">Baixar</a>
         </div>
       </div>
