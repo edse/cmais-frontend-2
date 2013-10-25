@@ -116,8 +116,8 @@
 <script>
 //carrossel interna
 $('#carrossel-i').responsiveCarousel({
-  arrowLeft: '.arrow-left span.personagens',
-  arrowRight: '.arrow-right span.personagens',
+  arrowLeft: '.arrow-left span.interna',
+  arrowRight: '.arrow-right span.interna',
   target:'#carrossel-i .slider-target',
   unitElement:'#carrossel-i .slider-target > li',
   mask:'#carrossel-i .slider-mask',
