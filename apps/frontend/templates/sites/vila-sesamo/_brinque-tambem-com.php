@@ -19,7 +19,7 @@
       ->andWhere('sa.section_id = ?', $campaign->getId())
       ->andWhereIn('sa.section_id', array(2387,2388,2389))
       ->andWhere('a.asset_type_id = ?', 1)
-      ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+      ->andWhere('a.date_start IS NULL OR a.date_start >= ?', date("Y-m-d H:i:s"))
       ->andWhere('a.id != ?', $asset->getId())
       ->andWhere('a.is_active = ?', 1)
       ->orderby('sa.display_order')
