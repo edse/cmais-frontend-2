@@ -33,7 +33,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         die("1");
       }
     }*/
-    print_r($_FILES['datafile']);
+    print_r($_FILES);
     die();
     $file_name = basename($_FILES['datafile']['name']);
     $data = file_get_contents($_FILES['datafile']['tmp_name']); 
