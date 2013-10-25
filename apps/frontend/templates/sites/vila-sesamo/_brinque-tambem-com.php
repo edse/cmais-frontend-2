@@ -104,14 +104,19 @@
   }   
 ?>
   <?php if($see_also): ?>
+  <!--relacionados-->  
   <section class="relacionados">
+    
     <h2>Brinque também com:</h2>
+    
+    <!--carrossel-->
     <div id="carrossel-interna">
       <div class="carrossel-i" id="carrossel-i"> 
         <div class="slider">
           <div class="slider-mask-wrap">
             <div class="slider-mask">
               <ul class="slider-target">
+                
                 <?php if($campaign): ?>
                   <?php if(count($see_also_by_campaign) > 0): ?>
                     <?php foreach($see_also_by_campaign as $k=>$d): ?>
@@ -124,19 +129,19 @@
                           }
                         }
                       ?>
-                <li class="<?php echo $assetSection->getSlug(); ?>">
-                  <div>
-                    <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                    <?php if($d->AssetType->getSlug() == "video"): ?>
-                      <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
-                    <?php else: ?>
-                      <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
-                      <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
-                    <?php endif; ?>
-                    </a>
-                  </div>
-                  <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i><?php echo $d->getTitle() ?></a>
-                </li>
+                      <li class="<?php echo $assetSection->getSlug(); ?>">
+                        <div>
+                          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                          <?php if($d->AssetType->getSlug() == "video"): ?>
+                            <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
+                          <?php else: ?>
+                            <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
+                            <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
+                          <?php endif; ?>
+                          </a>
+                        </div>
+                        <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i><?php echo $d->getTitle() ?></a>
+                      </li>
                     <?php endforeach; ?>
                   <?php endif; ?>
                 <?php else: ?>
@@ -153,20 +158,21 @@
                           }
                           $assetID[] = $d->getId();
                         ?>
-                <li class="<?php echo $assetSection->getSlug() ?>">
-                  <div>
-                    <?php if($d->AssetType->getSlug() == "video"): ?>
-                      <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
-                    <?php else: ?>
-                      <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
-                      <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
-                    <?php endif; ?>
-                  </div>
-                  <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i><?php echo $d->getTitle() ?></a>
-                </li>
+                      <li class="<?php echo $assetSection->getSlug() ?>">
+                        <div>
+                          <?php if($d->AssetType->getSlug() == "video"): ?>
+                            <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
+                          <?php else: ?>
+                            <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
+                            <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
+                          <?php endif; ?>
+                        </div>
+                        <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i><?php echo $d->getTitle() ?></a>
+                      </li>
                       <?php endforeach; ?>
                     <?php endif; ?>
                   <?php endif; ?>
+                  
                   <?php if(isset($see_also_by_categories)): ?>
                     <?php if(count($see_also_by_categories) > 0): ?>
                       <?php foreach($see_also_by_categories as $k=>$d): ?>
@@ -181,17 +187,17 @@
                             }
                             $assetID[] = $d->getId();
                           ?>
-                <li class="<?php echo $assetSection->getSlug() ?>">
-                  <div>
-                    <?php if($d->AssetType->getSlug() == "video"): ?>
-                      <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
-                    <?php else: ?>
-                      <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
-                      <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
-                    <?php endif; ?>
-                  </div>
-                  <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i><?php echo $d->getTitle() ?></a>
-                </li>
+                          <li class="<?php echo $assetSection->getSlug() ?>">
+                            <div>
+                              <?php if($d->AssetType->getSlug() == "video"): ?>
+                                <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
+                              <?php else: ?>
+                                <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
+                                <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
+                              <?php endif; ?>
+                            </div>
+                            <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i><?php echo $d->getTitle() ?></a>
+                          </li>
                         <?php endif; ?>
                       <?php endforeach; ?>
                     <?php endif; ?>
@@ -203,17 +209,17 @@
                       <?php foreach($see_also_by_section as $k=>$d): ?>
                         <?php if(!in_array($d->getId(), $assetID)): ?> 
                           <?php $assetID[] = $d->getId(); ?>
-                <li class="<?php echo $section->getTitle() ?>">
-                  <div>
-                    <?php if($d->AssetType->getSlug() == "video"): ?>
-                      <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
-                    <?php else: ?>
-                      <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
-                      <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
-                    <?php endif; ?>
-                  </div>
-                  <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i><?php echo $d->getTitle() ?></a>
-                </li>
+                            <li class="<?php echo $section->getTitle() ?>">
+                              <div>
+                                <?php if($d->AssetType->getSlug() == "video"): ?>
+                                  <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
+                                <?php else: ?>
+                                  <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
+                                  <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
+                                <?php endif; ?>
+                              </div>
+                              <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i><?php echo $d->getTitle() ?></a>
+                            </li>
                         <?php endif; ?>
                       <?php endforeach; ?>
                     <?php endif; ?>
@@ -226,16 +232,20 @@
               
           <div class="slider-nav">
             <div class="arrow-left arrow personagem">
-              <span title="Back" class="sprite-seta-esquerda personagens" style="display:block;"></span>
+              <span title="Back" class="sprite-seta-esquerda" style="display:block;"></span>
             </div>
             <div class="arrow-right arrow personagem">
-              <span title="Next" class="sprite-seta-direita personagens" style="display:block;"></span>
+              <span title="Next" class="sprite-seta-direita" style="display:block;"></span>
             </div>
           </div>
           
         </div>
       </div>
-    </div>    
+    </div> 
+    <!--carrossel-->
+       
     <!--span class="divisa tipo2"></span-->
+    
   </section>
+  <!--/relacionados-->
   <?php endif; ?>
