@@ -23,7 +23,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $file_size = $_FILES['datafile']['size'];
     //$file_mime_type = getMimeType($_FILES['datafile']['name']);
     //$file_mime_type = "image/jpg";
-    $extension = strtolower(end(explode('.',$file)));
+    $extension = strtolower(end(explode('.',$_FILES['datafile']['name'])));
     $file_mime_type = "image/".$extension;
     $attach = array();
     $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);
