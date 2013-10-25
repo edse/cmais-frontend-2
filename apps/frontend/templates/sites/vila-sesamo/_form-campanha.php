@@ -197,7 +197,7 @@
           type: "POST",
           dataType: "text",
           data: $("#form-contato").serialize(),
-          url: "/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php",
+          url: "http://cmais.com.br/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php",
           beforeSend: function(){
             $('input#enviar').attr('disabled','disabled');
             $(".msgAcerto").hide();
