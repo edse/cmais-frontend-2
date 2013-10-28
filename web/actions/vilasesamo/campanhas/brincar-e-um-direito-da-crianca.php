@@ -21,13 +21,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $data = file_get_contents($_FILES['datafile']['tmp_name']); 
     $file_contents = chunk_split(base64_encode($data));
     $file_size = $_FILES['datafile']['size'];
-    //$file_mime_type = getMimeType($_FILES['datafile']['name']);
+    $file_mime_type = getMimeType($_FILES['datafile']['name']);
     //$file_mime_type = "image/jpg";
-    $extension = strtolower(end(explode('.',$_FILES['datafile']['name'])));
-    $file_mime_type = "image/".$extension;
+    //$extension = strtolower(end(explode('.',$_FILES['datafile']['name'])));
+    //$file_mime_type = "image/".$extension;
     $attach = array();
     $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);
-    die($file_mime_type);
+    //die($file_mime_type);
     if (!in_array($file_mime_type, array("image/gif", "image/png", "image/jpg"))) {
       //if (unlink($_FILES['datafile']['tmp_name'])) {
         //header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=2");

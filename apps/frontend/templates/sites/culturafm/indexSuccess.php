@@ -1,181 +1,270 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/culturafm.js"></script>
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
+<link rel="stylesheet" href="/portal/css/tvcultura/sites/culturafm-home2013.css" type="text/css" />
 <script type="text/javascript" src="http://cmais.com.br/portal/js/swfobject/swfobject.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
+
+
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
-<!-- remover este css depois que acabar campanha da radio -->
-<script type="text/javascript">
-  $(function() {
-    $("body").addClass('home');
-   $('.m-colunistas, .submenu-interna').mouseover(function() {
-     $('.toggle-menu').slideDown("fast");
-   });
-   $('.m-colunistas, .submenu-interna').mouseleave(function() {
-     $('.toggle-menu').slideUp("fast");
-   });
-  });
-</script>
-<style type="text/css">
-  .programacao { height:255px; }
-</style>
 
-<?php
-/*
-<a href="http://culturafm.cmais.com.br/contato" class="position" title="Dê sua opinião">
-  <div style="position: fixed;top:247px; left:0;" class="btn-feedback"></div>
-</a>
-*/
-?>
 
-<div id="bg-site"></div>
-<!-- CAPA SITE -->
-<div id="capa-site">
-  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+<!-- container -->
+<div role="container">
+  
+  <?php include_partial_from_folder('sites/culturafm','global/newheader', array('site' => $site, 'uri' => $uri, 'program' => $program, 'siteSections'=>$siteSections)) ?>
+  
 
-  <!-- BARRA SITE -->
-  <div id="barra-site">
-       
-    <div class="topo-programa" id="home">
-      
-      <div id="horario" style="margin-top:10px;top:20px;">
-        <a href="javascript: window.open('http://culturafm.cmais.com.br/controleremoto','controle','width=400,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
-      </div>
+  <!--content-holder-->
+  <div id="content-holder">
     
-      <!-- descomentar esta linha depois q acabar campanha da radio -->
-      <h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>"></a></h2>
-      <?php if(isset($program) && $program->id > 0): ?>
-      <?php include_partial_from_folder('sites/culturafm','global/social-network', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-      <?php endif;?>
-
+    <!--coluna esquerda-->
+    <div class="grid3"> 
+         
+      <!--destaque cultura agora-->
+      <div class="destaque c-agora">
+        <h1>Cultura Agora<i class="seta"></i></h1>
+			<?php if(isset($displays["destaque-cultura-agora"])): ?>
+				<?php foreach ($displays["destaque-cultura-agora"] as $k => $d): ?>
+			        <!--item-->
+			        <article>
+			          
+			          <h2><?php echo $d->getTitle()?></h2>
+			          <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
+			            <p><?php echo $d->getDescription()?></p>  
+			          </a>
+			          <div class="linha-hr"></div>     
+			        </article>
+			        <!--item-->
+				<?php endforeach;?>
+			<?php endif;?>   
+      </div>  
+      <!--/destaque cultura agora-->
+      
+      
+      <!--programacao do dia -->
+	  <?php $date = date("Y/m/d");
+		$schedules = Doctrine_Query::create() -> select('s.*') 
+		-> from('Schedule s') 
+		-> where('s.channel_id = ?', 6) 
+		-> andWhere('s.date_start >= ? AND s.date_start <= ?', array($date . ' 00:00:00', $date . ' 23:59:59')) 
+		-> orderBy('s.date_start asc') 
+		-> limit(50) 
+		-> execute();
+      ?>
+      <div class="programacao">
+        <i class="seta2"></i>
+          <h2>Programação do Dia</h2>
+        <!--lista-->    
+        <ul>
+        <?php foreach($schedules as $k=>$d): 
+	         $agora = 0;
+	         if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))) $agora = 1;
+		?>        	
+          <li<?php if($agora==1) echo ' style="font-weight:bold!important;"'?>>
+            <span><?php echo format_datetime($d->getDateStart(), "HH:mm") ?></span>
+            <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->retriveTitle() ?>">
+              <span><?php echo $d->retriveTitle() ?></span>
+            </a>
+          </li>
+          <?php endforeach; ?>
+        </ul>  
+        <!--/lista-->
+        
+      </div>
+      <!--/programacao do dia -->
+      
+      <!--classicos na tv cultura-->
+      <div class="destaque c-classicos">
+        <i class="seta2"></i>
+          <h2>Classicos na Tv Cultura</h2>
+		<?php if(isset($displays["destaque-classicos"])): ?>
+			<?php foreach ($displays["destaque-classicos"] as $k => $d): ?>
+		        <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>" title="<?php echo $d->getTitle() ?>">
+		          <article>
+		            <img src="<?php echo $d->retriveImageUrlByImageUsage("default") ?>" alt="<?php echo $d->getTitle() ?>">
+		            <p class="titulo"><?php echo $d->getTitle() ?></p>
+		            <p><?php echo $d->getDescription() ?></p>
+		          </article>
+		        </a>
+            <?php endforeach; ?>
+    	<?php endif; ?>	
+      </div>  
+      <!--/classicos na tv cultura-->
+      
+      <!--destaque cd-->
+      <div class="destaque c-radio">
+        
+        
+   <?php if(isset($displays["destaque-foto-cd-da-semana"])): ?>
+	   <?php foreach ($displays["destaque-foto-cd-da-semana"] as $k => $d): ?>    
+        
+    	 <!--cd da semana-->
+        <div class="destaque c-radio-dest">
+          <i class="seta2"></i>
+          <h2>CD da Semana</h2>
+          
+          <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>" title="<?php echo $d->getTitle() ?>">
+            <article>
+              <img src="<?php echo $d->retriveImageUrlByImageUsage("default") ?>" alt="<?php echo $d->getTitle() ?>">
+              <p class="titulo"><?php echo $d->getTitle() ?></p>
+              <p><?php echo $d->getDescription() ?></p>
+            </article>
+          </a>
+          
+        </div>  
+        <!--/cd da semana-->
+        
+    	 <?php endforeach; ?>
+	   <?php endif; ?>	   
+        
+        <?php if(isset($displays["destaque-cd-da-semana"]))  include_partial_from_folder('blocks','global/display-1c-audio-gallery', array('displays' => $displays["destaque-cd-da-semana"])) ?>
+      </div>
+      <!--/destaque cd-->
       
     </div>
-    <?php if(isset($siteSections)): ?>
-    <!-- box-topo -->
-    <div class="box-topo grid3">
-      <?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
+    <!--/coluna esquerda-->
+    
+    
+    <!--coluna meio-->
+    <div class="grid4 marginLeft10">
+      
 
-      <?php if(isset($section)): ?>
-      <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
-      <div class="navegacao txt-10">
-        <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
-        <span>&gt;</span>
-        <a href="<?php echo $asset->retriveUrl() ?>" title="<?php echo $asset->getTitle()?>"><?php echo $asset->getTitle() ?></a>
-      </div>
-      <?php endif;?>
-      <?php endif;?>
-    </div>
-    <!-- /box-topo -->
-    <?php endif;?>
-  </div>
-  <!-- /BARRA SITE -->
-  <!-- MIOLO -->
-  <div id="miolo">
-    <?php include_partial_from_folder('blocks','global/shortcuts') ?>
+        	<div id="cfm-carrossel" class="container-destaque" style="margin-bottom: 10px;">
+				<?php if(isset($displays["destaque-carrossel"])): ?>
+					<?php foreach ($displays["destaque-carrossel"] as $k => $d): ?>          
+				      <!--item-->
+				      <!--div class="<?php if($k == 0): ?>active<?php endif; ?> item"-->
+				      	
+				      	<h2><?php echo $d->getTitle() ?></h2>
+				        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+				          <img width="424" src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>">
+				          <p> <?php echo $d->getDescription() ?></p>
+				        </a>
+				      
+				      <!--/div-->
+				      <!--/item-->
+				    <?php endforeach; ?>
+			  	 <?php endif; ?>         
+		  	 </div>
 
-    <!-- CONTEUDO PAGINA -->
-    <div id="conteudo-pagina">
-      <!-- CAPA -->
-      <div class="capa grid3">
-        <!-- ESQUERDA -->
-        <div id="esquerda" class="grid2">
+      <!--carrossel-->
+      
+      <!--destaque programas-->
+      <div class="container-destaque">
+		<?php if(isset($displays["destaque-programas"])): ?>
+			<?php foreach ($displays["destaque-programas"] as $k => $d): ?>	 	    
+		        <!--destaque small-->
+		        <div class="destaque-small <?php if($k == 1 || $k == 3) echo "marginLeft10"?>">
+		          <h2><?php echo $d->getTitle() ?></h2>
+		          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+		            <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>">
+		            <p> <?php echo $d->getDescription() ?></p>
+		          </a>
+		        </div>  
+		        <!--/destaque small-->
+		    <?php endforeach; ?>
+  		<?php endif; ?> 
+      </div>  
+      <!--/destaque programas-->
+      
+      <div class="linha-hr marginBottom20"></div>
+      
+      <!--destaque programas-->
+      <div class="container-destaque">
+		<?php if(isset($displays["destaque-compositor-mes"])): ?>
+			<?php foreach ($displays["destaque-compositor-mes"] as $k => $d): ?>	
+		        <!--destaque small-->
+		        <div class="destaque-small compositor">
+		         <h2><?php echo $d->getTitle() ?><i class="seta2"></i></h2>
+		          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+		            <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>">
+		            <p><?php echo $d->getDescription() ?> </p>
+		          </a>
+		        </div>  
+		        <!--/destaque small-->
+		    <?php endforeach; ?>
+  		<?php endif; ?> 
+        
+        
+        <!--destaque small-->
+        <div id="news-radio" class="destaque-small marginLeft10">
+          <h2>Newsletter<i class="seta2"></i></h2>
+          <img src="/portal/images/capaPrograma/culturafm/novahome/envelope.jpg" alt="Newsletter">
+          <p>Cadastre-se para receber e-mails com destaques da nossa programação</p>
           
-          <?php if(isset($displays["destaque-principal"])) include_partial_from_folder('sites/culturafm','global/display-carousel', array('displays' => $displays["destaque-principal"])) ?>
-          
-          <!-- col-esq -->
-          <div class="col-esq grid1">
             
-            <?php if(isset($displays["destaque-1"])) include_partial_from_folder('sites/culturafm','global/display', array('displays' => $displays["destaque-1"])) ?>
- 
-            <?php if(isset($displays["destaque-2"])) include_partial_from_folder('sites/culturafm','global/display', array('displays' => $displays["destaque-2"])) ?>
-            
-          </div>
-          <!-- /col-esq -->
-          <!-- col-dir -->
-          <div class="col-dir grid1">
-            <!-- BOX PADRAO Mais recentes -->
-            <div class="box-padrao grid1">
-              <div class="topo claro">
-                <span></span>
-                <div class="capa-titulo">
-                  <h4>Para ouvir</h4>
-                  <!-- <a href="#" class="setas" title="Guia do Ouvinte"></a> -->
-                </div>
-              </div>
-            </div>
-            <!-- BOX PADRAO Mais recentes -->
-            <!-- BOX RADIO -->
-            <div class="paraouvir" style="margin-bottom: 20px">
-              <?php if(isset($displays["destaque-podcast"])) include_partial_from_folder('blocks','global/display-1c-audio-gallery', array('displays' => $displays["destaque-podcast"])) ?>
-            </div>
-            <!-- /BOX RADIO -->
+          <!--form send news-->
+          <form id="form-email" action="" method="post">
+            <label for="newsletter" id="lbl_news">Digite aqui seu e-mail</label>
+            <div id="msgAcerto" style="display:none;">Cadastro efetuado com sucesso</div>
+            <div id="msgErro" style="display:none;">Erro! Tente novamente mais tarde.</div>
+            <input type="text" name="email_newsletter" id="news" class="news">
+            <input type="hidden" name="site" value="culturafm">
+            <input type="submit" name="send_news" id="send_news" class="send_news" value="Enviar">
+            <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none; width: 16px!important;height:16px!important;position: absolute;bottom: -26px;left: 50%; " id="ajax-loader" />
+          </form>
+          <!--!form send news-->
+        </div>  
+        <!--/destaque small-->
+        
+      
+      </div>  
+      <!--/destaque programas-->
+      
+      <!-- facebook-->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      
+      
+      <div class="fb-like-box" data-href="http://facebook.com/culturafmoficial" data-width="422" data-height="340" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+      <!-- /facebook-->
+      
+    </div>  
+    <!--/coluna meio-->
+    
+    <!--coluna esquerda-->
+    <div id="mais-ouvidos" class="grid2">
+      <!--h2>Mais Ouvidos</h2-->
+  
+      <!--lista-->
+      <ul class="mais-ouvidos">
 
-            <?php if(isset($displays["destaque-selecao-do-ouvinte"])) include_partial_from_folder('sites/culturafm','global/display-text-only', array('displays' => $displays["destaque-selecao-do-ouvinte"])) ?>
-
-          </div>
-          <!-- /col-dir -->
-        </div>
-        <!-- /ESQUERDA -->
-        <!-- DIREITA -->
-        <div id="direita" class="grid1">
-           <!-- BOX PADRAO -->
-            <div class="box-padrao grid1">
-              <div class="topo claro">
-                <span></span>
-                <div class="capa-titulo">
-                  <h4>Programação do dia</h4>
-                </div>
-              </div>
-              <?php $date = date("Y/m/d");
-      $schedules = Doctrine_Query::create() -> select('s.*') -> from('Schedule s') -> where('s.channel_id = ?', 6) -> andWhere('s.date_start >= ? AND s.date_start <= ?', array($date . ' 00:00:00', $date . ' 23:59:59')) -> orderBy('s.date_start asc') -> limit(50) -> execute();
-              ?>
-              <ul class="programacao">
-                <?php foreach($schedules as $k=>$d): ?>
-                <li><a href="<?php echo $d->retriveUrl() ?>" name="<?php echo $d->retriveTitle() ?>" title="<?php echo $d->retriveTitle() ?>"><span><?php echo format_datetime($d->getDateStart(), "HH:mm") ?></span><?php echo $d->retriveTitle() ?></a></li>
-                <?php endforeach; ?>
-              </ul>
-              <!--a href="http://culturafm.cmais.com.br/guia-do-ouvinte" class="vermais">Ver mais</a-->
-            </div>
-            <!-- BOX PADRAO -->
-          
-          
-          <!-- BOX PUBLICIDADE -->
-          <div class="box-publicidade grid1">
-            <!-- culturafm-300x250 -->
-            <script type='text/javascript'>
-        GA_googleFillSlot("culturafm-300x250");
-
-            </script>
-          </div>
-          <!-- / BOX PUBLICIDADE -->
-          
-          <!-- BOX PADRAO -->
-            <div class="box-padrao grid1">
-              <div class="topo claro">
-                <span></span>
-                <div class="capa-titulo">
-                  <h4>Colunistas</h4>
-                </div>
-              </div>
-              <ul class="programacao" style="height:auto; overflow:hidden;">
-                <li><a href="http://culturafm.cmais.com.br/colunistas/amaral-vieira">Amaral Vieira</a></li>
-                <li><a href="http://culturafm.cmais.com.br/colunistas/joao-marcos-coelho">João Marcos Coelho</a></li>
-                <li><a href="http://culturafm.cmais.com.br/colunistas/joao-mauricio-galindo">João Maurício Galindo</a></li>
-                <li><a href="http://culturafm.cmais.com.br/colunistas/julio-medaglia">Júlio Medaglia</a></li>
-                <li><a href="http://culturafm.cmais.com.br/colunistas/walter-lourencao">Walter Lourenção</a></li>
-              </ul>
-              
-            </div>
-            <!-- BOX PADRAO -->
-          
-          <?php include_partial_from_folder('sites/culturafm','global/facebook-likeBox', array('site' => $site, 'uri' => $uri)) ?>
-          
-        </div>
-        <!-- /DIREITA -->
-      </div>
-      <!-- /CAPA -->
+        <!--/item-->
+		<?php if(isset($displays["destaque-mais-ouvidos"])): ?>
+			<?php foreach ($displays["destaque-mais-ouvidos"] as $k => $d): ?>	 		
+				<li>
+					<a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
+						<img src="http://midia.cmais.com.br/displays/<?php echo $d->getImage() ?>" alt="<?php echo $d->getTitle() ?>" width="50px" height="50px"/>
+						<p>
+						  
+						  <?php if($d->getDescription() != ""){ 
+								  echo $d->getTitle()."<br />";
+								  echo $d->getDescription();
+								}else{
+									echo "<br />".$d->getTitle();
+								}
+							?>	
+					  </p>
+					</a>
+				</li>
+		    <?php endforeach; ?>
+		 <?php endif; ?>
+        <!--item-->
+      </ul>  
+      <!--/lista-->
+      
     </div>
-    <!-- /CONTEUDO PAGINA -->
-  </div>
-  <!-- /MIOLO -->
+    <!--/coluna esquerda-->
+    
+  </div>  
+  <!--/content-holder-->
+    
 </div>
-<!-- / CAPA SITE -->
+<!-- /container-->
+
