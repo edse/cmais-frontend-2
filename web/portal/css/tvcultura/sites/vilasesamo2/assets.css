@@ -61,18 +61,20 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form-horizontal .control-group { float: left;    margin-left: 0;    margin-right: 0;    width: 91%; }
 .form-horizontal .control-group input {margin: 0;}
 .form-horizontal .span8.control-group input{width:360px; margin-left:10px;}
+.form-horizontal .span8.control-group.cidade{width:470px!important;}
+.form-horizontal .span8.control-group.cidade input{width:420px;}
 .form-horizontal .idade.span2 input,
 .form-horizontal .span8.control-group input,
 .form-horizontal .control-group a  { height:26px; line-height:26px; display: block;border-radius: 0;height: 35px;float: left;}
 .form-horizontal .estado .control-label { width:auto; }
 .form-horizontal .estado .control-group,
-.form-horizontal .estado select { width:100%; }
+.form-horizontal .estado select { width:90px; }
 .form-horizontal .estado select { height:36px; line-height:36px; }
 .form-horizontal .estado .control-group { margin:0; }
 .form-horizontal .control-group { margin:0 0 2% 0; min-height:50px; }
 .form-horizontal .control-group.idade  .control-group { width: 66%; float:right; } 
 .form-horizontal .idade.span2 input{width: 95px;margin-left: 10px;}
-.form-horizontal .idade.span2 { width:145px; float:left; }
+.form-horizontal .idade.span2 { width:145px; float:left; margin-left:20px;}
 .form-horizontal .span2 { width:21%; float:right; }
 #content section.form .form-horizontal .span8 { width: 410px; }
 .form-horizontal .span2 input { width: 75%; }
