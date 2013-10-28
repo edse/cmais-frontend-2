@@ -5,14 +5,14 @@ body { background:#ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #esquerda2 { /*margin-top:-20px;*/}
 .submenu-interna {width:120px;}
 #barra-site h2 {margin-top:10px;}
-.topo-programa .controle { background:url(/portal/images/capaPrograma/controle-remoto.jpg) no-repeat; display: block; text-indent:-9999px; float:right; width: 163px; height:59px; margin-top:20px; }
+/*.topo-programa .controle { background:url(/portal/images/capaPrograma/controle-remoto.jpg) no-repeat; display: block; text-indent:-9999px; float:right; width: 163px; height:59px; margin-top:20px; }
 .menu-interna .m-controle { padding:0 5px 0 22px !important;}
 .menu-interna .m-controle span  { background:url(/portal/images/btn-play.png) no-repeat -2px -48px; width:12px; height:12px; top:5px; left:5px;}
 .menu-interna .m-controle span { _background-image:url(/portal/images/btn-play.gif) no-repeat;}
 .menu-interna .m-controle:hover span,
 .menu-interna .m-controle.ativo span {background-position:-2px -60px;}
 
-.menu-interna li { background:#e8e8e8; }
+.menu-interna li { background:#e8e8e8; }*/
 
 .box-padrao .topo span,
 .box-padrao .claro span {background-position: -120px 0;}
