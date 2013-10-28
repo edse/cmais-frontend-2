@@ -36,7 +36,7 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #main-header .redes .curtir{width:202px; float: left;}
 #main-header .redes iframe#twitter-widget-0{margin-left: -130px;}
 
-#main-header #listen{width:220px; overflow:hidden; float:right;}
+#main-header #listen{width:240px; overflow:hidden; float:right;}
 #main-header #listen h1{float:left; font-family:'gotham_blackregular', Arial, Helvetica, sans-serif; color:#666666; clear:both; font-size:12px; width: 100%; text-align: left;text-transform:uppercase; }
 #main-header #listen .link-radio{padding:4px 4px; font-family:'gotham_mediumregular', Arial, Helvetica, sans-serif; font-size:12px;color:#FFFFFF; float:left;text-transform:uppercase; letter-spacing: 0.03em;}
 #main-header #listen .cbrasil{background:#999999;}
