@@ -75,7 +75,7 @@
 #carrossel-interna .arrow-left { left: 0;}
 #carrossel-interna .arrow-right { right: 0;}
 
-#carrossel-interna .slider-mask-wrap { margin: 0 auto;max-width: 830px;margin-bottom: 10px;position: relative;height: 244px;}
+#carrossel-interna .slider-mask-wrap { margin: 0 auto;max-width: 830px;margin-bottom: 10px;position: relative;height: 248px;}
 #carrossel-interna .slider-mask { overflow: hidden; position: absolute; zoom: 1; max-width:830px;} 
 #carrossel-interna .slider-target { width: 2000px; margin: 0 auto; } 
 #carrossel-interna .slider ul { margin: 0; padding: 0; list-style-type: none; width:1800px !important;}
@@ -87,13 +87,13 @@
 #carrossel-interna .slider .inner { width:200px; height:200px; display:block; overflow:hidden; padding:0;}
 #carrossel-interna .examples { padding: 1em; background-color: #2f4f4f;}
 #carrossel-interna #menu span {white-space: nowrap; }
-#carrossel-interna .slider li img { border-top:1px solid; border-bottom:1px solid; margin:0 -1px; }
-#carrossel-interna .slider li.atividade a{ background:#7732e5;border-bottom-color:#f07317; }
-#carrossel-interna .slider li.atividade img{border-top-color:#7732e5; border-bottom-color:#7732e5;}
-#carrossel-interna .slider li.jogo a{ background:#3aaaec; border-color:#0191fb; }
-#carrossel-interna .slider li.jogo img { border-top-color:#7732e5; border-bottom-color:#7732e5;}
-#carrossel-interna .slider li.video a{ background:#f5861f; border-bottom-color:#f07317; }
-#carrossel-interna .slider li.video img { border-top-color:#7732e5; border-bottom-color:#7732e5;}
+#carrossel-interna .slider li img { border-top:2px solid; border-bottom:2px solid; margin:0 -1px; }
+#carrossel-interna .slider li.atividades a{ background:#7732e5;border-bottom:2px solid #f07317; }
+#carrossel-interna .slider li.atividades img{border-top-color:#7732e5; border-bottom-color:#7732e5;}
+#carrossel-interna .slider li.jogos a{ background:#3aaaec; border-bottom:2px solid #f07317; }
+#carrossel-interna .slider li.jogos img { border-top-color:#7732e5; border-bottom-color:#7732e5;}
+#carrossel-interna .slider li.videos a{ background:#f5861f; border-bottom:2px solid #f07317; }
+#carrossel-interna .slider li.videos img { border-top-color:#7732e5; border-bottom-color:#7732e5;}
 #carrossel-interna .slider li .nome { padding:0; display: block; height:40px; line-height: 40px; }
 #carrossel-interna .slider li .nome i { float:left; margin:0 15px; }
 #carrossel-interna .slider li .nome i.sprite-ico-videos-p { margin-top:4px; }
