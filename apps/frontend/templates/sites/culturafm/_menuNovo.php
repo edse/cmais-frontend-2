@@ -1,6 +1,7 @@
+          
+          <ul class="menu-interna grid3">
           <?php if(count($siteSections) > 0): ?>
           <!-- menu interna -->
-          <ul class="menu-interna grid3">
             <?php foreach($siteSections as $s): ?>
               <?php if($s->getSlug() == "programasNAO"): ?>
                 <?php 
@@ -40,15 +41,16 @@
                   
               <?php endif; ?>
             <?php endforeach; ?>
-                 <li class="m-search">
-                    <!--search-->
-                    <form id="search" role="search" class="fixed-font clearfix" action="/culturafm/buscar" method="get">
-                      <input type="text" name="busca" id="search_field" title="Campo de busca" value="BUSCA" required="">
-                      <input type="submit" id="search_submit" value="ok">
-                      <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
-                    </form>
-                    <!--/search-->
-                  </li>
+            <?php endif; ?>
+             <li class="m-search">
+                <!--search-->
+                <form id="search" role="search" class="fixed-font clearfix" action="/culturafm/buscar" method="get">
+                  <input type="text" name="busca" id="search_field" title="Campo de busca" value="BUSCA" required="">
+                  <input type="submit" id="search_submit" value="ok">
+                  <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                </form>
+                <!--/search-->
+              </li>
           </ul>
           <!-- /menu interna -->
-          <?php endif; ?>
+          
