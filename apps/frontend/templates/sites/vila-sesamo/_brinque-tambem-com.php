@@ -104,7 +104,7 @@
     }
   }   
 ?>
-  
+  <?php if(isset($campaign)): ?>sim<?php endif; ?>
   
 <script>
 //carrossel interna
