@@ -4,7 +4,7 @@
    */
   $categories = array();
   $sections = $asset->getSections();
-  $campaign = false;
+  $campaign = "";
   foreach($sections as $s) {
     if($s->getParentSectionId() > 0) {
       $parentSection = Doctrine::getTable('Section')->findOneById($s->getParentSectionId());
