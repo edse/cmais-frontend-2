@@ -440,6 +440,7 @@ class _sectionActions extends sfActions
                 ->orderBy('sa.display_order')
                 ->limit(20);
               }else{
+              	die();
                 $this->assetsQuery = Doctrine_Query::create()
                   ->select('a.*')
                   ->from('Asset a, AssetVideo av');
