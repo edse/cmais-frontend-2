@@ -873,18 +873,7 @@ class _sectionActions extends sfActions
                 ->andWhereIn('a.id', $assetIds)
                 ->orderBy('a.updated_at DESC');
             }
-            else if($this->section->getSlug() == "videos"){
-				   $this->assetsQuery = Doctrine_Query::create()
-	                ->select('a.*')
-	                ->from('Asset a, AssetVideo av, SectionAsset sa, AssetVideoGallery avg')
-	                ->where('sa.section_id = ?', $this->section->id)
-	                ->andWhere('sa.asset_id = a.id')
-	                ->andWhere('av.asset_id = a.id')
-	                ->andWhere('av.youtube_id != "" OR avg.youtube_id != ""')
-	                ->andWhere('a.is_active = ?', 1)
-	                ->orderBy('a.created_at desc');
-	                //->orderBy('sa.display_order asc');
-            } else {
+            else {
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, SectionAsset sa')
@@ -905,10 +894,6 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->orderBy('a.title asc');
               else
                 $this->assetsQuery->orderBy('a.created_at desc');
-			  
-
-
-			  
             }
           }
         }
