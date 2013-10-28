@@ -47,9 +47,7 @@
         <!--Nome-->
         <div class="control-group span8">
           <label class="control-label sprite-ico-nome" for="nome"></label>
-          <div class="controls">
-            <input type="text" id="nome" placeholder="Nome" name="nome">
-          </div>
+          <input type="text" id="nome" placeholder="Nome" name="nome">
         </div>
         <!--/Nome-->
         
