@@ -63,7 +63,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 
 .form-horizontal .control-group { float: left;    margin-left: 0;    margin-right: 0;    width: 91%; }
 .form-horizontal .control-group input {margin: 0;}
-.form-horizontal .span8.control-group input{width:360px;*width:100px; margin-left:10px;}
+.form-horizontal .span8.control-group input{width:360px;*width:1000px!important; margin-left:10px;}
 .form-horizontal .span8.control-group.cidade{width:470px!important;}
 .form-horizontal .span8.control-group.cidade input{width:420px;}
 .form-horizontal .idade.span2 input,
