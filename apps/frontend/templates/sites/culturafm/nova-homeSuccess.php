@@ -270,20 +270,21 @@
 
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script>
-$('.c-radio .chapeu').remove();
-$('.c-radio').find('.titulos').remove();
-$('#search_field').focus(function(){
-  $(this).val('');
-});
-$('#search_field').focusout(function(){
-  if($(this).val() == ''){
-		$(this).val('BUSCA');  	
-  }
-});
-
-$//('.c-radio').append('<div class="seta2" style="top: 14px;left: 10px;"></div>')
-var validator = $('#form-email').validate({
-      
+$(document).ready(function(){
+  $('.c-radio .chapeu').remove();
+  $('.c-radio').find('.titulos').remove();
+  $('#search_field').focus(function(){
+    $(this).val('');
+  });
+  $('#search_field').focusout(function(){
+    if($(this).val() == ''){
+  		$(this).val('BUSCA');  	
+    }
+  });
+  
+  //$('.c-radio').append('<div class="seta2" style="top: 14px;left: 10px;"></div>')
+  var validator = $('#form-email').validate({
+        
       submitHandler: function(form){
         //form.submit();
         $.ajax({
@@ -321,5 +322,5 @@ var validator = $('#form-email').validate({
         label.html("&nbsp;");
       }
     });
-
+});
 </script>
