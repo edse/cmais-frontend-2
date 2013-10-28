@@ -67,8 +67,8 @@
         
         <div class="descritivo">
           <h3><?php echo $section->getTitle() ?></h3>
-          <p><?php //echo html_entity_decode($displays["sobre-a-personagem"][0]->Asset->AssetContent->render()) ?></p>
-          <p><?php echo $section->getDescription() ?></p>
+          <p><?php echo html_entity_decode($displays["sobre-a-personagem"][0]->Asset->AssetContent->render()) ?></p>
+          <p><?php //echo $section->getDescription() ?></p>
         </div>  
       </div>
       <!--/box-personagem-->
