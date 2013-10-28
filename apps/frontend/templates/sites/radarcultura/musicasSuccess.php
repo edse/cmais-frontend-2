@@ -40,9 +40,9 @@
         <div class="row-fluid musicas">
             <h1>Lista de músicas por título</h1>
             <?php if(isset($letter)):?>
-              <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
+              <small><strong id="qtd_result"><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
             <?php else:?>
-              <small><strong><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small>
+              <small><strong id="qtd_result"><?php echo $pager->count()?></strong> MÚSICAS CADASTRADAS</small>
             <?php endif; ?>  
             <div class="span5 pull-right">
               <!--busca-->
@@ -53,7 +53,7 @@
                    <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" value="<?php if(isset($busca_radar)) echo $busca_radar?>" /><span class="add-on pull-right"><i class="icon-search"></i></span>
                   </div>
                 </div>  
-                <div class="row-fluid">
+                <!-- div class="row-fluid">
                   <label class="radio inline" style="margin-left: 35px">
                     <input type="radio" name="busca-por" id="busca-por1" value="musicas" checked="checked" />
                     Por Título
@@ -62,7 +62,7 @@
                     <input type="radio" name="busca-por" id="busca-por2" value="artistas" />
                     Por Artista
                   </label>
-                </div>
+                </div-->
               </form>
               <!--/busca--> 
             </div>
@@ -120,7 +120,7 @@
       <?php endif; ?>
         
       <!--Centro pagina-->
-      <div class="row-fluid musicas" >
+      <div class="row-fluid musicas"  id="resultado_busca">
           <input type="hidden" id="btn-pressed" value="" name="">
           <table class="table table-striped musica">
             <tbody>
@@ -286,13 +286,28 @@
         <script type="text/javascript">
         $(document).ready(function(){
 
-          $('#busca-radar').submit(function() {
-            if($("#busca-por1").is(':checked'))
-              self.location.href = "/musicas/busca-por/"+$('#busca-input').val();
-            else if($("#busca-por2").is(':checked'))
-              self.location.href = "/artistas/busca-por/"+$('#busca-input').val();
-            return false;
-          });                    
+ 		 $('#busca-radar').submit(function() {
+        	if($("#busca-input").val() != "" ){
+	 			$("#resultado_busca").html("");
+	 			$("#resultado_paginacao").html("");
+	 			$('.popover').hide();
+	 			
+	 			
+		 		$.ajax({
+		           type : "GET", 
+		           dataType: "jsonp",
+		           data: $('#busca-radar').serialize(),
+		           url: "http://app.cmais.com.br/index.php/ajax/radar-musica",
+		           success: function(json){
+		             	$("#qtd_result").text(json.qtd_result);
+		             	$("#resultado_busca").html(json.data);
+		             	$("#resultado_paginacao").html(json.paginacao);
+		          }
+		        });
+	         
+		  	}
+	        return false;
+	      });                 
           
           var validator = $('#form-indicacao').validate({
             rules:{
