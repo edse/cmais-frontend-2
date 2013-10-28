@@ -122,12 +122,6 @@
         </div>
         <!--/Msg-->
         
-        <!--Termos e condições-->
-        <div class="span12 termo">
-          <?php include_partial_from_folder('sites/vila-sesamo', 'global/termos') ?>
-        </div>
-        <!--/Termos e condições-->
-        
         <!--concorda-->
         <div class="control-group span11">
           <label class="radio">
@@ -137,6 +131,13 @@
           <button type="submit" class="btn">enviar minha brincadeira</button>
         </div>
         <!--/concorda-->
+        
+        <!--Termos e condições-->
+        <div class="span12 termo">
+          <?php include_partial_from_folder('sites/vila-sesamo', 'global/termos') ?>
+        </div>
+        <!--/Termos e condições-->
+         
         
       </form>
       <!--/form-->
