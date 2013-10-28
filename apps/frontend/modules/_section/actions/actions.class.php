@@ -874,7 +874,8 @@ class _sectionActions extends sfActions
                 ->orderBy('a.updated_at DESC');
             }
             else {
-            	die("video");
+            	
+
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, SectionAsset sa')
