@@ -1,6 +1,6 @@
 <?php
   /*
-   * Pega a campanha e as categorias as quais o asset pertence
+   * Pega a campanha (seção filha de "campanhas") e as categorias (seçao filha de "categorias") as quais o asset pertence
    */
   $categories = array();
   $sections = $asset->getSections();
@@ -32,17 +32,28 @@
 
 <script>
   $("body").addClass("interna jogos");
-
 </script>
+
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
+
+<!--content-->
 <div id="content">
-  <section class="scroll row-fluid">
-    <h3><i class="sprite-icon-colorir-med"></i><?php echo $section->getTitle() ?><i class="seta-scroll sprite-scroll-jogos"></i></h3>
-  </section>
+  
+  <!--section -->
   <section class="filtro row-fluid">
-    <h3><i class="sprite-icon-colorir-med"></i><?php echo $section->getTitle() ?><a class="todos-assets"><i class="sprite-btn-voltar-jogos"></i><p>todos os jogos</p></a></h3>
+    
+    <h1>
+      <i class="sprite-icon-colorir-med"></i>
+      <?php echo $section->getTitle() ?>
+      <a class="todos-assets" title="voltar para todos jogos">
+        <i class="sprite-btn-voltar-jogos"></i>
+        <p>todos os jogos</p>
+      </a>
+    </h1>
+    
+    <!--conteudo-asset-->
     <div class="conteudo-asset">
       
       <h2><?php echo $asset->getTitle() ?></h2>
@@ -63,7 +74,12 @@
         }
       ?>
       <?php if($seloImageUrl): ?>
-      <p><a href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>"><img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" /></a><?php echo $asset->getDescription() ?></p>
+      <p>
+        <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
+          <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
+        </a>
+        <?php echo $asset->getDescription() ?>
+      </p>
       <?php endif; ?>
       
       <?php if(isset($asset)): ?>
@@ -74,50 +90,13 @@
       
     </div>
   </section>
+  <!--/section-->
   
   <?php include_partial_from_folder('sites/vila-sesamo', 'global/brinque-tambem-com', array("site" => $site, "section" => $section, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
   
   <?php include_partial_from_folder('sites/vila-sesamo', 'global/form-campanha', array("site" => $site, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
 
-  <?php include_partial_from_folder('sites/vila-sesamo', 'global/para-os-pais', array("site" => $site, "uri" => $uri)) ?>
+  <?php include_partial_from_folder('sites/vila-sesamo', 'global/para-os-pais', array("site" => $site, "asset" => $asset, "categories" => $categories, "uri" => $uri)) ?>
 
 </div>
-<script>
-//carrossel interna
-$('#carrossel-i').responsiveCarousel({
-  arrowLeft: '.arrow-left span.personagens',
-  arrowRight: '.arrow-right span.personagens',
-  target:'#carrossel-i .slider-target',
-  unitElement:'#carrossel-i .slider-target > li',
-  mask:'#carrossel-i .slider-mask',
-  easing:'linear',
-  dragEvents:true,
-  speed:200,
-  slideSpeed:1000
-});
-
-
-if(screen.width > 1024){
-  $('#carrossel-i').mouseenter(function(){
-    $('.arrow.personagem').fadeIn('fast');
-  });
-  
-  $('#carrossel-mobile').mouseenter(function(){
-    $('.arrow.destaque-mobile').fadeIn('fast');
-  });
-};
-if(navigator.appName!='Microsoft Internet Explorer')
-{
-  //carrossel personagens redraw pra tablet e celular home
-  window.addEventListener('load', function() {
-    $('.carrossel-i, #carrossel-mobile').responsiveCarousel('redraw');
-  });
-  window.addEventListener("orientationchange", function() {
-    $('.carrossel-i, #carrossel-mobile').responsiveCarousel('redraw');
-  }, false);
-  window.addEventListener("resize", function() {
-    $('.carrossel-i, #carrossel-mobile').responsiveCarousel('redraw');
-  }, false);
-  //carrossel personagens redraw pra tablet e celular home
-}
-</script>
+<!--/content-->

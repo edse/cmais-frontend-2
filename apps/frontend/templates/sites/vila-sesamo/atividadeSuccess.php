@@ -49,7 +49,7 @@
       <?php echo $section->getTitle() ?>
       <a class="todos-assets" title="voltar para todas atividades">
         <i class="sprite-btn-voltar-atividades"></i>
-        <p>todos as atividades</p>
+        <p>todas as atividades</p>
       </a>
     </h1>
     
@@ -74,14 +74,12 @@
         }
       ?>
       <?php if($seloImageUrl): ?>
-        
-        <p>
-          <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
-            <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
-          </a>
-          <?php echo $asset->getDescription() ?>
-        </p>
-        
+      <p>
+        <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
+          <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
+        </a>
+        <?php echo $asset->getDescription() ?>
+      </p>
       <?php endif; ?>
       
       <?php if(isset($asset)): ?>
@@ -99,7 +97,7 @@
     <!--/conteudo-asset-->
     
   </section>
-  <!--/section -->
+  <!--/section-->
   
   <?php include_partial_from_folder('sites/vila-sesamo', 'global/brinque-tambem-com', array("site" => $site, "section" => $section, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
   
@@ -108,6 +106,4 @@
   <?php include_partial_from_folder('sites/vila-sesamo', 'global/para-os-pais', array("site" => $site, "asset" => $asset, "categories" => $categories, "uri" => $uri)) ?>
 
 </div>
-<!--content-->
-
-
+<!--/content-->
