@@ -30,41 +30,8 @@
     <!-- CAPA SITE -->
     <div id="capa-site">
 
-      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+        <?php include_partial_from_folder('sites/culturafm','global/newheader', array('site' => $site, 'uri' => $uri, 'program' => $program, 'siteSections'=>$siteSections)) ?>
 
-      <!-- BARRA SITE -->
-      <div id="barra-site">
-
-        <div class="topo-programa">
-       
-          <h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>"></a></h2>
-          
-          <?php if(isset($program) && $program->id > 0): ?>
-          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
-          <div id="horario">
-          	<a href="javascript: window.open('http://culturafm.cmais.com.br/controleremoto','controle','width=400,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
-          </div>         
-        </div>
-
-        <?php if(isset($siteSections)): ?>
-        <!-- box-topo -->
-        <div class="box-topo grid3">
-          
-          <?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
-
-            <div class="navegacao txt-10">
-              <a href="http://culturafm.cmais.com.br" title="Home">Home</a>
-              <span>&gt;</span>
-              <a href="http://culturafm.cmais.com.br/grade-de-programacao" title="Programação">Programação</a>
-            </div>
-          
-        </div>
-        <!-- /box-topo -->
-        <?php endif; ?>
-
-      </div>
-      <!-- /BARRA SITE -->
 
       <!-- MIOLO -->
       <div id="miolo">

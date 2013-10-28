@@ -5,7 +5,12 @@
     <!--logo-->
     <h1>
       <a href="http://culturafm.cmais.com.br" title="">
-        <img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>">
+        
+        <?php if($site->getSlug() == "culturafm"): ?>
+        	<img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>">
+        <?php else: ?>
+        	<img title="Rádio Cultura FM - 103,3" alt="Rádio Cultura FM - 103,3" src="http://midia.cmais.com.br/programs/11db72b2054660f3393cffc7eda03b80ef3255c6.png">	
+       	<?php endif; ?> 	
       </a>
     </h1>
     <!--/logo-->
