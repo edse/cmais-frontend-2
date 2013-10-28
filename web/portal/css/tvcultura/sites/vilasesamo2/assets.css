@@ -56,7 +56,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 #content section.form h2 { font-size: 25px;margin-bottom: 20px; }
 #content .form input.error,
 #content .form select.error,
-#content .form textarea.error{margin-left: 10px;border: #fffd2f;color: #fffd2f!important;background: #737373;}
+#content .form textarea.error{margin-left: 10px;border: #fffd2f 2px solid;color: #fffd2f!important;background: #737373;}
 .form-horizontal .control-label {text-align:left; float:left; width:40px !important;}
 .form-horizontal .control-group.span12{width:100%;}
 .form-horizontal .control-group textarea { width: 525px;margin-left: 1%;height: 80px;margin-left: 10px;border-radius: 0px; }
