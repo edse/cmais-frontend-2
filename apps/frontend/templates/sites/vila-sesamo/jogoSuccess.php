@@ -2,9 +2,10 @@
   /*
    * Pega a campanha (seção filha de "campanhas") e as categorias (seçao filha de "categorias") as quais o asset pertence
    */
+  /*
   $categories = array();
   $sections = $asset->getSections();
-  $campaign = "";
+  $campaign = false;
   foreach($sections as $s) {
     if($s->getParentSectionId() > 0) {
       $parentSection = Doctrine::getTable('Section')->findOneById($s->getParentSectionId());
@@ -19,6 +20,30 @@
       }
     }
   }
+   */
+  $categories = array();
+  $sections = $asset->getSections();
+  foreach($sections as $s) {
+    if($s->getParentSectionId() > 0) {
+      $parentSection = Doctrine::getTable('Section')->findOneById($s->getParentSectionId());
+      if($parentSection->getSlug() == "categorias") {
+        $categories[] = $s;
+      }
+    }
+  }
+  $campaign = "";
+  foreach($sections as $s) {
+    if($s->getParentSectionId() > 0) {
+      $parentSection = Doctrine::getTable('Section')->findOneById($s->getParentSectionId());
+      if($parentSection->getSlug() == "campanhas") {
+        if($s->getIsActive() == 1) { 
+          $campaign = $s;
+          break;
+        }
+      }
+    }
+  }
+     
 ?>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
