@@ -109,11 +109,14 @@ $(function(){
 							}else{
 		                      $url = $d->retriveImageUrlByImageUsage("image-3");
 							}
+							
+							if($videos[0]->AssetVideo->getYoutubeId() != "" || $d->getYoutubeId() != ""):
 	                    ?>             	
 	          	  	  	<li class="conteudo-lista">
 	          	  	  	  <a href="<?php echo $d->retriveUrl() ?>" class="bg" title="<?php echo $d->getTitle() ?>"><img class="" src="<?php echo $url ?>" alt="<?php echo $d->getTitle() ?>" /><span></span></a>
 	          	  	  	  <a href="<?php echo $d->retriveUrl() ?>" class="titulos" title="<?php echo $d->getTitle() ?>"><?php echo $d->getTitle() ?></a>
 	          	  	  	</li>
+	          	  	  	<?php endif; ?>
           	  	  	<?php endforeach; ?>
           	  	  <?php endif; ?>
           	      </ul>
