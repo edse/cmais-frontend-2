@@ -60,8 +60,10 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 
 .form-horizontal .control-group { float: left;    margin-left: 0;    margin-right: 0;    width: 91%; }
 .form-horizontal .control-group input {float: right;    margin: 0;    width: 95%; }
-.form-horizontal .control-group input,
-.form-horizontal .control-group a  { height:26px; line-height:26px; display: block;border-radius: 0;height: 35px;float: left; width:362px;}
+.form-horizontal .span8.control-group input{width:360px; margin-left:10px;}
+
+.form-horizontal .span8.control-group input,
+.form-horizontal .control-group a  { height:26px; line-height:26px; display: block;border-radius: 0;height: 35px;float: left;}
 .form-horizontal .estado .control-label { width:auto; }
 .form-horizontal .estado .control-group,
 .form-horizontal .estado select { width:100%; }
