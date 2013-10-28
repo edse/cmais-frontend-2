@@ -271,18 +271,7 @@
   <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script>
 $(document).ready(function(){
-  $('.c-radio .chapeu').remove();
-  $('.c-radio').find('.titulos').remove();
-  $('#search_field').focus(function(){
-    $(this).val('');
-  });
-  $('#search_field').focusout(function(){
-    if($(this).val() == ''){
-      $(this).val('BUSCA');   
-    }
-  });
-  
-  //$('.c-radio').append('<div class="seta2" style="top: 14px;left: 10px;"></div>')
+
   var validator = $('#form-email').validate({
         
       submitHandler: function(form){
@@ -290,15 +279,14 @@ $(document).ready(function(){
         $.ajax({
           type: "POST",
           dataType: "text",
-          //url: "http://app.cmais.com.br/actions/culturafm/newsletter.php",
-          url: "/actions/culturafm/newsletter.php",
+          url: "http://app.cmais.com.br/actions/culturafm/newsletter.php",
+          //url: "/actions/culturafm/newsletter.php",
           data: $("#form-email").serialize(),
           beforeSend: function(){
             $('#send_news, #news, #lbl_news').hide();
             $('#ajax-loader').show();
           },
           success: function(data){
-            //window.location.href="#";
             if(data == "0"){
               $('#ajax-loader, #news').hide();
               $('#msgAcerto').show();

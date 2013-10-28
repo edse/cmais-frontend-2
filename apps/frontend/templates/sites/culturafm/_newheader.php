@@ -39,4 +39,18 @@
     
   </div>
   <!--/header principal-->
-
+<script>
+$(document).ready(function(){
+  $('.c-radio .chapeu').remove();
+  $('.c-radio').find('.titulos').remove();
+  $('#search_field').focus(function(){
+    $(this).val('');
+  });
+  $('#search_field').focusout(function(){
+    if($(this).val() == ''){
+      $(this).val('BUSCA');   
+    }
+  });
+});  
+  
+</script>
