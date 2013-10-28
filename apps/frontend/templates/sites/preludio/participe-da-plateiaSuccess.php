@@ -274,6 +274,9 @@
             label.html("&nbsp;").addClass("checked");
           }
         });
+        
+        $('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date);
+        
       });
       
       // Contador de Caracters
