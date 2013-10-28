@@ -123,9 +123,8 @@
         <!--/Msg-->
         
         <!--Termos e condições-->
-        <div class="control-group span12 msg">
-          <label class="control-label sprite-ico-mensagem" for="termos"></label>
-          <textarea id="termos" readonly><?php include_partial_from_folder('sites/vila-sesamo', 'global/termos') ?></textarea>
+        <div class="span12 termo">
+          <?php include_partial_from_folder('sites/vila-sesamo', 'global/termos') ?>
         </div>
         <!--/Termos e condições-->
         

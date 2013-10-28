@@ -10,7 +10,7 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="filtro row-fluid">
-    <h3><span class="sprite-icon-personagens-med"></span>Personagens</h3>
+    <h3><span class="sprite-icon-personagens-med"></span><?php echo $section->getTitle() ?></h3>
     <div class="conteudo-asset">
       <a href="javascript:;" id="toggle-sizes">teste</a>
       
