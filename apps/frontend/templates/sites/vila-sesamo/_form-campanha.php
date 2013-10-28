@@ -146,19 +146,19 @@
     
     <!--span4-->
     <div class="span4">
-      <iframe width="300" height="246" src="http://www.youtube.com/embed/qTFP8I3PHJc?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+      <!--iframe width="300" height="246" src="http://www.youtube.com/embed/qTFP8I3PHJc?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe-->
       <?php
         $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($campaign->getId(), "destaque-principal");
-        if($block) $displays["destaque-promocional"] = $block->retriveDisplays();
+        if($block) $displays["destaque-principal"] = $block->retriveDisplays();
       ?>
-      <?php if(isset($displays["destaque-promocional"])): ?>
-        <?php if(count($displays["destaque-promocional"]) > 0): ?>
-          <?php if($displays["destaque-promocional"][0]->Asset->AssetType->getSlug() == "video"): ?>
+      <?php if(isset($displays["destaque-principal"])): ?>
+        <?php if(count($displays["destaque-principal"]) > 0): ?>
+          <?php if($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "video"): ?>
       <iframe width="300" height="246" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-          <?php elseif($displays["destaque-promocional"][0]->Asset->AssetType->getSlug() == "image"): ?>
-      <img src="<?php echo $displays["destaque-promocional"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-promocional"][0]->getTitle() ?>" />           
+          <?php elseif($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "image"): ?>
+      <img src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" />           
           <?php else: ?>
-      <?php echo $displays["destaque-promocional"][0]->getDescription(); ?>            
+      <?php echo $displays["destaque-principal"][0]->getDescription(); ?>            
           <?php endif; ?>
         <?php endif; ?>
       <?php endif; ?>
