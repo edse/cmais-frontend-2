@@ -87,6 +87,7 @@
 #carrossel-interna .slider .inner { width:200px; height:200px; display:block; overflow:hidden; padding:0;}
 #carrossel-interna .examples { padding: 1em; background-color: #2f4f4f;}
 #carrossel-interna #menu span {white-space: nowrap; }
+#carrossel-interna .slider li img.altura{background:none; border:none;}
 #carrossel-interna .slider li img { border-top:2px solid; border-bottom:2px solid; margin:0 -1px; }
 #carrossel-interna .slider li.atividades a{ background:#7732e5;border-bottom:2px solid #f07317; }
 #carrossel-interna .slider li.atividades img{border-top-color:#7732e5; border-bottom-color:#7732e5;}
