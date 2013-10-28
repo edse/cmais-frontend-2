@@ -454,6 +454,7 @@ class _sectionActions extends sfActions
                   ->groupBy('a.id')
                   ->orderBy('a.created_at desc')
                   ->limit(20);
+				  die(1);
               }
             }
             else if(($request->getParameter('site_id') > 0)&&($request->getParameter('busca') != '')){
@@ -468,6 +469,7 @@ class _sectionActions extends sfActions
                 ->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'")
                 ->orderBy('a.created_at desc')
                 ->limit(20);
+				die(2);
             }
             else if($request->getParameter('site_id') > 0){
               $this->assetsQuery = Doctrine_Query::create()
@@ -481,6 +483,7 @@ class _sectionActions extends sfActions
                 ->groupBy('a.id')
                 ->orderBy('a.created_at desc')
                 ->limit(20);
+				die(3);
             }
         else if($request->getParameter('busca') != ''){
               $this->assetsQuery = Doctrine_Query::create()
@@ -494,6 +497,7 @@ class _sectionActions extends sfActions
                 ->groupBy('a.id')
                 ->orderBy('a.created_at desc')
                 ->limit(20);
+                die(4);
             }
       }
           else{
