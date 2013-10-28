@@ -46,10 +46,8 @@
         <input type="hidden" id="campanha" name="campanha" value="<?php echo $campaign->getTitle() ?>" />
         <!--Nome-->
         <div class="control-group span8">
-          <div class="controls">
-            <label class="control-label sprite-ico-nome" for="nome"></label>
-            <input type="text" id="nome" placeholder="Nome" name="nome">
-          </div>
+          <label class="control-label sprite-ico-nome" for="nome"></label>
+          <input type="text" id="nome" placeholder="Nome" name="nome">
         </div>
         <!--/Nome-->
         
