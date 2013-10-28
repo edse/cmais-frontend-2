@@ -237,7 +237,7 @@
                   $('img#ajax-loader').hide();
                 }
               }
-            });         
+            });
           },
           rules:{
             nome:{
@@ -256,10 +256,10 @@
               required: true,
               minlength: 2
             },
-                  captcha: {
-                    required: true,
-                    remote: "http://cmais.com.br/portal/js/validate/demo/captcha/process.php"
-                  }
+            captcha: {
+              required: true,
+              remote: "/portal/js/validate/demo/captcha/process.php"
+            }
           },
           messages:{
             nome: "Digite um nome válido. Este campo é obrigatório.",
@@ -274,6 +274,9 @@
             label.html("&nbsp;").addClass("checked");
           }
         });
+        
+        $('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date);
+        
       });
       
       // Contador de Caracters
