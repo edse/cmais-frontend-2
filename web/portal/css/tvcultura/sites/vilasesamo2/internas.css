@@ -132,14 +132,14 @@ body { background:#0172f9; }
 .interna.videos .todos-itens li,
 .interna.videos .filtro,
 .interna.videos .scroll { border-color:#fba500; }
-.interna.videos .filtro h3,
+.interna.videos .filtro h1,
 .interna.videos .filtro .span2,
 .interna.videos .todos-itens li img,
 .interna.videos .todos-itens li h2,
 .interna.videos .filtro .span12 { border-color:#f27300; }
 .interna.videos .todos-itens li,
 .interna.videos .filtro,
-.interna.videos .filtro h3,
+.interna.videos .filtro h1,
 .interna.videos .scroll {background:#f78701;}
 .interna.videos .todos-itens li h2 a { color:#fff;}
 .interna.videos .destaque-filtro article h1 a { color:#f27300;}
