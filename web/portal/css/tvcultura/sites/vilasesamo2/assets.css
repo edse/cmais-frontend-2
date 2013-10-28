@@ -75,7 +75,8 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form-horizontal .control-group.idade  .control-group { width: 66%; float:right; } 
 .form-horizontal .idade.span2 input{width: 95px;margin-left: 10px;}
 .form-horizontal .idade.span2 { width:145px; float:left; margin-left:20px;}
-.form-horizontal .span2 { width:21%; float:right; }
+.form-horizontal .span2.estado { width:85px; float:left; margin-left:20px; }
+.form-horizontal .span2.estado select{width:85px;}
 #content section.form .form-horizontal .span8 { width: 410px; }
 .form-horizontal .span2 input { width: 75%; }
 .form-horizontal .span2 .control-group { margin-right:0; }
