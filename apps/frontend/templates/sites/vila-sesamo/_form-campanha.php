@@ -47,21 +47,21 @@
         <!--Nome-->
         <div class="control-group span8">
           <label class="control-label sprite-ico-nome" for="nome"></label>
-          <input type="text" id="nome" placeholder="Nome" name="nome">
+          <input type="text" id="nome" value="Nome" name="nome">
         </div>
         <!--/Nome-->
         
         <!--Idade-->
         <div class="control-group idade span2">
           <label class="control-label sprite-ico-idade" for="idade"></label>
-          <input type="text" id="idade" placeholder="Idade" name="idade" maxlength="2">
+          <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade">
         </div>
         <!--/Idade-->
         
         <!--Cidade-->
         <div class="control-group span8 cidade">
           <label class="control-label sprite-ico-cidade" for="cidade"></label>
-          <input type="text" id="cidade" placeholder="Cidade" name="cidade">
+          <input type="text" id="cidade" value="Cidade" name="cidade">
         </div>
         <!--/Cidade-->
         
@@ -103,7 +103,7 @@
         <!--Email-->
         <div class="control-group span8">
           <label class="control-label sprite-ico-email" for="email"></label>
-          <input type="text" id="email" placeholder="Email" name="email">
+          <input type="text" id="email"  value="Email" name="email">
         </div>
         <!--/Email-->
         
@@ -118,7 +118,7 @@
         <!--Msg-->
         <div class="control-group span12 msg">
           <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
-          <textarea id="mensagem" placeholder="Mensagem" name="mensagem"></textarea>
+          <textarea id="mensagem" name="mensagem">Mensagem</textarea>
         </div>
         <!--/Msg-->
         
