@@ -115,7 +115,7 @@ function slugfy($string){
                    <input class="span8 pull-right" id="busca-input" type="text" name="busca-input" value="<?php if(isset($busca_radar)) echo $busca_radar?>" /><span class="add-on pull-right"><i class="icon-search"></i></span>
                   </div>
                 </div>  
-                <div class="row-fluid">
+                <!-- div class="row-fluid">
                   <label class="radio inline" style="margin-left: 35px">
                     <input type="radio" name="busca-por" id="busca-por1" value="musicas" />
                     Por Título
@@ -124,7 +124,7 @@ function slugfy($string){
                     <input type="radio" name="busca-por" id="busca-por2" value="artistas" checked="checked" />
                     Por Artista
                   </label>
-                </div>
+                </div-->
               </form>
               <!--/busca--> 
             </div> 
@@ -161,9 +161,9 @@ function slugfy($string){
             <br/>
             
             <?php if(isset($letter)):?>
-              <small><strong><?php echo $pager->count()?></strong> ARTISTAS CADASTRADOS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
+              <small><strong id="qtd_result"><?php echo $pager->count()?></strong> ARTISTAS CADASTRADOS COM A LETRA "<?php echo strtoupper($letter)?>"</small>
             <?php else:?>
-              <small><strong><?php echo $pager->count()?></strong> ARTISTAS CADASTRADOS</small>
+              <small><strong id="qtd_result"><?php echo $pager->count()?></strong> ARTISTAS CADASTRADOS</small>
             <?php endif; ?>
           
           </div>
@@ -172,7 +172,7 @@ function slugfy($string){
        </div>
        <!--letras-->
        <!--lista-->
-       <div class="row-fluid">
+       <div class="row-fluid" id="resultado_busca">
         <div class=" span6">
           <table class="table table-striped artista">
             <tbody>
@@ -244,12 +244,25 @@ function slugfy($string){
     </div>
     <!--container-->
     
-    <script>
+   <script>
       $('#busca-radar').submit(function() {
-        if($("#busca-por1").is(':checked'))
-          self.location.href = "/musicas/busca-por/"+$('#busca-input').val();
-        else if($("#busca-por2").is(':checked'))
-          self.location.href = "/artistas/busca-por/"+$('#busca-input').val();
+	  	if($("#busca-por2").val != "" ){
+ 			$("#resultado_busca").html("");
+ 			$("#resultado_paginacao").html("");
+ 			
+	 		$.ajax({
+	           type : "GET", 
+	           dataType: "jsonp",
+	           data: $('#busca-radar').serialize(),
+	           url: "http://ajax.cmais.com.br/index.php/ajax/radar-artista",
+	           success: function(json){
+	             	$("#qtd_result").text(json.qtd_result);
+	             	$("#resultado_busca").html(json.data);
+	             	$("#resultado_paginacao").html(json.paginacao);
+	          }
+	        });
+	    }
         return false;
-      });                    
+      });
     </script>
+
