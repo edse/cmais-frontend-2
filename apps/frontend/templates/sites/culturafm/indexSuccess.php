@@ -22,7 +22,7 @@
          
       <!--destaque cultura agora-->
       <div class="destaque c-agora">
-        <h1>Cultura Agora<i class="seta"></i></h1>
+        <h1>Cultura Agora</a><i class="seta"></i></h1>
 			<?php if(isset($displays["destaque-cultura-agora"])): ?>
 				<?php foreach ($displays["destaque-cultura-agora"] as $k => $d): ?>
 			        <!--item-->
@@ -76,7 +76,7 @@
       <!--classicos na tv cultura-->
       <div class="destaque c-classicos">
         <i class="seta2"></i>
-          <h2>Classicos na Tv Cultura</h2>
+          <h2>Clássicos na TV Cultura</h2>
 		<?php if(isset($displays["destaque-classicos"])): ?>
 			<?php foreach ($displays["destaque-classicos"] as $k => $d): ?>
 		        <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>" title="<?php echo $d->getTitle() ?>">
