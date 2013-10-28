@@ -254,7 +254,7 @@ function slugfy($string){
 	           type : "GET", 
 	           dataType: "jsonp",
 	           data: $('#busca-radar').serialize(),
-	           url: "http://ajax.cmais.com.br/index.php/ajax/radar-artista",
+	           url: "http://app.cmais.com.br/index.php/ajax/radar-artista",
 	           success: function(json){
 	             	$("#qtd_result").text(json.qtd_result);
 	             	$("#resultado_busca").html(json.data);
