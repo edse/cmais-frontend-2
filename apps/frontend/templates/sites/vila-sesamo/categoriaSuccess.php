@@ -5,6 +5,15 @@
 
 <h1><?php echo $section->getTitle() ?></h1>
 
+<?php
+  $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
+  $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
+?>        
+<?php if(isset($allCategories)): ?>
+  <?php if(count($allCategories) > 0): ?>
+  <?php endif; ?>
+<?php endif; ?>
+
 <?php if($section->getIsHomepage() == 1): // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando". ?>
 
 <!--destaque-principal-->
