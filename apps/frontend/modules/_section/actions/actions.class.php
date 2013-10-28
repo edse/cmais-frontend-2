@@ -470,7 +470,6 @@ class _sectionActions extends sfActions
                 ->limit(20);
             }
             else if($request->getParameter('site_id') > 0){
-            	die(1);
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, AssetVideo av')
