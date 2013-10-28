@@ -111,11 +111,11 @@
 
 
 <input type="hidden" id="filter-choice" value="">
-<?php /*
+
 <nav id="page_nav">
   <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
 </nav>
-*/ ?>
+
 
 <!--scripts-->
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
