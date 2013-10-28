@@ -7,7 +7,7 @@
    * OBS: Isso ainda está ruim, pois precisa aparecer em primeiro lugar assets que tem o maior número de tags relacionadas com o asset principal. Além disso, o ideal seria resolver tudo numa query só!
    * 
    */
-  /*
+  
   $see_also = false; // somente uma flag de controle. Se falso, nada aqui aparece no site. Se verdadeiro, foi porque atendeu alguma das condições abaixo...
   
   if(isset($campaign)) { // se o asset fizer parte de uma campanha, o "brinque também com" só terá assets da mesma...
@@ -129,8 +129,6 @@
                             break;
                           }
                         }
-                      
-                       
                       ?>
                       <li class="<?php echo $assetSection->getSlug(); ?>">
                         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
@@ -162,7 +160,7 @@
                             }
                           }
                           $assetID[] = $d->getId();
-                      ?>
+                        ?>
                       <li class="<?php echo $assetSection->getSlug(); ?>">
                         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                           <?php if($d->AssetType->getSlug() == "video"): ?>
@@ -195,7 +193,6 @@
                               }
                             }
                             $assetID[] = $d->getId();
-                          
                           ?>
                           <li class="<?php echo $assetSection->getSlug(); ?>">
                             <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
