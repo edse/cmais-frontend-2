@@ -7,7 +7,7 @@
    * OBS: Isso ainda está ruim, pois precisa aparecer em primeiro lugar assets que tem o maior número de tags relacionadas com o asset principal. Além disso, o ideal seria resolver tudo numa query só!
    * 
    */
-  
+  /*
   $see_also = false; // somente uma flag de controle. Se falso, nada aqui aparece no site. Se verdadeiro, foi porque atendeu alguma das condições abaixo...
   
   if(isset($campaign)) { // se o asset fizer parte de uma campanha, o "brinque também com" só terá assets da mesma...
@@ -129,21 +129,7 @@
                             break;
                           }
                         }
-                      /*
-                      <li class="<?php echo $assetSection->getSlug(); ?>">
-                        <div>
-                          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                          <?php if($d->AssetType->getSlug() == "video"): ?>
-                            <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
-                          <?php else: ?>
-                            <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
-                            <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
-                          <?php endif; ?>
-                          </a>
-                        </div>
-                        <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i><?php echo $d->getTitle() ?></a>
-                      </li>
-                      */
+                      
                        
                       ?>
                       <li class="<?php echo $assetSection->getSlug(); ?>">
@@ -176,20 +162,6 @@
                             }
                           }
                           $assetID[] = $d->getId();
-                      /*  
-                      <li class="<?php echo $assetSection->getSlug() ?>">
-                        <div>
-                          <?php if($d->AssetType->getSlug() == "video"): ?>
-                            <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
-                          <?php else: ?>
-                            <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
-                            <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
-                          <?php endif; ?>
-                        </div>
-                        <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i><?php echo $d->getTitle() ?></a>
-                      </li>
-                       * 
-                       */
                       ?>
                       <li class="<?php echo $assetSection->getSlug(); ?>">
                         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
@@ -223,20 +195,7 @@
                               }
                             }
                             $assetID[] = $d->getId();
-                          /*
-                          <li class="<?php echo $assetSection->getSlug() ?>">
-                            <div>
-                              <?php if($d->AssetType->getSlug() == "video"): ?>
-                                <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
-                              <?php else: ?>
-                                <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
-                                <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
-                              <?php endif; ?>
-                            </div>
-                            <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i><?php echo $d->getTitle() ?></a>
-                          </li>
-                           * 
-                           */
+                          
                           ?>
                           <li class="<?php echo $assetSection->getSlug(); ?>">
                             <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
@@ -264,22 +223,7 @@
                     <?php if(count($see_also_by_section) > 0): ?>
                       <?php foreach($see_also_by_section as $k=>$d): ?>
                         <?php if(!in_array($d->getId(), $assetID)): ?> 
-                          <?php $assetID[] = $d->getId(); 
-                          /*
-                            <li class="<?php echo $section->getTitle() ?>">
-                              <div>
-                                <?php if($d->AssetType->getSlug() == "video"): ?>
-                                  <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
-                                <?php else: ?>
-                                  <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
-                                  <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
-                                <?php endif; ?>
-                              </div>
-                              <a class="nome" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i><?php echo $d->getTitle() ?></a>
-                            </li>
-                           * 
-                           */
-                            ?>
+                          <?php $assetID[] = $d->getId(); ?>
                             <li class="<?php echo $section->getSlug(); ?>">
                               <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                                 <?php if($d->AssetType->getSlug() == "video"): ?>
@@ -353,3 +297,5 @@ if(navigator.appName!='Microsoft Internet Explorer')
   //carrossel personagens redraw pra tablet e celular home
 }
 </script>
+   */ ?>
+   */
