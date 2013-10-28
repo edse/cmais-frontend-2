@@ -89,12 +89,12 @@
 #carrossel-interna #menu span {white-space: nowrap; }
 #carrossel-interna .slider li img.altura{background:none; border:none;}
 #carrossel-interna .slider li img { border-top:2px solid; border-bottom:2px solid; margin:0 -1px; }
-#carrossel-interna .slider li.atividades a{ background:#7732e5;border-bottom:2px solid #f07317; }
+#carrossel-interna .slider li.atividades a{ background:#883feb;border-bottom:2px solid #f07317; }
 #carrossel-interna .slider li.atividades img{border-top-color:#7732e5; border-bottom-color:#7732e5;}
-#carrossel-interna .slider li.jogos a{ background:#3aaaec; border-bottom:2px solid #f07317; }
-#carrossel-interna .slider li.jogos img { border-top-color:#7732e5; border-bottom-color:#7732e5;}
-#carrossel-interna .slider li.videos a{ background:#f5861f; border-bottom:2px solid #f07317; }
-#carrossel-interna .slider li.videos img { border-top-color:#7732e5; border-bottom-color:#7732e5;}
+#carrossel-interna .slider li.jogos a{ background:#3aaaec; border-bottom:2px solid #0191fb; }
+#carrossel-interna .slider li.jogos img { border-top-color:#0191fb; border-bottom-color:#0191fb;}
+#carrossel-interna .slider li.videos a{ background:#f5861f; border-bottom:2px solid #f57301; }
+#carrossel-interna .slider li.videos img { border-top-color:#f57301; border-bottom-color:#f57301;}
 #carrossel-interna .slider li .nome { padding:0; display: block; height:40px; line-height: 40px; }
 #carrossel-interna .slider li .nome i { float:left; margin:0 15px; }
 #carrossel-interna .slider li .nome i.sprite-ico-videos-p { margin-top:4px; }
