@@ -530,7 +530,7 @@ em{font-style:oblique !important;}
 #esquerda .navbar-nav li.active a,
 #esquerda .navbar-nav li.ativo a { text-decoration:none; }
 
-
+#main-header #main-nav .menu-interna li a{color:#fff; padding: 7px 24px!important; font-size:13px;}
 /* novo topo 
 #guia-topo {padding: 0;}
 #barra-site h2 {margin-top: 20px;}

@@ -20,64 +20,7 @@ $(function(){
     <!-- CAPA SITE -->
     <div id="capa-site" class="audio">
 
-      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
-
-      <!-- BARRA SITE -->
-      <div id="barra-site">
-
-        <div class="topo-programa">
-          <?php if(isset($program) && $program->id > 0): ?>
-          <h2>
-            <a href="<?php echo $program->retriveUrl() ?>" style="text-decoration: none;">
-              <?php if($program->getImageThumb() != ""): ?>
-                <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
-              <?php else: ?>
-                <h3 class="tit-pagina grid1"><?php echo $program->getTitle() ?></h3>
-              <?php endif; ?>
-            </a>
-          </h2>
-          <?php else: ?>
-          <h2>
-            <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
-              <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="Cultura FM" title="Cultura FM" />
-              <h3 class="tit-pagina grid1">Cultura FM</h3>
-            </a>
-          </h2>
-          <?php endif; ?>
-          
-          <?php if(isset($program) && $program->id > 0): ?>
-          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php else: ?>
-          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri)) ?>
-          <?php endif; ?>
-
-          <div id="horario">
-          	<a href="javascript: window.open('http://culturafm.cmais.com.br/controleremoto','controle','width=400,height=600,scrollbars=no');void(0);" class="aovivo">ao vivo</a>
-          </div>    
-        </div>
-
-        <?php if(isset($siteSections) && $site->getType() == "Portal"): ?>
-        <!-- box-topo -->
-        <div class="box-topo grid3">
-
-          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
-
-          <?php if(isset($section->slug)): ?>
-            <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
-            <div class="navegacao txt-10">
-              <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
-              <span>&gt;</span>
-              <a href="<?php echo $asset->retriveUrl()?>" title="<?php echo $asset->getTitle()?>"><?php echo $asset->getTitle()?></a>
-            </div>
-            <?php endif; ?>
-          <?php endif; ?>
-
-        </div>
-        <!-- /box-topo -->
-        <?php endif; ?>
-
-      </div>
-      <!-- /BARRA SITE -->
+    <?php include_partial_from_folder('sites/culturafm','global/newheader', array('site' => $site, 'uri' => $uri, 'program' => $program, 'siteSections'=>$siteSections)) ?>
 
       <!-- MIOLO -->
       <div id="miolo">

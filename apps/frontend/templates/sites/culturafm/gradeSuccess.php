@@ -105,49 +105,7 @@
     <!-- CAPA SITE -->
     <div id="capa-site">
 
-      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
-
-      <!-- BARRA SITE -->
-      <div id="barra-site">
-
-        <div class="topo-programa">
-          
-          <h2><a href="http://culturafm.cmais.com.br"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>"></a></h2>
-          
-          <?php if(isset($program) && $program->id > 0): ?>
-          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
-          
-          <!-- horario -->
-          <div id="horario">
-            <p>A frequência dos clássicos.</p>
-          </div>
-          <!-- /horario -->
-
-        </div>
-
-        <?php if(isset($siteSections)): ?>
-        <!-- box-topo -->
-        <div class="box-topo grid3">
-          
-          <?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
-
-          <?php if(isset($section)): ?>
-            <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
-            <div class="navegacao txt-10">
-              <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
-              <span>&gt;</span>
-              <a href="<?php echo $site->retriveUrl() ?>/<?php echo $section->getSlug()?>" title="<?php echo $section->getTitle()?>"><?php echo $section->getTitle()?></a>
-            </div>
-            <?php endif; ?>
-          <?php endif; ?>
-
-        </div>
-        <!-- /box-topo -->
-        <?php endif; ?>
-
-      </div>
-      <!-- /BARRA SITE -->
+    <?php include_partial_from_folder('sites/culturafm','global/newheader', array('site' => $site, 'uri' => $uri, 'program' => $program, 'siteSections'=>$siteSections)) ?>
 
       <!-- MIOLO -->
       <div id="miolo">
