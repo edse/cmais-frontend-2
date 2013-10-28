@@ -294,5 +294,3 @@ if(navigator.appName!='Microsoft Internet Explorer')
   //carrossel personagens redraw pra tablet e celular home
 }
 </script>
-   */ ?>
-   */
