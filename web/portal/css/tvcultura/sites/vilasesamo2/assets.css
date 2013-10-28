@@ -69,8 +69,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form-horizontal .control-group { margin:0 0 2% 0; min-height:50px; }
 .form-horizontal .control-group.idade  .control-group { width: 66%; float:right; } 
 .form-horizontal .span2 { width:21%; float:right; }
-#content .section.form .form-horizontal .span8 { width: 78%; }
-#content section.form .form-horizontal .span8 { width: 78%; }
+#content section.form .form-horizontal .span8 { width: 390px; }
 .form-horizontal .span2 input { width: 75%; }
 .form-horizontal .span2 .control-group { margin-right:0; }
 .form-horizontal .anexo .control-group { overflow:hidden; width: 61% !important; }
