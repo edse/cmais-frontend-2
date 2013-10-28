@@ -63,7 +63,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 
 .form-horizontal .control-group { float: left;    margin-left: 0;    margin-right: 0;    width: 91%; }
 .form-horizontal .control-group input {margin: 0;}
-.form-horizontal .span8.control-group input{width:360px; margin-left:10px;}
+.form-horizontal .span8.control-group input{width:360px;*width:1000px!important; margin-left:10px;}
 .form-horizontal .span8.control-group.cidade{width:470px!important;}
 .form-horizontal .span8.control-group.cidade input{width:420px;}
 .form-horizontal .idade.span2 input,
@@ -74,7 +74,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form-horizontal .estado select { width:90px; }
 .form-horizontal .estado select { height:36px; line-height:36px; }
 .form-horizontal .estado .control-group { margin:0; }
-.form-horizontal .control-group { margin:0 0 2% 0; min-height:50px; }
+.form-horizontal .control-group { margin:0 0 2% 0; min-height:25px; }
 .form-horizontal .control-group.idade  .control-group { width: 66%; float:right; } 
 .form-horizontal .idade.span2 input{width: 95px;margin-left: 10px;}
 .form-horizontal .idade.span2 { width:145px; float:left; margin-left:20px;}
@@ -104,7 +104,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form .termo::-webkit-search-results-decoration,
 .form .termo::-webkit-scrollbar-corner {background: #d9d9d9;}
 #content .form label.error{display:none!important;}
-.form .control-group.span11 label{margin: 0; padding: 0;}
+.form .control-group.span11 label{margin: 0; padding: 0; font-size:16px;}
 .form .control-group.span11 input{margin: 3px;}
 /* /form */
 
