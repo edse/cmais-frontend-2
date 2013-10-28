@@ -1,10 +1,9 @@
 <?php
-include("../includes/functions.php");
+include("/var/frontend/web/actions/includes/functions.php");
 
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
-    
     $to = "cristovamruizjr@gmail.com";
     $email = strip_tags($_REQUEST['email']);
     $name = strip_tags($_REQUEST['nome']);
@@ -18,56 +17,42 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $message .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
     }
     
-    //Enviar sem anexo
-    //echo $_FILES['datafile']['size'];
-    
-    if($_FILES['datafile']['size'] <= 0) {
-      $headers =  'MIME-Version: 1.0' . "\r\n";
-      $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-      $headers .= "From: ".$from;
-
-      if(mail($to, $subject, $message, $headers)) {
-        //header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?success=1");
-        die("0");
-      }else{
-        //header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=2");
-        die("1");
-      }
-    }
-
     $file_name = basename($_FILES['datafile']['name']);
     $data = file_get_contents($_FILES['datafile']['tmp_name']); 
     $file_contents = chunk_split(base64_encode($data));
     $file_size = $_FILES['datafile']['size'];
-    $file_mime_type = getMimeType($_FILES['datafile']['name']);
+    //$file_mime_type = getMimeType($_FILES['datafile']['name']);
+    //$file_mime_type = "image/jpg";
+    $extension = strtolower(end(explode('.',$_FILES['datafile']['name'])));
+    $file_mime_type = "image/".$extension;
     $attach = array();
     $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);
-        
+    die($file_mime_type);
     if (!in_array($file_mime_type, array("image/gif", "image/png", "image/jpg"))) {
-      if (unlink($_FILES['datafile']['tmp_name'])) {
+      //if (unlink($_FILES['datafile']['tmp_name'])) {
         //header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=2");
-        die("2");
-      }
+        die("1");
+      //}
     }
     else if ($file_size > 15728640) { // 15MB
-      if (unlink($_FILES['datafile']['tmp_name'])) {
+      //if (unlink($_FILES['datafile']['tmp_name'])) {
         //header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=3");
-        die("3");
-      }
+        die("2");
+      //}
     }
     else {
       
       if(sendMailAtt($to, $from, $subject, $message, $attach)) {
-        if (unlink($_FILES['datafile']['tmp_name'])) {
+        //if (unlink($_FILES['datafile']['tmp_name'])) {
           //header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?success=2");
           die("0");
-        }
+        //}
       }
       else{
-        if (unlink($_FILES['datafile']['tmp_name'])) {
+        //if (unlink($_FILES['datafile']['tmp_name'])) {
           //header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=1");
-          die("1");
-        }
+          die("3");
+        //}
       }
     }
   }

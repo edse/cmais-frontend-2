@@ -13,9 +13,37 @@
     <!--span8-->
     <div class="span8">
       
+      <div class="msgAcerto" id="statusMsg_0" style="display:none">
+        <p>
+          Sua brincadeira foi enviada com sucesso<br/>
+          e em breve estará em nossa galeria de brincadeiras!
+        </p>
+      </div>
+
+      <div class="msgErro" id="statusMsg_1" style="display:none">
+        <p>
+          Formato de imagem inválido<br/>
+          Por favor, tente com JPG, PNG ou GIF!
+        </p>
+      </div>
+
+      <div class="msgErro" id="statusMsg_2" style="display:none">
+        <p>
+          Arquivo muito grande<br/>
+          Por favor, tente com um arquivo de até 15 MB!
+        </p>
+      </div>
+      
+      <div class="msgErro" id="statusMsg_3" style="display:none">
+        <p>
+          Erro inesperado<br/>
+          Por favor, tente mais tarde!
+        </p>
+      </div>
+      
       <!--form-->    
-      <form class="form-horizontal" id="form" action="/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post">
-        
+      <form class="form-horizontal" id="form-contato" action="http://cmais.com.br/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post" enctype="multipart/form-data">
+        <input type="hidden" id="campanha" name="campanha" value="<?php echo $campaign->getTitle() ?>" />
         <!--Nome-->
         <div class="control-group span8">
           <label class="control-label sprite-ico-nome" for="nome"></label>
@@ -29,7 +57,7 @@
         <div class="control-group idade span2">
           <label class="control-label sprite-ico-idade" for="idade"></label>
           <div class="controls">
-            <input type="text" id="idade" placeholder="Idade" name="idade">
+            <input type="text" id="idade" placeholder="Idade" name="idade" maxlength="2">
           </div>
         </div>
         <!--/Idade-->
@@ -112,7 +140,7 @@
         <div class="control-group span12 msg">
           <label class="control-label sprite-ico-mensagem" for="termos"></label>
           <div class="controls">
-            <textarea id="termos"><?php include_partial_from_folder('sites/vila-sesamo', 'global/termos') ?></textarea>
+            <textarea id="termos" readonly><?php include_partial_from_folder('sites/vila-sesamo', 'global/termos') ?></textarea>
           </div>
         </div>
         <!--/Termos e condições-->
@@ -120,7 +148,7 @@
         <!--concorda-->
         <div class="control-group span11">
           <label class="radio">
-            <input type="radio" name="concordo" id="concordo" value="concodco" checked>
+            <input type="radio" name="concordo" id="concordo" value="concordo">
             Declaro que li e estou de acordo com os Termos e Condições acima.
           </label>
           <button type="submit" class="btn">enviar minha brincadeira</button>
@@ -162,10 +190,43 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
-    var validator = $('#form').validate({
+    var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
-        form.submit();
+        /*
+        $.ajax({
+          type: "POST",
+          dataType: "text",
+          data: $("#form-contato").serialize(),
+          url: "http://cmais.com.br/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php",
+          beforeSend: function(){
+            $('input#enviar').attr('disabled','disabled');
+            $(".msgAcerto").hide();
+            $(".msgErro").hide();
+            $('img#ajax-loader').show();
+          },
+          success: function(data){
+            $('input#enviar').removeAttr('disabled');
+            window.location.href="#";
+            alert(data);
+            if(data == "0"){
+              $("#form-contato").clearForm();
+              $("#form-contato").hide();
+              $("#statusMsg_0").show();
+              $('img#ajax-loader').hide();
+            }
+            else if(data > 0) {
+              $(".msgErro").hide();
+              $("#statusMsg_"+data).show();
+              $('img#ajax-loader').hide();
+            }
+            else {
+              alert('Erro inesperado!');
+            }
+          }
+        });    */
+       form.submit();     
+        
       },
       rules:{
         nome:{
@@ -173,7 +234,8 @@
           minlength: 2
         },
         idade:{
-          required: true
+          required: true,
+          number: true
         },
         email:{
           required: true,
