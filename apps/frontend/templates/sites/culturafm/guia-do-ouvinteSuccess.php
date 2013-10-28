@@ -97,6 +97,8 @@ function dateLoading(date) {
 
    <div id="bg-site"></div>
 
+    <!-- CAPA SITE -->
+    <div id="capa-site">
   	<?php include_partial_from_folder('sites/culturafm','global/newheader', array('site' => $site, 'uri' => $uri, 'program' => $program, 'siteSections'=>$siteSections)) ?>
 
       <!-- MIOLO -->
