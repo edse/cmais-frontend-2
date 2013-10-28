@@ -119,7 +119,7 @@
         }
       }
       foreach($d->getSections() as $a) {
-        if(in_array($d->getSlug(),array("videos","jogos","atividades"))) {
+        if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
           $assetSection = $d;
           break;
         }
