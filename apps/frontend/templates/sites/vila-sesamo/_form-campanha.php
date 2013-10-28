@@ -59,7 +59,7 @@
         <!--/Idade-->
         
         <!--Cidade-->
-        <div class="control-group span8">
+        <div class="control-group span8 cidade">
           <label class="control-label sprite-ico-cidade" for="cidade"></label>
           <input type="text" id="cidade" placeholder="Cidade" name="cidade">
         </div>
