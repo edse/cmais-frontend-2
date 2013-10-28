@@ -25,7 +25,6 @@
 .fb-like-box{margin-top:20px;}
 body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x;}
 #container-home{width:100%;}
-/*
 #guia-topo {padding: 0;}
 #barra-site h2 {margin-top: 20px;}
 .marginLeft10{margin-left:10px}
@@ -49,10 +48,10 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #main-header #main-nav .menu-interna li a{color:#fff; padding: 7px 10px; font-size:13px;}
 #main-header #main-nav .menu-interna .m-search{width:0!important;}
 #main-header #main-nav {position:relative;margin-top: 10px;overflow: hidden;clear: both;}
-#main-header #main-nav #search{margin-left: -9px; background: #666; width: 211px; *width: 200px; height: 35px; display: block; position:absolute; /*right: 0;top: 15px;*right:0!important;*top:15px!important;}
+#main-header #main-nav #search{margin-left: -9px; background: #666; width: 211px; *width: 200px; height: 35px; display: block; position:absolute; /*right: 0;top: 15px;*right:0!important;*top:15px!important;*/}
 #main-header #main-nav #search #search_submit{border:none; background: none; font-family:'gotham_mediumregular', Arial, Helvetica, sans-serif; color:#FFF; text-transform:uppercase; background:#666; } 
 #main-header #main-nav #search #search_field{font-family:'gotham_mediumregular', Arial, Helvetica, sans-serif; width: 150px;border: none;height: 20px;margin-top: 7px; padding-left: 5px; font-size:13px;color:#666;}
-*/
+
 #content-holder{width: 980px;margin: 0 auto;overflow: hidden;}
 #content-holder .destaque{width:320px; float:left;}
 #content-holder .grid2{overflow:hidden;float:left;width:210px;}
