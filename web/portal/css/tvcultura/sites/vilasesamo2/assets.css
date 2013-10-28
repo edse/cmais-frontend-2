@@ -96,7 +96,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form-horizontal .span11 { float:right; }
 .form-horizontal .span11 a { color:#fffb49;}
 .form .sucesso .btn,
-.form-horizontal .span11 .btn { width:100%; border:none; box-shadow:none; text-shadow:none; font-size:18px; }
+.form-horizontal .span11 .btn { width:100%; border:none; box-shadow:none; text-shadow:none; font-size:18px; margin-bottom: 28px; }
 .form .sucesso { float:left; margin:60px 0; }
 .form .sucesso p { font-size:18px; text-transform:uppercase; text-align:center; }
 .form .termo{width: 526px;background: #d9d9d9;float: right;height: 90px;border-radius: 5px;overflow:scroll;}
@@ -104,7 +104,8 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form .termo::-webkit-scrollbar-thumb {background:#737373;-webkit-border-radius: 0.5ex; border:2px solid #d9d9d9;}
 .form .termo::-webkit-search-results-decoration,
 .form .termo::-webkit-scrollbar-corner {background: #d9d9d9;}
-.form label.error{position:absolute;position: absolute;bottom: 0;left: 37px;font-size: 21px!important;padding: 0;margin: 0;}
+.form label.error{position:absolute;position: absolute;bottom: 18px;left: 37px;font-size: 21px!important;padding: 0;margin: 0;}
+.atividades .form label.error{background:#883feb; }
 .form .control-group.span11 label{margin: 0; padding: 0; font-size:16px;}
 .form .control-group.span11 input{margin: 3px;}
 /* /form */
@@ -120,6 +121,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 /* atividades*/
 .interna.atividades .todos-assets p { background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png);font-size:25px!important; }
 .interna.atividades .conteudo-asset h2 { color:#883feb; }
+.interna.atividades #content{background-color:#571ed9;}
 .interna.atividades #content .relacionados {background:#7732e5; border-bottom:none;}
 .interna.videos #content .section.form,
 .interna.atividades #content section.form,
