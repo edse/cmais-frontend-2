@@ -2085,7 +2085,7 @@ EOT;
     die(json_encode($return));
   }
   
- public function executeRadarartista(sfWebRequest $request){
+ public function executeRadarbuscaartista(sfWebRequest $request){
     $this->setLayout(false);
 	if($request->getParameter('busca-input') != "") {
 		
@@ -2217,7 +2217,7 @@ EOT;
 	die();
   }    
   
-  public function executeRadarmusica(sfWebRequest $request){
+  public function executeRadarbuscamusica(sfWebRequest $request){
     $this->setLayout(false);
 	if($request->getParameter('busca-input') != "") {
 		$busca_input = $request->getParameter('busca-input');

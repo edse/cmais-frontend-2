@@ -95,6 +95,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 #content .filtro h3 { *position:relative }
 .todos-assets { *position:absolute; *top:7px; *right:0 }
 .option-assets{ display: block; float:right; font-size: 25px; color:#571ed9;font-family: 'din-blackregular',Arial, Helvetica, sans-serif; text-transform:uppercase; padding: 10px 10px 10px 50px; margin: 10px 0 30px 0;}
+.option-assets:hover{color:#571ed9; text-decoration:underline;}
 /* /assets */
 
 /* atividades*/

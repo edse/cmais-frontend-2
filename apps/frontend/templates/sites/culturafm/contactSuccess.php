@@ -1,6 +1,6 @@
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/contato.css" type="text/css" />
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
-
+ 
     <?php use_helper('I18N', 'Date') ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
@@ -12,7 +12,10 @@
 
     <!-- CAPA SITE -->
     <div id="capa-site">
-
+      <?php include_partial_from_folder('sites/culturafm','global/newheader', array('site' => $site, 'uri' => $uri, 'program' => $program, 'siteSections'=>$siteSections)) ?>
+      
+      <?php
+      /*
       <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
 
       <!-- BARRA SITE -->
@@ -52,7 +55,8 @@
 
       </div>
       <!-- /BARRA SITE -->
-
+      */
+     ?>
       <!-- MIOLO -->
       <div id="miolo">
         
