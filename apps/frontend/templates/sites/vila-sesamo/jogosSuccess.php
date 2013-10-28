@@ -29,7 +29,7 @@
             <?php $related_preview = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByRelationType("Preview"); ?>
         <h2 aria-describedby="Novidade">
           <article class="span6 clipes">
-            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/jogos/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>">
+            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
               <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" />
               <p><?php echo $displays['destaque-1'][0]->getTitle() ?></p> 
@@ -42,7 +42,7 @@
           <?php if(count($displays['destaque-2']) > 0): ?>
         <h2 aria-describedby="Novidade">
           <article class="span6 clipes">
-            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/jogos/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>">
+            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
               <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
               <p><?php echo $displays['destaque-2'][0]->getTitle() ?></p> 
@@ -87,11 +87,14 @@
       }
     ?>
     <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?>"> 
-      <a href="/<?php echo $site->getSlug() ?>/jogos/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
+      <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
         <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
-        <i class="sprite-icons-new sprite-icone_jogos"></i>
-        <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/><?php echo $d->getTitle() ?></div>
+        <i class="sprite-icons-new sprite-icone_atividades"></i>
+        <div>
+          <img src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+          <?php echo $d->getTitle() ?>
+        </div>
       </a>
     </li>
     <?php endforeach; ?>

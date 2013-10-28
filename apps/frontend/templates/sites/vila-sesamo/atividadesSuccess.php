@@ -92,7 +92,7 @@
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
         <i class="sprite-icons-new sprite-icone_atividades"></i>
         <div>
-          <img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
+          <img src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
           <?php echo $d->getTitle() ?>
         </div>
       </a>

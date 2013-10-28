@@ -47,21 +47,21 @@
         <!--Nome-->
         <div class="control-group span8">
           <label class="control-label sprite-ico-nome" for="nome"></label>
-          <input type="text" id="nome" placeholder="Nome" name="nome">
+          <input type="text" id="nome" value="Nome" name="nome">
         </div>
         <!--/Nome-->
         
         <!--Idade-->
         <div class="control-group idade span2">
           <label class="control-label sprite-ico-idade" for="idade"></label>
-          <input type="text" id="idade" placeholder="Idade" name="idade" maxlength="2">
+          <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade">
         </div>
         <!--/Idade-->
         
         <!--Cidade-->
         <div class="control-group span8 cidade">
           <label class="control-label sprite-ico-cidade" for="cidade"></label>
-          <input type="text" id="cidade" placeholder="Cidade" name="cidade">
+          <input type="text" id="cidade" value="Cidade" name="cidade">
         </div>
         <!--/Cidade-->
         
@@ -103,7 +103,7 @@
         <!--Email-->
         <div class="control-group span8">
           <label class="control-label sprite-ico-email" for="email"></label>
-          <input type="text" id="email" placeholder="Email" name="email">
+          <input type="text" id="email"  value="Email" name="email">
         </div>
         <!--/Email-->
         
@@ -118,26 +118,30 @@
         <!--Msg-->
         <div class="control-group span12 msg">
           <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
-          <textarea id="mensagem" placeholder="Mensagem" name="mensagem"></textarea>
+          <textarea id="mensagem" name="mensagem">Mensagem</textarea>
         </div>
         <!--/Msg-->
-        
-        <!--Termos e condições-->
-        <div class="control-group span12 msg">
-          <label class="control-label sprite-ico-mensagem" for="termos"></label>
-          <textarea id="termos" readonly><?php include_partial_from_folder('sites/vila-sesamo', 'global/termos') ?></textarea>
-        </div>
-        <!--/Termos e condições-->
         
         <!--concorda-->
         <div class="control-group span11">
           <label class="radio">
             <input type="radio" name="concordo" id="concordo" value="concordo">
-            Declaro que li e estou de acordo com os Termos e Condições acima.
+            Declaro que li e estou de acordo com os Termos e Condições acima 2.
           </label>
-          <button type="submit" class="btn">enviar minha brincadeira</button>
         </div>
         <!--/concorda-->
+         
+        <!--Termos e condições-->
+        <div class="span12 termo">
+          <?php include_partial_from_folder('sites/vila-sesamo', 'global/termos') ?>
+        </div>
+        <!--/Termos e condições-->
+        
+        <!--enviar-->
+        <div class="control-group span11">
+          <button type="submit" class="btn">enviar minha brincadeira</button>
+        </div>
+        <!--/enviar-->
         
       </form>
       <!--/form-->
@@ -147,19 +151,19 @@
     
     <!--span4-->
     <div class="span4">
-      <iframe width="300" height="246" src="http://www.youtube.com/embed/qTFP8I3PHJc?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+      <!--iframe width="300" height="246" src="http://www.youtube.com/embed/qTFP8I3PHJc?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe-->
       <?php
         $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($campaign->getId(), "destaque-principal");
-        if($block) $displays["destaque-promocional"] = $block->retriveDisplays();
+        if($block) $displays["destaque-principal"] = $block->retriveDisplays();
       ?>
-      <?php if(isset($displays["destaque-promocional"])): ?>
-        <?php if(count($displays["destaque-promocional"]) > 0): ?>
-          <?php if($displays["destaque-promocional"][0]->Asset->AssetType->getSlug() == "video"): ?>
-      <iframe width="300" height="246" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-          <?php elseif($displays["destaque-promocional"][0]->Asset->AssetType->getSlug() == "image"): ?>
-      <img src="<?php echo $displays["destaque-promocional"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-promocional"][0]->getTitle() ?>" />           
+      <?php if(isset($displays["destaque-principal"])): ?>
+        <?php if(count($displays["destaque-principal"]) > 0): ?>
+          <?php if($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "video"): ?>
+      <iframe width="300" height="246" src="http://www.youtube.com/embed/<?php echo $displays["destaque-principal"][0]->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+          <?php elseif($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "image"): ?>
+      <img src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" />           
           <?php else: ?>
-      <?php echo $displays["destaque-promocional"][0]->getDescription(); ?>            
+      <?php echo $displays["destaque-principal"][0]->getDescription(); ?>            
           <?php endif; ?>
         <?php endif; ?>
       <?php endif; ?>
@@ -245,6 +249,16 @@
         }
         
       },
+      messages:{
+        nome:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+        idade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+        email:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+        cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+        estado:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+        mensagem:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+        datafile:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+        concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
+      }, 
       success: function(label){
       }
     });

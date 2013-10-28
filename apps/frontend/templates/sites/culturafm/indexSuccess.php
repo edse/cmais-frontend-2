@@ -22,7 +22,7 @@
          
       <!--destaque cultura agora-->
       <div class="destaque c-agora">
-        <h1>Cultura Agora<i class="seta"></i></h1>
+        <a href="http://culturafm.cmais.com.br/cultura-agora"><h1>Cultura Agora<i class="seta"></i></h1></a>
 			<?php if(isset($displays["destaque-cultura-agora"])): ?>
 				<?php foreach ($displays["destaque-cultura-agora"] as $k => $d): ?>
 			        <!--item-->
@@ -76,7 +76,7 @@
       <!--classicos na tv cultura-->
       <div class="destaque c-classicos">
         <i class="seta2"></i>
-          <h2>Classicos na Tv Cultura</h2>
+          <h2>Clássicos na TV Cultura</h2>
 		<?php if(isset($displays["destaque-classicos"])): ?>
 			<?php foreach ($displays["destaque-classicos"] as $k => $d): ?>
 		        <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>" title="<?php echo $d->getTitle() ?>">
@@ -268,3 +268,47 @@
 </div>
 <!-- /container-->
 
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+<script>
+$(document).ready(function(){
+
+  var validator = $('#form-email').validate({
+        
+      submitHandler: function(form){
+        //form.submit();
+        $.ajax({
+          type: "POST",
+          dataType: "text",
+          //url: "http://app.cmais.com.br/actions/culturafm/newsletter.php",
+          url: "/actions/culturafm/newsletter.php",
+          data: $("#form-email").serialize(),
+          beforeSend: function(){
+            $('#send_news, #news, #lbl_news').hide();
+            $('#ajax-loader').show();
+          },
+          success: function(data){
+            if(data == "0"){
+              $('#ajax-loader, #news').hide();
+              $('#msgAcerto').show();
+            }
+            else {
+              $('#ajax-loader, #news').hide();
+              $('#msgErro').show();
+            }
+          }
+        });         
+      },
+      rules:{
+        email_newsletter:{
+          required:true,
+          email: true
+        }
+      },
+      success: function(label){
+        label.addClass("checked");
+        $("label.error.checked").css("display","none");
+        label.html("&nbsp;");
+      }
+    });
+});
+</script>
