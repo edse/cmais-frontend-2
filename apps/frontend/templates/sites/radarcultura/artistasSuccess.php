@@ -246,7 +246,7 @@ function slugfy($string){
     
    <script>
       $('#busca-radar').submit(function() {
-	  	if($("#busca-por2").val != "" ){
+	  	if($("#busca-input").val() != "" ){
  			$("#resultado_busca").html("");
  			$("#resultado_paginacao").html("");
  			
