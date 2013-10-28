@@ -873,7 +873,7 @@ class _sectionActions extends sfActions
                 ->andWhereIn('a.id', $assetIds)
                 ->orderBy('a.updated_at DESC');
             }
-            else if($this->section->getSlug == "videos"){
+            else if($this->section->getSlug() == "videos"){
 				   $this->assetsQuery = Doctrine_Query::create()
 	                ->select('a.*')
 	                ->from('Asset a, AssetVideo av, SectionAsset sa')
