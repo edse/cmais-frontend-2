@@ -22,7 +22,7 @@
          
       <!--destaque cultura agora-->
       <div class="destaque c-agora">
-       <a href="http://culturafm.cmais.com.br/cultura-agora" title="Cultura Agora"><h1>Cultura Agora</a><i class="seta"></i></h1></a>
+        <h1>Cultura Agora</a><i class="seta"></i></h1>
 			<?php if(isset($displays["destaque-cultura-agora"])): ?>
 				<?php foreach ($displays["destaque-cultura-agora"] as $k => $d): ?>
 			        <!--item-->
