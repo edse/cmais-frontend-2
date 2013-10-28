@@ -876,11 +876,11 @@ class _sectionActions extends sfActions
             else if($this->section->getSlug() == "videos"){
 				   $this->assetsQuery = Doctrine_Query::create()
 	                ->select('a.*')
-	                ->from('Asset a, AssetVideo av, SectionAsset sa')
+	                ->from('Asset a, AssetVideo av, SectionAsset sa, AssetVideoGallery avg')
 	                ->where('sa.section_id = ?', $this->section->id)
 	                ->andWhere('sa.asset_id = a.id')
 	                ->andWhere('av.asset_id = a.id')
-	                ->andWhere('av.youtube_id != ""')
+	                ->andWhere('av.youtube_id != "" OR avg.youtube_id != ""')
 	                ->andWhere('a.is_active = ?', 1)
 	                ->orderBy('a.created_at desc');
 	                //->orderBy('sa.display_order asc');
