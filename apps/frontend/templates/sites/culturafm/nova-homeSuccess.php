@@ -11,9 +11,9 @@
 <!-- container -->
 <div role="container">
   
-  <?php// include_partial_from_folder('sites/culturafm','global/newheader', array('site' => $site, 'uri' => $uri, 'program' => $program, 'siteSections'=>$siteSections)) ?>
+  
   <!--header principal-->
-  <header id="main-header" role="main" role="banner" >
+  <div id="main-header" role="main" role="banner" >
     
     <!--logo-->
     <h1>
@@ -45,7 +45,7 @@
     <!-- /main-nav -->
     <?php endif;?>
     
-  </header>
+  </div>
   <!--/header principal-->
 
   <!--content-holder-->
