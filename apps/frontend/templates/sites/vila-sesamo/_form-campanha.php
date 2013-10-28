@@ -154,7 +154,7 @@
       <?php if(isset($displays["destaque-principal"])): ?>
         <?php if(count($displays["destaque-principal"]) > 0): ?>
           <?php if($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "video"): ?>
-      <iframe width="300" height="246" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+      <iframe width="300" height="246" src="http://www.youtube.com/embed/<?php echo $displays["destaque-principal"][0]->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
           <?php elseif($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "image"): ?>
       <img src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" />           
           <?php else: ?>
