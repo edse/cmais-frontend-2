@@ -137,7 +137,7 @@
           <?php include_partial_from_folder('sites/vila-sesamo', 'global/termos') ?>
         </div>
         <!--/Termos e condições-->
-        
+         
         
       </form>
       <!--/form-->
