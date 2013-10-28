@@ -98,7 +98,7 @@
 #carrossel-interna .slider li .nome i.sprite-ico-videos-p { margin-top:4px; }
 #carrossel-interna .slider li .nome i.sprite-ico-jogos-p { margin-top:7px; }
 #carrossel-interna .slider li:hover a { text-decoration:underline; }*
-
+#carrossel-interna .youtubeImage{min-width:286px;}
 
 /* selector styling */
 #carrossel-interna #selector a { display: block; width: 16px; height: 16px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; border: 1px solid #333; background-color: #99F;}

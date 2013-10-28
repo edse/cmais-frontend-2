@@ -148,7 +148,7 @@
                       <li class="<?php echo $assetSection->getSlug(); ?>">
                         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                           <?php if($d->AssetType->getSlug() == "video"): ?>
-                            <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
+                            <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                           <?php else: ?>
                             <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
                             <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
@@ -190,7 +190,7 @@
                       <li class="<?php echo $assetSection->getSlug(); ?>">
                         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                           <?php if($d->AssetType->getSlug() == "video"): ?>
-                            <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
+                            <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                           <?php else: ?>
                             <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
                             <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
@@ -234,7 +234,7 @@
                           <li class="<?php echo $assetSection->getSlug(); ?>">
                             <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                               <?php if($d->AssetType->getSlug() == "video"): ?>
-                                <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
+                                <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                               <?php else: ?>
                                 <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
                                 <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
@@ -273,7 +273,7 @@
                             <li class="<?php echo $section->getSlug(); ?>">
                               <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                                 <?php if($d->AssetType->getSlug() == "video"): ?>
-                                  <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
+                                  <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                                 <?php else: ?>
                                   <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
                                   <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>">
