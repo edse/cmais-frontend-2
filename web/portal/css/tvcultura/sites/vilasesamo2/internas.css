@@ -126,6 +126,9 @@ body { background:#0172f9; }
 /*.interna  footer .container { display: none; }*/
 
 /* /interna*/
+/* jogos */
+.interna.jogos .destaque-filtro h2{margin-top:-10px;}
+/* jogos */
 
 /* videos*/
 .interna.videos { background:#f36701; }
