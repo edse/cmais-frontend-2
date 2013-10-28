@@ -29,7 +29,9 @@
           <article class="span6 clipes">
             <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/videos/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
-              <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-1'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" />
+              <div class="yt-destaque">
+                <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-1'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" />
+              </div>
               <p><?php echo $displays['destaque-1'][0]->getTitle() ?></p> 
             </a> 
           </article>
@@ -42,7 +44,9 @@
           <article class="span6 clipes">
             <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/videos/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
-              <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-2'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
+              <div class="yt-destaque">
+                <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-2'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
+              </div>
               <p><?php echo $displays['destaque-2'][0]->getTitle() ?></p> 
             </a> 
           </article>
@@ -89,7 +93,9 @@
         <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
         <i class="sprite-icons-new sprite-icone_videos"></i>
         <div>
-          <img src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+          <div class="yt-menu">
+            <img src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+          </div>
           <?php echo $d->getTitle() ?>
         </div>
       </a>
@@ -108,11 +114,11 @@
 
 
 <input type="hidden" id="filter-choice" value="">
-<?php /*
+
 <nav id="page_nav">
   <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
 </nav>
-*/ ?>
+
 
 <!--scripts-->
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
