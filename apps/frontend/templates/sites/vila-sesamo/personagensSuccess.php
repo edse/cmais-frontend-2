@@ -10,7 +10,7 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="filtro row-fluid">
-    <h3><span class="sprite-icon-personagens-med"></span><?php echo $section->getTitle() ?></h3>
+    <h1><span class="sprite-icon-personagens-med"></span><?php echo $section->getTitle() ?></h1>
     <div class="conteudo-asset">
       <a href="javascript:;" id="toggle-sizes">teste</a>
       
@@ -85,7 +85,7 @@
   });*/
   
   var classes = new Array();
-  $('#toggle-sizes').click(function(){
+  $(document).delay(500, function(){
     $container.isotope('shuffle');
     /*
     var cont = 0;
