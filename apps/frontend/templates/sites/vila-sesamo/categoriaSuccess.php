@@ -78,8 +78,8 @@
     <?php endif; ?>
    
   <?php else: // senão existir artigo, tenta pegar um segundo destaque do bloco "dicas" pra preencher o espaço ?>
-    
-    <?php if(isset($displays['dicas'][1])): ?>
+    1
+    <?php if(isset($displays['dicas'][1])): ?>2
       <!--dica 2-->
       <h2><a href="#"><?php echo $displays['dicas'][1]->getTitle(); ?></a></h2>
       <p><?php echo $displays['dicas'][1]->getDescription(); ?></p>
