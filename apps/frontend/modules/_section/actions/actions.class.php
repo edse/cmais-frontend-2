@@ -84,7 +84,7 @@ class _sectionActions extends sfActions
     if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
         $this->setLayout('responsivo');
       }
-      if(in_array($this->section->Site->getSlug(), array("vila-sesamo","vilasesamo", "vilasesamo2"))) {
+      if(in_array($this->section->Site->getSlug(), array("vila-sesamo","vilasesamo", "vilasesamo2")) && !in_array($this->section->getId(), array(3196,3200))) {
         $this->setLayout('vilasesamo');
         /*
          * Como não tem template para algumas seções (videos,atividades, etc), seta como seção a primeira seção filha que encontrar

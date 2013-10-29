@@ -75,21 +75,20 @@
       <h2><a><?php echo $displays['artigos'][0]->getTitle() ?></a></h2>
       <p><?php echo $displays['artigos'][0]->getDescription() ?></p>
       <!--/artigo-->
-    <?php endif; ?>
-   
-  <?php else: // senão existir artigo, tenta pegar um segundo destaque do bloco "dicas" pra preencher o espaço ?>
+    <?php else: // senão existir artigo, tenta pegar um segundo destaque do bloco "dicas" pra preencher o espaço ?>
     
-    <?php if(isset($displays['dicas'][1])): ?>
-      <!--dica 2-->
-      <h2><a href="#"><?php echo $displays['dicas'][1]->getTitle(); ?></a></h2>
-      <p><?php echo $displays['dicas'][1]->getDescription(); ?></p>
-      <?php $download = $displays['dicas'][1]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
-      <?php if(count($download) > 0): ?>
-        <?php if($download[0]->AssetType->getSlug() == "file"): ?>
-          <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
+      <?php if(isset($displays['dicas'][1])): ?>2
+        <!--dica 2-->
+        <h2><a href="#"><?php echo $displays['dicas'][1]->getTitle(); ?></a></h2>
+        <p><?php echo $displays['dicas'][1]->getDescription(); ?></p>
+        <?php $download = $displays['dicas'][1]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
+        <?php if(count($download) > 0): ?>
+          <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+            <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
+          <?php endif; ?>
         <?php endif; ?>
+        <!--/dica 2-->
       <?php endif; ?>
-      <!--/dica 2-->
     <?php endif; ?>
   <?php endif; ?>
 

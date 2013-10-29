@@ -228,6 +228,7 @@
       <h2 class="fechar-toogle ativo"><i class="sprite-seta-up"></i></h2>
     </div>
     
+    
     <span class="linha"></span>
   </section>
   <?php endif; ?>
