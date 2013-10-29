@@ -47,21 +47,21 @@
         <!--Nome-->
         <div class="control-group span8">
           <label class="control-label sprite-ico-nome" for="nome"></label>
-          <input type="text" id="nome" value="Nome" name="nome">
+          <input type="text" id="nome" value="Nome" name="nome" data-default="Nome" >
         </div>
         <!--/Nome-->
         
         <!--Idade-->
         <div class="control-group idade span2">
           <label class="control-label sprite-ico-idade" for="idade"></label>
-          <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade">
+          <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade" data-default="Idade" >
         </div>
         <!--/Idade-->
         
         <!--Cidade-->
         <div class="control-group span8 cidade">
           <label class="control-label sprite-ico-cidade" for="cidade"></label>
-          <input type="text" id="cidade" value="Cidade" name="cidade">
+          <input type="text" id="cidade" value="Cidade" name="cidade" data-default="Cidade" >
         </div>
         <!--/Cidade-->
         
@@ -118,7 +118,7 @@
         <!--Msg-->
         <div class="control-group span12 msg">
           <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
-          <textarea id="mensagem" name="mensagem">Mensagem</textarea>
+          <textarea id="mensagem" name="mensagem" data-default="Mensagem" >Mensagem</textarea>
         </div>
         <!--/Msg-->
         
@@ -202,26 +202,26 @@
       },
       rules:{
         nome:{
-          required: true,
+          required: validate("#nome"),
           minlength: 2
         },
         idade:{
-          required: true,
+          required: validate("#idade"),
           number: true
         },
         email:{
-          required: true,
+          required: validate("#email"),
           email: true
         },
         cidade:{
-          required: true,
+          required: validate("#cidade"),
           minlength: 3
         },
         estado:{
           required: true
         },
         mensagem:{
-          required: true,
+          required: validate("#mensagem"),
           minlength: 3
         },
         datafile:{
