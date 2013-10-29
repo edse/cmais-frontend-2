@@ -111,7 +111,7 @@
         <!--/slider-->
         <!--seletor carrossel-->
         <div class="container-itens"> 
-          <ul id="selector-interna-artigo ">
+          <ul id="selector-interna-artigo">
             <li><a href="#" rel="frame_0"></a></li>
             <li><a href="#" rel="frame_1"></a></li>
             <li><a href="#" rel="frame_2"></a></li>

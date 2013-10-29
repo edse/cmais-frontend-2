@@ -198,9 +198,6 @@
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
-      	if($("#mensagem").val() == 'Mensagem'){ 
-      		$("#mensagem").val(''); 
-      	};
       	
         /*
         $.ajax({
@@ -257,10 +254,12 @@
         estado:{
           required: true
         },
-        mensagem:{
-          required: true,
-          minlength: 3
-        },
+        
+	    mensagem: {
+	      required: function(element) {
+	        return $("#mensagem").val() != "Mensagem";
+	    },
+	            
         datafile:{
           required: true,
           accept: "png|jpe?g|gif",
