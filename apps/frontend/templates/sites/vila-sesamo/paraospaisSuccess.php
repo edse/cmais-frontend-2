@@ -16,7 +16,10 @@
   
   <!--section -->
   <section>
-  teste
+  
+    <div class="container-carrossel span12 verde borda-arredonda">
+      teste<br><br><br>
+    <div>  
   </section>
   <!--/section-->
 

@@ -324,5 +324,12 @@ body.personagens { background:#b60401; }
 .todos-itens #container li.jogos a{border-bottom:#008dff 2px solid;border-top:#008dff  2px solid;}
 
 
+/* cuidadores */
+body.cuidadores{background-color:#feec3c;}
+.cuidadores .b-verde{background-color: #00c76e;}
+.cuidadores .b-verdeescuro{background-color:#00aa52;}
+.cuidadores .borda-verde{background-color:#008d36;}
+.cuidadores .borda-arredonda{border-radius:4px;  -moz-border-radius:4px; -webkit-border-radius: 4px; border:none;}
 
+/* cuidadores */
  
