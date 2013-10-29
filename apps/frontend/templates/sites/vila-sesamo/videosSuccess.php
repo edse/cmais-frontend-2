@@ -95,7 +95,7 @@
         </div>
         <i class="sprite-icons-new sprite-icone_videos"></i>
         <div>
-          <img src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+          <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
           <?php echo $d->getTitle() ?>
         </div>
       </a>
