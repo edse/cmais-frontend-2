@@ -2,6 +2,7 @@
   /*
    * Pega a campanha (seção filha de "campanhas") e as categorias (seçao filha de "categorias") as quais o asset pertence
    */
+  /*
   $categories = array();
   $sections = $asset->getSections();
   $campaign = false;
@@ -19,6 +20,29 @@
       }
     }
   }
+   */
+  $categories = array();
+  $sections = $asset->getSections();
+  foreach($sections as $s) {
+    if($s->getParentSectionId() > 0) {
+      $parentSection = Doctrine::getTable('Section')->findOneById($s->getParentSectionId());
+      if($parentSection->getSlug() == "categorias") {
+        $categories[] = $s;
+      }
+    }
+  }
+  foreach($sections as $s) {
+    if($s->getParentSectionId() > 0) {
+      $parentSection = Doctrine::getTable('Section')->findOneById($s->getParentSectionId());
+      if($parentSection->getSlug() == "campanhas") {
+        if($s->getIsActive() == 1) { 
+          $campaign = $s;
+          break;
+        }
+      }
+    }
+  }
+     
 ?>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
@@ -31,7 +55,7 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
 
 <script>
-  $("body").addClass("interna atividades");
+  $("body").addClass("interna jogos");
 </script>
 
 <!-- HEADER -->
@@ -44,12 +68,12 @@
   <!--section -->
   <section class="filtro row-fluid">
     
-    <h1 class="back-page">
+    <h1>
       <i class="sprite-icon-colorir-med"></i>
       <?php echo $section->getTitle() ?>
-      <a class="todos-assets" title="voltar para todas atividades">
-        <i class="sprite-btn-voltar-atividades"></i>
-        <p>todas as atividades</p>
+      <a class="todos-assets" title="voltar para todos jogos">
+        <i class="sprite-btn-voltar-jogos"></i>
+        <p>todos os jogos</p>
       </a>
     </h1>
     
@@ -84,18 +108,11 @@
       
       <?php if(isset($asset)): ?>
       <div class="asset">
-        <?php $related = $asset->retriveRelatedAssetsByRelationType("Preview"); ?>
-        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
-        <div>
-          <a class="option-assets" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">Baixar</a>
-          <a class="option-assets" href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">Imprimir</a>
-        </div>
+        <?php echo html_entity_decode($asset->AssetContent->render()) ?>
       </div>
       <?php endif; ?>
       
     </div>
-    <!--/conteudo-asset-->
-    
   </section>
   <!--/section-->
   
