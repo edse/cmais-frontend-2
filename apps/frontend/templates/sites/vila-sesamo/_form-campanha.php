@@ -178,39 +178,16 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
-  	
-	  $('#nome').focus(function(){ validate('#nome') });
-	  $('#idade').focus(function(){ validate('#idade') });
-	  $('#cidade').focus(function(){ validate('#cidade') });
-	  $('#email').focus(function(){ validate('#email') });
-	  $('#mensagem').focus(function(){ validate('#mensagem') });
-	  
-	  
-	  /*$('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
+	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
 	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});
-	  
 	  $('#idade').focus(function(){ 	if($(this).val() == "Idade") {  $(this).val(''); }; });
 	  $('#idade').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Idade'); 	 };	});	  
-	  
 	  $('#cidade').focus(function(){ 	if($(this).val() == "Cidade") {  $(this).val(''); }; });
 	  $('#cidade').focusout(function(){ if($(this).val() == ''){ $(this).val('Cidade');   }; });
-	
 	  $('#email').focus(function(){ 	if($(this).val() == "Email") {  $(this).val(''); }; });
 	  $('#email').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Email'); 	 };	});
-	
 	  $('#mensagem').focus(function(){ 	if($(this).val() == "Mensagem") {  $(this).val(''); };	});
 	  $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Mensagem'); };	});
-  		*/
-  	
-	  $('.btn').click(function(){
-      	if($("#nome").val() == 'Nome')
-      	  $("#nome").addClass("error");
-      	if($("#cidade").val() == 'Cidade')	
-      	  $("#cidade").addClass("error");
-      	if($("#mensagem").val() == 'Mensagem')	
-      	  $("#mensagem").addClass("error");
-	  });
-	  	
   	
     var validator = $('#form-contato').validate({
       
@@ -278,4 +255,23 @@
     if($(obj).val()==$(obj).attr("data-default"))
       $(obj).val('');
   }
+  
+  
+	  $('#enviar').click(function(){
+      	if($("#nome").val() == 'Nome'){
+      	  	$("#nome").addClass("error");
+      	 }
+      	 
+      	if($("#cidade").val() == 'Cidade'){	
+      	  $("#cidade").addClass("error");
+      	 }
+      	 
+      	if($("#mensagem").val() == 'Mensagem'){	
+      	  $("#mensagem").addClass("error");
+      	 }
+      	 
+	  });  
+  
+  
+  
 </script>  
