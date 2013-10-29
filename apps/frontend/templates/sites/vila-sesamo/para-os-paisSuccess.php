@@ -24,6 +24,8 @@
         <?php echo $section->getTitle() ?>
       </h1>
       
+      <?php if(isset($displays['destaque-principal'])): ?>
+        <?php if(count($displays['destaque-principal']) > 0): ?>
       <!--inicio carrossel--> 
       <div id="carrossel-interna-artigo">
         <!--slider-->
@@ -34,68 +36,20 @@
             <div class="slider-mask">
               <!--slider-mask-wrap--> 
               <ul class="slider-target">
+                <?php foreach($displays['destaque-principal'] as $d): ?>
                 <!--item-->
                 <li>
                   <div class="pull-left videoorimage">
-                    <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
+                    <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
                   </div>
                   <div class="descritivo">
-                    <h3>NOME DO ARTIGO</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
-                    <p>Por <span>Nome do autor</span></p>
+                    <h3><?php echo $d->getTitle() ?></h3>
+                    <p><?php echo $d->getDescription() ?></p>
+                    <p>Por <span><?php echo $d->getAuthor() ?></span></p>
                   </div>
                 </li>
                 <!--/item-->
-                
-                <!--item-->
-                <li>
-                  <div class="pull-left videoorimage">
-                    <iframe width="350" height="263" src="//www.youtube.com/embed/52GWILDxOcA" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <div class="descritivo">
-                    <h3>BEL</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
-                  </div>
-                </li>
-                <!--/item-->
-                
-                <!--item-->
-                <li>
-                  <div class="pull-left videoorimage">
-                    <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
-                  </div>
-                  <div class="descritivo">
-                    <h3>BEL</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
-                  </div>
-                </li>
-                <!--/item-->
-                
-                <!--item-->
-                <li>
-                  <div class="pull-left videoorimage">
-                    <iframe width="350" height="263" src="//www.youtube.com/embed/52GWILDxOcA" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <div class="descritivo">
-                    <h3>BEL</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
-                  </div>
-                </li>
-                <!--/item-->
-                
-                <!--item-->
-                <li>
-                  <div class="pull-left videoorimage">
-                    <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
-                  </div>
-                  <div class="descritivo">
-                    <h3>BEL</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
-                  </div>
-                </li>
-                <!--/item-->
-                
-                
+                <?php endforeach; ?>
               </ul>
               <!--slider-mask-->
               <div class="clearit"></div>
@@ -113,16 +67,16 @@
         <!--seletor carrossel-->
         <div class="container-itens"> 
           <ul id="selector-interna-artigo">
-            <li><a href="#" rel="frame_0"></a></li>
-            <li><a href="#" rel="frame_1"></a></li>
-            <li><a href="#" rel="frame_2"></a></li>
-            <li><a href="#" rel="frame_3"></a></li>
-            <li><a href="#" rel="frame_4"></a></li>
+            <?php foreach($displays['destaque-principal'] as $k=>$d): ?>
+            <li><a href="#" rel="frame_<?php echo $k ?>"></a></li>
+            <?php endforeach; ?>
           </ul>
         </div>
         <!--/seletor carrossel--> 
       </div>
       <!--/inicio carrossel-->
+        <?php endif; ?>
+      <?php endif; ?>
        
     </div>
     <!--/container carrossel-->
