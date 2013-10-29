@@ -60,18 +60,38 @@
         $see_also = true;
       }
     }
-
-    foreach($categories as $c) {
-      $categorySlugs[] = $c->getSlug();
+    
+    if(isset($categories)) {
+      if(count($categories) > 0) {
+        foreach($categories as $c) {
+          $categorySlugs[] = $c->getSlug();
+        }
+        $see_also_by_categories = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa')
+          ->where('a.site_id = ?', $site->getId())
+          ->andWhere('sa.asset_id = a.id')
+          ->andWhereIn('sa.section_id', $categorySlugs)
+          ->andWhere('a.asset_type_id = ?', 1)
+          ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+          ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
+          ->andWhere('a.id != ?', $asset->getId())
+          ->andWhere('a.is_active = ?', 1)
+          ->orderby('sa.display_order')
+          ->limit(80)
+          ->execute();
+        if(count($see_also_by_categories) > 0)
+          $see_also = true;
+      }
     }
-    if(count($categories) > 0) {
-      $see_also_by_categories = Doctrine_Query::create()
+    
+    if(isset($section)) {
+      $see_also_by_section = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa')
         ->where('a.site_id = ?', $site->getId())
         ->andWhere('sa.asset_id = a.id')
-        ->andWhereIn('sa.section_id', $categorySlugs)
-        //->andWhereIn('sa.section_id', array(2387,2388,2389))
+        ->andWhere('sa.section_id = ?', $section->getId())
         ->andWhere('a.asset_type_id = ?', 1)
         ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
         ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
@@ -80,31 +100,14 @@
         ->orderby('sa.display_order')
         ->limit(80)
         ->execute();
-      if(count($see_also_by_categories) > 0) {
+      if(count($see_also_by_section) > 0)
         $see_also = true;
-      }
     }
-    
-    $see_also_by_section = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a, SectionAsset sa')
-      ->where('a.site_id = ?', $site->getId())
-      ->andWhere('sa.asset_id = a.id')
-      ->andWhere('sa.section_id = ?', $section->getId())
-      ->andWhere('a.asset_type_id = ?', 1)
-      ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
-      ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
-      ->andWhere('a.id != ?', $asset->getId())
-      ->andWhere('a.is_active = ?', 1)
-      ->orderby('sa.display_order')
-      ->limit(80)
-      ->execute();
-    if(count($see_also_by_section) > 0) {
-      $see_also = true;
-    }
+
   }   
 ?>
   <?php if($see_also): ?>
+  
   <!--relacionados-->  
   <section class="relacionados">
     
