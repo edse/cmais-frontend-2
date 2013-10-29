@@ -336,7 +336,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .sprite{width: 60px;height: 50px;background: red;margin: -2px 20px 0 0;}
 
 .cuidadores .todos-itens #container{width:820px; background:red;}
-.cuidadores .todos-itens .element{width:200px}
+.cuidadores .todos-itens .element{width:200px; margin-left: 10px!important;}
 .cuidadores .todos-itens li img{width:200px; height:200px;}
 /* cuidadores */
  
