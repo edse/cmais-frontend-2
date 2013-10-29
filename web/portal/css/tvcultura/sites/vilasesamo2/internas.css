@@ -30,7 +30,7 @@ body { background:#0172f9; }
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
 .filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1773px; top:0; }
 .filtro .span2{ background:#d71c0d; border:1px solid #c31408; overflow:hidden; width: 175px;margin: 3px;display: block }
-.filtro .span10 { margin-left: 0;width: 758px;float: right;border-left: 2px solid #7732e5;height: 412px; }
+.filtro .span10 { margin-left: 0;width: 758px;float: right;height: 412px; }
 .filtro .span12 { border-top:0px solid #0191fb; border-bottom:2px solid #0191fb; background:#EE3021;  /*border-left:2px solid #0191fb;*/  }
 .filtro .filtro-personagem { margin-left:0; }
 .filtro .filtro-personagem li { float:left; margin:2%; list-style:none;  /*width:75px; height:75px;*/  width:45.6%; overflow: hidden;/*height:45.6%;*/}
@@ -130,12 +130,13 @@ body { background:#0172f9; }
 /*.interna  footer .container { display: none; }*/
 
 /* /interna*/
-/* jogos 
-.interna.jogos {margin-top:-10px;}
+/* jogos */
+.filtro .span10 { border-left: 2px solid #008dff; }
 /* jogos */
 
 /* videos*/
 .interna.videos { background:#f36701; }
+.interna.videos .filtro .span10 { border-left: 2px solid #f77400; }
 .interna.videos .yt-destaque{width:350px; height:350px; display:block; overflow: hidden;border:#FFFFFF 2px solid;}
 .interna.videos .yt-destaque:hover{border:#f77400 2px solid;}
 .interna.videos .yt-destaque img{max-width:750px!important;margin-left: -73px;margin-top: -7px;}
@@ -172,6 +173,7 @@ body { background:#0172f9; }
 .interna.atividades { background:#571ed9; }
 .interna.atividades .todos-itens li,
 .interna.atividades .scroll,
+.interna.atividades .filtro .span10 { border-left: 2px solid #7732e5; }
 .interna.atividades .filtro { border-color:#b16af2; }
 .interna.atividades .filtro h1,
 .interna.atividades .todos-itens li img,
@@ -317,4 +319,8 @@ body.personagens { background:#b60401; }
 .todos-itens #container li.videos a{border-bottom:#f77400 2px solid;border-top:#f77400  2px solid;}
 
 .todos-itens #container li.jogos img{border-bottom-color:#008dff;border-top:none;}
-.todos-itens #container li.jogos a{border-bottom:#008dff 2px solid;border-top:#008dff  2px solid;} 
+.todos-itens #container li.jogos a{border-bottom:#008dff 2px solid;border-top:#008dff  2px solid;}
+
+
+
+ 
