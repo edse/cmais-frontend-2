@@ -192,15 +192,7 @@
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
-      	
-      	if($("#nome").val() == 'Nome')
-      	  $("#nome").addClass("error");
-      	else if($("#cidade").val() == 'Cidade')	
-      	  $("#cidade").addClass("error");
-      	else if($("#mensagem").val() == 'Mensagem')	
-      	  $("#mensagem").addClass("error");
-      	else 	 
-      		form.submit();
+      	form.submit();
       },
       rules:{
         nome:{
@@ -208,7 +200,7 @@
           minlength: 2
         },
         idade:{
-          required: true,
+          required: function(){ validate("#idade"); return true},
           number: true
         },
         email:{
@@ -216,14 +208,14 @@
           email: true
         },
         cidade:{
-          required: true,
+          required: function(){ validate("#cidade"); return true},
           minlength: 3
         },
         estado:{
           required: true
         },
         mensagem:{
-          required: true,
+          required: function(){ validate("#mensagem"); return true},
           minlength: 3
         },
         datafile:{
@@ -253,25 +245,8 @@
   
   function validate(obj){
     if($(obj).val()==$(obj).attr("data-default"))
-      $(obj).val('');
+      //$(obj).val('');
+      $(obj).addClass("error");
   }
-  
-  
-	  $('#enviar').click(function(){
-      	if($("#nome").val() == 'Nome'){
-      	  	$("#nome").addClass("error");
-      	 }
-      	 
-      	if($("#cidade").val() == 'Cidade'){	
-      	  $("#cidade").addClass("error");
-      	 }
-      	 
-      	if($("#mensagem").val() == 'Mensagem'){	
-      	  $("#mensagem").addClass("error");
-      	 }
-      	 
-	  });  
-  
-  
   
 </script>  
