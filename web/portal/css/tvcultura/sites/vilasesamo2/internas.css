@@ -137,6 +137,7 @@ body { background:#0172f9; }
 
 /* videos*/
 .interna.videos { background:#f36701; }
+.interna.videos #content{top:134px;}
 .interna.videos .filtro .span10 { border-left: 2px solid #f77400; }
 .interna.videos .yt-destaque{width:350px; height:350px; display:block; overflow: hidden;border:#FFFFFF 2px solid;}
 .interna.videos .yt-destaque:hover{border:#f77400 2px solid;}
