@@ -198,41 +198,7 @@
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
-      	
-        /*
-        $.ajax({
-          type: "POST",
-          dataType: "text",
-          data: $("#form-contato").serialize(),
-          url: "http://cmais.com.br/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php",
-          beforeSend: function(){
-            $('input#enviar').attr('disabled','disabled');
-            $(".msgAcerto").hide();
-            $(".msgErro").hide();
-            $('img#ajax-loader').show();
-          },
-          success: function(data){
-            $('input#enviar').removeAttr('disabled');
-            window.location.href="#";
-            alert(data);
-            if(data == "0"){
-              $("#form-contato").clearForm();
-              $("#form-contato").hide();
-              $("#statusMsg_0").show();
-              $('img#ajax-loader').hide();
-            }
-            else if(data > 0) {
-              $(".msgErro").hide();
-              $("#statusMsg_"+data).show();
-              $('img#ajax-loader').hide();
-            }
-            else {
-              alert('Erro inesperado!');
-            }
-          }
-        });    */
-       form.submit();     
-        
+      		form.submit();
       },
       rules:{
         nome:{
@@ -254,12 +220,10 @@
         estado:{
           required: true
         },
-        
-	    mensagem: {
-	      required: function(element) {
-	        return $("#mensagem").val() != "Mensagem";
-	    },
-	            
+        mensagem:{
+          required: true,
+          minlength: 3
+        },
         datafile:{
           required: true,
           accept: "png|jpe?g|gif",
