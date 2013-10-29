@@ -171,7 +171,7 @@
                 <i class="sprite-icons-new sprite-icone_atividades"></i>
                 <div>
                   <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo
+                  Nome do Artigo1
                 </div>
               </a>
             </li>
@@ -182,7 +182,7 @@
                 <i class="sprite-icons-new sprite-icone_atividades"></i>
                 <div>
                   <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo
+                  Nome do Artigo2
                 </div>
               </a>
             </li>
@@ -193,7 +193,7 @@
                 <i class="sprite-icons-new sprite-icone_atividades"></i>
                 <div>
                   <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo
+                  Nome do Artigo3
                 </div>
               </a>
             </li>
