@@ -94,6 +94,7 @@
           <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
         </div>
         <i class="sprite-icons-new sprite-icone_videos"></i>
+        <div>
           <img src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
           <?php echo $d->getTitle() ?>
         </div>
