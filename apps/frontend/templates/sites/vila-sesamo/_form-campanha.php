@@ -245,8 +245,8 @@
   
   function validate(obj){
     if($(obj).val()==$(obj).attr("data-default"))
-      //$(obj).val('');
-      $(obj).addClass("error");
+      $(obj).val('');
+      //$(obj).addClass("error");
   }
   
 </script>  
