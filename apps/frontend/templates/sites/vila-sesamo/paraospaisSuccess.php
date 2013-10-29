@@ -140,25 +140,28 @@
       <!--selecione-->
       <div class="selecione">
         
-        <p>Todos os Artigos de</p>
-        <!-- selecione uma categoria-->
-        <?php
-          $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
-          $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
-        ?>        
-        <?php if(isset($allCategories)): ?>
-          <?php if(count($allCategories) > 0): ?>
-          <div class="btn-group">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
-            <ul class="dropdown-menu">
-              <?php foreach($allCategories as $c): ?>
-              <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
-              <?php endforeach; ?>
-            </ul>
-          </div>
+        <!--barra selecao-->
+        <div class="barra-seleçao">
+          <h3>Todos os Artigos de:</h3>
+          <!-- selecione uma categoria-->
+          <?php
+            $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
+            $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
+          ?>        
+          <?php if(isset($allCategories)): ?>
+            <?php if(count($allCategories) > 0): ?>
+            <div class="btn-group">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
+              <ul class="dropdown-menu">
+                <?php foreach($allCategories as $c): ?>
+                <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
+                <?php endforeach; ?>
+              </ul>
+            </div>
+            <?php endif; ?>
           <?php endif; ?>
-        <?php endif; ?>
-        <!-- /selecione uma categoria--> 
+        </div>
+        <!--/barra selecao-->
         
         <!--/section-->
         <section class="todos-itens ">
@@ -200,10 +203,13 @@
             
           </ul> 
           <!--lista-->  
+          
         </section>
         <!--/section-->
+        
       </div>
       <!--/selecione-->
+      
     </div>  
     <!--/col esquerda-->
     
