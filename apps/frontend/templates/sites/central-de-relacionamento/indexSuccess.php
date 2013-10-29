@@ -19,17 +19,15 @@ $(document).ready(function(){
       <div class="central cinza-claro-2"> 
       <?php if(isset($displays['chamada'])):?>
         <?php if(count($displays['chamada']) > 0): ?>
-          <?php foreach($displays['chamada'] as $k=>$d): ?>
-            <h1><?php echo $d->Asset->getTitle() ?></h1>
-            <h3><?php echo $d->Asset->getDescription() ?></h3>
-            <p><?php echo html_entity_decode($d->Asset->AssetContent->getContent()) ?></p>
-            <br/> 
-            <a href="/central-de-relacionamento/perguntas-frequentes" class="btn btn-success btn-large mais-info" title="Perguntas Frequentes">
-              <div class="container-btn">
-                <i class="ico-perg"></i>Perguntas Frequentes 
-              </div>
-            </a>
-          <?php endforeach; ?>
+          <h1><?php echo $displays['chamada'][0]->Asset->getTitle() ?></h1>
+          <h3><?php echo $displays['chamada'][0]->Asset->getDescription() ?></h3>
+          <p><?php echo html_entity_decode($displays['chamada'][0]->Asset->AssetContent->getContent()) ?></p>
+          <br /> 
+          <a href="/central-de-relacionamento/perguntas-frequentes" class="btn btn-success btn-large mais-info" title="Perguntas Frequentes">
+            <div class="container-btn">
+              <i class="ico-perg"></i>Perguntas Frequentes 
+            </div>
+          </a>
         <?php endif; ?>
       <?php endif; ?>
       </div>
@@ -42,10 +40,10 @@ $(document).ready(function(){
             <?php foreach($displays['botoes-central'] as $k=>$d): ?>
             <div class="base-btn">  
               <div class="btn-esquerda cinza-claro-2">
-                <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" title="<?php echo $d->getTitle() ?>">
-                  <i class="ico ico-<?php echo $d->Asset->getSlug() ?>"></i>
+                <a href="<?php echo $d->getUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                  <i class="ico ico-<?php echo $d->getLabel() ?>"></i>
                   <h1><?php echo $d->getTitle() ?></h1>
-                  <p><?php echo $d->Asset->getDescription() ?></p>
+                  <p><?php echo $d->getDescription() ?></p>
                 </a>
               </div>
               <div class="btn-esquerda sombra"></div>

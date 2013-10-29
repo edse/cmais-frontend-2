@@ -128,7 +128,27 @@
       
   </section>
   <!--/section-->
-
+  
+  <div class="divisa"></div>
+  
+  <!--section-->
+  <section class="filtro row-fluid" verde>
+    
+    <!-- col esquerda -->
+    <div class="span8 verde">
+    colesquerda
+    </div>  
+    <!--/col esquerda-->
+    
+    <!--col direita-->
+    <div class="span4">
+    coldireita  
+    </div>
+    <!--/col direita--> 
+    
+  </section>  
+  <!--/section-->
+  
 </div> 
 <!--/content-->
   
