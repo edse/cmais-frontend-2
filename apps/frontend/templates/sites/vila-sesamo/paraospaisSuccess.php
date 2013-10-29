@@ -140,7 +140,7 @@
       <!--selecione-->
       <div class="selecione">
         
-        <p>Todos os Artigos</p>
+        <p>Todos os Artigos de</p>
         <!-- selecione uma categoria-->
         <?php
           $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
@@ -160,6 +160,48 @@
         <?php endif; ?>
         <!-- /selecione uma categoria--> 
         
+        <!--/section-->
+        <section class="todos-itens ">
+          <!--lista-->
+          <ul id="container" class="row-fluid">
+            
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo1
+                </div>
+              </a>
+            </li>
+    
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo2
+                </div>
+              </a>
+            </li>
+            
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo3
+                </div>
+              </a>
+            </li>
+            
+          </ul> 
+          <!--lista-->  
+        </section>
+        <!--/section-->
       </div>
       <!--/selecione-->
     </div>  
