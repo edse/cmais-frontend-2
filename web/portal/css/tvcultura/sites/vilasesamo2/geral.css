@@ -543,17 +543,30 @@ footer .relacionados li.last { margin-right:0; }
 .pais .content .sprite-aspa-direita { float:right; }
 .pais .content .dica { background:url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-amarelo.png) repeat; padding:1%; }
 .pais .btn-group { width: 100%; }
+.cuidadores .selecione .dropdown-toggle, 
 .pais .dropdown-toggle { width: 96%; }
+.cuidadores .selecione > .dropdown-menu,
 .pais .btn-group > .dropdown-menu,
+.cuidadores .selecione .btn-group.open .btn.dropdown-toggle,
 .pais .btn-group.open .btn.dropdown-toggle,
+.cuidadores .selecione .dropdown-menu > li > a,
 .pais .dropdown-menu > li > a,
+.cuidadores .selecione .dropdown-toggle,
 .pais .dropdown-toggle { padding:0 2%; text-align:left; float:left; position:relative;  background:#fffb49; color:#737373; border:none; box-shadow: none; }
+.cuidadores .selecione .btn-group > .dropdown-menu,
 .pais .btn-group > .dropdown-menu { padding:0; background:#feec3c; width: 100%; margin-top:-2px;}
+.cuidadores .selecione .btn-group > .dropdown-menu a,
 .pais .btn-group > .dropdown-menu a { width:100%; text-transform: uppercase; height: 36px; line-height: 36px;}
+.cuidadores .dropdown-toggle,
 .pais .dropdown-toggle { height:36px; line-height:36px; }
+.cuidadores .dropdown-menu > li,
 .pais .dropdown-menu > li { overflow:hidden; margin:1px 1px 0 1px; }
+.cuidadores .dropdown-menu > li > a:hover,
+.cuidadores .dropdown-menu > li > a:focus,
 .pais .dropdown-menu > li > a:hover, 
 .pais .dropdown-menu > li > a:focus, 
+.cuidadores .dropdown-submenu:hover > a, 
+.cuidadores .dropdown-submenu:focus > a
 .pais .dropdown-submenu:hover > a, 
 .pais .dropdown-submenu:focus > a { background:none !important; color:#737373 !important; }
 .pais .dropdown-menu > li:focus,
