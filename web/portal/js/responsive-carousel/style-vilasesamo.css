@@ -82,7 +82,7 @@
 #carrossel-interna .slider li { width: 210px; float: left;}
 #carrossel-interna .slider-mask-wrap { margin:0 auto; }
 #carrossel-interna { margin:0px auto ; }
-#carrossel-interna .slider li { border-bottom:1px solid #7732e5;  background:#883feb; }
+/*#carrossel-interna .slider li { border-bottom:1px solid #7732e5;  background:#883feb; }*/
 #carrossel-interna .slider li a {color: #fff;text-transform: uppercase;width: 200px;display: block; overflow: hidden;}
 #carrossel-interna .slider .inner { width:200px; height:200px; display:block; overflow:hidden; padding:0;}
 #carrossel-interna .examples { padding: 1em; background-color: #2f4f4f;}
