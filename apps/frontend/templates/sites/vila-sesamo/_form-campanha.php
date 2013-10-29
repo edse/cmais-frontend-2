@@ -204,7 +204,7 @@
       },
       rules:{
         nome:{
-          required: function(){ validate("#nome")); return true},
+          required: function(){ validate("#nome"); return true},
           minlength: 2
         },
         idade:{
