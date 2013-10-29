@@ -77,8 +77,9 @@
 <!--/destaques-->
 
 <script>
-  function viewer(url,alt)
+  function viewer(url,alt) {
     $("#viewer").html("<img src='"+url+"' alt='"+alt+"' />");
+  }
 </script>
 
 
