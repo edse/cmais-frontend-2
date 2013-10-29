@@ -132,8 +132,20 @@
   <div class="divisa"></div>
   
   <!--section-->
-  <section class="span12" verde>
-    teste  
+  <section class="filtro span12" verde>
+    
+    <!-- col esquerda -->
+    <div class="span8 verde">
+    colesquerda
+    </div>  
+    <!--/col esquerda-->
+    
+    <!--col direita-->
+    <div class="span4">
+    coldireita  
+    </div>
+    <!--/col direita--> 
+    
   </section>  
   <!--/section-->
   
