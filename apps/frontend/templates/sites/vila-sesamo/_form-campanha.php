@@ -251,6 +251,7 @@
   
   function validate(obj){
     if($(obj).val()==$(obj).attr("data-default"))
-      $(obj).val('');
+      //$(obj).val('');
+      return true;
   }
 </script>  
