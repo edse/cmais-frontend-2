@@ -13,9 +13,13 @@
 
 <!--content-->
 <div id="content">
+  
+  <!--section -->
+  <section>
   teste
-  
-  
+  </section>
+  <!--/section-->
+
 </div> 
 <!--/content-->
   
