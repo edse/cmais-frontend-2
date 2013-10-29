@@ -36,6 +36,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 #carrossel-interna .slider li .nome i.sprite-ico-jogos-p { margin-top:7px; }
 #carrossel-interna .slider li:hover a { text-decoration:underline; }*/
 /* form */
+#content .form{position:relative; overflow: hidden;margin-bottom:20px;}
 #content .form .span12{margin-bottom:20px;}
 #content .form .span8{margin:0;}
 #content .form .span4{margin-left:20px;}
@@ -59,14 +60,14 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 #content .form textarea.error{margin-left: 10px;border: #fffd2f 2px solid;color: #fffd2f!important;background: #737373;}
 .form-horizontal .control-label {text-align:left; *float:left; float:left; width:40px !important;}
 .form-horizontal .control-group.span12{width:100%;}
-.form-horizontal .control-group textarea { width: 525px;margin-left: 1%;height: 80px;margin-left: 10px;border-radius: 0px; }
+.form-horizontal .control-group textarea { width: 495px;margin-left: 1%;height: 80px;margin-left: 10px;border-radius: 0px; }
 
 .form-horizontal .control-group { float: left;    margin-left: 0;    margin-right: 0;    width: 91%; }
-.form-horizontal .control-group input {margin: 0; float:left; *float:left;}
-#content section.form .form-horizontal .span8 { width: 410px; *width: 490px; }
-.form-horizontal .span8.control-group input{width:360px; *width:340px;margin-left:10px;}
-.form-horizontal .span8.control-group.cidade{width:470px!important; width:450px!important;}
-.form-horizontal .span8.control-group.cidade input{width:420px;}
+.form-horizontal .control-group input {margin: 0; float:left;}
+#content section.form .form-horizontal .span8 { width: 410px; }
+.form-horizontal .span8.control-group input{width:340px;margin-left:10px;}
+.form-horizontal .span8.control-group.cidade{width:468px!important; margin-bottom:20px;}
+.form-horizontal .span8.control-group.cidade input{width:400px;}
 .form-horizontal .idade.span2 input,
 .form-horizontal .span8.control-group input,
 .form-horizontal .control-group a  { height:26px; line-height:26px; display: block;border-radius: 0;height: 35px;float: left;}
@@ -77,7 +78,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form-horizontal .estado .control-group { margin:0; }
 .form-horizontal .control-group { margin:0 0 2% 0; min-height:25px; }
 .form-horizontal .control-group.idade  .control-group { width: 66%; float:right; } 
-.form-horizontal .idade.span2 input{width: 95px; *width: 75px; margin-left: 10px;}
+.form-horizontal .idade.span2 input{width: 75px; margin-left: 10px;}
 .form-horizontal .idade.span2 { width:145px; float:left; margin-left:20px;}
 .form-horizontal .span2.estado { width:85px; float:left; margin-left:20px; }
 .form-horizontal .span2.estado select{width:85px;}
@@ -95,7 +96,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form-horizontal .span11 { float:right; }
 .form-horizontal .span11 a { color:#fffb49;}
 .form .sucesso .btn,
-.form-horizontal .span11 .btn { width:100%; border:none; box-shadow:none; text-shadow:none; font-size:18px; }
+.form-horizontal .span11 .btn { width:100%; border:none; box-shadow:none; text-shadow:none; font-size:18px; margin-bottom: 28px; }
 .form .sucesso { float:left; margin:60px 0; }
 .form .sucesso p { font-size:18px; text-transform:uppercase; text-align:center; }
 .form .termo{width: 526px;background: #d9d9d9;float: right;height: 90px;border-radius: 5px;overflow:scroll;}
@@ -103,7 +104,8 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form .termo::-webkit-scrollbar-thumb {background:#737373;-webkit-border-radius: 0.5ex; border:2px solid #d9d9d9;}
 .form .termo::-webkit-search-results-decoration,
 .form .termo::-webkit-scrollbar-corner {background: #d9d9d9;}
-#content .form label.error{display:none!important;}
+.form label.error{position:absolute;position: absolute;bottom: 18px;left: 37px;font-size: 21px!important;padding: 0;margin: 0;}
+.atividades .form label.error{background:#883feb; }
 .form .control-group.span11 label{margin: 0; padding: 0; font-size:16px;}
 .form .control-group.span11 input{margin: 3px;}
 /* /form */
@@ -119,6 +121,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 /* atividades*/
 .interna.atividades .todos-assets p { background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png);font-size:25px!important; }
 .interna.atividades .conteudo-asset h2 { color:#883feb; }
+.interna.atividades #content{background-color:#571ed9;}
 .interna.atividades #content .relacionados {background:#7732e5; border-bottom:none;}
 .interna.videos #content .section.form,
 .interna.atividades #content section.form,

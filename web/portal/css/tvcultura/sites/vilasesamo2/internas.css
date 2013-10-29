@@ -70,7 +70,10 @@ body { background:#0172f9; }
 .todos-itens li h2 { border-bottom:2px solid #0191fb;} 
 .todos-itens li h2,
 .destaque-filtro article h1 { margin:0; line-height: 32px; }
-.destaque-filtro article a p{font-family: 'dinmedium';color: #883feb;font-size: 18px;text-transform: uppercase; margin:0; line-height:34px;}
+.destaque-filtro article a p{font-family: 'dinmedium';font-size: 18px;text-transform: uppercase; margin:0; line-height:34px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.interna.atividades .destaque-filtro article a p{color: #883feb;}
+.interna.jogos .destaque-filtro article a p{color: #02cbff;}
+.interna.videos .destaque-filtro article a p{color: #f36701;}
 .destaque-filtro a img { border:2px solid transparent; }
 .destaque-filtro .span6:hover a {color:#02cbff; text-decoration:underline;}
 .destaque-filtro .span6:hover a img {border:2px solid #02cbff;}
@@ -104,7 +107,7 @@ body { background:#0172f9; }
 .todos-itens { margin-top:20px; overflow:hidden; }
 .todos-itens a div{white-space:nowrap; text-overflow: ellipsis; overflow: hidden;}
 .todos-itens a {font-family: 'dinmedium';color: #FFF;font-size: 18px;text-transform: uppercase;margin: 0;line-height: 20px;vertical-align: middle;/*height: 42px;*/}
-.todos-itens a div img{width: 1px;height: 38px;}
+.todos-itens a div img.altura{width: 1px;height: 38px;}
 .todos-itens a:hover{color:#FFF;}
 .todos-itens .row-fluid { margin-left:0; width:980px; *margin-left:-20px; margin-left: -20px!important; }
 /*.todos-itens #container { margin-left:8px !important;  }
@@ -122,24 +125,33 @@ body { background:#0172f9; }
 /* /todos itens*/
 
 /* interna*/
+.interna .destaque-filtro article{margin-right: 9px;}
 .interna-content { min-width:900px; min-height:675px; background:#000; clear: both; }
 /*.interna  footer .container { display: none; }*/
 
 /* /interna*/
+/* jogos 
+.interna.jogos {margin-top:-10px;}
+/* jogos */
 
 /* videos*/
 .interna.videos { background:#f36701; }
+.interna.videos .yt-destaque{width:350px; height:350px; display:block; overflow: hidden;border:#FFFFFF 2px solid;}
+.interna.videos .yt-destaque:hover{border:#f77400 2px solid;}
+.interna.videos .yt-destaque img{max-width:750px!important;margin-left: -73px;margin-top: -7px;}
+.interna.videos .yt-menu{width:300px; height:300px; display:block; overflow: hidden;border-bottom:#f77400 2px solid;}
+.interna.videos .yt-menu img{max-width:401px; position:relative; left:-68;}
 .interna.videos .todos-itens li,
 .interna.videos .filtro,
 .interna.videos .scroll { border-color:#fba500; }
-.interna.videos .filtro h3,
+.interna.videos .filtro h1,
 .interna.videos .filtro .span2,
 .interna.videos .todos-itens li img,
 .interna.videos .todos-itens li h2,
 .interna.videos .filtro .span12 { border-color:#f27300; }
 .interna.videos .todos-itens li,
 .interna.videos .filtro,
-.interna.videos .filtro h3,
+.interna.videos .filtro h1,
 .interna.videos .scroll {background:#f78701;}
 .interna.videos .todos-itens li h2 a { color:#fff;}
 .interna.videos .destaque-filtro article h1 a { color:#f27300;}
@@ -175,7 +187,6 @@ body { background:#0172f9; }
 .interna.atividades .destaque-filtro .span6:hover a img {border:2px solid #b16af2;}
 .interna.atividades .filtro .span2 { border-top-color:#f27300 !important; }
 .interna.atividades .destaque-filtro{padding:0px 10px;}
-.interna.atividades .destaque-filtro article{margin-right: 9px;}
 .interna.atividades .destaque-filtro.especial { background:#7732e5; }
 .interna.atividades .destaque-filtro.especial li { background:#b16af2; }
 .interna.atividades .destaque-filtro.especial li a { color:#fba500; }
@@ -300,10 +311,10 @@ body.personagens { background:#b60401; }
 .todos-itens #container li.jogos{background-color:#32a8ee;border-top: 7px solid #02cbff;border-bottom: 7px solid #02cbff;}
 
 .todos-itens #container li.atividades img{border-bottom-color:#7825e9;border-top:none;}
-.todos-itens #container li.atividades a{border-bottom:#7825e9 3px solid;border-top:#7825e9  3px solid;}
+.todos-itens #container li.atividades a{border-bottom:#7825e9 2px solid;border-top:#7825e9  2px solid;}
 
-.todos-itens #container li.videos img{border-bottom-color:#f77400;border-top:none;}
-.todos-itens #container li.videos a{border-bottom:#f77400 3px solid;border-top:#f77400  3px solid;}
+.todos-itens #container li.videos img{border-top:none;}
+.todos-itens #container li.videos a{border-bottom:#f77400 2px solid;border-top:#f77400  2px solid;}
 
 .todos-itens #container li.jogos img{border-bottom-color:#008dff;border-top:none;}
-.todos-itens #container li.jogos a{border-bottom:#008dff 3px solid;border-top:#008dff  3px solid;}
+.todos-itens #container li.jogos a{border-bottom:#008dff 2px solid;border-top:#008dff  2px solid;} 

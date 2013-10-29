@@ -133,7 +133,7 @@
       </div>
           <?php endif; ?>
         <?php else: // senão existir artigo, tenta pegar um segundo destaque do bloco "dicas" pra preencher o espaço ?>
-          <?php if(isset($displays['dicas'][1]) > 0): ?>
+          <?php if(isset($displays['dicas'][1])): ?>
       <div class="span4 dica">
         <i class="sprite-aspa-esquerda"></i>
         <h2><a href="#"><?php echo $displays['dicas'][1]->getTitle(); ?></a></h2>

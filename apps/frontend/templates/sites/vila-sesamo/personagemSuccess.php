@@ -41,7 +41,7 @@
                     <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
                       <iframe width="351" height="263" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
                     <?php elseif($d->Asset->AssetType->getSlug() == "image"): ?>
-                      <img src="<?php $d->retriveImageUrlByImageUsage() ?>" alt="<?php echo $d->getTitle() ?>" />
+                      <img src="<?php echo $d->retriveImageUrlByImageUsage('image-13-b'); ?>" alt="<?php echo $d->getTitle() ?>" />
                     <?php endif; ?>
                     </div>
                   </li>
@@ -68,6 +68,7 @@
         <div class="descritivo">
           <h3><?php echo $section->getTitle() ?></h3>
           <p><?php echo html_entity_decode($displays["sobre-a-personagem"][0]->Asset->AssetContent->render()) ?></p>
+          <p><?php //echo $section->getDescription() ?></p>
         </div>  
       </div>
       <!--/box-personagem-->

@@ -86,13 +86,13 @@
         }
       }
     ?>
-    <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?>"> 
+    <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> atividades"> 
       <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
         <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
         <i class="sprite-icons-new sprite-icone_atividades"></i>
         <div>
-          <img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
+          <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
           <?php echo $d->getTitle() ?>
         </div>
       </a>
@@ -111,11 +111,11 @@
 
 
 <input type="hidden" id="filter-choice" value="">
-<?php /*
+
 <nav id="page_nav">
   <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
 </nav>
-*/ ?>
+
 
 <!--scripts-->
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>

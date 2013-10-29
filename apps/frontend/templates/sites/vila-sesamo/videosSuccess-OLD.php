@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <script>
-  $("body").addClass("interna jogos");
+  $("body").addClass("interna videos");
 </script>
 
 <!-- HEADER -->
@@ -16,7 +16,7 @@
   <div class="span12" role="main">
     
     <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
-    <h1><i class="sprite-icon-colorir-med"></i>Jogos</h1>
+    <h1><i class="sprite-icon-colorir-med"></i>Vídeos</h1>
     
     <?php if(isset($displays['destaque-1']) || isset($displays['destaque-2'])): ?>
       <?php if(count($displays['destaque-1']) > 0 || count($displays['destaque-2']) > 0): ?>
@@ -26,12 +26,11 @@
       <div class="aba1">
         <?php if(isset($displays['destaque-1'])): ?>
           <?php if(count($displays['destaque-1']) > 0): ?>
-            <?php $related_preview = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByRelationType("Preview"); ?>
         <h2 aria-describedby="Novidade">
           <article class="span6 clipes">
-            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/jogos/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>">
+            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/videos/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
-              <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" />
+              <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-1'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" />
               <p><?php echo $displays['destaque-1'][0]->getTitle() ?></p> 
             </a> 
           </article>
@@ -42,9 +41,9 @@
           <?php if(count($displays['destaque-2']) > 0): ?>
         <h2 aria-describedby="Novidade">
           <article class="span6 clipes">
-            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/jogos/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>">
+            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
-              <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
+              <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-2'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
               <p><?php echo $displays['destaque-2'][0]->getTitle() ?></p> 
             </a> 
           </article>
@@ -86,15 +85,11 @@
         }
       }
     ?>
-    <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> jogos"> 
-      <a href="/<?php echo $site->getSlug() ?>/jogos/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
-        <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
-        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
-        <i class="sprite-icons-new sprite-icone_atividades"></i>
-        <div>
-          <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-          <?php echo $d->getTitle() ?>
-        </div>
+    <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?>"> 
+      <a href="/<?php echo $site->getSlug() ?>/videos/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
+        <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
+        <i class="sprite-icons-new sprite-icone_videos"></i>
+        <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/><?php echo $d->getTitle() ?></div>
       </a>
     </li>
     <?php endforeach; ?>
@@ -111,11 +106,11 @@
 
 
 <input type="hidden" id="filter-choice" value="">
-
+<?php /*
 <nav id="page_nav">
   <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
 </nav>
-
+*/ ?>
 
 <!--scripts-->
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
