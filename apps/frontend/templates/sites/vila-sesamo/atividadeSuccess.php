@@ -44,7 +44,7 @@
   <!--section -->
   <section class="filtro row-fluid">
     
-    <h1>
+    <h1 class="back-page">
       <i class="sprite-icon-colorir-med"></i>
       <?php echo $section->getTitle() ?>
       <a class="todos-assets" title="voltar para todas atividades">
