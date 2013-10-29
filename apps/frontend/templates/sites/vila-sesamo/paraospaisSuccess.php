@@ -21,7 +21,7 @@
     <div class="container-carrossel b-verde borda-arredonda">
       <h1>
         <span class="sprite sprite-cuidadores-gd"></span>
-        Cuidadores
+        <?php echo $section->getTitle() ?>
       </h1>
       
       <!--inicio carrossel--> 
