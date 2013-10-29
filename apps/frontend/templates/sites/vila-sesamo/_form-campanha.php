@@ -47,21 +47,21 @@
         <!--Nome-->
         <div class="control-group span8">
           <label class="control-label sprite-ico-nome" for="nome"></label>
-          <input type="text" id="nome" value="Nome" name="nome" data-default="Nome" >
+          <input type="text" id="nome" value="Nome" name="nome" data-default="Nome"  placeholder="Nome">
         </div>
         <!--/Nome-->
         
         <!--Idade-->
         <div class="control-group idade span2">
           <label class="control-label sprite-ico-idade" for="idade"></label>
-          <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade" data-default="Idade" >
+          <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade" data-default="Idade"  placeholder="Idade">
         </div>
         <!--/Idade-->
         
         <!--Cidade-->
         <div class="control-group span8 cidade">
           <label class="control-label sprite-ico-cidade" for="cidade"></label>
-          <input type="text" id="cidade" value="Cidade" name="cidade" data-default="Cidade" >
+          <input type="text" id="cidade" value="Cidade" name="cidade" data-default="Cidade" placeholder="Cidade">
         </div>
         <!--/Cidade-->
         
@@ -103,7 +103,7 @@
         <!--Email-->
         <div class="control-group span8">
           <label class="control-label sprite-ico-email" for="email"></label>
-          <input type="text" id="email"  value="Email" name="email">
+          <input type="text" id="email"  value="Email" name="email" placeholder="Email">
         </div>
         <!--/Email-->
         
@@ -118,7 +118,7 @@
         <!--Msg-->
         <div class="control-group span12 msg">
           <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
-          <textarea id="mensagem" name="mensagem" data-default="Mensagem" >Mensagem</textarea>
+          <textarea id="mensagem" name="mensagem" data-default="Mensagem"  placeholder="Mensagem">Mensagem</textarea>
         </div>
         <!--/Msg-->
         
@@ -139,7 +139,7 @@
         
         <!--enviar-->
         <div class="control-group span11">
-          <button type="submit" class="btn">enviar minha brincadeira</button>
+          <button type="submit" class="btn" id="enviar">enviar minha brincadeira</button>
         </div>
         <!--/enviar-->
         
@@ -178,60 +178,29 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
-  	
-	  $('#nome').focus(function(){ validate('#nome') });
-	  $('#idade').focus(function(){ validate('#idade') });
-	  $('#cidade').focus(function(){ validate('#cidade') });
-	  $('#email').focus(function(){ validate('#email') });
-	  $('#mensagem').focus(function(){ validate('#mensagem') });
-	  
-	  
-	  /*$('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
+	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
 	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});
-	  
 	  $('#idade').focus(function(){ 	if($(this).val() == "Idade") {  $(this).val(''); }; });
 	  $('#idade').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Idade'); 	 };	});	  
-	  
 	  $('#cidade').focus(function(){ 	if($(this).val() == "Cidade") {  $(this).val(''); }; });
 	  $('#cidade').focusout(function(){ if($(this).val() == ''){ $(this).val('Cidade');   }; });
-	
 	  $('#email').focus(function(){ 	if($(this).val() == "Email") {  $(this).val(''); }; });
 	  $('#email').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Email'); 	 };	});
-	
 	  $('#mensagem').focus(function(){ 	if($(this).val() == "Mensagem") {  $(this).val(''); };	});
 	  $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Mensagem'); };	});
-  		*/
-  	
-	  $('.btn').click(function(){
-      	if($("#nome").val() == 'Nome')
-      	  $("#nome").addClass("error");
-      	if($("#cidade").val() == 'Cidade')	
-      	  $("#cidade").addClass("error");
-      	if($("#mensagem").val() == 'Mensagem')	
-      	  $("#mensagem").addClass("error");
-	  });
-	  	
   	
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
-      	
-      	if($("#nome").val() == 'Nome')
-      	  $("#nome").addClass("error");
-      	else if($("#cidade").val() == 'Cidade')	
-      	  $("#cidade").addClass("error");
-      	else if($("#mensagem").val() == 'Mensagem')	
-      	  $("#mensagem").addClass("error");
-      	else 	 
-      		form.submit();
+      	form.submit();
       },
       rules:{
         nome:{
-          required: true,
+          required: function(){ validate("#nome"); return true},
           minlength: 2
         },
         idade:{
-          required: true,
+          required: function(){ validate("#idade"); return true},
           number: true
         },
         email:{
@@ -239,14 +208,14 @@
           email: true
         },
         cidade:{
-          required: true,
+          required: function(){ validate("#cidade"); return true},
           minlength: 3
         },
         estado:{
           required: true
         },
         mensagem:{
-          required: true,
+          required: function(){ validate("#mensagem"); return true},
           minlength: 3
         },
         datafile:{
@@ -277,5 +246,7 @@
   function validate(obj){
     if($(obj).val()==$(obj).attr("data-default"))
       $(obj).val('');
+      //$(obj).addClass("error");
   }
+  
 </script>  

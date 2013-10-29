@@ -18,14 +18,22 @@ $(document).ready(function() {
     player[cont].addEventListener("onStateChange", function(res){
       if(res.data == 1){
         $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow');
+        $('#carrossel-interna-artigo').responsiveCarousel('stopSlideShow');
         playing = res.target;
         console.log('playing:'+playing);
       }
       if(res.data == 0){
         $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
+        $('#carrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
       }
     });
   }
+  
+  $('#selector-interna-artigo  a').on('click', function (ev) {
+    if(!$(this).hasClass('current')){
+      playing.pauseVideo();
+    } 
+  });
   
   $('.videoorimage iframe').each(function(i){
     if($(this).attr('src').indexOf("youtube") != -1){
