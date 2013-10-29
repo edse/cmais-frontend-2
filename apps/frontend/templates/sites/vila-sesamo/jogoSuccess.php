@@ -102,7 +102,7 @@
               }
             }
           ?>
-          <?php if(isset($seloImageUrl)): ?>
+          <?php if($seloImageUrl): ?>
       <p>
         <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
           <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
@@ -112,6 +112,7 @@
           <?php endif; ?>
         <?php endif; ?>
       <?php endif; ?>
+      
       
       <?php if(isset($asset)): ?>
       <div class="asset">
