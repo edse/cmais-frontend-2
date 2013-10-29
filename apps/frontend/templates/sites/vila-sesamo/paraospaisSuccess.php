@@ -17,8 +17,109 @@
   <!--section -->
   <section class="filtro row-fluid">
   
-    <div class="container-carrossel span12 b-verde borda-arredonda">
-      teste<br><br><br>
+    <div class="container-carrossel b-verde borda-arredonda">
+      <h1>
+        <span class="icon icon-cuidadores"></span>
+        Cuidadores
+      </h1>
+      <!--inicio carrossel--> 
+    <div id="carrossel-interna-artigo">
+      <!--slider-->
+      <div class="slider">
+        <!--slider-mask-wrap-->
+        <div class="slider-mask-wrap">
+          <!--slider-mask-->
+          <div class="slider-mask">
+            <!--slider-mask-wrap--> 
+            <ul class="slider-target">
+              <!--item-->
+              <li>
+                <div class="pull-left videoorimage">
+                  <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
+                </div>
+                <div class="descritivo">
+                  <h3>BEL</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+                </div>
+              </li>
+              <!--/item-->
+              
+              <!--item-->
+              <li>
+                <div class="pull-left videoorimage">
+                  <iframe width="420" height="315" src="//www.youtube.com/embed/52GWILDxOcA" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="descritivo">
+                  <h3>BEL</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+                </div>
+              </li>
+              <!--/item-->
+              
+              <!--item-->
+              <li>
+                <div class="pull-left videoorimage">
+                  <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
+                </div>
+                <div class="descritivo">
+                  <h3>BEL</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+                </div>
+              </li>
+              <!--/item-->
+              
+              <!--item-->
+              <li>
+                <div class="pull-left videoorimage">
+                  <iframe width="420" height="315" src="//www.youtube.com/embed/52GWILDxOcA" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="descritivo">
+                  <h3>BEL</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+                </div>
+              </li>
+              <!--/item-->
+              
+              <!--item-->
+              <li>
+                <div class="pull-left videoorimage">
+                  <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
+                </div>
+                <div class="descritivo">
+                  <h3>BEL</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+                </div>
+              </li>
+              <!--/item-->
+              
+              
+            </ul>
+            <!--slider-mask-->
+            <div class="clearit"></div>
+          </div>
+        </div>
+        <!--slider-mask-wrap--> 
+        <!--slider-nav>
+        <div class="slider-nav">
+          <div class="arrow-left arrow"><span title="Anterior" class="back"></span></div>
+          <div class="arrow-right arrow"><span title="Proximo" class="next"></span></div>
+        </div> 
+        <!--slider-nav-->
+      </div>
+      <!--/slider-->
+      <!--seletor carrossel-->
+      <div class="container-itens"> 
+        <ul id="selector-interna-personagem">
+          <li><a href="#" rel="frame_0"></a></li>
+          <li><a href="#" rel="frame_1"></a></li>
+          <li><a href="#" rel="frame_2"></a></li>
+          <li><a href="#" rel="frame_3"></a></li>
+          <li><a href="#" rel="frame_4"></a></li>
+        </ul>
+      </div>
+      <!--/seletor carrossel--> 
+    </div>
+    <!--/inicio carrossel--> 
     <div>  
   </section>
   <!--/section-->
@@ -50,13 +151,13 @@
   
   $('#selector-interna-personagem').css('width', total);
   
-  $('#carrossel-interna-personagem').responsiveCarousel({
+  $('#ccarrossel-interna-artigo').responsiveCarousel({
       unitWidth:          'inherit',
-      target:             '#carrossel-interna-personagem .slider-target',
-      unitElement:        '#carrossel-interna-personagem .slider-target > li',
-      mask:               '#carrossel-interna-personagem .slider-mask',
-      arrowLeft:          '#carrossel-interna-personagem .arrow-left',
-      arrowRight:         '#carrossel-interna-personagem .arrow-right',
+      target:             '#ccarrossel-interna-artigo .slider-target',
+      unitElement:        '#ccarrossel-interna-artigo .slider-target > li',
+      mask:               '#ccarrossel-interna-artigo .slider-mask',
+      arrowLeft:          '#ccarrossel-interna-artigo .arrow-left',
+      arrowRight:         '#ccarrossel-interna-artigo .arrow-right',
       dragEvents:         true,
       step:-1,
       onShift:function (i) {
@@ -74,7 +175,7 @@
   $('#selector-interna-personagem a').on('click', function (ev) {
     ev.preventDefault();
     var i = /\d/.exec($(this).attr('rel'));
-    $('#carrossel-interna-personagem').responsiveCarousel('goToSlide', i);
+    $('#ccarrossel-interna-artigo').responsiveCarousel('goToSlide', i);
     if(!$(this).hasClass('current')){
       playing.pauseVideo();
     } 
@@ -84,18 +185,18 @@
   
   $(window).on('load', function (ev) {
     ev.preventDefault();
-    $('#carrossel-interna-personagem').responsiveCarousel('redraw');
-    $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
+    $('#ccarrossel-interna-artigo').responsiveCarousel('redraw');
+    $('#ccarrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
     slideShow();
   });
   
   slideShow = function(ev){
     ev.preventDefault();
-    $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
+    $('#ccarrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
   };
   stop = function(ev){
     ev.preventDefault();
-    $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow');
+    $('#ccarrossel-interna-artigo').responsiveCarousel('stopSlideShow');
   };
   </script>
 <!--scripts-->
