@@ -139,7 +139,7 @@
         
         <!--enviar-->
         <div class="control-group span11">
-          <button type="submit" class="btn">enviar minha brincadeira</button>
+          <button type="submit" class="btn" id="enviar">enviar minha brincadeira</button>
         </div>
         <!--/enviar-->
         
