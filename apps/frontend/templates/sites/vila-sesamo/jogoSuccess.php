@@ -21,6 +21,8 @@
     }
   }
    */
+  $categories = array();
+  if($categories) echo "sim";
   $sections = $asset->getSections();
   foreach($sections as $s) {
     if($s->getParentSectionId() > 0) {
@@ -30,6 +32,7 @@
       }
     }
   }
+  $campaign = "";
   foreach($sections as $s) {
     if($s->getParentSectionId() > 0) {
       $parentSection = Doctrine::getTable('Section')->findOneById($s->getParentSectionId());
