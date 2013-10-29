@@ -18,11 +18,13 @@ $(document).ready(function() {
     player[cont].addEventListener("onStateChange", function(res){
       if(res.data == 1){
         $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow');
+        $('#carrossel-interna-artigo').responsiveCarousel('stopSlideShow');
         playing = res.target;
         console.log('playing:'+playing);
       }
       if(res.data == 0){
         $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
+        $('#carrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
       }
     });
   }
