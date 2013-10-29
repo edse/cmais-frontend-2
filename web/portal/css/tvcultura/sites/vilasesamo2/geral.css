@@ -547,7 +547,6 @@ footer .relacionados li.last { margin-right:0; }
 .pais .dropdown-toggle { width: 96%; }
 .cuidadores .selecione > .dropdown-menu,
 .pais .btn-group > .dropdown-menu,
-.cuidadores .selecione .btn-group.open .btn.dropdown-toggle,
 .pais .btn-group.open .btn.dropdown-toggle,
 .cuidadores .selecione .dropdown-menu > li > a,
 .pais .dropdown-menu > li > a,
