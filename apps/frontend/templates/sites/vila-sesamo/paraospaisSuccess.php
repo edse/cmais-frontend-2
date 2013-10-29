@@ -140,25 +140,28 @@
       <!--selecione-->
       <div class="selecione">
         
-        <p>Todos os Artigos de</p>
-        <!-- selecione uma categoria-->
-        <?php
-          $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
-          $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
-        ?>        
-        <?php if(isset($allCategories)): ?>
-          <?php if(count($allCategories) > 0): ?>
-          <div class="btn-group">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
-            <ul class="dropdown-menu">
-              <?php foreach($allCategories as $c): ?>
-              <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
-              <?php endforeach; ?>
-            </ul>
-          </div>
+        <!--barra selecao-->
+        <div class="barra-selecao b-verdeescuro">
+          <h3>Todos os Artigos de:</h3>
+          <!-- selecione uma categoria-->
+          <?php
+            $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
+            $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
+          ?>        
+          <?php if(isset($allCategories)): ?>
+            <?php if(count($allCategories) > 0): ?>
+            <div class="btn-group">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
+              <ul class="dropdown-menu">
+                <?php foreach($allCategories as $c): ?>
+                <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
+                <?php endforeach; ?>
+              </ul>
+            </div>
+            <?php endif; ?>
           <?php endif; ?>
-        <?php endif; ?>
-        <!-- /selecione uma categoria--> 
+        </div>
+        <!--/barra selecao-->
         
         <!--/section-->
         <section class="todos-itens ">
@@ -198,12 +201,60 @@
               </a>
             </li>
             
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo3
+                </div>
+              </a>
+            </li>
+            
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo3
+                </div>
+              </a>
+            </li>
+            
+            
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo3
+                </div>
+              </a>
+            </li>
+            
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo3
+                </div>
+              </a>
+            </li>
+            
           </ul> 
           <!--lista-->  
+          
         </section>
         <!--/section-->
+        
       </div>
       <!--/selecione-->
+      
     </div>  
     <!--/col esquerda-->
     
