@@ -128,7 +128,15 @@
       
   </section>
   <!--/section-->
-
+  
+  <div class="divisa"></div>
+  
+  <!--section-->
+  <section class="span12" verde>
+    teste  
+  </section>  
+  <!--/section-->
+  
 </div> 
 <!--/content-->
   
