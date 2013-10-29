@@ -141,7 +141,7 @@
       <div class="selecione">
         
         <!--barra selecao-->
-        <div class="barra-seleçao">
+        <div class="barra-selecao b-verdeescuro">
           <h3>Todos os Artigos de:</h3>
           <!-- selecione uma categoria-->
           <?php
