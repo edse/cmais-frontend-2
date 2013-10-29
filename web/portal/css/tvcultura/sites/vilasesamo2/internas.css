@@ -342,7 +342,5 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .selecione .barra-selecao h3{color:#FFF; font-size:18px;width:300px; float:left;padding: 0px 10px; text-transform: uppercase;}
 .cuidadores .col-direita .destaque-small{overflow: hidden;margin-bottom: 20px;height: 300px;display: block;}
 .cuidadores .selecione .btn-group .dropdown-toggle {border-radius: 0;-moz-border-radius: 0;-webkit-border-radius: 0;}
-.cuidadores .selecione .dropdown-toggle {height: 36px;line-height: 36px;}
-.cuidadores .selecione .btn-group > .dropdown-menu, .cuidadores .selecione .btn-group.open .btn.dropdown-toggle, .cuidadores .selecione .dropdown-menu > li > a, .pais .dropdown-toggle {padding: 0 2%;text-align: left;float: left;position: relative;background: #fffb49;color: #737373;border: none;box-shadow: none;}
 /* cuidadores */
  
