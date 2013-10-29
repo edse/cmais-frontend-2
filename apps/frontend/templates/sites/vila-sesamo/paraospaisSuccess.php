@@ -478,9 +478,7 @@
     ev.preventDefault();
     var i = /\d/.exec($(this).attr('rel'));
     $('#carrossel-interna-artigo').responsiveCarousel('goToSlide', i);
-    if(!$(this).hasClass('current')){
-      playing.pauseVideo();
-    } 
+
     stop();
     slideShow(); 
   });
