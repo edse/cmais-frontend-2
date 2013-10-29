@@ -109,7 +109,7 @@ img.altura{width: 1px!important;height: 38px!important;}
 .todos-itens a div{white-space:nowrap; text-overflow: ellipsis; overflow: hidden;}
 .todos-itens a {font-family: 'dinmedium';color: #FFF;font-size: 18px;text-transform: uppercase;margin: 0;line-height: 20px;vertical-align: middle;/*height: 42px;*/}
 .todos-itens a:hover{color:#FFF;}
-.todos-itens .row-fluid { margin-left:0; width:980px; *margin-left:-20px; margin-left: -20px!important; }
+.interna .todos-itens .row-fluid { margin-left:0; width:980px; *margin-left:-20px; margin-left: -20px!important; }
 /*.todos-itens #container { margin-left:8px !important;  }
 .todos-itens ul { margin-left:1% !important; } 
 .todos-itens li { margin:0 1.7% 2% 0 !important; }
@@ -335,7 +335,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .filtro h1 {border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;background: #00aa52; font-size:25px;}
 .cuidadores .sprite{width: 60px;height: 50px;background: red;margin: -2px 20px 0 0;}
 
-.cuidadores .todos-itens #container{width:820px; background:red;}
+.cuidadores .todos-itens #container{width:820px; background:red; margin-left: -10px!important;*margin-left:-10px;}
 .cuidadores .todos-itens .element{width:200px; margin-left: 10px!important;}
 .cuidadores .todos-itens li img{width:200px; height:200px;}
 /* cuidadores */
