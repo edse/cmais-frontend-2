@@ -40,8 +40,9 @@
                     <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/interna-carrosel-bel.jpg" alt="foto da bel" />
                   </div>
                   <div class="descritivo">
-                    <h3>BEL</h3>
+                    <h3>NOME DO ARTIGO</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse pretium tortor felis, quis egestas arcu facilisis a.<br><br> Aliquam commodo lectus volutpat nisl faucibus hendrerit.Nulla facilisi. Donec porta, leo at aliquet mattis, erat justo sodales tellus, at aliquet lacus. massa eu purus cras amet.</p>
+                    <p>Por <span>Nome do autor</span></p>
                   </div>
                 </li>
                 <!--/item-->
@@ -49,7 +50,7 @@
                 <!--item-->
                 <li>
                   <div class="pull-left videoorimage">
-                    <iframe width="420" height="315" src="//www.youtube.com/embed/52GWILDxOcA" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="350" height="263" src="//www.youtube.com/embed/52GWILDxOcA" frameborder="0" allowfullscreen></iframe>
                   </div>
                   <div class="descritivo">
                     <h3>BEL</h3>
@@ -73,7 +74,7 @@
                 <!--item-->
                 <li>
                   <div class="pull-left videoorimage">
-                    <iframe width="420" height="315" src="//www.youtube.com/embed/52GWILDxOcA" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="350" height="263" src="//www.youtube.com/embed/52GWILDxOcA" frameborder="0" allowfullscreen></iframe>
                   </div>
                   <div class="descritivo">
                     <h3>BEL</h3>
