@@ -151,13 +151,13 @@
   
   $('#selector-interna-personagem').css('width', total);
   
-  $('#ccarrossel-interna-artigo').responsiveCarousel({
+  $('#carrossel-interna-artigo').responsiveCarousel({
       unitWidth:          'inherit',
-      target:             '#ccarrossel-interna-artigo .slider-target',
-      unitElement:        '#ccarrossel-interna-artigo .slider-target > li',
-      mask:               '#ccarrossel-interna-artigo .slider-mask',
-      arrowLeft:          '#ccarrossel-interna-artigo .arrow-left',
-      arrowRight:         '#ccarrossel-interna-artigo .arrow-right',
+      target:             '#carrossel-interna-artigo .slider-target',
+      unitElement:        '#carrossel-interna-artigo .slider-target > li',
+      mask:               '#carrossel-interna-artigo .slider-mask',
+      arrowLeft:          '#carrossel-interna-artigo .arrow-left',
+      arrowRight:         '#carrossel-interna-artigo .arrow-right',
       dragEvents:         true,
       step:-1,
       onShift:function (i) {
@@ -175,7 +175,7 @@
   $('#selector-interna-personagem a').on('click', function (ev) {
     ev.preventDefault();
     var i = /\d/.exec($(this).attr('rel'));
-    $('#ccarrossel-interna-artigo').responsiveCarousel('goToSlide', i);
+    $('#carrossel-interna-artigo').responsiveCarousel('goToSlide', i);
     if(!$(this).hasClass('current')){
       playing.pauseVideo();
     } 
@@ -185,18 +185,18 @@
   
   $(window).on('load', function (ev) {
     ev.preventDefault();
-    $('#ccarrossel-interna-artigo').responsiveCarousel('redraw');
-    $('#ccarrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
+    $('#carrossel-interna-artigo').responsiveCarousel('redraw');
+    $('#carrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
     slideShow();
   });
   
   slideShow = function(ev){
     ev.preventDefault();
-    $('#ccarrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
+    $('#carrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
   };
   stop = function(ev){
     ev.preventDefault();
-    $('#ccarrossel-interna-artigo').responsiveCarousel('stopSlideShow');
+    $('#carrossel-interna-artigo').responsiveCarousel('stopSlideShow');
   };
   </script>
 <!--scripts-->
