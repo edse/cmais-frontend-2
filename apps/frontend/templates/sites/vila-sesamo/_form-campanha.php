@@ -198,6 +198,10 @@
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
+      	if($("#mensagem").val() == 'Mensagem'){ 
+      		$("#mensagem").val(''); 
+      	};
+      	
         /*
         $.ajax({
           type: "POST",
@@ -254,7 +258,8 @@
           required: true
         },
         mensagem:{
-          required: true
+          required: true,
+          minlength: 3
         },
         datafile:{
           required: true,
