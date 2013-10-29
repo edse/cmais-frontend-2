@@ -90,12 +90,11 @@
     ?>
     <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> videos"> 
       <a href="/<?php echo $site->getSlug() ?>/videos/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
-        <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
+        <div class="yt-menu">
+          <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
+        </div>
         <i class="sprite-icons-new sprite-icone_videos"></i>
-        <div>
-          <div class="yt-menu">
-            <img src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-          </div>
+          <img src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
           <?php echo $d->getTitle() ?>
         </div>
       </a>
