@@ -15,7 +15,7 @@
 <div id="content">
   
   <!--section -->
-  <section>
+  <section class="filtro row-fluid">
   
     <div class="container-carrossel span12 b-verde borda-arredonda">
       teste<br><br><br>
