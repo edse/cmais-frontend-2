@@ -342,5 +342,6 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .selecione .barra-selecao h3{color:#FFF; font-size:18px;width:300px; float:left;padding: 0px 10px; text-transform: uppercase;}
 .cuidadores .col-direita .destaque-small{overflow: hidden;margin-bottom: 20px;height: 300px;display: block;}
 .cuidadores .selecione .btn-group .dropdown-toggle {border-radius: 0;-moz-border-radius: 0;-webkit-border-radius: 0;}
+.cuidadores .selecione .dropdown-toggle {height: 30px;line-height: 33px;color: #fff;width: 272px;float: right;}
 /* cuidadores */
  
