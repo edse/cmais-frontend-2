@@ -78,8 +78,7 @@
   var classes = new Array();
   $container.isotope('shuffle');
   
-  setTimeout(function() {
-      $container.isotope('shuffle');
-    }, 1000);  
+  
+  $($container).repeat(1000).isotope('shuffle').overAndOver(); 
   
 </script>  
