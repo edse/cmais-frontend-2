@@ -198,7 +198,9 @@
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
-      	if($("#mensagem").val() == 'Mensagem'){ $("#mensagem").val(''); };	});
+      	if($("#mensagem").val() == 'Mensagem'){ 
+      		$("#mensagem").val(''); 
+      	};
       	
         /*
         $.ajax({
