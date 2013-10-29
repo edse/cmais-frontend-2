@@ -89,7 +89,7 @@
     <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> atividades"> 
       <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
         <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
-        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
         <i class="sprite-icons-new sprite-icone_atividades"></i>
         <div>
           <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>

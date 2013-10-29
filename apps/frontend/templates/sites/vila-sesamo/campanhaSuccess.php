@@ -6,11 +6,24 @@
 <h1><?php echo $section->getTitle() ?></h1>
 
 <?php
-  $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
-  $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
+  $sectionCampanha = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"campanhas");
+  $allCampaigns = $sectionCampanha->subsections(); 
 ?>        
-<?php if(isset($allCategories)): ?>
-  <?php if(count($allCategories) > 0): ?>
+<?php if(isset($allCampaigns)): ?>
+  <?php if(count($allCampaigns) > 0): ?>
+    <ul>
+    <?php foreach($allCampaigns as $c): ?>
+      <?php
+        $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($c->getId(), "enviados");
+        if ($block) $displays["enviados"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceiros"
+      ?>
+      <?php if(isset($displays["enviados"])): ?>
+        <?php if(count($displays["enviados"]) > 0): ?>
+      <li><a href="/<?php echo $site->getSlug() ?>/campanhas/<?php echo $c->getSlug(); ?>" title="<?php echo $c->getTitle(); ?>"><?php echo $c->getTitle(); ?></a></li>
+        <?php endif; ?>
+      <?php endif; ?>
+    <?php endforeach; ?>
+    </ul>
   <?php endif; ?>
 <?php endif; ?>
 
