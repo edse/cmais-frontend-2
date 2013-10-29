@@ -4,6 +4,14 @@
    */
   $categories = array();
   $sections = $asset->getSections();
+  foreach($sections as $s) {
+    if($s->getParentSectionId() > 0) {
+      $parentSection = Doctrine::getTable('Section')->findOneById($s->getParentSectionId());
+      if($parentSection->getSlug() == "categorias") {
+        $categories[] = $s;
+      }
+    }
+  }
   $campaign = false;
   foreach($sections as $s) {
     if($s->getParentSectionId() > 0) {
@@ -13,9 +21,6 @@
           $campaign = $s;
           break;
         }
-      }
-      if($parentSection->getSlug() == "categorias") {
-        $categories[] = $s;
       }
     }
   }
@@ -63,24 +68,31 @@
        * Este selo é um destaque de imagem - pode ser genérico! - dentro do bloco "selo" de cada categoria.
        * Todas as categorias tem este bloco, mas somente as marcadas como "is homepage" serão consideradas como especiais, tais como "Incluir Brincando" e "Hábitos Saudáveis".
        */
-        foreach($categories as $c) {
-          if($c->getIsHomepage() == 1) { // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando".
-            $seloTitle = $c->getTitle(); // pega o título da secão filha
-            $seloUrl = $c->retriveUrl(); // pega a url da seção filha
-            $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($c->getId(), "selo"); // Pega o bloco "selo" da seção filha
-            $category_displays["selo"] = $block->retriveDisplays(); // Pega os destaques do bloco "selo"
-            $seloImageUrl = $category_displays["selo"][0]->retriveImageUrlByImageUsage("original"); // Pega a imagem do destaque
-          }
-        }
       ?>
-      <?php if($seloImageUrl): ?>
+      <?php if(isset($categories)): ?>
+        <?php if(count($categories) > 0): ?>
+          <?php      
+            foreach($categories as $c) {
+              if($c->getIsHomepage() == 1) { // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando".
+                $seloTitle = $c->getTitle(); // pega o título da secão filha
+                $seloUrl = $c->retriveUrl(); // pega a url da seção filha
+                $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($c->getId(), "selo"); // Pega o bloco "selo" da seção filha
+                $category_displays["selo"] = $block->retriveDisplays(); // Pega os destaques do bloco "selo"
+                $seloImageUrl = $category_displays["selo"][0]->retriveImageUrlByImageUsage("original"); // Pega a imagem do destaque
+              }
+            }
+          ?>
+          <?php if($seloImageUrl): ?>
       <p>
         <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
           <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
         </a>
         <?php echo $asset->getDescription() ?>
       </p>
+          <?php endif; ?>
+        <?php endif; ?>
       <?php endif; ?>
+      
       
       <?php if(isset($asset)): ?>
       <div class="asset">

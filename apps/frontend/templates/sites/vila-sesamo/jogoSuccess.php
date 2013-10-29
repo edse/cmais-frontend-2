@@ -2,25 +2,6 @@
   /*
    * Pega a campanha (seção filha de "campanhas") e as categorias (seçao filha de "categorias") as quais o asset pertence
    */
-  /*
-  $categories = array();
-  $sections = $asset->getSections();
-  $campaign = false;
-  foreach($sections as $s) {
-    if($s->getParentSectionId() > 0) {
-      $parentSection = Doctrine::getTable('Section')->findOneById($s->getParentSectionId());
-      if($parentSection->getSlug() == "campanhas") {
-        if($s->getIsActive() == 1) { 
-          $campaign = $s;
-          break;
-        }
-      }
-      if($parentSection->getSlug() == "categorias") {
-        $categories[] = $s;
-      }
-    }
-  }
-   */
   $categories = array();
   $sections = $asset->getSections();
   foreach($sections as $s) {
