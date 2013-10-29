@@ -64,14 +64,14 @@
     if(isset($categories)) {
       if(count($categories) > 0) {
         foreach($categories as $c) {
-          $categorySlugs[] = $c->getSlug();
+          $categoryId[] = $c->getId();
         }
         $see_also_by_categories = Doctrine_Query::create()
           ->select('a.*')
           ->from('Asset a, SectionAsset sa')
           ->where('a.site_id = ?', $site->getId())
           ->andWhere('sa.asset_id = a.id')
-          ->andWhereIn('sa.section_id', $categorySlugs)
+          ->andWhereIn('sa.section_id', $categoryId)
           ->andWhere('a.asset_type_id = ?', 1)
           ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
           ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
@@ -151,11 +151,8 @@
                     <?php endforeach; ?>
                   <?php endif; ?>
                 <?php else: ?>
-                  1
                   <?php if(isset($see_also_by_tags)): ?>
-                    2
                     <?php if(count($see_also_by_tags) > 0): ?>
-                      3
                       <?php foreach($see_also_by_tags as $k=>$d): ?>
                         <?php
                           $sections = $d->getSections();
@@ -187,8 +184,8 @@
                     <?php endif; ?>
                   <?php endif; ?>
                   
-                  <?php if(isset($see_also_by_categories)): ?>4
-                    <?php if(count($see_also_by_categories) > 0): ?>5
+                  <?php if(isset($see_also_by_categories)): ?>
+                    <?php if(count($see_also_by_categories) > 0): ?>
                       <?php foreach($see_also_by_categories as $k=>$d): ?>
                         <?php if(!in_array($d->getId(), $assetID)): ?>
                           <?php
