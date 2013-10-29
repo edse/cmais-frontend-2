@@ -334,5 +334,9 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .filtro {background: #00aa52;border-top: 7px solid #00c76e;border-bottom: 7px solid #00c76e;}
 .cuidadores .filtro h1 {border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;background: #00aa52; font-size:25px;}
 .cuidadores .sprite{width: 60px;height: 50px;background: red;margin: -2px 20px 0 0;}
+
+.cuidadores .todos-itens #container{width:820px; background:red;}
+.cuidadores .todos-itens li{width:200px}
+.cuidadores .todos-itens li img{width:200px; height:200px;}
 /* cuidadores */
  
