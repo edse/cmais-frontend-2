@@ -125,6 +125,7 @@ body { background:#0172f9; }
 /* /todos itens*/
 
 /* interna*/
+.interna .destaque-filtro article{margin-right: 9px;}
 .interna-content { min-width:900px; min-height:675px; background:#000; clear: both; }
 /*.interna  footer .container { display: none; }*/
 
@@ -184,7 +185,6 @@ body { background:#0172f9; }
 .interna.atividades .destaque-filtro .span6:hover a img {border:2px solid #b16af2;}
 .interna.atividades .filtro .span2 { border-top-color:#f27300 !important; }
 .interna.atividades .destaque-filtro{padding:0px 10px;}
-.interna.atividades .destaque-filtro article{margin-right: 9px;}
 .interna.atividades .destaque-filtro.especial { background:#7732e5; }
 .interna.atividades .destaque-filtro.especial li { background:#b16af2; }
 .interna.atividades .destaque-filtro.especial li a { color:#fba500; }
