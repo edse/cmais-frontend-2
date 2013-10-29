@@ -125,7 +125,7 @@ body { background:#0172f9; }
 /* /todos itens*/
 
 /* interna*/
-.interna .destaque-filtro article{margin-right: 5px;}
+.interna .destaque-filtro article{margin-right: 14px;}
 .interna .semmargem{margin-right:0px!important;}
 .interna-content { min-width:900px; min-height:675px; background:#000; clear: both; }
 /*.interna  footer .container { display: none; }*/
