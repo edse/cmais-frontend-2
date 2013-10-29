@@ -64,7 +64,7 @@
   <?php if(count($displays["enviados"]) > 0): ?>
     <?php foreach($displays["enviados"] as $k=>$d): ?>
   <div>
-    <a href="javascript: viewer('<?php echo $d->retriveImageUrlByImageUsage("image-14") ?>')" title="<?php echo $d->getTitle() ?>">
+    <a href="javascript: viewer('<?php echo $d->retriveImageUrlByImageUsage("image-14") ?>','<?php echo $d->getTitle() ?>')" title="<?php echo $d->getTitle() ?>">
       <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>"/>
       <!--input type="hidden" id="image_<?php echo $k ?>" name="image_<?php echo $k ?>" value="<?php echo $d->retriveImageUrlByImageUsage("image-14") ?>" /-->
       <p><?php echo $d->getTitle() ?></p>
@@ -77,10 +77,8 @@
 <!--/destaques-->
 
 <script>
-  function viewer(url)
-  {
-    $("#viewer").html(url);
-  }  
+  function viewer(url,alt)
+    $("#viewer").html("<img src='"+url+"' alt='"+alt+"' />");
 </script>
 
 
