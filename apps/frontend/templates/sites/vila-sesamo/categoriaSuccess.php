@@ -110,7 +110,7 @@
     <?php if(count($_displays['parceiros']) > 0): ?>
       <p>Conheça nossos parceiros:</p>
       <a class="publicidade" href="<?php echo $_displays['parceiros'][0]->retriveUrl() ?>" title="<?php echo $_displays['parceiros'][0]->getTitle() ?>">
-        <img src="<?php echo $_displays['parceiros'][0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $_displays['parceiros'][0]->getTitle() ?>" />
+        <img src="<?php echo $_displays['parceiros'][0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $_displays['parceiros'][0]->getTitle() ?>" />
       </a>
     <?php endif; ?>
   <?php endif; ?>
