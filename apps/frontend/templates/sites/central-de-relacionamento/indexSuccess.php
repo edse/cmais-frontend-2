@@ -42,10 +42,10 @@ $(document).ready(function(){
             <?php foreach($displays['botoes-central'] as $k=>$d): ?>
             <div class="base-btn">  
               <div class="btn-esquerda cinza-claro-2">
-                <a href="<?php echo $d->Asset->AssetContent->getHeadline() ?>" title="<?php echo $d->getTitle() ?>">
-                  <i class="ico ico-<?php echo $d->Asset->getSlug() ?>"></i>
+                <a href="<?php echo $d->getUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                  <i class="ico ico-<?php echo $d->getLabel() ?>"></i>
                   <h1><?php echo $d->getTitle() ?></h1>
-                  <p><?php echo $d->Asset->getDescription() ?></p>
+                  <p><?php echo $d->getDescription() ?></p>
                 </a>
               </div>
               <div class="btn-esquerda sombra"></div>
