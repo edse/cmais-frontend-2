@@ -179,7 +179,14 @@
 <script type="text/javascript">
   $(document).ready(function(){
   	
-	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
+	  $('#nome').focus(function(){ validate('#nome') });
+	  $('#idade').focus(function(){ validate('#idade') });
+	  $('#cidade').focus(function(){ validate('#cidade') });
+	  $('#email').focus(function(){ validate('#email') });
+	  $('#mensagem').focus(function(){ validate('#mensagem') });
+	  
+	  
+	  /*$('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
 	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});
 	  
 	  $('#idade').focus(function(){ 	if($(this).val() == "Idade") {  $(this).val(''); }; });
@@ -193,13 +200,23 @@
 	
 	  $('#mensagem').focus(function(){ 	if($(this).val() == "Mensagem") {  $(this).val(''); };	});
 	  $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Mensagem'); };	});
+  		*/
   	
+	  $('.btn').click(function(){
+      	if($("#nome").val() == 'Nome')
+      	  $("#nome").addClass("error");
+      	if($("#cidade").val() == 'Cidade')	
+      	  $("#cidade").addClass("error");
+      	if($("#mensagem").val() == 'Mensagem')	
+      	  $("#mensagem").addClass("error");
+	  });
+	  	
   	
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
       	
-      	if($("#nome").val() == 'Nome')	
+      	if($("#nome").val() == 'Nome')
       	  $("#nome").addClass("error");
       	else if($("#cidade").val() == 'Cidade')	
       	  $("#cidade").addClass("error");

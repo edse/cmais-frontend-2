@@ -145,7 +145,7 @@
             <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
             <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
             <i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i>
-            <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="<?php echo $assetSection->getSlug() ?>"/><?php echo $d->getTitle() ?></div>
+            <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="<?php echo $assetSection->getSlug() ?>"/><?php echo $d->getTitle() ?></div>
           </a>
         </li>
         <?php endforeach; ?>
