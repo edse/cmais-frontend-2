@@ -47,21 +47,21 @@
         <!--Nome-->
         <div class="control-group span8">
           <label class="control-label sprite-ico-nome" for="nome"></label>
-          <input type="text" id="nome" value="Nome" name="nome">
+          <input type="text" id="nome" value="Nome" name="nome" data-default="Nome" >
         </div>
         <!--/Nome-->
         
         <!--Idade-->
         <div class="control-group idade span2">
           <label class="control-label sprite-ico-idade" for="idade"></label>
-          <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade">
+          <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade" data-default="Idade" >
         </div>
         <!--/Idade-->
         
         <!--Cidade-->
         <div class="control-group span8 cidade">
           <label class="control-label sprite-ico-cidade" for="cidade"></label>
-          <input type="text" id="cidade" value="Cidade" name="cidade">
+          <input type="text" id="cidade" value="Cidade" name="cidade" data-default="Cidade" >
         </div>
         <!--/Cidade-->
         
@@ -118,7 +118,7 @@
         <!--Msg-->
         <div class="control-group span12 msg">
           <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
-          <textarea id="mensagem" name="mensagem">Mensagem</textarea>
+          <textarea id="mensagem" name="mensagem" data-default="Mensagem" >Mensagem</textarea>
         </div>
         <!--/Msg-->
         
@@ -178,43 +178,35 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
+  	
+	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
+	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});
+	  
+	  $('#idade').focus(function(){ 	if($(this).val() == "Idade") {  $(this).val(''); }; });
+	  $('#idade').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Idade'); 	 };	});	  
+	  
+	  $('#cidade').focus(function(){ 	if($(this).val() == "Cidade") {  $(this).val(''); }; });
+	  $('#cidade').focusout(function(){ if($(this).val() == ''){ $(this).val('Cidade');   }; });
+	
+	  $('#email').focus(function(){ 	if($(this).val() == "Email") {  $(this).val(''); }; });
+	  $('#email').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Email'); 	 };	});
+	
+	  $('#mensagem').focus(function(){ 	if($(this).val() == "Mensagem") {  $(this).val(''); };	});
+	  $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Mensagem'); };	});
+  	
+  	
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
-        /*
-        $.ajax({
-          type: "POST",
-          dataType: "text",
-          data: $("#form-contato").serialize(),
-          url: "http://cmais.com.br/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php",
-          beforeSend: function(){
-            $('input#enviar').attr('disabled','disabled');
-            $(".msgAcerto").hide();
-            $(".msgErro").hide();
-            $('img#ajax-loader').show();
-          },
-          success: function(data){
-            $('input#enviar').removeAttr('disabled');
-            window.location.href="#";
-            alert(data);
-            if(data == "0"){
-              $("#form-contato").clearForm();
-              $("#form-contato").hide();
-              $("#statusMsg_0").show();
-              $('img#ajax-loader').hide();
-            }
-            else if(data > 0) {
-              $(".msgErro").hide();
-              $("#statusMsg_"+data).show();
-              $('img#ajax-loader').hide();
-            }
-            else {
-              alert('Erro inesperado!');
-            }
-          }
-        });    */
-       form.submit();     
-        
+      	
+      	if($("#nome").val() == 'Nome')	
+      	  $("#nome").addClass("error");
+      	else if($("#cidade").val() == 'Cidade')	
+      	  $("#cidade").addClass("error");
+      	else if($("#mensagem").val() == 'Mensagem')	
+      	  $("#mensagem").addClass("error");
+      	else 	 
+      		form.submit();
       },
       rules:{
         nome:{
@@ -237,7 +229,8 @@
           required: true
         },
         mensagem:{
-          required: true
+          required: true,
+          minlength: 3
         },
         datafile:{
           required: true,

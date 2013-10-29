@@ -41,7 +41,7 @@
         <?php if(isset($displays['destaque-2'])): ?>
           <?php if(count($displays['destaque-2']) > 0): ?>
         <h2 aria-describedby="Novidade">
-          <article class="span6 clipes">
+          <article class="span6 clipes  semmargem">
             <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/videos/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
               <div class="yt-destaque">
@@ -90,12 +90,12 @@
     ?>
     <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> videos"> 
       <a href="/<?php echo $site->getSlug() ?>/videos/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
-        <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
+        <div class="yt-menu">
+          <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
+        </div>
         <i class="sprite-icons-new sprite-icone_videos"></i>
         <div>
-          <div class="yt-menu">
-            <img src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-          </div>
+          <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
           <?php echo $d->getTitle() ?>
         </div>
       </a>

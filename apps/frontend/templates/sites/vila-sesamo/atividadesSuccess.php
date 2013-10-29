@@ -41,7 +41,7 @@
         <?php if(isset($displays['destaque-2'])): ?>
           <?php if(count($displays['destaque-2']) > 0): ?>
         <h2 aria-describedby="Novidade">
-          <article class="span6 clipes">
+          <article class="span6 clipes  semmargem">
             <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
               <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
@@ -92,7 +92,7 @@
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
         <i class="sprite-icons-new sprite-icone_atividades"></i>
         <div>
-          <img src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+          <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
           <?php echo $d->getTitle() ?>
         </div>
       </a>

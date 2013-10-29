@@ -47,8 +47,8 @@
           $j++;
         }
       });
-      console.log($select);
-      console.log($j);
+      //console.log($select);
+      //console.log($j);
       if($i > 0){
         $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens</span>');
       }else{

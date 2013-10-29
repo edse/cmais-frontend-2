@@ -244,10 +244,10 @@
 						<p>
 						  
 						  <?php if($d->getDescription() != ""){ 
-								  echo $d->getTitle()."<br />";
+								  echo "<strong>".$d->getTitle()."</strong><br />";
 								  echo $d->getDescription();
 								}else{
-									echo "<br />".$d->getTitle();
+									echo "<br /><strong>".$d->getTitle()."</strong>";
 								}
 							?>	
 					  </p>
