@@ -307,7 +307,7 @@ body.personagens { background:#b60401; }
 .personagens .span8 .span6 {border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
 .personagens #container-personagens{}
 .personagens .conteudo-asset {padding: 0;}
-.personagens .q-pers{float:left; width: 220px; height:220px; margin:5px;}
+.personagens .q-pers{float:left; width: 225px; height:225px; margin:5px;}
 
 
 .todos-itens #container li.atividades{background-color:#8935ef;border-top: 7px solid #b16af2; border-bottom: 7px solid #b16af2;}
