@@ -23,7 +23,7 @@ if(count($blocks) > 0){
     <div class="desc-site">
     <?php if(isset($displays['descricao'])):?>
       <?php if(count($displays['descricao']) > 0): ?>
-        <p><?php echo $displays['descricao'][0]->getDescription() ?></p>
+        <p><?php echo $displays['descricao'][0]->getTitle() ?></p>
       <?php endif; ?>
     <?php endif; ?>
     </div>
