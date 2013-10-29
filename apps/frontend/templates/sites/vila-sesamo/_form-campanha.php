@@ -198,30 +198,38 @@
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
+      	
+      	if($("#nome").val() == 'Nome')	
+      	  $("#nome").addClass("error");
+      	else if($("#cidade").val() == 'Cidade')	
+      	  $("#cidade").addClass("error");
+      	else if($("#mensagem").val() == 'Mensagem')	
+      	  $("#mensagem").addClass("error");
+      	else 	 
       		form.submit();
       },
       rules:{
         nome:{
-          required: validate("#nome"),
+          required: true,
           minlength: 2
         },
         idade:{
-          required: validate("#idade"),
+          required: true,
           number: true
         },
         email:{
-          required: validate("#email"),
+          required: true,
           email: true
         },
         cidade:{
-          required: validate("#cidade"),
+          required: true,
           minlength: 3
         },
         estado:{
           required: true
         },
         mensagem:{
-          required: validate("#mensagem"),
+          required: true,
           minlength: 3
         },
         datafile:{
@@ -251,7 +259,6 @@
   
   function validate(obj){
     if($(obj).val()==$(obj).attr("data-default"))
-      //$(obj).val('');
-      return true;
+      $(obj).val('');
   }
 </script>  
