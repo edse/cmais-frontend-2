@@ -118,7 +118,7 @@
             <div class="slider-mask">
               <ul class="slider-target">
                 
-                <?php if(isset($campaign)): ?>
+                <?php if($campaign): ?>
                   <?php if(count($see_also_by_campaign) > 0): ?>
                     <?php foreach($see_also_by_campaign as $k=>$d): ?>
                       <?php
