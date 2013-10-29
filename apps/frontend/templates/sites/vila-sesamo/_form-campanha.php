@@ -1,4 +1,4 @@
-  <?php if(isset($campaign)): ?>
+  <?php if($campaign): ?>
   <span class="divisa carregar"></span>
   <!--section-->
   <section class="form row-fluid">
