@@ -47,21 +47,21 @@
         <!--Nome-->
         <div class="control-group span8">
           <label class="control-label sprite-ico-nome" for="nome"></label>
-          <input type="text" id="nome" value="Nome" name="nome" data-default="Nome" >
+          <input type="text" id="nome" value="Nome" name="nome" data-default="Nome"  placeholder="Nome">
         </div>
         <!--/Nome-->
         
         <!--Idade-->
         <div class="control-group idade span2">
           <label class="control-label sprite-ico-idade" for="idade"></label>
-          <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade" data-default="Idade" >
+          <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade" data-default="Idade"  placeholder="Idade">
         </div>
         <!--/Idade-->
         
         <!--Cidade-->
         <div class="control-group span8 cidade">
           <label class="control-label sprite-ico-cidade" for="cidade"></label>
-          <input type="text" id="cidade" value="Cidade" name="cidade" data-default="Cidade" >
+          <input type="text" id="cidade" value="Cidade" name="cidade" data-default="Cidade" placeholder="Cidade">
         </div>
         <!--/Cidade-->
         
@@ -103,7 +103,7 @@
         <!--Email-->
         <div class="control-group span8">
           <label class="control-label sprite-ico-email" for="email"></label>
-          <input type="text" id="email"  value="Email" name="email">
+          <input type="text" id="email"  value="Email" name="email" placeholder="Email">
         </div>
         <!--/Email-->
         
@@ -118,7 +118,7 @@
         <!--Msg-->
         <div class="control-group span12 msg">
           <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
-          <textarea id="mensagem" name="mensagem" data-default="Mensagem" >Mensagem</textarea>
+          <textarea id="mensagem" name="mensagem" data-default="Mensagem"  placeholder="Mensagem">Mensagem</textarea>
         </div>
         <!--/Msg-->
         
