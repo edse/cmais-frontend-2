@@ -109,7 +109,7 @@
       <!--/slider-->
       <!--seletor carrossel-->
       <div class="container-itens"> 
-        <ul id="selector-interna-personagem">
+        <ul id="selector-interna-artigo ">
           <li><a href="#" rel="frame_0"></a></li>
           <li><a href="#" rel="frame_1"></a></li>
           <li><a href="#" rel="frame_2"></a></li>
@@ -144,12 +144,12 @@
   <script>
   //carrossel
   var total=0;
-  $('#selector-interna-personagem li').each(function(i){
+  $('#selector-interna-artigo  li').each(function(i){
     var width = $(this).width();
     total = width + total + 14; 
   });
   
-  $('#selector-interna-personagem').css('width', total);
+  $('#selector-interna-artigo ').css('width', total);
   
   $('#carrossel-interna-artigo').responsiveCarousel({
       unitWidth:          'inherit',
@@ -161,18 +161,18 @@
       dragEvents:         true,
       step:-1,
       onShift:function (i) {
-          var $current = $('#selector-interna-personagem li a[rel=frame_' + i + ']');
-          $('#selector-interna-personagem li a').removeClass('current');
+          var $current = $('#selector-interna-artigo  li a[rel=frame_' + i + ']');
+          $('#selector-interna-artigo  li a').removeClass('current');
           $current.addClass('current');
       },
       slideSpeed: 8000
   });
   
-  //$('.arrow, #selector-interna-personagem a').click(function(){
+  //$('.arrow, #selector-interna-artigo  a').click(function(){
     //slideShow(); 
   //});
   
-  $('#selector-interna-personagem a').on('click', function (ev) {
+  $('#selector-interna-artigo  a').on('click', function (ev) {
     ev.preventDefault();
     var i = /\d/.exec($(this).attr('rel'));
     $('#carrossel-interna-artigo').responsiveCarousel('goToSlide', i);
