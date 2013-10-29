@@ -2,7 +2,6 @@
 <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))?>
 <!-- /HEADER -->
 
-
 <h1><?php echo $section->getTitle() ?></h1>
 
 <?php
@@ -52,43 +51,37 @@
 <?php endif; ?>
 </div>
 <!--/destaque-principal-->
+
+<!-- visualizador do destaque -->
+<div id="viewer">
   
+</div>
+<!--/visualizador do destaque -->
+
 <!--destaques-->
 <div>
-<?php if(isset($pager)): ?>
-  <?php if(count($pager) > 0): ?>
-    <?php foreach($pager->getResults() as $k=>$d): ?>
-    <?php
-      $assetPersonagens = array();
-      $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
-      foreach($d->getSections() as $a) {
-        if($a->getParentSectionId() == $personagensSection->getId()) {
-          $assetPersonagens[] = $a->getSlug();
-        }
-      }
-      foreach($d->getSections() as $a) {
-        if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
-          $assetSection = $a;
-          break;
-        }
-      }
-    ?>
-    <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?>"> 
-      <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
-        <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
-        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
-        <i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i>
-        <div>
-          <img src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-          <?php echo $d->getTitle() ?>
-        </div>
-      </a>
-    </li>
+<?php if(isset($displays["enviados"])): ?>
+  <?php if(count($displays["enviados"]) > 0): ?>
+    <?php foreach($displays["enviados"] as $k=>$d): ?>
+  <div>
+    <a href="javascript: viewer('<?php echo $d->retriveImageUrlByImageUsage("image-14") ?>')" title="<?php echo $d->getTitle() ?>">
+      <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>"/>
+      <!--input type="hidden" id="image_<?php echo $k ?>" name="image_<?php echo $k ?>" value="<?php echo $d->retriveImageUrlByImageUsage("image-14") ?>" /-->
+      <p><?php echo $d->getTitle() ?></p>
+    </a>
+  </div>
     <?php endforeach; ?>
   <?php endif; ?>
 <?php endif; ?>
 </div>
 <!--/destaques-->
+
+<script>
+  function viewer(url)
+  {
+    $("#viewer").html(url);
+  }  
+</script>
 
 
 
