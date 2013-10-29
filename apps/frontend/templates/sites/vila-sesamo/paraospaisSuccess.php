@@ -246,6 +246,129 @@
               </a>
             </li>
             
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo3
+                </div>
+              </a>
+            </li>
+            
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo3
+                </div>
+              </a>
+            </li>
+            
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo1
+                </div>
+              </a>
+            </li>
+    
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo2
+                </div>
+              </a>
+            </li>
+            
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo3
+                </div>
+              </a>
+            </li>
+            
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo3
+                </div>
+              </a>
+            </li>
+            
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo3
+                </div>
+              </a>
+            </li>
+            
+            
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo3
+                </div>
+              </a>
+            </li>
+            
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo3
+                </div>
+              </a>
+            </li>
+            
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo3
+                </div>
+              </a>
+            </li>
+            
+            <li class="span4 element"> 
+              <a href="#" title="title">
+                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
+                <i class="sprite-icons-new sprite-icone_atividades"></i>
+                <div>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  Nome do Artigo3
+                </div>
+              </a>
+            </li>
+            
+                        
           </ul> 
           <!--lista-->  
           
@@ -255,12 +378,48 @@
       </div>
       <!--/selecione-->
       
+      <input type="hidden" id="filter-choice" value="">
+
+      <nav id="page_nav">
+        <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
+      </nav>
+
     </div>  
     <!--/col esquerda-->
     
     <!--col direita-->
-    <div class="span4">
-    coldireita  
+    <div class="span4 col-direita">
+    
+      <!--destaque 1-->
+      <a class="destaque-small" href="#" title="titulo 1">
+        <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="descricao" />
+      </a>
+      <!-- destaque 1 -->
+      
+      <!--destaque 2-->
+      <a class="destaque-small" href="#" title="titulo 2">
+        <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="descricao" />
+      </a>
+      <!-- destaque 2 -->
+      
+      <!--destaque 3-->
+      <a class="destaque-small" href="#" title="titulo 3">
+        <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="descricao" />
+      </a>
+      <!-- destaque 3 -->
+      
+      <!--destaque 4-->
+      <a class="destaque-small" href="#" title="titulo 4">
+        <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="descricao" />
+      </a>
+      <!-- destaque 4 -->
+      
+      <!--destaque 5-->
+      <a class="destaque-small" href="#" title="titulo 5">
+        <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="descricao" />
+      </a>
+      <!-- destaque 5 -->
+
     </div>
     <!--/col direita--> 
     
