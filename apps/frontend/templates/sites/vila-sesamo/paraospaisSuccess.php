@@ -132,7 +132,7 @@
   <div class="divisa"></div>
   
   <!--section-->
-  <section class="filtro span12" verde>
+  <section class="filtro row-fluid" verde>
     
     <!-- col esquerda -->
     <div class="span8 verde">
