@@ -17,7 +17,7 @@
   <!--section -->
   <section>
   
-    <div class="container-carrossel span12 verde borda-arredonda">
+    <div class="container-carrossel span12 b-verde borda-arredonda">
       teste<br><br><br>
     <div>  
   </section>
