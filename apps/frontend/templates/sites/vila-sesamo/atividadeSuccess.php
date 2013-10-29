@@ -82,7 +82,7 @@
               }
             }
           ?>
-          <?php if($seloImageUrl): ?>
+          <?php if(isset($seloImageUrl)): ?>
       <p>
         <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
           <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
