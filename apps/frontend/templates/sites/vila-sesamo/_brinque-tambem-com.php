@@ -151,8 +151,11 @@
                     <?php endforeach; ?>
                   <?php endif; ?>
                 <?php else: ?>
+                  1
                   <?php if(isset($see_also_by_tags)): ?>
+                    2
                     <?php if(count($see_also_by_tags) > 0): ?>
+                      3
                       <?php foreach($see_also_by_tags as $k=>$d): ?>
                         <?php
                           $sections = $d->getSections();
@@ -163,6 +166,7 @@
                             }
                           }
                           $assetID[] = $d->getId();
+                          
                         ?>
                       <li class="<?php echo $assetSection->getSlug(); ?>">
                         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
@@ -183,8 +187,8 @@
                     <?php endif; ?>
                   <?php endif; ?>
                   
-                  <?php if(isset($see_also_by_categories)): ?>
-                    <?php if(count($see_also_by_categories) > 0): ?>
+                  <?php if(isset($see_also_by_categories)): ?>4
+                    <?php if(count($see_also_by_categories) > 0): ?>5
                       <?php foreach($see_also_by_categories as $k=>$d): ?>
                         <?php if(!in_array($d->getId(), $assetID)): ?>
                           <?php
