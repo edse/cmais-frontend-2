@@ -41,7 +41,7 @@
         <?php if(isset($displays['destaque-2'])): ?>
           <?php if(count($displays['destaque-2']) > 0): ?>
         <h2 aria-describedby="Novidade">
-          <article class="span6 clipes">
+          <article class="span6 clipes  semmargem">
             <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/videos/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
               <div class="yt-destaque">

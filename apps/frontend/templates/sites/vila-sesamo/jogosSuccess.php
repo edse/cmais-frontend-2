@@ -41,7 +41,7 @@
         <?php if(isset($displays['destaque-2'])): ?>
           <?php if(count($displays['destaque-2']) > 0): ?>
         <h2 aria-describedby="Novidade">
-          <article class="span6 clipes">
+          <article class="span6 clipes  semmargem">
             <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/jogos/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
               <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
