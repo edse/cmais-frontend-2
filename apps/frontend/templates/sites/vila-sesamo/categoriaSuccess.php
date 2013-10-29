@@ -99,7 +99,10 @@
   
   <?php
     // Pega o bloco "parceiros" da seção "para os pais"
+    $forParents = Doctrine::getTable('Section')->findOneById(2399);
     $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($forParents->getId(), "parceiros");
+    if ($block)
+      $displays["parceiros"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceiros"    
   ?>
 
   <?php if(isset($displays['parceiros']) > 0): ?>
