@@ -331,5 +331,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .borda-verde{background-color:#008d36!important;}
 .cuidadores .borda-arredonda{border-radius:4px;  -moz-border-radius:4px; -webkit-border-radius: 4px; border:none!important;}
 
+.cuidadores .filtro {background: #00aa52;border-top: 7px solid #00c76e;border-bottom: 7px solid #00c76e;}
+.cuidadores .filtro h1 {border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;background: #00aa52;}
 /* cuidadores */
  
