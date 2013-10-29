@@ -56,7 +56,7 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
 
 <script>
-  $("body").addClass("interna jogos");
+  $("body").addClass("interna atividades");
 </script>
 
 <!-- HEADER -->
