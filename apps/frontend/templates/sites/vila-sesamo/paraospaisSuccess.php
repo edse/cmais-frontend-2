@@ -135,8 +135,25 @@
   <section class="filtro row-fluid" verde>
     
     <!-- col esquerda -->
-    <div class="span8 verde">
-    colesquerda
+    <div class="span8">
+      
+      <?php
+          $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
+          $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
+        ?>        
+        <?php if(isset($allCategories)): ?>
+          <?php if(count($allCategories) > 0): ?>
+        <p>Você também pode escolher o jogo de acordo com as preferências da criança:</p>
+        <div class="btn-group">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
+          <ul class="dropdown-menu">
+            <?php foreach($allCategories as $c): ?>
+            <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
+            <?php endforeach; ?>
+          </ul>
+        </div>
+          <?php endif; ?>
+        <?php endif; ?>
     </div>  
     <!--/col esquerda-->
     
