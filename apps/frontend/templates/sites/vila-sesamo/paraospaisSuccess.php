@@ -140,7 +140,7 @@
       <!--selecione-->
       <div class="selecione">
         
-        <p>Todos os Artigos</p>
+        <p>Todos os Artigos de</p>
         <!-- selecione uma categoria-->
         <?php
           $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
