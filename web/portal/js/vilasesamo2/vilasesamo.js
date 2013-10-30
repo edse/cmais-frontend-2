@@ -87,6 +87,9 @@ $(document).ready(function() {
     $(".pais .icone-cuidadores-abrir").toggleClass("inativo");
   });
   
+  $('icone-cat-abrir').click(function(){
+    $(this).toggleClass('icone-cat-fechar');
+  });
   //menu personagens tablet
   
   $('#myTab a').click(function (e) {
