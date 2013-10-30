@@ -85,7 +85,10 @@ $(document).ready(function() {
   $('.pais .icone-cuidadores-fechar').click(function() {
     $('.pais .content').stop().slideToggle('fast');
     $(".pais .icone-cuidadores-abrir").toggleClass("inativo");
-    $('.icone-cat-abrir').toggleClass('icone-cat-fechar');
+    if($('.icone-cat-abrir').hasClass('icone-cat-fechar')){
+      $('.icone-cat-abrir').toggleClass('icone-cat-fechar');  
+    }
+    
   });
   
   $('.icone-cat-abrir').click(function(){
