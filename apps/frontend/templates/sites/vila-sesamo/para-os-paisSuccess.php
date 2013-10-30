@@ -138,7 +138,7 @@
             <li class="span4 element<?php if(count($assetCategorias) > 0) echo " " . implode(" ", $assetCategorias); ?>"> 
               <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                 <?php $preview = $d->retriveRelatedAssetsByRelationType("Preview") ?>
-                <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+                <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
                 <i class="icones-sprite-interna icone-artigo-br-pequeno"></i>
                 <div>
                   <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
