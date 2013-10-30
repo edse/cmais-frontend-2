@@ -40,4 +40,4 @@
 .destaques .span4.atividades{border-top: 7px solid #b16af2;border-bottom: 7px solid #b16af2;border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius:4px;}
 .destaques .span4.jogos{border-top: 7px solid #02cbff;border-bottom: 7px solid #02cbff;border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius:4px;}
 .destaques .span4.videos{border-top: 7px solid #fba500;border-bottom: 7px solid #fba500;border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius:4px;}
-.destaques .span4 div{white-space: nowrap;text-overflow: ellipsis;overflow: hidden;padding: 0; font-size:16px;font-family:'dinmedium',Arial, Helvetica, sans-serif;}
+.destaques .span4 div.texto{white-space: nowrap;text-overflow: ellipsis;overflow: hidden;padding: 0; font-size:16px;font-family:'dinmedium',Arial, Helvetica, sans-serif;}

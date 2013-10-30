@@ -24,24 +24,24 @@
         <article class="span4 jogos">
           <a href="#" title="">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-            <i class="icones-setas icone-jogos-pequeno"></i>
-            <div><img class="altura"src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
+            <i class="icones-sprite-interna icone-jogos-pequeno"></i>
+            <div class="texto"><img class="altura"src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
           </a>
         </article>
         
         <article class="span4 videos">
           <a href="#" title="">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-            <i class="icones-setas icone-videos-pequeno"></i>
-            <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
+            <i class="icones-sprite-interna icone-videos-pequeno"></i>
+            <div class="texto"><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
           </a>
         </article>
         
         <article class="span4 atividades">
           <a href="#" title="">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-            <i class="icones-setas icone-atividades-pequeno"></i>
-            <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
+            <i class="icones-sprite-interna icone-atividades-pequeno"></i>
+            <div class="texto"><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
           </a>
         </article>
         
