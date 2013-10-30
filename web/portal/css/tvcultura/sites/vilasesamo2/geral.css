@@ -154,8 +154,8 @@ section { max-width:980px; margin:0 auto; clear:both;}
 
 /* setas */
 .icones-setas{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icone-setas.png) no-repeat top left; float:left;margin:3px 3px 3px 10px;}
-.icone-cuidadores-abrir{ background-position: 0 0; width: 49px; height: 32px; } 
-.icone-cuidadores-fechar{ background-position: 0 -82px; width: 49px; height: 32px; } 
+.icone-cuidadores-abrir{ background-position: 0 0; width: 49px; height: 32px; float: right!important;} 
+.icone-cuidadores-fechar{ background-position: 0 -82px; width: 49px; height: 32px; float: right!important; margin-right: 20;} 
 .icone-voltar-atividades{ background-position: 0 -164px; width: 33px; height: 48px; } 
 .icone-voltar-jogos{ background-position: 0 -262px; width: 33px; height: 48px; } 
 .icone-voltar-videos{ background-position: 0 -360px; width: 33px; height: 48px; } 
@@ -338,13 +338,13 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-btn-habitos,
 .sprite-btn-incluir-hover,
 .sprite-btn-incluir {  background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-btns-home.png); } 
-.sprite-btn-contato{ background-position: 0 0; width: 255px; height: 57px; } 
+.sprite-btn-contato{ background-position: 0 0; width: 255px; height: 57px; display:block; } 
 .sprite-btn-habitos:hover,
-.sprite-btn-habitos-hover{ background-position: 0 -107px; width: 300px; height: 100px; } 
-.sprite-btn-habitos{ background-position: 0 -257px; width: 300px; height: 100px; } 
+.sprite-btn-habitos-hover{ background-position: 0 -107px; width: 300px; height: 100px;  display:block;} 
+.sprite-btn-habitos{ background-position: 0 -257px; width: 300px; height: 100px;  display:block;} 
 .sprite-btn-incluir:hover,
-.sprite-btn-incluir-hover{ background-position: 0 -407px; width: 300px; height: 100px; } 
-.sprite-btn-incluir{ background-position: 0 -557px; width: 300px; height: 100px; } 
+.sprite-btn-incluir-hover{ background-position: 0 -407px; width: 300px; height: 100px;  display:block;} 
+.sprite-btn-incluir{ background-position: 0 -557px; width: 300px; height: 100px; display:block;} 
 
 .sprite-ico-anexo,
 .sprite-ico-cidade, 
@@ -505,7 +505,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques .atividades img,
 .destaques .atividades a.asset,
 .destaques .atividades h3 { border-color:#7732e5 ; }
-/*.destaques { margin-bottom:20px; }*/
+/*.destaques { margin-bottom:20px; }
 .destaques .atividades span,
 .destaques .atividades i { margin-top:-3%; }
 /*.destaques .atividades img { margin-top:-1%; }*/
@@ -582,24 +582,25 @@ footer .relacionados li.last { margin-right:0; }
 /* /footer*/
 
 /* pais*/
+img.altura{width: 1px!important;height: 38px!important;}
 #content .pais { background:#feec3c; margin:0 auto !important; overflow:hidden; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 .pais .divisa { margin-bottom:0; }
 .pais .divisa {clear: both;background-color: #feec3c;height: 2px;margin: 0;}
 .pais p{text-transform:uppercase;}
-.pais .content{display: block; padding: 20px 10px; background:#ffe303!important;}
+.pais .content{display: block; padding: 20px 10px; background:#ffe303!important;padding:0;}
 .pais .content .span4{margin-top:0px;}
 .pais h2 a,
-.pais h2 {color:#434343; margin:10px; font-size: 18px; font-weight: normal; line-height: 22px; text-transform: uppercase;}
+.pais h2 {color:#434343; margin:10px; font-size: 18px; font-weight: normal; line-height: 42px; text-transform: uppercase;}
 .pais h2 { font-size: 25px; }
-.pais .redes { position:absolute; top:12px; right:0;}
+.pais .redes { position:absolute; top:25px; right:0;}
 .pais .redes p { float:left; margin-right:10px; text-transform:uppercase; }
 .pais .content { background:#fee133; margin-left:0; }
 .pais .content .dica h2 { float:left; margin:10px 0 }
-.pais .content .dica .btn { clear:both; margin-top:4%; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/bg-btn.jpg) repeat-x; text-transform:uppercase; font-size: 18px; }
+.pais .content .dica .btn { clear:both; margin-top:4%; width: 258px; background:url(/portal/images/capaPrograma/vilasesamo2/bg-btn.jpg) repeat-x; text-transform:uppercase; font-size: 18px; }
 .pais .content h2 a,
 .pais .content h2 { margin:0; }
 .pais .content h2 { margin-top:10px; }
-.pais .content p { font-size: 16px; clear:both; }
+.pais .content p { font-size: 16px; clear:both; color: #434343;}
 .pais .content span,
 .pais .content i { float:left; }
 .pais .content .sprite-aspa-esquerda { margin-right:10px; }
@@ -647,14 +648,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 *background: rgb(255,251,73);
 }
 .pais .btn .caret { position:absolute; top:-5px; right:10px; border:none; } 
-.pais .publicidade { margin-top:20px; display: block; }
+.pais .publicidade {margin: 20px 0 20px 0; display: block; }
 .pais .row-fluid .span4 {  width: 32.05%; float:left;}
 .pais .publicidade p { font-family:Arial, Helvetica, sans-serif; font-size:12px; text-transform:uppercase; color:#737373; float:right; }
 .pais .sprite-seta-up,
 .pais .sprite-seta-down { position:absolute; top:-10px; right:0;  cursor:pointer; }
-.pais .sprite-seta-down.inativo { display:block; }
-.pais .linha { width:100%; height:1px; background:#fee133; float:left;  }
-.pais .fechar-toogle {position:relative;  height:36px; line-height: 36px; clear:both; margin:0; display:none;  }
+.pais .icone-cuidadores-abrir{display:none; cursor:pointer;}
+.pais .icone-cuidadores-abrir.inativo { display:block; }
+.pais .linha { width:100%; height:10px; background:#fee133; float:left;  }
+.pais .fechar-toogle {position:relative;  height:36px; line-height: 36px; clear:both; margin:0; display:none; width:940px; background: #FEEC33; bottom:-11px }
 .pais .sprite-seta-up { top:0; }
 .pais .fechar-toogle.ativo { display:block; }
 .pais .twitter-share-button { width: 90px !important; }

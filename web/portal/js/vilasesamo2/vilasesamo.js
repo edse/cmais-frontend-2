@@ -70,23 +70,30 @@ $(document).ready(function() {
   //menu principal  
 
   //menu personagens tablet
-  $('.sprite-seta-down').click(function() {
+  $('.icone-cuidadores-abrir').click(function() {
     $('.filtro-personagem').stop().slideToggle('slow');
-    $(".sprite-seta-down").toggleClass("ativo");
+    $(".icone-cuidadores-abrir").toggleClass("ativo");
   });
   
   //aba para os pais
-  $('.pais .sprite-seta-down').click(function() {
+  $('.pais .icone-cuidadores-abrir').click(function() {
     $('.pais .content').stop().slideToggle('slow');
-    $(".pais .sprite-seta-down").toggleClass("inativo");
-    $(".pais .sprite-seta-up").toggleClass("ativo");
+    $(".pais .icone-cuidadores-abrir").toggleClass("inativo");
+    $(".pais .icone-cuidadores-fechar").toggleClass("ativo");
   });
   
-  $('.pais .sprite-seta-up').click(function() {
+  $('.pais .icone-cuidadores-fechar').click(function() {
     $('.pais .content').stop().slideToggle('fast');
-    $(".pais .sprite-seta-down").toggleClass("inativo");
+    $(".pais .icone-cuidadores-abrir").toggleClass("inativo");
+    if($('.icone-cat-abrir').hasClass('icone-cat-fechar')){
+      $('.icone-cat-abrir').toggleClass('icone-cat-fechar');  
+    }
+    
   });
   
+  $('.icone-cat-abrir').click(function(){
+    $(this).toggleClass('icone-cat-fechar');
+  });
   //menu personagens tablet
   
   $('#myTab a').click(function (e) {
