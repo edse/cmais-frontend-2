@@ -51,7 +51,7 @@ body { background:#0172f9; }
 .filtro .inner.elmo { background:#9acd34 !important; }
 .filtro .inner.comecome { background:#9928ce !important; }
 .filtro .inner.zoe { background:#ce62cf !important;}
-.filtro .inner{width: 228px;left: 0;position: absolute}
+.filtro .inner img{width: 228px;left: 0;position: absolute}
 .element a{position:relative;}
 /* /filtro personagem*/
 
