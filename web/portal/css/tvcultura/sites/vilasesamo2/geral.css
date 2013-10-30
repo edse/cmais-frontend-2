@@ -470,7 +470,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* top menu*/
 .header-bar h1 { float:left; }
 .header-bar ul { float:right; }
-.header-bar ul li { float:right; margin-left:14px; }
+.header-bar ul li { float:right; margin-left:13px; }
 /* /top menu*/
 
 /* footer*/
