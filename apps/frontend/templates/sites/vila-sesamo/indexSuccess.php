@@ -17,7 +17,7 @@
     
     <span class="divisa1"></span>
     <!--destaques-->
-    <div class="destaques row-fluid container">
+    <div class="row-fluid container">
       <!--section-->
       <section class="span8">
         
