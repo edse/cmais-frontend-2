@@ -58,12 +58,8 @@
           <!--slider-mask-wrap--> 
           <!--slider-nav-->
           <div class="slider-nav">
-            <div class="arrow-left arrow">
-              <span title="Anterior" class="icones-setas icone-car-set-ve-esquerda"></span>
-            </div>
-            <div class="arrow-right arrow">
-              <span title="Proximo" class="icones-setas icone-car-set-ve-direita">
-            </span></div>
+            <div class="arrow-left arrow"><span title="Anterior" class="back"></span></div>
+            <div class="arrow-right arrow"><span title="Proximo" class="next"></span></div>
           </div> 
           <!--slider-nav-->
         </div>
@@ -110,10 +106,10 @@
           <?php if(isset($allCategories)): ?>
             <?php if(count($allCategories) > 0): ?>
             <div class="btn-group">
-              <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
               <ul class="dropdown-menu">
                 <?php foreach($allCategories as $c): ?>
-                <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
+                <li><a href="javascript:;" title="<?php echo $c->getTitle() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
                 <?php endforeach; ?>
               </ul>
             </div>
@@ -127,7 +123,7 @@
         <!--/section-->
         <section class="todos-itens ">
           <!--lista-->
-          <ul id="container" class="row-fluid filtro-artigos">
+          <ul id="container" class="row-fluid">
             <?php foreach($pager->getResults() as $d): ?>
               <?php
                 $assetCategorias = array();
@@ -140,7 +136,7 @@
                 }
               ?>
             <li class="span4 element<?php if(count($assetCategorias) > 0) echo " " . implode(" ", $assetCategorias); ?>"> 
-              <a href="javascript:;" title="<?php echo $d->getTitle() ?>">
+              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                 <?php $preview = $d->retriveRelatedAssetsByRelationType("Preview") ?>
                 <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
                 <i class="icones-sprite-interna icone-artigo-br-pequeno"></i>
@@ -153,7 +149,7 @@
             <?php endforeach; ?>
                         
           </ul> 
-          <!--lista-->
+          <!--lista-->  
           
         </section>
         <!--/section-->
