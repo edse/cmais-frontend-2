@@ -141,7 +141,7 @@
                             <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
                             <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>">
                           <?php endif; ?>
-                          <i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i>
+                          <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
                           <div>
                             <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
                             <?php echo $d->getTitle() ?>
@@ -173,7 +173,7 @@
                             <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
                             <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>">
                           <?php endif; ?>
-                          <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
+                          <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i> 
                           <div>
                             <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
                             <?php echo $d->getTitle() ?>
@@ -206,7 +206,7 @@
                                 <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
                                 <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>">
                               <?php endif; ?>
-                              <i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i>
+                              <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
                               <div>
                                 <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
                                 <?php echo $d->getTitle() ?>
@@ -233,7 +233,7 @@
                                   <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
                                   <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>">
                                 <?php endif; ?>
-                                <i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i>
+                                <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
                                 <div>
                                   <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
                                   <?php echo $d->getTitle() ?>
@@ -252,10 +252,10 @@
               
           <div class="slider-nav">
             <div class="arrow-left arrow">
-              <span title="Back" class="sprite-seta-esquerda interna"></span>
+              <span title="Back" class="icones-setas icone-car-set-br-esquerda"></span>
             </div>
             <div class="arrow-right arrow">
-              <span title="Next" class="sprite-seta-direita interna"></span>
+              <span title="Next" class="icones-setas icone-car-set-br-direita"></span>
             </div>
           </div>
           
