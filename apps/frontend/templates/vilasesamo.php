@@ -118,7 +118,7 @@
             <!--ul.nav-->
             <ul class="nav">
               <li>
-                <span class="icones-sprite-menu icone-cuidadores">
+                <span class="icones-sprite-menu icone-cuidadores"></span>
                 <a href="/vilasesamo2/paraospais" title="Cuidadores" target="_blank">Cuidadores</a>
                 <span class="sprite-menu-ball"></span>
               </li>
