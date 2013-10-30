@@ -19,9 +19,9 @@
     <!--destaques-->
     <div class="row-fluid container">
       <!--section-->
-      <section class="span8">
+      <section class="destaques span8">
         
-        <article class="span6 jogo">
+        <article class="span4 jogo">
           <a href="#" title="">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
             <i class="sprite-icons-new sprite-icone_atividade"></i>
@@ -29,7 +29,7 @@
           </a>
         </article>
         
-        <article class="span6 video">
+        <article class="span4 video">
           <a href="#" title="">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
             <i class="sprite-icons-new sprite-icone_atividade"></i>
@@ -37,7 +37,7 @@
           </a>
         </article>
         
-        <article class="span6 atividades">
+        <article class="span4 atividades">
           <a href="#" title="">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
             <i class="sprite-icons-new sprite-icone_atividade"></i>

@@ -34,5 +34,7 @@
 #carrossel-personagem .slider li:hover .nome { font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif; text-decoration:underline; }
 
 
-
+.span4.atividades{background:#571ed9;}
+.span4.videos{background:#571ed9;}
+.span4.jogos{background:#571ed9;}
 
