@@ -53,7 +53,7 @@
       <i class="icones-sprite-interna icone-atividades-grande"></i>
       <?php echo $section->getTitle() ?>
       <a class="todos-assets" title="voltar para todas atividades">
-        <i class="sprite-btn-voltar-atividades"></i>
+        <i class="icones-setas icone-voltar-atividades"></i>
         <p>todas as atividades</p>
       </a>
     </h1>
@@ -97,13 +97,19 @@
       <?php if(isset($asset)): ?>
       <div class="asset">
         <?php $related = $asset->retriveRelatedAssetsByRelationType("Preview"); ?>
-        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14") ?>" alt="<?php echo $asset->getTitle() ?>" />
+        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
         <div>
-          <a class="option-assets" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">Baixar</a>
-          <i class="icones-sprite-interna icone-baixar-roxo"></i>
+          <a class="option-assets" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">
+            <i class="icones-sprite-interna icone-baixar-roxo"></i>
+            <span>Baixar</span>
+          </a>
           
-          <a class="option-assets" href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">Imprimir</a>
-          <i class="icones-sprite-interna icone-imprimir-roxo"></i>
+          
+          <a class="option-assets" href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">
+            <i class="icones-sprite-interna icone-imprimir-roxo"></i>
+            <span>Imprimir</span>
+          </a>
+          
         </div>
       </div>
       <?php endif; ?>

@@ -252,10 +252,10 @@
               
           <div class="slider-nav">
             <div class="arrow-left arrow">
-              <span title="Back" class="sprite-seta-esquerda interna"></span>
+              <span title="Back" class="icones-setas icone-car-set-br-esquerda"></span>
             </div>
             <div class="arrow-right arrow">
-              <span title="Next" class="sprite-seta-direita interna"></span>
+              <span title="Next" class="icones-setas icone-car-set-br-direita"></span>
             </div>
           </div>
           
@@ -273,8 +273,8 @@
 <script>
 //carrossel interna
 $('#carrossel-i').responsiveCarousel({
-  arrowLeft: '.arrow-left span.interna',
-  arrowRight: '.arrow-right span.interna',
+  arrowLeft: '.arrow-left .icone-car-set-br-esquerda',
+  arrowRight: '.arrow-right .icone-car-set-br-direita',
   target:'#carrossel-i .slider-target',
   unitElement:'#carrossel-i .slider-target > li',
   mask:'#carrossel-i .slider-mask',

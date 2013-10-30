@@ -53,7 +53,7 @@
       <i class="icones-sprite-interna icone-atividades-grande"></i>
       <?php echo $section->getTitle() ?>
       <a class="todos-assets" title="voltar para todos vídeos">
-        <i class="sprite-btn-voltar-videos"></i>
+        <i class="icones-setas icone-voltar-videos"></i>
         <p>todas os vídeos</p>
       </a>
     </h1>

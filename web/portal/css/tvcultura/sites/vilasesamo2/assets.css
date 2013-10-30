@@ -1,18 +1,19 @@
 /*assets */
-.todos-assets { float:right;  }
+.todos-assets { float:right; cursor: pointer; }
 .todos-assets:hover p { text-decoration:underline; }
-.todos-assets i { float:left; margin-right:0 !important; position:relative; }
+.todos-assets i { float:left; margin-right:0 !important; position:relative; margin:0px!important; }
 .interna.videos #content .filtro h3 i.sprite-btn-voltar-videos { margin-top:0; }
 .todos-assets p { background: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-jogos.png) repeat; float:left; margin:0 !important; margin-left:-15px !important; height:48px; line-height:48px; padding:0 10px 0 20px; color: #FFFFFF;    font-size: 25px!important;    font-weight: normal;    text-transform: uppercase; }
 #content .filtro { border-bottom:none; margin-bottom:0; }
 #content .filtro h3 { padding-right:0; }
-.conteudo-asset { padding:10px 20px 20px; background:#fff; overflow: hidden; }
+.conteudo-asset { padding:10px 20px 20px; background:#fff; overflow: hidden; width: 900px;}
 h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993f7; text-transform:uppercase; }
 #content p { font-size:16px; float:left; }
+.conteudo-asset .asset p{width:100%;}
 .conteudo-asset p a { float:right; width: 220px; margin-left:2%; }
 
 
-.conteudo-asset .asset img { width: 100%; }
+.conteudo-asset .asset { text-align:center;}
 #content .relacionados { background:#0191fb; color:#fff; margin:0 auto; padding:0; max-width:940px; overflow:hidden; position:relative; border-bottom:7px solid #02CBFF; }
 .relacionados h2 { margin:0; color:#fff; padding:10px; background:#3aaaec}
 .relacionados p {  float:left;}
@@ -114,8 +115,9 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .pais .row-fluid .span4 {  *margin:2px !important;}
 #content .filtro h3 { *position:relative }
 .todos-assets { *position:absolute; *top:7px; *right:0 }
-.option-assets{ display: block; float:right; font-size: 25px; color:#571ed9;font-family: 'din-blackregular',Arial, Helvetica, sans-serif; text-transform:uppercase; padding: 10px 10px 10px 50px; margin: 10px 0 30px 0;}
-.option-assets:hover{color:#571ed9; text-decoration:underline;}
+.option-assets{ display: block; float:right; font-size: 25px; color:#571ed9;font-family: 'din-blackregular',Arial, Helvetica, sans-serif; text-transform:uppercase; padding: 10px 10px 10px 0px; margin: 10px 0 30px 0;}
+.option-assets:hover span{color:#571ed9; text-decoration:underline;}
+.option-assets span{float:left;margin: 10px;}
 /* /assets */
 
 /* atividades*/

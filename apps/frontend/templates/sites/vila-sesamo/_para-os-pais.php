@@ -94,7 +94,7 @@
   <?php if($forParents): ?>
   <section class="pais">
     <span class="divisa"></span>
-    <h2><?php echo $forParents->getTitle() ?> <i class="sprite-seta-down"></i></h2>
+    <h2><?php echo $forParents->getTitle() ?> <i class="icones-setas icone-cuidadores-abrir"></i></h2>
     <div class="content span12 row-fluid">
       
       <div class="redes">
@@ -116,7 +116,7 @@
             <?php $download = $displays['dicas'][0]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
             <?php if(count($download) > 0): ?>
               <?php if($download[0]->AssetType->getSlug() == "file"): ?>
-        <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
+        <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
               <?php endif; ?>
             <?php endif; ?>
       </div>
@@ -142,7 +142,7 @@
             <?php $download = $displays['dicas'][1]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
             <?php if(count($download) > 0): ?>
               <?php if($download[0]->AssetType->getSlug() == "file"): ?>
-        <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
+        <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
               <?php endif; ?>
             <?php endif; ?>
       </div>
@@ -160,7 +160,7 @@
           <?php $download = $dica[0]->retriveRelatedAssetsByRelationType("Download") ?>
           <?php if(count($download) > 0): ?>
             <?php if($download[0]->AssetType->getSlug() == "file"): ?>
-        <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
+        <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
             <?php endif; ?>
           <?php endif; ?>
       </div>
@@ -183,7 +183,7 @@
             <?php $download = $dica[1]->retriveRelatedAssetsByRelationType("Download") ?>
             <?php if(count($download) > 0): ?>
               <?php if($download[0]->AssetType->getSlug() == "file"): ?>
-          <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
+          <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
               <?php endif; ?>
             <?php endif; ?>
         </div>
@@ -215,7 +215,7 @@
           <?php if(count($allCategories) > 0): ?>
         <p>Você também pode escolher o jogo de acordo com as preferências da criança:</p>
         <div class="btn-group">
-          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
           <ul class="dropdown-menu">
             <?php foreach($allCategories as $c): ?>
             <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
@@ -225,7 +225,9 @@
           <?php endif; ?>
         <?php endif; ?>        
       </div>
-      <h2 class="fechar-toogle ativo"><i class="sprite-seta-up"></i></h2>
+      <div class="fechar-toogle ativo">
+        <i class="icones-setas icone-cuidadores-fechar"></i>
+      </div>
     </div>
     
     
