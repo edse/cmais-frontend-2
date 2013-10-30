@@ -18,39 +18,42 @@
     <span class="divisa1"></span>
     <!--destaques-->
     <div class="row-fluid container">
+      
+        <?php if(isset($displays['destaques-de-assets'])): ?>
+          <?php if(count($displays['destaques-de-assets']) > 0): ?>
       <!--section-->
       <section class="destaques span8">
-        
-        <article class="span4 jogos">
-          <a href="#" title="">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-            <i class="icones-sprite-interna icone-jogos-pequeno"></i>
-            <div class="texto"><img class="altura"src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
+            <?php foreach($displays['destaques-de-assets'] as $d): ?>
+              <?php
+                $sections = $d->getSections();
+                foreach($sections as $s) {
+                  if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
+                    $assetSection = $s;
+                    break;
+                  }
+                }
+                $preview = $d->retriveRelatedAssetsByRelationType('Preview')
+              ?>
+        <article class="span4 <?php echo $assetSection->getSlug() ?>">
+          <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="">
+            <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+            <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
+            <div class="texto">
+              <img class="altura"src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>
+              <?php echo $d->getTitle() ?>
+            </div>
           </a>
         </article>
-        
-        <article class="span4 videos">
-          <a href="#" title="">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-            <i class="icones-sprite-interna icone-videos-pequeno"></i>
-            <div class="texto"><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
-          </a>
-        </article>
-        
-        <article class="span4 atividades">
-          <a href="#" title="">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-            <i class="icones-sprite-interna icone-atividades-pequeno"></i>
-            <div class="texto"><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
-          </a>
-        </article>
-        
+            <?php endforeach; ?>
       </section>
       <!--section-->
+          <?php endif; ?>
+        <?php endif; ?>
+        
       <div class="span4 banner" >
-        <a href="#" title="Incluir Brincando" class="sprite-btn-incluir"></a>
-        <a href="#" title="Hábitos para uma vida saudável" class="sprite-btn-habitos"></a>
-        <a href="#" title="O que achou do novo site?" class="sprite-btn-contato"></a>
+        <a href="/<?php echo $site->getSlug() ?>/incluir-brincando" title="Incluir Brincando" class="sprite-btn-incluir"></a>
+        <a href="/<?php echo $site->getSlug() ?>/habitos-saudaveis" title="Hábitos para uma vida saudável" class="sprite-btn-habitos"></a>
+        <a href="javascript:;" title="O que achou do novo site?" class="sprite-btn-contato"></a>
       </div>
     </div>
     <!--destaques-->

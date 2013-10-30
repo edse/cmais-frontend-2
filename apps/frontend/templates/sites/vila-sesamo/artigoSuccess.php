@@ -263,9 +263,6 @@
   <?php endif; ?>
   <!--/outros destaques-->
   
-  
-  
-  
 </div>
 <!--/direita-->
 
