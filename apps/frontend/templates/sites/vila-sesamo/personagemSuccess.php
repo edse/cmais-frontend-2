@@ -35,12 +35,21 @@
             <div class="slider-mask-wrap">
               <div class="slider-mask">
                 <ul class="slider-target">
+                  
+                  <li>
+                  	<div class="pull-left videoorimage">
+                  	 	<iframe width="351" height="263" src="http://www.youtube.com/embed/=-o1WFZf-wCo?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+                  	 </div>                  
+				 </li>
+				 
+                  <li>
+                  	<div class="pull-left videoorimage">
+                  	 	<iframe width="351" height="263" src="http://www.youtube.com/embed/TpNwYOLnwEA?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+                  	 </div>                  
+				 </li>				 
+				 
                   <?php foreach($displays['destaque-principal'] as $d): ?>
                   <li>
-                  	
-                  	 <iframe width="351" height="263" src="http://www.youtube.com/embed/TpNwYOLnwEA‎?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-                  	 <iframe width="351" height="263" src="http://www.youtube.com/embed/1kNT8YIBzR8‎?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-                  	  
                     <div class="pull-left videoorimage">
                     <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
                       <iframe width="351" height="263" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
