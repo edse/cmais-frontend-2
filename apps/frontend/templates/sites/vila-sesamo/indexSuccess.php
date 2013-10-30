@@ -91,9 +91,10 @@ $('#carrossel-p').responsiveCarousel({
     $('.arrow.personagem').fadeIn('fast');
   });
   
-  $('#carrossel-mobile').mouseenter(function(){
-    $('.arrow.destaque-mobile').fadeIn('fast');
+  $('#carrossel-p').mouseleave(function(){
+    $('.arrow.personagem').fadeout('fast');
   });
+
 //};
 
 $('.inner.personagens a').mouseenter(function(){
