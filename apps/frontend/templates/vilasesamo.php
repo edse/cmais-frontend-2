@@ -118,7 +118,8 @@
             <!--ul.nav-->
             <ul class="nav">
               <li>
-                <a href="/vilasesamo2/paraospais" title="Para os pais" target="_blank">Para adultos</a>
+                <span class="icon-menu icon-cuidadores">
+                <a href="/vilasesamo2/paraospais" title="Cuidadores" target="_blank">Cuidadores</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>
