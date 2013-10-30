@@ -92,7 +92,7 @@ $('#carrossel-p').responsiveCarousel({
   });
   
   $('#carrossel-p').mouseleave(function(){
-    $('.arrow.personagem').fadeout('fast');
+    $('.arrow.personagem').fadeOut('fast');
   });
 
 //};
