@@ -118,7 +118,8 @@
             <!--ul.nav-->
             <ul class="nav">
               <li>
-                <a href="/vilasesamo2/paraospais" title="Para os pais" target="_blank">Para adultos</a>
+                <span class="icones-sprite-menu icone-cuidadores"></span>
+                <a class="btn-cuidadores-topo" href="/vilasesamo2/paraospais" title="Cuidadores" target="_blank">Cuidadores</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>
@@ -134,7 +135,7 @@
             <!--form-->
             <form class="form-search">
               <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';" title="Encontre no site">
-              <button type="submit" class="btn sprite-icon-busca-hover" title="buscar no site vila sesamo"></button>
+              <button type="submit" class="icones-sprite-menu icone-busca" title="buscar no site vila sesamo"></button>
             </form>
             <!--/form-->
           </nav>

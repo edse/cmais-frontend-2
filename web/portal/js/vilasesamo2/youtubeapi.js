@@ -29,6 +29,12 @@ $(document).ready(function() {
     });
   }
   
+  $('#selector-interna-artigo  a').on('click', function (ev) {
+    if(!$(this).hasClass('current')){
+      playing.pauseVideo();
+    } 
+  });
+  
   $('.videoorimage iframe').each(function(i){
     if($(this).attr('src').indexOf("youtube") != -1){
       cont++;

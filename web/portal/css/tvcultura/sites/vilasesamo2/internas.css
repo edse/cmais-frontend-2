@@ -307,7 +307,7 @@ body.personagens { background:#b60401; }
 .personagens .span8 .span6 {border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
 .personagens #container-personagens{}
 .personagens .conteudo-asset {padding: 0;}
-.personagens .q-pers{float:left; width: 240px; height:240px; margin:5px;}
+.personagens .q-pers{float:left; width: 225px; height:225px; margin:5px; border-radius:5px;  -moz-border-radius:5px; -webkit-border-radius: 5px; border:none;}
 
 
 .todos-itens #container li.atividades{background-color:#8935ef;border-top: 7px solid #b16af2; border-bottom: 7px solid #b16af2;}
@@ -337,13 +337,18 @@ body.cuidadores{background-color:#feec3c;}
 
 .cuidadores .todos-itens #container{width:820px; margin-left: -10px!important;*margin-left:-10px;}
 .cuidadores .todos-itens .element{width:200px; margin-left: 10px!important;}
-.cuidadores .todos-itens li img{width:200px; height:200px;}
+.cuidadores .todos-itens li img{border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;width: 200px;height: 200px;}
 .cuidadores .selecione .barra-selecao{ height: 40px;}
-.cuidadores .selecione .barra-selecao h3{color:#FFF; font-size:18px;width:300px; float:left;padding: 0px 10px; text-transform: uppercase;}
+.cuidadores .selecione .barra-selecao h3{color:#FFF; font-size:18px;width:300px; float:left;padding: 0px 10px; text-transform: uppercase; margin:0;}
 .cuidadores .col-direita .destaque-small{overflow: hidden;margin-bottom: 20px;height: 300px;display: block;}
-.cuidadores .selecione .btn-group .dropdown-toggle {border-radius: 0;-moz-border-radius: 0;-webkit-border-radius: 0;}
-.cuidadores .selecione .dropdown-toggle {height: 30px;line-height: 33px;color: #fff;width: 272px;float: right; text-align:left;}
-.cuidadores .selecione .btn .caret{border:none; float:right; margin:0;}
-
-/* cuidadores */
+.cuidadores .selecione .btn-group .dropdown-toggle {border-radius: 0;-moz-border-radius: 0;-webkit-border-radius: 0; background:#00c76e; border:none;text-shadow: none;}
+.cuidadores .selecione .dropdown-toggle {height: 40px;line-height: 43px;color: #fff;width:286px;float: right;text-align: left;}
+.cuidadores .selecione .dropdown-toggle:hover{text-decoration:underline;}
+.cuidadores .selecione .drop-down-menu{padding: 0; margin:0;}
+.cuidadores .selecione .btn .caret{border:none; float:right; margin-top:8px;}
+.cuidadores .descritivo h3{font-family:'din-blackregular', Arial, Helvetica, sans-serif; font-size: 25px; color:#00aa52!important;} 
+.cuidadores .descritivo p{font-size:16px; color:#737373;}
+.cuidadores .descritivo span.nome{color:#008d36}
+.cuidadores .todos-itens a {font-size: 16px; border-bottom:2px solid #008d36;}
+.cuidadores .todos-itens li {background: #00aa52;border-top: 7px solid #00c76e;border-bottom: 7px solid #00c76e;}
  
