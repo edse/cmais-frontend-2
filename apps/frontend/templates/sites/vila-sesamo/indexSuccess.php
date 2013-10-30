@@ -25,7 +25,7 @@
           <a href="#" title="">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
             <i class="sprite-icons-new sprite-icone_atividade"></i>
-            <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
+            <div><img class="altura"src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
           </a>
         </article>
         
@@ -33,7 +33,7 @@
           <a href="#" title="">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
             <i class="sprite-icons-new sprite-icone_atividade"></i>
-            <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
+            <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
           </a>
         </article>
         
@@ -41,7 +41,7 @@
           <a href="#" title="">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
             <i class="sprite-icons-new sprite-icone_atividade"></i>
-            <div><img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
+            <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome jogo1 Nomejogo3 Nomejogo3</div>
           </a>
         </article>
         
