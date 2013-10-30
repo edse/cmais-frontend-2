@@ -16,6 +16,7 @@ body { background:#0172f9; }
 #content h1 .sprite-icon-jogos-med { margin-top:4px; }
 #page_nav { max-width:940px;  margin:3% auto; overflow:hidden; }
 .mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; max-width:350px; float:right; display:block; }
+.cuidadores .mais{color:#00c76e}
 .mais span,
 .mais i { float:right; margin-left:15px; }
 .mais:hover { color:#fff; text-decoration:underline; }
