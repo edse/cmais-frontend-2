@@ -307,7 +307,7 @@ body.personagens { background:#b60401; }
 .personagens #container-personagens p { bottom: 0;   margin: 0;    position: absolute; color:#fff; text-align:center; width:100%; font-size: 25px; text-transform:uppercase; padding:2% 0;  }
 .personagens .span8 .span6 {border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
 .personagens #container-personagens{}
-.personagens .conteudo-asset {padding: 0;}
+.personagens .conteudo-asset {padding: 0; width:940px;}
 .personagens .q-pers{float:left; width: 225px; height:225px; margin:5px; border-radius:5px;  -moz-border-radius:5px; -webkit-border-radius: 5px; border:none;}
 
 
