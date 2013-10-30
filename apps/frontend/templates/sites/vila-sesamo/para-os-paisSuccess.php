@@ -20,7 +20,7 @@
     <!--container carrossel-->
     <div class="container-carrossel b-verde borda-arredonda">
       <h1>
-        <span class="icones-sprite-interna icones-cuidadores-grande"></span>
+        <span class="icones-sprite-interna icone-cuidadores-grande"></span>
         <?php echo $section->getTitle() ?>
       </h1>
       
