@@ -225,7 +225,7 @@
           <?php endif; ?>
         <?php endif; ?>        
       </div>
-      <h2 class="fechar-toogle ativo"><i class="sprite-seta-up"></i></h2>
+      <div class="fechar-toogle ativo"><i class="sprite-seta-up"></i></div>
     </div>
     
     
