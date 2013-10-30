@@ -20,7 +20,7 @@
     <!--container carrossel-->
     <div class="container-carrossel b-verde borda-arredonda">
       <h1>
-        <span class="sprite sprite-cuidadores-gd"></span>
+        <span class="icones-sprite-interna icone-cuidadores-grande"></span>
         <?php echo $section->getTitle() ?>
       </h1>
       
@@ -118,265 +118,72 @@
         </div>
         <!--/barra selecao-->
         
+        <?php if(isset($pager)): ?>
+          <?php if(count($pager) > 0): ?>
         <!--/section-->
         <section class="todos-itens ">
           <!--lista-->
           <ul id="container" class="row-fluid">
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
+            <?php foreach($pager->getResults() as $d): ?>
+              <?php
+                $assetCategorias = array();
+                $categoriasSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'categorias');
+                $assetSections = $d->getSections();
+                foreach($assetSections as $a) {
+                  if($a->getParentSectionId() == $categoriasSection->getId()) {
+                    $assetCategorias[] = $a->getSlug();
+                  }
+                }
+              ?>
+            <li class="span4 element<?php if(count($assetCategorias) > 0) echo " " . implode(" ", $assetCategorias); ?>"> 
+              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                <?php $preview = $d->retriveRelatedAssetsByRelationType("Preview") ?>
+                <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
+                <i class="icones-sprite-interna icone-artigo-br-pequeno"></i>
                 <div>
                   <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo1
+                  <?php echo $d->getTitle() ?>
                 </div>
               </a>
             </li>
-    
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo2
-                </div>
-              </a>
-            </li>
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo3
-                </div>
-              </a>
-            </li>
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo3
-                </div>
-              </a>
-            </li>
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo3
-                </div>
-              </a>
-            </li>
-            
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo3
-                </div>
-              </a>
-            </li>
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo3
-                </div>
-              </a>
-            </li>
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo3
-                </div>
-              </a>
-            </li>
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo3
-                </div>
-              </a>
-            </li>
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo1
-                </div>
-              </a>
-            </li>
-    
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo2
-                </div>
-              </a>
-            </li>
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo3
-                </div>
-              </a>
-            </li>
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo3
-                </div>
-              </a>
-            </li>
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo3
-                </div>
-              </a>
-            </li>
-            
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo3
-                </div>
-              </a>
-            </li>
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo3
-                </div>
-              </a>
-            </li>
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo3
-                </div>
-              </a>
-            </li>
-            
-            <li class="span4 element"> 
-              <a href="#" title="title">
-                <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="titulo/descrição" />
-                <i class="sprite-icons-new sprite-icone_atividades"></i>
-                <div>
-                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-                  Nome do Artigo3
-                </div>
-              </a>
-            </li>
-            
+            <?php endforeach; ?>
                         
           </ul> 
           <!--lista-->  
           
         </section>
         <!--/section-->
+          <?php endif; ?>
+        <?php endif; ?>
         
       </div>
       <!--/selecione-->
       
       <input type="hidden" id="filter-choice" value="">
-
+      <?php /*
       <nav id="page_nav">
-        <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
+        <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-ve-grande"></i></a>
       </nav>
+       */ ?>
 
     </div>  
     <!--/col esquerda-->
-    
+    <?php if(isset($displays['destaques-secundarios'])): ?>
+      <?php if(count($displays['destaques-secundarios']) > 0): ?>
     <!--col direita-->
     <div class="span4 col-direita">
-    
+      <?php foreach($displays['destaques-secundarios'] as $d): ?>
       <!--destaque 1-->
-      <a class="destaque-small" href="#" title="titulo 1">
-        <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="descricao" />
+      <a class="destaque-small" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+        <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
       </a>
       <!-- destaque 1 -->
+      <?php endforeach; ?> 
       
-      <!--destaque 2-->
-      <a class="destaque-small" href="#" title="titulo 2">
-        <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="descricao" />
-      </a>
-      <!-- destaque 2 -->
-      
-      <!--destaque 3-->
-      <a class="destaque-small" href="#" title="titulo 3">
-        <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="descricao" />
-      </a>
-      <!-- destaque 3 -->
-      
-      <!--destaque 4-->
-      <a class="destaque-small" href="#" title="titulo 4">
-        <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="descricao" />
-      </a>
-      <!-- destaque 4 -->
-      
-      <!--destaque 5-->
-      <a class="destaque-small" href="#" title="titulo 5">
-        <img src="http://midia.cmais.com.br/assets/image/image-13-b/255f75fd3506598980f287c10fa1ddc925872e96.jpg" alt="descricao" />
-      </a>
-      <!-- destaque 5 -->
-
     </div>
     <!--/col direita--> 
+      <?php endif; ?>
+    <?php endif; ?>
     
   </section>  
   <!--/section-->

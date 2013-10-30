@@ -18,7 +18,7 @@
     
     <div class="span12" role="main">
       
-      <h1><i class="sprite-icon-personagens-med"></i>Personagens</h1>
+      <h1><i class="icones-sprite-interna icone-personagem-grande"></i>Personagens</h1>
       
       <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens') ?>
       
@@ -118,7 +118,7 @@
         <article class="span6 <?php echo $assetSection->getSlug() ?>">
           <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
             <img class="img-destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
-            <i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i>
+            <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
             <p><?php echo $d->getTitle() ?></p>  
           </a>  
         </article>
@@ -156,11 +156,11 @@
           }
         ?>
           
-        <li class="span4 element jogos<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?>"> 
+        <li class="span4 element <?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> <?php echo $assetSection->getSlug() ?>"> 
           <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
             <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
             <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
-            <i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i>
+            <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
             <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="<?php echo $assetSection->getSlug() ?>"/><?php echo $d->getTitle() ?></div>
           </a>
         </li>
@@ -178,7 +178,7 @@
         
         <input type="hidden" id="filter-choice" value="">
         <nav id="page_nav">
-          <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
+          <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-br-grande"></i></a>
         </nav>
       </div>
       <!--pagina-->

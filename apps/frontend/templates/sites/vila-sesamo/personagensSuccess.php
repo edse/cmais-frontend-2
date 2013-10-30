@@ -10,7 +10,7 @@
 <!-- /HEADER -->
 <div id="content">
   <section class="filtro row-fluid">
-    <h1><span class="sprite-icon-personagens-med"></span><?php echo $section->getTitle() ?></h1>
+    <h1><span class="icones-sprite-interna icone-personagem-grande"></span><?php echo $section->getTitle() ?></h1>
     <div class="conteudo-asset">
             
       <div id="container-personagens" class="asset">

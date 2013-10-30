@@ -121,7 +121,39 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-busca{ background-position: 0 -781px; width: 41px; height: 41px; border:none;} 
 .icone-cuidadores{ background-position: 0 -922px; width: 36px; height: 36px; float: left; margin-top: -9px;}
 .btn-cuidadores-topo{padding-left:10px!important;}
-/* icones */
+
+/* internas e assets*/
+.icones-sprite-interna{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-interna.png) no-repeat top left; float:left;margin:3px 3px 3px 10px;}
+.icone-artigo-grande{ background-position: 0 0; width: 56px; height: 56px; } 
+.icone-artigo-ve-pequeno{ background-position: 0 -106px; width: 36px; height: 36px; } 
+.icone-artigo-br-pequeno{ background-position: 0 -192px; width: 36px; height: 36px; } 
+.icone-atividades-grande{ background-position: 0 -278px; width: 56px; height: 56px; } 
+.icone-atividades-pequeno{ background-position: 0 -384px; width: 36px; height: 36px; } 
+.icone-cuidadores-grande{ background-position: 0 -470px; width: 56px; height: 56px; } 
+.icone-cuidadores-am-pequeno{ background-position: 0 -576px; width: 36px; height: 36px; } 
+.icone-historia-grande{ background-position: 0 -662px; width: 56px; height: 56px; } 
+.icone-historia-pequeno{ background-position: 0 -768px; width: 36px; height: 36px; } 
+.icone-jogos-grande{ background-position: 0 -854px; width: 56px; height: 56px; } 
+.icone-jogos-pequeno{ background-position: 0 -960px; width: 36px; height: 36px; } 
+.icone-na-tv-grande{ background-position: 0 -1046px; width: 56px; height: 56px; } 
+.icone-na-tv-br-pequeno{ background-position: 0 -1152px; width: 36px; height: 36px; } 
+.icone-personagem-grande{ background-position: 0 -1238px; width: 56px; height: 56px; } 
+.icone-personagem-pequeno{ background-position: 0 -1344px; width: 36px; height: 36px; } 
+.icone-carregar-branco{ background-position: 0 -1430px; width: 20px; height: 20px; } 
+.icone-carregar-laranja{ background-position: 0 -1500px; width: 20px; height: 20px; } 
+.icone-carregar-verde{ background-position: 0 -1570px; width: 20px; height: 20px; } 
+.icone-videos-grande{ background-position: 0 -1640px; width: 56px; height: 56px; } 
+.icone-videos-pequeno{ background-position: 0 -1746px; width: 36px; height: 36px; }
+.icone-baixar-verde{ background-position: 0 -1832px; width: 37px; height: 35px; } 
+.icone-baixar-roxo{ background-position: 0 -1917px; width: 37px; height: 35px; float:right; } 
+.icone-imprimir-verde{ background-position: -106px 0; width: 38px; height: 34px; float:right; } 
+.icone-imprimir-roxo{ background-position: -106px -84px; width: 38px; height: 34px; } 
+.icone-carregar-br-grande{ background-position: -106px -168px; width: 60px; height: 60px; } 
+.icone-carregar-lj-grande{ background-position: -106px -278px; width: 60px; height: 60px; } 
+.icone-carregar-ve-grande{ background-position: -106px -388px; width: 60px; height: 60px; color:green!important;}  
+
+
+/* /icones */
 
 /* sprite*/
 /*.sprite-icon-busca-hover{ background-position: 0 -981px; width: 41px; height: 41px; } 

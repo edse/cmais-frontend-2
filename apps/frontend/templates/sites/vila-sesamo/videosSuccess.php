@@ -15,7 +15,7 @@
   <!--span12-->
   <div class="span12" role="main">
     
-    <h1><i class="sprite-icon-colorir-med"></i>Vídeos</h1>
+    <h1><i class="icones-sprite-interna icone-videos-grande"></i>Vídeos</h1>
     
     <?php if(isset($displays['destaque-1']) || isset($displays['destaque-2'])): ?>
       <?php if(count($displays['destaque-1']) > 0 || count($displays['destaque-2']) > 0): ?>
@@ -93,7 +93,7 @@
         <div class="yt-menu">
           <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
         </div>
-        <i class="sprite-icons-new sprite-icone_videos"></i>
+        <i class="icones-sprite-interna icone-videos-pequeno "></i>
         <div>
           <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
           <?php echo $d->getTitle() ?>
@@ -116,7 +116,7 @@
 <input type="hidden" id="filter-choice" value="">
 
 <nav id="page_nav">
-  <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
+  <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-br-grande"></i></a>
 </nav>
 
 

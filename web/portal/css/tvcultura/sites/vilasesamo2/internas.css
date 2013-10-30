@@ -6,16 +6,18 @@ body { background:#0172f9; }
 .header-bar h1 a { float:left; /*width:100%;*/ }
 .header-bar h1 span,
 .header-bar h1 i { float:right; }
+.conteudo-asset h2 {font-size: 25px;margin-bottom: 10px;}
 #content { top:134px; margin-bottom:200px; }
 #content .section,
 #content section { max-width:940px; margin:20px auto; }
 #content h1 { margin:0; font-size:50px; height:55px; line-height: 55px; padding:0 0 0 20px;}
 #content h1 span,
-#content h1 i { margin-right:40px;  }
+#content h1 i { margin: -4px 40px 10px 0;  }
 #content h1 .sprite-icon-colorir-med { margin-top:-6px; }
 #content h1 .sprite-icon-jogos-med { margin-top:4px; }
 #page_nav { max-width:940px;  margin:3% auto; overflow:hidden; }
 .mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; max-width:350px; float:right; display:block; }
+.cuidadores .mais{color:#00c76e!important}
 .mais span,
 .mais i { float:right; margin-left:15px; }
 .mais:hover { color:#fff; text-decoration:underline; }
@@ -29,7 +31,7 @@ body { background:#0172f9; }
 .filtro .span2 h3 { color:#fff; text-align:center; text-transform:uppercase; margin-top:10px; overflow:hidden; position:relative;font-size: 16px;line-height: 21px; font-family:'dinmedium' }
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
 .filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1773px; top:0; }
-.filtro .span2{ background:#d71c0d; border:1px solid #c31408; overflow:hidden; width: 175px;margin: 3px;display: block }
+.filtro .span2{ background:#d71c0d; border:1px solid #c31408; overflow:hidden; width: 175px;margin: 3px;display: block;margin-top: -2px;}
 .filtro .span10 { margin-left: 0;width: 758px;float: right;height: 413px; }
 .filtro .span12 { border-top:0px solid #0191fb; border-bottom:2px solid #0191fb; background:#EE3021;  /*border-left:2px solid #0191fb;*/  }
 .filtro .filtro-personagem { margin-left:0; }
@@ -106,7 +108,7 @@ body { background:#0172f9; }
 /* todos itens*/
 img.altura{width: 1px!important;height: 38px!important;}
 .todos-itens { margin-top:20px; overflow:hidden; }
-.todos-itens a div{white-space:nowrap; text-overflow: ellipsis; overflow: hidden;}
+.todos-itens a div{white-space:nowrap; text-overflow: ellipsis; overflow: hidden; padding:0 10px}
 .todos-itens a {font-family: 'dinmedium';color: #FFF;font-size: 18px;text-transform: uppercase;margin: 0;line-height: 20px;vertical-align: middle;/*height: 42px;*/}
 .todos-itens a:hover{color:#FFF;}
 .interna .todos-itens .row-fluid { margin-left:0; width:980px; *margin-left:-20px; margin-left: -20px!important; }
@@ -137,7 +139,6 @@ img.altura{width: 1px!important;height: 38px!important;}
 
 /* videos*/
 .interna.videos { background:#f36701; }
-.interna.videos #content{top:115px;}
 .interna.videos .filtro .span10 { border-left: 2px solid #f77400; }
 .interna.videos .yt-destaque{width:350px; height:350px; display:block; overflow: hidden;border:#FFFFFF 2px solid;}
 .interna.videos .yt-destaque:hover{border:#f77400 2px solid;}
@@ -317,7 +318,7 @@ body.personagens { background:#b60401; }
 .todos-itens #container li.atividades img{border-bottom-color:#7825e9;border-top:none;}
 .todos-itens #container li.atividades a{border-bottom:#7825e9 2px solid;border-top:#7825e9  2px solid;}
 
-.todos-itens #container li.videos img{border-top:none;}
+.todos-itens #container li.videos img{border-top:none;border-bottom:#f77400 2px solid}
 .todos-itens #container li.videos a{border-bottom:#f77400 2px solid;border-top:#f77400  2px solid;}
 
 .todos-itens #container li.jogos img{border-bottom-color:#008dff;border-top:none;}
