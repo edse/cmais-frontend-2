@@ -106,7 +106,7 @@ body { background:#0172f9; }
 /* todos itens*/
 img.altura{width: 1px!important;height: 38px!important;}
 .todos-itens { margin-top:20px; overflow:hidden; }
-.todos-itens a div{white-space:nowrap; text-overflow: ellipsis; overflow: hidden;}
+.todos-itens a div{white-space:nowrap; text-overflow: ellipsis; overflow: hidden; padding:0 10px}
 .todos-itens a {font-family: 'dinmedium';color: #FFF;font-size: 18px;text-transform: uppercase;margin: 0;line-height: 20px;vertical-align: middle;/*height: 42px;*/}
 .todos-itens a:hover{color:#FFF;}
 .interna .todos-itens .row-fluid { margin-left:0; width:980px; *margin-left:-20px; margin-left: -20px!important; }
