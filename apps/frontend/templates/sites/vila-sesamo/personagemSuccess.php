@@ -245,35 +245,33 @@
   //});
   
   $('#selector-interna-personagem a').on('click', function (ev) {
-    //ev.preventDefault();
+    ev.preventDefault();
     var i = /\d/.exec($(this).attr('rel'));
     $('#carrossel-interna-personagem').responsiveCarousel('goToSlide', i);
     if(!$(this).hasClass('current')){
-      if(playing) playing.pauseVideo();
+      playing.pauseVideo();
     } 
     stop();
     slideShow(); 
   });
   
   $(window).on('load', function (ev) {
-    //ev.preventDefault();
+    ev.preventDefault();
     $('#carrossel-interna-personagem').responsiveCarousel('redraw');
     $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
     slideShow();
   });
   
   slideShow = function(ev){
-    //ev.preventDefault();
+    ev.preventDefault();
     $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
   };
   stop = function(ev){
-    //ev.preventDefault();
+    ev.preventDefault();
     $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow');
   };
   </script>
 </div>
-
-
 <!--/section-->
 <!--scripts-->
 
