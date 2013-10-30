@@ -54,7 +54,7 @@
       <i class="icones-sprite-interna icone-atividades-grande"></i>
       <?php echo $section->getTitle() ?>
       <a class="todos-assets" title="voltar para todos jogos">
-        <i class="sprite-btn-voltar-jogos"></i>
+        <i class="icones-setas incone-voltar-jogos"></i>
         <p>todos os jogos</p>
       </a>
     </h1>

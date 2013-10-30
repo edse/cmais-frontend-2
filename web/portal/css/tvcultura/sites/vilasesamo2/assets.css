@@ -1,5 +1,5 @@
 /*assets */
-.todos-assets { float:right;  }
+.todos-assets { float:right;position:relative; z-index:10000;  }
 .todos-assets:hover p { text-decoration:underline; }
 .todos-assets i { float:left; margin-right:0 !important; position:relative; }
 .interna.videos #content .filtro h3 i.sprite-btn-voltar-videos { margin-top:0; }

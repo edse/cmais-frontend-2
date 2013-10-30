@@ -58,8 +58,12 @@
           <!--slider-mask-wrap--> 
           <!--slider-nav-->
           <div class="slider-nav">
-            <div class="arrow-left arrow"><span title="Anterior" class="back"></span></div>
-            <div class="arrow-right arrow"><span title="Proximo" class="next"></span></div>
+            <div class="arrow-left arrow">
+              <span title="Anterior" class="icones-setas icone-car-set-ve-esquerda"></span>
+            </div>
+            <div class="arrow-right arrow">
+              <span title="Proximo" class="icones-setas icone-car-set-ve-direita">
+            </span></div>
           </div> 
           <!--slider-nav-->
         </div>
@@ -106,7 +110,7 @@
           <?php if(isset($allCategories)): ?>
             <?php if(count($allCategories) > 0): ?>
             <div class="btn-group">
-              <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
               <ul class="dropdown-menu">
                 <?php foreach($allCategories as $c): ?>
                 <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>

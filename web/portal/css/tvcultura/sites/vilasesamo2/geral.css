@@ -152,6 +152,23 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-carregar-lj-grande{ background-position: -106px -278px; width: 60px; height: 60px; } 
 .icone-carregar-ve-grande{ background-position: -106px -388px; width: 60px; height: 60px; color:green!important;}  
 
+/* setas */
+.icones-setas{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-setas.png) no-repeat top left; float:left;margin:3px 3px 3px 10px;}
+.icone-cuidadores-abrir{ background-position: 0 0; width: 49px; height: 32px; } 
+.icone-cuidadores-fechar{ background-position: 0 -82px; width: 49px; height: 32px; } 
+.icone-voltar-atividades{ background-position: 0 -164px; width: 33px; height: 48px; } 
+.icone-voltar-jogos{ background-position: 0 -262px; width: 33px; height: 48px; } 
+.icone-voltar-videos{ background-position: 0 -360px; width: 33px; height: 48px; } 
+.icone-cat-artigos-abrir{ background-position: 0 -458px; width: 49px; height: 32px; } 
+.icone-cat-artigos-fechar{ background-position: 0 -540px; width: 49px; height: 32px; } 
+.icone-cat-abrir{ background-position: 0 -622px; width: 49px; height: 32px; } 
+.icone-cat-fechar{ background-position: 0 -704px; width: 49px; height: 32px; } 
+.icone-form-abrir{ background-position: 0 -786px; width: 49px; height: 32px; } 
+.icone-form-fechar{ background-position: 0 -868px; width: 49px; height: 32px; } 
+.icone-car-set-br-direita{ background-position: 0 -950px; width: 46px; height: 70px; } 
+.icone-car-set-br-esquerda{ background-position: 0 -1070px; width: 46px; height: 70px; } 
+.icone-car-set-ve-direita{ background-position: 0 -1190px; width: 46px; height: 70px; } 
+.icone-car-set-ve-esquerda{ background-position: 0 -1310px; width: 46px; height: 70px; } 
 
 /* /icones */
 
