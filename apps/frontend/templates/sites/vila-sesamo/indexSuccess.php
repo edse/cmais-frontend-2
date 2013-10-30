@@ -9,8 +9,7 @@
 <div id="content">
 
   <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)); ?>
-  <?php include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal'); ?>
-  <?php include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipalmobile'); ?> 
+  <?php include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal'); ?> 
 
 
   <!--carrossel personagens-->

@@ -84,10 +84,10 @@
         </div>  
         <div class="slider-nav">
           <div class="arrow-left arrow personagem">
-            <span title="Back" class="sprite-seta-esquerda personagens"></span>
+            <span title="Back" class="personagens icones-setas icone-car-set-br-esquerda"></span>
           </div>
           <div class="arrow-right arrow personagem">
-            <span title="Next" class="sprite-seta-direita personagens"></span>
+            <span title="Next" class="personagens icones-setas icone-car-set-br-direita"></span>
           </div>
         </div>
       </div>
