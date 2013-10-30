@@ -125,7 +125,17 @@
           <!--lista-->
           <ul id="container" class="row-fluid">
             <?php foreach($pager->getResults() as $d): ?>
-            <li class="span4 element"> 
+              <?php
+                $assetCategorias = array();
+                $categoriasSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'categorias');
+                $assetSections = $d->getSections();
+                foreach($assetSections as $a) {
+                  if($a->getParentSectionId() == $categoriasSection->getId()) {
+                    $assetCategorias[] = $a->getSlug();
+                  }
+                }
+              ?>
+            <li class="span4 element<?php if(count($assetCategorias) > 0) echo " " . implode(" ", $assetCategorias); ?>"> 
               <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                 <?php $preview = $d->retriveRelatedAssetsByRelationType("Preview") ?>
                 <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
