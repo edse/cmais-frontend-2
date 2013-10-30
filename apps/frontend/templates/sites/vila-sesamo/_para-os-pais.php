@@ -226,7 +226,7 @@
         <?php endif; ?>        
       </div>
       <div class="fechar-toogle ativo">
-        <i class="icones-seta icone-cuidadores-fechar"></i>
+        <i class="icones-setas icone-cuidadores-fechar"></i>
       </div>
     </div>
     
