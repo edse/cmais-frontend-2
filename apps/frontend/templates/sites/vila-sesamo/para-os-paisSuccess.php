@@ -153,7 +153,7 @@
             <?php endforeach; ?>
                         
           </ul> 
-          <!--lista-->  
+          <!--lista-->
           
         </section>
         <!--/section-->
