@@ -26,7 +26,7 @@
         <li class="btn-personagens" data-width="260" data-time="1000" data-back="500">
           <a href="<?php echo $site->retriveUrl(); ?>/personagens" title="Personagens">
             <span class="texto">Personagens</span>
-            <i class="icones-setas icone-personagem-grande"></i>
+            <i class="icones-sprite-menu icone-personagem-grande"></i>
             <span class="fundo fundo-personagens"></span>
             <span class="borda borda-personagens"></span>
           </a>
@@ -37,7 +37,7 @@
         <li class="btn-atividades" data-width="225" data-time="800" data-back="500">
           <a href="<?php echo $site->retriveUrl(); ?>/atividades"  title="Atividades">
             <span class="texto">Atividades</span>
-            <i class="icones-setas icone-atividades-grande"></i>
+            <i class="icones-sprite-menu icone-atividades-grande"></i>
             <span class="fundo fundo-atividades"></span>
             <span class="borda borda-atividades"></span>
           </a>
@@ -48,7 +48,7 @@
         <li class="btn-videos" data-width="170" data-time="400" data-back="200">
           <a href="<?php echo $site->retriveUrl(); ?>/videos"  title="Vídeos">
             <span class="texto">Vídeos</span>
-            <i class="icones-setas icone-videos-grande"></i>
+            <i class="icones-sprite-menu icone-videos-grande"></i>
             <span class="fundo fundo-videos"></span>
             <span class="borda borda-videos"></span>
           </a>
@@ -59,7 +59,7 @@
         <li class="btn-jogos" data-width="160" data-time="400" data-back="200">
           <a href="<?php echo $site->retriveUrl(); ?>/jogos" title="Jogos">
             <span class="texto">Jogos</span>
-            <i class="icones-setas icone-jogos-grande"></i>
+            <i class="icones-sprite-menu icone-jogos-grande"></i>
             <span class="fundo fundo-jogos"></span>
             <span class="borda borda-jogos"></span>
           </a>
