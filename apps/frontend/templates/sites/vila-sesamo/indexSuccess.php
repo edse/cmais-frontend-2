@@ -29,7 +29,7 @@
           </a>
         </article>
         
-        <article class="span6 jogo">
+        <article class="span6 video">
           <a href="#" title="">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
             <i class="sprite-icons-new sprite-icone_atividade"></i>
@@ -37,7 +37,7 @@
           </a>
         </article>
         
-        <article class="span6 jogo">
+        <article class="span6 atividades">
           <a href="#" title="">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
             <i class="sprite-icons-new sprite-icone_atividade"></i>
