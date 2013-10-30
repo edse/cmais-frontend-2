@@ -215,7 +215,7 @@
           <?php if(count($allCategories) > 0): ?>
         <p>Você também pode escolher o jogo de acordo com as preferências da criança:</p>
         <div class="btn-group">
-          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
           <ul class="dropdown-menu">
             <?php foreach($allCategories as $c): ?>
             <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
