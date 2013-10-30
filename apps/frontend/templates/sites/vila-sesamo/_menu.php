@@ -23,7 +23,7 @@
       
       <!--lista menu-->
       <ul>
-        <li class="btn-personagens" data-width="253" data-time="1000" data-back="500">
+        <li class="btn-personagens" data-width="260" data-time="1000" data-back="500">
           <a href="<?php echo $site->retriveUrl(); ?>/personagens" title="Personagens">
             <span class="texto">Personagens</span>
             <i class="icones-sprite-menu icone-btn-personagens"></i>
@@ -34,7 +34,7 @@
         
         
         <!--lista item-->
-        <li class="btn-atividades" data-width="218" data-time="800" data-back="500">
+        <li class="btn-atividades" data-width="225" data-time="800" data-back="500">
           <a href="<?php echo $site->retriveUrl(); ?>/atividades"  title="Atividades">
             <span class="texto">Atividades</span>
             <i class="icones-sprite-menu icone-btn-atividades"></i>
@@ -45,7 +45,7 @@
        <!--/lista item-->
        
        <!--lista item-->
-        <li class="btn-videos" data-width="163" data-time="400" data-back="200">
+        <li class="btn-videos" data-width="170" data-time="400" data-back="200">
           <a href="<?php echo $site->retriveUrl(); ?>/videos"  title="Vídeos">
             <span class="texto">Vídeos</span>
             <i class="icones-sprite-menu icone-btn-videos"></i>
@@ -56,7 +56,7 @@
         <!--/lista item-->
         
         <!--lista item-->
-        <li class="btn-jogos" data-width="153" data-time="400" data-back="200">
+        <li class="btn-jogos" data-width="160" data-time="400" data-back="200">
           <a href="<?php echo $site->retriveUrl(); ?>/jogos" title="Jogos">
             <span class="texto">Jogos</span>
             <i class="icones-sprite-menu icone-btn-jogos"></i>
