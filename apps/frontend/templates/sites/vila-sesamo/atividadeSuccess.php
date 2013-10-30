@@ -99,10 +99,11 @@
         <?php $related = $asset->retriveRelatedAssetsByRelationType("Preview"); ?>
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14") ?>" alt="<?php echo $asset->getTitle() ?>" />
         <div>
-          <i class="icones-sprite-interna icone-imprimir-roxo"></i>
           <a class="option-assets" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">Baixar</a>
           <i class="icones-sprite-interna icone-baixar-roxo"></i>
+          
           <a class="option-assets" href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">Imprimir</a>
+          <i class="icones-sprite-interna icone-imprimir-roxo"></i>
         </div>
       </div>
       <?php endif; ?>
