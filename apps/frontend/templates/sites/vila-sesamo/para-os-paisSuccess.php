@@ -123,7 +123,7 @@
         <!--/section-->
         <section class="todos-itens ">
           <!--lista-->
-          <ul id="container" class="row-fluid">
+          <ul id="container" class="row-fluid filtro-artigos">
             <?php foreach($pager->getResults() as $d): ?>
               <?php
                 $assetCategorias = array();
@@ -136,7 +136,7 @@
                 }
               ?>
             <li class="span4 element<?php if(count($assetCategorias) > 0) echo " " . implode(" ", $assetCategorias); ?>"> 
-              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+              <a href="javascript:;" title="<?php echo $d->getTitle() ?>">
                 <?php $preview = $d->retriveRelatedAssetsByRelationType("Preview") ?>
                 <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
                 <i class="icones-sprite-interna icone-artigo-br-pequeno"></i>
