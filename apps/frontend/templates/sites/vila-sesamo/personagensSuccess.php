@@ -5,7 +5,7 @@
   $("body").addClass("interna personagens");
 </script>
 <!-- HEADER -->
-<?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
+<?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
 ?>
 <!-- /HEADER -->
 <div id="content">
@@ -14,49 +14,49 @@
     <div class="conteudo-asset">
             
       <div id="container-personagens" class="asset">
-        <div class="element q-pers"  >
+        <div class="element q-pers inner bel"  >
           <a href="#" >
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_bel.png" alt="Bel" />
             <p>Bel</p>
           </a>
         </div>
-        <div class="element q-pers" >
+        <div class="element q-pers inner beto" >
           <a href="#">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_beto.png" alt="Beto" />
             <p>Beto</p>
           </a>
         </div>
-        <div class="element q-pers" >
+        <div class="element q-pers inner come-come" >
           <a href="#">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_comecome.png" alt="Come-Come" />
             <p>Come-Come</p>
           </a>
         </div>
-        <div class="element q-pers" >
+        <div class="element q-pers inner elmo" >
           <a href="#">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_elmo.png" alt="Elmo" />
             <p>Elmo</p>
           </a>
         </div>
-        <div class="element q-pers" >
+        <div class="element q-pers inner enio" >
           <a href="#">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_enio.png" alt="Enio" />
             <p>Enio</p>
           </a>
         </div>
-        <div class="element q-pers" >
+        <div class="element q-pers inner garibaldo" >
           <a href="#">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_garibaldo.png" alt="Garibaldo" />
             <p>Garibaldo</p>
           </a>
         </div>
-        <div class="element q-pers" >
+        <div class="element q-pers inner grover" >
           <a href="#">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_grover.png" alt="Grover" />
             <p>Grover</p>
           </a>
         </div>
-        <div class="element q-pers" >
+        <div class="element q-pers inner zoe" >
           <a href="#">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_zoe.png" alt="Zoe" />
             <p>Zoe</p>
@@ -79,7 +79,7 @@
   $container.isotope('shuffle');
   
   setInterval(function() {
-      $container.isotope('shuffle');
-    }, 1000);  
+    $container.isotope('shuffle'); 
+  }, 5000);  
   
 </script>  
