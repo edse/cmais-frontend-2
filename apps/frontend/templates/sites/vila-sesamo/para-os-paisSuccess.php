@@ -336,7 +336,7 @@
       <input type="hidden" id="filter-choice" value="">
 
       <nav id="page_nav">
-        <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="sprite-icon-mais"></i></a>
+        <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-ve-grande"></i></a>
       </nav>
 
     </div>  
