@@ -273,8 +273,8 @@
 <script>
 //carrossel interna
 $('#carrossel-i').responsiveCarousel({
-  arrowLeft: '.arrow-left span.interna',
-  arrowRight: '.arrow-right span.interna',
+  arrowLeft: '.arrow-left .icone-car-set-br-esquerda',
+  arrowRight: '.arrow-right .icone-car-set-br-direita',
   target:'#carrossel-i .slider-target',
   unitElement:'#carrossel-i .slider-target > li',
   mask:'#carrossel-i .slider-mask',
