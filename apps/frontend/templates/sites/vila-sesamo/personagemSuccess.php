@@ -37,6 +37,10 @@
                 <ul class="slider-target">
                   <?php foreach($displays['destaque-principal'] as $d): ?>
                   <li>
+                  	
+                  	 <iframe width="351" height="263" src="http://www.youtube.com/embed/TpNwYOLnwEA‎?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+                  	 <iframe width="351" height="263" src="http://www.youtube.com/embed/1kNT8YIBzR8‎?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+                  	  
                     <div class="pull-left videoorimage">
                     <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
                       <iframe width="351" height="263" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
@@ -56,8 +60,11 @@
           <!--seletor carrossel-->
           <div class="container-itens"> 
             <ul id="selector-interna-personagem">
+            	<li><a href="#" rel="frame_0"></a></li>
+            	<li><a href="#" rel="frame_1"></a></li>
+            	
               <?php foreach($displays['destaque-principal'] as $k=>$d): ?>
-              <li><a href="#" rel="frame_<?php echo $k ?>"></a></li>
+              <li><a href="#" rel="frame_<?php echo $k+2 ?>"></a></li>
               <?php endforeach; ?>
             </ul>
           </div>
