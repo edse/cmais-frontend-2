@@ -80,6 +80,6 @@
   
   setInterval(function() {
     $container.isotope('shuffle'); 
-  }, 1000);  
+  }, 5000);  
   
 </script>  
