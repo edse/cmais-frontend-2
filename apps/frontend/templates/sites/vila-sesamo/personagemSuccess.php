@@ -18,7 +18,7 @@
     
     <div class="span12" role="main">
       
-      <h1><i class="icones-sprite-interna icones-personagem-grande"></i>Personagens</h1>
+      <h1><i class="icones-sprite-interna icone-personagem-grande"></i>Personagens</h1>
       
       <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens') ?>
       
@@ -118,7 +118,7 @@
         <article class="span6 <?php echo $assetSection->getSlug() ?>">
           <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
             <img class="img-destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
-            <i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i>
+            <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
             <p><?php echo $d->getTitle() ?></p>  
           </a>  
         </article>
@@ -160,7 +160,7 @@
           <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
             <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
             <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
-            <i class="icones-sprite-interna icones-<?php echo $assetSection->getSlug() ?>-grande"></i>
+            <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
             <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="<?php echo $assetSection->getSlug() ?>"/><?php echo $d->getTitle() ?></div>
           </a>
         </li>
