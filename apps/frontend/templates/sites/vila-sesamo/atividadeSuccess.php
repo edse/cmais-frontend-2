@@ -101,13 +101,13 @@
         <div>
           <a class="option-assets" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">
             <i class="icones-sprite-interna icone-baixar-roxo"></i>
-            Baixar
+            <span>Baixar</span>
           </a>
           
           
           <a class="option-assets" href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">
             <i class="icones-sprite-interna icone-imprimir-roxo"></i>
-            Imprimir
+            <span>Imprimir</span>
           </a>
           
         </div>
