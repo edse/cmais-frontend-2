@@ -173,7 +173,7 @@
                             <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
                             <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>">
                           <?php endif; ?>
-                          <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
+                          <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i> 
                           <div>
                             <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
                             <?php echo $d->getTitle() ?>
