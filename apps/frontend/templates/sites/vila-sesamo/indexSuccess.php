@@ -4,12 +4,12 @@
 <!--content-->
 <div id="content">
   <!--menu principal && banner promocional-->
-  <?php include_partial_from_folder('sites/vilasesamo2', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)); ?>
-  <?php include_partial_from_folder('sites/vilasesamo2', 'global/bannerprincipal'); ?>
+  <?php include_partial_from_folder('sites/vila-sesamo', 'global/menuprincipal', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)); ?>
+  <?php include_partial_from_folder('sites/vila-sesamo', 'global/bannerprincipal'); ?>
   <!--/menu principal && banner promocional-->
   
   <!--carrossel personagens-->
-  <?php include_partial_from_folder('sites/vilasesamo2', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
+  <?php include_partial_from_folder('sites/vila-sesamo', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section));?>
   <!--carrossel personagens-->
   
   <!-- link seções -->
