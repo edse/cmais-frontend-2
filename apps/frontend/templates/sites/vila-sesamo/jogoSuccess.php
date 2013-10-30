@@ -51,7 +51,7 @@
   <section class="filtro row-fluid">
     
     <h1>
-      <i class="sprite-icon-colorir-med"></i>
+      <i class="icones-sprite-interna icone-atividades-grande"></i>
       <?php echo $section->getTitle() ?>
       <a class="todos-assets" title="voltar para todos jogos">
         <i class="sprite-btn-voltar-jogos"></i>
