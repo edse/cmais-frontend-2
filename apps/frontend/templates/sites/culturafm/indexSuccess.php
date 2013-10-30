@@ -236,25 +236,42 @@
       <ul class="mais-ouvidos">
 
         <!--/item-->
-		<?php if(isset($displays["destaque-mais-ouvidos"])): ?>
-			<?php foreach ($displays["destaque-mais-ouvidos"] as $k => $d): ?>	 		
-				<li>
-					<a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
-						<img src="http://midia.cmais.com.br/displays/<?php echo $d->getImage() ?>" alt="<?php echo $d->getTitle() ?>" width="50px" height="50px"/>
-						<p>
-						  
-						  <?php if($d->getDescription() != ""){ 
-								  echo "<strong>".$d->getTitle()."</strong><br />";
-								  echo $d->getDescription();
-								}else{
-									echo "<br /><strong>".$d->getTitle()."</strong>";
-								}
-							?>	
-					  </p>
-					</a>
-				</li>
-		    <?php endforeach; ?>
-		 <?php endif; ?>
+		<?php 
+			if(isset($displays["destaque-mais-ouvidos"])):
+				foreach ($displays["destaque-mais-ouvidos"] as $k => $d): 
+					if($k < 2):
+						$letra = "A";
+					elseif($k < 8):					
+						$letra = "B";
+					else:
+						$letra = "C";
+					endif; 
+					
+					$bloco[$letra][$k] =  '
+						<li>
+							<a href="'.$d->retriveUrl().'" title="'.$d->getTitle().'">
+								<img src="http://midia.cmais.com.br/displays/'.$d->getImage().'" alt="'.$d->getTitle().'" width="50px" height="50px"/>
+								<p>';
+								  	if($d->getDescription() != ""){ 
+										 $bloco[$letra][$k].=  '<strong>'.$d->getTitle().'</strong><br /> '.$d->getDescription();
+									}else{
+										$bloco[$letra][$k].=  '<br /><strong>'.$d->getTitle().'</strong>';
+									}
+									
+							  $bloco[$letra][$k].=  '</p>
+							</a>
+						</li>';
+				endforeach;
+		    
+				shuffle($bloco["B"]);
+				shuffle($bloco["C"]);
+				
+				foreach ($bloco["A"] as $k => $a) echo $a;
+		    	foreach ($bloco["B"] as $k => $b) echo $b;
+		    	foreach ($bloco["C"] as $k => $c) echo $c;
+
+		 	endif; 
+		 ?>
         <!--item-->
       </ul>  
       <!--/lista-->
