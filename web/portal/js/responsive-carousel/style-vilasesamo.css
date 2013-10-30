@@ -75,7 +75,7 @@
 #carrossel-interna .arrow-left { left: 5px;}
 #carrossel-interna .arrow-right { right: -3px;}
 
-#carrossel-interna .slider-mask-wrap { margin: 0 auto;max-width: 830px;margin-bottom: 10px;position: relative;height: 249px;}
+#carrossel-interna .slider-mask-wrap { margin: 0 auto;max-width: 830px;margin-bottom: 10px;position: relative;height: 253px;}
 #carrossel-interna .slider-mask { overflow: hidden; position: absolute; zoom: 1; max-width:830px;} 
 #carrossel-interna .slider-target { width: 2000px; margin: 0 auto; } 
 #carrossel-interna .slider ul { margin: 0; padding: 0; list-style-type: none; width:1800px !important;}
