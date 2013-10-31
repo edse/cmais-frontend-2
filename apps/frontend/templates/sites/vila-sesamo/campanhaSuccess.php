@@ -79,7 +79,7 @@
   </section>
   <!--section-->
   
-  <div class="divisa escolha"></div>
+  <div class="divisa escolha" style="display:none;"></div>
   
   <!--/section-->
   <section class="todos-itens ">
