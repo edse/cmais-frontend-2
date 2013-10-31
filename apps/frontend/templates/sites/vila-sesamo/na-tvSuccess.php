@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <script>
-  $("body").addClass("cuidadores natv");
+  $("body").addClass("na-tv");
 </script>
 
 <!-- HEADER -->
@@ -25,7 +25,7 @@
       </h1>
       
       <!--container-->
-      <div class="filtro">
+      <div class="container-na-tv">
         <p>Olá!</p>
         <p>A atração infantil VILA SÉSAMO foi criada originalmente nos Estados Unidos, pela Children’s Television Workshop, atual Sesame Workshop, sendo adaptada ou coproduzida em diversos países desde os anos 70. Em cada nação, o programa procura contemplar a realidade local, com conteúdos educativos e de entretenimento. No Brasil, teve sua primeira veiculação entre 72 e 77, retornando às telas da TV Cultura em outubro de 2007. Hoje ela é exibida através do canal infantil brasileiro de TV por assinatura TV RÁ TIM BUM! e também pela TV Cultura.</p>
         
