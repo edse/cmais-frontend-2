@@ -212,7 +212,7 @@
   <?php endif; ?>
   <!--/jogo relacionado -->
    * 
-   */ ?>
+   
 
   <!--video relacionado -->
   <?php
@@ -248,6 +248,7 @@
     <?php endif; ?>
   <?php endif; ?>
   <!--/video relacionado -->
+   */ ?>
   
   <!--outros destaques-->
   <?php
