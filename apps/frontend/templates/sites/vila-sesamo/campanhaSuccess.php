@@ -67,10 +67,10 @@
   <div class="divisa"></div>
   
   <!--section -->
-  <section class="filtro row-fluid">
+  <section class="filtro escolha row-fluid" style="display: none;">
     
     <!--viewer-->
-    <div id="viewer" class="viewer" style="display: none;">
+    <div id="viewer" class="viewer" >
       <img src="http://midia.cmais.com.br/assets/image/image-14-b/3c7040115466dcdd0a368bb53e0740f55647df82.jpg" alt="Para Colorir - Beto e Bernice">
       <h2>Nome COMPLETO da Criança / NOME DA Cidade - UF</h2>
     </div>
@@ -115,6 +115,7 @@
 </nav>
 <script>
   function viewer(url,alt) {
+    $(".filtro.escolha").show();
     $("#viewer").html("<img src='"+url+"' alt='"+alt+"' />");
   }
 </script>    
