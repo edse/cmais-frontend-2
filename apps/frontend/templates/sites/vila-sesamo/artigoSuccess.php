@@ -1,4 +1,3 @@
-<?php $colaboradores = $asset->retriveRelatedAssetsByRelationType("Colaborador") ?>
 
 <?php use_helper('I18N', 'Date') ?>
 
@@ -20,6 +19,8 @@
   <div>
     <h1><?php echo $asset->getTitle() ?></h1>
     <span><?php echo format_date($asset->getUpdatedAt(), "g") ?></span>
+    
+    <?php $colaboradores = $asset->retriveRelatedAssetsByRelationType("Colaborador") ?>
     <?php if(count($colaboradores) > 0): ?>
       <?php
         $autores = array();
@@ -33,6 +34,7 @@
     <span>Por <?php echo $asset->AssetContent->getAuthor() ?></span>
       <?php endif; ?>
     <?php endif; ?>
+    
     <p>Compartilhe este artigo: <?php /* redes sociais aqui */ ?></p>
     <p><?php $asset->getDescription() ?></p>
     <?php $preview = $asset->retriveRelatedAssetsByRelationType("Preview") ?>
