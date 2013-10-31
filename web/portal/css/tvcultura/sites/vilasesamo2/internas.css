@@ -364,5 +364,9 @@ body.na-tv{background-color:#feec3c;}
 .na-tv .container-na-tv{background: #FFFFFF;padding:20px; overflow: hidden; position:relative;}
 .na-tv .container-na-tv h2.ola{font-family:'din-blackregular',Arial, Helvetica, sans-serif; font-size:65px; color:#00aa52;position:absolute; top:50px; left:50px; display:block;} 
 .na-tv .container-na-tv p{max-width:690px;float: right;}
-/* /na tv */
- 
+.na-tv .container-na-tv .container-horarios{width: 470px;float: right;max-height: 230px;overflow: hidden;}
+.na-tv .container-na-tv .container-horarios .box-horario{}
+.na-tv .container-na-tv .container-horarios .box-horario .box-logo{}
+.na-tv .container-na-tv .container-horarios .box-horario h2{}
+.na-tv .container-na-tv .container-horarios .box-horario p{}
+/* /na tv */ 

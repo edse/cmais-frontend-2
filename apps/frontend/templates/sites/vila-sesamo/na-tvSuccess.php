@@ -39,21 +39,29 @@
           
           <!--box-horario-->
           <div class="box-horario">
-            <span class="icones-na-tv icone-tv-cultura">
+            
+            <div class="box-logo">
+              <span class="icones-na-tv icone-tv-cultura"></span>
               <span class="icones-na-tv icone-seta-box"></span>
-            </span>
+            </div>
+            
             <h2>TV CULTURA</h2>
-            <p>Sábados - 8h<br>No Quintal da Cultura</p>    
+            <p>Sábados - 8h<br>No Quintal da Cultura</p>
+                
           </div>
           <!--/box-horario-->
           
           <!--box-horario-->
           <div class="box-horario">
-            <span class="icones-na-tv icone-tv-cultura">
+            
+            <div class="box-logo">
+              <span class="icones-na-tv icone-tv-ratim-bum"></span>
               <span class="icones-na-tv icone-seta-box"></span>
-            </span>
-            <h2>TV Rá Tim Bum!</h2>
-            <p>Todos os dias - 6h e 0h<br>Na Nome da Faixa</p>    
+            </div>
+            
+            <h2>TV CULTURA</h2>
+            <p>Sábados - 8h<br>No Quintal da Cultura</p>
+                
           </div>
           <!--/box-horario-->
           
