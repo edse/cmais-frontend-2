@@ -18,9 +18,30 @@
   <section class="filtro row-fluid">
     
     <!--container conteudo-->
-    <div class="b-amarelo borda-arredonda">
+    <div class="b-amarelo borda-arredonda pais">
       <h1>
         <?php echo $section->getTitle() ?>
+        
+        <!--selecione a campanha-->
+         <?php
+          $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
+          $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
+        ?>        
+        <?php if(isset($allCategories)): ?>
+          <?php if(count($allCategories) > 0): ?>
+        <p>Você também pode escolher o jogo de acordo com as preferências da criança:</p>
+        <div class="btn-group">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
+          <ul class="dropdown-menu">
+            <?php foreach($allCategories as $c): ?>
+            <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
+            <?php endforeach; ?>
+          </ul>
+        </div>
+          <?php endif; ?>
+        <?php endif; ?>
+        <!--/selecione a campanha-->
+        
       </h1>
       
       <!--container-campanhas-->
