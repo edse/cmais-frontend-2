@@ -395,7 +395,7 @@ body.campanhas{background-color:#fee133;}
 .campanhas .todos-itens li img {border-bottom:none;border-top: none;width: 300px;height: 300px;}
 .campanhas .todos-itens a div{color:#434343; text-transform:uppercase;}
 .campanhas .mais{color:#f1802c;}
-.campanhas .btn-group{width: 300px;float: right;margin-top: 8px;}
+.campanhas .btn-group{width: 300px;float: right;margin-top: 8px; position: absolute;right: 20px;}
 .campanhas .btn-group a{font-size:12px!important; color: #434343!important; text-shadow:none; font-family:'dinmedium',Arial, Helvetica, sans-serif;}
 .campanhas .btn-group a:hover{text-decoration:underline;}
 .campanhas .btn-group a span{margin: 7px 0 0 0!important;}
