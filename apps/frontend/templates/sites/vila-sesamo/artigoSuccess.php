@@ -176,7 +176,7 @@
   <?php
     if(count($tags) > 0) {
       $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "jogos");
-      echo $particularSection->getId();
+      unset($related_asset);
       $related_asset = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa, tag t, tagging tg')
