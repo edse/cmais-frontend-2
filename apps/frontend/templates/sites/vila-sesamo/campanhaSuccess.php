@@ -115,7 +115,8 @@
 </nav>
 <script>
   function viewer(url,alt) {
-    goTop().delay(2000,function(){
+    goTop()
+    $.delay(2000,function(){
       $(".filtro.escolha, .divisa.escolha").show();
       $("#viewer").html("<img src='"+url+"' alt='"+alt+"' />");
     });
