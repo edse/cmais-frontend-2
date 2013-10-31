@@ -122,7 +122,7 @@
   
   function goTop(){
     $('html, body').animate({
-      scrollTop: parseInt($('#viewer').offset().top)+200
+      scrollTop: parseInt($('#viewer').offset().top)-100
     }, "fast");
   }
 </script>    
