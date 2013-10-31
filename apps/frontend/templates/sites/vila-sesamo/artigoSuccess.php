@@ -176,7 +176,6 @@
   <?php
     if(count($tags) > 0) {
       $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "jogos");
-      $related_asset = "";
       $related_asset = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa, tag t, tagging tg')
@@ -197,7 +196,9 @@
   <?php if(isset($related_asset)): ?>  
     <?php if(count($related_asset) > 0): ?>  
   <div>
-      <?php $preview = $related_asset->retriveRelatedAssetsByRelationType("Preview") ?>
+      <?php if($related_asset->retriveRelatedAssetsByRelationType("Preview")): ?>
+        <?php $preview = $related_asset->retriveRelatedAssetsByRelationType("Preview") ?>
+      <?php endif; ?>
       <?php if(count($preview) > 0): ?>
     <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset->getTitle() ?>" />
       <?php endif; ?>
