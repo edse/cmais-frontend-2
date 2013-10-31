@@ -38,7 +38,7 @@
         <div class="container-horarios">
           
           <!--box-horario-->
-          <div class="box-horario">
+          <div class="box-horario semmargem">
             
             <div class="box-logo">
               <span class="icones-na-tv icone-tv-cultura"></span>
