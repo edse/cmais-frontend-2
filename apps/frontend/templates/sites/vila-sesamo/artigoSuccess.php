@@ -56,7 +56,7 @@
       <p><?php echo $c->getTitle() ?></p>
       <p><?php echo $c->AssetPerson->getBio() ?></p>
       <p><a href="mailto: <?php echo $c->AssetPerson->getHeadline() ?>" title="envie uma mensagem para <?php echo $c->getTitle() ?>"><?php echo $c->AssetPerson->getHeadline() ?></a></p>
-      <p><a href="<?php echo $c->AssetPerson->getWebsiteUrl() ?>" target="_blank" title=""><?php echo $c->AssetPerson->getWebsiteUrl() ?></p>
+      <p><a href="<?php echo $c->AssetPerson->getWebsiteUrl() ?>" target="_blank" title=""><?php echo $c->AssetPerson->getWebsiteUrl() ?></a></p>
     </div>      
     <?php endforeach; ?>
   </div>
