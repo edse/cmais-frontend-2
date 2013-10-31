@@ -79,7 +79,7 @@
   </section>
   <!--section-->
   
-  <div class="divisa"></div>
+  <div class="divisa escolha"></div>
   
   <!--/section-->
   <section class="todos-itens ">
@@ -115,8 +115,15 @@
 </nav>
 <script>
   function viewer(url,alt) {
-    $(".filtro.escolha").show();
+    goTop();
+    $(".filtro.escolha, .divisa.escolha").show();
     $("#viewer").html("<img src='"+url+"' alt='"+alt+"' />");
+  }
+  
+  function goTop(){
+    $('html, body').animate({
+      scrollTop: $('#viewer').offset().top
+    }, "fast");
   }
 </script>    
 <?php 

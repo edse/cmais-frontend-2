@@ -383,6 +383,7 @@ body.campanhas{background-color:#fee133;}
 .campanhas .b-amareloescuro{background-color:#fbc227!important;}
 .campanhas .borda-amarela{background-color:#fbc227!important;}
 
+.campanhas .filtro{background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: none;}
 .campanhas .filtro.escolha {background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;}
 .campanhas .filtro h1{background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important; font-size:25px!important;}
 .campanhas .container-campanhas{background: #FFF;border-bottom: 2px solid #fbc227;padding: 20px;}
@@ -397,7 +398,7 @@ body.campanhas{background-color:#fee133;}
 .campanhas .mais{color:#f1802c;}
 .campanhas .btn-group{width: 300px;float: right;margin-top: 8px; position: absolute;right: 20px;}
 .campanhas .btn-group a{font-size:12px!important; color: #434343!important; text-shadow:none; font-family:'dinmedium',Arial, Helvetica, sans-serif;}
-.campanhas .btn-group a:hover{text-decoration:underline;}
+.campanhas .btn-group a:hover{text-decoration:underline;color: #434343!important;}
 .campanhas .btn-group a span{margin: 7px 0 0 0!important;}
 /* /campanhas */
 
