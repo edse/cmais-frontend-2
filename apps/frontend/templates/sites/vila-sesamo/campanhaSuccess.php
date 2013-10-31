@@ -27,12 +27,12 @@
       <div class="container-campanhas">
         
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non venenatis mauris. In accumsan massa sed consectetur vehicula. Nulla a interdum leo. Vivamus volutpat id dui congue condimentum. Suspendisse iaculis varius dui, ac volutpat magna scelerisque eget. Aenean posuere elementum nisl vitae pretium. Maecenas eu nunc facilisis, facilisis nisi vel, molestie nibh. Ut congue scelerisque ligula commodo faucibus. Sed eu massa vel quam ullamcorper pellentesque a a dolor. Proin consectetur ligula nec turpis aliquet, et luctus neque pulvinar. In venenatis nisl vel nisl dapibus, luctus tempor purus porta. Duis semper, purus sodales placerat bibendum, purus leo blandit sem, eu volutpat lectus lorem faucibus odio. Fusce condimentum ut erat ut porttitor. Suspendisse sed sem id lectus lobortis malesuada. Donec in arcu sit amet mi egestas mollis.
+          <iframe width="300" height="225" src="//www.youtube.com/embed/-o1WFZf-wCo&rel=0" frameborder="0" allowfullscreen></iframe>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non venenatis mauris. In accumsan massa sed consectetur vehicula. Nulla a interdum leo. Vivamus volutpat id dui congue condimentum. Suspendisse iaculis varius dui, ac volutpat magna scelerisque eget. Aenean posuere elementum nisl vitae pretium. Maecenas eu nunc facilisis, facilisis nisi vel, molestie nibh. Ut congue scelerisque ligula commodo faucibus. Sed eu massa vel quam ullamcorper pellentesque a a dolor. Proin consectetur ligula nec turpis aliquet, et luctus neque pulvinar. In venenatis nisl vel nisl dapibus, luctus tempor purus porta. Duis semper, purus sodales placerat bibendum, purus leo blandit sem, eu volutpat lectus lorem faucibus odio. Fusce condimentum ut erat ut porttitor. Suspendisse sed sem id lectus lobortis malesuada. Donec in arcu sit amet mi egestas mollis.<br>
+          Veja abaixo a galeria de desenhos das brincadeiras preferidas da criançada!
         </p>
         
-        <p>Veja abaixo a galeria de desenhos das brincadeiras preferidas da criançada!</p>
-        
-        <iframe width="300" height="225" src="//www.youtube.com/embed/-o1WFZf-wCo&rel=0" frameborder="0" allowfullscreen></iframe>
+
         
       </div>
       <!--container-campanhas-->  
