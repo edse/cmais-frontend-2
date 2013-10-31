@@ -119,7 +119,7 @@
     setTimeout(function() {
       $(".filtro.escolha, .divisa.escolha").slideDown();
       $("#viewer").html("<img src='"+url+"' alt='"+alt+"' />");
-    }, 1000);
+    }, 500);
   }
   
   function goTop(){
