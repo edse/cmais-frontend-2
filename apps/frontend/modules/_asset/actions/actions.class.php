@@ -1063,7 +1063,7 @@ class _assetActions extends sfActions
 			      }
 			    }
           if ($this->site->getSlug() == "vila-sesamo") {
-            if($this->asset->id != 148169) // id do asset somente para teste, retirar assim que puderem!
+            //if($this->asset->id != 148169) // id do asset somente para teste, retirar assim que puderem!
               $this->setLayout("vilasesamo");
             $sections = $this->asset->getSections();
             foreach($sections as $s) {
