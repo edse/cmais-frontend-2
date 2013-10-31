@@ -1,3 +1,5 @@
+<?php $colaboradores = $asset->retriveRelatedAssetsByRelationType("Colaborador") ?>
+
 <?php use_helper('I18N', 'Date') ?>
 
 <!-- HEADER -->
@@ -18,7 +20,19 @@
   <div>
     <h1><?php echo $asset->getTitle() ?></h1>
     <span><?php echo format_date($asset->getUpdatedAt(), "g") ?></span>
+    <?php if(count($colaboradores) > 0): ?>
+      <?php
+        $autores = array();
+        foreach($colaboradores as $c) {
+          $autores[] = $c->AssetPerson->getName();
+        }
+      ?>      
+    <span>Por <?php if(count($autores) > 0): ?><?php implode(", ", $autores) ?><?php endif; ?>.</span>
+    <?php else: ?>
+      <?php if($asset->AssetContent->getAuthor()): ?>
     <span>Por <?php echo $asset->AssetContent->getAuthor() ?></span>
+      <?php endif; ?>
+    <?php endif; ?>
     <p>Compartilhe este artigo: <?php /* redes sociais aqui */ ?></p>
     <p><?php $asset->getDescription() ?></p>
     <?php $preview = $asset->retriveRelatedAssetsByRelationType("Preview") ?>
@@ -41,11 +55,10 @@
   <!--/compartilhe-->
   
   <!--autores-->
-  <?php $colaborador = $asset->retriveRelatedAssetsByRelationType("Colaborador") ?>
-  <?php if(count($colaborador) > 0): ?>
+  <?php if(count($colaboradores) > 0): ?>
   <div>
     <p>Sobre os autores:</p>
-    <?php foreach($colaborador as $c): ?>
+    <?php foreach($colaboradores as $c): ?>
     <div>
       <?php $preview = $c->retriveRelatedAssetsByRelationType("Preview") ?>
       <?php if($preview): ?>
