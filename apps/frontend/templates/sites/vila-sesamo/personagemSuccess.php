@@ -272,7 +272,7 @@
           $('#selector-interna-personagem li a').removeClass('current');
           $current.addClass('current');
       },
-      slideSpeed: 3000
+      slideSpeed: 8000
   });
 
   $('#selector-interna-personagem a').on('click', function (ev) {
