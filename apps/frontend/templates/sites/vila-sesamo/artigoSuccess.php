@@ -152,7 +152,8 @@
         ->andWhereIn('t.name', $tags)
         ->andWhere('a.id != ?', $asset->getId())
         ->andWhere('a.asset_type_id = ?', 1)
-        ->fetchOne();
+        ->limit(1)
+        ->execute();
     }
   ?>
   <?php if(isset($related_asset)): ?>  
@@ -211,7 +212,7 @@
   <?php endif; ?>
   <!--/jogo relacionado -->
    
-<?php /*
+<?php
   <!--video relacionado -->
   <?php
     if(count($tags) > 0) {
@@ -230,7 +231,8 @@
         ->andWhereIn('t.name', $tags)
         ->andWhere('a.id != ?', $asset->getId())
         ->andWhere('a.asset_type_id = ?', 1)
-        ->fetchOne();
+        ->limit(1)
+        ->execute();
     }
   ?>
   <?php if(isset($related_asset)): ?>  
@@ -246,7 +248,6 @@
     <?php endif; ?>
   <?php endif; ?>
   <!--/video relacionado -->
-   */ ?>
   
   <!--outros destaques-->
   <?php
