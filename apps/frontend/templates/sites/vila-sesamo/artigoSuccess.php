@@ -172,12 +172,11 @@
   <?php endif; ?>
   <!--/atividade relacionada -->
   
-  <!--jogo relacionada -->
+  <!--jogo relacionado -->
   <?php
     if(count($tags) > 0) {
       $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "jogos");
-      unset($related_asset);
-      $related_asset = Doctrine_Query::create()
+      $relatedd_asset = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa, tag t, tagging tg')
         ->where('a.site_id = ?', $site->getId())
@@ -194,16 +193,16 @@
         ->fetchOne();
     }
   ?>
-  <?php if($related_asset): ?>  
+  <?php if($relatedd_asset): ?>  
   <div>
-      <?php $preview = $related_asset->retriveRelatedAssetsByRelationType("Preview") ?>
+      <?php $preview = $relatedd_asset->retriveRelatedAssetsByRelationType("Preview") ?>
       <?php if(count($preview) > 0): ?>
-    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset->getTitle() ?>" />
+    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $relatedd_asset->getTitle() ?>" />
       <?php endif; ?>
     <i class="icones-sprite-interna icone-jogos-pequeno"></i>
     <div>
       <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-      <?php echo $related_asset->getTitle() ?>
+      <?php echo $relatedd_asset->getTitle() ?>
     </div>
   </div>
     <?php endif; ?>
