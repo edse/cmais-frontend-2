@@ -64,7 +64,7 @@
   </section>
   <!--/section -->
   
-  <div class="divisa"></div>
+  <div class="divisa top"></div>
   
   <!--section -->
   <section class="filtro escolha row-fluid" style="display: none;">
@@ -122,7 +122,7 @@
   
   function goTop(){
     $('html, body').animate({
-      scrollTop: parseInt($('#viewer').offset().top)-100
+      scrollTop: parseInt($('.divisa.top').offset().top)-100
     }, "fast");
   }
 </script>    
