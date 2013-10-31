@@ -198,7 +198,7 @@
   <div>
       <?php //$preview = $jogoRelacionado->retriveRelatedAssetsByRelationType("Preview") ?>
       <?php //if(count($preview) > 0): ?>
-    <!--img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $jogoRelacionado->getTitle() ?>" /-->
+    <?php /*img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $jogoRelacionado->getTitle() ?>" > */?>
       <?php //endif; ?>
     <i class="icones-sprite-interna icone-jogos-pequeno"></i>
     <div>
