@@ -1,3 +1,4 @@
+
 <?php use_helper('I18N', 'Date') ?>
 
 <!-- HEADER -->
@@ -18,7 +19,22 @@
   <div>
     <h1><?php echo $asset->getTitle() ?></h1>
     <span><?php echo format_date($asset->getUpdatedAt(), "g") ?></span>
+    
+    <?php $colaboradores = $asset->retriveRelatedAssetsByRelationType("Colaborador") ?>
+    <?php if(count($colaboradores) > 0): ?>
+      <?php
+        $autores = array();
+        foreach($colaboradores as $c) {
+          $autores[] = $c->AssetPerson->getName();
+        }
+      ?>      
+    <span>Por <?php if(count($autores) > 0): ?><?php echo implode(", ", $autores) ?><?php endif; ?>.</span>
+    <?php else: ?>
+      <?php if($asset->AssetContent->getAuthor()): ?>
     <span>Por <?php echo $asset->AssetContent->getAuthor() ?></span>
+      <?php endif; ?>
+    <?php endif; ?>
+    
     <p>Compartilhe este artigo: <?php /* redes sociais aqui */ ?></p>
     <p><?php $asset->getDescription() ?></p>
     <?php $preview = $asset->retriveRelatedAssetsByRelationType("Preview") ?>
@@ -41,11 +57,10 @@
   <!--/compartilhe-->
   
   <!--autores-->
-  <?php $colaborador = $asset->retriveRelatedAssetsByRelationType("Colaborador") ?>
-  <?php if(count($colaborador) > 0): ?>
+  <?php if(count($colaboradores) > 0): ?>
   <div>
     <p>Sobre os autores:</p>
-    <?php foreach($colaborador as $c): ?>
+    <?php foreach($colaboradores as $c): ?>
     <div>
       <?php $preview = $c->retriveRelatedAssetsByRelationType("Preview") ?>
       <?php if($preview): ?>
@@ -234,13 +249,13 @@
         ->andWhere('tg.tag_id = t.id')
         ->andWhereIn('t.name', $tags)
         ->andWhere('a.id != ?', $asset->getId())
-        ->andWhere('a.asset_type_id = ?', 1)
+        ->andWhere('a.asset_type_id = ?', 6)
         ->limit(1)
         ->execute();
     }
   ?>
-  <?php if(isset($related_asset)): ?>  
-    <?php if(count($related_asset) > 0): ?>  
+  <?php if(isset($related_asset)): ?>
+    <?php if(count($related_asset) > 0): ?>
   <div>
     <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $related_asset[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $related_asset[0]->getTitle() ?>">
     <i class="icones-sprite-interna icone-videos-pequeno"></i>
