@@ -193,12 +193,9 @@
         ->fetchOne();
     }
   ?>
-  <?php if(isset($related_asset)): ?>  
-    <?php if(count($related_asset) > 0): ?>  
+  <?php if($related_asset): ?>  
   <div>
-      <?php if($related_asset->retriveRelatedAssetsByRelationType("Preview")): ?>
-        <?php $preview = $related_asset->retriveRelatedAssetsByRelationType("Preview") ?>
-      <?php endif; ?>
+      <?php $preview = $related_asset->retriveRelatedAssetsByRelationType("Preview") ?>
       <?php if(count($preview) > 0): ?>
     <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset->getTitle() ?>" />
       <?php endif; ?>
@@ -209,7 +206,6 @@
     </div>
   </div>
     <?php endif; ?>
-  <?php endif; ?>
   <!--/jogo relacionado -->
 
   <!--video relacionado -->
