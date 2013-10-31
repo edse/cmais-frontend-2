@@ -236,6 +236,7 @@
   <?php
     if(count($tags) > 0) {
       $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "videos");
+      echo $particularSection->getTitle();
       $related_asset = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa, tag t, tagging tg')
@@ -254,8 +255,8 @@
         ->execute();
     }
   ?>
-  <?php if(isset($related_asset)): ?>  
-    <?php if(count($related_asset) > 0): ?>  
+  <?php if(isset($related_asset)): ?> 1 
+    <?php if(count($related_asset) > 0): ?>  2
   <div>
     <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $related_asset[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $related_asset[0]->getTitle() ?>">
     <i class="icones-sprite-interna icone-videos-pequeno"></i>
