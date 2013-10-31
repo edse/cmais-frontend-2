@@ -165,11 +165,11 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #horario a img { margin:4px 10px; }
 #horario p{font-size:13px; line-height: 15px; margin: 0 0 10px 0; font-weight:normal;}
 #horario span{font-size: 14px; color:#2b3377; display:block;}
-#horario .divisa { background:url(../images/pattern-divisa.png) ; width: 2px; height:43px; position:absolute; top:4px; right:0; }  
+#horario .divisa { background:url(../images/pattern-divisa.png) ; width: 2px; height:43px; position:absolute; top:14px; right:0; }  
 #horario .cultura { width:376px; }
-#horario .cultura img{margin-top:10px;}
-#horario .rtb { width:244px; height:60px; padding-top:10px}
-#horario .agenda { width:129px; }
+#horario .cultura img{margin-top:13px;}
+#horario .rtb { width:244px; height:59px; padding-top:10px}
+#horario .agenda { width:129px; height: 59px;padding-top: 10px;}
 #horario .agenda h2 { height:43px; line-height: 43px; }
 #horario .sprite-ico-agenda { float:left; margin: 1px 10px }
 #horario h2 {color:#2b3377;  text-transform:uppercase; font-size:14px; line-height: 24px; margin-top:4px;}
