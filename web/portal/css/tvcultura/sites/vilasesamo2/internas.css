@@ -375,3 +375,25 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .na-tv .container-na-tv .container-horarios .box-horario p{font-size:16px;text-align:center;color:#737373; float:none;}
 .na-tv .fundo-na-tv{width:550px; height:650px; background:url('/portal/images/capaPrograma/vilasesamo2/fundo-na-tv.png')); position:absolute;top:85px; left:10px;z-index: 0}
 /* /na tv */ 
+
+/* campanhas */
+body.campanhas{background-color:#feec3c;}
+.campanhas .b-amarelo{background-color: #feec3c!important;}
+.campanhas .b-amareloescuro{background-color:#fbc227!important;}
+.campanhas .borda-amarela{background-color:#fbc227!important;}
+
+.campanhas .filtro {background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;}
+.campanhas .filtro h1{background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important; font-size:25px!important;}
+/* /campanhas */
+
+
+
+
+
+
+
+
+
+
+
+

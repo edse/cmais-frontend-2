@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <script>
-  $("body").addClass("na-tv");
+  $("body").addClass("campanhas");
 </script>
 
 <!-- HEADER -->
@@ -18,9 +18,8 @@
   <section class="filtro row-fluid">
     
     <!--container conteudo-->
-    <div class="b-verde borda-arredonda">
+    <div class="b-amarelo borda-arredonda">
       <h1>
-        <span class="icones-sprite-interna icone-na-tv-grande"></span>
         <?php echo $section->getTitle() ?>
       </h1>
       
