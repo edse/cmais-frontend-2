@@ -24,7 +24,7 @@
         
         <!--selecione a campanha-->
          <?php
-          $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"campanhas");
+          $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
           $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
         ?>        
         <?php if(isset($allCategories)): ?>
