@@ -26,7 +26,7 @@
       
       <!--container-->
       <div class="container-na-tv">
-        <h1>Olá!</h1>
+        <h2>Olá!</h2>
         <p>A atração infantil VILA SÉSAMO foi criada originalmente nos Estados Unidos, pela Children’s Television Workshop, atual Sesame Workshop, sendo adaptada ou coproduzida em diversos países desde os anos 70. Em cada nação, o programa procura contemplar a realidade local, com conteúdos educativos e de entretenimento. No Brasil, teve sua primeira veiculação entre 72 e 77, retornando às telas da TV Cultura em outubro de 2007. Hoje ela é exibida através do canal infantil brasileiro de TV por assinatura TV RÁ TIM BUM! e também pela TV Cultura.</p>
         
         <!--container-horario-->
