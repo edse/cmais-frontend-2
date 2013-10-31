@@ -137,85 +137,8 @@
   <!--atividade relacionada -->
   <?php
     if(count($tags) > 0) {
-      $sectionAtividades = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "atividades");
-      $atividadeRelacionada = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, SectionAsset sa, tag t, tagging tg')
-        ->where('a.site_id = ?', $site->getId())
-        ->andWhere('sa.asset_id = a.id')
-        ->andWhere('sa.section_id = ?', $sectionAtividades->getId())
-        ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
-        ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
-        ->andWhere('a.is_active = ?', 1)
-        ->andWhere('tg.taggable_id = a.id')
-        ->andWhere('tg.tag_id = t.id')
-        ->andWhereIn('t.name', $tags)
-        ->andWhere('a.id != ?', $asset->getId())
-        ->andWhere('a.asset_type_id = ?', 1)
-        ->fetchOne();
-    }
-  ?>
-  <?php if(isset($atividadeRelacionada)): ?>  
-    <?php if(count($atividadeRelacionada) > 0): ?>  
-  <div>
-      <?php $preview = $atividadeRelacionada->retriveRelatedAssetsByRelationType("Preview") ?>
-      <?php if(count($preview) > 0): ?>
-    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $atividadeRelacionada->getTitle() ?>" />
-      <?php endif; ?>
-    <i class="icones-sprite-interna icone-atividades-pequeno"></i>
-    <div>
-      <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-      <?php echo $atividadeRelacionada->getTitle() ?>
-    </div>
-  </div>
-    <?php endif; ?>
-  <?php endif; ?>
-  <!--/atividade relacionada -->
-  
-  <!--jogo relacionada -->
-  <?php
-    if(count($tags) > 0) {
-      $sectionJogos = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "jogos");
-      $jogoRelacionado = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, SectionAsset sa, tag t, tagging tg')
-        ->where('a.site_id = ?', $site->getId())
-        ->andWhere('sa.asset_id = a.id')
-        ->andWhere('sa.section_id = ?', $sectionJogos->getId())
-        ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
-        ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
-        ->andWhere('a.is_active = ?', 1)
-        ->andWhere('tg.taggable_id = a.id')
-        ->andWhere('tg.tag_id = t.id')
-        ->andWhereIn('t.name', $tags)
-        ->andWhere('a.id != ?', $asset->getId())
-        ->andWhere('a.asset_type_id = ?', 1)
-        ->fetchOne();
-    }
-  ?>
-  <?php if(isset($jogoRelacionado)): ?>  
-    <?php if(count($jogoRelacionado) > 0): ?>  
-  <div>
-      <?php //$preview = $jogoRelacionado->retriveRelatedAssetsByRelationType("Preview") ?>
-      <?php //if(count($preview) > 0): ?>
-    <?php /*img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $jogoRelacionado->getTitle() ?>" > */?>
-      <?php //endif; ?>
-    <i class="icones-sprite-interna icone-jogos-pequeno"></i>
-    <div>
-      <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-      <?php echo $jogoRelacionado->getTitle() ?>
-    </div>
-  </div>
-    <?php endif; ?>
-  <?php endif; ?>
-  <!--/jogo relacionado -->
-   
-<?php /*
-  <!--video relacionado -->
-  <?php
-    if(count($tags) > 0) {
-      $sectionVideos = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "videos");
-      $videoRelacionado = Doctrine_Query::create()
+      $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "atividades");
+      $related_asset = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa, tag t, tagging tg')
         ->where('a.site_id = ?', $site->getId())
@@ -232,20 +155,102 @@
         ->fetchOne();
     }
   ?>
-  <?php if(isset($videoRelacionado)): ?>  
-    <?php if(count($videoRelacionado) > 0): ?>  
+  <?php if(isset($related_asset)): ?>  
+    <?php if(count($related_asset) > 0): ?>  
   <div>
-    <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $videoRelacionado->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $videoRelacionado->getTitle() ?>">
+      <?php $preview = $related_asset->retriveRelatedAssetsByRelationType("Preview") ?>
+      <?php if(count($preview) > 0): ?>
+    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset->getTitle() ?>" />
+      <?php endif; ?>
+    <i class="icones-sprite-interna icone-atividades-pequeno"></i>
+    <div>
+      <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+      <?php echo $related_asset->getTitle() ?>
+    </div>
+  </div>
+    <?php endif; ?>
+  <?php endif; ?>
+  <!--/atividade relacionada -->
+  
+  <?php /*
+  <!--jogo relacionada -->
+  <?php
+    if(count($tags) > 0) {
+      unset($particularSection);
+      unset($related_asset);
+      $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "jogos");
+      $related_asset = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa, tag t, tagging tg')
+        ->where('a.site_id = ?', $site->getId())
+        ->andWhere('sa.asset_id = a.id')
+        ->andWhere('sa.section_id = ?', $particularSection->getId())
+        ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+        ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
+        ->andWhere('a.is_active = ?', 1)
+        ->andWhere('tg.taggable_id = a.id')
+        ->andWhere('tg.tag_id = t.id')
+        ->andWhereIn('t.name', $tags)
+        ->andWhere('a.id != ?', $asset->getId())
+        ->andWhere('a.asset_type_id = ?', 1)
+        ->fetchOne();
+    }
+  ?>
+  <?php if(isset($related_asset)): ?>  
+    <?php if(count($related_asset) > 0): ?>  
+  <div>
+      <?php $preview = $related_asset->retriveRelatedAssetsByRelationType("Preview") ?>
+      <?php if(count($preview) > 0): ?>
+    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset->getTitle() ?>" />
+      <?php endif; ?>
+    <i class="icones-sprite-interna icone-jogos-pequeno"></i>
+    <div>
+      <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+      <?php echo $related_asset->getTitle() ?>
+    </div>
+  </div>
+    <?php endif; ?>
+  <?php endif; ?>
+  <!--/jogo relacionado -->
+   * 
+   
+
+  <!--video relacionado -->
+  <?php
+    if(count($tags) > 0) {
+      $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "videos");
+      $related_asset = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa, tag t, tagging tg')
+        ->where('a.site_id = ?', $site->getId())
+        ->andWhere('sa.asset_id = a.id')
+        ->andWhere('sa.section_id = ?', $particularSection->getId())
+        ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+        ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
+        ->andWhere('a.is_active = ?', 1)
+        ->andWhere('tg.taggable_id = a.id')
+        ->andWhere('tg.tag_id = t.id')
+        ->andWhereIn('t.name', $tags)
+        ->andWhere('a.id != ?', $asset->getId())
+        ->andWhere('a.asset_type_id = ?', 1)
+        ->fetchOne();
+    }
+  ?>
+  <?php if(isset($related_asset)): ?>  
+    <?php if(count($related_asset) > 0): ?>  
+  <div>
+    <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $related_asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $related_asset->getTitle() ?>">
     <i class="icones-sprite-interna icone-videos-pequeno"></i>
     <div>
       <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-      <?php echo $videoRelacionado->getTitle() ?>
+      <?php echo $related_asset->getTitle() ?>
     </div>
   </div>
     <?php endif; ?>
   <?php endif; ?>
   <!--/video relacionado -->
-  */ ?>
+   */ ?>
+  
   <!--outros destaques-->
   <?php
     $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"para-os-pais");
