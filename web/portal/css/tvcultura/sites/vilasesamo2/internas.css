@@ -364,8 +364,11 @@ body.na-tv{background-color:#feec3c;}
 .na-tv .container-na-tv{background: #FFFFFF;padding:20px; overflow: hidden; position:relative;}
 .na-tv .container-na-tv h2.ola{font-family:'din-blackregular',Arial, Helvetica, sans-serif; font-size:65px; color:#00aa52;position:absolute; top:50px; left:50px; display:block;} 
 .na-tv .container-na-tv p{max-width:690px;float: right;}
+.na-tv .container-na-tv p strong{font-family:'din-blackregular',Arial, Helvetica, sans-serif;color:#00aa52;}
+.na-tv .container-na-tv p a{color:#00aa52;}
+.na-tv .container-na-tv p a:hover{color:#00c76e;}
 .na-tv .container-na-tv .container-horarios{width: 470px;float: right;max-height: 230px;overflow: hidden;}
-.na-tv .container-na-tv .container-horarios .box-horario{}
+.na-tv .container-na-tv .container-horarios .box-horario{width: 230px;float: left;margin-left: 20px;background: red;border-radius:5px;  -moz-border-radius:5px; -webkit-border-radius:5px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat;}
 .na-tv .container-na-tv .container-horarios .box-horario .box-logo{}
 .na-tv .container-na-tv .container-horarios .box-horario h2{}
 .na-tv .container-na-tv .container-horarios .box-horario p{}
