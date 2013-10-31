@@ -70,7 +70,7 @@
   <section class="filtro row-fluid">
     
     <!--viewer-->
-    <div id="viewer" class="viewer">
+    <div id="viewer" class="viewer" style="display: none;">
       <img src="http://midia.cmais.com.br/assets/image/image-14-b/3c7040115466dcdd0a368bb53e0740f55647df82.jpg" alt="Para Colorir - Beto e Bernice">
       <h2>Nome COMPLETO da Criança / NOME DA Cidade - UF</h2>
     </div>
@@ -85,69 +85,21 @@
   <section class="todos-itens ">
     <!--lista-->
     <ul role="contentinfo" id="container" class="row-fluid">
-      <li class="span4 element"> 
-        <a href="#" title="">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-          <i class="sprite-icons-new sprite-icone_atividade"></i>
-          <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome da Criança</div>
-        </a>
-      </li>
-      <li class="span4 element"> 
-        <a href="#" title="">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-          <i class="sprite-icons-new sprite-icone_atividade"></i>
-          <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome da Criança</div>
-        </a>
-      </li>
-      <li class="span4 element"> 
-        <a href="#" title="">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-          <i class="sprite-icons-new sprite-icone_atividade"></i>
-          <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome da Criança</div>
-        </a>
-      </li>
-      <li class="span4 element"> 
-        <a href="#" title="">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-          <i class="sprite-icons-new sprite-icone_atividade"></i>
-          <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome da Criança</div>
-        </a>
-      </li>
-      <li class="span4 element"> 
-        <a href="#" title="">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-          <i class="sprite-icons-new sprite-icone_atividade"></i>
-          <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome da Criança</div>
-        </a>
-      </li>
-      <li class="span4 element"> 
-        <a href="#" title="">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-          <i class="sprite-icons-new sprite-icone_atividade"></i>
-          <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome da Criança</div>
-        </a>
-      </li>
-      <li class="span4 element"> 
-        <a href="#" title="">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-          <i class="sprite-icons-new sprite-icone_atividade"></i>
-          <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome da Criança</div>
-        </a>
-      </li>
-      <li class="span4 element"> 
-        <a href="#" title="">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-          <i class="sprite-icons-new sprite-icone_atividade"></i>
-          <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome da Criança</div>
-        </a>
-      </li>
-      <li class="span4 element"> 
-        <a href="#" title="">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="" />
-          <i class="sprite-icons-new sprite-icone_atividade"></i>
-          <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>Nome da Criança</div>
-        </a>
-      </li>
+      <?php if(isset($displays["enviados"])): ?>
+      <?php if(count($displays["enviados"]) > 0): ?>
+        <?php foreach($displays["enviados"] as $k=>$d): ?>
+          <li class="span4 element"> 
+            <a href="javascript: viewer('<?php echo $d->retriveImageUrlByImageUsage("image-14-b") ?>','<?php echo $d->getTitle() ?>')" title="">
+              <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>"/>
+              <i class="sprite-icons-new sprite-icone_atividade"></i>
+              <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/><?php echo $d->getTitle() ?></div>
+            </a>
+          </li>
+        <?php endforeach; ?>
+      <?php endif; ?>
+    <?php endif; ?>
+      
+      
     </ul> 
     <!--lista-->  
   </section>
@@ -161,7 +113,11 @@
 <nav id="page_nav">
   <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-lr-grande"></i></a>
 </nav>
-     
+<script>
+  function viewer(url,alt) {
+    $("#viewer").html("<img src='"+url+"' alt='"+alt+"' />");
+  }
+</script>    
 <?php 
 /**
  * programado
