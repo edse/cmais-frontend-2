@@ -69,10 +69,10 @@
         </div>
         <!--/container-horario-->
         
-        <span class="fundo-na-tv"></span>  
+         
       </div>
       <!--/container-->
-      
+      <span class="fundo-na-tv"></span> 
     </div>
     <!--/container conteudo-->
     
