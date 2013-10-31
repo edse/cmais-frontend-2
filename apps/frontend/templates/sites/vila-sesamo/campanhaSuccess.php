@@ -40,7 +40,13 @@
     </div>
     <!--/container conteudo-->
     
-    <div class="divisa"></div>
+  </section>
+  <!--/section -->
+  
+  <div class="divisa"></div>
+  
+  <!--section -->
+  <section class="filtro row-fluid">
     
     <!--viewer-->
     <div id="viewer" class="viewer">
@@ -49,10 +55,10 @@
     </div>
     <!--/viewer-->
     
-    <div class="divisa"></div>
-    
   </section>
-  <!--/section -->
+  <!--section-->
+  
+  <div class="divisa"></div>
   
 </div>
 <!--/content-->      
