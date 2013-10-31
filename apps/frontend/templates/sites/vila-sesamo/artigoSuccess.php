@@ -174,7 +174,8 @@
   
   <!--jogo relacionada -->
   <?php
-    if(count($tags) > 0) {1
+    if(count($tags) > 0) {
+      echo "1";
       $sectionJogos = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "jogos");
       $jogoRelacionado = Doctrine_Query::create()
         ->select('a.*')
@@ -193,6 +194,7 @@
         ->fetchOne();
     }
   ?>
+  
   <?php if(isset($jogoRelacionado)): ?> 2 
     <?php if(count($jogoRelacionado) > 0): ?>3
   <div>
