@@ -117,9 +117,9 @@
   function viewer(url,alt) {
     goTop()
     setTimeout(function() {
-      $(".filtro.escolha, .divisa.escolha").show();
+      $(".filtro.escolha, .divisa.escolha").slideDown();
       $("#viewer").html("<img src='"+url+"' alt='"+alt+"' />");
-    }, 5000);
+    }, 1000);
   }
   
   function goTop(){
