@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <script>
-  $("body").addClass("cuidadores");
+  $("body").addClass("cuidadores natv");
 </script>
 
 <!-- HEADER -->
@@ -17,15 +17,55 @@
   <!--section -->
   <section class="filtro row-fluid">
     
-    <!--container carrossel-->
-    <div class="container-carrossel b-verde borda-arredonda">
+    <!--container conteudo-->
+    <div class="b-verde borda-arredonda">
       <h1>
-        <span class="icones-sprite-interna icone-cuidadores-grande"></span>
+        <span class="icones-sprite-interna icone-na-tv-grande"></span>
         <?php echo $section->getTitle() ?>
       </h1>
+      
+      <!--container-->
+      <div class="filtro">
+        <p>Olá!</p>
+        <p>A atração infantil VILA SÉSAMO foi criada originalmente nos Estados Unidos, pela Children’s Television Workshop, atual Sesame Workshop, sendo adaptada ou coproduzida em diversos países desde os anos 70. Em cada nação, o programa procura contemplar a realidade local, com conteúdos educativos e de entretenimento. No Brasil, teve sua primeira veiculação entre 72 e 77, retornando às telas da TV Cultura em outubro de 2007. Hoje ela é exibida através do canal infantil brasileiro de TV por assinatura TV RÁ TIM BUM! e também pela TV Cultura.</p>
+        
+        <!--container-horario-->
+        <div class="container-horarios">
+          
+          <!--box-horario-->
+          <div class="box-horario">
+            <span class="icones-na-tv icone-tv-cultura">
+              <span class="icones-na-tv icone-seta-box"></span>
+            </span>
+            <h2>TV CULTURA</h2>
+            <p>Sábados - 8h<br>No Quintal da Cultura</p>    
+          </div>
+          <!--/box-horario-->
+          
+          <!--box-horario-->
+          <div class="box-horario">
+            <span class="icones-na-tv icone-tv-cultura">
+              <span class="icones-na-tv icone-seta-box"></span>
+            </span>
+            <h2>TV Rá Tim Bum!</h2>
+            <p>Todos os dias - 6h e 0h<br>Na Nome da Faixa</p>    
+          </div>
+          <!--/box-horario-->
+          
+        </div>
+        <!--/container-horario-->
+        
+        <span class="fundo-na-tv"></span>  
+      </div>
+      <!--/container-->
+      
     </div>
-    <!--/container carrossel-->
-    teste<br><br><br><br>
+    <!--/container conteudo-->
+    
+    
+    
+       
+
   </section>
   <!--/section -->
 </div>
