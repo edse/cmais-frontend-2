@@ -122,7 +122,7 @@
   
   function goTop(){
     $('html, body').animate({
-      scrollTop: parseInt($('.divisa.top').offset().top)-110
+      scrollTop: parseInt($('.divisa.top').offset().top)-140
     }, "fast");
   }
 </script>    
