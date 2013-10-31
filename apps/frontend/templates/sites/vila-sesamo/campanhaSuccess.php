@@ -116,10 +116,10 @@
 <script>
   function viewer(url,alt) {
     goTop()
-    $(document).delay(2000,function(){
+    setTimeout(function() {
       $(".filtro.escolha, .divisa.escolha").show();
       $("#viewer").html("<img src='"+url+"' alt='"+alt+"' />");
-    });
+    }, 5000);
   }
   
   function goTop(){
