@@ -10,7 +10,7 @@ body { background:#0172f9; }
 #content { top:134px; margin-bottom:200px; }
 #content .section,
 #content section { max-width:940px; margin:20px auto; }
-#content h1 { margin:0; font-size:50px; height:55px; line-height: 55px; padding:0 0 5px 20px;}
+#content h1 { margin:0; font-size:50px; height:55px; line-height: 55px; padding:0 20px 5px 20px;}
 #content h1 span,
 #content h1 i { margin: -4px 20px 10px 0;  }
 #content h1 .sprite-icon-colorir-med { margin-top:-6px; }
@@ -28,7 +28,7 @@ body { background:#0172f9; }
 .filtro h1 { border-bottom:2px solid #0191fb; border-top:2px solid #0191fb; background:#3AAAEC; }
 #content .filtro h1 { padding-top:10px;  }
 .filtro .span2 { margin-left:0; background: #ee3021; width:19.14%; padding:0 0.6%;}
-.filtro .span2 h3 { color:#fff; text-align:center; text-transform:uppercase; margin-top:10px; overflow:hidden; position:relative;font-size: 16px;line-height: 21px; font-family:'dinmedium' }
+.filtro .span2 h3 { color:#fff; text-align:center; text-transform:uppercase; margin-top:10px; overflow:hidden; position:relative;font-size: 16px;line-height: 21px; font-family:'dinmedium',Arial, Helvetica, sans-serif; }
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
 .filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1773px; top:0; }
 .filtro .span2{ background:#d71c0d; border:1px solid #c31408; overflow:hidden; width: 175px;margin: 3px;display: block;margin-top: -2px;}
@@ -113,7 +113,8 @@ body { background:#0172f9; }
 .todos-itens a div{white-space:nowrap; text-overflow: ellipsis; overflow: hidden; padding:0 10px}
 .todos-itens a {font-family: 'dinmedium';color: #FFF;font-size: 18px;text-transform: uppercase;margin: 0;line-height: 20px;vertical-align: middle;/*height: 42px;*/}
 .todos-itens a:hover{color:#FFF;}
-.interna .todos-itens .row-fluid { margin-left:0; width:980px; *margin-left:-20px; margin-left: -20px!important; }
+.interna .todos-itens .row-fluid,
+.campanhas .todos-itens .row-fluid { margin-left:0; width:980px; *margin-left:-20px; margin-left: -20px!important; }
 /*.todos-itens #container { margin-left:8px !important;  }
 .todos-itens ul { margin-left:1% !important; } 
 .todos-itens li { margin:0 1.7% 2% 0 !important; }
@@ -176,7 +177,7 @@ body { background:#0172f9; }
 
 /* atividades*/
 .interna.atividades { background:#571ed9; }
-.interna.atividades .todos-itens li,
+/*.interna.atividades .todos-itens li,*/
 .interna.atividades .scroll,
 .interna.atividades .filtro .span10 { border-left: 2px solid #7732e5; }
 .interna.atividades .filtro { border-color:#b16af2; }
@@ -373,19 +374,32 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .na-tv .container-na-tv .container-horarios .box-horario .box-logo{display:block;width: 100%;background: #ffffff;border: #ccf4e2 1px solid;height: 130px;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;position:relative;}
 .na-tv .container-na-tv .container-horarios .box-horario h2{font-family:'din-blackregular',Arial, Helvetica, sans-serif;color:#00aa52;font-size:18px;text-align:center;line-height: 16px;margin: 20px 0 10px 0;}
 .na-tv .container-na-tv .container-horarios .box-horario p{font-size:16px;text-align:center;color:#737373; float:none;}
-.na-tv .fundo-na-tv{width:550px; height:650px; background:url('/portal/images/capaPrograma/vilasesamo2/fundo-na-tv.png')); position:absolute;top:85px; left:10px;z-index: 0}
+.na-tv .fundo-na-tv{width:550px; height:650px; background:url('/portal/images/capaPrograma/vilasesamo2/personagens/img_natv.png') no-repeat; position:absolute;top:85px; left:10px;z-index: 0}
 /* /na tv */ 
 
 /* campanhas */
-body.campanhas{background-color:#feec3c;}
+body.campanhas{background-color:#fee133;}
 .campanhas .b-amarelo{background-color: #feec3c!important;}
 .campanhas .b-amareloescuro{background-color:#fbc227!important;}
 .campanhas .borda-amarela{background-color:#fbc227!important;}
 
-.campanhas .filtro {background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;}
+.campanhas .filtro{background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: none;}
+.campanhas .filtro.escolha {background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;}
 .campanhas .filtro h1{background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important; font-size:25px!important;}
-.campanhas .container-campanhas{background: #FFF;border-bottom: 2px solid #000;padding: 20px;}
+.campanhas .container-campanhas{background: #FFF;border-bottom: 2px solid #fbc227;padding: 20px;}
 .campanhas .container-campanhas iframe{float:right;}
+.campanhas #viewer{width:100%;text-align:center; background:#FFFFFF;border-top: 2px solid #fbc227;}
+.campanhas #viewer h2{background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important; font-size:18px!important;font-family:'dinmedium',Arial, Helvetica, sans-serif;margin: 0;text-align: left;padding-left: 10px;}
+.campanhas .todos-itens #container li{background-color: #feec3c;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;}
+.campanhas .todos-itens li{background:#feec3c;}
+.campanhas .todos-itens #container li a {border-bottom: #fbc227 2px solid;border-top: #fbc227 2px solid;}
+.campanhas .todos-itens li img {border-bottom:none;border-top: none;width: 300px;height: 300px;}
+.campanhas .todos-itens a div{color:#434343; text-transform:uppercase;}
+.campanhas .mais{color:#f1802c;}
+.campanhas .btn-group{width: 300px;float: right;margin-top: 8px; position: absolute;right: 20px;}
+.campanhas .btn-group a{font-size:12px!important; color: #434343!important; text-shadow:none; font-family:'dinmedium',Arial, Helvetica, sans-serif;}
+.campanhas .btn-group a:hover{text-decoration:underline;color: #434343!important;}
+.campanhas .btn-group a span{margin: 7px 0 0 0!important;}
 /* /campanhas */
 
 
