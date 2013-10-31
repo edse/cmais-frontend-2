@@ -28,7 +28,7 @@ body { background:#0172f9; }
 .filtro h1 { border-bottom:2px solid #0191fb; border-top:2px solid #0191fb; background:#3AAAEC; }
 #content .filtro h1 { padding-top:10px;  }
 .filtro .span2 { margin-left:0; background: #ee3021; width:19.14%; padding:0 0.6%;}
-.filtro .span2 h3 { color:#fff; text-align:center; text-transform:uppercase; margin-top:10px; overflow:hidden; position:relative;font-size: 16px;line-height: 21px; font-family:'dinmedium' }
+.filtro .span2 h3 { color:#fff; text-align:center; text-transform:uppercase; margin-top:10px; overflow:hidden; position:relative;font-size: 16px;line-height: 21px; font-family:'dinmedium',Arial, Helvetica, sans-serif; }
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
 .filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1773px; top:0; }
 .filtro .span2{ background:#d71c0d; border:1px solid #c31408; overflow:hidden; width: 175px;margin: 3px;display: block;margin-top: -2px;}
@@ -386,8 +386,8 @@ body.campanhas{background-color:#feec3c;}
 .campanhas .filtro h1{background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important; font-size:25px!important;}
 .campanhas .container-campanhas{background: #FFF;border-bottom: 2px solid #fbc227;padding: 20px;}
 .campanhas .container-campanhas iframe{float:right;}
-.campanhas #viewer{width:100%;text-align:center; background:#FFFFFF;}
-.campanhas
+.campanhas #viewer{width:100%;text-align:center; background:#FFFFFF;border-top: 2px solid #fbc227;}
+.campanhas #viewer h2{background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important; font-size:18px!important;font-family:'dinmedium',Arial, Helvetica, sans-serif;}
 /* /campanhas */
 
 
