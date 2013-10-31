@@ -398,7 +398,7 @@ body.campanhas{background-color:#fee133;}
 .campanhas .btn-group{width: 300px;float: right;margin-top: 8px;}
 .campanhas .btn-group a{font-size:12px!important; color: #434343!important; text-shadow:none; font-family:'dinmedium',Arial, Helvetica, sans-serif;}
 .campanhas .btn-group a:hover{text-decoration:underline;}
-.campanhas .btn-group a span{margin: 7px 0 0 0;}
+.campanhas .btn-group a span{margin: 7px 0 0 0!important;}
 /* /campanhas */
 
 
