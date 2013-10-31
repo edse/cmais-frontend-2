@@ -27,7 +27,7 @@
       <!--container-->
       <div class="container-na-tv">
         <h2 class="ola">Olá!</h2>
-        <?php echo html_entity_decode($displays['historia'][0]->Asset->AssetContent->render()) ?>
+        <?php echo html_entity_decode($displays['historia'][0]->Asset->render()) ?>
         
         <!--container-horario-->
         <div class="container-horarios">
