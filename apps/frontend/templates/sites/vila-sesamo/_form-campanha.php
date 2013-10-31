@@ -173,7 +173,8 @@
   </section>
   <!--/section-->
   <?php endif; ?>
-
+  
+<script src="/portal/js/ajaxFileUpload/ajaxfileupload.js" type="text/javascript"></script>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
@@ -192,7 +193,62 @@
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
-      	form.submit();
+      	//form.submit();
+
+        jQuery.ajaxFileUpload(
+        {
+          url: '/actions/vilasesamo/sendAttachment.php',
+          secureuri: false,
+          fileElementId: 'datafile',
+          dataType: 'json',
+          data: {
+            nome: $("#nome").val(),
+            idade: $("#idade").val(),
+            cidade: $("#cidade").val(),
+            estado: $("#estado").val(),
+            email: $("#email").val(),
+            mensagem: $("#mensagem").val(),
+            concordo: $("#concordo").val()
+          },
+          success: function (data, status) {
+            if (typeof (data.error) != 'undefined') {
+              if (data.error != '') {
+                alert("sim");
+                /*
+                jQuery('#submit_form').html("<div id='feedback-message'></div>");
+                jQuery('#feedback-message').html("<h3>Thank you for submitting. We will be in touch soon.</h3>")
+
+                .hide()
+                .fadeIn(1500, function () {
+                    jQuery('#feedback-message');
+                });
+                */
+              }
+              else {
+                alert("não");
+                /*
+                jQuery('#submit_form').html("<div id='feedback-message'></div>");
+                jQuery('#feedback-message').html("<h3>Thank you for submitting. We will be in touch soon.</h3>")
+
+                .hide()
+                .fadeIn(1500, function () {
+                    jQuery('#feedback-message');
+                });
+                */
+              }
+            }
+          },
+          error: function (data, status, e) {
+            /*
+            jQuery('#submit_form').html("<div id='feedback-message'></div>");
+            jQuery('#feedback-message').html("<h3>Thank you for submitting. We will be in touch soon.</h3>")
+            .hide()
+            .fadeIn(1500, function () {
+                jQuery('#feedback-message');
+            });
+            */
+          }
+        })
       },
       rules:{
         nome:{
