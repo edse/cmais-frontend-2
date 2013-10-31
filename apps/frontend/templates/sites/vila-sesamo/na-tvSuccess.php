@@ -2,13 +2,14 @@
 <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))?>
 <!-- /HEADER -->
 
+<?php
+/*
 <!-- barra do titulo da seção -->
 <div>
   <span><?php echo $section->getTitle() ?></span>
 </div>
 <!--/barra do titulo da seção -->
-<?php
-/*
+
  * programado
 
 <!-- destaques -->
