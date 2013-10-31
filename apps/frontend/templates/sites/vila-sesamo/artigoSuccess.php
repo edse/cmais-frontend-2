@@ -172,9 +172,12 @@
   <?php endif; ?>
   <!--/atividade relacionada -->
   
+  <?php /*
   <!--jogo relacionada -->
   <?php
     if(count($tags) > 0) {
+      unset($particularSection);
+      unset($related_asset);
       $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "jogos");
       $related_asset = Doctrine_Query::create()
         ->select('a.*')
@@ -209,6 +212,8 @@
     <?php endif; ?>
   <?php endif; ?>
   <!--/jogo relacionado -->
+   * 
+   
 
   <!--video relacionado -->
   <?php
@@ -244,17 +249,18 @@
     <?php endif; ?>
   <?php endif; ?>
   <!--/video relacionado -->
+   */ ?>
   
   <!--outros destaques-->
   <?php
     $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"para-os-pais");
     $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($particularSection->getId(), "destaques-secundarios"); // Pega o bloco "destaques-secundarios" da seção "para os pais"
-    if ($block) $displays["destaques-secundarios"] = $block->retriveDisplays(); // Pega os destaques do bloco "destaques-secundarios"    
+    if ($block) $_displays["destaques-secundarios"] = $block->retriveDisplays(); // Pega os destaques do bloco "destaques-secundarios"    
   ?>        
-  <?php if(isset($displays['destaques-secundarios'])): ?>
-    <?php if(count($displays['destaques-secundarios']) > 0): ?>
+  <?php if(isset($_displays['destaques-secundarios'])): ?>
+    <?php if(count($_displays['destaques-secundarios']) > 0): ?>
   <div class="span4 col-direita">
-    <?php foreach($displays['destaques-secundarios'] as $d): ?>
+    <?php foreach($_displays['destaques-secundarios'] as $d): ?>
     <a class="destaque-small" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
       <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
     </a>

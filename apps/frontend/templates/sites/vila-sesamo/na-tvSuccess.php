@@ -38,16 +38,17 @@
         <div class="container-horarios">
           
           <!--box-horario-->
-          <div class="box-horario semmargem">
+          <div class="box-horario sem-margem-l">
             
             <div class="box-logo">
               <span class="icones-na-tv icone-tv-cultura"></span>
               <span class="icones-na-tv icone-seta-box"></span>
             </div>
             
-            <h2>TV CULTURA</h2>
+            
+            <h2>TV CULTURA</h2> 
             <p>Sábados - 8h<br>No Quintal da Cultura</p>
-                
+              
           </div>
           <!--/box-horario-->
           
@@ -59,8 +60,8 @@
               <span class="icones-na-tv icone-seta-box"></span>
             </div>
             
-            <h2>TV CULTURA</h2>
-            <p>Sábados - 8h<br>No Quintal da Cultura</p>
+            <h2>TV Rá-tim-bum</h2>
+            <p>Todos os dias - 6h e 0h<br>Na Nome da Faixa</p>
                 
           </div>
           <!--/box-horario-->
