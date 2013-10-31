@@ -152,20 +152,21 @@
         ->andWhereIn('t.name', $tags)
         ->andWhere('a.id != ?', $asset->getId())
         ->andWhere('a.asset_type_id = ?', 1)
-        ->fetchOne();
+        ->limit(1)
+        ->execute();
     }
   ?>
   <?php if(isset($related_asset)): ?>  
     <?php if(count($related_asset) > 0): ?>  
   <div>
-      <?php $preview = $related_asset->retriveRelatedAssetsByRelationType("Preview") ?>
+      <?php $preview = $related_asset[0]->retriveRelatedAssetsByRelationType("Preview") ?>
       <?php if(count($preview) > 0): ?>
-    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset->getTitle() ?>" />
+    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>" />
       <?php endif; ?>
     <i class="icones-sprite-interna icone-atividades-pequeno"></i>
     <div>
       <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-      <?php echo $related_asset->getTitle() ?>
+      <?php echo $related_asset[0]->getTitle() ?>
     </div>
   </div>
     <?php endif; ?>
@@ -175,8 +176,6 @@
   <!--jogo relacionada -->
   <?php
     if(count($tags) > 0) {
-      unset($particularSection);
-      unset($related_asset);
       $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "jogos");
       $related_asset = Doctrine_Query::create()
         ->select('a.*')
@@ -192,27 +191,27 @@
         ->andWhereIn('t.name', $tags)
         ->andWhere('a.id != ?', $asset->getId())
         ->andWhere('a.asset_type_id = ?', 1)
-        ->fetchOne();
+        ->limit(1)
+        ->execute();
     }
   ?>
   <?php if(isset($related_asset)): ?>  
     <?php if(count($related_asset) > 0): ?>  
   <div>
-      <?php $preview = $related_asset->retriveRelatedAssetsByRelationType("Preview") ?>
+      <?php $preview = $related_asset[0]->retriveRelatedAssetsByRelationType("Preview") ?>
       <?php if(count($preview) > 0): ?>
-    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset->getTitle() ?>" />
+    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>" />
       <?php endif; ?>
     <i class="icones-sprite-interna icone-jogos-pequeno"></i>
     <div>
       <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-      <?php echo $related_asset->getTitle() ?>
+      <?php echo $related_asset[0]->getTitle() ?>
     </div>
   </div>
     <?php endif; ?>
   <?php endif; ?>
   <!--/jogo relacionado -->
    
-<?php /*
   <!--video relacionado -->
   <?php
     if(count($tags) > 0) {
@@ -231,23 +230,23 @@
         ->andWhereIn('t.name', $tags)
         ->andWhere('a.id != ?', $asset->getId())
         ->andWhere('a.asset_type_id = ?', 1)
-        ->fetchOne();
+        ->limit(1)
+        ->execute();
     }
   ?>
   <?php if(isset($related_asset)): ?>  
     <?php if(count($related_asset) > 0): ?>  
   <div>
-    <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $related_asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $related_asset->getTitle() ?>">
+    <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $related_asset[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $related_asset[0]->getTitle() ?>">
     <i class="icones-sprite-interna icone-videos-pequeno"></i>
     <div>
       <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-      <?php echo $related_asset->getTitle() ?>
+      <?php echo $related_asset[0]->getTitle() ?>
     </div>
   </div>
     <?php endif; ?>
   <?php endif; ?>
   <!--/video relacionado -->
-   */ ?>
   
   <!--outros destaques-->
   <?php
