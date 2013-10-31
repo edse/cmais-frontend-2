@@ -1,6 +1,35 @@
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+
+<script>
+  $("body").addClass("cuidadores");
+</script>
+
 <!-- HEADER -->
-<?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))?>
+<?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
+
+<!--content-->
+<div id="content">
+  
+  <!--section -->
+  <section class="filtro row-fluid">
+    
+    <!--container carrossel-->
+    <div class="container-carrossel b-verde borda-arredonda">
+      <h1>
+        <span class="icones-sprite-interna icone-cuidadores-grande"></span>
+        <?php echo $section->getTitle() ?>
+      </h1>
+    </div>
+    <!--/container carrossel-->
+    
+  </section>
+  <!--/section -->
+</div>
+<!--div-->      
 
 <?php
 /*
