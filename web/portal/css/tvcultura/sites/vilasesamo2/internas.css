@@ -378,7 +378,21 @@ body.na-tv{background-color:#feec3c;position:relative;}
 
 /* campanhas */
 body.campanhas{background-color:#feec3c;}
-.cuidadores .b-amarelo{background-color: #feec3c!important;}
-.cuidadores .b-amareloescuro{background-color:#fbc227!important;}
-.cuidadores .borda-amarela{background-color:#fbc227!important;}
+.campanhas .b-amarelo{background-color: #feec3c!important;}
+.campanhas .b-amareloescuro{background-color:#fbc227!important;}
+.campanhas .borda-amarela{background-color:#fbc227!important;}
+
+.campanhas .filtro {background: #3aaaec;border-top: 7px solid #fbc227;border-bottom: 7px solid #fbc227;}
 /* /campanhas */
+
+
+
+
+
+
+
+
+
+
+
+

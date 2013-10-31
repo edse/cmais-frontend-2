@@ -20,7 +20,6 @@
     <!--container conteudo-->
     <div class="b-amarelo borda-arredonda">
       <h1>
-        <span class="icones-sprite-interna icone-na-tv-grande"></span>
         <?php echo $section->getTitle() ?>
       </h1>
       
