@@ -28,7 +28,7 @@
           $autores[] = $c->AssetPerson->getName();
         }
       ?>      
-    <span>Por <?php if(count($autores) > 0): ?><?php implode(", ", $autores) ?><?php endif; ?>.</span>
+    <span>Por <?php if(count($autores) > 0): ?><?php echo implode(", ", $autores) ?><?php endif; ?>.</span>
     <?php else: ?>
       <?php if($asset->AssetContent->getAuthor()): ?>
     <span>Por <?php echo $asset->AssetContent->getAuthor() ?></span>
