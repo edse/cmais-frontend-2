@@ -115,7 +115,7 @@
 </nav>
 <script>
   function viewer(url,alt) {
-    goTop()
+    goTop();
     setTimeout(function() {
       if($('.filtro.escolha').is(":hidden")){
         $(".filtro.escolha, .divisa.escolha").slideDown();
