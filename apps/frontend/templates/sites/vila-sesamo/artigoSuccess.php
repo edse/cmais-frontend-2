@@ -175,8 +175,6 @@
   <!--jogo relacionada -->
   <?php
     if(count($tags) > 0) {
-      unset($particularSection);
-      unset($related_asset);
       $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "jogos");
       $related_asset = Doctrine_Query::create()
         ->select('a.*')
@@ -192,7 +190,8 @@
         ->andWhereIn('t.name', $tags)
         ->andWhere('a.id != ?', $asset->getId())
         ->andWhere('a.asset_type_id = ?', 1)
-        ->fetchOne();
+        ->limit(1)
+        ->execute();
     }
   ?>
   <?php if(isset($related_asset)): ?>  
