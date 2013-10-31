@@ -338,13 +338,13 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-btn-habitos,
 .sprite-btn-incluir-hover,
 .sprite-btn-incluir {  background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-btns-home.png); } 
-.sprite-btn-contato{ background-position: 0 0; width: 255px; height: 57px; } 
+.sprite-btn-contato{ background-position: 0 0; width: 255px; height: 57px; display:block; } 
 .sprite-btn-habitos:hover,
-.sprite-btn-habitos-hover{ background-position: 0 -107px; width: 300px; height: 100px; } 
-.sprite-btn-habitos{ background-position: 0 -257px; width: 300px; height: 100px; } 
+.sprite-btn-habitos-hover{ background-position: 0 -107px; width: 300px; height: 100px;  display:block;} 
+.sprite-btn-habitos{ background-position: 0 -257px; width: 300px; height: 100px;  display:block;} 
 .sprite-btn-incluir:hover,
-.sprite-btn-incluir-hover{ background-position: 0 -407px; width: 300px; height: 100px; } 
-.sprite-btn-incluir{ background-position: 0 -557px; width: 300px; height: 100px; } 
+.sprite-btn-incluir-hover{ background-position: 0 -407px; width: 300px; height: 100px;  display:block;} 
+.sprite-btn-incluir{ background-position: 0 -557px; width: 300px; height: 100px; display:block;} 
 
 .sprite-ico-anexo,
 .sprite-ico-cidade, 
@@ -505,7 +505,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques .atividades img,
 .destaques .atividades a.asset,
 .destaques .atividades h3 { border-color:#7732e5 ; }
-/*.destaques { margin-bottom:20px; }*/
+/*.destaques { margin-bottom:20px; }
 .destaques .atividades span,
 .destaques .atividades i { margin-top:-3%; }
 /*.destaques .atividades img { margin-top:-1%; }*/
@@ -582,6 +582,7 @@ footer .relacionados li.last { margin-right:0; }
 /* /footer*/
 
 /* pais*/
+img.altura{width: 1px!important;height: 38px!important;}
 #content .pais { background:#feec3c; margin:0 auto !important; overflow:hidden; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 .pais .divisa { margin-bottom:0; }
 .pais .divisa {clear: both;background-color: #feec3c;height: 2px;margin: 0;}
@@ -591,7 +592,7 @@ footer .relacionados li.last { margin-right:0; }
 .pais h2 a,
 .pais h2 {color:#434343; margin:10px; font-size: 18px; font-weight: normal; line-height: 42px; text-transform: uppercase;}
 .pais h2 { font-size: 25px; }
-.pais .redes { position:absolute; top:12px; right:0;}
+.pais .redes { position:absolute; top:25px; right:0;}
 .pais .redes p { float:left; margin-right:10px; text-transform:uppercase; }
 .pais .content { background:#fee133; margin-left:0; }
 .pais .content .dica h2 { float:left; margin:10px 0 }

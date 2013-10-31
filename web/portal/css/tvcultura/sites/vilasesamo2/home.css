@@ -34,5 +34,15 @@
 #carrossel-personagem .slider li:hover .nome { font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif; text-decoration:underline; }
 
 
+.destaques .span4.atividades a{background: #883feb;border-bottom: 2px solid #7732e5;border-top: 2px solid #7732e5; padding:0;}
+.destaques .span4.jogos a{background: #3aaaec;border-bottom: 2px solid #0191fb;border-top: 2px solid #0191fb; padding:0;}
+.destaques .span4.videos a{background: #f5861f;border-bottom: 2px solid #f57301;border-top: 2px solid #f57301; padding:0;}
 
-
+.destaques .span4.atividades img{border-bottom: 2px solid #7732e5;}
+.destaques .span4.jogos img{border-bottom: 2px solid #0191fb;}
+.destaques .span4.videos img{border-bottom: 2px solid #f57301;} 
+ 
+.destaques .span4.atividades{border-top: 7px solid #b16af2;border-bottom: 7px solid #b16af2;border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius:4px;}
+.destaques .span4.jogos{border-top: 7px solid #02cbff;border-bottom: 7px solid #02cbff;border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius:4px;}
+.destaques .span4.videos{border-top: 7px solid #fba500;border-bottom: 7px solid #fba500;border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius:4px;}
+.destaques .span4 .texto{white-space: nowrap;text-overflow: ellipsis;overflow: hidden;padding: 0; font-size:16px;font-family:'dinmedium',Arial, Helvetica, sans-serif;}

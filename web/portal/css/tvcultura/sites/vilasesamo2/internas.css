@@ -12,7 +12,7 @@ body { background:#0172f9; }
 #content section { max-width:940px; margin:20px auto; }
 #content h1 { margin:0; font-size:50px; height:55px; line-height: 55px; padding:0 0 5px 20px;}
 #content h1 span,
-#content h1 i { margin: -4px 40px 10px 0;  }
+#content h1 i { margin: -4px 20px 10px 0;  }
 #content h1 .sprite-icon-colorir-med { margin-top:-6px; }
 #content h1 .sprite-icon-jogos-med { margin-top:4px; }
 #page_nav { max-width:940px;  margin:3% auto; overflow:hidden; }
@@ -43,14 +43,16 @@ body { background:#0172f9; }
 .filtro .filtro-personagem li.ativo img{-moz-opacity: 1;-khtml-opacity: 1;opacity: 1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);filter:alpha(opacity=100);}
 .filtro .filtro-personagem .inner{height:77px;}
 /*.filtro .filtro-personagem .inner.jogos{height:77px;}*/
-.filtro .filtro-personagem .inner.garibaldo { background:#ff6525 !important; }
-.filtro .filtro-personagem .inner.bel { background:#ffcccb !important; }
-.filtro .filtro-personagem .inner.enio { background:#61cbff !important; }
-.filtro .filtro-personagem .inner.beto { background:#00cccd !important; }
-.filtro .filtro-personagem .inner.grover { background:#ffff33 !important; }
-.filtro .filtro-personagem .inner.elmo { background:#9acd34 !important; }
-.filtro .filtro-personagem .inner.comecome { background:#9928ce !important; }
-.filtro .filtro-personagem .inner.zoe { background:#ce62cf !important;}
+.filtro .inner.garibaldo { background:#ff6525 !important; }
+.filtro .inner.bel { background:#ffcccb !important; }
+.filtro .inner.enio { background:#61cbff !important; }
+.filtro .inner.beto { background:#00cccd !important; }
+.filtro .inner.grover { background:#ffff33 !important; }
+.filtro .inner.elmo { background:#9acd34 !important; }
+.filtro .inner.comecome { background:#9928ce !important; }
+.filtro .inner.zoe { background:#ce62cf !important;}
+.filtro .inner img{width: 228px;left: 0;position: absolute}
+.element a{position:relative;}
 /* /filtro personagem*/
 
 /* filtro tag */
@@ -106,7 +108,7 @@ body { background:#0172f9; }
 /* /destaque filtro */
 
 /* todos itens*/
-img.altura{width: 1px!important;height: 38px!important;}
+
 .todos-itens { margin-top:20px; overflow:hidden; }
 .todos-itens a div{white-space:nowrap; text-overflow: ellipsis; overflow: hidden; padding:0 10px}
 .todos-itens a {font-family: 'dinmedium';color: #FFF;font-size: 18px;text-transform: uppercase;margin: 0;line-height: 20px;vertical-align: middle;/*height: 42px;*/}
@@ -190,7 +192,7 @@ img.altura{width: 1px!important;height: 38px!important;}
 .interna.atividades .destaque-filtro article h1 a { color:#883feb;}
 .interna.atividades .destaque-filtro .span6:hover a {color:#b16af2;}
 .interna.atividades .destaque-filtro .span6:hover a img {border:2px solid #b16af2;}
-.interna.atividades .filtro .span2 { border-top-color:#f27300 !important; }
+.interna.atividades .filtro .span2 { border-top-color:#f27300 !important; margin-top: 3px; }
 .interna.atividades .destaque-filtro{padding:0px 10px;}
 .interna.atividades .destaque-filtro.especial { background:#7732e5; }
 .interna.atividades .destaque-filtro.especial li { background:#b16af2; }
@@ -307,7 +309,7 @@ body.personagens { background:#b60401; }
 .personagens #container-personagens p { bottom: 0;   margin: 0;    position: absolute; color:#fff; text-align:center; width:100%; font-size: 25px; text-transform:uppercase; padding:2% 0;  }
 .personagens .span8 .span6 {border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
 .personagens #container-personagens{}
-.personagens .conteudo-asset {padding: 0;}
+.personagens .conteudo-asset {padding: 0;width: 940px;}
 .personagens .q-pers{float:left; width: 225px; height:225px; margin:5px; border-radius:5px;  -moz-border-radius:5px; -webkit-border-radius: 5px; border:none;}
 
 
@@ -352,4 +354,19 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .descritivo span.nome{color:#008d36}
 .cuidadores .todos-itens a {font-size: 16px; border-bottom:2px solid #008d36;}
 .cuidadores .todos-itens li {background: #00aa52;border-top: 7px solid #00c76e;border-bottom: 7px solid #00c76e;}
- 
+/* /cuidadores */
+
+/* na tv */
+body.na-tv{background-color:#feec3c;}
+.na-tv .filtro {background: #00aa52;border-top: 7px solid #00c76e;border-bottom: 7px solid #00c76e;}
+.na-tv .filtro h1 {border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;background: #00aa52; font-size:25px!important;}
+.na-tv .sprite{width: 60px;height: 50px;background: red;margin: -2px 20px 0 0;}
+.na-tv .container-na-tv{background: #FFFFFF;padding:20px; overflow: hidden; position:relative;}
+.na-tv .container-na-tv h2.ola{font-family:'din-blackregular',Arial, Helvetica, sans-serif; font-size:65px; color:#00aa52;position:absolute; top:50px; left:50px; display:block;} 
+.na-tv .container-na-tv p{max-width:690px;float: right;}
+.na-tv .container-na-tv .container-horarios{width: 470px;float: right;max-height: 230px;overflow: hidden;}
+.na-tv .container-na-tv .container-horarios .box-horario{}
+.na-tv .container-na-tv .container-horarios .box-horario .box-logo{}
+.na-tv .container-na-tv .container-horarios .box-horario h2{}
+.na-tv .container-na-tv .container-horarios .box-horario p{}
+/* /na tv */ 
