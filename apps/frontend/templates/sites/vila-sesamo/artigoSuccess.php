@@ -172,7 +172,6 @@
   <?php endif; ?>
   <!--/atividade relacionada -->
   
-  <?php /*
   <!--jogo relacionada -->
   <?php
     if(count($tags) > 0) {
@@ -212,9 +211,8 @@
     <?php endif; ?>
   <?php endif; ?>
   <!--/jogo relacionado -->
-   * 
    
-
+<?php /*
   <!--video relacionado -->
   <?php
     if(count($tags) > 0) {
