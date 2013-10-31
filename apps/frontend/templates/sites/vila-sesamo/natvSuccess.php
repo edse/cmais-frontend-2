@@ -7,6 +7,9 @@
   <span><?php echo $section->getTitle() ?></span>
 </div>
 <!--/barra do titulo da seção -->
+<?php
+/*
+ * programado
 
 <!-- destaques -->
 <div>
@@ -40,6 +43,9 @@
   <?php endif; ?>  
 </div>
 <!--/destaques-->
+
+ */
+?>
 
 
 
