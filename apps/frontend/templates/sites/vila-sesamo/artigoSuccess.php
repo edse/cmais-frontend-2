@@ -47,8 +47,8 @@
     <p>Sobre os autores:</p>
     <?php foreach($colaborador as $c): ?>
     <div>
-      <?php if($c->retriveImageUrlByImageUsage("image-13-b")): ?>
-      <img src="<?php echo $c->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $c->getTitle() ?>" />
+      <?php if($c->retriveImageUrlByImageUsage("image-13")): ?>
+      <img src="<?php echo $c->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $c->getTitle() ?>" />
       <?php endif; ?>
       <p><?php echo $c->getTitle() ?></p>
       <p><?php echo $c->AssetImage->getSource() ?></p>
