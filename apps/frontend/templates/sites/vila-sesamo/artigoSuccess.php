@@ -210,7 +210,7 @@
   <?php endif; ?>
   <!--/jogo relacionado -->
    
-
+<?php /*
   <!--video relacionado -->
   <?php
     if(count($tags) > 0) {
@@ -245,7 +245,7 @@
     <?php endif; ?>
   <?php endif; ?>
   <!--/video relacionado -->
-  
+  */ ?>
   <!--outros destaques-->
   <?php
     $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"para-os-pais");
