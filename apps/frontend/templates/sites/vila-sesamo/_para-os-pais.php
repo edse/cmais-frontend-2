@@ -7,7 +7,6 @@
      */
     if(isset($asset))
       $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Asset Relacionado");
-    if(isset($dicaRelacionada)) echo "sim"; else echo "nao";
     
     $forParents = Doctrine::getTable('Section')->findOneById(2399);
     if(isset($categories)) {
@@ -120,22 +119,22 @@
                  <?php endif; ?>
               <?php endif; ?>
             </div>
-          <?php else: ?>
-            <?php if(isset($displays['dicas']) > 0): ?>
-              <?php if(count($displays['dicas']) > 0): ?>
-                <div class="span4 dica">
-                  <i class="sprite-aspa-esquerda"></i>
-                  <h2><a href="#"><?php echo $displays['dicas'][0]->getTitle(); ?></a></h2>
-                  <p><?php echo html_entity_decode($displays['dicas'][0]->Asset->AssetContent->render()) ?></p>
-                  <i class="sprite-aspa-direita"></i>
-                  <?php $download = $displays['dicas'][0]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
-                  <?php if(count($download) > 0): ?>
-                    <?php if($download[0]->AssetType->getSlug() == "file"): ?>
-                      <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
-                    <?php endif; ?>
+          <?php endif; ?>
+        <?php else: ?>
+          <?php if(isset($displays['dicas']) > 0): ?>
+            <?php if(count($displays['dicas']) > 0): ?>
+              <div class="span4 dica">
+                <i class="sprite-aspa-esquerda"></i>
+                <h2><a href="#"><?php echo $displays['dicas'][0]->getTitle(); ?></a></h2>
+                <p><?php echo html_entity_decode($displays['dicas'][0]->Asset->AssetContent->render()) ?></p>
+                <i class="sprite-aspa-direita"></i>
+                <?php $download = $displays['dicas'][0]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
+                <?php if(count($download) > 0): ?>
+                  <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+                    <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
                   <?php endif; ?>
-                </div>
-              <?php endif; ?>
+                <?php endif; ?>
+              </div>
             <?php endif; ?>
           <?php endif; ?>
         <?php endif; ?>
@@ -182,21 +181,21 @@
                   <?php endif; ?>
                 <?php endif; ?>
             </div>
-          <?php else: ?>
-            <?php if(isset($dica[0])): ?>
-              <div class="span4 dica">
-                <i class="sprite-aspa-esquerda"></i>
-                <h2><a href="#"><?php echo $dica[0]->getTitle(); ?></a></h2>
-                <p><?php echo html_entity_decode($dica[0]->AssetContent->render()) ?></p>
-                <i class="sprite-aspa-direita"></i>
-                <?php $download = $dica[0]->retriveRelatedAssetsByRelationType("Download") ?>
-                <?php if(count($download) > 0): ?>
-                  <?php if($download[0]->AssetType->getSlug() == "file"): ?>
-                    <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
-                  <?php endif; ?>
+          <?php endif; ?>
+        <?php else: ?>
+          <?php if(isset($dica[0])): ?>
+            <div class="span4 dica">
+              <i class="sprite-aspa-esquerda"></i>
+              <h2><a href="#"><?php echo $dica[0]->getTitle(); ?></a></h2>
+              <p><?php echo html_entity_decode($dica[0]->AssetContent->render()) ?></p>
+              <i class="sprite-aspa-direita"></i>
+              <?php $download = $dica[0]->retriveRelatedAssetsByRelationType("Download") ?>
+              <?php if(count($download) > 0): ?>
+                <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+                  <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
                 <?php endif; ?>
-              </div>
-            <?php endif; ?>
+              <?php endif; ?>
+            </div>
           <?php endif; ?>
         <?php endif; ?>      
       
