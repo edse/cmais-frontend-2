@@ -30,6 +30,7 @@ a:hover { text-decoration:none; }
 .sem-margem-r{margin-rightß:0!important}
 .sem-margem-t{margin-top:0!important}
 .sem-margem-b{margin-bottom:0!important}
+.overflow{overflow: hidden;}
 /* dinmedium */
 .pais .content .box-select h2,
 footer .mapa .span12 ul a,
@@ -172,7 +173,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-car-set-br-esquerda{ background-position: 0 -1070px; width: 46px; height: 70px; } 
 .icone-car-set-ve-direita{ background-position: 0 -1190px; width: 46px; height: 70px; } 
 .icone-car-set-ve-esquerda{ background-position: 0 -1310px; width: 46px; height: 70px; } 
-.icone-voltar-artigo{ background-position: 0 -1430px; width: 33px; height: 48px; } 
+.icone-voltar-artigo{ background-position: 0 -1430px; width: 33px; height: 48px;margin-top: 0px!important; } 
 
 /* na tv */
 .icones-na-tv{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-na-tv.png) no-repeat top left;}

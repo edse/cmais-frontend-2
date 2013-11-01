@@ -42,7 +42,7 @@
               
               <h1>NOME DO ARTIGO com quebra de linha de texto e espaçamento entrelinhas de 30 pt</h1>
                
-              <div>
+              <div class="overflow">
                 <span class="data">DD/MM/AAAA - por</span>
                 <span class"nome">Nome do Autor</span>
               </div>

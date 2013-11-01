@@ -10,7 +10,7 @@ body { background:#0172f9; }
 #content { top:134px; margin-bottom:200px; }
 #content .section,
 #content section { max-width:940px; margin:20px auto; }
-#content h1 { margin:0; font-size:50px; height:55px; line-height: 55px; padding:0 20px 5px 20px;}
+#content h1 { margin:0; font-size:50px; height:55px; line-height: 55px; padding:0 0px 5px 20px;}
 #content h1 span,
 #content h1 i { margin: -4px 20px 10px 0;  }
 #content h1 .sprite-icon-colorir-med { margin-top:-6px; }
@@ -360,10 +360,12 @@ body.cuidadores{background-color:#feec3c;}
 /* cuidadores artigos */
 .cuidadores .container-cuidadores{background:#FFFFFF;}
 .cuidadores .container-cuidadores .col-esq{padding: 20px 0 20px 20px;}
-.cuidadores .container-cuidadores .col-esq article h1{background: none;border: none;text-align: left;padding: 0;line-height: 30px!important; color:#00aa52!important;margin-bottom:20px!important;height: auto!important;}
+.cuidadores .container-cuidadores .col-esq article h1{background: none;border: none;text-align: left;padding: 0;line-height: 30px!important; color:#00aa52!important;margin-bottom:10px!important;height: auto!important;}
 .cuidadores .container-cuidadores .col-esq article .data{float:left; display:block;}
-.cuidadores .container-cuidadores .col-esq article .nome{float:left; display:block; color: #00AA52;}
-.cuidadores .todos-assets{background-image: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-box.png');font-size: 25px!important;overflow: hidden;float: right;width: 300px;line-height: 44px;}
+.cuidadores .container-cuidadores .col-esq article .nome{margin-left: 5px!important;float:left; display:block; color: #00AA52!important;}
+.cuidadores .container-cuidadores .col-esq article .divisa{margin:0;}
+.cuidadores .todos-assets{height:48px;background-image: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-artigo.png');font-size: 25px!important;overflow: hidden;float: right;width: 300px;line-height: 48px;}
+.cuidadores .todos-assets p{margin:0;}
 .cuidadores .container-cuidadores .col-dir{padding:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat; }
 /* /cuidadores artigos */
 
