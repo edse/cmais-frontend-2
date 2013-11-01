@@ -5,7 +5,7 @@
      * Se o asset chamado pertencer a uma categoria especial (seção filha de "categorias" e marcada como "is homepage") as dicas e artigos serão destaques dos blocos "dicas" e "artigos", respectivamente, da seção dessa categoria.
      * Senão busca assets com semelhança de tags
      */
-    if($asset)
+    if(isset($asset))
       $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Asset Relacionado");
     
     
@@ -77,7 +77,6 @@
           ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('a.asset_type_id = ?', 1)
-          //->orderBy('rand()')
           ->limit(2)
           ->execute();
           
@@ -90,7 +89,6 @@
           ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('a.asset_type_id = ?', 1)
-          //->orderBy('rand()')
           ->fetchOne();
       }
     }
@@ -117,7 +115,7 @@
             <div class="span4 dica">
               <i class="sprite-aspa-esquerda"></i>
               <h2><a href="#"><?php echo $dicaRelacionada[0]->getTitle(); ?></a></h2>
-              <p><?php echo html_entity_decode($dicaRelacionada->render()) ?></p>
+              <p><?php echo html_entity_decode($dicaRelacionada[0]->AssetContent->render()) ?></p>
               <i class="sprite-aspa-direita"></i>
               <?php $download = $dicaRelacionada[0]->retriveRelatedAssetsByRelationType("Download") ?>
               <?php if(count($download) > 0): ?>
@@ -173,13 +171,13 @@
         <?php endif; ?>
         
       <?php else: ?>
-        
+        aqui
         <?php if(isset($dicaRelacionada)): ?>
           <?php if(count($dicaRelacionada) > 0): ?>
             <div class="span4 dica">
               <i class="sprite-aspa-esquerda"></i>
               <h2><a href="#"><?php echo $dica[0]->getTitle(); ?></a></h2>
-              <p><?php echo html_entity_decode($dicaRelacionada->render()) ?></p>
+              <p><?php echo html_entity_decode($dicaRelacionada[0]->AssetContent->render()) ?></p>
               <i class="sprite-aspa-direita"></i>
                 <?php $download = $dica[0]->retriveRelatedAssetsByRelationType("Download") ?>
                 <?php if(count($download) > 0): ?>
