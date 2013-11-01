@@ -32,7 +32,7 @@
                     break;
                   }
                 }
-                $preview = $d->retriveRelatedAssetsByRelationType('Preview')
+                $preview = $d->Asset->retriveRelatedAssetsByRelationType('Preview')
               ?>
         <article class="span4 <?php echo $assetSection->getSlug() ?>">
           <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="">
