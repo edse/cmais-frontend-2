@@ -163,7 +163,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #horario a { float: left; }
 #horario a {position:relative;}
 #horario a img { margin:4px 10px; }
-#horario p{font-size:13px; line-height: 15px; margin: 0 0 10px 0; font-weight:normal;}
+#horario p{font-size:12px; line-height: 15px; margin: 0 0 10px 0; font-weight:normal;}
 #horario span{font-size: 14px; color:#2b3377; display:block;}
 #horario .divisa { background:url(../images/pattern-divisa.png) ; width: 2px; height:43px; position:absolute; top:14px; right:0; }  
 #horario .cultura { width:376px; }
