@@ -7,7 +7,7 @@
      */
     if(isset($asset))
       $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Asset Relacionado");
-    
+    if(isset($dicaRelacionada)) echo "sim";
     
     $forParents = Doctrine::getTable('Section')->findOneById(2399);
     if(isset($categories)) {
@@ -183,7 +183,6 @@
                 <?php endif; ?>
             </div>
           <?php else: ?>
-            1
             <?php if(isset($dica[0])): ?>
               <div class="span4 dica">
                 <i class="sprite-aspa-esquerda"></i>
@@ -201,14 +200,14 @@
           <?php endif; ?>
         <?php endif; ?>      
       
-        <?php if($artigo): ?>2
+        <?php if($artigo): ?>
           <?php $preview = $artigo->retriveRelatedAssetsByRelationType("Preview") ?>
       <div class="span4 box-select">
         <a href="<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $artigo->getSlug() ?>" title="<?php echo $artigo->getTitle() ?>"> <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $artigo->getTitle() ?>" /> </a>
         <h2><a><?php echo $artigo->getTitle() ?></a></h2>
         <p><?php echo $artigo->getDescription() ?></p>
       </div>
-        <?php else: ?>3
+        <?php else: ?>
           <?php if(isset($dica[1])): ?>
         <div class="span4 dica">
           <i class="sprite-aspa-esquerda"></i>
