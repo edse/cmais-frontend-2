@@ -69,6 +69,7 @@
        * Todas as categorias tem este bloco, mas somente as marcadas como "is homepage" serão consideradas como especiais, tais como "Incluir Brincando" e "Hábitos Saudáveis".
        */
       ?>
+      <p>
       <?php if(isset($categories)): ?>
         <?php if(count($categories) > 0): ?>
           <?php      
@@ -83,19 +84,14 @@
             }
           ?>
           <?php if(isset($seloImageUrl)): ?>
-      <p>
         <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
           <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
         </a>
-        <?php echo $asset->getDescription() ?>
-      </p>
           <?php endif; ?>
-        <?php else: ?>
-        <p>
-          <?php echo $asset->getDescription() ?>
-        </p>
         <?php endif; ?>
       <?php endif; ?>
+        <?php echo $asset->getDescription() ?>
+      </p>
       
       
       <?php if(isset($asset)): ?>
