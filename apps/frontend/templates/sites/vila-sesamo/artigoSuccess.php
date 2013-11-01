@@ -22,6 +22,10 @@
       <h1>
         <span class="icones-sprite-interna icone-cuidadores-grande"></span>
         <?php echo $section->getTitle() ?>
+        <a class="todos-assets" title="voltar para todas atividades">
+        <i class="icones-setas icone-voltar-atividades"></i>
+        <p>todos os artigos</p>
+      </a>
       </h1>
       
       <!--container-->
@@ -39,7 +43,7 @@
               <h1>NOME DO ARTIGO com quebra de linha de texto e espaçamento entrelinhas de 30 pt</h1>
                
               <div>
-                <span>DD/MM/AAAA - por</span>
+                <span class="data">DD/MM/AAAA - por</span>
                 <span class"nome">Nome do Autor</span>
               </div>
               
