@@ -28,14 +28,162 @@
       <div class="container-cuidadores row-fluid">
         
         <!--col esq -->
-        <div class="span8">
-        esquerda
+        <div class="span8 col-esq">
+          
+          <!--conteudo artcle-->
+          <article>
+            
+            <!--header-->
+            <header>
+              
+              <h1>NOME DO ARTIGO com quebra de linha de texto e espaçamento entrelinhas de 30 pt</h1>
+               
+              <div>
+                <span>DD/MM/AAAA - por</span>
+                <span class"nome">Nome do Autor</span>
+              </div>
+              
+              <!--compartilhar redes-->
+              <div class="redes-artigo">
+                <div class="divisa"></div>
+                <p>compartihe este artigo</p>
+                <div class="redes">
+                   redes  
+                </div>
+                <div class="divisa"></div>
+              </div>
+              <!--/compartilhar redes-->
+              
+            </header>
+            <!--/header-->
+            
+            <!--section-->
+            <section>
+              <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+              
+              <!--imprimir/baixar-->
+              <div>
+                <a class="option-assets" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">
+                  <i class="icones-sprite-interna icone-baixar-roxo"></i>
+                  <span>Baixar</span>
+                </a>
+                
+                <a class="option-assets" href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">
+                  <i class="icones-sprite-interna icone-imprimir-roxo"></i>
+                  <span>Imprimir</span>
+                </a>
+              </div>
+              <!--/imprimir/baixar-->
+              
+            </section>
+            <!--/section-->
+            
+            <!--footer-->
+            <footer>
+              
+              <!--compartilhar redes-->
+              <div class="redes-artigo">
+                <div class="divisa"></div>
+                <p>compartihe este artigo</p>
+                <div class="redes">
+                   redes  
+                </div>
+                <div class="divisa"></div>
+              </div>
+              <!--/compartilhar redes-->
+              
+            </footer>
+            <!--/footer-->
+            
+          </article> 
+          <!--/conteudo artcle--> 
         </div>
         <!--/col esq -->
         
         <!--col dir -->
-        <div class="span4">
-         direita
+        <div class="span4 col-dir">
+         
+          <!--tags-->
+          <div class="box-sobre">
+            <h2>
+              <i class="icones-sprite-interna icone-carregar-verde"></i>
+              sobre
+            </h2>
+            <a href="#" title="titulo">habitos saudáveis</a>
+            <a href="#" title="titulo">comunicação</a>
+            <a href="#" title="titulo">pré-escolar</a>
+            <a href="#" title="titulo">auto-conhecimento</a>
+            <a href="#" title="titulo">ciência</a>
+            <div class="bottom-box-sobre"></div>
+          </div>
+          <!--/tags-->
+          
+          <!-- para ler-->
+          <div class="box-ler">
+            <h2>
+              <i class="icones-sprite-interna icone-artigo-ve-pequeno"></i>
+              Para ler
+            </h2>
+            
+            <!--lista-->
+            <ul>
+              <!--item-->
+              <li>
+                <a href="#" title="titulo">
+                  <h3>Nome do Artigo</h3>
+                  <p>Lorem ipsum dolor sit amet, consect etur adi piscing elit. Sed in com modo posuere.</p>
+                </a>
+                <div class="divisa"></div>
+              </li>
+              <!--item-->
+              
+              <!--item-->
+              <li>
+                <a href="#" title="titulo">
+                  <h3>Nome do Artigo</h3>
+                  <p>Lorem ipsum dolor sit amet, consect etur adi piscing elit. Sed in com modo posuere.</p>
+                </a>
+                <div class="divisa"></div>
+              </li>
+              <!--item-->
+              
+              <!--item-->
+              <li>
+                <a href="#" title="titulo">
+                  <h3>Nome do Artigo</h3>
+                  <p>Lorem ipsum dolor sit amet, consect etur adi piscing elit. Sed in com modo posuere.</p>
+                </a>
+                <div class="divisa"></div>
+              </li>
+              <!--item-->
+              
+              <!--item-->
+              <li>
+                <a href="#" title="titulo">
+                  <h3>Nome do Artigo</h3>
+                  <p>Lorem ipsum dolor sit amet, consect etur adi piscing elit. Sed in com modo posuere.</p>
+                </a>
+                <div class="divisa"></div>
+              </li>
+              <!--item-->
+              
+              
+            </ul>
+            <!--/lista-->
+            
+          </div>
+          <!-- /para ler-->
+          
+          <!-- para brincar junto-->
+          <div class="box-brincarjunto">
+            <h2>
+              <i class="icones-sprite-menu icone-cuidadores"></i>
+              Para brincar junto
+            </h2>
+            
+          </div>
+          <!-- /para brincar junto-->
+                     
         </div>
         <!--/col dir -->
         
