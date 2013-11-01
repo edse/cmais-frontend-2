@@ -363,6 +363,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .col-esq article h1{background: none;border: none;text-align: left;padding: 0;line-height: 30px!important; color:#00aa52!important;margin-bottom:20px!important;height: auto!important;}
 .cuidadores .container-cuidadores .col-esq article .data{float:left; display:block;}
 .cuidadores .container-cuidadores .col-esq article .nome{float:left; display:block; color: #00AA52;}
+.cuidadores .todos-assets p {background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png);font-size: 25px!important;}
 .cuidadores .container-cuidadores .col-dir{padding:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat; }
 /* /cuidadores artigos */
 
