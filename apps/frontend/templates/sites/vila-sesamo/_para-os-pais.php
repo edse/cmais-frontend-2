@@ -5,7 +5,6 @@
      * Se o asset chamado pertencer a uma categoria especial (seção filha de "categorias" e marcada como "is homepage") as dicas e artigos serão destaques dos blocos "dicas" e "artigos", respectivamente, da seção dessa categoria.
      * Senão busca assets com semelhança de tags
      */
-    $dicaRelacionada = "";
     if(isset($asset))
       $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Asset Relacionado");
     
