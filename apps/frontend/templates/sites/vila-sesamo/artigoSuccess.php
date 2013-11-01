@@ -63,12 +63,12 @@
               
               <!--imprimir/baixar-->
               <div>
-                <a class="option-assets" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">
+                <a class="option-assets" href="#" title="Baixar">
                   <i class="icones-sprite-interna icone-baixar-roxo"></i>
                   <span>Baixar</span>
                 </a>
                 
-                <a class="option-assets" href="<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Imprimir" target="_blank">
+                <a class="option-assets" href="#" title="Imprimir" target="_blank">
                   <i class="icones-sprite-interna icone-imprimir-roxo"></i>
                   <span>Imprimir</span>
                 </a>
