@@ -117,7 +117,7 @@
             <div class="span4 dica">
               <i class="sprite-aspa-esquerda"></i>
               <h2><a href="#"><?php echo $dicaRelacionada[0]->getTitle(); ?></a></h2>
-              <p><?php echo html_entity_decode($dicaRelacionada->render()) ?></p>
+              <p><?php echo html_entity_decode($dicaRelacionada->AssetContent->render()) ?></p>
               <i class="sprite-aspa-direita"></i>
               <?php $download = $dicaRelacionada[0]->retriveRelatedAssetsByRelationType("Download") ?>
               <?php if(count($download) > 0): ?>
@@ -179,7 +179,7 @@
             <div class="span4 dica">
               <i class="sprite-aspa-esquerda"></i>
               <h2><a href="#"><?php echo $dica[0]->getTitle(); ?></a></h2>
-              <p><?php echo html_entity_decode($dicaRelacionada->render()) ?></p>
+              <p><?php echo html_entity_decode($dicaRelacionada->AssetContent->render()) ?></p>
               <i class="sprite-aspa-direita"></i>
                 <?php $download = $dica[0]->retriveRelatedAssetsByRelationType("Download") ?>
                 <?php if(count($download) > 0): ?>
