@@ -68,7 +68,6 @@
         }
       }
       else {
-        echo "aqui";
         $dica = Doctrine_Query::create()
           ->select('a.*')
           ->from('Asset a, SectionAsset sa')
@@ -78,7 +77,6 @@
           ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('a.asset_type_id = ?', 1)
-          //->orderBy('rand()')
           ->limit(2)
           ->execute();
           
@@ -91,7 +89,6 @@
           ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('a.asset_type_id = ?', 1)
-          //->orderBy('rand()')
           ->fetchOne();
       }
     }
@@ -174,7 +171,7 @@
         <?php endif; ?>
         
       <?php else: ?>
-        
+        aqui
         <?php if(isset($dicaRelacionada)): ?>
           <?php if(count($dicaRelacionada) > 0): ?>
             <div class="span4 dica">
