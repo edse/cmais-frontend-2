@@ -5,6 +5,7 @@
      * Se o asset chamado pertencer a uma categoria especial (seção filha de "categorias" e marcada como "is homepage") as dicas e artigos serão destaques dos blocos "dicas" e "artigos", respectivamente, da seção dessa categoria.
      * Senão busca assets com semelhança de tags
      */
+    $dicaRelacionada = "";
     if(isset($asset))
       $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Asset Relacionado");
     
@@ -201,14 +202,14 @@
           <?php endif; ?>
         <?php endif; ?>      
       
-        <?php if($artigo): ?>2
+        <?php if($artigo): ?>
           <?php $preview = $artigo->retriveRelatedAssetsByRelationType("Preview") ?>
       <div class="span4 box-select">
         <a href="<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $artigo->getSlug() ?>" title="<?php echo $artigo->getTitle() ?>"> <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $artigo->getTitle() ?>" /> </a>
         <h2><a><?php echo $artigo->getTitle() ?></a></h2>
         <p><?php echo $artigo->getDescription() ?></p>
       </div>
-        <?php else: ?>3
+        <?php else: ?>
           <?php if(isset($dica[1])): ?>
         <div class="span4 dica">
           <i class="sprite-aspa-esquerda"></i>
