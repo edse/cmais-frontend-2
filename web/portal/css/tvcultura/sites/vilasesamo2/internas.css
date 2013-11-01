@@ -357,6 +357,12 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .todos-itens li {background: #00aa52;border-top: 7px solid #00c76e;border-bottom: 7px solid #00c76e;}
 /* /cuidadores */
 
+/* cuidadores artigos */
+.cuidadores .container-cuidadores{background:#FFFFFF;}
+.cuidadores .container-cuidadores .col-esq{padding:20px;}
+.cuidadores .container-cuidadores .col-dir{padding:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat; }
+/* /cuidadores artigos */
+
 /* na tv */
 body.na-tv{background-color:#feec3c;position:relative;}
 .na-tv .b-verde{position:relative;}
