@@ -45,7 +45,9 @@
                   <div class="descritivo">
                     <h3><?php echo $d->getTitle() ?></h3>
                     <p><?php echo $d->getDescription() ?></p>
-                    <p>Por <span><?php echo $d->getAuthor() ?></span></p>
+                    <?php if($d->Asset->AssetContent->getAuthor()): ?>
+                    <p>Por <span><?php echo $d->Asset->AssetContent->getAuthor() ?></span></p>
+                    <?php endif; ?>
                   </div>
                 </li>
                 <!--/item-->

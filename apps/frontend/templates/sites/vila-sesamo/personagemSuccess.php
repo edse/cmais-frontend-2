@@ -54,7 +54,7 @@
                     <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
                       <iframe width="351" height="263" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
                     <?php elseif($d->Asset->AssetType->getSlug() == "image"): ?>
-                      <img src="<?php echo $d->retriveImageUrlByImageUsage('image-13-b'); ?>" alt="<?php echo $d->getTitle() ?>" />
+                      <img src="<?php echo $d->retriveImageUrlByImageUsage('image-13'); ?>" alt="<?php echo $d->getTitle() ?>" />
                     <?php endif; ?>
                     </div>
                   </li>
@@ -106,18 +106,22 @@
       <section class="span8 pull-right">
         <?php foreach($displays['destaques-de-assets'] as $d): ?>
           <?php
-            $sections = $d->getSections();
+            $sections = $d->Asset->getSections();
             foreach($sections as $s) {
               if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
                 $assetSection = $s;
                 break;
               }
             }
-            $preview = $d->retriveRelatedAssetsByRelationType('Preview')
+            $preview = $d->Asset->retriveRelatedAssetsByRelationType('Preview')
           ?>
         <article class="span6 <?php echo $assetSection->getSlug() ?>">
           <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
-            <img class="img-destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+            <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
+            <img class="img-destaque" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
+            <?php else: ?>
+            <img class="img-destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
+            <?php endif; ?>
             <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
             <p><?php echo $d->getTitle() ?></p>  
           </a>  

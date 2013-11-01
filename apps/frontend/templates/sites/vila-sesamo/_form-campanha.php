@@ -42,6 +42,7 @@
       </div>
       
       <!--form-->    
+      <!--form class="form-horizontal" id="form-contato" action="" method="post" enctype="multipart/form-data"-->
       <form class="form-horizontal" id="form-contato" action="http://cmais.com.br/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post" enctype="multipart/form-data">
         <input type="hidden" id="campanha" name="campanha" value="<?php echo $campaign->getTitle() ?>" />
         <!--Nome-->
@@ -173,7 +174,8 @@
   </section>
   <!--/section-->
   <?php endif; ?>
-
+  
+<script src="/portal/js/ajaxFileUpload/ajaxfileupload.js" type="text/javascript"></script>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
