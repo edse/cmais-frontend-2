@@ -120,7 +120,7 @@
             <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
             <img class="img-destaque" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
             <?php else: ?>
-            <img class="img-destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+            <img class="img-destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
             <?php endif; ?>
             <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
             <p><?php echo $d->getTitle() ?></p>  
