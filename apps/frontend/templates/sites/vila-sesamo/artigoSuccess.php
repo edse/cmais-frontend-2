@@ -23,7 +23,7 @@
         <span class="icones-sprite-interna icone-cuidadores-grande"></span>
         <?php echo $section->getTitle() ?>
         <a class="todos-assets" title="voltar para todas atividades">
-        <i class="icones-setas icone-voltar-atividades"></i>
+        <i class="icones-setas icone-voltar-artigo"></i>
         <p>todos os artigos</p>
       </a>
       </h1>
