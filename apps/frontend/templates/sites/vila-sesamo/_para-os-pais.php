@@ -168,8 +168,8 @@
         
       <?php else: ?>
         
-        <?php if(isset($dicaRelacionada)): ?>
-          <?php if(count($dicaRelacionada) > 0): ?>
+        <?php if(isset($dicaRelacionada)): ?>1
+          <?php if(count($dicaRelacionada) > 0): ?>2
             <div class="span4 dica">
               <i class="sprite-aspa-esquerda"></i>
               <h2><a href="#"><?php echo $dica[0]->getTitle(); ?></a></h2>
@@ -183,7 +183,7 @@
                 <?php endif; ?>
             </div>
           <?php else: ?>
-            1
+            3
             <?php if(isset($dica[0])): ?>
               <div class="span4 dica">
                 <i class="sprite-aspa-esquerda"></i>
