@@ -7,7 +7,7 @@
      */
     if(isset($asset))
       $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Asset Relacionado");
-    
+    if(isset($dicaRelacionada)) echo "sim";
     
     $forParents = Doctrine::getTable('Section')->findOneById(2399);
     if(isset($categories)) {
@@ -168,8 +168,8 @@
         
       <?php else: ?>
         
-        <?php if(isset($dicaRelacionada)): ?>1
-          <?php if(count($dicaRelacionada) > 0): ?>2
+        <?php if(isset($dicaRelacionada)): ?>
+          <?php if(count($dicaRelacionada) > 0): ?>
             <div class="span4 dica">
               <i class="sprite-aspa-esquerda"></i>
               <h2><a href="#"><?php echo $dica[0]->getTitle(); ?></a></h2>
@@ -183,7 +183,6 @@
                 <?php endif; ?>
             </div>
           <?php else: ?>
-            3
             <?php if(isset($dica[0])): ?>
               <div class="span4 dica">
                 <i class="sprite-aspa-esquerda"></i>
