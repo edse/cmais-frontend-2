@@ -71,7 +71,7 @@
           ->from('Asset a, SectionAsset sa')
           ->where('a.site_id = ?', $site->getId())
           ->andWhere('sa.asset_id = a.id')
-          ->andWhereIn('sa.section_id', $sectionDicas->getId())
+          ->andWhere('sa.section_id = ?', $sectionDicas->getId())
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('a.asset_type_id = ?', 1)
           ->limit(2)
@@ -82,7 +82,7 @@
           ->from('Asset a, SectionAsset sa')
           ->where('a.site_id = ?', $site->getId())
           ->andWhere('sa.asset_id = a.id')
-          ->andWhereIn('sa.section_id', $forParents->getId())
+          ->andWhere('sa.section_id = ?', $forParents->getId())
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('a.asset_type_id = ?', 1)
           ->fetchOne();
@@ -183,6 +183,7 @@
                 <?php endif; ?>
             </div>
           <?php else: ?>
+            1
             <?php if(isset($dica[0])): ?>
               <div class="span4 dica">
                 <i class="sprite-aspa-esquerda"></i>
@@ -200,14 +201,14 @@
           <?php endif; ?>
         <?php endif; ?>      
       
-        <?php if($artigo): ?>
+        <?php if($artigo): ?>2
           <?php $preview = $artigo->retriveRelatedAssetsByRelationType("Preview") ?>
       <div class="span4 box-select">
         <a href="<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $artigo->getSlug() ?>" title="<?php echo $artigo->getTitle() ?>"> <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $artigo->getTitle() ?>" /> </a>
         <h2><a><?php echo $artigo->getTitle() ?></a></h2>
         <p><?php echo $artigo->getDescription() ?></p>
       </div>
-        <?php else: ?>
+        <?php else: ?>3
           <?php if(isset($dica[1])): ?>
         <div class="span4 dica">
           <i class="sprite-aspa-esquerda"></i>
