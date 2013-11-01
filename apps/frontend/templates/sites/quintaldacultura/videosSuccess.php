@@ -13,7 +13,7 @@
     <meta property="fb:app_id" content="124792594261614"/>
 
     <link rel="shortcut icon" href="http://cmais.com.br/portal/images/icon/favicon.png" type="image/x-icon" />
-    <link rel="image_src" href="http://cmais.com.br/portal/images/logoCMAIS.jpg" />
+    <link rel="image_src" href="http://cmais.com.br/portal/images/logoCMAIS.jpg" /> 
 
     <meta name="description" content="cmais+ O portal de conteúdo da Cultura" />
     <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
