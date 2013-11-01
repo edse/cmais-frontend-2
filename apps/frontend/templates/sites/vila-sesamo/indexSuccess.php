@@ -25,7 +25,7 @@
       <section class="destaques span8">
             <?php foreach($displays['destaques-de-assets'] as $d): ?>
               <?php
-                $sections = $d->getSections();
+                $sections = $d->Asset->getSections();
                 foreach($sections as $s) {
                   if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
                     $assetSection = $s;
