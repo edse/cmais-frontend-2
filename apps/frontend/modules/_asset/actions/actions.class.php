@@ -1084,7 +1084,7 @@ class _assetActions extends sfActions
               if($debug) print "<br>2-3-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/video';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/video');
             }
-            elseif($this->section->getSlug() == "para-os-pais") {
+            elseif($this->section->getSlug() == "cuidadores") {
               if($debug) print "<br>2-3-4>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/artigo';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/artigo');
             }
