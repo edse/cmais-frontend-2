@@ -195,58 +195,6 @@
       
       submitHandler: function(form){
       	form.submit();
-      	
-      	/*
-      	 * O envio de email com anexo via ajax ainda não funciona.
-      	 */
-      	/*
-        jQuery.ajaxFileUpload(
-        {
-          url: '/actions/vilasesamo/sendAttachment.php',
-          secureuri: false,
-          fileElementId: 'datafile',
-          dataType: 'json',
-          data: {
-            nome: $("#nome").val(),
-            idade: $("#idade").val(),
-            cidade: $("#cidade").val(),
-            estado: $("#estado").val(),
-            email: $("#email").val(),
-            mensagem: $("#mensagem").val(),
-            concordo: $("#concordo").val()
-          },
-          success: function (data, status) {
-            if (typeof (data.error) != 'undefined') {
-              if (data.error != '') {
-                jQuery('#submit_form').html("<div id='feedback-message'></div>");
-                jQuery('#feedback-message').html("<h3>Thank you for submitting. We will be in touch soon.</h3>")
-
-                .hide()
-                .fadeIn(1500, function () {
-                    jQuery('#feedback-message');
-                });
-              }
-              else {
-                jQuery('#submit_form').html("<div id='feedback-message'></div>");
-                jQuery('#feedback-message').html("<h3>Thank you for submitting. We will be in touch soon.</h3>")
-
-                .hide()
-                .fadeIn(1500, function () {
-                    jQuery('#feedback-message');
-                });
-              }
-            }
-          },
-          error: function (data, status, e) {
-            jQuery('#submit_form').html("<div id='feedback-message'></div>");
-            jQuery('#feedback-message').html("<h3>Thank you for submitting. We will be in touch soon.</h3>")
-            .hide()
-            .fadeIn(1500, function () {
-                jQuery('#feedback-message');
-            });
-          }
-        })
-        */
       },
       rules:{
         nome:{
