@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <script>
-  $("body").addClass("na-tv");
+  $("body").addClass("cuidadores");
 </script>
 
 <!-- HEADER -->
@@ -20,13 +20,25 @@
     <!--container conteudo-->
     <div class="b-verde borda-arredonda">
       <h1>
-        <span class="icones-sprite-interna icone-na-tv-grande"></span>
+        <span class="icones-sprite-interna icone-cuidadores-grande"></span>
         <?php echo $section->getTitle() ?>
       </h1>
       
       <!--container-->
-      <div class="container-na-tv">
-        teste
+      <div class="container-cuidadores row-fluid">
+        
+        <!--col esq -->
+        <div class="span8">
+        esquerda
+        </div>
+        <!--/col esq -->
+        
+        <!--col dir -->
+        <div class="span4">
+         direita
+        </div>
+        <!--/col dir -->
+        
       </div>
       <!--/container-->
       
