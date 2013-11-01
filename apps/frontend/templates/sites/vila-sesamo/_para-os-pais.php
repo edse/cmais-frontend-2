@@ -42,8 +42,7 @@
             ->from('Asset a, SectionAsset sa, tag t, tagging tg')
             ->where('a.site_id = ?', $site->getId())
             ->andWhere('sa.asset_id = a.id')
-            ->andWhereIn('sa.section_id', $sectionDicas->getId())
-            ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+            ->andWhere('sa.section_id = ?', $sectionDicas->getId())
             ->andWhere('a.is_active = ?', 1)
             ->andWhere('tg.taggable_id = a.id')
             ->andWhere('tg.tag_id = t.id')
@@ -57,8 +56,7 @@
             ->from('Asset a, SectionAsset sa, tag t, tagging tg')
             ->where('a.site_id = ?', $site->getId())
             ->andWhere('sa.asset_id = a.id')
-            ->andWhereIn('sa.section_id', $forParents->getId())
-            ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+            ->andWhere('sa.section_id = ?', $forParents->getId())
             ->andWhere('a.is_active = ?', 1)
             ->andWhere('tg.taggable_id = a.id')
             ->andWhere('tg.tag_id = t.id')
@@ -74,7 +72,6 @@
           ->where('a.site_id = ?', $site->getId())
           ->andWhere('sa.asset_id = a.id')
           ->andWhereIn('sa.section_id', $sectionDicas->getId())
-          ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('a.asset_type_id = ?', 1)
           ->limit(2)
@@ -86,7 +83,6 @@
           ->where('a.site_id = ?', $site->getId())
           ->andWhere('sa.asset_id = a.id')
           ->andWhereIn('sa.section_id', $forParents->getId())
-          ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('a.asset_type_id = ?', 1)
           ->fetchOne();
@@ -171,7 +167,7 @@
         <?php endif; ?>
         
       <?php else: ?>
-        aqui
+        
         <?php if(isset($dicaRelacionada)): ?>
           <?php if(count($dicaRelacionada) > 0): ?>
             <div class="span4 dica">
