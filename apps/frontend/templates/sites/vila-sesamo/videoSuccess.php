@@ -91,6 +91,10 @@
       </p>
           <?php endif; ?>
         <?php endif; ?>
+      <?php else: ?>
+      <p>
+        <?php echo $asset->getDescription() ?>
+      </p>
       <?php endif; ?>
 
       
