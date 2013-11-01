@@ -162,8 +162,12 @@
           
         <li class="span4 element <?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> <?php echo $assetSection->getSlug() ?>"> 
           <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
-            <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
-            <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+            <?php if($d->AssetType->getSlug() == "video"): ?>
+              <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
+            <?php else: ?>
+              <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
+              <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+            <?php endif; ?>
             <i class="icones-sprite-interna icones-<?php echo $assetSection->getSlug() ?>-grande"></i>
             <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="<?php echo $assetSection->getSlug() ?>"/><?php echo $d->getTitle() ?></div>
           </a>
