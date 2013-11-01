@@ -7,7 +7,7 @@
      */
     if(isset($asset))
       $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Asset Relacionado");
-    if(isset($dicaRelacionada)) echo "sim";
+    if(isset($dicaRelacionada)) echo "sim"; else echo "nao";
     
     $forParents = Doctrine::getTable('Section')->findOneById(2399);
     if(isset($categories)) {
