@@ -362,7 +362,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .col-esq{padding: 20px 0 20px 20px;}
 .cuidadores .container-cuidadores .col-esq article h1{background: none;border: none;text-align: left;padding: 0;line-height: 30px!important; color:#00aa52!important;margin-bottom:10px!important;height: auto!important;}
 .cuidadores .container-cuidadores .col-esq article .data{float:left; display:block;}
-.cuidadores .container-cuidadores .col-esq article .nome{float:left; display:block; color: #00AA52!important;margin-bottom:15px;}
+.cuidadores .container-cuidadores .col-esq article .nome{margin-left: 5px!important;float:left; display:block; color: #00AA52!important;}
 .cuidadores .container-cuidadores .col-esq article .divisa{margin:0;}
 .cuidadores .todos-assets{height:48px;background-image: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-artigo.png');font-size: 25px!important;overflow: hidden;float: right;width: 300px;line-height: 48px;}
 .cuidadores .todos-assets p{margin:0;}

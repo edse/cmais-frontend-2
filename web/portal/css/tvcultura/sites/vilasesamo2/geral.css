@@ -30,6 +30,7 @@ a:hover { text-decoration:none; }
 .sem-margem-r{margin-rightß:0!important}
 .sem-margem-t{margin-top:0!important}
 .sem-margem-b{margin-bottom:0!important}
+.overflow{overflow: hidden;}
 /* dinmedium */
 .pais .content .box-select h2,
 footer .mapa .span12 ul a,
