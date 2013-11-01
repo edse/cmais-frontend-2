@@ -59,7 +59,7 @@
     <?php if(count($displays['dicas']) > 0): ?>
       <!--dica 1-->
       <h2><?php echo $displays['dicas'][0]->getTitle(); ?></h2>
-      <p><?php echo $displays['dicas'][0]->getDescription(); ?></p>
+      <p><?php echo html_entity_decode($displays['dicas'][0]->Asset->AssetContent->render()) ?></p>
       <?php $download = $displays['dicas'][0]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
       <?php if(count($download) > 0): ?>
         <?php if($download[0]->AssetType->getSlug() == "file"): ?>
@@ -85,7 +85,7 @@
     <?php if(isset($displays['dicas'][1])): ?>2
       <!--dica 2-->
       <h2><a href="#"><?php echo $displays['dicas'][1]->getTitle(); ?></a></h2>
-      <p><?php echo $displays['dicas'][1]->getDescription(); ?></p>
+      <p><?php echo html_entity_decode($displays['dicas'][1]->Asset->AssetContent->render()) ?></p>
       <?php $download = $displays['dicas'][1]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
       <?php if(count($download) > 0): ?>
         <?php if($download[0]->AssetType->getSlug() == "file"): ?>
