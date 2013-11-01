@@ -1067,7 +1067,7 @@ class _assetActions extends sfActions
               $this->setLayout("vilasesamo");
             $sections = $this->asset->getSections();
             foreach($sections as $s) {
-              if(in_array($s->getSlug(), array("atividades", "jogos", "videos","para-os-pais"))) {
+              if(in_array($s->getSlug(), array("atividades", "jogos", "videos","cuidadores"))) {
                 $this->section = $s;
                 break;
               }
@@ -1084,7 +1084,7 @@ class _assetActions extends sfActions
               if($debug) print "<br>2-3-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/video';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/video');
             }
-            elseif($this->section->getSlug() == "para-os-pais") {
+            elseif($this->section->getSlug() == "cuidadores") {
               if($debug) print "<br>2-3-4>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/artigo';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/artigo');
             }

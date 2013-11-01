@@ -16,7 +16,7 @@
     <link rel="image_src" href="http://cmais.com.br/portal/images/logoCMAIS.jpg" />
 
     <meta name="description" content="cmais+ O portal de conteúdo da Cultura" />
-    <meta name="keywords" content="cultura, educacao, infantil, jornalismo" />
+    <meta name="keywords" content="cultura, educacao, infantil, jornalismo" /> 
     
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css?nocache=1234" type="text/css" />
     <link rel="stylesheet" href="/portal/quintal/css/geralQuintal.css" type="text/css" />
