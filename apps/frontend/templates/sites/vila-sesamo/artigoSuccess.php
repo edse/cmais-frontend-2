@@ -48,7 +48,7 @@
               </div>
               
               <!--compartilhar redes-->
-              <?php include_partial_from_folder('sites/vila-sesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+              <?php include_partial_from_folder('sites/vila-sesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
               <!--/compartilhar redes-->
               
             </header>
@@ -60,15 +60,17 @@
               
               <!--imprimir/baixar-->
               <div class="imprimir">
-                <a class="option-assets" href="#" title="Baixar">
-                  <i class="icones-sprite-interna icone-baixar-verde"></i>
-                  <span>Baixar</span>
-                </a>
                 
                 <a class="option-assets" href="#" title="Imprimir" target="_blank">
                   <i class="icones-sprite-interna icone-imprimir-verde"></i>
                   <span>Imprimir</span>
                 </a>
+                
+                <a class="option-assets" href="#" title="Baixar">
+                  <i class="icones-sprite-interna icone-baixar-verde"></i>
+                  <span>Baixar</span>
+                </a>
+                
               </div>
               <!--/imprimir/baixar-->
               
@@ -77,10 +79,10 @@
             <!--/section-->
             
             <!--footer-->
-            <div>
+            <div class="clearboth">
               
               <!--compartilhar redes-->
-              <?php include_partial_from_folder('sites/vila-sesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+              <?php include_partial_from_folder('sites/vila-sesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
               <!--/compartilhar redes-->
               
             </div>
