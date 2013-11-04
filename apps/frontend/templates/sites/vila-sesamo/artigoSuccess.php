@@ -218,7 +218,7 @@
               Para brincar junto
             </h2>
             
-           <article class="span4 jogos">
+           <article class="jogos">
               <a href="/vila-sesamo/jogos/livro-animado-0" title="">
                 <img src="http://midia.cmais.com.br/assets/image/image-13/0bf1d319befd5fd100aac2c1c42e930127307d50.jpg" alt="Livro Animado">
                 <i class="icones-sprite-interna icone-jogos-pequeno"></i>
