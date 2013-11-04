@@ -116,6 +116,15 @@
                 </div>
               </article>
               <!--/sobre os autores-->
+              
+              <div class="comente">              
+                <div class="divisa"></div>
+                <i class="icones-form icone-balao-verde"></i>
+                <p>Gostou desse artigo? Comente!</p>
+              </div>
+              
+              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+              
             </div>
             <!--/footer-->
             
