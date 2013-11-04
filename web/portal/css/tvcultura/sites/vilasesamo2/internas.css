@@ -69,7 +69,7 @@ a:hover{text-decoration:underline!important;}
 /* /scroll*/
 
 /* campanhas */
-body.campanhas{background-color:#fee133;}
+body.campanhas{background-color:#fee133!important;}
 .campanhas .b-amarelo{background-color: #feec3c!important;}
 .campanhas .b-amareloescuro{background-color:#fbc227!important;}
 .campanhas .borda-amarela{background-color:#fbc227!important;}
