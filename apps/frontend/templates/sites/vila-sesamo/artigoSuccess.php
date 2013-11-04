@@ -217,7 +217,8 @@
               <i class="icones-sprite-menu icone-cuidadores"></i>
               Para brincar junto
             </h2>
-            
+           
+           <!--destaque jogos--> 
            <article class="jogos">
               <a href="/vila-sesamo/jogos/livro-animado-0" title="">
                 <img src="http://midia.cmais.com.br/assets/image/image-13/0bf1d319befd5fd100aac2c1c42e930127307d50.jpg" alt="Livro Animado">
@@ -228,6 +229,34 @@
                 </div>
               </a>
             </article>
+            <!--/destaque jogos-->
+            
+            <!--destaque atividades-->
+            <article class="atividades">
+              <a href="/vila-sesamo/jogos/livro-animado-0" title="">
+                <img src="http://midia.cmais.com.br/assets/image/image-13/f3f8a63c5113759db96963dd1f8e8bba5720446d.jpg" alt="Monte monstrinhos - Recorte e brinque ">
+                <i class="icones-sprite-interna icone-atividades-pequeno"></i>
+                <div class="texto">
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
+                  Monte monstrinhos - Recorte e brinque             
+                </div>
+              </a>
+            </article>
+            <!--/destaque atividades-->
+            
+            <!--destaque videos-->
+            <article class="videos">
+              <a href="/vila-sesamo/jogos/livro-animado-0" title="">
+                <img src="http://img.youtube.com/vi/qJRMd5hFQcE/0.jpg" alt="Canção do Garibaldo - Vila Sésamo">
+                <i class="icones-sprite-interna icone-videos-pequeno"></i>
+                <div class="texto">
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
+                  Canção do Garibaldo - Vila Sésamo
+                </div>
+              </a>
+            </article>
+            <!--/destaque videos-->
+            
           </div>
           <!-- /para brincar junto-->
                      
