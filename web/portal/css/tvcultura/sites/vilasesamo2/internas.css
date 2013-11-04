@@ -408,7 +408,8 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .destaques .videos {border-top: 7px solid #fba500;border-bottom: 7px solid #fba500;border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;} 
 .cuidadores .container-cuidadores .destaques .videos a{background: #f5861f;border-bottom: 2px solid #f57301;border-top: 2px solid #f57301;padding: 0;}
 .cuidadores .container-cuidadores .destaques .videos img {border-bottom: 2px solid #f57301;}
-.cuidadores .container-cuidadores .banner a{padding: 5px;margin-bottom:10px;}
+.cuidadores .container-cuidadores .banner a{padding: 5px;margin-bottom:10px; overflow: hidden;}
+.cuidadores .container-cuidadores .banner a img{width:100%;}
 .cuidadores .container-cuidadores .destaques .texto {white-space: nowrap;text-overflow: ellipsis;overflow: hidden;padding: 0;font-size: 16px;font-family: 'dinmedium',Arial, Helvetica, sans-serif;}
 .cuidadores .todos-assets{height:48px;background-image: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-artigo.png');font-size: 25px!important;overflow: hidden;float: right;width: 300px;line-height: 48px;}
 .cuidadores .todos-assets p{margin:0;}
