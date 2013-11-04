@@ -70,6 +70,7 @@ a:hover{text-decoration:underline!important;}
 
 /* campanhas */
 body.campanhas{background-color:#fee133!important;}
+.interna.campanhas .filtro .span12{border:none; background:none;}
 .campanhas .b-amarelo{background-color: #feec3c!important;}
 .campanhas .b-amareloescuro{background-color:#fbc227!important;}
 .campanhas .borda-amarela{background-color:#fbc227!important;}
