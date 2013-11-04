@@ -77,36 +77,31 @@
       <?php endif; ?>
       <!--/destaque-principal--->
       <div class="divisa"></div>
-      <div class="content span12 row-fluid">
-      
-
-      
-              
-                                
-      
-                        <div class="span4 box-select">
-        <a href="vila-sesamo/cuidadores/compreendendo-a-diferenca-do-outro" title="Compreendendo a diferença do outro"> <img src="http://midia.cmais.com.br/assets/image/image-13-b/26bd912e84adb63000cb4904b0849049ee8b80a6.jpg" alt="Compreendendo a diferença do outro"> </a>
-        <h2><a>Compreendendo a diferença do outro</a></h2>
-        <p>Artigo para os pais e educadores falando sobre a importância de ensinar as crianças a compreender a diferença do outro.</p>
-      </div>
-              
-       <div class="span4 box-select">
-        <a href="vila-sesamo/cuidadores/compreendendo-a-diferenca-do-outro" title="Compreendendo a diferença do outro"> <img src="http://midia.cmais.com.br/assets/image/image-13-b/26bd912e84adb63000cb4904b0849049ee8b80a6.jpg" alt="Compreendendo a diferença do outro"> </a>
-        <h2><a>Compreendendo a diferença do outro</a></h2>
-        <p>Artigo para os pais e educadores falando sobre a importância de ensinar as crianças a compreender a diferença do outro.</p>
+      <div class="span12">
+        
+        <div class="span4">
+          <i class="sprite-aspa-esquerda"></i>
+          <h2><a href="#">Titulo dica</a></h2>
+          <p>Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum</p>
+          <i class="sprite-aspa-direita"></i>
+          <a class="btn" href="http://midia.cmais.com.br/assets/file/original/" title="Baixar" target="_blank">baixar</button>
+        </div>
+        
+        <div class="span4">
+          <a href="#" title="">
+            <img src="" alt="">
+            <p>Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum</p>
+          </a>
+        </div>
+          
+        <div class="span4">
+          <h2>Conheça nossos parciros:</h2>
+          <a href="#">
+            <img src="/portal/images/capaPrograma/vilasesamo2/destaque.png" alt""/>
+          </a>
+        </div>  
+        
       </div>  
-            
-      <div class="span4">
-                                  <p>Conheça nossos parceiros:</p>
-        <a class="publicidade" href="/vila-sesamo/livro-animado-1" title="Livro Animado">
-          <img src="http://midia.cmais.com.br/assets/image/image-13-b/0bf1d319befd5fd100aac2c1c42e930127307d50.jpg" alt="Livro Animado">
-        </a>
-                          
-                
-                          
-         
-      </div>
-    </div> 
        
     <?php endif; ?>  
     </div>
