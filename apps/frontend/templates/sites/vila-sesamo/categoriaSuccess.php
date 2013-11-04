@@ -22,7 +22,7 @@
       <h1>
         <?php echo $section->getTitle() ?>
         
-        <!--selecione a campanha-->
+        <!--selecione a categoria-->
          <?php
           $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
           $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
@@ -39,25 +39,48 @@
           </div>
           <?php endif; ?>
         <?php endif; ?>
-        <!--/selecione a campanha-->
+        <!--/selecione a categoria-->
         
       </h1>
-      
-      <!--container-campanhas-->
-      <div class="container-campanhas">
-        
-        <p>
-          <iframe width="300" height="225" src="//www.youtube.com/embed/-o1WFZf-wCo&rel=0" frameborder="0" allowfullscreen></iframe>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non venenatis mauris. In accumsan massa sed consectetur vehicula. Nulla a interdum leo. Vivamus volutpat id dui congue condimentum. Suspendisse iaculis varius dui, ac volutpat magna scelerisque eget. Aenean posuere elementum nisl vitae pretium. Maecenas eu nunc facilisis, facilisis nisi vel, molestie nibh. Ut congue scelerisque ligula commodo faucibus. Sed eu massa vel quam ullamcorper pellentesque a a dolor. Proin consectetur ligula nec turpis aliquet, et luctus neque pulvinar. In venenatis nisl vel nisl dapibus, luctus tempor purus porta. Duis semper, purus sodales placerat bibendum, purus leo blandit sem, eu volutpat lectus lorem faucibus odio. Fusce condimentum ut erat ut porttitor. Suspendisse sed sem id lectus lobortis malesuada. Donec in arcu sit amet mi egestas mollis.
-          <br><br>
-          Veja abaixo a galeria de desenhos das brincadeiras preferidas da criançada!
-        </p>
-        
-
-        
-      </div>
-      <!--container-campanhas-->  
-      
+      <?php if($section->getIsHomepage() == 1): // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando". ?>
+  
+      <!--destaque-principal-->
+      <?php if(isset($displays['destaque-principal'])): ?>
+        <?php if(count($displays['destaque-principal']) > 0): ?> 
+        <div class="container-campanhas">
+          <!-- selo -->
+          <?php if(isset($displays['selo'])): ?>
+            <?php if(count($displays['selo']) > 0): ?>
+              <?php if($displays["selo"][0]->retriveImageUrlByImageUsage("original")): ?>
+                <img src="<?php echo $displays["selo"][0]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $displays["selo"][0]->getTitle() ?>" />
+              <?php endif; ?>
+            <?php endif; ?>
+          <?php endif; ?>
+          <!--/selo-->
+          
+          <p>
+            <!--video ou imagem-->
+            <?php if($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "video"): ?>
+            <iframe width="300" height="246" src="http://www.youtube.com/embed/<?php echo $displays["destaque-principal"][0]->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+            <?php elseif($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "image"): ?>
+            <img src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" />
+            <?php endif; ?>
+            <!--/video ou imagem-->
+            
+            <!--descricao-->    
+            <?php echo $displays['destaque-principal'][0]->getDescription() ?>
+            <!--/descricao-->
+            
+          </p>
+          
+  
+          
+        </div>
+        <?php endif; ?>
+      <?php endif; ?>
+      <!--/destaque-principal---> 
+       
+    <?php endif; ?>  
     </div>
     <!--/container conteudo-->
     
@@ -65,21 +88,6 @@
   <!--/section -->
   
   <div class="divisa top"></div>
-  
-  <!--section -->
-  <section class="filtro escolha row-fluid" style="display: none;">
-    
-    <!--viewer-->
-    <div id="viewer" class="viewer" >
-      <img src="http://midia.cmais.com.br/assets/image/image-14-b/3c7040115466dcdd0a368bb53e0740f55647df82.jpg" alt="Para Colorir - Beto e Bernice">
-      <h2>Nome COMPLETO da Criança / NOME DA Cidade - UF</h2>
-    </div>
-    <!--/viewer-->
-    
-  </section>
-  <!--section-->
-  
-  <div class="divisa escolha" style="display:none;"></div>
   
   <!--/section-->
   <section class="todos-itens ">
@@ -131,13 +139,6 @@
 </nav>
 <?php 
 /*
- 
-<!-- HEADER -->
-<?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))?>
-<!-- /HEADER -->
-
-
-<h1><?php echo $section->getTitle() ?></h1>
 
 <?php
   $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
