@@ -51,8 +51,8 @@
           <!-- selo -->
           <?php if(isset($displays['selo'])): ?>
             <?php if(count($displays['selo']) > 0): ?>
-              <?php if($displays["selo"][0]->retriveImageUrlByImageUsage("original")): ?>
-                <img src="<?php echo $displays["selo"][0]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $displays["selo"][0]->getTitle() ?>" />
+              <?php if($displays["selo"][1]->retriveImageUrlByImageUsage("original")): ?>
+                <img src="<?php echo $displays["selo"][1]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $displays["selo"][1]->getTitle() ?>" />
               <?php endif; ?>
             <?php endif; ?>
           <?php endif; ?>
@@ -73,6 +73,9 @@
             
           </p>
           
+          <div class="box-dicas">
+            box-dicas
+          </div>  
   
           
         </div>
