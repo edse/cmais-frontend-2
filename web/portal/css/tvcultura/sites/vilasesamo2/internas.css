@@ -382,6 +382,8 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .foto-sobre{position:absolute;top: 15px;left: 15px;width:140px;height: 140px;overflow: hidden;text-align: center;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .sombra-amarela{background: #fdea4f;width: 140px;height: 140px;position: absolute;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;}
 .cuidadores .container-cuidadores .col-dir .box-sobre .links{clear: both;overflow: hidden;}
+.cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre{ max-width:300px;max-height:25;position:absolute; }
+.cuidadores .container-cuidadores .col-dir .box-sobre{background: #FFF;border: 1px solid #ccf4e2;border-bottom: none;padding: 5px;position: relative;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;}
 .cuidadores .container-cuidadores .col-dir .box-sobre a{background: #00aa52;color: #ffffff;padding: 6px 9px;font-size: 16px;margin: 5px 3px;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;float: left;}
 .cuidadores .container-cuidadores .col-dir .box-sobre a:hover{background: #fffb49;color:#00aa52;}
 .cuidadores .todos-assets{height:48px;background-image: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-artigo.png');font-size: 25px!important;overflow: hidden;float: right;width: 300px;line-height: 48px;}

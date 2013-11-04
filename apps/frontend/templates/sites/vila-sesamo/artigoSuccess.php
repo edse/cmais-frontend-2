@@ -140,7 +140,9 @@
               <a href="#" title="titulo">auto-conhecimento</a>
               <a href="#" title="titulo">ciência</a>
             </div>
-            <div class="bottom-box-sobre"></div>
+            <div class="bottom-box-sobre">
+              <img src="/portal/images/capaPrograma/vilasesamo2/patterns/box-bottom-sobre.png" />
+            </div>
           </div>
           <!--/tags-->
           
