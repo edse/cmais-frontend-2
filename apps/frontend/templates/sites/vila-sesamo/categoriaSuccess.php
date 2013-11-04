@@ -77,22 +77,28 @@
       <?php endif; ?>
       <!--/destaque-principal--->
       <div class="divisa"></div>
-      <div class="span12">
+      <div class="span12 box-dicas">
         
         <div class="span4">
           <i class="sprite-aspa-esquerda"></i>
           <h2><a href="#">Titulo dica</a></h2>
-          <p>Loren ipsulumLoren ipsulumLoren ipsulumLoren ipsulumLoren ipsulum</p>
+          <p>Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum</p>
           <i class="sprite-aspa-direita"></i>
           <a class="btn" href="http://midia.cmais.com.br/assets/file/original/" title="Baixar" target="_blank">baixar</button>
         </div>
         
         <div class="span4">
-          box 2
+          <a href="#" title="">
+            <img src="" alt="">
+            <p>Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum</p>
+          </a>
         </div>
           
         <div class="span4">
-          box 3
+          <h2>Conheça nossos parciros:</h2>
+          <a href="#">
+            <img src="/portal/images/capaPrograma/vilasesamo2/destaque.png" alt""/>
+          </a>
         </div>  
         
       </div>  
