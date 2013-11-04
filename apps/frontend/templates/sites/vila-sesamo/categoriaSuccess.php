@@ -58,7 +58,7 @@
           <?php endif; ?>
           <!--/selo-->
           
-          <p>
+          
             <!--video ou imagem-->
             <?php if($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "video"): ?>
             <iframe width="300" height="246" src="http://www.youtube.com/embed/<?php echo $displays["destaque-principal"][0]->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
@@ -66,11 +66,10 @@
             <img class="img-destaque" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" />
             <?php endif; ?>
             <!--/video ou imagem-->
-            
+          <p>  
             <!--descricao-->    
             <?php echo $displays['destaque-principal'][0]->getDescription() ?>
             <!--/descricao-->
-            
           </p>
           
           <div class="box-dicas">
