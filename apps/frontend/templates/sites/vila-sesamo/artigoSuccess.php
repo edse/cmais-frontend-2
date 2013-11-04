@@ -77,13 +77,13 @@
             <!--/section-->
             
             <!--footer-->
-            <footer>
+            <div>
               
               <!--compartilhar redes-->
               <?php include_partial_from_folder('sites/vila-sesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
               <!--/compartilhar redes-->
               
-            </footer>
+            </div>
             <!--/footer-->
             
           </article> 
