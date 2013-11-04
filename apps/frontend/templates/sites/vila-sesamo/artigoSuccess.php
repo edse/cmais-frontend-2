@@ -212,7 +212,7 @@
           <!-- /para ler-->
           
           <!-- para brincar junto-->
-          <div class="box-brincarjunto interna">
+          <div class="box-brincarjunto destaques">
             <h2 class="titulo-box">
               <i class="icones-sprite-menu icone-cuidadores"></i>
               Para brincar junto
