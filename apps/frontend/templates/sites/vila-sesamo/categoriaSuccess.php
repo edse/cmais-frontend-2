@@ -18,7 +18,7 @@
   <section class="filtro row-fluid">
     
     <!--container conteudo-->
-    <div class="b-amarelo borda-arredonda pais">
+    <div class="b-amarelo borda-arredonda">
       <h1>
         <?php echo $section->getTitle() ?>
         
