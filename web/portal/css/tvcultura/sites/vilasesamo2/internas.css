@@ -393,7 +393,12 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .col-dir .box-ler .titulo-box,
 .cuidadores .container-cuidadores .col-dir .box-brincarjunto .titulo-box{height: 43px;line-height: 42px;background-color:#fffb49; width:287px;}
 .cuidadores .container-cuidadores .col-dir .icone-cuidadores{margin: 3px 6px;}
- 
+
+.cuidadores .container-cuidadores .destaques .jogos {border-top: 7px solid #02cbff;border-bottom: 7px solid #02cbff;border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;} 
+.cuidadores .container-cuidadores .destaques .jogos a{background: #3aaaec;border-bottom: 2px solid #0191fb;border-top: 2px solid #0191fb;padding: 0;}
+.cuidadores .container-cuidadores .destaques .jogos img {border-bottom: 2px solid #0191fb;}
+
+.cuidadores .container-cuidadores .destaques .texto {white-space: nowrap;text-overflow: ellipsis;overflow: hidden;padding: 0;font-size: 16px;font-family: 'dinmedium',Arial, Helvetica, sans-serif;}
 .cuidadores .todos-assets{height:48px;background-image: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-artigo.png');font-size: 25px!important;overflow: hidden;float: right;width: 300px;line-height: 48px;}
 .cuidadores .todos-assets p{margin:0;}
 .cuidadores .container-cuidadores .col-dir{padding:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat; }
