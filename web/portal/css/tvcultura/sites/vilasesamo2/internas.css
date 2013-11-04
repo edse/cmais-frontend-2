@@ -365,9 +365,10 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .col-esq article .nome{margin-left: 5px!important;float:left; display:block; color: #00AA52!important;}
 .cuidadores .container-cuidadores .col-esq article .divisa{margin:0;}
 .cuidadores .container-cuidadores .col-esq article .redes-artigo{margin: 10px 0;}
-.cuidadores .container-cuidadores .col-esq article .redes-artigo p{margin: 0;float: left;padding: 10px;text-transform: uppercase;}
-.cuidadores .container-cuidadores .col-esq article .redes-artigo .redes{width: 238px;float: right;padding: 10px 0;}
-.cuidadores .container-cuidadores .col-esq article .redes-artigo iframe{width:77px!important;}
+.cuidadores .container-cuidadores .col-esq article .redes-artigo p{margin: 0;float: left;padding: 5px 10px;text-transform: uppercase;}
+.cuidadores .container-cuidadores .col-esq article .redes-artigo .redes{width: 249px;float: right;padding: 10px 0;height: 21px;}
+.cuidadores .container-cuidadores .col-esq article .redes-artigo iframe{width:81px!important;}
+.cuidadores .container-cuidadores .col-esq article section a{color:#00aa52;}
 .cuidadores .todos-assets{height:48px;background-image: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-artigo.png');font-size: 25px!important;overflow: hidden;float: right;width: 300px;line-height: 48px;}
 .cuidadores .todos-assets p{margin:0;}
 .cuidadores .container-cuidadores .col-dir{padding:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat; }

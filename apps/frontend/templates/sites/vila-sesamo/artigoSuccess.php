@@ -48,21 +48,7 @@
               </div>
               
               <!--compartilhar redes-->
-              <div class="redes-artigo redes overflow">
-                
-                <div class="divisa"></div>
-                
-                <p>compartihe este artigo</p>
-                <div class="redes">
-                  <g:plusone size="medium" count="false"></g:plusone>
-                  <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pinterest" style="margin-top:-10px;" /></a>
-                  <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false"></fb:like>
-                  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a> 
-                </div>
-                
-                <div class="divisa clearboth"></div>
-                
-              </div>
+              <?php include_partial_from_folder('sites/vila-sesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
               <!--/compartilhar redes-->
               
             </header>
@@ -86,6 +72,7 @@
               </div>
               <!--/imprimir/baixar-->
               
+              
             </section>
             <!--/section-->
             
@@ -93,14 +80,7 @@
             <footer>
               
               <!--compartilhar redes-->
-              <div class="redes-artigo">
-                <div class="divisa"></div>
-                <p>compartihe este artigo</p>
-                <div class="redes">
-                   redes  
-                </div>
-                <div class="divisa"></div>
-              </div>
+              <?php include_partial_from_folder('sites/vila-sesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
               <!--/compartilhar redes-->
               
             </footer>
