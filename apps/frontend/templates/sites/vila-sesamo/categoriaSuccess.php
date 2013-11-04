@@ -1,3 +1,7 @@
+teste
+<?php 
+/*
+ 
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))?>
 <!-- /HEADER -->
@@ -163,6 +167,8 @@
 <?php endif; ?>
 </div>
 <!--/assets-->
-
+* 
+ */
+?>
 
 
