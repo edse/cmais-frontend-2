@@ -66,7 +66,7 @@
                   <span>Imprimir</span>
                 </a>
                 
-                <a class="option-assets" href="#" title="Baixar">
+                <a class="option-assets baixar" href="#" title="Baixar">
                   <i class="icones-sprite-interna icone-baixar-verde"></i>
                   <span>Baixar</span>
                 </a>
