@@ -103,10 +103,10 @@
               }
             }
           ?>
-          <li class="span4 element <?php echo $assetSection; ?>"> 
+          <li class="span4 element <?php echo $assetSection[0]; ?>"> 
             <a href="#" title="">
               <img src="" alt=""/>
-              <i class="icones-sprite-interna icone-<?php echo $assetSection; ?>-grande"></i>
+              <i class="icones-sprite-interna icone-<?php echo $assetSection[0]; ?>-grande"></i>
               <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/><?php echo $d->getTitle() ?></div>
             </a>
           </li>
