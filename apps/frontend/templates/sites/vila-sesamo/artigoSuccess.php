@@ -212,7 +212,7 @@
           <!-- /para ler-->
           
           <!-- para brincar junto-->
-          <div class="box-brincarjunto destaques">
+          <div class="box-brincarjunto interna">
             <h2 class="titulo-box">
               <i class="icones-sprite-menu icone-cuidadores"></i>
               Para brincar junto
@@ -222,9 +222,10 @@
               <a href="/vila-sesamo/jogos/livro-animado-0" title="">
                 <img src="http://midia.cmais.com.br/assets/image/image-13/0bf1d319befd5fd100aac2c1c42e930127307d50.jpg" alt="Livro Animado">
                 <i class="icones-sprite-interna icone-jogos-pequeno"></i>
-            <div class="texto">
-              <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
-              Livro Animado</div>
+                <div class="texto">
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
+                  Livro Animado
+                </div>
               </a>
             </article>
           </div>
