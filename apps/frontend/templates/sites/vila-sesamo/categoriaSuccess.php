@@ -77,45 +77,22 @@
       <?php endif; ?>
       <!--/destaque-principal--->
       
-      <div class="box-dicas row-fluid pais">
+      <div class="box-dicas row-fluid">
         <div class="divisa"></div>
         
-        <div class="span4 dica">
-          
-          <h2><span class="sprite-aspa-esquerda"></span><a href="#">Nome da Dica</a></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend. Duis vel mauris et nunc posuere vehicula a id arcu. Maecenas malesuada ante ac consequat viverra. Vivamus tempor, nulla quis facilisis ullamcorper, tortor odio elementum eros, sit amet cursus felis elit vel diam. Fusce fringilla, nulla eu luctus lacinia, risus turpis varius orci, vel fringilla sem eros eu diam. Pellentesque sodales cursus elit, ac suscipit eros consectetur nec.
-          Aenean at metus.<span class="sprite-aspa-direita"></span></p>
-          
-          <button type="submit" class="btn">baixar</button>
+        <div class="span4">
+          box 1
         </div>
         
-      <div class="span4 box-select">
-        <a href="#" title=""> <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/escola-pra-cachorro.jpg" alt="thumb do jogo" /> </a>
-        <h2><a>Nome jogo</a></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend.</p>
-      </div>
-      <div class="span4">
-        <p>Conheça nossos parceiros:</p>
-        <a class="publicidade" href="#" title="Publicidade">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner-sesc.png" alt="Sesc" />
-        </a>
-        <a class="publicidade" href="#" title="Publicidade">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner-mapa.png" alt="Mapa do Brincar" />
-        </a>
-        
-        <p>Você também pode escolher o jogo de acordo com as preferências da criança:</p>
-        <div class="btn-group">
-          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
-          <ul class="dropdown-menu">
-            <li><a href="#">categoria 01</a></li>
-            <li><a href="#">categoria 02</a></li>
-            <li><a href="#">categoria 03</a></li>
-            <li><a href="#">categoria 04</a></li>
-          </ul>
+        <div class="span4">
+          box 2
         </div>
-      </div>
-      </div> 
-    </div> 
+          
+        <div class="span4">
+          box 3
+        </div>  
+        
+      </div>  
        
     <?php endif; ?>  
     </div>
