@@ -79,8 +79,12 @@
       <div class="divisa"></div>
       <div class="span12">
         
-        <div class="span4">
-          box 1
+        <div class="span4 dica">
+          <i class="sprite-aspa-esquerda"></i>
+          <h2><a href="#">Titulo dica</a></h2>
+          <p>Loren ipsulumLoren ipsulumLoren ipsulumLoren ipsulumLoren ipsulum</p>
+          <i class="sprite-aspa-direita"></i>
+          <a class="btn" href="http://midia.cmais.com.br/assets/file/original/" title="Baixar" target="_blank">baixar</button>
         </div>
         
         <div class="span4">
