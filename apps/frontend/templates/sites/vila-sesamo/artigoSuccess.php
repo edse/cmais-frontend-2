@@ -247,7 +247,10 @@
             <!--destaque videos-->
             <article class="videos">
               <a href="/vila-sesamo/jogos/livro-animado-0" title="">
-                <img src="http://img.youtube.com/vi/qJRMd5hFQcE/0.jpg" alt="Canção do Garibaldo - Vila Sésamo">
+                <div class="yt-menu">
+                  <img src="http://img.youtube.com/vi/mxHhbk9XUUE/0.jpg" alt="Só eu sou eu - Vila Sésamo">
+                </div>
+                
                 <i class="icones-sprite-interna icone-videos-pequeno"></i>
                 <div class="texto">
                   <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
