@@ -68,6 +68,30 @@ a:hover{text-decoration:underline!important;}
 #content .scroll .seta-scroll { float:right; }
 /* /scroll*/
 
+/* campanhas */
+body.campanhas{background-color:#fee133;}
+.campanhas .b-amarelo{background-color: #feec3c!important;}
+.campanhas .b-amareloescuro{background-color:#fbc227!important;}
+.campanhas .borda-amarela{background-color:#fbc227!important;}
+
+.campanhas .filtro{background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: none;}
+.campanhas .filtro.escolha {background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;}
+.campanhas .filtro h1{background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important; font-size:25px!important;}
+.campanhas .container-campanhas{background: #FFF;border-bottom: 2px solid #fbc227;padding: 20px;}
+.campanhas .container-campanhas iframe{float:right;}
+.campanhas #viewer{width:100%;text-align:center; background:#FFFFFF;border-top: 2px solid #fbc227;}
+.campanhas #viewer h2{background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important; font-size:18px!important;font-family:'dinmedium',Arial, Helvetica, sans-serif;margin: 0;text-align: left;padding-left: 10px;}
+.campanhas .todos-itens #container li{background-color: #feec3c;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;}
+.campanhas .todos-itens li{background:#feec3c;}
+.campanhas .todos-itens #container li a {border-bottom: #fbc227 2px solid;border-top: #fbc227 2px solid;}
+.campanhas .todos-itens li img {border-bottom:none;border-top: none;width: 300px;height: 300px;}
+.campanhas .todos-itens a div{color:#434343; text-transform:uppercase;}
+.campanhas .mais{color:#f1802c;}
+.campanhas .btn-group{width: 300px;float: right;margin-top: 8px; position: absolute;right: 20px;}
+.campanhas .btn-group a{font-size:12px!important; color: #434343!important; text-shadow:none; font-family:'dinmedium',Arial, Helvetica, sans-serif;}
+.campanhas .btn-group a:hover{text-decoration:underline;color: #434343!important;}
+.campanhas .btn-group a span{margin: 7px 0 0 0!important;}
+/* /campanhas */
 
 /* destaque filtro */
 .destaque-filtro { background:#fff; padding:10px 10px 0 10px; }
@@ -436,30 +460,6 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .na-tv .fundo-na-tv{width:550px; height:650px; background:url('/portal/images/capaPrograma/vilasesamo2/personagens/img_natv.png') no-repeat; position:absolute;top:85px; left:10px;z-index: 0}
 /* /na tv */ 
 
-/* campanhas */
-body.campanhas{background-color:#fee133;}
-.campanhas .b-amarelo{background-color: #feec3c!important;}
-.campanhas .b-amareloescuro{background-color:#fbc227!important;}
-.campanhas .borda-amarela{background-color:#fbc227!important;}
-
-.campanhas .filtro{background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: none;}
-.campanhas .filtro.escolha {background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;}
-.campanhas .filtro h1{background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important; font-size:25px!important;}
-.campanhas .container-campanhas{background: #FFF;border-bottom: 2px solid #fbc227;padding: 20px;}
-.campanhas .container-campanhas iframe{float:right;}
-.campanhas #viewer{width:100%;text-align:center; background:#FFFFFF;border-top: 2px solid #fbc227;}
-.campanhas #viewer h2{background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important; font-size:18px!important;font-family:'dinmedium',Arial, Helvetica, sans-serif;margin: 0;text-align: left;padding-left: 10px;}
-.campanhas .todos-itens #container li{background-color: #feec3c;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;}
-.campanhas .todos-itens li{background:#feec3c;}
-.campanhas .todos-itens #container li a {border-bottom: #fbc227 2px solid;border-top: #fbc227 2px solid;}
-.campanhas .todos-itens li img {border-bottom:none;border-top: none;width: 300px;height: 300px;}
-.campanhas .todos-itens a div{color:#434343; text-transform:uppercase;}
-.campanhas .mais{color:#f1802c;}
-.campanhas .btn-group{width: 300px;float: right;margin-top: 8px; position: absolute;right: 20px;}
-.campanhas .btn-group a{font-size:12px!important; color: #434343!important; text-shadow:none; font-family:'dinmedium',Arial, Helvetica, sans-serif;}
-.campanhas .btn-group a:hover{text-decoration:underline;color: #434343!important;}
-.campanhas .btn-group a span{margin: 7px 0 0 0!important;}
-/* /campanhas */
 
 
 
