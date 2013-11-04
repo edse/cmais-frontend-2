@@ -76,9 +76,79 @@
         <?php endif; ?>
       <?php endif; ?>
       <!--/destaque-principal--->
+      <!--destaques-secundarios-->
+  <div>
+    <?php if(isset($displays['dicas'])): ?>
+      <?php if(count($displays['dicas']) > 0): ?>
+        <!--dica 1-->
+        <h2><?php echo $displays['dicas'][0]->getTitle(); ?></h2>
+        <p><?php echo html_entity_decode($displays['dicas'][0]->Asset->AssetContent->render()) ?></p>
+        <?php $download = $displays['dicas'][0]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
+        <?php if(count($download) > 0): ?>
+          <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+            <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
+          <?php endif; ?>
+        <?php endif; ?>
+        <!--/dica 1-->
+      <?php endif; ?>
+    <?php endif; ?> 
+       
+    <?php if(count($displays['artigos']) > 0): ?>
+      <!--artigo-->
+      <?php $preview = $displays['artigos'][0]->Asset->retriveRelatedAssetsByRelationType("Preview") ?>
+      <a href="<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $displays['artigos'][0]->getSlug() ?>" title="<?php echo $displays['artigos'][0]->getTitle() ?>">
+        <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['artigos'][0]->getTitle() ?>" />
+      </a>
+      <h2><a><?php echo $displays['artigos'][0]->getTitle() ?></a></h2>
+      <p><?php echo $displays['artigos'][0]->getDescription() ?></p>
+      <!--/artigo-->
       
+    <?php else: // senão existir artigo, tenta pegar um segundo destaque do bloco "dicas" pra preencher o espaço ?>
+    
+      <?php if(isset($displays['dicas'][1])): ?>2
+        <!--dica 2-->
+        <h2><a href="#"><?php echo $displays['dicas'][1]->getTitle(); ?></a></h2>
+        <p><?php echo html_entity_decode($displays['dicas'][1]->Asset->AssetContent->render()) ?></p>
+        <?php $download = $displays['dicas'][1]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
+        <?php if(count($download) > 0): ?>
+          <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+            <a href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
+          <?php endif; ?>
+        <?php endif; ?>
+        <!--/dica 2-->
+      <?php endif; ?>
+      
+    <?php endif; ?>
+    
+    <?php
+      // Pega o bloco "parceiros" da seção "para os pais"
+      $forParents = Doctrine::getTable('Section')->findOneById(2399);
+      $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($forParents->getId(), "parceiros");
+      if ($block) {
+        $_displays["parceiros"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceiros"
+      }    
+    ?>
+  
+    <?php if(isset($_displays['parceiros']) > 0): ?>
+      <?php if(count($_displays['parceiros']) > 0): ?>
+        <p>Conheça nossos parceiros:</p>
+        <a class="publicidade" href="<?php echo $_displays['parceiros'][0]->retriveUrl() ?>" title="<?php echo $_displays['parceiros'][0]->getTitle() ?>">
+          <img src="<?php echo $_displays['parceiros'][0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $_displays['parceiros'][0]->getTitle() ?>" />
+        </a>
+      <?php endif; ?>
+    <?php endif; ?>
+  </div>
+  <!--/destaque-secundarios-->
+
+<?php else: // senão ela se torna uma categoria comum e pega somente a descrição da seção ?>
+
+<!--destaque-principal-->
+<div>
+  <?php echo $section->getDescription() ?>
+</div>
+<!--/destaque-principal-->
       <div class="box-dicas pais">
-        <div class="divisa">
+        <div class="divisa"></div>
         box-dicas
       </div>  
        
