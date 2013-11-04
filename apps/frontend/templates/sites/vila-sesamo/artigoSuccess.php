@@ -123,7 +123,7 @@
                 <p>Gostou desse artigo? Comente!</p>
               </div>
               
-              <?php include_partial_from_folder('blocks','global/share-2c-close', array('site' => $site, 'uri' => $uri)) ?>
+              <fb:comments href="<?php echo $uri ?>" numposts="3" width="610" publish_feed="true"></fb:comments>
               
             </div>
             <!--/footer-->
