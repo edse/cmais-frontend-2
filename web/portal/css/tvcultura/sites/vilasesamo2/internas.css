@@ -369,6 +369,9 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .col-esq article .redes-artigo .redes{width: 249px;float: right;padding: 10px 0;height: 21px;}
 .cuidadores .container-cuidadores .col-esq article .redes-artigo iframe{width:81px!important;}
 .cuidadores .container-cuidadores .col-esq article section a{color:#00aa52;}
+.cuidadores .container-cuidadores .col-esq .imprimir{float:right;}
+.cuidadores .container-cuidadores .col-esq .option-assets{float:left;}
+.cuidadores .container-cuidadores .col-esq .option-assets span{width: 125;text-transform: uppercase;line-height: 38px;}
 .cuidadores .todos-assets{height:48px;background-image: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-artigo.png');font-size: 25px!important;overflow: hidden;float: right;width: 300px;line-height: 48px;}
 .cuidadores .todos-assets p{margin:0;}
 .cuidadores .container-cuidadores .col-dir{padding:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat; }

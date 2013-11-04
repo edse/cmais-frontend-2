@@ -59,14 +59,14 @@
               <?php echo html_entity_decode($asset->AssetContent->render()) ?>
               
               <!--imprimir/baixar-->
-              <div>
+              <div class="imprimir">
                 <a class="option-assets" href="#" title="Baixar">
-                  <i class="icones-sprite-interna icone-baixar-roxo"></i>
+                  <i class="icones-sprite-interna icone-baixar-verde"></i>
                   <span>Baixar</span>
                 </a>
                 
                 <a class="option-assets" href="#" title="Imprimir" target="_blank">
-                  <i class="icones-sprite-interna icone-imprimir-roxo"></i>
+                  <i class="icones-sprite-interna icone-imprimir-verde"></i>
                   <span>Imprimir</span>
                 </a>
               </div>
