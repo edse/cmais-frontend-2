@@ -88,7 +88,7 @@
               <!--sobre os autores-->
               <h2>
                 <i class="icones-sprite-interna icone-carregar-verde"></i>
-                sobre
+                sobre o autor:
               </h2>
               <article class="sobre-autor">
                 <div class="sombra-amarela"></div>
@@ -131,13 +131,15 @@
           <div class="box-sobre">
             <h2>
               <i class="icones-sprite-interna icone-carregar-verde"></i>
-              sobre
+              sobre...
             </h2>
-            <a href="#" title="titulo">habitos saudáveis</a>
-            <a href="#" title="titulo">comunicação</a>
-            <a href="#" title="titulo">pré-escolar</a>
-            <a href="#" title="titulo">auto-conhecimento</a>
-            <a href="#" title="titulo">ciência</a>
+            <div class="links">
+              <a href="#" title="titulo">habitos saudáveis</a>
+              <a href="#" title="titulo">comunicação</a>
+              <a href="#" title="titulo">pré-escolar</a>
+              <a href="#" title="titulo">auto-conhecimento</a>
+              <a href="#" title="titulo">ciência</a>
+            </div>
             <div class="bottom-box-sobre"></div>
           </div>
           <!--/tags-->
