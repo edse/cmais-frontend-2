@@ -148,7 +148,7 @@
           
           <!-- para ler-->
           <div class="box-ler">
-            <h2>
+            <h2 class="titulo-box">
               <i class="icones-sprite-interna icone-artigo-ve-pequeno"></i>
               Para ler
             </h2>
@@ -204,7 +204,7 @@
           
           <!-- para brincar junto-->
           <div class="box-brincarjunto">
-            <h2>
+            <h2 class="titulo-box">
               <i class="icones-sprite-menu icone-cuidadores"></i>
               Para brincar junto
             </h2>
