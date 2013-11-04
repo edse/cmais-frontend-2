@@ -85,6 +85,29 @@
               <?php include_partial_from_folder('sites/vila-sesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
               <!--/compartilhar redes-->
               
+              <!--sobre os autores-->
+              <h2>
+                <i class="icones-sprite-interna icone-carregar-verde"></i>
+                sobre
+              </h2>
+              <article>
+                <div class="sombra-amarela"></div>
+                <div class="foto-sobre"></div>
+                <h3>Professora Miriam Sousa</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing scelerisque erat, in bibendum diam facilisis sit amet. Suspendisse quis nisi imperdiet, commodo ipsum non, palesuada ante. Donec ultrices aliquet justo urabitur vitae.</p>
+                <a href="#">Contato@profmirian.com.br</a>
+                <a href="#">www.profmiriam.com.br</a>
+              </article>
+              
+              <article>
+                <div class="sombra-amarela"></div>
+                <div class="foto-sobre"></div>
+                <h3>Professora Miriam Sousa</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing scelerisque erat, in bibendum diam facilisis sit amet. Suspendisse quis nisi imperdiet, commodo ipsum non, palesuada ante. Donec ultrices aliquet justo urabitur vitae.</p>
+                <a href="#">Contato@profmirian.com.br</a>
+                <a href="#">www.profmiriam.com.br</a>
+              </article>
+              <!--/sobre os autores-->
             </div>
             <!--/footer-->
             
