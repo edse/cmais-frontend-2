@@ -1,5 +1,5 @@
 body { background:#0172f9; }
-a{text-decoration:underline!important;}
+a:hover{text-decoration:underline!important;}
 .header-bar ul { margin:12px 0 0 0; }
 .header-bar { position:fixed; background: url(/portal/images/capaPrograma/vilasesamo2/pattern-menu-interna.jpg) repeat-x; height:81px; top:48px; width: 100%; max-width:100%; }
 .header-bar .content { max-width:940px; margin:0 auto; }
@@ -367,10 +367,10 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .col-esq article .divisa{margin:0;}
 .cuidadores .container-cuidadores .col-esq article .redes-artigo{margin: 10px 0;}
 .cuidadores .container-cuidadores .col-esq article .redes-artigo p{margin: 0;float: left;padding: 5px 10px;text-transform: uppercase;}
-.cuidadores .container-cuidadores .col-esq article .redes-artigo .redes{width: 252px;float: right;padding: 10px 0;height: 21px;}
+.cuidadores .container-cuidadores .col-esq article .redes-artigo .redes{width: 252px;float: right;padding: 4px 0;height: 21px;}
 .cuidadores .container-cuidadores .col-esq article .redes-artigo iframe{width:81px!important;}
 .cuidadores .container-cuidadores .col-esq article section a{color:#00aa52;font-size:16px;}
-.cuidadores .container-cuidadores .col-esq .imprimir{float:right;width: 250px;}
+.cuidadores .container-cuidadores .col-esq .imprimir{float:right;width: 231px;}
 .cuidadores .container-cuidadores .col-esq .imprimir .baixar{float:right;width: 105px;}
 .cuidadores .container-cuidadores .col-esq .option-assets{float:left;}
 .cuidadores .container-cuidadores .col-esq .option-assets span{width: 125;text-transform: uppercase;line-height: 42px;}
