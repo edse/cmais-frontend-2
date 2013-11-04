@@ -37,7 +37,9 @@
         <article class="span4 <?php echo $assetSection->getSlug() ?>">
           <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="">
             <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
-            <img src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
+            <div class="yt-menu">  
+              <img src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
+            </div>
             <?php else: ?>
             <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
             <?php endif; ?>
