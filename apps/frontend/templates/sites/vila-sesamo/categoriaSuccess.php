@@ -79,7 +79,7 @@
       <div class="divisa"></div>
       <div class="span12">
         
-        <div class="span4 dica">
+        <div class="span4">
           <i class="sprite-aspa-esquerda"></i>
           <h2><a href="#">Titulo dica</a></h2>
           <p>Loren ipsulumLoren ipsulumLoren ipsulumLoren ipsulumLoren ipsulum</p>
