@@ -92,7 +92,9 @@
               </h2>
               <article>
                 <div class="sombra-amarela"></div>
-                <div class="foto-sobre"></div>
+                <div class="foto-sobre">
+                  <img src="http://midia.cmais.com.br/displays/d175b4dffffcee009d8fbfd9d1febcc80f1937c4.jpg" alt="Histórias de Cozinha" name="Histórias de Cozinha">
+                </div>
                 <h3>Professora Miriam Sousa</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing scelerisque erat, in bibendum diam facilisis sit amet. Suspendisse quis nisi imperdiet, commodo ipsum non, palesuada ante. Donec ultrices aliquet justo urabitur vitae.</p>
                 <a href="#">Contato@profmirian.com.br</a>
@@ -101,7 +103,9 @@
               
               <article>
                 <div class="sombra-amarela"></div>
-                <div class="foto-sobre"></div>
+                <div class="foto-sobre">
+                  <img src="http://midia.cmais.com.br/displays/d175b4dffffcee009d8fbfd9d1febcc80f1937c4.jpg" alt="Histórias de Cozinha" name="Histórias de Cozinha">
+                </div>
                 <h3>Professora Miriam Sousa</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing scelerisque erat, in bibendum diam facilisis sit amet. Suspendisse quis nisi imperdiet, commodo ipsum non, palesuada ante. Donec ultrices aliquet justo urabitur vitae.</p>
                 <a href="#">Contato@profmirian.com.br</a>
