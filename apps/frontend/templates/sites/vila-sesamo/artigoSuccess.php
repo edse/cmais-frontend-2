@@ -123,7 +123,7 @@
                 <p>Gostou desse artigo? Comente!</p>
               </div>
               
-              <?php include_partial_from_folder('blocks','global/share-2c-close-w-comment', array('site' => $site, 'uri' => $uri)) ?>
+              <?php include_partial_from_folder('blocks','global/share-2c-close', array('site' => $site, 'uri' => $uri)) ?>
               
             </div>
             <!--/footer-->
