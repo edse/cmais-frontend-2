@@ -76,9 +76,8 @@
         <?php endif; ?>
       <?php endif; ?>
       <!--/destaque-principal--->
-      
+      <div class="divisa"></div>
       <div class="box-dicas row-fluid">
-        <div class="divisa"></div>
         
         <div class="span4">
           box 1
