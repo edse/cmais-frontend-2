@@ -91,7 +91,6 @@
           <li class="span4 element"> 
             <a href="javascript: viewer('<?php echo $d->retriveImageUrlByImageUsage("image-14-b") ?>','<?php echo $d->getTitle() ?>')" title="">
               <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>"/>
-              <i class="sprite-icons-new sprite-icone_atividade"></i>
               <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/><?php echo $d->getTitle() ?></div>
             </a>
           </li>
