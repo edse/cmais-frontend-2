@@ -267,7 +267,7 @@
         <!--/col dir -->
         
         <!--destaques-->
-        <div class="span4">
+        <div class="span4 pull-right banner">
           
           <!--destaque 1 -->
           <a href="#" title="">
@@ -282,7 +282,7 @@
           </a>
           <!--/destaque 2 -->
           
-          <iframe src="//www.facebook.com/plugins/likebox.php?href=<?php echo $uri ?>&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=446708858755935" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:290px;" allowTransparency="true"></iframe>
+          <iframe src="//www.facebook.com/plugins/likebox.php?https://www.facebook.com/tvcultura&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=446708858755935" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:290px;" allowTransparency="true"></iframe>
        
         </div>
         <!--destaques-->
