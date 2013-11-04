@@ -90,7 +90,7 @@
                 <i class="icones-sprite-interna icone-carregar-verde"></i>
                 sobre
               </h2>
-              <article>
+              <article class="sobre-autor">
                 <div class="sombra-amarela"></div>
                 <div class="foto-sobre">
                   <img src="http://midia.cmais.com.br/displays/d175b4dffffcee009d8fbfd9d1febcc80f1937c4.jpg" alt="Histórias de Cozinha" name="Histórias de Cozinha">
@@ -101,7 +101,7 @@
                 <a href="#">www.profmiriam.com.br</a>
               </article>
               
-              <article>
+              <article class="sobre-autor">
                 <div class="sombra-amarela"></div>
                 <div class="foto-sobre">
                   <img src="http://midia.cmais.com.br/displays/d175b4dffffcee009d8fbfd9d1febcc80f1937c4.jpg" alt="Histórias de Cozinha" name="Histórias de Cozinha">
