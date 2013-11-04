@@ -72,15 +72,15 @@
             <!--/descricao-->
           </p>
           
-          <div class="box-dicas">
-            box-dicas
-          </div>  
-  
-          
         </div>
         <?php endif; ?>
       <?php endif; ?>
-      <!--/destaque-principal---> 
+      <!--/destaque-principal--->
+      
+      <div class="box-dicas pais">
+        <div class="divisa">
+        box-dicas
+      </div>  
        
     <?php endif; ?>  
     </div>
