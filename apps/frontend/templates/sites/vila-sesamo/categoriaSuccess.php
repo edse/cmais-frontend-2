@@ -77,7 +77,7 @@
       <?php endif; ?>
       <!--/destaque-principal--->
       <div class="divisa"></div>
-      <div class="span12">
+      <div class="span12 pais">
         
         <div class="span4">
           <i class="sprite-aspa-esquerda"></i>
