@@ -84,7 +84,7 @@
           <h2><a href="#">Titulo dica</a></h2>
           <p>Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum</p>
           <i class="sprite-aspa-direita"></i>
-          <a class="btn" href="http://midia.cmais.com.br/assets/file/original/" title="Baixar" target="_blank">baixar</button>
+          <a class="btn" href="http://midia.cmais.com.br/assets/image/image-13/3c7040115466dcdd0a368bb53e0740f55647df82.jpg" title="Baixar" target="_blank">baixar</a>
         </div>
         
         <div class="span4">
