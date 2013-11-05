@@ -545,7 +545,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques .span6.atividades a { border-color: #7732e5; }
 
 .destaques .videos .yt-menu{height:197px; overflow: hidden;position:relative;}
-.destaques .videos .yt-menu img{max-width: 297px!important; left:0;}
+.destaques .videos .yt-menu img{width: 297px!important; left:0;}
 /* /home*/
 
 
