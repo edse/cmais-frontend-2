@@ -621,7 +621,7 @@ footer .relacionados li.last { margin-right:0; }
 .box-pais .artigo p{height: 40px;}
 .box-pais .tit-artigo,
 .box-pais .parceiros h2{line-height: 16px;margin-bottom: 4px; font-family:'dinmedium',Arial, Helvetica, sans-serif;}
-.box-pais .parceiros h2{color:#737373;}
+.box-pais .parceiros h2{color:#737373;margin-top: 0;text-transform: none;margin-bottom: 10px;}
 .box-pais .parceiros img{width:100%;}
 .box-pais a:hover{color:#434343;} 
 
