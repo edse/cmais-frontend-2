@@ -290,7 +290,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .sprite-menu-ball,
 .sprite-selo { background-image:url(/portal/images/capaPrograma/vilasesamo2/sprite-detalhes.png);} 
 .sprite-aspa-direita{ background-position: 0 0; width: 37px; height: 30px;float:right;margin: -50px 0 10px 0; } 
-.sprite-aspa-esquerda{ background-position: 0 -80px; width: 37px; height: 30px; float:left;} 
+.sprite-aspa-esquerda{ background-position: 0 -80px; width: 37px; height: 30px; float:left;margin-right: 10px;} 
 .sprite-menu-ball{ background-position: 0 -160px; width: 7px; height: 7px; } 
 .sprite-selo{ background-position: 0 -207px; width: 147px; height: 32px; }  
 /*
@@ -613,11 +613,11 @@ footer .relacionados li.last { margin-right:0; }
 /* pais*/
 .box-pais .dica-pai{background: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-box.png') repeat; padding: 10px;}
 .box-pais .dica-pai .btn{font-family:'din-blackregular', Arial, Helvetica, sans-serif;clear: both;width: 100%;padding: 5px 0;font-size: 18px;text-transform: uppercase;color: #737373;}
-.box-pais h2.tit-dicas{font-size: 18px;text-transform: uppercase;line-height: 32px;color: #434343;}
-.box-pais .dica-pai p{color:#434343; font-size:16px;height: 200px;overflow: hidden;margin-bottom: 25px;}
-.box-pais .artigo p{}
-.box-pais .parceiros h2{}
-.box-pais .parceiros img{}
+.box-pais h2{font-size: 18px;text-transform: uppercase;line-height: 32px;color: #434343; white-space: nowrap; overflow: hidden; text-overflow:ellipsis;}
+.box-pais .dica-pai p{height:200px;}
+.box-pais .dica-pai p,
+.box-pais .artigo p{color:#434343; font-size:16px;overflow: hidden;margin-bottom: 25px;}
+.box-pais .parceiros img{width:100%;}
 .box-pais a:hover{color:#434343;}
 
 img.altura{width: 1px!important;height: 38px!important;}
