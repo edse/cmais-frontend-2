@@ -57,9 +57,9 @@
         <?php endif; ?>
         
       <div class="span4 banner" >
-        <a href="/<?php echo $site->getSlug() ?>/incluir-brincando" title="Incluir Brincando" class="sprite-btn-incluir"></a>
-        <a href="/<?php echo $site->getSlug() ?>/habitos-saudaveis" title="Hábitos para uma vida saudável" class="sprite-btn-habitos"></a>
-        <a href="javascript:;" title="O que achou do novo site?" class="sprite-btn-contato"></a>
+        <a href="/<?php echo $site->getSlug() ?>/incluir-brincando" title="Incluir Brincando" class="icone-btns-sprite icone-incluir-brincando"></a>
+        <a href="/<?php echo $site->getSlug() ?>/habitos-saudaveis" title="Hábitos para uma vida saudável" class="icones-btns-sprite icone-habitos-saudaveis"></a>
+        <a href="javascript:;" title="O que achou do novo site?"><i class="icones-form icone-fale-conosco-br"></i> que achou do site novo?</a>
       </div>
     </div>
     <!--destaques-->
