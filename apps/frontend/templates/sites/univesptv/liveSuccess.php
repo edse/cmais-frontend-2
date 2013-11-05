@@ -250,6 +250,8 @@
                     }
                   });
                   
+                  $('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date);
+                  
                 });
               </script>
 

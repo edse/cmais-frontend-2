@@ -236,6 +236,9 @@
           }
         });
       });
+      
+      $('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date);
+      
       // Contador de Caracters
       function limitText (limitField, limitNum, textCounter)
       {
