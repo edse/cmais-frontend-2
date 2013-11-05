@@ -16,7 +16,14 @@
   
   <!--section -->
   <section class="filtro row-fluid pais">
-    teste
+    
+    <!--container conteudo-->
+    <div class="b-amarelo borda-arredonda">
+   
+      <h1>
+        Palavra chave
+      </h1>
+      
   </section>
   <!--/section-->
 
