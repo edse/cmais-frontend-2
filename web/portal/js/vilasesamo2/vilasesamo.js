@@ -81,6 +81,7 @@ $(document).ready(function() {
     $(".pais .icone-cuidadores-abrir").toggleClass("inativo");
     $(".pais .icone-cuidadores-fechar").toggleClass("ativo");
     $('.linha').show();
+    $('.redes').fadeIn();
   });
   
   $('.pais .icone-cuidadores-fechar').click(function() {
