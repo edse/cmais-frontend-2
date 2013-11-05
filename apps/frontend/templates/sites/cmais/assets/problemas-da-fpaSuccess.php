@@ -101,7 +101,7 @@ $(window).load(function() {
             <h3 class="tit-pagina grid3">Problemas da Fundação Padre Anchieta</h3>
             <div id="esquerda" class="grid2">
               
-              <div class="box-interna grid2" style="margin-bottom:20px;">
+              <div class="box-interna grid2" style="margin-bottom:25px;">
                 
                 <a href="#" class="txt-16"><?php echo $asset->getDescription() ?></a>
                 <p><?php echo $asset->AssetImageGallery->getText()?></p>
@@ -111,7 +111,7 @@ $(window).load(function() {
               </div>
 
               <!-- GALERIA DE FOTOS -->
-              <div class="container galeriaNew" style="float: left; margin-bottom: 10px; width: 640px;">
+              <div class="container galeriaNew" style="float: left; margin-bottom: 10px; width: 640px; margin-top: 20px;">
                 <div id="featured">
                 <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
                 <?php if(count($related)>0): ?>
