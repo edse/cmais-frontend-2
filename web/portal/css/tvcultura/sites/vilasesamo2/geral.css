@@ -117,7 +117,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* icones */
 
 /* home */
-.icones-btns-sprite{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-btn-home.png) no-repeat top left;}
+.icones-btns-sprite{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-btn-sprite.png) no-repeat top left;}
 .icone-habitos-saudaveis{ background-position: 0 0; width: 300px; height: 100px; } 
 .icone-habitos-saudaveis:hover{ background-position: 0 -150px; width: 300px; height: 100px; } 
 .icone-incluir-brincando{ background-position: 0 -300px; width: 300px; height: 100px; } 
