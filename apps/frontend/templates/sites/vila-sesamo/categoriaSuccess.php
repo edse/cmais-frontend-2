@@ -104,7 +104,7 @@
         <!--/box-dica-->
         
         <!--box artigo-->
-        <div class="span4">
+        <div class="span4 artigo">
           <a href="#" title="teste">
             <img src="http://midia.cmais.com.br/assets/image/image-13/3c7040115466dcdd0a368bb53e0740f55647df82.jpg" alt""/>
             <p>Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum</p>
@@ -113,7 +113,7 @@
         <!--/box artigo-->
         
         <!--box-parceiros-->  
-        <div class="span4">
+        <div class="span4 parceiros">
           <h2>Conheça nossos parceiros:</h2>
           <a href="#">
             <img src="/portal/images/capaPrograma/vilasesamo2/destaque.png" alt""/>
