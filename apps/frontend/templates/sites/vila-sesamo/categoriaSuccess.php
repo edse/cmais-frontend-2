@@ -76,31 +76,50 @@
         <?php endif; ?>
       <?php endif; ?>
       <!--/destaque-principal--->
-      <div class="divisa"></div>
-      <div class="span12 pais">
-        <div class="divisa"></div> 
-        <div class="span4">
-          <i class="sprite-aspa-esquerda"></i>
-          <h2><a href="#">Titulo dica</a></h2>
-          <p>Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum</p>
-          <i class="sprite-aspa-direita"></i>
-          <a class="btn" href="http://midia.cmais.com.br/assets/image/image-13/3c7040115466dcdd0a368bb53e0740f55647df82.jpg" title="Baixar" target="_blank">baixar</a>
-        </div>
+
+      <div class="span12 row-fluid">
+        <div class="divisa"></div>
         
+        <!--box-dica--> 
+        <div class="span4">
+          
+          <!--link artigo dica-->
+          <a href="#" title="">
+            <h2>
+              <i class="sprite-aspa-esquerda"></i>
+              Titulo dica
+            </h2>
+            <p>
+              Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum
+              <i class="sprite-aspa-direita"></i>
+            </p>
+          </a>
+          <!--link artigo dica-->
+          
+          <!--botao baixa artigo-->
+          <a class="btn" href="#" title="Baixar" target="_blank">baixar</a>
+          <!--botao baixa artigo-->
+          
+        </div>
+        <!--/box-dica-->
+        
+        <!--box artigo-->
         <div class="span4">
           <a href="#" title="teste">
-            <img src="/portal/images/capaPrograma/vilasesamo2/destaque.png" alt""/>
+            <img src="http://midia.cmais.com.br/assets/image/image-13/3c7040115466dcdd0a368bb53e0740f55647df82.jpg" alt""/>
             <p>Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum</p>
           </a>
         </div>
-          
+        <!--/box artigo-->
+        
+        <!--box-parceiros-->  
         <div class="span4">
-          <h2>Conheça nossos parciros:</h2>
+          <h2>Conheça nossos parceiros:</h2>
           <a href="#">
             <img src="/portal/images/capaPrograma/vilasesamo2/destaque.png" alt""/>
           </a>
         </div>  
-        
+        <!--/box-parceiros-->
       </div>  
        
     <?php endif; ?>  
