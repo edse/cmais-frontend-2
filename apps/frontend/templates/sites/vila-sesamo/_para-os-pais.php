@@ -1,10 +1,78 @@
+  <section class="pais">
+    <span class="divisa"></span>
+    <h2><?php echo $forParents->getTitle() ?> <i class="icones-setas icone-cuidadores-abrir"></i></h2>
+    <div class="content span12 row-fluid">
+      
+      <div class="redes">
+        <p>Compartilhe esta brincadeira:</p>
+        <g:plusone size="medium" count="false"></g:plusone>
+        <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pinterest" style="margin-top:-10px;" /></a>
+        <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false"></fb:like>
+        <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
+      </div>
+      <!--box-pais -->
+      <div class="row-fluid span12 box-pais">
+        
+        
+        <!--box-dica--> 
+        <div class="span4 dica-pai">
+          
+          <!--link artigo dica-->
+          <a href="#" title="">
+            <h2 class="tit-dicas">
+              <i class="sprite-aspa-esquerda"></i>
+              Titulo dica
+            </h2>
+            <p class="ellipsis">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend. Duis vel mauris et nunc posuere vehicula a id arcu. Maecenas malesuada ante ac consequat viverra. Vivamus tempor, nulla quis facilisis ullamcorper, tortor odio elementum eros, sit amet cursus felis elit vel diam. Fusce fringilla, nulla eu luctus lacinia, risus turpis varius orci, vel fringilla sem eros eu diam. Pellen tesque sodales cursus elit, acos uscipit eros consectetur nec.  Aenean at metus.
+            </p>
+            <i class="sprite-aspa-direita"></i>
+          </a>
+          <!--link artigo dica-->
+          
+          <!--botao baixa artigo-->
+          <a class="btn" href="#" title="Baixar" target="_blank">baixar</a>
+          <!--botao baixa artigo-->
+          
+        </div>
+        <!--/box-dica-->
+        
+        <!--box artigo-->
+        <div class="span4 artigo">
+          <a href="#" title="teste">
+            <img src="http://midia.cmais.com.br/assets/image/image-13/3c7040115466dcdd0a368bb53e0740f55647df82.jpg" alt""/>
+            <h2 class="tit-artigo">Nome da Artigo Nome da Artigo</h2> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in commodo posuere Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in commodo posuere</p>
+          </a>
+        </div>
+        <!--/box artigo-->
+        
+        <!--box-parceiros-->  
+        <div class="span4 parceiros">
+          <h2>Conheça nossos parceiros:</h2>
+          <a href="#">
+            <img src="/portal/images/capaPrograma/vilasesamo2/destaque.png" alt""/>
+          </a>
+        </div>  
+        <!--/box-parceiros-->
+      </div>
+      <!--/box-pais-->
+      
+      <div class="fechar-toogle ativo">
+        <i class="icones-setas icone-cuidadores-fechar"></i>
+      </div>
+    </div>
+    
+    
+    <span class="linha"></span>
+  </section>
   <?php
     /*
      * PARA OS PAIS
      * A prioridade é pegar o "Asset relacionado", Senão...
      * Se o asset chamado pertencer a uma categoria especial (seção filha de "categorias" e marcada como "is homepage") as dicas e artigos serão destaques dos blocos "dicas" e "artigos", respectivamente, da seção dessa categoria.
      * Senão busca assets com semelhança de tags
-     */
+     
     if(isset($asset))
       $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Asset Relacionado");
     
@@ -267,3 +335,5 @@
     <span class="linha"></span>
   </section>
   <?php endif; ?>
+     * 
+     */ ?>
