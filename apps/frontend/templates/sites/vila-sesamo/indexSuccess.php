@@ -107,7 +107,7 @@ $('#carrossel-p').responsiveCarousel({
 //};
 
 $('.inner.personagens a').mouseenter(function(){
-  $('img').animate({top:-70, easing:"swing"},'fast');
+  $(this).find('img').animate({top:-70, easing:"swing"},'fast');
 });
 $('.inner.personagens a').mouseleave(function(){
   $(this).find('img').stop();
