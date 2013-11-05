@@ -5,6 +5,7 @@
 
 <script>
   $("body").addClass("interna campanhas");
+  $('.ellipsis').dotdotdot();
 </script>
 
 <!-- HEADER -->

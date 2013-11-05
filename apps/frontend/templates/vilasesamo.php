@@ -93,7 +93,7 @@
      
      //ellipsis
       
-      $('.ellipsis').dotdotdot();
+      
        
       </script>
       
