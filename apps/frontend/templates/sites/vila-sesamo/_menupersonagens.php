@@ -13,12 +13,14 @@
             <div class="slider-mask">
               <ul class="slider-target">
                 <li>
-                  <a class="nome" href="/vilasesamo2/personagens/bel" title="Bel">
-                    <div class="inner personagens bel">
-                      <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="Personagem" />
-                    </div>
-                    Bel
-                  </a>
+                  <div class="inner personagens bel">
+                    <a class="nome" href="/vilasesamo2/personagens/bel" title="Bel">
+                      <div class="inner personagens bel">
+                        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="Personagem" />
+                      </div>
+                      Bel
+                    </a>
+                  </div>
                 </li>
                 <li>
                   <div class="inner personagens beto">

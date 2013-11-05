@@ -106,11 +106,10 @@ $('#carrossel-p').responsiveCarousel({
 
 //};
 
-$('.inner.personagens').mouseenter(function(){
-  alert('entrei');
+$('.inner.personagens a').mouseenter(function(){
   $('img').animate({top:-70, easing:"swing"},'fast');
 });
-$('.inner.personagens').mouseleave(function(){
+$('.inner.personagens a').mouseleave(function(){
   $(this).find('img').stop();
   $(this).find('img').animate({top:0, easing:"swing"},'fast');  
 });
