@@ -194,9 +194,9 @@
             
             <!--nav sites Vila Sesamo-->
             <nav class="span12" title="Sites Vila Sésamo" aria-disabled="true">
-              <a href="/<?php echo $site->getSlug(); ?>/jogos" class="col-esq" title="Jogos" target="_self">Jogos</a>
-              <a href="/<?php echo $site->getSlug(); ?>/videos" class="col-central" title="Jogos" target="_self"><span class="sprite-destalhe-amarelo2"></span>Vídeos</a>
-              <a href="/<?php echo $site->getSlug(); ?>/atividades" class="col-dir" title="Jogos" target="_self"><span class="sprite-destalhe-amarelo1"></span>Atividades</a>
+              <a href="/vilasesamo/jogos" class="col-esq" title="Jogos" target="_self">Jogos</a>
+              <a href="/vilasesamo/videos" class="col-central" title="Jogos" target="_self"><span class="sprite-destalhe-amarelo2"></span>Vídeos</a>
+              <a href="/vilasesamo/atividades" class="col-dir" title="Jogos" target="_self"><span class="sprite-destalhe-amarelo1"></span>Atividades</a>
             </nav>
             <!--nav sites Vila Sesamo-->
             
@@ -205,28 +205,28 @@
               <h3>Personagens:</h3>
               <ul>
                 <li>
-                  <a href="/<?php echo $site->getSlug(); ?>/personagens/garibaldo" title="Garibaldo" target="_self">Garibaldo,</a>
+                  <a href="/vilasesamo/personagens/garibaldo" title="Garibaldo" target="_self">Garibaldo,</a>
                 </li>
                 <li>
-                  <a href="/<?php echo $site->getSlug(); ?>/personagens/bel" title="Bel" target="_self">Bel,</a>
+                  <a href="/vilasesamo/personagens/bel" title="Bel" target="_self">Bel,</a>
                 </li>
                 <li>
-                  <a href="/<?php echo $site->getSlug(); ?>/personagens/elmo" title="Elmo" target="_self">Elmo,</a>
+                  <a href="/vilasesamo/personagens/elmo" title="Elmo" target="_self">Elmo,</a>
                 </li>
                 <li>
-                  <a href="/<?php echo $site->getSlug(); ?>/personagens/grover" title="Grover" target="_self">Grover,</a>
+                  <a href="/vilasesamo/personagens/grover" title="Grover" target="_self">Grover,</a>
                 </li>
                 <li>
-                  <a href="/<?php echo $site->getSlug(); ?>/personagens/beto" title="Beto" target="_self">Beto,</a>
+                  <a href="/vilasesamo/personagens/beto" title="Beto" target="_self">Beto,</a>
                 </li>
                 <li>
-                  <a href="/<?php echo $site->getSlug(); ?>/personagens/enio" title="Ênio" target="_self">Ênio,</a>
+                  <a href="/vilasesamo/personagens/enio" title="Ênio" target="_self">Ênio,</a>
                 </li>
                 <li>
-                  <a href="/<?php echo $site->getSlug(); ?>/personagens/comecome" title="Come-Come" target="_self">Come-Come,</a>
+                  <a href="/vilasesamo/personagens/comecome" title="Come-Come" target="_self">Come-Come,</a>
                 </li>
                 <li>
-                  <a href="/<?php echo $site->getSlug(); ?>/personagens/zoe" title="Zoe" target="_self">Zoe</a>
+                  <a href="/vilasesamo/personagens/zoe" title="Zoe" target="_self">Zoe</a>
                 </li>
               </ul>
             </nav>
@@ -234,9 +234,9 @@
             
             <!--nav-->
             <nav class="span12" aria-disabled="true">
-              <a href="/<?php echo $site->getSlug(); ?>/cuidadores" class="col-esq" title="">Cuidadores</a>
-              <a href="/<?php echo $site->getSlug(); ?>/na-tv" class="col-central" title=""><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
-              <!--a href="/vilasesamo2/atividades" class="col-dir" title=""><span class="sprite-destalhe-amarelo1"></span>História</a-->
+              <a href="/vilasesamo/cuidadores" class="col-esq" title="">Cuidadores</a>
+              <a href="/vilasesamo/na-tv" class="col-central" title=""><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
+              <!--a href="/vilasesamo2/atividades" class="col-dir" title=""><span class="sprite-destalhe-amarelo1"></span>História</a>
             </nav>
             <!--/nav-->
                   
