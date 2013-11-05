@@ -1,6 +1,7 @@
+
   <section class="pais">
     <span class="divisa"></span>
-    <h2><?php echo $forParents->getTitle() ?> <i class="icones-setas icone-cuidadores-abrir"></i></h2>
+    <h2>Cuidadores <i class="icones-setas icone-cuidadores-abrir"></i></h2>
     <div class="content span12 row-fluid">
       
       <div class="redes">
