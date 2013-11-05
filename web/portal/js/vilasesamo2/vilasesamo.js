@@ -86,7 +86,7 @@ $(document).ready(function() {
   $('.pais .icone-cuidadores-fechar').click(function() {
     $('.pais .content').stop().slideToggle('fast');
     $(".pais .icone-cuidadores-abrir").toggleClass("inativo");
-    $('.linha').hide();
+    $('.linha, .pais .redes').hide();
     if($('.icone-cat-abrir').hasClass('icone-cat-fechar')){
       $('.icone-cat-abrir').toggleClass('icone-cat-fechar');  
     }
