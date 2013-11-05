@@ -611,7 +611,8 @@ footer .relacionados li.last { margin-right:0; }
 /* /footer*/
 
 /* pais*/
-.box-pais{padding: 30px 10px;}
+.box-pais{padding: 30px 0px;}
+.box-pais .span4{margin:5px;}
 .box-pais .dica-pai{background: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-box.png') repeat; padding: 10px;}
 .box-pais .dica-pai .btn{font-family:'din-blackregular', Arial, Helvetica, sans-serif;clear: both;width: 100%;padding: 5px 0;font-size: 18px;text-transform: uppercase;color: #737373;}
 .box-pais h2{font-size: 18px;text-transform: uppercase;line-height: 32px;color: #434343; white-space: nowrap; overflow: hidden; text-overflow:ellipsis;}
@@ -688,7 +689,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 }
 .pais .btn .caret { position:absolute; top:-5px; right:10px; border:none; } 
 .pais .publicidade {margin: 20px 0 20px 0; display: block; }
-.pais .row-fluid .span4 {  width: 31%; float:left;}
+.pais .row-fluid .span4 {  width: 32%; float:left;}
 .pais .publicidade p { font-family:Arial, Helvetica, sans-serif; font-size:12px; text-transform:uppercase; color:#737373; float:right; }
 .pais .sprite-seta-up,
 .pais .sprite-seta-down { position:absolute; top:-10px; right:0;  cursor:pointer; }
