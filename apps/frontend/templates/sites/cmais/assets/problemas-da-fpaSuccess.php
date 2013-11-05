@@ -111,7 +111,7 @@ $(window).load(function() {
               </div>
 
               <!-- GALERIA DE FOTOS -->
-              <div class="container galeriaNew" style="float: left; margin-bottom: 10px; width: 640px;">
+              <div class="container galeriaNew" style="float: left; margin-bottom: 10px; width: 640px; margin-top: 20px;">
                 <div id="featured">
                 <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
                 <?php if(count($related)>0): ?>
