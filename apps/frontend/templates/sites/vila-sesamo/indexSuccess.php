@@ -107,6 +107,7 @@ $('#carrossel-p').responsiveCarousel({
 //};
 
 $('.inner.personagens').mouseenter(function(){
+  alert('entrei');
   $(this).find('img').animate({top:-70, easing:"swing"},'fast');
 });
 $('.inner.personagens').mouseleave(function(){
