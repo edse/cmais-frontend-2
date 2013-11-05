@@ -8,3 +8,15 @@
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
+
+<!--content-->
+<div id="content">
+  
+  <!--section -->
+  <section class="filtro row-fluid pais">
+    teste
+  </section>
+  <!--/section-->
+
+</div>
+<!--/div-->  
