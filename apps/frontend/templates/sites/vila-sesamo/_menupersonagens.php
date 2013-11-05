@@ -13,16 +13,16 @@
             <div class="slider-mask">
               <ul class="slider-target">
                 <li>
-                  <div class="inner personagens bel">
-                    <a href="/vilasesamo2/personagens/bel" title="Bel" class="btn-bel" role="presentation" aria-hidden="true">
+                  <a class="nome" href="/vilasesamo2/personagens/bel" title="Bel">
+                    <div class="inner personagens bel">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="Personagem" />
-                    </a>
-                  </div>
-                  <a class="nome" href="/vilasesamo2/personagens/bel" title="Bel">Bel</a>
+                    </div>
+                    Bel
+                  </a>
                 </li>
                 <li>
                   <div class="inner personagens beto">
-                    <a href="/vilasesamo2/personagens/beto" title="Beto" class="btn-beto" role="presentation" aria-hidden="true">
+                    <a href="/<?php echo $site->getSlug(); ?>/personagens/beto" title="Beto" class="btn-beto" role="presentation" aria-hidden="true">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/beto_personagem.png" alt="Personagem" />
                     </a>
                   </div>
