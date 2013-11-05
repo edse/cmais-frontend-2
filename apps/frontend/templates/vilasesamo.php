@@ -139,8 +139,8 @@
             <!--ul.nav-->
             
             <!--form-->
-            <form class="form-search">
-              <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';" title="Encontre no site">
+            <form class="form-search" action="/busca" method="get">
+              <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';" title="Encontre no site" name="term">
               <button type="submit" class="icones-sprite-menu icone-busca" title="buscar no site vila sesamo"></button>
             </form>
             <!--/form-->
