@@ -78,7 +78,7 @@
       <!--/destaque-principal--->
       <div class="divisa"></div>
       <div class="span12 pais">
-        
+        <div class="divisa"></div> 
         <div class="span4">
           <i class="sprite-aspa-esquerda"></i>
           <h2><a href="#">Titulo dica</a></h2>
@@ -88,7 +88,7 @@
         </div>
         
         <div class="span4">
-          <a href="#" title="">
+          <a href="#" title="teste">
             <img src="" alt="">
             <p>Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum</p>
           </a>
