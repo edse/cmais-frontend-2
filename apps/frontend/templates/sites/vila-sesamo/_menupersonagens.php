@@ -16,8 +16,9 @@
                   <div class="inner personagens bel">
                     <a class="nome" href="/vilasesamo2/personagens/bel" title="Bel">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="Personagem" />
-                      <span>Bel</span>
+                      
                     </a>
+                    <span class="nome">Bel</span>
                   </div>
                 </li>
                 <li>
