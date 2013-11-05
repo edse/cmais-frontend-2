@@ -3,10 +3,7 @@
 
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
-<script>
-  $("body").addClass("interna campanhas");
-  $('.ellipsis').dotdotdot();
-</script>
+
 
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -181,6 +178,11 @@
 <nav id="page_nav">
   <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-lr-grande"></i></a>
 </nav>
+
+<script>
+  $("body").addClass("interna campanhas");
+  $('.ellipsis').dotdotdot();
+</script>
 <?php 
 /*
 
