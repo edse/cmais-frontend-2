@@ -119,9 +119,9 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* home */
 .banner .acha{font-family:'dinmedium',Arial, Helvetica, sans-serif;font-size: 18px;color: #434343;text-transform: uppercase;line-height: 30px;}
 .icones-btns-sprite{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-btn-sprite.png) no-repeat top left;}
-.icone-habitos-saudaveis{ background-position: 0 0; width: 300px; height: 100px; display:block; } 
+.icone-habitos-saudaveis{ background-position: 0 0; width: 300px; height: 100px; display:block; margin-bottom:10px; } 
 .icone-habitos-saudaveis:hover{ background-position: 0 -150px; width: 300px; height: 100px; display:block;} 
-.icone-incluir-brincando{ background-position: 0 -300px; width: 300px; height: 100px;  display:block;} 
+.icone-incluir-brincando{ background-position: 0 -300px; width: 300px; height: 100px;  display:block; margin-bottom:10px;} 
 .icone-incluir-brincando:hover{ background-position: 0 -450px; width: 300px; height: 100px; display:block; } 
 
 /* topo site */
