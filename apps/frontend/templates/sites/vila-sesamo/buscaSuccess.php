@@ -24,6 +24,8 @@
         Palavra chave
       </h1>
       
+      <!--container-->
+      <div class="container-busca">
           <script type="text/javascript">
             (function() {
               var cx = '005232987476052626260:gkqgz9ihn4w';
@@ -37,12 +39,6 @@
             })();
           </script>
           <gcse:searchresults-only>Buscando...</gcse:searchresults-only>
-         </div>      
-      
-      
-      <!--container-->
-      <div class="container-busca">
-        teste
       </div>
       <!--container-->
   </section>
