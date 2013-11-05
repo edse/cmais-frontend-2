@@ -15,7 +15,7 @@
 <div id="content">
   
   <!--section -->
-  <section class="filtro row-fluid">
+  <section class="filtro row-fluid pais">
     
     <!--container conteudo-->
     <div class="b-amarelo borda-arredonda">
