@@ -169,8 +169,7 @@ body.campanhas{background-color:#fee133!important;}
 /* jogos */
 
 /* videos*/
-.videos .yt-menu{height:197px; overflow: hidden;position:relative;}
-.videos .yt-menu img{max-width: 297px; left:0;}
+
 .interna.videos { background:#f36701; }
 .interna.videos .filtro .span10 { border-left: 2px solid #f77400; }
 .interna.videos .yt-destaque{width:350px; height:350px; display:block; overflow: hidden;border:#FFFFFF 2px solid;}
