@@ -105,7 +105,7 @@
         <div class="span4 artigo">
           <a href="#" title="teste">
             <img src="http://midia.cmais.com.br/assets/image/image-13/3c7040115466dcdd0a368bb53e0740f55647df82.jpg" alt""/>
-            <h2>Nome da Artigo Nome da Artigo</h2> 
+            <h2 class="tit-artigo">Nome da Artigo Nome da Artigo</h2> 
             <p class="ellipsis">Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum</p>
           </a>
         </div>

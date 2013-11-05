@@ -614,9 +614,10 @@ footer .relacionados li.last { margin-right:0; }
 .box-pais .dica-pai{background: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-box.png') repeat; padding: 10px;}
 .box-pais .dica-pai .btn{font-family:'din-blackregular', Arial, Helvetica, sans-serif;clear: both;width: 100%;padding: 5px 0;font-size: 18px;text-transform: uppercase;color: #737373;}
 .box-pais h2{font-size: 18px;text-transform: uppercase;line-height: 32px;color: #434343; white-space: nowrap; overflow: hidden; text-overflow:ellipsis;}
-.box-pais .dica-pai p{height:200px;}
+.box-pais .dica-pai p{height:217px;}
 .box-pais .dica-pai p,
 .box-pais .artigo p{color:#434343; font-size:16px;overflow: hidden;margin-bottom: 25px;}
+.box-pais .tit-artigo{line-height: 16px;margin-bottom: 4px; font-family:'dinmedium',Arial, Helvetica, sans-serif;}
 .box-pais .parceiros img{width:100%;}
 .box-pais a:hover{color:#434343;} 
 
