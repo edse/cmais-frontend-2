@@ -25,7 +25,7 @@
       </h1>
       
       <!--container-->
-      <div class="container-campanhas">
+      <div class="container-busca">
         teste
       </div>
       <!--container-->
