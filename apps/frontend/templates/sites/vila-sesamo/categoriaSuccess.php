@@ -89,7 +89,7 @@
         
         <div class="span4">
           <a href="#" title="teste">
-            <img src="" alt="">
+            <img src="/portal/images/capaPrograma/vilasesamo2/destaque.png" alt""/>
             <p>Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum</p>
           </a>
         </div>
