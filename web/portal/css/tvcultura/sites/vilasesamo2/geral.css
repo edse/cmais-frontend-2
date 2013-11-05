@@ -619,9 +619,6 @@ img.altura{width: 1px!important;height: 38px!important;}
 .pais p{text-transform:uppercase;}
 .pais .content{display: block; padding: 20px 10px; background:#ffe303!important;padding:0;}
 .pais .content .span4{margin-top:0px;}
-.pais h2 a,
-.pais h2 {color:#434343; margin:10px; font-size: 18px; font-weight: normal; line-height: 42px; text-transform: uppercase;}
-.pais h2 { font-size: 25px; }
 .pais .redes { position:absolute; top:25px; right:0;}
 .pais .redes p { float:left; margin-right:10px; text-transform:uppercase; }
 .pais .content { background:#fee133; margin-left:0; }
