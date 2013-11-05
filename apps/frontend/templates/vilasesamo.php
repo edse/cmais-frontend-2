@@ -171,7 +171,7 @@
           <!--logos-->
           <ul class="logos">
             <li class="col-esq">
-              <a href="<?php echo $site->retriveUrl(); ?>" title="Site Vila Sésamo" target="_self">
+              <a href="http://cmais.com.br/vilasesamo" title="Site Vila Sésamo" target="_self">
                 <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="" />
               </a>
             </li>
