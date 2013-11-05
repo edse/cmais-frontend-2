@@ -101,7 +101,7 @@ $(window).load(function() {
             <h3 class="tit-pagina grid3">Problemas da Fundação Padre Anchieta</h3>
             <div id="esquerda" class="grid2">
               
-              <div class="box-interna grid2" style="margin-bottom:20px;">
+              <div class="box-interna grid2" style="margin-bottom:25px;">
                 
                 <a href="#" class="txt-16"><?php echo $asset->getDescription() ?></a>
                 <p><?php echo $asset->AssetImageGallery->getText()?></p>
