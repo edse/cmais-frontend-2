@@ -17,6 +17,7 @@
     
 
     <script src="http://cmais.com.br/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/js/dotdotdot-1.6.7/jquery.dotdotdot.min.js" type="text/javascript"></script>
 
      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
      <!--[if lt IE 9]>
@@ -88,9 +89,14 @@
           $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">')
         }
       }
-      */ 
+      */
+     
+     //ellipsis
+      
+      $('.ellipsis').dotdotdot();
+       
       </script>
-
+      
   </head>
   <body>
     <!-- header -->

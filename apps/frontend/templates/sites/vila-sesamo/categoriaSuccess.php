@@ -89,7 +89,7 @@
               <i class="sprite-aspa-esquerda"></i>
               Titulo dica
             </h2>
-            <p>
+            <p class="ellipsis">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend. Duis vel mauris et nunc posuere vehicula a id arcu. Maecenas malesuada ante ac consequat viverra. Vivamus tempor, nulla quis facilisis ullamcorper, tortor odio elementum eros, sit amet cursus felis elit vel diam. Fusce fringilla, nulla eu luctus lacinia, risus turpis varius orci, vel fringilla sem eros eu diam. Pellen tesque sodales cursus elit, acos uscipit eros consectetur nec.  Aenean at metus.
             </p>
             <i class="sprite-aspa-direita"></i>
@@ -108,7 +108,7 @@
           <a href="#" title="teste">
             <img src="http://midia.cmais.com.br/assets/image/image-13/3c7040115466dcdd0a368bb53e0740f55647df82.jpg" alt""/>
             <h2>Nome da Artigo Nome da Artigo</h2> 
-            <p>Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum</p>
+            <p class="ellipsis">Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum</p>
           </a>
         </div>
         <!--/box artigo-->
