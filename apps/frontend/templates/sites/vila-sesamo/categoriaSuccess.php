@@ -85,12 +85,12 @@
           
           <!--link artigo dica-->
           <a href="#" title="">
-            <h2>
+            <h2 class="tit-dicas">
               <i class="sprite-aspa-esquerda"></i>
               Titulo dica
             </h2>
             <p>
-              Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend. Duis vel mauris et nunc posuere vehicula a id arcu. Maecenas malesuada ante ac consequat viverra. Vivamus tempor, nulla quis facilisis ullamcorper, tortor odio elementum eros, sit amet cursus felis elit vel diam. Fusce fringilla, nulla eu luctus lacinia, risus turpis varius orci, vel fringilla sem eros eu diam. Pellen tesque sodales cursus elit, acos uscipit eros consectetur nec.  Aenean at metus.
               <i class="sprite-aspa-direita"></i>
             </p>
           </a>
