@@ -79,7 +79,7 @@
       })();
     </script>
     
-    <meta name="viewport" content="width=device-width, initial-scale=0.7, minimum-scale=0.7, maximum-scale=0.7, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <script>
     /*
       window.onload = function() { 
@@ -125,16 +125,16 @@
             <ul class="nav">
               <li>
                 <span class="icones-sprite-menu icone-cuidadores"></span>
-                <a class="btn-cuidadores-topo" href="/vilasesamo2/paraospais" title="Cuidadores" target="_blank">Cuidadores</a>
+                <a class="btn-cuidadores-topo" href="/vilasesamo/cuidadores" title="Cuidadores" target="_blank">Cuidadores</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>
-                <a href="/vilasesamo2/natv" title="Na TV" target="_blank">Na TV</a>
+                <a href="/vilasesamo/na-tv" title="Na TV" target="_blank">Na TV</a>
                 <span class="sprite-menu-ball"></span>
               </li>
-              <li>
+              <!--li>
                 <a href="/vilasesamo2/historia" title="História" target="_blank">História</a>
-              </li>            
+              </li-->            
             </ul>
             <!--ul.nav-->
             
