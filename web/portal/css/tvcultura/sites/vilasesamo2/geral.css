@@ -618,7 +618,7 @@ footer .relacionados li.last { margin-right:0; }
 .box-pais .dica-pai p,
 .box-pais .artigo p{color:#434343; font-size:16px;overflow: hidden;margin-bottom: 25px;}
 .box-pais .parceiros img{width:100%;}
-.box-pais a:hover{color:#434343;}
+.box-pais a:hover{color:#434343;} 
 
 img.altura{width: 1px!important;height: 38px!important;}
 #content .pais { background:#feec3c; margin:0 auto !important; overflow:hidden; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
