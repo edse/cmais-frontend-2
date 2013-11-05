@@ -117,7 +117,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* icones */
 
 /* home */
-.banner .acha{font-size: 18px;color: #434343;text-transform: uppercase;line-height: 30px;}
+.banner .acha{font-family:'dinmedium',Arial, Helvetica, sans-serif;font-size: 18px;color: #434343;text-transform: uppercase;line-height: 30px;}
 .icones-btns-sprite{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-btn-sprite.png) no-repeat top left;}
 .icone-habitos-saudaveis{ background-position: 0 0; width: 300px; height: 100px; display:block; } 
 .icone-habitos-saudaveis:hover{ background-position: 0 -150px; width: 300px; height: 100px; display:block;} 
@@ -192,7 +192,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 
 /* formularios */
 .icones-form{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-form.png) no-repeat top left;}
-.icone-fale-conosco-br{ background-position: 0 0; width: 40px; height: 29px; display:block;float: left; } 
+.icone-fale-conosco-br{ background-position: 0 0; width: 40px; height: 29px; display:block;float: left;margin-right: 10px; } 
 .icone-fale-conosco-ve{ background-position: 0 -79px; width: 40px; height: 29px; } 
 .icone-form-anexo{ background-position: 0 -158px; width: 28px; height: 40px; } 
 .icone-form-anexo-erro{ background-position: 0 -248px; width: 28px; height: 40px; } 
