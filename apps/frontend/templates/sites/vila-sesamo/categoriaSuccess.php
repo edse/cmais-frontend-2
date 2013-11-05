@@ -106,7 +106,7 @@
           <a href="#" title="teste">
             <img src="http://midia.cmais.com.br/assets/image/image-13/3c7040115466dcdd0a368bb53e0740f55647df82.jpg" alt""/>
             <h2 class="tit-artigo">Nome da Artigo Nome da Artigo</h2> 
-            <p class="ellipsis">Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum Loren ipsulum Loren ipsulum Loren ipsulu mLoren ipsulum Loren ipsulum</p>
+            <p class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in commodo posuere Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in commodo posuere</p>
           </a>
         </div>
         <!--/box artigo-->
