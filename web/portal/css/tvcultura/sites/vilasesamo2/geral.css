@@ -619,7 +619,6 @@ img.altura{width: 1px!important;height: 38px!important;}
 #content .pais { background:#feec3c; margin:0 auto !important; overflow:hidden; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 .pais .divisa { margin-bottom:0; }
 .pais .divisa {clear: both;background-color: #feec3c;height: 2px;margin: 0;}
-.pais p{text-transform:uppercase;}
 .pais .content{display: block; padding: 20px 10px; background:#ffe303!important;padding:0;}
 .pais .content .span4{margin-top:0px;}
 .pais .redes { position:absolute; top:25px; right:0;}
