@@ -77,11 +77,11 @@
       <?php endif; ?>
       <!--/destaque-principal--->
 
-      <div class="span12 row-fluid">
+      <div class="span12 row-fluid box-pais">
         <div class="divisa"></div>
         
         <!--box-dica--> 
-        <div class="span4">
+        <div class="span4 dica-pai">
           
           <!--link artigo dica-->
           <a href="#" title="">
