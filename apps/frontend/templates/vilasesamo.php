@@ -229,7 +229,7 @@
                   <a href="/vilasesamo/personagens/zoe" title="Zoe" target="_self">Zoe</a>
                 </li>
               </ul>
-            </nav>
+            </nav> 
             <!--/nav Personagens-->
             
             <!--nav-->
