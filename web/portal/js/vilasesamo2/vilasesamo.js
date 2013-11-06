@@ -1,5 +1,22 @@
 $(document).ready(function() {
-  
+    /*
+    * 
+    * PRINT JPGS
+    * 1-a url do jpg a imprimir deve ser colocada no atributo "datasrc" da tag a
+    * 2-deve conter class "print"
+    * ex: <a href="javascript:;" class="print" datasrc="a_url_do_jpg" title="seu_titulo">
+    * 
+    */
+   $('a[class*="print"]').click(function() {
+      //alert($(this).attr('datasrc'));
+      if (navigator.appName != 'Microsoft Internet Explorer'){
+        newPage = window.open();
+        newPage.document.write("<div><img src='"+$(this).attr('datasrc')+"' style='width:95%;'></div>");
+        newPage.window.print();
+        newPage.window.close();
+        return false;
+      }
+    });
   
   //menu principal home
   var url = window.location;
@@ -103,33 +120,14 @@ $(document).ready(function() {
     e.preventDefault();
     $(this).tab('show');
   });
-  
-  /*
-    * 
-    * PRINT JPGS
-    * 1-a url do jpg a imprimir deve ser colocada no atributo "datasrc" da tag a
-    * 2-deve conter class "print"
-    * ex: <a href="javascript:;" class="print" datasrc="a_url_do_jpg" title="seu_titulo">
-    * 
-    */
-   $('a[class*="print"]').click(function() {
-      //alert($(this).attr('datasrc'));
-      if (navigator.appName != 'Microsoft Internet Explorer'){
-        newPage = window.open();
-        newPage.document.write("<div><img src='"+$(this).attr('datasrc')+"' style='width:95%;'></div>");
-        newPage.window.print();
-        newPage.window.close();
-        return false;
-      }
-    });
-        
-    //impressao no ie com close ativado
-    if (navigator.appName == 'Microsoft Internet Explorer'){
-      function printDiv(divId) {
-        window.frames["print_frame"].document.body.innerHTML=document.getElementById(divId).innerHTML;
-        window.frames["print_frame"].window.focus();
-        window.frames["print_frame"].window.print();
-      }
-    }
       
 });//document.ready
+
+//impressao no ie com close ativado
+if (navigator.appName == 'Microsoft Internet Explorer'){
+  function printDiv(divId) {
+    window.frames["print_frame"].document.body.innerHTML=document.getElementById(divId).innerHTML;
+    window.frames["print_frame"].window.focus();
+    window.frames["print_frame"].window.print();
+  }
+}
