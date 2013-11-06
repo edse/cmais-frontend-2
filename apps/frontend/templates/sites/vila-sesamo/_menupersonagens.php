@@ -6,7 +6,7 @@
       <div class="slider">
         <div class="header-carrossel-personagens">
           <span class="topo-p"></span>
-          <i class="icones-sprite-menu icone-personagem-pequeno"></i>
+          <i class="icones-sprite-interna icone-personagem-pequeno"></i>
           <h3>Personagens</h3>
          
           <div class="slider-mask-wrap">
