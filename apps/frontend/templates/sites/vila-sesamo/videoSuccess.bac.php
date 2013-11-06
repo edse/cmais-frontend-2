@@ -1,5 +1,3 @@
-<?php use_helper('I18N', 'Date') ?>
-
 <?php
   /*
    * Pega a campanha (seção filha de "campanhas") e as categorias (seçao filha de "categorias") as quais o asset pertence
@@ -38,7 +36,7 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
 
 <script>
-  $("body").addClass("interna atividades");
+  $("body").addClass("interna videos");
 </script>
 
 <!-- HEADER -->
@@ -51,12 +49,12 @@
   <!--section -->
   <section class="filtro row-fluid">
     
-    <h1 class="back-page">
+    <h1>
       <i class="icones-sprite-interna icone-atividades-grande"></i>
       <?php echo $section->getTitle() ?>
-      <a class="todos-assets" title="voltar para todas atividades">
-        <i class="icones-setas icone-voltar-atividades"></i>
-        <p>todas as atividades</p>
+      <a class="todos-assets" title="voltar para todos vídeos">
+        <i class="icones-setas icone-voltar-videos"></i>
+        <p>todas os vídeos</p>
       </a>
     </h1>
     
@@ -95,33 +93,12 @@
         <?php echo $asset->getDescription() ?>
       </p>
       
-      
       <?php if(isset($asset)): ?>
       <div class="asset">
-        <?php $related = $asset->retriveRelatedAssetsByRelationType("Preview"); ?>
-        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
-        <div>
-          <a class="option-assets" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">
-            <i class="icones-sprite-interna icone-baixar-roxo"></i>
-            <span>Baixar</span>
-          </a>
-          
-           
-          <!--a class="option-assets" href="javascript:printDiv('div0')" title="Imprimir" target="_blank"-->
-          <a href="javascript:printDiv('div0')" class="option-assets print" datasrc="<?php echo $related[0]->retriveImageUrlByImageUsage("original"); ?>" title="imprimir">
-            <i class="icones-sprite-interna icone-imprimir-roxo"></i>
-            <span>Imprimir</span>
-            <div id="div0" style="display: none;page-break-after:always;">
-              <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("original")?>" style="width:95%">
-            </div>
-          </a>
-          
-        </div>
+        <iframe width="900" height="675" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
       <?php endif; ?>
-      <!--IFRAME PARA IMPRESSAO EM IE -->
-      <iframe id="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
-      <!--/IFRAME PARA IMPRESSAO EM IE -->
+      
     </div>
     <!--/conteudo-asset-->
     
