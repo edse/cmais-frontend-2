@@ -86,7 +86,7 @@ $('#carrossel-p').responsiveCarousel({
   unitElement:'#carrossel-p .slider-target > li',
   mask:'#carrossel-p .slider-mask',
   easing:'linear',
-  dragEvents:true,
+  dragEvents:false,
   speed:200,
   slideSpeed:1000,
   responsiveUnitSize : function() {
