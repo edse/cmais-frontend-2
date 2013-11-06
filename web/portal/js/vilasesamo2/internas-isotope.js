@@ -77,7 +77,7 @@
     
     function goTop(){
       $('html, body').animate({
-        scrollTop: parseInt($('.divisa').offset().top);
+        scrollTop: parseInt($('.divisa').offset().top));
       }, "slow");
     }
     /*
