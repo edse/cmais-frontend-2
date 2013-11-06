@@ -77,7 +77,7 @@
                    <a class="nome" href="/<?php echo $site->getSlug(); ?>/personagens/zoe" title="Zoe">Zoe</a>
                 </li>
                 <li>
-                  <a href="http://www.uol.com.br" onclick="href();">teste</a>
+                  <a href="http://www.uol.com.br" onclick="whereToGo();">teste</a>
                 </li>
               </ul>
               <div class="clearit"></div>
@@ -97,8 +97,9 @@
   </div>
 </section>
 <script>
-function href(){
+$('#carrossel-p a').click(function(){
+  console.log('fiu');
   where = $(this).attr('href');
   window.location.assign(where);
-}
+});
 </script>
