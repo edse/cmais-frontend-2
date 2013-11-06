@@ -105,7 +105,7 @@
             <span>Baixar</span>
           </a>
           
-          
+           
           <!--a class="option-assets" href="javascript:printDiv('div0')" title="Imprimir" target="_blank"-->
           <a href="javascript:printDiv('div0')" class="option-assets print" datasrc="<?php echo $related[0]->retriveImageUrlByImageUsage("original"); ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir">
             <i class="icones-sprite-interna icone-imprimir-roxo"></i>
