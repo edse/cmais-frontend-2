@@ -72,7 +72,7 @@
       } 
     });
     $('.inner a[class|="btn"]').click(function(){
-      console.log('oi');  
+      gotop();  
     });
     
     function goTop(){
