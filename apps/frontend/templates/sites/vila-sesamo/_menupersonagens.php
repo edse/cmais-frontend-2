@@ -8,7 +8,7 @@
           <span class="topo-p"></span>
           <i class="sprite-icon-personagens-peq"></i>
           <h3>Personagens</h3>
-          
+         
           <div class="slider-mask-wrap">
             <div class="slider-mask">
               <ul class="slider-target">

@@ -31,7 +31,7 @@
           <article class="span6 clipes">
             <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
-              <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" />
+              <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" />
               <p><?php echo $displays['destaque-1'][0]->getTitle() ?></p> 
             </a> 
           </article>
@@ -45,7 +45,7 @@
           <article class="span6 clipes  semmargem">
             <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
-              <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
+              <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
               <p><?php echo $displays['destaque-2'][0]->getTitle() ?></p> 
             </a> 
           </article>
