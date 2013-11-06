@@ -13,7 +13,7 @@
             <div class="slider-mask">
               <ul class="slider-target">
                 <li>
-                  <div class="inner personagens bel">
+                  <div class=" personagens bel">
                     <a href="/<?php echo $site->getSlug(); ?>/personagens/bel" title="Bel" class="btn-bel">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="" />
                     </a>
