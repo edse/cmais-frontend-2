@@ -104,6 +104,13 @@ $(document).ready(function() {
     $(this).tab('show');
   });
   
-    
-    
+  //impressao no ie com close ativado
+  if (navigator.appName == 'Microsoft Internet Explorer'){
+    function printDiv(divId) {
+      window.frames["print_frame"].document.body.innerHTML=document.getElementById(divId).innerHTML;
+      window.frames["print_frame"].window.focus();
+      window.frames["print_frame"].window.print();
+    }
+  }
+      
 });//document.ready
