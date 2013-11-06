@@ -120,7 +120,7 @@
       </div>
       <?php endif; ?>
       <!--IFRAME PARA IMPRESSAO EM IE -->
-      <iframe id="print_frame" width="0" height="0" frameborder="0" src=about:blank></iframe>
+      <iframe id="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
       <!--/IFRAME PARA IMPRESSAO EM IE -->
     </div>
     <!--/conteudo-asset-->
