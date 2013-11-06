@@ -76,7 +76,9 @@
                    </div>
                    <a class="nome" href="/<?php echo $site->getSlug(); ?>/personagens/zoe" title="Zoe">Zoe</a>
                 </li>
-                
+                <li>
+                  <a href="uol.com.br">teste</a>
+                </li>
               </ul>
               <div class="clearit"></div>
             </div>
