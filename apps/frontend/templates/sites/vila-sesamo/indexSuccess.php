@@ -86,7 +86,7 @@ $('#carrossel-p').responsiveCarousel({
   unitElement:'#carrossel-p .slider-target > li',
   mask:'#carrossel-p .slider-mask',
   easing:'linear',
-  dragEvents:false,
+  dragEvents:true,
   speed:200,
   slideSpeed:1000,
   responsiveUnitSize : function() {
@@ -113,7 +113,6 @@ $('.inner.personagens a').mouseleave(function(){
   $(this).find('img').stop();
   $(this).find('img').animate({top:0, easing:"swing"},'fast');  
 });
-
-$('.mpc_ls_thumb, .mpc_ls_prev_slide, .mpc_ls_next_slide').attr('role','presentation').attr('aria-hidden','true').attr('tabindex', '100'); 
+ 
 
 </script>
