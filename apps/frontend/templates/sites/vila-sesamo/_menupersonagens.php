@@ -96,10 +96,3 @@
     </div>
   </div>
 </section>
-<script>
-$('#carrossel-p a').click(function(){
-  console.log('fiu');
-  where = $(this).attr('href');
-  window.location.assign(where);
-});
-</script>

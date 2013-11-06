@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  
     /*
     * 
     * PRINT JPGS
@@ -17,6 +18,12 @@ $(document).ready(function() {
         return false;
       }
     });
+  
+  //bug do responsive carousel que nao reconhece link
+  $('#carrossel-p a, #carrossel-i a').click(function(){
+    where = $(this).attr('href');
+    window.location.assign(where);
+  });
   
   //menu principal home
   var url = window.location;
