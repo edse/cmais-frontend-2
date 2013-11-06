@@ -71,8 +71,10 @@
         $(this).find('img').animate({top:0, easing:"swing"},'fast'); 
       } 
     });
+    
+    //ancora para os filtros
     $('.inner a[class|="btn"]').click(function(){
-      gotop();  
+      goTop();  
     });
     
     function goTop(){
