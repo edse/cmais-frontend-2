@@ -281,17 +281,44 @@ else { // senão traz pela semelhança de tags com o asset em questão
       <?php endif; ?>
       
     <?php endif; ?>
-        
-        
-        
-        <!--box-parceiros-->  
-        <div class="span4 parceiros">
-          <h2>Conheça nossos parceiros:</h2>
-          <a href="#">
-            <img src="/portal/images/capaPrograma/vilasesamo2/destaque.png" alt""/>
+    
+      <!--box-parceiros-->  
+      <div class="span4 parceiros">
+        <?php
+          $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($forParents->getId(), "parceiros"); // Pega o bloco "parceiros" da seção "para os pais"
+          if ($block)
+            $displays["parceiros"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceiros"    
+        ?>
+        <?php if(isset($displays['parceiros'])): ?>
+          <?php if(count($displays['parceiros']) > 0): ?>
+          <p>Conheça nossos parceiros:</p>
+          <a class="publicidade" href="<?php echo $displays['parceiros'][0]->retriveUrl() ?>" title="<?php echo $displays['parceiros'][0]->getTitle() ?>">
+            <img src="<?php echo $displays['parceiros'][0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $displays['parceiros'][0]->getTitle() ?>" />
           </a>
-        </div>  
-        <!--/box-parceiros-->
+            <?php endif; ?>
+          <?php endif; ?>
+          
+          <?php
+            $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
+            $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
+          ?>        
+          <?php if(isset($allCategories)): ?>
+            <?php if(count($allCategories) > 0): ?>
+          <p>Você também pode escolher o jogo de acordo com as preferências da criança:</p>
+          <div class="btn-group">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
+            <ul class="dropdown-menu">
+              <?php foreach($allCategories as $c): ?>
+              <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
+              <?php endforeach; ?>
+            </ul>
+          </div>
+            <?php endif; ?>
+          <?php endif; ?>        
+        </div>    
+        <!--/box-parceiros-->  
+        
+        
       </div>
       <!--/box-pais-->
       
