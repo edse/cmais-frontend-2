@@ -46,7 +46,7 @@
                 </li>
                 <li>
                   <div class="inner personagens enio">
-                   <a href="/<?php echo $site->getSlug(); ?>/personagens/enio" title="Ênio" class="btn-enio" role="presentation" aria-hidden="true">
+                   <a href="/<?php echo $site->getSlug(); ?>/personagens/enio" title="Ênio" class="btn-enio">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/enio_personagem.png" alt="" />
                    </a>
                    </div>
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <div class="inner personagens garibaldo">
-                    <a href="/<?php echo $site->getSlug(); ?>/personagens/garibaldo" title="Garibaldo" class="btn-garibaldo" role="presentation" aria-hidden="true">
+                    <a href="/<?php echo $site->getSlug(); ?>/personagens/garibaldo" title="Garibaldo" class="btn-garibaldo">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/garibaldo_personagem.png" alt="" />
                     </a>
                   </div>
@@ -62,7 +62,7 @@
                 </li>
                 <li>
                   <div class="inner personagens grover">
-                    <a href="/<?php echo $site->getSlug(); ?>/personagens/grover" title="Grover" class="btn-grover" role="presentation" aria-hidden="true">
+                    <a href="/<?php echo $site->getSlug(); ?>/personagens/grover" title="Grover" class="btn-grover">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/grover_personagem.png" alt="" />
                     </a>
                   </div>
@@ -70,14 +70,14 @@
                 </li>
                 <li>
                   <div class="inner personagens zoe">
-                    <a href="/<?php echo $site->getSlug(); ?>/personagens/zoe" title="Zoe" class="btn-zoe" role="presentation" aria-hidden="true">
+                    <a href="/<?php echo $site->getSlug(); ?>/personagens/zoe" title="Zoe" class="btn-zoe">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/zoe_personagem.png" alt="" />
                    </a>
                    </div>
                    <a class="nome" href="/<?php echo $site->getSlug(); ?>/personagens/zoe" title="Zoe">Zoe</a>
                 </li>
                 <li>
-                  <a href="uol.com.br" target="_self" onclick="alert('teste');">teste</a>
+                  <a href="http://www.uol.com.br" onclick="alert('teste');">teste</a>
                 </li>
               </ul>
               <div class="clearit"></div>
@@ -96,3 +96,9 @@
     </div>
   </div>
 </section>
+<script>
+function href(){
+  where = $(this).attr('href');
+  window.location.assign(where);
+}
+</script>
