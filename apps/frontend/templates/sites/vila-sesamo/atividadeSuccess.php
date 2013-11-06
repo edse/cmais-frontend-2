@@ -27,7 +27,6 @@
     }
   }
 ?>
-<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/tooltip.js"></script>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
@@ -109,7 +108,7 @@
           
            
           <!--a class="option-assets" href="javascript:printDiv('div0')" title="Imprimir" target="_blank"-->
-          <a href="javascript:printDiv('div0')" class="option-assets print" datasrc="<?php echo $related[0]->retriveImageUrlByImageUsage("original"); ?>" rel="tooltip" data-placement="bottom" data-original-title="imprimir">
+          <a href="javascript:printDiv('div0');" class="option-assets print" datasrc="<?php echo $related[0]->retriveImageUrlByImageUsage("original"); ?>" title="imprimir">
             <i class="icones-sprite-interna icone-imprimir-roxo"></i>
             <span>Imprimir</span>
             <div id="div0" style="display: none;page-break-after:always;">
