@@ -1,3 +1,5 @@
+<?php use_helper('I18N', 'Date') ?>
+
 <?php
   /*
    * Pega a campanha (seção filha de "campanhas") e as categorias (seçao filha de "categorias") as quais o asset pertence
