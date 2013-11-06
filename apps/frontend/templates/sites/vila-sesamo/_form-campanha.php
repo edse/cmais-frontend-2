@@ -47,21 +47,21 @@
         <input type="hidden" id="campanha" name="campanha" value="<?php echo $campaign->getTitle() ?>" />
         <!--Nome-->
         <div class="control-group span8">
-          <label class="control-label sprite-ico-nome" for="nome"></label>
+          <label class="control-label icones-form icone-form-nome" for="nome"></label>
           <input type="text" id="nome" value="Nome" name="nome" data-default="Nome"  placeholder="Nome">
         </div>
         <!--/Nome-->
         
         <!--Idade-->
         <div class="control-group idade span2">
-          <label class="control-label sprite-ico-idade" for="idade"></label>
+          <label class="control-label icones-form icone-form-idade" for="idade"></label>
           <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade" data-default="Idade"  placeholder="Idade">
         </div>
         <!--/Idade-->
         
         <!--Cidade-->
         <div class="control-group span8 cidade">
-          <label class="control-label sprite-ico-cidade" for="cidade"></label>
+          <label class="control-label icones-form icone-form-cidade" for="cidade"></label>
           <input type="text" id="cidade" value="Cidade" name="cidade" data-default="Cidade" placeholder="Cidade">
         </div>
         <!--/Cidade-->
@@ -103,14 +103,14 @@
         
         <!--Email-->
         <div class="control-group span8">
-          <label class="control-label sprite-ico-email" for="email"></label>
+          <label class="control-label icones-form icone-form-email" for="email"></label>
           <input type="text" id="email"  value="Email" name="email" placeholder="Email">
         </div>
         <!--/Email-->
         
         <!--Anexo-->
          <div class="control-group span2 idade anexo">
-          <label class="control-label sprite-ico-anexo" for="anexo"></label>
+          <label class="control-label icones-form icone-form-anexo" for="anexo"></label>
           <input id="datafile" type="file" name="datafile">
           <!--a href="#" title="Anexar">Anexar</a-->
         </div>
@@ -118,7 +118,7 @@
         
         <!--Msg-->
         <div class="control-group span12 msg">
-          <label class="control-label sprite-ico-mensagem" for="mensagem"></label>
+          <label class="control-label icones-form icone-form-msg" for="mensagem"></label>
           <textarea id="mensagem" name="mensagem" data-default="Mensagem"  placeholder="Mensagem">Mensagem</textarea>
         </div>
         <!--/Msg-->
@@ -127,7 +127,7 @@
         <div class="control-group span11">
           <label class="radio">
             <input type="radio" name="concordo" id="concordo" value="concordo">
-            Declaro que li e estou de acordo com os Termos e Condições acima 2.
+            Declaro que li e estou de acordo com os Termos e Condições acima .
           </label>
         </div>
         <!--/concorda-->
