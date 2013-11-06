@@ -14,7 +14,7 @@
               <ul class="slider-target">
                 <li>
                   <div class="inner personagens bel">
-                    <a href="/<?php echo $site->getSlug(); ?>/personagens/bel" title="Bel" class="btn-bel" role="presentation" aria-hidden="true">
+                    <a href="/<?php echo $site->getSlug(); ?>/personagens/bel" title="Bel" class="btn-bel">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/bel_personagem.png" alt="" />
                     </a>
                   </div>
@@ -22,7 +22,7 @@
                 </li>
                 <li>
                   <div class="inner personagens beto">
-                    <a href="/<?php echo $site->getSlug(); ?>/personagens/beto" title="Beto" class="btn-beto" role="presentation" aria-hidden="true">
+                    <a href="/<?php echo $site->getSlug(); ?>/personagens/beto" title="Beto" class="btn-beto">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/beto_personagem.png" alt="" />
                     </a>
                   </div>
@@ -30,7 +30,7 @@
                 </li>
                 <li>
                   <div class="inner personagens comecome">
-                    <a href="/<?php echo $site->getSlug(); ?>/personagens/come-come" title="Come-come" class="btn-comecome" role="presentation" aria-hidden="true">
+                    <a href="/<?php echo $site->getSlug(); ?>/personagens/come-come" title="Come-come" class="btn-comecome">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/comecome_personagem.png" alt="" />
                     </a>
                   </div>
@@ -38,7 +38,7 @@
                 </li>
                 <li>
                   <div class="inner personagens elmo">
-                    <a href="/<?php echo $site->getSlug(); ?>/personagens/elmo" title="Elmo" class="btn-elmo" role="presentation" aria-hidden="true">
+                    <a href="/<?php echo $site->getSlug(); ?>/personagens/elmo" title="Elmo" class="btn-elmo">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/elmo_personagem.png" alt="" />
                     </a>
                   </div>
