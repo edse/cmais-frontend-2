@@ -243,6 +243,11 @@
       success: function(label){
       }
     });
+    
+    if($('input').hasClass('error')){
+      var campo = $(this).attr('name');
+      $(this).addClass('icone-form-'+campo+'-erro')
+    }
   });
   
   function validate(obj){

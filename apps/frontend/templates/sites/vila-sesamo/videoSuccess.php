@@ -36,9 +36,7 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
 
 <script>
-  $(document).ready(function(){
-    $("body").addClass("interna videos");
-  });
+  $("body").addClass("interna videos");
 </script>
 
 <!-- HEADER -->
