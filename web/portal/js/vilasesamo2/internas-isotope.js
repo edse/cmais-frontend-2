@@ -71,6 +71,15 @@
         $(this).find('img').animate({top:0, easing:"swing"},'fast'); 
       } 
     });
+    $('.inner a[class|="btn"]').click(function(){
+      console.log('oi');  
+    });
+    
+    function goTop(){
+      $('html, body').animate({
+        scrollTop: parseInt($('.divisa').offset().top);
+      }, "slow");
+    }
     /*
     $container.infinitescroll({
       navSelector  : '#page_nav',    // selector for the paged navigation 
