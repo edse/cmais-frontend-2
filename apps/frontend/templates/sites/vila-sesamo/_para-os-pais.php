@@ -90,12 +90,13 @@ else { // senão traz pela semelhança de tags com o asset em questão
 
 ?>
   
+  <?php if($forParents): ?>
   <!-- section-->
   <section class="pais">
     
     <span class="divisa"></span>
     
-    <h2 class="tit-box">Cuidadores <i class="icones-setas icone-cuidadores-abrir"></i></h2>
+    <h2 class="tit-box"><?php echo $forParents->getTitle() ?> <i class="icones-setas icone-cuidadores-abrir"></i></h2>
     
     <!--content-->
     <div class="content span12 row-fluid">
@@ -113,39 +114,175 @@ else { // senão traz pela semelhança de tags com o asset em questão
       <!--box-pais -->
       <div class="row-fluid span12 box-pais">
         
-        
-        <!--box-dica--> 
-        <div class="span4 dica-pai">
+      <?php if(isset($specialCategory)): ?>
+      
+        <?php if(isset($dicaRelacionada)): ?>
+          <?php if(count($dicaRelacionada) > 0): ?>
+            <!--box-dica--> 
+            <div class="span4 dica-pai">
+              <!--link artigo dica-->
+              <a href="#" title="">
+                <h2 class="tit-dicas">
+                  <i class="sprite-aspa-esquerda"></i>
+                  <?php echo $dicaRelacionada[0]->getTitle(); ?>
+                </h2>
+                <p class="ellipsis"><?php echo html_entity_decode($dicaRelacionada[0]->AssetContent->render()) ?></p>
+                <i class="sprite-aspa-direita"></i>
+              </a>
+              <!--/link artigo dica-->
+              <?php $download = $dicaRelacionada[0]->retriveRelatedAssetsByRelationType("Download") ?>
+              <?php if(count($download) > 0): ?>
+                <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+                  <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</a>
+                 <?php endif; ?>
+              <?php endif; ?>
+            </div>
+            <!--/box-dica-->
+          <?php endif; ?>
           
-          <!--link artigo dica-->
-          <a href="#" title="">
-            <h2 class="tit-dicas">
-              <i class="sprite-aspa-esquerda"></i>
-              Titulo dica
-            </h2>
-            <p class="ellipsis">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat metus ut leo interdum eleifend. Duis vel mauris et nunc posuere vehicula a id arcu. Maecenas malesuada ante ac consequat viverra. Vivamus tempor, nulla quis facilisis ullamcorper, tortor odio elementum eros, sit amet cursus felis elit vel diam. Fusce fringilla, nulla eu luctus lacinia, risus turpis varius orci, vel fringilla sem eros eu diam. Pellen tesque sodales cursus elit, acos uscipit eros consectetur nec.  Aenean at metus.
-            </p>
-            <i class="sprite-aspa-direita"></i>
-          </a>
-          <!--link artigo dica-->
+        <?php else: ?>
           
-          <!--botao baixa artigo-->
-          <a class="btn" href="#" title="Baixar" target="_blank">baixar</a>
-          <!--botao baixa artigo-->
+          <?php if(isset($displays['dicas']) > 0): ?>
+            <?php if(count($displays['dicas']) > 0): ?>
+              <!--box-dica-->
+              <div class="span4 dica-pai">
+                <!--link artigo dica-->
+                <a href="#" title="">
+                  <h2 class="tit-dicas">
+                    <i class="sprite-aspa-esquerda"></i>
+                    <?php echo $displays['dicas'][0]->getTitle(); ?>
+                  </h2>
+                  <p class="ellipsis"><?php echo html_entity_decode($displays['dicas'][0]->Asset->AssetContent->render()) ?></p>
+                  <i class="sprite-aspa-direita"></i>
+                </a>
+                <?php $download = $displays['dicas'][0]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
+                <?php if(count($download) > 0): ?>
+                  <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+                    <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</a>
+                  <?php endif; ?>
+                <?php endif; ?>
+              </div>
+            <?php endif; ?>
+          <?php endif; ?>
           
-        </div>
-        <!--/box-dica-->
-        
-        <!--box artigo-->
+        <?php endif; //$specialCategory?>
+      
+        <?php if(isset($displays['artigos']) > 0): ?>
+          <?php if(count($displays['artigos']) > 0): ?>
+            <?php $preview = $displays['artigos'][0]->Asset->retriveRelatedAssetsByRelationType("Preview") ?>
+              <!--box artigo-->
+              <div class="span4 artigo">
+                <a href="<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $displays['artigos'][0]->getSlug() ?>" title="<?php echo $displays['artigos'][0]->getTitle() ?>">
+                  <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $displays['artigos'][0]->getTitle() ?>" />
+                  <h2 class="tit-artigo"><?php echo $displays['artigos'][0]->getTitle() ?></h2>
+                  <p><?php echo $displays['artigos'][0]->getDescription() ?></p>
+                </a>
+              </div>
+              <!--/box artigo-->
+          <?php endif; ?>
+        <?php else: // senão existir artigo, tenta pegar um segundo destaque do bloco "dicas" pra preencher o espaço ?>
+          <?php if(isset($displays['dicas'][1])): ?>
+            <!--box-dica--> 
+            <div class="span4 dica-pai">
+              <!--link artigo dica-->
+              <a href="#" title="">
+                <h2 class="tit-dicas">
+                  <i class="sprite-aspa-esquerda"></i>
+                  <?php echo $displays['dicas'][1]->getTitle(); ?>
+                </h2>
+                <p class="ellipsis"><?php echo html_entity_decode($displays['dicas'][1]->Asset->AssetContent->render()) ?></p>
+                <i class="sprite-aspa-direita"></i>
+              </a>
+              <!--/link artigo dica-->
+              <?php $download = $displays['dicas'][1]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
+              <?php if(count($download) > 0): ?>
+                <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+                  <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</a>
+                <?php endif; ?>
+              <?php endif; ?>
+            </div>
+            <!--/box-dica-->
+          <?php endif; ?>
+        <?php endif; ?>
+      
+      <?php else: ?>
+      
+        <?php if(isset($dicaRelacionada)): ?>
+          <?php if(count($dicaRelacionada) > 0): ?>
+            <!--box-dica-->
+            <div class="span4 dica-pai">
+              <a href="#" title="">
+                <h2 class="tit-dicas">
+                  <i class="sprite-aspa-esquerda"></i>
+                  <?php echo $dica[0]->getTitle(); ?>
+                </h2>
+                <p class="ellipsis"><?php echo html_entity_decode($dicaRelacionada[0]->AssetContent->render()) ?></p>
+                <i class="sprite-aspa-direita"></i>
+              </a>
+              <?php $download = $dica[0]->retriveRelatedAssetsByRelationType("Download") ?>
+              <?php if(count($download) > 0): ?>
+                <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+                  <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</a>
+                <?php endif; ?>
+              <?php endif; ?>
+            </div>
+            <!--/box-dica-->
+          <?php endif; ?>
+        <?php else: ?>
+          <?php if(isset($dica[0])): ?>
+            <div class="span4 dica-pai">
+              <a href="#" title="">
+                <h2 class="tit-dicas">
+                  <i class="sprite-aspa-esquerda"></i>
+                  <?php echo $dica[0]->getTitle(); ?>
+                </h2>
+                <p class="ellipsis"><?php echo html_entity_decode($dica[0]->AssetContent->render()) ?></p>
+                <i class="sprite-aspa-direita"></i>
+              </a>
+              <?php $download = $dica[0]->retriveRelatedAssetsByRelationType("Download") ?>
+              <?php if(count($download) > 0): ?>
+                <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+                  <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</a>
+                <?php endif; ?>
+              <?php endif; ?>
+            </div>
+          <?php endif; ?>
+          
+        <?php endif; ?>      
+    
+      <?php if($artigo): ?>
+        <?php $preview = $artigo->retriveRelatedAssetsByRelationType("Preview") ?>
         <div class="span4 artigo">
-          <a href="#" title="teste">
-            <img src="http://midia.cmais.com.br/assets/image/image-13/3c7040115466dcdd0a368bb53e0740f55647df82.jpg" alt""/>
-            <h2 class="tit-artigo">Nome da Artigo Nome da Artigo</h2> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in commodo posuere Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in commodo posuere</p>
+          <a href="<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $artigo->getSlug() ?>" title="<?php echo $artigo->getTitle() ?>"> 
+            <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $artigo->getTitle() ?>" />
+            <h2><?php echo $artigo->getTitle() ?></h2>
+            <p><?php echo $artigo->getDescription() ?></p>
           </a>
         </div>
-        <!--/box artigo-->
+      <?php else: ?>
+        <?php if(isset($dica[1])): ?>
+          <div class="span4 dica-pai">
+            <a href="#" title="">
+              <h2 class="tit-dicas">
+                <i class="sprite-aspa-esquerda"></i>
+                <?php echo $dica[1]->getTitle(); ?>
+              </h2>
+              <p class="ellipsis"><?php echo html_entity_decode($dica[1]->AssetContent->render()) ?></p>
+              <i class="sprite-aspa-direita"></i>
+            </a>
+            <?php $download = $dica[1]->retriveRelatedAssetsByRelationType("Download") ?>
+            <?php if(count($download) > 0): ?>
+              <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+                <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</a>
+              <?php endif; ?>
+            <?php endif; ?>
+          </div>
+        <?php endif; ?>
+      <?php endif; ?>
+      
+    <?php endif; ?>
+        
+        
         
         <!--box-parceiros-->  
         <div class="span4 parceiros">
@@ -169,6 +306,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
     
   </section>
   <!-- /section-->
+  <?php endif; ?>
   <?php
   /*
   <?php if($forParents): ?>
