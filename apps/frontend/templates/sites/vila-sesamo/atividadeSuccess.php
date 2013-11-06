@@ -108,7 +108,7 @@
           
            
           <!--a class="option-assets" href="javascript:printDiv('div0')" title="Imprimir" target="_blank"-->
-          <a href="javascript:printDiv('div0');" class="option-assets print" datasrc="<?php echo $related[0]->retriveImageUrlByImageUsage("original"); ?>" title="imprimir">
+          <a href="javascript:printDiv('div0')" class="option-assets print" datasrc="<?php echo $related[0]->retriveImageUrlByImageUsage("original"); ?>" title="imprimir">
             <i class="icones-sprite-interna icone-imprimir-roxo"></i>
             <span>Imprimir</span>
             <div id="div0" style="display: none;page-break-after:always;">
@@ -120,7 +120,7 @@
       </div>
       <?php endif; ?>
       <!--IFRAME PARA IMPRESSAO EM IE -->
-      <iframe id=print_frame width=0 height=0 frameborder=0 src=about:blank></iframe>
+      <iframe id="print_frame" width="0" height="0" frameborder="0" src=about:blank></iframe>
       <!--/IFRAME PARA IMPRESSAO EM IE -->
     </div>
     <!--/conteudo-asset-->
