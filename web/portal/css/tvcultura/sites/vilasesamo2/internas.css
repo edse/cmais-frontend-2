@@ -2,7 +2,7 @@ body { background:#0172f9; }
 a:hover{text-decoration:underline!important;}
 .header-bar ul { margin:12px 0 0 0; }
 .header-bar { position:fixed; background: url(/portal/images/capaPrograma/vilasesamo2/pattern-menu-interna.jpg) repeat-x; height:81px; top:48px; width: 100%; max-width:100%; }
-.header-bar .content { max-width:940px; margin:0 auto; }
+.header-bar .content { width:940px; margin:0 auto; }
 .header-bar h1 { /*background:#fff; height:76px;*/ margin:5px 0 0 0; /*width:25%;*/ }
 .header-bar h1 a { float:left; /*width:100%;*/ }
 .header-bar h1 span,
