@@ -50,7 +50,7 @@
   <section class="filtro row-fluid">
     
     <h1>
-      <i class="icones-sprite-interna icone-atividades-grande"></i>
+      <i class="icones-sprite-interna icone-videos-grande"></i>
       <?php echo $section->getTitle() ?>
       <a class="todos-assets" title="voltar para todos vídeos">
         <i class="icones-setas icone-voltar-videos"></i>
