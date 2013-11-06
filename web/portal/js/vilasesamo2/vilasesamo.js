@@ -123,8 +123,6 @@ $(document).ready(function() {
       }
     });
         
-    /*tooltip*/
-    $('.btn-tooltip').tooltip();
     //impressao no ie com close ativado
     if (navigator.appName == 'Microsoft Internet Explorer'){
       function printDiv(divId) {
