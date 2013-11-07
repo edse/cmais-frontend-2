@@ -260,10 +260,10 @@
     if($(obj).val()==$(obj).attr("data-default"))
       $(obj).val('');
       //$(obj).addClass("error");
-  }
+  } 
   function verifyKey(){
     setTimeout(function() {
-      $('input').not('#concordo').each(function(){
+      $('input, textarea').not('#concordo').each(function(){
         var campo = $(this).attr('id');
         if($(this).hasClass('error')){
           $(this).prev().addClass('icone-form-'+campo+'-erro');
@@ -271,20 +271,11 @@
           $(this).prev().removeClass('icone-form-'+campo+'-erro');
         }
       });
-      $('#concordo').delay(50, function(){
-        var campo = $(this).attr('id');
+      $('#concordo').delay(100, function(){
         if($(this).hasClass('error')){
           $(this).parent().css('color', 'yellow');
         }else{
           $(this).parent().css('color', 'white');
-        }
-      });
-      $('#mensagem').delay(50, function(){
-        var campo = $(this).attr('id');
-        if($(this).hasClass('error')){
-          $(this).prev().addClass('icone-form-'+campo+'-erro');
-        }else{
-          $(this).prev().removeClass('icone-form-'+campo+'-erro');
         }
       });
     }, 100);
