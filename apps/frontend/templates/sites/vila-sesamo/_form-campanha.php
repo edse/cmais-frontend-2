@@ -104,14 +104,14 @@
         <!--Email-->
         <div class="control-group span8">
           <label class="control-label icones-form icone-form-email" for="email"></label>
-          <input type="text" id="email"  value="Email" name="email" placeholder="Email">
+          <input type="text" id="email"  value="Email" name="email" data-default="email" placeholder="Email">
         </div>
         <!--/Email-->
         
         <!--Anexo-->
          <div class="control-group span2 idade anexo">
           <label class="control-label icones-form icone-form-anexo" for="anexo"></label>
-          <input id="datafile" type="file" name="datafile">
+          <input id="datafile" type="file" name="datafile" data-default="anexo" value="anexo">
           <!--a href="#" title="Anexar">Anexar</a-->
         </div>
         <!--/Anexo-->
@@ -207,7 +207,7 @@
           number: true
         },
         email:{
-          required: true,
+          required: function(){ validate("#e-mail"); return true},,
           email: true
         },
         cidade:{
@@ -222,7 +222,7 @@
           minlength: 3
         },
         datafile:{
-          required: true,
+          required: function(){ validate("#datafile"); return true},,
           accept: "png|jpe?g|gif",
           filesize: 15728640
         },
@@ -249,7 +249,7 @@
   });
   
   function validate(obj){
-    if($(obj).val()==$(obj).attr("data-default")){
+    if($(obj).val()==$(obj).attr("data-default")&&$(obj)!= "#datafile"){
       $(obj).val('');
       //$(obj).addClass("error");
       alert('foi')
