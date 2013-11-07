@@ -289,6 +289,8 @@
                   </div>
                 </a>
               </article>
+              <?php endif; ?>
+            <?php endif; ?>
             <!--/destaque atividades-->
             
            <!--destaque jogos--> 
