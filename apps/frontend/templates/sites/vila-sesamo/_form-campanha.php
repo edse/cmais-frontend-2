@@ -19,6 +19,7 @@
             <p>
               Sua brincadeira foi enviada com sucesso<br/>
               e em breve estará em nossa galeria de brincadeiras!
+              <a href="/campanhas/" title="">visitar a galeria de brincadeiras</a>
             </p>
           </div>
         <?php endif; ?>
