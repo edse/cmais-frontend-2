@@ -249,7 +249,7 @@
         }else if($('#'+id).hasClass('error')){
           $('#'+id).prev().addClass('icone-form-'+id+'-erro');
         }
-        
+        return true
       },
       onfocusout:function(e){
         var id = e.id;
@@ -258,6 +258,7 @@
         }else if($('#'+id).hasClass('error')){
           $('#'+id).prev().addClass('icone-form-'+id+'-erro');
         }
+        return true
       },
       success: function(label){
       }
