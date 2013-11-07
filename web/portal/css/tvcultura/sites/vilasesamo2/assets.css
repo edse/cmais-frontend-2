@@ -146,7 +146,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 /* /videos */
 
 /* box erros */
-.msgErro p,
-.msgAcerto p{font-family:'din-blackregular', Arial, Helvetica, sans-serif;width: 100%;text-align: center;margin-bottom: 20px;font-size: 18px;color: #434343!important;background: #ffee52;padding: 5px;line-height: 30px;border: red 2px solid;text-transform:uppercase;}
+.msgErro p{font-family:'din-blackregular', Arial, Helvetica, sans-serif;width: 100%;text-align: center;margin-bottom: 20px;font-size: 18px;color: #434343!important;background: #ffee52;padding: 5px;line-height: 30px;border: red 2px solid;text-transform:uppercase;}
+.msgAcerto p{font-family:'din-blackregular', Arial, Helvetica, sans-serif;width: 100%;text-align: center;margin-bottom: 20px;font-size: 18px;color: #434343!important;text-transform:uppercase;color:#FFFFFF;}
 .msgAcerto a{font-family:'din-blackregular', Arial, Helvetica, sans-serif;width: 100%;text-align: center;margin-bottom: 20px;font-size: 18px;color: #434343!important;text-transform:uppercase;}
 /* /box erros */
