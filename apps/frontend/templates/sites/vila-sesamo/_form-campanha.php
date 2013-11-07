@@ -12,7 +12,8 @@
     
     <!--span8-->
     <div class="span8">
-      <?php echo isset($_GET["error"]?>
+      <?php echo isset($_GET["error"])?>
+      <?php echo isset($_GET["success"])?>
       <?php if($_GET["error"] == 1) :?>  
         <div class="msgErro" id="statusMsg_3">
           <p>
