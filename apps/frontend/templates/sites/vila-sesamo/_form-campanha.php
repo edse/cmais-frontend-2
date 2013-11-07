@@ -207,7 +207,7 @@
           number: true
         },
         email:{
-          required: function(){ validate("#e-mail"); return true},,
+          required: function(){ validate("#e-mail"); return true},
           email: true
         },
         cidade:{
