@@ -102,44 +102,42 @@
               
             </section>
             <!--/section-->
-            
+           
             <!--footer-->
             <div class="clearboth">
               
               <!--compartilhar redes-->
               <?php include_partial_from_folder('sites/vila-sesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
               <!--/compartilhar redes-->
-              
+               
               <!--sobre os autores-->
+              <?php if(count($colaboradores) > 0): ?>
               <h2>
                 <i class="icones-sprite-interna icone-carregar-verde"></i>
                 sobre o autor:
               </h2>
-              <article class="sobre-autor">
-                <div class="sombra-amarela"></div>
-                <div class="foto-sobre">
-                  <img src="http://midia.cmais.com.br/displays/d175b4dffffcee009d8fbfd9d1febcc80f1937c4.jpg" alt="Histórias de Cozinha" name="Histórias de Cozinha">
-                </div>
-                <div class="descricao-sobre">
-                  <h3>Professora Miriam Sousa</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing scelerisque erat, in bibendum diam facilisis sit amet. Suspendisse quis nisi imperdiet, commodo ipsum non, palesuada ante. Donec ultrices aliquet justo urabitur vitae.</p>
-                  <a href="#">Contato@profmirian.com.br</a><br>
-                  <a href="#">www.profmiriam.com.br</a>
-                </div>
-              </article>
+                <?php foreach($colaboradores as $c): ?>
+                  <article class="sobre-autor">
+                    <div class="sombra-amarela"></div>
+                    <div class="foto-sobre">
+                      <?php $preview = $c->retriveRelatedAssetsByRelationType("Preview") ?>
+                        <?php if($preview): ?>
+                          <?php if($preview[0]->retriveImageUrlByImageUsage("image-13")): ?>
+                            <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $c->getTitle() ?>" name="<?php echo $c->getTitle() ?>">
+                          <?php endif; ?>
+                        <?php endif; ?>
+                    </div>
+                    <div class="descricao-sobre">
+                      <h3><?php echo $c->getTitle() ?></h3>
+                      <p><?php echo $c->AssetPerson->getBio() ?></p>
+                      <a href="mailto: <?php echo $c->AssetPerson->getHeadline() ?>" title="envie uma mensagem para <?php echo $c->getTitle() ?>"><?php echo $c->AssetPerson->getHeadline() ?></a><br>
+                      <a href="<?php echo $c->AssetPerson->getWebsiteUrl() ?>" target="_blank" title=""><?php echo $c->AssetPerson->getWebsiteUrl() ?></a>
+                    </div>
+                  </article>
+                <?php endforeach; ?>
+              <?php endif; ?>
               
-              <article class="sobre-autor">
-                <div class="sombra-amarela"></div>
-                <div class="foto-sobre">
-                  <img src="http://midia.cmais.com.br/displays/d175b4dffffcee009d8fbfd9d1febcc80f1937c4.jpg" alt="Histórias de Cozinha" name="Histórias de Cozinha">
-                </div>
-                <div class="descricao-sobre">
-                  <h3>Professora Miriam Sousa</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing scelerisque erat, in bibendum diam facilisis sit amet. Suspendisse quis nisi imperdiet, commodo ipsum non, palesuada ante. Donec ultrices aliquet justo urabitur vitae.</p>
-                  <a href="#">Contato@profmirian.com.br</a><br>
-                  <a href="#">www.profmiriam.com.br</a>
-                </div>
-              </article>
+        
               <!--/sobre os autores-->
               
               <div class="comente">              
