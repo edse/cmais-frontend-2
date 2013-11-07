@@ -233,14 +233,16 @@
         
       },
       onkeyup:function(e){
-        console.log('oi')
-        var id = e.id;
-        if($('#'+id).hasClass('valid')){
-          $(this).prev().removeClass('icone-form-'+id+'-erro');
-        }
-        if($('#'+id).hasClass('error')){
-          $('#'+id).prev().addClass('icone-form-'+id+'-erro');
-        }
+        console.log('oi3')
+        setTimeout(function() {
+          var id = e.id;
+          if($('#'+id).hasClass('valid')){
+            $(this).prev().removeClass('icone-form-'+id+'-erro');
+          }
+          if($('#'+id).hasClass('error')){
+            $('#'+id).prev().addClass('icone-form-'+id+'-erro');
+          }
+        }, 100);
       },
        
       messages:{
