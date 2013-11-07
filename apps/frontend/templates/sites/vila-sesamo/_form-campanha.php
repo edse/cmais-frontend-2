@@ -261,7 +261,7 @@
       //resgatando a página que a pessoa
       url = window.location;
       $('#urlElement').attr('value',url)
-      console.log(url);
+      console.log(url.pathname);
     });
     
   });
