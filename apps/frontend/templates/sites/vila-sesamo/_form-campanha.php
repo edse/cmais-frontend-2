@@ -197,9 +197,6 @@
       submitHandler: function(form){
       	form.submit();
       },
-      beforesend:function(){
-        alert('ói')
-      },
       rules:{
         nome:{
           required: function(){ validate("#nome"); return true},
@@ -252,9 +249,11 @@
   });
   
   function validate(obj){
-    if($(obj).val()==$(obj).attr("data-default"))
+    if($(obj).val()==$(obj).attr("data-default")){
       $(obj).val('');
       //$(obj).addClass("error");
+      alert('foi')
+    }  
   }
   
 </script>  
