@@ -233,13 +233,14 @@
         
       },
       onkeyup:function(e){
-        console.log('oi3')
         setTimeout(function() {
           var id = e.id;
           if($('#'+id).hasClass('valid')){
+            console.log('true')
             $(this).prev().removeClass('icone-form-'+id+'-erro');
           }
           if($('#'+id).hasClass('error')){
+            console.log('false')
             $('#'+id).prev().addClass('icone-form-'+id+'-erro');
           }
         },300);
