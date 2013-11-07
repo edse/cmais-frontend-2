@@ -233,7 +233,19 @@
         
       },
        
-      highlight:true,
+      highlight:function(e){
+        setTimeout(function() {
+          var id = e.id;
+          if($('#'+id).hasClass('valid')){
+            console.log('true')
+            $('#'+id).prev().removeClass('icone-form-'+id+'-erro');
+          }
+          if($('#'+id).hasClass('error')){
+            console.log('false')
+            $('#'+id).prev().addClass('icone-form-'+id+'-erro');
+          }
+        },300);
+      },
       onkeyup:function(e){
         setTimeout(function() {
           var id = e.id;
