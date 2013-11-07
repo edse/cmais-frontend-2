@@ -232,6 +232,22 @@
         }
         
       },
+      onkeyup:function(e){
+        var id = e.id;
+        if($('#'+id).hasClass('valid')){
+          $(this).prev().removeClass('icone-form-'+id+'-erro');
+        }else if($('#'+id).hasClass('error')){
+          $('#'+id).prev().addClass('icone-form-'+id+'-erro');
+        }
+      },
+      onfocusout:function(e){
+        var id = e.id;
+        if($('#'+id).hasClass('valid')){
+          $('#'+id).prev().removeClass('icone-form-'+id+'-erro');
+        }else if($('#'+id).hasClass('error')){
+          $('#'+id).prev().addClass('icone-form-'+id+'-erro');
+        }
+      },
       messages:{
         nome:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
         idade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
@@ -242,25 +258,7 @@
         datafile:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
         concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
       }, 
-      onkeyup:function(e){
-        var id = e.id;
-        if($('#'+id).hasClass('valid')){
-          $(this).prev().removeClass('icone-form-'+id+'-erro');
-        }else if($('#'+id).hasClass('error')){
-          $('#'+id).prev().addClass('icone-form-'+id+'-erro');
-        }
-        return true
-      },
-      onfocusout:function(e){
-        var id = e.id;
-        if($('#'+id).hasClass('valid')){
-          $('#'+id).prev().removeClass('icone-form-'+id+'-erro');
-        }else if($('#'+id).hasClass('error')){
-          $('#'+id).prev().addClass('icone-form-'+id+'-erro');
-        }
-        return true
-      },
-      unhighlight:true,
+      
       success: function(label){
       }
     });
