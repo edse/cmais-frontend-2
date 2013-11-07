@@ -243,7 +243,7 @@
         concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
       }, 
       onkeyup:function(e){
-        console.log(e)
+        console.log(e.id)
         //if(e.hasClass('valid')){
           //alert('foi');
         //}
