@@ -386,7 +386,7 @@
         <!--outros destaques-->
   <?php
     $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"para-os-pais");
-    $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($particularSection->getId(), "destaques-secundarios"); // Pega o bloco "destaques-secundarios" da seção "para os pais"
+    $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($site->getId(), "destaques-secundarios"); // Pega o bloco "destaques-secundarios" da seção "para os pais"
     if ($block) $_displays["destaques-secundarios"] = $block->retriveDisplays(); // Pega os destaques do bloco "destaques-secundarios"    
   ?>        
   <?php if(isset($_displays['destaques-secundarios'])): ?>
