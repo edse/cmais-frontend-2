@@ -74,7 +74,7 @@
             
             <!--section-->
             <section>
-              <p><?php $asset->getHeadline() ?></p>
+              <p><?php $asset->getDescription() ?></p>
               <?php $preview = $asset->retriveRelatedAssetsByRelationType("Preview") ?>
               <?php if(count($preview) > 0): ?>
                 <p>
