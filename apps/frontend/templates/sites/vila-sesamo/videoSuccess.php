@@ -52,7 +52,7 @@
     <h1>
       <i class="icones-sprite-interna icone-atividades-grande"></i>
       <?php echo $section->getTitle() ?>
-      <a class="todos-assets" title="voltar para todos vídeos">
+      <a class="todos-assets" title="voltar para todas vídeos" href="/<?php $site->getSlug()?>/<?php $section->getSlug()?>" target="_self" >
         <i class="icones-setas icone-voltar-videos"></i>
         <p>todas os vídeos</p>
       </a>
