@@ -71,7 +71,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form-horizontal .span8.control-group.cidade input{width:400px;}
 .form-horizontal .idade.span2 input,
 .form-horizontal .span8.control-group input,
-.form-horizontal .control-group a  { height:26px; line-height:26px; display: block;border-radius: 0;height: 35px; float: left; padding: 15px 7px; margin: 0;}
+.form-horizontal .control-group a  { line-height:26px; display: block;border-radius: 0;height: 35px; float: right; padding: 15px 7px;*padding: 0px 7px!important; margin: 0;}
 .form-horizontal .estado .control-label { width:auto; }
 .form-horizontal .estado .control-group,
 .form-horizontal .estado select { width:90px; }
@@ -80,7 +80,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form-horizontal .control-group { margin:0 0 2% 0; min-height:25px; }
 .form-horizontal .control-group.idade  .control-group { width: 66%; float:right; } 
 .form-horizontal .idade.span2 input{width: 10px; margin-left: 10px;float:right;}
-.form-horizontal .idade.span2 { width:170px; float:left; margin-left: 10px;}
+.form-horizontal .idade.span2 { width:170px; float:left; margin-left: 20px;}
 .form-horizontal .span2.estado { width:85px; float:left; margin-left:20px; }
 .form-horizontal .span2.estado select{width:85px;}
 .form-horizontal .span2 input { width: 75%; }
