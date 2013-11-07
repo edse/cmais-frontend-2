@@ -43,7 +43,7 @@
               <h1><?php echo $asset->getTitle() ?></h1>
                
               <div class="overflow">
-                <span class="data"><?php echo format_date($asset->getUpdatedAt(), "g");?> - Por</span>
+                <span class="data"><?php echo $asset->getUpdatedAt();?> - Por</span>
                 
                 <?php $colaboradores = $asset->retriveRelatedAssetsByRelationType("Colaborador") ?>
                 <?php if(count($colaboradores) > 0): ?>
@@ -74,7 +74,14 @@
             
             <!--section-->
             <section>
-              <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+              <p><?php $asset->getDescription() ?></p>
+              <?php $preview = $asset->retriveRelatedAssetsByRelationType("Preview") ?>
+              <?php if(count($preview) > 0): ?>
+                <p>
+                  <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $asset->getTitle() ?>" />
+                </p>
+              <?php endif; ?>
+              <?php //echo html_entity_decode($asset->AssetContent->render()) ?>
               
               <!--imprimir/baixar-->
               <div class="imprimir">
