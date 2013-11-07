@@ -242,8 +242,8 @@
         datafile:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
         concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
       }, 
-      unhighlight:{
-        if($(this).hasClass('valid')){
+      unhighlight:function(e){
+        if(e.hasClass('valid')){
           alert('foi');
         }
       },
