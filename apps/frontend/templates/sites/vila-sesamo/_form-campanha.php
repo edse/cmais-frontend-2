@@ -232,7 +232,7 @@
         }
         
       },
-      onkeyup:function(e){
+       onkeyup:function(e){
         setTimeout(function() {
           var id = e.id;
           if($('#'+id).hasClass('valid')){
@@ -243,9 +243,19 @@
             console.log('false')
             $('#'+id).prev().addClass('icone-form-'+id+'-erro');
           }
-        },800);
+        },300);
       },
-       
+      onfocusout:function(e){
+        setTimeout(function() {
+          var id = e.id;
+          if($('#'+id).hasClass('valid')){
+            $('#'+id).prev().removeClass('icone-form-'+id+'-erro');
+          }
+          if($('#'+id).hasClass('error')){
+            $('#'+id).prev().addClass('icone-form-'+id+'-erro');
+          }
+        },300); 
+      },
       messages:{
         nome:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
         idade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
