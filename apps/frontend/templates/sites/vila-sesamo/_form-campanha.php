@@ -237,7 +237,7 @@
           var id = e.id;
           if($('#'+id).hasClass('valid')){
             console.log('true')
-            $(this).prev().removeClass('icone-form-'+id+'-erro');
+            $('#'+id).prev().removeClass('icone-form-'+id+'-erro');
           }
           if($('#'+id).hasClass('error')){
             console.log('false')
