@@ -12,29 +12,29 @@
     
     <!--span8-->
     <div class="span8">
-      
-      <?php if(isset($_GET["error"]) == 1) :?>  
+      <?php echo isset($_GET["error"]?>
+      <?php if($_GET["error"] == 1) :?>  
         <div class="msgErro" id="statusMsg_3">
           <p>
             Erro inesperado<br/>
             Por favor, tente mais tarde!
           </p>
         </div>
-      <?php elseif(isset($_GET["error"]) == 2): ?>  
+      <?php elseif($_GET["error"] == 2): ?>  
         <div class="msgErro" id="statusMsg_1">
           <p>
             Formato de imagem inválido<br/>
             Por favor, tente com JPG, PNG ou GIF!
           </p>
         </div>
-      <?php elseif(isset($_GET["error"]) == 3): ?>
+      <?php elseif($_GET["error"] == 3): ?>
         <div class="msgErro" id="statusMsg_2">
           <p>
             Arquivo muito grande<br/>
             Por favor, tente com um arquivo de até 15 MB!
           </p>
         </div>
-      <?php elseif(isset($_GET["success"]) == 2): ?>
+      <?php elseif($_GET["success"] == 2): ?>
         <div class="msgAcerto" id="statusMsg_0">
           <p>
             Sua brincadeira foi enviada com sucesso<br/>
@@ -45,7 +45,7 @@
       <!--form-->  
        
       <!--form class="form-horizontal" id="form-contato" action="" method="post" enctype="multipart/form-data"-->
-      <form class="form-horizontal" id="form-contato" action="http://cmais.com.br/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post" enctype="multipart/form-data" <?php if(isset($_GET['sucess']) || isset($_GET['error'])) echo "style:'display:none;'" ?> >
+      <form class="form-horizontal" id="form-contato" action="http://cmais.com.br/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post" enctype="multipart/form-data" <?php if(isset($_GET['sucess']) != "" || isset($_GET['error']) != "") echo "style:'display:none;'" ?> >
         <input type="hidden" id="campanha" name="campanha" value="<?php echo $campaign->getTitle() ?>" />
         <!--Nome-->
         <div class="control-group span8">
