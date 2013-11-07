@@ -263,14 +263,29 @@
   }
   function verifyKey(){
     setTimeout(function() {
-        $('input, textarea').not('#concordo').each(function(){
-          var campo = $(this).attr('id');
-          if($(this).hasClass('error')){
-            $(this).prev().addClass('icone-form-'+campo+'-erro');
-          }else{
-            $(this).prev().removeClass('icone-form-'+campo+'-erro');
-          }
-        });
-      }, 100);
+      $('input').not('#concordo').each(function(){
+        var campo = $(this).attr('id');
+        if($(this).hasClass('error')){
+          $(this).prev().addClass('icone-form-'+campo+'-erro');
+        }else{
+          $(this).prev().removeClass('icone-form-'+campo+'-erro');
+        }
+      });
+      $('#concordo').delay(50, function(){
+        if($(this).hasClass('error')){
+          $(this).parent().css('color', 'yellow');
+        }else{
+          $(this).parent().css('color', 'white');
+        }
+      });
+      $('#mensagem').delay(50, function(){
+        if($(this).hasClass('error')){
+          $(this).prev().addClass('icone-form-'+campo+'-erro');
+        }else{
+          $(this).prev().removeClass('icone-form-'+campo+'-erro');
+        }
+      });
+    }, 100);
+      
   }
 </script>  
