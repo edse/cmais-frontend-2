@@ -180,6 +180,7 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
+    /*
 	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
 	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});
 	  $('#idade').focus(function(){ 	if($(this).val() == "Idade") {  $(this).val(''); }; });
@@ -190,11 +191,14 @@
 	  $('#email').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Email'); 	 };	});
 	  $('#mensagem').focus(function(){ 	if($(this).val() == "Mensagem") {  $(this).val(''); };	});
 	  $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Mensagem'); };	});
-  	
+  	*/
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
       	form.submit();
+      },
+      beforesend:function(){
+        alert('ói')
       },
       rules:{
         nome:{
@@ -244,10 +248,7 @@
       }
     });
     
-    if($('input').hasClass('error')){
-      var campo = $(this).attr('name');
-      $(this).addClass('icone-form-'+campo+'-erro')
-    }
+    
   });
   
   function validate(obj){
