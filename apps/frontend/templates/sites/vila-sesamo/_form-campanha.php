@@ -251,9 +251,9 @@
         $('input, #mensagem').not('#concordo').each(function(){
           var campo = $(this).attr('id');
           if($(this).hasClass('error')){
-            $(this).parent().addClass('icone-form-'+campo+'-erro');
+            $(this).prev().addClass('icone-form-'+campo+'-erro');
           }else{
-            $(this).parent().removeClass('icone-form-'+campo+'-erro');
+            $(this).prev().removeClass('icone-form-'+campo+'-erro');
           }
         });
       }, 100);
