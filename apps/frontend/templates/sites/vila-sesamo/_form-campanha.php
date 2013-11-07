@@ -232,20 +232,19 @@
         }
         
       },
-
-      onkeyup:function(e){
+       
+      onfocusout:function(e){
         setTimeout(function() {
           var id = e.id;
           if($('#'+id).hasClass('valid')){
-            console.log('true')
             $('#'+id).prev().removeClass('icone-form-'+id+'-erro');
           }
           if($('#'+id).hasClass('error')){
-            console.log('false')
             $('#'+id).prev().addClass('icone-form-'+id+'-erro');
           }
-        },300);
+        },300); 
       },
+      
       messages:{
         nome:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
         idade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
