@@ -263,7 +263,7 @@
   }
   function verifyKey(){
     setTimeout(function() {
-        $('input, #mensagem').not('#concordo').each(function(){
+        $('input, textarea').not('#concordo').each(function(){
           var campo = $(this).attr('id');
           if($(this).hasClass('error')){
             $(this).prev().addClass('icone-form-'+campo+'-erro');
