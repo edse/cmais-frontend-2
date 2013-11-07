@@ -202,6 +202,9 @@
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
+        //resgatando a página que a pessoa
+        url = window.location;
+        $('#urlElement').attr('value',url.href);
       	form.submit();
       },
       rules:{
@@ -258,10 +261,6 @@
     
     $('#enviar').click(function(){
       verifyKey();
-      //resgatando a página que a pessoa
-      url = window.location;
-      $('#urlElement').attr('value',url)
-      console.log(url.pathname);
     });
     
   });
