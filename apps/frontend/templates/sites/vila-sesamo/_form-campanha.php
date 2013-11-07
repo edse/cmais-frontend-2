@@ -12,7 +12,7 @@
     
     <!--span8-->
     <div class="span8">
-      
+      <?php if(isset($_GET["error"])) :?>
         <?php if($_GET["error"] == 1) :?>  
           <div class="msgErro" id="statusMsg_3">
             <p>
@@ -43,8 +43,8 @@
             </p>
           </div>
           <?php endif; ?>
-        <?php endif?>
-
+        <?php endif; ?>
+      <?php endif; ?>
       <!--form-->  
        
       <!--form class="form-horizontal" id="form-contato" action="" method="post" enctype="multipart/form-data"-->
