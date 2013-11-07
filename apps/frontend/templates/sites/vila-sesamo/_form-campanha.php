@@ -12,7 +12,19 @@
     
     <!--span8-->
     <div class="span8">
-      <?php if(isset($_GET["error"])||isset($_GET["success"])) :?>
+      
+      <?php if(isset($_GET["success"])):?>
+        <?php if($_GET["success"] == 2): ?>
+          <div class="msgAcerto" id="statusMsg_0">
+            <p>
+              Sua brincadeira foi enviada com sucesso<br/>
+              e em breve estará em nossa galeria de brincadeiras!
+            </p>
+          </div>
+        <?php endif; ?>
+      <?php endif;?> 
+       
+      <?php if(isset($_GET["error"])) :?>
         <?php if($_GET["error"] == 1) :?>  
           <div class="msgErro" id="statusMsg_3">
             <p>
@@ -34,15 +46,6 @@
               Por favor, tente com um arquivo de até 15 MB!
             </p>
           </div>
-        <?php elseif(isset($_GET["success"])):?>
-          <?php if($_GET["success"] == 2): ?>
-          <div class="msgAcerto" id="statusMsg_0">
-            <p>
-              Sua brincadeira foi enviada com sucesso<br/>
-              e em breve estará em nossa galeria de brincadeiras!
-            </p>
-          </div>
-          <?php endif; ?>
         <?php endif; ?>
       <?php endif; ?>
       <!--form-->  
