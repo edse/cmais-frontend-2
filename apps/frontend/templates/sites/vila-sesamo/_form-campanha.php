@@ -192,6 +192,9 @@
 	  $('#mensagem').focus(function(){ 	if($(this).val() == "Mensagem") {  $(this).val(''); };	});
 	  $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Mensagem'); };	});
   	*/
+  	$('#enviar').click(function(){
+  	  alert('foi');
+  	})
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
