@@ -13,7 +13,7 @@
     <!--span8-->
     <div class="span8">
       
-      <?php if(!isset($_GET['success']) == "2") :?>  
+      <?php if(isset($_GET['success']) == "2") :?>  
       <div class="msgAcerto" id="statusMsg_0">
         <p>
           Sua brincadeira foi enviada com sucesso<br/>
@@ -22,7 +22,7 @@
       </div>
       <?php endif; ?>
       
-      <?php if(!isset($_GET['error']) == "2"): ?>  
+      <?php if(isset($_GET['error']) == "2"): ?>  
       <div class="msgErro" id="statusMsg_1">
         <p>
           Formato de imagem inválido<br/>
@@ -31,7 +31,7 @@
       </div>
       <?php endif; ?>
       
-      <?php if(!isset($_GET['error']) == "3"): ?>
+      <?php if(isset($_GET['error']) == "3"): ?>
       <div class="msgErro" id="statusMsg_2">
         <p>
           Arquivo muito grande<br/>
@@ -40,7 +40,7 @@
       </div>
       <?php endif; ?>
       
-      <?php if(!isset($_GET['erro']) == "1"): ?>
+      <?php if(isset($_GET['erro']) == "1"): ?>
       <div class="msgErro" id="statusMsg_3">
         <p>
           Erro inesperado<br/>
@@ -49,7 +49,7 @@
       </div>
       <?php endif; ?>
       <!--form-->  
-      <?php if(!isset($_GET['sucesso']) || !isset($_GET['sucesso'])): ?>  
+      <?php if(!isset($_GET['sucesso']) || !isset($_GET['error'])): ?>  
       <!--form class="form-horizontal" id="form-contato" action="" method="post" enctype="multipart/form-data"-->
       <form class="form-horizontal" id="form-contato" action="http://cmais.com.br/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post" enctype="multipart/form-data">
         <input type="hidden" id="campanha" name="campanha" value="<?php echo $campaign->getTitle() ?>" />
