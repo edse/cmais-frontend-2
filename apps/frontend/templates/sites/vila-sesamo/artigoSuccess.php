@@ -158,24 +158,68 @@
         
         <!--col dir -->
         <div class="span4 col-dir">
-         
+         <!--nuvem de tags -->
+  <?php
+    $tags = array();
+    $sections = $asset->getSections();
+    foreach($sections as $s) { // pega as categorias (seções-filhas da seção "categorias") pra utilizar como se fossem tags
+      if($s->getParentSectionId() > 0) {
+        $parentSection = Doctrine::getTable('Section')->findOneById($s->getParentSectionId());
+        if($parentSection->getSlug() == "categorias") {
+          $tags[] = $s->getTitle();
+        }
+      }
+    }  
+    if(count($asset->getTags())>0){
+      foreach($asset->getTags() as $t) {
+        $tags[] = $t;
+      }
+    }
+  ?>
+  <?php if(count($tags) > 0): ?>
+  <p>+ sobre</p>
+  <ul>
+    <?php foreach($tags as $t): ?>
+    <li><a href="http://cmais.com.br/vila-sesamo/busca?output=search&q=<?php echo $t ?>" title="<?php echo $t ?>"><?php echo $t ?></a></li>
+    <?php endforeach; ?>
+  </ul>
+  <?php endif; ?>
+  <!--/nuvem de tags-->
+  
           <!--tags-->
+          <?php
+            $tags = array();
+            $sections = $asset->getSections();
+            foreach($sections as $s) { // pega as categorias (seções-filhas da seção "categorias") pra utilizar como se fossem tags
+              if($s->getParentSectionId() > 0) {
+                $parentSection = Doctrine::getTable('Section')->findOneById($s->getParentSectionId());
+                if($parentSection->getSlug() == "categorias") {
+                  $tags[] = $s->getTitle();
+                }
+              }
+            }  
+            if(count($asset->getTags())>0){
+              foreach($asset->getTags() as $t) {
+                $tags[] = $t;
+              }
+            }
+          ?>
+          <?php if(count($tags) > 0): ?>
           <div class="box-sobre">
             <h2>
               <i class="icones-sprite-interna icone-carregar-verde"></i>
               sobre...
             </h2>
             <div class="links">
-              <a href="#" title="titulo">habitos saudáveis</a>
-              <a href="#" title="titulo">comunicação</a>
-              <a href="#" title="titulo">pré-escolar</a>
-              <a href="#" title="titulo">auto-conhecimento</a>
-              <a href="#" title="titulo">ciência</a>
+              <?php foreach($tags as $t): ?>
+                <a href="/<?php $site->getSlug()?>/busca?output=search&q=<?php echo $t ?>" title="<?php echo $t ?>"><?php echo $t ?></a>
+              <?php endforeach; ?>
             </div>
             <div class="bottom-box-sobre">
               <img src="/portal/images/capaPrograma/vilasesamo2/box-bottom-sobre.png" alt=""/>
             </div>
           </div>
+          <?php endif; ?>
           <!--/tags-->
           
           <!-- para ler-->
