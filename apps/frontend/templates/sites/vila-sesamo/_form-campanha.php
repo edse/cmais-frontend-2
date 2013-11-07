@@ -232,19 +232,8 @@
         }
         
       },
-       
-      
       onkeyup:function(e){
-        setTimeout(function() {
-          $('input, #mensagem').not('#concordo').each(function(){
-            var campo = $(this).attr('id');
-            if($(this).hasClass('error')){
-              $(this).prev().addClass('icone-form-'+campo+'-erro');
-            }else{
-              $(this).prev().removeClass('icone-form-'+campo+'-erro');
-            }
-          });
-        }, 100);
+        verifyKey();
       },
       messages:{
         nome:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
@@ -262,16 +251,7 @@
     });
     
     $('#enviar').click(function(){
-      setTimeout(function() {
-        $('input, #mensagem').not('#concordo').each(function(){
-          var campo = $(this).attr('id');
-          if($(this).hasClass('error')){
-            $(this).prev().addClass('icone-form-'+campo+'-erro');
-          }else{
-            $(this).prev().removeClass('icone-form-'+campo+'-erro');
-          }
-        });
-      }, 100);
+      verifyKey();
     });
     
   });
@@ -281,5 +261,16 @@
       $(obj).val('');
       //$(obj).addClass("error");
   }
-  
+  function verifyKey(){
+    setTimeout(function() {
+        $('input, #mensagem').not('#concordo').each(function(){
+          var campo = $(this).attr('id');
+          if($(this).hasClass('error')){
+            $(this).prev().addClass('icone-form-'+campo+'-erro');
+          }else{
+            $(this).prev().removeClass('icone-form-'+campo+'-erro');
+          }
+        });
+      }, 100);
+  }
 </script>  
