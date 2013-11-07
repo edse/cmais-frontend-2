@@ -483,10 +483,10 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques .tipoC { background:#999; }
 .destaques .tipoD { background:#eee; }
 .divisa { display: block; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-divisa.png) repeat-x; height:2px; max-width:940px; margin:0 auto 20px; }
-.divisa.carrega{margin:0 20px;}
-.interna.atividades .divisa.carrega{background:#883feb;}
-.interna.jogos .divisa.carrega{background: #3aaaec;}
-.interna.videos .divisa.carrega{background:#f78701;}
+.divisa.carregar{margin:0 20px;}
+.interna.atividades .divisa.carregar{background:#883feb;}
+.interna.jogos .divisa.carregar{background: #3aaaec;}
+.interna.videos .divisa.carregar{background:#f78701;}
 .bgtotal { width:100%; max-width:100% !important; background:#fee133; padding-top:5px; padding-bottom:25px; }
 #container-lista li,
 .destaques .span6 { width:31.6%; overflow:hidden; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
