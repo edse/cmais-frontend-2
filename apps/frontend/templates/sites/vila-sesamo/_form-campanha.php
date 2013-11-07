@@ -248,7 +248,7 @@
     
     $('#enviar').click(function(){
       setTimeout(function() {
-        $('input, #mensagem, #concordo:not').each(function(){
+        $('input, #mensagem').not('#concordo')each(function(){
           if($(this).hasClass('error')){
             alert($(this).attr('id'));
           }
