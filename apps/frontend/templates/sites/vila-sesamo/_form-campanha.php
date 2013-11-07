@@ -19,8 +19,8 @@
             <p>
               Sua brincadeira foi enviada com sucesso<br/>
               e em breve estará em nossa galeria de brincadeiras!
-              <a class="btn" href="/campanhas/" title="">visitar a galeria de brincadeiras</a>
             </p>
+            <a class="btn" href="/vila-sesamo/campanhas/brincar-e-um-direito-da-crianca" title="visitar a galeria de brincadeiras">visitar a galeria de brincadeiras</a>
           </div>
         <?php endif; ?>
       <?php endif;?> 
