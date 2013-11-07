@@ -260,6 +260,7 @@
         }
         return true
       },
+      unhighlight:true,
       success: function(label){
       }
     });
