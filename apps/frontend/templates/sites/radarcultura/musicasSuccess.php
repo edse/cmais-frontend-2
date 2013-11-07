@@ -155,7 +155,7 @@
           </table>
           <script>
             $(function(){
-              $('.socialBtn').click(function(){
+              $('.socialBtn').live("click", function(){
                 $('#btn-pressed').attr('value',$(this).attr('id'));
                 $('#btn-pressed').attr('name','indicada-'+ $(this).attr('name'));
                 $('#titulo').val($('.music-'+$(this).attr('name')).html());
