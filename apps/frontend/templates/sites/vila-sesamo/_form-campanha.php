@@ -243,7 +243,7 @@
             console.log('false')
             $('#'+id).prev().addClass('icone-form-'+id+'-erro');
           }
-        },300);
+        },800);
       },
        
       messages:{
