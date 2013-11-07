@@ -248,12 +248,12 @@
     
     $('#enviar').click(function(){
       setTimeout(function() {
-        $('input, textarea').each(function(){
+        $('input, #mensagem').each(function(){
           if($(this).hasClass('error')){
             alert($(this).attr('id'));
           }
         });
-      }, 800);
+      }, 100);
     });
     
   });
