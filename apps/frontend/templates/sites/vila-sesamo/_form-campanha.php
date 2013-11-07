@@ -13,35 +13,43 @@
     <!--span8-->
     <div class="span8">
       
-      <div class="msgAcerto" id="statusMsg_0" style="display:none">
+      <?php if(!isset($_GET['success']) == "2") :?>  
+      <div class="msgAcerto" id="statusMsg_0">
         <p>
           Sua brincadeira foi enviada com sucesso<br/>
           e em breve estará em nossa galeria de brincadeiras!
         </p>
       </div>
-
-      <div class="msgErro" id="statusMsg_1" style="display:none">
+      <?php endif; ?>
+      
+      <?php if(!isset($_GET['error']) == "2"): ?>  
+      <div class="msgErro" id="statusMsg_1">
         <p>
           Formato de imagem inválido<br/>
           Por favor, tente com JPG, PNG ou GIF!
         </p>
       </div>
-
-      <div class="msgErro" id="statusMsg_2" style="display:none">
+      <?php endif; ?>
+      
+      <?php if(!isset($_GET['error']) == "3"): ?>
+      <div class="msgErro" id="statusMsg_2">
         <p>
           Arquivo muito grande<br/>
           Por favor, tente com um arquivo de até 15 MB!
         </p>
       </div>
+      <?php endif; ?>
       
-      <div class="msgErro" id="statusMsg_3" style="display:none">
+      <?php if(!isset($_GET['erro']) == "1"): ?>
+      <div class="msgErro" id="statusMsg_3">
         <p>
           Erro inesperado<br/>
           Por favor, tente mais tarde!
         </p>
       </div>
-      
-      <!--form-->    
+      <?php endif; ?>
+      <!--form-->  
+      <?php if(!isset($_GET['sucesso']) || !isset($_GET['sucesso'])): ?>  
       <!--form class="form-horizontal" id="form-contato" action="" method="post" enctype="multipart/form-data"-->
       <form class="form-horizontal" id="form-contato" action="http://cmais.com.br/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post" enctype="multipart/form-data">
         <input type="hidden" id="campanha" name="campanha" value="<?php echo $campaign->getTitle() ?>" />
@@ -150,6 +158,7 @@
         
       </form>
       <!--/form-->
+      <?php endif; ?>
       
     </div>
     <!--/span8-->
@@ -184,7 +193,7 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
-    /*
+    
 	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
 	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});
 	  $('#idade').focus(function(){ 	if($(this).val() == "Idade") {  $(this).val(''); }; });
@@ -195,9 +204,6 @@
 	  $('#email').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Email'); 	 };	});
 	  $('#mensagem').focus(function(){ 	if($(this).val() == "Mensagem") {  $(this).val(''); };	});
 	  $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Mensagem'); };	});
-  	*/
-  	
-  	
   	
     var validator = $('#form-contato').validate({
       
