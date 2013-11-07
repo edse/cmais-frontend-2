@@ -110,7 +110,7 @@
         
         <!--Anexo-->
          <div class="control-group span2 idade anexo">
-          <label class="control-label icones-form icone-form-anexo" for="anexo"></label>
+          <label class="control-label icones-form icone-form-datafile" for="datafile"></label>
           <input id="datafile" type="file" name="datafile">
           <!--a href="#" title="Anexar">Anexar</a-->
         </div>
@@ -249,8 +249,11 @@
     $('#enviar').click(function(){
       setTimeout(function() {
         $('input, #mensagem').not('#concordo').each(function(){
+          var campo = $(this).attr('id');
           if($(this).hasClass('error')){
-            alert($(this).attr('id'));
+            $(this).addClass('icone-form-'+campo+'-erro');
+          }else{
+            $(this).removeClass('icone-form-'+campo+'-erro');
           }
         });
       }, 100);
