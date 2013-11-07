@@ -12,7 +12,7 @@
     
     <!--span8-->
     <div class="span8">
-      <?php if(isset($_GET["error"])) :?>
+      <?php if(isset($_GET["error"])||isset($_GET["success"])) :?>
         <?php if($_GET["error"] == 1) :?>  
           <div class="msgErro" id="statusMsg_3">
             <p>
