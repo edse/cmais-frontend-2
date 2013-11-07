@@ -245,18 +245,18 @@
       onkeyup:function(e){
         var id = e.id;
         if($('#'+id).hasClass('valid')){
-          $(this).prev().removeClass('icone-form-'+campo+'-erro');
+          $(this).prev().removeClass('icone-form-'+id+'-erro');
         }else if($('#'+id).hasClass('error')){
-          $('#'+id).prev().addClass('icone-form-'+campo+'-erro');
+          $('#'+id).prev().addClass('icone-form-'+id+'-erro');
         }
         
       },
       onfocusout:function(e){
         var id = e.id;
         if($('#'+id).hasClass('valid')){
-          $('#'+id).prev().removeClass('icone-form-'+campo+'-erro');
+          $('#'+id).prev().removeClass('icone-form-'+id+'-erro');
         }else if($('#'+id).hasClass('error')){
-          $('#'+id).prev().addClass('icone-form-'+campo+'-erro');
+          $('#'+id).prev().addClass('icone-form-'+id+'-erro');
         }
       },
       success: function(label){
