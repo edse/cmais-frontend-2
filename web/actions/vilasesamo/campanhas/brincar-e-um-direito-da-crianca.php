@@ -4,7 +4,7 @@ include("/var/frontend/web/actions/includes/functions.php");
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
-    $to = "vilasesamooficial@gmail.com";
+    $to = "jedoljak@gmail.com"; //"vilasesamooficial@gmail.com";
     $email = strip_tags($_REQUEST['email']);
     $name = strip_tags($_REQUEST['nome']);
     $campaign = strip_tags($_REQUEST['campanha']);
@@ -29,30 +29,30 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $attach[] = array($_FILES['datafile']['tmp_name'], $file_mime_type);
     //die($file_mime_type);
     if (!in_array($file_mime_type, array("image/gif", "image/png", "image/jpg"))) {
-      //if (unlink($_FILES['datafile']['tmp_name'])) {
-        //header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=2");
-        die("1");
-      //}
+      if (unlink($_FILES['datafile']['tmp_name'])) {
+        header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=2");
+        //die("1");
+      }
     }
     else if ($file_size > 15728640) { // 15MB
-      //if (unlink($_FILES['datafile']['tmp_name'])) {
-        //header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=3");
-        die("2");
-      //}
+      if (unlink($_FILES['datafile']['tmp_name'])) {
+        header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=3");
+        //die("2");
+      }
     }
     else {
       
       if(sendMailAtt($to, $from, $subject, $message, $attach)) {
-        //if (unlink($_FILES['datafile']['tmp_name'])) {
-          //header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?success=2");
-          die("0");
-        //}
+        if (unlink($_FILES['datafile']['tmp_name'])) {
+          header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?success=2");
+          //die("0");
+        }
       }
       else{
-        //if (unlink($_FILES['datafile']['tmp_name'])) {
-          //header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=1");
+        if (unlink($_FILES['datafile']['tmp_name'])) {
+          header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=1");
           die("3");
-        //}
+        }
       }
     }
   }

@@ -131,7 +131,11 @@
           </label>
         </div>
         <!--/concorda-->
-         
+        
+        <!--asset que a pessoa esta -->
+        <input type="hidden" id="urlElement" name="urlElement" value="">
+        <!--/asset que a pessoa esta -->
+        
         <!--Termos e condições-->
         <div class="span12 termo">
           <?php include_partial_from_folder('sites/vila-sesamo', 'global/termos') ?>
@@ -193,6 +197,8 @@
 	  $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Mensagem'); };	});
   	*/
   	
+  	
+  	
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
@@ -252,6 +258,10 @@
     
     $('#enviar').click(function(){
       verifyKey();
+      //resgatando a página que a pessoa
+      url = window.location;
+      $('#urlElement').attr('value',url)
+      console.log(url);
     });
     
   });
