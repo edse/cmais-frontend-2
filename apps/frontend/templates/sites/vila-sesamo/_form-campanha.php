@@ -232,7 +232,19 @@
         }
         
       },
-       onkeyup:function(e){
+       
+      onfocusout:function(e){
+        setTimeout(function() {
+          var id = e.id;
+          if($('#'+id).hasClass('valid')){
+            $('#'+id).prev().removeClass('icone-form-'+id+'-erro');
+          }
+          if($('#'+id).hasClass('error')){
+            $('#'+id).prev().addClass('icone-form-'+id+'-erro');
+          }
+        },300); 
+      },
+      onkeyup:function(e){
         setTimeout(function() {
           var id = e.id;
           if($('#'+id).hasClass('valid')){
@@ -244,17 +256,6 @@
             $('#'+id).prev().addClass('icone-form-'+id+'-erro');
           }
         },300);
-      },
-      onfocusout:function(e){
-        setTimeout(function() {
-          var id = e.id;
-          if($('#'+id).hasClass('valid')){
-            $('#'+id).prev().removeClass('icone-form-'+id+'-erro');
-          }
-          if($('#'+id).hasClass('error')){
-            $('#'+id).prev().addClass('icone-form-'+id+'-erro');
-          }
-        },300); 
       },
       messages:{
         nome:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
