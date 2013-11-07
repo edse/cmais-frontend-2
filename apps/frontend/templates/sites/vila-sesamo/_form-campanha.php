@@ -247,12 +247,14 @@
     });
     
     $('#enviar').click(function(){
-      $('input').each(function(){
-        if($(this).hasClass('error')){
-          alert($(this).attr('id'));
-        }
-      })
-    })
+      setTimeout(function() {
+        $('input, textarea').each(function(){
+          if($(this).hasClass('error')){
+            alert($(this).attr('id'));
+          }
+        });
+      }, 800);
+    });
     
   });
   
