@@ -483,7 +483,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques .tipoC { background:#999; }
 .destaques .tipoD { background:#eee; }
 .divisa { display: block; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-divisa.png) repeat-x; height:2px; max-width:940px; margin:0 auto 20px; }
-.divisa.carregar{margin:0 20px;}
+.divisa.carregar{margin:0 auto;}
 .interna.atividades .divisa.carregar{background:#883feb;}
 .interna.jogos .divisa.carregar{background: #3aaaec;}
 .interna.videos .divisa.carregar{background:#f78701;}
