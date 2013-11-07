@@ -212,8 +212,13 @@
             </h2>
             <div class="links">
               <?php foreach($tags as $t): ?>
-                <a href="/<?php $site->getSlug()?>/busca?output=search&q=<?php echo $t ?>" title="<?php echo $t ?>"><?php echo $t ?></a>
+                <a href="http://cmais.com.br/vila-sesamo/busca?output=search&q=<?php echo $t ?>" title="<?php echo $t ?>"><?php echo $t ?></a>
               <?php endforeach; ?>
+              <a href="#" title="titulo">habitos saudáveis</a>
+              <a href="#" title="titulo">comunicação</a>
+              <a href="#" title="titulo">pré-escolar</a>
+              <a href="#" title="titulo">auto-conhecimento</a>
+              <a href="#" title="titulo">ciência</a>
             </div>
             <div class="bottom-box-sobre">
               <img src="/portal/images/capaPrograma/vilasesamo2/box-bottom-sobre.png" alt=""/>
