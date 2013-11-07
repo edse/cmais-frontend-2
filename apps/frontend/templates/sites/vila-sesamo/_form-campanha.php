@@ -40,7 +40,7 @@
       </div>
       <?php endif; ?>
       
-      <?php if(isset($_GET['erro']) == "1"): ?>
+      <?php if(isset($_GET['error']) == "1"): ?>
       <div class="msgErro" id="statusMsg_3">
         <p>
           Erro inesperado<br/>
@@ -49,9 +49,9 @@
       </div>
       <?php endif; ?>
       <!--form-->  
-      <?php if(!isset($_GET['sucesso']) || !isset($_GET['error'])): ?>  
+       
       <!--form class="form-horizontal" id="form-contato" action="" method="post" enctype="multipart/form-data"-->
-      <form class="form-horizontal" id="form-contato" action="http://cmais.com.br/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post" enctype="multipart/form-data">
+      <form class="form-horizontal" id="form-contato" action="http://cmais.com.br/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post" enctype="multipart/form-data" <?php if(isset($_GET['sucesso']) || isset($_GET['error'])) echo "style:'display:none;'" ?> >
         <input type="hidden" id="campanha" name="campanha" value="<?php echo $campaign->getTitle() ?>" />
         <!--Nome-->
         <div class="control-group span8">
@@ -158,7 +158,7 @@
         
       </form>
       <!--/form-->
-      <?php endif; ?>
+      
       
     </div>
     <!--/span8-->
