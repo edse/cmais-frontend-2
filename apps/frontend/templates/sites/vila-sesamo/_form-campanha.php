@@ -51,7 +51,7 @@
       <!--form-->  
        
       <!--form class="form-horizontal" id="form-contato" action="" method="post" enctype="multipart/form-data"-->
-      <form class="form-horizontal" id="form-contato" action="http://cmais.com.br/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post" enctype="multipart/form-data" <?php if(isset($_GET['sucess']) != "" || isset($_GET['error']) != "") echo "style:'display:none;'" ?> >
+      <form class="form-horizontal" id="form-contato" action="http://cmais.com.br/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post" enctype="multipart/form-data" <?php if(isset($_GET['sucess'])) echo "style:'display:none;'" ?> >
         <input type="hidden" id="campanha" name="campanha" value="<?php echo $campaign->getTitle() ?>" />
         <!--Nome-->
         <div class="control-group span8">
