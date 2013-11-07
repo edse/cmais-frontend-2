@@ -12,37 +12,40 @@
     
     <!--span8-->
     <div class="span8">
+      
       <?php echo isset($_GET["error"])?>
-      <?php echo isset($_GET["success"])?>
-      <?php if($_GET["error"] == 1) :?>  
-        <div class="msgErro" id="statusMsg_3">
-          <p>
-            Erro inesperado<br/>
-            Por favor, tente mais tarde!
-          </p>
-        </div>
-      <?php elseif($_GET["error"] == 2): ?>  
-        <div class="msgErro" id="statusMsg_1">
-          <p>
-            Formato de imagem inválido<br/>
-            Por favor, tente com JPG, PNG ou GIF!
-          </p>
-        </div>
-      <?php elseif($_GET["error"] == 3): ?>
-        <div class="msgErro" id="statusMsg_2">
-          <p>
-            Arquivo muito grande<br/>
-            Por favor, tente com um arquivo de até 15 MB!
-          </p>
-        </div>
-      <?php elseif($_GET["success"] == 2): ?>
-        <div class="msgAcerto" id="statusMsg_0">
-          <p>
-            Sua brincadeira foi enviada com sucesso<br/>
-            e em breve estará em nossa galeria de brincadeiras!
-          </p>
-        </div>
-      <?php endif; ?>
+        <?php if($_GET["error"] == 1) :?>  
+          <div class="msgErro" id="statusMsg_3">
+            <p>
+              Erro inesperado<br/>
+              Por favor, tente mais tarde!
+            </p>
+          </div>
+        <?php elseif($_GET["error"] == 2): ?>  
+          <div class="msgErro" id="statusMsg_1">
+            <p>
+              Formato de imagem inválido<br/>
+              Por favor, tente com JPG, PNG ou GIF!
+            </p>
+          </div>
+        <?php elseif($_GET["error"] == 3): ?>
+          <div class="msgErro" id="statusMsg_2">
+            <p>
+              Arquivo muito grande<br/>
+              Por favor, tente com um arquivo de até 15 MB!
+            </p>
+          </div>
+        <?php elseif(isset($_GET["success"])):?>
+          <?php if($_GET["success"] == 2): ?>
+          <div class="msgAcerto" id="statusMsg_0">
+            <p>
+              Sua brincadeira foi enviada com sucesso<br/>
+              e em breve estará em nossa galeria de brincadeiras!
+            </p>
+          </div>
+          <?php endif; ?>
+        <?php endif?>
+      <?php endif?>
       <!--form-->  
        
       <!--form class="form-horizontal" id="form-contato" action="" method="post" enctype="multipart/form-data"-->
