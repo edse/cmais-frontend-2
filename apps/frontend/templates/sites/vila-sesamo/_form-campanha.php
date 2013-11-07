@@ -222,7 +222,7 @@
           minlength: 3
         },
         datafile:{
-          required: function(){ validate("#datafile"); return true},,
+          required: function(){ validate("#datafile"); return true},
           accept: "png|jpe?g|gif",
           filesize: 15728640
         },
