@@ -242,7 +242,7 @@
           if($('#'+id).hasClass('error')){
             $('#'+id).prev().addClass('icone-form-'+id+'-erro');
           }
-        }, 100);
+        },300);
       },
        
       messages:{
