@@ -43,7 +43,7 @@
               <h1><?php echo $asset->getTitle() ?></h1>
                
               <div class="overflow">
-                <span class="data"><?php echo format_date($asset->getUpdatedAt(), "g");?> - Por</span>
+                <span class="data"><?php echo $asset->getUpdatedAt();?> - Por</span>
                 
                 <?php $colaboradores = $asset->retriveRelatedAssetsByRelationType("Colaborador") ?>
                 <?php if(count($colaboradores) > 0): ?>
