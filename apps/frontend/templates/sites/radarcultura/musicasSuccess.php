@@ -371,11 +371,12 @@
           placement:"left"
         });
 
-        $('.socialBtn').click(function(){
+        $('.socialBtn').live("click", function(){
           var botao = $("#"+$(this).attr('id'));
           $('.socialBtn').not(botao).popover('hide');
           botao.popover();
         });
+        
         
         $('.btn-fechar').click(function(){
           $('.socialBtn').popover('hide');
