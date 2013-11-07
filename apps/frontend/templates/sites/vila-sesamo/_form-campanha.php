@@ -243,18 +243,20 @@
         concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
       }, 
       onkeyup:function(e){
-        if($(e).hasClass('valid')){
+        var id = e.id;
+        if($('#'+id).hasClass('valid')){
           $(this).prev().removeClass('icone-form-'+campo+'-erro');
-        }else if($(e).hasClass('error')){
-          $(e).prev().addClass('icone-form-'+campo+'-erro');
+        }else if($('#'+id).hasClass('error')){
+          $('#'+id).prev().addClass('icone-form-'+campo+'-erro');
         }
         
       },
       onfocusout:function(e){
-        if($(e).hasClass('valid')){
-          $(e).prev().removeClass('icone-form-'+campo+'-erro');
-        }else if($(e).hasClass('error')){
-          $(e).prev().addClass('icone-form-'+campo+'-erro');
+        var id = e.id;
+        if($('#'+id).hasClass('valid')){
+          $('#'+id).prev().removeClass('icone-form-'+campo+'-erro');
+        }else if($('#'+id).hasClass('error')){
+          $('#'+id).prev().addClass('icone-form-'+campo+'-erro');
         }
       },
       success: function(label){
