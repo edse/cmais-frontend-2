@@ -242,7 +242,7 @@
         datafile:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
         concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
       }, 
-      unhighlight:function(e){
+      onkeyup:function(e){
         if(e.hasClass('valid')){
           alert('foi');
         }
