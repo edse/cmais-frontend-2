@@ -245,18 +245,18 @@
       onkeyup:function(e){
         var id = e.id;
         if(id.hasClass('valid')){
-          $(this).prev().removeClass('icone-form-'+campo+'-erro');
+          id.prev().removeClass('icone-form-'+campo+'-erro');
         }else if{
-          $(this).prev().addClass('icone-form-'+campo+'-erro');
+          id.prev().addClass('icone-form-'+campo+'-erro');
         }
         
       },
       onfocusout:function(e){
         var id = e.id;
         if(id.hasClass('valid')){
-          $(this).prev().removeClass('icone-form-'+campo+'-erro');
+          id.prev().removeClass('icone-form-'+campo+'-erro');
         }else if{
-          $(this).prev().addClass('icone-form-'+campo+'-erro');
+          id.prev().addClass('icone-form-'+campo+'-erro');
         }
       },
       success: function(label){
