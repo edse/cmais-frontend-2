@@ -272,6 +272,7 @@
         }
       });
       $('#concordo').delay(50, function(){
+        var campo = $(this).attr('id');
         if($(this).hasClass('error')){
           $(this).parent().css('color', 'yellow');
         }else{
@@ -279,6 +280,7 @@
         }
       });
       $('#mensagem').delay(50, function(){
+        var campo = $(this).attr('id');
         if($(this).hasClass('error')){
           $(this).prev().addClass('icone-form-'+campo+'-erro');
         }else{
