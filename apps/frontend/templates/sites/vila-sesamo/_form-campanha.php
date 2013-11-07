@@ -242,9 +242,10 @@
         datafile:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
         concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
       }, 
-      onclick:{
-        if($(this).hasClass('valid'))
+      unhighlight:{
+        if($(this).hasClass('valid')){
           alert('foi');
+        }
       },
       success: function(label){
       }
