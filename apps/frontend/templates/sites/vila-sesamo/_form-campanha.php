@@ -233,18 +233,22 @@
         
       },
       onkeyup:function(e){
+        console.log('oi')
         var id = e.id;
         if($('#'+id).hasClass('valid')){
           $(this).prev().removeClass('icone-form-'+id+'-erro');
-        }else if($('#'+id).hasClass('error')){
+        }
+        if($('#'+id).hasClass('error')){
           $('#'+id).prev().addClass('icone-form-'+id+'-erro');
         }
       },
       onfocusout:function(e){
+        console.log('o2i')
         var id = e.id;
         if($('#'+id).hasClass('valid')){
           $('#'+id).prev().removeClass('icone-form-'+id+'-erro');
-        }else if($('#'+id).hasClass('error')){
+        }
+        if($('#'+id).hasClass('error')){
           $('#'+id).prev().addClass('icone-form-'+id+'-erro');
         }
       },
