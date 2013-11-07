@@ -242,7 +242,7 @@
           $('#'+id).prev().addClass('icone-form-'+id+'-erro');
         }
       },
-      
+       
       messages:{
         nome:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
         idade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
