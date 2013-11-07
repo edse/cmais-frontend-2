@@ -192,9 +192,7 @@
 	  $('#mensagem').focus(function(){ 	if($(this).val() == "Mensagem") {  $(this).val(''); };	});
 	  $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Mensagem'); };	});
   	*/
-  	$('#enviar').click(function(){
-  	  alert('foi');
-  	})
+  	
     var validator = $('#form-contato').validate({
       
       submitHandler: function(form){
@@ -248,6 +246,13 @@
       }
     });
     
+    $('#enviar').click(function(){
+      $('input').each(function(){
+        if($(this).hasClass('error')){
+          alert($(this).attr('id'));
+        }
+      })
+    })
     
   });
   
