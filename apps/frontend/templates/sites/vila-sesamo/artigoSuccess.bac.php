@@ -23,9 +23,9 @@
         <span class="icones-sprite-interna icone-cuidadores-grande"></span>
         <?php echo $section->getTitle() ?>
         <a class="todos-assets" title="voltar para todas atividades">
-          <i class="icones-setas icone-voltar-artigo" href="/<?php echo $site->getSlug() ?>/<?php echo $section->getSlug() ?>"></i>
-          <p>todos os artigos</p>
-        </a>
+        <i class="icones-setas icone-voltar-artigo"></i>
+        <p>todos os artigos</p>
+      </a>
       </h1>
       
       <!--container-->
@@ -40,29 +40,11 @@
             <!--header-->
             <header>
               
-              <h1><?php echo $asset->getTitle() ?></h1>
+              <h1>NOME DO ARTIGO com quebra de linha de texto e espaçamento entrelinhas de 30 pt</h1>
                
               <div class="overflow">
-                <span class="data"><?php echo format_date($asset->getUpdatedAt(), "g") ?> - Por</span>
-                
-                <?php $colaboradores = $asset->retriveRelatedAssetsByRelationType("Colaborador") ?>
-                <?php if(count($colaboradores) > 0): ?>
-                  <?php
-                    $autores = array();
-                    foreach($colaboradores as $c) {
-                      $autores[] = $c->AssetPerson->getName();
-                    }
-                  ?>
-                  <span class="nome">
-                    <?php if(count($autores) > 0): ?>
-                      <?php echo implode(", ", $autores) ?>
-                    <?php endif; ?>.
-                  </span>
-                  <?php else: ?>
-                    <?php if($asset->AssetContent->getAuthor()): ?>
-                      <span class="nome"><?php echo $asset->AssetContent->getAuthor() ?></span>
-                    <?php endif; ?>
-                  <?php endif; ?>
+                <span class="data">DD/MM/AAAA - por</span>
+                <span class="nome">Nome do Autor</span>
               </div>
               
               <!--compartilhar redes-->
@@ -320,7 +302,11 @@
        
 <?php /*programado
  * 
+<?php use_helper('I18N', 'Date') ?>
 
+<!-- HEADER -->
+<?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))?>
+<!-- /HEADER -->
 
 <!-- barra do titulo da seção -->
 <div>
