@@ -71,7 +71,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form-horizontal .span8.control-group.cidade input{width:400px;}
 .form-horizontal .idade.span2 input,
 .form-horizontal .span8.control-group input,
-.form-horizontal .control-group a  { height:26px; line-height:26px; display: block;border-radius: 0;height: 35px;float: left;}
+.form-horizontal .control-group a  { height:26px; line-height:26px; display: block;border-radius: 0;height: 35px; float: left; padding: 0; margin: 0;}
 .form-horizontal .estado .control-label { width:auto; }
 .form-horizontal .estado .control-group,
 .form-horizontal .estado select { width:90px; }
