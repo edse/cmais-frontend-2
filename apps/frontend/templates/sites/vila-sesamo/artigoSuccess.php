@@ -158,33 +158,7 @@
         
         <!--col dir -->
         <div class="span4 col-dir">
-         <!--nuvem de tags -->
-  <?php
-    $tags = array();
-    $sections = $asset->getSections();
-    foreach($sections as $s) { // pega as categorias (seções-filhas da seção "categorias") pra utilizar como se fossem tags
-      if($s->getParentSectionId() > 0) {
-        $parentSection = Doctrine::getTable('Section')->findOneById($s->getParentSectionId());
-        if($parentSection->getSlug() == "categorias") {
-          $tags[] = $s->getTitle();
-        }
-      }
-    }  
-    if(count($asset->getTags())>0){
-      foreach($asset->getTags() as $t) {
-        $tags[] = $t;
-      }
-    }
-  ?>
-  <?php if(count($tags) > 0): ?>
-  <p>+ sobre</p>
-  <ul>
-    <?php foreach($tags as $t): ?>
-    <li><a href="http://cmais.com.br/vila-sesamo/busca?output=search&q=<?php echo $t ?>" title="<?php echo $t ?>"><?php echo $t ?></a></li>
-    <?php endforeach; ?>
-  </ul>
-  <?php endif; ?>
-  <!--/nuvem de tags-->
+         
   
           <!--tags-->
           <?php
@@ -214,11 +188,6 @@
               <?php foreach($tags as $t): ?>
                 <a href="http://cmais.com.br/vila-sesamo/busca?output=search&q=<?php echo $t ?>" title="<?php echo $t ?>"><?php echo $t ?></a>
               <?php endforeach; ?>
-              <a href="#" title="titulo">habitos saudáveis</a>
-              <a href="#" title="titulo">comunicação</a>
-              <a href="#" title="titulo">pré-escolar</a>
-              <a href="#" title="titulo">auto-conhecimento</a>
-              <a href="#" title="titulo">ciência</a>
             </div>
             <div class="bottom-box-sobre">
               <img src="/portal/images/capaPrograma/vilasesamo2/box-bottom-sobre.png" alt=""/>
@@ -226,60 +195,53 @@
           </div>
           <?php endif; ?>
           <!--/tags-->
-          
+
           <!-- para ler-->
-          <div class="box-ler">
-            <h2 class="titulo-box">
-              <i class="icones-sprite-interna icone-artigo-ve-pequeno"></i>
-              Para ler
-            </h2>
-            
-            <!--lista-->
-            <ul>
-              <!--item-->
-              <li>
-                <a href="#" title="titulo">
-                  <h3>Nome do Artigo</h3>
-                  <p>Lorem ipsum dolor sit amet, consect etur adi piscing elit. Sed in com modo posuere.</p>
-                </a>
-                <div class="divisa"></div>
-              </li>
-              <!--item-->
+          <?php
+          if(count($tags) > 0) {
+            $related_articles = Doctrine_Query::create()
+              ->select('a.*')
+              ->from('Asset a, SectionAsset sa, tag t, tagging tg')
+              ->where('a.site_id = ?', $site->getId())
+              ->andWhere('sa.asset_id = a.id')
+              ->andWhere('sa.section_id = ?', $section->getId())
+              ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+              ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
+              ->andWhere('a.is_active = ?', 1)
+              ->andWhere('tg.taggable_id = a.id')
+              ->andWhere('tg.tag_id = t.id')
+              ->andWhereIn('t.name', $tags)
+              ->andWhere('a.id != ?', $asset->getId())
+              ->andWhere('a.asset_type_id = ?', 1)
+              ->limit(4)
+              ->execute();
+            }
+          ?>
+          <?php if(isset($related_articles)): ?>
+            <?php if(count($related_articles) > 0): ?>
+              <div class="box-ler">
+                <h2 class="titulo-box">
+                  <i class="icones-sprite-interna icone-artigo-ve-pequeno"></i>
+                  Para ler
+                </h2>
               
-              <!--item-->
-              <li>
-                <a href="#" title="titulo">
-                  <h3>Nome do Artigo</h3>
-                  <p>Lorem ipsum dolor sit amet, consect etur adi piscing elit. Sed in com modo posuere.</p>
-                </a>
-                <div class="divisa"></div>
-              </li>
-              <!--item-->
-              
-              <!--item-->
-              <li>
-                <a href="#" title="titulo">
-                  <h3>Nome do Artigo</h3>
-                  <p>Lorem ipsum dolor sit amet, consect etur adi piscing elit. Sed in com modo posuere.</p>
-                </a>
-                <div class="divisa"></div>
-              </li>
-              <!--item-->
-              
-              <!--item-->
-              <li>
-                <a href="#" title="titulo">
-                  <h3>Nome do Artigo</h3>
-                  <p>Lorem ipsum dolor sit amet, consect etur adi piscing elit. Sed in com modo posuere.</p>
-                </a>
-                <div class="divisa"></div>
-              </li>
-              <!--item-->
-              
-              
-            </ul>
-            <!--/lista-->
-            
+                <!--lista-->
+                <ul>
+                  <?php foreach($related_articles as $ra): ?>
+                    <!--item-->
+                    <li>
+                      <a href="<?php echo $ra->retriveUrl() ?>" title="<?php echo $ra->getTitle() ?>">
+                        <h3><?php echo $ra->getTitle() ?></h3>
+                        <p><?php echo $ra->getDescription() ?></p>
+                      </a>
+                      <div class="divisa"></div>
+                    </li>
+                    <!--item-->
+                  <?php endforeach; ?>
+              </ul>
+              <!--/lista-->
+            <?php endif; ?>
+          <?php endif; ?>
           </div>
           <!-- /para ler-->
           
