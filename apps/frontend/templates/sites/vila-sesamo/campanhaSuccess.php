@@ -32,10 +32,14 @@
                 <?php foreach($allCampaigns as $c): ?>
                   <?php
                     $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($c->getId(), "enviados");
-                    if ($block) //$displays["enviados"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceiros"
-                    echo $block;
+                    //if ($block) $displays["enviados"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceiros"
+                    //echo $block;
                   ?>
-                  
+                  <?php if(isset($displays["enviados"])): ?>
+                    <?php if(count($displays["enviados"]) > 0): ?>
+                      <li><a href="/<?php echo $site->getSlug() ?>/campanhas/<?php echo $c->getSlug(); ?>" title="<?php echo $c->getTitle(); ?>"><?php echo $c->getTitle(); ?></a></li>
+                    <?php endif; ?>
+                  <?php endif; ?>
                 <?php endforeach; ?>
             </ul>
           <?php endif; ?>
