@@ -1,6 +1,6 @@
       <!--nav filtro personagem-->
       <nav role="navigation" class="span2">
-        <h3><?php echo $section->getSlug() ?></h3>
+        <h3><?php echo $section->ParentSection->getSlug() ?></h3>
         <h3 aria-live="polite" id="filtro-descricao">todas as atividades estão para selecionar</h3>
         <ul class="filtro-personagem">
           
