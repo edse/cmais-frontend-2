@@ -24,7 +24,7 @@
       <?php $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"personagens"); ?>
       <?php $personagens = $particularSection->subsections()?>
       
-      <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('section' => $section,'personagens' => $personagens)) ?>
+      <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens)) ?>
       <!--/menu filtro persoagem-->
       
       <?php if(isset($displays['destaque-principal'])): ?>
