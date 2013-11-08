@@ -64,7 +64,7 @@
             </div>
             
             <h2>TV Rá-tim-bum</h2>
-            <p>Todos os dias - 6h e 0h<br>Na Nome da Faixa</p>
+            <p>Todos os dias - 6h e 0h<br>Na Nome da Faixa</p> 
                 
           </div>
           <!--/box-horario-->
