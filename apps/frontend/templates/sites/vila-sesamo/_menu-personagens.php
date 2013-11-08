@@ -62,4 +62,14 @@
         </ul>
       </nav>
       <!--/nav filtro personagem-->
+      <script>  
+      $('.inner a[class|="btn"]').click(function(){
+        goTop();  
+      });
       
+      function goTop(){
+        $('html, body').animate({
+          scrollTop:parseInt($('.divisa').offset().top-126)
+        }, "slow");
+      }
+      </script>

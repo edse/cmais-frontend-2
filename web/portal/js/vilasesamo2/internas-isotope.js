@@ -73,15 +73,7 @@
     });
     
     //ancora para os filtros
-    $('.inner a[class|="btn"]').click(function(){
-      goTop();  
-    });
     
-    function goTop(){
-      $('html, body').animate({
-        scrollTop:parseInt($('.divisa').offset().top-126)
-      }, "slow");
-    }
     /*
     $container.infinitescroll({
       navSelector  : '#page_nav',    // selector for the paged navigation 
