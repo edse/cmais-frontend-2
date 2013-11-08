@@ -28,7 +28,7 @@
           $allCampaigns = $sectionCampanha->subsections(); 
         ?>        
         <div class="btn-group">
-          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a campanha <span class="caret icones-setas icone-cat-abrir"></span> </a>
           
           <?php if(isset($allCampaigns)): ?>
             <?php if(count($allCampaigns) > 0): ?>
