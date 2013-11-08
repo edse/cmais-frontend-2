@@ -22,10 +22,15 @@
       <h1>
         <?php echo $section->getTitle() ?>
         <?php
-  $sectionCampanha = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"campanhas");
-  $allCampaigns = $sectionCampanha->subsections(); 
-?>        
-
+          $sectionCampanha = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"campanhas");
+          $allCampaigns = $sectionCampanha->subsections(); 
+        ?>        
+       
+        <?php if(isset($allCampaigns)): ?>
+          <?php if(count($allCampaigns) > 0): ?>
+        teste
+          <?php endif; ?>
+        <?php endif; ?>
         <!--selecione a campanha-->
          <?php
           $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
