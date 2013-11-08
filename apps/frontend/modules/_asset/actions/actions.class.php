@@ -1068,6 +1068,7 @@ class _assetActions extends sfActions
             $sections = $this->asset->getSections();
             foreach($sections as $s) {
               if(in_array($s->getSlug(), array("atividades", "jogos", "videos","cuidadores"))) {
+                $this->setLayout("vilasesamo");
                 $this->section = $s;
                 break;
               }
