@@ -100,7 +100,7 @@
               <?php $download = $displays['dicas'][0]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
               <?php if(count($download) > 0): ?>
                 <?php if($download[0]->AssetType->getSlug() == "file"): ?>
-                  <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
+                  <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</a>
                 <?php endif; ?>
               <?php endif; ?>
               <!--botao baixa dica-->
@@ -143,7 +143,7 @@
                 <?php $download = $displays['dicas'][1]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
                 <?php if(count($download) > 0): ?>
                   <?php if($download[0]->AssetType->getSlug() == "file"): ?>
-                    <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</button>
+                    <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</a>
                   <?php endif; ?>
                 <?php endif; ?>
                 <!--botao baixa dica-->
