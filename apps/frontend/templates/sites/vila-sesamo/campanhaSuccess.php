@@ -28,7 +28,13 @@
        
         <?php if(isset($allCampaigns)): ?>
           <?php if(count($allCampaigns) > 0): ?>
-        teste
+            <ul>
+                <?php foreach($allCampaigns as $c): ?>
+                  <?php
+                    $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($c->getId(), "enviados");
+                     ?>
+                <?php endforeach; ?>
+            </ul>
           <?php endif; ?>
         <?php endif; ?>
         <!--selecione a campanha-->
