@@ -23,7 +23,7 @@
         <?php echo $section->getTitle() ?>
         <?php
           $sectionCampanha = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"campanhas");
-          $allCampaigns = $sectionCampanha->subsections(); 
+          $allCampaigns = $sectionCampanha->getSubsections(); 
           echo count($allCampaigns). ">>>>>>>>"; 
         ?>        
        
