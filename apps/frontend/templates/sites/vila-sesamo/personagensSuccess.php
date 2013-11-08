@@ -13,7 +13,7 @@
     <h1><span class="icones-sprite-interna icone-personagem-grande"></span><?php echo $section->getTitle() ?></h1>
     <div class="conteudo-asset">
       
-      <?php echo count($section->getSections()). ">>>>>>>"?>      
+      <?php echo count($section->subsections()). ">>>>>>>"?>      
       <div id="container-personagens" class="asset">
         <div class="element q-pers inner bel"  >
           <a href="/<?php echo $site->getSlug() ?>/personagens/bel" >
