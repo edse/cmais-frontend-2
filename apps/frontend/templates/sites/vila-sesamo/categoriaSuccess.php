@@ -212,8 +212,8 @@
               }
             }
           ?>
-          <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?>"> 
-            <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
+          <li class="span4 element <?php echo $a->getSlug(); ?>"> 
+            <a href="/<?php echo $site->getSlug() ?>/<?php echo $a->getSlug(); ?>/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
               <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
               <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
               <i class="sprite-icons-new sprite-icone_<?php echo $assetSection->getSlug() ?>"></i>
