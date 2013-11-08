@@ -42,10 +42,10 @@
           <div class="container-horarios">
             
             <!--box-horario-->
-            <?php foreach($displays['programacao-na-tv'] as $d):?>
+            <?php foreach($displays['programacao-na-tv'] as $k=>$d):?>
               
                
-            <div class="box-horario sem-margem-l">
+            <div class="box-horario <?php if($k==0) echo "sem-margem-l"?>">
               
               <div class="box-logo">
                 <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
