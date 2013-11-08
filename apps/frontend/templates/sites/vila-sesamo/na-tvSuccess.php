@@ -35,8 +35,7 @@
         <?php endif; ?>
         
         
-        <?php if(isset($displays['programacao-na-tv'])): ?>
-        <?php if(count($displays['programacao-na-tv']) > 0): ?>          
+          
         <!--container-horario-->
         <div class="container-horarios">
           
@@ -71,8 +70,7 @@
           
         </div>
         <!--/container-horario-->
-        <?php endif; ?>
-        <?php endif; ?>
+
         
          
       </div>
