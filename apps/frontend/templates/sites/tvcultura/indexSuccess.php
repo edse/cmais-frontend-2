@@ -18,7 +18,7 @@
     <div class="box-publicidade pub-grd">
 
       <script type='text/javascript'>
-        GA_googleFillSlot("home-geral728x90");
+        GA_googleFillSlot("home-geral728x90"); 
       </script>
     </div>
 
