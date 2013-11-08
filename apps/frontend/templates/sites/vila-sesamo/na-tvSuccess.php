@@ -49,7 +49,7 @@
               
               <div class="box-logo">
                 <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                  <span class="icones-na-tv">
+                  <span class="img-logo">
                     <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
                   </span>
                   <span class="icones-na-tv icone-seta-box"></span>
