@@ -36,7 +36,7 @@
                   ?>
                   <?php if(isset($displays["enviados"])): ?>
                     <?php if(count($displays["enviados"]) > 0): ?>
-                      <li><a href="/<?php echo $site->getSlug() ?>/campanhas/<?php echo $c->getSlug(); ?>" title="<?php echo $c->getTitle(); ?>"><?php echo $c->getTitle(); ?></a></li>
+                     
                     <?php endif; ?>
                   <?php endif; ?>
                 <?php endforeach; ?>
