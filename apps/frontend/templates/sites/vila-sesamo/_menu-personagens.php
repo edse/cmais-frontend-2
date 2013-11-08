@@ -9,7 +9,7 @@
               <?php foreach($personagens as $p): ?>
                 <li>
                   <div class="inner personagem <?php echo $p->getSlug() ?>">
-                    <a href="/<?php echo $site->getSlug() ?>/<?php echo $section->getSlug() ?>/<?php echo $p->getSlug(); ?>" target="_self" class="btn-<?php echo $p->getSlug() ?> <?php if($section->getSlug() == $p->getSlug()) echo "active"?>" data-filter=".<?php echo $p->getSlug() ?>">
+                    <a href="<?php echo $site->retriviUrl() ?>/<?php echo $section->getSlug() ?>/<?php echo $p->getSlug(); ?>" target="_self" class="btn-<?php echo $p->getSlug() ?> <?php if($section->getSlug() == $p->getSlug()) echo "active"?>" data-filter=".<?php echo $p->getSlug() ?>">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem.png" alt="filtro <?php echo $p->getTitle() ?>" />
                     </a>
                   </div>
@@ -21,7 +21,16 @@
       </nav>
       <!--/nav filtro personagem-->
       <?php if($section->Parent->getSlug() != "personagens"): ?>
-        <script>  
+      <script>
+        $('.inner a').not('.inner a.active').click(function(){
+          var who = $(this).attr('href');
+          window.location.assign(who)
+          
+        })
+      </script>  
+      <?php endif; ?>
+      
+      <script>  
         $('.inner a[class|="btn"]').click(function(){
           goTop();  
         });
@@ -32,18 +41,17 @@
           }, "slow");
         }
         
-        $('.inner a').mouseenter(function(){
+        $('.inner a').not('.inner a.active').mouseenter(function(){
          if($(this).parent().hasClass('jogos')){ 
           $(this).find('img').animate({top:-33, easing:"swing"},'fast');
          }else{
           $(this).find('img').animate({top:-25, easing:"swing"},'fast');  
          }
         });
-        $('.inner a').mouseleave(function(){
+        $('.inner a').not('.inner a.active').mouseleave(function(){
           if(!$(this).parent().parent().hasClass('ativo')){
             $(this).find('img').stop();
             $(this).find('img').animate({top:0, easing:"swing"},'fast'); 
           } 
         });
-        </script>
-      <?php endif; ?>
+      </script>
