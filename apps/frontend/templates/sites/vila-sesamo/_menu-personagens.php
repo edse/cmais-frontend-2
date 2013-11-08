@@ -17,7 +17,7 @@
       </nav>
       <!--/nav filtro personagem-->
       
-      <?php if($section->getSlug() != $parentSection):?>
+      <?php if($section->getSlug() != 'personagem'):?>
         <script>  
         //ancora para os filtros
         $('.inner a[class|="btn"]').click(function(){
