@@ -24,6 +24,7 @@
         <?php
           $sectionCampanha = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"campanhas");
           $allCampaigns = $sectionCampanha->subsections(); 
+          count($allCampaigns). ">>>>>>>>";
         ?>        
        
         <?php if(isset($allCampaigns)): ?>
