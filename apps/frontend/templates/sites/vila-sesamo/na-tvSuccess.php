@@ -48,15 +48,15 @@
             <div class="box-horario sem-margem-l">
               
               <div class="box-logo">
-                <a href="<?php echo $d[0]->retriveUrl() ?>" title="<?php echo $d[0]->getTitle() ?>">
+                <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                   <span class="icones-na-tv">
-                    <img src="<?php echo $d[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d[0]->getTitle() ?>" />
+                    <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
                   </span>
                   <span class="icones-na-tv icone-seta-box"></span>
                 </div>
                 
-                <h2><?php echo $d[0]->getTitle() ?></h2> 
-                <p><?php echo html_entity_decode($d[0]->getHtml()) ?></p>
+                <h2><?php echo $d->getTitle() ?></h2> 
+                <p><?php echo html_entity_decode($d->getHtml()) ?></p>
               </a>  
             </div>
             <?php endforeach?>
