@@ -223,7 +223,7 @@
                 <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
               <?php endif;?>
               <?php 
-              if($a->getSlug() != "jogos" || $a->getSlug() != "videos" || $a->getSlug() != "atividades"):
+              if($a->getSlug() != "jogos" && $a->getSlug() != "videos" && $a->getSlug() != "atividades"):
                 $AssetSection = "artigo-ve";
               else:
                 $AssetSection = $a->getSlug();
