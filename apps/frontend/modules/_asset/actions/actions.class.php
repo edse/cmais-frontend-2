@@ -1048,7 +1048,7 @@ class _assetActions extends sfActions
 									if($parentSection->getSlug() == "colunistas"){
 						        if($debug) print "<br>2-2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Colunista';
 						        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Colunista');
-										break; 
+										break;  
 									}
                   else{
                     if($debug) print "<br>2-2-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
