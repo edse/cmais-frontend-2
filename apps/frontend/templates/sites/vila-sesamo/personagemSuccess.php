@@ -56,11 +56,8 @@
               <!--seletor carrossel-->
               <div class="container-itens"> 
                 <ul id="selector-interna-personagem">
-                	<li><a href="#" rel="frame_0"></a></li>
-                	<li><a href="#" rel="frame_1"></a></li>
-                	
                   <?php foreach($displays['destaque-principal'] as $k=>$d): ?>
-                  <li><a href="#" rel="frame_<?php echo $k+2 ?>"></a></li>
+                    <li><a href="#" rel="frame_<?php echo $k+2 ?>"></a></li>
                   <?php endforeach; ?>
                 </ul>
               </div>
