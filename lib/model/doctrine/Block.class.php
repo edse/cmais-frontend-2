@@ -107,7 +107,7 @@ class Block extends BaseBlock
           ->from('Display d')
           ->where('d.block_id = ?', $this->getId())
           ->andWhere('d.is_active = ?', 1)
-          ->andWhere('(d.date_start IS NULL AND date_end IS NULL) OR (d.date_start <= ? AND d.date_end >= ?) OR (d.date_start <= ?)', array(date('Y-m-d H:i:s', time()), date('Y-m-d H:i:s', time()), date('Y-m-d H:i:s', time())))
+          ->andWhere('(d.date_start IS NULL AND date_end IS NULL) OR (d.date_start <= ? AND d.date_end >= ?)', array(date('Y-m-d H:i:s', time()), date('Y-m-d H:i:s', time())))
           ->orderBy($order)
           ->limit($limit)
           ->execute();
