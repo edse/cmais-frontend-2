@@ -21,9 +21,9 @@
       <h1><i class="icones-sprite-interna icone-personagem-grande"></i>Personagens</h1>
       
       <?php $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"personagens"); ?>
-      <?php echo count($particularSection->subsections())?>
+      <?php $personagens = $particularSection->subsections()?>
       
-      <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('section' => $section)) ?>
+      <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('personagens' => $personagens)) ?>
       
       <?php if(isset($displays['destaque-principal'])): ?>
         <?php if(count($displays['destaque-principal']) > 0): ?>
