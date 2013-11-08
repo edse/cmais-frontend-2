@@ -30,7 +30,7 @@
         
         <?php if(isset($displays['historia'])): ?>
           <?php if(count($displays['historia']) > 0): ?>
-        <p><?php echo html_entity_decode($displays['historia'][0]->Asset->AssetContent->render()) ?></p>
+            <?php echo html_entity_decode($displays['historia'][0]->Asset->AssetContent->render()) ?>
           <?php endif; ?>
         <?php endif; ?>
                   
