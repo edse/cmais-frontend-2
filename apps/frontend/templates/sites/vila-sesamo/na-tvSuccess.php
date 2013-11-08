@@ -52,7 +52,7 @@
                 </div>
                 
                 <h2><?php echo $displays['programacao-na-tv'][0]->getTitle() ?></h2> 
-                <p><?php echo $displays['programacao-na-tv'][0]->getHtml() ?></p>
+                <p><?php echo html_entity_decode($displays['programacao-na-tv'][0]->getHtml()) ?></p>
               </a>  
             </div>
             <!--/box-horario-->
@@ -69,7 +69,7 @@
                 </div>
                 
                 <h2><?php echo $displays['programacao-na-tv'][1]->getTitle() ?></h2> 
-                <p><?php echo $displays['programacao-na-tv'][1]->getHtml() ?></p>
+                <p><?php echo html_entity_decode($displays['programacao-na-tv'][1]->getHtml()) ?></p>
               </a>  
             </div>
             <!--/box-horario-->
