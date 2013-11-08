@@ -213,7 +213,11 @@
             }
           ?>
           <li class="span4 element <?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> <?php echo $a->getSlug(); ?>"> 
-            
+            <a href="/<?php echo $site->getSlug() ?>/<?php echo $a->getSlug(); ?>/<?php echo $a->getSlug() ?>" title="<?php echo $a->getTitle() ?>">
+              <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $a->getTitle() ?>"/>
+              <i class="icones-sprite-interna icone-<?php echo $a->getSlug(); ?>-pequeno"></i>
+              <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/><?php echo $a->getTitle() ?></div>
+            </a>
           </li>
           <?php endforeach; ?>
         <?php endif; ?>
