@@ -158,7 +158,7 @@
           <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
             <?php if($d->AssetType->getSlug() == "video"): ?>
               <div class="yt-menu">
-                <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
+                <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
               </div>
             <?php else: ?>
               <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
