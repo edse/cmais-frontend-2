@@ -26,17 +26,34 @@
       
       <!--container-->
       <div class="container-na-tv">
-        <h2 class="ola">Olá!</h2>
+        <h2 class="ola"><?php echo $section->getDescription() ?></h2>
         
         <?php if(isset($displays['historia'])): ?>
           <?php if(count($displays['historia']) > 0): ?>
             <?php echo html_entity_decode($displays['historia'][0]->Asset->AssetContent->render()) ?>
           <?php endif; ?>
         <?php endif; ?>
-                  
+        
+        
+        <?php if(isset($displays['programacao-na-tv'])): ?>
+        <?php if(count($displays['programacao-na-tv']) > 0): ?>          
         <!--container-horario-->
         <div class="container-horarios">
-          
+          <div>
+    <a href="<?php echo $displays['programacao-na-tv'][0]->retriveUrl() ?>" title="<?php echo $displays['programacao-na-tv'][0]->getTitle() ?>">
+      <img src="<?php echo $displays['programacao-na-tv'][0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['programacao-na-tv'][0]->getTitle() ?>" />
+      <span><?php echo $displays['programacao-na-tv'][0]->getTitle() ?></span>
+      <span><?php echo $displays['programacao-na-tv'][0]->getHtml() ?></span>
+    </a>
+  </div>
+  
+  <div>
+    <a href="<?php echo $displays['programacao-na-tv'][1]->retriveUrl() ?>" title="<?php echo $displays['programacao-na-tv'][1]->getTitle() ?>">
+      <img src="<?php echo $displays['programacao-na-tv'][1]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['programacao-na-tv'][1]->getTitle() ?>" />
+      <span><?php echo $displays['programacao-na-tv'][1]->getTitle() ?></span>
+      <span><?php echo $displays['programacao-na-tv'][1]->getHtml() ?></span>
+    </a>
+  </div>
           <!--box-horario-->
           <div class="box-horario sem-margem-l">
             
@@ -68,6 +85,8 @@
           
         </div>
         <!--/container-horario-->
+        <?php endif; ?>
+        <?php endif; ?>
         
          
       </div>
