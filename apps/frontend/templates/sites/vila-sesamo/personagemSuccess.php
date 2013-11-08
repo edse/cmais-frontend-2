@@ -23,7 +23,7 @@
       <?php $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"personagens"); ?>
       <?php $personagens = $particularSection->subsections()?>
       
-      <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('section' => $secton,'personagens' => $personagens)) ?>
+      <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('section' => $section,'personagens' => $personagens)) ?>
       
       <?php if(isset($displays['destaque-principal'])): ?>
         <?php if(count($displays['destaque-principal']) > 0): ?>
