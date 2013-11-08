@@ -33,12 +33,9 @@
                   <?php
                     $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($c->getId(), "enviados");
                     if ($block) $displays["enviados"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceiros"
+                    echo $block;
                   ?>
-                  <?php if(isset($displays["enviados"])): ?>
-                    <?php if(count($displays["enviados"]) > 0): ?>
-                     
-                    <?php endif; ?>
-                  <?php endif; ?>
+                  
                 <?php endforeach; ?>
             </ul>
           <?php endif; ?>
