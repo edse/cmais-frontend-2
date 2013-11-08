@@ -213,7 +213,9 @@
             }
           ?>
           <li class="span4 element <?php echo $a->getSlug(); ?> "> 
-            
+            <a href="/<?php echo $site->getSlug() ?>/<?php echo $a->getSlug(); ?>/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
+              
+            </a>
           </li>
           
           <?php endforeach; ?>
