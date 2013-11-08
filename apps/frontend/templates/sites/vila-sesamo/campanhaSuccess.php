@@ -21,15 +21,18 @@
     <div class="b-amarelo borda-arredonda pais">
       <h1>
         <?php echo $section->getTitle() ?>
+        
+        <!--selecione a campanha-->
         <?php
           $sectionCampanha = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"campanhas");
           $allCampaigns = $sectionCampanha->subsections(); 
-          echo count($allCampaigns). ">>>>>>>>"; 
         ?>        
-       
-        <?php if(isset($allCampaigns)): ?>
-          <?php if(count($allCampaigns) > 0): ?>
-            <ul>
+        <div class="btn-group">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
+          
+          <?php if(isset($allCampaigns)): ?>
+            <?php if(count($allCampaigns) > 0): ?>
+              <ul class="dropdown-menu">
                 <?php foreach($allCampaigns as $c): ?>
                   <?php
                     //$block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($c->getId(), "enviados");
@@ -38,30 +41,14 @@
                   ?>
                   <?php if(isset($displays["enviados"])): ?>
                     <?php if(count($displays["enviados"]) > 0): ?>
-                      <li><a href="/<?php echo $site->getSlug() ?>/campanhas/<?php echo $c->getSlug(); ?>" title="<?php echo $c->getTitle(); ?>"><?php echo $c->getTitle(); ?></a></li>
+                      <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
                     <?php endif; ?>
                   <?php endif; ?>
                 <?php endforeach; ?>
-            </ul>
+              </ul>
+            <?php endif; ?>
           <?php endif; ?>
-        <?php endif; ?>
-        <!--selecione a campanha-->
-         <?php
-          $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
-          $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
-        ?>        
-        <?php if(isset($allCategories)): ?>
-          <?php if(count($allCategories) > 0): ?>
-          <div class="btn-group">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
-            <ul class="dropdown-menu">
-              <?php foreach($allCategories as $c): ?>
-              <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
-              <?php endforeach; ?>
-            </ul>
-          </div>
-          <?php endif; ?>
-        <?php endif; ?>
+        </div>  
         <!--/selecione a campanha-->
         
       </h1>
