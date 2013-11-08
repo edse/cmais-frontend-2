@@ -212,7 +212,9 @@
               }
             }
           ?>
-          
+          <li class="span4 element <?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> <?php echo $a->getSlug(); ?>"> 
+            
+          </li>
           <?php endforeach; ?>
         <?php endif; ?>
       <?php endif; ?>
