@@ -3,7 +3,7 @@
         <h3>escolha o personagem</h3>
         <h3 aria-live="polite" id="filtro-descricao">todas as atividades estão para selecionar</h3>
         <ul class="filtro-personagem">
-          <?php echo $personagens->getTitle();?>
+          <?php echo $personagens[0]->getTitle();?>
           <li>
             <div class="inner bel">
               <a href="javascript:;" class="btn-bel " data-filter=".bel">
