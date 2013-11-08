@@ -241,7 +241,7 @@
 <input type="hidden" id="filter-choice" value="">
 
 <nav id="page_nav">
-  <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="icones-setas icone-carregar-lr-grande"></i></a>
+  <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="icones-setas icone-carregar-lj-grande"></i></a>
 </nav>
 
 <script>
