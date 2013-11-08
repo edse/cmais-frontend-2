@@ -56,7 +56,7 @@
                 </div>
                 
                 <h2><?php echo $d->getTitle() ?></h2> 
-                <p><?php echo html_entity_encode($d->getHtml()) ?></p>
+                <p><?php echo $d->getHtml() ?></p>
               </a>  
             </div>
             <?php endforeach?>
