@@ -208,17 +208,11 @@
             foreach($d->getSections() as $a) {
               if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
                 $assetSection = $a;
-                //break;
+                break;
               }
             }
           ?>
-          <li class="span4 element <?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> <?php echo $a->getSlug(); ?>"> 
-            <a href="/<?php echo $site->getSlug() ?>/<?php echo $a->getSlug(); ?>/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
-              <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>"/>
-              <i class="icones-sprite-interna icone-<?php echo $a->getSlug(); ?>-pequeno"></i>
-              <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/><?php echo $d->getTitle() ?></div>
-            </a>
-          </li>
+          
           <?php endforeach; ?>
         <?php endif; ?>
       <?php endif; ?>
