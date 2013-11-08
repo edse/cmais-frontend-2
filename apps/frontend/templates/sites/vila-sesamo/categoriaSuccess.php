@@ -173,8 +173,11 @@
           <?php endif; ?>
         <?php endif; ?>
         <!--/box-parceiros-->
-        
-      </div>  
+      <?php else: // senão ela se torna uma categoria comum e pega somente a descrição da seção ?>
+
+        <!--destaque-principal-->
+        <?php echo $section->getDescription() ?>
+        <!--/destaque-principal-->
        
     <?php endif; ?>  
     </div>
