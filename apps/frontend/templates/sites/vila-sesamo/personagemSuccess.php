@@ -92,7 +92,7 @@
       
       <!--quadro com imagem do personagem -->
       <div class="span4 pull-left">
-        <img src="/portal/images/capaPrograma/vilasesamo2/personagens/int-pers-<?php echo $section->getSlug() ?>.png" alt=""/>
+        <img src="/portal/images/capaPrograma/vilasesamo2/personagens/vs_img_personagem-<?php echo $section->getSlug() ?>-ilustra.png" alt=""/>
       </div>
       <!--/quadro com imagem do personagem -->
       

@@ -59,7 +59,12 @@
       <?php endif; ?>
     <?php endif; ?>
     
-    <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens') ?>
+    <!--menu filtro persoagem-->
+    <?php $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"personagens"); ?>
+    <?php $personagens = $particularSection->subsections()?>
+    
+    <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens)) ?>
+    <!--/menu filtro persoagem-->
         
   </div>
   <!--/span12-->
