@@ -308,6 +308,7 @@ body.campanhas{background-color:#fee133!important;}
 .resultado a:hover p { text-decoration:underline; }
 
 body.personagens { background:#b60401; }
+.personagens .conteudo-asset .asset{border-bottom:2px solid #c31408; } 
 .personagens .filtro-personagem .ativo img{top:-25px;}
 .personagens .filtro .span12{border:none;}
 .personagens .filtro .span2{margin:0 4px;}
@@ -333,11 +334,11 @@ body.personagens { background:#b60401; }
 .personagens .filtro .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:25px;}
 .personagens .filtro .descritivo p{font-size:16px;}
 .personagens .scroll, 
-.personagens .filtro  { border-color:#ee3021;background:#b60401; }
+.personagens .filtro  { border-color:#ee3021;border-bottom:7px solid #ee3021; background:#b60401; }
 .personagens #carrossel-interna-personagem .slider .descritivo h3{font-family:'din-blackregular',Arial, Helvetica, sans-serif;}
 .personagens #content h3 span, 
 .personagens #content h3 i { margin-top:-5px; }
-.personagens #container-personagens a { display: block;    height: 300px;    position: relative;    width: 300px; }
+.personagens #container-personagens a { display: block;    height: 225px;    position: relative;    width: 225px; }
 .personagens #container-personagens a:hover p { background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bg-transparente.png)  repeat; color:#d71c0d; }
 .personagens #container-personagens p { bottom: 0;   margin: 0;    position: absolute; color:#fff; text-align:center; width:100%; font-size: 25px; text-transform:uppercase; padding:2% 0;  }
 .personagens .span8 .span6 {border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
