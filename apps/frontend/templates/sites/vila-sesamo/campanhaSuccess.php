@@ -110,7 +110,7 @@
                 <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/><?php echo $d->getTitle() ?></div>
               </a>
             </li>
-            <!--/item-->
+            <!--/item--> 
           <?php endforeach; ?>
         <?php endif; ?>
       <?php endif; ?>
