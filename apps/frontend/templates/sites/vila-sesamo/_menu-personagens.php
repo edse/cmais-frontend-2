@@ -8,7 +8,7 @@
             <?php if(count($personagens) > 0 ): ?>
               <?php foreach($personagens as $p): ?>
                 <li>
-                  <div class="inner <?php echo $p->getSlug() ?>">
+                  <div class="inner personagem <?php echo $p->getSlug() ?>">
                     <a href="javascript:;" class="btn-<?php echo $p->getSlug() ?> <?php if($section->getSlug() == $p->getSlug()) echo "active"?>" data-filter=".<?php echo $p->getSlug() ?>">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem.png" alt="filtro <?php echo $p->getTitle() ?>" />
                     </a>
