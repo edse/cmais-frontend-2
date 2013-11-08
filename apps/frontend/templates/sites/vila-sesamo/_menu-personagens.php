@@ -1,8 +1,9 @@
       <!--nav filtro personagem-->
       <nav role="navigation" class="span2">
-        <h3>escolha o personagem</h3>
+        <h3><?php echo $section->getSlug() ?></h3>
         <h3 aria-live="polite" id="filtro-descricao">todas as atividades estão para selecionar</h3>
         <ul class="filtro-personagem">
+          
           <?php if(isset($personagens)): ?>
             <?php if(count($personagens) > 0 ): ?>
               <?php foreach($personagens as $p): ?>
