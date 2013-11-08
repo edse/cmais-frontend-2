@@ -1064,11 +1064,10 @@ class _assetActions extends sfActions
 			    }
           if ($this->site->getSlug() == "vila-sesamo") {
             //if($this->asset->id != 148169) // id do asset somente para teste, retirar assim que puderem!
-              $this->setLayout("vilasesamo");
+            $this->setLayout(false);
             $sections = $this->asset->getSections();
             foreach($sections as $s) {
               if(in_array($s->getSlug(), array("atividades", "jogos", "videos","cuidadores"))) {
-                $this->setLayout("vilasesamo");
                 $this->section = $s;
                 break;
               }
