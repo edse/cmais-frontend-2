@@ -87,8 +87,7 @@
     
     <!--viewer-->
     <div id="viewer" class="viewer" >
-      <img src="http://midia.cmais.com.br/assets/image/image-14-b/3c7040115466dcdd0a368bb53e0740f55647df82.jpg" alt="Para Colorir - Beto e Bernice">
-      <h2>Nome COMPLETO da Criança / NOME DA Cidade - UF</h2>
+      <!--imagem aparece via JQUERY -->
     </div>
     <!--/viewer-->
     
@@ -102,19 +101,19 @@
     <!--lista-->
     <ul role="contentinfo" id="container" class="row-fluid">
       <?php if(isset($displays["enviados"])): ?>
-      <?php if(count($displays["enviados"]) > 0): ?>
-        <?php foreach($displays["enviados"] as $k=>$d): ?>
-          <li class="span4 element"> 
-            <a href="javascript: viewer('<?php echo $d->retriveImageUrlByImageUsage("image-14-b") ?>','<?php echo $d->getTitle() ?>')" title="">
-              <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>"/>
-              <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/><?php echo $d->getTitle() ?></div>
-            </a>
-          </li>
-        <?php endforeach; ?>
+        <?php if(count($displays["enviados"]) > 0): ?>
+          <?php foreach($displays["enviados"] as $k=>$d): ?>
+            <!--item-->
+            <li class="span4 element"> 
+              <a href="javascript: viewer('<?php echo $d->retriveImageUrlByImageUsage("image-14-b") ?>','<?php echo $d->getTitle() ?>')" title="">
+                <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>"/>
+                <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/><?php echo $d->getTitle() ?></div>
+              </a>
+            </li>
+            <!--/item-->
+          <?php endforeach; ?>
+        <?php endif; ?>
       <?php endif; ?>
-    <?php endif; ?>
-      
-      
     </ul> 
     <!--lista-->  
   </section>
