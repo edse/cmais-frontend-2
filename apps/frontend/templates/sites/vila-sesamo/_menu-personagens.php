@@ -3,7 +3,7 @@
         <h3>escolha o personagem</h3>
         <h3 aria-live="polite" id="filtro-descricao">todas as atividades estão para selecionar</h3>
         <ul class="filtro-personagem">
-          <?php $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"personagens"); ?>
+          
           
           <li>
             <div class="inner bel">
