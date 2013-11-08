@@ -12,6 +12,7 @@
   <section class="filtro row-fluid">
     <h1><span class="icones-sprite-interna icone-personagem-grande"></span><?php echo $section->getTitle() ?></h1>
     <div class="conteudo-asset">
+      
             
       <div id="container-personagens" class="asset">
         <div class="element q-pers inner bel"  >
