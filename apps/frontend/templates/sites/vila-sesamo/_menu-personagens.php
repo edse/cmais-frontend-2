@@ -1,6 +1,6 @@
       <!--nav filtro personagem-->
       <nav role="navigation" class="span2">
-        <h3><?php echo $section->Parent->getSlug() ?></h3>
+        <h3>escolha o personagem</h3>
         <h3 aria-live="polite" id="filtro-descricao">todas as atividades estão para selecionar</h3>
         <ul class="filtro-personagem">
           
@@ -9,7 +9,7 @@
               <?php foreach($personagens as $p): ?>
                 <li>
                   <div class="inner <?php echo $p->getSlug() ?>">
-                    <a href="javascript:;" class="btn-<?php echo $p->getSlug() ?> " data-filter=".<?php echo $p->getSlug() ?>">
+                    <a href="javascript:;" class="btn-<?php echo $p->getSlug() ?> <?php if($section->getSlug() == $p->getSlug()) echo "active"?>" data-filter=".<?php echo $p->getSlug() ?>">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem.png" alt="filtro <?php echo $p->getTitle() ?>" />
                     </a>
                   </div>
@@ -20,14 +20,16 @@
         </ul>
       </nav>
       <!--/nav filtro personagem-->
-      <script>  
-      $('.inner a[class|="btn"]').click(function(){
-        goTop();  
-      });
-      
-      function goTop(){
-        $('html, body').animate({
-          scrollTop:parseInt($('.divisa').offset().top-126)
-        }, "slow");
-      }
-      </script>
+      <?php if($section->Parent->getSlug() != "personagens"): ?>
+        <script>  
+        $('.inner a[class|="btn"]').click(function(){
+          goTop();  
+        });
+        
+        function goTop(){
+          $('html, body').animate({
+            scrollTop:parseInt($('.divisa').offset().top-126)
+          }, "slow");
+        }
+        </script>
+      <?php endif; ?>
