@@ -20,14 +20,14 @@
         </ul>
       </nav>
       <!--/nav filtro personagem-->
-      <?php if($section->Parent->getSlug() != "personagens"): ?>
-      <script>
-        $('.inner a').not('.inner a.active').click(function(){
-          var who = $(this).attr('href');
-          window.location.assign(who)
-          
-        })
-      </script>  
+      <?php if($section->Parent->getSlug() == "personagens"): ?>
+        <script>
+          $('.inner a').not('.inner a.active').click(function(){
+            var who = $(this).attr('href');
+            window.location.assign(who)
+            
+          })
+        </script>  
       <?php endif; ?>
       
       <script>  
