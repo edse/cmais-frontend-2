@@ -22,7 +22,7 @@
       <div id="container-personagens" class="asset">
         <?php foreach($section->subsections() as $p): ?>     
         <div class="element q-pers inner <?php echo $p->getSlug() ?>"  >
-          <a href="/<?php echo $site->getSlug() ?>/<?php echo $section->getTitle() ?>/<?php echo $p->getSlug() ?>" >
+          <a href="/<?php echo $site->getSlug() ?>/<?php echo $section->getslug() ?>/<?php echo $p->getSlug() ?>" >
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_personagem_<?php echo $p->getSlug() ?>.png" alt="<?php echo $p->getTitle() ?>" />
             <p><?php echo $p->getTitle() ?></p>
           </a>
