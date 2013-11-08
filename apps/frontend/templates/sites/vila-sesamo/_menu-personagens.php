@@ -4,7 +4,7 @@
         <h3 aria-live="polite" id="filtro-descricao">todas as atividades estão para selecionar</h3>
         <ul class="filtro-personagem">
           <?php $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"personagens"); ?>
-          <?php echo $particularSection->subsections()?>
+          
           <li>
             <div class="inner bel">
               <a href="javascript:;" class="btn-bel " data-filter=".bel">
@@ -17,4 +17,17 @@
       </nav>
       <!--/nav filtro personagem-->
       
-      
+      <?php if($section->getSlug() != $parentSection):?>
+        <script>  
+        //ancora para os filtros
+        $('.inner a[class|="btn"]').click(function(){
+          goTop();  
+        });
+        
+        function goTop(){
+          $('html, body').animate({
+            scrollTop:parseInt($('.divisa').offset().top-126)
+          }, "slow");
+        }
+        </script>
+      <?php endif; ?>
