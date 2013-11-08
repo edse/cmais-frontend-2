@@ -222,7 +222,14 @@
               <?php else:?>
                 <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
               <?php endif;?>
-              <i class="icones-sprite-interna icone-<?php echo $a->getSlug(); ?>-pequeno"></i>
+              <?php 
+              if($a->getSlug() == ""):
+                $AssetSection = "artigo-ve";
+              else:
+                $AssetSection = $a->getSlug();
+              endif;
+              ?>
+              <i class="icones-sprite-interna icone-<?php echo $AssetSection; ?>-pequeno"></i>
               <div>
                 <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
                 <?php echo $d->getTitle() ?>
