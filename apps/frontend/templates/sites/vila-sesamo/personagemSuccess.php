@@ -168,7 +168,7 @@
               <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
               <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
             <?php endif; ?>
-            <i class="icones-sprite-interna icones-<?php echo $assetSection->getSlug() ?>-grande"></i>
+            <i class="icones-sprite-interna icones-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
             <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="<?php echo $assetSection->getSlug() ?>"/><?php echo $d->getTitle() ?></div>
           </a>
         </li>
