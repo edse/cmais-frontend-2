@@ -44,26 +44,20 @@
       </h1>
       
       <!--container-campanhas-->
-      <?php if(isset($displays['destaque-principal'])): ?>
-        <?php if(count($displays['destaque-principal']) > 0): ?>
-          <div class="container-campanhas">
-            
-            <!--video ou imagem-->
-            <?php if($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "video"): ?>
-              <iframe width="300" height="246" src="http://www.youtube.com/embed/<?php echo $displays["destaque-principal"][0]->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-            <?php elseif($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "image"): ?>
-              <img src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" />
-            <?php endif; ?>
-            <!--/video ou imagem-->
+      <div class="container-campanhas">
+        
+        <p>
+          <iframe width="300" height="225" src="//www.youtube.com/embed/-o1WFZf-wCo&rel=0" frameborder="0" allowfullscreen></iframe>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non venenatis mauris. In accumsan massa sed consectetur vehicula. Nulla a interdum leo. Vivamus volutpat id dui congue condimentum. Suspendisse iaculis varius dui, ac volutpat magna scelerisque eget. Aenean posuere elementum nisl vitae pretium. Maecenas eu nunc facilisis, facilisis nisi vel, molestie nibh. Ut congue scelerisque ligula commodo faucibus. Sed eu massa vel quam ullamcorper pellentesque a a dolor. Proin consectetur ligula nec turpis aliquet, et luctus neque pulvinar. In venenatis nisl vel nisl dapibus, luctus tempor purus porta. Duis semper, purus sodales placerat bibendum, purus leo blandit sem, eu volutpat lectus lorem faucibus odio. Fusce condimentum ut erat ut porttitor. Suspendisse sed sem id lectus lobortis malesuada. Donec in arcu sit amet mi egestas mollis.
+          <br><br>
+          Veja abaixo a galeria de desenhos das brincadeiras preferidas da criançada!
+        </p>
+        
 
-            <!--descricao-->
-            <?php echo $displays['destaque-principal'][0]->getDescription() ?>
-            <!--/descricao-->
-            
-          </div>
-        <?php endif; ?>
-      <?php endif; ?>
-      <!--container-campanhas-->
+        
+      </div>
+      <!--container-campanhas-->  
+      
     </div>
     <!--/container conteudo-->
     
