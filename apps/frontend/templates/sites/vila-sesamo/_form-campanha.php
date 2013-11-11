@@ -191,7 +191,7 @@
   <?php endif; ?>
   
 <script src="/portal/js/ajaxFileUpload/ajaxfileupload.js" type="text/javascript"></script>
-<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.min.js"></script>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
