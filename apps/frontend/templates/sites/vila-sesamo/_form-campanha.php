@@ -198,7 +198,11 @@
     
     $('#estado').dropkick({
       change: function (value, label) {
-          alert('You picked: ' + label + ':' + value);
+           if(value == ""){
+             $('.dk_toggle').addClass('error');
+           }else{
+             $('.dk_toggle').removeClass('error'); 
+           }
         }
     });
     
