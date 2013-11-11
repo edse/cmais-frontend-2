@@ -253,7 +253,7 @@
         },
         datafile:{
           required: true,
-          accept: "png|jpe?g|gif",
+          accept: "(png|jpe?g|gif)",
           filesize: 15728640
         },
         concordo:{
