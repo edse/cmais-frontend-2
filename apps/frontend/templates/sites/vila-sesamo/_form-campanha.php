@@ -297,7 +297,7 @@
           $(this).parent().css('color', 'white');
         }
       });
-      if($('#estado').hasClass('.error')){
+      if($('#estado').hasClass('error')){
         $('.dk_toggle').addClass('error');
       }else{
         $('.dk_toggle').removeClass('error');
