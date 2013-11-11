@@ -196,7 +196,11 @@
 <script type="text/javascript">
   $(document).ready(function(){
     
-    $('#estado').dropkick();
+    $('#estado').dropkick({
+      change: function (value, label) {
+          alert('You picked: ' + label + ':' + value);
+        }
+    });
     
 	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
 	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});

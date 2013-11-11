@@ -110,7 +110,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form label.error{position: absolute;bottom: 18px;left: 37px;font-size: 21px!important;padding: 3px 0;margin: 0;}
 .interna.atividades .form label.error{background-color:#883feb;} 
 .interna.jogos .form label.error{background-color:#3aaaec;}
-.interna.videos .form label.error{background:#883feb;}
+.interna.videos .form label.error{background:#f78701;}
 .atividades .form label.error{background:#883feb; }
 .form .control-group.span11 label{margin: 0; padding: 0; font-size:16px;}
 .form .control-group.span11 input{margin: 3px;}
