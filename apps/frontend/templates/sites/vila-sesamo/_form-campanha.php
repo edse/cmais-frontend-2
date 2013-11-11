@@ -297,9 +297,9 @@
     if(newVal !== '') {
       $button.text('Anexar');
       if($fakeFile.length === 0) {
-        $button.after('<span class="file-holder">Escolhido: ' + newVal + '</span>');
+        $button.after('<span class="file-holder">' + newVal + '</span>');
       } else {
-        $fakeFile.text(newVal);
+        $fakeFile.text('Escolhido: '+ newVal);
       }
     }
   }
