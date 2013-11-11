@@ -119,10 +119,11 @@
         <!--/Email-->
 
         <!--Anexo-->
-         <div class="control-group span2 idade anexo">
+         <div class="control-group span2 idade anexo file-wrapper">
           <label class="control-label icones-form icone-form-datafile" for="datafile"></label>
           <input id="datafile" type="file" name="datafile">
           <span class="button">Anexar</span>
+          <input type="hidden" name="anexoHidden" id="anexoHidden" value=""/>
           <!--a href="#" title="Anexar">Anexar</a-->
         </div>
         <!--/Anexo-->
@@ -155,7 +156,7 @@
         
         <!--enviar-->
         <div class="control-group span11">
-          <input type="submit" class="btn" id="enviar" value="enviar minha brincadeira">enviar minha brincadeira</input>
+          <input type="submit" class="btn" id="enviar" value="enviar minha brincadeira"></input>
         </div> 
         <!--/enviar-->
         
@@ -252,8 +253,11 @@
           required: function(){ validate("#mensagem"); return true},
           minlength: 3
         },
-        datafile:{
+        anexoHidden:{
           required: true,
+          minlength: 2
+        },
+        datafile:{
           accept: "png|jpe?g|gif",
           filesize: 15728640
         },
@@ -300,6 +304,7 @@
         $button.after('<span class="file-holder">' + newVal + '</span>');
       } else {
         $fakeFile.text('Anexo: '+ newVal);
+        $('#anexoHidden').attr('value', newVal)
       }
     }
   }
