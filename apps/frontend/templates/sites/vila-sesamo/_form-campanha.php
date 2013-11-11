@@ -117,42 +117,7 @@
           <input type="text" id="email"  value="Email" name="email" placeholder="Email">
         </div>
         <!--/Email-->
-        <style>
-        .file-wrapper {
-          cursor: pointer;
-          display: inline-block;
-          overflow: hidden;
-          position: relative;
-        }
-        .file-wrapper input {
-          cursor: pointer;
-          font-size: 100px;
-          height: 100%;
-          filter: alpha(opacity=1);
-          -moz-opacity: 0.01;
-          opacity: 0.01;
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-        .file-wrapper .button {
-          background: url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x;
-          -moz-border-radius: 5px;
-          -webkit-border-radius: 5px;
-          border-radius: 5px;
-          border:none;
-          color: #fff;
-          cursor: pointer;
-          display: inline-block;
-          font-size: 11px;
-          font-weight: bold;
-          margin-right: 5px;
-          padding: 4px 18px;
-          text-transform: uppercase;
-          font-family:'din-blackregular',Arial, Helvetica, sans-serif;
-          font-size:18px;
-        }
-        </style>
+
         <!--Anexo-->
          <div class="control-group span2 idade anexo file-wrapper">
           <label class="control-label icones-form icone-form-datafile" for="datafile"></label>
@@ -330,7 +295,7 @@
         $button = $this.siblings('.button'),
         $fakeFile = $this.siblings('.file-holder');
     if(newVal !== '') {
-      $button.text('Arquivo<br>anexado');
+      $button.text('Anexar');
       if($fakeFile.length === 0) {
         $button.after('<span class="file-holder">' + newVal + '</span>');
       } else {
