@@ -19,7 +19,7 @@
     }); 
     
     var filter_selected
-    $('.filtro-personagem a').click(function(){
+    $('.filtro-personagem a, dropdown-menu li').click(function(){
       var $i=0;
       var $j=0
       var $select = '';
