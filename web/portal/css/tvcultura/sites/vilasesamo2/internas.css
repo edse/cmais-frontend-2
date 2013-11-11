@@ -582,7 +582,7 @@ margin: 0!important; }
 /******  End Theme ******/
 /***** Critical to the continued enjoyment of working dropdowns ******/
 .dk_container {display: none;float: left; }
-.dk_container a {outline: 0;height:33px!important; width: 117px; width: 110px\0;line-height: 24px!important;color: #737373;}
+.dk_container a {outline: 0;height:33px!important;  width: 110px!important\0; width: 117px!important;line-height: 24px!important;color: #737373;}
 .dk_toggle {display: -moz-inline-stack;display: inline-block;*display: inline;position: relative;zoom: 1; }
 .dk_toggle .dk_label{line-height:33px; margin-left:7px;}
 .dk_open {position: relative; }
