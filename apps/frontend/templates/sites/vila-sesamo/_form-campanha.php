@@ -119,11 +119,10 @@
         <!--/Email-->
 
         <!--Anexo-->
-         <div class="control-group span2 idade anexo file-wrapper">
+         <div class="control-group span2 idade anexo">
           <label class="control-label icones-form icone-form-datafile" for="datafile"></label>
           <input id="datafile" type="file" name="datafile" data-default="">
           <span class="button">Anexar</span>
-          <!--a href="#" title="Anexar">Anexar</a-->
         </div>
         <!--/Anexo-->
         
