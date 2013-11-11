@@ -108,7 +108,7 @@
           <?php if(isset($allCategories)): ?>
             <?php if(count($allCategories) > 0): ?>
             <div class="btn-group">
-              <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
               <ul class="dropdown-menu">
                 <?php foreach($allCategories as $c): ?>
                 <li><a href="javascript:;" title="<?php echo $c->getTitle() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
