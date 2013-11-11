@@ -150,7 +150,7 @@
          <div class="control-group span2 idade anexo file-wrapper">
           <label class="control-label icones-form icone-form-datafile" for="datafile"></label>
           <input id="datafile" type="file" name="datafile">
-          <button class="btn">Anexar</button>
+          <span class="btn">Anexar</span>
           <!--a href="#" title="Anexar">Anexar</a-->
         </div>
         <!--/Anexo-->
