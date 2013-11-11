@@ -140,6 +140,7 @@
           -moz-border-radius: 5px;
           -webkit-border-radius: 5px;
           border-radius: 5px;
+          border:none;
           color: #fff;
           cursor: pointer;
           display: inline-block;
@@ -149,6 +150,7 @@
           padding: 4px 18px;
           text-transform: uppercase;
           font-family:'din-blackregular',Arial, Helvetica, sans-serif;
+          font-size:18px;
         }
         </style>
         <!--Anexo-->
@@ -328,7 +330,7 @@
         $button = $this.siblings('.button'),
         $fakeFile = $this.siblings('.file-holder');
     if(newVal !== '') {
-      $button.text('Photo Chosen');
+      $button.text('Arquivo<br>anexado');
       if($fakeFile.length === 0) {
         $button.after('<span class="file-holder">' + newVal + '</span>');
       } else {
