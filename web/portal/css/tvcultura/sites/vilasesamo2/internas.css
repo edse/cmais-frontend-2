@@ -502,7 +502,9 @@ body.na-tv{background-color:#feec3c;position:relative;}
   -moz-transition: border-color .5s;
   -o-transition: border-color .5s;
   transition: border-color .5s;
-  position: relative; }
+  position: relative;
+  padding: 0;
+margin: 0; }
   .dk_toggle:hover {
     border-color: #8c8c8c; }
   .dk_toggle:after {
