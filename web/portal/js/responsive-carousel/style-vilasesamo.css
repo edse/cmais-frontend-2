@@ -157,7 +157,7 @@
 #carrossel-interna-artigo .slider li a img{display:block; margin: 0 auto;}
 #carrossel-interna-artigo .slider .videoorimage{max-width:420px;padding:20px;}
 #carrossel-interna-artigo .slider .descritivo{ padding:20px 20px 20px 0px; }
-#carrossel-interna-artigo .slider .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:25px;}
+#carrossel-interna-artigo .slider .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:25px;line-height: 30px;}
 #carrossel-interna-artigo .slider .descritivo p{font-size:16px;}
 #carrossel-interna-artigo .slider .inner {padding: 10px;margin: 0 5px;border: 1px solid #333;height: 100%;background-color: #CCC;}
 #carrossel-interna-artigo .container-itens{position:absolute; width:500px; height:30px; top: 342px; right: 0}
