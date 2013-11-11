@@ -255,7 +255,7 @@
   });
   
   $('.dropdown-menu a').click(function(){
-    var select = $(this).attr('class');
+    var select = $(this).attr('title');
     $('.btn.dropdown-toggle').html(select);
   });
   
