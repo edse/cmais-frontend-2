@@ -121,8 +121,9 @@
         <!--Anexo-->
          <div class="control-group span2 idade anexo">
           <label class="control-label icones-form icone-form-datafile" for="datafile"></label>
-          <input id="datafile" type="file" name="datafile" data-default="">
+          <input id="datafile" type="file" name="datafile">
           <span class="button">Anexar</span>
+          <!--a href="#" title="Anexar">Anexar</a-->
         </div>
         <!--/Anexo-->
         
@@ -252,7 +253,7 @@
           minlength: 3
         },
         datafile:{
-          required: function(){ validate(".file-holder"); return true},
+          required: true,
           accept: "png|jpe?g|gif",
           filesize: 15728640
         },
@@ -284,7 +285,6 @@
     });
     
   });
-  
   var SITE = SITE || {};
 
   SITE.fileInputs = function() {
