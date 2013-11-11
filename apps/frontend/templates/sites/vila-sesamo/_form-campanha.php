@@ -154,7 +154,7 @@
         
         <!--enviar-->
         <div class="control-group span11">
-          <a type="submit" class="btn" id="enviar" value="enviar minha brincadeira"></a>
+          <button type="submit" class="btn" id="enviar" value="enviar minha brincadeira"></button>
         </div> 
         <!--/enviar-->
         
