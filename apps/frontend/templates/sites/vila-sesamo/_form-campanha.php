@@ -121,7 +121,7 @@
         <!--Anexo-->
          <div class="control-group span2 idade anexo file-wrapper">
           <label class="control-label icones-form icone-form-datafile" for="datafile"></label>
-          <input id="datafile"class="required" type="file" name="datafile">
+          <input id="datafile" class="required" accept="image/*" type="file" name="datafile">
           <span class="button">Anexar</span>
         </div>
         <!--/Anexo-->
@@ -251,11 +251,7 @@
           required: function(){ validate("#mensagem"); return true},
           minlength: 3
         },
-        datafile:{
-          required: true,
-          accept: "(png|jpe?g|gif)",
-          filesize: 15728640
-        },
+
         concordo:{
           required: true
         }
@@ -271,8 +267,7 @@
         cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
         estado:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
         mensagem:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-        datafile:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-        concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
+                concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
       }, 
       
       success: function(label){
