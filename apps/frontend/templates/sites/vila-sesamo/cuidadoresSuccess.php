@@ -255,8 +255,9 @@
   });
   
   $('.btn.dropdown-toggle a').click(function(){
-    alert($(this).attr('class'));
+    alert('oi');
   });
+  
   slideShow = function(ev){
     ev.preventDefault();
     $('#carrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
