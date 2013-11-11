@@ -1,4 +1,6 @@
   <?php if($campaign): ?>
+  <script src="http://cmais.com.br/portal/js/dropkick-master/jquery.dropkick-min.js"></script>
+  
   <span class="divisa carregar"></span>
   <!--section-->
   <section class="form row-fluid">
@@ -193,6 +195,8 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
+    
+    $('#estado').dropkick();
     
 	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
 	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});
