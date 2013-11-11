@@ -297,6 +297,11 @@
           $(this).parent().css('color', 'white');
         }
       });
+      if($('select#estado').hasClass('.error')){
+        $('.dk_toggle').addClass('error');
+      }else{
+        $('.dk_toggle').removeClass('error');
+      }
     }, 100);
       
   }
