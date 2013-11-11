@@ -255,11 +255,12 @@
   });
   
   $('.dropdown-menu a').click(function(){
-    alert($(this).attr('class'));
+    var select = $(this).attr('class');
+    $('.btn.dropdown-toggle').html(select);
   });
   
   slideShow = function(ev){
-    //ev.preventDefault();
+    ev.preventDefault();
     $('#carrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
   };
   stop = function(ev){
