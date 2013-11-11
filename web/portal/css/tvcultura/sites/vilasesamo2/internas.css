@@ -578,11 +578,11 @@ margin: 0!important; }
 
 /* Inner container for options, this is what makes the scrollbar possible. */
 .dk_options_inner { max-height: 250px;border: 1px solid #8c8c8e;border-bottom-width: 2px;border-bottom-color: #999;color: #737373;text-shadow: #fff 0 1px 0;border-radius: 0 0 5px 5px;-moz-border-radius: 0 0 5px 5px;-webkit-border-radius: 0 0 5px 5px; }
-.dk_options_inner a{padding: 0 7px!important;margin-left:0!important; padding:0!important}
+.dk_options_inner a{padding: 0 7px!important;margin-left:0!important;}
 /******  End Theme ******/
 /***** Critical to the continued enjoyment of working dropdowns ******/
 .dk_container {display: none;float: left; }
-.dk_container a {outline: 0;height:32px!important; width: 117px!important}
+.dk_container a {outline: 0;height:24px!important; width: 117px!important;line-height: 24px!important;color: #737373;}
 .dk_toggle {display: -moz-inline-stack;display: inline-block;*display: inline;position: relative;zoom: 1; }
 .dk_toggle .dk_label{line-height:33px; margin-left:7px;}
 .dk_open {position: relative; }
