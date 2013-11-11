@@ -10,7 +10,7 @@ tbody{
 }
 tbody {
   height: 395px;
-  overflow: auto;
+  overflow: scroll;
 }
 td {
   padding: 3px 10px;
