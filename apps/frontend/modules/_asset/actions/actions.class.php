@@ -1040,7 +1040,28 @@ class _assetActions extends sfActions
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlist');
         }
         else {
-        	
+        	if ($this->site->getSlug() == "culturafm") {
+	        	$sections = $this->asset->getSections();
+						if(count($sections) >= 1) {
+							foreach ($sections as $s) {
+								if($parentSection = $s->getParent()){
+									if($parentSection->getSlug() == "colunistas"){
+						        if($debug) print "<br>2-2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Colunista';
+						        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Colunista');
+										break; 
+									}
+                  else{
+                    if($debug) print "<br>2-2-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
+                    $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
+                  }
+								}
+							}
+						}
+						else {
+			        if($debug) print "<br>2-2-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
+			        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
+			      }
+			    }
           if ($this->site->getSlug() == "vila-sesamo") {
             //if($this->asset->id != 148169) // id do asset somente para teste, retirar assim que puderem!
               $this->setLayout("vilasesamo");
