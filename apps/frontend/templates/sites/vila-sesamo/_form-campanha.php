@@ -299,7 +299,7 @@
       if($fakeFile.length === 0) {
         $button.after('<span class="file-holder">' + newVal + '</span>');
       } else {
-        $fakeFile.text('Escolhido: '+ newVal);
+        $fakeFile.text('Arquivo escolhido: '+ newVal);
       }
     }
   }
