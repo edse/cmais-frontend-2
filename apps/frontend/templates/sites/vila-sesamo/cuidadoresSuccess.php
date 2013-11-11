@@ -254,8 +254,8 @@
     slideShow();
   });
   
-  $('.btn.dropdown-toggle a').click(function(){
-    alert('oi');
+  $('.dropdown-menu a').click(function(){
+    alert($(this).attr('class'));
   });
   
   slideShow = function(ev){
