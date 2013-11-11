@@ -252,6 +252,7 @@
           minlength: 3
         },
         datafile:{
+          required: true,
           accept: "png|jpe?g|gif",
           filesize: 15728640
         },
