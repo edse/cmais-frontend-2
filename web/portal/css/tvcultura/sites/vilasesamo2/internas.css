@@ -557,7 +557,7 @@ margin: 0!important; }
     background-color: #fff;
     border-bottom: 1px solid #999;
     font-weight: bold;
-    padding: 8px 10px; }
+    padding: 0 7px!important; }
   .dk_options a:hover,
   .dk_options .dk_option_current a {
     background-color: #737373;
