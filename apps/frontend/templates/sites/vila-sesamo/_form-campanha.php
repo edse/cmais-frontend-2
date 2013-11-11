@@ -117,11 +117,44 @@
           <input type="text" id="email"  value="Email" name="email" placeholder="Email">
         </div>
         <!--/Email-->
-        
+        <style>
+        .file-wrapper {
+          cursor: pointer;
+          display: inline-block;
+          overflow: hidden;
+          position: relative;
+        }
+        .file-wrapper input {
+          cursor: pointer;
+          font-size: 100px;
+          height: 100%;
+          filter: alpha(opacity=1);
+          -moz-opacity: 0.01;
+          opacity: 0.01;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .file-wrapper .button {
+          background: #79130e;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          color: #fff;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 11px;
+          font-weight: bold;
+          margin-right: 5px;
+          padding: 4px 18px;
+          text-transform: uppercase;
+        }
+        </style>
         <!--Anexo-->
-         <div class="control-group span2 idade anexo">
+         <div class="control-group span2 idade anexo file-wrapper">
           <label class="control-label icones-form icone-form-datafile" for="datafile"></label>
           <input id="datafile" type="file" name="datafile">
+          <span class="button">Anexar</span>
           <!--a href="#" title="Anexar">Anexar</a-->
         </div>
         <!--/Anexo-->
@@ -195,6 +228,8 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
+    
+    $('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
     
     $('#estado').dropkick({
       change: function (value, label) {
@@ -282,7 +317,26 @@
     });
     
   });
-  
+  var SITE = SITE || {};
+
+  SITE.fileInputs = function() {
+    var $this = $(this),
+        $val = $this.val(),
+        valArray = $val.split('\\'),
+        newVal = valArray[valArray.length-1],
+        $button = $this.siblings('.button'),
+        $fakeFile = $this.siblings('.file-holder');
+    if(newVal !== '') {
+      $button.text('Photo Chosen');
+      if($fakeFile.length === 0) {
+        $button.after('<span class="file-holder">' + newVal + '</span>');
+      } else {
+        $fakeFile.text(newVal);
+      }
+    }
+  }
+
+
   function validate(obj){
     if($(obj).val()==$(obj).attr("data-default"))
       $(obj).val('');
