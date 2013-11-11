@@ -61,7 +61,7 @@
           <!--slider-nav-->
           <div class="slider-nav">
             <div class="arrow-left arrow"><span title="Anterior" class="back icones-setas icone-car-set-ve-esquerda"></span></div>
-            <div class="arrow-right arrow"><span title="Proximo" class="next icones-setas icone-car-set-ve-esquerda"></span></div>
+            <div class="arrow-right arrow"><span title="Proximo" class="next icones-setas icone-car-set-ve-direita"></span></div>
           </div> 
           <!--slider-nav-->
         </div>
