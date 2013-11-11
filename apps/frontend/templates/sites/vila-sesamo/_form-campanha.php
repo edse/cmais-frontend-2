@@ -136,25 +136,20 @@
           top: 0;
         }
         .file-wrapper .button {
-          background: #79130e;
-          -moz-border-radius: 5px;
-          -webkit-border-radius: 5px;
-          border-radius: 5px;
-          color: #fff;
-          cursor: pointer;
-          display: inline-block;
-          font-size: 11px;
-          font-weight: bold;
-          margin-right: 5px;
-          padding: 4px 18px;
+          background: url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x;
+          margin-left: 10px;
           text-transform: uppercase;
+          color: #434343!important;
+          cursor: pointer;
+          position: relative;
+          z-index: 9;
         }
         </style>
         <!--Anexo-->
          <div class="control-group span2 idade anexo file-wrapper">
           <label class="control-label icones-form icone-form-datafile" for="datafile"></label>
           <input id="datafile" type="file" name="datafile">
-          <span class="button">Anexar</span>
+          <button class="button">Anexar</span>
           <!--a href="#" title="Anexar">Anexar</a-->
         </div>
         <!--/Anexo-->
