@@ -121,7 +121,7 @@
         <!--Anexo-->
          <div class="control-group span2 idade anexo file-wrapper">
           <label class="control-label icones-form icone-form-datafile" for="datafile"></label>
-          <input id="datafile" class="required" accept="image/*" type="file" name="datafile">
+          <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile">
           <span class="button">Anexar</span>
         </div>
         <!--/Anexo-->
@@ -154,7 +154,7 @@
         
         <!--enviar-->
         <div class="control-group span11">
-          <input type="submit" class="btn" id="enviar" value="enviar minha brincadeira"></input>
+          <a type="submit" class="btn" id="enviar" value="enviar minha brincadeira"></a>
         </div> 
         <!--/enviar-->
         
@@ -267,7 +267,7 @@
         cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
         estado:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
         mensagem:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-                concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
+        concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
       }, 
       
       success: function(label){
