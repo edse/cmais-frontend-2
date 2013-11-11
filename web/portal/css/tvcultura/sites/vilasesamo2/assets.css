@@ -107,7 +107,7 @@ h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993
 .form .termo::-webkit-search-results-decoration,
 .form .termo::-webkit-scrollbar-corner {background: #d9d9d9;}
 .form .control-group.estado  label.error,
-.form .control-group.estado  label.anexo{display:none!important;}
+.form .control-group.anexo  label.error{display:none!important;}
 .form label.error{position: absolute;bottom: 18px;left: 37px;font-size: 21px!important;margin: 0;}
 .interna.atividades .form label.error{background-color:#883feb;} 
 .interna.jogos .form label.error{background-color:#3aaaec;}
