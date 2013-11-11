@@ -576,7 +576,7 @@ body.na-tv{background-color:#feec3c;position:relative;}
 
 /* Inner container for options, this is what makes the scrollbar possible. */
 .dk_options_inner { max-height: 250px;border: 1px solid #8c8c8e;border-bottom-width: 2px;border-bottom-color: #999;color: #737373;text-shadow: #fff 0 1px 0;border-radius: 0 0 5px 5px;-moz-border-radius: 0 0 5px 5px;-webkit-border-radius: 0 0 5px 5px; }
-
+.dk_options_inner a{margin-left:0!important; padding:0!important}
 /******  End Theme ******/
 /***** Critical to the continued enjoyment of working dropdowns ******/
 .dk_container {display: none;float: left; }
