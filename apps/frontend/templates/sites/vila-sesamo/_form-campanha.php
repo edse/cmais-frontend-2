@@ -137,6 +137,12 @@
         }
         .file-wrapper .btn {
           background: url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x;
+          margin-left: 10px;
+          text-transform: uppercase;
+          color: #434343!important;
+          cursor: pointer;
+          position: relative;
+          z-index: 9;
         }
 
         </style>
