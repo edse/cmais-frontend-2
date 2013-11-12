@@ -19,7 +19,7 @@
     }); 
     
     var filter_selected
-    $('.filtro-personagem a').click(function(){
+    $('.filtro-personagem a, dropdown-menu li').click(function(){
       var $i=0;
       var $j=0
       var $select = '';
@@ -58,30 +58,10 @@
       return false;
     });
     
-    $('.inner a').mouseenter(function(){
-     if($(this).parent().hasClass('jogos')){ 
-      $(this).find('img').animate({top:-33, easing:"swing"},'fast');
-     }else{
-      $(this).find('img').animate({top:-25, easing:"swing"},'fast');  
-     }
-    });
-    $('.inner a').mouseleave(function(){
-      if(!$(this).parent().parent().hasClass('ativo')){
-        $(this).find('img').stop();
-        $(this).find('img').animate({top:0, easing:"swing"},'fast'); 
-      } 
-    });
+    
     
     //ancora para os filtros
-    $('.inner a[class|="btn"]').click(function(){
-      goTop();  
-    });
     
-    function goTop(){
-      $('html, body').animate({
-        scrollTop:parseInt($('.divisa').offset().top-126)
-      }, "slow");
-    }
     /*
     $container.infinitescroll({
       navSelector  : '#page_nav',    // selector for the paged navigation 

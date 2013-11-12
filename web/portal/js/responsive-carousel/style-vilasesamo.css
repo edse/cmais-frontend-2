@@ -144,8 +144,8 @@
 #carrossel-interna-artigo .slider {position: relative;zoom: 1;}
 #carrossel-interna-artigo .slider-nav {position: absolute;zoom: 1;width: 100%;top: 0;left: 0;}
 #carrossel-interna-artigo .arrow {width: 70px;height: 409px;position: absolute;zoom: 1;top: 0;}
-#carrossel-interna-artigo .arrow span.back{position: absolute; top: 160px; left: 20px;width:50px; height:71px; display:block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1570px;}
-#carrossel-interna-artigo .arrow span.next{position: absolute; right: 20px; top: 160px; width: 50px; height: 70px; display: block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1273px;}
+#carrossel-interna-artigo .arrow span.back{position: absolute; top: 160px; left: -2px;width:50px; height:71px; display:block; /* background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1570px;*/}
+#carrossel-interna-artigo .arrow span.next{position: absolute; right: 1px; top: 160px; width: 50px; height: 70px; display: block; /* background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1273px;*/}
 #carrossel-interna-artigo .arrow span {display: block;width: 100%;height: 250px;cursor: pointer;}
 #carrossel-interna-artigo .arrow.disabled {opacity: 0.3;cursor: default;}
 #carrossel-interna-artigo .arrow-left {left: 0;}
@@ -157,7 +157,7 @@
 #carrossel-interna-artigo .slider li a img{display:block; margin: 0 auto;}
 #carrossel-interna-artigo .slider .videoorimage{max-width:420px;padding:20px;}
 #carrossel-interna-artigo .slider .descritivo{ padding:20px 20px 20px 0px; }
-#carrossel-interna-artigo .slider .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:25px;}
+#carrossel-interna-artigo .slider .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:25px;line-height: 30px;}
 #carrossel-interna-artigo .slider .descritivo p{font-size:16px;}
 #carrossel-interna-artigo .slider .inner {padding: 10px;margin: 0 5px;border: 1px solid #333;height: 100%;background-color: #CCC;}
 #carrossel-interna-artigo .container-itens{position:absolute; width:500px; height:30px; top: 342px; right: 0}

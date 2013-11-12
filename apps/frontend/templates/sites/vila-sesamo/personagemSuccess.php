@@ -20,74 +20,66 @@
       
       <h1><i class="icones-sprite-interna icone-personagem-grande"></i>Personagens</h1>
       
-      <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens') ?>
+      <!--menu filtro persoagem-->
+      <?php $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"personagens"); ?>
+      <?php $personagens = $particularSection->subsections()?>
+      
+      <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens)) ?>
+      <!--/menu filtro persoagem-->
       
       <?php if(isset($displays['destaque-principal'])): ?>
         <?php if(count($displays['destaque-principal']) > 0): ?>
-      <!--box-personagem-->
-      <div class="desc-personagem">
-        
-        <!--carrossel--> 
-        <div id="carrossel-interna-personagem">
-          
-          <!--destaques carrossel-->
-          <div class="slider">
-            <div class="slider-mask-wrap">
-              <div class="slider-mask">
-                <ul class="slider-target">
-                  
-                  <li>
-                  	<div class="pull-left videoorimage">
-                  	 	<iframe width="351" height="263" src="http://www.youtube.com/embed/arlva9ih-hE?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-                  	 </div>                  
-				 </li>
-				 
-                  <li>
-                  	<div class="pull-left videoorimage">
-                  	 	<iframe width="351" height="263" src="http://www.youtube.com/embed/TpNwYOLnwEA?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-                  	 </div>                  
-				 </li>				 
-				 
-                  <?php foreach($displays['destaque-principal'] as $d): ?>
-                  <li>
-                    <div class="pull-left videoorimage">
-                    <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
-                      <iframe width="351" height="263" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-                    <?php elseif($d->Asset->AssetType->getSlug() == "image"): ?>
-                      <img src="<?php echo $d->retriveImageUrlByImageUsage('image-13'); ?>" alt="<?php echo $d->getTitle() ?>" />
-                    <?php endif; ?>
-                    </div>
-                  </li>
+          <!--box-personagem-->
+          <div class="desc-personagem">
+            
+            <!--carrossel--> 
+            <div id="carrossel-interna-personagem">
+              
+              <!--destaques carrossel-->
+              <div class="slider">
+                <div class="slider-mask-wrap">
+                  <div class="slider-mask">
+                    <ul class="slider-target">
+                     <?php foreach($displays['destaque-principal'] as $d): ?>
+                      <li>
+                        <div class="pull-left videoorimage">
+                        <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
+                          <iframe width="351" height="263" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+                        <?php elseif($d->Asset->AssetType->getSlug() == "image"): ?>
+                          <img src="<?php echo $d->retriveImageUrlByImageUsage('image-13'); ?>" alt="<?php echo $d->getTitle() ?>" />
+                        <?php endif; ?>
+                        </div>
+                      </li>
+                      <?php endforeach; ?>
+                    </ul>
+                    <div class="clearit"></div>
+                  </div>
+                </div>
+              </div>
+              <!--/destaques carrosel-->
+              
+              <!--seletor carrossel-->
+              <div class="container-itens"> 
+                <ul id="selector-interna-personagem">
+                  <?php foreach($displays['destaque-principal'] as $k=>$d): ?>
+                    <li><a href="#" rel="frame_<?php echo $k ?>"></a></li>
                   <?php endforeach; ?>
                 </ul>
-                <div class="clearit"></div>
               </div>
+              <!--/seletor carrossel--> 
             </div>
+            <!--/inicio carrossel-->
+            
+            <!--texto personagem-->
+            <div class="descritivo">
+              <h3><?php echo $section->getTitle() ?></h3>
+              <p><?php echo html_entity_decode($displays["sobre-a-personagem"][0]->Asset->AssetContent->render()) ?></p>
+              <p><?php //echo $section->getDescription() ?></p>
+            </div>
+            <!--/texto personagem-->
+              
           </div>
-          <!--/destaques carrosel-->
-          
-          <!--seletor carrossel-->
-          <div class="container-itens"> 
-            <ul id="selector-interna-personagem">
-            	<li><a href="#" rel="frame_0"></a></li>
-            	<li><a href="#" rel="frame_1"></a></li>
-            	
-              <?php foreach($displays['destaque-principal'] as $k=>$d): ?>
-              <li><a href="#" rel="frame_<?php echo $k+2 ?>"></a></li>
-              <?php endforeach; ?>
-            </ul>
-          </div>
-          <!--/seletor carrossel--> 
-        </div>
-        <!--/inicio carrossel-->
-        
-        <div class="descritivo">
-          <h3><?php echo $section->getTitle() ?></h3>
-          <p><?php echo html_entity_decode($displays["sobre-a-personagem"][0]->Asset->AssetContent->render()) ?></p>
-          <p><?php //echo $section->getDescription() ?></p>
-        </div>  
-      </div>
-      <!--/box-personagem-->
+          <!--/box-personagem-->
         <?php endif; ?>
       <?php endif; ?>
     </div>
@@ -97,37 +89,43 @@
     
     <!--destaques-->
     <div class="destaques dest-pers bel row-fluid container">
+      
+      <!--quadro com imagem do personagem -->
       <div class="span4 pull-left">
-        <img src="/portal/images/capaPrograma/vilasesamo2/personagens/int-pers-<?php echo $section->getSlug() ?>.png" alt=""/>
+        <img src="/portal/images/capaPrograma/vilasesamo2/personagens/vs_img_personagem-<?php echo $section->getSlug() ?>-ilustra.png" alt=""/>
       </div>
+      <!--/quadro com imagem do personagem -->
+      
       
       <?php if(isset($displays['destaques-de-assets'])): ?>
         <?php if(count($displays['destaques-de-assets']) > 0): ?>
-      <section class="span8 pull-right">
-        <?php foreach($displays['destaques-de-assets'] as $d): ?>
-          <?php
-            $sections = $d->Asset->getSections();
-            foreach($sections as $s) {
-              if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
-                $assetSection = $s;
-                break;
-              }
-            }
-            $preview = $d->Asset->retriveRelatedAssetsByRelationType('Preview')
-          ?>
-        <article class="span6 <?php echo $assetSection->getSlug() ?>">
-          <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
-            <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
-            <img class="img-destaque" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
-            <?php else: ?>
-            <img class="img-destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
-            <?php endif; ?>
-            <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
-            <p><?php echo $d->getTitle() ?></p>  
-          </a>  
-        </article>
-        <?php endforeach; ?>
-      </section>
+          <section class="span8 pull-right">
+            <?php foreach($displays['destaques-de-assets'] as $d): ?>
+              <?php
+                $sections = $d->Asset->getSections();
+                foreach($sections as $s) {
+                  if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
+                    $assetSection = $s;
+                    break;
+                  }
+                }
+                $preview = $d->Asset->retriveRelatedAssetsByRelationType('Preview')
+              ?>
+              <article class="span6 <?php echo $assetSection->getSlug() ?>">
+                <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
+                  <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
+                    <div class="yt-menu">  
+                      <img src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
+                    </div>
+                  <?php else: ?>
+                    <img class="img-destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
+                  <?php endif; ?>
+                    <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
+                    <p><?php echo $d->getTitle() ?></p>  
+                </a>  
+              </article>
+            <?php endforeach; ?>
+          </section>
         <?php endif; ?>
       <?php endif; ?>
       
@@ -163,12 +161,14 @@
         <li class="span4 element <?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> <?php echo $assetSection->getSlug() ?>"> 
           <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
             <?php if($d->AssetType->getSlug() == "video"): ?>
-              <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
+              <div class="yt-menu">
+                <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
+              </div>
             <?php else: ?>
               <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
-              <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+              <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
             <?php endif; ?>
-            <i class="icones-sprite-interna icones-<?php echo $assetSection->getSlug() ?>-grande"></i>
+            <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
             <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="<?php echo $assetSection->getSlug() ?>"/><?php echo $d->getTitle() ?></div>
           </a>
         </li>
@@ -261,7 +261,8 @@
   var total=0;
   $('#selector-interna-personagem li').each(function(i){
     var width = $(this).width();
-    total = width + total + 14; 
+    total = width + total + 14;
+    console.log(total); 
   });
   
   $('#selector-interna-personagem').css('width', total);

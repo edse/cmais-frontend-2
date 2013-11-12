@@ -53,7 +53,7 @@
     <h1>
       <i class="icones-sprite-interna icone-atividades-grande"></i>
       <?php echo $section->getTitle() ?>
-      <a class="todos-assets" title="voltar para todos jogos">
+      <a class="todos-assets" title="voltar para todas jogos" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" target="_self" >
         <i class="icones-setas icone-voltar-jogos"></i>
         <p>todos os jogos</p>
       </a>

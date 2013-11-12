@@ -44,13 +44,15 @@ a:hover{text-decoration:underline!important;}
 .filtro .filtro-personagem li.ativo img{-moz-opacity: 1;-khtml-opacity: 1;opacity: 1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);filter:alpha(opacity=100);}
 .filtro .filtro-personagem .inner{height:77px;}
 /*.filtro .filtro-personagem .inner.jogos{height:77px;}*/
+.filtro .inner.personagem .active img{top: -32px;-moz-opacity: 1;-khtml-opacity: 1;opacity: 1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);filter:alpha(opacity=100);}
+
 .filtro .inner.garibaldo { background:#ff6525 !important; }
 .filtro .inner.bel { background:#ffcccb !important; }
 .filtro .inner.enio { background:#61cbff !important; }
 .filtro .inner.beto { background:#00cccd !important; }
 .filtro .inner.grover { background:#ffff33 !important; }
 .filtro .inner.elmo { background:#9acd34 !important; }
-.filtro .inner.comecome { background:#9928ce !important; }
+.filtro .inner.come-come { background:#9928ce !important; }
 .filtro .inner.zoe { background:#ce62cf !important;}
 .filtro .inner img{width: 228px;left: 0;position: absolute}
 .element a{position:relative;}
@@ -177,6 +179,7 @@ body.campanhas{background-color:#fee133!important;}
 .interna.videos .yt-destaque img{max-width:750px!important;margin-left: -73px;margin-top: -7px;}
 .interna.videos .yt-menu,
 .cuidadores .container-cuidadores .destaques .yt-menu{max-width:300px; max-height:300px; display:block; overflow: hidden;border-bottom:#f77400 2px solid;}
+.todos-itens .videos .yt-menu img,
 .interna.videos .yt-menu img,
 .cuidadores .container-cuidadores .destaques .yt-menu img{max-width:401px!important;width:401px!important; position:relative; left:-68;}
 .interna.videos .todos-itens li,
@@ -307,8 +310,10 @@ body.campanhas{background-color:#fee133!important;}
 .resultado a:hover p { text-decoration:underline; }
 
 body.personagens { background:#b60401; }
+.personagens .conteudo-asset .asset{border-bottom:2px solid #c31408; } 
 .personagens .filtro-personagem .ativo img{top:-25px;}
 .personagens .filtro .span12{border:none;}
+.personagens .filtro .span12.box-pais{background: none!important;}
 .personagens .filtro .span2{margin:0 4px;}
 .personagens #page_nav {background-color:#ee3021;padding:0 20px 20px 20px; margin: 0;}
 .personagens .todos-itens li{clear:both; background:#d71c0d;}
@@ -332,11 +337,11 @@ body.personagens { background:#b60401; }
 .personagens .filtro .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:25px;}
 .personagens .filtro .descritivo p{font-size:16px;}
 .personagens .scroll, 
-.personagens .filtro  { border-color:#ee3021;background:#b60401; }
+.personagens .filtro  { border-color:#ee3021;border-bottom:7px solid #ee3021!important; background:#b60401; }
 .personagens #carrossel-interna-personagem .slider .descritivo h3{font-family:'din-blackregular',Arial, Helvetica, sans-serif;}
 .personagens #content h3 span, 
 .personagens #content h3 i { margin-top:-5px; }
-.personagens #container-personagens a { display: block;    height: 300px;    position: relative;    width: 300px; }
+.personagens #container-personagens a { display: block;    height: 225px;    position: relative;    width: 225px; }
 .personagens #container-personagens a:hover p { background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bg-transparente.png)  repeat; color:#d71c0d; }
 .personagens #container-personagens p { bottom: 0;   margin: 0;    position: absolute; color:#fff; text-align:center; width:100%; font-size: 25px; text-transform:uppercase; padding:2% 0;  }
 .personagens .span8 .span6 {border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
@@ -380,7 +385,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .selecione .dropdown-toggle {height: 40px;line-height: 43px;color: #fff;width:286px;float: right;text-align: left;}
 .cuidadores .selecione .dropdown-toggle:hover{text-decoration:underline;}
 .cuidadores .selecione .drop-down-menu{padding: 0; margin:0;}
-.cuidadores .selecione .btn .caret{border:none; float:right; margin-top:8px;}
+.cuidadores .selecione .btn .caret{border:none; float:right; margin-top:5px;}
 .cuidadores .descritivo h3{font-family:'din-blackregular', Arial, Helvetica, sans-serif; font-size: 25px; color:#00aa52!important;} 
 .cuidadores .descritivo p{font-size:16px; color:#737373;}
 .cuidadores .descritivo span.nome{color:#008d36}
@@ -452,11 +457,12 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .na-tv .sprite{width: 60px;height: 50px;background: red;margin: -2px 20px 0 0;}
 .na-tv .container-na-tv{background: #FFFFFF;padding: 20px 20px 80px 20px;overflow: hidden;position: relative;border-bottom: 2px solid #008d36;}
 .na-tv .container-na-tv h2.ola{font-family:'din-blackregular',Arial, Helvetica, sans-serif; font-size:65px; color:#00aa52;position:absolute; top:50px; left:50px; display:block;z-index:1} 
-.na-tv .container-na-tv p{max-width:690px;float: right;}
+.na-tv .container-na-tv p{max-width: 690px;float: right;position: relative;z-index: 1;}
 .na-tv .container-na-tv p strong{font-family:'din-blackregular',Arial, Helvetica, sans-serif;color:#00aa52;}
 .na-tv .container-na-tv p a{color:#00aa52;}
 .na-tv .container-na-tv p a:hover{color:#00c76e;}
 .na-tv .container-na-tv .container-horarios{width: 480px;float: right;max-height: 230px;overflow: hidden;}
+.na-tv .container-na-tv .container-horarios .img-logo{text-align: center;margin: 10px;}
 .na-tv .container-na-tv .container-horarios .box-horario{width: 230px;float: left;margin-left: 18px;background: red;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat;}
 .na-tv .container-na-tv .container-horarios .box-horario .box-logo{display:block;width: 100%;background: #ffffff;border: #ccf4e2 1px solid;height: 130px;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;position:relative;}
 .na-tv .container-na-tv .container-horarios .box-horario h2{font-family:'din-blackregular',Arial, Helvetica, sans-serif;color:#00aa52;font-size:18px;text-align:center;line-height: 16px;margin: 20px 0 10px 0;}
@@ -468,7 +474,6 @@ body.na-tv{background-color:#feec3c;position:relative;}
 /* busca */
 .campanhas .container-busca {background: #FFF;border-bottom: 2px solid #fbc227;padding: 20px;}
 /* /busca */
-
 
 
 

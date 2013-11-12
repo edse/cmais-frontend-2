@@ -26,48 +26,46 @@
       
       <!--container-->
       <div class="container-na-tv">
-        <h2 class="ola">Olá!</h2>
+        <h2 class="ola"><?php echo $section->getDescription() ?></h2>
         
         <?php if(isset($displays['historia'])): ?>
           <?php if(count($displays['historia']) > 0): ?>
-        <p><?php echo html_entity_decode($displays['historia'][0]->Asset->AssetContent->render()) ?></p>
+            <?php echo html_entity_decode($displays['historia'][0]->Asset->AssetContent->render()) ?>
           <?php endif; ?>
         <?php endif; ?>
-                  
-        <!--container-horario-->
-        <div class="container-horarios">
-          
-          <!--box-horario-->
-          <div class="box-horario sem-margem-l">
+        
+        
+        <?php if(isset($displays['programacao-na-tv'])): ?>
+          <?php if(count($displays['programacao-na-tv']) > 0): ?>
+                   
+          <!--container-horario-->
+          <div class="container-horarios">
             
-            <div class="box-logo">
-              <span class="icones-na-tv icone-tv-cultura"></span>
-              <span class="icones-na-tv icone-seta-box"></span>
-            </div>
-            
-            
-            <h2>TV CULTURA</h2> 
-            <p>Sábados - 8h<br>No Quintal da Cultura</p>
+            <!--box-horario-->
+            <?php foreach($displays['programacao-na-tv'] as $k=>$d):?>
               
-          </div>
-          <!--/box-horario-->
-          
-          <!--box-horario-->
-          <div class="box-horario">
-            
-            <div class="box-logo">
-              <span class="icones-na-tv icone-tv-ratim-bum"></span>
-              <span class="icones-na-tv icone-seta-box"></span>
-            </div>
-            
-            <h2>TV Rá-tim-bum</h2>
-            <p>Todos os dias - 6h e 0h<br>Na Nome da Faixa</p>
+               
+            <div class="box-horario <?php if($k==0) echo "sem-margem-l"?>">
+              
+              <div class="box-logo">
+                <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                  <span class="img-logo">
+                    <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
+                  </span>
+                  <span class="icones-na-tv icone-seta-box"></span>
+                </div>
                 
+                <h2><?php echo $d->getTitle() ?></h2> 
+                <p><?php echo $d->getHtml() ?></p>
+              </a>  
+            </div>
+            <?php endforeach?>
+            <!--/box-horario-->
+            
           </div>
-          <!--/box-horario-->
-          
-        </div>
-        <!--/container-horario-->
+          <!--/container-horario-->
+          <?php endif; ?>
+        <?php endif; ?>
         
          
       </div>
@@ -84,52 +82,3 @@
   <!--/section -->
 </div>
 <!--div-->      
-
-<?php
-/*
-<!-- barra do titulo da seção -->
-<div>
-  <span><?php echo $section->getTitle() ?></span>
-</div>
-<!--/barra do titulo da seção -->
-
- * programado
-
-<!-- destaques -->
-<div>
-  <?php if(isset($displays['historia'])): ?>
-    <?php if(count($displays['historia']) > 0): ?>
-  <div>
-      <?php echo html_entity_decode($displays['historia']->Asset->AssetContent->render()) ?>
-  </div>
-
-      <?php if(isset($displays['programacao-na-tv'])): ?>
-        <?php if(count($displays['programacao-na-tv']) > 0): ?>
-  <div>
-    <a href="<?php echo $displays['programacao-na-tv'][0]->retriveUrl() ?>" title="<?php echo $displays['programacao-na-tv'][0]->getTitle() ?>">
-      <img src="<?php echo $displays['programacao-na-tv'][0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['programacao-na-tv'][0]->getTitle() ?>" />
-      <span><?php echo $displays['programacao-na-tv'][0]->getTitle() ?></span>
-      <span><?php echo $displays['programacao-na-tv'][0]->getHtml() ?></span>
-    </a>
-  </div>
-  
-  <div>
-    <a href="<?php echo $displays['programacao-na-tv'][1]->retriveUrl() ?>" title="<?php echo $displays['programacao-na-tv'][1]->getTitle() ?>">
-      <img src="<?php echo $displays['programacao-na-tv'][1]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['programacao-na-tv'][1]->getTitle() ?>" />
-      <span><?php echo $displays['programacao-na-tv'][1]->getTitle() ?></span>
-      <span><?php echo $displays['programacao-na-tv'][1]->getHtml() ?></span>
-    </a>
-  </div>          
-        <?php endif; ?>  
-      <?php endif; ?>  
-
-    <?php endif; ?>  
-  <?php endif; ?>  
-</div>
-<!--/destaques-->
-
- */
-?>
-
-
-

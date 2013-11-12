@@ -23,57 +23,41 @@
         <?php echo $section->getTitle() ?>
         
         <!--selecione a campanha-->
-        <?php
-          $sectionCampanha = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"campanhas");
-          $allCampaigns = $sectionCampanha->subsections(); 
+         <?php
+          $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
+          $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
         ?>        
-        <div class="btn-group">
-          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a campanha <span class="caret icones-setas icone-cat-abrir"></span> </a>
-          
-          <?php if(isset($allCampaigns)): ?>
-            <?php if(count($allCampaigns) > 0): ?>
-              <ul class="dropdown-menu">
-                <?php foreach($allCampaigns as $c): ?>
-                  <?php
-                    //$block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($c->getId(), "enviados");
-                    //if ($block) $displays["enviados"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceiros"
-                    //echo $block;
-                  ?>
-                  <?php if(isset($displays["enviados"])): ?>
-                    <?php if(count($displays["enviados"]) > 0): ?>
-                      <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
-                    <?php endif; ?>
-                  <?php endif; ?>
-                <?php endforeach; ?>
-              </ul>
-            <?php endif; ?>
+        <?php if(isset($allCategories)): ?>
+          <?php if(count($allCategories) > 0): ?>
+          <div class="btn-group">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
+            <ul class="dropdown-menu">
+              <?php foreach($allCategories as $c): ?>
+              <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
+              <?php endforeach; ?>
+            </ul>
+          </div>
           <?php endif; ?>
-        </div>  
+        <?php endif; ?>
         <!--/selecione a campanha-->
         
       </h1>
       
       <!--container-campanhas-->
-      <?php if(isset($displays['destaque-principal'])): ?>
-        <?php if(count($displays['destaque-principal']) > 0): ?>
-          <div class="container-campanhas">
-            
-            <!--video ou imagem-->
-            <?php if($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "video"): ?>
-              <iframe width="300" height="246" src="http://www.youtube.com/embed/<?php echo $displays["destaque-principal"][0]->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-            <?php elseif($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "image"): ?>
-              <img src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" />
-            <?php endif; ?>
-            <!--/video ou imagem-->
+      <div class="container-campanhas">
+        
+        <p>
+          <iframe width="300" height="225" src="//www.youtube.com/embed/-o1WFZf-wCo&rel=0" frameborder="0" allowfullscreen></iframe>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non venenatis mauris. In accumsan massa sed consectetur vehicula. Nulla a interdum leo. Vivamus volutpat id dui congue condimentum. Suspendisse iaculis varius dui, ac volutpat magna scelerisque eget. Aenean posuere elementum nisl vitae pretium. Maecenas eu nunc facilisis, facilisis nisi vel, molestie nibh. Ut congue scelerisque ligula commodo faucibus. Sed eu massa vel quam ullamcorper pellentesque a a dolor. Proin consectetur ligula nec turpis aliquet, et luctus neque pulvinar. In venenatis nisl vel nisl dapibus, luctus tempor purus porta. Duis semper, purus sodales placerat bibendum, purus leo blandit sem, eu volutpat lectus lorem faucibus odio. Fusce condimentum ut erat ut porttitor. Suspendisse sed sem id lectus lobortis malesuada. Donec in arcu sit amet mi egestas mollis.
+          <br><br>
+          Veja abaixo a galeria de desenhos das brincadeiras preferidas da criançada!
+        </p>
+        
 
-            <!--descricao-->
-            <?php echo $displays['destaque-principal'][0]->getDescription() ?>
-            <!--/descricao-->
-            
-          </div>
-        <?php endif; ?>
-      <?php endif; ?>
-      <!--container-campanhas-->
+        
+      </div>
+      <!--container-campanhas-->  
+      
     </div>
     <!--/container conteudo-->
     
@@ -87,7 +71,8 @@
     
     <!--viewer-->
     <div id="viewer" class="viewer" >
-      <!--imagem aparece via JQUERY -->
+      <img src="http://midia.cmais.com.br/assets/image/image-14-b/3c7040115466dcdd0a368bb53e0740f55647df82.jpg" alt="Para Colorir - Beto e Bernice">
+      <h2>Nome COMPLETO da Criança / NOME DA Cidade - UF</h2>
     </div>
     <!--/viewer-->
     
@@ -101,19 +86,19 @@
     <!--lista-->
     <ul role="contentinfo" id="container" class="row-fluid">
       <?php if(isset($displays["enviados"])): ?>
-        <?php if(count($displays["enviados"]) > 0): ?>
-          <?php foreach($displays["enviados"] as $k=>$d): ?>
-            <!--item-->
-            <li class="span4 element"> 
-              <a href="javascript: viewer('<?php echo $d->retriveImageUrlByImageUsage("image-14-b") ?>','<?php echo $d->getTitle() ?>')" title="">
-                <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>"/>
-                <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/><?php echo $d->getTitle() ?></div>
-              </a>
-            </li>
-            <!--/item--> 
-          <?php endforeach; ?>
-        <?php endif; ?>
+      <?php if(count($displays["enviados"]) > 0): ?>
+        <?php foreach($displays["enviados"] as $k=>$d): ?>
+          <li class="span4 element"> 
+            <a href="javascript: viewer('<?php echo $d->retriveImageUrlByImageUsage("image-14-b") ?>','<?php echo $d->getTitle() ?>')" title="">
+              <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>"/>
+              <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/><?php echo $d->getTitle() ?></div>
+            </a>
+          </li>
+        <?php endforeach; ?>
       <?php endif; ?>
+    <?php endif; ?>
+      
+      
     </ul> 
     <!--lista-->  
   </section>

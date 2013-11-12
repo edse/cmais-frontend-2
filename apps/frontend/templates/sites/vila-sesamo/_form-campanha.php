@@ -1,4 +1,6 @@
   <?php if($campaign): ?>
+  <script src="http://cmais.com.br/portal/js/dropkick-master/jquery.dropkick-min.js"></script>
+  
   <span class="divisa carregar"></span>
   <!--section-->
   <section class="form row-fluid">
@@ -19,8 +21,8 @@
             <p>
               Sua brincadeira foi enviada com sucesso<br/>
               e em breve estará em nossa galeria de brincadeiras!
-              <a class="btn" href="/campanhas/" title="">visitar a galeria de brincadeiras</a>
             </p>
+            <a class="btn" href="/vila-sesamo/campanhas/brincar-e-um-direito-da-crianca" title="visitar a galeria de brincadeiras">visitar a galeria de brincadeiras</a>
           </div>
         <?php endif; ?>
       <?php endif;?> 
@@ -115,12 +117,12 @@
           <input type="text" id="email"  value="Email" name="email" placeholder="Email">
         </div>
         <!--/Email-->
-        
+
         <!--Anexo-->
-         <div class="control-group span2 idade anexo">
+         <div class="control-group span2 idade anexo file-wrapper">
           <label class="control-label icones-form icone-form-datafile" for="datafile"></label>
-          <input id="datafile" type="file" name="datafile">
-          <!--a href="#" title="Anexar">Anexar</a-->
+          <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile">
+          <span class="button">Anexar</span>
         </div>
         <!--/Anexo-->
         
@@ -152,7 +154,7 @@
         
         <!--enviar-->
         <div class="control-group span11">
-          <button type="submit" class="btn" id="enviar">enviar minha brincadeira</button>
+          <input type="submit" class="btn" id="enviar" value="enviar minha brincadeira"></input>
         </div> 
         <!--/enviar-->
         
@@ -189,10 +191,22 @@
   <?php endif; ?>
   
 <script src="/portal/js/ajaxFileUpload/ajaxfileupload.js" type="text/javascript"></script>
-<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.min.js"></script>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
+    
+    $('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
+    
+    $('#estado').dropkick({
+      change: function (value, label) {
+           if(value == ""){
+             $('.dk_toggle').addClass('error');
+           }else{
+             $('.dk_toggle').removeClass('error'); 
+           }
+        }
+    });
     
 	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
 	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});
@@ -237,11 +251,7 @@
           required: function(){ validate("#mensagem"); return true},
           minlength: 3
         },
-        datafile:{
-          required: true,
-          accept: "png|jpe?g|gif",
-          filesize: 15728640
-        },
+
         concordo:{
           required: true
         }
@@ -257,7 +267,6 @@
         cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
         estado:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
         mensagem:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-        datafile:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
         concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
       }, 
       
@@ -270,7 +279,26 @@
     });
     
   });
-  
+  var SITE = SITE || {};
+
+  SITE.fileInputs = function() {
+    var $this = $(this),
+        $val = $this.val(),
+        valArray = $val.split('\\'),
+        newVal = valArray[valArray.length-1],
+        $button = $this.siblings('.button'),
+        $fakeFile = $this.siblings('.file-holder');
+    if(newVal !== '') {
+      $button.text('Anexar');
+      if($fakeFile.length === 0) {
+        $button.after('<span class="file-holder">' + newVal + '</span>');
+      } else {
+        $fakeFile.text('Anexo: '+ newVal);
+      }
+    }
+  }
+
+
   function validate(obj){
     if($(obj).val()==$(obj).attr("data-default"))
       $(obj).val('');
@@ -293,6 +321,11 @@
           $(this).parent().css('color', 'white');
         }
       });
+      if($('#estado').hasClass('error')){
+        $('.dk_toggle').addClass('error');
+      }else{
+        $('.dk_toggle').removeClass('error');
+      }
     }, 100);
       
   }

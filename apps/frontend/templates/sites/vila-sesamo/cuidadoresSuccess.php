@@ -60,8 +60,8 @@
           <!--slider-mask-wrap--> 
           <!--slider-nav-->
           <div class="slider-nav">
-            <div class="arrow-left arrow"><span title="Anterior" class="back"></span></div>
-            <div class="arrow-right arrow"><span title="Proximo" class="next"></span></div>
+            <div class="arrow-left arrow"><span title="Anterior" class="back icones-setas icone-car-set-ve-esquerda"></span></div>
+            <div class="arrow-right arrow"><span title="Proximo" class="next icones-setas icone-car-set-ve-direita"></span></div>
           </div> 
           <!--slider-nav-->
         </div>
@@ -108,10 +108,10 @@
           <?php if(isset($allCategories)): ?>
             <?php if(count($allCategories) > 0): ?>
             <div class="btn-group">
-              <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Selecione a categoria <span class="caret sprite-seta-down-amarela"></span> </a>
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
               <ul class="dropdown-menu">
                 <?php foreach($allCategories as $c): ?>
-                <li><a href="javascript:;" title="<?php echo $c->getTitle() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
+                <li><a href="javascript:;" class="<?php echo $c->getSlug(); ?>" title="<?php echo $c->getTitle() ?>" data-filter=".<?php echo $c->getSlug() ?>"><?php echo $c->getTitle() ?></a></li>
                 <?php endforeach; ?>
               </ul>
             </div>
@@ -137,7 +137,7 @@
                   }
                 }
               ?>
-            <li class="span4 element<?php if(count($assetCategorias) > 0) echo " " . implode(" ", $assetCategorias); ?>"> 
+            <li class="span4 element <?php if(count($assetCategorias) > 0) echo " " . implode(" ", $assetCategorias); ?>"> 
               <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                 <?php $preview = $d->retriveRelatedAssetsByRelationType("Preview") ?>
                 <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
@@ -252,6 +252,11 @@
     $('#carrossel-interna-artigo').responsiveCarousel('redraw');
     $('#carrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
     slideShow();
+  });
+  
+  $('.dropdown-menu a').click(function(){
+    var select = $(this).attr('title');
+    $('.btn.dropdown-toggle').html(select + '<span class="caret icones-setas icone-cat-abrir"></span>');
   });
   
   slideShow = function(ev){

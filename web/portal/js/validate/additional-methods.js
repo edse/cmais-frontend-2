@@ -33,6 +33,10 @@
 
 })();
 
+jQuery.validator.addMethod("accept", function(value, element, param) {
+  return value.match(new RegExp("." + param + "$"));
+});
+
 jQuery.validator.addMethod("letterswithbasicpunc", function(value, element) {
 	return this.optional(element) || /^[a-z-.,()'\"\s]+$/i.test(value);
 }, "Letters or punctuation only please");  

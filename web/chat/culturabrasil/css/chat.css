@@ -10,7 +10,8 @@ tbody{
 }
 tbody {
   height: 395px;
-  overflow: auto;
+  height: 300px\0;
+  overflow: scroll;
 }
 td {
   padding: 3px 10px;
@@ -67,7 +68,7 @@ tr, td {
   height:393px;
   width:100%;
   display: block;
-  *overflow: scroll;
+  overflow: scroll\0;
 }
 .title {
   float: left;

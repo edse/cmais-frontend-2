@@ -138,7 +138,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* internas e assets*/
 .icones-sprite-interna{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-interna.png) no-repeat top left; float:left;margin:3px 3px 3px 10px;}
 .icone-artigo-grande{ background-position: 0 0; width: 56px; height: 56px; } 
-.icone-artigo-ve-pequeno{ background-position: 0 -106px; width: 36px; height: 36px; } 
+.icone-artigo-ve-pequeno{ background-position: 0 -106px; width: 36px; height: 36px;margin-top: 2px; } 
 .icone-artigo-br-pequeno{ background-position: 0 -192px; width: 36px; height: 36px; } 
 .icone-atividades-grande{ background-position: 0 -278px; width: 56px; height: 56px; } 
 .icone-atividades-pequeno{ background-position: 0 -384px; width: 36px; height: 36px; } 
@@ -483,6 +483,10 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques .tipoC { background:#999; }
 .destaques .tipoD { background:#eee; }
 .divisa { display: block; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-divisa.png) repeat-x; height:2px; max-width:940px; margin:0 auto 20px; }
+.divisa.carregar{margin:0 auto;}
+.interna.atividades .divisa.carregar{background-color:#883feb;}
+.interna.jogos .divisa.carregar{background-color: #3aaaec;}
+.interna.videos .divisa.carregar{background-color:#f78701;}
 .bgtotal { width:100%; max-width:100% !important; background:#fee133; padding-top:5px; padding-bottom:25px; }
 #container-lista li,
 .destaques .span6 { width:31.6%; overflow:hidden; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
@@ -642,7 +646,7 @@ footer .relacionados li.last { margin-right:0; }
 .box-pais a:hover{color:#434343;} 
 
 img.altura{width: 1px!important;height: 38px!important;}
-#content .pais {min-height: 46px!important; background:#feec3c; margin:0 auto !important; overflow:hidden; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
+#content .pais {overflow: hidden;min-height: 46px!important; background:#feec3c; margin:0 auto !important; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 .pais h2.tit-box{height: 44px;font-size: 25px;line-height: 47px;padding: 1px 20px;color: #434343;}
 .pais .divisa { margin-bottom:0; }
 .pais .divisa {clear: both;background-color: #feec3c;height: 2px;margin: 0;}

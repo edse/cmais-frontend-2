@@ -4,8 +4,8 @@
 
 <!-- CAPA SITE -->
 <div id="capa-site">
-  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"]))
-  ?>
+  <?php //if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"]))
+  ?> 
 
   <!-- banner -->
   <!--
@@ -18,7 +18,7 @@
     <div class="box-publicidade pub-grd">
 
       <script type='text/javascript'>
-        GA_googleFillSlot("home-geral728x90");
+        GA_googleFillSlot("home-geral728x90"); 
       </script>
     </div>
 

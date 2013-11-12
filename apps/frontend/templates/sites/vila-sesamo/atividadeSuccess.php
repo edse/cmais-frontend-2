@@ -54,7 +54,7 @@
     <h1 class="back-page">
       <i class="icones-sprite-interna icone-atividades-grande"></i>
       <?php echo $section->getTitle() ?>
-      <a class="todos-assets" title="voltar para todas atividades">
+      <a class="todos-assets" title="voltar para todas atividades" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" target="_self" >
         <i class="icones-setas icone-voltar-atividades"></i>
         <p>todas as atividades</p>
       </a>
