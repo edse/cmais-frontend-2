@@ -157,10 +157,10 @@
               }
             }
           
-            echo $assetSection->getChildren();
+            
           ?> 
             
-            <li class="span4 element <?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> <?php echo $assetSection->getSlug() ?>"> 
+            <li class="span4 element <?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> <?php echo $assetSection->Parent->getSlug() ?>"> 
               <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
                 <?php if($d->AssetType->getSlug() == "video"): ?>
                   <div class="yt-menu">
