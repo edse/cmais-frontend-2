@@ -78,7 +78,7 @@
               <?php $preview = $asset->retriveRelatedAssetsByRelationType("Preview") ?>
               <?php if(count($preview) > 0): ?>
                 <p>
-                  <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
+                  <img class="img-capa" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
                   <span><?php echo $preview[0]->getDescription() ?></span>
                 </p>
               <?php endif; ?>
