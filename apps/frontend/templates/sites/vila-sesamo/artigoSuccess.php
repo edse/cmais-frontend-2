@@ -144,25 +144,29 @@
                         foreach($emails as $k=>$e):
                         ?>
                           <a href="mailto: <?php echo $e ?> " title="envie uma mensagem para <?php echo $c->getTitle() ?>"><?php echo $e ?></a>
-                          <?php if($k > 0 || $Web != "" || $Facebook != "" || $Twitter != "" || $YouTube != ""  ) echo ", " ?>
+                          <?php if($k > 0 || $Web != "" || $Facebook != "" || $Twitter != "" || $YouTube != ""  ){ echo ", "; }else{ echo "."; } ?>
                           
                         <?php endforeach;?>
                       <?php endif; ?>
                       
-                      <?php if($c->AssetPerson->getWebsiteUrl() != ""): ?>
-                        <a href="<?php echo $c->AssetPerson->getWebsiteUrl() ?>" target="_blank" title=""><?php echo $c->AssetPerson->getWebsiteUrl() ?></a>
+                      <?php if($Web != ""): ?>
+                        <a href="<?php echo $Web ?>" target="_blank" title=""><?php echo $Web ?></a>
+                        <?php if( $Facebook != "" || $Twitter != "" || $YouTube != ""  ){ echo ", "; }else{ echo "."; } ?>
                       <?php endif; ?>
                       
                       <?php if($Facebook != ""): ?>
-                          <a href="<?php echo $Facebook ?>" target="_blank" title="">Facebook</a>
+                        <a href="<?php echo $Facebook ?>" target="_blank" title="">Facebook</a>
+                        <?php if( $Twitter != "" || $YouTube != ""  ){ echo ", "; }else{ echo "."; } ?>
                       <?php endif; ?>
                       
                       <?php if($Twitter != ""): ?>  
-                        , <a href="<?php echo $c->AssetPerson->getTwitterUrl() ?>" target="_blank" title="">Twitter</a>
+                        <a href="<?php echo $Twitter ?>" target="_blank" title="">Twitter</a>
+                        <?php if($YouTube != ""  ){ echo ", "; }else{ echo "."; } ?>
                       <?php endif; ?>
                       
                       <?php if($YouTube != ""): ?>
-                        , <a href="<?php echo $YouTube ?>" target="_blank" title="">Canal Youtube</a>
+                        <a href="<?php echo $YouTube ?>" target="_blank" title="">Canal Youtube</a>
+                        <?php echo "."; ?>
                       <?php endif; ?>
                     </div>
                   </article>
