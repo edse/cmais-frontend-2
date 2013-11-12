@@ -97,7 +97,37 @@
       <!--/quadro com imagem do personagem -->
       
       
-      
+      <?php if(isset($displays['destaques-de-assets'])): ?>
+        <?php if(count($displays['destaques-de-assets']) > 0): ?>
+          <section class="span8 pull-right">
+            <?php foreach($displays['destaques-de-assets'] as $d): ?>
+              <?php
+                $sections = $d->Asset->getSections();
+                foreach($sections as $s) {
+                  if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
+                    $assetSection = $s;
+                    break;
+                  }
+                }
+                $preview = $d->Asset->retriveRelatedAssetsByRelationType('Preview')
+              ?>
+              <article class="span6 <?php echo $assetSection->getSlug() ?>">
+                <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
+                  <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
+                    <div class="yt-menu">  
+                      <img src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
+                    </div>
+                  <?php else: ?>
+                    <img class="img-destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
+                  <?php endif; ?>
+                    <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
+                    <p><?php echo $d->getTitle() ?></p>  
+                </a>  
+              </article>
+            <?php endforeach; ?>
+          </section>
+        <?php endif; ?>
+      <?php endif; ?>
       
       <div class="span12 mais-brincadeiras">
         <p>Mais brincadeiras <?php if(in_array($section->getSlug(), array("bel","zoe"))): ?>da <?php else: ?>do <?php endif; ?><?php echo $section->getTitle() ?>:</p>
@@ -106,8 +136,7 @@
     </div>
     <!--/destaques-->
     
-    <?php if(isset($pager)): ?>
-      <?php if(count($pager) > 0): ?>
+    
     <!--/assets-->
     <section class="todos-itens">
       <!--lista-->
@@ -147,8 +176,7 @@
       <!--lista-->  
     </section>
     <!--/assets-->
-      <?php endif; ?>
-    <?php endif; ?>
+
       
       <!--pagina-->
       <div class="pagina">  
