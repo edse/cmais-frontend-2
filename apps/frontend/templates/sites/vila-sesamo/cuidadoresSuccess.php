@@ -171,11 +171,7 @@
       </div>
       <!--/selecione-->
       
-      <input type="hidden" id="filter-choice" value="">
       
-      <nav id="page_nav">
-        <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-ve-grande"></i></a>
-      </nav>
        
 
     </div>  
@@ -230,11 +226,7 @@
     total = width + total + 14; 
   });
   
-  $('.dropdown-toggle').click(function(){
-    $(this).find('span').toggleClass('icone-cat-fechar');  
-  });
-  
-  $('.dropdown-menu a').click(function(){
+  $('.dropdown-menu a, .dropdown-toggle').click(function(){
     $('.dropdown-menu').toggle();
     $('.dropdown-toggle').find('span').toggleClass('icone-cat-fechar');
   })
