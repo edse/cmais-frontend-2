@@ -223,6 +223,7 @@
   
   
   <script>
+  $('.dropdown-toggle').dropdown()
   //carrossel
   var total=0;
   $('#selector-interna-artigo  li').each(function(i){
