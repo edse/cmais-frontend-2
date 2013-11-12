@@ -97,37 +97,7 @@
       <!--/quadro com imagem do personagem -->
       
       
-      <?php if(isset($displays['destaques-de-assets'])): ?>
-        <?php if(count($displays['destaques-de-assets']) > 0): ?>
-          <section class="span8 pull-right">
-            <?php foreach($displays['destaques-de-assets'] as $d): ?>
-              <?php
-                $sections = $d->Asset->getSections();
-                foreach($sections as $s) {
-                  if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
-                    $assetSection = $s;
-                    break;
-                  }
-                }
-                $preview = $d->Asset->retriveRelatedAssetsByRelationType('Preview')
-              ?>
-              <article class="span6 <?php echo $assetSection->getSlug() ?>">
-                <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
-                  <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
-                    <div class="yt-menu">  
-                      <img src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
-                    </div>
-                  <?php else: ?>
-                    <img class="img-destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
-                  <?php endif; ?>
-                    <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
-                    <p><?php echo $d->getTitle() ?></p>  
-                </a>  
-              </article>
-            <?php endforeach; ?>
-          </section>
-        <?php endif; ?>
-      <?php endif; ?>
+      
       
       <div class="span12 mais-brincadeiras">
         <p>Mais brincadeiras <?php if(in_array($section->getSlug(), array("bel","zoe"))): ?>da <?php else: ?>do <?php endif; ?><?php echo $section->getTitle() ?>:</p>
@@ -143,39 +113,37 @@
       <!--lista-->
       <ul role="contentinfo" id="container" class="row-fluid">
         <?php foreach($pager->getResults() as $k=>$d): ?>
-          <?php if($d->getAssetTypeId() != 2): ?>
-            <?php
-              $assetPersonagens = array();
-              $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
-              $assetSections = $d->getSections();
-              foreach($assetSections as $a) {
-                if($a->getParentSectionId() == $personagensSection->getId()) {
-                  $assetPersonagens[] = $a->getSlug();
-                }
-                if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
-                  $assetSection = $a;
-                  break;
-                }
+          <?php
+            $assetPersonagens = array();
+            $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
+            $assetSections = $d->getSections();
+            foreach($assetSections as $a) {
+              if($a->getParentSectionId() == $personagensSection->getId()) {
+                $assetPersonagens[] = $a->getSlug();
               }
+              if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
+                $assetSection = $a;
+                break;
+              }
+            }
+          
             
-              
-            ?> 
-              
-              <li class="span4 element <?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> <?php echo $assetSection->getSlug() ?>"> 
-                <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
-                  <?php if($d->AssetType->getSlug() == "video"): ?>
-                    <div class="yt-menu">
-                      <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
-                    </div>
-                  <?php else: ?>
-                    <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
-                    <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
-                  <?php endif; ?>
-                  <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
-                  <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="<?php echo $assetSection->getSlug() ?>"/><?php echo $d->getTitle() ?></div>
-                </a>
-              </li>
-          <?php endif; ?>    
+          ?> 
+            
+            <li class="span4 element <?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> <?php echo $assetSection->getSlug() ?>"> 
+              <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
+                <?php if($d->AssetType->getSlug() == "video"): ?>
+                  <div class="yt-menu">
+                    <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
+                  </div>
+                <?php else: ?>
+                  <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
+                  <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
+                <?php endif; ?>
+                <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
+                <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="<?php echo $assetSection->getSlug() ?>"/><?php echo $d->getTitle() ?></div>
+              </a>
+            </li>
         <?php endforeach; ?>
       
       </ul> 
