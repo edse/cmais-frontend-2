@@ -139,7 +139,13 @@
                       ?>
                       
                       <?php if($Web != ""): ?>
-                        <a href="mailto: <?php echo $c->AssetPerson->getHeadline() ?>" title="envie uma mensagem para <?php echo $c->getTitle() ?>"><?php echo $c->AssetPerson->getHeadline() ?></a><br>
+                        <?php 
+                        $emails = explode(",", $c->AssetPerson->getHeadline());
+                        foreach($emails as $e):
+                        ?>
+                          <a href="mailto: <?php echo $e[0] ?> " title="envie uma mensagem para <?php echo $c->getTitle() ?>"><?php echo $e[0] ?></a>
+                          
+                        <?php endforeach;?>
                       <?php endif; ?>
                       
                       <?php if($c->AssetPerson->getWebsiteUrl() != ""): ?>
