@@ -141,10 +141,10 @@
         
               <!--/sobre os autores-->
               
-              <div class="comente">              
+              <div id="comente-este-artigo">              
                 <div class="divisa"></div>
-                <i class="icones-form icone-balao-verde"></i>
-                <p>Gostou desse artigo? Comente!</p>
+                <i class="icones-form icone-fale-conosco-ve"></i>
+                <h3>Gostou desse artigo? Comente!</h3>
               </div>
               
               <fb:comments href="<?php echo $uri ?>" numposts="3" width="580" publish_feed="true"></fb:comments>
