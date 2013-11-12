@@ -78,8 +78,8 @@
               <?php $preview = $asset->retriveRelatedAssetsByRelationType("Preview") ?>
               <?php if(count($preview) > 0): ?>
                 <p>
-                  <img class="img-capa" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
-                  <span><?php echo $preview[0]->getDescription() ?></span>
+                  <img id="img-capa" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
+                  <span id="legenda" ><?php echo $preview[0]->getDescription() ?></span>
                 </p>
               <?php endif; ?>
               <?php echo html_entity_decode($asset->AssetContent->render()) ?>
