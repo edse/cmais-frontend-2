@@ -141,9 +141,10 @@
                       <?php if($Web != ""): ?>
                         <?php 
                         $emails = explode(",", $c->AssetPerson->getHeadline());
-                        foreach($emails as $e):
+                        foreach($emails as $k=>$e):
                         ?>
                           <a href="mailto: <?php echo $e ?> " title="envie uma mensagem para <?php echo $c->getTitle() ?>"><?php echo $e ?></a>
+                          <?php if($k > 0 || $Web != "" || $Facebook != "" || $Twitter != "" || $YouTube != ""  ) echo ", " ?>
                           
                         <?php endforeach;?>
                       <?php endif; ?>
