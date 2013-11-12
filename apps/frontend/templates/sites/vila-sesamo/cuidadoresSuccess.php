@@ -234,6 +234,10 @@
     $(this).find('span').toggleClass('icone-cat-fechar');  
   });
   
+  $('.dropdown-menu a').click(function(){
+    $('.dropdown-menu').hide();
+    $('.dropdown-toggle').find('span').toggleClass('icone-cat-fechar');
+  })
   $('#selector-interna-artigo ').css('width', total);
   
   $('#carrossel-interna-artigo').responsiveCarousel({
