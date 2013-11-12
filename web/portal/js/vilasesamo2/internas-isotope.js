@@ -19,7 +19,9 @@
     }); 
     
     var filter_selected
-    $('.filtro-personagem a, dropdown-menu li').click(function(){
+    
+    //filtro personagens para atividades, jogos e videos
+    $('.filtro-personagem a').click(function(){
       var $i=0;
       var $j=0
       var $select = '';
@@ -55,6 +57,27 @@
         $('#filtro-descricao').html('Todos os links dos personagens estão ativos');
       }
       
+      return false;
+    });
+    
+    //filtro artigos por categoria
+    $('.dropdown-menu li a').click(function(){
+      var $i=0;
+      var $j=0
+      var $select = $(this).attr('data-filter');
+      filter_selected = "";
+      
+      
+      $container.isotope({ filter:filter_selected });
+      
+      
+      /*
+      if($i > 0){
+        $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens</span>');
+      }else{
+        $('#filtro-descricao').html('Todos os links dos personagens estão ativos');
+      }
+      */
       return false;
     });
     
