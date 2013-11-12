@@ -156,8 +156,10 @@
                 break;
               }
             }
-          ?>
-          <?php if($assetSection->getSlug()=="videos" || $assetSection->getSlug() == "jogos" || $assetSection->getSlug()=="atividades"): ?>
+          
+            echo $assetSection->getType();
+          ?> 
+            
             <li class="span4 element <?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> <?php echo $assetSection->getSlug() ?>"> 
               <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
                 <?php if($d->AssetType->getSlug() == "video"): ?>
@@ -172,7 +174,7 @@
                 <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="<?php echo $assetSection->getSlug() ?>"/><?php echo $d->getTitle() ?></div>
               </a>
             </li>
-          <?php endif; ?>  
+           
         <?php endforeach; ?>
       </ul> 
       <!--lista-->  
