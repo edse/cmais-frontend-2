@@ -143,7 +143,7 @@
                         $emails = explode(",", $c->AssetPerson->getHeadline());
                         foreach($emails as $e):
                         ?>
-                          <a href="mailto: <?php echo $e[0] ?> " title="envie uma mensagem para <?php echo $c->getTitle() ?>"><?php echo $e[0] ?></a>
+                          <a href="mailto: <?php echo $e ?> " title="envie uma mensagem para <?php echo $c->getTitle() ?>"><?php echo $e ?></a>
                           
                         <?php endforeach;?>
                       <?php endif; ?>
