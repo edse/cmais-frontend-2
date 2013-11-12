@@ -415,6 +415,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor{position:relative;width: 580px;overflow: hidden;border: 1px solid #ccf4e2;margin-bottom: 10px;padding: 8px;border-radius:5px;  -moz-border-radius:5px; -webkit-border-radius:5px;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre{width:425px;float:right;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre a{color:#00AA52;}
+.cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre p{min-height: 58px;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .foto-sobre{position:absolute;top: 15px;left: 15px;width:140px;height: 140px;overflow: hidden;text-align: center;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .sombra-amarela{background: #fdea4f;width: 140px;height: 140px;position: absolute;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;}
 .cuidadores .container-cuidadores .col-dir .box-sobre .links{clear: both;overflow: hidden;padding: 8px;}
