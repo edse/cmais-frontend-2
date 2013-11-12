@@ -131,6 +131,8 @@
                     <div class="descricao-sobre">
                       <h3><?php echo $c->getTitle() ?></h3>
                       <p><?php echo $c->AssetPerson->getBio() ?></p>
+                      
+                      <!--Lista de Contatos-->
                       <?php
                         $Web = $c->AssetPerson->getWebsiteUrl();
                         $Facebook = $c->AssetPerson->getFacebookUrl();
@@ -138,7 +140,7 @@
                         $YouTube = $c->AssetPerson->getYoutubeUrl();
                       ?>
                       
-                      <?php if($Web != ""): ?>
+                      <?php if($c->AssetPerson->getHeadline() != ""): ?>
                         <?php 
                         $emails = explode(",", $c->AssetPerson->getHeadline());
                         foreach($emails as $k=>$e):
@@ -173,6 +175,8 @@
                         <a href="<?php echo $YouTube ?>" target="_blank" title="">Canal Youtube</a>
                         <?php echo "."; ?>
                       <?php endif; ?>
+                      <!--Lista de Contatos-->
+                      
                     </div>
                   </article>
                 <?php endforeach; ?>
