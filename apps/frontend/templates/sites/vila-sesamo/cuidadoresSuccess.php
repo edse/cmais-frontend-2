@@ -113,7 +113,7 @@
               <ul class="dropdown-menu">
                 <?php foreach($allCategories as $c): ?>
                 <li>
-                  <a href="javascript:;" class="<?php echo $c->getSlug(); ?>" title="<?php echo $c->getTitle() ?>" data-filter=".<?php echo $c->getSlug() ?>">
+                  <a href="javascript:;" class="<?php echo $c->getSlug(); ?>" title="<?php echo $c->getTitle() ?>" data-filter=".<?php echo $c->getSlug() ?>" data-toggle="dropdown">
                     <?php echo $c->getTitle() ?>
                   </a>
                 </li>
