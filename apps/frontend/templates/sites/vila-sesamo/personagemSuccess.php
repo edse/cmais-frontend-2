@@ -157,7 +157,7 @@
               }
             }
           
-            echo $assetSection->getAssets();
+            echo $assetSection->getChildren();
           ?> 
             
             <li class="span4 element <?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> <?php echo $assetSection->getSlug() ?>"> 
