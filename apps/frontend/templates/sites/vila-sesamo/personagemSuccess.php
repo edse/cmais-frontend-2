@@ -157,7 +157,7 @@
               }
             }
           ?>
-          <?php echo $assetSection->getTitle(); ?>
+          <?php echo $assetSection->getSlug(); ?>
           <?php if($assetSection=="videos" || $assetSection == "jogos" || $assetSection=="atividades"): ?>
             <li class="span4 element <?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> <?php echo $assetSection->getSlug() ?>"> 
               <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
