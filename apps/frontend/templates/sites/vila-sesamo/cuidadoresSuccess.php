@@ -118,6 +118,11 @@
                   </a>
                 </li>
                 <?php endforeach; ?>
+                <li>
+                  <a href="javascript:;" title="Todas as categorias" data-filter="">
+                    Todas as categorias
+                  </a>
+                </li>
               </ul>
             </div>
             <?php endif; ?>
@@ -218,6 +223,10 @@
   $('#selector-interna-artigo  li').each(function(i){
     var width = $(this).width();
     total = width + total + 14; 
+  });
+  
+  $('.dropdown-toggle').click(function(){
+    $(this).find('span').toggleClass('icone-cat-fechar');  
   });
   
   $('#selector-interna-artigo ').css('width', total);
