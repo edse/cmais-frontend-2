@@ -126,9 +126,9 @@
               </article>
             <?php endforeach; ?>
           </section>
-        <?php else:?>
-          <section class="span8 pull-right"></section> 
         <?php endif; ?>
+      <?php else:?>
+        <section class="span8 pull-right"></section> 
       <?php endif; ?>
       
       <div class="span12 mais-brincadeiras">
