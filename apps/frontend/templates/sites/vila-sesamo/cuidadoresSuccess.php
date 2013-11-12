@@ -100,6 +100,7 @@
         <!--barra selecao-->
         <div class="barra-selecao b-verdeescuro">
           <h3>Todos os Artigos de:</h3>
+          <h3 aria-live="polite" id="filtro-descricao">todas as categorias</h3>
           <!-- selecione uma categoria-->
           <?php
             $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");

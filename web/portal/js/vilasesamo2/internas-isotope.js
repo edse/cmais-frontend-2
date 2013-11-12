@@ -64,11 +64,11 @@
     $('.dropdown-menu li a').click(function(){
       var $i=0;
       var $j=0
-      var $select = $(this).attr('data-filter');
-      filter_selected = "";
+      var $select_cat = $(this).attr('data-filter');
+      filter_selected = $select_cat;
       
-      
-      $container.isotope({ filter:filter_selected });
+      console.log($select_cat);
+      //$container.isotope({ filter:filter_selected });
       
       
       /*
