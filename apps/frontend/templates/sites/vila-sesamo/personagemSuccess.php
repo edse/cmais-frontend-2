@@ -126,6 +126,8 @@
               </article>
             <?php endforeach; ?>
           </section>
+        <?php else:?>
+          <section class="span8 pull-right"></section> 
         <?php endif; ?>
       <?php endif; ?>
       
