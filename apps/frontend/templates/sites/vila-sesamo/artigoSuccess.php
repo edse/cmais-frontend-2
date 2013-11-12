@@ -143,10 +143,8 @@
               
               <div id="comente-este-artigo">              
                 <div class="divisa"></div>
-                <div class="center-title">
-                  <i class="icones-form icone-fale-conosco-ve"></i>
-                  <h3>Gostou desse artigo? Comente!</h3>
-                </div>
+                <i class="icones-form icone-fale-conosco-ve"></i>
+                <h3>Gostou desse artigo? Comente!</h3>
               </div>
               
               <fb:comments href="<?php echo $uri ?>" numposts="3" width="580" publish_feed="true"></fb:comments>
