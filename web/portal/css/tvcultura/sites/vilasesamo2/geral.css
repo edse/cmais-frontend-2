@@ -193,7 +193,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* formularios */
 .icones-form{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-form.png) no-repeat top left;}
 .icone-fale-conosco-br{ background-position: 0 0; width: 40px; height: 29px; display:block;float: left;margin-right: 10px; } 
-.icone-fale-conosco-ve{ background-position: 0 -79px; width: 40px; height: 29px; } 
+.icone-fale-conosco-ve{ background-position: 0 -79px; width: 40px; height: 29px;float: left;margin-right: 10px; } 
 .icone-form-datafile{ background-position: 8px -158px; width: 28px; height: 40px; } 
 .icone-form-datafile-erro{ background-position: 8px -248px; width: 28px; height: 40px; } 
 .icone-form-cidade{ background-position: 0 -338px; width: 30px; height: 40px; } 
