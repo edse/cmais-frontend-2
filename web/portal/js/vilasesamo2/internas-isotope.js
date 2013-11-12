@@ -67,8 +67,8 @@
       var $select_cat = $(this).attr('data-filter');
       filter_selected = $select_cat;
       
-      console.log($select_cat);
-      //$container.isotope({ filter:filter_selected });
+      //console.log($select_cat);
+      $container.isotope({ filter:filter_selected });
       
       
       /*
