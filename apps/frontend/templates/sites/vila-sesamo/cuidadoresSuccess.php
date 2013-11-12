@@ -263,7 +263,7 @@
     var select = $(this).attr('title');
     $('.btn.dropdown-toggle').html(select + '<span class="caret icones-setas icone-cat-abrir"></span>');
   });
-  
+   
   slideShow = function(ev){
     //ev.preventDefault();
     $('#carrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
