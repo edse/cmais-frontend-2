@@ -1825,6 +1825,7 @@ class _sectionActions extends sfActions
     }
     elseif($this->section->Parent->id > 0){
       if($this->site->getType() == "Hotsite" || $this->site->getType() == 1){
+        $this->setLayout("vilasesamo");
         if(in_array($this->site->getSlug(), array("vila-sesamo","vilasesamo"))) {
           $parentSection = $this->section->getParent();
           if($parentSection->getSlug() == "personagens") {
