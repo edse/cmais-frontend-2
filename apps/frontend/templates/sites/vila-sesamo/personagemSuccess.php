@@ -137,61 +137,6 @@
     <!--/destaques-->
     
     
-    <!--/assets-->
-    <section class="todos-itens">
-      <!--lista-->
-      <ul role="contentinfo" id="container" class="row-fluid">
-        <?php foreach($pager->getResults() as $k=>$d): ?>
-        <?php
-          $assetPersonagens = array();
-          $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
-          $assetSections = $d->getSections();
-          foreach($assetSections as $a) {
-            if($a->getParentSectionId() == $personagensSection->getId()) {
-              $assetPersonagens[] = $a->getSlug();
-            }
-            if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
-              $assetSection = $a;
-              break;
-            }
-          }
-        ?>
-          
-        <li class="span4 element <?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> <?php echo $assetSection->getSlug() ?>"> 
-          <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
-            <?php if($d->AssetType->getSlug() == "video"): ?>
-              <div class="yt-menu">
-                <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
-              </div>
-            <?php else: ?>
-              <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
-              <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
-            <?php endif; ?>
-            <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
-            <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="<?php echo $assetSection->getSlug() ?>"/><?php echo $d->getTitle() ?></div>
-          </a>
-        </li>
-        <?php endforeach; ?>
-      </ul> 
-      <!--lista-->  
-    </section>
-    <!--/assets-->
-
-      
-      <!--pagina-->
-      <div class="pagina">  
-        <span class="divisa carregar"></span>
-        
-        <input type="hidden" id="filter-choice" value="">
-        <nav id="page_nav">
-          <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-br-grande"></i></a>
-        </nav>
-      </div>
-      <!--pagina-->
-      
-      
-  
-      
       <?php include_partial_from_folder('sites/vila-sesamo', 'global/para-os-pais', array("site" => $site, "uri" => $uri)) ?>
       
     </div>
