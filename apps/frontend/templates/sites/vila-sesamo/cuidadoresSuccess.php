@@ -265,7 +265,7 @@
   });
   
   slideShow = function(ev){
-    ev.preventDefault();
+    //ev.preventDefault();
     $('#carrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
   };
   stop = function(ev){
