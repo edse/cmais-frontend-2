@@ -60,6 +60,7 @@
       return false;
     });
     
+    
     //filtro artigos por categoria
     $('.dropdown-menu li a').click(function(){ 
       var $i=0;
