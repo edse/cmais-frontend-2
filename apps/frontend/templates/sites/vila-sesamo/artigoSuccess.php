@@ -150,8 +150,13 @@
                       <?php endif; ?>
                       
                       <?php if($Web != ""): ?>
-                        <a href="<?php echo $Web ?>" target="_blank" title=""><?php echo $Web ?></a>
-                        <?php if( $Facebook != "" || $Twitter != "" || $YouTube != ""  ){ echo ", "; }else{ echo "."; } ?>
+                        <?php 
+                        $webs = explode(",", $Web);
+                        foreach($webs as $k=>$w):
+                        ?>
+                          <a href="<?php echo $Web ?>" target="_blank" title="<?php echo $Web ?>">Site <?php echo ($k + 1) ?></a>
+                          <?php if( $k > 0 || $Facebook != "" || $Twitter != "" || $YouTube != ""  ){ echo ", "; }else{ echo "."; } ?>
+                        <?php endforeach;?>
                       <?php endif; ?>
                       
                       <?php if($Facebook != ""): ?>
