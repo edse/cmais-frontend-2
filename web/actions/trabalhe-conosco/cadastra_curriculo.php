@@ -1,75 +1,80 @@
 <?php
 
   header("Content-Type: text/html;charset=utf8");
-
-  //CLASS WEB SERVICE
-  class wsTrabalheConosco{
-    public $client;
-    public $options;
-    public $result;
-    //FUNÇÃO PARA CONSULTAR WEBSERVICE
-    public function executeWebService($service,$arguments){
-      $this->client  = new SoapClient("http://intranetantiga/ws_curriculos/Curriculos.asmx?WSDL");
-      $this->options  = array('location' => 'http://intranetantiga/ws_curriculos/Curriculos.asmx');
-      $this->result =  $this->client->__soapCall($service, $arguments, $this->options);    
-    } 
-  } 
-     
-   $service = "cadastra_curriculo";    
+  include_once("wsTrabalheConosco.class.php");
+  $service = "cadastra_curriculo";    
            
-   $arguments = array('cadastra_curriculo' 
-                    => array('cpf' => "67132493701",
-                            'deficiente' => "1",  
-                            'nome' => 'Joseval Carvalho Lima',  
-                            'endereco' => 'Manuel Álvares Pimentel, 200', 
-                            'complemento' => 'casa13', 
-                            'bairro' => 'Itaim Paulista', 
-                            'municipio' => 'São Paulo', 
-                            'estado' => 'SP', 
-                            'cep' => '08141-000', 
-                            'celular' => '11-98319-4313', 
-                            'fone_residencial' => '11-98319-4313', 
-                            'fone_comercial' => '11-2025-0436', 
-                            'email' => 'josevals@terra.com.br', 
-                            'sexo' => 'M', 
-                            'data_nascimento' => '04/02/1980', 
-                            'natural' => 'BA',
-                            'nacionalidade' => '10',  
-                            'ano_chegada' => '2000',
-                            'rg' => '33865258-9/SSP', 
-                            'rg_origem' => 'ssp', 
-                            'pai' => 'Irailson Alves Lima', 
-                            'mae' => 'Mariazinha de Carvalho Lima', 
-                            'estado_civil' => 'S', 
-                            'carteira_profissional' => '061579', 
-                            'carteira_serie' => '294', 
-                            'carteira_uf' => 'sp', 
-                            'pis' => '13501798937', 
-                            'habilitacao' => '3577439917', 
-                            'habilitacao_categoria' => 'AE',
-                            'reservista' => '040074005782', 
-                            'titulo_eleitor' => '328299930167', 
-                            'titulo_zona' => '398/0009', 
-                            'area' => "067", 
-                            'cargo' => "00322", 
-                            'salario_pretencao' => 3400, 
-                            'salario_ultimo' => 2450, 
-                            'experiencia' => 'Analista de Publicidade', 
-                            'parentes' => 'N',
-                            'trabalhou_fpa' => 'N', 
-                            'trabalhou_fpa_de' => '04/03/2007', 
-                            'trabalhou_fpa_ate' => '04/03/2008', 
-                            'motivo_saida' => '0', 
-                            'grupo' => '01'));
+	if(!empty($_GET['qg_trabde']) && !empty($_GET['qg_trabat'])){
+	  $trabalhou_fpa_de = $_GET['qg_trabde'];
+	  $trabalhou_fpa_ate =$_GET['qg_trabat'];
+	}else{
+	  //DEFAULT
+	  $trabalhou_fpa_de   = '01/01/1900';
+	  $trabalhou_fpa_ate  = '01/01/1900';
+	}
+    
+  $arguments = array('cadastra_curriculo' 
+                    => array(
+                			'cpf'		 	=> $_GET['cpf'],
+                        	'deficiente' 	=> $_GET['qg_defic'],  
+                            'nome' 			=> $_GET['qg_nome'],  
+                            'endereco' 		=> $_GET['qg_enderec'], 
+                            'complemento'   => $_GET['qg_complem'], 
+                            'bairro' 		=> $_GET['qg_bairro'], 
+                            'municipio' 	=> $_GET['qg_municip'], 
+                            'estado' 		=> $_GET['qg_estado'], 
+                            'cep' 			=> $_GET['qg_cep'], 
+                            'celular' 		=> $_GET['qg_fonece'], 
+                         'fone_residencial' => $_GET['qg_fonere'], 
+                         'fone_comercial'   => $_GET['qg_foneco'], 
+ 							
+                            'email' 		=> $_GET['qg_mail'], 
+                            'sexo' 			=> $_GET['qg_sexo'], 
+                          'data_nascimento' => $_GET['data'], 
+                            'natural' 		=> $_GET['qg_natural'],
+                            'nacionalidade' => $_GET['qg_naciona'],  
+                            'ano_chegada' 	=> $_GET['qg_anocheg'],
+                            'rg' 			=> $_GET['qg_rg'], 
+                            'rg_origem' 	=> $_GET['qg_rgorg'], 
+                            'pai' 			=> $_GET['qg_pai'], 
+                            'mae' 			=> $_GET['qg_mae'], 
+                            'estado_civil' 	=> $_GET['qg_estciv'], 
+                    'carteira_profissional' => $_GET['qg_numcp'], 
+                    'carteira_serie' 		=> $_GET['qg_sercp'], 
+                    'carteira_uf' 			=> $_GET['qg_ufcp'], 
+                    'pis' 					=> $_GET['qg_pis'], 
+                    'habilitacao' 			=> $_GET['qg_habilit'], 
+                    'habilitacao_categoria' => $_GET['qg_cathab'],
+                    'reservista' 			=> $_GET['qg_reserv'], 
+                    'titulo_eleitor' 		=> $_GET['qg_tituloe'], 
+                    'titulo_zona' 			=> $_GET['qg_zonasec'],
+                     
+                        'area' 				=> $_GET['qg_are'], 
+                        'cargo' 			=> $_GET['qg_cargo'], 
+                        'salario_pretencao' => $_GET['qg_pretsal'], 
+                        'salario_ultimo' 	=> $_GET['qg_ultsal'], 
+                        'experiencia' 		=> $_GET['qg_memo2'], 
+                        'parentes' 			=> $_GET['qg_tempar'],
+                        'trabalhou_fpa' 	=> $_GET['qg_trabal'], 
 
+                        'trabalhou_fpa_de' 	=> $trabalhou_fpa_de,
+                        'trabalhou_fpa_ate' => $trabalhou_fpa_ate,
+
+                        'motivo_saida' 		=> $_GET['qg_motsai'], 
+                        'grupo' 			=> $_GET['qg_grupo']));
 
     $result = new wsTrabalheConosco();
     $result->executeWebService($service, $arguments);
     $resultado = $result->result->cadastra_curriculoResult;
-    //print_r($result);
-    //print_r($arguments);
-    echo $resultado;
-    //print_r($result);  
+    
+	$output = json_encode(array("data" => $resultado));
+	
+	if(isset($_GET['callback'])){
+		$callback = $_GET['callback'];
+		echo $callback.'('. $output . ');';	
+	}else{
+		//echo $output;
+	}
 ?>
        
 

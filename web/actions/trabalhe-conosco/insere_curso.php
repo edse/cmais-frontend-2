@@ -1,48 +1,24 @@
 <?php
+	header("Content-Type: text/html;charset=utf8");
+	include_once("wsTrabalheConosco.class.php");
 
-  header("Content-Type: text/html;charset=utf8");
-
-  //CLASS WEB SERVICE
-  class wsTrabalheConosco{
-    public $client;
-    public $options;
-    public $result;
-    //FUNÇÃO PARA CONSULTAR WEBSERVICE
-    public function executeWebService($service,$arguments){
-      $this->client  = new SoapClient("http://intranetnova/ws_curriculos/Curriculos.asmx?WSDL");
-      $this->options  = array('location' => 'http://intranetnova/ws_curriculos/Curriculos.asmx');
-      $this->result =  $this->client->__soapCall($service, $arguments, $this->options);    
-    } 
-  } 
-     
-    $service = "insere_curso";
-    $cod_curriculo = 51901;
-   
-    $arguments = array('insere_curso' => array('cod_curriculo' => $cod_curriculo,
-                                                'entidade' => "FATEC TESTE",
-                                                'data' => "04/10/2000",
-                                                'cod_curso' => "00020",    
-                                                'cod_tipo' => "003",
-                                                'cod_escolar' => "02"));
-
-    $acao = new wsTrabalheConosco();
-    $acao->executeWebService($service, $arguments);
-    
-    $result_function = $service."Result";//NOME DO METOD DE RESULTADO
-    
-    $xml = $acao->result->$result_function;
-    
-    //header("Content-Type: text/xml;charset=utf8");
-    
-    print_r($xml);
-    //$xml = simplexml_load_string($xml);
-    //echo $xml; 
-        //$array = $xml->NewDataSet->seleciona_cursosResult;
-      
-   // }else{
-      
-     // echo "erro ao inserir histórico";
-  // }
-  
-    
+	if(isset($_GET['callback']) && !empty($_GET['qg_curric']) && !empty($_GET['qm_entidad']) && !empty($_GET['qm_data']) && !empty($_GET['qm_curso']) && !empty($_GET['qm_tcurso']) && !empty($_GET['qm_escolar']) && !empty($_GET['qm_dscout'])){	
+		$service = "insere_curso";
+		$arguments = array('insere_curso' 
+												=> array('cod_curriculo'	=> $_GET['qg_curric'], 
+	                                 'entidade' 		=> $_GET['qm_entidad'],
+	                                 'data' 				=> $_GET['qm_data'],
+	                                 'cod_curso' 		=> $_GET['qm_curso'],
+	                                 'cod_tipo' 		=> $_GET['qm_tcurso'],
+	                                 'cod_escolar' 	=> $_GET['qm_escolar'],
+	                                 'descricao' 		=> $_GET['qm_dscout']));
+	  $acao = new wsTrabalheConosco();
+	  $acao->executeWebService($service, $arguments);
+	  $result_function = $service."Result";//NOME DO METOD DE RESULTADO
+	  $resultado = $acao->result->$result_function;
+		$output = json_encode(array("data" => $resultado));
+	
+		$callback = $_GET['callback'];
+		echo $callback.'('. $output . ');';	
+	}
 ?>

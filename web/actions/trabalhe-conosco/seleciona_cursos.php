@@ -1,55 +1,37 @@
 <?php
-
   header("Content-Type: text/html;charset=utf8");
-
-  //CLASS WEB SERVICE
-  class wsTrabalheConosco{
-    public $client;
-    public $options;
-    public $result;
-    //FUNÇÃO PARA CONSULTAR WEBSERVICE
-    public function executeWebService($service,$arguments){
-      $this->client  = new SoapClient("http://intranetnova/ws_curriculos/Curriculos.asmx?WSDL");
-      $this->options  = array('location' => 'http://intranetnova/ws_curriculos/Curriculos.asmx');
-      $this->result =  $this->client->__soapCall($service, $arguments, $this->options);    
-    }
-  } 
-     
-   /*
-     * 
-     *  SELECIONA CURSOS 
-     * 
-   */
-  
-  //$cod_curriculo = 51903;
-  if(!empty($_GET['cod_curriculo'])){
-    $cod_curriculo = $_GET['cod_curriculo'];
+  include_once("wsTrabalheConosco.class.php");
+  if(!empty($_GET['qg_curric']) && isset($_GET['callback'])){
+    $cod_curriculo = $_GET['qg_curric'];
     $service = "seleciona_cursos";
     $arguments = array('seleciona_cursos' => array('cod_curriculo' => $cod_curriculo));
-  
     $acao = new wsTrabalheConosco();
     $acao->executeWebService($service, $arguments);
-    
     $result_function = $service."Result";
-   
     $xml = $acao->result->$result_function->any;
-    
-    header("Content-Type: text/xml;charset=utf8");
-    
-    print_r($xml);
-    $xml = simplexml_load_string($xml);
-        
-    //$array = $xml->NewDataSet->seleciona_cursosResult;
-      
-   }else{
-     echo "Informe o código do currículo";
-   } 
-    
-    
+	  $xml = simplexml_load_string($xml);
+		$cursos = null;
+		foreach ($xml->NewDataSet->cursos as $x){
+			
+			$data = explode("-", $x->qm_data);
+			$qm_data = substr($data[2],-11, 2)."/".$data[1]."/".$data[0];			
+			
+			$cursos[] = array("cursos" => 
+									array("qm_codigo" => (string)$x->qm_codigo, 
+										    "qm_entidad" =>  (string)trim($x->qm_entidad),
+												"qm_data" =>  (string)trim($qm_data),
+												"qm_dscout" =>  (string)trim($x->qm_dscout),
+												"qm_escolar" =>  (string)trim($x->qm_escolar),
+												"qm_curso" =>  (string)trim($x->qm_curso),
+												"qm_tcurso" =>  (string)trim($x->qm_tcurso),
+												)
+								);		
+		}
+		//$cursos = array_reverse($cursos);
+		
+		$output = json_encode(array("data" => $cursos));
+		$callback = $_GET['callback'];
+		echo $callback.'('. $output . ');';	
+	} 
     
 ?>
-       
-
-
-
-

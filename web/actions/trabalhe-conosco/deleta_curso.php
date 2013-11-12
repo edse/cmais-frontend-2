@@ -3,9 +3,9 @@
   include_once("wsTrabalheConosco.class.php");
   
   if(isset($_GET['callback']) && !empty($_GET['codigo'])){
-		$service = "deleta_historico";    
+		$service = "deleta_curso";    
 		$codigo = $_GET['codigo'];
-		$arguments = array('deleta_historico' 
+		$arguments = array('deleta_curso' 
                     => array('codigo' => $codigo));
 	  
 	  $acao = new wsTrabalheConosco();
@@ -15,7 +15,7 @@
 		
 		$output = json_encode(array("data" => $resultado));
 		$callback = $_GET['callback'];
-		echo $callback.'('. $output . ');';	
+		echo $callback.'('. $output . ');';
 	}else{
 		echo "Informe o código do histórico";
 	}

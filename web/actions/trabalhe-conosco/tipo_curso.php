@@ -2,37 +2,33 @@
 
   header("Content-Type: text/html;charset=utf8");
 
-  //CLASS WEB SERVICE
-  class wsTrabalheConosco{
-    public $client;
-    public $options;
-    public $result;
-    //FUNÇÃO PARA CONSULTAR WEBSERVICE
-    public function executeWebService($service,$arguments){
-      $this->client  = new SoapClient("http://intranetantiga/ws_curriculos/Curriculos.asmx?WSDL");
-      $this->options  = array('location' => 'http://intranetantiga/ws_curriculos/Curriculos.asmx');
-      $this->result =  $this->client->__soapCall($service, $arguments, $this->options);    
-    } 
-  } 
-     
-  $service = "tipo_curso";         
-  $arguments = array('');
-  
-  $acao = new wsTrabalheConosco();
-  $acao->executeWebService($service, $arguments);
-  
-  $result_function = $service."Result";//NOME DO METOD DE RESULTADO
-   
+  include_once("wsTrabalheConosco.class.php");
+	 
+	$service = "tipo_curso";
+	$arguments = array('');
+	  
+	$acao = new wsTrabalheConosco();
+	$acao->executeWebService($service, $arguments);
+	$result_function = $service."Result";//NOME DO METOD DE RESULTADO
   $xml = $acao->result->$result_function->any;
-    
-  header("Content-Type: text/xml;charset=utf8");
   
-  print_r($xml);
-  //$xml = simplexml_load_string($xml);
-  
-  //$array = $xml->NewDataSet;
+  $xml = simplexml_load_string($xml);
 
-  //print_r($array);
+	$tipos = null;
+	
+	foreach ($xml->NewDataSet->tipos as $x){
+		$tipos[] = array("tipos" => 
+								array("qx_codigo" => (string)$x->QX_CODIGO, 
+									    "qx_desc" =>  (string)trim($x->QX_DESC))
+							);		
+	}
+	
+	$output = json_encode(array("data" => $tipos));
+
+	if(isset($_GET['callback'])){
+		$callback = $_GET['callback'];
+		echo $callback.'('. $output . ');';	
+	}	
     
 ?>
 
