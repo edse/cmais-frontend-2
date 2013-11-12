@@ -237,7 +237,7 @@ body.campanhas{background-color:#fee133!important;}
 .interna.atividades .destaque-filtro.especial li.active a { background:#fff; color:#883feb; border:none; font-size:25px; }
 .interna.atividades .destaque-filtro.especial li.active { background:#fff; }
 .interna.atividades #content .scroll h3 { border-color:#7732E5; }
-.filtro .span2 h3#filtro-descricao{font-size:1px!important; text-indent:999999!important; width: 0!important; height:1px!important;}
+h3#filtro-descricao{font-size:1px!important; text-indent:999999!important; width: 0!important; height:1px!important;}
 /* atividades*/
 
 /*smint*/
