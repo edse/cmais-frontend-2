@@ -119,7 +119,7 @@
                 </li>
                 <?php endforeach; ?>
                 <li>
-                  <a href="javascript:;" title="Todas as categorias" data-filter="">
+                  <a href="javascript:;" title="Todas as categorias" data-filter="" data-toggle="dropdown">
                     Todas as categorias
                   </a>
                 </li>
@@ -235,7 +235,6 @@
   });
   
   $('.dropdown-menu a').click(function(){
-    $('.dropdown-menu').hide();
     $('.dropdown-toggle').find('span').toggleClass('icone-cat-fechar');
   })
   $('#selector-interna-artigo ').css('width', total);
