@@ -143,7 +143,7 @@
       <!--lista-->
       <ul role="contentinfo" id="container" class="row-fluid">
         <?php foreach($pager->getResults() as $k=>$d): ?>
-          <?php echo $d->parent_section_id . ">>>?"?>
+          <?php echo $d->Parent . ">>>?"?>
           <?php
             $assetPersonagens = array();
             $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
