@@ -131,11 +131,32 @@
                     <div class="descricao-sobre">
                       <h3><?php echo $c->getTitle() ?></h3>
                       <p><?php echo $c->AssetPerson->getBio() ?></p>
-                      <a href="mailto: <?php echo $c->AssetPerson->getHeadline() ?>" title="envie uma mensagem para <?php echo $c->getTitle() ?>"><?php echo $c->AssetPerson->getHeadline() ?></a><br>
-                      <a href="<?php echo $c->AssetPerson->getWebsiteUrl() ?>" target="_blank" title=""><?php echo $c->AssetPerson->getWebsiteUrl() ?></a>
-                      <a href="<?php echo $c->AssetPerson->getFacebookUrl() ?>" target="_blank" title="">Facebook</a>
-                      <a href="<?php echo $c->AssetPerson->getTwitterUrl() ?>" target="_blank" title="">Twitter</a>
-                      <a href="<?php echo $c->AssetPerson->getYoutubeUrl() ?>" target="_blank" title="">Canal Youtube</a>
+                      <?php
+                        $Web = $c->AssetPerson->getWebsiteUrl();
+                        $Facebook = $c->AssetPerson->getFacebookUrl();
+                        $Twitter = $c->AssetPerson->getTwitterUrl();
+                        $YouTube = $c->AssetPerson->getYoutubeUrl();
+                      ?>
+                      
+                      <?php if($Web != ""): ?>
+                        <a href="mailto: <?php echo $c->AssetPerson->getHeadline() ?>" title="envie uma mensagem para <?php echo $c->getTitle() ?>"><?php echo $c->AssetPerson->getHeadline() ?></a><br>
+                      <?php endif; ?>
+                      
+                      <?php if($c->AssetPerson->getWebsiteUrl() != ""): ?>
+                        <a href="<?php echo $c->AssetPerson->getWebsiteUrl() ?>" target="_blank" title=""><?php echo $c->AssetPerson->getWebsiteUrl() ?></a>
+                      <?php endif; ?>
+                      
+                      <?php if($Facebook != ""): ?>
+                          <a href="<?php echo $Facebook ?>" target="_blank" title="">Facebook</a>
+                      <?php endif; ?>
+                      
+                      <?php if($Twitter != ""): ?>  
+                        , <a href="<?php echo $c->AssetPerson->getTwitterUrl() ?>" target="_blank" title="">Twitter</a>
+                      <?php endif; ?>
+                      
+                      <?php if($YouTube != ""): ?>
+                        , <a href="<?php echo $YouTube ?>" target="_blank" title="">Canal Youtube</a>
+                      <?php endif; ?>
                     </div>
                   </article>
                 <?php endforeach; ?>
