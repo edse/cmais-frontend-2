@@ -79,12 +79,13 @@
               <?php if(count($preview) > 0): ?>
                 <p>
                   <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
+                  <span><?php echo $asset->getDescription() ?></span>
                 </p>
               <?php endif; ?>
               <?php echo html_entity_decode($asset->AssetContent->render()) ?>
               
               <!--imprimir/baixar-->
-              <div class="imprimir">
+              <!--div class="imprimir">
                 
                 <a class="option-assets" href="#" title="Imprimir" target="_blank">
                   <i class="icones-sprite-interna icone-imprimir-verde"></i>
@@ -96,7 +97,7 @@
                   <span>Baixar</span>
                 </a>
                 
-              </div>
+              </div-->
               <!--/imprimir/baixar-->
               
               
