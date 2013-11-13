@@ -1,7 +1,7 @@
   <!-- carrossel desktop-->
   <section id="carrossel-destaque">
     <!--Inicio-->
-    <div id="slider" role="presentation" >
+    <div id="slider">
       <!--lista-->
       <ul>
 
@@ -85,48 +85,12 @@
         </li>
         <!--/item-->
         
-        <!--item-->
-        <li class="slide05" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/5/img-pattern_banner_5-personagens.jpg') repeat;">
-          <div class="mpc_ls_slide_background total" data-style="scale">
-            <a href="#" class="total"></a>
-          </div>
-          <div class="mpc_ls_slide_item" data-x="86" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
-            <h2>Personagens</h2>
-          </div>
-          <div class="mpc_ls_slide_item" data-x="86" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
-            <p>Lorem ipsum dolor sit amet orci aliquam.</p>
-          </div>
-          <div class="mpc_ls_slide_item" data-x="86" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/5/img-personagem_banner_5-personagens.jpg" alt="">
-          </div>
-          <div class="mpc_ls_slide_item" data-x="180" data-y="340" data-delay="2000" data-duration="500" data-easing="easeOutElastic" data-effect="slideLeft" data-fade="on">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/5/img-seta_banner_5-personagens.png" alt="">
-          </div>
-        </li>
-        <!--/item-->
         
-        <!--item-->
-        <li class="slide06" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_6-cuidadores.jpg') repeat;">
-          <div class="mpc_ls_slide_background total" data-style="scale">
-            <a href="#" class="total"></a>
-          </div>
-          <div class="mpc_ls_slide_item" data-x="86" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
-            <h2>Cuidadores</h2>
-          </div>
-          <div class="mpc_ls_slide_item" data-x="86" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
-            <p>Lorem ipsum dolor sit amet orci aliquam.</p>
-          </div>
-          <div class="mpc_ls_slide_item" data-x="180" data-y="340" data-delay="2000" data-duration="500" data-easing="easeOutElastic" data-effect="slideLeft" data-fade="on">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/6/img-personagem_banner_6-cuidadores.png" alt="">
-          </div>
-        </li>
-        <!--/item-->
         
       </ul>
       <!--/lista-->
     </div>
     <!--/Inicio-->
-    
   </section>
   <!-- /carrossel desktop-->
   <!--scripts e css banner-->
