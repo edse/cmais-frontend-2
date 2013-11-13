@@ -10,7 +10,7 @@
           <div class="mpc_ls_slide_item" data-x="350" data-y="120" data-delay="2000" data-duration="500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/1/img-balao_banner_1-boasvindas.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item" data-x="526" data-y="22" data-delay="1500" data-duration="500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on"> 
+          <div class="mpc_ls_slide_item" data-x="26" data-y="22" data-delay="1500" data-duration="500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on"> 
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/1/img-personagem_banner_1-boasvindas.png" alt="">
           </div>
           <div class="mpc_ls_slide_background total" data-style="scale">
