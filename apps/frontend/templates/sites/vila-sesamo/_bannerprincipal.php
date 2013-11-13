@@ -140,7 +140,7 @@
     $('#slider').fadeIn();
     $('#slider').mpcLayerSlider({
       'pauseOnHover' : false,
-      'slideshow' : true,
+      'slideshow' : false,
       'uiStyle': 'style02',
       'delay': 12800,
       'showThumbTooltip':false, 
