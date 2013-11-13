@@ -6,7 +6,7 @@
       <ul>
 
         <!--item-->
-        <li class="slide01" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_1-boasvindas.jpg') repeat;" role="presentation" aria-hidden="true">
+        <li class="slide01" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_1-boasvindas.jpg') repeat;">
           <div class="mpc_ls_slide_background total" data-style="scale">
             <a href="#" class="total"></a>
           </div>
@@ -29,7 +29,7 @@
         <!--/item-->
         
         <!--item-->
-        <li class="slide02" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_2-jogos.jpg') repeat;" role="presentation" aria-hidden="true">
+        <li class="slide02" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_2-jogos.jpg') repeat;">
           <div class="mpc_ls_slide_background total" data-style="scale">
             <a href="#" class="total"></a>
           </div>
@@ -49,7 +49,7 @@
         <!--/item-->
         
         <!--item-->
-        <li class="slide03" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_3-videos.jpg') repeat;" role="presentation" aria-hidden="true">
+        <li class="slide03" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_3-videos.jpg') repeat;">
           <div class="mpc_ls_slide_background total" data-style="scale">
             <a href="#" class="total"></a>
           </div>
@@ -69,7 +69,7 @@
         <!--/item-->
         
         <!--item-->
-        <li class="slide04" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_4-atividades.jpg') repeat;" role="presentation" aria-hidden="true">
+        <li class="slide04" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_4-atividades.jpg') repeat;">
           <div class="mpc_ls_slide_background total" data-style="scale">
             <a href="#" class="total"></a>
           </div>
@@ -89,7 +89,7 @@
         <!--/item-->
         
         <!--item-->
-        <li class="slide05" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_5-personagens.jpg') repeat;" role="presentation" aria-hidden="true">
+        <li class="slide05" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_5-personagens.jpg') repeat;">
           <div class="mpc_ls_slide_background total" data-style="scale">
             <a href="#" class="total"></a>
           </div>
@@ -109,7 +109,7 @@
         <!--/item-->
         
         <!--item-->
-        <li class="slide06" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_6-cuidadores.jpg') repeat;" role="presentation" aria-hidden="true">
+        <li class="slide06" data-easing="easeInExpo" data-transition="slideRight" style="background: url('/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_6-cuidadores.jpg') repeat;">
           <div class="mpc_ls_slide_background total" data-style="scale">
             <a href="#" class="total"></a>
           </div>
