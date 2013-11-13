@@ -106,7 +106,7 @@
         <!--/item-->
         
         <!--item-->
-        <li class="slide06" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_6-cuidadores.jpg') repeat;">
+        <li class="slide06" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/6/img-pattern_banner_6-cuidadores.jpg') repeat;">
           <div class="mpc_ls_slide_background total" data-style="scale">
             <a href="#" class="total"></a>
           </div>
