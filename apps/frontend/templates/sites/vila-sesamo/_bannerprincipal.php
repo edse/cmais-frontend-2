@@ -6,12 +6,12 @@
       <ul>
 
         <!--item-->
-        <li class="slide01" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_1-boasvindas.jpg') repeat;">
+        <li class="slide01" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/banner/1/img-pattern_banner_1-boasvindas.jpg') repeat;">
           <div class="mpc_ls_slide_item" data-x="1006" data-y="150" data-delay="2000" data-duration="1500" data-easing="easeInBack" data-effect="slideLeft" data-fade="on">
-            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/1/img-balao_banner_1-boasvindas.png" alt="">
+            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vila-sesamo/banner/1/img-balao_banner_1-boasvindas.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="46" data-y="22" data-delay="1500" data-duration="2500" data-easing="easeOutElastic" data-effect="slideRight" data-fade="on"> 
-            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/1/img-personagem_banner_1-boasvindas.png" alt="">
+            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vila-sesamo/banner/1/img-personagem_banner_1-boasvindas.png" alt="">
           </div>
           <div class="mpc_ls_slide_background total" data-style="scale">
             <a href="#" class="total"></a>
@@ -26,15 +26,15 @@
         <!--/item-->
         
         <!--item-->
-        <li class="slide02" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/2/img-pattern_banner_2-jogos.jpg') repeat;">
+        <li class="slide02" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/banner/2/img-pattern_banner_2-jogos.jpg') repeat;">
           <div class="mpc_ls_slide_background total" data-style="scale">
             <a href="#" class="total"></a>
           </div>
           <div class="mpc_ls_slide_item" data-x="86" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
-            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/2/img-personagem_banner_2-jogos.png" alt="">
+            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vila-sesamo/banner/2/img-personagem_banner_2-jogos.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="180" data-y="340" data-delay="2000" data-duration="500" data-easing="easeOutElastic" data-effect="slideLeft" data-fade="on">
-            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/2/img-seta_banner_2-jogos.png" alt="">
+            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vila-sesamo/banner/2/img-seta_banner_2-jogos.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="86" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
             <span class="tit-banner">Jogos</span>
@@ -46,7 +46,7 @@
         <!--/item-->
         
         <!--item-->
-        <li class="slide03" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/3/img-pattern_banner_3-videos.jpg') repeat;">
+        <li class="slide03" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/banner/3/img-pattern_banner_3-videos.jpg') repeat;">
           <div class="mpc_ls_slide_background total" data-style="scale">
             <a href="#" class="total"></a>
           </div>
@@ -57,16 +57,16 @@
             <p>Lorem ipsum dolor sit amet orci aliquam.</p>
           </div>
           <div class="mpc_ls_slide_item" data-x="86" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
-            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/3/img-personagem_banner_3-videos.png" alt="">
+            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vila-sesamo/banner/3/img-personagem_banner_3-videos.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="180" data-y="340" data-delay="2000" data-duration="500" data-easing="easeOutElastic" data-effect="slideLeft" data-fade="on">
-            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/3/img-seta_banner_3-videos.png" alt="">
+            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vila-sesamo/banner/3/img-seta_banner_3-videos.png" alt="">
           </div>
         </li>
         <!--/item-->
         
         <!--item-->
-        <li class="slide04" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/4/img-pattern_banner_4-atividades.jpg') repeat;">
+        <li class="slide04" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/banner/4/img-pattern_banner_4-atividades.jpg') repeat;">
           <div class="mpc_ls_slide_background total" data-style="scale">
             <a href="#" class="total"></a>
           </div>
@@ -77,16 +77,16 @@
             <p>Lorem ipsum dolor sit amet orci aliquam.</p>
           </div>
           <div class="mpc_ls_slide_item" data-x="86" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
-            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/4/img-personagem_banner_4-atividades.png" alt="">
+            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vila-sesamo/banner/4/img-personagem_banner_4-atividades.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="180" data-y="340" data-delay="2000" data-duration="500" data-easing="easeOutElastic" data-effect="slideLeft" data-fade="on">
-            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/4/img-seta_banner_4-atividades.png" alt="">
+            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vila-sesamo/banner/4/img-seta_banner_4-atividades.png" alt="">
           </div>
         </li>
         <!--/item-->
         
         <!--item-->
-        <li class="slide05" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/5/img-pattern_banner_5-personagens.jpg') repeat;">
+        <li class="slide05" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/banner/5/img-pattern_banner_5-personagens.jpg') repeat;">
           <div class="mpc_ls_slide_background total" data-style="scale">
             <a href="#" class="total"></a>
           </div>
@@ -97,10 +97,10 @@
             <p>Lorem ipsum dolor sit amet orci aliquam.</p>
           </div>
           <div class="mpc_ls_slide_item" data-x="86" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
-            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/5/img-personagem_banner_5-personagens.jpg" alt="">
+            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vila-sesamo/banner/5/img-personagem_banner_5-personagens.jpg" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="180" data-y="340" data-delay="2000" data-duration="500" data-easing="easeOutElastic" data-effect="slideLeft" data-fade="on">
-            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/5/img-seta_banner_5-personagens.png" alt="">
+            <img src="http://cmais.com.brhttp://cmais.com.br/portal/images/capaPrograma/vila-sesamo/banner/5/img-seta_banner_5-personagens.png" alt="">
           </div>
         </li>
         <!--/item-->
