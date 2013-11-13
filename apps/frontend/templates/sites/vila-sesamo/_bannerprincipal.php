@@ -1,7 +1,7 @@
   <!-- carrossel desktop-->
   <section id="carrossel-destaque">
     <!--Inicio-->
-    <div id="slider">
+    <div id="slider" style="display:none;">
       <!--lista-->
       <ul>
 
@@ -136,18 +136,20 @@
 
   <script>
   //banner principal
-  
-  $('#slider').mpcLayerSlider({
-    'pauseOnHover' : false,
-    'slideshow' : true,
-    'uiStyle': 'style02',
-    'delay': 12800,
-    'showThumbTooltip':false, 
-    'arrowsOffset': -35,
-    'showControlsOnHover': true,
-    'controlsOpacity': 0.0,
-    'shadowStyle':'style01',
-    'swipeGesture':true,
-    'bulletsVerticalOffset':25
+  $( window ).load(function() {
+    $('#slider').fadeIn();
+    $('#slider').mpcLayerSlider({
+      'pauseOnHover' : false,
+      'slideshow' : true,
+      'uiStyle': 'style02',
+      'delay': 12800,
+      'showThumbTooltip':false, 
+      'arrowsOffset': -35,
+      'showControlsOnHover': true,
+      'controlsOpacity': 0.0,
+      'shadowStyle':'style01',
+      'swipeGesture':true,
+      'bulletsVerticalOffset':25
+    });
   });
   </script>
