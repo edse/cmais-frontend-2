@@ -1,7 +1,6 @@
 <?php
   
   ### ALTERA CURRÍCULO
-  //TESTE
   //814725288912
   //04/02/1988
   
