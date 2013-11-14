@@ -166,15 +166,24 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #horario p{font-size:12px; line-height: 15px; margin: 0 0 10px 0; font-weight:normal;}
 #horario span{font-size: 14px; color:#2b3377; display:block;}
 #horario .divisa { background:url(../images/pattern-divisa.png) ; width: 2px; height:43px; position:absolute; top:14px; right:0; }  
-#horario .cultura { width:376px; }
+#horario .cultura { width:256px; }
 #horario .cultura img{margin-top:13px;}
 #horario .rtb { width:244px; height:59px; padding-top:10px}
-#horario .agenda { width:129px; height: 59px;padding-top: 10px;}
+#horario .agenda { width:129px; height: 59px;padding: 10px 10px 0 10px;}
 #horario .agenda h2 { height:43px; line-height: 43px; }
+#horario .dvd{display:block; background:#fffd00 url(../images/sprite-dvd.png) no-repeat center 6px; height:69px; width:100px;}
+#horario .dvd h2{text-indent:-99999; font-size:0px;}
+#horario .dvd:hover{background:#cb35a4 url(../images/sprite-dvd.png) no-repeat center -57px; }
 #horario .sprite-ico-agenda { float:left; margin: 1px 10px }
 #horario h2 {color:#2b3377;  text-transform:uppercase; font-size:14px; line-height: 24px; margin-top:4px;}
-#horario a:hover { background:#fffd00; }
-
+#horario a:hover { background:#fffd00}
+.modal-bac{background: #000;position: absolute;top: 0;left: 0;margin-top: 70px;width: 100%;height: 2058px;z-index: 11;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter: alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5;}
+.modal-dvd .container-dvd{background: #e4f527;width: 940px;margin-top: 12%;overflow: hidden;z-index: 20;position: absolute;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;padding: 10px;}
+.modal-dvd .container-dvd p{font-size: 23px;font-family: 'gotham_blackregular',Arial, Helvetica, sans-serif;color: #2b3377;line-height: 30px;margin: 10px 0px 40px 0px;}
+.modal-dvd .container-dvd a.back,
+.modal-dvd .container-dvd a.access{padding: 10px;text-transform:uppercase; font-family:'gotham_blackregular',Arial, Helvetica, sans-serif; color:#e4f527!important;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;display: block; background:red; float:left;margin:10px 25px}
+.modal-dvd .container-dvd a.back{background:#cb35a4;padding: 10px;font-size:20px;}
+.modal-dvd .container-dvd a.access{background:#2b3377;color:#e4f527;float:right; font-size:20px;}
 /* /horario */
 
 /*rodape2*/
