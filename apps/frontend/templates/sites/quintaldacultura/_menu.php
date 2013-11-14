@@ -44,7 +44,7 @@
         chame o papai ou a mamãe para te acompanhar, tá combinado?
     </p>
     <a class="back" href="javascript:;" title="Volar para a brincadeira">voltar para a brincadeira!</a>
-    <a class="access" href="http://cmais.com.br/quintaldacultura/dvd-do-quintal-da-cultura" target="_self" title="Acessar">acessar</a> 
+    <a class="access" href="http://cmais.com.br/quintaldacultura/dvd-do-quintal-da-cultura" target="_self" title="Acessar">acessar</a>  
   </div>
   <div class="modal-bac"></div>
 </div>
