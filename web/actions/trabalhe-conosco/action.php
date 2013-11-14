@@ -32,8 +32,8 @@
 							$qg_trabde 	= substr($data_de[2],-11, 2)."/".$data_de[1]."/".$data_de[0];
 							$qg_trabate = substr($d_ate[2],-11, 2)."/".$d_ate[1]."/".$d_ate[0];
 							
-							$qg_ultsal = number_format($x->qg_ultsal, 2, ',', '.');							
-							$qg_pretsal = number_format($x->qg_ultsal, 2, ',', '.');
+							$qg_ultsal =  number_format((string)$x->qg_ultsal, 2, ',', '.');							
+							$qg_pretsal = number_format((string)$x->qg_pretsal, 2, ',', '.');
 							
 							$curriculo = array("curriculo" => 
 										array( 
