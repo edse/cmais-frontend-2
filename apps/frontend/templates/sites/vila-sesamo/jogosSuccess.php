@@ -96,9 +96,9 @@
         <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getDescription() .". ".$related[0]->AssetImage->getHeadline() ?>" />
         <i class="icones-sprite-interna icone-jogos-pequeno"></i>
-        <div aria-hidden="true">
+        <div>
           <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
-          <?php echo $d->getTitle() ?>
+          <p  aria-hidden="true"><?php echo $d->getTitle() ?></p>
         </div>
       </a>
     </li>
