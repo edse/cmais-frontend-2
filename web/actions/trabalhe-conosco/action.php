@@ -29,7 +29,7 @@
 						foreach ($xml->NewDataSet->curriculo as $x){
 							$data_de 		= explode("-", $x->qg_trabde);
 							$d_ate 			= explode("-", $x->qg_trabate);
-							$qg_trabde 	= substr($d_ate[2],-11, 2)."/".$d_ate[1]."/".$d_ate[0];
+							$qg_trabde 	= substr($data_de[2],-11, 2)."/".$data_de[1]."/".$data_de[0];
 							$qg_trabate = substr($d_ate[2],-11, 2)."/".$d_ate[1]."/".$d_ate[0];
 							
 		 					$curriculo = array("curriculo" => 

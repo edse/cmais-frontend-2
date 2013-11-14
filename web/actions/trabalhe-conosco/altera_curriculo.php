@@ -12,8 +12,8 @@
     $qg_curric   =  $_GET['qg_curric'];
     
     if(!empty($_GET['qg_trabde']) && !empty($_GET['qg_trabate'])){
-      $trabalhou_fpa_de = $_GET['qg_trabde'];
-      $trabalhou_fpa_ate = $_GET['qg_trabate'];;
+      $trabalhou_fpa_de	 = 	$_GET['qg_trabde'];
+      $trabalhou_fpa_ate =	$_GET['qg_trabate'];
     }else{
       //DEFAULT
       $trabalhou_fpa_de   = '01/01/1900';
