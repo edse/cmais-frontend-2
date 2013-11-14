@@ -11,9 +11,9 @@
   if(!empty($_GET['qg_curric']) && !empty($_GET['data']) && !empty($_GET['qg_nome']) && !empty($_GET['qg_cep']) && isset($_GET['callback'])){
     $qg_curric   =  $_GET['qg_curric'];
     
-    if(!empty($_GET['qg_trabde']) && !empty($_GET['qg_trabat'])){
-      $trabalhou_fpa_de = $_GET['qg_trabde'];
-      $trabalhou_fpa_ate =$_GET['qg_trabat'];
+    if(!empty($_GET['qg_trabde']) && !empty($_GET['qg_trabate'])){
+      $trabalhou_fpa_de	 = 	$_GET['qg_trabde'];
+      $trabalhou_fpa_ate =	$_GET['qg_trabate'];
     }else{
       //DEFAULT
       $trabalhou_fpa_de   = '01/01/1900';

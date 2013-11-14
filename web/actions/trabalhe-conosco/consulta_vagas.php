@@ -20,7 +20,7 @@
 						"inicio" => (string)$x->inicio,  
 						"fim" => (string)$x->fim,  
 						"departamento" => (string)$x->departamento,   
-						"descricao_processo" => (string)$x->descricao_processo));		
+						"descricao_processo" => nl2br((string)$x->descricao_processo)));		
 	}
 	
 	$output = json_encode(array("data" => $vagas));
