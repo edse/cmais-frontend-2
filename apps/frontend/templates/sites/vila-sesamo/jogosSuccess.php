@@ -91,9 +91,9 @@
         }
       }
     ?>
+    <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
     <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> jogos"> 
       <a href="/<?php echo $site->getSlug() ?>/jogos/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>" aria-label="<?php echo $d->getTitle().$d->getDescription().".Descrição do Thumbnail:".$related[0]->AssetImage->getHeadline() ?>">
-        <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getDescription() .". ".$related[0]->AssetImage->getHeadline() ?>" />
         <i class="icones-sprite-interna icone-jogos-pequeno"></i>
         <div>
