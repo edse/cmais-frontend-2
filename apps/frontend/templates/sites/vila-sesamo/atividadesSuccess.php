@@ -136,7 +136,7 @@
   function vilaSesamoGetContents() {
     $.ajax({
       url: "<?php echo url_for("@homepage") ?>ajax/vilasesamogetcontents",
-      data: "page="+contentPage+"&items=3&site=<?php echo (int)$site->id ?>&section=<?php echo $section->getId(); ?>",
+      data: "page="+contentPage+"&items=9&site=<?php echo (int)$site->id ?>&section=<?php echo $section->getId(); ?>",
       beforeSend: function(){
           $('#page-nav a.mais').hide();
           $('#page-nav #ajax-loader').show();
@@ -152,7 +152,7 @@
           $("#container").isotope().isotope('appended',newEls);
           contentPage++;
         }else{
-          $('#page_nav').html('fim da listagem.')
+          $('#page_nav').html('<span class="mais">fim da listagem.</span>')
           //console.log("fim da listagem");
         }
       }
