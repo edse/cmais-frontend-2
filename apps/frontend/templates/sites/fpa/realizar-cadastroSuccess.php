@@ -609,7 +609,6 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <a type="reset" class="btn btn-default pull-right cancel" id="cancelar_cursos" style="margin-top:20px;">VOLTAR</a>
           </div> 
           
-          
         </div>
         <!--/row4 - empregos de carteira-->
         
@@ -650,7 +649,6 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
   <!--colunas-->
 </div>
 <!--CONTAINER-->
-<!--script src="http://cmais.com.br/portal/js/validate/jquery.validate.min.js"></script-->
 
 <script src="http://cmais.com.br/portal/js/jquery.maskedinput-1.3.min.js"></script>  
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
