@@ -1220,7 +1220,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">'; 
           $return .=   '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
           $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" />';
-          $return .=    '<i class="icones-sprite-interna icone-' . $section . '-pequeno"></i>';
+          $return .=    '<i class="icones-sprite-interna icone-atividades-pequeno"></i>';
           $return .=    '<div>';
           $return .=      '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
           $return .=       $d->getTitle();
