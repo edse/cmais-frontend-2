@@ -172,6 +172,7 @@
         <!--/section-->
           <?php endif; ?>
         <?php endif; ?>
+        
         <!--paginacao-->
         <?php include_partial_from_folder('sites/vila-sesamo', 'global/pagination', array('site' => $site, 'section' => $section)) ?>
         <!--/paginacao-->

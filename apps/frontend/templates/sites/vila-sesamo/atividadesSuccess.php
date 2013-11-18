@@ -80,7 +80,7 @@
 <!--/section-->
 <section class="todos-itens ">
   <!--lista-->
-  <ul role="contentinfo" id="container" class="row-fluid">
+  <ul id="container" class="row-fluid">
     <?php /*
     <?php foreach($pager->getResults() as $k=>$d): ?>
     <?php
