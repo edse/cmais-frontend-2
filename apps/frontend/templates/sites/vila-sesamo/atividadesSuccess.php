@@ -142,10 +142,7 @@
         $('#page-nav #ajax-loader').hide();
         if (data != "") {
           //console.log(data);
-          $('#container').isotope({
-            itemSelector:'.element',     
-          });
-          $('#container').isotope('appended',data);
+          $('#container').isotope('appended',data).isotope({ filter:".element"});
           contentPage++;
         }else{
           console.log("fim da listagem");
