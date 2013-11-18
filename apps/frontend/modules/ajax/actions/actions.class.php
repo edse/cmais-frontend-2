@@ -1173,6 +1173,46 @@ class ajaxActions extends sfActions
     }
     die();
   }
+
+
+public function executeVilasesamogetcontents(sfWebRequest $request){
+    require_once('/var/frontend/lib/vendor/symfony/lib/helper/DateHelper.php');
+    require_once('/var/frontend/lib/vendor/symfony/lib/helper/UrlHelper.php');
+    
+    if($request->isXmlHttpRequest()){
+      $return = '';
+      $start = 0;
+      $items = intval($request->getParameter('items'));
+      $site = intval($request->getParameter('site'));
+      $section = intval($request->getParameter('section'));
+      $page = intval($request->getParameter('page'));
+      
+      if($page >= 1)
+        $start = ($page * $items)-$items;
+      
+      if( $site > 0 && !in_array($site,array('1215')) ){
+        $assets = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Section s, Asset a, AssetContent ac')
+          ->where('a.asset_type_id = 1')
+          ->andWhere('a.section_id = s.id')
+          ->andWhere('ac.asset_id = a.id')
+          ->andWhere('a.is_active = ?', 1)
+          ->andWhere('a.site_id = ?',$site)
+          ->orderBy('a.id desc')
+          ->limit($items)
+          ->offset($start)
+          ->execute();
+          
+        foreach($assets as $d){
+          
+          $return = '              <!--/ITEM NOTICIA-->';
+        }
+      }
+      echo $return;
+    }
+    die();
+  }
     
   public function executeStreamingunivesp(sfWebRequest $request){
     $this->setLayout(false);
