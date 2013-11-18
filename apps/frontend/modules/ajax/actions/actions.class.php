@@ -1213,10 +1213,10 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           }
         }
         if(count($assetPersonagens) > 0) " " . implode(" ", $assetPersonagens);
+        $related = $d->retriveRelatedAssetsByRelationType("Preview");
         
         $return =  '<li class="span4 element '. $assetPersonagens . ' atividades">'; 
         $return .=   '<a href="/vila-sesamo/' . 'atividades' .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
-        $return .=    $related = $d->retriveRelatedAssetsByRelationType("Preview");
         $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" />';
         $return .=    '<i class="icones-sprite-interna icone-atividades-pequeno"></i>';
         $return .=    '<div>';
