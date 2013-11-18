@@ -152,7 +152,7 @@
           $("#container").isotope().isotope('appended',newEls);
           contentPage++;
         }else{
-          $('#page-nav').html('fim da listagem.')
+          $('#page_nav').html('fim da listagem.')
           //console.log("fim da listagem");
         }
       }
