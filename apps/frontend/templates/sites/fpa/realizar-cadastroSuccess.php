@@ -51,15 +51,19 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
         </style>
         
         
+
+        
         <!--row2 - informacoes pessoais-->
         <div class="row-fluid" id="row2" style="display:none;">
-          <div class="linha-cadastro">
+          <div class="linha-cadastro" style="margin-bottom: 20px">
             <img src="http://cmais.com.br/portal/images/capaPrograma/fpa/linha-dados-pessoais.png">
           </div>
           <h2>DADOS DE ENTRADA</h2>
           <hr/>
           <form id="form2" method="get" action="">
-            <input type="hidden" value="" name="qg_curric" id="qg_curric"> 
+            <input type="hidden" value="" name="qg_curric" id="qg_curric">
+            <input type="hidden" value="" name="cod_vaga" id="cod_vaga">
+             
             <div class="span6" style="margin:0;">
               <label>CPF</label>
               <input class="span11" disabled="disabled" name="fpa_cpf_cadastro" id="fpa_cpf_cadastro" type="text" maxlength="11">
@@ -72,6 +76,14 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               <h2>Currículo - Dados pessoais</h2>
               <hr/>
             </div>
+            
+            
+		        <div class="row_inline">  
+								<div id="dados_vaga" style="margin-bottom: 20px"></div>
+								<div id="info_vaga" style="margin-bottom: 20px"></div>		        	
+		        </div>            
+            
+            
             <div class="">
               <label>Regime de Trabalho</label>
               <select name="DropDown_qg_grupo" onchange="" id="DropDown_qg_grupo" style="width:200px;">
@@ -335,13 +347,16 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               <label>Carteira de Reservista</label> 
               <input name="qg_reserv" type="text" value="" maxlength="12" id="qg_reserv" style="width:116px;"> 
             </div>
-            <div class="control-group span4" style="margin-left:0;">  
-              <label>Titulo de Eleitor</label> 
-              <input name="qg_tituloe" type="text" value="" maxlength="12" id="qg_tituloe" style="width:116px;"> 
-            </div>
-            <div class="control-group span3" style="margin-left:0;">  
-              <label>Zona / Seção</label> 
-              <input name="qg_zonasec" type="text" value="" maxlength="8" id="qg_zonasec" style="width:80px;position: static"> 
+            
+            <div class="row_inline">
+	            <div class="control-group span4" style="margin-left:0;">  
+	              <label>Titulo de Eleitor</label> 
+	              <input name="qg_tituloe" type="text" value="" maxlength="12" id="qg_tituloe" style="width:116px;"> 
+	            </div>
+	            <div class="control-group span4" style="margin-left:0;">  
+	              <label>Zona / Seção</label> 
+	              <input name="qg_zonasec" type="text" value="" maxlength="8" id="qg_zonasec" style="width:80px;position: static"> 
+	            </div>
             </div>
             
             <!-- div class="span12 tit-cadastro" >
@@ -367,18 +382,18 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
                 <option value="999">-</option>
               </select> 
             </div -->
-
-            <div class="control-group span5" style="margin-left:0;">  
-              <label>Pretensão salarial</label> 
-              <input name="qg_pretsal" type="text" value="" placeholder="999.999,00" maxlength="10" id="qg_pretsal" style="width:116px;"> 
-              <span class="help-block">(999.999,00)</span>
+						<div class="row_inline">
+	            <div class="control-group span4" style="margin-left:0;">  
+	              <label>Pretensão salarial</label> 
+	              <input name="qg_pretsal" type="text" value="" placeholder="999.999,00" maxlength="10" id="qg_pretsal" style="width:116px;"> 
+	              <span class="help-block">(999.999,00)</span>
+	            </div>
+	            <div class="control-group span4" style="margin-left:0;">  
+	              <label>Último salário</label> 
+	              <input name="qg_ultsal" type="text" value="" placeholder="999.999,00" maxlength="10" id="qg_ultsal" style="width:116px;"> 
+	              <span class="help-block">(999.999,00)</span>
+	            </div>
             </div>
-            <div class="control-group span4" style="margin-left:0;">  
-              <label>Último salário</label> 
-              <input name="qg_ultsal" type="text" value="" placeholder="999.999,00" maxlength="10" id="qg_ultsal" style="width:116px;"> 
-              <span class="help-block">(999.999,00)</span>
-            </div>
-            
             
             <div class="control-group span12 tit-cadastro">
               <h2>Experiência profissional</h2>
@@ -497,9 +512,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             </div>
             
             <div class="span12" style="margin-left:0;" id="acoes_historico">
-              <button class="btn btn-primary pull-right" type="submit" href="#" id="altera_historico">Confirmar Alteração</button>
-              <a class="btn btn-danger pull-right erase" href="#" id="deleta_historico">Apagar</a>
-              <a class="btn btn-default pull-right cancel" href="#" id="cancela_alteracao_historico">Cancelar</a>
+              <button class="btn btn-primary pull-right" type="submit" href="#" id="altera_historico">CONFIRMAR ALTERAÇÃO</button>
+              <a class="btn btn-danger pull-right erase" href="#" id="deleta_historico" style="margin-top:0;">APAGAR</a>
+              <a class="btn btn-default pull-right cancel" href="#" id="cancela_alteracao_historico">CANCELAR</a>
             </div>  
             
             
@@ -509,7 +524,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             </div>
              <div class="row-fluid" id="continue_inscricao">
               <a type="submit" class="btn btn-primary pull-right" id="continuar_inscricao">CONTINUAR INSCRIÇÃO</a>
-              <a type="reset" class="btn btn-default pull-right cancel" id="cancelar_historico">VOLTAR</a>
+              <a type="reset" class="btn btn-default pull-right cancel" id="cancelar_historico" style="margin-top:20px;">VOLTAR</a>
             </div>
           </form>
           <!--/historico profissional-->
@@ -551,8 +566,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             </div>
 
             <div class="control-group span12" style="margin-left:0;">
-              <label>Outros Cursos</label>
-              <input name="qm_dscout" type="text" maxlength="20" id="qm_dscout" style="width:250px;">
+              <label>Descrição</label>
+              <input name="qm_dscout" type="text" maxlength="50" id="qm_dscout" style="width:320px;">
             </div>
             <div class="control-group span12" style="margin-left:0;">
               <label>Situação do Curso</label>
@@ -579,7 +594,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 
             <div class="control-group span12" style="margin-left:0;" id="acoes_curso">
               <button class="btn btn-primary pull-right" href="#" id="altera_curso">CONFIRMAR ALTERAÇÃO</button>
-              <a class="btn btn-danger pull-right erase" href="#" id="deleta_curso">Apagar</a>
+              <a class="btn btn-danger pull-right erase" href="#" id="deleta_curso" style="margin-top:0px;">Apagar</a>
               <a class="btn btn-default pull-right cancel" href="#" id="cancela_alteracao_curso">Cancelar</a>
             </div>
             
@@ -591,7 +606,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           <!--/formacao escolar--> 
           <div class="row-fluid">
             <a type="submit" class="btn btn-primary pull-right" id="concluir_inscricao">CONCLUIR INSCRIÇÃO</a>
-            <a type="reset" class="btn btn-default pull-right cancel" id="cancelar_cursos">VOLTAR</a>
+            <a type="reset" class="btn btn-default pull-right cancel" id="cancelar_cursos" style="margin-top:20px;">VOLTAR</a>
           </div> 
           
           
@@ -641,6 +656,37 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script src="http://172.20.16.219/actions/trabalhe-conosco/script_form_trabalhe_conosco.js" type="text/javascript"></script>
 
-
+<script>
+	function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+    );
+	}
+	
+	if(getURLParameter("vg") == "null" || getURLParameter("vg") == ""){
+		alert("Nenhuma vaga selecionada!");
+		self.location = "http://cmais.com.br/fpa/trabalhe-conosco";
+	}else{
+		var codigo_vaga = getURLParameter("vg");
+		$('#cod_vaga').val(codigo_vaga);
 		
-		
+		var mensagem = ""; 
+		$.ajax({
+      type: "GET",
+   	  dataType: "jsonp",
+      url: "http://app.cmais.com.br/actions/trabalhe-conosco/consulta_vagas.php",
+      error: function(retorno){
+        //alert("Erro Json");
+      }, 
+      success: function(json) {
+				$(json.data).each(function(index, dados){
+					if(dados.vaga.codigo == codigo_vaga){
+            mensagem = '<p style="color: red">Vaga selecionada: ' + dados.vaga.descricao + ' - ' +dados.vaga.departamento + "</p>";           
+    		 	}
+	      });
+	      $('#dados_vaga').html(mensagem);
+     	}
+ 		});		
+ 		
+	}
+</script>

@@ -46,7 +46,7 @@ if(!empty($_GET['cod_curriculo'])){
 	}	
   
 }else{
-	echo "Informe o código do currículo";
+	//echo "Informe o código do currículo";
 }   
 	 
 	 

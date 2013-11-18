@@ -14,13 +14,13 @@
 	  $resultado = trim($acao->result->$result_function);
 
 		if($resultado == "000000000000"){
-			$resultado = "Você já se cadastrou para esta vaga";
+			$resultado = "cadastrado";//"Você já se cadastrou para esta vaga";
 		}else if(substr($resultado, 0,4) == "erro" || $resultado == false){
-			$resultado = "Vaga selecionada já foi finalizada";	
+			$resultado = "fim";//"Vaga selecionada já foi finalizada";	
 		}else if(strlen($resultado) < 0){
-			$resultado = "Erro no código do currículo";
+			$resultado = "invalido";//"Erro no código do currículo";
 		}else{
-			$resultado = "Vaga cadastrada com sucesso";
+			$resultado = "sucesso";//"Vaga cadastrada com sucesso";
 		}
 		$output = json_encode(array("data" => $resultado));
 		$callback = $_GET['callback'];

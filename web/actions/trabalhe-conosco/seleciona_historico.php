@@ -36,12 +36,6 @@
 		echo $callback.'('. $output . ');';	
   
    }else{
-     echo "Informe o código do currículo";
+     //echo "Informe o código do currículo";
    }  
-    
 ?>
-       
-
-
-
-

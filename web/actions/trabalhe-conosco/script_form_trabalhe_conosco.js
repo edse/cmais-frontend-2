@@ -79,12 +79,13 @@ $(document).ready(function() {
   function Valida_Usuario_FPA(){
     var cpf = $("#fpa_cpf").val();
     var data = $("#fpa_data").val();
-	
+		var cod_vaga = $('#cod_vaga').val();
+		
     $.ajax({
 	    type: "GET",
 	    dataType: "jsonp",
 	    data: $("#form1").serialize(),
-	    url: "/actions/trabalhe-conosco/action.php?service=valida_usuario",
+	    url: "http://app.cmais.com.br/actions/trabalhe-conosco/action.php?service=valida_usuario",
 	    error: function(retorno){
 	        ////console.log("Erro na validação do usuário!");
 	        alert("Erro na validação do usuário!");
@@ -94,7 +95,7 @@ $(document).ready(function() {
 		    $("#fpa_cpf_cadastro").val(cpf);
 		    $("#fpa_data_nascimento").val(data);     
 	      if(json.data == 999){
-					//console.log("Mostra a tela de cadastro vazia");
+					alert("Novo Cadastro");
 	      }else{
 	      	$.each(json.data.curriculo, function(index, dados) {
 	          if($("#"+index).attr("type") == "text"){
@@ -119,28 +120,33 @@ $(document).ready(function() {
 	        }        	
 					$("#qg_curric").val(json.data.curriculo.qg_curric);
 	      	$("#qg_memo2").val(json.data.curriculo.qg_memo2);
+				
+				
+					//CADASTRA O CURRICULO NA VAGA
+					var qg_curric = $("#qg_curric").val();
+	  	
+					$.ajax({
+		        type: "GET",
+		     	  dataType: "jsonp",
+		        url: "http://app.cmais.com.br/actions/trabalhe-conosco/insere_vaga.php?cod_vaga="+cod_vaga+"&qg_curric="+qg_curric,
+		        error: function(retorno){
+		          //alert("Erro Json");
+		        }, 
+		        success: function(json)	{
+		        	if(json.data == "fim"){
+		        		alert("Vaga finalizada ou não está disponível para cadastro. Retorne e selecione outra vaga!");
+		        		self.location = "http://cmais.com.br/fpa/trabalhe-conosco";
+		        	}
+		        	if(json.data == "cadastrado"){
+		        		 $("#info_vaga").html('<p style="color: red">Você já se cadastrou para esta vaga! </p>');
+		        	}
+		       	}
+		   		});
 				}
-					
+				
 	      $("#row1").hide(); 
 	      $("#row2").show(); 
-	    	
-	    	//CARREGA AS VAGAS
-				$.ajax({
-	        type: "GET",
-	     	  dataType: "jsonp",
-	        url: "http://app.cmais.com.br/actions/trabalhe-conosco/consulta_vagas.php",
-	        error: function(retorno){
-	          alert("Erro Json");
-	        }, 
-	        success: function(json) {
-						$('#DropDown_qg_cargo').empty();
-						$('#DropDown_qg_cargo').append('<option value="0"> Selecione</option>');              	
-						$(json.data).each(function(index, dados){
-	             conteudo = '<option value="' + dados.vaga.codigo + '" data-departamento="' + dados.vaga.departamento + '">' + dados.vaga.descricao + '</option>';           
-	        		 $('#DropDown_qg_cargo').append(conteudo);
-			       });
-	       	}
-	   		}); 
+	      
 	    }
 	  });
 		//return false;
@@ -499,7 +505,7 @@ $(document).ready(function() {
             var cod_curriculo = $("#qg_curric").val();
 						Seleciona_Cursos(cod_curriculo);
 						                  
-            //alert("Curso alterado com sucesso");
+            alert("Curso alterado com sucesso");
             $("#concluir_inscricao").show();
               
           }else{
@@ -576,11 +582,27 @@ $(document).ready(function() {
 
   /************* CONCLUIR A INSCRIÇÃO *************/  
   $("#concluir_inscricao").click(function(){  
-  	// checar se tem vagas disponíveis, se sim, checar se alguma foi selecionada, 
-  	// se nenhuma vaga for selecionada, informar ao usuário (dando a opção de voltar e salvar) 
-  	// limpar forms 
+		//CADASTRA O CURRICULO ATUALIZADO NA VAGA
+		var cod_vaga = $("#cod_vaga").val();
+		var qg_curric = $("#qg_curric").val();
+		
+		$.ajax({
+      type: "GET",
+   	  dataType: "jsonp",
+      url: "http://app.cmais.com.br/actions/trabalhe-conosco/insere_vaga.php?cod_vaga="+cod_vaga+"&qg_curric="+qg_curric,
+      error: function(retorno){
+        //alert("Erro Json");
+      }, 
+      success: function(json)	{
+      	if(json.data == "cadastrado" || json.data == "sucesso"){
+      		 alert("Cadastro realizado com sucesso para a vaga");
+      	}
+     	}
+ 		});
+  	 
     $("#row4").hide();
     $("#row5").show();
+    $(window).scrollTop(300);
   });
 
 	//VALIDAÇÃO DOS FORMULÁRIOS
@@ -792,10 +814,6 @@ $(document).ready(function() {
       DropDown_qm_curso: {
         required: true,
         minlength: 1
-      },
-      qm_dscout: {
-        required: true,
-        minlength: 3
       },
       DropDown_qm_escolar: {
         required: true,
