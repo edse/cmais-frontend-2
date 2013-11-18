@@ -145,10 +145,11 @@
         $('#page-nav #ajax-loader').hide();
         if (data != "") {
           //console.log(data);
-          var $newEls = data;
+          //var $newEls = data;
           //$('#container').isotope().append($newEls).isotope('appended',$newEls).isotope('reloadItems');
           //$('#container').isotope().append($newEls).isotope('reloadItems').isotope({ sortBy:'original-order'});
-          $('#container').append($newEls).isotope({ itemSelect:'.element' }).isotope( 'addItems', $newEls );
+          var newEls = $(data).appendTo('#container');
+          $("#container").isotope('appended', newEls );
           contentPage++;
         }else{
           console.log("fim da listagem");
