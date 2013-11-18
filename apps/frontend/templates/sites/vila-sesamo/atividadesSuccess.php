@@ -127,6 +127,9 @@
   </div>
   <a href="javascript:vilaSesamoGetContents();" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-br-grande"></i></a>
 </nav>
+<script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
+<!--script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script-->
+<script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <script>
   videoPage = 1;
   contentPage = 1;
@@ -142,7 +145,7 @@
         $('#page-nav #ajax-loader').hide();
         if (data != "") {
           //console.log(data);
-          $('#container').append(data);
+          $('#container').append(data).isotope('additems',data);
           contentPage++;
         }else{
           console.log("fim da listagem");
@@ -157,6 +160,4 @@
 <!--/paginacao-->
 
 <!--scripts-->
-<script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
-<script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script>
-<script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
+

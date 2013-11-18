@@ -18,7 +18,7 @@
       itemSelector : '.element'
     }); 
     
-    var filter_selected
+    var filter_selected;
     
     //filtro personagens para atividades, jogos e videos
     $('.filtro-personagem a').click(function(){
