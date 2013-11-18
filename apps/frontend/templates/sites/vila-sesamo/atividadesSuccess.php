@@ -149,10 +149,10 @@
           
           //$('#container').isotope().append($newEls).isotope('reloadItems').isotope({ sortBy:'original-order'});
           var newEls = $(data).appendTo('#container');
-          //$("#container").isotope().isotope('appended', newEls );
+          $("#container").isotope().isotope('appended',newEls);
           contentPage++;
         }else{
-          $('#pag-nav').html('fim da listagem.')
+          $('#page-nav').html('fim da listagem.')
           //console.log("fim da listagem");
         }
       }
