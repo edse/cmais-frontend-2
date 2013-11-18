@@ -146,7 +146,7 @@
         if (data != "") {
           //console.log(data);
           var $newEls = data;
-          $('#container').append($newEls).isotope().isotope('addItems',$newEls);
+          $('#container').append($newEls).isotope({filter:'element'}).isotope('addItems',$newEls);
           //$('#container').append(data).isotope('reloadItems').isotope({ sortBy:'original-order'});
           contentPage++;
         }else{
