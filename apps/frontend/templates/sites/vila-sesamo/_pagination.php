@@ -4,9 +4,9 @@
   </div>
   <?php
   if($section == "cuidadores"):
-    $icone = "icone-carregar-br-grande";
-  else:
     $icone = "icone-carregar-ve-grande";
+  else:
+    $icone = "icone-carregar-br-grande";
   endif;    
   ?>
   <a href="javascript:vilaSesamoGetContents();" class="mais">Carregar mais<i class="icones-sprite-interna <?php echo $icone ?>"></i></a>
