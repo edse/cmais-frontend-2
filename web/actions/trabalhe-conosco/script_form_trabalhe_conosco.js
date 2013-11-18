@@ -29,8 +29,8 @@ $(document).ready(function() {
 	
 	            var conteudo = '<div class="accordion-group"><div class="accordion-heading">';
 	            conteudo = conteudo+'<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse'+cont+'"><font color=red>';
-	            conteudo = conteudo + empresa + ' </font></a>  </div><div id="collapse'+cont+'" class="accordion-body collapse" style="overflow: hidden;">';
-	            conteudo = conteudo+'<div class="accordion-inner"><p>Função Inicial: '+funcaoinicial+'</p><p>Função Final:'+funcaofinal+'</p>';
+	            conteudo = conteudo + empresa + ' </font></a>  </div><div id="collapse'+cont+'" class="accordion-body collapse">';
+	            conteudo = conteudo+'<div class="accordion-inner" style="overflow: hidden;"><p>Função Inicial: '+funcaoinicial+'</p><p>Função Final:'+funcaofinal+'</p>';
 	            conteudo = conteudo+'<p>Experiencia:'+experiencia+'</p><p>Data de Admissão:'+dataadmissao+'</p><p>Data de Demissão:'+datademissao+'</p>';
 	            conteudo = conteudo+'<a class="seleciona-historico" href="#'+cont+'" >Editar</a>';
 	            conteudo = conteudo+'<input type="hidden" value="'+codigo+'" id="ql_codigo'+cont+'"></div></div></div>';
@@ -65,7 +65,7 @@ $(document).ready(function() {
 			      var conteudo = '<div class="accordion-group"><div class="accordion-heading">';
 			      conteudo = conteudo+'<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_cursos" href="#collapse-curso'+cont+'">';
 			      conteudo = conteudo+'<font color=red>'+qm_entidad+'</font></a>  </div> <div id="collapse-curso'+cont+'" class="accordion-body collapse">';
-			      conteudo = conteudo+'<div class="accordion-inner"><p>Data de Formação: '+qm_data+'</p>';
+			      conteudo = conteudo+'<div class="accordion-inner" style="overflow: hidden;"><p>Data de Formação: '+qm_data+'</p>';
 			      conteudo = conteudo+'<a class="seleciona-curso" href="#'+cont+'" >Editar</a>';
 			      conteudo = conteudo+'<input type="hidden" value="'+qm_codigo+'" id="qm_codigo'+cont+'"></div></div></div>';
 			      $('#accordion_cursos').append(conteudo);
