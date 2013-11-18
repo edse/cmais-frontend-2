@@ -1204,6 +1204,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
         foreach($assets as $d){
           $return = $d->getTitle();
+          $return .= $items;
+          $return .= $start;
         }
       echo $return;
     }
