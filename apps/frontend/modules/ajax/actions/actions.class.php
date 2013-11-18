@@ -1205,22 +1205,59 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->execute();
           
         foreach($assets as $d){
-          $assetPersonagens = array();
-          $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
-          $assetSections = $d->getSections();
-          foreach($assetSections as $a) {
-            if($a->getParentSectionId() == $personagensSection->getId()) {
-              $assetPersonagens[] = $a->getSlug();
-            }
-          }
-          $printPersonagens= " ";
-          if(count($assetPersonagens) > 0) $printPersonagens .= " " . implode(" ", $assetPersonagens);
-          $related = $d->retriveRelatedAssetsByRelationType("Preview");
           
-          $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">'; 
+          if($section == "cuidadores"):
+            
+            $assetCategorias = array();
+            $categoriasSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'categorias');
+            $assetSections = $d->getSections();
+            foreach($assetSections as $a) {
+              if($a->getParentSectionId() == $categoriasSection->getId()) {
+                $assetCategorias[] = $a->getSlug();
+              }
+            }
+            $printCategorias= " ";
+            if(count($assetCategorias) > 0)
+              $printCategorias .= " " . implode(" ", $assetCategorias);
+            
+            $return =  '<li class="span4 element '. $printCategorias .'">';
+            
+          else:  
+            
+            $assetPersonagens = array();
+            $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
+            $assetSections = $d->getSections();
+            foreach($assetSections as $a) {
+              if($a->getParentSectionId() == $personagensSection->getId()) {
+                $assetPersonagens[] = $a->getSlug();
+              }
+            }
+            
+            $printPersonagens= " ";
+            if(count($assetPersonagens) > 0)
+              $printPersonagens .= " " . implode(" ", $assetPersonagens);
+            
+            $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
+            
+          endif; 
+          
           $return .=   '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
-          $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
-          $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
+          
+          if($section == "videos"):
+            $return .=  '<div class="yt-menu">';
+            $return .=    '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$d->AssetVideo->getHeadline().'" />';
+            $return .=  '</div>';
+          else:  
+            $related = $d->retriveRelatedAssetsByRelationType("Preview");
+            $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
+          endif;
+          
+          if($section == "cuidadores"):
+            $return .=    '<i class="icones-sprite-interna icone-artigo-br-pequeno"></i>';
+          else:  
+            $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
+          endif;
+            
           $return .=    '<div>';
           $return .=      '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
           $return .=       $d->getTitle();
