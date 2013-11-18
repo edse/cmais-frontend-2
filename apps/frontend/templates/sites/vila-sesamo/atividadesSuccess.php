@@ -129,7 +129,7 @@
   contentPage = 1;
   function vilaSesamoGetContents() {
     $.ajax({
-      url: "<?php echo url_for("@homepage") ?>ajax/vilasesamogetcontents",
+      url: "<?php //echo url_for("@homepage") ?>/ajax/vilasesamogetcontents",
       data: "page="+contentPage+"&items=1&site=<?php echo (int)$site->id ?>&section=<?php echo $section->getSlug(); ?>",
       beforeSend: function(){
           $('#page-nav a.mais').hide();
