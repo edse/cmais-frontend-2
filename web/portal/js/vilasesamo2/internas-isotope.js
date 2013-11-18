@@ -16,7 +16,7 @@
     
     $container.isotope({
       itemSelector : '.element',
-      layoutMode:'mansory'
+      layoutMode:'fitRows'
     }); 
     
     var filter_selected;
