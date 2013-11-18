@@ -1217,7 +1217,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           $related = $d->retriveRelatedAssetsByRelationType("Preview");
           
           $return =  '<li class="span4 element '. $printPersonagens . $section .'">'; 
-          $return .=   '<a href="/'.$site.'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '" aria-label="'.$d->getTitle().$d->getDescription().'.Descrição do Thumbnail:'.$related[0]->AssetImage->getHeadline() ?>'">';
+          $return .=   '<a href="/'.$site.'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
           $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" />';
           $return .=    '<i class="icones-sprite-interna icone-atividades-pequeno"></i>';
           $return .=    '<div>';
