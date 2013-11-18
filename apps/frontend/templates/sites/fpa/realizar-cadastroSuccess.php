@@ -460,7 +460,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             </select> 
             </div>
             <div class="row-fluid">
-              <button type="submit" class="btn btn-primary pull-right" id="cadastra-curriculo">CONTINUAR INSCRIÇÃO</button>
+              <button type="submit" class="btn btn-primary pull-right" id="cadastra-curriculo" style="margin-top: 20px">CONTINUAR INSCRIÇÃO</button>
               <a type="reset" class="btn btn-default pull-right cancel" id="cancelar_dados_pessoais">VOLTAR</a>
             </div>
           </form>
@@ -514,7 +514,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div class="span12" style="margin-left:0;" id="acoes_historico">
               <button class="btn btn-primary pull-right" type="submit" href="#" id="altera_historico">CONFIRMAR ALTERAÇÃO</button>
               <a class="btn btn-danger pull-right erase" href="#" id="deleta_historico" style="margin-top:0;">APAGAR</a>
-              <a class="btn btn-default pull-right cancel" href="#" id="cancela_alteracao_historico">CANCELAR</a>
+              <a class="btn btn-default pull-right cancel" href="#" id="cancela_alteracao_historico" style="margin-top: 0">CANCELAR</a>
             </div>  
             
             
@@ -595,7 +595,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div class="control-group span12" style="margin-left:0;" id="acoes_curso">
               <button class="btn btn-primary pull-right" href="#" id="altera_curso">CONFIRMAR ALTERAÇÃO</button>
               <a class="btn btn-danger pull-right erase" href="#" id="deleta_curso" style="margin-top:0px;">Apagar</a>
-              <a class="btn btn-default pull-right cancel" href="#" id="cancela_alteracao_curso">Cancelar</a>
+              <a class="btn btn-default pull-right cancel" href="#" id="cancela_alteracao_curso" style="margin-top: 0px">Cancelar</a>
             </div>
             
             <div class="accordion" id="accordion_cursos">
