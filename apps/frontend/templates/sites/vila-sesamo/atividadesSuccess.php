@@ -152,7 +152,8 @@
           //$("#container").isotope().isotope('appended', newEls );
           contentPage++;
         }else{
-          console.log("fim da listagem");
+          $('#pag-nav').html('fim da listagem.')
+          //console.log("fim da listagem");
         }
       }
     });
