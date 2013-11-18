@@ -1193,8 +1193,9 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       if( $site > 0 && !in_array($site,array('1215')) ){
         $assets = Doctrine_Query::create()
           ->select('a.*')
-          ->from('Section s, Asset a, AssetContent ac')
-          ->where('a.asset_type_id = 1')
+          ->from('SectionAsset sa, Asset a, AssetContent ac')
+          ->where('sa.section_id = ?',$section)
+          ->andWhere('a.asset_type_id = 1')
           ->andWhere('a.section_id = s.id')
           ->andWhere('ac.asset_id = a.id')
           ->andWhere('a.is_active = ?', 1)
@@ -1205,7 +1206,6 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           ->execute();
           
         foreach($assets as $d){
-          
           $return = '              <!--/ITEM NOTICIA-->';
         }
       }

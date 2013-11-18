@@ -130,7 +130,7 @@
   function vilaSesamoGetContents() {
     $.ajax({
       url: "<?php echo url_for("@homepage") ?>ajax/vilasesamogetcontents",
-      data: "page="+contentPage+"&items=1&site=<?php echo (int)$site->id ?>&section=<?php echo $section->getSlug(); ?>",
+      data: "page="+contentPage+"&items=1&site=<?php echo (int)$site->id ?>&section=<?php echo $section->getId(); ?>",
       beforeSend: function(){
           $('#page-nav a.mais').hide();
           $('#page-nav #ajax-loader').show();
