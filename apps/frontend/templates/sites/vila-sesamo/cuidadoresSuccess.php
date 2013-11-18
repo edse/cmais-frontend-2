@@ -136,6 +136,8 @@
         <section class="todos-itens ">
           <!--lista-->
           <ul id="container" class="row-fluid">
+            <?php
+            /*
             <?php foreach($pager->getResults() as $d): ?>
               <?php
                 $assetCategorias = array();
@@ -159,7 +161,8 @@
               </a>
             </li>
             <?php endforeach; ?>
-                        
+             */
+             ?>            
           </ul> 
           <!--lista-->  
           
