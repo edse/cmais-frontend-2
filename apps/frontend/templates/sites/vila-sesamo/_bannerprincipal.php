@@ -177,7 +177,7 @@
     
     $('#slider').mpcLayerSlider({
       'pauseOnHover' : false,
-      'slideshow' : false,
+      'slideshow' : true,
       'uiStyle': 'style02',
       'delay': 10800,
       'showThumbTooltip':false, 
