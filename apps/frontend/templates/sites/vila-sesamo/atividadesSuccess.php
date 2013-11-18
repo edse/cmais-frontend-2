@@ -144,11 +144,8 @@
           //console.log(data);
           $('#container').isotope({
             itemSelector:'.element',     
-            function{
-              $('#container').isotope('appended',data);
-            }
           });
-          
+          $('#container').isotope('appended',data);
           contentPage++;
         }else{
           console.log("fim da listagem");
