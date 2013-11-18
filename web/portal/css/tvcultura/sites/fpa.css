@@ -153,7 +153,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .trabalhe-conosco a.btn-cat:hover{color:#000; background: #f1f1f1;}
 .btn-resultado{margin: 0px 0 8px 8px !important; background: #1863b7; text-transform: uppercase; font-weight: bold; padding: 5px; border-radius: 7px; float:left;clear:both;}
 .col-esquerda .accordion-group,
-.accordion-inner{border:none;}
+.accordion-inner{border:none;display:none\0/;}
 .accordion-inner{padding-bottom:0px;}
 .accordion-inner ul{margin-bottom:20px;}
 .accordion-inner strong{font-weight:bold;color: #1863B7;}
@@ -189,7 +189,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 #vagas-relacionadas .accordion-inner{padding:0 0 0 20px;}
 #vagas-relacionadas .accordion-inner h5{color:#1863b7;}
 #vagas-relacionadas .accordion-inner p{text-indent:10px;margin-top:10px;}
-#vagas-relacionadas .accordion-inner ul{padding:10px 0 10px 10px; margin-bottom:5px;display:none\0/;}
+#vagas-relacionadas .accordion-inner ul{padding:10px 0 10px 10px; margin-bottom:5px;}
 .realizar-marcador label.valid {width: 24px;height: 24px;background: url(/portal/images/valid.png) center center no-repeat;display: inline-block;text-indent: -9999px;margin:-1px 0 0 5px;}
 /* /TRABALHE-CONOSCO */
 
