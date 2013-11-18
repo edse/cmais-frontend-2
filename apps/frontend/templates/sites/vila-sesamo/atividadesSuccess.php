@@ -145,8 +145,7 @@
         $('#page-nav #ajax-loader').hide();
         if (data != "") {
           //console.log(data);
-          //$('#container').prepend(data).isotope('reloadItems').isotope({ sortBy:'original-order'});
-           $('#container').append(data).isotope('insertItem',data).isotope({itemSelector : '.element'});
+          $('#container').prepend(data).isotope('reloadItems');
           contentPage++;
         }else{
           console.log("fim da listagem");
