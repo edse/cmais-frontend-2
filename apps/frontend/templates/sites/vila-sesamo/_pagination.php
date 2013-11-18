@@ -13,7 +13,7 @@
   function vilaSesamoGetContents() {
     $.ajax({
       url: "<?php echo url_for("@homepage") ?>ajax/vilasesamogetcontents",
-      data: "page="+contentPage+"&items=3&site=<?php echo $site->getSlug(); ?>&siteId=<?php echo (int)$site->id ?>&sectionId=<?php echo $section->getId(); ?>&section=<?php echo $section->getSlug(); ?>",
+      data: "page="+contentPage+"&items=9&site=<?php echo $site->getSlug(); ?>&siteId=<?php echo (int)$site->id ?>&sectionId=<?php echo $section->getId(); ?>&section=<?php echo $section->getSlug(); ?>",
       beforeSend: function(){
           $('#page-nav a.mais').hide();
           $('#page-nav #ajax-loader').show();
