@@ -5,10 +5,8 @@
   <a href="javascript:vilaSesamoGetContents();" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-br-grande"></i></a>
 </nav>
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
-<!--script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script-->
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <script>
-  videoPage = 1;
   contentPage = 1;
   function vilaSesamoGetContents() {
     $.ajax({

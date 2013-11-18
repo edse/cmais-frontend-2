@@ -1254,7 +1254,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
           if($section == "cuidadores"):
             $return .=    '<i class="icones-sprite-interna icone-artigo-br-pequeno"></i>';
-          else:  
+            else:  
             $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
           endif;
             
