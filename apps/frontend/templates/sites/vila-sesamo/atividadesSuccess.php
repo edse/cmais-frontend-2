@@ -145,8 +145,8 @@
           $('#container').isotope({
             itemSelector : '.element',     // selector for all items you'll retrieve
             // call Isotope as a callback
-            function( newElements ) {
-              $container.isotope('appended',data).isotope({ filter:".element"});
+            function(newElements) {
+              $container.isotope('appended',data);
             }
           });
           
