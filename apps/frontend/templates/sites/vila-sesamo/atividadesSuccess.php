@@ -130,14 +130,13 @@
   function vilaSesamoGetContents() {
     $.ajax({
       url: "<?php echo url_for("@homepage") ?>ajax/vilasesamogetcontents",
-      data: "page="+contentPage+"&items=1&site=<?php echo (int)$site->id ?>&section=<?php echo $section->getId(); ?>",
+      data: "page="+contentPage+"&items=2&site=<?php echo (int)$site->id ?>&section=<?php echo $section->getId(); ?>",
       beforeSend: function(){
           $('#page-nav a.mais').hide();
           $('#page-nav #ajax-loader').show();
         },
       success: function(data){
         $('#page-nav #ajax-loader').hide();
-        console.log(data);
         if (data != "") {
           console.log(data);
           //$('#contentList').append(data);
