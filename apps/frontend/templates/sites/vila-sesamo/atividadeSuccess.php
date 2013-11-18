@@ -102,7 +102,10 @@
         <?php $relatedMore = $asset->retriveRelatedAssetsByRelationType("Asset Relacionado"); ?>
         
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
-        
+        <style>
+        .paginas{float:left;}
+        .paginas img{width:100px;}
+        </style>
         <div class="paginas">
           
           <?php if(isset($relatedMore)): ?>
