@@ -14,9 +14,9 @@
      
     var $container = $('#container');
     
-    $container.isotope({
-      itemSelector : '.element'
-    }); 
+    //$container.isotope({
+      //itemSelector : '.element'
+    //}); 
     
     var filter_selected;
     
