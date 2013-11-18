@@ -1183,10 +1183,11 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       $return = '';
       $start = 0;
       $items = intval($request->getParameter('items'));
-      $site = intval($request->getParameter('site'));
+      $siteId = intval($request->getParameter('siteId'));
       $sectionId = intval($request->getParameter('sectionId'));
-      $section = $request->getParameter('section');
       $page = intval($request->getParameter('page'));
+      $section = $request->getParameter('section');
+      $site = $request->getParameter('site');
       
       if($page >= 1)
         $start = ($page * $items)-$items;
@@ -1197,7 +1198,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->where('sa.section_id = ?', $sectionId)
         ->andWhere('sa.asset_id = a.id')
         ->andWhere('a.is_active = ?', 1)
-        ->andWhere('a.site_id = ?',$site)
+        ->andWhere('a.site_id = ?',$siteId)
         ->orderBy('a.id desc')
         ->limit($items)
         ->offset($start)
@@ -1216,10 +1217,10 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           if(count($assetPersonagens) > 0) $printPersonagens .= " " . implode(" ", $assetPersonagens);
           $related = $d->retriveRelatedAssetsByRelationType("Preview");
           
-          $return =  '<li class="span4 element '. $printPersonagens . $section .'">'; 
-          $return .=   '<a href="/vila-sesamo/' . 'atividades' .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
+          $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">'; 
+          $return .=   '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
           $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" />';
-          $return .=    '<i class="icones-sprite-interna icone-atividades-pequeno"></i>';
+          $return .=    '<i class="icones-sprite-interna icone-' . $section . '-pequeno"></i>';
           $return .=    '<div>';
           $return .=      '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
           $return .=       $d->getTitle();
