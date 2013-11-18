@@ -1196,7 +1196,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           ->from('SectionAsset sa, Asset a, AssetContent ac')
           ->where('sa.section_id = ?',$section)
           ->andWhere('a.asset_type_id = 1')
-          ->andWhere('a.section_id = s.id')
+          ->andWhere('a.section_id = sa.id')
           ->andWhere('ac.asset_id = a.id')
           ->andWhere('a.is_active = ?', 1)
           ->andWhere('a.site_id = ?',$site)
