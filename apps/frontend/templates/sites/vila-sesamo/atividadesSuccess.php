@@ -137,6 +137,7 @@
         },
       success: function(data){
         $('#page-nav #ajax-loader').hide();
+        console.log(data);
         if (data != "") {
           console.log(data);
           //$('#contentList').append(data);
