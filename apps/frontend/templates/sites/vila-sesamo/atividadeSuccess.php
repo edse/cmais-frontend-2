@@ -102,12 +102,16 @@
         <?php $relatedMore = $asset->retriveRelatedAssetsByRelationType("Asset Relacionado"); ?>
         
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
-        <div>
+        
+        <div class="paginas">
+          
           <?php if(isset($relatedMore)): ?>
-            <?php if($relatedMore > 0): ?>
-              
+            <?php if(count($relatedMore) > 0): ?>
+              <span class="paginador">veja também:</span>
               <?php foreach($relatedMore as $k=>$p): ?>
-                <a href="javascript:;" class="changePicture" title="<?php echo $p->getTitle() ?>"><?php echo ($k+1) ?></a>
+                <a href="javascript:;" class="changePicture" title="<?php echo $p->getTitle() ?>">
+                  <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="teste" />
+                </a>
               <?php endforeach; ?>
                 
             <?php endif ?>
