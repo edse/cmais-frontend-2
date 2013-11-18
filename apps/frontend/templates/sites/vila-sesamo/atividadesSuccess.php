@@ -145,7 +145,7 @@
         $('#page-nav #ajax-loader').hide();
         if (data != "") {
           //console.log(data);
-          $('#container').append(data).isotope('addItems',data);
+          $('#container').append(data).isotope({itemSelector : '.element'}).isotope('addItems',data);
           contentPage++;
         }else{
           console.log("fim da listagem");
