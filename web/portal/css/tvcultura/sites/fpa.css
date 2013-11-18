@@ -189,7 +189,7 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 #vagas-relacionadas .accordion-inner{padding:0 0 0 20px;}
 #vagas-relacionadas .accordion-inner h5{color:#1863b7;}
 #vagas-relacionadas .accordion-inner p{text-indent:10px;margin-top:10px;}
-#vagas-relacionadas .accordion-inner ul{padding:10px 0 10px 10px; margin-bottom:5px;}
+#vagas-relacionadas .accordion-inner ul{padding:10px 0 10px 10px; margin-bottom:5px;display:none\0/;}
 .realizar-marcador label.valid {width: 24px;height: 24px;background: url(/portal/images/valid.png) center center no-repeat;display: inline-block;text-indent: -9999px;margin:-1px 0 0 5px;}
 /* /TRABALHE-CONOSCO */
 
