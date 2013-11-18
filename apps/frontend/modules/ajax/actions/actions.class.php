@@ -1184,7 +1184,6 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       $start = 0;
       $items = intval($request->getParameter('items'));
       $site = intval($request->getParameter('site'));
-      $siteId = intval($request->getParameter('siteId'));
       $section = intval($request->getParameter('section'));
       $sectionId = intval($request->getParameter('sectionId'));
       $page = intval($request->getParameter('page'));
@@ -1198,7 +1197,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->where('sa.section_id = ?', $sectionId)
         ->andWhere('sa.asset_id = a.id')
         ->andWhere('a.is_active = ?', 1)
-        ->andWhere('a.site_id = ?',$siteId)
+        ->andWhere('a.site_id = ?',$site)
         ->orderBy('a.id desc')
         ->limit($items)
         ->offset($start)
@@ -1217,7 +1216,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           $related = $d->retriveRelatedAssetsByRelationType("Preview");
           
           $return =  '<li class="span4 element '. $printPersonagens . $section .'">'; 
-          $return .=   '<a href="/'.$site.'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
+          $return .=   '<a href="/vila-sesamo/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
           $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" />';
           $return .=    '<i class="icones-sprite-interna icone-atividades-pequeno"></i>';
           $return .=    '<div>';
