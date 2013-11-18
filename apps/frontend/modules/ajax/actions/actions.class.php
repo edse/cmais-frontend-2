@@ -1215,7 +1215,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           if(count($assetPersonagens) > 0) $printPersonagens .= " " . implode(" ", $assetPersonagens);
           $related = $d->retriveRelatedAssetsByRelationType("Preview");
           
-          $return =  '<li class="span4 element '. $printPersonagens . $section .'">'; 
+          $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">'; 
           $return .=   '<a href="/vila-sesamo/' . 'atividades' .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
           $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" />';
           $return .=    '<i class="icones-sprite-interna icone-atividades-pequeno"></i>';
