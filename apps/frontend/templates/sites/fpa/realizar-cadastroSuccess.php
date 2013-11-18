@@ -654,7 +654,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 
 <script src="http://cmais.com.br/portal/js/jquery.maskedinput-1.3.min.js"></script>  
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
-<script src="http://172.20.16.219/actions/trabalhe-conosco/script_form_trabalhe_conosco.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/actions/trabalhe-conosco/script_form_trabalhe_conosco.js" type="text/javascript"></script>
 
 <script>
 	function getURLParameter(name) {

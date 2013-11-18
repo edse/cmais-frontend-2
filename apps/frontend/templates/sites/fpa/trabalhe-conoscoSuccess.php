@@ -108,7 +108,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 	     	  dataType: "jsonp",
 	        url: "http://app.cmais.com.br/actions/trabalhe-conosco/consulta_vagas.php",
 	        error: function(retorno){
-	          alert("Erro Json");
+	          //alert("Erro na seleção das vagas");
 	        }, 
 	        success: function(json) {
 	        	var conteudo = "";
@@ -122,7 +122,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 								 $(json.data).each(function(index, dados){
 		                conteudo += ' <!--emprego aberto--> <div class="accordion-group"> <div class="accordion-heading"> <a id="codigo_'	+ dados.vaga.codigo + '" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#'	+ dados.vaga.codigo + '"> ';
 		                conteudo += ' <i class="ico-trabalho"></i>'	+ dados.vaga.descricao + '<!--span class="badge vaga"></span--> </a> </div> <div id="'	+ dados.vaga.codigo + '" class="accordion-body collapse vagas-exi" style="overflow: hidden; clear: both;">';
-		                conteudo += ' <div class="linha-dashed"></div> <div class="accordion-inner"> <!--descriçao vaga-->'	+ dados.vaga.descricao_processo + '<!--/descriçao vaga--> <a href="/fpa/realizar-cadastro?vaga='+dados.vaga.codigo+'" class="btn btn-primary large-button pull-right realizar"'; 
+		                conteudo += ' <div class="linha-dashed"></div> <div class="accordion-inner"> <!--descriçao vaga-->'	+ dados.vaga.descricao_processo + '<!--/descriçao vaga--> <a href="/fpa/realizar-cadastro?vg='+dados.vaga.codigo+'" class="btn btn-primary large-button pull-right realizar"'; 
 		                conteudo += ' title="Realizar Inscrição">Realizar Inscrição</a></div><div class="linha-dashed"></div></div> </div> <!--/emprego aberto-->';
 		       			 });      
 		       			    
