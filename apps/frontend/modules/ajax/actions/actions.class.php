@@ -1190,25 +1190,21 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       if($page >= 1)
         $start = ($page * $items)-$items;
       
-      if( $site > 0 && !in_array($site,array('1215')) ){
-        $assets = Doctrine_Query::create()
-          ->select('a.*')
-          ->from('SectionAsset sa, Asset a, AssetContent ac')
-          ->where('sa.section_id = ?',$section)
-          ->andWhere('a.asset_type_id = 1')
-          ->andWhere('a.section_id = sa.id')
-          ->andWhere('ac.asset_id = a.id')
-          ->andWhere('a.is_active = ?', 1)
-          ->andWhere('a.site_id = ?',$site)
-          ->orderBy('a.id desc')
-          ->limit($items)
-          ->offset($start)
-          ->execute();
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->where('sa.section_id = ?', 2389)
+        ->andWhere('sa.asset_id = a.id')
+        ->andWhere('a.is_active = ?', 1)
+        ->andWhere('a.site_id = ?',$site)
+        ->orderBy('a.id desc')
+        ->limit($items)
+        ->offset($start)
+        ->execute();
           
         foreach($assets as $d){
           $return = $d->getTitle();
         }
-      }
       echo $return;
     }
     die();
