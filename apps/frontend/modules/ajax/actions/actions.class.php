@@ -1193,7 +1193,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa')
-        ->where('sa.section_id = ?', 2389)
+        ->where('sa.section_id = ?', $section)
         ->andWhere('sa.asset_id = a.id')
         ->andWhere('a.is_active = ?', 1)
         ->andWhere('a.site_id = ?',$site)
