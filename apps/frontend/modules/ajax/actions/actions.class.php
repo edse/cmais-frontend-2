@@ -1206,40 +1206,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
         foreach($assets as $d){
           
-          if($section == "cuidadores"):
-            echo "teste>>>>";
-            $assetCategorias = array();
-            $categoriasSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'categorias');
-            $assetSections = $d->getSections();
-            foreach($assetSections as $a) {
-              if($a->getParentSectionId() == $categoriasSection->getId()) {
-                $assetCategorias[] = $a->getSlug();
-              }
-            }
-            $printCategorias= " ";
-            if(count($assetCategorias) > 0)
-              $printCategorias .= " " . implode(" ", $assetCategorias);
-            
-            $return =  '<li class="span4 element '. $printCategorias .'">';
-            
-          else:  
-            
-            $assetPersonagens = array();
-            $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
-            $assetSections = $d->getSections();
-            foreach($assetSections as $a) {
-              if($a->getParentSectionId() == $personagensSection->getId()) {
-                $assetPersonagens[] = $a->getSlug();
-              }
-            }
-            
-            $printPersonagens= " ";
-            if(count($assetPersonagens) > 0)
-              $printPersonagens .= " " . implode(" ", $assetPersonagens);
-            
-            $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
-            
-          endif; 
+           
           
           $return .=   '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
           
