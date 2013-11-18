@@ -1222,7 +1222,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
           if($section == "videos"):
             $return .=  '<div class="yt-menu">';
-            $return .=    '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetVideo->getHeadline().'" />';
+            $return .=    '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$d->AssetVideo->getHeadline().'" />';
             $return .=  '</div>';
           else:  
             $related = $d->retriveRelatedAssetsByRelationType("Preview");
