@@ -15,7 +15,8 @@
     var $container = $('#container');
     
     $container.isotope({
-      itemSelector : '.element'
+      itemSelector : '.element',
+      layout:'mansory'
     }); 
     
     var filter_selected;
