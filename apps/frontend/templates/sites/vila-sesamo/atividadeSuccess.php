@@ -99,7 +99,20 @@
       <?php if(isset($asset)): ?>
       <div class="asset">
         <?php $related = $asset->retriveRelatedAssetsByRelationType("Preview"); ?>
+        <?php $relatedMore = $asset->retriveRelatedAssetsByRelationType("Asset Relacionado"); ?>
+        
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
+        <div>
+          <?php if(isset($relatedMore)): ?>
+            <?php if($relatedMore > 0): ?>
+              
+              <?php foreach($relatedMore as $k=>$p): ?>
+                <a href="javascript:;" class="changePicture" title="<?php echo $p->getTitle() ?>"><?php echo ($k+1) ?></a>
+              <?php endforeach; ?>
+                
+            <?php endif ?>
+          <?php endif ?>  
+        </div>  
         <div>
           <a class="option-assets" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">
             <i class="icones-sprite-interna icone-baixar-roxo"></i>
