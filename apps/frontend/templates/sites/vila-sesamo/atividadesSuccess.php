@@ -120,7 +120,7 @@
 
 <nav id="page_nav">
   <div class="container-ajax-loader">
-    <img id="ajax-loader" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprite/ajax-loader.gif" alt="">
+    <img id="ajax-loader" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/ajax-loader.gif" alt="">
   </div>
   <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-br-grande"></i></a>
 </nav>

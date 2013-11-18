@@ -146,19 +146,15 @@
   <script>
   
     setInterval(function(){
-    //console.log($('.slide05').css('left'));
-    if(parseInt($('.slide05').css('left')) == 0){
-      setTimeout(function(){
-        //console.log('teste');
-        $('.mao').css('z-index', '2')
-      }, 800);
-    }else{
-       setTimeout(function(){
-        //console.log('teste');
-        $('.mao').css('z-index', '0')
-      }, 1000);
-    }
-    
+      if(parseInt($('.slide05').css('left')) == 0){
+        setTimeout(function(){
+          $('.mao').css('z-index', '2')
+        }, 800);
+      }else{
+         setTimeout(function(){
+          $('.mao').css('z-index', '0')
+        }, 1000);
+      }
     },500);
     
   //banner principal
