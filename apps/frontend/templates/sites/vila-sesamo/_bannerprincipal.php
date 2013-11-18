@@ -179,7 +179,7 @@
       'pauseOnHover' : false,
       'slideshow' : true,
       'uiStyle': 'style02',
-      'delay': 10800,
+      'delay': 5800,
       'showThumbTooltip':false, 
       'arrowsOffset': -35,
       'showControlsOnHover': true,
