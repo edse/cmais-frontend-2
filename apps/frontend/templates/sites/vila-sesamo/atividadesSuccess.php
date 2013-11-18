@@ -81,6 +81,7 @@
 <section class="todos-itens ">
   <!--lista-->
   <ul role="contentinfo" id="container" class="row-fluid">
+    <?php /*
     <?php foreach($pager->getResults() as $k=>$d): ?>
     <?php
       $assetPersonagens = array();
@@ -104,6 +105,8 @@
       </a>
     </li>
     <?php endforeach; ?>
+     */
+     ?>
   </ul> 
   <!--lista-->  
 </section>

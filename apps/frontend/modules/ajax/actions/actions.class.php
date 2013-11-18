@@ -1203,10 +1203,28 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->execute();
           
         foreach($assets as $d){
-          $return = $d->getTitle();
-          $return .= $items;
-          $return .= $start;
+          $assetPersonagens = array();
+          $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site, 'personagens');
+          $assetSections = $d->getSections();
+          foreach($assetSections as $a) {
+            if($a->getParentSectionId() == $personagensSection->getId()) {
+              $assetPersonagens[] = $a->getSlug();
+            }
+          }
         }
+        if(count($assetPersonagens) > 0)  $personagens = " " . implode(" ", $assetPersonagens);
+        
+        $return =  '<li class="span4 element'. $personagens . 'atividades">'; 
+        $return .=   '<a href="/'. $site->getSlug() . '/' . 'atividades' .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
+        $return .=    $related = $d->retriveRelatedAssetsByRelationType("Preview");
+        $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" />';
+        $return .=    '<i class="icones-sprite-interna icone-atividades-pequeno"></i>';
+        $return .=    '<div>';
+        $return .=      '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
+        $return .=       $d->getTitle();
+        $return .=    '</div>';
+        $return .=  '</a>';
+        $return .= '</li>';
       echo $return;
     }
     die();
