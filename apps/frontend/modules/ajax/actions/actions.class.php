@@ -1215,11 +1215,20 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           }
           $printPersonagens= " ";
           if(count($assetPersonagens) > 0) $printPersonagens .= " " . implode(" ", $assetPersonagens);
-          $related = $d->retriveRelatedAssetsByRelationType("Preview");
+          
           
           $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">'; 
           $return .=   '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
-          $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
+          
+          if($section == "videos"):
+            $return .=  '<div class="yt-menu">';
+            $return .=    '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetVideo->getHeadline().'" />';
+            $return .=  '</div>';
+          else:  
+            $related = $d->retriveRelatedAssetsByRelationType("Preview");
+            $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
+          endif;
+          
           $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
           $return .=    '<div>';
           $return .=      '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
