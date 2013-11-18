@@ -1185,7 +1185,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       $items = intval($request->getParameter('items'));
       $site = intval($request->getParameter('site'));
       $sectionId = intval($request->getParameter('sectionId'));
-      $section = intval($request->getParameter('section'));
+      $section = $request->getParameter('section');
       $page = intval($request->getParameter('page'));
       
       if($page >= 1)
