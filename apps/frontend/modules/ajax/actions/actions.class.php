@@ -1211,20 +1211,21 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $assetPersonagens[] = $a->getSlug();
             }
           }
+          if(count($assetPersonagens) > 0) " " . implode(" ", $assetPersonagens);
+          $related = $d->retriveRelatedAssetsByRelationType("Preview");
+          
+          $return =  '<li class="span4 element '. $assetPersonagens . ' atividades">'; 
+          $return .=   '<a href="/vila-sesamo/' . 'atividades' .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
+          $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" />';
+          $return .=    '<i class="icones-sprite-interna icone-atividades-pequeno"></i>';
+          $return .=    '<div>';
+          $return .=      '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
+          $return .=       $d->getTitle();
+          $return .=    '</div>';
+          $return .=  '</a>';
+          $return .= '</li>';
         }
-        if(count($assetPersonagens) > 0) " " . implode(" ", $assetPersonagens);
-        $related = $d->retriveRelatedAssetsByRelationType("Preview");
         
-        $return =  '<li class="span4 element '. $assetPersonagens . ' atividades">'; 
-        $return .=   '<a href="/vila-sesamo/' . 'atividades' .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
-        $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" />';
-        $return .=    '<i class="icones-sprite-interna icone-atividades-pequeno"></i>';
-        $return .=    '<div>';
-        $return .=      '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
-        $return .=       $d->getTitle();
-        $return .=    '</div>';
-        $return .=  '</a>';
-        $return .= '</li>';
       echo $return;
     }
     die();
