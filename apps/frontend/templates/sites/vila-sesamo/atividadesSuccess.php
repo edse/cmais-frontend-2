@@ -149,7 +149,7 @@
           //$('#container').isotope().append($newEls).isotope('appended',$newEls).isotope('reloadItems');
           //$('#container').isotope().append($newEls).isotope('reloadItems').isotope({ sortBy:'original-order'});
           var newEls = $(data).appendTo('#container');
-          $("#container").isotope('appended', newEls );
+          $("#container").isotope().isotope('appended', newEls );
           contentPage++;
         }else{
           console.log("fim da listagem");
