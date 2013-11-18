@@ -22,12 +22,10 @@
         $('#page-nav #ajax-loader').hide();
         if (data != "") {
           //console.log(data);
-          //$('#container').isotope().append($newEls).isotope('reloadItems').isotope({ sortBy:'original-order'});
           var newEls = $(data).appendTo('#container');
           $("#container").isotope().isotope('appended',newEls);
           contentPage++;
         }else{
-          
           //$('#page_nav').html('<span class="mais">fim da listagem.</span>')
           //console.log("fim da listagem");
         }
