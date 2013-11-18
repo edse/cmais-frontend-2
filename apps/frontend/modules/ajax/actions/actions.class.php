@@ -1212,6 +1212,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $assetPersonagens[] = $a->getSlug();
             }
           }
+          $printPersonagens= " ";
           if(count($assetPersonagens) > 0) $printPersonagens .= " " . implode(" ", $assetPersonagens);
           $related = $d->retriveRelatedAssetsByRelationType("Preview");
           
