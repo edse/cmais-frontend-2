@@ -1184,7 +1184,9 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       $start = 0;
       $items = intval($request->getParameter('items'));
       $site = intval($request->getParameter('site'));
+      $siteId = intval($request->getParameter('siteId'));
       $section = intval($request->getParameter('section'));
+      $sectionId = intval($request->getParameter('sectionId'));
       $page = intval($request->getParameter('page'));
       
       if($page >= 1)
@@ -1193,10 +1195,10 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa')
-        ->where('sa.section_id = ?', $section)
+        ->where('sa.section_id = ?', $sectionId)
         ->andWhere('sa.asset_id = a.id')
         ->andWhere('a.is_active = ?', 1)
-        ->andWhere('a.site_id = ?',$site)
+        ->andWhere('a.site_id = ?',$siteId)
         ->orderBy('a.id desc')
         ->limit($items)
         ->offset($start)
@@ -1214,8 +1216,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           if(count($assetPersonagens) > 0) $printPersonagens .= " " . implode(" ", $assetPersonagens);
           $related = $d->retriveRelatedAssetsByRelationType("Preview");
           
-          $return =  '<li class="span4 element '. $printPersonagens . ' atividades">'; 
-          $return .=   '<a href="/vila-sesamo/' . 'atividades' .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
+          $return =  '<li class="span4 element '. $printPersonagens . $section .'">'; 
+          $return .=   '<a href="/'.$site.'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '" aria-label="'.$d->getTitle().$d->getDescription().'.Descrição do Thumbnail:'.$related[0]->AssetImage->getHeadline() ?>'">';
           $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" />';
           $return .=    '<i class="icones-sprite-interna icone-atividades-pequeno"></i>';
           $return .=    '<div>';
