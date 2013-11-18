@@ -144,9 +144,7 @@
       success: function(data){
         $('#page-nav #ajax-loader').hide();
         if (data != "") {
-          console.log(data);
-          
-          
+          //console.log(data);
           //$('#container').isotope().append($newEls).isotope('reloadItems').isotope({ sortBy:'original-order'});
           var newEls = $(data).appendTo('#container');
           $("#container").isotope().isotope('appended',newEls);
