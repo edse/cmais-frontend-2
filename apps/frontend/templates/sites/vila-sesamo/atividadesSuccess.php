@@ -144,7 +144,7 @@
           //console.log(data);
           $('#container').isotope({
             itemSelector:'.element',     
-            function(newElements) {
+            function{
               $('#container').isotope('appended',data);
             }
           });
