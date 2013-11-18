@@ -139,18 +139,10 @@
         $('#page-nav #ajax-loader').hide();
         if (data != "") {
           console.log(data);
-          //$('#contentList').append(data);
           contentPage++;
-          //$('#maisnoticias').show();
-        } else
-          if (contentPage == 1)
-            //$('#noticias').hide();
-            console.log('teste');
-          else {
-            console.log("fim da listagem");
-            //$('#contentList').append('<li style="color:#000; font-size:12px">Fim dos resultados.</li>');
-            //$('#maisnoticias').hide();
-          }
+        }else{
+          console.log("fim da listagem");
+        }
       }
     });
   }
