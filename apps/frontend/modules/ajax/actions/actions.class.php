@@ -1206,7 +1206,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           ->execute();
           
         foreach($assets as $d){
-          $return = '              <!--/ITEM NOTICIA-->';
+          $return = $d->getTitle();
         }
       }
       echo $return;
