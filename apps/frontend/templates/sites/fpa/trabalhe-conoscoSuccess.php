@@ -9,11 +9,13 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     <!--ESQUERDA-->
     <div class="col-esquerda span7">
       <h1><?php echo $section->getTitle();?></h1>
-      <?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
+      			<?php echo html_entity_decode($displays['destaque-principal'][0]->Asset->AssetContent->render()) ?>
       <!--descricao vagas-->
+      
       <div class="accordion trabalhe-conosco" id="accordion2">
       <?php
       if(count($section->subsections()) > 0):
+        
         foreach($section->subsections() as $sub):
           
           $sub_assets = Doctrine_Query::create()
@@ -24,8 +26,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             ->andWhere('a.is_active = ?', 1) 
             ->andWhere('a.site_id = ?', (int)$site->id)
             ->execute();
-          if($sub->getSlug() == "vagas-de-estagio"):
-            ?>
+						
+          if($sub->getSlug() == "vagas-de-estagio"):?>
             <!-- Estagio -->
             <div class="accordion-group">  
               <div class="linha"></div>
@@ -53,11 +55,11 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </div>
             </div>
             <!-- /Estagio -->
-           <?php
-          endif; 
-          if(count($sub_assets) > 0): 
-            if($sub->getSlug() == "resultados-processos"):
-            ?>
+          <?php endif; ?> 
+          
+          <?php
+          if(count($sub_assets) > 0):
+            if($sub->getSlug() == "resultados-processos"):?>
             <!-- Resultado -->
             <div class="accordion-group">
               <div class="linha"></div>
@@ -67,64 +69,26 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </div>
               <div id="<?php echo $sub->id ?>" class="accordion-body collapse" style="overflow: hidden; clear: both;">
               <br>
-              <?php
-              foreach($sub_assets as $sa):
-                if($sa->asset_type_id==8):
-              ?>
-                <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $sa->AssetFile->getFile(); ?>" title="<?php echo $sa->AssetFile->getAsset();?>" target="_blank">
-                  <i class="icon-align-left icon-white"></i> <?php echo $sa->AssetFile->getAsset(); ?>
-                </a>
-              <?php  
-                endif;
-              endforeach;  
-              ?>
+				     	
+				     	<?php foreach($sub_assets as $sa):?>
+				      	<?php	if($sa->asset_type_id==8): ?>
+				                <a class="btn-resultado" href="http://midia.cmais.com.br/assets/file/original/<?php echo $sa->AssetFile->getFile(); ?>" title="<?php echo $sa->AssetFile->getAsset();?>" target="_blank">
+				                  <i class="icon-align-left icon-white"></i> <?php echo $sa->AssetFile->getAsset(); ?>
+				                </a>
+				        <?php endif; ?>
+							<?php endforeach;?>
+					
               </div>
             </div>
             <!-- /Resultado -->
-            <?php
-            elseif($sub->getSlug() != "vagas-de-estagio"):
-            ?>
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="btn-cat accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>" title="<?php  if(count($sub_assets) < 2){ echo count($sub_assets) . " processo";}else{ echo count($sub_assets) . " processos";} ?>">
-                  <i class="icon-chevron-right"></i><?php echo " ".$sub->getTitle(); ?>
-                </a>
-                <hr class="tipo"/>
-              </div>
-            <!--vagas relacionadas-->
-            <div id="<?php echo $sub->id ?>" class="accordion-body collapse on" style="overflow: hidden; clear: both;">
-              <div class="accordion" id="vagas-relacionadas">
-                <?php foreach($sub_assets as $sa):?>
-                <!--emprego aberto-->
-                <div class="accordion-group">
-                  <div class="accordion-heading">
-                    <a id="<?php echo $sa->getSlug() ?>" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#<?php echo $sa->id ?>">
-                      <i class="ico-trabalho"></i><?php echo $sa->getTitle()." "; ?><span class="badge vaga"><?php echo $sa->AssetContent->getHeadline(); ?></span>
-                    </a>
-                  </div>
-                  <div id="<?php echo $sa->id ?>" class="accordion-body collapse vagas-exi" style="overflow: hidden; clear: both;">
-                    <div class="linha-dashed"></div>
-                    <div class="accordion-inner">
-                    <!--descriçao vaga-->
-                    <?php echo utf8_encode(html_entity_decode($sa->AssetContent->render())) ?>
-                    <!--/descriçao vaga-->
-                    <a href="/fpa/realizar-cadastro" class="btn btn-primary large-button pull-right realizar" title="Realizar Inscrição">Realizar Inscrição</a>
-                    </div>
-                    <div class="linha-dashed"></div>
-                  </div>
-                </div>
-                <!--/emprego aberto-->
-                <?php endforeach; ?>
-              </div>
-            </div>
-          </div>
-          <!-- /Vagas de emprego -->      
+         	
+          
           <?php
             endif;
           else:
             if($sub->getSlug() == "processo-seletivo"):
             ?>
-            <!-- Sem Vagas -->
+            <!-- Sem Vagas >
             <div class="accordion-group">
               <span class="tipo-de-emprego" style="margin: 0 auto;width: 191px;display: block;">
                 Não há vagas no momento.
@@ -137,6 +101,43 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
         endforeach;  
       endif;
       ?>
+      
+      <script type="text/javascript">
+				$.ajax({
+	        type: "GET",
+	     	  dataType: "jsonp",
+	        url: "http://app.cmais.com.br/actions/trabalhe-conosco/consulta_vagas.php",
+	        error: function(retorno){
+	          alert("Erro Json");
+	        }, 
+	        success: function(json) {
+	        	var conteudo = "";
+	              //conteudo = '<option value="' + dados.vaga.codigo + '" data-departamento="' + dados.vaga.departamento + '">' + dados.vaga.descricao + '</option>';
+		 					if(json.data != ""){
+		             conteudo =  ' <div class="accordion-group"> <div class="accordion-heading"> <a class="btn-cat accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#processos_seletivos" title="Processos Abertos">';
+		             conteudo += ' <i class="icon-chevron-right"></i>PROCESSO SELETIVO</a><hr class="tipo"/></div><!--vagas relacionadas-->';
+		             conteudo += ' <div id="processos_seletivos" class="accordion-body collapse on" style="overflow: hidden; clear: both;">';
+		             conteudo += ' <div class="accordion" id="vagas-relacionadas">';
+		             																								    
+								 $(json.data).each(function(index, dados){
+		                conteudo += ' <!--emprego aberto--> <div class="accordion-group"> <div class="accordion-heading"> <a id="codigo_'	+ dados.vaga.codigo + '" class="accordion-toggle vaga-aberta" data-toggle="collapse" data-parent="#vagas-relacionadas" href="#'	+ dados.vaga.codigo + '"> ';
+		                conteudo += ' <i class="ico-trabalho"></i>'	+ dados.vaga.descricao + '<!--span class="badge vaga"></span--> </a> </div> <div id="'	+ dados.vaga.codigo + '" class="accordion-body collapse vagas-exi" style="overflow: hidden; clear: both;">';
+		                conteudo += ' <div class="linha-dashed"></div> <div class="accordion-inner"> <!--descriçao vaga-->'	+ dados.vaga.descricao_processo + '<!--/descriçao vaga--> <a href="/fpa/realizar-cadastro?vaga='+dados.vaga.codigo+'" class="btn btn-primary large-button pull-right realizar"'; 
+		                conteudo += ' title="Realizar Inscrição">Realizar Inscrição</a></div><div class="linha-dashed"></div></div> </div> <!--/emprego aberto-->';
+		       			 });      
+		       			    
+		             conteudo += ' </div></div></div> <!-- /Vagas de emprego -->';
+		             
+		         	}else{
+		         		 conteudo  = ' <!-- Sem Vagas > <div class="accordion-group"> <span class="tipo-de-emprego" style="margin: 0 auto;width: 191px;display: block;"> Não há vagas no momento. </span> </div> <!-- /Sem Vagas -->';
+		         	}
+        		 $('#accordion2').prepend(conteudo);
+        		 //alert(conteudo);
+	       	}
+	   		});
+	   		
+       </script>
+      
       </div>   
     </div>
     <!--/ESQUERDA-->
