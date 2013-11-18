@@ -147,7 +147,7 @@
           //console.log(data);
           var $newEls = data;
           //$('#container').isotope().append($newEls).isotope('appended',$newEls).isotope('reloadItems');
-          $('#container').isotope().append($newEls).isotope('appended').isotope(filter:'.element');//.isotope({ sortBy:'original-order'});
+          $('#container').isotope().append($newEls).isotope('appended').isotope({filter:'.element'});//.isotope({ sortBy:'original-order'});
           contentPage++;
         }else{
           console.log("fim da listagem");
