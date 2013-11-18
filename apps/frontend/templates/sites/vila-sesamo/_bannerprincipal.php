@@ -1,13 +1,3 @@
-  <style>
-  #carrossel-destaque .tit-banner,
-  #carrossel-destaque .desc-banner{font-family: 'din-blackregular', Arial, Helvetica, sans-serif;}
-  #carrossel-destaque .tit-banner{text-transform:uppercase;}
-  
-  #carrossel-destaque .slide01 .tit-banner{font-size:117px; color:#00aa52;}
-  #carrossel-destaque .slide01 .desc-banner{font-size:60px; color:#00aa52;}
-  
-  #carrossel-destaque .slide05 .barra{width:9000px; height: 130px; display: block; background:#fee133;}  
-  </style>
   <!-- carrossel desktop-->
   <section id="carrossel-destaque">
     <!--Inicio-->
@@ -149,9 +139,9 @@
   <!-- /carrossel desktop-->
   <!--scripts e css banner-->
   <script type="text/javascript" src="http://cmais.com.br/portal/js/layer-slider/jQuery.layerSlider.js"></script>
-  <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-  <link rel="stylesheet" href="http://cmais.com.br/portal/js/layer-slider/model06/jquery.layerSlider.css">
-  <link rel="stylesheet" href="http://cmais.com.br/portal/js/layer-slider/model06/main.css">
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
+  <link rel="stylesheet" href="http://cmais.com.br/portal/css/sites/vilasesamo2/banner-layer-slider/jquery.layerSlider.css">
+  <link rel="stylesheet" href="http://cmais.com.br/portal/css/sites/vilasesamo2/banner-layer-slider/main.css">
 
   <script>
   
