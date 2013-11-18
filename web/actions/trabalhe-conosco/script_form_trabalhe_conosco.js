@@ -11,32 +11,33 @@ $(document).ready(function() {
     $.ajax({
       type: "GET",
       dataType: "jsonp",
-      crossDomain: true,
-      url: "/actions/trabalhe-conosco/seleciona_historicos.php?cod_curriculo="+cod_curriculo,
+      url: "http://app.cmais.com.br/actions/trabalhe-conosco/seleciona_historicos.php?cod_curriculo="+cod_curriculo,
       error: function(retorno){
-        console.log("Erro ao selecionar históricos");
+        //console.log("Erro ao selecionar históricos");
       }, 
       success: function(json) {
-					$.each(json.data, function(index, dados){
-          	//console.log(dados.historicos);
-            var codigo 				= dados.historicos.ql_codigo;
-            var dataadmissao 	= dados.historicos.ql_dtadmis;
-            var datademissao 	= dados.historicos.ql_dtdemis;
-            var experiencia 	= dados.historicos.ql_experiencia;
-            var empresa 			= dados.historicos.ql_empresa;
-            var funcaoinicial = dados.historicos.ql_funcini;
-            var funcaofinal 	= dados.historicos.ql_funcao;
-
-            var conteudo = '<div class="accordion-group"><div class="accordion-heading">';
-            conteudo = conteudo+'<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse'+cont+'"><font color=red>';
-            conteudo = conteudo + empresa + ' </font></a>  </div><div id="collapse'+cont+'" class="accordion-body collapse">';
-            conteudo = conteudo+'<div class="accordion-inner"><p>Função Inicial: '+funcaoinicial+'</p><p>Função Final:'+funcaofinal+'</p>';
-            conteudo = conteudo+'<p>Experiencia:'+experiencia+'</p><p>Data de Admissão:'+dataadmissao+'</p><p>Data de Demissão:'+datademissao+'</p>';
-            conteudo = conteudo+'<a class="seleciona-historico" href="#'+cont+'" >Editar</a>';
-            conteudo = conteudo+'<input type="hidden" value="'+codigo+'" id="ql_codigo'+cont+'"></div></div></div>';
-            $('#accordion2').append(conteudo); 
-            cont++;
-         });
+      		if(json.data != null){
+						$.each(json.data, function(index, dados){
+	          	////console.log(dados.historicos);
+	            var codigo 				= dados.historicos.ql_codigo;
+	            var dataadmissao 	= dados.historicos.ql_dtadmis;
+	            var datademissao 	= dados.historicos.ql_dtdemis;
+	            var experiencia 	= dados.historicos.ql_experiencia;
+	            var empresa 			= dados.historicos.ql_empresa;
+	            var funcaoinicial = dados.historicos.ql_funcini;
+	            var funcaofinal 	= dados.historicos.ql_funcao;
+	
+	            var conteudo = '<div class="accordion-group"><div class="accordion-heading">';
+	            conteudo = conteudo+'<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse'+cont+'"><font color=red>';
+	            conteudo = conteudo + empresa + ' </font></a>  </div><div id="collapse'+cont+'" class="accordion-body collapse">';
+	            conteudo = conteudo+'<div class="accordion-inner"><p>Função Inicial: '+funcaoinicial+'</p><p>Função Final:'+funcaofinal+'</p>';
+	            conteudo = conteudo+'<p>Experiencia:'+experiencia+'</p><p>Data de Admissão:'+dataadmissao+'</p><p>Data de Demissão:'+datademissao+'</p>';
+	            conteudo = conteudo+'<a class="seleciona-historico" href="#'+cont+'" >Editar</a>';
+	            conteudo = conteudo+'<input type="hidden" value="'+codigo+'" id="ql_codigo'+cont+'"></div></div></div>';
+	            $('#accordion2').append(conteudo); 
+	            cont++;
+	         });
+        	}
         }
       });
     };
@@ -46,14 +47,13 @@ $(document).ready(function() {
 		$.ajax({
 			type: "GET",
 			dataType: "jsonp",
-			crossDomain: true,
-			url: "/actions/trabalhe-conosco/seleciona_cursos.php?qg_curric="+cod_curriculo,
+			url: "http://app.cmais.com.br/actions/trabalhe-conosco/seleciona_cursos.php?qg_curric="+cod_curriculo,
 			error: function(retorno){
-			  console.log("Erro ao selecionar cursos");
+			  //console.log("Erro ao selecionar cursos");
 			}, 
 			success: function(json) {
+				if(json.data != null){
 					$.each(json.data, function(index, dados){
-						
 			      var qm_codigo 	= dados.cursos.qm_codigo;
 			      var qm_entidad 	= dados.cursos.qm_entidad;
 			      var qm_data 		= dados.cursos.qm_data;
@@ -69,28 +69,24 @@ $(document).ready(function() {
 			      conteudo = conteudo+'<a class="seleciona-curso" href="#'+cont+'" >Editar</a>';
 			      conteudo = conteudo+'<input type="hidden" value="'+qm_codigo+'" id="qm_codigo'+cont+'"></div></div></div>';
 			      $('#accordion_cursos').append(conteudo);
-			       
 			      cont++;
-			        
-			        
 			     });
+				}
 			}
 		});
 	};
     
-  /************* VALIDA USUÁRIO *************/
-  $("#passo-valida-usuario").click(function(){
+  function Valida_Usuario_FPA(){
     var cpf = $("#fpa_cpf").val();
     var data = $("#fpa_data").val();
 	
     $.ajax({
 	    type: "GET",
 	    dataType: "jsonp",
-	    crossDomain: true,
 	    data: $("#form1").serialize(),
-	    url: "http://172.20.16.219/actions/trabalhe-conosco/action.php?service=valida_usuario",
+	    url: "/actions/trabalhe-conosco/action.php?service=valida_usuario",
 	    error: function(retorno){
-	        //console.log("Erro na validação do usuário!");
+	        ////console.log("Erro na validação do usuário!");
 	        alert("Erro na validação do usuário!");
 	    }, 
 	    success: function(json) {
@@ -98,7 +94,7 @@ $(document).ready(function() {
 		    $("#fpa_cpf_cadastro").val(cpf);
 		    $("#fpa_data_nascimento").val(data);     
 	      if(json.data == 999){
-					console.log("Mostra a tela de cadastro vazia");
+					//console.log("Mostra a tela de cadastro vazia");
 	      }else{
 	      	$.each(json.data.curriculo, function(index, dados) {
 	          if($("#"+index).attr("type") == "text"){
@@ -114,11 +110,11 @@ $(document).ready(function() {
 	
 	      	});
 	      	
-	        if(json.data.curriculo.qg_trabat != "01/01/1900" && json.data.curriculo.qg_trabde != "01/01/1900"){
-	          $("#qg_trabat").val(json.data.curriculo.qg_trabat);
+	        if(json.data.curriculo.qg_trabate != "01/01/1900" && json.data.curriculo.qg_trabde != "01/01/1900"){
+	          $("#qg_trabate").val(json.data.curriculo.qg_trabate);
 	          $("#qg_trabde").val(json.data.curriculo.qg_trabde);
 	        }else{
-	        	$("#qg_trabat").val('');
+	        	$("#qg_trabate").val('');
 	        	$("#qg_trabde").val('');
 	        }        	
 					$("#qg_curric").val(json.data.curriculo.qg_curric);
@@ -132,8 +128,7 @@ $(document).ready(function() {
 				$.ajax({
 	        type: "GET",
 	     	  dataType: "jsonp",
-	     	  crossDomain: true,
-	        url: "http://172.20.16.219/actions/trabalhe-conosco/consulta_vagas.php",
+	        url: "http://app.cmais.com.br/actions/trabalhe-conosco/consulta_vagas.php",
 	        error: function(retorno){
 	          alert("Erro Json");
 	        }, 
@@ -148,11 +143,10 @@ $(document).ready(function() {
 	   		}); 
 	    }
 	  });
-		return false;
-	});
+		//return false;
+	};
    
-  //CADASTRA O CURRICULO
-  $("#cadastra-curriculo").click(function(){
+  function Cadastra_Curriculo(){
       var cpf         =  $("#fpa_cpf_cadastro").val();
       var data        =  $("#fpa_data_nascimento").val();
       var qg_curric   =  $("#qg_curric").val();
@@ -171,19 +165,19 @@ $(document).ready(function() {
 			        type: "GET",
 			        dataType: "jsonp",
 			        data: $("#form2").serialize(),
-			        url: "/actions/trabalhe-conosco/cadastra_curriculo.php?"+valores,
+			        url: "http://app.cmais.com.br//actions/trabalhe-conosco/cadastra_curriculo.php?"+valores,
 			        error: function(retorno){
-			          console.log("Erro para obter os dados do currículo. Clique no botão VOLTAR e tente novamente!");
+			          //console.log("Erro para obter os dados do currículo. Clique no botão VOLTAR e tente novamente!");
 			        }, 
 			        success: function(json) {
 		            if(json.data != 0){
-		            	console.log(json.data);
+		            	//console.log(json.data);
 		            	$("#qg_curric").val(json.data);
 		              $("#row2").hide(); //ESCONDE A TELA DE CADASTRO
 	      					$("#row3").show(); //MOSTRA A TELA DE CADASTRO SEGUINTES
 		            }else{
-		            	console.log(json.data);
-		            	console.log("Erro");
+		            	//console.log(json.data);
+		            	//console.log("Erro");
 		     				}   
 			     	}
 		     });
@@ -192,15 +186,15 @@ $(document).ready(function() {
 	        type: "GET",
 	        dataType: "jsonp",
 	        data: $("#form2").serialize(),        
-	        url: "http://172.20.16.219/actions/trabalhe-conosco/altera_curriculo.php?"+valores,
+	        url: "http://app.cmais.com.br/actions/trabalhe-conosco/altera_curriculo.php?"+valores,
 	        error: function(retorno){
-	          console.log("Erro ao Alterar Curriculo: Tente novamente mais tarde!");
+	          //console.log("Erro ao Alterar Curriculo: Tente novamente mais tarde!");
 	        },
 	        success: function(json) {
 	        		if(json.data == true){
-	        			console.log("Dados do curriculo alterado com sucesso");	
+	        			//console.log("Dados do curriculo alterado com sucesso");	
 	        		}else{
-	        			console.log("Erro na alteração");
+	        			//console.log("Erro na alteração");
 	        		}
 	            
 		     	}
@@ -214,8 +208,7 @@ $(document).ready(function() {
 	    $("#row2").hide(); //ESCONDE A TELA DE CADASTRO
 	    $("#row3").show(); //MOSTRA A TELA DE CADASTRO SEGUINTE
 	    $(window).scrollTop(300);
-    
-  });
+  };
   
   
   $(".seleciona-historico").live('click',function(){
@@ -227,9 +220,9 @@ $(document).ready(function() {
     $.ajax({
       type: "GET",
       dataType: "jsonp",
-      url: "/actions/trabalhe-conosco/seleciona_historico.php?codigo="+codigo,
+      url: "http://app.cmais.com.br/actions/trabalhe-conosco/seleciona_historico.php?codigo="+codigo,
       error: function(retorno){
-        console.log("Erro na seleção do histórico");
+        //console.log("Erro na seleção do histórico");
       }, 
       success: function(json) {
         $.each(json.data.historico, function(index, dados) {
@@ -259,9 +252,9 @@ $(document).ready(function() {
       $.ajax({
         type: "GET",
         dataType: "jsonp",
-        url: "/actions/trabalhe-conosco/deleta_historico.php?codigo="+codigo,
+        url: "http://app.cmais.com.br/actions/trabalhe-conosco/deleta_historico.php?codigo="+codigo,
         error: function(retorno){
-          console.log("Erro ao excluir histórico"); 
+          //console.log("Erro ao excluir histórico"); 
         }, 
         success: function(json) {
          if(json.data == true){
@@ -285,18 +278,19 @@ $(document).ready(function() {
   });
    
   
-  $("#adicionar_historico").live('click',function(){
+  //$("#adicionar_historico").live('click',function(){
+  function 	Adiciona_Historico(){
     $.ajax({
       type: "GET",
       dataType: "jsonp",
       data: $("#form3").serialize(),
-      url: "/actions/trabalhe-conosco/insere_historico.php?qg_curric="+$("#qg_curric").val(),
+      url: "http://app.cmais.com.br/actions/trabalhe-conosco/insere_historico.php?qg_curric="+$("#qg_curric").val(),
       error: function(retorno){
-        alert("Erro xml");
+        alert("Erro ao adicionar o histórico!");
       }, 
       success: function(json) {
          if(json.data == true){
-        		console.log("cadastrou");
+        		//console.log("cadastrou");
             // SE CADASTRAR COM SUCESSO CARREGA TUDO NOVAMENTE
             $("#acoes_historico").hide();
             $("#accordion2").empty(); //LIMPA O CAMPO
@@ -311,25 +305,25 @@ $(document).ready(function() {
             alert("Histórico cadastrado com sucesso");
             $("#continue_inscricao").show();
          }else{
-         	console.log("erro no cadastro");
+         	//console.log("erro no cadastro");
          }
        }
     });
-  });
+  };
   
   
-  $("#altera_historico").live('click',function(){
+  function 	Altera_Historico(){
     $.ajax({
       type: "GET",
       dataType: "jsonp",
       data: $("#form3").serialize(),
-      url: "/actions/trabalhe-conosco/altera_historico.php",
+      url: "http://app.cmais.com.br/actions/trabalhe-conosco/altera_historico.php",
       error: function(retorno){
-        alert("Erro xml");
+        alert("Erro na alteração do Histórico");
       }, 
       success: function(json) {
         if(json.data == true){
-          console.log("alterou...");
+          //console.log("alterou...");
           $("#acoes_historico").hide();
           $("#accordion2").empty();
           $("#accordion2").show();
@@ -349,8 +343,7 @@ $(document).ready(function() {
      }
 		});
 
-  }); 
-  
+  }; 
   
   $(".seleciona-curso").live('click',function(){
     var codigo   =  $(this).attr('href');
@@ -361,9 +354,9 @@ $(document).ready(function() {
     $.ajax({
       type: "GET",
       dataType: "jsonp",
-      url: "/actions/trabalhe-conosco/seleciona_curso.php?codigo="+codigo+"&"+cod_curriculo,
+      url: "http://app.cmais.com.br/actions/trabalhe-conosco/seleciona_curso.php?codigo="+codigo+"&"+cod_curriculo,
       error: function(retorno){
-        console.log("Erro na seleção do curso");
+        //console.log("Erro na seleção do curso");
       }, 
       success: function(json) {
         $.each(json.data.curso, function(index, dados) {
@@ -411,9 +404,9 @@ $(document).ready(function() {
       $.ajax({
         type: "GET",
         dataType: "jsonp",
-        url: "/actions/trabalhe-conosco/deleta_curso.php?codigo="+codigo,
+        url: "http://app.cmais.com.br/actions/trabalhe-conosco/deleta_curso.php?codigo="+codigo,
         error: function(retorno){
-          console.log("Erro ao excluir curso"); 
+          //console.log("Erro ao excluir curso"); 
         }, 
         success: function(json) {
            if(json.data == true){
@@ -436,8 +429,7 @@ $(document).ready(function() {
       }
   });
    
-  
-  $("#adicionar_curso").live('click',function(){
+  function Adiciona_Curso(){
   		var valores = "";
 	 	  
 	 	  $("#form4 select").each(function() {
@@ -450,13 +442,13 @@ $(document).ready(function() {
         type: "GET",
         dataType: "jsonp",
         data: $("#form4").serialize(),
-        url: "/actions/trabalhe-conosco/insere_curso.php?qg_curric="+$("#qg_curric").val()+valores,
+        url: "http://app.cmais.com.br/actions/trabalhe-conosco/insere_curso.php?qg_curric="+$("#qg_curric").val()+valores,
         error: function(retorno){
           alert("Erro Curso");
         }, 
         success: function(json) {
            if(json.data == true){
-          		console.log("cadastrou");
+          		//console.log("cadastrou");
               // SE CADASTRAR COM SUCESSO CARREGA TUDO NOVAMENTE
               $("#acoes_curso").hide();
               $("#accordion_cursos").empty(); //LIMPA O CAMPO
@@ -471,14 +463,13 @@ $(document).ready(function() {
               
               $("#concluir_inscricao").show();
            }else{
-           	console.log("erro no cadastro");
+           	//console.log("erro no cadastro");
            }
          }
       });
-  });
+  };
   
-  
-  $("#altera_curso").live('click',function(){
+  function Altera_Curso(){
 			var valores = "";
 	 	  $("#form4 select").each(function() {
 				var str = this.id;
@@ -491,13 +482,13 @@ $(document).ready(function() {
         type: "GET",
         dataType: "jsonp",
         data: $("#form4").serialize(),
-        url: "/actions/trabalhe-conosco/altera_curso.php?qg_curric="+$("#qg_curric").val()+valores,
+        url: "http://app.cmais.com.br/actions/trabalhe-conosco/altera_curso.php?qg_curric="+$("#qg_curric").val()+valores,
         error: function(retorno){
-          alert("Erro xml");
+          alert("Erro na alteração do curso!");
         }, 
         success: function(json) {
           if(json.data == true){
-            console.log("alterou curso");
+            //console.log("alterou curso");
             $("#acoes_curso").hide();
             $("#accordion_cursos").empty();
             $("#accordion_cursos").show();
@@ -512,11 +503,11 @@ $(document).ready(function() {
             $("#concluir_inscricao").show();
               
           }else{
-             alert('Erro no Serviço: Alteração de Cursos');
+              alert("Erro na alteração do curso!");
           }
        }
 		});
-  }); 
+  }; 
   
   /************* SEGUIR PARA PASSO 4 *************/
   $("#continuar_inscricao").click(function(){
@@ -539,7 +530,6 @@ $(document).ready(function() {
 	 }
 	});
 
-
 	function Carrega_Cursos(){
 	 var tipo = $("#DropDown_qm_tcurso").val();
 	 $('#DropDown_qm_curso').empty();
@@ -547,7 +537,7 @@ $(document).ready(function() {
 			$.ajax({
 	      type: "GET",
 	   	  dataType: "jsonp",
-	      url: "http://172.20.16.219/actions/trabalhe-conosco/cursos.php?tipo="+tipo,
+	      url: "http://app.cmais.com.br/actions/trabalhe-conosco/cursos.php?tipo="+tipo,
 	      error: function(retorno){
 	        alert("Erro Json");
 	      }, 
@@ -591,6 +581,257 @@ $(document).ready(function() {
   	// limpar forms 
     $("#row4").hide();
     $("#row5").show();
+  });
+
+	//VALIDAÇÃO DOS FORMULÁRIOS
+	//ADICIONA METO DOS DE DATA E CPF
+	$.validator.addMethod( "DateBr", function(value, element) { return value.match(/^(0?[1-9]|[12][0-9]|3[0-2])[.,/ -](0?[1-9]|1[0-2])[.,/ -](19|20)?\d{2}$/); }, "Digite a data no formato dd/mm/aaaa.");
+	$.validator.addMethod("DateBr2", function(value, element) { if(value == "") return true; else if(value.length < 10) return false;else return value.match(/^(0?[1-9]|[12][0-9]|3[0-2])[.,/ -](0?[1-9]|1[0-2])[.,/ -](19|20)?\d{2}$/);},"Data em branco");
+	$.validator.addMethod( "CPF", function(value, element) { 
+	  value = value.replace('.','');
+	  value = value.replace('.','');
+	  cpf = value.replace('-','');
+	  while(cpf.length < 11) cpf = "0"+ cpf;
+	  var expReg = /^0+$|^1+$|^2+$|^3+$|^4+$|^5+$|^6+$|^7+$|^8+$|^9+$/;
+	    var a = [];
+	    var b = new Number;
+	    var c = 11;
+	    for (i=0; i<11; i++){
+	        a[i] = cpf.charAt(i);
+	        if (i < 9) b += (a[i] * --c);
+	    }
+	    if ((x = b % 11) < 2) { a[9] = 0 } else { a[9] = 11-x }
+	    b = 0;
+	    c = 11;
+	    for (y=0; y<10; y++) b += (a[y] * c--);
+	    if ((x = b % 11) < 2) { a[10] = 0; } else { a[10] = 11-x; }
+	    if ((cpf.charAt(9) != a[9]) || (cpf.charAt(10) != a[10]) || cpf.match(expReg)) return false;
+	    return true;
+	}, "Informe um CPF válido."); 
+	
+	$('#form1').validate({
+    rules: {
+      fpa_cpf: {
+        required: true,
+        minlength: 11,
+        number: true,
+        CPF: true
+      },
+      fpa_data: {
+        required: true,
+        minlength: 10,
+        DateBr : true
+      }
+    },
+    messages:{
+      fpa_cpf:"Digite um CPF válido!",
+      fpa_data:"Digite uma Data válida!"
+    },
+    
+    highlight: function(label) {
+      $(label).closest('.control-group').addClass('error');
+      $(label).closest('.control-group').removeClass('success');
+    },
+    success: function(label) {
+    	$(label).closest('.control-group').removeClass('error');
+      $(label).closest('.control-group').addClass('success');
+      label.addClass('valid').closest('.control-group').addClass('success');
+    },
+    
+    submitHandler: function(form){
+    	//VALIDA USUARIO
+			Valida_Usuario_FPA();
+    }
+  });
+
+	$('#form2').validate({
+    rules: {
+      qg_nome: {
+        required: true,
+        minlength: 3
+      },
+      qg_enderec: {
+        required: true,
+        minlength: 3
+      },
+      qg_bairro: {
+        required: true,
+        minlength: 3
+      },
+      qg_municip: {
+        required: true,
+        minlength: 3
+      },
+      DropDown_qg_estado: {
+        required: true
+      },
+      qg_cep: {
+        required: true,
+        minlength: 9
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      DropDown_qg_sexo: {
+        required: true
+      },
+      DropDown_qg_naciona: {
+        required: true
+      },
+      DropDown_qg_natural: {
+        required: true
+      }, 
+      DropDown_qg_rgorg: {
+        required: true
+      },
+      qg_mae: {
+        required: true,
+        minlength: 3
+      },
+      DropDown_qg_estciv: {
+        required: true
+      }, 
+      qg_numcp: {
+        required: true
+      },
+      qg_sercp: {
+        required: true
+      }, 
+      DropDown_qg_ufcp:{
+      	required: true
+      },
+      qg_memo2: {
+        required: true,
+        minlength: 50,
+      },
+      qg_trabde: {
+        DateBr2: true //Valida somente se estiver preenchido
+      }, 
+      qg_trabat: {
+      	DateBr2: true //Valida somente se estiver preenchido
+      }
+    },
+    messages:{
+      qg_trabde:"Digite uma Data válida!",
+      qg_trabat:"Digite uma Data válida!"      
+    },
+    
+    highlight: function(label) {
+      $(label).closest('.control-group').addClass('error');
+      $(label).closest('.control-group').removeClass('success');
+    },
+    success: function(label) {
+    	$(label).closest('.control-group').removeClass('error');
+      $(label).closest('.control-group').addClass('success');
+      label.addClass('valid').closest('.control-group').addClass('success');
+    },
+    
+    submitHandler: function(form){
+			Cadastra_Curriculo();
+    }
+  });
+	
+	$('#form3').validate({
+    rules: {
+      ql_dtadmis: {
+        DateBr: true,
+        minlength: 10
+      },
+      ql_dtdemis: {
+        DateBr: true,
+        minlength: 10
+      },
+      ql_empresa: {
+        required: true,
+        minlength: 5
+      },
+      ql_funcini: {
+        required: true,
+        minlength: 5
+      },
+      ql_funcao: {
+        required: true,
+        minlength: 5
+      },
+      ql_experiencia: {
+        required: true,
+        minlength: 10
+      }
+    },
+    messages:{
+      ql_dtadmis:"Digite uma Data válida!",
+      ql_dtdemis:"Digite uma Data válida!"      
+    },
+    
+    highlight: function(label) {
+      $(label).closest('.control-group').addClass('error');
+      $(label).closest('.control-group').removeClass('success');
+    },
+    success: function(label) {
+    	$(label).closest('.control-group').removeClass('error');
+      $(label).closest('.control-group').addClass('success');
+    },
+    
+    submitHandler: function(form){
+    	if($("#adicionar_historico").is(':visible')){
+    	 	Adiciona_Historico();	
+    	}else{
+    		Altera_Historico();
+    	}
+			
+    }
+  });
+	
+	$('#form4').validate({
+    rules: {
+      DropDown_qm_tcurso: {
+        required: true,
+        minlength: 1
+      },
+      DropDown_qm_curso: {
+        required: true,
+        minlength: 1
+      },
+      qm_dscout: {
+        required: true,
+        minlength: 3
+      },
+      DropDown_qm_escolar: {
+        required: true,
+        minlength: 1
+      },
+      qm_entidad: {
+        required: true,
+        minlength: 5
+      },
+      qm_data: {
+         DateBr: true,
+        minlength: 10
+      }
+    },
+    messages:{
+      ql_dtadmis:"Digite uma Data válida!",
+      ql_dtdemis:"Digite uma Data válida!"      
+    },
+    
+    highlight: function(label) {
+      $(label).closest('.control-group').addClass('error');
+      $(label).closest('.control-group').removeClass('success');
+    },
+    success: function(label) {
+    	$(label).closest('.control-group').removeClass('error');
+      $(label).closest('.control-group').addClass('success');
+    },
+    
+    submitHandler: function(form){
+    	if($("#adicionar_curso").is(':visible')){
+    	 	Adiciona_Curso();	
+    	}else{
+    		Altera_Curso();
+    	}
+			
+    }
   });
 
 });

@@ -1,7 +1,6 @@
 <?php
   
   ### ALTERA CURRÍCULO
-  //TESTE
   //814725288912
   //04/02/1988
   
@@ -11,9 +10,24 @@
   if(!empty($_GET['qg_curric']) && !empty($_GET['data']) && !empty($_GET['qg_nome']) && !empty($_GET['qg_cep']) && isset($_GET['callback'])){
     $qg_curric   =  $_GET['qg_curric'];
     
-    if(!empty($_GET['qg_trabde']) && !empty($_GET['qg_trabate'])){
-      $trabalhou_fpa_de	 = 	$_GET['qg_trabde'];
-      $trabalhou_fpa_ate =	$_GET['qg_trabate'];
+		$qg_pretsal = "";
+		$qg_ultsal = "";
+		
+		if($_GET['qg_pretsal']){
+			$qg_pretsal = str_replace(".", "", $_GET['qg_pretsal']);
+		  $qg_pretsal = str_replace(",", ".", $qg_pretsal);
+			$qg_pretsal = number_format($qg_pretsal, 2 ,'.','');
+		}
+		
+		if($_GET['qg_ultsal']){
+			$qg_ultsal = str_replace(".", "", $_GET['qg_ultsal']);
+			$qg_ultsal = str_replace(",", ".", $qg_ultsal);
+			$qg_ultsal = number_format($qg_ultsal, 2 ,'.','');
+		}
+		
+   	if(!empty($_GET['qg_trabde']) && !empty($_GET['qg_trabate'])){
+      $trabalhou_fpa_de = $_GET['qg_trabde'];
+      $trabalhou_fpa_ate =$_GET['qg_trabate'];
     }else{
       //DEFAULT
       $trabalhou_fpa_de   = '01/01/1900';
@@ -57,13 +71,13 @@
                             'titulo_eleitor' 		=> $_GET['qg_tituloe'], 
                             'titulo_zona' 			=> $_GET['qg_zonasec'],
                              
-                            'area' 				=> $_GET['qg_are'], 
-                            'cargo' 			=> $_GET['qg_cargo'], 
-                            'salario_pretencao' => $_GET['qg_pretsal'], 
-                            'salario_ultimo' 	=> $_GET['qg_ultsal'], 
-                            'experiencia' 		=> $_GET['qg_memo2'], 
-                            'parentes' 				=> $_GET['qg_tempar'],
-                            'trabalhou_fpa' 	=> $_GET['qg_trabal'], 
+                            'area' 							=> 	"999", 
+                            //'cargo' 			=> 			$_GET['qg_cargo'], 
+                            'salario_pretencao' => $qg_pretsal, 
+                            'salario_ultimo' 		=> $qg_ultsal, 
+                            'experiencia' 			=> $_GET['qg_memo2'], 
+                            'parentes' 					=> $_GET['qg_tempar'],
+                            'trabalhou_fpa' 		=> $_GET['qg_trabal'], 
                             
                             
                             'trabalhou_fpa_de' 	=> $trabalhou_fpa_de,

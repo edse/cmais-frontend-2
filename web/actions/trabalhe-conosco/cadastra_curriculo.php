@@ -4,15 +4,32 @@
   include_once("wsTrabalheConosco.class.php");
   $service = "cadastra_curriculo";    
            
-	if(!empty($_GET['qg_trabde']) && !empty($_GET['qg_trabate'])){
-	  $trabalhou_fpa_de = $_GET['qg_trabde'];
-	  $trabalhou_fpa_ate =$_GET['qg_trabate'];
-	}else{
-	  //DEFAULT
-	  $trabalhou_fpa_de   = '01/01/1900';
-	  $trabalhou_fpa_ate  = '01/01/1900';
+if(!empty($_GET['qg_nome']) && !empty($_GET['qg_nome']) && !empty($_GET['qg_cep']) && isset($_GET['callback'])){	
+	$qg_pretsal = "";
+	$qg_ultsal = "";
+	
+	if($_GET['qg_pretsal']){
+		$qg_pretsal = str_replace(".", "", $_GET['qg_pretsal']);
+	  $qg_pretsal = str_replace(",", ".", $qg_pretsal);
+		$qg_pretsal = number_format($qg_pretsal, 2 ,'.','');
 	}
-    
+	
+	if($_GET['qg_ultsal']){
+		$qg_ultsal = str_replace(".", "", $_GET['qg_ultsal']);
+		$qg_ultsal = str_replace(",", ".", $qg_ultsal);
+		$qg_ultsal = number_format($qg_ultsal, 2 ,'.','');
+	}
+	
+ 	if(!empty($_GET['qg_trabde']) && !empty($_GET['qg_trabate'])){
+    $trabalhou_fpa_de = $_GET['qg_trabde'];
+    $trabalhou_fpa_ate =$_GET['qg_trabate'];
+  }else{
+    //DEFAULT
+    $trabalhou_fpa_de   = '01/01/1900';
+    $trabalhou_fpa_ate  = '01/01/1900';
+  }
+		
+		
   $arguments = array('cadastra_curriculo' 
                     => array(
                 			'cpf'		 	=> $_GET['cpf'],
@@ -49,8 +66,8 @@
                     'titulo_eleitor' 		=> $_GET['qg_tituloe'], 
                     'titulo_zona' 			=> $_GET['qg_zonasec'],
                      
-                        'area' 				=> $_GET['qg_are'], 
-                        'cargo' 			=> $_GET['qg_cargo'], 
+                        'area' 				=> "999", 
+                        //'cargo' 			=> $_GET['qg_cargo'], 
                         'salario_pretencao' => $_GET['qg_pretsal'], 
                         'salario_ultimo' 	=> $_GET['qg_ultsal'], 
                         'experiencia' 		=> $_GET['qg_memo2'], 
@@ -68,16 +85,8 @@
     $resultado = $result->result->cadastra_curriculoResult;
     
 	$output = json_encode(array("data" => $resultado));
-	
-	if(isset($_GET['callback'])){
-		$callback = $_GET['callback'];
-		echo $callback.'('. $output . ');';	
-	}else{
-		//echo $output;
-	}
+	$callback = $_GET['callback'];
+	echo $callback.'('. $output . ');';	
+}	
 ?>
        
-
-
-
-
