@@ -1206,7 +1206,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
         foreach($assets as $d){
           $assetPersonagens = array();
-          $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site, 'personagens');
+          $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
           $assetSections = $d->getSections();
           foreach($assetSections as $a) {
             if($a->getParentSectionId() == $personagensSection->getId()) {
@@ -1218,9 +1218,9 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           $related = $d->retriveRelatedAssetsByRelationType("Preview");
           
           $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">'; 
-          $return .=   '<a href="/vila-sesamo/' . 'atividades' .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
+          $return .=   '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
           $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" />';
-          $return .=    '<i class="icones-sprite-interna icone-atividades-pequeno"></i>';
+          $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
           $return .=    '<div>';
           $return .=      '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
           $return .=       $d->getTitle();
