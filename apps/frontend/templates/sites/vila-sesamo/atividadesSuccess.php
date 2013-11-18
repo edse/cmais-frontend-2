@@ -81,6 +81,7 @@
 <section class="todos-itens ">
   <!--lista-->
   <ul role="contentinfo" id="container" class="row-fluid">
+    <?php /*
     <?php foreach($pager->getResults() as $k=>$d): ?>
     <?php
       $assetPersonagens = array();
@@ -104,6 +105,8 @@
       </a>
     </li>
     <?php endforeach; ?>
+     */
+     ?>
   </ul> 
   <!--lista-->  
 </section>
@@ -124,13 +127,16 @@
   </div>
   <a href="javascript:vilaSesamoGetContents();" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-br-grande"></i></a>
 </nav>
+<script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
+<!--script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script-->
+<script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <script>
   videoPage = 1;
   contentPage = 1;
   function vilaSesamoGetContents() {
     $.ajax({
       url: "<?php echo url_for("@homepage") ?>ajax/vilasesamogetcontents",
-      data: "page="+contentPage+"&items=1&site=<?php echo (int)$site->id ?>&section=<?php echo $section->getSlug(); ?>",
+      data: "page="+contentPage+"&items=9&site=<?php echo $site->getSlug(); ?>&siteId=<?php echo (int)$site->id ?>&sectionId=<?php echo $section->getId(); ?>&section=<?php echo $section->getSlug(); ?>",
       beforeSend: function(){
           $('#page-nav a.mais').hide();
           $('#page-nav #ajax-loader').show();
@@ -138,19 +144,15 @@
       success: function(data){
         $('#page-nav #ajax-loader').hide();
         if (data != "") {
-          console.log(data);
-          //$('#contentList').append(data);
+          //console.log(data);
+          //$('#container').isotope().append($newEls).isotope('reloadItems').isotope({ sortBy:'original-order'});
+          var newEls = $(data).appendTo('#container');
+          $("#container").isotope().isotope('appended',newEls);
           contentPage++;
-          //$('#maisnoticias').show();
-        } else
-          if (contentPage == 1)
-            //$('#noticias').hide();
-            console.log('teste');
-          else {
-            console.log("fim da listagem");
-            //$('#contentList').append('<li style="color:#000; font-size:12px">Fim dos resultados.</li>');
-            //$('#maisnoticias').hide();
-          }
+        }else{
+          $('#page_nav').html('<span class="mais">fim da listagem.</span>')
+          //console.log("fim da listagem");
+        }
       }
     });
   }
@@ -161,6 +163,4 @@
 <!--/paginacao-->
 
 <!--scripts-->
-<script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
-<?php /*<script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script> */ ?>
-<script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
+

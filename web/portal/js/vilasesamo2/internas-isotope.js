@@ -15,10 +15,11 @@
     var $container = $('#container');
     
     $container.isotope({
-      itemSelector : '.element'
+      itemSelector : '.element',
+      layoutMode:'fitRows'
     }); 
     
-    var filter_selected
+    var filter_selected;
     
     //filtro personagens para atividades, jogos e videos
     $('.filtro-personagem a').click(function(){

@@ -1183,33 +1183,54 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       $return = '';
       $start = 0;
       $items = intval($request->getParameter('items'));
-      $site = intval($request->getParameter('site'));
-      $section = intval($request->getParameter('section'));
+      $siteId = intval($request->getParameter('siteId'));
+      $sectionId = intval($request->getParameter('sectionId'));
       $page = intval($request->getParameter('page'));
+      $section = $request->getParameter('section');
+      $site = $request->getParameter('site');
       
       if($page >= 1)
         $start = ($page * $items)-$items;
       
-      if( $site > 0 && !in_array($site,array('1215')) ){
-        $assets = Doctrine_Query::create()
-          ->select('a.*')
-          ->from('Section s, Asset a, AssetContent ac')
-          ->where('a.asset_type_id = 1')
-          ->andWhere('a.section_id = s.id')
-          ->andWhere('ac.asset_id = a.id')
-          ->andWhere('a.is_active = ?', 1)
-          ->andWhere('a.site_id = ?',$site)
-          ->orderBy('a.id desc')
-          ->limit($items)
-          ->offset($start)
-          ->execute();
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->where('sa.section_id = ?', $sectionId)
+        ->andWhere('sa.asset_id = a.id')
+        ->andWhere('a.is_active = ?', 1)
+        ->andWhere('a.site_id = ?',$siteId)
+        ->orderBy('a.id desc')
+        ->limit($items)
+        ->offset($start)
+        ->execute();
           
         foreach($assets as $d){
+          $assetPersonagens = array();
+          $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
+          $assetSections = $d->getSections();
+          foreach($assetSections as $a) {
+            if($a->getParentSectionId() == $personagensSection->getId()) {
+              $assetPersonagens[] = $a->getSlug();
+            }
+          }
+          $printPersonagens= " ";
+          if(count($assetPersonagens) > 0) $printPersonagens .= " " . implode(" ", $assetPersonagens);
+          $related = $d->retriveRelatedAssetsByRelationType("Preview");
           
-          $return = '              <!--/ITEM NOTICIA-->';
+          $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">'; 
+          $return .=   '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
+          $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
+          $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
+          $return .=    '<div>';
+          $return .=      '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
+          $return .=       $d->getTitle();
+          $return .=    '</div>';
+          $return .=  '</a>';
+          $return .= '</li>';
+          echo $return;
         }
-      }
-      echo $return;
+        
+      
     }
     die();
   }
