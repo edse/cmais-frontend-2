@@ -129,7 +129,7 @@
             <i class="icones-sprite-interna icone-imprimir-roxo"></i>
             <span>Imprimir</span>
             <div id="div0" style="display: none;page-break-after:always;">
-              <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("original")?>" style="width:95%">
+              <img src="<?php echo $relatedMore[0]->retriveImageUrlByImageUsage("original")?>" style="width:95%">
             </div>
           </a>
           
