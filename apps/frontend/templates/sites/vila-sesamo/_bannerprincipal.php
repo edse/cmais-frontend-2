@@ -140,8 +140,8 @@
   <!--scripts e css banner-->
   <script type="text/javascript" src="http://cmais.com.br/portal/js/layer-slider/jQuery.layerSlider.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-  <link rel="stylesheet" href="http://cmais.com.br/portal/css/sites/vilasesamo2/banner-layer-slider/jquery.layerSlider.css">
-  <link rel="stylesheet" href="http://cmais.com.br/portal/css/sites/vilasesamo2/banner-layer-slider/main.css">
+  <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/banner-layer-slider/jquery.layerSlider.css">
+  <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/banner-layer-slider/main.css">
 
   <script>
   
