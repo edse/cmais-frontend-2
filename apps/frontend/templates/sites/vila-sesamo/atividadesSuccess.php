@@ -141,7 +141,8 @@
       success: function(data){
         $('#page-nav #ajax-loader').hide();
         if (data != "") {
-          console.log(data);
+          //console.log(data);
+          $('#container').isotope('insert',data);
           contentPage++;
         }else{
           console.log("fim da listagem");
