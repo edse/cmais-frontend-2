@@ -116,12 +116,49 @@
   
 
 
-<input type="hidden" id="filter-choice" value="">
 
+<!--paginacao-->
 <nav id="page_nav">
-  <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-br-grande"></i></a>
+  <div class="container-ajax-loader">
+    <img id="ajax-loader" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/ajax-loader.gif" alt="" style="display:none;">
+  </div>
+  <a href="javascript:vilaSesamoGetContents();" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-br-grande"></i></a>
 </nav>
-
+<script>
+  videoPage = 1;
+  contentPage = 1;
+  function vilaSesamoGetContents() {
+    $.ajax({
+      url: "<?php echo url_for("@homepage") ?>ajax/vilasesamogetcontents",
+      data: "page="+contentPage+"&items=1&site=<?php echo (int)$site->id ?>&section=<?php echo $section->getSlug(); ?>",
+      beforeSend: function(){
+          $('#page-nav a.mais').hide();
+          $('#page-nav #ajax-loader').show();
+        },
+      success: function(data){
+        $('#page-nav #ajax-loader').hide();
+        if (data != "") {
+          console.log(data);
+          //$('#contentList').append(data);
+          contentPage++;
+          //$('#maisnoticias').show();
+        } else
+          if (contentPage == 1)
+            //$('#noticias').hide();
+            console.log('teste');
+          else {
+            console.log("fim da listagem");
+            //$('#contentList').append('<li style="color:#000; font-size:12px">Fim dos resultados.</li>');
+            //$('#maisnoticias').hide();
+          }
+      }
+    });
+  }
+  $(document).ready(function(){
+   vilaSesamoGetContents();
+  });
+</script>
+<!--/paginacao-->
 
 <!--scripts-->
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>

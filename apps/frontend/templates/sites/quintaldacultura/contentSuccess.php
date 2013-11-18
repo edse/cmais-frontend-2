@@ -83,7 +83,15 @@
                 <ul class="navegacao">
                   <li><a href="/quintaldacultura" title="Quintal da Cultura">Quintal da Cultura</a></li>
                 </ul>
-                <h2><?php echo $section->getTitle()              ?></h2>
+                <h2>
+                  <?php 
+                  if($section){
+                    echo $section->getTitle();
+                  }elseif($asset){
+                    echo $asset->getTitle();
+                  }
+                  ?>
+                </h2>
                 <small><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></small>
               </div>
               <!-- /menu-->

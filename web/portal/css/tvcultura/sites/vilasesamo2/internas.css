@@ -481,7 +481,9 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .campanhas .container-busca {background: #FFF;border-bottom: 2px solid #fbc227;padding: 20px;}
 /* /busca */
 
-
+/* loader */
+.container-ajax-loader{overflow: hidden;margin: 0 auto;display: block;width: 20px;}
+/* loader */
 
 
 
