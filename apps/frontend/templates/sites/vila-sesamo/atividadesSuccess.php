@@ -143,13 +143,10 @@
         if (data != "") {
           //console.log(data);
           $('#container').isotope({
-            itemSelector : '.element',     // selector for all items you'll retrieve
-            // call Isotope as a callback
-            function(newElements) {
-              $container.isotope('appended',data);
-            }
+            itemSelector:'.element',     
+                    
           });
-          
+          $container.isotope('appended',data);
           contentPage++;
         }else{
           console.log("fim da listagem");
