@@ -114,7 +114,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 	        success: function(json) {
 	        	var conteudo = "";
 	              //conteudo = '<option value="' + dados.vaga.codigo + '" data-departamento="' + dados.vaga.departamento + '">' + dados.vaga.descricao + '</option>';
-		 					if(json.data != ""){
+		 					if(json.data != "" && json.data != null){
 		             conteudo =  ' <div class="accordion-group"> <div class="accordion-heading"> <a class="btn-cat accordion-toggle tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#processos_seletivos" title="Processos Abertos">';
 		             conteudo += ' <i class="icon-chevron-right"></i>PROCESSO SELETIVO</a><hr class="tipo"/></div><!--vagas relacionadas-->';
 		             conteudo += ' <div id="processos_seletivos" class="accordion-body collapse on" style="overflow: hidden; clear: both;">';
@@ -130,7 +130,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 		             conteudo += ' </div></div></div> <!-- /Vagas de emprego -->';
 		             
 		         	}else{
-		         		 conteudo  = ' <!-- Sem Vagas > <div class="accordion-group"> <span class="tipo-de-emprego" style="margin: 0 auto;width: 191px;display: block;"> Não há vagas no momento. </span> </div> <!-- /Sem Vagas -->';
+		         		 conteudo  = ' <!-- Sem Vagas --> <div class="accordion-group"> <span class="tipo-de-emprego" style="margin: 0 auto;width: 191px;display: block;"> Não há vagas no momento. </span> </div> <!-- /Sem Vagas -->';
 		         	}
 		         $('#verificando_vagas').hide();
         		 $('#accordion2').prepend(conteudo);
