@@ -107,11 +107,7 @@
           <?php if(isset($relatedMore)): ?>
             <?php if(count($relatedMore) > 0): ?>
               <span class="paginador">veja também:</span>
-              <a href="javascript:;" class="changePicture" title="<?php echo $p->getTitle() ?>">
-                <img class="picture" src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
-                <input id="baixar-hidden" type="hidden" value="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>">
-                <input id="press-hidden" type="hidden" value="<?php echo $related[0]->retriveImageUrlByImageUsage("original"); ?>">
-              </a>
+              
               <?php foreach($relatedMore as $k=>$p): ?>
                 <a href="javascript:;" class="changePicture" title="<?php echo $p->getTitle() ?>">
                   <img src="<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
