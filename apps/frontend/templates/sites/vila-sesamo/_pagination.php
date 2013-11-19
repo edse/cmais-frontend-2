@@ -30,10 +30,12 @@ echo count($pager). " >>>>>>>>>>>>>>"
           $('#page-nav #ajax-loader').show();
         },
       success: function(data){
-        contentPage++;
+        
         $('#page-nav #ajax-loader').hide();
         if (data != "") {
-          //console.log(contentPage);
+          contentPage++;
+          console.log(contentPage);
+          console.log(quantPage);
           var newEls = $(data).appendTo('#container');
           $("#container").isotope().isotope('appended',newEls);
           if(contentPage >= quantPage){
