@@ -1,16 +1,4 @@
   $(function(){
-    /*lista destaque small
-     $('.todos-itens li').each(function(i){
-       el = $(this);
-       if(i%3==0){
-         $(el).css('margin-left', '0px');
-         //$(el).css('clear', 'both');
-         //i = 0;
-       }else{
-         $(el).css('margin-left', '15px');
-         i++;
-       }
-     });*/
      
     var $container = $('#container');
     
@@ -29,7 +17,7 @@
       filter_selected = "";
       
       $(this).parent().parent().toggleClass("ativo");
-      
+
       $('.filtro-personagem li.ativo').each(function(i){
         
         
@@ -50,8 +38,7 @@
           $j++;
         }
       });
-      //console.log($select);
-      //console.log($j);
+
       if($i > 0){
         $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens</span>');
       }else{
@@ -71,37 +58,21 @@
       
       $container.isotope({ filter:filter_selected });
       
-      /*
-      if($i > 0){
-        $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens</span>');
-      }else{
-        $('#filtro-descricao').html('Todos os links dos personagens estão ativos');
-      }
-      */
       return false;
     });
     
-    
-    
-    //ancora para os filtros
-    
-    /*
-    $container.infinitescroll({
-      navSelector  : '#page_nav',    // selector for the paged navigation 
-      nextSelector : '#page_nav a',  // selector for the NEXT link (to page 2)
-      itemSelector : '.element',     // selector for all items you'll retrieve
-      loading: {
-          finishedMsg: 'No more pages to load.',
-          img: 'http://i.imgur.com/qkKy8.gif' 
-        }
-      },
-      // call Isotope as a callback
-      function( newElements ) {
-        $container.isotope('appended',$(newElements)).isotope({ filter:".element"}).isotope({ filter:filter_selected });
-      }
-    );
-    */
-    
+    /*lista destaque small
+     $('.todos-itens li').each(function(i){
+       el = $(this);
+       if(i%3==0){
+         $(el).css('margin-left', '0px');
+         //$(el).css('clear', 'both');
+         //i = 0;
+       }else{
+         $(el).css('margin-left', '15px');
+         i++;
+       }
+     });*/
     
   });
   
