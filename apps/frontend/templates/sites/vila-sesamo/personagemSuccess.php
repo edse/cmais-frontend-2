@@ -188,7 +188,7 @@
     <?php endif; ?>
       
     <!--paginacao-->
-    <?php include_partial_from_folder('sites/vila-sesamo', 'global/pagination', array('site' => $site, 'section' => $section,  'pager2'=>$pager2)) ?>
+    <?php include_partial_from_folder('sites/vila-sesamo', 'global/pagination', array('site' => $site, 'section' => $section,  'pager'=>$pager , 'pager2'=>$pager2)) ?>
     <!--/paginacao-->
       
       
