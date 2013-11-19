@@ -20,7 +20,7 @@ echo count($pager). " >>>>>>>>>>>>>>"
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <script>
   contentPage = 1;
-  quantPage = <?php echo intval($pager2) + 1?>;
+  quantPage = <?php echo intval($pager2) ?> + 1;
   $('.mais').click(function(){
     contentPage++;
   });
