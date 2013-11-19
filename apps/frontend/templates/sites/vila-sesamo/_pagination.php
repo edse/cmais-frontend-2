@@ -2,7 +2,14 @@
   <div class="container-ajax-loader">
     <img id="ajax-loader" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/ajax-loader.gif" alt="" style="display:none;">
   </div>
-  <a href="javascript:vilaSesamoGetContents();" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-br-grande"></i></a>
+  <?php
+  if($section == "cuidadores"):
+    $icone = "icone-carregar-ve-grande";
+  else:
+    $icone = "icone-carregar-br-grande";
+  endif;    
+  ?>
+  <a href="javascript:vilaSesamoGetContents();" class="mais">Carregar mais<i class="icones-sprite-interna <?php echo $icone ?>"></i></a>
 </nav>
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
