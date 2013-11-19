@@ -46,7 +46,7 @@
     <ul id="topo-fpa" class="nav-pills font-btn nav">
       <?php if($site->getSlug()=="fpa" && $section->getSlug()=="quem-somos"){$ativo="active";}else{$ativo="";} ?>
       <li class="<?php echo $ativo?>">
-        <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="link margin-0 <?php echo $ativo?>" title="Quem Somos">Quem Somos</a>
+        <a href="/fpa/quem-somos" class="link margin-0 <?php echo $ativo?>" title="Quem Somos">Quem Somos</a>
         <b class="seta-hover <?php echo $ativo?>"></b>
       </li>
 
@@ -58,7 +58,7 @@
         </a>
         <b class="seta-hover <?php echo $ativo?>"></b>
         <ul class="dropdown-menu ">
-         <!--<li><a href="#" title="Pesquisa Audiovisual" target="_blank">Pesquisa Audiovisual</a></li>-->
+         <li><a href="/cedoc" title="CEDOC">CEDOC</a></li>
          <li><a href="/fpa/decada-60" title="Linha do Tempo">Linha do Tempo</a></li>
         </ul>
       </li>
@@ -74,7 +74,7 @@
       </li>
       <?php if($section->getSlug()=="trabalhe-conosco" || $section->getSlug()=="realizar-cadastro"){$ativo="active";}else{$ativo="";} ?>
       <li class="<?php echo $ativo;?>">
-        <a href="http://www2.tvcultura.com.br/selecao/" class="link <?php echo $ativo;?>" title="Trabalhe Conosco">Trabalhe Conosco</a>
+        <a href="/fpa/trabalhe-conosco" class="link <?php echo $ativo;?>" title="Trabalhe Conosco">Trabalhe Conosco</a>
         <b class="seta-hover <?php echo $ativo;?>"></b>
       </li>
       
@@ -89,7 +89,7 @@
          <li><a href="http://univesptv.cmais.com.br/" title="Univesp TV" target="_blank">Univesp TV</a></li>
          <li><a href="http://multicultura.cmais.com.br/" title="multiCultura" target="_blank">multiCultura</a></li>
          <li><a href="http://tvratimbum.cmais.com.br/" title="TV Rá Tim Bum!" target="_blank">TV Rá Tim Bum!</a></li>
-         <li><a href="http://www.culturabrasil.com.br/" title="Cultura Brasil" target="_blank">Cultura Brasil</a></li>
+         <li><a href="http://culturabrasil.cmais.com.br/" title="Cultura Brasil" target="_blank">Cultura Brasil</a></li>
          <li><a href="http://culturafm.cmais.com.br/" title="Cultura Fm" target="_blank">Cultura Fm</a></li>
          <!-- <li><a href="http://tvratimbum.cmais.com.br/radio" title="Rádio Rá Tim Bum" target="_blank">Rádio Rá Tim Bum</a></li> -->
          <!-- <li><a href="http://www3.tvcultura.com.br/cocorico/radio" title="Rádio Cocoricó" target="_blank">Rádio Cocoricó</a></li> -->
@@ -103,8 +103,8 @@
         </a>
         <b class="seta-hover"></b>
         <ul class="dropdown-menu">
-         <li><a href="http://cmais.com.br/" title="CMAIS+" target="_blank">CMAIS+</a></li>
-         <li><a href="http://www.culturabrasil.com.br/" title="Cultura Brasil" target="_blank">Cultura Brasil</a></li>
+         <li><a href="http://cmais.com.br/" title="cmais+" target="_blank">cmais+</a></li>
+         <li><a href="http://culturabrasil.cmais.com.br/" title="Cultura Brasil" target="_blank">Cultura Brasil</a></li>
         </ul>
       </li>
       
@@ -136,7 +136,7 @@
             <ul>
               
               <li style="margin-top:15px">
-                <a href="http://www2.tvcultura.com.br/fpa/institucional/quemsomos.aspx" class="links" title="Quem somos">Quem somos</a>
+                <a href="/fpa/quem-somos" class="links" title="Quem somos">Quem somos</a>
               </li>
               
               <li>
@@ -157,7 +157,7 @@
               </li>
               
               <li>
-                <a href="http://www2.tvcultura.com.br/selecao/" class="links" title="Trabalhe Conosco">Trabalhe conosco</a>
+                <a href="/fpa/trabalhe-conosco" class="links" title="Trabalhe Conosco">Trabalhe conosco</a>
               </li>
               
               <li>
@@ -176,7 +176,7 @@
                     <a href="http://tvratimbum.cmais.com.br/" title="Quem somos">TV Rá Tim Bum!</a>
                   </li>
                   <li class="sub-links">
-                    <a href="http://www.culturabrasil.com.br/" title="Quem somos">Cultura Brasil</a>
+                    <a href="http://culturabrasil.cmais.com.br/" title="Quem somos">Cultura Brasil</a>
                   </li>
                   <li class="sub-links">
                     <a href="http://culturafm.cmais.com.br/" title="Quem somos">Cultura FM</a> 
@@ -188,10 +188,10 @@
                 <a href="#" class="links menu-sub-links">portais</a>
                 <ul>
                   <li class="sub-links">
-                    <a href="http://cmais.com.br/" title="TV Cultura">CMAIS+</a>
+                    <a href="http://cmais.com.br/" title="cmais+">cmais+</a>
                   </li>
                   <li class="sub-links">
-                    <a href="http://www.culturabrasil.com.br/" title="Quem somos">Cultura Brasil</a>
+                    <a href="http://culturabrasil.cmais.com.br/" title="Cultura Brasil">Cultura Brasil</a>
                   </li>
                 </ul>
               </li>
