@@ -429,23 +429,19 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </select>
             </div>
             
-            <div class="row_inline">
-            	
+            <div class="row_inline" id="periodo_trabalho_fpa" style="display: none">
 	            <div class="control-group span6" style="margin-left:0;">  
 	              <label>Período</label>
 	              <span class="help-block" style="float: left;margin:8px 6px 0 0;">De</span>
 	              <input name="qg_trabde" type="text" maxlength="10" id="qg_trabde" style="width:120px; float: left;">
 	              <span class="help-block" style="float: left;margin:8px 6px;">(00/00/0000)</span>
 	            </div>
-	            
-	            
 	            <div class="control-group span6" style="margin-left:0;">
 	            	<label>&nbsp;</label>  
 	              <span class="help-block" style="float: left;margin:8px 6px;">até</span>
 	              <input name="qg_trabate" type="text" maxlength="10" id="qg_trabate" style="width:120px; float: left;"> 
 	              <span class="help-block" style="float: left;margin:8px 6px;">(00/00/0000)</span>
 	            </div>	            
-	            
 	          </div>
 	          
 	          

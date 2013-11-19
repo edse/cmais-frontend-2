@@ -118,9 +118,17 @@ $(document).ready(function() {
 	        	$("#qg_trabate").val('');
 	        	$("#qg_trabde").val('');
 	        }        	
+	        
+					if($('select#DropDown_qg_trabal').val() == "N") {
+						$("#qg_trabde").val("");
+						$("#qg_trabate").val("");
+						$("#periodo_trabalho_fpa").hide();
+					}else{
+						$("#periodo_trabalho_fpa").show();
+					}	        
+	        
 					$("#qg_curric").val(json.data.curriculo.qg_curric);
 	      	$("#qg_memo2").val(json.data.curriculo.qg_memo2);
-				
 				
 					//CADASTRA O CURRICULO NA VAGA
 					var qg_curric = $("#qg_curric").val();
@@ -564,6 +572,17 @@ $(document).ready(function() {
 		Carrega_Cursos();
 	});
 	
+	$('select#DropDown_qg_trabal').change(function(){
+		if($(this).val() == "N") {
+			$("#qg_trabde").val("");
+			$("#qg_trabate").val("");
+			$("#periodo_trabalho_fpa").hide();
+		}else{
+			$("#periodo_trabalho_fpa").show();
+		}
+	});	
+	
+	
   /************* CANCELAR CADASTRO - DADOS PESSOAIS, HISTORICO, CURSOS *************/  
   $("#cancelar_dados_pessoais").click(function(){
     $("#row1").show();  
@@ -728,9 +747,11 @@ $(document).ready(function() {
         minlength: 50,
       },
       qg_trabde: {
+      	required: function(e) { if( $("#DropDown_qg_trabal").val() == "N"){ return false; }else{ return true;} },
         DateBr2: true //Valida somente se estiver preenchido
       }, 
-      qg_trabat: {
+      qg_trabate: {
+      	required: function(e) { if( $("#DropDown_qg_trabal").val() == "N"){ return false; }else{ return true;} },
       	DateBr2: true //Valida somente se estiver preenchido
       }
     },
