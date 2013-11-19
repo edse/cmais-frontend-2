@@ -15,7 +15,7 @@
                     $href = "javascript:;";
                   endif;
                   ?>
-                  <div class="inner personagem <?php echo $p->getSlug() ?>">
+                  <div class="inner <?php echo $p->getSlug() ?>">
                     <a href="<?php echo $href; ?>" title="<?php echo $p->getTitle() ?>" target="_self" class="btn-<?php echo $p->getSlug() ?> <?php if($section->getSlug() == $p->getSlug()) echo "active"?>" data-filter=".<?php echo $p->getSlug() ?>">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem.png" alt="filtro <?php echo $p->getTitle() ?>" />
                     </a>
@@ -27,17 +27,19 @@
         </ul>
       </nav>
       <!--/nav filtro personagem-->
-      <?php echo $section->Parent->getSlug()  ?>
-      <?php if($section->Parent->getSlug() == "personagens"): ?>
+      
+        <?php if($section->Parent->getSlug() == "personagens"): ?>
+          <script>
+            $('.inner').addClass('personagem');
+          </script>
+        <?php endif; ?>
+      
         <script>
-          $('.inner a').not('.inner a.active').click(function(){
+          $('.inner.personagem a').click(function(){
             var who = $(this).attr('href');
             window.location.assign(who)
-            
-          })
-        </script>  
-      <?php else:; ?>
-        <script>  
+          });
+
           $('.inner a[class|="btn"]').not('.inner a.active').click(function(){
             goTop();  
           });
@@ -62,5 +64,5 @@
             } 
           });
         </script>
-      <?php endif; ?>
+      
         
