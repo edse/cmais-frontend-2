@@ -103,8 +103,9 @@
         
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
         <style>
-        .paginas{float:left;}
+        .paginas{float:left;padding:5px;}
         .paginas img{width:100px;}
+        .paginas span{text-transform:uppercase; font-family:'din-blackregular',Arial, Helvetica, sans-serif;color:#571ed9;}
         </style>
         <div class="paginas">
           
