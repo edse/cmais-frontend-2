@@ -1251,7 +1251,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
                 $assetSection = $a;
                 break;
               }
-              $sectionP = $a->getSlug();
+              $sectionP = $assetSection ->getSlug();
             }
             
             $printPersonagens= " ";
