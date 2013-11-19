@@ -1,5 +1,4 @@
 
-<?php //if(intval($pager2) <= intval(count($pager)/9)):?>
 <nav id="page_nav">
   <div class="container-ajax-loader">
     <img id="ajax-loader" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/ajax-loader.gif" alt="" style="display:none;">
@@ -13,7 +12,7 @@
   ?>
   <a href="javascript:vilaSesamoGetContents();" class="mais">Carregar mais<i class="icones-sprite-interna <?php echo $icone ?>"></i></a>
 </nav>
-<?php //endif; ?>
+
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <script>
@@ -40,7 +39,7 @@
           var newEls = $(data).appendTo('#container');
           $("#container").isotope().isotope('appended',newEls);
           if(contentPage >= quantPage){
-            //$('#page_nav').hide();
+            $('#page_nav').hide();
           }
         }else{
           $('#page_nav').hide();
