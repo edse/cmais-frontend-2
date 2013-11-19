@@ -2,7 +2,7 @@
 echo intval($pager2) ."</br> >>>>>>>>>>>>>";
 echo count($pager)/9 . "</br> >>>>>>>>>>>>>>"
 ?>
-<?php if(intval($pager2) <= count($pager)/9):?>
+<?php if(intval($pager2) < count($pager)/9):?>
 <nav id="page_nav">
   <div class="container-ajax-loader">
     <img id="ajax-loader" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/ajax-loader.gif" alt="" style="display:none;">
