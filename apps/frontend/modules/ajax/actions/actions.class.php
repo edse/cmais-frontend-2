@@ -1222,7 +1222,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             
             $return =  '<li class="span4 element '. $printCategorias .'">';
           
-          elseif($section == "jogos" || $section == "videos" || $section == "atividades"):  
+          elseif($section == "jogos" || $section == "videos" || $sectionId == 2389):  
             
             $assetPersonagens = array();
             $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
