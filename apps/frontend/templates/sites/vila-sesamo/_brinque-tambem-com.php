@@ -271,6 +271,9 @@
   <?php endif; ?>
   
 <script>
+$('#carrossel-interna ul li a').click(function(){
+  window.location.assign($(this).attr('href'));
+})
 //carrossel interna
 $('#carrossel-i').responsiveCarousel({
   arrowLeft: '.arrow-left .icone-car-set-br-esquerda',

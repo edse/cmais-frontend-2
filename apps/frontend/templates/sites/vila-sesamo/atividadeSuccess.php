@@ -123,19 +123,7 @@
             <?php endif ?>
           <?php endif ?>  
         </div> 
-        <script>
-          $('.changePicture').click(function(){
-            var picture = $(this).find('img').attr('src');
-            var desc = $(this).find('img').attr('alt');
-            var download = $(this).find('#baixar-hidden').attr('value');
-            var press = $(this).find('#press-hidden').attr('value');
-            //console.log(picture +" / "+ desc +" / "+ download +" / "+ press)
-            $('.picture').attr('src', picture).attr('alt', desc);
-            $('.option-assets.download').attr('href', download);
-            $('.option-assets.print').attr('datasrc', press);
-            $('#div0 img').attr('src', press);
-          });
-        </script> 
+         
         <div>
           <a class="option-assets download" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">
             <i class="icones-sprite-interna icone-baixar-roxo"></i>
@@ -172,3 +160,17 @@
 
 </div>
 <!--/content-->
+
+<script>
+$('.changePicture').click(function(){
+  var picture = $(this).find('img').attr('src');
+  var desc = $(this).find('img').attr('alt');
+  var download = $(this).find('#baixar-hidden').attr('value');
+  var press = $(this).find('#press-hidden').attr('value');
+  
+  $('.picture').attr('src', picture).attr('alt', desc);
+  $('.option-assets.download').attr('href', download);
+  $('.option-assets.print').attr('datasrc', press);
+  $('#div0 img').attr('src', press);
+});
+</script>
