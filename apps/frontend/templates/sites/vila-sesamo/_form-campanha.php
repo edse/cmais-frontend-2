@@ -195,89 +195,89 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
-    
-    $('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
-    
-    $('#estado').dropkick({
-      change: function (value, label) {
-           if(value == ""){
-             $('.dk_toggle').addClass('error');
-           }else{
-             $('.dk_toggle').removeClass('error'); 
-           }
-        }
-    });
-    
-	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
-	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});
-	  $('#idade').focus(function(){ 	if($(this).val() == "Idade") {  $(this).val(''); }; });
-	  $('#idade').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Idade'); 	 };	});	  
-	  $('#cidade').focus(function(){ 	if($(this).val() == "Cidade") {  $(this).val(''); }; });
-	  $('#cidade').focusout(function(){ if($(this).val() == ''){ $(this).val('Cidade');   }; });
-	  $('#email').focus(function(){ 	if($(this).val() == "Email") {  $(this).val(''); }; });
-	  $('#email').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Email'); 	 };	});
-	  $('#mensagem').focus(function(){ 	if($(this).val() == "Mensagem") {  $(this).val(''); };	});
-	  $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Mensagem'); };	});
-  	
-    var validator = $('#form-contato').validate({
+    if($('#form-contato').is(':visible')){
+      $('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
       
-      submitHandler: function(form){
-        //resgatando a página que a pessoa
-        url = window.location;
-        $('#urlElement').attr('value',url.href);
-      	form.submit();
-      },
-      rules:{
-        nome:{
-          required: function(){ validate("#nome"); return true},
-          minlength: 2
-        },
-        idade:{
-          required: function(){ validate("#idade"); return true},
-          number: true
-        },
-        email:{
-          required: true,
-          email: true
-        },
-        cidade:{
-          required: function(){ validate("#cidade"); return true},
-          minlength: 3
-        },
-        estado:{
-          required: true
-        },
-        mensagem:{
-          required: function(){ validate("#mensagem"); return true},
-          minlength: 3
-        },
-
-        concordo:{
-          required: true
-        }
+      $('#estado').dropkick({
+        change: function (value, label) {
+             if(value == ""){
+               $('.dk_toggle').addClass('error');
+             }else{
+               $('.dk_toggle').removeClass('error'); 
+             }
+          }
+      });
+      
+  	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
+  	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});
+  	  $('#idade').focus(function(){ 	if($(this).val() == "Idade") {  $(this).val(''); }; });
+  	  $('#idade').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Idade'); 	 };	});	  
+  	  $('#cidade').focus(function(){ 	if($(this).val() == "Cidade") {  $(this).val(''); }; });
+  	  $('#cidade').focusout(function(){ if($(this).val() == ''){ $(this).val('Cidade');   }; });
+  	  $('#email').focus(function(){ 	if($(this).val() == "Email") {  $(this).val(''); }; });
+  	  $('#email').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Email'); 	 };	});
+  	  $('#mensagem').focus(function(){ 	if($(this).val() == "Mensagem") {  $(this).val(''); };	});
+  	  $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Mensagem'); };	});
+    	
+      var validator = $('#form-contato').validate({
         
-      },
-      onkeyup:function(e){
-        verifyKey();
-      },
-      messages:{
-        nome:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-        idade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-        email:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-        cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-        estado:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-        mensagem:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-        concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
-      }, 
+        submitHandler: function(form){
+          //resgatando a página que a pessoa
+          url = window.location;
+          $('#urlElement').attr('value',url.href);
+        	form.submit();
+        },
+        rules:{
+          nome:{
+            required: function(){ validate("#nome"); return true},
+            minlength: 2
+          },
+          idade:{
+            required: function(){ validate("#idade"); return true},
+            number: true
+          },
+          email:{
+            required: true,
+            email: true
+          },
+          cidade:{
+            required: function(){ validate("#cidade"); return true},
+            minlength: 3
+          },
+          estado:{
+            required: true
+          },
+          mensagem:{
+            required: function(){ validate("#mensagem"); return true},
+            minlength: 3
+          },
+  
+          concordo:{
+            required: true
+          }
+          
+        },
+        onkeyup:function(e){
+          verifyKey();
+        },
+        messages:{
+          nome:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+          idade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+          email:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+          cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+          estado:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+          mensagem:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+          concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
+        }, 
+        
+        success: function(label){
+        }
+      });
       
-      success: function(label){
-      }
-    });
-    
-    $('#enviar').click(function(){
-      verifyKey();
-    });
-    
+      $('#enviar').click(function(){
+        verifyKey();
+      });
+    }
   });
   var SITE = SITE || {};
 
