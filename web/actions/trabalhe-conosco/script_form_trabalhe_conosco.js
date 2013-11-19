@@ -64,8 +64,8 @@ $(document).ready(function() {
 			
 			      var conteudo = '<div class="accordion-group"><div class="accordion-heading">';
 			      conteudo = conteudo+'<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_cursos" href="#collapse-curso'+cont+'">';
-			      conteudo = conteudo+'<font color=red>'+qm_entidad+'</font></a>  </div> <div id="collapse-curso'+cont+'" class="accordion-body collapse">';
-			      conteudo = conteudo+'<div class="accordion-inner" style="overflow: hidden;clear: both;"><p>Data de Formação: '+qm_data+'</p>';
+			      conteudo = conteudo+'<font color=red>'+qm_entidad+'</font></a>  </div> <div id="collapse-curso'+cont+'" class="accordion-body collapse" style="overflow: hidden;clear: both;">';
+			      conteudo = conteudo+'<div class="accordion-inner"><p>Data de Formação: '+qm_data+'</p>';
 			      conteudo = conteudo+'<a class="seleciona-curso" href="#'+cont+'" >Editar</a>';
 			      conteudo = conteudo+'<input type="hidden" value="'+qm_codigo+'" id="qm_codigo'+cont+'"></div></div></div>';
 			      $('#accordion_cursos').append(conteudo);
