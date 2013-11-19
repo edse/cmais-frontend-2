@@ -17,7 +17,7 @@
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <script>
   contentPage = 1;
-  quantPage = <?php echo intval($pager2)?>
+  quantPage = <?php echo intval($pager2)?>;
   function vilaSesamoGetContents() {
     $.ajax({
       url: "<?php echo url_for("@homepage") ?>ajax/vilasesamogetcontents",
