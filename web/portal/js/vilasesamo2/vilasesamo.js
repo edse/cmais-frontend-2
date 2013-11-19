@@ -101,21 +101,11 @@ $(document).ready(function() {
   
   //aba para os pais
   $('.icone-cuidadores-abrir').click(function() {
-    $('.box-pais .content').stop().slideToggle('slow');
-    $(".icone-cuidadores-abrir").toggleClass("inativo");
-    $(".icone-cuidadores-fechar").toggleClass("ativo");
-    $('.linha').show();
-    $('.redes').fadeIn();
+    
   });
   
-  $('.icone-cuidadores-fechar').click(function() {
-    $('.box-pais .content').stop().slideToggle('fast');
-    $(".icone-cuidadores-abrir").toggleClass("inativo");
-    $('.linha, .box-pais .redes').hide();
-    if($('.icone-cat-abrir').hasClass('icone-cat-fechar')){
-      $('.icone-cat-abrir').toggleClass('icone-cat-fechar');  
-    }
-    
+  $('.fechar-toggle').click(function() {
+    alert('clix')      
   });
   
   $('.icone-cat-abrir').click(function(){
