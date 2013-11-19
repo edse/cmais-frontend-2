@@ -13,6 +13,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <!--descricao vagas-->
       
       <div class="accordion trabalhe-conosco" id="accordion2">
+      	<div id="verificando_vagas"><p align="center">Carregando Vagas...</p></div>
       <?php
       if(count($section->subsections()) > 0):
         
@@ -131,8 +132,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 		         	}else{
 		         		 conteudo  = ' <!-- Sem Vagas > <div class="accordion-group"> <span class="tipo-de-emprego" style="margin: 0 auto;width: 191px;display: block;"> Não há vagas no momento. </span> </div> <!-- /Sem Vagas -->';
 		         	}
+		         $('#verificando_vagas').hide();
         		 $('#accordion2').prepend(conteudo);
-        		 //alert(conteudo);
 	       	}
 	   		});
 	   		
