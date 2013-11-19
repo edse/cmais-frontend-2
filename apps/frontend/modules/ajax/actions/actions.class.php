@@ -1207,7 +1207,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
         foreach($assets as $d){
           
-          if($section == "cuidadores"):
+          if($sectionId == "cuidadores"):
             
             $assetCategorias = array();
             $categoriasSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'categorias');
@@ -1223,7 +1223,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             
             $return =  '<li class="span4 element '. $printCategorias .'">';
           
-          elseif($section == "jogos" || $section == "videos" || $sectionId == "atividades"):  
+          elseif($sectionId == "jogos" || $sectionId == "videos" || $sectionId == "atividades"):  
             
             $assetPersonagens = array();
             $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
