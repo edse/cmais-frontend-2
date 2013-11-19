@@ -632,16 +632,20 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     <!--DIREITA-->
     <div class="col-direita span5">
       <!--CONFIRA-->  
-      <a href="/fpa/resultados" class="trabalhe btn btn-primary" title="Confira aqui nossas vagas e prazos.">
+      <a href="/fpa/trabalhe-conosco" class="trabalhe btn btn-primary" title="Confira aqui nossas vagas e prazos.">
         <p>Processos seletivos anteriores</p>
         <p>Confira os Resultados</p>
       </a>
       <!--/CONFIRA-->
-      <!--CONFIRA-->  
-      <a href="http://www2.tvcultura.com.br/selecao/vagas/FPAREPRSE001.pdf" class="trabalhe btn btn-primary" target="_blank" title="Confira aqui nossas vagas e prazos.">
-        <p>Regulamento Interno de Processo Seletivo</p>
-        <p>Leia antes da Inscrição</p>
-      </a>
+      <!--CONFIRA-->
+       <?php  if(isset($displays['destaque-regulamento-interno'])): ?>
+       	<?php foreach ($displays['destaque-regulamento-interno'] as $d):?>
+      	<a href="http://midia.cmais.com.br/assets/file/original/<?php echo $d->Asset->AssetFile->getFile();?>" class="trabalhe btn btn-primary" target="_blank" title="Confira aqui nossas vagas e prazos.">
+	        <p>Regulamento Interno de Processo Seletivo</p>
+	        <p>Leia antes da Inscrição</p>
+	      </a>
+	      <?php endforeach; ?>
+	      <?php endif; ?>
       <!--/CONFIRA-->
     </div>
     <!-- /DIREITA-->
