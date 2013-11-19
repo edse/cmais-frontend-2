@@ -126,5 +126,4 @@
 
 <!--scripts-->
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
-<?php /*<script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script> */ ?>
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
