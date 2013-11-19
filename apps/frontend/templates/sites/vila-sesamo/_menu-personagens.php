@@ -10,7 +10,7 @@
                 <li>
                   <?php
                   if($section->Parent->getSlug() == "personagens"):
-                    $href = $site->retriveUrl() ?>."/".<?php echo $section->Parent->getSlug()."/".$p->getSlug();
+                    $href = $site->retriveUrl() ?>."/".<?php echo $section->Parent->getSlug()."/".$p->getSlug(); 
                   else:  
                     $href = "javascript:;";
                   endif;
