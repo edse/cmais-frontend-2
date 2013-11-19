@@ -3,9 +3,9 @@
 	include_once("wsTrabalheConosco.class.php");
 
 	if(isset($_GET['callback']) && !empty($_GET['qg_curric']) && !empty($_GET['qm_entidad']) && !empty($_GET['qm_data']) && !empty($_GET['qm_curso']) && !empty($_GET['qm_tcurso']) && !empty($_GET['qm_escolar'])){
-		if(@$_GET['qm_dscout'] == "" ){
-			$qm_dscout = " ";
-		}				
+			
+		$qm_dscout = " ";
+		if(@$_GET['qm_dscout'] != "" ) $qm_dscout = $_GET['qm_dscout'];
 				
 		$service = "insere_curso";
 		$arguments = array('insere_curso' 
