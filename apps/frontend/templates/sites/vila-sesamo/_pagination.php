@@ -1,5 +1,6 @@
 <?php
-echo intval($pager2)
+echo intval($pager2) ."</br>";
+echo count($pager). "</br>"
 ?>
 <?php if(intval($pager2) <= count($pager)):?>
 <nav id="page_nav">
