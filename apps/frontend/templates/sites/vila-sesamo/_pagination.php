@@ -5,8 +5,7 @@
     <img id="ajax-loader" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/ajax-loader.gif" alt="" style="display:none;">
   </div>
   <?php
-  echo $section.">>>>>>";
-  if($section == "cuidadores"):
+  if($section->getSlug() == "cuidadores"):
     $icone = "icone-carregar-ve-grande";
   else:
     $icone = "icone-carregar-br-grande";
