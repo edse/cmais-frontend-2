@@ -1207,7 +1207,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
         foreach($assets as $d){
           
-          if($sectionId == "cuidadores"):
+          if($section == "cuidadores"):
             
             $assetCategorias = array();
             $categoriasSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'categorias');
