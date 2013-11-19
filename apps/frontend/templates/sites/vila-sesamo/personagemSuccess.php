@@ -142,6 +142,8 @@
     <section class="todos-itens">
       <!--lista-->
       <ul role="contentinfo" id="container" class="row-fluid">
+        <?php
+        /*
         <?php foreach($pager->getResults() as $k=>$d): ?>
           <?php
             $assetPersonagens = array();
@@ -175,7 +177,8 @@
               </a>
             </li>
         <?php endforeach; ?>
-      
+        */
+       ?>
       </ul> 
       <!--lista-->  
     </section>
@@ -183,16 +186,9 @@
       <?php endif; ?>
     <?php endif; ?>
       
-      <!--pagina-->
-      <div class="pagina">  
-        <span class="divisa carregar"></span>
-        
-        <input type="hidden" id="filter-choice" value="">
-        <nav id="page_nav">
-          <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-br-grande"></i></a>
-        </nav>
-      </div>
-      <!--pagina-->
+    <!--paginacao-->
+    <?php include_partial_from_folder('sites/vila-sesamo', 'global/pagination', array('site' => $site, 'section' => $section)) ?>
+    <!--/paginacao-->
       
       
   
