@@ -75,8 +75,8 @@
 <?php if(isset($pager)): ?>
   <?php if(count($pager) > 0): ?>
   <?php
-  $pager = $pager/9; 
-   echo count($pager) . ">>>>>>>>>"
+  $pager = intval($pager)/9; 
+   echo $pager . ">>>>>>>>>"
   ?>  
 <span class="divisa"></span>
 
