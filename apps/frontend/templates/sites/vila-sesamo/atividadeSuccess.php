@@ -107,8 +107,13 @@
           <?php if(isset($relatedMore)): ?>
             <?php if(count($relatedMore) > 0): ?>
               <span class="paginador">veja também:</span>
+              <a href="javascript:;" class="changePicture" title="página 1">
+                <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
+                <input id="baixar-hidden" type="hidden" value="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>">
+                <input id="press-hidden" type="hidden" value="<?php echo $related[0]->retriveImageUrlByImageUsage("original"); ?>">
+              </a>
               <?php foreach($relatedMore as $k=>$p): ?>
-                <a href="javascript:;" class="changePicture" title="<?php echo $p->getTitle() ?>">
+                <a href="javascript:;" class="changePicture" title="página <?php echo $k+2 ?>">
                   <img src="<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
                   <input id="baixar-hidden" type="hidden" value="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("original") ?>">
                   <input id="press-hidden" type="hidden" value="<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("original"); ?>">
@@ -124,11 +129,15 @@
             var desc = $(this).find('img').attr('alt');
             var download = $(this).find('#baixar-hidden').attr('value');
             var press = $(this).find('#press-hidden').attr('value');
-            console.log(picture +" / "+ desc +" / "+ download +" / "+ press)
+            //console.log(picture +" / "+ desc +" / "+ download +" / "+ press)
+            $('.picture').attr('src', picture).attr('alt', desc);
+            $('.option-assets.download').attr('href', download);
+            $('.option-assets.print').attr('datasrc', press);
+            $('#div0 img').attr('src', press);
           });
         </script> 
         <div>
-          <a class="option-assets" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">
+          <a class="option-assets download" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">
             <i class="icones-sprite-interna icone-baixar-roxo"></i>
             <span>Baixar</span>
           </a>
