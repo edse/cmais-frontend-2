@@ -1257,12 +1257,12 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             if(count($assetPersonagens) > 0)
             $printPersonagens .= " " . implode(" ", $assetPersonagens);
             
-            $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->Asset->getSlug() .'">';  
+            $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';  
           endif; 
           
           $return .=   '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
           
-          if($section == "videos" || $assetSection->Asset->getSlug() == "videos"):
+          if($section == "videos" || (isset($printPersonagens) &&  $assetSection->getSlug() == "videos")):
             $return .=  '<div class="yt-menu">';
             $return .=    '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$d->AssetVideo->getHeadline().'" />';
             $return .=  '</div>';
