@@ -95,7 +95,7 @@ $(document).ready(function() {
 		    $("#fpa_cpf_cadastro").val(cpf);
 		    $("#fpa_data_nascimento").val(data);     
 	      if(json.data == 999){
-					alert("Novo Cadastro");
+					//alert("Novo Cadastro");
 	      }else{
 	      	$.each(json.data.curriculo, function(index, dados) {
 	          if($("#"+index).attr("type") == "text"){
