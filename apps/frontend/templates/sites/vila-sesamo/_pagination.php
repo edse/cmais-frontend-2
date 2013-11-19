@@ -40,7 +40,7 @@
           var newEls = $(data).appendTo('#container');
           $("#container").isotope().isotope('appended',newEls);
           if(contentPage >= quantPage){
-            $('#page_nav').hide();
+            //$('#page_nav').hide();
           }
         }else{
           $('#page_nav').hide();
