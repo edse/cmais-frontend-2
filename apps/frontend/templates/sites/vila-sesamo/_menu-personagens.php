@@ -8,8 +8,15 @@
             <?php if(count($personagens) > 0 ): ?>
               <?php foreach($personagens as $p): ?>
                 <li>
+                  <?php
+                  if($section == "personagens"):
+                    $href = $site->retriveUrl() ?>/<?php echo $section->Parent->getSlug() ?>/<?php echo $p->getSlug();
+                  else:  
+                    $href = "javascript:;";
+                  endif;
+                  ?>
                   <div class="inner personagem <?php echo $p->getSlug() ?>">
-                    <a href="<?php echo $site->retriveUrl() ?>/<?php echo $section->Parent->getSlug() ?>/<?php echo $p->getSlug(); ?>" title="<?php echo $p->getTitle() ?>" target="_self" class="btn-<?php echo $p->getSlug() ?> <?php if($section->getSlug() == $p->getSlug()) echo "active"?>" data-filter=".<?php echo $p->getSlug() ?>">
+                    <a href="<?php echo $href; ?>" title="<?php echo $p->getTitle() ?>" target="_self" class="btn-<?php echo $p->getSlug() ?> <?php if($section->getSlug() == $p->getSlug()) echo "active"?>" data-filter=".<?php echo $p->getSlug() ?>">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem.png" alt="filtro <?php echo $p->getTitle() ?>" />
                     </a>
                   </div>
