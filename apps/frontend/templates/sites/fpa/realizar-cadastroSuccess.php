@@ -32,7 +32,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               <label class="control-label" for="fpa_data">Data de nascimento</label>
               <div class="controls">
                 <input type="text" id="fpa_data" name="fpa_data" value="" maxlength="10">
-                <p class="help-block">dd/mm/aaaa</p>
+                <p class="help-block">(DD/MM/AAAA)</p>
               </div>
             </div>
             <div class="row-fluid">
@@ -267,7 +267,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             <div class="control-group span12" style="margin-left:0;">  
               <label>Ano Chegada, se Estrangeiro</label>
               <input name="qg_anocheg" type="text" maxlength="4" id="qg_anocheg" style="width:50px;position: static; float: left;margin-right:10px;">  
-              <span class="help-block" style="margin: 11px">(AAAA)</span>
+              <span class="help-block" style="margin: 11px">(DD/MM/AAAA)</span>
             </div>
             <div class="control-group span12" style="margin-left:0;">  
               <label>Nome do Pai</label>  
@@ -434,13 +434,13 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 	              <label>Período</label>
 	              <span class="help-block" style="float: left;margin:8px 6px 0 0;">De</span>
 	              <input name="qg_trabde" type="text" maxlength="10" id="qg_trabde" style="width:120px; float: left;">
-	              <span class="help-block" style="float: left;margin:8px 6px;">(00/00/0000)</span>
+	              <span class="help-block" style="float: left;margin:8px 6px;">(DD/MM/AAAA)</span>
 	            </div>
 	            <div class="control-group span6" style="margin-left:0;">
 	            	<label>&nbsp;</label>  
 	              <span class="help-block" style="float: left;margin:8px 6px;">até</span>
 	              <input name="qg_trabate" type="text" maxlength="10" id="qg_trabate" style="width:120px; float: left;"> 
-	              <span class="help-block" style="float: left;margin:8px 6px;">(00/00/0000)</span>
+	              <span class="help-block" style="float: left;margin:8px 6px;">(DD/MM/AAAA)</span>
 	            </div>	            
 	          </div>
 	          
