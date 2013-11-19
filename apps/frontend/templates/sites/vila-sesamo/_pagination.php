@@ -22,6 +22,9 @@ echo intval(count($pager)/9) . "</br> >>>>>>>>>>>>>>"
 <script>
   contentPage = 0;
   quantPage = <?php echo intval($pager2)?>;
+  $('.mais').click(function(){
+    contentPage++;
+  });
   function vilaSesamoGetContents() {
     $.ajax({
       url: "<?php echo url_for("@homepage") ?>ajax/vilasesamogetcontents",
@@ -33,10 +36,9 @@ echo intval(count($pager)/9) . "</br> >>>>>>>>>>>>>>"
       success: function(data){
         $('#page-nav #ajax-loader').hide();
         if (data != "") {
-          //console.log(data);
+          console.log(contentPage);
           var newEls = $(data).appendTo('#container');
           $("#container").isotope().isotope('appended',newEls);
-          contentPage++;
           if(contentPage++ >= quantPage){
             $('#page_nav').hide();
           }
