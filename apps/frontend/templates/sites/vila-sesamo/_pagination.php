@@ -20,10 +20,11 @@ echo intval(count($pager)/9) . "</br> >>>>>>>>>>>>>>"
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <script>
-  contentPage = 0;
+  actualPage = 0;
+  contentPage = 1;
   quantPage = <?php echo intval($pager2)?>;
   $('.mais').click(function(){
-    contentPage+1;
+    actualPage+1;
   });
   function vilaSesamoGetContents() {
     $.ajax({
@@ -34,6 +35,7 @@ echo intval(count($pager)/9) . "</br> >>>>>>>>>>>>>>"
           $('#page-nav #ajax-loader').show();
         },
       success: function(data){
+        contentPage+1;
         $('#page-nav #ajax-loader').hide();
         if (data != "") {
           console.log(contentPage);
