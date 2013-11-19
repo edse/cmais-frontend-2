@@ -271,7 +271,7 @@
   <?php endif; ?>
   
 <script>
-console.log($('#carrossel-interna .slider-target').width());
+console.log($('#carrossel-interna .slider-target').width);
 
 $('#carrossel-interna ul li a').click(function(){
   window.location.assign($(this).attr('href'));
