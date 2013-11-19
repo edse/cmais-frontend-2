@@ -1221,7 +1221,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $printCategorias .= " " . implode(" ", $assetCategorias);
             
             $return =  '<li class="span4 element '. $printCategorias .'">';
-          elseif($section->Parent->getSlug == "personagens"):  
+          elseif($section->Parent->getSlug() == "personagens"):  
             
             $assetPersonagens = array();
             $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
