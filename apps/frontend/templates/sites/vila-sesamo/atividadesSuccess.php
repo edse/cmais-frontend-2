@@ -74,10 +74,7 @@
 
 <?php if(isset($pager)): ?>
   <?php if(count($pager) > 0): ?>
-  <?php
-   $pager2 = $pager;
-   echo $pager2 . ">>>>>>>>>"
-  ?>  
+  
 <span class="divisa"></span>
 
 <!--/section-->
