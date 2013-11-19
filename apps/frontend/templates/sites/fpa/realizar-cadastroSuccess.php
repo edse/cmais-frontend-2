@@ -429,7 +429,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
               </select>
             </div>
             
-            <div class="row_inline" id="periodo_trabalho_fpa" style="display: none">
+            <div class="row_inline" id="periodo_trabalho_fpa" style="display: none"> 
 	            <div class="control-group span6" style="margin-left:0;">  
 	              <label>Período</label>
 	              <span class="help-block" style="float: left;margin:8px 6px 0 0;">De</span>
