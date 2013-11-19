@@ -10,7 +10,7 @@
     var filter_selected;
     
     //filtro personagens para atividades, jogos e videos
-    $('.filtro-personagem a').click(function(){
+    $('.filtro-personagem a').not('.inner.personagem a').click(function(){
       var $i=0;
       var $j=0
       var $select = '';
