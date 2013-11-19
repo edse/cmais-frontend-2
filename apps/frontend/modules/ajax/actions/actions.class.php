@@ -1258,7 +1258,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $printPersonagens .= " " . implode(" ", $assetPersonagens);
             
             $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';  
-            endif; 
+          endif; 
           
           $return .=   '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
           
