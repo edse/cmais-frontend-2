@@ -19,11 +19,10 @@ echo count($pager). " >>>>>>>>>>>>>>"
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <script>
-  actualPage = 0;
   contentPage = 1;
   quantPage = <?php echo intval($pager2)?>;
   $('.mais').click(function(){
-    actualPage+1;
+    contentPage+1;
   });
   function vilaSesamoGetContents() {
     $.ajax({
@@ -34,13 +33,12 @@ echo count($pager). " >>>>>>>>>>>>>>"
           $('#page-nav #ajax-loader').show();
         },
       success: function(data){
-        contentPage+1;
         $('#page-nav #ajax-loader').hide();
         if (data != "") {
           console.log(contentPage);
           var newEls = $(data).appendTo('#container');
           $("#container").isotope().isotope('appended',newEls);
-          if(actualPage++ >= quantPage){
+          if(contentPage >= quantPage){
             $('#page_nav').hide();
           }
         }else{
