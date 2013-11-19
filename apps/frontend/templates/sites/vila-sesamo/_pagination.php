@@ -31,6 +31,7 @@
           $("#container").isotope().isotope('appended',newEls);
           contentPage++;
         }else{
+          $('#page_nav').hide();
           //$('#page_nav').html('<span class="mais">fim da listagem.</span>')
           //console.log("fim da listagem");
         }
