@@ -30,7 +30,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     <div class="col-direita span4">
       
       <!--CONFIRA VAGAS-->  
-      <a href="http://www2.tvcultura.com.br/selecao/" class="inscricao btn btn-primary" title="Confira aqui nossas vagas e prazos.">
+      <a href="/fpa/trabalhe-conosco" class="inscricao btn btn-primary" title="Confira aqui nossas vagas e prazos.">
         <p>INSCREVA-SE</p>
         <hr>
         <p>Participe do Processo Seletivo</p>
