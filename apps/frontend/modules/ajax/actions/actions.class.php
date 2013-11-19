@@ -1222,7 +1222,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             
             $return =  '<li class="span4 element '. $printCategorias .'">';
           
-          else:  
+          elseif($section == "jogos" || $section == "videos" || $section == "atividades"):  
             
             $assetPersonagens = array();
             $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
@@ -1238,7 +1238,25 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
             
             $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
+          else:
+            $assetPersonagens = array();
+            $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
+            $assetSections = $d->getSections();
+            foreach($assetSections as $a) {
+              if($a->getParentSectionId() == $personagensSection->getId()) {
+                $assetPersonagens[] = $a->getSlug();
+              }
+              if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
+                $assetSection = $a;
+                break;
+              }
+            }
             
+            $printPersonagens= " ";
+            if(count($assetPersonagens) > 0)
+            $printPersonagens .= " " . implode(" ", $assetPersonagens);
+            
+            $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';  
           endif; 
           
           $return .=   '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
