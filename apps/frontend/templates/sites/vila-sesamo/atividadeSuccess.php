@@ -99,7 +99,7 @@
       <?php if(isset($asset)): ?>
       <div class="asset">
         <?php $related = $asset->retriveRelatedAssetsByRelationType("Preview"); ?>
-        <?php $relatedMore = $asset->retriveRelatedAssetsByRelationType("Asset Relacionado"); ?>
+        <?php $relatedMore = $asset->retriveRelatedAssetsByRelationType("Download"); ?>
         
         <img class="picture" src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
         <div class="paginas">
