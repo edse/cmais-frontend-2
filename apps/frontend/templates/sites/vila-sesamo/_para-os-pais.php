@@ -96,10 +96,10 @@ else { // senão traz pela semelhança de tags com o asset em questão
     
     <span class="divisa"></span>
     
-    <h2 class="tit-box"><?php echo $forParents->getTitle() ?> <i class="icones-setas icone-cuidadores-abrir"></i></h2>
+    <h2 class="tit-box"><?php echo $forParents->getTitle() ?> <i class="icones-setas icone-cuidadores-abrir ativo inativo"></i></h2>
     
     <!--content-->
-    <div class="content span12 row-fluid">
+    <div class="content span12 row-fluid" style="display:none;">
       
       <!--redes-->
       <div class="redes">
