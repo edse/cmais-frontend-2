@@ -101,11 +101,7 @@
         <?php $related = $asset->retriveRelatedAssetsByRelationType("Preview"); ?>
         <?php $relatedMore = $asset->retriveRelatedAssetsByRelationType("Asset Relacionado"); ?>
         
-        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
-        <style>
-        .paginas{float:left;}
-        .paginas img{width:100px;}
-        </style>
+        <img class="picture" src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
         <div class="paginas">
           
           <?php if(isset($relatedMore)): ?>
@@ -113,13 +109,24 @@
               <span class="paginador">veja também:</span>
               <?php foreach($relatedMore as $k=>$p): ?>
                 <a href="javascript:;" class="changePicture" title="<?php echo $p->getTitle() ?>">
-                  <img src="<?php echo $relatedMore[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="teste" />
+                  <img src="<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
+                  <input id="baixar-hidden" type="hidden" value="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("original") ?>">
+                  <input id="press-hidden" type="hidden" value="<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("original"); ?>">
                 </a>
               <?php endforeach; ?>
                 
             <?php endif ?>
           <?php endif ?>  
-        </div>  
+        </div> 
+        <script>
+          $('.changePicture').click(function(){
+            var picture = $(this).find('img').attr('src');
+            var desc = $(this).find('img').attr('alt');
+            var download = $(this).find('#baixar-hidden').attr('value');
+            var press = $(this).find('#press-hidden').attr('value');
+            console.log(picture +" / "+ desc +" / "+ download +" / "+ press)
+          });
+        </script> 
         <div>
           <a class="option-assets" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">
             <i class="icones-sprite-interna icone-baixar-roxo"></i>

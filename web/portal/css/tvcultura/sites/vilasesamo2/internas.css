@@ -105,6 +105,9 @@ body.campanhas{background-color:#fee133!important;}
 .todos-itens li h2,
 .destaque-filtro article h1 { margin:0; line-height: 32px; }
 .destaque-filtro article a p{font-family: 'dinmedium';font-size: 18px;text-transform: uppercase; margin:0; line-height:34px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.interna .paginas{float:left;padding:5px;}
+.interna .paginas img{width:100px;}
+.interna .paginas span{text-transform:uppercase;text-align:left; font-family:'din-blackregular',Arial, Helvetica, sans-serif;color:#571ed9;}
 .interna.atividades .destaque-filtro article a p{color: #883feb;}
 .interna.jogos .destaque-filtro article a p{color: #02cbff;}
 .interna.videos .destaque-filtro article a p{color: #f36701;}
