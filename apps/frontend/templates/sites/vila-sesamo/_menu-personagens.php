@@ -9,7 +9,7 @@
               <?php foreach($personagens as $p): ?>
                 <li>
                   <?php
-                  if($section == "personagens"):
+                  if($section->Parent->getSlug() == "personagens"):
                     $href = $site->retriveUrl() ?>/<?php echo $section->Parent->getSlug() ?>/<?php echo $p->getSlug();
                   else:  
                     $href = "javascript:;";
