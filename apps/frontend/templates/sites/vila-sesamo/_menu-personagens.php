@@ -27,13 +27,13 @@
         </ul>
       </nav>
       <!--/nav filtro personagem-->
-      <?php if(isset($section->Parent->getSlug())):?>
+      
         <?php if($section->Parent->getSlug() == "personagens"): ?>
           <script>
             $('.inner').addClass('personagem');
           </script>
         <?php endif; ?>
-      <?php endif; ?>
+      
         <script>
           $('.inner.personagem a').click(function(){
             var who = $(this).attr('href');
