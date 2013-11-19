@@ -41,7 +41,7 @@
             window.location.assign(who)
           });
 
-          $('.inner a[class|="btn"]').not('.inner a.active').click(function(){
+          $('.inner a[class|="btn"]').not('.inner a.active').not('.inner.personagem a').click(function(){
             goTop();  
           });
           
