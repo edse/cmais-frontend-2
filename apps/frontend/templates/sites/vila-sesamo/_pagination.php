@@ -21,6 +21,9 @@ echo count($pager). " >>>>>>>>>>>>>>"
 <script>
   contentPage = 1;
   quantPage = <?php echo intval($pager2)?>;
+  $('.mais').click(function(){
+    contentPage++;
+  });
   function vilaSesamoGetContents() {
     $.ajax({
       url: "<?php echo url_for("@homepage") ?>ajax/vilasesamogetcontents",
@@ -33,7 +36,7 @@ echo count($pager). " >>>>>>>>>>>>>>"
         
         $('#page-nav #ajax-loader').hide();
         if (data != "") {
-          contentPage++;
+          
           console.log(contentPage);
           console.log(quantPage);
           var newEls = $(data).appendTo('#container');
