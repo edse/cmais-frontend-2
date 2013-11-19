@@ -75,7 +75,10 @@
 
 <?php if(isset($pager)): ?>
   <?php if(count($pager) > 0): ?>
-    
+  <?php
+   $pager2 = count($pager)/9;
+   echo $pager2 . "teste>>>>>>>>>"
+  ?>  
 <span class="divisa"></span>
 
 <!--/section-->
