@@ -1,6 +1,5 @@
 <?php
-echo intval($pager2) ."</br> >>>>>>>>>>>>>";
-echo intval(count($pager)/9) . "</br> >>>>>>>>>>>>>>"
+echo count($pager)/9 . " >>>>>>>>>>>>>>"
 ?>
 <?php if(intval($pager2) <= intval(count($pager)/9)):?>
 <nav id="page_nav">
