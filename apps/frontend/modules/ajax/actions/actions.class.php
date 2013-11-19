@@ -1251,6 +1251,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
                 $assetSection = $a;
                 break;
               }
+              $sectionP = $a->getSlug();
             }
             
             $printPersonagens= " ";
@@ -1262,7 +1263,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
           $return .=   '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
           
-          if($section == "videos" || (isset($printPersonagens) &&  $assetSection->getSlug() == "videos")):
+          if($section == "videos" || $sectionP == "videos"):
             $return .=  '<div class="yt-menu">';
             $return .=    '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$d->AssetVideo->getHeadline().'" />';
             $return .=  '</div>';
