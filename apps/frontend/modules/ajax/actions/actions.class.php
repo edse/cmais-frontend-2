@@ -1221,26 +1221,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $printCategorias .= " " . implode(" ", $assetCategorias);
             
             $return =  '<li class="span4 element '. $printCategorias .'">';
-          elseif($section->getSlug() == "bel"):  
-            
-            $assetPersonagens = array();
-            $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
-            $assetSections = $d->getSections();
-            foreach($assetSections as $a) {
-              if($a->getParentSectionId() == $personagensSection->getId()) {
-                $assetPersonagens[] = $a->getSlug();
-              }
-              if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
-                $assetSection = $a;
-                break;
-              }
-            }
-            
-            $printPersonagens= " ";
-            if(count($assetPersonagens) > 0)
-            $printPersonagens .= " " . implode(" ", $assetPersonagens);
-            
-            $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';
+          
           else:  
             
             $assetPersonagens = array();
