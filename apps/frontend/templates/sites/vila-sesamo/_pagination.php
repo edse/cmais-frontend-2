@@ -1,3 +1,6 @@
+<?php
+echo intval($pager2)
+?>
 <?php if(intval($pager2) <= count($pager)):?>
 <nav id="page_nav">
   <div class="container-ajax-loader">
