@@ -20,7 +20,7 @@ echo intval(count($pager)/9) . "</br> >>>>>>>>>>>>>>"
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <script>
-  contentPage = 1;
+  contentPage = 0;
   quantPage = <?php echo intval($pager2)?>;
   function vilaSesamoGetContents() {
     $.ajax({
