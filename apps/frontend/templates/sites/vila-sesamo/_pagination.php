@@ -1,8 +1,8 @@
 <?php
 echo intval($pager2) ."</br> >>>>>>>>>>>>>";
-echo count($pager). "</br> >>>>>>>>>>>>>>"
+echo intval(count($pager)/9) . "</br> >>>>>>>>>>>>>>"
 ?>
-
+<?php if(intval($pager2) <= intval(count($pager)/9)):?>
 <nav id="page_nav">
   <div class="container-ajax-loader">
     <img id="ajax-loader" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/ajax-loader.gif" alt="" style="display:none;">
@@ -16,11 +16,11 @@ echo count($pager). "</br> >>>>>>>>>>>>>>"
   ?>
   <a href="javascript:vilaSesamoGetContents();" class="mais">Carregar mais<i class="icones-sprite-interna <?php echo $icone ?>"></i></a>
 </nav>
-
+<?php endif; ?>
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <script>
-  contentPage = 1;
+  contentPage = 0;
   quantPage = <?php echo intval($pager2)?>;
   function vilaSesamoGetContents() {
     $.ajax({
