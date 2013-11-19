@@ -1203,6 +1203,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->limit($items)
         ->offset($start)
         ->execute();
+        
           
         foreach($assets as $d){
           
@@ -1221,8 +1222,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $printCategorias .= " " . implode(" ", $assetCategorias);
             
             $return =  '<li class="span4 element '. $printCategorias .'">';
-            
-          else:  
+          
+          elseif($sectionId == "jogos" || $sectionId == "videos" || $sectionId == "atividades"):  
             
             $assetPersonagens = array();
             $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
@@ -1238,12 +1239,30 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
             
             $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
+          else:
+            $assetPersonagens = array();
+            $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
+            $assetSections = $d->getSections();
+            foreach($assetSections as $a) {
+              if($a->getParentSectionId() == $personagensSection->getId()) {
+                $assetPersonagens[] = $a->getSlug();
+              }
+              if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
+                $assetSection = $a;
+                break;
+              }
+            }
             
+            $printPersonagens= " ";
+            if(count($assetPersonagens) > 0)
+            $printPersonagens .= " " . implode(" ", $assetPersonagens);
+            
+            $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';  
           endif; 
           
           $return .=   '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
           
-          if($section == "videos"):
+          if($section == "videos" || (isset($printPersonagens) &&  $assetSection->getSlug() == "videos")):
             $return .=  '<div class="yt-menu">';
             $return .=    '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$d->AssetVideo->getHeadline().'" />';
             $return .=  '</div>';

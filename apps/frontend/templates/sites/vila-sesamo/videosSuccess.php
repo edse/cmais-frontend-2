@@ -75,7 +75,7 @@
 
 <?php if(isset($pager)): ?>
   <?php if(count($pager) > 0): ?>
-    
+  <?php $pager2 = count($pager)/9; ?> 
 <span class="divisa"></span>
 
 <!--/section-->
@@ -123,7 +123,7 @@
 
 
 <!--paginacao-->
-<?php include_partial_from_folder('sites/vila-sesamo', 'global/pagination', array('site' => $site, 'section' => $section)) ?>
+<?php include_partial_from_folder('sites/vila-sesamo', 'global/pagination', array('site' => $site, 'section' => $section,'pager'=>$pager , 'pager2'=>$pager2)) ?>
 <!--/paginacao-->
 
 

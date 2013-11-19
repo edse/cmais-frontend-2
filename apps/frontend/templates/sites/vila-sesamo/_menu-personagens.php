@@ -10,11 +10,12 @@
                 <li>
                   <?php
                   if($section->Parent->getSlug() == "personagens"):
-                    $href = $site->retriveUrl() ?>."/".<?php echo $section->Parent->getSlug()."/".$p->getSlug(); 
+                    $href = $site->retriveUrl() ."/". $section->Parent->getSlug()."/".$p->getSlug(); 
                   else:  
                     $href = "javascript:;";
                   endif;
                   ?>
+                  
                   <div class="inner <?php echo $p->getSlug() ?>">
                     <a href="<?php echo $href; ?>" title="<?php echo $p->getTitle() ?>" target="_self" class="btn-<?php echo $p->getSlug() ?> <?php if($section->getSlug() == $p->getSlug()) echo "active"?>" data-filter=".<?php echo $p->getSlug() ?>">
                       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem.png" alt="filtro <?php echo $p->getTitle() ?>" />
@@ -40,7 +41,7 @@
             window.location.assign(who)
           });
 
-          $('.inner a[class|="btn"]').not('.inner a.active').click(function(){
+          $('.inner a[class|="btn"]').not('.inner a.active').not('.inner.personagem a').click(function(){
             goTop();  
           });
           
