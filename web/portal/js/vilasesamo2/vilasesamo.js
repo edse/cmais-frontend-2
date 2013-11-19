@@ -100,12 +100,22 @@ $(document).ready(function() {
   });
   
   //aba para os pais
-  $('.icone-cuidadores-abrir').click(function() {
-    
+  $('.pais .icone-cuidadores-abrir').click(function() {
+    $('.pais .content').stop().slideToggle('slow');
+    $(".pais .icone-cuidadores-abrir").toggleClass("inativo");
+    $(".pais .icone-cuidadores-fechar").toggleClass("ativo");
+    $('.linha').show();
+    $('.redes').fadeIn();
   });
   
-  $('.fechar-toggle').click(function() {
-    alert('clix')      
+  $('.pais .icone-cuidadores-fechar').click(function() {
+    $('.pais .content').stop().slideToggle('fast');
+    $(".pais .icone-cuidadores-abrir").toggleClass("inativo");
+    $('.linha, .pais .redes').hide();
+    if($('.icone-cat-abrir').hasClass('icone-cat-fechar')){
+      $('.icone-cat-abrir').toggleClass('icone-cat-fechar');  
+    }
+    
   });
   
   $('.icone-cat-abrir').click(function(){
