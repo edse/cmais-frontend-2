@@ -1238,7 +1238,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             if(count($assetPersonagens) > 0)
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
             
-            $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
+            $return =  count($assetPersonagens).'<li class="span4 element '. $printPersonagens ." ". $section .'">';
           else:
             $assetPersonagens = array();
             $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
