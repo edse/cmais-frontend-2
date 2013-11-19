@@ -1255,7 +1255,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             
             $printPersonagens= " ";
             if(count($assetPersonagens) > 0)
-            $printPersonagens .= " " . implode(" ", $assetPersonagens);
+              $printPersonagens .= " " . implode(" ", $assetPersonagens);
             
             $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';  
           endif; 
