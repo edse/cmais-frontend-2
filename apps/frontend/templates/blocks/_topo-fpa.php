@@ -64,7 +64,7 @@
       </li>
       <?php if($site->getSlug()=="central-de-relacionamento"){$ativo="active";}else{$ativo="";} ?>
       <li class="<?php echo $ativo?>">
-        <a href="/central-de-relacionamento" class="link <?php echo $ativo?>" title="Linha do Tempo">Central de Relacionamento</a>
+        <a href="http://www2.tvcultura.com.br/faleconosco/" class="link <?php echo $ativo?>" title="Central de Relacionamento">Central de Relacionamento</a>
         <b class="seta-hover <?php echo $ativo?>"></b>
       </li>
       
@@ -149,7 +149,7 @@
               </li>
               
               <li>
-                <a href="http://cmais.com.br/central-de-relacionamento" class="links" title="Central de relacionamento">central de relacionamento</a>
+                <a href="http://www2.tvcultura.com.br/faleconosco/" class="links" title="Central de relacionamento">central de relacionamento</a>
               </li>
               
               <li>
