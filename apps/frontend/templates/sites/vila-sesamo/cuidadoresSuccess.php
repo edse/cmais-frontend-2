@@ -132,10 +132,7 @@
         
         <?php if(isset($pager)): ?>
           <?php if(count($pager) > 0): ?>
-            <?php
-               $pager2 = count($pager)/9;
-               echo $pager2 . "teste>>>>>>>>>"
-              ?>
+            <?php $pager2 = count($pager)/9; ?>
         <!--/section-->
         <section class="todos-itens ">
           <!--lista-->
@@ -178,7 +175,7 @@
         <?php endif; ?>
         
         <!--paginacao-->
-        <?php include_partial_from_folder('sites/vila-sesamo', 'global/pagination', array('site' => $site, 'section' => $section)) ?>
+        <?php include_partial_from_folder('sites/vila-sesamo', 'global/pagination', array('site' => $site, 'section' => $section, 'pager2'=>$pager2)) ?>
         <!--/paginacao-->
       </div>
       <!--/selecione-->
