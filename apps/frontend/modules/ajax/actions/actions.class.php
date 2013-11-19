@@ -1240,7 +1240,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
           else:
             $assetPersonagens = array();
-            $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
+            $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
             $assetSections = $d->getSections();
             foreach($assetSections as $a) {
               if($a->getParentSectionId() == $personagensSection->getId()) {
