@@ -27,6 +27,7 @@
         </ul>
       </nav>
       <!--/nav filtro personagem-->
+      <?php echo $section->Parent->getSlug()  ?>
       <?php if($section->Parent->getSlug() == "personagens"): ?>
         <script>
           $('.inner a').not('.inner a.active').click(function(){
@@ -35,30 +36,31 @@
             
           })
         </script>  
+      <?php else:; ?>
+        <script>  
+          $('.inner a[class|="btn"]').not('.inner a.active').click(function(){
+            goTop();  
+          });
+          
+          function goTop(){
+            $('html, body').animate({
+              scrollTop:parseInt($('.divisa').offset().top-126)
+            }, "slow");
+          }
+          
+          $('.inner a').not('.inner a.active').mouseenter(function(){
+           if($(this).parent().hasClass('jogos')){ 
+            $(this).find('img').animate({top:-33, easing:"swing"},'fast');
+           }else{
+            $(this).find('img').animate({top:-25, easing:"swing"},'fast');  
+           }
+          });
+          $('.inner a').not('.inner a.active').mouseleave(function(){
+            if(!$(this).parent().parent().hasClass('ativo')){
+              $(this).find('img').stop();
+              $(this).find('img').animate({top:0, easing:"swing"},'fast'); 
+            } 
+          });
+        </script>
       <?php endif; ?>
-      
-      <script>  
-        $('.inner a[class|="btn"]').not('.inner a.active').click(function(){
-          goTop();  
-        });
         
-        function goTop(){
-          $('html, body').animate({
-            scrollTop:parseInt($('.divisa').offset().top-126)
-          }, "slow");
-        }
-        
-        $('.inner a').not('.inner a.active').mouseenter(function(){
-         if($(this).parent().hasClass('jogos')){ 
-          $(this).find('img').animate({top:-33, easing:"swing"},'fast');
-         }else{
-          $(this).find('img').animate({top:-25, easing:"swing"},'fast');  
-         }
-        });
-        $('.inner a').not('.inner a.active').mouseleave(function(){
-          if(!$(this).parent().parent().hasClass('ativo')){
-            $(this).find('img').stop();
-            $(this).find('img').animate({top:0, easing:"swing"},'fast'); 
-          } 
-        });
-      </script>
