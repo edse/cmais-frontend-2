@@ -23,7 +23,7 @@ echo intval(count($pager)/9) . "</br> >>>>>>>>>>>>>>"
   contentPage = 0;
   quantPage = <?php echo intval($pager2)?>;
   $('.mais').click(function(){
-    contentPage++;
+    contentPage+1;
   });
   function vilaSesamoGetContents() {
     $.ajax({
