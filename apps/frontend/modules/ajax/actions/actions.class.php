@@ -1203,6 +1203,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->limit($items)
         ->offset($start)
         ->execute();
+        
           
         foreach($assets as $d){
           
@@ -1222,7 +1223,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             
             $return =  '<li class="span4 element '. $printCategorias .'">';
           
-          elseif($section == "jogos" || $section == "videos" || $sectionId == 2389):  
+          elseif($section == "jogos" || $section == "videos" || $sectionId == "atividades"):  
             
             $assetPersonagens = array();
             $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
