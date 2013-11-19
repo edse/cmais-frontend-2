@@ -40,7 +40,7 @@ echo count($pager). " >>>>>>>>>>>>>>"
           console.log(contentPage);
           var newEls = $(data).appendTo('#container');
           $("#container").isotope().isotope('appended',newEls);
-          if(contentPage++ >= quantPage){
+          if(actualPage++ >= quantPage){
             $('#page_nav').hide();
           }
         }else{
