@@ -201,6 +201,7 @@
       <?php if(isset($pager)): ?>
         <?php if(count($pager) > 0): ?>
           <?php $pager2 = count($pager)/9; ?>
+          <?php $parent = $section->Parent->getSlug() ?>
           <?php
       /*
           <?php foreach($pager->getResults() as $k=>$d): ?>
@@ -262,6 +263,6 @@
 <!--/content--> 
 
 <!--paginacao-->
-<?php include_partial_from_folder('sites/vila-sesamo', 'global/pagination', array('site' => $site, 'section' => $section,  'pager'=>$pager , 'pager2'=>$pager2)) ?>
+<?php include_partial_from_folder('sites/vila-sesamo', 'global/pagination', array('site' => $site, 'section' => $section,  'pager'=>$pager , 'pager2'=>$pager2, 'parent'=>$parent)) ?>
 <!--/paginacao-->
 

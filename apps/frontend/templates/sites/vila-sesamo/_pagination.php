@@ -7,11 +7,13 @@
   <?php
   if($section->getSlug() == "cuidadores"):
     $icone = "icone-carregar-ve-grande";
+  elseif($parent="categorias"):
+    $icone = "icone-carregar-lj-grande";
   else:
     $icone = "icone-carregar-br-grande";
   endif;    
   ?>
-  <a href="javascript:vilaSesamoGetContents();" class="mais">Carregar mais<i class="icones-sprite-interna <?php echo $icone ?>"></i></a>
+  <a href="javascript:vilaSesamoGetContents();" class="mais">Carregar mais<i class="icones-sprite-interna  <?php echo $icone ?>"></i></a>
 </nav>
 <?php endif; ?>
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
