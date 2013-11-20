@@ -2,7 +2,9 @@
       <nav role="navigation" class="span2">
         <h3>escolha o personagem</h3>
         <h3 aria-live="polite" id="filtro-descricao">todas as atividades estão para selecionar</h3>
-        <a id="filtrar-tudo button" class="btn">Selecionar todos</a> 
+        <?php if($section->getSlug() == "atividades" || $section->getSlug() == "videos" || $section->getSlug() == "jogos"):?>
+          <a id="filtrar-tudo button" class="btn">Selecionar todos</a> 
+        <?php endif; ?>
         <ul class="filtro-personagem">
           <?php if(isset($personagens)): ?>
             <?php if(count($personagens) > 0 ): ?>
