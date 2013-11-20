@@ -1236,9 +1236,9 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             }
             foreach($assetSections as $a) {
               if($a->getSlug() == "zoe") {
-                $zoe++;
+                $zoe = $zoe++;
               }elseif($a->getSlug() == "bel"){
-                $bel++;
+                $bel = $bel++;
               }
             }
             
@@ -1247,6 +1247,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
             
             $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
+            $return .= $bel . $zoe;
           else:
             $assetPersonagens = array();
             $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
@@ -1293,7 +1294,6 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           $return .=  '</a>';
           $return .= '</li>';
           echo $return;
-          echo $bel . $zoe . "teste";
         }
         
       
