@@ -48,14 +48,14 @@
         <?php endif; ?>
         
         <script>
-          $(document).ready(function(){
+
             var bel = 0;
             $('#count').each(function(e){
               e++
               alert(e + bel + "funo")
             });
             
-          });
+
 
           $('.inner a[class|="btn"]').not('.inner a.active').not('.inner.personagem a').click(function(){
             goTop();  
