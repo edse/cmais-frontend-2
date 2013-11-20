@@ -53,7 +53,7 @@
             $('#count').each(function(){
               
               if($('#count').attr('data-bel') == 1){
-                bel = bel++
+                bel =+ 1
               }
             
             });
