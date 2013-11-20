@@ -20,7 +20,7 @@
         
         
         filter_selected += $(this).find('a').attr('data-filter') + ",";
-        $select += $(this).find('a').attr('data-filter') + ', ';
+        //$select += $(this).find('a').attr('data-filter') + ', ';
         
         $(this).find('img').css('top','33px!important');
         
