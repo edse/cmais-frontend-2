@@ -65,8 +65,9 @@
           function teste(){
             var bel = 0;
             $('.count').each(function(){
-              
-              bel++
+              if(parseInt($(this).attr('data-bel')) == 1){
+                bel+1
+              }
             });
             alert(bel + "funsdfgsdo")
           }
