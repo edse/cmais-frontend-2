@@ -63,25 +63,7 @@
     <!--menu filtro persoagem-->
     <?php $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"personagens"); ?>
     <?php $personagens = $particularSection->subsections()?>
-    
-    <?php
-    $bel = 0;
-    $zoe = 0;
-    foreach($pager->getResults() as $k=>$d): 
-      $assetPersonagens = array();
-      $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
-      $assetSections = $d->getSections();
-      foreach($assetSections as $a) {
-        if($a->getSlug() == "zoe") {
-          $zoe++;
-        }elseif($a->getSlug() == "bel"){
-          $bel++;
-        }
-      }
-      
-      endforeach;
-      echo $bel . $zoe 
-    ?>
+
     
     <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens)) ?>
     <!--/menu filtro persoagem-->
