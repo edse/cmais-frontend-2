@@ -73,12 +73,10 @@
           $assetPersonagens[] = $a->getSlug();
         }
       }
-      $contador = $assetPersonagens;
-        
     endforeach;   
     ?>
     
-    <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens, 'contador'=>$contador)) ?>
+    <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens, 'assetPersonagens'=>$assetPersonagens)) ?>
     <!--/menu filtro persoagem-->
         
   </div>
