@@ -1247,7 +1247,6 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
             
             $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
-            $return .= $bel . $zoe;
           else:
             $assetPersonagens = array();
             $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
@@ -1295,7 +1294,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           $return .= '</li>';
           echo $return;
         }
-        
+        echo $bel . $zoe . "teste";
       
     }
     die();
