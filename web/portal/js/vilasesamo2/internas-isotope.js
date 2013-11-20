@@ -11,15 +11,32 @@
     
     //seleciona todos no filtro
     $('#filtrar-tudo').click(function(){
+      var filter_selected = "";
+      
       $('.filtro-personagem li').addClass('ativo');
       $('.filtro-personagem li a').find('img').animate({top:-25, easing:"swing"},'fast');
+      
+      $('.filtro-personagem li.ativo').each(function(i){
+        
+        
+        filter_selected += $(this).find('a').attr('data-filter') + ",";
+        $select += $(this).find('a').attr('data-filter') + ', ';
+        
+        $(this).find('img').css('top','33px!important');
+        
+        $i++;
+        
+        
+      });
+      
+      $container.isotope({ filter:filter_selected });
     });
     //filtro personagens para atividades, jogos e videos
     $('.filtro-personagem a').not('.inner.personagem a').click(function(){
       var $i=0;
       var $j=0
       var $select = '';
-      filter_selected = "";
+      var filter_selected = "";
       
       $(this).parent().parent().toggleClass("ativo");
 
