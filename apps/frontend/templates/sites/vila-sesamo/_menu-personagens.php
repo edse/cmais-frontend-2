@@ -55,9 +55,9 @@
               if(parseInt($('#count').attr('data-bel')) == 1){
                 bel =+ 1
               }
-            
-            });
             alert(e + bel + "funo")
+            });
+            
           });
 
           $('.inner a[class|="btn"]').not('.inner a.active').not('.inner.personagem a').click(function(){
