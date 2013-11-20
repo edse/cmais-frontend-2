@@ -2,7 +2,7 @@
       <nav role="navigation" class="span2">
         <h3>escolha o personagem</h3>
         <h3 aria-live="polite" id="filtro-descricao">todas as atividades estão para selecionar</h3>
-        <a id="filtrar-tudo" class="btn">Selecionar todos</a> 
+        <a id="filtrar-tudo button" class="btn">Selecionar todos</a> 
         <ul class="filtro-personagem">
           <?php if(isset($personagens)): ?>
             <?php if(count($personagens) > 0 ): ?>
@@ -17,7 +17,9 @@
                   ?>
                   
                   <div class="inner <?php echo $p->getSlug() ?>">
-                    
+                    <a href="<?php echo $href; ?>" title="<?php echo $p->getTitle() ?>" target="_self" class="btn-<?php echo $p->getSlug() ?> <?php if($section->getSlug() == $p->getSlug()) echo "active"?>" data-filter=".<?php echo $p->getSlug() ?>">
+                      <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem.png" alt="filtro <?php echo $p->getTitle() ?>" />
+                    </a>
                   </div>
                 </li>
               <?php endforeach;?>
