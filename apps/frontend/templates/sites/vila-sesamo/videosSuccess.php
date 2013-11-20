@@ -76,8 +76,17 @@
       }
       $array[] =  " " . implode(" ", $assetPersonagens);
       $result = array_diff($assetPersonagens, $array);
-      print_r($result);
+      foreach($result as $cont){
+        $bel = 0;
+        $zoe = 0;  
+        if($cont == "bel"){
+          $bel++;
+        }elseif($cont == "zoe"){
+          $zoe++;
+        }
+      }
     endforeach;
+    echo $bel . " / " . $zoe
     ?>
     
     <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens)) ?>
