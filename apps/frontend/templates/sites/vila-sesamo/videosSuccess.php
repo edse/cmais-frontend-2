@@ -79,9 +79,9 @@
       foreach($result as $cont){
         $bel = 0;
         $zoe = 0;  
-        if($cont == "bel"){
+        if($cont[0] == "bel"){
           $bel++;
-        }elseif($cont == "zoe"){
+        }elseif($cont[0] == "zoe"){
           $zoe++;
         }
       }
