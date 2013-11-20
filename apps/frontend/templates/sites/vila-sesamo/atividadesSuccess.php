@@ -74,7 +74,8 @@
         }
       }
     endforeach;  
-    if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); 
+    if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens);
+    echo $assetPersonagens 
     ?>
     
     <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens, 'assetPersonagens'=>$assetPersonagens)) ?>
