@@ -12,7 +12,7 @@
     //seleciona todos no filtro
     $('#filtrar-tudo').click(function(){
       $('.filtro-personagem li').addClass('ativo');
-      
+      $('.filtro-personagem li a').find('img').animate({top:-25, easing:"swing"},'fast');
     });
     //filtro personagens para atividades, jogos e videos
     $('.filtro-personagem a').not('.inner.personagem a').click(function(){
