@@ -22,12 +22,8 @@
                   <?php   
                   else:
                     $href = "javascript:;";
+                    echo count($contador)
                   ?> 
-                    <?php
-                    //foreach($p->getAssets() as $ap):
-                      //echo $ap->getSlug();
-                    //endforeach;
-                    echo count($p->getAssets()) ?>   
                     <div class="inner <?php echo $p->getSlug() ?>">
                       <a href="<?php echo $href; ?>" title="<?php echo $p->getTitle() ?>" target="_self" class="btn-<?php echo $p->getSlug() ?> <?php if($section->getSlug() == $p->getSlug()) echo "active"?>" data-filter=".<?php echo $p->getSlug() ?>">
                         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem.png" alt="filtro <?php echo $p->getTitle() ?>" />
