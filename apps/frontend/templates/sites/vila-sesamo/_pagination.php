@@ -9,7 +9,7 @@
     $icone = "icone-carregar-ve-grande";
   elseif($parent == "personagens" || $section->getSlug() == "atividades" || $section->getSlug() == "videos" || $section->getSlug() == "jogos"):
     $icone = "icone-carregar-br-grande";
-  elseif($parent="categorias"): 
+  else: 
     $icone = "icone-carregar-lj-grande";
   endif;    
   ?>
