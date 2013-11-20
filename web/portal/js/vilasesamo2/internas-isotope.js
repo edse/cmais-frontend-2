@@ -24,9 +24,9 @@
         
         $(this).find('img').css('top','33px!important');
         
-        goTop();
+        
       });
-      
+      goTop();
       $container.isotope({ filter:filter_selected });
     });
     //filtro personagens para atividades, jogos e videos
