@@ -68,6 +68,7 @@
               
               alert(e + bel + "funo")
             });
+            alert(bel + "funo")
           }
           $('.inner a').not('.inner a.active').mouseenter(function(){
            if($(this).parent().hasClass('jogos')){ 
