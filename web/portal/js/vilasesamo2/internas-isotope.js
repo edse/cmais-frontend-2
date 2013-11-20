@@ -26,7 +26,7 @@
         
         $i++;
         
-        
+        goTop();
       });
       
       $container.isotope({ filter:filter_selected });
@@ -83,6 +83,11 @@
       return false;
     });
     
+    function goTop(){
+      $('html, body').animate({
+        scrollTop:parseInt($('.divisa').offset().top-126)
+      }, "slow");
+    }
     /*lista destaque small
      $('.todos-itens li').each(function(i){
        el = $(this);
