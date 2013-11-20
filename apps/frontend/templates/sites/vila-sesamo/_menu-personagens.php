@@ -52,12 +52,12 @@
             var bel = 0;
             $('#count').each(function(){
               
-              if($('#count').attr('data-bel') == "1"){
+              if(parseInt($('#count').attr('data-bel')) == 1){
                 bel =+ 1
               }
             
             });
-            alert(bel)
+            alert(bel + "funciono")
           });
 
           $('.inner a[class|="btn"]').not('.inner a.active').not('.inner.personagem a').click(function(){
