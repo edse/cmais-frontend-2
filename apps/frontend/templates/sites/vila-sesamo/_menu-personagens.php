@@ -49,14 +49,10 @@
         
         <script>
 
-            var bel = 0;
-            $('#count').each(function(){
-              
-              alert(e + bel + "funo")
-            });
+            
             
 
-
+          teste()
           $('.inner a[class|="btn"]').not('.inner a.active').not('.inner.personagem a').click(function(){
             goTop();  
           });
@@ -66,7 +62,13 @@
               scrollTop:parseInt($('.divisa').offset().top-126)
             }, "slow");
           }
-          
+          function teste(){
+            var bel = 0;
+            $('#count').each(function(){
+              
+              alert(e + bel + "funo")
+            });
+          }
           $('.inner a').not('.inner a.active').mouseenter(function(){
            if($(this).parent().hasClass('jogos')){ 
             $(this).find('img').animate({top:-33, easing:"swing"},'fast');
