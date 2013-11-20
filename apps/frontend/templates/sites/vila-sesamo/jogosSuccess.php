@@ -63,23 +63,7 @@
     <?php $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"personagens"); ?>
     <?php $personagens = $particularSection->subsections()?>
     
-    <?php
-    foreach($pager->getResults() as $k=>$d): 
-      $assetPersonagens = array();
-      $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
-      $assetSections = $d->getSections();
-      foreach($assetSections as $a) {
-        if($a->getParentSectionId() == $personagensSection->getId()) {
-          $assetPersonagens[] = $a->getSlug();
-        }
-      }
-      $array[] =  " " . implode(" ", $assetPersonagens);
-      $result = array_diff($assetPersonagens, $array);
-      print_r($result);
-    endforeach;  
-    
-    
-    ?>
+     
     
     <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens)) ?>
     <!--/menu filtro persoagem-->

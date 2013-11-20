@@ -46,11 +46,13 @@
             $('.inner').addClass('personagem');
           </script>
         <?php endif; ?>
-      
         <script>
-          $('.inner.personagem a').click(function(){
-            var who = $(this).attr('href');
-            window.location.assign(who)
+            $('.inner').addClass('personagem');
+          </script>
+        <script>
+          $(document).ready(function(){
+            alert($('input').attr('data-bel'));
+            alert($('input').attr('data-zoe'));
           });
 
           $('.inner a[class|="btn"]').not('.inner a.active').not('.inner.personagem a').click(function(){
