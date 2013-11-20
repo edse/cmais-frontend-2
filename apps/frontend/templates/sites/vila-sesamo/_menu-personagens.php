@@ -25,7 +25,7 @@
                   ?> 
                     <?php
                     foreach($p->getAssets() as $ap):
-                      echo $ap->getSection();
+                      echo $ap->getSlug();
                     endforeach;
                     echo count($p->getAssets()) ?>   
                     <div class="inner <?php echo $p->getSlug() ?>">
