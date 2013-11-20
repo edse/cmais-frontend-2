@@ -64,9 +64,9 @@
           }
           function teste(){
             var bel = 0;
-            $('#count').each(function(){
+            $('.count').each(function(){
               
-              alert(e + bel + "funo")
+              bel++
             });
             alert(bel + "funo")
           }
