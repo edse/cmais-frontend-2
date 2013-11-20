@@ -197,6 +197,8 @@
   <section class="todos-itens ">
     <!--lista-->
     <ul role="contentinfo" id="container" class="row-fluid">
+      <?php
+      /*
       <?php if(isset($pager)): ?>
         <?php if(count($pager) > 0): ?>
           <?php foreach($pager->getResults() as $k=>$d): ?>
@@ -244,7 +246,8 @@
         <?php endif; ?>
       <?php endif; ?>
       <!--/assets-->
-
+      */
+      ?>
     </ul> 
     <!--/lista-->  
     
@@ -254,9 +257,7 @@
 </div>
 <!--/content--> 
 
-<input type="hidden" id="filter-choice" value="">
-
-<nav id="page_nav">
-  <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-lj-grande"></i></a>
-</nav>
+<!--paginacao-->
+<?php include_partial_from_folder('sites/vila-sesamo', 'global/pagination', array('site' => $site, 'section' => $section,  'pager'=>$pager , 'pager2'=>$pager2)) ?>
+<!--/paginacao-->
 
