@@ -7,10 +7,10 @@
   <?php
   if($section->getSlug() == "cuidadores"):
     $icone = "icone-carregar-ve-grande";
-  elseif(isset($parent) == "personagens" || $section->getSlug() == "atividades" || $section->getSlug() == "videos" || $section->getSlug() == "jogos"):
-    $icone = "icone-carregar-br-grande";
-  else: 
+  elseif(isset($parent) == "categorias"):
     $icone = "icone-carregar-lj-grande";
+  else: 
+    $icone = "icone-carregar-br-grande";
   endif;    
   ?>
 
