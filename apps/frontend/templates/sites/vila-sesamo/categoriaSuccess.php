@@ -197,10 +197,12 @@
   <section class="todos-itens ">
     <!--lista-->
     <ul role="contentinfo" id="container" class="row-fluid">
-      <?php
-      /*
+      
       <?php if(isset($pager)): ?>
         <?php if(count($pager) > 0): ?>
+          <?php $pager2 = count($pager)/9; ?>
+          <?php
+      /*
           <?php foreach($pager->getResults() as $k=>$d): ?>
           <?php
             $assetPersonagens = array();
@@ -243,11 +245,13 @@
           </li>
           
           <?php endforeach; ?>
+       * 
+       */
+      ?>
         <?php endif; ?>
       <?php endif; ?>
       <!--/assets-->
-      */
-      ?>
+      
     </ul> 
     <!--/lista-->  
     
