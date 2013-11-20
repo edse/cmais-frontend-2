@@ -7,13 +7,13 @@
   <?php
   if($section->getSlug() == "cuidadores"):
     $icone = "icone-carregar-ve-grande";
-  elseif($parent="categorias"):
+  elseif($section->Parent->getSlug()="categorias"):
     $icone = "icone-carregar-lj-grande";
   else:
     $icone = "icone-carregar-br-grande";
   endif;    
   ?>
-  <?php echo $parent ?>
+
   <a href="javascript:vilaSesamoGetContents();" class="mais">Carregar mais<i class="icones-sprite-interna  <?php echo $icone ?>"></i></a>
 </nav>
 <?php endif; ?>
