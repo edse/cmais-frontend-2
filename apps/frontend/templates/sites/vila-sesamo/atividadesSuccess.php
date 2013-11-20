@@ -74,7 +74,7 @@
         }
       }
       $array[] =  " " . implode(" ", $assetPersonagens);
-      $result = array_diff($assetPersonagens, $array2);
+      $result = array_diff($assetPersonagens, $array);
       print_r($result);
     endforeach;  
     
