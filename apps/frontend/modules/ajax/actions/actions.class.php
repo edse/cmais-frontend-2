@@ -1232,13 +1232,11 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             foreach($assetSections as $a) {
               if($a->getParentSectionId() == $personagensSection->getId()) {
                 $assetPersonagens[] = $a->getSlug();
-              }
-            }
-            foreach($assetSections as $a) {
-              if($a->getSlug() == "zoe") {
-                $zoe = $zoe++;
-              }elseif($a->getSlug() == "bel"){
-                $bel = $bel++;
+                if($a->getSlug() == "zoe") {
+                  $zoe = $zoe++;
+                }elseif($a->getSlug() == "bel"){
+                  $bel = $bel++;
+                }
               }
             }
             
