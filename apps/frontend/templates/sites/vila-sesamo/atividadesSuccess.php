@@ -64,6 +64,7 @@
     <?php $personagens = $particularSection->subsections()?>
     
     <?php
+    foreach($pager->getResults() as $k=>$d): 
       $assetPersonagens = array();
       $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
       $assetSections = $d->getSections();
@@ -72,9 +73,9 @@
           $assetPersonagens[] = $a->getSlug();
         }
       }
-      $contador = $pager->getResults()
+      $contador = $pager->getResults();
         
-       
+    endforeach;   
     ?>
     
     <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens, 'contador'=>$contador)) ?>
