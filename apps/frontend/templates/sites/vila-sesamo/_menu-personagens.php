@@ -66,8 +66,8 @@
             var bel = 0;
             $('.count').each(function(){
               
-              if($(this).attr('data-bel') == 1){
-                bel+1
+              if(parseInt($(this).attr('data-bel')) == 1){
+                bel = bel+1
               }
             });
             alert(bel)
