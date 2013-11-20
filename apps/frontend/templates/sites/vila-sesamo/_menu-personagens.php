@@ -50,14 +50,14 @@
         <script>
           $(document).ready(function(){
             var bel = 0;
-            $('#count').each(function(){
-              
+            $('#count').each(function(e){
+              e++
               if(parseInt($('#count').attr('data-bel')) == 1){
                 bel =+ 1
               }
             
             });
-            alert(bel + "funciono")
+            alert(e + bel + "funo")
           });
 
           $('.inner a[class|="btn"]').not('.inner a.active').not('.inner.personagem a').click(function(){
