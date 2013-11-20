@@ -63,13 +63,14 @@
             }, "slow");
           }
           function teste(){
-            var bel = 0;
+            
             $('.count').each(function(){
-              if(parseInt($(this).attr('data-bel')) == 1){
+              var bel = 0;
+              if($(this).attr('data-bel') == 1){
                 bel+1
               }
             });
-            alert(bel + "funsdfgsdo")
+            alert(bel + "funsdfgs\\\\do")
           }
           $('.inner a').not('.inner a.active').mouseenter(function(){
            if($(this).parent().hasClass('jogos')){ 
