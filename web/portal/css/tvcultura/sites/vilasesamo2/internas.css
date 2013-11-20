@@ -23,7 +23,7 @@ a:hover{text-decoration:underline!important;}
 .mais i { float:right; margin-left:15px; }
 .mais:hover { color:#fff; text-decoration:underline; }
 /* filtro personagem */
-#filtra-tudo{margin: 0 auto;display: block;margin-bottom: 4px;}
+#filtrar-tudo{margin: 0 auto;display: block;margin-bottom: 4px;}
 .todos-itens li,
 .scroll,
 .filtro { background:#3aaaec; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
