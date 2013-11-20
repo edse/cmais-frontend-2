@@ -9,6 +9,11 @@
     
     var filter_selected;
     
+    //seleciona todos no filtro
+    $('#filtrar-tudo').click(function(){
+      $('.filtro-personagem li').addClass('ativo');
+      
+    });
     //filtro personagens para atividades, jogos e videos
     $('.filtro-personagem a').not('.inner.personagem a').click(function(){
       var $i=0;
