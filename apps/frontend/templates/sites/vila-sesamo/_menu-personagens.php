@@ -46,13 +46,17 @@
             $('.inner').addClass('personagem');
           </script>
         <?php endif; ?>
-        <script>
-            $('.inner').addClass('personagem');
-          </script>
+        
         <script>
           $(document).ready(function(){
-            alert($('#count').attr('data-bel'));
-            alert($('#count').attr('data-zoe'));
+            $('#count').each(function(){
+              var bel = 0;
+              if($('#count').attr('data-bel') == 1){
+                bel = bel++
+              }
+            
+            });
+            alert(bel)
           });
 
           $('.inner a[class|="btn"]').not('.inner a.active').not('.inner.personagem a').click(function(){
