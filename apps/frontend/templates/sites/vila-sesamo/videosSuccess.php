@@ -65,6 +65,8 @@
     <?php $personagens = $particularSection->subsections()?>
     
     <?php
+    $bel = 0;
+    $zoe = 0;
     foreach($pager->getResults() as $k=>$d): 
       $assetPersonagens = array();
       $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
