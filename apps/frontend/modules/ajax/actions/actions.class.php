@@ -1233,9 +1233,9 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               if($a->getParentSectionId() == $personagensSection->getId()) {
                 $assetPersonagens[] = $a->getSlug();
                 if($a->getSlug() == "zoe") {
-                  $zoe = $zoe++;
+                  $zoe++;
                 }elseif($a->getSlug() == "bel"){
-                  $bel = $bel++;
+                  $bel++;
                 }
               }
             }
