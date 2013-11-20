@@ -8,7 +8,7 @@
   if($section->getSlug() == "cuidadores"):
     $icone = "icone-carregar-ve-grande";
   elseif(isset($parent) == "personagens"):
-    $icone = "icone-carregar-lj-grande";
+    $icone = "icone-carregar-br-grande";
   elseif(isset($parent) == "categorias"):
     $icone = "icone-carregar-lj-grande";
   else: 
