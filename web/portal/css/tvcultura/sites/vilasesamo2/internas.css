@@ -29,7 +29,7 @@ a:hover{text-decoration:underline!important;}
 .filtro h1 { border-bottom:2px solid #0191fb; border-top:2px solid #0191fb; background:#3AAAEC; }
 #content .filtro h1 { padding-top:10px;  }
 .filtro .span2 { margin-left:0; background: #ee3021; width:19.14%; padding:0 0.6%;}
-.filtro .span2 h3 { color:#fff; text-align:center; text-transform:uppercase; margin:10px 0 0 0; overflow:hidden; position:relative;font-size: 16px;line-height: 21px; font-family:'dinmedium',Arial, Helvetica, sans-serif; }
+.filtro .span2 h3 { color:#fff; text-align:center; text-transform:uppercase; margin:5px 0 5px 0; overflow:hidden; position:relative;font-size: 16px;line-height: 21px; font-family:'dinmedium',Arial, Helvetica, sans-serif; }
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
 .filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1773px; top:0; }
 .filtro .span2{ background:#d71c0d; border:1px solid #c31408; overflow:hidden; width: 175px;margin: 3px;display: block;margin-top: -2px;}
