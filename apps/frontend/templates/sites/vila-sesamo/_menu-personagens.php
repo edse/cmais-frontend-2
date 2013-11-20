@@ -25,7 +25,7 @@
                   ?> 
                     <?php
                     foreach($p->getAssets() as $ap):
-                      echo $ap->getCategoryAsset();
+                      echo $ap->getCategoryAsset(); 
                     endforeach;  
                     ?>   
                     <div class="inner <?php echo $p->getSlug() ?>">
