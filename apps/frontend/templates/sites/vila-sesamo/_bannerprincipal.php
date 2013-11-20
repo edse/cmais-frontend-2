@@ -99,7 +99,7 @@
           <div class="mpc_ls_slide_item" data-x="450" data-y="5" data-delay="500" data-duration="2500" data-easing="easeOutBack" data-effect="slideLeft" data-fade="on">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/4/img-personagem_banner_4-atividades.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item" data-x="800" data-y="90" data-delay="2000" data-duration="3500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">
+          <div class="mpc_ls_slide_item" data-x="795" data-y="90" data-delay="2000" data-duration="3500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/4/img-seta_banner_4-atividades.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="120" data-y="200" data-delay="3500" data-duration="3500" data-easing="easeOutElastic" data-effect="slideBottom" data-fade="on">
@@ -129,7 +129,7 @@
           <div class="mpc_ls_slide_item" data-x="-1000" data-y="320" data-delay="0" data-duration="800" data-easing="easeInBack" data-effect="slideBottom" data-fade="on">
             <div class="barra"></div>
           </div>
-          <div class="mpc_ls_slide_item mao" data-x="700" data-y="90" data-delay="1500" data-duration="1200" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">
+          <div class="mpc_ls_slide_item mao" data-x="650" data-y="90" data-delay="1500" data-duration="1200" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/5/img-seta_banner_5-personagens.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="300" data-y="350" data-delay="2500" data-duration="1200" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on">
