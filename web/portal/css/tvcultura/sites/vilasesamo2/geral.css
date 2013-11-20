@@ -30,6 +30,7 @@ a:hover { text-decoration:underline; }
 .sem-margem-r{margin-rightß:0!important}
 .sem-margem-t{margin-top:0!important}
 .sem-margem-b{margin-bottom:0!important}
+.marginTopBottom10{margin:10px 0!important;}
 .overflow{overflow: hidden;}
 .clearboth{clear: both;}
 /* dinmedium */
