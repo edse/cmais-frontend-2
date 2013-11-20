@@ -52,7 +52,7 @@
             var bel = 0;
             $('#count').each(function(){
               
-              if($('#count').attr('data-bel') == 1){
+              if($('#count').attr('data-bel') == "1"){
                 bel =+ 1
               }
             
