@@ -5,7 +5,7 @@
 <div id="content">
   <!--menu principal && banner promocional-->
   <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
-  <?php include_partial_from_folder('sites/vila-sesamo', 'global/bannerprincipal'); ?>
+  <?php include_partial_from_folder('sites/vila-sesamo', 'global/bannerprincipal', array('site' => $site)); ?>
   <!--/menu principal && banner promocional-->
   
   <!--carrossel personagens-->
