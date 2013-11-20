@@ -73,9 +73,10 @@
           $assetPersonagens[] = $a->getSlug();
         }
       }
+      print_r($assetPersonagens) ;
     endforeach;  
-    if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens);
-    print_r($assetPersonagens) 
+    
+    
     ?>
     
     <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens, 'assetPersonagens'=>$assetPersonagens)) ?>
