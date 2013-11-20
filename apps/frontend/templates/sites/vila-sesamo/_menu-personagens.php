@@ -51,8 +51,8 @@
           </script>
         <script>
           $(document).ready(function(){
-            alert($('input').attr('data-bel'));
-            alert($('input').attr('data-zoe'));
+            alert($('#count').attr('data-bel'));
+            alert($('#count').attr('data-zoe'));
           });
 
           $('.inner a[class|="btn"]').not('.inner a.active').not('.inner.personagem a').click(function(){
