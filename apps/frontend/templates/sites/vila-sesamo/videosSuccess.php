@@ -70,23 +70,15 @@
       $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
       $assetSections = $d->getSections();
       foreach($assetSections as $a) {
-        if($a->getParentSectionId() == $personagensSection->getId()) {
-          $assetPersonagens[] = $a->getSlug();
-        }
-      }
-      $array[] =  " " . implode(" ", $assetPersonagens);
-      $result = array_diff($assetPersonagens, $array);
-      foreach($result as $cont){
-        $bel = 0;
-        $zoe = 0;  
-        if($cont[0] == "bel"){
-          $bel++;
-        }elseif($cont[0] == "zoe"){
+        if($a->getSlug() == "zoe") {
           $zoe++;
+        }elseif($a->getSlug() == "bel"){
+          $bel++;
         }
       }
-    endforeach;
-    echo $bel . " / " . $zoe
+      
+      endforeach;
+      echo $bel . $zoe 
     ?>
     
     <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens)) ?>
