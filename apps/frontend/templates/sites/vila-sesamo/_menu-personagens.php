@@ -52,10 +52,7 @@
             var bel = 0;
             $('#count').each(function(e){
               e++
-              if(parseInt($('#count').attr('data-bel')) == 1){
-                bel =+ 1
-              }
-            alert(e + bel + "funo")
+              alert(e + bel + "funo")
             });
             
           });
