@@ -24,8 +24,6 @@
         
         $(this).find('img').css('top','33px!important');
         
-        $i++;
-         
         goTop();
       });
       
