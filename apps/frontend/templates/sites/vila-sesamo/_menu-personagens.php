@@ -50,8 +50,8 @@
         <script>
 
             var bel = 0;
-            $('#count').each(function(e){
-              e++
+            $('#count').each(function(){
+              
               alert(e + bel + "funo")
             });
             
