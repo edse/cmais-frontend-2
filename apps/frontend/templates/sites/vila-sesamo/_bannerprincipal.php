@@ -201,7 +201,7 @@
     
     $('#slider').mpcLayerSlider({
       'pauseOnHover' : false,
-      'slideshow' : false,
+      'slideshow' : true,
       'uiStyle': 'style02',
       'delay': 7800,
       'showThumbTooltip':false, 

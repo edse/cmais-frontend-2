@@ -160,4 +160,5 @@
 #carrossel-destaque .slide01 .tit-banner{font-size:117px; color:#00aa52;}
 #carrossel-destaque .slide01 .desc-banner{font-size:60px; color:#00aa52;}
   
-#carrossel-destaque .slide05 .barra{width:9000px; height: 130px; display: block; background:#fee133;}  
+#carrossel-destaque .slide05 .barra{width:9000px; height: 130px; display: block; background:#fee133;}
+#carrossel-destaque .mpc_ls_ui_button{display:block;}  
