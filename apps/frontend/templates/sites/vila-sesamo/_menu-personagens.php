@@ -49,8 +49,9 @@
         
         <script>
           $(document).ready(function(){
+            var bel = 0;
             $('#count').each(function(){
-              var bel = 0;
+              
               if($('#count').attr('data-bel') == 1){
                 bel = bel++
               }
