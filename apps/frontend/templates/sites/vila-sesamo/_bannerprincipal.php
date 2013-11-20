@@ -96,18 +96,18 @@
         
         <!--item atividades-->
         <li class="slide04" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/4/img-pattern_banner_4-atividades.jpg') repeat;">
-          <div class="mpc_ls_slide_item" data-x="400" data-y="5" data-delay="500" data-duration="2500" data-easing="easeOutBack" data-effect="slideLeft" data-fade="on">
+          <div class="mpc_ls_slide_item" data-x="450" data-y="5" data-delay="500" data-duration="2500" data-easing="easeOutBack" data-effect="slideLeft" data-fade="on">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/4/img-personagem_banner_4-atividades.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item" data-x="30" data-y="150" data-delay="2000" data-duration="3500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">
+          <div class="mpc_ls_slide_item" data-x="800" data-y="90" data-delay="2000" data-duration="3500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/4/img-seta_banner_4-atividades.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item" data-x="0" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutElastic" data-effect="slideBottom" data-fade="on">
+          <div class="mpc_ls_slide_item" data-x="120" data-y="200" data-delay="3500" data-duration="3500" data-easing="easeOutElastic" data-effect="slideBottom" data-fade="on">
             <span class="tit-banner sombra">Atividades</span>
             <span class="tit-banner" >Atividades</span>
           </div>
-          <div class="mpc_ls_slide_item" data-x="86" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
-            <span class="desc-banner">Use a criatividade e muitas cores!</span>
+          <div class="mpc_ls_slide_item" data-x="70" data-y="280" data-delay="3500" data-duration="3500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
+            <span class="desc-banner">Use a criatividade<br> e muitas cores!</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
             <a href="<?php echo $site->getSlug() ?>/atividades" class="total"></a>
@@ -129,14 +129,14 @@
           <div class="mpc_ls_slide_item" data-x="-1000" data-y="320" data-delay="0" data-duration="800" data-easing="easeInBack" data-effect="slideBottom" data-fade="on">
             <div class="barra"></div>
           </div>
-          <div class="mpc_ls_slide_item mao" data-x="700" data-y="90" data-delay="5000" data-duration="1200" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">
+          <div class="mpc_ls_slide_item mao" data-x="700" data-y="90" data-delay="1500" data-duration="1200" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/5/img-seta_banner_5-personagens.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item" data-x="0" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutElastic" data-effect="slideBottom" data-fade="on">
+          <div class="mpc_ls_slide_item" data-x="300" data-y="350" data-delay="2500" data-duration="1200" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on">
             <span class="tit-banner sombra">Personagens</span>
             <span class="tit-banner" >Personagens</span>
           </div>
-          <div class="mpc_ls_slide_item" data-x="86" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
+          <div class="mpc_ls_slide_item" data-x="240" data-y="390" data-delay="3000" data-duration="2500" data-easing="easeOutElastic" data-effect="slideRight" data-fade="on">
             <span class="desc-banner">Conheça nossa turma!</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
@@ -147,15 +147,21 @@
         
         <!--item cuidadores-->
         <li class="slide06" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/6/img-pattern_banner_6-cuidadores.jpg') repeat;">
-          <div class="mpc_ls_slide_item" data-x="480" data-y="100" data-delay="2000" data-duration="2500" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on">
+          <div class="mpc_ls_slide_item" data-x="480" data-y="100" data-delay="0" data-duration="2500" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/6/img-personagem_banner_6-cuidadores.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item" data-x="0" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutElastic" data-effect="slideBottom" data-fade="on">
+          <div class="mpc_ls_slide_item" data-x="50" data-y="210" data-delay="1500" data-duration="1000" data-easing="easeOutElastic" data-effect="slideBottom" data-fade="on">
             <span class="tit-banner sombra">Cuidadores</span>
             <span class="tit-banner" >Cuidadores</span>
           </div>
-          <div class="mpc_ls_slide_item" data-x="86" data-y="124" data-delay="1500" data-duration="500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
-            <span class="desc-banner">Dicas, conteúdos e diálogo. Leia, participe, compartilhe.</span>
+          <div class="mpc_ls_slide_item" data-x="40" data-y="270" data-delay="2500" data-duration="2000" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
+            <span class="desc-banner">Dicas, conteúdos</span>
+          </div>
+          <div class="mpc_ls_slide_item" data-x="50" data-y="325" data-delay="2500" data-duration="2000" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
+            <span class="desc-banner">e diálogo. Leia,</span>
+          </div>
+          <div class="mpc_ls_slide_item" data-x="25" data-y="380" data-delay="2500" data-duration="2000" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
+            <span class="desc-banner">participe, compartilhe.</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
             <a href="<?php echo $site->getSlug() ?>/cuidadores" class="total"></a>
