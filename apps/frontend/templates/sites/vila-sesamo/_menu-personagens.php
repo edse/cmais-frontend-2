@@ -22,7 +22,7 @@
                     $href = "javascript:;";
                   ?>    
                     <div class="inner <?php echo $p->getSlug() ?>">
-                      
+                       
                     </div>
                   <?php
                   endif;
