@@ -73,7 +73,7 @@
           $assetPersonagens[] = $a->getSlug();
         }
       }
-      $array =  " " . implode(" ", $assetPersonagens);
+      $array[] =  " " . implode(" ", $assetPersonagens);
       $result = array_diff($assetPersonagens, $array2);
       print_r($result);
     endforeach;  
