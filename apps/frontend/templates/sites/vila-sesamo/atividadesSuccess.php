@@ -73,7 +73,7 @@
           $assetPersonagens[] = $a->getSlug();
         }
       }
-      $contador = $pager->getResults();
+      $contador = $assetPersonagens;
         
     endforeach;   
     ?>
