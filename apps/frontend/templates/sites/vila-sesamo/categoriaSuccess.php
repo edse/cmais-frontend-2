@@ -115,10 +115,10 @@
         
         <!--box artigo-->
         <?php if(count($displays['artigos']) > 0): ?>
-          <?php $preview = $displays['artigos'][0]->Asset->retriveRelatedAssetsByRelationType("Preview") ?>
+          <?php //$preview = $displays['artigos'][0]->Asset->retriveRelatedAssetsByRelationType("Preview") ?>
           <div class="span4 artigo">
             <a href="<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $displays['artigos'][0]->getSlug() ?>" title="<?php echo $displays['artigos'][0]->getTitle() ?>">
-              <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt"<?php echo $displays['artigos'][0]->getTitle() ?>"/>
+              <img src="<?php //echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt"<?php echo $displays['artigos'][0]->getTitle() ?>"/>
               <h2 class="tit-artigo"><?php echo $displays['artigos'][0]->getTitle() ?></h2> 
               <p><?php echo $displays['artigos'][0]->getDescription() ?></p>
             </a>
