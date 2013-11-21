@@ -48,7 +48,6 @@
         <?php endif; ?>
         
         <script>
-          contPersonagens()
           
           $('.inner a[class|="btn"]').not('.inner a.active').not('.inner.personagem a').click(function(){
             goTop();  
@@ -68,13 +67,6 @@
               $(this).find('img').animate({top:0, easing:"swing"},'fast'); 
             } 
           });
-          
-          function contPersonagens(){
-            console.log("oi fora")
-            $('.count').each(function(){
-              console.log("oi")
-            });
-          }
           
           function goTop(){
             $('html, body').animate({
