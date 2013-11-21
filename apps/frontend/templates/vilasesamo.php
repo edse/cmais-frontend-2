@@ -246,7 +246,7 @@
           <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt="" />
         </section>
         <!--/section-->
-      <section class="relacionados">
+      <section class="relacionados" aria-label="sites relacionados">
         <h3>Sites relacionados</h3>
         <ul>
           <li><a href="http://tvcultura.cmais.com.br/" target="_blank" class="sprite-logo-cultura2" title="TV Cultura"></a></li>
