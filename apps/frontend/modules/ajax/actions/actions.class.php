@@ -1292,9 +1292,9 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           echo $return;
         }
         
-      
+      echo $bel."teste";
     }
-    echo $bel."teste";
+    
     die();
   }
     
