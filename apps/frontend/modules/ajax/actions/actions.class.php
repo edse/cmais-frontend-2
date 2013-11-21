@@ -1261,7 +1261,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';  
           endif; 
           
-          $return .=   '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
+          $return .=   '<a href="/'.  $site .'/' . $section .'/'. $d->getSlug() . '" title="' . $d->getTitle() . '">';
           
           if($section == "videos" || (isset($sectionP) && $sectionP == "videos")):
             $return .=  '<div class="yt-menu">';
