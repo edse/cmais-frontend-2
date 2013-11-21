@@ -48,15 +48,11 @@
         <?php endif; ?>
         
         <script>
-
-            
-            
-
           contPersonagens()
+          
           $('.inner a[class|="btn"]').not('.inner a.active').not('.inner.personagem a').click(function(){
             goTop();  
           });
-          
           
           $('.inner a').not('.inner a.active').mouseenter(function(){
            if($(this).parent().hasClass('jogos')){ 
@@ -65,19 +61,21 @@
             $(this).find('img').animate({top:-25, easing:"swing"},'fast');  
            }
           });
+          
           $('.inner a').not('.inner a.active').mouseleave(function(){
             if(!$(this).parent().parent().hasClass('ativo')){
               $(this).find('img').stop();
               $(this).find('img').animate({top:0, easing:"swing"},'fast'); 
             } 
           });
+          
           function contPersonagens(){
-            var bel = 0;
             console.log("oi fora")
             $('.count').each(function(){
               console.log("oi")
             });
           }
+          
           function goTop(){
             $('html, body').animate({
               scrollTop:parseInt($('.divisa').offset().top-126)
