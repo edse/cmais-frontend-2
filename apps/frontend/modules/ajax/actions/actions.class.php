@@ -1279,7 +1279,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return .=      '</a>';
             $return .=    '</li>';
             echo $return;
-          elseif($sectionP=="jogos" || $sectionP == "atividades" || $sectionP == "cuidadores"):  
+          elseif($section=="jogos" || $section == "atividades" || $section == "cuidadores"):  
             $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
             $related = $d->retriveRelatedAssetsByRelationType("Preview");
             $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
