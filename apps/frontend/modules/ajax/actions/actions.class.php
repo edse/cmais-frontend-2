@@ -1234,7 +1234,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
                 $assetPersonagens[] = $a->getSlug();
                 
                 //if($a->getSlug() == "zoe") {$zoe++;}
-                if($a->getSlug() == "bel"){$bel = $bel++;}
+                //elseif($a->getSlug() == "bel"){$bel = $bel++;}
               }
             }
             
@@ -1290,12 +1290,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           $return .=  '</a>';
           $return .= '</li>';
           echo $return;
-          echo $bel."teste";
         }
-        
-      
     }
-    
     die();
   }
     
