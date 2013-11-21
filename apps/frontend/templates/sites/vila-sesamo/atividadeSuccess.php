@@ -76,14 +76,12 @@
       <p>
       <?php if(isset($categories)): ?>
         <?php if(count($categories) > 0): ?>
-        	<?php die("teste1") ?>
           <?php      
             foreach($categories as $c) {
-            	
               if($c->getIsHomepage() == 1) { // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando".
                 $seloTitle = $c->getTitle(); // pega o título da secão filha
                 $seloUrl = $c->retriveUrl(); // pega a url da seção filha
-                $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($c->getId(), "selo"); // Pega o bloco "selo" da seção filha
+                $block = Doctrine::getTable('Block')->findOneBySectionId($c->getId()); // Pega o bloco "selo" da seção filha
                 $category_displays["selo"] = $block->retriveDisplays(); // Pega os destaques do bloco "selo"
                 $seloImageUrl = $category_displays["selo"][0]->retriveImageUrlByImageUsage("original"); // Pega a imagem do destaque
               }
