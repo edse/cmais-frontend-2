@@ -1253,7 +1253,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               }
               
             }
-            $section = $assetSection->getSlug();
+            
             $sectionP = $assetSection->getSlug();
             $printPersonagens= " ";
             if(count($assetPersonagens) > 0)
@@ -1275,9 +1275,10 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
           if($section == "cuidadores"):
             $return .=    '<i class="icones-sprite-interna icone-artigo-br-pequeno"></i>';
-            else:
-               
+          elseif($section == "videos" || $section == "jogos" || $section == "atividades"):
             $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
+          else:     
+            $return .=    '<i class="icones-sprite-interna icone-'.$assetSection->getSlug().'-pequeno"></i>';
           endif;
             
           $return .=    '<div>';
