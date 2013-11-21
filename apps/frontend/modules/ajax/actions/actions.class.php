@@ -1225,7 +1225,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
           elseif($section == "jogos" || $section == "videos" || $section == "atividades"):  
             $assetPersonagens = array();
-			      $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
+			      $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
 			      $assetSections = $d->getSections();
 			      foreach($assetSections as $a) {
 			        if($a->getParentSectionId() == $personagensSection->getId()) {
