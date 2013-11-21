@@ -234,8 +234,8 @@
             
             <!--nav-->
             <nav class="span12" aria-disabled="true">
-              <a href="/vilasesamo/cuidadores" class="col-esq" title="">Cuidadores</a>
-              <a href="/vilasesamo/na-tv" class="col-central" title=""><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
+              <a href="/vilasesamo/cuidadores" class="col-esq cuidadores-footer" title="">Cuidadores</a>
+              <a href="/vilasesamo/na-tv" class="col-central natv-footer" title=""><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
               <!--a href="/vilasesamo2/atividades" class="col-dir" title=""><span class="sprite-destalhe-amarelo1"></span>História</a>
             </nav>
             <!--/nav-->
