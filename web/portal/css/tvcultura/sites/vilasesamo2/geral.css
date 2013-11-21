@@ -136,6 +136,12 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-cuidadores{ background-position: 0 -922px; width: 36px; height: 36px; float: left; margin-top: -9px;}
 .btn-cuidadores-topo{padding-left:10px!important;}
 
+/* icone rodape */
+.icones-rodape{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-rodape.png) no-repeat top left; float:left;}
+.icone-habitos-saudaveis-rodape{ background-position: 0 0; width: 208px; height: 50px;margin-top:8px; } 
+.icone-incluir-brincando-rodape{ background-position: 0 -100px; width: 280px; height: 45px; } 
+.icone-logo-internas-rodape{ background-position: 0 -195px; width: 145px; height: 66px; } 
+
 /* internas e assets*/
 .icones-sprite-interna{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-interna.png) no-repeat top left; float:left;margin:3px 3px 3px 10px!important;}
 .icone-artigo-grande{ background-position: 0 0; width: 56px; height: 56px; } 
@@ -585,13 +591,13 @@ footer .mapa a,
 footer .logos li { float:left; }
 footer .logos a { /*text-indent:-9999px; */float:left;}
 footer .logos .sombra { margin:0 auto; width: 100%; }
-footer .col-central { margin:0 0 0 8%; background:#fff; position:relative; width:33%; }
+footer .col-central { margin:0 0 0 17%; background:#fff; position:relative; width:33%; }
 footer .col-central a { width: 63%; }
 footer .mapa .col-central,
 footer .logos .col-central a { margin:3% 10%; }
-footer .col-esq { width: 17%; }
+footer .col-esq { width: 33%; }
 footer .col-esq a { width: 100%; }
-footer .col-dir { width:42%; }
+footer .col-dir { width:33%; }
 footer .col-dir a { width: 81%; }
 footer span { display: block; float:left; }
 footer .sprite-destalhe-amarelo1 { position:absolute; right:-33px; }
