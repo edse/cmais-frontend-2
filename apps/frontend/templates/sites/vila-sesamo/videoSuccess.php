@@ -54,7 +54,7 @@
       <?php echo $section->getTitle() ?>
       <a class="todos-assets" title="voltar para todas vídeos" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" target="_self" >
         <i class="icones-setas icone-voltar-videos"></i>
-        <p>todos os vídeos</p>
+        <p>todos os vídeos</p> 
       </a>
     </h1>
     
