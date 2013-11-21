@@ -232,7 +232,7 @@ body.campanhas{background-color:#fee133!important;}
 .interna.atividades .destaque-filtro article h1 a { color:#883feb;}
 .interna.atividades .destaque-filtro .span6:hover a {color:#b16af2;}
 .interna.atividades .destaque-filtro .span6:hover a img {border:2px solid #b16af2;}
-.interna.atividades .destaque-filtro{padding:0px 10px;}
+.interna.atividades .destaque-filtro{padding:15px 10px 0 10px;}
 .interna.atividades .destaque-filtro.especial { background:#7732e5; }
 .interna.atividades .destaque-filtro.especial li { background:#b16af2; }
 .interna.atividades .destaque-filtro.especial li a { color:#fba500; }
