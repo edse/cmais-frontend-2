@@ -113,7 +113,50 @@
         <?php endif; ?>
         <!--/box-dica-->
         
-        
+        <!--box artigo-->
+        <?php if(count($displays['artigos']) > 0): ?>
+          <?php $preview = $displays['artigos'][0]->Asset->retriveRelatedAssetsByRelationType("Preview") ?>
+          <div class="span4 artigo">
+            <a href="<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $displays['artigos'][0]->getSlug() ?>" title="<?php echo $displays['artigos'][0]->getTitle() ?>">
+              <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt"<?php echo $displays['artigos'][0]->getTitle() ?>"/>
+              <h2 class="tit-artigo"><?php echo $displays['artigos'][0]->getTitle() ?></h2> 
+              <p><?php echo $displays['artigos'][0]->getDescription() ?></p>
+            </a>
+          </div>
+        <?php else: // senão existir artigo, tenta pegar um segundo destaque do bloco "dicas" pra preencher o espaço ?>
+          
+          <!--box-dica-->
+          <?php if(isset($displays['dicas'][1])): ?>
+              <div class="span4 dica-pai">
+                
+                <!--link artigo dica-->
+                <a href="#" title="">
+                  <h2 class="tit-dicas">
+                    <i class="sprite-aspa-esquerda"></i>
+                    <?php echo $displays['dicas'][1]->getTitle(); ?>
+                  </h2>
+                  <p class="ellipsis">
+                    <?php echo html_entity_decode($displays['dicas'][1]->Asset->AssetContent->render()) ?>
+                  </p>
+                  <i class="sprite-aspa-direita"></i>
+                </a>
+                <!--link artigo dica-->
+                
+                <!--botao baixa dica-->
+                <?php $download = $displays['dicas'][1]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
+                <?php if(count($download) > 0): ?>
+                  <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+                    <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</a>
+                  <?php endif; ?>
+                <?php endif; ?>
+                <!--botao baixa dica-->
+                
+              </div>
+          <?php endif; ?>
+          <!--/box-dica-->
+          
+        <?php endif; ?>
+        <!--/box artigo-->
         
         <!--box-parceiros-->
         <?php
