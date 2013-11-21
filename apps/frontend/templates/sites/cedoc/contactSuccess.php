@@ -21,7 +21,7 @@
         <p>Rua Cenno Sbrighi, 378 - Caixa Postal 11.544</br>
         CEP 05036-900</br>
         São Paulo/SP</br>
-        Tel: (11) 2182.3141 </p>
+        Tel: (11) 2182.3227 </p>
       </div>
       <div class="msgErro" style="display:none">
         <span class="alerta"></span>
