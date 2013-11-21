@@ -488,7 +488,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .interna.atividades .divisa.carregar{background-color:#883feb;}
 .interna.jogos .divisa.carregar{background-color: #3aaaec;}
 .interna.videos .divisa.carregar{background-color:#f78701;}
-.bgtotal { width:100%; max-width:100% !important; background:#fee133; padding-top:5px; padding-bottom:25px; }
+.bgtotal { width:100%; max-width:100% !important; background:#fee133; padding-bottom:30px; }
 #container-lista li,
 .destaques .span6 { width:31.6%; overflow:hidden; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
 #container-lista .jogos img,

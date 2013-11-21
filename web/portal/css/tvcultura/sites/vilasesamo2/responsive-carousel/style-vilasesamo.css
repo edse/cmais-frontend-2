@@ -2,7 +2,7 @@
 
 /*carrossel personagens vila sesamo*/
 #carrossel-p{max-width: 940px;margin: 0 auto; border-radius:8px;}
-#carrossel-personagem{max-width:980px;margin:20px auto;}
+#carrossel-personagem{max-width:980px;margin:30px auto;}
 #carrossel-personagem .slider {position: relative; overflow: hidden; zoom: 1; background-color: #d71c0d; border-radius: 5px; }
 #carrossel-personagem .slider-nav { position: absolute; zoom: 1; width: 100%; top: 0; left: 0;}
 
