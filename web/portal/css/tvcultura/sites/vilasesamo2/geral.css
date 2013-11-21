@@ -521,7 +521,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques i.sprite-icon-jogos-grd:hover { background-position: -130px -130px; }
 .destaques i.sprite-icon-clipes-grd:hover { background-position: 0 -598px; }
 .destaques i.sprite-icon-colorir-grd:hover { background-position: 0 -1070px;}
-.destaques a { display: block; font-size:25px; line-height:30px; color:#fff; text-transform:uppercase; font-weight:normal; padding-top:4%; text-align:left; }
+.destaques a { display: block; font-size:25px; line-height:40px; color:#fff; text-transform:uppercase; font-weight:normal; text-align:left; }
 .destaques a  i { margin:0 4%; }
 #container-lista h2 a,
 .destaques a.asset { font-size:18px; padding:4%; color:#fff; line-height:18px; border-bottom:2px solid #0191fb; }
@@ -646,7 +646,7 @@ footer .relacionados li.last { margin-right:0; }
 .box-pais .parceiros img{width:100%;}
 .box-pais a:hover{color:#434343;} 
 
-img.altura{width: 1px!important;height: 38px!important;}
+img.altura{width: 1px!important;height: 40px!important;}
 #content .pais {overflow: hidden;min-height: 46px!important; background:#feec3c; margin:0 auto !important; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 .pais h2.tit-box{height: 44px;font-size: 25px;line-height: 47px;padding: 1px 20px;color: #434343;}
 .pais .divisa { margin-bottom:0; }
