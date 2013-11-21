@@ -1281,7 +1281,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
             if($section == "cuidadores"):
               $return .=    '<i class="icones-sprite-interna icone-artigo-br-pequeno"></i>';
-            elseif($section == "videos" || $section == "jogos" || $section == "atividades"):
+            elseif($section == "jogos" || $section == "atividades"):
               $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
             else:     
               $return .=    '<i class="icones-sprite-interna icone-'.$assetSection->getSlug().'-pequeno"></i>';
