@@ -70,16 +70,16 @@
     
     
     //filtro artigos por categoria
-    $('.dropdown-menu.categorias li a').click(function(){ 
-      var $i=0;
-      var $j=0
-      var $select_cat = $(this).attr('data-filter');
-      filter_selected = $select_cat;
-      
-      $container.isotope({ filter:filter_selected });
-      
-      return false;
-    });
+  $('.dropdown-menu.cuidadores li a').click(function(){ 
+    var $i=0;
+    var $j=0
+    var $select_cat = $(this).attr('data-filter');
+    filter_selected = $select_cat;
+    
+    $container.isotope({ filter:filter_selected });
+    
+    return false;
+  });
     
     function goTop(){
       $('html, body').animate({

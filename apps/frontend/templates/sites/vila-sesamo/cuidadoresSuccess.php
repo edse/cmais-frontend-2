@@ -110,7 +110,7 @@
             <?php if(count($allCategories) > 0): ?>
             <div class="btn-group">
               <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu cuidadores">
                 <?php foreach($allCategories as $c): ?>
                 <li>
                   <a href="javascript:;" class="<?php echo $c->getSlug(); ?>" title="<?php echo $c->getTitle() ?>" data-filter=".<?php echo $c->getSlug() ?>" data-toggle="dropdown">
@@ -284,18 +284,6 @@
   });
   
   
-  //filtro artigos por categoria
-  $('.dropdown-menu li a').click(function(){ 
-    var $i=0;
-    var $j=0
-    var $select_cat = $(this).attr('data-filter');
-    filter_selected = $select_cat;
-    
-    $container.isotope({ filter:filter_selected });
-    
-    return false;
-  });
-    
   slideShow = function(ev){
     //ev.preventDefault();
     $('#carrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
