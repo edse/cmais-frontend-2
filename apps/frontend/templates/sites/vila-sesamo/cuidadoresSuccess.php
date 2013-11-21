@@ -282,7 +282,20 @@
     var select = $(this).attr('title');
     $('.btn.dropdown-toggle').html(select + '<span class="caret icones-setas icone-cat-abrir"></span>');
   });
-   
+  
+  
+  //filtro artigos por categoria
+  $('.dropdown-menu li a').click(function(){ 
+    var $i=0;
+    var $j=0
+    var $select_cat = $(this).attr('data-filter');
+    filter_selected = $select_cat;
+    
+    $container.isotope({ filter:filter_selected });
+    
+    return false;
+  });
+    
   slideShow = function(ev){
     //ev.preventDefault();
     $('#carrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
