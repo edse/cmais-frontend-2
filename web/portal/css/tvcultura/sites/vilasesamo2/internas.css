@@ -34,7 +34,7 @@ a:hover{text-decoration:underline!important;}
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
 .filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1773px; top:0; }
 .filtro .span2{ background:#d71c0d; border:1px solid #c31408; overflow:hidden; width: 175px;margin: 3px;display: block;margin-top: -2px;}
-.filtro .span10 { margin-left: 0;width: 758px;float: right;height: 413px; }
+.filtro .span10 { margin-left: 0;width: 758px;float: right;height: 425px; }
 .filtro .span12 { border-top:0px solid #0191fb; border-bottom:2px solid #0191fb; background:#EE3021;  /*border-left:2px solid #0191fb;*/  }
 .filtro .filtro-personagem { margin-left:0; }
 .filtro .filtro-personagem li { float:left; margin:2%; list-style:none;  /*width:75px; height:75px;*/  width:45.6%; overflow: hidden;/*height:45.6%;*/}
