@@ -6,7 +6,7 @@
       itemSelector : '.element',
       layoutMode:'fitRows'
     }); 
-    $('.count').each(function(){
+    $($('.filtro-personagem li).each(function(){
       console.log("oi")
     });
     var filter_selected;
