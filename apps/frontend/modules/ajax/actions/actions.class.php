@@ -1232,19 +1232,17 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             foreach($assetSections as $a) {
               if($a->getParentSectionId() == $personagensSection->getId()) {
                 $assetPersonagens[] = $a->getSlug();
-                if($a->getSlug() == "zoe") {
-                  $zoe++;
-                }elseif($a->getSlug() == "bel"){
-                  $bel++;
-                }
+                if($a->getSlug() == "zoe") {$zoe++;}
+                elseif($a->getSlug() == "bel"){$bel++;}
               }
             }
             
             $printPersonagens= " ";
             if(count($assetPersonagens) > 0)
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
-            $return =  '<div class="count" data-bel='.$bel. ' data-zoe='.$zoe.'>teste</div>';
-            $return .=  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
+           
+            $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
+             $return .=  '<div class="count" data-bel='.$bel. ' data-zoe='.$zoe.'>teste</div>';
           else:
             $assetPersonagens = array();
             $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
