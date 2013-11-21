@@ -1237,7 +1237,9 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             if(count($assetPersonagens) > 0)
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
             
-            $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
+            if($section == "jogos" || $section == "atividades"):
+              $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
+            endif;
           else:
             $assetPersonagens = array();
             $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
@@ -1257,9 +1259,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $printPersonagens= " ";
             if(count($assetPersonagens) > 0)
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
-            if($section == "jogos" || $section == "atividades"):
-              $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';
-            endif;    
+            
+            $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';
           endif; 
           
           if($section == "videos" && $d->AssetVideo->getYoutubeId()!="" || (isset($sectionP) && $sectionP == "videos")):
