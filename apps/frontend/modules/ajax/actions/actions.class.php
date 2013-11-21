@@ -1199,7 +1199,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->andWhere('sa.asset_id = a.id')
         ->andWhere('a.is_active = ?', 1)
         ->andWhere('a.site_id = ?',$siteId)
-        ->orderBy('a.id desc')
+        ->orderBy('a.id rand')
         ->limit($items)
         ->offset($start)
         ->execute();
