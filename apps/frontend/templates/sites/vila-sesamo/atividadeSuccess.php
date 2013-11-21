@@ -28,7 +28,6 @@
   }
 ?>
 
-<?php die("teste") ?>
 
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
@@ -77,8 +76,10 @@
       <p>
       <?php if(isset($categories)): ?>
         <?php if(count($categories) > 0): ?>
+        	<?php die("teste1") ?>
           <?php      
             foreach($categories as $c) {
+            	
               if($c->getIsHomepage() == 1) { // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando".
                 $seloTitle = $c->getTitle(); // pega o título da secão filha
                 $seloUrl = $c->retriveUrl(); // pega a url da seção filha
