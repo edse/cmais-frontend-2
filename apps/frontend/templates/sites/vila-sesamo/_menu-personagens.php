@@ -52,24 +52,12 @@
             
             
 
-          teste()
+          contPersonagens()
           $('.inner a[class|="btn"]').not('.inner a.active').not('.inner.personagem a').click(function(){
             goTop();  
           });
           
-          function goTop(){
-            $('html, body').animate({
-              scrollTop:parseInt($('.divisa').offset().top-126)
-            }, "slow");
-          }
-          function teste(){
-            var bel = 0;
-            $('.count').each(function(){
-              
-              console.log("oi")
-            });
-            
-          }
+          
           $('.inner a').not('.inner a.active').mouseenter(function(){
            if($(this).parent().hasClass('jogos')){ 
             $(this).find('img').animate({top:-33, easing:"swing"},'fast');
@@ -83,6 +71,18 @@
               $(this).find('img').animate({top:0, easing:"swing"},'fast'); 
             } 
           });
+          function contPersonagens(){
+            var bel = 0;
+            console.log("oi fora")
+            $('.count').each(function(){
+              console.log("oi")
+            });
+          }
+          function goTop(){
+            $('html, body').animate({
+              scrollTop:parseInt($('.divisa').offset().top-126)
+            }, "slow");
+          }
         </script>
       
         
