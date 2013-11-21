@@ -11,7 +11,7 @@ a:hover{text-decoration:underline!important;}
 #content { top:134px; margin-bottom:200px; }
 #content .section,
 #content section { max-width:940px; margin:20px auto; }
-#content h1 { margin:0; font-size:50px; height:55px; line-height: 55px; padding:0 0px 5px 20px;}
+#content h1 {margin: 0;font-size: 50px;height: 60px;line-height: 60px;padding: 0 0px 5px 0px;}
 #content h1 span,
 #content h1 i { margin: -4px 20px 10px 0;  }
 #content h1 .sprite-icon-colorir-med { margin-top:-6px; }
