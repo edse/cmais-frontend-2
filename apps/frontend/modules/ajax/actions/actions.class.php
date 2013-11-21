@@ -1260,7 +1260,9 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             if(count($assetPersonagens) > 0)
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
             
-            $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';
+            if($sectionP == "jogos" || $sectionP == "atividades"):
+              $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';
+            endif;  
           endif; 
           
           if($section == "videos" && $d->AssetVideo->getYoutubeId()!="" || (isset($sectionP) && $sectionP == "videos" || $d->AssetVideo->getYoutubeId()!="")):
