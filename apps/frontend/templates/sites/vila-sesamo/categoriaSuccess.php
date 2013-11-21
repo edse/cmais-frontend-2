@@ -201,7 +201,7 @@
       <?php if(isset($pager)): ?>
         <?php if(count($pager) > 0): ?>
           <?php $pager2 = count($pager)/9; ?>
-          <?php $parent = $section->Parent->getSlug() ?>
+          
           <?php
       /*
           <?php foreach($pager->getResults() as $k=>$d): ?>
