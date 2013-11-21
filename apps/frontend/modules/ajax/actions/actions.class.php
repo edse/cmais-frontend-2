@@ -1224,21 +1224,21 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return =  '<li class="span4 element '. $printCategorias .'">';
           
           elseif($section == "jogos" || $section == "videos" || $section == "atividades"):  
+            
             $assetPersonagens = array();
-			      $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->id, 'personagens');
-			      $assetSections = $d->getSections();
-			      foreach($assetSections as $a) {
-			        if($a->getParentSectionId() == $personagensSection->getId()) {
-			          $assetPersonagens[] = $a->getSlug();
-			        }
-			      }
+            $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
+            $assetSections = $d->getSections();
+            foreach($assetSections as $a) {
+              if($a->getParentSectionId() == $personagensSection->getId()) {
+                $assetPersonagens[] = $a->getSlug();
+              }
+            }
             
             $printPersonagens= " ";
             if(count($assetPersonagens) > 0)
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
-           
+            
             $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
-            //$return .=  '<div class="count" data-bel='.$bel. ' data-zoe='.$zoe.'></div>';
           else:
             $assetPersonagens = array();
             $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
@@ -1286,6 +1286,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           $return .= '</li>';
           echo $return;
         }
+        
+      
     }
     die();
   }

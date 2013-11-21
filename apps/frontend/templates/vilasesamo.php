@@ -201,29 +201,29 @@
             <!--nav sites Vila Sesamo-->
             
             <!--nav Personagens-->
-            <nav class="span12" title="Menu Personagens">
-              <h3>Personagens:</h3>
+            <nav class="span12 personagens-rodape" title="Menu Personagens">
+              <h3>PERSONANGENS:</h3>
               <ul>
                 <li>
-                  <a href="/vilasesamo/personagens/garibaldo" title="Garibaldo" target="_self">Garibaldo,</a>
+                  <a href="/vilasesamo/personagens/garibaldo" title="Garibaldo" target="_self">Garibaldo</a><span>,</span>
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/bel" title="Bel" target="_self">Bel,</a>
+                  <a href="/vilasesamo/personagens/bel" title="Bel" target="_self">Bel</a><span>,</span>
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/elmo" title="Elmo" target="_self">Elmo,</a>
+                  <a href="/vilasesamo/personagens/elmo" title="Elmo" target="_self">Elmo</a><span>,</span>
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/grover" title="Grover" target="_self">Grover,</a>
+                  <a href="/vilasesamo/personagens/grover" title="Grover" target="_self">Grover</a><span>,</span>
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/beto" title="Beto" target="_self">Beto,</a>
+                  <a href="/vilasesamo/personagens/beto" title="Beto" target="_self">Beto</a><span>,</span>
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/enio" title="Ênio" target="_self">Ênio,</a>
+                  <a href="/vilasesamo/personagens/enio" title="Ênio" target="_self">Ênio</a><span>,</span>
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/comecome" title="Come-Come" target="_self">Come-Come,</a>
+                  <a href="/vilasesamo/personagens/comecome" title="Come-Come" target="_self">Come-Come</a><span>,</span>
                 </li>
                 <li>
                   <a href="/vilasesamo/personagens/zoe" title="Zoe" target="_self">Zoe</a>
