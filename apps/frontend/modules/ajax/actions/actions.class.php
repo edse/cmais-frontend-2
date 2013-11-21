@@ -1203,7 +1203,6 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->limit($items)
         ->offset($start)
         ->execute();
-        
           
         foreach($assets as $d){
           

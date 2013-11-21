@@ -70,7 +70,7 @@
     
     
     //filtro artigos por categoria
-    $('.dropdown-menu li a').click(function(){ 
+    $('.dropdown-menu.categorias li a').click(function(){ 
       var $i=0;
       var $j=0
       var $select_cat = $(this).attr('data-filter');

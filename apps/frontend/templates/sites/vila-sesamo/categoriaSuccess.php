@@ -32,7 +32,7 @@
           <?php if(count($allCategories) > 0): ?>
           <div class="btn-group">
             <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu categorias">
               <?php foreach($allCategories as $c): ?>
               <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
               <?php endforeach; ?>
