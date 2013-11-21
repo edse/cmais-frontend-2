@@ -202,28 +202,28 @@
             
             <!--nav Personagens-->
             <nav class="span12" title="Menu Personagens">
-              <h3>Personagens:</h3>
+              <h3>PERSONANGENS:</h3>
               <ul>
                 <li>
-                  <a href="/vilasesamo/personagens/garibaldo" title="Garibaldo" target="_self">Garibaldo,</a>
+                  <a href="/vilasesamo/personagens/garibaldo" title="Garibaldo" target="_self">Garibaldo</a>,
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/bel" title="Bel" target="_self">Bel,</a>
+                  <a href="/vilasesamo/personagens/bel" title="Bel" target="_self">Bel</a>,
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/elmo" title="Elmo" target="_self">Elmo,</a>
+                  <a href="/vilasesamo/personagens/elmo" title="Elmo" target="_self">Elmo</a>,
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/grover" title="Grover" target="_self">Grover,</a>
+                  <a href="/vilasesamo/personagens/grover" title="Grover" target="_self">Grover</a>,
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/beto" title="Beto" target="_self">Beto,</a>
+                  <a href="/vilasesamo/personagens/beto" title="Beto" target="_self">Beto</a>,
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/enio" title="Ênio" target="_self">Ênio,</a>
+                  <a href="/vilasesamo/personagens/enio" title="Ênio" target="_self">Ênio</a>,
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/comecome" title="Come-Come" target="_self">Come-Come,</a>
+                  <a href="/vilasesamo/personagens/comecome" title="Come-Come" target="_self">Come-Come</a>,
                 </li>
                 <li>
                   <a href="/vilasesamo/personagens/zoe" title="Zoe" target="_self">Zoe</a>
