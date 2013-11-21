@@ -1272,7 +1272,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return .=          $d->getTitle();
             $return .=      '</div>';
             $return .=    '</a>';
-          else:  
+          elseif($section=="atividades" || $section=="jogos"):  
             $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
             $related = $d->retriveRelatedAssetsByRelationType("Preview");
             $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
@@ -1287,6 +1287,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return .=        '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
             $return .=          $d->getTitle();
             $return .=      '</div>';
+            $return .=    '</a>';
           endif;  
           $return .=    '</li>';
           echo $return;
