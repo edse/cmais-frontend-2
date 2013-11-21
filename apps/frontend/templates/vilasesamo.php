@@ -100,7 +100,7 @@
   </head>
   <body>
     <!-- header -->
-    <header class="navbar navbar-inverse navbar-fixed-top">
+    <header class="navbar navbar-inverse navbar-fixed-top" aria-label="Menu topo Vila Sésamo">
       <!--div class="navbar-inner topo-cmais">
         <div class="container">
           <h2><a href="http://tvcultura.cmais.com.br/" title="TV Cultura" class="sprite-logo-cultura"></a></h2>
@@ -166,23 +166,23 @@
       <div class="container row-fluid">
         
         <!--section-->  
-        <section>
+        <section aria-label="Você está entrando no rodapé da página">
           
           <!--logos-->
           <ul class="logos">
             <li class="col-esq">
               <a href="http://cmais.com.br/vilasesamo" title="Site Vila Sésamo" target="_self">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-sesamo-peq.png" alt="" />
+                <i class="icones-rodape icone-logo-internas-rodape"></i>
               </a>
             </li>
             <li class="col-central">
               <a href="http://cmais.com.br/vilasesamo/categorias/habitos-saudaveis" title="Hábitos Saudáveis" target="_self">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-habitos-saudaveis.png" alt="" />
+                <i class="icones-rodape icone-habitos-saudaveis-rodape"></i>
               </a>
             </li>
             <li class="col-dir">
               <a href="http://cmais.com.br/vilasesamo/categorias/incluir-brincando" title="Incluir Brincando" target="_self">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-incluir-grd.png" alt="" />
+                <i class="icones-rodape icone-incluir-brincando-rodape"></i>
               </a>
             </li>
             <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt="" />
@@ -249,13 +249,13 @@
       <section class="relacionados">
         <h3>Sites relacionados</h3>
         <ul>
-          <li><a href="#" class="sprite-logo-cultura2" title="TV Cultura"></a></li>
-          <li><a href="#" class="sprite-logo-rtb" title="TV Rá Tim Bum"></a></li>
-          <li><a href="#" class="sprite-logo-maiscrianca" title="Mais Criança"></a></li>
-          <li class="cocorico"><a href="#" class="sprite-logo-cocorico" title="TV Cocoricó"></a></li>
-          <li><a href="#" class="sprite-logo-castelo" title="Castelo Rá Tim Bum"></a></li>
-          <li><a href="#" class="sprite-logo-cartaozinho" title="Cartãozinho"></a></li>
-          <li class="last"><a href="#" class="sprite-logo-quintal" title="Quintal da Cultura"></a></li>
+          <li><a href="http://tvcultura.cmais.com.br/" target="_blank" class="sprite-logo-cultura2" title="TV Cultura"></a></li>
+          <li><a href="http://tvratimbum.cmais.com.br/" target="_blank" class="sprite-logo-rtb" title="TV Rá Tim Bum"></a></li>
+          <li><a href="http://cmais.com.br/maiscrianca" target="_blank" class="sprite-logo-maiscrianca" title="Mais Criança"></a></li>
+          <li><a href="http://tvcultura.cmais.com.br/cocorico" target="_blank" class="sprite-logo-cocorico"  title="TV Cocoricó"></a></li>
+          <li><a href="http://tvcultura.cmais.com.br/castelo" target="_blank" class="sprite-logo-castelo" title="Castelo Rá Tim Bum"></a></li>
+          <li><a href="http://tvcultura.cmais.com.br/cartaozinho" target="_blank" class="sprite-logo-cartaozinho" title="Cartãozinho"></a></li>
+          <li class="last"><a href="http://tvcultura.cmais.com.br/quintaldacultura" target="_blank" class="sprite-logo-quintal" title="Quintal da Cultura"></a></li>
           
         </ul>
       </section>
