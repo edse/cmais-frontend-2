@@ -1243,7 +1243,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $printPersonagens= " ";
             if(count($assetPersonagens) > 0)
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
-            $return =  '<input class="count" type="hidden" data-bel='.$bel. ' data-zoe='.$zoe.'>';
+            $return =  '<input class="count" type="text" data-bel='.$bel. ' data-zoe='.$zoe.' style="display:hidden">';
             $return .=  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
           else:
             $assetPersonagens = array();

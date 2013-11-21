@@ -6,9 +6,7 @@
       itemSelector : '.element',
       layoutMode:'fitRows'
     }); 
-    $('.count').each(function(){
-      console.log("oi")
-    });
+    
     var filter_selected;
     
     //seleciona todos no filtro
