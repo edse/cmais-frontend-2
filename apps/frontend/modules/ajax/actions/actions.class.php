@@ -1290,9 +1290,10 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           $return .=  '</a>';
           $return .= '</li>';
           echo $return;
+          echo $bel."teste";
         }
         
-      echo $bel."teste";
+      
     }
     
     die();
