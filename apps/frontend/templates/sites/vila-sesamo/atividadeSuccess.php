@@ -1,3 +1,4 @@
+<?php die("teste") ?>
 <?php use_helper('I18N', 'Date') ?>
 
 <?php
