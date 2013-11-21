@@ -24,6 +24,7 @@
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <script>
+  vilaSesamoGetContents();
   contentPage = 1;
   quantPage = <?php echo intval($pager2) ?> + 1;
   $('.mais').click(function(){
@@ -57,7 +58,4 @@
       }
     });
   }
-  $(document).ready(function(){
-   vilaSesamoGetContents();
-  });
 </script>
