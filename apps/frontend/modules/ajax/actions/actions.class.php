@@ -1253,6 +1253,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               }
               
             }
+            $section = $assetSection->getSlug();
             $sectionP = $assetSection->getSlug();
             $printPersonagens= " ";
             if(count($assetPersonagens) > 0)
