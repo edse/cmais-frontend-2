@@ -17,7 +17,7 @@
                     <?php foreach($personagens as $p): ?>
                       <li>
                         <div class="inner personagens <?php echo $p->getSlug()?>">
-                          <a href="/<?php echo $site->getSlug(); ?>/personagens/<?php echo $p->getSlug() ?>" title="<?php echo $p->getTitle() ?>" class="btn-<?php echo $p->getSlug() ?>">
+                          <a href="/<?php echo $site->getSlug(); ?>/personagens/<?php echo $p->getSlug() ?>" title="<?php echo $p->getTitle() ?>" class="btn-<?php echo $p->getSlug() ?>" aria-label="<?php echo $p->getTitle() ?>">
                             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem.png" alt="" />
                           </a>
                         </div>

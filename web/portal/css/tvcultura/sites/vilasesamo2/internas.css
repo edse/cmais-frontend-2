@@ -7,13 +7,13 @@ a:hover{text-decoration:underline!important;}
 .header-bar h1 a { float:left; /*width:100%;*/ }
 .header-bar h1 span,
 .header-bar h1 i { float:right; }
-.conteudo-asset h2 {font-size: 25px;margin-bottom: 10px;}
+.conteudo-asset h2 {font-size: 25px;margin: 20px 0;}
 #content { top:134px; margin-bottom:200px; }
 #content .section,
 #content section { max-width:940px; margin:20px auto; }
-#content h1 { margin:0; font-size:50px; height:55px; line-height: 55px; padding:0 0px 5px 20px;}
+#content h1 {margin: 0;font-size: 50px;height: 60px;line-height: 60px;padding: 0 0px 5px 0px;}
 #content h1 span,
-#content h1 i { margin: -4px 20px 10px 0;  }
+#content h1 i.icones-sprite-interna {margin: 0px 20px 0px 20!important}
 #content h1 .sprite-icon-colorir-med { margin-top:-6px; }
 #content h1 .sprite-icon-jogos-med { margin-top:4px; }
 #page_nav { max-width:940px;  margin:3% auto; overflow:hidden; }
@@ -34,7 +34,7 @@ a:hover{text-decoration:underline!important;}
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
 .filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1773px; top:0; }
 .filtro .span2{ background:#d71c0d; border:1px solid #c31408; overflow:hidden; width: 175px;margin: 3px;display: block;margin-top: -2px;}
-.filtro .span10 { margin-left: 0;width: 758px;float: right;height: 413px; }
+.filtro .span10 { margin-left: 0;width: 758px;float: right;height: 425px; }
 .filtro .span12 { border-top:0px solid #0191fb; border-bottom:2px solid #0191fb; background:#EE3021;  /*border-left:2px solid #0191fb;*/  }
 .filtro .filtro-personagem { margin-left:0; }
 .filtro .filtro-personagem li { float:left; margin:2%; list-style:none;  /*width:75px; height:75px;*/  width:45.6%; overflow: hidden;/*height:45.6%;*/}
@@ -109,9 +109,9 @@ body.campanhas{background-color:#fee133!important;}
 .interna .paginas{float:left;padding:5px;width: 528px;}
 .interna .paginas img{width:100px;}
 .interna .paginas span{text-transform:uppercase;text-align:left; font-family:'din-blackregular',Arial, Helvetica, sans-serif;color:#571ed9;font-size: 25px;float: left;line-height: 61px;}
-.interna.atividades .destaque-filtro article a p{color: #883feb;}
+.interna.atividades .destaque-filtro article a p{color: #b16af2;}
 .interna.jogos .destaque-filtro article a p{color: #02cbff;}
-.interna.videos .destaque-filtro article a p{color: #f36701;}
+.interna.videos .destaque-filtro article a p{color: #fba500;}
 .destaque-filtro a img { border:2px solid transparent; }
 .destaque-filtro .span6:hover a {color:#02cbff; text-decoration:underline;}
 .destaque-filtro .span6:hover a img {border:2px solid #02cbff;}
@@ -164,6 +164,7 @@ body.campanhas{background-color:#fee133!important;}
 /* /todos itens*/
 
 /* interna*/
+.interna .filtro .span2 { border-top-color:#f27300 !important; margin-top: 3px; }
 .interna .destaque-filtro article{margin-right: 14px;}
 .interna .semmargem{margin-right:0px!important;}
 .interna-content { min-width:900px; min-height:675px; background:#000; clear: both; }
@@ -179,7 +180,7 @@ body.campanhas{background-color:#fee133!important;}
 .interna.videos { background:#f36701; }
 .interna.videos .filtro .span10 { border-left: 2px solid #f77400; }
 .interna.videos .yt-destaque{width:350px; height:350px; display:block; overflow: hidden;border:#FFFFFF 2px solid;}
-.interna.videos .yt-destaque:hover{border:#f77400 2px solid;}
+.interna.videos .yt-destaque:hover{border:#fba500 2px solid;}
 .interna.videos .yt-destaque img{max-width:750px!important;margin-left: -73px;margin-top: -7px;}
 .interna.videos .yt-menu,
 .cuidadores .container-cuidadores .destaques .yt-menu{max-width:300px;height:300px; display:block; overflow: hidden;border-bottom:#f77400 2px solid;}
@@ -231,8 +232,7 @@ body.campanhas{background-color:#fee133!important;}
 .interna.atividades .destaque-filtro article h1 a { color:#883feb;}
 .interna.atividades .destaque-filtro .span6:hover a {color:#b16af2;}
 .interna.atividades .destaque-filtro .span6:hover a img {border:2px solid #b16af2;}
-.interna.atividades .filtro .span2 { border-top-color:#f27300 !important; margin-top: 3px; }
-.interna.atividades .destaque-filtro{padding:0px 10px;}
+.interna.atividades .destaque-filtro{padding:15px 10px 0 10px;}
 .interna.atividades .destaque-filtro.especial { background:#7732e5; }
 .interna.atividades .destaque-filtro.especial li { background:#b16af2; }
 .interna.atividades .destaque-filtro.especial li a { color:#fba500; }

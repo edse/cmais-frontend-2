@@ -14,7 +14,7 @@
     
   </style> 
   <!-- carrossel desktop-->
-  <section id="carrossel-destaque">
+  <section id="carrossel-destaque" aria-label="banners destaques rotativos">
     <!--Inicio-->
     <div id="slider" style="display:none;">
       <!--lista-->
