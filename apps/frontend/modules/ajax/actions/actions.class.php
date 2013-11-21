@@ -1263,7 +1263,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';
           endif; 
           
-          if($section == "videos" && $d->AssetVideo->getYoutubeId()!="" || (isset($sectionP) && $sectionP == "videos")):
+          if($section == "videos" && $d->AssetVideo->getYoutubeId()!="" || (isset($sectionP) && $sectionP == "videos" || $d->AssetVideo->getYoutubeId()!="")):
             $return =  '<li class="span4 element '. $printPersonagens ." ".' videos">';
             $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
             $return .=      '<div class="yt-menu">';
