@@ -1261,31 +1261,30 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';  
           endif; 
           
-          $return .=   '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
-          
-          if($section == "videos" || (isset($sectionP) && $sectionP == "videos")):
-            $return .=  '<div class="yt-menu">';
-            $return .=    '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$d->AssetVideo->getHeadline().'" />';
-            $return .=  '</div>';
+          if($section == "videos"&&isset($d->AssetVideo->getYoutubeId()) || (isset($sectionP) && $sectionP == "videos")):
+            $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
+            $return .=      '<div class="yt-menu">';
+            $return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$d->AssetVideo->getHeadline().'" />';
+            $return .=      '</div>';
+            $return .=      '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
+            $return .=      '<div>';
+            $return .=        '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
+            $return .=          $d->getTitle();
+            $return .=        '</div>';
+            $return .=      '</a>';
           else:  
+            $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
             $related = $d->retriveRelatedAssetsByRelationType("Preview");
             $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
-          endif;
-          
-          if($section == "cuidadores"):
-            $return .=    '<i class="icones-sprite-interna icone-artigo-br-pequeno"></i>';
-          elseif($section == "videos" || $section == "jogos" || $section == "atividades"):
-            $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
-          else:     
-            $return .=    '<i class="icones-sprite-interna icone-'.$assetSection->getSlug().'-pequeno"></i>';
-          endif;
-            
-          $return .=    '<div>';
-          $return .=      '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
-          $return .=       $d->getTitle();
-          $return .=    '</div>';
-          $return .=  '</a>';
-          $return .= '</li>';
+            if($section == "cuidadores"):
+              $return .=    '<i class="icones-sprite-interna icone-artigo-br-pequeno"></i>';
+            elseif($section == "videos" || $section == "jogos" || $section == "atividades"):
+              $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
+            else:     
+              $return .=    '<i class="icones-sprite-interna icone-'.$assetSection->getSlug().'-pequeno"></i>';
+            endif;
+          endif;  
+          $return .=    '</li>';
           echo $return;
         }
         
