@@ -1222,24 +1222,23 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $printCategorias .= " " . implode(" ", $assetCategorias);
             
             $return =  '<li class="span4 element '. $printCategorias .'">';
-            $return .=   '<a href="/'.  $site .'/' . $section .'/'. $d->getSlug() . '" title="' . $d->getTitle() . '">';
           
           elseif($section == "jogos" || $section == "videos" || $section == "atividades"):  
+            
             $assetPersonagens = array();
-			      $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
-			      $assetSections = $d->getSections();
-			      foreach($assetSections as $a) {
-			        if($a->getParentSectionId() == $personagensSection->getId()) {
-			          $assetPersonagens[] = $a->getSlug();
-			        }
-			      }
+            $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
+            $assetSections = $d->getSections();
+            foreach($assetSections as $a) {
+              if($a->getParentSectionId() == $personagensSection->getId()) {
+                $assetPersonagens[] = $a->getSlug();
+              }
+            }
             
             $printPersonagens= " ";
             if(count($assetPersonagens) > 0)
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
-           
+            
             $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
-            $return .=   '<a href="/'.  $site .'/' . $section .'/'. $d->getSlug() . '" title="' . $d->getTitle() . '">';
           else:
             $assetPersonagens = array();
             $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
@@ -1260,10 +1259,9 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
             
             $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';  
-            $return .=   '<a href="/'.  $site .'/' . $section .'/'. $d->getSlug() . '" title="' . $d->getTitle() . '">';
           endif; 
           
-          
+          $return .=   '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
           
           if($section == "videos" || (isset($sectionP) && $sectionP == "videos")):
             $return .=  '<div class="yt-menu">';
@@ -1288,6 +1286,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           $return .= '</li>';
           echo $return;
         }
+        
+      
     }
     die();
   }
