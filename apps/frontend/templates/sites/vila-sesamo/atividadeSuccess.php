@@ -1,4 +1,3 @@
-<?php die("teste") ?>
 <?php use_helper('I18N', 'Date') ?>
 
 <?php
@@ -28,6 +27,9 @@
     }
   }
 ?>
+
+<?php die("teste") ?>
+
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
