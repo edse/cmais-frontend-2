@@ -591,12 +591,12 @@ footer .mapa a,
 footer .logos li { float:left; }
 footer .logos a { /*text-indent:-9999px; */float:left;}
 footer .logos .sombra { margin:0 auto; width: 100%; }
-footer .col-central { margin:0 0 0 17%; background:#fff; position:relative; width:33%; }
+footer .col-central { background:#fff; position:relative; width:33%; }
 footer .col-central a { width: 63%; }
 footer .mapa .col-central,
-footer .logos .col-central a { margin:3% 10%; }
+footer .logos .col-central a { margin:4% 15%; }
 footer .col-esq { width: 33%; }
-footer .col-esq a { width: 100%; }
+footer .col-esq a {margin: 12px 0 0 79px;display: block;overflow: hidden }
 footer .col-dir { width:33%; }
 footer .col-dir a { width: 81%; }
 footer span { display: block; float:left; }
