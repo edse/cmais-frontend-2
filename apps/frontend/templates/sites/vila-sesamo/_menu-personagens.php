@@ -66,11 +66,9 @@
             var bel = 0;
             $('.count').each(function(){
               
-              if(parseInt($(this).attr('data-bel')) == 1){
-                bel = bel+1
-              }
+              console.log("oi")
             });
-            alert(bel)
+            
           }
           $('.inner a').not('.inner a.active').mouseenter(function(){
            if($(this).parent().hasClass('jogos')){ 
