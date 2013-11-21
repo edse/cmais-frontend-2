@@ -1266,7 +1266,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return .=      '<div class="yt-menu">';
             $return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$d->AssetVideo->getHeadline().'" />';
             $return .=      '</div>';
-            $return .=      '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
+            $return .=      '<i class="icones-sprite-interna icone-videos-pequeno"></i>';
             $return .=      '<div>';
             $return .=        '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
             $return .=          $d->getTitle();
