@@ -7,7 +7,7 @@ a:hover{text-decoration:underline!important;}
 .header-bar h1 a { float:left; /*width:100%;*/ }
 .header-bar h1 span,
 .header-bar h1 i { float:right; }
-.conteudo-asset h2 {font-size: 25px;margin-bottom: 10px;}
+.conteudo-asset h2 {font-size: 25px;margin: 20px 0;}
 #content { top:134px; margin-bottom:200px; }
 #content .section,
 #content section { max-width:940px; margin:20px auto; }
