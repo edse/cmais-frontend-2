@@ -223,7 +223,7 @@
                   <a href="/vilasesamo/personagens/enio" title="Ênio" target="_self">Ênio</a><span>,</span>
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/comecome" title="Come-Come" target="_self">Come-Come</a>
+                  <a href="/vilasesamo/personagens/comecome" title="Come-Come" target="_self">Come-Come</a><span>,</span>
                 </li>
                 <li>
                   <a href="/vilasesamo/personagens/zoe" title="Zoe" target="_self">Zoe</a>
