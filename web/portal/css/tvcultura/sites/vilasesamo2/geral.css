@@ -132,7 +132,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-btn-personagens{ background-position: 0 -320px; width: 60px; height: 60px; } 
 .icone-btn-videos{ background-position: 0 -480px; width: 60px; height: 60px; } 
 .icone-busca:hover{ background-position: 0 -640px; width: 41px; height: 41px; } 
-.icone-busca{ background-position: 0 -781px; width: 41px; height: 41px; border:none;} 
+.icone-busca{ background-position: 0 -781px; width: 41px; height: 41px; border:none;margin-top:-4px} 
 .icone-cuidadores{ background-position: 0 -922px; width: 36px; height: 36px; float: left; margin-top: -9px;}
 .btn-cuidadores-topo{padding-left:10px!important;}
 
