@@ -1278,6 +1278,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return .=      ' </div>';
             $return .=      '</a>';
             $return .=    '</li>';
+            echo $return;
           elseif($sectionP=="jogos" || $sectionP == "atividades" || $sectionP == "cuidadores"):  
             $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
             $related = $d->retriveRelatedAssetsByRelationType("Preview");
