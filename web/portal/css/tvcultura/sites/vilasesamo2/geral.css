@@ -595,9 +595,9 @@ footer .col-central { margin:0 0 0 17%; background:#fff; position:relative; widt
 footer .col-central a { width: 63%; }
 footer .mapa .col-central,
 footer .logos .col-central a { margin:3% 10%; }
-footer .col-esq { width: 17%; }
+footer .col-esq { width: 33%; }
 footer .col-esq a { width: 100%; }
-footer .col-dir { width:42%; }
+footer .col-dir { width:33%; }
 footer .col-dir a { width: 81%; }
 footer span { display: block; float:left; }
 footer .sprite-destalhe-amarelo1 { position:absolute; right:-33px; }
