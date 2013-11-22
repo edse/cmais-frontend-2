@@ -134,13 +134,18 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-busca:hover{ background-position: 0 -640px; width: 41px; height: 41px; } 
 .icone-busca{ background-position: 0 -781px; width: 41px; height: 41px; border:none;margin-top:-2px} 
 .icone-cuidadores{ background-position: 0 -922px; width: 36px; height: 36px; float: left; margin-top: -9px;}
+.icone-natv-peqno-verde{ background-position: 0 -1058px; width: 36px; height: 36px; } 
+.icone-acessibilidade-pqno-verde{ background-position: 0 -1194px; width: 36px; height: 36px; }
 .btn-cuidadores-topo{padding-left:10px!important;}
+
 
 /* icone rodape */
 .icones-rodape{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-rodape.png) no-repeat top left; float:left;}
-.icone-habitos-saudaveis-rodape{ background-position: 0 0; width: 208px; height: 50px;margin-top:8px; } 
-.icone-incluir-brincando-rodape{ background-position: 0 -100px; width: 280px; height: 45px; } 
-.icone-logo-internas-rodape{ background-position: 0 -195px; width: 145px; height: 66px; } 
+.icone-habitos-saudaveis-rodape{ background-position: 0 -361px; width: 208px; height: 50px; } 
+.icone-incluir-brincando-rodape{ background-position: 0 -511px; width: 280px; height: 45px; } 
+.icone-logo-internas-rodape{ background-position: 0 -656px; width: 145px; height: 66px; } 
+.icone-triangulo-claro{ background-position: 0 -822px; width: 21px; height: 83px; } 
+.icone-triangulo-medio{ background-position: 0 -1005px; width: 21px; height: 83px; } 
 
 /* internas e assets*/
 .icones-sprite-interna{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-interna.png) no-repeat top left; float:left;margin:3px 3px 3px 10px!important;}

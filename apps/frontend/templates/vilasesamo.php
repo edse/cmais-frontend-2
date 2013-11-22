@@ -195,8 +195,8 @@
             <!--nav sites Vila Sesamo-->
             <nav class="span12" title="Sites Vila Sésamo" aria-disabled="true">
               <a href="/vilasesamo/jogos" class="col-esq" title="Jogos" target="_self">Jogos</a>
-              <a href="/vilasesamo/videos" class="col-central" title="Jogos" target="_self"><span class="sprite-destalhe-amarelo2"></span>Vídeos</a>
-              <a href="/vilasesamo/atividades" class="col-dir" title="Jogos" target="_self"><span class="sprite-destalhe-amarelo1"></span>Atividades</a>
+              <a href="/vilasesamo/videos" class="col-central" title="Jogos" target="_self"><i class="icones-rodape icone-triangulo-claro"></i>Vídeos</a>
+              <a href="/vilasesamo/atividades" class="col-dir" title="Jogos" target="_self"><i class="icones-rodape icone-triangulo-medio"></i>Atividades</a>
             </nav>
             <!--nav sites Vila Sesamo-->
             
@@ -235,7 +235,7 @@
             <!--nav-->
             <nav class="span12" aria-disabled="true">
               <a href="/vilasesamo/cuidadores" class="col-esq cuidadores-footer" title="">Cuidadores</a>
-              <a href="/vilasesamo/na-tv" class="col-central natv-footer" title=""><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
+              <a href="/vilasesamo/na-tv" class="col-central natv-footer" title=""><i class="icones-rodape icone-triangulo-claro"></i>Na TV</a>
               <!--a href="/vilasesamo2/atividades" class="col-dir" title=""><span class="sprite-destalhe-amarelo1"></span>História</a>
             </nav>
             <!--/nav-->
