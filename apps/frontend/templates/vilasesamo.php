@@ -135,7 +135,7 @@
               </li>
               <li>  
                 <i class="icones-sprite-menu icone-acessibilidade-pqno-verde"></i>
-                <a class="btn-acessibilidade-topo" href="/vilasesamo/acessilidade" title="Acessibilidade" target="_blank">Acessibilidade</a>
+                <a class="btn-acessibilidade-topo" href="/vilasesamo/acessibilidade" title="Acessibilidade" target="_blank">Acessibilidade</a>
                 <!--span class="sprite-menu-ball"></span-->
               </li>  
               <!--li>
