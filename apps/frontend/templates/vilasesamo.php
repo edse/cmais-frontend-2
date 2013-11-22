@@ -240,8 +240,9 @@
             
             <!--nav-->
             <nav class="span12" aria-disabled="true">
-              <a href="/vilasesamo/cuidadores" class="col-esq cuidadores-footer" title="">Cuidadores</a>
-              <a href="/vilasesamo/na-tv" class="col-central natv-footer" title=""><i class="icones-rodape icone-triangulo-claro"></i>Na TV</a>
+              <a href="/vilasesamo/cuidadores" class="col-esq " title="">Cuidadores</a><!--cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
+              <a href="/vilasesamo/na-tv" class="col-central" title=""><i class="icones-rodape icone-triangulo-claro"></i>Na TV</a><!-- natv-footer - cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
+              <a href="/vilasesamo/acessibilidade" class="col-dir" title=""><i class="icones-rodape icone-triangulo-medio"></i>Acessibilidade</a>
               <!--a href="/vilasesamo2/atividades" class="col-dir" title=""><span class="sprite-destalhe-amarelo1"></span>História</a>
             </nav>
             <!--/nav-->
