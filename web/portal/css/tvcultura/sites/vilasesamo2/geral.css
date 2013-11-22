@@ -155,7 +155,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* internas e assets*/
 .icones-sprite-interna{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-interna.png) no-repeat top left; float:left;margin:3px 3px 3px 10px!important;}
 .icone-artigo-grande{ background-position: 0 0; width: 56px; height: 56px; } 
-.icone-artigo-ve-pequeno{ background-position: 0 -106px; width: 36px; height: 36px;margin-top: 2px; } 
+.icone-artigo-ve-pequeno{ background-position: -4px -106px; width: 36px; height: 36px;margin-top: 2px; } 
 .icone-artigo-br-pequeno{ background-position: 0 -192px; width: 36px; height: 36px; } 
 .icone-atividades-grande{ background-position: 0 -278px; width: 56px; height: 56px; } 
 .icone-atividades-pequeno{ background-position: 0 -384px; width: 36px; height: 36px; } 
