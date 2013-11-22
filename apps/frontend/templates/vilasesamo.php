@@ -208,7 +208,7 @@
             
             <!--nav Personagens-->
             <nav class="span12 personagens-rodape" title="Menu Personagens">
-              <h3>PERSONANGENS:</h3>
+              <h3>PERSONAGENS:</h3>
               <ul>
                 <li>
                   <a href="/vilasesamo/personagens/garibaldo" title="Garibaldo" target="_self">Garibaldo</a><span>,</span>
