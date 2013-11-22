@@ -135,8 +135,8 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-busca{ background-position: 0 -781px; width: 41px; height: 41px; border:none;margin-top:-2px} 
 .icone-cuidadores{ background-position: 0 -922px; width: 36px; height: 36px; float: left; margin-top: -9px;}
 .icone-natv-peqno-verde{ background-position: 0 -1058px; width: 36px; height: 36px; } 
-.icone-acessibilidade-pqno-verde{ background-position: 0 -1194px; width: 36px; height: 36px; }
-.btn-cuidadores-topo{padding-left:10px!important;}
+.icone-acessibilidade-pqno-verde{ background-position: 0 -1194px; width: 36px; height: 36px; float:left; }
+.btn-cuidadores-topo{padding-left:10px!important;float:left;}
 
 
 /* icone rodape */

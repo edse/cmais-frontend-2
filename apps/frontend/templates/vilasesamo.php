@@ -134,9 +134,9 @@
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>  
-                <i class="icones-sprite-menu icone-natv-peqno-verde"></i>
-                <a href="/vilasesamo/acessilidade" title="Na TV" target="_blank">Acessibilidade</a>
-                <span class="sprite-menu-ball"></span>
+                <i class="icones-sprite-menu icone-acessibilidade-pqno-verde"></i>
+                <a href="/vilasesamo/acessilidade" title="Acessibilidade" target="_blank">Acessibilidade</a>
+                <!--span class="sprite-menu-ball"></span-->
               </li>  
               <!--li>
                 <a href="/vilasesamo2/historia" title="História" target="_blank">História</a>
