@@ -12,6 +12,7 @@ a:hover{text-decoration:underline!important;}
 #content .section,
 #content section { max-width:940px; margin:20px auto; }
 #content h1 {margin: 0;font-size: 50px;height: 60px;line-height: 60px;padding: 0 0px 5px 0px;}
+.artigo #content header h1{font-size:25px;}
 #content h1 span,
 #content h1 i.icones-sprite-interna {margin: 0px 20px 0px 20!important}
 #content h1 .sprite-icon-colorir-med { margin-top:-6px; }
@@ -92,6 +93,7 @@ body.campanhas{background-color:#fee133!important;}
 .campanhas .todos-itens #container li a {border-bottom: #fbc227 2px solid;border-top: #fbc227 2px solid;}
 .campanhas .todos-itens li img {border-bottom:none;border-top: none;width: 300px;height: 300px;}
 .campanhas .todos-itens a div{color:#434343; text-transform:uppercase;}
+.campanhas.categorias .todos-itens a div{color:#FFFFFF;}
 .campanhas .mais{color:#f1802c;}
 .campanhas .btn-group{width: 300px;float: right;margin-top: 8px; position: absolute;right: 20px;}
 .campanhas .btn-group a{font-size:12px!important; color: #434343!important; text-shadow:none; font-family:'dinmedium',Arial, Helvetica, sans-serif;}
@@ -376,7 +378,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .borda-arredonda{border-radius:4px;  -moz-border-radius:4px; -webkit-border-radius: 4px; border:none!important;}
 
 .cuidadores .filtro {background: #00aa52;border-top: 7px solid #00c76e;border-bottom: 7px solid #00c76e;}
-.cuidadores .filtro h1 {border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;background: #00aa52; font-size:25px!important;}
+.cuidadores .filtro h1 {border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;background: #00aa52; }
 .cuidadores .sprite{width: 60px;height: 50px;background: red;margin: -2px 20px 0 0;}
 
 .cuidadores .todos-itens #container{width:820px; margin-left: -10px!important;*margin-left:-10px;}
@@ -396,6 +398,8 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .descritivo span.nome{color:#008d36}
 .cuidadores .todos-itens a {font-size: 16px; border-bottom:2px solid #008d36;}
 .cuidadores .todos-itens li {background: #00aa52;border-top: 7px solid #00c76e;border-bottom: 7px solid #00c76e;}
+.cuidadores .imagem-destaque-carrossel{background: red;width: 100%;height: 90%;overflow: hidden;border-radius: 10px;}
+.cuidadores .imagem-destaque-carrossel img{width: 135%!important;position: relative;left: -60px;max-width: 134%;}
 /* /cuidadores */
 
 /* cuidadores artigos */
@@ -409,9 +413,9 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .col-esq article .divisa{margin:0;}
 .cuidadores .container-cuidadores .col-esq article .redes-artigo{margin: 10px 0;}
 .cuidadores .container-cuidadores .col-esq article .redes-artigo p{margin: 0;float: left;padding: 5px 10px;text-transform: uppercase;}
-.cuidadores .container-cuidadores .col-esq article .redes-artigo .redes{width: 243px;float: right;padding: 4px 0;height: 21px;}
+.cuidadores .container-cuidadores .col-esq article .redes-artigo .redes{width: 250px;float: right;padding: 4px 0;height: 21px;}
 .cuidadores .container-cuidadores .col-esq article .redes-artigo iframe{width:81px!important;}
-.cuidadores .container-cuidadores .col-esq article section a{color:#00aa52;font-size:16px;}
+.cuidadores .container-cuidadores .col-esq article section a{color:#00aa52;font-size:16px; text-decoration:underline;}
 .cuidadores .container-cuidadores .col-esq .imprimir{float:right;width: 231px;margin-bottom: 10px;}
 .cuidadores .container-cuidadores .col-esq .imprimir .baixar{float:right;width: 105px;}
 .cuidadores .container-cuidadores .col-esq .option-assets{float:left;}
@@ -433,9 +437,12 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .col-dir .box-ler a{color:#434343;}
 .cuidadores .container-cuidadores .col-dir .box-ler p{height: 60px;overflow: hidden;}
 .cuidadores .container-cuidadores .col-dir .box-ler .divisa{margin-bottom:10px;}
+.cuidadores .container-cuidadores .col-dir .box-sobre span,
+.cuidadores .container-cuidadores .col-dir .box-ler span,
+.cuidadores .container-cuidadores .col-dir .box-brincarjunto span{text-align: left;margin-left:40px;}
 .cuidadores .container-cuidadores .col-dir .box-ler .titulo-box,
 .cuidadores .container-cuidadores .col-dir .box-brincarjunto .titulo-box{height: 43px;line-height: 42px;background-color:#fffb49; width:287px;}
-.cuidadores .container-cuidadores .col-dir .icone-cuidadores{margin: 3px 6px;}
+.cuidadores .container-cuidadores .col-dir .icone-cuidadores{margin: 3px 12px;}
  
 .cuidadores .container-cuidadores .destaques article{margin-bottom:10px;}
 .cuidadores .container-cuidadores .destaques .jogos {border-top: 7px solid #02cbff;border-bottom: 7px solid #02cbff;border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;} 
@@ -452,18 +459,19 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .banner a img{width: 95%;margin: 10px 0px;}
 .cuidadores .container-cuidadores .destaques .texto {white-space: nowrap;text-overflow: ellipsis;overflow: hidden;padding: 0;font-size: 16px;font-family: 'dinmedium',Arial, Helvetica, sans-serif;}
 .cuidadores .todos-assets{height:48px;background-image: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-artigo.png');font-size: 25px!important;overflow: hidden;float: right;width: 300px;line-height: 48px;}
-.cuidadores .todos-assets p{margin:0;}
+.cuidadores .todos-assets p{margin:0!important; text-align:center!important;}
+.cuidadores .todos-assets .icone-voltar-artigo{margin:0!important;}
 .cuidadores .container-cuidadores .col-dir{padding:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat; }
 .cuidadores #img-capa{width:100%;}
 .cuidadores #legenda{font-family:'dinmedium',Arial, Helvetica, sans-serif;text-align: center;line-height: 35px;border: 1px solid #efefef;border-top: none;color: #737373;}
-.cuidadores #comente-este-artigo h3{color: #434343;  font-size: 18px;margin-bottom: 15px;font-family:'din-blackregular',Arial, Helvetica, sans-serif;}
+.cuidadores #comente-este-artigo h3{color: #434343;  font-size: 18px;margin-bottom: 15px;font-family:'din-blackregular',Arial, Helvetica, sans-serif;margin-top:30px;}
 /* /cuidadores artigos */
 
 /* na tv */
 body.na-tv{background-color:#feec3c;position:relative;}
 .na-tv .b-verde{position:relative;}
 .na-tv .filtro {background: #00aa52;border-top: 7px solid #00c76e;border-bottom: 7px solid #00c76e;margin-bottom: 347px!important;}
-.na-tv .filtro h1 {border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;background: #00aa52; font-size:25px!important;}
+.na-tv .filtro h1 {border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;background: #00aa52;}
 .na-tv .sprite{width: 60px;height: 50px;background: red;margin: -2px 20px 0 0;}
 .na-tv .container-na-tv{background: #FFFFFF;padding: 20px 20px 80px 20px;overflow: hidden;position: relative;border-bottom: 2px solid #008d36;}
 .na-tv .container-na-tv h2.ola{font-family:'din-blackregular',Arial, Helvetica, sans-serif; font-size:65px; color:#00aa52;position:absolute; top:50px; left:50px; display:block;z-index:1} 
@@ -479,6 +487,10 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .na-tv .container-na-tv .container-horarios .box-horario p{font-size:16px;text-align:center;color:#737373; float:none;}
 .na-tv .fundo-na-tv{width:550px; height:650px; background:url('/portal/images/capaPrograma/vilasesamo2/personagens/img_natv.png') no-repeat; position:absolute;top:85px; left:10px;z-index: 0}
 /* /na tv */ 
+
+/* acessibilidade */
+.acessibilidade .box-acessibilidade{overflow: hidden;width: 52%;float: right;}
+/* acessibilidade */
 
 
 /* busca */

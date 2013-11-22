@@ -124,14 +124,20 @@
             <!--ul.nav-->
             <ul class="nav">
               <li>
-                <span class="icones-sprite-menu icone-cuidadores"></span>
+                <i class="icones-sprite-menu icone-cuidadores"></i>
                 <a class="btn-cuidadores-topo" href="/vilasesamo/cuidadores" title="Cuidadores" target="_blank">Cuidadores</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>
-                <a href="/vilasesamo/na-tv" title="Na TV" target="_blank">Na TV</a>
-                <!--span class="sprite-menu-ball"></span-->
+                <i class="icones-sprite-menu icone-natv-peqno-verde"></i>
+                <a class="btn-na-tv-topo" href="/vilasesamo/na-tv" title="Na TV" target="_blank">Na TV</a>
+                <span class="sprite-menu-ball"></span>
               </li>
+              <li>  
+                <i class="icones-sprite-menu icone-acessibilidade-pqno-verde"></i>
+                <a class="btn-acessibilidade-topo" href="/vilasesamo/acessibilidade" title="Acessibilidade" target="_blank">Acessibilidade</a>
+                <!--span class="sprite-menu-ball"></span-->
+              </li>  
               <!--li>
                 <a href="/vilasesamo2/historia" title="História" target="_blank">História</a>
               </li-->            
@@ -195,14 +201,14 @@
             <!--nav sites Vila Sesamo-->
             <nav class="span12" title="Sites Vila Sésamo" aria-disabled="true">
               <a href="/vilasesamo/jogos" class="col-esq" title="Jogos" target="_self">Jogos</a>
-              <a href="/vilasesamo/videos" class="col-central" title="Jogos" target="_self"><span class="sprite-destalhe-amarelo2"></span>Vídeos</a>
-              <a href="/vilasesamo/atividades" class="col-dir" title="Jogos" target="_self"><span class="sprite-destalhe-amarelo1"></span>Atividades</a>
+              <a href="/vilasesamo/videos" class="col-central" title="Jogos" target="_self"><i class="icones-rodape icone-triangulo-claro"></i>Vídeos</a>
+              <a href="/vilasesamo/atividades" class="col-dir" title="Jogos" target="_self"><i class="icones-rodape icone-triangulo-medio"></i>Atividades</a>
             </nav>
             <!--nav sites Vila Sesamo-->
             
             <!--nav Personagens-->
             <nav class="span12 personagens-rodape" title="Menu Personagens">
-              <h3>PERSONANGENS:</h3>
+              <h3>PERSONAGENS:</h3>
               <ul>
                 <li>
                   <a href="/vilasesamo/personagens/garibaldo" title="Garibaldo" target="_self">Garibaldo</a><span>,</span>
@@ -234,8 +240,9 @@
             
             <!--nav-->
             <nav class="span12" aria-disabled="true">
-              <a href="/vilasesamo/cuidadores" class="col-esq cuidadores-footer" title="">Cuidadores</a>
-              <a href="/vilasesamo/na-tv" class="col-central natv-footer" title=""><span class="sprite-destalhe-amarelo2"></span>Na TV</a>
+              <a href="/vilasesamo/cuidadores" class="col-esq " title="">Cuidadores</a><!--cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
+              <a href="/vilasesamo/na-tv" class="col-central" title=""><i class="icones-rodape icone-triangulo-claro"></i>Na TV</a><!-- natv-footer - cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
+              <a href="/vilasesamo/acessibilidade" class="col-dir" title=""><i class="icones-rodape icone-triangulo-medio"></i>Acessibilidade</a>
               <!--a href="/vilasesamo2/atividades" class="col-dir" title=""><span class="sprite-destalhe-amarelo1"></span>História</a>
             </nav>
             <!--/nav-->

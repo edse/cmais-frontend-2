@@ -4,8 +4,8 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <script>
-  $("body").addClass("interna campanhas");
-  $('.ellipsis').dotdotdot();
+  $("body").addClass("interna campanhas categorias");
+  
 </script>
 
 <!-- HEADER -->
@@ -112,12 +112,19 @@
           <?php endif; ?>
         <?php endif; ?>
         <!--/box-dica-->
-        
+        <?php
+          // Pega o bloco "parceiros" da seção "para os pais"
+          $forParents = Doctrine::getTable('Section')->findOneById(2399);
+          $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($forParents->getId(), "parceiros");
+          if ($block) {
+            $_displays["parceiros"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceiros"
+          }    
+        ?>
         <!--box artigo-->
         <?php if(count($displays['artigos']) > 0): ?>
           <?php $preview = $displays['artigos'][0]->Asset->retriveRelatedAssetsByRelationType("Preview") ?>
           <div class="span4 artigo">
-            <a href="<?php echo $site->getSlug() ?>/<?php //echo $forParents->getSlug() ?>/<?php echo $displays['artigos'][0]->getSlug() ?>" title="<?php echo $displays['artigos'][0]->getTitle() ?>">
+            <a href="<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $displays['artigos'][0]->Asset->getSlug() ?>" title="<?php echo $displays['artigos'][0]->getTitle() ?>">
               <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt"<?php echo $displays['artigos'][0]->getTitle() ?>"/>
               <h2 class="tit-artigo"><?php echo $displays['artigos'][0]->getTitle() ?></h2> 
               <p><?php echo $displays['artigos'][0]->getDescription() ?></p>
@@ -159,14 +166,7 @@
         <!--/box artigo-->
         
         <!--box-parceiros-->
-        <?php
-          // Pega o bloco "parceiros" da seção "para os pais"
-          $forParents = Doctrine::getTable('Section')->findOneById(2399);
-          $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($forParents->getId(), "parceiros");
-          if ($block) {
-            $_displays["parceiros"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceiros"
-          }    
-        ?>
+        
         <?php if(isset($_displays['parceiros']) > 0): ?>
           <?php if(count($_displays['parceiros']) > 0): ?>
             <div class="span4">

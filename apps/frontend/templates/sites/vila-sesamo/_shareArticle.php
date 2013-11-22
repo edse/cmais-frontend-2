@@ -2,7 +2,7 @@
                 
   <div class="divisa"></div>
   
-  <p>compartihe este artigo</p>
+  <p>compartiLhe este artigo</p>
   <div class="redes">
     <g:plusone size="medium" count="false"></g:plusone>
     <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pinterest" style="margin-top:-10px;" /></a>

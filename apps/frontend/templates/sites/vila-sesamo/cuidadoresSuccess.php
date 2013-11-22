@@ -5,6 +5,11 @@
 
 <script>
   $("body").addClass("cuidadores");
+  <?php if($section->getSlug()=="cuidadores"):?>
+    $(document).ready(function(){
+      $(".btn-cuidadores-topo").addClass("active");
+    });  
+  <?php endif; ?>
 </script>
 
 <!-- HEADER -->
@@ -39,16 +44,20 @@
                 <?php foreach($displays['destaque-principal'] as $d): ?>
                 <!--item-->
                 <li>
-                  <div class="pull-left videoorimage">
-                    <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
-                  </div>
-                  <div class="descritivo">
-                    <h3><?php echo $d->getTitle() ?></h3>
-                    <p><?php echo $d->getDescription() ?></p>
-                    <?php if($d->Asset->AssetContent->getAuthor()): ?>
-                    <p>Por <span><?php echo $d->Asset->AssetContent->getAuthor() ?></span></p>
-                    <?php endif; ?>
-                  </div>
+                  <a class="btn-carrossel" href="<?php echo $site->retriveUrl() ?>/<?php echo $section->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="<?php echo $d->getTitle() ?>" target="_self">
+                    <div class="pull-left videoorimage">
+                      <div class="imagem-destaque-carrossel">
+                        <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+                      </div>
+                    </div>
+                    <div class="descritivo">
+                      <h3><?php echo $d->getTitle() ?></h3>
+                      <p><?php echo $d->getDescription() ?></p>
+                      <?php if($d->Asset->AssetContent->getAuthor()): ?>
+                      <p>Por <span><?php echo $d->Asset->AssetContent->getAuthor() ?></span></p>
+                      <?php endif; ?>
+                    </div>
+                  </a>
                 </li>
                 <!--/item-->
                 <?php endforeach; ?>
@@ -110,7 +119,12 @@
             <?php if(count($allCategories) > 0): ?>
             <div class="btn-group">
               <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu cuidadores">
+                <li>
+                  <a href="javascript:;" title="Todas as categorias" data-filter="">
+                    Todas as categorias
+                  </a>
+                </li>
                 <?php foreach($allCategories as $c): ?>
                 <li>
                   <a href="javascript:;" class="<?php echo $c->getSlug(); ?>" title="<?php echo $c->getTitle() ?>" data-filter=".<?php echo $c->getSlug() ?>" data-toggle="dropdown">
@@ -118,11 +132,7 @@
                   </a>
                 </li>
                 <?php endforeach; ?>
-                <li>
-                  <a href="javascript:;" title="Todas as categorias" data-filter="">
-                    Todas as categorias
-                  </a>
-                </li>
+                
               </ul>
             </div>
             <?php endif; ?>
@@ -234,7 +244,9 @@
     var width = $(this).width();
     total = width + total + 14; 
   });
-  
+  $('.btn-carrossel').click(function(){
+    window.location.assign($(this).attr('href'))
+  });
   $('.dropdown-menu a, .dropdown-toggle').click(function(){
     $('.dropdown-menu').toggle();
     $('.dropdown-toggle').find('span').toggleClass('icone-cat-fechar');
@@ -255,7 +267,7 @@
           $('#selector-interna-artigo  li a').removeClass('current');
           $current.addClass('current');
       },
-      slideSpeed: 8000
+      slideSpeed: 5000
   });
   
   //$('.arrow, #selector-interna-artigo  a').click(function(){
@@ -282,7 +294,8 @@
     var select = $(this).attr('title');
     $('.btn.dropdown-toggle').html(select + '<span class="caret icones-setas icone-cat-abrir"></span>');
   });
-   
+  
+  
   slideShow = function(ev){
     //ev.preventDefault();
     $('#carrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
