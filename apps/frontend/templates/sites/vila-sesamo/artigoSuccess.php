@@ -1,3 +1,4 @@
+<?php use_helper('I18N', 'Date') ?>
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
@@ -48,7 +49,7 @@
               <h1><?php echo $asset->getTitle() ?></h1>
                
               <div class="overflow">
-                <span class="data"><?php echo $asset->getUpdatedAt();?> - Por</span>
+                <span class="data"><?php echo format_date($asset->getUpdatedAt(), "g") ?> - Por</span>
                 
                 <?php $colaboradores = $asset->retriveRelatedAssetsByRelationType("Colaborador") ?>
                 <?php if(count($colaboradores) > 0): ?>
