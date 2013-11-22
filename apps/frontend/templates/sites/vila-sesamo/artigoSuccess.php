@@ -62,7 +62,7 @@
                       <?php//echo implode(", ", $autores) ?>
                       <?php
                       foreach($colaboradores as $c):
-                        echo '<a href="#'.$c->getTitle().'">'.$c->AssetPerson->getName(); . "</a>, ";
+                        echo '<a href="#'.$c->getTitle().'">'.$c->AssetPerson->getName() . "</a>, ";
                       endforeach;
                       ?>
                     <?php endif; ?>.
