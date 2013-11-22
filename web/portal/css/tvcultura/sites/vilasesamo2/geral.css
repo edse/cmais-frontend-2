@@ -139,9 +139,9 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .btn-cuidadores-topo{padding-left:10px!important;float:left;}
 .btn-na-tv-topo{padding-left:10px!important;float:left;}
 .btn-acessibilidade-topo{padding-left:10px!important;float:left;}
-.btn-cuidadores-topo.active{font-weight:bold;text-decoration:underline; }
-.btn-na-tv-topo.active{font-weight:bold;text-decoration:underline;}
-.btn-acessibilidade-topo.active{font-weight:bold;text-decoration:underline; }
+.btn-cuidadores-topo.active{font-weight:bold!important;text-decoration:underline!important; }
+.btn-na-tv-topo.active{font-weight:bold!important;text-decoration:underline!important;}
+.btn-acessibilidade-topo.active{font-weight:bold!important;text-decoration:underline!important; }
 
 
 /* icone rodape */
