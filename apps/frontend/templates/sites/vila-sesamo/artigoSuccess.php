@@ -62,7 +62,7 @@
                       <?php//echo implode(", ", $autores) ?>
                       <?php
                       foreach($colaboradores as $c):
-                        echo '<a class="autores" href="#'.$c->getTitle().'">'.$c->AssetPerson->getName() . "</a>, ";
+                        echo '<a class="autores" id="'.$c->getTitle().'" href="#'.$c->getTitle().'">'.$c->AssetPerson->getName() . "</a>, ";
                       endforeach;
                       ?>
                     <?php endif; ?>.
@@ -474,7 +474,7 @@
 <!--section--> 
 <script> 
 $('.autores').click(function(){
-  var who=$(this).attr('id');
+  var who = $(this).attr('id');
   goTop(who);
 });
 function goTop(who){
