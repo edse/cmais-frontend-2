@@ -45,7 +45,9 @@
                 <!--item-->
                 <li>
                   <div class="pull-left videoorimage">
-                    <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
+                    <div class="imagem-destaque-carrossel">
+                      <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+                    </div>
                   </div>
                   <div class="descritivo">
                     <h3><?php echo $d->getTitle() ?></h3>
