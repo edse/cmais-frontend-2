@@ -479,7 +479,7 @@ $('.autores').click(function(){
   var where = $('#'+who).offset().top-126;
   goTop(where);
 });
-function goTop(who){
+function goTop(where){
   $('html, body').animate({
     scrollTop:where
   }, "slow");
