@@ -1305,8 +1305,33 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
         }
         */
-        for($i=0;$i< count($assets); $i++){
-          
+        $max = count($assets);
+        for($i=0;$i< $max; $i++){
+          $arrayCount = array();
+          $count = 0;
+          while($count< 8){
+            $vetor = round(rand(0 ,$max), 0, PHP_ROUND_HALF_UP);
+            $arrayCount[$i]=$assets[$vetor];
+            
+            if($assets[$i]->AssetVideo->getYoutubeId()!=""):
+              
+              for($j=0; $j < count($arrayCount); $j++){
+                
+                if($arrayCount[$j] == $assets[$vetor]):
+                  $count--;
+                else:
+                  echo $assets[$vetor] . " / ";
+                  $count++;
+                endif;  
+                    
+              }
+              
+            else:
+              
+              $count--;
+            endif;    
+          }
+          /*
           if($section == "cuidadores"):
             
             $assetCategorias = array();
@@ -1401,7 +1426,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return .=    '</li>';
             echo $return;
           endif;  
-          
+          */
           
         }
     }
