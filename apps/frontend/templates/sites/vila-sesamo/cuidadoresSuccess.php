@@ -262,7 +262,7 @@
           $('#selector-interna-artigo  li a').removeClass('current');
           $current.addClass('current');
       },
-      slideSpeed: 8000
+      slideSpeed: 5000
   });
   
   //$('.arrow, #selector-interna-artigo  a').click(function(){
