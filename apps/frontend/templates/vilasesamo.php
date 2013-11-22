@@ -130,12 +130,12 @@
               </li>
               <li>
                 <i class="icones-sprite-menu icone-natv-peqno-verde"></i>
-                <a href="/vilasesamo/na-tv" title="Na TV" target="_blank">Na TV</a>
+                <a class="btn-na-tv-topo" href="/vilasesamo/na-tv" title="Na TV" target="_blank">Na TV</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>  
                 <i class="icones-sprite-menu icone-acessibilidade-pqno-verde"></i>
-                <a href="/vilasesamo/acessilidade" title="Acessibilidade" target="_blank">Acessibilidade</a>
+                <a class="btn-acessibilidade-topo" href="/vilasesamo/acessilidade" title="Acessibilidade" target="_blank">Acessibilidade</a>
                 <!--span class="sprite-menu-ball"></span-->
               </li>  
               <!--li>

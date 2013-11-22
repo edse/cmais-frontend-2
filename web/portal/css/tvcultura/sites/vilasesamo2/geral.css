@@ -134,9 +134,11 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-busca:hover{ background-position: 0 -640px; width: 41px; height: 41px; } 
 .icone-busca{ background-position: 0 -781px; width: 41px; height: 41px; border:none;margin-top:-2px} 
 .icone-cuidadores{ background-position: 0 -922px; width: 36px; height: 36px; float: left; margin-top: -9px;}
-.icone-natv-peqno-verde{ background-position: 0 -1058px; width: 36px; height: 36px; } 
-.icone-acessibilidade-pqno-verde{ background-position: 0 -1194px; width: 36px; height: 36px; float:left; }
+.icone-natv-peqno-verde{ background-position: 0 -1058px; width: 36px; height: 36px; margin-top: -9px;} 
+.icone-acessibilidade-pqno-verde{ background-position: 0 -1194px; width: 36px; height: 36px; float:left;margin-top: -9px; }
 .btn-cuidadores-topo{padding-left:10px!important;float:left;}
+.btn-na-tv-topo{padding-left:10px!important;float:left;}
+.btn-acessibilidade-topo{padding-left:10px!important;float:left;}
 
 
 /* icone rodape */
