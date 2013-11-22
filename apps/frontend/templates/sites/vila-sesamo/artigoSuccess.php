@@ -331,7 +331,7 @@
           <?php if(isset($related_asset)): ?>  
             <?php if(count($related_asset) > 0): ?>  
              <article class="jogos">
-                <a href="/vila-sesamo/jogos/livro-animado-0" title="">
+                <a href="<?php echo $related_asset[0]->retriveUrl() ?>" title="<?php echo $related_asset[0]->getTitle() ?>">
                   <?php $preview = $related_asset[0]->retriveRelatedAssetsByRelationType("Preview") ?>
                   <?php if(count($preview) > 0): ?>
                     <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>" />
@@ -372,7 +372,7 @@
           <?php if(isset($related_asset)): ?>
             <?php if(count($related_asset) > 0): ?>
               <article class="videos">
-                <a href="/vila-sesamo/jogos/livro-animado-0" title="">
+                <a href="<?php echo $related_asset[0]->retriveUrl() ?>" title="<?php echo $related_asset[0]->getTitle() ?>">
                   <div class="yt-menu">
                     <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $related_asset[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $related_asset[0]->getTitle() ?>">
                   </div>
@@ -413,7 +413,7 @@
             <?php if(isset($related_asset)): ?>  
               <?php if(count($related_asset) > 0): ?>
               <article class="atividades">
-                <a href="/vila-sesamo/jogos/livro-animado-0" title="">
+                 <a href="<?php echo $related_asset[0]->retriveUrl() ?>" title="<?php echo $related_asset[0]->getTitle() ?>">
                   <?php $preview = $related_asset[0]->retriveRelatedAssetsByRelationType("Preview") ?>
                   <?php if(count($preview) > 0): ?>
                     <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>">
