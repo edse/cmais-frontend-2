@@ -5,6 +5,11 @@
 
 <script>
   $("body").addClass("cuidadores");
+  <?php if($section->Parent->getSlug()=="cuidadores"):?>
+    $(document).ready(function(){
+      $(".btn-cuidadores-topo").addClass("active");
+    });  
+  <?php endif; ?>
 </script>
 
 <!-- HEADER -->
