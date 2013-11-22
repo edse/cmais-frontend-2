@@ -1309,13 +1309,14 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         $count = 0;
         $return = "";
         while($count<9):
+          $return .= $count . "/";
           $number = rand(0,$max);
-            if($assets[$number]->getTitle()!=""):
-              $return .= $number . $assets[$number]->getTitle() . " / ";
-              $count++;
-            else:
-              $count--;
-            endif;   
+          if($assets[$number]->getTitle()!=""):
+            $return .= $number . $assets[$number]->getTitle() . " / ";
+            $count++;
+          else:
+            $count--;
+          endif;   
           $count++;
         endwhile;
         echo $return;
