@@ -1306,33 +1306,11 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         }
         */
         $max = count($assets);
-        for($i=0;$i< $max; $i++){
-          $arrayCount = array();
-          $count = 0;
-          while($count< 8){
-            $vetor = round(rand(0 ,$max), 0, PHP_ROUND_HALF_UP);
-            $arrayCount[$i]=$assets[$vetor];
-            $return =  $arrayCount[$i] . $assets[$vetor];
-            $count++;
-            if($assets[$i]->AssetVideo->getYoutubeId()!=""):
-              die("1");
-              for($j=0; $j < count($arrayCount); $j++){
-                
-                if($arrayCount[$j] == $assets[$vetor]):
-                  $count--;
-                else:
-                  $return = $assets[0]->getTitle() . " / ";
-                  $count++;
-                endif;  
-                    
-              }
-              
-            else:
-              
-              $count--;
-            endif; 
-            echo $return;   
-          }
+        $return = "";
+        for($i=0;$i< $max; $i++):
+          $return .= $i . '/';
+        endfor;
+        echo $return;
           /*
           if($section == "cuidadores"):
             
