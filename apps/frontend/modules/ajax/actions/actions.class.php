@@ -1306,9 +1306,16 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         }
         */
         $max = count($assets);
+        $count = 0;
         $return = "";
         for($i=0;$i< $max; $i++):
           $return .= $i . '/';
+          
+          while($count<8):
+            if($assets[$i]->AssetVideo->getYoutubeId()!=""):
+              $return .= $assets[$i]->getTitle() . " / ";
+            endif;    
+          endwhile;
         endfor;
         echo $return;
           /*
