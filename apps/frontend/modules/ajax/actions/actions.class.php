@@ -1309,7 +1309,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         $count = 0;
         $return = "";
         while($count<8):
-          $number = round(rand(0,$max)) ;
+          $number = rand(0,$max);
 /*
             $return .= $number . '/';
             if($assets[$number]->AssetVideo->getYoutubeId()!=""):
