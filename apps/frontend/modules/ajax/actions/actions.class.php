@@ -1308,9 +1308,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         $max = count($assets);
         $count = 0;
         $return = "";
-        while($count<8):
+        while($count<9):
           $number = rand(0,$max);
-            $return .=$assets[$number]->AssetVideo->getYoutubeId() . '/';
             if($assets[$number]->getTitle()!=""):
               $return .= $number . $assets[$number]->getTitle() . " / ";
               $count++;
