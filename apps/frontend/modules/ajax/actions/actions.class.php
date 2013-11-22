@@ -1282,10 +1282,11 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           elseif($section=="jogos" || $section == "atividades" || $section == "cuidadores" || $personagensSection->getSlug() == "personagens" && $assetSection->getSlug()!= "videos" ):  
             $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
             $related = $d->retriveRelatedAssetsByRelationType("Preview");
-            $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
             if($section == "cuidadores"):
+              $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13-b") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
               $return .=    '<i class="icones-sprite-interna icone-artigo-br-pequeno"></i>';
             elseif($section == "jogos" || $section == "atividades"):
+              $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
               $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
             else:     
               $return .=    '<i class="icones-sprite-interna icone-'.$assetSection->getSlug().'-pequeno"></i>';
