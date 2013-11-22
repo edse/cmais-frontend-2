@@ -6,9 +6,9 @@
 <script>
   $("body").addClass("cuidadores");
   <?php if($section->getSlug()=="cuidadores"):?>
-
-    $(".btn-cuidadores-topo").addClass("active");
- 
+    $(document).ready(function(){
+      $(".btn-cuidadores-topo").addClass("active");
+    });  
   <?php endif; ?>
 </script>
 
