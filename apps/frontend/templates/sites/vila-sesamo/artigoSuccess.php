@@ -1,4 +1,5 @@
 <?php use_helper('I18N', 'Date') ?>
+<?php $sf_user->setCulture('fr_FR') ?>
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
