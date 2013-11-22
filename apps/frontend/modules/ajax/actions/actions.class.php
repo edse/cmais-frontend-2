@@ -1313,6 +1313,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $vetor = round(rand(0 ,$max), 0, PHP_ROUND_HALF_UP);
             $arrayCount[$i]=$assets[$vetor];
             echo $arrayCount[$i] . $assets[$vetor];
+            $count++;
             if($assets[$i]->AssetVideo->getYoutubeId()!=""):
               die("1");
               for($j=0; $j < count($arrayCount); $j++){
