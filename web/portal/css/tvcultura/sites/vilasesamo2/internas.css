@@ -482,7 +482,7 @@ body.na-tv{background-color:#feec3c;position:relative;}
 /* /na tv */ 
 
 /* acessibilidade */
-.acessibilidade .box-acessibilidade{width:30%; float:right;}
+.acessibilidade .box-acessibilidade{overflow: hidden;width: 52%;float: right;}
 /* acessibilidade */
 
 

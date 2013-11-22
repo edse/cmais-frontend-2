@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <script>
-  $("body").addClass("na-tv acessilidade");
+  $("body").addClass("na-tv acessibilidade");
 </script>
 
 <!-- HEADER -->
