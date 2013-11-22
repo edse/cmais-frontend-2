@@ -1314,6 +1314,9 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           while($count<8):
             if($assets[$i]->AssetVideo->getYoutubeId()!=""):
               $return .= $assets[$i]->getTitle() . " / ";
+              $count++;
+            else:
+              $count--;
             endif;    
           endwhile;
         endfor;
