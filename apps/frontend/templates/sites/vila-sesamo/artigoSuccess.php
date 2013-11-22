@@ -246,6 +246,7 @@
             <div class="bottom-box-sobre">
               <img src="/portal/images/capaPrograma/vilasesamo2/box-bottom-sobre.png" alt=""/>
             </div>
+          </div>  
           <?php endif; ?>
           <!--/tags-->
 
