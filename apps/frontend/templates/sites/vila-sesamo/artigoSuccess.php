@@ -479,7 +479,7 @@ $('.autores').click(function(){
 });
 function goTop(who){
   $('html, body').animate({
-    scrollTop:parseInt($('.sobre-autor '+who).offset().top-126)
+    scrollTop:parseInt($('.sobre-autor #'+who).offset().top-126)
   }, "slow");
 }      
 </script>
