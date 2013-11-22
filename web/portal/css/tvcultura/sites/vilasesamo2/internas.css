@@ -464,7 +464,7 @@ body.cuidadores{background-color:#feec3c;}
 body.na-tv{background-color:#feec3c;position:relative;}
 .na-tv .b-verde{position:relative;}
 .na-tv .filtro {background: #00aa52;border-top: 7px solid #00c76e;border-bottom: 7px solid #00c76e;margin-bottom: 347px!important;}
-.na-tv .filtro h1 {border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;background: #00aa52; font-size:25px!important;}
+.na-tv .filtro h1 {border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;background: #00aa52;}
 .na-tv .sprite{width: 60px;height: 50px;background: red;margin: -2px 20px 0 0;}
 .na-tv .container-na-tv{background: #FFFFFF;padding: 20px 20px 80px 20px;overflow: hidden;position: relative;border-bottom: 2px solid #008d36;}
 .na-tv .container-na-tv h2.ola{font-family:'din-blackregular',Arial, Helvetica, sans-serif; font-size:65px; color:#00aa52;position:absolute; top:50px; left:50px; display:block;z-index:1} 
