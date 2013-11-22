@@ -407,7 +407,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores h2,
 .cuidadores .container-cuidadores h3{font-size: 16px;color: #00aa52;text-transform: uppercase;height: 22px;line-height: 27px;}
 .cuidadores .container-cuidadores .col-esq{padding: 20px 0 20px 20px;}
-.cuidadores .container-cuidadores .col-esq article h1{background: none;border: none;text-align: left;padding: 0!important;line-height: 30px!important; color:#00aa52!important;margin-bottom:10px!important;height: auto!important;}
+.cuidadores .container-cuidadores .col-esq article h1{font-size:25px;background: none;border: none;text-align: left;padding: 0!important;line-height: 30px!important; color:#00aa52!important;margin-bottom:10px!important;height: auto!important;}
 .cuidadores .container-cuidadores .col-esq article .data{float:left; display:block;}
 .cuidadores .container-cuidadores .col-esq article .nome{margin-left: 5px!important;float:left; display:block; color: #00AA52!important;}
 .cuidadores .container-cuidadores .col-esq article .divisa{margin:0;}
@@ -463,7 +463,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .todos-assets .icone-voltar-artigo{margin:0!important;}
 .cuidadores .container-cuidadores .col-dir{padding:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat; }
 .cuidadores #img-capa{width:100%;}
-.cuidadores #legenda{font-family:'dinmedium',Arial, Helvetica, sans-serif;text-align: center;line-height: 35px;border: 1px solid #efefef;border-top: none;color: #737373;}
+.cuidadores #legenda{font-family:'dinmedium',Arial, Helvetica, sans-serif;text-align: center;line-height: 20px;border: 1px solid #efefef;border-top: none;color: #737373;}
 .cuidadores #comente-este-artigo h3{color: #434343;  font-size: 18px;margin-bottom: 15px;font-family:'din-blackregular',Arial, Helvetica, sans-serif;margin-top:30px;}
 /* /cuidadores artigos */
 
