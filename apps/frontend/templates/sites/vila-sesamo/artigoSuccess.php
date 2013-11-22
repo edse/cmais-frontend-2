@@ -475,11 +475,12 @@
 <script> 
 $('.autores').click(function(){
   var who = $(this).attr('data-scroll');
+  console.log($('#'+who).offset().top-126);
   goTop(who);
 });
 function goTop(who){
   $('html, body').animate({
-    scrollTop:parseInt($('.sobre-autor #'+who).offset().top-126)
+    scrollTop:parseInt($('#'+who).offset().top-126)
   }, "slow");
 }      
 </script>
