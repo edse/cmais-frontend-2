@@ -52,16 +52,20 @@ $(function(){
 
           <!-- CAPA -->
           <div class="capa grid3">
+            
+            <div class="box-interna grid2">
 
-            <!-- ESQUERDA -->
-            <div id="esquerda" class="grid2">
-              
-              <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $asset, 'ipad' => $ipad)) ?>
-
-              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+              <!-- ESQUERDA -->
+              <div id="esquerda" class="grid2">
+                
+                <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $asset, 'ipad' => $ipad)) ?>
+  
+                <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+  
+              </div>
+              <!-- /ESQUERDA -->
 
             </div>
-            <!-- /ESQUERDA -->
             
             <!-- DIREITA -->
             <div id="direita" class="grid1">
