@@ -56,18 +56,13 @@
                 
                 <?php $colaboradores = $asset->retriveRelatedAssetsByRelationType("Colaborador") ?>
                 <?php if(count($colaboradores) > 0): ?>
-                  <?php
-                    $autores = array();
-                    foreach($colaboradores as $c) {
-                      $autores[] = $c->AssetPerson->getName();
-                    }
-                  ?>
+                  
                   <span class="nome">
-                    <?php if(count($autores) > 0): ?>
+                    <?php if(count($colaboradores) > 0): ?>
                       <?php//echo implode(", ", $autores) ?>
                       <?php
-                      foreach($autores as $a):
-                        echo '<a href="#">'.$a . "</a>, ";
+                      foreach($colaboradores as $c):
+                        echo '<a href="#'.$c->getTitle().'">'.$c->AssetPerson->getName(); . "</a>, ";
                       endforeach;
                       ?>
                     <?php endif; ?>.
@@ -132,7 +127,7 @@
                 sobre o autor:
               </h2>
                 <?php foreach($colaboradores as $c): ?>
-                  <article class="sobre-autor">
+                  <article class="sobre-autor" id="<?php echo $c->getTitle() ?>">
                     <div class="sombra-amarela"></div>
                     <div class="foto-sobre">
                       <?php $preview = $c->retriveRelatedAssetsByRelationType("Preview") ?>
