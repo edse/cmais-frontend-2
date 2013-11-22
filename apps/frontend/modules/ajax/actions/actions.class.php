@@ -1319,6 +1319,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $count--;
             endif;
  */    
+ $return .= $number . "/";
 $count++;
         endwhile;
         echo $return;
