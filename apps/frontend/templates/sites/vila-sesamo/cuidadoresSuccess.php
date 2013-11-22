@@ -5,6 +5,9 @@
 
 <script>
   $("body").addClass("cuidadores");
+  <?php if($section=="cuidadores"):?>
+    $("btn-cuidadores-topo").addClass("active");
+  <?php endif; ?>
 </script>
 
 <!-- HEADER -->
