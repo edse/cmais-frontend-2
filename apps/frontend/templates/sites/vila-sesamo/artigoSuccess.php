@@ -240,7 +240,7 @@
             </h2>
             <div class="links">
               <?php foreach($tags as $t): ?>
-                <a href="http://cmais.com.br/vila-sesamo/busca?output=search&q=<?php echo $t ?>" title="<?php echo $t ?>"><?php echo $t ?></a>
+                <a href="http://cmais.com.br/vila-sesamo/busca?output=search&term=<?php echo $t ?>" title="<?php echo $t ?>"><?php echo $t ?></a>
               <?php endforeach; ?>
             </div>
             <div class="bottom-box-sobre">
