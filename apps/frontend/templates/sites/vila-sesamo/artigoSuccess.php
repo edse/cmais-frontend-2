@@ -474,7 +474,8 @@
 <!--section--> 
 <script> 
 $('.autores').click(function(){
-  console.log(var who = $(this).attr('data-scroll'));
+  var who = $(this).attr('data-scroll')
+  console.log(who);
   console.log($('#'+who).offset().top-126);
   //goTop(who);
 });
