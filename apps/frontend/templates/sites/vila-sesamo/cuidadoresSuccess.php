@@ -118,6 +118,11 @@
             <div class="btn-group">
               <a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
               <ul class="dropdown-menu cuidadores">
+                <li>
+                  <a href="javascript:;" title="Todas as categorias" data-filter="">
+                    Todas as categorias
+                  </a>
+                </li>
                 <?php foreach($allCategories as $c): ?>
                 <li>
                   <a href="javascript:;" class="<?php echo $c->getSlug(); ?>" title="<?php echo $c->getTitle() ?>" data-filter=".<?php echo $c->getSlug() ?>" data-toggle="dropdown">
@@ -125,11 +130,7 @@
                   </a>
                 </li>
                 <?php endforeach; ?>
-                <li>
-                  <a href="javascript:;" title="Todas as categorias" data-filter="">
-                    Todas as categorias
-                  </a>
-                </li>
+                
               </ul>
             </div>
             <?php endif; ?>
