@@ -303,7 +303,7 @@
           <div class="box-brincarjunto destaques">
             <h2 class="titulo-box">
               <i class="icones-sprite-menu icone-cuidadores"></i>
-              Para brincar junto
+              <span>Para brincar junto</span>
             </h2>
            
   
