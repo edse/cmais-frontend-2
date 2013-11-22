@@ -44,18 +44,20 @@
                 <?php foreach($displays['destaque-principal'] as $d): ?>
                 <!--item-->
                 <li>
-                  <div class="pull-left videoorimage">
-                    <div class="imagem-destaque-carrossel">
-                      <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+                  <a href="<?php echo $site->getSlug() ?>/<?php echo $section->gertSlug() ?>/<?php echo $d->getSlug() ?>">
+                    <div class="pull-left videoorimage">
+                      <div class="imagem-destaque-carrossel">
+                        <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
+                      </div>
                     </div>
-                  </div>
-                  <div class="descritivo">
-                    <h3><?php echo $d->getTitle() ?></h3>
-                    <p><?php echo $d->getDescription() ?></p>
-                    <?php if($d->Asset->AssetContent->getAuthor()): ?>
-                    <p>Por <span><?php echo $d->Asset->AssetContent->getAuthor() ?></span></p>
-                    <?php endif; ?>
-                  </div>
+                    <div class="descritivo">
+                      <h3><?php echo $d->getTitle() ?></h3>
+                      <p><?php echo $d->getDescription() ?></p>
+                      <?php if($d->Asset->AssetContent->getAuthor()): ?>
+                      <p>Por <span><?php echo $d->Asset->AssetContent->getAuthor() ?></span></p>
+                      <?php endif; ?>
+                    </div>
+                  </a>
                 </li>
                 <!--/item-->
                 <?php endforeach; ?>
