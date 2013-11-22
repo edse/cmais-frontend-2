@@ -293,9 +293,10 @@
                   <?php endforeach; ?>
               </ul>
               <!--/lista-->
+             </div>
             <?php endif; ?>
           <?php endif; ?>
-          </div>
+          
           <!-- /para ler-->
           
           <!-- para brincar junto-->
