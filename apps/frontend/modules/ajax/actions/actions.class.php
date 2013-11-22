@@ -1320,7 +1320,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
                 if($arrayCount[$j] == $assets[$vetor]):
                   $count--;
                 else:
-                  echo $assets[$vetor] . " / ";
+                  $return = $assets[$vetor] . " / ";
                   $count++;
                 endif;  
                     
@@ -1329,7 +1329,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             else:
               
               $count--;
-            endif;    
+            endif; 
+            echo $return;   
           }
           /*
           if($section == "cuidadores"):
