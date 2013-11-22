@@ -377,7 +377,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .borda-arredonda{border-radius:4px;  -moz-border-radius:4px; -webkit-border-radius: 4px; border:none!important;}
 
 .cuidadores .filtro {background: #00aa52;border-top: 7px solid #00c76e;border-bottom: 7px solid #00c76e;}
-.cuidadores .filtro h1 {border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;background: #00aa52; font-size:25px!important;}
+.cuidadores .filtro h1 {border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;background: #00aa52; }
 .cuidadores .sprite{width: 60px;height: 50px;background: red;margin: -2px 20px 0 0;}
 
 .cuidadores .todos-itens #container{width:820px; margin-left: -10px!important;*margin-left:-10px;}
