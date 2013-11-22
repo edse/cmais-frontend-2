@@ -1825,8 +1825,8 @@ class _sectionActions extends sfActions
     }
     elseif($this->section->Parent->id > 0){
       if($this->site->getType() == "Hotsite" || $this->site->getType() == 1){
-        $this->setLayout("vilasesamo");
         if(in_array($this->site->getSlug(), array("vila-sesamo","vilasesamo"))) {
+          $this->setLayout("vilasesamo");
           $parentSection = $this->section->getParent();
           if($parentSection->getSlug() == "personagens") {
             if($debug) print "<br>4-4-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/personagem';
