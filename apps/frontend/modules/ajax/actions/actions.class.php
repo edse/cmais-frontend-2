@@ -1308,18 +1308,19 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         $max = count($assets);
         $count = 0;
         $return = "";
-        for($i=0;$i< $max; $i++):
-          $return .= $i . '/';
-          
-          while($count<8):
-            if($assets[$i]->AssetVideo->getYoutubeId()!=""):
-              $return .= $assets[$i]->getTitle() . " / ";
+        while($count<8):
+          $number = round(rand(0,$max)) ;
+          for($i=0;$i< $max; $i++):
+            $return .= $number . '/';
+            if($assets[$number]->AssetVideo->getYoutubeId()!=""):
+              $return .= $assets[$number]->getTitle() . " / ";
               $count++;
             else:
               $count--;
             endif;    
-          endwhile;
-        endfor;
+            
+          endfor;
+        endwhile;
         echo $return;
           /*
           if($section == "cuidadores"):
