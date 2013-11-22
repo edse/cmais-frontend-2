@@ -124,14 +124,20 @@
             <!--ul.nav-->
             <ul class="nav">
               <li>
-                <span class="icones-sprite-menu icone-cuidadores"></span>
+                <i class="icones-sprite-menu icone-cuidadores"></i>
                 <a class="btn-cuidadores-topo" href="/vilasesamo/cuidadores" title="Cuidadores" target="_blank">Cuidadores</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>
+                <i class="icones-sprite-menu icone-natv-peqno-verde"></i>
                 <a href="/vilasesamo/na-tv" title="Na TV" target="_blank">Na TV</a>
-                <!--span class="sprite-menu-ball"></span-->
+                <span class="sprite-menu-ball"></span>
               </li>
+              <li>  
+                <i class="icones-sprite-menu icone-natv-peqno-verde"></i>
+                <a href="/vilasesamo/acessilidade" title="Na TV" target="_blank">Acessibilidade</a>
+                <span class="sprite-menu-ball"></span>
+              </li>  
               <!--li>
                 <a href="/vilasesamo2/historia" title="História" target="_blank">História</a>
               </li-->            
