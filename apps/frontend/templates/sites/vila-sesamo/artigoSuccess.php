@@ -474,7 +474,7 @@
 <!--section--> 
 <script> 
 $('.autores').click(function(){
-  var who = $(this).attr('id');
+  var who = $(this).attr('data-scroll');
   goTop(who);
 });
 function goTop(who){
