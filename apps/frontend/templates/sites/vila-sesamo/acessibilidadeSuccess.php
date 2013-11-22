@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <script>
-  $("body").addClass("na-tv");
+  $("body").addClass("na-tv acessilidade");
 </script>
 
 <!-- HEADER -->
@@ -31,7 +31,9 @@
         <?php $asset = $section->getAssets(); ?>
         <?php if(isset($asset)):?>  
           <?php if(count($asset) > 0):?>
-            <?php echo html_entity_decode($asset[0]->AssetContent->render()) ?>
+            <div class="box-acessibilidade">
+              <?php echo html_entity_decode($asset[0]->AssetContent->render()) ?>
+            </div>
           <?php endif; ?>
         <?php endif; ?>  
         

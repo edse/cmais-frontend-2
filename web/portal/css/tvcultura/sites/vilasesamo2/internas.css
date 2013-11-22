@@ -481,6 +481,10 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .na-tv .fundo-na-tv{width:550px; height:650px; background:url('/portal/images/capaPrograma/vilasesamo2/personagens/img_natv.png') no-repeat; position:absolute;top:85px; left:10px;z-index: 0}
 /* /na tv */ 
 
+/* acessibilidade */
+.acessibilidade .box-acessibilidade{width:30%; float:right;}
+/* acessibilidade */
+
 
 /* busca */
 .campanhas .container-busca {background: #FFF;border-bottom: 2px solid #fbc227;padding: 20px;}
