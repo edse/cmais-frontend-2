@@ -474,11 +474,12 @@
 <!--section--> 
 <script> 
 $('.autores').click(function(){
-  goTop();
+  var who=$(this).attr('id');
+  goTop(who);
 });
-function goTop(){
+function goTop(who){
   $('html, body').animate({
-    scrollTop:parseInt($('.sobre-autor').offset().top-126)
+    scrollTop:parseInt($('.sobre-autor '+who).offset().top-126)
   }, "slow");
 }      
 </script>
