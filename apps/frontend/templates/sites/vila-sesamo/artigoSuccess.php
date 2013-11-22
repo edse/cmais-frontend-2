@@ -51,7 +51,7 @@
               <div class="overflow">
                 <span class="data"><?php echo format_date($asset->getUpdatedAt(), "g") ?> - Por</span> 
                 
-                <div class="divisa"></div>
+                
                 
                 <?php $colaboradores = $asset->retriveRelatedAssetsByRelationType("Colaborador") ?>
                 <?php if(count($colaboradores) > 0): ?>
@@ -76,7 +76,7 @@
               <!--compartilhar redes-->
               <?php //include_partial_from_folder('sites/vila-sesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
               <!--/compartilhar redes-->
-              
+              <div class="divisa"></div>
             </header>
             <!--/header-->
             
