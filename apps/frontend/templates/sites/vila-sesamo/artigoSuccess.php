@@ -476,12 +476,12 @@
 $('.autores').click(function(){
   var who = $(this).attr('data-scroll')
   console.log(who);
-  console.log($('#'+who).offset().top-126);
-  //goTop(who);
+  var where = $('#'+who).offset().top-126);
+  goTop(where);
 });
 function goTop(who){
   $('html, body').animate({
-    scrollTop:parseInt($('#'+who).offset().top-126)
+    scrollTop:where
   }, "slow");
 }      
 </script>
