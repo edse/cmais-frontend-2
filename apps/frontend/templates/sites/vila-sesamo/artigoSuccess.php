@@ -476,7 +476,7 @@
 $('.autores').click(function(){
   var who = $(this).attr('data-scroll')
   console.log(who);
-  var where = $('#'+who).offset().top-126);
+  var where = $('#'+who).offset().top-126;
   goTop(where);
 });
 function goTop(who){
