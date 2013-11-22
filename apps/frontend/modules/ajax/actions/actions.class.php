@@ -1320,7 +1320,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
                 if($arrayCount[$j] == $assets[$vetor]):
                   $count--;
                 else:
-                  $return = $assets[$vetor] . " / ";
+                  $return = $assets[0]->getTitle() . " / ";
                   $count++;
                 endif;  
                     
