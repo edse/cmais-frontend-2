@@ -51,6 +51,8 @@
               <div class="overflow">
                 <span class="data"><?php echo format_date($asset->getUpdatedAt(), "g") ?> - Por</span> 
                 
+                <div class="divisa"></div>
+                
                 <?php $colaboradores = $asset->retriveRelatedAssetsByRelationType("Colaborador") ?>
                 <?php if(count($colaboradores) > 0): ?>
                   <?php
