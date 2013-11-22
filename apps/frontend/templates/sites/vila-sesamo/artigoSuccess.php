@@ -236,7 +236,7 @@
           <div class="box-sobre">
             <h2>
               <i class="icones-sprite-interna icone-carregar-verde"></i>
-              sobre...
+              <span>sobre os temas</span>
             </h2>
             <div class="links">
               <?php foreach($tags as $t): ?>
@@ -276,7 +276,7 @@
               <div class="box-ler">
                 <h2 class="titulo-box">
                   <i class="icones-sprite-interna icone-artigo-ve-pequeno"></i>
-                  Para ler
+                  <span>Artigos Relacionados</span>
                 </h2>
               
                 <!--lista-->
@@ -306,47 +306,6 @@
               Para brincar junto
             </h2>
            
-            <!--destaque atividades-->
-             <?php
-              if(count($tags) > 0) {
-                $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "atividades");
-                $related_asset = Doctrine_Query::create()
-                  ->select('a.*')
-                  ->from('Asset a, SectionAsset sa, tag t, tagging tg')
-                  ->where('a.site_id = ?', $site->getId())
-                  ->andWhere('sa.asset_id = a.id')
-                  ->andWhere('sa.section_id = ?', $particularSection->getId())
-                  ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
-                  ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
-                  ->andWhere('a.is_active = ?', 1)
-                  ->andWhere('tg.taggable_id = a.id')
-                  ->andWhere('tg.tag_id = t.id')
-                  ->andWhereIn('t.name', $tags)
-                  ->andWhere('a.id != ?', $asset->getId())
-                  ->andWhere('a.asset_type_id = ?', 1)
-                  ->limit(1)
-                  ->execute();
-              }
-            ?>
-            <?php if(isset($related_asset)): ?>  
-              <?php if(count($related_asset) > 0): ?>
-              <article class="atividades">
-                <a href="/vila-sesamo/jogos/livro-animado-0" title="">
-                  <?php $preview = $related_asset[0]->retriveRelatedAssetsByRelationType("Preview") ?>
-                  <?php if(count($preview) > 0): ?>
-                    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>">
-                  <?php endif; ?>
-                  <i class="icones-sprite-interna icone-atividades-pequeno"></i>
-                  <div class="texto">
-                    <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
-                    <?php echo $related_asset[0]->getTitle() ?>             
-                  </div>
-                </a>
-              </article>
-              <?php endif; ?>
-            <?php endif; ?>
-            <!--/destaque atividades-->
-            
   
            <!--destaque jogos--> 
            <?php
@@ -429,7 +388,48 @@
             <?php endif; ?>
           <?php endif; ?>
           <!--/destaque videos-->
-            
+          
+          <!--destaque atividades-->
+             <?php
+              if(count($tags) > 0) {
+                $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "atividades");
+                $related_asset = Doctrine_Query::create()
+                  ->select('a.*')
+                  ->from('Asset a, SectionAsset sa, tag t, tagging tg')
+                  ->where('a.site_id = ?', $site->getId())
+                  ->andWhere('sa.asset_id = a.id')
+                  ->andWhere('sa.section_id = ?', $particularSection->getId())
+                  ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+                  ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
+                  ->andWhere('a.is_active = ?', 1)
+                  ->andWhere('tg.taggable_id = a.id')
+                  ->andWhere('tg.tag_id = t.id')
+                  ->andWhereIn('t.name', $tags)
+                  ->andWhere('a.id != ?', $asset->getId())
+                  ->andWhere('a.asset_type_id = ?', 1)
+                  ->limit(1)
+                  ->execute();
+              }
+            ?>
+            <?php if(isset($related_asset)): ?>  
+              <?php if(count($related_asset) > 0): ?>
+              <article class="atividades">
+                <a href="/vila-sesamo/jogos/livro-animado-0" title="">
+                  <?php $preview = $related_asset[0]->retriveRelatedAssetsByRelationType("Preview") ?>
+                  <?php if(count($preview) > 0): ?>
+                    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>">
+                  <?php endif; ?>
+                  <i class="icones-sprite-interna icone-atividades-pequeno"></i>
+                  <div class="texto">
+                    <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
+                    <?php echo $related_asset[0]->getTitle() ?>             
+                  </div>
+                </a>
+              </article>
+              <?php endif; ?>
+            <?php endif; ?>
+            <!--/destaque atividades-->
+              
           </div>
           <!-- /para brincar junto-->
                      
