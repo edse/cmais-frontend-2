@@ -49,34 +49,6 @@ $(function(){
     <!-- / CAPA SITE -->
     <div id="capa-site">
 
-      <!-- BARRA SITE -->
-      <div id="barra-site">
-
-        <?php if(isset($siteSections)): ?>
-        <!-- box-topo -->
-        <div class="box-topo grid3">
-          
-          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
-
-          <?php if(isset($section->slug)): ?>
-            <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
-            <div class="navegacao txt-10">
-              <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
-              <span>&gt;</span>
-              <a href="<?php echo $site->retriveUrl() ?>/imagens" title="Imagens">Imagens</a>
-              <span>&gt;</span>
-              <a href="<?php echo $asset->retriveUrl()?>" title="<?php echo $asset->getTitle()?>"><?php echo $asset->getTitle()?></a>
-            </div>
-            <?php endif; ?>
-          <?php endif; ?>
-
-        </div>
-        <!-- /box-topo -->
-        <?php endif; ?>
-        
-      </div>
-      <!-- /BARRA SITE -->
-
       <!-- MIOLO -->
       <div id="miolo">
         
