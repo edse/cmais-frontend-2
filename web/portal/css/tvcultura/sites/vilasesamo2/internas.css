@@ -456,7 +456,8 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .banner a img{width: 95%;margin: 10px 0px;}
 .cuidadores .container-cuidadores .destaques .texto {white-space: nowrap;text-overflow: ellipsis;overflow: hidden;padding: 0;font-size: 16px;font-family: 'dinmedium',Arial, Helvetica, sans-serif;}
 .cuidadores .todos-assets{height:48px;background-image: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-artigo.png');font-size: 25px!important;overflow: hidden;float: right;width: 300px;line-height: 48px;}
-.cuidadores .todos-assets p{margin:0;}
+.cuidadores .todos-assets p{margin:0!important; text-align:center!important;}
+.cuidadores .todos-assets .icone-voltar-artigo{margin:0!important;}
 .cuidadores .container-cuidadores .col-dir{padding:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat; }
 .cuidadores #img-capa{width:100%;}
 .cuidadores #legenda{font-family:'dinmedium',Arial, Helvetica, sans-serif;text-align: center;line-height: 35px;border: 1px solid #efefef;border-top: none;color: #737373;}
