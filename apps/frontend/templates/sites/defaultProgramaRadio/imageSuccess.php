@@ -51,27 +51,6 @@ $(function(){
 
       <!-- BARRA SITE -->
       <div id="barra-site">
-        <div class="topo-programa">
-          <?php if(isset($program) && $program->id > 0): ?>
-          <h2>
-            <a href="<?php echo $program->retriveUrl() ?>">
-              <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
-            </a>
-          </h2>
-          <?php endif; ?>
-
-          <?php if(isset($program) && $program->id > 0): ?>
-          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
-          
-          <?php if(isset($program) && $program->id > 0): ?>
-          <!-- horario -->
-          <div id="horario">
-            <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
-          </div>
-          <!-- /horario -->
-          <?php endif; ?>
-        </div>
 
         <?php if(isset($siteSections)): ?>
         <!-- box-topo -->
@@ -154,10 +133,6 @@ $(function(){
             <!-- /DIREITA -->
           </div>
           <!-- /CAPA -->
-
-          <!-- MENU-RODAPE -->
-          <?php include_partial_from_folder('blocks','global/display-3c-last-videos', array('displays' => $vid2, 'title' => 'Últimas Imagens')) ?>
-          <!-- /MENU-RODAPE -->
 
           <!-- BOX PUBLICIDADE 2 -->
           <div class="box-publicidade pub-grd grid3">
