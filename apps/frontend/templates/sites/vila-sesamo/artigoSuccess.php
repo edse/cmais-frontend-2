@@ -62,7 +62,7 @@
                       <?php//echo implode(", ", $autores) ?>
                       <?php
                       foreach($colaboradores as $c):
-                        echo '<a class="autores" id="'.$c->getTitle().'" href="#'.$c->getTitle().'">'.$c->AssetPerson->getName() . "</a>, ";
+                        echo '<a class="autores" id="'.$c->getSlug().'" href="#'.$c->getTitle().'">'.$c->AssetPerson->getName() . "</a>, ";
                       endforeach;
                       ?>
                     <?php endif; ?>.
@@ -127,7 +127,7 @@
                 sobre o autor:
               </h2>
                 <?php foreach($colaboradores as $c): ?>
-                  <article class="sobre-autor" id="<?php echo $c->getTitle() ?>">
+                  <article class="sobre-autor" id="<?php echo $c->getSlug() ?>">
                     <div class="sombra-amarela"></div>
                     <div class="foto-sobre">
                       <?php $preview = $c->retriveRelatedAssetsByRelationType("Preview") ?>
