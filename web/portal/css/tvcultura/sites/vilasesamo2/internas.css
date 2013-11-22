@@ -407,6 +407,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores h2,
 .cuidadores .container-cuidadores h3{font-size: 16px;color: #00aa52;text-transform: uppercase;height: 22px;line-height: 27px;}
 .cuidadores .container-cuidadores .col-esq{padding: 20px 0 20px 20px;}
+.cuidadores .container-cuidadores  article h1{font-size:25px;}
 .cuidadores .container-cuidadores .col-esq article h1{font-size:25px;background: none;border: none;text-align: left;padding: 0!important;line-height: 30px!important; color:#00aa52!important;margin-bottom:10px!important;height: auto!important;}
 .cuidadores .container-cuidadores .col-esq article .data{float:left; display:block;}
 .cuidadores .container-cuidadores .col-esq article .nome{margin-left: 5px!important;float:left; display:block; color: #00AA52!important;}
