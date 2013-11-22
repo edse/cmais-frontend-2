@@ -64,7 +64,12 @@
                   ?>
                   <span class="nome">
                     <?php if(count($autores) > 0): ?>
-                      <?php echo implode(", ", $autores) ?>
+                      <?php//echo implode(", ", $autores) ?>
+                      <?php
+                      foreach($autores as $a):
+                        echo '<a href="#">'.$a . "</a>, ";
+                      endforeach;
+                      ?>
                     <?php endif; ?>.
                   </span>
                   <?php else: ?>
