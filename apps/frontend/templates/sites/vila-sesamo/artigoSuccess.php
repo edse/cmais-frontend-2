@@ -123,7 +123,7 @@
               <!--sobre os autores-->
               <?php if(count($colaboradores) > 0): ?>
               <h2>
-                <i class="icones-sprite-interna icone-carregar-verde"></i>
+                <i class="icones-sprite-interna icone-carregar-verde" style="margin:0!important;"></i>
                 sobre o autor:
               </h2>
                 <?php foreach($colaboradores as $c): ?>

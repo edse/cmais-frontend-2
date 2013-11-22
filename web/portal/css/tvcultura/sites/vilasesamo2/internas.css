@@ -461,7 +461,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .col-dir{padding:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat; }
 .cuidadores #img-capa{width:100%;}
 .cuidadores #legenda{font-family:'dinmedium',Arial, Helvetica, sans-serif;text-align: center;line-height: 35px;border: 1px solid #efefef;border-top: none;color: #737373;}
-.cuidadores #comente-este-artigo h3{color: #434343;  font-size: 18px;margin-bottom: 15px;font-family:'din-blackregular',Arial, Helvetica, sans-serif;}
+.cuidadores #comente-este-artigo h3{color: #434343;  font-size: 18px;margin-bottom: 15px;font-family:'din-blackregular',Arial, Helvetica, sans-serif;margin-top:30px;}
 /* /cuidadores artigos */
 
 /* na tv */
