@@ -44,7 +44,7 @@
                 <?php foreach($displays['destaque-principal'] as $d): ?>
                 <!--item-->
                 <li>
-                  <a class="btn-carrossel" href="<?php echo $site->getSlug() ?>/<?php echo $section->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="<?php echo $d->getTitle() ?>" target="_self">
+                  <a class="btn-carrossel" href="<?php echo $site->retriviUrl() ?>/<?php echo $section->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="<?php echo $d->getTitle() ?>" target="_self">
                     <div class="pull-left videoorimage">
                       <div class="imagem-destaque-carrossel">
                         <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
@@ -245,7 +245,7 @@
     total = width + total + 14; 
   });
   $('.btn-carrossel').click(function(){
-    window.location.assign($(this).attr('href');
+    window.location.assign($(this).attr('href'))
   });
   $('.dropdown-menu a, .dropdown-toggle').click(function(){
     $('.dropdown-menu').toggle();
