@@ -28,6 +28,12 @@
       <div class="container-na-tv">
         <h2 class="ola"><?php echo $section->getDescription() ?></h2>
         
+        <?php $asset = $section->getAssets(); ?>
+        <?php if(isset($asset)):?>  
+          <?php if(count($asset) > 0):?>
+            <?php echo html_entity_decode($asset[0]->AssetContent->render()) ?>
+          <?php endif; ?>
+        <?php endif; ?>  
         
             
                   
