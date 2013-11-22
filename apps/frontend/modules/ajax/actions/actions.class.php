@@ -1316,6 +1316,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $count++;
           else:  
             $count--;
+            if($count <= 0)
+              $count = 0;
           endif;   
           
         endwhile;
