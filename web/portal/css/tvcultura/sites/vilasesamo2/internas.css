@@ -432,14 +432,14 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .col-dir .box-sobre img{width: 100%;}
 .cuidadores .container-cuidadores .col-dir .box-sobre a{background: #00aa52;color: #ffffff;padding: 6px 6px;font-size: 16px;margin: 5px 2px;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;float: left;}
 .cuidadores .container-cuidadores .col-dir .box-sobre a:hover{background: #fffb49;color:#00aa52;}
-.cuidadores .container-cuidadores .col-dir .box-sobre span{margin-left:40px;}
 .cuidadores .container-cuidadores .col-dir .box-ler ul{margin: 0;}
 .cuidadores .container-cuidadores .col-dir .box-ler h3{color:#434343; padding:0; margin:0;overflow: hidden;white-space: nowrap;text-overflow: ellipsis}
 .cuidadores .container-cuidadores .col-dir .box-ler a{color:#434343;}
 .cuidadores .container-cuidadores .col-dir .box-ler p{height: 60px;overflow: hidden;}
 .cuidadores .container-cuidadores .col-dir .box-ler .divisa{margin-bottom:10px;}
+.cuidadores .container-cuidadores .col-dir .box-sobre span,
 .cuidadores .container-cuidadores .col-dir .box-ler span,
-.cuidadores .container-cuidadores .col-dir .box-brincarjunto span{margin-left:40px;}
+.cuidadores .container-cuidadores .col-dir .box-brincarjunto span{text-align: left;margin-left:40px;}
 .cuidadores .container-cuidadores .col-dir .box-ler .titulo-box,
 .cuidadores .container-cuidadores .col-dir .box-brincarjunto .titulo-box{height: 43px;line-height: 42px;background-color:#fffb49; width:287px;}
 .cuidadores .container-cuidadores .col-dir .icone-cuidadores{margin: 3px 12px;}
