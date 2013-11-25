@@ -172,7 +172,7 @@
                   <div class="resposta<?php echo $k?>">
                     <label>50%</label>
                   </div>
-                   * */
+                  */
                    ?>
                 <?php endforeach;?>
               </div>
