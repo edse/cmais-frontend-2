@@ -277,7 +277,7 @@
 	          $(".inativo").fadeIn("fast");
 	          
 	          $.each(data, function(key, val) {
-	            $('.inativo').html('<div class="div-choice"><label for=".resposta'+key+'">'+val.answer+' - ' + parseFloat(val.votes) + '"%"</label></div>');
+	            $('.inativo').append('<div class="div-choice"><label for=".resposta'+key+'">'+val.answer+' - ' + parseFloat(val.votes) + '"%"</label></div>');
 	
 	          });
          	//}else{
