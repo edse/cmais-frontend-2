@@ -81,7 +81,7 @@ body.campanhas{background-color:#fee133!important;}
 
 .campanhas .filtro{background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: none;}
 .campanhas .filtro.escolha {background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;}
-.campanhas .filtro h1{background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important; font-size:25px!important;}
+.campanhas .filtro h1{background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important;padding-left:40px;}
 .campanhas .container-campanhas{background: #FFF;border-bottom: 2px solid #fbc227;padding: 20px;min-height: 245px;}
 .interna.campanhas .container-campanhas {border-bottom:none;}
 .campanhas .container-campanhas iframe{float:right;}
