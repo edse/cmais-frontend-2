@@ -50,7 +50,8 @@
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
-    
+    <?php
+    /*
     <!-- DFP -->        
     <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
     </script>
@@ -78,7 +79,31 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
+    */
+    ?>
+    <!--banner vila sesamo 2013-->
+    <script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') + 
+    '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+    })();
+    </script>
     
+    <script type='text/javascript'>
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/4079539/vilasesamo', [300, 250], 'div-gpt-ad-1385379108052-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+    });
+    </script>
     <!--meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"-->
     <script>
     /*
