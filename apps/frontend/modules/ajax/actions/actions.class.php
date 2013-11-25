@@ -1203,7 +1203,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->limit($items)
         ->offset($start)
         ->execute();
-          
+        
+        
         foreach($assets as $d){
           
           if($section == "cuidadores"):
@@ -1304,7 +1305,6 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
         }
         
-      
     }
     die();
   }

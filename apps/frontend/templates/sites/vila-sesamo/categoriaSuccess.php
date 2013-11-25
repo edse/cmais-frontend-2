@@ -18,31 +18,31 @@
   <!--section -->
   <section class="filtro row-fluid pais">
     
+    <!--selecione a categoria-->
+    <?php
+      $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
+      $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
+    ?>        
+    <?php if(isset($allCategories)): ?>
+      <?php if(count($allCategories) > 0): ?>
+      <div class="btn-group selecao-categoria">
+        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
+        <ul class="dropdown-menu">
+          <?php foreach($allCategories as $c): ?>
+          <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+      <?php endif; ?>
+    <?php endif; ?>
+    <!--/selecione a categoria-->
+      
     <!--container conteudo-->
     <div class="b-amarelo borda-arredonda">
       <h1>
         <?php echo $section->getTitle() ?>
-        
-        <!--selecione a categoria-->
-         <?php
-          $sectionCategorias = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"categorias");
-          $allCategories = $sectionCategorias->subsections(); // pega todas as categorias para o usuário poder navegar por elas
-        ?>        
-        <?php if(isset($allCategories)): ?>
-          <?php if(count($allCategories) > 0): ?>
-          <div class="btn-group">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
-            <ul class="dropdown-menu">
-              <?php foreach($allCategories as $c): ?>
-              <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
-              <?php endforeach; ?>
-            </ul>
-          </div>
-          <?php endif; ?>
-        <?php endif; ?>
-        <!--/selecione a categoria-->
-        
       </h1>
+      
       <?php if($section->getIsHomepage() == 1): // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando". ?>
   
       <!--destaque-principal-->

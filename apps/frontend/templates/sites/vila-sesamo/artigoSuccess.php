@@ -4,10 +4,16 @@
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
-
+<?php 
+  $assetSection = $asset->getSections();
+  foreach($assetSection  as $a){
+    if($a->getSlug() == 'cuidadores')
+      $assetSection = 'cuidadores';
+  }
+?>
 <script>
   $("body").addClass("cuidadores artigo");
-  <?php if($section->Parent->getSlug()=="cuidadores"):?>
+  <?php if($assetSection=="cuidadores"):?>
     $(document).ready(function(){
       $(".btn-cuidadores-topo").addClass("active");
     });  
@@ -29,7 +35,7 @@
       <h1>
         <span class="icones-sprite-interna icone-cuidadores-grande"></span>
         <?php echo $section->getTitle() ?>
-        <a class="todos-assets" title="voltar para todas atividades">
+        <a href="/<?php echo $site->getSlug() ?>/<?php echo $section->getSlug() ?>" class="todos-assets" target="_self" title="voltar para todas atividades">
           <i class="icones-setas icone-voltar-artigo" href="/<?php echo $site->getSlug() ?>/<?php echo $section->getSlug() ?>"></i>
           <p>todos os artigos</p>
         </a>
@@ -50,11 +56,8 @@
               <h1><?php echo $asset->getTitle() ?></h1>
                
               <div class="overflow">
-                <span class="data"><?php echo format_date($asset->getUpdatedAt()) ?> - Por</span> 
-                
-                
-                
                 <?php $colaboradores = $asset->retriveRelatedAssetsByRelationType("Colaborador") ?>
+                <span class="data"><?php echo format_date($asset->getUpdatedAt()) ?><?php if(count($colaboradores) > 0) echo " - Por" ?> </span> 
                 <?php if(count($colaboradores) > 0): ?>
                   
                   <span class="nome">
@@ -62,7 +65,7 @@
                       <?php//echo implode(", ", $autores) ?>
                       <?php
                       foreach($colaboradores as $c):
-                        echo '<a class="autores" id="'.$c->getSlug().'" href="#'.$c->getTitle().'">'.$c->AssetPerson->getName() . "</a>, ";
+                        echo '<a class="autores" data-scroll="'.$c->getSlug().'"href="javascript:;">'.$c->AssetPerson->getName() . "</a>, ";
                       endforeach;
                       ?>
                     <?php endif; ?>.
@@ -240,12 +243,13 @@
             </h2>
             <div class="links">
               <?php foreach($tags as $t): ?>
-                <a href="http://cmais.com.br/vila-sesamo/busca?output=search&q=<?php echo $t ?>" title="<?php echo $t ?>"><?php echo $t ?></a>
+                <a href="http://cmais.com.br/vila-sesamo/busca?output=search&term=<?php echo $t ?>" title="<?php echo $t ?>"><?php echo $t ?></a>
               <?php endforeach; ?>
             </div>
             <div class="bottom-box-sobre">
               <img src="/portal/images/capaPrograma/vilasesamo2/box-bottom-sobre.png" alt=""/>
             </div>
+          </div>  
           <?php endif; ?>
           <!--/tags-->
 
@@ -293,9 +297,10 @@
                   <?php endforeach; ?>
               </ul>
               <!--/lista-->
+             </div>
             <?php endif; ?>
           <?php endif; ?>
-          </div>
+          
           <!-- /para ler-->
           
           <!-- para brincar junto-->
@@ -436,30 +441,40 @@
         <!--/col dir -->
         
         <!--destaques-->
-        <?php
-          $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"cuidadores");
-          $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($particularSection->getId(), "destaques-secundarios"); // Pega o bloco "destaques-secundarios" da seção "para os pais"
-          if ($block) $_displays["destaques-secundarios"] = $block->retriveDisplays(); // Pega os destaques do bloco "destaques-secundarios"    
-        ?>        
-        <?php if(isset($_displays['destaques-secundarios'])): ?>
-          <?php if(count($_displays['destaques-secundarios']) > 0): ?>
-            <div class="span4 pull-right banner">
-          
-              <!--destaque -->
-              <?php foreach($_displays['destaques-secundarios'] as $d): ?>
-              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
-              </a>
-              <?php endforeach; ?> 
-              <!--/destaque -->
-          
-              <!--face like box-->
-              <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Ftvcultura&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=446708858755935" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:290px;width: 287px;margin-bottom: 20px;" allowTransparency="true"></iframe>
-              <!--/face like box-->
-            </div>
+        <div class="span4 col-direita">
+          <?php
+            $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"cuidadores");
+            $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($particularSection->getId(), "destaques-secundarios"); // Pega o bloco "destaques-secundarios" da seção "para os pais"
+            if ($block) $_displays["destaques-secundarios"] = $block->retriveDisplays(); // Pega os destaques do bloco "destaques-secundarios"    
+          ?>        
+          <?php if(isset($_displays['destaques-secundarios'])): ?>
+            <?php if(count($_displays['destaques-secundarios']) > 0): ?>
+            
+                <!--destaque -->
+                <?php foreach($_displays['destaques-secundarios'] as $d): ?>
+                <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                  <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
+                </a>
+                <?php endforeach; ?> 
+                <!--/destaque -->
+              
+            <?php endif; ?>
           <?php endif; ?>
-        <?php endif; ?>
+          
+          <!-- banner vilasesamo -->
+          <?php include_partial_from_folder('sites/vila-sesamo', 'global/banner300x250', array('site' => $site, 'section' => $section)) ?>
+          <!-- /banner vilasesamo -->
+      
+          <!--face like box-->
+          <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Ftvcultura&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=446708858755935" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:290px;width: 287px;margin-bottom: 20px;" allowTransparency="true"></iframe>
+          <!--/face like box-->
+        
+        </div>
         <!--destaques-->
+        
+        <!-- banner vilasesamo -->
+        <?php include_partial_from_folder('sites/vila-sesamo', 'global/banner300x250', array('site' => $site, 'section' => $section)) ?>
+        <!-- /banner vilasesamo -->
         
       </div>
       <!--/container-->
@@ -474,12 +489,14 @@
 <!--section--> 
 <script> 
 $('.autores').click(function(){
-  var who = $(this).attr('id');
-  goTop(who);
+  var who = $(this).attr('data-scroll')
+  console.log(who);
+  var where = $('#'+who).offset().top-140;
+  goTop(where);
 });
-function goTop(who){
+function goTop(where){
   $('html, body').animate({
-    scrollTop:parseInt($('.sobre-autor #'+who).offset().top-126)
+    scrollTop:where
   }, "slow");
 }      
 </script>

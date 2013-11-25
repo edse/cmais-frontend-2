@@ -43,6 +43,22 @@
       <!--container-->
   </section>
   <!--/section-->
-
+  <script>
+  
+    if(getURLParameter("term") == "null" || getURLParameter("term") == ""){
+      $('.b-amarelo h1').text('Sem resultados a busca');
+    }else{
+      var busca = getURLParameter("term");
+      $('.b-amarelo h1').text('resultado para "'+busca+'"');
+      $('#google_search').show();
+    }
+  
+  function getURLParameter(name) {
+      return decodeURI(
+          (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+      );
+  }
+  </script>
+  
 </div>
 <!--/div-->  

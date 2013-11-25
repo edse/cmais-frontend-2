@@ -139,9 +139,9 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .btn-cuidadores-topo{padding-left:10px!important;float:left;}
 .btn-na-tv-topo{padding-left:10px!important;float:left;}
 .btn-acessibilidade-topo{padding-left:10px!important;float:left;}
-.btn-cuidadores-topo.active{color:#737373; background:none !important; font-weight: normal !important; }
-.btn-na-tv-topo.active{font-weight:bold!important;text-decoration:underline!important;}
-.btn-acessibilidade-topo.active{font-weight:bold!important;text-decoration:underline!important; }
+.btn-cuidadores-topo.active,
+.btn-na-tv-topo.active,
+.btn-acessibilidade-topo.active{color:#737373;font-family:'din-blackregular', Arial, Helvetica, sans-serif; font-weight: normal !important; text-decoration:underline!important; }
 
 
 /* icone rodape */
@@ -206,6 +206,9 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-tv-cultura{background-position: 10px -22px;width: 110px;height: 110px;margin: 0 auto;display: block;padding: 10px;}
 .icone-seta-box{background-position: 0 0;width: 21px;height: 13px;position: absolute;bottom: -13px;left: 46%;}
 .icone-tv-ratim-bum{background-position: 10px -155px;width: 110px;height: 110px;margin: 0 auto;display: block;padding: 10px;}
+
+/* acessibilidade */
+.icone-acessibilidade{width: 56px; height: 56px; background: url(/portal/images/capaPrograma/vilasesamo2/sprites/vs_icon_acessibilidade-amarelo.png) no-repeat top left;}
 
 /* formularios */
 .icones-form{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-form.png) no-repeat top left;}
@@ -454,7 +457,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .topo-vila nav { float:right; margin-right:0;  }
 .topo-vila .nav,
 .topo-vila nav form { float:right; }
-.topo-vila .nav { height:20px; padding:0 10px; margin-top:18px; max-width:412px; float:left; }
+.topo-vila .nav { height:20px; padding:0 10px; margin-top:18px; max-width:460px; float:left; }
 .topo-vila .nav li a { padding:0; float:left; text-transform:uppercase; text-shadow:none; color:#737373; font-weight: normal;}
 .topo-vila .nav li a:hover { color:#737373; background:none !important; font-weight: normal !important; }
 .topo-vila .nav li .sprite-menu-ball {  display: block; margin:7px 5px 0 10px; float:left; }
@@ -667,7 +670,7 @@ footer .relacionados li a:hover{-moz-opacity: 0.50;-khtml-opacity: 0.50;opacity:
 .box-pais a:hover{color:#434343;} 
 
 img.altura{width: 1px!important;height: 40px!important;}
-#content .pais {overflow: hidden;min-height: 46px!important; background:#feec3c; margin:0 auto !important; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
+#content .pais {/*overflow: hidden;*/min-height: 46px!important; background:#feec3c; margin:0 auto !important; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 .pais h2.tit-box{height: 44px;font-size: 25px;line-height: 47px;padding: 1px 20px;color: #434343;}
 .pais .divisa { margin-bottom:0; }
 .pais .divisa {clear: both;background-color: #feec3c;height: 2px;margin: 0;}

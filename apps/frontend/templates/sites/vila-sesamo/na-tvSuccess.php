@@ -5,6 +5,11 @@
 
 <script>
   $("body").addClass("na-tv");
+  <?php if($section->getSlug()=="na-tv"):?>
+    $(document).ready(function(){
+      $(".btn-na-tv-topo").addClass("active");
+    });  
+  <?php endif; ?>
 </script>
 
 <!-- HEADER -->
