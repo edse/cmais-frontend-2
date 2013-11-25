@@ -137,11 +137,12 @@
             <div id="destaque-enquete">
               <div class="col-esq">
                 <?php if(count($vd) > 0):?>
-                  <iframe width="310" height="250" src="//www.youtube.com/embed/<?php echo $img[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="310" height="250" src="//www.youtube.com/embed/<?php echo $vd[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
                 <?php elseif (count($img) > 0):?>
                   <img src="<?php echo "http://midia.cmais.com.br/assets/image/original/".$img[0]->AssetImage->original_file; ?>" title="<?php echo $img[0]->getTitle(); ?>" />
                 <?php endif; ?>  
               </div>
+              
               <div class="col-dir">
                 <div class="text">
                 	<?php echo html_entity_decode($displays["enquete"][0]->Asset->AssetQuestion->getQuestion()) ?>
@@ -154,8 +155,10 @@
 			              ?>
 			              <?php foreach ($respostas as $k => $r):?>
 				              <div class="div-choice">
-				                <input type="radio" name="opcao" id="resposta<?php echo $k?>" class="resposta required" value="<?php echo $r->Asset->AssetAnswer->id ?>"  />
-				                <label class="radio" for="resposta<?php echo $k?>"><?php echo $r->Asset->AssetAnswer->getAnswer() ?></label>
+				                <label for="resposta<?php echo $k?>">
+				                	<input type="radio" name="opcao" id="resposta<?php echo $k?>" class="required" value="<?php echo $r->Asset->AssetAnswer->id ?>"  />
+				                	<?php echo $r->Asset->AssetAnswer->getAnswer() ?>
+				                </label>
 				              </div>
 			              <?php endforeach;?>
 			              <input type="submit" class="votar" value="VOTAR">
@@ -164,7 +167,7 @@
               </div>
               <div class="inativo" style="display: none;">
                 <?php foreach($respostas as $k => $r): ?>
-                  <div class="resposta-cartaozinho-enquete resposta<?php echo $k?>">
+                  <div class="resposta<?php echo $k?>">
                     <label>50%</label>
                   </div>
                 <?php endforeach;?>
