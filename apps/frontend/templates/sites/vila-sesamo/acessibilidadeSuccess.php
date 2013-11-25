@@ -5,6 +5,11 @@
 
 <script>
   $("body").addClass("na-tv acessibilidade");
+  <?php if($section->getSlug()=="na-tv"):?>
+    $(document).ready(function(){
+      $(".btn-acessibilidade-topo").addClass("active");
+    });  
+  <?php endif; ?>
 </script>
 
 <!-- HEADER -->

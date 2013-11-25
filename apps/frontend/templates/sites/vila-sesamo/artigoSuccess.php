@@ -4,10 +4,11 @@
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
-
+<?php echo $section->Parent->getSlug()."teste >>>>>>"?>
+<?php echo $asset->Parent->getSlug()."teste2 >>>>>>"?>
 <script>
   $("body").addClass("cuidadores artigo");
-  <?php if($section->Parent->getSlug()=="cuidadores"):?>
+  <?php if($asset->Parent->getSlug()=="cuidadores"):?>
     $(document).ready(function(){
       $(".btn-cuidadores-topo").addClass("active");
     });  
