@@ -164,18 +164,19 @@
 			              <input type="submit" class="votar" value="VOTAR">
 	              	</form>
               	<!--/Form enquete-->
+                	<div class="inativo" style="display: none;">
+                  <?php foreach($respostas as $k => $r): ?>
+                    <?php
+                    /*
+                    <div class="resposta<?php echo $k?>">
+                      <label>50%</label>
+                    </div>
+                    */
+                     ?>
+                  <?php endforeach;?>
+                </div>
               </div>
-              <div class="inativo" style="display: none;">
-                <?php foreach($respostas as $k => $r): ?>
-                  <?php
-                  /*
-                  <div class="resposta<?php echo $k?>">
-                    <label>50%</label>
-                  </div>
-                  */
-                   ?>
-                <?php endforeach;?>
-              </div>
+              
             </div>  
             <!-- FORM DESTAQUE ENQUETE-->
             
