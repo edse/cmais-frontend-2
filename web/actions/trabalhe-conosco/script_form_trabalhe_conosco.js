@@ -457,7 +457,7 @@ $(document).ready(function() {
         dataType: "jsonp",
         data: $("#form4").serialize(),
         url: "http://app.cmais.com.br/actions/trabalhe-conosco/insere_curso.php?qg_curric="+$("#qg_curric").val()+valores,
-        error: function(retorno){
+        error: function(retorno){ 
           alert("Erro ao inserir curso!");
         }, 
         success: function(json) {
