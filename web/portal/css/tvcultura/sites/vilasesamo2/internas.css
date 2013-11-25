@@ -493,6 +493,7 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .acessibilidade .box-acessibilidade{overflow: hidden;width: 56%;float: right;}
 .acessibilidade .fundo-acessibilidade{width:400px; height:500px; background:url('/portal/images/capaPrograma/vilasesamo2/personagens/img_acessibilidade.png') no-repeat; position:absolute;top:110px; left:0px;z-index: 0}
 .acessibilidade .container-na-tv{background: #FFFFFF;padding: 30px 20px 30px 20px;overflow: hidden;position: relative;border-bottom: 2px solid #008d36;}
+.acessibilidade #content { top:134px; margin-bottom:30px!important; }
 /* acessibilidade */
 
 
