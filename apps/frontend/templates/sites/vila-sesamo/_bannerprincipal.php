@@ -151,8 +151,8 @@
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/6/img-personagem_banner_6-cuidadores.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="50" data-y="210" data-delay="1500" data-duration="1000" data-easing="easeOutElastic" data-effect="slideBottom" data-fade="on">
-            <span class="tit-banner sombra">Cuidadores</span>
-            <span class="tit-banner" >Cuidadores</span>
+            <span class="tit-banner sombra">Pais e Educadores</span>
+            <span class="tit-banner" >Pais e Educadores</span>
           </div>
           <div class="mpc_ls_slide_item" data-x="40" data-y="270" data-delay="2500" data-duration="2000" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
             <span class="desc-banner">Dicas, conteúdos</span>
@@ -164,7 +164,7 @@
             <span class="desc-banner">participe, compartilhe.</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="<?php echo $site->getSlug() ?>/cuidadores" class="total"></a>
+            <a href="<?php echo $site->getSlug() ?>/pais-e-educadores" class="total"></a>
           </div>
         </li>
         <!--/item cuidadores-->

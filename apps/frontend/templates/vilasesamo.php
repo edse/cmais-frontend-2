@@ -152,7 +152,7 @@
             <ul class="nav">
               <li>
                 <i class="icones-sprite-menu icone-cuidadores"></i>
-                <a class="btn-cuidadores-topo" href="/vilasesamo/cuidadores" title="Cuidadores" target="_blank">Cuidadores</a>
+                <a class="btn-cuidadores-topo" href="/vilasesamo/pais-e-educadores" title="Pais e Educadores" target="_blank">Pais e Educadores</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>
@@ -267,7 +267,7 @@
             
             <!--nav-->
             <nav class="span12" aria-disabled="true">
-              <a href="/vilasesamo/cuidadores" class="col-esq " title="">Cuidadores</a><!--cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
+              <a href="/vilasesamo/pais-e-educadores" class="col-esq " title="">Pais e Educadores</a><!--cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
               <a href="/vilasesamo/na-tv" class="col-central" title=""><i class="icones-rodape icone-triangulo-claro"></i>Na TV</a><!-- natv-footer - cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
               <a href="/vilasesamo/acessibilidade" class="col-dir" title=""><i class="icones-rodape icone-triangulo-medio"></i>Acessibilidade</a>
               <!--a href="/vilasesamo2/atividades" class="col-dir" title=""><span class="sprite-destalhe-amarelo1"></span>História</a>
