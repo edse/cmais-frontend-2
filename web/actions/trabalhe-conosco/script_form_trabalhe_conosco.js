@@ -457,8 +457,8 @@ $(document).ready(function() {
         dataType: "jsonp",
         data: $("#form4").serialize(),
         url: "http://app.cmais.com.br/actions/trabalhe-conosco/insere_curso.php?qg_curric="+$("#qg_curric").val()+valores,
-        error: function(retorno){
-          alert("Erro Curso");
+        error: function(retorno){ 
+          alert("Erro ao inserir curso!");
         }, 
         success: function(json) {
            if(json.data == true){
@@ -477,7 +477,7 @@ $(document).ready(function() {
               
               $("#concluir_inscricao").show();
            }else{
-           	//console.log("erro no cadastro");
+           	alert("Erro ao inserir curso");
            }
          }
       });
@@ -659,8 +659,6 @@ $(document).ready(function() {
 	$("#qg_fonere").mask("(99)9999-9999");
 	$("#qg_foneco").mask("(99)9999-9999");
 	
-	
-	
 	$('#form1').validate({
     rules: {
       fpa_cpf: {
@@ -806,17 +804,17 @@ $(document).ready(function() {
       },
       ql_funcini: {
         required: true,
-        maxlength: 30,
+        maxlength: 20,
         minlength: 5
       },
       ql_funcao: {
         required: true,
-        maxlength: 30,
+        maxlength: 20,
         minlength: 5
       },
       ql_experiencia: {
         required: true,
-        maxlength: 2,
+        maxlength: 240,
         minlength: 10
       }
     },

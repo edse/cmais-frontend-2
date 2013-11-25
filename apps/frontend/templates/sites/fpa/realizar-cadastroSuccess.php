@@ -50,7 +50,24 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
         	
         </style>
         
-        
+        <script>
+        		function limita(campo,limite){
+						  var texto 	= $("#"+campo).val();
+						  var tamanho = texto.length;
+						  var restante = limite - tamanho;
+							
+							if(restante < 0){
+								$("#"+campo+"_contador").text("0");
+							}else{
+								$("#"+campo+"_contador").text(restante);
+							}
+								  
+						  if (tamanho>=5) {
+						     $("#"+campo).val(texto.substring(0,limite));
+						  }
+						  return true; 
+						}
+        </script>
 
         
         <!--row2 - informacoes pessoais-->
@@ -407,8 +424,8 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 	              - Não utilize caracteres especiais tais como: aspas duplas ("), aspas simples ('), &, *. O sistema encara como tentativa de invasão e não deixará a página ser enviada;
 	              - Não use Copiar e Colar trazendo texto de softwares como Word, WordPerfect. Prefira sempre o Bloco de notas do Windows.
               </p>
-              <textarea name="qg_memo2" rows="3" cols="20" id="qg_memo2" style="font-family:Verdana;font-size:10pt;height:200px;width:432px;" maxlength="560"></textarea>
-              <p id="Caixatexto2_contador" style="font-family: Arial, Helvetica, sans-serif;font-size: 10pt;text-align: right;padding: 3px;float: right;margin: 0px;">560 caracteres</p>
+              <textarea name="qg_memo2" rows="3" cols="20" id="qg_memo2" style="font-family:Verdana;font-size:10pt;height:200px;width:432px;" onkeypress="javascript:limita('qg_memo2', '560');" onblur="javascript:limita('qg_memo2',  '560');"></textarea>
+              <p id="qg_memo2_contador" style="font-family: Arial, Helvetica, sans-serif;font-size: 10pt;text-align: right;padding: 3px;float: right;margin: 0px;">560 caracteres</p>
             </div>
             <div class="span12 tit-cadastro">
               <h2>Informações complementares</h2>
@@ -500,7 +517,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
             </div>
             <div class="control-group span12" style="margin-left:0;">
               <label>Descrição das atividades</label>
-              <textarea name="ql_experiencia" rows="3" cols="20" id="ql_experiencia" style="font-family:Verdana;font-size:10pt;height:200px;width:432px;" maxlength="240" ></textarea>
+              <textarea name="ql_experiencia" rows="3" cols="20" id="ql_experiencia" style="font-family:Verdana;font-size:10pt;height:200px;width:432px;" onkeypress="javascript:limita('ql_experiencia', '240');" onblur="javascript:limita('ql_experiencia',  '240');"></textarea>
               <p name="ql_experiencia_contador" id="ql_experiencia_contador" style="font-family: Arial, Helvetica, sans-serif;font-size: 10pt;text-align: right;padding: 3px;float: right;margin: 0px;">240 caracteres</p>
             </div>
             <div class="control-group span12" style="margin-left:0;">
@@ -563,7 +580,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 
             <div class="control-group span12" style="margin-left:0;">
               <label>Descrição</label>
-              <input name="qm_dscout" type="text" maxlength="50" id="qm_dscout" style="width:320px;">
+              <input name="qm_dscout" type="text" maxlength="30" id="qm_dscout" style="width:320px;">
             </div>
             <div class="control-group span12" style="margin-left:0;">
               <label>Situação do Curso</label>
