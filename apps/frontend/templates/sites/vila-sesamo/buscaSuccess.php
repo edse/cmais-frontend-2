@@ -49,7 +49,7 @@
       $('.b-amarelo h1').text('Sem resultados a busca');
     }else{
       var busca = getURLParameter("term");
-      $('.b-amarelo h1').text(busca);
+      $('.b-amarelo h1').text('resultado para "'+busca+'"');
       $('#google_search').show();
     }
   
