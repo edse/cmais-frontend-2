@@ -20,13 +20,13 @@
     <!--container conteudo-->
     <div class="b-verde borda-arredonda">
       <h1>
-        <span class="icones-sprite-interna icone-na-tv-grande"></span>
+        <span class="icone-acessibilidade"></span>
         <?php echo $section->getTitle() ?>
       </h1>
       
       <!--container-->
       <div class="container-na-tv">
-        <h2 class="ola"><?php echo $section->getDescription() ?></h2>
+        <!--h2 class="ola"><?php echo $section->getDescription() ?></h2-->
         
         <?php $asset = $section->getAssets(); ?>
         <?php if(isset($asset)):?>  
@@ -42,7 +42,7 @@
          
       </div>
       <!--/container-->
-      <span class="fundo-na-tv"></span> 
+      <span class="fundo-acessibilidade"></span> 
     </div>
     <!--/container conteudo-->
     
