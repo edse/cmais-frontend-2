@@ -139,7 +139,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .btn-cuidadores-topo{padding-left:10px!important;float:left;}
 .btn-na-tv-topo{padding-left:10px!important;float:left;}
 .btn-acessibilidade-topo{padding-left:10px!important;float:left;}
-.btn-cuidadores-topo.active{color:#737373; background:none !important; font-weight: normal !important; }
+.btn-cuidadores-topo.active{color:#737373;font-family:'din-blackregular', Arial, Helvetica, sans-serif; font-weight: normal !important; }
 .btn-na-tv-topo.active{font-weight:bold!important;text-decoration:underline!important;}
 .btn-acessibilidade-topo.active{font-weight:bold!important;text-decoration:underline!important; }
 
