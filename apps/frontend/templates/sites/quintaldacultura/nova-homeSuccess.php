@@ -275,10 +275,10 @@
         	$(".form-voto").hide();
         	//if(data == 1){
 	          $(".inativo").fadeIn("fast");
-	          var i=0;
+	          
 	          $.each(data, function(key, val) {
-	            $('.inativo').html('<div class="div-choice"><label for=".resposta'+i+'">'+val.answer+' - ' + parseFloat(val.votes) + '"%"</label></div>');
-	            i++;
+	            $('.inativo').html('<div class="div-choice"><label for=".resposta'+key+'">'+val.answer+' - ' + parseFloat(val.votes) + '"%"</label></div>');
+	
 	          });
          	//}else{
          		//$(".msg_error").fadeIn("fast");
