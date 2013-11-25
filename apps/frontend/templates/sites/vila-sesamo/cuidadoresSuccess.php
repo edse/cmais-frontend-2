@@ -193,28 +193,27 @@
     </div>  
     <!--/col esquerda-->
     
-    <?php if(isset($displays['destaques-secundarios'])): ?>
-      <?php if(count($displays['destaques-secundarios']) > 0): ?>
-    <!--col direita-->
+     <!--col direita-->
     <div class="span4 col-direita">
-      <?php foreach($displays['destaques-secundarios'] as $d): ?>
-      <!--destaque 1-->
-      <a class="destaque-small" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-        <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
-      </a>
-      <!-- destaque 1 -->
-      <?php endforeach; ?> 
       
+      <?php if(isset($displays['destaques-secundarios'])): ?>
+        <?php if(count($displays['destaques-secundarios']) > 0): ?>
+          <?php foreach($displays['destaques-secundarios'] as $d): ?>
+          <!--destaque 1-->
+          <a class="destaque-small" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+            <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
+          </a>
+          <!-- destaque 1 -->
+          <?php endforeach; ?> 
+        <?php endif; ?>
+      <?php endif; ?>
+    
       <!-- banner vilasesamo -->
       <?php include_partial_from_folder('sites/vila-sesamo', 'global/banner300x250', array('site' => $site, 'section' => $section)) ?>
       <!-- /banner vilasesamo -->
       
     </div>
     <!--/col direita--> 
-      <?php endif; ?>
-    <?php endif; ?>
-    
-    
     
   </section>  
   

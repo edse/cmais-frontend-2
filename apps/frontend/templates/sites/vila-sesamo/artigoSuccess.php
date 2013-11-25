@@ -438,34 +438,40 @@
         <!--/col dir -->
         
         <!--destaques-->
-        <?php
-          $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"cuidadores");
-          $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($particularSection->getId(), "destaques-secundarios"); // Pega o bloco "destaques-secundarios" da seção "para os pais"
-          if ($block) $_displays["destaques-secundarios"] = $block->retriveDisplays(); // Pega os destaques do bloco "destaques-secundarios"    
-        ?>        
-        <?php if(isset($_displays['destaques-secundarios'])): ?>
-          <?php if(count($_displays['destaques-secundarios']) > 0): ?>
-            <div class="span4 pull-right banner">
-          
-              <!--destaque -->
-              <?php foreach($_displays['destaques-secundarios'] as $d): ?>
-              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
-              </a>
-              <?php endforeach; ?> 
-              <!--/destaque -->
+        <div class="span4 col-direita">
+          <?php
+            $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"cuidadores");
+            $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($particularSection->getId(), "destaques-secundarios"); // Pega o bloco "destaques-secundarios" da seção "para os pais"
+            if ($block) $_displays["destaques-secundarios"] = $block->retriveDisplays(); // Pega os destaques do bloco "destaques-secundarios"    
+          ?>        
+          <?php if(isset($_displays['destaques-secundarios'])): ?>
+            <?php if(count($_displays['destaques-secundarios']) > 0): ?>
+            
+                <!--destaque -->
+                <?php foreach($_displays['destaques-secundarios'] as $d): ?>
+                <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                  <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
+                </a>
+                <?php endforeach; ?> 
+                <!--/destaque -->
               
-              <!-- banner vilasesamo -->
-              <?php include_partial_from_folder('sites/vila-sesamo', 'global/banner300x250', array('site' => $site, 'section' => $section)) ?>
-              <!-- /banner vilasesamo -->
-          
-              <!--face like box-->
-              <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Ftvcultura&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=446708858755935" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:290px;width: 287px;margin-bottom: 20px;" allowTransparency="true"></iframe>
-              <!--/face like box-->
-            </div>
+            <?php endif; ?>
           <?php endif; ?>
-        <?php endif; ?>
+          
+          <!-- banner vilasesamo -->
+          <?php include_partial_from_folder('sites/vila-sesamo', 'global/banner300x250', array('site' => $site, 'section' => $section)) ?>
+          <!-- /banner vilasesamo -->
+      
+          <!--face like box-->
+          <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Ftvcultura&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=446708858755935" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:290px;width: 287px;margin-bottom: 20px;" allowTransparency="true"></iframe>
+          <!--/face like box-->
+        
+        </div>
         <!--destaques-->
+        
+        <!-- banner vilasesamo -->
+        <?php include_partial_from_folder('sites/vila-sesamo', 'global/banner300x250', array('site' => $site, 'section' => $section)) ?>
+        <!-- /banner vilasesamo -->
         
       </div>
       <!--/container-->
