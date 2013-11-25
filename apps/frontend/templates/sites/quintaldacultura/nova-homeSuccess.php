@@ -118,6 +118,52 @@
             </div>
             <!--/CONTEUDO WRAPPER-->
             
+            
+         <!-- FORM DESTAQUE ENQUETE -->
+            <div id="destaque-enquete">
+              <div class="col-esq">
+                <iframe width="310" height="250" src="//www.youtube.com/embed/Ey3ruRMzM4Q" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="col-dir">
+                <div class="text">
+                  <p>Escolha o nome da <strong>rosquinha</strong></p>
+                  <p>do <strong>quintal da cultura!</strong>!</p>
+                </div>
+                <!--Form enquete-->
+                <form method="post" id="e<?php //echo $displays["enquete"][0]->Asset->getId();?>" class="form-voto">
+                    
+                    <div class='div-choice'>
+                      <label for="resposta1" class="active">
+                        <input type="radio" name="opcao" id="resposta1" class="required " value="whatever"/>
+                        Gulomilda
+                      </label>
+                    </div>
+                    <div class='div-choice'>
+                      <label for="resposta2">
+                        <input type="radio" name="opcao" id="resposta2" class="required" value="whatever"/>
+                        Dolícia
+                      </label>
+                    </div>
+                    <div class='div-choice'>
+                      <label for="resposta3">
+                        <input type="radio" name="opcao" id="resposta3" class="required" value="whatever"/>
+                        Delicilda
+                      </label>
+                    </div>
+                    <div class='div-choice'>
+                      <label for="resposta4">
+                        <input type="radio" name="opcao" id="resposta4" class="required" value="whatever"/>
+                        Rostosa
+                      </label>
+                    </div>
+                    <input type="submit" class="votar" value="VOTAR">
+                  </form>
+                  <!--/Form enquete-->
+              </div>
+            </div>
+            <!-- FORM DESTAQUE ENQUETE-->
+            
+            
             <?php
             /*
             <!-- FORM DESTAQUE -->
@@ -179,128 +225,43 @@
     </div>
     <!--/ALLWRAPPER-->
     
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+    <script>
     
-        <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('input#enviar').click(function(){
-          $(".msgAcerto, .msgErro").hide();
-        });
-        
-        var validator = $('#form-contato').validate({
-          submitHandler: function(form){
-            $.ajax({
-              type: "POST",
-              dataType: "text",
-              data: $("#form-contato").serialize(),
-              beforeSend: function(){
-                $("input#enviar, .msgAcerto, .msgErro").hide();
-                $('img#ajax-loader').show();
-              },
-              success: function(data){
-              $('input#enviar').removeAttr('disabled');
-                window.location.href="javascript:;";
-                if(data == "1"){
-                  $("#form-contato").clearForm();
-                  $(".msgAcerto").show();
-                  $('img#ajax-loader').hide();
-                }
-                else {
-                  $(".msgErro").show();
-                  $('img#ajax-loader').hide();
-                }
-              }
-            });         
-          },
-          rules:{
-            nome:{
-              required: function(){
-                validate('#nome');
-              },
-              minlength: 2
-            },
-            cidade:{
-              required: function(){
-                validate('#cidade');
-              },
-              minlength: 3
-            },
-            estado:{
-              required: function(){
-                validate('#estado');
-              },
-              minlength: 2
-            },
-            responsavel:{
-              required: function(){
-                validate('#responsavel');
-              },
-              minlength: 2
-            },
-            email:{
-              required: true,
-              email: true
-            },            
-            dia:{
-              required: function(){
-                validate('#dia');
-              },
-              minlength: 2
-            },
-            mes:{
-              required: function(){
-                validate('#mes');
-              },
-              minlength: 2
-            },
-            ano:{
-              required: function(){
-                validate('#ano');
-              },
-              minlength: 2
-            }
-            /*concordo:{
-              required: true
-            },
-            termo:{
-              required: true,
-              minlength: 2
-            } */           
-          },
-          messages:{
-            nome: "Todos os campos são obrigatórios1.",
-            cidade: "Todos os campos são obrigatórios2.",
-            estado: "Todos os campos são obrigatórios3.",
-            responsavel: "Todos os campos são obrigatórios4.",
-            email: "Todos os campos são obrigatórios5.",
-            dia: "Todos os campos são obrigatórios6.",
-            mes: "Todos os campos são obrigatórios7.",
-            ano: "Todos os campos são obrigatórios8."
-            /*concordo: "Este campo &eacute; Obrigat&oacute;rio.",
-            termo: "Este campo &eacute; Obrigat&oacute;rio."*/
-            
-          },
-          
-          success: function(label){
-            // set &nbsp; as text for IE
-            label.html("&nbsp;").addClass("checked");
-          }
-        });
-      });
-      function validate(obj){
-        if($(obj).val()==$(obj).attr("data-default"))
-          $(obj).val('');
-      }    
-      // Contador de Caracters
-      function limitText (limitField, limitNum, textCounter)
-      {
-        if (limitField.value.length > limitNum)
-          limitField.value = limitField.value.substring(0, limitNum);
-        else
-          $(textCounter).html(limitNum - limitField.value.length);
+    //valida form
+    var validator = $('.form-voto').validate({
+      submitHandler: function(form){
+        //sendAnswer()
+      },
+      messages:{
+        opcao: ""
       }
-    </script>
+    });
     
+    //enviar voto
+    function sendAnswer(){
+      $.ajax({
+        type: "POST",
+        dataType: "json", 
+        data: $("#e<?php echo $displays["enquete"][0]->Asset->getId()?>").serialize(),
+        url: "<?php echo url_for('homepage')?>ajax/enquetes",
+        beforeSend: function(){
+    
+        },
+        success: function(data){
+          $(".form-voto").hide();
+          $("form.inativo").fadeIn("fast");
+          var i=0;
+          $.each(data, function(key, val) {
+            $('.resposta'+i).html(parseFloat(val.votes)+"%");
+            i++;
+          });
+        }
+      });
+      
+    }
+    </script>
+
     
   </body>
 </html>
