@@ -858,8 +858,14 @@ $(document).ready(function() {
       },
       qm_entidad: {
         required: true,
+        maxlength: 30,
         minlength: 5
       },
+      qm_dscout: {
+        required: true,
+        maxlength: 30,
+        minlength: 5
+      },      
       qm_data: {
          DateBr: true,
         minlength: 10
