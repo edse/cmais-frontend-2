@@ -423,4 +423,23 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 .box-formatos-papel{display: block; overflow: hidden; margin:0 auto;width:735px;}
 
 
+/* home enquete*/
+#destaque-enquete { width:960px; height:330px; background:url(/portal/quintal/images/enquete/enquete-quintal.png) no-repeat; position:relative; margin:0 auto;}
+#destaque-enquete .col-esq{ width: 360px;height: 100%;position: absolute;}
+#destaque-enquete .col-esq iframe{display: block;top: 12%;position: absolute;left: 7%;}
+#destaque-enquete .col-dir{float: right;width: 600px;padding: 20px 0 0 0;}
+#destaque-enquete .col-dir .text{text-align: center; width: 420px;}
+#destaque-enquete .col-dir p{background:#cb35a4; color:#fff !important;}
+#destaque-enquete .col-dir label{background:#e4f527; color:#cb35a4!important;}
+#destaque-enquete .col-dir label.active{background:#FFFFFF!important;}
+#destaque-enquete .col-dir .votar{ background:#cb35a4; color:#fff!important; }
+#destaque-enquete .col-dir p,
+#destaque-enquete .col-dir label,
+#destaque-enquete .col-dir .votar {font-size:20px; border:none;font-family:'gotham_mediumregular',Arial, Helvetica, sans-serif;font-size:22px; line-height:28px; display:inline; text-transform:uppercase; margin-bottom:20px; clear:both; padding:3px 5px;  }
+#destaque-enquete .col-dir label,
+#destaque-enquete .col-dir .votar{padding: 2px 20px;font-size: 20px;border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;}
+#destaque-enquete .col-dir input[type="radio"]{bottom: 3px;position: relative;left: -5px;} 
+#destaque-enquete .col-dir p strong { color:#e4f527!important; text-align:center; }
+#destaque-enquete .col-dir .div-choice{overflow:hidden; margin:15px 0;}
+#destaque-enquete form label.error{display:none;}
 

@@ -457,8 +457,8 @@ $(document).ready(function() {
         dataType: "jsonp",
         data: $("#form4").serialize(),
         url: "http://app.cmais.com.br/actions/trabalhe-conosco/insere_curso.php?qg_curric="+$("#qg_curric").val()+valores,
-        error: function(retorno){
-          alert("Erro Curso");
+        error: function(retorno){ 
+          alert("Erro ao inserir curso!");
         }, 
         success: function(json) {
            if(json.data == true){
@@ -477,7 +477,7 @@ $(document).ready(function() {
               
               $("#concluir_inscricao").show();
            }else{
-           	//console.log("erro no cadastro");
+           	alert("Erro ao inserir curso");
            }
          }
       });
@@ -650,17 +650,28 @@ $(document).ready(function() {
 	    return true;
 	}, "Informe um CPF válido."); 
 	
+	
+	
+	//MÁSCARAS DOS CAMPOS
+	
+	$("#qg_cep").mask("99999-999");
+	$("#qg_fonece").mask("(99)99999-999?9");
+	$("#qg_fonere").mask("(99)9999-9999");
+	$("#qg_foneco").mask("(99)9999-9999");
+	
 	$('#form1').validate({
     rules: {
       fpa_cpf: {
         required: true,
         minlength: 11,
+        maxlength: 11,
         number: true,
         CPF: true
       },
       fpa_data: {
         required: true,
         minlength: 10,
+        maxlength: 11,
         DateBr : true
       }
     },
@@ -744,6 +755,7 @@ $(document).ready(function() {
       },
       qg_memo2: {
         required: true,
+        maxlength: 560,
         minlength: 50,
       },
       qg_trabde: {
@@ -787,18 +799,22 @@ $(document).ready(function() {
       },
       ql_empresa: {
         required: true,
+        maxlength: 30,
         minlength: 5
       },
       ql_funcini: {
         required: true,
+        maxlength: 20,
         minlength: 5
       },
       ql_funcao: {
         required: true,
+        maxlength: 20,
         minlength: 5
       },
       ql_experiencia: {
         required: true,
+        maxlength: 240,
         minlength: 10
       }
     },
@@ -842,8 +858,12 @@ $(document).ready(function() {
       },
       qm_entidad: {
         required: true,
+        maxlength: 30,
         minlength: 5
       },
+      qm_dscout: {
+        maxlength: 30
+      },      
       qm_data: {
          DateBr: true,
         minlength: 10
