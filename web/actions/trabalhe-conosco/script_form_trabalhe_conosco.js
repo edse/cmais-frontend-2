@@ -862,9 +862,7 @@ $(document).ready(function() {
         minlength: 5
       },
       qm_dscout: {
-        required: true,
-        maxlength: 30,
-        minlength: 5
+        maxlength: 30
       },      
       qm_data: {
          DateBr: true,
