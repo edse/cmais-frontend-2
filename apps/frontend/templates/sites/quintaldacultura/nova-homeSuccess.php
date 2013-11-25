@@ -119,50 +119,63 @@
             <!--/CONTEUDO WRAPPER-->
             
             
-         <!-- FORM DESTAQUE ENQUETE -->
+            
+         <?php if(isset($displays["enquete"])):?>
+          <?php if(count($displays["enquete"])>0):?>
+              <?php
+							$vd = $displays["enquete"][0]->Asset->retriveRelatedAssetsByAssetTypeId(6);
+							$img = $displays["enquete"][0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
+							
+              $respostas = Doctrine_Query::create()
+                ->select('aa.*')
+                ->from('AssetAnswer aa')
+                ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
+                ->execute();
+              ?>
+              
+           <!-- FORM DESTAQUE ENQUETE -->
             <div id="destaque-enquete">
               <div class="col-esq">
-                <iframe width="310" height="250" src="//www.youtube.com/embed/Ey3ruRMzM4Q" frameborder="0" allowfullscreen></iframe>
+                <?php if(count($vd) > 0):?>
+                  <iframe width="310" height="250" src="//www.youtube.com/embed/<?php echo $img[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
+                <?php elseif (count($img) > 0):?>
+                  <img src="<?php echo "http://midia.cmais.com.br/assets/image/original/".$img[0]->AssetImage->original_file; ?>" title="<?php echo $img[0]->getTitle(); ?>" />
+                <?php endif; ?>  
               </div>
               <div class="col-dir">
                 <div class="text">
-                  <p>Escolha o nome da <strong>rosquinha</strong></p>
-                  <p>do <strong>quintal da cultura!</strong>!</p>
+                	<?php echo html_entity_decode($displays["enquete"][0]->Asset->AssetQuestion->getQuestion()) ?>
                 </div>
                 <!--Form enquete-->
-                <form method="post" id="e<?php //echo $displays["enquete"][0]->Asset->getId();?>" class="form-voto">
-                    
-                    <div class='div-choice'>
-                      <label for="resposta1" class="active">
-                        <input type="radio" name="opcao" id="resposta1" class="required " value="whatever"/>
-                        Gulomilda
-                      </label>
-                    </div>
-                    <div class='div-choice'>
-                      <label for="resposta2">
-                        <input type="radio" name="opcao" id="resposta2" class="required" value="whatever"/>
-                        Dolícia
-                      </label>
-                    </div>
-                    <div class='div-choice'>
-                      <label for="resposta3">
-                        <input type="radio" name="opcao" id="resposta3" class="required" value="whatever"/>
-                        Delicilda
-                      </label>
-                    </div>
-                    <div class='div-choice'>
-                      <label for="resposta4">
-                        <input type="radio" name="opcao" id="resposta4" class="required" value="whatever"/>
-                        Rostosa
-                      </label>
-                    </div>
-                    <input type="submit" class="votar" value="VOTAR">
-                  </form>
-                  <!--/Form enquete-->
+	                <form method="post" id="e<?php echo $displays["enquete"][0]->Asset->getId();?>" class="form-voto">
+			        			<?php 
+			              	$form = new BaseForm();
+			              	echo $form->renderHiddenFields();
+			              ?>
+			              <?php foreach ($respostas as $k => $r):?>
+				              <div class="div-choice">
+				                <input type="radio" name="opcao" id="resposta<?php echo $k?>" class="resposta required" value="<?php echo $r->Asset->AssetAnswer->id ?>"  />
+				                <label class="radio" for="resposta<?php echo $k?>"><?php echo $r->Asset->AssetAnswer->getAnswer() ?></label>
+				              </div>
+			              <?php endforeach;?>
+			              <input type="submit" class="votar" value="VOTAR">
+	              	</form>
+              	<!--/Form enquete-->
               </div>
-            </div>
+              <div class="inativo" style="display: none;">
+                <?php foreach($respostas as $k => $r): ?>
+                  <div class="resposta-cartaozinho-enquete resposta<?php echo $k?>">
+                    <label>50%</label>
+                  </div>
+                <?php endforeach;?>
+              </div>
+            </div>  
             <!-- FORM DESTAQUE ENQUETE-->
             
+            
+           <?php endif;?>
+        <?php endif;?>    
+                    
             
             <?php
             /*
@@ -228,15 +241,22 @@
     <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
     <script>
     
-    //valida form
-    var validator = $('.form-voto').validate({
-      submitHandler: function(form){
-        //sendAnswer()
-      },
-      messages:{
-        opcao: ""
-      }
-    });
+			    
+			//valida form
+			var validator = $('.form-voto').validate({
+			  submitHandler: function(form){
+			    sendAnswer()
+			  },
+			  rules:{
+			      opcao:{
+			        required: true
+			      }
+			    },
+			  messages:{
+			    opcao: ""
+			  }
+			});    
+    
     
     //enviar voto
     function sendAnswer(){
@@ -250,7 +270,7 @@
         },
         success: function(data){
           $(".form-voto").hide();
-          $("form.inativo").fadeIn("fast");
+          $(".inativo").fadeIn("fast");
           var i=0;
           $.each(data, function(key, val) {
             $('.resposta'+i).html(parseFloat(val.votes)+"%");
@@ -258,9 +278,8 @@
           });
         }
       });
-      
     }
-    </script>
+		</script>
 
     
   </body>
