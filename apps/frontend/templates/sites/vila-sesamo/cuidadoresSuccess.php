@@ -209,12 +209,9 @@
       <?php endforeach; ?> 
       
       <!-- banner vilasesamo -->
-      <div id='div-gpt-ad-1385378971268-0' style='width:300px; height:250px;'>
-      <script type='text/javascript'>
-      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1385378971268-0'); });
-      </script>
-      </div>
+      <?php include_partial_from_folder('sites/vila-sesamo', 'global/banner300x250', array('site' => $site, 'section' => $section)) ?>
       <!-- /banner vilasesamo -->
+      
     </div>
     <!--/col direita--> 
       <?php endif; ?>
