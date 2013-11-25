@@ -193,8 +193,7 @@
     </div>  
     <!--/col esquerda-->
     
-     <!--col direita-->
-    <div class="span4 col-direita">
+    
       
       <?php if(isset($displays['destaques-secundarios'])): ?>
         <?php if(count($displays['destaques-secundarios']) > 0): ?>
