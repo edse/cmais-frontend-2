@@ -6,11 +6,14 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <?php 
   $assetSection = $asset->getSections();
-  echo $assetSection[0]->getSlug()."teste4 >>>>>>";
+  foreach($assetSection  as $a){
+    if($a->getSlug() == 'cuidadores')
+      $assetSection = 'cuidadores';
+  }
 ?>
 <script>
   $("body").addClass("cuidadores artigo");
-  <?php if($section->Parent->getSlug()=="cuidadores"):?>
+  <?php if($assetSection=="cuidadores"):?>
     $(document).ready(function(){
       $(".btn-cuidadores-topo").addClass("active");
     });  
