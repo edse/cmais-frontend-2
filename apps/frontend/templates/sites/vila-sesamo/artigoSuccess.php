@@ -29,7 +29,7 @@
       <h1>
         <span class="icones-sprite-interna icone-cuidadores-grande"></span>
         <?php echo $section->getTitle() ?>
-        <a class="todos-assets" title="voltar para todas atividades">
+        <a href="/<?php $site->getSlug() ?><?php echo $section->getSlug() ?>" class="todos-assets" title="voltar para todas atividades">
           <i class="icones-setas icone-voltar-artigo" href="/<?php echo $site->getSlug() ?>/<?php echo $section->getSlug() ?>"></i>
           <p>todos os artigos</p>
         </a>
