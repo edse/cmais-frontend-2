@@ -1025,6 +1025,28 @@ class _assetActions extends sfActions
         if($debug) print "<br>1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/assets/'.$this->asset->getSlug();
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/assets/'.$this->asset->getSlug());
       }
+      elseif($this->site->getType() == "Programa" || $this->site->getType() == 3){
+        if($debug) print "<br>5>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/'.$this->asset->AssetType->getSlug();
+        if($this->asset->AssetType->getSlug() == "person")
+          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/content');
+        elseif($this->asset->AssetType->getSlug() == "episode")
+          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/video-gallery');
+        else{
+          if ($this->site->Program->getIsACourse()) {
+            if(in_array($this->site->getSlug(), array("pedagogia-unesp","evs","licenciatura-em-ciencias"))){
+              if($debug) print "<br>5.1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-cursoAntigo';
+              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-cursoAntigo');
+            }
+            else {
+              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-curso');
+              if($debug) print "<br>5-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-curso';
+            }
+          }
+          else {
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/'.$this->asset->AssetType->getSlug());
+          }
+        }
+      }
       elseif(($this->site->getSlug() != "tvratimbum")&&($this->site->getType() != "ProgramaRadio")){
       #elseif((is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Success.php'))&&($this->site->getSlug() != "tvratimbum")){
         //die(">".$this->section->slug);
