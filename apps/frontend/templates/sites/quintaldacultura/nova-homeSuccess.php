@@ -273,16 +273,16 @@
         },
         success: function(data){
         	$(".form-voto").hide();
-        	if(data == 1){
+        	//if(data == 1){
 	          $(".inativo").fadeIn("fast");
 	          var i=0;
 	          $.each(data, function(key, val) {
 	            $('.resposta'+i).html(val.answer + ": " + parseFloat(val.votes)+"%");
 	            i++;
 	          });
-         	}else{
-         		$(".msg_error").fadeIn("fast");
-         	}
+         	//}else{
+         		//$(".msg_error").fadeIn("fast");
+         	//}
         }
       });
     }
