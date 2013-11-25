@@ -99,8 +99,8 @@
     
     <script type='text/javascript'>
     googletag.cmd.push(function() {
-    googletag.defineSlot('/4079539/vilasesamo', [300, 250], 'div-gpt-ad-1385379108052-0').addService(googletag.pubads());
-    googletag.pubads().enableSingleRequest();
+    googletag.defineSlot('/4079539/vilasesamo', [300, 250], 'div-gpt-ad-1385381390987-0').addService(googletag.pubads());
+    googletag.defineOutOfPageSlot('/4079539/vilasesamo', 'div-gpt-ad-1385381390987-0-oop').addService(googletag.pubads());
     googletag.enableServices();
     });
     </script>
