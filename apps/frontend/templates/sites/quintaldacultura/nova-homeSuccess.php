@@ -167,9 +167,13 @@
               </div>
               <div class="inativo" style="display: none;">
                 <?php foreach($respostas as $k => $r): ?>
+                  <?php
+                  /*
                   <div class="resposta<?php echo $k?>">
                     <label>50%</label>
                   </div>
+                   * */
+                   ?>
                 <?php endforeach;?>
               </div>
             </div>  
