@@ -5,7 +5,7 @@
 
 <script>
   $("body").addClass("na-tv acessibilidade");
-  <?php if($section->getSlug()=="na-tv"):?>
+  <?php if($section->getSlug()=="acessibilidade"):?>
     $(document).ready(function(){
       $(".btn-acessibilidade-topo").addClass("active");
     });  

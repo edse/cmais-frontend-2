@@ -4,7 +4,7 @@
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
-<?php echo $section->Parent->getSlug()."teste >>>>>>"?>
+<?php echo $asset->getSections()."teste3 >>>>>>"?>
 <script>
   $("body").addClass("cuidadores artigo");
   <?php if($section->Parent->getSlug()=="cuidadores"):?>
