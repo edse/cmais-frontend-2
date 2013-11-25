@@ -57,9 +57,9 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 						  var restante = limite - tamanho;
 							
 							if(restante < 0){
-								$("#"+campo+"_contador").text("0");
+								$("#"+campo+"_contador").text("0 caracteres restantes");
 							}else{
-								$("#"+campo+"_contador").text(restante);
+								$("#"+campo+"_contador").text(restante+" caracteres restantes");
 							}
 								  
 						  if (tamanho>=5) {
