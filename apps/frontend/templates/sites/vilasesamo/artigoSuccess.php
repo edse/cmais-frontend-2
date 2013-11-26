@@ -34,14 +34,14 @@
     
     <!--container conteudo-->
     <div class="b-verde borda-arredonda">
-      <!--1>
+      <h1>
         <span class="icones-sprite-interna icone-cuidadores-grande"></span>
         <?php echo $section->getTitle() ?>
         <a href="/<?php echo $site->getSlug() ?>/<?php echo $section->getSlug() ?>" class="todos-assets" target="_self" title="voltar para todas atividades">
           <i class="icones-setas icone-voltar-artigo" href="/<?php echo $site->getSlug() ?>/<?php echo $section->getSlug() ?>"></i>
           <p>todos os artigos</p>
         </a>
-      </h1-->
+      </h1>
       
       <!--container-->
       <div class="container-cuidadores row-fluid">
@@ -52,7 +52,7 @@
           <!--conteudo artcle-->
           <article>
             
-            <!--header-->
+            <!--header>
             <header>
               
               <h1><?php echo $asset->getTitle() ?></h1>
@@ -81,7 +81,7 @@
               
               <!--compartilhar redes-->
               <?php //include_partial_from_folder('sites/vilasesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
-              <!--/compartilhar redes-->
+              <!--/compartilhar redes>
               <div class="divisa"></div>
             </header>
             <!--/header-->
