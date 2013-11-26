@@ -139,7 +139,7 @@
                 <?php if(count($vd) > 0):?>
                   <iframe width="310" height="250" src="//www.youtube.com/embed/<?php echo $vd[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
                 <?php elseif (count($img) > 0):?>
-                  <img src="<?php echo $img[0]->retriveImageUrlByImageUsage("image-13"); ?>" title="<?php echo $img[0]->getTitle(); ?>" />
+                  <img src="<?php echo $img[0]->retriveImageUrlByImageUsage("image-13-b"); ?>" title="<?php echo $img[0]->getTitle(); ?>" />
                 <?php endif; ?>  
               </div>
               
