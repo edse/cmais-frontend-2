@@ -30,7 +30,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
 						
           if($sub->getSlug() == "vagas-de-estagio"):?>
             <!-- Estagio -->
-            <div class="accordion-group">  
+            <div class="accordion-group" id="dados-vagas-de-estagio">
               <div class="linha"></div>
               <div class="accordion-heading trabalhe-conosco">
                 <a class="btn-cat accordion-toggle  tipo-de-emprego"  data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>" title="<?php  if(count($sub_assets) < 2){ echo count($sub_assets) . " vaga";}else{ echo count($sub_assets) . " vagas";} ?>">
@@ -62,7 +62,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
           if(count($sub_assets) > 0):
             if($sub->getSlug() == "resultados-processos"):?>
             <!-- Resultado -->
-            <div class="accordion-group">
+            <div class="accordion-group" id="dados-resultados-processos">
               <div class="linha"></div>
               <div class="accordion-heading trabalhe-conosco">
                 <a class="btn-cat accordion-toggle  tipo-de-emprego" data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $sub->id ?>"  title="<?php  if(count($sub_assets) < 2){ echo count($sub_assets) . " arquivo";}else{ echo count($sub_assets) . " arquivos";} ?>">
@@ -160,3 +160,23 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
   <!--/colunas-->
 </div>  
 <!--/CONTAINER-->
+
+<script>
+$(document).ready(function(){
+	function getURLParameter(name){
+		return decodeURI((RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]);
+	}
+	
+	function Imprimir_Pagina(){
+		$('#dados-vagas-de-estagio').hide(); //Esconde Vagas de Estágio
+		$('#dados-resultados-processos').hide(); //Esconde Resultados dos Processos Seletivos
+		$('.btn-primary').hide(); // Esconde Botão para Regulamento
+		$('#processos_seletivos').css("height","auto"); // Abre o accodion das vagas
+		window.print();
+	}
+	
+	if(getURLParameter("imprimir") != "null" && getURLParameter("imprimir") != ""){
+		setTimeout(function(){ Imprimir_Pagina();},4000);
+	}
+});
+</script>
