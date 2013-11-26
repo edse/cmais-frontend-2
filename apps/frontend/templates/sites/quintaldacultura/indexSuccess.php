@@ -242,8 +242,52 @@
       <!--/FOOTER-->
     </div>
     <!--/ALLWRAPPER-->
+        <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+    <script>
+    //valida form
+    var validator = $('.form-voto').validate({
+      submitHandler: function(form){
+        sendAnswer()
+      },
+      rules:{
+          opcao:{
+            required: true
+          }
+        },
+      messages:{
+        opcao: ""
+      }
+    });    
     
     
+    //enviar voto
+    function sendAnswer(){
+      $.ajax({
+        type: "POST",
+        dataType: "json", 
+        data: $("#e<?php echo $displays["enquete"][0]->Asset->getId()?>").serialize(),
+        url: "<?php echo url_for('homepage')?>ajax/enquetes",
+        beforeSend: function(){
+    
+        },
+        success: function(data){
+          $(".form-voto").hide();
+          //if(data == 1){
+            $(".inativo").fadeIn("fast");
+            
+            $.each(data, function(key, val) {
+              $('.inativo').append('<div class="div-choice"><label for=".resposta'+key+'">'+val.answer+' - ' + parseFloat(val.votes) + '%</label></div>');
+  
+            });
+          //}else{
+            //$(".msg_error").fadeIn("fast");
+          //}
+        }
+      });
+    }
+    </script>
+    <?php
+    /*
         <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
@@ -329,7 +373,7 @@
             termo:{
               required: true,
               minlength: 2
-            } */           
+            }            
           },
           messages:{
             nome: "Todos os campos são obrigatórios1.",
@@ -341,7 +385,7 @@
             mes: "Todos os campos são obrigatórios7.",
             ano: "Todos os campos são obrigatórios8."
             /*concordo: "Este campo &eacute; Obrigat&oacute;rio.",
-            termo: "Este campo &eacute; Obrigat&oacute;rio."*/
+            termo: "Este campo &eacute; Obrigat&oacute;rio."
             
           },
           
@@ -364,7 +408,8 @@
           $(textCounter).html(limitNum - limitField.value.length);
       }
     </script>
-    
+    */
+    ?>
     
   </body>
 </html>
