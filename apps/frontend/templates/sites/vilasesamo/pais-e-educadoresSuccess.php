@@ -5,7 +5,7 @@
 
 <script>
   $("body").addClass("cuidadores");
-  <?php if($section->getSlug()=="cuidadores"):?>
+  <?php if($section->getSlug()=="pais-e-educadores"):?>
     $(document).ready(function(){
       $(".btn-cuidadores-topo").addClass("active");
     });  
@@ -13,7 +13,7 @@
 </script>
 
 <!-- HEADER -->
-<?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+<?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
 
 <!--content-->
@@ -185,7 +185,7 @@
         <?php endif; ?>
         
         <!--paginacao-->
-        <?php include_partial_from_folder('sites/vila-sesamo', 'global/pagination', array('site' => $site, 'section' => $section,'pager'=>$pager , 'pager2'=>$pager2)) ?>
+        <?php include_partial_from_folder('sites/vilasesamo', 'global/pagination', array('site' => $site, 'section' => $section,'pager'=>$pager , 'pager2'=>$pager2)) ?>
         <!--/paginacao-->
       </div>
       <!--/selecione-->
@@ -208,7 +208,7 @@
       <?php endif; ?>
     
       <!-- banner vilasesamo -->
-      <?php include_partial_from_folder('sites/vila-sesamo', 'global/banner300x250', array('site' => $site, 'section' => $section)) ?>
+      <?php include_partial_from_folder('sites/vilasesamo', 'global/banner300x250', array('site' => $site, 'section' => $section)) ?>
       <!-- /banner vilasesamo -->
       
     </div>

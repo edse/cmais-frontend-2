@@ -6,14 +6,16 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <?php 
   $assetSection = $asset->getSections();
+  
   foreach($assetSection  as $a){
-    if($a->getSlug() == 'cuidadores')
-      $assetSection = 'cuidadores';
+    if($a->getSlug() == 'pais-e-educadores')
+      $assetSection = 'pais-e-educadores';
   }
+  
 ?>
 <script>
   $("body").addClass("cuidadores artigo");
-  <?php if($assetSection=="cuidadores"):?>
+  <?php if($assetSection=="pais-e-educadores"):?>
     $(document).ready(function(){
       $(".btn-cuidadores-topo").addClass("active");
     });  
@@ -21,7 +23,7 @@
 </script>
 
 <!-- HEADER -->
-<?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+<?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
 
 <!--content-->
@@ -78,7 +80,7 @@
               </div>
               
               <!--compartilhar redes-->
-              <?php //include_partial_from_folder('sites/vila-sesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
+              <?php //include_partial_from_folder('sites/vilasesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
               <!--/compartilhar redes-->
               <div class="divisa"></div>
             </header>
@@ -120,7 +122,7 @@
             <div class="clearboth">
               
               <!--compartilhar redes-->
-              <?php include_partial_from_folder('sites/vila-sesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
+              <?php include_partial_from_folder('sites/vilasesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
               <!--/compartilhar redes-->
                
               <!--sobre os autores-->
@@ -243,7 +245,7 @@
             </h2>
             <div class="links">
               <?php foreach($tags as $t): ?>
-                <a href="http://cmais.com.br/vila-sesamo/busca?output=search&term=<?php echo $t ?>" title="<?php echo $t ?>"><?php echo $t ?></a>
+                <a href="http://cmais.com.br/vilasesamo/busca?output=search&term=<?php echo $t ?>" title="<?php echo $t ?>"><?php echo $t ?></a>
               <?php endforeach; ?>
             </div>
             <div class="bottom-box-sobre">
@@ -443,7 +445,7 @@
         <!--destaques-->
         <div class="span4 col-direita">
           <?php
-            $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"cuidadores");
+            $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"pais-e-educadores");
             $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($particularSection->getId(), "destaques-secundarios"); // Pega o bloco "destaques-secundarios" da seção "para os pais"
             if ($block) $_displays["destaques-secundarios"] = $block->retriveDisplays(); // Pega os destaques do bloco "destaques-secundarios"    
           ?>        
@@ -462,7 +464,7 @@
           <?php endif; ?>
           
           <!-- banner vilasesamo -->
-          <?php include_partial_from_folder('sites/vila-sesamo', 'global/banner300x250', array('site' => $site, 'section' => $section)) ?>
+          <?php include_partial_from_folder('sites/vilasesamo', 'global/banner300x250', array('site' => $site, 'section' => $section)) ?>
           <!-- /banner vilasesamo -->
       
           <!--face like box-->
@@ -473,7 +475,7 @@
         <!--destaques-->
         
         <!-- banner vilasesamo -->
-        <?php include_partial_from_folder('sites/vila-sesamo', 'global/banner300x250', array('site' => $site, 'section' => $section)) ?>
+        <?php include_partial_from_folder('sites/vilasesamo', 'global/banner300x250', array('site' => $site, 'section' => $section)) ?>
         <!-- /banner vilasesamo -->
         
       </div>

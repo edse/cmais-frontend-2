@@ -118,6 +118,70 @@
             </div>
             <!--/CONTEUDO WRAPPER-->
             
+             <?php if(isset($displays["enquete"])):?>
+          <?php if(count($displays["enquete"])>0):?>
+              <?php
+              $vd = $displays["enquete"][0]->Asset->retriveRelatedAssetsByAssetTypeId(6);
+              $img = $displays["enquete"][0]->Asset->retriveRelatedAssetsByRelationType("Preview");
+              
+              $respostas = Doctrine_Query::create()
+                ->select('aa.*')
+                ->from('AssetAnswer aa')
+                ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
+                ->execute();
+              ?>
+              
+           <!-- FORM DESTAQUE ENQUETE -->
+            <div id="destaque-enquete">
+              <div class="col-esq">
+                <?php if(count($vd) > 0):?>
+                  <iframe width="310" height="250" src="//www.youtube.com/embed/<?php echo $vd[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
+                <?php elseif (count($img) > 0):?>
+                  <img src="<?php echo $img[0]->retriveImageUrlByImageUsage("image-13-b"); ?>" title="<?php echo $img[0]->getTitle(); ?>" />
+                <?php endif; ?>  
+              </div>
+              
+              <div class="col-dir">
+                <div class="text">
+                  <?php echo html_entity_decode($displays["enquete"][0]->Asset->AssetQuestion->getQuestion()) ?>
+                </div>
+                <!--Form enquete-->
+                  <form method="post" id="e<?php echo $displays["enquete"][0]->Asset->getId();?>" class="form-voto">
+                    <?php 
+                      $form = new BaseForm();
+                      echo $form->renderHiddenFields();
+                    ?>
+                    <?php foreach ($respostas as $k => $r):?>
+                      <div class="div-choice">
+                        <label for="resposta<?php echo $k?>">
+                          <input type="radio" name="opcao" id="resposta<?php echo $k?>" class="required" value="<?php echo $r->Asset->AssetAnswer->id ?>"  />
+                          <?php echo $r->Asset->AssetAnswer->getAnswer() ?>
+                        </label>
+                      </div>
+                    <?php endforeach;?>
+                    <input type="submit" class="votar" value="VOTAR">
+                  </form>
+                <!--/Form enquete-->
+                  <div class="inativo" style="display: none;">
+                  <?php foreach($respostas as $k => $r): ?>
+                    <?php
+                    /*
+                    <div class="resposta<?php echo $k?>">
+                      <label>50%</label>
+                    </div>
+                    */
+                     ?>
+                  <?php endforeach;?>
+                </div>
+              </div>
+              
+            </div>  
+            <!-- FORM DESTAQUE ENQUETE-->
+            
+            
+           <?php endif;?>
+        <?php endif;?>   
+            
             <?php
             /*
             <!-- FORM DESTAQUE -->
@@ -178,8 +242,52 @@
       <!--/FOOTER-->
     </div>
     <!--/ALLWRAPPER-->
+        <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+    <script>
+    //valida form
+    var validator = $('.form-voto').validate({
+      submitHandler: function(form){
+        sendAnswer()
+      },
+      rules:{
+          opcao:{
+            required: true
+          }
+        },
+      messages:{
+        opcao: ""
+      }
+    });    
     
     
+    //enviar voto
+    function sendAnswer(){
+      $.ajax({
+        type: "POST",
+        dataType: "json", 
+        data: $("#e<?php echo $displays["enquete"][0]->Asset->getId()?>").serialize(),
+        url: "<?php echo url_for('homepage')?>ajax/enquetes",
+        beforeSend: function(){
+    
+        },
+        success: function(data){
+          $(".form-voto").hide();
+          //if(data == 1){
+            $(".inativo").fadeIn("fast");
+            
+            $.each(data, function(key, val) {
+              $('.inativo').append('<div class="div-choice"><label for=".resposta'+key+'">'+val.answer+' - ' + parseFloat(val.votes) + '%</label></div>');
+  
+            });
+          //}else{
+            //$(".msg_error").fadeIn("fast");
+          //}
+        }
+      });
+    }
+    </script>
+    <?php
+    /*
         <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
@@ -265,7 +373,7 @@
             termo:{
               required: true,
               minlength: 2
-            } */           
+            }            
           },
           messages:{
             nome: "Todos os campos são obrigatórios1.",
@@ -277,7 +385,7 @@
             mes: "Todos os campos são obrigatórios7.",
             ano: "Todos os campos são obrigatórios8."
             /*concordo: "Este campo &eacute; Obrigat&oacute;rio.",
-            termo: "Este campo &eacute; Obrigat&oacute;rio."*/
+            termo: "Este campo &eacute; Obrigat&oacute;rio."
             
           },
           
@@ -300,7 +408,8 @@
           $(textCounter).html(limitNum - limitField.value.length);
       }
     </script>
-    
+    */
+    ?>
     
   </body>
 </html>

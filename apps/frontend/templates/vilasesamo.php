@@ -152,17 +152,17 @@
             <ul class="nav">
               <li>
                 <i class="icones-sprite-menu icone-cuidadores"></i>
-                <a class="btn-cuidadores-topo" href="/vilasesamo/pais-e-educadores" title="Pais e Educadores" target="_blank">Pais e Educadores</a>
+                <a class="btn-cuidadores-topo" href="http://cmais.com.br/vilasesamo/pais-e-educadores" title="Pais e Educadores" target="_blank">Pais e Educadores</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>
                 <i class="icones-sprite-menu icone-natv-peqno-verde"></i>
-                <a class="btn-na-tv-topo" href="/vilasesamo/na-tv" title="Na TV" target="_blank">Na TV</a>
+                <a class="btn-na-tv-topo" href="http://cmais.com.br/vilasesamo/na-tv" title="Na TV" target="_blank">Na TV</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>  
                 <i class="icones-sprite-menu icone-acessibilidade-pqno-verde"></i>
-                <a class="btn-acessibilidade-topo" href="/vilasesamo/acessibilidade" title="Acessibilidade" target="_blank">Acessibilidade</a>
+                <a class="btn-acessibilidade-topo" href="http://cmais.com.br/vilasesamo/acessibilidade" title="Acessibilidade" target="_blank">Acessibilidade</a>
                 <!--span class="sprite-menu-ball"></span-->
               </li>  
               <!--li>
@@ -172,7 +172,7 @@
             <!--ul.nav-->
             
             <!--form-->
-            <form class="form-search" action="/vila-sesamo/busca" method="get">
+            <form class="form-search" action="http://cmais.com.br/vilasesamo/busca" method="get">
               <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';" title="Encontre no site" name="term">
               <button type="submit" class="icones-sprite-menu icone-busca" title="buscar no site vila sesamo"></button>
             </form>
@@ -227,9 +227,9 @@
             
             <!--nav sites Vila Sesamo-->
             <nav class="span12" title="Sites Vila Sésamo" aria-disabled="true">
-              <a href="/vilasesamo/jogos" class="col-esq" title="Jogos" target="_self">Jogos</a>
-              <a href="/vilasesamo/videos" class="col-central" title="Jogos" target="_self"><i class="icones-rodape icone-triangulo-claro"></i>Vídeos</a>
-              <a href="/vilasesamo/atividades" class="col-dir" title="Jogos" target="_self"><i class="icones-rodape icone-triangulo-medio"></i>Atividades</a>
+              <a href="http://cmais.com.br/vilasesamo/jogos" class="col-esq" title="Jogos" target="_self">Jogos</a>
+              <a href="http://cmais.com.br/vilasesamo/videos" class="col-central" title="Jogos" target="_self"><i class="icones-rodape icone-triangulo-claro"></i>Vídeos</a>
+              <a href="http://cmais.com.br/vilasesamo/atividades" class="col-dir" title="Jogos" target="_self"><i class="icones-rodape icone-triangulo-medio"></i>Atividades</a>
             </nav>
             <!--nav sites Vila Sesamo-->
             
@@ -238,28 +238,28 @@
               <h3>PERSONAGENS:</h3>
               <ul>
                 <li>
-                  <a href="/vilasesamo/personagens/garibaldo" title="Garibaldo" target="_self">Garibaldo</a><span>,</span>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/garibaldo" title="Garibaldo" target="_self">Garibaldo</a><span>,</span>
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/bel" title="Bel" target="_self">Bel</a><span>,</span>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/bel" title="Bel" target="_self">Bel</a><span>,</span>
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/elmo" title="Elmo" target="_self">Elmo</a><span>,</span>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/elmo" title="Elmo" target="_self">Elmo</a><span>,</span>
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/grover" title="Grover" target="_self">Grover</a><span>,</span>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/grover" title="Grover" target="_self">Grover</a><span>,</span>
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/beto" title="Beto" target="_self">Beto</a><span>,</span>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/beto" title="Beto" target="_self">Beto</a><span>,</span>
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/enio" title="Ênio" target="_self">Ênio</a><span>,</span>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/enio" title="Ênio" target="_self">Ênio</a><span>,</span>
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/comecome" title="Come-Come" target="_self">Come-Come</a><span>,</span>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/comecome" title="Come-Come" target="_self">Come-Come</a><span>,</span>
                 </li>
                 <li>
-                  <a href="/vilasesamo/personagens/zoe" title="Zoe" target="_self">Zoe</a>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/zoe" title="Zoe" target="_self">Zoe</a>
                 </li>
               </ul>
             </nav> 

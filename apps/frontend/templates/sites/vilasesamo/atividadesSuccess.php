@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <script>
-  $("body").addClass("interna videos");
+  $("body").addClass("interna atividades");
 </script>
 
 <!-- HEADER -->
-<?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+<?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
 
 <!--content-->
@@ -15,7 +15,8 @@
   <!--span12-->
   <div class="span12" role="main">
     
-    <h1><i class="icones-sprite-interna icone-videos-grande"></i>Vídeos</h1>
+    <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
+    <h1><i class="icones-sprite-interna icone-atividades-grande"></i>Atividades</h1>
     
     <?php if(isset($displays['destaque-1']) || isset($displays['destaque-2'])): ?>
       <?php if(count($displays['destaque-1']) > 0 || count($displays['destaque-2']) > 0): ?>
@@ -25,13 +26,12 @@
       <div class="aba1">
         <?php if(isset($displays['destaque-1'])): ?>
           <?php if(count($displays['destaque-1']) > 0): ?>
+            <?php $related_preview = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByRelationType("Preview"); ?>
         <h2 aria-describedby="Novidade">
           <article class="span6 clipes">
-            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/videos/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>">
+            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
-              <div class="yt-destaque">
-                <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-1'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" />
-              </div>
+              <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" />
               <p><?php echo $displays['destaque-1'][0]->getTitle() ?></p> 
             </a> 
           </article>
@@ -40,13 +40,12 @@
         <?php endif; ?>
         <?php if(isset($displays['destaque-2'])): ?>
           <?php if(count($displays['destaque-2']) > 0): ?>
+            <?php $related_preview = $displays['destaque-2'][0]->Asset->retriveRelatedAssetsByRelationType("Preview"); ?>
         <h2 aria-describedby="Novidade">
           <article class="span6 clipes  semmargem">
-            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/videos/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>">
+            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>">
               <span class="sprite-selo">Novidade!</span>
-              <div class="yt-destaque">
-                <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-2'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
-              </div>
+              <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
               <p><?php echo $displays['destaque-2'][0]->getTitle() ?></p> 
             </a> 
           </article>
@@ -63,9 +62,9 @@
     <!--menu filtro persoagem-->
     <?php $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"personagens"); ?>
     <?php $personagens = $particularSection->subsections()?>
-
     
-    <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens)) ?>
+       
+    <?php include_partial_from_folder('sites/vilasesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens)) ?>
     <!--/menu filtro persoagem-->
         
   </div>
@@ -76,15 +75,16 @@
 
 <?php if(isset($pager)): ?>
   <?php if(count($pager) > 0): ?>
-  <?php $pager2 = count($pager)/9; ?> 
+  <?php $pager2 = count($pager)/9; ?>
+    <?php $parent = $section->Parent->getSlug(); ?>
+ 
 <span class="divisa"></span>
 
 <!--/section-->
 <section class="todos-itens ">
   <!--lista-->
-  <ul role="contentinfo" id="container" class="row-fluid">
-    <?php
-    /* 
+  <ul id="container" class="row-fluid">
+    <?php /*
     <?php foreach($pager->getResults() as $k=>$d): ?>
     <?php
       $assetPersonagens = array();
@@ -96,12 +96,11 @@
         }
       }
     ?>
-    <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> videos"> 
-      <a href="/<?php echo $site->getSlug() ?>/videos/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
-        <div class="yt-menu">
-          <img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
-        </div>
-        <i class="icones-sprite-interna icone-videos-pequeno "></i>
+    <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> atividades"> 
+      <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
+        <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
+        <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
+        <i class="icones-sprite-interna icone-atividades-pequeno"></i>
         <div>
           <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
           <?php echo $d->getTitle() ?>
@@ -109,8 +108,8 @@
       </a>
     </li>
     <?php endforeach; ?>
-    */
-    ?>
+     */
+     ?>
   </ul> 
   <!--lista-->  
 </section>
@@ -123,9 +122,10 @@
   
 
 
+
 <!--paginacao-->
-<?php include_partial_from_folder('sites/vila-sesamo', 'global/pagination', array('site' => $site, 'section' => $section,'pager'=>$pager , 'pager2'=>$pager2)) ?>
+<?php include_partial_from_folder('sites/vilasesamo', 'global/pagination', array('site' => $site, 'section' => $section,'pager'=>$pager , 'pager2'=>$pager2, 'parent' => $parent)) ?>
 <!--/paginacao-->
 
-
+<!--scripts-->
 
