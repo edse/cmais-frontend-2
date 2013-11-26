@@ -124,7 +124,7 @@
           <?php if(count($displays["enquete"])>0):?>
               <?php
 							$vd = $displays["enquete"][0]->Asset->retriveRelatedAssetsByAssetTypeId(6);
-							$img = $displays["enquete"][0]->Asset->retriveRelatedAssetsByAssetTypeId(2);
+							$img = $displays["enquete"][0]->Asset->retriveRelatedAssetsByRelationType("Preview");;
 							
               $respostas = Doctrine_Query::create()
                 ->select('aa.*')
@@ -139,7 +139,7 @@
                 <?php if(count($vd) > 0):?>
                   <iframe width="310" height="250" src="//www.youtube.com/embed/<?php echo $vd[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
                 <?php elseif (count($img) > 0):?>
-                  <img src="<?php echo "http://midia.cmais.com.br/assets/image/original/".$img[0]->AssetImage->original_file; ?>" title="<?php echo $img[0]->getTitle(); ?>" />
+                  <img src="<?php echo "http://midia.cmais.com.br/assets/image/original/".$img[0]->retriveImageUrlByImageUsage("image-13"); ?>" title="<?php echo $img[0]->getTitle(); ?>" />
                 <?php endif; ?>  
               </div>
               
