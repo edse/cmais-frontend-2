@@ -22,7 +22,7 @@
               Sua brincadeira foi enviada com sucesso<br/>
               e em breve estará em nossa galeria de brincadeiras!
             </p>
-            <a class="btn" href="/vila-sesamo/campanhas/brincar-e-um-direito-da-crianca" title="visitar a galeria de brincadeiras">visitar a galeria de brincadeiras</a>
+            <a class="btn" href="/<?php echo $site->getSlug(); ?>/campanhas/brincar-e-um-direito-da-crianca" title="visitar a galeria de brincadeiras">visitar a galeria de brincadeiras</a>
           </div>
         <?php endif; ?>
       <?php endif;?> 
@@ -148,7 +148,7 @@
         
         <!--Termos e condições-->
         <div class="span12 termo">
-          <?php include_partial_from_folder('sites/vila-sesamo', 'global/termos') ?>
+          <?php include_partial_from_folder('sites/vilasesamo', 'global/termos') ?>
         </div>
         <!--/Termos e condições-->
         

@@ -5,7 +5,7 @@
 </script>
 
 <!-- HEADER -->
-<?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+<?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
 
 <!--content-->
@@ -64,7 +64,7 @@
     <?php $personagens = $particularSection->subsections()?>
     
        
-    <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens)) ?>
+    <?php include_partial_from_folder('sites/vilasesamo', 'global/menu-personagens', array('site'=>$site ,'section' => $section,'personagens' => $personagens)) ?>
     <!--/menu filtro persoagem-->
         
   </div>
@@ -124,7 +124,7 @@
 
 
 <!--paginacao-->
-<?php include_partial_from_folder('sites/vila-sesamo', 'global/pagination', array('site' => $site, 'section' => $section,'pager'=>$pager , 'pager2'=>$pager2, 'parent' => $parent)) ?>
+<?php include_partial_from_folder('sites/vilasesamo', 'global/pagination', array('site' => $site, 'section' => $section,'pager'=>$pager , 'pager2'=>$pager2, 'parent' => $parent)) ?>
 <!--/paginacao-->
 
 <!--scripts-->

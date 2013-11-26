@@ -4,14 +4,14 @@
 <!--content-->
 <div id="content">
   <!--menu principal && banner promocional-->
-  <?php include_partial_from_folder('sites/vila-sesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
-  <?php include_partial_from_folder('sites/vila-sesamo', 'global/bannerprincipal', array('site' => $site)); ?>
+  <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+  <?php include_partial_from_folder('sites/vilasesamo', 'global/bannerprincipal', array('site' => $site)); ?>
   <!--/menu principal && banner promocional-->
   
   <!--carrossel personagens-->
   <?php $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"personagens"); ?>
   <?php $personagens = $particularSection->subsections()?>
-  <?php include_partial_from_folder('sites/vila-sesamo', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'personagens'=>$personagens));?>
+  <?php include_partial_from_folder('sites/vilasesamo', 'global/menupersonagens', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'personagens'=>$personagens));?>
   <!--carrossel personagens-->
   
   <!-- link seções -->
