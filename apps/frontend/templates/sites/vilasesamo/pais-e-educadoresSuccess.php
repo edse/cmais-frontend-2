@@ -5,7 +5,7 @@
 
 <script>
   $("body").addClass("cuidadores");
-  <?php if($section->getSlug()=="cuidadores"):?>
+  <?php if($section->getSlug()=="pais-e-educadores"):?>
     $(document).ready(function(){
       $(".btn-cuidadores-topo").addClass("active");
     });  
