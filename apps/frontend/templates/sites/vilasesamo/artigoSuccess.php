@@ -52,7 +52,7 @@
           <!--conteudo artcle-->
           <article>
             
-            <!--header>
+            <!--header-->
             <header>
               
               <h1><?php echo $asset->getTitle() ?></h1>
@@ -81,7 +81,7 @@
               
               <!--compartilhar redes-->
               <?php //include_partial_from_folder('sites/vilasesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
-              <!--/compartilhar redes>
+              <!--/compartilhar redes-->
               <div class="divisa"></div>
             </header>
             <!--/header-->
@@ -445,7 +445,7 @@
         <!--destaques-->
         <div class="span4 col-direita">
           <?php
-            $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"cuidadores");
+            $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"pais-e-educadores");
             $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($particularSection->getId(), "destaques-secundarios"); // Pega o bloco "destaques-secundarios" da seção "para os pais"
             if ($block) $_displays["destaques-secundarios"] = $block->retriveDisplays(); // Pega os destaques do bloco "destaques-secundarios"    
           ?>        
