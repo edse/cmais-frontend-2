@@ -118,6 +118,70 @@
             </div>
             <!--/CONTEUDO WRAPPER-->
             
+             <?php if(isset($displays["enquete"])):?>
+          <?php if(count($displays["enquete"])>0):?>
+              <?php
+              $vd = $displays["enquete"][0]->Asset->retriveRelatedAssetsByAssetTypeId(6);
+              $img = $displays["enquete"][0]->Asset->retriveRelatedAssetsByRelationType("Preview");
+              
+              $respostas = Doctrine_Query::create()
+                ->select('aa.*')
+                ->from('AssetAnswer aa')
+                ->where('aa.asset_question_id = ?', (int)$displays["enquete"][0]->Asset->AssetQuestion->id)
+                ->execute();
+              ?>
+              
+           <!-- FORM DESTAQUE ENQUETE -->
+            <div id="destaque-enquete">
+              <div class="col-esq">
+                <?php if(count($vd) > 0):?>
+                  <iframe width="310" height="250" src="//www.youtube.com/embed/<?php echo $vd[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
+                <?php elseif (count($img) > 0):?>
+                  <img src="<?php echo $img[0]->retriveImageUrlByImageUsage("image-13-b"); ?>" title="<?php echo $img[0]->getTitle(); ?>" />
+                <?php endif; ?>  
+              </div>
+              
+              <div class="col-dir">
+                <div class="text">
+                  <?php echo html_entity_decode($displays["enquete"][0]->Asset->AssetQuestion->getQuestion()) ?>
+                </div>
+                <!--Form enquete-->
+                  <form method="post" id="e<?php echo $displays["enquete"][0]->Asset->getId();?>" class="form-voto">
+                    <?php 
+                      $form = new BaseForm();
+                      echo $form->renderHiddenFields();
+                    ?>
+                    <?php foreach ($respostas as $k => $r):?>
+                      <div class="div-choice">
+                        <label for="resposta<?php echo $k?>">
+                          <input type="radio" name="opcao" id="resposta<?php echo $k?>" class="required" value="<?php echo $r->Asset->AssetAnswer->id ?>"  />
+                          <?php echo $r->Asset->AssetAnswer->getAnswer() ?>
+                        </label>
+                      </div>
+                    <?php endforeach;?>
+                    <input type="submit" class="votar" value="VOTAR">
+                  </form>
+                <!--/Form enquete-->
+                  <div class="inativo" style="display: none;">
+                  <?php foreach($respostas as $k => $r): ?>
+                    <?php
+                    /*
+                    <div class="resposta<?php echo $k?>">
+                      <label>50%</label>
+                    </div>
+                    */
+                     ?>
+                  <?php endforeach;?>
+                </div>
+              </div>
+              
+            </div>  
+            <!-- FORM DESTAQUE ENQUETE-->
+            
+            
+           <?php endif;?>
+        <?php endif;?>   
+            
             <?php
             /*
             <!-- FORM DESTAQUE -->
