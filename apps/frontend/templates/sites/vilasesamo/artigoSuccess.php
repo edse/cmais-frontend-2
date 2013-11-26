@@ -5,19 +5,21 @@
 
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <?php 
-  $assetSection = $asset->getSections();
+  //$assetSection = $asset->getSections();
+  /*
   foreach($assetSection  as $a){
     if($a->getSlug() == 'pais-e-educadores')
       $assetSection = 'pais-e-educadores';
   }
+  */
 ?>
 <script>
   $("body").addClass("cuidadores artigo");
-  <?php if($assetSection=="pais-e-educadores"):?>
+  <?php //if($assetSection=="pais-e-educadores"):?>
     $(document).ready(function(){
       $(".btn-cuidadores-topo").addClass("active");
     });  
-  <?php endif; ?>
+  <?php //endif; ?>
 </script>
 
 <!-- HEADER -->
