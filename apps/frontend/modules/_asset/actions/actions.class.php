@@ -1047,7 +1047,7 @@ class _assetActions extends sfActions
           }
         }
       }
-      elseif($this->site->getType() == "Hotsite" || $this->site->getType() == 1){
+      elseif(($this->site->getType() == "Hotsite" || $this->site->getType() == 1)&&($this->site->getSlug()!="vilasesamo")){
         if(in_array($this->site->getSlug(), array("revistavitrine","revistavitrine2"))) {
           if($debug) print "<br>3-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/online';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/online');
