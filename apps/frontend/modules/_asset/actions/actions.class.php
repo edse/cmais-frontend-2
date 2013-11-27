@@ -1047,7 +1047,7 @@ class _assetActions extends sfActions
           }
         }
       }
-      elseif(($this->site->getType() == "Hotsite" || $this->site->getType() == 1)&&($this->site->getSlug()!="vilasesamo")){
+      elseif($this->site->getType() == "Hotsite" || $this->site->getType() == 1){
         if(in_array($this->site->getSlug(), array("revistavitrine","revistavitrine2"))) {
           if($debug) print "<br>3-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/online';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/online');
@@ -1095,12 +1095,12 @@ class _assetActions extends sfActions
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
             }
           }
-          if($this->site->getSlug() == "vilasesamo") {
+          if($this->site->getSlug() == "vila-sesamo") {
             //if($this->asset->id != 148169) // id do asset somente para teste, retirar assim que puderem!
               $this->setLayout("vilasesamo");
             $sections = $this->asset->getSections();
             foreach($sections as $s) {
-              if(in_array($s->getSlug(), array("atividades", "jogos", "videos","pais-e-educadores"))) {
+              if(in_array($s->getSlug(), array("atividades", "jogos", "videos","cuidadores"))) {
                 $this->section = $s;
                 break;
               }
@@ -1117,7 +1117,7 @@ class _assetActions extends sfActions
               if($debug) print "<br>2-3-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/video';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/video');
             }
-            elseif($this->section->getSlug() == "pais-e-educadores") {
+            elseif($this->section->getSlug() == "cuidadores") {
               if($debug) print "<br>2-3-4>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/artigo';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/artigo');
             }
