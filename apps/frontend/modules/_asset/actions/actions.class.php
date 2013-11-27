@@ -25,11 +25,11 @@ class _assetActions extends sfActions
       $this->mainSite = Doctrine::getTable('Site')->findOneBySlug('cmais');
       // asset
       $this->asset = $request->getParameter('object');
-			
-			if ($this->asset->getIsActive() != '1' && $this->asset->Site->getType() != "Programa TVRTB"){
-				header("Location: ".$this->asset->Site->retriveUrl());
-				die();
-			}
+      
+      if ($this->asset->getIsActive() != '1' && $this->asset->Site->getType() != "Programa TVRTB"){
+        header("Location: ".$this->asset->Site->retriveUrl());
+        die();
+      }
       
       if(in_array($this->asset->Site->getSlug(), array("cocorico2","cocorico"))) {
         $this->setLayout('cocorico');   
@@ -92,12 +92,12 @@ class _assetActions extends sfActions
         ->orderby('s.parent_section_id desc')
         ->fetchOne();
 
-			if(in_array($this->site->getSlug(), array("radarcultura","culturafm","cocorico"))) {
+      if(in_array($this->site->getSlug(), array("radarcultura","culturafm","cocorico"))) {
         $this->setLayout('radarcultura');
         if(!$this->section){
           $se = $this->asset->Sections;
-					$this->section = $this->asset->Sections[0];
-					/*
+          $this->section = $this->asset->Sections[0];
+          /*
           if(count($se)>0){
             foreach($se as $s){
               if(!$this->section){
@@ -111,7 +111,7 @@ class _assetActions extends sfActions
               }
             }
           }
-					*/
+          */
           if(!$this->section){
             $this->section = Doctrine_Query::create()
               ->select('s.*')
@@ -180,29 +180,29 @@ class _assetActions extends sfActions
             ->execute();
         }
       }
-			elseif(in_array($this->asset->Site->getSlug(), array("sic","revistavitrine2","revistavitrine","radarcultura"))){
-	      $this->siteSections = Doctrine_Query::create()
-	        ->select('s.*')
-	        ->from('Section s')
-	        ->where('s.site_id = ?', $this->asset->Site->getId())
-	        ->andWhere('s.is_active = ?', 1)
-	        ->andWhere('s.is_visible = ?', 1)
+      elseif(in_array($this->asset->Site->getSlug(), array("sic","revistavitrine2","revistavitrine","radarcultura"))){
+        $this->siteSections = Doctrine_Query::create()
+          ->select('s.*')
+          ->from('Section s')
+          ->where('s.site_id = ?', $this->asset->Site->getId())
+          ->andWhere('s.is_active = ?', 1)
+          ->andWhere('s.is_visible = ?', 1)
           ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
-	        ->orderBy('s.display_order')
-	        ->execute();
+          ->orderBy('s.display_order')
+          ->execute();
       }
       else{
         $this->siteSections = Doctrine_Query::create()
-					->select('s.*')
-					->from('Section s')
-					->where('s.site_id = ?', $this->asset->Site->id)
-					->andWhere('s.is_active = ?', 1)
-					->andWhere('s.is_visible = ?', 1)
-					->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
-					->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
-					->orderBy('s.display_order')
-					->execute();
-			}
+          ->select('s.*')
+          ->from('Section s')
+          ->where('s.site_id = ?', $this->asset->Site->id)
+          ->andWhere('s.is_active = ?', 1)
+          ->andWhere('s.is_visible = ?', 1)
+          ->andWhere('s.parent_section_id <= 0 OR s.parent_section_id IS NULL')
+          ->andWhereNotIn('s.slug', array('home', 'home-page', 'homepage'))
+          ->orderBy('s.display_order')
+          ->execute();
+      }
       
       /*
       // editorials
@@ -276,9 +276,9 @@ class _assetActions extends sfActions
     if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")){
       $t = explode("-old", $this->asset->getSlug());
       if(isset($_REQUEST["debug"])){
-      	if ($_REQUEST["debug"]==1)
-       		//echo $this->section->Site->getSlug();
-       		echo $this->asset->Site->getSlug();
+        if ($_REQUEST["debug"]==1)
+          //echo $this->section->Site->getSlug();
+          echo $this->asset->Site->getSlug();
       }
       if((count($t) > 1)&&($_REQUEST["test"]!=1)){
         header("Location: ".$t[0]);
@@ -301,13 +301,13 @@ class _assetActions extends sfActions
       $email_site = $this->section->getContactEmail();
     }
     $this->mailSent = $request->getParameter('mailSent');
-		
-		if ($this->site->Program->getIsACourse()) {
-			if ($request->getParameter('bloco-de-notas')) {
-				$email_site = strip_tags($request->getParameter('email'));
-			}
-		}
-		
+    
+    if ($this->site->Program->getIsACourse()) {
+      if ($request->getParameter('bloco-de-notas')) {
+        $email_site = strip_tags($request->getParameter('email'));
+      }
+    }
+    
     // mail sender
     if($email_site!="") {
       if(($request->getParameter('captcha'))||($request->getParameter('mande-seu-tema'))||($request->getParameter('bloco-de-notas'))){
@@ -317,22 +317,22 @@ class _assetActions extends sfActions
           if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
             // verifica se o servidor que ta o formulario é o mesmo que o chamou, se for um ataque de injeção de dados este valor será diferente
             ini_set('sendmail_from', $email_site);
-						
-						if ($this->site->Program->getIsACourse())
-							$msg = "<p>Veja abaixo suas anotações do curso " . $this->site->getTitle() . ":<p>";
-						else
-            	$msg = "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
-		
-						if ($this->site->Program->getIsACourse()) {
-							while(list($campo, $valor) = each($_REQUEST)) {
-								if ($campo != "bloco-de-notas") {
-									if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action', 'Cadastro-tutoria', 'Section_id')))
-										$msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
-								}
-            	}
-						} 
-						else {
-						  
+            
+            if ($this->site->Program->getIsACourse())
+              $msg = "<p>Veja abaixo suas anotações do curso " . $this->site->getTitle() . ":<p>";
+            else
+              $msg = "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
+    
+            if ($this->site->Program->getIsACourse()) {
+              while(list($campo, $valor) = each($_REQUEST)) {
+                if ($campo != "bloco-de-notas") {
+                  if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action', 'Cadastro-tutoria', 'Section_id')))
+                    $msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
+                }
+              }
+            } 
+            else {
+              
               if($request->getParameter('cadastro-tutoria')) {
                 
                 $campos = null;
@@ -429,19 +429,19 @@ class _assetActions extends sfActions
                 $csv .= "\r\n";
                 $fp = fopen($filename,'w+');
               }
-						  
-							while(list($campo, $valor) = each($campos)) {
-								if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action'))) {
-									$msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
+              
+              while(list($campo, $valor) = each($campos)) {
+                if(!in_array(ucwords($campo), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action'))) {
+                  $msg .= "<b>" . ucwords($campo) . ":</b> " . strip_tags($valor) . "<br>";
                   $csv .= str_replace(',',' ',strip_tags($valor)) . ", ";
                 }
-							}
+              }
               if($request->getParameter('cadastro-tutoria')) {
                 fwrite($fp, $csv);
                 fclose($fp);
                 //die('123');
               }
-						}
+            }
             
             $cabecalho = "Return-Path: " . $nome_user . " <" . $email_user . ">\r\n";
             $cabecalho .= "From: " . $nome_user . " <" . $email_user . ">\r\n";
@@ -450,17 +450,17 @@ class _assetActions extends sfActions
             $cabecalho .= "MIME-Version: 1.0\r\n";
             $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
             $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
-						
-						if (isset($this->section->id)) {
-							$subject = '['.$this->site->getTitle().']['.$this->section->getTitle().'] '.$nome_user.' <'.$email_user.'>';
-						}
-						else { 
-							if ($this->site->Program->getIsACourse()) {
-								if ($request->getParameter('bloco-de-notas')) {
-									$subject = '['.$this->site->getTitle().'][Bloco de Notas] '.$nome_user.' <'.$email_user.'>';
-								}
-							}
-						}
+            
+            if (isset($this->section->id)) {
+              $subject = '['.$this->site->getTitle().']['.$this->section->getTitle().'] '.$nome_user.' <'.$email_user.'>';
+            }
+            else { 
+              if ($this->site->Program->getIsACourse()) {
+                if ($request->getParameter('bloco-de-notas')) {
+                  $subject = '['.$this->site->getTitle().'][Bloco de Notas] '.$nome_user.' <'.$email_user.'>';
+                }
+              }
+            }
             
             if(mail($email_site, $subject, stripslashes(nl2br($msg)), $cabecalho)){
               //header("Location: ".$this->uri."?mailSent=1");
@@ -479,8 +479,8 @@ class _assetActions extends sfActions
               
               die("1");
             }
-			else
-			  die("0");
+      else
+        die("0");
           }
           else {
             header("Location: http://cmais.com.br");
@@ -518,39 +518,39 @@ class _assetActions extends sfActions
       }
 
     }
-		
+    
     //if ($this->site->Program->getIsACourse() && $request->getParameter('test') == 1) {
     if ($this->site->Program->getIsACourse()) {
-    	$sections = $this->asset->getSections();
-			
-			if (count($sections) > 0) {
-				$this->section = $sections[0];
-				//$this->assets = $this->section->getAssets();
-				$this->assets = Doctrine_Query::create()
-					->select('a.*')
-					->from('Asset a, SectionAsset sa')
-					->where('sa.asset_id = a.id')
-					->andWhere('sa.section_id = ?', $this->section->id)
-					->andWhere('a.site_id = ?', $this->site->id)
-					->andWhere('a.is_active = ?', 1)
-					->orderBy('sa.display_order')
-					->execute();
-					
-				for($k=0; $k < count($this->assets); $k++){
-					
-					if ($this->assets[$k]->id == $this->asset->id){
-						if (count($this->assets) > ($k+1)){
-							$this->assetNext = $this->assets[$k+1];
-						}
-						if ($k > 0){
-							$this->assetPrev = $this->assets[$k-1];
-						}
-					}
-				}
-				
-			}
-		}
-				
+      $sections = $this->asset->getSections();
+      
+      if (count($sections) > 0) {
+        $this->section = $sections[0];
+        //$this->assets = $this->section->getAssets();
+        $this->assets = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa')
+          ->where('sa.asset_id = a.id')
+          ->andWhere('sa.section_id = ?', $this->section->id)
+          ->andWhere('a.site_id = ?', $this->site->id)
+          ->andWhere('a.is_active = ?', 1)
+          ->orderBy('sa.display_order')
+          ->execute();
+          
+        for($k=0; $k < count($this->assets); $k++){
+          
+          if ($this->assets[$k]->id == $this->asset->id){
+            if (count($this->assets) > ($k+1)){
+              $this->assetNext = $this->assets[$k+1];
+            }
+            if ($k > 0){
+              $this->assetPrev = $this->assets[$k-1];
+            }
+          }
+        }
+        
+      }
+    }
+        
 
     //metas
     if($this->asset->Site->getSlug()!="cmais")
@@ -720,38 +720,38 @@ class _assetActions extends sfActions
     }
 
     $this->ipad = false;
-		if(strstr($_SERVER['HTTP_USER_AGENT'],'iPad')){
-			$this->ipad = true;
-		}
+    if(strstr($_SERVER['HTTP_USER_AGENT'],'iPad')){
+      $this->ipad = true;
+    }
 
-		if($this->site->getSlug() == 'radarcultura' && $this->asset->getSlug() == 'player')
-			$this->setLayout(false);
+    if($this->site->getSlug() == 'radarcultura' && $this->asset->getSlug() == 'player')
+      $this->setLayout(false);
     /*
     if($this->site->getSlug() == "maiscrianca")
       $this->setLayout(false);
-		*/
+    */
     if($this->site->getSlug() == "castelo" && $this->asset->getSlug() != "creditos" && !isset($_REQUEST['layout']))
       $this->setLayout(false);
-		
-		if($this->site->getSlug() == "culturabrasil" || $this->site->Program->Channel->getSlug() == "culturabrasil" || $this->site->getSlug() == "especiais-1"){
+    
+    if($this->site->getSlug() == "culturabrasil" || $this->site->Program->Channel->getSlug() == "culturabrasil" || $this->site->getSlug() == "especiais-1"){
       $this->setLayout('culturabrasil');
-    }	
-		if ($request->getHost() == "m.cmais.com.br") {
-			if (is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/m/'.$this->asset->AssetType->getSlug().'Success.php')) {
-	      $this->setLayout(false);
-				if($debug)
-					print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/m/'.$this->asset->AssetType->getSlug();
-	      $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/m/'.$this->asset->AssetType->getSlug());
-			}
+    } 
+    if ($request->getHost() == "m.cmais.com.br") {
+      if (is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/m/'.$this->asset->AssetType->getSlug().'Success.php')) {
+        $this->setLayout(false);
+        if($debug)
+          print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/m/'.$this->asset->AssetType->getSlug();
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/m/'.$this->asset->AssetType->getSlug());
+      }
     }
-		
-		elseif($this->site->getSlug() == "multicultura") {
+    
+    elseif($this->site->getSlug() == "multicultura") {
         if($this->asset->getSlug()=="seumulticultura") {
         if ($debug) print "<br>multicultura-1 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/seumulticultura';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/seumulticultura');
       }
-		}
-		
+    }
+    
       elseif($this->site->getSlug() == "cocorico") {
       $this->setLayout('cocorico');
       if($this->section->slug == "joguinhos" && $this->asset->getSlug()!="jogo de-pintar") {
@@ -762,7 +762,7 @@ class _assetActions extends sfActions
         if ($debug) print "<br>cocorico-1 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/jogo-de-pintar';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/jogo-de-pintar');
       }
-	  if($this->section->slug == "receitinhas") {
+    if($this->section->slug == "receitinhas") {
         if ($debug) print "<br>cocorico-receitinhas >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/receitinha');
       }
@@ -953,7 +953,7 @@ class _assetActions extends sfActions
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/para-colorir-interna');
       }
     }
-		elseif($this->site->getSlug() == "quintaldacultura"){
+    elseif($this->site->getSlug() == "quintaldacultura"){
       $slug = $this->asset->AssetType->getSlug();
       foreach($this->asset->Sections as $s){
         //if(in_array($s->id, array('92','98','99','100','101'))){
@@ -964,28 +964,28 @@ class _assetActions extends sfActions
           else
             $this->jogoSubsection = Doctrine::getTable('Section')->findOneBySlug('todos');
         }elseif ($s->Parent->slug == "diversao") {
-			$this->section = Doctrine::getTable('Section')->findOneById($s->id);
-			$slug = "diversao-content";
-		}
+      $this->section = Doctrine::getTable('Section')->findOneById($s->id);
+      $slug = "diversao-content";
+    }
         elseif ($s->slug == "agenda") {
-			$this->section = Doctrine::getTable('Section')->findOneById($s->id);
-			$slug = "agenda-interna";
-		}
-		/*
+      $this->section = Doctrine::getTable('Section')->findOneById($s->id);
+      $slug = "agenda-interna";
+    }
+    /*
         elseif(in_array($s->id, array('94', '103', '106', '104', '105', '127'))){
           $this->section = Doctrine::getTable('Section')->findOneById($s->id);
           //$slug = "atividade";
-		  $slug = "diversao-content";
+      $slug = "diversao-content";
         }
         elseif($s->id == '107')
           //$slug = "atividade-colorir";
-		  $slug = "diversao-content";
+      $slug = "diversao-content";
         elseif(in_array($s->id, array('97', '765', '764', '763', '762'))){
           //$slug = "baixar-content";
-		  $slug = "diversao-content";
+      $slug = "diversao-content";
         }
-		*/
-		
+    */
+    
       }
       
       if($this->section->getId() == 1)
@@ -1003,8 +1003,8 @@ class _assetActions extends sfActions
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/diversao-content');
       }
       elseif($this->asset->getId() == 49018){
-      	if($debug) print "<br>5-4>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/assets/test-8';
-      	$this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/diversao-content');
+        if($debug) print "<br>5-4>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/assets/test-8';
+        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/diversao-content');
       }
       elseif(($slug == "image-gallery")||($slug == "image")){
         if($debug) print "<br>5-0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/quintaldacultura/imagem';
@@ -1025,7 +1025,40 @@ class _assetActions extends sfActions
         if($debug) print "<br>1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/assets/'.$this->asset->getSlug();
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/assets/'.$this->asset->getSlug());
       }
-      elseif((is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Success.php'))&&($this->site->getSlug() != "tvratimbum")){
+      elseif($this->site->getType() == "Programa" || $this->site->getType() == 3){
+        if($debug) print "<br>5>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/'.$this->asset->AssetType->getSlug();
+        if($this->asset->AssetType->getSlug() == "person")
+          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/content');
+        elseif($this->asset->AssetType->getSlug() == "episode")
+          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/video-gallery');
+        else{
+          if ($this->site->Program->getIsACourse()) {
+            if(in_array($this->site->getSlug(), array("pedagogia-unesp","evs","licenciatura-em-ciencias"))){
+              if($debug) print "<br>5.1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-cursoAntigo';
+              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-cursoAntigo');
+            }
+            else {
+              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-curso');
+              if($debug) print "<br>5-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-curso';
+            }
+          }
+          else {
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/'.$this->asset->AssetType->getSlug());
+          }
+        }
+      }
+      elseif(($this->site->getType() == "Hotsite" || $this->site->getType() == 1)&&($this->site->getSlug()!="vilasesamo")){
+        if(in_array($this->site->getSlug(), array("revistavitrine","revistavitrine2"))) {
+          if($debug) print "<br>3-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/online';
+          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/online');
+        }
+        else {
+          if($debug) print "<br>3-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultHotsite/'.$this->asset->AssetType->getSlug();
+          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultHotsite/'.$this->asset->AssetType->getSlug());
+        }
+      }
+      elseif(($this->site->getSlug() != "tvratimbum")&&($this->site->getType() != "ProgramaRadio")){
+      #elseif((is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Success.php'))&&($this->site->getSlug() != "tvratimbum")){
         //die(">".$this->section->slug);
         if ($this->site->getSlug() == "radarcultura" && in_array($this->section->slug,array("entrevistas","cincosons","quarentoes"))) {
           if($debug) print "<br>2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/contentRadar';
@@ -1040,34 +1073,34 @@ class _assetActions extends sfActions
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/playlist');
         }
         else {
-        	if ($this->site->getSlug() == "culturafm") {
-	        	$sections = $this->asset->getSections();
-						if(count($sections) >= 1) {
-							foreach ($sections as $s) {
-								if($parentSection = $s->getParent()){
-									if($parentSection->getSlug() == "colunistas"){
-						        if($debug) print "<br>2-2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Colunista';
-						        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Colunista');
-										break; 
-									}
+          if ($this->site->getSlug() == "culturafm") {
+            $sections = $this->asset->getSections();
+            if(count($sections) >= 1) {
+              foreach ($sections as $s) {
+                if($parentSection = $s->getParent()){
+                  if($parentSection->getSlug() == "colunistas"){
+                    if($debug) print "<br>2-2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Colunista';
+                    $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug().'Colunista');
+                    break; 
+                  }
                   else{
                     if($debug) print "<br>2-2-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
                     $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
                   }
-								}
-							}
-						}
-						else {
-			        if($debug) print "<br>2-2-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
-			        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
-			      }
-			    }
-          if ($this->site->getSlug() == "vila-sesamo") {
+                }
+              }
+            }
+            else {
+              if($debug) print "<br>2-2-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
+              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
+            }
+          }
+          if($this->site->getSlug() == "vilasesamo") {
             //if($this->asset->id != 148169) // id do asset somente para teste, retirar assim que puderem!
               $this->setLayout("vilasesamo");
             $sections = $this->asset->getSections();
             foreach($sections as $s) {
-              if(in_array($s->getSlug(), array("atividades", "jogos", "videos","cuidadores"))) {
+              if(in_array($s->getSlug(), array("atividades", "jogos", "videos","pais-e-educadores"))) {
                 $this->section = $s;
                 break;
               }
@@ -1084,7 +1117,7 @@ class _assetActions extends sfActions
               if($debug) print "<br>2-3-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/video';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/video');
             }
-            elseif($this->section->getSlug() == "cuidadores") {
+            elseif($this->section->getSlug() == "pais-e-educadores") {
               if($debug) print "<br>2-3-4>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/artigo';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/artigo');
             }
@@ -1092,62 +1125,29 @@ class _assetActions extends sfActions
               if($debug) print "<br>2-3-5>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
             }
-					}
-					else {
-		        if($debug) print "<br>2-4>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
-		        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
-					}
-				}
-      }
-      else{
-        if($this->site->getType() == "Hotsite" || $this->site->getType() == 1){
-          
-          if(in_array($this->site->getSlug(), array("revistavitrine","revistavitrine2"))) {
-            if($debug) print "<br>3-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/online';
-            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/online');
           }
           else {
-            if($debug) print "<br>3-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultHotsite/'.$this->asset->AssetType->getSlug();
-            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultHotsite/'.$this->asset->AssetType->getSlug());
-          }
-          
-          if ($this->site->getSlug() == "vila-sesamo") {
-            //if($this->asset->id != 148169) // id do asset somente para teste, retirar assim que puderem!
-            $this->setLayout("vilasesamo");
-            $sections = $this->asset->getSections();
-            foreach($sections as $s) {
-              if(in_array($s->getSlug(), array("atividades", "jogos", "videos","cuidadores"))) {
-                $this->section = $s;
-                break;
+            
+            
+            if(($this->site->getType() == "Portal" || $this->site->getType() == 2)&&($this->site->getSlug() != "tvratimbum")){
+              if(in_array($this->asset->getId(), array(121120, 121117, 120858, 121146, 121145, 122440, 127638,127974,130827,131375,131368,131702,139908,140033,140035))){
+                if($debug) print "<br>4-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/cmais/tutores-content'; 
+                $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/cmais/tutores-content');
+              }
+              else {
+                if($debug) print "<br>4-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPortal/'.$this->asset->AssetType->getSlug();
+                $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPortal/'.$this->asset->AssetType->getSlug());
               }
             }
-            if($this->section->getSlug() == "atividades") {
-              if($debug) print "<br>3-1-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/atividade';
-              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/atividade');
-            }
-            elseif($this->section->getSlug() == "jogos") {
-              if($debug) print "<br>3-1-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/jogo';
-              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/jogo');
-            }
-            elseif($this->section->getSlug() == "videos") {
-              if($debug) print "<br>3-1-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/video';
-              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/video');
-            }
-            elseif($this->section->getSlug() == "cuidadores") {
-              if($debug) print "<br>3-1-4>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/artigo';
-              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/artigo');
-            }
-            else {
-              if($debug) print "<br>3-1-5>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
+            else{
+              if($debug) print "<br>2-4>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
             }
           }
-          else {
-            if($debug) print "<br>3-6>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
-            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
-          }
         }
-        elseif(($this->site->getType() == "Portal" || $this->site->getType() == 2)&&($this->site->getSlug() != "tvratimbum")){
+      }
+      else{
+        if(($this->site->getType() == "Portal" || $this->site->getType() == 2)&&($this->site->getSlug() != "tvratimbum")){
           if(in_array($this->asset->getId(), array(121120, 121117, 120858, 121146, 121145, 122440, 127638,127974,130827,131375,131368,131702,139908,140033,140035))){
             if($debug) print "<br>4-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/cmais/tutores-content'; 
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/cmais/tutores-content');
@@ -1164,22 +1164,22 @@ class _assetActions extends sfActions
           elseif($this->asset->AssetType->getSlug() == "episode")
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/video-gallery');
           else
-						if ($this->site->Program->getIsACourse()) {
-		          if(in_array($this->site->getSlug(), array("pedagogia-unesp","evs","licenciatura-em-ciencias"))){
-		          	if($debug) print "<br>5.1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-cursoAntigo';
-			          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-cursoAntigo');
-		          }
-							else {
-	     					$this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-curso');
-								if($debug) print "<br>5-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-curso';
-							}
-						}
-						else {
-           		$this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/'.$this->asset->AssetType->getSlug());
-						}
+            if ($this->site->Program->getIsACourse()) {
+              if(in_array($this->site->getSlug(), array("pedagogia-unesp","evs","licenciatura-em-ciencias"))){
+                if($debug) print "<br>5.1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-cursoAntigo';
+                $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-cursoAntigo');
+              }
+              else {
+                $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-curso');
+                if($debug) print "<br>5-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/content-curso';
+              }
+            }
+            else {
+              $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/'.$this->asset->AssetType->getSlug());
+            }
         }
         elseif($this->site->getType() == "ProgramaRadio"){
-          if(in_array($this->asset->Site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class","manha-cultura", "entrelinhas-1", "cd-da-semana", "arquivo-vivo", "interprete"))){
+          if(in_array($this->asset->Site->getSlug(), array("diario-da-manha","cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class","manha-cultura", "entrelinhas-1", "cd-da-semana", "arquivo-vivo", "interprete"))){
             if($debug) print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug();
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/'.$this->asset->AssetType->getSlug());
           }
@@ -1223,7 +1223,7 @@ class _assetActions extends sfActions
             if($debug) print "<br>6-0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/tvratimbum/programas/'.$this->asset->AssetType->getSlug();
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/tvratimbum/programas/'.$this->asset->AssetType->getSlug());
           
-		  }else{
+      }else{
             $sec = $this->asset->Sections[0];
 
             //echo ">>>>>".$sec->getSlug();
