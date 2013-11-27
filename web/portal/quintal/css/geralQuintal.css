@@ -426,7 +426,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 /* home enquete*/
 #destaque-enquete { width:960px; height:330px; background:url(/portal/quintal/images/enquete/enquete-quintal.png) no-repeat; position:relative; margin:0 auto;}
 #destaque-enquete .col-esq{ text-align: center;width: 360px;height: 100%;position: absolute;}
-#destaque-enquete .col-esq img{width: 85%; margin-top: 18%;}
+#destaque-enquete .col-esq img{width: 85%; margin-top: 5%;}
 #destaque-enquete .col-esq iframe{display: block;top: 12%;position: absolute;left: 7%;}
 #destaque-enquete .col-dir{float: right;width: 600px;padding: 20px 0 0 0;}
 #destaque-enquete .col-dir .text{text-align: center; width: 420px;}
