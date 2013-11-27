@@ -134,11 +134,16 @@
            <!-- FORM DESTAQUE ENQUETE -->
             <div id="destaque-enquete">
               <div class="col-esq">
+                <?php
+                /*
                 <?php if(count($vd) > 0):?>
                   <iframe width="310" height="250" src="//www.youtube.com/embed/<?php echo $vd[0]->AssetVideo->getYoutubeId() ?>" frameborder="0" allowfullscreen></iframe>
                 <?php elseif (count($img) > 0):?>
                   <img src="<?php echo $img[0]->retriveImageUrlByImageUsage("image-13-b"); ?>" title="<?php echo $img[0]->getTitle(); ?>" />
-                <?php endif; ?>  
+                <?php endif; ?>
+                 */
+                 ?>
+                 <img src="http://cmais.com.br/portal/quintal/images/enquete/rosquinha.png" title="<?php echo $img[0]->getTitle(); ?>" />  
               </div>
               
               <div class="col-dir">
