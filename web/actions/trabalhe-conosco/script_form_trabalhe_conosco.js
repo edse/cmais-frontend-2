@@ -179,7 +179,7 @@ $(document).ready(function() {
 			        type: "GET",
 			        dataType: "jsonp",
 			        data: $("#form2").serialize(),
-			        url: "http://app.cmais.com.br//actions/trabalhe-conosco/cadastra_curriculo.php?"+valores,
+			        url: "http://app.cmais.com.br/actions/trabalhe-conosco/cadastra_curriculo.php?"+valores,
 			        error: function(retorno){
 			          //console.log("Erro para obter os dados do currículo. Clique no botão VOLTAR e tente novamente!");
 			        }, 
