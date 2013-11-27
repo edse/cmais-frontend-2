@@ -197,7 +197,8 @@ class _sectionActions extends sfActions
                   ->from('Schedule s')
                   ->where('s.program_id = ?', $this->site->Program->id)
                   ->andWhere('s.channel_id = ?', 1)
-                  ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 04:59:59', $end.' 05:00:00'))
+                  //->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 04:59:59', $end.' 05:00:00'))
+                  ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 00:00:00', $end.' 23:59:59'))
                   ->orderBy('s.date_start asc')
                   ->limit(80)
                   ->execute();
@@ -208,7 +209,8 @@ class _sectionActions extends sfActions
                   ->from('Schedule s')
                   ->where('s.channel_id = ?', $this->site->Program->getChannelId())
                   ->andWhere('s.program_id = ?', $this->site->Program->id)
-                  ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 04:59:59', $end.' 05:00:00'))
+                  //->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 04:59:59', $end.' 05:00:00'))
+                  ->andWhere('s.date_start >= ? AND s.date_start <= ?', array($start.' 00:00:00', $end.' 23:59:59'))
                   ->orderBy('s.date_start asc')
                   ->limit(80)
                   ->execute();
@@ -246,7 +248,7 @@ class _sectionActions extends sfActions
                   ->from('Schedule s')
                   ->where('s.program_id = ?', $this->site->Program->id)
                   ->andWhere('s.date_start < ?', date("Y-m-d"))
-                  ->orderBy('s.date_start asc')
+                  ->orderBy('s.date_start desc')
                   ->limit(1)
                   ->execute();
                 if(count($prev)>0){
@@ -760,9 +762,9 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1);
                 
                 if($this->section->getSlug() == "programas-na-integra"){
-                	$this->assetsQuery->andWhere('a.asset_type_id = ?', 4);
+                  $this->assetsQuery->andWhere('a.asset_type_id = ?', 4);
                 }else{
-                	$this->assetsQuery->andWhere('a.asset_type_id = ?', 1);
+                  $this->assetsQuery->andWhere('a.asset_type_id = ?', 1);
                 }
                 
                 $this->assetsQuery->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"));
@@ -881,8 +883,8 @@ class _sectionActions extends sfActions
                 ->from('Asset a, SectionAsset sa')
                 ->where('sa.section_id = ?', $this->section->id)
                 ->andWhere('sa.asset_id = a.id')
-				->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
-				->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
+        ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
+        ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
                 ->andWhere('a.is_active = ?', 1);
               if($request->getParameter('busca') != '')
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
@@ -1362,13 +1364,13 @@ class _sectionActions extends sfActions
        if($this->section->Parent->getSlug() == "jogos")
           //$sectionSlug = "jogosSubsection";
           $sectionSlug = "jogos";
-	   elseif($this->section->Parent->getSlug() == "videos")
+     elseif($this->section->Parent->getSlug() == "videos")
           $sectionSlug = "videos";
-	   elseif($this->section->Parent->getSlug() == "diversao")
-          $sectionSlug = "diversao";	   
+     elseif($this->section->Parent->getSlug() == "diversao")
+          $sectionSlug = "diversao";     
         else
           //$sectionSlug = substr($this->section->Parent->getSlug(),0,strlen($this->section->Parent->getSlug())-1);
-		$sectionSlug = "index";	 
+    $sectionSlug = "index";  
       }else{
         //if(in_array($sectionSlug, array('desafio','esportes','habilidade','educativos','aventura','peixonauta')))
         
@@ -1393,46 +1395,46 @@ class _sectionActions extends sfActions
           }
         }
 
-		if($this->site->slug == 'quintaldacultura'){
-			
-			if($this->section->slug == 'jogos')    $sections_list = array(92, 98, 99, 100, 101, 102);
-			if($this->section->slug == 'videos')   $sections_list = array(93, 940, 941, 942, 943, 952, 3169, 3170, 3171, 3172, 3173, 3174, 3175, 3176);
-			if($this->section->slug == 'diversao') $sections_list = array(3163, 3164, 97, 104, 105, 106, 107, 127, 765, 764, 762);
-			//if($this->section->slug == 'agenda') $sections_list = array(1000);
-			
-			if($this->section->Parent->slug == 'jogos') $sections_list = array($this->section->id);
-			if($this->section->Parent->slug == 'videos') $sections_list = array($this->section->id);
-			if($this->section->Parent->slug == 'diversao') $sections_list = array($this->section->id);
-			
-			
-			if($request->getParameter('search')) $this->term = $request->getParameter('search');
-			
-			if(count(@$sections_list) >= 1){
-				 $this->assetsQuery = Doctrine_Query::create()
-		          ->select('a.*');
-		          
-	          if($this->section->Parent->slug == 'videos' || $this->section->slug == 'videos'){
-				  $this->assetsQuery->from('Asset a, SectionAsset sa, AssetVideo av')
-				  ->whereIn('sa.section_id', $sections_list)
-				  ->andWhere('sa.asset_id = a.id')
-				  ->andWhere('av.asset_id = a.id')
-				  ->andWhere('av.youtube_id != ""')
-				  ->andWhere('a.is_active = ?', 1)
-				  ->orderBy('a.id desc');
-	          }else{
-	          	$this->assetsQuery
-	          	  ->from('Asset a, SectionAsset sa')
-		          ->whereIn('sa.section_id', $sections_list)
-		          ->andWhere('sa.asset_id = a.id')
-				  ->andWhere('a.is_active = ?', 1)
-				  ->orderBy('rand()');
-	          }
-	          //if($this->term != "")
-	            //$this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->term.'%', '%'.$this->term.'%'));
-			  			  
-			} 
-			  
-		}
+    if($this->site->slug == 'quintaldacultura'){
+      
+      if($this->section->slug == 'jogos')    $sections_list = array(92, 98, 99, 100, 101, 102);
+      if($this->section->slug == 'videos')   $sections_list = array(93, 940, 941, 942, 943, 952, 3169, 3170, 3171, 3172, 3173, 3174, 3175, 3176);
+      if($this->section->slug == 'diversao') $sections_list = array(3163, 3164, 97, 104, 105, 106, 107, 127, 765, 764, 762);
+      //if($this->section->slug == 'agenda') $sections_list = array(1000);
+      
+      if($this->section->Parent->slug == 'jogos') $sections_list = array($this->section->id);
+      if($this->section->Parent->slug == 'videos') $sections_list = array($this->section->id);
+      if($this->section->Parent->slug == 'diversao') $sections_list = array($this->section->id);
+      
+      
+      if($request->getParameter('search')) $this->term = $request->getParameter('search');
+      
+      if(count(@$sections_list) >= 1){
+         $this->assetsQuery = Doctrine_Query::create()
+              ->select('a.*');
+              
+            if($this->section->Parent->slug == 'videos' || $this->section->slug == 'videos'){
+          $this->assetsQuery->from('Asset a, SectionAsset sa, AssetVideo av')
+          ->whereIn('sa.section_id', $sections_list)
+          ->andWhere('sa.asset_id = a.id')
+          ->andWhere('av.asset_id = a.id')
+          ->andWhere('av.youtube_id != ""')
+          ->andWhere('a.is_active = ?', 1)
+          ->orderBy('a.id desc');
+            }else{
+              $this->assetsQuery
+                ->from('Asset a, SectionAsset sa')
+              ->whereIn('sa.section_id', $sections_list)
+              ->andWhere('sa.asset_id = a.id')
+          ->andWhere('a.is_active = ?', 1)
+          ->orderBy('rand()');
+            }
+            //if($this->term != "")
+              //$this->assetsQuery->andWhere('a.title like ? OR a.description like ?', array('%'.$this->term.'%', '%'.$this->term.'%'));
+                
+      } 
+        
+    }
 
 
       }
