@@ -310,7 +310,7 @@ $(document).ready(function() {
             $("#accordion2").empty(); //LIMPA O CAMPO
             $("#accordion2").show();
             $("#adicionar_historico").show();
-
+ 
 					  $("#form3")[0].reset();
                 
             var cod_curriculo = $("#qg_curric").val();

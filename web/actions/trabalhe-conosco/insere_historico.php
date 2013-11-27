@@ -21,7 +21,5 @@
   	$output = json_encode(array("data" => $resultado));
 		$callback = $_GET['callback'];
 		echo $callback.'('. $output . ');';	
-   }else{
-   	echo "envie todos os dados";
    }
 ?>
