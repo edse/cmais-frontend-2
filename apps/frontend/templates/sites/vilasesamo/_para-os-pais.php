@@ -8,7 +8,7 @@
 if(isset($asset)){
   $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Download");
   foreach($dicaRelacionada[0] as $d){
-      echo $d[0]->getSlug(). ">>>>>>>ooeeeeee<br>";    
+      echo $d[0]. ">>>>>>>ooeeeeee<br>";    
   }
 
 }
