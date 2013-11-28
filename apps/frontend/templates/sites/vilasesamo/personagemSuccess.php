@@ -212,7 +212,7 @@
   <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
   <script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script>
   <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
-  <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
+  <!--script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script-->
   <script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
