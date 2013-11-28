@@ -114,9 +114,9 @@ else { // senão traz pela semelhança de tags com o asset em questão
       
       <!--box-pais -->
       <div class="row-fluid span12 box-pais">
-        
+       <?php die("aqui") ?> 
       <?php if(isset($specialCategory)): ?>
-        <?php die("aqui") ?>
+       
         <?php if(isset($dicaRelacionada)): ?>
           
           <?php //if(count($dicaRelacionada) > 0): ?>
