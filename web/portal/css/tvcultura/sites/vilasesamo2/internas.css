@@ -1,7 +1,7 @@
 body { background:#0172f9; }
 a:hover{text-decoration:underline!important;}
 .header-bar ul { margin:12px 0 0 0; }
-.header-bar { position:fixed; background: url(/portal/images/capaPrograma/vilasesamo2/pattern-menu-interna.jpg) repeat-x; height:81px; top:48px; width: 100%; width:100%; }
+.header-bar { position:fixed; background: url(/portal/images/capaPrograma/vilasesamo2/pattern-menu-interna.jpg) repeat-x; height:81px; top:48px; width: 100%; max-width:100%; }
 .header-bar .content { width:940px; margin:0 auto; }
 .header-bar h1 { /*background:#fff; height:76px;*/ margin:5px 0 0 0; /*width:25%;*/ }
 .header-bar h1 a { float:left; /*width:100%;*/ }
@@ -10,15 +10,15 @@ a:hover{text-decoration:underline!important;}
 .conteudo-asset h2 {font-size: 25px;margin: 20px 0;}
 #content { top:134px; margin-bottom:200px; }
 #content .section,
-#content section { width:940px; margin:20px auto; }
+#content section { max-width:940px; margin:20px auto; }
 #content h1 {margin: 0;font-size: 50px;height: 60px;line-height: 60px;padding: 0 0px 5px 0px;}
 .artigo #content header h1{font-size:25px;}
 /*#content h1 span,*/
 #content h1 i.icones-sprite-interna {margin: 0px 20px 0px 20!important}
 #content h1 .sprite-icon-colorir-med { margin-top:-6px; }
 #content h1 .sprite-icon-jogos-med { margin-top:4px; }
-#page_nav { width:940px;  margin:3% auto; overflow:hidden; }
-.mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; width:350px; float:right; display:block; }
+#page_nav { max-width:940px;  margin:3% auto; overflow:hidden; }
+.mais { color: #fff; text-transform:uppercase; font-size:25px; height:60px; line-height:60px; max-width:350px; float:right; display:block; }
 .cuidadores .mais{color:#00c76e!important}
 .mais span,
 .mais i { float:right; margin-left:15px; }
@@ -183,12 +183,12 @@ body.campanhas{background-color:#fee133!important;}
 .interna.videos .filtro .span10 { border-left: 2px solid #f77400; }
 .interna.videos .yt-destaque{width:350px; height:350px; display:block; overflow: hidden;border:#FFFFFF 2px solid;}
 .interna.videos .yt-destaque:hover{border:#fba500 2px solid;}
-.interna.videos .yt-destaque img{width:750px!important;margin-left: -73px;margin-top: -7px;}
+.interna.videos .yt-destaque img{max-width:750px!important;margin-left: -73px;margin-top: -7px;}
 .interna.videos .yt-menu,
-.cuidadores .container-cuidadores .destaques .yt-menu{width:300px;height:300px; display:block; overflow: hidden;border-bottom:#f77400 2px solid;}
+.cuidadores .container-cuidadores .destaques .yt-menu{max-width:300px;height:300px; display:block; overflow: hidden;border-bottom:#f77400 2px solid;}
 .todos-itens .videos .yt-menu img,
 .interna.videos .yt-menu img,
-.cuidadores .container-cuidadores .destaques .yt-menu img{width:401px!important;width:401px!important; position:relative; left:-68;}
+.cuidadores .container-cuidadores .destaques .yt-menu img{max-width:401px!important;width:401px!important; position:relative; left:-68;}
 .interna.videos .todos-itens li,
 .interna.videos .filtro,
 .interna.videos .scroll { border-color:#fba500; }
@@ -399,7 +399,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .todos-itens a {font-size: 16px; border-bottom:2px solid #008d36;}
 .cuidadores .todos-itens li {background: #00aa52;border-top: 7px solid #00c76e;border-bottom: 7px solid #00c76e;}
 .cuidadores .imagem-destaque-carrossel{width: 100%;height: 90%;overflow: hidden;border-radius: 10px;}
-.cuidadores .imagem-destaque-carrossel img{width: 101%!important;position: relative;left: 0;width: 134%;}
+.cuidadores .imagem-destaque-carrossel img{width: 101%!important;position: relative;left: 0;max-width: 134%;}
 /* /cuidadores */
 
 /* cuidadores artigos */
@@ -428,7 +428,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .foto-sobre{position:absolute;top: 15px;left: 15px;width:140px;height: 140px;overflow: hidden;text-align: center;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .sombra-amarela{background: #fdea4f;width: 140px;height: 140px;position: absolute;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;}
 .cuidadores .container-cuidadores .col-dir .box-sobre .links{clear: both;overflow: hidden;padding: 8px;}
-.cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre{ width:300px;height:25;position:absolute; bottom:-11px;}
+.cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre{ max-width:300px;max-height:25;position:absolute; bottom:-11px;}
 .cuidadores .container-cuidadores .col-dir .box-sobre{margin-bottom: 20px;background: #FFF;border: 1px solid #ccf4e2;border-bottom: none;padding: 0 0 10px 0;position: relative;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;}
 .cuidadores .container-cuidadores .col-dir .box-sobre img{width: 100%;}
 .cuidadores .container-cuidadores .col-dir .box-sobre a{background: #00aa52;color: #ffffff;padding: 6px 6px;font-size: 16px;margin: 5px 2px;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;float: left;}
@@ -478,11 +478,11 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .na-tv .sprite{width: 60px;height: 50px;background: red;margin: -2px 20px 0 0;}
 .na-tv .container-na-tv{background: #FFFFFF;padding: 20px 20px 80px 20px;overflow: hidden;position: relative;border-bottom: 2px solid #008d36;}
 .na-tv .container-na-tv h2.ola{font-family:'din-blackregular',Arial, Helvetica, sans-serif; font-size:65px; color:#00aa52;position:absolute; top:50px; left:50px; display:block;z-index:1} 
-.na-tv .container-na-tv p{width: 690px;float: right;position: relative;z-index: 1;}
+.na-tv .container-na-tv p{max-width: 690px;float: right;position: relative;z-index: 1;}
 .na-tv .container-na-tv p strong{font-family:'din-blackregular',Arial, Helvetica, sans-serif;color:#00aa52;}
 .na-tv .container-na-tv p a{color:#00aa52;}
 .na-tv .container-na-tv p a:hover{color:#00c76e;}
-.na-tv .container-na-tv .container-horarios{width: 480px;float: right;height: 230px;overflow: hidden;}
+.na-tv .container-na-tv .container-horarios{width: 480px;float: right;max-height: 230px;overflow: hidden;}
 .na-tv .container-na-tv .container-horarios .img-logo{text-align: center;margin: 10px;}
 .na-tv .container-na-tv .container-horarios .box-horario{width: 230px;float: left;margin-left: 18px;background: red;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat;}
 .na-tv .container-na-tv .container-horarios .box-horario .box-logo{display:block;width: 100%;background: #ffffff;border: #ccf4e2 1px solid;height: 130px;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;position:relative;}

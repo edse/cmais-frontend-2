@@ -85,14 +85,14 @@ footer .mapa .span12,
 /* /border radius*/
 
 .container, 
-.navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 940px; }
+.navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { max-width: 940px; }
 .navbar .btn-navbar:hover,
 .navbar .btn-navbar { background:none; border:none; padding:0; margin:0; box-shadow: none; }
 .navbar-fixed-top { margin-bottom:0; position:fixed;}
 #content {  min-height:500px; position:relative; top:103px; margin-bottom:51px; }
 .header-bar,
 .section,
-section { width:980px; margin:0 auto; clear:both;}
+section { max-width:980px; margin:0 auto; clear:both;}
 .navbar-inverse .navbar-inner { 
   padding:0;
   border:none;
@@ -502,12 +502,12 @@ section { width:980px; margin:0 auto; clear:both;}
 .destaques .tipoB { background:#777; }
 .destaques .tipoC { background:#999; }
 .destaques .tipoD { background:#eee; }
-.divisa { display: block; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-divisa.png) repeat-x; height:2px; width:940px; margin:0 auto 20px; }
+.divisa { display: block; width: 100%; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-divisa.png) repeat-x; height:2px; max-width:940px; margin:0 auto 20px; }
 .divisa.carregar{margin:0 auto;}
 .interna.atividades .divisa.carregar{background-color:#883feb;}
 .interna.jogos .divisa.carregar{background-color: #3aaaec;}
 .interna.videos .divisa.carregar{background-color:#f78701;}
-.bgtotal { width:100%; width:100% !important; background:#fee133; padding-bottom:30px; }
+.bgtotal { width:100%; max-width:100% !important; background:#fee133; padding-bottom:30px; }
 #container-lista li,
 .destaques .span6 { width:31.6%; overflow:hidden; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
 #container-lista .jogos img,
@@ -535,7 +535,7 @@ section { width:980px; margin:0 auto; clear:both;}
 .destaques .video { background:#f5861f; }
 #container-lista .atividades,
 .destaques .atividades { background:#883feb; }
-.destaques.container { width:940px; }
+.destaques.container { max-width:940px; }
 .destaques i { float:left; }
 .destaques i.sprite-icon-jogos-grd:hover { background-position: -130px -130px; }
 .destaques i.sprite-icon-clipes-grd:hover { background-position: 0 -598px; }
@@ -577,7 +577,7 @@ section { width:980px; margin:0 auto; clear:both;}
 .destaques .span6.atividades a { border-color: #7732e5; }
 
 .destaques .videos .yt-menu{height:197px; overflow: hidden;position:relative;}
-.destaques .videos .yt-menu img{width: 500px!important;width: 263px;position: absolute;left: -36px;}
+.destaques .videos .yt-menu img{width: 500px!important;max-width: 263px;position: absolute;left: -36px;}
 .destaques .videos:hover img.destaque,
 .destaques .jogos:hover img.destaque,
 .destaques .atividades:hover img.destaque{opacity:0.5;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter: alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;}
@@ -593,7 +593,7 @@ section { width:980px; margin:0 auto; clear:both;}
 /* footer*/
 footer { background:#fff url(/portal/images/capaPrograma/vilasesamo2/pattern-copyright.jpg) repeat-x; position:absolute; padding-bottom:4%; width:100%;}
 footer .copyright {height:30px;}
-footer .copyright small { width:940px; margin:0 auto; display:block; font-size:14px; text-transform:uppercase; height: 25px; line-height:25px; }
+footer .copyright small { max-width:940px; margin:0 auto; display:block; font-size:14px; text-transform:uppercase; height: 25px; line-height:25px; }
 footer a {display:block;}
 footer h1 a,
 footer h2 a { text-indent:-9999px; }
@@ -656,10 +656,10 @@ footer .relacionados li a:hover{-moz-opacity: 0.50;-khtml-opacity: 0.50;opacity:
 .box-pais{padding: 30px 0px;}
 .box-pais.span12{margin-left:8px;padding-bottom:0px;}
 .box-pais .span4{margin:5px;}
-.box-pais .dica-pai{background: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-box.png') repeat; padding: 10px;height: 360px;}
+.box-pais .dica-pai{background: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-box.png') repeat; padding: 10px;max-height: 360px;}
 .box-pais .dica-pai .btn{font-family:'din-blackregular', Arial, Helvetica, sans-serif;clear: both;width: 100%;padding: 5px 0;font-size: 18px;text-transform: uppercase;color: #737373;}
 .box-pais h2{font-size: 18px;text-transform: uppercase;line-height: 32px;color: #434343; white-space: nowrap; overflow: hidden; text-overflow:ellipsis;}
-.box-pais .dica-pai p{height:217px;}
+.box-pais .dica-pai p{max-height:217px;}
 .box-pais .dica-pai p,
 .box-pais .artigo p{color:#434343; font-size:16px;overflow: hidden;margin-bottom: 25px;}
 .box-pais .artigo p{height: 40px;margin-bottom: 0;}
@@ -751,7 +751,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 /* ie */
 .header-bar h1 { *width:250px; *float:left; }
 .filtro .span2 { *padding:0; *margin:0; *width:170px; *min-width:170px; }
-.filtro .span10 { *width:77% }
+.filtro .span10 { *max-width:77% }
 .todos-itens li.span4 { *margin:0 1% 1% 0 !important; }
 .todos-itens li.span4 {margin-left:20px}
 footer .logos .col-dir { *width:50%; *margin-left:-8%}
