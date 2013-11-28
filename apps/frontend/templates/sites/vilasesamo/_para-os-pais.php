@@ -116,7 +116,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
       <div class="row-fluid span12 box-pais">
        
       <?php if(isset($specialCategory)): ?>
-        <?php die("um")?> 
+         
         <?php if(count($dicaRelacionada) > 0): ?>
           
           <?php if(isset($dicaRelacionada)): ?>
@@ -188,6 +188,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
           <?php endif; ?>
         <?php else: // senão existir artigo, tenta pegar um segundo destaque do bloco "dicas" pra preencher o espaço ?>
           <?php if(isset($displays['dicas'][1])): ?>
+            <?php die("um")?>
             <!--box-dica--> 
             <div class="span4 dica-pai">
               <!--link artigo dica-->
