@@ -9,7 +9,7 @@ if(isset($asset))
   $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Download");
 
 $teste = $dicaRelacionada[0]->retriveRelatedAssetsByRelationType("Download");
-die(count($teste) . ">>>>>>>>>>>teste2");
+die(count($teste) . ">>>>>>>>>>>teste3");
 $forParents = Doctrine::getTable('Section')->findOneById(2399);
 if(isset($categories)) {
   foreach($categories as $c) {
