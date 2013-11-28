@@ -21,7 +21,7 @@ and (max-width : 320px) {
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 1024px) {
+and (max-device-width : 1023px) {
 /* 
 .navbar.navbar-fixed-top,
 .header-bar { position:relative; }*/
