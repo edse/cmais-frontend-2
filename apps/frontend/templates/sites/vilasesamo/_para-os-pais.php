@@ -5,11 +5,12 @@
  * Se o asset chamado pertencer a uma categoria especial (seção filha de "categorias" e marcada como "is homepage") as dicas e artigos serão destaques dos blocos "dicas" e "artigos", respectivamente, da seção dessa categoria.
  * Senão busca assets com semelhança de tags
 */ 
-if(isset($asset))
+if(isset($asset)){
+  die("entrei");
   $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Download");
+}
 
-$teste = $dicaRelacionada[0]->retriveRelatedAssetsByRelationType("Download");
-die(count($teste) . ">>>>>>>>>>>teste3");
+
 $forParents = Doctrine::getTable('Section')->findOneById(2399);
 if(isset($categories)) {
   foreach($categories as $c) {
