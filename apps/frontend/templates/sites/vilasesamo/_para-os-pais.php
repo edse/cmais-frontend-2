@@ -6,8 +6,8 @@
  * Senão busca assets com semelhança de tags
 */ 
 if(isset($asset)){
-  die("entrei");
   $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Download");
+  echo $dicaRelacionada[0]->getSlug(). ">>>>>>>";
 }
 
 
