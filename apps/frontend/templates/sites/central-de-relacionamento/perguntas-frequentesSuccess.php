@@ -16,19 +16,20 @@
         e ouvintes de nossas emissoras. Queremos  conhecer
         melhor e estreitar nossos laços com o público de nossas
         emissoras, por isso seu contato e a sua opinião são muito
-        importantes para a Fundação Padre Anchieta.<br/>
+        importantes para a Fundação Padre Anchieta.<br/><br/>
         Antes de enviar sua mensagem, verifique se sua pergunta
-        ou informação não está contemplada nos itens 
+        ou informação não está contemplada nos itens de perguntas frequentes:
+        <ul>
         <?php if(isset($displays)):?>
           <?php if(count($displays) > 0): ?>
              <?php foreach($displays as $display): ?>
                <?php if(count($display) > 0): ?>
-              <a href="javascript:;" id="#<?php echo $display[0]->Block->getSlug() ?>"><?php echo $display[0]->Block->getDescription() ?>,</a>
+              <li><a href="javascript:;" id="#<?php echo $display[0]->Block->getSlug() ?>"><?php echo $display[0]->Block->getDescription() ?></a></li>
                <?php endif; ?>
             <?php endforeach; ?>  
           <?php endif; ?>
-        <?php endif; ?>        
-        Perguntas Frequentes.
+        <?php endif; ?>
+        </ul>        
       </p>
     </div>
     <!--/coluna esquerda-->
