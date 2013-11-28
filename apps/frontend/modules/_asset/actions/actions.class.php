@@ -1111,7 +1111,7 @@ class _assetActions extends sfActions
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultHotsite/'.$this->asset->AssetType->getSlug());
           }
           
-          if ($this->site->getSlug() == "vila-sesamo") {
+          if ($this->site->getSlug() == "vilasesamo") {
             //if($this->asset->id != 148169) // id do asset somente para teste, retirar assim que puderem!
             $this->setLayout("vilasesamo");
             $sections = $this->asset->getSections();
