@@ -495,7 +495,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 
 
 /* home*/
-#carrossel-destaque { width: 100%; width:100%; height:486px; text-align:center;background:#fee133; top:-134px; z-index: 0; position:relative; margin-bottom:-134px;} 
+#carrossel-destaque { max-width: 100%; width:100%; height:486px; text-align:center;background:#fee133; top:-134px; z-index: 0; position:relative; margin-bottom:-134px;} 
 .destaques { text-align:center; }
 .destaques img { width:100% }
 .destaques .tipoA { background:#555; }
