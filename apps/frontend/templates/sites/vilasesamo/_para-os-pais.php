@@ -143,6 +143,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
         <?php else: ?>
           
           <?php if(isset($displays['dicas'])): ?>
+            <?php die("oi")?>
             <?php if(count($displays['dicas']) > 0): ?>
               <!--box-dica-->
               <div class="span4 dica-pai">
