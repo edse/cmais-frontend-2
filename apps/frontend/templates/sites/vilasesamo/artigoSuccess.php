@@ -37,7 +37,7 @@
       <h1>
         <span class="icones-sprite-interna icone-cuidadores-grande"></span>
         <?php echo $section->getTitle() ?>
-        <a href="/<?php echo $site->getSlug() ?>/<?php echo $section->getSlug() ?>" class="todos-assets" target="_self" title="voltar para todas atividades">
+        <a href="/<?php echo $site->getSlug() ?>/<?php echo $section->getSlug() ?>" class="todos-assets" target="_self" title="voltar para todos os artigos">
           <i class="icones-setas icone-voltar-artigo" href="/<?php echo $site->getSlug() ?>/<?php echo $section->getSlug() ?>"></i>
           <p>todos os artigos</p>
         </a>
@@ -91,7 +91,7 @@
               <p><?php echo $asset->getDescription() ?></p>
               <?php $preview = $asset->retriveRelatedAssetsByRelationType("Preview") ?>
               <?php if(count($preview) > 0): ?>
-                <p>
+                <p class="img-destaque-asset">
                   <img id="img-capa" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
                   <span id="legenda" ><?php echo $preview[0]->getDescription() ?></span>
                 </p>
