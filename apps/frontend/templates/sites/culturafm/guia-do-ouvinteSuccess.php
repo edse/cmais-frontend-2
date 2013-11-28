@@ -135,12 +135,12 @@ function dateLoading(date) {
 						<style>
 						  #miolo {margin-top: 0px}
 						  h3.tit-pagina {margin-bottom: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: bold}
-						  .lista-calendario .barra-grade .botao {background: url(/portal/images/seta-baixo.png) no-repeat; display: block}
+						  .lista-calendario .barra-grade .botao {background: url(http://cmais.com.br/portal/images/capaPrograma/culturafm/seta-baixo.png) no-repeat; display: block}
 						  .lista-calendario .barra-grade .tit {font-size: 16px; width: 560px;}
 						  .lista-calendario .barra-grade .hora {font-size: 16px;}
 							.lista-calendario .escura { background:#005ca8; }
 							
-							.lista-calendario .escura .botao {background: url(/portal/images/seta-cima.png) no-repeat;}
+							.lista-calendario .escura .botao {background: url(http://cmais.com.br/portal/images/seta-cima.png) no-repeat;}
 							.lista-calendario .disable { background: #f7f6f6;}
 							
 							.lista-calendario .disable .tit { color:#333;}
