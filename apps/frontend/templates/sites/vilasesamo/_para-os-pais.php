@@ -8,6 +8,7 @@
 if(isset($asset))
   $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Download");
 
+die(count($dicaRelacionada) . ">>>>>>>>>>>");
 $forParents = Doctrine::getTable('Section')->findOneById(2399);
 if(isset($categories)) {
   foreach($categories as $c) {
@@ -118,7 +119,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
       <?php if(isset($specialCategory)): ?>
       
         <?php if(isset($dicaRelacionada)): ?>
-          <?php die(count($dicaRelacionada) . ">>>>>>>>>>>")?> 
+          
           <?php if(count($dicaRelacionada) > 0): ?>
             
             <!--box-dica--> 
