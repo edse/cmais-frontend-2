@@ -132,6 +132,26 @@ function dateLoading(date) {
               </div>
             </div>
             <!-- menu-calendario -->
+						<style>
+						  #miolo {margin-top: 0px}
+						  h3.tit-pagina {margin-bottom: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: bold}
+						  .lista-calendario .barra-grade .botao {background: url(/portal/images/seta-baixo.png) no-repeat; display: block}
+						  .lista-calendario .barra-grade .tit {font-size: 16px; width: 560px;}
+						  .lista-calendario .barra-grade .hora {font-size: 16px;}
+							.lista-calendario .escura { background:#005ca8; }
+							
+							.lista-calendario .escura .botao {background: url(/portal/images/seta-cima.png) no-repeat;}
+							.lista-calendario .disable { background: #f7f6f6;}
+							
+							.lista-calendario .disable .tit { color:#333;}
+							.lista-calendario .disable .hora { color:#333;}	
+							.lista-calendario .disable .botao { display:none}	
+							
+							.lista-calendario li {margin-top:0px}
+							.lista-calendario .grade a {background: none; padding-left: 0px};
+							
+						</style>
+
 
             <!-- lista calendario -->
             <?php if(isset($schedules)): ?>
@@ -139,29 +159,33 @@ function dateLoading(date) {
             <ul class="lista-calendario grid2" style="margin-bottom: 10px;">
               <li>
                   <?php if((strtotime(date('Y-m-d H:i:s')) >= strtotime($d->getDateStart())) && (strtotime(date('Y-m-d H:i:s')) <= strtotime($d->getDateEnd()))): ?>
-                      <a name="agora" id="agora" style="height:60px; width:10px; display:block;"></a>
+                      <!--a name="agora" id="agora" style="height:60px; width:10px; display:block;"></a-- >
                       <!--script>
                       $(function(){
                         $('html, body').animate({scrollTop: $("#agora").offset().top},'slow');
                       });
                       </script-->
                   <?php endif; ?> 
-                <div class="barra-grade">                    
+                	<div class="barra-grade<?php if(in_array(format_datetime($d->getDateStart(), "HH:mm"), array("04:00","19:00"))) echo " disable";?>">                    
                     <p class="hora"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?></p>
-                    <a href="<?php echo $d->retriveUrl() ?>" class="tit"><?php echo $d->Program->getTitle() ?></a>
-                    <a href="<?php echo $d->retriveUrl() ?>" class="botao"></a>
-                  </div>
-                  <div class="grade" style="display: block;">
+                    <a href="#" class="btn-toggle tit"><?php echo $d->Program->getTitle() ?></a>
+                    <a href="#" class="botao btn-toggle"></a>
+                 </div>
+                  
+                  <?php if(!in_array(format_datetime($d->getDateStart(), "HH:mm"), array("04:00","19:00"))): ?> 
+                  <div class="grade toogle" style="display: none;">
                     <div class="capa-foto">
                       <img src="<?php echo $d->retriveLiveImage() ?>" alt="<?php echo $d->retriveTitle() ?>" />
                       <?php if($d->image_source != ""): ?><p class="legenda"><?php echo $d->image_source ?></p><?php endif; ?>
                     </div>
-                    <?php if($d->getTitle() != ""): ?>
-                      <p><?php echo $d->getTitle() ?></p>
-                    <?php endif; ?>
-                    <p><?php echo html_entity_decode(nl2br($d->retriveDescription3())) ?></p>
-                    <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=<?php echo urlencode($d->Program->getTitle()) ?>&dates=<?php echo DateTime::createFromFormat('Y-m-d H:i:s', $d->getDateStart())->format('Ymd\THis') ?>/<?php echo DateTime::createFromFormat('Y-m-d H:i:s', $d->getDateStart())->format('Ymd\THis') ?>&details=<?php echo ($d->Program->getLongDescription()) ?>&location=<?php echo "culturafm.cmais.com.br" ?>&trp=false&showTz=0&sprop=http%3A%2F%2Fcmais.com.br&sprop=name:TV%20Cultura" target="_blank" class="google-agenda"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" border=0 style="width:100px;height:25px;" /></a>
+	                     <a href="<?php echo $d->retriveUrl() ?>">Clique aqui para acessar o site do programa.<br/><br/></a>
+	                    <?php if($d->getTitle() != ""): ?>
+	                      <p><?php echo $d->getTitle() ?></p>
+	                    <?php endif; ?>
+	                    <p><?php echo html_entity_decode(nl2br($d->retriveDescription3())) ?></p>
+	                    <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=<?php echo urlencode($d->Program->getTitle()) ?>&dates=<?php echo DateTime::createFromFormat('Y-m-d H:i:s', $d->getDateStart())->format('Ymd\THis') ?>/<?php echo DateTime::createFromFormat('Y-m-d H:i:s', $d->getDateStart())->format('Ymd\THis') ?>&details=<?php echo ($d->Program->getLongDescription()) ?>&location=<?php echo "culturafm.cmais.com.br" ?>&trp=false&showTz=0&sprop=http%3A%2F%2Fcmais.com.br&sprop=name:TV%20Cultura" target="_blank" class="google-agenda"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" border=0 style="width:100px;height:25px;" /></a>
                   </div>
+                  <?php endif; ?>
                   
                 </li> 
               </ul>
@@ -229,6 +253,7 @@ function dateLoading(date) {
       <input type="hidden" name="d" id="d" value="<?php echo $d?>" />
     </form>
     <script>
+    $('.grade.toggle').slideDown("slow");
       function send(c,d){
         $("#c").val(c);
         $("#d").val(d);
