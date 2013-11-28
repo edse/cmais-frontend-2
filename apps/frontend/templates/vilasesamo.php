@@ -27,7 +27,7 @@
      <!--[if lte IE 8]>
        <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/ie.css" />
      <![endif]-->
-    <meta name="viewport" content="initial-scale=0.5">
+
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
@@ -106,22 +106,8 @@
     </script>
     <!--/banner vila sesamo 2013-->
     
-    <script>
-    /*
-      window.onload = function() { 
-        if(screen.width<=480){
-          $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no">')
-        }else{
-          $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">')
-        }
-      }
-      */
-     
-     //ellipsis
-      
-      
-       
-      </script>
+    <meta name="viewport" content="width=320">
+
       
   </head>
   <body>
