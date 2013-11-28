@@ -1520,16 +1520,13 @@ $(document).ready(function(){
           <!-- COLUNA SUB DIR 2 -->
         </div>
         <!-- COLUNA SUB DIR 1 --> 
-        
+        <?php if(isset($displays["melhore-seu-relacionamento"][0])): ?>
         <div class="coluna-sub cinza-claro-2">
-          <h1>MELHORE SEU RELACIONAMENTO CONOSCO</h1>
-          <ul>
-            <li>1) Mantenha sempre seus dados atualizados</li>
-            <li>2) Preencha os campos complementares de seu cadastro</li>
-            <li>3) Indique se quer ou não receber mensagens nossas via SMS, E-mail</li>
-            <li>4) Indique se quer ser informado sobre ações promovidas pela FPA; pesquisas, concursos, promoções, eventos etc.</li>  
-          </ul>  
+          <h1><?php echo $displays["melhore-seu-relacionamento"][0]->Asset->getTitle() ?></h1>
+          <?php echo html_entity_decode($displays["melhore-seu-relacionamento"][0]->Asset->AssetContent->render()) ?>
         </div>  
+        <?php endif; ?>
+        
         <!--botao-->
         <div class="botoes-central-celular">
           <?php if(isset($displays['botoes-central'])):?>

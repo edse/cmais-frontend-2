@@ -6,7 +6,10 @@
  * Senão busca assets com semelhança de tags
 */ 
 if(isset($asset))
-  $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Asset Relacionado");
+  $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Download");
+
+
+
 
 $forParents = Doctrine::getTable('Section')->findOneById(2399);
 if(isset($categories)) {
@@ -91,6 +94,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
 ?>
   
   <?php if($forParents): ?>
+    
   <!-- section-->
   <section class="pais">
     
@@ -117,7 +121,9 @@ else { // senão traz pela semelhança de tags com o asset em questão
       <?php if(isset($specialCategory)): ?>
       
         <?php if(isset($dicaRelacionada)): ?>
+          
           <?php if(count($dicaRelacionada) > 0): ?>
+            
             <!--box-dica--> 
             <div class="span4 dica-pai">
               <!--link artigo dica-->
@@ -140,9 +146,12 @@ else { // senão traz pela semelhança de tags com o asset em questão
             <!--/box-dica-->
           <?php endif; ?>
           
-        <?php else: ?>
           
-          <?php if(isset($displays['dicas']) > 0): ?>
+          
+        <?php else: ?>
+         
+          <?php if(isset($displays['dicas'])): ?>
+            
             <?php if(count($displays['dicas']) > 0): ?>
               <!--box-dica-->
               <div class="span4 dica-pai">

@@ -106,23 +106,8 @@
     </script>
     <!--/banner vila sesamo 2013-->
     
-    <!--meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"-->
-    <script>
-    /*
-      window.onload = function() { 
-        if(screen.width<=480){
-          $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no">')
-        }else{
-          $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">')
-        }
-      }
-      */
-     
-     //ellipsis
-      
-      
-       
-      </script>
+    <meta name="viewport" content="initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no"> 
+
       
   </head>
   <body>
