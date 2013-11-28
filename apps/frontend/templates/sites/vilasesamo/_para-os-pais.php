@@ -7,7 +7,7 @@
 */ 
 if(isset($asset)){
   $dicaRelacionada = $asset[0]->retriveRelatedAssetsByRelationType("Download");
-  echo count($dicaRelacionada). ">>>>>>>";
+  echo count($dicaRelacionada[0]). ">>>>>>>";
 }
 
 
