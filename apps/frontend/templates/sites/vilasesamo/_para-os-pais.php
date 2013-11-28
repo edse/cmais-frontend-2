@@ -7,8 +7,10 @@
 */ 
 if(isset($asset)){
   $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Download");
-  echo count($dicaRelacionada). ">>>>>>>";
-  echo $asset->getSlug();
+  foreach($dicaRelacionada as $d){
+      echo $d->getTitle(). ">>>>>>>ooeeeeee<br>";    
+  }
+
 }
 
 
