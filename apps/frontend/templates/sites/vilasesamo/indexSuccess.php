@@ -97,16 +97,13 @@ $('#carrossel-p').responsiveCarousel({
   step : -1
 });
 
-//if(screen.width > 1024){
-  $('#carrossel-p').mouseenter(function(){
-    $('.arrow.personagem').fadeIn('fast');
-  });
-  
-  $('#carrossel-p').mouseleave(function(){
-    $('.arrow.personagem').fadeOut('fast');
-  });
+$('#carrossel-p').mouseenter(function(){
+  $('.arrow.personagem').fadeIn('fast');
+});
 
-//};
+$('#carrossel-p').mouseleave(function(){
+  $('.arrow.personagem').fadeOut('fast');
+});
 
 $('.inner.personagens a').mouseenter(function(){
   $(this).find('img').animate({top:-70, easing:"swing"},'fast');
