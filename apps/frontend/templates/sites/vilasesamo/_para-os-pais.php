@@ -8,7 +8,7 @@
 if(isset($asset))
   $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Download");
 
-echo $dicaRelacionada[0]->getTitle().">>>>>";  
+echo $dicaRelacionada[0]->getTitle().">>>>>teste";  
 
 $forParents = Doctrine::getTable('Section')->findOneById(2399);
 if(isset($categories)) {
