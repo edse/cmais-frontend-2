@@ -6,9 +6,9 @@
  * Senão busca assets com semelhança de tags
 */ 
 if(isset($asset))
-  $dicaRelacionada = $asset->AssetContent->retriveRelatedAssetsByRelationType("Download");
+  $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Download");
 
-die(count($dicaRelacionada) . ">>>>>>>>>>>teste");
+die(count($dicaRelacionada[0]->retriveRelatedAssetsByRelationType("Download")) . ">>>>>>>>>>>teste2");
 $forParents = Doctrine::getTable('Section')->findOneById(2399);
 if(isset($categories)) {
   foreach($categories as $c) {
