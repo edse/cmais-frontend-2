@@ -118,7 +118,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
       <?php if(isset($specialCategory)): ?>
       
         <?php if(isset($dicaRelacionada)): ?>
-          <?php die("oi")?> 
+          <?php die(count($dicaRelacionada) . ">>>>>>>>>>>")?> 
           <?php if(count($dicaRelacionada) > 0): ?>
             
             <!--box-dica--> 
