@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
     
 
-    <script src="http://cmais.com.br/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://cmais.com.br/portal/js/bootstrap-v2.3.1/js/bootstrap.js" type="text/javascript"></script>
     <script src="http://cmais.com.br/portal/js/dotdotdot-1.6.7/jquery.dotdotdot.min.js" type="text/javascript"></script>
 
      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
