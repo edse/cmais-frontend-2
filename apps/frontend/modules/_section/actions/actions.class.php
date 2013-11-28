@@ -84,7 +84,7 @@ class _sectionActions extends sfActions
     if(in_array($this->section->Site->getSlug(), array("novostempos"))) {
         $this->setLayout('responsivo');
       }
-      if(in_array($this->section->Site->getSlug(), array("vila-sesamo","vilasesamo")))  { // ids da seção somente para teste, retirem assim que puderem!
+      if(in_array($this->section->Site->getSlug(), array("vilasesamo")))  { // ids da seção somente para teste, retirem assim que puderem!
         $this->setLayout('vilasesamo');
         /*
          * Como não tem template para algumas seções (videos,atividades, etc), seta como seção a primeira seção filha que encontrar
@@ -1829,7 +1829,7 @@ class _sectionActions extends sfActions
     }
     elseif($this->section->Parent->id > 0){
       if($this->site->getType() == "Hotsite" || $this->site->getType() == 1){
-        if(in_array($this->site->getSlug(), array("vila-sesamo","vilasesamo"))) {
+        if(in_array($this->site->getSlug(), array("vilasesamo"))) {
           $this->setLayout("vilasesamo");
           $parentSection = $this->section->getParent();
           if($parentSection->getSlug() == "personagens") {
@@ -1911,7 +1911,7 @@ class _sectionActions extends sfActions
           if($debug) print "<br>9-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
         }else{
-          if(in_array($this->site->getSlug(), array("vila-sesamo","vilasesamo"))) {
+          if(in_array($this->site->getSlug(), array("vilasesamo"))) {
             $parentSection = $this->section->getParent();
             if($parentSection->getSlug() == "personagens") {
               if($debug) print "<br>9-2-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/personagem';
