@@ -91,6 +91,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
 ?>
   
   <?php if($forParents): ?>
+    
   <!-- section-->
   <section class="pais">
     
@@ -115,7 +116,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
       <div class="row-fluid span12 box-pais">
         
       <?php if(isset($specialCategory)): ?>
-      
+      <?php die("oi")?> 
         <?php if(isset($dicaRelacionada)): ?>
           <?php if(count($dicaRelacionada) > 0): ?>
             <!--box-dica--> 
@@ -141,7 +142,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
           <?php endif; ?>
           
         <?php else: ?>
-         <?php die("oi")?> 
+         
           <?php if(isset($displays['dicas'])): ?>
             
             <?php if(count($displays['dicas']) > 0): ?>
