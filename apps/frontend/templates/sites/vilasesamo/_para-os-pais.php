@@ -122,7 +122,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
       
         <?php if(isset($dicaRelacionada)): ?>
           
-          <?php if(count($dicaRelacionada) > 0): ?>
+          <?php //if(count($dicaRelacionada) > 0): ?>
             
             <!--box-dica--> 
             <div class="span4 dica-pai">
@@ -144,7 +144,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
               <?php endif; ?>
             </div>
             <!--/box-dica-->
-          <?php endif; ?>
+          <?php //endif; ?>
           
           
           
