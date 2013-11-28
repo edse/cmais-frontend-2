@@ -172,7 +172,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
           <?php endif; ?>
           
         <?php endif; //$specialCategory?>
-      
+       
         <?php if(isset($displays['artigos']) > 0): ?>
           <?php if(count($displays['artigos']) > 0): ?>
             <?php $preview = $displays['artigos'][0]->Asset->retriveRelatedAssetsByRelationType("Preview") ?>
@@ -188,7 +188,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
           <?php endif; ?>
         <?php else: // senão existir artigo, tenta pegar um segundo destaque do bloco "dicas" pra preencher o espaço ?>
           <?php if(isset($displays['dicas'][1])): ?>
-            <?php die("um")?>
+            
             <!--box-dica--> 
             <div class="span4 dica-pai">
               <!--link artigo dica-->
