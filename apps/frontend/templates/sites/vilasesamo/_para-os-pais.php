@@ -6,7 +6,7 @@
  * Senão busca assets com semelhança de tags
 */ 
 if(isset($asset)){
-  $dicaRelacionada = $asset->retriveRelatedAssetsByRelationType("Download");
+  $dicaRelacionada = $asset[0]->retriveRelatedAssetsByRelationType("Download");
   echo count($dicaRelacionada). ">>>>>>>";
 }
 
