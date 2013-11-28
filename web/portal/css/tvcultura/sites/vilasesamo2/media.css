@@ -23,7 +23,7 @@ and (max-width : 320px) {
 and (max-width : 1024px) {
 
 .header-bar { position:relative; top:48px }
-#content { position:relative; top:50px; }
+#content { position:relative; top:0px; }
 
 
 /* Styles */
