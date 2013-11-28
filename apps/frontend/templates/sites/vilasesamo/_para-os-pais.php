@@ -116,7 +116,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
       <div class="row-fluid span12 box-pais">
        
       <?php if(isset($specialCategory)): ?>
-         
+        <?php die("um")?> 
         <?php if(count($dicaRelacionada) > 0): ?>
           
           <?php if(isset($dicaRelacionada)): ?>
@@ -146,7 +146,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
           
           
         <?php else: ?>
-          <?php die("um")?> 
+          
           <?php if(isset($displays['dicas'])): ?>
             
             <?php if(count($displays['dicas']) > 0): ?>
