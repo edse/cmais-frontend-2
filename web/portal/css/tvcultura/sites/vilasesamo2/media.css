@@ -22,8 +22,8 @@ and (max-width : 320px) {
 @media only screen 
 and (max-width : 1024px) {
 
-.header-bar { position:relative; top:52px }
-#content { position:relative; top:133px; }
+.header-bar { position:relative; top:50px }
+#content { position:relative; top:80px; }
 
 
 /* Styles */
