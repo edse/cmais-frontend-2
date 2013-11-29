@@ -8,26 +8,35 @@
     }); 
 
     var filter_selected;
-    
+    var cont = 0
     //seleciona todos no filtro
     $('#filtrar-tudo').click(function(){
-      var filter_selected = "";
+      var personagens = 8;
       
-      $('.filtro-personagem li').addClass('ativo');
-      $('.filtro-personagem li a').find('img').animate({top:-25, easing:"swing"},'fast');
+      if(cont != personagens){
+        
+        $('.filtro-personagem li.ativo').each(function(){
+          cont++
+        });
+        
+        
+        var filter_selected = "";
+        
+        $('.filtro-personagem li').addClass('ativo');
+        $('.filtro-personagem li a').find('img').animate({top:-25, easing:"swing"},'fast');
+        
+        $('.filtro-personagem li.ativo').each(function(i){
+          filter_selected += $(this).find('a').attr('data-filter') + ",";
+          //$select += $(this).find('a').attr('data-filter') + ', ';
+          
+          $(this).find('img').css('top','33px!important');
+        });
+        goTop();
+        $container.isotope({ filter:filter_selected });
+      }  
+      console.log(cont);
+      console.log(personagens);
       
-      $('.filtro-personagem li.ativo').each(function(i){
-        
-        
-        filter_selected += $(this).find('a').attr('data-filter') + ",";
-        //$select += $(this).find('a').attr('data-filter') + ', ';
-        
-        $(this).find('img').css('top','33px!important');
-        
-        
-      });
-      goTop();
-      $container.isotope({ filter:filter_selected });
     });
     //filtro personagens para atividades, jogos e videos
     $('.filtro-personagem a').not('.inner.personagem a').click(function(){
