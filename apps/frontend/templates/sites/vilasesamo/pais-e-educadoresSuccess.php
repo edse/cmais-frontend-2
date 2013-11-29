@@ -47,7 +47,7 @@
                   <a class="btn-carrossel" href="<?php echo $site->retriveUrl() ?>/<?php echo $section->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="<?php echo $d->getTitle() ?>" target="_self">
                     <div class="pull-left videoorimage">
                       <div class="imagem-destaque-carrossel">
-                        <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
+                        <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
                       </div>
                     </div>
                     <div class="descritivo">
