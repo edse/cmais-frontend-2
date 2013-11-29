@@ -1,6 +1,6 @@
 <!-- vilasesamo -->
 <?php
-if(isset($asset)){
+if(count($asset->getSections())>0){
   $class = "google-banner";
 }else{
   $class = "google-banner-home";
