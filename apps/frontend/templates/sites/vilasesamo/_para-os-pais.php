@@ -292,8 +292,9 @@ else { // senão traz pela semelhança de tags com o asset em questão
             <?php endif; ?>
          
         <?php endif; ?>
+        </div>
       <?php endif; ?>
-       </div>
+       
     <?php endif; ?>
     
       <!--box-parceiros-->  
