@@ -93,7 +93,7 @@
               <?php if(count($preview) > 0): ?>
               <div class="img-topo-asset">  
                 <p class="img-destaque-asset">
-                  <img id="img-capa" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $asset->getTitle() ?>" />
+                  <img id="img-capa" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
                   <span id="legenda" ><?php echo $preview[0]->getDescription() ?></span>
                 </p>
               </div>
