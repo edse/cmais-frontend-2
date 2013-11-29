@@ -1221,7 +1221,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
          
           if($section == "videos" && $assets[0]->AssetVideo->getYoutubeId()==""):
             $count--; 
-            if($count == ($page * $items)-$items):
+            if($count <= ($page * $items)-$items):
               $count = ($page * $items)-$items;
             endif;
           else:
