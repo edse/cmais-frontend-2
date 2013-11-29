@@ -1176,6 +1176,18 @@ class ajaxActions extends sfActions
 
 
 public function executeVilasesamogetcontents(sfWebRequest $request){
+	
+			/* Jefferson - Doctrine Asset Vídeos
+			$this->assetsQuery = Doctrine_Query::create()
+			->select('a.*')
+			->from('Asset a, AssetVideo av, SectionAsset sa')
+			->where('sa.section_id = ?', $this->section->id)
+			->andWhere('sa.asset_id = a.id')
+			->andWhere('av.asset_id = a.id')
+			->andWhere('av.youtube_id != ""')
+			->andWhere('a.is_active = ?', 1);
+			*/
+	
     require_once('/var/frontend/lib/vendor/symfony/lib/helper/DateHelper.php');
     require_once('/var/frontend/lib/vendor/symfony/lib/helper/UrlHelper.php');
     
