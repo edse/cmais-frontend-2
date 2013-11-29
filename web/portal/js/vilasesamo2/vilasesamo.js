@@ -95,7 +95,7 @@ $(document).ready(function() {
 
   //menu personagens tablet
   $('.icone-cuidadores-abrir').click(function() {
-    $('.filtro-personagem').stop().slideToggle('slow');
+    $('.pais .filtro-personagem').stop().slideToggle('slow');
     $(".icone-cuidadores-abrir").toggleClass("ativo");
   });
   
@@ -104,6 +104,7 @@ $(document).ready(function() {
     $('.pais .content').stop().slideToggle('slow');
     $(".pais .icone-cuidadores-abrir").toggleClass("inativo");
     $(".pais .icone-cuidadores-fechar").toggleClass("ativo");
+    $(".pais .fechar-toogle").addClass("ativo");
     $('.linha').show();
     $('.redes').fadeIn();
   });
@@ -112,14 +113,19 @@ $(document).ready(function() {
     $('.pais .content').stop().slideToggle('fast');
     $(".pais .icone-cuidadores-abrir").toggleClass("inativo");
     $('.linha, .pais .redes').hide();
+    $(".pais .fechar-toogle").removeClass("ativo");
     if($('.icone-cat-abrir').hasClass('icone-cat-fechar')){
       $('.icone-cat-abrir').toggleClass('icone-cat-fechar');  
     }
     
   });
   
-  $('.icone-cat-abrir').click(function(){
-    $(this).toggleClass('icone-cat-fechar');
+  //$('.icone-cat-abrir').click(function(){
+    //$(this).toggleClass('icone-cat-fechar');
+  //});
+  
+  $('.dropdown-toggle').click(function(){
+    $(this).find('span').toggleClass('icone-cat-fechar');
   });
   //menu personagens tablet
   
