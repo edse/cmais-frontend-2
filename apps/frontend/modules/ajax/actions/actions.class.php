@@ -1177,7 +1177,16 @@ class ajaxActions extends sfActions
 
 public function executeVilasesamogetcontents(sfWebRequest $request){
 	
-			
+			/* Jefferson - Doctrine Asset Vídeos
+			$this->assetsQuery = Doctrine_Query::create()
+			->select('a.*')
+			->from('Asset a, AssetVideo av, SectionAsset sa')
+			->where('sa.section_id = ?', $this->section->id)
+			->andWhere('sa.asset_id = a.id')
+			->andWhere('av.asset_id = a.id')
+			->andWhere('av.youtube_id != ""')
+			->andWhere('a.is_active = ?', 1);
+			*/
 	
     require_once('/var/frontend/lib/vendor/symfony/lib/helper/DateHelper.php');
     require_once('/var/frontend/lib/vendor/symfony/lib/helper/UrlHelper.php');
@@ -1194,17 +1203,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       
       if($page >= 1)
         $start = ($page * $items)-$items;
-      /* Jefferson - Doctrine Asset Vídeos
-      $this->assetsQuery = Doctrine_Query::create()
-      ->select('a.*')
-      ->from('Asset a, AssetVideo av, SectionAsset sa')
-      ->where('sa.section_id = ?', $this->section->id)
-      ->andWhere('sa.asset_id = a.id')
-      ->andWhere('av.asset_id = a.id')
-      ->andWhere('av.youtube_id != ""')
-      ->andWhere('a.is_active = ?', 1);
-      */
-      /*
+      
       $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa')
@@ -1213,32 +1212,10 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->andWhere('a.is_active = ?', 1)
         ->andWhere('a.site_id = ?',$siteId)
         ->orderBy('a.id desc')
-        ->limit($items)
+        ->limit(1)
         ->offset($start)
         ->execute();
-       */ 
-       if($section!="videos"):
-         $assets = Doctrine_Query::create()
-          ->select('a.*')
-          ->from('Asset a, SectionAsset sa')
-          ->where('sa.section_id = ?', $sectionId)
-          ->andWhere('sa.asset_id = a.id')
-          ->andWhere('a.is_active = ?', 1)
-          ->andWhere('a.site_id = ?',$siteId)
-          ->orderBy('a.id desc')
-          ->limit($items)
-          ->offset($start)
-          ->execute();
-       else:
-          $this->assetsQuery = Doctrine_Query::create()
-          ->select('a.*')
-          ->from('Asset a, AssetVideo av, SectionAsset sa')
-          ->where('sa.section_id = ?', $this->section->id)
-          ->andWhere('sa.asset_id = a.id')
-          ->andWhere('av.asset_id = a.id')
-          ->andWhere('av.youtube_id != ""')
-          ->andWhere('a.is_active = ?', 1);
-       endif; 
+        
         
         foreach($assets as $d){
           
