@@ -33,8 +33,6 @@
         goTop();
         $container.isotope({ filter:filter_selected });
       }  
-        
-    });
       
     });
     //filtro personagens para atividades, jogos e videos
