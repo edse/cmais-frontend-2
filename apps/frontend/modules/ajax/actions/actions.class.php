@@ -1219,8 +1219,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->offset($count)
         ->execute();
        
-       $count++;
-       endwhile; 
+        
         
         foreach($assets as $d){
           
@@ -1321,6 +1320,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
           
         }
+        $count++;
+       endwhile;
         
     }
     die();
