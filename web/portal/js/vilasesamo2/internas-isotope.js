@@ -29,10 +29,17 @@
           filter_selected += $(this).find('a').attr('data-filter') + ",";
           //$select += $(this).find('a').attr('data-filter') + ', ';
           
-          $(this).find('img').css('top','33px!important');
         });
         goTop();
         $container.isotope({ filter:filter_selected });
+      }else if(cont==personagens){
+        cont=0;
+        filter_selected = "";
+        
+        $('.filtro-personagem li').removeClass('ativo');
+        $('.filtro-personagem li a').find('img').animate({top:0, easing:"swing"},'fast');
+        $container.isotope({ filter:filter_selected });
+        
       }  
       console.log(cont);
       console.log(personagens);
