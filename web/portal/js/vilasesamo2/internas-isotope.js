@@ -18,7 +18,6 @@
       });
       console.log(cont);
       
-      if()
       var filter_selected = "";
       
       $('.filtro-personagem li').addClass('ativo');
