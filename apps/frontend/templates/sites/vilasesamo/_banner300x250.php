@@ -1,5 +1,5 @@
 <!-- vilasesamo -->
-<div id='div-gpt-ad-1385748525978-0' class="google-banner" style='width: 287px;height: 250px;margin: 20px 0;'>
+<div id='div-gpt-ad-1385748525978-0' class="<?php if(isset($asset)){echo "google-banner";}else{echo "google-banner-home";}?>">
   <script type='text/javascript'>
     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1385748525978-0'); });
   </script>

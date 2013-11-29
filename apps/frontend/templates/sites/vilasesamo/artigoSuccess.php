@@ -477,7 +477,7 @@
         <!--destaques-->
         
         <!-- banner vilasesamo -->
-        <?php include_partial_from_folder('sites/vilasesamo', 'global/banner300x250', array('site' => $site, 'section' => $section)) ?>
+        <?php include_partial_from_folder('sites/vilasesamo', 'global/banner300x250', array('site' => $site, 'section' => $section,'asset'=> $asset)) ?>
         <!-- /banner vilasesamo -->
         
       </div>
