@@ -1223,7 +1223,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $count--;
             if($count == 0):
               $count = 0;
-            else:
+            endif;
+          else:
               
               foreach($assets as $d){
             
@@ -1325,7 +1326,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             
           }
               
-            endif;  
+              
           endif;  
           
           
