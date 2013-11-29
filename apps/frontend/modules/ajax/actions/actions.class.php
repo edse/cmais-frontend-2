@@ -1215,7 +1215,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->andWhere('a.site_id = ?',$siteId)
         ->orderBy('a.id desc')
         ->limit($items)
-        //->offset($start)
+        ->offset($start)
         ->execute();
         
         
