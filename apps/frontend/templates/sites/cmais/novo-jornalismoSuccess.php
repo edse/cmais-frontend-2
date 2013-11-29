@@ -1,20 +1,14 @@
 <?php
-$date_start = date('Y-m-d').' 00:00:00';
-$date_end = 	date('Y-m-d').' 23:59:00';
-
+$now = date('Y-m-d H:i:s');
 $schedules = Doctrine_Query::create()
-      ->select('s.*')
-      ->from('Schedule s')
-      ->andWhere('s.date_start >= ?', $date_start)
-      ->andWhere('s.date_end <= ?', $date_end)
-      ->andWhere('s.channel_id = ?', 1)
-			->limit(10)
-      ->execute();
-    
-    foreach ($schedules as $k => $s) {
-		//	echo $s->getTitle()."\n";
-		}
-	//$schedule->programa->site->getSlug();
+  ->select('s.*')
+  ->from('Schedule s')
+  ->andWhere('s.date_start <= ?', $now)
+  ->andWhere('s.date_end >= ?', $now)  
+  ->andWhere('s.channel_id = ?', 1)
+	->limit(1)
+  ->execute();
+	$live = $schedules[0]->Program->Site->getSlug();//Programa Atual
 ?>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/jornalismo-novo2013.css" type="text/css" />
@@ -23,7 +17,7 @@ $schedules = Doctrine_Query::create()
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
 <?php 
-$live = "jornaldacultura";
+//$live = "jornaldacultura";
 $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</span>'; ?>
 
 <!--MENU-PROGRAMAS-->
