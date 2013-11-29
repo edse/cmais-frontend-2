@@ -274,20 +274,23 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 					<?php endforeach;?>
 				<?php endif;?>  
        
-       
-       <!--previsão do tempo-->
-       <div style="margin-bottom: 10px;">
-       	<h2>Previsão do Tempo</h2>
-       	  <br><br><br><br>
-       </div>
-       <!--previsão do tempo-->
-       
+       <div class="destaque-programas s-margem"> 
+	       <!--previsão do tempo-->
+	       <div style="margin-bottom: 10px;">
+	       	<h2>Previsão do Tempo</h2>
+	       	  <br><br><br><br>
+	       </div>
+	       <!--previsão do tempo-->
+      </div>
+      
+      <div class="destaque-programas s-margem"> 
        <h2>Trânsito</h2>
        <!--transito-->
        <div class="iframe-transito" style="margin-bottom: 10px;">
          <iframe src="http://cmais.com.br/widgets/transito/index.php" frameborder="0"></iframe>
        </div>
        <!--/transito-->
+      </div>
        
       <!--estradas-->
      	<div class="destaque-programas s-margem">
