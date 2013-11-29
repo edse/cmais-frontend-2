@@ -1281,7 +1281,14 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           endif; 
           
           if($section == "videos" && $d->AssetVideo->getYoutubeId()=="" || (isset($sectionP) && $sectionP == "videos" && $d->AssetVideo->getYoutubeId()=="")):
-            $cont--;
+            
+
+            if($cont==0):
+              $cont=0;
+            else:
+              $cont--;  
+            endif;
+            
           elseif($section == "videos" && $d->AssetVideo->getYoutubeId()!="" || (isset($sectionP) && $sectionP == "videos" && $d->AssetVideo->getYoutubeId()!="")):
             $return =  '<li class="span4 element '. $printPersonagens ." ".' videos">';
             $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
@@ -1296,6 +1303,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return .=      '</a>';
             $return .=    '</li>';
             echo $return;
+            
           elseif($section=="jogos" || $section == "atividades" || $section == "pais-e-educadores" || $personagensSection->getSlug() == "personagens" && $assetSection->getSlug()!= "videos" ):  
             $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
             $related = $d->retriveRelatedAssetsByRelationType("Preview");
