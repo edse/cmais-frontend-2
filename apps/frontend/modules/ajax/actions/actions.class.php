@@ -1221,13 +1221,16 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->offset($count)
         ->execute();
         
-        if($section == "videos" && $d->AssetVideo->getYoutubeId()==""):
+        
+        foreach($assets as $d):    
+        if($section == "videos" && $d->AssetVideo->getYoutubeId()=="" || (isset($sectionP) && $sectionP == "videos" && $d->AssetVideo->getYoutubeId()=="")):
           $count--;
           if($count<=0):
             $count=0;
             //echo "voltei";
           endif;
-        else:
+          endif;  
+        endforeach;
         
         foreach($assets as $d){
           
@@ -1331,7 +1334,6 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
         }
         $count++;
-        endif;
         endwhile;
     }
     die();
