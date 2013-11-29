@@ -1216,8 +1216,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->orderBy('a.id desc')
         ->limit(1)
         //->limit($items)
-        ->offset($start)
-        //->offset($count)
+        //->offset($start)
+        ->offset($count)
         ->execute();
         
         
