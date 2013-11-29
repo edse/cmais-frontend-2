@@ -159,13 +159,13 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-artigo-br-pequeno{ background-position: 0 -192px; width: 36px; height: 36px; } 
 .icone-atividades-grande{ background-position: 0 -278px; width: 56px; height: 56px; } 
 .icone-atividades-pequeno{ background-position: 0 -384px; width: 36px; height: 36px; } 
-.icone-cuidadores-grande{ background-position: 0 -470px; width: 56px; height: 56px; } 
+.icone-cuidadores-grande{ background-position: 0 -470px; width: 56px; height: 56px; margin: 0px 20px 0px 20!important } 
 .icone-cuidadores-am-pequeno{ background-position: 0 -576px; width: 36px; height: 36px; } 
 .icone-historia-grande{ background-position: 0 -662px; width: 56px; height: 56px; } 
 .icone-historia-pequeno{ background-position: 0 -768px; width: 36px; height: 36px; } 
 .icone-jogos-grande{ background-position: 0 -854px; width: 56px; height: 56px; } 
 .icone-jogos-pequeno{ background-position: 0 -960px; width: 36px; height: 36px; } 
-.icone-na-tv-grande{ background-position: 0 -1046px; width: 56px; height: 56px; } 
+.icone-na-tv-grande{ background-position: 0 -1046px; width: 56px; height: 56px; margin: 0px 20px 0px 20!important} 
 .icone-na-tv-br-pequeno{ background-position: 0 -1152px; width: 36px; height: 36px; } 
 .icone-personagem-grande{ background-position: 0 -1238px; width: 56px; height: 56px; } 
 .icone-personagem-pequeno{ background-position: 0 -1344px; width: 36px; height: 36px; } 
@@ -208,7 +208,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-tv-ratim-bum{background-position: 10px -155px;width: 110px;height: 110px;margin: 0 auto;display: block;padding: 10px;}
 
 /* acessibilidade */
-.icone-acessibilidade{width: 56px; height: 56px; background: url(/portal/images/capaPrograma/vilasesamo2/sprites/vs_icon_acessibilidade-amarelo.png) no-repeat top left;}
+.icone-acessibilidade{margin: 0px 20px 0px 20!important; width: 56px; height: 56px; background: url(/portal/images/capaPrograma/vilasesamo2/sprites/vs_icon_acessibilidade-amarelo.png) no-repeat top left;}
 
 /* formularios */
 .icones-form{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-form.png) no-repeat top left;}
@@ -495,7 +495,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 
 
 /* home*/
-#carrossel-destaque { width: 100%; width:100%; height:486px; text-align:center;background:#fee133; top:-134px; z-index: 0; position:relative; margin-bottom:-134px;} 
+#carrossel-destaque { max-width: 100%; width:100%; height:486px; text-align:center;background:#fee133; top:-134px; z-index: 0; position:relative; margin-bottom:-134px;} 
 .destaques { text-align:center; }
 .destaques img { width:100% }
 .destaques .tipoA { background:#555; }
@@ -657,7 +657,7 @@ footer .relacionados li a:hover{-moz-opacity: 0.50;-khtml-opacity: 0.50;opacity:
 .box-pais.span12{margin-left:8px;padding-bottom:0px;}
 .box-pais .span4{margin:5px;}
 .box-pais .dica-pai{background: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-box.png') repeat; padding: 10px;max-height: 360px;}
-.box-pais .dica-pai .btn{font-family:'din-blackregular', Arial, Helvetica, sans-serif;clear: both;width: 100%;padding: 5px 0;font-size: 18px;text-transform: uppercase;color: #737373;}
+.box-pais .dica-pai .btn{font-family:'din-blackregular', Arial, Helvetica, sans-serif;clear: both;width: 95%;padding: 5px 0;font-size: 18px;text-transform: uppercase;color: #737373;position: absolute;bottom: 10px;left: 7;}
 .box-pais h2{font-size: 18px;text-transform: uppercase;line-height: 32px;color: #434343; white-space: nowrap; overflow: hidden; text-overflow:ellipsis;}
 .box-pais .dica-pai p{max-height:217px;}
 .box-pais .dica-pai p,
@@ -675,7 +675,7 @@ img.altura{width: 1px!important;height: 40px!important;}
 .pais .divisa { margin-bottom:0; }
 .pais .divisa {clear: both;background-color: #feec3c;height: 2px;margin: 0;}
 .pais .content{display: block; padding: 20px 10px; background:#ffe303!important;padding:0;}
-.pais .content .span4{margin-top:0px;}
+.pais .content .span4{margin-top:0px;min-height: 340px;position:relative;}
 .pais .redes { position:absolute; top:14px; right:0;}
 .pais .redes p { float:left; margin-right:10px; text-transform:uppercase; }
 .pais .content { background:#fee133; margin-left:0; }
@@ -733,7 +733,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 }
 .pais .btn .caret { position:absolute; top:-5px; right:10px; border:none; } 
 .pais .publicidade {margin: 20px 0 20px 0; display: block; }
-.pais .row-fluid .span4 {  width: 32%; float:left;}
+.pais .row-fluid .span4 {  width: 32%; float:left;min-height: 300px;position: relative;}
 .pais .publicidade p { font-family:Arial, Helvetica, sans-serif; font-size:12px; text-transform:uppercase; color:#737373; float:right; }
 .pais .sprite-seta-up,
 .pais .sprite-seta-down { position:absolute; top:-10px; right:0;  cursor:pointer; }

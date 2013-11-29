@@ -53,7 +53,7 @@
           <?php if(isset($displays['selo'])): ?>
             <?php if(count($displays['selo']) > 0): ?>
               <?php if($displays["selo"][1]->retriveImageUrlByImageUsage("original")): ?>
-                <img src="<?php echo $displays["selo"][1]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $displays["selo"][1]->getTitle() ?>" />
+                <img class="selo" src="<?php echo $displays["selo"][1]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $displays["selo"][1]->getTitle() ?>" />
               <?php endif; ?>
             <?php endif; ?>
           <?php endif; ?>
@@ -170,7 +170,7 @@
         <?php if(isset($_displays['parceiros']) > 0): ?>
           <?php if(count($_displays['parceiros']) > 0): ?>
             <div class="span4">
-              <p>Conheça nossos parceiros:</p>
+              <p style="margin: 20px 0 12px 0;">Conheça nossos parceiros:</p>
               <a href="<?php echo $_displays['parceiros'][0]->retriveUrl() ?>" title="<?php echo $_displays['parceiros'][0]->getTitle() ?>">
                 <img src="<?php echo $_displays['parceiros'][0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $_displays['parceiros'][0]->getTitle() ?>" />
               </a>
