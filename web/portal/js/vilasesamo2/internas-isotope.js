@@ -29,7 +29,7 @@
           //$select += $(this).find('a').attr('data-filter') + ', ';
           
           $(this).find('img').css('top','33px!important');
-        }
+        });
         goTop();
         $container.isotope({ filter:filter_selected });
       }  
