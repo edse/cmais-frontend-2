@@ -15,11 +15,6 @@
       
       if(cont != personagens){
         
-        $('.filtro-personagem li.ativo').each(function(){
-          cont++
-        });
-        
-        
         var filter_selected = "";
         
         $('.filtro-personagem li').addClass('ativo');
@@ -28,10 +23,10 @@
         $('.filtro-personagem li.ativo').each(function(i){
           filter_selected += $(this).find('a').attr('data-filter') + ",";
           //$select += $(this).find('a').attr('data-filter') + ', ';
-          
         });
         goTop();
         $container.isotope({ filter:filter_selected });
+        cont=personagens;
       }else if(cont==personagens){
         cont=0;
         filter_selected = "";
