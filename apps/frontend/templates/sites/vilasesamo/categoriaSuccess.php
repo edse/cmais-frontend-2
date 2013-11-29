@@ -51,7 +51,7 @@
           <?php if(isset($displays['selo'])): ?>
             <?php if(count($displays['selo']) > 0): ?>
               <?php if($displays["selo"][1]->retriveImageUrlByImageUsage("original")): ?>
-                <img class="selo" src="<?php echo $displays["selo"][1]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $displays["selo"][1]->getTitle() ?>" />
+                <img class="" src="<?php echo $displays["selo"][1]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $displays["selo"][1]->getTitle() ?>" />
               <?php endif; ?>
             <?php endif; ?>
           <?php endif; ?>
