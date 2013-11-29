@@ -17,7 +17,7 @@
         $('.filtro-personagem li.ativo').each(function(){
           cont++
         });
-        console.log(cont);
+        
         
         var filter_selected = "";
         
@@ -33,6 +33,8 @@
         goTop();
         $container.isotope({ filter:filter_selected });
       }  
+      console.log(cont);
+      console.log(personagens);
       
     });
     //filtro personagens para atividades, jogos e videos
