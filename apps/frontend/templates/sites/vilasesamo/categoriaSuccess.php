@@ -16,7 +16,7 @@
 <div id="content">
   
   <!--section -->
-  <div class="filtro row-fluid pais categorias">
+  <section class="filtro row-fluid pais categorias">
     
     <!--selecione a categoria-->
     <?php
@@ -188,7 +188,7 @@
     </div>
     <!--/container conteudo-->
     
-  </div>
+  </section>
   <!--/section -->
   
   <div class="divisa top"></div>
