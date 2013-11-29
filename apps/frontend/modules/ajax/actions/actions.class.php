@@ -1321,7 +1321,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $return .=    '</li>';
               echo $return;
             endif;   
-            
+            $count++;
             
           }
               
@@ -1329,7 +1329,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           endif;  
           
           
-        $count++;
+        
         endwhile;
         
     }
