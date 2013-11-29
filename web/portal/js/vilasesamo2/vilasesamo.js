@@ -103,15 +103,17 @@ $(document).ready(function() {
   $('.pais .icone-cuidadores-abrir').click(function() {
     $('.pais .content').stop().slideToggle('slow');
     $(".pais .icone-cuidadores-abrir").toggleClass("inativo");
-    $(".pais .icone-cuidadores-fechar, .pais .fechar-toogle").toggleClass("ativo");
+    $(".pais .icone-cuidadores-fechar").toggleClass("ativo");
+    $(".pais .fechar-toogle").addClass("ativo");
     $('.linha').show();
     $('.redes').fadeIn();
   });
   
   $('.pais .icone-cuidadores-fechar').click(function() {
     $('.pais .content').stop().slideToggle('fast');
-    $(".pais .icone-cuidadores-abrir, .pais .fechar-toogle").toggleClass("inativo");
+    $(".pais .icone-cuidadores-abrir").toggleClass("inativo");
     $('.linha, .pais .redes').hide();
+    $(".pais .fechar-toogle").removeClass("ativo");
     if($('.icone-cat-abrir').hasClass('icone-cat-fechar')){
       $('.icone-cat-abrir').toggleClass('icone-cat-fechar');  
     }
