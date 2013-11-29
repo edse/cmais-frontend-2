@@ -1203,6 +1203,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       
       if($page >= 1)
         $start = ($page * $items)-$items;
+      
       $count = 0;
       while($count < $items):
       $assets = Doctrine_Query::create()
@@ -1318,6 +1319,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
           
         }
+        $count++;
         endwhile;
     }
     die();
