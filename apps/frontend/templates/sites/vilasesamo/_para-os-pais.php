@@ -336,7 +336,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
       </div>
       <!--/box-pais-->
       
-      <div class="fechar-toogle ativo">
+      <div class="fechar-toogle">
         <i class="icones-setas icone-cuidadores-fechar"></i>
       </div>
       
