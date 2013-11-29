@@ -1221,6 +1221,22 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->offset($count)
         ->execute();
         
+        $assetPersonagens = array();
+        $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
+        $assetSections = $d->getSections();
+        foreach($assetSections as $a) {
+          if($a->getParentSectionId() == $personagensSection->getId()) {
+            $assetPersonagens[] = $a->getSlug();
+          }
+          if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
+            $assetSection = $a;
+            break;
+          }
+          
+        }
+            
+        $sectionP = $assetSection->getSlug();
+            
         if($section == "videos" && $d->AssetVideo->getYoutubeId()=="" || (isset($sectionP) && $sectionP == "videos" && $d->AssetVideo->getYoutubeId()=="")):
           $count--;
           if($count<=0):
