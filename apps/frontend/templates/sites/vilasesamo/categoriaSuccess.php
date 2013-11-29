@@ -45,9 +45,7 @@
       
       <?php if($section->getIsHomepage() == 1): // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando". ?>
   
-      <!--destaque-principal-->
-      <?php if(isset($displays['destaque-principal'])): ?>
-        <?php if(count($displays['destaque-principal']) > 0): ?> 
+       
         <div class="container-campanhas">
           <!-- selo -->
           <?php if(isset($displays['selo'])): ?>
@@ -58,25 +56,27 @@
             <?php endif; ?>
           <?php endif; ?>
           <!--/selo-->
-          
-          
-            <!--video ou imagem-->
-            <?php if($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "video"): ?>
-            <iframe width="300" height="246" src="http://www.youtube.com/embed/<?php echo $displays["destaque-principal"][0]->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
-            <?php elseif($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "image"): ?>
-            <img class="img-destaque" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" />
-            <?php endif; ?>
-            <!--/video ou imagem-->
-          <p>  
-            <!--descricao-->    
-            <?php echo $displays['destaque-principal'][0]->getDescription() ?>
-            <!--/descricao-->
-          </p>
-          
+          <!--destaque-principal-->
+          <?php if(isset($displays['destaque-principal'])): ?>
+            <?php if(count($displays['destaque-principal']) > 0): ?>    
+              
+                <!--video ou imagem-->
+                <?php if($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "video"): ?>
+                <iframe width="300" height="246" src="http://www.youtube.com/embed/<?php echo $displays["destaque-principal"][0]->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+                <?php elseif($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "image"): ?>
+                <img class="img-destaque" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" />
+                <?php endif; ?>
+                <!--/video ou imagem-->
+              <p>  
+                <!--descricao-->    
+                <?php echo $displays['destaque-principal'][0]->getDescription() ?>
+                <!--/descricao-->
+              </p>
+           <?php endif; ?>
+          <?php endif; ?>
+          <!--/destaque-principal--->    
         </div>
-        <?php endif; ?>
-      <?php endif; ?>
-      <!--/destaque-principal--->
+       
       <div class="divisa"></div>
       
       <div class="row-fluid span12 box-pais">
