@@ -1202,41 +1202,21 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       $site = $request->getParameter('site');
       
       if($page >= 1)
-        $count = ($page * $items)-$items;
-        //$start = ($page * $items)-$items;
+        $start = ($page * $items)-$items;
       
-      while($count < ($page * $items)-$items):
-        if($section == "videos"):
-          
-        $assets = Doctrine_Query::create()
-          ->select('a.*')
-          ->from('Asset a, AssetVideo av, SectionAsset sa')
-          ->where('sa.section_id = ?', $this->section->id)
-          ->andWhere('sa.asset_id = a.id')
-          ->andWhere('av.asset_id = a.id')
-          ->andWhere('av.youtube_id != ""')
-          ->andWhere('a.is_active = ?', 1)
-          ->orderBy('a.id desc')
-          ->limit(1)
-          ->offset($count)
-          ->execute();
-          
-        else:
-          
-        $assets = Doctrine_Query::create()
-          ->select('a.*')
-          ->from('Asset a, SectionAsset sa')
-          ->where('sa.section_id = ?', $sectionId)
-          ->andWhere('sa.asset_id = a.id')
-          ->andWhere('a.is_active = ?', 1)
-          ->andWhere('a.site_id = ?',$siteId)
-          ->orderBy('a.id desc')
-          ->limit(1)
-          ->offset($count)
-          ->execute();
-         
-          endif;
-      
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->where('sa.section_id = ?', $sectionId)
+        ->andWhere('sa.asset_id = a.id')
+        ->andWhere('a.is_active = ?', 1)
+        ->andWhere('a.site_id = ?',$siteId)
+        ->orderBy('a.id desc')
+        ->limit($items)
+        ->offset($start)
+        ->execute();
+        
+        
         foreach($assets as $d){
           
           if($section == "pais-e-educadores"):
@@ -1336,8 +1316,6 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
           
         }
-    $count++;  
-      endwhile;
         
     }
     die();
