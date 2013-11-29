@@ -1280,7 +1280,9 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             endif;  
           endif; 
           
-          if($section == "videos" && $d->AssetVideo->getYoutubeId()!="" || (isset($sectionP) && $sectionP == "videos" && $d->AssetVideo->getYoutubeId()!="")):
+          if($section == "videos" && $d->AssetVideo->getYoutubeId()=="" || (isset($sectionP) && $sectionP == "videos" && $d->AssetVideo->getYoutubeId()=="")):
+            $cont--;
+          elseif($section == "videos" && $d->AssetVideo->getYoutubeId()!="" || (isset($sectionP) && $sectionP == "videos" && $d->AssetVideo->getYoutubeId()!="")):
             $return =  '<li class="span4 element '. $printPersonagens ." ".' videos">';
             $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
             $return .=      '<div class="yt-menu">';
