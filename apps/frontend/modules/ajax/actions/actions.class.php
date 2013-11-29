@@ -1282,7 +1282,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return =  '<li class="span4 element '. $printPersonagens ." ".' videos">';
             $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
             $return .=      '<div class="yt-menu">';
-            $return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$d->AssetVideo->getHeadline().'" />';
+            $return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'" />';
             $return .=      '</div>';
             $return .=      '<i class="icones-sprite-interna icone-videos-pequeno"></i>';
             $return .=        '<div>';
