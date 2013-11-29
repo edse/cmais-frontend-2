@@ -16,7 +16,7 @@
 <div id="content">
   
   <!--section -->
-  <section class="filtro row-fluid pais">
+  <section class="filtro row-fluid pais categorias">
     
     <!--selecione a categoria-->
     <?php
