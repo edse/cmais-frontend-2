@@ -657,7 +657,7 @@ footer .relacionados li a:hover{-moz-opacity: 0.50;-khtml-opacity: 0.50;opacity:
 .box-pais.span12{margin-left:8px;padding-bottom:0px;}
 .box-pais .span4{margin:5px;}
 .box-pais .dica-pai{background: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-box.png') repeat; padding: 10px;max-height: 360px;}
-.box-pais .dica-pai .btn{font-family:'din-blackregular', Arial, Helvetica, sans-serif;clear: both;width: 100%;padding: 5px 0;font-size: 18px;text-transform: uppercase;color: #737373;}
+.box-pais .dica-pai .btn{font-family:'din-blackregular', Arial, Helvetica, sans-serif;clear: both;width: 95%;padding: 5px 0;font-size: 18px;text-transform: uppercase;color: #737373;position: absolute;bottom: 10px;left: 7;}
 .box-pais h2{font-size: 18px;text-transform: uppercase;line-height: 32px;color: #434343; white-space: nowrap; overflow: hidden; text-overflow:ellipsis;}
 .box-pais .dica-pai p{max-height:217px;}
 .box-pais .dica-pai p,
@@ -675,7 +675,7 @@ img.altura{width: 1px!important;height: 40px!important;}
 .pais .divisa { margin-bottom:0; }
 .pais .divisa {clear: both;background-color: #feec3c;height: 2px;margin: 0;}
 .pais .content{display: block; padding: 20px 10px; background:#ffe303!important;padding:0;}
-.pais .content .span4{margin-top:0px;min-height: 340px;}
+.pais .content .span4{margin-top:0px;min-height: 340px;position:relative;}
 .pais .redes { position:absolute; top:14px; right:0;}
 .pais .redes p { float:left; margin-right:10px; text-transform:uppercase; }
 .pais .content { background:#fee133; margin-left:0; }
