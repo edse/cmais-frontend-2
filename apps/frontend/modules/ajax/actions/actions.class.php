@@ -1201,12 +1201,9 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       $section = $request->getParameter('section');
       $site = $request->getParameter('site');
       
-      if($page >= 1){
+      if($page >= 1)
         $start = ($page * $items)-$items;
-        $count = ($page * $items)-$items;
-      }  
       
-      while($count < $page * $items):
       $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa')
@@ -1215,22 +1212,10 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->andWhere('a.is_active = ?', 1)
         ->andWhere('a.site_id = ?',$siteId)
         ->orderBy('a.id desc')
-        ->limit(1)
-        //->limit($items)
-        //->offset($start)
-        ->offset($count)
+        ->limit($items)
+        ->offset($start)
         ->execute();
         
-        
-        foreach($assets as $d):    
-        if($section == "videos" && $d->AssetVideo->getYoutubeId()=="" || (isset($sectionP) && $sectionP == "videos" && $d->AssetVideo->getYoutubeId()=="")):
-          $count--;
-          if($count<=0):
-            $count=0;
-            //echo "voltei";
-          endif;
-          endif;  
-        endforeach;
         
         foreach($assets as $d){
           
@@ -1293,8 +1278,6 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             endif;  
           endif; 
           
-          
-                  
           if($section == "videos" && $d->AssetVideo->getYoutubeId()!="" || (isset($sectionP) && $sectionP == "videos" && $d->AssetVideo->getYoutubeId()!="")):
             $return =  '<li class="span4 element '. $printPersonagens ." ".' videos">';
             $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
@@ -1333,8 +1316,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
           
         }
-        $count++;
-        endwhile;
+        
     }
     die();
   }
