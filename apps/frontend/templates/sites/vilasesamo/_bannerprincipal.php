@@ -48,7 +48,7 @@
         
         <!--item jogos-->
         <li class="slide02" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/2/img-pattern_banner_2-jogos.jpg') repeat;">
-          <div class="mpc_ls_slide_item" data-x="200" data-y="-20" data-delay="500" data-duration="2500" data-easing="easeOutExpo" data-effect="slideBottom" data-fade="off">
+          <div class="mpc_ls_slide_item" data-x="200" data-y="20" data-delay="500" data-duration="2500" data-easing="easeOutExpo" data-effect="slideBottom" data-fade="off">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/2/img-personagem_banner_2-jogos.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="650" data-y="90" data-delay="2000" data-duration="1500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">
@@ -117,13 +117,13 @@
         
         <!--item personagens-->
         <li class="slide05" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/5/img-pattern_banner_5-personagens.jpg') repeat;">
-          <div class="mpc_ls_slide_item mao" data-x="50" data-y="262" data-delay="1500" data-duration="200" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on">
+          <div class="mpc_ls_slide_item mao" data-x="50" data-y="262" data-delay="1500" data-duration="300" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/5/img-personagem_banner_5-personagens-maod.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="300" data-y="200" data-delay="1500" data-duration="6000" data-easing="easeOutExpo" data-effect="slideBottom" data-fade="off">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/5/img-personagem_banner_5-personagens-rosto.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item mao" data-x="700" data-y="262" data-delay="1000" data-duration="200" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on">
+          <div class="mpc_ls_slide_item mao" data-x="700" data-y="262" data-delay="1000" data-duration="300" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/5/img-personagem_banner_5-personagens-maoe.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="-1000" data-y="320" data-delay="0" data-duration="800" data-easing="easeInBack" data-effect="slideBottom" data-fade="on">
