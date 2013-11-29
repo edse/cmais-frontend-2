@@ -159,13 +159,13 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-artigo-br-pequeno{ background-position: 0 -192px; width: 36px; height: 36px; } 
 .icone-atividades-grande{ background-position: 0 -278px; width: 56px; height: 56px; } 
 .icone-atividades-pequeno{ background-position: 0 -384px; width: 36px; height: 36px; } 
-.icone-cuidadores-grande{ background-position: 0 -470px; width: 56px; height: 56px; } 
+.icone-cuidadores-grande{ background-position: 0 -470px; width: 56px; height: 56px; margin: 0px 20px 0px 20!important } 
 .icone-cuidadores-am-pequeno{ background-position: 0 -576px; width: 36px; height: 36px; } 
 .icone-historia-grande{ background-position: 0 -662px; width: 56px; height: 56px; } 
 .icone-historia-pequeno{ background-position: 0 -768px; width: 36px; height: 36px; } 
 .icone-jogos-grande{ background-position: 0 -854px; width: 56px; height: 56px; } 
 .icone-jogos-pequeno{ background-position: 0 -960px; width: 36px; height: 36px; } 
-.icone-na-tv-grande{ background-position: 0 -1046px; width: 56px; height: 56px; } 
+.icone-na-tv-grande{ background-position: 0 -1046px; width: 56px; height: 56px; margin: 0px 20px 0px 20!important} 
 .icone-na-tv-br-pequeno{ background-position: 0 -1152px; width: 36px; height: 36px; } 
 .icone-personagem-grande{ background-position: 0 -1238px; width: 56px; height: 56px; } 
 .icone-personagem-pequeno{ background-position: 0 -1344px; width: 36px; height: 36px; } 
@@ -208,7 +208,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-tv-ratim-bum{background-position: 10px -155px;width: 110px;height: 110px;margin: 0 auto;display: block;padding: 10px;}
 
 /* acessibilidade */
-.icone-acessibilidade{width: 56px; height: 56px; background: url(/portal/images/capaPrograma/vilasesamo2/sprites/vs_icon_acessibilidade-amarelo.png) no-repeat top left;}
+.icone-acessibilidade{margin: 0px 20px 0px 20!important; width: 56px; height: 56px; background: url(/portal/images/capaPrograma/vilasesamo2/sprites/vs_icon_acessibilidade-amarelo.png) no-repeat top left;}
 
 /* formularios */
 .icones-form{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-form.png) no-repeat top left;}
