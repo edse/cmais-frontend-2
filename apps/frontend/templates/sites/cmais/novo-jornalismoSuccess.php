@@ -12,7 +12,7 @@ $schedules = Doctrine_Query::create()
       ->execute();
     
     foreach ($schedules as $k => $s) {
-			echo $s->getTitle()."\n";
+		//	echo $s->getTitle()."\n";
 		}
 	//$schedule->programa->site->getSlug();
 ?>
@@ -60,20 +60,28 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 				<?php foreach ($displays["destaques-noticias-texto"] as $k => $d): ?>
 			      <div class="destaques">
 			          <h2><?php echo $d->getTitle()?></h2>
-			          <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
-			            <p><?php echo $d->getDescription()?></p>  
-			          </a>
-			          <div class="linha-hr"></div>
+
+			          <?php if($k == 3):?>
+				          <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
+				            <p class="s-margem"><?php echo $d->getDescription()?></p>  
+				          </a>			          	
+			          	<a class="veja" href="#">+ veja todas as notícias</a>
+			          <?php else:?>
+				          <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
+				            <p><?php echo $d->getDescription()?></p>  
+				          </a>			          	
+			          	<div class="linha-hr"></div>
+								<?php endif;?>
+								          	
 			       </div>
 				<?php endforeach;?>
 			<?php endif;?>  
-			<a class="veja" href="#">+ veja todas as notícias</a>
 		 <!--/ bloco notícias de texto -->
 
 	   <!-- bloco destaque esquerda 1 -->
 	  	<div class="destaques-medium">
-				<?php if(isset($displays["destaque-esquerda-2"])): ?>
-					<?php foreach ($displays["destaque-esquerda-2"] as $k => $d): ?>
+				<?php if(isset($displays["destaque-esquerda-1"])): ?>
+					<?php foreach ($displays["destaque-esquerda-1"] as $k => $d): ?>
 	 							<h2><i class="ico-setas ico-seta-direita"></i><?php echo $d->getTitle() ?></h2>
 				        
 				        <?php if($d->Asset->AssetType->id == 6): /*Verifica se o Asset é de Vídeo*/?>
@@ -254,20 +262,17 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
        </div> 
        <!--banner-->
        
-			<!-- bloco destaque direita -->			
 				<?php if(isset($displays["destaque-direita"])): ?>
 					<?php foreach ($displays["destaque-direita"] as $k => $d): ?>
 						<div class="destaque-programas s-margem">
 								<h2><i class="ico-setas ico-seta-direita"></i><?php echo $d->getTitle() ?></h2>
 								<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-				            <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>" width="200">
+				            <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>" width="206">
 				            <p><?php echo $d->getDescription() ?></p>
 				        </a>
 				     </div>
 					<?php endforeach;?>
 				<?php endif;?>  
-			<!--/ bloco destaque direita -->	
-	       
        
        <!--transito-->
        <div class="iframe-transito" style="margin-bottom: 10px;">
@@ -275,8 +280,8 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
        </div>
        <!--/transito-->
        
-       <!--estradas-->
-     <div class="destaque-programas s-margem">
+      <!--estradas-->
+     	<div class="destaque-programas s-margem">
         <h2 style="margin-bottom: 5px;">Estradas</h2>
           <form id="form-estradas-sp" method="post">
             <select id="select-estradas-sp" style="width: 200px;float: left; margin-bottom: 5px;"> 
