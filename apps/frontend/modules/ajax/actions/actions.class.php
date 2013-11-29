@@ -1322,14 +1322,14 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               echo $return;
             endif;   
             
-            $count++;
+            
           }
               
             endif;  
           endif;  
           
           
-        
+        $count++;
         endwhile;
         
     }
