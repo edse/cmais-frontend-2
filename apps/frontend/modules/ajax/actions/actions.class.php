@@ -1219,10 +1219,10 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           ->offset($count)
           ->execute();
          
-          if($section == "videos" && isset($assets[0]->AssetVideo->getYoutubeId()) && $assets[0]->AssetVideo->getYoutubeId()==""):
+          if($section == "videos" && $assets[0]->AssetVideo->getYoutubeId()==""):
             $count--; 
-            if($count == 0):
-              $count = 0;
+            if($count == ($page * $items)-$items):
+              $count = ($page * $items)-$items;
             endif;
           else:
               
