@@ -1204,6 +1204,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       if($page >= 1)
         $start = ($page * $items)-$items;
       
+      while($count < $pages * $items):
+      
       $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa')
@@ -1212,10 +1214,11 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->andWhere('a.is_active = ?', 1)
         ->andWhere('a.site_id = ?',$siteId)
         ->orderBy('a.id desc')
-        ->limit($items)
-        ->offset($start)
+        ->limit(1)
+        ->offset($count)
         ->execute();
-        
+       
+       endwhile; 
         
         foreach($assets as $d){
           
