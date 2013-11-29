@@ -48,7 +48,7 @@
         
         <!--item jogos-->
         <li class="slide02" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/2/img-pattern_banner_2-jogos.jpg') repeat;">
-          <div class="mpc_ls_slide_item" data-x="200" data-y="0" data-delay="500" data-duration="2500" data-easing="easeOutExpo" data-effect="slideBottom" data-fade="off">
+          <div class="mpc_ls_slide_item" data-x="200" data-y="-20" data-delay="500" data-duration="2500" data-easing="easeOutExpo" data-effect="slideBottom" data-fade="off">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/2/img-personagem_banner_2-jogos.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="650" data-y="90" data-delay="2000" data-duration="1500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">
@@ -193,7 +193,7 @@
           $('.mao').css('z-index', '0')
         }, 1000);
       }
-    },500);
+    },100);
     
   //banner principal
   $( window ).load(function() {
