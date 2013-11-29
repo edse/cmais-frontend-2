@@ -21,7 +21,7 @@
 }
 
 body { padding:0 !important; }
-body, input, button, select, textarea {color:#737373 !important;} 
+body, input, button, select, textarea {color:#000000!important;} 
 ul li { list-style:none !important; }
 span,
 i { display:block; }
