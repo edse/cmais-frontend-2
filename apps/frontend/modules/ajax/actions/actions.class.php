@@ -1284,8 +1284,10 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           endif; 
           
           if($section == "videos" && $d->AssetVideo->getYoutubeId()=="" || (isset($sectionP) && $sectionP == "videos" && $d->AssetVideo->getYoutubeId()=="")):
+            $count--;
             if($count<=0):
               $count--;
+              echo "voltei";
             endif;  
           elseif($section == "videos" && $d->AssetVideo->getYoutubeId()!="" || (isset($sectionP) && $sectionP == "videos" && $d->AssetVideo->getYoutubeId()!="")):
             $return =  '<li class="span4 element '. $printPersonagens ." ".' videos">';
