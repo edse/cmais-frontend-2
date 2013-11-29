@@ -13,7 +13,7 @@
     $('#filtrar-tudo').click(function(){
       var personagens = 8;
       var cont = 0
-      if(cont < personagens){
+      if(cont != personagens){
         $('.filtro-personagem li.ativo').each(function(){
           cont++
         });
