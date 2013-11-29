@@ -388,6 +388,8 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .todos-itens li img{border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;width: 200px;height: 200px;}
 .cuidadores .selecione .barra-selecao{ height: 40px;}
 .cuidadores .selecione .barra-selecao h3{color:#FFF; font-size:18px;width:270px; float:left;padding: 0px 10px; text-transform: uppercase; margin:0;}
+.cuidadores .col-direita{float:right;}
+.cuidadores .google-banner{width:287px!important;}
 .cuidadores .col-direita .destaque-small{overflow: hidden;margin-bottom: 20px;height: 300px;display: block;}
 .cuidadores .selecione .btn-group{margin: -1px 0px 0 0;}
 .cuidadores .selecione .btn-group .dropdown-toggle {border-radius: 0;-moz-border-radius: 0;-webkit-border-radius: 0; background:#00c76e; border:none;text-shadow: none;}
