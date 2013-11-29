@@ -11,6 +11,14 @@
     
     //seleciona todos no filtro
     $('#filtrar-tudo').click(function(){
+      var personagens = 8;
+      var cont = 0
+      $('.filtro-personagem li.ativo').each(function(){
+        cont++
+      });
+      console.log(cont);
+      
+      if()
       var filter_selected = "";
       
       $('.filtro-personagem li').addClass('ativo');
