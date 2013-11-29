@@ -1204,6 +1204,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       if($page >= 1){
         $start = ($page * $items)-$items;
         $count = ($page * $items)-$items;
+      }else{
+        $count=0;
       }  
       
       while($count < $items):
