@@ -95,7 +95,7 @@ $(document).ready(function() {
 
   //menu personagens tablet
   $('.icone-cuidadores-abrir').click(function() {
-    $('.filtro-personagem').stop().slideToggle('slow');
+    $('.pais .filtro-personagem').stop().slideToggle('slow');
     $(".icone-cuidadores-abrir").toggleClass("ativo");
   });
   
