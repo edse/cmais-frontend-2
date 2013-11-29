@@ -118,9 +118,9 @@ $(document).ready(function() {
     
   });
   
-  $('.icone-cat-abrir').click(function(){
-    $(this).toggleClass('icone-cat-fechar');
-  });
+  //$('.icone-cat-abrir').click(function(){
+    //$(this).toggleClass('icone-cat-fechar');
+  //});
   
   $('.dropdown-toggle').click(function(){
     $(this).find('span').toggleClass('icone-cat-fechar');
