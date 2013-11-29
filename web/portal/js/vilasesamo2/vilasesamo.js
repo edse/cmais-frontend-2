@@ -118,7 +118,7 @@ $(document).ready(function() {
     
   });
   
-  $('.icone-cat-abrir').click(function(){
+  $('.icone-cat-abrir, .dropdown-toggle').click(function(){
     $(this).toggleClass('icone-cat-fechar');
   });
   //menu personagens tablet
