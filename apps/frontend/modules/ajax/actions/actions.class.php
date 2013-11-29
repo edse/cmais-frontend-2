@@ -1207,121 +1207,130 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         
       while($count < $page * $items): 
       
-      $assets = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, SectionAsset sa')
-        ->where('sa.section_id = ?', $sectionId)
-        ->andWhere('sa.asset_id = a.id')
-        ->andWhere('a.is_active = ?', 1)
-        ->andWhere('a.site_id = ?',$siteId)
-        ->orderBy('a.id desc')
-        ->limit(1)
-        ->offset($count)
-        ->execute();
-       
-        
-        
-        foreach($assets as $d){
-          
-          if($section == "pais-e-educadores"):
+        $assets = Doctrine_Query::create()
+          ->select('a.*')
+          ->from('Asset a, SectionAsset sa')
+          ->where('sa.section_id = ?', $sectionId)
+          ->andWhere('sa.asset_id = a.id')
+          ->andWhere('a.is_active = ?', 1)
+          ->andWhere('a.site_id = ?',$siteId)
+          ->orderBy('a.id desc')
+          ->limit(1)
+          ->offset($count)
+          ->execute();
+         
+          if($section == "videos" && $assets[0]->AssetVideo->getYoutubeId()!=""):
+            $count--;
+            if($count == 0):
+              $count = 0;
+            else:
+              
+              foreach($assets as $d){
             
-            $assetCategorias = array();
-            $categoriasSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'categorias');
-            $assetSections = $d->getSections();
-            foreach($assetSections as $a) {
-              if($a->getParentSectionId() == $categoriasSection->getId()) {
-                $assetCategorias[] = $a->getSlug();
+            if($section == "pais-e-educadores"):
+              
+              $assetCategorias = array();
+              $categoriasSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'categorias');
+              $assetSections = $d->getSections();
+              foreach($assetSections as $a) {
+                if($a->getParentSectionId() == $categoriasSection->getId()) {
+                  $assetCategorias[] = $a->getSlug();
+                }
               }
-            }
-            $printCategorias= " ";
-            if(count($assetCategorias) > 0)
-              $printCategorias .= " " . implode(" ", $assetCategorias);
+              $printCategorias= " ";
+              if(count($assetCategorias) > 0)
+                $printCategorias .= " " . implode(" ", $assetCategorias);
+              
+              $return =  '<li class="span4 element '. $printCategorias .'">';
             
-            $return =  '<li class="span4 element '. $printCategorias .'">';
-          
-          elseif($section == "jogos" || $section == "videos" || $section == "atividades"):  
-            
-            $assetPersonagens = array();
-            $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
-            $assetSections = $d->getSections();
-            foreach($assetSections as $a) {
-              if($a->getParentSectionId() == $personagensSection->getId()) {
-                $assetPersonagens[] = $a->getSlug();
-              }
-            }
-            
-            $printPersonagens= " ";
-            if(count($assetPersonagens) > 0)
-              $printPersonagens .= " " . implode(" ", $assetPersonagens);
-            
-            if($section == "jogos" || $section == "atividades"):
-              $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
-            endif;
-          else:
-            $assetPersonagens = array();
-            $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
-            $assetSections = $d->getSections();
-            foreach($assetSections as $a) {
-              if($a->getParentSectionId() == $personagensSection->getId()) {
-                $assetPersonagens[] = $a->getSlug();
-              }
-              if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
-                $assetSection = $a;
-                break;
+            elseif($section == "jogos" || $section == "videos" || $section == "atividades"):  
+              
+              $assetPersonagens = array();
+              $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
+              $assetSections = $d->getSections();
+              foreach($assetSections as $a) {
+                if($a->getParentSectionId() == $personagensSection->getId()) {
+                  $assetPersonagens[] = $a->getSlug();
+                }
               }
               
-            }
+              $printPersonagens= " ";
+              if(count($assetPersonagens) > 0)
+                $printPersonagens .= " " . implode(" ", $assetPersonagens);
+              
+              if($section == "jogos" || $section == "atividades"):
+                $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
+              endif;
+            else:
+              $assetPersonagens = array();
+              $personagensSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($siteId, 'personagens');
+              $assetSections = $d->getSections();
+              foreach($assetSections as $a) {
+                if($a->getParentSectionId() == $personagensSection->getId()) {
+                  $assetPersonagens[] = $a->getSlug();
+                }
+                if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
+                  $assetSection = $a;
+                  break;
+                }
+                
+              }
+              
+              $sectionP = $assetSection->getSlug();
+              $printPersonagens= " ";
+              if(count($assetPersonagens) > 0)
+                $printPersonagens .= " " . implode(" ", $assetPersonagens);
+              
+              if($sectionP == "jogos" || $sectionP == "atividades"):
+                $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';
+              endif;  
+            endif; 
             
-            $sectionP = $assetSection->getSlug();
-            $printPersonagens= " ";
-            if(count($assetPersonagens) > 0)
-              $printPersonagens .= " " . implode(" ", $assetPersonagens);
+            if($section == "videos" && $d->AssetVideo->getYoutubeId()!="" || (isset($sectionP) && $sectionP == "videos" && $d->AssetVideo->getYoutubeId()!="")):
+              $return =  '<li class="span4 element '. $printPersonagens ." ".' videos">';
+              $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
+              $return .=      '<div class="yt-menu">';
+              $return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$d->AssetVideo->getHeadline().'" />';
+              $return .=      '</div>';
+              $return .=      '<i class="icones-sprite-interna icone-videos-pequeno"></i>';
+              $return .=        '<div>';
+              $return .=          '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
+              $return .=           $d->getTitle();
+              $return .=      ' </div>';
+              $return .=      '</a>';
+              $return .=    '</li>';
+              echo $return;
+            elseif($section=="jogos" || $section == "atividades" || $section == "pais-e-educadores" || $personagensSection->getSlug() == "personagens" && $assetSection->getSlug()!= "videos" ):  
+              $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
+              $related = $d->retriveRelatedAssetsByRelationType("Preview");
+              if($section == "pais-e-educadores"):
+                $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
+                $return .=    '<i class="icones-sprite-interna icone-artigo-br-pequeno"></i>';
+              elseif($section == "jogos" || $section == "atividades"):
+                $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
+                $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
+              else:     
+                $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
+                $return .=    '<i class="icones-sprite-interna icone-'.$assetSection->getSlug().'-pequeno"></i>';
+              endif;
+              $return .=        '<div>';
+              $return .=          '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
+              $return .=            $d->getTitle();
+              $return .=        '</div>';
+              $return .=      '</a>';
+              $return .=    '</li>';
+              echo $return;
+            endif;   
             
-            if($sectionP == "jogos" || $sectionP == "atividades"):
-              $return =  '<li class="span4 element '. $printPersonagens ." ".$assetSection->getSlug() .'">';
+            $count++;
+          }
+              
             endif;  
-          endif; 
-          
-          if($section == "videos" && $d->AssetVideo->getYoutubeId()!="" || (isset($sectionP) && $sectionP == "videos" && $d->AssetVideo->getYoutubeId()!="")):
-            $return =  '<li class="span4 element '. $printPersonagens ." ".' videos">';
-            $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
-            $return .=      '<div class="yt-menu">';
-            $return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$d->AssetVideo->getHeadline().'" />';
-            $return .=      '</div>';
-            $return .=      '<i class="icones-sprite-interna icone-videos-pequeno"></i>';
-            $return .=        '<div>';
-            $return .=          '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
-            $return .=           $d->getTitle();
-            $return .=      ' </div>';
-            $return .=      '</a>';
-            $return .=    '</li>';
-            echo $return;
-          elseif($section=="jogos" || $section == "atividades" || $section == "pais-e-educadores" || $personagensSection->getSlug() == "personagens" && $assetSection->getSlug()!= "videos" ):  
-            $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
-            $related = $d->retriveRelatedAssetsByRelationType("Preview");
-            if($section == "pais-e-educadores"):
-              $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
-              $return .=    '<i class="icones-sprite-interna icone-artigo-br-pequeno"></i>';
-            elseif($section == "jogos" || $section == "atividades"):
-              $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
-              $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
-            else:     
-              $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
-              $return .=    '<i class="icones-sprite-interna icone-'.$assetSection->getSlug().'-pequeno"></i>';
-            endif;
-            $return .=        '<div>';
-            $return .=          '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
-            $return .=            $d->getTitle();
-            $return .=        '</div>';
-            $return .=      '</a>';
-            $return .=    '</li>';
-            echo $return;
-          endif;   
+          endif;  
           
           
-        }
-        $count++;
-       endwhile;
+        
+        endwhile;
         
     }
     die();
