@@ -1,0 +1,154 @@
+body {background-position:0 25px;}
+#guia-topo {padding: 0 0 0px 0px;}
+#menu-programas{height:80px; background:url('http://cmais.com.br/portal/images/capaPrograma/cmais-jornalismo/bg-topo-novo.jpg') repeat-x;}
+.menu-programas{width: 975px;margin: 3px auto;height:78px;}
+.menu-programas h1{text-align:left;max-width:400px; float:left;font-size: 25px;line-height: 67px;float: left; color:#0a5b88;margin-top:11px;}
+.menu-programas ul{padding:9px 0;overflow:hidden;float:right;}
+.menu-programas ul li{float:left; margin-left: 20px; margin-top: 12px;position:relative; height:65px;}
+.menu-programas .btn-programas{display:block; background:url('http://cmais.com.br/portal/images/capaPrograma/cmais-jornalismo/btns-programas.png') no-repeat;}
+
+.menu-programas .btn-cartaoverde{ background-position: 0 -57px; width: 98px; height: 37px; }
+.menu-programas .btn-cartaoverde:hover,
+.menu-programas .btn-cartaoverde.active{ background-position: 0 0;} 
+
+.menu-programas .btn-jornaldacultura{ background-position: -24px -254px;width: 116px;height: 42px; } 
+.menu-programas .btn-jornaldacultura:hover,
+.menu-programas .btn-jornaldacultura.active{ background-position: -24px -164px;}
+ 
+.menu-programas .btn-jcdebate{ background-position: 0 -439px; width: 113px; height: 63px; margin-top: -11px!important; }
+.menu-programas .btn-jcdebate:hover,
+.menu-programas .btn-jcdebate.active{ background-position: 0 -364px; } 
+
+.menu-programas .btn-jcprimeiraedicao{ background-position: -15px -640px;width: 110px;height: 45px;}
+.menu-programas .btn-jcprimeiraedicao:hover,
+.menu-programas .btn-jcprimeiraedicao.active{ background-position: -15px -564px;} 
+
+.menu-programas .btn-materiadecapa{ background-position: 0 -793px; width: 98px; height: 40px; }
+.menu-programas .btn-materiadecapa:hover,
+.menu-programas .btn-materiadecapa.active{ background-position: 0 -742px;}
+ 
+.menu-programas .btn-reportereco{ background-position: 0 -933px; width: 74px; height: 40px; }
+.menu-programas .btn-reportereco:hover,
+.menu-programas .btn-reportereco.active{ background-position: 0 -884px;}
+
+.menu-programas .btn-rodaviva{ background-position: 0 -1078px; width: 90px; height: 46px; }
+.menu-programas .btn-rodaviva:hover,
+.menu-programas .btn-rodaviva.active{ background-position: 0 -1022px;} 
+
+.menu-programas .live{color:#e0ea3e; background: #0a5b88;font-size: 12px;padding: 1px 4px;position: absolute;bottom: 0px; white-space: nowrap; left:0;}
+.menu-programas .live.active{display:block;}
+.menu-programas .live.active:hover{text-decoration:none!important;}
+
+.menu-programas .jcprimeiraedicao .live{left:33px;}
+.menu-programas .jcdebate .live{left:35px;}
+.menu-programas .jornaldacultura .live{left:37px;}
+.menu-programas .cartaoverde .live{left:25px;}
+.menu-programas .rodaviva .live{left:24px;}
+.menu-programas .reportereco .live{left:10px;}
+.menu-programas .materiadecapa .live{left:22px;}
+
+.ico-setas{background:url('http://cmais.com.br/portal/images/capaPrograma/cmais-jornalismo/ico-setas.png') no-repeat;}
+.ico-seta-cima{width:6px; height:6px; background-position:0 0;display: block;position: absolute;top: -6px;left: 25px;}
+.ico-seta-direita{width: 9px;height: 11px;background-position: 0 -18px;display: block;float: left;margin: 4px 8px 0 0;}
+.linha-hr {width: 100%;height: 1px;background: url('http://cmais.com.br/portal/images/capaPrograma/cmais-jornalismo/linha-pontilhada.png') repeat-x; margin-bottom:10px!important;}
+.s-margem{margin:0!important;}
+.aspas{font-family:Arial, Helvetica, sans-serif; font-size:30px!important; color:#cccccc!important;}
+
+#capa-site{width:960px; text-align: left;}
+#capa-site #miolo .coluna-esquerda,
+#capa-site #miolo .coluna-central,
+#capa-site #miolo .coluna-direita{float:left;margin-left:20px; overflow: hidden;}
+#capa-site #miolo .coluna-direita{overflow:visible;}
+
+#capa-site #miolo .coluna-esquerda{width:310px;margin-left:0;}
+#capa-site #miolo .coluna-central{width:420px;min-height: 1153px;}
+#capa-site #miolo .coluna-direita{width:210px;}
+#capa-site #miolo .coluna-esquerda div,
+#capa-site #miolo .coluna-central div,
+#capa-site #miolo .coluna-direita div{margin-bottom:20px;}
+
+#capa-site #miolo .frase h2{font-size:20px; color:#666666;text-align: center;}
+#capa-site #miolo .destaques h2{font-size:20px; max-height: 72px;}
+#capa-site #miolo .destaques-medium h2{font-size:18px; max-height: 46px;}
+#capa-site #miolo .destaques-small h2{font-size:16px; max-height: 40px;}
+#capa-site #miolo .destaque-abas h2{font-size:20px;max-height: 72px;}
+#capa-site #miolo .destaque-programas h2{font-size:16px;max-height: 40px;}
+
+#capa-site #miolo .destaques h2,
+#capa-site #miolo .destaques-medium h2,
+#capa-site #miolo .destaques-small h2,
+#capa-site #miolo .destaque-abas h2,
+#capa-site #miolo .destaque-programas h2{color:#0a5b88!important;overflow: hidden;}
+
+#capa-site #miolo .frase p{font-size:12px;max-height: 36px;overflow:hidden;}
+#capa-site #miolo .destaques p{ max-height: 60px; margin-bottom: 20px;}
+#capa-site #miolo .destaques-medium p{ max-height: 60px; line-height: 20px; overflow: hidden;}
+#capa-site #miolo .destaques-small p{ max-height: 60px;}
+#capa-site #miolo .destaque-abas p{ max-height: 60px;}
+#capa-site #miolo .destaque-programas p{ max-height: 60px;}
+
+#capa-site #miolo .destaques p,
+#capa-site #miolo .destaques-medium p,
+#capa-site #miolo .destaques-small p,
+#capa-site #miolo .destaque-abas p,
+#capa-site #miolo .destaque-programas p{font-size:14px; overflow: hidden;}
+
+#capa-site #miolo .destaques .veja{color:#0a5b88!important; text-decoration:underline; font-size:12px;}
+
+#capa-site #miolo .destaques a,
+#capa-site #miolo .destaques-medium a,
+#capa-site #miolo .destaques-small a{ overflow: hidden;}
+
+#menu-destaque-abas{margin-bottom:0!important;}
+#menu-destaque-abas ul{overflow: hidden; clear:both; margin-bottom:0;}
+#menu-destaque-abas ul li{float: left;margin-left: 10px; overflow: hidden}
+#menu-destaque-abas ul li a{background: #fff;padding: 3px 4px 4px 4px;color: #0a5b88;display: block;font-size: 12px;border-top:2px #FFF solid; border-left:1px #fff solid; border-right: 1px solid #FFF;border-bottom:1px #fff solid;}
+#menu-destaque-abas ul li a.active,
+#menu-destaque-abas ul li a:hover{border-top-color:#0a5b88; border-left-color:#cccccc;border-right-color:#cccccc;}
+#menu-destaque-abas ul li a.active{border-bottom-color:#fff;border-bottom:2px solid #fff; text-underline:none;} 
+   
+.destaque-abas{display: block;border: 1px #cccccc solid;margin-top: -1px;background: #fff;padding: 10px 3px;}
+.destaque-programas{float: left;width: 205px;margin-left:10px;float:left;}
+.form-pergunta .text-input{margin-bottom:5px!important; font-size:12px;}
+.form-pergunta input,.form-pergunta textarea{font-size: 12px;line-height: 20px;border: 1px solid #ccc;width: 181px;padding: 1px 2px 1px 7px;}
+.form-pergunta textarea{height:115px;}
+.form-pergunta input#enviar{width:193px; background-color:#0a5b88;border:none; color:#fff; text-transform:uppercase;}
+.form-pergunta label.error{font-size: 9px;font-weight: bold;color: red;text-transform: uppercase;}
+.form-pergunta .programa label.error{position:absolute; top: 2px;left: 22px;}
+.msgAcerto{color: blue!important;font-weight: bold!important;text-align: center!important;}
+.msgErro{color: red;font-weight: bold;text-align: center;}
+#form-estradas-sp .dk_toggle{width: 180px!important;padding: 4px!important;}
+#img-estrada-selecionada {margin-top:15px;}
+.iframe-transito,
+.iframe-transito iframe{border: 0;height: 313px;float:left}
+.dk_container {background: #FFF;font-size:12px!important;border-radius:0;height: 25px;margin-bottom: 5px!important;}
+.dk_container:focus {outline: 0;  }
+.dk_container a {cursor: pointer;text-decoration: none;  }
+.dk_toggle {background-image: url('images/dk_arrows.png');background-repeat: no-repeat;background-position: 90% center;border: 1px solid #ccc;color: #333;padding:3px 56px 3px 6px;text-shadow:none;  font-size:12px;}
+.dk_toggle:hover {border-color: #8c8c8c;}
+.dk_focus .dk_toggle {border-color: #40b5e2;  }
+.dk_focus .dk_toggle {box-shadow: 0 0 5px #40b5e2;-moz-box-shadow: 0 0 5px #40b5e2;-webkit-box-shadow: 0 0 5px #40b5e2;  }
+.dk_open {box-shadow: 0 0 5px #40b5e2;-moz-box-shadow: 0 0 5px #40b5e2;-webkit-box-shadow: 0 0 5px #40b5e2;z-index: 10;}
+.dk_open .dk_toggle {background-color: #ececec;border-color: #8c8c8c;color: #ccc;  }
+.dk_options a {background-color: #fff;border-bottom: 1px solid #999;font-weight: normal;padding: 4px 7px;  }
+.dk_options li:last-child a {border-bottom: none;}
+.dk_options a:hover,.dk_option_current a {background-color: #cccccc;color: #000;text-decoration: none;text-shadow: none;  }
+.dk_options_inner {border: 1px solid #8c8c8e;border-bottom-width: 2px;border-bottom-color: #999;color: #333;max-height: 250px;text-shadow: none;border-radius: 0 0 0px 0px;-moz-border-radius: 0 0 0px 0px;-webkit-border-radius: 0 0 0px 0px;}
+
+.dk_options_inner,
+.dk_touch .dk_options {max-height: 250px;max-width: 190px;}
+.dk_container {display: none;float: left;position: relative;}
+.dk_container a {outline: 0;border-radius:0;}
+.dk_toggle {display: -moz-inline-stack;display: inline-block;*display: inline;position: relative; zoom: 1;width:100px\0;}
+.dk_open { position: relative;}
+.dk_open .dk_options {display: block;}
+.dk_open .dk_label {    color: inherit;}
+.dk_options {display: none;margin-top: -1px;position: absolute;right: 0;width: 100%;}
+.dk_options a,.dk_options a:link,
+.dk_options a:visited {display: block; }
+.dk_options_inner { overflow: auto;position: relative;}
+.dk_touch .dk_options {overflow: hidden;}
+.dk_touch .dk_options_inner {  max-height: none; overflow: visible;}
+.dk_fouc select {position: relative;top: -99999em;visibility: hidden;}
+.dk_options_inner a{font-size: 12px;text-shadow: none;color: #999;}
+
