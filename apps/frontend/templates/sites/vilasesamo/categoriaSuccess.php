@@ -170,7 +170,7 @@
         <?php if(isset($_displays['parceiros']) > 0): ?>
           <?php if(count($_displays['parceiros']) > 0): ?>
             <div class="span4">
-              <p>Conheça nossos parceiros:</p>
+              <p style="margin: 20px 0 12px 0;">Conheça nossos parceiros:</p>
               <a href="<?php echo $_displays['parceiros'][0]->retriveUrl() ?>" title="<?php echo $_displays['parceiros'][0]->getTitle() ?>">
                 <img src="<?php echo $_displays['parceiros'][0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $_displays['parceiros'][0]->getTitle() ?>" />
               </a>
