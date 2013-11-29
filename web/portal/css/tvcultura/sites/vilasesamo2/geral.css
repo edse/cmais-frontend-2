@@ -675,7 +675,7 @@ img.altura{width: 1px!important;height: 40px!important;}
 .pais .divisa { margin-bottom:0; }
 .pais .divisa {clear: both;background-color: #feec3c;height: 2px;margin: 0;}
 .pais .content{display: block; padding: 20px 10px; background:#ffe303!important;padding:0;}
-.pais .content .span4{margin-top:0px;}
+.pais .content .span4{margin-top:0px;min-height: 340px;}
 .pais .redes { position:absolute; top:14px; right:0;}
 .pais .redes p { float:left; margin-right:10px; text-transform:uppercase; }
 .pais .content { background:#fee133; margin-left:0; }
