@@ -287,7 +287,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
       <div class="destaque-programas s-margem extra"> 
        <h2>Trânsito</h2>
        <!--transito-->
-       <div class="iframe-transito" style="margin-bottom: 10px;">
+       <div class="iframe-transito">
          <iframe src="http://cmais.com.br/widgets/transito/index.php" frameborder="0"></iframe>
        </div>
        <!--/transito-->
