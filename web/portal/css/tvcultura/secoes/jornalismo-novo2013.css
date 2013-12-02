@@ -122,7 +122,7 @@ body {background-position:0 25px;}
 .form-pergunta .programa label.error{position:absolute; top: 2px;left: 22px;}
 .msgAcerto{color: blue!important;font-weight: bold!important;text-align: center!important;}
 .msgErro{color: red;font-weight: bold;text-align: center;}
-#form-estradas-sp .dk_toggle{width: 180px!important;padding: 4px!important;}
+#form-estradas-sp .dk_toggle{width: 180px!important;padding: 4px!important; background:#FFF;}
 #img-estrada-selecionada {margin-top:15px;}
 .iframe-transito,
 .iframe-transito iframe{border: 0;height: 313px;float:left}
