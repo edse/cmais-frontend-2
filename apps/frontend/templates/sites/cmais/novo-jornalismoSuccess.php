@@ -165,12 +165,15 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 			        
 			        <?php if($k == 2):?>
 				        <!--banner-->
-				         <div class="destaque-programas banner s-margem">
-				           <div class="banner_publicidade_200x200">
-				              espaço
-				           </div>
-				         </div> 
-				         <!--banner-->			        
+				        <div class="destaque-programas banner s-margem">
+				          <!-- cmais-jornalismo-200x200-b -->
+                  <div id='div-gpt-ad-1385985503345-0' style='width:200px; height:200px;'>
+                    <script type='text/javascript'>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1385985503345-0'); });
+                    </script>
+                  </div>
+				        </div> 
+				        <!--banner-->			        
 			        <?php endif;?>
 			        
 			     </div> 
@@ -249,15 +252,14 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
     <div class="coluna-direita">
       
       <!--banner-->
-       <div class="destaque-programas banner">
-         <div class="banner_publicidade_200x200">
+       <div class="destaque-programas banner s-margem">
           <!-- cmais-jornalismo -->
           <div id='div-gpt-ad-1385981907491-0' style='width:200px; height:200px;'>
             <script type='text/javascript'>
             googletag.cmd.push(function() { googletag.display('div-gpt-ad-1385981907491-0'); });
             </script>
           </div>
-        </div>
+          
        </div> 
        <!--banner-->
        
