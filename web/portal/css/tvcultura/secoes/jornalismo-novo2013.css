@@ -88,7 +88,7 @@ body {background-position:0 25px;}
 #capa-site #miolo .destaques-medium p{ max-height: 60px; line-height: 20px; overflow: hidden;}
 #capa-site #miolo .destaques-small p{ max-height: 60px;}
 #capa-site #miolo .destaque-abas p{ max-height: 60px;}
-#capa-site #miolo .destaque-programas p{ max-height: 60px;}
+#capa-site #miolo .destaque-programas p{ max-height: 60px; width:190px}
 
 #capa-site #miolo .destaques p,
 #capa-site #miolo .destaques-medium p,
