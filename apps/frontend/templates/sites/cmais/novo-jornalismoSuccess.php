@@ -367,11 +367,11 @@ $(".link-aba").not($(".link-aba.active")).click(function(){
   var id_aba = $(this).attr("href");
   id_aba = id_aba.replace("#aba-","");
   
+  $(".link-aba").removeClass("active");
+  $(this).addClass("active");
+  
   $(".destaque-abas").hide();
   $("#"+id_aba).fadeIn('fast');
-  
-  $(".link-aba").removeClass("active");
-  $(this).addClass("active"); 
 });
 
 $('#select-estradas-sp').dropkick();
