@@ -275,7 +275,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 					<?php endforeach;?>
 				<?php endif;?>  
        
-       <div class="destaque-programas s-margem"> 
+       <div class="destaque-programas s-margem extra"> 
 	       <!--previsão do tempo-->
 	       <div style="margin-bottom: 10px;">
 	       	<h2>Previsão do Tempo</h2>
@@ -284,7 +284,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 	       <!--previsão do tempo-->
       </div>
       
-      <div class="destaque-programas s-margem"> 
+      <div class="destaque-programas s-margem extra"> 
        <h2>Trânsito</h2>
        <!--transito-->
        <div class="iframe-transito" style="margin-bottom: 10px;">
@@ -294,7 +294,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
       </div>
        
       <!--estradas-->
-     	<div class="destaque-programas s-margem">
+     	<div class="destaque-programas s-margem extra">
         <h2 style="margin-bottom: 5px;">Estradas</h2>
           <form id="form-estradas-sp" method="post">
             <select id="select-estradas-sp" style="width: 200px;float: left; margin-bottom: 5px;"> 

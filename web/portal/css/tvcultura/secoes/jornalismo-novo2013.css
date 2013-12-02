@@ -74,6 +74,8 @@ body {background-position:0 25px;}
 #capa-site #miolo .destaque-abas h2{font-size:20px;max-height: 72px;}
 #capa-site #miolo .destaque-programas h2{font-size:16px;max-height: 40px;}
 
+#capa-site #miolo .destaque-programas.extra h2{font-size:20px!important; color:#666666!important;}
+
 #capa-site #miolo .destaques h2,
 #capa-site #miolo .destaques-medium h2,
 #capa-site #miolo .destaques-small h2,
