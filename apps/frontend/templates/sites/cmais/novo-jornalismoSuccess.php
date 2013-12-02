@@ -167,12 +167,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 				        <!--banner-->
 				         <div class="destaque-programas banner s-margem">
 				           <div class="banner_publicidade_200x200">
-				              <!-- cmais-jornalismo -->
-                      <div id='div-gpt-ad-1385981907491-0' style='width:200px; height:200px;'>
-                        <script type='text/javascript'>
-                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1385981907491-0'); });
-                        </script>
-                      </div>
+				              espaço
 				           </div>
 				         </div> 
 				         <!--banner-->			        
