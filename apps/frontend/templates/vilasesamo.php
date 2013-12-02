@@ -141,7 +141,7 @@
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>
-                <i class="icones-sprite-menu icone-natv-peqno-verde"></i>
+                <i class="icones-sprite-menu icone-natv-peqno-verde"></i> 
                 <a class="btn-na-tv-topo" href="http://cmais.com.br/vilasesamo/na-tv" title="Na TV" target="_self">Na TV</a>
                 <span class="sprite-menu-ball"></span>
               </li>
