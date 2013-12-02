@@ -1203,36 +1203,46 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       
       if($page >= 1)
         $start = ($page * $items)-$items;
-
-				$array_not_in = null;
-				$assets_novo = Doctrine_Query::create()	
-					->select('a.*')
-					->from('Asset a, SectionAsset sa')
-					->where('sa.section_id = ?', $sectionId)
-					->andWhere('sa.asset_id = a.id')
-					->andWhere('a.is_active = ?', 1)
-					->limit(30)
-					->offset($start)
-				  ->execute();
-				
-				foreach ($assets_novo as $key => $a) {
-					if($a->AssetType->id == 6){
-						if($a->AssetVideo->getYoutubeId() == "") $array_not_in[] = $a->getId();	
-					}
-				}
+      
+			/*
+			$array_not_in[] = 1;
+			$assets_novo = Doctrine_Query::create()	
+				->select('a.*')
+				->from('Asset a, SectionAsset sa')
+				->where('sa.section_id = ?', $sectionId)
+				->andWhere('sa.asset_id = a.id')
+				->andWhere('a.is_active = ?', 1)
+			  ->execute();
 			
-	      $assets = Doctrine_Query::create()
-	        ->select('a.*')
-	        ->from('Asset a, SectionAsset sa')
-	        ->where('sa.section_id = ?', $sectionId)
-	        ->andWhere('sa.asset_id = a.id')
-	        ->andWhere('a.is_active = ?', 1)
-				  ->andWhereNotIn('a.id', $array_not_in)
-	        ->andWhere('a.site_id = ?',$siteId)
-	        ->orderBy('a.id desc')
-	        ->limit($items)
-	        ->offset($start)
-	        ->execute();
+			foreach ($assets_novo as $key => $a) {
+				if($a->AssetType->id == 6){
+					if($a->AssetVideo->getYoutubeId() == "") $array_not_in[] = $a->getId();	
+				}
+			}
+			$assets = Doctrine_Query::create()	
+				->select('a.*')
+				->from('Asset a, SectionAsset sa')
+				->where('sa.section_id = ?', $sectionId)
+				->andWhere('sa.asset_id = a.id')
+				->andWhereNotIn('a.id', $array_not_in)
+				->andWhere('a.is_active = ?', 1)
+				->limit($items)
+				->offset($start)
+			  ->execute();
+			*/
+			
+      $assets = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->where('sa.section_id = ?', $sectionId)
+        ->andWhere('sa.asset_id = a.id')
+        ->andWhere('a.is_active = ?', 1)
+        ->andWhere('a.site_id = ?',$siteId)
+        ->orderBy('a.id desc')
+        ->limit($items)
+        ->offset($start)
+        ->execute();
+       
         
         foreach($assets as $d){
           
@@ -1261,14 +1271,9 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               if($a->getParentSectionId() == $personagensSection->getId()) {
                 $assetPersonagens[] = $a->getSlug();
               }
-              if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
-                $assetSection = $a;
-                break;
-              }							
             }
             
-            $printPersonagens = " ";
-						
+            $printPersonagens= " ";
             if(count($assetPersonagens) > 0)
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
             
