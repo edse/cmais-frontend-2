@@ -1203,19 +1203,36 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       
       if($page >= 1)
         $start = ($page * $items)-$items;
-      
-      $assets = Doctrine_Query::create()
-        ->select('a.*')
-        ->from('Asset a, SectionAsset sa')
-        ->where('sa.section_id = ?', $sectionId)
-        ->andWhere('sa.asset_id = a.id')
-        ->andWhere('a.is_active = ?', 1)
-        ->andWhere('a.site_id = ?',$siteId)
-        ->orderBy('a.id desc')
-        ->limit($items)
-        ->offset($start)
-        ->execute();
-        
+
+				$array_not_in = null;
+				$assets_novo = Doctrine_Query::create()	
+					->select('a.*')
+					->from('Asset a, SectionAsset sa')
+					->where('sa.section_id = ?', $sectionId)
+					->andWhere('sa.asset_id = a.id')
+					->andWhere('a.is_active = ?', 1)
+					->limit(30)
+					->offset($start)
+				  ->execute();
+				
+				foreach ($assets_novo as $key => $a) {
+					if($a->AssetType->id == 6){
+						if($a->AssetVideo->getYoutubeId() == "") $array_not_in[] = $a->getId();	
+					}
+				}
+			
+	      $assets = Doctrine_Query::create()
+	        ->select('a.*')
+	        ->from('Asset a, SectionAsset sa')
+	        ->where('sa.section_id = ?', $sectionId)
+	        ->andWhere('sa.asset_id = a.id')
+	        ->andWhere('a.is_active = ?', 1)
+				  ->andWhereNotIn('a.id', $array_not_in)
+	        ->andWhere('a.site_id = ?',$siteId)
+	        ->orderBy('a.id desc')
+	        ->limit($items)
+	        ->offset($start)
+	        ->execute();
         
         foreach($assets as $d){
           
