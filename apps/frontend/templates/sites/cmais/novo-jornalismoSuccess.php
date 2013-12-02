@@ -362,8 +362,8 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 $(".destaque-abas").hide();
 $("#jornal-da-cultura").fadeIn('fast');
 
-$(".link-aba").not($(".link-aba.active")).click(function(){
-//$(".link-aba").click(function(){
+//$(".link-aba").not($(".link-aba.active")).click(function(){
+$(".link-aba").click(function(){
   var id_aba = $(this).attr("href");
   id_aba = id_aba.replace("#aba-","");
   
