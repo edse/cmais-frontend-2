@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 $assetQuemSomos = html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent());
 ?>
 <?php include_partial_from_folder('blocks', 'global/topo-fpa', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>
