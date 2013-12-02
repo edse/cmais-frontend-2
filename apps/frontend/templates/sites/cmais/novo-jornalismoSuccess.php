@@ -167,7 +167,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 				        <!--banner-->
 				        <div class="destaque-programas banner s-margem">
 				          <!-- cmais-jornalismo-200x200-b -->
-                  <div id='div-gpt-ad-1385985503345-0' style='width:200px; height:200px;'>
+                  <div id='div-gpt-ad-1385985503345-0' style='width:200px; height:200px; margin-top: 20px;'>
                     <script type='text/javascript'>
                       googletag.cmd.push(function() { googletag.display('div-gpt-ad-1385985503345-0'); }); 
                     </script>
