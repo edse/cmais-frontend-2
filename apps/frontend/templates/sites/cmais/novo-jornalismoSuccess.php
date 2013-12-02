@@ -275,7 +275,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 					<?php endforeach;?>
 				<?php endif;?>  
        
-       <div class="destaque-programas s-margem extra" style="margin-top:20px;"> 
+       <div class="destaque-programas s-margem extra" style="margin-top:20px!important;"> 
 	       <!--previsão do tempo-->
 	       <div style="margin-bottom: 10px;">
 	       	<h2>Previsão do Tempo</h2>
