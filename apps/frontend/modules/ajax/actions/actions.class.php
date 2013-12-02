@@ -1261,9 +1261,14 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               if($a->getParentSectionId() == $personagensSection->getId()) {
                 $assetPersonagens[] = $a->getSlug();
               }
+              if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
+                $assetSection = $a;
+                break;
+              }							
             }
             
-            $printPersonagens= " ";
+            $printPersonagens = " ";
+						
             if(count($assetPersonagens) > 0)
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
             
@@ -1309,7 +1314,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return .=      '</a>';
             $return .=    '</li>';
             echo $return;
-          elseif($section=="jogos" || $section == "atividades" || $section == "pais-e-educadores" || $personagensSection->getSlug() == "personagens"): //&& $assetSection->getSlug()!= "videos" ):  
+          elseif($section=="jogos" || $section == "atividades" || $section == "pais-e-educadores" || $personagensSection->getSlug() == "personagens" && $assetSection->getSlug()!= "videos" ):  
             $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
             $related = $d->retriveRelatedAssetsByRelationType("Preview");
             if($section == "pais-e-educadores"):
@@ -1320,8 +1325,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
             else:     
               $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
-              //$return .=    '<i class="icones-sprite-interna icone-'.$assetSection->getSlug().'-pequeno"></i>';
-              $return .=    '<i class="icones-sprite-interna icone-pequeno"></i>';
+              $return .=    '<i class="icones-sprite-interna icone-'.$assetSection->getSlug().'-pequeno"></i>';
             endif;
             $return .=        '<div>';
             $return .=          '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
