@@ -39,10 +39,12 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
       <!--/CONFIRA VAGAS-->
       
       <!--CONHEÇA O SIC-->  
-      <a href="http://fpa.com.br/sic/" class="conheca btn btn-success" title="Conheça o SiC">
+      <a href="http://fpa.com.br/sic/" class="conheca btn btn-sic" title="Conheça o SiC">
+        
         <p>Conheça o SiC</p>
         <p>O Serviço de Informações ao Cidadão da Fundação Padre Anchieta</p>
-        <div class="row"></div>
+        <i class="icone-sic"></i>
+        <!--div class="row"></div-->
       </a>
       <!--/CONHEÇA O SIC-->
     </div>

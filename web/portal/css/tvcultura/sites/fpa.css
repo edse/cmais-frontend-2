@@ -110,17 +110,35 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0
 .col-esquerda a:hover{text-decoration:none;}
 .col-esquerda a.acrobat{color:#1863b7 !important; font-size:14px; font-weight: bold;}
 
-.col-direita a.inscricao{padding:  20px;min-width:352px;}
-.col-direita a.conheca {padding:15px 0 0 0;box-shadow: 0px 0px 10px #ccc, 0px 0px 10px #ccc;}
+.col-direita a.inscricao{padding:15px 20px;min-width:352px;}
+.col-direita a.conheca {padding:20px 0 0 85px;box-shadow: 0px 0px 10px #ccc, 0px 0px 10px #ccc;position:relative;}
 .col-direita{text-align:left;}
-.col-direita a.inscricao p{margin:10px 0 0 0; text-align:left; color:#fff !important; font-size: 24px;}
+.col-direita a.inscricao p{margin:0 0 0 0; text-align:left; color:#fff !important; font-size: 24px;}
 .col-direita a.inscricao p:first-child{font-size: 14px; font-weight:bold; margin:0 0 4px 0; color:#fff !important;}
 .col-direita a.inscricao p:last-child{font-size: 14px; margin:4px 0 0 0; color:#fff !important;}
 .col-direita a.inscricao .btn-primary,.col-direita a.inscricao hr {margin:4px 0; text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);border-top-color: #124a89; border-bottom-color: #739ecd;}
-.col-direita a.conheca {margin:20px 0; overflow:hidden; min-width:394px;} 
-.col-direita a.conheca p:first-child{ text-align:left; color:#fff !important; font-size: 24px;padding:0 20px 0 20px; margin:0;}
-.col-direita a.conheca p{text-align:left;font-size: 14px; margin:4px 0 15px 0; color:#fff !important;padding:0 20px;}
+.col-direita a.conheca {margin:20px 0; overflow:hidden; min-width:308px;} 
+.col-direita a.conheca p:first-child{ text-align:left; color:#000!important; font-size: 24px;padding:0 20px 0 10px; margin:0;}
+.col-direita a.conheca p{text-align:left;font-size: 14px; margin:4px 0 20px 0; color:#000 !important;padding:0 10px;}
 .col-direita a.conheca div:last-child{background-color: #ffb027;height: 15px;}
+.col-direita i.icone-sic{width:60px; height:60px; display:block; background:url('http://cmais.com.br/portal/images/capaPrograma/fpa/btn-sic.png') no-repeat 0 0; float:left;position:absolute; top:18%; left: 6%;}
+.btn-sic {
+text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+background-color: #fdd419;
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#fdd419),to(#e6bd02));
+background-image: -webkit-linear-gradient(top,#fdd419,#e6bd02);
+background-image: -o-linear-gradient(top,#fdd419,#e6bd02);
+background-image: linear-gradient(to bottom,#fdd419,#e6bd02);
+background-image: -moz-linear-gradient(top,#fdd419,#e6bd02);
+border-color: #e6bd02 #e6bd02 #e6bd02;
+border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fdd419',endColorstr='#e6bd02',GradientType=0);
+filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+.btn-sic:hover {
+color:#fff;background-color:#e5bc01;*background-color:#e5bc01
+}
+
 /* /QUEMSOMOS */
 
  /* LICITACOES */
