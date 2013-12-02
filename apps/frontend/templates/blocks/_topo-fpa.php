@@ -44,24 +44,15 @@
 
     <!--LISTA DE BOTOES-->
     <ul id="topo-fpa" class="nav-pills font-btn nav">
+      <?php
+      /*
       <?php if($site->getSlug()=="fpa" && $section->getSlug()=="quem-somos"){$ativo="active";}else{$ativo="";} ?>
       <li class="<?php echo $ativo?>">
         <a href="/fpa/quem-somos" class="link margin-0 <?php echo $ativo?>" title="Quem Somos">Quem Somos</a>
         <b class="seta-hover <?php echo $ativo?>"></b>
       </li>
-
-      <?php if(substr($section->getSlug(), 0, 6)=="decada"){$ativo="active";}else{$ativo="";} ?>
-      <li class="dropdown <?php echo $ativo?>" id="acervo">
-        <a class="link <?php echo $ativo?>" data-toggle="dropdown" href="#" title="Acervo">
-          Acervo
-          <b class="caret"></b>
-        </a>
-        <b class="seta-hover <?php echo $ativo?>"></b>
-        <ul class="dropdown-menu ">
-         <li><a href="/cedoc" title="CEDOC">CEDOC</a></li>
-         <li><a href="/fpa/decada-60" title="Linha do Tempo">Linha do Tempo</a></li>
-        </ul>
-      </li>
+      */
+      ?>
       <?php if($site->getSlug()=="central-de-relacionamento"){$ativo="active";}else{$ativo="";} ?>
       <li class="<?php echo $ativo?>">
         <a href="http://www2.tvcultura.com.br/faleconosco/" class="link <?php echo $ativo?>" title="Central de Relacionamento">Central de Relacionamento</a>
@@ -77,7 +68,22 @@
         <a href="/fpa/trabalhe-conosco" class="link <?php echo $ativo;?>" title="Trabalhe Conosco">Trabalhe Conosco</a>
         <b class="seta-hover <?php echo $ativo;?>"></b>
       </li>
-      
+      <li>
+        <a href="http://cmais.com.br/captacao" class="link <?php echo $ativo;?>" title="Captação">Captação</a>
+        <b class="seta-hover <?php echo $ativo;?>"></b>
+      </li>
+      <?php if(substr($section->getSlug(), 0, 6)=="decada"){$ativo="active";}else{$ativo="";} ?>
+      <li class="dropdown <?php echo $ativo?>" id="acervo">
+        <a class="link <?php echo $ativo?>" data-toggle="dropdown" href="#" title="Acervo">
+          Acervo
+          <b class="caret"></b>
+        </a>
+        <b class="seta-hover <?php echo $ativo?>"></b>
+        <ul class="dropdown-menu ">
+         <li><a href="/cedoc" title="CEDOC">CEDOC</a></li>
+         <li><a href="/fpa/decada-60" title="Linha do Tempo">Linha do Tempo</a></li>
+        </ul>
+      </li>
       <li class="dropdown " id="emissoras">
         <a class="margin-0" class="link" data-toggle="dropdown" href="#emissoras" title="Emissoras">
           Emissoras
