@@ -1204,6 +1204,33 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       if($page >= 1)
         $start = ($page * $items)-$items;
       
+			/*
+			$array_not_in[] = 1;
+			$assets_novo = Doctrine_Query::create()	
+				->select('a.*')
+				->from('Asset a, SectionAsset sa')
+				->where('sa.section_id = ?', $sectionId)
+				->andWhere('sa.asset_id = a.id')
+				->andWhere('a.is_active = ?', 1)
+			  ->execute();
+			
+			foreach ($assets_novo as $key => $a) {
+				if($a->AssetType->id == 6){
+					if($a->AssetVideo->getYoutubeId() == "") $array_not_in[] = $a->getId();	
+				}
+			}
+			$assets = Doctrine_Query::create()	
+				->select('a.*')
+				->from('Asset a, SectionAsset sa')
+				->where('sa.section_id = ?', $sectionId)
+				->andWhere('sa.asset_id = a.id')
+				->andWhereNotIn('a.id', $array_not_in)
+				->andWhere('a.is_active = ?', 1)
+				->limit($items)
+				->offset($start)
+			  ->execute();
+			*/
+			
       $assets = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa')
@@ -1215,7 +1242,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->limit($items)
         ->offset($start)
         ->execute();
-        
+       
         
         foreach($assets as $d){
           
