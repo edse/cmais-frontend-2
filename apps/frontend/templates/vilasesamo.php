@@ -137,21 +137,21 @@
             <ul class="nav">
               <li>
                 <i class="icones-sprite-menu icone-cuidadores"></i>
-                <a class="btn-cuidadores-topo" href="http://cmais.com.br/vilasesamo/pais-e-educadores" title="Pais e Educadores" target="_blank">Pais e Educadores</a>
+                <a class="btn-cuidadores-topo" href="http://cmais.com.br/vilasesamo/pais-e-educadores" title="Pais e Educadores" target="_self">Pais e Educadores</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>
                 <i class="icones-sprite-menu icone-natv-peqno-verde"></i>
-                <a class="btn-na-tv-topo" href="http://cmais.com.br/vilasesamo/na-tv" title="Na TV" target="_blank">Na TV</a>
+                <a class="btn-na-tv-topo" href="http://cmais.com.br/vilasesamo/na-tv" title="Na TV" target="_self">Na TV</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>  
                 <i class="icones-sprite-menu icone-acessibilidade-pqno-verde"></i>
-                <a class="btn-acessibilidade-topo" href="http://cmais.com.br/vilasesamo/acessibilidade" title="Acessibilidade" target="_blank">Acessibilidade</a>
+                <a class="btn-acessibilidade-topo" href="http://cmais.com.br/vilasesamo/acessibilidade" title="Acessibilidade" target="_self">Acessibilidade</a>
                 <!--span class="sprite-menu-ball"></span-->
               </li>  
               <!--li>
-                <a href="/vilasesamo2/historia" title="História" target="_blank">História</a>
+                <a href="/vilasesamo2/historia" title="História" target="_self">História</a>
               </li-->            
             </ul> 
             <!--ul.nav-->
@@ -268,13 +268,13 @@
       <section class="relacionados" aria-label="sites relacionados">
         <h3>Sites relacionados</h3>
         <ul>
-          <li><a href="http://tvcultura.cmais.com.br/" target="_blank" class="sprite-logo-cultura2" title="TV Cultura"></a></li>
-          <li><a href="http://tvratimbum.cmais.com.br/" target="_blank" class="sprite-logo-rtb" title="TV Rá Tim Bum"></a></li>
-          <li><a href="http://cmais.com.br/maiscrianca" target="_blank" class="sprite-logo-maiscrianca" title="Mais Criança"></a></li>
-          <li><a href="http://tvcultura.cmais.com.br/cocorico" target="_blank" class="sprite-logo-cocorico"  title="TV Cocoricó"></a></li>
-          <li><a href="http://tvcultura.cmais.com.br/castelo" target="_blank" class="sprite-logo-castelo" title="Castelo Rá Tim Bum"></a></li>
-          <li><a href="http://tvcultura.cmais.com.br/cartaozinho" target="_blank" class="sprite-logo-cartaozinho" title="Cartãozinho"></a></li>
-          <li class="last"><a href="http://tvcultura.cmais.com.br/quintaldacultura" target="_blank" class="sprite-logo-quintal" title="Quintal da Cultura"></a></li>
+          <li><a href="http://tvcultura.cmais.com.br/" target="_self" class="sprite-logo-cultura2" title="TV Cultura"></a></li>
+          <li><a href="http://tvratimbum.cmais.com.br/" target="_self" class="sprite-logo-rtb" title="TV Rá Tim Bum"></a></li>
+          <li><a href="http://cmais.com.br/maiscrianca" target="_self" class="sprite-logo-maiscrianca" title="Mais Criança"></a></li>
+          <li><a href="http://tvcultura.cmais.com.br/cocorico" target="_self" class="sprite-logo-cocorico"  title="TV Cocoricó"></a></li>
+          <li><a href="http://tvcultura.cmais.com.br/castelo" target="_self" class="sprite-logo-castelo" title="Castelo Rá Tim Bum"></a></li>
+          <li><a href="http://tvcultura.cmais.com.br/cartaozinho" target="_self" class="sprite-logo-cartaozinho" title="Cartãozinho"></a></li>
+          <li class="last"><a href="http://tvcultura.cmais.com.br/quintaldacultura" target="_self" class="sprite-logo-quintal" title="Quintal da Cultura"></a></li>
           
         </ul>
       </section>
