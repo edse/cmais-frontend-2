@@ -275,7 +275,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 					<?php endforeach;?>
 				<?php endif;?>  
        
-       <div class="destaque-programas s-margem extra"> 
+       <div class="destaque-programas s-margem extra" style="margin-top:20px;"> 
 	       <!--previsão do tempo-->
 	       <div style="margin-bottom: 10px;">
 	       	<h2>Previsão do Tempo</h2>
@@ -295,7 +295,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
        
       <!--estradas-->
      	<div class="destaque-programas s-margem extra">
-        <h2 style="margin-bottom: 5px;">Estradas</h2>
+        <h2>Estradas</h2>
           <form id="form-estradas-sp" method="post">
             <select id="select-estradas-sp" style="width: 200px;float: left; margin-bottom: 5px;"> 
               <option value="http://www.dersa.sp.gov.br/santos.jpg" selected="selected">Balsa de Santos - Guarujá</option>
