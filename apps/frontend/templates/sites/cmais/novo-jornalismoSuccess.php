@@ -129,7 +129,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 			<div id="menu-destaque-abas">
 				 <ul>
 				    <!-- <li class=" s-margem"><a href="#aba-jornal-da-cultura" class="link-aba active">Jornal da Cultura</a></li> -->
-						<?php if(isset($displays["destaques-aba-jornal-da-cultura"])) ?>	<li class=" s-margem"><a href="#aba-jornal-da-cultura" class="link-aba">Jornal da Cultura</a></li>
+						<?php if(isset($displays["destaques-aba-jornal-da-cultura"])) ?>	<li class=" s-margem"><a href="#aba-jornal-da-cultura" class="link-aba active">Jornal da Cultura</a></li>
 						<?php if(isset($displays["destaques-aba-jc-primeira-edicao"])) ?> <li><a href="#aba-jc-primeira-edicao" class="link-aba">JC 1ª Edição</a></li>
 						<?php if(isset($displays["destaques-aba-jc-debate"])) ?> <li><a href="#aba-jc-debate" class="link-aba">JC Debate</a></li>
 						<?php if(isset($displays["destaques-aba-roda-viva"])) ?> <li><a href="#aba-roda-viva" class="link-aba">Roda Viva</a></li>
