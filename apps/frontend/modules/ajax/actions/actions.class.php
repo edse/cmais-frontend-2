@@ -1309,7 +1309,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             $return .=      '</a>';
             $return .=    '</li>';
             echo $return;
-          elseif($section=="jogos" || $section == "atividades" || $section == "pais-e-educadores" || $personagensSection->getSlug() == "personagens" && $assetSection->getSlug()!= "videos" ):  
+          elseif($section=="jogos" || $section == "atividades" || $section == "pais-e-educadores" || $personagensSection->getSlug() == "personagens"): //&& $assetSection->getSlug()!= "videos" ):  
             $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
             $related = $d->retriveRelatedAssetsByRelationType("Preview");
             if($section == "pais-e-educadores"):
