@@ -129,7 +129,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 			<div id="menu-destaque-abas">
 				 <ul>
 				    <!-- <li class=" s-margem"><a href="#aba-jornal-da-cultura" class="link-aba active">Jornal da Cultura</a></li> -->
-						<?php if(isset($displays["destaques-aba-jornal-da-cultura"])) ?>	<li class=" s-margem"><a href="#aba-jornal-da-cultura" class="link-aba active">Jornal da Cultura</a></li>
+						<?php if(isset($displays["destaques-aba-jornal-da-cultura"])) ?>	<li class=" s-margem"><a href="#aba-jornal-da-cultura-a" class="link-aba active">Jornal da Cultura</a></li>
 						<?php if(isset($displays["destaques-aba-jc-primeira-edicao"])) ?> <li><a href="#aba-jc-primeira-edicao" class="link-aba">JC 1ª Edição</a></li>
 						<?php if(isset($displays["destaques-aba-jc-debate"])) ?> <li><a href="#aba-jc-debate" class="link-aba">JC Debate</a></li>
 						<?php if(isset($displays["destaques-aba-roda-viva"])) ?> <li><a href="#aba-roda-viva" class="link-aba">Roda Viva</a></li>
@@ -137,7 +137,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 			</div>	
 			<!-- menu -->
 			<?php 
-				if(isset($displays["destaques-aba-jornal-da-cultura"]))  include_partial_from_folder('sites/cmais','global/display-abas-jornalismo', array('displays' => $displays["destaques-aba-jornal-da-cultura"], 'id_aba' => "jornal-da-cultura"));
+				if(isset($displays["destaques-aba-jornal-da-cultura"]))  include_partial_from_folder('sites/cmais','global/display-abas-jornalismo', array('displays' => $displays["destaques-aba-jornal-da-cultura"], 'id_aba' => "jornal-da-cultura-a"));
 				if(isset($displays["destaques-aba-jc-primeira-edicao"])) include_partial_from_folder('sites/cmais','global/display-abas-jornalismo', array('displays' => $displays["destaques-aba-jc-primeira-edicao"], 'id_aba' => "jc-primeira-edicao"));
 				if(isset($displays["destaques-aba-jc-debate"])) include_partial_from_folder('sites/cmais','global/display-abas-jornalismo', array('displays' => $displays["destaques-aba-jc-debate"], 'id_aba' => "jc-debate"));
 				if(isset($displays["destaques-aba-roda-viva"])) include_partial_from_folder('sites/cmais','global/display-abas-jornalismo', array('displays' => $displays["destaques-aba-roda-viva"], 'id_aba' => "roda-viva"));
@@ -362,8 +362,8 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 $(".destaque-abas").hide();
 $("#jornal-da-cultura").fadeIn('fast');
 
-//$(".link-aba").not($(".link-aba.active")).click(function(){
-$(".link-aba").click(function(){
+$(".link-aba").not($(".link-aba.active")).click(function(){
+//$(".link-aba").click(function(){
   var id_aba = $(this).attr("href");
   id_aba = id_aba.replace("#aba-","");
   
