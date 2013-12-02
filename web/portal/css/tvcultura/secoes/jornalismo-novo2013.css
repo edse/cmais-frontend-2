@@ -96,7 +96,7 @@ body {background-position:0 25px;}
 #capa-site #miolo .destaque-abas p,
 #capa-site #miolo .destaque-programas p{font-size:14px; overflow: hidden;}
 
-/*#capa-site #miolo .destaque-programas img{width:100%;}*/
+#capa-site #miolo .destaque-programas img{width:100%;}
 
 #capa-site #miolo .destaques .veja{color:#0a5b88!important; text-decoration:underline; font-size:12px;}
 
@@ -123,7 +123,7 @@ body {background-position:0 25px;}
 .msgAcerto{color: blue!important;font-weight: bold!important;text-align: center!important;}
 .msgErro{color: red;font-weight: bold;text-align: center;}
 #form-estradas-sp .dk_toggle{width: 180px!important;padding: 4px!important; background:#FFF;}
-#img-estrada-selecionada {margin-top:15px;}
+/*#img-estrada-selecionada {margin-top:15px;}*/
 .iframe-transito,
 .iframe-transito iframe{border: 0;height: 313px;float:left}
 .dk_container {background: #FFF;font-size:12px!important;border-radius:0;height: 25px;margin-bottom: 5px!important;}
