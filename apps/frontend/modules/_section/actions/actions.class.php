@@ -896,6 +896,8 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->orderBy('a.id desc');
               else if(($this->site->getId() == 1135)&&($this->section->id == 2355))
                 $this->assetsQuery->orderBy('a.title asc');
+              else if(($this->site->getSlug() == "culturabrasil" || $this->site->Program->Channel->getSlug() == "culturabrasil")  && ($this->section->getSlug() == "arquivo"))
+                $this->assetsQuery->orderBy('sa.display_order asc');                
               else
                 $this->assetsQuery->orderBy('a.created_at desc');
             }
