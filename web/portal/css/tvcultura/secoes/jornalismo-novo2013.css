@@ -1,4 +1,4 @@
-body {background-position:0 25px;width: 1024px!important;}
+body {background-position:0 25px;min-width: 1324px!important;}
 #guia-topo {padding: 0 0 0px 0px;}
 #menu-programas{height:80px; background:url('http://cmais.com.br/portal/images/capaPrograma/cmais-jornalismo/bg-topo-novo.jpg') repeat-x;}
 .menu-programas{width: 975px;margin: 3px auto;height:78px;}
