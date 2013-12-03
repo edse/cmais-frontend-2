@@ -117,7 +117,7 @@ body {background-position:0 25px;min-width: 1324px!important;}
 .form-pergunta .text-input{margin-bottom:5px!important; font-size:12px;}
 .form-pergunta input,.form-pergunta textarea{font-size: 12px;line-height: 20px;border: 1px solid #ccc;width: 181px;padding: 1px 2px 1px 7px;}
 .form-pergunta textarea{height:115px;}
-.form-pergunta input#enviar{width:193px; background-color:#0a5b88;border:none; color:#fff; text-transform:uppercase;-webkit-appearance: none;-moz-appearance: none; appearance: none;}
+.form-pergunta input#enviar{width:193px; background-color:#0a5b88;border:none; color:#fff; text-transform:uppercase;-webkit-appearance: none;-moz-appearance: none; appearance: none; border-radius:0px, -moz-border-radius:0px; -webkit-border-radius:0px;}
 .form-pergunta label.error{font-size: 9px;font-weight: bold;color: red;text-transform: uppercase;}
 .form-pergunta .programa label.error{position:absolute; top: 2px;left: 22px;}
 .msgAcerto{color: blue!important;font-weight: bold!important;text-align: center!important;}
