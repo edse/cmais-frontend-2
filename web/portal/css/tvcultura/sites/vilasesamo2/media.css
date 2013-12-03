@@ -19,6 +19,7 @@ and (max-width : 320px) {
 }
 
 /* iPads (portrait and landscape) ----------- */
+/*
 @media only screen 
 and (max-width : 1024px) {
 
@@ -26,9 +27,9 @@ and (max-width : 1024px) {
 #content { position:relative; top:0px!important; margin-top: -50px; }
 
 
-/* Styles */
+/* Styles 
 }
-
+*/
 
 /* iPads (landscape) ----------- */
 @media only screen 
@@ -50,6 +51,7 @@ and (orientation : portrait) {
 and (min-width : 320px) 
 and (max-width : 1023px) 
 {
+ /*
 .topo-cmais .container { display:none; }
 #content { margin-bottom:0; }
 .row-fluid .banner { display:none; }
@@ -57,7 +59,7 @@ and (max-width : 1023px)
 .row-fluid.destaques .span8 { margin-left:1.5%; margin-bottom:1.5%; overflow:hidden; }
 .navbar-inverse .navbar-inner.topo-cmais { display:none !important; }
 .navbar-inverse .navbar-inner.topo-vila { margin-top:0; }
-/*.header-bar { margin-top:51px; }*/
+/*.header-bar { margin-top:51px; }
 .row-fluid .span8 { width:100%; }
 .interna #content { margin-top:141px; margin-bottom:141px; padding:0 2%; }
 .navbar .btn-navbar { display:none; }
@@ -71,7 +73,7 @@ and (max-width : 1023px)
 .destaque-filtro .img-destaque img { width:97.1%; }
 .filtro .span2 p .sprite-seta-down { display: block; }
 .filtro .filtro-personagem li { width:10.5%; height:10.5%;}
-/*#content section { max-width:990px; }*/
+/*#content section { max-width:990px; }
 .topo-vila .nav li { float:left;}  
 .navbar-inverse .navbar-inner.topo-vila .nav-collapse { width: 85%;} 
 .destaque-filtro .span6 { width: 49%; float:left; margin-left:2.3%;}  
@@ -81,10 +83,11 @@ and (max-width : 1023px)
 .todos-itens .uneditable-input[class*="span"], 
 .todos-itens .row-fluid [class*="span"] { width: auto;} 
 .todos-itens #container { margin-left:0 !important;} 
-footer .mapa .col-central { /*width: 24.8%;*/ width:24.3%;} 
+footer .mapa .col-central { /*width: 24.8%; width:24.3%;} 
 footer .relacionados li { height: 100px; }
 
 }
+
 
 @media only screen 
 and (min-width : 320px)
@@ -99,15 +102,15 @@ and (max-width : 720px)
 .navbar .btn-navbar i { float:right; margin-top:10px; }
 .navbar .btn-navbar:hover,
 .navbar .btn-navbar {width:38%; margin-right:4%; }
-.sprite-logo-sesamo { /*background-position: -415px -214px;*/    height: 73px;    width: 162px;  }
+.sprite-logo-sesamo { /*background-position: -415px -214px;*   height: 73px;    width: 162px;  }
 .destaques a i { display:none;}
 .destaques h3 { margin:5px 0 0; min-height:55px;   }
 #content h3 a { font-size: 22px; margin:0; text-align:center; }
 .slider .inner { width:104px; height:104px;  }
 #carrossel-personagem .arrow span { margin-top:50%; }
 .interna .header-bar {margin-top:51px;}
-/*.interna .header-bar h1 { width: 15%; overflow:hidden; }*/
-.interna .header-bar ul { display: block;    margin-right: 0;   /* width: 85%; */float:right; }
+/*.interna .header-bar h1 { width: 15%; overflow:hidden; }
+.interna .header-bar ul { display: block;    margin-right: 0;   /* width: 85%; float:right; }
 .interna .header-bar ul:last-child { margin-left:0;} 
 .header-bar h1 {width:23%; float: left; margin-top:3%;} 
 .header-bar h1 a { float:none;}
@@ -167,8 +170,8 @@ and (orientation : landscape) {
 .slider .inner { width:104px; height:104px;  }
 #carrossel-personagem .arrow span { margin-top:50%; }
 .interna .header-bar { margin-top:51px; }
-/*.interna .header-bar h1 { width: 15%; overflow:hidden; }*/
-.interna .header-bar ul { display: block;    margin-right: 0;   /* width: 85%; */float:right; }
+/*.interna .header-bar h1 { width: 15%; overflow:hidden; }
+.interna .header-bar ul { display: block;    margin-right: 0;   /* width: 85%; float:right; }
 .interna .header-bar ul:last-child { margin-left:0;} 
 .header-bar h1 {width:23%; float: left; margin-top:1%;} 
 .header-bar h1 a { float:none;}
@@ -182,7 +185,7 @@ footer .relacionados ul { margin-left:0; }
 #carrossel-personagem .slider li { width:230px; height:230px; }
 
 }
-
+*/
 
 /* Desktops and laptops ----------- */
 @media only screen 
