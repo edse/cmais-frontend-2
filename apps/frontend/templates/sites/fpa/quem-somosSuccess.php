@@ -29,6 +29,15 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     <!--DIREITA-->
     <div class="col-direita span4">
       
+      <!--CENTRAL DE RELACIONAMENTO-->  
+      <a href="/fpa/trabalhe-conosco" class="inscricao btn btn-primary" title="Confira aqui nossas vagas e prazos.">
+        <p>FALE CONOSCO</p>
+        <hr>
+        <p>Central de Relacionamento</p>
+        <p>Entre em contato conosco.</p>
+      </a>
+      <!--/CENTRAL DE RELACIONAMENTO-->
+      
       <!--CONFIRA VAGAS-->  
       <a href="/fpa/trabalhe-conosco" class="inscricao btn btn-primary" title="Confira aqui nossas vagas e prazos.">
         <p>INSCREVA-SE</p>
