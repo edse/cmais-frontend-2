@@ -30,7 +30,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     <div class="col-direita span4">
       
       <!--CENTRAL DE RELACIONAMENTO-->  
-      <a href="/fpa/trabalhe-conosco" class="inscricao btn btn-success" title="Central de Relacionamento.">
+      <a href="/central-de-relacionamento" class="inscricao btn btn-primary btn-success" title="Central de Relacionamento.">
         <p>FALE CONOSCO</p>
         <hr>
         <p>Central de Relacionamento</p>
