@@ -97,7 +97,7 @@ body.campanhas{background-color:#fee133!important;}
 .campanhas .todos-itens a div{color:#434343; text-transform:uppercase;}
 .campanhas.categorias .todos-itens a div{color:#FFFFFF;}
 .campanhas.categorias .todos-itens li.artigo-br {background: #00aa52!important;border-top: 7px solid #00c76e!important;border-bottom: 7px solid #00c76e!important;}
-.campanhas.categorias .todos-itens li.artigo-br a {border-bottom: 2px solid #008d36!important;}
+.campanhas.categorias .todos-itens li.artigo-br a {border-bottom: 2px solid #008d36!important;border-top:none!important}
 .campanhas.categorias .todos-itens li.artigo-br img {border-bottom: 2px solid #008d36!important;border-top: 2px solid #008d36!important;}
 .campanhas .mais{color:#f1802c;}
 .campanhas .btn-group{width: 300px;float: right;margin-top: 12px; position: absolute;right: 20px;}
