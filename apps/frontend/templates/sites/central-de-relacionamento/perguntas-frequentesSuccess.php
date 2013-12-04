@@ -11,7 +11,7 @@
       <h1>PERGUNTAS FREQUENTES</h1>
       
       <?php if(isset($displays["texto-sobre-perguntas-frequentes"])):?>
-      <p> <?php echo html_entity_decode($displays["texto-sobre-perguntas-frequentes"]->Asset->AssetContent->render()) ?> </p>
+      <p> <?php echo html_entity_decode($displays["texto-sobre-perguntas-frequentes"][0]->Asset->AssetContent->render()) ?> </p>
       <?php endif; ?>
       <p>
         <ul>
