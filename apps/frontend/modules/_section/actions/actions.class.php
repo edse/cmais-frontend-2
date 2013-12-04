@@ -1250,7 +1250,14 @@ class _sectionActions extends sfActions
       $this->mainSite = Doctrine::getTable('Site')->findOneBySlug('cmais');
       
       // blocks
-      $bs = $this->section->Blocks;
+      //$bs = $this->section->Blocks;
+      //$bs = Doctrine::getTable('Block')->findBySectionId($this->section->getId());
+      $bs = Doctrine_Query::create()
+        ->select('b.*')
+        ->from('Block b')
+        ->where('b.section_id = ?', $this->section->getId())
+        ->orderBy('b.display_order')
+        ->execute();
       $displays = array();
       if(count($bs) > 0){
         foreach($bs as $b){
