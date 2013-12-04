@@ -82,7 +82,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 				        	<iframe width="310" height="233" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
 				        <?php  elseif($d->Asset->AssetType->id == 1): /*Verifica se o Asset é de Conteudo*/?>
 									<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-				        		<img src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>">
+				        		<img src="<?php echo $d->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>">
 				            <p><?php echo $d->getDescription() ?></p>
 			        		</a>				        	
 				        <?php endif;?>	 							
@@ -102,7 +102,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 				        	<iframe width="310" height="233" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
 				        <?php  elseif($d->Asset->AssetType->id == 1): /*Verifica se o Asset é de Conteúdo*/?>
 									<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-				        		<img src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>">
+				        		<img src="<?php echo $d->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>">
 				            <p><?php echo $d->getDescription() ?></p>
 			        		</a>				        	
 				        <?php endif;?>	 							

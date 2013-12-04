@@ -10,25 +10,21 @@
       <a id="perguntas"></a>
       <h1>PERGUNTAS FREQUENTES</h1>
       
-      <p> 
-        A Central de Relacionamento é uma área
-        de atendimento exclusiva para telespectadores
-        e ouvintes de nossas emissoras. Queremos  conhecer
-        melhor e estreitar nossos laços com o público de nossas
-        emissoras, por isso seu contato e a sua opinião são muito
-        importantes para a Fundação Padre Anchieta.<br/>
-        Antes de enviar sua mensagem, verifique se sua pergunta
-        ou informação não está contemplada nos itens 
+      <?php if(isset($displays["texto-sobre-perguntas-frequentes"])):?>
+      <p> <?php echo html_entity_decode($displays["texto-sobre-perguntas-frequentes"][0]->Asset->AssetContent->render()) ?> </p>
+      <?php endif; ?>
+      <p>
+        <ul>
         <?php if(isset($displays)):?>
           <?php if(count($displays) > 0): ?>
-             <?php foreach($displays as $display): ?>
-               <?php if(count($display) > 0): ?>
-              <a href="javascript:;" id="#<?php echo $display[0]->Block->getSlug() ?>"><?php echo $display[0]->Block->getDescription() ?>,</a>
+             <?php foreach($displays as $key => $display): ?>
+               <?php if(count($display) > 0 && $key != "texto-sobre-perguntas-frequentes"): ?>
+              <li><a href="javascript:;" id="#<?php echo $display[0]->Block->getSlug() ?>"><?php echo $display[0]->Block->getDescription() ?></a></li>
                <?php endif; ?>
             <?php endforeach; ?>  
           <?php endif; ?>
-        <?php endif; ?>        
-        Perguntas Frequentes.
+        <?php endif; ?>
+        </ul>        
       </p>
     </div>
     <!--/coluna esquerda-->
@@ -38,8 +34,8 @@
      <?php if(count($displays) > 0): ?>
        <!-- COLUNA SUB DIR 1 -->
        <?php $i = 1; ?>
-       <?php foreach($displays as $display): ?>
-         <?php if(count($display) > 0): ?>
+       <?php foreach($displays as $key => $display): ?>
+         <?php if(count($display) > 0 && $key != "texto-sobre-perguntas-frequentes"): ?>
            <!--ancora-->
            <a id="<?php echo $display[0]->Block->getSlug() ?>"></a>
            <!--/ancora-->
