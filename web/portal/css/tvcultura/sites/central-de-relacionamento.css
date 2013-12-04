@@ -1,5 +1,5 @@
 /* GERAL */
- 
+strong{font-weight:bold;} 
 .atencao{font-weight:bold; color:red;}
 .container.principal{min-height: 50px;}
 .container.content .col-equerda h1{text-transform: uppercase;}
