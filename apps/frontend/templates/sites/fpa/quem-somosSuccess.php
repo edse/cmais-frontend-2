@@ -30,7 +30,7 @@ body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important
     <div class="col-direita span4">
       
       <!--CENTRAL DE RELACIONAMENTO-->  
-      <a href="/central-de-relacionamento" class="inscricao btn btn-primary btn-success" title="Central de Relacionamento." style="margin-bottom:20px;">
+      <a href="http://www2.tvcultura.com.br/faleconosco/" class="inscricao btn btn-primary btn-success" title="Central de Relacionamento." style="margin-bottom:20px;">
         <p>FALE CONOSCO</p>
         <hr>
         <p>Central de Relacionamento</p>
