@@ -128,6 +128,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
             <div id="accordion">
             <?php if(isset($schedules)): ?>
                 <?php foreach($schedules as $d): ?>
+                <?php count($d); ?>  
                 <h3><a href=""><span class="horario"><?php echo format_datetime($d->getDateStart(), "HH:mm") ?> - </span><?php echo $d->Program->getTitle() ?></a></h3>
                 <div class="accordionConteudo">
                   <a href="<?php echo $site->retriveUrl()?>"><img src="<?php echo $d->retriveLiveImage() ?>" alt="<?php echo $d->retriveTitle() ?>" /></a>
