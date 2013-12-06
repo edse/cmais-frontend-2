@@ -1199,7 +1199,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       
       
       $array_not_in[] = 1;
-      $quantidade_itens = 0;
+      
       
       $assets_novo = Doctrine_Query::create() 
         ->select('a.*')
@@ -1251,6 +1251,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->execute();
        * */
         //je 
+        $a = array_map('intval', explode(",",$not_repeat));
+      var_dump($a);      
         foreach($assets as $d):
                     
         
@@ -1364,7 +1366,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             endif;  
            
           endif;  
-          $quantidade_itens++;
+          
         endforeach;
         $outputArray = array_map("intval", explode(",", $not_repeat_base));
         $output = array_slice($outputArray, 0, 10);
@@ -1372,7 +1374,6 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         
         $return2 =  '<script>';
         $return2 .=  '$(".no-repeat").attr("value","'.$not_repeat.'")';
-        $return2 .=  '$(".quantidade-itens").attr("value","'.$quantidade_itens.'")';
         $return2 .= '</script>';
         
         echo $return2;
