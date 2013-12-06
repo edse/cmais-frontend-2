@@ -1282,7 +1282,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             if(count($assetPersonagens) > 0){
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
             };
-            if($sectionP==3194 || $sectionP==2390){
+            //if($sectionP==3194 || $sectionP==2390){
               if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
                 $assetSectionB = $a->getSlug();
                 break;
@@ -1290,7 +1290,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
                 $assetSectionB = "artigo-br";
                 break;
               }
-            }
+            //}
           }
           
           if(count($d->getTags())>0){
