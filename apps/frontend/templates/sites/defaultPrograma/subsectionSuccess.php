@@ -36,7 +36,11 @@ $(function(){
 
   function dateLoading(date) { 
     var year_month = ""+ (date.getFullYear()) +"-"+ (date.getMonth()+1) +"";
-    var year_month_day = ""+ year_month+"-"+ date.getDate()+"";
+    
+    var dia = String(date.getDate());
+    if(dia.length <= 1) dia = "0"+dia; //dias que possuem apenas um caracteres (de 1 a 9) 
+    var year_month_day = ""+ year_month+"-"+ dia+"";    
+    
     var opts = "";
     var i = 0;
     var ret = false;
@@ -91,6 +95,19 @@ $(function(){
     }
     return [ret, ''];
   }
+  
+  
+//SET DATE  
+$(document).ready(function(){
+	<?php if(isset($date)): ?>
+		var newdate = new Date ("<?php echo str_replace("-", ",", $date)?>");
+	<?php else: ?> 
+		var newdate = new Date();
+	<?php endif;?>
+	
+	$("#datepicker").datepicker("setDate", newdate);  
+});  
+  
 </script>
 
 
