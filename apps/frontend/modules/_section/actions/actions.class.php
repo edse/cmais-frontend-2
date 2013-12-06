@@ -1773,17 +1773,18 @@ class _sectionActions extends sfActions
     } 
     
     if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() == "pedagogia-unesp")){
-      $t = explode("-old", $this->section->Site->getSlug());
+      //$t = explode("-old", $this->section->Site->getSlug());
       /*
       if($_REQUEST["debug"]==1){
         echo $this->section->Site->getSlug();
       }
-       * 
-       */
+      */
+      /*
       if((count($t) > 1)&&($_REQUEST["test"]!=1)){
         header("Location: ".$t[0]);
         die();
       }
+      */
     }
     $debug = false;
     if($request->getParameter('debug') != ""){
@@ -2012,11 +2013,13 @@ class _sectionActions extends sfActions
       }
       elseif($this->site->getType() == "Programa" || $this->site->getType() == 3){
         if($this->site->Program->Channel->getSlug()=="univesptv"){
+          /*
           if(in_array($this->site->getSlug(), array("pedagogia-unesp","evs","licenciatura-em-ciencias"))){
             if($debug) print "<br>3.0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/cursoAntigo';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/univesptv/cursoAntigo');
           }
-          elseif(($this->site->getSlug() == "inglescommusica")||($this->site->getSlug() == "complicacoes")){
+          */
+          if(($this->site->getSlug() == "inglescommusica")||($this->site->getSlug() == "complicacoes")){
             if($debug) print "<br>3.01>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
           }
