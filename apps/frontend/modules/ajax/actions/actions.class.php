@@ -1283,7 +1283,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $printPersonagens .= " " . implode(" ", $assetPersonagens);
             };
             //if($sectionP==3194 || $sectionP==2390){
-              if(in_array($a->getSlug(),array("videos","jogos","atividades"))) {
+              if($a->getSlug()=="videos"||$a->getSlug()=="jogos"||$a->getSlug()=="atividades") {
                 $assetSectionB = $a->getSlug();
                 break;
               }else{
