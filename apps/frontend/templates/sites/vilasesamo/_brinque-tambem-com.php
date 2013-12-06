@@ -192,6 +192,9 @@
                             $sections = $d->getSections();
                             foreach($sections as $s) {
                               if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
+                                $assetSection = $s->getSlug();
+                                break;
+                              }else{
                                 $assetSection = "artigo-br";
                                 break;
                               }
