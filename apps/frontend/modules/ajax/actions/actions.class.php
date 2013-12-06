@@ -1360,11 +1360,11 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $return .=    '</li>';
                        
               echo $return;
-              $quantidade_itens++;
+              
             endif;  
            
           endif;  
-          
+          $quantidade_itens++;
         endforeach;
         $outputArray = array_map("intval", explode(",", $not_repeat_base));
         $output = array_slice($outputArray, 0, 10);
