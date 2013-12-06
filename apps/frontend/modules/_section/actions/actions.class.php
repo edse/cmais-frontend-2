@@ -1482,7 +1482,7 @@ class _sectionActions extends sfActions
 						if($request->getParameter('programa') == "cartaoverde") 	$email_site = "cartao@tvcultura.com.br";
 						if($request->getParameter('programa') == "rodaviva") 			$email_site = "perguntas.rodaviva@gmail.com";
 						if($request->getParameter('programa') == "reportereco") 	$email_site = "";
-						if($request->getParameter('programa') == "materiadecapa") $email_site = "josevalsp@terra.com.br";
+						if($request->getParameter('programa') == "materiadecapa") $email_site = "valclimaster@gmail.com";
 						
 						//if($request->getParameter('programa') == "jcprimeiraedicao") $email_site = "valclimaster@gmail.com";
 						//if($request->getParameter('programa') == "jcdebate") $email_site = "josevalsp@terra.com.br";
