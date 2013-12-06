@@ -202,13 +202,13 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
             <br>
             <select id="programa" name="programa" class="required">
               <option value="">--</option>
-              <option value="Jornal da Cultura Primeira Edição">JC Primeira Edição</option>
-              <option value="Jornal da Cultura Debate">JC Debate</option>
-              <option value="Jornal da Cultura">Jornal da Cultura</option>  
-              <option value="Cartão Verde">Cartão Verde</option>  
-              <option value="Roda Viva">Roda Viva</option>  
-              <option value="Reporter Eco">Reporter Eco</option>  
-              <option value="Matéria de Capa">Matéria de Capa</option>                      
+              <option value="jcprimeiraedicao">JC Primeira Edição</option>
+              <option value="jcdebate">JC Debate</option>
+              <option value="jornaldacultura">Jornal da Cultura</option>  
+              <option value="cartaoverde">Cartão Verde</option>  
+              <option value="rodaviva">Roda Viva</option>  
+              <option value="reportereco">Reporter Eco</option>  
+              <option value="materiadecapa">Matéria de Capa</option>                      
             </select>
           </div>
           <!--/Programa--> 

@@ -48,7 +48,7 @@
 			</li>
 			<?php endforeach; ?>
 		</ul>
-		<a class="pos02" href="http://cmais.com.br/transito" name="modal" title="Lentidão dos Corredores">Lentidão dos Corredores</a>
+		<a class="pos02" href="http://cmais.com.br/transito" name="modal" title="Lentidão dos Corredores" target="_blank">Lentidão dos Corredores</a>
 	</div>
 </body>
 </html>
