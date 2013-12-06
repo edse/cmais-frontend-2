@@ -66,7 +66,9 @@
     if(isset($categories)) {
       if(count($categories) > 0) {
         foreach($categories as $c) {
-          $categoryId[] = $c->getId();
+          if($c->getSlug() != "pais-e-educadores"){
+            $categoryId[] = $c->getId();
+          }
         }
         $see_also_by_categories = Doctrine_Query::create()
           ->select('a.*')
