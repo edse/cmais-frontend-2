@@ -50,7 +50,7 @@
             $('#page_nav').fadeOut('fast');
           }
         }else{
-          $('#page_nav').fadeOut('slow').slideUp("fast");
+          $('#page_nav').fadeOut('fast');
         }
       }
     });
