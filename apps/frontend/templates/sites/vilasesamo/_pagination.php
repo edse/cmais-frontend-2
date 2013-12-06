@@ -1,5 +1,5 @@
-
-<?php if(intval($pager2) <= intval(count($pager)/9)):?>
+<?php $pageQuant = intval(count($pager)/9); ?>
+<?php if(intval($pager2) <= $pageQuant):?>
 <nav id="page_nav">
   <div class="container-ajax-loader">
     <img id="ajax-loader" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/ajax-loader.gif" alt="" style="display:none;">
@@ -26,7 +26,7 @@
 <script>
   contentPage = 1;
   var no_repeat = "";
-  quantPage = <?php echo intval($pager2) ?> + 1;
+  quantPage = <?php echo $pageQuant ?>  + 1;
   $('.mais').click(function(){
     contentPage++;
     no_repeat = $('.no-repeat').attr("value");
@@ -38,16 +38,12 @@
       url: "<?php //echo url_for("@homepage") ?>/ajax/vilasesamogetcontents",
       data: "page="+contentPage+"&items=9&site=<?php echo $site->getSlug(); ?>&siteId=<?php echo (int)$site->id ?>&sectionId=<?php echo $section->getId(); ?>&section=<?php echo $section->getSlug(); ?>&sectionP=<?php echo $section->getParentSectionId(); ?>&no-repeat="+no_repeat,
       beforeSend: function(){
-          $('#page-nav a.mais').hide();
-          $('#page-nav #ajax-loader').show();
+          $('#ajax-loader').show();
         },
       success: function(data){
         
-        $('#page-nav #ajax-loader').hide();
+        $('#ajax-loader').hide();
         if (data != "") {
-          
-          //console.log(contentPage);
-          //console.log(quantPage);
           var newEls = $(data).appendTo('#container');
           $("#container").isotope().isotope('appended',newEls);
           if(contentPage >= quantPage){
@@ -55,8 +51,6 @@
           }
         }else{
           $('#page_nav').fadeOut('fast');
-          //$('#page_nav').html('<span class="mais">fim da listagem.</span>')
-          //console.log("fim da listagem");
         }
       }
     });
