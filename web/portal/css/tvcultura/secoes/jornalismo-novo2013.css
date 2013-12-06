@@ -158,7 +158,6 @@ body {background-position:0 25px;min-width: 1324px!important;}
 .dk_fouc select {position: relative;top: -99999em;visibility: hidden;}
 .dk_options_inner a{font-size: 12px;text-shadow: none;color: #999;}
 #previsao-do-tempo-home-jornalismo{background: url('http://cmais.com.br/portal/images/capaPrograma/cmais-jornalismo/sky.jpg') repeat-x;}
-#previsao-do-tempo-home-jornalismo #master-sky {width: 200px!important;}
 /* LISTA ASSETS */
 #capa-site #miolo #esquerda h2{color: #0A5B84; font-size:18px; margin-bottom:20px;}
 #capa-site #miolo #direita .banner{margin-top:20px;}
