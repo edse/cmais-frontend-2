@@ -103,6 +103,9 @@ strong{font-weight:bold;}
 #img-destaque{max-width: 972px; height: 200px; margin:0 0 20px;overflow: hidden;}
 /* /CONTENT */
 
+/* PERGUNTAS FRAQUENTES */
+.perguntas a{font-weight:bold; text-decoration: underline; color:#4cb957;}
+/* /PERGUNTAS FRAQUENTES */
 
 @media only screen 
 and (max-width : 940px) {
