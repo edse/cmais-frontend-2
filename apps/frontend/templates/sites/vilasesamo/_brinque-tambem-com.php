@@ -155,6 +155,7 @@
                     <?php if(count($see_also_by_tags) > 0): ?>
                       <?php foreach($see_also_by_tags as $k=>$d): ?>
                         <?php
+                        $assetSection = "";
                           $sections = $d->getSections();
                           foreach($sections as $s) {
                             if(in_array($s->getSlug(), array("videos","jogos","atividades"))) {
