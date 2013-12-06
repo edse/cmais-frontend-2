@@ -30,6 +30,7 @@
     <!--/coluna esquerda-->
     <!--coluna direita-->
     <div class="col-direita pull-right span7 perguntas">
+      
     <?php if(isset($displays)):?>
      <?php if(count($displays) > 0): ?>
        <!-- COLUNA SUB DIR 1 -->
