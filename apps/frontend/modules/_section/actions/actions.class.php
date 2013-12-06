@@ -1486,8 +1486,7 @@ class _sectionActions extends sfActions
 						
 						*/
 						//if($request->getParameter('programa') == "jcprimeiraedicao") $email_site = "valclimaster@gmail.com";
-						//if($request->getParameter('programa') == "jcdebate")
-						$email_site = "joseval@terra.com.br";
+						if($request->getParameter('programa') == "jcdebate") $email_site = "josevalsp@terra.com.br";
 						die($email_site);
 						//if($request->getParameter('programa') == "jornaldacultura")  $email_site = "josevalsp@terra.com.br";
 						//if($request->getParameter('programa') == "cartaoverde") 	$email_site = "";
