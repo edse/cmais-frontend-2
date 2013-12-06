@@ -155,18 +155,17 @@
                     <?php if(count($see_also_by_tags) > 0): ?>
                       <?php foreach($see_also_by_tags as $k=>$d): ?>
                         <?php
-                        $assetSection = "";
                           $sections = $d->getSections();
                           foreach($sections as $s) {
                             if(in_array($s->getSlug(), array("videos","jogos","atividades"))) {
-                              $assetSection = "artigo-br";
+                              $assetSection = $s;
                               break;
                             }
                           }
                           $assetID[] = $d->getId();
                           
                         ?>
-                      <li class="<?php echo $assetSection; ?>">
+                      <li class="<?php echo $assetSection->getSlug(); ?>">
                         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                           <?php if($d->AssetType->getSlug() == "video"): ?>
                             <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
@@ -174,7 +173,7 @@
                             <?php $preview = $d->retriveRelatedAssetsByRelationType('Preview') ?>
                             <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>">
                           <?php endif; ?>
-                          <i class="icones-sprite-interna icone-<?php echo $assetSection ?>-pequeno"></i> 
+                          <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i> 
                           <div>
                             <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
                             <?php echo $d->getTitle() ?>
