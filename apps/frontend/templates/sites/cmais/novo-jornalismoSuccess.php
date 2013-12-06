@@ -280,7 +280,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 	       <!--previsão do tempo-->
 	       <div style="margin-bottom: 10px;">
 	       	<h2>Previsão do Tempo</h2>
-	       	  <br><br><br><br>
+	       	  <iframe src="http://www.tempoagora.com.br/selos_iframe/sky_SaoPaulo-SP.html" height="200" width="150" frameborder="0" allowtransparency="yes" scrolling="no"></iframe>
 	       </div>
 	       <!--previsão do tempo-->
       </div>
