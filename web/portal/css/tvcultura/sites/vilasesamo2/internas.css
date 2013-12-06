@@ -512,7 +512,7 @@ body.na-tv{background-color:#feec3c;position:relative;}
 /* /busca */
 
 /* loader */
-.container-ajax-loader{overflow: hidden;margin: 0 auto;display: block;width: 20px;}
+.container-ajax-loader{overflow: hidden;margin: 0 auto;display: block;width: 20px;position: absolute;left: 69%;top: 36%;height: 20px;}
 /* loader */
 
 
