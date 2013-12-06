@@ -36,7 +36,9 @@
     $tags = array();
     if(count($asset->getTags())>0){
       foreach($asset->getTags() as $t) {
-        $tags[] = $t;
+        if($t != "Dicas" || $t != "dicas" || $t != "DICAS"){
+          $tags[] = $t;
+        }
       }
     }
     if(count($tags) > 0) {
