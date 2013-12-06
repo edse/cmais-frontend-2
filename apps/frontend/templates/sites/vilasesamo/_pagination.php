@@ -1,5 +1,5 @@
-
-<?php if(intval($pager2) <= intval(count($pager)/9)):?>
+<?php $pageQuant = intval(count($pager)/9); ?>
+<?php if(intval($pager2) <= $pageQuant):?>
 <nav id="page_nav">
   <div class="container-ajax-loader">
     <img id="ajax-loader" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/ajax-loader.gif" alt="" style="display:none;">
@@ -26,7 +26,7 @@
 <script>
   contentPage = 1;
   var no_repeat = "";
-  quantPage = <?php echo intval($pager2) ?> + 1;
+  quantPage = <?php echo $pageQuant ?>  + 1;
   $('.mais').click(function(){
     contentPage++;
     no_repeat = $('.no-repeat').attr("value");
