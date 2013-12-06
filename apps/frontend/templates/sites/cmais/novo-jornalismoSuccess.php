@@ -208,7 +208,8 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
               <option value="cartaoverde">Cartão Verde</option>  
               <option value="rodaviva">Roda Viva</option>  
               <option value="reportereco">Reporter Eco</option>  
-              <option value="materiadecapa">Matéria de Capa</option>                      
+              <option value="materiadecapa">Matéria de Capa</option>
+              <option value="prontoatendimento">Pronto Atendimento</option>                      
             </select>
           </div>
           <!--/Programa--> 
