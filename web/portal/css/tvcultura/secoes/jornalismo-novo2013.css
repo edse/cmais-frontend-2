@@ -158,3 +158,9 @@ body {background-position:0 25px;min-width: 1324px!important;}
 .dk_fouc select {position: relative;top: -99999em;visibility: hidden;}
 .dk_options_inner a{font-size: 12px;text-shadow: none;color: #999;}
 
+/* LISTA ASSETS */
+#capa-site #miolo #esquerda{color: #0A5B84; font-size:16px; margin-bottom:20px;}
+.box-padrao #datepicker .ui-state-hover,
+.box-padrao #datepicker .ui-widget-content .ui-state-hover,
+.box-padrao #datepicker .ui-widget-content .ui-state-active{color:#333333;}
+/* LISTA ASSETS */
