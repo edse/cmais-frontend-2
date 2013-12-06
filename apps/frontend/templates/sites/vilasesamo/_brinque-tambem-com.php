@@ -194,6 +194,9 @@
                               if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
                                 $assetSection = $s;
                                 break;
+                              }else{
+                                $assetSection = "artigo-br";
+                                break;
                               }
                             }
                             $assetID[] = $d->getId();
