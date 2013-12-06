@@ -1475,22 +1475,13 @@ class _sectionActions extends sfActions
 					
 					//NOVO JORNALISMO
 					if($this->section->id == "3285"){
-						/**/
 						if($request->getParameter('programa') == "jcprimeiraedicao") $email_site = "crjc-primeira@tvcultura.com.br";
 						if($request->getParameter('programa') == "jcdebate") 				 $email_site = "crparticipejcd@tvcultura.com.br";
 						if($request->getParameter('programa') == "jornaldacultura")  $email_site = "crjcultura@tvcultura.com.br";
 						if($request->getParameter('programa') == "cartaoverde") 	$email_site = "cartao@tvcultura.com.br";
 						if($request->getParameter('programa') == "rodaviva") 			$email_site = "perguntas.rodaviva@gmail.com";
 						if($request->getParameter('programa') == "reportereco") 	$email_site = "";
-						if($request->getParameter('programa') == "materiadecapa") $email_site = "valclimaster@gmail.com";
-						
-						//if($request->getParameter('programa') == "jcprimeiraedicao") $email_site = "valclimaster@gmail.com";
-						//if($request->getParameter('programa') == "jcdebate") $email_site = "josevalsp@terra.com.br";
-						//if($request->getParameter('programa') == "jornaldacultura")  $email_site = "josevalsp@terra.com.br";
-						//if($request->getParameter('programa') == "cartaoverde") 	$email_site = "";
-						//if($request->getParameter('programa') == "rodaviva") 			$email_site = "";
-						//if($request->getParameter('programa') == "reportereco") 	$email_site = "";
-						//if($request->getParameter('programa') == "materiadecapa") $email_site = "";						
+						if($request->getParameter('programa') == "materiadecapa") $email_site = "";
 					} 
 					
           $email_user = strip_tags($request->getParameter('email'));
