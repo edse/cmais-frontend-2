@@ -22,7 +22,8 @@
       ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
       ->andWhere('a.id != ?', $asset->getId())
       ->andWhere('a.is_active = ?', 1)
-      ->orderby('sa.display_order')
+      ->orderby('rand()')
+      //->orderby('sa.display_order')
       ->limit(80)
       ->execute();
       
@@ -36,9 +37,7 @@
     $tags = array();
     if(count($asset->getTags())>0){
       foreach($asset->getTags() as $t) {
-        if($t != "Dicas" || $t != "dicas" || $t != "DICAS"){
-          $tags[] = $t;
-        }
+        $tags[] = $t;
       }
     }
     if(count($tags) > 0) {
@@ -56,6 +55,7 @@
         ->andWhereIn('t.name', $tags)
         ->andWhere('a.id != ?', $asset->getId())
         ->andWhere('a.asset_type_id = ?', 1)
+        ->orderby('rand()')
         ->limit(80)
         ->execute();
       if(count($see_also_by_tags) > 0) {
@@ -66,22 +66,24 @@
     if(isset($categories)) {
       if(count($categories) > 0) {
         foreach($categories as $c) {
-          if($c->getSlug() != "pais-e-educadores"){
-            $categoryId[] = $c->getId();
-          }
+          $categoryId[] = $c->getId();
         }
+        //var_dump($categoryId);
         $see_also_by_categories = Doctrine_Query::create()
           ->select('a.*')
           ->from('Asset a, SectionAsset sa')
           ->where('a.site_id = ?', $site->getId())
           ->andWhere('sa.asset_id = a.id')
-          ->andWhereIn('sa.section_id', $categoryId)
+          //->andWhereIn('sa.section_id', $categoryId)
+          ->andWhereIn('sa.section_id',  array(2387,2388,2389))
+          //->andWhereNotIn('sa.section_id', array(3194,3195,3196,3197,3198,3199,3200))
           ->andWhere('a.asset_type_id = ?', 1)
           ->andWhere('a.date_start IS NULL OR a.date_start <= ?', date("Y-m-d H:i:s"))
           ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
           ->andWhere('a.id != ?', $asset->getId())
           ->andWhere('a.is_active = ?', 1)
-          ->orderby('sa.display_order')
+          //->orderby('sa.display_order')
+          ->orderby('rand()')
           ->limit(80)
           ->execute();
         if(count($see_also_by_categories) > 0)
@@ -101,7 +103,8 @@
         ->andWhere('a.date_end IS NULL OR a.date_end >= ?', date("Y-m-d H:i:s"))
         ->andWhere('a.id != ?', $asset->getId())
         ->andWhere('a.is_active = ?', 1)
-        ->orderby('sa.display_order')
+        ->orderby('rand()')
+        //->orderby('sa.display_order')
         ->limit(80)
         ->execute();
       if(count($see_also_by_section) > 0)
