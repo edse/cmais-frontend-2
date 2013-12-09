@@ -17,7 +17,8 @@
     $icone = "icone-carregar-br-grande";
   endif;    
   ?>
-  <input type="hidden" class="no-repeat" value="1">
+  <input type="hidden" class="quantidade-itens" value="">
+  <input type="hidden" class="no-repeat" value="">
   <a href="javascript:vilaSesamoGetContents();" class="mais">Carregar mais<i class="icones-sprite-interna  <?php echo $icone ?>"></i></a>
 </nav>
 <?php endif; ?>
