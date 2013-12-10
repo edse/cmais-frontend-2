@@ -4,7 +4,7 @@
 <style>
   ul{margin:0;padding:0;}
   #mapa-sp-legenda{display:block;width: 194px;height:314px;position:absolute;left:0;top:0;background: #dfdfdf;}
-  #mapa-sp-legenda li{list-style: none;height: 42px;padding-top: 3px;width: 150px;width:190px\0; border-radius: 2px;text-align:left;margin-left: 12px;padding-left: 15px;margin-bottom: 5px;} 
+  #mapa-sp-legenda li{list-style: none;height: 42px;padding-top: 3px;width: 150px;width:190px!important\0; border-radius: 2px;text-align:left;margin-left: 12px;padding-left: 15px;margin-bottom: 5px;} 
   #mapa-sp-legenda .norte {background-color: #fc724b !important; top:114px;}
   #mapa-sp-legenda .leste {background-color: #237876 !important; top: 216px;}
   #mapa-sp-legenda .centro{background-color: #4b9af4 !important; margin-top: 16px}
