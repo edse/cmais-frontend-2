@@ -129,7 +129,7 @@ body {background-position:0 25px;min-width: 1324px!important;}
 .iframe-transito iframe{border: 0;height: 313px;float:left}
 .dk_container {background: #FFF;font-size:12px!important;border-radius:0;height: 25px;margin-bottom: 5px!important;}
 .dk_container:focus {outline: 0;  }
-.dk_container a {cursor: pointer;text-decoration: none;padding:4px;width:181px;  }
+.dk_container a {cursor: pointer;text-decoration: none;padding:4px;width:181px!important;  }
 .dk_toggle {background-image: url('images/dk_arrows.png');background-repeat: no-repeat;background-position: 90% center;border: 1px solid #ccc;color: #333;padding:3px 56px 3px 6px;text-shadow:none;  font-size:12px;}
 .dk_toggle:hover {border-color: #8c8c8c;}
 .dk_focus .dk_toggle {border-color: #40b5e2;  }
