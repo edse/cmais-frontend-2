@@ -24,9 +24,8 @@
   #mapa-sp-legenda li .pos-sul{background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0px -79px;}
   #mapa-sp-legenda a{font-family:Arial, Helvetica, sans-serif;display:block;text-decoration:none;width:165px;position:absolute;background-color:#333;padding-top:3px;padding-bottom:3px;color:#FFF;text-align: center;font-size:13px;font-weight:bold;border-radius: 2px}
   #mapa-sp-legenda a.pos02{bottom:16px;right:10px;z-index:11;text-align:left;padding-left:12px;}
-  #mapa-sp-legenda p{color:#FFF !important;font-size:12px;text-transform: capitalize; font-weight:normal;margin-top: -15px;}
-  #mapa-sp-legenda h4 {font-family:Arial, Helvetica, sans-serif;margin-top: 0px;color: #fff;font-size: 14px;text-transform: uppercase;padding-top: 3px;}
-  #mapa-sp-legenda p {font-family:Arial, Helvetica, sans-serif;color: #FFF !important;font-size: 12px;text-transform: capitalize;font-weight: normal;}
+  #mapa-sp-legenda p{font-family:Arial, Helvetica, sans-serif;color: #FFF !important;font-size: 12px;text-transform: capitalize;font-weight: normal;color:#FFF !important;font-size:12px;text-transform: capitalize; font-weight:normal;margin-top: -15px; margin:3px 0!important\0;}
+  #mapa-sp-legenda h4 {font-family:Arial, Helvetica, sans-serif;margin-top: 0px;color: #fff;font-size: 14px;text-transform: uppercase;padding-top: 3px;margin:3px 0!important\0;}
 </style>
 </head>
 <body>
