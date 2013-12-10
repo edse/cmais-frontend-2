@@ -388,74 +388,75 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.min.js"></script>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 <script>
-$(".destaque-abas").hide();
-$(".destaque-abas:first").fadeIn('fast');
-
-//$(".link-aba").not($(".link-aba.active")).click(function(){
-$(".link-aba").click(function(){
-  var id_aba = $(this).attr("href");
-  id_aba = id_aba.replace("#","");
-  
-  $(".link-aba").removeClass("active");
-  $(this).addClass("active");
-  
+$(document).ready(function(){
   $(".destaque-abas").hide();
-  $("#id"+id_aba).fadeIn('fast');
-});
-
-$('#select-estradas-sp').dropkick();
-$('#programa').dropkick({
-  change: function (value, label) {
-       if(value == ""){
-         $('.dk_container').find('label.error').show();
-       }else{
-         $('.dk_container').find('label.error').hide();
-       }
-    }
-});
-
-$("#select-estradas-sp").change(function(){
-  $('#img-estrada-selecionada').attr("src", $(this).val());
-});
-
-var validator = $('.form-pergunta').validate({
+  $(".destaque-abas:first").fadeIn('fast');
   
-  submitHandler: function(form){
-    $.ajax({
-      type: "POST",
-      dataType: "text",
-      data: $(".form-pergunta").serialize(),
-      beforeSend: function(){
-        $(".msgAcerto").hide();
-        $(".msgErro").hide();
-      },
-      success: function(data){
-        window.location.href="javascript:;";
-        if(data == "1"){
-          $(".msgAcerto").show();
-          $('input, textarea').val('');
-          $()
-        }
-        else {
-          $(".msgErro").show();
-        }
+  //$(".link-aba").not($(".link-aba.active")).click(function(){
+  $(".link-aba").click(function(){
+    var id_aba = $(this).attr("href");
+    id_aba = id_aba.replace("#","");
+    
+    $(".link-aba").removeClass("active");
+    $(this).addClass("active");
+    
+    $(".destaque-abas").hide();
+    $("#id"+id_aba).fadeIn('fast');
+  });
+  
+  $('#select-estradas-sp').dropkick();
+  $('#programa').dropkick({
+    change: function (value, label) {
+         if(value == ""){
+           $('.dk_container').find('label.error').show();
+         }else{
+           $('.dk_container').find('label.error').hide();
+         }
       }
-    });       
-  },
-  rules:{
-    email:{
-      required: true,
-      email: true
+  });
+  
+  $("#select-estradas-sp").change(function(){
+    $('#img-estrada-selecionada').attr("src", $(this).val());
+  });
+  
+  var validator = $('.form-pergunta').validate({
+    
+    submitHandler: function(form){
+      $.ajax({
+        type: "POST",
+        dataType: "text",
+        data: $(".form-pergunta").serialize(),
+        beforeSend: function(){
+          $(".msgAcerto").hide();
+          $(".msgErro").hide();
+        },
+        success: function(data){
+          window.location.href="javascript:;";
+          if(data == "1"){
+            $(".msgAcerto").show();
+            $('input, textarea').val('');
+            $()
+          }
+          else {
+            $(".msgErro").show();
+          }
+        }
+      });       
     },
-  },
-  messages:{
-    programa:'campo obrigatório',
-    nome:'campo obrigatório',
-    email:'campo obrigatório',
-    pergunta:'campo obrigatório'
-  },
-  success: function(label){
-  }
+    rules:{
+      email:{
+        required: true,
+        email: true
+      },
+    },
+    messages:{
+      programa:'campo obrigatório',
+      nome:'campo obrigatório',
+      email:'campo obrigatório',
+      pergunta:'campo obrigatório'
+    },
+    success: function(label){
+    }
+  });
 });
-
 </script>  
