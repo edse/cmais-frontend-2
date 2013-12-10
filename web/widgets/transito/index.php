@@ -13,7 +13,7 @@
   #mapa-sp-legenda .alta{ background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png) no-repeat 0 0;}
   #mapa-sp-legenda .baixa{ background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png) no-repeat 0 0;}
   #mapa-sp-legenda .estavel{background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png) no-repeat 0 0;}
-  #mapa-sp-legenda .setatamanho{width:15px;height: 19px;position:absolute;right:24px;margin-top: -36px;}
+  #mapa-sp-legenda .setatamanho{width:15px;height: 19px;position:absolute;right:24px;right:20px!important\0;margin-top: -36px;margin-top: -28px!important\0;}
   #mapa-sp-legenda .baixa{background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png) no-repeat 0 0}
   #mapa-sp-legenda .media{background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png) no-repeat 0 0}
   #mapa-sp-legenda li .seta{width:15px;height: 19px;position:absolute;left: 9px;margin-top: -26px;}
@@ -22,7 +22,7 @@
   #mapa-sp-legenda li .pos-centro{background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0px -41px;}
   #mapa-sp-legenda li .pos-oeste{background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0px -60px;}
   #mapa-sp-legenda li .pos-sul{background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0px -79px;}
-  #mapa-sp-legenda a{font-family:Arial, Helvetica, sans-serif;display:block;text-decoration:none;width:165px;position:absolute;background-color:#333;padding-top:3px;padding-bottom:3px;color:#FFF;text-align: center;font-size:13px;font-weight:bold;border-radius: 2px}
+  #mapa-sp-legenda a{font-family:Arial, Helvetica, sans-serif;display:block;text-decoration:none;width:165px;position:absolute;background-color:#333;padding-top:3px;padding-bottom:3px;color:#FFF;text-align: center;font-size:13px;font-weight:bold;border-radius: 2px; font-size:12px!important\0;}
   #mapa-sp-legenda a.pos02{bottom:16px;right:10px;z-index:11;text-align:left;padding-left:12px;}
   #mapa-sp-legenda p{font-family:Arial, Helvetica, sans-serif;color: #FFF !important;font-size: 12px;text-transform: capitalize;font-weight: normal;color:#FFF !important;font-size:12px;text-transform: capitalize; font-weight:normal;margin-top: -15px; margin:3px 0!important\0;}
   #mapa-sp-legenda h4 {font-family:Arial, Helvetica, sans-serif;margin-top: 0px;color: #fff;font-size: 14px;text-transform: uppercase;padding-top: 3px;margin:3px 0!important\0;}
