@@ -59,7 +59,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 				          <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
 				            <p class="s-margem"><?php echo $d->getDescription()?></p>  
 				          </a>			          	
-			          	<a class="veja" href="#">+ veja todas as notícias</a>
+			          	<a class="veja" href="http://cmais.com.br/noticias-jornalismo">+ veja todas as notícias</a>
 			          <?php else:?>
 				          <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
 				            <p><?php echo $d->getDescription()?></p>  
