@@ -59,7 +59,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 				          <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
 				            <p class="s-margem"><?php echo $d->getDescription()?></p>  
 				          </a>			          	
-			          	<a class="veja" href="#">+ veja todas as notícias</a>
+			          	<a class="veja" href="http://cmais.com.br/noticias-jornalismo">+ veja todas as notícias</a>
 			          <?php else:?>
 				          <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
 				            <p><?php echo $d->getDescription()?></p>  
@@ -80,6 +80,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 				        
 				        <?php if($d->Asset->AssetType->id == 6): /*Verifica se o Asset é de Vídeo*/?>
 				        	<iframe width="310" height="233" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+				        	<p><?php echo $d->getDescription() ?></p>
 				        <?php  elseif($d->Asset->AssetType->id == 1): /*Verifica se o Asset é de Conteudo*/?>
 									<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
 				        		<img src="<?php echo $d->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>">
@@ -100,6 +101,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 				        
 				        <?php if($d->Asset->AssetType->id == 6): /*Verifica se o Asset é de Vídeo*/?>
 				        	<iframe width="310" height="233" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+				        	<p><?php echo $d->getDescription() ?></p>
 				        <?php  elseif($d->Asset->AssetType->id == 1): /*Verifica se o Asset é de Conteúdo*/?>
 									<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
 				        		<img src="<?php echo $d->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>">
