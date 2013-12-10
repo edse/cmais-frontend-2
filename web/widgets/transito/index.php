@@ -4,7 +4,7 @@
 <style>
   ul{margin:0;padding:0;}
   #mapa-sp-legenda{display:block;width: 194px;height:314px;position:absolute;left:0;top:0;background: #dfdfdf;}
-  #mapa-sp-legenda li{list-style: none;height: 42px;padding-top: 3px;width: 150px; border-radius: 2px;text-align:left;margin-left: 12px;padding-left: 15px;margin-bottom: 5px}
+  #mapa-sp-legenda li{list-style: none;height: 42px;padding-top: 3px;width: 150px;width:190px!important\0; border-radius: 2px;text-align:left;margin-left: 12px;padding-left: 15px;margin-bottom: 5px;} 
   #mapa-sp-legenda .norte {background-color: #fc724b !important; top:114px;}
   #mapa-sp-legenda .leste {background-color: #237876 !important; top: 216px;}
   #mapa-sp-legenda .centro{background-color: #4b9af4 !important; margin-top: 16px}
@@ -13,7 +13,7 @@
   #mapa-sp-legenda .alta{ background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png) no-repeat 0 0;}
   #mapa-sp-legenda .baixa{ background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png) no-repeat 0 0;}
   #mapa-sp-legenda .estavel{background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png) no-repeat 0 0;}
-  #mapa-sp-legenda .setatamanho{width:15px;height: 19px;position:absolute;right:24px;margin-top: -36px;}
+  #mapa-sp-legenda .setatamanho{width:15px;height: 19px;position:absolute;right:24px;right:20px!important\0;margin-top: -36px;margin-top: -28px!important\0;}
   #mapa-sp-legenda .baixa{background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png) no-repeat 0 0}
   #mapa-sp-legenda .media{background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png) no-repeat 0 0}
   #mapa-sp-legenda li .seta{width:15px;height: 19px;position:absolute;left: 9px;margin-top: -26px;}
@@ -22,11 +22,10 @@
   #mapa-sp-legenda li .pos-centro{background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0px -41px;}
   #mapa-sp-legenda li .pos-oeste{background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0px -60px;}
   #mapa-sp-legenda li .pos-sul{background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0px -79px;}
-  #mapa-sp-legenda a{font-family:Arial, Helvetica, sans-serif;display:block;text-decoration:none;width:165px;position:absolute;background-color:#333;padding-top:3px;padding-bottom:3px;color:#FFF;text-align: center;font-size:13px;font-weight:bold;border-radius: 2px}
+  #mapa-sp-legenda a{font-family:Arial, Helvetica, sans-serif;display:block;text-decoration:none;width:165px;position:absolute;background-color:#333;padding-top:3px;padding-bottom:3px;color:#FFF;text-align: center;font-size:13px;font-weight:bold;border-radius: 2px; font-size:12px!important\0;}
   #mapa-sp-legenda a.pos02{bottom:16px;right:10px;z-index:11;text-align:left;padding-left:12px;}
-  #mapa-sp-legenda p{color:#FFF !important;font-size:12px;text-transform: capitalize; font-weight:normal;margin-top: -15px;}
-  #mapa-sp-legenda h4 {font-family:Arial, Helvetica, sans-serif;margin-top: 0px;color: #fff;font-size: 14px;text-transform: uppercase;padding-top: 3px;}
-  #mapa-sp-legenda p {font-family:Arial, Helvetica, sans-serif;color: #FFF !important;font-size: 12px;text-transform: capitalize;font-weight: normal;}
+  #mapa-sp-legenda p{font-family:Arial, Helvetica, sans-serif;color: #FFF !important;font-size: 12px;text-transform: capitalize;font-weight: normal;color:#FFF !important;font-size:12px;text-transform: capitalize; font-weight:normal;margin-top: -15px; margin:3px 0!important\0;}
+  #mapa-sp-legenda h4 {font-family:Arial, Helvetica, sans-serif;margin-top: 0px;color: #fff;font-size: 14px;text-transform: uppercase;padding-top: 3px;margin:3px 0!important\0;}
 </style>
 </head>
 <body>
@@ -44,7 +43,6 @@
 				<h4><?php echo $r->Attributes()->ID; ?></h4>
 				<p>Lentidão: <?php echo $r->lentidao; ?> Km (<?php echo $r->percent; ?>%)</p>
 				<span class="<?php echo strtolower($r->tendencia) ?> setatamanho"></span>  
-				<!--span class="seta pos-<?php echo strtolower($r->Attributes()->ID); ?>"></span-->  
 			</li>
 			<?php endforeach; ?>
 		</ul>
