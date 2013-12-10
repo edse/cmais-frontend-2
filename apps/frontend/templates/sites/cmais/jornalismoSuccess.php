@@ -391,7 +391,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 $(document).ready(function(){
   $(".destaque-abas").hide();
   $(".destaque-abas:first").fadeIn('fast');
-  
+  $("iframe #um").hide();
   //$(".link-aba").not($(".link-aba.active")).click(function(){
   $(".link-aba").click(function(){
     var id_aba = $(this).attr("href");
