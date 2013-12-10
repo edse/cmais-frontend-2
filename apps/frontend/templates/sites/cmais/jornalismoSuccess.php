@@ -387,6 +387,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 <script src="http://cmais.com.br/portal/js/dropkick-master/jquery.dropkick-min.js"></script>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.min.js"></script>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
+<style>#saiba-mais span#um{display:none!important;}</style>
 <script>
 $(document).ready(function(){
   $(".destaque-abas").hide();
