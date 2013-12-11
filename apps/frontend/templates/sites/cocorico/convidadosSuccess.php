@@ -65,15 +65,17 @@ $assets = $pager->getResults();
       <li<?php if($_REQUEST['letra-cocorico'] == $d): ?> class="active"<?php endif; ?>><a href="/cocorico/tvcocorico/convidados/<?php echo strtolower($d) ?>" title="<?php echo $d ?>"><?php echo $d ?></a><?php if($k < 26): ?><span class="divider">|</span><?php endif; ?></li>
       <?php endforeach; ?>
     </ul>
-     * 
-     */
-     ?>
+     
     <span class="divider last">|</span>
     <form class="form-search" action="" name="frmBusca" id="frmBusca" method="get">
       <input type="hidden" name="letra-cocorico" id="letra" value="">
       <input type="text" class="input-medium search-query" name="busca" id="busca">
       <button type="submit" class="btn"><i class="icon-search"></i></button>
     </form>
+     * * 
+     */
+     ?>
+     
   </div>  
  
   
