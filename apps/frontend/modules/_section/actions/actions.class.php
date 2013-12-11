@@ -798,6 +798,7 @@ class _sectionActions extends sfActions
               if($request->getParameter('busca') != '')
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%'");               
               else if($request->getParameter('letra-cocorico') != '')
+                die("1");
                 $this->assetsQuery->andWhere("a.title like '".$request->getParameter('letra-cocorico')."%'");               
               //$this->assetsQuery->orderBy('a.created_at desc');
               $this->assetsQuery->orderBy('sa.display_order asc');
