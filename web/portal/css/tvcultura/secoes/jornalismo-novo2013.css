@@ -75,8 +75,9 @@ body {background-position:0 25px;min-width: 1324px!important;}
 #capa-site #miolo .destaque-abas h2{font-size:20px;max-height: 72px;}
 #capa-site #miolo .destaque-programas h2{font-size:16px;max-height: 40px;}
 
-#capa-site #miolo .destaque-programas.extra{margin-bottom:20px!important;}
+#capa-site #miolo .destaque-programas.extra{margin-bottom:20px!important;position:relative;}
 #capa-site #miolo .destaque-programas.extra h2{font-size:20px!important; color:#666666!important;margin-bottom: 5px;}
+#capa-site #miolo .line{position:absolute; width:100%; height:10px; background:#fff;top: 161px;}
 
 #capa-site #miolo .destaques h2,
 #capa-site #miolo .destaques-medium h2,
