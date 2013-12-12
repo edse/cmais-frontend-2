@@ -52,7 +52,7 @@
           </div>
         </div>
         <!--destaque imagem -->
-        <a href="javascript:;" title="9 anos de TV Ra Tim Bum!" class="btn-destaque-topo" style="margin:0!important">
+        <a href="http://tvratimbum.cmais.com.br/especial/e-aniversario-da-tv-ra-tim-bum" title="9 anos de TV Ra Tim Bum!" class="btn-destaque-topo" target="_self" style="margin:0!important">
           <img class="destaqueTopo" src="http://cmais.com.br/portal/tvratimbum/image/topo-9anos.png" alt="A TV que cresce com você!" />
         </a> 
         <!--/destaque imagem -->
