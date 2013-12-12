@@ -28,6 +28,8 @@
         <h4>Transmiss&atilde;o ao vivo</h4>
       </div>
       <!-- video player -->
+      <?php
+      /*
       <div id="videoPlayer">
         <span class="falta-flash"> Você precisa ter o flash instalado em seu computador<br/> para acessar esse site.<br/> <a href="http://get.adobe.com/br/flashplayer/"  target="blank" title="Download Flash Player">Clique aqui para fazer o download</a>. </span>
       </div>
@@ -46,6 +48,9 @@
         so.write("videoPlayer");
       </script>
       <!-- /videoplayer -->
+       * 
+       */
+       ?>
       <!--share-->
       <div class="share" style="margin-top: 5px;">
         <div class="google">
