@@ -28,6 +28,7 @@
         <h4>Transmiss&atilde;o ao vivo</h4>
       </div>
       <!-- video player -->
+      <iframe width="430" height="315" src="//www.youtube.com/embed/T7C2cbLVYAI?rel=0" frameborder="0" allowfullscreen></iframe>
       <?php
       /*
       <div id="videoPlayer">
