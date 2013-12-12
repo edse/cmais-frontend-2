@@ -52,7 +52,7 @@
           </div>
         </div>
         <!--destaque imagem -->
-        <a href="http://tvratimbum.cmais.com.br/especial/mes-das-criancas-e-na-tv-ra-tim-bum-1" title="Mês das crianças e na TV Rá Tim Bum!" class="btn-destaque-topo">
+        <a href="javascript:;" title="9 anos de TV Ra Tim Bum!" class="btn-destaque-topo" style="margin:0!important">
           <img class="destaqueTopo" src="http://cmais.com.br/portal/tvratimbum/image/topo-9anos.png" alt="A TV que cresce com você!" />
         </a> 
         <!--/destaque imagem -->
