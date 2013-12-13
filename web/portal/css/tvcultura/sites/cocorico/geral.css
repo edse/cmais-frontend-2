@@ -452,5 +452,21 @@ bold,
 
 .conteudo.destaques.especial .span12 { min-height:0; }
 .conteudo.destaques.especial .span12 .interna  form{ display:none; }
-
+/* topo minimizado */
+.navbar-inverse .brand, .navbar-inverse .nav > li > a { background:url(/portal/images/capaPrograma/cocorico/logocmais.png) no-repeat; text-indent:-9999px; width: 120px; height:30px; padding:0; margin:8px 20px 0 0; }
+.navbar .nav > li > a { display: block;    height: 34px;    margin-top: 3px;    width: 34px; background:url(/portal/images/capaPrograma/cocorico/icones-menu.png) no-repeat; text-indent:-9999px; margin:5px 10px 5px 0; padding:0;}
+.navbar .nav > .tvratimbum > a { background-position:0 -34px; }
+.navbar .nav > .multicultura > a { background-position:0 -68px; }
+.navbar .nav > .univesp > a { background-position:0 -102px; }
+.navbar .nav > .culturabrasil > a { background-position:0 -136px; }
+.navbar .nav > .culturafm > a { background-position:0 -170px; }
+.navbar .nav > .itunes > a { background-position:0 -306px; }
+.navbar .nav > .facebook > a { background-position:0 -339px; }
+.navbar .nav > .google > a { background-position:0 -272px; }
+.navbar .nav > .instagram > a { background-position:0 -238px; }
+.navbar .nav > .twitter > a { background-position:0 -372px; }
+.navbar .nav > .youtube > a { background-position:0 -405px; }
+.navbar .nav > .feed > a { background-position:0 -472px; }
+.navbar.navbar-fixed-top .navbar-inner .container { min-width:414px; }
+/* /topo minimizado*/
 
