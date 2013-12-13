@@ -1,5 +1,5 @@
 <?php use_helper('I18N', 'Date')?>
-
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
 <!-- Le styles-->
 <link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -28,23 +28,31 @@
         <h4>Transmiss&atilde;o ao vivo</h4>
       </div>
       <!-- video player -->
-      <div id="videoPlayer">
-        <span class="falta-flash"> Você precisa ter o flash instalado em seu computador<br/> para acessar esse site.<br/> <a href="http://get.adobe.com/br/flashplayer/"  target="blank" title="Download Flash Player">Clique aqui para fazer o download</a>. </span>
-      </div>
-      <script src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js" type="text/javascript"></script>
-      <script>
-        var so = new SWFObject("/portal/js/mediaplayer/player.swf", "cam1", "450", "338", "9");
-        so.addParam("allowscriptaccess", "always");
-        so.addParam("allowfullscreen", "true");
-        so.addParam("wmode", "transparent");
-        so.addVariable('volume', "75");
-        so.addVariable('controlbar', "over");
-        so.addVariable('autostart', "true");
-        so.addVariable('streamer', 'rtmp://200.136.27.12/live');
-        so.addVariable('file', "galeria");
-        so.addVariable('type', 'video');
-        so.write("videoPlayer");
-      </script>
+      <?php if(count($displays["yt-live"])>0):?>
+        <?php if(isset($displays["yt-live"])):?>
+          <iframe width="490 " height="276" src="http://www.youtube.com/embed/<?php echo $displays["yt-live"][0]->getTitle() ?>" frameborder="0" allowfullscreen></iframe>
+        <?php endif; ?>
+      <?php else: ?>
+        <div id="videoPlayer">
+          < span class="falta-flash"> Você precisa ter o flash instalado em seu computador<br/> para acessar esse site.<br/> <a href="http://get.adobe.com/br/flashplayer/"  target="blank" title="Download Flash Player">Clique aqui para fazer o download</a>. </span>
+        </div>
+        
+        <script src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js" type="text/javascript"></script>
+        <script>
+          var so = new SWFObject("/portal/js/mediaplayer/player.swf", "cam1", "450", "338", "9");
+          so.addParam("allowscriptaccess", "always");
+          so.addParam("allowfullscreen", "true");
+          so.addParam("wmode", "transparent");
+          so.addVariable('volume', "75");
+          so.addVariable('controlbar', "over");
+          so.addVariable('autostart', "true");
+          so.addVariable('streamer', 'rtmp://200.136.27.12/live');
+          so.addVariable('file', "galeria");
+          so.addVariable('type', 'video');
+          so.write("videoPlayer");
+        </script>
+      <?php endif; ?>
+       
       <!-- /videoplayer -->
       <!--share-->
       <div class="share" style="margin-top: 5px;">
