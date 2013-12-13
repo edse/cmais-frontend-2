@@ -115,7 +115,7 @@ body {background-position:0 25px;min-width: 1324px!important;}
 #menu-destaque-abas ul li a.active{border-bottom-color:#fff;border-bottom:2px solid #fff; text-underline:none;} 
    
 .destaque-abas{display: block;border: 1px #cccccc solid;margin-top: -1px;background: #fff;padding: 10px 3px;}
-.destaque-programas{float: left;width: 200px;margin-left:10px;float:left;}
+.destaque-programas{float: left;width: 200px;margin-left:10px;min-height:222px;}
 .form-pergunta .text-input{margin-bottom:5px!important; font-size:12px;}
 .form-pergunta input,.form-pergunta textarea{font-size: 12px;line-height: 20px;border: 1px solid #ccc;width: 181px;padding: 1px 2px 1px 7px;}
 .form-pergunta textarea{height:115px;}
