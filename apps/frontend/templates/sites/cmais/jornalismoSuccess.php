@@ -20,15 +20,20 @@ $bs = Doctrine_Query::create()
 
 //ORDENAÇÃO
 $order_display = array();
+$nome_programa = array();
 $i = 0;
 if(count($bs) > 0){
   foreach($bs as $b){
-			if(strpos($b->slug, "-aba-")){
-					$order_display[$i] = $b->slug; 
-					$i++;
-			}
+    if(strpos($b->slug, "-aba-")){
+      if($b->description != "desativado"){
+        $order_display[$i] = $b->slug;
+        $nome = explode("Aba",$b->title);
+        $nome_programa[$i] = $nome[1]; 
+        $i++;
+      }  
+    }
   }
-}	
+} 	
 	
 ?>
 
@@ -151,19 +156,24 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 			<!-- menu -->
 			<div id="menu-destaque-abas">
 				 <ul>
-				 	<?php foreach ($order_display as $k => $d):?>
-				 		<?php if($d == "destaques-aba-jornal-da-cultura") $nome_programa = "Jornal da Cultura"?>
-				 		<?php if($d == "destaques-aba-jc-primeira-edicao") $nome_programa = "JC 1ª Edição"?>
-				 		<?php if($d == "destaques-aba-jc-debate") $nome_programa = "JC Debate"?>
-				 		<?php if($d == "destaques-aba-roda-viva") $nome_programa = "Roda Viva"?>
-				 		
-						<?php	 if($k == 0): ?> 
-										<li class=" s-margem"><a href="#<?php echo $d ?>" class="link-aba active"><?php echo $nome_programa ?></a></li>
-						<?php else: ?>
-				 						<li><a href="#<?php echo $d ?>" class="link-aba"><?php echo $nome_programa ?></a></li>
-				 		<?php endif; ?>
-				 		
-					<?php endforeach; ?>
+				 	<?php //foreach ($order_display as $k => $d): ?>
+          <?php for($i=0; $i<4; $i++): ?>  
+            <?php
+            /*
+            <?php if($d == "destaques-aba-jornal-da-cultura") $nome_programa = "Jornal da Cultura"?>
+            <?php if($d == "destaques-aba-jc-primeira-edicao") $nome_programa = "JC 1ª Edição"?>
+            <?php if($d == "destaques-aba-jc-debate") $nome_programa = "JC Debate"?>
+            <?php if($d == "destaques-aba-roda-viva") $nome_programa = "Roda Viva"?>
+            */
+            ?>
+            
+            <?php  if($i == 0): ?> 
+                    <li class=" s-margem"><a href="#<?php echo $order_display[$i] ?>" class="link-aba active"><?php echo $nome_programa[$i] ?></a></li>
+            <?php else: ?>
+                    <li><a href="#<?php echo $order_display[$i] ?>" class="link-aba"><?php echo $nome_programa[$i] ?></a></li>
+            <?php endif; ?>
+            
+          <?php endfor; ?>
 						
 					</ul>
 			</div>
