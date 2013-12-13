@@ -164,6 +164,7 @@
       </div>
     </div> 
     <!--topo cmais-->
+    <?php include_partial_from_folder('blocks', 'global/footer') ?>
     <?php echo $sf_content ?>
     <?php include_partial_from_folder('blocks', 'global/footer') ?>
     
