@@ -29,7 +29,8 @@
         </div>
       </div>
       <div class="row-fluid">  
-        <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section)) ?>
+        <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+          
       </div>
         <!--topo menu/alert/logo-->
       
@@ -286,28 +287,28 @@
         <script type="text/javascript">
         $(document).ready(function(){
 
-                  $('#busca-radar').submit(function() {
-                if($("#busca-input").val() != "" ){
-                                 $("#resultado_busca").html("");
-                                 $("#resultado_paginacao").html("");
-                                 $('.popover').hide();
-                                 
-                                 
-                                 $.ajax({
-                           type : "GET", 
-                           dataType: "jsonp",
-                           data: $('#busca-radar').serialize(),
-                           url: "http://app.cmais.com.br/index.php/ajax/radar-musica",
-                           success: function(json){
-                                     $("#qtd_result").text(json.qtd_result);
-                                     $("#resultado_busca").html(json.data);
-                                     $("#resultado_paginacao").html(json.paginacao);
-                          }
-                        });
-                 
-                          }
-                return false;
-              });                 
+ 		 $('#busca-radar').submit(function() {
+        	if($("#busca-input").val() != "" ){
+	 			$("#resultado_busca").html("");
+	 			$("#resultado_paginacao").html("");
+	 			$('.popover').hide();
+	 			
+	 			
+		 		$.ajax({
+		           type : "GET", 
+		           dataType: "jsonp",
+		           data: $('#busca-radar').serialize(),
+		           url: "http://app.cmais.com.br/index.php/ajax/radar-musica",
+		           success: function(json){
+		             	$("#qtd_result").text(json.qtd_result);
+		             	$("#resultado_busca").html(json.data);
+		             	$("#resultado_paginacao").html(json.paginacao);
+		          }
+		        });
+	         
+		  	}
+	        return false;
+	      });                 
           
           var validator = $('#form-indicacao').validate({
             rules:{
