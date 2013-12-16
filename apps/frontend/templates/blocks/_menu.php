@@ -22,9 +22,7 @@
 
 <!--GUIA TOPO-->
 <div id="guia-topo" class="menu-tvculturaabrace" align="center">
-  <?php if($site->getSlug() != "tvcultura" && $section->getSlug()!="homepage" || $site->getSlug() == "cmais" && $section->getSlug()=="homepage" || $site->getSlug() == "tvratimbum" && $section->getSlug()=="homepage"):?>
-    <div class="abrace-infinito-direito"></div>
-  <?php endif; ?> 
+ 
   <!--topo Cmais-->
   <div id="topo-cmais">
   
