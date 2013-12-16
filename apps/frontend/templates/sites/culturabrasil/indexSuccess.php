@@ -11,6 +11,8 @@
 <![endif]-->
 <script src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
 
+<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'asset' => $asset, 'section' => $section)) ?>
+
 <?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site)) ?>
 
  
