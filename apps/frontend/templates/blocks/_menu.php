@@ -22,7 +22,7 @@
 
 <!--GUIA TOPO-->
 <div id="guia-topo" class="menu-tvculturaabrace" align="center">
-  <?php if( $site->getSlug() != "tvcultura" && $section->getSlug()!="homepage" || $site->getSlug() == "cmais" && $section->getSlug()=="homepage" || $site->getSlug() == "tvratimbum" && $section->getSlug()=="homepage"):?>
+  <?php if( isset($asset) || $site->getSlug() != "tvcultura" && $section->getSlug()!="homepage" || $site->getSlug() == "cmais" && $section->getSlug()=="homepage" || $site->getSlug() == "tvratimbum" && $section->getSlug()=="homepage"):?>
     <div class="abrace-infinito-direito"></div>
   <?php endif; ?> 
   <!--topo Cmais-->
@@ -82,7 +82,7 @@
     
     <!--menu parte 1-->
     <div id="menu-portal-1" <?php if($site->getSlug() == "tvcultura" && $section->getSlug()=="homepage"){echo "";}else{echo "class='menu-cmais-abrace'";}?>>
-      <?php if($site->getSlug() != "tvcultura" && $section->getSlug()!="homepage" || $site->getSlug() == "cmais" && $section->getSlug()=="homepage" || $site->getSlug() == "tvratimbum" && $section->getSlug()=="homepage"):?>
+      <?php if( isset($asset) ||  $site->getSlug() != "tvcultura" && $section->getSlug()!="homepage" || $site->getSlug() == "cmais" && $section->getSlug()=="homepage" || $site->getSlug() == "tvratimbum" && $section->getSlug()=="homepage"):?>
         <?php $classFloat = "style='float:right'"?>
         <div class="abrace-infinito-esquerda"></div>
         <div class="abrace-esquerda">
