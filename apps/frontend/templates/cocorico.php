@@ -83,7 +83,7 @@
   </head>
   <body>
     <?php //include_partial_from_folder('blocks', 'global/menu_reduzido_abrace') ?>
-    <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
+    
     
     <?php echo $sf_content ?>
     
