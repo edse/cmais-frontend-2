@@ -1,21 +1,32 @@
-
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/redirect_mobile.js"></script>
-<script>
-$('body').addClass('tvculturaabrace');
-</script>
+
 <!-- CAPA SITE -->
 <div id="capa-site">
-  
+  <?php //if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"]))
+  ?> 
+
+  <!-- banner -->
+  <!--
+  <div class="banner">
+    <h2><a href="http://tvcultura.cmais.com.br">Tv Cultura</a></h2>
+    <div class="curtir">
+      <fb:like href="http://facebook.com/tvcultura" layout="button_count" show_faces="false" width="170"></fb:like>
+    </div>
+
+    <div class="box-publicidade pub-grd">
+
+      <script type='text/javascript'>
+        GA_googleFillSlot("home-geral728x90"); 
+      </script>
+    </div>
+
+  </div>
+  -->
+  <!-- /banner -->
   <!-- MIOLO -->
-  <div id="miolo" >
-    <div id="bg-abrace"></div>
-    <!--topo abrace-->
-    <div id="topo-abrace">
-      <img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/logo_abrace.png" alt="abrace a TV Cultura"/> 
-    </div>  
-    <!--/topo abrace-->
+  <div id="miolo" style="margin-top:40px" >
     <?php include_partial_from_folder('blocks','global/shortcuts')
     ?>
 
@@ -144,7 +155,6 @@ $('body').addClass('tvculturaabrace');
     ?>
   </div>
   <!-- /CONTEUDO PAGINA -->
-
 </div>
 <!-- /MIOLO -->
 </div> <!-- /CAPA SITE -->
