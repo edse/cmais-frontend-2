@@ -46,7 +46,7 @@ body.tvculturaabrace{background:url("http://cmais.com.br/portal/images/capaProgr
 .tvculturaabrace #capa-site #bg-abrace{position: absolute;background:#3b7e14 url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/tv_background.jpg") repeat-x;width: 990px;height: 102.5%;z-index: -1;left: 32px;}
 .tvculturaabrace #capa-site #topo-abrace{height:140px;}
 .tvculturaabrace .novoNoAr .enunciado span {background:url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/ponta-destaque-newabrace.png") no-repeat !important;}
-.tvculturaabrace .novoNoAr .enunciado h2 {background-color: #329610;color: #fff;}
+.tvculturaabrace .novoNoAr .enunciado h2 {background-color: #0d6101;color: #fff;}
 .tvculturaabrace .proximasAtracoes .enunciado{background:#329610;}
 .tvculturaabrace .box-padrao .topo span {background: url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/aba-titulo-abrace.png") no-repeat right 0!important;}
 .tvculturaabrace .box-padrao .capa-titulo {background:#0d6104;}
@@ -61,6 +61,8 @@ body.tvculturaabrace{background:url("http://cmais.com.br/portal/images/capaProgr
 .tvculturaabrace #menu-rodape .blocos a{color:#0d6104!important;}
 .tvculturaabrace #rodape-portal {margin-top: -25px;}
 .tvculturaabrace .capa-voltar-topo {padding-left:33px}
+.tvculturaabrace .proximasAtracoes .proximasAtracoes-box p a{color:#0d6101;}
+.tvculturaabrace .novoNoAr .noAr-box {color:#333;}
 /* /home tv cultura abrace */
 
 /* cmais abrace */
