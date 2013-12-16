@@ -128,7 +128,8 @@
 
   </head>
   <body>
-    <?php include_partial_from_folder('blocks', 'global/menu_reduzido_abrace')?>
+    <?php include_partial_from_folder('blocks', 'global/menu', array('section'=>$section,'channels' => $channels, 'live' => $live, 'editorials' => $editorials, 'site' => $site, 'mainSite' => $mainSite, 'coming' => $coming, 'important' => $important)) ?>
+    <?php //include_partial_from_folder('blocks', 'global/menu_reduzido_abrace')?>
     <?php echo $sf_content ?>
     <?php include_partial_from_folder('blocks', 'global/footer') ?>
     
