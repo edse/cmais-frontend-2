@@ -62,7 +62,8 @@ body.tvculturaabrace{background:url("http://cmais.com.br/portal/images/capaProgr
 .tvculturaabrace #rodape-portal {margin-top: -25px;}
 .tvculturaabrace .capa-voltar-topo {padding-left:33px}
 .tvculturaabrace .proximasAtracoes .proximasAtracoes-box p a{color:#0d6101;}
-.tvculturaabrace .novoNoAr .noAr-box {color:#333;}
+.tvculturaabrace .novoNoAr .noAr-box p,
+.tvculturaabrace .novoNoAr .noAr-box a.titulos{color:#333!important;}
 /* /home tv cultura abrace */
 
 /* cmais abrace */
