@@ -47,7 +47,7 @@ body.tvculturaabrace{background:url("http://cmais.com.br/portal/images/capaProgr
 .tvculturaabrace #capa-site #topo-abrace{height:140px;}
 .tvculturaabrace .novoNoAr .enunciado span {background:url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/ponta-destaque-newabrace.png") no-repeat !important;}
 .tvculturaabrace .novoNoAr .enunciado h2 {background-color: #0d6101;color: #fff;}
-.tvculturaabrace .proximasAtracoes .enunciado{background:#329610;}
+.tvculturaabrace .proximasAtracoes .enunciado{background:#329610;} 
 .tvculturaabrace .box-padrao .topo span {background: url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/aba-titulo-abrace.png") no-repeat right 0!important;}
 .tvculturaabrace .box-padrao .capa-titulo {background:#0d6104;}
 .tvculturaabrace .proximasAtracoes .proximasAtracoes-box .gradeCompleta{color:#333;}
