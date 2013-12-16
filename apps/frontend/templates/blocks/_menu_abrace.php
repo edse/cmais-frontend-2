@@ -1,10 +1,4 @@
 <!--Controle-Remoto-->
-<!--script src="http://www.culturabrasil.com.br/js/config.js" type="text/javascript"></script>
-
-<script src="http://www.culturabrasil.com.br/js/jquery.xmldom.min.js" type="text/javascript"></script>
-<script src="http://www.culturabrasil.com.br/js/Menu.class.js" type="text/javascript"></script>
-<script src="http://www.culturabrasil.com.br/js/User.class.js" type="text/javascript"></script-->
-<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvculturaabrace2013.css" type="text/css" />
 <script type="text/javascript">
     $(function(){
       var controle = null;
@@ -21,17 +15,13 @@
 <!--/CONTROLE REMOTO-->
 
 <!--GUIA TOPO-->
-<div id="guia-topo" class="menu-tvculturaabrace" align="center">
-  <?php if($site->getSlug() != "tvcultura" && $section->getSlug()!="homepage" || $site->getSlug() == "cmais" && $section->getSlug()=="homepage"):?>
-    <div class="abrace-infinito-direito"></div>
-  <?php endif; ?> 
+<div id="guia-topo" align="center">
   <!--topo Cmais-->
   <div id="topo-cmais">
   
     <!--Logo Cultura-->
     <a href="http://tvcultura.cmais.com.br" id="logoCultura" title="Portal TV Cultura">
-      <img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/logo-cultura-0-abrace.png" width="80" height="77"/>
-      <!--img src="http://cmais.com.br/portal/images/logos-cultura/logo-cultura-0.png" width="80" height="77"/-->
+      <img src="http://cmais.com.br/portal/images/logos-cultura/logo-cultura-0.png" width="80" height="77"/>
     </a>  
     <!--Logo Cultura-->
     
@@ -54,51 +44,32 @@
       <!--menu editorias-->
       
       <!-- Busca Portal -->
-      <?php 
-        /* Busca antiga
-        <form class="busca-portal" action="/busca" method="post">
-          <input type="hidden" name="site_id" id="site_id" value="<?php if((isset($site)) && (($site->type == "Programa Simples") || ($site->type == "Programa"))) echo $site->getId();?>" />
-          <input class="ipt-txt" type="text" name="term" id="term" value="<?php if(isset($_REQUEST['term'])) echo $_REQUEST['term']; ?>" />
-          <?php if(isset($_REQUEST['filter'])): ?>
-          <input type="hidden" name="filter" id="filter" value="<?php echo $_REQUEST['filter']; ?>" />
-          <?php endif; ?>
-          <input class="ipt-submit" type="submit" value="OK" />
-        </form>
-        */
-      ?>
-
       <form class="busca-portal" action="/busca" method="get">
         <input class="ipt-txt" type="text" name="term" id="term" value="<?php if(isset($_REQUEST['term'])) echo $_REQUEST['term']; ?>" />
         <input class="ipt-submit" type="submit" value="OK" />
       </form>
-
-
-      
       <!-- /Busca Portal -->  
          
     </div>
     <!--menu parte 2-->
     
-    
     <!--menu parte 1-->
-    <div id="menu-portal-1" <?php if($site->getSlug() == "tvcultura" && $section->getSlug()=="homepage"){echo "";}else{echo "class='menu-cmais-abrace'";}?>>
-      <?php if($site->getSlug() != "tvcultura" && $section->getSlug()!="homepage" || $site->getSlug() == "cmais" && $section->getSlug()=="homepage"):?>
-        <?php $classFloat = "style='float:right'"?>
-        <div class="abrace-infinito-esquerda"></div>
-        <div class="abrace-esquerda">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/topo-abrace-cmais.png" alt="abrace o novo, abrace a TV Cultura"/>
-        </div>  
-      <?php else: ?> 
-        <?php $classFloat = ""?> 
-        <!--FACEBOOK-->
-        <div id="facebook-cultura">
-          <div class="fb-like" data-href="http://www.facebook.com/tvcultura" data-send="false" data-layout="button_count" data-width="110" data-show-faces="true"></div>
-        </div>
-        <!--/FACEBOOK-->
-      <?php endif; ?>
+    <div id="menu-portal-1">
+      
+      <!--FACEBOOK-->
+      
+      <!--curtir-->
+      <div id="facebook-cultura">
+        
+        
+        <!--curtir-->
+        <div class="fb-like" data-href="http://www.facebook.com/tvcultura" data-send="false" data-layout="button_count" data-width="110" data-show-faces="true"></div>
+      
+      </div>
+      <!--/FACEBOOK-->
+      
       <!-- Menu Portal -->
-      <ul id="menu-portal" <?php echo $classFloat; ?> >
-         
+      <ul id="menu-portal">
         <!-- Menu TV -->
         <li class="m-tv"><a href="#" class="filho m_tv_tvcultura" title="TV">PROGRAMAS<span></span></a>
           <div class="menu-aberto padrao tv grid3">
@@ -187,20 +158,19 @@
         <!-- /Menu ao Vivo -->
 
       </ul>
-      <?php if($site->getSlug()=="tvcultura" && $section->getSlug()=="homepage"):?>
-        <!--redes sociais-->
-        <div id="redesnovo">
-          <a href="javascript:;" id="controle-remoto" class="redesB" title="controle-remoto" target="_blank"></a>
-          <a href="http://itunes.apple.com/br/app/radio-cultura/id370066053" id="apple" class="redesA" title="Apple store" target="_blank"></a>
-          <a href="https://google.com/+tvcultura" id="google1" class="redesA" title="Google+" target="_blank"></a>
-          <a href="http://instagram.com/tvcultura" id="instangram" class="redesA" title="Instagram" target="_blank"></a>
-          <a href="http://facebook.com/tvcultura" id="face" class="redesA" title="Facebook" target="_blank"></a>
-          <a href="http://twitter.com/tvcultura" id="twit" class="redesA" title="Twitter" target="_blank"></a>
-          <a href="http://youtube.com/cultura" id="youtube" class="redesA" title="Youtube " target="_blank"></a>
-          <a href="http://tvcultura.cmais.com.br/feed" id="rss" class="redesA" title="RSS" target="_blank"></a>
-        </div>
-        <!--redes sociais-->
-      <?php endif; ?>  
+      <!--redes sociais-->
+      <div id="redesnovo">
+        <a href="javascript:;" id="controle-remoto" class="redesB" title="controle-remoto" target="_blank"></a>
+        <a href="http://itunes.apple.com/br/app/radio-cultura/id370066053" id="apple" class="redesA" title="Apple store" target="_blank"></a>
+        <a href="https://google.com/+tvcultura" id="google1" class="redesA" title="Google+" target="_blank"></a>
+        <a href="http://instagram.com/tvcultura" id="instangram" class="redesA" title="Instagram" target="_blank"></a>
+        <a href="http://facebook.com/tvcultura" id="face" class="redesA" title="Facebook" target="_blank"></a>
+        <a href="http://twitter.com/tvcultura" id="twit" class="redesA" title="Twitter" target="_blank"></a>
+        <a href="http://youtube.com/cultura" id="youtube" class="redesA" title="Youtube " target="_blank"></a>
+        <a href="http://tvcultura.cmais.com.br/feed" id="rss" class="redesA" title="RSS" target="_blank"></a>
+      </div>
+      <!--redes sociais-->
+        
     </div>
     <!--menu parte 1-->
 
