@@ -64,14 +64,14 @@
           <?php endif; ?>
           <input class="ipt-submit" type="submit" value="OK" />
         </form>
-        */
-      ?>
+        
 
       <form class="busca-portal" action="/busca" method="get">
         <input class="ipt-txt" type="text" name="term" id="term" value="<?php if(isset($_REQUEST['term'])) echo $_REQUEST['term']; ?>" />
         <input class="ipt-submit" type="submit" value="OK" />
       </form>
-
+*/
+      ?>
 
       
       <!-- /Busca Portal -->  
