@@ -83,5 +83,6 @@ body.tvculturaabrace{background:url("http://cmais.com.br/portal/images/capaProgr
 .box-padrao .claro .capa-titulo,
 .box-padrao .capa-titulo{background: #0d6104;}
 .lista-blogs .chapeu {color: #0d6104;}
+.lista-blogs a {color:#0d6104!important}
 /* /cmais abrace */
 
