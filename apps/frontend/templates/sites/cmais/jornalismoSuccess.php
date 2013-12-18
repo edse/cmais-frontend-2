@@ -107,7 +107,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 					<?php foreach ($displays["destaque-esquerda-1"] as $k => $d): ?>
 	 							<h2><i class="ico-setas ico-seta-direita"></i><?php echo $d->getTitle() ?></h2>
 				        
-				        <?php if($d->Asset->AssetType->id == 6): /*Verifica se o Asset é de Vídeo*/?>
+				        <?php if($d->Asset->AssetType->id == 6): /*Verifica se o Asset é de Vídeo*/?> 
 				        	<iframe width="310" height="233" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
 				        	<p><?php echo $d->getDescription() ?></p>
 				        <?php  elseif($d->Asset->AssetType->id == 1): /*Verifica se o Asset é de Conteudo*/?>
