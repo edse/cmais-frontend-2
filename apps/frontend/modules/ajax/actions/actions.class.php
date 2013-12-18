@@ -2446,7 +2446,7 @@ EOT;
 			
         $pager = new sfDoctrinePager('', $pagelimit);
         $pager->setQuery($assetsQuery);
-        $pager->setPage($request->getParameter('page', $pagina_atual));
+        $pager->setPage($request->getParameter('page', isset($pagina_atual)));
         $pager->init();
         $pager->setNbResults($countQuery[0]["description"]);
         $pager->setLastPage(ceil($countQuery[0]["description"]/$pagelimit));
