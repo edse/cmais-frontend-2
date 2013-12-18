@@ -81,7 +81,7 @@
     
     
     <!--menu parte 1-->
-    <div id="menu-portal-1" <?php if($site->getSlug() == "tvcultura" && $section->getSlug()=="homepage"){echo "";}else{echo "class='menu-cmais-abrace'";}?>>
+    <div id="menu-portal-1" <?php if(isset($asset) ||  $site->getSlug() != "tvcultura" && $section->getSlug()!="homepage" || $site->getSlug() == "cmais" && $section->getSlug()=="homepage" || $site->getSlug() == "tvratimbum" && $section->getSlug()=="homepage"){echo "class='menu-cmais-abrace'";}?>>
       <?php if( isset($asset) ||  $site->getSlug() != "tvcultura" && $section->getSlug()!="homepage" || $site->getSlug() == "cmais" && $section->getSlug()=="homepage" || $site->getSlug() == "tvratimbum" && $section->getSlug()=="homepage"):?>
         <?php $classFloat = "style='float:right'"?>
         <div class="abrace-infinito-esquerda"></div>
