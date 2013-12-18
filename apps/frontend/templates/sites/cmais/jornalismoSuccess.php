@@ -77,24 +77,27 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
     	
 			<!-- bloco notícias de texto -->
 			<?php if(isset($displays["destaques-noticias-texto"])): ?>
-				<?php foreach ($displays["destaques-noticias-texto"] as $k => $d): ?>
-			      <div class="destaques">
-			          <h2><?php echo $d->getTitle()?></h2>
+				<?php $count=0; ?>
+        <?php foreach ($displays["destaques-noticias-texto"] as $k => $d): ?>
+            <div class="destaques <?php if($count==3) echo "ultima-noticia" ?>" >
+                <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
+                <h2><?php echo $d->getTitle()?></h2>
 
-			          <?php if($k == 3):?>
-				          <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
-				            <p class="s-margem"><?php echo $d->getDescription()?></p>  
-				          </a>			          	
-			          	<a class="veja" href="http://cmais.com.br/noticias-jornalismo">+ veja todas as notícias</a>
-			          <?php else:?>
-				          <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
-				            <p><?php echo $d->getDescription()?></p>  
-				          </a>			          	
-			          	<div class="linha-hr"></div>
-								<?php endif;?>
-								          	
-			       </div>
-				<?php endforeach;?>
+                <?php if($k == 3):?>
+                
+                    <p class="s-margem"><?php echo $d->getDescription()?></p>  
+                  </a>                  
+                  <a class="veja" href="http://cmais.com.br/noticias-jornalismo">+ veja todas as notícias</a>
+                <?php else:?>
+                    <p><?php echo $d->getDescription()?></p>  
+                  </a>                  
+                  <div class="linha-hr"></div>
+                  <?php $count++?>
+                <?php endif;?>
+                            
+             </div>
+        <?php endforeach;?>
+
 			<?php endif;?>  
 		 <!--/ bloco notícias de texto -->
 
