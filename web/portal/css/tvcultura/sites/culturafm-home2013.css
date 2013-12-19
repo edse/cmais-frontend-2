@@ -44,7 +44,7 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #main-header #listen a:visited{text-decoration:none;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter: alpha(opacity=50);-moz-opacity:0.5; -khtml-opacity: 0.5;opacity: 0.5;}
 #main-header #listen .cfm{background:#0054a6; margin-left:4px;}
 #main-header #main-nav .menu-interna{margin-bottom:15px; margin-top:15px; width: 980px!important;}
-#main-header #main-nav .menu-interna li {padding:0;margin:0!important; float:left; height: 35px;margin-top: 10px;font-size:12px;font-family:'Arial', Helvetica, sans-serif!important; color:#fff!important; margin-right: 0;background: #666;border-radius: 0;text-transform: uppercase;}
+#main-header #main-nav .menu-interna li {padding:0 3px;margin:0!important; float:left; height: 35px;margin-top: 10px;font-size:12px;font-family:'Arial', Helvetica, sans-serif!important; color:#fff!important;background: #666;border-radius: 0;text-transform: uppercase;}
 #main-header #main-nav .menu-interna li:hover{background: #0054a6;}
 #main-header #main-nav .menu-interna li a{color:#fff; padding: 7px 24px; font-size:13px;font-family:'Arial', Helvetica, sans-serif!important;}
 #main-header #main-nav .menu-interna .m-search{width:0!important;}
