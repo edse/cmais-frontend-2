@@ -32,9 +32,9 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #main-header{width:980px; margin:3px auto;overflow:hidden;*margin-bottom:15px;}
 #main-header h1{float:left; margin-top:18px;}
 
-#main-header .redes {position: relative;z-index: 2;width: 460px;float: left;margin: 25px 0 0 40px;}
-#main-header .redes .curtir{width:202px; float: left;}
-#main-header .redes iframe#twitter-widget-0{margin-left: -130px;}
+#main-header .redes {position: relative;z-index: 2;width: 345px;float: left;margin: 25px 0 0 40px;}
+#main-header .redes .curtir{width:245px; float: left;}
+#main-header .redes iframe#twitter-widget-0{margin-left: 0px; width: 87px;}
 
 #main-header #listen{width:222px; overflow:hidden; float:right;}
 #main-header #listen h1{float:left; font-family:'Arial', Helvetica, sans-serif; color:#666666; clear:both; font-size:12px; width: 100%; text-align: left;text-transform:uppercase; }
