@@ -32,25 +32,26 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #main-header{width:980px; margin:3px auto;overflow:hidden;*margin-bottom:15px;}
 #main-header h1{float:left; margin-top:18px;}
 
-#main-header .redes {position: relative;z-index: 2;width: 345px;float: left;margin: 25px 0 0 40px;}
-#main-header .redes .curtir{width:236px; float: left;}
-#main-header .redes iframe#twitter-widget-0{margin-left: 0!important;width: 87px!important;}
+#main-header .redes {position: relative;z-index: 2;width: 460px;float: left;margin: 25px 0 0 40px;}
+#main-header .redes .curtir{width:202px; float: left;}
+#main-header .redes iframe#twitter-widget-0{margin-left: -130px;}
 
 #main-header #listen{width:222px; overflow:hidden; float:right;}
-#main-header #listen h1{float:left; font-family:'gotham_blackregular', Arial, Helvetica, sans-serif; color:#666666; clear:both; font-size:12px; width: 100%; text-align: left;text-transform:uppercase; }
-#main-header #listen .link-radio{padding:4px 4px; font-family:'gotham_mediumregular', Arial, Helvetica, sans-serif; font-size:12px;color:#FFFFFF; float:left;text-transform:uppercase; letter-spacing: 0.03em;}
+#main-header #listen h1{float:left; font-family:'Arial', Helvetica, sans-serif; color:#666666; clear:both; font-size:12px; width: 100%; text-align: left;text-transform:uppercase; }
+#main-header #listen .link-radio{padding:4px 4px; font-family:'Arial', Helvetica, sans-serif; font-size:12px;color:#FFFFFF; float:left;text-transform:uppercase; letter-spacing: 0.03em;}
 #main-header #listen .cbrasil{background:#999999;}
 #main-header #listen a:hover{text-decoration:none;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter: alpha(opacity=50);-moz-opacity:0.5; -khtml-opacity: 0.5;opacity: 0.5;}
+#main-header #listen a:visited{text-decoration:none;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter: alpha(opacity=50);-moz-opacity:0.5; -khtml-opacity: 0.5;opacity: 0.5;}
 #main-header #listen .cfm{background:#0054a6; margin-left:4px;}
 #main-header #main-nav .menu-interna{margin-bottom:15px; margin-top:15px;}
-#main-header #main-nav .menu-interna li {padding:0;margin:0!important; float:left; height: 35px;margin-top: 10px;font-size:12px;font-family:'gotham_mediumregular', Arial, Helvetica, sans-serif; color:#fff!important; margin-right: 0;background: #666;border-radius: 0;text-transform: uppercase;}
+#main-header #main-nav .menu-interna li {padding:0;margin:0!important; float:left; height: 35px;margin-top: 10px;font-size:12px;font-family:'Arial', Helvetica, sans-serif; color:#fff!important; margin-right: 0;background: #666;border-radius: 0;text-transform: uppercase;}
 #main-header #main-nav .menu-interna li:hover{background: #0054a6;}
 #main-header #main-nav .menu-interna li a{color:#fff; padding: 7px 24px; font-size:13px;}
 #main-header #main-nav .menu-interna .m-search{width:0!important;}
 #main-header #main-nav {position:relative;margin-top: 10px;overflow: hidden;clear: both;}
 #main-header #main-nav #search{background: #666; width: 211px; *width: 200px; height: 35px; display: block; position:absolute; /*right: 0;top: 15px;*right:0!important;*top:15px!important;*/}
-#main-header #main-nav #search #search_submit{border:none; background: none; font-family:'gotham_mediumregular', Arial, Helvetica, sans-serif; color:#FFF; text-transform:uppercase; background:#666; } 
-#main-header #main-nav #search #search_field{font-family:'gotham_mediumregular', Arial, Helvetica, sans-serif; width: 150px;border: none;height: 20px;margin-top: 7px; padding-left: 5px; font-size:13px;color:#666;}
+#main-header #main-nav #search #search_submit{border:none; background: none; font-family:'Arial', Arial, Helvetica, sans-serif; color:#FFF; text-transform:uppercase; background:#666; } 
+#main-header #main-nav #search #search_field{font-family:'Arial', Helvetica, sans-serif; width: 150px;border: none;height: 20px;margin-top: 7px; padding-left: 5px; font-size:13px;color:#666;}
 
 #content-holder{width: 980px;margin: 0 auto;overflow: hidden;}
 #content-holder .destaque{width:320px; float:left;}
@@ -83,7 +84,7 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 
 #content-holder .c-classicos{float: left; width: 100%; position:relative;margin-bottom:20px;}
 #content-holder .c-classicos h2{padding-left:10px; margin-top: 10px; max-height: 24px; overflow: hidden;}
-#content-holder .c-classicos img{width:100%;}
+#content-holder .c-classicos img{width:310px;}
 #content-holder .c-classicos .seta2{left:0!important;}
 #content-holder .c-classicos .titulo{font-weight:bold; text-align: left;max-height:20px; overflow:hidden;}
 #content-holder .c-classicos{text-align:left;}
@@ -158,3 +159,4 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 a.jp-play, a.jp-play:hover, a.jp-pause, a.jp-pause:hover, a.jp-stop, a.jp-stop:hover, a.jp-previous, a.jp-previous:hover, a.jp-next, a.jp-next:hover, div.jp-seek-bar, div.jp-play-bar, a.jp-mute, a.jp-mute:hover, a.jp-unmute, a.jp-unmute:hover, div.jp-volume-bar, div.jp-volume-bar-value, div.jp-video div.jp-video-play, div.jp-video div.jp-video-play:hover {
 background-image: url(/portal/images/capaPrograma/culturafm/novahome/player.png)!important;
 }
+#content-holder .jp-playlist{ border:none;}
