@@ -322,7 +322,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 	       <div style="margin-bottom: 10px;">
 	       	<h2>Previsão do Tempo</h2>
 	       	  <div class="line"></div> 
-	       	  <iframe id="previsao-do-tempo-home-jornalismo" src="http://www.tempoagora.com.br/selos_iframe/sky_SaoPaulo-SP.html" height="264" width="200" frameborder="0" allowtransparency="yes" scrolling="no"></iframe>
+	       	  <iframe id="previsao-do-tempo-home-jornalismo" src="http://iframe.somarmeteorologia.com.br/tvcultura/index.php" height="240" width="200" frameborder="0" allowtransparency="yes" scrolling="no"></iframe>
 	       </div>
 	       <!--previsão do tempo-->
       </div>
