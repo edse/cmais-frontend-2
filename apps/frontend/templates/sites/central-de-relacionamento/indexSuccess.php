@@ -115,7 +115,9 @@ $(document).ready(function(){
                       <label class="control-label" for="f2_email2">Email</label>
                       <div class="controls">
                         <input type="text" class="input-xlarge disabled" id="f2_email2" name="f2_email2" placeholder="" disabled="disabled">
-                        <p class="help-block">Você receberá uma mensagem de confirmação para validar este email após enviar o cadastro preenchido.</p>
+                        <div class="alert alert-block">
+                          <p class="help-block">Você receberá uma mensagem de confirmação para validar este email após enviar o cadastro preenchido.</p>
+                        </div>
                         <span class="atencao">* Campos obrigatórios</span>
                       </div>
                     </div>
@@ -468,7 +470,9 @@ $(document).ready(function(){
                           <?php else: ?>
                             <input type="text" class="input-xlarge disabled" id="f4_email2" name="f4_email2" placeholder="" disabled="disabled">
                           <?php endif;?>
-                          <p class="help-block">Se aplicável, você receberá uma resposta nesse email.</p>
+                          <div class="alert alert-block">
+                            <p class="help-block">Mensagem encaminhada.<br> Aguarde nosso retorno no e-mail indicado.</p>
+                          </div>
                         </div>
                       </div>
                       <?php if(!isset($_GET["validacao"])==1):?>
