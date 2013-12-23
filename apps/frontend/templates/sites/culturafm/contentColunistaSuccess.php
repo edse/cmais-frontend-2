@@ -96,7 +96,7 @@
 
 <div id="bg-site"></div>
 <div id="capa-site">
-	<?php include_partial_from_folder('sites/culturafm','global/newheader', array('site' => $site, 'uri' => $uri, 'program' => $program, 'siteSections'=>$siteSections)) ?>
+	<?php include_partial_from_folder('sites/culturafm','global/newheader', array('site' => $site, 'section' => $section, 'uri' => $uri, 'program' => $program, 'siteSections'=>$siteSections)) ?>
   <!-- MIOLO -->
   <div id="miolo">
   	<?php include_partial_from_folder('blocks','global/shortcuts') ?>
