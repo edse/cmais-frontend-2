@@ -14,7 +14,7 @@
                   ->orderBy('p.title')
                   ->execute();
                 ?>
-                <li class="m-<?php echo $s->getSlug() ?> span"><a href="http://culturafm.cmais.com.br/<?php echo $s->getSlug()?>" class="abre-menu" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?><span></span></a>
+                <li class="m-<?php echo $s->getSlug() ?> span <?php if($s->getSlug() == $section->getSlug()) echo "active" ?>"><a href="http://culturafm.cmais.com.br/<?php echo $s->getSlug()?>" class="abre-menu" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?><span></span></a>
                   <div class="submenu-interna toggle-menu" style="display:none; width: auto;">
                     <ul style="display:block;">
                     <?php foreach($programs as $p): ?>
