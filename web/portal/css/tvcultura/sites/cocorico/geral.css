@@ -136,7 +136,7 @@ bold,
 .menu .navbar .nav > li > a { font-size:20px; padding:0 22px 0 50px;  height:40px; line-height: 40px; color:#fff; text-shadow:none; text-transform:uppercase; font-weight:normal; text-shadow:none; text-transform:uppercase;}
 .menu .navbar-inner { padding:0; }
 .menu .navbar .nav > li {/* overflow:hidden;*/ margin-right:3%; margin-top:12px;}
-.menu .navbar .nav > li a { background:url(/portal/images/capaPrograma/cocorico/bg-azul.jpg) repeat-x; margin-left:-30px; float: left;  border-radius:15px 0 0 15px; -moz-border-radius: 15px 0 0 15px; -webkit-border-radius: 15px 0 0 15px;  }
+.menu .navbar .nav > li a { background:url(/portal/images/capaPrograma/cocorico/bg-azul.jpg) repeat-x; margin-left:-30px; float: left;  border-radius:15px 0 0 15px; -moz-border-radius: 15px 0 0 15px; -webkit-border-radius: 15px 0 0 15px;text-indent: 0; width: auto; margin-right: 0;margin-top: 0;}
 .menu .navbar .nav > li .icon { width:38px; height:38px; padding:0; z-index: 10; position:relative; margin:0; border: none !important; margin-top:1px; background-image: url(/portal/images/capaPrograma/cocorico/menu-familia.png)  !important; background-repeat: no-repeat;}
 
 .menu .navbar .nav > li.personagens {  margin:0 20px; background:#eaefb2 url(/portal/images/capaPrograma/cocorico/pontilhado-verde.jpg) repeat-x ; height:60px; width: 48px; }
