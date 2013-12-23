@@ -115,7 +115,7 @@ $(document).ready(function(){
                       <label class="control-label" for="f2_email2">Email</label>
                       <div class="controls">
                         <input type="text" class="input-xlarge disabled" id="f2_email2" name="f2_email2" placeholder="" disabled="disabled">
-                        <div class="alert alert-block">
+                        <div class="alert alert-block" style="margin: 10px 131px 10px 0;padding: 5px;">
                           <p class="help-block">Você receberá uma mensagem de confirmação para validar este email após enviar o cadastro preenchido.</p>
                         </div>
                         <span class="atencao">* Campos obrigatórios</span>
@@ -719,7 +719,7 @@ $(document).ready(function(){
                 <div class="row" id="row7" style="margin: 10px;">
                   <div class="page-header">
                     <h1>Usuário cadastrado</h1>
-                    <p><span class="label label-success">Usuário cadastrado com sucesso</span></p>
+                    <p><span class="label label-success">Usuário cadastrado com sucesso</span></p> 
                   </div>
                   <div class="alert alert-block fade in">
                     <h4 class="alert-heading" style="color: red;">SEU CADASTRO FOI EFETUADO COM SUCESSO!</h4>
