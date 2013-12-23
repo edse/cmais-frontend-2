@@ -8,11 +8,8 @@
     ->andWhere('a.asset_type_id = ?', 5)
     ->orderBy('sa.display_order')
     ->execute();
-  if(count($assets) >= 1):
+  if(count($assets) >= 1)
     $asset = $assets[0];
-  else:
-    $asset="";
-  endif;  
 ?>
 
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/contato.css" type="text/css" />
@@ -20,7 +17,6 @@
 
     <?php use_helper('I18N', 'Date') ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'asset' => $asset)) ?>
-
 
    <div id="bg-site"></div>
     <!-- CAPA SITE -->
