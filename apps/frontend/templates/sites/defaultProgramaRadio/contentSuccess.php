@@ -33,7 +33,7 @@ $(function(){
 <?php use_helper('I18N', 'Date') ?>
 
 <?php if(isset($asset)): ?>
-  <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
+  <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset)) ?>
 <?php else:?>  
   <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <?php endif; ?> 
