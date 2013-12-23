@@ -137,7 +137,7 @@ bold,
 .menu .navbar-inner { padding:0; }
 .menu .navbar .nav > li {/* overflow:hidden;*/ margin-right:3%; margin-top:12px;}
 .menu .navbar .nav > li a { background:url(/portal/images/capaPrograma/cocorico/bg-azul.jpg) repeat-x; margin-left:-30px; float: left;  border-radius:15px 0 0 15px; -moz-border-radius: 15px 0 0 15px; -webkit-border-radius: 15px 0 0 15px;text-indent: 0; width: auto; margin-right: 0;margin-top: 0; }
-.menu .navbar .nav > li .icon { width:38px; height:38px; padding:0; z-index: 10; position:relative; margin:0; border: none !important; margin-top:1px; background-image: url(/portal/images/capaPrograma/cocorico/menu-familia.png)  !important; background-repeat: no-repeat;}
+.menu .navbar .nav > li .icon { width:38px; height:38px; padding:0; z-index: 10; position:relative; margin:0; border: none !important; margin-top:1px; background-image: url(/portal/images/capaPrograma/cocorico/menu-familia.png)  !important; background-repeat: no-repeat;} 
 
 .menu .navbar .nav > li.personagens {  margin:0 20px; background:#eaefb2 url(/portal/images/capaPrograma/cocorico/pontilhado-verde.jpg) repeat-x ; height:60px; width: 48px; }
 .menu .navbar .nav > li.personagens a { background:url(/portal/images/capaPrograma/cocorico/mais-amarelo.png) no-repeat; padding:0; margin:5px 0 0 4px; display:block;  width: 48px; height:50px;border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0; border:none; }
