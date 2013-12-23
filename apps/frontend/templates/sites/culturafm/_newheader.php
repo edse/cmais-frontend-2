@@ -32,7 +32,11 @@
     <?php if(isset($siteSections)): ?>
     <!-- main-nav -->    
     <nav role="navigation" id="main-nav">
-      <?php include_partial_from_folder('sites/culturafm','global/menuNovo', array('siteSections' => $siteSections, 'section' => $section))?> 
+      <?php if(isset($section)): ?>
+        <?php include_partial_from_folder('sites/culturafm','global/menuNovo', array('siteSections' => $siteSections, 'section' => $section))?>
+      <?php else:?>
+        <?php include_partial_from_folder('sites/culturafm','global/menuNovo', array('siteSections' => $siteSections))?>
+      <?php endif;?> 
     </nav>
     <!-- /main-nav -->
     <?php endif;?>
