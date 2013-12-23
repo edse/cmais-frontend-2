@@ -22,7 +22,9 @@
 
 <!--GUIA TOPO-->
 <div id="guia-topo" class="menu-tvculturaabrace" align="center">
-  <?php if( isset($asset) || $site->getSlug() != "tvcultura" && $section->getSlug()!="homepage" || $site->getSlug() == "cmais" && $section->getSlug()=="homepage" || $site->getSlug() == "tvratimbum" && $section->getSlug()=="homepage"):?>
+  <?php #if( isset($asset) || $site->getSlug() != "tvcultura" && $section->getSlug()!="homepage" || $site->getSlug() == "cmais" && $section->getSlug()=="homepage" || $site->getSlug() == "tvratimbum" && $section->getSlug()=="homepage"):?>
+  <?php if(isset($section) && ($section->Site->getSlug() == "tvcultura" && $section->getSlug() == "homepage")):?>
+  <?php else: ?> 
     <div class="abrace-infinito-direito"></div>
   <?php endif; ?> 
   <!--topo Cmais-->
@@ -81,21 +83,24 @@
     
     
     <!--menu parte 1-->
-    <div id="menu-portal-1" <?php if(isset($asset) ||  $site->getSlug() != "tvcultura" && $section->getSlug()!="homepage" || $site->getSlug() == "cmais" && $section->getSlug()=="homepage" || $site->getSlug() == "tvratimbum" && $section->getSlug()=="homepage"){echo "class='menu-cmais-abrace'";}?>>
-      <?php if( isset($asset) ||  $site->getSlug() != "tvcultura" && $section->getSlug()!="homepage" || $site->getSlug() == "cmais" && $section->getSlug()=="homepage" || $site->getSlug() == "tvratimbum" && $section->getSlug()=="homepage"):?>
-        <?php $classFloat = "style='float:right'"?>
-        <div class="abrace-infinito-esquerda"></div>
-        <div class="abrace-esquerda">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/topo-abrace-cmais.png" alt="abrace o novo, abrace a TV Cultura"/>
-        </div>  
-      <?php else: ?> 
-        <?php $classFloat = ""?> 
-        <!--FACEBOOK-->
-        <div id="facebook-cultura">
-          <div class="fb-like" data-href="http://www.facebook.com/tvcultura" data-send="false" data-layout="button_count" data-width="110" data-show-faces="true"></div>
-        </div>
-        <!--/FACEBOOK-->
-      <?php endif; ?>
+  <?php if(isset($section) && ($section->Site->getSlug() == "tvcultura" && $section->getSlug() == "homepage")):?>
+    <div id="menu-portal-1">    
+      <?php $classFloat = ""?> 
+      <!--FACEBOOK-->
+      <div id="facebook-cultura">
+        <div class="fb-like" data-href="http://www.facebook.com/tvcultura" data-send="false" data-layout="button_count" data-width="110" data-show-faces="true"></div>
+      </div>
+      <!--/FACEBOOK-->
+  <?php else: ?> 
+    <div id="menu-portal-1" class='menu-cmais-abrace'>    
+      <?php $classFloat = "style='float:right'"?>
+      <div class="abrace-infinito-esquerda"></div>
+      <div class="abrace-esquerda">
+        <img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/topo-abrace-cmais.png" alt="abrace o novo, abrace a TV Cultura"/>
+      </div>  
+  <?php endif; ?> 
+      
+     
       <!-- Menu Portal -->
       <ul id="menu-portal" <?php echo $classFloat; ?> >
          
