@@ -32,7 +32,7 @@
   
     <!--Logo Cultura-->
     <a href="http://tvcultura.cmais.com.br" id="logoCultura" title="Portal TV Cultura">
-      <img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/logo-cultura-0-abrace.png" width="80" height="77"/>
+      <img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/logo-cultura-0-abrace.png" width="80" height="77"/> 
       <!--img src="http://cmais.com.br/portal/images/logos-cultura/logo-cultura-0.png" width="80" height="77"/-->
     </a>  
     <!--Logo Cultura-->
