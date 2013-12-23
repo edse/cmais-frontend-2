@@ -470,7 +470,7 @@ $(document).ready(function(){
                           <?php else: ?>
                             <input type="text" class="input-xlarge disabled" id="f4_email2" name="f4_email2" placeholder="" disabled="disabled">
                           <?php endif;?>
-                          <div class="alert alert-block">
+                          <div class="alert alert-block" style="margin: 10px 131px 10px 0;padding: 5px;">
                             <p class="help-block">Mensagem encaminhada.<br> Aguarde nosso retorno no e-mail indicado.</p>
                           </div>
                         </div>
