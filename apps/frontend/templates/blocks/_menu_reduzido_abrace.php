@@ -2,16 +2,20 @@
 <!-- Navbar -->
 <div class="navbar navbar-inverse cmais-abrace-2013">
   <div class="navbar-inner">
-    <div class="navbar-esquerda">
-      <img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/topo-abrace-cmais.png" alt="abrace o novo, abrace a TV Cultura">
-    </div>  
-    <div class="container" style="width: 414px;">
+      
+    <div class="container" style="width: 980px; position: relative;">
       <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      
+      <div class="navbar-esquerda">
+        <img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/topo-abrace-cmais.png" alt="abrace o novo, abrace a TV Cultura">
+      </div>
+      
       <a class="brand" href="http://cmais.com.br/">Cmais</a>
+      
       <div class="nav-collapse collapse">
         <ul class="nav">
           <li class="tvcultura">
@@ -34,8 +38,10 @@
           </li>
         </ul>
       </div>
+      
+      <div class="navbar-direita"></div>
+      
     </div>
-    <div class="navbar-esquerda">b</div>
   </div>
 </div> 
 <!--topo cmais-->
