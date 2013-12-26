@@ -40,7 +40,7 @@
           </ul>
         </div>
       </div>
-      <div class="navbar-direita"></div>
+      <div class="navbar-direita-infinito"></div>
       
     </div>
   </div>
