@@ -15,7 +15,7 @@ body { background:url(/portal/images/capaPrograma/cocorico/background.jpg) repea
 ul li { list-style:none; }
 .conteudo p a { color:#F2722F; font-weight:bold; }
 /*.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 980px; }*/
-.navbar-inner .container { min-width:980px;}
+/*.navbar-inner .container { min-width:980px;}*/
 .tudo { margin-top:44px; min-width: 980px; background:url(/portal/images/capaPrograma/cocorico/pattern-bg-etamine.jpg) repeat;  border-left:1px dashed #b5b083; border-right:1px dashed #b5b083; }
 .carousel { margin-bottom:0; }
 .carousel-control { background:url(/portal/images/capaPrograma/cocorico/setas.png) no-repeat; width: 41px; height:69px; text-indent:-9999px;  border:none;    border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0;   line-height: 30px;   opacity: 1; filter: alpha(opacity=100); -moz-opacity:1;    position: absolute;    text-align: center;    top: 40%;   }

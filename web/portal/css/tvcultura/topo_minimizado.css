@@ -14,4 +14,5 @@
 .navbar .nav > .youtube > a { background-position:0 -405px; }
 .navbar .nav > .feed > a { background-position:0 -472px; }
 .navbar.navbar-fixed-top .navbar-inner .container { min-width:414px; }
+.navbar-inverse .navbar-inner {border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px; -ms-border-radius:0px;}
 /* /topo minimizado*/
