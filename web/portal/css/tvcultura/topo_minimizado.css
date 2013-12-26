@@ -17,5 +17,5 @@
 .navbar-inverse .navbar-inner {border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px; -ms-border-radius:0px;}
 /* /topo minimizado*/
 
-.navbar.cmais-abrace-2013{background:url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/bg_topo_esquerda.jpg") repeat-x;}
+.navbar.cmais-abrace-2013 .navbar-esquerda{background:url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/bg_topo_esquerda.jpg") repeat-x; width: 300px;float: left;height: 33px;padding-top: 10px;}
 .navbar.cmais-abrace-2013{background: url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/bg_topo_direita.jpg") repeat-x;}
