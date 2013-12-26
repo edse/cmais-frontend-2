@@ -16,3 +16,6 @@
 .navbar.navbar-fixed-top .navbar-inner .container { min-width:414px; }
 .navbar-inverse .navbar-inner {border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px; -ms-border-radius:0px;}
 /* /topo minimizado*/
+
+.navbar.cmais-abrace-2013{background:url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/bg_topo_esquerda.jpg") repeat-x;}
+.navbar.cmais-abrace-2013{background: url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/bg_topo_direita.jpg") repeat-x;}

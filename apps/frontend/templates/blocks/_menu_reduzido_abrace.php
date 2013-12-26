@@ -1,7 +1,10 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/topo_minimizado.css" type="text/css" />
 <!-- Navbar -->
-<div class="navbar navbar-inverse">
+<div class="navbar navbar-inverse cmais-abrace-2013">
   <div class="navbar-inner">
+    <div class="navbar-esquerda">
+      <img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/topo-abrace-cmais.png" alt="abrace o novo, abrace a TV Cultura">
+    </div>  
     <div class="container" style="width: 414px;">
       <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
         <span class="icon-bar"></span>
@@ -32,6 +35,7 @@
         </ul>
       </div>
     </div>
+    <div class="navbar-esquerda">b</div>
   </div>
 </div> 
 <!--topo cmais-->
