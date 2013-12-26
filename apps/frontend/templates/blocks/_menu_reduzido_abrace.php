@@ -10,6 +10,7 @@
         <span class="icon-bar"></span>
       </button>
       
+      <div class="bg-esquerda-infinito"></div>
       <div class="navbar-esquerda">
         <img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/topo-abrace-cmais.png" alt="abrace o novo, abrace a TV Cultura">
       </div>
