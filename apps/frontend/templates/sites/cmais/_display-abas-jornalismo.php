@@ -4,7 +4,7 @@
 		 							<h2>"<?php echo $d->getTitle() ?>"</h2>
 									 
 					        <?php if($d->Asset->AssetType->id == 6): /*Verifica se o Asset é de Vídeo*/?>
-					        	<iframe width="420" height="255" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+					        	<iframe width="402" height="255" src="http://www.youtube.com/embed/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen style="margin-left:5px;"></iframe>
 					        	<p><?php echo $d->getDescription() ?></p>
 					        <?php  elseif($d->Asset->AssetType->id == 1): /*Verifica se o Asset é de Conteúdo*/?>
 					        	<a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle() ?>">
