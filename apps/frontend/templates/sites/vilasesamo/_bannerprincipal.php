@@ -1,18 +1,4 @@
-  <style>
-    .slide02 .tit-banner,.slide03 .tit-banner, .slide04 .tit-banner,.slide05 .tit-banner, .slide06 .tit-banner{font-size:50px; color:#FFF;text-transform:uppercase;position: relative; top:-24px; left:0px;}
-    .slide02 .desc-banner,.slide03 .desc-banner, .slide04 .desc-banner, .slide05 .desc-banner, .slide06 .desc-banner{font-size:45px;line-height: 45px; color:#FFF;}
-    .slide05 .tit-banner{color:#d71c0d;}
-    .slide05 .desc-banner{color:#d71c0d;}
-    
-    .tit-banner.sombra{position: relative;top: 0px;left: 0px;}
-    .slide02 .tit-banner.sombra{color:#02cbff;}
-    .slide03 .tit-banner.sombra{color:#f9a41b;}
-    .slide04 .tit-banner.sombra{color:#b16af2;}
-    .slide05 .tit-banner.sombra{color:#fbb926;}
-    .slide06 .tit-banner.sombra{color:#018e30;}
-    
-    
-  </style> 
+ 
   <!-- carrossel desktop-->
   <section id="carrossel-destaque" aria-label="banners destaques rotativos">
     <!--Inicio-->
