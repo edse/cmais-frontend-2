@@ -1,4 +1,14 @@
-
+/* carrossel layer-slider home desktop */
+#carrossel-destaque .slide02 .tit-banner,.slide03 .tit-banner, .slide04 .tit-banner,.slide05 .tit-banner, .slide06 .tit-banner{font-size:50px; color:#FFF;text-transform:uppercase;position: relative; top:-24px; left:0px;}
+#carrossel-destaque .slide02 .desc-banner,.slide03 .desc-banner, .slide04 .desc-banner, .slide05 .desc-banner, .slide06 .desc-banner{font-size:45px;line-height: 45px; color:#FFF;}
+#carrossel-destaque .slide05 .tit-banner{color:#d71c0d;}
+#carrossel-destaque .slide05 .desc-banner{color:#d71c0d;}
+#carrossel-destaque .tit-banner.sombra{position: relative;top: 0px;left: 0px;}
+#carrossel-destaque .slide02 .tit-banner.sombra{color:#02cbff;}
+#carrossel-destaque .slide03 .tit-banner.sombra{color:#f9a41b;}
+#carrossel-destaque .slide04 .tit-banner.sombra{color:#b16af2;}
+#carrossel-destaque .slide05 .tit-banner.sombra{color:#fbb926;}
+#carrossel-destaque .slide06 .tit-banner.sombra{color:#018e30;}
 
 /*carrossel personagens vila sesamo*/
 #carrossel-p{max-width: 940px;margin: 0 auto; border-radius:8px;}
