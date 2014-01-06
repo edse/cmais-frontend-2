@@ -256,7 +256,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 /* lista assets*/
 .internas .assets  { float:left; margin:0.967% 0; width:100%; }
 .internas .assets li { width:226px; overflow:hidden; padding:0 10px; float:left; margin:0 0 0.967% 0.967%; height:315px;}
-.internas .assets li h3 { font-size: 20px; text-transform:uppercase; text-align:center; height:40px; line-height: 40px; } 
+.internas .assets li h3 { font-size: 20px; text-transform:uppercase; text-align:center; height:40px; line-height: 40px; overflow: hidden;} 
 .internas .assets li a { display:block; }
 .internas .assets li a p { height:64px; overflow:hidden; }
 .internas .assets li img { width: 100%; height:145px; }
