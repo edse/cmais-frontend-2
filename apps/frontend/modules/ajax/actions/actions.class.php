@@ -329,7 +329,7 @@ class ajaxActions extends sfActions
           //so.addVariable('streamer', 'rtmp://200.136.27.12/livepkgr');
           so.addVariable('file', '".$streaming."');
           //so.addVariable('file', 'tv2?adbe-live-event=liveevent');
-          so.addVariable('file', 'tv');
+          //so.addVariable('file', 'tv');
           so.addVariable('type', 'video');
           so.addParam('allowscriptaccess','always');
           so.addParam('allowfullscreen','true');
