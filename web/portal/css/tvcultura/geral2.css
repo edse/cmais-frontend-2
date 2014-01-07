@@ -942,7 +942,7 @@ div.jp-audio {clear:both;}
 	background-color:#ccc;
 }
 .rodape-cmais {clear:both;border-top: 1px solid #eee;margin: 40px 0 20px 0;}
-.rodape-cmais a{color:#ff6625 !important; font-weight: bold !important; text-decoration: none !important;}
+.rodape-cmais a{color:#0d6104!important; /* color:#ff6625 !important; */ font-weight: bold !important; text-decoration: none !important;}
 .rodape-cmais a:hover{text-decoration: none !important;}
 .rodape-cmais p{line-height:20px;margin:10px 0; text-align:left;}
 
