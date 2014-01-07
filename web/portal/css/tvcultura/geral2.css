@@ -8,7 +8,7 @@
 .box-interna .texto em { font-style: italic; }
 .box-interna .texto div { font-size: 14px; line-height: 20px; color:#333; }
 .box-interna .texto ul li { list-style-type: disc; color:#333; margin:0 0 5px 20px;  }
-.box-interna .texto ul li a { font-weight:bold; color:#ff6633; }
+.box-interna .texto ul li a { font-weight:bold; color:#0d6104; /* color:#ff6633; */  }
 
 .texto .foto { float:left; margin:0 15px 0 0}
 .texto .foto img { float:left; padding:0; }
@@ -37,9 +37,9 @@
 .box-relacionados li { width:90px; float:left; margin-right:20px; }
 .box-relacionados p { text-transform:uppercase; clear:both; }
 .box-relacionados .link li {width:310px;}
-.box-relacionados .link a { margin-bottom:10px; clear:both; font-size:16px; color:#ff6633; }
+.box-relacionados .link a { margin-bottom:10px; clear:both; font-size:16px; color:#0d6104; /* color:#ff6633; */ }
 .box-interna .leia {text-decoration:none; font-size:10px; color:#333; text-transform:uppercase;}
-.box-interna .leia a {font-size:12px; color:#ff6633; clear: both; text-transform:none; display: block;}
+.box-interna .leia a {font-size:12px; color:#0d6104; /* color:#ff6633; */ clear: both; text-transform:none; display: block;}
 .box-interna .tags,
 .box-interna .tags a {font-size:10px; text-transform:uppercase;}
 .box-interna .tags { margin:20px 0;}
@@ -162,15 +162,15 @@
 #agenda .abas-conteudo li{ overflow:hidden; }
 #agenda .abas-conteudo ul {display:none;}
 #agenda .abas-conteudo li.ativo .hora a,
-#agenda .abas-conteudo li:hover .hora a { color:#fff; background:#ff6633; text-decoration:none;}
+#agenda .abas-conteudo li:hover .hora a { color:#fff; background:#0d6104;/* background:#ff6633 */; text-decoration:none;}
 #agenda .abas-conteudo li.ativo .titulos,
-#agenda .abas-conteudo li:hover .titulos { color:#ff6633;}
+#agenda .abas-conteudo li:hover .titulos {color:#0d6104;/* color:#ff6633; */ }
 #agenda .abas-conteudo li.ativo,
 #agenda .abas-conteudo li:hover { background:none; }
 #agenda .abas-conteudo li .titulos {width:230px;}
 #agenda .hora { margin:10px 10px 0 0; height:65px; width:40px; float:left; }
 #agenda .hora a { width:40px; height:25px; line-height:25px; display:block; font-weight:bold; background:#666; color:#fff; -moz-border-radius:2px; border-radius:2px; text-align:center;}
-#agenda .hora .noar { color:#ff6633; font-size:10px; text-transform:uppercase; text-align:center; line-height:normal; }
+#agenda .hora .noar { color:#0d6104; /* color:#ff6633; */ font-size:10px; text-transform:uppercase; text-align:center; line-height:normal; }
 #agenda .txt-padrao { float:left; width:240px; margin-bottom:10px; }
 #agenda .completa { text-align:right; display:block; text-transform:uppercase; font-size:10px; background:#fff; width:305px; padding:0 5px 5px 0; }
 .box-padrao .abas .chat { width:60px; height:29px; border-bottom:none;}  
@@ -412,7 +412,7 @@
 .carrossel-videos .media .capa-video {width:310px; height:144px; position:absolute; top:20px; left:0; z-index:1000;}
 .carrossel-videos .titulos { font-size:16px; margin:10px 0 0 10px;}
 .carrossel-videos .box-compartilhar {position:absolute; bottom:0; left:0;}
-.carrossel-videos .box-compartilhar .compartilhar {border-color:#ff6633; height:17px;}
+.carrossel-videos .box-compartilhar .compartilhar {border-color:#0d6104;/* border-color:#ff6633 */; height:17px;}
 .carrossel-videos .conteudo {margin-bottom:10px;}
 /**** /video ****/
 
@@ -456,7 +456,7 @@
 .calendario-escuro { background:#fff; }
 .calendario-escuro a { background-position:0 -48px; margin:6px 10px; }
 .calendario-escuro .txt-12 { width:877px; background:none; font-weight:bold; }
-.calendario-escuro .txt-12 span { color:#ff6633; }
+.calendario-escuro .txt-12 span { color:#0d6104; /* color:#ff6633; */ }
 .lista-calendario { overflow:hidden;  }
 .lista-calendario li { margin-bottom:20px; float:left; width:640px;  }
 .lista-calendario .barra-grade {  background:#fff; height:30px; border-bottom:2px solid #f5f5f5; border-right:2px solid #f5f5f5; }
@@ -475,7 +475,7 @@
 .lista-calendario .grade a { background:url(../../images/ico-link.png) no-repeat 0 4px; padding-left:15px; width:250px; font-weight:bold;}
 .lista-calendario .grade .site {margin-left:0; font-size: 14px;}
 .lista-calendario .grade p {  margin:0 0 10px 0; width:610px;}
-.lista-calendario .grade p a {color:#ff6633; font-weight:bold;}
+.lista-calendario .grade p a {/* color:#ff6633; */ color:#0d6104; font-weight:bold;}
 .lista-calendario .grade .txt { font-weight:normal; line-height:20px; }
 .lista-calendario .grade .google-agenda { background:none; width:120px; padding:0; float:right}
 .lista-calendario .grade .google-agenda img { margin:0;}
@@ -483,7 +483,7 @@
 .lista-calendario .grade .info { font-size:16px; margin:10px; float:left; clear:both; font-weight:bold; }
 .lista-calendario .grade .mais { float:right; font-weight:bold; width:85px; margin-right:10px; background:none; margin-bottom:10px; }
 .lista-calendario .grade .capa-foto img { margin:0; width:310px; float:left; }
-.lista-calendario .grade .reprise { color:#ff6633; margin:0 0 10px 0; font-size:12px; font-weight:bold; line-height:14px; }
+.lista-calendario .grade .reprise { color:#0d6104; /*color:#ff6633;*/ margin:0 0 10px 0; font-size:12px; font-weight:bold; line-height:14px; }
 .lista-calendario .capa-foto { width:310px; height:186px; overflow:hidden; margin:0 10px 0 0; float:left; }
 .lista-calendario .capa-foto .legenda {  background:#efefef; font-size:10px; color:#666; padding:5px 0 0 5px; width:305px; margin:0; float:left; }
 .lista-calendario .informacoes { margin-left:10px; width:500px; font-weight:bold; font-size:16px; }
@@ -503,12 +503,12 @@
 .contador { clear:both; }
 .contador p { font-weight:bold; margin:20px 0 40px 0; font-size:16px; clear:both }
 .contador .proximos { margin:0 0 20px 0; text-align:left; }
-.contador span { font-size:25px; color:#ff6633; margin:0 20px; }
+.contador span { font-size:25px; color:#0d6104; /* color:#ff6633; */ margin:0 20px; }
 /**** /contador ****/
 
 /**** links ****/
 .box-interna .texto p a,
-.lista-calendario .grade p a {color:#ff6633; font-weight:bold;}
+.lista-calendario .grade p a {color:#0d6104; /* color:#ff6633; */ font-weight:bold;}
 /**** /links ****/
 /**** /GRADE ****/
 
@@ -524,8 +524,8 @@
 .blocos .lista-blogs li p { clear:both;}  
 .blocos .lista-blogs li a { font:normal 14px arial; } 
 .blocos .lista-blogs .txt { margin-top:10px; display:block;  }
-.blocos .lista-blogs .titulo { margin-bottom:0; color:#ff6633; }
-.blocos .lista-blogs .titulo:hover { color:#ff6633; }
+.blocos .lista-blogs .titulo { margin-bottom:0; color:#0d6104; /*color:#ff6633;*/ }
+.blocos .lista-blogs .titulo:hover { color:#0d6104; /*color:#ff6633;*/ }
 /******** /LISTA BLOGS ********/
 
 /******** PAGINACAO ********/
@@ -694,7 +694,7 @@
 .blocos li p a { font-size:16px; font-weight:bold; margin-left:3px; }
 .blocos li a.bg { width:200px; height:109px; position:relative; overflow:hidden; display:block; margin-bottom:5px; border:3px solid transparent; }
 .blocos li a.bg img {height: 150px; position: relative; top: -22px; width: 200px;}
-.blocos li a.bg:hover { border-color:#ff6633;}  
+.blocos li a.bg:hover { /* border-color:#ff6633; */ border-color:#0d6104;}  
 .menu2 #lista-destaques span,
 .blocos li a.bg span { position:absolute; bottom:10px; right:10px; width:16px; height:16px; background:url(../../images/btn-play.png) no-repeat 0 -16px;; }
 .menu2 #lista-destaques a:hover span,
@@ -708,7 +708,7 @@
 #menu-rodape #logos .carrossel .jcarousel-item { width:120px; height:66px; margin:0 15px 0 0;}  
 #menu-rodape #logos .carrossel .jcarousel-item a { background:#f2f0f0; -moz-border-radius:8px 10px; border-radius:8px 10px; width:116px; height:62px; margin-bottom:20px; border:2px solid transparent;}
 #menu-rodape #logos .carrossel .jcarousel-item a:hover,
-#menu-rodape #logos .carrossel .jcarousel-item a.ativo { border-color:#ff6633;}  
+#menu-rodape #logos .carrossel .jcarousel-item a.ativo { /* border-color:#ff6633; */ border-color:#0d6104;}  
 #menu-rodape #logos .carrossel .jcarousel-item a img { margin:10px; width:92px; height:42px;}  
 #menu-rodape #logos .carrossel .jcarousel-next {right:-15px;}
 #menu-rodape #logos .carrossel .jcarousel-prev {right:6px;}
@@ -812,7 +812,7 @@ hr{ clear: both; display: block; height: 0px; visibility: hidden; }
 #box-videos .carrossel {margin:0; width:310px;}
 #box-videos .carrossel .jcarousel-item {height:330px;}
 #box-videos .carrossel .jcarousel-item .img-150x90 {border:3px solid transparent; display:block; float:left; margin-right:10px; width:144px; height:84px;}
-#box-videos .carrossel .jcarousel-item .img-150x90:hover {border-color:#ff6633;}
+#box-videos .carrossel .jcarousel-item .img-150x90:hover {/*border-color:#ff6633;*/ border-color:#0d6104;}
 #box-videos .carrossel .jcarousel-item a img { height: 112px; position: relative;top: -14px; width: 150px;}
 #box-videos .carrossel li {width:310px; margin:0;}
 #box-videos .carrossel .jcarousel-item a,
@@ -842,7 +842,7 @@ div.jp-audio {clear:both;}
 #saibamais h4 {font-size:10px; text-transform:uppercase; color:#333; border-bottom:1px dotted #666; padding-bottom:3px; margin-bottom:3px;}
 #saibamais .conteudo { clear:both;}
 #saibamais .conteudo li {margin:0 0 10px 0;}
-#saibamais .titulos {color:#ff6633;}
+#saibamais .titulos {color:#0d6104; /*color:#ff6633;*/}
 
 /* TWITTER */
 #twitter {border:1px solid #666}
@@ -855,7 +855,7 @@ div.jp-audio {clear:both;}
 #twitter ul img {width:30px;}
 #twitter ul li {border-bottom:1px dotted #ddd; padding-top:5px; text-align:left; overflow:hidden; margin-top:0; padding-bottom:0;}
 #twitter ul .avatar {margin: 10px;}
-#twitter ul li a { color:#ff6633;}
+#twitter ul li a { color:#0d6104; /*color:#ff6633;*/}
 #twitter ul li a,
 #twitter ul li p {font-size:12px; line-height:16px; margin-bottom:5px;/*margin-left:50px; padding-right:20px;*/}
 #twitter ul li p {width:290px;}
@@ -896,7 +896,7 @@ div.jp-audio {clear:both;}
 .form-lateral .contato form label span {font-size:10px; font-weight: normal; text-transform:none;}
 .form-lateral .contato form .linha .enviar {width:137px; clear: both;}
 .form-lateral .msgErro,
-.form-lateral .msgAcerto { background-color:#ff6633; margin: 0 0 0 5px ; width: 290px;}
+.form-lateral .msgAcerto { background-color:#0d6104; /*background-color:#ff6633;*/ margin: 0 0 0 5px ; width: 290px;}
 .form-lateral .msgAcerto { *margin-left:3px;}
 .form-lateral .boxMsg { width: 228px;}
 /* /FORMULARIO LATERAL */

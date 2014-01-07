@@ -12,7 +12,7 @@
 #carrossel-personagem .slider li { height:auto; width:auto; }
 #slider .mpc_ls_ui_button.style02 { background: url("/portal/images/capaPrograma/vilasesamo2/sprite-setas.png")  0 -1565px; ; width: 46px; height: 70px; }
 #slider .mpc_ls_next_slide.style02 { background-position:  0 -1267px; }
-.navbar-inverse .navbar-inner.topo-vila { background:  url("/portal/images/capaPrograma/vilasesamo2/bg-topo-vila-home.jpg") repeat-x; height:55px; }
+.navbar-inverse .navbar-inner.topo-vila { /* background:  url("/portal/images/capaPrograma/vilasesamo2/bg-topo-vila-home.jpg") repeat-x */; height:55px; }
 #content { top:51px; }
 /* /carrossel personagem */
 
