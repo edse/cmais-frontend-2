@@ -58,39 +58,55 @@
       
       <!-- MIOLO -->
    	   <section id="miolo">
-   	   	<div class="box-interna grid2">
-   	   		<h3>Timeline 1964 - 50 anos do Golpe</h3>
-   	   		<p>Aqui vai uma breve descrição se precisar, bla bla bla bla<br>
-   	   			bla bla bla
-   	   		</p>
-   	   	</div>
-          <!-- INICIO TIMELINE -->
-          <div class="" style="height: 500px;">
-            <div id="tvcultura-embed"></div>
-            <script type="text/javascript">
-              var timeline_config = {
-               width: "100%",
-               height: "100%",
-               source: 'http://172.20.1.79:8080/tela2/example_jsonp.jsonp',
-               start_at_slide: 0,
-               start_zoom_adjust: 2,
-               embed_id: "tvcultura-embed",
-               css: "/portal/css/tvcultura/sites/1964.css",
-              /* css: "http://172.20.1.79:8080/tela2/js/timelinejs/css/timeline.css",*/
-               js: "/portal/js/timeline/timeline-min.js"
-              }
-            </script>
-            <script type="text/javascript" src="/portal/js/timeline/storyjs-embed.js"></script>
-            <!-- /FIM TIMELINE -->
-            <ul id="apoio" class="grid3">
-	              <li><a href="http://www.desenvolvimento.sp.gov.br" class="governoSp"><img src="http://cmais.com.br/portal/univesptv/images/logo-goversoSp.jpg" alt="Governo do Estado de São Paulo"></a></li>
-	              <li><a href="http://www.fapesp.br" class="fapesp"><img src="http://cmais.com.br/portal/univesptv/images/logo-fapesp.png" alt="FAPESP"></a></li>
-	              <li><a href="http://www.unicamp.br" class="unicamp"><img src="http://cmais.com.br/portal/univesptv/images/logo-unicamp.png" alt="UNICAMP"></a></li>
-	              <li><a href="http://www.unesp.br" class="unesp"><img src="http://cmais.com.br/portal/univesptv/images/logo-unesp.png" alt="UNESP"></a></li>
-	              <li><a href="http://www.usp.br" class="usp"><img src="http://cmais.com.br/portal/univesptv/images/logo-usp.png" alt="USP"></a></li>
-	              <li><a href="http://www.fundap.sp.gov.br" class="fundap"><img src="http://cmais.com.br/portal/univesptv/images/logo-fundap.jpg" alt="FUNDAP"></a></li>
-	              <li><a href="http://www.centropaulasouza.sp.gov.br" class="cps"><img src="http://cmais.com.br/portal/univesptv/images/logo-cps.png" alt="Centro Paula Souza"></a></li>
-	          </ul>
+   	   	<!--BOX LATERAL-->
+   	   	<ul class="box-lateral posicao-lateral" id="menuFloat" style="display: block; position: fixed; float: left; width: 34px; height: 275px; top: 231px;">         
+          <li><a class="cmais" href="http://cmais.com.br" title="cmais+ O portal de conteúdo da Cultura">cmais+ O portal de conteúdo da Cultura</a></li>
+          <li><a class="tvcultura" href="http://tvcultura.cmais.com.br" title="TV Cultura">TV Cultura</a></li>
+          <li><a class="tvrtb" href="http://tvratimbum.cmais.com.br" title="TV Rá Tim Bum">TV Rá Tim Bum</a></li>
+          <li><a class="multicultura" href="http://multicultura.cmais.com.br" title="multiCULTURA">multiCULTURA</a></li>
+          <li><a class="univesptv" href="http://univesptv.cmais.com.br/" title="Univesp TV">Univesp TV</a></li>
+          <li><a class="culturabrasil" href="http://www.culturabrasil.com.br" title="culturabrasil">culturabrasil</a></li>
+          <li><a class="radioculturafm" href="http://culturafm.cmais.com.br/" title="Rádio Cultura FM">Rádio Cultura FM</a></li>
+        </ul>
+        <!--BOX LATERAL-->
+        <!--CONTEUDO-->
+        <div id="conteudo-pagina">
+	        <div class="capa grid3">
+		   	   	<div class="box-interna grid2">
+		   	   		<h3>Timeline 1964 - 50 anos do Golpe</h3>
+		   	   		<p>Aqui vai uma breve descrição se precisar, bla bla bla bla<br>
+		   	   			bla bla bla
+		   	   		</p>
+		   	   	</div>
+	          <!-- INICIO TIMELINE -->
+	          <div class="" style="height: 500px;">
+	            <div id="tvcultura-embed"></div>
+	            <script type="text/javascript">
+	              var timeline_config = {
+	               width: "100%",
+	               height: "100%",
+	               source: 'http://172.20.1.79:8080/tela2/example_jsonp.jsonp',
+	               start_at_slide: 0,
+	               start_zoom_adjust: 2,
+	               embed_id: "tvcultura-embed",
+	               css: "/portal/css/tvcultura/sites/1964.css",
+	              /* css: "http://172.20.1.79:8080/tela2/js/timelinejs/css/timeline.css",*/
+	               js: "/portal/js/timeline/timeline-min.js"
+	              }
+	            </script>
+	            <script type="text/javascript" src="/portal/js/timeline/storyjs-embed.js"></script>
+	            <!-- /FIM TIMELINE -->
+	            <ul id="apoio" class="grid3">
+		              <li><a href="http://www.desenvolvimento.sp.gov.br" class="governoSp"><img src="http://cmais.com.br/portal/univesptv/images/logo-goversoSp.jpg" alt="Governo do Estado de São Paulo"></a></li>
+		              <li><a href="http://www.fapesp.br" class="fapesp"><img src="http://cmais.com.br/portal/univesptv/images/logo-fapesp.png" alt="FAPESP"></a></li>
+		              <li><a href="http://www.unicamp.br" class="unicamp"><img src="http://cmais.com.br/portal/univesptv/images/logo-unicamp.png" alt="UNICAMP"></a></li>
+		              <li><a href="http://www.unesp.br" class="unesp"><img src="http://cmais.com.br/portal/univesptv/images/logo-unesp.png" alt="UNESP"></a></li>
+		              <li><a href="http://www.usp.br" class="usp"><img src="http://cmais.com.br/portal/univesptv/images/logo-usp.png" alt="USP"></a></li>
+		              <li><a href="http://www.fundap.sp.gov.br" class="fundap"><img src="http://cmais.com.br/portal/univesptv/images/logo-fundap.jpg" alt="FUNDAP"></a></li>
+		              <li><a href="http://www.centropaulasouza.sp.gov.br" class="cps"><img src="http://cmais.com.br/portal/univesptv/images/logo-cps.png" alt="Centro Paula Souza"></a></li>
+		          </ul>
+	          </div>
+          	</div>
           </div>
        </section><!--/MIOLO -->
     </div><!-- /CAPA SITE -->
