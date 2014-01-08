@@ -57,7 +57,7 @@
 			              var timeline_config = {
 			               width: "100%",
 			               height: "100%",
-			               source: 'http://172.20.1.14/d.php/1964/linha-do-tempo',
+			               source: 'http://cmais.com.br/d.php/1964/linha-do-tempo',
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
