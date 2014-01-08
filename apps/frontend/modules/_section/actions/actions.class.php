@@ -1705,8 +1705,10 @@ class _sectionActions extends sfActions
     }
     if($this->site->getSlug() == "educacaoemdia")
       $pagelimit = 3;
-    if($this->site->getSlug() == "1964")
+    if($this->site->getSlug() == "1964" && $this->section->getSlug() == "linha-do-tempo"){
       $pagelimit = 99;
+      $this->setLayout(false);
+    }
     if(!isset($pagelimit))
       $pagelimit = 9;
 
