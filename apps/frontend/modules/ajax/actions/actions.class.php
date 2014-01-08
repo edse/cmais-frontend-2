@@ -2665,5 +2665,54 @@ EOT;
 	die();	
   }  
 
-  
+  public function execute1964contents(sfWebRequest $request){
+    die('storyjs_jsonp_data = {
+    "timeline":
+    {
+        "date": [
+            {
+                "startDate":"2013,1,12,7,0",
+                "endDate":"2013,1,12,8,0",
+                "headline":"Mosaicos",
+                "text":"<p>In true political fashion, his character rattles off common jargon heard from people running for office.</p><button class=\'btn btn-large btn-primary\' type=\'button\' onclick=\'self.location.href=\"interatividade.html\"\'>Interatividade  &raquo;</button>",
+                "asset":
+                {
+                    "media":"http://midia.cmais.com.br/displays/f038729dc5bab0c07138e386a19ae7e2353f7c50.jpg",
+                    "thumbnail":"http://midia.cmais.com.br/displays/f038729dc5bab0c07138e386a19ae7e2353f7c50.jpg",
+                    "credit":"cmais+ o portal de conteÃºdo da Cultura",
+                    "caption":"Mosaicos"
+                }
+            },
+            {
+                "startDate":"2013,1,12,8,0",
+                "endDate":"2013,1,12,9,0",
+                "headline":"Missa de Aparecida",
+                "text":"<p>In true political fashion, his character rattles off common jargon heard from people running for office.</p><button class=\'btn btn-large btn-primary\' type=\'button\' onclick=\'self.location.href=\"interatividade.html\"\'>Interatividade  &raquo;</button>",
+                "asset":
+                {
+                    "media":"http://midia.cmais.com.br/programs/0e3ab178db7352d30b22b4f8d7c27bdd738fbb23.jpg",
+                    "thumbnail":"http://midia.cmais.com.br/programs/0e3ab178db7352d30b22b4f8d7c27bdd738fbb23.jpg",
+                    "credit":"cmais+ o portal de conteÃºdo da Cultura",
+                    "caption":"Missa de Aparecida"
+                }
+            },
+            {
+                "startDate":"2013,1,13,14,0",
+                "endDate":"2013,1,13,15,0",
+                "headline":"As Aventuras de Tintim",
+                "text":"<p>In true political fashion, his character rattles off common jargon heard from people running for office.</p><button class=\'btn btn-large btn-primary\' type=\'button\' onclick=\'self.location.href=\"interatividade.html\"\'>Interatividade  &raquo;</button>",
+                "asset":
+                {
+                    "media":"http://midia.cmais.com.br/programs/78edcd81118874f1e6c0d58261733b07f011f25d.jpg",
+                    "thumbnail":"http://midia.cmais.com.br/programs/78edcd81118874f1e6c0d58261733b07f011f25d.jpg",
+                    "credit":"cmais+ o portal de conteÃºdo da Cultura",
+                    "caption":"As Aventuras de Tintim"
+                }
+            }            
+        ]
+    }
+}
+    ');
+  }
+
 }
