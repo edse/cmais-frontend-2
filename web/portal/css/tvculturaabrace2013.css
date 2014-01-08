@@ -80,8 +80,8 @@ body.tvculturaabrace{background:url("http://cmais.com.br/portal/images/capaProgr
 #menu-portal .box-vjtambem .tit,
 #menu-portal .tit{color:#379520!important;}
 .box-padrao .topo span {background: url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/aba-titulo-abrace.png") no-repeat right 0!important;}
-.box-padrao .claro .capa-titulo,
-.box-padrao .capa-titulo{background: #0d6104;}
+/*.box-padrao .claro .capa-titulo,
+.box-padrao .capa-titulo{background: #0d6104;}*/
 .lista-blogs .chapeu {color: #0d6104;}
 .lista-blogs a {color:#0d6104!important}
 /* /cmais abrace */
