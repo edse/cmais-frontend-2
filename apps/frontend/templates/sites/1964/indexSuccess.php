@@ -60,7 +60,7 @@
 			              var timeline_config = {
 			               width: "100%",
 			               height: "100%",
-			               source: 'http://cmais.com.br/d.php/ajax/1964contents',
+			               source: '/ajax/1964contents.jsonp',
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
