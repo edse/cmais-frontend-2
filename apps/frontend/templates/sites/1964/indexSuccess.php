@@ -6,9 +6,9 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
     <!-- CAPA SITE -->
-    <div id="capa-site">
-      <!-- BARRA SITE -->
-      <div id="barra-site">
+	<div id="capa-site">
+     	<!-- BARRA SITE -->
+  		<div id="barra-site">
 	       <div class="topo-programa">
 		           <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/univesptv/images/logo-univesptv.png" /></a></h2>
 		          
@@ -30,13 +30,13 @@
 		        <!-- /menu interna -->                 
 	    	</div>
 	   		<!-- /box-topo -->
-	  </div>	
-      <!-- /BARRA SITE -->
+		  </div>	
+	      <!-- /BARRA SITE -->
       
       <!-- MIOLO -->
    	  <div id="miolo">
    	   	
-   	   <!-- BOX LATERAL -->
+   	    <!-- BOX LATERAL -->
         <?php include_partial_from_folder('blocks','global/shortcuts') ?>
         <!-- BOX LATERAL -->
         
@@ -45,10 +45,13 @@
 	         
 	         <!-- CAPA 3-->
          	 <div class="capa grid3">
+         	 	
+         	 	<!--TITULO-->
 		   	   	 <div class="box-interna grid2">
 			   	   	<h3><?php echo $section->getTitle() ?></h3>
 	                <p><?php echo $section->getDescription() ?></p>
 		   	   	 </div>
+		   	   	 <!--TITULO-->
 		   	   	
 		          <!-- INICIO TIMELINE -->
 		          <div class="" style="height: 500px;">
@@ -61,7 +64,7 @@
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
-			               css: "/portal/css/tvcultura/sites/1964.css",
+			               css: "/portal/js/timeline/1964.css",
 			              /* css: "http://172.20.1.79:8080/tela2/js/timelinejs/css/timeline.css",*/
 			               js: "/portal/js/timeline/timeline-min.js"
 			              }
