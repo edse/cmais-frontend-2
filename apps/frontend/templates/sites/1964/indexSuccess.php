@@ -33,7 +33,7 @@
           </div>
           <!-- /curtir -->
                     
-                    <!-- horario -->
+          <!-- horario -->
           <div id="horario">
             <p>Canal digital 2.2 da multiprogramação da TV Cultura</p>
           </div>
@@ -42,8 +42,9 @@
         </div>
 			<!-- box-topo -->
 	        <div class="box-topo grid3">
+	        	  <?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
 	          <!-- menu interna -->
-	          <ul class="menu-interna grid3">
+	          <!--ul class="menu-interna grid3">
 				<li><a href="" title="">Opção1</a></li>
 				<li><a href="" title="">Opção2</a></li>
 				<li><a href="" title="">Opção3</a></li>
@@ -73,10 +74,12 @@
         <div id="conteudo-pagina">
 	        <div class="capa grid3">
 		   	   	<div class="box-interna grid2">
-		   	   		<h3>Timeline 1964 - 50 anos do Golpe</h3>
+		   	   		<!--<h3>Timeline 1964 - 50 anos do Golpe</h3>
 		   	   		<p>Aqui vai uma breve descrição se precisar, bla bla bla bla<br>
 		   	   			bla bla bla
-		   	   		</p>
+		   	   		</p>-->
+		   	   	<h3><?php echo $section->getTitle() ?></h3>
+                <p><?php echo $section->getDescription() ?></p>
 		   	   	</div>
 	          <!-- INICIO TIMELINE -->
 	          <div class="" style="height: 500px;">
