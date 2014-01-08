@@ -60,7 +60,7 @@
 			              var timeline_config = {
 			               width: "100%",
 			               height: "100%",
-			               source: '/actions/1964/json.php',
+			               source: 'http://172.20.1.79:8080/tela2/example_jsonp.jsonp',
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
