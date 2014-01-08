@@ -10,7 +10,7 @@
      	<!-- BARRA SITE -->
   		<div id="barra-site">
 	       <div class="topo-programa">
-		           <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="/portal/univesptv/images/logo-univesptv.png" /></a></h2>
+		           <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/43cfb180f75e0cbc2c2823f4cfb603643151ab5a.png" /></a></h2>
 		          
 		          <!-- curtir -->
 		          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri)) ?>
@@ -72,12 +72,11 @@
 			            <script type="text/javascript" src="/portal/js/timeline/storyjs-embed.js"></script>
 		            </div>
 		            <!-- /FIM TIMELINE -->
-	            
-	             <!-- APOIO -->
-       			 <?php include_partial_from_folder('sites/univesptv', 'global/apoio') ?>
-		         <!-- APOIO -->
-		         
-         	</div><!--/CAPA-->
+	            		         
+     		</div><!--/CAPA-->
+             <!-- APOIO -->
+   			 <?php include_partial_from_folder('sites/univesptv', 'global/apoio') ?>
+	         <!-- APOIO -->
          	
         </div><!--/CONTEUDO-->
         
