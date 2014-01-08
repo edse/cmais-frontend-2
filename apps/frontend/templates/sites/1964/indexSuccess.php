@@ -60,7 +60,7 @@
 			              var timeline_config = {
 			               width: "100%",
 			               height: "100%",
-			               source: '/actions/1964/json.jsonp',
+			               source: 'http://univesptv.cmais.com.br/1964/linha-do-tempo.json',
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
