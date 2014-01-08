@@ -4,7 +4,7 @@ storyjs_jsonp_data = {
         "date": [
           <?php foreach($pager->getResults() as $d): ?>
             <?php
-            $date1 = implode(",", explode("/",$d->Asset->getSource()));
+            $date1 = implode(",", explode("/",$d->AssetContent->getSource()));
             ?>
             {
                 "startDate":"<?php echo $date1?>,0,0",
