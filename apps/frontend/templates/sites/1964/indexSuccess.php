@@ -60,7 +60,8 @@
 			              var timeline_config = {
 			               width: "100%",
 			               height: "100%",
-			               source: '/ajax/1964contents.jsonp',
+			               //source: '/ajax/1964contents.jsonp',
+			               source: "<?php echo url_for('homepage')?>ajax/1964contents.jsonp",
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
