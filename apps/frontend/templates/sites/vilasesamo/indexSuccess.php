@@ -24,7 +24,7 @@
         <?php if(isset($displays['destaques-de-assets'])): ?>
           <?php if(count($displays['destaques-de-assets']) > 0): ?>
       <!--section-->
-      <section class="destaques span8">
+      <section class="destaques span8" aria-label="links em destaque">
             <?php foreach($displays['destaques-de-assets'] as $d): ?>
               <?php
                 $sections = $d->Asset->getSections();
