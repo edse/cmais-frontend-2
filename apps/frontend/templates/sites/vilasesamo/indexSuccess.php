@@ -76,9 +76,16 @@
 <!--scripts e css banner-->
 
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
 <script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
 <script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
 <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
 
 <script>
 //carrossel personagens home
@@ -116,3 +123,4 @@ $('.inner.personagens a').mouseleave(function(){
  
 
 </script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
