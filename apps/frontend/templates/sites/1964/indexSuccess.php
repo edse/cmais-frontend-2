@@ -60,17 +60,11 @@
 			              var timeline_config = {
 			               width: "100%",
 			               height: "100%",
-//<<<<<<< HEAD
-			               //source: '/ajax/1964contents.jsonp',
-			               source: "<?php echo url_for('homepage')?>ajax/1964contents.jsonp",
-//=======
-			              // source: '/1964/linha-do-tempo.jsonp',
-//>>>>>>> fbcb2833c669fba9fcd274ac8dc74d5bccdffea1
+			               source: "<?php echo url_for('homepage')?>1964/linha-do-tempo.jsonp",
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
 			               css: "/portal/js/timeline/1964.css",
-			              /* css: "http://172.20.1.79:8080/tela2/js/timelinejs/css/timeline.css",*/
 			               js: "/portal/js/timeline/timeline-min.js"
 			              }
 			            </script>
