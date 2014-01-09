@@ -11,17 +11,17 @@
          
           <div class="slider-mask-wrap">
             <div class="slider-mask">
-              <ul class="slider-target" accesskey="Ctrl+p" aria-label="lista dos personagens Vila Sésamo">
+              <ul class="slider-target">
                 <?php if(isset($personagens)): ?>
                   <?php if(count($personagens) > 0 ): ?>
                     <?php foreach($personagens as $p): ?>
                       <li>
-                        <div class="inner personagens <?php echo $p->getSlug()?>" aria-hidden="true">
-                          <a href="/<?php echo $site->getSlug(); ?>/personagens/<?php echo $p->getSlug() ?>" title="" class="btn-<?php echo $p->getSlug() ?>" aria-hidden="true">
+                        <div class="inner personagens <?php echo $p->getSlug()?>">
+                          <a href="/<?php echo $site->getSlug(); ?>/personagens/<?php echo $p->getSlug() ?>" title="<?php echo $p->getTitle() ?>" class="btn-<?php echo $p->getSlug() ?>" aria-label="<?php echo $p->getTitle() ?>">
                             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem.png" alt="" />
                           </a>
                         </div>
-                        <a class="nome" href="/<?php echo $site->getSlug(); ?>/personagens/<?php echo $p->getSlug() ?>"><?php echo $p->getTitle() ?></a>
+                        <a class="nome" href="/<?php echo $site->getSlug(); ?>/personagens/<?php echo $p->getSlug() ?>" title="Bel"><?php echo $p->getTitle() ?></a>
                       </li>
                     <?php endforeach;?>
                   <?php endif; ?>
