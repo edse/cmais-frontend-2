@@ -1,5 +1,5 @@
-<link type="text/css" href="http://cmais.com.br//portal/univesptv/css/geral.css" rel="stylesheet" />
-<script type="text/javascript" src="http://cmais.com.br//portal/js/mediaplayer/swfobject.js"></script>
+<link type="text/css" href="http://cmais.com.br/portal/univesptv/css/geral.css" rel="stylesheet" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
 
 
 <?php use_helper('I18N', 'Date') ?>
