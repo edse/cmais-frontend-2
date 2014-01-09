@@ -113,6 +113,7 @@
   <body>
     <!-- header -->
     <header class="navbar navbar-inverse navbar-fixed-top"  aria-label="Menu topo Vila Sésamo">
+      <noscript>voce está sem javascript ativo</noscript>
       <!--div class="navbar-inner topo-cmais">
         <div class="container">
           <h2><a href="http://tvcultura.cmais.com.br/" title="TV Cultura" class="sprite-logo-cultura"></a></h2>
