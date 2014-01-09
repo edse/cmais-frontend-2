@@ -1,5 +1,5 @@
-<link type="text/css" href="/portal/univesptv/css/geral.css" rel="stylesheet" />
-<script type="text/javascript" src="/portal/js/mediaplayer/swfobject.js"></script>
+<link type="text/css" href="http://cmais.com.br//portal/univesptv/css/geral.css" rel="stylesheet" />
+<script type="text/javascript" src="http://cmais.com.br//portal/js/mediaplayer/swfobject.js"></script>
 
 
 <?php use_helper('I18N', 'Date') ?>
@@ -64,11 +64,11 @@
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
-			               css: "/portal/js/timeline/1964.css",
-			               js: "/portal/js/timeline/timeline-min.js"
+			               css: "http://univesptv.cmais.com.br/portal/js/timeline/1964.css",
+			               js: "http://univesptv.cmais.com.br/portal/js/timeline/timeline-min.js"
 			              }
 			            </script>
-			            <script type="text/javascript" src="/portal/js/timeline/storyjs-embed.js"></script>
+			            <script type="text/javascript" src="http://univesptv.cmais.com.br/portal/js/timeline/storyjs-embed.js"></script>
 		            </div>
 		            <!-- /FIM TIMELINE -->
 	            		         
