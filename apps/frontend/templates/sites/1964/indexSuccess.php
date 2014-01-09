@@ -60,7 +60,7 @@
 			              var timeline_config = {
 			               width: "100%",
 			               height: "100%",
-			               source: '/ajax/1964contents.jsonp',
+			               source: '/1964/linha-do-tempo.jsonp',
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
