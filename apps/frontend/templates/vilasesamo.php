@@ -2,14 +2,13 @@
 <!--html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="pt-br"-->
 <html lang="pt-br"> 
   <head>
-    <meta charset="UTF-8">
     <?php include_title() ?>
     <?php include_metas() ?>
     <?php include_meta_props() ?>
     
     <!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->
     <?php
-    $noscript = "<noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"
+    $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"
     ?> 
     
     <!-- Le styles -->  
