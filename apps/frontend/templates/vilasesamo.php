@@ -1,4 +1,4 @@
-<!DOCTYPE html lang="pt-br">
+<!DOCTYPE html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="pt-br"> 
   <head>
     <?php include_title() ?>
