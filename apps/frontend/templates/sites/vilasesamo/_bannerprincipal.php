@@ -2,7 +2,7 @@
     $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
     ?> 
   <!-- carrossel desktop-->
-  <section id="carrossel-destaque" role="banner" aria-label="seção com 6 baners de destaque">
+  <section id="carrossel-destaque" aria-label="seção com 6 baners de destaque">
     <!--Inicio-->
     <div id="slider" style="display:none;">
       <!--lista-->
@@ -202,22 +202,22 @@
           
           switch(i){
             case 0:
-              $(this).attr("aria-label", "Primeiro Baner:Link para Home do Site. Descrição: Bel acenando e falando: Olá! Bem Vindo ao nosso novo site.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>');
+              $(this).attr("aria-label", "Primeiro Baner:Link para Home do Site. Descrição: Bel acenando sorrindo comprimentando e falando - 'Olá! Bem Vindo ao nosso novo site'.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>');
             break;
             case 1:
-              $(this).attr("aria-label", "Segundo Baner:link para tela Jogos. Descrição:Groover esta vestindo um capacete e capa vermelha convidando você a brincar com os personagens do Vila-Sésamo.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/jogos');
+              $(this).attr("aria-label", "Segundo Baner:link para tela Jogos. Descrição:Groover esta vestido com um capacete e uma capa vermelha convidando você a brincar com os personagens do Vila-Sésamo.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/jogos');
             break;
             case 2:
-              $(this).attr("aria-label", "Terceiro Baner:  link para a tela vídeos. Descrição:Come-Come esta comendo um rolo de filme cinematográfico e dizendo 'Músicas e histórias para você curtir''").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/videos')
+              $(this).attr("aria-label", "Terceiro Baner:  link para a tela vídeos. Descrição:Come-Come esta comendo um rolo de filme cinematográfico e falando de boca cheia - 'Músicas e histórias para você curtir'.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/videos')
             break;
             case 3:
-              $(this).attr("aria-label", "Quarto Baner:link para a tela atividades. Descrição:Beto esta segurando um recorte de uma máscara e uma tesoura dizendo 'Use a criatividade' ").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/atividades')
+              $(this).attr("aria-label", "Quarto Baner:link para a tela atividades. Descrição:Beto esta segurando um recorte de uma máscara e uma tesoura convidando você a usar sua criatividade'. ").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/atividades')
             break;
             case 4:
-              $(this).attr("aria-label", "Quinto Banner:link para página Persanagens Descrição:Elmo esta atrás de um muro amarelosó com a cabeça aparecendo te convidando a conhecer a Turma do Vila Sésamo").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/personagens');
+              $(this).attr("aria-label", "Quinto Banner:link para página Persanagens Descrição:Elmo esta atrás de um muro amarelo só com a os olhos aparecendo, te convidando a conhecer a Turma do Vila Sésamo").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/personagens');
             break;
             case 5:
-              $(this).attr("aria-label", "Sexto Banner:link para página Pais e Educadores. Descrição:Garibaldo Sorrindo. Dicas, conteúdos e diálogo. Leia, participe, compartilhe.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/pais-e-educadores')
+              $(this).attr("aria-label", "Sexto Banner:link para página Pais e Educadores. Descrição:Garibaldo Sorrindo para você. Dicas, conteúdos e diálogo. Leia, participe, compartilhe.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/pais-e-educadores')
             break;
           }  
           
