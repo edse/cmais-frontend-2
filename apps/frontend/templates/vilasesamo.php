@@ -275,7 +275,7 @@
         </section>
         <!--/section-->
       <section class="relacionados" aria-label="sites relacionados">
-        <h3>Sites relacionados</h3>
+        <h1>Sites relacionados</h1>
         <ul>
           <li><a href="http://tvcultura.cmais.com.br/" target="_self" class="sprite-logo-cultura2" title="TV Cultura"></a></li>
           <li><a href="http://tvratimbum.cmais.com.br/" target="_self" class="sprite-logo-rtb" title="TV Rá Tim Bum"></a></li>
