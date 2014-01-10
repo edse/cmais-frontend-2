@@ -67,15 +67,13 @@ $assets = $pager->getResults();
     </ul>
      
     <span class="divider last">|</span>
-    <form class="form-search" action="" name="frmBusca" id="frmBusca" method="get">
+     */
+     ?>
+     <form class="form-search" action="" name="frmBusca" id="frmBusca" method="get">
       <input type="hidden" name="letra-cocorico" id="letra" value="">
       <input type="text" class="input-medium search-query" name="busca" id="busca">
       <button type="submit" class="btn"><i class="icon-search"></i></button>
     </form>
-     * * 
-     */
-     ?>
-     
   </div>  
  
   
@@ -129,20 +127,20 @@ $assets = $pager->getResults();
   
   
    <div id="google_search" style="display:none">
-		<script>
-		  (function() {
-		    var cx = '005232987476052626260:cib-ufkaquy';
-		    var gcse = document.createElement('script');
-		    gcse.type = 'text/javascript';
-		    gcse.async = true;
-		    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-		        '//www.google.com/cse/cse.js?cx=' + cx;
-		    var s = document.getElementsByTagName('script')[0];
-		    s.parentNode.insertBefore(gcse, s);
-		  })();
-		</script>
-		<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
-   </div>	
+    <script>
+      (function() {
+        var cx = '005232987476052626260:cib-ufkaquy';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <gcse:searchresults-only>Buscando...</gcse:searchresults-only>
+   </div> 
   
   
      <?php if($pager->haveToPaginate()): ?>
@@ -176,22 +174,22 @@ $assets = $pager->getResults();
     <?php endif; ?>
   
   
-	<script>
-		function getURLParameter(name) {
-		    return decodeURI(
-		        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
-		    );
-		}
-		if(getURLParameter("busca") == "null" || getURLParameter("busca") == ""){
-			$('.destaques').show();
-			$('.pagination-centered').show();
-		}else{
-			var busca = getURLParameter("busca");
-			$('#busca').val(busca);
-			$('#google_search').show();
-			$('.pagination-centered').hide();
-		}
-	</script>
+  <script>
+    function getURLParameter(name) {
+        return decodeURI(
+            (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+        );
+    }
+    if(getURLParameter("busca") == "null" || getURLParameter("busca") == ""){
+      $('.destaques').show();
+      $('.pagination-centered').show();
+    }else{
+      var busca = getURLParameter("busca");
+      $('#busca').val(busca);
+      $('#google_search').show();
+      $('.pagination-centered').hide();
+    }
+  </script>
   
   <!-- rodapé-->
   <div class="row-fluid  border-top"></div>
