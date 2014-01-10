@@ -36,7 +36,11 @@ if(count($bs) > 0){
 } 	
 	
 ?>
-<meta http-equiv="refresh" content="18000">
+<noscript>
+	<meta http-equiv="refresh" content="250" />
+</noscript>
+<meta http-equiv="refresh" content="18000" />
+		
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/jornalismo-novo2013.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
