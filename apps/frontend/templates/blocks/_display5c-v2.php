@@ -1,4 +1,4 @@
-        <?php if(isset($displays)): ?>
+        <?php /* if(isset($displays)): ?>
           <?php if(count($displays) > 0): ?>
           <!-- DESTAQUE 5C -->     
             <div class="novoDestaque">
@@ -65,7 +65,7 @@
 
 
 
-        <?php if(isset($_REQUEST['test'])): ?>
+        <?php if(isset($_REQUEST['test'])): */ ?>
           <!-- DESTAQUE 5C -->     
             <div class="novoDestaque">
               <div class="enunciado">
@@ -110,4 +110,4 @@
               </div>
             </div>                                                                               
           <!-- /DESTAQUE 5C -->         
-        <?php endif; ?>
+        <?php //endif; ?>
