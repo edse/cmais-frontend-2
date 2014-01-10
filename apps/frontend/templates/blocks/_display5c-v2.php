@@ -1,4 +1,4 @@
-        <?php if(isset($displays)): ?>
+        <?php /* if(isset($displays)): ?>
           <?php if(count($displays) > 0): ?>
           <!-- DESTAQUE 5C -->     
             <div class="novoDestaque">
@@ -65,7 +65,7 @@
 
 
 
-        <?php if(isset($_REQUEST['test'])): ?>
+        <?php if(isset($_REQUEST['test'])): */ ?>
           <!-- DESTAQUE 5C -->     
             <div class="novoDestaque">
               <div class="enunciado">
@@ -91,16 +91,16 @@
                       </a>                      
                     </div>
                     <a class="foto" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                      <img alt="<?php echo $d->getTitle() ?>" src="<?php echo $d->retriveLiveImage() ?>"<?php if($d->getImage()==""):?> style="height:241px; margin-left: -100px;"<?php endif;?> />
+                      <img alt="<?php echo $d->getTitle() ?>" src="<?php echo $d->retriveLiveImage() ?>" style="height:241px; margin-left: -100px;" />
                     </a>
                     <div class="descricao">
                       <a class="tit" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                         <?php echo $d->retriveTitle() ?>
                       </a>
                       <?php if(strlen($d->Program->getSchedule()) <= 30): ?>
-                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><?php if($d->Program->getSchedule()!="") echo html_entity_decode($d->Program->getSchedule()); ?></a>
+                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><?php if($d->Program->getSchedule()!="") echo html_entity_decode(str_replace(":", "h", $d->Program->getSchedule())); ?></a>
                       <?php else: ?>
-                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><?php echo ucfirst(format_date($d->getDateStart(), "EEEE"))." às ".format_date($d->getDateStart(), "t"); ?></a>
+                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><?php echo ucfirst(format_date($d->getDateStart(), "EEEE"))." às ".str_replace(":", "h", format_date($d->getDateStart(), "t")); ?></a>
                       <?php endif; ?>
                     </div>
                     
@@ -110,4 +110,4 @@
               </div>
             </div>                                                                               
           <!-- /DESTAQUE 5C -->         
-        <?php endif; ?>
+        <?php //endif; ?>
