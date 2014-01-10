@@ -62,8 +62,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <?php endif; ?>
         
       <div class="span4 banner" >
-        <a href="/<?php echo $site->getSlug() ?>/categorias/incluir-brincando" title="Incluir Brincando" class="icones-btns-sprite icone-incluir-brincando"></a>
-        <a href="/<?php echo $site->getSlug() ?>/categorias/habitos-saudaveis" title="Hábitos para uma vida saudável" class="icones-btns-sprite icone-habitos-saudaveis"></a>
+        <a href="http://cmais.com.br/<?php echo $site->getSlug() ?>/categorias/incluir-brincando" title="Incluir Brincando" class="icones-btns-sprite icone-incluir-brincando"></a>
+        <a href="http://cmais.com.br/<?php echo $site->getSlug() ?>/categorias/habitos-saudaveis" title="Hábitos para uma vida saudável" class="icones-btns-sprite icone-habitos-saudaveis"></a>
         <!--a href="javascript:;" class="acha" title="O que achou do novo site?"><i class="icones-form icone-fale-conosco-br"></i>O que achou do site novo?</a-->
       </div>
     </div>

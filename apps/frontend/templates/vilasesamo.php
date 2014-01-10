@@ -1,5 +1,5 @@
 <!DOCTYPE html lang="pt-br">
-<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="pt-br"> 
   <head>
     <?php include_title() ?>
     <?php include_metas() ?>
@@ -21,7 +21,7 @@
 
     <script src="http://cmais.com.br/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
     <?php echo $noscript; ?>
-    <script src="http://cmais.com.br/portal/js/dotdotdot-1.6.7/jquery.dotdotdot.min.js" type="text/javascript"></script>
+    
 
      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
      <!--[if lt IE 9]>

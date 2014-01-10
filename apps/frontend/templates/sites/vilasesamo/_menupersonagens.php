@@ -19,7 +19,7 @@
                       <li>
                         <div class="inner personagens <?php echo $p->getSlug()?>" aria-hidden="true">
                           <a href="/<?php echo $site->getSlug(); ?>/personagens/<?php echo $p->getSlug() ?>" title="" class="btn-<?php echo $p->getSlug() ?>" aria-hidden="true">
-                            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem.png" alt="" />
+                            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem.png" alt="<?php echo $p->getSlug() ?>" />
                           </a>
                         </div>
                         <a class="nome" href="/<?php echo $site->getSlug(); ?>/personagens/<?php echo $p->getSlug() ?>"><?php echo $p->getTitle() ?></a>
