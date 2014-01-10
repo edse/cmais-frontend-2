@@ -34,6 +34,18 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                   if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
                     $assetSection = $s;
                     break;
+                    switch($s){
+                      case "videos":
+                        $decricaoImagem = "Desculpe, a imagem esta sem descrição mas o vídeo é muito legal, assista-o!";
+                      break;
+                      case "jogos":
+                        $decricaoImagem = "Desculpe, a imagem esta sem descrição mas o jogo é muito legal, jogue-o!";
+                      break;
+                      case "atividades":
+                        $decricaoImagem = "Desculpe, a imagem esta sem descrição mas a atividade é muito legal, brinque com ela!";
+                      break;
+                          
+                    }
                   }
                 }
                 $preview = $d->Asset->retriveRelatedAssetsByRelationType('Preview')
@@ -55,8 +67,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 <?php
                 if(count($preview)>0):
                   $decricaoImagem = $preview[0]->AssetImage->getHeadline(); 
-                else:
-                  $decricaoImagem = "Desculpe, a imagem esta sem descrição.";  
                 endif; ?>
               <?php endif; ?>  
               <span aria-label="<?php echo ". ".$d->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>"></span>
