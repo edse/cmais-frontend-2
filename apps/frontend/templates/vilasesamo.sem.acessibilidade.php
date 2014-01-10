@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<!--html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="pt-br"-->
-<html lang="pt-br"> 
+<!DOCTYPE html lang="pt-br">
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
   <head>
     <?php include_title() ?>
     <?php include_metas() ?>
     <?php include_meta_props() ?>
     
     <!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->
-    <?php
-    $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"
-    ?> 
+     
     
     <!-- Le styles -->  
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <?php echo $noscript; ?>
     <!--script type="text/jscript" src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js"></script-->
     <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">
     <!--link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet" type="text/css"--> 
@@ -21,8 +17,7 @@
     
 
     <script src="http://cmais.com.br/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
-    <?php echo $noscript; ?>
-    
+    <script src="http://cmais.com.br/portal/js/dotdotdot-1.6.7/jquery.dotdotdot.min.js" type="text/javascript"></script>
 
      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
      <!--[if lt IE 9]>
@@ -32,8 +27,8 @@
      <!--[if lte IE 8]>
        <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/ie.css" />
      <![endif]-->
-    
-    <!--meta http-equiv="Content-type" content="text/html; charset=utf-8" /-->
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
@@ -55,7 +50,6 @@
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
-    <?php echo $noscript; ?>
     <?php
     /*
     <!-- DFP -->        
@@ -102,7 +96,6 @@
       node.parentNode.insertBefore(gads, node);
       })();
     </script>
-    <?php echo $noscript; ?>
     
     <script type='text/javascript'>
       googletag.cmd.push(function() {
@@ -111,7 +104,6 @@
       googletag.enableServices();
       });
     </script>
-    <?php echo $noscript; ?>
     <!--/banner vila sesamo 2013-->
     
     <!--meta name="viewport" content="initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no"--> 
@@ -120,7 +112,7 @@
   </head>
   <body>
     <!-- header -->
-    <header class="navbar navbar-inverse navbar-fixed-top"  aria-label="Menu topo Vila Sésamo">
+    <header class="navbar navbar-inverse navbar-fixed-top" aria-label="Menu topo Vila Sésamo">
       <!--div class="navbar-inner topo-cmais">
         <div class="container">
           <h2><a href="http://tvcultura.cmais.com.br/" title="TV Cultura" class="sprite-logo-cultura"></a></h2>
@@ -166,7 +158,7 @@
             
             <!--form-->
             <form class="form-search" action="http://cmais.com.br/vilasesamo/busca" method="get">
-              <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';" title="Encontre no site" name="term" accesskey="Ctrl+b">
+              <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';" title="Encontre no site" name="term" aria-label="Digite aqui o que gostaria de encontrar no site Vila Sésamo.">
               <button type="submit" class="icones-sprite-menu icone-busca" title="buscar no site vila sesamo"></button>
             </form>
             <!--/form-->
@@ -227,32 +219,31 @@
             <!--nav sites Vila Sesamo-->
             
             <!--nav Personagens-->
-            <nav class="span12 personagens-rodape" title="Menu Personagens" aria-hidden="true">
-              <!--<h3>PERSONAGENS:</h3>-->
-              <span class="titulo">PERSONAGENS:</span>
+            <nav class="span12 personagens-rodape" title="Menu Personagens">
+              <h3>PERSONAGENS:</h3>
               <ul>
-                <li aria-hidden="true">
+                <li>
                   <a href="http://cmais.com.br/vilasesamo/personagens/garibaldo" title="Garibaldo" target="_self">Garibaldo</a><span>,</span>
                 </li>
-                <li aria-hidden="true">
+                <li>
                   <a href="http://cmais.com.br/vilasesamo/personagens/bel" title="Bel" target="_self">Bel</a><span>,</span>
                 </li>
-                <li aria-hidden="true">
+                <li>
                   <a href="http://cmais.com.br/vilasesamo/personagens/elmo" title="Elmo" target="_self">Elmo</a><span>,</span>
                 </li>
-                <li aria-hidden="true">
+                <li>
                   <a href="http://cmais.com.br/vilasesamo/personagens/grover" title="Grover" target="_self">Grover</a><span>,</span>
                 </li>
-                <li aria-hidden="true">
+                <li>
                   <a href="http://cmais.com.br/vilasesamo/personagens/beto" title="Beto" target="_self">Beto</a><span>,</span>
                 </li>
-                <li aria-hidden="true">
+                <li>
                   <a href="http://cmais.com.br/vilasesamo/personagens/enio" title="Ênio" target="_self">Ênio</a><span>,</span>
                 </li>
-                <li aria-hidden="true">
+                <li>
                   <a href="http://cmais.com.br/vilasesamo/personagens/comecome" title="Come-Come" target="_self">Come-Come</a><span>,</span>
                 </li>
-                <li aria-hidden="true">
+                <li>
                   <a href="http://cmais.com.br/vilasesamo/personagens/zoe" title="Zoe" target="_self">Zoe</a>
                 </li>
               </ul>
@@ -260,7 +251,7 @@
             <!--/nav Personagens-->
             
             <!--nav-->
-            <nav class="span12" aria-hidden="true">
+            <nav class="span12" aria-disabled="true">
               <a href="/vilasesamo/pais-e-educadores" class="col-esq " title="">Pais e Educadores</a><!--cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
               <a href="/vilasesamo/na-tv" class="col-central" title=""><i class="icones-rodape icone-triangulo-claro"></i>Na TV</a><!-- natv-footer - cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
               <a href="/vilasesamo/acessibilidade" class="col-dir" title=""><i class="icones-rodape icone-triangulo-medio"></i>Acessibilidade</a>
@@ -275,7 +266,7 @@
         </section>
         <!--/section-->
       <section class="relacionados" aria-label="sites relacionados">
-        <h1>Sites relacionados</h1>
+        <h3>Sites relacionados</h3>
         <ul>
           <li><a href="http://tvcultura.cmais.com.br/" target="_self" class="sprite-logo-cultura2" title="TV Cultura"></a></li>
           <li><a href="http://tvratimbum.cmais.com.br/" target="_self" class="sprite-logo-rtb" title="TV Rá Tim Bum"></a></li>
@@ -295,8 +286,7 @@
     
     <!-- scripts -->
     <script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/vilasesamo.js"></script>
-    <?php echo $noscript; ?>
-    
+
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-22770265-1']);
@@ -309,7 +299,6 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-    <?php echo $noscript; ?>
     <!-- /scripts -->
     
     <div id="fb-root"></div>
@@ -324,15 +313,11 @@
         document.getElementById('fb-root').appendChild(e);
       }());
     </script>
-    <?php echo $noscript; ?>
 
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <?php echo $noscript; ?>
-    
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
-    <?php echo $noscript; ?>
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media.css" type="text/css" />
        
   </body>

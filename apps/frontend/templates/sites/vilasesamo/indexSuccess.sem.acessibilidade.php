@@ -1,8 +1,6 @@
 <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
-<?php
-$noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
-?> 
+
 <!--content-->
 <div id="content">
   <!--menu principal && banner promocional-->
@@ -26,7 +24,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <?php if(isset($displays['destaques-de-assets'])): ?>
           <?php if(count($displays['destaques-de-assets']) > 0): ?>
       <!--section-->
-      <section class="destaques span8" aria-label="links em destaque">
+      <section class="destaques span8">
             <?php foreach($displays['destaques-de-assets'] as $d): ?>
               <?php
                 $sections = $d->Asset->getSections();
@@ -38,32 +36,22 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 }
                 $preview = $d->Asset->retriveRelatedAssetsByRelationType('Preview')
               ?>
-        <div class="span4 <?php echo $assetSection->getSlug() ?>">
+        <article class="span4 <?php echo $assetSection->getSlug() ?>">
           <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="">
             <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
             <div class="yt-menu">  
-              <img class="destaque" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt=""/>
+              <img class="destaque" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>" />
             </div>
             <?php else: ?>
-              <img class="destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt=""/>
+            <img class="destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
             <?php endif; ?>
             <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
             <div class="texto">
-              <img class="altura"src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="" aria-label="<?php echo $assetSection->getSlug(); ?>"/>
+              <img class="altura"src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt=""/>
               <?php echo $d->getTitle() ?>
-              <?php if($preview):?>
-                <?php
-                if(count($preview)>0):
-                  $decricaoImagem = $preview[0]->AssetImage->getHeadline(); 
-                else:
-                  $decricaoImagem = "Desculpe, a imagem esta sem descrição.";  
-                endif; ?>
-              <?php endif; ?>  
-              <span aria-label="<?php echo ". ".$d->getDescription(). ". Descrição da imagem:". $decricaoImagem; ?>"></span>
-                    
             </div>
           </a>
-        </div>
+        </article>
             <?php endforeach; ?>
       </section>
       <!--section-->
@@ -71,8 +59,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <?php endif; ?>
         
       <div class="span4 banner" >
-        <a href="http://cmais.com.br/<?php echo $site->getSlug() ?>/categorias/incluir-brincando" title="Incluir Brincando" class="icones-btns-sprite icone-incluir-brincando"></a>
-        <a href="http://cmais.com.br/<?php echo $site->getSlug() ?>/categorias/habitos-saudaveis" title="Hábitos para uma vida saudável" class="icones-btns-sprite icone-habitos-saudaveis"></a>
+        <a href="/<?php echo $site->getSlug() ?>/categorias/incluir-brincando" title="Incluir Brincando" class="icones-btns-sprite icone-incluir-brincando"></a>
+        <a href="/<?php echo $site->getSlug() ?>/categorias/habitos-saudaveis" title="Hábitos para uma vida saudável" class="icones-btns-sprite icone-habitos-saudaveis"></a>
         <!--a href="javascript:;" class="acha" title="O que achou do novo site?"><i class="icones-form icone-fale-conosco-br"></i>O que achou do site novo?</a-->
       </div>
     </div>
@@ -87,16 +75,9 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 <!--scripts e css banner-->
 
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-<?php echo $noscript; ?>
-
 <script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
-<?php echo $noscript; ?>
-
 <script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
-<?php echo $noscript; ?>
-
 <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
-<?php echo $noscript; ?>
 
 <script>
 //carrossel personagens home
@@ -134,4 +115,3 @@ $('.inner.personagens a').mouseleave(function(){
  
 
 </script>
-<?php echo $noscript; ?>

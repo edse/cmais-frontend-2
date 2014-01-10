@@ -9,14 +9,14 @@
    
   ?>
   <!--nav-->
-  <nav class="header-bar" role="navigation" aria-label="Site Navigation" >
+  <nav class="header-bar" role="navigation" aria-label="Navegação do site" >
     
     <!--content-->
     <div class="content">
       
       <h1>
-        <a href="http://cmais.com.br/vilasesamo" class="<?php echo $classLogo; ?>" title="Logo Vila Sésamo">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-vila-menu.jpg"  alt=""/>
+        <a href="http://cmais.com.br/vilasesamo" class="<?php echo $classLogo; ?>" title="link">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-vila-menu.jpg"  alt="Logo Vila Sésamo"/>
         </a>
         <?php //echo $border ?>
       </h1>
