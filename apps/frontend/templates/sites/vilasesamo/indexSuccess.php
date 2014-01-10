@@ -51,7 +51,16 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <div class="texto">
               <img class="altura"src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="" aria-label="<?php echo $assetSection->getSlug(); ?>"/>
               <?php echo $d->getTitle() ?>
-              <span aria-label="<?php echo ". ".$d->getDescription(). ". Descrição da imagem:". $preview[0]->AssetImage->getHeadline(); ?>"></span>
+              <?php if($preview):?>
+                <?php
+                if(count($preview)>0):
+                  $decricaoImagem = $preview[0]->AssetImage->getHeadline(); 
+                else:
+                  $decricaoImagem = "Desculpe, a imagem esta sem descrição.";  
+                endif; ?>
+              <?php endif; ?>  
+              <span aria-label="<?php echo ". ".$d->getDescription(). ". Descrição da imagem:". $decricaoImagem; ?>"></span>
+                    
             </div>
           </a>
         </div>
