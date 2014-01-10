@@ -2,7 +2,7 @@
     $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
     ?> 
   <!-- carrossel desktop-->
-  <section id="carrossel-destaque" role="banner" aria-label="seção com 6 baners de destaque">
+  <section id="carrossel-destaque" aria-label="seção com 6 baners de destaque">
     <!--Inicio-->
     <div id="slider" style="display:none;">
       <!--lista-->
