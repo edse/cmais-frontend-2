@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="pt-br"> 
+<!--html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="pt-br"-->
+<html xmlns:fb="http://www.facebook.com/2008/fbml" lang="pt-br"> 
   <head>
     <?php include_title() ?>
     <?php include_metas() ?>
@@ -31,8 +32,8 @@
      <!--[if lte IE 8]>
        <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/ie.css" />
      <![endif]-->
-
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <!--meta http-equiv="Content-type" content="text/html; charset=utf-8" /-->
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
@@ -227,7 +228,8 @@
             
             <!--nav Personagens-->
             <nav class="span12 personagens-rodape" title="Menu Personagens" aria-hidden="true">
-              <h3>PERSONAGENS:</h3>
+              <!--<h3>PERSONAGENS:</h3>-->
+              <span>PERSONAGENS:</span>
               <ul>
                 <li aria-hidden="true">
                   <a href="http://cmais.com.br/vilasesamo/personagens/garibaldo" title="Garibaldo" target="_self">Garibaldo</a><span>,</span>
