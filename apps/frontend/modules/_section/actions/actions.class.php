@@ -1300,6 +1300,19 @@ class _sectionActions extends sfActions
       $this->json_result = array_reverse(json_decode($this->json));
     }
     
+    if($this->site->slug == 'tvcultura' && $this->section->slug == "homepage"){
+      if($request->getParameter('test') == "1")
+        echo "<br><h1>ASDF</h1><br>";
+      $this->tvcultura = Doctrine_Query::create()
+        ->select('s.*')
+        ->from('Schedule s')
+        ->where('s.is_important = ?', 1)
+        ->andWhere('s.date_start >= ?', date('Y-m-d H:i:s'))
+        ->andWhere('s.channel_id = ?', 1)
+        ->orderBy('s.date_start asc')
+        ->limit(5)
+        ->execute();
+    }
     
     if($this->site->slug == 'culturafm'){
       if(in_array($sectionSlug, array('fale-conosco','faleconosco','contato')))
@@ -1473,18 +1486,18 @@ class _sectionActions extends sfActions
             $this->section = Doctrine::getTable('Section')->findOneBySlugAndSiteId("ferias", $this->site->id);
           
           $email_site = $this->section->getContactEmail();
-					
-					//NOVO JORNALISMO
-					if($this->section->id == "3285"){
-						if($request->getParameter('programa') == "jcprimeiraedicao") $email_site = "crjc-primeira@tvcultura.com.br";
-						if($request->getParameter('programa') == "jcdebate") 				 $email_site = "crparticipejcd@tvcultura.com.br";
-						if($request->getParameter('programa') == "jornaldacultura")  $email_site = "crjcultura@tvcultura.com.br";
-						if($request->getParameter('programa') == "cartaoverde") 	$email_site = "cartao@tvcultura.com.br";
-						if($request->getParameter('programa') == "rodaviva") 			$email_site = "perguntas.rodaviva@gmail.com";
-						if($request->getParameter('programa') == "reportereco") 	$email_site = "";
-						if($request->getParameter('programa') == "materiadecapa") $email_site = "";
-					} 
-					
+          
+          //NOVO JORNALISMO
+          if($this->section->id == "3285"){
+            if($request->getParameter('programa') == "jcprimeiraedicao") $email_site = "crjc-primeira@tvcultura.com.br";
+            if($request->getParameter('programa') == "jcdebate")         $email_site = "crparticipejcd@tvcultura.com.br";
+            if($request->getParameter('programa') == "jornaldacultura")  $email_site = "crjcultura@tvcultura.com.br";
+            if($request->getParameter('programa') == "cartaoverde")   $email_site = "cartao@tvcultura.com.br";
+            if($request->getParameter('programa') == "rodaviva")      $email_site = "perguntas.rodaviva@gmail.com";
+            if($request->getParameter('programa') == "reportereco")   $email_site = "";
+            if($request->getParameter('programa') == "materiadecapa") $email_site = "";
+          } 
+          
           $email_user = strip_tags($request->getParameter('email'));
           $nome_user = strip_tags($request->getParameter('nome'));
           if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {

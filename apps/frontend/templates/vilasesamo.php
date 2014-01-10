@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="pt-br"> 
+<!--html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="pt-br"-->
+<html lang="pt-br"> 
   <head>
     <?php include_title() ?>
     <?php include_metas() ?>
@@ -7,7 +8,7 @@
     
     <!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->
     <?php
-    $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página </noscript>"
+    $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"
     ?> 
     
     <!-- Le styles -->  
@@ -31,8 +32,8 @@
      <!--[if lte IE 8]>
        <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/ie.css" />
      <![endif]-->
-
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    
+    <!--meta http-equiv="Content-type" content="text/html; charset=utf-8" /-->
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
@@ -227,7 +228,8 @@
             
             <!--nav Personagens-->
             <nav class="span12 personagens-rodape" title="Menu Personagens" aria-hidden="true">
-              <h3>PERSONAGENS:</h3>
+              <!--<h3>PERSONAGENS:</h3>-->
+              <span class="titulo">PERSONAGENS:</span>
               <ul>
                 <li aria-hidden="true">
                   <a href="http://cmais.com.br/vilasesamo/personagens/garibaldo" title="Garibaldo" target="_self">Garibaldo</a><span>,</span>
@@ -273,7 +275,7 @@
         </section>
         <!--/section-->
       <section class="relacionados" aria-label="sites relacionados">
-        <h3>Sites relacionados</h3>
+        <h1>Sites relacionados</h1>
         <ul>
           <li><a href="http://tvcultura.cmais.com.br/" target="_self" class="sprite-logo-cultura2" title="TV Cultura"></a></li>
           <li><a href="http://tvratimbum.cmais.com.br/" target="_self" class="sprite-logo-rtb" title="TV Rá Tim Bum"></a></li>
