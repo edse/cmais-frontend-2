@@ -1,4 +1,6 @@
- 
+    <?php
+    $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
+    ?> 
   <!-- carrossel desktop-->
   <section id="carrossel-destaque" role="banner" aria-label="seção com 6 baners de destaque">
     <!--Inicio-->
@@ -165,9 +167,9 @@
   <!-- /carrossel desktop-->
   <!--scripts e css banner-->
   <script type="text/javascript" src="http://cmais.com.br/portal/js/layer-slider/jQuery.layerSlider.js"></script>
-  <noscript>Sorry, your browser does not support JavaScript!</noscript>
+  <?php echo $noscript; ?>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-  <noscript>Sorry, your browser does not support JavaScript!</noscript>
+  <?php echo $noscript; ?>
   <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/banner-layer-slider/jquery.layerSlider.css">
   <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/banner-layer-slider/main.css">
  
@@ -249,4 +251,4 @@
     
   });
   </script>
-  
+  <?php echo $noscript; ?>

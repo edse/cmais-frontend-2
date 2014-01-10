@@ -1,6 +1,8 @@
 <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
-
+<?php
+$noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
+?> 
 <!--content-->
 <div id="content">
   <!--menu principal && banner promocional-->
@@ -76,16 +78,16 @@
 <!--scripts e css banner-->
 
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<?php echo $noscript; ?>
 
 <script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
-<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<?php echo $noscript; ?>
 
 <script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
-<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<?php echo $noscript; ?>
 
 <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
-<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<?php echo $noscript; ?>
 
 <script>
 //carrossel personagens home
@@ -123,4 +125,4 @@ $('.inner.personagens a').mouseleave(function(){
  
 
 </script>
-<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<?php echo $noscript; ?>

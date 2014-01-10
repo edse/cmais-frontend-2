@@ -6,11 +6,13 @@
     <?php include_meta_props() ?>
     
     <!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->
-     
+    <?php
+    $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página </noscript>"
+    ?> 
     
     <!-- Le styles -->  
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <?php echo $noscript; ?>
     <!--script type="text/jscript" src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js"></script-->
     <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">
     <!--link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet" type="text/css"--> 
@@ -18,9 +20,9 @@
     
 
     <script src="http://cmais.com.br/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
-    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <?php echo $noscript; ?>
     <script src="http://cmais.com.br/portal/js/dotdotdot-1.6.7/jquery.dotdotdot.min.js" type="text/javascript"></script>
-    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
      <!--[if lt IE 9]>
        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -52,7 +54,7 @@
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
-    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <?php echo $noscript; ?>
     <?php
     /*
     <!-- DFP -->        
@@ -99,7 +101,7 @@
       node.parentNode.insertBefore(gads, node);
       })();
     </script>
-    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <?php echo $noscript; ?>
     
     <script type='text/javascript'>
       googletag.cmd.push(function() {
@@ -108,7 +110,7 @@
       googletag.enableServices();
       });
     </script>
-    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <?php echo $noscript; ?>
     <!--/banner vila sesamo 2013-->
     
     <!--meta name="viewport" content="initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no"--> 
@@ -291,7 +293,7 @@
     
     <!-- scripts -->
     <script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/vilasesamo.js"></script>
-    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <?php echo $noscript; ?>
     
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -305,7 +307,7 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <?php echo $noscript; ?>
     <!-- /scripts -->
     
     <div id="fb-root"></div>
@@ -320,15 +322,15 @@
         document.getElementById('fb-root').appendChild(e);
       }());
     </script>
-    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <?php echo $noscript; ?>
 
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <?php echo $noscript; ?>
     
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
-    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <?php echo $noscript; ?>
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media.css" type="text/css" />
        
   </body>
