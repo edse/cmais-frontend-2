@@ -25,7 +25,7 @@ $('body').addClass('tvculturaabrace');
   if ((isset($displays["destaque-principal"])) && (count($displays["destaque-principal"]) > 0))
     include_partial_from_folder('blocks', 'global/display3c', array('displays' => $displays["destaque-principal"]));
   else
-    include_partial_from_folder('blocks', 'global/display5c-v2', array('displays' => $displays["destaque-principal-2"]));
+    include_partial_from_folder('blocks', 'global/display5c-v2', array('displays' => $displays["destaque-principal-2"], 'tvcultura' => $tvcultura));
       ?>
 
       <!-- CAPA -->
