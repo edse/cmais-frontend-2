@@ -8,6 +8,7 @@ if(isset($pager)){
 ?>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/<?php echo $section->Parent->getSlug() ?>.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://univesptv.cmais.com.br/portal/js/timeline/1964.css" type="text/css" />
 <link type="text/css" href="http://cmais.com.br/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
 <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
 <script type="text/javascript">
@@ -102,68 +103,29 @@ $(function(){
       <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
 
       <!-- BARRA SITE -->
-      <div id="barra-site">
-        <div class="topo-programa">
-          <?php if(isset($program) && $program->id > 0): ?>
-          <h2>
-            <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
-              <?php if($program->getImageThumb() != ""): ?>
-                <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
-              <?php else: ?>
-                <h3 class="tit-pagina grid1"><?php echo $program->getTitle() ?></h3>
-              <?php endif; ?>
-            </a>
-          </h2>
-          <?php else: ?>
-          <h2>
-            <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
-              <?php if($site->getImageThumb() != ""): ?>
-                <img src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>" alt="<?php echo $site->getTitle() ?>" title="<?php echo $site->getTitle() ?>" />
-              <?php else: ?>
-                <h3 class="tit-pagina grid1"><?php echo $site->getTitle() ?></h3>
-              <?php endif; ?>
-            </a>
-          </h2>
-          <?php endif; ?>
-
-          <?php if(isset($program) && $program->id > 0): ?>
-          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
-          
-          <?php if(isset($program) && $program->id > 0): ?>
-          <!-- horario -->
-          <div id="horario">
-            <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
-          </div>
-          <!-- /horario -->
-          <?php endif; ?>
-        </div>
-        
-        <?php if(isset($siteSections)): ?>
-        <!-- box-topo -->
-        <div class="box-topo grid3">
-          
-          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
-
-          <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
-          <div class="navegacao txt-10">
-            <a href="../<?php echo $section->Site->getSlug() ?>" title="Home">Home</a>
-            <span>&gt;</span>
-            <a href="<?php echo $section->retriveUrl()?>" title="<?php echo $section->getTitle()?>"><?php echo $section->getTitle()?></a>
-          </div>
-          <?php endif; ?>
-
-          <h3 class="tit-pagina"><a href="#" class="<?php echo $section->getSlug() ?>"><?php echo $section->getTitle() ?></a></h3>
-          
-          <?php if($section->getDescription() != ""): ?>
-          <h2 style="text-align: left; margin-bottom:15px;clear: both;"><?php echo $section->getDescription() ?></h2>
-          <?php endif; ?>
-
-        </div>
-        <!-- /box-topo -->
-        <?php endif; ?>
-        
-      </div>
+  		<div id="barra-site">
+	       <div class="topo-timeline">
+		          <!-- <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/43cfb180f75e0cbc2c2823f4cfb603643151ab5a.png" /></a></h2>-->
+		          
+		          <!-- curtir -->
+		          <!--?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri)) ?-->
+		          <!-- /curtir -->
+		                    
+		          <!-- horario -->
+		          <!--div id="horario"
+		            <p>Canal digital 2.2 da multiprogramação da TV Cultura</p>
+		          </div>-->
+		          <!-- /horario -->
+	          
+	        </div>
+			<!-- box-topo -->
+	        <div class="box-topo grid3">
+		       	<!-- menu interna -->
+		       	<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
+		        <!-- /menu interna -->                 
+	    	</div>
+	   		<!-- /box-topo -->
+		  </div>	
       <!-- /BARRA SITE -->
 
       <!-- MIOLO -->
