@@ -6,9 +6,9 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
     <!-- CAPA SITE -->
-	<div id="capa-site">
+	<div id="capa-site" class="a1964">
      	<!-- BARRA SITE -->
-  		<div id="barra-site">
+  		<div id="barra-site" onclick=location="1964" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
 	       <div class="topo-timeline">
 		          <!-- <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/43cfb180f75e0cbc2c2823f4cfb603643151ab5a.png" /></a></h2>-->
 		          
@@ -30,7 +30,7 @@
 		        <!-- /menu interna -->                 
 	    	</div>
 	   		<!-- /box-topo -->
-		  </div>	
+		  </div>
 	      <!-- /BARRA SITE -->
       
       <!-- MIOLO -->
@@ -48,8 +48,7 @@
          	 	
          	 	<!--TITULO-->
 		   	   	 <div class="box-interna grid2">
-			   	   	<h3><?php echo $section->getTitle() ?></h3>
-	                <p><?php echo $section->getDescription() ?></p>
+			   	   
 		   	   	 </div>
 		   	   	 <!--TITULO-->
 		   	   	

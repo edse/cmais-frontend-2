@@ -8,7 +8,7 @@ if(isset($pager)){
 ?>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/<?php echo $section->Parent->getSlug() ?>.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
-<link rel="stylesheet" href="http://univesptv.cmais.com.br/portal/js/timeline/1964.css" type="text/css" />
+<link rel="stylesheet" href="/portal/js/timeline/1964.css" type="text/css" />
 <link type="text/css" href="http://cmais.com.br/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
 <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
 <script type="text/javascript">
@@ -98,12 +98,12 @@ $(function(){
 <?php include_partial_from_folder('blocks', 'global/menu', array('channels' => $channels, 'live' => $live, 'editorials' => $editorials, 'site' => $site, 'mainSite' => $mainSite, 'coming' => $coming, 'important' => $important)) ?>
 
     <!-- CAPA SITE -->
-    <div id="capa-site">
+    <div id="capa-site" class="a1964">
 
       <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
 
       <!-- BARRA SITE -->
-  		<div id="barra-site">
+  		<div id="barra-site" onclick=location="1964" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
 	       <div class="topo-timeline">
 		          <!-- <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/43cfb180f75e0cbc2c2823f4cfb603643151ab5a.png" /></a></h2>-->
 		          
