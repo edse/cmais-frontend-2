@@ -448,7 +448,7 @@ $(document).ready(function(){
           if(data == "1"){
             $(".msgAcerto").show();
             $('input, textarea').val('');
-            $()
+            $('#enviar').val('Enviar');
           }
           else {
             $(".msgErro").show();
