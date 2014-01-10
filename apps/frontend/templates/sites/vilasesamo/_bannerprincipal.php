@@ -29,7 +29,7 @@
             <span class="desc-banner" style="color:#008d36!important">novo site</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="#" class="total" title=""></a>
+            <a href="#" class="total" title="Home"></a>
           </div>
         </li>
         <!--/item bem vindo-->
@@ -50,7 +50,7 @@
             <span class="desc-banner">Venha brincar<br> com a gente!</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="<?php echo $site->getSlug() ?>/jogos" class="total" title="" ></a>
+            <a href="<?php echo $site->getSlug() ?>/jogos" class="total" title="Jogos" ></a>
           </div>
         </li>
         <!--/item jogos-->
@@ -77,7 +77,7 @@
             <span class="desc-banner"> se divertir</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="<?php echo $site->getSlug() ?>/videos" class="total" title="" ></a>
+            <a href="<?php echo $site->getSlug() ?>/videos" class="total" title="Vídeos" ></a>
           </div>
         </li>
         <!--/item videos-->
@@ -98,7 +98,7 @@
             <span class="desc-banner">Use a criatividade<br> e muitas cores!</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on" title="" >
-            <a href="<?php echo $site->getSlug() ?>/atividades" class="total"></a>
+            <a href="<?php echo $site->getSlug() ?>/atividades" class="total" title="atividades"></a>
           </div>
         </li>
         <!--/item atividades-->
@@ -130,7 +130,7 @@
             <span class="desc-banner">Conheça nossa turma!</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="<?php echo $site->getSlug() ?>/personagens" class="total" title="" ></a>
+            <a href="<?php echo $site->getSlug() ?>/personagens" class="total" title="Personagens" ></a>
           </div>
         </li>
         <!--/item personagens-->
@@ -154,7 +154,7 @@
             <span class="desc-banner">participe, compartilhe.</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="<?php echo $site->getSlug() ?>/pais-e-educadores" class="total" title="" ></a>
+            <a href="<?php echo $site->getSlug() ?>/pais-e-educadores" class="total" title="Pais e Educadores" ></a>
           </div>
         </li>
         <!--/item cuidadores-->
