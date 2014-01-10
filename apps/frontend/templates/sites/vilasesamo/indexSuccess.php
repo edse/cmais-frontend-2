@@ -59,7 +59,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                   $decricaoImagem = "Desculpe, a imagem esta sem descrição.";  
                 endif; ?>
               <?php endif; ?>  
-              <span aria-label="<?php echo ". ".$d->getDescription(). ". Descrição da imagem:". $decricaoImagem; ?>"></span>
+              <span aria-label="<?php echo ". ".$d->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>"></span>
                     
             </div>
           </a>
