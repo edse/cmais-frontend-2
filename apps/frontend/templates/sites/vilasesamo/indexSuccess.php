@@ -7,6 +7,12 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 <div id="content">
   <!--menu principal && banner promocional-->
   <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+  
+  <!--Explicação acessibilidade-->
+  <h1 tabindex="0" class="ac-explicacao">
+    <?php echo $section->getDescription(); ?>
+  </h1>
+  
   <?php include_partial_from_folder('sites/vilasesamo', 'global/bannerprincipal', array('site' => $site)); ?>
   <!--/menu principal && banner promocional-->
   
