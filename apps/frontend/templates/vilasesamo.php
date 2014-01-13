@@ -119,6 +119,9 @@
       
   </head>
   <body>
+    <!--Pular navegação-->
+    <a href="#content" aria-label="pular o topo e ir direto para o conteudo" class="ac-pular">pular começo</a>
+    
     <!-- header -->
     <header class="navbar navbar-inverse navbar-fixed-top"  aria-label="Menu topo Vila Sésamo">
       <!--div class="navbar-inner topo-cmais">
@@ -139,23 +142,23 @@
           <!--button-->
           
           <!--nav--> 
-          <nav class="nav-collapse collapse" title="menu principal">
+          <nav class="nav-collapse collapse" title="menu principal Vila Sésamo" accesskey="Ctrl+n" aria-label="Você está no topo do site" tabindex="1">
             
             <!--ul.nav-->
             <ul class="nav">
               <li>
                 <i class="icones-sprite-menu icone-cuidadores"></i>
-                <a class="btn-cuidadores-topo" href="http://cmais.com.br/vilasesamo/pais-e-educadores" title="Pais e Educadores" target="_self">Pais e Educadores</a>
+                <a class="btn-cuidadores-topo" href="http://cmais.com.br/vilasesamo/pais-e-educadores" title="Pais e Educadores" target="_self" tabindex="2" aria-label="Pais e Educadores. Dicas, conteúdos para os pais e ediucadores. Leia, participe, compartilhe.">Pais e Educadores</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>
                 <i class="icones-sprite-menu icone-natv-peqno-verde"></i> 
-                <a class="btn-na-tv-topo" href="http://cmais.com.br/vilasesamo/na-tv" title="Na TV" target="_self">Na TV</a>
+                <a class="btn-na-tv-topo" href="http://cmais.com.br/vilasesamo/na-tv" title="Na TV" target="_self" tabindex="3" aria-label="Na TV. Resuminho da história do Vila Sésamo e seus horários de exibição no Canal TV Cultura e TV Rá-Tim-Bum">Na TV</a>
                 <span class="sprite-menu-ball"></span>
               </li>
               <li>  
                 <i class="icones-sprite-menu icone-acessibilidade-pqno-verde"></i>
-                <a class="btn-acessibilidade-topo" href="http://cmais.com.br/vilasesamo/acessibilidade" title="Acessibilidade" target="_self">Acessibilidade</a>
+                <a class="btn-acessibilidade-topo" href="http://cmais.com.br/vilasesamo/acessibilidade" title="Acessibilidade" target="_self" tabindex="4" aria-label="Acessibilidade. Explicação do que estamos fazendo para deixar a cada dia o site do Vila Sésamo mais e mais acessível">Acessibilidade</a>
                 <!--span class="sprite-menu-ball"></span-->
               </li>  
               <!--li>
@@ -166,8 +169,8 @@
             
             <!--form-->
             <form class="form-search" action="http://cmais.com.br/vilasesamo/busca" method="get">
-              <input type="text" class="input-medium search-query" value="Encontre no site" onfocus="this.value='';" title="Encontre no site" name="term" accesskey="Ctrl+b">
-              <button type="submit" class="icones-sprite-menu icone-busca" title="buscar no site vila sesamo"></button>
+              <input type="text" class="input-medium search-query" value="Encontre no site Vila Sésamo" onfocus="this.value='';" title="Encontre no site" name="term" accesskey="Ctrl+b" tabindex="5">
+              <button type="submit" class="icones-sprite-menu icone-busca" title="buscar no site vila sesamo" aria-hidden="true"></button>
             </form>
             <!--/form-->
           </nav>
@@ -334,6 +337,8 @@
     </script>
     <?php echo $noscript; ?>
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
+    
        
   </body>
 </html>
