@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <script>
   $("body").addClass("interna atividades");
@@ -8,15 +8,23 @@
 <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
 
+<!--Explicação acessibilidade-->
+<h1 tabindex="0" class="ac-explicacao">
+  <?php echo $section->getDescription(); ?>
+</h1>
+
 <!--content-->
-<div id="content">
+<div id="content" accesskey="Ctrl+c">
 <!--section-->
 <section class="filtro row-fluid">
   <!--span12-->
   <div class="span12" role="main">
     
     <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
-    <h1><i class="icones-sprite-interna icone-atividades-grande"></i>Atividades</h1>
+    <h1>
+      <i class="icones-sprite-interna icone-atividades-grande"></i>
+      Atividades
+   </h1>
     
     <?php if(isset($displays['destaque-1']) || isset($displays['destaque-2'])): ?>
       <?php if(count($displays['destaque-1']) > 0 || count($displays['destaque-2']) > 0): ?>
@@ -27,29 +35,47 @@
         <?php if(isset($displays['destaque-1'])): ?>
           <?php if(count($displays['destaque-1']) > 0): ?>
             <?php $related_preview = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByRelationType("Preview"); ?>
-        <h2 aria-describedby="Novidade">
-          <article class="span6 clipes">
-            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>">
-              <span class="sprite-selo">Novidade!</span>
-              <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" />
-              <p><?php echo $displays['destaque-1'][0]->getTitle() ?></p> 
-            </a> 
-          </article>
-        </h2>
+            <?php if($related_preview):?>
+              <?php
+                if(count($related_preview)>0):
+                  $decricaoImagem = $related_preview[0]->AssetImage->getHeadline(); 
+                else:
+                  $decricaoImagem = "Desculpe, a imagem esta sem descrição.";  
+                endif; 
+              ?>
+            <?php endif; ?>
+            <h2>
+              <div class="span6 clipes">
+                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>" title="" aria-label="Novidade destaque Atividade - <?php echo ". ".$displays['destaque-1'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>" >
+                  <span class="sprite-selo">Novidade!</span>
+                  <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="" />
+                  <p><?php echo $displays['destaque-1'][0]->getTitle() ?></p>
+                </a> 
+              </div>
+            </h2>
           <?php endif; ?>
         <?php endif; ?>
         <?php if(isset($displays['destaque-2'])): ?>
           <?php if(count($displays['destaque-2']) > 0): ?>
             <?php $related_preview = $displays['destaque-2'][0]->Asset->retriveRelatedAssetsByRelationType("Preview"); ?>
-        <h2 aria-describedby="Novidade">
-          <article class="span6 clipes  semmargem">
-            <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>">
-              <span class="sprite-selo">Novidade!</span>
-              <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
-              <p><?php echo $displays['destaque-2'][0]->getTitle() ?></p> 
-            </a> 
-          </article>
-        </h2>
+            <?php if($related_preview):?>
+              <?php
+                if(count($related_preview)>0):
+                  $decricaoImagem = $related_preview[0]->AssetImage->getHeadline(); 
+                else:
+                  $decricaoImagem = "Desculpe, a imagem esta sem descrição.";  
+                endif; 
+              ?>
+            <?php endif; ?>
+            <h2>
+              <div class="span6 clipes semmargem">
+                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>" title="" aria-label="Novidade destaque Atividade - <?php echo ". ".$displays['destaque-2'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>" >
+                  <span class="sprite-selo">Novidade!</span>
+                  <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="" />
+                  <p><?php echo $displays['destaque-1'][0]->getTitle() ?></p>
+                </a> 
+              </div>
+            </h2>
           <?php endif; ?>
         <?php endif; ?>
       </div>
