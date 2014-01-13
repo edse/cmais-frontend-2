@@ -341,6 +341,7 @@
       $('.ac-explicacao').focus();
     });
     </script>
+    <?php echo $noscript; ?>
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media.css" type="text/css" />
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
     
