@@ -446,8 +446,8 @@
 
 /**** GRADE ****/
 .menu-calendario { position:relative; overflow:hidden;}  
-.menu-calendario .btn { float:left; background:url(../../images/btn-paginacao.png) no-repeat scroll 0 -18px transparent; }/*Seta paginação*/
-.menu-calendario .proximo { background-position:0 0; float: right;}    
+.menu-calendario .btn { float:left; background:url(../../images/btn-paginacao.png) no-repeat scroll 0 -198px transparent; }/*Seta paginação*/
+.menu-calendario .proximo { background-position:0 -180px; float: right;}    
 .menu-calendario  .carrossel-menu { width:357px; margin-top:0;}  
 .menu-calendario  .carrossel-menu ul { position:absolute; top:0; left:11px; }  
 .menu-calendario  .carrossel-menu li { width:310px; text-align:center; font-size:16px; font-weight:bold; height:20px; line-height:20px; margin:0 10px; text-align:center; border-bottom:none;}  
@@ -465,7 +465,7 @@
 .lista-calendario .barra-grade .tit { width:460px; overflow:hidden; text-align:left; height:30px;}
 .lista-calendario .barra-grade a:hover {text-decoration:none;}
 .lista-calendario .barra-grade .hora {  margin:0 20px 0 10px; font-size:25px; }
-.lista-calendario .barra-grade .botao { background:url(../../images/ico-drop.png) no-repeat; width:16px; height:16px; display:block; float:right; margin:7px 7px 0 0; } /*Seta barra grande*/
+.lista-calendario .barra-grade .botao { background:url(../../images/ico-drop.png) no-repeat; width:16px; height:16px; display:block; float:right; margin:7px 7px 0 0;background-position: 0 -128px; } /*Seta barra grande*/
 .lista-calendario .escura { background:#333; }
 .lista-calendario .escura a,
 .lista-calendario .escura p { color:#fff; }
@@ -550,7 +550,7 @@
 .abas li { float:left; margin-right:56px;  height:34px; position:relative; }
 .abas li a { font:bold 14px arial; display:block; text-transform:uppercase; text-align:center; color:#fff; padding:3px 10px; background:transparent; height:22px; line-height:22px;   }
 .abas li.ativo a,
-.abas li:hover a { background:#ff6633;  }
+.abas li:hover a { background:#195A19; /*ff6633;*/  }
 .abas li:hover a { text-decoration:none; }
 .abas li .decoracao  { background:none; width:12px; height:6px; position:absolute; bottom:0; }
 .abas li.ativo .decoracao,
