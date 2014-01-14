@@ -97,6 +97,7 @@ strong{font-weight:bold;}
 .cinza-claro-2 li{border:none;}
 .salvar-alteracoes{display:none;width: 80%;background: yellow;margin: 0 auto 20px ;padding: 10px;border: 1px red dashed;color: red;text-align: center;text-transform: uppercase;font-weight: bold;font-size: 14px;}
 .alert-success{margin:20px;}
+.alert{background-color:#faea94;}
 /* /GERAL */
 
 /* CONTENT */
