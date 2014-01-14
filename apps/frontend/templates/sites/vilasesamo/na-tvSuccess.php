@@ -39,7 +39,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       <!--container-->
       <section><!--só leu qndo tirei o aria-hidden e o tabindex -1-->
         <div class="container-na-tv">
-          <h2 class="ola" tabindex="0" aria-label="<?php echo $section->getDescription() ?>"><?php echo $section->getDescription() ?></h2>
+          <h2 class="ola" tabindex="0" aria-label="Olá">Olá!</h2>
           
           <?php if(isset($displays['historia'])): ?>
             <?php if(count($displays['historia']) > 0): ?>
