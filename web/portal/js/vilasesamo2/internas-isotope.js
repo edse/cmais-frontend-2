@@ -20,7 +20,7 @@
        $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos');
        setTimeout(function() {
         $('#container a:first').focus(); 
-       }, 800);
+       }, 3000);
        
        
       } 
@@ -61,6 +61,10 @@
       }else{
         $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos');
       }
+      
+      setTimeout(function() {
+        $('#container a:first').focus(); 
+       }, 3000);
       
       return false;
     });
