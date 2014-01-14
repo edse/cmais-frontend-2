@@ -52,25 +52,29 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <?php if(count($displays['programacao-na-tv']) > 0): ?>
                      
             <!--container-horario-->
-            <div class="container-horarios" aria-label="Horário do programa na TV" tabindex="0">
+            <div class="container-horarios" accesskey="Ctrl+h">
               
               <!--box-horario-->
               <?php foreach($displays['programacao-na-tv'] as $k=>$d):?>
-                
+              <?php  $aria = $d->getDescription(); ?>  
                  
               <div class="box-horario <?php if($k==0) echo "sem-margem-l"?>">
                 
                 <div class="box-logo">
                   <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
                     <span class="img-logo">
-                      <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
+                      <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" aria-label="<?php echo $d->getTitle() .". ".$aria ?>" />
                     </span>
                     <span class="icones-na-tv icone-seta-box"></span>
-                  </div>
+                  </a>  
+                 </div>
                   
                   <h2><?php echo $d->getTitle() ?></h2> 
-                  <p><?php echo html_entity_decode($d->getHtml()) ?></p>
-                </a>  
+                  <?php
+                  $aria2= html_entity_decode($d->getHtml());
+                  $aria2= str_replace( "<br>", " ", $aria2);
+                  ?>
+                  <p aria-label="<?php echo "Horário na ".$d->getTitle(). ". " . $aria2 ?>" ><?php echo html_entity_decode($d->getHtml()) ?></p>
               </div>
               <?php endforeach?>
               <!--/box-horario-->
