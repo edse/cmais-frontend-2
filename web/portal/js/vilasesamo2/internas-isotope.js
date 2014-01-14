@@ -18,7 +18,7 @@
       if ( event.which == 13 ) {
        selectAll()
        $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos');
-       $('#container').focus()
+       $('#container a:first').focus();
        
       } 
     });
