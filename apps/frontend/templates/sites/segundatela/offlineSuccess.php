@@ -28,7 +28,7 @@
           <fb:like href="http://cmais.com.br/segundatela" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
         </div>
         <div class="twt">
-          <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura" data-url="http://cmais.com.br/segundatela>Tweet</a>
+          <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tvcultura" data-related="tvcultura" data-url="http://cmais.com.br/segundatela>Tweet</a>
         </div>
       </div>
     </div>
