@@ -14,7 +14,7 @@
       selectAll()
     }); 
     
-    $( "#target" ).keypress(function( event ) {
+    $('#filtrar-tudo').keypress(function( event ) {
       if ( event.which == 13 ) {
        selectAll()
       } 
