@@ -12,13 +12,13 @@
          
           <div class="slider-mask-wrap">
             <div class="slider-mask">
-              <ul class="slider-target" accesskey="Ctrl+p" aria-label="lista dos personagens Vila Sésamo">
+              <ul class="slider-target" accesskey="Ctrl+p" aria-label=" dos personagens Vila Sésamo">
                 <?php if(isset($personagens)): ?>
                   <?php if(count($personagens) > 0 ): ?>
                     <?php foreach($personagens as $p): ?>
                       <li>
-                        <div class="inner personagens <?php echo $p->getSlug()?>" aria-hidden="true">
-                          <a href="/<?php echo $site->getSlug(); ?>/personagens/<?php echo $p->getSlug() ?>" title="" class="btn-<?php echo $p->getSlug() ?>" aria-hidden="true">
+                        <div class="inner personagens <?php echo $p->getSlug()?>" aria-hidden="true" tabindex="-1">
+                          <a href="/<?php echo $site->getSlug(); ?>/personagens/<?php echo $p->getSlug() ?>" title="" class="btn-<?php echo $p->getSlug() ?>" aria-hidden="true" tabindex="-1">
                             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem.png" alt="<?php echo $p->getSlug() ?>" />
                           </a>
                         </div>

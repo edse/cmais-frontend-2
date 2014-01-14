@@ -2,13 +2,13 @@
     $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
     ?> 
   <!-- carrossel desktop-->
-  <section id="carrossel-destaque" aria-label="seção com 6 baners de destaque">
+  <section id="carrossel-destaque" aria-label="seção com 6 baners">
     <!--Inicio-->
-    <div id="slider" style="display:none;">
+    <div id="slider" style="display:none;" tabindex="-1">
       <!--lista-->
-      <ul aria-hidden="true">
+      <ul aria-hidden="true" tabindex="-1">
         <!--item bem vindo-->
-        <li class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_1-boasvindas.jpg') repeat;">
+        <li aria-hidden="true" tabindex="-1" class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_1-boasvindas.jpg') repeat;">
           <div class="mpc_ls_slide_item" data-x="506" data-y="150" data-delay="500" data-duration="2500" data-easing="easeOutBack" data-effect="slideLeft" data-fade="on">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/1/img-balao_banner_1-boasvindas.png" alt="">
           </div>
@@ -35,7 +35,7 @@
         <!--/item bem vindo-->
         
         <!--item jogos-->
-        <li aria-hidden="true" class="slide02" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/2/img-pattern_banner_2-jogos.jpg') repeat;">
+        <li aria-hidden="true" tabindex="-1" class="slide02" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/2/img-pattern_banner_2-jogos.jpg') repeat;">
           <div class="mpc_ls_slide_item" data-x="200" data-y="20" data-delay="500" data-duration="2500" data-easing="easeOutExpo" data-effect="slideBottom" data-fade="off">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/2/img-personagem_banner_2-jogos.png" alt="">
           </div>
@@ -56,7 +56,7 @@
         <!--/item jogos-->
         
         <!--item videos-->
-        <li aria-hidden="true" class="slide03" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/3/img-pattern_banner_3-videos.jpg') repeat;">
+        <li aria-hidden="true" tabindex="-1" class="slide03" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/3/img-pattern_banner_3-videos.jpg') repeat;">
           <div class="mpc_ls_slide_item" data-x="10" data-y="92" data-delay="500" data-duration="2500" data-easing="easeOutBack" data-effect="slideLeft" data-fade="on">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/3/img-personagem_banner_3-videos.png" alt="">
           </div>
@@ -83,7 +83,7 @@
         <!--/item videos-->
         
         <!--item atividades-->
-        <li aria-hidden="true" class="slide04" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/4/img-pattern_banner_4-atividades.jpg') repeat;">
+        <li aria-hidden="true" tabindex="-1" class="slide04" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/4/img-pattern_banner_4-atividades.jpg') repeat;">
           <div class="mpc_ls_slide_item" data-x="450" data-y="5" data-delay="500" data-duration="2500" data-easing="easeOutBack" data-effect="slideLeft" data-fade="on">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/4/img-personagem_banner_4-atividades.png" alt="">
           </div>
@@ -104,7 +104,7 @@
         <!--/item atividades-->
         
         <!--item personagens-->
-        <li aria-hidden="true" class="slide05" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/5/img-pattern_banner_5-personagens.jpg') repeat;">
+        <li aria-hidden="true" tabindex="-1" class="slide05" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/5/img-pattern_banner_5-personagens.jpg') repeat;">
           
           <div class="mpc_ls_slide_item" data-x="300" data-y="200" data-delay="1500" data-duration="6000" data-easing="easeOutExpo" data-effect="slideBottom" data-fade="off">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/5/img-personagem_banner_5-personagens-rosto.png" alt="">
@@ -136,7 +136,7 @@
         <!--/item personagens-->
         
         <!--item cuidadores-->
-        <li aria-hidden="true" class="slide06" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/6/img-pattern_banner_6-cuidadores.jpg') repeat;">
+        <li aria-hidden="true" tabindex="-1" class="slide06" data-easing="easeInExpo" data-transition="slideRight" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/6/img-pattern_banner_6-cuidadores.jpg') repeat;">
           <div class="mpc_ls_slide_item" data-x="480" data-y="100" data-delay="0" data-duration="2500" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/6/img-personagem_banner_6-cuidadores.png" alt="">
           </div>
@@ -196,7 +196,7 @@
       
       
       setTimeout(function(){
-        $('.mpc_ls_next_slide, .mpc_ls_prev_slide').attr('aria-hidden', "true");
+        $('.mpc_ls_next_slide, .mpc_ls_prev_slide').attr('aria-hidden', "true").attr('tabindex','-1');
         
         $('.mpc_ls_thumb').each(function(i){
           

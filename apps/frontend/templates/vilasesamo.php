@@ -185,7 +185,7 @@
     <?php echo $sf_content ?>
     
     <!--footer-->
-    <footer>
+    <footer aria-label="você está no rodapé da pagina. com links para as páginas e sites relacionados" accesskey="Ctrl+f" tabindex="0" >
       
       <div class="copyright" role="presentation" aria-hidden="true" >
         <small>© 2013 - Vila Sésamo</small>
@@ -230,40 +230,40 @@
             <!--nav sites Vila Sesamo-->
             
             <!--nav Personagens-->
-            <nav class="span12 personagens-rodape" title="Menu Personagens" aria-hidden="true">
+            <nav class="span12 personagens-rodape" title="Menu Personagens" aria-hidden="true" tabindex="-1">
               <!--<h3>PERSONAGENS:</h3>-->
               <span class="titulo">PERSONAGENS:</span>
               <ul>
-                <li aria-hidden="true">
-                  <a href="http://cmais.com.br/vilasesamo/personagens/garibaldo" title="Garibaldo" target="_self">Garibaldo</a><span>,</span>
+                <li>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/garibaldo" title="Garibaldo" target="_self" aria-hidden="true" tabindex="-1">Garibaldo</a><span>,</span>
                 </li>
-                <li aria-hidden="true">
-                  <a href="http://cmais.com.br/vilasesamo/personagens/bel" title="Bel" target="_self">Bel</a><span>,</span>
+                <li aria-hidden="true" tabindex="-1">
+                  <a href="http://cmais.com.br/vilasesamo/personagens/bel" title="Bel" target="_self" aria-hidden="true" tabindex="-1">Bel</a><span>,</span>
                 </li>
-                <li aria-hidden="true">
-                  <a href="http://cmais.com.br/vilasesamo/personagens/elmo" title="Elmo" target="_self">Elmo</a><span>,</span>
+                <li>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/elmo" title="Elmo" target="_self" aria-hidden="true" tabindex="-1">Elmo</a><span>,</span>
                 </li>
-                <li aria-hidden="true">
-                  <a href="http://cmais.com.br/vilasesamo/personagens/grover" title="Grover" target="_self">Grover</a><span>,</span>
+                <li>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/grover" title="Grover" target="_self" aria-hidden="true" tabindex="-1">Grover</a><span>,</span>
                 </li>
-                <li aria-hidden="true">
-                  <a href="http://cmais.com.br/vilasesamo/personagens/beto" title="Beto" target="_self">Beto</a><span>,</span>
+                <li>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/beto" title="Beto" target="_self" aria-hidden="true" tabindex="-1">Beto</a><span>,</span>
                 </li>
-                <li aria-hidden="true">
-                  <a href="http://cmais.com.br/vilasesamo/personagens/enio" title="Ênio" target="_self">Ênio</a><span>,</span>
+                <li>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/enio" title="Ênio" target="_self" aria-hidden="true" tabindex="-1">Ênio</a><span>,</span>
                 </li>
-                <li aria-hidden="true">
-                  <a href="http://cmais.com.br/vilasesamo/personagens/comecome" title="Come-Come" target="_self">Come-Come</a><span>,</span>
+                <li>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/comecome" title="Come-Come" target="_self" aria-hidden="true" tabindex="-1">Come-Come</a><span>,</span>
                 </li>
-                <li aria-hidden="true">
-                  <a href="http://cmais.com.br/vilasesamo/personagens/zoe" title="Zoe" target="_self">Zoe</a>
+                <li>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/zoe" title="Zoe" target="_self" aria-hidden="true" tabindex="-1">Zoe</a>
                 </li>
               </ul>
             </nav> 
             <!--/nav Personagens-->
             
             <!--nav-->
-            <nav class="span12" aria-hidden="true">
+            <nav class="span12">
               <a href="/vilasesamo/pais-e-educadores" class="col-esq " title="">Pais e Educadores</a><!--cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
               <a href="/vilasesamo/na-tv" class="col-central" title=""><i class="icones-rodape icone-triangulo-claro"></i>Na TV</a><!-- natv-footer - cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
               <a href="/vilasesamo/acessibilidade" class="col-dir" title=""><i class="icones-rodape icone-triangulo-medio"></i>Acessibilidade</a>
