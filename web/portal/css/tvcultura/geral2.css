@@ -554,7 +554,7 @@
 .abas li:hover a { text-decoration:none; }
 .abas li .decoracao  { background:none; width:12px; height:6px; position:absolute; bottom:0; }
 .abas li.ativo .decoracao,
-.abas li:hover .decoracao { background:url(../../images/bg-menu-rodape.png) no-repeat; }/*decoração menu*/
+.abas li:hover .decoracao { background:url(../../images/bg-menu-rodape.png) no-repeat;background-position: 0 -66px; }/*decoração menu*/
 .abas .low { text-transform:lowercase; color:#fff; }
 #menu-rodape .abas-conteudo { background:url(../../images/bg-dot-light.jpg) repeat; margin-top:-23px; padding-top:10px; }
 #menu-rodape .abas-conteudo .filho { display:none; }
