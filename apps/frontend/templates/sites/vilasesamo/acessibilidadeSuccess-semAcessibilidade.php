@@ -2,9 +2,7 @@
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
-<?php
-$noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
-?>
+
 <script>
   $("body").addClass("na-tv acessibilidade");
   <?php if($section->getSlug()=="acessibilidade"):?>
@@ -13,8 +11,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     });  
   <?php endif; ?>
 </script>
-<?php echo $noscript; ?>
-
 
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -22,12 +18,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 
 <!--content-->
 <div id="content">
-	
-	<!--Explicação acessibilidade-->
-	<h1 tabindex="0" class="ac-explicacao">
-	 <?php echo $section->getDescription(); ?>
-	</h1>
-  
   
   <!--section -->
   <section class="filtro row-fluid">
@@ -41,7 +31,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       
       <!--container-->
       <div class="container-na-tv">
-       
+        <!--h2 class="ola"><?php echo $section->getDescription() ?></h2-->
+        
         <?php $asset = $section->getAssets(); ?>
         <?php if(isset($asset)):?>  
           <?php if(count($asset) > 0):?>
@@ -56,21 +47,11 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
          
       </div>
       <!--/container-->
-      <span class="fundo-acessibilidade" aria-label="Imagem de fundo Acessibilidade" tabindex="0"></span>
+      <span class="fundo-acessibilidade"></span> 
     </div>
     <!--/container conteudo-->
     
-	<script>
-	$('.box-acessibilidade p').each(function(index) {
-	  $(this).attr('tabindex', 0);
-	});
-	</script>
-	<?php echo $noscript; ?>
-	<script>
-    $('.box-acessibilidade p > a').each(function(index) {
-      $(this).attr('tabindex', -1).attr("aria-hidden","true");
-    });
-    </script>
+    
     
        
 
