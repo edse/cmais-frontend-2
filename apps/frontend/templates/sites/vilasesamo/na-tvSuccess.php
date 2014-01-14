@@ -1,11 +1,10 @@
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <?php
 $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
 ?> 
-<!-
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
-
 <script>
   $("body").addClass("na-tv");
   <?php if($section->getSlug()=="na-tv"):?>
@@ -15,7 +14,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   <?php endif; ?>
 </script>
 <?php echo $noscript; ?>
-
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
@@ -101,8 +99,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       $(this).attr('tabindex', -1).attr("aria-hidden","true");
     });
     </script>
-	<?php echo $noscript; ?>
-	   
+    <?php echo $noscript; ?>
+   
     
        
 
