@@ -79,18 +79,18 @@ $(document).ready(function(){
               <!-- row1 -->
               <div class="row" id="row1" style="<?php if(isset($_GET['step'])&&$_GET['step']==1){echo"display:none;";}else{echo"display:block;";}?>">
                 <div class="page-header">
-                  <h1>Email</h1>
-                  <span class="label label-green">Verificação se o email está cadastrado</span> 
+                  <h1>E-mail</h1>
+                  <span class="label label-green">Verificação se o e-mail está cadastrado</span> 
                 </div>  
                 <form class="form-horizontal" id="form1" method="post">
                   <input type="hidden" name="step" value="1" />
                   <fieldset>
         
                     <div class="control-group">
-                      <label class="control-label" for="email">Email</label>
+                      <label class="control-label" for="email">E-mail</label>
                       <div class="controls">
                         <input type="text" class="input-xlarge" id="f1_email" name="f1_email" />
-                        <p class="help-block">Entre com seu endereço de email</p>
+                        <p class="help-block">Entre com seu endereço de e-mail</p>
                       </div>
                     </div>
                     <div class="botoes-form">
@@ -105,18 +105,18 @@ $(document).ready(function(){
               <div class="row" id="row2">
                 <div class="page-header">
                   <h1>Formulário de cadastro</h1>
-                  <p><span class="label label-red">Email não cadastrado</span></p>
+                  <p><span class="label label-red">E-mail não cadastrado</span></p>
                 </div>
                 <form class="form-horizontal" id="form2" method="post">
                   <input type="hidden" name="step" value="2" />
                   <input type="hidden" name="email" id="f2_email" value="" />
                   <fieldset>
                     <div class="control-group">
-                      <label class="control-label" for="f2_email2">Email</label>
+                      <label class="control-label" for="f2_email2">E-mail</label>
                       <div class="controls">
                         <input type="text" class="input-xlarge disabled" id="f2_email2" name="f2_email2" placeholder="" disabled="disabled">
                         <div class="alert alert-block" style="margin: 10px 131px 10px 0;padding: 5px;">
-                          <p class="help-block">Você receberá uma mensagem de confirmação para validar este email após enviar o cadastro preenchido.</p>
+                          <p class="help-block">Você receberá uma mensagem de confirmação para validar este e-mail após enviar o cadastro preenchido.</p>
                         </div>
                         <span class="atencao">* Campos obrigatórios</span>
                       </div>
@@ -248,7 +248,7 @@ $(document).ready(function(){
                       <div class="controls">
                         <label class="checkbox">
                           <input type="checkbox" id="f2_newsletter" name="f2_newsletter" value="true">
-                          Permito o envio de promoções e novidades via email
+                          Permito o envio de promoções e novidades via e-mail
                         </label>
                       </div>
                     </div>
@@ -286,17 +286,17 @@ $(document).ready(function(){
               <div class="row" id="row3">
                 <div class="page-header">
                   <h1>Formulário de cadastro preenchido</h1>
-                  <p><span class="label label-success">Email cadastrado</span></p>
+                  <p><span class="label label-success">E-mail cadastrado</span></p>
                 </div><!-- /.span -->
                 <form class="form-horizontal" id="form3" method="post">
                   <input type="hidden" name="f3_email" id="f3_email" value="" />
                   <input type="hidden" name="step" value="3" />
                   <fieldset>
                     <div class="control-group">
-                      <label class="control-label" for="f3_email2">Email</label>
+                      <label class="control-label" for="f3_email2">E-mail</label>
                       <div class="controls">
                         <input type="text" class="input-xlarge disabled" id="f3_email2" name="f3_email2" placeholder="" disabled="disabled">
-                        <p class="help-block">Você receberá uma confirmação nesse email.</p>
+                        <p class="help-block">Você receberá uma confirmação nesse e-mail.</p>
                       </div>
                     </div>
                     <div class="control-group">
@@ -418,7 +418,7 @@ $(document).ready(function(){
                         <div class="controls">
                           <label class="checkbox">
                             <input type="checkbox" id="f3_newsletter" name="f3_newsletter" value="true">
-                            Permito o envio de promoções e novidades via email
+                            Permito o envio de promoções e novidades via e-mail
                           </label>
                         </div>
                       </div>
@@ -455,7 +455,7 @@ $(document).ready(function(){
                 <div class="row" id="row4" style="<?php if(!isset($_GET['step'])||$_GET['step']==1){echo"display:none;";}else{echo"display:block;";}?>">
                   <div class="page-header">
                     <h1>Enviar mensagem</h1>
-                    <p><span class="label label-success">Email cadastrado e validado</span></p>
+                    <p><span class="label label-success">E-mail cadastrado e validado</span></p>
                   </div><!-- /.span -->
 
                   <form class="form-horizontal" id="form4" method="post">
@@ -463,7 +463,7 @@ $(document).ready(function(){
                     <input type="hidden" name="email" id="f4_email" value="" />
                     <fieldset>
                       <div class="control-group">
-                        <label class="control-label" for="f4_email2">Email</label>
+                        <label class="control-label" for="f4_email2">E-mail</label>
                         <div class="controls">
                           <?php if(isset($_GET["validacao"]) && isset($_GET["email"])): ?>
                             <input type="text" class="input-xlarge disabled" id="f4_email2" name="f4_email2" placeholder="" disabled="disabled" value="<?php echo $_GET["email"]; ?>">
@@ -471,7 +471,7 @@ $(document).ready(function(){
                             <input type="text" class="input-xlarge disabled" id="f4_email2" name="f4_email2" placeholder="" disabled="disabled">
                           <?php endif;?>
                           <div class="alert alert-block" style="margin: 10px 131px 10px 0;padding: 5px;">
-                            <p class="help-block">Mensagem encaminhada.<br> Aguarde nosso retorno no e-mail indicado.</p>
+                            <p class="help-block">E-mail cadastrado e validado.</p>
                           </div>
                         </div>
                       </div>
@@ -604,7 +604,7 @@ $(document).ready(function(){
                           <div class="controls">
                             <label class="checkbox">
                               <input type="checkbox" id="f4_newsletter" name="f4_newsletter" value="true">
-                              Permito o envio de promoções e novidades via email
+                              Permito o envio de promoções e novidades via e-mail
                             </label>
                           </div>
                         </div>
@@ -687,15 +687,15 @@ $(document).ready(function(){
                 <div class="row" id="row5">
                   <div class="page-header">
                     <h1>Mensagem de erro</h1>
-                    <p><span class="label label-important">Email cadastrado mas não validado</span></p>
+                    <p><span class="label label-important">E-mail cadastrado mas não validado</span></p>
                   </div><!-- /.span -->
                   <div class="alert alert-block alert-error fade in">
                     <button class="close backBegin" >×</button>
-                    <h4 class="alert-heading">Email não validado!</h4>
-                    <p>Seu endereço de email não foi validado.</p>
-                    <p>Para validá-lo você precisa clicar no link do email de confirmação que lhe foi enviado.</p>
+                    <h4 class="alert-heading">E-mail não validado!</h4>
+                    <p>Seu endereço de e-mail não foi validado.</p>
+                    <p>Para validá-lo você precisa clicar no link do e-mail de confirmação que lhe foi enviado.</p>
                     <p>
-                      <a class="btn btn-danger outro-email" href="javascript:;">Entrar com outro email</a>
+                      <a class="btn btn-danger outro-email" href="javascript:;">Entrar com outro e-mail</a>
                     </p>
                   </div>
                 </div>
@@ -736,7 +736,7 @@ $(document).ready(function(){
                   <div class="alert alert-block alert-success fade in">
                     <button class="close backBegin" >×</button>
                     <h4 class="alert-heading">Atenção: Seu cadastro não pode ser realizado!</h4>
-                    <p>Se você já cadastrou o seu email você deve validar seu cadastro cliando no link que foi enviado para o seu email.</p>
+                    <p>Se você já cadastrou o seu e-mail você deve validar seu cadastro cliando no link que foi enviado para o seu e-mail.</p>
                     <p>
                       <a class="btn btn-info" href="http://cmais.com.br">cmais+ O portal de conteúdo da Cultura</a>
                     </p>

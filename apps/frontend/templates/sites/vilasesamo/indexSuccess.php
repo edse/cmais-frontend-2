@@ -7,6 +7,12 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 <div id="content">
   <!--menu principal && banner promocional-->
   <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+  
+  <!--Explicação acessibilidade-->
+  <h1 tabindex="0" class="ac-explicacao">
+    <?php echo $section->getDescription(); ?>
+  </h1>
+  
   <?php include_partial_from_folder('sites/vilasesamo', 'global/bannerprincipal', array('site' => $site)); ?>
   <!--/menu principal && banner promocional-->
   
@@ -56,7 +62,17 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 if(count($preview)>0):
                   $decricaoImagem = $preview[0]->AssetImage->getHeadline(); 
                 else:
-                  $decricaoImagem = "Desculpe, a imagem esta sem descrição.";  
+                  switch($assetSection->getSlug()){
+                      case "videos":
+                        $decricaoImagem = "Desculpe, a imagem esta sem descrição mas o vídeo é muito legal, assista-o!";
+                      break;
+                      case "jogos":
+                        $decricaoImagem = "Desculpe, a imagem esta sem descrição mas o jogo é muito legal, jogue-o!";
+                      break;
+                      case "atividades":
+                        $decricaoImagem = "Desculpe, a imagem esta sem descrição mas a atividade é muito legal, brinque com ela!";
+                      break;
+                    }  
                 endif; ?>
               <?php endif; ?>  
               <span aria-label="<?php echo ". ".$d->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>"></span>

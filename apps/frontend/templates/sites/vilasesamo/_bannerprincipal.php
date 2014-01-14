@@ -211,13 +211,13 @@
               $(this).attr("aria-label", "Terceiro Baner:  link para a tela vídeos. Descrição:Come-Come esta comendo um rolo de filme cinematográfico e falando de boca cheia - 'Músicas e histórias para você curtir'.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/videos')
             break;
             case 3:
-              $(this).attr("aria-label", "Quarto Baner:link para a tela atividades. Descrição:Beto esta segurando um recorte de uma máscara e uma tesoura convidando você a usar sua criatividade'. ").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/atividades')
+              $(this).attr("aria-label", "Quarto Baner:link para a tela atividades. Descrição:Beto esta segurando um recorte de uma máscara convidando você a brincar com as atividades'. ").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/atividades')
             break;
             case 4:
-              $(this).attr("aria-label", "Quinto Banner:link para página Persanagens Descrição:Elmo esta atrás de um muro amarelo só com a os olhos aparecendo, te convidando a conhecer a Turma do Vila Sésamo").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/personagens');
+              $(this).attr("aria-label", "Quinto Banner:link para página Persanagens Descrição:Elmo esta brincando de econde-esconde. Venha conhecer a turma toda do Vila Sésamo.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/personagens');
             break;
             case 5:
-              $(this).attr("aria-label", "Sexto Banner:link para página Pais e Educadores. Descrição:Garibaldo Sorrindo para você. Dicas, conteúdos e diálogo. Leia, participe, compartilhe.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/pais-e-educadores')
+              $(this).attr("aria-label", "Sexto Banner:link para página Pais e Educadores. Descrição:Garibaldo sorrindo convida pais e educadores a conhecer dicas, conteúdos. Leia, participe, compartilhe.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/pais-e-educadores')
             break;
           }  
           

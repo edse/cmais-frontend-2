@@ -9,13 +9,13 @@
    
   ?>
   <!--nav-->
-  <nav class="header-bar" role="navigation" aria-label="Navegação do site" >
+  <nav class="header-bar" aria-label="Navegação do site" >
     
     <!--content-->
     <div class="content">
       
       <h1>
-        <a href="http://cmais.com.br/vilasesamo" class="<?php echo $classLogo; ?>" title="link">
+        <a href="http://cmais.com.br/vilasesamo" class="<?php echo $classLogo; ?>" title="link" aria-label="link para a home do site">
           <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/logo-vila-menu.jpg"  alt="Logo Vila Sésamo"/>
         </a>
         <?php //echo $border ?>
