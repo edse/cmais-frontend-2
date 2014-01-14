@@ -17,12 +17,8 @@
     $('#filtrar-tudo').keypress(function( event ) {
       if ( event.which == 13 ) {
        selectAll()
-       $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos, em instantes você seá levado para o primeiro item da lista.');
-       setTimeout(function() {
-        $('#container a:first').focus(); 
-       }, 7000);
-       
-       
+       $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos, em instantes você será levado para o primeiro item da lista.');
+       setFocus();
       } 
     });
     
@@ -67,9 +63,7 @@
         $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos, em instantes você seá levado para o primeiro item da lista.');
       }
       
-      setTimeout(function() {
-        $('#container a:first').focus(); 
-      }, 7000);
+      setFocus();
         
        
       
@@ -130,6 +124,11 @@
       });
     }
     
+    function setFocus(){
+      setTimeout(function() {
+        $('#container a:first').focus(); 
+      }, 8500);
+    }
     /*lista destaque small
      $('.todos-itens li').each(function(i){
        el = $(this);
