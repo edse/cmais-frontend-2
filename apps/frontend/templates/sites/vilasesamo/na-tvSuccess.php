@@ -88,7 +88,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         </div>
         <!--/container-->
       </section>
-      <span class="fundo-na-tv" aria-label="Imagem teste de leitura" tabindex="0"></span> 
+      <span class="fundo-na-tv" aria-label="Imagem do Garibaldo com a Bel dizendo: Olá!" tabindex="0"></span> 
     </div>
     <!--/container conteudo-->
     
