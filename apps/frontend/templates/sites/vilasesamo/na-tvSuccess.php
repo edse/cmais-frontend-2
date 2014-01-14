@@ -18,68 +18,85 @@
 
 <!--content-->
 <div id="content">
+	
+	<!--Explicação acessibilidade-->
+	<h1 tabindex="0" class="ac-explicacao">
+	 <?php echo $section->getDescription(); ?>
+	</h1>
   
   <!--section -->
   <section class="filtro row-fluid">
     
     <!--container conteudo-->
     <div class="b-verde borda-arredonda">
-      <h1>
+      <h1 title="Na tv">
         <span class="icones-sprite-interna icone-na-tv-grande"></span>
         <?php echo $section->getTitle() ?>
       </h1>
       
       <!--container-->
-      <div class="container-na-tv">
-        <h2 class="ola"><?php echo $section->getDescription() ?></h2>
-        
-        <?php if(isset($displays['historia'])): ?>
-          <?php if(count($displays['historia']) > 0): ?>
-            <?php echo html_entity_decode($displays['historia'][0]->Asset->AssetContent->render()) ?>
+      <section><!--só leu qndo tirei o aria-hidden e o tabindex -1-->
+        <div class="container-na-tv">
+          <h2 class="ola" tabindex="0" aria-label="<?php echo $section->getDescription() ?>"><?php echo $section->getDescription() ?></h2>
+          
+          <?php if(isset($displays['historia'])): ?>
+            <?php if(count($displays['historia']) > 0): ?>
+              <?php echo html_entity_decode($displays['historia'][0]->Asset->AssetContent->render()) ?>
+            <?php endif; ?>
           <?php endif; ?>
-        <?php endif; ?>
-        
-        
-        <?php if(isset($displays['programacao-na-tv'])): ?>
-          <?php if(count($displays['programacao-na-tv']) > 0): ?>
-                   
-          <!--container-horario-->
-          <div class="container-horarios">
-            
-            <!--box-horario-->
-            <?php foreach($displays['programacao-na-tv'] as $k=>$d):?>
+          
+          
+          <?php if(isset($displays['programacao-na-tv'])): ?>
+            <?php if(count($displays['programacao-na-tv']) > 0): ?>
+                     
+            <!--container-horario-->
+            <div class="container-horarios" aria-label="Horário do programa na TV" tabindex="0">
               
-               
-            <div class="box-horario <?php if($k==0) echo "sem-margem-l"?>">
-              
-              <div class="box-logo">
-                <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                  <span class="img-logo">
-                    <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
-                  </span>
-                  <span class="icones-na-tv icone-seta-box"></span>
-                </div>
+              <!--box-horario-->
+              <?php foreach($displays['programacao-na-tv'] as $k=>$d):?>
                 
-                <h2><?php echo $d->getTitle() ?></h2> 
-                <p><?php echo html_entity_decode($d->getHtml()) ?></p>
-              </a>  
+                 
+              <div class="box-horario <?php if($k==0) echo "sem-margem-l"?>">
+                
+                <div class="box-logo">
+                  <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                    <span class="img-logo">
+                      <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
+                    </span>
+                    <span class="icones-na-tv icone-seta-box"></span>
+                  </div>
+                  
+                  <h2><?php echo $d->getTitle() ?></h2> 
+                  <p><?php echo html_entity_decode($d->getHtml()) ?></p>
+                </a>  
+              </div>
+              <?php endforeach?>
+              <!--/box-horario-->
+              
             </div>
-            <?php endforeach?>
-            <!--/box-horario-->
-            
-          </div>
-          <!--/container-horario-->
+            <!--/container-horario-->
+            <?php endif; ?>
           <?php endif; ?>
-        <?php endif; ?>
-        
-         
-      </div>
-      <!--/container-->
-      <span class="fundo-na-tv"></span> 
+          
+           
+        </div>
+        <!--/container-->
+      </section>
+      <span class="fundo-na-tv" aria-label="Imagem teste de leitura" tabindex="0"></span> 
     </div>
     <!--/container conteudo-->
     
-    
+    <script>
+    $('.container-na-tv p').each(function(index) {
+      $(this).attr('tabindex', 0);
+    });
+    </script>
+    <script>
+    $('.container-na-tv p > a').each(function(index) {
+      $(this).attr('tabindex', -1).attr("aria-hidden","true");
+    });
+    </script>
+   
     
        
 
