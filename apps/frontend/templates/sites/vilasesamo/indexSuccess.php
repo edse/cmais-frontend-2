@@ -32,7 +32,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <?php if(isset($displays['destaques-de-assets'])): ?>
           <?php if(count($displays['destaques-de-assets']) > 0): ?>
       <!--section-->
-      <section class="destaques span8" aria-label="links em destaque">
+      <section class="destaques span8" aria-label="links em destaque" tabindex="0">
             <?php foreach($displays['destaques-de-assets'] as $d): ?>
               <?php
                 $sections = $d->Asset->getSections();
