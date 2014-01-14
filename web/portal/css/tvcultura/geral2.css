@@ -550,7 +550,7 @@
 .abas li { float:left; margin-right:56px;  height:34px; position:relative; }
 .abas li a { font:bold 14px arial; display:block; text-transform:uppercase; text-align:center; color:#fff; padding:3px 10px; background:transparent; height:22px; line-height:22px;   }
 .abas li.ativo a,
-.abas li:hover a { background:##195A19; /*ff6633;*/  }
+.abas li:hover a { background:#195A19; /*ff6633;*/  }
 .abas li:hover a { text-decoration:none; }
 .abas li .decoracao  { background:none; width:12px; height:6px; position:absolute; bottom:0; }
 .abas li.ativo .decoracao,
