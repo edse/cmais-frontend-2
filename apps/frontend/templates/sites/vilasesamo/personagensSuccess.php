@@ -47,6 +47,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 <!--/content-->
 
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
+<?php echo $noscript; ?>
+
 <script>
   var $container = $('#container-personagens');
   $container.isotope({
