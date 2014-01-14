@@ -20,7 +20,7 @@
        $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos');
        setTimeout(function() {
         $('#container a:first').focus(); 
-       }, 3000);
+       }, 10000);
        
        
       } 
@@ -101,7 +101,7 @@
       if(cont != personagens){
         
         var filter_selected = "";
-        
+        $("filtrar-tudo").html("Deselecionar todos");
         $('.filtro-personagem li').addClass('ativo');
         $('.filtro-personagem li a').find('img').animate({top:-25, easing:"swing"},'fast');
         
@@ -115,7 +115,7 @@
       }else if(cont==personagens){
         cont=0;
         filter_selected = "";
-        
+        $("filtrar-tudo").html("Selecionar todos");
         $('.filtro-personagem li').removeClass('ativo');
         $('.filtro-personagem li a').find('img').animate({top:0, easing:"swing"},'fast');
         $container.isotope({ filter:filter_selected });
