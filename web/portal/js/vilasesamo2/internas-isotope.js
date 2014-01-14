@@ -125,7 +125,7 @@
         if($(this).hasClass('isotope-hidden')){
           $(this).find('a').attr('tabindex','-1').attr("aria-hidden", "true");
         }else{
-          $(this).find('a').attr('tabindex','0').attr("aria-hidden", "true");
+          $(this).find('a').attr('tabindex','0').attr("aria-hidden", "false");
         }
       });
     }
