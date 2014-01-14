@@ -18,10 +18,6 @@
       if ( event.which == 13 ) {
        selectAll()
       } 
-    });  
-      //console.log(cont);
-      //console.log(personagens);
-      
     });
     
     //filtro personagens para atividades, jogos e videos
