@@ -18,13 +18,8 @@
       if ( event.which == 13 ) {
        selectAll()
        $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos');
-       $('#container.isotope .element').each(function(i){
-        if($(this).hasClass('isotope-hidden')){
-          $(this).find('a').attr('tabindex','-1');
-        }else{
-          $(this).find('a').attr('tabindex','0');
-        }
-      });
+       $('#container').focus()
+       
       } 
     });
     
@@ -112,6 +107,13 @@
         $container.isotope({ filter:filter_selected });
       }
     }
+    $('#container.isotope .element').each(function(i){
+      if($(this).hasClass('isotope-hidden')){
+        $(this).find('a').attr('tabindex','-1');
+      }else{
+        $(this).find('a').attr('tabindex','0');
+      }
+    });
     /*lista destaque small
      $('.todos-itens li').each(function(i){
        el = $(this);
