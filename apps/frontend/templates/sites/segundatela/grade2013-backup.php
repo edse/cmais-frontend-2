@@ -24,7 +24,7 @@
           </div>
           <div class="redes">
             <div class="twt">
-              <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
+              <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tvcultura" data-related="tvcultura">Tweet</a>
             </div>
             <div class="fb">
               <fb:like href="http://tvcultura.cmais.com.br/segundatela/grade2013" layout="button_count" show_faces="false" send="false" width="160"></fb:like>

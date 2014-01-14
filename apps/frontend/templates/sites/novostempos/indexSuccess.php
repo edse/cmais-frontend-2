@@ -12,7 +12,7 @@
           <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false" width="160"></fb:like>
         </div>
         <div class="twt">
-          <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
+          <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tvcultura" data-related="tvcultura">Tweet</a>
         </div>
       </div>
       <ul class="nav nav-pills">
