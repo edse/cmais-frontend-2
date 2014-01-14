@@ -123,9 +123,9 @@
       
       $('#container.isotope .element').each(function(i){
         if($(this).hasClass('isotope-hidden')){
-          $(this).find('a').attr('tabindex','-1');
+          $(this).find('a').attr('tabindex','-1').attr("aria-hidden", "true");
         }else{
-          $(this).find('a').attr('tabindex','0');
+          $(this).find('a').attr('tabindex','0').attr("aria-hidden", "true");
         }
       });
     }
