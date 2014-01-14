@@ -1,12 +1,9 @@
-<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
-<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
-<?php
-$noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
-?> 
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
+
 <script>
   $("body").addClass("interna personagens");
 </script>
-<?php echo $noscript; ?>
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
 ?>
@@ -14,10 +11,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 
 <!--content-->
 <div id="content">
-  <!--Explicação acessibilidade-->
-  <h1 tabindex="0" class="ac-explicacao">
-	<?php echo $section->getDescription(); ?>
-  </h1>
   
   <!--section-->
   <section class="filtro row-fluid">
@@ -62,11 +55,3 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   }, 5000);  
   
 </script>  
-<?php echo $noscript; ?>
-
-<script>
-$('#container-personagens p').each(function(index) {
-  $(this).attr('tabindex', -1).attr("aria-hidden","true");
-});
-</script>
-<?php echo $noscript; ?>
