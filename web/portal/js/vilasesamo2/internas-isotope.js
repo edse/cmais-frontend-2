@@ -11,35 +11,19 @@
     var cont = 0
     //seleciona todos no filtro
     $('#filtrar-tudo').click(function(){
-      var personagens = 8;
-      
-      if(cont != personagens){
-        
-        var filter_selected = "";
-        
-        $('.filtro-personagem li').addClass('ativo');
-        $('.filtro-personagem li a').find('img').animate({top:-25, easing:"swing"},'fast');
-        
-        $('.filtro-personagem li.ativo').each(function(i){
-          filter_selected += $(this).find('a').attr('data-filter') + ",";
-          //$select += $(this).find('a').attr('data-filter') + ', ';
-        });
-        goTop();
-        $container.isotope({ filter:filter_selected });
-        cont=personagens;
-      }else if(cont==personagens){
-        cont=0;
-        filter_selected = "";
-        
-        $('.filtro-personagem li').removeClass('ativo');
-        $('.filtro-personagem li a').find('img').animate({top:0, easing:"swing"},'fast');
-        $container.isotope({ filter:filter_selected });
-        
-      }  
-      console.log(cont);
-      console.log(personagens);
+      selectAll()
+    }); 
+    
+    $( "#target" ).keypress(function( event ) {
+      if ( event.which == 13 ) {
+       selectAll()
+      } 
+    });  
+      //console.log(cont);
+      //console.log(personagens);
       
     });
+    
     //filtro personagens para atividades, jogos e videos
     $('.filtro-personagem a').not('.inner.personagem a').click(function(){
       var $i=0;
@@ -96,6 +80,33 @@
       $('html, body').animate({
         scrollTop:parseInt($('.divisa').offset().top-126)
       }, "slow");
+    }
+    
+    function selectAll(){
+      var personagens = 8;
+      
+      if(cont != personagens){
+        
+        var filter_selected = "";
+        
+        $('.filtro-personagem li').addClass('ativo');
+        $('.filtro-personagem li a').find('img').animate({top:-25, easing:"swing"},'fast');
+        
+        $('.filtro-personagem li.ativo').each(function(i){
+          filter_selected += $(this).find('a').attr('data-filter') + ",";
+          //$select += $(this).find('a').attr('data-filter') + ', ';
+        });
+        goTop();
+        $container.isotope({ filter:filter_selected });
+        cont=personagens;
+      }else if(cont==personagens){
+        cont=0;
+        filter_selected = "";
+        
+        $('.filtro-personagem li').removeClass('ativo');
+        $('.filtro-personagem li a').find('img').animate({top:0, easing:"swing"},'fast');
+        $container.isotope({ filter:filter_selected });
+      }
     }
     /*lista destaque small
      $('.todos-itens li').each(function(i){
