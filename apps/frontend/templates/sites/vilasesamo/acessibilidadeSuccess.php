@@ -56,7 +56,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
          
       </div>
       <!--/container-->
-      <span class="fundo-acessibilidade" aria-label="Imagem de fundo Acessibilidade" tabindex="0"></span>
+      <span class="fundo-acessibilidade" aria-label="Imagem da Bel e Groove felizes por terem um site acessível" tabindex="0"></span>
     </div>
     <!--/container conteudo-->
     
