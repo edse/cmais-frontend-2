@@ -46,7 +46,9 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <?php echo html_entity_decode($displays['historia'][0]->Asset->AssetContent->render()) ?>
             <?php endif; ?>
           <?php endif; ?>
-          
+          <!--Explicação acessibilidade visite o site da Vila Sesamo nos EUA-->
+		  <a href="http://www.sesameworkshop.org/" tabindex="0" class="ac-link" aria-label="Visite o site da Vila Sésamo nos Estados Unidos"></a>
+
           
           <?php if(isset($displays['programacao-na-tv'])): ?>
             <?php if(count($displays['programacao-na-tv']) > 0): ?>

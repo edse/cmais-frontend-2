@@ -51,8 +51,9 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <?php endif; ?>
         <?php endif; ?>  
         
+         <!--Explicação acessibilidade visite o site da Laramara-->
+		  <a href="http://laramara.org.br/" tabindex="0" class="ac-link" aria-label="Visite o site da LARAMARA"></a>
             
-                  
          
       </div>
       <!--/container-->
