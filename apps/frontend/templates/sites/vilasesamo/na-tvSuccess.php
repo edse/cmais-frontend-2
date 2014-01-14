@@ -11,11 +11,15 @@
     });  
   <?php endif; ?>
 </script>
+<?php echo $noscript; ?>
 
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
-
+<?php
+$noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
+?> 
+<!-
 <!--content-->
 <div id="content">
 	
@@ -91,12 +95,14 @@
       $(this).attr('tabindex', 0);
     });
     </script>
+    <?php echo $noscript; ?>
     <script>
     $('.container-na-tv p > a').each(function(index) {
       $(this).attr('tabindex', -1).attr("aria-hidden","true");
     });
     </script>
-   
+	<?php echo $noscript; ?>
+	   
     
        
 
