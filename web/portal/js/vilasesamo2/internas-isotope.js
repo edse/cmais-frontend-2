@@ -17,6 +17,14 @@
     $('#filtrar-tudo').keypress(function( event ) {
       if ( event.which == 13 ) {
        selectAll()
+       $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos');
+       $('#container.isotope .element').each(function(i){
+        if($(this).hasClass('isotope-hidden')){
+          $(this).find('a').attr('tabindex','-1');
+        }else{
+          $(this).find('a').attr('tabindex','0');
+        }
+      });
       } 
     });
     
@@ -51,9 +59,9 @@
       });
 
       if($i > 0){
-        $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens</span>');
+        $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens no total</span>');
       }else{
-        $('#filtro-descricao').html('Todos os links dos personagens estão ativos');
+        $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos');
       }
       
       return false;
