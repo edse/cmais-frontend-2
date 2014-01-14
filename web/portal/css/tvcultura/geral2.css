@@ -651,7 +651,7 @@
 
 /* tvcultura*/
 #menu-rodape .abas .tvcultura.ativo span,
-#menu-rodape .abas .tvcultura:hover span { left:48px; }
+#menu-rodape .abas .tvcultura:hover span { left:48px; background-position: 0 -66px; }
 /* /tvcultura*/
 
 /* univesptv*/
