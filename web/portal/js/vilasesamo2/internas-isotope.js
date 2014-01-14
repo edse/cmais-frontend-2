@@ -17,10 +17,10 @@
     $('#filtrar-tudo').keypress(function( event ) {
       if ( event.which == 13 ) {
        selectAll()
-       $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos');
+       $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos, em instantes você seá levado para o primeiro item da lista.');
        setTimeout(function() {
         $('#container a:first').focus(); 
-       }, 10000);
+       }, 7000);
        
        
       } 
@@ -69,7 +69,7 @@
       
       setTimeout(function() {
         $('#container a:first').focus(); 
-      }, 10000);
+      }, 7000);
         
        
       
