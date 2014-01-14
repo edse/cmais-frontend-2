@@ -50,11 +50,16 @@
       
       $container.isotope({ filter:filter_selected });
       
+      
       $('#container.isotope .element').each(function(i){
-        if(!$(this).hasClass('isotope-hidden')){
+        if($(this).hasClass('isotope-hidden')){
+          $(this).find('a').attr('tabindex','-1');
+        }else{
           $j++;
+          $(this).find('a').attr('tabindex','0');
         }
       });
+      
 
       if($i > 0){
         $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens no total</span>');
