@@ -71,7 +71,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       $(this).attr('tabindex', -1).attr("aria-hidden","true");
     });
     </script>
-    
+    <?php echo $noscript; ?>
        
 
   </section>
