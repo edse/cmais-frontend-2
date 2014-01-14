@@ -62,14 +62,16 @@
       
 
       if($i > 0){
-        $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens no total</span>');
+        $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens visíveis no total, em instantes você seá levado para o primeiro item da lista.</span>');
       }else{
-        $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos');
+        $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos, em instantes você seá levado para o primeiro item da lista.');
       }
       
       setTimeout(function() {
         $('#container a:first').focus(); 
-       }, 3000);
+      }, 10000);
+        
+       
       
       return false;
     });
