@@ -11,35 +11,21 @@
     var cont = 0
     //seleciona todos no filtro
     $('#filtrar-tudo').click(function(){
-      var personagens = 8;
-      
-      if(cont != personagens){
-        
-        var filter_selected = "";
-        
-        $('.filtro-personagem li').addClass('ativo');
-        $('.filtro-personagem li a').find('img').animate({top:-25, easing:"swing"},'fast');
-        
-        $('.filtro-personagem li.ativo').each(function(i){
-          filter_selected += $(this).find('a').attr('data-filter') + ",";
-          //$select += $(this).find('a').attr('data-filter') + ', ';
-        });
-        goTop();
-        $container.isotope({ filter:filter_selected });
-        cont=personagens;
-      }else if(cont==personagens){
-        cont=0;
-        filter_selected = "";
-        
-        $('.filtro-personagem li').removeClass('ativo');
-        $('.filtro-personagem li a').find('img').animate({top:0, easing:"swing"},'fast');
-        $container.isotope({ filter:filter_selected });
-        
-      }  
-      console.log(cont);
-      console.log(personagens);
-      
+      selectAll()
+    }); 
+    
+    $('#filtrar-tudo').keypress(function( event ) {
+      if ( event.which == 13 ) {
+       selectAll()
+       $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos');
+       setTimeout(function() {
+        $('#container a:first').focus(); 
+       }, 800);
+       
+       
+      } 
     });
+    
     //filtro personagens para atividades, jogos e videos
     $('.filtro-personagem a').not('.inner.personagem a').click(function(){
       var $i=0;
@@ -71,9 +57,9 @@
       });
 
       if($i > 0){
-        $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens</span>');
+        $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens no total</span>');
       }else{
-        $('#filtro-descricao').html('Todos os links dos personagens estão ativos');
+        $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos');
       }
       
       return false;
@@ -97,6 +83,42 @@
         scrollTop:parseInt($('.divisa').offset().top-126)
       }, "slow");
     }
+    
+    function selectAll(){
+      var personagens = 8;
+      
+      if(cont != personagens){
+        
+        var filter_selected = "";
+        
+        $('.filtro-personagem li').addClass('ativo');
+        $('.filtro-personagem li a').find('img').animate({top:-25, easing:"swing"},'fast');
+        
+        $('.filtro-personagem li.ativo').each(function(i){
+          filter_selected += $(this).find('a').attr('data-filter') + ",";
+          //$select += $(this).find('a').attr('data-filter') + ', ';
+        });
+        goTop();
+        $container.isotope({ filter:filter_selected });
+        cont=personagens;
+      }else if(cont==personagens){
+        cont=0;
+        filter_selected = "";
+        
+        $('.filtro-personagem li').removeClass('ativo');
+        $('.filtro-personagem li a').find('img').animate({top:0, easing:"swing"},'fast');
+        $container.isotope({ filter:filter_selected });
+      }
+      
+      $('#container.isotope .element').each(function(i){
+        if($(this).hasClass('isotope-hidden')){
+          $(this).find('a').attr('tabindex','-1');
+        }else{
+          $(this).find('a').attr('tabindex','0');
+        }
+      });
+    }
+    
     /*lista destaque small
      $('.todos-itens li').each(function(i){
        el = $(this);
