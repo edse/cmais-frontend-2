@@ -572,7 +572,7 @@
 
 /* minha cultura */
 #menu-rodape .abas .minha-cultura.ativo span,
-#menu-rodape .abas .minha-cultura:hover span { background-position: 0 0; left:61px; }
+#menu-rodape .abas .minha-cultura:hover span { background-position: 0 -66px; left:61px; }/*era  bg pos 0 0*/
 /* /minha cultura */
 
 /* musica */
