@@ -10,7 +10,7 @@
                 <h2>vem jogar com a gente! de segunda a sexta, às 19h20</h2>
                 <div class="redes">
                   <div class="t">
-                    <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
+                    <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tvcultura" data-related="tvcultura">Tweet</a>
                   </div> 
                    <div class="f">
                     <fb:like href="http://facebook.com/qss" layout="button_count" show_faces="false" send="true" width="auto"></fb:like>

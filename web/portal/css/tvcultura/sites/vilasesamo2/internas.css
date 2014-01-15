@@ -111,21 +111,21 @@ body.campanhas{background-color:#fee133!important;}
 .destaque-filtro .img-destaque { position:relative; width:100%; display: block;}
 .todos-itens li h2 { border-bottom:2px solid #0191fb;} 
 .todos-itens li h2,
-.destaque-filtro article h1 { margin:0; line-height: 32px; }
-.destaque-filtro article a p{font-family: 'dinmedium';font-size: 18px;text-transform: uppercase; margin:0; line-height:34px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.destaque-filtro h1 { margin:0; line-height: 32px; }
+.destaque-filtro a p{font-family: 'dinmedium';font-size: 18px;text-transform: uppercase; margin:0; line-height:34px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
 .interna .paginas{float:left;padding:5px;width: 528px;}
 .interna .paginas img{width:100px;}
 .interna .paginas span{text-transform:uppercase;text-align:left; font-family:'din-blackregular',Arial, Helvetica, sans-serif;color:#571ed9;font-size: 25px;float: left;line-height: 61px;}
-.interna.atividades .destaque-filtro article a p{color: #b16af2;}
-.interna.jogos .destaque-filtro article a p{color: #02cbff;}
-.interna.videos .destaque-filtro article a p{color: #fba500;}
+.interna.atividades .destaque-filtro a p{color: #b16af2;}
+.interna.jogos .destaque-filtro a p{color: #02cbff;}
+.interna.videos .destaque-filtro a p{color: #fba500;}
 .destaque-filtro a img { border:2px solid transparent; }
 .destaque-filtro .span6:hover a {color:#02cbff; text-decoration:underline;}
 .destaque-filtro .span6:hover a img {border:2px solid #02cbff;}
 .destaque-filtro.especial li a,
 .todos-itens li h2 a, 
-.destaque-filtro article h1 a { font-size: 18px; font-weight:normal; color:#1993f7; text-transform:uppercase; line-height:32px; height:32px; display:block; }
-.destaque-filtro article span { position: absolute; top:1px; right:-2px; color:#00aa52; text-transform:uppercase; font-size:18px; text-align:right; padding:4px 10px 0 0; width:137px;}
+.destaque-filtro h1 a { font-size: 18px; font-weight:normal; color:#1993f7; text-transform:uppercase; line-height:32px; height:32px; display:block; }
+.destaque-filtro span { position: absolute; top:1px; right:-2px; color:#00aa52; text-transform:uppercase; font-size:18px; text-align:right; padding:4px 10px 0 0; width:137px;}
 .destaque-filtro .span10 { margin-left:15%; }
 .destaque-filtro.especial { padding:0; }
 .destaque-filtro.especial li.active,
@@ -193,7 +193,7 @@ body.campanhas{background-color:#fee133!important;}
 .cuidadores .container-cuidadores .destaques .yt-menu{max-width:300px;height:300px; display:block; overflow: hidden;border-bottom:#f77400 2px solid;}
 .todos-itens .videos .yt-menu img,
 .interna.videos .yt-menu img,
-.cuidadores .container-cuidadores .destaques .yt-menu img{max-width:401px!important;width:401px!important; position:relative; left:-68;}
+.cuidadores .container-cuidadores .destaques .yt-menu img{max-width:401px!important;width:401px!important; position:relative; left:-60px;}
 .interna.videos .todos-itens li,
 .interna.videos .filtro,
 .interna.videos .scroll { border-color:#fba500; }

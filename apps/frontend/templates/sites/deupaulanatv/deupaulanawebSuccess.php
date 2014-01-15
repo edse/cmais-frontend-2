@@ -189,7 +189,7 @@ $(function(){ //onready
                 </div>
                 
                 <div style="display:block; float: left; text-align: left;">
-                  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura">Tweet</a>
+                  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tvcultura" data-related="tvcultura">Tweet</a>
                 </div>
               </div>  
             </div>
