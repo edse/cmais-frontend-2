@@ -98,7 +98,6 @@
         $("filtrar-tudo").html("Deselecionar todos");
         $('.filtro-personagem li').addClass('ativo');
         $('.filtro-personagem li a').find('img').animate({top:-25, easing:"swing"},'fast');
-        
         $('.filtro-personagem li.ativo').each(function(i){
           filter_selected += $(this).find('a').attr('data-filter') + ",";
           //$select += $(this).find('a').attr('data-filter') + ', ';
