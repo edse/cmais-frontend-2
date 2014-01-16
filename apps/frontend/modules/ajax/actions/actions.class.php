@@ -1368,7 +1368,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
                 $return =  '<li class="span4 element '. $printPersonagens ." ". $assetSectionB .'">';
               endif;
               
-              if($section =="jogos" || $section == "atividades"){
+              if($section =="jogos" || $section == "atividades" || $section == "pais-e-educadores"){
                 $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '" class="'. $first .'" aria-label=".Titulo ' . substr($section, 0, (strlen($section) -1)) . ": "  . $d->getTitle() . '. Descrição:' .$d->getDescription() .'. Descrição do Thumbnail:'. $descricaoImagem .'">';
               }elseif($sectionP == 3194 || $sectionP == 2390){
                 if($a->getSlug()=="videos") {
