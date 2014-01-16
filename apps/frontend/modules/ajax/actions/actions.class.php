@@ -242,21 +242,19 @@ class ajaxActions extends sfActions
           }
           geoip_close($gi);
         }
-
+				
+				//Redirect do cmais/aovivo para a home dos programas
         if($schedules[0]->program_id == 77){
           die("self.location.href='http://tvcultura.cmais.com.br/cartaoverde/aovivo'");
         }        
-               
         if($schedules[0]->program_id == 75){
           if (date('w') != "5") { // se dia diferente de sexta, redireciona...
             die("self.location.href='http://tvcultura.cmais.com.br/rodaviva/transmissao'");
           }
         }
-       
         if($schedules[0]->program_id == 937){
           die("self.location.href='http://tvcultura.cmais.com.br/jcprimeiraedicao'");
         }
-
         if($schedules[0]->program_id == 940){
           die("self.location.href='http://tvcultura.cmais.com.br/jcdebate'");
         }   			 
