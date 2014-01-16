@@ -253,6 +253,14 @@ class ajaxActions extends sfActions
           }
         }
        
+        if($schedules[0]->program_id == 937){
+          die("self.location.href='http://tvcultura.cmais.com.br/jcprimeiraedicao'");
+        }
+
+        if($schedules[0]->program_id == 940){
+          die("self.location.href='http://tvcultura.cmais.com.br/jcdebate'");
+        }   			 
+			 
         $next = Doctrine_Query::create()
           ->select('s.*')
           ->from('Schedule s')
