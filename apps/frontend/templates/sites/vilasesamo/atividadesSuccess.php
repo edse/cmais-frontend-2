@@ -1,9 +1,9 @@
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
-
+<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>" ?>
 <script>
   $("body").addClass("interna atividades");
 </script>
-
+<?php echo $noscript; ?>
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
@@ -14,7 +14,7 @@
 </h1>
 
 <!--content-->
-<div id="content" accesskey="Ctrl+c">
+<div id="content">
 <!--section-->
 <section class="filtro row-fluid">
   <!--span12-->
@@ -37,16 +37,16 @@
             <?php $related_preview = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByRelationType("Preview"); ?>
             <?php if($related_preview):?>
               <?php
-                if(count($related_preview)>0):
+                if(count($related_preview)>0 && $related_preview[0]->AssetImage->getHeadline() != ""):
                   $decricaoImagem = $related_preview[0]->AssetImage->getHeadline(); 
                 else:
-                  $decricaoImagem = "Desculpe, a imagem esta sem descrição.";  
+                  $decricaoImagem = "Desculpe, a imagem esta sem descrição mas esta atividade é bem legal, brinque com ela e chame a sua família ou amiguinhos!";  
                 endif; 
               ?>
             <?php endif; ?>
             <h2>
               <div class="span6 clipes">
-                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>" title="" aria-label="Novidade destaque Atividade - <?php echo ". ".$displays['destaque-1'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>" >
+                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>" title="" aria-label="Novidade destaque Atividade - Título: <?php echo $displays['destaque-1'][0]->getTitle().". Descrição: ".$displays['destaque-1'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>" >
                   <span class="sprite-selo">Novidade!</span>
                   <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="" />
                   <p><?php echo $displays['destaque-1'][0]->getTitle() ?></p>
@@ -69,10 +69,10 @@
             <?php endif; ?>
             <h2>
               <div class="span6 clipes semmargem">
-                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>" title="" aria-label="Novidade destaque Atividade - <?php echo ". ".$displays['destaque-2'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>" >
+                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>" title="" aria-label="Novidade destaque Atividade - Título:<?php echo $displays['destaque-2'][0]->getTitle().". Descrição: ".$displays['destaque-2'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>" >
                   <span class="sprite-selo">Novidade!</span>
                   <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="" />
-                  <p><?php echo $displays['destaque-1'][0]->getTitle() ?></p>
+                  <p><?php echo $displays['destaque-2'][0]->getTitle() ?></p>
                 </a> 
               </div>
             </h2>
