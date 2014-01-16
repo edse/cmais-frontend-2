@@ -74,7 +74,7 @@
         $('.first').before("<span class='firstDescription' aria-label='que pena acabou <?php echo  $selectDescription ?> . Você está no primeiro item da lista <?php echo $selectDescription; ?>, divirta-se com estes por enqunanto, boa diversão amiguinho.' tabindex='0'>");
         $('#page_nav').fadeOut('fast');
       }else if(countItens < 9){
-        carregarMais=". você não tem mais itens pra carregar.";
+        carregarMais=". que pena! você não tem mais itens <?php echo $selectDescription; ?> pra carregar.";
         $('#page_nav').fadeOut('fast');
         $('.first').before("<span class='firstDescription' aria-label='você carregou mais "+ countItens +" <?php echo $selectDescription; ?>, você está no primeiro item carregado "+carregarMais+"' tabindex='0'>");
       }else{
