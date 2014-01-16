@@ -4,11 +4,6 @@
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
-
-<?php
-$noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
-?>
-
 <?php 
   $assetSection = $asset->getSections();
   
@@ -26,7 +21,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     });  
   <?php endif; ?>
 </script>
-<?php echo $noscript; ?>
 
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -34,13 +28,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 
 <!--content-->
 <div id="content">
-
-	<!--Explicação acessibilidade-->
-	<h1 tabindex="0" class="ac-explicacao">
-	 <?php echo $asset->getDescription(); ?>
-	</h1>
-
-
+  
   <!--section -->
   <section class="filtro row-fluid">
     
@@ -49,7 +37,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       <h1>
         <span class="icones-sprite-interna icone-cuidadores-grande"></span>
         <?php echo $section->getTitle() ?>
-        <a href="/<?php echo $site->getSlug() ?>/<?php echo $section->getSlug() ?>" class="todos-assets" target="_self" title="voltar para todos os artigos" aria-label="voltar para todos os artigos">
+        <a href="/<?php echo $site->getSlug() ?>/<?php echo $section->getSlug() ?>" class="todos-assets" target="_self" title="voltar para todos os artigos">
           <i class="icones-setas icone-voltar-artigo" href="/<?php echo $site->getSlug() ?>/<?php echo $section->getSlug() ?>"></i>
           <p>todos os artigos</p>
         </a>
@@ -104,7 +92,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <?php $preview = $asset->retriveRelatedAssetsByRelationType("Preview") ?>
               <?php if(count($preview) > 0): ?>
               <div class="img-topo-asset">  
-                <p class="img-destaque-asset" aria-label="Imagem do artigo. Descrição. Mãos de crianças e adultos de todas as raças unidas, demonstrando diversidade.">
+                <p class="img-destaque-asset">
                   <img id="img-capa" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
                   <span id="legenda" ><?php echo $preview[0]->getDescription() ?></span>
                 </p>
@@ -133,7 +121,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <!--/section-->
            
             <!--footer-->
-            <div class="clearboth" aria-label="Você está no rodapé do artigo... Com links para as redes sociais para curtir e compartilhar!" tabindex="0">
+            <div class="clearboth">
               
               <!--compartilhar redes-->
               <?php include_partial_from_folder('sites/vilasesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
@@ -216,13 +204,12 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <div id="comente-este-artigo">              
                 <div class="divisa"></div>
                 <i class="icones-form icone-fale-conosco-ve"></i>
-                <h3 tabindex="0">Gostou desse artigo? Comente!</h3>
+                <h3>Gostou desse artigo? Comente!</h3>
               </div>
-              <!-- Box comentario FB-->
-              <fb:comments href="<?php echo $uri ?>" numposts="3" width="580" publish_feed="true" aria-hidden="true"></fb:comments> <!-- Tentativa de esconder o box do FB-->
-
+              
+              <fb:comments href="<?php echo $uri ?>" numposts="3" width="580" publish_feed="true"></fb:comments>
+              
             </div>
-           
             <!--/footer-->
             
           </article> 
@@ -253,7 +240,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             }
           ?>
           <?php if(count($tags) > 0): ?>
-          <div class="box-sobre" aria-label="Links relacionados à matéria" tabindex="0">
+          <div class="box-sobre">
             <h2>
               <i class="icones-sprite-interna icone-carregar-verde"></i>
               <span>sobre os temas</span>
@@ -294,7 +281,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <?php if(isset($related_articles)): ?>
             <?php if(count($related_articles) > 0): ?>
               <div class="box-ler">
-                <h2 class="titulo-box" aria-label="Artigos Relacionados" tabindex="0">
+                <h2 class="titulo-box">
                   <i class="icones-sprite-interna icone-artigo-ve-pequeno"></i>
                   <span>Artigos Relacionados</span>
                 </h2>
@@ -321,7 +308,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <!-- /para ler-->
           
           <!-- para brincar junto-->
-          <div class="box-brincarjunto destaques" aria-label="Para brincar Junto" tabindex="0">
+          <div class="box-brincarjunto destaques">
             <h2 class="titulo-box">
               <i class="icones-sprite-menu icone-cuidadores"></i>
               <span>Para brincar junto</span>
@@ -458,7 +445,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <!--/col dir -->
         
         <!--destaques-->
-        <div class="span4 col-direita" aria-label="Banner de publicidade do programa. Imagem do Elmo dançando com fones de ouvido." tabindex="0">
+        <div class="span4 col-direita">
           <?php
             $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"pais-e-educadores");
             $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($particularSection->getId(), "destaques-secundarios"); // Pega o bloco "destaques-secundarios" da seção "para os pais"
@@ -483,7 +470,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <!-- /banner vilasesamo -->
       
           <!--face like box-->
-          <iframe tabindex="-1" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FVilaSesamoOficial&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=446708858755935" scrolling="no" frameborder="0" style="width: 300px;margin-bottom: 20px;border:none; overflow:hidden; height:290px;" allowTransparency="true"></iframe>
+          <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FVilaSesamoOficial&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=446708858755935" scrolling="no" frameborder="0" style="width: 300px;margin-bottom: 20px;border:none; overflow:hidden; height:290px;" allowTransparency="true"></iframe>
           <!--/face like box-->
         
         </div>
@@ -517,14 +504,3 @@ function goTop(where){
   }, "slow");
 }      
 </script>
-<?php echo $noscript; ?>
-
-<!--Tabindex no corpo do atigo-->
-<script>
-$('.col-esq article p,li').each(function(index) {
-  $(this).attr('tabindex', 0);
-});
-</script>
-<?php echo $noscript; ?>
-
-
