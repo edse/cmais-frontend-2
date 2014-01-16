@@ -22,32 +22,15 @@
   <a href="javascript:vilaSesamoGetContents();" class="mais">Carregar mais<i class="icones-sprite-interna  <?php echo $icone ?>"></i></a>
 </nav>
 <?php endif; ?>
-<?php $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>" ?>
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
-<?php echo $noscript ?>
-<script src="http://172.20.16.219/portal/js/vilasesamo2/internas-isotope.js"></script>
-<?php echo $noscript ?>
+<script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <script>
-
   contentPage = 1;
   var no_repeat = "";
   quantPage = <?php echo $pageQuant ?>  + 1;
   $('.mais').click(function(){
     contentPage++;
     no_repeat = $('.no-repeat').attr("value");
-    $('#container').find('a').removeClass('first').removeClass('count');
-    $('.firstDescription').remove();
-    var countItens = 0;
-    //console.log(countItens)
-    setTimeout(function(){
-      $('.count').each(function(i){
-        countItens = i
-      });
-      var carregarMais = ""
-      if(contentPage >= quantPage) carregarMais=". você não tem mais itens pra carregar."  
-      $('.first').before('<span class="firstDescription" aria-label="você carregou mais '+ countItens +' <?php echo $section->getSlug() ?> , você está no primeiro item carregado '+carregarMais+'" tabindex="0">')
-      $('.firstDescription').focus();
-    }, 500);
   });
   
   vilaSesamoGetContents();
@@ -76,4 +59,3 @@
    
 
 </script>
-<?php echo $noscript ?>

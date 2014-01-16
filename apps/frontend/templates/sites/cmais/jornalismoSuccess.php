@@ -342,51 +342,23 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
       <!--estradas-->
      	<div class="destaque-programas s-margem extra">
         <h2>Estradas</h2>
+        
+        	<div class="pageload" style="float: right; margin-top: -24px;margin-right: 82px;margin-bottom: 0px;">
+        		<img src="http://cmais.com.br/portal/images/capaPrograma/transito/transparent_loading.gif" alt="carregando..." />
+        	</div>     
+        
           <form id="form-estradas-sp" method="post">
             <select id="select-estradas-sp" style="width: 200px;float: left; margin-bottom: 5px;"> 
-              <option value="http://www.dersa.sp.gov.br/santos.jpg" selected="selected">Balsa de Santos - Guarujá</option>
-              <option value="http://www.dersa.sp.gov.br/guaruja1.jpg">Balsa de Guarujá - Santos</option>
-              <option value="http://www.dersa.sp.gov.br/bertioga/bertioga.jpg">Balsa de Bertioga - Guarujá</option>
-              <option value="http://www.dersa.sp.gov.br/saosebastiao.jpg">Balsa de São Sebastião - Ilha Bela</option>
-              <option value="http://www.dersa.sp.gov.br/ilhabela.jpg">Balsa de Ilha Bela - São Sebastião</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Imigrantes-Km12/Camera1-2013-11-27-13h-9m.jpg">Imigrantes - Planalto</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Imigrantes-Km20/Camera2-2013-11-27-13h-9m.jpg">Imigrantes - Planalto</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Imigrantes-Km28/Camera3-2013-11-27-13h-10m.jpg">Imigrantes - Balança Planalto</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Imigrantes-Km32/Camera4-2013-11-27-13h-10m.jpg">Imigrantes - Pedágio Piratininga</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Imigrantes-Km40/Camera5-2013-11-27-13h-10m.jpg">Imigrantes - Planalto</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Imigrantes-Km48/Camera6-2013-11-27-13h-11m.jpg">Imigrantes - Serra</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Imigrantes-Km56/Camera7-2013-11-27-13h-11m.jpg">Imigrantes - Balança Baixada</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Imigrantes-Km59/Camera8-2013-11-27-13h-11m.jpg">Imigrantes - Acesso Baixada</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Anchieta-Km13/Camera9-2013-11-27-13h-12m.jpg">Anchieta - Ribeirão dos Couros</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Anchieta-Km23/Camera10-2013-11-27-13h-9m.jpg">Anchieta - Trevo da Volkswagen</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Anchieta-Km31/Camera11-2013-11-27-13h-9m.jpg">Anchieta - Pedágio Riacho Grande</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Anchieta-Km43/Camera12-2013-11-27-13h-10m.jpg">Anchieta - Serra</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Anchieta-Km55/Camera13-2013-11-27-13h-10m.jpg">Anchieta - Trevo de Cubatão</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Anchieta-Km65/Camera14-2013-11-27-13h-10m.jpg">Anchieta - Entrada Santos</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Conego-Km250/Camera15-2013-11-27-13h-11m.jpg">Pedágio Santos</option>
-              <option value="http://www.ecovias.com.br/Content/Cameras/Nobrega-Km280/Camera16-2013-11-27-13h-11m.jpg">Pedágio São Vicente</option>
-              <option value="http://www.der.sp.gov.br/img_cameras/name9.jpg">Padre Manoel da Nobrega - Km 292</option>
-              <option value="http://www.der.sp.gov.br/img_cameras/name2.jpg">Padre Manoel da Nobrega - Km 323</option>
-              <option value="http://www.der.sp.gov.br/img_cameras/name13.jpg">Padre Manoel da Nobrega - Km 337</option>
-              <option value="http://www.der.sp.gov.br/img_cameras/name3.jpg">Padre Manoel da Nobrega - Km 344</option>
-              <option value="http://www.ecopistas.com.br/Content/Cameras/Sp70-Km15/Camera30-2013-11-27-13h-10m.jpg">Ayrton Senna / Km 15</option>
-              <option value="http://www.ecopistas.com.br/Content/Cameras/Sp70-Km19/Camera31-2013-11-27-13h-11m.jpg">Ayrton Senna / Km 19</option>
-              <option value="http://www.ecopistas.com.br/Content/Cameras/Sp70-Km32/Camera32-2013-11-27-13h-11m.jpg">Ayrton Senna / Km 32</option>
-              <option value="http://www.ecopistas.com.br/Content/Cameras/Sp70-Km53/Camera33-2013-11-27-13h-11m.jpg">Ayrton Senna / Km 53</option>
-              <option value="http://www.ecopistas.com.br/Content/Cameras/Sp70-Km57/Camera34-2013-11-27-13h-11m.jpg">Ayrton Senna / Km 57</option>
-              <option value="http://www.ecopistas.com.br/Content/Cameras/Sp70-Km60/Camera35-2013-11-27-13h-12m.jpg">Ayrton Senna / Km 60</option>
-              <option value="http://www.ecopistas.com.br/Content/Cameras/Sp70-Km83/Camera36-2013-11-27-13h-9m.jpg">Carvalho Pinto / Km 83</option>
-              <option value="http://www.ecopistas.com.br/Content/Cameras/Sp70-Km92/Camera37-2013-11-27-13h-10m.jpg">Carvalho Pinto / Km 92</option>
-              <option value="http://www.ecopistas.com.br/Content/Cameras/Sp70-Km95/Camera38-2013-11-27-13h-10m.jpg">Carvalho Pinto / Km 95</option>
-              <option value="http://www.ecopistas.com.br/Content/Cameras/Sp70-Km115/Camera39-2013-11-27-13h-10m.jpg">Carvalho Pinto / Km 115</option>
-              <option value="http://www.ecopistas.com.br/Content/Cameras/Sp70-Km130/Camera40-2013-11-27-13h-10m.jpg">Carvalho Pinto / Km 130</option>
-              <option value="http://www.der.sp.gov.br/img_cameras/name25.jpg">Raposo Tavares - Km 12,5</option>
-              <option value="http://www.der.sp.gov.br/img_cameras/name8.jpg">Raposo Tavares - Km 17</option>
-              <option value="http://www.der.sp.gov.br/img_cameras/name30.jpg">Raposo Tavares - Km 20</option>
+				      
+				      <option value="http://200.136.27.15/cameras/imagem.php?cam=belenzinho">Belenzinho</option>
+				      <option value="http://200.136.27.15/cameras/imagem.php?cam=mpinheiros">Marginal Pinheiros</option>
+				      <option value="http://200.136.27.15/cameras/imagem.php?cam=pompeia">Pompéia</option>
+				      <option value="http://200.136.27.15/cameras/imagem.php?cam=santana">Santana</option>
+				      <option value="http://200.136.27.15/cameras/imagem.php?cam=tiradentes" selected="selected">Av. Tiradentes</option>
+				                    
             </select>
           </form>
-          <!-- <div class="pageload" style="float: left; margin-top: 6px;"><img src="http://cmais.com.br/portal/images/capaPrograma/transito/transparent_loading.gif" alt="carregando..." /></div> -->
-          <img id="img-estrada-selecionada" src="http://www.dersa.sp.gov.br/santos.jpg" alt="Balsa de Santos - Guarujá" style="width: 200px;" />  
+          <img id="img-estrada-selecionada" src="http://200.136.27.15/cameras/imagem.php?cam=tiradentes" alt="" style="width: 200px;height:160px" />  
         </div>  
        <!--/estradas-->
     </div>
@@ -476,4 +448,96 @@ $(document).ready(function(){
     }
   });
 });
+
+$(function(){
+    var imigrantes = 0;
+    var anchieta = 0;
+    $.ajax({
+      url: "/portal/cams.php?s=ecovias",
+      dataType: "json",
+      success: function(data){
+        $.each(data, function(i,data){
+          var a = new String(data.src);
+          //Imigrantes
+          if(a.indexOf("Imigrantes")>=0){
+            data.title = "Imigrantes - "+data.title;
+            
+            if(data.title != "Imigrantes - Planalto"){
+	            if(imigrantes==0){
+	            	$('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="'+data.src+'" selected="selected">'+data.title+'</a></li>');
+	              //$("#img-estrada-selecionada").attr('src', data.src);
+	            }
+	            else
+	              $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="'+data.src+'">'+data.title+'</a></li>');
+
+           	}
+						imigrantes++;
+          }
+          
+          //Anchieta
+          if(a.indexOf("Anchieta")>=0){
+            data.title = "Anchieta - "+data.title;
+            if(anchieta==0){
+              $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="'+data.src+'" selected="selected">'+data.title+'</a></li>');
+              //$("#img-estrada-selecionada").attr('src', data.src);
+            }
+            else
+              $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="'+data.src+'">'+data.title+'</a></li>');
+            anchieta++;
+          }
+          $('#select-estradas-sp').append('<option value="'+data.src+'">'+data.title+'</option>');
+        });
+        $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="http://www.der.sp.gov.br/img_cameras/name9.jpg">Padre Manoel da Nobrega - Km 292</a></li>');
+        $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="http://www.der.sp.gov.br/img_cameras/name2.jpg">Padre Manoel da Nobrega - Km 323</a></li>');
+        $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="http://www.der.sp.gov.br/img_cameras/name13.jpg">Padre Manoel da Nobrega - Km 337</a></li>');
+        $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="http://www.der.sp.gov.br/img_cameras/name3.jpg">Padre Manoel da Nobrega - Km 344</a></li>');
+
+
+				$('#select-estradas-sp').append('<option value="http://www.der.sp.gov.br/img_cameras/name9.jpg">Padre Manoel da Nobrega - Km 292</option>');
+				$('#select-estradas-sp').append('<option value="http://www.der.sp.gov.br/img_cameras/name2.jpg">Padre Manoel da Nobrega - Km 323</option>');
+				$('#select-estradas-sp').append('<option value="http://www.der.sp.gov.br/img_cameras/name13.jpg">Padre Manoel da Nobrega - Km 337</option>');
+				$('#select-estradas-sp').append('<option value="http://www.der.sp.gov.br/img_cameras/name3.jpg">Padre Manoel da Nobrega - Km 344</option>');
+
+        interior();
+      }
+    });
+  });
+  
+  function interior(){
+    var ayrtonsenna = 0;
+    $.ajax({
+      url: "/portal/cams.php?fpa=1&s=ecopistas",
+      dataType: "json",
+      success: function(data){
+        $.each(data, function(i,data){
+          var a = data.title.substring(5,data.title.length);
+          //Ayrton Senna
+          if(a.indexOf("Ayrton Senna")>=0){
+            if(ayrtonsenna==0){
+              //$("#img-ayrtonsenna").attr('src', data.src);
+              $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="'+data.src+'" selected="selected">'+a+'</a></li>');
+            }
+            else
+              $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="'+data.src+'">'+a+'</a></li>');
+            ayrtonsenna++;
+          }
+
+          $('#select-estradas-sp').append('<option value="'+data.src+'">'+data.title+'</option>');
+        });
+        
+        $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="http://www.der.sp.gov.br/img_cameras/name25.jpg">Raposo Tavares - Km 12,5</a></li>');
+        $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="http://www.der.sp.gov.br/img_cameras/name8.jpg">Raposo Tavares - Km 17</a></li>');
+        $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="http://www.der.sp.gov.br/img_cameras/name30.jpg">Raposo Tavares - Km 20</a></li>');
+        
+        
+				$('#select-estradas-sp').append('<option value="http://www.der.sp.gov.br/img_cameras/name25.jpg">Raposo Tavares - Km 12,5</option>');
+				$('#select-estradas-sp').append('<option value="http://www.der.sp.gov.br/img_cameras/name8.jpg">Raposo Tavares - Km 17</option>');
+				$('#select-estradas-sp').append('<option value="http://www.der.sp.gov.br/img_cameras/name30.jpg">Raposo Tavares - Km 20</option>');
+
+        $('#form-estradas-sp .dk_options_inner').show();
+        $('.pageload').hide();
+      }
+    });
+  }
+
 </script>  

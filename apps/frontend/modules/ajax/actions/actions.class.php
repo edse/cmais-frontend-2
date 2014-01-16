@@ -242,17 +242,23 @@ class ajaxActions extends sfActions
           }
           geoip_close($gi);
         }
-
+				
+				//Redirect do cmais/aovivo para a home dos programas
         if($schedules[0]->program_id == 77){
           die("self.location.href='http://tvcultura.cmais.com.br/cartaoverde/aovivo'");
         }        
-               
         if($schedules[0]->program_id == 75){
           if (date('w') != "5") { // se dia diferente de sexta, redireciona...
             die("self.location.href='http://tvcultura.cmais.com.br/rodaviva/transmissao'");
           }
         }
-       
+        if($schedules[0]->program_id == 937){
+          die("self.location.href='http://tvcultura.cmais.com.br/jcprimeiraedicao'");
+        }
+        if($schedules[0]->program_id == 940){
+          die("self.location.href='http://tvcultura.cmais.com.br/jcdebate'");
+        }   			 
+			 
         $next = Doctrine_Query::create()
           ->select('s.*')
           ->from('Schedule s')
@@ -1266,8 +1272,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
        * */
         //je 
         $a = array_map('intval', explode(",",$not_repeat));
-      var_dump($a);      
-        foreach($assets as $d):
+        //var_dump($a);      
+        foreach($assets as $k=>$d):
                     
         
           $assetCategorias = array();
@@ -1313,14 +1319,40 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           }
           if(count($tags) <= 0):  
             
+            if($k==0){
+              $first="first count";
+            }else{
+              $first="count";
+            }
+            
+            if($section == "videos" || $sectionP==2388){
+              if($d->AssetVideo->getHeadline()==""){
+                $descricaoImagem = "Desculpe, a imagem esta sem descrição mas o vídeo é muito legal, assista-o!";
+              }else{
+                $descricaoImagem = $d->AssetVideo->getHeadline();
+              }
+            }
+            
+            $related = $d->retriveRelatedAssetsByRelationType("Preview");
+            if($related):
+              if(count($related)>0):
+                if($related[0]->AssetImage->getHeadline() ==""){
+                  $descricaoImagem = "Desculpe, a imagem esta sem descrição mas este link é muito interessante, visite-o!";
+                }else{
+                  $descricaoImagem = $related[0]->AssetImage->getHeadline();
+                } 
+              endif;
+            endif;
+                
             if($section == "videos"):
-              $return =  '<li class="span4 element '. $printPersonagens ." ".' videos">';
+              $return =  '<li class="span4 element '. $printPersonagens." class=". $first ." ".' videos">';
               $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
               $return .=      '<div class="yt-menu">';
-              $return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'" />';
+              //$return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'" />';
+              $return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="" aria-label="Título vídeo: '. $d->getTitle().". Descrição:".$d->getDescription().'. Descrição Thumbnail:'.$descricaoImagem.'" />';
               $return .=      '</div>';
               $return .=      '<i class="icones-sprite-interna icone-videos-pequeno"></i>';
-              $return .=        '<div>';
+              $return .=        '<div aria-hidden="true" tabindex="-1">';
               $return .=          '<img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>';
               $return .=           $d->getTitle();
               $return .=      ' </div>';
@@ -1329,7 +1361,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               echo $return;
             else:  
               
-              $related = $d->retriveRelatedAssetsByRelationType("Preview");
+              //$related = $d->retriveRelatedAssetsByRelationType("Preview");
               
               if($section == "pais-e-educadores" || $sectionP == 3194):
                 if($a->getSlug()!="videos"&&$a->getSlug()!="jogos"&&$a->getSlug()!="atividades") {
@@ -1342,21 +1374,37 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
                 $return =  '<li class="span4 element '. $printPersonagens ." ". $assetSectionB .'">';
               endif;
               
-              $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
-                          
+              if($section =="jogos" || $section == "atividades" || $section == "pais-e-educadores"){
+                $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '" class="'. $first .'" aria-label=".Titulo ' . substr($section, 0, (strlen($section) -1)) . ": "  . $d->getTitle() . '. Descrição:' .$d->getDescription() .'. Descrição do Thumbnail:'. $descricaoImagem .'">';
+              }elseif($sectionP == 3194 || $sectionP == 2390){
+                if($a->getSlug()=="videos") {
+                  $subSectionb = "vídeo";
+                  if($d->AssetVideo->getHeadline()==""){
+                    $descricaoImagem = "Desculpe, a imagem esta sem descrição mas o vídeo é muito legal, assista-o!";
+                  }else{
+                    $descricaoImagem = $d->AssetVideo->getHeadline();
+                  }
+                }else if($a->getSlug()=="jogos"){
+                  $subSectionb = "jogo";
+                }else if($a->getSlug()=="atividades"){
+                  $subSectionb = "atividade";
+                }
+                $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '" class="'. $first .'" aria-label=".Titulo ' . $subSectionb . ": "  . $d->getTitle() . '. Descrição:' .$d->getDescription() .'. Descrição do Thumbnail:'. $descricaoImagem .'">';
+              }            
               if($section == "pais-e-educadores"):
-                $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
+                $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="" />';
                 $return .=    '<i class="icones-sprite-interna icone-artigo-br-pequeno"></i>';
               elseif($section == "jogos" || $section == "atividades"):
-                $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
+                $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="" />';
                 $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
               else: 
                 if($assetSectionB == "videos"):    
                   $return .=      '<div class="yt-menu">';
-                  $return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'" />';
+                  $return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" />';
                   $return .=      '</div>';
                 else:
-                  $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
+                  //$return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
+                  $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt=""  />';
                 endif;
                 if($assetSectionB):
                   if($assetSectionB != "videos" && $assetSectionB != "jogos" && $assetSectionB != "atividades"):
