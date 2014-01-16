@@ -1356,11 +1356,10 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             else:  
               
               //$related = $d->retriveRelatedAssetsByRelationType("Preview");
-              
-              if($section == "pais-e-educadores" || $sectionP == 3194):
-                if($a->getSlug()!="videos"&&$a->getSlug()!="jogos"&&$a->getSlug()!="atividades") {
-                  $assetSectionB = "artigo-br";
-                }
+              if($a->getSlug()!="videos"&&$a->getSlug()!="jogos"&&$a->getSlug()!="atividades") {
+                $assetSectionB = "artigo-br";
+              }
+              if($section == "pais-e-educadores"):
                 $return =  '<li class="span4 element '. $printCategorias ." ". $assetSectionB .'">'; 
               elseif($section == "jogos" || $section == "atividades"):
                 $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
@@ -1378,6 +1377,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
                   }else{
                     $descricaoImagem = $d->AssetVideo->getHeadline();
                   }
+                  
                 }else if($a->getSlug()=="jogos"){
                   $subSectionb = "jogo";
                 }else if($a->getSlug()=="atividades"){
