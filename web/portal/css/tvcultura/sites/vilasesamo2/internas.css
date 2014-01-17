@@ -401,7 +401,8 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .selecione .dropdown-toggle:hover{text-decoration:underline;}
 .cuidadores .selecione .drop-down-menu{padding: 0; margin:0;}
 .cuidadores .selecione .btn .caret{border:none; float:right; margin-top:5px;}
-.cuidadores .descritivo h3, h2{font-family:'din-blackregular', Arial, Helvetica, sans-serif; font-size: 25px; color:#00aa52!important;} 
+.cuidadores .descritivo h3{font-family:'din-blackregular', Arial, Helvetica, sans-serif; font-size: 25px; color:#00aa52!important;} 
+.cuidadores .titulo-slider h2{font-family:'din-blackregular', Arial, Helvetica, sans-serif; font-size: 25px; color:#00aa52!important;} 
 .cuidadores .descritivo p{font-size:16px; color:#737373;}
 .cuidadores .descritivo span.nome{color:#008d36}
 .cuidadores .todos-itens a {font-size: 16px; border-bottom:2px solid #008d36;}
