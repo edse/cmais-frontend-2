@@ -483,7 +483,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <!-- /banner vilasesamo -->
       
           <!--face like box-->
-          <iframe tabindex="-1" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FVilaSesamoOficial&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=446708858755935" scrolling="no" frameborder="0" style="width: 300px;margin-bottom: 20px;border:none; overflow:hidden; height:290px;" allowTransparency="true"></iframe>
+          <iframe title="Box Facebook" tabindex="-1" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FVilaSesamoOficial&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=446708858755935" scrolling="no" frameborder="0" style="width: 300px;margin-bottom: 20px;border:none; overflow:hidden; height:290px;" allowTransparency="true"></iframe>
           <!--/face like box-->
         
         </div>
