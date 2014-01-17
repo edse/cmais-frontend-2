@@ -535,7 +535,7 @@ $('.col-esq article p img').each(function(index) {
 </script>
 <?php echo $noscript; ?>
 
-<!-- Box ler-->
+<!-- Box ler
 <script>
 $('.texto').each(function(index) {
   $(this).attr('tabindex', -1).attr('aria-hidden',true);
@@ -543,6 +543,6 @@ $('.texto').each(function(index) {
 </script>
 <?php echo $noscript; ?>
 
-
+-->
 
 
