@@ -1345,11 +1345,11 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             endif;
                 
             if($section == "videos"):
-              $return =  '<li class="span4 element '. $printPersonagens." class=". $first ." ".' videos">';
+              $return =  '<li class="span4 element '. $printPersonagens.' '. $first .' '.' videos">';
               $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
               $return .=      '<div class="yt-menu">';
               //$return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'" />';
-              $return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="" aria-label="Título vídeo: '. $d->getTitle().". Descrição:".$d->getDescription().'. Descrição Thumbnail:'.$descricaoImagem.'" />';
+              $return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="" aria-label="Título vídeo: '. $d->getTitle().'. Descrição:'.$d->getDescription().'. Descrição Thumbnail:'.$descricaoImagem.'" />';
               $return .=      '</div>';
               $return .=      '<i class="icones-sprite-interna icone-videos-pequeno"></i>';
               $return .=        '<div aria-hidden="true" tabindex="-1">';
@@ -1362,20 +1362,19 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             else:  
               
               //$related = $d->retriveRelatedAssetsByRelationType("Preview");
-              
-              if($section == "pais-e-educadores" || $sectionP == 3194):
-                if($a->getSlug()!="videos"&&$a->getSlug()!="jogos"&&$a->getSlug()!="atividades") {
-                  $assetSectionB = "artigo-br";
-                }
-                $return =  '<li class="span4 element '. $printCategorias ." ". $assetSectionB .'">'; 
+              if($a->getSlug()!="videos"&&$a->getSlug()!="jogos"&&$a->getSlug()!="atividades") {
+                $assetSectionB = "artigo-br";
+              }
+              if($section == "pais-e-educadores"):
+                $return =  '<li class="span4 element '. $printCategorias . " " . $first ." ". $assetSectionB .'">'; 
               elseif($section == "jogos" || $section == "atividades"):
-                $return =  '<li class="span4 element '. $printPersonagens ." ". $section .'">';
+                $return =  '<li class="span4 element '. $printPersonagens . " " . $first ." ". $section .'">';
               else:
-                $return =  '<li class="span4 element '. $printPersonagens ." ". $assetSectionB .'">';
+                $return =  '<li class="span4 element '. $printPersonagens . " " . $first ." ". $assetSectionB .'">';
               endif;
               
               if($section =="jogos" || $section == "atividades" || $section == "pais-e-educadores"){
-                $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '" class="'. $first .'" aria-label=".Titulo ' . substr($section, 0, (strlen($section) -1)) . ": "  . $d->getTitle() . '. Descrição:' .$d->getDescription() .'. Descrição do Thumbnail:'. $descricaoImagem .'">';
+                $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . ' '. $first .'" aria-label=".Titulo ' . substr($section, 0, (strlen($section) -1)) . ": "  . $d->getTitle() . '. Descrição:' .$d->getDescription() .'. Descrição do Thumbnail:'. $descricaoImagem .'">';
               }elseif($sectionP == 3194 || $sectionP == 2390){
                 if($a->getSlug()=="videos") {
                   $subSectionb = "vídeo";
@@ -1384,12 +1383,13 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
                   }else{
                     $descricaoImagem = $d->AssetVideo->getHeadline();
                   }
+                  
                 }else if($a->getSlug()=="jogos"){
                   $subSectionb = "jogo";
                 }else if($a->getSlug()=="atividades"){
                   $subSectionb = "atividade";
                 }
-                $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '" class="'. $first .'" aria-label=".Titulo ' . $subSectionb . ": "  . $d->getTitle() . '. Descrição:' .$d->getDescription() .'. Descrição do Thumbnail:'. $descricaoImagem .'">';
+                $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . ' '. $first .'" aria-label=".Titulo ' . $subSectionb . ": "  . $d->getTitle() . '. Descrição:' .$d->getDescription() .'. Descrição do Thumbnail:'. $descricaoImagem .'">';
               }            
               if($section == "pais-e-educadores"):
                 $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="" />';
