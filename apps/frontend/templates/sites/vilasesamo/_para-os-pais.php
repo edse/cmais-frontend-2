@@ -266,7 +266,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
       <?php if($artigo): ?>
         <?php $preview = $artigo->retriveRelatedAssetsByRelationType("Preview") ?>
         <div class="span4 artigo">
-          <a href="<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $artigo->getSlug() ?>" title="<?php echo $artigo->getTitle() ?>"> 
+          <a href="/<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $artigo->getSlug() ?>" title="<?php echo $artigo->getTitle() ?>"> 
             <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $artigo->getTitle() ?>" />
             <h2><?php echo $artigo->getTitle() ?></h2>
             <p><?php echo $artigo->getDescription() ?></p>
