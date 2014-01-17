@@ -46,7 +46,7 @@ function slugfy($string){
   $string = str_ireplace("Ç", "c", $string);
   $string = str_ireplace("ç", "c", $string);
 
-  //$string = str_ireplace("'", "-", $string);
+  $string = str_ireplace("'", "", $string);
 
   $string = str_ireplace("&", "e", $string);
   
