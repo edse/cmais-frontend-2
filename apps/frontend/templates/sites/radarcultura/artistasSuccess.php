@@ -190,10 +190,13 @@ function slugfy($string){
                   if($counter >= 30)
                     break;
                   $counter++;
+									
+										$new_slug = str_ireplace("Por ", "", slugfy($d->getDescription()));
+										$new_slug = str_ireplace("e-039-", "", $new_slug);//Martnália
                   ?>
                   <tr>
-                    <td><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo slugfy($d->getDescription()); ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></a></td>
-                    <td><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo slugfy($d->getDescription()); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> listar musicas </a></td>
+                    <td><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo $new_slug; ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></a></td>
+                    <td><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo $new_slug; ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> listar musicas </a></td>
                   </tr>
                 <?php endforeach; ?>
               <?php endif; ?>
@@ -215,10 +218,12 @@ function slugfy($string){
                 foreach($pager->getResults() as $d):
                   $counter++;
                   if($counter > 30):
+										$new_slug = str_ireplace("Por ", "", slugfy($d->getDescription()));
+										$new_slug = str_ireplace("e-039-", "", $new_slug);//Martnália
                   ?>
                   <tr>
-                    <td><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo slugfy($d->getDescription()); ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></a></td>
-                    <td class="play"><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo slugfy($d->getDescription()); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> listar musicas </a></td>
+                    <td><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo $new_slug; ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></a></td>
+                    <td class="play"><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo $new_slug; ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> listar musicas </a></td>
                   </tr>
                   <?php endif; ?>
                 <?php endforeach; ?>
