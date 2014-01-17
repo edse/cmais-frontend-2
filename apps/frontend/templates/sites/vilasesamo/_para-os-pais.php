@@ -281,7 +281,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
                 <i class="sprite-aspa-esquerda"></i>
                 <?php echo $dica[1]->getTitle(); ?>
               </h2>
-              <p class="ellipsis"><?php echo html_entity_decode($dica[1]->AssetContent->render()) ?></p>
+              <p class="ellipsis"><?php echo utf8_encode(html_entity_decode($dica[1]->AssetContent->render())) ?></p>
               <i class="sprite-aspa-direita"></i>
             </a>
             <?php $download = $dica[1]->retriveRelatedAssetsByRelationType("Download") ?>
