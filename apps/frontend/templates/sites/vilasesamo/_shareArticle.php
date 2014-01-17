@@ -1,4 +1,4 @@
-<div class="redes-artigo redes overflow">
+<div class="redes-artigo redes overflow" tabindex="-1" aria-hidden="true">
                 
   <div class="divisa"></div>
   
