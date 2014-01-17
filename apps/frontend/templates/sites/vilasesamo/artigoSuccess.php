@@ -134,7 +134,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
            
             <!--footer-->
             <div class="clearboth" aria-label="Você está no rodapé do artigo... Com links para as redes sociais para curtir e compartilhar!" tabindex="0">
-              
+           
               <!--compartilhar redes-->
               <?php include_partial_from_folder('sites/vilasesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
               <!--/compartilhar redes-->
@@ -458,7 +458,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <!--/col dir -->
         
         <!--destaques-->
-        <div class="span4 col-direita" aria-label="Banner de publicidade do programa. Imagem do Elmo dançando com fones de ouvido." tabindex="0">
+        <div class="span4 col-direita" aria-label="Banner de publicidade dos programas." tabindex="0">
           <?php
             $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"pais-e-educadores");
             $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($particularSection->getId(), "destaques-secundarios"); // Pega o bloco "destaques-secundarios" da seção "para os pais"
@@ -521,7 +521,7 @@ function goTop(where){
 
 <!--Tabindex no corpo do atigo-->
 <script>
-$('.col-esq article a').each(function(index) {
+$('.col-esq article p').each(function(index) {
   $(this).attr('tabindex', 0);
 });
 </script>
