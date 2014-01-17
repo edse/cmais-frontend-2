@@ -29,28 +29,71 @@
 <?php echo $noscript ?>
 <script>
 
+  var firstCount = 0;
   contentPage = 1;
   var no_repeat = "";
   quantPage = <?php echo $pageQuant ?>  + 1;
   $('.mais').click(function(){
     contentPage++;
     no_repeat = $('.no-repeat').attr("value");
-    $('#container').find('a').removeClass('first').removeClass('count');
+    $('li').removeClass('first').removeClass('count');
     $('.firstDescription').remove();
-    var countItens = 0;
-    //console.log(countItens)
-    setTimeout(function(){
-      $('.count').each(function(i){
-        countItens = i
-      });
-      var carregarMais = ""
-      if(contentPage >= quantPage) carregarMais=". você não tem mais itens pra carregar."  
-      $('.first').before('<span class="firstDescription" aria-label="você carregou mais '+ countItens +' <?php echo $section->getSlug() ?> , você está no primeiro item carregado '+carregarMais+'" tabindex="0">')
-      $('.firstDescription').focus();
-    }, 500);
+    
+    var carregarMais = "";
+    
+    
   });
-  
   vilaSesamoGetContents();
+  
+  function countAssets(){
+    
+    var countItens = 0;
+    $('.count').each(function(i){
+      countItens = countItens + 1;
+    });
+    console.log(countItens);
+    <?php
+      $selectDescription = "";
+      if($section->Parent->getSlug()=="personagens"){
+        $selectDescription = "brincadeiras da Personagem " . $section->getSlug();
+      }else if($section->Parent->getSlug()=="categorias"){
+        $selectDescription = "itens da Categoria" . $section->getSlug();
+      }else if($section->getSlug()=="pais-e-educadores"){
+        $selectDescription = "artigos da página " . $section->getSlug();
+      }else if($section->getSlug()=="campanhas"){
+        $selectDescription = "figuras da campanha " . $section->getSlug();
+      }else{
+        $selectDescription = $section->getSlug();
+        if($section->getSlug() == "videos") $os="os";
+        else $os="as";
+      }
+      
+      ?>
+      if(countItens == 0){
+        $('#container li:first').addClass('first');
+        $('.first').before("<span class='firstDescription' aria-label='que pena acabou <?php echo  $selectDescription ?> . Você está no primeiro item da lista <?php echo $selectDescription; ?>, divirta-se com estes por enqunanto, boa diversão amiguinho.' tabindex='0'>");
+        $('#page_nav').fadeOut('fast');
+      }else if(countItens < 9){
+        carregarMais=". que pena! você não tem mais itens <?php echo $selectDescription; ?> pra carregar.";
+        $('#page_nav').fadeOut('fast');
+        $('.first').before("<span class='firstDescription' aria-label='você carregou mais "+ countItens +" <?php echo $selectDescription; ?>, você está no primeiro item carregado "+carregarMais+"' tabindex='0'>");
+      }else{
+        $('.first').before("<span class='firstDescription' aria-label='você carregou mais "+ countItens +" <?php echo $selectDescription; ?>, você está no primeiro item carregado' tabindex='0'>");
+      }
+      
+      
+      $('#container li').each(function(i){
+        firstCount = firstCount + 1
+      });
+      
+      if(firstCount > 9)
+        $('.firstDescription').focus(); 
+      
+      console.log(firstCount);
+      
+     
+  }
+  
   function vilaSesamoGetContents() {
     $.ajax({
       url: "<?php //echo url_for("@homepage") ?>/ajax/vilasesamogetcontents",
@@ -59,15 +102,14 @@
           $('#ajax-loader').show();
         },
       success: function(data){
-        
         $('#ajax-loader').hide();
         if (data != "") {
           var newEls = $(data).appendTo('#container');
           $("#container").isotope().isotope('appended',newEls);
-          if(contentPage >= quantPage){
-            $('#page_nav').fadeOut('fast');
-          }
-        }else{
+            setTimeout(function(){
+              countAssets();
+            }, 800);   
+          }else{
           $('#page_nav').fadeOut('fast');
         }
       }
