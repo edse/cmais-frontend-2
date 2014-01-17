@@ -167,3 +167,8 @@ body {background-position:0 25px;min-width: 1324px!important;}
 .box-padrao #datepicker .ui-widget-content .ui-state-hover,
 .box-padrao #datepicker .ui-widget-content .ui-state-active{background:#333333;}
 /* LISTA ASSETS */
+
+/* impostometro */
+.container-impostometro{float:left; display: block; overflow: hidden;width:100%; margin: 0 0 20px 0;}
+.banner-impostometro{overflow: hidden; margin: 0 auto; width: 728px;}
+/* /impostometro */

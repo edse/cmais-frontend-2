@@ -76,6 +76,48 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
   <!-- MIOLO -->
   <div id="miolo">
     
+    <!--Impostometro-->
+    <div class="container-impostometro">
+      <div class="banner-impostometro" >
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="728" height="90" id="impostometro" align="middle">
+          <param name="movie" value="http://www.impostometro.com.br//painel/embed/impostometro-728x90.swf" />
+          <param name="quality" value="high" />
+          <param name="bgcolor" value="#000000" />
+          <param name="play" value="true" />
+          <param name="loop" value="true" />
+          <param name="wmode" value="window" />
+          <param name="base" value="http://www.impostometro.com.br//api/embed" />
+          <param name="scale" value="showall" />
+          <param name="menu" value="true" />
+          <param name="devicefont" value="false" />
+          <param name="salign" value="" />
+          <param name="allowScriptAccess" value="sameDomain" />
+          <!--[if !IE]>-->
+          <object type="application/x-shockwave-flash" data="http://www.impostometro.com.br//painel/embed/impostometro-728x90.swf" width="728" height="90">
+            <param name="movie" value="http://www.impostometro.com.br//painel/embed/impostometro-728x90.swf" />
+            <param name="quality" value="high" />
+            <param name="base" value="http://www.impostometro.com.br//api/embed" />
+            <param name="bgcolor" value="#000000" />
+            <param name="play" value="true" />
+            <param name="loop" value="true" />
+            <param name="wmode" value="window" />
+            <param name="scale" value="showall" />
+            <param name="menu" value="true" />
+            <param name="devicefont" value="false" />
+            <param name="salign" value="" />
+            <param name="allowScriptAccess" value="sameDomain" />
+          <!--<![endif]-->
+            <a href="http://www.adobe.com/go/getflash">
+              <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+            </a>
+          <!--[if !IE]>-->
+          </object>
+          <!--<![endif]-->
+        </object>
+      </div>  
+    </div>
+    <!--Impostometro-->
+    
     <!--coluna esquerda-->
     <div class="coluna-esquerda">
     	
