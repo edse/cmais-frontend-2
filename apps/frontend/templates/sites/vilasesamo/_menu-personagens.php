@@ -4,7 +4,7 @@
       <!--nav filtro personagem-->
       <nav role="navigation" class="span2" accesskey="P">
         <h3 <?php if($section->Parent->getSlug() == "personagens") echo "class='marginTopBottom10'"?> >escolha por personagem</h3>
-        <h3 aria-live="polite" id="filtro-descricao" tabindex="0">Caso queira, selecione <?php echo $section->getSlug() ?>s pelo personagem da VilaSésamo</h3>
+        <!--h3 aria-live="polite" id="filtro-descricao" tabindex="0">Caso queira, selecione <?php echo $section->getSlug() ?>s pelo personagem da VilaSésamo</h3-->
         <?php if($section->getSlug() == "atividades" || $section->getSlug() == "videos" || $section->getSlug() == "jogos"):?>
           <a id="filtrar-tudo" class="btn" tabindex="0" aria-label="botão para selecionar todos os personagens filtro">Selecionar todos</a> 
         <?php endif; ?>
