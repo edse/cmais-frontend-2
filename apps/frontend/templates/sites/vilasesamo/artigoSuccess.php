@@ -216,7 +216,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <div id="comente-este-artigo">              
                 <div class="divisa"></div>
                 <i class="icones-form icone-fale-conosco-ve"></i>
-                <h3 tabindex="0">Gostou desse artigo? Comente!</h3>
+                <h2 tabindex="0">Gostou desse artigo? Comente!</h2>
               </div>
               <!-- Box comentario FB-->
               <fb:comments href="<?php echo $uri ?>" numposts="3" width="580" publish_feed="true" aria-hidden="true"></fb:comments> <!-- Tentativa de esconder o box do FB-->
