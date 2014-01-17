@@ -2468,7 +2468,7 @@ EOT;
 			"A", "A", "A", "E", "E", "E", "E", "I", "I", "I", "I", "O", "O", "O", "O", "O", "U", "U", "U", "U", "C" ); 
 			$string = str_replace($array1, $array2, $string); 
 		
-			$string = str_ireplace("'", "-", $string);
+			$string = str_ireplace("'", "", $string);
 			$string = str_ireplace("&", "e", $string);
 		
 			  $text = preg_replace('~[^\\pL\d]+~u', '-', $string);

@@ -1,7 +1,5 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
-<?php
-$noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
-?> 
+
 <script>
   $("body").addClass("cuidadores");
   <?php if($section->getSlug()=="pais-e-educadores"):?>
@@ -10,18 +8,13 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     });  
   <?php endif; ?>
 </script>
-<?php echo $noscript; ?>
+
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
 
 <!--content-->
 <div id="content">
-  
-  <!--Explicação acessibilidade-->
-	<h1 tabindex="0" class="ac-explicacao">
-	 <?php echo $section->getDescription(); ?>
-	</h1>
   
   <!--section -->
   <section class="filtro row-fluid">
@@ -54,8 +47,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                         <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
                       </div>
                     </div>
-                    <div class="descritivo titulo-slider">
-                      <h2><?php echo $d->getTitle() ?></h2>
+                    <div class="descritivo">
+                      <h3><?php echo $d->getTitle() ?></h3>
                       <p><?php echo $d->getDescription() ?></p>
                       <?php if($d->Asset->AssetContent->getAuthor()): ?>
                       <p>Por <span><?php echo $d->Asset->AssetContent->getAuthor() ?></span></p>
@@ -111,8 +104,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       <div class="selecione">
         
         <!--barra selecao-->
-        <div class="barra-selecao b-verdeescuro" tabindex="0" aria-label="Escolha os artigos por categoria." >
-          <h3 >Todos os Artigos de:</h3>
+        <div class="barra-selecao b-verdeescuro">
+          <h3>Todos os Artigos de:</h3>
           <h3 aria-live="polite" id="filtro-descricao">todas as categorias</h3>
           <!-- selecione uma categoria-->
           <?php
@@ -214,11 +207,10 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       <!-- banner vilasesamo -->
       <?php //include_partial_from_folder('sites/vilasesamo', 'global/banner300x250', array('site' => $site, 'section' => $section)) ?>
       <!-- vilasesamo -->
-      <div id='div-gpt-ad-1385748525978-0' class="google-banner-home" aria-label="Banner de publicidade dos programas." tabindex="0">
+      <div id='div-gpt-ad-1385748525978-0' class="google-banner-home">
         <script type='text/javascript'>
           googletag.cmd.push(function() { googletag.display('div-gpt-ad-1385748525978-0'); });
         </script>
-        <?php echo $noscript; ?>
       </div>
       <!-- /banner vilasesamo -->
       
@@ -234,17 +226,17 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 
  
   <!--scripts e css carrossel-->
-  <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script><?php echo $noscript; ?>
-  <script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script><?php echo $noscript; ?>
-  <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script><?php echo $noscript; ?>
-  <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script><?php echo $noscript; ?>
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script><?php echo $noscript; ?>
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script><?php echo $noscript; ?>
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script><?php echo $noscript; ?>
+  <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
+  <script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script>
+  <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
+  <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
   <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
   
-  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> <?php echo $noscript; ?>
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/youtubeapi.js"></script> <?php echo $noscript; ?>
+  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/youtubeapi.js"></script> 
   
   
   <script>
@@ -315,13 +307,5 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     $('#carrossel-interna-artigo').responsiveCarousel('stopSlideShow');
   };
   </script>
-  <?php echo $noscript; ?>
-  
-  <script>
-  $('.descritivo h2').each(function(index) {
-  $(this).attr('tabindex', -1).attr("aria-hidden","true");
-  });
-  </script>
-  <?php echo $noscript; ?>
 <!--scripts-->
 

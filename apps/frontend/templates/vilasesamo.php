@@ -15,6 +15,7 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <?php echo $noscript; ?>
     <!--script type="text/jscript" src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js"></script-->
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
     <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">
     <!--link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap-responsive.css" rel="stylesheet" type="text/css"--> 
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
@@ -343,7 +344,7 @@
     </script>
     <?php echo $noscript; ?>
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media.css" type="text/css" />
-    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
+
     
        
   </body>
