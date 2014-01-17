@@ -104,7 +104,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <?php $preview = $asset->retriveRelatedAssetsByRelationType("Preview") ?>
               <?php if(count($preview) > 0): ?>
               <div class="img-topo-asset">  
-                <p class="img-destaque-asset" aria-label="Imagem do artigo. Descrição. Mãos de crianças e adultos de todas as raças unidas, demonstrando diversidade.">
+                <p class="img-destaque-asset" aria-label="Imagem do artigo. Descrição"."<?php echo $preview[0]->getDescription() ?><?php echo $preview[0]->getDescription() ?>">
                   <img id="img-capa" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
                   <span id="legenda" ><?php echo $preview[0]->getDescription() ?></span>
                 </p>
@@ -521,10 +521,28 @@ function goTop(where){
 
 <!--Tabindex no corpo do atigo-->
 <script>
-$('.col-esq article p,li').each(function(index) {
+$('.col-esq article a').each(function(index) {
   $(this).attr('tabindex', 0);
 });
 </script>
 <?php echo $noscript; ?>
+
+<!--Links das imagens do artigo-->
+<script>
+$('.col-esq article p img').each(function(index) {
+  $(this).attr('tabindex', -1).attr('aria-hidden',true);
+});
+</script>
+<?php echo $noscript; ?>
+
+<!-- Box ler-->
+<script>
+$('.texto').each(function(index) {
+  $(this).attr('tabindex', -1).attr('aria-hidden',true);
+});
+</script>
+<?php echo $noscript; ?>
+
+
 
 
