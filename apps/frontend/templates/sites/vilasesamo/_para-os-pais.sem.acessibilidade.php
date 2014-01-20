@@ -93,26 +93,22 @@ else { // senão traz pela semelhança de tags com o asset em questão
   <?php if($forParents): ?>
     
   <!-- section-->
-  <section class="pais" aria-label="você está entrandona área para <?php echo $forParents->getDescription()?>. para expandir seu contéudo tecle enter" tabindex="0">
+  <section class="pais">
     
     <span class="divisa"></span>
     
-    <h2 class="tit-box" aria-hidden="true" tabindex="-1"><?php echo $forParents->getTitle() ?> <i class="icones-setas icone-cuidadores-abrir ativo inativo"></i></h2>
+    <h2 class="tit-box"><?php echo $forParents->getTitle() ?> <i class="icones-setas icone-cuidadores-abrir ativo inativo"></i></h2>
     
     <!--content-->
     <div class="content span12 row-fluid" style="display:none;">
       
       <!--redes-->
       <div class="redes">
-        <?php if(isset($asset)):?>
-          <p tabindex="0">Compartilhe esta brincadeira:</p>
-        <?php else: ?>
-          <p tabindex="0">Compartilhe sobre este personagem:</p>
-        <?php endif;?>    
+        <p>Compartilhe esta brincadeira:</p>
         <g:plusone size="medium" count="false"></g:plusone>
-        <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" aria-label='compartilhe no pinterest'><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pinterest" style="margin-top:-10px;" /></a>
-        <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false" aria-label="compartilhe no facebook"></fb:like>
-        <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="portalcmais" data-related="tvcultura" aria-label='Tweet aobre isto!'>Tweet</a>
+        <a href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pinterest" style="margin-top:-10px;" /></a>
+        <fb:like href="<?php echo $uri ?>" layout="button_count" show_faces="false" send="false"></fb:like>
+        <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tvcultura" data-related="tvcultura">Tweet</a>
       </div>
       <!--redes-->
       
@@ -133,7 +129,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
                   <i class="sprite-aspa-esquerda"></i>
                   <?php echo $dicaRelacionada[0]->getTitle(); ?>
                 </h2>
-                <p class="ellipsis"><?php echo utf8_encode(html_entity_decode($dicaRelacionada[0]->AssetContent->render())) ?></p>
+                <p class="ellipsis"><?php echo html_entity_decode($dicaRelacionada[0]->AssetContent->render()) ?></p>
                 <i class="sprite-aspa-direita"></i>
               </a>
               <!--/link artigo dica-->
@@ -162,7 +158,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
                     <i class="sprite-aspa-esquerda"></i>
                     <?php echo $displays['dicas'][0]->getTitle(); ?>
                   </h2>
-                  <p class="ellipsis"><?php echo utf8_encode(html_entity_decode($displays['dicas'][0]->Asset->AssetContent->render())) ?></p>
+                  <p class="ellipsis"><?php echo html_entity_decode($displays['dicas'][0]->Asset->AssetContent->render()) ?></p>
                   <i class="sprite-aspa-direita"></i>
                 </a>
                 <?php $download = $displays['dicas'][0]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
@@ -203,7 +199,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
                   <i class="sprite-aspa-esquerda"></i>
                   <?php echo $displays['dicas'][1]->getTitle(); ?>
                 </h2>
-                <p class="ellipsis"><?php echo utf8_encode(html_entity_decode($displays['dicas'][1]->Asset->AssetContent->render())) ?></p>
+                <p class="ellipsis"><?php echo html_entity_decode($displays['dicas'][1]->Asset->AssetContent->render()) ?></p>
                 <i class="sprite-aspa-direita"></i>
               </a>
               <!--/link artigo dica-->
@@ -231,7 +227,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
                   <i class="sprite-aspa-esquerda"></i>
                   <?php echo $dica[0]->getTitle(); ?>
                 </h2>
-                <p class="ellipsis"><?php echo utf8_encode(html_entity_decode($dicaRelacionada[0]->AssetContent->render())) ?></p>
+                <p class="ellipsis"><?php echo html_entity_decode($dicaRelacionada[0]->AssetContent->render()) ?></p>
                 <i class="sprite-aspa-direita"></i>
               </a>
               <?php $download = $dica[0]->retriveRelatedAssetsByRelationType("Download") ?>
@@ -270,8 +266,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
       <?php if($artigo): ?>
         <?php $preview = $artigo->retriveRelatedAssetsByRelationType("Preview") ?>
         <div class="span4 artigo">
-          <a href="/<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $artigo->getSlug() ?>" title="<?php echo $artigo->getTitle() ?>"-->
-          <!-- a href="<?php echo $artigo->retriveUrl() ?>" title="<?php echo $artigo->getTitle() ?>"--> 
+          <a href="/<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $artigo->getSlug() ?>" title="<?php echo $artigo->getTitle() ?>"> 
             <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $artigo->getTitle() ?>" />
             <h2><?php echo $artigo->getTitle() ?></h2>
             <p><?php echo $artigo->getDescription() ?></p>
@@ -286,7 +281,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
                 <i class="sprite-aspa-esquerda"></i>
                 <?php echo $dica[1]->getTitle(); ?>
               </h2>
-              <p class="ellipsis"><?php echo utf8_encode(html_entity_decode($dica[1]->AssetContent->render()) ) ?></p>
+              <p class="ellipsis"><?php echo utf8_encode(html_entity_decode($dica[1]->AssetContent->render())) ?></p>
               <i class="sprite-aspa-direita"></i>
             </a>
             <?php $download = $dica[1]->retriveRelatedAssetsByRelationType("Download") ?>
@@ -311,7 +306,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
         ?>
         <?php if(isset($displays['parceiros'])): ?>
           <?php if(count($displays['parceiros']) > 0): ?>
-          <p tabindex="0" style="margin: 20px 0 12px 0;">Conheça nossos parceiros:</p>
+          <p style="margin: 20px 0 12px 0;">Conheça nossos parceiros:</p>
           <a class="publicidade" href="<?php echo $displays['parceiros'][0]->retriveUrl() ?>" title="<?php echo $displays['parceiros'][0]->getTitle() ?>">
             <img src="<?php echo $displays['parceiros'][0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['parceiros'][0]->getTitle() ?>" />
           </a>
@@ -324,10 +319,10 @@ else { // senão traz pela semelhança de tags com o asset em questão
           ?>        
           <?php if(isset($allCategories)): ?>
             <?php if(count($allCategories) > 0): ?>
-          <p tabindex="0">Você também pode escolher o jogo de acordo com as preferências da criança:</p>
+          <p>Você também pode escolher o jogo de acordo com as preferências da criança:</p>
           <div class="btn-group">
             <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
-            <ul class="dropdown-menu" aria-haspopup="true">
+            <ul class="dropdown-menu">
               <?php foreach($allCategories as $c): ?>
               <li><a href="<?php echo $c->retriveUrl() ?>" title="<?php echo $c->getTitle() ?>"><?php echo $c->getTitle() ?></a></li>
               <?php endforeach; ?>

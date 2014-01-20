@@ -19,6 +19,10 @@ if(isset($_GET['callback']) && !empty($_GET['qg_curric']) && !empty($_GET['qm_co
                                  'descricao' 			=> 	$qm_dscout
                      ));
 
+		foreach($arguments["altera_curso"] as $key=>$value){
+			$arguments["altera_curso"][$key] = urldecode($value);
+		}	 
+
 	  $acao = new wsTrabalheConosco();
 	  $acao->executeWebService($service, $arguments);
 	  $result_function = $service."Result";//NOME DO METOD DE RESULTADO

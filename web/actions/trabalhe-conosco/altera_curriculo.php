@@ -1,4 +1,5 @@
 <?php
+	header('Content-Type: text/html; charset=utf-8');
   
   ### ALTERA CURRÍCULO
   //814725288912
@@ -75,7 +76,7 @@
                             //'cargo' 			=> 			$_GET['qg_cargo'], 
                             'salario_pretencao' => $qg_pretsal, 
                             'salario_ultimo' 		=> $qg_ultsal, 
-                            'experiencia' 			=> $_GET['qg_memo2'], 
+                            'experiencia' 			=> urldecode($_GET['qg_memo2']), 
                             'parentes' 					=> $_GET['qg_tempar'],
                             'trabalhou_fpa' 		=> $_GET['qg_trabal'], 
                             
@@ -86,6 +87,10 @@
                             'grupo' 						=> $_GET['qg_grupo'])
                       );
 
+		foreach($arguments["altera_curriculo"] as $key=>$value){
+			//$arguments["altera_curriculo"][$key] = urldecode($value);
+		}
+
     $result = new wsTrabalheConosco();
     $result->executeWebService($service, $arguments);
     $resultado = $result->result->altera_curriculoResult;
@@ -93,7 +98,6 @@
 		$output = json_encode(array("data" => $resultado));
 		$callback = $_GET['callback'];
 		echo $callback.'('. $output . ');';
-	
-}  
+} 
 
 ?>
