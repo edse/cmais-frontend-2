@@ -133,7 +133,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
                   <i class="sprite-aspa-esquerda"></i>
                   <?php echo $dicaRelacionada[0]->getTitle(); ?>
                 </h2>
-                <p class="ellipsis"><?php echo html_entity_decode($dicaRelacionada[0]->AssetContent->render()) ?></p>
+                <p class="ellipsis"><?php echo utf8_decode(html_entity_decode($dicaRelacionada[0]->AssetContent->render())) ?></p>
                 <i class="sprite-aspa-direita"></i>
               </a>
               <!--/link artigo dica-->
@@ -162,7 +162,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
                     <i class="sprite-aspa-esquerda"></i>
                     <?php echo $displays['dicas'][0]->getTitle(); ?>
                   </h2>
-                  <p class="ellipsis"><?php echo html_entity_decode($displays['dicas'][0]->Asset->AssetContent->render()) ?></p>
+                  <p class="ellipsis"><?php echo utf8_decode(html_entity_decode($displays['dicas'][0]->Asset->AssetContent->render())) ?></p>
                   <i class="sprite-aspa-direita"></i>
                 </a>
                 <?php $download = $displays['dicas'][0]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
@@ -203,7 +203,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
                   <i class="sprite-aspa-esquerda"></i>
                   <?php echo $displays['dicas'][1]->getTitle(); ?>
                 </h2>
-                <p class="ellipsis"><?php echo html_entity_decode($displays['dicas'][1]->Asset->AssetContent->render()) ?></p>
+                <p class="ellipsis"><?php echo utf8_decode(html_entity_decode($displays['dicas'][1]->Asset->AssetContent->render())) ?></p>
                 <i class="sprite-aspa-direita"></i>
               </a>
               <!--/link artigo dica-->
@@ -253,7 +253,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
                   <i class="sprite-aspa-esquerda"></i>
                   <?php echo $dica[0]->getTitle(); ?>
                 </h2>
-                <p class="ellipsis"><?php echo html_entity_decode($dica[0]->AssetContent->render()) ?></p>
+                <p class="ellipsis"><?php echo utf8_decode(html_entity_decode($dica[0]->AssetContent->render())) ?></p>
                 <i class="sprite-aspa-direita"></i>
               </a>
               <?php $download = $dica[0]->retriveRelatedAssetsByRelationType("Download") ?>
@@ -286,7 +286,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
                 <i class="sprite-aspa-esquerda"></i>
                 <?php echo $dica[1]->getTitle(); ?>
               </h2>
-              <p class="ellipsis"><?php echo html_entity_decode($dica[1]->AssetContent->render()) ?></p>
+              <p class="ellipsis"><?php echo utf8_decode(html_entity_decode($dica[1]->AssetContent->render()) ) ?></p>
               <i class="sprite-aspa-direita"></i>
             </a>
             <?php $download = $dica[1]->retriveRelatedAssetsByRelationType("Download") ?>
