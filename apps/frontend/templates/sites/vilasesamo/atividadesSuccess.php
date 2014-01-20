@@ -10,7 +10,7 @@
 
 <!--Explicação acessibilidade-->
 <h1 tabindex="0" class="ac-explicacao" >
-  <?php echo $section->getDescription(); ?>
+  <p><?php echo $section->getDescription(); ?></p>
 </h1>
 
 <!--content-->
