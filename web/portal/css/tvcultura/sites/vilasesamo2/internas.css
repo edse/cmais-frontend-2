@@ -332,14 +332,14 @@ body.personagens { background:#b60401; }
 .personagens .filtro .divisa.personagem{background-color: #d71c0d;clear:both;height: 20px;margin: 0;}
 .personagens .filtro .divisa.carregar{background-color: #ee3021;clear:both;height: 20px;margin: 0;} 
 .personagens .dest-pers{margin:0px;background-color: #d71c0d;}
-.personagens .dest-pers .span8{margin: 0px 10px 15px 0px!important;}
+.personagens .dest-pers .span8{margin: 20px 10px 15px 0px!important;}
 .personagens .dest-pers a{padding:0; border-top:2px solid #0191fb; border-bottom:2px solid #0191fb;}
-.personagens .dest-pers a p{font-size:17px;font-family: 'dinmedium', Arial, Helvetica, sans-serif;line-height: 39px;overflow: hidden;width: 143px;text-overflow: ellipsis;white-space: nowrap; margin:0;}
+.personagens .dest-pers a p{font-size:17px;font-family: 'dinmedium', Arial, Helvetica, sans-serif;line-height: 42px;overflow: hidden;width: 143px;text-overflow: ellipsis;white-space: nowrap; margin:0;}
 .personagens .dest-pers .img-destaque { position:relative; width:100%; display: block;}
 .personagens .dest-pers .span4.pull-left{min-height:275px;}
-.personagens .dest-pers .span6.jogos a img{width:200px;border-top:none; border-bottom:2px solid #008dff;border-top:none;}
-.personagens .dest-pers .span6.videos a img{width:200px;border-top:none; border-bottom:2px solid #f77400;}
-.personagens .dest-pers .span6.atividades a img{width:200px;border-top:none; border-bottom:2px solid #7825e9;}
+.personagens .dest-pers .span6.jogos a img{width:200px;border-top:none; border-bottom:2px solid #008dff;border-top:none;float:left;}
+.personagens .dest-pers .span6.videos a img{width:200px;border-top:none; border-bottom:2px solid #f77400; float:left;}
+.personagens .dest-pers .span6.atividades a img{width:200px;border-top:none; border-bottom:2px solid #7825e9;float:left;}
 .personagens .dest-pers .span8{clear:none;}
 .personagens .dest-pers .mais-brincadeiras{margin: 0;text-align: left;height: 30px;padding-left: 15px;}
 .personagens .dest-pers .mais-brincadeiras p{color: #fff;text-transform: uppercase;line-height: 31px;}
