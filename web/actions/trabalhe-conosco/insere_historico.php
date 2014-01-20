@@ -8,14 +8,14 @@
                     => array( 'cod_curriculo'  => $_GET['qg_curric'],
                               'data_admissao'  => $_GET['ql_dtadmis'],
                               'data_demissao'  => $_GET['ql_dtdemis'],
-                              'experiencia'		 => $_GET['ql_experiencia'],
+                              'experiencia'		 => urldecode($_GET['ql_experiencia']),
                               'empresa' 			 => $_GET['ql_empresa'],
                               'funcao' 				 => $_GET['ql_funcao'], 
                               'funcao_inicial' => $_GET['ql_funcini'], 
                           ));
   
 		foreach($arguments["insere_historico"] as $key=>$value){
-			$arguments["insere_historico"][$key] = urldecode($value);
+			//$arguments["insere_historico"][$key] = urldecode($value);
 		}  	
   	
   	$result = new wsTrabalheConosco();

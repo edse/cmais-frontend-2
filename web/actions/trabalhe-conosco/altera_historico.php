@@ -7,14 +7,14 @@
 	               => array( 'codigo' => $_GET['ql_codigo'],
 	                         'data_admissao' => $_GET['ql_dtadmis'],  
 	                         'data_demissao' => $_GET['ql_dtdemis'],  
-	                         'experiencia' => $_GET['ql_experiencia'], 
+	                         'experiencia' => urldecode($_GET['ql_experiencia']), 
 	                         'empresa' => $_GET['ql_empresa'], 
 	                         'funcao' => $_GET['ql_funcini'], 
 	                         'funcao_inicial' => $_GET['ql_funcao'], 
 	                     ));
 	  
 		foreach($arguments["altera_historico"] as $key=>$value){
-			$arguments["altera_historico"][$key] = urldecode($value);
+			//$arguments["altera_historico"][$key] = urldecode($value);
 		}	 
 
 		$result = new wsTrabalheConosco();

@@ -76,7 +76,7 @@
                             //'cargo' 			=> 			$_GET['qg_cargo'], 
                             'salario_pretencao' => $qg_pretsal, 
                             'salario_ultimo' 		=> $qg_ultsal, 
-                            'experiencia' 			=> $_GET['qg_memo2'], 
+                            'experiencia' 			=> urldecode($_GET['qg_memo2']), 
                             'parentes' 					=> $_GET['qg_tempar'],
                             'trabalhou_fpa' 		=> $_GET['qg_trabal'], 
                             
@@ -88,7 +88,7 @@
                       );
 
 		foreach($arguments["altera_curriculo"] as $key=>$value){
-			$arguments["altera_curriculo"][$key] = urldecode($value);
+			//$arguments["altera_curriculo"][$key] = urldecode($value);
 		}
 
     $result = new wsTrabalheConosco();
