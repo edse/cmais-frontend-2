@@ -33,7 +33,7 @@
 .busca li {margin-bottom:10px; clear:both;}
 .busca li a {font-size:16px;}
 .busca li a:hover,
-.busca li a.ativo {color:#ff6633; text-decoration:none; font-weight:bold;}
+.busca li a.ativo {color:#2c9700; text-decoration:none; font-weight:bold;}/*#ff6633*/
 
 .busca form {max-width:665px; float:left;}
 .busca form .busque span {font-weight:bold; color:#ff6633;}
@@ -54,7 +54,7 @@
 .abas li { margin-right:20px;}
 #galeria-videos .blocos,
 #menu-rodape .abas-conteudo { min-height:734px; }
-#menu-rodape .blocos a {color: #0000CC;text-align: left!important;float: left;}
+#menu-rodape .blocos a {color: #2c9700;text-align: left!important;float: left;}/*color:#0000CC*/
 .gsc-tabHeader.gsc-tabhInactive {background: #fff;color: #666;border-left: 0;border-right: 0;border-top: 0;float: left;}
 .gsc-tabHeader.gsc-tabhActive {
 border-color: #FF9900;
