@@ -1,4 +1,5 @@
 <?php
+	header('Content-Type: text/html; charset=utf-8');
   
   ### ALTERA CURRÍCULO
   //814725288912
@@ -87,8 +88,7 @@
                       );
 
 		foreach($arguments["altera_curriculo"] as $key=>$value){
-			$arguments["altera_curriculo"][$key] = html_entity_decode($value);
-			echo "<pre>".$arguments["altera_curriculo"][$key]."</pre>";
+			$arguments["altera_curriculo"][$key] = urldecode($value);
 		}
 
     $result = new wsTrabalheConosco();
@@ -98,7 +98,6 @@
 		$output = json_encode(array("data" => $resultado));
 		$callback = $_GET['callback'];
 		echo $callback.'('. $output . ');';
-	
-}  
+} 
 
 ?>
