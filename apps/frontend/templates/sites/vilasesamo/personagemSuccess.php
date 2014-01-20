@@ -20,7 +20,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
  <!--Explicação acessibilidade-->
  <h1 tabindex="0" class="ac-explicacao">
   <?php echo $section->getDescription(); ?>
-  </h1>
   
   
   <section class="filtro row-fluid">
@@ -83,7 +82,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <!--texto personagem-->
             <div class="descritivo">
               <article>
-                <h3 aria-hidden="true" tabindex="-1"><?php echo $section->getTitle() ?></h3>
+                <h2 aria-hidden="true" tabindex="-1"><?php echo $section->getTitle() ?></h2>
                 <p><?php echo html_entity_decode($displays["sobre-a-personagem"][0]->Asset->AssetContent->render()) ?></p>
                 <p><?php //echo $section->getDescription() ?></p>
               <article>
