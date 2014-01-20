@@ -25,7 +25,7 @@
 <?php $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>" ?>
 <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
 <?php echo $noscript ?>
-<script src="http://172.20.16.219/portal/js/vilasesamo2/internas-isotope.js"></script>
+<script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <?php echo $noscript ?>
 <script>
 
