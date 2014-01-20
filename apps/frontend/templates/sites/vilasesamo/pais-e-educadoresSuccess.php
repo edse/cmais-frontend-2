@@ -54,7 +54,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                         <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
                       </div>
                     </div>
-                    <div class="descritivo">
+                    <div class="descritivo titulo-slider">
                       <h2><?php echo $d->getTitle() ?></h2>
                       <p><?php echo $d->getDescription() ?></p>
                       <?php if($d->Asset->AssetContent->getAuthor()): ?>

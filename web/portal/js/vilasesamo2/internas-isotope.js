@@ -32,16 +32,17 @@
       $(this).parent().parent().toggleClass("ativo");
 
       $('.filtro-personagem li.ativo').each(function(i){
-        
-        
+        $('a').removeClass('first');
+        $('li').removeClass('first').removeClass('count');
+        $('.firstDescription').remove();
+
         filter_selected += $(this).find('a').attr('data-filter') + ",";
         $select += $(this).find('a').attr('data-filter') + ', ';
         
         $(this).find('img').css('top','33px!important');
         
         $i++;
-        
-        
+  
       });
       
       $container.isotope({ filter:filter_selected });
@@ -50,15 +51,22 @@
         if($(this).hasClass('isotope-hidden')){
           $(this).find('a').attr('tabindex','-1');
         }else{
-          $j++;
+         $j++;
+          
+          if($j==1)
+            $(this).addClass('first');
+          
+          if($(this).hasClass('isotope-item'))
+            $(this).addClass('count');
+          
           $(this).find('a').attr('tabindex','0');
         }
       });
       
       if($i > 0){
-        $('#filtro-descricao').html('<span>Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens visíveis no total, em instantes você seá levado para o primeiro item da lista.</span>');
+        $('.first').before('<span class="firstDescription" aria-label="Você selecionou filtrar os links pelos personagens:' + $select +'com '+ $j +' itens visíveis no total, você está no primeiro item da lista." tabIndex="0" ></span>');
       }else{
-        $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos, em instantes você seá levado para o primeiro item da lista.');
+        $('.first').before('<span class="firstDescription" aria-label="Todos os Links relacionado a todos os personagens estão ativos, você está no primeiro item da lista." tabIndex="0"></span>');
       }
       
       setFocus();
@@ -70,16 +78,46 @@
     
     
     //filtro artigos por categoria
-  $('.dropdown-menu.cuidadores li a').click(function(){ 
-    var $i=0;
-    var $j=0
-    var $select_cat = $(this).attr('data-filter');
-    filter_selected = $select_cat;
-    
-    $container.isotope({ filter:filter_selected });
-    
-    return false;
-  });
+    $('.dropdown-menu.cuidadores li a').click(function(){ 
+      var $i=0;
+      var $j=0
+      var $select_cat = $(this).attr('data-filter');
+      filter_selected = $select_cat;
+      
+      $container.isotope({ filter:filter_selected });
+      
+      return false;
+    });
+  
+    //bx pais e educadores
+    //Acessibilidade abrir fechar div Box-Pais
+    $('.pais').keypress(function( event ) {
+      if ( event.which == 13 ) {
+        $('.pais-warning').remove();
+        $('.pais .content').stop().slideToggle('slow');
+        $(".pais .icone-cuidadores-abrir").toggleClass("inativo");
+        $(".pais .icone-cuidadores-fechar").toggleClass("ativo");
+        $(".pais .fechar-toogle").addClass("ativo");
+        $('.linha').show();
+        $('.redes').fadeIn();
+        $('.pais .content').before('<span class="pais-warning" aria-label="você abriu o box Pais e Educadores com compartilhamento de redes sociais mais 3 destaques em dicas e artigos e um seletor em lista de categorias" tabindex="0"></span>')
+        
+        setTimeout(function(){
+          $('.pais-warning').focus();
+        },500);
+        e.preventDefault();
+      } 
+    });
+      
+    $('.pais').keypress(function( event ) {
+      if ( event.which == 13 ) {
+        $('.pais .content').stop().slideToggle('fast');
+        $(".pais .icone-cuidadores-abrir").toggleClass("inativo");
+        $('.linha, .pais .redes').hide();
+        $(".pais .fechar-toogle").removeClass("ativo");
+      }
+        
+    });
     
     function goTop(){
       $('html, body').animate({
@@ -89,6 +127,21 @@
     
     function selectAll(){
       var personagens = 8;
+      var $select="";
+      $('a').removeClass('first');
+      $('li').removeClass('first').removeClass('count');
+      $('.firstDescription').remove();
+      
+      var $k = 0;
+      $('#container li.isotope-item').not('li.isotope-hidden').each(function(i){
+        if($k == 0){
+          $(this).addClass('first count');
+        }else{
+          $(this).addClass('count');
+        }
+        $k = $k+1
+        //console.log($k);
+      });
       
       if(cont != personagens){
         
@@ -96,25 +149,35 @@
         $("#filtrar-tudo").html("Deselecionar todos").attr('aria-label','botão para descelecionar todos os personagens filtros');
         $('.filtro-personagem li').addClass('ativo');
         $('.filtro-personagem li a').find('img').animate({top:-25, easing:"swing"},'fast');
-        $('#filtro-descricao').html('Todos os Links relacionado a todos os personagens estão ativos, em instantes você seá levado para o primeiro item da lista.');
         
         $('.filtro-personagem li.ativo').each(function(i){
           filter_selected += $(this).find('a').attr('data-filter') + ",";
-          //$select += $(this).find('a').attr('data-filter') + ', ';
+          $select += $(this).find('a').attr('data-filter') + ', ';
         });
         goTop();
         $container.isotope({ filter:filter_selected });
+        
+        $('.first').before('<span class="firstDescription" aria-label="Todos os links relacionados a todos os personagens estão ativos, você está no primeiro item da lista." tabIndex="0"></span>');
         cont=personagens;
+        $('.firstDescription').focus(); 
       }else if(cont==personagens){
         cont=0;
         filter_selected = "";
         $("#filtrar-tudo").html("Selecionar todos");
         $('.filtro-personagem li').removeClass('ativo');
         $('.filtro-personagem li a').find('img').animate({top:0, easing:"swing"},'fast');
-        $('#filtro-descricao').html('Todos os Links de relação foram desativados, em instantes você seá levado para o primeiro item da lista.');
+        
         $container.isotope({ filter:filter_selected });
+        $('.first').before('<span class="firstDescription" aria-label="Todos os links estão ativos, você está no primeiro item da lista." tabIndex="0"></span>');
+        $('.firstDescription').focus(); 
       }
       
+      setTimeout(function(){
+        //alert("fui");
+        $('#container').find('li.first a').focus();
+        $('.firstDescription').remove();
+      },5000);
+    
     }
     
     function setFocus(){
@@ -130,11 +193,16 @@
         }else{  
           $(this).find('a').attr('tabindex','0').attr("aria-hidden", "false");
         }
+        setTimeout(function(){
+        //alert("fui");
+          $('#container').find('li.first a').focus();
+          $('.firstDescription').remove();
+        },5000);
       });
       
-      setTimeout(function() {
-        $('#container a.first').focus(); 
-      }, 8500);
+
+      $('.firstDescription').focus(); 
+
       
     }
     /*lista destaque small
