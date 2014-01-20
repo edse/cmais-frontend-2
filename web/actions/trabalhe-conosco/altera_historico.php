@@ -8,8 +8,8 @@
 	                         'data_admissao' => $_GET['ql_dtadmis'],  
 	                         'data_demissao' => $_GET['ql_dtdemis'],  
 	                         'experiencia' => urldecode($_GET['ql_experiencia']), 
-	                         'empresa' => $_GET['ql_empresa'], 
-	                         'funcao' => $_GET['ql_funcini'], 
+	                         'empresa' => urldecode($_GET['ql_empresa']), 
+	                         'funcao' => urldecode($_GET['ql_funcini']), 
 	                         'funcao_inicial' => $_GET['ql_funcao'], 
 	                     ));
 	  
