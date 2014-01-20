@@ -9,8 +9,8 @@
 <!-- /HEADER -->
 
 <!--Explicação acessibilidade-->
-<h1 class="ac-explicacao" >
-  <p tabindex="0"><?php echo $section->getDescription(); ?></p>
+<h1 id="explain" class="ac-explicacao" >
+  <?php echo $section->getDescription(); ?>
 </h1>
 
 <!--content-->

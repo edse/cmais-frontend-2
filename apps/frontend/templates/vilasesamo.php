@@ -121,7 +121,7 @@
   </head>
   <body>
     <!--Pular navegação-->
-    <a href="#content" aria-label="pular o topo e ir direto para o conteudo" class="ac-pular" tabindex="2">pular começo</a>
+    <a href="#explain" aria-label="pular o topo e ir direto para o conteudo" class="ac-pular" tabindex="2">pular começo</a>
     
     <!-- header -->
     <header class="navbar navbar-inverse navbar-fixed-top">
