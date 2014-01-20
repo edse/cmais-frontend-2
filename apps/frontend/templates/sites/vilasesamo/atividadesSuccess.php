@@ -9,7 +9,7 @@
 <!-- /HEADER -->
 
 <!--Explicação acessibilidade-->
-<h1 tabindex="0" class="ac-explicacao">
+<h1 tabindex="0" class="ac-explicacao" >
   <?php echo $section->getDescription(); ?>
 </h1>
 

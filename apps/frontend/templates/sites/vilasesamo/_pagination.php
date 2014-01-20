@@ -51,7 +51,7 @@
     $('.count').each(function(i){
       countItens = countItens + 1;
     });
-    console.log(countItens);
+    //console.log(countItens);
     <?php
       $selectDescription = "";
       if($section->Parent->getSlug()=="personagens"){
@@ -86,10 +86,17 @@
         firstCount = firstCount + 1
       });
       
-      if(firstCount > 9)
+      if(firstCount > 9){
         $('.firstDescription').focus(); 
+        
+        setTimeout(function(){
+          //alert("fui");
+          $('#container').find('li.first a').focus();
+          $('.firstDescription').remove();
+        },5000);
+      }
       
-      console.log(firstCount);
+      //console.log(firstCount);
       
      
   }
@@ -105,11 +112,13 @@
         $('#ajax-loader').hide();
         if (data != "") {
           var newEls = $(data).appendTo('#container');
+           
           $("#container").isotope().isotope('appended',newEls);
-            setTimeout(function(){
-              countAssets();
-            }, 800);   
-          }else{
+          
+          setTimeout(function(){
+            countAssets();
+          }, 800);   
+        }else{
           $('#page_nav').fadeOut('fast');
         }
       }

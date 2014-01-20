@@ -1374,7 +1374,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               endif;
               
               if($section =="jogos" || $section == "atividades" || $section == "pais-e-educadores"){
-                $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . ' '. $first .'" aria-label=".Titulo ' . substr($section, 0, (strlen($section) -1)) . ": "  . $d->getTitle() . '. Descrição:' .$d->getDescription() .'. Descrição do Thumbnail:'. $descricaoImagem .'">';
+                $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '" aria-label=".Titulo ' . substr($section, 0, (strlen($section) -1)) . ": "  . $d->getTitle() . '. Descrição:' .$d->getDescription() .'. Descrição do Thumbnail:'. $descricaoImagem .'">';
               }elseif($sectionP == 3194 || $sectionP == 2390){
                 if($a->getSlug()=="videos") {
                   $subSectionb = "vídeo";
@@ -1389,7 +1389,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
                 }else if($a->getSlug()=="atividades"){
                   $subSectionb = "atividade";
                 }
-                $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . ' '. $first .'" aria-label=".Titulo ' . $subSectionb . ": "  . $d->getTitle() . '. Descrição:' .$d->getDescription() .'. Descrição do Thumbnail:'. $descricaoImagem .'">';
+                $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '" aria-label=".Titulo ' . $subSectionb . ": "  . $d->getTitle() . '. Descrição:' .$d->getDescription() .'. Descrição do Thumbnail:'. $descricaoImagem .'">';
               }            
               if($section == "pais-e-educadores"):
                 $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="" />';
