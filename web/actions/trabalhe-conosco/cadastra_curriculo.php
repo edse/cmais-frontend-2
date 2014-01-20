@@ -70,7 +70,7 @@ if(!empty($_GET['qg_nome']) && !empty($_GET['qg_nome']) && !empty($_GET['qg_cep'
                         //'cargo' 			=> $_GET['qg_cargo'], 
                         'salario_pretencao' => $_GET['qg_pretsal'], 
                         'salario_ultimo' 	=> $_GET['qg_ultsal'], 
-                        'experiencia' 		=> $_GET['qg_memo2'], 
+                        'experiencia' 		=> urldecode($_GET['qg_memo2']), 
                         'parentes' 			=> $_GET['qg_tempar'],
                         'trabalhou_fpa' 	=> $_GET['qg_trabal'], 
 
@@ -81,7 +81,7 @@ if(!empty($_GET['qg_nome']) && !empty($_GET['qg_nome']) && !empty($_GET['qg_cep'
                         'grupo' 			=> $_GET['qg_grupo']));
 
 		foreach($arguments["cadastra_curriculo"] as $key=>$value){
-			$arguments["cadastra_curriculo"][$key] = urldecode($value);
+			//$arguments["cadastra_curriculo"][$key] = urldecode($value);
 		}	  
 
     $result = new wsTrabalheConosco();
