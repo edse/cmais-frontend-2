@@ -86,6 +86,11 @@
                             'grupo' 						=> $_GET['qg_grupo'])
                       );
 
+		foreach($arguments["altera_curriculo"] as $key=>$value){
+			$arguments["altera_curriculo"][$key] = html_entity_decode($value);
+			echo "<pre>".$arguments["altera_curriculo"][$key]."</pre>";
+		}
+
     $result = new wsTrabalheConosco();
     $result->executeWebService($service, $arguments);
     $resultado = $result->result->altera_curriculoResult;
