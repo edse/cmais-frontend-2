@@ -110,7 +110,7 @@
           $(this).addClass('count');
         }
         $k = $k+1
-        console.log($k);
+        //console.log($k);
       });
       
       if(cont != personagens){
