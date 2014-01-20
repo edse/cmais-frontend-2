@@ -8,13 +8,15 @@
 <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
 
-<!--Explicação acessibilidade-->
-<h1 class="ac-explicacao" >
-  <p tabindex="0"><?php echo $section->getDescription(); ?></p>
-</h1>
+
 
 <!--content-->
 <div id="content">
+  
+  <!--Explicação acessibilidade-->
+  <h1 tabindex="0" class="ac-explicacao">
+   <?php echo $section->getDescription(); ?>
+  </h1> 
 <!--section-->
 <section class="filtro row-fluid">
   <!--span12-->

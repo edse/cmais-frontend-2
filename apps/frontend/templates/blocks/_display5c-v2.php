@@ -95,7 +95,7 @@
                     </a>
                     <div class="descricao">
                       <a class="tit" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-                        <?php echo $d->retriveTitle() ?>
+                        <?php echo html_entity_decode($d->retriveTitle()) ?>
                       </a>
                       <?php if(strlen($d->Program->getSchedule()) <= 30): ?>
                         <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>"><?php if($d->Program->getSchedule()!="") echo html_entity_decode(str_replace(":", "h", $d->Program->getSchedule())); ?></a>
