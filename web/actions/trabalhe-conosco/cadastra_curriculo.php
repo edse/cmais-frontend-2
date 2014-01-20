@@ -80,6 +80,10 @@ if(!empty($_GET['qg_nome']) && !empty($_GET['qg_nome']) && !empty($_GET['qg_cep'
                         'motivo_saida' 		=> $_GET['qg_motsai'], 
                         'grupo' 			=> $_GET['qg_grupo']));
 
+		foreach($arguments["cadastra_curriculo"] as $key=>$value){
+			$arguments["cadastra_curriculo"][$key] = urldecode($value);
+		}	  
+
     $result = new wsTrabalheConosco();
     $result->executeWebService($service, $arguments);
     $resultado = $result->result->cadastra_curriculoResult;

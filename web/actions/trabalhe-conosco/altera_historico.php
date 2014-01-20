@@ -13,6 +13,10 @@
 	                         'funcao_inicial' => $_GET['ql_funcao'], 
 	                     ));
 	  
+		foreach($arguments["altera_historico"] as $key=>$value){
+			$arguments["altera_historico"][$key] = urldecode($value);
+		}	 
+
 		$result = new wsTrabalheConosco();
 		$result->executeWebService($service, $arguments);
 		$resultado = $result->result->altera_historicoResult;
