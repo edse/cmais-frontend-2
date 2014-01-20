@@ -86,14 +86,15 @@
         firstCount = firstCount + 1
       });
       
-      if(firstCount > 9)
+      if(firstCount > 9){
         $('.firstDescription').focus(); 
         
-      setTimeout(function(){
-        //alert("fui");
-        $('#container').find('li.first a').focus();
-        $('.firstDescription').remove();
-      },5000);
+        setTimeout(function(){
+          //alert("fui");
+          $('#container').find('li.first a').focus();
+          $('.firstDescription').remove();
+        },5000);
+      }
       
       //console.log(firstCount);
       
@@ -117,7 +118,7 @@
           setTimeout(function(){
             countAssets();
           }, 800);   
-          }else{
+        }else{
           $('#page_nav').fadeOut('fast');
         }
       }
