@@ -36,10 +36,8 @@ if(count($bs) > 0){
 } 	
 	
 ?>
-<noscript>
-	<meta http-equiv="refresh" content="250" />
-</noscript>
-<meta http-equiv="refresh" content="18000" />
+
+<script>setTimeout("location.reload(true);",360000);</script>
 		
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/jornalismo-novo2013.css" type="text/css" />
 

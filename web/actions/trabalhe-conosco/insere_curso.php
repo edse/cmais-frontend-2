@@ -15,11 +15,11 @@
 	                                 'cod_curso' 		=> $_GET['qm_curso'],
 	                                 'cod_tipo' 		=> $_GET['qm_tcurso'],
 	                                 'cod_escolar' 	=> $_GET['qm_escolar'],
-	                                 'descricao' 		=> $qm_dscout));
+	                                 'descricao' 		=> urldecode($qm_dscout)));
 	  
 		
 		foreach($arguments["insere_curso"] as $key=>$value){
-			$arguments["insere_curso"][$key] = urldecode($value);
+			//$arguments["insere_curso"][$key] = urldecode($value);
 		}	  
 	  
 	  $acao = new wsTrabalheConosco();
