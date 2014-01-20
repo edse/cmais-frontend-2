@@ -9,7 +9,9 @@
 <!-- /HEADER -->
 
 <!--Explicação acessibilidade-->
-<h1 tabindex="0" class="ac-explicacao" aria-label="<?php echo $section->getDescription(); ?>">  </h1>
+<h1 tabindex="0" class="ac-explicacao" >
+  <?php echo $section->getDescription(); ?>
+</h1>
 
 <!--content-->
 <div id="content">
