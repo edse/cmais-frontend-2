@@ -163,7 +163,7 @@ r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilit
     function stopVideo() {
         player.stopVideo();
     }
-    function pauseVideo() {
+    function pauseVideo() { 
         player.pauseVideo();
     }
     $('.play').click(function(){playVideo()});
