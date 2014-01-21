@@ -117,7 +117,7 @@
   <!--/section-->
   
   <?php include_partial_from_folder('sites/vilasesamo', 'global/brinque-tambem-com', array("site" => $site, "section" => $section, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
-  
+   
   <?php //include_partial_from_folder('sites/vilasesamo', 'global/form-campanha', array("site" => $site, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
 
   <?php include_partial_from_folder('sites/vilasesamo', 'global/para-os-pais', array("site" => $site, "asset" => $asset, "categories" => $categories, "uri" => $uri)) ?>
@@ -125,7 +125,7 @@
 </div>
 <!--/content-->
 <script>
-$(document).find('object').before('<span class="sorryFlash" aria-label="Desculpe amiguinho, esse jogo esta em flash e sem acessibilidade mas você pode chamar o papai e a mamãe ou um amiguinho pra vocês brincarem juntos, é divertido! Se não for brincar continue navegando e descobrindo as várias formas de se divertir! Até mais!" tabindex="0"></span>');
+$(document).find('object').before('<span class="sorryFlash" aria-label="Desculpe amiguinho, esse jogo esta sem acessibilidade mas você pode chamar o papai e a mamãe ou um amiguinho pra vocês brincarem juntos, é divertido ou continue navegando e descobrindo as várias formas de se divertir! Até mais!" tabindex="0"></span>').find('embed').after('<noembed>esse jogo usa plugin flash</noembed>');
 $('.sorryFlash').focus();
 </script>
 <?php echo $noscript ?>  
