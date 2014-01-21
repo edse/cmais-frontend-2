@@ -117,9 +117,9 @@
   <?php if($see_also): ?>
   
   <!--relacionados-->  
-  <section class="relacionados" aria-label="Você está entrando na listinha de brincadeiras relacionadas com 4 itens" tabindex="0">
+  <section class="relacionados" aria-label="Brinque também com: Você está entrando na listinha de brincadeiras relacionadas com 4 itens" tabindex="0">
     
-    <h2>Brinque também com:</h2>
+    <h2 aria-hidden="true" tabindex="-1">Brinque também com:</h2>
     
     <!--carrossel-->
     <div id="carrossel-interna">
