@@ -173,7 +173,7 @@
       $('.stopado').focus();
       setTimeout(function(){
         $('.stopado').remove();
-        $('.stop').focus();
+        $('.play').focus();
       },3000);
     });
     $('.pause').click(function(){
