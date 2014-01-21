@@ -138,7 +138,7 @@
         player = new YT.Player('player', {
           height: '900',
           width: '675',
-          videoId: <?php echo $asset->AssetVideo->getYoutubeId() ?>,
+          videoId: '<?php echo $asset->AssetVideo->getYoutubeId() ?>',
           events: {
             'onReady': onPlayerReady,
             //'onStateChange': onPlayerStateChange
