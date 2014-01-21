@@ -123,6 +123,9 @@
 
 </div>
 <!--/content-->
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+<!-- script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/youtubeapi.js"></script --> 
+<?php echo $noscript; ?>
 <script>
     //Load player api asynchronously.
     var tag = document.createElement('script');
