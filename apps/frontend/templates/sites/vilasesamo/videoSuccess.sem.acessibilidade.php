@@ -1,4 +1,3 @@
-<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"; ?>
 <?php
   /*
    * Pega a campanha (seção filha de "campanhas") e as categorias (seçao filha de "categorias") as quais o asset pertence
@@ -30,22 +29,16 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-<?php echo $noscript ?>
 <script src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
-<?php echo $noscript ?>
 <script src="http://cmais.com.br/portal/js/hammer.min.js" type="text/javascript"></script>
-<?php echo $noscript ?>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
-<?php echo $noscript ?>
 <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
-<?php echo $noscript ?>
-<script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/paiseeducadores.js"></script>
-<?php echo $noscript; ?>
+
 <script>
   $("body").addClass("interna videos");
 </script>
-<?php echo $noscript ?>
+
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
