@@ -170,16 +170,20 @@
     $('.stop').click(function(){
       stopVideo()
       $('.stop').before('<span class="stopado" aria-label="Você parou a reprodução amiguinho, para iniciar novamente aperte enter no link Iniciar o vídeo" tabindex="0"></span>')
-      $('.stopado').focus();
+      setTimeout(function(){
+        $('.stopado').focus();
+      },500);
       setTimeout(function(){
         $('.stopado').remove();
         $('.play').focus();
-      },3000);
+      },5000);
     });
     $('.pause').click(function(){
       pauseVideo()
       $('.pause').before('<span class="pausado" aria-label="Você pausou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo" tabindex="0"></span>')
-      $('.pausado').focus();
+      setTimeout(function(){
+        $('.pausado').focus();
+      },500);
       setTimeout(function(){
         $('.pausado').remove();
         $('.play').focus();
