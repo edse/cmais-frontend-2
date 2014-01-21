@@ -111,7 +111,7 @@
         <?php $related = $asset->retriveRelatedAssetsByRelationType("Preview"); ?>
         <?php $relatedMore = $asset->retriveRelatedAssetsByRelationType("Download"); ?>
         
-      <a href="#print" aria-label="<?php echo $related[0]->AssetImage->getHeadline(); ?>" tabindex="0" ></a>
+      <a href="#print" aria-label="Descrição da imagem:<?php echo $related[0]->AssetImage->getHeadline(); ?>, para imprimir aperte enternno link imprimir" tabindex="0" ></a>
         <img class="picture" src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" aria-hidden="true" tabindex="-1"/>
       </a>  
         <div class="paginas">

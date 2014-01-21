@@ -119,7 +119,7 @@
   <!--relacionados-->  
   <section class="relacionados" aria-label="Brinque também com: Você está entrando na listinha de brincadeiras relacionadas com 4 itens" tabindex="0">
     
-    <h2 aria-hidden="true" tabindex="-1">Brinque também com:</h2>
+    <h2 aria-hidden="true">Brinque também com:</h2>
     
     <!--carrossel-->
     <div id="carrossel-interna">
@@ -127,7 +127,7 @@
         <div class="slider">
           <div class="slider-mask-wrap">
             <div class="slider-mask">
-              <ul class="slider-target" aria-hidden="true" tabindex="-1">
+              <ul class="slider-target">
                 
                 <?php if($campaign): ?>
                   <?php if(count($see_also_by_campaign) > 0): ?>
