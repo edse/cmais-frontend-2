@@ -105,6 +105,9 @@
       <?php if(isset($asset)): ?>
       <div class="asset">
         <div id="player"></div>
+        <a href="#" class="play" aria-label="Iniciar o vídeo"></a>
+        <a href="#" class="pause" aria-label="Pausar o vídeo"></a>
+        <a href="#" class="stop" aria-label="Parar o vídeo"></a>
         <!--iframe width="900" height="675" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe-->
       </div>
       <?php endif; ?>
@@ -140,7 +143,7 @@
           width: '900',
           videoId: '<?php echo $asset->AssetVideo->getYoutubeId() ?>',
           events: {
-            'onReady': onPlayerReady,
+            //'onReady': onPlayerReady,
             //'onStateChange': onPlayerStateChange
           }
         });
@@ -154,9 +157,18 @@
             done = true;
         }
     }
+    function playVideo() {
+        player.playVideo();
+    }
     function stopVideo() {
         player.stopVideo();
     }
+    function pauseVideo() {
+        player.pauseVideo();
+    }
+    $('.play').click(function(){playVideo()});
+    $('.stop').click(function(){stopVideo()});
+    $('.pause').click(function(){pauseVideo()});
 </script>
 <?php echo $noscript ?>
   
