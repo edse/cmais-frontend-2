@@ -174,8 +174,8 @@
         $('.stopado').focus();
       },500);
       setTimeout(function(){
-        $('.stopado').remove();
         $('.play').focus();
+        $('.stopado').remove();
       },5000);
     });
     $('.pause').click(function(){
@@ -185,8 +185,8 @@
         $('.pausado').focus();
       },500);
       setTimeout(function(){
-        $('.pausado').remove();
         $('.play').focus();
+        $('.pausado').remove();
       },3000);
     });
 </script>
