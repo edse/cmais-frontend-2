@@ -170,18 +170,18 @@ r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilit
     $('.stop').click(function(){
       stopVideo();
       $('.play').attr('aria-label','Você parou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
+      $('.play').before('<span class="stopado" aria-label="Você parou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo" tabindex="0"></span>');
       setTimeout(function(){
-        $('.play').before('<span class="stopado" aria-label="Você parou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo" tabindex="0"></span>');
         $('.stopado').focus();
-      },500);
+      },800);
     });
     $('.pause').click(function(){
       pauseVideo();
       $('.play').attr('aria-label','Você pausou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
+      $('.play').before('<span class="pausado" aria-label="Você pausou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo" tabindex="0"></span>');
       setTimeout(function(){
-        $('.play').before('<span class="pausado" aria-label="Você pausou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo" tabindex="0"></span>');
         $('.pausado').focus();
-      },1000);
+      },800);
     });
 </script>
 <?php echo $noscript ?>
