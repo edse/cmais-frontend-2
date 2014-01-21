@@ -516,33 +516,19 @@ function goTop(where){
     scrollTop:where
   }, "slow");
 }      
-</script>
-<?php echo $noscript; ?>
 
-<!--Tabindex no corpo do atigo-->
-<script>
-$('.col-esq article p').each(function(index) {
+//Tabindex no corpo do atigo
+$('.col-esq article p,li').each(function(index) {
   $(this).attr('tabindex', 0);
 });
-</script>
-<?php echo $noscript; ?>
 
-<!--Links das imagens do artigo-->
-<script>
-$('.col-esq article p img').each(function(index) {
+//Links das imagens do artigo
+$('.box-ler p').each(function(index) {
   $(this).attr('tabindex', -1).attr('aria-hidden',true);
 });
 </script>
 <?php echo $noscript; ?>
 
-<!-- Box ler
-<script>
-$('.texto').each(function(index) {
-  $(this).attr('tabindex', -1).attr('aria-hidden',true);
-});
-</script>
-<?php echo $noscript; ?>
 
--->
 
 
