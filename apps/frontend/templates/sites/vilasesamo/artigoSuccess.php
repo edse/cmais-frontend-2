@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <?php
-$noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
+$noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página.</noscript>"
 ?>
 
 <?php 
@@ -67,7 +67,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <!--header-->
             <header>
               
-              <h1><?php echo $asset->getTitle() ?></h1>
+              <h1 tabindex="0"><?php echo $asset->getTitle() ?></h1>
                
               <div class="overflow">
                 <?php $colaboradores = $asset->retriveRelatedAssetsByRelationType("Colaborador") ?>
@@ -352,14 +352,14 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           ?>
           <?php if(isset($related_asset)): ?>  
             <?php if(count($related_asset) > 0): ?>  
-             <article class="jogos">
-                <a href="<?php echo $related_asset[0]->retriveUrl() ?>" title="<?php echo $related_asset[0]->getTitle() ?>">
+             <article class="jogos" tabindex="-1">
+                <a href="<?php echo $related_asset[0]->retriveUrl() ?>" title="<?php echo $related_asset[0]->getTitle() ?>" tabindex="0">
                   <?php $preview = $related_asset[0]->retriveRelatedAssetsByRelationType("Preview") ?>
                   <?php if(count($preview) > 0): ?>
-                    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>" />
+                    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>" aria-label="Título: <?php echo $related_asset[0]->getTitle() ?>. Descrição: <?php echo $related_asset[0]->getDescription() ?>">
                   <?php endif; ?>
                   <i class="icones-sprite-interna icone-jogos-pequeno"></i>
-                  <div class="texto">
+                  <div class="texto" aria-hidden="true" >
                     <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
                     <?php echo $related_asset[0]->getTitle() ?>
                   </div>
@@ -393,14 +393,14 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           ?>
           <?php if(isset($related_asset)): ?>
             <?php if(count($related_asset) > 0): ?>
-              <article class="videos">
-                <a href="<?php echo $related_asset[0]->retriveUrl() ?>" title="<?php echo $related_asset[0]->getTitle() ?>">
+              <article class="videos" tabindex="-1">
+                <a href="<?php echo $related_asset[0]->retriveUrl() ?>" title="<?php echo $related_asset[0]->getTitle() ?>" tabindex="0">
                   <div class="yt-menu">
-                    <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $related_asset[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $related_asset[0]->getTitle() ?>">
+                    <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $related_asset[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $related_asset[0]->getTitle() ?>" aria-label="Título: <?php echo $related_asset[0]->getTitle() ?>. Descrição: <?php echo $related_asset[0]->getDescription() ?>">
                   </div>
                   
                   <i class="icones-sprite-interna icone-videos-pequeno"></i>
-                  <div class="texto">
+                  <div class="texto" aria-hidden="true">
                     <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
                     <?php echo $related_asset[0]->getTitle() ?>
                   </div>
@@ -434,14 +434,14 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             ?>
             <?php if(isset($related_asset)): ?>  
               <?php if(count($related_asset) > 0): ?>
-              <article class="atividades">
-                 <a href="<?php echo $related_asset[0]->retriveUrl() ?>" title="<?php echo $related_asset[0]->getTitle() ?>">
+              <article class="atividades" tabindex="-1">
+                 <a href="<?php echo $related_asset[0]->retriveUrl() ?>" title="<?php echo $related_asset[0]->getTitle() ?>" tabindex="0">
                   <?php $preview = $related_asset[0]->retriveRelatedAssetsByRelationType("Preview") ?>
                   <?php if(count($preview) > 0): ?>
-                    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>">
+                    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>" aria-label="Título: <?php echo $related_asset[0]->getTitle() ?>. Descrição: <?php echo $related_asset[0]->getDescription() ?>">
                   <?php endif; ?>
                   <i class="icones-sprite-interna icone-atividades-pequeno"></i>
-                  <div class="texto">
+                  <div class="texto" aria-hidden="true" >
                     <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
                     <?php echo $related_asset[0]->getTitle() ?>             
                   </div>
@@ -458,7 +458,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <!--/col dir -->
         
         <!--destaques-->
-        <div class="span4 col-direita" aria-label="Banner de publicidade dos programas." tabindex="0">
+        <div class="span4 col-direita" tabindex="-1">
           <?php
             $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"pais-e-educadores");
             $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($particularSection->getId(), "destaques-secundarios"); // Pega o bloco "destaques-secundarios" da seção "para os pais"
@@ -522,9 +522,9 @@ $('.col-esq article p,li').each(function(index) {
   $(this).attr('tabindex', 0);
 });
 
-//Links das imagens do artigo
-$('.box-ler p').each(function(index) {
-  $(this).attr('tabindex', -1).attr('aria-hidden',true);
+//só ler a aria-label das imagens
+$('.col-esq article img').each(function(index) {
+  $(this).attr('aria-hidden',true);
 });
 </script>
 <?php echo $noscript; ?>
