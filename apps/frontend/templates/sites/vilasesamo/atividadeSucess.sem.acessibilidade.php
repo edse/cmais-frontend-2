@@ -1,5 +1,5 @@
 <?php use_helper('I18N', 'Date') ?>
-<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"; ?>
+
 <?php
   /*
    * Pega a campanha (seção filha de "campanhas") e as categorias (seçao filha de "categorias") as quais o asset pertence
@@ -33,47 +33,39 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-<?php echo $noscript; ?>
 <script src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
-<?php echo $noscript; ?>
 <script src="http://cmais.com.br/portal/js/hammer.min.js" type="text/javascript"></script>
-<?php echo $noscript; ?>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
-<?php echo $noscript; ?>
 <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
-<?php echo $noscript; ?>
-<script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/paiseeducadores.js"></script>
-<?php echo $noscript; ?>
+
 <script>
   $("body").addClass("interna atividades");
 </script>
-<?php echo $noscript; ?>
+
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
 
 <!--content-->
 <div id="content">
-  <h1 tabindex="0" class="ac-explicacao">
-    Você está na atividade <?php echo $asset->getTitle() ?>
-  </h1>
+  
   <!--section -->
   <section class="filtro row-fluid">
     
     <h1 class="back-page">
       <i class="icones-sprite-interna icone-atividades-grande"></i>
-      <span aria-hidden="true" tabindex="-1"><?php echo $section->getTitle() ?></span>
-      <a class="todos-assets" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" aria-label="voltar para todas as atividades" target="_self" >
+      <?php echo $section->getTitle() ?>
+      <a class="todos-assets" title="voltar para todas atividades" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" target="_self" >
         <i class="icones-setas icone-voltar-atividades"></i>
-        <p aria-hidden="true" tabindex="-1">todas as atividades</p>
+        <p>todas as atividades</p>
       </a>
     </h1>
     
     <!--conteudo-asset-->
     <div class="conteudo-asset">
       
-      <h2 tabindex="0"><?php echo $asset->getTitle() ?></h2>
+      <h2><?php echo $asset->getTitle() ?></h2>
       <?php
       /*
        * Este código serve apenas para pegar o selo (imagem) que indica que o asset pertence a uma categoria especial (entenda categoria como subseção de "categorias").
@@ -81,7 +73,7 @@
        * Todas as categorias tem este bloco, mas somente as marcadas como "is homepage" serão consideradas como especiais, tais como "Incluir Brincando" e "Hábitos Saudáveis".
        */
       ?>
-      <p aria-label="Descrição da atividade: <?php echo $asset->getDescription() ?>"  tabindex="0">
+      <p>
       <?php if(isset($categories)): ?>
         <?php if(count($categories) > 0): ?>
           <?php      
@@ -96,13 +88,13 @@
             }
           ?>
           <?php if(isset($seloImageUrl)): ?>
-            <a  href="<?php echo $seloUrl ?>" title="" tabindex="0" aria-label="<?php echo "categoria ".$seloTitle ?>">
-              <img src="<?php echo $seloImageUrl ?>" alt=""   />
-            </a>
+        <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
+          <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
+        </a>
           <?php endif; ?>
         <?php endif; ?>
       <?php endif; ?>
-        <span aria-hidden="true"><?php echo $asset->getDescription() ?></span>
+        <?php echo $asset->getDescription() ?>
       </p>
       
       
@@ -111,25 +103,23 @@
         <?php $related = $asset->retriveRelatedAssetsByRelationType("Preview"); ?>
         <?php $relatedMore = $asset->retriveRelatedAssetsByRelationType("Download"); ?>
         
-      <a href="#print" aria-label="<?php echo $related[0]->AssetImage->getHeadline(); ?>" tabindex="0" ></a>
-        <img class="picture" src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" aria-hidden="true" tabindex="-1"/>
-      </a>  
+        <img class="picture" src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
         <div class="paginas">
           
           <?php if(isset($relatedMore)): ?>
             <?php if(count($relatedMore) > 0): ?>
               <span class="paginador">veja também:</span>
-              <a href="#" class="changePicture" title="página 1"  aria-label="página 1 - <?php echo $related[0]->AssetImage->getHeadLine(); ?>"  tabindex="0">
+              <a href="javascript:;" class="changePicture" title="página 1">
                 <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
                 <input id="baixar-hidden" type="hidden" value="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>">
                 <input id="press-hidden" type="hidden" value="<?php echo $related[0]->retriveImageUrlByImageUsage("original"); ?>">
               </a>
               <?php foreach($relatedMore as $k=>$p): ?>
-                <a href="#" class="changePicture" title="página <?php echo $k+2 ?>" aria-label="página <?php echo $k+2 ?> - <?php echo $relatedMore[$k]->AssetImage->getHeadLine(); ?>"  tabindex="0">
-                  <img src="<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>"  />
+                <a href="javascript:;" class="changePicture" title="página <?php echo $k+2 ?>">
+                  <img src="<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
                   <input id="baixar-hidden" type="hidden" value="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("original") ?>">
                   <input id="press-hidden" type="hidden" value="<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("original"); ?>">
-                </a> 
+                </a>
               <?php endforeach; ?>
                 
             <?php endif ?>
@@ -144,11 +134,11 @@
           
            
           <!--a class="option-assets" href="javascript:printDiv('div0')" title="Imprimir" target="_blank"-->
-          <a href="javascript:printDiv('div0')" id="print" class="option-assets print" datasrc="<?php echo $related[0]->retriveImageUrlByImageUsage("original"); ?>" title="">
+          <a href="javascript:printDiv('div0')" class="option-assets print" datasrc="<?php echo $related[0]->retriveImageUrlByImageUsage("original"); ?>" title="imprimir">
             <i class="icones-sprite-interna icone-imprimir-roxo"></i>
             <span>Imprimir</span>
             <div id="div0" style="display: none;page-break-after:always;">
-              <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("original")?>" style="width:95%" alt="" aria-hidden="true" tabindex="-1">
+              <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("original")?>" style="width:95%">
             </div>
           </a>
           
@@ -156,7 +146,7 @@
       </div>
       <?php endif; ?>
       <!--IFRAME PARA IMPRESSAO EM IE -->
-      <iframe id="print_frame" width="0" height="0" frameborder="0" src="about:blank" title="iframe" ></iframe> 
+      <iframe id="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
       <!--/IFRAME PARA IMPRESSAO EM IE -->
     </div>
     <!--/conteudo-asset-->
@@ -174,22 +164,15 @@
 <!--/content-->
 
 <script>
-$('.changePicture, .picture').click(function(){
+$('.changePicture').click(function(){
   var picture = $(this).find('img').attr('src');
   var desc = $(this).find('img').attr('alt');
   var download = $(this).find('#baixar-hidden').attr('value');
   var press = $(this).find('#press-hidden').attr('value');
-  var aria= $(this).attr('aria-label'); 
-
   
-  $('.picture').attr('src', picture).attr('alt', desc).attr('aria-label', aria);
+  $('.picture').attr('src', picture).attr('alt', desc);
   $('.option-assets.download').attr('href', download);
   $('.option-assets.print').attr('datasrc', press);
   $('#div0 img').attr('src', press);
-  
-  $('.print').attr('aria-label','você escolheu ' + aria + '. se quiser imprimir aperte enter para ir para a janela de impressão').attr('tabindex','0');
-  $('.print').focus();
-  
 });
 </script>
-<?php echo $noscript; ?>
