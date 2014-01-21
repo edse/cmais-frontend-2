@@ -1,4 +1,4 @@
-<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"; ?>
+r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"; ?>
 <?php
   /*
    * Pega a campanha (seção filha de "campanhas") e as categorias (seçao filha de "categorias") as quais o asset pertence
@@ -169,25 +169,18 @@
     $('.play').click(function(){playVideo()});
     $('.stop').click(function(){
       stopVideo()
-      $('.stop').before('<span class="stopado" aria-label="Você parou a reprodução amiguinho, para iniciar novamente aperte enter no link Iniciar o vídeo" tabindex="0"></span>')
-      setTimeout(function(){
-        $('.stopado').focus();
-      },500);
+      $('.play').attr('aria-label','Você parou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
       setTimeout(function(){
         $('.play').focus();
-        $('.stopado').remove();
-      },5000);
+      },500);
+      
     });
     $('.pause').click(function(){
       pauseVideo()
-      $('.pause').before('<span class="pausado" aria-label="Você pausou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo" tabindex="0"></span>')
-      setTimeout(function(){
-        $('.pausado').focus();
-      },500);
+      $('.play').attr('aria-label','Você pausou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
       setTimeout(function(){
         $('.play').focus();
-        $('.pausado').remove();
-      },3000);
+      },500);
     });
 </script>
 <?php echo $noscript ?>
