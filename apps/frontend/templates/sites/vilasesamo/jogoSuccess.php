@@ -69,14 +69,14 @@
       <?php echo $section->getTitle() ?>
       <a class="todos-assets" title="voltar para todas jogos" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" target="_self" >
         <i class="icones-setas icone-voltar-jogos"></i>
-        <p>todos os jogos</p>
+        <p aria-hidden="true" tabindex="-1">todos os jogos</p>
       </a>
     </h1>
     
     <!--conteudo-asset-->
     <div class="conteudo-asset">
       
-      <h2><?php echo $asset->getTitle() ?></h2>
+      <h2  tabindex="0"><?php echo $asset->getTitle() ?></h2>
       <?php
       /*
        * Este código serve apenas para pegar o selo (imagem) que indica que o asset pertence a uma categoria especial (entenda categoria como subseção de "categorias").
@@ -84,7 +84,7 @@
        * Todas as categorias tem este bloco, mas somente as marcadas como "is homepage" serão consideradas como especiais, tais como "Incluir Brincando" e "Hábitos Saudáveis".
        */
       ?>
-      <p>
+      <p aria-label="Descrição da atividade: <?php echo $asset->getDescription() ?>"  tabindex="0">
       <?php if(isset($categories)): ?>
         <?php if(count($categories) > 0): ?>
           <?php
@@ -105,7 +105,7 @@
           <?php endif; ?>
         <?php endif; ?>
       <?php endif; ?>
-        <?php echo $asset->getDescription() ?>
+        <span aria-hidden="true"><?php echo $asset->getDescription() ?></span>
       </p>
       
       

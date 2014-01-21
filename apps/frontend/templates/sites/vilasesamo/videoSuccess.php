@@ -63,14 +63,14 @@
       <?php echo $section->getTitle() ?>
       <a class="todos-assets" title="voltar para todas vídeos" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" target="_self" >
         <i class="icones-setas icone-voltar-videos"></i>
-        <p>todos os vídeos</p> 
+        <p aria-hidden="true" tabindex="-1">todos os vídeos</p> 
       </a>
     </h1>
     
     <!--conteudo-asset-->
     <div class="conteudo-asset">
       
-      <h2><?php echo $asset->getTitle() ?></h2>
+      <h2 tabindex="0"><?php echo $asset->getTitle() ?></h2>
       <?php
       /*
        * Este código serve apenas para pegar o selo (imagem) que indica que o asset pertence a uma categoria especial (entenda categoria como subseção de "categorias").
@@ -78,7 +78,7 @@
        * Todas as categorias tem este bloco, mas somente as marcadas como "is homepage" serão consideradas como especiais, tais como "Incluir Brincando" e "Hábitos Saudáveis".
        */
       ?>
-      <p>
+      <p aria-label="Descrição da atividade: <?php echo $asset->getDescription() ?>"  tabindex="0">
       <?php if(isset($categories)): ?>
         <?php if(count($categories) > 0): ?>
           <?php      
@@ -99,7 +99,7 @@
           <?php endif; ?>
         <?php endif; ?>
       <?php endif; ?>
-        <?php echo $asset->getDescription() ?>
+       <span aria-hidden="true"><?php echo $asset->getDescription() ?></span>
       </p>
       
       <?php if(isset($asset)): ?>
@@ -169,7 +169,7 @@
     $('.play').click(function(){playVideo()});
     $('.stop').click(function(){
       stopVideo()
-      $('.stop').before('<span class="stopado" aria-label="Você parou a reprodução amiguinho, para iniciar novamente aperte enter no link Iniciar o vídeo"></span>')
+      $('.stop').before('<span class="stopado" aria-label="Você parou a reprodução amiguinho, para iniciar novamente aperte enter no link Iniciar o vídeo" tabindex="0"></span>')
       $('.stopado').focus();
       setTimeout(function(){
         $('.stopado').remove();
@@ -178,7 +178,7 @@
     });
     $('.pause').click(function(){
       pauseVideo()
-      $('.pause').before('<span class="pausado" aria-label="Você pausou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo"></span>')
+      $('.pause').before('<span class="pausado" aria-label="Você pausou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo" tabindex="0"></span>')
       $('.pausado').focus();
       setTimeout(function(){
         $('.pausado').remove();
