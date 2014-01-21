@@ -8,6 +8,12 @@ if(!empty($_GET['qg_nome']) && !empty($_GET['qg_nome']) && !empty($_GET['qg_cep'
 	$qg_pretsal = "";
 	$qg_ultsal = "";
 	
+	$url_completa = urldecode($_SERVER['REQUEST_URI']);
+	$ex = explode("qg_memo2=", $url_completa);
+	$ex1 = explode("&DropDown_qg_tempar", $ex[1]);
+	$qg_memo2 = $ex1[0];
+
+	
 	if($_GET['qg_pretsal']){
 		$qg_pretsal = str_replace(".", "", $_GET['qg_pretsal']);
 	  $qg_pretsal = str_replace(",", ".", $qg_pretsal);
@@ -34,8 +40,8 @@ if(!empty($_GET['qg_nome']) && !empty($_GET['qg_nome']) && !empty($_GET['qg_cep'
                     => array(
                 			'cpf'		 	=> $_GET['cpf'],
                         	'deficiente' 	=> $_GET['qg_defic'],  
-                            'nome' 			=> $_GET['qg_nome'],  
-                            'endereco' 		=> $_GET['qg_enderec'], 
+                            'nome' 			=> urldecode($_GET['qg_nome']),  
+                            'endereco' 		=> urldecode($_GET['qg_enderec']), 
                             'complemento'   => $_GET['qg_complem'], 
                             'bairro' 		=> $_GET['qg_bairro'], 
                             'municipio' 	=> $_GET['qg_municip'], 
@@ -53,8 +59,8 @@ if(!empty($_GET['qg_nome']) && !empty($_GET['qg_nome']) && !empty($_GET['qg_cep'
                             'ano_chegada' 	=> $_GET['qg_anocheg'],
                             'rg' 			=> $_GET['qg_rg'], 
                             'rg_origem' 	=> $_GET['qg_rgorg'], 
-                            'pai' 			=> $_GET['qg_pai'], 
-                            'mae' 			=> $_GET['qg_mae'], 
+                            'pai' 			=> urldecode($_GET['qg_pai']), 
+                            'mae' 			=> urldecode($_GET['qg_mae']), 
                             'estado_civil' 	=> $_GET['qg_estciv'], 
                     'carteira_profissional' => $_GET['qg_numcp'], 
                     'carteira_serie' 		=> $_GET['qg_sercp'], 
@@ -70,7 +76,7 @@ if(!empty($_GET['qg_nome']) && !empty($_GET['qg_nome']) && !empty($_GET['qg_cep'
                         //'cargo' 			=> $_GET['qg_cargo'], 
                         'salario_pretencao' => $_GET['qg_pretsal'], 
                         'salario_ultimo' 	=> $_GET['qg_ultsal'], 
-                        'experiencia' 		=> $_GET['qg_memo2'], 
+                        'experiencia' 		=> $qg_memo2, 
                         'parentes' 			=> $_GET['qg_tempar'],
                         'trabalhou_fpa' 	=> $_GET['qg_trabal'], 
 
@@ -81,7 +87,7 @@ if(!empty($_GET['qg_nome']) && !empty($_GET['qg_nome']) && !empty($_GET['qg_cep'
                         'grupo' 			=> $_GET['qg_grupo']));
 
 		foreach($arguments["cadastra_curriculo"] as $key=>$value){
-			$arguments["cadastra_curriculo"][$key] = urldecode($value);
+			//$arguments["cadastra_curriculo"][$key] = urldecode($value);
 		}	  
 
     $result = new wsTrabalheConosco();

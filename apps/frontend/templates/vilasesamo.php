@@ -121,8 +121,8 @@
   </head>
   <body>
     <!--Pular navegação-->
-    <a href="#content" aria-label="pular o topo e ir direto para o conteudo" class="ac-pular" tabindex="2">pular começo</a>
-    
+    <a href="#content" aria-label="pular Menu principal e ir direto para o conteudo" class="ac-pular" tabindex="2">pular começo</a>
+
     <!-- header -->
     <header class="navbar navbar-inverse navbar-fixed-top">
       <!--div class="navbar-inner topo-cmais">
@@ -170,7 +170,7 @@
             
             <!--form-->
             <form class="form-search" action="http://cmais.com.br/vilasesamo/busca" method="get">
-              <input type="text" class="input-medium search-query" value="Encontre no site Vila Sésamo" onfocus="this.value='';" title="Encontre no site" name="term" accesskey="Ctrl+b" >
+              <input type="text" class="input-large search-query" value="Encontre no site Vila Sésamo" onfocus="this.value='';" title="Encontre no site" name="term" accesskey="Ctrl+b" >
               <button type="submit" class="icones-sprite-menu icone-busca" title="buscar no site vila sesamo" aria-hidden="true"></button>
             </form>
             <!--/form-->
@@ -344,7 +344,6 @@
     </script>
     <?php echo $noscript; ?>
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media.css" type="text/css" />
-
     
        
   </body>

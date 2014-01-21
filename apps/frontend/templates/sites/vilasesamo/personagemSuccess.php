@@ -20,7 +20,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
  <!--Explicação acessibilidade-->
  <h1 tabindex="0" class="ac-explicacao">
   <?php echo $section->getDescription(); ?>
-  
+ </h1> 
   
   <section class="filtro row-fluid">
     
@@ -82,10 +82,10 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <!--texto personagem-->
             <div class="descritivo">
               <article>
-                <h2 aria-hidden="true" tabindex="-1"><?php echo $section->getTitle() ?></h2>
+                <h3 aria-hidden="true" tabindex="-1"><?php echo $section->getTitle() ?></h3>
                 <p><?php echo html_entity_decode($displays["sobre-a-personagem"][0]->Asset->AssetContent->render()) ?></p>
                 <p><?php //echo $section->getDescription() ?></p>
-              <article>
+              </article>
             </div>
             <!--/texto personagem-->
               
@@ -250,7 +250,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   <?php echo $noscript; ?>
   <script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script>
   <?php echo $noscript; ?>
-  <script src="http://172.20.16.219/portal/js/vilasesamo2/internas-isotope.js"></script>
+  <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
   <?php echo $noscript; ?>
   <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script> 
   <?php echo $noscript; ?>

@@ -10,16 +10,16 @@
 		$service = "insere_curso";
 		$arguments = array('insere_curso' 
 												=> array('cod_curriculo'	=> $_GET['qg_curric'], 
-	                                 'entidade' 		=> $_GET['qm_entidad'],
+	                                 'entidade' 		=> urldecode($_GET['qm_entidad']),
 	                                 'data' 				=> $_GET['qm_data'],
 	                                 'cod_curso' 		=> $_GET['qm_curso'],
 	                                 'cod_tipo' 		=> $_GET['qm_tcurso'],
 	                                 'cod_escolar' 	=> $_GET['qm_escolar'],
-	                                 'descricao' 		=> $qm_dscout));
+	                                 'descricao' 		=> urldecode($qm_dscout)));
 	  
 		
 		foreach($arguments["insere_curso"] as $key=>$value){
-			$arguments["insere_curso"][$key] = urldecode($value);
+			//$arguments["insere_curso"][$key] = urldecode($value);
 		}	  
 	  
 	  $acao = new wsTrabalheConosco();

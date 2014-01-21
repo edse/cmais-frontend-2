@@ -1,3 +1,4 @@
+<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"; ?>
 <?php
   /*
    * "BRINQUE TAMBÉM COM"
@@ -116,9 +117,9 @@
   <?php if($see_also): ?>
   
   <!--relacionados-->  
-  <section class="relacionados">
+  <section class="relacionados" aria-label="Brinque também com: Você está entrando na listinha de brincadeiras relacionadas com 4 itens" tabindex="0">
     
-    <h2>Brinque também com:</h2>
+    <h2 aria-hidden="true" tabindex="-1">Brinque também com:</h2>
     
     <!--carrossel-->
     <div id="carrossel-interna">
@@ -126,7 +127,7 @@
         <div class="slider">
           <div class="slider-mask-wrap">
             <div class="slider-mask">
-              <ul class="slider-target">
+              <ul class="slider-target" aria-hidden="true" tabindex="-1">
                 
                 <?php if($campaign): ?>
                   <?php if(count($see_also_by_campaign) > 0): ?>
@@ -139,9 +140,30 @@
                             break;
                           }
                         }
+                        $preview = $d->retriveRelatedAssetsByRelationType('Preview');
+                        if($preview):
+                          if(count($preview)>0):
+                            $decricaoImagem = $preview[0]->AssetImage->getHeadline(); 
+                          else:
+                            switch($assetSection->getSlug()){
+                                case "videos":
+                                  if($d->AssetVideo->getHeadline() != "" )
+                                    $decricaoImagem = $d->AssetVideo->getHeadline();
+                                  else  
+                                    $decricaoImagem = "Desculpe, a imagem esta sem descrição mas o vídeo é muito legal, assista-o!";
+                                break;
+                                case "jogos":
+                                  $decricaoImagem = "Desculpe, a imagem esta sem descrição mas o jogo é muito legal, jogue-o!";
+                                break;
+                                case "atividades":
+                                  $decricaoImagem = "Desculpe, a imagem esta sem descrição mas a atividade é muito legal, brinque com ela!";
+                                break;
+                              }  
+                          endif; 
+                        endif; 
                       ?>
                       <li class="<?php echo $assetSection->getSlug(); ?>">
-                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
                           <?php if($d->AssetType->getSlug() == "video"): ?>
                             <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                           <?php else: ?>
@@ -171,9 +193,30 @@
                           }
                           $assetID[] = $d->getId();
                           
+                          $preview = $d->retriveRelatedAssetsByRelationType('Preview');
+                          if($preview):
+                            if(count($preview)>0):
+                              $decricaoImagem = $preview[0]->AssetImage->getHeadline(); 
+                            else:
+                              switch($assetSection->getSlug()){
+                                  case "videos":
+                                    if($d->AssetVideo->getHeadline() != "" )
+                                      $decricaoImagem = $d->AssetVideo->getHeadline();
+                                    else  
+                                      $decricaoImagem = "Desculpe, a imagem esta sem descrição mas o vídeo é muito legal, assista-o!";
+                                  break;
+                                  case "jogos":
+                                    $decricaoImagem = "Desculpe, a imagem esta sem descrição mas o jogo é muito legal, jogue-o!";
+                                  break;
+                                  case "atividades":
+                                    $decricaoImagem = "Desculpe, a imagem esta sem descrição mas a atividade é muito legal, brinque com ela!";
+                                  break;
+                                }  
+                            endif; 
+                          endif; 
                         ?>
                       <li class="<?php echo $assetSection->getSlug(); ?>">
-                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
                           <?php if($d->AssetType->getSlug() == "video"): ?>
                             <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                           <?php else: ?>
@@ -204,9 +247,31 @@
                               }
                             }
                             $assetID[] = $d->getId();
+                            
+                            $preview = $d->retriveRelatedAssetsByRelationType('Preview');
+                            if($preview):
+                              if(count($preview)>0):
+                                $decricaoImagem = $preview[0]->AssetImage->getHeadline(); 
+                              else:
+                                switch($assetSection->getSlug()){
+                                    case "videos":
+                                      if($d->AssetVideo->getHeadline() != "" )
+                                        $decricaoImagem = $d->AssetVideo->getHeadline();
+                                      else  
+                                        $decricaoImagem = "Desculpe, a imagem esta sem descrição mas o vídeo é muito legal, assista-o!";
+                                    break;
+                                    case "jogos":
+                                      $decricaoImagem = "Desculpe, a imagem esta sem descrição mas o jogo é muito legal, jogue-o!";
+                                    break;
+                                    case "atividades":
+                                      $decricaoImagem = "Desculpe, a imagem esta sem descrição mas a atividade é muito legal, brinque com ela!";
+                                    break;
+                                  }  
+                              endif; 
+                            endif; 
                           ?>
                           <li class="<?php echo $assetSection->getSlug(); ?>">
-                            <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                            <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
                               <?php if($d->AssetType->getSlug() == "video"): ?>
                                 <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                               <?php else: ?>
@@ -232,8 +297,31 @@
                       <?php foreach($see_also_by_section as $k=>$d): ?>
                         <?php if(!in_array($d->getId(), $assetID)): ?> 
                           <?php $assetID[] = $d->getId(); ?>
+                          <?php
+                          $preview = $d->retriveRelatedAssetsByRelationType('Preview');
+                          if($preview):
+                            if(count($preview)>0):
+                              $decricaoImagem = $preview[0]->AssetImage->getHeadline(); 
+                            else:
+                              switch($section->getSlug()){
+                                  case "videos":
+                                    if($d->AssetVideo->getHeadline() != "" )
+                                      $decricaoImagem = $d->AssetVideo->getHeadline();
+                                    else  
+                                      $decricaoImagem = "Desculpe, a imagem esta sem descrição mas o vídeo é muito legal, assista-o!";
+                                  break;
+                                  case "jogos":
+                                    $decricaoImagem = "Desculpe, a imagem esta sem descrição mas o jogo é muito legal, jogue-o!";
+                                  break;
+                                  case "atividades":
+                                    $decricaoImagem = "Desculpe, a imagem esta sem descrição mas a atividade é muito legal, brinque com ela!";
+                                  break;
+                                }  
+                            endif; 
+                          endif; 
+                          ?>
                             <li class="<?php echo $section->getSlug(); ?>">
-                              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+                              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
                                 <?php if($d->AssetType->getSlug() == "video"): ?>
                                   <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                                 <?php else: ?>
@@ -307,4 +395,6 @@ if(navigator.appName!='Microsoft Internet Explorer')
   }, false);
   //carrossel personagens redraw pra tablet e celular home
 }
+
 </script>
+<?php echo $noscript; ?>

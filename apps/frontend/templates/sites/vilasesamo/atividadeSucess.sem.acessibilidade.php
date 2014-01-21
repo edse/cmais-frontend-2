@@ -1,4 +1,5 @@
-<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"; ?>
+<?php use_helper('I18N', 'Date') ?>
+
 <?php
   /*
    * Pega a campanha (seção filha de "campanhas") e as categorias (seçao filha de "categorias") as quais o asset pertence
@@ -25,29 +26,22 @@
       }
     }
   }
-     
 ?>
+
+
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-<?php echo $noscript; ?>
 <script src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
-<?php echo $noscript; ?>
 <script src="http://cmais.com.br/portal/js/hammer.min.js" type="text/javascript"></script>
-<?php echo $noscript; ?>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
-<?php echo $noscript; ?>
-<script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/paiseeducadores.js"></script>
-<?php echo $noscript; ?>
 <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
-<?php echo $noscript; ?>
 
 <script>
-  $("body").addClass("interna jogos");
+  $("body").addClass("interna atividades");
 </script>
-<?php echo $noscript; ?>
 
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -55,21 +49,16 @@
 
 <!--content-->
 <div id="content">
-  <h1 tabindex="0" class="ac-explicacao">
-    Você está na jogo <?php echo $asset->getTitle() ?>
-  </h1>
   
   <!--section -->
   <section class="filtro row-fluid">
-    <h1 tabindex="0" class="ac-explicacao">
-      Você está na atividade <?php echo $asset->getTitle() ?>
-    </h1>
-    <h1>
+    
+    <h1 class="back-page">
       <i class="icones-sprite-interna icone-atividades-grande"></i>
       <?php echo $section->getTitle() ?>
-      <a class="todos-assets" title="voltar para todas jogos" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" target="_self" >
-        <i class="icones-setas icone-voltar-jogos"></i>
-        <p>todos os jogos</p>
+      <a class="todos-assets" title="voltar para todas atividades" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" target="_self" >
+        <i class="icones-setas icone-voltar-atividades"></i>
+        <p>todas as atividades</p>
       </a>
     </h1>
     
@@ -87,7 +76,7 @@
       <p>
       <?php if(isset($categories)): ?>
         <?php if(count($categories) > 0): ?>
-          <?php
+          <?php      
             foreach($categories as $c) {
               if($c->getIsHomepage() == 1) { // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando".
                 $seloTitle = $c->getTitle(); // pega o título da secão filha
@@ -111,24 +100,79 @@
       
       <?php if(isset($asset)): ?>
       <div class="asset">
-        <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+        <?php $related = $asset->retriveRelatedAssetsByRelationType("Preview"); ?>
+        <?php $relatedMore = $asset->retriveRelatedAssetsByRelationType("Download"); ?>
+        
+        <img class="picture" src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
+        <div class="paginas">
+          
+          <?php if(isset($relatedMore)): ?>
+            <?php if(count($relatedMore) > 0): ?>
+              <span class="paginador">veja também:</span>
+              <a href="javascript:;" class="changePicture" title="página 1">
+                <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
+                <input id="baixar-hidden" type="hidden" value="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>">
+                <input id="press-hidden" type="hidden" value="<?php echo $related[0]->retriveImageUrlByImageUsage("original"); ?>">
+              </a>
+              <?php foreach($relatedMore as $k=>$p): ?>
+                <a href="javascript:;" class="changePicture" title="página <?php echo $k+2 ?>">
+                  <img src="<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
+                  <input id="baixar-hidden" type="hidden" value="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("original") ?>">
+                  <input id="press-hidden" type="hidden" value="<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("original"); ?>">
+                </a>
+              <?php endforeach; ?>
+                
+            <?php endif ?>
+          <?php endif ?>  
+        </div> 
+         
+        <div>
+          <a class="option-assets download" href="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>" title="Baixar">
+            <i class="icones-sprite-interna icone-baixar-roxo"></i>
+            <span>Baixar</span>
+          </a>
+          
+           
+          <!--a class="option-assets" href="javascript:printDiv('div0')" title="Imprimir" target="_blank"-->
+          <a href="javascript:printDiv('div0')" class="option-assets print" datasrc="<?php echo $related[0]->retriveImageUrlByImageUsage("original"); ?>" title="imprimir">
+            <i class="icones-sprite-interna icone-imprimir-roxo"></i>
+            <span>Imprimir</span>
+            <div id="div0" style="display: none;page-break-after:always;">
+              <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("original")?>" style="width:95%">
+            </div>
+          </a>
+          
+        </div>
       </div>
       <?php endif; ?>
-      
+      <!--IFRAME PARA IMPRESSAO EM IE -->
+      <iframe id="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
+      <!--/IFRAME PARA IMPRESSAO EM IE -->
     </div>
+    <!--/conteudo-asset-->
+    
   </section>
   <!--/section-->
   
   <?php include_partial_from_folder('sites/vilasesamo', 'global/brinque-tambem-com', array("site" => $site, "section" => $section, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
-   
+  
   <?php //include_partial_from_folder('sites/vilasesamo', 'global/form-campanha', array("site" => $site, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
 
   <?php include_partial_from_folder('sites/vilasesamo', 'global/para-os-pais', array("site" => $site, "asset" => $asset, "categories" => $categories, "uri" => $uri)) ?>
 
 </div>
 <!--/content-->
+
 <script>
-$(document).find('object').before('<span class="sorryFlash" aria-label="Desculpe amiguinho, esse jogo esta sem acessibilidade mas você pode chamar o papai e a mamãe ou um amiguinho pra vocês brincarem juntos, é divertido ou continue navegando e descobrindo as várias formas de se divertir! Até mais!" tabindex="0"></span>').find('embed').after('<noembed>esse jogo usa plugin flash</noembed>');
-$('.sorryFlash').focus();
+$('.changePicture').click(function(){
+  var picture = $(this).find('img').attr('src');
+  var desc = $(this).find('img').attr('alt');
+  var download = $(this).find('#baixar-hidden').attr('value');
+  var press = $(this).find('#press-hidden').attr('value');
+  
+  $('.picture').attr('src', picture).attr('alt', desc);
+  $('.option-assets.download').attr('href', download);
+  $('.option-assets.print').attr('datasrc', press);
+  $('#div0 img').attr('src', press);
+});
 </script>
-<?php echo $noscript ?>  

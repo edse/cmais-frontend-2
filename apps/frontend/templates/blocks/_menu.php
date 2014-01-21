@@ -192,7 +192,7 @@
         <!-- /Menu ao Vivo -->
 
       </ul>
-      <?php if($site->getSlug()=="tvcultura" && $section->getSlug()=="homepage"):?>
+      <?php if(isset($section) && $site->getSlug()=="tvcultura" && $section->getSlug()=="homepage"):?>
         <!--redes sociais-->
         <div id="redesnovo">
           <a href="javascript:;" id="controle-remoto" class="redesB" title="controle-remoto" target="_blank"></a>

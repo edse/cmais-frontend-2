@@ -36,10 +36,8 @@ if(count($bs) > 0){
 } 	
 	
 ?>
-<noscript>
-	<meta http-equiv="refresh" content="250" />
-</noscript>
-<meta http-equiv="refresh" content="18000" />
+
+<script>setTimeout("location.reload(true);",360000);</script>
 		
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/jornalismo-novo2013.css" type="text/css" />
 
@@ -532,13 +530,13 @@ $(function(){
         $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="http://www.der.sp.gov.br/img_cameras/name9.jpg">Padre Manoel da Nobrega - Km 292</a></li>');
         $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="http://www.der.sp.gov.br/img_cameras/name2.jpg">Padre Manoel da Nobrega - Km 323</a></li>');
         $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="http://www.der.sp.gov.br/img_cameras/name13.jpg">Padre Manoel da Nobrega - Km 337</a></li>');
-        $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="http://www.der.sp.gov.br/img_cameras/name3.jpg">Padre Manoel da Nobrega - Km 344</a></li>');
+        //$('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="http://www.der.sp.gov.br/img_cameras/name3.jpg">Padre Manoel da Nobrega - Km 344</a></li>');
 
 
 				$('#select-estradas-sp').append('<option value="http://www.der.sp.gov.br/img_cameras/name9.jpg">Padre Manoel da Nobrega - Km 292</option>');
 				$('#select-estradas-sp').append('<option value="http://www.der.sp.gov.br/img_cameras/name2.jpg">Padre Manoel da Nobrega - Km 323</option>');
 				$('#select-estradas-sp').append('<option value="http://www.der.sp.gov.br/img_cameras/name13.jpg">Padre Manoel da Nobrega - Km 337</option>');
-				$('#select-estradas-sp').append('<option value="http://www.der.sp.gov.br/img_cameras/name3.jpg">Padre Manoel da Nobrega - Km 344</option>');
+				//$('#select-estradas-sp').append('<option value="http://www.der.sp.gov.br/img_cameras/name3.jpg">Padre Manoel da Nobrega - Km 344</option>');
 
         interior();
       }
@@ -554,17 +552,20 @@ $(function(){
         $.each(data, function(i,data){
           var a = data.title.substring(5,data.title.length);
           //Ayrton Senna
-          if(a.indexOf("Ayrton Senna")>=0){
-            if(ayrtonsenna==0){
-              //$("#img-ayrtonsenna").attr('src', data.src);
-              $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="'+data.src+'" selected="selected">'+a+'</a></li>');
-            }
-            else
-              $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="'+data.src+'">'+a+'</a></li>');
-            ayrtonsenna++;
-          }
-
-          $('#select-estradas-sp').append('<option value="'+data.src+'">'+data.title+'</option>');
+          
+          if(a != "Ayrton Senna / Km 15"){
+	          if(a.indexOf("Ayrton Senna")>=0){
+	            if(ayrtonsenna==0){
+	              //$("#img-ayrtonsenna").attr('src', data.src);
+	              $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="'+data.src+'" selected="selected">'+a+'</a></li>');
+	            }
+	            else
+	              $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="'+data.src+'">'+a+'</a></li>');
+	            ayrtonsenna++;
+	          }
+	
+	          $('#select-estradas-sp').append('<option value="'+data.src+'">'+data.title+'</option>');
+	        }
         });
         
         $('#form-estradas-sp .dk_options_inner').append('<li class=""><a data-dk-dropdown-value="http://www.der.sp.gov.br/img_cameras/name25.jpg">Raposo Tavares - Km 12,5</a></li>');
