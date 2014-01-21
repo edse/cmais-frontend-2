@@ -119,13 +119,13 @@
           <?php if(isset($relatedMore)): ?>
             <?php if(count($relatedMore) > 0): ?>
               <span class="paginador">veja também:</span>
-              <a href="javascript:;" class="changePicture" title="página 1"  aria-label="página 1 - <?php echo $related[0]->AssetImage->getHeadLine(); ?>"  tabindex="0">
+              <a href="#" class="changePicture" title="página 1"  aria-label="página 1 - <?php echo $related[0]->AssetImage->getHeadLine(); ?>"  tabindex="0">
                 <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
                 <input id="baixar-hidden" type="hidden" value="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $related[0]->retriveImageUrlByImageUsage("original") ?>">
                 <input id="press-hidden" type="hidden" value="<?php echo $related[0]->retriveImageUrlByImageUsage("original"); ?>">
               </a>
               <?php foreach($relatedMore as $k=>$p): ?>
-                <a href="javascript:;" class="changePicture" title="página <?php echo $k+2 ?>" aria-label="página <?php echo $k+2 ?> - <?php echo $relatedMore[$k]->AssetImage->getHeadLine(); ?>"  tabindex="0">
+                <a href="#" class="changePicture" title="página <?php echo $k+2 ?>" aria-label="página <?php echo $k+2 ?> - <?php echo $relatedMore[$k]->AssetImage->getHeadLine(); ?>"  tabindex="0">
                   <img src="<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("image-14-b") ?>" alt="<?php echo $asset->getTitle() ?>"  />
                   <input id="baixar-hidden" type="hidden" value="http://cmais.com.br/actions/vilasesamo/download_image.php?file=<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("original") ?>">
                   <input id="press-hidden" type="hidden" value="<?php echo $relatedMore[$k]->retriveImageUrlByImageUsage("original"); ?>">
@@ -156,7 +156,7 @@
       </div>
       <?php endif; ?>
       <!--IFRAME PARA IMPRESSAO EM IE -->
-      <iframe id="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
+      <iframe id="print_frame" title="" width="0" height="0" frameborder="0" src="about:blank"></iframe>
       <!--/IFRAME PARA IMPRESSAO EM IE -->
     </div>
     <!--/conteudo-asset-->
