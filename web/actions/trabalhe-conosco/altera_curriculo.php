@@ -1,10 +1,6 @@
 <?php
 	header('Content-Type: text/html; charset=utf-8');
   
-  ### ALTERA CURRÍCULO
-  //814725288912
-  //04/02/1988
-  
   include_once("wsTrabalheConosco.class.php");
   $service = "altera_curriculo";    
            
@@ -13,6 +9,11 @@
     
 		$qg_pretsal = "";
 		$qg_ultsal = "";
+		
+		$url_completa = urldecode($_SERVER['REQUEST_URI']);
+		$ex = explode("qg_memo2=", $url_completa);
+		$ex1 = explode("&DropDown_qg_tempar", $ex[1]);
+		$qg_memo2 = $ex1[0];
 		
 		if($_GET['qg_pretsal']){
 			$qg_pretsal = str_replace(".", "", $_GET['qg_pretsal']);
@@ -76,10 +77,10 @@
                             //'cargo' 			=> 			$_GET['qg_cargo'], 
                             'salario_pretencao' => $qg_pretsal, 
                             'salario_ultimo' 		=> $qg_ultsal, 
-                            'experiencia' 			=> urldecode($_GET['qg_memo2']), 
+                            //'experiencia' 			=> urldecode($_GET['qg_memo2']), 
+                            'experiencia' 			=> $qg_memo2,
                             'parentes' 					=> $_GET['qg_tempar'],
                             'trabalhou_fpa' 		=> $_GET['qg_trabal'], 
-                            
                             
                             'trabalhou_fpa_de' 	=> $trabalhou_fpa_de,
                             'trabalhou_fpa_ate' => $trabalhou_fpa_ate,

@@ -655,7 +655,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 .voltar-topo span { background:url(../images/voltar-topo.png) no-repeat; width:16px; height:16px; display:block; float:left; }
 .voltar-topo:hover { text-decoration:none; }
 .capa-rodape {  background:#333; border-top:2px solid #d3d3d3; height:470px; }
-#rodape-portal .box-rodape { width:1054px; padding-left:50px; margin:0 auto; height:470px; background:#333; position:relative;  }
+#rodape-portal .box-rodape { width:980px; padding-left:50px; margin:0 auto; height:470px; background:#333; position:relative;  }
 #rodape-portal .box-rodape ul { margin-bottom:25px; }
 #rodape-portal .box-rodape li { text-align:left;  line-height:18px; }
 #rodape-portal .box-rodape .tit { font-weight:bold;font-size: 12px; color:#fff; font-family:Arial, Helvetica, sans-serif; }

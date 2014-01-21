@@ -11,7 +11,7 @@ if(isset($_GET['callback']) && !empty($_GET['qg_curric']) && !empty($_GET['qm_co
 	$arguments = array('altera_curso' 
 											=> array(	 'codigo'					=> 	$_GET['qm_codigo'],
 																 'cod_curriculo'	=> 	$_GET['qg_curric'], 
-                                 'entidade' 			=> 	$_GET['qm_entidad'],
+                                 'entidade' 			=> 	urldecode($_GET['qm_entidad']),
                                  'data' 					=> 	$_GET['qm_data'],
                                  'cod_curso' 			=> 	$_GET['qm_curso'],
                                  'cod_tipo' 			=> 	$_GET['qm_tcurso'],

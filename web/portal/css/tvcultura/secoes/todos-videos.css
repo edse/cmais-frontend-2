@@ -23,7 +23,7 @@
 .paginacao ul li {float:left; width:17px; text-align:center;}
 .paginacao ul li a {background:none; color:#fff; font-size:12px; font-weight:bold; margin:0;}
 .paginacao ul li a.ativo,
-.paginacao ul li a:hover {color:#ff6633;}
+.paginacao ul li a:hover {color:#2c9700;}/*#ff6633*/
 .paginacao .btn-prox { background-position: 0 -72px; float:left;}
 .paginacao .btn-ante {float:left;}
 .paginacao .centraliza {width:365px; margin:0 auto;}
@@ -33,10 +33,10 @@
 .busca li {margin-bottom:10px; clear:both;}
 .busca li a {font-size:16px;}
 .busca li a:hover,
-.busca li a.ativo {color:#ff6633; text-decoration:none; font-weight:bold;}
+.busca li a.ativo {color:#2c9700; text-decoration:none; font-weight:bold;}/*#ff6633*/
 
 .busca form {max-width:665px; float:left;}
-.busca form .busque span {font-weight:bold; color:#ff6633;}
+.busca form .busque span {font-weight:bold; color:#2c9700;}/*#ff6633*/
 .busca form label,
 .busca form input,
 .busca form a,
@@ -44,17 +44,17 @@
 .busca form select,
 .busca form input {height:20px; border:1px solid #abadb3;}
 .busca form select {height:22px; line-height:22px; color:#333}
-.busca form .buscar { background:#ff6633; color:#fff;  text-transform:uppercase; font-weight:bold; margin-left:0; border:none; height:22px; width:71px;}
+.busca form .buscar { background:#2c9700; color:#fff;  text-transform:uppercase; font-weight:bold; margin-left:0; border:none; height:22px; width:71px;}/*#ff6633*/
 .busca form label {margin-top:15px; clear:both;}
 .busca form select {clear:both; margin-bottom:5px;}
 .busca form .tema { width:170px;}
-.busca form .busque {color:#ff6633; margin:5px 0 0 0;  } 
+.busca form .busque {color:#2c9700; margin:5px 0 0 0;  } /*#ff6633*/
 .busca form .campo-busca {padding-left:5px; border-right: none;}
 
 .abas li { margin-right:20px;}
 #galeria-videos .blocos,
 #menu-rodape .abas-conteudo { min-height:734px; }
-#menu-rodape .blocos a {color: #0000CC;text-align: left!important;float: left;}
+#menu-rodape .blocos a {color: #2c9700;text-align: left!important;float: left;}/*color:#0000CC*/
 .gsc-tabHeader.gsc-tabhInactive {background: #fff;color: #666;border-left: 0;border-right: 0;border-top: 0;float: left;}
 .gsc-tabHeader.gsc-tabhActive {
 border-color: #FF9900;

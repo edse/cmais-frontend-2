@@ -30,7 +30,8 @@ a:hover { text-decoration:underline; }
 .sem-margem-r{margin-rightß:0!important}
 .sem-margem-t{margin-top:0!important}
 .sem-margem-b{margin-bottom:0!important}
-.marginTopBottom10{margin:10px 0!important;}
+/* titulo filtro h2 accessmonitor */
+.marginTopBottom10{margin:10px 0!important;color: #fff;text-align: center;text-transform: uppercase;margin: 5px 0 4px 0;overflow: hidden; position: relative; font-size: 16px;line-height: 21px;font-family: 'dinmedium',Arial, Helvetica, sans-serif;}
 .overflow{overflow: hidden;}
 .clearboth{clear: both;}
 /* dinmedium */

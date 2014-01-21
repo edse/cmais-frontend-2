@@ -10,8 +10,8 @@
                               'data_demissao'  => $_GET['ql_dtdemis'],
                               'experiencia'		 => urldecode($_GET['ql_experiencia']),
                               'empresa' 			 => urldecode($_GET['ql_empresa']),
-                              'funcao' 				 => $_GET['ql_funcao'], 
-                              'funcao_inicial' => $_GET['ql_funcini'], 
+                              'funcao' 				 => urldecode($_GET['ql_funcao']), 
+                              'funcao_inicial' => urldecode($_GET['ql_funcini']), 
                           ));
   
 		foreach($arguments["insere_historico"] as $key=>$value){
