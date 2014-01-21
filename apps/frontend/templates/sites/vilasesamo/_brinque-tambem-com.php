@@ -395,11 +395,6 @@ if(navigator.appName!='Microsoft Internet Explorer')
   }, false);
   //carrossel personagens redraw pra tablet e celular home
 }
-var quant=0
-$('#carrossel-interna li').each(function(){
-  quant += 1;
-  if(quant > 4) $(this).find('a').attr('aria-hidden', 'true').attr('tabindex','-1');
-});
-$('#carrossel-interna').attr('aria-label', 'você está estrando no carrossel de atividades e jogos com'+quant+' itens.');
+
 </script>
 <?php echo $noscript; ?>
