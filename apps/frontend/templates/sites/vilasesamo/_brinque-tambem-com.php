@@ -117,7 +117,7 @@
   <?php if($see_also): ?>
   
   <!--relacionados-->  
-  <section class="relacionados" aria-label="Brinque também com: Você está entrando na listinha de brincadeiras relacionadas com 4 itens" tabindex="0">
+  <section class="relacionados" >
     
     <h2 aria-hidden="true">Brinque também com:</h2>
     
@@ -400,5 +400,6 @@ $('#carrossel-interna li').each(function(){
   quant += 1;
   if(quant > 4) $(this).find('a').attr('aria-hidden', 'true').attr('tabindex','-1');
 });
+$('.relacionados').attr('aria-label','Brinque também com: Você está entrando na listinha de brincadeiras relacionadas com 4 itens').attr('tabindex','0');
 </script>
 <?php echo $noscript; ?>

@@ -168,15 +168,13 @@ r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilit
     }
     $('.play').click(function(){playVideo()});
     $('.stop').click(function(){
-      stopVideo()
-      $('.play').attr('aria-label','Você parou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
-      $('.play').focus();
+      stopVideo();
+      $('.play').attr('aria-label','Você parou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0').focus(); 
       
     });
     $('.pause').click(function(){
-      pauseVideo()
-      $('.play').attr('aria-label','Você pausou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
-      $('.play').focus();
+      pauseVideo();
+      $('.play').attr('aria-label','Você pausou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0').focus(); 
     });
 </script>
 <?php echo $noscript ?>
