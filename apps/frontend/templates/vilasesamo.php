@@ -170,7 +170,7 @@
             
             <!--form-->
             <form class="form-search" action="http://cmais.com.br/vilasesamo/busca" method="get">
-              <input type="text" class="input-medium search-query" value="Encontre no site Vila Sésamo" onfocus="this.value='';" title="Encontre no site" name="term" accesskey="Ctrl+b" >
+              <input type="text" class="input-large search-query" value="Encontre no site Vila Sésamo" onfocus="this.value='';" title="Encontre no site" name="term" accesskey="Ctrl+b" >
               <button type="submit" class="icones-sprite-menu icone-busca" title="buscar no site vila sesamo" aria-hidden="true"></button>
             </form>
             <!--/form-->
