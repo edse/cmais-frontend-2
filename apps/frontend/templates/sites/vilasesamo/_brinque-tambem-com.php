@@ -396,10 +396,15 @@ if(navigator.appName!='Microsoft Internet Explorer')
   //carrossel personagens redraw pra tablet e celular home
 }
 var quant=0
+var item = "";
 $('#carrossel-interna li').each(function(){
   quant += 1;
   if(quant > 4) $(this).find('a').attr('aria-hidden', 'true').attr('tabindex','-1');
+  if(quant == 1)
+    item="item";
+  else
+    item="itens";  
 });
-$('.relacionados').attr('aria-label','Brinque também com: Você está entrando na listinha de brincadeiras relacionadas com 4 itens').attr('tabindex','0');
+$('.relacionados').attr('aria-label','Brinque também com: Você está entrando na listinha de brincadeiras relacionadas com '+ quant +' '+item).attr('tabindex','0');
 </script>
 <?php echo $noscript; ?>
