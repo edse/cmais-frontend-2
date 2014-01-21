@@ -171,14 +171,16 @@ r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilit
       stopVideo();
       $('.play').attr('aria-label','Você parou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
       setTimeout(function(){
-        $('.play').focus();
-      },1000);
+        $('.play').before('<span class="stopado" aria-label="Você parou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo" tabindex="0"></span>');
+        $('.stopado').focus();
+      },500);
     });
     $('.pause').click(function(){
       pauseVideo();
       $('.play').attr('aria-label','Você pausou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
       setTimeout(function(){
-        $('.play').focus();
+        $('.play').before('<span class="pausado" aria-label="Você pausou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo" tabindex="0"></span>');
+        $('.pausado').focus();
       },1000);
     });
 </script>
