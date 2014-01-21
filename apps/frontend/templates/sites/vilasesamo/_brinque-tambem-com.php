@@ -127,7 +127,7 @@
         <div class="slider">
           <div class="slider-mask-wrap">
             <div class="slider-mask">
-              <ul class="slider-target" aria-hidden="true" tabindex="-1">
+              <ul class="slider-target">
                 
                 <?php if($campaign): ?>
                   <?php if(count($see_also_by_campaign) > 0): ?>
