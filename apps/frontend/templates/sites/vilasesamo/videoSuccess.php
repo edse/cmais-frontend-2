@@ -169,6 +169,7 @@ r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilit
     $('.play').click(function(){playVideo()});
     $('.stop').click(function(){
       stopVideo();
+      $('.stopado,.pausado').remove();
       $('.play').attr('aria-label','Você parou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
       $('.play').before('<span class="stopado" aria-label="Você parou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo" tabindex="0"></span>');
       setTimeout(function(){
@@ -177,6 +178,7 @@ r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilit
     });
     $('.pause').click(function(){
       pauseVideo();
+      $('.stopado,.pausado').remove();
       $('.play').attr('aria-label','Você pausou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
       $('.play').before('<span class="pausado" aria-label="Você pausou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo" tabindex="0"></span>');
       setTimeout(function(){
