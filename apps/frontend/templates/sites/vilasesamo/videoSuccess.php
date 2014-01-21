@@ -170,18 +170,12 @@
     $('.stop').click(function(){
       stopVideo()
       $('.stop').before('<span class="stopado" aria-label="Você parou a reprodução amiguinho, para iniciar novamente aperte enter no link Iniciar o vídeo"></span>')
-      setTimeout(function(){
-        $('.stopado').remove();
-        $('.stop').focus();
-      },3000);
+
     });
     $('.pause').click(function(){
       pauseVideo()
       $('.pause').before('<span class="pausado" aria-label="Você pausou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo"></span>')
-      setTimeout(function(){
-        $('.pausado').remove();
-        $('.play').focus();
-      },3000);
+
     });
 </script>
 <?php echo $noscript ?>
