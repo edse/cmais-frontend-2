@@ -177,10 +177,10 @@
     });
     $('.pause').click(function(){
       pauseVideo()
-      #('.pause').before('<span class="pausado" aria-label="Você pausou a reprodução amiguinho, para iniciar novamente aperte novamente o link pausar o vídeo">')
+      #('.pause').before('<span class="pausado" aria-label="Você pausou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo">')
       setTimeout(function(){
         $('.pausado').remove();
-        $('.pause').focus();
+        $('.play').focus();
       },3000);
     });
 </script>
