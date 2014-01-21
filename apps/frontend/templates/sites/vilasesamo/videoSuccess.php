@@ -104,7 +104,8 @@
       
       <?php if(isset($asset)): ?>
       <div class="asset">
-        <iframe width="900" height="675" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+        <div id="player"></div>
+        <!--iframe width="900" height="675" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe-->
       </div>
       <?php endif; ?>
       
@@ -122,3 +123,38 @@
 
 </div>
 <!--/content-->
+<script>
+    //Load player api asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var done = false;
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '900',
+          width: '675',
+          videoId: <?php echo $asset->AssetVideo->getYoutubeId() ?>,
+          events: {
+            'onReady': onPlayerReady,
+            //'onStateChange': onPlayerStateChange
+          }
+        });
+    }
+    function onPlayerReady(evt) {
+        evt.target.playVideo();
+    }
+    function onPlayerStateChange(evt) {
+        if (evt.data == YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo, 6000);
+            done = true;
+        }
+    }
+    function stopVideo() {
+        player.stopVideo();
+    }
+</script>
+<?php echo $noscript ?>
+  
+
