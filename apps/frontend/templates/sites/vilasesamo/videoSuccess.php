@@ -170,17 +170,13 @@ r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilit
     $('.stop').click(function(){
       stopVideo()
       $('.play').attr('aria-label','Você parou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
-      setTimeout(function(){
-        $('.play').focus();
-      },500);
+      $('.play').focus();
       
     });
     $('.pause').click(function(){
       pauseVideo()
       $('.play').attr('aria-label','Você pausou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
-      setTimeout(function(){
-        $('.play').focus();
-      },500);
+      $('.play').focus();
     });
 </script>
 <?php echo $noscript ?>
