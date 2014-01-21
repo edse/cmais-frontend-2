@@ -136,8 +136,8 @@
     var player;
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          height: '900',
-          width: '675',
+          height: '675',
+          width: '900',
           videoId: '<?php echo $asset->AssetVideo->getYoutubeId() ?>',
           events: {
             'onReady': onPlayerReady,
