@@ -52,7 +52,9 @@
 
 <!--content-->
 <div id="content">
-  
+  <h1 tabindex="0" class="ac-explicacao">
+    Você está na vídeo <?php echo $asset->getTitle() ?>
+  </h1>
   <!--section -->
   <section class="filtro row-fluid">
     
