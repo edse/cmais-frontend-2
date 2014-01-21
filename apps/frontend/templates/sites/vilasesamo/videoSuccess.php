@@ -1,3 +1,4 @@
+<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"; ?>
 <?php
   /*
    * Pega a campanha (seção filha de "campanhas") e as categorias (seçao filha de "categorias") as quais o asset pertence
@@ -29,23 +30,31 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
+<?php echo $noscript ?>
 <script src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
+<?php echo $noscript ?>
 <script src="http://cmais.com.br/portal/js/hammer.min.js" type="text/javascript"></script>
+<?php echo $noscript ?>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
+<?php echo $noscript ?>
 <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
-
+<?php echo $noscript ?>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/paiseeducadores.js"></script>
+<?php echo $noscript; ?>
 <script>
   $("body").addClass("interna videos");
 </script>
-
+<?php echo $noscript ?>
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
 
 <!--content-->
 <div id="content">
-  
+  <h1 tabindex="0" class="ac-explicacao">
+    Você está na vídeo <?php echo $asset->getTitle() ?>
+  </h1>
   <!--section -->
   <section class="filtro row-fluid">
     
@@ -95,7 +104,11 @@
       
       <?php if(isset($asset)): ?>
       <div class="asset">
-        <iframe width="900" height="675" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+        <div id="player"></div>
+        <a href="#" class="play" aria-label="Iniciar o vídeo"></a>
+        <a href="#" class="pause" aria-label="Pausar o vídeo"></a>
+        <a href="#" class="stop" aria-label="Parar o vídeo"></a>
+        <!--iframe width="900" height="675" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe-->
       </div>
       <?php endif; ?>
       
@@ -113,3 +126,50 @@
 
 </div>
 <!--/content-->
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+<!-- script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/youtubeapi.js"></script --> 
+<?php echo $noscript; ?>
+<script>
+    //Load player api asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var done = false;
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '675',
+          width: '900',
+          videoId: '<?php echo $asset->AssetVideo->getYoutubeId() ?>',
+          events: {
+            //'onReady': onPlayerReady,
+            //'onStateChange': onPlayerStateChange
+          }
+        });
+    }
+    function onPlayerReady(evt) {
+        evt.target.playVideo();
+    }
+    function onPlayerStateChange(evt) {
+        if (evt.data == YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo, 6000);
+            done = true;
+        }
+    }
+    function playVideo() {
+        player.playVideo();
+    }
+    function stopVideo() {
+        player.stopVideo();
+    }
+    function pauseVideo() {
+        player.pauseVideo();
+    }
+    $('.play').click(function(){playVideo()});
+    $('.stop').click(function(){stopVideo()});
+    $('.pause').click(function(){pauseVideo()});
+</script>
+<?php echo $noscript ?>
+  
+
