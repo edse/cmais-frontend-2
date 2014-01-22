@@ -142,21 +142,9 @@ r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilit
           height: '675',
           width: '900',
           videoId: '<?php echo $asset->AssetVideo->getYoutubeId() ?>',
-          events: {
-            //'onReady': onPlayerReady,
-            //'onStateChange': onPlayerStateChange
-          }
         });
     }
-    function onPlayerReady(evt) {
-        evt.target.playVideo();
-    }
-    function onPlayerStateChange(evt) {
-        if (evt.data == YT.PlayerState.PLAYING && !done) {
-            setTimeout(stopVideo, 6000);
-            done = true;
-        }
-    }
+
     function playVideo() {
         player.playVideo();
     }
