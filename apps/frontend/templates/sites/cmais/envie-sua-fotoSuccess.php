@@ -8,13 +8,7 @@
     <div id="capa-site">
 
       <!-- BARRA SITE -->
-      <div id="barra-site">
-        <div class="topo-programa">
-          <?php if(isset($program) && $program->id > 0): ?>
-          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
-        </div>
-      </div>
+      <div id="barra-site"></div>
       <!-- /BARRA SITE -->
 
       <!-- MIOLO -->
