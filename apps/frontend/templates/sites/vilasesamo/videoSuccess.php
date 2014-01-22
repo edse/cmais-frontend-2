@@ -78,7 +78,7 @@ r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilit
        * Todas as categorias tem este bloco, mas somente as marcadas como "is homepage" serão consideradas como especiais, tais como "Incluir Brincando" e "Hábitos Saudáveis".
        */
       ?>
-      <p aria-label="Descrição da atividade: <?php echo $asset->getDescription() ?>"  tabindex="0">
+      <p aria-label="Vídeo: <?php echo $asset->getDescription() ?>"  tabindex="0">
       <?php if(isset($categories)): ?>
         <?php if(count($categories) > 0): ?>
           <?php      
@@ -142,21 +142,9 @@ r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilit
           height: '675',
           width: '900',
           videoId: '<?php echo $asset->AssetVideo->getYoutubeId() ?>',
-          events: {
-            //'onReady': onPlayerReady,
-            //'onStateChange': onPlayerStateChange
-          }
         });
     }
-    function onPlayerReady(evt) {
-        evt.target.playVideo();
-    }
-    function onPlayerStateChange(evt) {
-        if (evt.data == YT.PlayerState.PLAYING && !done) {
-            setTimeout(stopVideo, 6000);
-            done = true;
-        }
-    }
+
     function playVideo() {
         player.playVideo();
     }

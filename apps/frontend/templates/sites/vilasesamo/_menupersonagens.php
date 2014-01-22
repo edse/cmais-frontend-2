@@ -12,7 +12,7 @@
          
           <div class="slider-mask-wrap">
             <div class="slider-mask">
-              <ul class="slider-target" accesskey="Ctrl+p" aria-label=" dos personagens Vila Sésamo">
+              <ul class="slider-target" accesskey="p" aria-label=" dos personagens Vila Sésamo">
                 <?php if(isset($personagens)): ?>
                   <?php if(count($personagens) > 0 ): ?>
                     <?php foreach($personagens as $p): ?>
@@ -35,10 +35,10 @@
         </div>  
         <div class="slider-nav">
           <div class="arrow-left arrow personagem">
-            <span title="Back" class="personagens icones-setas icone-car-set-br-esquerda"></span>
+            <span title="Anterior" class="personagens icones-setas icone-car-set-br-esquerda"></span>
           </div>
           <div class="arrow-right arrow personagem">
-            <span title="Next" class="personagens icones-setas icone-car-set-br-direita"></span>
+            <span title="Próximo" class="personagens icones-setas icone-car-set-br-direita"></span>
           </div>
         </div>
       </div>

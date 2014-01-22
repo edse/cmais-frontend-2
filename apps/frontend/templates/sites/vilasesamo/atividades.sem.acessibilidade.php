@@ -14,7 +14,7 @@
 </h1>
 
 <!--content-->
-<div id="content" accesskey="Ctrl+c">
+<div id="content">
 <!--section-->
 <section class="filtro row-fluid">
   <!--span12-->
