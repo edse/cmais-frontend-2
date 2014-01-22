@@ -3,10 +3,15 @@
 
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
+<?php
+$noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página.</noscript>"
+?> 
+
 <script>
   $("body").addClass("interna campanhas categorias");
   
 </script>
+<?php echo $noscript; ?>
 
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
@@ -14,6 +19,11 @@
 
 <!--content-->
 <div id="content">
+  
+  <!--Explicação acessibilidade-->
+	<h1 tabindex="0" class="ac-explicacao">
+	 <?php echo $section->getDescription(); ?>
+	</h1>
   
   <!--section -->
   <section class="filtro row-fluid pais categorias">
@@ -46,27 +56,41 @@
       <?php if($section->getIsHomepage() == 1): // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando". ?>
   
        
-        <div class="container-campanhas">
+        <div class="container-campanhas" tabindex="0" aria-label="<?php echo $displays["selo"][1]->Asset->AssetType->getSlug() ?> <?php echo $displays["selo"][1]->getTitle() ?>. Descrição:  <?php echo $displays['destaque-principal'][0]->getDescription() ?>" tabindex="0""> <!-- Conteúdo iframe-->
           <!-- selo -->
           <?php if(isset($displays['selo'])): ?>
             <?php if(count($displays['selo']) > 0): ?>
               <?php if($displays["selo"][1]->retriveImageUrlByImageUsage("original")): ?>
-                <img class="" src="<?php echo $displays["selo"][1]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $displays["selo"][1]->getTitle() ?>" />
+                <img class="" src="<?php echo $displays["selo"][1]->retriveImageUrlByImageUsage("original") ?>" alt="<?php echo $displays["selo"][1]->getTitle() ?>"/>  <!--/Aqui fala o título do vídeo e a descrição-->
               <?php endif; ?>
             <?php endif; ?>
           <?php endif; ?>
           <!--/selo-->
+          
           <!--destaque-principal-->
           <?php if(isset($displays['destaque-principal'])): ?>
             <?php if(count($displays['destaque-principal']) > 0): ?>    
               
                 <!--video ou imagem-->
                 <?php if($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "video"): ?>
-                <iframe width="300" height="246" src="http://www.youtube.com/embed/<?php echo $displays["destaque-principal"][0]->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+                
+     						 <!-- Inserindo o player para acessibilidade -->   
+								      <div class="asset">
+								        <div id="player" style="margin-top: -160px;"></div>
+								        <a href="#" class="play" aria-label="Iniciar o vídeo"></a>
+								        <a href="#" class="pause" aria-label="Pausar o vídeo"></a>
+								        <a href="#" class="stop" aria-label="Parar o vídeo"></a>
+								      </div>
+								   
+                
+                <!--iframe width="300" height="246" src="http://www.youtube.com/embed/<?php echo $displays["destaque-principal"][0]->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe-->
+                
+                
                 <?php elseif($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "image"): ?>
-                <img class="img-destaque" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" />
+                <img tabindex="0" class="img-destaque" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" />
                 <?php endif; ?>
                 <!--/video ou imagem-->
+                
               <p>  
                 <!--descricao-->    
                 <?php echo $displays['destaque-principal'][0]->getDescription() ?>
@@ -266,3 +290,65 @@
 <?php include_partial_from_folder('sites/vilasesamo', 'global/pagination', array('site' => $site, 'section' => $section,  'pager'=>$pager , 'pager2'=>$pager2, 'parent'=>$parent)) ?>
 <!--/paginacao-->
 
+<!-- Player do vídeo acessibilidade-->
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+<!-- script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/youtubeapi.js"></script --> 
+<?php echo $noscript; ?>
+<script>
+    //Load player api asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var done = false;
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '246',
+          width: '300',
+          videoId: '<?php echo $displays["destaque-principal"][0]->Asset->AssetVideo->getYoutubeId() ?>',
+          events: {
+            //'onReady': onPlayerReady,
+            //'onStateChange': onPlayerStateChange
+          }
+        });
+    }
+    function onPlayerReady(evt) {
+        evt.target.playVideo();
+    }
+    function onPlayerStateChange(evt) {
+        if (evt.data == YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo, 6000);
+            done = true;
+        }
+    }
+    function playVideo() {
+        player.playVideo();
+    }
+    function stopVideo() {
+        player.stopVideo();
+    }
+    function pauseVideo() { 
+        player.pauseVideo();
+    }
+    $('.play').click(function(){playVideo()});
+    $('.stop').click(function(){
+      stopVideo();
+      $('.stopado,.pausado').remove();
+      $('.play').attr('aria-label','Você parou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
+      $('.play').before('<span class="stopado" aria-label="Você parou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo" tabindex="0"></span>');
+      setTimeout(function(){
+        $('.stopado').focus();
+      },800);
+    });
+    $('.pause').click(function(){
+      pauseVideo();
+      $('.stopado,.pausado').remove();
+      $('.play').attr('aria-label','Você pausou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
+      $('.play').before('<span class="pausado" aria-label="Você pausou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo" tabindex="0"></span>');
+      setTimeout(function(){
+        $('.pausado').focus();
+      },800);
+    });
+</script>
+<?php echo $noscript ?>
