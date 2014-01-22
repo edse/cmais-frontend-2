@@ -117,9 +117,9 @@
   <?php if($see_also): ?>
   
   <!--relacionados-->  
-  <section class="relacionados" aria-label="Você está entrando na listinha de brincadeiras relacionadas com 4 itens" tabindex="0">
+  <section class="relacionados" >
     
-    <h2>Brinque também com:</h2>
+    <h2 aria-hidden="true">Brinque também com:</h2>
     
     <!--carrossel-->
     <div id="carrossel-interna">
@@ -163,7 +163,7 @@
                         endif; 
                       ?>
                       <li class="<?php echo $assetSection->getSlug(); ?>">
-                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>">
+                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
                           <?php if($d->AssetType->getSlug() == "video"): ?>
                             <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                           <?php else: ?>
@@ -216,7 +216,7 @@
                           endif; 
                         ?>
                       <li class="<?php echo $assetSection->getSlug(); ?>">
-                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>">
+                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
                           <?php if($d->AssetType->getSlug() == "video"): ?>
                             <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                           <?php else: ?>
@@ -271,7 +271,7 @@
                             endif; 
                           ?>
                           <li class="<?php echo $assetSection->getSlug(); ?>">
-                            <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>">
+                            <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
                               <?php if($d->AssetType->getSlug() == "video"): ?>
                                 <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                               <?php else: ?>
@@ -321,7 +321,7 @@
                           endif; 
                           ?>
                             <li class="<?php echo $section->getSlug(); ?>">
-                              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>">
+                              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
                                 <?php if($d->AssetType->getSlug() == "video"): ?>
                                   <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                                 <?php else: ?>
@@ -396,10 +396,15 @@ if(navigator.appName!='Microsoft Internet Explorer')
   //carrossel personagens redraw pra tablet e celular home
 }
 var quant=0
+var item = "";
 $('#carrossel-interna li').each(function(){
   quant += 1;
   if(quant > 4) $(this).find('a').attr('aria-hidden', 'true').attr('tabindex','-1');
+  if(quant == 1)
+    item="item";
+  else
+    item="itens";  
 });
-$('#carrossel-interna').attr('aria-label', 'você está estrando no carrossel de atividades e jogos com'+quant+' itens.');
+$('.relacionados').attr('aria-label','Brinque também com: Você está entrando na listinha de brincadeiras relacionadas com '+ quant +' '+item).attr('tabindex','0');
 </script>
 <?php echo $noscript; ?>
