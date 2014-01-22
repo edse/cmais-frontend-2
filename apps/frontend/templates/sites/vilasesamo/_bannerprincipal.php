@@ -202,22 +202,22 @@
           
           switch(i){
             case 0:
-              $(this).attr("aria-label", "Primeiro Baner:Link para Home do Site. Descrição: Bel acenando sorrindo comprimentando e falando - 'Olá! Bem Vindo ao nosso novo site'.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>');
+              $(this).attr("aria-label", "Home do Site. - Bel acenando sorrindo comprimentando e falando: - 'Olá! Bem Vindo ao nosso novo site'.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>');
             break;
             case 1:
-              $(this).attr("aria-label", "Segundo Baner:link para tela Jogos. Descrição:Groover esta vestido com um capacete e uma capa vermelha convidando você a brincar com os personagens do Vila-Sésamo.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/jogos');
+              $(this).attr("aria-label", "Jogos. - Groover está vestido com um capacete e uma capa vermelha, convidando você a brincar com os personagens do Vila-Sésamo.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/jogos');
             break;
             case 2:
-              $(this).attr("aria-label", "Terceiro Baner:  link para a tela vídeos. Descrição:Come-Come esta comendo um rolo de filme cinematográfico e falando de boca cheia - 'Músicas e histórias para você curtir'.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/videos')
+              $(this).attr("aria-label", "Vídeos. - Come-Come está comendo um rolo de filme cinematográfico e falando de boca cheia: - 'Músicas e histórias para você curtir'.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/videos')
             break;
             case 3:
-              $(this).attr("aria-label", "Quarto Baner:link para a tela atividades. Descrição:Beto esta segurando um recorte de uma máscara convidando você a brincar com as atividades'. ").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/atividades')
+              $(this).attr("aria-label", "Atividades. - Beto está segurando um recorte de uma máscara, convidando você a brincar com as atividades'. ").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/atividades')
             break;
             case 4:
-              $(this).attr("aria-label", "Quinto Banner:link para página Persanagens Descrição:Elmo esta brincando de econde-esconde. Venha conhecer a turma toda do Vila Sésamo.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/personagens');
+              $(this).attr("aria-label", "Personagens.  - Elmo está brincando de econde-esconde. Venha conhecer a turma toda do Vila Sésamo.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/personagens');
             break;
             case 5:
-              $(this).attr("aria-label", "Sexto Banner:link para página Pais e Educadores. Descrição:Garibaldo sorrindo convida pais e educadores a conhecer dicas, conteúdos. Leia, participe, compartilhe.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/pais-e-educadores')
+              $(this).attr("aria-label", "Pais e Educadores. - Garibaldo sorrindo convida pais e educadores a conhecer dicas, conteúdos. Leia, participe, compartilhe.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/pais-e-educadores')
             break;
           }  
           
