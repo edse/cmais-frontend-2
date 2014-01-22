@@ -37,8 +37,6 @@ if(count($bs) > 0){
 	
 ?>
 
-<script>setTimeout("location.reload(true);",360000);</script>
-		
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/jornalismo-novo2013.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
@@ -487,6 +485,56 @@ $(document).ready(function(){
     success: function(label){
     }
   });
+  
+  
+ //******** PLAYER AND REFRESH ********//  
+ //arrays para players multiplos
+  var cont = 0;
+  var player = new Array();
+  var players_ids = new Array();
+  var playing;
+  var playing_id = false;
+  
+  onYouTubeIframeAPIReadyPlayer = function(obj, cont) {
+    //console.log("start"+cont);
+    //console.log("obj:"+obj);
+    player[cont] = new YT.Player(obj);
+    player[cont].addEventListener("onStateChange", function(res){
+      if(res.data == 1){  //ao iniciar o vídeo
+        stopRefresh();    //cancela refresh
+      }
+      if(res.data == 0){  //ao finalizar o vídeo 
+      	startRefresh();		//inicia refresh
+      }
+    });
+  }
+
+	//Verifica os Iframes do Youtube
+	function onVerifyYoutube(){
+	  $('iframe').each(function(i){
+	    if($(this).attr('src').indexOf("youtube") != -1){
+	      cont++;
+	      $(this).attr("id","player"+cont);
+	      onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
+	    }
+	  });
+	}
+	//Após 2 segundos verifica os Iframes do Youtube
+	setTimeout(onVerifyYoutube,2000);
+	
+	var timeout = setTimeout("location.reload(true);",15000); // Inicia o refresh  
+	
+	function startRefresh() {
+		var timeout = setTimeout("location.reload(true);",15000);
+		//console.log("Start Refresh");
+	}	
+	function stopRefresh() {
+	  clearTimeout(timeout);
+	  //console.log("Stop Refresh");
+	}  
+  
+//******** Is Playing ??? ********//
+  
 });
 
 $(function(){
