@@ -166,6 +166,6 @@
 .box-padrao #datepicker .ui-state-hover,
 .box-padrao #datepicker .ui-widget-content .ui-state-hover,
 .box-padrao #datepicker .ui-widget-content .ui-state-active{background:#333333;}
-.container-impostometro{width: 100%;}
+.container-impostometro{width: 100%;margin-bottom: 15px;}
 .banner-impostometro{margin: 0 auto;width: 728px;}
 /* LISTA ASSETS */
