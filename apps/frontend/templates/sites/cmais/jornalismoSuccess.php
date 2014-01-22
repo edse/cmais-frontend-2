@@ -524,10 +524,10 @@ $(document).ready(function(){
 	//Após 2 segundos verifica os Iframes do Youtube
 	setTimeout(onVerifyYoutube,2000);
 	
-	var timeout = setTimeout("location.reload(true);",15000); // Inicia o refresh  
+	var timeout = setTimeout("location.reload(true);",360000); // Inicia o refresh  
 	
 	function startRefresh() {
-		var timeout = setTimeout("location.reload(true);",15000);
+		var timeout = setTimeout("location.reload(true);",360000);
 		//console.log("Start Refresh");
 	}	
 	function stopRefresh() {
