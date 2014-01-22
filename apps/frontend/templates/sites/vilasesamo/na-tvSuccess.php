@@ -54,7 +54,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <?php if(count($displays['programacao-na-tv']) > 0): ?>
                      
             <!--container-horario-->
-            <div class="container-horarios" accesskey="Ctrl+h">
+            <div class="container-horarios" accesskey="h">
               
               <!--box-horario-->
               <?php foreach($displays['programacao-na-tv'] as $k=>$d):?>

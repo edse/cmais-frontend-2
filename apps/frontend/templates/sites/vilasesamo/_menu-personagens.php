@@ -2,7 +2,7 @@
       $noscript = "<noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
       ?> 
       <!--nav filtro personagem-->
-      <nav role="navigation" class="span2" accesskey="P">
+      <nav role="navigation" class="span2" accesskey="p">
         <h3 <?php if($section->Parent->getSlug() == "personagens") echo "class='marginTopBottom10'"?> >escolha por personagem</h3>
         <h3 aria-live="polite" id="filtro-descricao" aria-label="Caso queira, selecione <?php echo $section->getSlug() ?>s pelo personagem da VilaSésamo" tabindex="0"></h3>
         
