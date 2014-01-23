@@ -316,7 +316,7 @@ $(document).ready(function() {
             var cod_curriculo = $("#qg_curric").val();
 						Seleciona_Historicos(cod_curriculo);
             
-            alert("Histórico cadastrado com sucesso");
+            alert('Histórico cadastro com sucesso! Para adicionar um novo histórico, preencha todos os dados do formulário e clique em Adicionar. Caso já tenha finalizado, clique no botão "Continuar Inscrição", logo abaixo da listagem de seus históricos.');  
             $("#continue_inscricao").show();
          }else{
          	//console.log("erro no cadastro");
@@ -556,7 +556,7 @@ $(document).ready(function() {
 	        alert("Erro Json");
 	      }, 
 	      success: function(json) {
-					$('#DropDown_qm_curso').append('<option selected="selected" value="0">Selecione</option>');
+					$('#DropDown_qm_curso').append('<option selected="selected" value="">Selecione</option>');
 					              	
 					$(json.data).each(function(index, dados){
 	           conteudo = '<option value="' + dados.cursos.qt_curso + '">' + dados.cursos.qt_descric + '</option>';           
