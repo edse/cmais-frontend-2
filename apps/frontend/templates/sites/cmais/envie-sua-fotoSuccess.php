@@ -118,10 +118,7 @@
                     <div class="linha t3">
                       <input type="submit" name="enviar" value="Enviar" id="enviar" />
                     </div>
-          
-                          
                   </form>
-
               </div>
             </div>
             <!-- /ESQUERDA -->
