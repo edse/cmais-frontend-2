@@ -34,7 +34,22 @@ if(count($bs) > 0){
     }
   }
 } 	
-	
+
+
+// DESTAQUE NOTÍCIAS TEXTO (CMAIS/JORNALISMO)
+$block = Doctrine::getTable('Block')->findOneById(2078); 
+if($block->is_automatic == 1){
+	//4 Assets da Seção Notícias Jornalismo
+	$assets_afp = Doctrine_Query::create()
+	  ->select('a.*')
+	  ->from('Asset a, SectionAsset sa')
+	  ->where('sa.section_id = ?', 3298)
+	  ->andWhere('sa.asset_id = a.id')
+	  ->andWhere('a.is_active = ?', 1)
+	  ->orderBy('sa.created_at desc')
+	  ->limit(4)
+	  ->execute();
+}
 ?>
 
 <link rel="stylesheet" href="/portal/css/tvcultura/secoes/jornalismo-novo2013.css" type="text/css" />
@@ -116,11 +131,32 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
     
     <!--coluna esquerda-->
     <div class="coluna-esquerda">
-    	
-			<!-- bloco notícias de texto -->
+
+		<!-- bloco notícias de texto -->
+			<?php	if(isset($assets_afp)):?>
+				<?php $count=0; ?>
+				<?php	foreach ($assets_afp as $k => $d):?>
+							<div class="destaques <?php if($count==3) echo "ultima-noticia" ?>" >
+                <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
+                <h2><?php echo $d->getTitle()?></h2>
+
+                <?php if($k == 3):?>
+                
+                    <p class="s-margem"><?php echo $d->getDescription()?></p>  
+                  </a>                  
+                  <a class="veja" href="http://cmais.com.br/noticias-jornalismo">+ veja todas as notícias</a>
+                <?php else:?>
+                    <p><?php echo $d->getDescription()?></p>  
+                  </a>                  
+                  <div class="linha-hr"></div>
+                  <?php $count++?>
+                <?php endif;?>
+             </div>
+			<?php endforeach;?>
+		<?php	else:?>
 			<?php if(isset($displays["destaques-noticias-texto"])): ?>
 				<?php $count=0; ?>
-        <?php foreach ($displays["destaques-noticias-texto"] as $k => $d): ?>
+	      	<?php foreach ($displays["destaques-noticias-texto"] as $k => $d): ?>
             <div class="destaques <?php if($count==3) echo "ultima-noticia" ?>" >
                 <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
                 <h2><?php echo $d->getTitle()?></h2>
@@ -136,11 +172,10 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
                   <div class="linha-hr"></div>
                   <?php $count++?>
                 <?php endif;?>
-                            
              </div>
-        <?php endforeach;?>
-
-			<?php endif;?>  
+	     	<?php endforeach;?>
+			<?php endif;?>
+		<?php endif;?>
 		 <!--/ bloco notícias de texto -->
 
 	   <!-- bloco destaque esquerda 1 -->
