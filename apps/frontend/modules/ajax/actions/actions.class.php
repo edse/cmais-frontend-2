@@ -311,8 +311,8 @@ class ajaxActions extends sfActions
             var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
             so.addVariable('controlbar', 'over');
             so.addVariable('autostart', 'true');
-            //so.addVariable('streamer', 'rtmp://200.136.27.12/livepkgr');
-            so.addVariable('file', '".$streaming."');
+            so.addVariable('streamer', 'rtmp://200.136.27.12/livepkgr');
+            //so.addVariable('file', '".$streaming."');
             so.addVariable('file', 'tv2?adbe-live-event=liveevent');
             so.addVariable('type', 'video');
             so.addParam('allowscriptaccess','always');
