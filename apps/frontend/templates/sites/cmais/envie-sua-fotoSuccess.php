@@ -116,6 +116,11 @@
                       <p class="aviso">O arquivo deve estar nos formatos: PNG, GIF ou  JPG de até 15MB.</p>
                     </div>
                     <div class="linha t3">
+                      <label>mensagem</label>
+                      <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
+                      <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>                                       
+                    </div>
+                    <div class="linha t3">
                       <input type="submit" name="enviar" value="Enviar" id="enviar" />
                     </div>
                   </form>
@@ -214,4 +219,12 @@
         $(".msgAcerto").show();
       }
 
+      // Contador de Caracters
+      function limitText (limitField, limitNum, textCounter)
+      {
+        if (limitField.value.length > limitNum)
+          limitField.value = limitField.value.substring(0, limitNum);
+        else
+          $(textCounter).html(limitNum - limitField.value.length);
+      }
     </script>
