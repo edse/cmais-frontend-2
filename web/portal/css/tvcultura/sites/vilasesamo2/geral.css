@@ -25,7 +25,7 @@ body, input, button, select, textarea {color:#000000!important;}
 ul li { list-style:none !important; }
 span,
 i { display:block; }
-a:hover { text-decoration:underline; }
+a { text-decoration:underline; }
 .sem-margem-l{margin-left:0!important}
 .sem-margem-r{margin-rightß:0!important}
 .sem-margem-t{margin-top:0!important}
