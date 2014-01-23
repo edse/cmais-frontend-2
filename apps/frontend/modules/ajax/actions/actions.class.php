@@ -293,7 +293,6 @@ class ajaxActions extends sfActions
           var interval=self.setInterval('checkStreamingEnd()', 60000);
           ";
         }else{
-         /*
     	   $devices = array('iphone' => '(iphone|ipod|ipad)');
     	   $useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
     	   $accept = strtolower($_SERVER['HTTP_ACCEPT']);
@@ -327,7 +326,7 @@ class ajaxActions extends sfActions
          else{
            $return .= '$(\'#livestream2\').show();$(\'#livestream2\').html(\'<video controls="controls" height="390" src="http://200.136.27.12/hls-live/livepkgr/_definst_/liveevent/tv2.m3u8" width="640"></video>\');';
          }
-         */
+         /*
           $return .= "
           var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
           so.addVariable('controlbar', 'over');
@@ -345,6 +344,7 @@ class ajaxActions extends sfActions
           $('#livestream2').show();
           var interval=self.setInterval('checkStreamingEnd()', 60000);
           ";
+          */
         }
       }else{
         $next = Doctrine_Query::create()
