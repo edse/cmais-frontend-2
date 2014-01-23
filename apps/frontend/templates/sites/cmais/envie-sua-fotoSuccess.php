@@ -114,7 +114,7 @@
                       <label class="control-label file" for="file"></label>.
                       <input id="datafile" type="file" name="datafile" size="6" />
                       <p class="aviso">O arquivo deve estar nos formatos: PNG, GIF ou  JPG de até 15MB.</p>
-                    </div>.
+                    </div>
                     <div class="linha t3">
                       <input type="submit" name="enviar" value="Enviar" id="enviar" />
                     </div>
