@@ -274,7 +274,8 @@ $(function(){
                 },
                 ended: function()
                 {
-                	if(this.playlist.length<=1){
+                	console.log(audioPlaylist.length+"testee");
+                	if(audioPlaylist.length<=1){
                 		audioPlaylist.stop();
 	                }else{
 	                  audioPlaylist.playlistNext(); //vai para a proxima
