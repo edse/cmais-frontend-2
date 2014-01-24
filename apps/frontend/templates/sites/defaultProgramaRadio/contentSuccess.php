@@ -270,7 +270,7 @@ $(function(){
                 
                 <?php
                 endforeach;
-								$cont++;
+								$cont = $cont++;
                 ?>
               ],
               {
@@ -282,7 +282,7 @@ $(function(){
                 ended: function()
                 {
                 	
-                	if(audioPlaylist.length <=1){
+                	if(<?php echo $cont ?> <=1){
                 		audioPlaylist.stop();
 	                }else{
 	                  audioPlaylist.playlistNext(); //vai para a proxima
