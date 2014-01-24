@@ -223,7 +223,7 @@ $(function(){
                   }
                 },
                 playlistInit: function(autoplay) {
-                	console.log("teste");
+                	console.log(this.playlist.length+"teste2");
                   if(autoplay) {
                     this.playlistChange(this.current);
                   } else {
