@@ -273,7 +273,7 @@ $(function(){
                 },
                 ended: function()
                 {
-                  audioPlaylist.stop();
+                  audioPlaylist.playlistNext(); //vai para a proxima
                 },
                 play: function()
                 {
