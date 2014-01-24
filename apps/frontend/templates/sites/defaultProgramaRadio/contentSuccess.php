@@ -283,7 +283,7 @@ $(function(){
                 {
                 	
                 	if(<?php echo $cont ?> <=1){
-                		audioPlaylist.stop();
+                		audioPlaylist("stop");
 	                }else{
 	                  audioPlaylist.playlistNext(); //vai para a proxima
 	                 }
