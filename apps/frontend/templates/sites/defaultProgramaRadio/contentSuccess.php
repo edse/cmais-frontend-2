@@ -223,7 +223,7 @@ $(function(){
                   }
                 },
                 playlistInit: function(autoplay) {
-                	console.log(this.playlist.length+"teste2");
+                	//console.log(this.playlist.length+"teste2");
                   if(autoplay) {
                     this.playlistChange(this.current);
                   } else {
@@ -274,11 +274,11 @@ $(function(){
                 },
                 ended: function()
                 {
-                  audioPlaylist.playlistNext(function(){
-                  	if(audioPlaylist==0){
-                  			audioPlaylist.stop();
-                  	}
-                  }); //vai para a proxima
+                	if(this.playlist.length<=1){
+                		audioPlaylist.stop();
+	                }else{
+	                  audioPlaylist.playlistNext(); //vai para a proxima
+	                 }
                 },
                 play: function()
                 {
