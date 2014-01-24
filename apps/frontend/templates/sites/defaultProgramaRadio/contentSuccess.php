@@ -223,6 +223,7 @@ $(function(){
                   }
                 },
                 playlistInit: function(autoplay) {
+                	console.log("teste");
                   if(autoplay) {
                     this.playlistChange(this.current);
                   } else {
@@ -273,7 +274,11 @@ $(function(){
                 },
                 ended: function()
                 {
-                  audioPlaylist.playlistNext(); //vai para a proxima
+                  audioPlaylist.playlistNext(function(){
+                  	if(audioPlaylist==0){
+                  			audioPlaylist.stop();
+                  	}
+                  }); //vai para a proxima
                 },
                 play: function()
                 {
