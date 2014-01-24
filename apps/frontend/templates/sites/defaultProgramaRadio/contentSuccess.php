@@ -269,8 +269,9 @@ $(function(){
                 }<?php if($k < (count($related_audios) - 1)): ?>,<?php endif;?>
                 
                 <?php
+                $cont++;
                 endforeach;
-								$cont = $cont++;
+								
                 ?>
               ],
               {
