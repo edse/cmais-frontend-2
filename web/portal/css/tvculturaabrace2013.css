@@ -23,7 +23,7 @@
 #menu-portal-1.menu-cmais-abrace #menu-portal li a.filho {color: #fff;}
 #menu-portal-1.menu-cmais-abrace #menu-portal .menu-aberto {left: -318px;}
 #menu-portal-1.menu-cmais-abrace .abrace-infinito-esquerda{z-index:1;position:absolute;width:100%;min-height: 32px;}
-#menu-portal-1.menu-cmais-abrace .abrace-esquerda{padding: 0 10px 0 1px; border-right:1px solid #0d6101; float:left;width: 312px;min-height: 32px;margin-left: -1px;background: url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/bg_topo_direita.jpg") repeat-x; }
+#menu-portal-1.menu-cmais-abrace .abrace-esquerda{padding: 0 9px 0 1px; border-right:1px solid #0d6101; float:left;width: 310px;min-height: 32px;margin-left: -1px;background: url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/bg_topo_direita.jpg") repeat-x; }
 #menu-portal-1.menu-cmais-abrace .abrace-infinito-esquerda{right:100%;background: url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/bg_topo_direita.jpg") repeat-x;}
 #menu-portal-1.menu-cmais-abrace #menu-portal li a span{background-position: 0 -32px;} 
 #menu-portal-1.menu-cmais-abrace #menu-portal li.m-videos a {color:#FFF;}
