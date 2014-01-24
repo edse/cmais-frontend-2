@@ -103,7 +103,8 @@ $(function(){
                                     
                   ?>
                   <?php foreach($subsections as $s): ?>                   
-                  <li><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value','<?php echo $s->getId(); ?>'); $('#busca-galeria').submit()" <?php if($_REQUEST['section'] == $s->getId()): ?>class="ativo"<?php endif; ?>><strong><?php echo $s->getTitle(); ?></strong></a></li>
+                  <!-- <li><a href="javascript:;" onclick="$('#busca-galeria #section').attr('value','<?php echo $s->getId(); ?>'); $('#busca-galeria').submit()" <?php if($_REQUEST['section'] == $s->getId()): ?>class="ativo"<?php endif; ?>><strong><?php echo $s->getTitle(); ?></strong></a></li> -->
+                  <li><a href="/<?php echo $site->slug."/".$s->slug?>"> <?php echo $s->getTitle(); ?></strong></a></li>
                   <?php endforeach; ?>
                 </ul>
                 

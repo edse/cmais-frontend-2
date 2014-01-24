@@ -93,9 +93,10 @@ $(function(){
           		
           	  <div class="busca">
           	  	<ul>
-          	  	  <li><a href="javascript:;" onclick="$('#busca-galeria #site_id').attr('value',''); $('#busca-galeria').submit()" class="<?php if($_REQUEST['site_id'] == ''): ?>ativo<?php endif; ?>"><strong>Todos os Programas</strong></a></li>
+          	  	  <!-- <li><a href="javascript:;" onclick="$('#busca-galeria #site_id').attr('value',''); $('#busca-galeria').submit()" class="<?php if($_REQUEST['site_id'] == ''): ?>ativo<?php endif; ?>"><strong>Todos os Programas</strong></a></li> -->
           	  	  <?php foreach($sites as $s): ?>
-          	  	  <li><a href="javascript:;" onclick="$('#busca-galeria #site_id').attr('value','<?php echo $s->id; ?>'); $('#busca-galeria').submit()" class="<?php if(isset($_REQUEST['site_id'])): ?><?php if($_REQUEST['site_id'] == $s->id): ?>ativo<?php endif; ?><?php endif; ?>"><?php echo $s->getTitle() ?></a></li>
+          	  	  <!-- <li><a href="javascript:;" onclick="$('#busca-galeria #site_id').attr('value','<?php echo $s->id; ?>'); $('#busca-galeria').submit()" class="<?php if(isset($_REQUEST['site_id'])): ?><?php if($_REQUEST['site_id'] == $s->id): ?>ativo<?php endif; ?><?php endif; ?>"><?php echo $s->getTitle() ?></a></li> -->
+          	  	  <li><a href="/<?php echo $site->slug."/".$s->slug?>"> <?php echo $s->getTitle(); ?></strong></a></li>	
           	  	  <?php endforeach; ?>
           	  	</ul>
           	  		
