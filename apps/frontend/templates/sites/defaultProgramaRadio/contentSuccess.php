@@ -282,7 +282,7 @@ $(function(){
                 ended: function()
                 {
                 	
-                	if(<?php echo $cont ?> <=1){
+                	if(audioPlaylist.length <=1){
                 		audioPlaylist.stop();
 	                }else{
 	                  audioPlaylist.playlistNext(); //vai para a proxima
