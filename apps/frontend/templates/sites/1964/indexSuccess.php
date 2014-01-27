@@ -75,7 +75,7 @@
 		   	   	 <!--TITULO-->
 		   	   	
 		          <!-- INICIO TIMELINE -->
-		          <div class="" style="height: 500px;">
+		          <div class="timeline">
 			            <div id="tvcultura-embed"></div>
 			            <script type="text/javascript">
 			              var timeline_config = {
