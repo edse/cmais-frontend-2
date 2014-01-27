@@ -68,6 +68,7 @@
 		      <!-- /DESTAQUES -->
 		      
 		      	<!-- BLOCOS -->
+		      	<?php count($displays['destaques'])?>
 		     		<?php if (isset($displays['destaques'])): ?>
             	<?php if (count($displays['destaques']) > 0): ?>
             <div class="span10 cursos">
