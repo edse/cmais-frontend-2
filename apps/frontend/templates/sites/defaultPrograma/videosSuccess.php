@@ -122,37 +122,37 @@ $(function(){
           	    <?php
 	          	    if($site->getSlug() == "materiadecapa")   $code_search = "005232987476052626260:vkawbzjvfoq";
 	          	    if($site->getSlug() == "jornaldacultura") $code_search = "005232987476052626260:5urer8wgbji";
-					if($site->getSlug() == "viola") 	  	  $code_search = "005232987476052626260:rjkecerv2xm";
-					if($site->getSlug() == "ensaio") 	  	  $code_search = "005232987476052626260:t9jlojqtnng";
-					if($site->getSlug() == "entrelinhas") 	  $code_search = "005232987476052626260:46hjnvta1yg";
-					if($site->getSlug() == "mobile") 		  $code_search = "005232987476052626260:xzm1zokhe9i";
-					
-					if($code_search == "") $code_search = ""; //BUSCA DE VÍDEOS DO CMAIS
+									if($site->getSlug() == "viola") 	  	  $code_search = "005232987476052626260:rjkecerv2xm";
+									if($site->getSlug() == "ensaio") 	  	  $code_search = "005232987476052626260:t9jlojqtnng";
+									if($site->getSlug() == "entrelinhas") 	  $code_search = "005232987476052626260:46hjnvta1yg";
+									if($site->getSlug() == "mobile") 		  $code_search = "005232987476052626260:xzm1zokhe9i";
+									
+									if($code_search == "") $code_search = ""; //BUSCA DE VÍDEOS DO CMAIS
           	    ?>
           	    
                 <div id="google_search" style="display:none">
-					<script>
-					  (function() {
-					    var cx = '<?php echo $code_search ?>';
-					    var gcse = document.createElement('script');
-					    gcse.type = 'text/javascript';
-					    gcse.async = true;
-					    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-					        '//www.google.com/cse/cse.js?cx=' + cx;
-					    var s = document.getElementsByTagName('script')[0];
-					    s.parentNode.insertBefore(gcse, s);
-					  })();
-					</script>
-					<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
+									<script>
+									  (function() {
+									    var cx = '<?php echo $code_search ?>';
+									    var gcse = document.createElement('script');
+									    gcse.type = 'text/javascript';
+									    gcse.async = true;
+									    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+									        '//www.google.com/cse/cse.js?cx=' + cx;
+									    var s = document.getElementsByTagName('script')[0];
+									    s.parentNode.insertBefore(gcse, s);
+									  })();
+									</script>
+									<gcse:searchresults-only>Buscando...</gcse:searchresults-only>
                	</div>    
                	     
           	  </div>
           	   <div class="box-publicidade" style="width: 250px; position: absolute; top:97px; left:5px;">
           	  	<!-- cmais-assets-250x250 -->
-				<script type='text/javascript'>
-				GA_googleFillSlot("cmais-assets-250x250");
-				</script>
-				</div>
+								<script type='text/javascript'>
+								GA_googleFillSlot("cmais-assets-250x250");
+								</script>
+							</div>
           	  
           	  <!--div id="recentes" class="filho blocos" style="display:none;">
           	    <div class="capa">

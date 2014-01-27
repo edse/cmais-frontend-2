@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/jornalismo-novo2013.css" type="text/css" />
 <script type="text/javascript">
 $(function(){
   //hover states on the static widgets
@@ -12,6 +13,49 @@ $(function(){
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
+			
+<?php 
+	//SE A SEÇÃO FOR NOTÍCIAS JORNALISMO OU A CATEGORIA FOR JORNALISMO
+	if((isset($section) && $section->slug == "noticias-jornalismo") || (isset($section) && $asset->Category == "Jornalismo")):
+		
+		$now = date('Y-m-d H:i:s');
+		$schedules = Doctrine_Query::create()
+		  ->select('s.*')
+		  ->from('Schedule s')
+		  ->andWhere('s.date_start <= ?', $now)
+		  ->andWhere('s.date_end >= ?', $now)  
+		  ->andWhere('s.channel_id = ?', 1)
+			->limit(1)
+		  ->execute();
+	
+		$live = $schedules[0]->Program->Site->getSlug(); //Slug do Programa Atual
+		
+		
+		//BLOCO DO MENU PROGRAMAS JORNALISMO
+		$displays1 = null;	
+		$block = Doctrine::getTable('Block')->findOneById(2096); // SEÇÃO JORNALISMO
+		if($block) $displays1['destaque-menu-programas'] = $block->retriveDisplays();
+?>
+<!--MENU-PROGRAMAS-->
+<div id="menu-programas">
+  <div class="menu-programas">
+    <h1>Jornalismo</h1>
+		<?php if(isset($displays1["destaque-menu-programas"])): ?>
+			<ul>
+				<?php foreach ($displays1["destaque-menu-programas"] as $k => $d): ?>
+		      <li class="<?php echo $d->getHeadline()?>">
+		        <a class="btn-programas btn-<?php echo $d->getHeadline()?><?php if($live == $d->getHeadline()) echo " active"?> " href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>"></a>
+			      <?php if($live == $d->getHeadline()) echo $btn_live?> 
+		      </li>
+				<?php endforeach;?>
+			</ul>
+		<?php endif;?>      
+  </div>
+</div>
+<!--/MENU-PROGRAMAS-->		
+						
+<?php endif;?>
+
 
     <!-- CAPA SITE -->
     <div id="capa-site">
@@ -81,7 +125,7 @@ $(function(){
 
             <!-- ESQUERDA -->
             <div id="esquerda" class="grid2">
-
+							
               <!-- NOTICIA INTERNA -->
               <div class="box-interna grid2">
                 <h3><?php echo $asset->getTitle() ?></h3>
