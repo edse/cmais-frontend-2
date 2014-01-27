@@ -814,7 +814,8 @@ class _sectionActions extends sfActions
                 ->andWhere('a.is_active = ?', 1);
               if($request->getParameter('busca') != '')
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%'");               
-              $this->assetsQuery->orderBy('av.bitrate desc');
+              //$this->assetsQuery->orderBy('av.bitrate desc');
+							$this->assetsQuery->orderBy('av.id desc');
             }
             elseif( ($this->site->Program->Channel->getSlug() == 'culturabrasil') && (in_array($this->section->getSlug(), array('home', 'home-page', 'homepage'))) ) {
               $arquivo[] = "arquivo";
