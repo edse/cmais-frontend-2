@@ -325,3 +325,28 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .pag-escura .pag-bola li a { width:13px; height:13px; background:url(../images/pag-ball.png) no-repeat -28px 0; display:block; }
 .pag-escura .pag-bola li a:hover,
 .pag-escura .pag-bola li a.ativo { background-position:-41px 0; }
+.cursos .jcarousel-item-horizontal { width:276px; height:300px; background:#e0e0e0; }
+.cursos .jcarousel-clip { height: 300px; }
+.cursos .thumbnail .caption { height:117px; overflow:hidden;  }
+.thumbnails .span3:hover,
+.cursos .jcarousel-item-horizontal:hover { background-color:#ff6633; }
+.cursos .caption { color:#333 }
+.cursos .caption h5,
+.cursos .caption h5 a { font-size:18px; max-height:44px; }
+.cursos .caption p { font-size:14px;  max-height: 54px;    overflow: hidden; }
+.cursos .jcarousel-item-horizontal:hover .thumbnail { border-color:#ff6633; background:#ff6633; }
+.cursos .jcarousel-item-horizontal:hover h5,
+.cursos .jcarousel-item-horizontal:hover p { color:#fff; }
+.cursos .thumbnail { margin:0;  }
+.cursos .thumbnails > li { margin:0 25px 0 0; width: 276px;  }
+.cursos .thumbnail:hover { border-color:#ff6633; background-color:#ff6633; }
+.cursos .thumbnail:hover h5,
+.cursos .thumbnail:hover p,
+.cursos .thumbnail:hover a { color:#fff; }
+.cursos .caption h5 { margin-bottom:5px; }
+.cursos .caption a { max-height:75px; overflow:hidden;}
+.cursos .thumbnails h5 a { line-height:22px; }
+.cursos .thumbnails a { color:#333; line-height:18px; display: block;   }
+.cursos .thumbnail:hover a { text-decoration:none; }
+.cursos .thumbnail { background:#e0e0e0;  }
+.cursos .thumbnails a img { width:266px; height:160px; }
