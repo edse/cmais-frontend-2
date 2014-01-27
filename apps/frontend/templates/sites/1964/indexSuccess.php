@@ -1,4 +1,7 @@
 <link type="text/css" href="http://cmais.com.br/portal/univesptv/css/geral.css" rel="stylesheet" />
+<!--link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="http://cmais.com.br/portal/univesptv/css/cursos.css" /-->
 <script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
 
 
@@ -9,30 +12,19 @@
 	<div id="capa-site" class="a1964">
      	<!-- BARRA SITE -->
   		<div id="barra-site" onclick=location="1964" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
-	       <div class="topo-timeline">
-		          <!-- <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/43cfb180f75e0cbc2c2823f4cfb603643151ab5a.png" /></a></h2>-->
-		          
-		          <!-- curtir -->
-		          <!--?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri)) ?-->
-		          <!-- /curtir -->
-		                    
-		          <!-- horario -->
-		          <!--div id="horario"
-		            <p>Canal digital 2.2 da multiprogramação da TV Cultura</p>
-		          </div>-->
-		          <!-- /horario -->
-	          
-	        </div>
-			<!-- box-topo -->
-	        <div class="box-topo grid3">
-		       	<!-- menu interna -->
-		       	<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
-		        <!-- /menu interna -->                 
-	    	</div>
-	   		<!-- /box-topo -->
-		  </div>
-	      <!-- /BARRA SITE -->
-      
+				
+				<!-- TOPO -->
+		    <div class="topo-programa">
+		    	
+	    		<!-- MENU -->
+					<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections))?>
+					<!--/ MENU -->
+					
+		    <!-- / TOPO -->  
+		    </div>
+		  <!-- /BARRA SITE -->  
+      </div>
+       
       <!-- MIOLO -->
    	  <div id="miolo">
    	   	
@@ -45,6 +37,36 @@
 	         
 	         <!-- CAPA 3-->
          	 <div class="capa grid3">
+         	 	
+         	 	<!-- DESTAQUES -->
+						<?php if (isset($displays['destaque-principal'])): ?>      
+							<?php if (count($displays['destaque-principal']) > 0): ?>      
+			      <div id="destaque" class="destaque destaque-3c grid3">
+			        <ul class="abas-conteudo conteudo">
+								<?php foreach($displays['destaque-principal'] as $k=>$d): ?>
+			          <li style="display: block;" id="bloco<?php echo $k ?>" class="filho">
+			          	<a class="media" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+			          		<img src="<?php echo $d->retriveImageUrlByImageUsage('image-10-b') ?>" alt="<?php echo $d->getTitle() ?>">
+			          	</a>
+			         	</li>
+			        	<?php endforeach; ?>
+			        </ul>
+			        <ul class="abas-menu pag-bola destaque1">
+			        	<?php foreach($displays['destaque-principal'] as $k=>$d): ?>
+			        		<?php if($k==0): ?>
+			          <li class="ativo">
+			          	<?php else: ?>
+			          <li>
+			          	<?php endif; ?>
+			          	<a href="#bloco<?php echo $k ?>" title="<?php echo $d->getTitle() ?>"></a>
+			          </li>
+			          <?php endforeach; ?>
+			        </ul>
+			      </div>
+			      	<?php endif; ?>
+			      <?php endif; ?>
+		      <!-- /DESTAQUES -->
+		      
          	 	
          	 	<!--TITULO-->
 		   	   	 <div class="box-interna grid2">
@@ -63,7 +85,7 @@
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
-			               css: "http://univesptv.cmais.com.br/portal/js/timeline/1964.css",
+			               css: "http://172.20.16.219/portal/js/timeline/1964.css",
 			               js: "http://univesptv.cmais.com.br/portal/js/timeline/timeline-min.js"
 			              }
 			            </script>
