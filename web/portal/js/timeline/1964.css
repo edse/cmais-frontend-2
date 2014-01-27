@@ -310,8 +310,8 @@ a.thumbnail:hover { border-color:#ff6633; }
 .destaque-3c .media { width:965px!important; height:339px; }
 .destaque-3c .media img { border: 5px solid #F0E6DD; width:960px!important; height:329px!important; }
 .destaque-3c, 
-.destaque-3c .conteudo { height: 339px; overflow:hidden; }
-.pag-bola { position:absolute; right: 15px; bottom: 64px; height:14px; }
+.destaque-3c .conteudo {margin-bottom: 20px; overflow:hidden; }
+.pag-bola { position:absolute; right: 15px; bottom: 15px; height:14px; }
 #barra-site h2 { margin-bottom:30px; }
 select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .pag-bola { margin:0 auto; width:auto;}
