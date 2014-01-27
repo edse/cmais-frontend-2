@@ -318,7 +318,7 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .pag-bola li { width:13px; display:inline-block; margin-bottom:10px;  border:none; }
 .pag-bola li a { width:13px; height:13px; background: url(../images/pag-ball.png) no-repeat -14px 0; display:block; margin:0; padding:0;}
 .pag-bola li:hover a,
-.pag-bola li.ativo a { background-position:-70px 0; }
+.pag-bola li.ativo a { background-position:-70px 0!important; }
 .pag-escura { background:#333; height:21px; overflow:hidden; line-height:21px; margin-top:10px; }
 .pag-escura .pag-bola { margin:0 auto; position:relative; overflow:hidden; left:0; bottom:0; width:85px; margin:2px auto; }
 .pag-escura .pag-bola li { width:13px; float:left; margin:2px }
