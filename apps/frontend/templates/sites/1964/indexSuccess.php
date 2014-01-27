@@ -85,7 +85,7 @@
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
-			               css: "http://172.20.16.219/portal/js/timeline/1964.css",
+			               css: "http://cmais.com.br/portal/js/timeline/1964.css",
 			               js: "http://univesptv.cmais.com.br/portal/js/timeline/timeline-min.js"
 			              }
 			            </script>
