@@ -302,7 +302,7 @@
 .carrossel .jcarousel-prev {left:0; }
 .carrossel .jcarousel-next { background-position:-20px 0; right:0;}
 .carrossel .jcarousel-item-horizontal { margin:0 10px; }
-.thumbnail { border:5px solid #e0e0e0; border-radius:0; box-shadow:none; padding:0; margin-right:20px;  }
+.thumbnail { border:5px solid #F0E6DD; border-radius:0; box-shadow:none; padding:0; margin-right:20px;  }
 .row { margin-bottom:50px; }
 a.thumbnail:hover { border-color:#ff6633; }
 .todos { color:#ff6633; right:0; text-align:right; margin:0 50px 5px 0; font-size:12px; clear:both; display:block;  }
