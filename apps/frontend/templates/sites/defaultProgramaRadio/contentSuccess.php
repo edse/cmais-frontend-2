@@ -258,13 +258,21 @@ $(function(){
               ?>
               var audioPlaylist = new Playlist("1",
               [
-                <?php foreach($related_audios as $k=>$d): ?>
+                <?php 
+                $cont = 0;
+                foreach($related_audios as $k=>$d):
+									
+                ?>
                 {
                   name:"<?php echo $d->getTitle(); ?>",
                   mp3:"/uploads/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile(); ?>"
                 }<?php if($k < (count($related_audios) - 1)): ?>,<?php endif;?>
                 
-                <?php endforeach; ?>
+                <?php
+                $cont++;
+                endforeach;
+								
+                ?>
               ],
               {
                 ready: function()
@@ -274,8 +282,8 @@ $(function(){
                 },
                 ended: function()
                 {
-                	console.log(audioPlaylist.length+"testee");
-                	if(audioPlaylist.length<=1){
+                	
+                	if(<?php echo $cont ?> <=1){
                 		audioPlaylist.stop();
 	                }else{
 	                  audioPlaylist.playlistNext(); //vai para a proxima
