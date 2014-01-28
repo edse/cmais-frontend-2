@@ -193,7 +193,7 @@
                 <ul>
                 	<?php $current_date= ''; ?>
                   <?php foreach($pager->getResults() as $d):
-                  	$date= explode(' ', $d->getCreatedAt()); 
+                  	$date= explode(' ', $d->getDateStart());
                   	$date= $date[0];
                   	
                   ?>
