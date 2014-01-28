@@ -285,11 +285,11 @@
 #barra-site{background-image:url(http://172.20.16.219/portal/images/timeline/topo.png);background-repeat: no-repeat;height: 230px;margin:0 0 0 42px!important;cursor:pointer}
 #barra-site .topo-timeline{width: 970px;min-height: 56px !important;}
 .a1964 .menu-interna {float: right;width: auto ;}
-.a1964 .menu-interna li {background-image:url(http://172.20.16.219/portal/images/timeline/botao.png);width: 120px;height: 54px;background-color: transparent;}
+.a1964 .menu-interna li {background-image:url(http://cmais.com.br/portal/images/timeline/botao.png);width: 120px;height: 54px;background-color: transparent;}
 .a1964 .menu-interna a{font-size: 14px;color:#854d01;display: block;float: left;padding: 16px 34px;text-transform: uppercase;font-weight: bolder;}
 .a1964 .menu-interna a:hover{font-size: 14px;color:#f6e52a;display: block;float: left;padding: 16px 34px;text-transform: uppercase;font-weight: bolder;}
-.a1964 .menu-interna li.ativo, .a1964 .menu-interna li:hover {background-image:url(http://172.20.16.219/portal/images/timeline/botao_over.png);width: 120px;height: 54px;background-color: transparent;}
-
+.a1964 .menu-interna li.ativo, .a1964 .menu-interna li:hover {background-image:url(http://cmais.com.br/portal/images/timeline/botao_over.png);width: 120px;height: 54px;background-color: transparent;}
+.timeline{height: 500px;float: left;width: 100%;padding-top: 20px;background-color: #ECECEC;}
 
 /* /AJUSTES ARTES TOPO E MENU */
 
@@ -302,15 +302,52 @@
 .carrossel .jcarousel-prev {left:0; }
 .carrossel .jcarousel-next { background-position:-20px 0; right:0;}
 .carrossel .jcarousel-item-horizontal { margin:0 10px; }
-.thumbnail { border:5px solid #e0e0e0; border-radius:0; box-shadow:none; padding:0; margin-right:20px;  }
+.thumbnail { border:5px solid #F0E6DD; border-radius:0; box-shadow:none; padding:0; margin-right:20px;  }
 .row { margin-bottom:50px; }
 a.thumbnail:hover { border-color:#ff6633; }
 .todos { color:#ff6633; right:0; text-align:right; margin:0 50px 5px 0; font-size:12px; clear:both; display:block;  }
 .todos:hover { color:#ff6633;  }
-.destaque-3c .media { width:965px; height:339px; }
-.destaque-3c .media img { border: 5px solid #CCCCCC; width:960px; height:329px; }
+.destaque-3c .media { width:965px!important; height:339px; }
+.destaque-3c .media img { border: 5px solid #F0E6DD; width:960px!important; height:329px!important; }
 .destaque-3c, 
-.destaque-3c .conteudo { height: 339px; overflow:hidden; }
-.pag-bola { position:absolute; right: 15px; bottom:15px; height:14px; }
+.destaque-3c .conteudo {height: 345px!important;margin-bottom: 20px; overflow:hidden; }
+.pag-bola { position:absolute; right: 15px; bottom: 15px; height:14px; }
 #barra-site h2 { margin-bottom:30px; }
 select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
+.pag-bola { margin:0 auto; width:auto;}
+.pag-bola li { width:13px; display:inline-block; margin-bottom:10px;  border:none; }
+.pag-bola li a { width:13px; height:13px; background: url(../images/pag-ball.png) no-repeat -14px 0; display:block; margin:0; padding:0;}
+.pag-bola li:hover a,
+.pag-bola li.ativo a { background-position:-70px 0!important; }
+.pag-escura { background:#333; height:21px; overflow:hidden; line-height:21px; margin-top:10px; }
+.pag-escura .pag-bola { margin:0 auto; position:relative; overflow:hidden; left:0; bottom:0; width:85px; margin:2px auto; }
+.pag-escura .pag-bola li { width:13px; float:left; margin:2px }
+.pag-escura .pag-bola li a { width:13px; height:13px; background:url(../images/pag-ball.png) no-repeat -28px 0; display:block; }
+.pag-escura .pag-bola li a:hover,
+.pag-escura .pag-bola li a.ativo { background-position:-41px 0; }
+.cursos .jcarousel-item-horizontal { width:276px; height:300px; background:#e0e0e0; }
+.cursos .jcarousel-clip { height: 300px; }
+.cursos .thumbnail .caption { height:117px; overflow:hidden;  }
+.thumbnails .span3:hover,
+.cursos .jcarousel-item-horizontal:hover { background-color:#ff6633; }
+.cursos .caption { color:#333 }
+.cursos .caption h5,
+.cursos .caption h5 a { font-size:18px; max-height:44px; }
+.cursos .caption p { font-size:14px;  max-height: 54px;    overflow: hidden; }
+.cursos .jcarousel-item-horizontal:hover .thumbnail { border-color:#ff6633; background:#ff6633; }
+.cursos .jcarousel-item-horizontal:hover h5,
+.cursos .jcarousel-item-horizontal:hover p { color:#fff; }
+.cursos .thumbnail { margin:0;  }
+.cursos .thumbnails > li { margin:0 25px 0 0; width: 285px;  }
+.cursos .thumbnail:hover { border-color:#8A991E!important; background-color:#8A991E!important; }
+.cursos .thumbnail:hover h5,
+.cursos .thumbnail:hover p,
+.cursos .thumbnail:hover a { color:#fff; }
+.cursos .caption h5 { margin-bottom:5px; }
+.cursos .caption a { max-height:75px; overflow:hidden;}
+.cursos .thumbnails h5 a { line-height:22px; }
+.cursos .thumbnails a { color:#333; line-height:18px; display: block;   }
+.cursos .thumbnail:hover a { text-decoration:none; }
+.cursos .thumbnail { background:#F0E6DD;  }
+.cursos .thumbnails a img { width:266px; height:160px; }
+.conteudo-box{width: 930px;;margin:0 auto;}

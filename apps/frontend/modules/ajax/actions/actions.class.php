@@ -307,7 +307,7 @@ class ajaxActions extends sfActions
            }
 	       }
 
-         $return .= '$(\'#livestream2\').show();$(\'#livestream2\').html(\'<video controls="controls" height="390" src="http://200.136.27.12/hls-live/livepkgr/_definst_/liveevent/tvcultura.m3u8" width="640"></video>\');';
+         $return .= '$(\'#livestream2\').show();$(\'#livestream2\').html(\'<video controls="controls" height="390" src="http://200.136.27.12/hls-live/livepkgr/_definst_/liveevent/tvcultura2.m3u8" width="640"></video>\');';
 	       
 	       if(!$mobile){ 
             $return .= "
@@ -316,7 +316,7 @@ class ajaxActions extends sfActions
             so.addVariable('autostart', 'true');
             so.addVariable('streamer', 'rtmp://200.136.27.12/livepkgr');
             //so.addVariable('file', '".$streaming."');
-            so.addVariable('file', 'tvcultura?adbe-live-event=liveevent');
+            so.addVariable('file', 'tvcultura2?adbe-live-event=liveevent');
             so.addVariable('type', 'video');
             so.addParam('allowscriptaccess','always');
             so.addParam('allowfullscreen','true');

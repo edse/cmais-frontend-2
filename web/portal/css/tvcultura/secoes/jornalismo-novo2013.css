@@ -55,7 +55,7 @@
 .aspas{font-family:Arial, Helvetica, sans-serif; font-size:30px!important; color:#cccccc!important;}
 
 #capa-site{width:980px; text-align: left;}
-#capa-site #conteudo-pagina {margin-left: 0;overflow:hidden; }
+#capa-site #conteudo-pagina {overflow:hidden; }
 #capa-site #miolo .coluna-esquerda,
 #capa-site #miolo .coluna-central,
 #capa-site #miolo .coluna-direita{float:left;margin-left:20px; overflow: hidden;}
