@@ -338,7 +338,7 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .cursos .jcarousel-item-horizontal:hover h5,
 .cursos .jcarousel-item-horizontal:hover p { color:#fff; }
 .cursos .thumbnail { margin:0;  }
-.cursos .thumbnails > li { margin:0 25px 0 0; width: 285px;  }
+.cursos .thumbnails > li { margin:0 25px 0 0; width: 266px;  }
 .cursos .thumbnail:hover { border-color:#8A991E!important; background-color:#8A991E!important; }
 .cursos .thumbnail:hover h5,
 .cursos .thumbnail:hover p,
@@ -348,6 +348,6 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .cursos .thumbnails h5 a { line-height:22px; }
 .cursos .thumbnails a { color:#333; line-height:18px; display: block;   }
 .cursos .thumbnail:hover a { text-decoration:none; }
-.cursos .thumbnail { background:#F0E6DD;  }
+.cursos .thumbnail { background:#F0E6DD;width:266px;  }
 .cursos .thumbnails a img { width:266px; height:160px; }
 .conteudo-box{width: 930px;;margin:0 auto;}
