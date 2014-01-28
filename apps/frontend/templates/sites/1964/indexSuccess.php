@@ -47,6 +47,7 @@
 			          <li style="display: block;" id="bloco<?php echo $k ?>" class="filho">
 			          	<a class="media" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
 			          		<img src="<?php echo $d->retriveImageUrlByImageUsage('image-10-b') ?>" alt="<?php echo $d->getTitle() ?>">
+			          		<div class="subs"><?php echo $d->getTitle() ?></div>
 			          	</a>
 			         	</li>
 			        	<?php endforeach; ?>
