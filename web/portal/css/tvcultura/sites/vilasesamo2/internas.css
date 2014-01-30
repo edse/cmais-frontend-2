@@ -151,8 +151,8 @@ body.campanhas{background-color:#fee133!important;}
 /* todos itens*/
 
 .todos-itens { margin-top:20px; overflow:hidden; }
-.todos-itens a div{white-space:nowrap; text-overflow: ellipsis; overflow: hidden; padding:0 10px}
-.todos-itens a {font-family: 'dinmedium';color: #FFF;font-size: 18px;text-transform: uppercase;margin: 0;line-height: 20px;vertical-align: middle;max-height:302px;/*height: 42px;*/} 
+.todos-itens a div{white-space:nowrap; text-overflow: ellipsis; overflow: hidden; padding:0 10px;max-height:302px;}
+.todos-itens a {font-family: 'dinmedium';color: #FFF;font-size: 18px;text-transform: uppercase;margin: 0;line-height: 20px;vertical-align: middle;/*height: 42px;*/} 
 .todos-itens a:hover{color:#FFF;}
 .interna .todos-itens .row-fluid,
 .campanhas .todos-itens .row-fluid { margin-left:0; width:980px; *margin-left:-20px; margin-left: -20px!important; }
