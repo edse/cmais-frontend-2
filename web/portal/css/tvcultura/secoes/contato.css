@@ -240,3 +240,8 @@
 	text-transform: uppercase;
 	width: 308px;
 }
+.envie{
+	background:url(/portal/images/capaPrograma/envie_sua_foto_topo.jpg) no-repeat center;
+	height:100px;
+	margin-bottom:10px;
+}
