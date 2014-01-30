@@ -83,7 +83,7 @@ $(document).ready(function(){
     $(this).prev().toggleClass('icon-circle-arrow-down');
     goTop($(this).attr('data-parent'));
   });
-  $('.col-esquerda a').click(function(){
+  $('.col-direita a').click(function(){
     $('.fundo-cinza').hide(); 
     goTop($(this).attr('id'));
   });
