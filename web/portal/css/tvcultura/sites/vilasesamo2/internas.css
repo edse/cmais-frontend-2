@@ -343,7 +343,7 @@ body.personagens { background:#b60401; }
 .personagens .dest-pers .img-destaque { position:relative; width:100%; display: block;}
 .personagens .dest-pers .span4.pull-left{min-height:275px;}
 .personagens .dest-pers .span6.jogos a img{width:200px;border-top:none; border-bottom:2px solid #008dff;border-top:none;float:left;}
-.personagens .dest-pers .span6.videos a img{width:346px;border-top:none; border-bottom:2px solid #f77400; float:left;}
+.personagens .dest-pers .span6.videos a img{width:368px;border-top:none; border-bottom:2px solid #f77400; float:left;}
 .personagens .dest-pers .span6.atividades a img{width:200px;border-top:none; border-bottom:2px solid #7825e9;float:left;}
 .personagens .dest-pers .span8{clear:none;}
 .personagens .dest-pers .mais-brincadeiras{margin: 0;text-align: left;height: 30px;padding-left: 15px;}
