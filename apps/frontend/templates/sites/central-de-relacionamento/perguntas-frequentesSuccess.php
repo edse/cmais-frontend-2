@@ -85,7 +85,7 @@ $(document).ready(function(){
     goTop($(this).attr('data-parent'));
   });
   $('.col-direita a').click(function(){
-    $('.fundo-cinza.in').hide();
+    //$('.fundo-cinza').hide();
     $('.col-sub i').removeClass('icon-circle-arrow-down');
     $(this).next().show();
     $(this).prev().toggleClass('icon-circle-arrow-down'); 
