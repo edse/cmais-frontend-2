@@ -48,10 +48,10 @@
                <?php foreach($display as $value=>$d): ?>
                  <li class="<?php if($value%2==0){echo "tarja1";}else{echo "tarja2";}?>">
                    <i class="icon-circle-arrow-right"></i>  
-                   <a href="javascript:;" class="formas" data-parent="#<?php echo $display[0]->Block->getSlug() ?>" data-target="#<?php echo $display[0]->Block->getId()."-".$display[$value]->Asset->getId() ?>">
+                   <a href="javascript:;" class="formas" data-toggle="collapse" data-parent="#<?php echo $display[0]->Block->getSlug() ?>" data-target="#<?php echo $display[0]->Block->getId()."-".$display[$value]->Asset->getId() ?>">
                      <?php echo $d->Asset->getTitle() ?>
                    </a>
-                   <div id="<?php echo $display[0]->Block->getId()."-".$display[$value]->Asset->getId() ?>" class="fundo-cinza in"style="overflow: hidden; clear: both;">
+                   <div id="<?php echo $display[0]->Block->getId()."-".$display[$value]->Asset->getId() ?>" class="fundo-cinza collapse in"style="overflow: hidden; clear: both;">
                      <?php echo html_entity_decode($d->Asset->AssetContent->render()) ?> 
                    </div>
                  </li>
@@ -75,8 +75,7 @@
 <!--container-->
 <script>
 $(document).ready(function(){
-  //$(".collapse").collapse(); 
-  $('.fundo-cinza').hide();
+  $(".collapse").collapse();
   $(".dicas").click(function(){
     $(this).prev().toggleClass('icon-minus');
   });
@@ -84,11 +83,7 @@ $(document).ready(function(){
     $(this).prev().toggleClass('icon-circle-arrow-down');
     goTop($(this).attr('data-parent'));
   });
-  $('.col-direita a').click(function(){
-    //$('.fundo-cinza').hide();
-    $('.col-sub i').removeClass('icon-circle-arrow-down');
-    $(this).next().show();
-    $(this).prev().toggleClass('icon-circle-arrow-down'); 
+  $('.col-esquerda a').click(function(){ 
     goTop($(this).attr('id'));
   });
   $('.voltar-perguntas').click(function(){ 
