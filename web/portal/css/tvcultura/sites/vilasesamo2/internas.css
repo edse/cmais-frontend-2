@@ -188,7 +188,7 @@ body.campanhas{background-color:#fee133!important;}
 .interna.videos .filtro .span10 { border-left: 2px solid #f77400; }
 .interna.videos .yt-destaque{width:350px; height:350px; display:block; overflow: hidden;border:#FFFFFF 2px solid;}
 .interna.videos .yt-destaque:hover{border:#fba500 2px solid;}
-.interna.videos .yt-destaque img{max-width:750px!important;margin-left: -73px;margin-top: -7px;}
+.interna.videos .yt-destaque img{max-width: 764px!important;margin-left: -139px;margin-top: -63px;width: 635px;}
 .interna.videos .yt-menu,
 .cuidadores .container-cuidadores .destaques .yt-menu{max-width:300px;height:300px; display:block; overflow: hidden;border-bottom:#f77400 2px solid;}
 /*
