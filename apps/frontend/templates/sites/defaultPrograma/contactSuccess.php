@@ -191,7 +191,11 @@
               <div class="box-publicidade grid1">
                 <!-- programas-assets-300x250 -->
                 <script type='text/javascript'>
-                GA_googleFillSlot("cmais-assets-300x250");
+                <?php if($site->slug == "classicos"): ?>
+                	GA_googleFillSlot("culturafm-300x250");
+                <?php else: ?>
+                	GA_googleFillSlot("cmais-assets-300x250");
+                <?php endif;?>
                 </script>
               </div>
               <!-- / BOX PUBLICIDADE -->
