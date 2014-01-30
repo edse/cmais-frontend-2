@@ -75,7 +75,8 @@
 <!--container-->
 <script>
 $(document).ready(function(){
-  $(".collapse").collapse();
+  //$(".collapse").collapse();
+  $('.fundo-cinza').hide();
   $(".dicas").click(function(){
     $(this).prev().toggleClass('icon-minus');
   });
