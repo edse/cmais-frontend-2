@@ -578,7 +578,8 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques .span6.atividades a { border-color: #7732e5; }
 
 .destaques .videos .yt-menu{height:197px; overflow: hidden;position:relative;}
-.destaques .videos .yt-menu img{width: 500px!important;max-width: 263px;position: absolute;left: -36px;}
+/*.destaques .videos .yt-menu img{width: 500px!important;max-width: 263px;position: absolute;left: -36px;}*/
+.destaques .videos .yt-menu img {width: 801px;max-width: 365px;position: absolute;left: -70px;top: -41px;}
 .destaques .videos:hover img.destaque,
 .destaques .jogos:hover img.destaque,
 .destaques .atividades:hover img.destaque{opacity:0.5;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter: alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;}
