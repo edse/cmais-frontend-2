@@ -86,7 +86,9 @@ $(document).ready(function(){
   });
   $('.col-direita a').click(function(){
     $('.fundo-cinza').slideUp();
-    $(this).next().toggle(); 
+    $('.col-sub i').removeClass('icon-circle-arrow-down');
+    $(this).next().slideDown();
+    $(this).prev().toggleClass('icon-circle-arrow-down'); 
     goTop($(this).attr('id'));
   });
   $('.voltar-perguntas').click(function(){ 
