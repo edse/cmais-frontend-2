@@ -85,9 +85,11 @@ $(document).ready(function(){
     goTop($(this).attr('data-parent'));
   });
   $('.col-direita a').click(function(){
-    $('.fundo-cinza').slideUp();
+    $('.fundo-cinza').slideUp(function(){
+      $(this).next().slideDown();
+    });
     $('.col-sub i').removeClass('icon-circle-arrow-down');
-    $(this).next().slideDown();
+    
     $(this).prev().toggleClass('icon-circle-arrow-down'); 
     goTop($(this).attr('id'));
   });
