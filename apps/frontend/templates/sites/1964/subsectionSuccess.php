@@ -104,20 +104,7 @@ $(function(){
 
       <!-- BARRA SITE -->
   		<div id="barra-site" onclick=location="1964" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
-	       <div class="topo-timeline">
-		          <!-- <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/43cfb180f75e0cbc2c2823f4cfb603643151ab5a.png" /></a></h2>-->
-		          
-		          <!-- curtir -->
-		          <!--?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri)) ?-->
-		          <!-- /curtir -->
-		                    
-		          <!-- horario -->
-		          <!--div id="horario"
-		            <p>Canal digital 2.2 da multiprogramação da TV Cultura</p>
-		          </div>-->
-		          <!-- /horario -->
-	          
-	        </div>
+	       
 			<!-- box-topo -->
 	        <div class="box-topo grid3">
 		       	<!-- menu interna -->
