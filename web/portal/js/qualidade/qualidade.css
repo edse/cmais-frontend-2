@@ -282,7 +282,7 @@
 
 
 /* AJUSTES ARTES TOPO E MENU */
-#barra-site{background-image:url(http://172.20.16.219/portal/images/timeline/topo.png);background-repeat: no-repeat;height: 230px;margin:0 0 0 42px!important;cursor:pointer}
+#barra-site{background-image:url();background-repeat: no-repeat;height: 230px;margin:0 0 0 42px!important;cursor:pointer}
 #barra-site .topo-timeline{width: 970px;min-height: 56px !important;}
 .a1964 .menu-interna {float: right;width: auto ;}
 .a1964 .menu-interna li {background-image:url(http://cmais.com.br/portal/images/timeline/botao.png);width: 120px;height: 54px;background-color: transparent;}
