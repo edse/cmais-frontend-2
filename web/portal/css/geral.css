@@ -789,7 +789,7 @@ body {background:#fff url(../images/bg-tudo3a.jpg) repeat-x;}
 .box-padrao .topo { overflow:hidden; height:27px; margin-bottom:10px; }
 .box-padrao .topo h4 { margin-left:10px; float:left; }
 .box-padrao .topo span { background:url(../images/aba-titulo.png) no-repeat 0 0; width:15px; height:27px; float:left; position:relative; }
-.box-padrao .capa-titulo { height:22px; background:#333; width:295px; float:left; margin-top:5px; }
+.box-padrao .capa-titulo { height:22px; background:#0d6104; width:295px; float:left; margin-top:5px; }/*background:#333;*/
 .box-padrao .claro span { background-position:-15px 0; }
 .box-padrao .claro .capa-titulo {/* background:#ff6633; */ background:#0d6104; }
 .box-padrao .arte span { background-position:-60px 0; }

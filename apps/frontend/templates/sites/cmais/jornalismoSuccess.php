@@ -277,7 +277,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 					<div class="destaque-programas <?php if($k % 2  == 0) echo "s-margem"?>">
 						<h2><i class="ico-setas ico-seta-direita"></i><?php echo $d->getTitle() ?></h2>
  							<a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-			            <img src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>" width="206">
+			            <img src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>" width="206" height="122">
 			            <p><?php echo $d->getDescription() ?></p>
 			        </a>
 			        
