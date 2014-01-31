@@ -126,8 +126,8 @@
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
-			               css: "http://cmais.com.br/portal/js/timeline/1964.css",
-			               js: "http://univesptv.cmais.com.br/portal/js/timeline/timeline-min.js"
+			               css: "http://cmais.com.br/portal/js/qualidade/qualidade.css",
+			               js: "http://cmais.com.br/portal/js/qualidade/timeline-min.js"
 			              }
 			            </script>
 			            <script type="text/javascript" src="http://univesptv.cmais.com.br/portal/js/timeline/storyjs-embed.js"></script>
