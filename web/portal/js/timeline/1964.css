@@ -310,7 +310,7 @@ a.thumbnail:hover { border-color:#ff6633; }
 .destaque-3c .media { width:965px!important; height:339px; }
 .destaque-3c .media img { border: 5px solid #F0E6DD; width:960px!important; height:329px!important; }
 .destaque-3c, 
-.destaque-3c .conteudo {height: 345px!important;margin-bottom: 20px; overflow:hidden; }
+.destaque-3c .conteudo {height: 339px!important;margin-bottom: 20px; overflow:hidden; }
 .pag-bola { position:absolute; right: 15px; bottom: 15px; height:14px; }
 #barra-site h2 { margin-bottom:30px; }
 select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
@@ -351,5 +351,5 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .cursos .thumbnail { background:#F0E6DD;width:266px;  }
 .cursos .thumbnails a img { width:266px; height:160px; }
 .conteudo-box{width: 930px;;margin:0 auto;}
-.subs{background-color: rgba(0, 0, 0, 0.8);background: rgba(0, 0, 0, 0.8);color: rgba(0, 0, 0, 0.8);width:960px;position: absolute;margin-left: 5px;bottom: 0;}
-.subs h2{color:#fff;bottom: 0;font-family: Arial;text-align: left;font-size: 41px;line-height:120px;padding-left:15px;}
+.subs{background-color: rgba(0, 0, 0, 0.8);background: rgba(0, 0, 0, 0.8);color: rgba(0, 0, 0, 0.8);width:960px;position: absolute;margin-left: 5px;bottom: 4px;height:120px;}
+.subs h2{color:#fff;bottom: 0;font-family: Arial;text-align: left;font-size: 41px;padding-left:15px;}
