@@ -48,7 +48,7 @@
                <?php foreach($display as $value=>$d): ?>
                  <li class="<?php if($value%2==0){echo "tarja1";}else{echo "tarja2";}?>">
                    <i class="icon-circle-arrow-right"></i>  
-                   <a href="javascript:;" class="formas" data-toggle="collapse" data-parent="#<?php echo $display[0]->Block->getSlug() ?>" data-target="#<?php echo $display[0]->Block->getId()."-".$display[$value]->Asset->getId() ?>">
+                   <a href="javascript:;" class="formas" data-parent="#<?php echo $display[0]->Block->getSlug() ?>" data-target="#<?php echo $display[0]->Block->getId()."-".$display[$value]->Asset->getId() ?>">
                      <?php echo $d->Asset->getTitle() ?>
                    </a>
                    <div id="<?php echo $display[0]->Block->getId()."-".$display[$value]->Asset->getId() ?>" class="fundo-cinza collapse in"style="overflow: hidden; clear: both;">
@@ -75,12 +75,18 @@
 <!--container-->
 <script>
 $(document).ready(function(){
-  $(".collapse").collapse();
+  //$(".collapse").collapse();
   $(".dicas").click(function(){
     $(this).prev().toggleClass('icon-minus');
   });
-  $('.formas').click(function(){
-    $(this).prev().toggleClass('icon-circle-arrow-down');
+  $(".formas").click(function(){
+    $(".formas").next().addClass('hide').removeClass('show');
+    $(this).next().addClass('show').removeClass('hide'); 
+
+    
+    $('icon-circle-arrow-right').removeClass('icon-circle-arrow-down');
+    $(this).prev().addClass('icon-circle-arrow-down');
+    
     goTop($(this).attr('data-parent'));
   });
   $('.col-esquerda a').click(function(){ 
@@ -96,4 +102,8 @@ $(document).ready(function(){
   }
 });
 </script>
+<style>
+.fundo-cinza.hide{display:none;}
+.fundo-cinza.show{display:block;}
+</style>
 
