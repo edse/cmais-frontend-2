@@ -35,7 +35,7 @@ storyjs_jsonp_data = {
                 "startDate":"<?php echo $date1?>,0,0",
                 "endDate":"<?php echo $date1?>,0,0",
                 "headline":"<?php echo $d->getTitle()?>",
-                "text":"<p><?php echo $d->getDescription()?></p><button class='btn btn-large btn-primary' type='button' onclick='self.location.href=\"<?php echo $d->retriveUrl()?>\"'>Leia mais  &raquo;</button>",
+                "text":"<p><?php echo $d->getDescription()?></p>",
                 "asset":
                 {
                     "media":"<?php echo $src?>",

@@ -1,4 +1,4 @@
-<link type="text/css" href="http://cmais.com.br/portal/univesptv/css/geral.css" rel="stylesheet" />
+<link type="text/css" href="http://cmais.com.br/portal/css/geral.css" rel="stylesheet" />
 <!--link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css">
 <link rel="stylesheet" href="http://cmais.com.br/portal/univesptv/css/cursos.css" /-->
