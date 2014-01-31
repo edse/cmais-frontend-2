@@ -46,9 +46,10 @@
 								<?php foreach($displays['destaque-principal'] as $k=>$d): ?>
 			          <li style="display: block;" id="bloco<?php echo $k ?>" class="filho">
 			          	<a class="media" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-			          		<img src="<?php echo $d->retriveImageUrlByImageUsage('image-10-b') ?>" alt="<?php echo $d->getTitle() ?>">
 			          		<div class="subs"><h2><?php echo $d->getTitle() ?></h2></div>
+			          		<img src="<?php echo $d->retriveImageUrlByImageUsage('image-10-b') ?>" alt="<?php echo $d->getTitle() ?>">
 			          	</a>
+			          	
 			         	</li>
 			        	<?php endforeach; ?>
 			        </ul>
@@ -111,7 +112,7 @@
          	 	</div>
          	 	<!--TITULO-->
 		   	   	 <div class="box-interna grid2">
-			   	   
+			   	   <h2>Linha do Tempo</h2>
 		   	   	 </div>
 		   	   	 <!--TITULO-->
 		   	   	
@@ -126,7 +127,8 @@
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
-			               css: "http://cmais.com.br/portal/js/timeline/1964.css",
+			               css: "http://172.20.16.219/portal/js/timeline/1964.css",
+			               lang: "http://172.20.16.219/portal/js/timeline/pt-br.js",
 			               js: "http://univesptv.cmais.com.br/portal/js/timeline/timeline-min.js"
 			              }
 			            </script>
