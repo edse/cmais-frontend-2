@@ -30,10 +30,12 @@ storyjs_jsonp_data = {
               $src = "http://www.youtube.com/watch?v=".$assets[0]->AssetVideo->getYoutubeId();
               $thumb = "http://img.youtube.com/vi/".$assets[0]->AssetVideo->getYoutubeId()."/default.jpg";
             }
-						
-						if(count($assets) <= 0) {
+						echo count($assets);
+						if(count($assets) < 1) {
+							
 							$src = "http://midia.cmais.com.br/assets/image/default/f734c02e984e7059a94276178adb725acc71ffbf.jpg";	
-							$thumb = "http://midia.cmais.com.br/assets/image/thumbnail/f734c02e984e7059a94276178adb725acc71ffbf.jpg";	
+							$thumb = "http://midia.cmais.com.br/assets/image/thumbnail/f734c02e984e7059a94276178adb725acc71ffbf.jpg";
+							echo "<br>".$src.$thumb."<br>";	
 						}
 						
 						
