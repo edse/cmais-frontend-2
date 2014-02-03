@@ -50,7 +50,8 @@
           </div>
           <?php endif; ?>
           
-          <h3 class="tit-pagina grid3"><?php echo $section->getTitle() ?></h3>
+          <h3 class="tit-pagina grid3"><?php echo $section->getTitle() ?></h3>  
+          <p><?php echo html_entity_decode($section->getDescription())?></p>
 
         </div>
         <!-- /box-topo -->
@@ -73,8 +74,6 @@
             <div id="esquerda" class="grid2">
               <div class="contato grid2">
 
-                <h3 class="tit-pagina grid3"><?php echo $section->getTitle() ?></h3>  
-                <p><?php echo html_entity_decode($section->getDescription())?></p>
                 <div class="envie"></div>
                                 
                   <div class="msgErro" style="display:none">
