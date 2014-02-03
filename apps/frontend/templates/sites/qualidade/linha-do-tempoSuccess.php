@@ -34,7 +34,7 @@ storyjs_jsonp_data = {
               $thumb = "http://img.youtube.com/vi/".$assets[0]->AssetVideo->getYoutubeId()."/default.jpg";
             }
             
-            if(count($assets) < 0) $thumb = "http://midia.cmais.com.br/assets/image/default/f734c02e984e7059a94276178adb725acc71ffbf.jpg";
+            if(count($assets) == 0) $thumb = "http://midia.cmais.com.br/assets/image/default/f734c02e984e7059a94276178adb725acc71ffbf.jpg";
 						
             if(isset($date1)):
 							$description = str_replace("\r\n",";",trim($d->getDescription()));
