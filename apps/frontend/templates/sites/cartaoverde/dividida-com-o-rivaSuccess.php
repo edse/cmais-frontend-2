@@ -10,7 +10,52 @@
     <div id="capa-site">
 
       <!-- BARRA SITE -->
-      <div id="barra-site"></div>
+      <div id="barra-site">
+        <div class="topo-programa">
+          <?php if(isset($program) && $program->id > 0): ?>
+          <h2>
+            <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
+              <?php if($program->getImageThumb() != ""): ?>
+                <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
+              <?php else: ?>
+                <h3 class="tit-pagina grid1"><?php echo $program->getTitle() ?></h3>
+              <?php endif; ?>
+            </a>
+          </h2>
+          <?php endif; ?>
+
+          <?php if(isset($program) && $program->id > 0): ?>
+          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
+          <?php endif; ?>
+          
+          <?php if(isset($program) && $program->id > 0): ?>
+          <!-- horario -->
+          <div id="horario">
+            <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
+          </div>
+          <!-- /horario -->
+          <?php endif; ?>
+        </div>
+
+        <!-- box-topo -->
+        <div class="box-topo grid3">
+
+          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
+
+          <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
+          <div class="navegacao txt-10">
+            <a href="../" title="Home">Home</a>
+            <span>&gt;</span>
+            <a href="<?php echo $section->retriveUrl()?>" title="<?php echo $section->getTitle()?>"><?php echo $section->getTitle()?></a>
+          </div>
+          <?php endif; ?>
+          
+          <h3 class="tit-pagina grid3"><?php echo $section->getTitle() ?></h3>
+
+        </div>
+        <!-- /box-topo -->
+        
+      </div>
       <!-- /BARRA SITE -->
 
       <!-- MIOLO -->
