@@ -42,25 +42,8 @@ $(function(){
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
-					<?php if(isset($assetPrev) && isset($assetNext)): ?>
-              <div class="botoes">
-               	<a href="<?php echo $assetPrev->retriveUrl() ?>" class="btn" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
-                <a href="<?php echo $assetNext->retriveUrl() ?>" class="btn" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
-              </div>
-							<?php else: ?>
-              <div class="botoes">
-								<?php if(isset($assetPrev)): ?>              	
-                	<a href="<?php echo $assetPrev->retriveUrl() ?>" class="btn" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
-                <?php else: ?>
-                	<a href="javascript:;" class="btn disabled" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
-                <?php endif; ?>
-								<?php if(isset($assetNext)): ?>              	
-                <a href="<?php echo $assetNext->retriveUrl() ?>" class="btn" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
-                <?php else: ?>
-                <a href="javascript:;" class="btn disabled" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
-                <?php endif; ?>
-              </div>
-              <?php endif; ?>
+        	
+          
           <!-- CAPA -->
           <div class="capa grid3">
           	
@@ -85,7 +68,28 @@ $(function(){
                   <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
 
                 </div>
-                
+                <!-- BOTÕES -->
+								<?php if(isset($assetPrev) && isset($assetNext)): ?>
+			              <div class="botoes">
+			               	<a href="<?php echo $assetPrev->retriveUrl() ?>" class="btn" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
+			                <a href="<?php echo $assetNext->retriveUrl() ?>" class="btn" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
+			              </div>
+										<?php else: ?>
+			              <div class="botoes">
+											<?php if(isset($assetPrev)): ?>              	
+			                	<a href="<?php echo $assetPrev->retriveUrl() ?>" class="btn" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
+			                <?php else: ?>
+			                	<a href="javascript:;" class="btn disabled" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
+			                <?php endif; ?>
+											<?php if(isset($assetNext)): ?>              	
+			                <a href="<?php echo $assetNext->retriveUrl() ?>" class="btn" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
+			                <?php else: ?>
+			                <a href="javascript:;" class="btn disabled" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
+			                <?php endif; ?>
+			              </div>
+			          <?php endif; ?>
+			          <!--/ BOTÕES -->
+			          <div class="fb-like" data-send="false" data-width="450" data-show-faces="false" data-action="recommend"></div>
                 <div class="texto">
                   <?php echo html_entity_decode($asset->AssetContent->render()) ?>
                 </div>
@@ -140,6 +144,9 @@ $(function(){
               </div>
               <!-- / BOX PUBLICIDADE -->
               
+              <!--BOX DICAS DE COMPRA-->
+              <?php include_partial_from_folder('blocks','global/box-dicas', array('section'=> $section)) ?>
+
               <?php $relacionados = array(); if($asset) $relacionados = $asset->retriveRelatedAssets2(); ?>
               <?php if(count($relacionados) > 0): ?>
               <?php //$relacionados = $relatedAssets; if(count($relacionados) > 0): ?>
