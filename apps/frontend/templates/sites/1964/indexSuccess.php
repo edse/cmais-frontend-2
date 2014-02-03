@@ -77,7 +77,7 @@
 			            ->select('b.*')
 			            ->from('Block b, Section s')
 			            ->where('b.section_id = s.id')
-			            ->andWhere('s.slug = ?', 'fotos')
+			            ->andWhere('s.slug = ?', 'programas-especiais')
 			            ->andWhere('s.site_id = ?', $site->id)
 									->execute();
 									
