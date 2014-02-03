@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
+<link rel="stylesheet" href="/portal/js/timeline/1964.css" type="text/css" />
 <script type="text/javascript">
 $(function(){
   //hover states on the static widgets
@@ -16,55 +16,19 @@ $(function(){
     <!-- CAPA SITE -->
     <div id="capa-site">
 
-      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
-
-      <!-- BARRA SITE -->
-      <div id="barra-site">
-        <?php
-         /*
-        <?php if(isset($program) && $program->id ): ?>
-        <div class="topo-programa">
-          <!--
-          <h2>
-            <a href="<?php echo $program->retriveUrl() ?>">
-              <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
-            </a>
-          </h2>
-          -->
-          <?php endif; ?>
-       
-          <?php if(isset($program) && $program->id > 0): ?>
-            <!-- horario -->
-            <div id="horario">
-              <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
-            </div>
-            <!-- /horario -->
-        </div>
-        <?php endif; ?>
-        */
-        ?>
-        <?php if(isset($siteSections) && $site->getType() != "Portal"): ?>
-        <!-- box-topo -->
-        <div class="box-topo grid3">
-          
-          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
-
-          <?php if(isset($section)): ?>
-            <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
-            <div class="navegacao txt-10">
-              <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
-              <span>&gt;</span>
-              <a href="<?php echo $asset->retriveUrl()?>" title="<?php echo $asset->getTitle()?>"><?php echo $asset->getTitle()?></a>
-            </div>
-            <?php endif; ?>
-          <?php endif; ?>
-
-        </div>
-        <!-- /box-topo -->
-        <?php endif; ?>
-
-      </div>
-      <!-- /BARRA SITE -->
+      <div id="barra-site" onclick=location="home" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
+				
+				<!-- TOPO -->
+		    <div class="topo-programa">
+		    	
+	    		<!-- MENU -->
+					<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections))?>
+					<!--/ MENU -->
+					
+		    <!-- / TOPO -->  
+		    </div>
+		    </div>
+		  <!-- /BARRA SITE -->  
 
       <!-- MIOLO -->
       <div id="miolo">
@@ -85,7 +49,7 @@ $(function(){
               <!-- NOTICIA INTERNA -->
               <div class="box-interna grid2">
                 <h3><?php echo $asset->getTitle() ?></h3>
-                <p><?php echo $asset->getDescription() ?></p><br>
+                <p><?php echo $asset->getDescription() ?></p>
                 <div class="assinatura grid2">
                   <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
                   <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
@@ -153,6 +117,9 @@ $(function(){
                 </script>
               </div>
               <!-- / BOX PUBLICIDADE -->
+              
+              <!--BOX DICAS DE COMPRA-->
+              <?php include_partial_from_folder('blocks','global/box-dicas', array('section'=> $section)) ?>
 
               <?php $relacionados = array(); if($asset) $relacionados = $asset->retriveRelatedAssets2(); ?>
               <?php if(count($relacionados) > 0): ?>
