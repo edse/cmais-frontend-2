@@ -140,9 +140,6 @@ $(function(){
               </div>
               <!-- / BOX PUBLICIDADE -->
               
-              <!--BOX DICAS DE COMPRA-->
-              <?php include_partial_from_folder('blocks','global/box-dicas', array('section'=> $section)) ?>
-
               <?php $relacionados = array(); if($asset) $relacionados = $asset->retriveRelatedAssets2(); ?>
               <?php if(count($relacionados) > 0): ?>
               <?php //$relacionados = $relatedAssets; if(count($relacionados) > 0): ?>
