@@ -30,12 +30,13 @@ storyjs_jsonp_data = {
               $thumb = "http://img.youtube.com/vi/".$assets[0]->AssetVideo->getYoutubeId()."/default.jpg";
             }
             if(isset($date1)):
+							$description = str_replace("\r\n",";",trim($d->getDescription()));
             ?>
             {
                 "startDate":"<?php echo $date1?>,0,0",
                 "endDate":"<?php echo $date1?>,0,0",
                 "headline":"<?php echo $d->getTitle()?>",
-                "text":"<p>2<?php echo wordwrap($d->getDescription())?></p><button class='btn btn-large btn-primary' type='button' onclick='self.location.href=\"<?php echo $d->retriveUrl()?>\"'>Leia mais  &raquo;</button>",
+                "text":"<p>4<?php echo $description?></p>",
                 "asset":
                 {
                     "media":"<?php echo $src?>",
