@@ -129,37 +129,38 @@ $(function(){ //onready
                       <label>cidade</label>
                       <input type="text" name="cidade" id="cidade" />
                     </div>
-                    <div class="linha t1">
+                    <div class="linha t2">
                       <label>estado</label>
-                      <select class="span1" id="estado" name="estado">
-                         <option value="" selected="selected">- Selecione -</option>
-                         <option value="Acre">AC</option>
-                         <option value="Alagoas">AL</option>
-                         <option value="Amazonas">AM</option>
-                         <option value="Amap&aacute;">AP</option>
-                         <option value="Bahia">BA</option>
-                         <option value="Cear&aacute;">CE</option>
-                         <option value="Distrito Federal">DF</option>
-                         <option value="Espirito Santo">ES</option>
-                         <option value="Goi&aacute;s">GO</option>
-                         <option value="Maranh&atilde;o">MA</option>
-                         <option value="Minas Gerais">MG</option>
-                         <option value="Mato Grosso do Sul">MS</option>
-                         <option value="Mato Grosso">MT</option>
-                         <option value="Par&aacute;">PA</option>
-                         <option value="Para&iacute;ba">PB</option>
-                         <option value="Pernambuco">PE</option>
-                         <option value="Piau&iacute;">PI</option>
-                         <option value="Paran&aacute;">PR</option>
-                         <option value="Rio de Janeiro">RJ</option>
-                         <option value="Rio Grande do Norte">RN</option>
-                         <option value="Rond&ocirc;nia">RO</option>
-                         <option value="Roraima">RR</option>
-                         <option value="Rio Grande do Sul">RS</option>
-                         <option value="Santa Catarina">SC</option>
-                         <option value="Sergipe">SE</option>
-                         <option value="S&atilde;o Paulo">SP</option>
-                         <option value="Tocantins">TO</option>
+                      <br>
+                      <select class="estado required" id="estado">
+                        <option value="" selected="selected">--</option>
+                        <option value="Acre">AC</option>
+                        <option value="Alagoas">AL</option>
+                        <option value="Amazonas">AM</option>
+                        <option value="Amapá">AP</option>
+                        <option value="Bahia">BA</option>
+                        <option value="Ceará">CE</option>
+                        <option value="Distrito Federal">DF</option>
+                        <option value="Espirito Santo">ES</option>
+                        <option value="Goiás">GO</option>
+                        <option value="Maranhão">MA</option>
+                        <option value="Minas Gerais">MG</option>
+                        <option value="Mato Grosso do Sul">MS</option>
+                        <option value="Mato Grosso">MT</option>
+                        <option value="Pará">PA</option>
+                        <option value="Paraíba">PB</option>
+                        <option value="Pernambuco">PE</option>
+                        <option value="Piauí">PI</option>
+                        <option value="Paraná">PR</option>
+                        <option value="Rio de Janeiro">RJ</option>
+                        <option value="Rio Grande do Norte">RN</option>
+                        <option value="Rondônia">RO</option>
+                        <option value="Roraima">RR</option>
+                        <option value="Rio Grande do Sul">RS</option>
+                        <option value="Santa Catarina">SC</option>
+                        <option value="Sergipe">SE</option>
+                        <option value="São Paulo">SP</option>
+                        <option value="Tocantins">TO</option>
                       </select>
                     </div>
                     <div class="linha t3">
@@ -239,13 +240,17 @@ $(function(){ //onready
             },
             estado:{
               required: true
+            },
+            video:{
+              required: true
             }
           },
           messages:{
             nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
             email: "Digite um e-mail v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
             cidade: "Este campo &eacute; Obrigat&oacute;rio.",
-            estado: "Este campo &eacute; Obrigat&oacute;rio."
+            estado: "Este campo &eacute; Obrigat&oacute;rio.",
+            video: "Este campo &eacute; Obrigat&oacute;rio."
           },
           success: function(label){
             // set &nbsp; as text for IE
