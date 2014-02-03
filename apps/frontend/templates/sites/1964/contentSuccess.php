@@ -46,17 +46,17 @@ $(function(){
           
           <!-- CAPA -->
           <div class="capa grid3">
+         	 <div class="span10">
           	
 
             <!-- ESQUERDA -->
-            <div id="esquerda" class="grid2">
+            <div class="span7 esq">
 
               <!-- NOTICIA INTERNA -->
               <div class="box-interna grid2">
               	<ul class="breadcrumb">
-		              <li><a href="/">Univesptv</a><span class="divider">&gt;</span></li>
-		              <li><a href="/1964"><?php echo $site->getTitle() ?></a><span class="divider">&gt;</span></li>
-		              <li class="active"> <?php echo $asset->getTitle() ?> </li>
+		              <li><a href="/<?php echo $site->getSlug() ?>"><?php echo $site->getTitle() ?></a><span class="divider">&gt;</span></li>
+             			<li class="active"> <?php echo $asset->getTitle() ?> </li>
 		            </ul>
 		              
              	 <p class="titulos"><?php echo $asset->getTitle(); ?></p>
@@ -125,8 +125,8 @@ $(function(){
             </div>
             <!-- /ESQUERDA -->
             
-            <!-- DIREITA -->
-            <div id="direita" class="grid1">
+             <!-- DIREITA -->
+            <div class="span3 dir">
 
               <!-- BOX PADRAO -->
               <?php if(isset($displays["destaque-apresentadores"])) include_partial_from_folder('blocks','global/display-1c-hosts', array('displays' => $displays["destaque-apresentadores"])) ?>
@@ -209,6 +209,11 @@ $(function(){
 
             </div>
             <!-- /DIREITA -->
+            
+            </div>
+            <!-- /span10 -->
+            
+           
           </div>
           <!-- /CAPA -->
         </div>
