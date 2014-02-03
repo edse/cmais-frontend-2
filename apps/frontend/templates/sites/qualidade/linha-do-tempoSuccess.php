@@ -36,7 +36,7 @@ storyjs_jsonp_data = {
                 "startDate":"<?php echo $date1?>,0,0",
                 "endDate":"<?php echo $date1?>,0,0",
                 "headline":"<?php echo $d->getTitle()?>",
-                "text":"<p>4<?php echo $description?></p>",
+                "text":"<p><?php echo $description?></p>",
                 "asset":
                 {
                     "media":"<?php echo $src?>",
