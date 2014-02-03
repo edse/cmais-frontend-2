@@ -1,4 +1,6 @@
-<link rel="stylesheet" href="/portal/js/timeline/1964.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/<?php echo $section->Parent->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://172.20.16.219/portal/js/timeline/1964.css" type="text/css" />
 <script type="text/javascript">
 $(function(){
   //hover states on the static widgets
@@ -14,20 +16,21 @@ $(function(){
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
     <!-- CAPA SITE -->
-    <div id="capa-site">
+   <div id="capa-site" class="a1964">
 
-      <div id="barra-site" onclick=location="home" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
-				
-				<!-- TOPO -->
-		    <div class="topo-programa">
-		    	
-	    		<!-- MENU -->
-					<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections))?>
-					<!--/ MENU -->
-					
-		    <!-- / TOPO -->  
-		    </div>
-		    </div>
+     <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+
+      <!-- BARRA SITE -->
+  		<div id="barra-site" onclick=location="home" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
+	       
+				<!-- box-topo -->
+	      <div class="box-topo grid3">
+		       	<!-- menu interna -->
+		       	<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
+		        <!-- /menu interna -->                 
+	    	</div>
+	   		<!-- /box-topo -->
+		  </div>	
 		  <!-- /BARRA SITE -->  
 
       <!-- MIOLO -->
@@ -39,9 +42,28 @@ $(function(){
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
-
+					<?php if(isset($assetPrev) && isset($assetNext)): ?>
+              <div class="botoes">
+               	<a href="<?php echo $assetPrev->retriveUrl() ?>" class="btn" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
+                <a href="<?php echo $assetNext->retriveUrl() ?>" class="btn" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
+              </div>
+							<?php else: ?>
+              <div class="botoes">
+								<?php if(isset($assetPrev)): ?>              	
+                	<a href="<?php echo $assetPrev->retriveUrl() ?>" class="btn" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
+                <?php else: ?>
+                	<a href="javascript:;" class="btn disabled" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
+                <?php endif; ?>
+								<?php if(isset($assetNext)): ?>              	
+                <a href="<?php echo $assetNext->retriveUrl() ?>" class="btn" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
+                <?php else: ?>
+                <a href="javascript:;" class="btn disabled" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
+                <?php endif; ?>
+              </div>
+              <?php endif; ?>
           <!-- CAPA -->
           <div class="capa grid3">
+          	
 
             <!-- ESQUERDA -->
             <div id="esquerda" class="grid2">
@@ -59,7 +81,7 @@ $(function(){
                     <a href="#" class="zoom">-A</a>
                   </div>
                   -->
-
+									
                   <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
 
                 </div>
@@ -118,7 +140,8 @@ $(function(){
               </div>
               <!-- / BOX PUBLICIDADE -->
               
-             
+              <!--BOX DICAS DE COMPRA-->
+              <?php include_partial_from_folder('blocks','global/box-dicas', array('section'=> $section)) ?>
 
               <?php $relacionados = array(); if($asset) $relacionados = $asset->retriveRelatedAssets2(); ?>
               <?php if(count($relacionados) > 0): ?>
