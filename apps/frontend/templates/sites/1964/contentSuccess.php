@@ -53,21 +53,17 @@ $(function(){
 
               <!-- NOTICIA INTERNA -->
               <div class="box-interna grid2">
-                <h3><?php echo $asset->getTitle() ?></h3>
-                <p><?php echo $asset->getDescription() ?></p>
-                <div class="assinatura grid2">
-                  <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
-                  <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
-                  <!--
-                  <div class="acessibilidade">
-                    <a href="#" class="zoom">+A</a>
-                    <a href="#" class="zoom">-A</a>
-                  </div>
-                  -->
-									
-                  <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
-
-                </div>
+              	<ul class="breadcrumb">
+		              <li><a href="/">Univesptv</a><span class="divider">&gt;</span></li>
+		              <li><a href="/1964"><?php echo $site->getTitle() ?></a><span class="divider">&gt;</span></li>
+		              <li class="active"> <?php echo $asset->getTitle() ?> </li>
+		            </ul>
+		              
+             	 <p class="titulos"><?php echo $asset->getTitle(); ?></p>
+               <?php
+									if($asset->AssetType->getSlug() == "content") 
+									echo html_entity_decode($asset->AssetContent->render());
+								?>
                 <!-- BOTÕES -->
 								<?php if(isset($assetPrev) && isset($assetNext)): ?>
 			              <div class="botoes">
@@ -90,9 +86,10 @@ $(function(){
 			          <?php endif; ?>
 			          <!--/ BOTÕES -->
 			          <div class="fb-like" data-send="false" data-width="450" data-show-faces="false" data-action="recommend"></div>
-                <div class="texto">
-                  <?php echo html_entity_decode($asset->AssetContent->render()) ?>
-                </div>
+	              <div class="descricao">
+	                <p><?php echo $asset->getDescription() ?></p>
+	              </div>
+								
                 
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
                 <?php if(count($relacionados) > 0): ?>

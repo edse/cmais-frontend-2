@@ -357,6 +357,13 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 
 .box-interna h2{font-size:30px;line-height:50px;}
 
-.btn { background:#8A991E; color:#fff; text-transform:uppercase; box-shadow:none; border:none; border-radius:0; text-shadow:none;}
+.btn { background:#8A991E; color:#fff; text-transform:uppercase; box-shadow:none; border:none; border-radius:0; text-shadow:none;font-size:20px;padding: 4px;}
 .btn:hover { background:#666; color:#fff; text-decoration:none; }
 .botoes { margin:10px auto 15px; width:229px; }
+.breadcrumb { border:none; background:none; text-align:left; border-radius:none; padding:0;margin:0 0 20px; }
+.breadcrumb a { font-size:11px; color:#333; }
+.breadcrumb .divider { color:#333; font-size:11px;}
+.breadcrumb .active { font-size: 11px; color:#ff6633; }
+.breadcrumb li {display: inline-block;text-shadow: 0 1px 0 #ffffff;}
+.titulos {font-size: 22px;margin-bottom: 10px;text-align: left;font-weight: normal;}
+
