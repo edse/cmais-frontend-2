@@ -15,11 +15,8 @@ storyjs_jsonp_data = {
                 $date1 = implode(",", $date1);
               }
             }
+						$assets = null;
             $assets = $d->retriveRelatedAssets();
-						
-						echo count($assets);
-						
-						
             if($assets[0]->getAssetTypeId() == 2){
               //IMG
               $src = $assets[0]->AssetImage->getOriginalUrl();
@@ -33,8 +30,9 @@ storyjs_jsonp_data = {
               $src = "http://www.youtube.com/watch?v=".$assets[0]->AssetVideo->getYoutubeId();
               $thumb = "http://img.youtube.com/vi/".$assets[0]->AssetVideo->getYoutubeId()."/default.jpg";
             }
-            
-            if(count($assets) == 0) $thumb = "http://midia.cmais.com.br/assets/image/default/f734c02e984e7059a94276178adb725acc71ffbf.jpg";
+						
+						if(count($assets) <= 0) $thumb = "http://midia.cmais.com.br/assets/image/default/f734c02e984e7059a94276178adb725acc71ffbf.jpg";
+						
 						
             if(isset($date1)):
 							$description = str_replace("\r\n",";",trim($d->getDescription()));
