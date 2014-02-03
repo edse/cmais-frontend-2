@@ -284,11 +284,10 @@
 /* AJUSTES ARTES TOPO E MENU */
 #barra-site{background-image:url(http://cmais.com.br/portal/images/timeline/topo.png);background-repeat: no-repeat;height: 230px;margin:0 0 180px 42px!important;cursor:pointer}
 #barra-site .topo-timeline{width: 970px;min-height: 56px !important;}
-.a1964 .menu-interna {float: right;width: auto ;}
-.a1964 .menu-interna li {background-image:url(http://cmais.com.br/portal/images/timeline/botao.png)!important;width: 120px;height: 54px;background-color: transparent;}
-.a1964 .menu-interna a{font-size: 14px;color:#854d01;display: block;float: left;padding: 16px 34px;text-transform: uppercase;font-weight: bolder;}
-.a1964 .menu-interna a:hover{font-size: 14px;color:#f6e52a;display: block;float: left;padding: 16px 34px;text-transform: uppercase;font-weight: bolder;}
-.a1964 .menu-interna li.ativo, .a1964 .menu-interna li:hover {background-image:url(http://cmais.com.br/portal/images/timeline/botao_over.png);width: 120px;height: 54px;background-color: transparent;}
+.a1964 .menu-interna {float: right;width: auto ;background:url(http://172.20.16.219/portal/images/timeline/menu_01.png) 100% no-repeat !important;}
+.a1964 .menu-interna li {height: 54px;background:none;color:#854d01!important;}
+.a1964 .menu-interna a{font-size: 14px;color:#854d01;display: block;float: left;padding-top: 16px;text-transform: uppercase;font-weight: bolder;}
+.a1964 .menu-interna a:hover{color:#8A991E!important;}
 .timeline{height: 500px;float: left;width: 100%;padding-top: 20px;background-color: #F0E6DD;}
 #miolo {margin-top: -170px!important;}
 
@@ -359,7 +358,7 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 
 .btn { background:#8A991E; color:#fff; text-transform:uppercase; box-shadow:none; border:none; border-radius:0; text-shadow:none;font-size:20px;padding: 4px;}
 .btn:hover { background:#666; color:#fff; text-decoration:none; }
-.botoes { margin:10px auto 15px; width:229px; }
+.botoes { margin:10px auto 20px; width:300px; }
 .breadcrumb { border:none; background:none; text-align:left; border-radius:none; padding:0;margin:0 0 20px; }
 .breadcrumb a { font-size:11px; color:#333; }
 .breadcrumb .divider { color:#333; font-size:11px;}
@@ -367,3 +366,5 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .breadcrumb li {display: inline-block;text-shadow: 0 1px 0 #ffffff;}
 .titulos {font-size: 22px;margin-bottom: 10px;text-align: left;font-weight: normal;}
 .descricao {margin: 20px 0 50px 0;}
+.span7.esq { margin-left:0; width: 640px; float:left; }
+.span3.dir {margin-left: -11px;width: 310px;float: left;}
