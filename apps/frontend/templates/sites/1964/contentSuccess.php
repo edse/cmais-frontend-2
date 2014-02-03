@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/<?php echo $section->Parent->getSlug() ?>.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
-<link rel="stylesheet" href="http://172.20.16.219/portal/js/timeline/1964.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/timeline/1964.css" type="text/css" />
 <script type="text/javascript">
 $(function(){
   //hover states on the static widgets
@@ -26,7 +26,7 @@ $(function(){
 				<!-- box-topo -->
 	      <div class="box-topo grid3">
 		       	<!-- menu interna -->
-		       	<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
+		       	<?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
 		        <!-- /menu interna -->                 
 	    	</div>
 	   		<!-- /box-topo -->
