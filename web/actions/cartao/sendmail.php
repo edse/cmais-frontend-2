@@ -18,16 +18,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
       
     if(sendMailAtt($to, $from, $subject, $message, $attach)) {
-      if (unlink($_FILES['datafile']['tmp_name'])) {
-        header("Location: http://tvcultura.cmais.com.br/cartaoverde/dividida-com-o-riva?success=1");
-        die();
-      }
+      header("Location: http://tvcultura.cmais.com.br/cartaoverde/dividida-com-o-riva?success=1");
+      die();
     }
     else{
-      if (unlink($_FILES['datafile']['tmp_name'])) {
-        header("Location: http://tvcultura.cmais.com.br/cartaoverde/dividida-com-o-riva?error=4");
-        die();
-      }
+      header("Location: http://tvcultura.cmais.com.br/cartaoverde/dividida-com-o-riva?error=4");
+      die();
     }
   }
 }
