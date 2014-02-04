@@ -111,12 +111,10 @@
          	 	</div>
          	 	<!--TITULO-->
 		   	   	 <div class="box-interna grid2">
-			   	   	<?php  $asset_quality = Doctrine::getTable('Asset')->findOneById(160756); ?>
-							<h2><?php echo $asset_quality->getTitle();?></h2>
-							<p><?php echo $asset_quality->getDescription();?></p>
-							<p><?php echo $asset_quality->AssetContent->render();?></p>
-								
-			   	   	?>
+				   	   	<?php  $asset_quality = Doctrine::getTable('Asset')->findOneById(160756); ?>
+								<h2><?php echo $asset_quality->getTitle();?></h2>
+								<p><?php echo $asset_quality->getDescription();?></p>
+								<?php	//echo $asset_quality->AssetContent->render(); ?>
 		   	   	 </div>
 		   	   	 <!--TITULO-->
 		   	   	
