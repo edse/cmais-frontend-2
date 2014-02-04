@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/videos.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
-<link rel="stylesheet" href="http://cmais.com.br/portal/js/qualidade/qualidade.css" type="text/css" />
 
 <script type="text/javascript">
 $(function(){
