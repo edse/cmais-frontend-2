@@ -68,30 +68,15 @@
 			      	<?php endif; ?>
 			      <?php endif; ?>
 		      <!-- /DESTAQUES -->
-		      	<div class="conteudo-box">
-			      	<!-- BLOCOS -->
-			      	<?php
-			          $displays = array();
-			          
-			          $blocks = Doctrine_Query::create()
-			            ->select('b.*')
-			            ->from('Block b, Section s')
-			            ->where('b.section_id = s.id')
-			            ->andWhere('s.slug = ?', 'programas-especiais')
-			            ->andWhere('s.site_id = ?', $site->id)
-									->execute();
-									
-					      if(count($blocks) > 0){
-					        foreach($blocks as $b){
-					          $displays["destaques"] = $b->retriveDisplays();
-					        }
-					      }
-			        ?>
-			     		<?php if (isset($displays['destaques'])): ?>
-	            	<?php if (count($displays['destaques']) > 0): ?>
+		      
+		      <div class="conteudo-box">
+		      	
+		      <!-- /DESTAQUES HOME SEÇÕES -->
+  				<?php if (isset($displays['destaque-home-secoes'])): ?>
+	            	<?php if (count($displays['destaque-home-secoes']) > 0): ?>
 	            <div class="span10 cursos">
 	              <ul class="thumbnails">
-	              	<?php foreach($displays['destaques'] as $k=>$d): ?>
+	              	<?php foreach($displays['destaque-home-secoes'] as $k=>$d): ?>
 	                <li class="span3">
 	                <div class="thumbnail">
 	                  <a href="<?php echo $d->retriveUrl(); ?>" title="<?php echo $d->getTitle(); ?>">
@@ -108,7 +93,8 @@
 	            </div>
 	            	<?php endif; ?>          
 	            <?php endif; ?>
-	        		<!-- /BLOCOS -->
+		      <!-- /DESTAQUES HOME SEÇÕES-->
+		      
          	 	</div>
          	 	<!--TITULO-->
 		   	   	 <div class="box-interna grid2">

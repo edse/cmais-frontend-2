@@ -289,6 +289,9 @@
 .a1964 .menu-interna a{font-size: 12px;color:#854d01;display: block;float: left;margin: 17px 0 0 7px;text-transform: uppercase;font-weight: bolder;}
 .a1964 .menu-interna a:hover{color:#8A991E;}
 .a1964 .menu-interna li.ativo, .a1964 .menu-interna li:hover {background:none!important;color:#8A991E!important;margin:0;}
+
+
+
 .timeline{height: 500px;float: left;width: 100%;padding-top: 20px;background-color: #F0E6DD;}
 #miolo {margin-top: -170px!important;}
 
@@ -330,12 +333,12 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .cursos .jcarousel-clip { height: 300px; }
 .cursos .thumbnail .caption { height:117px; overflow:hidden;  }
 .thumbnails .span3:hover,
-.cursos .jcarousel-item-horizontal:hover { background-color:#ff6633; }
+.cursos .jcarousel-item-horizontal:hover { }
 .cursos .caption { color:#333 }
 .cursos .caption h5,
 .cursos .caption h5 a { font-size:18px; max-height:44px; }
 .cursos .caption p { font-size:14px;  max-height: 54px;    overflow: hidden; }
-.cursos .jcarousel-item-horizontal:hover .thumbnail { border-color:#ff6633; background:#ff6633; }
+.cursos .jcarousel-item-horizontal:hover .thumbnail {  }
 .cursos .jcarousel-item-horizontal:hover h5,
 .cursos .jcarousel-item-horizontal:hover p { color:#fff; }
 .cursos .thumbnail { margin:0;  }
@@ -347,9 +350,9 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .cursos .caption h5 { margin-bottom:5px; }
 .cursos .caption a { max-height:75px; overflow:hidden;}
 .cursos .thumbnails h5 a { line-height:22px; }
-.cursos .thumbnails a { color:#333; line-height:18px; display: block;   }
+.cursos .thumbnails a { color:#333; line-height:18px; display: block;}
 .cursos .thumbnail:hover a { text-decoration:none; }
-.cursos .thumbnail { background:#F0E6DD;width:266px;  }
+.cursos .thumbnail { background:#F0E6DD;width:266px;margin-bottom: 20px;padding: 2px; }
 .cursos .thumbnails a img { width:266px; height:160px; }
 .conteudo-box{width: 930px;;margin:0 auto;}
 .subs{background-color: rgba(0, 0, 0, 0.8);background: rgba(0, 0, 0, 0.8);color: rgba(0, 0, 0, 0.8);width:960px;position: absolute;margin-left: 5px;bottom: 4px;}
