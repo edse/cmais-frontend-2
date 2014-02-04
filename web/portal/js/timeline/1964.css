@@ -287,8 +287,9 @@
 .a1964 .menu-interna {float: right;width:670px;background:url(http://172.20.16.219/portal/images/timeline/menu.png) no-repeat !important;height: 60px}
 .a1964 .menu-interna li {background:none;color:#854d01!important;margin:0;color:#854d01}
 .a1964 .menu-interna a{font-size: 12px;color:#854d01;display: block;float: left;margin: 17px 0 0 7px;text-transform: uppercase;font-weight: bolder;}
-.a1964 .menu-interna a:hover{color:#8A991E;}
-.a1964 .menu-interna li.ativo, .a1964 .menu-interna li:hover {background:none!important;color:#8A991E!important;margin:0;}
+.a1964 .menu-interna a:hover{color:#8A991E;background:none;}
+.menu-interna li.ativo a, .menu-interna li:hover a {color:#8A991E!important;}
+.menu-interna li.ativo, .menu-interna li:hover {background:none!important;}
 
 
 
