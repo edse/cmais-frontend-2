@@ -127,10 +127,11 @@
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
 			               css: "http://cmais.com.br/portal/js/qualidade/qualidade.css",
+			               lang: "http://cmais.com.br/portal/js/qualidade/pt-br.js",
 			               js: "http://cmais.com.br/portal/js/qualidade/timeline-min.js"
 			              }
 			            </script>
-			            <script type="text/javascript" src="http://univesptv.cmais.com.br/portal/js/qualidade/storyjs-embed.js"></script>
+			            <script type="text/javascript" src="http://cmais.com.br/portal/js/qualidade/storyjs-embed.js"></script>
 		            </div>
 		            <!-- /FIM TIMELINE -->
 	            		         
