@@ -26,7 +26,8 @@ storyjs_jsonp_data = {
 						}else{ 
 							if($assets[0]->getAssetTypeId() == 2){
 	              //IMG
-	              $src = $assets[0]->AssetImage->getOriginalUrl();
+	              //$src = $assets[0]->AssetImage->getOriginalUrl();
+								$src = "http://midia.cmais.com.br/assets/image/original/".$assets[0]->AssetImage->getFile().".".$assets[0]->AssetImage->getExtension();
 	              $thumb = "http://midia.cmais.com.br/assets/image/thumbnail/".$assets[0]->AssetImage->getFile().".jpg";
 	            }else if($assets[0]->getAssetTypeId() == 4){
 	              //AUDIO
