@@ -88,23 +88,25 @@
     $('.transmissaoH li a').removeClass('ativo');
     $('#stream_exclusiva').addClass('ativo');
   }*/
+ 
   function stream2() {
     $('#boxVideoWrapper').html('<iframe width="640" height="364" src="http://www.youtube.com/embed/<?php echo $displays["camera-exclusiva"][0]->getTitle() ?>" frameborder="0" rel="0" allowfullscreen></iframe>');
     $('.transmissaoH li a').removeClass('ativo');
     $('#stream_youtube').addClass('ativo');  
   }
- 
+
+  /*
   function stream3() {
     $('#boxVideoWrapper').html('<iframe src="http://www.ustream.tv/embed/9564814" width="640" height="364" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe>');
     $('.transmissaoH li a').removeClass('ativo');
     $('#stream_ustream').addClass('ativo');
   }
-
   function stream4() {
     $('#boxVideoWrapper').html('<iframe width="640" height="364" src="http://cdn.livestream.com/embed/tvculturanaweb?layout=4&amp;height=364&amp;width=640&amp;autoplay=false" style="border:0;outline:0" frameborder="0" scrolling="no"></iframe>');
     $('.transmissaoH li a').removeClass('ativo');
     $('#stream_livestream').addClass('ativo');      
   }
+  */
 
   function stream5() {
     $('#boxVideoWrapper').html('<iframe width="640" height="364" src="http://www.youtube.com/embed/<?php echo $displays["yt-live"][0]->getTitle() ?>" frameborder="0" allowfullscreen></iframe>');
@@ -127,7 +129,7 @@
   function isDevice(OSName)
   {
     var system = navigator.appVersion.toLowerCase(); // get local system values
-	var OSName = OSName.toLowerCase(); // put parameter value to lowecase
+	   var OSName = OSName.toLowerCase(); // put parameter value to lowecase
 	 
 	// put some parameters value in standard names
 	if (OSName == "macos") OSName = "mac";
@@ -142,16 +144,9 @@
   
   
   jQuery(document).ready(function() {
-    //updateTweets();
-    //var t=setInterval("updateTweets()",60000);
     broadcastEnd();
     var t2=setInterval("broadcastEnd()", 60000);
-    
-    if (isDevice('ipad') || isDevice('iphone') || isDevice('ipod') || isDevice('Android'))
-      stream3();
-    else
-      stream1();
-
+    stream5();
   });
 </script>
 
