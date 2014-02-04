@@ -282,12 +282,11 @@
 
 
 /* AJUSTES ARTES TOPO E MENU */
-#barra-site{background:#333 no-repeat;height: 230px;margin:0 0 0 42px!important;cursor:pointer}
+#barra-site{background:none;height: 230px;margin:0 0 0 42px!important;cursor:pointer}
 #barra-site .topo-timeline{width: 970px;min-height: 56px !important;}
 .a1964 .menu-interna {float: right;width: auto ;}
 .a1964 .menu-interna li {width: 120px;height: 54px;background-color: transparent;}
-.a1964 .menu-interna a{font-size: 14px;color:#854d01;display: block;float: left;padding: 16px 34px;text-transform: uppercase;font-weight: bolder;}
-.a1964 .menu-interna a:hover{font-size: 14px;color:#f6e52a;display: block;float: left;padding: 16px 34px;text-transform: uppercase;font-weight: bolder;}
+.a1964 .menu-interna a{font-size: 14px;color:#2c9700;display: block;float: left;padding: 16px 34px;text-transform: uppercase;font-weight: bolder;}
 .a1964 .menu-interna li.ativo, .a1964 .menu-interna li:hover {width: 120px;height: 54px;background-color: transparent;}
 .timeline{height: 500px;float: left;width: 100%;padding-top: 20px;}
 
