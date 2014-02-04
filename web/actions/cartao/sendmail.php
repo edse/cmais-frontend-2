@@ -4,8 +4,7 @@ include("../includes/functions.php");
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
   
-    //$to = "julianagaldeano@tvcultura.com.br";
-    $to = "julianagaldeano@tvcultura.com.br, emerson.estrella@gmail.com";
+    $to = "julianagaldeano@tvcultura.com.br";
     $email = strip_tags($_REQUEST['email']);
     $name = strip_tags($_REQUEST['nome']);
     $from = "{$name} <{$email}>";
