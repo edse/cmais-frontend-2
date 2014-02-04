@@ -51,6 +51,7 @@ $(function(){
       <!-- BARRA SITE -->
       <div id="barra-site">
         <div class="topo-programa">
+        	<?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
           <?php if(isset($program) && $program->id > 0): ?>
           <h2>
             <a href="<?php echo $program->retriveUrl() ?>">
@@ -76,7 +77,7 @@ $(function(){
         <!-- box-topo -->
         <div class="box-topo grid3">
           
-          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
+          
 
           <?php if(isset($section->slug)): ?>
             <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
