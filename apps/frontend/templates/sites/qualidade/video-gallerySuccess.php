@@ -51,7 +51,7 @@ $(function(){
       <!-- BARRA SITE -->
       <div id="barra-site">
         <div class="topo-programa">
-        	<?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
+        	<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
           <?php if(isset($program) && $program->id > 0): ?>
           <h2>
             <a href="<?php echo $program->retriveUrl() ?>">
