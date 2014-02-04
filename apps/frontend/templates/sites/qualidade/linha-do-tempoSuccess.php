@@ -15,26 +15,30 @@ storyjs_jsonp_data = {
                 $date1 = implode(",", $date1);
               }
             }
+						$assets = null;
             $assets = $d->retriveRelatedAssets();
-						
-						echo count($assets);
-						
-						
-            if($assets[0]->getAssetTypeId() == 2){
-              //IMG
-              $src = $assets[0]->AssetImage->getOriginalUrl();
-              $thumb = "http://midia.cmais.com.br/assets/image/thumbnail/".$assets[0]->AssetImage->getFile().".jpg";
-            }else if($assets[0]->getAssetTypeId() == 4){
-              //AUDIO
-              $src = "http://midia.cmais.com.br/assets/audio/default/".$assets[0]->AssetAudio->getFile().".mp3";
-              $thumb = "";
-            }else if($assets[0]->getAssetTypeId() == 6){
-              //VIDEO
-              $src = "http://www.youtube.com/watch?v=".$assets[0]->AssetVideo->getYoutubeId();
-              $thumb = "http://img.youtube.com/vi/".$assets[0]->AssetVideo->getYoutubeId()."/default.jpg";
-            }
-            
-            if(count($assets) == 0) $thumb = "http://midia.cmais.com.br/assets/image/default/f734c02e984e7059a94276178adb725acc71ffbf.jpg";
+
+						//echo count($assets);
+						if(count($assets) == 0) {
+							$src = "http://midia.cmais.com.br/assets/image/default/f734c02e984e7059a94276178adb725acc71ffbf.jpg";	
+							$thumb = "http://midia.cmais.com.br/assets/image/thumbnail/f734c02e984e7059a94276178adb725acc71ffbf.jpg";
+							//echo "<br>".$src.$thumb."<br>";	
+						}else{ 
+							if($assets[0]->getAssetTypeId() == 2){
+	              //IMG
+	              //$src = $assets[0]->AssetImage->getOriginalUrl();
+								$src = "http://midia.cmais.com.br/assets/image/original/".$assets[0]->AssetImage->getFile().".".$assets[0]->AssetImage->getExtension();
+	              $thumb = "http://midia.cmais.com.br/assets/image/thumbnail/".$assets[0]->AssetImage->getFile().".jpg";
+	            }else if($assets[0]->getAssetTypeId() == 4){
+	              //AUDIO
+	              $src = "http://midia.cmais.com.br/assets/audio/default/".$assets[0]->AssetAudio->getFile().".mp3";
+	              $thumb = "";
+	            }else if($assets[0]->getAssetTypeId() == 6){
+	              //VIDEO
+	              $src = "http://www.youtube.com/watch?v=".$assets[0]->AssetVideo->getYoutubeId();
+	              $thumb = "http://img.youtube.com/vi/".$assets[0]->AssetVideo->getYoutubeId()."/default.jpg";
+	            }
+						}
 						
             if(isset($date1)):
 							$description = str_replace("\r\n",";",trim($d->getDescription()));
