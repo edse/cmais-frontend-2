@@ -111,7 +111,13 @@
          	 	</div>
          	 	<!--TITULO-->
 		   	   	 <div class="box-interna grid2">
-			   	   
+			   	   	<?php 
+			   	   		$asset_quality = Doctrine::getTable('Asset')->findOneById(160756);
+								//echo $asset_quality;
+								echo $asset_quality->getTitle()."<br>";
+								echo $asset_quality->getDescription();
+								
+			   	   	?>
 		   	   	 </div>
 		   	   	 <!--TITULO-->
 		   	   	
