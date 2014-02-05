@@ -131,7 +131,7 @@ $(function(){
                 <?php endif; ?>
 
                 <?php 
-                	if($section->getSlug() != "processo-seletivo") include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)); 
+                	if($section->getSlug() != "processo-seletivo") include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) 
                 ?>
 
               </div>
