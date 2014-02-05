@@ -130,7 +130,9 @@ $(function(){
                   <!-- SAIBA MAIS -->
                 <?php endif; ?>
 
-                <?php //include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+                <?php 
+                	if($section->getSlug() != "processo-seletivo") include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)); 
+                ?>
 
               </div>
               <!-- /NOTICIA INTERNA -->
