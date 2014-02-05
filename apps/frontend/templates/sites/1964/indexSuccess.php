@@ -11,7 +11,9 @@
     <!-- CAPA SITE -->
 	<div id="capa-site" class="a1964">
      	<!-- BARRA SITE -->
-  		<div id="barra-site" onclick=location="home" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
+  		<div id="barra-site" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
+					<a href="#"><img src="http://cmais.com.br/portal/images/timeline/topo.png"></a>
+					
 				
 				<!-- TOPO -->
 		    <div class="topo-programa">
