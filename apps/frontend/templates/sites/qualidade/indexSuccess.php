@@ -86,7 +86,9 @@
 										
 									</ul>
 								</div>
-								<?php	echo $asset_quality->AssetContent->render(); ?>
+								<div class="span3 dir">
+									<?php	echo $asset_quality->AssetContent->render(); ?>
+								</div>
 		   	   	 </div>
 		   	   	 <!--TITULO-->
 		   	   	
