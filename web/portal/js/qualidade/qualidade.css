@@ -353,4 +353,4 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .subs{background-color: rgba(0, 0, 0, 0.8);background: rgba(0, 0, 0, 0.8);color: rgba(0, 0, 0, 0.8);width:960px;position: absolute;margin-left: 5px;bottom: 4px;}
 .subs h2{color:#fff;bottom: 0;font-family: Arial;text-align: left;font-size: 41px;line-height:120px;padding-left:15px;}
 
-.box-interna h2{font-size:30px;}
+.box-interna h2{font-size:16px;background: #2c9700;color: #fff;padding: 1px;text-transform: uppercase;}
