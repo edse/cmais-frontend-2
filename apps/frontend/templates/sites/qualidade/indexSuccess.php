@@ -86,7 +86,7 @@
 										
 									</ul>
 								</div>
-								<div class="span3 dir">
+								<div id="direita"class="grid1">
 									<?php	echo $asset_quality->AssetContent->render(); ?>
 								</div>
 		   	   	 </div>
