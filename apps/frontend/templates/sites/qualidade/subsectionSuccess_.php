@@ -6,11 +6,10 @@ if(isset($pager)){
   }  
 } 
 ?>
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/<?php echo $section->Parent->getSlug() ?>.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="/portal/js/qualidade/qualidade.css" type="text/css" />
 <link type="text/css" href="http://cmais.com.br/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/todos-videos.css" type="text/css" />
 <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
 <script type="text/javascript">
 $(function(){
@@ -36,11 +35,7 @@ $(function(){
 
   function dateLoading(date) { 
     var year_month = ""+ (date.getFullYear()) +"-"+ (date.getMonth()+1) +"";
-    
-    var dia = String(date.getDate());
-    if(dia.length <= 1) dia = "0"+dia; //dias que possuem apenas um caracteres (de 1 a 9) 
-    var year_month_day = ""+ year_month+"-"+ dia+"";    
-    
+    var year_month_day = ""+ year_month+"-"+ date.getDate()+"";
     var opts = "";
     var i = 0;
     var ret = false;
@@ -95,97 +90,27 @@ $(function(){
     }
     return [ret, ''];
   }
-  
-  
-//SET DATE  
-$(document).ready(function(){
-	<?php if(isset($date)): ?>
-		var newdate = new Date ("<?php echo str_replace("-", ",", $date)?>");
-	<?php else: ?> 
-		var newdate = new Date();
-	<?php endif;?>
-	
-	$("#datepicker").datepicker("setDate", newdate);  
-});  
-  
 </script>
 
 
 
 <?php use_helper('I18N', 'Date') ?>
-<?php include_partial_from_folder('blocks', 'global/menu', array('section'=>$section, 'channels' => $channels, 'live' => $live, 'editorials' => $editorials, 'site' => $site, 'mainSite' => $mainSite, 'coming' => $coming, 'important' => $important)) ?>
-
-	<div class="bg-chamada">
-	  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
-	</div>
-	<div class="bg-site"></div>
+<?php include_partial_from_folder('blocks', 'global/menu', array('channels' => $channels, 'live' => $live, 'editorials' => $editorials, 'site' => $site, 'mainSite' => $mainSite, 'coming' => $coming, 'important' => $important)) ?>
 
     <!-- CAPA SITE -->
-    <div id="capa-site">
+    <div id="capa-site" class="a1964">
+
+      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
 
       <!-- BARRA SITE -->
-      <div id="barra-site">
-        <div class="topo-programa">
-          <?php if(isset($program) && $program->id > 0): ?>
-          <h2>
-            <a href="<?php echo $program->retriveUrl() ?>" style="text-decoration: none;">
-              <?php if($program->getImageThumb() != ""): ?>
-                <img src="/uploads/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
-              <?php else: ?>
-                <h3 class="tit-pagina grid1"><?php echo $program->getTitle() ?></h3>
-              <?php endif; ?>
-            </a>
-          </h2>
-          <?php elseif(isset($site) && $site->id > 0): ?>
-          <h2>
-            <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
-              <?php if($site->getImageThumb() != ""): ?>
-                <img src="/uploads/programs/<?php echo $site->getImageThumb() ?>" alt="<?php echo $site->getTitle() ?>" title="<?php echo $site->getTitle() ?>" />
-              <?php else: ?>
-                <h3 class="tit-pagina grid1"><?php echo $site->getTitle() ?></h3>
-              <?php endif; ?>
-            </a>
-          </h2>
-          <?php endif; ?>
-
-          <?php if(isset($program) && $program->id > 0): ?>
-          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
-          
-          <?php if(isset($program) && $program->id > 0): ?>
-          <!-- horario -->
-          <div id="horario">
-            <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
-          </div>
-          <!-- /horario -->
-          <?php endif; ?>
-        </div>
-        
-        <?php if(isset($siteSections)): ?>
-        <!-- box-topo -->
-        <div class="box-topo grid3">
-          
-          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
-
-          <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
-          <div class="navegacao txt-10">
-            <a href="../<?php echo $section->Site->getSlug() ?>" title="Home">Home</a>
-            <span>&gt;</span>
-            <a href="<?php echo $section->retriveUrl()?>" title="<?php echo $section->getTitle()?>"><?php echo $section->getTitle()?></a>
-          </div>
-          <?php endif; ?>
-
-          <h3 class="tit-pagina"><a href="#" class="<?php echo $section->getSlug() ?>"><?php echo $section->getTitle() ?></a></h3>
-          
-          <?php if($section->getDescription() != ""): ?>
-          <h2 style="text-align: left; margin-bottom:15px;clear: both;"><?php echo $section->getDescription() ?></h2>
-          <?php endif; ?>
-
-        </div>
-        <!-- /box-topo -->
-        <?php endif; ?>
-        
-      </div>
+  		<div id="barra-site" onclick=location="home" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
+	        <div class="box-topo grid3">
+		       	<!-- menu interna -->
+		       	<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
+		        <!-- /menu interna -->                 
+	    	</div>
+	   		<!-- /box-topo -->
+		  </div>	
       <!-- /BARRA SITE -->
 
       <!-- MIOLO -->
@@ -257,37 +182,25 @@ $(document).ready(function(){
             <?php if(isset($pager)): ?>
               <?php if($pager->haveToPaginate()): ?>
               <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
-              <div class="paginacao grid2">
-                <div class="centraliza">
-                  <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn-ante"></a>
-                  <a class="btn anterior" href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);">Anterior</a>
-                  <ul>
-                    <?php foreach ($pager->getLinks() as $page): ?>
-                      <?php if ($page == $pager->getPage()): ?>
-                    <li><a href="javascript: goToPage(<?php echo $page ?>);" class="ativo"><?php echo $page ?></a></li>
-                      <?php else: ?>
-                    <li><a href="javascript: goToPage(<?php echo $page ?>);"><?php echo $page ?></a></li>
-                      <?php endif; ?>
-                    <?php endforeach; ?>
-                  </ul>
-                  <a class="btn proxima" href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);">Pr&oacute;xima</a>
-                  <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn-prox"></a>
-                </div>
+              <div class="paginacao pag3 grid2">
+                <p class="txt-12">P&aacute;gina <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></p>
+                <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn proximo"></a>
+                <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn anterior"></a>
               </div>
               <form id="page_form" action="" method="post">
-                <input type="hidden" name="return_url" value="<?php echo $url?>" />
-                <input type="hidden" name="page" id="page" value="" />
+              	<input type="hidden" name="return_url" value="<?php echo $url?>" />
+              	<input type="hidden" name="page" id="page" value="" />
               </form>
               <script>
-                function goToPage(i){
-                  $("#page").val(i);
-                  $("#page_form").submit();
-                }
+              	function goToPage(i){
+                	$("#page").val(i);
+                	$("#page_form").submit();
+              	}
               </script>
-              <!--// PAGINACAO -->
+              
               <?php endif; ?>
             <?php endif; ?>
-              
+
             </div>
             <!-- /ESQUERDA -->
             
@@ -320,12 +233,6 @@ $(document).ready(function(){
             
           </div>
           <!-- /CAPA -->
-          
-					<?php if (isset($displays["rodape-interno"])): ?>
-          <!--APOIO-->
-          <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
-          <!--/APOIO-->
-          <?php endif; ?>
           
         </div>
         <!-- /CONTEUDO PAGINA -->

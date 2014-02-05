@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link type="text/css" href="http://cmais.com.br/portal/js/orbit/orbit-1.2.3.css" rel="stylesheet" />
 <script type="text/javascript" src="http://cmais.com.br/portal/js/orbit/jquery.orbit-1.2.3.min.js"></script>
 
@@ -29,11 +30,14 @@ $(window).load(function() {
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
+	<div class="bg-chamada">
+	  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+	</div>
+	<div class="bg-site"></div>
+
     <!-- CAPA SITE -->
     <div id="capa-site">
       
-      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
-
       <!-- BARRA SITE -->
       <div id="barra-site">
         
@@ -217,6 +221,12 @@ $(window).load(function() {
           </div>
           <!-- / BOX PUBLICIDADE 2 -->
           
+					<?php if (isset($displays["rodape-interno"])): ?>
+          <!--APOIO-->
+          <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
+          <!--/APOIO-->
+          <?php endif; ?>
+          
           </div>
           <!-- /CONTEUDO PAGINA -->
         
@@ -225,5 +235,4 @@ $(window).load(function() {
       
       </div>
       <!-- / CAPA SITE -->
-
 

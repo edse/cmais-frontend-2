@@ -111,7 +111,10 @@
          	 	</div>
          	 	<!--TITULO-->
 		   	   	 <div class="box-interna grid2">
-			   	   
+				   	   	<?php  $asset_quality = Doctrine::getTable('Asset')->findOneById(160756); ?>
+								<h2><?php echo $asset_quality->getTitle();?></h2>
+								<p><?php echo $asset_quality->getDescription();?></p>
+								<?php	//echo $asset_quality->AssetContent->render(); ?>
 		   	   	 </div>
 		   	   	 <!--TITULO-->
 		   	   	
@@ -127,10 +130,11 @@
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
 			               css: "http://cmais.com.br/portal/js/qualidade/qualidade.css",
+			               lang: "http://cmais.com.br/portal/js/qualidade/pt-br.js",
 			               js: "http://cmais.com.br/portal/js/qualidade/timeline-min.js"
 			              }
 			            </script>
-			            <script type="text/javascript" src="http://univesptv.cmais.com.br/portal/js/timeline/storyjs-embed.js"></script>
+			            <script type="text/javascript" src="http://cmais.com.br/portal/js/qualidade/storyjs-embed.js"></script>
 		            </div>
 		            <!-- /FIM TIMELINE -->
 	            		         
