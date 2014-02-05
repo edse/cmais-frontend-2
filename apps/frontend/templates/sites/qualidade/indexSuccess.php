@@ -87,10 +87,10 @@
 								</div>
 								
 		   	   	 </div>
-		   	   	 <!--TITULO-->
-		   	   	<div id="direita"class="grid1">
+		   	   		<div id="direita"class="grid1">
 									<?php	echo $asset_quality->AssetContent->render(); ?>
 							</div>
+							
 		          <!-- INICIO TIMELINE -->
 		          <div class="timeline">
 			            <div id="tvcultura-embed"></div>

@@ -360,4 +360,5 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .box-playlist .img {width:120px;height: 90px}
 .box-playlist .img:hover {border-color: #2c9700;height: 90px;width:120px;}
 #direita{float: right;text-align: left;}
+#direita p{font-size:13px;line-height:17px}
 
