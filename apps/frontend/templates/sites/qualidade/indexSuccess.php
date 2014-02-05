@@ -37,8 +37,10 @@
 	         
 	         <!-- CAPA 3-->
          	 <div class="capa grid3">
-         	 	
-         	 	
+	         	 	<div id="direita"class="grid1">
+									<?php	echo $asset_quality->AssetContent->render(); ?>
+							</div>
+	         	 	
 		   	   	 <div class="box-interna grid2">
 				   	   	<?php  $asset_quality = Doctrine::getTable('Asset')->findOneById(160756); ?>
 								<h2><?php echo $asset_quality->getTitle();?></h2>
@@ -86,9 +88,7 @@
 										
 									</ul>
 								</div>
-								<div id="direita"class="grid1">
-									<?php	echo $asset_quality->AssetContent->render(); ?>
-								</div>
+								
 		   	   	 </div>
 		   	   	 <!--TITULO-->
 		   	   	
