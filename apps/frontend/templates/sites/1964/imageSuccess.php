@@ -50,52 +50,17 @@ $(function(){
     <div id="capa-site">
 
       <!-- BARRA SITE -->
-      <div id="barra-site">
-        <div class="topo-programa">
-          <?php if(isset($program) && $program->id > 0): ?>
-          <h2>
-            <a href="<?php echo $program->retriveUrl() ?>">
-              <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
-            </a>
-          </h2>
-          <?php endif; ?>
-
-          <?php if(isset($program) && $program->id > 0): ?>
-          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
-          
-          <?php if(isset($program) && $program->id > 0): ?>
-          <!-- horario -->
-          <div id="horario">
-            <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
-          </div>
-          <!-- /horario -->
-          <?php endif; ?>
-        </div>
-
-        <?php if(isset($siteSections)): ?>
-        <!-- box-topo -->
-        <div class="box-topo grid3">
-          
-          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
-
-          <?php if(isset($section->slug)): ?>
-            <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
-            <div class="navegacao txt-10">
-              <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
-              <span>&gt;</span>
-              <a href="<?php echo $site->retriveUrl() ?>/imagens" title="Imagens">Imagens</a>
-              <span>&gt;</span>
-              <a href="<?php echo $asset->retriveUrl()?>" title="<?php echo $asset->getTitle()?>"><?php echo $asset->getTitle()?></a>
-            </div>
-            <?php endif; ?>
-          <?php endif; ?>
-
-        </div>
-        <!-- /box-topo -->
-        <?php endif; ?>
-        
-      </div>
+    	<div id="barra-site" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
+					<a href="home"><img src="http://cmais.com.br/portal/images/timeline/topo.png"></a>
+					
+			<!-- box-topo -->
+	        <div class="box-topo grid3">
+		       	<!-- menu interna -->
+		       	<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
+		        <!-- /menu interna -->                 
+	    	</div>
+	   		<!-- /box-topo -->
+		  </div>	
       <!-- /BARRA SITE -->
 
       <!-- MIOLO -->

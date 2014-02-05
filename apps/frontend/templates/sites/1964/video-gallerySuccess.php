@@ -46,7 +46,9 @@ $(function(){
      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
 
       <!-- BARRA SITE -->
-  		<div id="barra-site" onclick=location="home" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
+  		<div id="barra-site" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
+					<a href="home"><img src="http://cmais.com.br/portal/images/timeline/topo.png"></a>
+					
 	       
 				<!-- box-topo -->
 	      <div class="box-topo grid3">
