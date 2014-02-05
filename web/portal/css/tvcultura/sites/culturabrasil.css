@@ -62,7 +62,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .navbar .nav > .tvratimbum > a { background-position:0 -34px; }
 .navbar .nav > .multicultura > a { background-position:0 -68px; }
 .navbar .nav > .univesp > a { background-position:0 -102px; }
-.navbar .nav > .culturabrasil > a { background-position:0 -136px; }
+.navbar .nav > .culturabrasil > a { background-position:0 -136px;background-color: transparent; }
 .navbar .nav > .culturafm > a { background-position:0 -170px; }
 .navbar .nav > .itunes > a { background-position:0 -306px; }
 .navbar .nav > .facebook > a { background-position:0 -339px; }
