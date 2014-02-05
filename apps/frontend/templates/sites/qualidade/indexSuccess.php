@@ -53,36 +53,37 @@
 									</script>
 								
 									<ul class="box-playlist grid2">
-										<li style="width: 155px">
+										<li>
 											<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
 												<img class="img-150x90" src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
 											</a>
 										</li>
-										<li style="width: 155px">
+										<li>
 											<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
 												<img class="img-150x90" src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
 											</a>
 										</li>
-										<li style="width: 155px">
+										<li>
 											<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
 												<img class="img-150x90" src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
 											</a>
 										</li>
-										<li style="width: 155px">
+										<li>
 											<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
 												<img class="img-150x90" src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
 											</a>
 										</li>
-										<li style="width: 155px">
+										<li>
 											<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
 												<img class="img-150x90" src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
 											</a>
 										</li>
-										<li style="width: 155px">
+										<li>
 											<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
 												<img class="img-150x90" src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
 											</a>
 										</li>
+										
 									</ul>
 								</div>
 								<?php	echo $asset_quality->AssetContent->render(); ?>
