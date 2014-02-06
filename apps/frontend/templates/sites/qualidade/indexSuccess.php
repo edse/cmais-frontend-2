@@ -35,48 +35,45 @@
 				   	   	<?php  $asset_quality = Doctrine::getTable('Asset')->findOneById(160756); ?>
 								<h2><?php echo $asset_quality->getTitle();?></h2>
 								<p><?php echo $asset_quality->getDescription();?></p>
+
+				   	   	<?php  $asset_x = Doctrine::getTable('Asset')->findOneById(162068); ?>
+   							<?php $relacionados = $asset_x->retriveRelatedAssets(); ?>
+
+
 								<div class="duas-colunas destaque grid2">
 								
 								<!--Players-->
-								<div id="player"><iframe title="Washington Olivetto: “A TV Cultura tem uma busca de qualidade histórica”" width="640" height="390" src="http://www.youtube.com/embed/DD3hR-qhz_c?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe></div>
-									<script>
-										function changeVideo(id){
-										  $('#player').html('<iframe width="640" height="390" src="http://www.youtube.com/embed/'+id+'?wmode=transparent" frameborder="0" allowfullscreen></iframe>');
-										}
-									</script>
-									<div class="box-thumbs">
-										<ul class="box-playlist grid2 ">
-											<h4>Assista todos os vídeos</h4>
-											<li>
-												<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
-													<img src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
-												</a>
-											</li>
-											<li>
-												<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
-													<img src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
-												</a>
-											</li>
-											<li>
-												<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
-													<img src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
-												</a>
-											</li>
-											<li>
-												<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
-													<img src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
-												</a>
-											</li>
-											<li>
-												<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
-													<img src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
-												</a>
-											</li>
+								<div id="player">
+                
+		                <?php if(count($relacionados) > 0): ?>
+			                    <?php foreach($relacionados as $k=>$d): ?>
+				                 	<?php if($k == 0): ?>
+			                  			<iframe title="<?php echo $d->getTitle()?>" width="640" height="390" src="http://www.youtube.com/embed/<?php echo $d->AssetVideo->getYoutubeId()?>?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
+																</div>
+																	<script>
+																		function changeVideo(id){
+																		  $('#player').html('<iframe width="640" height="390" src="http://www.youtube.com/embed/'+id+'?wmode=transparent" frameborder="0" allowfullscreen></iframe>');
+																		}
+																	</script>
+																	<div class="box-thumbs">
+																		<h4>Assista todos os vídeos</h4>
+																		<ul class="box-playlist grid2 carrossel">			                  			
+			                  	<?php else:?>
+																	<li>
+																		<a href="javascript:changeVideo('<?php echo $d->AssetVideo->getYoutubeId()?>')" class="img">
+																			<img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId()?>/1.jpg" alt="<?php echo $d->getTitle()?>">
+																		</a>
+																	</li>				                  	
+			                    
+				              	  <?php endif; ?>     
+		                    <?php endforeach; ?>
+		                  </ul>
+		              	<?php endif; ?>								
+								
 											
 										</ul>
 									</div>
-									<div class="jcarousel-prev jcarousel-prev-horizontal jcarousel-prev-disabled jcarousel-prev-disabled-horizontal" disabled="disabled" style="display: block;"></div>
-									<div class="jcarousel-next jcarousel-next-horizontal" style="display: block;"></div>
+									
 									<!--Players-->
 								</div>
 								
@@ -137,7 +134,16 @@ $(document).ready(function(){
 		$(".timeline").show();
 	}
 	
-});
+
+    // carrossel
+	$('.carrossel').jcarousel({
+      wrap: "both",
+      scroll: 5
+    });
+    
+    
+
+  });
 </script>
  
  
