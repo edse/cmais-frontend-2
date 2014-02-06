@@ -1,21 +1,21 @@
 /* geral */
 @font-face {
     font-family: 'dinmedium';
-    src: url('/portal/css/fontes/din/din-medium-webfont.eot');
-    src: url('/portal/css/fontes/din/din-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/din/din-medium-webfont.woff') format('woff'),
-         url('/portal/css/fontes/din/din-medium-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/din/din-medium-webfont.svg#dinmedium') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/din/din-medium-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/din/din-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-medium-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-medium-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-medium-webfont.svg#dinmedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'din-blackregular';
-    src: url('/portal/css/fontes/din/din-black-webfont.eot');
-    src: url('/portal/css/fontes/din/din-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/din/din-black-webfont.woff') format('woff'),
-         url('/portal/css/fontes/din/din-black-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/din/din-black-webfont.svg#din-blackregular') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.svg#din-blackregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
