@@ -100,7 +100,7 @@
 							
 		          <!-- INICIO TIMELINE -->
 		          <div class="timeline" style="display: none">
-		          	<h2 class="box-interna">Linha do Tempo de Premiações da Fundação Padre Anchieta</h2>
+		          	<h1 class="box-interna">Linha do Tempo de Premiações da Fundação Padre Anchieta</h1>
 			            <div id="tvcultura-embed"></div>
 			            <script type="text/javascript">
 			              var timeline_config = {
