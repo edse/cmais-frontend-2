@@ -363,9 +363,9 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .box-playlist .img:hover {border-color: #2c9700;height: 82px;width:110px;}
 #direita{float: right;text-align: left;}
 #direita p{font-size:13px;line-height:17px}
-.jcarousel-prev{width:20px; height: 80px; background: url(/portal/images/qualidade/seta.png) no-repeat left top; position:absolute; top: 43%; left: 4%;cursor: pointer;}
+.jcarousel-prev{width:20px; height: 80px; background: url(/portal/images/qualidade/seta.png) no-repeat left top; position:absolute; top: 82%; left: 4%;cursor: pointer;}
 .jcarousel-prev:hover {background-position:left top}
-.jcarousel-next{width:20px; height: 80px; background: url(/portal/images/qualidade/seta.png) no-repeat left bottom; position:absolute; top: 43%; right: 33%;cursor: pointer;transform: rotate(180deg); -ms-transform: rotate(180deg); /* IE 9 */ -webkit-transform: rotate(180deg); /* Safari and Chrome */;}
+.jcarousel-next{width:20px; height: 80px; background: url(/portal/images/qualidade/seta.png) no-repeat left bottom; position:absolute; top: 82%; right: 33%;cursor: pointer;transform: rotate(180deg); -ms-transform: rotate(180deg); /* IE 9 */ -webkit-transform: rotate(180deg); /* Safari and Chrome */;}
 .jcarousel-next:hover {background-position:right bottom;}
 .box-confira{background-color: #F0EEEE;padding: 8px;overflow: hidden;}
 .box-confira h2{font-size:14px;}
