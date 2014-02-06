@@ -44,7 +44,8 @@ body.tvculturaabrace{background:url("http://cmais.com.br/portal/images/capaProgr
 .tvculturaabrace #capa-site{padding: 0px 10px 50px 0px;}
 .tvculturaabrace #capa-site #miolo{margin-top: 0px;}
 .tvculturaabrace #capa-site #bg-abrace{position: absolute;background:#3b7e14 url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/tv_background.jpg") repeat-x;width: 990px;height: 102.5%;z-index: -1;left: 32px;}
-.tvculturaabrace #capa-site #topo-abrace{height:140px;}
+.tvculturaabrace #capa-site #topo-abrace{height:65px;}
+.tvculturaabrace #capa-site #topo-abrace img{margin: 24px 0 0 -146px;}
 .tvculturaabrace .novoNoAr .enunciado span {background:url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/ponta-destaque-newabrace.png") no-repeat !important;}
 .tvculturaabrace .novoNoAr .enunciado h2 {background-color: #0d6101;color: #fff;}
 .tvculturaabrace .proximasAtracoes .enunciado{background:#329610;} 
