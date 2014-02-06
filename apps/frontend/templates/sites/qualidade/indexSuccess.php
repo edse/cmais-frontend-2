@@ -12,7 +12,7 @@
      	
      	<!-- BARRA SITE -->
   		<div id="barra-site" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
-					<a href="#"><img src="http://cmais.com.br/portal/images/qualidade/topo.jpg"></a>
+					<a href="#"><img src="http://cmais.com.br/portal/images/qualidade/topo_premio.png"></a>
 				
 		
 		  <!-- /BARRA SITE -->  
