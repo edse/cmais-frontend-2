@@ -43,7 +43,7 @@ matchingGame.clone = $.extend(true, [], matchingGame.deck);
 $(function(){
   var loader = new PxLoader();
 
-
+/*
   loader.addImage('http://172.20.16.219/testes/memoriaVilaSesamo/img/bel.jpg');
   loader.addImage('http://172.20.16.219/testes/memoriaVilaSesamo/img/beto.jpg');
   loader.addImage('http://172.20.16.219/testes/memoriaVilaSesamo/img/comecome.jpg');
@@ -53,7 +53,7 @@ $(function(){
   loader.addImage('http://172.20.16.219/testes/memoriaVilaSesamo/img/grover.jpg');
   loader.addImage('http://172.20.16.219/testes/memoriaVilaSesamo/img/grupo.jpg');
   loader.addImage('http://172.20.16.219/testes/memoriaVilaSesamo/img/zoe.jpg');
-  
+*/  
   
   loader.addProgressListener(function(e) {
     if (e.completedCount * 5 < 100) {
