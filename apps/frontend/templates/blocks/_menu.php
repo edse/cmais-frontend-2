@@ -4,7 +4,7 @@
 <script src="http://www.culturabrasil.com.br/js/jquery.xmldom.min.js" type="text/javascript"></script>
 <script src="http://www.culturabrasil.com.br/js/Menu.class.js" type="text/javascript"></script>
 <script src="http://www.culturabrasil.com.br/js/User.class.js" type="text/javascript"></script-->
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/pos-abrace2014.css?cash=<?php echo time()?>" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvculturaabrace2013.css?cash=<?php echo time()?>" type="text/css" />
 <script type="text/javascript">
     $(function(){
       var controle = null;
@@ -22,7 +22,11 @@
 
 <!--GUIA TOPO-->
 <div id="guia-topo" class="menu-tvculturaabrace" align="center">
-  
+  <?php #if( isset($asset) || $site->getSlug() != "tvcultura" && $section->getSlug()!="homepage" || $site->getSlug() == "cmais" && $section->getSlug()=="homepage" || $site->getSlug() == "tvratimbum" && $section->getSlug()=="homepage"):?>
+  <?php if(isset($section) && ($section->Site->getSlug() == "tvcultura" && $section->getSlug() == "homepage")):?>
+  <?php else: ?> 
+    <div class="abrace-infinito-direito"></div>
+  <?php endif; ?> 
   <!--topo Cmais-->
   <div id="topo-cmais">
   
@@ -79,18 +83,26 @@
     
     
     <!--menu parte 1-->
-  
+  <?php if(isset($section) && ($section->Site->getSlug() == "tvcultura" && $section->getSlug() == "homepage")):?>
     <div id="menu-portal-1">    
-     
+      <?php $classFloat = ""?> 
       <!--FACEBOOK-->
       <div id="facebook-cultura">
         <div class="fb-like" data-href="http://www.facebook.com/tvcultura" data-send="false" data-layout="button_count" data-width="110" data-show-faces="true"></div>
       </div>
       <!--/FACEBOOK-->
-  
+  <?php else: ?> 
+    <div id="menu-portal-1" class='menu-cmais-abrace'>    
+      <?php $classFloat = "style='float:right'"?>
+      <div class="abrace-infinito-esquerda"></div>
+      <div class="abrace-esquerda">
+        <img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/topo-abrace-cmais.png" alt="abrace o novo, abrace a TV Cultura"/>
+      </div>  
+  <?php endif; ?> 
+      
      
       <!-- Menu Portal -->
-      <ul id="menu-portal" >
+      <ul id="menu-portal" <?php echo $classFloat; ?> >
          
         <!-- Menu TV -->
         <li class="m-tv"><a href="#" class="filho m_tv_tvcultura" title="TV">PROGRAMAS<span></span></a>
@@ -180,7 +192,7 @@
         <!-- /Menu ao Vivo -->
 
       </ul>
-      
+      <?php if(isset($section) && $site->getSlug()=="tvcultura" && $section->getSlug()=="homepage"):?>
         <!--redes sociais-->
         <div id="redesnovo">
           <a href="javascript:;" id="controle-remoto" class="redesB" title="controle-remoto" target="_blank"></a>
@@ -193,7 +205,7 @@
           <a href="http://tvcultura.cmais.com.br/feed" id="rss" class="redesA" title="RSS" target="_blank"></a>
         </div>
         <!--redes sociais-->
-     
+      <?php endif; ?>  
     </div>
     <!--menu parte 1-->
 
