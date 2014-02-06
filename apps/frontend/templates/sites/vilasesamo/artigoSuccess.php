@@ -184,7 +184,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                         $webs = explode(",", $Web);
                         foreach($webs as $k=>$w):
                         ?>
-                          <a href="<?php echo "http://".$Web ?>" target="_blank" title="<?php echo $Web ?>"><?php echo $Web ?></a>
+                          <a href="<?php echo "http://".$Web ?>" target="_blank" title="<?php echo $Web  ?>"><?php echo $Web ?></a>
                           <?php if( $k > 0 || $Facebook != "" || $Twitter != "" || $YouTube != ""  ){ echo ", "; }else{ echo "."; } ?>
                         <?php endforeach;?>
                       <?php endif; ?>
