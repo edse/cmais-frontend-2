@@ -4,13 +4,6 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/univesptv/css/cursos.css" /-->
 <script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
 
-<script type="text/javascript">
-    $(function(){
-      $('.carrossel').jcarousel({
-        wrap: "both"
-      });
-    })
-    </script>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
@@ -52,32 +45,32 @@
 										}
 									</script>
 									<div class="box-thumbs">
-										<ul class="box-playlist grid2">
+										<ul class="box-playlist grid2 ">
 											<h4>Assista todos os vídeos</h4>
 											<li>
-												<a href="javascript:changeVideo('NnxykRieC34')" class="img">
-                          <img class="img-150x90" src="http://img.youtube.com/vi/NnxykRieC34/1.jpg" alt="Prêmio Ford 2003 premia TV Cultura">
-                        </a>
+												<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
+													<img src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
+												</a>
 											</li>
 											<li>
 												<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
-                          <img class="img-150x90" src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
-                        </a>
+													<img src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
+												</a>
 											</li>
 											<li>
-												<a href="javascript:changeVideo('NnxykRieC34')" class="img">
-                          <img class="img-150x90" src="http://img.youtube.com/vi/NnxykRieC34/1.jpg" alt="Prêmio Ford 2003 premia TV Cultura">
-                        </a>
+												<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
+													<img src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
+												</a>
 											</li>
 											<li>
-												<a href="javascript:changeVideo('RllwhNmqqcg')" class="img">
-                          <img class="img-150x90" src="http://img.youtube.com/vi/RllwhNmqqcg/1.jpg" alt="Tom Zé: “A TV Cultura é aconselhável”">
-                        </a>
+												<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
+													<img src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
+												</a>
 											</li>
 											<li>
-												<a href="javascript:changeVideo('qf5fJG0RfNA')" class="img">
-                          <img class="img-150x90" src="http://img.youtube.com/vi/qf5fJG0RfNA/1.jpg" alt="Maurício de Sousa: “Eu fico muito feliz ter a TV Cultura entre as melhores do mundo”">
-                        </a>
+												<a href="javascript:changeVideo('PRFlzQ8OXw4')" class="img">
+													<img src="http://img.youtube.com/vi/PRFlzQ8OXw4/1.jpg" alt="Relembre: TV Cultura conquista prêmio Emy pela programação infantil">
+												</a>
 											</li>
 											
 										</ul>
@@ -107,6 +100,7 @@
 							
 		          <!-- INICIO TIMELINE -->
 		          <div class="timeline" style="display: none">
+		          	<h2 class="box-interna">Linha do Tempo de Premiações da Fundação Padre Anchieta</h2>
 			            <div id="tvcultura-embed"></div>
 			            <script type="text/javascript">
 			              var timeline_config = {
