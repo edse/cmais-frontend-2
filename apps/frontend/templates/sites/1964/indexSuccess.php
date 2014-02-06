@@ -11,7 +11,9 @@
     <!-- CAPA SITE -->
 	<div id="capa-site" class="a1964">
      	<!-- BARRA SITE -->
-  		<div id="barra-site" onclick=location="1964" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
+  		<div id="barra-site" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
+					<a href="#"><img src="http://cmais.com.br/portal/images/timeline/topo.png"></a>
+					
 				
 				<!-- TOPO -->
 		    <div class="topo-programa">
@@ -46,9 +48,10 @@
 								<?php foreach($displays['destaque-principal'] as $k=>$d): ?>
 			          <li style="display: block;" id="bloco<?php echo $k ?>" class="filho">
 			          	<a class="media" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-			          		<img src="<?php echo $d->retriveImageUrlByImageUsage('image-10-b') ?>" alt="<?php echo $d->getTitle() ?>">
 			          		<div class="subs"><h2><?php echo $d->getTitle() ?></h2></div>
+			          		<img src="<?php echo $d->retriveImageUrlByImageUsage('image-10-b') ?>" alt="<?php echo $d->getTitle() ?>">
 			          	</a>
+			          	
 			         	</li>
 			        	<?php endforeach; ?>
 			        </ul>
@@ -67,30 +70,15 @@
 			      	<?php endif; ?>
 			      <?php endif; ?>
 		      <!-- /DESTAQUES -->
-		      	<div class="conteudo-box">
-			      	<!-- BLOCOS -->
-			      	<?php
-			          $displays = array();
-			          
-			          $blocks = Doctrine_Query::create()
-			            ->select('b.*')
-			            ->from('Block b, Section s')
-			            ->where('b.section_id = s.id')
-			            ->andWhere('s.slug = ?', 'fotos')
-			            ->andWhere('s.site_id = ?', $site->id)
-									->execute();
-									
-					      if(count($blocks) > 0){
-					        foreach($blocks as $b){
-					          $displays["destaques"] = $b->retriveDisplays();
-					        }
-					      }
-			        ?>
-			     		<?php if (isset($displays['destaques'])): ?>
-	            	<?php if (count($displays['destaques']) > 0): ?>
+		      
+		      <div class="conteudo-box">
+		      	
+		      <!-- /DESTAQUES HOME SEÇÕES -->
+  				<?php if (isset($displays['destaque-home-secoes'])): ?>
+	            	<?php if (count($displays['destaque-home-secoes']) > 0): ?>
 	            <div class="span10 cursos">
 	              <ul class="thumbnails">
-	              	<?php foreach($displays['destaques'] as $k=>$d): ?>
+	              	<?php foreach($displays['destaque-home-secoes'] as $k=>$d): ?>
 	                <li class="span3">
 	                <div class="thumbnail">
 	                  <a href="<?php echo $d->retriveUrl(); ?>" title="<?php echo $d->getTitle(); ?>">
@@ -107,11 +95,12 @@
 	            </div>
 	            	<?php endif; ?>          
 	            <?php endif; ?>
-	        		<!-- /BLOCOS -->
+		      <!-- /DESTAQUES HOME SEÇÕES-->
+		      
          	 	</div>
          	 	<!--TITULO-->
 		   	   	 <div class="box-interna grid2">
-			   	   
+			   	   <h2>Linha do Tempo</h2>
 		   	   	 </div>
 		   	   	 <!--TITULO-->
 		   	   	
@@ -126,7 +115,8 @@
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
-			               css: "http://cmais.com.br/portal/js/timeline/1964.css",
+			               css: "http://172.20.16.219/portal/js/timeline/1964.css",
+			               lang: "http://172.20.16.219/portal/js/timeline/pt-br.js",
 			               js: "http://univesptv.cmais.com.br/portal/js/timeline/timeline-min.js"
 			              }
 			            </script>

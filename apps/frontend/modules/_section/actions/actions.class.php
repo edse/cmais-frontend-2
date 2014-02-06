@@ -1723,6 +1723,12 @@ class _sectionActions extends sfActions
       $pagelimit = 99;
       $this->setLayout(false);
     }
+    if($this->site->getSlug() == "qualidade" && $this->section->getSlug() == "linha-do-tempo"){
+      header('Content-type: application/json');
+      $pagelimit = 99;
+      $this->setLayout(false);
+    }     
+		
     if(!isset($pagelimit))
       $pagelimit = 9;
 

@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link type="text/css" href="http://cmais.com.br/portal/js/orbit/orbit-1.2.3.css" rel="stylesheet" />
 <script type="text/javascript" src="http://cmais.com.br/portal/js/orbit/jquery.orbit-1.2.3.min.js"></script>
 
@@ -29,63 +30,30 @@ $(window).load(function() {
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
+	<div class="bg-chamada">
+	  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+	</div>
+	<div class="bg-site"></div>
+
     <!-- CAPA SITE -->
     <div id="capa-site">
       
-      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
-
       <!-- BARRA SITE -->
-      <div id="barra-site">
-        
-        <div class="topo-programa">
-          <?php if(isset($program) && $program->id > 0): ?>
-          <h2>
-            <a href="<?php echo $program->retriveUrl() ?>">
-              <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
-            </a>
-          </h2>
-          <?php endif; ?>
-          
-          <?php if(isset($program) && $program->id > 0): ?>
-          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
-          
-          <?php if(isset($program) && $program->id > 0): ?>
-            <!-- horario -->
-            <div id="horario">
-              <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
-            </div>
-            <!-- /horario -->
-          <?php endif; ?>
-        </div>
-
-        <?php if(isset($siteSections)): ?>
-        <!-- box-topo -->
-        <div class="box-topo grid3">
-
-          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
-
-          <?php if(isset($section->slug)): ?>
-            <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
-            <div class="navegacao txt-10">
-              <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
-              <span>&gt;</span>
-              <a href="<?php echo $site->retriveUrl() ?>/fotos" title="Fotos">Fotos</a>
-              <span>&gt;</span>
-              <a href="<?php echo $asset->retriveUrl()?>" title="<?php echo $asset->getTitle()?>"><?php echo $asset->getTitle()?></a>
-            </div>
-            <?php endif; ?>
-          <?php endif; ?>
-
-          
-
-        </div>
-        <!-- /box-topo -->
-        <?php endif; ?>
-        
-      </div>
-      <!-- /BARRA SITE -->
-
+  		<div id="barra-site" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
+					<a href="#"><img src="http://cmais.com.br/portal/images/timeline/topo.png"></a>
+					
+				
+				<!-- TOPO -->
+		    <div class="topo-programa">
+		    	
+	    		<!-- MENU -->
+					<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections))?>
+					<!--/ MENU -->
+					
+		    <!-- / TOPO -->  
+		    </div>
+		  <!-- /BARRA SITE -->  
+      </div>	
       <!-- MIOLO -->
       <div id="miolo">
         
@@ -217,6 +185,12 @@ $(window).load(function() {
           </div>
           <!-- / BOX PUBLICIDADE 2 -->
           
+					<?php if (isset($displays["rodape-interno"])): ?>
+          <!--APOIO-->
+          <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
+          <!--/APOIO-->
+          <?php endif; ?>
+          
           </div>
           <!-- /CONTEUDO PAGINA -->
         
@@ -225,5 +199,4 @@ $(window).load(function() {
       
       </div>
       <!-- / CAPA SITE -->
-
 
