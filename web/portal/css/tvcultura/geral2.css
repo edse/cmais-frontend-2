@@ -689,7 +689,7 @@
 /* blocos */
 .blocos { clear:both; height:240px; }
 .blocos ul { margin:10px 0 0 25px; overflow:hidden; text-align:left; height:240px; }
-.blocos li { width:206px; float:left; margin:10px; height:210px; }
+.blocos li { width:191px; float:left; margin:10px; height:210px; }/*width:206px*/
 .blocos li h3 { text-transform:uppercase; font-size:10px; clear:both; margin-left:3px; }
 .blocos li p a { font-size:16px; font-weight:bold; margin-left:3px; }
 .blocos li a.bg { width:200px; height:109px; position:relative; overflow:hidden; display:block; margin-bottom:5px; border:3px solid transparent; }
