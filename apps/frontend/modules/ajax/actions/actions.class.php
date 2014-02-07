@@ -1876,7 +1876,10 @@ EOT;
       }
       
       //echo "<br>".$filename."<br>t: ".$total."<br>".$results[0]["answer"].": ".$results[0]["votes"]."<br>".$results[1]["answer"].": ".$results[1]["votes"]."<br>";
-      die(json_encode($results));
+      //die(json_encode($results));
+      $json = json_encode($results);
+      $callback = $request->getParameter('callback');
+      die($callback.'('. $json . ');');
     }
     elseif($request->getParameter('asset_id') > 0){
 
@@ -1896,7 +1899,10 @@ EOT;
       foreach($aq->Answers as $a){
         $results[] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
       }
-      die(json_encode($results));
+      //die(json_encode($results));
+      $json = json_encode($results);
+      $callback = $request->getParameter('callback');
+      die($callback.'('. $json . ');');
     }else{
       header("Location: http://cmais.com.br");
       die();
