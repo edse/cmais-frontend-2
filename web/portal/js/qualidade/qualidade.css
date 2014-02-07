@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'gotham_boldregular';
+    src: url('gotham-bold-webfont.eot');
+    src: url('gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gotham-bold-webfont.woff') format('woff'),
+         url('gotham-bold-webfont.ttf') format('truetype'),
+         url('gotham-bold-webfont.svg#gotham_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body{background:url(/portal/images/qualidade/bg-tudo.jpg) repeat-x!important;}
+
 .vco-storyjs{}.vco-storyjs div *{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}
 .vco-storyjs h1,.vco-storyjs h2,.vco-storyjs h3,.vco-storyjs h4,.vco-storyjs h5,.vco-storyjs h6,.vco-storyjs p,.vco-storyjs blockquote,.vco-storyjs pre,.vco-storyjs a,.vco-storyjs abbr,.vco-storyjs acronym,.vco-storyjs address,.vco-storyjs cite,.vco-storyjs code,.vco-storyjs del,.vco-storyjs dfn,.vco-storyjs em,.vco-storyjs img,.vco-storyjs q,.vco-storyjs s,.vco-storyjs samp,.vco-storyjs small,.vco-storyjs strike,.vco-storyjs strong,.vco-storyjs sub,.vco-storyjs sup,.vco-storyjs tt,.vco-storyjs var,.vco-storyjs dd,.vco-storyjs dl,.vco-storyjs dt,.vco-storyjs li,.vco-storyjs ol,.vco-storyjs ul,.vco-storyjs fieldset,.vco-storyjs form,.vco-storyjs label,.vco-storyjs legend,.vco-storyjs button2,.vco-storyjs table,.vco-storyjs caption,.vco-storyjs tbody,.vco-storyjs tfoot,.vco-storyjs thead,.vco-storyjs tr,.vco-storyjs th,.vco-storyjs td,.vco-storyjs .vco-container,.vco-storyjs .content-container,.vco-storyjs .media,.vco-storyjs .text,.vco-storyjs .vco-slider,.vco-storyjs .slider,.vco-storyjs .date,.vco-storyjs .title,.vco-storyjs .messege,.vco-storyjs .map,.vco-storyjs .credit,.vco-storyjs .caption,.vco-storyjs .vco-feedback,.vco-storyjs .vco-feature,.vco-storyjs .toolbar,.vco-storyjs .marker,.vco-storyjs .dot,.vco-storyjs .line,.vco-storyjs .flag,.vco-storyjs .time,.vco-storyjs .era,.vco-storyjs .major,.vco-storyjs .minor,.vco-storyjs .vco-navigation,.vco-storyjs .start,.vco-storyjs .active{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;line-height:1;font-family:inherit;width:auto;float:none;}
 .vco-storyjs h1,.vco-storyjs h2,.vco-storyjs h3,.vco-storyjs h4,.vco-storyjs h5,.vco-storyjs h6{clear:none;}
@@ -282,8 +297,9 @@
 
 
 /* AJUSTES ARTES TOPO E MENU */
-#barra-site{background:none;height: 230px;margin:0 0 0 42px!important;cursor:pointer}
+#barra-site{background:url();height: 170px;margin:0 0 0 42px!important;cursor:pointer}
 #barra-site .topo-timeline{width: 970px;min-height: 56px !important;}
+#barra-site img{margin: 18px 0 0 -420px;}
 .a1964 .menu-interna {float: right;width: auto ;}
 .a1964 .menu-interna li {width: 120px;height: 54px;background-color: transparent;}
 .a1964 .menu-interna a{font-size: 14px;color:#2c9700;display: block;float: left;padding: 16px 34px;text-transform: uppercase;font-weight: bolder;}
@@ -353,12 +369,27 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .subs{background-color: rgba(0, 0, 0, 0.8);background: rgba(0, 0, 0, 0.8);color: rgba(0, 0, 0, 0.8);width:960px;position: absolute;margin-left: 5px;bottom: 4px;}
 .subs h2{color:#fff;bottom: 0;font-family: Arial;text-align: left;font-size: 41px;line-height:120px;padding-left:15px;}
 
-.box-interna h2{font-size:16px;background: #2c9700;color: #fff;padding: 1px;text-transform: uppercase;}
-
-.box-playlist li {width: 124px;float: left;margin-right: 4px;text-align: left;}
-.box-playlist a img {width:120px;}
-.box-playlist .img {width:120px;height: 90px}
-.box-playlist .img:hover {border-color: #2c9700;height: 90px;width:120px;}
+.box-interna h2{font-size:13px;background: #2c9700;color: #fff;padding: 1px 13px 1px 12px;text-transform: uppercase;font-family: 'gotham_boldregular';width: 96%;}
+.box-interna p{font-size:14px;line-height: 25px;}
+.box-thumbs{width:593px;margin:0 auto;}
+.box-playlist li {width: 114px;float: left;margin-right: 4px;text-align: left;height: auto;}
+.box-playlist a img {width:110px;}
+.box-thumbs h4 {color:#000;}
+.box-playlist .img {width:110px;height: 82px}
+.box-playlist .img:hover {border-color: #2c9700;height: 82px;width:110px;}
 #direita{float: right;text-align: left;}
 #direita p{font-size:13px;line-height:17px}
+.jcarousel-prev{width:20px; height: 80px; background: url(/portal/images/qualidade/seta.png) no-repeat left top; position:absolute; top: 25%; left: -3%;cursor: pointer;}
+.jcarousel-prev:hover {background-position:left top}
+.jcarousel-next{width:20px; height: 80px; background: url(/portal/images/qualidade/seta.png) no-repeat left bottom; position:absolute; top: 25%; right: -5%;cursor: pointer;transform: rotate(180deg); -ms-transform: rotate(180deg); /* IE 9 */ -webkit-transform: rotate(180deg); /* Safari and Chrome */;}
+.jcarousel-next:hover {background-position:right bottom;}
+.box-confira{background-color: #F0EEEE;padding: 8px;overflow: hidden;}
+.box-confira h2{font-size:14px;}
+.btn-confira{background-color: #2c9700;width: 140px;margin: 2px;height: 29px;float: left;}
+.btn-confira a{color: #fff;margin: 5px;display: block;text-align: center;font-family: 'gotham_boldregular';}
+.timeline h1{font-size: 13px;background: #2c9700;color: #fff;padding: 1px 1px 1px 15px;text-transform: uppercase;width: 62%;font-family: 'gotham_boldregular';}
+.carrossel .jcarousel-item a img {width: 100%;height: 100%;}
+.carrossel .jcarousel-item {width: 98px;}
+	
+	
 

@@ -38,18 +38,22 @@ $(window).load(function() {
     <!-- CAPA SITE -->
     <div id="capa-site">
       
-            <!-- BARRA SITE -->
-    	<div id="barra-site" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
-					<a href="home"><img src="http://cmais.com.br/portal/images/timeline/topo.png"></a>
+      <!-- BARRA SITE -->
+  		<div id="barra-site" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
+					<a href="#"><img src="http://cmais.com.br/portal/images/timeline/topo.png"></a>
 					
-			<!-- box-topo -->
-	        <div class="box-topo grid3">
-		       	<!-- menu interna -->
-		       	<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections)) ?>
-		        <!-- /menu interna -->                 
-	    	</div>
-	   		<!-- /box-topo -->
-		  </div>	
+				
+				<!-- TOPO -->
+		    <div class="topo-programa">
+		    	
+	    		<!-- MENU -->
+					<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections))?>
+					<!--/ MENU -->
+					
+		    <!-- / TOPO -->  
+		    </div>
+		  <!-- /BARRA SITE -->  
+      </div>	
       <!-- MIOLO -->
       <div id="miolo">
         

@@ -1,0 +1,81 @@
+
+* {margin:0;padding:0; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
+html { margin:0; padding:0; height:100%; width: 100%; }
+body { margin:0; padding:0; width:100%; height:100%; }
+a{outline:none;text-decoration:none;color:#DA4930}
+.conteudo p{clear:none}
+#content .conteudo-asset {width:100%;}
+
+#game{top:0;left:0;bottom:0;right:0;display:block;}
+#gameStats{width:100%;float:left;border-radius:4px;font-size:16px;height:auto; clear:both;position: absolute;top: 152px;left: 48px;}
+#qrcode{float:left;cursor:pointer;position:relative;margin-right:20px;padding:0 0 0 15px}
+#gameScore{display:none;float:left;text-align:center;height:40px;line-height:40px;}
+#qrcode:before,#credit:before{position:absolute;content:"";width:16px;height:16px;border-radius:8px;box-shadow:inset 0 0 3px #ddd;top:2px}
+#qrcode:before{right:-25px}
+#qrcode:after,#credit:after{position:absolute;content:"";width:6px;height:6px;border-radius:3px;background-color:#ddd;box-shadow:0 0 2px #fff;top:7px}
+#qrcode:after{right:-20px}
+.baritem,#credit{display:none;float:right;text-align:right;cursor:pointer;position:relative;margin:0 10px 0 30px}
+.baritem:before{position:absolute;content:"";width:16px;height:16px;border-radius:8px;background-color:#000;box-shadow:inset 0 0 3px #DA4930;top:2px;left:-25px}
+.baritem:after{position:absolute;content:"";width:16px;height:16px;border-radius:8px;background-color:rgba(255,255,255,0.1);box-shadow:inset 0 0 3px #ddd;top:2px;left:-25px}
+#credit:before{left:-25px}
+#credit:after{left:-20px}
+
+#playground{height:810px; width: 768px; text-align:center;position:relative; top:50%;}
+
+/*#cards{position:absolute;top:0;left:0;bottom:0;right:0;display:none;z-index:2}*/
+#cards{display:none;width:768px;height:476px;position: relative;top: 226px;left: 56px;}
+.card{-webkit-perspective:600px;-moz-perspective:600px;width:110px;height:145px;position:absolute;-moz-transition:all .3s;-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s;cursor:pointer}
+.reset{box-shadow:0 0 30px #fff;}
+#gameIntro{position:absolute;top: 204px;left: 36px;width:100%;-moz-transition:opacity 1s ease-out;-webkit-transition:opacity 1s ease-out;-o-transition:opacity 1s ease-out;transition:opacity 1s ease-out}
+#gameIntro img{padding:20px; max-height:100%; max-width:100%; width:auto;}
+#game.open #gameIntro{opacity:1;z-index:3;}
+#game.end #gameComplete{opacity:1;z-index:3;visibility:visible;top: 157px;left: 53px;}
+#gameComplete a.share-button{display:inline-block;font-size:11px;margin-right:10px;line-height:16px;height:16px;border-radius:3px;color:#FFF;font-weight:700;vertical-align:middle;padding:1px 10px}
+#gameComplete a.facebook-share-button{background:#369;border:1px solid #036}
+#gameComplete a.plurk-share-button{background:#C63;border:1px solid #930}
+#gameComplete .twitter-share-button{vertical-align:middle;display:inline-block;font-size:11px}
+#result:before{content:' ';position:absolute;width:0;height:0;left:140px;top:-50px;border:0 solid;border-color:transparent}
+#result:after{content:' ';position:absolute;width:0;height:0;left:142px;top:-30px;border:20px solid;border-color:transparent}
+.face{width:100%;height:100%;position:absolute;-webkit-transition-property:opacity, transform, box-shadow;-webkit-transition-duration:.5s;-webkit-backface-visibility:hidden;-moz-transition-property:opacity, 0 box-shadow;-moz-transition-duration:.5s;-moz-backface-visibility:hidden;-o-transition-property:opacity, 0 box-shadow;-o-transition-duration:.5s;-o-backface-visibility:hidden}
+.back{-webkit-transform:rotate3d(0,1,0,-180deg);-moz-transform:rotate3d(0,1,0,-180deg);z-index:8;border-radius:4px}
+.card:hover .face,.card-flipped .face{box-shadow:0 0 10px #ccc}
+.card-flipped .front{-webkit-transform:rotate3d(0,1,0,180deg) scale(1.1);-moz-transform:rotate3d(0,1,0,180deg) scale(1.1);-o-transform:scale(1.1);z-index:8}
+.card-flipped .back{-webkit-transform:rotate3d(0,1,0,0deg) scale(1.1);-moz-transform:rotate3d(0,1,0,0deg) scale(1.1);-o-transform:scale(1.1);z-index:10}
+#splash.match{top:0;bottom:0;opacity:1;-moz-transition:all .8s ease .2s;-webkit-transition:all .8s ease .2s;-o-transition:all .8s ease .2s;transition:all .8s ease .2s;-moz-transform:scale(1);-webkit-transform:scale(1);-o-transform:scale(1);transform:scale(1)}
+#splash:target{top:0;bottom:0;opacity:1}
+#splash span{position:relative;display:inline-block;max-width:100%;vertical-align:bottom;background-color:#fff;border-radius:5px;box-shadow:0 0 10px #000;pointer-events:none;margin:0 18px;padding:5px 0}
+#splash p{padding:15px 0}
+#splash span:after{content:' ';width:100%;height:100%;position:absolute;top:0;left:0;background-color:rgba(0,0,0,0.8);box-shadow:inset 0 0 1px rgba(255,255,255,.4), inset 0 1px 0 rgba(255,255,255,.4), 0 1px 2px rgba(0,0,0,.3);border-radius:5px;opacity:1}
+#splash span.current{z-index:95;-moz-transition:all .8s ease 0;-webkit-transition:all .8s ease 0;-o-transition:all .8s ease 0;transition:all .8s ease 0;box-shadow:0 0 20px #000;-moz-transform:rotate(5deg) scale(2);-webkit-transform:rotate(5deg) scale(2);-o-transform:rotate(5deg) scale(2);transform:rotate(5deg) scale(2)}
+#splash.match span.current{-moz-transition:all .8s linear .8s;-webkit-transition:all .8s linear .8s;-o-transition:all .8s linear .8s;transition:all .8s linear .8s;-moz-transform:rotate(-5deg) scale(4);-webkit-transform:rotate(-5deg) scale(4);-o-transform:rotate(-5deg) scale(4);transform:rotate(-5deg) scale(4)}
+#splash img{vertical-align:bottom;height:150px;margin:0 5px}
+.lightbox a{color:#F26522}
+.lightbox:after{-moz-transition:opacity .8s ease;-webkit-transition:opacity .8s ease;-o-transition:opacity .8s ease;transition:opacity .8s ease;content:"";position:fixed;top:0;left:-200%;bottom:0;background:rgba(0,0,0,0.8);opacity:0}
+.lightbox > div{-moz-transition:opacity .8s ease;-webkit-transition:opacity .8s ease;-o-transition:opacity .8s ease;transition:opacity .8s ease;position:absolute;width:760px;height:520px;top:0;bottom:0;left:-100%;background-color:#fff;border-radius:5px;border:8px solid #DA4930;opacity:0;overflow-y:auto;margin:auto;padding:1em}
+.lightbox:target{left:0}
+.lightbox:target > div{left:0;right:0;opacity:1;z-index:100}
+.lightbox:target::after{left:0;right:0;opacity:1;z-index:99}
+.lightbox p{font-size:1.5em;margin:.5em}
+
+#appcache_info{position:fixed;top:-2em;left:1em;right:1em;font:1em sans-serif;line-height:1.8em;-moz-box-sizing:border-box;box-sizing:border-box;overflow:hidden;background-color:rgba(245,245,245,0.9);color:#000;border:1px solid #ccc;-webkit-box-shadow:0 0 5px #e0e0e0;box-shadow:0 0 5px #e0e0e0;border-top:none;border-bottom-left-radius:.25em;border-bottom-right-radius:.25em;-webkit-transition:top .5s ease;-moz-transition:top .5s ease;-ms-transition:top .5s ease;-o-transition:top .5s ease;transition:top .5s ease;z-index:99999;padding:0 .5em}
+#appcache_info a{display:none;float:right;font-weight:700;text-decoration:none;color:#00f}
+#appcache_info.appcache-progress:after{display:block;float:right;font-weight:700;content:attr(data-progress)}
+body.appcache-allinfo #appcache_info.appcache-checking,#appcache_info.appcache-downloading,#appcache_info.appcache-progress,#appcache_info.appcache-updateready,#appcache_info.appcache-obsolete{top:0}
+#appcache_info.appcache-updateready,#appcache_info.appcache-obsolete{background-color:rgba(255,245,128,0.9);font-weight:700}
+body.appcache-allinfo #appcache_info.appcache-noupdate,body.appcache-allinfo #appcache_info.appcache-error,#appcache_info.appcache-cached{top:-2em;-webkit-transition:top .5s ease 3s;-moz-transition:top .5s ease 3s;-ms-transition:top .5s ease 3s;-o-transition:top .5s ease 3s;transition:top .5s ease 3s}
+#appcache_info a:before{content:'Reload Now'}
+#appcache_info.appcache-checking:before{content:'Checking for offline content updates ...'}
+#appcache_info.appcache-downloading:before,#appcache_info.appcache-progress:before{content:'Downloading offline content ...'}
+#appcache_info.appcache-updateready:before{content:'A new version is available.'}
+#appcache_info.appcache-noupdate:before{content:'No updates available for now.'}
+#appcache_info.appcache-obsolete:before{content:'This website is obsolete. Reload to see new version.'}
+#appcache_info.appcache-error:before{content:'Unable to check for offline content updates.'}
+#appcache_info.appcache-cached:before{content:'Download complete. Ready to be accessed offline.'}
+#click{margin-right:20px}
+#result p{color:#1893cf;text-transform:uppercase;font-size:18px;font-family:ubuntu, sans-serif;line-height:24px;margin:40px 0}
+#mute.melody:before,:fullscreen #fullscreen:before,:-moz-full-screen #fullscreen:before,:-webkit-full-screen #fullscreen:before{background-color:rgba(218,73,48,1);box-shadow:0 0 5px rgba(218,73,48,0.7)}
+#credit,#game.play #gameScore,#game.play #reset,#mute.music,#fullscreen.support,#game.play #cards,#appcache_info.appcache-updateready a,#appcache_info.appcache-obsolete a{display:block}
+#loading.loaded,#splash.disable{display:none}
+.card-removed,#splash span.matched:after{opacity:0}
+#cards { *margin-left:-760px; *margin-top:10px;}
+#game.play #gameIntro, #game.end #gameIntro { *display:none; }
