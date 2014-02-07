@@ -28,14 +28,13 @@
                       <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
                       <script>
                         $(document).ready(function(){
-
                           var validator = $('#e<?php echo $displays[0]->Asset->getId()?>').validate({
                             submitHandler: function(form){
                               $.ajax({
                                 type: "POST",
                                 dataType: "json",
                                 data: $("#e<?php echo $displays[0]->Asset->getId()?>").serialize(),
-                                url: "<?php //echo url_for('homepage')?>/ajax/enquetes",
+                                url: "http://app.cmais.com.br/ajax/enquetes",
                                 beforeSend: function(){
                                   $('#votar').hide();
                                   $('#v_load').show();
