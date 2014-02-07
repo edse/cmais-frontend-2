@@ -4,7 +4,7 @@
 <script src="http://www.culturabrasil.com.br/js/jquery.xmldom.min.js" type="text/javascript"></script>
 <script src="http://www.culturabrasil.com.br/js/Menu.class.js" type="text/javascript"></script>
 <script src="http://www.culturabrasil.com.br/js/User.class.js" type="text/javascript"></script-->
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/pos-abrace2014.css?cash=<?php echo time()?>" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvculturaabrace2013.css?cash=<?php echo time()?>" type="text/css" />
 <script type="text/javascript">
     $(function(){
       var controle = null;
