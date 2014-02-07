@@ -65,24 +65,24 @@ body.tvculturaabrace{background:url("http://cmais.com.br/portal/images/capaProgr
 .tvculturaabrace .proximasAtracoes .proximasAtracoes-box p a{color:#0d6101;}
 .tvculturaabrace .novoNoAr .noAr-box p,
 .tvculturaabrace .novoNoAr .noAr-box a.titulos{color:#333!important;}
+
 /* /home tv cultura abrace */
 
 /* cmais abrace */
-#revista .menu-editorias li a{background: url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/icones-editorias-abrace.jpg") 2px 0 no-repeat;}
-#revista .menu-editorias li a:hover { background-position:-137px 0; background-color:#379520; }
-#menu-revista li.ativo, #menu-revista li:hover {background: url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/bg-hover-abrace.png") no-repeat;}
-#conteudo-revista {border-right: 2px solid #379520;border-left: 2px solid #379520;}
-#revista .menu-editorias li {border-left: 2px solid #379520;}
-.menutv li a {color: #379520;}
+#revista .menu-editorias li a { background:url(../images/icones-editorias.jpg) no-repeat 2px 0; width:137px; height:76px; display:block;}
+#revista .menu-editorias li a:hover { background-position:-137px 0; background-color:#ff6633; }
+#menu-revista li.ativo, #menu-revista li:hover {background: url("http://cmais.com.br/portal/images/bg-hover.png") no-repeat;}
+#conteudo-revista { float:left; margin-top:5px; width:638px; border-right:2px solid #ff6633; border-left:2px solid #ff6633; overflow:hidden; background:#fff; text-align:left; }
+#revista .menu-editorias li { background:#fff; text-indent:-9999px; border-left:2px solid #ff6633; width:137px; height:76px; margin-bottom:2px;}
+.menutv li a {color: #ff6633;}
 #menu-portal .menu-aberto .abas li.ativo a{background:#0d6101!important;}
 #menu-portal .menu-aberto .abas li:hover a{background:#0d6101;}
 #menu-portal .menu-aberto .abas li.ativo span{background:url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/bg-menu-rodape-abrace.png") 0 bottom!important;}
 #menu-portal .menu-aberto .botoes a,
 #menu-portal .box-vjtambem .tit,
 #menu-portal .tit{color:#379520!important;}
-.box-padrao .topo span {background: url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/aba-titulo-abrace.png") no-repeat right 0!important;}
-/*.box-padrao .claro .capa-titulo,
-.box-padrao .capa-titulo{background: #0d6104;}*/
+.box-padrao .topo span { background:url(../images/aba-titulo.png) no-repeat -15px 0; width:15px; height:27px; float:left; position:relative; }
+.box-padrao .claro .capa-titulo{background: #ff6633;}
 .lista-blogs .chapeu {color: #0d6104;}
 .lista-blogs a {color:#0d6104!important}
 /* /cmais abrace */
