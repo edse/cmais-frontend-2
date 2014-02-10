@@ -17,7 +17,7 @@
 </style>
 
 <!--<h3 class="f">TV Cultura</h3>-->
-<div class="f" id="livestream1"><video controls="controls" height="294" src="http://200.136.27.12/hls-live/livepkgr/_definst_/liveevent/tvcultura2.m3u8" width="440"></video></div>
+<div class="f" id="livestream1"><video controls="controls" height="294" src="http://200.136.27.12/hls-live/livepkgr/_definst_/liveevent/tvcultura.m3u8" width="440"></video></div>
 
 <!--<h3 class="f">UnivespTV</h3>-->
 <div class="f" id="livestream2">&nbsp;</div>
@@ -34,7 +34,7 @@ so.addVariable("volume", "75");
 so.addVariable("controlbar", "over");
 so.addVariable("autostart", "true");
 so.addVariable("streamer", "rtmp://200.136.27.12/livepkgr");
-so.addVariable("file", "tvcultura2?adbe-live-event=liveevent");
+so.addVariable("file", "tvcultura?adbe-live-event=liveevent");
 so.addVariable("type", "video");
 so.write("livestream1");
 
