@@ -104,7 +104,7 @@
 			               width: "100%",
 			               height: "100%",
 			               source: "http://app.cmais.com.br/qualidade/linha-do-tempo.jsonp",
-			               start_at_slide: 93, //para começar do último slide
+			               start_at_slide: 92, //para começar do último slide
 			               start_zoom_adjust: -1,
 			               embed_id: "tvcultura-embed",
 			               css: "http://cmais.com.br/portal/js/qualidade/qualidade.css",
