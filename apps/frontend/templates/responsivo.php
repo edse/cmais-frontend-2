@@ -87,7 +87,7 @@
             <li class="multicultura"><a target="_blank" title="Multicultura" href="http://multicultura.com.br">Multicultura</a></li>
             <li class="univesp"><a target="_blank" title="Univesp TV" href="http://univesp.tv.br">Univesp TV</a></li>
             <li class="active culturabrasil"><a target="_blank" title="Cultura Brasil" href="http://culturabrasil.com.br">Cultura Brasil</a></li>
-            <li class="culturafm"><a target="_blank" title="Cultura FM" href="http://www.culturafm.com.br">Cultura FM</a></li>
+            <li class="culturafm"><a target="_blank" title="Cultura FM" href="http://culturafm.com.br">Cultura FM</a></li>
           </ul>
         </div>
       </div>

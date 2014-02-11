@@ -35,7 +35,7 @@
               <a href="http://culturabrasil.com.br" title="Cultura Brasil" target="_blank">Cultura Brasil</a>
             </li>
             <li class="culturafm">
-              <a href="http://www.culturafm.com.br" title="Cultura FM" target="_blank">Cultura FM</a>
+              <a href="http://culturafm.com.br" title="Cultura FM" target="_blank">Cultura FM</a>
             </li>
           </ul>
         </div>
