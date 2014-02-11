@@ -104,7 +104,7 @@
           //TESTE FLOWPLAYER
           $f("audio", 
                   {
-                    src: "/portal/controle-remoto/flowplayer/flowplayer-3.2.16.swf", 
+                    src: "http://cmais.com.br/portal/controle-remoto/flowplayer/flowplayer-3.2.16.swf", 
                     title: "Rádio Cultura Brasil",
                     bgcolor: "#000000"
                   },
@@ -113,7 +113,7 @@
                      plugins:
                      {
                         rtmp: {
-                          url: "/portal/controle-remoto/flowplayer/flowplayer.rtmp-3.2.12.swf",
+                          url: "http://cmais.com.br/portal/controle-remoto/flowplayer/flowplayer.rtmp-3.2.12.swf",
                           netConnectionUrl: "rtmp://200.136.27.12/live",
                           failOverDelay: 4000
                         },
@@ -148,7 +148,7 @@
                   mp3: "http://midiaserver.tvcultura.com.br:8003/;stream/1"
                 }).jPlayer("play");
               },
-              swfPath: "/portal/controle-remoto/swf",
+              swfPath: "http://cmais.com.br/portal/controle-remoto/swf",
               supplied: "mp3",
               //solution: 'flash,html',
               cssSelectorAncestor: "#jp_container_2",
@@ -164,7 +164,7 @@
        function LoadProgramacao(){
          time = new Date().getTime();
          $.ajax({
-           url: "/ajax/programacao-radio?channel_id=6&no-cache="+time,// 6 = Cultura FM 
+           url: "http://cmais.com.br/ajax/programacao-radio?channel_id=6&no-cache="+time,// 6 = Cultura FM 
            dataType: "json",
            success: function(json){
              //No Ar
