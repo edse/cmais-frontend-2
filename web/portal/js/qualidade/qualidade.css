@@ -11,7 +11,7 @@
 }
 
 
-body{background:url(http://cmais.com.br/portal/images/qualidade/bg-tudo.jpg) repeat-x!important;}
+body{background:url(/portal/images/qualidade/bg-tudo.jpg) repeat-x!important;}
 
 .vco-storyjs{}.vco-storyjs div *{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}
 .vco-storyjs h1,.vco-storyjs h2,.vco-storyjs h3,.vco-storyjs h4,.vco-storyjs h5,.vco-storyjs h6,.vco-storyjs p,.vco-storyjs blockquote,.vco-storyjs pre,.vco-storyjs a,.vco-storyjs abbr,.vco-storyjs acronym,.vco-storyjs address,.vco-storyjs cite,.vco-storyjs code,.vco-storyjs del,.vco-storyjs dfn,.vco-storyjs em,.vco-storyjs img,.vco-storyjs q,.vco-storyjs s,.vco-storyjs samp,.vco-storyjs small,.vco-storyjs strike,.vco-storyjs strong,.vco-storyjs sub,.vco-storyjs sup,.vco-storyjs tt,.vco-storyjs var,.vco-storyjs dd,.vco-storyjs dl,.vco-storyjs dt,.vco-storyjs li,.vco-storyjs ol,.vco-storyjs ul,.vco-storyjs fieldset,.vco-storyjs form,.vco-storyjs label,.vco-storyjs legend,.vco-storyjs button2,.vco-storyjs table,.vco-storyjs caption,.vco-storyjs tbody,.vco-storyjs tfoot,.vco-storyjs thead,.vco-storyjs tr,.vco-storyjs th,.vco-storyjs td,.vco-storyjs .vco-container,.vco-storyjs .content-container,.vco-storyjs .media,.vco-storyjs .text,.vco-storyjs .vco-slider,.vco-storyjs .slider,.vco-storyjs .date,.vco-storyjs .title,.vco-storyjs .messege,.vco-storyjs .map,.vco-storyjs .credit,.vco-storyjs .caption,.vco-storyjs .vco-feedback,.vco-storyjs .vco-feature,.vco-storyjs .toolbar,.vco-storyjs .marker,.vco-storyjs .dot,.vco-storyjs .line,.vco-storyjs .flag,.vco-storyjs .time,.vco-storyjs .era,.vco-storyjs .major,.vco-storyjs .minor,.vco-storyjs .vco-navigation,.vco-storyjs .start,.vco-storyjs .active{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;line-height:1;font-family:inherit;width:auto;float:none;}
@@ -379,9 +379,9 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .box-playlist .img:hover {border-color: #2c9700;height: 82px;width:110px;}
 #direita{float: right;text-align: left;}
 #direita p{font-size:13px;line-height:17px}
-.jcarousel-prev{width:20px; height: 80px; background: url(http://cmais.com.br/portal/images/qualidade/seta.png) no-repeat left top; position:absolute; top: 25%; left: -3%;cursor: pointer;}
+.jcarousel-prev{width:20px; height: 80px; background: url(/portal/images/qualidade/seta.png) no-repeat left top; position:absolute; top: 25%; left: -3%;cursor: pointer;}
 .jcarousel-prev:hover {background-position:left top}
-.jcarousel-next{width:20px; height: 80px; background: url(http://cmais.com.br/portal/images/qualidade/seta.png) no-repeat left bottom; position:absolute; top: 25%; right: -5%;cursor: pointer;transform: rotate(180deg); -ms-transform: rotate(180deg); /* IE 9 */ -webkit-transform: rotate(180deg); /* Safari and Chrome */;}
+.jcarousel-next{width:20px; height: 80px; background: url(/portal/images/qualidade/seta.png) no-repeat left bottom; position:absolute; top: 25%; right: -5%;cursor: pointer;transform: rotate(180deg); -ms-transform: rotate(180deg); /* IE 9 */ -webkit-transform: rotate(180deg); /* Safari and Chrome */;}
 .jcarousel-next:hover {background-position:right bottom;}
 .box-confira{background-color: #F0EEEE;padding: 8px;overflow: hidden;}
 .box-confira h2{font-size:14px;}
