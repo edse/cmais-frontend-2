@@ -124,7 +124,7 @@
           <h3>Comentários</h3>
           <!-- comentario facebook -->
           <div class="comentario-fb grid23" style="display:block">
-            <fb:comments href="<?php echo $uri ?>" numposts="7" width="310" publish_feed="true"></fb:comments>
+            <fb:comments href="<?php echo $section->retriveUrl() ?>" numposts="7" width="310" publish_feed="true"></fb:comments>
             <hr />
           </div>
           <!-- /comentario facebook -->
