@@ -2463,7 +2463,10 @@ EOT;
       }
       
     }
-    die(json_encode($return));
+    //die(json_encode($return));
+    $json = json_encode($return);
+    $callback = $request->getParameter('callback');
+    die($callback.'('. $json . ');');
   }
   
  public function executeRadarbuscaartista(sfWebRequest $request){
