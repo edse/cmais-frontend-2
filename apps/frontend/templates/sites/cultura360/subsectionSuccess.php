@@ -108,7 +108,7 @@ $(function(){
           <h2>
             <a href="<?php echo $program->retriveUrl() ?>" style="text-decoration: none;">
               <?php if($program->getImageThumb() != ""): ?>
-                <img src="/uploads/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
+                <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
               <?php else: ?>
                 <h3 class="tit-pagina grid1"><?php echo $program->getTitle() ?></h3>
               <?php endif; ?>

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/culturafm-home2013.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/culturafm-home2013.css" type="text/css" />
 <!--header principal-->
   <div id="main-header" role="main" role="banner" >
     
