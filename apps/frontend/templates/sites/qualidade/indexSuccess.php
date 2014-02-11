@@ -103,7 +103,7 @@
 			              var timeline_config = {
 			               width: "100%",
 			               height: "100%",
-			               source: "http://cmais.com.br/qualidade/linha-do-tempo/",
+			               source: "http://cmais.com.br/qualidade/linha-do-tempo.jsonp",
 			               start_at_slide: 94, //para começar do último slide
 			               start_zoom_adjust: -1,
 			               embed_id: "tvcultura-embed",
