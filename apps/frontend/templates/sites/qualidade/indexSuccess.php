@@ -96,7 +96,7 @@
 							</div>
 							
 		          <!-- INICIO TIMELINE -->
-		          <div class="timeline" style="display: none">
+		          <div class="timeline">
 		          	<h1 class="box-interna">Linha do Tempo de Premiações da Fundação Padre Anchieta</h1>
 			            <div id="tvcultura-embed"></div>
 			            <script type="text/javascript">
@@ -125,7 +125,9 @@
     </div><!-- /CAPA SITE -->
 
 <script>
+
 $(document).ready(function(){
+/*
 	function getURLParameter(name){
 		return decodeURI((RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]);
 	}
@@ -133,7 +135,7 @@ $(document).ready(function(){
 	if(getURLParameter("timeline") != "null"){
 		$(".timeline").show();
 	}
-	
+*/	
 
     // carrossel
 	$('.carrossel').jcarousel({
