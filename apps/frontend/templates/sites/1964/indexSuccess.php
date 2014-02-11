@@ -111,7 +111,7 @@
 			              var timeline_config = {
 			               width: "100%",
 			               height: "100%",
-			               source: "http://cmais.com.br<?php echo url_for('homepage')?>1964/linha-do-tempo.jsonp",
+			               source: "http://univesptv.cmais.com.br/1964/linha-do-tempo.jsonp",
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
