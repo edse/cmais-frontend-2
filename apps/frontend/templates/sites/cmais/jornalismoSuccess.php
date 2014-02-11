@@ -52,7 +52,7 @@ if($block->is_automatic == 1){
 }
 ?>
 
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/jornalismo-novo2013.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/jornalismo-novo2013.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
@@ -578,8 +578,8 @@ $(function(){
     var imigrantes = 0;
     var anchieta = 0;
     $.ajax({
-      url: "/portal/cams.php?s=ecovias",
-      dataType: "json",
+      url: "http://app.cmais.com.br/portal/cams.php?s=ecovias",
+      dataType: "jsonp",
       success: function(data){
         $.each(data, function(i,data){
           var a = new String(data.src);
@@ -631,7 +631,7 @@ $(function(){
   function interior(){
     var ayrtonsenna = 0;
     $.ajax({
-      url: "/portal/cams.php?fpa=1&s=ecopistas",
+      url: "http://app.cmais.com.br/portal/cams.php?fpa=1&s=ecopistas",
       dataType: "json",
       success: function(data){
         $.each(data, function(i,data){
