@@ -111,16 +111,16 @@
 			              var timeline_config = {
 			               width: "100%",
 			               height: "100%",
-			               source: "http://univesptv.cmais.com.br<?php echo url_for('homepage')?>1964/linha-do-tempo.jsonp",
+			               source: "http://cmais.com.br<?php echo url_for('homepage')?>1964/linha-do-tempo.jsonp",
 			               start_at_slide: 0,
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
-			               css: "http://172.20.16.219/portal/js/timeline/1964.css",
-			               lang: "http://172.20.16.219/portal/js/timeline/pt-br.js",
-			               js: "http://univesptv.cmais.com.br/portal/js/timeline/timeline-min.js"
+			               css: "http://cmais.com.br/portal/js/timeline/1964.css",
+			               lang: "http://cmais.com.br/portal/js/timeline/pt-br.js",
+			               js: "http://cmais.com.br/portal/js/timeline/timeline-min.js"
 			              }
 			            </script>
-			            <script type="text/javascript" src="http://univesptv.cmais.com.br/portal/js/timeline/storyjs-embed.js"></script>
+			            <script type="text/javascript" src="http://cmais.com.br/portal/js/timeline/storyjs-embed.js"></script>
 		            </div>
 		            <!-- /FIM TIMELINE -->
 	            		         
