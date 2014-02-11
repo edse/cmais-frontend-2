@@ -1,5 +1,5 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/culturafm.js"></script>
-<!--link rel="stylesheet" href="/portal/css/tvcultura/sites/culturafm-home2013.css" type="text/css" /-->
+<!--link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/culturafm-home2013.css" type="text/css" /-->
 <script type="text/javascript" src="http://cmais.com.br/portal/js/swfobject/swfobject.js"></script>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
 
@@ -189,7 +189,7 @@
         <!--destaque small-->
         <div id="news-radio" class="destaque-small marginLeft10">
           <h2>Newsletter<i class="seta2"></i></h2>
-          <img src="/portal/images/capaPrograma/culturafm/novahome/envelope.jpg" alt="Newsletter">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/culturafm/novahome/envelope.jpg" alt="Newsletter">
           <p>Cadastre-se para receber e-mails com destaques da nossa programação</p>
           
             
