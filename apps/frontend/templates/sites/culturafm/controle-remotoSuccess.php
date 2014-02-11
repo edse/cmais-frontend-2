@@ -26,7 +26,7 @@
         padding: 0;
       }
       #bg {
-        background-image: url("/portal/images/capaPrograma/culturafm/bkg-radiofm.jpg");
+        background-image: url("http://cmais.com.br/portal/images/capaPrograma/culturafm/bkg-radiofm.jpg");
         width: 320px;
         height: 480px;
         text-align: center;

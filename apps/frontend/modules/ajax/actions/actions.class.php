@@ -307,7 +307,7 @@ class ajaxActions extends sfActions
            }
 	       }
 
-         $return .= '$(\'#livestream2\').show();$(\'#livestream2\').html(\'<video controls="controls" height="390" src="http://200.136.27.12/hls-live/livepkgr/_definst_/liveevent/tvcultura2.m3u8" width="640"></video>\');';
+         $return .= '$(\'#livestream2\').show();$(\'#livestream2\').html(\'<video controls="controls" height="390" src="http://200.136.27.12/hls-live/livepkgr/_definst_/liveevent/tvcultura4.m3u8" width="640"></video>\');';
 	       
 	       if(!$mobile){ 
             $return .= "
@@ -316,7 +316,7 @@ class ajaxActions extends sfActions
             so.addVariable('autostart', 'true');
             so.addVariable('streamer', 'rtmp://200.136.27.12/livepkgr');
             //so.addVariable('file', '".$streaming."');
-            so.addVariable('file', 'tvcultura2?adbe-live-event=liveevent');
+            so.addVariable('file', 'tvcultura4?adbe-live-event=liveevent');
             so.addVariable('type', 'video');
             so.addParam('allowscriptaccess','always');
             so.addParam('allowfullscreen','true');
@@ -1876,7 +1876,10 @@ EOT;
       }
       
       //echo "<br>".$filename."<br>t: ".$total."<br>".$results[0]["answer"].": ".$results[0]["votes"]."<br>".$results[1]["answer"].": ".$results[1]["votes"]."<br>";
-      die(json_encode($results));
+      //die(json_encode($results));
+      $json = json_encode($results);
+      $callback = $request->getParameter('callback');
+      die($callback.'('. $json . ');');
     }
     elseif($request->getParameter('asset_id') > 0){
 
@@ -1896,7 +1899,10 @@ EOT;
       foreach($aq->Answers as $a){
         $results[] = @array("answer"=>$a->Asset->getTitle(), "votes"=>number_format(100*$votes[$a->getId()]/$total, 2)."%");
       }
-      die(json_encode($results));
+      //die(json_encode($results));
+      $json = json_encode($results);
+      $callback = $request->getParameter('callback');
+      die($callback.'('. $json . ');');
     }else{
       header("Location: http://cmais.com.br");
       die();
@@ -2457,7 +2463,10 @@ EOT;
       }
       
     }
-    die(json_encode($return));
+    //die(json_encode($return));
+    $json = json_encode($return);
+    $callback = $request->getParameter('callback');
+    die($callback.'('. $json . ');');
   }
   
  public function executeRadarbuscaartista(sfWebRequest $request){
