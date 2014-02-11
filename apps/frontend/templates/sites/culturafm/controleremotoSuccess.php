@@ -164,7 +164,7 @@
        function LoadProgramacao(){
          time = new Date().getTime();
          $.ajax({
-           url: "http://app.cmais.com.br/ajax/programacao-radio?channel_id=6&no-cache="+time,// 6 = Cultura FM 
+           url: "http://app.cmais.com.br/ajax/programacao-radio?channel_id=6&no-cache="+time,// 6 = Cultura FM -
            dataType: "json",
            success: function(json){
              //No Ar
