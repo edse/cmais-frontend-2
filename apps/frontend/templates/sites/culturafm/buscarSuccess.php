@@ -1,5 +1,5 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/culturafm.js"></script>
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/culturafm-home2013.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/culturafm-home2013.css" type="text/css" />
 <script type="text/javascript" src="http://cmais.com.br/portal/js/swfobject/swfobject.js"></script>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
 
