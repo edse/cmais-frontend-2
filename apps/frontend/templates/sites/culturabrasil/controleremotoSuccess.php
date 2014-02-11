@@ -161,7 +161,7 @@
          time = new Date().getTime();
          $.ajax({
            url: "http://app.cmais.com.br/ajax/programacao-radio?channel_id=5&no-cache="+time,// 5 = Cultura Brasil 
-           dataType: "json",
+           dataType: "jsonp",
            success: function(json){
              //No Ar
              $("#titulo_pgm_atual").text(json.noar[0].titulo); 
