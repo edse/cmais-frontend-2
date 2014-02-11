@@ -6,7 +6,7 @@ storyjs_jsonp_data = {
                 "startDate":"2014,2,10,0,0",
                 "endDate":"2014,2,10,0,0",
                 "headline":"Emmy Kids Awards 2014",
-                "text":"<p>A série &#039;Pedro &amp; Bianca&#039;, produção da TV Cultura em parceria com a Secretaria da Educação do Estado de São Paulo, é vencedora do Emmy Kids Awards 2014 na categoria Melhor Série.</p>",
+                "text":"<p>A série 'Pedro &amp; Bianca', produção da TV Cultura em parceria com a Secretaria da Educação do Estado de São Paulo, é vencedora do Emmy Kids Awards 2014 na categoria Melhor Série.</p>",
                 "asset":
                 {
                     "media":"http://www.youtube.com/watch?v=xdenTjb_VQg",
