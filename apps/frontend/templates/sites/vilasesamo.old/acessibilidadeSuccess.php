@@ -1,7 +1,7 @@
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <?php
 $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página.</noscript>"
 ?>
@@ -30,7 +30,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   
   
   <!--section -->
-  <section class="filtro ">
+  <section class="filtro row-fluid">
     
     <!--container conteudo-->
     <div class="b-verde borda-arredonda">
@@ -41,7 +41,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       
       <!--container-->
       <div class="container-na-tv">
-      
+       
         <?php $asset = $section->getAssets(); ?>
         <?php if(isset($asset)):?>  
           <?php if(count($asset) > 0):?>
@@ -53,10 +53,11 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         
          <!--Explicação acessibilidade visite o site da Laramara-->
 		  <a href="http://laramara.org.br/" tabindex="0" class="ac-link" aria-label="Visite o site da LARAMARA"></a>
-             <span class="fundo-acessibilidade" aria-label="Imagem da Bel e Groove felizes por terem um site acessível" tabindex="0"></span>
+            
          
       </div>
       <!--/container-->
+      <span class="fundo-acessibilidade" aria-label="Imagem da Bel e Groove felizes por terem um site acessível" tabindex="0"></span>
     </div>
     <!--/container conteudo-->
     

@@ -1,4 +1,4 @@
-<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"; ?>
+r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"; ?>
 <?php
   /*
    * Pega a campanha (seção filha de "campanhas") e as categorias (seçao filha de "categorias") as quais o asset pertence
@@ -25,32 +25,27 @@
       }
     }
   }
-     
 ?>
-
-
-<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
-<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-<?php echo $noscript; ?>
+<?php echo $noscript ?>
 <script src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
-<?php echo $noscript; ?>
+<?php echo $noscript ?>
 <script src="http://cmais.com.br/portal/js/hammer.min.js" type="text/javascript"></script>
-<?php echo $noscript; ?>
+<?php echo $noscript ?>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
-<?php echo $noscript; ?>
-<script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/paiseeducadores.js"></script>
-<?php echo $noscript; ?>
+<?php echo $noscript ?>
 <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
+<?php echo $noscript ?>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/paiseeducadores.js"></script>
 <?php echo $noscript; ?>
-
 <script>
-  $("body").addClass("interna jogos");
+  $("body").addClass("interna videos");
 </script>
-<?php echo $noscript; ?>
-
+<?php echo $noscript ?>
 <!-- HEADER -->
 <?php include_partial_from_folder('sites/vilasesamo', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <!-- /HEADER -->
@@ -58,27 +53,24 @@
 <!--content-->
 <div id="content">
   <h1 tabindex="0" class="ac-explicacao">
-    Você está na jogo <?php echo $asset->getTitle() ?>
+    Você está na vídeo <?php echo $asset->getTitle() ?>
   </h1>
-  
   <!--section -->
   <section class="filtro row-fluid">
-    <h1 tabindex="0" class="ac-explicacao">
-      Você está na atividade <?php echo $asset->getTitle() ?>
-    </h1>
+    
     <h1>
       <i class="icones-sprite-interna icone-atividades-grande"></i>
       <?php echo $section->getTitle() ?>
-      <a class="todos-assets" title="voltar para todas jogos" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" target="_self" >
-        <i class="icones-setas icone-voltar-jogos"></i>
-        <p aria-hidden="true" tabindex="-1">todos os jogos</p>
+      <a class="todos-assets" title="voltar para todas vídeos" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" target="_self" >
+        <i class="icones-setas icone-voltar-videos"></i>
+        <p aria-hidden="true" tabindex="-1">todos os vídeos</p> 
       </a>
     </h1>
     
     <!--conteudo-asset-->
     <div class="conteudo-asset">
       
-      <h2  tabindex="0"><?php echo $asset->getTitle() ?></h2>
+      <h2 tabindex="0"><?php echo $asset->getTitle() ?></h2>
       <?php
       /*
        * Este código serve apenas para pegar o selo (imagem) que indica que o asset pertence a uma categoria especial (entenda categoria como subseção de "categorias").
@@ -86,10 +78,10 @@
        * Todas as categorias tem este bloco, mas somente as marcadas como "is homepage" serão consideradas como especiais, tais como "Incluir Brincando" e "Hábitos Saudáveis".
        */
       ?>
-      <p aria-label="Jogo: <?php echo $asset->getDescription() ?>"  tabindex="0">
+      <p aria-label="Vídeo: <?php echo $asset->getDescription() ?>"  tabindex="0">
       <?php if(isset($categories)): ?>
         <?php if(count($categories) > 0): ?>
-          <?php
+          <?php      
             foreach($categories as $c) {
               if($c->getIsHomepage() == 1) { // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando".
                 $seloTitle = $c->getTitle(); // pega o título da secão filha
@@ -107,66 +99,81 @@
           <?php endif; ?>
         <?php endif; ?>
       <?php endif; ?>
-        <span aria-hidden="true"><?php echo $asset->getDescription() ?></span>
+       <span aria-hidden="true"><?php echo $asset->getDescription() ?></span>
       </p>
       
-      
       <?php if(isset($asset)): ?>
-      <div class="turn-the-cell-please" style="display:none;">
-        <img src="http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/vire-celular.png" alt=""/>
+      <div class="asset">
+        <div id="player"></div>
+        <a href="#" class="play" aria-label="Iniciar o vídeo"></a>
+        <a href="#" class="pause" aria-label="Pausar o vídeo"></a>
+        <a href="#" class="stop" aria-label="Parar o vídeo"></a>
+        <!--iframe width="900" height="675" src="http://www.youtube.com/embed/<?php echo $asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe-->
       </div>
-   
-      <div class="asset" style="display:none;">
-        <?php echo html_entity_decode($asset->AssetContent->render()) ?>
-      </div>
-      <input class="top" type="hidden" value="false">
       <?php endif; ?>
       
     </div>
+    <!--/conteudo-asset-->
+    
   </section>
   <!--/section-->
   
-  <?php // include_partial_from_folder('sites/vilasesamo', 'global/brinque-tambem-com', array("site" => $site, "section" => $section, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
-   
+  <?php include_partial_from_folder('sites/vilasesamo', 'global/brinque-tambem-com', array("site" => $site, "section" => $section, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
+  
   <?php //include_partial_from_folder('sites/vilasesamo', 'global/form-campanha', array("site" => $site, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
 
   <?php include_partial_from_folder('sites/vilasesamo', 'global/para-os-pais', array("site" => $site, "asset" => $asset, "categories" => $categories, "uri" => $uri)) ?>
 
 </div>
 <!--/content-->
-<script>
-$(document).find('object').before('<span class="sorryFlash" aria-label="Desculpe amiguinho, esse jogo esta sem acessibilidade mas você pode chamar o papai e a mamãe ou um amiguinho pra vocês brincarem juntos, é divertido ou continue navegando e descobrindo as várias formas de se divertir! Até mais!" tabindex="0"></span>').find('embed').after('<noembed>esse jogo usa plugin flash</noembed>');
-$('.sorryFlash').focus();
-</script>
-<?php echo $noscript ?>  
-
-<script>
-setInterval(function(){
-  updateOrientation();  
-},500);
-
-function updateOrientation(){  
-  var screenWidth = screen.width;
-  var windowWidth = window.innerWidth;
-  //alert(windowWidth)
-  //console.log("oiiiii");
-  if (windowWidth > 500 || window.orientation == 90 || window.orientation == -90 ) {  
-    $('.asset').fadeIn('fast');
-    $('.turn-the-cell-please').hide();
-    //goTopGame('header');
-  } else {  
-    $('.asset').hide();
-    $('.turn-the-cell-please').fadeIn('fast'); 
-    //goTopGame('#gameIntro'); 
-  } 
-}
-
-function goTopGame(el){
-  alert($(el).offset().top)
-  $('html, body').animate({
-    scrollTop:parseInt($(el).offset().top)
-  }, "fast");
-  
-}
-</script>
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+<!-- script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/youtubeapi.js"></script --> 
 <?php echo $noscript; ?>
+<script>
+    //Load player api asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var done = false;
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '675',
+          width: '900',
+          videoId: '<?php echo $asset->AssetVideo->getYoutubeId() ?>',
+        });
+    }
+
+    function playVideo() {
+        player.playVideo();
+    }
+    function stopVideo() {
+        player.stopVideo();
+    }
+    function pauseVideo() { 
+        player.pauseVideo();
+    }
+    $('.play').click(function(){playVideo()});
+    $('.stop').click(function(){
+      stopVideo();
+      $('.stopado,.pausado').remove();
+      $('.play').attr('aria-label','Você parou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
+      $('.play').before('<span class="stopado" aria-label="Você parou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo" tabindex="0"></span>');
+      setTimeout(function(){
+        $('.stopado').focus();
+      },800);
+    });
+    $('.pause').click(function(){
+      pauseVideo();
+      $('.stopado,.pausado').remove();
+      $('.play').attr('aria-label','Você pausou a reprodução amiguinho, para iniciar novamente aperte enter').attr('tabindex','0'); 
+      $('.play').before('<span class="pausado" aria-label="Você pausou a reprodução amiguinho, para iniciar novamente aperte novamente o link Iniciar o vídeo" tabindex="0"></span>');
+      setTimeout(function(){
+        $('.pausado').focus();
+      },800);
+    });
+</script>
+<?php echo $noscript ?>
+  
+

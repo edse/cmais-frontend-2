@@ -104,7 +104,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <?php $preview = $asset->retriveRelatedAssetsByRelationType("Preview") ?>
               <?php if(count($preview) > 0): ?>
               <div class="img-topo-asset">  
-                <p class="img-destaque-asset" aria-label="Imagem do artigo. Descrição"."<?php echo $preview[0]->getDescription() ?><?php echo $preview[0]->getDescription() ?>">
+                <p class="img-destaque-asset" aria-label="Imagem do artigo. "."<?php echo $preview[0]->getDescription() ?><?php echo $preview[0]->getDescription() ?>">
                   <img id="img-capa" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $asset->getTitle() ?>" />
                   <span id="legenda" ><?php echo $preview[0]->getDescription() ?></span>
                 </p>
@@ -184,7 +184,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                         $webs = explode(",", $Web);
                         foreach($webs as $k=>$w):
                         ?>
-                          <a href="<?php echo $Web ?>" target="_blank" title="<?php echo $Web ?>">Site <?php echo ($k + 1) ?></a>
+                          <a href="<?php echo "http://".$Web ?>" target="_blank" title="<?php echo $Web  ?>"><?php echo $Web ?></a>
                           <?php if( $k > 0 || $Facebook != "" || $Twitter != "" || $YouTube != ""  ){ echo ", "; }else{ echo "."; } ?>
                         <?php endforeach;?>
                       <?php endif; ?>
@@ -264,7 +264,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <?php endforeach; ?>
             </div>
             <div class="bottom-box-sobre">
-              <img src="/portal/images/capaPrograma/vilasesamo2/box-bottom-sobre.png" alt=""/>
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/box-bottom-sobre.png" alt=""/>
             </div>
           </div>  
           <?php endif; ?>
@@ -356,7 +356,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 <a href="<?php echo $related_asset[0]->retriveUrl() ?>" title="<?php echo $related_asset[0]->getTitle() ?>" tabindex="0">
                   <?php $preview = $related_asset[0]->retriveRelatedAssetsByRelationType("Preview") ?>
                   <?php if(count($preview) > 0): ?>
-                    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>" aria-label="Título: <?php echo $related_asset[0]->getTitle() ?>. Descrição: <?php echo $related_asset[0]->getDescription() ?>">
+                    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>" aria-label="Título: <?php echo $related_asset[0]->getTitle() ?>. -  <?php echo $related_asset[0]->getDescription() ?>">
                   <?php endif; ?>
                   <i class="icones-sprite-interna icone-jogos-pequeno"></i>
                   <div class="texto" aria-hidden="true" >
@@ -396,7 +396,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <article class="videos" tabindex="-1">
                 <a href="<?php echo $related_asset[0]->retriveUrl() ?>" title="<?php echo $related_asset[0]->getTitle() ?>" tabindex="0">
                   <div class="yt-menu">
-                    <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $related_asset[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $related_asset[0]->getTitle() ?>" aria-label="Título: <?php echo $related_asset[0]->getTitle() ?>. Descrição: <?php echo $related_asset[0]->getDescription() ?>">
+                    <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $related_asset[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $related_asset[0]->getTitle() ?>" aria-label="Título: <?php echo $related_asset[0]->getTitle() ?>. -  <?php echo $related_asset[0]->getDescription() ?>">
                   </div>
                   
                   <i class="icones-sprite-interna icone-videos-pequeno"></i>
@@ -438,7 +438,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                  <a href="<?php echo $related_asset[0]->retriveUrl() ?>" title="<?php echo $related_asset[0]->getTitle() ?>" tabindex="0">
                   <?php $preview = $related_asset[0]->retriveRelatedAssetsByRelationType("Preview") ?>
                   <?php if(count($preview) > 0): ?>
-                    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>" aria-label="Título: <?php echo $related_asset[0]->getTitle() ?>. Descrição: <?php echo $related_asset[0]->getDescription() ?>">
+                    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>" aria-label="Título: <?php echo $related_asset[0]->getTitle() ?>. -  <?php echo $related_asset[0]->getDescription() ?>">
                   <?php endif; ?>
                   <i class="icones-sprite-interna icone-atividades-pequeno"></i>
                   <div class="texto" aria-hidden="true" >

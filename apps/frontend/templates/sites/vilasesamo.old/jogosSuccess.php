@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>" ?>
 <script>
-  $("body").addClass("interna atividades");
+  $("body").addClass("interna jogos");
 </script>
 <?php echo $noscript; ?>
 <!-- HEADER -->
@@ -12,20 +12,19 @@
 
 <!--content-->
 <div id="content">
-  
   <!--Explicação acessibilidade-->
-  <h1 tabindex="0" class="ac-explicacao">
-   <?php echo $section->getDescription(); ?>
-  </h1> 
+<h1 tabindex="0" class="ac-explicacao">
+  <?php echo $section->getDescription(); ?>
+</h1>
 <!--section-->
 <section class="filtro row-fluid">
   <!--span12-->
   <div class="span12" role="main">
     
-    <!--h3><i class="sprite-icon-colorir-med"></i>Atividades</h3-->
+    <!--h3><i class="sprite-icon-colorir-med"></i>jogos</h3-->
     <h1>
-      <i class="icones-sprite-interna icone-atividades-grande"></i>
-      Atividades
+      <i class="icones-sprite-interna icone-jogos-grande"></i>
+      JOGOS
    </h1>
     
     <?php if(isset($displays['destaque-1']) || isset($displays['destaque-2'])): ?>
@@ -39,16 +38,16 @@
             <?php $related_preview = $displays['destaque-1'][0]->Asset->retriveRelatedAssetsByRelationType("Preview"); ?>
             <?php if($related_preview):?>
               <?php
-                if(count($related_preview)>0 && $related_preview[0]->AssetImage->getHeadline() != ""):
+                if(count($related_preview)>0):
                   $decricaoImagem = $related_preview[0]->AssetImage->getHeadline(); 
                 else:
-                  $decricaoImagem = "Desculpe, a imagem esta sem descrição mas esta atividade é bem legal, brinque com ela e chame a sua família ou amiguinhos!";  
+                  $decricaoImagem = "Desculpe, a imagem esta sem descrição mas o Jogo é bem legal, jogue-o e divirta-se!";  
                 endif; 
               ?>
             <?php endif; ?>
             <h2>
               <div class="span6 clipes">
-                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>" title="" aria-label="Novidade destaque Atividade - Título: <?php echo $displays['destaque-1'][0]->getTitle().". Descrição: ".$displays['destaque-1'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>" >
+                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/jogos/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>" title="" aria-label="Novidade destaque Jogo - Título: <?php echo $displays['destaque-1'][0]->getTitle().".  -  ".$displays['destaque-1'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>" >
                   <span class="sprite-selo">Novidade!</span>
                   <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="" />
                   <p><?php echo $displays['destaque-1'][0]->getTitle() ?></p>
@@ -71,7 +70,7 @@
             <?php endif; ?>
             <h2>
               <div class="span6 clipes semmargem">
-                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>" title="" aria-label="Novidade destaque Atividade - Título:<?php echo $displays['destaque-2'][0]->getTitle().". Descrição: ".$displays['destaque-2'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>" >
+                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/jogos/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>" title="" aria-label="Novidade destaque Jogo - Título:<?php echo $displays['destaque-2'][0]->getTitle().".  -  ".$displays['destaque-2'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>" >
                   <span class="sprite-selo">Novidade!</span>
                   <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="" />
                   <p><?php echo $displays['destaque-2'][0]->getTitle() ?></p>
@@ -124,11 +123,11 @@
         }
       }
     ?>
-    <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> atividades"> 
-      <a href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
+    <li class="span4 element<?php if(count($assetPersonagens) > 0) echo " " . implode(" ", $assetPersonagens); ?> jogos"> 
+      <a href="/<?php echo $site->getSlug() ?>/jogos/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
         <?php $related = $d->retriveRelatedAssetsByRelationType("Preview") ?>
         <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
-        <i class="icones-sprite-interna icone-atividades-pequeno"></i>
+        <i class="icones-sprite-interna icone-jogos-pequeno"></i>
         <div>
           <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
           <?php echo $d->getTitle() ?>

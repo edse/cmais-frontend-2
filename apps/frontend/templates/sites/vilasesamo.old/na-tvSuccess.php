@@ -27,7 +27,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 	</h1>
   
   <!--section -->
-  <section class="filtro"> 
+  <section class="filtro row-fluid">
     
     <!--container conteudo-->
     <div class="b-verde borda-arredonda">
@@ -37,7 +37,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       </h1>
       
       <!--container-->
-      <section id="container-na-tv"><!--só leu qndo tirei o aria-hidden e o tabindex -1-->
+      <section><!--só leu qndo tirei o aria-hidden e o tabindex -1-->
         <div class="container-na-tv">
           <h2 class="ola" tabindex="0" aria-label="Olá">Olá!</h2>
           
@@ -86,13 +86,11 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <?php endif; ?>
           <?php endif; ?>
           
-           <span class="fundo-na-tv-mobile" aria-label="Imagem do Garibaldo com a Bel dizendo: Olá!" tabindex="0"></span> 
            
         </div>
         <!--/container-->
-          <span class="fundo-na-tv" aria-label="Imagem do Garibaldo com a Bel dizendo: Olá!" tabindex="0"></span> 
       </section>
-    
+      <span class="fundo-na-tv" aria-label="Imagem do Garibaldo com a Bel dizendo: Olá!" tabindex="0"></span> 
     </div>
     <!--/container conteudo-->
     

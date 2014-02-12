@@ -163,7 +163,7 @@
                         endif; 
                       ?>
                       <li class="<?php echo $assetSection->getSlug(); ?>">
-                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
+                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>. -  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
                           <?php if($d->AssetType->getSlug() == "video"): ?>
                             <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                           <?php else: ?>
@@ -216,7 +216,7 @@
                           endif; 
                         ?>
                       <li class="<?php echo $assetSection->getSlug(); ?>">
-                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
+                        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>. -  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
                           <?php if($d->AssetType->getSlug() == "video"): ?>
                             <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                           <?php else: ?>
@@ -271,7 +271,7 @@
                             endif; 
                           ?>
                           <li class="<?php echo $assetSection->getSlug(); ?>">
-                            <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
+                            <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>. -  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
                               <?php if($d->AssetType->getSlug() == "video"): ?>
                                 <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                               <?php else: ?>
@@ -321,7 +321,7 @@
                           endif; 
                           ?>
                             <li class="<?php echo $section->getSlug(); ?>">
-                              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>.Descrição:  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
+                              <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>" aria-label="Título:<?php echo $d->getTitle() ?>. -  <?php echo $d->getDescription() ?>. Descrição thumbnail: <?php echo $decricaoImagem ?>" tabindex="0">
                                 <?php if($d->AssetType->getSlug() == "video"): ?>
                                   <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
                                 <?php else: ?>
