@@ -163,6 +163,10 @@
                     <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
                     <p class="txt-10"><span id="textCounter">1000</span> remaining characters</p>                                       
                   </div>
+                  <div class="linha t3 codigo" id="captchaimage">
+                    <input class="enviar" type="submit" name="enviar" id="enviar" value="send message" style="cursor:pointer" />
+                    <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                  </div>
                   <!--
                   <div class="linha t3 codigo" id="captchaimage">
                     <label for="captcha">confirmation</label>
