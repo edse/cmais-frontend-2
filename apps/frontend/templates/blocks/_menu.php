@@ -96,7 +96,7 @@
       <?php $classFloat = "style='float:right'"?>
       <div class="abrace-infinito-esquerda"></div>
       <div class="abrace-esquerda">
-        <img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/topo-abrace-cmais.png" alt="abrace o novo, abrace a TV Cultura"/>
+        <!--img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/topo-abrace-cmais.png" alt="abrace o novo, abrace a TV Cultura"/-->
       </div>  
   <?php endif; ?> 
       
