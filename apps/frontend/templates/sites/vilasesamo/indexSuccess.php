@@ -114,6 +114,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 <?php echo $noscript; ?>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
 <?php echo $noscript; ?>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
+<?php echo $noscript; ?>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
 <?php echo $noscript; ?>
 
