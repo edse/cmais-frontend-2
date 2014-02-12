@@ -1,14 +1,14 @@
 <div class="cabecalho">
   <div id="horario">
     <a class="cultura" href="http://tvcultura.cmais.com.br/grade" target="_blank">
-      <img src="/portal/quintal/images/logo-tv.png" />
+      <img src="http://cmais.com.br/portal/quintal/images/logo-tv.png" />
       <h2>TV Cultura</h2>
       <p>segunda a sexta: 9h30 (reprise) <br>e 14h30 (inédito) • sábado: 8h45</p>      
       <span class="divisa"></span>
     </a>
     
     <a class="rtb" href="http://tvratimbum.cmais.com.br/grade" target="_blank">
-      <img src="/portal/quintal/images/logo-rtb.png" />
+      <img src="http://cmais.com.br/portal/quintal/images/logo-rtb.png" />
       <h2>TV Rá Tim Bum!</h2>
       <p>segunda a sexta: 7h • 1h</p>      
       <span class="divisa"></span>

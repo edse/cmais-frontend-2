@@ -196,7 +196,7 @@ $(function(){
                   <div id="captchaimage">
                     <label class="span2" for="captcha">
                       Confirma&ccedil;&atilde;o
-                      <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
+                      <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
                         <img style="clear:both; display: block;" src="http://cmais.com.br/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
                       </a>
                     </label>
@@ -380,7 +380,7 @@ $(function(){
         },
         captcha: {
           required: true,
-          remote: "/portal/js/validate/demo/captcha/process.php"
+          remote: "http://app.cmais.com.br/portal/js/validate/demo/captcha/process.php"
         }
       },
       messages:{

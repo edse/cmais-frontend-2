@@ -56,7 +56,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       <?php if($section->getIsHomepage() == 1): // A seção filha de "categorias" precisa estar com a opção "is Homepage" marcada para ser considerada especial, tais como "Hábitos Saudáveis" e "Incluir Brincando". ?>
   
        
-        <div class="container-campanhas" tabindex="0" aria-label="<?php echo $displays["selo"][1]->Asset->AssetType->getSlug() ?> <?php echo $displays["selo"][1]->getTitle() ?>. -  <?php echo $displays['destaque-principal'][0]->getDescription() ?>" tabindex="0""> <!-- Conteúdo iframe-->
+        <div class="container-campanhas" tabindex="0" aria-label="<?php echo $displays["selo"][1]->Asset->AssetType->getSlug() ?> <?php echo $displays["selo"][1]->getTitle() ?>. Descrição:  <?php echo $displays['destaque-principal'][0]->getDescription() ?>" tabindex="0""> <!-- Conteúdo iframe-->
           <!-- selo -->
           <?php if(isset($displays['selo'])): ?>
             <?php if(count($displays['selo']) > 0): ?>

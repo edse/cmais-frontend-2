@@ -47,24 +47,25 @@
                 
 		                <?php if(count($relacionados) > 0): ?>
 			                    <?php foreach($relacionados as $k=>$d): ?>
-				                 	<?php if($k == 0): ?>
-			                  			<iframe title="<?php echo $d->getTitle()?>" width="640" height="390" src="http://www.youtube.com/embed/<?php echo $d->AssetVideo->getYoutubeId()?>?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
-																</div>
-																	<script>
-																		function changeVideo(id){
-																		  $('#player').html('<iframe width="640" height="390" src="http://www.youtube.com/embed/'+id+'?wmode=transparent" frameborder="0" allowfullscreen></iframe>');
-																		}
-																	</script>
-																	<div class="box-thumbs">
-																		<h4>Assista todos os vídeos</h4>
-																		<ul class="box-playlist grid2 carrossel">			                  			
-			                  	<?php else:?>
-																	<li>
-																		<a href="javascript:changeVideo('<?php echo $d->AssetVideo->getYoutubeId()?>')" class="img">
-																			<img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId()?>/1.jpg" alt="<?php echo $d->getTitle()?>">
-																		</a>
-																	</li>				                  	
-			                    
+					                 	<?php if($k == 0 ): ?>
+				                  			<iframe title="<?php echo $d->getTitle()?>" width="640" height="390" src="http://www.youtube.com/embed/<?php echo $d->AssetVideo->getYoutubeId()?>?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
+																	</div>
+																		<script>
+																			function changeVideo(id){
+																			  $('#player').html('<iframe width="640" height="390" src="http://www.youtube.com/embed/'+id+'?wmode=transparent" frameborder="0" allowfullscreen></iframe>');
+																			}
+																		</script>
+																		<div class="box-thumbs">
+																			<h4>Assista todos os vídeos</h4>
+																			<ul class="box-playlist grid2 carrossel">			                  			
+				                  	<?php else:?>
+				                  		<?php if($d->getId() != 164212):?>
+																		<li>
+																			<a href="javascript:changeVideo('<?php echo $d->AssetVideo->getYoutubeId()?>')" class="img">
+																				<img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId()?>/1.jpg" alt="<?php echo $d->getTitle()?>">
+																			</a>
+																		</li>				                  	
+				                    <?php endif; ?>
 				              	  <?php endif; ?>     
 		                    <?php endforeach; ?>
 		                  </ul>
@@ -96,14 +97,14 @@
 							</div>
 							
 		          <!-- INICIO TIMELINE -->
-		          <div class="timeline" style="display: none">
+		          <div class="timeline">
 		          	<h1 class="box-interna">Linha do Tempo de Premiações da Fundação Padre Anchieta</h1>
 			            <div id="tvcultura-embed"></div>
 			            <script type="text/javascript">
 			              var timeline_config = {
 			               width: "100%",
 			               height: "100%",
-			               source: "http://app.cmais.com.br/qualidade/linha-do-tempo.jsonp",
+			               source: "http://cmais.com.br/portal/images/qualidade/linhadotempo.jsonp",
 			               start_at_slide: 92, //para começar do último slide
 			               start_zoom_adjust: -1,
 			               embed_id: "tvcultura-embed",
@@ -125,7 +126,9 @@
     </div><!-- /CAPA SITE -->
 
 <script>
+
 $(document).ready(function(){
+/*
 	function getURLParameter(name){
 		return decodeURI((RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]);
 	}
@@ -133,7 +136,7 @@ $(document).ready(function(){
 	if(getURLParameter("timeline") != "null"){
 		$(".timeline").show();
 	}
-	
+*/	
 
     // carrossel
 	$('.carrossel').jcarousel({

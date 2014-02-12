@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 <?php
 $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
@@ -20,7 +20,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   </h1>
   
   <!--section-->
-  <section class="filtro row-fluid">
+  <section class="filtro">
     <h1><span class="icones-sprite-interna icone-personagem-grande"></span><?php echo $section->getTitle() ?></h1>
     
     <!--conteudo-asset-->

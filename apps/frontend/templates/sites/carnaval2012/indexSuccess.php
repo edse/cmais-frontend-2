@@ -239,7 +239,7 @@
                     <div class="linha t5 codigo" id="captchaimage">
                   	  <label for="captcha">Confirma&ccedil;&atilde;o</label>
                       <br />
-                      <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro c�digo">
+                      <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro c�digo">
 
                         <img src="http://tvcultura.com.br/portal/js/validate/demo/captcha/images/image.php?1328995519" width="132" height="46" alt="Captcha image" id="captcha_image" />
                       </a>
@@ -320,7 +320,7 @@
             },
             captcha: {
               required: true,
-              remote: "/portal/js/validate/demo/captcha/process.php"
+              remote: "http://app.cmais.com.br/portal/js/validate/demo/captcha/process.php"
             }
           },
           messages:{

@@ -10,15 +10,15 @@
 #carrossel-personagem .arrow span { height: 70px;  width: 46px; background-color:transparent; margin-top:100%; }
 #carrossel-personagem .slider .inner { margin:5px 0 5px 5px; border:none; }
 #carrossel-personagem .slider li { height:auto; width:auto; }
-#slider .mpc_ls_ui_button.style02 { background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/icone-setas.png")  0 -1071px;  width: 46px; height: 70px; }
-#slider .mpc_ls_next_slide.style02 { background-position:  0 -953px; }
 .navbar-inverse .navbar-inner.topo-vila { /* background:  url("/portal/images/capaPrograma/vilasesamo2/bg-topo-vila-home.jpg") repeat-x */; height:55px; }
 #content { top:51px; }
 /* /carrossel personagem */
 
-#slider .mpc_ls_slides_thumbs.style02 .mpc_ls_thumb { background:#fcbb00; border:2px solid #FEE133; border-radius: 8px; }
-#slider .mpc_ls_slides_thumbs.style02 .mpc_ls_thumb.active { background:#feff33;  border:2px solid #fcbb00; }
-#slider .mpc_ls_slides_thumbs.style01 { box-shadow: inset 0 1px 1px red;}
+.mpc_ls_slides_thumbs.style02 .mpc_ls_thumb { background:#fcbb00!important; border:2px solid #FEE133!important; border-radius: 8px!important; }
+.mpc_ls_slides_thumbs.style02 .mpc_ls_thumb.active { background:#feff33!important;  border:2px solid #fcbb00!important; }
+.mpc_ls_slides_thumbs.style01 { box-shadow: inset 0 1px 1px red;}
+.mpc_ls_ui_button.style02 { background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/icone-setas.png")  0 -1071px!important;  width: 46px!important; height: 70px!important; }
+.mpc_ls_next_slide.style02 { background-position:  0 -953px!important; }
 .divisa.tipo2 { background: url("/portal/images/capaPrograma/vilasesamo2/pattern-divisa2.jpg") repeat-x; height: 2px; margin:0 auto; }
 
 #carrossel-personagem .slider .inner.garibaldo { background:#ff6525 !important; }
@@ -46,3 +46,14 @@
 .destaques .span4.jogos{border-top: 7px solid #02cbff;border-bottom: 7px solid #02cbff;border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius:4px;}
 .destaques .span4.videos{border-top: 7px solid #fba500;border-bottom: 7px solid #fba500;border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius:4px;}
 .destaques .span4 .texto{white-space: nowrap;text-overflow: ellipsis;overflow: hidden;padding: 0; font-size:16px;font-family:'dinmedium',Arial, Helvetica, sans-serif;}
+
+@media only screen and (min-width:980px){
+  #carrossel-destaque-mobile{display:none;}
+}
+
+
+
+
+
+
+

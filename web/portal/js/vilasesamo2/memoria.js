@@ -40,20 +40,21 @@ matchingGame.deck = [
 matchingGame.clone = $.extend(true, [], matchingGame.deck);
 
 //on document load the lazy way
+
 $(function(){
   var loader = new PxLoader();
 
-/*
-  loader.addImage('http://172.20.16.219/testes/memoriaVilaSesamo/img/bel.jpg');
-  loader.addImage('http://172.20.16.219/testes/memoriaVilaSesamo/img/beto.jpg');
-  loader.addImage('http://172.20.16.219/testes/memoriaVilaSesamo/img/comecome.jpg');
-  loader.addImage('http://172.20.16.219/testes/memoriaVilaSesamo/img/elmo.jpg');
-  loader.addImage('http://172.20.16.219/testes/memoriaVilaSesamo/img/enio.jpg');
-  loader.addImage('http://172.20.16.219/testes/memoriaVilaSesamo/img/garibaldo.jpg');
-  loader.addImage('http://172.20.16.219/testes/memoriaVilaSesamo/img/grover.jpg');
-  loader.addImage('http://172.20.16.219/testes/memoriaVilaSesamo/img/grupo.jpg');
-  loader.addImage('http://172.20.16.219/testes/memoriaVilaSesamo/img/zoe.jpg');
-*/  
+
+  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/bel.jpg');
+  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/beto.jpg');
+  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/comecome.jpg');
+  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/elmo.jpg');
+  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/enio.jpg');
+  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/garibaldo.jpg');
+  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/grover.jpg');
+  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/grupo.jpg');
+  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/zoe.jpg');
+  
   
   loader.addProgressListener(function(e) {
     if (e.completedCount * 5 < 100) {
@@ -70,11 +71,13 @@ $(function(){
 
 //initialise game
 function init() {
+  
   if (!decent) { //workaround for IE9
     uiSplash.addClass('disable');
   }
   playGame = false;
   uiPlay.click(function(e) {
+    console.log("fui2");
     e.preventDefault();
     ui.removeClass("open");
     startGame();
@@ -131,6 +134,7 @@ function init() {
 
 //start game and create cards from deck array
 function startGame() {
+  
   ui.addClass('play');
   uiTime.text("0");
   uiClick.text("0");
@@ -257,6 +261,7 @@ function EndGame() {
     event.stopPropagation();
     event.preventDefault();
   });
+  /*
   $('.plurk-share-button').attr('href', 'http://www.plurk.com/m/?content=' + encodeURIComponent( 'æˆ‘å‰›ç”¨ #Firefox #Android çŽ© MozTW çš„ç€è¦½å™¨ç¿»ç‰ŒéŠæˆ²ï¼Œ'+ total_score + 'åˆ†éŽé—œï¼Œ'+ document.location.href +' (å¿«ä¾†æŒ‘æˆ°æˆ‘å§ï¼)') + '&qualifier=shares');
   if ('twttr' in window) {
     $(document.createElement('a')).attr('href', 'https://twitter.com/share')
@@ -268,6 +273,7 @@ function EndGame() {
                                   .appendTo('#share');
     twttr.widgets.load();
   }
+  */
 }
 
 //recreate the original card , stop the timer and re populate the array with class names

@@ -72,3 +72,36 @@
     <!--/content-->
   </nav>
   <!--/nav-->
+  
+  <nav id="header-bar-mobile" aria-label="Navegação do site" >
+    
+    <!--content-->
+    <div class="content">
+      
+      <!--h1>
+        <a href="http://cmais.com.br/vilasesamo" title="link" aria-label="link para a home do site">
+          <img src="/portal/images/capaPrograma/vilasesamo2/logo.png"  alt="Logo Vila Sésamo"/>
+        </a>
+        <?php //echo $border ?>
+      </h1-->
+      
+      <nav id="menu-mobile">
+      	<a href="http://cmais.com.br/vilasesamo/jogos" title="Jogos">
+					<img src="/portal/images/capaPrograma/vilasesamo2/jogos.png">
+        </a>
+        <a href="http://cmais.com.br/vilasesamo/videos"  title="Vídeos">
+					<img src="/portal/images/capaPrograma/vilasesamo2/videos.png">
+        </a>
+        <a href="http://cmais.com.br/vilasesamo/atividades"  title="Atividades">
+					<img src="/portal/images/capaPrograma/vilasesamo2/atividades.png">
+        </a>
+        <a href="http://cmais.com.br/vilasesamo/personagens" title="Personagens">
+          <img src="/portal/images/capaPrograma/vilasesamo2/personagens.png">
+        </a>
+       
+      </nav>
+     
+    </div>
+    <!--/content-->
+  </nav>
+  <!--/nav-->

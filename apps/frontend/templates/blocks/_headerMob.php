@@ -87,14 +87,14 @@
     <!-- BOTAO AO VIVO -->
     <div class="aovivo" align="center">
       <a href="/aovivo" data-transition="slidedown" rel="external">
-        <img src="/portal/images/capaPrograma/mob/aovivo.png" width="90%">
+        <img src="http://cmais.com.br/portal/images/capaPrograma/mob/aovivo.png" width="90%">
       </a>
     </div>  
     <!-- /BOTAO AO VIVO -->
     
     <!-- LOGO CMAIS -->
     <a href="/" data-transition="flip" class="logo">
-      <img src="/portal/images/capaPrograma/mob/logoCmais.png" alt="Cmais" width="100%"/>
+      <img src="http://cmais.com.br/portal/images/capaPrograma/mob/logoCmais.png" alt="Cmais" width="100%"/>
     </a>  
     <!-- /LOGO CMAIS -->
     <!--Swipe Carousel / ACCORDIN-->

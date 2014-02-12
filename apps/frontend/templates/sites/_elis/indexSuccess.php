@@ -22,7 +22,7 @@
       <h2>
       <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
       <?php if($program->getImageThumb() != ""): ?>
-      <img src="/portal/images/capaPrograma/elis/logo.png" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
+      <img src="http://cmais.com.br/portal/images/capaPrograma/elis/logo.png" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
       <?php	else:?>
       <h3 class="tit-pagina grid1">
       <?php echo $program->getTitle() ?>

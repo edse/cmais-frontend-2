@@ -1,7 +1,7 @@
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <?php use_helper('I18N', 'Date') ?>
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <?php
 $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
 ?> 

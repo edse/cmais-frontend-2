@@ -1,8 +1,10 @@
-<link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
+<link type="text/css" rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
+<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/home.css" type="text/css" />
 <?php
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
 $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
 ?> 
+
 <!--content-->
 <div id="content">
   <!--menu principal && banner promocional-->
@@ -12,10 +14,10 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   <h1 tabindex="0" class="ac-explicacao">
     <?php echo $section->getDescription(); ?>
   </h1>
-  
   <?php include_partial_from_folder('sites/vilasesamo', 'global/bannerprincipal', array('site' => $site)); ?>
+  <?php include_partial_from_folder('sites/vilasesamo', 'global/bannerprincipalmobile', array('site' => $site, 'displays'=>$displays['destaque-banner-mobile'])); ?>  
   <!--/menu principal && banner promocional-->
-  
+
   <!--carrossel personagens-->
   <?php $particularSection = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"personagens"); ?>
   <?php $personagens = $particularSection->subsections()?>
@@ -33,7 +35,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <?php if(count($displays['destaques-de-assets']) > 0): ?>
       <!--section-->
       <section class="destaques span8" aria-label="links em destaque" tabindex="0">
-            <?php foreach($displays['destaques-de-assets'] as $d): ?>
+            <?php foreach($displays['destaques-de-assets'] as $k=>$d): ?>
               <?php
                 $sections = $d->Asset->getSections();
                 foreach($sections as $s) {
@@ -46,13 +48,20 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               ?>
         <div class="span4 <?php echo $assetSection->getSlug() ?>">
           <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="">
+            <div class='container-image'>
             <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
-            <div class="yt-menu">  
-              <img class="destaque" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt=""/>
-            </div>
+              <img class="destaque" src="<?php echo "http://midia.cmais.com.br/displays/4861c805231996d885581e83688236c2e7cb6b9d.png";?>" alt=""/>
+               
+            <?php 
+            /*
+             
+             * 
+             */
+             ?>
             <?php else: ?>
               <img class="destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt=""/>
             <?php endif; ?>
+            </div>
             <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
             <div class="texto">
               <img class="altura"src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="" aria-label="<?php echo $assetSection->getSlug(); ?>"/>
@@ -101,16 +110,10 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 <!--/content-->
 
 <!--scripts e css banner-->
-
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
 <?php echo $noscript; ?>
-
-<script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
-<?php echo $noscript; ?>
-
 <script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
 <?php echo $noscript; ?>
-
 <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
 <?php echo $noscript; ?>
 
@@ -123,30 +126,69 @@ $('#carrossel-p').responsiveCarousel({
   unitElement:'#carrossel-p .slider-target > li',
   mask:'#carrossel-p .slider-mask',
   easing:'linear',
-  dragEvents:true,
   speed:200,
   slideSpeed:1000,
-  responsiveUnitSize : function() {
-    return 2;
-  },
-  step : -1
+  infinite:false,
+  dragEvents:true,
+  unitWidth :   'compute'
 });
 
-$('#carrossel-p').mouseenter(function(){
-  $('.arrow.personagem').fadeIn('fast');
+$(window).on('resize', function () {
+    $('#carrossel-p').responsiveCarousel('redraw');
 });
 
-$('#carrossel-p').mouseleave(function(){
-  $('.arrow.personagem').fadeOut('fast');
+var characterNumber = -1
+var whoHasGone = new Array();
+whoHasGone[0] = 0;
+var whoIsNow = new Array();
+var whichOne = 0;
+var cont = 0
+$('.inner.personagens a img').each(function(i){
+   characterNumber++   
 });
 
-$('.inner.personagens a').mouseenter(function(){
-  $(this).find('img').animate({top:-70, easing:"swing"},'fast');
-});
-$('.inner.personagens a').mouseleave(function(){
-  $(this).find('img').stop();
-  $(this).find('img').animate({top:0, easing:"swing"},'fast');  
-});
+
+
+setInterval(function(){checkSize()},300);
+function animation(){
+
+    while(cont < 8){
+      whichOne =Math.floor((Math.random()*characterNumber)+1);
+      alert(parseInt($('.inner.personagens a img').offsetTop))
+      if($('.inner.personagens a img').eq(0).offsetTop == 0){ 
+        $('.inner.personagens a img').eq(0).animate({top:-70, easing:"swing"},'fast');
+      }else{
+        $('.inner.personagens a img').eq(0).animate({top:0, easing:"swing"},'fast');
+      }
+      cont++
+    }
+    console.log("fui")
+    //$('.inner.personagens a img').eq(1).animate({top:-70, easing:"swing"},'fast');1000);
+
+}
+
+
+function checkSize(){
+  var screenWidth =window.innerWidth;
+  if(screenWidth >= 980){
+    $('.inner.personagens a').mouseenter(function(){
+      $(this).find('img').animate({top:-70, easing:"swing"},'fast');
+    });
+    $('.inner.personagens a').mouseleave(function(){
+      $(this).find('img').stop();
+      $(this).find('img').animate({top:0, easing:"swing"},'fast');  
+    });
+    $('#carrossel-p').mouseenter(function(){
+      $('.arrow.personagem').fadeIn('fast');
+    });
+    
+    $('#carrossel-p').mouseleave(function(){
+      $('.arrow.personagem').fadeOut('fast');
+    });
+    
+  }
+}
+
  
 
 </script>

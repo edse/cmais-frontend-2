@@ -1,0 +1,218 @@
+/*assets */
+.todos-assets { float:right; cursor: pointer; }
+.todos-assets:hover p { text-decoration:underline; }
+.todos-assets i { float:left; margin-right:0 !important; position:relative; margin:0px!important; }
+.interna.videos #content .filtro h3 i.sprite-btn-voltar-videos { margin-top:0; }
+.todos-assets p { background: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-jogos.png) repeat; float:left; margin:0 !important; margin-left:-15px !important; height:48px; line-height:48px; padding:0 10px 0 20px; color: #FFFFFF;    font-size: 25px!important;    font-weight: normal;    text-transform: uppercase; }
+#content .filtro { border-bottom:none; margin-bottom:0; }
+#content .filtro h3 { padding-right:0; }
+.conteudo-asset {padding: 10px 20px 30px 20px; background:#fff; overflow: hidden; width: 900px;}
+h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993f7; text-transform:uppercase; }
+#content p { font-size:16px; float:left;margin-bottom: 20px; }
+.conteudo-asset .asset p{width:100%;}
+.conteudo-asset p{width:100%;}
+.conteudo-asset p a { float:right; width: 220px; margin-left:2%; }
+
+
+.conteudo-asset .asset { text-align:center;clear: both;}
+#content .relacionados { background:#0191fb; color:#fff; margin:0 auto; padding:0; max-width:940px; overflow:hidden; position:relative; border-bottom:7px solid #02CBFF; }
+.relacionados h2 { margin:0; color:#fff; padding:10px; background:#3aaaec}
+.relacionados p {  float:left;}
+.relacionados p a { color:#fff; }
+.relacionados p a:hover { text-decoration:underline; }
+.relacionados .todos-assets  { position:absolute; top:10px; right:0; }
+.relacionados .divisa { margin:0 auto; }
+/*#carrossel-interna .slider-mask-wrap { margin:0 auto; }
+#carrossel-interna { margin:20px auto 0; }
+#carrossel-interna .slider li { border-bottom:1px solid #7732e5;  background:#883feb; }
+#carrossel-interna .slider li a { color:#fff; text-transform:uppercase; }
+#carrossel-interna .slider li img { border:1px solid #7732e5; margin:0 -1px; }
+#carrossel-interna .slider li.atividade { background:#883feb; }
+#carrossel-interna .slider li.jogo { background:#3aaaec; border-color:#0191fb; }
+#carrossel-interna .slider li.jogo img { border-color:#0191fb; }
+#carrossel-interna .slider li.video { background:#f5861f; border-color:#f07317; }
+#carrossel-interna .slider li.video img { border-color:#f07317; }
+#carrossel-interna .slider li .nome { padding:0; display: block; height:40px; line-height: 40px; }
+#carrossel-interna .slider li .nome i { float:left; margin:0 15px; }
+#carrossel-interna .slider li .nome i.sprite-ico-videos-p { margin-top:4px; }
+#carrossel-interna .slider li .nome i.sprite-ico-jogos-p { margin-top:7px; }
+#carrossel-interna .slider li:hover a { text-decoration:underline; }*/
+/* form */
+#content .form{position:relative; overflow: hidden;margin-bottom:20px;}
+#content .form .span12{margin-bottom:20px;}
+#content .form .span8{margin:0;}
+#content .form .span4{margin-left:20px;}
+
+#content .section.form,
+#content section.form { background:#3aaaec; margin:0 auto; padding:20px; max-width:900px; }
+#content .section.form .span8,
+#content section.form .span8 { width: 64%; }
+#content .section.form .span4,
+#content section.form .span4 { margin:0 !important; float:right; width:300px; }
+#content .section.form p,
+#content section.form p,
+#content .section.form label,
+#content section.form label,
+#content .section.form h2, 
+#content section.form h2 { color:#fff; }
+#content .section.form h2,
+#content section.form h2 { font-size: 25px;margin-bottom: 20px; }
+#content .form .dk_toggle.error,
+#content .form input.error,
+#content .form select.error,
+#content .form textarea.error{border: #fffd2f 2px solid;color: #fffd2f!important;background: #737373;text-shadow:none;}
+.form-horizontal .control-label {text-align:left; *float:left; float:left; width:40px !important;}
+.form-horizontal .control-group.span12{width:100%;}
+.form-horizontal .control-group textarea { float:right\0;width: 521px;width: 508px\0; margin-left: 1%;height: 80px;margin-left: 10px;border-radius: 0px; }
+
+.form-horizontal .control-group { float: left;    margin-left: 0;    margin-right: 0;    width: 91%; }
+.form-horizontal .control-group input {margin: 0; float:left;}
+#content section.form .form-horizontal .span8 { width: 380px; }
+.form-horizontal .span8.control-group input{width:330px;width:310px\0;}
+.form-horizontal .span8.control-group.cidade{width:440px!important; margin-bottom:20px;}
+.form-horizontal .span8.control-group.cidade input{width:390px;width:310px\0;}
+.form-horizontal .idade.span2 input,
+.form-horizontal .span8.control-group input,
+.form-horizontal .control-group a  { line-height:26px; display: block;border-radius: 0;height: 35px; float: left; padding: 15px 7px;padding: 0px 7px\0; margin: 0 0 0 10px;}
+.form-horizontal .estado .control-label { width:auto; }
+.form-horizontal .estado .control-group,
+.form-horizontal .estado select { width:90px; }
+.form-horizontal .estado select { height:36px; line-height:36px; }
+.form-horizontal .estado .control-group { margin:0; }
+.form-horizontal .control-group { margin:0 0 2% 0; min-height:25px; }
+.form-horizontal .control-group.idade  .control-group { width: 66%; float:right; } 
+.form-horizontal .idade.span2 input{width: 120px;width: 100px\0; margin-left: 10px;float:right;}
+.form-horizontal .idade.span2 { width:170px; float:left; margin-left: 20px;margin-bottom:0;}
+.form-horizontal .span2.estado { width:85px; float:left; margin-left: 11px; margin-left:15px\0; }
+.form-horizontal .span2.estado select{width:85px;}
+.form-horizontal .span2 input { width: 75%; }
+.form-horizontal .span2 .control-group { margin-right:0; }
+.form-horizontal .anexo .control-group { overflow:hidden; width: 61% !important; }
+/*.form-horizontal .anexo input { overflow:hidden; margin-left: -37px; float:left; }*/
+.form .sucesso .btn,
+.form-horizontal .span11 .btn,
+.form-horizontal .anexo a { height:36px; line-height:36px; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x; display: block; padding:0 5px; color:#737373; text-transform:uppercase; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-size: 18px; text-align:center; }
+.form-horizontal .control-label.sprite-ico-email, 
+.form-horizontal .sprite-ico-email { margin-top:4px; }
+.form-horizontal .sprite-ico-anexo { width:28px !important; }
+.form-horizontal .anexo .control-group { width:71% !important; }
+.form-horizontal .span11 { float:right; }
+.form-horizontal .span11 a { color:#fffb49;}
+.form .sucesso .btn,
+.form-horizontal .span11 .btn { width:100%; border:none; box-shadow:none; text-shadow:none; font-size:18px; margin-bottom: 28px; }
+.form .sucesso { float:left; margin:60px 0; }
+.form .sucesso p { font-size:18px; text-transform:uppercase; text-align:center; }
+.form .termo{width: 526px;background: #d9d9d9;float: right;height: 90px;border-radius: 5px;overflow:scroll;}
+.form .termo::-webkit-scrollbar {height: 12px;width: 20px;background: #d9d9d9;}
+.form .termo::-webkit-scrollbar-thumb {background:#737373;-webkit-border-radius: 0.5ex; border:2px solid #d9d9d9;}
+.form .termo::-webkit-search-results-decoration,
+.form .termo::-webkit-scrollbar-corner {background: #d9d9d9;}
+.form .control-group.estado  label.error,
+.form .control-group.anexo  label.error{display:none!important;}
+.form label.error{position: absolute;bottom: 18px;left: 37px;font-size: 21px!important;margin: 0;}
+.interna.atividades .form label.error{background-color:#883feb;} 
+.interna.jogos .form label.error{background-color:#3aaaec;}
+.interna.videos .form label.error{background:#f78701;}
+.atividades .form label.error{background:#883feb; }
+.form .control-group.span11 label{margin: 0; padding: 0; font-size:16px;}
+.form .control-group.span11 input{margin: 3px;}
+/* /form */
+
+/* ie */
+.pais .row-fluid .span4 {  *margin:2px !important;}
+#content .filtro h3 { *position:relative }
+.todos-assets { *position:absolute; *top:7px; *right:0 }
+.option-assets{ display: block; float:right; font-size: 25px; color:#571ed9;font-family: 'din-blackregular',Arial, Helvetica, sans-serif; text-transform:uppercase; padding: 10px 10px 10px 0px; margin: 10px 0 30px 0;}
+.option-assets:hover span{color:#571ed9; text-decoration:underline;}
+.option-assets span{float:left;margin: 10px;}
+/* /assets */
+
+/* atividades*/
+.interna.atividades .todos-assets p { background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png);font-size:25px!important; }
+.interna.atividades .conteudo-asset h2 { color:#883feb; }
+.interna.atividades #content{background-color:#571ed9;}
+.interna.atividades #content .relacionados {background:#7732e5; border-bottom:none;}
+.interna.videos #content .section.form,
+.interna.atividades #content section.form,
+.interna.atividades .relacionados h2 { background:#883feb }
+.interna.atividades .divisa{background-color: #883feb;margin-bottom: 0;} 
+ 
+/* /atividades*/
+
+/* videos */
+.interna.videos .todos-assets p { background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-videos.png); }
+.interna.videos .conteudo-asset h2 { color:#f27300; }
+.interna.videos #content .relacionados {background:#f57301; border:none;}
+.interna.videos #content .filtro h3 span,
+.interna.videos #content .filtro h3 i,
+.interna.videos #content h3 span,
+.interna.videos #content h3 i { margin-top:-6px; }
+.interna.videos #content .section.form,
+.interna.videos #content section.form,
+.interna.videos #content .relacionados h2 { background:#f78701; }
+/* /videos */
+
+/* box erros */
+.msgErro p{font-family:'din-blackregular', Arial, Helvetica, sans-serif;width: 100%;text-align: center;margin-bottom: 20px;font-size: 18px;color: #434343!important;background: #ffee52;padding: 5px;line-height: 30px;border: red 2px solid;text-transform:uppercase;}
+.msgAcerto p{font-family:'din-blackregular', Arial, Helvetica, sans-serif;width: 100%;text-align: center;font-size: 20px!important;text-transform:uppercase;color:#FFFFFF;margin: 19px 0 40px 0;height: 35px;line-height: 25px;}
+.msgAcerto a{font-family:'din-blackregular', Arial, Helvetica, sans-serif;width: 100%;text-align: center;font-size: 18px;color: #434343!important;text-transform:uppercase;text-transform: uppercase;padding: 5px 0;background: #ffee52;text-shadow: none;}
+/* /box erros */
+
+/**
+ * select do form cmapanha
+ */
+.form .dk_container { margin-bottom: 0px!important; background-color: #FFFFFF;color:#737373;font-family: 'Helvetica', Arial, sans-serif;font-size: 12px;font-weight: bold;margin-bottom: 18px;border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px; }
+.form .dk_container:focus {outline: 0; }
+.form .dk_container a {cursor: pointer;text-decoration: none; } 
+
+.form .dk_toggle {border: 1px solid #ccc;color: #333;padding: 7px 45px 7px 10px;text-shadow: #fff 1px 1px 0;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;-webkit-transition: border-color .5s;-moz-transition: border-color .5s;-o-transition: border-color .5s;transition: border-color .5s;position: relative;padding: 0!important;margin: 0!important; }
+.form .dk_toggle:hover {border-color: #8c8c8c; }
+.form .dk_toggle:after {position: absolute;top: 45%;right: 10px;content: '';border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 5px solid #4B4B4B; }
+
+/* focused */
+.form .dk_focus .dk_toggle {border-color: #40b5e2;box-shadow: 0 0 5px #40b5e2;-moz-box-shadow: 0 0 5px #40b5e2;-webkit-box-shadow: 0 0 5px #40b5e2; }
+
+/* open */
+.form .dk_open {box-shadow: 0 0 5px #40b5e2;-moz-box-shadow: 0 0 5px #40b5e2;-webkit-box-shadow: 0 0 5px #40b5e2;z-index: 10; }
+.form .dk_open .dk_toggle {background-color: #ececec;border-color: #8c8c8c;color: #ccc;box-shadow: inset 0 -2px 5px #ccc;border-radius: 5px 5px 0 0;-moz-border-radius: 5px 5px 0 0;-webkit-border-radius: 5px 5px 0 0; }
+
+/* options */
+.form .dk_options {background: #fefefe;/* Removes transparent background on iOS5+ scroll */box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px;-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px;-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px;border-radius: 0 0 5px 5px;-moz-border-radius: 0 0 5px 5px;-webkit-border-radius: 0 0 5px 5px; }
+.form .dk_options .dk_options_inner{margin:0;}
+.form .dk_options a {background-color: #fff;border-bottom: 1px solid #999;font-weight: bold;padding: 0 7px!important; }
+.form .dk_options a:hover,
+.form .dk_options .dk_option_current a {background-color: #737373;color: #fff;text-decoration: none;text-shadow: none;}
+.form .dk_options li:last-child a {border-bottom: none; }
+.form .dk_options .disabled {cursor: default; }
+.form .dk_options .disabled a {color: #aaa; }
+.form .dk_options .disabled:hover, .dk_options .disabled:hover a {cursor: default;background-color: #fff;border-bottom-color: #999;text-shadow: none; }
+
+/* Inner container for options, this is what makes the scrollbar possible. */
+.form .dk_options_inner { max-height: 250px;border: 1px solid #8c8c8e;border-bottom-width: 2px;border-bottom-color: #999;color: #737373;text-shadow: #fff 0 1px 0;border-radius: 0 0 5px 5px;-moz-border-radius: 0 0 5px 5px;-webkit-border-radius: 0 0 5px 5px; }
+.form .dk_options_inner a{padding: 0 7px!important;margin-left:0!important;}
+/******  End Theme ******/
+/***** Critical to the continued enjoyment of working dropdowns ******/
+.form .dk_container {display: none;float: left; }
+.form .dk_container a {outline: 0;height:33px!important; width: 117px!important;line-height: 24px!important;color: #737373;}
+.form .dk_toggle {display: -moz-inline-stack;display: inline-block;*display: inline;position: relative;zoom: 1; }
+.form .dk_toggle .dk_label{line-height:33px; margin-left:7px;}
+.form .dk_open {position: relative; }
+.form .dk_open .dk_options {display: block; }
+.form .dk_open .dk_label {color: inherit; }
+.form .dk_options {display: none;margin-top: -1px;position: absolute;right: 0;width: 100%; }
+.form .dk_options a, .dk_options a:link, .dk_options a:visited { display: block;height:24px!important; }
+.form .dk_options_inner {overflow: auto;position: relative; -webkit-overflow-scrolling: touch; }
+
+/* Hides only dropkick <select> instances */
+.form .dk_container select {position: absolute;top: -99999em;visibility: hidden; }
+
+/*  nativeMobile override */ 
+.form .dk_mobile {position: relative; }
+.form .dk_mobile select {display: block;width: 100%; height: 100%;top: 0; left: 0;visibility: visible;opacity: 0;appearance:none;-moz-appearance:none;-webkit-appearance:none; }
+/***** End Critical to the continued enjoyment of working dropdowns ******/
+
+/* botao anexar */
+.form .file-wrapper {cursor: pointer;display: inline-block;overflow: hidden;position: relative;}
+.form .file-wrapper input {cursor: pointer;font-size: 100px;height: 100%;filter: alpha(opacity=1);-moz-opacity: 0.01;opacity: 0.01;position: absolute;right: 0;top: 0;}
+.form .file-wrapper .button {float:right;background: url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;border:none;color: #434343!important;cursor: pointer;display: inline-block;font-size: 11px;font-weight: bold;margin-right: 5px;padding: 8px 19px;text-transform: uppercase;font-family:'din-blackregular',Arial, Helvetica, sans-serif;font-size:18px;}
+.form .file-holder{clear: both;text-align: left;color: #FFF;margin: 10px 0 7px 0;padding-left: 13px;font-size: 12px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}

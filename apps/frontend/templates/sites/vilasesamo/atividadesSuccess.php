@@ -48,7 +48,7 @@
             <?php endif; ?>
             <h2>
               <div class="span6 clipes">
-                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>" title="" aria-label="Novidade destaque Atividade - Título: <?php echo $displays['destaque-1'][0]->getTitle().".  -  ".$displays['destaque-1'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>" >
+                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>" title="" aria-label="Novidade destaque Atividade - Título: <?php echo $displays['destaque-1'][0]->getTitle().". Descrição: ".$displays['destaque-1'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>" >
                   <span class="sprite-selo">Novidade!</span>
                   <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="" />
                   <p><?php echo $displays['destaque-1'][0]->getTitle() ?></p>
@@ -71,7 +71,7 @@
             <?php endif; ?>
             <h2>
               <div class="span6 clipes semmargem">
-                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>" title="" aria-label="Novidade destaque Atividade - Título:<?php echo $displays['destaque-2'][0]->getTitle().".  -  ".$displays['destaque-2'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>" >
+                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/atividades/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>" title="" aria-label="Novidade destaque Atividade - Título:<?php echo $displays['destaque-2'][0]->getTitle().". Descrição: ".$displays['destaque-2'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>" >
                   <span class="sprite-selo">Novidade!</span>
                   <img src="<?php echo $related_preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="" />
                   <p><?php echo $displays['destaque-2'][0]->getTitle() ?></p>

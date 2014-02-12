@@ -1,6 +1,6 @@
 /* carrossel layer-slider home desktop */
-#carrossel-destaque .slide02 .tit-banner,.slide03 .tit-banner, .slide04 .tit-banner,.slide05 .tit-banner, .slide06 .tit-banner{font-size:50px; color:#FFF;text-transform:uppercase;position: relative; top:-24px; left:0px;}
-#carrossel-destaque .slide02 .desc-banner,.slide03 .desc-banner, .slide04 .desc-banner, .slide05 .desc-banner, .slide06 .desc-banner{font-size:45px;line-height: 45px; color:#FFF;}
+#carrossel-destaque .slide02 .tit-banner,.slide03 .tit-banner, .slide04 .tit-banner,.slide05 .tit-banner, .slide06 .tit-banner{font-size:3.571em; color:#FFF;text-transform:uppercase;position: relative; top:-24px; left:0px;}
+#carrossel-destaque .slide02 .desc-banner,.slide03 .desc-banner, .slide04 .desc-banner, .slide05 .desc-banner, .slide06 .desc-banner{font-size:3.214em;line-height: 45px; color:#FFF;}
 #carrossel-destaque .slide05 .tit-banner{color:#d71c0d;}
 #carrossel-destaque .slide05 .desc-banner{color:#d71c0d;}
 #carrossel-destaque .tit-banner.sombra{position: relative;top: 0px;left: 0px;}
@@ -23,10 +23,10 @@
 #carrossel-personagem .arrow-right { right: 21px;}
 
 #carrossel-personagem .slider-mask-wrap { margin:0; max-width:940px; background:#ffffff; margin-bottom:10px; border-bottom:1px solid #c31408; border-top:1px solid #c31408; position:relative; height:172px;}
-#carrossel-personagem .slider-mask { overflow: hidden; position: absolute; zoom: 1; max-width:940px;}
-#carrossel-personagem .slider-target { width: 2000px; margin: 0 auto; }
+#carrossel-personagem .slider-mask { overflow: hidden; position: absolute; zoom: 1; max-width:100%;}
+#carrossel-personagem .slider-target { margin: 0 auto; }
 #carrossel-personagem .slider ul { margin: 0; padding: 0; list-style-type: none;}
-#carrossel-personagem .slider li { width: 150px; height: 160px; float: left; margin: 0; padding: 0;}
+#carrossel-personagem .slider li { float: left; margin: 0; padding: 0;}
 #carrossel-personagem .slider .inner { background:#9933cc!important; width:140px; height:140px;margin:10px 0 10px 10px; display:block; overflow:hidden; padding:0;border-radius:8px;}
 #carrossel-personagem .examples { padding: 1em; background-color: #2f4f4f;}
 #carrossel-personagem #menu span {white-space: nowrap; }
@@ -39,21 +39,16 @@
 #carrossel-personagem #selector li { display: inline-block; margin-right: 10px;}
 
 #carrossel-personagem #menu span { white-space: nowrap;}
-
-@media (max-width:640px){
-  #carrossel-personagem .slider li {color:white;width: 70px;height: 80px;}
-  #carrossel-personagem .slider .inner {width:60px; height:60px; display:block; overflow:hidden; padding:0;border-radius:8px;}
-}
 /*/carrossel personagens vila sesamo*/
 
 /*carrossel mobile*/
-#carrossel-destaque-mobile{background-color:#fee133; max-width:100%;}
-#carrossel-mobile{max-width: 640px;margin: 0 auto;}
+#carrossel-destaque-mobile{background-color:#fee133; max-width:100%;padding-bottom:10px; height:80%!important;max-height:80%!important;}
+#carrossel-mobile{/*max-width: 640px*/;margin: 0 auto;}
 #carrossel-mobile .slider {position: relative;zoom: 1;}
 #carrossel-mobile .slider-nav {position: absolute;zoom: 1;width: 100%;top: 0;left: 0;}
 #carrossel-mobile .arrow {width: 70px;height: 250px;position: absolute;zoom: 1;top: 0;}
-#carrossel-mobile .arrow span.back{position: absolute; top: 90px; left: 20px;width:50px; height:71px; display:block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1570px;}
-#carrossel-mobile .arrow span.next{position: absolute; right: 19px; top: 91px; width: 50px; height: 70px; display: block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1273px;}
+#carrossel-mobile .arrow span.back{position: absolute; top: 90px; left: 20px;width:50px; height:71px; display:block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1570px;z-index: 90000;}
+#carrossel-mobile .arrow span.next{position: absolute; right: 19px; top: 91px; width: 50px; height: 70px; display: block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1273px;z-index: 90000;}
 #carrossel-mobile .arrow span {display: block;width: 100%;height: 250px;cursor: pointer;}
 #carrossel-mobile .arrow.disabled {opacity: 0.3;cursor: default;}
 #carrossel-mobile .arrow-left {left: 0;}
@@ -61,9 +56,9 @@
 #carrossel-mobile .slider-mask {overflow: hidden;position: relative;zoom: 1;}
 #carrossel-mobile .slider-target {width: 2000px;margin: 0 auto;}
 #carrossel-mobile .slider ul {margin: 0;padding: 0;list-style-type: none;}
-#carrossel-mobile .slider li {width: 640px;height: 250px;float: left;margin: 0;padding: 0;}
+#carrossel-mobile .slider li {/*width: 640px;height: 250px;*/float: left;margin: 0;padding: 0;max-height:100%!important; }
 #carrossel-mobile .slider li a img{display:block; margin: 0 auto;}
-#carrossel-mobile .slider .inner {padding: 10px;margin: 0 5px;border: 1px solid #333;height: 100%;background-color: #CCC;}
+#carrossel-mobile .slider .inner {padding: 10px;margin: 0 5px;border: 1px solid #333;background-color: #CCC;}
 
 /* selector styling */
 #selector-mobile{margin:0px auto; padding: 10px auto!important;}
@@ -167,8 +162,8 @@
 #carrossel-interna-artigo .slider li a img{display:block; margin: 0 auto;}
 #carrossel-interna-artigo .slider .videoorimage{max-width:420px;padding:20px;}
 #carrossel-interna-artigo .slider .descritivo{ padding:20px 20px 20px 0px; }
-#carrossel-interna-artigo .slider .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:25px;line-height: 30px;}
-#carrossel-interna-artigo .slider .descritivo p{font-size:16px;}
+#carrossel-interna-artigo .slider .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:1.786em;line-height: 30px;}
+#carrossel-interna-artigo .slider .descritivo p{font-size:1.143em;}
 #carrossel-interna-artigo .slider .inner {padding: 10px;margin: 0 5px;border: 1px solid #333;height: 100%;background-color: #CCC;}
 #carrossel-interna-artigo .container-itens{position:absolute; width:500px; height:30px; top: 342px; right: 0}
 

@@ -1,5 +1,13 @@
 $(document).ready(function() {
-  
+  //definind viewport para celular
+  var screenWidth = screen.width;
+    if(screenWidth < 540){
+      $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no">');
+    }else if(screenWidth >= 541 && screenWidth <= 767){  
+      //alert("tablet p");
+    } else if(screenWidth >= 768){  
+      //alert("tablet l");
+    }
     /*
     * 
     * PRINT JPGS
@@ -52,46 +60,119 @@ $(document).ready(function() {
   //botao inicial da tela aberto
   
   //menu principal
-  $('.header-bar ul li').not($(".btn-"+urlElement)).mouseenter(function() {
-    var el = $("." + $(this).attr("class") + " .fundo");
-    var elBorda = $("." + $(this).attr("class") + " .borda");
-    var w_time = $(this).attr("data-time");
-    var w_button = $(this).attr("data-width");
+
+  if(screen.width > 768){
+    $('.header-bar ul li').not($(".btn-"+urlElement)).mouseenter(function() {
+      var el = $("." + $(this).attr("class") + " .fundo");
+      var elBorda = $("." + $(this).attr("class") + " .borda");
+      var w_time = $(this).attr("data-time");
+      var w_button = $(this).attr("data-width");
+      
+      el.stop();
+      $(this).stop();
+      
+      el.show();
+      elBorda.show();
+      $(this).animate({
+        width: w_button
+      }, w_time);
+      el.animate({
+        width:  w_button
+      }, w_time);
+    });
     
-    el.stop();
-    $(this).stop();
+    $('.header-bar ul li').not($(".btn-"+urlElement)).mouseleave(function() {
+      var el = $("." + $(this).attr("class") + " .fundo");
+      var elBorda = $("." + $(this).attr("class") + " .borda");
+      var w_back = $(this).attr("data-back")
+      
+      $(this).stop();
+      el.stop();
+      
+      $(this).animate({
+        width: w_default
+      }, w_back);
+      el.animate({
+        width: w_default
+      }, w_back, function(){
+        if(el.width() == w_default){
+          el.hide();
+          elBorda.hide();
+        }
+      });
+    });
+  }
+  //menu principal 
+
+  //header tablet e celular
+
+  $('.alca').click(function(){
+    if($('.header-mobile').height() > 109){
+      hideHeader();
+    }else{
+      showHeader();
+    }
+    setTimeout(function(){hideHeader()},8000);
     
-    el.show();
-    elBorda.show();
-    $(this).animate({
-      width: w_button
-    }, w_time);
-    el.animate({
-      width:  w_button
-    }, w_time);
   });
   
-  $('.header-bar ul li').not($(".btn-"+urlElement)).mouseleave(function() {
-    var el = $("." + $(this).attr("class") + " .fundo");
-    var elBorda = $("." + $(this).attr("class") + " .borda");
-    var w_back = $(this).attr("data-back")
-    
-    $(this).stop();
-    el.stop();
-    
-    $(this).animate({
-      width: w_default
-    }, w_back);
-    el.animate({
-      width: w_default
-    }, w_back, function(){
-      if(el.width() == w_default){
-        el.hide();
-        elBorda.hide();
-      }
-    });
+  $('.ac-pular').click(function(){
+    $('.ac-explicacao').focus();
   });
-  //menu principal  
+  
+  $('.btn-menu').click(function(){
+    $('.nav-mobile').toggle('fast');
+  });
+    
+    $('.alca').hide();
+    
+    var delay = 300;
+    var timeout = null;
+    var initialPosition = document.documentElement.scrollTop
+    $(window).bind('scroll',function(){
+      clearTimeout(timeout);
+      timeout = setTimeout(function(){
+        var scrollPosition =  $(window).scrollTop();
+        if(scrollPosition <= initialPosition ){
+          showHeader();
+        }else{
+          hideHeader();
+        }
+        initialPosition = scrollPosition;
+      },delay);
+    });
+    
+    window.onload=function(){
+      setTimeout(function(){hideHeader()},2000);  
+    };
+    
+    function hideHeader(){
+      $('.alca').fadeIn('fast');
+      $('.logo-mobile, .btn-menu, .nav-mobile, .imagem-topo').hide()
+      $('.header-tablet').animate({
+        height:30
+      }, "fast");
+      $('.header-mobile').animate({
+        height:30
+      }, "fast");
+    }
+    
+    function showHeader(){
+      $('.alca').hide();
+      $('.logo-mobile, .btn-menu,.imagem-topo').fadeIn('fast')
+      $('.header-tablet').animate({
+        height:110
+      }, "fast");
+      $('.header-mobile').animate({
+        height:110
+      }, "fast");
+    }
+    
+    function goTop(){
+      $('html, body').animate({
+        scrollTop:parseInt($('.container').offset().top)
+      }, "slow");
+    } 
 
   //menu personagens tablet
   $('.icone-cuidadores-abrir').click(function() {
