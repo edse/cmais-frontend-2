@@ -37,7 +37,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <?php echo $noscript; ?>
    
     <script src="http://cmais.com.br/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
-    <?php echo $noscript; ?>
+    <?php echo $noscript; ?> 
     
      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
      <!--[if lt IE 9]>
