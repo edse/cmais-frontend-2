@@ -29,8 +29,8 @@
 ?>
 
 
-<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
-<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
 <?php echo $noscript; ?>
@@ -113,7 +113,7 @@
       
       <?php if(isset($asset)): ?>
       <div class="turn-the-cell-please" style="display:none;">
-        <img src="http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/vire-celular.png" alt=""/>
+        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/vire-celular.png" alt=""/>
       </div>
    
       <div class="asset" style="display:none;">
