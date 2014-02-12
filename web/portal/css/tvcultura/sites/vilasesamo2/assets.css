@@ -3,12 +3,12 @@
 .todos-assets:hover p { text-decoration:underline; }
 .todos-assets i { float:left; margin-right:0 !important; position:relative; margin:0px!important; }
 .interna.videos #content .filtro h3 i.sprite-btn-voltar-videos { margin-top:0; }
-.todos-assets p { background: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-jogos.png) repeat; float:left; margin:0 !important; margin-left:-15px !important; height:48px; line-height:48px; padding:0 10px 0 20px; color: #FFFFFF;    font-size: 25px!important;    font-weight: normal;    text-transform: uppercase; }
+.todos-assets p { background: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-jogos.png) repeat; float:left; margin:0 !important; margin-left:-15px !important; height:48px; line-height:48px; padding:0 10px 0 20px; color: #FFFFFF;font-size:25px!important;font-weight: normal;text-transform: uppercase; }
 #content .filtro { border-bottom:none; margin-bottom:0; }
 #content .filtro h3 { padding-right:0; }
 .conteudo-asset {padding: 10px 20px 30px 20px; background:#fff; overflow: hidden; width: 900px;}
-h2 { font-size:18px; line-height:22px; margin:0; font-weight:normal; color:#1993f7; text-transform:uppercase; }
-#content p { font-size:16px; float:left;margin-bottom: 20px; }
+h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1993f7; text-transform:uppercase; }
+#content p { font-size:1.143em; float:left;margin-bottom: 20px; }
 .conteudo-asset .asset p{width:100%;}
 .conteudo-asset p{width:100%;}
 .conteudo-asset p a { float:right; width: 220px; margin-left:2%; }

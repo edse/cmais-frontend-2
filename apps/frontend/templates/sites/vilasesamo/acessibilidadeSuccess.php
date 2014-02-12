@@ -30,7 +30,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   
   
   <!--section -->
-  <section class="filtro row-fluid">
+  <section class="filtro ">
     
     <!--container conteudo-->
     <div class="b-verde borda-arredonda">
@@ -41,7 +41,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       
       <!--container-->
       <div class="container-na-tv">
-       
+      
         <?php $asset = $section->getAssets(); ?>
         <?php if(isset($asset)):?>  
           <?php if(count($asset) > 0):?>
@@ -53,11 +53,10 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         
          <!--Explicação acessibilidade visite o site da Laramara-->
 		  <a href="http://laramara.org.br/" tabindex="0" class="ac-link" aria-label="Visite o site da LARAMARA"></a>
-            
+             <span class="fundo-acessibilidade" aria-label="Imagem da Bel e Groove felizes por terem um site acessível" tabindex="0"></span>
          
       </div>
       <!--/container-->
-      <span class="fundo-acessibilidade" aria-label="Imagem da Bel e Groove felizes por terem um site acessível" tabindex="0"></span>
     </div>
     <!--/container conteudo-->
     

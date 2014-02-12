@@ -40,7 +40,7 @@
           <?php endif; ?>
         </ul>
         <?php if($section->getSlug() == "atividades" || $section->getSlug() == "videos" || $section->getSlug() == "jogos"):?>
-          <a id="filtrar-tudo" class="btn" tabindex="0" aria-label="botão para selecionar todos os personagens filtro">Marcar todos</a> 
+          <a id="filtrar-tudo" class="btn" tabindex="0" aria-label="botão para selecionar todos os personagens filtro">Selecionar todos</a> 
         <?php endif; ?>
       </nav>
       <!--/nav filtro personagem-->

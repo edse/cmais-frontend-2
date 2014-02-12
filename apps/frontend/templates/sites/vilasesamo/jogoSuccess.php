@@ -27,6 +27,8 @@
   }
      
 ?>
+
+
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
@@ -110,16 +112,21 @@
       
       
       <?php if(isset($asset)): ?>
-      <div class="asset">
+      <div class="turn-the-cell-please" style="display:none;">
+        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/vire-celular.png" alt=""/>
+      </div>
+   
+      <div class="asset" style="display:none;">
         <?php echo html_entity_decode($asset->AssetContent->render()) ?>
       </div>
+      <input class="top" type="hidden" value="false">
       <?php endif; ?>
       
     </div>
   </section>
   <!--/section-->
   
-  <?php include_partial_from_folder('sites/vilasesamo', 'global/brinque-tambem-com', array("site" => $site, "section" => $section, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
+  <?php // include_partial_from_folder('sites/vilasesamo', 'global/brinque-tambem-com', array("site" => $site, "section" => $section, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
    
   <?php //include_partial_from_folder('sites/vilasesamo', 'global/form-campanha', array("site" => $site, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
 
@@ -132,3 +139,34 @@ $(document).find('object').before('<span class="sorryFlash" aria-label="Desculpe
 $('.sorryFlash').focus();
 </script>
 <?php echo $noscript ?>  
+
+<script>
+setInterval(function(){
+  updateOrientation();  
+},500);
+
+function updateOrientation(){  
+  var screenWidth = screen.width;
+  var windowWidth = window.innerWidth;
+  //alert(windowWidth)
+  //console.log("oiiiii");
+  if (windowWidth > 500 || window.orientation == 90 || window.orientation == -90 ) {  
+    $('.asset').fadeIn('fast');
+    $('.turn-the-cell-please').hide();
+    //goTopGame('header');
+  } else {  
+    $('.asset').hide();
+    $('.turn-the-cell-please').fadeIn('fast'); 
+    //goTopGame('#gameIntro'); 
+  } 
+}
+
+function goTopGame(el){
+  alert($(el).offset().top)
+  $('html, body').animate({
+    scrollTop:parseInt($(el).offset().top)
+  }, "fast");
+  
+}
+</script>
+<?php echo $noscript; ?>

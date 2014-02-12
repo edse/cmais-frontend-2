@@ -1,0 +1,182 @@
+/* carrossel layer-slider home desktop */
+#carrossel-destaque .slide02 .tit-banner,.slide03 .tit-banner, .slide04 .tit-banner,.slide05 .tit-banner, .slide06 .tit-banner{font-size:50px; color:#FFF;text-transform:uppercase;position: relative; top:-24px; left:0px;}
+#carrossel-destaque .slide02 .desc-banner,.slide03 .desc-banner, .slide04 .desc-banner, .slide05 .desc-banner, .slide06 .desc-banner{font-size:45px;line-height: 45px; color:#FFF;}
+#carrossel-destaque .slide05 .tit-banner{color:#d71c0d;}
+#carrossel-destaque .slide05 .desc-banner{color:#d71c0d;}
+#carrossel-destaque .tit-banner.sombra{position: relative;top: 0px;left: 0px;}
+#carrossel-destaque .slide02 .tit-banner.sombra{color:#02cbff;}
+#carrossel-destaque .slide03 .tit-banner.sombra{color:#f9a41b;}
+#carrossel-destaque .slide04 .tit-banner.sombra{color:#b16af2;}
+#carrossel-destaque .slide05 .tit-banner.sombra{color:#fbb926;}
+#carrossel-destaque .slide06 .tit-banner.sombra{color:#018e30;}
+
+/*carrossel personagens vila sesamo*/
+#carrossel-p{max-width: 940px;margin: 0 auto; border-radius:8px;}
+#carrossel-personagem{max-width:980px;margin:30px auto;}
+#carrossel-personagem .slider {position: relative; overflow: hidden; zoom: 1; background-color: #d71c0d; border-radius: 5px; }
+#carrossel-personagem .slider-nav { position: absolute; zoom: 1; width: 100%; top: 0; left: 0;}
+
+#carrossel-personagem .arrow {width: 42px; height: 110px; position: absolute; zoom: 1; top: 66px; display: none;}
+#carrossel-personagem .arrow span { display: block; width: 100%; height: 100%; cursor: pointer;}
+#carrossel-personagem .arrow.disabled { opacity: 0.3; cursor: default;}
+#carrossel-personagem .arrow-left { left: 0;}
+#carrossel-personagem .arrow-right { right: 21px;}
+
+#carrossel-personagem .slider-mask-wrap { margin:0; max-width:940px; background:#ffffff; margin-bottom:10px; border-bottom:1px solid #c31408; border-top:1px solid #c31408; position:relative; height:172px;}
+#carrossel-personagem .slider-mask { overflow: hidden; position: absolute; zoom: 1; max-width:940px;}
+#carrossel-personagem .slider-target { width: 2000px; margin: 0 auto; }
+#carrossel-personagem .slider ul { margin: 0; padding: 0; list-style-type: none;}
+#carrossel-personagem .slider li { width: 150px; height: 160px; float: left; margin: 0; padding: 0;}
+#carrossel-personagem .slider .inner { background:#9933cc!important; width:140px; height:140px;margin:10px 0 10px 10px; display:block; overflow:hidden; padding:0;border-radius:8px;}
+#carrossel-personagem .examples { padding: 1em; background-color: #2f4f4f;}
+#carrossel-personagem #menu span {white-space: nowrap; }
+
+
+/* selector styling */
+#carrossel-personagem #selector a { display: block; width: 16px; height: 16px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; border: 1px solid #333; background-color: #99F;}
+#carrossel-personagem #selector a.current { background-color: #309;}
+#carrossel-personagem #selector ul { margin:0; padding:0; list-style-type: none;}
+#carrossel-personagem #selector li { display: inline-block; margin-right: 10px;}
+
+#carrossel-personagem #menu span { white-space: nowrap;}
+
+@media (max-width:640px){
+  #carrossel-personagem .slider li {color:white;width: 70px;height: 80px;}
+  #carrossel-personagem .slider .inner {width:60px; height:60px; display:block; overflow:hidden; padding:0;border-radius:8px;}
+}
+/*/carrossel personagens vila sesamo*/
+
+/*carrossel mobile*/
+#carrossel-destaque-mobile{background-color:#fee133; max-width:100%;}
+#carrossel-mobile{max-width: 640px;margin: 0 auto;}
+#carrossel-mobile .slider {position: relative;zoom: 1;}
+#carrossel-mobile .slider-nav {position: absolute;zoom: 1;width: 100%;top: 0;left: 0;}
+#carrossel-mobile .arrow {width: 70px;height: 250px;position: absolute;zoom: 1;top: 0;}
+#carrossel-mobile .arrow span.back{position: absolute; top: 90px; left: 20px;width:50px; height:71px; display:block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1570px;}
+#carrossel-mobile .arrow span.next{position: absolute; right: 19px; top: 91px; width: 50px; height: 70px; display: block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1273px;}
+#carrossel-mobile .arrow span {display: block;width: 100%;height: 250px;cursor: pointer;}
+#carrossel-mobile .arrow.disabled {opacity: 0.3;cursor: default;}
+#carrossel-mobile .arrow-left {left: 0;}
+#carrossel-mobile .arrow-right {right: 0;}
+#carrossel-mobile .slider-mask {overflow: hidden;position: relative;zoom: 1;}
+#carrossel-mobile .slider-target {width: 2000px;margin: 0 auto;}
+#carrossel-mobile .slider ul {margin: 0;padding: 0;list-style-type: none;}
+#carrossel-mobile .slider li {width: 640px;height: 250px;float: left;margin: 0;padding: 0;}
+#carrossel-mobile .slider li a img{display:block; margin: 0 auto;}
+#carrossel-mobile .slider .inner {padding: 10px;margin: 0 5px;border: 1px solid #333;height: 100%;background-color: #CCC;}
+
+/* selector styling */
+#selector-mobile{margin:0px auto; padding: 10px auto!important;}
+#selector-mobile a {display: block;height: 16px;width:16px;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;border: none;background-color: #fcbb00;}
+#selector-mobile a.current {background-color: #fdff33; border: 2px solid #fcbb00;}
+#selector-mobile ul {margin:0;padding:10px auto;list-style-type: none;}
+#selector-mobile li {display: inline-block; margin-right: 10px; margin-top:10px;}
+/*/carrossel mobile*/
+
+/*carrossel interna vila sesamo*/
+#carrossel-i{max-width: 940px;margin: 0 auto; border-radius:8px;}
+#carrossel-interna{max-width:980px;margin:0 auto;}
+#carrossel-interna .slider {position: relative; overflow: hidden; zoom: 1; }
+#carrossel-interna .slider-nav { position: absolute; zoom: 1; width: 100%; top: 0; left: 0;}
+
+#carrossel-interna .arrow {width: 54px;height: 77px; position: absolute; zoom: 1; top: 94px;}
+#carrossel-interna .arrow span { display: block; width: 100%; cursor: pointer; margin:0;}
+#carrossel-interna .arrow.disabled { opacity: 0.3; cursor: default;}
+#carrossel-interna .arrow-left { left: 5px;}
+#carrossel-interna .arrow-right { right: -3px;}
+
+#carrossel-interna .slider-mask-wrap { margin: 0 auto;max-width: 830px;margin-bottom: 10px;position: relative;height: 253px;}
+#carrossel-interna .slider-mask { overflow: hidden; position: absolute; zoom: 1; max-width:830px;} 
+#carrossel-interna .slider-target { width: 2000px; margin: 0 auto; } 
+#carrossel-interna .slider ul { margin: 0; padding: 0; list-style-type: none;}
+#carrossel-interna .slider li { width: 210px; float: left;}
+#carrossel-interna .slider-mask-wrap { margin:0 auto; }
+#carrossel-interna { margin:0px auto ; }
+/*#carrossel-interna .slider li { border-bottom:1px solid #7732e5;  background:#883feb; }*/
+#carrossel-interna .slider li a {color: #fff;text-transform: uppercase;width: 200px;display: block; overflow: hidden;}
+#carrossel-interna .slider .inner { width:200px; height:200px; display:block; overflow:hidden; padding:0;}
+#carrossel-interna .examples { padding: 1em; background-color: #2f4f4f;}
+#carrossel-interna #menu span {white-space: nowrap; }
+#carrossel-interna .slider li img.altura{background:none; border:none;}
+#carrossel-interna .slider li a div{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 4px;}
+#carrossel-interna .slider li:hover a img{-moz-opacity: 0.50;-khtml-opacity: 0.50;opacity: 0.50;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);filter:alpha(opacity=50);}
+#carrossel-interna .slider li img { border-top:2px solid; border-bottom:2px solid; margin:0 -1px; }
+#carrossel-interna .slider li.atividades a{ background:#883feb;border-bottom:2px solid #7732e5; }
+#carrossel-interna .slider li.atividades img{border-top-color:#7732e5; border-bottom-color:#7732e5;}
+#carrossel-interna .slider li.jogos a{ background:#3aaaec; border-bottom:2px solid #0191fb; }
+#carrossel-interna .slider li.jogos img { border-top-color:#0191fb; border-bottom-color:#0191fb;}
+#carrossel-interna .slider li.videos a{ background:#f5861f; border-bottom:2px solid #f57301; }
+#carrossel-interna .slider li.videos img { border-top-color:#f57301; border-bottom-color:#f57301;}
+#carrossel-interna .slider li .nome { padding:0; display: block; height:40px; line-height: 40px; }
+#carrossel-interna .slider li .nome i { float:left; margin:0 15px; }
+#carrossel-interna .slider li .nome i.sprite-ico-videos-p { margin-top:4px; }
+#carrossel-interna .slider li .nome i.sprite-ico-jogos-p { margin-top:7px; }
+#carrossel-interna .slider li:hover a { text-decoration:underline; }*
+#carrossel-interna .youtubeImage{min-width:268px;position:relative; left:-18%;}
+
+/* selector styling */
+#carrossel-interna #selector a { display: block; width: 16px; height: 16px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; border: 1px solid #333; background-color: #99F;}
+#carrossel-interna #selector a.current { background-color: #309;}
+#carrossel-interna #selector ul { margin:0; padding:0; list-style-type: none;}
+#carrossel-interna #selector li { display: inline-block; margin-right: 10px;}
+/*carrossel interna vila sesamo*/
+
+/*carrossel interna-personagem*/
+#carrossel-interna-personagem{max-width: 400px;float: left;height: 409px;background-color: #FFF;}
+#carrossel-interna-personagem .slider {position: relative;zoom: 1;}
+#carrossel-interna-personagem .slider-nav {position: absolute;zoom: 1;width: 100%;top: 0;left: 0;}
+#carrossel-interna-personagem .arrow {width: 70px;height: 409px;position: absolute;zoom: 1;top: 0;}
+#carrossel-interna-personagem .arrow span.back{position: absolute; top: 90px; left: 20px;width:50px; height:71px; display:block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1570px;}
+#carrossel-interna-personagem .arrow span.next{position: absolute; right: 19px; top: 91px; width: 50px; height: 70px; display: block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1273px;}
+#carrossel-interna-personagem .arrow span {display: block;width: 100%;height: 250px;cursor: pointer;}
+#carrossel-interna-personagem .arrow.disabled {opacity: 0.3;cursor: default;}
+#carrossel-interna-personagem .arrow-left {left: 0;}
+#carrossel-interna-personagem .arrow-right {right: 0;}
+#carrossel-interna-personagem .slider-mask {overflow: hidden;position: relative;zoom: 1;}
+#carrossel-interna-personagem .slider-target {width: 2000px;margin: 0 auto;}
+#carrossel-interna-personagem .slider ul {margin: 0;padding: 0;list-style-type: none;}
+#carrossel-interna-personagem .slider li {width: 400px;height: 409px;float: left;margin: 0;}
+#carrossel-interna-personagem .slider li a img{display:block; margin: 0 auto;}
+#carrossel-interna-personagem .slider .videoorimage{max-width:350px;padding:20px;}
+#carrossel-interna-personagem .slider .videoorimage iframe{margin-top:40px;}
+#carrossel-interna-personagem .slider .inner {padding: 10px;margin: 0 5px;border: 1px solid #333;height: 100%;background-color: #CCC;}
+#carrossel-interna-personagem .container-itens{position:absolute; width:400px; height:30px; top: 453px;}
+
+/* selector styling */
+#selector-interna-personagem{margin:0px auto; padding: 10px auto!important;}
+#selector-interna-personagem a {display: block;height: 16px;width:16px;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;border:2px solid #FFFFFF;background-color: #fcbb00;}
+#selector-interna-personagem a.current {background-color: #fdff33; border: 2px solid #fcbb00;}
+#selector-interna-personagem ul {margin:0;padding:10px auto;list-style-type: none;}
+#selector-interna-personagem li {display: inline-block; margin-right: 10px; margin-top:10px;}
+
+/*carrossel interna-personagem*/
+#carrossel-interna-artigo{max-width: 940px;height: 390px;background-color: #FFF; position:relative;}
+#carrossel-interna-artigo .slider {position: relative;zoom: 1;}
+#carrossel-interna-artigo .slider-nav {position: absolute;zoom: 1;width: 100%;top: 0;left: 0;}
+#carrossel-interna-artigo .arrow {width: 70px;height: 409px;position: absolute;zoom: 1;top: 0;}
+#carrossel-interna-artigo .arrow span.back{position: absolute; top: 160px; left: -2px;width:50px; height:71px; display:block; /* background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1570px;*/}
+#carrossel-interna-artigo .arrow span.next{position: absolute; right: 1px; top: 160px; width: 50px; height: 70px; display: block; /* background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1273px;*/}
+#carrossel-interna-artigo .arrow span {display: block;width: 100%;height: 250px;cursor: pointer;}
+#carrossel-interna-artigo .arrow.disabled {opacity: 0.3;cursor: default;}
+#carrossel-interna-artigo .arrow-left {left: 0;}
+#carrossel-interna-artigo .arrow-right {right: 0;}
+#carrossel-interna-artigo .slider-mask {overflow: hidden;position: relative;zoom: 1;width: 820px;margin: 0 auto;}
+#carrossel-interna-artigo .slider-target {width: 2000px;margin: 0 auto;}
+#carrossel-interna-artigo .slider ul {margin: 0;padding: 0;list-style-type: none;}
+#carrossel-interna-artigo .slider li {width: 800px;height: 390px;float: left;margin: 0;}
+#carrossel-interna-artigo .slider li a img{display:block; margin: 0 auto;}
+#carrossel-interna-artigo .slider .videoorimage{max-width:420px;padding:20px;}
+#carrossel-interna-artigo .slider .descritivo{ padding:20px 20px 20px 0px; }
+#carrossel-interna-artigo .slider .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:25px;line-height: 30px;}
+#carrossel-interna-artigo .slider .descritivo p{font-size:16px;}
+#carrossel-interna-artigo .slider .inner {padding: 10px;margin: 0 5px;border: 1px solid #333;height: 100%;background-color: #CCC;}
+#carrossel-interna-artigo .container-itens{position:absolute; width:500px; height:30px; top: 342px; right: 0}
+
+/* selector styling */
+#selector-interna-artigo {margin:0px auto; padding: 10px auto!important;}
+#selector-interna-artigo  a {display: block;height: 12px;width:12px;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;border:2px solid #FFFFFF;background-color: #00c76e;}
+#selector-interna-artigo  a.current {background-color: #fffd4b; border: 2px solid #00c76e;}
+#selector-interna-artigo  ul {margin:0;padding:10px auto;list-style-type: none;}
+#selector-interna-artigo  li {display: inline-block; margin-right: 10px; margin-top:10px;}
+/*/carrossel mobile*/
+/*/carrossel mobile*/

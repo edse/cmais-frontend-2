@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'din-blackregular';
+    src: url('/portal/css/fontes/din/din-black-webfont.eot');
+    src: url('/portal/css/fontes/din/din-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/portal/css/fontes/din/din-black-webfont.woff') format('woff'),
+         url('/portal/css/fontes/din/din-black-webfont.ttf') format('truetype'),
+         url('/portal/css/fontes/din/din-black-webfont.svg#din-blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*section{background:blue!important;}*/
+.header-desktop{display:none;}
+.header-tablet{display:block; position: fixed;z-index: 50000;background: #fff;width: 100%;top:0;}
+.header-mobile{display:none;}
+#header-bar-mobile{display:none;}
+.imagem-topo{position: absolute;width: 272px;bottom: 0;left: 50%;margin-left: -66px;}
+.header-tablet{height: 110px;-moz-box-shadow: 0 0 30px 1px #C2C2C2;-webkit-box-shadow: 0 0 30px 1px #C2C2C2;box-shadow: 0 0 30px 1px #C2C2C2;-moz-box-shadow:inset 0 0 30px 5px #e5e5e5 ;}
+.header-tablet a.logo-mobile{margin:1px 0 0 35px;overflow: hidden;float: left;max-width:200px;display: block;left: 5%;}
+.header-tablet a.btn-menu{margin-top:5px;overflow: hidden;float:right;margin: 30px 30px 0 30px;}
+.header-tablet .search-mobile{background:#FCF2AE; margin:20px 0 0 0px; padding: 13px 3%; line-height: 70px;}
+.header-tablet .search-mobile form{margin: 0 auto;max-width: 480px;}
+.header-tablet .search-mobile form input{border-radius: 0;width: 80%;height: 60px; font-size:28px; line-height: 60px; float: right!important;}
+.header-tablet button.alca{margin: 0 auto;position: absolute;bottom: 0;left: 50%;background: #e5e5e5;border: none;width: 100px;margin-bottom: 5px;border-radius: 10px;height: 16px;display:none;}   
+
+/* menu principal geral */
+.topo-vila .container {height: 65px;}
+.navbar .container img{width: 128px;}
+#nav-tablet{width: 510px;padding:0;background: #eeeeee;display: none; position: absolute;z-index: 40000;top: 110px;right:0px;}
+#nav-tablet a{text-decoration:none;font-family:'din-blackregular', Arial, Helvetica, sans-serif;width:96%;padding:2%;border-bottom:1px dotted #333;font-size: 1.5em; float:left; text-align:right; text-transform:uppercase;color:#333!important;line-height: 39px;}
+#nav-tablet a:last-child{border:none}
+#nav-tablet img{float: right;width: 35px; margin:2px 6px 0 15px;}
+.navbar-fixed-top {margin-bottom: 0;position: absolute;}
+.navbar-inverse .navbar-inner.topo-vila {background:#fff!important;height: 65px!important;padding: 4px 6px;}
+.navbar .container {width: auto;background: url(/portal/images/capaPrograma/vilasesamo2/mobile/icon_menu_mobile.png) no-repeat right;}
+.last{background: url(/portal/images/capaPrograma/vilasesamo2/mobile/icon_fecha.png) no-repeat right;}
+/*desaparece se for mobile o topo dos pais*/
+.topo-vila .nav {display: none;}
+.header-bar{display: none;}
+.form-search{display: none;}
+#content {background: #FEE132;top: 20px!important;}
+.nav-mobile{display:none;}
+
+/* index */
+#carrossel-destaque{display:none;}
+#carrossel-destaque-mobile{display:block;}
+#carrossel-personagem .slider .nome {font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif!important; }
+#carrossel-personagem {padding: 0 20px;}
+#carrossel-personagem .slider .nome {font-size: 1.7em;}
+.mpc_ls .mpc_ls_ui .mpc_ls_ui_button.style02 {margin-top: -107px;}
+.destaques.span12{width:100%; padding: 0 20px!important;}
+.destaques.span8{width: 100%;padding: 0 20px;}
+.destaques.span8 > .span4{width:31.9%!important; float:left;}
+.span4.banner{display:none;}
+/* index */
+
+/* assets interna */
+.interna #content { top:30px!important; margin-bottom:60px!important; }
+/* assets interna */
+
+/* Acessibilidade */
+.acessibilidade .container-na-tv {min-height:860px;}
+.acessibilidade .box-acessibilidade {width:100%!important}
+.acessibilidade .fundo-acessibilidade {top: initial!important;bottom: 0;}
+.na-tv .container-na-tv p {float:none!important;max-width:none!important}
+
+
+
+/* Na TV */
+#container-na-tv .container-na-tv p{font-size: 1.3em;float:none;max-width:none;}
+#container-na-tv .container-na-tv {min-height: 900px;}
+#container-na-tv .fundo-na-tv {background: url('/portal/images/capaPrograma/vilasesamo2/personagens/img_natv_mobile.png') no-repeat;background-size: 100%;width: 54%;top: 65%;left: 11%;min-height: 563px;height: 700px;}
+#container-na-tv .container-na-tv .container-horarios {margin:0 auto;float: none;}
+#container-na-tv .container-na-tv h2.ola {display:none;}
+.na-tv .filtro {margin-bottom: 269px!important}
+
+
+/*Pais*/
+
+
+
+/* Personagens */
+.personagens .q-pers {width: 29%!important;margin: 5px 5px 5px 3%!important;}
+.personagens #container-personagens a {width: 100%!important;height: 100%!important;}
+.personagens .conteudo-asset {width: 95%!important;margin: 0 auto!important;height: 100%!important;}
+.filtro .inner img {width: 100%!important;}
+
+
+
+/*footer*/
+footer {margin-top: 84px;margin-top:60px;}
+footer #no-mobile{display: block;}
+footer #mobile{display: none;}
+footer .mapa{margin:2%;}
+footer .mapa .span12 {border: 1px solid #f0f0f0;}
+footer #personagens-rodape{display: none!important;;}
+footer .relacionados ul{display: none;}
+footer nav{display: block!important;}
+.relacionados-mobile{width: 96%;padding: 2%;overflow: hidden;}
+.relacionados-mobile a{width: 23%;float:left;margin-left: 2%;}
+.relacionados-mobile a > img{margin:0 auto;display: block;}
+footer .logos .col-esq a {margin-left: 32%!important;}
+footer .logos .col-central a {margin: 33px 0 0 52px!important;}
+footer .logos .col-dir a {margin: 39px 0 0 22px;}
+.fifty{width:48%!important;}
+footer .relacionados h1{margin-left:5%;width: 90%;}
+footer .logos li{width: 33%;display: block;float: left;height:20%;}
+footer .copyright {height: 30px;margin-left: 2%;}
+/* footer */
+
+

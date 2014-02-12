@@ -20,7 +20,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   </h1>
   
   <!--section-->
-  <section class="filtro row-fluid">
+  <section class="filtro">
     <h1><span class="icones-sprite-interna icone-personagem-grande"></span><?php echo $section->getTitle() ?></h1>
     
     <!--conteudo-asset-->

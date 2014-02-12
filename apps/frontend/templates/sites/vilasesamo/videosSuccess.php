@@ -40,7 +40,7 @@
               <?php if(count($displays['destaque-1']) > 0): ?>
             <h2 aria-describedby="Novidade">
               <div class="span6 clipes">
-                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/videos/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>" aria-label="Novidade destaque Vídeo - Título: <?php echo $displays['destaque-1'][0]->getTitle().".  -  ".$displays['destaque-1'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>">
+                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/videos/<?php echo $displays['destaque-1'][0]->Asset->getSlug() ?>" aria-label="Novidade destaque Vídeo - Título: <?php echo $displays['destaque-1'][0]->getTitle().". Descrição: ".$displays['destaque-1'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>">
                   <span class="sprite-selo">Novidade!</span>
                   <div class="yt-destaque">
                     <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-1'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['destaque-1'][0]->getTitle() ?>" />
@@ -62,7 +62,7 @@
               <?php if(count($displays['destaque-2']) > 0): ?>
             <h2 aria-describedby="Novidade">
               <div class="span6 clipes  semmargem">
-                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/videos/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>" aria-label="Novidade destaque Vídeo - Título: <?php echo $displays['destaque-2'][0]->getTitle().".  -  ".$displays['destaque-2'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>">
+                <a class="img-destaque" href="/<?php echo $site->getSlug() ?>/videos/<?php echo $displays['destaque-2'][0]->Asset->getSlug() ?>" aria-label="Novidade destaque Vídeo - Título: <?php echo $displays['destaque-2'][0]->getTitle().". Descrição: ".$displays['destaque-2'][0]->Asset->getDescription(). ". Descrição do thumbnail:". $decricaoImagem; ?>">
                   <span class="sprite-selo">Novidade!</span>
                   <div class="yt-destaque">
                     <img src="http://img.youtube.com/vi/<?php echo $displays['destaque-2'][0]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $displays['destaque-2'][0]->getTitle() ?>" />
