@@ -16,17 +16,17 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->
     <!-- Le styles -->  
     <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <!--link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" /-->
-    <!--link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" /-->
+    <!--link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" /-->
+    <!--link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" /-->
     <?php if(strstr($user_agent, 'iPhone') == true || (strstr($user_agent, 'Android') == true && strstr($user_agent, 'Mobile') == true) || (strstr($user_agent, 'Windows Phone') == true && strstr($user_agent, 'IEMobile') == true)): ?> 
-      <link title="mobile-css" rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
-      <link title="mobile-css" rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
-      <link title="mobile-css" rel="stylesheet" media="screen" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" />
+      <link title="mobile-css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
+      <link title="mobile-css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
+      <link title="mobile-css" rel="stylesheet" media="screen" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" />
     <?php else:?>
-      <link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
-      <link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
-      <link title="mobile-css" rel="stylesheet" media="only screen and (min-width:501px) and (max-width:979px)" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/media_medium_screen.css" />
-      <link title="mobile-css" rel="stylesheet" media="only screen and (min-width:50px) and (max-width:500px)" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" /> 
+      <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
+      <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
+      <link title="mobile-css" rel="stylesheet" media="only screen and (min-width:501px) and (max-width:979px)" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_medium_screen.css" />
+      <link title="mobile-css" rel="stylesheet" media="only screen and (min-width:50px) and (max-width:500px)" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" /> 
     <?php endif; ?>
     
     
@@ -116,7 +116,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       <button id="alca" class="alca" data-header="teste">&nbsp;</button>
       
       <div class="imagem-topo">
-        <img src="http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/mobile/img_topo_mobile.png" />
+        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/img_topo_mobile.png" />
       </div>
       
       <a href="#" title="menu Vila Sésamo" class="btn-menu">
@@ -175,7 +175,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       <button id="alca" class="alca" data-header="teste">&nbsp;</button>
       
       <div class="imagem-topo">
-        <img src="http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/mobile/img_topo_mobile.png" />
+        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/img_topo_mobile.png" />
       </div>
       
       <a href="#" title="menu Vila Sésamo" class="btn-menu">
@@ -487,7 +487,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     
     
     <!-- scripts -->
-    <script type="text/javascript" src="http://172.20.16.219/portal/js/vilasesamo2/vilasesamo.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/vilasesamo.js"></script>
     <?php echo $noscript; ?>
     
     <script type="text/javascript">
