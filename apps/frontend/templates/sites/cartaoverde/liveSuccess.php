@@ -43,7 +43,7 @@ function broadcastEnd(){
     success: function(data) {
       eval(data);
     },
-    url: '/ajax/broadcastend'
+    url: 'http://app.cmais.com.br/ajax/broadcastend'
   });
 }
   
