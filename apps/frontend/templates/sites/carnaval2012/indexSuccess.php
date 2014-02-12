@@ -34,7 +34,7 @@
         }
       },
       //url: '/index.php/ajax/timer'
-      url: '/ajax/timer'
+      url: 'http://app.cmais.com.br/ajax/timer'
     });
   }
   $(window).load(function(){

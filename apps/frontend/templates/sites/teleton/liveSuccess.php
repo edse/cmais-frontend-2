@@ -18,7 +18,7 @@ $asset = $pager->getCurrent();
       success: function(data) {
         eval(data);
       },
-      url: '/ajax/timer'
+      url: 'http://app.cmais.com.br/ajax/timer'
     });
   }
 

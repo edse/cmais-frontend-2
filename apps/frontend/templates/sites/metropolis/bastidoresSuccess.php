@@ -29,7 +29,7 @@
       success: function(data) {
         eval(data);
       },
-      url: '/ajax/timer'
+      url: 'http://app.cmais.com.br/ajax/timer'
     });
   }
   function timer2(){
@@ -42,7 +42,7 @@
       success: function(data) {
         eval(data);
       },
-      url: '/ajax/timer'
+      url: 'http://app.cmais.com.br/ajax/timer'
     });
   }
 

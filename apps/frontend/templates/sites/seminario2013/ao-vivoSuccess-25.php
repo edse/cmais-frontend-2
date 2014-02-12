@@ -108,7 +108,7 @@
               success: function(data) {
                 jQuery('#programacao').html(data);
               },
-              url: '/ajax/scheduledisplays?time=asdfg'
+              url: 'http://app.cmais.com.br/ajax/scheduledisplays?time=asdfg'
             }); 
           }
           

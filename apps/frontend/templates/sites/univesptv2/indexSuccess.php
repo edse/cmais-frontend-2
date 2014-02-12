@@ -9,7 +9,7 @@
       success: function(data) {
         eval(data);
       },
-      url: '/ajax/streamingunivesp'
+      url: 'http://app.cmais.com.br/ajax/streamingunivesp'
     });
   }
   function checkStreamingEnd(){
@@ -18,7 +18,7 @@
       success: function(data) {
         eval(data);
       },
-      url: '/ajax/streamingendunivesp'
+      url: 'http://app.cmais.com.br/ajax/streamingendunivesp'
     });
   }
   $(window).load(function(){
