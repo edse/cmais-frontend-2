@@ -108,13 +108,13 @@ body { background:#0ab015 url(http://cmais.com.br/portal/quintal/images/bg-quint
 .conteudo{  position: relative;  width: 970px; clear:both; float: right; min-height: 880px;}
 .conteudoWrapper #back{position: relative; z-index: -1}
 .conteudoWrapper #back .pos{position:absolute;}
-#nuvem1{width:266px; height:212px; top:-198px; left:-300px;background: url(http://cmais.com.br/portal/quintal/img-bg-nuvem1.png) no-repeat; z-index:0;}
-#nuvem2{width:188px; height:155px; top:-71px; left: -86px;background: url(http://cmais.com.br/portal/quintal/img-bg-nuvem2.png) no-repeat; z-index:0;}
-#nuvem3{width:260px; height:234px; top: -200px; right: -50px;background: url(http://cmais.com.br/portal/quintal/img-bg-nuvem1.png) no-repeat; z-index:0;}
-#balao{width:196px; height:348px; top:-200px; left:-250px;background: url(http://cmais.com.br/portal/quintal/img-bg-balao.png) no-repeat; z-index:0;}
-#bola{width:190px; height:174px;top: 293px;left: -220px;background: url(http://cmais.com.br/portal/quintal/img-bg-futebol.png) no-repeat; z-index:0;}
-#bau{width:441px; height:407px;top: 478px;left: -320px;background: url(http://cmais.com.br/portal/quintal/img-bg-bau.png) no-repeat; z-index:0;}
-#peteca{width:410px; height:464px;top: 307px;right: -301px; background: url(http://cmais.com.br/portal/quintal/img-bg-peteca-bola.png) no-repeat; z-index:0;}
+#nuvem1{width:266px; height:212px; top:-198px; left:-300px;background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-nuvem1.png) no-repeat; z-index:0;}
+#nuvem2{width:188px; height:155px; top:-71px; left: -86px;background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-nuvem2.png) no-repeat; z-index:0;}
+#nuvem3{width:260px; height:234px; top: -200px; right: -50px;background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-nuvem1.png) no-repeat; z-index:0;}
+#balao{width:196px; height:348px; top:-200px; left:-250px;background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-balao.png) no-repeat; z-index:0;}
+#bola{width:190px; height:174px;top: 293px;left: -220px;background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-futebol.png) no-repeat; z-index:0;}
+#bau{width:441px; height:407px;top: 478px;left: -320px;background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-bau.png) no-repeat; z-index:0;}
+#peteca{width:410px; height:464px;top: 307px;right: -301px; background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-peteca-bola.png) no-repeat; z-index:0;}
 
 .contentWrapper{  padding-bottom: 0 !important;  width: 100%; margin: auto;  margin-top:3px;  overflow: hidden; }
 .contentWrapper .cerca{  background: url(http://cmais.com.br/portal/quintal/images/cerca.png) repeat-x;  height: 240px;}
