@@ -59,12 +59,13 @@
 																		<h4>Assista todos os vídeos</h4>
 																		<ul class="box-playlist grid2 carrossel">			                  			
 			                  	<?php else:?>
+			                  				<?php if($d->getId() != 164212):?>
 																	<li>
 																		<a href="javascript:changeVideo('<?php echo $d->AssetVideo->getYoutubeId()?>')" class="img">
 																			<img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId()?>/1.jpg" alt="<?php echo $d->getTitle()?>">
 																		</a>
 																	</li>				                  	
-			                    
+			                    			<?php endif; ?>
 				              	  <?php endif; ?>     
 		                    <?php endforeach; ?>
 		                  </ul>
