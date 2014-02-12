@@ -2,11 +2,11 @@ body { background:#343434 url(/portal/images/capaPrograma/home-madmen/bg.jpg) re
 
 @font-face {
     font-family: 'daisywheelregular';
-    src: url('/portal/css/fontes/daisywhl/daisywhl-webfont.eot');
-    src: url('/portal/css/fontes/daisywhl/daisywhl-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/daisywhl/daisywhl-webfont.woff') format('woff'),
-         url('/portal/css/fontes/daisywhl/daisywhl-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/daisywhl/daisywhl-webfont.svg#daisywheelregular') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/daisywhl/daisywhl-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/daisywhl/daisywhl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/daisywhl/daisywhl-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/daisywhl/daisywhl-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/daisywhl/daisywhl-webfont.svg#daisywheelregular') format('svg');
     font-weight: normal;
     font-style: normal;
 

@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'din-blackregular';
-    src: url('/portal/css/fontes/din/din-black-webfont.eot');
-    src: url('/portal/css/fontes/din/din-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/din/din-black-webfont.woff') format('woff'),
-         url('/portal/css/fontes/din/din-black-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/din/din-black-webfont.svg#din-blackregular') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.svg#din-blackregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -68,7 +68,7 @@
 /* Na TV */
 #container-na-tv .container-na-tv p{font-size: 1.3em;float:none;max-width:none;}
 #container-na-tv .container-na-tv {min-height: 900px;}
-#container-na-tv .fundo-na-tv {background: url('/portal/images/capaPrograma/vilasesamo2/personagens/img_natv_mobile.png') no-repeat;background-size: 100%;width: 54%;top: 65%;left: 11%;min-height: 563px;height: 700px;}
+#container-na-tv .fundo-na-tv {background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/img_natv_mobile.png') no-repeat;background-size: 100%;width: 54%;top: 65%;left: 11%;min-height: 563px;height: 700px;}
 #container-na-tv .container-na-tv .container-horarios {margin:0 auto;float: none;}
 #container-na-tv .container-na-tv h2.ola {display:none;}
 .na-tv .filtro {margin-bottom: 269px!important}

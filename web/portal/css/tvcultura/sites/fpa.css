@@ -1,11 +1,11 @@
 /* fonte titulo linha do tempo */
 @font-face {
     font-family: 'gotham_lightregular';
-    src: url('/portal/css/fontes/gotham-family/gotham-light-webfont.eot');
-    src: url('/portal/css/fontes/gotham-family/gotham-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/gotham-family/gotham-light-webfont.woff') format('woff'),
-         url('/portal/css/fontes/gotham-family/gotham-light-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/gotham-family/gotham-light-webfont.svg#gotham_lightregular') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-light-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-light-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-light-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-light-webfont.svg#gotham_lightregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
