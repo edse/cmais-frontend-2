@@ -10,7 +10,13 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <?php include_title() ?>
     <?php include_metas() ?>
     <?php include_meta_props() ?>
-    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <?php echo $noscript; ?>
+    <!--script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script-->
+    <?php // echo $noscript; ?>
+   
+    <script src="http://cmais.com.br/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <?php echo $noscript; ?> 
     
     <?php if(isset($_GET['m']) && $_GET['m'] == "2143"):?>
       <meta name="mobile-view" content="HandheldFriendly" content="true"/>
@@ -36,19 +42,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />  
     <?php endif; ?> 
      
-    
-    
-    
-    
-    
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <?php echo $noscript; ?>
-    <script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
-    <?php echo $noscript; ?>
-   
-    <script src="http://cmais.com.br/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
-    <?php echo $noscript; ?> 
-    
      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
      <!--[if lt IE 9]>
        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
