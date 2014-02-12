@@ -102,7 +102,7 @@
         opts=opts +"&year="+ (date.getFullYear());
         opts=opts +"&section_id=692";
         $.ajax({
-          url: "/ajax/getdays",
+          url: "http://app.cmais.com.br/ajax/getdays",
           data: opts,
           dataType: "json",
           async: false,
