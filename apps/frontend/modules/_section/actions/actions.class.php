@@ -1515,6 +1515,10 @@ class _sectionActions extends sfActions
             $cabecalho .= "MIME-Version: 1.0\r\n";
             $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
             $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
+            
+            //echo($email_site.', ['.$this->site->getTitle().']['.$this->section->getTitle().'] '.$nome_user.' <'.$email_user.'>, '.stripslashes(nl2br($msg)).', '.$cabecalho);
+            //die();
+            
             if(mail($email_site, '['.$this->site->getTitle().']['.$this->section->getTitle().'] '.$nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho)){
               //die("1");
               header("Location: ".$_SERVER["HTTP_REFERER"]."?success=1");
@@ -1523,6 +1527,7 @@ class _sectionActions extends sfActions
               //die("0");
               header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
             }
+            die("asdf");
           /*
           }
           else {
@@ -1732,7 +1737,7 @@ class _sectionActions extends sfActions
       $pagelimit = 99;
       $this->setLayout(false);
     }     
-		
+    
     if(!isset($pagelimit))
       $pagelimit = 9;
 
