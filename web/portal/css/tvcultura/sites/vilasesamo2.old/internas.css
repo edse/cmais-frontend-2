@@ -8,10 +8,10 @@ a:hover{text-decoration:underline!important;}
 .header-bar h1 span,
 .header-bar h1 i { float:right; }
 .conteudo-asset h2 {font-size: 25px;margin: 20px 0;}
-#content { top:134px; margin-bottom:164px; }
+#content { top:134px; margin-bottom:200px; }
 #content .section,
 #content section { max-width:940px; margin:20px auto; }
-#content h1 {margin: 0;font-size: 50px;height: 84px;line-height: 60px;padding: 0 0px 5px 0px;}
+#content h1 {margin: 0;font-size: 50px;height: 60px;line-height: 60px;padding: 0 0px 5px 0px;}
 .artigo #content header h1{font-size:25px;}
 /*#content h1 span,*/
 #content h1 i.icones-sprite-interna {margin: 0px 20px 0px 20!important}

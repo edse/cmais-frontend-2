@@ -4,12 +4,12 @@ html { margin:0; padding:0; height:100%; width: 100%; }
 body { margin:0; padding:0; width:100%; height:100%; }
 a{outline:none;text-decoration:none;color:#DA4930}
 .conteudo p{clear:none}
-#content .conteudo-asset{width:100%;}
-#content .conteudo-asset p#gameScore{width:275px;text-transform: uppercase;text-align: left;white-space: nowrap;line-height: 47px;}
+#content .conteudo-asset {width:100%;}
+
 #game{top:0;left:0;bottom:0;right:0;display:block;}
-#gameStats{width:100%;float:left;border-radius:4px;font-size:16px;height:auto; clear:both;position: absolute;top: 152px;left: -5px;}
+#gameStats{width:100%;float:left;border-radius:4px;font-size:16px;height:auto; clear:both;position: absolute;top: 152px;left: 48px;}
 #qrcode{float:left;cursor:pointer;position:relative;margin-right:20px;padding:0 0 0 15px}
-#gameScore{display:none;text-align:center;height:40px;line-height:40px;float: right;margin-left: 10px;min-width: 250px;}
+#gameScore{display:none;float:left;text-align:center;height:40px;line-height:40px;}
 #qrcode:before,#credit:before{position:absolute;content:"";width:16px;height:16px;border-radius:8px;box-shadow:inset 0 0 3px #ddd;top:2px}
 #qrcode:before{right:-25px}
 #qrcode:after,#credit:after{position:absolute;content:"";width:6px;height:6px;border-radius:3px;background-color:#ddd;box-shadow:0 0 2px #fff;top:7px}
@@ -19,17 +19,17 @@ a{outline:none;text-decoration:none;color:#DA4930}
 .baritem:after{position:absolute;content:"";width:16px;height:16px;border-radius:8px;background-color:rgba(255,255,255,0.1);box-shadow:inset 0 0 3px #ddd;top:2px;left:-25px}
 #credit:before{left:-25px}
 #credit:after{left:-20px}
-.turn-the-cell-please{text-align: center;margin: 20px;}
+
 #playground{height:810px; width: 768px; text-align:center;position:relative; top:50%;}
 
 /*#cards{position:absolute;top:0;left:0;bottom:0;right:0;display:none;z-index:2}*/
-#cards{display:none;width:768px;height:476px;position: relative;top: 226px;left: 5px;}
+#cards{display:none;width:768px;height:476px;position: relative;top: 226px;left: 56px;}
 .card{-webkit-perspective:600px;-moz-perspective:600px;width:110px;height:145px;position:absolute;-moz-transition:all .3s;-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s;cursor:pointer}
 .reset{box-shadow:0 0 30px #fff;}
-#gameIntro{position:absolute;top: 204px;left: -2px;width:100%;-moz-transition:opacity 1s ease-out;-webkit-transition:opacity 1s ease-out;-o-transition:opacity 1s ease-out;transition:opacity 1s ease-out}
+#gameIntro{position:absolute;top: 204px;left: 36px;width:100%;-moz-transition:opacity 1s ease-out;-webkit-transition:opacity 1s ease-out;-o-transition:opacity 1s ease-out;transition:opacity 1s ease-out}
 #gameIntro img{padding:20px; max-height:100%; max-width:100%; width:auto;}
 #game.open #gameIntro{opacity:1;z-index:3;}
-#game.end #gameComplete{opacity:1;z-index:3;visibility:visible;top: 157px;left: 32px;}
+#game.end #gameComplete{opacity:1;z-index:3;visibility:visible;top: 157px;left: 53px;}
 #gameComplete a.share-button{display:inline-block;font-size:11px;margin-right:10px;line-height:16px;height:16px;border-radius:3px;color:#FFF;font-weight:700;vertical-align:middle;padding:1px 10px}
 #gameComplete a.facebook-share-button{background:#369;border:1px solid #036}
 #gameComplete a.plurk-share-button{background:#C63;border:1px solid #930}
@@ -72,7 +72,7 @@ body.appcache-allinfo #appcache_info.appcache-noupdate,body.appcache-allinfo #ap
 #appcache_info.appcache-error:before{content:'Unable to check for offline content updates.'}
 #appcache_info.appcache-cached:before{content:'Download complete. Ready to be accessed offline.'}
 #click{margin-right:20px}
-#result p{color:#00af9f;text-transform:uppercase;font-size:18px;font-family:ubuntu, sans-serif;line-height:24px;margin:40px 0}
+#result p{color:#1893cf;text-transform:uppercase;font-size:18px;font-family:ubuntu, sans-serif;line-height:24px;margin:40px 0}
 #mute.melody:before,:fullscreen #fullscreen:before,:-moz-full-screen #fullscreen:before,:-webkit-full-screen #fullscreen:before{background-color:rgba(218,73,48,1);box-shadow:0 0 5px rgba(218,73,48,0.7)}
 #credit,#game.play #gameScore,#game.play #reset,#mute.music,#fullscreen.support,#game.play #cards,#appcache_info.appcache-updateready a,#appcache_info.appcache-obsolete a{display:block}
 #loading.loaded,#splash.disable{display:none}

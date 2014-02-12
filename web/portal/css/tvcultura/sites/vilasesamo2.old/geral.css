@@ -1,35 +1,31 @@
 /* geral */
 @font-face {
     font-family: 'dinmedium';
-    src: url('/portal/css/fontes/din/din-medium-webfont.eot');
-    src: url('/portal/css/fontes/din/din-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/din/din-medium-webfont.woff') format('woff'),
-         url('/portal/css/fontes/din/din-medium-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/din/din-medium-webfont.svg#dinmedium') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/din/din-medium-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/din/din-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-medium-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-medium-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-medium-webfont.svg#dinmedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'din-blackregular';
-    src: url('/portal/css/fontes/din/din-black-webfont.eot');
-    src: url('/portal/css/fontes/din/din-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/din/din-black-webfont.woff') format('woff'),
-         url('/portal/css/fontes/din/din-black-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/din/din-black-webfont.svg#din-blackregular') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.svg#din-blackregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-.header-desktop{display:block;}
-.header-tablet{display:none;}
-.header-mobile{display:none;}
-
-body { padding:0 !important; font-size:0.875em; }
+body { padding:0 !important; }
 body, input, button, select, textarea {color:#000000!important;} 
 ul li { list-style:none !important; }
 span,
 i { display:block; }
-a:hover { text-decoration:underline; }
+a { text-decoration:underline!important;}
 .sem-margem-l{margin-left:0!important}
 .sem-margem-r{margin-rightß:0!important}
 .sem-margem-t{margin-top:0!important}
@@ -94,7 +90,7 @@ footer .mapa .span12,
 .navbar .btn-navbar:hover,
 .navbar .btn-navbar { background:none; border:none; padding:0; margin:0; box-shadow: none; }
 .navbar-fixed-top { margin-bottom:0; position:fixed;}
-#content {  min-height:500px; position:relative; top: 133px; margin-bottom:51px; }
+#content {  min-height:500px; position:relative; top:103px; margin-bottom:51px; }
 .header-bar,
 .section,
 section { max-width:980px; margin:0 auto; clear:both;}
@@ -113,7 +109,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#7d7e7d',GradientType=0 ); /* IE6-8 */ }
 
 #content h1 a,
-#content h1{ font-size:1.563em; color:#fff; text-transform:uppercase; font-weight:normal;  }/*font 25px*/
+#content h1{ font-size:25px; color:#fff; text-transform:uppercase; font-weight:normal;  }
 #content h3 span,
 #content h3 i,
 #content h1 span,
@@ -131,7 +127,6 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-incluir-brincando:hover{ background-position: 0 -450px; width: 300px; height: 100px; display:block; } 
 
 /* topo site */
-.container a.logo-mobile{overflow: hidden;display:none;}
 .icones-sprite-menu{background: url(/portal/images/capaPrograma/vilasesamo2/sprites/icones-topo-site.png) no-repeat top left;}
 .icone-btn-atividades{ background-position: 0 0; width: 60px; height: 60px; } 
 .icone-btn-jogos{ background-position: 0 -160px; width: 60px; height: 60px; } 
@@ -483,7 +478,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .header-bar h1 .sprite-logo-sesamo { text-indent:-9999px;  display: block;}
 .header-bar ul { margin-top:20px; }
 .header-bar li {position:relative; overflow: hidden;width:60px;height:60px;border-radius:5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;}
-.header-bar li a { line-height:60px; height:60px; display: block; position:relative; color:#fff; font-size: 1.786em; text-decoration:none;  text-transform:uppercase; padding: 0 12px 0 0px;}
+.header-bar li a { line-height:60px; height:60px; display: block; position:relative; color:#fff; font-size: 25px; text-decoration:none;  text-transform:uppercase; padding: 0 12px 0 0px;}
 .header-bar li span,
 .header-bar li i { position:absolute; left:0; top:0; }
 .header-bar li a span.fundo{width:66px; height:66px; position:absolute; top:-1px; left:-1px;display:block;z-index:-3;display:none;}
@@ -546,7 +541,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .destaques i.sprite-icon-jogos-grd:hover { background-position: -130px -130px; }
 .destaques i.sprite-icon-clipes-grd:hover { background-position: 0 -598px; }
 .destaques i.sprite-icon-colorir-grd:hover { background-position: 0 -1070px;}
-.destaques a { display: block; font-size:1.563em; line-height:40px; color:#fff; text-transform:uppercase; font-weight:normal; text-align:left; }
+.destaques a { display: block; font-size:25px; line-height:40px; color:#fff; text-transform:uppercase; font-weight:normal; text-align:left; }
 .destaques a  i { margin:0 4%; }
 #container-lista h2 a,
 .destaques a.asset { font-size:18px; padding:4%; color:#fff; line-height:18px; border-bottom:2px solid #0191fb; }
@@ -595,15 +590,12 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .header-bar h1 { float:left; }
 .header-bar ul { float:right; }
 .header-bar ul li { float:right; margin-left:13px; }
-#header-bar-mobile{display:none;}
 /* /top menu*/
 
 /* footer*/
-footer { background:#fff url(/portal/images/capaPrograma/vilasesamo2/pattern-copyright.jpg) repeat-x; padding-bottom:4%; width:100%;}
-#no-mobile{display:block;}
-#mobile{display:none;}
+footer { background:#fff url(/portal/images/capaPrograma/vilasesamo2/pattern-copyright.jpg) repeat-x; position:absolute; padding-bottom:4%; width:100%;}
 footer .copyright {height:30px;}
-footer .copyright small { max-width:940px; margin:0 auto; display:block; font-size:1.0em; text-transform:uppercase; height: 25px; line-height:25px; }
+footer .copyright small { max-width:940px; margin:0 auto; display:block; font-size:14px; text-transform:uppercase; height: 25px; line-height:25px; }
 footer a {display:block;}
 footer h1 a,
 footer h2 a { text-indent:-9999px; }
@@ -639,7 +631,7 @@ footer .mapa a { font-size:22px; text-transform:uppercase; color:#434343;  }
 footer .mapa { border:2px solid #f0f0f0; clear:both; overflow: hidden; background:#fffb49;  }
 footer .mapa .span12 { border-bottom:1px solid #f0f0f0; margin-left:0;  clear:both; height: 83px;  }
 footer .mapa h3  {height:83px; line-height:83px; padding-left:2.1%; margin:0; font-weight:normal;float: left;color: #434343;}
-footer .mapa a {margin:0 !important; height:82px; line-height:83px; padding:0 8%; position:relative; width:20%; text-align:center; }
+footer .mapa a {margin:0 !important; height:83px; line-height:83px; padding:0 8%; position:relative; width:20%; text-align:center; }
 
 footer .mapa a.span12 { padding-left:20px; }
 footer .mapa .col-esq { width: 33%; padding:0; }
@@ -660,9 +652,8 @@ footer .relacionados ul { margin:2% 0 0 0; }
 footer .relacionados li { list-style:none; float:left; margin-right:3.79%; }
 footer .relacionados li.last { margin-right:0; }
 footer .personagens-rodape span{float: left; margin-top: 4%;}
-footer .personagens-rodape span.titulo{font-size: 1.563em;margin: 33px 0 0 22px;}
+footer .personagens-rodape span.titulo{font-size: 25px;margin: 33px 0 0 22px;}
 footer .relacionados li a:hover{-moz-opacity: 0.50;-khtml-opacity: 0.50;opacity: 0.50;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);filter:alpha(opacity=50);}
-
 /* /footer*/
 
 /* pais*/
@@ -685,7 +676,7 @@ footer .relacionados li a:hover{-moz-opacity: 0.50;-khtml-opacity: 0.50;opacity:
 img.altura{width: 1px!important;height: 40px!important;}
 #content .pais {overflow: hidden;min-height: 46px!important; background:#feec3c; margin:0 auto !important; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 #content .pais.categorias{overflow: visible;}
-.pais h2.tit-box{height: 44px;font-size:1.80em;line-height: 47px;padding: 1px 20px;color: #434343;text-transform:uppercase;}
+.pais h2.tit-box{height: 44px;font-size: 25px;line-height: 47px;padding: 1px 20px;color: #434343;text-transform:uppercase;}
 .pais .divisa { margin-bottom:0; }
 .pais .divisa {clear: both;background-color: #feec3c;height: 2px;margin: 0;}
 .pais .content{display: block; padding: 20px 10px; background:#ffe303!important;padding:0;}
@@ -698,7 +689,7 @@ img.altura{width: 1px!important;height: 40px!important;}
 .pais .content h2 a,
 .pais .content h2 { margin:0; }
 .pais .content h2 { margin-top:10px; }
-.pais .content p { font-size:1.15em; clear:both; color: #434343;}
+.pais .content p { font-size: 16px; clear:both; color: #434343;}
 .pais .content span,
 .pais .content i { float:left; }
 .pais .content .sprite-aspa-esquerda { margin-right:10px; }
@@ -759,6 +750,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 .pais .fechar-toogle.ativo { display:block; }
 .pais .twitter-share-button { width: 90px !important; }
 .pais .content .span4 a:hover { text-decoration:underline;}
+.pais .redes.inativo { display:none; } 
 /* /pais*/
 
 /* ie */
@@ -770,7 +762,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffb49', end
 footer .logos .col-dir { *width:50%; *margin-left:-8%}
 footer .logos .col-dir a { *margin-left:10%; }
 footer .relacionados li { *margin-right:3% }
-.relacionados-mobile{display:none;}
 /*
 .filtro .filtro-personagem li { *margin:1% }
 .todos-itens li { *margin-right:0%; }
@@ -788,6 +779,8 @@ footer .relacionados li { *margin-right:3% }
 .destaques .span6.atividades:hover img { border:2px solid #B16AF2\9; }
 .destaques .span6.atividades:hover img { *border:2px solid #B16AF2; }
 /* /ie */
+
+
 
 
 
