@@ -291,7 +291,7 @@ $.ajax({
 type: "POST",
 dataType: "json",
 data: $('.form-votacao').serialize(),
-url: "<?php echo url_for('homepage')?>ajax/enquetes",
+url: "http://app.cmais.com.br/ajax/enquetes",
   beforeSend: function(){
   $('.btn-barra.votacao').hide();
   $('#ajax-loader-b').show();
