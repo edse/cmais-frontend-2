@@ -221,7 +221,7 @@
           submitHandler: function(form){
             $.ajax({
               url: "http://app.cmais.com.br/index.php/captacao/contact-us",
-              type: "jsonp",
+              dataType: "jsonp",
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('input#enviar').attr('disabled','disabled');
