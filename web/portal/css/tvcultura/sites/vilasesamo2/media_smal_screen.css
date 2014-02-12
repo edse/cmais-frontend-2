@@ -120,6 +120,3 @@ footer .relacionados h1{margin-left:5%;width: 90%;}
 .personagens #container-personagens p {font-size: 3em!important;}
 
 
-@media screen and(device-pixel-ratio:2){
-  #teste{display:none;width:100px; height:100px; background:red; position:absolute; z-index:33131313131313131313131313;}
-}
