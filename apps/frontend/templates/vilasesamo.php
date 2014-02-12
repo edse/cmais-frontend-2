@@ -110,7 +110,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       
       <!-- Menu Mobile mapa site  -->
       <a href="#" title="Vila Sésamo" class="logo-mobile">
-        <img src="/portal/images/capaPrograma/vilasesamo2/mobile/logo-mobile.png"  alt="Logo Vila Sésamo">
+        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/logo-mobile.png"  alt="Logo Vila Sésamo">
       </a>
       
       <button id="alca" class="alca" data-header="teste">&nbsp;</button>
@@ -120,7 +120,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       </div>
       
       <a href="#" title="menu Vila Sésamo" class="btn-menu">
-       <img src="/portal/images/capaPrograma/vilasesamo2/mobile/icon_menu_mobile.png" alt="Menu Vila Sésamo">
+       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/icon_menu_mobile.png" alt="Menu Vila Sésamo">
       </a> 
       <nav id="nav-mobile" class="nav-mobile">
         <div class="search-mobile">
@@ -131,30 +131,30 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         </div>
         <a href="http://cmais.com.br/vilasesamo/pais-e-educadores" title="Site Vila Sésamo" target="_self">
           Pais e Educadores
-          <img src="/portal/images/capaPrograma/vilasesamo2/pais.png">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pais.png">
         </a>
         <a href="http://cmais.com.br/vilasesamo/na-tv" title="Site Vila Sésamo" target="_self">
-          <img src="/portal/images/capaPrograma/vilasesamo2/natv.png">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/natv.png">
           Na TV
         </a>
         <a href="http://cmais.com.br/vilasesamo/acessibilidade" title="Site Vila Sésamo" target="_self">
-          <img src="/portal/images/capaPrograma/vilasesamo2/acessibilidade.png">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/acessibilidade.png">
           Acessibilidade
         </a>
         <a href="http://cmais.com.br/vilasesamo/jogos" title="Site Vila Sésamo" target="_self">
-          <img src="/portal/images/capaPrograma/vilasesamo2/jogos.png">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/jogos.png">
           Jogos
         </a>
         <a href="http://cmais.com.br/vilasesamo/videos" title="Site Vila Sésamo" target="_self">
-          <img src="/portal/images/capaPrograma/vilasesamo2/videos.png">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/videos.png">
           Vídeos
         </a>
         <a href="http://cmais.com.br/vilasesamo/atividades" title="Site Vila Sésamo" target="_self">
-          <img src="/portal/images/capaPrograma/vilasesamo2/atividades.png">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/atividades.png">
           Atividades
         </a>
         <a href="http://cmais.com.br/vilasesamopersonagens" title="Site Vila Sésamo" target="_self">
-          <img src="/portal/images/capaPrograma/vilasesamo2/personagens.png">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens.png">
           Personagens
         </a>
         <!--a class="last"title="Site Vila Sésamo" target="_self">
@@ -169,7 +169,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <header id="header-tablet" class="header-tablet">
       <!-- Menu Mobile mapa site  -->
       <a href="#" title="Vila Sésamo" class="logo-mobile">
-        <img src="/portal/images/capaPrograma/vilasesamo2/mobile/logo-mobile.png"  alt="Logo Vila Sésamo">
+        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/logo-mobile.png"  alt="Logo Vila Sésamo">
       </a>
       
       <button id="alca" class="alca" data-header="teste">&nbsp;</button>
@@ -179,7 +179,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       </div>
       
       <a href="#" title="menu Vila Sésamo" class="btn-menu">
-       <img src="/portal/images/capaPrograma/vilasesamo2/mobile/icon_menu_mobile.png" alt="Menu Vila Sésamo">
+       <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/icon_menu_mobile.png" alt="Menu Vila Sésamo">
       </a> 
       
       <nav id="nav-tablet" class="nav-mobile">
@@ -190,31 +190,31 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           </form>
         </div>
         <a href="http://cmais.com.br/vilasesamo/pais-e-educadores" title="Site Vila Sésamo" target="_self">
-          <img src="/portal/images/capaPrograma/vilasesamo2/pais.png">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pais.png">
           Pais e Educadores
         </a>
         <a href="http://cmais.com.br/vilasesamo/na-tv" title="Site Vila Sésamo" target="_self">
-          <img src="/portal/images/capaPrograma/vilasesamo2/natv.png">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/natv.png">
           Na TV
         </a>
         <a href="http://cmais.com.br/vilasesamo/acessibilidade" title="Site Vila Sésamo" target="_self">
-          <img src="/portal/images/capaPrograma/vilasesamo2/acessibilidade.png">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/acessibilidade.png">
           Acessibilidade
         </a>
         <a href="http://cmais.com.br/vilasesamo/jogos" title="Site Vila Sésamo" target="_self">
-          <img src="/portal/images/capaPrograma/vilasesamo2/jogos.png">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/jogos.png">
           Jogos
         </a>
         <a href="http://cmais.com.br/vilasesamo/videos" title="Site Vila Sésamo" target="_self">
-          <img src="/portal/images/capaPrograma/vilasesamo2/videos.png">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/videos.png">
           Vídeos
         </a>
         <a href="http://cmais.com.br/vilasesamo/atividades" title="Site Vila Sésamo" target="_self">
-          <img src="/portal/images/capaPrograma/vilasesamo2/atividades.png">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/atividades.png">
           Atividades
         </a>
         <a href="http://cmais.com.br/vilasesamopersonagens" title="Site Vila Sésamo" target="_self">
-          <img src="/portal/images/capaPrograma/vilasesamo2/personagens.png">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens.png">
           Personagens
         </a>
         <!--a class="last"title="Site Vila Sésamo" target="_self">
@@ -291,15 +291,15 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <!--logos-->
           <nav class="logos">
               <a href="http://cmais.com.br/vilasesamo" title="Site Vila Sésamo" target="_self">
-                <img src="/portal/images/capaPrograma/vila-sesamo/vila-sesamo-mobile.jpg">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/vila-sesamo-mobile.jpg">
               </a>
            
               <a class="habitos" href="http://cmais.com.br/vilasesamo/categorias/habitos-saudaveis" title="Hábitos Saudáveis" target="_self">
-                <img src="/portal/images/capaPrograma/vila-sesamo/habitos-saudaveis-mobile.jpg">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/habitos-saudaveis-mobile.jpg">
               </a>
           
               <a class="habitos" href="http://cmais.com.br/vilasesamo/categorias/incluir-brincando" title="Incluir Brincando" target="_self">
-                <img src="/portal/images/capaPrograma/vila-sesamo/incluir-brincando-mobile.jpg">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/incluir-brincando-mobile.jpg">
               </a>
           
             <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt="" />
@@ -338,15 +338,15 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <section class="relacionados" aria-label="sites relacionados" tabindex="0">
           <h1>Sites relacionados</h1>
           <nav class="relacionados-mobile">
-            <a href="http://tvcultura.cmais.com.br/" target="_self" title="TV Cultura"><img src="/portal/images/capaPrograma/vilasesamo2/mb-lg-cultura.jpg"></a>
-            <a href="http://tvratimbum.cmais.com.br/" target="_self" title="TV Rá Tim Bum"><img src="/portal/images/capaPrograma/vilasesamo2/mb-lg-tv-ratimbum.jpg"></a>
-            <a class="fifty" href="http://cmais.com.br/maiscrianca" target="_self" title="Mais Criança"><img src="/portal/images/capaPrograma/vilasesamo2/mb-lg-mais-crianca.jpg"></a>
+            <a href="http://tvcultura.cmais.com.br/" target="_self" title="TV Cultura"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-cultura.jpg"></a>
+            <a href="http://tvratimbum.cmais.com.br/" target="_self" title="TV Rá Tim Bum"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-tv-ratimbum.jpg"></a>
+            <a class="fifty" href="http://cmais.com.br/maiscrianca" target="_self" title="Mais Criança"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-mais-crianca.jpg"></a>
           </nav>
           <nav class="relacionados-mobile">
-            <a class="cocoh" href="http://tvcultura.cmais.com.br/cocorico" target="_self" title="TV Cocoricó"><img src="/portal/images/capaPrograma/vilasesamo2/mb-lg-cocorico.jpg"></a>
-            <a class="castelo" href="http://tvcultura.cmais.com.br/castelo" target="_self" title="Castelo Rá Tim Bum"><img src="/portal/images/capaPrograma/vilasesamo2/mb-lg-castelo.jpg"></a>
-            <a href="http://tvcultura.cmais.com.br/cartaozinho" target="_self" title="Cartãozinho"><img src="/portal/images/capaPrograma/vilasesamo2/mb-logo-cartao-verde.jpg"></a>
-            <a href="http://tvcultura.cmais.com.br/quintaldacultura" target="_self" title="Quintal da Cultura"><img src="/portal/images/capaPrograma/vilasesamo2/ma-lg-quintal.jpg"></a>
+            <a class="cocoh" href="http://tvcultura.cmais.com.br/cocorico" target="_self" title="TV Cocoricó"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-cocorico.jpg"></a>
+            <a class="castelo" href="http://tvcultura.cmais.com.br/castelo" target="_self" title="Castelo Rá Tim Bum"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-castelo.jpg"></a>
+            <a href="http://tvcultura.cmais.com.br/cartaozinho" target="_self" title="Cartãozinho"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-logo-cartao-verde.jpg"></a>
+            <a href="http://tvcultura.cmais.com.br/quintaldacultura" target="_self" title="Quintal da Cultura"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/ma-lg-quintal.jpg"></a>
           </nav>
         </section>
       
@@ -375,17 +375,17 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <ul class="logos">
             <li class="col-esq">
               <a href="http://cmais.com.br/vilasesamo" title="Site Vila Sésamo" target="_self">
-                <img src="/portal/images/capaPrograma/vila-sesamo/vila-sesamo-mobile.jpg">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/vila-sesamo-mobile.jpg">
               </a>
             </li>
             <li class="col-central habitos">
               <a href="http://cmais.com.br/vilasesamo/categorias/habitos-saudaveis" title="Hábitos Saudáveis" target="_self">
-                <img src="/portal/images/capaPrograma/vila-sesamo/habitos-saudaveis-mobile.jpg">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/habitos-saudaveis-mobile.jpg">
               </a>
             </li>
             <li class="col-dir incluir">
               <a href="http://cmais.com.br/vilasesamo/categorias/incluir-brincando" title="Incluir Brincando" target="_self">
-                <img src="/portal/images/capaPrograma/vila-sesamo/incluir-brincando-mobile.jpg">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/incluir-brincando-mobile.jpg">
               </a>
             </li>
             <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt="" />
@@ -454,26 +454,26 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <section class="relacionados" aria-label="sites relacionados" tabindex="0">
           <h1>Sites relacionados</h1>
           <ul>
-            <li><a href="http://tvcultura.cmais.com.br/" target="_self" title="TV Cultura"><img src="/portal/images/capaPrograma/vilasesamo2/mb-lg-cultura.png"></a></li>
-            <li><a href="http://tvratimbum.cmais.com.br/" target="_self" title="TV Rá Tim Bum"><img src="/portal/images/capaPrograma/vilasesamo2/mb-lg-tv-ratimbum.png"></a></li>
-            <li class="fiftypercent mais"><a href="http://cmais.com.br/maiscrianca" target="_self" title="Mais Criança"><img src="/portal/images/capaPrograma/vilasesamo2/mb-lg-mais-crianca.png"></a></li>
+            <li><a href="http://tvcultura.cmais.com.br/" target="_self" title="TV Cultura"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-cultura.png"></a></li>
+            <li><a href="http://tvratimbum.cmais.com.br/" target="_self" title="TV Rá Tim Bum"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-tv-ratimbum.png"></a></li>
+            <li class="fiftypercent mais"><a href="http://cmais.com.br/maiscrianca" target="_self" title="Mais Criança"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-mais-crianca.png"></a></li>
           </ul>
           <ul>
-            <li class="cocorico"><a href="http://tvcultura.cmais.com.br/cocorico" target="_self" title="TV Cocoricó"><img src="/portal/images/capaPrograma/vilasesamo2/mb-lg-cocorico.png"></a></li>
-            <li class="castelo"><a href="http://tvcultura.cmais.com.br/castelo" target="_self" title="Castelo Rá Tim Bum"><img src="/portal/images/capaPrograma/vilasesamo2/mb-lg-castelo.png"></a></li>
-            <li class="cartaozinho"><a href="http://tvcultura.cmais.com.br/cartaozinho" target="_self" title="Cartãozinho"><img src="/portal/images/capaPrograma/vilasesamo2/mb-logo-cartao-verde.png"></a></li>
-            <li class="last quintal"><a href="http://tvcultura.cmais.com.br/quintaldacultura" target="_self" title="Quintal da Cultura"><img src="/portal/images/capaPrograma/vilasesamo2/ma-lg-quintal.png"></a></li>
+            <li class="cocorico"><a href="http://tvcultura.cmais.com.br/cocorico" target="_self" title="TV Cocoricó"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-cocorico.png"></a></li>
+            <li class="castelo"><a href="http://tvcultura.cmais.com.br/castelo" target="_self" title="Castelo Rá Tim Bum"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-castelo.png"></a></li>
+            <li class="cartaozinho"><a href="http://tvcultura.cmais.com.br/cartaozinho" target="_self" title="Cartãozinho"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-logo-cartao-verde.png"></a></li>
+            <li class="last quintal"><a href="http://tvcultura.cmais.com.br/quintaldacultura" target="_self" title="Quintal da Cultura"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/ma-lg-quintal.png"></a></li>
           </ul>
           <nav class="relacionados-mobile">
-            <a href="http://tvcultura.cmais.com.br/" target="_self" title="TV Cultura"><img src="/portal/images/capaPrograma/vilasesamo2/mb-lg-cultura.jpg"></a>
-            <a href="http://tvratimbum.cmais.com.br/" target="_self" title="TV Rá Tim Bum"><img src="/portal/images/capaPrograma/vilasesamo2/mb-lg-tv-ratimbum.jpg"></a>
-            <a class="fifty" href="http://cmais.com.br/maiscrianca" target="_self" title="Mais Criança"><img src="/portal/images/capaPrograma/vilasesamo2/mb-lg-mais-crianca.jpg"></a>
+            <a href="http://tvcultura.cmais.com.br/" target="_self" title="TV Cultura"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-cultura.jpg"></a>
+            <a href="http://tvratimbum.cmais.com.br/" target="_self" title="TV Rá Tim Bum"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-tv-ratimbum.jpg"></a>
+            <a class="fifty" href="http://cmais.com.br/maiscrianca" target="_self" title="Mais Criança"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-mais-crianca.jpg"></a>
           </nav>
           <nav class="relacionados-mobile">
-            <a class="cocoh" href="http://tvcultura.cmais.com.br/cocorico" target="_self" title="TV Cocoricó"><img src="/portal/images/capaPrograma/vilasesamo2/mb-lg-cocorico.jpg"></a>
-            <a class="castelo" href="http://tvcultura.cmais.com.br/castelo" target="_self" title="Castelo Rá Tim Bum"><img src="/portal/images/capaPrograma/vilasesamo2/mb-lg-castelo.jpg"></a>
-            <a href="http://tvcultura.cmais.com.br/cartaozinho" target="_self" title="Cartãozinho"><img src="/portal/images/capaPrograma/vilasesamo2/mb-logo-cartao-verde.jpg"></a>
-            <a href="http://tvcultura.cmais.com.br/quintaldacultura" target="_self" title="Quintal da Cultura"><img src="/portal/images/capaPrograma/vilasesamo2/ma-lg-quintal.jpg"></a>
+            <a class="cocoh" href="http://tvcultura.cmais.com.br/cocorico" target="_self" title="TV Cocoricó"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-cocorico.jpg"></a>
+            <a class="castelo" href="http://tvcultura.cmais.com.br/castelo" target="_self" title="Castelo Rá Tim Bum"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-castelo.jpg"></a>
+            <a href="http://tvcultura.cmais.com.br/cartaozinho" target="_self" title="Cartãozinho"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-logo-cartao-verde.jpg"></a>
+            <a href="http://tvcultura.cmais.com.br/quintaldacultura" target="_self" title="Quintal da Cultura"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/ma-lg-quintal.jpg"></a>
           </nav>
         </section>
       
