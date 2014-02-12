@@ -135,7 +135,7 @@
         function LoadProgramacao(){
          time = new Date().getTime();
          $.ajax({
-           url: "/ajax/programacao-radio?channel_id=5&no-cache="+time,// 5 = Cultura Brasil 
+           url: "http://app.cmais.com.br/ajax/programacao-radio?channel_id=5&no-cache="+time,// 5 = Cultura Brasil 
            dataType: "json",
            success: function(json){
              //No Ar

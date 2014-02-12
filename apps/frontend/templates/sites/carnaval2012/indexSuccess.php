@@ -6,7 +6,7 @@
   // Update Twitter Statuses
   function updateTweets(){
     $.ajax({
-      url: "/ajax/tweetmonitor",
+      url: "http://app.cmais.com.br/ajax/tweetmonitor",
       data: "monitor_id=7",
       success: function(data) {
         $('#twitter').html(data);
@@ -34,7 +34,7 @@
         }
       },
       //url: '/index.php/ajax/timer'
-      url: '/ajax/timer'
+      url: 'http://app.cmais.com.br/ajax/timer'
     });
   }
   $(window).load(function(){

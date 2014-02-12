@@ -12,7 +12,7 @@
       
       <div class="bg-esquerda-infinito"></div>
       <div class="navbar-esquerda">
-        <img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/topo-abrace-cmais.png" alt="abrace o novo, abrace a TV Cultura">
+        <!--img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/topo-abrace-cmais.png" alt="abrace o novo, abrace a TV Cultura"-->
       </div>
       <div class="navbar-direita">
         <a class="brand" href="http://cmais.com.br/">Cmais</a>

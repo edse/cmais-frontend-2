@@ -29,7 +29,7 @@
       success: function(data) {
         eval(data);
       },
-      url: '/ajax/timer'
+      url: 'http://app.cmais.com.br/ajax/timer'
     });
   }
   function timer2(){
@@ -42,7 +42,7 @@
       success: function(data) {
         eval(data);
       },
-      url: '/ajax/timer'
+      url: 'http://app.cmais.com.br/ajax/timer'
     });
   }
 
@@ -53,7 +53,7 @@
 
   function updateTweets() {
     $.ajax({
-      url: "/ajax/tweetmonitor",
+      url: "http://app.cmais.com.br/ajax/tweetmonitor",
       data: "monitor_id=4",
       success: function(data) {
         $('#twitter').html(data);
