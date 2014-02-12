@@ -12,8 +12,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <?php include_meta_props() ?>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <?php echo $noscript; ?>
-    <!--script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script-->
-    <?php // echo $noscript; ?>
    
     <script src="http://cmais.com.br/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
     <?php echo $noscript; ?> 
