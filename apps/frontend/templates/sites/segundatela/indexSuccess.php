@@ -147,21 +147,21 @@ no cmais+ e na programação da TV Cultura para descobrir as próximas novidades
 <script>
 jQuery(document).ready(function() {
   $.ajax({
-    url: "/ajax/islive",
+    url: "http://app.cmais.com.br/ajax/islive",
     data: "program_id=2",
     success: function(data) {
       if(data==1)
         $('#jornaldacultura').fadeIn('slow');
       else{
         $.ajax({
-          url: "/ajax/islive",
+          url: "http://app.cmais.com.br/ajax/islive",
           data: "program_id=75",
           success: function(data) {
             if(data==1)
               $('#rodaviva').fadeIn('slow');
             else{
               $.ajax({
-                url: "/ajax/islive",
+                url: "http://app.cmais.com.br/ajax/islive",
                 data: "program_id=77",
                 success: function(data) {
                   if(data==1)

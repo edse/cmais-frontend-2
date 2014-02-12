@@ -67,7 +67,7 @@
       // we will use the "async: false" because if we use async call, the datapickr will wait for the data to be loaded
 
       $.ajax({
-        url: "/ajax/getdays",
+        url: "http://app.cmais.com.br/ajax/getdays",
         data: opts,
         dataType: "json",
         async: false,

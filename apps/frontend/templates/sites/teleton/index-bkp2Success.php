@@ -22,7 +22,7 @@
   // Update Twitter Statuses
   function updateTweets(){
     $.ajax({
-      url: "/ajax/tweetmonitor",
+      url: "http://app.cmais.com.br/ajax/tweetmonitor",
       data: "monitor_id=5",
       success: function(data) {
         $('#twitter').html(data);

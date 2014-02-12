@@ -96,7 +96,7 @@ function vote(id){
     type: "GET",
     dataType: "text",
     data: "asset_id="+id,
-    url: "/ajax/ranking",
+    url: "http://app.cmais.com.br/ajax/ranking",
     beforeSend: function(){
       $('#btn_1').hide();
       $('#btn_2').show();
