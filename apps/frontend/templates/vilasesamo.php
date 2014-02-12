@@ -10,24 +10,34 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <?php include_title() ?>
     <?php include_metas() ?>
     <?php include_meta_props() ?>
-    <meta name="mobile-view" content="HandheldFriendly" content="true"/>
-    <meta name="mobile-view" content="MobileOptimized" content="320" />
-    <meta name="mobile-view"content="viewport" content="width=980, maximum-scale=2, minimum-scale=2, initial-scale=2, user-scalable=false" /> 
-    <!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->
-    <!-- Le styles -->  
-    <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <!--link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" /-->
-    <!--link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" /-->
-    <?php if(strstr($user_agent, 'iPhone') == true || (strstr($user_agent, 'Android') == true && strstr($user_agent, 'Mobile') == true) || (strstr($user_agent, 'Windows Phone') == true && strstr($user_agent, 'IEMobile') == true)): ?> 
-      <link title="mobile-css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
-      <link title="mobile-css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
-      <link title="mobile-css" rel="stylesheet" media="screen" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" />
-    <?php else:?>
+    
+    
+    <?php if(isset($_GET['m']) && $_GET['m'] == "2143"):?>
+      <meta name="mobile-view" content="HandheldFriendly" content="true"/>
+      <meta name="mobile-view" content="MobileOptimized" content="320" />
+      <meta name="mobile-view"content="viewport" content="width=980, maximum-scale=2, minimum-scale=2, initial-scale=2, user-scalable=false" /> 
+      <!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->
+      <!-- Le styles -->
+      <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">  
+      <?php if(strstr($user_agent, 'iPhone') == true || (strstr($user_agent, 'Android') == true && strstr($user_agent, 'Mobile') == true) || (strstr($user_agent, 'Windows Phone') == true && strstr($user_agent, 'IEMobile') == true)): ?> 
+        <link title="mobile-css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
+        <link title="mobile-css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
+        <link title="mobile-css" rel="stylesheet" media="screen" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" />
+      <?php else:?>
+        <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
+        <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
+        <link title="mobile-css" rel="stylesheet" media="only screen and (min-width:501px) and (max-width:979px)" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_medium_screen.css" />
+        <link title="mobile-css" rel="stylesheet" media="only screen and (min-width:50px) and (max-width:500px)" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" /> 
+      <?php endif; ?>
+    
+    <?php else: ?>
+      <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">
       <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
-      <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
-      <link title="mobile-css" rel="stylesheet" media="only screen and (min-width:501px) and (max-width:979px)" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_medium_screen.css" />
-      <link title="mobile-css" rel="stylesheet" media="only screen and (min-width:50px) and (max-width:500px)" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" /> 
-    <?php endif; ?>
+      <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />  
+    <?php endif; ?> 
+     
+    
+    
     
     
     
