@@ -220,6 +220,7 @@
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
             $.ajax({
+              url: "http://app.cmais.com.br/index.php/captacao/contact-us",
               type: "POST",
               dataType: "text",
               data: $("#form-contato").serialize(),
