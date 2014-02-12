@@ -8,7 +8,7 @@
 .mpc_ls .mpc_ls_preloader {
 	width: 100%;
 	height: 100%;
-	background: url('/portal/js/layer-slider/model06/img/preloader.gif') no-repeat center center;
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/preloader.gif') no-repeat center center;
 }
 
 .mpc_ls .mpc_ls_ui {
@@ -35,7 +35,7 @@
 	position: absolute;
 	width: 32px;
 	height: 32px;
-	background-image: url('/portal/js/layer-slider/model06/img/corners08.png');
+	background-image: url('http://cmais.com.br/portal/js/layer-slider/model06/img/corners08.png');
 }
 .mpc_ls .mpc_ls_slides_wrapper.frame .corner.tl {
 	top: 0;
@@ -117,19 +117,19 @@
 	width: 100%;
 }
 .mpc_ls_shadow.style01 {
-	background: url('/portal/js/layer-slider/model06/img/shadow_style01.png') no-repeat center top;
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/shadow_style01.png') no-repeat center top;
 	background-size: 100%;
 	bottom: -17px;
 	height: 17px;
 }
 .mpc_ls_shadow.style02 {
-	background: url('/portal/js/layer-slider/model06/img/shadow_style02.png') no-repeat center top;
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/shadow_style02.png') no-repeat center top;
 	background-size: 100%;
 	bottom: -14px;
 	height: 14px;
 }
 .mpc_ls_shadow.style03 {
-	background: url('/portal/js/layer-slider/model06/img/shadow_style03.png') no-repeat center top;
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/shadow_style03.png') no-repeat center top;
 	background-size: 100%;
 	bottom: -21px;
 	height: 21px;
@@ -418,7 +418,7 @@
 }
 
 .ie8 .mpc_ls_slides_thumbs.style02 .mpc_ls_thumb {
-	background: url('/portal/js/layer-slider/model06/img/style02.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/style02.png');
 }
 
 /* STYLE 03 */
@@ -451,7 +451,7 @@
 .ie8 .mpc_ls_slides_thumbs.style03 .mpc_ls_thumb {
 	width: 14px;
 	height: 14px;
-	background: url('/portal/js/layer-slider/model06/img/style03.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/style03.png');
 }
 
 /* STYLE 04 */
@@ -503,7 +503,7 @@
 .ie8 .mpc_ls_slides_thumbs.style04 .mpc_ls_thumb {
 	width: 18px;
 	height: 19px;
-	background: url('/portal/js/layer-slider/model06/img/style04.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/style04.png');
 	background-position: left center;
 	border: none;
 }
@@ -512,7 +512,7 @@
 	border: none;
 }
 .ie8 .mpc_ls_slides_thumbs.style04 .mpc_ls_thumb.active {
-	background: url('/portal/js/layer-slider/model06/img/style04.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/style04.png');
 	background-position: right center;
 }
 .ie8 .mpc_ls_slides_thumbs.style04 .mpc_ls_thumb.active .mpc_ls_thumb_inside {
@@ -566,7 +566,7 @@
 .ie8 .mpc_ls_slides_thumbs.style05 .mpc_ls_thumb {
 	width: 22px;
 	height: 23px;
-	background: url('/portal/js/layer-slider/model06/img/style05.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/style05.png');
 	border: none;
 }
 .ie8 .mpc_ls_slides_thumbs.style05 .mpc_ls_thumb_inside {
@@ -574,7 +574,7 @@
 	border: none;
 }
 .ie8 .mpc_ls_slides_thumbs.style05 .mpc_ls_thumb.active {
-	background: url('/portal/js/layer-slider/model06/img/style05.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/style05.png');
 	background-position: right center;
 }
 .ie8 .mpc_ls_slides_thumbs.style05 .mpc_ls_thumb.active .mpc_ls_thumb_inside {
@@ -592,7 +592,7 @@
 .mpc_ls_slides_thumbs.style06 .mpc_ls_thumb {
 	position: relative;
 	display: inline-block;
-	background: url('/portal/js/layer-slider/model06/img/style06bg.png') repeat-x;
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/style06bg.png') repeat-x;
 	width: 6.5%;
 	height: 8px;
 	top: -7px;
@@ -607,7 +607,7 @@
 	line-height: 22px;
 }
 .mpc_ls_slides_thumbs.style06 .mpc_ls_thumb.highlight {
-	background: url('/portal/js/layer-slider/model06/img/style06bgh.png') repeat-x;
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/style06bgh.png') repeat-x;
 	height: 8px;
 	top: -8px;
 	color: #093f3e;
@@ -631,12 +631,12 @@
 	height: 22px;
 	line-height: 22px;
 	border-radius: 11px;
-	background: url('/portal/js/layer-slider/model06/img/style06.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/style06.png');
 	background-position: 22px 0;
 	margin-right: -1px;
 }
 .mpc_ls_slides_thumbs.style06 .mpc_ls_thumb.highlight .mpc_ls_thumb_inside {
-	background: url('/portal/js/layer-slider/model06/img/style06h.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/style06h.png');
 	background-position: 23px 0;
 	height: 24px;
 	width: 23px;
@@ -694,13 +694,13 @@
 
 .ie8 .mpc_ls_slides_thumbs.style07 .mpc_ls_thumb {
 	border: none;
-	background: url('/portal/js/layer-slider/model06/img/style07bg.png') repeat-x;
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/style07bg.png') repeat-x;
 }
 .ie8 .mpc_ls_slides_thumbs.style07 .mpc_ls_thumb_inside {
 	top: 17px;
 	width: 10px;
 	height: 10px;
-	background: url('/portal/js/layer-slider/model06/img/style07.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/style07.png');
 }
 .ie8 .mpc_ls_slides_thumbs.style07 .mpc_ls_thumb.active .mpc_ls_thumb_inside {
 	top: 17px;
@@ -729,7 +729,7 @@
 	vertical-align: middle;
 }
 .mpc_ls_slides_thumbs.style08 .mpc_ls_thumb.active {
-	background: url('/portal/js/layer-slider/model06/img/style08.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/style08.png');
 	background-position: right center;
 	margin: 0;
 	width: 18px;
@@ -742,7 +742,7 @@
 }
 
 .ie8 .mpc_ls_slides_thumbs.style08 .mpc_ls_thumb {
-	background: url('/portal/js/layer-slider/model06/img/style08.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/style08.png');
 	margin: 0 4px;
 	width: 10px;
 	height: 18px;
@@ -795,7 +795,7 @@
 	width: 42px;
 	height: 42px;
 	margin-top: -21px;
-	background: url('/portal/js/layer-slider/model06/img/arrows02.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/arrows02.png');
 }
 .mpc_ls .mpc_ls_ui .mpc_ls_prev_slide.style02 {
 	left: 10px;
@@ -810,7 +810,7 @@
 	width: 44px;
 	height: 44px;
 	margin-top: -22px;
-	background: url('/portal/js/layer-slider/model06/img/arrows03.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/arrows03.png');
 }
 .mpc_ls .mpc_ls_ui .mpc_ls_prev_slide.style03 {
 	left: 10px;
@@ -871,7 +871,7 @@
 
 .ie8 .mpc_ls .mpc_ls_ui .mpc_ls_ui_button.style04 {
 	border: none;
-	background: url('/portal/js/layer-slider/model06/img/arrows04.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/arrows04.png');
 	width: 43px;
 	height: 44px;
 }
@@ -939,7 +939,7 @@
 	width: 39px;
 	height: 39px;
 	border: none;
-	background: url('/portal/js/layer-slider/model06/img/arrows05.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/arrows05.png');
 }
 .ie8 .mpc_ls .mpc_ls_ui .mpc_ls_next_slide.style05 {
 	background-position: right center;
@@ -964,7 +964,7 @@
 	margin-top: -22px;
 	border: 1px solid #1c1e1e;
 
-	background-image: url('/portal/js/layer-slider/model06/img/arrows07.png'),
+	background-image: url('http://cmais.com.br/portal/js/layer-slider/model06/img/arrows07.png'),
 						-webkit-linear-gradient(top, #3a3f3f 0%, #313434 49%, #282c2c 50%, #212323 100%);
 	background-repeat: no-repeat;
 	background-position: left center;
@@ -981,7 +981,7 @@
 
 .ie8 .mpc_ls .mpc_ls_ui .mpc_ls_ui_button.style07 {
 	border: none;
-	background: url('/portal/js/layer-slider/model06/img/arrows07f.png');
+	background: url('http://cmais.com.br/portal/js/layer-slider/model06/img/arrows07f.png');
 	width: 50px;
 	height: 44px;
 }

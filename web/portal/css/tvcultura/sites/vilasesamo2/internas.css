@@ -473,10 +473,10 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .destaques .videos img {border-bottom: 2px solid #f57301;}
 .cuidadores .container-cuidadores .banner a img{width: 95%;margin: 10px 0px;}
 .cuidadores .container-cuidadores .destaques .texto {white-space: nowrap;text-overflow: ellipsis;overflow: hidden;padding: 0;font-size: 16px;font-family: 'dinmedium',Arial, Helvetica, sans-serif;}
-.cuidadores .todos-assets{height:48px;background-image: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-artigo.png');font-size: 25px!important;overflow: hidden;float: right;width: 300px;line-height: 48px;}
+.cuidadores .todos-assets{height:48px;background-image: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-artigo.png');font-size: 25px!important;overflow: hidden;float: right;width: 300px;line-height: 48px;}
 .cuidadores .todos-assets p{margin:0!important; text-align:center!important;}
 .cuidadores .todos-assets .icone-voltar-artigo{margin:0!important;}
-.cuidadores .container-cuidadores .col-dir{padding:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat;margin-left:10px; }
+.cuidadores .container-cuidadores .col-dir{padding:10px; background:url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat;margin-left:10px; }
 /*.cuidadores #img-capa{width:100%;}*/
 .cuidadores .img-topo-asset{overflow:hidden; width: 350px;margin: 0 auto;}
 .cuidadores .img-destaque-asset{text-align:center;}
@@ -498,16 +498,16 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .na-tv .container-na-tv p a:hover{color:#00c76e;}
 .na-tv .container-na-tv .container-horarios{width: 480px;float: right;max-height: 230px;overflow: hidden;}
 .na-tv .container-na-tv .container-horarios .img-logo{text-align: center;margin: 10px;}
-.na-tv .container-na-tv .container-horarios .box-horario{width: 230px;float: left;margin-left: 18px;background: red;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat;}
+.na-tv .container-na-tv .container-horarios .box-horario{width: 230px;float: left;margin-left: 18px;background: red;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px; background:url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat;}
 .na-tv .container-na-tv .container-horarios .box-horario .box-logo{display:block;width: 100%;background: #ffffff;border: #ccf4e2 1px solid;height: 130px;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;position:relative;}
 .na-tv .container-na-tv .container-horarios .box-horario h2{font-family:'din-blackregular',Arial, Helvetica, sans-serif;color:#00aa52;font-size:18px;text-align:center;line-height: 16px;margin: 20px 0 10px 0;}
 .na-tv .container-na-tv .container-horarios .box-horario p{font-size:16px;text-align:center;color:#737373; float:none;}
-.na-tv .fundo-na-tv{width:550px; height:650px; background:url('/portal/images/capaPrograma/vilasesamo2/personagens/img_natv.png') no-repeat; position:absolute;top:154px; left:10px;z-index: 0}
+.na-tv .fundo-na-tv{width:550px; height:650px; background:url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/img_natv.png') no-repeat; position:absolute;top:154px; left:10px;z-index: 0}
 /* /na tv */ 
 
 /* acessibilidade */
 .acessibilidade .box-acessibilidade{overflow: hidden;width: 56%;float: right;}
-.acessibilidade .fundo-acessibilidade{width:400px; height:500px; background:url('/portal/images/capaPrograma/vilasesamo2/personagens/img_acessibilidade.png') no-repeat; position:absolute;top:110px; left:0px;z-index: 0}
+.acessibilidade .fundo-acessibilidade{width:400px; height:500px; background:url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/img_acessibilidade.png') no-repeat; position:absolute;top:110px; left:0px;z-index: 0}
 .acessibilidade .container-na-tv{background: #FFFFFF;padding: 30px 20px 30px 20px;overflow: hidden;position: relative;border-bottom: 2px solid #008d36;}
 .acessibilidade #content { top:134px; margin-bottom:30px!important; }
 /* acessibilidade */

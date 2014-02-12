@@ -1479,12 +1479,12 @@ class _sectionActions extends sfActions
     // mail sender
     $email_site = $this->section->getContactEmail();
     if(isset($email_site)) {
-      if(($request->getParameter('captcha'))||($request->getParameter('mande-seu-tema'))||($this->section->getSlug()=='participe')||($this->section->getSlug()=='ideias-mirabolantes')||($this->section->getSlug()=='tvcocorico')||($this->section->getSlug()=='piadas')||($this->site->getSlug() == "tvcocorico")||($this->section->getSlug() == "cadastrodeestagiario")||($this->site->getSlug() == "qss" && $this->section->getSlug() == "home") || ($this->site->getSlug() == "maiscrianca") ||  ($this->section->getSlug() == "jornalismo") || ($this->site->getSlug() == "culturabrasil" && $this->section->getSlug() == "selecao-do-ouvinte")){
+      if(($request->getParameter('captcha'))||($request->getParameter('email'))||($request->getParameter('mande-seu-tema'))||($this->section->getSlug()=='participe')||($this->section->getSlug()=='ideias-mirabolantes')||($this->section->getSlug()=='tvcocorico')||($this->section->getSlug()=='piadas')||($this->site->getSlug() == "tvcocorico")||($this->section->getSlug() == "cadastrodeestagiario")||($this->site->getSlug() == "qss" && $this->section->getSlug() == "home") || ($this->site->getSlug() == "maiscrianca") ||  ($this->section->getSlug() == "jornalismo") || ($this->site->getSlug() == "culturabrasil" && $this->section->getSlug() == "selecao-do-ouvinte")){
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
           if ($this->site->getSlug() == "maiscrianca" && $request->getParameter('ferias'))
             $this->section = Doctrine::getTable('Section')->findOneBySlugAndSiteId("ferias", $this->site->id);
-          
+
           $email_site = $this->section->getContactEmail();
           
           //NOVO JORNALISMO
@@ -1500,7 +1500,7 @@ class _sectionActions extends sfActions
           
           $email_user = strip_tags($request->getParameter('email'));
           $nome_user = strip_tags($request->getParameter('nome'));
-          if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
+          //if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
             // verifica se o servidor que ta o formulario é o mesmo que o chamou, se for um ataque de injeção de dados este valor será diferente
             ini_set('sendmail_from', $email_site);
             $msg = "Formulario Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
@@ -1515,17 +1515,26 @@ class _sectionActions extends sfActions
             $cabecalho .= "MIME-Version: 1.0\r\n";
             $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
             $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
+            
+            //echo($email_site.', ['.$this->site->getTitle().']['.$this->section->getTitle().'] '.$nome_user.' <'.$email_user.'>, '.stripslashes(nl2br($msg)).', '.$cabecalho);
+            //die();
+            
             if(mail($email_site, '['.$this->site->getTitle().']['.$this->section->getTitle().'] '.$nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho)){
-              die("1");
+              //die("1");
+              header("Location: ".$_SERVER["HTTP_REFERER"]."?success=1");
             }
             else {
-              die("0");
+              //die("0");
+              header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
             }
+            die("asdf");
+          /*
           }
           else {
             header("Location: http://cmais.com.br");
             die();
           }
+          */
         }
       }
     }
@@ -1728,7 +1737,7 @@ class _sectionActions extends sfActions
       $pagelimit = 99;
       $this->setLayout(false);
     }     
-		
+    
     if(!isset($pagelimit))
       $pagelimit = 9;
 
