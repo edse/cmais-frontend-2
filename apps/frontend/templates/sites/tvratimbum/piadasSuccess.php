@@ -315,7 +315,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
                   type: "POST",
                   dataType: "json",
                   data: $("#e<?php echo $a_piadas[0]->Asset->getId()?>").serialize(),
-                  url: "<?php echo url_for('homepage')?>ajax/enquetes",
+                  url: "http://app.cmais.com.br/ajax/enquetes",
                   beforeSend: function(){
                     $('.btn-barra.votacao').hide();
                     $('#ajax-loader-b').show();

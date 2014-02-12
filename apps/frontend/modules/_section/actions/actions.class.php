@@ -1479,12 +1479,12 @@ class _sectionActions extends sfActions
     // mail sender
     $email_site = $this->section->getContactEmail();
     if(isset($email_site)) {
-      if(($request->getParameter('captcha'))||($request->getParameter('mande-seu-tema'))||($this->section->getSlug()=='participe')||($this->section->getSlug()=='ideias-mirabolantes')||($this->section->getSlug()=='tvcocorico')||($this->section->getSlug()=='piadas')||($this->site->getSlug() == "tvcocorico")||($this->section->getSlug() == "cadastrodeestagiario")||($this->site->getSlug() == "qss" && $this->section->getSlug() == "home") || ($this->site->getSlug() == "maiscrianca") ||  ($this->section->getSlug() == "jornalismo") || ($this->site->getSlug() == "culturabrasil" && $this->section->getSlug() == "selecao-do-ouvinte")){
+      if(($request->getParameter('captcha'))||($request->getParameter('email'))||($request->getParameter('mande-seu-tema'))||($this->section->getSlug()=='participe')||($this->section->getSlug()=='ideias-mirabolantes')||($this->section->getSlug()=='tvcocorico')||($this->section->getSlug()=='piadas')||($this->site->getSlug() == "tvcocorico")||($this->section->getSlug() == "cadastrodeestagiario")||($this->site->getSlug() == "qss" && $this->section->getSlug() == "home") || ($this->site->getSlug() == "maiscrianca") ||  ($this->section->getSlug() == "jornalismo") || ($this->site->getSlug() == "culturabrasil" && $this->section->getSlug() == "selecao-do-ouvinte")){
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
           if ($this->site->getSlug() == "maiscrianca" && $request->getParameter('ferias'))
             $this->section = Doctrine::getTable('Section')->findOneBySlugAndSiteId("ferias", $this->site->id);
-          
+
           $email_site = $this->section->getContactEmail();
           
           //NOVO JORNALISMO
@@ -1516,10 +1516,12 @@ class _sectionActions extends sfActions
             $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
             $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
             if(mail($email_site, '['.$this->site->getTitle().']['.$this->section->getTitle().'] '.$nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho)){
-              die("1");
+              //die("1");
+              header("Location: ".$_SERVER["HTTP_REFERER"]."?success=1");
             }
             else {
-              die("0");
+              //die("0");
+              header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
             }
           }
           else {

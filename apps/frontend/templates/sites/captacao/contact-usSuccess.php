@@ -219,10 +219,14 @@
         
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
+            form.submit();
+          },
+          /*
+          submitHandler: function(form){
+            
             $.ajax({
-              url: "http://app.cmais.com.br/index.php/captacao/contact-us",
-              type: "jsonp",
-              dataType: "text",
+              url: "http://app.cmais.com.br/index.php/captacao/contact-us?channel_id=6&no-cache="+time,
+              dataType: "jsonp",
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('input#enviar').attr('disabled','disabled');
@@ -245,6 +249,7 @@
               }
             });         
           },
+          */
           rules:{
             nome:{
               required: true,
