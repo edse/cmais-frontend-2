@@ -97,7 +97,7 @@
 							</div>
 							
 		          <!-- INICIO TIMELINE -->
-		          <div class="timeline">
+		          <!--div class="timeline">
 		          	<h1 class="box-interna">Linha do Tempo de Premiações da Fundação Padre Anchieta</h1>
 			            <div id="tvcultura-embed"></div>
 			            <script type="text/javascript">
@@ -114,7 +114,7 @@
 			              }
 			            </script>
 			            <script type="text/javascript" src="http://cmais.com.br/portal/js/qualidade/storyjs-embed.js"></script>
-		            </div>
+		            </div-->
 		            <!-- /FIM TIMELINE -->
 	            		         
      				</div><!--/CAPA-->
