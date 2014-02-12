@@ -132,7 +132,7 @@
           <fieldset>
             <div class="codigo span3" id="captchaimage">
               <label for="captcha">Confirmação</label>
-              <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código"> <img src="http://cmais.com.br/portal/js/validate/demo/captcha/images/image.php?1375217158" width="132" height="46" alt="Captcha image" id="captcha_image"> </a>
+              <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código"> <img src="http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?1375217158" width="132" height="46" alt="Captcha image" id="captcha_image"> </a>
             </div>
             <div class="span9" id="captchaimage">  
               <label class="msg" for="captcha">Digite no campo abaixo os caracteres que você vê na imagem:</label>
@@ -261,7 +261,7 @@
     });
   });
   
-  $('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date);
+  $('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
   
   // Contador de Caracters
   function limitText(limitField, limitNum, textCounter) {

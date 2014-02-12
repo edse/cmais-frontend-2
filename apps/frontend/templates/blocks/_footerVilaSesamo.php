@@ -3,9 +3,9 @@
       <div class="container row-fluid">
         <section>
           <ul class="logos">
-            <li class="col-esq"><a href="/vila-sesamo" title="Vila Sésamo"><img src="/portal/images/capaPrograma/vila-sesamo/logo-sesamo-peq.png" alt="Vila Sésamo" /></a></li>
-            <li class="col-central"><span class="sprite-destalhe-amarelo2"></span><a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis"><img src="/portal/images/capaPrograma/vila-sesamo/logo-habitos-saudaveis.png" alt="Hábitos Saudáveis" /></a><span class="sprite-destalhe-amarelo1"></span></li>
-            <li class="col-dir"><a href="/vila-sesamo/incluirbrincando" title="Incluir Brincando"><img src="/portal/images/capaPrograma/vila-sesamo/logo-incluir-grd.png" alt="Incluir Brincando" /></a></li>
+            <li class="col-esq"><a href="/vila-sesamo" title="Vila Sésamo"><img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/logo-sesamo-peq.png" alt="Vila Sésamo" /></a></li>
+            <li class="col-central"><span class="sprite-destalhe-amarelo2"></span><a href="http://cmais.com.br/habitos-saudaveis/index.html" title="Hábitos Saudáveis"><img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/logo-habitos-saudaveis.png" alt="Hábitos Saudáveis" /></a><span class="sprite-destalhe-amarelo1"></span></li>
+            <li class="col-dir"><a href="/vila-sesamo/incluirbrincando" title="Incluir Brincando"><img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/logo-incluir-grd.png" alt="Incluir Brincando" /></a></li>
           </ul>
           <div class="mapa">
             <a href="/vila-sesamo/jogos" class="span12">Jogos</a>

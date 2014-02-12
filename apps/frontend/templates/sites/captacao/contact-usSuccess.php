@@ -166,8 +166,8 @@
                   <div class="linha t3 codigo" id="captchaimage">
                     <label for="captcha">confirmation</label>
                     <br />
-                    <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', '/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Click to generate other code">
-                      <img src="http://cmais.com.br/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
+                    <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Click to generate other code">
+                      <img src="http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
                     </a>
                     <label class="msg" for="captcha">Enter the characters you see in the picture:</label>
                     <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />

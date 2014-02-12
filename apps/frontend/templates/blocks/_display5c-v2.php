@@ -5,8 +5,8 @@
               <!-- banner promo-->
               <!--
               <div id="topo-destaque">
-                <img src="/portal/images/hometv/qss/apresentadores.png" alt="Quem Sabe Sabe" />
-                <a class="banner-topo" href="http://tvcultura.cmais.com.br/qss" title="Quem Sabe Sabe"><img src="/portal/images/hometv/qss/logoqss.png" alt="Quem Sabe Sabe" /></a>
+                <img src="http://cmais.com.br/portal/images/hometv/qss/apresentadores.png" alt="Quem Sabe Sabe" />
+                <a class="banner-topo" href="http://tvcultura.cmais.com.br/qss" title="Quem Sabe Sabe"><img src="http://cmais.com.br/portal/images/hometv/qss/logoqss.png" alt="Quem Sabe Sabe" /></a>
                 <h2>vem jogar com a gente! de segunda a sexta, às 19h20</h2>
                 <div class="redes">
                   <div class="t">
