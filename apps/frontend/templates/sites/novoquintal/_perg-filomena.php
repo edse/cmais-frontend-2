@@ -23,7 +23,7 @@
             $.ajax({
               type: "POST",
               dataType: "text",
-              url:"<?php echo url_for('homepage')?>ajax/mensagem",
+              url:"http://app.cmais.com.br/ajax/mensagem",
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('#form-contato input#enviar').hide();
@@ -86,7 +86,7 @@
             $.ajax({
               type: "POST",
               dataType: "text",
-              url:"<?php echo url_for('homepage')?>ajax/mensagem",
+              url:"http://app.cmais.com.br/ajax/mensagem",
               data: $("#form-contato-2").serialize(),
               beforeSend: function(){
                 $('#form-contato-2 input#enviar').hide();

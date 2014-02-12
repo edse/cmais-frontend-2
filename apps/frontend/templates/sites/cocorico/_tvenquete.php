@@ -89,7 +89,7 @@ function sendAnswer(){
     type: "POST",
     dataType: "json", 
     data: $("#e<?php echo $respostas[0]->Asset->getId()?>").serialize(),
-    url: "<?php echo url_for('homepage')?>ajax/enquetes",
+    url: "http://app.cmais.com.br/ajax/enquetes",
     beforeSend: function(){
       $('#votar-input, .votar span').hide();
       $('#ajax-loader').show();
