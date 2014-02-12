@@ -219,7 +219,7 @@
         
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
-            $("#form-contato").submit();
+            form.submit();
           },
           /*
           submitHandler: function(form){
