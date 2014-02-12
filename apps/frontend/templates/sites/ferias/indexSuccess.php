@@ -243,7 +243,7 @@
           rules:{
             captcha: {
               required: true,
-              remote: "/portal/js/validate/demo/captcha/process.php"
+              remote: "http://app.cmais.com.br/portal/js/validate/demo/captcha/process.php"
             }
           },
           success: function(label){
