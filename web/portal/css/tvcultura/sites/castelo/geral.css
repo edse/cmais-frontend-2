@@ -3,11 +3,11 @@
 
 @font-face {
     font-family: 'CrazyHaroldRegular';
-    src: url('/portal/css/tvcultura/sites/castelo/fonte/crazh___-webfont.eot');
-    src: url('/portal/css/tvcultura/sites/castelo/fonte/crazh___-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/tvcultura/sites/castelo/fonte/crazh___-webfont.woff') format('woff'),
-         url('/portal/css/tvcultura/sites/castelo/fonte/crazh___-webfont.ttf') format('truetype'),
-         url('/portal/css/tvcultura/sites/castelo/fonte/crazh___-webfont.svg#CrazyHaroldRegular') format('svg');
+    src: url('http://cmais.com.br/portal/css/tvcultura/sites/castelo/fonte/crazh___-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/tvcultura/sites/castelo/fonte/crazh___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/tvcultura/sites/castelo/fonte/crazh___-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/tvcultura/sites/castelo/fonte/crazh___-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/tvcultura/sites/castelo/fonte/crazh___-webfont.svg#CrazyHaroldRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 

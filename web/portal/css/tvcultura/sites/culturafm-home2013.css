@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'gotham_mediumregular';
-    src: url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot');
-    src: url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.woff') format('woff'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.svg#gotham_mediumregular') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.svg#gotham_mediumregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -13,17 +13,17 @@
 
 @font-face {
     font-family: 'gotham_blackregular';
-    src: url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot');
-    src: url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.woff') format('woff'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.svg#gotham_blackregular') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.svg#gotham_blackregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 .fb-like-box{margin-top:20px;}
-body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x;}
+body {background: #ffffff url('http://cmais.com.br/portal/images/culturafm/bg-tudo3a.jpg') repeat-x;}
 #container-home{width:100%;}
 #guia-topo {padding: 0;}
 #barra-site h2 {margin-top: 20px;}
@@ -62,10 +62,10 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #content-holder .grid3{overflow:hidden;float:left;width:310px;}
 #content-holder .grid4{overflow:hidden;float:left;width:430px;} 
 
-#content-holder .seta2{width:10px; height:16px; background:url('/portal/images/capaPrograma/culturafm/novahome/seta-2.png') no-repeat; position:absolute;top:16px;left:7px;}
+#content-holder .seta2{width:10px; height:16px; background:url('http://cmais.com.br/portal/images/capaPrograma/culturafm/novahome/seta-2.png') no-repeat; position:absolute;top:16px;left:7px;}
 #content-holder .c-classico .seta2{left:0;}
-#content-holder .seta{width:10px; height:16px; background:url('/portal/images/capaPrograma/culturafm/novahome/seta.jpg') no-repeat; position:absolute; top:0; right:-10px;}
-#content-holder .linha-hr{width:100%; height:1px; background:url('/portal/images/capaPrograma/culturafm/novahome/linha-pontilhada.jpg') repeat-x;}
+#content-holder .seta{width:10px; height:16px; background:url('http://cmais.com.br/portal/images/capaPrograma/culturafm/novahome/seta.jpg') no-repeat; position:absolute; top:0; right:-10px;}
+#content-holder .linha-hr{width:100%; height:1px; background:url('http://cmais.com.br/portal/images/capaPrograma/culturafm/novahome/linha-pontilhada.jpg') repeat-x;}
 #content-holder #cfm-carrossel p{overflow: hidden; max-height:60px; text-align:left;}
 
 #content-holder h2{font-size:18px; color:#0546a6; text-align: left; margin-top: 4px;max-height: 70px;overflow: hidden;}
@@ -138,7 +138,7 @@ body {background: #ffffff url('/portal/images/culturafm/bg-tudo3a.jpg') repeat-x
 #content-holder .carousel .prev.right {left: 0;}
 #content-holder .carousel .active.left {left: -100%;}
 #content-holder .carousel .active.right {left: 100%;}
-#content-holder .carousel-control {*display:block;background:#222222 url('/portal/images/capaPrograma/culturafm/novahome/setas-carrossel.png') no-repeat 6px center;position: absolute;*top: 42px;top: 42px;left: 3px;width: 20px; height:259px; margin-top: -20px;font-size: 60px;font-weight: 100;line-height: 30px;color: #ffffff;text-align: center;opacity: 0.9;filter: alpha(opacity=90); *z-index: 100000;}
+#content-holder .carousel-control {*display:block;background:#222222 url('http://cmais.com.br/portal/images/capaPrograma/culturafm/novahome/setas-carrossel.png') no-repeat 6px center;position: absolute;*top: 42px;top: 42px;left: 3px;width: 20px; height:259px; margin-top: -20px;font-size: 60px;font-weight: 100;line-height: 30px;color: #ffffff;text-align: center;opacity: 0.9;filter: alpha(opacity=90); *z-index: 100000;}
 #content-holder .carousel-control.right {left: auto;right: 3px;background-position: -11px center;}
 #content-holder .carousel-control:hover {color: #ffffff;text-decoration: none;opacity: 0.9;filter: alpha(opacity=90);}
 #content-holder .c-radio .c-radio-dest article{width: 299px;}

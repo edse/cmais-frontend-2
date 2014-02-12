@@ -1,43 +1,43 @@
 @font-face {
     font-family: 'asapbold';
-    src: url('/portal/css/fontes/asap/asap-bold-webfont.eot');
-    src: url('/portal/css/fontes/asap/asap-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/asap/asap-bold-webfont.woff') format('woff'),
-         url('/portal/css/fontes/asap/asap-bold-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/asap/asap-bold-webfont.svg#asapbold') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/asap/asap-bold-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/asap/asap-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/asap/asap-bold-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/asap/asap-bold-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/asap/asap-bold-webfont.svg#asapbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'asapbold_italic';
-    src: url('/portal/css/fontes/asap/asap-bolditalic-webfont.eot');
-    src: url('/portal/css/fontes/asap/asap-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/asap/asap-bolditalic-webfont.woff') format('woff'),
-         url('/portal/css/fontes/asap/asap-bolditalic-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/asap/asap-bolditalic-webfont.svg#asapbold_italic') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/asap/asap-bolditalic-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/asap/asap-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/asap/asap-bolditalic-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/asap/asap-bolditalic-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/asap/asap-bolditalic-webfont.svg#asapbold_italic') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'asapitalic';
-    src: url('/portal/css/fontes/asap/asap-italic-webfont.eot');
-    src: url('/portal/css/fontes/asap/asap-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/asap/asap-italic-webfont.woff') format('woff'),
-         url('/portal/css/fontes/asap/asap-italic-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/asap/asap-italic-webfont.svg#asapitalic') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/asap/asap-italic-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/asap/asap-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/asap/asap-italic-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/asap/asap-italic-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/asap/asap-italic-webfont.svg#asapitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'asapregular';
-    src: url('/portal/css/fontes/asap/asap-regular-webfont.eot');
-    src: url('/portal/css/fontes/asap/asap-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/asap/asap-regular-webfont.woff') format('woff'),
-         url('/portal/css/fontes/asap/asap-regular-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/asap/asap-regular-webfont.svg#asapregular') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/asap/asap-regular-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/asap/asap-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/asap/asap-regular-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/asap/asap-regular-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/asap/asap-regular-webfont.svg#asapregular') format('svg');
     font-weight: normal;
     font-style: normal;
 

@@ -149,11 +149,11 @@ body{background:url(../images/bg-tudo3a.jpg) repeat-x !important;}
 /* botoes novos*/
 @font-face {
     font-family: 'GothamMediumRegular';
-    src: url('/portal/css/fontes/gotham/gotham-medium-webfont.eot');
-    src: url('/portal/css/fontes/gotham/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/gotham/gotham-medium-webfont.woff') format('woff'),
-         url('/portal/css/fontes/gotham/gotham-medium-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/gotham/gotham-medium-webfont.svg#GothamMediumRegular') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.svg#GothamMediumRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 

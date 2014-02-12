@@ -2,16 +2,16 @@
 @import url("jquery.jcarousel.css");
 
 h1, h2, h3, h4, h5, h6 { font-weight:normal; }
-body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
+body { background:#0ab015 url(http://cmais.com.br/portal/quintal/images/bg-quintal2.jpg) repeat-x !important; }
 #guia-topo { background:none; }
 .content { width:990px; padding-left:20px; }
 @font-face {
     font-family: 'gotham_mediumregular';
-    src: url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot');
-    src: url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.woff') format('woff'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.svg#gotham_mediumregular') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-medium-webfont.svg#gotham_mediumregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -20,11 +20,11 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 
 @font-face {
     font-family: 'gotham_blackregular';
-    src: url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot');
-    src: url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.woff') format('woff'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.svg#gotham_blackregular') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-medium-bold/gotham-black-webfont.svg#gotham_blackregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -94,41 +94,41 @@ textarea { color:#2B3377 !important;}
 #agenda .paginacao,
 .internas .mais,
 .internas .conteudo form input,
-#horario {background:url(../images/bg-transparente.png) repeat;}
+#horario {background:url(http://cmais.com.br/portal/quintal/images/bg-transparente.png) repeat;}
 
 .internas .assets li,
-#agenda .box-content {background:url(../images/bg-transparente90.png) repeat;}
+#agenda .box-content {background:url(http://cmais.com.br/portal/quintal/images/bg-transparente90.png) repeat;}
 
 #miolo{  margin-top: 0px;}
 .allWrapper{  color: #333;  font-family: Arial, Helvetica, sans-serif;  font-size: 14px;  margin: 0 auto;}
 
-body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
+body { background:#0ab015 url(http://cmais.com.br/portal/quintal/images/bg-quintal2.jpg) repeat-x !important; }
 #guia-topo { background:none; }
 .content { width:990px; padding-left:20px; }
 .conteudo{  position: relative;  width: 970px; clear:both; float: right; min-height: 880px;}
 .conteudoWrapper #back{position: relative; z-index: -1}
 .conteudoWrapper #back .pos{position:absolute;}
-#nuvem1{width:266px; height:212px; top:-198px; left:-300px;background: url(../back-novo/img-bg-nuvem1.png) no-repeat; z-index:0;}
-#nuvem2{width:188px; height:155px; top:-71px; left: -86px;background: url(../back-novo/img-bg-nuvem2.png) no-repeat; z-index:0;}
-#nuvem3{width:260px; height:234px; top: -200px; right: -50px;background: url(../back-novo/img-bg-nuvem1.png) no-repeat; z-index:0;}
-#balao{width:196px; height:348px; top:-200px; left:-250px;background: url(../back-novo/img-bg-balao.png) no-repeat; z-index:0;}
-#bola{width:190px; height:174px;top: 293px;left: -220px;background: url(../back-novo/img-bg-futebol.png) no-repeat; z-index:0;}
-#bau{width:441px; height:407px;top: 478px;left: -320px;background: url(../back-novo/img-bg-bau.png) no-repeat; z-index:0;}
-#peteca{width:410px; height:464px;top: 307px;right: -301px; background: url(../back-novo/img-bg-peteca-bola.png) no-repeat; z-index:0;}
+#nuvem1{width:266px; height:212px; top:-198px; left:-300px;background: url(http://cmais.com.br/portal/quintal/img-bg-nuvem1.png) no-repeat; z-index:0;}
+#nuvem2{width:188px; height:155px; top:-71px; left: -86px;background: url(http://cmais.com.br/portal/quintal/img-bg-nuvem2.png) no-repeat; z-index:0;}
+#nuvem3{width:260px; height:234px; top: -200px; right: -50px;background: url(http://cmais.com.br/portal/quintal/img-bg-nuvem1.png) no-repeat; z-index:0;}
+#balao{width:196px; height:348px; top:-200px; left:-250px;background: url(http://cmais.com.br/portal/quintal/img-bg-balao.png) no-repeat; z-index:0;}
+#bola{width:190px; height:174px;top: 293px;left: -220px;background: url(http://cmais.com.br/portal/quintal/img-bg-futebol.png) no-repeat; z-index:0;}
+#bau{width:441px; height:407px;top: 478px;left: -320px;background: url(http://cmais.com.br/portal/quintal/img-bg-bau.png) no-repeat; z-index:0;}
+#peteca{width:410px; height:464px;top: 307px;right: -301px; background: url(http://cmais.com.br/portal/quintal/img-bg-peteca-bola.png) no-repeat; z-index:0;}
 
 .contentWrapper{  padding-bottom: 0 !important;  width: 100%; margin: auto;  margin-top:3px;  overflow: hidden; }
-.contentWrapper .cerca{  background: url(../images/cerca.png) repeat-x;  height: 240px;}
+.contentWrapper .cerca{  background: url(http://cmais.com.br/portal/quintal/images/cerca.png) repeat-x;  height: 240px;}
 .content{  width: 970px;  }
 .conteudoWrapper{  width: 970px;  position:relative;  z-index: 0;}
 
 /*cabecalho*/
 .cabecalho{  float: left;  text-align: left;  width: 970px;  position: relative;  margin: 15px 0 0 0;  z-index: 10; float: right;}
-.cabecalho .pontilhado{  background: url(../images/bg-pontilhado.png) no-repeat;  display: block;  width: 697px;  height: 54px;}
+.cabecalho .pontilhado{  background: url(http://cmais.com.br/portal/quintal/images/bg-pontilhado.png) no-repeat;  display: block;  width: 697px;  height: 54px;}
 .cabecalho h1 { width:208px; float:left; }  
-.cabecalho h1 a{  background: url(../images/logo-quintal.png) no-repeat;  display: block;  float: left;  margin: 7px 10px 0 0;  overflow: hidden;  text-indent: -9999px;  width: 208px;  height: 207px;}
+.cabecalho h1 a{  background: url(http://cmais.com.br/portal/quintal/images/logo-quintal.png) no-repeat;  display: block;  float: left;  margin: 7px 10px 0 0;  overflow: hidden;  text-indent: -9999px;  width: 208px;  height: 207px;}
 .cabecalho ul { float:right; margin:20px 0; }
-.cabecalho ul li{  float: left;  width: 143px; height:102px; background: url(../images/btn.png) no-repeat; margin-left:9px;}
-.cabecalho ul li:hover {  background: url(../images/btn-hover.png) no-repeat; }
+.cabecalho ul li{  float: left;  width: 143px; height:102px; background: url(http://cmais.com.br/portal/quintal/images/btn.png) no-repeat; margin-left:9px;}
+.cabecalho ul li:hover {  background: url(http://cmais.com.br/portal/quintal/images/btn-hover.png) no-repeat; }
 .cabecalho li a { font-size: 22px;  text-transform: uppercase; width:100%; height:40px; line-height:40px; text-align:center; display: block;}
 .cabecalho li span { display:block; margin:10px auto 0; }
 .cabecalho li a:hover { text-decoration:none; }
@@ -138,7 +138,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 .sprite-ico-diversao, 
 .sprite-ico-jogos, 
 .sprite-ico-musicas, 
-.sprite-ico-videos{ background:url(../images/sprite-menu.png) no-repeat; } 
+.sprite-ico-videos{ background:url(http://cmais.com.br/portal/quintal/images/sprite-menu.png) no-repeat; } 
 
 .sprite-ico-agenda{ background-position: 0 0; width: 37px; height: 41px; } 
 .sprite-ico-aturma{ background-position: 0 -91px; width: 49px; height: 50px; } 
@@ -151,7 +151,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 .sprite-ico-cidade,
 .sprite-ico-email,
 .sprite-ico-nome,
-.sprite-ico-responsavel{  background:url(../images/sprite-ico-form.png) no-repeat;} 
+.sprite-ico-responsavel{  background:url(http://cmais.com.br/portal/quintal/images/sprite-ico-form.png) no-repeat;} 
 
 .sprite-ico-aniversario{ background-position: 0 0; width: 20px; height: 22px; } 
 .sprite-ico-cidade{ background-position: 0 -72px; width: 12px; height: 19px; } 
@@ -167,15 +167,15 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #horario a img { margin:4px 10px; }
 #horario p{font-size:12px; line-height: 15px; margin: 0 0 10px 0; font-weight:normal;}
 #horario span{font-size: 14px; color:#2b3377; display:block;}
-#horario .divisa { background:url(../images/pattern-divisa.png) ; width: 2px; height:43px; position:absolute; top:14px; right:0; }  
+#horario .divisa { background:url(http://cmais.com.br/portal/quintal/images/pattern-divisa.png) ; width: 2px; height:43px; position:absolute; top:14px; right:0; }  
 #horario .cultura { width:280px; }
 #horario .cultura img{margin-top:13px;}
 #horario .rtb { width:220px; height:59px; padding-top:10px}
 #horario .agenda { width:129px; height: 59px;padding: 10px 10px 0 10px;}
 #horario .agenda h2 { height:43px; line-height: 43px; }
-#horario .dvd{display:block; background:#fffd00 url(../images/sprite-dvd.png) no-repeat center 6px; height:69px; width:100px;}
+#horario .dvd{display:block; background:#fffd00 url(http://cmais.com.br/portal/quintal/images/sprite-dvd.png) no-repeat center 6px; height:69px; width:100px;}
 #horario .dvd h2{text-indent:-99999; font-size:0px;}
-#horario .dvd:hover{background:#cb35a4 url(../images/sprite-dvd.png) no-repeat center -57px; }
+#horario .dvd:hover{background:#cb35a4 url(http://cmais.com.br/portal/quintal/images/sprite-dvd.png) no-repeat center -57px; }
 #horario .sprite-ico-agenda { float:left; margin: 1px 10px }
 #horario h2 {color:#2b3377;  text-transform:uppercase; font-size:14px; line-height: 24px; margin-top:4px;}
 #horario a:hover { background:#fffd00}
@@ -195,7 +195,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 .menuRodape ul li{  float: left;  margin: 0 12px 0 0; position:relative; padding-right:12px;}
 .menuRodape li a{  font-size: 20px; text-transform: uppercase; color:#2b3377;}
 .menuRodape li a:hover { text-decoration:none; }
-.menuRodape ul span { background: url(../images/pattern-divisa-rodape.png) repeat-y; width:2px; display:block; height: 43px; position:absolute; top:1px; right:0;  }
+.menuRodape ul span { background: url(http://cmais.com.br/portal/quintal/images/pattern-divisa-rodape.png) repeat-y; width:2px; display:block; height: 43px; position:absolute; top:1px; right:0;  }
 .menuRodape li a:hover { text-decoration:underline; }
 .menuRodape li.last { margin:0; padding:0; }
 /*internas*/
@@ -211,7 +211,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 .sprite-seta-direita, 
 .sprite-seta-esquerda, 
 .sprite-seta-pag-dir, 
-.sprite-seta-pag-esq{ background-image: url(../images/sprite-internas.png) !important; background-repeat: no-repeat; } 
+.sprite-seta-pag-esq{ background-image: url(http://cmais.com.br/portal/quintal/images/sprite-internas.png) !important; background-repeat: no-repeat; } 
 
 .sprite-balao-categoria{ background-position: 0 0; width: 181px; height: 63px; } 
 .sprite-detalhe{ background-position: 0 -113px; width: 23px; height: 13px; } 
@@ -228,9 +228,9 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 .sprite-seta-pag-esq{ background-position: 0 -1184px; width: 20px; height: 40px; } 
 
 .internas .sidebar { width:180px; float:left; }
-.internas .sidebar li { background:url(../images/bg-categoria.png) no-repeat; width: 180px; height: 49px; margin-top:10px; }
+.internas .sidebar li { background:url(http://cmais.com.br/portal/quintal/images/bg-categoria.png) no-repeat; width: 180px; height: 49px; margin-top:10px; }
 .internas .sidebar li.ativo,
-.internas .sidebar li:hover { background-image:url(../images/bg-categoria-hover.png); text-decoration:none; }
+.internas .sidebar li:hover { background-image:url(http://cmais.com.br/portal/quintal/images/bg-categoria-hover.png); text-decoration:none; }
 .internas .sidebar li.ativo a,
 .internas .sidebar li:hover a { text-decoration:none; }
 .internas .sidebar li,
@@ -261,7 +261,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 .internas .assets li a p { height:64px; overflow:hidden; }
 .internas .assets li img { width: 100%; height:145px; }
 .internas .asset .btn,
-.internas .assets li .btn { background:url(../images/bg-amarelo.png) repeat; height:45px; line-height: 45px; text-transform:uppercase; width:216px; margin:10px auto; text-align:center; font-size: 20px;  }
+.internas .assets li .btn { background:url(http://cmais.com.br/portal/quintal/images/bg-amarelo.png) repeat; height:45px; line-height: 45px; text-transform:uppercase; width:216px; margin:10px auto; text-align:center; font-size: 20px;  }
 .internas .assets li a:hover { text-decoration:none; }
 .internas .assets li a:hover p,
 .internas .assets li a:hover h3 { text-decoration:underline; }
@@ -274,13 +274,13 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 .internas .asset p { margin-bottom:20px; }
 .internas .asset .btn { display: block; float:right; margin-left:20px; position:relative; }
 .internas .asset .btn span { display: block; position:absolute; right:-8px; top:0;}
-.internas .mais h4 { background:url(../images/bg-mais.png) repeat; height:56px; line-height: 56px; color:#2949c6 !important; font-size: 14px; text-transform:uppercase; text-align:center; position:relative; }
+.internas .mais h4 { background:url(http://cmais.com.br/portal/quintal/images/bg-mais.png) repeat; height:56px; line-height: 56px; color:#2949c6 !important; font-size: 14px; text-transform:uppercase; text-align:center; position:relative; }
 .internas .mais h4 .sprite-detalhe { position:absolute; bottom:-8px; left:49%; display:block;  }
 .internas .mais .carrossel { margin-top:30px; }
 .internas .mais { float:left; width:970px; margin-top:20px;}
 .internas .mais .jcarousel-clip { height:350px; width:780px; margin:0 auto;   }
 .internas .mais .jcarousel-next,
-.internas .mais .jcarousel-prev { background-image: url(../images/sprite-internas.png) !important; background-repeat: no-repeat; position:absolute; top:40%}
+.internas .mais .jcarousel-prev { background-image: url(http://cmais.com.br/portal/quintal/images/sprite-internas.png) !important; background-repeat: no-repeat; position:absolute; top:40%}
 /*.internas .mais .jcarousel-next {background-position: 0 -964px; width: 40px; height: 80px; left:20px;  }*/
 /*.internas .mais .jcarousel-prev { background-position: 0 -834px; width: 40px; height: 80px; right:20px; }*/
 .internas .mais .jcarousel-next {background-position: 0 -834px;width: 40px;height: 80px;right: 20px; cursor: pointer;}
@@ -293,7 +293,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 
 /*turma*/
 #turma .jcarousel-next,
-#turma .jcarousel-prev {  background-image: url(../images/sprite-internas.png) !important; background-repeat: no-repeat; position:absolute; top:0;   }
+#turma .jcarousel-prev {  background-image: url(http://cmais.com.br/portal/quintal/images/sprite-internas.png) !important; background-repeat: no-repeat; position:absolute; top:0;   }
 /* #turma .jcarousel-next { background-position: 0 -270px; width: 22px; height: 44px; left:0; }
 #turma .jcarousel-prev { background-position: 0 -176px; width: 22px; height: 44px; right:0;  } */
 #turma .jcarousel-next { background-position: 0 -176px; width: 22px; height: 44px; right:0; }
@@ -313,7 +313,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #agenda .menu-quintal h2 { width:62%; }
 #agenda .box-content { padding:20px 10px 10px; }
 #agenda .box-content small {clear:both; display: block; }
-#agenda .box-content .divisa { background: url(../images/pattern-divisa-agenda.png) repeat-x; width: 100%; height:1px; margin:10px 0 15px 0; clear:both;}
+#agenda .box-content .divisa { background: url(http://cmais.com.br/portal/quintal/images/pattern-divisa-agenda.png) repeat-x; width: 100%; height:1px; margin:10px 0 15px 0; clear:both;}
 #agenda .box-content h2 { font-size: 20px; width:100%; }
 #agenda .box-content img { width: 100%; }
 .paginacao,
@@ -341,7 +341,7 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 .paginacao li span,
 #agenda .paginacao li span { margin:0 0 0 5px; display:block; float:left; height:45px; line-height:45px; }
 
-#agenda .leiamais { margin-bottom:10px; width:300px; height:66px; background:url(../images/leiamais.png) no-repeat;  color:#2949c6 !important; font-size: 14px; text-transform:uppercase; text-align:center; line-height: 52px; }
+#agenda .leiamais { margin-bottom:10px; width:300px; height:66px; background:url(http://cmais.com.br/portal/quintal/images/leiamais.png) no-repeat;  color:#2949c6 !important; font-size: 14px; text-transform:uppercase; text-align:center; line-height: 52px; }
 #agenda .col-dir .box-content h2 { text-align:center; width: 100%; margin-bottom:10px; } 
 #agenda .col-dir .box-content { padding-top:10px; margin-bottom:20px; }
 #agenda .col-dir .box-content p { max-height:84px; overflow:hidden; clear:both; margin-bottom:20px; }
@@ -352,14 +352,14 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #agenda .col-esq .box-content a {color:#4457FF!important; text-decoration:underline;}
 #agenda .menu-quintal small {clear:both; display: block; font-size: 14px; color:#2B3377; }
 #agenda .col-dir .box-content{font-weight:bold!important;}
-#musicas { background:url(../images/bg-musica.png) no-repeat; width: 960px; height:558px; padding:0; }
+#musicas { background:url(http://cmais.com.br/portal/quintal/images/bg-musica.png) no-repeat; width: 960px; height:558px; padding:0; }
 #musicas #container { margin-right:25px; }
 #musicas div.jp-playlist ul { height:300px; overflow-x: hidden; overflow-y:scroll; }
 #musicas .jp-audio { float:right; }
 #musicas div.jp-playlist, 
 #musicas div.jp-interface { border:none; }
 #musicas div.jp-playlist, 
-#musicas div.jp-interface {background:url(../images/bg-amarelo50.png) repeat; }
+#musicas div.jp-interface {background:url(http://cmais.com.br/portal/quintal/images/bg-amarelo50.png) repeat; }
 
 #musicas a.jp-play,
 #musicas a.jp-play:hover,
@@ -389,8 +389,8 @@ body { background:#0ab015 url(../images/bg-quintal2.jpg) repeat-x !important; }
 #musicas .jp-audio { overflow:hidden; }
 
 /* home */
-#destaque { width:960px; height:330px; background:url(../images/bg-destaque.png) no-repeat; position:relative; }
-#destaque .minhoquias { width:290px; height:400px; background:url(../images/minhoquias.png) no-repeat; position:absolute; top:-75px; left:-35px; }
+#destaque { width:960px; height:330px; background:url(http://cmais.com.br/portal/quintal/images/bg-destaque.png) no-repeat; position:relative; }
+#destaque .minhoquias { width:290px; height:400px; background:url(http://cmais.com.br/portal/quintal/images/minhoquias.png) no-repeat; position:absolute; top:-75px; left:-35px; }
 #destaque .col-esq { width: 306px; margin:35px 10px 0 0; text-align:center;  }
 #destaque .col-dir { width: 450px; margin:65px 10px 0 0; background:#e4f527; padding:10px; }
 #destaque .col-esq,

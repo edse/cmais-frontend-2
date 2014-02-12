@@ -2,11 +2,11 @@ body { background:#000; font-family:Arial, Helvetica, sans-serif; }
 
 @font-face {
     font-family: 'source_sans_proregular';
-    src: url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.eot');
-    src: url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.woff') format('woff'),
-         url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/sourcesans/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
 

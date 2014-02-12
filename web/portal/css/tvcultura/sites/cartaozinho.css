@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Conv_Futura_Medium_Condensed_BT';
-  src: url('/portal/css/fontes/Futura_Medium_Condensed_BT/fonts/Futura_Medium_Condensed_BT.eot');
-  src: local('☺'), url('/portal/css/fontes/Futura_Medium_Condensed_BT/fonts/Futura_Medium_Condensed_BT.woff') format('woff'), url('/portal/css/fontes/Futura_Medium_Condensed_BT/fonts/Futura_Medium_Condensed_BT.ttf') format('truetype'), url('/portal/css/fontes/Futura_Medium_Condensed_BT/fonts/Futura_Medium_Condensed_BT.svg') format('svg');
+  src: url('http://cmais.com.br/portal/css/fontes/Futura_Medium_Condensed_BT/fonts/Futura_Medium_Condensed_BT.eot');
+  src: local('☺'), url('http://cmais.com.br/portal/css/fontes/Futura_Medium_Condensed_BT/fonts/Futura_Medium_Condensed_BT.woff') format('woff'), url('http://cmais.com.br/portal/css/fontes/Futura_Medium_Condensed_BT/fonts/Futura_Medium_Condensed_BT.ttf') format('truetype'), url('http://cmais.com.br/portal/css/fontes/Futura_Medium_Condensed_BT/fonts/Futura_Medium_Condensed_BT.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }

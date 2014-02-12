@@ -660,7 +660,7 @@ footer .relacionados li a:hover{-moz-opacity: 0.50;-khtml-opacity: 0.50;opacity:
 .box-pais{padding: 30px 0px;}
 .box-pais.span12{margin-left:8px;padding-bottom:0px;}
 .box-pais .span4{margin:5px;}
-.box-pais .dica-pai{background: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-box.png') repeat; padding: 10px;max-height: 360px;}
+.box-pais .dica-pai{background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-box.png') repeat; padding: 10px;max-height: 360px;}
 .box-pais .dica-pai .btn{font-family:'din-blackregular', Arial, Helvetica, sans-serif;clear: both;width: 95%;padding: 5px 0;font-size: 18px;text-transform: uppercase;color: #737373;position: absolute;bottom: 10px;left: 7;}
 .box-pais h2{font-size: 18px;text-transform: uppercase;line-height: 32px;color: #434343; white-space: nowrap; overflow: hidden; text-overflow:ellipsis;}
 .box-pais .dica-pai p{max-height:217px;}
