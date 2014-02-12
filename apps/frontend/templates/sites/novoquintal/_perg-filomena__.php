@@ -12,7 +12,7 @@
             $.ajax({
               type: "POST",
               dataType: "text",
-              url:"<?php echo url_for('homepage')?>ajax/mensagem",
+              url:"http://app.cmais.com.br/ajax/mensagem",
               data: $("#form-contato").serialize(),
               beforeSend: function(){
                 $('input#enviar').hide();

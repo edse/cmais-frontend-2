@@ -2,7 +2,7 @@
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
   <channel>
     <title><?php echo $site->getTitle() ?> - Rádio Cultura FM - A frequência dos clássicos</title> 
-    <link>http://cmais.com.br/ajax/podcasts?slug=<?php echo $site->getSlug()?></link>
+    <link>http://app.cmais.com.br/ajax/podcasts?slug=<?php echo $site->getSlug()?></link>
     <description><![CDATA[<?php echo ($site->getDescription() == "" ? $site->getTitle() : $site->getDescription()) ?>]]></description>
     <generator>Rádio Cultura FM</generator>
     <language>pt-br</language>
@@ -24,7 +24,7 @@
     <itunes:summary><![CDATA[<?php echo ($site->getDescription() == "" ? $site->getTitle() : $site->getDescription()) ?>]]></itunes:summary>
     <itunes:keywords><![CDATA[<?php echo ($site->getDescription() == "" ? $site->getTitle() : $site->getDescription()) ?>]]> cultura FM radio</itunes:keywords>
     <itunes:block>No</itunes:block>
-    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://cmais.com.br/ajax/podcasts?slug=<?php echo $site->getSlug()?>" />
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://app.cmais.com.br/ajax/podcasts?slug=<?php echo $site->getSlug()?>" />
     <media:copyright>Rádio Cultura FM</media:copyright>
     <media:thumbnail url="http://culturafm.cmais.com.br/portal/images/capaPrograma/culturafm/logo.png" />
     <media:keywords>cultura FM radio</media:keywords>
@@ -45,7 +45,7 @@
     <item>
       <title><![CDATA[<?php echo $asset->getTitle()?>]]></title>
       <description><![CDATA[<?php echo ($asset->getDescription() == "" ? $asset->getTitle() : $asset->getDescription()) ?>]]></description>
-      <link>http://cmais.com.br/ajax/podcasts?slug=<?php echo $site->getSlug()?></link>
+      <link>http://app.cmais.com.br/ajax/podcasts?slug=<?php echo $site->getSlug()?></link>
       <enclosure url="http://midia.cmais.com.br/assets/audio/default/<?php echo $asset->AssetAudio->getFile()?>.mp3" length="<?php echo $sizeFileFormated?>" type="audio/mpeg" />
       <author><![CDATA[<?php echo ($asset->AssetAudio->getAuthor() == "" ? "Rádio Cultura FM" : $asset->AssetAudio->getAuthor());?>]]></author>
       <guid isPermaLink="false">http://culturafm.cmais.com.br/<?php echo $site->getSlug()?>/<?php echo $asset->getSlug()?></guid>
