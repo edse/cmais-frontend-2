@@ -219,8 +219,9 @@
         
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
+            
             $.ajax({
-              url: "http://app.cmais.com.br/index.php/captacao/contact-us",
+              url: "http://app.cmais.com.br/index.php/captacao/contact-us?channel_id=6&no-cache="+time,
               dataType: "jsonp",
               data: $("#form-contato").serialize(),
               beforeSend: function(){
