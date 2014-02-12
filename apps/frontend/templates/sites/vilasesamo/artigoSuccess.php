@@ -264,7 +264,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <?php endforeach; ?>
             </div>
             <div class="bottom-box-sobre">
-              <img src="/portal/images/capaPrograma/vilasesamo2/box-bottom-sobre.png" alt=""/>
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/box-bottom-sobre.png" alt=""/>
             </div>
           </div>  
           <?php endif; ?>

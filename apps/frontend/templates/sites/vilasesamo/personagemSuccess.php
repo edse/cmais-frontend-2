@@ -103,7 +103,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       
       <!--quadro com imagem do personagem -->
       <div class="span4 pull-left" tabindex="0" aria-label="Imagem ilustrativa da personagem <?php echo $section->getTitle() ?>"> <!--Acessibilidade: descreve a imagem do nome do personagem-->
-        <img src="/portal/images/capaPrograma/vilasesamo2/personagens/vs_img_personagem-<?php echo $section->getSlug() ?>-ilustra.png" alt="<?php echo $section->getTitle() ?>"/>
+        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_img_personagem-<?php echo $section->getSlug() ?>-ilustra.png" alt="<?php echo $section->getTitle() ?>"/>
       </div>
       <!--/quadro com imagem do personagem -->
       

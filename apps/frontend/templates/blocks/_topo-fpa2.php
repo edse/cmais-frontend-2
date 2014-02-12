@@ -38,7 +38,7 @@
 
     <!--LOGO CULTURA-->
     <a href="/fpa" title="Fundação Padre Anchieta" class="pull-left">
-      <img src="/portal/images/capaPrograma/fpa/logo-fpa.png" class="logo-fpa" alt="Fundação Padre Anchieta" />
+      <img src="http://cmais.com.br/portal/images/capaPrograma/fpa/logo-fpa.png" class="logo-fpa" alt="Fundação Padre Anchieta" />
     </a>
     <!--/LOGO CULTURA-->
 

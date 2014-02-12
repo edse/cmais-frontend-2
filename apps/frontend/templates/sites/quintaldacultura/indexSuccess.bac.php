@@ -149,7 +149,7 @@
                   <textarea id="termo" name="termo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibul um at sapien orci, at placerat turpis. Phasellus ligula nulla, rhoncus nec adipiscing sit amet, congue eget nisi. Suspendisse semper leo ac nunc consectetur eu adipiscing dui cras amet.</textarea>
                   -->
                   <button class="enviar" name="enviar" id="enviar">Enviar</button>
-                  <img src="/portal/images/ajax-loader.gif" alt="enviando..." style="display:none; position: absolute;bottom: 12px;right: 40px;" width="16px" height="16px" id="ajax-loader" />
+                  <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none; position: absolute;bottom: 12px;right: 40px;" width="16px" height="16px" id="ajax-loader" />
                   <div class="msgAcerto">acerto</div>
                   <div class="msgErro">erro</div>
                 </form>
