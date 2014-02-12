@@ -164,6 +164,11 @@
                     <p class="txt-10"><span id="textCounter">1000</span> remaining characters</p>                                       
                   </div>
                   <div class="linha t3 codigo" id="captchaimage">
+                    <input class="enviar" type="submit" name="enviar" id="enviar" value="send message" style="cursor:pointer" />
+                    <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                  </div>
+                  <!--
+                  <div class="linha t3 codigo" id="captchaimage">
                     <label for="captcha">confirmation</label>
                     <br />
                     <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Click to generate other code">
@@ -174,6 +179,7 @@
                     <input class="enviar" type="submit" name="enviar" id="enviar" value="send message" style="cursor:pointer" />
                     <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                   </div>
+                  -->
                 </form>
               </div>
             </div>
@@ -214,6 +220,7 @@
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
             $.ajax({
+              url: "http://app.cmais.com.br/index.php/captacao/contact-us",
               type: "POST",
               dataType: "text",
               data: $("#form-contato").serialize(),
@@ -260,10 +267,6 @@
             },
             mensagem:{
               required: true
-            },
-            captcha: {
-              required: true,
-              remote: "http://app.cmais.com.br/portal/js/validate/demo/captcha/process.php"
             }
           },
           messages:{
@@ -272,8 +275,7 @@
             cidade: "Este campo &eacute; Obrigat&oacute;rio.",
             estado: "Este campo &eacute; Obrigat&oacute;rio.",
             assunto: "Este campo &eacute; Obrigat&oacute;rio.",
-            mensagem: "Este campo &eacute; Obrigat&oacute;rio.",
-            captcha: "Digite corretamente o código que está ao lado."
+            mensagem: "Este campo &eacute; Obrigat&oacute;rio."
           },
           success: function(label){
             // set &nbsp; as text for IE
