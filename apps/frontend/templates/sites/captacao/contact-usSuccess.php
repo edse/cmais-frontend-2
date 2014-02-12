@@ -163,6 +163,7 @@
                     <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
                     <p class="txt-10"><span id="textCounter">1000</span> remaining characters</p>                                       
                   </div>
+                  <!--
                   <div class="linha t3 codigo" id="captchaimage">
                     <label for="captcha">confirmation</label>
                     <br />
@@ -174,6 +175,7 @@
                     <input class="enviar" type="submit" name="enviar" id="enviar" value="send message" style="cursor:pointer" />
                     <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                   </div>
+                  -->
                 </form>
               </div>
             </div>
@@ -260,10 +262,6 @@
             },
             mensagem:{
               required: true
-            },
-            captcha: {
-              required: true,
-              remote: "http://app.cmais.com.br/portal/js/validate/demo/captcha/process.php"
             }
           },
           messages:{
@@ -272,8 +270,7 @@
             cidade: "Este campo &eacute; Obrigat&oacute;rio.",
             estado: "Este campo &eacute; Obrigat&oacute;rio.",
             assunto: "Este campo &eacute; Obrigat&oacute;rio.",
-            mensagem: "Este campo &eacute; Obrigat&oacute;rio.",
-            captcha: "Digite corretamente o código que está ao lado."
+            mensagem: "Este campo &eacute; Obrigat&oacute;rio."
           },
           success: function(label){
             // set &nbsp; as text for IE
