@@ -47,24 +47,25 @@
                 
 		                <?php if(count($relacionados) > 0): ?>
 			                    <?php foreach($relacionados as $k=>$d): ?>
-				                 	<?php if($k == 0): ?>
-			                  			<iframe title="<?php echo $d->getTitle()?>" width="640" height="390" src="http://www.youtube.com/embed/<?php echo $d->AssetVideo->getYoutubeId()?>?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
-																</div>
-																	<script>
-																		function changeVideo(id){
-																		  $('#player').html('<iframe width="640" height="390" src="http://www.youtube.com/embed/'+id+'?wmode=transparent" frameborder="0" allowfullscreen></iframe>');
-																		}
-																	</script>
-																	<div class="box-thumbs">
-																		<h4>Assista todos os vídeos</h4>
-																		<ul class="box-playlist grid2 carrossel">			                  			
-			                  	<?php else:?>
-																	<li>
-																		<a href="javascript:changeVideo('<?php echo $d->AssetVideo->getYoutubeId()?>')" class="img">
-																			<img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId()?>/1.jpg" alt="<?php echo $d->getTitle()?>">
-																		</a>
-																	</li>				                  	
-			                    
+					                 	<?php if($k == 0 ): ?>
+				                  			<iframe title="<?php echo $d->getTitle()?>" width="640" height="390" src="http://www.youtube.com/embed/<?php echo $d->AssetVideo->getYoutubeId()?>?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
+																	</div>
+																		<script>
+																			function changeVideo(id){
+																			  $('#player').html('<iframe width="640" height="390" src="http://www.youtube.com/embed/'+id+'?wmode=transparent" frameborder="0" allowfullscreen></iframe>');
+																			}
+																		</script>
+																		<div class="box-thumbs">
+																			<h4>Assista todos os vídeos</h4>
+																			<ul class="box-playlist grid2 carrossel">			                  			
+				                  	<?php else:?>
+				                  		<?php if($d->getId() != 164212):?>
+																		<li>
+																			<a href="javascript:changeVideo('<?php echo $d->AssetVideo->getYoutubeId()?>')" class="img">
+																				<img src="http://img.youtube.com/vi/<?php echo $d->AssetVideo->getYoutubeId()?>/1.jpg" alt="<?php echo $d->getTitle()?>">
+																			</a>
+																		</li>				                  	
+				                    <?php endif; ?>
 				              	  <?php endif; ?>     
 		                    <?php endforeach; ?>
 		                  </ul>

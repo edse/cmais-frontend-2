@@ -93,7 +93,7 @@
                     </div>
                     <hr />
                   </div>
-                <form id="form-contato" method="post" action="">
+                <form id="form-contato" method="post" action="http://app.cmais.com.br/index.php/captacao/contact-us">
                   <div class="linha t1">
                     <label>name</label>
                     <input type="text" name="nome" id="nome" />
@@ -263,7 +263,7 @@
             },
             captcha: {
               required: true,
-              remote: "/portal/js/validate/demo/captcha/process.php"
+              remote: "http://app.cmais.com.br/portal/js/validate/demo/captcha/process.php"
             }
           },
           messages:{
