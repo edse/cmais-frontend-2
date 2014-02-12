@@ -2155,7 +2155,7 @@ $this->page = 1;
         }
       }
     } 
-
+  
   }
 
   public function executeArtista(sfWebRequest $request){
