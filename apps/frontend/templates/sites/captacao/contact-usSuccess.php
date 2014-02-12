@@ -219,6 +219,10 @@
         
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
+            $("#form-contato").submit();
+          },
+          /*
+          submitHandler: function(form){
             
             $.ajax({
               url: "http://app.cmais.com.br/index.php/captacao/contact-us?channel_id=6&no-cache="+time,
@@ -245,6 +249,7 @@
               }
             });         
           },
+          */
           rules:{
             nome:{
               required: true,
