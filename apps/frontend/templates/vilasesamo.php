@@ -301,15 +301,15 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <!--logos-->
           <nav class="logos">
               <a href="http://cmais.com.br/vilasesamo" title="Site Vila Sésamo" target="_self">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/vila-sesamo-mobile.jpg">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo/vila-sesamo-mobile.jpg">
               </a>
            
               <a class="habitos" href="http://cmais.com.br/vilasesamo/categorias/habitos-saudaveis" title="Hábitos Saudáveis" target="_self">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/habitos-saudaveis-mobile.jpg">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo/habitos-saudaveis-mobile.jpg">
               </a>
           
               <a class="habitos" href="http://cmais.com.br/vilasesamo/categorias/incluir-brincando" title="Incluir Brincando" target="_self">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/incluir-brincando-mobile.jpg">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo/incluir-brincando-mobile.jpg">
               </a>
           
             <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt="" />
@@ -385,17 +385,17 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <ul class="logos">
             <li class="col-esq">
               <a href="http://cmais.com.br/vilasesamo" title="Site Vila Sésamo" target="_self">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/vila-sesamo-mobile.jpg">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo/vila-sesamo-mobile.jpg">
               </a>
             </li>
             <li class="col-central habitos">
               <a href="http://cmais.com.br/vilasesamo/categorias/habitos-saudaveis" title="Hábitos Saudáveis" target="_self">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/habitos-saudaveis-mobile.jpg">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo/habitos-saudaveis-mobile.jpg">
               </a>
             </li>
             <li class="col-dir incluir">
               <a href="http://cmais.com.br/vilasesamo/categorias/incluir-brincando" title="Incluir Brincando" target="_self">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vila-sesamo/incluir-brincando-mobile.jpg">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo/incluir-brincando-mobile.jpg">
               </a>
             </li>
             <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt="" />
