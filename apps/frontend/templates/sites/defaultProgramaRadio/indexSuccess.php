@@ -246,7 +246,7 @@
                               $(this).jPlayer("pauseOthers");
                             },
                             solution:"flash, html",
-                            swfPath: "/js/audioplayer",
+                            swfPath: "http://cmais.com.br/js/audioplayer",
                             supplied: "mp3"
                           });
                         });

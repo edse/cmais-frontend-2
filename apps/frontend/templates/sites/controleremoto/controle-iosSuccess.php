@@ -67,7 +67,7 @@
                           mp3 : "http://midiaserver.tvcultura.com.br:8001/;stream/1"
                         }).jPlayer("pause");
                       },
-                      //swfPath : "/js/audioplayer",
+                      //swfPath : "http://cmais.com.br/js/audioplayer",
                       volume : 0.7,
                       supplied : "mp3",
                       solution : "html"
