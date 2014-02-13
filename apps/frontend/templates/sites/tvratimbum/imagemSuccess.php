@@ -34,7 +34,7 @@
 
   //galleria
   $(function(){
-    Galleria.loadTheme('/portal/tvratimbum/js/galleria/galleria.classic.min.js');
+    Galleria.loadTheme('http://cmais.com.br/portal/tvratimbum/js/galleria/galleria.classic.min.js');
     $('#galleria').galleria();
   });
 </script>
