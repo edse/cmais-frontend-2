@@ -29,7 +29,7 @@
 			        <article>
 			          
 			          <h2><?php echo $d->getTitle()?></h2>
-			          <a href="<?php echo $d->retriveUrl()?>" title="<?php echo $d->getTitle()?>">
+			          <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>" title="<?php echo $d->getTitle()?>">
 			            <p><?php echo $d->getDescription()?></p>  
 			          </a>
 			          <div class="linha-hr"></div>     
@@ -62,7 +62,7 @@
 		?>        	
           <li<?php if($agora==1) echo ' style="font-weight:bold!important;"'?>>
             <span><?php echo format_datetime($d->getDateStart(), "HH:mm") ?></span>
-            <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->retriveTitle() ?>">
+            <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>" title="<?php echo $d->retriveTitle() ?>">
               <span><?php echo $d->retriveTitle() ?></span>
             </a>
           </li>
@@ -136,7 +136,7 @@
 				      <!--div class="<?php if($k == 0): ?>active<?php endif; ?> item"-->
 				      	
 				      	<h2><?php echo $d->getTitle() ?></h2>
-				        <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+				        <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>" title="<?php echo $d->getTitle() ?>">
 				          <img width="424" src="<?php echo $d->retriveImageUrlByImageUsage("image-4-b") ?>" alt="<?php echo $d->getTitle() ?>">
 				          <p> <?php echo $d->getDescription() ?></p>
 				        </a>
@@ -156,7 +156,7 @@
 		        <!--destaque small-->
 		        <div class="destaque-small <?php if($k == 1 || $k == 3) echo "marginLeft10"?>">
 		          <h2><?php echo $d->getTitle() ?></h2>
-		          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+		          <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>" title="<?php echo $d->getTitle() ?>">
 		            <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>">
 		            <p> <?php echo $d->getDescription() ?></p>
 		          </a>
@@ -176,7 +176,7 @@
 		        <!--destaque small-->
 		        <div class="destaque-small compositor">
 		         <h2><?php echo $d->getTitle() ?><i class="seta2"></i></h2>
-		          <a href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
+		          <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>" title="<?php echo $d->getTitle() ?>">
 		            <img src="<?php echo $d->retriveImageUrlByImageUsage("image-2-b") ?>" alt="<?php echo $d->getTitle() ?>">
 		            <p><?php echo $d->getDescription() ?> </p>
 		          </a>
@@ -249,7 +249,7 @@
 					
 					$bloco[$letra][$k] =  '
 						<li>
-							<a href="'.$d->retriveUrl().'" title="'.$d->getTitle().'">
+							<a href="'.str_replace("/home/","/",$d->retriveUrl()).'" title="'.$d->getTitle().'">
 								<img src="http://midia.cmais.com.br/displays/'.$d->getImage().'" alt="'.$d->getTitle().'" width="50px" height="50px"/>
 								<p>';
 								  	if($d->getDescription() != ""){ 
