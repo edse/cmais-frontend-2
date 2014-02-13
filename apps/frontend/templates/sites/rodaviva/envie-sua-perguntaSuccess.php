@@ -100,7 +100,7 @@
                     <hr />
                   </div>
           				
-          				<form id="form-contato" method="post" action="">
+          				<form id="form-contato" method="post" action="http://app.cmais.com.br/index.php/tvcultura/rodaviva/fale-conosco">
           					<label class="nome">Nome<input type="text" name="nome" id="nome" /></label>
           					<label class="idade">Idade<input type="text" maxlength="2" name="idade" id="idade" /></label>
           					<label class="email">E-mail<input type="text" name="email" id="email" /></label>
@@ -142,7 +142,7 @@
           						<textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
           						<p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
           					</div>
-                            <div class="linha t3 codigo" id="captchaimage">
+                            <!--<div class="linha t3 codigo" id="captchaimage">
                             	<label for="captcha">Confirmação</label>
                             	<br />
 								<a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
@@ -150,7 +150,7 @@
                       			</a>
                       			<label class="msg" for="captcha">Digite no campo abaixo os caracteres que você vê na imagem:</label>
  					  			<input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
-                    		</div>                                 
+                    		</div>-->                            
                     		<img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
           					<input type="submit" value="confirmar" id="enviar" name="enviar" class="confirmar">
           				</form>
@@ -183,6 +183,9 @@
       	});
       	
       	var validator = $('#form-contato').validate({
+          submitHandler: function(form){
+            form.submit();
+          },/*
       	  submitHandler: function(form){
       	  	$.ajax({
       	  	  type: "POST",
@@ -208,7 +211,7 @@
       	  	    }
       	  	  }
       	  	});					
-      	  },
+      	  },*/
           rules:{
             nome:{
               required: true,
@@ -228,16 +231,16 @@
             },
             mensagem:{
               required: true
-            },
+            }/*,
             captcha: {
               required: true,
               remote: "http://app.cmais.com.br/portal/js/validate/demo/captcha/process.php"
-            }
+            }*/
           }
         });
       });
       
-      $('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
+      //$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
       
       // Contador de Caracters
       function limitText (limitField, limitNum, textCounter)
@@ -247,6 +250,25 @@
         else
           $(textCounter).html(limitNum - limitField.value.length);
       }
+    
+      function getVar(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++){
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+      }
+      var success = getVar("success");
+      var error = getVar("error");
+      if(success == 1){
+        $("#form-contato").hide();
+        $(".msgAcerto").show();
+      }else if(error == 1){
+        $("#form-contato").hide();
+        $(".msgErro").show();
+      }
+
     </script>
-
-
