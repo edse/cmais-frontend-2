@@ -267,3 +267,12 @@
             </div>
           </div>
           <!-- /MENU-RODAPE -->
+           <script> 
+           // carrossel
+						$('.carrossel').jcarousel({
+					      wrap: "both",
+					      scroll: 4
+					    });
+					    
+					    
+					</script>

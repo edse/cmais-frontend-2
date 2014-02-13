@@ -64,7 +64,7 @@
 		  function loadScroll(){
 		    var page = 2;
 		    $('#infinite_scroll').scrollLoad({
-		      url : 'http://cmais.com.br<?php echo url_for("@homepage") ?>ajax/infinitescroll',
+		      url : 'http://app.cmais.com.br/ajax/infinitescroll',
 		      getData : function() {
 		        return "page="+$('#pag').val()+"&asset_id=49018";
 		      },
@@ -87,7 +87,7 @@
 		  }
 		  $(document).ready(function(){
 		    $.ajax({
-		      url: "http://cmais.com.br<?php echo url_for("@homepage") ?>ajax/infinitescroll",
+		      url: "http://app.cmais.com.br/ajax/infinitescroll",
 		      data: "page=1&asset_id=49018",
 		      success: function(data){
 		        $('#infinite_scroll').html(data);
