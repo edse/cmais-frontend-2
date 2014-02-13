@@ -38,7 +38,7 @@
 .header-bar{display: none;}
 .form-search{display: none;}
 /*desaparece o topo dos pais*/
-#content {background: #FEE132;top: 10px!important;}
+#content {top: 10px!important;}
 
 
 /*section{background:green!important;}*/
@@ -47,7 +47,7 @@
 /* footer{display:none;}
 #carrossel-destaque{display:none;}*/
 #no-mobile{display: none;}
-#mobile{display: block; margin-top: 110px; padding-bottom:0;}
+#mobile{display: block; padding-bottom:0; margin-top:50px;}
 footer{width: 100%;}
 footer .logos .col-dir a {margin-top: 6%;}
 footer .incluir img {margin-top: 20%;}
@@ -102,12 +102,15 @@ footer .relacionados h1{margin-left:5%;width: 90%;}
 .acessibilidade .box-acessibilidade p{font-size:1.8em;line-height:1em}
 
 /* na tv */
+.na-tv{margin-top: 40px;}
+.na-tv #content .ola{font-size:2.5em;}
 .na-tv #content{margin:0 8%!important;}
+.na-tv #content .fundo-na-tv {width:100%; background-size: 83%;position:relative;background-position:center 0;top:10px; left:0;}
+.na-tv #content section{margin:0!important;height:100%;}
+.na-tv #container-na-tv .container-na-tv{padding-bottom:20px;}
 .na-tv #container-na-tv .container-na-tv .container-horarios .box-horario {width: 99% ;float: left ;margin: 10px 0;}
 .na-tv #container-na-tv .container-na-tv .container-horarios {width:100% ;max-height: none ;float:none ;}
 .na-tv #container-na-tv .container-na-tv .container-horarios .img-logo{width:100%;}
-.na-tv #container-na-tv .fundo-na-tv {width:100%; bottom:0; background-size: 60%;}
-.na-tv #content section{margin:0;}
 .na-tv .b-verde {position: relative;}
  
 /*  Pais */

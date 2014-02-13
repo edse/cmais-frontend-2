@@ -20,11 +20,11 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 
 <!--content-->
 <div id="content">
-	
-	<!--Explicação acessibilidade-->
-	<h1 tabindex="0" class="ac-explicacao">
-	 <?php echo $section->getDescription(); ?>
-	</h1>
+  
+  <!--Explicação acessibilidade-->
+  <h1 tabindex="0" class="ac-explicacao">
+   <?php echo $section->getDescription(); ?>
+  </h1>
   
   <!--section -->
   <section class="filtro"> 
@@ -39,7 +39,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       <!--container-->
       <section id="container-na-tv"><!--só leu qndo tirei o aria-hidden e o tabindex -1-->
         <div class="container-na-tv">
-          <h2 class="ola" tabindex="0" aria-label="Olá">Olá!</h2>
           
           <?php if(isset($displays['historia'])): ?>
             <?php if(count($displays['historia']) > 0): ?>
@@ -47,14 +46,14 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <?php endif; ?>
           <?php endif; ?>
           <!--Explicação acessibilidade visite o site da Vila Sesamo nos EUA-->
-		  <a href="http://www.sesameworkshop.org/" tabindex="0" class="ac-link" aria-label="Visite o site da Vila Sésamo nos Estados Unidos"></a>
+          <a href="http://www.sesameworkshop.org/" tabindex="0" class="ac-link" aria-label="Visite o site da Vila Sésamo nos Estados Unidos"></a>
 
           
           <?php if(isset($displays['programacao-na-tv'])): ?>
             <?php if(count($displays['programacao-na-tv']) > 0): ?>
                      
             <!--container-horario-->
-            <div class="container-horarios" accesskey="h">
+            <div class="container-horarios">
               
               <!--box-horario-->
               <?php foreach($displays['programacao-na-tv'] as $k=>$d):?>
@@ -86,11 +85,14 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <?php endif; ?>
           <?php endif; ?>
           
-           <span class="fundo-na-tv-mobile" aria-label="Imagem do Garibaldo com a Bel dizendo: Olá!" tabindex="0"></span> 
+         <span class="fundo-na-tv" aria-label="Imagem do Garibaldo com a Bel dizendo: Olá!" tabindex="0">
+          <span class="ola" tabindex="-1">Olá!</span>
+          <img src='/portal/images/capaPrograma/vilasesamo2/personagens/img_natv.png' alt="" tabindex="-1"/>
+        </span>
            
         </div>
         <!--/container-->
-          <span class="fundo-na-tv" aria-label="Imagem do Garibaldo com a Bel dizendo: Olá!" tabindex="0"></span> 
+          
       </section>
     
     </div>
@@ -114,5 +116,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 
   </section>
   <!--/section -->
+  
 </div>
 <!--div-->      
