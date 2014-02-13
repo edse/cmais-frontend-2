@@ -70,7 +70,7 @@
   })();
 
   // Define Marker properties
-  var image = new google.maps.MarkerImage('/portal/images/marker.png',
+  var image = new google.maps.MarkerImage('http://cmais.com.br/portal/images/marker.png',
     // This marker is 129 pixels wide by 42 pixels tall.
     new google.maps.Size(36, 30),
     // The origin for this image is 0,0.

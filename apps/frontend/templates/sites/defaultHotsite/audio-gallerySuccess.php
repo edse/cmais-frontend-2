@@ -253,7 +253,7 @@ $(document).ready(function(){
     play: function() {
       $(this).jPlayer("pauseOthers");
     },
-    swfPath: "http://cmais.com.br/js/audioplayer",
+    swfPath: "/js/audioplayer",
     supplied: "mp3"
   });
 });

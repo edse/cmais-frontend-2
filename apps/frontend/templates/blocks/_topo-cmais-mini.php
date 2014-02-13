@@ -1,4 +1,4 @@
-<script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
 
 <!-- Navbar
     ================================================== -->

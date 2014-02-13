@@ -258,7 +258,7 @@ class ajaxActions extends sfActions
           ";
         }else{
           $return .= "
-          var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
+          var so = new SWFObject('http://cmais.com.br/portal/js/mediaplayer/player.swf','mpl','640','364','9');
           so.addVariable('controlbar', 'over');
           so.addVariable('autostart', 'true');
           so.addVariable('streamer', 'rtmp://200.136.27.12/live');
@@ -1157,7 +1157,7 @@ class ajaxActions extends sfActions
         }
         else{
           $return = "
-          var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','640','364','9');
+          var so = new SWFObject('http://cmais.com.br/portal/js/mediaplayer/player.swf','mpl','640','364','9');
           so.addVariable('controlbar', 'over');
           so.addVariable('autostart', 'true');
           so.addVariable('streamer', 'rtmp://200.136.27.12/live');

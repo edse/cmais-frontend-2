@@ -220,7 +220,7 @@ function isDevice(OSName)
                 var imigrantes = 0;
                 var anchieta = 0;
                 $.ajax({
-                  url: "/portal/cams.php?s=ecovias",
+                  url: "http://cmais.com.br/portal/cams.php?s=ecovias",
                   dataType: "json",
                   success: function(data){
                     $.each(data, function(i,data){
@@ -261,7 +261,7 @@ function isDevice(OSName)
               function interior(){
                 var ayrtonsenna = 0;
                 $.ajax({
-                  url: "/portal/cams.php?s=ecopistas",
+                  url: "http://cmais.com.br/portal/cams.php?s=ecopistas",
                   dataType: "json",
                   success: function(data){
                     $.each(data, function(i,data){

@@ -153,147 +153,147 @@
         //Cocorico
         {name:"01-A avó a bordar",
         description:"01-A avó a bordar",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_01_Avo-a-bordar_1229013454.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_01_Avo-a-bordar_1229013454.mp3"},
         
         {name:"02-A história do cocô",
         description:"02-A história do cocô",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_02_A-historia-do-coco_1229013430.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_02_A-historia-do-coco_1229013430.mp3"},
         
         {name:"03-A metamorfose das borboletas",
         description:"03-A metamorfose das borboletas",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_03_Metamorfose-borboleta_1229013556.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_03_Metamorfose-borboleta_1229013556.mp3"},
         
         {name:"04-A nota sol",
         description:"04-A nota sol",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_04_A-nota-sol_1229013443.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_04_A-nota-sol_1229013443.mp3"},
         
         {name:"05-Amigo longe, viagem perto",
         description:"05-Amigo longe, viagem perto",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_05_Amigo-longe_1229013434.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_05_Amigo-longe_1229013434.mp3"},
         
         {name:"06-Baião balaio",
         description:"06-Baião balaio",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_06_Baiao-Balaio_1229013459.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_06_Baiao-Balaio_1229013459.mp3"},
         
         {name:"07-Canção do dicionário",
         description:"07-Canção do dicionário",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_07_Cancao-dicionario_1229013466.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_07_Cancao-dicionario_1229013466.mp3"},
         
         {name:"08-Canção para Tio Franz",
         description:"08-Canção para Tio Franz",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_08_tio-franz_1229013675.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_08_tio-franz_1229013675.mp3"},
         
         {name:"09-Chuva, chuvisco, chuvarada",
         description:"09-Chuva, chuvisco, chuvarada",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_09_Chuva-Chuvisco-Chuvarada_1229013475.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_09_Chuva-Chuvisco-Chuvarada_1229013475.mp3"},
         
         {name:"10-Cocórico no velho oeste",
         description:"10-Cocórico no velho oeste",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_10_Coco-no-velho-oeste_1229013485.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_10_Coco-no-velho-oeste_1229013485.mp3"},
         
         {name:"11-Dente por dente",
         description:"11-Dente por dente",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_11_Dente-por-dente_1229013490.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_11_Dente-por-dente_1229013490.mp3"},
         
         {name:"12-É seu, é meu, é nosso",
         description:"12-É seu, é meu, é nosso",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_12_E-seu-e-meu-e-nosso_1229013498.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_12_E-seu-e-meu-e-nosso_1229013498.mp3"},
         
         {name:"13-Iara Zazá",
         description:"13-Iara Zazá",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_13_1229013514.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_13_1229013514.mp3"},
         
         {name:"14-Leite Quente",
         description:"14-Leite Quente",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_14_Leite_1229013521.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_14_Leite_1229013521.mp3"},
         
         {name:"15-Lola elétrica",
         description:"15-Lola elétrica",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_15_Lola-eletrica_1229013527.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_15_Lola-eletrica_1229013527.mp3"},
         
         {name:"16-Medo(boi-da-cara-preta)",
         description:"16-Medo(boi-da-cara-preta)",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_16_Medo_1229013539.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_16_Medo_1229013539.mp3"},
         
         {name:"17-Meninó",
         description:"17-Meninó",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_17_Menino_1229013544.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_17_Menino_1229013544.mp3"},
         
         {name:"18-Meu querido paiol",
         description:"18-Meu querido paiol",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_18_Meu-querido-paiol_1229013564.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_18_Meu-querido-paiol_1229013564.mp3"},
         
         {name:"19-Morango de pertinho",
         description:"19-Morango de pertinho",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_19_Morango-pertinho_1229013570.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_19_Morango-pertinho_1229013570.mp3"},
         
         {name:"20-Nos dias quentes de verão",
         description:"20-Nos dias quentes de verão",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_20_Nos-dias-quentes-de-verao_1229013573.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_20_Nos-dias-quentes-de-verao_1229013573.mp3"},
         
         {name:"21-O Buraco",
         description:"21-O Buraco",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_21_O-Buraco_1229013578.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_21_O-Buraco_1229013578.mp3"},
         
         {name:"22-O Circo",
         description:"22-O Circo",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_22_O-circo_1229013587.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_22_O-circo_1229013587.mp3"},
         
         {name:"23-O Cravo e a Rosa",
         description:"23-O Cravo e a Rosa",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_23_O-cravo-e-a-rosa_1229013594.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_23_O-cravo-e-a-rosa_1229013594.mp3"},
         
         
         {name:"24-O Rio e os pingos",
         description:"24-O Rio e os pingos",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_24_O-Rio-e-os-pingos_1229013607.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_24_O-Rio-e-os-pingos_1229013607.mp3"},
         
         {name:"25-Olhando para o Céu",
         description:"25-Olhando para o Céu",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_25_Olhando-para-o-ceu_1229013600.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_25_Olhando-para-o-ceu_1229013600.mp3"},
         
         {name:"26-Peixe Vivo",
         description:"26-Peixe Vivo",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_26_Peixe-vivo_1229013612.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_26_Peixe-vivo_1229013612.mp3"},
         
         
         {name:"27-Pêlo,Pena, Pano",
         description:"27-Pêlo,Pena, Pano",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_27_Pelo-Pena-pano_1229013619.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_27_Pelo-Pena-pano_1229013619.mp3"},
         
         {name:"28-Piolho",
         description:"28-Piolho",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_28_Piolho_1229013623.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_28_Piolho_1229013623.mp3"},
         
         {name:"29-Quem tem amigo nunca esta sozinho",
         description:"29-Quem tem amigo nunca esta sozinho",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_29_Quem-tem-amigo_1229013644.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_29_Quem-tem-amigo_1229013644.mp3"},
         
         {name:"30-Raios e Trovões",
         description:"30-Raios e Trovões",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_30_Raios-trovoes_1229013649.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_30_Raios-trovoes_1229013649.mp3"},
         
         {name:"31-Sapo Martelo",
         description:"31-Sapo Martelo",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_31_Sapo-martelo_1229013657.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_31_Sapo-martelo_1229013657.mp3"},
         
         
         {name:"32-Tatu bolinha",
         description:"32-Tatu bolinha",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_32_Tatu-bolinha_1229013666.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_32_Tatu-bolinha_1229013666.mp3"},
         
         {name:"33-Trava-línguas",
         description:"33-Trava-línguas",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_33_Trava-lingua_1229013681.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_33_Trava-lingua_1229013681.mp3"},
         
         {name:"34-Travesseiro",
         description:"34-Travesseiro",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_34_Travesseiro_1229013687.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_34_Travesseiro_1229013687.mp3"},
         
         
         {name:"35-Vitamina Tutti-Frutti",
         description:"35-Vitamina Tutti-Frutti",
-        mp3:"/portal/tvratimbum/musicas/cocorico/cocorico_35_Vitamina-tutti-fruti_1229013694.mp3"},
+        mp3:"http://cmais.com.br/portal/tvratimbum/musicas/cocorico/cocorico_35_Vitamina-tutti-fruti_1229013694.mp3"},
         
         //Cocorico
         
@@ -308,7 +308,7 @@
         play: function() {
         $(this).jPlayer("pauseOthers");
         },
-        swfPath: "http://cmais.com.br/js/audioplayer",
+        swfPath: "/js/audioplayer",
         supplied: "mp3"
         });
         });

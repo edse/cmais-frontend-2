@@ -1,9 +1,9 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/menu-reduzido.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/menu-reduzido.css" type="text/css" />
 <!-- TOPO PORTAL -->
 <div id="menu-reduzido">
   <!--TOPO-CONTADOR-->
   <div id="topo-contador">
-    <a href="http://cmais.com.br" title="cmais" target="_parent"><img class="cmais" src="/portal/images/menu-reduzido/logoCMAIS.png" alt="cmais+" /></a>
+    <a href="http://cmais.com.br" title="cmais" target="_parent"><img class="cmais" src="http://cmais.com.br/portal/images/menu-reduzido/logoCMAIS.png" alt="cmais+" /></a>
       <!--LINKS-->
       <ul class="links">
         <li><a href="http://tvcultura.com.br" class="barra tvcultura" target="_blank" title="TV Cultura"></a></li>

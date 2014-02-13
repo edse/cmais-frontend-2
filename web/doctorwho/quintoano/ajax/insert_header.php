@@ -2,10 +2,10 @@
 /*
     $return = ' 
     <link rel="stylesheet" href="/doctorwho/css/geral.css" type="text/css"/>
-    <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/geral2.css" type="text/css" />
     <link href="css/default.css" rel="stylesheet" type="text/css">
     <link href="/doctorwho/css/ie.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="/portal/js/portal.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/portal.js"></script>
     
     
     
@@ -154,12 +154,12 @@
  * 
  */
 	$return = '
-		<link rel="stylesheet" href="/portal/css/geral.css?nocache=12345" type="text/css" />
+		<link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css?nocache=12345" type="text/css" />
     <link rel="stylesheet" href="/doctorwho/css/geral.css" type="text/css"/>
-    <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/geral2.css" type="text/css" />
     <link href="css/default.css" rel="stylesheet" type="text/css">
     <link href="/doctorwho/css/ie.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="/portal/js/portal.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/portal.js"></script>
     
 <div id="guia-topo" align="center">
   <!--topo Cmais-->

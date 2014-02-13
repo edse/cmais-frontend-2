@@ -50,7 +50,7 @@
       .ie p { color: #FFFFFF;  font-size: 30px; clear: both; font-family:'ubuntu',sans-serif; text-align:center;  }
       .ie { margin-top /*\**/: -400px\9; *margin-top:0; }
       #pagErro { height: 320px;  margin: 60px auto;  position: relative;  width: 560px;}
-      #pagErro .julio { background: url("/portal/images/imgJulio.png") no-repeat scroll 0 0 transparent;  float: left;  height: 291px;  width: 229px;}
+      #pagErro .julio { background: url("http://cmais.com.br/portal/images/imgJulio.png") no-repeat scroll 0 0 transparent;  float: left;  height: 291px;  width: 229px;}
       #pagErro .msgErro { float: left; width: 312px;}
       #pagErro .msgErro h3 { font-size: 30px; margin-bottom:15px; color:#fff;}
       #pagErro p { font-size: 16px;   font-weight: bold;  text-align: left; margin-bottom: 20px; }
@@ -100,43 +100,43 @@
        */ ?>
 
        <li class="span2 astolfo" style="display: none;">
-        <a href="javascript:;" title="Astolfo" class="btn-desenho" data-source="/portal/images/capaPrograma/cocorico/para-colorir/astolfo-transparente.png">
+        <a href="javascript:;" title="Astolfo" class="btn-desenho" data-source="http://cmais.com.br/portal/images/capaPrograma/cocorico/para-colorir/astolfo-transparente.png">
           <img alt="Astolfo" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/para-colorir/astolfo_preview.jpg" class="span12">
           Astolfo
         </a>
        </li>
        <li class="span2 caco m0">
-        <a href="javascript:;" title="Astolfo" class="btn-desenho" data-source="/portal/images/capaPrograma/cocorico/para-colorir/caco-transparente.png">
+        <a href="javascript:;" title="Astolfo" class="btn-desenho" data-source="http://cmais.com.br/portal/images/capaPrograma/cocorico/para-colorir/caco-transparente.png">
           <img alt="Astolfo" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/para-colorir/caco_preview.jpg" class="span12">
           Caco
         </a>
        </li>
        <li class="span2">
-        <a href="javascript:;" title="Astolfo" class="btn-desenho" data-source="/portal/images/capaPrograma/cocorico/para-colorir/feito-transparente.png">
+        <a href="javascript:;" title="Astolfo" class="btn-desenho" data-source="http://cmais.com.br/portal/images/capaPrograma/cocorico/para-colorir/feito-transparente.png">
           <img alt="Astolfo" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/para-colorir/feito_preview.jpg" class="span12">
           Feito
         </a>
        </li>
        <li class="span2">
-        <a href="javascript:;" title="Astolfo" class="btn-desenho" data-source="/portal/images/capaPrograma/cocorico/para-colorir/lilica-transparente.png">
+        <a href="javascript:;" title="Astolfo" class="btn-desenho" data-source="http://cmais.com.br/portal/images/capaPrograma/cocorico/para-colorir/lilica-transparente.png">
           <img alt="Astolfo" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/para-colorir/lilica_preview.jpg" class="span12">
           Lilica
         </a>
        </li>
        <li class="span2" style="margin-left:20px;">
-        <a href="javascript:;" title="Astolfo" class="btn-desenho" data-source="/portal/images/capaPrograma/cocorico/para-colorir/lola-transparente.png">
+        <a href="javascript:;" title="Astolfo" class="btn-desenho" data-source="http://cmais.com.br/portal/images/capaPrograma/cocorico/para-colorir/lola-transparente.png">
           <img alt="Astolfo" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/para-colorir/lola_preview.jpg" class="span12">
           Lola
         </a>
        </li>
        <li class="span2">
-        <a href="javascript:;" title="Astolfo" class="btn-desenho" data-source="/portal/images/capaPrograma/cocorico/para-colorir/oriba-transparente.png">
+        <a href="javascript:;" title="Astolfo" class="btn-desenho" data-source="http://cmais.com.br/portal/images/capaPrograma/cocorico/para-colorir/oriba-transparente.png">
           <img alt="Astolfo" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/para-colorir/oriba_preview.jpg" class="span12">
           Oriba
         </a>
        </li>
        <li class="span2">
-        <a href="javascript:;" title="Astolfo" class="btn-desenho zaza" data-source="/portal/images/capaPrograma/cocorico/para-colorir/zaza-transparente.png">
+        <a href="javascript:;" title="Astolfo" class="btn-desenho zaza" data-source="http://cmais.com.br/portal/images/capaPrograma/cocorico/para-colorir/zaza-transparente.png">
           <img alt="Astolfo" src="http://cmais.com.br/portal/images/capaPrograma/cocorico/para-colorir/zaza_preview.jpg" class="span12">
           Zaza
         </a>

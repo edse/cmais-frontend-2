@@ -23,8 +23,8 @@
   </div>
   <div class="detalhe-borda grid1"></div>
   <!-- Script Enquetes -->
-  <script type="text/javascript" src="/portal/js/jquery-1.7.2.min.js"></script>
-  <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
   <script>
     $(document).ready(function(){
       var validator = $('#e<?php echo $asset->getId()?>').validate({

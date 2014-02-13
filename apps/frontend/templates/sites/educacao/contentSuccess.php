@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
 <script type="text/javascript">
 $(function(){
   //hover states on the static widgets
