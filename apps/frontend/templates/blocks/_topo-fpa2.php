@@ -6,18 +6,18 @@
   <meta name="viewport" content="width=device-width,max-width=0.7, initial-scale=0.7 ">
   
   <!-- SCRIPTS -->
-  <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-  <script src="/portal/js/bootstrap/bootstrap.min.js"></script>
-  <script src="/portal/js/fpa.js" type="text/javascript"></script>
+  <script src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script src="http://cmais.com.br/portal/js/bootstrap/bootstrap.min.js"></script>
+  <script src="http://cmais.com.br/portal/js/fpa.js" type="text/javascript"></script>
   <!-- SCRIPTS -->
   
   <!-- CSS BOOTSTRAP -->
-  <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/portal/js/bootstrap/css/bootstrap-responsive.min.css">
-  <link rel="stylesheet" href="/portal/css/geral.css" type="text/css" />
-  <link rel="stylesheet" href="/portal/css/tvcultura/sites/fpa.css" type="text/css" />
+  <link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css" type="text/css" />
+  <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/fpa.css" type="text/css" />
   <?php if($site->getSlug()=="central-de-relacionamento"):?>
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/central-de-relacionamento.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/central-de-relacionamento.css" type="text/css" />
   <?php endif;?>  
   <!-- /CSS BOOTSTRAP -->
     

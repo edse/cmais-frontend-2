@@ -49,7 +49,7 @@
     <!-- scripts -->
     
     <style>
-    @import "/portal/css/tvcultura/geral.css";
+    @import "http://cmais.com.br/portal/css/tvcultura/geral.css";
     #direita {
         margin-top: 10px;
     }

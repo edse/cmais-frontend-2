@@ -78,10 +78,10 @@
 <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> 
   <head>
     <link href="/feed" type="application/atom+xml" rel="alternate" title="cmais+ feed" />
-    <link rel="stylesheet" href="/portal/css/geral.css?nocache=54321" type="text/css" />
-    <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css?a=131325" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css?nocache=54321" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/geral2.css?a=131325" type="text/css" />
     <!--[if IE]>
-      <link rel="stylesheet" type="text/css" href="/portal/css/ie-only.css" />
+      <link rel="stylesheet" type="text/css" href="http://cmais.com.br/portal/css/ie-only.css" />
     <![endif]-->
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
@@ -122,10 +122,10 @@
     
 
     <!-- scripts -->
-    <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-    <!--script type="text/javascript" src="/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script-->
-    <script type="text/javascript" src="/portal/js/portal.js"></script>
-    <script type="text/javascript" src="/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
+    <script src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <!--script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-1.5.1.min.js"></script-->
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/portal.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
@@ -209,7 +209,7 @@
 
   </head>
   <body>
-    <link rel="stylesheet" href="/portal/css/tvcultura/sites/qss.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/qss.css" type="text/css" />
 <!--Controle-Remoto-->
 <script src="http://www.culturabrasil.com.br/js/config.js" type="text/javascript"></script>
 
@@ -342,8 +342,8 @@
     </form>  
 </div> 
 <!-- /capa site-->
-<script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
-<script src="/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
+<script src="http://cmais.com.br/portal/js/jquery.maskedinput.js" type="text/javascript"></script>
 <script type="text/javascript">
   $(document).ready(function(){
     $('.cpf').mask("999.999.999-99");

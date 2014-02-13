@@ -172,7 +172,7 @@
                           <?php endif; ?>
                           <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
                           <div>
-                            <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
+                            <img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
                             <?php echo $d->getTitle() ?>
                           </div>
                         </a>
@@ -225,7 +225,7 @@
                           <?php endif; ?>
                           <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i> 
                           <div>
-                            <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
+                            <img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
                             <?php echo $d->getTitle() ?>
                           </div>
                         </a>
@@ -280,7 +280,7 @@
                               <?php endif; ?>
                               <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
                               <div>
-                                <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
+                                <img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
                                 <?php echo $d->getTitle() ?>
                               </div>
                             </a>
@@ -330,7 +330,7 @@
                                 <?php endif; ?>
                                 <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
                                 <div>
-                                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
+                                  <img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png" alt="atividade"/>
                                   <?php echo $d->getTitle() ?>
                                 </div>
                               </a>

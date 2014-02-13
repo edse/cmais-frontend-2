@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/segundatela/jornaldacultura.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/segundatela/jornaldacultura.css" type="text/css" />
 <!-- modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
@@ -81,7 +81,7 @@
   // retrive sent contents by ajax
   /*
   $.ajax({
-    url:"/portal/js/segundatela/log/jornaldacultura-<?php //echo $date; ?>.json",
+    url:"http://cmais.com.br/portal/js/segundatela/log/jornaldacultura-<?php //echo $date; ?>.json",
     dataType: "json",
     success:function(json){
       $.each(json, function( key, value ) {

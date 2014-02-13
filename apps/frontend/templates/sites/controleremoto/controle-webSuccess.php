@@ -120,7 +120,7 @@
             });
             function playerControle(radio){
               jwplayer('mediaplayer').setup({
-                'flashplayer' : '/portal/js/mediaplayer-5.10/player.swf',
+                'flashplayer' : 'http://cmais.com.br/portal/js/mediaplayer-5.10/player.swf',
                 'id' : 'playerID',
                 'screencolor' : '333333',
                 'controlbar' : 'none',

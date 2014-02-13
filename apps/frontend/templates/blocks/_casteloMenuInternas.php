@@ -107,11 +107,11 @@
                 
                   if ($pos == true) {
                   ?>
-                    <img class="on" src="/portal/images/capaPrograma/castelo/img-navegacao-bullet-on.png" />
+                    <img class="on" src="http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-bullet-on.png" />
                   <?php 
                   }else{
                   ?>
-                    <img class="off" src="/portal/images/capaPrograma/castelo/img-navegacao-bullet-off.png" />
+                    <img class="off" src="http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-bullet-off.png" />
                   <?php  
                   }
                   

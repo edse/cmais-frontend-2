@@ -40,7 +40,7 @@
         <div id='mediaplayer'></div>
         <script type="text/javascript">
 			jwplayer('mediaplayer').setup({
-				'flashplayer' : '/portal/js/jwPlayer/player.swf',
+				'flashplayer' : 'http://cmais.com.br/portal/js/jwPlayer/player.swf',
 				'id' : 'playerID',
 				'screencolor' : '333333',
 				'controlbar' : 'none',

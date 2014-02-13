@@ -8,7 +8,7 @@
           <span class="caudaBarra"></span>
         </div>
         <div class="btns-redes">
-          <fb:like href="https://www.facebook.com/tvratimbum" layout="button_count" show_faces="false" width="100"></fb:like>
+          <fb:like href="http://www.facebook.com/ratimbum" layout="button_count" show_faces="false" width="100"></fb:like>
         </div>
         <?php /*
         <div class="btns-redes">

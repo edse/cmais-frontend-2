@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <script type="text/javascript">
 $(function(){
   //carrossel
@@ -27,7 +27,7 @@ $(function(){
           <h2>
             <a href="<?php echo $program->retriveUrl() ?>">
               <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
-              <!--img src="/portal/images/capaPrograma/inezita-barroso/inezita_barroso.png" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" /-->
+              <!--img src="http://cmais.com.br/portal/images/capaPrograma/inezita-barroso/inezita_barroso.png" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" /-->
             </a>
           </h2>
           <?php endif; ?>        

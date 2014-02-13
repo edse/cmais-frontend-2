@@ -264,7 +264,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <?php endforeach; ?>
             </div>
             <div class="bottom-box-sobre">
-              <img src="/portal/images/capaPrograma/vilasesamo2/box-bottom-sobre.png" alt=""/>
+              <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/box-bottom-sobre.png" alt=""/>
             </div>
           </div>  
           <?php endif; ?>
@@ -360,7 +360,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                   <?php endif; ?>
                   <i class="icones-sprite-interna icone-jogos-pequeno"></i>
                   <div class="texto" aria-hidden="true" >
-                    <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
+                    <img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
                     <?php echo $related_asset[0]->getTitle() ?>
                   </div>
                 </a>
@@ -401,7 +401,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                   
                   <i class="icones-sprite-interna icone-videos-pequeno"></i>
                   <div class="texto" aria-hidden="true">
-                    <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
+                    <img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
                     <?php echo $related_asset[0]->getTitle() ?>
                   </div>
                 </a>
@@ -442,7 +442,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                   <?php endif; ?>
                   <i class="icones-sprite-interna icone-atividades-pequeno"></i>
                   <div class="texto" aria-hidden="true" >
-                    <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
+                    <img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
                     <?php echo $related_asset[0]->getTitle() ?>             
                   </div>
                 </a>
