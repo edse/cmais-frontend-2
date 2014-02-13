@@ -11,8 +11,8 @@
 	<div id="capa-site" class="a1964">
      	
      	<!-- BARRA SITE -->
-  		<div id="barra-site" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
-					<a href="#"><img src="http://cmais.com.br/portal/images/qualidade/topo_premio.png"></a>
+  		<div id="barra-site" >
+						<h2>TV CULTURA,<br>o canal com a segunda melhor programação do mundo,<br>segundo pesquisa da BBC.</h2>
 				
 		
 		  <!-- /BARRA SITE -->  

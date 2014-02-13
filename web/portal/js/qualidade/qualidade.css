@@ -10,6 +10,53 @@
 
 }
 
+@font-face {
+    font-family: 'GothamMediumRegular';
+    src: url('http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.svg#GothamMediumRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gotham_lightregular';
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-light-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-light-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-light-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-light-webfont.svg#gotham_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gotham_thinregular';
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-thin-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-thin-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-thin-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-thin-webfont.svg#gotham_thinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gotham_bookregular';
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-book-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-book-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-book-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-book-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 body{background:url(/portal/images/qualidade/bg-tudo.jpg) repeat-x!important;}
 
@@ -300,6 +347,7 @@ body{background:url(/portal/images/qualidade/bg-tudo.jpg) repeat-x!important;}
 #barra-site{background:url();height: 170px;margin:0 0 0 42px!important;cursor:pointer}
 #barra-site .topo-timeline{width: 970px;min-height: 56px !important;}
 #barra-site img{margin: 23px 0 0 -214px;}
+#barra-site h2{font-family: 'GothamMediumRegular';color: #fff;font-size: 26px;text-align:left;line-height: 38px;margin: 14px 0 0 -5px;font-weight: lighter;}
 .a1964 .menu-interna {float: right;width: auto ;}
 .a1964 .menu-interna li {width: 120px;height: 54px;background-color: transparent;}
 .a1964 .menu-interna a{font-size: 14px;color:#2c9700;display: block;float: left;padding: 16px 34px;text-transform: uppercase;font-weight: bolder;}
