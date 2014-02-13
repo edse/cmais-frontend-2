@@ -1,0 +1,309 @@
+DefaultType text/html
+
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^cmais.com.br$ [NC]
+RewriteRule ^cursos$ http://univesptv.cmais.com.br/cursos [R,L]
+
+RewriteCond %{HTTP_HOST} ^cmais.com.br$ [NC]
+RewriteRule ^seumulticultura$ http://multicultura.cmais.com.br/seumulticultura [R,L]
+RewriteRule ^seu-multicultura$ http://multicultura.cmais.com.br/seumulticultura [R,L]
+RewriteRule ^multicultura$ http://multicultura.cmais.com.br [R,L]
+
+RewriteCond %{HTTP_HOST} ^cmais.com.br$ [NC]
+RewriteRule ^culturafm$ http://culturafm.cmais.com.br [R,L]
+RewriteRule ^culturafm/(.*)$ http://culturafm.cmais.com.br/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^cmais.com.br$ [NC]
+RewriteRule ^culturalivre/aovivo$ http://tvcultura.cmais.com.br/culturalivre/aovivo [R,L]
+
+RewriteCond %{HTTP_HOST} ^cmais.com.br$ [NC]
+RewriteRule ^culturabrasil$ http://culturabrasil.cmais.com.br [R,L]
+RewriteRule ^culturabrasil/(.*)$ http://culturabrasil.cmais.com.br/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^culturabrasil.cmais.com.br$ [NC]
+RewriteRule ^controle-remoto(.*)$ http://cmais.com.br/controleremoto [QSA,L]
+
+RewriteRule ^cartaozinhoverde$ http://tvcultura.cmais.com.br/cartaozinho [R,L]
+
+#RewriteRule ^segundatela/qss$ http://cmais.com.br/qss-app/web [R,L]
+
+RewriteRule ^fpa$ http://cmais.com.br/fpa/quem-somos [R,L]
+
+#RewriteRule ^ajax/1964contents\.jsonp$ /ajax/1964contents [R,L]
+RewriteRule ^d\.php/1964/linha-do-tempo\.jsonp$ /d\.php/1964/linha-do-tempo [R,L]
+RewriteRule ^1964/linha-do-tempo\.jsonp$ /1964/linha-do-tempo [R,L]
+
+RewriteRule ^d\.php/qualidade/linha-do-tempo\.jsonp$ /d\.php/qualidade/linha-do-tempo [R,L]
+RewriteRule ^qualidade/linha-do-tempo\.jsonp$ /qualidade/linha-do-tempo [R,L]
+
+RewriteCond %{HTTP_HOST} ^cmais.com.br$ [NC]
+RewriteRule ^mantiqueira$ http://tvcultura.cmais.com.br/metropolis/festival-da-mantiqueira [R,L]
+
+RewriteCond %{HTTP_HOST} ^cmais.com.br$ [NC]
+RewriteRule ^qss$ http://tvcultura.cmais.com.br/qss [R,L]
+
+RewriteRule ^QSS$ http://tvcultura.cmais.com.br/qss [R,L]
+
+RewriteRule ^quemsabesabe?$ http://tvcultura.cmais.com.br/qss [R,L]
+
+RewriteCond %{HTTP_HOST} ^cmais.com.br$ [NC]
+RewriteRule ^quemsabesabe?$ http://tvcultura.cmais.com.br/qss [R,L]
+
+RewriteCond {HTTP_HOST} ^cmais.com.br$ [NC]
+RewriteRule ^quemsabesabe?$ http://tvcultura.cmais.com.br/qss [R,L]
+
+RewriteCond %{HTTP_HOST} ^tvcultura.cmais.com.br$ [NC]
+RewriteRule ^especiais$ http://cmais.com.br/especiais [R,L]
+
+#RewriteRule ^guiadodia$ http://cmais.com.br/transito [R,L]
+
+RewriteRule ^transito$ http://tvcultura.cmais.com.br/guiadotransito/transito [R,L]
+
+#RewriteRule ^rodaviva/programas$ http://tvcultura.cmais.com.br/rodaviva/programas/1 [R,L]
+
+#RewriteRule ^cadastro-de-tutores-2013(.*)?$ http://cmais.com.br [R,L]
+
+RewriteRule ^cadastro-de-tutores-2013?$ http://cmais.com.br/cadastro-de-tutores-2013/classificados-para-tutoria-presencial-do-curso-ingles-online [R,L]
+#RewriteRule ^cadastro-de-tutores-2013?$ http://cmais.com.br/cadastro-de-tutores-2013/evesp-2013-julho-processo-seletivo [R,L]
+RewriteRule ^cadastro-de-tutores-2013/cadastro-de-tutor-melhor-gestao-melhor-ensino$ http://cmais.com.br/cadastro-de-tutores-2013/ [R,L]
+RewriteRule ^cadastro-de-tutores-2013/cadastro-para-tutoria-presencial-do-curso-ingles-online$ http://cmais.com.br/cadastro-de-tutores-2013/ [R,L]
+#RewriteRule ^cadastro-de-tutores-2013/orientacao-aos-candidatos-para-tutoria-presencial-do-curso-ingles-online-sobre-condicoes-de-trabalho-e-criterios-de-classificacao$ http://cmais.com.br/cadastro-de-tutores-2013/ [R,L]
+RewriteRule ^cadastro-de-tutores-2013/melhor-gestao-melhor-ensino-cadastro-complementar?$ http://cmais.com.br/cadastro-de-tutores-2013/ [R,L]
+
+RewriteCond %{HTTP_HOST} ^tvcultura.cmais.com.br$ [NC]
+RewriteRule ^paraospais(.*)?$ http://cmais.com.br/paraospais [R,L]
+
+RewriteCond %{HTTP_HOST} ^cmais.com.br$ [NC]
+RewriteRule ^grade$ http://tvcultura.cmais.com.br/grade [R,L]
+
+RewriteCond %{HTTP_HOST} ^cmais.com.br$ [NC]
+RewriteRule ^programacao?$ http://tvcultura.cmais.com.br/grade [R,L]
+
+RewriteRule ^QUINTAL$ http://tvcultura.cmais.com.br/quintaldacultura [R,L]
+RewriteRule ^QUINTALDACULTURA$ http://tvcultura.cmais.com.br/quintaldacultura [R,L]
+
+RewriteCond %{HTTP_HOST} ^cmais.com.br$ [NC]
+RewriteRule ^quintaldacultura/(.*)$ http://tvcultura.cmais.com.br/quintaldacultura/$1 [R,L]
+
+RewriteRule ^quintaldacultura/videos$ http://tvcultura.cmais.com.br/quintaldacultura/videos/todos [R,L]
+
+RewriteCond %{HTTP_HOST} ^cmais.com.br$ [NC]
+RewriteRule ^quintaldacultura?$ http://tvcultura.cmais.com.br/quintaldacultura [R,L]
+
+RewriteRule ^quintal?$ http://tvcultura.cmais.com.br/quintaldacultura [R,L]
+
+RewriteRule ^vila-sesamo?$ http://cmais.com.br/vilasesamo [R,L]
+RewriteRule ^sesame?$ http://cmais.com.br/vilasesamo [R,L]
+RewriteRule ^sesamo?$ http://cmais.com.br/vilasesamo [R,L]
+RewriteRule ^vila?$ http://cmais.com.br/vilasesamo [R,L]
+
+RewriteCond %{HTTP_HOST} ^tvcultura.cmais.com.br$ [NC]
+RewriteRule ^vilasesamo?$ http://cmais.com.br/vilasesamo [R,L]
+RewriteCond %{HTTP_HOST} ^tvcultura.cmais.com.br$ [NC]
+RewriteRule ^vilasesamo/(.*)$ http://cmais.com.br/vilasesamo/$1 [R,L]
+RewriteCond %{HTTP_HOST} ^tvcultura.cmais.com.br$ [NC]
+RewriteRule ^vilasesamo/(.*)/(.*)$ http://cmais.com.br/vilasesamo/$1/$2 [R,L]
+RewriteCond %{HTTP_HOST} ^tvcultura.cmais.com.br$ [NC]
+RewriteRule ^vilasesamo/(.*)/(.*)/(.*)$ http://cmais.com.br/vilasesamo/$1/$2/$3 [R,L]
+
+#RewriteCond %{HTTP_HOST} ^cmais.com.br$ [NC]
+#RewriteRule ^vilasesamo/(.*)$ http://tvcultura.cmais.com.br/vilasesamo/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^tvcultura.cmais.com.br$ [NC]
+RewriteRule ^educacaoemdia(.*)?$ http://cmais.com.br/educacaoemdia [R,L]
+
+RewriteRule ^segunda-tela-1?$ http://cmais.com.br/segundatela [R,L]
+
+RewriteCond %{HTTP_HOST} ^tvratimbum.cmais.com.br$ [NC]
+RewriteRule ^segundatela(.*)?$ http://cmais.com.br/segundatela [R,L]
+
+RewriteCond %{HTTP_HOST} ^tvcultura.cmais.com.br$ [NC]
+RewriteRule ^segundatela(.*)?$ http://cmais.com.br/segundatela [R,L]
+
+RewriteRule ^segundatela/jornaldacultura$ http://cmais.com.br/segundatela/jornaldacultura/26-09-2013 [R,L]
+RewriteRule ^segundatela/rodaviva$ http://cmais.com.br/segundatela/rodaviva/23-09-2013 [R,L]
+RewriteRule ^segundatela/cartaoverde$ http://cmais.com.br/segundatela/cartaoverde/24-09-2013 [R,L]
+
+## all files with .something are skipped
+#RewriteCond %{REQUEST_URI} \..+$
+#RewriteCond %{REQUEST_URI} \.jpg$
+#RewriteRule .* - [L]
+
+#RewriteRule ^doctorwho$ http://tvcultura.cmais.com.br/doctorwho/batepapo [R,L]
+
+RewriteRule ^tvratimbum$ http://tvratimbum.cmais.com.br [R,L]
+
+RewriteRule ^transito/mobile$ http://cmais.com.br/transito2/mobile/index.php [R,L]
+
+RewriteRule ^doctorwho$ http://tvcultura.cmais.com.br/doctorwho/index.html [R,L]
+
+RewriteRule ^criancasdobrasil$ http://cmais.com.br/criancasdobrasil/index.html [QSA,L]
+RewriteRule ^criancasdobrasil/$ http://cmais.com.br/criancasdobrasil/index.html [QSA,L]
+RewriteRule ^criancasdobrasil/suaopiniao$ http://cmais.com.br/criancasdobrasil/suaopiniao.html [QSA,L]
+RewriteRule ^criancasdobrasil/dadosunicef$ http://cmais.com.br/criancasdobrasil/dadosunicef.html [QSA,L]
+RewriteRule ^criancasdobrasil/realizadores$ http://cmais.com.br/criancasdobrasil/realizadores.html [QSA,L]
+RewriteRule ^criancasdobrasil/workshop$ http://cmais.com.br/criancasdobrasil/workshop.html [QSA,L]
+
+RewriteRule ^carnaval$ http://cmais.com.br/carnaval2012/carnaval-na-cultura [R,L]
+RewriteRule ^carnaval/(.*)$ http://cmais.com.br/carnaval2012/$1 [R,L]
+
+RewriteRule ^atividades/experiencia$ http://tvratimbum.cmais.com.br/atividades?section_id=21 [QSA,L]
+RewriteRule ^atividades/receitinhas$ http://tvratimbum.cmais.com.br/atividades?section_id=22 [QSA,L]
+RewriteRule ^atividades/receitas$ http://tvratimbum.cmais.com.br/atividades?section_id=22 [QSA,L]
+RewriteRule ^atividades/artes$ http://tvratimbum.cmais.com.br/atividades?section_id=23 [QSA,L]
+RewriteRule ^atividades/paracolorir$ http://tvratimbum.cmais.com.br/atividades?section_id=24 [QSA,L]
+RewriteRule ^atividades/para-colorir$ http://tvratimbum.cmais.com.br/atividades?section_id=24 [QSA,L]
+
+RewriteRule ^baixar/brincadeiras$ http://tvratimbum.cmais.com.br/baixar?section_id=1057 [QSA,L]
+RewriteRule ^baixar/carinhas$ http://tvratimbum.cmais.com.br/baixar?section_id=1058 [QSA,L]
+RewriteRule ^baixar/cartoes$ http://tvratimbum.cmais.com.br/baixar?section_id=1059 [QSA,L]
+RewriteRule ^baixar/papeis-de-parede$ http://tvratimbum.cmais.com.br/baixar?section_id=1060 [QSA,L]
+
+RewriteRule ^doctv$ http://www.tvcultura.com.br/doctv [R,L]
+
+RewriteRule ^cocorico2(.*)$ http://tvcultura.cmais.com.br/cocorico [R,L]
+RewriteRule ^tvcocorico$ http://tvcultura.cmais.com.br/cocorico/tvcocorico [R,L]
+#RewriteRule ^cocorico/tvcocorico/convidados/(.*)$ http://app.cmais.com.br/cocorico/tvcocorico/convidados?letra-cocorico=$1 [QSA,L]
+
+RewriteRule ^deupaulanatv/deu-paula-na-web$ http://tvcultura.cmais.com.br/deupaulanatv/deupaulanaweb [R,L]
+
+RewriteRule ^roteiro$ http://www2.tvcultura.com.br/roteiro [R,L]
+RewriteRule ^roteiro/(.*)$ http://www2.tvcultura.com.br/roteiro/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^www.quintaldacultura.com.br$ [NC]
+RewriteRule ^(.*)$ http://cmais.com.br/quintaldacultura/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www.quintaldacultura.com.br$ [NC]
+RewriteRule ^(.*)$ http://cmais.com.br/quintaldacultura/$1 [R=301,L]
+
+#RewriteCond %{HTTP_HOST} ^m.cmais.com.br$ [NC]
+#RewriteRule ^programa/(.*)$ http://m.cmais.com.br/programa?slug=$1 [QSA]
+
+#RewriteCond %{HTTP_HOST} ^culturabrasil.cmais.com.br$ [NC]
+#RewriteRule ^programas/(.*)$ http://culturabrasil.cmais.com.br/programas?slug=$1 [QSA]
+
+
+RewriteRule ^vilasesamo/jogos/audio/teeth_intro.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/teeth_intro.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/teeth_id_1.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/teeth_id_1.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/teeth_id_2.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/teeth_id_2.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/teeth_id_3.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/teeth_id_3.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/teeth_hint_1.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/teeth_hint_1.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/teeth_hint_2.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/teeth_hint_2.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/teeth_instruct_1.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/teeth_instruct_1.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/teeth_instruct_2.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/teeth_instruct_2.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/teeth_instruct_3.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/teeth_instruct_3.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/teeth_option_1.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/teeth_option_1.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/teeth_option_2.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/teeth_option_2.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/teeth_option_3.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/teeth_option_3.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/images/teeth_option_1.jpg$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/images/teeth_option_1.jpg [R,L]
+RewriteRule ^vilasesamo/jogos/images/teeth_option_2.jpg$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/images/teeth_option_2.jpg [R,L]
+RewriteRule ^vilasesamo/jogos/images/teeth_option_3.jpg$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/images/teeth_option_3.jpg [R,L]
+
+
+RewriteRule ^vilasesamo/jogos/audio/hands_intro.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/hands_intro.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/hands_id_1.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/hands_id_1.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/hands_id_2.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/hands_id_2.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/hands_id_3.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/hands_id_3.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/hands_hint_1.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/hands_hint_1.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/hands_hint_2.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/hands_hint_2.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/hands_instruct_1.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/hands_instruct_1.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/hands_instruct_2.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/hands_instruct_2.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/hands_instruct_3.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/hands_instruct_3.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/hands_option_1.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/hands_option_1.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/hands_option_2.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/hands_option_2.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/hands_option_3.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/hands_option_3.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/images/hands_option_1.jpg$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/images/hands_option_1.jpg [R,L]
+RewriteRule ^vilasesamo/jogos/images/hands_option_2.jpg$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/images/hands_option_2.jpg [R,L]
+RewriteRule ^vilasesamo/jogos/images/hands_option_3.jpg$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/images/hands_option_3.jpg [R,L]
+
+
+RewriteRule ^vilasesamo/jogos/audio/inactive_1.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/inactive_1.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/inactive_2.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/inactive_2.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/inactive_3.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/inactive_3.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/inactive_4.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/inactive_4.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/inactive_5.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/inactive_5.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/inactive_6.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/inactive_6.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/inactive_7.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/inactive_7.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/inactive_8.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/inactive_8.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/inactive_9.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/inactive_9.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/payoff_1.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/payoff_1.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/payoff_2.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/payoff_2.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/payoff_3.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/payoff_3.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/wa_1.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/wa_1.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/wa_2.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/wa_2.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/number_click.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/number_click.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/play_again_po.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/play_again_po.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/play_again_to.mp3$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/audio/play_again_to.mp3 [R,L]
+
+RewriteRule ^vilasesamo/jogos/sequence_hands.swf$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/sequence_hands.swf [R,L]
+RewriteRule ^vilasesamo/jogos/sequence_teeth.swf$ http://cmais.com.br/actions/vilasesamo/games/qual-e-a-ordem/sequence_teeth.swf [R,L]
+
+RewriteRule ^vilasesamo/jogos/parametros.xml$ http://cmais.com.br/actions/vilasesamo/games/roleta-animada/parametros.xml [R,L]
+RewriteRule ^vilasesamo/jogos/sesame.mp3$ http://cmais.com.br/actions/vilasesamo/games/roleta-animada/sesame.mp3 [R,L]
+RewriteRule ^vilasesamo/jogos/portugues_logo.png$ http://cmais.com.br/actions/vilasesamo/games/roleta-animada/portugues_logo.png [R,L]
+RewriteRule ^vilasesamo/jogos/portugues/help.xml$ http://cmais.com.br/actions/vilasesamo/games/roleta-animada/portugues/help.xml [R,L]
+RewriteRule ^vilasesamo/jogos/portugues/cards.xml$ http://cmais.com.br/actions/vilasesamo/games/roleta-animada/portugues/cards.xml [R,L]
+RewriteRule ^vilasesamo/jogos/muppets/(.*)$ http://cmais.com.br/actions/vilasesamo/games/roleta-animada/muppets/$1 [R,L]
+RewriteRule ^vilasesamo/jogos/audio/(.*)$ http://cmais.com.br/actions/vilasesamo/games/que-cara-e-essa/audio/$1 [R,L]
+RewriteRule ^vilasesamo/jogos/image/(.*)$ http://cmais.com.br/actions/vilasesamo/games/que-cara-e-essa/image/$1 [R,L]
+RewriteRule ^vilasesamo/jogos/read_a_face_angry.swf$ http://cmais.com.br/actions/vilasesamo/games/que-cara-e-essa/read_a_face_angry.swf [R,L]
+RewriteRule ^vilasesamo/jogos/read_a_face_fear.swf$ http://cmais.com.br/actions/vilasesamo/games/que-cara-e-essa/read_a_face_fear.swf [R,L]
+RewriteRule ^vilasesamo/jogos/read_a_face_happy.swf$ http://cmais.com.br/actions/vilasesamo/games/que-cara-e-essa/read_a_face_happy.swf [R,L]
+RewriteRule ^vilasesamo/jogos/read_a_face_sad.swf$ http://cmais.com.br/actions/vilasesamo/games/que-cara-e-essa/read_a_face_sad.swf [R,L]
+RewriteRule ^vilasesamo/jogos/read_a_face_surprise.swf$ http://cmais.com.br/actions/vilasesamo/games/que-cara-e-essa/read_a_face_surprise.swf [R,L]
+
+
+
+# Remove www from domain
+RewriteCond %{HTTP_HOST} ^www.cmais.com.br$ [NC]
+RewriteRule ^(.*)$ http://cmais.com.br/$1 [R=301,L]
+RewriteRule ^(.+)/$ http://cmais.com.br/$1 [R=301,L]
+
+# we check if the .html version is here (caching)
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{DOCUMENT_ROOT}/cache/%{HTTP_HOST}/%{REQUEST_URI}/index.html -f
+RewriteRule ^(.*) cache/%{HTTP_HOST}/$1/index.html [L]
+
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{DOCUMENT_ROOT}/cache/%{HTTP_HOST}/%{REQUEST_URI}.html -f
+RewriteRule ^(.*) cache/%{HTTP_HOST}/$1.html [L]
+
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{DOCUMENT_ROOT}/cache/%{HTTP_HOST}/%{REQUEST_URI} -f
+RewriteRule ^(.*) cache/%{HTTP_HOST}/$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+# no, so we redirect to our front web controller
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+#####
+
+# all files with .something are skipped
+#RewriteCond %{REQUEST_URI} \..+$
+#RewriteCond %{REQUEST_URI} !\.html$
+#RewriteRule .* - [L]
+# the others are redirected to the front web controller
+#RewriteRule ^(.*)$ index.php [QSA,L]
+
+####################
+
+## we check if the .html version is here (caching)
+
+#RewriteCond %{REQUEST_METHOD} GET
+#RewriteCond %{DOCUMENT_ROOT}/cache/%{HTTP_HOST}/%{REQUEST_URI}/index.html -f
+#RewriteRule ^(.*) cache/%{HTTP_HOST}/$1/index.html [L]
+
+#RewriteCond %{REQUEST_METHOD} GET
+#RewriteCond %{DOCUMENT_ROOT}/cache/%{HTTP_HOST}/%{REQUEST_URI}.html -f
+#RewriteRule ^(.*) cache/%{HTTP_HOST}/$1.html [L]
+
+#RewriteCond %{REQUEST_METHOD} GET
+#RewriteCond %{DOCUMENT_ROOT}/cache/%{HTTP_HOST}/%{REQUEST_URI} -f
+#RewriteRule ^(.*) cache/%{HTTP_HOST}/$1 [L]
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+## no, so we redirect to our front web controller
+#RewriteRule ^(.*)$ index.php [QSA,L]
+
+

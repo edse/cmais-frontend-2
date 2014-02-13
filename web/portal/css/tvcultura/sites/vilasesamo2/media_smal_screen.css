@@ -103,15 +103,10 @@ footer .relacionados h1{margin-left:5%;width: 90%;}
 .na-tv .b-verde {position: relative;padding: 8px;}
 
 /* na tv */
-#container-na-tv .container-na-tv p{font-size: 1.8em;float:none;max-width:none;}
-#container-na-tv .container-na-tv {height:1300px}
-#container-na-tv .fundo-na-tv {background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/img_natv_mobile.png') no-repeat;background-size: 100%;width: 60%;top: 65%;left: 11%;min-height: 453px;height:700px; }
+.na-tv #content{margin:0 8%!important;}
 #container-na-tv .container-na-tv .container-horarios .box-horario {width: 98% ;float: left ;margin: 0  ;}
 #container-na-tv .container-na-tv .container-horarios {width:100% ;max-height: none ;float:none ;}
 #container-na-tv .container-na-tv .container-horarios .img-logo{width:100%;}
-#container-na-tv .container-na-tv h2.ola {display:none;}
-.na-tv .filtro {margin-bottom:157px!important;}
-
 /*  Pais */
 .cuidadores .selecione .barra-selecao {}
 
@@ -125,6 +120,3 @@ footer .relacionados h1{margin-left:5%;width: 90%;}
 .personagens #container-personagens p {font-size: 3em!important;}
 
 
-@media screen and(device-pixel-ratio:2){
-  #teste{display:none;width:100px; height:100px; background:red; position:absolute; z-index:33131313131313131313131313;}
-}

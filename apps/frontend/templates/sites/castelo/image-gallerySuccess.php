@@ -140,7 +140,7 @@ $(window).load(function() {
 	    </script>
 
 			<!-- barra compartilhar -->
-			<?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+			<?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
 			<!-- /barra compartilhar -->
 
 		</div>
