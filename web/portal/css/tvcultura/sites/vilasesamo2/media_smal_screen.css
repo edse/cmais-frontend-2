@@ -100,13 +100,16 @@ footer .relacionados h1{margin-left:5%;width: 90%;}
 .acessibilidade .box-acessibilidade{overflow: hidden!important;width: 100%!important;}
 .acessibilidade .fundo-acessibilidade{width:400px; height:500px;float: left!important;position: relative!important;top:30%!important;}
 .acessibilidade .box-acessibilidade p{font-size:1.8em;line-height:1em}
-.na-tv .b-verde {position: relative;padding: 8px;}
 
 /* na tv */
 .na-tv #content{margin:0 8%!important;}
-#container-na-tv .container-na-tv .container-horarios .box-horario {width: 98% ;float: left ;margin: 0  ;}
-#container-na-tv .container-na-tv .container-horarios {width:100% ;max-height: none ;float:none ;}
-#container-na-tv .container-na-tv .container-horarios .img-logo{width:100%;}
+.na-tv #container-na-tv .container-na-tv .container-horarios .box-horario {width: 99% ;float: left ;margin: 10px 0;}
+.na-tv #container-na-tv .container-na-tv .container-horarios {width:100% ;max-height: none ;float:none ;}
+.na-tv #container-na-tv .container-na-tv .container-horarios .img-logo{width:100%;}
+.na-tv #container-na-tv .fundo-na-tv {width:100%; bottom:0; background-size: 60%;}
+.na-tv #content section{margin:0;}
+.na-tv .b-verde {position: relative;}
+
 /*  Pais */
 .cuidadores .selecione .barra-selecao {}
 
