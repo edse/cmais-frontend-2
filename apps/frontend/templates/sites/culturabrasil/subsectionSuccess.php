@@ -38,7 +38,7 @@ $uri = str_replace('/index.php', '', $uri);
       <ul class="breadcrumb">
         <li><a href="/">Cultura Brasil</a> <span class="divider">»</span></li>
         <?php if($section->Site->Program->Channel->getSlug() == "culturabrasil"): ?>
-        <li><a href="<?php echo url_for('homepage')?>programas">Programas</a> <span class="divider">»</span></li>
+        <li><a href="http://culturabrasil.cmais.com.br/programas">Programas</a> <span class="divider">»</span></li>
           <?php if($section->getSlug() != "arquivo"): ?>
         <li><?php echo $site->getTitle() ?>  <span class="divider">»</span></li>
         <li><?php echo $section->getTitle() ?> </li>
@@ -47,7 +47,7 @@ $uri = str_replace('/index.php', '', $uri);
           <?php endif; ?>
         <?php elseif($site->getSlug() == "especiais-1"): ?>
           <?php if($section->getSlug() != "home"): ?>
-        <li><a href="<?php echo url_for('homepage')?>especiais"><?php echo $site->getTitle() ?></a>  <span class="divider">»</span></li>
+        <li><a href="http://culturabrasil.cmais.com.br/especiais"><?php echo $site->getTitle() ?></a>  <span class="divider">»</span></li>
         <li><?php echo $section->getTitle() ?> </li>
           <?php else: ?>
         <li><?php echo $site->getTitle() ?> </li>
@@ -86,9 +86,9 @@ $uri = str_replace('/index.php', '', $uri);
             <?php foreach($subsections as $s): ?>
               <?php if($s->getSlug() != "home"): ?>
                 <?php if($s->getSlug() == "arquivo"): ?>
-            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="/programas/<?php echo $site->getSlug() ?>"><?php echo $s->getTitle() ?></a></li>
+            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="http://culturabrasil.cmais.com.br/programas/<?php echo $site->getSlug() ?>"><?php echo $s->getTitle() ?></a></li>
                 <?php else: ?>
-            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="/programas/<?php echo $site->getSlug() . "/" . $s->getSlug() ?>"><?php echo $s->getTitle() ?></a></li>
+            <li<?php if($s->id == $section->id): ?> class="active"<?php endif; ?>><a href="http://culturabrasil.cmais.com.br/programas/<?php echo $site->getSlug() . "/" . $s->getSlug() ?>"><?php echo $s->getTitle() ?></a></li>
                 <?php endif; ?>
               <?php endif; ?>
             <?php endforeach; ?>
