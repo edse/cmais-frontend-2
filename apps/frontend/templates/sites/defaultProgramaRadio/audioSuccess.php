@@ -58,7 +58,7 @@
                   <p><?php echo nl2br($asset->getDescription()) ?> </p>  
                 </div>
                 
-                <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+                <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
 
               </div>
               <!-- /NOTICIA INTERNA -->
