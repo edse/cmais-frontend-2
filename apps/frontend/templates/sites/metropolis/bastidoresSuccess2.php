@@ -154,7 +154,7 @@
 	          					<h2><span>Ao Vivo</span></h2>
 	          					<div id="aovivo"></div>
                                 <script>
-                                  var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','310','238','9');
+                                  var so = new SWFObject('http://cmais.com.br/portal/js/mediaplayer/player.swf','mpl','310','238','9');
                                   so.addVariable('controlbar', 'bottom');
                                   so.addVariable('autostart', 'true');
                                   so.addVariable('streamer', 'rtmp://200.136.27.12/live');

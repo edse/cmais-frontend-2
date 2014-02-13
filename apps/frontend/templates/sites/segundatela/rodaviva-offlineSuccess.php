@@ -129,7 +129,7 @@
   <script>
     // retrive sent contents by ajax
     $.ajax({
-      url:"/portal/js/segundatela/log/rodaviva-<?php echo $date; ?>.json",
+      url:"http://cmais.com.br/portal/js/segundatela/log/rodaviva-<?php echo $date; ?>.json",
       dataType: "json",
       success:function(json){
         $.each(json, function( key, value ) {

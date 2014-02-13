@@ -14,7 +14,7 @@ if(isset($asset)) {
   <div class="container menu row-fluid">
     <!--logo-->
     <div class="logo">
-       <a href="http://cmais.com.br/culturabrasil" title="Cultura Brasil">
+       <a href="http://culturabrasil.cmais.com.br" title="Cultura Brasil">
         <!--img src="http://cmais.com.br/portal/images/capaPrograma/culturabrasil/logoculturabrasil.png" alt="Cultura Brasil" /-->
         <img src="http://cmais.com.br/portal/images/capaPrograma/culturabrasil/logoam.png" alt="Cultura Brasil" />
       </a>

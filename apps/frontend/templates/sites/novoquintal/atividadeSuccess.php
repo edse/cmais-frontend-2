@@ -42,7 +42,7 @@
     </script>
   <script type="text/javascript">
     $(function(){
-      Galleria.loadTheme('/portal/quintal/js/galleria/galleria.classic.min.js');
+      Galleria.loadTheme('http://cmais.com.br/portal/quintal/js/galleria/galleria.classic.min.js');
       $('#galleria').galleria();
       
       $('.carrossel').jcarousel({

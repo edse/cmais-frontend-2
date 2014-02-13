@@ -1,9 +1,9 @@
 <?php
 	$return = '
 		<link rel="stylesheet" href="/doctorwho/setimoano/css/geral.css?nocache='.time().'" type="text/css" />
-    <link rel="stylesheet" href="/portal/css/tvcultura/geral2.css?nocache='.time().'" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/geral2.css?nocache='.time().'" type="text/css" />
     <link type="text/css" rel="stylesheet" href="/doctorwho/setimoano/css/style.css?nocache='.time().'" />
-    <script type="text/javascript" src="/portal/js/portal.js?nocache='.time().'"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/portal.js?nocache='.time().'"></script>
     
      
 <div id="guia-topo" align="center">

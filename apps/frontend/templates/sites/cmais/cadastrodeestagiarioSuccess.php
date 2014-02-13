@@ -50,7 +50,8 @@
                   </div>
                   <hr />
                 </div>
-              <form id="form-contato" method="post" action="">
+                
+              <form id="form-contato" method="post" action="http://app.cmais.com.br/index.php/cadastrodeestagiario">
                 <div class="linha t3">
                   <label>nome</label>
                   <input type="text" name="nome" id="nome" class="required" />
@@ -299,6 +300,9 @@
         
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
+            form.submit();
+          },/*
+          submitHandler: function(form){
             $.ajax({
               type: "POST",
               dataType: "text",
@@ -323,7 +327,7 @@
                 }
               }
             });         
-          },
+          },*/
           rules:{
             nome:{
               required: true,
@@ -458,5 +462,26 @@
           limitField.value = limitField.value.substring(0, limitNum);
         else
           $(textCounter).html(limitNum - limitField.value.length);
+      }
+      
+
+      function getVar(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++){
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+      }
+      var success = getVar("success");
+      var error = getVar("error");
+      if(success == 1){
+        $("#form-contato").hide();
+        $(".msgAcerto").show();
+      }else if(error == 1){
+        $("#form-contato").hide();
+        $(".msgErro").show();
       }
     </script>

@@ -107,7 +107,7 @@
                     </div>
                     <hr />
                   </div>
-                <form id="form-contato" method="post" action="">
+                <form id="form-contato" method="post" action="http://app.cmais.com.br/index.php/tvcultura/cultura360/fale-conosco">
                   <div class="linha t1">
                     <label>nome</label>
                     <input type="text" name="nome" id="nome" />
@@ -175,6 +175,7 @@
                     <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
                     <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>                                       
                   </div>
+                  <!--
                   <div class="linha t3 codigo" id="captchaimage">
                     <label for="captcha">Confirma&ccedil;&atilde;o</label>
                     <br />
@@ -186,6 +187,13 @@
                     <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
                     <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                   </div>
+                  -->
+
+                  <div class="linha t3 codigo" id="captchaimage">
+                    <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
+                    <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                  </div>
+                  
                 </form>
               </div>
             </div>
@@ -224,6 +232,9 @@
       	});
       	
       	var validator = $('#form-contato').validate({
+          submitHandler: function(form){
+            form.submit();
+          },/*
       	  submitHandler: function(form){
       	  	$.ajax({
       	  	  type: "POST",
@@ -249,7 +260,7 @@
       	  	    }
       	  	  }
       	  	});					
-      	  },
+      	  },*/
       	  rules:{
             nome:{
               required: true,
@@ -272,11 +283,11 @@
             },
             mensagem:{
               required: true 
-            },
+            }/*,
             captcha: {
               required: true,
               remote: "http://app.cmais.com.br/portal/js/validate/demo/captcha/process.php"
-            }
+            }*/
           },
           messages:{
             nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
@@ -284,8 +295,8 @@
             cidade: "Este campo &eacute; Obrigat&oacute;rio.",
             estado: "Este campo &eacute; Obrigat&oacute;rio.",
             assunto: "Este campo &eacute; Obrigat&oacute;rio.",
-            mensagem: "Este campo &eacute; Obrigat&oacute;rio.",
-            captcha: "Digite corretamente o código que está ao lado."
+            mensagem: "Este campo &eacute; Obrigat&oacute;rio."/*,
+            captcha: "Digite corretamente o código que está ao lado."*/
           },
           success: function(label){
             // set &nbsp; as text for IE
@@ -302,4 +313,25 @@
         else
           $(textCounter).html(limitNum - limitField.value.length);
       }
+
+      function getVar(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++){
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+      }
+      var success = getVar("success");
+      var error = getVar("error");
+      if(success == 1){
+        $("#form-contato").hide();
+        $(".msgAcerto").show();
+      }else if(error == 1){
+        $("#form-contato").hide();
+        $(".msgErro").show();
+      }
+
     </script>

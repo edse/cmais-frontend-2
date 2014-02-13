@@ -66,7 +66,7 @@
                 mp3: "http://midiaserver.tvcultura.com.br:8001/;stream/1",
               }).jPlayer("play");
             },
-            swfPath: "/portal/controle-remoto/swf",
+            swfPath: "http://cmais.com.br/portal/controle-remoto/swf",
             supplied: "mp3",
             //solution: 'html,flash',
             cssSelectorAncestor: "#jp_container_2",
@@ -76,7 +76,7 @@
           $(".jp-volume_controls").hide();
           $(".jp-volume-bar").hide();
          
-          var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','1','1','9');
+          var so = new SWFObject('http://cmais.com.br/portal/js/mediaplayer/player.swf','mpl','1','1','9');
           so.addVariable('autostart', 'true');
           so.addVariable('streamer', 'rtmp://200.136.27.12/live');
           so.addVariable('file', 'radioam');
@@ -94,7 +94,7 @@
              $('.jp-play').hide();
              $('.jp-pause').show();
              
-            var so = new SWFObject('/portal/js/mediaplayer/player.swf','mpl','1','1','9');
+            var so = new SWFObject('http://cmais.com.br/portal/js/mediaplayer/player.swf','mpl','1','1','9');
             so.addVariable('autostart', 'true');
             so.addVariable('streamer', 'rtmp://200.136.27.12/live');
             so.addVariable('file', 'radioam');

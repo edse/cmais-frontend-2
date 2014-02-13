@@ -1,6 +1,6 @@
 <?php
 	$return = '
-		<script type="text/javascript" src="/portal/js/portal.js"></script>
+		<script type="text/javascript" src="http://cmais.com.br/portal/js/portal.js"></script>
 		
     <!-- CAPA SITE -->
     <div id="capa-site" style="margin-top: 0px !important;">
@@ -14,7 +14,7 @@
         <div id="conteudo-pagina">
           <!-- CAPA -->
           <div class="capa grid3">
-          	<link rel="stylesheet" href="/portal/css/geral.css?nocache=12345" type="text/css" />
+          	<link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css?nocache=12345" type="text/css" />
           	
             <!-- TOPO -->
 				    <div id="guia-topo" align="center">

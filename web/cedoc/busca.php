@@ -9,9 +9,9 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet"-->
-    <link href="/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet"-->
-    <link href="/portal/css/tvcultura/sites/cedoc2.css" rel="stylesheet">
+    <link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.css" rel="stylesheet"-->
+    <link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet"-->
+    <link href="http://cmais.com.br/portal/css/tvcultura/sites/cedoc2.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
@@ -30,9 +30,9 @@
   <body>
 
     
-     <link rel="stylesheet" href="/portal/css/tvcultura/sites/topo-fpa.css" type="text/css" />
-<script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="/portal/js/fpa.js"></script>
+     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/topo-fpa.css" type="text/css" />
+<script src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/fpa.js"></script>
 
 <script>
 $.ajax({
@@ -129,21 +129,21 @@ $.ajax({
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script> -->
-    <script type="text/javascript" src="/portal/js/bootstrap/transition.js"></script>
-    <!--<script type="text/javascript" src="/portal/js/bootstrap/alert.js"></script>-->
-    <script type="text/javascript" src="/portal/js/bootstrap/modal.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/dropdown.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/scrollspy.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/tab.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/tooltip.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/popover.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/button.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/collapse.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/carousel.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/typeahead.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/transition.js"></script>
-    <script type="text/javascript" src="/portal/js/bootstrap/transition.js"></script>
+    <!-- <script src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script> -->
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/transition.js"></script>
+    <!--<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/alert.js"></script>-->
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/modal.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/dropdown.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/scrollspy.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/tab.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/tooltip.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/popover.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/button.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/collapse.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/carousel.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/typeahead.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/transition.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/transition.js"></script>
     
    </body>
 </html>

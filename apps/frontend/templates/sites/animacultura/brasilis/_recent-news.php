@@ -9,7 +9,7 @@
                         <img src="<?php echo $d->retriveImageUrlByImageUsage("image-1-b") ?>" alt="<?php echo $d->getTitle() ?>" title="<?php echo $d->getTitle() ?>" style="width: auto" />
                       </a>
                     <?php endif; ?>
-                     
+                      
                       <p><?php echo $d->getDescription() ?></p>
                   </li>
                   

@@ -73,7 +73,7 @@ $(function(){
 
 		<a href="javascript: history.go(-1);" class="maisprogramas" style="margin-bottom: 15px;">Voltar</a>
                 
-                <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+                <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
 
               </div>
               <!-- /NOTICIA INTERNA -->

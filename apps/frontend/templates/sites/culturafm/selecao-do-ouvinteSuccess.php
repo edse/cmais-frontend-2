@@ -47,7 +47,7 @@
                     <hr />
                   </div>
             
-            <form id="form-contato" method="post" action="" class="selecao">
+            <form id="form-contato" method="post" action="http://app.cmais.com.br/index.php/culturafm/selecao-do-ouvinte" class="selecao">
               <div class="linha t3">
                 <label>
                   nome
@@ -149,6 +149,7 @@
               <div class="linha add" id="remover_holder" style="display:none;" style="width:auto; margin-right:20px;">
               	<a href="javascript:;" id="remover" class="enviar" style="width:auto; padding:2px 8px 2px 8px">Remover</a>
               </div>
+              <!--
               <div class="linha t3 codigo" id="captchaimage">
               <label for="captcha">
               Confirma&ccedil;&atilde;o
@@ -162,6 +163,7 @@
               </label>
               <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
               </div>
+              -->
               <div class="linha t3 btn-enviar" >
                 <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                 <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar" />
@@ -202,6 +204,9 @@
       	});
       	
       	var validator = $('#form-contato').validate({
+          submitHandler: function(form){
+            form.submit();
+          },/*
       	  submitHandler: function(form){
       	  	$.ajax({
       	  	  type: "POST",
@@ -227,7 +232,7 @@
       	  	    }
       	  	  }
       	  	});					
-      	  },
+      	  },*/
   	  rules: {
   	  	nome: {
   	  	  required: true,
@@ -300,4 +305,25 @@
     else
       $(textCounter).html(limitNum - limitField.value.length);
   }
+
+      function getVar(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++){
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+      }
+      var success = getVar("success");
+      var error = getVar("error");
+      if(success == 1){
+        $("#form-contato").hide();
+        $(".msgAcerto").show();
+      }else if(error == 1){
+        $("#form-contato").hide();
+        $(".msgErro").show();
+      }
+
 </script>

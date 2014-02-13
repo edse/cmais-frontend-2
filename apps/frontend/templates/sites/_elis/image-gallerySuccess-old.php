@@ -1,7 +1,7 @@
-<link type="text/css" href="/portal/js/orbit/orbit-1.2.3.css" rel="stylesheet" />
-<script type="text/javascript" src="/portal/js/orbit/jquery.orbit-1.2.3.min.js"></script>
-<link rel="stylesheet" href="/portal/css/tvcultura/secoes/programaVideosInterna.css" type="text/css" />
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
+<link type="text/css" href="http://cmais.com.br/portal/js/orbit/orbit-1.2.3.css" rel="stylesheet" />
+<script type="text/javascript" src="http://cmais.com.br/portal/js/orbit/jquery.orbit-1.2.3.min.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/programaVideosInterna.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
 <script type="text/javascript">
 //carrossel
 $(function(){
@@ -109,7 +109,7 @@ $(window).load(function() {
               <!-- /GALERIA DE FOTOS -->
               
               <!-- barra compartilhar -->
-              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
               <!-- /barra compartilhar -->
 
             </div>

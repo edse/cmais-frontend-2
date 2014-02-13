@@ -121,7 +121,7 @@
               </ul>
               <?php endif; ?>
               
-              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
               
             </div>
             <div class="span3 dir">

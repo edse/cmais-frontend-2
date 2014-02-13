@@ -84,7 +84,7 @@
           <?php endif; ?>
           <!-- lista calendario -->
           <!--?php include_partial_from_folder('blocks','global/display-2c', array('displays' => $displays["destaque-principal"])) ?-->
-          <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+          <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
           <?php include_partial_from_folder('blocks','global/display-2c-playlist', array('displays' => $displays["destaque-playlist"])) ?>
           <style type="text/css">		
           #esquerda .box-compartilhar .comentar {

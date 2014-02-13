@@ -74,7 +74,7 @@
         ended: function(event) {
           $(this).jPlayer("play");
         },
-        swfPath: "/portal/js/jPlayer/js",
+        swfPath: "http://cmais.com.br/portal/js/jPlayer/js",
         supplied: "mp3"
       });
       //startclock();

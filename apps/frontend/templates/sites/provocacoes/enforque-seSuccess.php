@@ -134,7 +134,8 @@
                   <p class="icon fecha-form">Vamos, enforque-se na corda da liberdade. Mas só uma vez por dia.</p>
                   <p>Escreva aqui tudo o que você quiser, com toda a liberdade que algum dia talvez não lhe tenham deixado ter. Escreva sobre o Brasil, o mundo, as pessoas, as coisas, tudo. Não importa se os outros amarão ou odiarão suas palavras, desde que respeitem o seu direito de escrevê-las.</p>
                   <p>Aqui você também pode mandar as suas indicações de peças, filmes, eventos, livros, etc.</p>
-                  <form id="form-contato" method="post" action="">
+                  
+                  <form id="form-contato" method="post" action="http://app.cmais.com.br/index.php/tvcultura/provocacoes/enforque-se">
                     <label class="med">Nome
                       <input type="text" name="nome" id="nome" />
                     </label>
@@ -152,6 +153,7 @@
                       <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
                       <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
                     </div>
+                    <!--
                     <div class="codigo" id="captchaimage">
                       <label for="captcha">Confirmação</label>
                       <br />
@@ -159,6 +161,7 @@
                       <label class="msg" for="captcha">Digite no campo abaixo os caracteres que você vê na imagem:</label>
                       <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
                     </div>
+                    -->
                     <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                     <input type="submit" value="confirmar" id="enviar" name="enviar" class="btn">
                     <input type="submit" value="cancelar" id="cancelar" name="cancelar" class="btn">
@@ -269,6 +272,9 @@
       $('#form-contato').clearForm();
     })
     var validator = $('#form-contato').validate({
+      submitHandler: function(form){
+        form.submit();
+      },/*
       submitHandler : function(form) {
         $.ajax({
           type : "POST",
@@ -277,10 +283,6 @@
           beforeSend : function() {
             $('input#enviar').hide();
             $('img#ajax-loader').show();
-            /*$('input#enviar').attr('disabled', 'disabled');
-             $(".msgAcerto").hide();
-             $(".msgErro").hide();
-             $('img#ajax-loader').show();*/
           },
           success : function(data) {
             $('input#enviar').show();
@@ -290,18 +292,13 @@
             if(data == "1") {
               $('.box.msg, .msgAcerto').show();
               $(".box.aberto").hide();
-              /*
-               $("#form-contato").clearForm();
-               $(".msgAcerto").show();
-               $('img#ajax-loader').hide();
-               */
             } else {
               $(".box.msg, .msgErro").show();
               $(".box.aberto").hide();
             }
           }
         });
-      },
+      },*/
       rules : {
         nome : {
           required : true,
@@ -320,19 +317,19 @@
         mensagem : {
           required : true,
           minlength : 2
-        },
+        }/*,
         captcha : {
           required : true,
           remote : "http://app.cmais.com.br/portal/js/validate/demo/captcha/process.php"
-        }
+        }*/
       },
       messages : {
         nome : "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
         idade : "Este campo &eacute; obrigat&oacute;rio.",
         email : "Digite um e-mail v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
         website : "Este campo &eacute; obrigat&oacute;rio.",
-        mensagem : "Este campo &eacute; obrigat&oacute;rio.",
-        captcha : "Digite corretamente o código que está ao lado."
+        mensagem : "Este campo &eacute; obrigat&oacute;rio."/*,
+        captcha : "Digite corretamente o código que está ao lado."*/
       },
       success : function(label) {
         // set &nbsp; as text for IE
@@ -341,7 +338,7 @@
     });
   });
   
-  $('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
+  //$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
   
   // Contador de Caracters
   function limitText(limitField, limitNum, textCounter) {
@@ -350,4 +347,26 @@
     else
       $(textCounter).html(limitNum - limitField.value.length);
   }
+  
+
+  function getVar(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++){
+      var pair = vars[i].split("=");
+      if (pair[0] == variable) {
+        return pair[1];
+      }
+    }
+  }
+  var success = getVar("success");
+  var error = getVar("error");
+  if(success == 1){
+    $("#form-contato").hide();
+    $(".msgAcerto").show();
+  }else if(error == 1){
+    $("#form-contato").hide();
+    $(".msgErro").show();
+  }
+
 </script>

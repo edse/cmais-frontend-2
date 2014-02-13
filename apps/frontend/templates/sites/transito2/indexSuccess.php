@@ -142,7 +142,7 @@
               <script>
               $(function(){
                 $.ajax({
-                  url: "/portal/cams.php?s=ecovias",
+                  url: "http://cmais.com.br/portal/cams.php?s=ecovias",
                   dataType: "json",
                   success: function(data){
                     $.each(data, function(i,data){
@@ -151,7 +151,7 @@
                   }
                 });
                 $.ajax({
-                  url: "/portal/cams.php?s=ecopistas",
+                  url: "http://cmais.com.br/portal/cams.php?s=ecopistas",
                   dataType: "json",
                   success: function(data){
                     $.each(data, function(i,data){

@@ -29,7 +29,7 @@
   <script src="/js/touchcarousel/jquery.touchcarousel-1.1.min.js"></script> 
   <!--/CARROSSEL INDEX-->
   <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-  <script src="/portal/js/portal.js"></script>
+  <script src="http://cmais.com.br/portal/js/portal.js"></script>
   <script>
   /*
 		if ((screen.width * screen.height) / 600 >= 800)
@@ -71,7 +71,7 @@
 <!--Body-->
 </body>
 <!--css-->
-<link rel="stylesheet" href="/portal/css/tvcultura/sites/mob.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/mob.css" type="text/css" />
 <!--/css-->
 
 <!--JQUERY MOBILE-->
@@ -245,15 +245,15 @@
       ?>
       <a href="/noticias" class="first <?php if($noticiaA==true ||$noticiaB==true) echo " pgSelecionada"?>" data-transition="slide" rel="external">
         <p>NOTÍCIAS</p>
-        <!--img src="/portal/images/capaPrograma/mob/btn-noticias.png"/-->
+        <!--img src="http://cmais.com.br/portal/images/capaPrograma/mob/btn-noticias.png"/-->
       </a>
       <a href="/programas" class="middle <?php if($programaA==true) echo " pgSelecionada"?>" data-transition="slide" rel="external">
          <p>PROGRAMAS</p>
-         <!--img src="/portal/images/capaPrograma/mob/btn-programas.png"/-->
+         <!--img src="http://cmais.com.br/portal/images/capaPrograma/mob/btn-programas.png"/-->
       </a>
       <a href="/culturabrasil" class="<?php if($radioA==true || $radioB==true) echo " pgSelecionada"?>" data-transition="slide" rel="external">
          <p>RÁDIO</p>
-         <!--img src="/portal/images/capaPrograma/mob/btn-radio.png"/-->
+         <!--img src="http://cmais.com.br/portal/images/capaPrograma/mob/btn-radio.png"/-->
       </a>  
     </div>  
     

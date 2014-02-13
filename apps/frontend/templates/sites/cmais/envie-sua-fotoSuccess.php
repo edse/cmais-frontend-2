@@ -49,7 +49,7 @@
                     <hr />
                   </div>
                   
-                  <form id="form-contato" method="post" action="/actions/jornalismo/sendmail.php" enctype="multipart/form-data">
+                  <form id="form-contato" method="post" action="http://app.cmais.com.br/actions/jornalismo/sendmail.php" enctype="multipart/form-data">
                     <div class="linha t1">
                       <label>nome</label>
                       <input type="text" name="nome" id="nome" />
