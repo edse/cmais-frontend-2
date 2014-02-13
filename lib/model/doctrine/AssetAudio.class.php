@@ -78,8 +78,8 @@ class AssetAudio extends BaseAssetAudio
 
   public function render(){
 
-    return '<script type="text/javascript" src="/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script><link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="/js/audioplayer/jquery.jplayer.js"></script>
+    return '<script type="text/javascript" src="http://cmais.com.br/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script><link href="http://cmais.com.br/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="http://cmais.com.br/js/audioplayer/jquery.jplayer.js"></script>
   <script type="text/javascript">
    $(document).ready(function(){
     $("#jquery_jplayer_'.$this->getFile().'").jPlayer({
@@ -88,7 +88,7 @@ class AssetAudio extends BaseAssetAudio
           mp3: "http://midia.cmais.com.br/assets/audio/default/'.$this->getFile().'.mp3",
         }).jPlayer("play");
       },
-      swfPath: "/js/audioplayer",
+      swfPath: "http://cmais.com.br/js/audioplayer",
       supplied: "mp3"
     });
   });

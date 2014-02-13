@@ -15,14 +15,14 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
    
     <script src="http://cmais.com.br/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
     <?php echo $noscript; ?> 
-    
+    <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">
     <?php if(isset($_GET['m']) && $_GET['m'] == "2143"):?>
       <meta content="HandheldFriendly" content="true"/>
       <meta content="MobileOptimized" content="320" />
-      <meta content="viewport" content="width=device-width, maximum-scale=2, minimum-scale=2, initial-scale=2, user-scalable=false" /> 
+      <meta content="viewport" content="width=device-width, maximum-scale=2, minimum-scale=2, initial-scale=2, user-scalable=false" />  
       <!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->
       <!-- Le styles -->
-      <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">  
+        
       <?php if(strstr($user_agent, 'iPhone') == true || (strstr($user_agent, 'Android') == true && strstr($user_agent, 'Mobile') == true) || (strstr($user_agent, 'Windows Phone') == true && strstr($user_agent, 'IEMobile') == true)): ?> 
         <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
         <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
