@@ -72,7 +72,7 @@ if(count($block) > 0){
   
   $(document).ready(function(){
     $.ajax({
-      url: "<?php echo url_for("@homepage") ?>ajax/infinitescroll",
+      url: "http://app.cmais.com.br/ajax/infinitescroll",
       data: "page=1&section_id=<?php echo $section->getId()?>&site_id=<?php echo $section->Site->getId()?>&piadas=1",
       success: function(data){
         $('#infinite_scroll').html(data);
