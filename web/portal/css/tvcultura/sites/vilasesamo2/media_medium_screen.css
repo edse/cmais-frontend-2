@@ -68,7 +68,7 @@
 /* Na TV */
 .na-tv .container-na-tv p {float:none!important;max-width:100%!important}
 .na-tv #container-na-tv .container-na-tv{padding-bottom:20px;}
-.na-tv #container-na-tv .container-na-tv p{font-size: 1.1em;float:none;max-width:none; margin:0 0 20px 0;margin:0 auto;}
+.na-tv #container-na-tv .container-na-tv p{font-size: 1.1em;float:none;max-width:100%; margin:0 0 20px 0;margin:0 auto;}
 .na-tv #container-na-tv .container-na-tv {min-height: 900px;}
 .na-tv #content .fundo-na-tv {width:53%; background-size: 83%;position:relative;background-position:center 0;top:10px; left:0;margin:0 auto;}
 .na-tv #container-na-tv .container-na-tv .container-horarios {margin:0 auto;float: none;}
