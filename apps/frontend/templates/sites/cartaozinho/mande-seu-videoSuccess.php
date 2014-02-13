@@ -97,7 +97,7 @@
                     </div>
                     <hr />
                   </div>
-                <form id="form-contato" method="post" action="">
+                <form id="form-contato" method="post" action="http://app.cmais.com.br/index.php/tvcultura/cartaozinho/mande-seu-video">
                   
                   <fieldset>
                     <legend><h1><b>Primeiro passo:</b> Envie seu vídeo</h1></legend><br><br>
@@ -240,7 +240,7 @@
                       <label for="concordo">Declaro que li e concordo com o regulamento</label>
                     </div>
                   
-                
+                  <!--
                   <div class="linha t3 codigo" id="captchaimage">
                     <label for="captcha">Confirma&ccedil;&atilde;o</label>
                     <br />
@@ -251,8 +251,12 @@
                     <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
                     <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer">
                     <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
-                     
-                     
+                  </div>
+                  -->
+                
+                  <div class="linha t3 codigo" id="captchaimage">
+                    <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer">
+                    <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                   </div>
                 </form>
               </div>
@@ -295,6 +299,9 @@
         
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
+            form.submit();
+          },/*
+          submitHandler: function(form){
             $.ajax({
               type: "POST",
               dataType: "text",
@@ -319,7 +326,7 @@
                 }
               }
             });         
-          },
+          },*/
           rules:{
             nome_crianca:{
               required: true,
@@ -347,11 +354,11 @@
             },
             concordo:{
               required: true
-            },
+            }/*,
             captcha: {
               required: true,
               remote: "http://app.cmais.com.br/portal/js/validate/demo/captcha/process.php"
-            }
+            }*/
           },
           messages:{
             nome_crianca: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
@@ -360,8 +367,8 @@
             cidade: "Este campo &eacute; obrigat&oacute;rio.",
             estado: "Este campo &eacute; obrigat&oacute;rio.",
             url: "Digite uma url v&aacute;lida. Este campo &eacute; obrigat&oacute;rio.",
-            concordo: "Este campo &eacute; obrigat&oacute;rio.",
-            captcha: "Digite corretamente o código que está ao lado."
+            concordo: "Este campo &eacute; obrigat&oacute;rio."/*,
+            captcha: "Digite corretamente o código que está ao lado."*/
           },
           success: function(label){
             // set &nbsp; as text for IE
@@ -370,7 +377,7 @@
         });
       });
       
-      $('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
+      //$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
           
       // Contador de Caracters
       function limitText (limitField, limitNum, textCounter)
@@ -380,4 +387,25 @@
         else
           $(textCounter).html(limitNum - limitField.value.length);
       }
+
+      function getVar(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++){
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+      }
+      var success = getVar("success");
+      var error = getVar("error");
+      if(success == 1){
+        $("#form-contato").hide();
+        $(".msgAcerto").show();
+      }else if(error == 1){
+        $("#form-contato").hide();
+        $(".msgErro").show();
+      }
+
     </script>
