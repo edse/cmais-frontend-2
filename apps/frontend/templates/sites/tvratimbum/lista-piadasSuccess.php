@@ -48,7 +48,7 @@ if(count($block) > 0){
   function loadScroll(){
     var page = 2;
     $('#infinite_scroll').scrollLoad({
-      url : '<?php echo url_for('@homepage')?>ajax/infinitescroll',
+      url : 'http://app.cmais.com.br/ajax/infinitescroll',
       getData : function() {
         return "page="+$('#pag').val()+"&section_id=<?php echo $section->getId()?>&site_id=<?php echo $section->Site->getId()?>&piadas=1";
       },

@@ -64,7 +64,7 @@
 		  function loadScroll(){
 		    var page = 2;
 		    $('#infinite_scroll').scrollLoad({
-		      url : 'http://cmais.com.br<?php echo url_for("@homepage") ?>ajax/infinitescroll',
+		      url : 'http://app.cmais.com.br/ajax/infinitescroll',
 		      getData : function() {
 		        return "page="+$('#pag').val()+"&asset_id=49018";
 		      },

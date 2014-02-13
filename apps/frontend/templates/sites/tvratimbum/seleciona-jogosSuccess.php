@@ -74,7 +74,7 @@ $site_id = $_GET['site_id'];
   function loadScroll(){
     var page = 2;
     $('#infinite_scroll').scrollLoad({
-      url : 'http://tvratimbum.cmais.com.br<?php echo url_for("@homepage") ?>ajax/infinitescroll',
+      url : 'http://app.cmais.com.br/ajax/infinitescroll',
       getData : function() {
         return "page="+$('#pag').val()+"&section_id=<?php echo $section_id?>&site_id=<?php echo $site_id?>";
       },
