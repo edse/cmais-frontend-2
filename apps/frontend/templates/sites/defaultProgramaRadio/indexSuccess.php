@@ -101,157 +101,182 @@
                         <script type="text/javascript" src="/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script>
                         <link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
                         <script type="text/javascript" src="/js/audioplayer/jquery.jplayer.min.js"></script>
-                        <script type="text/javascript">
-                        //<![CDATA[
-                        $(document).ready(function(){
-                          
-                          
-                          var Playlist = function(instance, playlist, options) {
-                            var self = this;
-                        
-                            this.instance = instance; // String: To associate specific HTML with this playlist
-                            this.playlist = playlist; // Array of Objects: The playlist
-                            this.options = options; // Object: The jPlayer constructor options for this playlist
-                        
-                            this.current = 0;
-                        
-                            this.cssId = {
-                              jPlayer: "jquery_jplayer_",
-                              interface: "jp_interface_",
-                              playlist: "jp_playlist_"
-                            };
-                            this.cssSelector = {};
-                        
-                            $.each(this.cssId, function(entity, id) {
-                              self.cssSelector[entity] = "#" + id + self.instance;
-                            });
-                        
-                            if(!this.options.cssSelectorAncestor) {
-                              this.options.cssSelectorAncestor = this.cssSelector.interface;
-                            }
-                        
-                            $(this.cssSelector.jPlayer).jPlayer(this.options);
-                        
-                            $(this.cssSelector.interface + " .jp-previous").click(function() {
-                              self.playlistPrev();
-                              $(this).blur();
-                              return false;
-                            });
-                        
-                            $(this.cssSelector.interface + " .jp-next").click(function() {
-                              self.playlistNext();
-                              $(this).blur();
-                              return false;
-                            });
-                          };
-                        
-                          Playlist.prototype = {
-                            displayPlaylist: function() {
-                              var self = this;
-                              $(this.cssSelector.playlist + " ul").empty();
-                              for (i=0; i < this.playlist.length; i++) {
-                                var listItem = (i === this.playlist.length-1) ? "<li class='jp-playlist-last'>" : "<li>";
-                                listItem += "<a href='#' id='" + this.cssId.playlist + this.instance + "_item_" + i +"' tabindex='1'>"+ this.playlist[i].name +"</a><span><a href='"+this.playlist[i].url+"' style='float: right;'>info</a></span>";
-                                // Create links to free media
-                                if(this.playlist[i].free) {
-                                  var first = true;
-                                  listItem += "<div class='jp-free-media'>(";
-                                  $.each(this.playlist[i], function(property,value) {
-                                    if($.jPlayer.prototype.format[property]) { // Check property is a media format.
-                                      if(first) {
-                                        first = false;
-                                      } else {
-                                        listItem += " | ";
-                                      }
-                                      listItem += "<a id='" + self.cssId.playlist + self.instance + "_item_" + i + "_" + property + "' href='" + value + "' tabindex='1'>" + property + "</a>";
-                                    }
-                                  });
-                                  listItem += ")</span>";
-                                }
-                        
-                                listItem += "</li>";
-                        
-                                // Associate playlist items with their media
-                                $(this.cssSelector.playlist + " ul").append(listItem);
-                                $(this.cssSelector.playlist + "_item_" + i).data("index", i).click(function() {
-                                  var index = $(this).data("index");
-                                  if(self.current !== index) {
-                                    self.playlistChange(index);
-                                  } else {
-                                    $(self.cssSelector.jPlayer).jPlayer("play");
-                                  }
-                                  $(this).blur();
-                                  return false;
-                                });
-                        
-                                // Disable free media links to force access via right click
-                                if(this.playlist[i].free) {
-                                  $.each(this.playlist[i], function(property,value) {
-                                    if($.jPlayer.prototype.format[property]) { // Check property is a media format.
-                                      $(self.cssSelector.playlist + "_item_" + i + "_" + property).data("index", i).click(function() {
-                                        var index = $(this).data("index");
-                                        $(self.cssSelector.playlist + "_item_" + index).click();
-                                        $(this).blur();
-                                        return false;
-                                      });
-                                    }
-                                  });
-                                }
-                              }
-                            },
-                            playlistInit: function(autoplay) {
-                              if(autoplay) {
-                                this.playlistChange(this.current);
-                              } else {
-                                this.playlistConfig(this.current);
-                              }
-                            },
-                            playlistConfig: function(index) {
-                              $(this.cssSelector.playlist + "_item_" + this.current).removeClass("jp-playlist-current").parent().removeClass("jp-playlist-current");
-                              $(this.cssSelector.playlist + "_item_" + index).addClass("jp-playlist-current").parent().addClass("jp-playlist-current");
-                              this.current = index;
-                              $(this.cssSelector.jPlayer).jPlayer("setMedia", this.playlist[this.current]);
-                            },
-                            playlistChange: function(index) {
-                              this.playlistConfig(index);
-                              $(this.cssSelector.jPlayer).jPlayer("play");
-                            },
-                            playlistNext: function() {
-                              var index = (this.current + 1 < this.playlist.length) ? this.current + 1 : 0;
-                              this.playlistChange(index);
-                            },
-                            playlistPrev: function() {
-                              var index = (this.current - 1 >= 0) ? this.current - 1 : this.playlist.length - 1;
-                              this.playlistChange(index);
-                            }
-                          };
-                        
-                          var audioPlaylist = new Playlist("1", [
-                          <?php for($i=0; $i<count($audioAssets); $i++): ?>
-                            {
-                              url:"<?php echo $audioAssets[$i]->retriveUrl(); ?>",
-                              name:"<?php echo $audioAssets[$i]->getTitle(); ?>",
-                              mp3:"http://midia.cmais.com.br/assets/audio/default/<?php echo $audioAssets[$i]->AssetAudio->getFile(); ?>.mp3"
-                            }<?php if($i<=count($audioAssets)-1) echo ", "; ?>
-                          <?php endfor; ?>
-                          ], {
-                            ready: function() {
-                              audioPlaylist.displayPlaylist();
-                              audioPlaylist.playlistInit(false); // Parameter is a boolean for autoplay.
-                            },
-                            ended: function() {
-                              audioPlaylist.playlistNext();
-                            },
-                            play: function() {
-                              $(this).jPlayer("pauseOthers");
-                            },
-                            solution:"flash, html",
-                            swfPath: "/js/audioplayer",
-                            supplied: "mp3"
-                          });
-                        });
-                        //]]>
-                        </script>
+					              <script type="text/javascript">
+					              //<![CDATA[
+					              $(document).ready(function(){
+					              
+					                var Playlist = function(instance, playlist, options) {
+					                  
+					                  var self = this;
+					              
+					                  this.instance = instance; // String: To associate specific HTML with this playlist
+					                  this.playlist = playlist; // Array of Objects: The playlist
+					                  this.options = options; // Object: The jPlayer constructor options for this playlist
+					              
+					                  this.current = 0;
+					              
+					                  this.cssId = {
+					                    jPlayer: "jquery_jplayer_",
+					                    interface: "jp_interface_",
+					                    playlist: "jp_playlist_"
+					                  };
+					                  this.cssSelector = {};
+					              
+					                  $.each(this.cssId, function(entity, id) {
+					                    self.cssSelector[entity] = "#" + id + self.instance;
+					                  });
+					              
+					                  if(!this.options.cssSelectorAncestor) {
+					                    this.options.cssSelectorAncestor = this.cssSelector.interface;
+					                  }
+					              
+					                  $(this.cssSelector.jPlayer).jPlayer(this.options);
+					              
+					                  $(this.cssSelector.interface + " .jp-previous").click(function() {
+					                    self.playlistPrev();
+					                    $(this).blur();
+					                    return false;
+					                  });
+					              
+					                  $(this.cssSelector.interface + " .jp-next").click(function() {
+					                    self.playlistNext();
+					                    $(this).blur();
+					                    return false;
+					                  });
+					                };
+					              
+					                Playlist.prototype = {
+					                  displayPlaylist: function() {
+					                  var self = this;
+					                  $(this.cssSelector.playlist + " ul").empty();
+					                  for (i=0; i < this.playlist.length; i++) {
+					                    var listItem = (i === this.playlist.length-1) ? "<li class='jp-playlist-last'>" : "<li>";
+					                    listItem += "<a href='#' id='" + this.cssId.playlist + this.instance + "_item_" + i +"' tabindex='1'>"+ this.playlist[i].name +"</a>";
+					              
+					                    // Create links to free media
+					                    if(this.playlist[i].free) {
+					                      var first = true;
+					                      listItem += "<div class='jp-free-media'>(";
+					                      $.each(this.playlist[i], function(property,value) {
+					                        if($.jPlayer.prototype.format[property]) { // Check property is a media format.
+					                          if(first) {
+					                            first = false;
+					                          } else {
+					                            listItem += " | ";
+					                          }
+					                          listItem += "<a id='" + self.cssId.playlist + self.instance + "_item_" + i + "_" + property + "' href='" + value + "' tabindex='1'>" + property + "</a>";
+					                        }
+					                      });
+					                      listItem += ")</span>";
+					                    }
+					                
+					                    listItem += "</li>";
+					                
+					                    // Associate playlist items with their media
+					                    $(this.cssSelector.playlist + " ul").append(listItem);
+					                    $(this.cssSelector.playlist + "_item_" + i).data("index", i).click(function() {
+					                      var index = $(this).data("index");
+					                      if(self.current !== index) {
+					                        self.playlistChange(index);
+					                      } else {
+					                        $(self.cssSelector.jPlayer).jPlayer("play");
+					                      } 
+					                      $(this).blur();
+					                      return false;
+					                    });
+					                 
+					                    // Disable free media links to force access via right click
+					                    if(this.playlist[i].free) {
+					                      $.each(this.playlist[i], function(property,value) {
+					                        if($.jPlayer.prototype.format[property]) { // Check property is a media format.
+					                          $(self.cssSelector.playlist + "_item_" + i + "_" + property).data("index", i).click(function() {
+					                            var index = $(this).data("index");
+					                            $(self.cssSelector.playlist + "_item_" + index).click();
+					                            $(this).blur();
+					                            return false;
+					                          });
+					                        }
+					                      });
+					                    }
+					                  }
+					                },
+					                playlistInit: function(autoplay) {
+					                	//console.log(this.playlist.length+"teste2");
+					                  if(autoplay) {
+					                    this.playlistChange(this.current);
+					                  } else {
+					                    this.playlistConfig(this.current);
+					                  }
+					                },
+					                playlistConfig: function(index) {
+					                  $(this.cssSelector.playlist + "_item_" + this.current).removeClass("jp-playlist-current").parent().removeClass("jp-playlist-current");
+					                  $(this.cssSelector.playlist + "_item_" + index).addClass("jp-playlist-current").parent().addClass("jp-playlist-current");
+					                  this.current = index;
+					                  $(this.cssSelector.jPlayer).jPlayer("setMedia", this.playlist[this.current]);
+					                },
+					                playlistChange: function(index) {
+					                  this.playlistConfig(index);
+					                  $(this.cssSelector.jPlayer).jPlayer("play");
+					                },
+					                playlistNext: function() {
+					                  var index = (this.current + 1 < this.playlist.length) ? this.current + 1 : 0;
+					                  this.playlistChange(index);
+					                },
+					                playlistPrev: function() {
+					                  var index = (this.current - 1 >= 0) ? this.current - 1 : this.playlist.length - 1;
+					                  this.playlistChange(index);
+					                }
+					              };
+					              
+					              <?php /*
+					                $playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
+					                $audios = $playlist[0]->retriveRelatedAssetsByAssetTypeId(4);
+					               * 
+					               */
+					              ?>
+					              var audioPlaylist = new Playlist("1",
+					              [
+					                <?php 
+					                $cont = 0;
+					                foreach($related_audios as $k=>$d):
+														
+					                ?>
+					                {
+					                  name:"<?php echo $d->getTitle(); ?>",
+					                  mp3:"/uploads/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile(); ?>"
+					                }<?php if($k < (count($related_audios) - 1)): ?>,<?php endif;?>
+					                
+					                <?php
+					                $cont++;
+					                endforeach;
+													
+					                ?>
+					              ],
+					              {
+					                ready: function()
+					                {
+					                  audioPlaylist.displayPlaylist();
+					                  audioPlaylist.playlistInit(true); // Parameter is a boolean for autoplay.
+					                },
+					                ended: function()
+					                {
+					                	
+					                	if(<?php echo $cont ?> <=1){
+					                		audioPlaylist.stop();
+						                }else{
+						                  audioPlaylist.playlistNext(); //vai para a proxima
+						                 }
+					                },
+					                play: function()
+					                {
+					                  $(this).jPlayer("pauseOthers");
+					                },
+					                swfPath: "/js/audioplayer",
+					                supplied: "mp3"
+					              });
+					            });
+					           //]]>
+					          </script>
                         
                         <div id="jquery_jplayer_1" class="jp-jplayer"></div>
                             
