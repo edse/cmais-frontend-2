@@ -13,7 +13,7 @@ $('body').addClass('tvculturaabrace');
     <div id="bg-abrace"></div>
     <!--topo abrace-->
     <div id="topo-abrace">
-      <img src="http://cmais.com.br/portal/images/capaPrograma/culturaabrace/txt_topo.png" alt="TV Cultura"/> 
+      	<h2>TV CULTURA,<br>o canal com a segunda melhor programação do mundo,<br>segundo pesquisa da BBC.</h2>
     </div>  
     <!--/topo abrace-->
     <?php include_partial_from_folder('blocks','global/shortcuts')

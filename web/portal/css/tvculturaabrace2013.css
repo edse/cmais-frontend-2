@@ -1,3 +1,51 @@
+@font-face {
+    font-family: 'GothamMediumRegular';
+    src: url('http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.svg#GothamMediumRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gotham_lightregular';
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-light-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-light-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-light-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-light-webfont.svg#gotham_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gotham_thinregular';
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-thin-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-thin-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-thin-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-thin-webfont.svg#gotham_thinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gotham_bookregular';
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-book-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-book-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-book-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/gotham-family/gotham-book-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 /* topo */
 #guia-topo.menu-tvculturaabrace{background: url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/bg-tudo3abracetv.jpg") repeat-x;position:relative;}
 .menu-tvculturaabrace #menu-portal .menu-aberto .abas .neutro p{color:#333!important;}
@@ -45,6 +93,7 @@ body.tvculturaabrace{background:url("http://cmais.com.br/portal/images/capaProgr
 .tvculturaabrace #capa-site #miolo{margin-top: 0px;}
 .tvculturaabrace #capa-site #bg-abrace{position: absolute;background:#3b7e14 url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/tv_background.jpg") repeat-x;width: 990px;height: 102.5%;z-index: -1;left: 32px;}
 .tvculturaabrace #capa-site #topo-abrace{height:140px;}
+.tvculturaabrace #capa-site #topo-abrace h2{font-family: 'GothamMediumRegular';color: #fff;font-size: 25px;text-align:left;line-height: 38px;margin: 14px 0 0 50px;font-weight: lighter;}
 .tvculturaabrace #capa-site #topo-abrace img{margin: 24px 0 0 -220px;}
 .tvculturaabrace .novoNoAr .enunciado span {background:url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/ponta-destaque-newabrace.png") no-repeat !important;}
 .tvculturaabrace .novoNoAr .enunciado h2 {background-color: #0d6101;color: #fff;}
@@ -62,6 +111,42 @@ body.tvculturaabrace{background:url("http://cmais.com.br/portal/images/capaProgr
 .tvculturaabrace #menu-rodape .blocos a{color:#0d6104!important;}
 .tvculturaabrace #menu-rodape .abas-conteudo {overflow: hidden;height:270px}
 .tvculturaabrace #menu-rodape .conteudo-lista{height: 215px;}
+/* minha cultura */
+.tvculturaabrace #menu-rodape .abas .minha-cultura.ativo span,
+.tvculturaabrace #menu-rodape .abas .minha-cultura:hover span { background-position: 0 -66px; left:61px; }/*era  bg pos 0 0*/
+/* /minha cultura */
+
+/* musica */
+.tvculturaabrace #menu-rodape .abas .musica.ativo a,
+.tvculturaabrace #menu-rodape .abas .musica:hover a { background:#369ae3; }
+.tvculturaabrace #menu-rodape .abas .musica.ativo span,
+.tvculturaabrace #menu-rodape .abas .musica:hover span { background-position: 0 -66px; left:31px; }
+/* jornalismo */
+.tvculturaabrace #menu-rodape .abas .jornalismo.ativo a ,
+.tvculturaabrace #menu-rodape .abas .jornalismo:hover a { background:#ff6633; }
+.tvculturaabrace #menu-rodape .abas .jornalismo.ativo span,
+.tvculturaabrace #menu-rodape .abas .jornalismo:hover span { background-position: 0 -66px; left:50px; }
+/* /jornalismo */
+
+/* educacao */
+.tvculturaabrace#menu-rodape .abas .educacao.ativo a ,
+.tvculturaabrace #menu-rodape .abas .educacao:hover a  { background:#96a84c; }
+.tvculturaabrace #menu-rodape .abas .educacao.ativo span,
+.tvculturaabrace #menu-rodape .abas .educacao:hover span { background-position: 0 -66px; left:43px; }
+/* /educacao */
+
+/* infantil */
+.tvculturaabrace #menu-rodape .abas .infantil.ativo a,
+.tvculturaabrace #menu-rodape .abas .infantil:hover a  { background:#dcaf00; }
+.tvculturaabrace #menu-rodape .abas .infantil.ativo span,
+.tvculturaabrace #menu-rodape .abas .infantil:hover span { background-position: 0 -66px; left:35px; }
+/* /infantil */
+
+/* arte-cultura */
+.tvculturaabrace #menu-rodape .abas .arte-cultura.ativo a,
+.tvculturaabrace #menu-rodape .abas .arte-cultura:hover a  { background:#9d44d5; }
+.tvculturaabrace #menu-rodape .abas .arte-cultura.ativo span,
+.tvculturaabrace #menu-rodape .abas .arte-cultura:hover span { background-position: 0 -66px; left:63px; }
 .tvculturaabrace #rodape-portal {margin-top: -25px;}
 .tvculturaabrace .capa-voltar-topo {padding-left:33px}
 .tvculturaabrace .proximasAtracoes .proximasAtracoes-box p a{color:#0d6101;}
