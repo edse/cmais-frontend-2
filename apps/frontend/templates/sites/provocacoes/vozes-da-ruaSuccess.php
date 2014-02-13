@@ -112,7 +112,8 @@
                 <div class="box aberto" style="display:none;">
                   <p class="icon fecha-form">Mande seus vídeos, fotos, áudios e textos.</p>
                   <p>Nos provoquem.</p>
-                  <form id="form-contato" method="post" action="">
+                  
+                  <form id="form-contato" method="post" action="http://app.cmais.com.br/index.php/tvcultura/provocacoes/vozes-da-rua">
                     <label class="grd">Nome
                       <input type="text" name="nome" id="nome" />
                     </label>
@@ -288,6 +289,9 @@
 			$('#form-contato').clearForm();
 		})
 		var validator = $('#form-contato').validate({
+      submitHandler: function(form){
+        form.submit();
+      },/*
 			submitHandler : function(form) {
 				$.ajax({
 					type : "POST",
@@ -296,31 +300,21 @@
 					beforeSend : function() {
 						$('input#enviar').hide();
 						$('img#ajax-loader').show();
-						/*$('input#enviar').attr('disabled', 'disabled');
-						 $(".msgAcerto").hide();
-						 $(".msgErro").hide();
-						 $('img#ajax-loader').show();*/
 					},
 					success : function(data) {
 						$('input#enviar').show();
 						$('img#ajax-loader').hide();
 						window.location.href = "#";
-
 						if (data == "1") {
 							$('.box.msg, .msgAcerto').show();
 							$(".box.aberto").hide();
-							/*
-							 $("#form-contato").clearForm();
-							 $(".msgAcerto").show();
-							 $('img#ajax-loader').hide();
-							 */
 						} else {
 							$(".box.msg, .msgErro").show();
 							$(".box.aberto").hide();
 						}
 					}
 				});
-			},
+			},*/
 			rules : {
 				nome : {
 					required : true,
@@ -350,11 +344,11 @@
 				},
 				concordo : {
 					required : true
-				},
+				}/*,
 				captcha : {
 					required : true,
 					remote : "http://app.cmais.com.br/portal/js/validate/demo/captcha/process.php"
-				}
+				}*/
 			},
 			messages : {
 				nome : "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
@@ -364,8 +358,8 @@
 				titulo : "Este campo &eacute; obrigat&oacute;rio.",
 				mensagem : "Este campo &eacute; obrigat&oacute;rio.",
 				escreva : "Este campo &eacute; obrigat&oacute;rio.",
-				concordo : "Este campo &eacute; obrigat&oacute;rio.",
-				captcha : "Digite corretamente o código que está ao lado."
+				concordo : "Este campo &eacute; obrigat&oacute;rio."/*,
+				captcha : "Digite corretamente o código que está ao lado."*/
 			},
 			success : function(label) {
 				// set &nbsp; as text for IE
@@ -374,7 +368,7 @@
 		});
 	});
 	
-	$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
+	//$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
 	
 	// Contador de Caracters
 	function limitText(limitField, limitNum, textCounter) {
@@ -383,4 +377,24 @@
 		else
 			$(textCounter).html(limitNum - limitField.value.length);
 	}
+
+  function getVar(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++){
+      var pair = vars[i].split("=");
+      if (pair[0] == variable) {
+        return pair[1];
+      }
+    }
+  }
+  var success = getVar("success");
+  var error = getVar("error");
+  if(success == 1){
+    $("#form-contato").hide();
+    $(".msgAcerto").show();
+  }else if(error == 1){
+    $("#form-contato").hide();
+    $(".msgErro").show();
+  }
 </script>

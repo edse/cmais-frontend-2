@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/videos.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
-<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript">
 $(function(){
   //carrossel
@@ -47,27 +46,14 @@ $(function(){
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
-<div id="bg-chamada">
-<?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
-</div>
-
-<div id="bg-topo"></div>
-
-<div id="bg-paula">
-
     <!-- / CAPA SITE -->
     <div id="capa-site">
+
+      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
 
       <!-- BARRA SITE -->
       <div id="barra-site">
         <div class="topo-programa">
-          <?php if(isset($program) && $program->id > 0): ?>
-          <h2>
-            <a href="<?php echo $program->retriveUrl() ?>">
-              <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
-            </a>
-          </h2>
-          <?php endif; ?>
 
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
@@ -129,7 +115,7 @@ $(function(){
             <!-- /ESQUERDA -->
 
             <!-- DIREITA -->
-            <div id="direita" class="grid1" style="margin-top:-20px;">
+            <div id="direita" class="grid1">
 
               <?php include_partial_from_folder('blocks','global/display-1c-list-carrossel', array('displays' => $vid1)) ?>
 
@@ -164,12 +150,24 @@ $(function(){
           </div>
           <!-- /CAPA -->
 
+          <!-- MENU-RODAPE -->
+          <?php include_partial_from_folder('blocks','global/display-3c-last-videos', array('displays' => $vid2)) ?>
+          <!-- /MENU-RODAPE -->
+
+          <!-- BOX PUBLICIDADE 2 -->
+          <div class="box-publicidade pub-grd grid3">
+            <!-- programas-assets-728x90 -->
+            <script type='text/javascript'>
+            GA_googleFillSlot("cmais-assets-728x90");
+            </script>
+          </div>
+          <!-- / BOX PUBLICIDADE 2 -->
+
         </div>
         <!-- /CONTEUDO PAGINA -->
       </div>
       <!-- /MIOLO -->
     </div>
     <!-- / CAPA SITE -->
-     </div>
 
 

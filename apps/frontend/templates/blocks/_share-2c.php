@@ -1,3 +1,7 @@
+<?php
+if(isset($asset))
+  $uri = $asset->retriveUrl();
+?>
               <div class="rodape-cmais">
                 <p>
                   O <a href="http://cmais.com.br?origem=<?php echo $uri ?>" title="cmais+ O portal de conteúdo da Cultura">cmais+</a> é o portal de conteúdo da Cultura e reúne os canais <a href="http://tvcultura.cmais.com.br?origem=<?php echo $uri ?>" title="TV Cultura">TV Cultura</a>, <a href="http://univesptv.cmais.com.br?origem=<?php echo $uri ?>" title="UnivespTV">UnivespTV</a>, <a href="http://multicultura.cmais.com.br?origem=<?php echo $uri ?>" title="MultiCultura">MultiCultura</a>,

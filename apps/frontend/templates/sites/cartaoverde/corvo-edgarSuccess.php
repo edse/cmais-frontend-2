@@ -174,7 +174,7 @@
                     </div>
                     <hr />
                   </div>
-	         	  <form id="form-contato" method="post" action="">
+                  <form id="form-contato" method="post" action="http://app.cmais.com.br/index.php/tvcultura/cartaoverde/corvo-edgar">
                     <div class="linha t1">
                       <label>nome</label>
                       <input type="text" name="nome" id="nome" />
@@ -193,17 +193,23 @@
                       <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>                                       
                     </div>
                     <div class="linha t3 codigo" id="captchaimage">
-                  	  <label for="captcha">Confirmação</label>
+                      <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
+                      <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                    </div>
+                    <!--                                 
+                    <div class="linha t3 codigo" id="captchaimage">
+                      <label for="captcha">Confirmação</label>
                       <br />
                       <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
                         <img src="http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
                       </a>
                       <label class="msg" for="captcha">Digite no campo abaixo os caracteres que você vê na imagem:</label>
- 					  <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
+                      <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
                       <br />
                       <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
                       <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
-                    </div>                                 
+                    </div>            
+                    -->                     
                   </form>
 	         	</div>	              	         		
 	         </div>
@@ -236,6 +242,10 @@
       	});
       	
       	var validator = $('#form-contato').validate({
+          submitHandler: function(form){
+            form.submit();
+          },
+      	  /*
       	  submitHandler: function(form){
       	  	$.ajax({
       	  	  type: "POST",
@@ -261,7 +271,7 @@
       	  	    }
       	  	  }
       	  	});					
-      	  },
+      	  },*/
       	  rules:{
             nome:{
               required: true,
@@ -296,11 +306,11 @@
               required: true,
               minlength: 3,
               url: true            
-            },
+            }/*,
             captcha: {
               required: true,
               remote: "http://app.cmais.com.br/portal/js/validate/demo/captcha/process.php"
-            }
+            }*/
           },
           messages:{
             nome: "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
@@ -312,8 +322,8 @@
             website: "Este campo &eacute; obrigat&oacute;rio.",
             titulo: "Este campo &eacute; obrigat&oacute;rio.",
             concordo: "Voc&ecirc; precisa concordar com o regulamento.",
-            url: "Este campo &eacute; obrigat&oacute;rio.",
-            captcha: "Digite corretamente o código que está ao lado."
+            url: "Este campo &eacute; obrigat&oacute;rio."/*,
+            captcha: "Digite corretamente o código que está ao lado."*/
           },
           // set this class to error-labels to indicate valid fields
           success: function(label){
@@ -323,8 +333,8 @@
         });
       });
       
-      $('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
-       
+      //$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
+
       // Contador de Caracters
       function limitText (limitField, limitNum, textCounter)
       {
@@ -333,6 +343,24 @@
         else
           $(textCounter).html(limitNum - limitField.value.length);
       }
-    </script>
-    
 
+      function getVar(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++){
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+      }
+      var success = getVar("success");
+      var error = getVar("error");
+      if(success == 1){
+        $("#form-contato").hide();
+        $(".msgAcerto").show();
+      }else if(error == 1){
+        $("#form-contato").hide();
+        $(".msgErro").show();
+      }
+    </script>

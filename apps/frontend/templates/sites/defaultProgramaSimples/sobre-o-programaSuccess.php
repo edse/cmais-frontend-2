@@ -78,7 +78,7 @@
 
               <!-- /NOTICIA INTERNA -->
 
-              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
 
             </div>
             

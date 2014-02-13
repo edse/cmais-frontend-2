@@ -77,7 +77,7 @@ $(function(){ //onready
               
               <?php include_partial_from_folder('sites/castelo','global/display-2c', array('displays' => $displays["destaque-principal"])) ?>
 
-              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
               
             </div>
             <!-- /ESQUERDA -->

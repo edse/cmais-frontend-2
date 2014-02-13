@@ -1515,6 +1515,10 @@ class _sectionActions extends sfActions
             $cabecalho .= "MIME-Version: 1.0\r\n";
             $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
             $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
+            
+            //echo($email_site.', ['.$this->site->getTitle().']['.$this->section->getTitle().'] '.$nome_user.' <'.$email_user.'>, '.stripslashes(nl2br($msg)).', '.$cabecalho);
+            //die();
+            
             if(mail($email_site, '['.$this->site->getTitle().']['.$this->section->getTitle().'] '.$nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho)){
               //die("1");
               header("Location: ".$_SERVER["HTTP_REFERER"]."?success=1");
@@ -1523,6 +1527,7 @@ class _sectionActions extends sfActions
               //die("0");
               header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
             }
+            die("asdf");
           /*
           }
           else {
@@ -1732,7 +1737,7 @@ class _sectionActions extends sfActions
       $pagelimit = 99;
       $this->setLayout(false);
     }     
-		
+    
     if(!isset($pagelimit))
       $pagelimit = 9;
 
@@ -1838,9 +1843,9 @@ class _sectionActions extends sfActions
     if(strstr($_SERVER['HTTP_USER_AGENT'],'iPad')){
       $this->ipad = true;
     }
-    
+
     if(isset($this->category) && ($this->section->Parent->id > 0)){
-      
+    	
       if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
         if($debug) print "<br1>>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
@@ -1857,8 +1862,12 @@ class _sectionActions extends sfActions
             if($debug) print "<br>2-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsectionColunista';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsectionColunista');
           }
+					else if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug().'Success.php')){
+            if($debug) print "<br>2-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug().'Success.php';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug());
+          }
           else {
-            if($debug) print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection';
+            if($debug) print "<br>2000000>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection');
           }
         }
@@ -1879,10 +1888,10 @@ class _sectionActions extends sfActions
       }
     }
     elseif($this->section->Parent->id > 0){
-      if($this->site->getType() == "Hotsite" || $this->site->getType() == 1){
+      if($this->site->getType() == "Hotsite" || $this->site->getType() == 1 || $this->site->getSlug() == "quintaldacultura"){
+      	$parentSection = $this->section->getParent();
         if(in_array($this->site->getSlug(), array("vilasesamo"))) {
           $this->setLayout("vilasesamo");
-          $parentSection = $this->section->getParent();
           if($parentSection->getSlug() == "personagens") {
             if($debug) print "<br>4-4-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/personagem';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/personagem');          
@@ -1902,6 +1911,10 @@ class _sectionActions extends sfActions
             }
           }
         }
+				else if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug().'Success.php')){
+          if($debug) print "<br>4-0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug().'Success.php';
+          $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug());
+        }
         elseif(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
           if($debug) print "<br>4-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
@@ -1911,7 +1924,7 @@ class _sectionActions extends sfActions
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->section->Parent->getSlug());
         }
         elseif(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsectionSuccess.php')){
-          if($debug) print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection';
+          if($debug) print "<br>4-4>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection');
         }
         else{
@@ -1924,7 +1937,7 @@ class _sectionActions extends sfActions
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
       }
       elseif(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsectionSuccess.php')){
-        if($debug) print "<br>2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection';
+        if($debug) print "<br>222222222222>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection';
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsection');
       }
       elseif(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPrograma/'.$sectionSlug.'Success.php')){
@@ -2142,7 +2155,7 @@ $this->page = 1;
         }
       }
     } 
-
+  
   }
 
   public function executeArtista(sfWebRequest $request){

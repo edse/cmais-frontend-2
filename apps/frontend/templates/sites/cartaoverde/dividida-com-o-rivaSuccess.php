@@ -112,7 +112,7 @@ $(function(){ //onready
                     <hr />
                   </div>
                   
-                  <form id="form-contato" method="post" action="/actions/cartao/sendmail.php" enctype="multipart/form-data">
+                  <form id="form-contato" method="post" action="http://app.cmais.com.br/actions/cartao/sendmail.php" enctype="multipart/form-data">
                     <div class="linha t1">
                       <label>nome</label>
                       <input type="text" name="nome" id="nome" />
@@ -259,7 +259,17 @@ $(function(){ //onready
         });
       });
 
-      function getSuccess(variable) {
+      // Contador de Caracters
+      function limitText (limitField, limitNum, textCounter)
+      {
+        if (limitField.value.length > limitNum)
+          limitField.value = limitField.value.substring(0, limitNum);
+        else
+          $(textCounter).html(limitNum - limitField.value.length);
+      }
+
+
+      function getVar(variable) {
         var query = window.location.search.substring(1);
         var vars = query.split("&");
         for (var i=0;i<vars.length;i++){
@@ -269,18 +279,13 @@ $(function(){ //onready
           }
         }
       }
-      var success = getSuccess("success");
-      if(success == 1 || success == 2){
+      var success = getVar("success");
+      var error = getVar("error");
+      if(success == 1){
         $("#form-contato").hide();
         $(".msgAcerto").show();
-      }
-
-      // Contador de Caracters
-      function limitText (limitField, limitNum, textCounter)
-      {
-        if (limitField.value.length > limitNum)
-          limitField.value = limitField.value.substring(0, limitNum);
-        else
-          $(textCounter).html(limitNum - limitField.value.length);
+      }else if(error == 1){
+        $("#form-contato").hide();
+        $(".msgErro").show();
       }
     </script>

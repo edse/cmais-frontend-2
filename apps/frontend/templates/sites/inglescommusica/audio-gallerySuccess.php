@@ -288,7 +288,7 @@ $(document).ready(function(){
                 
                 <?php if($asset->AssetAudioGallery->getHeadline() != "") echo '<div style="float: left; margin-left: 15px;">'.$asset->AssetAudioGallery->getHeadline().'</div>'; ?>
                 
-                <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+                <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
 
               </div>
               <!-- /NOTICIA INTERNA -->

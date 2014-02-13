@@ -133,7 +133,7 @@
                   <p class="dataPost">Programa exibido em <?php echo format_date($asset->getCreatedAt(),'D') ?></p>
                   <p class="post"><?php echo $asset->getDescription();  ?></p><p>
                  <!-- barra compartilhar -->
-              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri)) ?>
+              <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
               <!-- /barra compartilhar -->
 
                   </div>

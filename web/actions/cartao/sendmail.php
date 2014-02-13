@@ -1,8 +1,12 @@
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors','On');
+
 include("../includes/functions.php");
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-  if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
+  //if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
   
     $to = "julianagaldeano@tvcultura.com.br";
     $email = strip_tags($_REQUEST['email']);
@@ -24,5 +28,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       header("Location: http://tvcultura.cmais.com.br/cartaoverde/dividida-com-o-riva?error=4");
       die();
     }
-  }
+  //}
 }
