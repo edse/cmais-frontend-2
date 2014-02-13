@@ -107,7 +107,7 @@ footer .relacionados h1{margin-left:5%;width: 90%;}
 .na-tv #container-na-tv .container-na-tv .container-horarios .box-horario {width: 98% ;float: left ;margin: 0  ;}
 .na-tv #container-na-tv .container-na-tv .container-horarios {width:100% ;max-height: none ;float:none ;}
 .na-tv #container-na-tv .container-na-tv .container-horarios .img-logo{width:100%;}
-.na-tv .fundo-na-tv {width:100%;bottom:0;background-size: 60%;}
+.na-tv #container-na-tv .fundo-na-tv {width:100%; bottom:0; background-size: 60%;}
 
 /*  Pais */
 .cuidadores .selecione .barra-selecao {}
