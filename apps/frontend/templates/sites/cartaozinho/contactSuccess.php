@@ -274,11 +274,11 @@
             },
             mensagem:{
               required: true
-            },
+            }/*,
             captcha: {
               required: true,
               remote: "http://app.cmais.com.br/portal/js/validate/demo/captcha/process.php"
-            }
+            }*/
           },
           messages:{
             nome: "Digite um nome v&aacute;lido. Este campo &eacute; Obrigat&oacute;rio.",
