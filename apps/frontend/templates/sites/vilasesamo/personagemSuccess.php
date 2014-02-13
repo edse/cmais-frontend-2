@@ -103,7 +103,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       
       <!--quadro com imagem do personagem -->
       <div class="span4 pull-left" tabindex="0" aria-label="Imagem ilustrativa da personagem <?php echo $section->getTitle() ?>"> <!--Acessibilidade: descreve a imagem do nome do personagem-->
-        <img src="/portal/images/capaPrograma/vilasesamo2/personagens/vs_img_personagem-<?php echo $section->getSlug() ?>-ilustra.png" alt="<?php echo $section->getTitle() ?>"/>
+        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/vs_img_personagem-<?php echo $section->getSlug() ?>-ilustra.png" alt="<?php echo $section->getTitle() ?>"/>
       </div>
       <!--/quadro com imagem do personagem -->
       
@@ -134,7 +134,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                   <?php endif; ?>
                   <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
                   <div class="texto">
-                    <img class="altura"src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="" aria-label="<?php echo $assetSection->getSlug(); ?>"/>
+                    <img class="altura"src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png" alt="" aria-label="<?php echo $assetSection->getSlug(); ?>"/>
                     <p><?php echo $d->getTitle() ?></p>
                     <?php if($preview):?>
                       <?php
@@ -212,7 +212,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                   <img src="<?php echo $related[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
                 <?php endif; ?>
                 <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
-                <div><img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="<?php echo $assetSection->getSlug() ?>"/><?php echo $d->getTitle() ?></div>
+                <div><img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png" alt="<?php echo $assetSection->getSlug() ?>"/><?php echo $d->getTitle() ?></div>
               </a>
             </li>
         <?php endforeach; ?>

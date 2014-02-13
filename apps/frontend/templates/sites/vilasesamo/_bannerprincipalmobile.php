@@ -15,7 +15,7 @@
               <li class="slide0<?php echo $k; ?>" data-easing="easeInExpo" data-transition="slideLeft" style="background: url(<?php echo "http://midia.cmais.com.br/displays/".$d->getImage(); ?>) no-repeat center center; background-size:90%">
                 <div class="mpc_ls_slide_item" data-x="0" data-y="0" data-delay="10" data-duration="100" data-easing="easeOutBack" data-effect="slideLeft" data-fade="on" style="position:absolute;width:100%; height:100%; display:block;" >
                   <a href="<?php echo $d->getUrl(); ?>" title="<?php echo $d->getTitle(); ?>" style="display: block; position:absolute; width:300%; height: 100%!important" >
-                    <img src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
+                    <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
                   </a>
                 </div>
               </li>

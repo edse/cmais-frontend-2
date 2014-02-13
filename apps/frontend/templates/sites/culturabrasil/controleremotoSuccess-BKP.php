@@ -66,7 +66,7 @@
                 mp3: "http://midiaserver.tvcultura.com.br:8001/;stream/1",
               }).jPlayer("play");
             },
-            swfPath: "/portal/controle-remoto/swf",
+            swfPath: "http://cmais.com.br/portal/controle-remoto/swf",
             supplied: "mp3",
             //solution: 'html,flash',
             cssSelectorAncestor: "#jp_container_2",

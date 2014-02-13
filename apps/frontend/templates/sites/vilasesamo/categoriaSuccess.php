@@ -263,7 +263,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               ?>
               <i class="icones-sprite-interna icone-<?php echo $AssetSection; ?>-pequeno"></i>
               <div>
-                <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                <img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>
                 <?php echo $d->getTitle() ?>
               </div>
             </a>

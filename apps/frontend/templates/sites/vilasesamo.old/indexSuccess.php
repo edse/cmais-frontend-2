@@ -55,7 +55,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <?php endif; ?>
             <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
             <div class="texto">
-              <img class="altura"src="/portal/images/capaPrograma/vilasesamo2/altura.png" alt="" aria-label="<?php echo $assetSection->getSlug(); ?>"/>
+              <img class="altura"src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png" alt="" aria-label="<?php echo $assetSection->getSlug(); ?>"/>
               <?php echo $d->getTitle() ?>
               <?php if($preview):?>
                 <?php

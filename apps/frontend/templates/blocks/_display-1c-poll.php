@@ -25,7 +25,7 @@
                         <img src="/images/spinner_bar.gif" style="display: none" id="v_load" />
                       </form>
                       </div>
-                      <script type="text/javascript" src="/portal/js/validate/jquery.validate.js"></script>
+                      <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
                       <script>
                         $(document).ready(function(){
                           var validator = $('#e<?php echo $displays[0]->Asset->getId()?>').validate({
