@@ -1073,7 +1073,16 @@ class ajaxActions extends sfActions
           
         //}
       }
-      echo $return;
+      
+      
+			if($request->getParameter('callback') == ""){
+				echo $return;
+			}else{
+				$json = json_encode($return);
+	    	$callback = $request->getParameter('callback');
+	    	echo $callback.'('. $json . ');';
+			}
+			
     //}
     die();
   }
