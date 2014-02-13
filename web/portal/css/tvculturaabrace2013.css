@@ -60,6 +60,44 @@ body.tvculturaabrace{background:url("http://cmais.com.br/portal/images/capaProgr
 .tvculturaabrace p,
 .tvculturaabrace .conteudo a{color:#fff!important;}
 .tvculturaabrace #menu-rodape .blocos a{color:#0d6104!important;}
+.tvculturaabrace #menu-rodape .abas-conteudo {overflow: hidden;height:270px}
+.tvculturaabrace #menu-rodape .conteudo-lista{height: 215px;}
+/* minha cultura */
+.tvculturaabrace #menu-rodape .abas .minha-cultura.ativo span,
+.tvculturaabrace #menu-rodape .abas .minha-cultura:hover span { background-position: 0 -66px; left:61px; }/*era  bg pos 0 0*/
+/* /minha cultura */
+
+/* musica */
+.tvculturaabrace #menu-rodape .abas .musica.ativo a,
+.tvculturaabrace #menu-rodape .abas .musica:hover a { background:#369ae3; }
+.tvculturaabrace #menu-rodape .abas .musica.ativo span,
+.tvculturaabrace #menu-rodape .abas .musica:hover span { background-position: 0 -66px; left:31px; }
+/* jornalismo */
+.tvculturaabrace #menu-rodape .abas .jornalismo.ativo a ,
+.tvculturaabrace #menu-rodape .abas .jornalismo:hover a { background:#ff6633; }
+.tvculturaabrace #menu-rodape .abas .jornalismo.ativo span,
+.tvculturaabrace #menu-rodape .abas .jornalismo:hover span { background-position: 0 -66px; left:50px; }
+/* /jornalismo */
+
+/* educacao */
+.tvculturaabrace #menu-rodape .abas .educacao.ativo a ,
+.tvculturaabrace #menu-rodape .abas .educacao:hover a  { background:#96a84c; }
+.tvculturaabrace #menu-rodape .abas .educacao.ativo span,
+.tvculturaabrace #menu-rodape .abas .educacao:hover span { background-position: 0 -66px; left:43px; }
+/* /educacao */
+
+/* infantil */
+.tvculturaabrace #menu-rodape .abas .infantil.ativo a,
+.tvculturaabrace #menu-rodape .abas .infantil:hover a  { background:#dcaf00; }
+.tvculturaabrace #menu-rodape .abas .infantil.ativo span,
+.tvculturaabrace #menu-rodape .abas .infantil:hover span { background-position: 0 -66px; left:35px; }
+/* /infantil */
+
+/* arte-cultura */
+.tvculturaabrace #menu-rodape .abas .arte-cultura.ativo a,
+.tvculturaabrace #menu-rodape .abas .arte-cultura:hover a  { background:#9d44d5; }
+.tvculturaabrace #menu-rodape .abas .arte-cultura.ativo span,
+.tvculturaabrace #menu-rodape .abas .arte-cultura:hover span { background-position: 0 -66px; left:63px; }
 .tvculturaabrace #rodape-portal {margin-top: -25px;}
 .tvculturaabrace .capa-voltar-topo {padding-left:33px}
 .tvculturaabrace .proximasAtracoes .proximasAtracoes-box p a{color:#0d6101;}
