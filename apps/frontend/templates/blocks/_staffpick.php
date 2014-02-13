@@ -3,7 +3,6 @@
               ->select('a.*')
               ->from('Asset a, AssetVideo av')
               ->where('a.id = av.asset_id')
-              ->andWhere('a.site_id != 1149')
               ->andWhere('a.is_active = 1')
               ->andWhere('a.asset_type_id = 6')
               ->andWhere("av.youtube_id != ''")
@@ -15,7 +14,6 @@
               ->select('a.*')
               ->from('Asset a, AssetVideo av')
               ->where('a.id = av.asset_id')
-              ->andWhere('a.site_id != 1149')
               ->andWhere('a.is_active = 1')
               ->andWhere('a.category_id = 2')
               ->andWhere('a.asset_type_id = 6')
@@ -28,7 +26,6 @@
               ->select('a.*')
               ->from('Asset a, AssetVideo av')
               ->where('a.id = av.asset_id')
-              ->andWhere('a.site_id != 1149')
               ->andWhere('a.is_active = 1')
               ->andWhere('a.category_id = 4')
               ->andWhere('a.asset_type_id = 6')
@@ -41,7 +38,6 @@
               ->select('a.*')
               ->from('Asset a, AssetVideo av')
               ->where('a.id = av.asset_id')
-              ->andWhere('a.site_id != 1149')
               ->andWhere('a.is_active = 1')
               ->andWhere('a.category_id = 1')
               ->andWhere('a.asset_type_id = 6')
@@ -54,7 +50,6 @@
               ->select('a.*')
               ->from('Asset a, AssetVideo av')
               ->where('a.id = av.asset_id')
-              ->andWhere('a.site_id != 1149')
               ->andWhere('a.is_active = 1')
               ->andWhere('a.category_id = 3')
               ->andWhere('a.asset_type_id = 6')
@@ -67,7 +62,6 @@
               ->select('a.*')
               ->from('Asset a, AssetVideo av')
               ->where('a.id = av.asset_id')
-              ->andWhere('a.site_id != 1149')
               ->andWhere('a.is_active = 1')
               ->andWhere('a.category_id = 5')
               ->andWhere('a.asset_type_id = 6')
@@ -80,7 +74,6 @@
               ->select('a.*')
               ->from('Asset a, AssetVideo av')
               ->where('a.id = av.asset_id')
-              ->andWhere('a.site_id != 1149')
               ->andWhere('a.is_active = 1')
               ->andWhere('a.category_id = 6')
               ->andWhere('a.asset_type_id = 6')
@@ -93,7 +86,6 @@
               ->select('a.*')
               ->from('Asset a, AssetVideo av')
               ->where('a.id = av.asset_id')
-              ->andWhere('a.site_id != 1149')
               ->andWhere('a.is_active = 1')
               ->andWhere('a.category_id = 7')
               ->andWhere('a.asset_type_id = 6')
@@ -133,10 +125,10 @@
                 </div>
               </div>
               <!-- / BLOCOS --><!-- BLOCOS -->
-              <div id="musica" class="filho blocos" style="display:none;">
+              <div id="musica" class="filho blocos" style="display:block;">
                 <div class="carrossel">
                   <?php if(isset($musica)): ?>
-                  <ul class="musica" style="width:1760px;!important">
+                  <ul class="musica">
                     <?php foreach($musica as $d): ?>
                     <li>
                       <div class="conteudo-lista">
@@ -152,7 +144,7 @@
                 </div>
               </div>
               <!-- / BLOCOS --><!-- BLOCOS -->
-              <div id="jornalismo" class="filho blocos" style="display:none;">
+              <div id="jornalismo" class="filho blocos" style="display:block;">
                 <div class="carrossel">
                   <?php if(isset($jornalismo)): ?>
                   <ul class="jornalismo">
@@ -170,7 +162,7 @@
                 </div>
               </div>
               <!-- / BLOCOS --><!-- BLOCOS -->
-              <div id="educacao" class="filho blocos" style="display:none;">
+              <div id="educacao" class="filho blocos" style="display:block;">
                 <div class="carrossel">
                   <?php if(isset($educacao)): ?>
                   <ul class="educacao">
@@ -188,7 +180,7 @@
                 </div>
               </div>
               <!-- / BLOCOS --><!-- BLOCOS -->
-              <div id="infantil" class="filho blocos" style="display:none;">
+              <div id="infantil" class="filho blocos" style="display:block;">
                 <div class="carrossel">
                   <?php if(isset($infantil)): ?>
                   <ul class="infantil">
@@ -206,7 +198,7 @@
                 </div>
               </div>
               <!-- / BLOCOS --><!-- BLOCOS -->
-              <div id="arte-cultura" class="filho blocos" style="display:none;">
+              <div id="arte-cultura" class="filho blocos" style="display:block;">
                 <div class="carrossel">
                   <?php if(isset($arte)): ?>
                   <ul class="arte">
@@ -224,7 +216,7 @@
                 </div>
               </div>
               <!-- / BLOCOS --><!-- BLOCOS -->
-              <div id="especiais" class="filho blocos" style="display:none;">
+              <div id="especiais" class="filho blocos" style="display:block;">
                 <div class="carrossel">
                   <?php if(isset($especiais)): ?>
                   <ul class="especiais">
@@ -242,7 +234,7 @@
                 </div>
               </div>
               <!-- / BLOCOS --><!-- BLOCOS -->
-              <div id="juvenil" class="filho blocos" style="display:none;">
+              <div id="juvenil" class="filho blocos" style="display:block;">
                 <div class="carrossel">
                   <?php if(isset($juvenil)): ?>
                   <ul class="juvenil">
@@ -267,12 +259,17 @@
             </div>
           </div>
           <!-- /MENU-RODAPE -->
-           <script> 
+          <script> 
            // carrossel
 						$('.carrossel').jcarousel({
 					      wrap: "both",
 					      scroll: 4
 					    });
-					    
+					   
+					   $("#musica").css("display","none");
+					   $("#jornalismo").css("display","none");
+					   $("#educacao").css("display","none");
+					   $("#infantil").css("display","none");
+					   $("#arte-cultura").css("display","none");
 					    
 					</script>
