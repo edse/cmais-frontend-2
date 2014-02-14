@@ -107,9 +107,9 @@
                 <div class="texto" style="float: left;">
                   <?php if($asset->AssetType->getSlug() == "audio-gallery"): ?>
                     <?php $audioAssets = $asset->retriveRelatedAssetsByAssetTypeId(4); ?>
-<script type="text/javascript" src="/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script>
-<link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/js/audioplayer/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script>
+<link href="http://cmais.com.br/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://cmais.com.br/js/audioplayer/jquery.jplayer.min.js"></script>
 <script type="text/javascript">
 //<![CDATA[
 $(document).ready(function(){
@@ -253,7 +253,7 @@ $(document).ready(function(){
     play: function() {
       $(this).jPlayer("pauseOthers");
     },
-    swfPath: "/js/audioplayer",
+    swfPath: "http://cmais.com.br/js/audioplayer",
     supplied: "mp3"
   });
 });
