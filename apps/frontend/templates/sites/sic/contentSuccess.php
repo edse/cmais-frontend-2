@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title><?php echo $site->getTitle()." - ".$asset->getTitle() ?></title>
 	<!-- SCRIPTS -->
     <script src="http://cmais.com.br/portal/js/jquery-1.7.2.min.js" type="text/javascript"></script>
