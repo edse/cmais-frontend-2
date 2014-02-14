@@ -71,7 +71,7 @@
 .na-tv #container-na-tv .container-na-tv p{font-size: 1.1em;float:none;max-width:100%; margin: 20px auto;}
 .na-tv #container-na-tv .container-na-tv {min-height: 900px;}
 .na-tv #content .fundo-na-tv {width:53%; background-size: 83%;position:relative;background-position:center 0;top:10px; left:0;margin:0 auto;}
-.na-tv #container-na-tv .container-na-tv .container-horarios {margin: 20px auto;float: none;max-height: 250px;}
+.na-tv #container-na-tv .container-na-tv .container-horarios {margin: 20px auto;float: none;max-height: 250px;width: 100%;}
 .na-tv .container-na-tv .container-horarios .box-horario {width:47%!important}
 .na-tv #container-na-tv .container-na-tv h2.ola {display:none;}
 .na-tv #content{margin:8%;}
