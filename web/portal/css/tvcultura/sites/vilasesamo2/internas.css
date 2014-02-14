@@ -11,7 +11,7 @@ a:hover{text-decoration:underline!important;}
 #content { top:134px; margin-bottom:164px; }
 #content .section,
 #content section { max-width:940px; margin:20px auto; }
-#content h1 {margin: 0;font-size: 50px;height: 84px;line-height: 60px;padding: 0 0px 5px 0px;}
+#content h1 {margin: 0;font-size: 50px;height: 72px;line-height: 72px;padding: 0 0px 5px 0px;}
 .artigo #content header h1{font-size:25px;}
 /*#content h1 span,*/
 #content h1 i.icones-sprite-interna {margin: 0px 20px 0px 20!important}
@@ -494,7 +494,7 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .na-tv .sprite{width: 60px;height: 50px;background: red;margin: -2px 20px 0 0;}
 .na-tv .container-na-tv{background: #FFFFFF;padding: 20px 20px 80px 20px;overflow: hidden;position: relative;border-bottom: 2px solid #008d36;}
 .na-tv .ola{font-family:'din-blackregular',Arial, Helvetica, sans-serif; font-size:70px; color:#00aa52;position:absolute; top:9%; left:9%; display:block;z-index:1} 
-.na-tv .container-na-tv p{max-width: 690px;float: right;position: relative;z-index: 1;}
+.na-tv .container-na-tv p{max-width: 690px;float: right;position: relative;z-index: 1; margin:0 auto; width: 99%;}
 .na-tv .container-na-tv p strong{font-family:'din-blackregular',Arial, Helvetica, sans-serif;color:#00aa52;}
 .na-tv .container-na-tv p a{color:#00aa52;}
 .na-tv .container-na-tv p a:hover{color:#00c76e;}
