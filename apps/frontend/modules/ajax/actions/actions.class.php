@@ -1761,6 +1761,7 @@ EOT;
 
 
   public function executeEnquetes(sfWebRequest $request){
+    header("content-type: application/json");
     /*
     $request->checkCSRFProtection();
     //if(!$request->isXmlHttpRequest()) die();
