@@ -32,7 +32,7 @@
                             submitHandler: function(form){
                               $.ajax({
                                 type: "POST",
-                                dataType: "json",
+                                dataType: "jsonp",
                                 data: $("#e<?php echo $displays[0]->Asset->getId()?>").serialize(),
                                 url: "http://app.cmais.com.br/ajax/enquetes",
                                 beforeSend: function(){
