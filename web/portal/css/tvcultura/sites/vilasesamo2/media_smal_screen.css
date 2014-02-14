@@ -82,7 +82,7 @@ footer .relacionados h1{margin-left:5%;width: 90%;}
 .destaques > .span4 .texto{font-size:1.5em!important; padding-top: 10px!important;}
 .destaques > .span4 .icones-sprite-interna{ padding-top: 10px!important;}
 .destaques > .span4 .container-image{overflow: hidden; height: 150px;}
-.span4.banner{display:none;}
+.span4.banner{display:none!important;}
 .destaques.span8{width:100%;padding:0 8%;}
 .bgtotal{padding-bottom: 10px;}
 .destaques .videos .yt-menu img {max-width:800px; top:-40px!important;}

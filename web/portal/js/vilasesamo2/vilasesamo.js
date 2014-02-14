@@ -1,13 +1,18 @@
 $(document).ready(function() {
-  //definind viewport para celular
-  var screenWidth = screen.width;
-    if(screenWidth < 540){
-      $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no">');
-    }else if(screenWidth >= 541 && screenWidth <= 767){  
-      //alert("tablet p");
-    } else if(screenWidth >= 768){  
-      //alert("tablet l");
+  
+    
+    
+    
+    
+    
+    var thumbnailHeight = $('.square img.destaque').height();
+    var thumbVideo = $('img.destaque');
+    thumbVideo.css('height', thumbnailHeight);
+    window.onresize = function(){
+      thumbVideo.css('height', thumbnailHeight);
     }
+    
+  
     /*
     * 
     * PRINT JPGS
@@ -148,7 +153,7 @@ $(document).ready(function() {
     
     function hideHeader(){
       $('.alca').fadeIn('fast');
-      $('.logo-mobile, .btn-menu, .nav-mobile, .imagem-topo').hide()
+      $('.logo-mobile, .btn-menu, .nav-mobile').hide()
       $('.header-tablet').animate({
         height:30
       }, "fast");
@@ -159,7 +164,7 @@ $(document).ready(function() {
     
     function showHeader(){
       $('.alca').hide();
-      $('.logo-mobile, .btn-menu,.imagem-topo').fadeIn('fast')
+      $('.logo-mobile, .btn-menu').fadeIn('fast')
       $('.header-tablet').animate({
         height:110
       }, "fast");
@@ -214,7 +219,8 @@ $(document).ready(function() {
     e.preventDefault();
     $(this).tab('show');
   });
-      
+  
+     
 });//document.ready
 
 //impressao no ie com close ativado

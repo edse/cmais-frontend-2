@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <!--html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="pt-br"-->
 <?php
-$user_agent = $_SERVER['HTTP_USER_AGENT'];
 $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"
 ?>
 <html lang="pt-br"> 
   <head>
     
+   
     <?php include_title() ?>
     <?php include_metas() ?>
     <?php include_meta_props() ?>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <?php echo $noscript; ?>
-   
     <script src="http://cmais.com.br/portal/js/bootstrap-v2.3.1/js/bootstrap.min.js" type="text/javascript"></script>
     <?php echo $noscript; ?> 
     <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <?php if(isset($_GET['m']) && $_GET['m'] == "2143"):?>
-      <meta content="HandheldFriendly" content="true"/>
-      <meta content="MobileOptimized" content="320" />
-      <meta content="viewport" content="width=device-width, maximum-scale=2, minimum-scale=2, initial-scale=2, user-scalable=false" />  
-      <!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->
-      <!-- Le styles -->
-        
-      <?php if(strstr($user_agent, 'iPhone') == true || (strstr($user_agent, 'Android') == true && strstr($user_agent, 'Mobile') == true) || (strstr($user_agent, 'Windows Phone') == true && strstr($user_agent, 'IEMobile') == true)): ?> 
-        <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
-        <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
-        <link rel="stylesheet" media="screen" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" />
-      <?php else:?>
-        <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
-        <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />
-        <link rel="stylesheet" media="only screen and (min-width:501px) and (max-width:979px)" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_medium_screen.css" />
-        <link rel="stylesheet" media="only screen and (min-width:50px) and (max-width:500px)" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" /> 
-      <?php endif; ?>
+    <?php echo $noscript; ?>
+   <script>
+    function getURLParameter(name){
+      return decodeURI((RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]);
+    }
+    var view="";
+    var html = "";
     
-    <?php else: ?>
+    if(getURLParameter("m") == "2143"){
+      view += '<meta content="HandheldFriendly" content="true"/>';
+      view += '<meta content="MobileOptimized" content="320" />';
+      view += '<meta content="viewport" content="width=device-width, maximum-scale=2, minimum-scale=2, initial-scale=2, user-scalable=false" />'; 
+      view += '<!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->';
       
-      <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />
-      <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />  
-    <?php endif; ?> 
+
+      
+      //verificando navegador
+      $userAgent = navigator.userAgent;
+      var str = $userAgent;
+      if(str.indexOf("iPhone") != -1 || str.indexOf("iPod") != -1 || str.indexOf("Android") != -1 && str.indexOf("Mobile") != -1 || str.indexOf("Windows Phone") != -1 && str.indexOf("IEMobile") != -1)  {
+        view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />';
+        view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />';
+        view += '<link rel="stylesheet" media="screen" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" />';
+      }else{
+        view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />';
+        view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />';
+        view += '<link rel="stylesheet" media="only screen and (min-width:501px) and (max-width:979px)" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/media_medium_screen.css" />';
+        view += '<link rel="stylesheet" media="only screen and (min-width:50px) and (max-width:500px)" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" />';
+      }
+      $('head').prepend(html);
+    }else{
+      view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />';
+      view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />';
+      $('head').prepend(view);
+    }
+    </script>
+    
+
+
+        
+
      
      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
      <!--[if lt IE 9]>
@@ -292,15 +308,15 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <!--logos-->
           <nav class="logos">
               <a href="http://cmais.com.br/vilasesamo" title="Site Vila Sésamo" target="_self">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo/vila-sesamo-mobile.jpg">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vila-sesamo-mobile.jpg">
               </a>
            
               <a class="habitos" href="http://cmais.com.br/vilasesamo/categorias/habitos-saudaveis" title="Hábitos Saudáveis" target="_self">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo/habitos-saudaveis-mobile.jpg">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/habitos-saudaveis-mobile.jpg">
               </a>
           
               <a class="habitos" href="http://cmais.com.br/vilasesamo/categorias/incluir-brincando" title="Incluir Brincando" target="_self">
-                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo/incluir-brincando-mobile.jpg">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluir-brincando-mobile.jpg">
               </a>
           
             <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt="" />
@@ -488,7 +504,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     
     
     <!-- scripts -->
-    <script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/vilasesamo.js"></script>
+    <script type="text/javascript" src="http://172.20.16.219/portal/js/vilasesamo2/vilasesamo.js"></script>
     <?php echo $noscript; ?>
     
     <script type="text/javascript">
@@ -529,8 +545,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       {lang: 'pt-BR'}
     </script>
     <?php echo $noscript; ?>
-
+ 
       
        
   </body>
-</html>  
+</html>   
