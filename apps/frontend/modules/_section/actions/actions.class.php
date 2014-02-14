@@ -382,7 +382,7 @@ class _sectionActions extends sfActions
               else {
               */
               if($this->section->slug != "controleremoto"){
-                header("Location: ".$this->uri."/".date("Y-m-d"));
+                header("Location: http://tvcultura.cmais.com.br/grade/".date("Y-m-d"));
                 die();
               }
               //}
