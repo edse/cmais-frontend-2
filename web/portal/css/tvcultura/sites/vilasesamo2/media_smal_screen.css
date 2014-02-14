@@ -98,7 +98,7 @@ footer .relacionados h1{margin-left:5%;width: 90%;}
 /*acessibilidade*/
 #content .filtro h1{font-size: 3em;}
 .acessibilidade .box-acessibilidade{overflow: hidden!important;width: 100%!important;}
-.acessibilidade .fundo-acessibilidade{width:400px; height:500px;float: left!important;position: relative!important;top:30%!important;}
+.acessibilidade .fundo-acessibilidade{width:100%!important;}
 .acessibilidade .box-acessibilidade p{font-size:1.8em;line-height:1em}
 
 /* na tv */

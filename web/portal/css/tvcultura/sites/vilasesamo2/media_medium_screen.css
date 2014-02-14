@@ -59,7 +59,7 @@
 
 /* Acessibilidade */
 .acessibilidade .box-acessibilidade {width:100%!important}
-.acessibilidade .fundo-acessibilidade {top: initial!important;bottom: 0;}
+.acessibilidade .fundo-acessibilidade {width:50%!important; margin:0 auto;}
 
 
 
