@@ -11,10 +11,12 @@
 
               $('#captcha').click(function() {
                 console.log(data);
+                var d = 'privatekey=6LeZxOkSAAAAAAIfODCsLpQ3EMiU3jVv6HwvTUCc&remoteip='+data.ip+'&challenge='+$('#recaptcha_challenge_field').val()+'&response='+$('#recaptcha_response_field').val();
+                console.log(d);
                 $.ajax({
                   type : 'GET',
                   dataType : 'jsonp',
-                  data : 'privatekey=6LeZxOkSAAAAAAIfODCsLpQ3EMiU3jVv6HwvTUCc&remoteip='+data.ip+'&challenge='+$('#recaptcha_challenge_field').val()+'&response='+$('#recaptcha_response_field').val(),
+                  data : d,
                   url: 'http://www.google.com/recaptcha/api/verify',
                   success: function(data2){
                     alert(data2);
@@ -37,8 +39,9 @@
              lang : 'pt',
            }
          );
+       }
       </script>
-<div id="recaptcha_div">
-  &nbsp;</div>
-<p>
-  <button id="captcha" type="button">Test</button></p>
+      
+      <div id="recaptcha_div">&nbsp;</div>
+      
+      <p><button id="captcha" type="button">Test</button></p>
