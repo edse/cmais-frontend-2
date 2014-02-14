@@ -1531,7 +1531,7 @@ class _sectionActions extends sfActions
               //die("0");
               header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
             }
-            die("asdf");
+            die();
           /*
           }
           else {
