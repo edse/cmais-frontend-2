@@ -358,6 +358,11 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
             <input type="submit" class="btn" id="enviar" value="Enviar">
           </div> 
           <!--/enviar-->
+
+          <div class="text-input2">
+            <textarea id="pergunta2" name="pergunta2"></textarea>
+            <input type="hidden" id="pergunta3" name="pergunta3" value="" />
+          </div>
           
         </form>
         <!--/form-->
@@ -669,3 +674,11 @@ $(function(){
   }
 
 </script>  
+<style>
+#pergunta2{
+  visibility: hidden;
+}
+.text-input2{
+  visibility: hidden;
+}
+</style>

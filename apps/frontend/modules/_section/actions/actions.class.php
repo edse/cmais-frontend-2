@@ -1500,6 +1500,10 @@ class _sectionActions extends sfActions
           
           $email_user = strip_tags($request->getParameter('email'));
           $nome_user = strip_tags($request->getParameter('nome'));
+          
+          if(($this->section->getSlug() == "jornalismo") && (($_REQUEST["resposta2"]!="") || ($_REQUEST["resposta3"]!="")))
+            header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
+          
           //if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
             // verifica se o servidor que ta o formulario é o mesmo que o chamou, se for um ataque de injeção de dados este valor será diferente
             ini_set('sendmail_from', $email_site);
@@ -1527,7 +1531,7 @@ class _sectionActions extends sfActions
               //die("0");
               header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
             }
-            die("asdf");
+            die();
           /*
           }
           else {

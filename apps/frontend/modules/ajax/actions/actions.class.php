@@ -1761,6 +1761,7 @@ EOT;
 
 
   public function executeEnquetes(sfWebRequest $request){
+    header("content-type: application/json");
     /*
     $request->checkCSRFProtection();
     //if(!$request->isXmlHttpRequest()) die();
@@ -1776,7 +1777,7 @@ EOT;
         $oldPath = set_include_path($clientLibraryPath);
         // load Zend Gdata libraries
         require_once 'Zend/Loader.php';
-        Zend_Loader::loadClass('Zend_Gdata_Spreadsheets');
+        Zend_Loader::loadClass('Zend_Gdata_Spreadsheets');3
         Zend_Loader::loadClass('Zend_Gdata_ClientLogin');
         
         // set credentials for ClientLogin authentication
