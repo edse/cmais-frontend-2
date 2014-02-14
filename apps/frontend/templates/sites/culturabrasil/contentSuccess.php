@@ -185,7 +185,8 @@
                   }
                 }
               },
-              playlistInit: function(autoplay) {
+           		playlistInit: function(autoplay) {
+              	//console.log(this.playlist.length+"teste2");
                 if(autoplay) {
                   this.playlistChange(this.current);
                 } else {
@@ -212,41 +213,55 @@
               }
             };
             
-            <?php
-              //$playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
-              //$audios = $playlist[0]->retriveRelatedAssetsByAssetTypeId(4);
+            <?php /*
+              $playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
+              $audios = $playlist[0]->retriveRelatedAssetsByAssetTypeId(4);
+             * 
+             */
             ?>
             var audioPlaylist = new Playlist("1",
             [
-              <?php foreach($related_audios as $k=>$d): ?>
+              <?php 
+              $cont = 0;
+              foreach($related_audios as $k=>$d):
+								
+              ?>
               {
                 name:"<?php echo $d->getTitle(); ?>",
-                mp3:"http://midia.cmais.com.br/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile(); ?>"
+                mp3:"/uploads/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile(); ?>"
               }<?php if($k < (count($related_audios) - 1)): ?>,<?php endif;?>
               
-              <?php endforeach; ?>
+              <?php
+              $cont++;
+              endforeach;
+							
+              ?>
             ],
             {
               ready: function()
               {
                 audioPlaylist.displayPlaylist();
-                audioPlaylist.playlistInit(); // Parameter is a boolean for autoplay.
+                audioPlaylist.playlistInit(true); // Parameter is a boolean for autoplay.
               },
               ended: function()
               {
-                audioPlaylist.playlistNext();
+              	
+              	if(<?php echo $cont ?> <=1){
+              		audioPlaylist.stop();
+                }else{
+                  audioPlaylist.playlistNext(); //vai para a proxima
+                 }
               },
               play: function()
               {
                 $(this).jPlayer("pauseOthers");
               },
-              solution:"flash, html",
-              swfPath: "http://cmais.com.br/js/audioplayer",
+              swfPath: "/js/audioplayer",
               supplied: "mp3"
             });
           });
-          //]]>
-        </script>
+        //]]>
+      </script>
         
         
           <div id="jquery_jplayer_1" class="jp-jplayer"></div>
