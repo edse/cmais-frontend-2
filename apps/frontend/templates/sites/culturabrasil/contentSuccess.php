@@ -256,6 +256,7 @@
               {
                 $(this).jPlayer("pauseOthers");
               },
+              swfPath: "/js/audioplayer",
               solution:"flash, html",
               swfPath: "http://cmais.com.br/js/audioplayer",
               supplied: "mp3"
