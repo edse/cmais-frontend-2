@@ -1075,12 +1075,13 @@ class ajaxActions extends sfActions
       }
       
       
-			if($request->getParameter('callback') == ""){
-				echo $return;
-			}else{
-				$json = json_encode($return);
+			if(isset($request->getParameter('callback'))){
+				$r = array("data" => $return);
+				$json = json_encode($r);
 	    	$callback = $request->getParameter('callback');
-	    	echo $callback.'('. $json . ');';
+	    	echo $callback.'('. $json . ');';				
+			}else{
+				echo $return;
 			}
 			
     //}
