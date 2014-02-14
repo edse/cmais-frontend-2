@@ -62,6 +62,7 @@
   function loadScroll(){
     var page = 2;
     $('#infinite_scroll').scrollLoad({
+    	dataType: "jsonp",
       url : 'http://app.cmais.com.br/ajax/infinitescroll',
       getData : function() {
         return "page="+$('#pag').val()+"&section_id=<?php echo $section_id?>&site_id=<?php echo $site_id?>";
@@ -86,9 +87,10 @@
   $(document).ready(function(){
     $.ajax({
       url: "http://app.cmais.com.br/ajax/infinitescroll",
+      dataType: "jsonp",
       data: "page=1&section_id=<?php echo $section_id?>&site_id=<?php echo $site_id?>",
       success: function(data){
-        $('#infinite_scroll').html(data);
+        $('#infinite_scroll').html(data.data);
         loadScroll();
       }
     });

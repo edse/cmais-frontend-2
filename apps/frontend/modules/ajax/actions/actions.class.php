@@ -1075,13 +1075,10 @@ class ajaxActions extends sfActions
       }
       
       
-			if($request->getParameter('callback') == ""){
-				echo $return;
-			}else{
-				$json = json_encode($return);
+				$r = array("data" => $return);
+				$json = json_encode($r);
 	    	$callback = $request->getParameter('callback');
-	    	echo $callback.'('. $json . ');';
-			}
+	    	echo $callback.'('. $json . ');';				
 			
     //}
     die();
@@ -1230,7 +1227,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       
       
       
-      $array_not_in[] = 1;
+      $array_not_in[] = 162891;
       
       
       $assets_novo = Doctrine_Query::create() 

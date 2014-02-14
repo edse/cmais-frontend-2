@@ -44,6 +44,7 @@ $block = Doctrine_Query::create()
 
     $('#infinite_scroll').scrollLoad({
       url : 'http://app.cmais.com.br/ajax/infinitescroll',
+      dataType: "jsonp",
       getData : function() {
         return "page="+$('#pag').val()+"&section_id=<?php echo $section->getId()?>&site_id=<?php echo $section->Site->getId()?>&piadas=1";
       },
@@ -79,9 +80,10 @@ $block = Doctrine_Query::create()
   $(document).ready(function(){
     $.ajax({
       url: "http://app.cmais.com.br/ajax/infinitescroll",
+      dataType: "jsonp",
       data: "page=1&section_id=<?php echo $section->getId()?>&site_id=<?php echo $section->Site->getId()?>&piadas=1",
       success: function(data){
-        $('#infinite_scroll').html(data);
+        $('#infinite_scroll').html(data.data);
         loadScroll();
       }
     });
