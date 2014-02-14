@@ -203,7 +203,7 @@
                             <?php elseif($blocos[0]->AssetType->getSlug() == "content" || $blocos[0]->AssetType->getSlug() == "image-gallery"): ?>
                               <?php $imgs = $blocos[0]->retriveRelatedAssetsByAssetTypeId(2); ?>
                               <?php if(count($imgs) > 0): ?>
-                              <img src="http://midia.cmais.com.br/assets/image/image-6/<?php echo $imgs[0]->AssetImage->getFile() ?>.jpg" alt="<?php echo $blocos[0]->getTitle() ?>" name="<?php echo $blocos[0]->getTitle() ?>" />
+                              <img src="/uploads/assets/image/image-6/<?php echo $imgs[0]->AssetImage->getFile() ?>.jpg" alt="<?php echo $blocos[0]->getTitle() ?>" name="<?php echo $blocos[0]->getTitle() ?>" />
                               <?php endif; ?>
                             </a>
                             

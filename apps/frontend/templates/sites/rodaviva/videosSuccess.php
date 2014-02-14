@@ -208,7 +208,7 @@
                             <?php elseif($asset->AssetType->getSlug() == "content" || $asset->AssetType->getSlug() == "image-gallery"): ?>
                               <?php $imgs = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
                               <?php if(count($imgs) > 0): ?>
-                              <img src="http://midia.cmais.com.br/assets/image/image-6/<?php echo $imgs[0]->AssetImage->getFile() ?>.jpg" alt="<?php echo $asset->getTitle() ?>" name="<?php echo $asset->getTitle() ?>" />
+                              <img src="/uploads/assets/image/image-6/<?php echo $imgs[0]->AssetImage->getFile() ?>.jpg" alt="<?php echo $asset->getTitle() ?>" name="<?php echo $asset->getTitle() ?>" />
                               <?php endif; ?>
                             </a>
                             

@@ -207,7 +207,7 @@
           	<?php foreach($pager->getResults() as $d): ?>
              	{name:"<?php echo $i."-".$d->getTitle()?>",
 		        description:"<?php echo $i."-".$d->getTitle()?>",
-		        mp3:"http://midia.cmais.com.br/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile() ?>"},
+		        mp3:"/uploads/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile() ?>"},
 		        <?php $i++ ?>
         	<?php endforeach; ?>     	 
     	<?php endif; ?> 
@@ -223,7 +223,7 @@
         play: function() {
         $(this).jPlayer("pauseOthers");
         },
-        swfPath: "http://cmais.com.br/js/audioplayer",
+        swfPath: "/js/audioplayer",
         supplied: "mp3"
         });
         });
