@@ -350,7 +350,8 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
           <div class="text-input">
             <label class="control-label" for="pergunta">Sua Pergunta:</label>
             <textarea id="pergunta" name="pergunta" class="required"></textarea>
-            <input type="hidden" id="pergunta2" name="pergunta2" value="" />
+            <textarea id="pergunta2" name="pergunta2"></textarea>
+            <input type="hidden" id="pergunta3" name="pergunta3" value="" />
           </div>
           <!--/Msg-->
           
@@ -670,3 +671,8 @@ $(function(){
   }
 
 </script>  
+<style>
+#pergunta2{
+  visibility: hidden;
+}
+</style>
