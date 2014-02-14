@@ -71,7 +71,7 @@
 
         <!-- box-topo -->
         <div class="box-topo grid3">
-            <h3 class="tit-pagina grid3">Todos os Sites</h3>
+            <h3 class="tit-pagina grid3">Todos os Programas</h3>
             <div class="navegacao txt-10">
                 <a href="http://cmais.com.br" title="Home">Home</a>
                 <span>&gt;</span>
