@@ -74,7 +74,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 /* index */
 #carrossel-destaque{display:none}
 #carrossel-destaque-mobile{display:block!important;}
-#content h1 {font-size: 2em;/* padding-left:60px;*/}
+#content h1 {font-size: 1.5em;/* padding-left:60px;*/}
 .destaques{padding:0 10px}
 .destaques > .span4{width:100%!important;margin:10px 0; position:relative;overflow: hidden;min-height: 80px;}
 .destaques > .span4 img{}
@@ -87,8 +87,8 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .destaques .videos .yt-menu img {max-width:800px; top:-40px!important;}
 #carrossel-personagem {padding: 0 8%; max-width:100%!important;}
 #carrossel-personagem .slider .nome {font-family: 1.7em;}
-#carrossel-personagem .slider li{width: 120px!important; height:140px!important;}
-#carrossel-personagem .slider .inner{width:110px!important; height:110px!important; }
+#carrossel-personagem .slider li{width: 85px!important; height:100px!important;}
+#carrossel-personagem .slider .inner{width:75px!important; height:75px!important; }
 #carrossel-personagem .slider-mask-wrap {height:145px!important}
 #carrossel-personagem .slider-nav{display:none!important;}
 
