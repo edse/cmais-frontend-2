@@ -373,6 +373,7 @@ class _sectionActions extends sfActions
               $s = 'culturafm';
             if($this->section->slug == "guia-do-ouvinte")
               $s = 'culturafm';
+
             if($request->getParameter('d'))
               $this->date = $request->getParameter('d');
             elseif($request->getParameter('date'))
@@ -384,6 +385,10 @@ class _sectionActions extends sfActions
               }
               else {
               */
+              if($this->section->slug == "guia-do-ouvinte"){
+                header("Location: http://culturafm.cmais.com.br/guia-do-ouvinte/".date("Y-m-d"));
+                die();
+              }
               if($this->section->slug != "controleremoto"){
                 header("Location: http://tvcultura.cmais.com.br/grade/".date("Y-m-d"));
                 die();
