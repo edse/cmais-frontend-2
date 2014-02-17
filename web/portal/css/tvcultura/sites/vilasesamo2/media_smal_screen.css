@@ -78,8 +78,8 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .destaques{padding:0 10px}
 .destaques > .span4{width:100%!important;margin:10px 0; position:relative;overflow: hidden;min-height: 80px;}
 .destaques > .span4 img{}
-.destaques > .span4 .texto{font-size:1.5em!important; padding-top: 10px!important;}
-.destaques > .span4 .icones-sprite-interna{ padding-top: 10px!important;}
+.destaques > .span4 .texto{font-size:0.9em!important; padding-top: 10px!important;}
+.destaques > .span4 .icones-sprite-interna{margin-top: 10px!important;}
 .destaques > .span4 .container-image{overflow: hidden; height: 150px;}
 .span4.banner{display:none!important;}
 .destaques.span8{width:100%!important;padding:0 8%;}
