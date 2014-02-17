@@ -133,7 +133,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/logo-mobile.png"  alt="Logo Vila Sésamo">
       </a>
       
-      <button id="alca" class="alca" data-header="teste">&nbsp;</button>
+      <!--button id="alca" class="alca" data-header="teste">&nbsp;</button-->
       
       <div class="imagem-topo">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/img_topo_mobile.png" />
