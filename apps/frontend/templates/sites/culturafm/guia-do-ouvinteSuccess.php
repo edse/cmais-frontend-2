@@ -1,9 +1,6 @@
 <?php
-$u = explode("/", $url);
-array_pop($u);
-$base_url = str_replace("/index.php", "", implode("/", $u));
-$nextDateUrl = $base_url."/".str_replace("/","-",$nextDate); 
-$prevDateUrl = $base_url."/".str_replace("/","-",$prevDate); 
+$nextDateUrl = "http://culturafm.cmais.com.br/guia-do-ouvinte/".str_replace("/","-",$nextDate); 
+$prevDateUrl = "http://culturafm.cmais.com.br/guia-do-ouvinte/".str_replace("/","-",$prevDate); 
 ?>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/programas.css" type="text/css" />
 <!-- <link rel="stylesheet" href="/js/jquery-ui-1.8.7/css/ui-lightness/jquery-ui-1.8.7.custom.css" type="text/css" /> -->
@@ -25,8 +22,7 @@ $(function(){
 });
 
 function redirect(d){
-  //send('<?php echo $sChannel->getSlug() ?>',d);
-  self.location.href = '<?php echo $base_url ?>/'+d;
+  self.location.href = 'http://culturafm.cmais.com.br/guia-do-ouvinte/'+d;
 }
 
 //cache the days and months
