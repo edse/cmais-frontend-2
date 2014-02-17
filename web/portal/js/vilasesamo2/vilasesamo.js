@@ -106,73 +106,23 @@ $(document).ready(function() {
 
   //header tablet e celular
 
-  $('.alca').click(function(){
-    if($('.header-mobile').height() > 109){
-      hideHeader();
-    }else{
-      showHeader();
-    }
-    setTimeout(function(){hideHeader()},8000);
-    
-  });
-  
   $('.ac-pular').click(function(){
     $('.ac-explicacao').focus();
   });
   
   $('.btn-menu').click(function(){
-    $('.nav-mobile').toggle('fast');
+    $('.nav-mobile').slideToggle('fast');
   });
     
-  $('.alca').hide();
+  
+ 
+
     
-    var delay = 300;
-    var timeout = null;
-    var initialPosition = document.documentElement.scrollTop
-    $(window).bind('scroll',function(){
-      clearTimeout(timeout);
-      timeout = setTimeout(function(){
-        var scrollPosition =  $(window).scrollTop();
-        if(scrollPosition <= initialPosition ){
-          showHeader();
-        }else{
-          hideHeader();
-        }
-        initialPosition = scrollPosition;
-      },delay);
-    });
-    
-    window.onload=function(){
-      setTimeout(function(){hideHeader()},50);  
-    };
-    
-    function hideHeader(){
-      $('.alca').fadeIn('fast');
-      $('.logo-mobile, .btn-menu, .nav-mobile, .imagem-topo').hide()
-      $('.header-tablet').animate({
-        height:0
-      }, "fast");
-      $('.header-mobile').animate({
-        height:0
-      }, "fast");
-    }
-    
-    function showHeader(){
-      $('.alca').hide();
-      $('.logo-mobile, .btn-menu, .imagem-topo').fadeIn('fast')
-      $('.header-tablet').animate({
-        height:70
-      }, "fast");
-      $('.header-mobile').animate({
-        height:70
-      }, "fast");
-    }
-    
-    function goTop(){
-      $('html, body').animate({
-        scrollTop:parseInt($('.container').offset().top)
-      }, "slow");
-    } 
+  function goTop(){
+    $('html, body').animate({
+      scrollTop:parseInt($('.container').offset().top)
+    }, "slow");
+  } 
 
   //menu personagens tablet
   $('.icone-cuidadores-abrir').click(function() {
