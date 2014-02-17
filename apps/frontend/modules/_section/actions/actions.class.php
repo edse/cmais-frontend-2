@@ -47,13 +47,16 @@ class _sectionActions extends sfActions
       if($request->getParameter('site_id'))
         $this->site_id = $request->getParameter('site_id');
       
+      // section
+      $this->section = $request->getParameter('object');
+
       // URI
-      $this->uri = $request->getUri();
+      //$this->uri = $request->getUri();
+      $this->uri = $this->section->retriveUrl();
+      
       // URL
       $this->url = @current(explode('?',$this->uri));
 
-      // section
-      $this->section = $request->getParameter('object');
 
       if($request->getParameter('debug') != "")
         print "<br>>>>".$this->section->getId();
