@@ -1220,7 +1220,16 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       $section = $request->getParameter('section');
       $site = $request->getParameter('site');
       $not_repeat = $request->getParameter('no-repeat');
-      
+      /*$not_flash = $request->getParameter('not_flash');
+	      <script>
+					if(hasflash() && user_agent == "desktop"){
+						//carrega os jogos flash e html5
+						
+					}else{
+						//carrega somente jogos em html5
+					}
+				</script>
+      */
       
       if($page >= 1)
         $start = ($page * $items)-$items;
