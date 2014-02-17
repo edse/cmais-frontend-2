@@ -104,7 +104,7 @@
   
   function vilaSesamoGetContents() {
     $.ajax({
-      url: "<?php //echo url_for("@homepage") ?>/ajax/vilasesamogetcontents",
+      url: "http://app.cmais.com.br/ajax/vilasesamogetcontents",
       data: "page="+contentPage+"&items=9&site=<?php echo $site->getSlug(); ?>&siteId=<?php echo (int)$site->id ?>&sectionId=<?php echo $section->getId(); ?>&section=<?php echo $section->getSlug(); ?>&sectionP=<?php echo $section->getParentSectionId(); ?>&no-repeat="+no_repeat,
       beforeSend: function(){
           $('#ajax-loader').show();

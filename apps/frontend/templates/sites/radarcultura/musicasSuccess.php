@@ -89,30 +89,30 @@
       <!--letras-->
       <div class="row-fluid pagination pagination-centered">
         <ul>
-          <li<?php if($letter == "#"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/1-9">#</a></li>
-          <li<?php if($letter == "a"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/a">A</a></li>
-          <li<?php if($letter == "b"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/b">B</a></li>
-          <li<?php if($letter == "c"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/c">C</a></li>
-          <li<?php if($letter == "d"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/d">D</a></li>
-          <li<?php if($letter == "e"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/e">E</a></li>
-          <li<?php if($letter == "f"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/f">F</a></li>
-          <li<?php if($letter == "g"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/g">G</a></li>
-          <li<?php if($letter == "h"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/h">H</a></li>
-          <li<?php if($letter == "i"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/i">I</a></li>
-          <li<?php if($letter == "j"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/j">J</a></li>
-          <li<?php if($letter == "l"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/l">L</a></li>
-          <li<?php if($letter == "m"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/m">M</a></li>
-          <li<?php if($letter == "n"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/n">N</a></li>
-          <li<?php if($letter == "o"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/o">O</a></li>
-          <li<?php if($letter == "p"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/p">P</a></li>
-          <li<?php if($letter == "q"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/q">Q</a></li>
-          <li<?php if($letter == "r"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/r">R</a></li>
-          <li<?php if($letter == "s"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/s">S</a></li>
-          <li<?php if($letter == "t"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/t">T</a></li>
-          <li<?php if($letter == "u"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/u">U</a></li>
-          <li<?php if($letter == "v"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/v">V</a></li>
-          <li<?php if($letter == "x"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/x">X</a></li>
-          <li<?php if($letter == "z"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>musicas/letra/z">Z</a></li>
+          <li<?php if($letter == "#"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/1-9">#</a></li>
+          <li<?php if($letter == "a"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/a">A</a></li>
+          <li<?php if($letter == "b"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/b">B</a></li>
+          <li<?php if($letter == "c"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/c">C</a></li>
+          <li<?php if($letter == "d"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/d">D</a></li>
+          <li<?php if($letter == "e"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/e">E</a></li>
+          <li<?php if($letter == "f"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/f">F</a></li>
+          <li<?php if($letter == "g"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/g">G</a></li>
+          <li<?php if($letter == "h"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/h">H</a></li>
+          <li<?php if($letter == "i"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/i">I</a></li>
+          <li<?php if($letter == "j"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/j">J</a></li>
+          <li<?php if($letter == "l"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/l">L</a></li>
+          <li<?php if($letter == "m"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/m">M</a></li>
+          <li<?php if($letter == "n"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/n">N</a></li>
+          <li<?php if($letter == "o"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/o">O</a></li>
+          <li<?php if($letter == "p"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/p">P</a></li>
+          <li<?php if($letter == "q"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/q">Q</a></li>
+          <li<?php if($letter == "r"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/r">R</a></li>
+          <li<?php if($letter == "s"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/s">S</a></li>
+          <li<?php if($letter == "t"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/t">T</a></li>
+          <li<?php if($letter == "u"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/u">U</a></li>
+          <li<?php if($letter == "v"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/v">V</a></li>
+          <li<?php if($letter == "x"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/x">X</a></li>
+          <li<?php if($letter == "z"): ?> class="active"<?php endif; ?>><a href="/musicas/letra/z">Z</a></li>
         </ul>
         
       </div>
@@ -143,10 +143,10 @@
                   <td class="composer-<?php echo $value ?>"><?php echo $aux[4] ?></td>
                   <td class="play">
                     <span id="indicada-<?php echo $value ?>" class="btn btn-mini btn-success indicada" disabled="disabled"  style="display:none;"><i class="icon-ok icon-white"></i> Música sugerida</span>
-                    <a href="<?php echo url_for('@homepage') ?>musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" style="margin-left: 5px;"><i class="icon-list icon-white"></i> ver detalhes </a>
-                    <a href="javascript:;" class="btn btn-mini btn-info pull-right socialBtn" id="socialBtn-<?php echo $value ?>" name="<?php echo $value ?>" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$d->getTitle()) ?>&url=<?php echo urlencode("http://radarcultura.cmais.com.br" . url_for('@homepage').$section->getSlug() . '/' . $d->getSlug())?>">Twitter</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-facebook">Facebook</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-google">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="goTop();" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
+                    <a href="/musicas/<?php echo $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" style="margin-left: 5px;"><i class="icon-list icon-white"></i> ver detalhes </a>
+                    <a href="javascript:;" class="btn btn-mini btn-info pull-right socialBtn" id="socialBtn-<?php echo $value ?>" name="<?php echo $value ?>" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="https://twitter.com/intent/tweet?hashtags=RadarCultura%2C&original_referer=<?php echo urlencode($uri)?>&source=tweetbutton&text=<?php echo urlencode("Minha indicação para o @radarcultura é: ".$d->getTitle()) ?>&url=<?php echo urlencode("http://radarcultura.cmais.com.br/".$section->getSlug().'/'.$d->getSlug())?>">Twitter</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-facebook">Facebook</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-google">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="goTop();" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>
                     <!--<a href="javascript:;" class="btn btn-mini btn-info pull-right socialBtn" id="socialBtn-<?php echo $value ?>" name="<?php echo $value ?>" rel="popover" data-content='<div class="btn-toolbar"><div class="btn-group"><a class="btn" href="javascript:postTwitter();">Twitter</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-facebook">Facebook</a><a class="btn" href="#" onClick="javascript:goTop()" data-toggle="modal" data-target="#modal-google">Google+</a></div><div class="btn-group"><a class="btn btn-email" href="#" onClick="goTop();" data-toggle="modal" data-target="#modal">Email</a></div></div>' data-original-title="Selecione sua rede social..."><i class="icon-share-alt icon-white"></i> Sugira esta música</a>-->
-                    <input type="hidden" class="url-<?php echo $value ?>" value="<?php echo "http://radarcultura.cmais.com.br" . url_for('@homepage').$section->getSlug() . '/' . $d->getSlug() ?>" />
+                    <input type="hidden" class="url-<?php echo $value ?>" value="<?php echo "http://radarcultura.cmais.com.br/".$section->getSlug().'/'.$d->getSlug() ?>" />
                   </td>
                 </tr>
               <?php endforeach; ?>

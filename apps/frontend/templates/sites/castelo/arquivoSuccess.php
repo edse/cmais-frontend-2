@@ -141,7 +141,7 @@
               <div class="botao-gato">
                 <div class="gif-olho"></div>
               </div>
-              <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $displays["gato"][0]->Asset->getSlug() ?>" class="botao-gato-over" name="over-gato" style="display:none"></a>  
+              <a href="<?php echo "/" . $site->getSlug() . '/' . $displays["gato"][0]->Asset->getSlug() ?>" class="botao-gato-over" name="over-gato" style="display:none"></a>  
             <!--/gato-->  
               <?php endif; ?>
             <?php endif; ?>
@@ -152,7 +152,7 @@
               <div class="botao-pedro">
                 <div class="gif-pedro"></div>
               </div>
-              <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $displays["pedro"][0]->Asset->getSlug() ?>" title="<?php echo $displays["pedro"][0]->getTitle()?>" class="botao-pedro-over" name="over-pedro" style="display:none"></a>  
+              <a href="<?php echo "/" . $site->getSlug() . '/' . $displays["pedro"][0]->Asset->getSlug() ?>" title="<?php echo $displays["pedro"][0]->getTitle()?>" class="botao-pedro-over" name="over-pedro" style="display:none"></a>  
             <!--/pedro-->  
               <?php endif; ?>
             <?php endif; ?>

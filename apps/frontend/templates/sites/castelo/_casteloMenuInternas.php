@@ -86,11 +86,11 @@ $sections = Doctrine_Query::create()
     <?php if($sections[$i]->getSlug() == $section->getSlug()): ?>
       <?php if($i > 0): ?>
         <?php if ($sections[$i-1]->getSlug() == 'home2'): ?>
-  <a href="<?php echo url_for('homepage') . $site->getSlug(); ?>" class="anteriorC" title="Anterior">
+  <a href="<?php echo "/" . $site->getSlug(); ?>" class="anteriorC" title="Anterior">
     <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" />
   </a>
         <?php else: ?>
-  <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $sections[$i-1]->getSlug(); ?>" class="anteriorC" title="Anterior">
+  <a href="<?php echo "/" . $site->getSlug() . '/' . $sections[$i-1]->getSlug(); ?>" class="anteriorC" title="Anterior">
     <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-tela-anterior.png" alt="Tela Anterior" />
   </a>
         <?php endif; ?>
@@ -98,7 +98,7 @@ $sections = Doctrine_Query::create()
 
       <?php if($i < count($sections)): ?>
         <?php if($sections[$i+1]->getSlug() != ''): ?>
-  <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $sections[$i+1]->getSlug(); ?>" class="posterior"  title="Próxima">
+  <a href="<?php echo "/" . $site->getSlug() . '/' . $sections[$i+1]->getSlug(); ?>" class="posterior"  title="Próxima">
     <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-tela-proxima.png" alt="Próxima Tela" />
   </a>
         <?php endif; ?>
@@ -114,9 +114,9 @@ $sections = Doctrine_Query::create()
                 <?php for($i=0; $i<count($sections); $i++): ?>
                   <?php if($sections[$i]->getSlug() != ''): ?>
                     <?php if ($sections[$i]->getSlug() == 'home2'): ?>
-                    <a href="<?php echo url_for('homepage') . $site->getSlug() ?>" title="<?php echo $sections[$i]->getTitle() ?>" class="<?php echo $sections[$i]->getSlug() ?> <?php if($section->getSlug() == $sections[$i]->getSlug()): ?>selected<?php endif; ?>"></a>
+                    <a href="<?php echo "/" . $site->getSlug() ?>" title="<?php echo $sections[$i]->getTitle() ?>" class="<?php echo $sections[$i]->getSlug() ?> <?php if($section->getSlug() == $sections[$i]->getSlug()): ?>selected<?php endif; ?>"></a>
                     <?php else: ?>
-                    <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $sections[$i]->getSlug() ?>" title="<?php echo $sections[$i]->getTitle() ?>" class="<?php echo $sections[$i]->getSlug() ?> <?php if($section->getSlug() == $sections[$i]->getSlug()): ?>selected<?php endif; ?>"></a>
+                    <a href="<?php echo "/" . $site->getSlug() . '/' . $sections[$i]->getSlug() ?>" title="<?php echo $sections[$i]->getTitle() ?>" class="<?php echo $sections[$i]->getSlug() ?> <?php if($section->getSlug() == $sections[$i]->getSlug()): ?>selected<?php endif; ?>"></a>
                     <?php endif; ?>
                   <?php endif; ?>
                 <?php endfor;?>

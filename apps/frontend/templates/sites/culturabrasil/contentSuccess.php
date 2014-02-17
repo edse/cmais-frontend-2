@@ -23,10 +23,10 @@
       <ul class="breadcrumb">
         <li><a href="/">Cultura Brasil</a> <span class="divider">»</span></li>
         <?php if($site->getSlug() == "especiais-1"): ?>
-        <li><a href="<?php echo url_for('homepage')?>especiais">Especiais</a> <span class="divider">»</span></li>
+        <li><a href="/especiais">Especiais</a> <span class="divider">»</span></li>
         <?php endif; ?>        
         <?php if($asset->Site->Program->Channel->getSlug() == "culturabrasil"): ?>
-        <li><a href="<?php echo url_for('homepage')?>programas">Programas</a> <span class="divider">»</span></li>
+        <li><a href="/programas">Programas</a> <span class="divider">»</span></li>
         <li><a href="<?php echo $site->retriveUrl() ?>"><?php echo $site->getTitle() ?></a> <span class="divider">»</span></li>
         <?php endif; ?>
         <?php if(count($asset->getSections()) > 0): ?>
