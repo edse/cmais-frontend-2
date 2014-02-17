@@ -1,10 +1,5 @@
 $(document).ready(function() {
-  
-    
-    
-    
-    
-    
+    //thumbnail video quadrado destaques de todas as telas    
     var thumbnailHeight = $('.square img.destaque').height();
     var thumbVideo = $('img.destaque');
     thumbVideo.css('height', thumbnailHeight);
@@ -129,7 +124,7 @@ $(document).ready(function() {
     $('.nav-mobile').toggle('fast');
   });
     
-    $('.alca').hide();
+  $('.alca').hide();
     
     var delay = 300;
     var timeout = null;
@@ -148,28 +143,28 @@ $(document).ready(function() {
     });
     
     window.onload=function(){
-      setTimeout(function(){hideHeader()},2000);  
+      setTimeout(function(){hideHeader()},50);  
     };
     
     function hideHeader(){
       $('.alca').fadeIn('fast');
-      $('.logo-mobile, .btn-menu, .nav-mobile').hide()
+      $('.logo-mobile, .btn-menu, .nav-mobile, .imagem-topo').hide()
       $('.header-tablet').animate({
-        height:30
+        height:0
       }, "fast");
       $('.header-mobile').animate({
-        height:30
+        height:0
       }, "fast");
     }
     
     function showHeader(){
       $('.alca').hide();
-      $('.logo-mobile, .btn-menu').fadeIn('fast')
+      $('.logo-mobile, .btn-menu, .imagem-topo').fadeIn('fast')
       $('.header-tablet').animate({
-        height:110
+        height:70
       }, "fast");
       $('.header-mobile').animate({
-        height:110
+        height:70
       }, "fast");
     }
     
