@@ -24,7 +24,7 @@
 .imagem-topo{position: absolute;width: 125px;bottom: 0;left: 50%;margin-left: -29px;}
 #header-bar-mobile{display:none;}
 #header-bar-mobile .content h1{width:50%;display: block;float: left;}
-#nav-mobile{width:100%;padding: 0;background: #ffffff; position: absolute;z-index: 40000;top: 70px;}
+#nav-mobile{width:100%;padding: 0;background: #ffffff; position: absolute;z-index: 40000;top: 70px;display:none;}
 #nav-mobile a{padding:1% 2%;text-decoration:none;font-family:'din-blackregular', Arial, Helvetica, sans-serif;width:100%;border-bottom:1px dotted #333;font-size: 1.2em; float:left; text-align:right; text-transform:uppercase;color:#333!important;line-height: 30px;}
 #nav-mobile img{float: right;width: 25px; margin:2px 15px 0 15px;}
 #nav-mobile a:last-child{border:none}
@@ -78,18 +78,19 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .destaques{padding:0 10px}
 .destaques > .span4{width:100%!important;margin:10px 0; position:relative;overflow: hidden;min-height: 80px;}
 .destaques > .span4 img{}
-.destaques > .span4 .texto{font-size:1.5em!important; padding-top: 10px!important;}
-.destaques > .span4 .icones-sprite-interna{ padding-top: 10px!important;}
+.destaques > .span4 .texto{font-size:0.9em!important; padding-top: 10px!important;}
+.destaques > .span4 .icones-sprite-interna{margin-top: 10px!important;}
 .destaques > .span4 .container-image{overflow: hidden; height: 150px;}
 .span4.banner{display:none!important;}
 .destaques.span8{width:100%!important;padding:0 8%;}
 .bgtotal{padding-bottom: 10px;}
 .destaques .videos .yt-menu img {max-width:800px; top:-40px!important;}
-#carrossel-personagem {padding: 0 8%; max-width:100%!important;}
-#carrossel-personagem .slider .nome {font-family: 1.7em;}
-#carrossel-personagem .slider li{width: 85px!important; height:100px!important;}
+#carrossel-personagem {padding: 0 8%; margin-top:20px!important; max-width:100%!important;}
+#carrossel-personagem h1{display:none;}
+#carrossel-personagem .slider .nome {font-size: 0.9em!important;font-family:'din-blackregular',Arial, Helvetica, sans-serif;}
+#carrossel-personagem .slider li{width: 80px!important; height:100px!important;}
 #carrossel-personagem .slider .inner{width:75px!important; height:75px!important; }
-#carrossel-personagem .slider-mask-wrap {height:145px!important}
+#carrossel-personagem .slider-mask-wrap {height:108px!important}
 #carrossel-personagem .slider-nav{display:none!important;}
 
 /* index */

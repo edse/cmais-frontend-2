@@ -47,13 +47,16 @@ class _sectionActions extends sfActions
       if($request->getParameter('site_id'))
         $this->site_id = $request->getParameter('site_id');
       
+      // section
+      $this->section = $request->getParameter('object');
+
       // URI
-      $this->uri = $request->getUri();
+      //$this->uri = $request->getUri();
+      $this->uri = $this->section->retriveUrl();
+      
       // URL
       $this->url = @current(explode('?',$this->uri));
 
-      // section
-      $this->section = $request->getParameter('object');
 
       if($request->getParameter('debug') != "")
         print "<br>>>>".$this->section->getId();
@@ -370,6 +373,7 @@ class _sectionActions extends sfActions
               $s = 'culturafm';
             if($this->section->slug == "guia-do-ouvinte")
               $s = 'culturafm';
+
             if($request->getParameter('d'))
               $this->date = $request->getParameter('d');
             elseif($request->getParameter('date'))
@@ -381,6 +385,10 @@ class _sectionActions extends sfActions
               }
               else {
               */
+              if($this->section->slug == "guia-do-ouvinte"){
+                header("Location: http://culturafm.cmais.com.br/guia-do-ouvinte/".date("Y-m-d"));
+                die();
+              }
               if($this->section->slug != "controleremoto"){
                 header("Location: http://tvcultura.cmais.com.br/grade/".date("Y-m-d"));
                 die();

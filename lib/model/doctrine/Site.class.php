@@ -83,10 +83,10 @@ class Site extends BaseSite
         if($programa){
           return (string) "http://".$programa->Channel->slug.".cmais.com.br/".$this->slug;
         }else
-          return (string) "/".$this->getSlug();
+          return (string) "http://cmais.com.br/".$this->getSlug();
       }
       else
-        return (string) "/".$this->getSlug();
+        return (string) "http://cmais.com.br/".$this->getSlug();
     }
   }
 
