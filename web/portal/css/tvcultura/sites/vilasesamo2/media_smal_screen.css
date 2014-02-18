@@ -114,24 +114,8 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .na-tv #container-na-tv .container-na-tv .container-horarios .img-logo{width:100%;}
 .na-tv .b-verde {position: relative;}
  
-/*  Pais Artigos */
-.cuidadores .filtro  {margin: auto 2%!important;width: 96%;}
-.cuidadores .container-cuidadores .col-esq article .redes-artigo {display:none}
-.cuidadores .container-cuidadores h3 {margin:0 auto;width: 70%;}
-.cuidadores .img-topo-asset {width:90%!important}
-.cuidadores .container-cuidadores .col-dir .box-ler .titulo-box, .cuidadores .container-cuidadores .col-dir .box-brincarjunto .titulo-box {width: auto!important}
-.cuidadores .container-cuidadores .col-dir .box-ler span {}
-.cuidadores .col-direita,#comente-este-artigo,.fb_iframe_widget,#div-gpt-ad-1385748525978-0{display: none!important;}
-.cuidadores .container-cuidadores .col-dir{width:100%!important;margin:0!important}
-.cuidadores .container-cuidadores .col-esq {width:100%!important}
-.cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre {max-width:none!important;width: 100%}
-.cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre img {width: 100%}
-.cuidadores .container-cuidadores .col-dir .box-sobre a{width: 95%;text-align: center;}
-.cuidadores .todos-assets {width: 100%!important;font-size: 1em!important;}
-#content .filtro h1 {height: 130px;font-size: 1.6em;line-height: 2em;}
-.ac-explicacao  {width: 0!important}
-.parceiros-cuidadores p, .na-tv .container-na-tv p,.acessibilidade .box-acessibilidade p{text-align: left;font-size:1.5em;padding: 10px;line-height: 1.2em;}/*texto corrido celular*/
-section p:first-child{font-size:1.2em;color:#666}/*texto corrido celular, primeiro p*/
+/*  Pais */
+.cuidadores .selecione .barra-selecao {}
 
 
 /* personagens */

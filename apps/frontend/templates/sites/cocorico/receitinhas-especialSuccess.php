@@ -42,7 +42,7 @@ $assets = $pager->getResults(); //depois tem de ordenar por ranking...
         <p>Doce ou salgada, todo mundo conhece uma receitinha deliciosa que tenha milho entre os ingredientes. Envie para nós! As 02 (duas) receitinhas mais criativas vão ganhar 01 (um) livro de receitas da Rebeca Chamma! E ainda podem ser apresentadas na Cozinha da Amiga da Zazá!</p>
         <p>Aproveite e assista a essa seleção de receitinhas com milho que já foram feitas em nossa cozinha!</p>  
         <div class="divisao"></div>
-        <form class="form-horizontal" id="form-contato" method="post" action="/actions/cocorico/sendmail.php" enctype="multipart/form-data">
+        <form class="form-horizontal" id="form-contato" method="post" action="http://app.cmais.com.br/actions/cocorico/sendmail.php" enctype="multipart/form-data">
           <h2>Envie sua receitinha com milho:</h2>
           <div class="control-group g-nome">
             <label class="control-label nome" for="nome"></label>

@@ -297,7 +297,6 @@ $(document).ready(function(){
           type: "POST",
           dataType: "text",
           url: "http://app.cmais.com.br/actions/culturafm/newsletter.php",
-          //url: "/actions/culturafm/newsletter.php",
           data: $("#form-email").serialize(),
           beforeSend: function(){
             $('#send_news, #news, #lbl_news').hide();

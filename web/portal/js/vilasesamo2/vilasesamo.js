@@ -1,13 +1,11 @@
 $(document).ready(function() {
     //thumbnail video quadrado destaques de todas as telas    
     var thumbnailHeight = $('.square img.destaque').height();
-    var thumbVideo = $('.rect img');
+    var thumbVideo = $('img.destaque');
     thumbVideo.css('height', thumbnailHeight);
-    window.onresize=function(){
-      thumbnailHeight = $('.square img.destaque').height();
+    window.onresize = function(){
       thumbVideo.css('height', thumbnailHeight);
-      console.log('-')
-    };
+    }
     
   
     /*
@@ -166,8 +164,6 @@ $(document).ready(function() {
     e.preventDefault();
     $(this).tab('show');
   });
-  
-  
   
      
 });//document.ready

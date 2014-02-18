@@ -185,7 +185,7 @@
       submitHandler : function(form) {
         $.ajax({
           type : "POST",
-          url : "/actions/culturabrasil/contact.php",
+          url : "http://app.cmais.com.br/actions/culturabrasil/contact.php",
           dataType : "text",
           data : $("#form-selecao").serialize(),
           beforeSend : function() {
