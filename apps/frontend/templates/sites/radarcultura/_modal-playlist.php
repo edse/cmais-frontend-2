@@ -158,7 +158,7 @@
                   success: function(data){
                     $('#loader3').hide();
                     $('.btn-enviar').show();
-                    if(data == "1"){
+                    if(data.data == "1"){
                       $("#modal").modal('hide');
                       $('.alert.radarIndex').hide();
                       $("#socialAlertOk").fadeIn('fast');

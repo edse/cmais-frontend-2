@@ -312,7 +312,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
           <p class="msgAcerto" style="display:none;">Pergunta enviada com sucesso, obrigado!</p>
           <p class="msgErro" style="display:none;">Erro no envio, tente mais tarde!</p>
          <!--form-->
-         <form id="destaque-programas" class="form-pergunta" method="post">
+         <form action="http://app.cmais.com.br/jornalismo" id="destaque-programas" class="form-pergunta" method="post">
            
           <!--Programa-->
           <div class="text-input programa">
@@ -324,10 +324,11 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
               <option value="jcdebate">JC Debate</option>
               <option value="jornaldacultura">Jornal da Cultura</option>  
               <option value="cartaoverde">Cartão Verde</option>  
-              <option value="rodaviva">Roda Viva</option>  
+              <option value="rodaviva">Roda Viva</option>
+              <!--  
               <option value="reportereco">Reporter Eco</option>  
               <option value="materiadecapa">Matéria de Capa</option>
-              <option value="prontoatendimento">Pronto Atendimento</option>                      
+              <option value="prontoatendimento">Pronto Atendimento</option>-->                      
             </select>
           </div>
           <!--/Programa--> 
@@ -490,7 +491,9 @@ $(document).ready(function(){
   
   var validator = $('.form-pergunta').validate({
     
-    submitHandler: function(form){
+      submitHandler: function(form){
+        form.submit();
+      },/*
       $.ajax({
         type: "POST",
         dataType: "text",
@@ -510,8 +513,7 @@ $(document).ready(function(){
             $(".msgErro").show();
           }
         }
-      });       
-    },
+      });     */  
     rules:{
       email:{
         required: true,
@@ -672,6 +674,28 @@ $(function(){
       }
     });
   }
+
+
+function getVar(variable) {
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i=0;i<vars.length;i++){
+    var pair = vars[i].split("=");
+    if (pair[0] == variable) {
+      return pair[1];
+    }
+  }
+}
+var success = getVar("success");
+var error = getVar("error");
+if(success == 1){
+  $("#form-contato").hide();
+  $(".msgAcerto").show();
+}else if(error == 1){
+  $("#form-contato").hide();
+  $(".msgErro").show();
+}
+
 
 </script>  
 <style>
