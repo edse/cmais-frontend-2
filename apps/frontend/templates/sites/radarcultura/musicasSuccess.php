@@ -444,9 +444,9 @@
             $('#socialLoading').fadeIn();
             
             $.ajax({
-              url: '/actions/radarcultura/facebookPost.php',
+              url: 'http://app.cmais.com.br/actions/radarcultura/facebookPost.php',
               data: opts,
-              dataType: "text",
+              dataType: "jsonp",
               success: function(data) {
                 goTop();
                 $('#socialLoading').fadeOut();
