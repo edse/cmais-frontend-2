@@ -328,7 +328,9 @@ h3#filtro-descricao{font-size:1px!important; text-indent:999999!important; width
 body.personagens { background:#b60401; }
 .personagens .conteudo-asset .asset{border-bottom:2px solid #c31408; } 
 .personagens .filtro-personagem .ativo img{top:-25px;}
-.personagens .filtro .span12{border:none;}
+.personagens .filtro .span12{border:none;margin: 0!important;}
+.pais .row-fluid .span4 {margin-left:2%!important;width:30%}
+.pais .row-fluid .span4 .parceiros p {margin:0!important}
 .personagens .filtro .span12.box-pais{background: none!important;}
 .personagens .filtro .span2{margin:0 4px;}
 .personagens #page_nav {background-color:#ee3021;padding:20px; margin: 0;}
