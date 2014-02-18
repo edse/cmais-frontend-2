@@ -3,7 +3,7 @@
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
 <?php
 $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página.</noscript>"
@@ -35,10 +35,10 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 <!--content-->
 <div id="content">
 
-	<!--Explicação acessibilidade-->
-	<h1 tabindex="0" class="ac-explicacao">
-	 <?php echo $asset->getDescription(); ?>
-	</h1>
+  <!--Explicação acessibilidade-->
+  <h1 tabindex="0" class="ac-explicacao">
+   <?php echo $asset->getDescription(); ?>
+  </h1>
 
 
   <!--section -->
@@ -352,19 +352,21 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           ?>
           <?php if(isset($related_asset)): ?>  
             <?php if(count($related_asset) > 0): ?>  
-             <article class="jogos" tabindex="-1">
+             <div class="jogos square" tabindex="-1">
                 <a href="<?php echo $related_asset[0]->retriveUrl() ?>" title="<?php echo $related_asset[0]->getTitle() ?>" tabindex="0">
                   <?php $preview = $related_asset[0]->retriveRelatedAssetsByRelationType("Preview") ?>
-                  <?php if(count($preview) > 0): ?>
-                    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>" aria-label="Título: <?php echo $related_asset[0]->getTitle() ?>. Descrição: <?php echo $related_asset[0]->getDescription() ?>">
-                  <?php endif; ?>
+                  <div class="container-image">
+                    <?php if(count($preview) > 0): ?>
+                      <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>" aria-label="Título: <?php echo $related_asset[0]->getTitle() ?>. Descrição: <?php echo $related_asset[0]->getDescription() ?>">
+                    <?php endif; ?>
+                  </div>
                   <i class="icones-sprite-interna icone-jogos-pequeno"></i>
                   <div class="texto" aria-hidden="true" >
                     <img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
                     <?php echo $related_asset[0]->getTitle() ?>
                   </div>
                 </a>
-              </article>
+              </div>
             <?php endif; ?>
           <?php endif; ?>
           <!--/destaque jogos-->
@@ -393,19 +395,25 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           ?>
           <?php if(isset($related_asset)): ?>
             <?php if(count($related_asset) > 0): ?>
-              <article class="videos" tabindex="-1">
+              <div class="videos rect" tabindex="-1">
                 <a href="<?php echo $related_asset[0]->retriveUrl() ?>" title="<?php echo $related_asset[0]->getTitle() ?>" tabindex="0">
+                  <?php
+                  /*
                   <div class="yt-menu">
                     <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $related_asset[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $related_asset[0]->getTitle() ?>" aria-label="Título: <?php echo $related_asset[0]->getTitle() ?>. Descrição: <?php echo $related_asset[0]->getDescription() ?>">
                   </div>
-                  
+                   */
+                  ?>
+                  <div class="container-image">
+                    <img class="youtubeImage" src="http://img.youtube.com/vi/<?php echo $related_asset[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $related_asset[0]->getTitle() ?>" aria-label="Título: <?php echo $related_asset[0]->getTitle() ?>. Descrição: <?php echo $related_asset[0]->getDescription() ?>">
+                  </div>
                   <i class="icones-sprite-interna icone-videos-pequeno"></i>
                   <div class="texto" aria-hidden="true">
                     <img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
                     <?php echo $related_asset[0]->getTitle() ?>
                   </div>
                 </a>
-              </article>
+              </div>
             <?php endif; ?>
           <?php endif; ?>
           <!--/destaque videos-->
@@ -434,19 +442,21 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             ?>
             <?php if(isset($related_asset)): ?>  
               <?php if(count($related_asset) > 0): ?>
-              <article class="atividades" tabindex="-1">
+              <div class="atividades square" tabindex="-1">
                  <a href="<?php echo $related_asset[0]->retriveUrl() ?>" title="<?php echo $related_asset[0]->getTitle() ?>" tabindex="0">
                   <?php $preview = $related_asset[0]->retriveRelatedAssetsByRelationType("Preview") ?>
-                  <?php if(count($preview) > 0): ?>
-                    <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>" aria-label="Título: <?php echo $related_asset[0]->getTitle() ?>. Descrição: <?php echo $related_asset[0]->getDescription() ?>">
-                  <?php endif; ?>
+                  <div class="container-image">
+                    <?php if(count($preview) > 0): ?>
+                      <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $related_asset[0]->getTitle() ?>" aria-label="Título: <?php echo $related_asset[0]->getTitle() ?>. Descrição: <?php echo $related_asset[0]->getDescription() ?>">
+                    <?php endif; ?>
+                  </div>
                   <i class="icones-sprite-interna icone-atividades-pequeno"></i>
                   <div class="texto" aria-hidden="true" >
                     <img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png" alt="">
                     <?php echo $related_asset[0]->getTitle() ?>             
                   </div>
                 </a>
-              </article>
+              </div>
               <?php endif; ?>
             <?php endif; ?>
             <!--/destaque atividades-->
