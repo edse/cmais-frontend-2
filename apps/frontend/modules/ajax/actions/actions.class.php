@@ -1443,7 +1443,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
                        
              // echo $return;
 							
-				      $a["data"] = $return;
+				      $a = array("data" =>$return);
 				      $json = json_encode($a);
 				      $callback = $request->getParameter('callback');
 				      echo $callback.'('. $json . ');';
