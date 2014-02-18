@@ -311,7 +311,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
         ?>
         <?php if(isset($displays['parceiros'])): ?>
           <?php if(count($displays['parceiros']) > 0): ?>
-          <p tabindex="0" style="margin: 20px 0 12px 0;">Conheça nossos parceiros:</p>
+          <p tabindex="0">Conheça nossos parceiros:</p>
           <a class="publicidade" href="<?php echo $displays['parceiros'][0]->retriveUrl() ?>" title="<?php echo $displays['parceiros'][0]->getTitle() ?>">
             <img src="<?php echo $displays['parceiros'][0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $displays['parceiros'][0]->getTitle() ?>" />
           </a>
