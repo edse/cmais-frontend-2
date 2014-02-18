@@ -116,7 +116,7 @@
           success: function(data){
             $('#loader2').hide();
             $('.btn-enviar').show();
-            if(data == "1"){
+            if(data.data == "1"){
               $("#modal-feedback").modal('hide');
               $("#modal-ok").modal('show');
               setTimeout('$("#modal-ok").modal("hide");', 10000);

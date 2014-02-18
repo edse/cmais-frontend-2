@@ -215,7 +215,7 @@
                 success: function(data){
                   $('#loader3').hide();
                   $('.btn-enviar').show();
-                  if(data == "1"){
+                  if(data.data == "1"){
                     $("#modal-1").modal('hide');
                     $('#socialBtn-1').popover('hide');
                     alertOk();
@@ -313,7 +313,7 @@
             success: function(data) {
               $('#socialLoading').fadeOut();
               $('#socialBtn-1').popover('hide');
-              if(data == "1"){
+              if(data.data == "1"){
                 alertOk();
                 goTop();
               }
