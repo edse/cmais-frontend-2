@@ -123,7 +123,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 }
                 $preview = $d->Asset->retriveRelatedAssetsByRelationType('Preview')
               ?>
-              <div class="span6 <?php echo $assetSection->getSlug() ?>">
+              <div class="span4 <?php echo $assetSection->getSlug() ?>">
                 <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="">
                   <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
                   <div class="yt-menu">  

@@ -682,7 +682,7 @@ footer .relacionados li a:hover{-moz-opacity: 0.50;-khtml-opacity: 0.50;opacity:
 .box-pais .parceiros img{width:100%;}
 .box-pais a:hover{color:#434343;} 
 
-img.altura{width: 1px!important;height: 40px!important;}
+img.altura{width: 1px!important;height: 40px!important; float:left;}
 #content .pais {overflow: hidden;min-height: 46px!important; background:#feec3c; margin:0 auto !important; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 #content .pais.categorias{overflow: visible;}
 .pais h2.tit-box{height: 44px;font-size:1.80em;line-height: 47px;padding: 1px 20px;color: #434343;text-transform:uppercase;}
