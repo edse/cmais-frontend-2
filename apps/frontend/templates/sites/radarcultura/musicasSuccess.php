@@ -338,7 +338,7 @@
             },
             submitHandler: function(form){
               $.ajax({
-                type: "POST",
+                //type: "POST",
                 dataType: "jsonp",
                 url: "http://app.cmais.com.br/actions/radarcultura/iteracao.php", 
                 data: $("#form-indicacao").serialize(),
