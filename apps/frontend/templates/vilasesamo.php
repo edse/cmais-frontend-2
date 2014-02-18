@@ -23,7 +23,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     if(getURLParameter("m") == "2143"){
       view += '<meta name="HandheldFriendly" content="true"/>';
       view += '<meta name="MobileOptimized" content="320" />';
-      view += '<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />'; 
+      view += '<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false" />'; 
       view += '<meta name="apple-mobile-web-app-capable" content="true">';
       view += '<meta name="apple-mobile-web-app-status-bar-style" content="black">';
       

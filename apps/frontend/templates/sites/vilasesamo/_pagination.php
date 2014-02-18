@@ -105,14 +105,15 @@
   function vilaSesamoGetContents() {
     $.ajax({
       url: "http://app.cmais.com.br/ajax/vilasesamogetcontents",
+      dataType: "jsonp",
       data: "page="+contentPage+"&items=9&site=<?php echo $site->getSlug(); ?>&siteId=<?php echo (int)$site->id ?>&sectionId=<?php echo $section->getId(); ?>&section=<?php echo $section->getSlug(); ?>&sectionP=<?php echo $section->getParentSectionId(); ?>&no-repeat="+no_repeat,
       beforeSend: function(){
           $('#ajax-loader').show();
         },
       success: function(data){
         $('#ajax-loader').hide();
-        if (data != "") {
-          var newEls = $(data).appendTo('#container');
+        if (data.data != "") {
+          var newEls = $(data.data).appendTo('#container');
            
           $("#container").isotope().isotope('appended',newEls);
           

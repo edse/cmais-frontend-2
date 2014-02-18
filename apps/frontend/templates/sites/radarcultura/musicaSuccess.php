@@ -200,8 +200,8 @@
             submitHandler: function(form){
               $.ajax({
                 type: "POST",
-                dataType: "text",
-                url: "/actions/radarcultura/iteracao.php",
+                dataType: "jsonp",
+                url: "http://app.cmais.com.br/actions/radarcultura/iteracao.php",
                 data: $("#form-indicacao").serialize(),
                 beforeSend: function(){
                   $('#loader3').show();

@@ -106,11 +106,11 @@
       submitHandler: function(form){
         $.ajax({
           type: "POST",
-          dataType: "text",
-          url: "/actions/radarcultura/feedback.php",
+          dataType: "jsonp",
+          url: "http://app.cmais.com.br/actions/radarcultura/feedback.php",
           data: $("#form-feedback").serialize(),
           beforeSend: function(){
-            $('#loader2').show();
+            $('#loader2').show(); 
             $('.btn-enviar').hide();
           },
           success: function(data){

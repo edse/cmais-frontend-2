@@ -8,7 +8,7 @@ if(isset($pager)){
 
 $uri = str_replace('/index.php', '', $uri);
 
-?>
+?> 
 
 <?php use_helper('I18N', 'Date') ?>
 
@@ -134,8 +134,7 @@ $uri = str_replace('/index.php', '', $uri);
           <?php if(count($pager) > 0): ?>
             <?php foreach($pager->getResults() as $d): ?>
               <?php if( ($section->Site->Program->Channel->getSlug() == "culturabrasil") && ($section->getSlug() == "arquivo") ): ?>
-              <!--<a href="http://culturabrasil.cmais.com.br/arquivo/<?php echo $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">-->
-              <a href="<?php echo $d->retriveUrl(); ?>" title=" <?php echo $d->getTitle(); ?>">
+              <a href="http://culturabrasil.cmais.com.br/<?php echo $section->Site->getSlug()?>/arquivo/<?php echo $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
               <?php elseif($section->getSlug() == "entrevistas"): ?>
               <a href="<?php echo $d->retriveUrl(); ?>" title=" <?php echo $d->getTitle(); ?>">
               <?php else: ?>

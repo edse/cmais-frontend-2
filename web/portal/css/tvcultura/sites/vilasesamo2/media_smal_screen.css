@@ -114,6 +114,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .na-tv #container-na-tv .container-na-tv .container-horarios .img-logo{width:100%;}
 .na-tv .b-verde {position: relative;}
  
+
 /*  Pais Artigos */
 #header-mobile{display:none;}
 .cuidadores #content{margin:1%;}
@@ -142,6 +143,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .parceiros-cuidadores, .na-tv .container-na-tv,.acessibilidade .box-acessibilidade p{text-align: left;font-size:1.5em;line-height: 1.25em;}/*texto corrido celular*/
 .primeiro-p {font-size:1.2em;color:#666}/*texto corrido celular, primeiro p*/
 .cuidadores .container-cuidadores .col-dir .box-ler p {color: #666;font-size: 1.1em;}
+
 
 
 /* personagens */
