@@ -115,22 +115,31 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .na-tv .b-verde {position: relative;}
  
 /*  Pais Artigos */
+#header-mobile{display:none;}
+.cuidadores #content{margin:1%;}
+.cuidadores #content h1 a{margin-top:10px;}
 .cuidadores .filtro  {margin: 20px auto!important;width: 96%;}
+.cuidadores .todos-assets p {text-align: center!important;font-size: 0.9em;line-height: 51px;}
 .cuidadores .container-cuidadores .col-esq article .redes-artigo {display:none}
 .cuidadores .container-cuidadores h3 {margin:0 auto;width: 70%;}
 .cuidadores .img-topo-asset {width:90%!important}
 .cuidadores .container-cuidadores .col-dir .box-ler .titulo-box, .cuidadores .container-cuidadores .col-dir .box-brincarjunto .titulo-box {width: auto!important}
 .cuidadores .col-direita,#comente-este-artigo,.fb_iframe_widget,#div-gpt-ad-1385748525978-0{display: none!important;}
 .cuidadores .container-cuidadores .col-dir{width:100%!important;margin:0!important}
-.cuidadores .container-cuidadores .col-esq {width:100%!important}
+.cuidadores .container-cuidadores .col-esq {width:100%!important; padding:5%!important;}
+.cuidadores .parceiros-cuidadores ul{margin:0 0 10px 0;}
+.cuidadores .parceiros-cuidadores ul li{line-height: 1.25em; font-size:1em;}
+.cuidadores .parceiros-cuidadores ul li:before{content:"-"}
 .cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre {max-width:none!important;width: 100%}
 .cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre img {width: 100%}
 .cuidadores .container-cuidadores .col-dir .box-sobre a{width: 95%;text-align: center;}
 .cuidadores .todos-assets {width: 90%!important;font-size: 1em!important;background-image:none!important;background-color: #1DC252;margin-right: 7%;display: block;border-radius: 13px;}
-.icone-voltar-artigo {height:0px!important}
-#content .filtro h1 {height: 130px;font-size: 1.6em;line-height: 2em;}
+.cuidadores .container-cuidadores .col-esq article section a {font-size: 1em!important}
+.cuidadores .icone-voltar-artigo {height:0px!important}
+.cuidadores #content .filtro h1 {height: 130px;font-size: 1.6em;line-height: 3em;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;padding: 0 3%;}
+.artigo #content header h1 {overflow: visible!important;white-space:normal!important;}
 .ac-explicacao  {width: 0!important}
-.parceiros-cuidadores, .na-tv .container-na-tv,.acessibilidade .box-acessibilidade p{text-align: left;font-size:1.5em;padding: 10px;line-height: 1.2em;}/*texto corrido celular*/
+.parceiros-cuidadores, .na-tv .container-na-tv,.acessibilidade .box-acessibilidade p{text-align: left;font-size:1.5em;line-height: 1.25em;}/*texto corrido celular*/
 .primeiro-p {font-size:1.2em;color:#666}/*texto corrido celular, primeiro p*/
 .cuidadores .container-cuidadores .col-dir .box-ler p {color: #666;font-size: 1.1em;}
 
