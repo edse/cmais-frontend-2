@@ -312,7 +312,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
           <p class="msgAcerto" style="display:none;">Pergunta enviada com sucesso, obrigado!</p>
           <p class="msgErro" style="display:none;">Erro no envio, tente mais tarde!</p>
          <!--form-->
-         <form id="destaque-programas" class="form-pergunta" method="post">
+         <form action="http://app.cmais.com.br" id="destaque-programas" class="form-pergunta" method="post">
            
           <!--Programa-->
           <div class="text-input programa">
