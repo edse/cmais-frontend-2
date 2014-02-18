@@ -345,7 +345,7 @@
                 beforeSend: function(){
                   $('#loader3').show();
                   $('.btn-enviar').hide();
-                },
+                }, 
                 success: function(data){
                   $('#loader3').hide();
                   $('.btn-enviar').show();
