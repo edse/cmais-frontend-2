@@ -1209,7 +1209,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
     require_once('/var/frontend/lib/vendor/symfony/lib/helper/DateHelper.php');
     require_once('/var/frontend/lib/vendor/symfony/lib/helper/UrlHelper.php');
     
-    if($request->isXmlHttpRequest()){
+    //if($request->isXmlHttpRequest()){
       $return = '';
       $start = 0;
       $items = intval($request->getParameter('items'));
@@ -1565,7 +1565,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           
         }
         */
-    }
+   // }
     die();
   }
     
