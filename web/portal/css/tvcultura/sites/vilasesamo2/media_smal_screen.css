@@ -157,6 +157,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 
 @media screen and (min-width:430px){
   .imagem-topo {width: 190px;left: 50%;margin-left: -77px;}
+  .cuidadores .container-cuidadores .col-dir .box-sobre a {width: 45%!important;float: left!important;}
 }
 @media screen and (orientation:landscape){
   #nav-mobile a {width:46%}
