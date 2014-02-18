@@ -491,7 +491,6 @@ $(document).ready(function(){
   
   var validator = $('.form-pergunta').validate({
     
-    submitHandler: function(form){
       submitHandler: function(form){
         form.submit();
       },/*
@@ -515,7 +514,6 @@ $(document).ready(function(){
           }
         }
       });     */  
-    },
     rules:{
       email:{
         required: true,
