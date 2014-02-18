@@ -1441,7 +1441,12 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $return .=      '</a>';
               $return .=    '</li>';
                        
-              echo $return;
+             // echo $return;
+							
+				      $a["data"] = $return;
+				      $json = json_encode($a);
+				      $callback = $request->getParameter('callback');
+				      echo $callback.'('. $json . ');';
               
             endif;  
            
@@ -1456,7 +1461,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         $return2 .=  '$(".no-repeat").attr("value","'.$not_repeat.'")';
         $return2 .= '</script>';
         
-        echo $return2;
+        //echo $return2;
         //je
         
         /*
