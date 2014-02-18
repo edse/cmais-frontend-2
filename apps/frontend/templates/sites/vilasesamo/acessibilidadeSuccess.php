@@ -1,7 +1,7 @@
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <?php
 $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página.</noscript>"
 ?>
@@ -22,11 +22,11 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 
 <!--content-->
 <div id="content">
-	
-	<!--Explicação acessibilidade-->
-	<h1 tabindex="0" class="ac-explicacao">
-	 <?php echo $section->getDescription(); ?>
-	</h1>
+  
+  <!--Explicação acessibilidade-->
+  <h1 tabindex="0" class="ac-explicacao">
+   <?php echo $section->getDescription(); ?>
+  </h1>
   
   
   <!--section -->
@@ -52,21 +52,23 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <?php endif; ?>  
         
          <!--Explicação acessibilidade visite o site da Laramara-->
-		  <a href="http://laramara.org.br/" tabindex="0" class="ac-link" aria-label="Visite o site da LARAMARA"></a>
-             <span class="fundo-acessibilidade" aria-label="Imagem da Bel e Groove felizes por terem um site acessível" tabindex="0"></span>
+      <a href="http://laramara.org.br/" tabindex="0" class="ac-link" aria-label="Visite o site da LARAMARA"></a>
+      <span class="fundo-acessibilidade" aria-label="Imagem da Bel e Groove felizes por terem um site acessível" tabindex="0">
+        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/img_acessibilidade.png" />
+      </span>
          
       </div>
       <!--/container-->
     </div>
     <!--/container conteudo-->
     
-	<script>
-	$('.box-acessibilidade p').each(function(index) {
-	  $(this).attr('tabindex', 0);
-	});
-	</script>
-	<?php echo $noscript; ?>
-	<script>
+  <script>
+  $('.box-acessibilidade p').each(function(index) {
+    $(this).attr('tabindex', 0);
+  });
+  </script>
+  <?php echo $noscript; ?>
+  <script>
     $('.box-acessibilidade p > a').each(function(index) {
       $(this).attr('tabindex', -1).attr("aria-hidden","true");
     });

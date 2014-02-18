@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'din-blackregular';
-    src: url('/portal/css/fontes/din/din-black-webfont.eot');
-    src: url('/portal/css/fontes/din/din-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/portal/css/fontes/din/din-black-webfont.woff') format('woff'),
-         url('/portal/css/fontes/din/din-black-webfont.ttf') format('truetype'),
-         url('/portal/css/fontes/din/din-black-webfont.svg#din-blackregular') format('svg');
+    src: url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.eot');
+    src: url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.woff') format('woff'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.ttf') format('truetype'),
+         url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.svg#din-blackregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,22 +13,22 @@
 .header-tablet{display:block; position: fixed;z-index: 50000;background: #fff;width: 100%;top:0;}
 .header-mobile{display:none;}
 #header-bar-mobile{display:none;}
-.imagem-topo{position: absolute;width: 272px;bottom: 0;left: 50%;margin-left: -66px;}
-.header-tablet{height: 110px;-moz-box-shadow: 0 0 30px 1px #C2C2C2;-webkit-box-shadow: 0 0 30px 1px #C2C2C2;box-shadow: 0 0 30px 1px #C2C2C2;-moz-box-shadow:inset 0 0 30px 5px #e5e5e5 ;}
-.header-tablet a.logo-mobile{margin:1px 0 0 35px;overflow: hidden;float: left;max-width:200px;display: block;left: 5%;}
-.header-tablet a.btn-menu{margin-top:5px;overflow: hidden;float:right;margin: 30px 30px 0 30px;}
-.header-tablet .search-mobile{background:#FCF2AE; margin:20px 0 0 0px; padding: 13px 3%; line-height: 70px;}
-.header-tablet .search-mobile form{margin: 0 auto;max-width: 480px;}
-.header-tablet .search-mobile form input{border-radius: 0;width: 80%;height: 60px; font-size:28px; line-height: 60px; float: right!important;}
+.imagem-topo{position: absolute;width: 220px;bottom: 0;left: 50%;margin-left: -81px;}
+.header-tablet{height: 70px;-moz-box-shadow: 0 0 30px 1px #C2C2C2;-webkit-box-shadow: 0 0 30px 1px #C2C2C2;box-shadow: 0 0 30px 1px #C2C2C2;-moz-box-shadow:inset 0 0 30px 5px #e5e5e5 ;}
+.header-tablet a.logo-mobile{margin:1px 0 0 35px;overflow: hidden;float: left;max-width:125px;display: block;left: 5%;}
+.header-tablet a.btn-menu{overflow: hidden;float:right!important;margin: 11px 30px 0 0px!important;width:50px!important;}
+.header-tablet .search-mobile{background:#FCF2AE;overflow: hidden;}
+.header-tablet .search-mobile form{margin: 2% 3%;max-width: 255px; float:right;}
+.header-tablet .search-mobile form input {width: 70%;height: 25px;font-size: 1.3em;line-height: 25px;}
 .header-tablet button.alca{margin: 0 auto;position: absolute;bottom: 0;left: 50%;background: #e5e5e5;border: none;width: 100px;margin-bottom: 5px;border-radius: 10px;height: 16px;display:none;}   
 
 /* menu principal geral */
 .topo-vila .container {height: 65px;}
 .navbar .container img{width: 128px;}
-#nav-tablet{width: 510px;padding:0;background: #eeeeee;display: none; position: absolute;z-index: 40000;top: 110px;right:0px;}
-#nav-tablet a{text-decoration:none;font-family:'din-blackregular', Arial, Helvetica, sans-serif;width:96%;padding:2%;border-bottom:1px dotted #333;font-size: 1.5em; float:left; text-align:right; text-transform:uppercase;color:#333!important;line-height: 39px;}
+#nav-tablet{width: 510px;padding:0;background: #FFFFFF;display: none; position: absolute;z-index: 40000;top: 70px;right:0px;}
+#nav-tablet a{padding: 1% 0;text-decoration: none;font-family: 'din-blackregular', Arial, Helvetica, sans-serif;width: 100%;border-bottom: 1px dotted #333;font-size: 1.2em;float: left;text-align: right;text-transform: uppercase;color: #333!important;line-height: 37px;}
 #nav-tablet a:last-child{border:none}
-#nav-tablet img{float: right;width: 35px; margin:2px 6px 0 15px;}
+#nav-tablet img{float: right;width: 35px; margin:2px 24px 0 9px;}
 .navbar-fixed-top {margin-bottom: 0;position: absolute;}
 .navbar-inverse .navbar-inner.topo-vila {background:#fff!important;height: 65px!important;padding: 4px 6px;}
 .navbar .container {width: auto;background: url(/portal/images/capaPrograma/vilasesamo2/mobile/icon_menu_mobile.png) no-repeat right;}
@@ -37,7 +37,7 @@
 .topo-vila .nav {display: none;}
 .header-bar{display: none;}
 .form-search{display: none;}
-#content {background: #FEE132;top: 20px!important;}
+#content {background: #FEE132;}
 .nav-mobile{display:none;}
 
 /* index */
@@ -48,9 +48,9 @@
 #carrossel-personagem .slider .nome {font-size: 1.7em;}
 .mpc_ls .mpc_ls_ui .mpc_ls_ui_button.style02 {margin-top: -107px;}
 .destaques.span12{width:100%; padding: 0 20px!important;}
-.destaques.span8{width: 100%;padding: 0 20px;}
+.destaques.span8{width: 100%!important;padding: 0 20px;}
 .destaques.span8 > .span4{width:31.9%!important; float:left;}
-.span4.banner{display:none;}
+.span4.banner{display:none!important;}
 /* index */
 
 /* assets interna */
@@ -58,9 +58,8 @@
 /* assets interna */
 
 /* Acessibilidade */
-.acessibilidade .container-na-tv {min-height:860px;}
 .acessibilidade .box-acessibilidade {width:100%!important}
-.acessibilidade .fundo-acessibilidade {top: initial!important;bottom: 0;}
+.acessibilidade .fundo-acessibilidade {width:50%!important; margin:0 auto;}
 
 
 
@@ -68,7 +67,8 @@
 /* Na TV */
 .na-tv .container-na-tv p {float:none!important;max-width:100%!important}
 .na-tv #container-na-tv .container-na-tv{padding-bottom:20px;}
-.na-tv #container-na-tv .container-na-tv p{font-size: 1.1em;float:none;max-width:none; margin: 20px auto;}
+
+.na-tv #container-na-tv .container-na-tv p{font-size: 1.1em;float:none;max-width:100%; margin: 20px auto;}
 .na-tv #container-na-tv .container-na-tv {min-height: 900px;}
 .na-tv #content .fundo-na-tv {width:53%; background-size: 83%;position:relative;background-position:center 0;top:10px; left:0;margin:0 auto;}
 .na-tv #container-na-tv .container-na-tv .container-horarios {margin: 20px auto;float: none;max-height: 250px;width: 100%;}
@@ -98,6 +98,7 @@ footer #no-mobile{display: block;}
 footer #mobile{display: none;}
 footer .mapa{margin:2%;}
 footer .mapa .span12 {border: 1px solid #f0f0f0;}
+footer .mapa a{font-size:1.2em}
 footer #personagens-rodape{display: none!important;;}
 footer .relacionados ul{display: none;}
 footer nav{display: block!important;}

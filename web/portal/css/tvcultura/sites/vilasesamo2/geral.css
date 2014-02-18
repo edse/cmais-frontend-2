@@ -43,7 +43,7 @@ a:hover { text-decoration:underline; }
 footer .mapa .span12 ul a,
 input, button, select, textarea,
 .destaques a.asset,
-body { font-family: 'dinmedium', "Helvetica Neue", Helvetica, Arial, sans-serif; color:#737373; }
+body { font-family: 'dinmedium', "Helvetica Neue", Helvetica, Arial, sans-serif!important; color:#737373; }
 /* /din-blackregular*/
 
 /* din-blackregular*/
@@ -463,8 +463,8 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .topo-vila nav { float:right; margin-right:0;  }
 .topo-vila .nav,
 .topo-vila nav form { float:right; }
-.topo-vila .nav { height:20px; padding:0 10px; margin-top:18px; width:490px; float:left; }
-.topo-vila .nav li a { padding:0; float:left; text-transform:uppercase; text-shadow:none; color:#737373; font-weight: normal;}
+.topo-vila .nav { height:20px; padding:0 10px; margin-top:18px!important; width:490px; float:left; }
+.topo-vila .nav li a { padding:0!important; float:left!important; text-transform:uppercase; text-shadow:none!important; color:#737373!important; font-weight: normal;}
 .topo-vila .nav li a:hover { color:#737373; background:none !important; font-weight: normal !important; }
 .topo-vila .nav li .sprite-menu-ball {  display: block; margin:7px 5px 0 10px; float:left; }
 .topo-vila .form-search { margin-top:8px; margin-bottom: 0; }
@@ -682,7 +682,7 @@ footer .relacionados li a:hover{-moz-opacity: 0.50;-khtml-opacity: 0.50;opacity:
 .box-pais .parceiros img{width:100%;}
 .box-pais a:hover{color:#434343;} 
 
-img.altura{width: 1px!important;height: 40px!important;}
+img.altura{width: 1px!important;height: 40px!important; float:left;}
 #content .pais {overflow: hidden;min-height: 46px!important; background:#feec3c; margin:0 auto !important; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 #content .pais.categorias{overflow: visible;}
 .pais h2.tit-box{height: 44px;font-size:1.80em;line-height: 47px;padding: 1px 20px;color: #434343;text-transform:uppercase;}

@@ -33,7 +33,7 @@
             type: "POST",
             dataType: "json",
             data: $("#e<?php echo $asset->getId()?>").serialize(),
-            url: "<?php //echo url_for('homepage')?>/ajax/enquetes",
+            url: "http://app.cmais.com.br/ajax/enquetes",
             beforeSend: function(){
               $('#votar').hide();
               $('#v_load').show();

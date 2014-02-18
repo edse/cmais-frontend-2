@@ -133,31 +133,31 @@ function slugfy($string){
 
           <div class="pagination pagination-centered artista">
             <ul>
-              <li<?php if($letter == "#"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/1-9">#</a></li>
-              <li<?php if($letter == "a"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/a">A</a></li>
-              <li<?php if($letter == "b"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/b">B</a></li>
-              <li<?php if($letter == "c"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/c">C</a></li>
-              <li<?php if($letter == "d"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/d">D</a></li>
-              <li<?php if($letter == "e"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/e">E</a></li>
-              <li<?php if($letter == "f"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/f">F</a></li>
-              <li<?php if($letter == "g"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/g">G</a></li>
-              <li<?php if($letter == "h"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/h">H</a></li>
-              <li<?php if($letter == "i"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/i">I</a></li>
-              <li<?php if($letter == "j"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/j">J</a></li>
-              <li<?php if($letter == "k"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/k">K</a></li>
-              <li<?php if($letter == "l"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/l">L</a></li>
-              <li<?php if($letter == "m"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/m">M</a></li>
-              <li<?php if($letter == "n"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/n">N</a></li>
-              <li<?php if($letter == "o"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/o">O</a></li>
-              <li<?php if($letter == "p"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/p">P</a></li>
-              <li<?php if($letter == "q"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/q">Q</a></li>
-              <li<?php if($letter == "r"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/r">R</a></li>
-              <li<?php if($letter == "s"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/s">S</a></li>
-              <li<?php if($letter == "t"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/t">T</a></li>
-              <li<?php if($letter == "u"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/u">U</a></li>
-              <li<?php if($letter == "v"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/v">V</a></li>
-              <li<?php if($letter == "x"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/x">X</a></li>
-              <li<?php if($letter == "z"): ?> class="active"<?php endif; ?>><a href="<?php echo url_for('@homepage') ?>artistas/letra/z">Z</a></li>
+              <li<?php if($letter == "#"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/1-9">#</a></li>
+              <li<?php if($letter == "a"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/a">A</a></li>
+              <li<?php if($letter == "b"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/b">B</a></li>
+              <li<?php if($letter == "c"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/c">C</a></li>
+              <li<?php if($letter == "d"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/d">D</a></li>
+              <li<?php if($letter == "e"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/e">E</a></li>
+              <li<?php if($letter == "f"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/f">F</a></li>
+              <li<?php if($letter == "g"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/g">G</a></li>
+              <li<?php if($letter == "h"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/h">H</a></li>
+              <li<?php if($letter == "i"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/i">I</a></li>
+              <li<?php if($letter == "j"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/j">J</a></li>
+              <li<?php if($letter == "k"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/k">K</a></li>
+              <li<?php if($letter == "l"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/l">L</a></li>
+              <li<?php if($letter == "m"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/m">M</a></li>
+              <li<?php if($letter == "n"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/n">N</a></li>
+              <li<?php if($letter == "o"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/o">O</a></li>
+              <li<?php if($letter == "p"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/p">P</a></li>
+              <li<?php if($letter == "q"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/q">Q</a></li>
+              <li<?php if($letter == "r"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/r">R</a></li>
+              <li<?php if($letter == "s"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/s">S</a></li>
+              <li<?php if($letter == "t"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/t">T</a></li>
+              <li<?php if($letter == "u"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/u">U</a></li>
+              <li<?php if($letter == "v"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/v">V</a></li>
+              <li<?php if($letter == "x"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/x">X</a></li>
+              <li<?php if($letter == "z"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/z">Z</a></li>
             </ul>
             <br/>
             
@@ -195,8 +195,8 @@ function slugfy($string){
 										$new_slug = str_ireplace("e-039-", "", $new_slug);//Martnália
                   ?>
                   <tr>
-                    <td><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo $new_slug; ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></a></td>
-                    <td><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo $new_slug; ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> listar musicas </a></td>
+                    <td><a href="/artistas/<?php echo $new_slug; ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></a></td>
+                    <td><a href="/artistas/<?php echo $new_slug; ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> listar musicas </a></td>
                   </tr>
                 <?php endforeach; ?>
               <?php endif; ?>
@@ -222,8 +222,8 @@ function slugfy($string){
 										$new_slug = str_ireplace("e-039-", "", $new_slug);//Martnália
                   ?>
                   <tr>
-                    <td><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo $new_slug; ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></a></td>
-                    <td class="play"><a href="<?php echo url_for('@homepage') ?>artistas/<?php echo $new_slug; ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> listar musicas </a></td>
+                    <td><a href="/artistas/<?php echo $new_slug; ?>"><?php echo str_ireplace("Por ", "", $d->getDescription()); ?></a></td>
+                    <td class="play"><a href="/artistas/<?php echo $new_slug; ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> listar musicas </a></td>
                   </tr>
                   <?php endif; ?>
                 <?php endforeach; ?>

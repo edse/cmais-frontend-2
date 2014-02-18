@@ -75,7 +75,7 @@
                 <tr>
                   <td><?php echo $d->getTitle(); ?></td>
                   <td><?php echo $d->AssetContent->getAuthor(); ?></td>
-                  <td><a href="<?php echo url_for('@homepage') ?><?php echo $section->getSlug() . '/' . $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> ver detalhes </a></td>
+                  <td><a href="/<?php echo $section->getSlug() . '/' . $d->getSlug(); ?>" class="btn btn-mini btn-inverse pull-right" ><i class="icon-list icon-white"></i> ver detalhes </a></td>
                 </tr>
               <?php endforeach; ?>
             <?php endif; ?>

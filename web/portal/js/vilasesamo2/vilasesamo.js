@@ -1,13 +1,15 @@
 $(document).ready(function() {
-  //definind viewport para celular
-  var screenWidth = screen.width;
-    if(screenWidth < 540){
-      $('head').append('<meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no">');
-    }else if(screenWidth >= 541 && screenWidth <= 767){  
-      //alert("tablet p");
-    } else if(screenWidth >= 768){  
-      //alert("tablet l");
-    }
+    //thumbnail video quadrado destaques de todas as telas    
+    var thumbnailHeight = $('.square img.destaque').height();
+    var thumbVideo = $('.rect img');
+    thumbVideo.css('height', thumbnailHeight);
+    window.onresize=function(){
+      thumbnailHeight = $('.square img.destaque').height();
+      thumbVideo.css('height', thumbnailHeight);
+      console.log('-')
+    };
+    
+  
     /*
     * 
     * PRINT JPGS
@@ -106,73 +108,23 @@ $(document).ready(function() {
 
   //header tablet e celular
 
-  $('.alca').click(function(){
-    if($('.header-mobile').height() > 109){
-      hideHeader();
-    }else{
-      showHeader();
-    }
-    setTimeout(function(){hideHeader()},8000);
-    
-  });
-  
   $('.ac-pular').click(function(){
     $('.ac-explicacao').focus();
   });
   
   $('.btn-menu').click(function(){
-    $('.nav-mobile').toggle('fast');
+    $('.nav-mobile').slideToggle('fast');
   });
     
-    $('.alca').hide();
+  
+ 
+
     
-    var delay = 300;
-    var timeout = null;
-    var initialPosition = document.documentElement.scrollTop
-    $(window).bind('scroll',function(){
-      clearTimeout(timeout);
-      timeout = setTimeout(function(){
-        var scrollPosition =  $(window).scrollTop();
-        if(scrollPosition <= initialPosition ){
-          showHeader();
-        }else{
-          hideHeader();
-        }
-        initialPosition = scrollPosition;
-      },delay);
-    });
-    
-    window.onload=function(){
-      setTimeout(function(){hideHeader()},2000);  
-    };
-    
-    function hideHeader(){
-      $('.alca').fadeIn('fast');
-      $('.logo-mobile, .btn-menu, .nav-mobile, .imagem-topo').hide()
-      $('.header-tablet').animate({
-        height:30
-      }, "fast");
-      $('.header-mobile').animate({
-        height:30
-      }, "fast");
-    }
-    
-    function showHeader(){
-      $('.alca').hide();
-      $('.logo-mobile, .btn-menu,.imagem-topo').fadeIn('fast')
-      $('.header-tablet').animate({
-        height:110
-      }, "fast");
-      $('.header-mobile').animate({
-        height:110
-      }, "fast");
-    }
-    
-    function goTop(){
-      $('html, body').animate({
-        scrollTop:parseInt($('.container').offset().top)
-      }, "slow");
-    } 
+  function goTop(){
+    $('html, body').animate({
+      scrollTop:parseInt($('.container').offset().top)
+    }, "slow");
+  } 
 
   //menu personagens tablet
   $('.icone-cuidadores-abrir').click(function() {
@@ -214,7 +166,10 @@ $(document).ready(function() {
     e.preventDefault();
     $(this).tab('show');
   });
-      
+  
+  
+  
+     
 });//document.ready
 
 //impressao no ie com close ativado

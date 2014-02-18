@@ -1220,7 +1220,16 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       $section = $request->getParameter('section');
       $site = $request->getParameter('site');
       $not_repeat = $request->getParameter('no-repeat');
-      
+      /*$not_flash = $request->getParameter('not_flash');
+	      <script>
+					if(hasflash() && user_agent == "desktop"){
+						//carrega os jogos flash e html5
+						
+					}else{
+						//carrega somente jogos em html5
+					}
+				</script>
+      */
       
       if($page >= 1)
         $start = ($page * $items)-$items;
@@ -1761,6 +1770,7 @@ EOT;
 
 
   public function executeEnquetes(sfWebRequest $request){
+    header("content-type: application/json");
     /*
     $request->checkCSRFProtection();
     //if(!$request->isXmlHttpRequest()) die();
@@ -1776,7 +1786,7 @@ EOT;
         $oldPath = set_include_path($clientLibraryPath);
         // load Zend Gdata libraries
         require_once 'Zend/Loader.php';
-        Zend_Loader::loadClass('Zend_Gdata_Spreadsheets');
+        Zend_Loader::loadClass('Zend_Gdata_Spreadsheets');3
         Zend_Loader::loadClass('Zend_Gdata_ClientLogin');
         
         // set credentials for ClientLogin authentication
