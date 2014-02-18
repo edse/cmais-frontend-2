@@ -92,6 +92,9 @@
 .cuidadores .container-cuidadores .col-dir{width:100%!important;margin:0!important}
 .cuidadores .container-cuidadores .col-esq {width:100%!important}
 .cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre {max-width:none!important;width: 100%;bottom:}
+.cuidadores .container-cuidadores .destaques .jogos{width:32%!important;float:left;}
+.cuidadores .container-cuidadores .destaques .videos,
+.cuidadores .container-cuidadores .destaques .atividades{width:32%!important;float:left;margin-left:2%;}
 .cuidadores .container-cuidadores .col-dir .box-sobre {margin-bottom: 8%!important;min-height: 170px;}
 .cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre {width: 100%;bottom: -22%!important;position: absolute;}
 .cuidadores .container-cuidadores .col-dir .box-sobre a{max-width: 95%;text-align: center;}
@@ -101,7 +104,6 @@
 .ac-explicacao{width: 0!important}
 .primeiro-p {font-size:1.2em;color:#666}
 .cuidadores .container-cuidadores .col-dir .box-ler p {color: #666;font-size: 1.1em;}
-
 
 
 /* Personagens */

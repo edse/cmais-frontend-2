@@ -1,7 +1,7 @@
 $(document).ready(function() {
     //thumbnail video quadrado destaques de todas as telas    
-    var thumbnailHeight = $('.square img.destaque').height();
-    var thumbVideo = $('img.destaque');
+    var thumbnailHeight = $('.square img').height();
+    var thumbVideo = $('rect img');
     thumbVideo.css('height', thumbnailHeight);
     window.onresize = function(){
       thumbVideo.css('height', thumbnailHeight);
