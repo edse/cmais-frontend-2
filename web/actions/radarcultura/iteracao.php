@@ -5,7 +5,7 @@ $email_site = "radar.email@tvcultura.com.br";
 
 if(isset($email_site)) {
     
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  //if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $email_user = @strip_tags($_REQUEST['email']);
     $nome_user = @strip_tags($_REQUEST['nome']);
@@ -44,5 +44,5 @@ if(isset($email_site)) {
       header("Location: http://cmais.com.br");
       die();
     }
-  }
+  //}
 }
