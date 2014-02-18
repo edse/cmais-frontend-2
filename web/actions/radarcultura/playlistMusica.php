@@ -25,12 +25,18 @@ if($_REQUEST["post_id"]){
     $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
     $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
     if(mail($email_site, '[RadarCultura][Música para playlist: ] '.$nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho)){
-      //die('callback("1");');
-      die('1');
+      $a = array("data" => "1");
+      $json = json_encode($a);
+      $callback = $_REQUEST['callback'];
+      echo $callback.'('. $json . ');';
+			die();
     }
     else {
-      //die('callback("0");');
-      die('0');
+      $a = array("data" => "0");
+      $json = json_encode($a);
+      $callback = $_REQUEST['callback'];
+      echo $callback.'('. $json . ');';
+			die();    	
     }
   /*}
   else {

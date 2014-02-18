@@ -297,7 +297,7 @@
                            type : "GET", 
                            dataType: "jsonp",
                            data: $('#busca-radar').serialize(),
-                           url: "http://app.cmais.com.br/index.php/ajax/radar-musica",
+                           url: "http://app.cmais.com.br/ajax/radar-musica",
                            success: function(json){
                                      $("#qtd_result").text(json.qtd_result);
                                      $("#resultado_busca").html(json.data);
