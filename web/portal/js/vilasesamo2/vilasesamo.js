@@ -1,11 +1,13 @@
 $(document).ready(function() {
     //thumbnail video quadrado destaques de todas as telas    
     var thumbnailHeight = $('.square img.destaque').height();
-    var thumbVideo = $('img.destaque');
+    var thumbVideo = $('.rect img');
     thumbVideo.css('height', thumbnailHeight);
-    window.onresize = function(){
+    window.onresize=function(){
+      thumbnailHeight = $('.square img.destaque').height();
       thumbVideo.css('height', thumbnailHeight);
-    }
+      console.log('-')
+    };
     
   
     /*
@@ -165,8 +167,8 @@ $(document).ready(function() {
     $(this).tab('show');
   });
   
-  //scrollTop
-  console.log($('header-mobile').offset().top)
+  
+  
      
 });//document.ready
 
