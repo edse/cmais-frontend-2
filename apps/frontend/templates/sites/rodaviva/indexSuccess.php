@@ -288,7 +288,7 @@
           					</ul>
 							
           				</div>
-						<a class="memRoda" target="_blank" href="http://www.rodaviva.fapesp.br/"><img src="../portal/images/capaPrograma/rodaviva/banner-roda-viva.png" alt="Memória Roda Viva" title="Memória Roda Viva" /></a>
+						<a class="memRoda" target="_blank" href="http://www.rodaviva.fapesp.br/"><img src="http://cmais.com.br/portal/images/capaPrograma/rodaviva/banner-roda-viva.png" alt="Memória Roda Viva" title="Memória Roda Viva" /></a>
           			</div>
           		</div>
           		<span class="bordaBottomRV"></span>
