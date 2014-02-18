@@ -514,7 +514,6 @@ $(document).ready(function(){
           }
         }
       });     */  
-    },
     rules:{
       email:{
         required: true,
