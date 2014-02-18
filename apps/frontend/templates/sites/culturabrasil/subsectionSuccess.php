@@ -8,7 +8,7 @@ if(isset($pager)){
 
 $uri = str_replace('/index.php', '', $uri);
 
-?>
+?> 
 
 <?php use_helper('I18N', 'Date') ?>
 
