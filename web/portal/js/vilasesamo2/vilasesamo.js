@@ -165,6 +165,8 @@ $(document).ready(function() {
     $(this).tab('show');
   });
   
+  //scrollTop
+  console.log($('header-mobile').offset().top)
      
 });//document.ready
 
