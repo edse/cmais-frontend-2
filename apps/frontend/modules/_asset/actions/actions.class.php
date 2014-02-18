@@ -17,14 +17,14 @@ class _assetActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request){
     if($request->getParameter('object')){
+      // asset
+      $this->asset = $request->getParameter('object');
       // URI
       $this->uri = str_replace('/index.php', '', $request->getUri());
       // URL
       $this->url = @current(explode('?',$this->uri));
       // main site
       $this->mainSite = Doctrine::getTable('Site')->findOneBySlug('cmais');
-      // asset
-      $this->asset = $request->getParameter('object');
 			
 			if ($this->asset->getIsActive() != '1' && $this->asset->Site->getType() != "Programa TVRTB"){
 				header("Location: ".$this->asset->Site->retriveUrl());

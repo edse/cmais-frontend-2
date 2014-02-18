@@ -160,7 +160,7 @@
             <div class="botao-dr-abobrinha"></div>
             <div class="gif-dr-abobrinha"></div>
             <!--a href="<?php echo $displays["dr-abobrinha"][0]->retriveUrl()?>" title="<?php echo $displays["dr-abobrinha"][0]->getTitle()?>" class="botao-dr-abobrinha-over" name="over-dr-abobrinha" style="display:none"></a-->  
-            <a href="<?php echo url_for('homepage') . $site->getSlug() . '/' . $displays["dr-abobrinha"][0]->Asset->getSlug() ?>" title="<?php echo $displays["dr-abobrinha"][0]->getTitle()?>" class="botao-dr-abobrinha-over" name="over-dr-abobrinha" style="display:none"></a>  
+            <a href="<?php echo "/" . $site->getSlug() . '/' . $displays["dr-abobrinha"][0]->Asset->getSlug() ?>" title="<?php echo $displays["dr-abobrinha"][0]->getTitle()?>" class="botao-dr-abobrinha-over" name="over-dr-abobrinha" style="display:none"></a>  
             <!--/DR.ABROBINHA-->
               <?php endif; ?>
             <?php endif; ?>  
