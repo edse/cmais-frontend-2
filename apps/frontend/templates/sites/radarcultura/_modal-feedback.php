@@ -107,7 +107,7 @@
         $.ajax({
           type: "POST",
           dataType: "text",
-          url: "/actions/radarcultura/feedback.php",
+          url: "http://app.cmais.com.br/actions/radarcultura/feedback.php",
           data: $("#form-feedback").serialize(),
           beforeSend: function(){
             $('#loader2').show();

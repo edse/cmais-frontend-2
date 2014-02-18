@@ -65,7 +65,7 @@ $assets = $pager->getResults();
         <div class="divisao"></div>
         <?php
         /*
-        <form class="form-horizontal" id="form-contato" method="post" action="/actions/cocorico/sendmail.php" enctype="multipart/form-data">
+        <form class="form-horizontal" id="form-contato" method="post" action="http://app.cmais.com.br/actions/cocorico/sendmail.php" enctype="multipart/form-data">
           <h2>Envie sua receitinha com milho:</h2>
           <div class="control-group g-nome">
             <label class="control-label nome" for="nome"></label>

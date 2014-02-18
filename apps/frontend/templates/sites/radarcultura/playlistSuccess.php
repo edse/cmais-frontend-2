@@ -206,7 +206,7 @@
               $.ajax({
                 type: "POST",
                 dataType: "text",
-                url: "/actions/radarcultura/playlistMusica.php",
+                url: "http://app.cmais.com.br/actions/radarcultura/playlistMusica.php",
                 data: $("#form-indicacao-playlist-musica").serialize(),
                 beforeSend: function(){
                   $('#loader3').show();
