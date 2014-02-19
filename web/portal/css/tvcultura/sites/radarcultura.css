@@ -248,5 +248,5 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #00b4d5 !impo
 
 /*alteraçoes player fev2014*/
 div.jp-playlist, div.jp-interface{background: #ECECEC!important;}
-div.jp-audio h2{color:#009be3;font-size:24px;margin:0}
+div.jp-audio h2{color: #00b4d5 !important;font-size: 20px!important;margin:0;font-weight: lighter!important;}
 
