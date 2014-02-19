@@ -170,3 +170,6 @@ div.jp-audio h2{color: #0054a6;font-size: 24px;font-weight: normal;line-height: 
 .texto div.jp-playlist ul li{margin: 0 0 0px 20px!important;}
 div.jp-type-playlist div.jp-playlist li.jp-playlist-current {padding: 5px 0 4px 20px!important;list-style-position: outside!important}
 div.jp-current-time, div.jp-duration {position: absolute;font-size: .64em!important;font-style: oblique;}
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #0054a6!important;font-weight: normal;}
+
+
