@@ -338,7 +338,7 @@
             },
             submitHandler: function(form){
               $.ajax({
-                //type: "POST",
+                type: "GET",
                 dataType: "jsonp",
                 url: "http://app.cmais.com.br/actions/radarcultura/iteracao.php", 
                 data: $("#form-indicacao").serialize(),
@@ -349,7 +349,7 @@
                 success: function(data){
                   $('#loader3').hide();
                   $('.btn-enviar').show();
-                  if(data == "1"){
+                  if(data.data == "1"){
                     $("#modal").modal('hide');
                     buttonVanish();
                     alertOk();
@@ -445,13 +445,14 @@
             
             $.ajax({
               url: 'http://app.cmais.com.br/actions/radarcultura/facebookPost.php',
+              type: "GET",
               data: opts,
               dataType: "jsonp",
               success: function(data) {
                 goTop();
                 $('#socialLoading').fadeOut();
                 $('.socialBtn').popover('hide');
-                if(data == "1"){
+                if(data.data == "1"){
                   alertOk();
                   buttonVanish();
                 }
