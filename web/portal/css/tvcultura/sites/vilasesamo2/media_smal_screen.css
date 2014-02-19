@@ -161,6 +161,10 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .interna.atividades #content h1,
 .interna.videos #content h1{height:114px}
 
+.interna.jogos{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;border-radius: 13px;}
+.interna.videos{font-size: 1em!important;background-image:none!important;background-color: #f78701;display: block;border-radius: 13px;}
+.interna.atividades{font-size: 1em!important;background-image:none!important;background-color:#571ed9 ;display: block;border-radius: 13px;}
+
 .interna.jogos .conteudo-asset,
 .interna.atividades .conteudo-asset,
 .interna.videos .conteudo-asset{width:auto;}
@@ -169,13 +173,11 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .interna.atividades .todos-assets,
 .interna.videos .todos-assets {width: 90%!important;font-size: 1em!important;background-image:none!important;display: block;border-radius: 13px;}
 
-.interna.jogos .todos-assets{background-color:#3AAAEC;}
-.interna.atividades .todos-assets{background-color:#883feb;}
-.interna.videos .todos-assets{background-color:#0172f9;}
-
-.interna.jogos{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;border-radius: 13px;}
-.interna.videos{font-size: 1em!important;background-image:none!important;background-color: #f78701;display: block;border-radius: 13px;}
-.interna.atividades{font-size: 1em!important;background-image:none!important;background-color:#571ed9 ;display: block;border-radius: 13px;}
+.intena .todos-assets i{display:none;}
+.intena .todos-assets p{background:none;}
+.interna.jogos .todos-assets p{background-color:#3AAAEC;}
+.interna.atividades .todos-assets p{background-color:#883feb;}
+.interna.videos .todos-assets p{background-color:#0172f9;}
 
 @media screen and (min-width:430px){
   .imagem-topo {width: 190px;left: 50%;margin-left: -77px;}
