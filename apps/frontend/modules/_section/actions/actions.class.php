@@ -1343,7 +1343,7 @@ class _sectionActions extends sfActions
       $sectionSlug = 'list';
     elseif(in_array($sectionSlug, array('sobre','entrevistadores','entrevistados')))
       $sectionSlug = 'asset';
-    elseif((in_array($sectionSlug, array('equipe','apresentadores','personagens'))) && ($this->site->slug != 'cocorico' && $this->site->slug != 'cocorico2') && ($this->site->slug != 'vila-sesamo' && $this->site->slug != 'vilasesamo')) 
+    elseif((in_array($sectionSlug, array('equipe','apresentadores','personagens'))) && ($this->site->slug != 'cocorico' && $this->site->slug != 'cocorico2') && ($this->site->slug != 'vila-sesamo' && $this->site->slug != 'vilasesamo'))
       $sectionSlug = 'team';
     elseif(in_array($sectionSlug, array('fotos')))
       $sectionSlug = 'imagens';
