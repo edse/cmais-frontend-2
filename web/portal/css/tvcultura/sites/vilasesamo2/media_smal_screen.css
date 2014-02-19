@@ -96,6 +96,10 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 /* index */
 
 /*acessibilidade*/
+#header-mobile{display:none;}
+.acessibilidade .box-acessibilidade {width: 100%!important;}
+.acessibilidade #content .filtro h1 {font-size: 1.6em;}
+.acessibilidade .fundo-acessibilidade {width:100%!important; margin:0 auto;}
  
 
 /* na tv */
@@ -134,20 +138,19 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .artigo #content header h1 {overflow: visible!important;white-space:normal!important;}
 .cuidadores .container-cuidadores .col-dir .box-ler p {height: 57px!important;}
 .ac-explicacao  {width: 0!important}
-.parceiros-cuidadores, .na-tv .container-na-tv,.acessibilidade .box-acessibilidade p{text-align: left;font-size:1.5em;line-height: 1.25em;}/*texto corrido celular*/
+.parceiros-cuidadores, .na-tv .container-na-tv,.acessibilidade .box-acessibilidade p{text-align: left;font-size:1.2em;line-height: 1.25em;}/*texto corrido celular*/
 .primeiro-p {font-size:1.2em;color:#666}/*texto corrido celular, primeiro p*/
 .cuidadores .container-cuidadores .col-dir .box-ler p {color: #666;font-size: 1.1em;}
 
 
 
 /* personagens */
-.personagens #content h1 {font-size: 3em;}
-.personagens .q-pers {width: 45%!important;min-height: 112px!important;height: 350px!important;margin: 5px 5px 5px 3%!important;}
-.personagens #container-personagens a {width: 100%!important;height: 100%!important;}
-.personagens .conteudo-asset {width: 95%!important;margin: 0 auto!important;}
-.filtro .inner img {width: 100%!important;}
-.personagens #container-personagens p {font-size: 3em!important;}
-
+.personagens #content{margin: 20px 5%;}
+.personagens #content .conteudo-asset {width:100%;}
+.personagens #content h1{padding:0!important;font-size:2em;}
+.personagens #content .q-pers{width:134px;height:134px;}
+.personagens #content #container-personagens a {width:100%;height:100%;}
+.personagens #content #container-personagens a p { background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bg-transparente.png)  repeat; color:#d71c0d; font-size: 1.2em;font-family: 'din-blackregular',Arial, Helvetica, sans-serif!important;}
 
 @media screen and (min-width:430px){
   .imagem-topo {width: 190px;left: 50%;margin-left: -77px;}
@@ -163,5 +166,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
   .cuidadores .destaques .texto{padding-right: 4%!important;}
   .cuidadores .destaques a {line-height: 60px;}
   .cuidadores .destaques a i{margin:3% 1%!important;}
+  
+  .personagens #content .q-pers{width:22.7%;height:90px;}
 }
 

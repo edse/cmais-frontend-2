@@ -374,3 +374,9 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 .saladetv.twitter { width: 490px; /*height:400px;*/ overflow:hidden; }
 .saladetv.twitter .span6 { margin:0; }
 /* /sala de tv */
+
+
+/*alteraçoes player fev2014*/
+div.jp-playlist, div.jp-interface{background: #ECECEC!important;}
+div.jp-audio h2{color: #333333!important;font-size: 24px!important;line-height: 40px!important;}
+	
