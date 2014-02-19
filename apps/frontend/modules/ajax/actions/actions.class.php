@@ -1211,6 +1211,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
     
     //if($request->isXmlHttpRequest()){
       $return = '';
+			$content_return = '';
       $start = 0;
       $items = intval($request->getParameter('items'));
       $siteId = intval($request->getParameter('siteId'));
@@ -1376,7 +1377,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $return .=      ' </div>';
               $return .=      '</a>';
               $return .=    '</li>';
-              echo $return;
+              //echo $return;
+							$content_return.= $return;
             else:  
               
               //$related = $d->retriveRelatedAssetsByRelationType("Preview");
@@ -1442,16 +1444,14 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $return .=    '</li>';
                        
              // echo $return;
-							$a[] = $return;
-
+             $content_return.= $return;
+             
             endif;  
-           
           endif;  
-          
         endforeach;
 				
-	      $b = array("data" => $a);
-	      $json = json_encode($b);
+	      $c_r = array("data" => $content_return);
+	      $json = json_encode($c_r);
 	      $callback = $request->getParameter('callback');
 	      echo $callback.'('. $json . ');';
         die();				
