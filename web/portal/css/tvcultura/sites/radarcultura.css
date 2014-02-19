@@ -246,10 +246,7 @@ div.jp-video div.jp-video-play,
 div.jp-video div.jp-video-play:hover {background-image: url(/portal/images/jplayerradar.png) !important;}
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #00b4d5 !important;}
 
-
-
-
 /*alteraçoes player fev2014*/
-div.jp-interface {background: #ECECEC!important;border: 1px solid #ccc!important;}
+div.jp-playlist, div.jp-interface{background: #ECECEC!important;border: 1px solid #ccc!important;}
 div.jp-audio h2{color:#009be3;font-size:24px;margin:0}
 
