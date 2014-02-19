@@ -299,7 +299,9 @@ $(document).ready(function(){
           url: "http://app.cmais.com.br/actions/culturafm/newsletter.php",
           data: $("#form-email").serialize(),
           beforeSend: function(){
-            $('#send_news, #news, #lbl_news').hide();
+            $('.send_news').hide();
+            $('#news').hide();
+            $('#lbl_news').hide();
             $('#ajax-loader').show();
           },
           success: function(data){
