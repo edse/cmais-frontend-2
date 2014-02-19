@@ -47,7 +47,6 @@
                 <form id="search" role="search" class="fixed-font clearfix" action="http://culturafm.cmais.com.br/buscar" method="get">
                   <input type="text" name="busca" id="search_field" title="Campo de busca" value="BUSCA" required="">
                   <input type="submit" id="search_submit" value="ok">
-                  <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                 </form>
                 <!--/search-->
               </li>

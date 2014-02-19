@@ -295,7 +295,7 @@ $(document).ready(function(){
         //form.submit();
         $.ajax({
           type: "POST",
-          dataType: "text",
+          dataType: "jsonp",
           url: "http://app.cmais.com.br/actions/culturafm/newsletter.php",
           data: $("#form-email").serialize(),
           beforeSend: function(){
@@ -303,7 +303,7 @@ $(document).ready(function(){
             $('#ajax-loader').show();
           },
           success: function(data){
-            if(data == "0"){
+            if(data.data == "0"){
               $('#ajax-loader, #news').hide();
               $('#msgAcerto').show();
             }
