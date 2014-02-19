@@ -1442,17 +1442,21 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $return .=    '</li>';
                        
              // echo $return;
-							
-				      $a = array("data" =>$return);
-				      $json = json_encode($a);
-				      $callback = $request->getParameter('callback');
-				      echo $callback.'('. $json . ');';
-              die();
+							$a[] = $return;
+
             endif;  
            
           endif;  
           
         endforeach;
+				
+	      $b = array("data" => $a);
+	      $json = json_encode($b);
+	      $callback = $request->getParameter('callback');
+	      echo $callback.'('. $json . ');';
+        die();				
+				
+				
         $outputArray = array_map("intval", explode(",", $not_repeat_base));
         $output = array_slice($outputArray, 0, 10);
         $not_repeat = implode(",", $output);
