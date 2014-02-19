@@ -629,7 +629,7 @@ footer .logos { margin:0; }
 footer .mapa .col-esq,
 footer .logos .col-esq a { margin-top:3px; }
 footer .mapa .col-dir,
-footer .logos .col-dir { background:#fff; margin:0; }
+footer .logos .col-dir { background:#fff; margin:0; border:none; }
 footer .mapa .col-dir,
 footer .logos .col-dir a { margin: 5% 6%; }
 footer .mapa a,

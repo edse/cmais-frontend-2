@@ -65,20 +65,10 @@
 
 
 /* Na TV */
-.na-tv .container-na-tv p {float:none!important;max-width:100%!important}
-.na-tv #container-na-tv .container-na-tv{padding-bottom:20px;}
-
-.na-tv #container-na-tv .container-na-tv p{font-size: 1.1em;float:none;max-width:100%; margin: 20px auto;}
-.na-tv #container-na-tv .container-na-tv {min-height: 900px;}
-.na-tv #content .fundo-na-tv {width:53%; background-size: 83%;position:relative;background-position:center 0;top:10px; left:0;margin:0 auto;}
-.na-tv #container-na-tv .container-na-tv .container-horarios {margin: 20px auto;float: none;max-height: 250px;width: 100%;}
-.na-tv .container-na-tv .container-horarios .box-horario {width:47%!important}
-.na-tv #container-na-tv .container-na-tv h2.ola {display:none;}
-.na-tv #content{margin:8%;}
-.na-tv #content .ola{font-size:2.5em;}
-.na-tv #content .filtro{margin-bottom:0px!important;}
-
-
+#header-tablet{display:none;}
+.na-tv #content{top:20px!important; margin:0 5%;  }
+.na-tv #content .fundo-na-tv{position: relative;top: 10px;margin: 0 auto;width: 81%;}
+.na-tv #content .container-horarios{float:none; margin:10px auto!important;}
 
 /*  Pais Artigos */
 .cuidadores #content {top: 20px;margin-bottom:0px}
@@ -90,11 +80,15 @@
 .cuidadores .container-cuidadores .col-dir .box-ler .titulo-box, .cuidadores .container-cuidadores .col-dir .box-brincarjunto .titulo-box {width: auto!important}
 .cuidadores .col-direita,#comente-este-artigo,.fb_iframe_widget,#div-gpt-ad-1385748525978-0{display: none!important;}
 .cuidadores .container-cuidadores .col-dir{width:100%!important;margin:0!important}
-.cuidadores .container-cuidadores .col-esq {width:100%!important}
+.cuidadores .container-cuidadores .col-esq {width:100%!important; padding:5%!important;}
+.cuidadores .container-cuidadores .col-esq article p {font-size: 1.25em!important; line-height:1.25em;}
+.cuidadores .container-cuidadores .col-esq article ul{margin:0 0 10px 0;}
+.cuidadores .container-cuidadores .col-esq article ul li{font-size: 1.25em!important;line-height: 1.25em; font-size:1em;}
+.cuidadores .container-cuidadores .col-esq article ul li:before{content:"-"}
 .cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre {max-width:none!important;width: 100%;bottom:}
-.cuidadores .container-cuidadores .destaques .jogos{width:32%!important;float:left;}
-.cuidadores .container-cuidadores .destaques .videos,
-.cuidadores .container-cuidadores .destaques .atividades{width:32%!important;float:left;margin-left:2%;}
+.cuidadores .destaques .jogos{width:32%!important;float:left;}
+.cuidadores .destaques .videos,
+.cuidadores .destaques .atividades{width:32%!important;float:left;margin-left:2%;}
 .cuidadores .container-cuidadores .col-dir .box-sobre {margin-bottom: 8%!important;min-height: 170px;}
 .cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre {width: 100%;bottom: -22%!important;position: absolute;}
 .cuidadores .container-cuidadores .col-dir .box-sobre a{max-width: 95%;text-align: center;}
@@ -104,7 +98,6 @@
 .ac-explicacao{width: 0!important}
 .primeiro-p {font-size:1.2em;color:#666}
 .cuidadores .container-cuidadores .col-dir .box-ler p {color: #666;font-size: 1.1em;}
-
 
 /* Personagens */
 .personagens .q-pers {width: 29%!important;margin: 5px 5px 5px 3%!important;}
@@ -124,11 +117,12 @@ footer .mapa a{font-size:1.2em}
 footer #personagens-rodape{display: none!important;;}
 footer .relacionados ul{display: none;}
 footer nav{display: block!important;}
-.relacionados-mobile{width: 96%;padding: 2%;overflow: hidden;}
-.relacionados-mobile a{width: 23%;float:left;margin-left: 2%;}
-.relacionados-mobile a > img{margin:0 auto;display: block;}
+footer .relacionados-mobile{width: 96%;padding: 2%;overflow: hidden;}
+footer .relacionados-mobile a{width: 23%;float:left;margin-left: 2%;}
+footer .relacionados-mobile a > img{margin:0 auto;display: block;}
 footer .logos .col-esq a {margin-left: 32%!important;}
 footer .logos .col-central a {margin: 33px 0 0 52px!important;}
+footer .logos .col-dir{border:none!important;}
 footer .logos .col-dir a {margin: 39px 0 0 22px;}
 .fifty{width:48%!important;}
 footer .relacionados h1{margin-left:5%;width: 90%;}
@@ -136,4 +130,7 @@ footer .logos li{width: 33%;display: block;float: left;height:20%;}
 footer .copyright {height: 30px;margin-left: 2%;}
 /* footer */
 
-
+@media screen and (min-width:810px){
+  .na-tv .fundo-na-tv {width: 308px!important;top: 205px!important;}
+  .na-tv .ola{font-size:38px!important;}
+}
