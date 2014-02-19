@@ -161,3 +161,12 @@ a.jp-play, a.jp-play:hover, a.jp-pause, a.jp-pause:hover, a.jp-stop, a.jp-stop:h
 background-image: url(/portal/images/capaPrograma/culturafm/novahome/player.png)!important;
 }
 #content-holder .jp-playlist{ border:none;}
+
+
+/*alteraçoes player fev2014*/
+div.jp-playlist, div.jp-interface{background: #ECECEC!important;}
+div.jp-audio h2{color: #0054a6;font-size: 24px;margin: 8px 0;}
+.texto div.jp-playlist ul {border:none!important;width:auto!important}
+.texto div.jp-playlist ul li{margin: 0 0 0px 20px!important;}
+div.jp-type-playlist div.jp-playlist li.jp-playlist-current {padding: 5px 0 4px 20px!important;list-style-position: outside!important}
+div.jp-current-time, div.jp-duration {position: absolute;font-size: .64em!important;font-style: oblique;}

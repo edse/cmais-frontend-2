@@ -194,7 +194,7 @@
                 <?php foreach($related_audios as $k=>$d): ?>
                 {
                   name:"<?php echo $d->getTitle(); ?>",
-                  mp3:"/uploads/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile(); ?>"
+                  mp3:"http://midia.cmais.com.br/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile(); ?>"
                 }<?php if($k < (count($related_audios) - 1)): ?>,<?php endif;?>
                 
                 <?php endforeach; ?>
