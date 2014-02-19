@@ -299,18 +299,21 @@ $(document).ready(function(){
           url: "http://app.cmais.com.br/actions/culturafm/newsletter.php",
           data: $("#form-email").serialize(),
           beforeSend: function(){
-            $('.send_news').hide();
-            $('#news').hide();
-            $('#lbl_news').hide();
             $('#ajax-loader').show();
           },
           success: function(data){
             if(data.data == "0"){
               $('#ajax-loader, #news').hide();
+	            $('.send_news').hide();
+	            $('#news').hide();
+	            $('#lbl_news').hide();              
               $('#msgAcerto').show();
             }
             else {
               $('#ajax-loader, #news').hide();
+	            $('.send_news').hide();
+	            $('#news').hide();
+	            $('#lbl_news').hide();
               $('#msgErro').show();
             }
           }
