@@ -65,10 +65,14 @@
 
 
 /* Na TV */
-#header-tablet{display:none;}
 .na-tv #content{top:20px!important; margin:0 5%;  }
 .na-tv #content .fundo-na-tv{position: relative;top: 10px;margin: 0 auto;width: 81%;}
+.na-tv #content .ola{font-size:48px;}
 .na-tv #content .container-horarios{float:none; margin:10px auto!important;}
+.na-tv #content .container-na-tv p {font-size:1.2em; line-height:1.25em;margin-bottom:10px;max-width: 100%!important; padding-bottom:1%;}
+.na-tv #content .container-na-tv .container-horarios .box-horario {width: 47%;}
+.na-tv #content .container-na-tv .container-horarios {width:100%;}
+.na-tv #content .filtro {margin-bottom:0!important;}
 
 /*  Pais Artigos */
 .cuidadores #content {top: 20px;margin-bottom:0px}
@@ -130,7 +134,3 @@ footer .logos li{width: 33%;display: block;float: left;height:20%;}
 footer .copyright {height: 30px;margin-left: 2%;}
 /* footer */
 
-@media screen and (min-width:810px){
-  .na-tv .fundo-na-tv {width: 308px!important;top: 205px!important;}
-  .na-tv .ola{font-size:38px!important;}
-}
