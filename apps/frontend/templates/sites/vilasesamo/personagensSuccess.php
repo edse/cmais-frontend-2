@@ -16,7 +16,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 <div id="content">
   <!--Explicação acessibilidade-->
   <h1 tabindex="0" class="ac-explicacao">
-	 <?php echo $section->getDescription(); ?>
+   <?php echo $section->getDescription(); ?>
   </h1>
   
   <!--section-->
@@ -54,14 +54,33 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   $container.isotope({
     itemSelector : '.element',
   });
-
+  function shuffleCharacters(){  
+    switch(window.orientation){
+      case "0":
+        clearInterval(handleSize);
+        $container.isotope('shuffle');
+        setInterval(function() {$container.isotope('shuffle');}, 5000);
+      break;
+      case "90":
+        clearInterval(handleSize);
+        $container.isotope('shuffle');
+        setInterval(function() {$container.isotope('shuffle');}, 5000);
+      break;
+      case "-90":
+        clearInterval(handleSize);
+        $container.isotope('shuffle');
+        setInterval(function() {$container.isotope('shuffle');}, 5000);
+      break;
+      case "180":
+        clearInterval(handleSize);
+        $container.isotope('shuffle');
+        setInterval(function() {$container.isotope('shuffle');}, 5000);
+      break;
+    }
+    
+  }
   
-  var classes = new Array();
-  $container.isotope('shuffle');
-  
-  setInterval(function() {
-    $container.isotope('shuffle'); 
-  }, 5000);  
+  var handleSize = setInterval(function() {$container.isotope('shuffle');}, 5000);  
   
 </script>  
 <?php echo $noscript; ?>
