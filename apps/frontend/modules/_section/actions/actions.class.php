@@ -1504,13 +1504,14 @@ class _sectionActions extends sfActions
             if($request->getParameter('programa') == "rodaviva")      $email_site = "perguntas.rodaviva@gmail.com";
             if($request->getParameter('programa') == "reportereco")   $email_site = "";
             if($request->getParameter('programa') == "materiadecapa") $email_site = "";
+            if($request->getParameter('pergunta2')!=""){
+              header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
+              die();
+            }
           } 
           
           $email_user = strip_tags($request->getParameter('email'));
           $nome_user = strip_tags($request->getParameter('nome'));
-          
-          if(($this->section->getSlug() == "jornalismo") && ($_REQUEST["pergunta2"]!=""))
-            header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
           
           //if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
             // verifica se o servidor que ta o formulario é o mesmo que o chamou, se for um ataque de injeção de dados este valor será diferente
