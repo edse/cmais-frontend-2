@@ -165,7 +165,7 @@ background-image: url(/portal/images/capaPrograma/culturafm/novahome/player.png)
 
 /*alteraçoes player fev2014*/
 div.jp-playlist, div.jp-interface{background: #ECECEC!important;}
-div.jp-audio h2{color: #0054a6;font-size: 24px;margin: 8px 0;}
+div.jp-audio h2{color: #0054a6;font-size: 24px;font-weight: normal;line-height: 40px;}
 .texto div.jp-playlist ul {border:none!important;width:auto!important}
 .texto div.jp-playlist ul li{margin: 0 0 0px 20px!important;}
 div.jp-type-playlist div.jp-playlist li.jp-playlist-current {padding: 5px 0 4px 20px!important;list-style-position: outside!important}
