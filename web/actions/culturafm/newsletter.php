@@ -16,15 +16,31 @@ if($_REQUEST["email_newsletter"] && $_REQUEST["site"]) {
 		$content = $email . ", ";
 		$fp = fopen($filename, 'a+');
 		if(fwrite($fp, $content)){
-			die("0");
+			$a = array("data" => "0");
+      $json = json_encode($a);
+      $callback = $_REQUEST['callback'];
+      echo $callback.'('. $json . ');';
+			die();			
 		}else{
-			die("1");
+			$a = array("data" => "1");
+      $json = json_encode($a);
+      $callback = $_REQUEST['callback'];
+      echo $callback.'('. $json . ');';
+			die();
 		}
 	}else{
-		die("1");
+			$a = array("data" => "1");
+      $json = json_encode($a);
+      $callback = $_REQUEST['callback'];
+      echo $callback.'('. $json . ');';
+			die();
 	}
 }else {
-	die("1");
+		$a = array("data" => "1");
+    $json = json_encode($a);
+    $callback = $_REQUEST['callback'];
+    echo $callback.'('. $json . ');';
+		die();
 }
 
 ?>

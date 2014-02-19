@@ -294,16 +294,18 @@ $(document).ready(function(){
       submitHandler: function(form){
         //form.submit();
         $.ajax({
-          type: "POST",
-          dataType: "text",
+          type: "GET",
+          dataType: "jsonp",
           url: "http://app.cmais.com.br/actions/culturafm/newsletter.php",
           data: $("#form-email").serialize(),
           beforeSend: function(){
-            $('#send_news, #news, #lbl_news').hide();
+            $('.send_news').hide();
+            $('#news').hide();
+            $('#lbl_news').hide();
             $('#ajax-loader').show();
           },
           success: function(data){
-            if(data == "0"){
+            if(data.data == "0"){
               $('#ajax-loader, #news').hide();
               $('#msgAcerto').show();
             }
