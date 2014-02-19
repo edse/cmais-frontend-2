@@ -96,7 +96,6 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 /* index */
 
 /*acessibilidade*/
-#header-mobile{display:none;}
 .acessibilidade .box-acessibilidade {width: 100%!important;}
 .acessibilidade #content .filtro h1 {font-size: 1.6em;}
 .acessibilidade .fundo-acessibilidade {width:100%!important; margin:0 auto;}
@@ -145,12 +144,8 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 
 
 /* personagens */
-.personagens #content h1 {font-size: 3em;}
-.personagens .q-pers {width: 45%!important;min-height: 112px!important;height: 350px!important;margin: 5px 5px 5px 3%!important;}
-.personagens #container-personagens a {width: 100%!important;height: 100%!important;}
-.personagens .conteudo-asset {width: 95%!important;margin: 0 auto!important;}
-.filtro .inner img {width: 100%!important;}
-.personagens #container-personagens p {font-size: 3em!important;}
+#header-mobile{display:none;}
+
 
 
 @media screen and (min-width:430px){
