@@ -96,27 +96,18 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 /* index */
 
 /*acessibilidade*/
-#content .filtro h1{font-size: 3em;}
-.acessibilidade .box-acessibilidade{overflow: hidden!important;width: 100%!important;}
-.acessibilidade .fundo-acessibilidade{width:100%!important;}
-.acessibilidade .box-acessibilidade p{font-size:1.8em;line-height:1em}
-
-/* na tv */
-.na-tv{margin-top: 40px;}
-.na-tv #content .ola{font-size:2.6em;}
-.na-tv .container-na-tv p {max-width: 100%;font-size:30px;font-size: 2em;line-height: 1.2em;margin: 20px auto!important;}/*margin:20px auto -->georgia*/
-.na-tv #content{margin:0 8%!important;}
-.na-tv #content .fundo-na-tv {width:100%; background-size: 83%;position:relative;background-position:center 0;margin:10 auto;}
-.na-tv #content section{margin:0!important;height:100%;}
-.na-tv #container-na-tv .container-na-tv{padding-bottom:20px;}
-.na-tv #container-na-tv .container-na-tv .container-horarios .box-horario {width: 99% ;float: left ;margin: 10px 0;}
-.na-tv #container-na-tv .container-na-tv .container-horarios {width:100% ;max-height: none ;float:none ;}
-.na-tv #container-na-tv .container-na-tv .container-horarios .img-logo{width:100%;}
-.na-tv .b-verde {position: relative;}
  
 
+/* na tv */
+.na-tv #content{margin:20px 5%}
+.na-tv .filtro {margin-bottom: 0!important;}
+.na-tv .ola{font-size: 1.4em!important;top: 5%!important;left: 3%!important;}
+.na-tv #content .fundo-na-tv {width: 70%;margin: 0 auto;position: relative;top: 35px;}
+.na-tv #content .container-na-tv .container-horarios {width:100%; max-height:500px; float:left;}
+.na-tv #content .box-horario{width:98%; margin:0 0 10px 0;}
+.na-tv footer#mobile{margin-top:-148px;}
+ 
 /*  Pais Artigos */
-#header-mobile{display:none;}
 .cuidadores #content{margin:1%;}
 .cuidadores #content h1 a{margin-top:10px;}
 .cuidadores .filtro  {margin: 20px auto!important;width: 96%;}
@@ -128,9 +119,10 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .cuidadores .col-direita,#comente-este-artigo,.fb_iframe_widget,#div-gpt-ad-1385748525978-0{display: none!important;}
 .cuidadores .container-cuidadores .col-dir{width:100%!important;margin:0!important}
 .cuidadores .container-cuidadores .col-esq {width:100%!important; padding:5%!important;}
-.cuidadores .parceiros-cuidadores ul{margin:0 0 10px 0;}
-.cuidadores .parceiros-cuidadores ul li{line-height: 1.25em; font-size:1em;}
-.cuidadores .parceiros-cuidadores ul li:before{content:"-"}
+.cuidadores .container-cuidadores .col-esq article p {font-size: 1.25em!important; line-height:1.25em;}
+.cuidadores .container-cuidadores .col-esq article ul{margin:0 0 10px 0;}
+.cuidadores .container-cuidadores .col-esq article ul li{font-size: 1.25em!important;line-height: 1.25em; font-size:1em;}
+.cuidadores .container-cuidadores .col-esq article ul li:before{content:"-"}
 .cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre {max-width:none!important;width: 100%}
 .cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre img {width: 100%}
 .cuidadores .container-cuidadores .col-dir .box-sobre a{width: 95%;text-align: center;}
@@ -138,7 +130,9 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .cuidadores .container-cuidadores .col-esq article section a {font-size: 1em!important}
 .cuidadores .icone-voltar-artigo {height:0px!important}
 .cuidadores #content .filtro h1 {height: 130px;font-size: 1.6em;line-height: 3em;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;padding: 0 3%;}
+.artigo #content .container-image{height: 150px;overflow: hidden;} 
 .artigo #content header h1 {overflow: visible!important;white-space:normal!important;}
+.cuidadores .container-cuidadores .col-dir .box-ler p {height: 57px!important;}
 .ac-explicacao  {width: 0!important}
 .parceiros-cuidadores, .na-tv .container-na-tv,.acessibilidade .box-acessibilidade p{text-align: left;font-size:1.5em;line-height: 1.25em;}/*texto corrido celular*/
 .primeiro-p {font-size:1.2em;color:#666}/*texto corrido celular, primeiro p*/
@@ -158,8 +152,16 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 @media screen and (min-width:430px){
   .imagem-topo {width: 190px;left: 50%;margin-left: -77px;}
   .cuidadores .container-cuidadores .col-dir .box-sobre a {width: 45%!important;float: left!important;}
+  .cuidadores .destaques .container-image{width: 35%;float: left;height: 61px!important;}
+  .cuidadores .destaques .texto{padding-right: 4%!important;}
+  .cuidadores .destaques a {line-height: 60px;}
+  .cuidadores .destaques a i{margin:3% 1%!important;}
 }
 @media screen and (orientation:landscape){
   #nav-mobile a {width:46%}
+   .cuidadores .destaques .container-image{width: 35%!important;float: left!important;height: 50px!important;}
+  .cuidadores .destaques .texto{padding-right: 4%!important;}
+  .cuidadores .destaques a {line-height: 60px;}
+  .cuidadores .destaques a i{margin:3% 1%!important;}
 }
 
