@@ -294,7 +294,7 @@ $(document).ready(function(){
       submitHandler: function(form){
         //form.submit();
         $.ajax({
-          type: "POST",
+          type: "GET",
           dataType: "jsonp",
           url: "http://app.cmais.com.br/actions/culturafm/newsletter.php",
           data: $("#form-email").serialize(),
