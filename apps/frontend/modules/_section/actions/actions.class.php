@@ -1509,7 +1509,7 @@ class _sectionActions extends sfActions
           $email_user = strip_tags($request->getParameter('email'));
           $nome_user = strip_tags($request->getParameter('nome'));
           
-          if(($this->section->getSlug() == "jornalismo") && (($_REQUEST["pergunta2"]!="") || ($_REQUEST["pergunta3"]!="")))
+          if(($this->section->getSlug() == "jornalismo") && ($_REQUEST["pergunta2"]!=""))
             header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
           
           //if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
