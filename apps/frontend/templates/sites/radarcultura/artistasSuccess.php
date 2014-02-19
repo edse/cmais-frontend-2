@@ -133,31 +133,31 @@ function slugfy($string){
 
           <div class="pagination pagination-centered artista">
             <ul>
-              <li<?php if($letter == "#"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/1-9">#</a></li>
-              <li<?php if($letter == "a"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/a">A</a></li>
-              <li<?php if($letter == "b"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/b">B</a></li>
-              <li<?php if($letter == "c"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/c">C</a></li>
-              <li<?php if($letter == "d"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/d">D</a></li>
-              <li<?php if($letter == "e"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/e">E</a></li>
-              <li<?php if($letter == "f"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/f">F</a></li>
-              <li<?php if($letter == "g"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/g">G</a></li>
-              <li<?php if($letter == "h"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/h">H</a></li>
-              <li<?php if($letter == "i"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/i">I</a></li>
-              <li<?php if($letter == "j"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/j">J</a></li>
-              <li<?php if($letter == "k"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/k">K</a></li>
-              <li<?php if($letter == "l"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/l">L</a></li>
-              <li<?php if($letter == "m"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/m">M</a></li>
-              <li<?php if($letter == "n"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/n">N</a></li>
-              <li<?php if($letter == "o"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/o">O</a></li>
-              <li<?php if($letter == "p"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/p">P</a></li>
-              <li<?php if($letter == "q"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/q">Q</a></li>
-              <li<?php if($letter == "r"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/r">R</a></li>
-              <li<?php if($letter == "s"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/s">S</a></li>
-              <li<?php if($letter == "t"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/t">T</a></li>
-              <li<?php if($letter == "u"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/u">U</a></li>
-              <li<?php if($letter == "v"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/v">V</a></li>
-              <li<?php if($letter == "x"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/x">X</a></li>
-              <li<?php if($letter == "z"): ?> class="active"<?php endif; ?>><a href="/artistas/letra/z">Z</a></li>
+              <li<?php if($letter == "#"): ?> class="active"<?php endif; ?>><a href="/artistas/1-9">#</a></li>
+              <li<?php if($letter == "a"): ?> class="active"<?php endif; ?>><a href="/artistas/a">A</a></li>
+              <li<?php if($letter == "b"): ?> class="active"<?php endif; ?>><a href="/artistas/b">B</a></li>
+              <li<?php if($letter == "c"): ?> class="active"<?php endif; ?>><a href="/artistas/c">C</a></li>
+              <li<?php if($letter == "d"): ?> class="active"<?php endif; ?>><a href="/artistas/d">D</a></li>
+              <li<?php if($letter == "e"): ?> class="active"<?php endif; ?>><a href="/artistas/e">E</a></li>
+              <li<?php if($letter == "f"): ?> class="active"<?php endif; ?>><a href="/artistas/f">F</a></li>
+              <li<?php if($letter == "g"): ?> class="active"<?php endif; ?>><a href="/artistas/g">G</a></li>
+              <li<?php if($letter == "h"): ?> class="active"<?php endif; ?>><a href="/artistas/h">H</a></li>
+              <li<?php if($letter == "i"): ?> class="active"<?php endif; ?>><a href="/artistas/i">I</a></li>
+              <li<?php if($letter == "j"): ?> class="active"<?php endif; ?>><a href="/artistas/j">J</a></li>
+              <li<?php if($letter == "k"): ?> class="active"<?php endif; ?>><a href="/artistas/k">K</a></li>
+              <li<?php if($letter == "l"): ?> class="active"<?php endif; ?>><a href="/artistas/l">L</a></li>
+              <li<?php if($letter == "m"): ?> class="active"<?php endif; ?>><a href="/artistas/m">M</a></li>
+              <li<?php if($letter == "n"): ?> class="active"<?php endif; ?>><a href="/artistas/n">N</a></li>
+              <li<?php if($letter == "o"): ?> class="active"<?php endif; ?>><a href="/artistas/o">O</a></li>
+              <li<?php if($letter == "p"): ?> class="active"<?php endif; ?>><a href="/artistas/p">P</a></li>
+              <li<?php if($letter == "q"): ?> class="active"<?php endif; ?>><a href="/artistas/q">Q</a></li>
+              <li<?php if($letter == "r"): ?> class="active"<?php endif; ?>><a href="/artistas/r">R</a></li>
+              <li<?php if($letter == "s"): ?> class="active"<?php endif; ?>><a href="/artistas/s">S</a></li>
+              <li<?php if($letter == "t"): ?> class="active"<?php endif; ?>><a href="/artistas/t">T</a></li>
+              <li<?php if($letter == "u"): ?> class="active"<?php endif; ?>><a href="/artistas/u">U</a></li>
+              <li<?php if($letter == "v"): ?> class="active"<?php endif; ?>><a href="/artistas/v">V</a></li>
+              <li<?php if($letter == "x"): ?> class="active"<?php endif; ?>><a href="/artistas/x">X</a></li>
+              <li<?php if($letter == "z"): ?> class="active"<?php endif; ?>><a href="/artistas/z">Z</a></li>
             </ul>
             <br/>
             
