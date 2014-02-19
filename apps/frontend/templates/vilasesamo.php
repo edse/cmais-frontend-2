@@ -5,7 +5,13 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 ?>
 <html lang="pt-br"> 
   <head>
-    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="true">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      
+    <!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->
    
     <?php include_title() ?>
     <?php include_metas() ?>
@@ -21,15 +27,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     var html = "";
     
     if(getURLParameter("m") == "2143"){
-      view += '<meta name="HandheldFriendly" content="true"/>';
-      view += '<meta name="MobileOptimized" content="320" />';
-      view += '<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false" />'; 
-      view += '<meta name="apple-mobile-web-app-capable" content="true">';
-      view += '<meta name="apple-mobile-web-app-status-bar-style" content="black">';
-      
-      view += '<!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->';
-      
-
       
       //verificando navegador
       $userAgent = navigator.userAgent;
