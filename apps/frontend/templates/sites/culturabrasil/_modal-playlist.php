@@ -148,7 +148,7 @@
               submitHandler: function(form){
                 $.ajax({
                   type: "POST",
-                  dataType: "text",
+                  dataType: "jsonp",
                   url: "http://app.cmais.com.br/actions/radarcultura/playlist.php",
                   data: $("#form-indicacao-playlist").serialize(),
                   beforeSend: function(){
@@ -158,7 +158,7 @@
                   success: function(data){
                     $('#loader3').hide();
                     $('.btn-enviar').show();
-                    if(data == "1"){
+                    if(data.data == "1"){
                       $("#modal").modal('hide');
                       $('.alert.radarIndex').hide();
                       $("#socialAlertOk").fadeIn('fast');
