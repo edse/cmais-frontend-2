@@ -157,6 +157,10 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .interna.videos #content,
 .interna.atividades #content{margin:20px 2%;}
 
+.interna.jogos .conteudo-asset,
+.interna.atividades .conteudo-asset,
+.interna.videos .conteudo-asset{width:auto;}
+
 .interna.jogos{width: 90%!important;font-size: 1em!important;background-image:none!important;background-color: #1DC252;margin-right: 7%;display: block;border-radius: 13px;}
 .interna.videos{width: 90%!important;font-size: 1em!important;background-image:none!important;background-color: #1DC252;margin-right: 7%;display: block;border-radius: 13px;}
 .interna.atividades{width: 90%!important;font-size: 1em!important;background-image:none!important;background-color: #1DC252;margin-right: 7%;display: block;border-radius: 13px;}
