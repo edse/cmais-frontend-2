@@ -361,7 +361,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
           <!--/enviar-->
 
           <div class="text-input2">
-            <textarea id="pergunta2" name=""></textarea>
+            <textarea id="pergunta2" name="pergunta2"></textarea>
           </div>
           
         </form>
