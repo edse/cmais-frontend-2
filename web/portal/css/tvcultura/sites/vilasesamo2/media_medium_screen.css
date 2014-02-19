@@ -60,6 +60,7 @@
 /* Acessibilidade */
 .acessibilidade .box-acessibilidade {width:100%!important}
 .acessibilidade .fundo-acessibilidade {width:50%!important; margin:0 auto;}
+.acessibilidade #content .filtro h1 {font-size: 45px;}
 
 
 

@@ -96,6 +96,10 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 /* index */
 
 /*acessibilidade*/
+#header-mobile{display:none;}
+.acessibilidade .box-acessibilidade {width: 100%!important;}
+.acessibilidade #content .filtro h1 {font-size: 1.6em;}
+.acessibilidade .fundo-acessibilidade {width:100%!important; margin:0 auto;}
  
 
 /* na tv */
@@ -134,7 +138,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .artigo #content header h1 {overflow: visible!important;white-space:normal!important;}
 .cuidadores .container-cuidadores .col-dir .box-ler p {height: 57px!important;}
 .ac-explicacao  {width: 0!important}
-.parceiros-cuidadores, .na-tv .container-na-tv,.acessibilidade .box-acessibilidade p{text-align: left;font-size:1.5em;line-height: 1.25em;}/*texto corrido celular*/
+.parceiros-cuidadores, .na-tv .container-na-tv,.acessibilidade .box-acessibilidade p{text-align: left;font-size:1.2em;line-height: 1.25em;}/*texto corrido celular*/
 .primeiro-p {font-size:1.2em;color:#666}/*texto corrido celular, primeiro p*/
 .cuidadores .container-cuidadores .col-dir .box-ler p {color: #666;font-size: 1.1em;}
 
