@@ -225,7 +225,7 @@
             <div class="jp-audio">
             	<!--alteraçoes player fev 2014-->
             	<h2>Ouça</h2>
-              <div class="jp-type-playlist">
+               <div class="jp-type-playlist"  style="border:1px solid #ccc">
                 <div id="jp_interface_1" class="jp-interface" style="height:94px;">
                   <ul class="jp-controls">
                     <li><a href="#" class="jp-play" tabindex="1" style="left:44px;top:10px;">play</a></li>
