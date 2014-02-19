@@ -20,6 +20,7 @@
         
         <div class="row-fluid">  
           <?php include_partial_from_folder('sites/radarcultura', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'uri'=>$uri)) ?>
+          
         </div>
         <!--topo menu/alert/logo-->
 
@@ -42,15 +43,32 @@
                 <small><?php echo $related[0]->getDescription()?> <?php if($related[0]->AssetImage->getAuthor()!=""):?> (<?php echo $related[0]->AssetImage->getAuthor() ?>) <?php endif;?></small>
               </div>
             </p>
-            
             <?php endif; ?>
-            
             <?php echo html_entity_decode($asset->AssetContent->render()) ?>
-            
-                        
-            <!--player-->
-            
+            <?php include_partial_from_folder('blocks', 'global/visite-cmais',array('uri'=>$uri)) ?>
+           <!-- comentario facebook -->
+            <div class="container face">
+              <fb:comments href="<?php echo $uri?>" numposts="3" width="610" publish_feed="true"></fb:comments>
+              <hr />
+            </div>
+            <!-- /comentario facebook -->
+            </div>
+            <!--content-->
+          </div>
+          <!--col esquerda-->
+          <div class="span4 direita">
             <link href="http://cmais.com.br/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+            
+              <?php
+                $playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
+                if(count($playlist) > 0) {
+                  $related_audios = $playlist[0]->retriveRelatedAssetsByAssetTypeId(4);
+                }
+                else {
+                  $related_audios = $asset->retriveRelatedAssetsByAssetTypeId(4);
+                }
+              ?>
+              <?php if(count($related_audios) > 0): ?>
             <script type="text/javascript" src="http://cmais.com.br/portal/js/audioplayer/js/jquery.jplayer.min.js"></script>
             <script type="text/javascript">
               //<![CDATA[
@@ -179,16 +197,16 @@
               };
               
               <?php
-                $playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
-                $audios = $playlist[0]->retriveRelatedAssetsByAssetTypeId(4);
+                //$playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
+                //$audios = $playlist[0]->retriveRelatedAssetsByAssetTypeId(4);
               ?>
               var audioPlaylist = new Playlist("1",
               [
-                <?php foreach($audios as $k=>$d): ?>
+                <?php foreach($related_audios as $k=>$d): ?>
                 {
                   name:"<?php echo $d->getTitle(); ?>",
                   mp3:"/uploads/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile(); ?>"
-                }<?php if($k < (count($audios) - 1)): ?>,<?php endif;?>
+                }<?php if($k < (count($related_audios) - 1)): ?>,<?php endif;?>
                 
                 <?php endforeach; ?>
               ],
@@ -206,38 +224,37 @@
                 {
                   $(this).jPlayer("pauseOthers");
                 },
-                swfPath: "http://cmais.com.br/js/audioplayer",
+                swfPath: "/js/audioplayer",
                 supplied: "mp3"
               });
             });
             //]]>
           </script>
           
+          
             <div id="jquery_jplayer_1" class="jp-jplayer"></div>
             <div class="jp-audio">
-            	<!--alteraçoes player fev 2014-->
-            	<h2>Ouça</h2>
-              <div class="jp-type-playlist"  style="background-color: #ccc">
+              <div class="jp-type-playlist">
                 <div id="jp_interface_1" class="jp-interface" style="height:94px;">
                   <ul class="jp-controls">
                     <li><a href="#" class="jp-play" tabindex="1" style="left:44px;top:10px;">play</a></li>
                     <li><a href="#" class="jp-pause" tabindex="1" style="left:44px;top:10px;">pause</a></li>
                     <li><a href="#" class="jp-stop" tabindex="1" style="left:121px;top:16px;">stop</a></li>
-                    <li><a href="#" class="jp-mute" tabindex="1" style="left:70%;top:22px;">mute</a></li>
-                    <li><a href="#" class="jp-unmute" tabindex="1" style="left:70%;top:22px;">unmute</a></li>
+                    <li><a href="#" class="jp-mute" tabindex="1" style="left:166px;top:22px;">mute</a></li>
+                    <li><a href="#" class="jp-unmute" tabindex="1" style="left:166px;top:22px;">unmute</a></li>
                     <li><a href="#" class="jp-previous" tabindex="1" style="left:17px;top:16px;">previous</a></li>
                     <li><a href="#" class="jp-next" tabindex="1" style="left:84px;top:16px;">next</a></li>
                   </ul>
-                  <div class="jp-progress" style="left:20px;top:56px; width: 94%;">
+                  <div class="jp-progress" style="left:20px;top:56px; width: 85%;">
                     <div class="jp-seek-bar">
                       <div class="jp-play-bar"></div>
                     </div>
                   </div>
-                  <div class="jp-volume-bar" style="left:73%;top:27px;width:24%">
+                  <div class="jp-volume-bar" style="left:193px;top:27px;">
                     <div class="jp-volume-bar-value"></div>
                   </div>
                   <div class="jp-current-time" style="left:20px;top:72px;"></div>
-                  <div class="jp-duration" style="left:20px;top:72px;width: 94%"></div>
+                  <div class="jp-duration" style="left:20px;top:72px;"></div>
                 </div>
                 <div id="jp_playlist_1" class="jp-playlist">
                   <ul>
@@ -248,27 +265,7 @@
               </div>
             </div>
             
-            <!--/player-->
-            
-           
-            <?php include_partial_from_folder('blocks', 'global/visite-cmais',array('uri'=>$uri)) ?>
-
-            
-            
-            
-           <!-- comentario facebook -->
-            <div class="container face">
-              <fb:comments href="<?php echo $uri?>" numposts="3" width="610" publish_feed="true"></fb:comments>
-              <hr />
-            </div>
-            <!-- /comentario facebook -->
-            </div>
-            <!--content-->
-          </div>
-          <!--col esquerda-->
-          <div class="span4 direita">
-            <!--O PLAYER FICAVA AQUI - ALTER FEV 2014-->
-            <!--/ O PLAYER FICAVA AQUI - ALTER FEV 2014-->
+            <?php endif; ?>
 
             <div class="banner-radio">
               <script type='text/javascript'>
