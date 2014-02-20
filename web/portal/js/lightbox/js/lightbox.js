@@ -48,8 +48,8 @@ lightbox = new Lightbox options
   LightboxOptions = (function() {
 
     function LightboxOptions() {
-      this.fileLoadingImage = '/portal/js/lightbox/images/loading.gif';
-      this.fileCloseImage = '/portal/js/lightbox/images/close.png';
+      this.fileLoadingImage = 'http://cmais.com.br/portal/js/lightbox/images/loading.gif';
+      this.fileCloseImage = 'http://cmais.com.br/portal/js/lightbox/images/close.png';
       this.resizeDuration = 700;
       this.fadeDuration = 500;
       this.labelImage = "Imagem";

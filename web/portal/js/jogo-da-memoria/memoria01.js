@@ -54,30 +54,30 @@ matchingGame.clone = $.extend(true, [], matchingGame.deck);
 $(function(){
   var loader = new PxLoader();
 
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/start.jpg');
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/end.jpg');
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/card.jpg');
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/left.png');
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/right.png');
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/logo.jpg');
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/aavo.jpg');
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/aavo-icon.jpg');
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/alipio.jpg');
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/alipio-icon.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/joao.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/joao-icon.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/julio.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/julio-icon.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/lilica.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/lilica-icon.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/lola.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/lola-icon.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/oavo.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/oavo-icon.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/oriba.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/oriba-icon.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/zaza.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/zaza-icon.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/start.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/end.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/card.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/left.png');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/right.png');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/logo.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/aavo.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/aavo-icon.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/alipio.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/alipio-icon.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/joao.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/joao-icon.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/julio.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/julio-icon.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/lilica.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/lilica-icon.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/lola.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/lola-icon.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/oavo.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/oavo-icon.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/oriba.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/oriba-icon.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/zaza.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/zaza-icon.jpg');
   
   loader.addProgressListener(function(e) {
     if (e.completedCount * 5 < 100) {

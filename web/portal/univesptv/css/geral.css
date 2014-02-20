@@ -1,5 +1,5 @@
-@import url("/portal/css/tvcultura/geral2.css");
-@import url("/portal/css/geral.css");
+@import url("http://cmais.com.br/portal/css/tvcultura/geral2.css");
+@import url("http://cmais.com.br/portal/css/geral.css");
 
 
 /** UNIVESPTV **/
@@ -87,7 +87,7 @@
 .busca form .busque span { color: #af111d;}
 .proximasAtracoes .enunciado,
 .novoNoAr .enunciado h2 {background:#af111d;}
-.novoNoAr .enunciado span { background:url("/portal/univesptv/images/ponta-destaque.png") no-repeat; }
+.novoNoAr .enunciado span { background:url("http://cmais.com.br/portal/univesptv/images/ponta-destaque.png") no-repeat; }
 #box-videos .conteudo-lista {/*max-height:90px;*/ height:auto;}
 .pag3 {margin-bottom:0;}
 .sem-borda li { padding-bottom:0; height:auto; }
@@ -138,7 +138,7 @@
 .box-interna .leia {color:#af111d; text-decoration:none;}
 .box-interna .leia a { font-weight:normal;}
 .box-interna .box-compartilhar {margin-top:20px;}
-.para-ouvir a {  background-image:url("/portal/univesptv/images/bg-link.png"); }
+.para-ouvir a {  background-image:url("http://cmais.com.br/portal/univesptv/images/bg-link.png"); }
 .categoria .para-ouvir a { background:none; padding-left:0; }
 .box-interna .tags {margin-top:0;}
 

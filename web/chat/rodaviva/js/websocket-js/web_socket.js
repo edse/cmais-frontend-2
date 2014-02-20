@@ -6,7 +6,7 @@
 (function() {
 
   // Let the library know where WebSocketMain.swf is:
-  window.WEB_SOCKET_SWF_LOCATION = "/portal/js/websocket-js/WebSocketMain.swf";
+  window.WEB_SOCKET_SWF_LOCATION = "http://cmais.com.br/portal/js/websocket-js/WebSocketMain.swf";
   window.WEB_SOCKET_FORCE_FLASH = false;
   
   if (window.WEB_SOCKET_FORCE_FLASH) {

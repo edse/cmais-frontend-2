@@ -12,7 +12,7 @@
 }
 
 /* GERAL */
-.icon-blue{background-image: url("/portal/js/bootstrap/img/glyphicons-halflings-blue.png");}
+.icon-blue{background-image: url("http://cmais.com.br/portal/js/bootstrap/img/glyphicons-halflings-blue.png");}
 body.linha-do-tempo{background: #000 !important;}
 body{background: url(http://cmais.com.br/portal/images/capaPrograma/sic/pattern-fundo.jpg);margin:0\9;}
 .container{max-width:980px; /*min-height:400px*/;margin-top:3px;position:relative; *position:relative; z-index: 9999999}

@@ -118,7 +118,7 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
 
 .menu-interna li { border-radius:0; background:#136c9b; }
 .menu-interna a {color:#fff;}
-@font-face {font-family: "GothamMediumRegular"; src: url("/portal/css/fontes/gotham/gotham-medium-webfont.eot");src: local('ÃƒÂ¢Ã‚ËœÃ‚Âº'), url("/portal/css/fontes/gotham/gotham-medium-webfont.woff") format('woff'), url("/portal/portal/css/fontes/gotham/gotham-medium-webfont.ttf") format("truetype"), url("/portal/css/fontes/gotham/gotham-medium-webfont.svg#webfont1U04CDEx") format("svg");}
+@font-face {font-family: "GothamMediumRegular"; src: url("http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.eot");src: local('ÃƒÂ¢Ã‚ËœÃ‚Âº'), url("http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.woff") format('woff'), url("http://cmais.com.br/portal/portal/css/fontes/gotham/gotham-medium-webfont.ttf") format("truetype"), url("http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.svg#webfont1U04CDEx") format("svg");}
 .topo-programa .aovivo,
 .box-padrao .topo h4,
 .tit-pagina,

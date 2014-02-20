@@ -44,30 +44,30 @@ matchingGame.clone = $.extend(true, [], matchingGame.deck);
 $(function(){
   var loader = new PxLoader();
 
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/start2.jpg');
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/end.jpg');
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/card.jpg');
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/left.png');
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/right.png');
-  loader.addImage('/portal/images/capaPrograma/cocorico/memoria/logo.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/astolfo.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/astolfo-icon.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/caco.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/caco-icon.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/dito.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/dito-icon.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/feito.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/feito-icon.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/mimosa.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/mimosa-icon.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/patavina.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/patavina-icon.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/patotorquato.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/patotorquato-icon.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/sapomartelo.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/sapomartelo-icon.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/toquinho.jpg');
-  loader.addImage('background: url(/portal/images/capaPrograma/cocorico/memoria/toquinho-icon.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/start2.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/end.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/card.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/left.png');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/right.png');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/logo.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/astolfo.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/astolfo-icon.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/caco.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/caco-icon.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/dito.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/dito-icon.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/feito.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/feito-icon.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/mimosa.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/mimosa-icon.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/patavina.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/patavina-icon.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/patotorquato.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/patotorquato-icon.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/sapomartelo.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/sapomartelo-icon.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/toquinho.jpg');
+  loader.addImage('background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/toquinho-icon.jpg');
 
   loader.addProgressListener(function(e) {
     if (e.completedCount * 5 < 100) {
