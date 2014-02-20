@@ -41,8 +41,9 @@
       url: "http://app.cmais.com.br/ajax/timer",
       data: "channel_id=3",
       dataType: 'jsonp',
+      type: "GET",
       success: function(data){
-        eval(data);
+        eval(data.data);
       }
     });
   }

@@ -15,8 +15,9 @@ $asset = $pager->getCurrent();
         url_out: '/teleton'
       },
       dataType: 'jsonp',
+      type: "GET",
       success: function(data) {
-        eval(data);
+        eval(data.data);
       },
       url: 'http://app.cmais.com.br/ajax/timer'
     });

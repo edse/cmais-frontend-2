@@ -26,8 +26,9 @@
         url_in: 'http://tvcultura.cmais.com.br/metropolis/transmissao'
       },
       dataType: 'jsonp',
+      type: "GET",
       success: function(data) {
-        eval(data);
+        eval(data.data);
       },
       url: 'http://app.cmais.com.br/ajax/timer'
     });
@@ -39,8 +40,9 @@
         url_out: 'http://tvcultura.cmais.com.br/metropolis'
       },
       dataType: 'jsonp',
+      type: "GET",
       success: function(data) {
-        eval(data);
+        eval(data.data);
       },
       url: 'http://app.cmais.com.br/ajax/timer'
     });

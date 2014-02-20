@@ -14,7 +14,7 @@
       },
       dataType: 'jsonp', 
       success: function(data) {
-        if(data != ''){
+        if(data.data != ''){
           $('#live').html('<object width="640" height="390"><param name="movie" value="https://s3.amazonaws.com/campuschannel/playercampus_es.swf" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><embed src="https://s3.amazonaws.com/campuschannel/playercampus_es.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="360"></embed></object>');
         }
       },

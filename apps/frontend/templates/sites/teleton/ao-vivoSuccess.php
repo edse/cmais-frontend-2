@@ -12,10 +12,11 @@
         url_out: '/index.php/teleton'
       },
       dataType: 'jsonp',
+      type: "GET",
       success: function(data) {
-        eval(data);
+        eval(data.data);
       },
-      url: '/index.php/ajax/timer'
+      url: 'http://app.cmais.com.br/ajax/timer'
     });
   }
 

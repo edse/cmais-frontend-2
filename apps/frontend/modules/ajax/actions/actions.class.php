@@ -414,7 +414,7 @@ class ajaxActions extends sfActions
   public function executeTimer(sfWebRequest $request){
     $this->setLayout(false);
     $return = "";
-    if($request->isXmlHttpRequest()){
+    //if($request->isXmlHttpRequest()){
       if($request->getParameter('asset_id')){
         $url_in = $request->getParameter('url_in');
         $url_out = $request->getParameter('url_out');
@@ -441,8 +441,13 @@ class ajaxActions extends sfActions
           }
         }
       }
-    }
-    echo $return;
+    //}
+    //echo $return;
+    $a = array("data" => $return);
+    $json = json_encode($a);
+    $callback = $request->getParameter('callback');
+    echo $callback.'('. $json . ');';
+				
     die();
   }
 
