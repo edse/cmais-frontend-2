@@ -26,7 +26,7 @@
     var request = $.ajax({
       dataType: 'jsonp',
       success: function(data) {
-        eval(data);
+        eval(data.data);
       },
       url: 'http://app.cmais.com.br/ajax/streaming'
     });
@@ -36,7 +36,7 @@
     var request = $.ajax({
       dataType: 'jsonp',
       success: function(data) {
-        eval(data);
+        eval(data.data);
       },
       url: 'http://app.cmais.com.br/ajax/streamingend'
     });

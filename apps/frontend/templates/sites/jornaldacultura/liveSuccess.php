@@ -14,8 +14,9 @@
         url_out: 'http://tvcultura.cmais.com.br/jornaldacultura'
       },
       dataType: 'jsonp', 
+      type: "GET",
       success: function(data) {
-        eval(data);
+        eval(data.data);
       },
       url: 'http://app.cmais.com.br/ajax/timer'
     });
@@ -38,7 +39,7 @@
       },
       dataType: 'jsonp',
       success: function(data) {
-        //eval(data);
+        //eval(data.data);
       },
       url: 'http://app.cmais.com.br/ajax/broadcastend'
     });

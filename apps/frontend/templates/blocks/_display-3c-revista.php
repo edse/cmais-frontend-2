@@ -16,20 +16,20 @@
                     <?php if($type == 'content'):?>
                     <!-- CONTENT -->
                     <div class="not">
-                      <h3 class="titulo"><a href="<?php echo $d->retriveUrl() ?>"><?php echo $d->getTitle() ?></a></h3>
+                      <h3 class="titulo"><a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>"><?php echo $d->getTitle() ?></a></h3>
                       <p><?php echo $d->Asset->getDescription() ?></p>
                       <p>
                       <?php $vid = $d->Asset->retriveRelatedAssetsByAssetTypeId(6); ?>
                       <?php if(count($vid) > 0): ?>
-                        <a href="<?php echo $d->retriveUrl() ?>"><img alt="<?php echo $d->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $vid[0]->AssetVideo->getYoutubeId() ?>/0.jpg" style="width: 310px;" /></a>
+                        <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>"><img alt="<?php echo $d->getTitle() ?>" src="http://img.youtube.com/vi/<?php echo $vid[0]->AssetVideo->getYoutubeId() ?>/0.jpg" style="width: 310px;" /></a>
                       <?php else: ?>
                         <?php if($d->retriveImageUrlByImageUsage("image-3-b") != ""): ?>
-                          <a href="<?php echo $d->retriveUrl() ?>"><img alt="<?php echo $d->getTitle() ?>" src="<?php echo $d->retriveImageUrlByImageUsage("image-3-b") ?>" /></a>
+                          <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>"><img alt="<?php echo $d->getTitle() ?>" src="<?php echo $d->retriveImageUrlByImageUsage("image-3-b") ?>" /></a>
                         <?php endif; ?>
                       <?php endif; ?>
                       <?php if($d->Asset->AssetContent->getHeadlineLong() != ""): ?><?php echo $d->Asset->AssetContent->getHeadlineLong(); ?><?php else: ?><?php echo $d->Asset->AssetContent->getHeadline() ?><?php endif; ?></p>
                     </div>
-                    <a class="leia" href="<?php echo $d->retriveUrl() ?>">leia mais</a>
+                    <a class="leia" href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>">leia mais</a>
                     <div class="linha"></div>
                     <?php elseif($type == 'video'):?>
                     <!-- VIDEO -->
@@ -45,17 +45,17 @@
                     <?php elseif($type == 'image'):?>
                     <!-- IMAGE -->
                     <?php if($d->retriveImageUrlByImageUsage("image-6-b")): ?>
-                    <a class="media" href="<?php echo $d->retriveUrl() ?>"><img alt="<?php echo $d->getTitle() ?>" src="<?php echo $d->retriveImageUrlByImageUsage("image-6-b") ?>" /></a>
+                    <a class="media" href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>"><img alt="<?php echo $d->getTitle() ?>" src="<?php echo $d->retriveImageUrlByImageUsage("image-6-b") ?>" /></a>
                     <?php endif; ?>
                     <div class="bg"></div>
                     <div class="descricao">
-                      <h3 class="titulo"><a href="<?php echo $d->retriveUrl() ?>"><?php echo $d->getTitle() ?></a></h3>
+                      <h3 class="titulo"><a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>"><?php echo $d->getTitle() ?></a></h3>
                       <p><?php echo $d->getDescription() ?></p>
                     </div>
                     <?php elseif($type == 'audio'):?>
                     <!-- AUDIO -->
                     <div class="not">
-                      <h3 class="titulo"><a href="<?php echo $d->retriveUrl() ?>"><?php echo $d->getTitle() ?></a></h3>
+                      <h3 class="titulo"><a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>"><?php echo $d->getTitle() ?></a></h3>
                       <p><?php echo $d->Asset->getDescription() ?></p>
                       <p><?php echo html_entity_decode($d->Asset->AssetAudio->render2()) ?></p>
                     </div>

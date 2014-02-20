@@ -407,14 +407,18 @@ class ajaxActions extends sfActions
         $return .= "$('#livestream2').html('');";
       }
     //}
-    echo $return;
+    //echo $return;
+    $a = array("data" => $return);
+    $json = json_encode($a);
+    $callback = $request->getParameter('callback');
+    echo $callback.'('. $json . ');';    
     die();
   }
 
   public function executeTimer(sfWebRequest $request){
     $this->setLayout(false);
     $return = "";
-    if($request->isXmlHttpRequest()){
+    //if($request->isXmlHttpRequest()){
       if($request->getParameter('asset_id')){
         $url_in = $request->getParameter('url_in');
         $url_out = $request->getParameter('url_out');
@@ -441,8 +445,13 @@ class ajaxActions extends sfActions
           }
         }
       }
-    }
-    echo $return;
+    //}
+    //echo $return;
+    $a = array("data" => $return);
+    $json = json_encode($a);
+    $callback = $request->getParameter('callback');
+    echo $callback.'('. $json . ');';
+				
     die();
   }
 
@@ -1630,7 +1639,13 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         }
       }
     //}
-    echo $return;
+    //echo $return;
+    
+    $a = array("data" => $return);
+    $json = json_encode($a);
+    $callback = $request->getParameter('callback');
+    echo $callback.'('. $json . ');';    
+    
     die();
   }
 
@@ -1657,7 +1672,13 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         $return .= "self.location.href='http://univesptv.cmais.com.br'";
       }
     //}
-    echo $return;
+    //echo $return;
+    
+    $a = array("data" => $return);
+    $json = json_encode($a);
+    $callback = $request->getParameter('callback');
+    echo $callback.'('. $json . ');';   
+		
     die();
   }
 
@@ -2064,7 +2085,11 @@ EOT;
     }else{
       $return .= "self.location.href='".$url_out."'";
     }
-    die($return);
+
+    $a = array("data" => $return);
+    $json = json_encode($a);
+    $callback = $request->getParameter('callback');
+    die($callback.'('. $json . ');');
   }
 
 

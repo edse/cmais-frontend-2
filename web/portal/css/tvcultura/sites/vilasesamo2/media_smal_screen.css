@@ -228,6 +228,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
   .cuidadores .destaques a {line-height: 60px;}
   .cuidadores .destaques a i{margin:3% 1%!important;}
 }
+
 @media screen and (orientation:landscape){
   #nav-mobile a {width:46%}
   .cuidadores .destaques .container-image{width: 35%!important;float: left!important;height: 50px!important;}

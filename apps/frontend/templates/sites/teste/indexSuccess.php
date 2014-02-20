@@ -9,8 +9,9 @@
         url_in: 'http://tvcultura.cmais.com.br/prontoatendimento/ao-vivo'
       },
       dataType: 'jsonp',
+      type: "GET",
       success: function(data) {
-        eval(data);
+        eval(data.data);
       },
       url: 'http://app.cmais.com.br/ajax/timer'
     });
