@@ -93,7 +93,6 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 #carrossel-personagem .slider-mask-wrap {height:108px!important}
 #carrossel-personagem .slider-nav{display:none!important;}
 
-/* index */
 
 /*acessibilidade*/
 #header-mobile{display:none;}
@@ -157,13 +156,47 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .interna.videos #content,
 .interna.atividades #content{margin:20px 2%;}
 
+.interna.jogos #content h1,
+.interna.atividades #content h1,
+.interna.videos #content h1{height:114px}
+
+.interna.jogos{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;border-radius: 13px;}
+.interna.videos{font-size: 1em!important;background-image:none!important;background-color: #f78701;display: block;border-radius: 13px;}
+.interna.atividades{font-size: 1em!important;background-image:none!important;background-color:#571ed9 ;display: block;border-radius: 13px;}
+
 .interna.jogos .conteudo-asset,
 .interna.atividades .conteudo-asset,
 .interna.videos .conteudo-asset{width:auto;}
 
-.interna.jogos{width: 90%!important;font-size: 1em!important;background-image:none!important;background-color: #1DC252;display: block;border-radius: 13px;}
-.interna.videos{width: 90%!important;font-size: 1em!important;background-image:none!important;background-color: #1DC252;display: block;border-radius: 13px;}
-.interna.atividades{width: 90%!important;font-size: 1em!important;background-image:none!important;background-color: #1DC252;display: block;border-radius: 13px;}
+.interna.jogos .todos-assets,
+.interna.atividades .todos-assets,
+.interna.videos .todos-assets {width: 90%!important;font-size: 1em!important;background-image:none!important;display: block;border-radius: 13px;}
+
+.intena .todos-assets i{display:none;}
+.intena .todos-assets p{background:none;}
+.interna.jogos .todos-assets p{background-color:#3AAAEC;}
+.interna.atividades .todos-assets p{background-color:#883feb;}
+.interna.videos .todos-assets p{background-color:#0172f9;}
+
+/*capa jogos*/
+.interna.jogos .filtro .span10 {display:none}
+.interna.jogos .filtro .span2 {display:none}
+.todos-itens .row-fluid, .campanhas .todos-itens .row-fluid {width: 100%!important; margin: 0!important;}
+.todos-itens #container li.jogos {margin:0;}
+
+
+/*pais capa*/
+.cuidadores #carrossel-interna-artigo {display:none;}
+.cuidadores #carrossel-interna-artigo .slider-mask {width:100%!important}
+.cuidadores #carrossel-interna-artigo .slider ul {width: 100%!important;}
+.cuidadores #carrossel-interna-artigo .slider li {width: 100%!important;}
+.cuidadores #carrossel-interna-artigo .slider-nav{display: none}
+.cuidadores #carrossel-interna-artigo .slider .videoorimage {width: 85%;}
+.cuidadores #carrossel-interna-artigo .slider .descritivo {}
+
+.cuidadores .span8{width: 100%!important;}
+.cuidadores .selecione .btn-group {width:100%!important}
+.cuidadores .selecione .btn-group .dropdown-toggle {width: 96%!important;}
 
 @media screen and (min-width:430px){
   .imagem-topo {width: 190px;left: 50%;margin-left: -77px;}
