@@ -380,10 +380,10 @@ function isDevice(OSName)
                         <span class="decoracao"></span>
                       </li>
                       <!--CAMERAS AO VIVO -->
-                      <li class="btn-mapa-sao-paulo  btn-li ">
+                      <!--li class="btn-mapa-sao-paulo  btn-li ">
                         <a href="#telas" title="Mapa de São Paulo" class="m_mapa_sao_paulo btn-menu">Mapa de São Paulo</a>
                         <span class="decoracao"></span>
-                      </li>
+                      </li-->
                       <!--li class="btn-portal-de-videos  btn-li ">
                         <a href="#telas" title="Portal de vídeo" class="m_portal_de_video btn-menu">Portal de vídeo</a>
                         <span class="decoracao"></span>
