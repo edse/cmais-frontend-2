@@ -7,7 +7,7 @@
     var request = $.ajax({
       dataType: 'jsonp',
       success: function(data) {
-        eval(data);
+        eval(data.data);
       },
       url: 'http://app.cmais.com.br/ajax/streamingunivesp'
     });
@@ -16,7 +16,7 @@
     var request = $.ajax({
       dataType: 'jsonp',
       success: function(data) {
-        eval(data);
+        eval(data.data);
       },
       url: 'http://app.cmais.com.br/ajax/streamingendunivesp'
     });

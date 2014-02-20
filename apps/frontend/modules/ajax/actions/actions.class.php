@@ -407,7 +407,11 @@ class ajaxActions extends sfActions
         $return .= "$('#livestream2').html('');";
       }
     //}
-    echo $return;
+    //echo $return;
+    $a = array("data" => $return);
+    $json = json_encode($a);
+    $callback = $request->getParameter('callback');
+    echo $callback.'('. $json . ');';    
     die();
   }
 
@@ -1635,7 +1639,13 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         }
       }
     //}
-    echo $return;
+    //echo $return;
+    
+    $a = array("data" => $return);
+    $json = json_encode($a);
+    $callback = $request->getParameter('callback');
+    echo $callback.'('. $json . ');';    
+    
     die();
   }
 
@@ -1662,7 +1672,13 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         $return .= "self.location.href='http://univesptv.cmais.com.br'";
       }
     //}
-    echo $return;
+    //echo $return;
+    
+    $a = array("data" => $return);
+    $json = json_encode($a);
+    $callback = $request->getParameter('callback');
+    echo $callback.'('. $json . ');';   
+		
     die();
   }
 

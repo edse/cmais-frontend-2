@@ -20,7 +20,7 @@
       data: "channel_id=3",
       dataType: 'jsonp',
       success: function(data){
-        eval(data);
+        eval(data.data);
       }
     });
   }
