@@ -1,4 +1,4 @@
-r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"; ?>
+<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"; ?>
 <?php
   /*
    * Pega a campanha (seção filha de "campanhas") e as categorias (seçao filha de "categorias") as quais o asset pertence
@@ -59,7 +59,7 @@ r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilit
   <section class="filtro row-fluid">
     
     <h1>
-      <i class="icones-sprite-interna icone-atividades-grande"></i>
+      <i class="icones-sprite-interna icone-videos-grande"></i>
       <?php echo $section->getTitle() ?>
       <a class="todos-assets" title="voltar para todas vídeos" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" target="_self" >
         <i class="icones-setas icone-voltar-videos"></i>
