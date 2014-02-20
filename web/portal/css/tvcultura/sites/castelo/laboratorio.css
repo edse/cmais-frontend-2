@@ -1,18 +1,18 @@
 body { background:#5e6f94; min-height: 970px; }
-#bg { background:#5e6f94 url("/portal/images/capaPrograma/castelo/img-bg-laboratorio.jpg") no-repeat scroll center; min-width:1000px !important; }
+#bg { background:#5e6f94 url("http://cmais.com.br/portal/images/capaPrograma/castelo/img-bg-laboratorio.jpg") no-repeat scroll center; min-width:1000px !important; }
 #capa-site { height:963px; }
 .tudo { height:680px; }
 .navegacao{left:40px;}
 
 .botao-doutorvictor{z-index:1;position:absolute;top: 186px;left: 65px;width: 290px;height: 427px;}
-.botao-doutorvictor-over{position:absolute;top: 72px;left: -12px;width: 441px;height: 547px; background: url(/portal/images/capaPrograma/castelo/img-personagem-doutorvictor-over.png) no-repeat;}
-.gif-doutorvictor{background:  url(/portal/images/capaPrograma/castelo/gif-personagem-doutorvictor.gif) no-repeat;background: url(/portal/images/capaPrograma/castelo/gif-personagem-doutorvictor.gif) no-repeat;width: 96px;height: 75px;position: absolute;top: -14px;left: 144px;}
+.botao-doutorvictor-over{position:absolute;top: 72px;left: -12px;width: 441px;height: 547px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-doutorvictor-over.png) no-repeat;}
+.gif-doutorvictor{background:  url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-doutorvictor.gif) no-repeat;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-doutorvictor.gif) no-repeat;width: 96px;height: 75px;position: absolute;top: -14px;left: 144px;}
 
 .botao-tibioperonio{z-index:0;position: absolute;top: 31px;left: 264px;width: 422px;height: 155px;}
-.botao-tibioperonio-over{position: absolute;top: -232px;left: 249px;width: 460px;height: 425px; background:url(/portal/images/capaPrograma/castelo/img-personagem-tibioperonio-over.png) no-repeat;}
-.gif-tibioperonio{width: 85px;height: 64px;position: absolute;top: 34px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-tibioperonio.gif) no-repeat;left: 424px;background:  url(/portal/images/capaPrograma/castelo/gif-personagem-tibioperonio.gif) no-repeat;}
+.botao-tibioperonio-over{position: absolute;top: -232px;left: 249px;width: 460px;height: 425px; background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-tibioperonio-over.png) no-repeat;}
+.gif-tibioperonio{width: 85px;height: 64px;position: absolute;top: 34px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-tibioperonio.gif) no-repeat;left: 424px;background:  url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-tibioperonio.gif) no-repeat;}
 
 .botao-tapflap{position: absolute;top: 227px;left: 599px;width: 244px;height: 160px;}
-.botao-tapflap-over{position: absolute;top: 201px;right: 88px;width: 343px;height: 213px;background:url(/portal/images/capaPrograma/castelo/img-personagem-tapflap-over.png) no-repeat;}
-.gif-tap{background: yellow; width:50px; height:50px;position: absolute;top: 79px;left: 49px;background:url(/portal/images/capaPrograma/castelo/gif-personagem-tap.gif) no-repeat}
-.gif-flap{background: green; width:50px; height:50px;position:absolute;top: 79px;left: 200px;background:url(/portal/images/capaPrograma/castelo/gif-personagem-flap.gif) no-repeat}
+.botao-tapflap-over{position: absolute;top: 201px;right: 88px;width: 343px;height: 213px;background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-tapflap-over.png) no-repeat;}
+.gif-tap{background: yellow; width:50px; height:50px;position: absolute;top: 79px;left: 49px;background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-tap.gif) no-repeat}
+.gif-flap{background: green; width:50px; height:50px;position:absolute;top: 79px;left: 200px;background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-flap.gif) no-repeat}

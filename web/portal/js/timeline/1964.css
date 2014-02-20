@@ -304,7 +304,7 @@
 .box-destaque { margin:45px 0; border: solid 5px #ccc; width:955px; clear:both; }
 .carrossel { margin:0; clear: both; text-align:left; width:970px;}
 .carrossel .jcarousel-next,
-.carrossel .jcarousel-prev { background: url(/portal/images/capaPrograma/univesptv/seta-carrossel.png) ; bottom:0; width:20px; height:40px; top:45px; }
+.carrossel .jcarousel-prev { background: url(http://cmais.com.br/portal/images/capaPrograma/univesptv/seta-carrossel.png) ; bottom:0; width:20px; height:40px; top:45px; }
 .carrossel .jcarousel-clip{ width:880px; height:130px; left:40px;  }
 .carrossel .jcarousel-prev {left:0; }
 .carrossel .jcarousel-next { background-position:-20px 0; right:0;}

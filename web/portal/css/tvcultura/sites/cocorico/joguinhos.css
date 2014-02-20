@@ -5,19 +5,19 @@
 .tit-pagina { background:#1893cf; }
 .tit-pagina .likes { background:#1eb9e2;  }
 
-.destaques span { background-image:url(/portal/images/capaPrograma/cocorico/popover.png) ; }
+.destaques span { background-image:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/popover.png) ; }
 .destaques span.hover{width: 29px;height: 28px;bottom:-5px;}
 .destaques span.hover,
-.destaques span:hover { background-image:url(/portal/images/capaPrograma/cocorico/popover-hover.png);width: 29px;height: 28px;}
-.destaques span.ativo { background-image:url(/portal/images/capaPrograma/cocorico/popover-hoveroff.png);}
+.destaques span:hover { background-image:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/popover-hover.png);width: 29px;height: 28px;}
+.destaques span.ativo { background-image:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/popover-hoveroff.png);}
 
 .popover.bottom {border-color:#1893cf;  }
 .popover-content p {color:#0e6b99; font-size:13px; line-height: 15px; }
-/*.likes li {background:url(/portal/images/capaPrograma/cocorico/estrela-azul.png) no-repeat;  }*/
-.voltar { background:url(/portal/images/capaPrograma/cocorico/seta-azul.png) no-repeat; color:#1893cf; }
+/*.likes li {background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/estrela-azul.png) no-repeat;  }*/
+.voltar { background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/seta-azul.png) no-repeat; color:#1893cf; }
 .voltar:hover { color:#1893cf; }
-.divisao { background:url(/portal/images/capaPrograma/cocorico/pontilhado-azul.png) repeat-x center; }
-.relacionados .destaques-small { background:url(/portal/images/capaPrograma/cocorico/fundo-transparente.png) repeat; border:2px solid #1eb9e2; }
+.divisao { background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/pontilhado-azul.png) repeat-x center; }
+.relacionados .destaques-small { background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/fundo-transparente.png) repeat; border:2px solid #1eb9e2; }
 
 .curtir.disabled { background-position:0 -40px; } 
 .likes { background:#1893CF; }

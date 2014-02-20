@@ -4,8 +4,8 @@
 #capa-site { margin-top:-108px !important; }
 #barra-site .topo-programa { *margin-top:-20px; }
 #chamada { margin-bottom:0; }
-#barra-site .topo-programa { background:url(/portal/images/capaPrograma/luizgonzaga/ilustra.png) no-repeat right bottom; }
-body {  background:#fff url(/portal/images/capaPrograma/luizgonzaga/bg.jpg) repeat-x;  }
+#barra-site .topo-programa { background:url(http://cmais.com.br/portal/images/capaPrograma/luizgonzaga/ilustra.png) no-repeat right bottom; }
+body {  background:#fff url(http://cmais.com.br/portal/images/capaPrograma/luizgonzaga/bg.jpg) repeat-x;  }
 .bg-chamada { height:60px; z-index: 100; margin-bottom:48px;}
-/*.tit-pagina { text-indent:-9999px; background:url(/portal/images/capaPrograma/luizgonzaga/logo.png) no-repeat; width:246px; height:30px; }*/
+/*.tit-pagina { text-indent:-9999px; background:url(http://cmais.com.br/portal/images/capaPrograma/luizgonzaga/logo.png) no-repeat; width:246px; height:30px; }*/
 .bg-site { display:none; }

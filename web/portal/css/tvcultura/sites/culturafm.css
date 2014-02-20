@@ -5,10 +5,10 @@ body { background:#ffffff;}
 #esquerda2 { /*margin-top:-20px;*/}
 .submenu-interna {width:120px;}
 #barra-site h2 {margin-top:10px;}
-/*.topo-programa .controle { background:url(/portal/images/capaPrograma/controle-remoto.jpg) no-repeat; display: block; text-indent:-9999px; float:right; width: 163px; height:59px; margin-top:20px; }
+/*.topo-programa .controle { background:url(http://cmais.com.br/portal/images/capaPrograma/controle-remoto.jpg) no-repeat; display: block; text-indent:-9999px; float:right; width: 163px; height:59px; margin-top:20px; }
 .menu-interna .m-controle { padding:0 5px 0 22px !important;}
-.menu-interna .m-controle span  { background:url(/portal/images/btn-play.png) no-repeat -2px -48px; width:12px; height:12px; top:5px; left:5px;}
-.menu-interna .m-controle span { _background-image:url(/portal/images/btn-play.gif) no-repeat;}
+.menu-interna .m-controle span  { background:url(http://cmais.com.br/portal/images/btn-play.png) no-repeat -2px -48px; width:12px; height:12px; top:5px; left:5px;}
+.menu-interna .m-controle span { _background-image:url(http://cmais.com.br/portal/images/btn-play.gif) no-repeat;}
 .menu-interna .m-controle:hover span,
 .menu-interna .m-controle.ativo span {background-position:-2px -60px;}
 
@@ -111,8 +111,8 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
 
 /* NOVO */
 /*.menu-interna li.span { display:none; }*/
-.menu-interna li span { top:12px; background:url(/portal/images/capaPrograma/culturafm/arrow_down_8x8.png) no-repeat 0 0; }
-.menu-interna li.ativo span, .menu-interna li:hover span { background:url(/portal/images/ico-drop2.png) no-repeat 0 -136px;}
+.menu-interna li span { top:12px; background:url(http://cmais.com.br/portal/images/capaPrograma/culturafm/arrow_down_8x8.png) no-repeat 0 0; }
+.menu-interna li.ativo span, .menu-interna li:hover span { background:url(http://cmais.com.br/portal/images/ico-drop2.png) no-repeat 0 -136px;}
 .submenu-interna {    background: none repeat scroll 0 0 #333;    border: none;   top: 31px;    }
 .menu-interna .submenu-interna li { background:#333; }
 
@@ -132,18 +132,18 @@ form.selecao .item,
 #barra-site #horario { float:right; clear:both; margin-top:-60px; width:111px;}
 #barra-site #horario { *margin-top:20px;}
 #barra-site #horario { *width: 90px;position: relative;z-index: 1;}
-.topo-programa .aovivo { display:block; width:111px; height:44px; background:url(/portal/images/capaPrograma/culturafm/ico-controle-remoto.gif) no-repeat; text-indent:-9999px; }
+.topo-programa .aovivo { display:block; width:111px; height:44px; background:url(http://cmais.com.br/portal/images/capaPrograma/culturafm/ico-controle-remoto.gif) no-repeat; text-indent:-9999px; }
 .home .topo-programa { background: no-repeat 0 127px; /*height:350px;*/ }
-.violino { background-image:url(/portal/images/capaPrograma/culturafm/violino.jpg) !important; }
-.clarinete { background-image:url(/portal/images/capaPrograma/culturafm/clarinete.jpg) !important; }
-.trombone { background-image:url(/portal/images/capaPrograma/culturafm/trombone.jpg) !important; }
-.bombardino { background-image:url(/portal/images/capaPrograma/culturafm/bombardino.jpg) !important; }
-.carrilhao { background-image:url(/portal/images/capaPrograma/culturafm/carrilhao.jpg) !important; }
-.timpanos { background-image:url(/portal/images/capaPrograma/culturafm/timpanos.jpg) !important; }
-.trompete { background-image:url(/portal/images/capaPrograma/culturafm/trompete.jpg) !important; }
-.fm35-1 { background-image:url(/portal/images/capaPrograma/culturafm/destaque_fm35_I.png) !important; }
-.fm35-2 {background-image:url(/portal/images/capaPrograma/culturafm/destaque_fm35_II.png) !important;}
-.fm35-3 {background-image:url(/portal/images/capaPrograma/culturafm/destaque_fm35_III.png) !important;}
+.violino { background-image:url(http://cmais.com.br/portal/images/capaPrograma/culturafm/violino.jpg) !important; }
+.clarinete { background-image:url(http://cmais.com.br/portal/images/capaPrograma/culturafm/clarinete.jpg) !important; }
+.trombone { background-image:url(http://cmais.com.br/portal/images/capaPrograma/culturafm/trombone.jpg) !important; }
+.bombardino { background-image:url(http://cmais.com.br/portal/images/capaPrograma/culturafm/bombardino.jpg) !important; }
+.carrilhao { background-image:url(http://cmais.com.br/portal/images/capaPrograma/culturafm/carrilhao.jpg) !important; }
+.timpanos { background-image:url(http://cmais.com.br/portal/images/capaPrograma/culturafm/timpanos.jpg) !important; }
+.trompete { background-image:url(http://cmais.com.br/portal/images/capaPrograma/culturafm/trompete.jpg) !important; }
+.fm35-1 { background-image:url(http://cmais.com.br/portal/images/capaPrograma/culturafm/destaque_fm35_I.png) !important; }
+.fm35-2 {background-image:url(http://cmais.com.br/portal/images/capaPrograma/culturafm/destaque_fm35_II.png) !important;}
+.fm35-3 {background-image:url(http://cmais.com.br/portal/images/capaPrograma/culturafm/destaque_fm35_III.png) !important;}
 #barra-site h2 {margin-bottom:20px;}
 .menu-interna { margin-top:15px; background:#666; }
 .menu-interna li {margin-right:0; padding:5px 29px; background:#666; }
@@ -155,7 +155,7 @@ form.selecao .item,
 .box-padrao .topo {background:#f7f6f6; height:50px;}
 
 .box-padrao .topo h4 {color:#333; font-weight:normal; font-size: 24px; text-transform:none; }
-.setas { background: url(/portal/images/capaPrograma/culturafm/setas.png) no-repeat; width:17px; height:17px; display: block; float:right; margin:11px 5px 0 0; }
+.setas { background: url(http://cmais.com.br/portal/images/capaPrograma/culturafm/setas.png) no-repeat; width:17px; height:17px; display: block; float:right; margin:11px 5px 0 0; }
 
 .paraouvir { background: #f7f6f6; float: left; padding-bottom: 20px; padding-bottom:20px; width: 310px; height:388px; margin-top:-20px; }
 .paraouvir .chapeu,
@@ -182,7 +182,7 @@ a.jp-unmute:hover,
 div.jp-volume-bar, 
 div.jp-volume-bar-value, 
 div.jp-video div.jp-video-play, 
-div.jp-video div.jp-video-play:hover { background-image:url("/portal/images/capaPrograma/culturafm/jplayer.jpg") !important;}
+div.jp-video div.jp-video-play:hover { background-image:url("http://cmais.com.br/portal/images/capaPrograma/culturafm/jplayer.jpg") !important;}
 .playlist div.jp-type-playlist div.jp-playlist a:hover, 
 .playlist div.jp-type-playlist div.jp-playlist a.jp-playlist-current { color:#333 !important; }
 .playlist div.jp-playlist ul,
@@ -201,7 +201,7 @@ div.jp-playlist {border:none !important;}
 .contato form .linha .enviar {background:#666; width: 72px;}
 
 .box-padrao .nav-menu2 { background:#fff; }
-.menu-calendario .btn { background: url(/portal/images/capaPrograma/culturafm/setas.png) no-repeat 0 -17px; width:17px; height:17px; }
+.menu-calendario .btn { background: url(http://cmais.com.br/portal/images/capaPrograma/culturafm/setas.png) no-repeat 0 -17px; width:17px; height:17px; }
 .menu-calendario .proximo {background-position:0 -34px;}
 .menu-calendario .carrossel-menu li {width:295px; text-align:center;}
 .menu-calendario .carrossel-menu {width:350px;}
@@ -498,7 +498,7 @@ h3.tit-pagina { margin-bottom:0; }
 
 #destaque.uma-coluna p { max-height:100%; }
 
-.btn-feedback { background: url("/portal/images/capaPrograma/culturafm/btns.gif") repeat scroll 0 0 transparent !important;   float: left;   height: 135px;   width: 36px; z-index: 0;}
+.btn-feedback { background: url("http://cmais.com.br/portal/images/capaPrograma/culturafm/btns.gif") repeat scroll 0 0 transparent !important;   float: left;   height: 135px;   width: 36px; z-index: 0;}
 .btn-feedback:hover { background-position: -36px !important; }
 #rodape-portal { position:relative; }
 

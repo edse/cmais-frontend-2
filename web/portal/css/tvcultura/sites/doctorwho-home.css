@@ -1,8 +1,8 @@
-body { background:url(/portal/images/capaPrograma/doctorwho/home/pattern.jpg) repeat; }
-#capa-site { background:url(/portal/images/capaPrograma/doctorwho/home/bg-capa.png) repeat; padding: 0 10px; }
+body { background:url(http://cmais.com.br/portal/images/capaPrograma/doctorwho/home/pattern.jpg) repeat; }
+#capa-site { background:url(http://cmais.com.br/portal/images/capaPrograma/doctorwho/home/bg-capa.png) repeat; padding: 0 10px; }
 .banner h2 { margin-top:15px; }
-.banner h2 a { background-image:url(/portal/images/capaPrograma/doctorwho/home/logo-tv-branco.png); }
-.banner { background:url(/portal/images/capaPrograma/doctorwho/home/bg-topo.png) no-repeat right; height:143px; margin:0 0 0 43px; overflow:hidden; width:968px; display: block; position:relative; }
+.banner h2 a { background-image:url(http://cmais.com.br/portal/images/capaPrograma/doctorwho/home/logo-tv-branco.png); }
+.banner { background:url(http://cmais.com.br/portal/images/capaPrograma/doctorwho/home/bg-topo.png) no-repeat right; height:143px; margin:0 0 0 43px; overflow:hidden; width:968px; display: block; position:relative; }
 .box-borda .detalhe-borda,
 .banner .pub-grd {display:none;}
 #miolo {margin-top:0;}
@@ -18,14 +18,14 @@ body { background:url(/portal/images/capaPrograma/doctorwho/home/pattern.jpg) re
 .novoDestaque .enunciado h2 { background:#0d2854; }
 #v2 li { border-color:#0d2854; }
 .novoNoAr .enunciado span,
-.novoDestaque .enunciado span { background-image: url(/portal/images/capaPrograma/doctorwho/home/ponta-destaque-new.png); }
+.novoDestaque .enunciado span { background-image: url(http://cmais.com.br/portal/images/capaPrograma/doctorwho/home/ponta-destaque-new.png); }
 .novoDestaque .enunciado,
 .novoDestaque { width:969px; }
 .novoNoAr { margin-bottom:0; }
 .box-padrao .capa-titulo,
 .box-padrao .claro .capa-titulo { background:#205da5; }
 .box-padrao .topo span,
-.box-padrao .claro span { background:url(/portal/images/capaPrograma/doctorwho/home/aba-titulo.png) no-repeat; }
+.box-padrao .claro span { background:url(http://cmais.com.br/portal/images/capaPrograma/doctorwho/home/aba-titulo.png) no-repeat; }
 .noticia p,
 .box-padrao .conteudo li p,
 .conteudo a,
@@ -39,4 +39,4 @@ body { background:url(/portal/images/capaPrograma/doctorwho/home/pattern.jpg) re
 .box-borda .conteudo ul, 
 .box-borda .conteudo ol, 
 .box-borda .conteudo .txt-padrao { background:none; }
-.para-ouvir a { background-image: url(/portal/images/capaPrograma/doctorwho/home/bg-player.png); }
+.para-ouvir a { background-image: url(http://cmais.com.br/portal/images/capaPrograma/doctorwho/home/bg-player.png); }

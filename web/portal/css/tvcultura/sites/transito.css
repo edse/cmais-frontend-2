@@ -41,7 +41,7 @@
 .box-transito .box-publicidade{
   margin-top:36px;
 }
-#barra-site .topo-programa .fundo-topo{position:absolute;top:-10px;right:0px;width:484px; height:145px;background: url(/portal/images/capaPrograma/transito/fundo-topo.png) no-repeat 0 0;z-index: 1}
+#barra-site .topo-programa .fundo-topo{position:absolute;top:-10px;right:0px;width:484px; height:145px;background: url(http://cmais.com.br/portal/images/capaPrograma/transito/fundo-topo.png) no-repeat 0 0;z-index: 1}
 #barra-site .redes {width: 470px !important;}
 #barra-site .topo-programa {
     min-height: 100px !important;
@@ -84,7 +84,7 @@
 }
 
 .mapa-sao-paulo .abas .neutro span {
-    background: url(/portal/images/capaPrograma/transito/bg-abas.png) no-repeat 0 0;
+    background: url(http://cmais.com.br/portal/images/capaPrograma/transito/bg-abas.png) no-repeat 0 0;
     float: left !important;
     height: 24px !important;
     width: 13px !important;
@@ -96,7 +96,7 @@
 }
 
 .abas li.ativo .decoracao, .abas li:hover .decoracao {
-    background: url(/portal/images/capaPrograma/transito/setinha-decoracao.png) no-repeat scroll 0 0 transparent;
+    background: url(http://cmais.com.br/portal/images/capaPrograma/transito/setinha-decoracao.png) no-repeat scroll 0 0 transparent;
 }
 
 .abas li .decoracao {
@@ -121,7 +121,7 @@
 #twitter .respiro {background:#ffffff; height:20px; display:none;}
 #twitter ul em a {margin:0; padding:0;}
 /* /TWITTER */
-    /*background: url(/portal/images/capaPrograma/transito/setinha-decoracao.png);*/
+    /*background: url(http://cmais.com.br/portal/images/capaPrograma/transito/setinha-decoracao.png);*/
 
 
 .mapa-sao-paulo .conteudos #mapa-sp-legenda li{
@@ -133,7 +133,7 @@
 .conteudo-camera-ao-vivo{
   height: 1344px !important;
   width: 970px;
-  background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo.png) no-repeat 0 0;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo.png) no-repeat 0 0;
 }
 
 .container-camera{
@@ -151,14 +151,14 @@
 #rodovias{
   width:640px;
   height:100%;
-  background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-rodovias.png) no-repeat -100px -72px;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-rodovias.png) no-repeat -100px -72px;
   position: relative;
 }
 
 #rodovias #legendas-ruas{
   width:640px;
   height:100%;
-  background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-legendas.png) no-repeat -99px -68px;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-legendas.png) no-repeat -99px -68px;
 }
 
 #rodovias .topo-mapa{
@@ -209,13 +209,13 @@
 
 
 #rodovias #mapa-sp-legenda .alta{
-  background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png) no-repeat 0 0;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png) no-repeat 0 0;
 }
 #rodovias #mapa-sp-legenda .baixa{
-  background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png) no-repeat 0 0;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verde.png) no-repeat 0 0;
 }
 #rodovias #mapa-sp-legenda .estavel{
-  background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png) no-repeat 0 0;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png) no-repeat 0 0;
 }
 #rodovias #mapa-sp-legenda .setatamanho{
   width:15px;
@@ -226,8 +226,8 @@
   }
   
 
-#rodovias #mapa-sp-legenda .baixa{background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png) no-repeat 0 0}
-#rodovias #mapa-sp-legenda .media{background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png) no-repeat 0 0}
+#rodovias #mapa-sp-legenda .baixa{background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-verm.png) no-repeat 0 0}
+#rodovias #mapa-sp-legenda .media{background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-seta-cinza.png) no-repeat 0 0}
 
 #rodovias #mapa-sp-legenda li .seta{
   width:15px;
@@ -237,23 +237,23 @@
   left:-13px;
 }
 #rodovias #mapa-sp-legenda li .pos-norte{
-  background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0 0;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0 0;
 }
 
 #rodovias #mapa-sp-legenda li .pos-leste{
-    background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0px -22px;
+    background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0px -22px;
     }
     
 #rodovias #mapa-sp-legenda li .pos-centro{
-    background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0px -41px;
+    background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0px -41px;
     }
 
 #rodovias #mapa-sp-legenda li .pos-oeste{
-    background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0px -60px;
+    background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0px -60px;
     }
 
 #rodovias #mapa-sp-legenda li .pos-sul{
-    background: url(/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0px -79px;
+    background: url(http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-setinhas.png) no-repeat 0px -79px;
     }
     
 #rodovias #mapa-sp-legenda a{
@@ -294,107 +294,107 @@
 }
 
 #rodovias #cameras #camera01{
-	background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -98px -324px transparent;
+	background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -98px -324px transparent;
 	height: 32px;
 	left: 193px;
 	position: absolute;
 	top: 280px;
 	width: 43px;}
     
-#rodovias #cameras #camera01.pos01:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -144px -324px transparent;}
+#rodovias #cameras #camera01.pos01:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -144px -324px transparent;}
 
 #rodovias #cameras #camera02{
-background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -96px -289px transparent;
+background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -96px -289px transparent;
     height: 32px;
     left: 299px;
     position: absolute;
     top: 385px;
     width: 43px;
     }
-#rodovias #cameras #camera02.pos02:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -142px -289px transparent;}
+#rodovias #cameras #camera02.pos02:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -142px -289px transparent;}
 
 #rodovias #cameras #camera03{
-	background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -105px -246px transparent;
+	background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -105px -246px transparent;
 	height: 41px;
 	left: 376px;
 	position: absolute;
 	top: 326px;
 	width: 30px;
     }
-#rodovias #cameras #camera03.pos03:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -153px -246px transparent;}
+#rodovias #cameras #camera03.pos03:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -153px -246px transparent;}
 
 #rodovias #cameras #camera04{
-	background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -96px -324px transparent;
+	background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -96px -324px transparent;
 	height: 31px;
 	left: 417px;
 	position: absolute;
 	top: 316px;
 	width: 45px !important;
     }
-#rodovias #cameras #camera04.pos04:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -142px -324px transparent;}
+#rodovias #cameras #camera04.pos04:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -142px -324px transparent;}
 
 #rodovias #cameras #camera05{
-	background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -176px transparent;
+	background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -176px transparent;
 	height: 31px;
 	left: 272px;
 	position: absolute;
 	top: 288px;
 	width: 43px;
     }
-#rodovias #cameras #camera05.pos05:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -140px -176px transparent;}
+#rodovias #cameras #camera05.pos05:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -140px -176px transparent;}
 
 #rodovias #cameras #camera06{
-    background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -143px transparent;
+    background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -143px transparent;
 	height: 31px;
 	left: 245px;
 	position: absolute;
 	top: 410px;
 	width: 43px;
     }
-#rodovias #cameras #camera06.pos06:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -140px -143px  transparent;}
+#rodovias #cameras #camera06.pos06:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -140px -143px  transparent;}
 
 #rodovias #cameras #camera07{
-	background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -94px -101px transparent;
+	background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -94px -101px transparent;
 	height: 40px;
 	left: 226px;
 	position: absolute;
 	top: 458px;
 	width: 30px;
     }
-#rodovias #cameras #camera07.pos07:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll  -142px -101px  transparent;}
+#rodovias #cameras #camera07.pos07:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll  -142px -101px  transparent;}
 
 #rodovias #cameras #camera08{
-    background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -94px -69px transparent;
+    background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -94px -69px transparent;
 	height: 31px;
 	left: 180px;
 	position: absolute;
 	top: 395px;
 	width: 30px;
     }
-#rodovias #cameras #camera08.pos08:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll  -141px -69px  transparent;}
+#rodovias #cameras #camera08.pos08:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll  -141px -69px  transparent;}
 
 #rodovias #cameras #camera09{
-	background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -94px -1px transparent;
+	background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -94px -1px transparent;
 	height: 33px;
 	left: 131px;
 	position: absolute;
 	top: 344px;
 	width: 35px;
     }
-#rodovias #cameras #camera09.pos09:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll   -141px -1px   transparent;}
+#rodovias #cameras #camera09.pos09:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll   -141px -1px   transparent;}
 
 #rodovias #cameras #camera10{
-	background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -97px -33px transparent;
+	background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -97px -33px transparent;
 	height: 30px;
 	left: 361px;
 	position: absolute;
 	top: 254px;
 	width: 43px;
     }
-#rodovias #cameras #camera10.pos10:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll  -143px -33px  transparent;}
+#rodovias #cameras #camera10.pos10:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll  -143px -33px  transparent;}
 
 #rodovias #cameras #camera11{
-  background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -59px -321px transparent;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -59px -321px transparent;
     height: 39px;
     left: 523px;
     position: absolute;
@@ -402,10 +402,10 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
     width: 30px;
     }
     
-#rodovias #cameras #camera11.pos11:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -13px -321px transparent;}
+#rodovias #cameras #camera11.pos11:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -13px -321px transparent;}
 
 #rodovias #cameras #camera12{
-  background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -47px -287px transparent;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -47px -287px transparent;
     height: 29px;
     left: 275px;
     position: absolute;
@@ -413,10 +413,10 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
     width: 43px;
     }
     
-#rodovias #cameras #camera12.pos12:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll 0px -287px transparent;}
+#rodovias #cameras #camera12.pos12:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll 0px -287px transparent;}
 
 #rodovias #cameras #camera13{
-   background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -59px -247px transparent;
+   background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -59px -247px transparent;
     height: 39px;
     left: 381px;
     position: absolute;
@@ -424,10 +424,10 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
     width: 30px;
     }
     
-#rodovias #cameras #camera13.pos13:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -12px -247px transparent;}
+#rodovias #cameras #camera13.pos13:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -12px -247px transparent;}
 
 #rodovias #cameras #camera14{
-	background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -106px -245px transparent;
+	background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -106px -245px transparent;
 	height: 41px;
 	left: 231px;
 	position: absolute;
@@ -435,10 +435,10 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
 	width: 30px;
     }
     
-#rodovias #cameras #camera14.pos14:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -153px -245px transparent;}
+#rodovias #cameras #camera14.pos14:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -153px -245px transparent;}
 
 #rodovias #cameras #camera15{
- background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -58px -84px transparent;
+ background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -58px -84px transparent;
     height: 41px;
     left: 113px;
     position: absolute;
@@ -446,11 +446,11 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
     width: 30px;
     }
     
-#rodovias #cameras #camera15.pos15:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -12px -84px transparent;}
+#rodovias #cameras #camera15.pos15:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -12px -84px transparent;}
 
 
 #rodovias #cameras #camera16{
-background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -58px -84px transparent;
+background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -58px -84px transparent;
     height: 41px;
     left: 149px;
     position: absolute;
@@ -458,11 +458,11 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
     width: 30px;
     }
     
-#rodovias #cameras #camera16.pos16:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -12px -84px transparent;}
+#rodovias #cameras #camera16.pos16:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -12px -84px transparent;}
 
 
 #rodovias #cameras #camera17{
-  background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -58px -84px transparent;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -58px -84px transparent;
     height: 41px;
     left: 93px;
     position: absolute;
@@ -476,40 +476,40 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
   z-index:10;
 }
     
-#rodovias #cameras #camera17.pos17:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -12px -84px transparent;}
+#rodovias #cameras #camera17.pos17:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -12px -84px transparent;}
 
 #rodovias #cameras #camera18{
-	background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -210px transparent;
+	background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -210px transparent;
 	height: 31px;
 	left: 176px;
 	position: absolute;
 	top: 295px;
 	width: 46px;
     }
-#rodovias #cameras #camera18.pos18:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -140px -210px transparent;}
+#rodovias #cameras #camera18.pos18:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -140px -210px transparent;}
 
 #rodovias #cameras #camera19{
-	background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -33px transparent;
+	background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -33px transparent;
 	height: 31px;
 	left: 416px;
 	position: absolute;
 	top: 322px;
 	width: 47px;
     }
-#rodovias #cameras #camera19.pos19:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -140px -33px transparent;}
+#rodovias #cameras #camera19.pos19:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -140px -33px transparent;}
 
 #rodovias #cameras #camera20{
-	background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -176px transparent;
+	background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -176px transparent;
 	height: 31px;
 	left: 135px;
 	position: absolute;
 	top: 279px;
 	width: 43px
     }
-#rodovias #cameras #camera20.pos20:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -140px -176px transparent;}
+#rodovias #cameras #camera20.pos20:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -140px -176px transparent;}
 
 #rodovias #cameras #camera21 {
-  background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -68px transparent;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -68px transparent;
   height: 31px;
   left: 169px;
   position: absolute;
@@ -517,10 +517,10 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
   width: 43px;
 }
 
-#rodovias #cameras #camera21.pos21:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -139px -68px transparent;}
+#rodovias #cameras #camera21.pos21:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -139px -68px transparent;}
 
 #rodovias #cameras #camera22 {
-  background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -68px transparent;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -93px -68px transparent;
   height: 31px;
   left: 243px;
   position: absolute;
@@ -528,7 +528,7 @@ background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png
   width: 43px;
 }
 
-#rodovias #cameras #camera22.pos22:hover{background: url("/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -139px -68px transparent;}
+#rodovias #cameras #camera22.pos22:hover{background: url("http://cmais.com.br/portal/images/capaPrograma/transito/mapa-sao-paulo-cameras.png") no-repeat scroll -139px -68px transparent;}
 
 /* MENU MAPA */
 
@@ -701,7 +701,7 @@ tr:nth-child(odd) {background: #cbabb7}
   height:229px;
   padding:50px 0 20px 25px;
 }
-.close{display:block; position: absolute; top:13px; right:13px; background: url(/portal/images/capaPrograma/transito/ico-fechar.png) no-repeat 0 0;width:13px; height:13px; }
+.close{display:block; position: absolute; top:13px; right:13px; background: url(http://cmais.com.br/portal/images/capaPrograma/transito/ico-fechar.png) no-repeat 0 0;width:13px; height:13px; }
 /* MODAIS */
 
 /* ABA VIDEOS */
@@ -714,10 +714,10 @@ tr:nth-child(odd) {background: #cbabb7}
 .conteudo-mapa-de-sao-paulo2{position:absolute;z-index:-1000;display:none ;}
 .conteudo-camera-ao-vivo{position:absolute;z-index:1;}
 .conteudo-portal-de-videos .youtube { width:488px; float:left; margin-top:60px; }
-.conteudo-portal-de-videos .youtube .upload { width:284px; height:188px; background:url(/portal/images/capaPrograma/transito/seta.png) no-repeat; display:block; margin:0 auto; }
-.conteudo-portal-de-videos .youtube .enviar { width:285px; height:44px; line-height:44px; background:url(/portal/images/capaPrograma/transito/youtube.jpg) no-repeat right; display:block; margin:0 auto; color:#006600; font-size:14px; font-weight:bold; margin-top:50px; }
+.conteudo-portal-de-videos .youtube .upload { width:284px; height:188px; background:url(http://cmais.com.br/portal/images/capaPrograma/transito/seta.png) no-repeat; display:block; margin:0 auto; }
+.conteudo-portal-de-videos .youtube .enviar { width:285px; height:44px; line-height:44px; background:url(http://cmais.com.br/portal/images/capaPrograma/transito/youtube.jpg) no-repeat right; display:block; margin:0 auto; color:#006600; font-size:14px; font-weight:bold; margin-top:50px; }
 .conteudo-portal-de-videos .participe {width:425px; float:left;}
-.conteudo-portal-de-videos .participe .img-enviar {width:425px; height:282px; margin-bottom:20px; background:url(/portal/images/capaPrograma/transito/enviar-foto.jpg) no-repeat; }
+.conteudo-portal-de-videos .participe .img-enviar {width:425px; height:282px; margin-bottom:20px; background:url(http://cmais.com.br/portal/images/capaPrograma/transito/enviar-foto.jpg) no-repeat; }
 .conteudo-portal-de-videos .participe a { clear:both; display: block; margin-bottom:20px; }
 /* /ABA VIDEOS */
 /*map link*/

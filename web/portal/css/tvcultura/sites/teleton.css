@@ -1,5 +1,5 @@
 /* TELETON 2013 */
-body { background:#00a0b2 url(/portal/images/capaPrograma/teleton/_2013/fundo.jpg) no-repeat center 69px;}
+body { background:#00a0b2 url(http://cmais.com.br/portal/images/capaPrograma/teleton/_2013/fundo.jpg) no-repeat center 69px;}
 #conteudo-pagina {  width:970px;   margin-left:20px;  margin-top:20px;  }
 .comentario-fb { max-height:864px; overflow-x:hidden;} 
 #capa-site{width:981px}
@@ -38,14 +38,14 @@ h2 a {text-indent:-9999px;  height: 176px; width: 322px; display: block;}
 .topo-programa h2 { margin-top:20px; }
 .numeros { display: block;    float: right;    height: 166px;    overflow: hidden;    width: 555px;  }
 #miolo {margin: 133px 0 50px 3px;z-index: 20000;background: #fff;width: 974px;border-left: 2px solid #8ca223;border-right: 3px solid #8ca223;border-bottom: 3px solid #8ca223; border-bottom-left-radius: 3px;border-bottom-right-radius: 3px;}
-#barra-site { background: url(/portal/images/capaPrograma/teleton/textura.png) no-repeat;}
+#barra-site { background: url(http://cmais.com.br/portal/images/capaPrograma/teleton/textura.png) no-repeat;}
 .gplus { margin:6px 0 0 5px; float:left; }
 .box-compartilhar .btn-compartilhar { width: 200px; }
 #twitter-widget-1{min-width: 149px!important;max-width: 282px!important;float: left;}
 /* TELETON 2013 */
 
 /* TELE TON 2012
-body { background:#acd134 url(/portal/images/capaPrograma/teleton/fundo.jpg) repeat-x center 0;}
+body { background:#acd134 url(http://cmais.com.br/portal/images/capaPrograma/teleton/fundo.jpg) repeat-x center 0;}
 #conteudo-pagina {  width:970px;   margin-left:20px;  margin-top:20px;  }
 .comentario-fb { max-height:864px; overflow-x:hidden;} 
 
@@ -82,9 +82,9 @@ h2 a {text-indent:-9999px;  height: 176px; width: 322px; display: block;}
 #barra-site h2 a {color:#000;}
 #twitter { margin-bottom:50px; }
 .topo-programa h2 { margin-top:20px; }
-.numeros {    background: url("/portal/images/capaPrograma/teleton/numeros.jpg") no-repeat scroll 0 0 transparent;    display: block;    float: right;    height: 166px;    overflow: hidden;    width: 555px;  }
+.numeros {    background: url("http://cmais.com.br/portal/images/capaPrograma/teleton/numeros.jpg") no-repeat scroll 0 0 transparent;    display: block;    float: right;    height: 166px;    overflow: hidden;    width: 555px;  }
 #miolo { margin:-20px 0 50px 0; z-index: 20000; background:#fff; }
-#barra-site { background: url(/portal/images/capaPrograma/teleton/textura.png) no-repeat;}
+#barra-site { background: url(http://cmais.com.br/portal/images/capaPrograma/teleton/textura.png) no-repeat;}
 .gplus { margin:6px 0 0 5px; float:left; }
 .box-compartilhar .btn-compartilhar { width: 200px; }
 

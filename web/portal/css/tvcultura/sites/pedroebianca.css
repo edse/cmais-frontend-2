@@ -30,14 +30,14 @@ body{
 }
 
 .menu-interna li {
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-menu.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-menu.png") repeat-x;
   border-radius: 6px 6px 6px 6px;
   height: 24px;
   text-decoration: none;
 }
 
 .menu-interna li.ativo, .menu-interna li:hover{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-menuOver.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-menuOver.png") repeat-x;
 }
 .bg-pedroebianca .exceptionn{
   width: 996px!important;
@@ -48,21 +48,21 @@ body{
   width: 996px;
 }
 .tudo-pedroebianca .bordaTop{
-  background: url("/portal/images/capaPrograma/pedroebianca/bordaTop.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bordaTop.png") no-repeat;
   display: block;
   float: left;
   width: 996px;
   height: 5px;
 }
 .tudo-pedroebianca .bordaBottom{
-  background: url("/portal/images/capaPrograma/pedroebianca/bordaBottom.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bordaBottom.png") no-repeat;
   display: block;
   float: left;
   width: 996px;
   height: 5px;
 }
 .tudo-pedroebianca .centro{
-  background: url("/portal/images/capaPrograma/pedroebianca/centro.png") repeat-y;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/centro.png") repeat-y;
   display: block;
   float: left;
   padding-bottom: 30px;
@@ -149,7 +149,7 @@ body{
   cursor:pointer;
 }
 .nivo-nextNav{
-  background: url("/portal/images/capaPrograma/pedroebianca/btn-galeriaBigLeft.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/btn-galeriaBigLeft.png") no-repeat;
   right: -20px;
   display: block;
   overflow: hidden;
@@ -158,7 +158,7 @@ body{
   height: 50px;
 }
 .nivo-prevNav {
-  background: url("/portal/images/capaPrograma/pedroebianca/btn-galeriaBigRight.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/btn-galeriaBigRight.png") no-repeat;
   left: -20px;
   display: block;
   overflow: hidden;
@@ -167,14 +167,14 @@ body{
   height: 50px;
 }
 .nivo-nextNav:hover{
-  background: url("/portal/images/capaPrograma/pedroebianca/btn-galeriaBigLeftOver.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/btn-galeriaBigLeftOver.png") no-repeat;
 }
 .nivo-prevNav:hover{
-  background: url("/portal/images/capaPrograma/pedroebianca/btn-galeriaBigRightOver.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/btn-galeriaBigRightOver.png") no-repeat;
 }
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-pag.jpg") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-pag.jpg") repeat-x;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -182,7 +182,7 @@ body{
   height: 15px;
 }
 .nivo-controlNav a{
-  background: url("/portal/images/capaPrograma/pedroebianca/pag.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/pag.png") no-repeat;
   cursor:pointer;
     border: 0 none;
     display: block;
@@ -257,7 +257,7 @@ body{
   float: left;
 }
 .aceoDestaque .carrossel .jcarousel-item a.aImg .ico{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-overSquare.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-overSquare.png") no-repeat;
   display: none;
   position: absolute;
   width: 150px;
@@ -292,7 +292,7 @@ body{
   margin-top: 3px;
 }
 .aceoDestaque .carrossel .jcarousel-next{
-  background: url("/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallLeft.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallLeft.png") no-repeat;
   cursor: pointer;
   position: absolute;
   top: 29px;
@@ -301,7 +301,7 @@ body{
   height: 44px;
 }
 .aceoDestaque .carrossel .jcarousel-prev{
-  background: url("/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallRight.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallRight.png") no-repeat;
   cursor: pointer;
   position: absolute;
   top: 29px;
@@ -310,13 +310,13 @@ body{
   height: 44px;
 }
 .aceoDestaque .carrossel .jcarousel-prev:hover{
-  background: url("/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallRightOver.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallRightOver.png") no-repeat;
 }
 .aceoDestaque .carrossel .jcarousel-next:hover{
-  background: url("/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallLeftOver.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallLeftOver.png") no-repeat;
 }
 .aceoDestaque a.aceoCompleto{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-btn-aceo.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-btn-aceo.png") repeat-x;
   border: 1px solid #e0dfd9;
   border-radius: 10px;
   float: right;
@@ -331,7 +331,7 @@ body{
   padding: 3px 8px 0px 8px;
 }
 .aceoDestaque .aceoCompleto:hover{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-btn-aceoOver.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-btn-aceoOver.png") repeat-x;
   border: 1px solid #9e9b89;
   text-decoration: none;
 }
@@ -432,7 +432,7 @@ body{
   width: 310px;
 }
 .boxRedes li{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-redes.jpg") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-redes.jpg") repeat-x;
   border-radius: 20px;
   margin-bottom: 10px;
   width: 310px;
@@ -447,7 +447,7 @@ body{
   text-decoration: none;
 }
 .boxRedes li a .ico{
-  background: url("/portal/images/capaPrograma/pedroebianca/ico-redes.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/ico-redes.png") no-repeat;
   margin-left: 20px; 
   float: left;
   width: 32px;
@@ -503,7 +503,7 @@ body{
   height: 24px;
 }
 .boxRedes li a .borda{
-  background: url("/portal/images/capaPrograma/pedroebianca/ico-borda.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/ico-borda.png") no-repeat;
   float: left;
   margin-left: 20px;
   width: 2px;
@@ -584,7 +584,7 @@ h2, h3{
 }
 .equipe .boxEquipe,
 .apresentadoresPassado .boxApresentadoresPassado{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-equipe.png") repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-equipe.png") repeat;
   float: left;
   width: 310px;
 }
@@ -641,7 +641,7 @@ h2, h3{
 .transmissaoH li a,
 .video-interna li.voltarJa a,
 .faleConosco li.voltarJa a {
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-camera.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-camera.png") repeat-x;
   border-radius: 4px;
   float: left;
   font-size: 16px;
@@ -659,21 +659,21 @@ h2, h3{
 .video-interna li.voltarJa a:hover,
 .faleConosco li.voltarJa a:hover,
 .transmissaoH li a.ativo {
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-cameraOver.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-cameraOver.png") repeat-x;
   text-decoration: none;
 }
 .transmissaoH li a#stream_youtube span {
-  background: url("/portal/images/capaPrograma/pedroebianca/bt-youtube.png") no-repeat 50% 50% transparent;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bt-youtube.png") no-repeat 50% 50% transparent;
   width:82px;
   height:20px;
 }
 .transmissaoH li a#stream_ustream span {
-  background: url("/portal/images/capaPrograma/pedroebianca/bt-ustream.png") no-repeat 50% 50% transparent;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bt-ustream.png") no-repeat 50% 50% transparent;
   width:82px;
   height:20px;
 }
 .transmissaoH li a#stream_livestream span {
-  background: url("/portal/images/capaPrograma/pedroebianca/bt-livestream.png") no-repeat 50% 50% transparent;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bt-livestream.png") no-repeat 50% 50% transparent;
   width:82px;
   height:20px;
 }
@@ -692,7 +692,7 @@ h2, h3{
   float: left;
 }
 .boxVideo span.faixa{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-pag.jpg") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-pag.jpg") repeat-x;
   display: block;
   float: left;
   margin-top: -3px;
@@ -724,7 +724,7 @@ h2, h3{
   width: 640px;
 }
 .comentarios p.btn-comentarios{
-   background: url("/portal/images/capaPrograma/pedroebianca/bg-balao.png") no-repeat;
+   background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-balao.png") no-repeat;
    float: left;
    width: 147px;
    height: 35px;
@@ -747,7 +747,7 @@ h2, h3{
   width: 310px;
 }
 .chat p.btn-chat{
-   background: url("/portal/images/capaPrograma/pedroebianca/bg-balaoSmall.png") no-repeat;
+   background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-balaoSmall.png") no-repeat;
    float: left;
    width: 72px;
    height: 35px;
@@ -771,7 +771,7 @@ h2, h3{
   width: 310px;
 }
 .repercussao h2{
-    background: url("/portal/images/capaPrograma/pedroebianca/bg-repercussao.png") no-repeat scroll 0 0 transparent;
+    background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-repercussao.png") no-repeat scroll 0 0 transparent;
     float: left;
     width: 148px;
     height: 35px; 
@@ -792,7 +792,7 @@ h2, h3{
   width: 310px;
 }
 .veja p.btn-veja{
-   background: url("/portal/images/capaPrograma/pedroebianca/bg-veja.png") no-repeat;
+   background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-veja.png") no-repeat;
    float: left;
    width: 142px;
    height: 35px;
@@ -831,7 +831,7 @@ h2, h3{
   height: 92px;
 }
 .vejaTambem li a.aImg .ico{
-    background: url("/portal/images/capaPrograma/pedroebianca/bg-overSquare.png") no-repeat;
+    background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-overSquare.png") no-repeat;
     display: none;
     height: 92px;
     position: absolute;
@@ -864,7 +864,7 @@ h2, h3{
   display: block;
 }
 .vejaTambem a.sugestoes{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-btn-aceo.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-btn-aceo.png") repeat-x;
   border: 1px solid #e0dfd9;
   border-radius: 10px;
   float: right;
@@ -879,7 +879,7 @@ h2, h3{
   padding: 3px 8px 0px 8px;
 }
 .vejaTambem a.sugestoes:hover{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-btn-aceoOver.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-btn-aceoOver.png") repeat-x;
   border: 1px solid #9e9b89;
   text-decoration: none;
 }
@@ -902,7 +902,7 @@ h2, h3{
   margin: 20px 0 0 0!important;
 }
 .not{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-notRelacionadas.png") no-repeat!important;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-notRelacionadas.png") no-repeat!important;
   margin-top: 10px;
   width: 230px!important;
 }
@@ -953,7 +953,7 @@ h2, h3{
   width: 990px;
 }
 .video .cabecalho{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-videosCabecalho.png") repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-videosCabecalho.png") repeat;
   width: 990px;
   height: 30px;
 }
@@ -971,7 +971,7 @@ h2, h3{
   width: 950px;
 }
 .busca span.divisoria{
-  background: url("/portal/images/capaPrograma/pedroebianca/ico-bordaBig.jpg") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/ico-bordaBig.jpg") no-repeat;
   display: block;
   float: left;
   width: 2px;
@@ -1000,7 +1000,7 @@ h2, h3{
   height: 24px;
 }
 .busca form .palavra-chave a.confirmar{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-btn-aceo.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-btn-aceo.png") repeat-x;
   border: 1px solid #e0dfd9;
   border-radius: 10px;
   float: left;
@@ -1015,7 +1015,7 @@ h2, h3{
   padding: 3px 8px 0px 8px;
 }
 .busca form .palavra-chave a.confirmar:hover{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-btn-aceoOver.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-btn-aceoOver.png") repeat-x;
   border: 1px solid #9e9b89;
   text-decoration: none;
 }
@@ -1100,7 +1100,7 @@ form.entrevistas label input{
   width: 105px;
 }
 .busca form .filtro .formWrapper a.confirmar{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-btn-aceo.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-btn-aceo.png") repeat-x;
   border: 1px solid #e0dfd9;
   border-radius: 10px;
   float: right;
@@ -1115,7 +1115,7 @@ form.entrevistas label input{
   padding: 3px 8px 0px 8px;
 }
 .busca form .filtro .formWrapper a.confirmar:hover{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-btn-aceoOver.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-btn-aceoOver.png") repeat-x;
   border: 1px solid #9e9b89;
   text-decoration: none;
 }
@@ -1134,7 +1134,7 @@ form.entrevistas label input{
   width: 125px;
 }
 .organizacao button{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-menu.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-menu.png") repeat-x;
   border-radius: 6px 6px 6px 6px;
   border-style: hidden;
   cursor: pointer;
@@ -1159,13 +1159,13 @@ form.entrevistas label input{
   color: #fff;
 }
 .organizacao button:hover{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-menuOver.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-menuOver.png") repeat-x;
 }
 .organizacao button.ativo span{
   color: #fff;
 }
 .organizacao button.ativo{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-menuOver.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-menuOver.png") repeat-x;
 }
 .listaVideos{
   float: left;
@@ -1178,7 +1178,7 @@ form.entrevistas label input{
   width: 316px;
 }
 .boxLista-video span.topo{
-  background: url("/portal/images/capaPrograma/pedroebianca/bordaTopoSmall.jpg") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bordaTopoSmall.jpg") no-repeat;
   display: block;
   float: left;
   width: 316px;
@@ -1186,14 +1186,14 @@ form.entrevistas label input{
   margin-bottom:0 !important;
 }
 .boxLista-video span.bottom{
-  background: url("/portal/images/capaPrograma/pedroebianca/bordaBottomSmall.jpg") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bordaBottomSmall.jpg") no-repeat;
   display: block;
   float: left;
   width: 316px;
   height: 3px;
 }
 .boxLista-video .centro{
-  background: url("/portal/images/capaPrograma/pedroebianca/centroSmall.jpg") repeat-y;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/centroSmall.jpg") repeat-y;
   display: block;
   float: left;
   width: 316px;
@@ -1215,7 +1215,7 @@ form.entrevistas label input{
   height: 186px;
 }
 .centro span.faixa{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-pag.jpg") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-pag.jpg") repeat-x;
     display: block;
     float: left;
     height: 15px;
@@ -1330,7 +1330,7 @@ form.entrevistas label input{
   float: left;
 }
 .boxVideo .aceoDestaque .carrossel .jcarousel-item a.aImg .ico{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-overSquare.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-overSquare.png") no-repeat;
   display: none;
   position: absolute;
   width: 150px;
@@ -1369,7 +1369,7 @@ form.entrevistas label input{
   margin-top: 3px;
 }
 .boxVideo .aceoDestaque .carrossel .jcarousel-next{
-  background: url("/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallLeft.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallLeft.png") no-repeat;
   cursor: pointer;
   position: absolute;
   top: 29px;
@@ -1378,7 +1378,7 @@ form.entrevistas label input{
   height: 44px;
 }
 .boxVideo .aceoDestaque .carrossel .jcarousel-prev{
-  background: url("/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallRight.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallRight.png") no-repeat;
   cursor: pointer;
   position: absolute;
   top: 29px;
@@ -1387,13 +1387,13 @@ form.entrevistas label input{
   height: 44px;
 }
 .boxVideo .aceoDestaque .carrossel .jcarousel-prev:hover{
-  background: url("/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallRightOver.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallRightOver.png") no-repeat;
 }
 .boxVideo .aceoDestaque .carrossel .jcarousel-next:hover{
-  background: url("/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallLeftOver.png") no-repeat;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/btn-galeriaSmallLeftOver.png") no-repeat;
 }
 .boxVideo .aceoDestaque a.aceoCompleto{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-btn-aceo.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-btn-aceo.png") repeat-x;
   border: 1px solid #e0dfd9;
   border-radius: 10px;
   float: right;
@@ -1408,7 +1408,7 @@ form.entrevistas label input{
   padding: 3px 8px 0px 8px;
 }
 .boxVideo .aceoDestaque .aceoCompleto:hover{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-btn-aceoOver.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-btn-aceoOver.png") repeat-x;
   border: 1px solid #9e9b89;
   text-decoration: none;
 }
@@ -1569,7 +1569,7 @@ form.entrevistas label input{
     padding-left: 2px;
 }
 .faleConosco form input.confirmar{
-    background: url("/portal/images/capaPrograma/pedroebianca/bg-btn-aceo.png") repeat-x scroll 0 0 transparent;
+    background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-btn-aceo.png") repeat-x scroll 0 0 transparent;
     border: 1px solid #E0DFD9;
     border-radius: 10px 10px 10px 10px;
     color: #2B2F34;
@@ -1580,7 +1580,7 @@ form.entrevistas label input{
     width: 70px;
 }
 .faleConosco form input.confirmar:hover{
-    background: url("/portal/images/capaPrograma/pedroebianca/bg-btn-aceoOver.png") repeat-x scroll 0 0 transparent;
+    background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-btn-aceoOver.png") repeat-x scroll 0 0 transparent;
     border: 1px solid #9E9B89;
     text-decoration: none;
 }
@@ -1658,7 +1658,7 @@ form.entrevistas label input{
   width: 310px;
 }
 .preShow .convidado a.pergunta{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-btn-aceo.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-btn-aceo.png") repeat-x;
   border: 1px solid #e0dfd9;
   border-radius: 10px;
   clear: both;
@@ -1675,7 +1675,7 @@ form.entrevistas label input{
   padding: 3px 8px 0px 8px;
 }
 .preShow .convidado .pergunta:hover{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-btn-aceoOver.png") repeat-x;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-btn-aceoOver.png") repeat-x;
   border: 1px solid #9e9b89;
   text-decoration: none;
 }
@@ -1699,7 +1699,7 @@ form.entrevistas label input{
   margin-top: 15px;
 }
 .aoVivo h2{
-  background: url("/portal/images/capaPrograma/pedroebianca/bg-balaoSmall.png") no-repeat scroll 0 0 transparent;
+  background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-balaoSmall.png") no-repeat scroll 0 0 transparent;
     color: #5b5a50;
   float: left;
   font-size: 16px;
@@ -1717,7 +1717,7 @@ form.entrevistas label input{
     text-transform: uppercase;
 }
 .aoVivo span.faixa {
-    background: url("/portal/images/capaPrograma/pedroebianca/bg-pag.jpg") repeat-x scroll 0 0 transparent;
+    background: url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-pag.jpg") repeat-x scroll 0 0 transparent;
     display: block;
     float: left;
     height: 15px;
@@ -1754,7 +1754,7 @@ a.memRoda img{
   font-weight: bold;
 }
 .noticia span.faixa{
-  background: url(/portal/images/capaPrograma/pedroebianca/bg-pag.jpg) repeat-x;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-pag.jpg) repeat-x;
   display: block;
   float: left;
   margin: 0px 0 15px 0;
@@ -1774,7 +1774,7 @@ a.memRoda img{
     margin-top: 2px;
 }
 .paginacao a{
-    background: url("/portal/images/btn-paginacao.png") no-repeat scroll 0 -90px transparent;
+    background: url("http://cmais.com.br/portal/images/btn-paginacao.png") no-repeat scroll 0 -90px transparent;
     display: block;
     float: right;
     height: 18px;
@@ -1803,7 +1803,7 @@ a.memRoda img{
 }
 /*noticia-interna*/
 .noticia-interna span.faixa{
-  background: url(/portal/images/capaPrograma/pedroebianca/bg-pag.jpg) repeat-x;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-pag.jpg) repeat-x;
   display: block;
   float: left;
   margin: 0px 0 15px 0;
@@ -1886,7 +1886,7 @@ a.memRoda img{
   background: none!important;
 }
 .noticiasRelacionadas .box-noticiasRelacionadas{
-  background: url(/portal/images/capaPrograma/pedroebianca/bottom-line.jpg) no-repeat bottom;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bottom-line.jpg) no-repeat bottom;
   float: left;
   margin: 5px 0 5px 10px;
   padding-bottom: 10px;
@@ -1975,7 +1975,7 @@ a.memRoda img{
     width: 365px;
 }
 .paginacao a{
-    background: url("/portal/images/btn-paginacao.png") no-repeat scroll 0 -90px transparent;
+    background: url("http://cmais.com.br/portal/images/btn-paginacao.png") no-repeat scroll 0 -90px transparent;
     display: block;
     float: right;
     height: 18px;
@@ -2056,7 +2056,7 @@ address, caption, cite, code, dfn, em, strong, th, var, optgroup {
 
 
 .submenu-interna ul li,
-.submenu-interna { background:#F0F0F0 url("/portal/images/capaPrograma/pedroebianca/bg-menu.png") repeat scroll 0 0;}
+.submenu-interna { background:#F0F0F0 url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-menu.png") repeat scroll 0 0;}
 .submenu-interna ul li:hover,
 .submenu-interna ul li { background:none; height: auto; }
 .menu-interna li.ativo .submenu-interna ul li a, 
@@ -2065,7 +2065,7 @@ address, caption, cite, code, dfn, em, strong, th, var, optgroup {
 .submenu-interna ul li a { color:#333; }
 .submenu-interna ul li { padding:0 10px; border-radius:0; width:100%;  }
 .submenu-interna { padding:0 }
-.submenu-interna ul li:hover { background:url("/portal/images/capaPrograma/pedroebianca/bg-menuOver.png") repeat-x scroll 0 0 transparent; }
+.submenu-interna ul li:hover { background:url("http://cmais.com.br/portal/images/capaPrograma/pedroebianca/bg-menuOver.png") repeat-x scroll 0 0 transparent; }
 .menu-interna li .submenu-interna ul li:hover a,
 .menu-interna li:hover .submenu-interna ul li:hover a,
 .menu-interna li.ativo .submenu-interna ul li:hover a { color:#fff; text-decoration:none; }

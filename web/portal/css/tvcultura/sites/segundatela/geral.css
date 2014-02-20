@@ -86,7 +86,7 @@
 .logo-link img { padding:0 0 15px 0; }
 .modal-backdrop.fade.in { z-index: 100000; }
 .modal.hide.fade.in { z-index: 1000000; }
-.icon-enquete { background:url(/portal/images/capaPrograma/segundatela/jornaldacultura/icon-enquete.png) no-repeat; width: 16px; height:16px; margin-top:2px !important; }
+.icon-enquete { background:url(http://cmais.com.br/portal/images/capaPrograma/segundatela/jornaldacultura/icon-enquete.png) no-repeat; width: 16px; height:16px; margin-top:2px !important; }
 .progress { margin-bottom:0; }
 #votar,
 #form .btn { background:#333; border:none;  border-radius:0; -moz-border-radius: 0; -webkit-border-radius: 0; color:#fff; box-shadow: none; text-shadow:none; padding:0 5px; height:20px; line-height:20px; text-transform:uppercase; font-weight:bold; margin-top:10px; float:left; font-family: 'source_sans_proregular'; font-size:14px;}
@@ -127,7 +127,7 @@
 .box-padrao #datepicker .ui-corner-all { -moz-border-radius:none; }
 .box-padrao #datepicker .ui-widget-content { background:none; border:none; }
 .box-padrao #datepicker .ui-widget-header { background:none; border:none; width:190px; margin-left:61px; }
-.box-padrao #datepicker .ui-widget-header .ui-icon { background:url(/portal/images/seta-calendario.png) no-repeat; height:12px; width:12px; }
+.box-padrao #datepicker .ui-widget-header .ui-icon { background:url(http://cmais.com.br/portal/images/seta-calendario.png) no-repeat; height:12px; width:12px; }
 .box-padrao #datepicker .ui-datepicker-next .ui-icon { background-position:0 -12px;width: 13px;display: block;} 
 .box-padrao #datepicker .ui-datepicker-prev .ui-icon { background-position:0 0px;width: 13px;display: block;} 
 .box-padrao #datepicker table { width:310px; margin-top:0px; }

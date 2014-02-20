@@ -20,7 +20,7 @@
 .topo-familia .navbar .nav > li.personagens { margin-right:0; margin-left:0; height:50px;  }
 .topo-familia .navbar .nav { margin:0;}
 .topo-familia { *background:red !important;  }
-#menu-familia { width:auto; background:url(/portal/images/capaPrograma/cocorico/bg-menu-familia.png) repeat; margin:0 0 0 -12px; padding:0 10px;  border-radius:0 10px 10px 0; -moz-border-radius: 0 10px 10px 0; -webkit-border-radius:0 10px 10px 0; }
+#menu-familia { width:auto; background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/bg-menu-familia.png) repeat; margin:0 0 0 -12px; padding:0 10px;  border-radius:0 10px 10px 0; -moz-border-radius: 0 10px 10px 0; -webkit-border-radius:0 10px 10px 0; }
 #menu-familia li { margin:0; }
 #menu-familia li a { background: none; font-weight:bold;   border: medium none;    border-radius: 0 0 0 0;    height: 40px; line-height:40px; color:#76b0b7; font-size:14px;    margin: 0;    text-indent:0 ;    width: auto; padding:0; }
 #menu-familia li a.active,
@@ -39,7 +39,7 @@
 .logos a  { position:relative; background:#e9f3f4; display: block; float:left; min-width:140px; border:2px solid #fff; text-align:center; padding:10px 0;  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius:10px;}
 .logos a:hover { background:#fff; }
 .logos .cultura { margin-right:9px; }
-.logos a span { width:26px; height:15px; background:url(/portal/images/capaPrograma/cocorico/detalhe-logo.png) no-repeat; display: block; position:absolute; bottom:-15px; left:57px;}
+.logos a span { width:26px; height:15px; background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/detalhe-logo.png) no-repeat; display: block; position:absolute; bottom:-15px; left:57px;}
 .natv ul { margin-top:-15px; margin-left:20px; }
 .natv ul li { background:#e0eeef; overflow:hidden; margin:0 10px 10px 0; max-height:180px; overflow:hidden;  }
 .natv ul li a { margin-right:10px;   }
@@ -50,7 +50,7 @@
 .natv ul li bold { text-transform:uppercase; font-weight:bold;display: block; margin-top:5px; }
 .natv ul li img { margin-right:20px; }
 .natv .hora { background: #e9f3f4;  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius:10px; margin:10px 0 10px 20px;  }
-.natv .hora span { background:url(/portal/images/capaPrograma/cocorico/pontilhado-branco.png) repeat-x; min-height:1px; margin:0; padding:0; display: block; }
+.natv .hora span { background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/pontilhado-branco.png) repeat-x; min-height:1px; margin:0; padding:0; display: block; }
 .natv .hora a { margin:20px 0; display:block; text-align:center; }
 /* /natv */
 
@@ -61,22 +61,22 @@
 .naslojas .span8 { width: 61.812%; }
 .naslojas .span4 { background:#d3e7e8; color:#6a747d; border-radius:10px 10px 0 0;  -moz-border-radius: 10px 10px 0 0; -webkit-border-radius:10px 10px 0 0; }
 .naslojas .topo { position:relative; overflow:hidden; border:2px solid #fff; border-radius:8px 8px 0 0;  -moz-border-radius: 8px 8px 0 0; -webkit-border-radius:8px 8px 0 0; background:#e9f3f4; }
-.naslojas .topo h2 { font-size:20px; text-transform:uppercase; background:url(/portal/images/capaPrograma/cocorico/ico-lojas.png) no-repeat 10px 0; padding-left:40px; line-height:20px; }
-.naslojas  .divisao {    display: block;   height: 14px;    margin: 0 ;  background: url(/portal/images/capaPrograma/cocorico/familia-pattern.png) repeat-x;}
+.naslojas .topo h2 { font-size:20px; text-transform:uppercase; background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/ico-lojas.png) no-repeat 10px 0; padding-left:40px; line-height:20px; }
+.naslojas  .divisao {    display: block;   height: 14px;    margin: 0 ;  background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/familia-pattern.png) repeat-x;}
 .form-search { margin:10px; }
 input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-height: 20px; font-size:14px; }
 .form-search button:hover,
 .form-search button { background:none; padding:0; box-shadow:none; margin:0 0 0 8px;  }
-.form-search .icon-search { background:url(/portal/images/capaPrograma/cocorico/ico-busca.png) no-repeat; width: 21px; height:21px; margin:0; }
-.naslojas .detalhe {background:url(/portal/images/capaPrograma/cocorico/detalhe-form.png) no-repeat;display: block;    height: 15px;    margin-left: 46%;    margin-top: -2px;    position: relative;    width: 26px;    z-index: 10;}
+.form-search .icon-search { background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/ico-busca.png) no-repeat; width: 21px; height:21px; margin:0; }
+.naslojas .detalhe {background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/detalhe-form.png) no-repeat;display: block;    height: 15px;    margin-left: 46%;    margin-top: -2px;    position: relative;    width: 26px;    z-index: 10;}
 .filtro {background:#70aab1; margin:-22px 10px 10px 10px; overflow:hidden; padding:10px; }
 .filtro h2 { font-size:14px; color:#fff; text-transform:uppercase; line-height:16px; margin-top:20px; }
 .filtro ul { margin:0; }
-.filtro ul a { color:#fff; line-height: 16px; background:url(/portal/images/capaPrograma/cocorico/ico-lixeira-verde.png) no-repeat; padding-left:15px; }
+.filtro ul a { color:#fff; line-height: 16px; background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/ico-lixeira-verde.png) no-repeat; padding-left:15px; }
 .filtro ul a:hover { text-decoration:none; }
 .filtro .btn { background:#e9f3f4; color:#70aab1; padding:0 10px; height:20px; line-height: 20px; float:right; }
 .form-filtro  { margin-bottom:0; }
-.form-filtro fieldset { padding:0 10px; margin-bottom:10px; background:url(/portal/images/capaPrograma/cocorico/pontilhado-branco.png) repeat-x bottom; padding-bottom:10px;}
+.form-filtro fieldset { padding:0 10px; margin-bottom:10px; background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/pontilhado-branco.png) repeat-x bottom; padding-bottom:10px;}
 .form-filtro fieldset .grupo {  overflow-x:hidden; overflow-y:auto; max-height:200px; }
 .form-filtro legend { color:#6b757d; font-size:14px; text-transform:uppercase; font-weight:bold; height:16px; line-height:16px; margin:0; border:none; margin-bottom:10px;   }
 .form-filtro .radio input { margin-right:8px; }
@@ -88,20 +88,20 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 .form-filtro ::-webkit-scrollbar-thumb { background: #72aab0; -webkit-border-radius: 1ex;}
 .form-filtro ::-webkit-scrollbar-corner { background: #d3e7e8;}
 
-.produtos { background:url(/portal/images/capaPrograma/cocorico/bg-naslojas.png) repeat; padding:10px 0 0 10px; font-weight: bold; margin-bottom:10px;}
+.produtos { background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/bg-naslojas.png) repeat; padding:10px 0 0 10px; font-weight: bold; margin-bottom:10px;}
 .produtos h2 { margin:0; font-size:14px; line-height: 16px;  min-height: 16px !important; text-transform:uppercase; color:#6b757d; }
 .produtos .itens { float:right; background:none; width: 37.171%; }
 .produtos .itens .divider { color:#fff; float:left; }
 .produtos .itens { position:relative; }
 .produtos .itens p { min-height:16px; color:#70aab1; text-transform:uppercase; margin-bottom:0; margin-left:20px;  }
 .produtos .itens ul { position:absolute; right: 0; top:-40px; border:2px solid #fff; background:#e9f3f4;  }
-.produtos .itens li { color:#70aab1; text-align:center; padding:0 5px; cursor: pointer; background:url(/portal/images/capaPrograma/cocorico/pontilhado-branco.png) repeat-x; }
+.produtos .itens li { color:#70aab1; text-align:center; padding:0 5px; cursor: pointer; background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/pontilhado-branco.png) repeat-x; }
 .produtos .itens li.active { color:#6b757d; }
 
 .pagination .anterior:hover a, 
 .pagination .proximo:hover a, 
 .pagination .anterior a, 
-.pagination .proximo a {    background-image: url("/portal/images/capaPrograma/cocorico/seta-familia.png");}
+.pagination .proximo a {    background-image: url("http://cmais.com.br/portal/images/capaPrograma/cocorico/seta-familia.png");}
 .pagination ul > li > a:hover, 
 .pagination ul > .active > a, 
 .pagination ul > .active > span { color: #70aab1;}
@@ -112,18 +112,18 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 
 /* nas lojas interna */
 .voltar:hover,
-.voltar {    background: url("/portal/images/capaPrograma/cocorico/voltar-familia.png") no-repeat scroll 0 0 transparent;    color: #6b757d; }
-.divisao {    background: url("/portal/images/capaPrograma/cocorico/pontilhado-familia2.png") repeat-x center center;}
+.voltar {    background: url("http://cmais.com.br/portal/images/capaPrograma/cocorico/voltar-familia.png") no-repeat scroll 0 0 transparent;    color: #6b757d; }
+.divisao {    background: url("http://cmais.com.br/portal/images/capaPrograma/cocorico/pontilhado-familia2.png") repeat-x center center;}
 
 .tit-pagina.interna { color:#fff; background:#70aab1; width:92%; margin:0 20px 20px;  }
-.conteudo .alerta { color:#ec342f; text-transform:uppercase; height:41px; line-height: 41px; background:url(/portal/images/capaPrograma/cocorico/pontilhado-vermelho.png) repeat; }
-.conteudo .alerta span { width:23px; height:19px; background:url(/portal/images/capaPrograma/cocorico/ico-alerta.png) no-repeat; display: block; float:left; margin:10px 10px 10px 40px; }
+.conteudo .alerta { color:#ec342f; text-transform:uppercase; height:41px; line-height: 41px; background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/pontilhado-vermelho.png) repeat; }
+.conteudo .alerta span { width:23px; height:19px; background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/ico-alerta.png) no-repeat; display: block; float:left; margin:10px 10px 10px 40px; }
 .conteudo h3 {font-weight:bold; text-transform: uppercase; font-size:14px; line-height: 18px; margin-bottom:0;}
 .conteudo ul { margin-left:0; }
 .receita ul a { color:#f2722f; font-weight:bold; text-decoration:underline; }
 .zoom ul.span12 { margin:10px 0; }
 .zoom ul li { margin-bottom:10px; border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; background:#fff; display:block; height:119px; overflow:hidden; }
-.conteudo .redes { background-image:url(/portal/images/capaPrograma/cocorico/pontilhado-familia.png); height: 41px;    line-height: 41px;    text-transform: uppercase; }
+.conteudo .redes { background-image:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/pontilhado-familia.png); height: 41px;    line-height: 41px;    text-transform: uppercase; }
 #rede-face, #rede-twitter, #rede-google, #rede-pinterest  { float:left; margin-right:41px; }
 #rede-face { margin-top:4px; }
 #rede-twitter { margin-top:6px; }
@@ -132,11 +132,11 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 .conteudo .span6 h3 { margin-bottom:5px; }
 #produto-grid a,
 #produto-grid {cursor:none;}
-#tooltip.tool1 {position: absolute;   background:url(/portal/images/capaPrograma/cocorico/cursor.png) no-repeat;  width:130px;  height:50px;  font-size:0px!important;}
-.conteudo .site { background:#70aab1 url(/portal/images/capaPrograma/cocorico/ico-info.png) no-repeat 10px 2px; color:#e9f3f4; padding:0 10px 0 35px; margin-top: 20px; display: block; max-width: 115px; text-align:center; height:20px; line-height: 20px;  }
+#tooltip.tool1 {position: absolute;   background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/cursor.png) no-repeat;  width:130px;  height:50px;  font-size:0px!important;}
+.conteudo .site { background:#70aab1 url(http://cmais.com.br/portal/images/capaPrograma/cocorico/ico-info.png) no-repeat 10px 2px; color:#e9f3f4; padding:0 10px 0 35px; margin-top: 20px; display: block; max-width: 115px; text-align:center; height:20px; line-height: 20px;  }
 .conteudo .site:hover { text-decoration:none; }
 
-.modal-header .close { color:#ec342f; font-size:14px; font-weight:normal; opacity:1; filter: alpha(opacity=100); -moz-opacity:1; text-shadow:none; background:#fff url(/portal/images/capaPrograma/cocorico/ico-fechar.png) no-repeat right; padding:0 26px 0 10px; margin-top:0;  border-radius:5px 20px 20px 5px; -moz-border-radius: 5px 20px 20px 5px; -webkit-border-radius: 5px 20px 20px 5px; height:21px; line-height: 21px;}
+.modal-header .close { color:#ec342f; font-size:14px; font-weight:normal; opacity:1; filter: alpha(opacity=100); -moz-opacity:1; text-shadow:none; background:#fff url(http://cmais.com.br/portal/images/capaPrograma/cocorico/ico-fechar.png) no-repeat right; padding:0 26px 0 10px; margin-top:0;  border-radius:5px 20px 20px 5px; -moz-border-radius: 5px 20px 20px 5px; -webkit-border-radius: 5px 20px 20px 5px; height:21px; line-height: 21px;}
 .modal { width:980px; margin:-200px 0 0 -490px; border:none; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; position:absolute; }
 .modal,
 .modal-footer,
@@ -162,15 +162,15 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 /* /nas lojas */
 
 /* naweb */
-.ico-naweb{background: url(/portal/images/capaPrograma/cocorico/naweb-ico-redes.png) no-repeat;width:20px; height:20px;margin: 9px; float:left;}
+.ico-naweb{background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/naweb-ico-redes.png) no-repeat;width:20px; height:20px;margin: 9px; float:left;}
 #naweb .destaque{background-color:#f3f7f7;border-radius:8px;}
 #naweb .destaque h2{font-size: 14px;color: #77838B;font-weight: bold;line-height: 17px;padding: 10px;margin: 0; text-transform: uppercase;}
 #naweb .destaque .btn-inscreva-se {  border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
-#naweb .destaque .btn-inscreva-se .btn-destaque{color:#76b0b7;display: block;width:269px;height: 42px;float: left;background: url(/portal/images/capaPrograma/cocorico/naweb-pattern.jpg) repeat-x;line-height: 44px;font-size: 16px;font-weight: bold;text-align: center;text-transform: uppercase;}
+#naweb .destaque .btn-inscreva-se .btn-destaque{color:#76b0b7;display: block;width:269px;height: 42px;float: left;background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/naweb-pattern.jpg) repeat-x;line-height: 44px;font-size: 16px;font-weight: bold;text-align: center;text-transform: uppercase;}
 #naweb .destaque .btn-inscreva-se .btn-destaque:hover{text-decoration: none;}
-#naweb .destaque span{display:block; float:left;width:14px;height:42px; background:url(/portal/images/capaPrograma/cocorico/naweb-btn-canto-arredondado.png) no-repeat;float:left;}
+#naweb .destaque span{display:block; float:left;width:14px;height:42px; background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/naweb-btn-canto-arredondado.png) no-repeat;float:left;}
 #naweb .destaque span.last{background-position: right 0;}
-#naweb .instagram .topo {margin-bottom:3px; background: url(/portal/images/capaPrograma/cocorico/naweb-pattern2.jpg) repeat-x 0 bottom;height:43px;}
+#naweb .instagram .topo {margin-bottom:3px; background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/naweb-pattern2.jpg) repeat-x 0 bottom;height:43px;}
 #naweb .instagram .bac-blue{background-color: #f3f7f7; border-top-right-radius: 8px; border-top-left-radius: 8px;border: 1px solid #ffffff;}
 #naweb .instagram h3{margin:0; line-height:16px;font-size:14px; margin-top:8px;padding-bottom: 5px; }
 #naweb .instagram span{ font-weight:bold; color:#70aab1; margin-left:5px;}
@@ -188,7 +188,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 #agenda .lista h3{font-weight:bold; font-size:20px;text-transform: uppercase;line-height: 23px;margin: 0;color:#6b757d;}
 #agenda .lista hr{clear: both; margin: 0 0 10px 0; padding-top: 10px; border-bottom: 1px dashed #bbdadd;}
 #agenda .lista span{color:#70aab1; font-size:14px;font-weight:bold;text-transform:uppercase;}
-#agenda .acontece .topo {margin-bottom:3px; background: url(/portal/images/capaPrograma/cocorico/naweb-pattern2.jpg) repeat-x 0 bottom;height: 44px;}
+#agenda .acontece .topo {margin-bottom:3px; background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/naweb-pattern2.jpg) repeat-x 0 bottom;height: 44px;}
 #agenda .acontece .bac-blue{background-color: #e9f3f4; border-top-right-radius: 8px; border-top-left-radius: 8px;border: 1px solid #ffffff;}
 #agenda .acontece h3{position: relative;margin:0; line-height:16px;font-size:14px; margin-top:8px;padding-bottom: 6px; }
 #agenda .acontece span{font-size:11px; font-weight:bold; color:#70aab1;}
@@ -196,7 +196,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 #agenda .acontece .ico-cinema{background-position: 0 bottom; margin-top: -4px;}
 #agenda .acontece .seta-acontece{background-position: 0 -25px; top:21px; left:50%;}
 
-.acontece .topo {margin-bottom:3px; background: url(/portal/images/capaPrograma/cocorico/naweb-pattern2.jpg) repeat-x 0 bottom;height: 44px;}
+.acontece .topo {margin-bottom:3px; background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/naweb-pattern2.jpg) repeat-x 0 bottom;height: 44px;}
 .acontece .bac-blue{background-color: #e9f3f4; border-top-right-radius: 8px; border-top-left-radius: 8px;border: 1px solid #ffffff;}
 .acontece h3{position: relative;margin:0; line-height:16px;font-size:14px; margin-top:8px;padding-bottom: 6px; }
 .acontece span{font-size:11px; font-weight:bold; color:#70aab1;}
@@ -210,7 +210,7 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 #agenda .paginacao {margin: 0 0 20px 0;overflow: hidden;}
 #agenda .paginacao a {color:#70aab1;font-weight: bold;text-transform: uppercase;float: left;max-width: 103px;max-height: 40px;}
 #agenda .paginacao a:hover{text-decoration: none;}
-#agenda .paginacao a span {background: url("/portal/images/capaPrograma/cocorico/seta-familia.png") no-repeat;width: 17px;height: 31px;display: block;float: left;margin: 5px 10px 0 0;}
+#agenda .paginacao a span {background: url("http://cmais.com.br/portal/images/capaPrograma/cocorico/seta-familia.png") no-repeat;width: 17px;height: 31px;display: block;float: left;margin: 5px 10px 0 0;}
 #agenda .paginacao .proximo {position: relative;max-width: 70px;text-align: right;padding-right: 26px;}
 #agenda .paginacao .proximo, .paginacao .proximo span {float: right;}
 #agenda .paginacao .proximo span {position: absolute;top: 0;right: 0;margin-right: 0;background-position: -17px 0;}
@@ -224,13 +224,13 @@ input.search-query { min-width:230px; padding:0 10px; min-height:20px; line-heig
 #agenda .proximo.cinema{margin:0; line-height: 40px;}
 /*#blocoCarrossel .texto,
 #blocoCarrossel .base-btns*/
-.carousel { background: url(/portal/images/capaPrograma/cocorico/agenda-pattern-bloco.png); border-bottom-left-radius: 8px;  border-bottom-right-radius: 8px;}
+.carousel { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/agenda-pattern-bloco.png); border-bottom-left-radius: 8px;  border-bottom-right-radius: 8px;}
 #blocoCarrossel .texto { margin:10px; display: block;} 
 #blocoCarrossel .texto:hover { text-decoration:none; }
 #blocoCarrossel .texto h3{margin-top:2px;}
 #blocoCarrossel .base-btns{position:relative; padding: 30px 0 5px 0; }
 #blocoCarrossel .bloco-nav {margin:0 auto; overflow: hidden;}
-#blocoCarrossel .bloco-nav .btn-nav{float:left; margin-right:5px; background:url(/portal/images/capaPrograma/cocorico/agenda-btn-destaque.png) no-repeat right 0; width:13px; height:13px; display: block;}
+#blocoCarrossel .bloco-nav .btn-nav{float:left; margin-right:5px; background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/agenda-btn-destaque.png) no-repeat right 0; width:13px; height:13px; display: block;}
 #blocoCarrossel .bloco-nav .btn-nav.active{background-position: left 0;} 
 #blocoCarrossel .bloco-nav .btn-nav.last{margin-right:0px;}
 #blocoCarrossel .texto p { line-height:20px; }

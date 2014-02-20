@@ -10,7 +10,7 @@
 #carrossel-personagem .arrow span { height: 70px;  width: 46px; background-color:transparent; margin-top:100%; }
 #carrossel-personagem .slider .inner { margin:5px 0 5px 5px; border:none; }
 #carrossel-personagem .slider li { height:auto; width:auto; }
-.navbar-inverse .navbar-inner.topo-vila { /* background:  url("/portal/images/capaPrograma/vilasesamo2/bg-topo-vila-home.jpg") repeat-x */; height:55px; }
+.navbar-inverse .navbar-inner.topo-vila { /* background:  url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bg-topo-vila-home.jpg") repeat-x */; height:55px; }
 #content { top:51px; }
 /* /carrossel personagem */
 
@@ -19,7 +19,7 @@
 .mpc_ls_slides_thumbs.style01 { box-shadow: inset 0 1px 1px red;}
 .mpc_ls_ui_button.style02 { background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/icone-setas.png")  0 -1071px!important;  width: 46px!important; height: 70px!important; }
 .mpc_ls_next_slide.style02 { background-position:  0 -953px!important; }
-.divisa.tipo2 { background: url("/portal/images/capaPrograma/vilasesamo2/pattern-divisa2.jpg") repeat-x; height: 2px; margin:0 auto; }
+.divisa.tipo2 { background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-divisa2.jpg") repeat-x; height: 2px; margin:0 auto; }
 
 #carrossel-personagem .slider .inner.garibaldo { background:#ff6525 !important; }
 #carrossel-personagem .slider .inner.bel { background:#ffcccb !important; }

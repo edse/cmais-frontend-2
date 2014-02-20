@@ -1,5 +1,5 @@
-body { background:#efc32f url(/portal/images/hometv/qss/bg.jpg) repeat-x; }
-#topo-destaque { background: url(/portal/images/hometv/qss/bg-topo.jpg) no-repeat; height:144px; overflow:hidden; text-align:left; padding:0 20px; }
+body { background:#efc32f url(http://cmais.com.br/portal/images/hometv/qss/bg.jpg) repeat-x; }
+#topo-destaque { background: url(http://cmais.com.br/portal/images/hometv/qss/bg-topo.jpg) no-repeat; height:144px; overflow:hidden; text-align:left; padding:0 20px; }
 #topo-destaque img { float:left; }
 #topo-destaque .banner-topo { display:block; width:171px; height:74px; float:left; margin:45px 0 0 15px; }
 #miolo { margin-top:0 !important; }
@@ -9,8 +9,8 @@ body { background:#efc32f url(/portal/images/hometv/qss/bg.jpg) repeat-x; }
 #topo-destaque .redes div.t { margin-right:0; }
 #miolo,
 #capa-site { width:1032px; }
-#conteudo-pagina { float:left; width: 990px; padding:0 10px; background: url(/portal/images/hometv/qss/bg-conteudo.png) repeat;}
-#conteudo-pagina { *background: url(/portal/images/hometv/qss/bg-conteudo.gif) repeat;}
+#conteudo-pagina { float:left; width: 990px; padding:0 10px; background: url(http://cmais.com.br/portal/images/hometv/qss/bg-conteudo.png) repeat;}
+#conteudo-pagina { *background: url(http://cmais.com.br/portal/images/hometv/qss/bg-conteudo.gif) repeat;}
 .conteudo a,
 .box-padrao .titulos,
 .noticia p,

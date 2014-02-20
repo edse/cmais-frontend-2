@@ -80,7 +80,7 @@ hr{
   visibility: hidden; 
 }
 .contentWrapper{
-  background: url(/portal/quintal/images/pattern-bg-quintal.jpg) scroll repeat-x;
+  background: url(http://cmais.com.br/portal/quintal/images/pattern-bg-quintal.jpg) scroll repeat-x;
   /*background: url(../images/bg.jpg) no-repeat top;*/
   padding-bottom: 0 !important;
   width: 100%;
@@ -1089,14 +1089,14 @@ a.educativo span{float: left;margin: 74px 0 0 10px;}
 }
 .atividadesBox .palhaco-osorio,
 .atividadesBox.colorir.inter .palhaco-osorio,
-.atividadesBox.inter .palhaco-osorio{background:url(/portal/quintal/images/img-osorio.png) no-repeat; width: 368px; height: 599px;}
+.atividadesBox.inter .palhaco-osorio{background:url(http://cmais.com.br/portal/quintal/images/img-osorio.png) no-repeat; width: 368px; height: 599px;}
 
 .atividadesBox .palhaco-osorio{position:absolute; right: -57px;top: -11px;}
 .atividadesBox.inter .palhaco-osorio{position:absolute; right: 8px;top: 5px;}
 .atividadesBox.colorir .palhaco-osorio{position:absolute; right: -9px;top: -40px;}
 
-.atividadesBox.colorir .balao-dowload{width:163px; height: 104px;background: url(/portal/quintal/images/balao-paracolorir.png) no-repeat; position:absolute;top: -51px;right: 124px;z-index: 3}
-.atividadesBox.inter .balao-orientacao{display:block;background: url(/portal/quintal/images/balao-passos.png) no-repeat; width:267px;height:331px; position:absolute; right: 49px; top: 98px;}
+.atividadesBox.colorir .balao-dowload{width:163px; height: 104px;background: url(http://cmais.com.br/portal/quintal/images/balao-paracolorir.png) no-repeat; position:absolute;top: -51px;right: 124px;z-index: 3}
+.atividadesBox.inter .balao-orientacao{display:block;background: url(http://cmais.com.br/portal/quintal/images/balao-passos.png) no-repeat; width:267px;height:331px; position:absolute; right: 49px; top: 98px;}
 
 .atividadesBox.inter .galleria-container {overflow: visible;}
 .atividadesBox.inter .galleria-info-link{display:none;}
@@ -2658,7 +2658,7 @@ z-index: 503;
 .troca.tFilo:hover{background:  url(../images/btn-pergunte-over.png) no-repeat top left;}
 .troca.tCha{width: 242px;height: 81px;position: absolute;top: 2px;right: 36px;background:  url(../images/btn-charada.png) no-repeat top left;}
 .troca.tCha:hover{background:  url(../images/btn-charada-over.png) no-repeat top left;}
-#pFilomena {position: relative;z-index: 4000;clear: both;width: 700px;margin: -76px 0 0 50px;padding: 93px 0 0 230px;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-pergunteparafilomena.png) no-repeat;}
+#pFilomena {position: relative;z-index: 4000;clear: both;width: 700px;margin: -76px 0 0 50px;padding: 93px 0 0 230px;min-height: 251px;background: url(http://cmais.com.br/portal/quintal/images/charada-pergunte/img-pergunteparafilomena.png) no-repeat;}
 #pFilomena h2{font-size: 30px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin:0 0 5px 0;}
 #pFilomena label{clear:both;float:left; font-size:18px;font-weight:bold;}
 #pFilomena input{border: none;padding: 4px;background-color:#F5E700;margin: 0 0 0 10px;color:#333;}
@@ -2671,12 +2671,12 @@ z-index: 503;
 #pFilomena .t2message label span{font-weight:normal;}
 #pFilomena .t2message textarea{width:538px;height: 97px;border: none;padding: 4px;background-color:#F5E700;color:#333;}
 #pFilomena .t2message textarea#mensagem{width: 461px;}
-#pFilomena .btn-enviar{float: right;font-size: 24px;font-weight: bold;padding: 0px 11px;border-radius: 10px;margin:15px 34px 0 0;background:url(/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
+#pFilomena .btn-enviar{float: right;font-size: 24px;font-weight: bold;padding: 0px 11px;border-radius: 10px;margin:15px 34px 0 0;background:url(http://cmais.com.br/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
 #pFilomena label.error{color: red;position: absolute;left: 30px;bottom: 17px;margin: 0 0 0 0 !important;font-size: 18px;background: yellow;padding: 5px;}
 #pFilomena .nome.error, #pFilomena .email.error, #pFilomena .cidade.error,#pFilomena .estado.error, #pFilomena .mensagem.error{border:2px red solid !important;}
 #pFilomena span.verm{width:100px; height:50px; position: absolute; bottom:0px; left:0px;}
 
-#cha {position: relative;z-index: 4000;clear: both;width: 700px;margin: -76px 0 0 50px;padding: 93px 0 0 230px;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-chacomcharadas.png) no-repeat;}
+#cha {position: relative;z-index: 4000;clear: both;width: 700px;margin: -76px 0 0 50px;padding: 93px 0 0 230px;min-height: 251px;background: url(http://cmais.com.br/portal/quintal/images/charada-pergunte/img-chacomcharadas.png) no-repeat;}
 #cha h2{font-size: 30px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;margin:0 0 5px 0;}
 #cha label{clear:both;float:left; font-size:18px;font-weight:bold;}
 #cha input{border: none;padding: 4px;background-color:#F5E700;margin: 0 0 0 10px;color:#333;}
@@ -2689,35 +2689,35 @@ z-index: 503;
 #cha .t2message label span{font-weight:normal;}
 #cha .t2message textarea{width:538px;height: 97px;border: none;padding: 4px;background-color:#F5E700;color:#333;}
 #cha .t2message textarea#mensagem{width: 461px;}
-#cha .btn-enviar{float: right;font-size: 24px;font-weight: bold;padding: 0px 11px;border-radius: 10px;margin:15px 34px 0 0;background:url(/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
+#cha .btn-enviar{float: right;font-size: 24px;font-weight: bold;padding: 0px 11px;border-radius: 10px;margin:15px 34px 0 0;background:url(http://cmais.com.br/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
 #cha label.error{color: red;position: absolute;left: 30px;bottom: 17px;margin: 0 0 0 0 !important;font-size: 18px;background: yellow;padding: 5px;}
 #cha .nome.error, #cha .email.error, #cha .cidade.error,#cha .estado.error, #cha .mensagem.error{border:2px red solid !important;}
 #cha span.verm{width:100px; height:50px; position: absolute; bottom:0px; left:0px;}
 
-#respCha{clear: both;position: relative;width: 700px;margin: -76px 0 0 50px;padding: 20px 0 0 230px;z-index: 3000;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-chacomcharadas.png) no-repeat;}
+#respCha{clear: both;position: relative;width: 700px;margin: -76px 0 0 50px;padding: 20px 0 0 230px;z-index: 3000;min-height: 251px;background: url(http://cmais.com.br/portal/quintal/images/charada-pergunte/img-chacomcharadas.png) no-repeat;}
 #respCha p{margin-top: 17px;text-align:center;font-family: Arial, Helvetica, sans-serif;font-size: 24px !important;font-weight: bold !important;}
-#respCha .btn-enviar{text-decoration:none; float: right;font-size: 24px;font-weight: bold;padding: 2px 11px;border-radius: 10px;margin:25px 34px 0 0;background:url(/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
+#respCha .btn-enviar{text-decoration:none; float: right;font-size: 24px;font-weight: bold;padding: 2px 11px;border-radius: 10px;margin:25px 34px 0 0;background:url(http://cmais.com.br/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
 #respCha .recebeu{  line-height: 29px;text-align: left;margin-top: 81px;text-align: center;width: 616px;}
 
-#respFilomena{clear: both;position: relative;width: 700px;margin: -76px 0 0 50px;padding: 20px 0 0 230px;z-index: 3000;min-height: 251px;background: url(/portal/quintal/images/charada-pergunte/img-pergunteparafilomena.png) no-repeat;}
+#respFilomena{clear: both;position: relative;width: 700px;margin: -76px 0 0 50px;padding: 20px 0 0 230px;z-index: 3000;min-height: 251px;background: url(http://cmais.com.br/portal/quintal/images/charada-pergunte/img-pergunteparafilomena.png) no-repeat;}
 #respFilomena p{margin-top: 17px;text-align:center;font-family: Arial, Helvetica, sans-serif;font-size: 24px !important;font-weight: bold !important;}
-#respFilomena .btn-enviar{text-decoration:none; float: right;font-size: 24px;font-weight: bold;padding: 2px 11px;border-radius: 10px;margin:25px 34px 0 0;background:url(/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
+#respFilomena .btn-enviar{text-decoration:none; float: right;font-size: 24px;font-weight: bold;padding: 2px 11px;border-radius: 10px;margin:25px 34px 0 0;background:url(http://cmais.com.br/portal/quintal/images/pattern-btn-pergunte.jpg); cursor: pointer;}
 #respFilomena .recebeu{  line-height: 29px;text-align: left;margin-top: 81px;text-align: center;width: 616px;}
 
 /* pergunte a filomena */
 /* itens background */
 .conteudoWrapper #back{position: relative; z-index: -1}
 .conteudoWrapper #back .pos{position:absolute;}
-#nuvem1{width:266px; height:212px; top:-25px; left:-280px;background: url(/portal/quintal/back-novo/img-bg-nuvem1.png) no-repeat; z-index:0;}
-#nuvem2{width:188px; height:155px; top:10px; right: -156px;background: url(/portal/quintal/back-novo/img-bg-nuvem2.png) no-repeat; z-index:0;}
-#nuvem3{width:260px; height:234px; top: -134px; left: 650px;background: url(/portal/quintal/back-novo/img-bg-nuvem1.png) no-repeat; z-index:0;}
-#balao{width:196px; height:348px; top:-109px; left:-191px;background: url(/portal/quintal/back-novo/img-bg-balao.png) no-repeat; z-index:0;}
-#bola{width:190px; height:174px;top: 293px;left: -220px;background: url(/portal/quintal/back-novo/img-bg-futebol.png) no-repeat; z-index:0;}
-#bau{width:441px; height:407px;top: 478px;left: -320px;background: url(/portal/quintal/back-novo/img-bg-bau.png) no-repeat; z-index:0;}
-#peteca{width:410px; height:464px;top: 307px;right: -301px; background: url(/portal/quintal/back-novo/img-bg-peteca-bola.png) no-repeat; z-index:0;}
-/*#balao{width:196px; height:348px; top:-109px; right:-4px;background: url(/portal/quintal/back-novo/img-bg-balao.png) no-repeat; z-index:0;} aniversario 2 anos*/
-/*#bola{width:190px; height:174px;top: 700px;right: -191px;background: url(/portal/quintal/back-novo/img-bg-futebol.png) no-repeat; z-index:0;}aniversario 2 anos*/
-/*#niver2anos{width: 503px;height: 959px;background: url(/portal/quintal/images/aniversario2anos/img_baloes-bau.png) no-repeat;z-index: 0;left: -391px;top: -68px;}aniversario 2 anos*/
+#nuvem1{width:266px; height:212px; top:-25px; left:-280px;background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-nuvem1.png) no-repeat; z-index:0;}
+#nuvem2{width:188px; height:155px; top:10px; right: -156px;background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-nuvem2.png) no-repeat; z-index:0;}
+#nuvem3{width:260px; height:234px; top: -134px; left: 650px;background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-nuvem1.png) no-repeat; z-index:0;}
+#balao{width:196px; height:348px; top:-109px; left:-191px;background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-balao.png) no-repeat; z-index:0;}
+#bola{width:190px; height:174px;top: 293px;left: -220px;background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-futebol.png) no-repeat; z-index:0;}
+#bau{width:441px; height:407px;top: 478px;left: -320px;background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-bau.png) no-repeat; z-index:0;}
+#peteca{width:410px; height:464px;top: 307px;right: -301px; background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-peteca-bola.png) no-repeat; z-index:0;}
+/*#balao{width:196px; height:348px; top:-109px; right:-4px;background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-balao.png) no-repeat; z-index:0;} aniversario 2 anos*/
+/*#bola{width:190px; height:174px;top: 700px;right: -191px;background: url(http://cmais.com.br/portal/quintal/back-novo/img-bg-futebol.png) no-repeat; z-index:0;}aniversario 2 anos*/
+/*#niver2anos{width: 503px;height: 959px;background: url(http://cmais.com.br/portal/quintal/images/aniversario2anos/img_baloes-bau.png) no-repeat;z-index: 0;left: -391px;top: -68px;}aniversario 2 anos*/
 
 /* itens background */
 /* horario */
@@ -2732,7 +2732,7 @@ z-index: 503;
 .tags li { background:#ffb912; color:#323232; font-size:15px; /* width:90px ;*/padding:5px; height:20px; margin-bottom:10px; border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; line-height:20px; height: 20px; text-align:center; display:block; font-size:15px;}
 .tags li a { line-height:20px; height: 20px; text-align:center; display:block; font-size:15px; }
 .tags li a:hover { text-decoration:none; }
-.destaque-promocao { background:url(/portal/quintal/images/destaque-peixonauta.png) no-repeat; width:925px; height:275px; display:block;  clear:both; text-align:center; margin-left:50px; z-index: 100; position:relative; margin-top:-15px; }
+.destaque-promocao { background:url(http://cmais.com.br/portal/quintal/images/destaque-peixonauta.png) no-repeat; width:925px; height:275px; display:block;  clear:both; text-align:center; margin-left:50px; z-index: 100; position:relative; margin-top:-15px; }
 .destaque-promocao:hover { text-decoration:none; }
 .destaque-promocao p { text-transform:uppercase; color:#fff; font-weight:bold; position:relative; width: 250px; top:65px; left:270px; }
 .destaque-promocao strong { clear:both; color:#bdda28; font-size:27px; display: block; margin:30px 0 10px 0;  }
@@ -2740,7 +2740,7 @@ z-index: 503;
 /* /jogo novo */
 
 /* ajuste bg ipad */
-body { background:url(/portal/quintal/images/bg-quintal.jpg) repeat-x !important; }
+body { background:url(http://cmais.com.br/portal/quintal/images/bg-quintal.jpg) repeat-x !important; }
 #guia-topo { background:none; }
 .content { width:990px; }
 .contentWrapper { background:none; display:block; }

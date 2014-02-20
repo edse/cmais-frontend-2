@@ -28,10 +28,10 @@ img{width:100%;}
 .pagination .paginacao{padding: 10px;line-height: 20px;height: 18px;border: 1px solid #E5E5E5;}
 .pagination ul > li > a, .pagination ul > li > span {border-left-width: 1px;margin-left: -1px; }
 .pagination ul li a i{opacity:0.50;}
-.icone-rede.email{width: 25px;height: 20px;background:url(/portal/images/capaPrograma/radarcultura/mail_24x18.png) no-repeat; opacity:0.50; }
+.icone-rede.email{width: 25px;height: 20px;background:url(http://cmais.com.br/portal/images/capaPrograma/radarcultura/mail_24x18.png) no-repeat; opacity:0.50; }
 
 /* modal */
-.btn-feedback {float:left; width: 36px; height:135px;background:url(/portal/images/capaPrograma/radarcultura/btn_opiniao.jpg);}
+.btn-feedback {float:left; width: 36px; height:135px;background:url(http://cmais.com.br/portal/images/capaPrograma/radarcultura/btn_opiniao.jpg);}
 /*.btn-feedback {position: fixed;top: 50%;right: -50px;background-color: #00b4d5;z-index: 10;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg); -o-transform: rotate(90deg);}*/
 .btn-feedback a{padding: 0px 20px; line-height: 40px; color:#FFFFFF; }
 .modal input[type="text"]{height:30px; padding: 0px 5px;}
@@ -90,7 +90,7 @@ img{width:100%;}
 .carousel-caption {position: absolute;left: auto ;right: 0;bottom: 0;padding: 20px 60px 20px 20px ;width: 290px;top: 0;color: white;}
 .carousel-caption h4{font-size:36px;font-weight:normal;line-height:36px;}
 .carousel-inner img{width:100%}
-.icone-rede{margin:12px; width:24px;height:30px;background: url(/portal/images/redes-topo.png) no-repeat }
+.icone-rede{margin:12px; width:24px;height:30px;background: url(http://cmais.com.br/portal/images/redes-topo.png) no-repeat }
 .icone-rede.twitter{background-position:-139px }
 .icone-rede.facebook{background-position:-111px; padding:0; }
 .icone-rede.googleplus{background-position:-55px }
@@ -175,7 +175,7 @@ img{width:100%;}
 
 /* ao vivo */
 #videoPlayer embed{width:495px;height:370px;}
-.falta-flash{padding:20px 0px 20px 110px; display:block;width:494px; height:111px;background: url(/portal/images/capaPrograma/radarcultura/flash.jpg) no-repeat;}
+.falta-flash{padding:20px 0px 20px 110px; display:block;width:494px; height:111px;background: url(http://cmais.com.br/portal/images/capaPrograma/radarcultura/flash.jpg) no-repeat;}
 .page-header.ao-vivo{border: none;margin: 20px 0 4px 0;color: black;padding: 0;}
 .page-header.ao-vivo h4{text-transform: none;font-size:24px;}
 
@@ -195,11 +195,11 @@ img{width:100%;}
 .btn-fechar-redes{top: 10px;right: 10px;position: absolute;}
 #modal-facebook{display: block;width: 577px;padding: 30px;}
 #modal-google{display: block;width: 588px;height: 306px;padding: 30px;}
-.ajuda-face{width:575px; height:319px; display: block; background: url(/portal/images/capaPrograma/radarcultura/tela-share-facebook.png) no-repeat;}
-.ajuda-google{width:584px; height:305px; display: block; background: url(/portal/images/capaPrograma/radarcultura/tela-share-google.png) no-repeat;}
-.ajuda-face.p{background: url(/portal/images/capaPrograma/radarcultura/tela-share-facebook_p.jpg) no-repeat;}
-.ajuda-google.p{background: url(/portal/images/capaPrograma/radarcultura/tela-share-google_p.jpg) no-repeat;}
-.avancar{position: absolute;bottom: 41px;right: 40px;width: 93px;height: 25px;background: url(/portal/images/capaPrograma/radarcultura/bt-avancar.png) no-repeat;text-indent: -999999px;}
+.ajuda-face{width:575px; height:319px; display: block; background: url(http://cmais.com.br/portal/images/capaPrograma/radarcultura/tela-share-facebook.png) no-repeat;}
+.ajuda-google{width:584px; height:305px; display: block; background: url(http://cmais.com.br/portal/images/capaPrograma/radarcultura/tela-share-google.png) no-repeat;}
+.ajuda-face.p{background: url(http://cmais.com.br/portal/images/capaPrograma/radarcultura/tela-share-facebook_p.jpg) no-repeat;}
+.ajuda-google.p{background: url(http://cmais.com.br/portal/images/capaPrograma/radarcultura/tela-share-google_p.jpg) no-repeat;}
+.avancar{position: absolute;bottom: 41px;right: 40px;width: 93px;height: 25px;background: url(http://cmais.com.br/portal/images/capaPrograma/radarcultura/bt-avancar.png) no-repeat;text-indent: -999999px;}
 #modal-google .avancar{bottom:47px; right:53px;} 
 .avancar:hover{background-position: left bottom;}
 /* content */
@@ -243,7 +243,7 @@ a.jp-unmute:hover,
 div.jp-volume-bar, 
 div.jp-volume-bar-value, 
 div.jp-video div.jp-video-play, 
-div.jp-video div.jp-video-play:hover {background-image: url(/portal/images/jplayerradar.png) !important;}
+div.jp-video div.jp-video-play:hover {background-image: url(http://cmais.com.br/portal/images/jplayerradar.png) !important;}
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #00b4d5 !important;}
 
 /*alteraçoes player fev2014*/

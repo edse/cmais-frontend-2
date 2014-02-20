@@ -1,6 +1,6 @@
-body{background: url(/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico.jpg)}
+body{background: url(http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico.jpg)}
 .novoDestaque .enunciado span,
-.novoNoAr .enunciado span {background: url(/portal/images/capaPrograma/cocoricoHome/ponta-destaque-new.png) no-repeat !important;}
+.novoNoAr .enunciado span {background: url(http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/ponta-destaque-new.png) no-repeat !important;}
 
 #miolo {margin: -3px 0 0px 0px}
 .banner {position:relative;margin: 0px 0 0px 42px}
@@ -14,7 +14,7 @@ body{background: url(/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico
 .box-padrao .capa-titulo{background-color: #279127 !important;}
 
 .abas li.ativo a, .abas li:hover a{background-color: #a7c127 !important;}
-.box-padrao .topo span {background: url(/portal/images/capaPrograma/cocoricoHome/ponta-destaque-new-2.png) no-repeat !important;}
+.box-padrao .topo span {background: url(http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/ponta-destaque-new-2.png) no-repeat !important;}
 #menu-portal .menu-aberto .abas li.ativo span, #menu-portal .menu-aberto .abas li:hover span {/portal/images/capaPrograma/cocoricoHome/ponta-destaque-new-2.png) no-repeat !important;} 
 
 .proximasAtracoes .proximasAtracoes-box p a,
@@ -31,7 +31,7 @@ body{background: url(/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico
 #menu-rodape .abas .arte-cultura.ativo span,
 #menu-rodape .abas .arte-cultura:hover span,
 #menu-rodape .abas .infantil.ativo span,
-#menu-rodape .abas .infantil:hover span{background: url(/portal/images/capaPrograma/cocoricoHome/img-verde.png) no-repeat !important;}
+#menu-rodape .abas .infantil:hover span{background: url(http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/img-verde.png) no-repeat !important;}
 
 #menu-rodape .blocos a,.cor-padrao,
 #menu-rodape .blocos .jornalismo a,.jornalismo,

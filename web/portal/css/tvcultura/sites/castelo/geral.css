@@ -1,5 +1,5 @@
 /*CASTELO EM BREVE */
-/*#capa-site {min-height: 895px;margin-top: 48px !important;width: 100%;background: url(/portal/images/capaPrograma/castelo/backCastelo.jpg) no-repeat center 0 #50579f !important;}*/
+/*#capa-site {min-height: 895px;margin-top: 48px !important;width: 100%;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/backCastelo.jpg) no-repeat center 0 #50579f !important;}*/
 
 @font-face {
     font-family: 'CrazyHaroldRegular';
@@ -13,9 +13,9 @@
 
 }
 
-body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) repeat-x;  }
+body { background:#f58220 url(http://cmais.com.br/portal/images/capaPrograma/castelo/bg-topo.jpg) repeat-x;  }
 
-.castelo .video{width:1040px; height: 561px; background:url(/portal/images/capaPrograma/castelo/base-video.png) no-repeat !important;position: relative;}
+.castelo .video{width:1040px; height: 561px; background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/base-video.png) no-repeat !important;position: relative;}
 .castelo .video iframe{margin: 51px -252px 0px 0px;width: 639px;height: 389px;}
 
 #rodape-portal .voltar-topo {*margin-left:-340px;}
@@ -27,7 +27,7 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 /*HOME*/
 #topo-portal{width:100% !important;margin: 0 !important; padding:0 !important;}
 #barra-site .redes {margin: 20px 0 0 7px;}
-#castelo {background:url(/portal/images/capaPrograma/castelo/img-home-bg-castelo.jpg) no-repeat center 0 #f58220 !important; height: 962px;min-width:1000px !important; width:100%}
+#castelo {background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-home-bg-castelo.jpg) no-repeat center 0 #f58220 !important; height: 962px;min-width:1000px !important; width:100%}
 
 .twitter{top: 0;left: 0;position: absolute;}
 .instangram{top: 0;left: 42px;position: absolute;}
@@ -50,88 +50,88 @@ body { background:#f58220 url(/portal/images/capaPrograma/castelo/bg-topo.jpg) r
 
 #castelo .capa{height:678px;position:relative;*margin-top:50px;}
 
-#castelo .balao{position:absolute;top: -2px;left: 165px;width:388px; height:375px; background:url(/portal/images/capaPrograma/castelo/img-home-porteiro-balao.png) no-repeat}
-#castelo .senha{cursor:pointer;position: absolute; top: 67px;left: 31px;width: 305px; height: 230px;background:url(/portal/images/capaPrograma/castelo/img-home-porteiro-balao-senha.png) no-repeat;}
+#castelo .balao{position:absolute;top: -2px;left: 165px;width:388px; height:375px; background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-home-porteiro-balao.png) no-repeat}
+#castelo .senha{cursor:pointer;position: absolute; top: 67px;left: 31px;width: 305px; height: 230px;background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-home-porteiro-balao-senha.png) no-repeat;}
 #castelo .pergunta{position: absolute;top: 66px;left: 55px;width: 260px;height: 240px;}
 #castelo .questao{font-family:"CrazyHaroldRegular",Arial, Helvetica, sans-serif;color:#005bac;font-size: 19px;line-height: 27px;}
 #castelo .resposta{font-family: "CrazyHaroldRegular",Arial, Helvetica, sans-serif;color: #E4222B;font-size: 36px;text-transform: uppercase;position: absolute;bottom: 44px;left: 4px;width: 276px;line-height: 1;letter-spacing: 12px;background: none;border: none;}
 #castelo .senha2{color: #005bac; font-size:22px;}
 #castelo .formsenha{position:relative;}
 #castelo .sublinhado{height: 5px; width:100%;position:absolute; bottom: 45px;left: 6px;}
-#castelo .sublinhado.a1{background: url(/portal/images/capaPrograma/castelo/su-300.gif) no-repeat;}
-#castelo .sublinhado.a2{background: url(/portal/images/capaPrograma/castelo/su-mau.gif) no-repeat;}
-#castelo .sublinhado.a3{background: url(/portal/images/capaPrograma/castelo/su-predio.gif) no-repeat;}
-#castelo .sublinhado.a4{background: url(/portal/images/capaPrograma/castelo/su-tibio.gif) no-repeat;}
-#castelo .sublinhado.a5{background: url(/portal/images/capaPrograma/castelo/su-assobio.gif) no-repeat;}
-#castelo .sublinhado.a6{background: url(/portal/images/capaPrograma/castelo/su-gato.gif) no-repeat;}
-#castelo .sublinhado.a7{background: url(/portal/images/capaPrograma/castelo/su-pizza.gif) no-repeat;}
+#castelo .sublinhado.a1{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/su-300.gif) no-repeat;}
+#castelo .sublinhado.a2{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/su-mau.gif) no-repeat;}
+#castelo .sublinhado.a3{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/su-predio.gif) no-repeat;}
+#castelo .sublinhado.a4{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/su-tibio.gif) no-repeat;}
+#castelo .sublinhado.a5{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/su-assobio.gif) no-repeat;}
+#castelo .sublinhado.a6{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/su-gato.gif) no-repeat;}
+#castelo .sublinhado.a7{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/su-pizza.gif) no-repeat;}
   
 
 #castelo .porteiro{cursor: pointer;z-index:0;width:39px; height:78px;position:absolute;top: 334px;left: 556px;}
-#castelo .botao-porteiro-over{z-index:1;cursor:pointer ;width: 139px;height: 162px;position: absolute;top: 266px;left: 506px;background: url(/portal/images/capaPrograma/castelo/porteiro-over.png) no-repeat;}
-#castelo .porteiro-over{z-index:1;cursor:pointer ;width: 139px;height: 162px;position: absolute;top: 266px;left: 506px;background: url(/portal/images/capaPrograma/castelo/porteiro-over.png) no-repeat;}
+#castelo .botao-porteiro-over{z-index:1;cursor:pointer ;width: 139px;height: 162px;position: absolute;top: 266px;left: 506px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/porteiro-over.png) no-repeat;}
+#castelo .porteiro-over{z-index:1;cursor:pointer ;width: 139px;height: 162px;position: absolute;top: 266px;left: 506px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/porteiro-over.png) no-repeat;}
 
 #castelo .botao-dr-abobrinha{z-index:0;cursor:pointer ;width:121px; height:207px;position:absolute;top: 359px;left: 213px;}
-#castelo .gif-dr-abobrinha{position: absolute;z-index:-1;top: 296px;left: 334px;width: 103px;height: 87px; background:url(/portal/images/capaPrograma/castelo/gif-drabobrinha.gif) no-repeat;}
-#castelo .botao-dr-abobrinha-over{z-index:1;width:202px; height:207px;position:absolute;top: 356px;left: 131px;background: url(/portal/images/capaPrograma/castelo/dr-abobrinha-over.png) no-repeat;}
-#castelo .gif-porteiro{position:absolute;top: 337px;left: 516px;width: 50px; height: 50px; background:url(/portal/images/capaPrograma/castelo/gif-porteiro.gif) no-repeat; }
-#castelo .gif-abre{position:absolute;top: 286px; left: 478px;width: 291px; height: 181px; background:url(/portal/images/capaPrograma/castelo/img-home-porteiro-balao-sucesso.png) no-repeat;}
+#castelo .gif-dr-abobrinha{position: absolute;z-index:-1;top: 296px;left: 334px;width: 103px;height: 87px; background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-drabobrinha.gif) no-repeat;}
+#castelo .botao-dr-abobrinha-over{z-index:1;width:202px; height:207px;position:absolute;top: 356px;left: 131px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/dr-abobrinha-over.png) no-repeat;}
+#castelo .gif-porteiro{position:absolute;top: 337px;left: 516px;width: 50px; height: 50px; background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-porteiro.gif) no-repeat; }
+#castelo .gif-abre{position:absolute;top: 286px; left: 478px;width: 291px; height: 181px; background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-home-porteiro-balao-sucesso.png) no-repeat;}
   
 .navegacao{position:absolute;width:77px; /*height:928px;*/ bottom:30px; left:0px;}
-.navegacao .bolinhas{position:absolute; padding-left:26px; width:316px; height: 31px;background: url(/portal/images/capaPrograma/castelo/img-navegacao-telas.png) no-repeat 0 1px; bottom:0px;left:331px; z-index: 0; }
+.navegacao .bolinhas{position:absolute; padding-left:26px; width:316px; height: 31px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-telas.png) no-repeat 0 1px; bottom:0px;left:331px; z-index: 0; }
 .navegacao .bolinhas img.on{margin:6px 0 0 6px;}
 .navegacao .bolinhas img.off{margin:1px 0 0 6px !important;}
-.navegacao .thumbs{position:absolute; height:77px; width:928px; background:url(/portal/images/capaPrograma/castelo/img-navegacao-telas-over.png) no-repeat;bottom:0px; left:7px; z-index: 10;}
+.navegacao .thumbs{position:absolute; height:77px; width:928px; background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-telas-over.png) no-repeat;bottom:0px; left:7px; z-index: 10;}
 .navegacao .thumbs a{display:block;width:91px;height:55px;float:left;margin:11px 0 0 11px;}
 
-.navegacao .thumbs a.home2{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb1.jpg) no-repeat;}
-.navegacao .thumbs a.hall{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb2.jpg) no-repeat;}
-.navegacao .thumbs a.arvore{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb3.jpg) no-repeat;}
-.navegacao .thumbs a.nino{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb4.jpg) no-repeat;}
-.navegacao .thumbs a.sala-de-musica{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb5.jpg) no-repeat;}
-.navegacao .thumbs a.arquivo{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb6.jpg) no-repeat;}
-.navegacao .thumbs a.cozinha{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb7.jpg) no-repeat;}
-.navegacao .thumbs a.laboratorio{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb8.jpg) no-repeat;}
-.navegacao .thumbs a.morgana{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb9.jpg) no-repeat;}
+.navegacao .thumbs a.home2{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb1.jpg) no-repeat;}
+.navegacao .thumbs a.hall{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb2.jpg) no-repeat;}
+.navegacao .thumbs a.arvore{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb3.jpg) no-repeat;}
+.navegacao .thumbs a.nino{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb4.jpg) no-repeat;}
+.navegacao .thumbs a.sala-de-musica{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb5.jpg) no-repeat;}
+.navegacao .thumbs a.arquivo{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb6.jpg) no-repeat;}
+.navegacao .thumbs a.cozinha{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb7.jpg) no-repeat;}
+.navegacao .thumbs a.laboratorio{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb8.jpg) no-repeat;}
+.navegacao .thumbs a.morgana{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb9.jpg) no-repeat;}
 
-.navegacao .thumbs a.home2:hover{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb1over.jpg) no-repeat;}
-.navegacao .thumbs a.hall:hover{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb2over.jpg) no-repeat;}
-.navegacao .thumbs a.arvore:hover{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb3over.jpg) no-repeat;}
-.navegacao .thumbs a.nino:hover{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb4over.jpg) no-repeat;}
-.navegacao .thumbs a.sala-de-musica:hover{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb5over.jpg) no-repeat;}
-.navegacao .thumbs a.arquivo:hover{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb6over.jpg) no-repeat;}
-.navegacao .thumbs a.cozinha:hover{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb7over.jpg) no-repeat;}
-.navegacao .thumbs a.laboratorio:hover{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb8over.jpg) no-repeat;}
-.navegacao .thumbs a.morgana:hover{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb9over.jpg) no-repeat;}
+.navegacao .thumbs a.home2:hover{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb1over.jpg) no-repeat;}
+.navegacao .thumbs a.hall:hover{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb2over.jpg) no-repeat;}
+.navegacao .thumbs a.arvore:hover{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb3over.jpg) no-repeat;}
+.navegacao .thumbs a.nino:hover{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb4over.jpg) no-repeat;}
+.navegacao .thumbs a.sala-de-musica:hover{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb5over.jpg) no-repeat;}
+.navegacao .thumbs a.arquivo:hover{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb6over.jpg) no-repeat;}
+.navegacao .thumbs a.cozinha:hover{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb7over.jpg) no-repeat;}
+.navegacao .thumbs a.laboratorio:hover{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb8over.jpg) no-repeat;}
+.navegacao .thumbs a.morgana:hover{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb9over.jpg) no-repeat;}
 
 .navegacao .thumbs a.selected{border: 2px solid #ffe282;margin: 9px 0px 10px 8px;}
-.navegacao .thumbs a.home2.selected{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb1over.jpg) no-repeat;}
-.navegacao .thumbs a.hall.selected{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb2over.jpg) no-repeat;}
-.navegacao .thumbs a.arvore.selected{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb3over.jpg) no-repeat;}
-.navegacao .thumbs a.nino.selected{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb4over.jpg) no-repeat;}
-.navegacao .thumbs a.sala-de-musica.selected{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb5over.jpg) no-repeat;}
-.navegacao .thumbs a.arquivo.selected{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb6over.jpg) no-repeat;}
-.navegacao .thumbs a.cozinha.selected{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb7over.jpg) no-repeat;}
-.navegacao .thumbs a.laboratorio.selected{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb8over.jpg) no-repeat;}
-.navegacao .thumbs a.morgana.selected{background: url(/portal/images/capaPrograma/castelo/img-navegacao-thumb9over.jpg) no-repeat;}
+.navegacao .thumbs a.home2.selected{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb1over.jpg) no-repeat;}
+.navegacao .thumbs a.hall.selected{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb2over.jpg) no-repeat;}
+.navegacao .thumbs a.arvore.selected{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb3over.jpg) no-repeat;}
+.navegacao .thumbs a.nino.selected{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb4over.jpg) no-repeat;}
+.navegacao .thumbs a.sala-de-musica.selected{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb5over.jpg) no-repeat;}
+.navegacao .thumbs a.arquivo.selected{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb6over.jpg) no-repeat;}
+.navegacao .thumbs a.cozinha.selected{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb7over.jpg) no-repeat;}
+.navegacao .thumbs a.laboratorio.selected{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb8over.jpg) no-repeat;}
+.navegacao .thumbs a.morgana.selected{background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-navegacao-thumb9over.jpg) no-repeat;}
 /*/HOME*/
 
 
 /*MODAL*/
 /*.modal{width:100%; height: 961px;*height: 1010px;background:red;position: absolute; top:50px; left:0;}*/
-#fancybox-wrap {top:314px !important;width: 747px !important;display: block;height: 606px !important;background: url(/portal/images/capaPrograma/castelo/fundo-modal.png) no-repeat !important;}
+#fancybox-wrap {top:314px !important;width: 747px !important;display: block;height: 606px !important;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/fundo-modal.png) no-repeat !important;}
 .fancybox-bg{background: none !important}
 #fancybox-content {border:none !important; width: 727px !important;height: 544px !important;}
 #fancybox-content iframe{width:720px !important}
 .display{display:none!important;}
-#fancybox-close {top: -31px !important;right: 1px !important;width: 106px!important;background:url(/portal/images/capaPrograma/castelo/img-fechar-layer.gif) no-repeat !important; height: 26px !important;}
+#fancybox-close {top: -31px !important;right: 1px !important;width: 106px!important;background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-fechar-layer.gif) no-repeat !important; height: 26px !important;}
 #fancybox-outer {position: relative;width: 712px!important;height: 543px !important;margin: 49px 6px 0px 6px;background: none !important;}
 .comentario-fb {background: none !important;}
 #fancybox-title{display:none !important;}
 
 .base{width: 675px !important;margin-left: 20px;}
 .claro .capa-titulo {background: #F63;height: 22px;width: 634px;float: left;margin-top: 5px;margin-bottom: 10px;padding-left: 10px;}
-.topo span {background: url(/portal/images/capaPrograma/castelo/aba-titulo.png) no-repeat -15px 0;width: 15px;height: 27px;float: left;position: relative;}
+.topo span {background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/aba-titulo.png) no-repeat -15px 0;width: 15px;height: 27px;float: left;position: relative;}
 .container .comentario-fb{background: #ffe282; width: 610px;margin-left:23px;}
 .container .box-compartilhar {width: 100%;}
 .box-interna {text-align: left;margin-bottom: 20px;width: 660px !important;}

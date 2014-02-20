@@ -419,14 +419,14 @@ body { background:#0ab015 url(http://cmais.com.br/portal/quintal/images/bg-quint
 #destaque #form-contato label.error{ position: absolute;left:0; bottom: 0;color: #e4f527;background-color: #cb35a4;width: 325px;text-align: center;text-transform: uppercase; margin-left:35px; font-weight:bold;}
 #destaque #form-contato label.error.checked{display:none!important;}
 
-.btn-formats {margin:10px 20px 0px 0px; background: url(/portal/quintal/images/bg-amarelo.png) repeat;height: 45px;line-height: 45px;text-transform: uppercase;width: 216px;text-align: center;font-size: 20px; float:left!important;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;}
+.btn-formats {margin:10px 20px 0px 0px; background: url(http://cmais.com.br/portal/quintal/images/bg-amarelo.png) repeat;height: 45px;line-height: 45px;text-transform: uppercase;width: 216px;text-align: center;font-size: 20px; float:left!important;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;}
 .sem-margem-r{margin-right:0px;}
 .sem-margem-l{margin-left:0px;}
 .box-formatos-papel{display: block; overflow: hidden; margin:0 auto;width:735px;}
 
 
 /* home enquete*/
-#destaque-enquete { width:960px; height:330px; background:url(/portal/quintal/images/enquete/enquete-quintal.png) no-repeat; position:relative; margin:0 auto;}
+#destaque-enquete { width:960px; height:330px; background:url(http://cmais.com.br/portal/quintal/images/enquete/enquete-quintal.png) no-repeat; position:relative; margin:0 auto;}
 #destaque-enquete .col-esq{ text-align: center;width: 360px;height: 100%;position: absolute;}
 #destaque-enquete .col-esq img{width: 85%; margin-top: 5%;}
 #destaque-enquete .col-esq iframe{display: block;top: 12%;position: absolute;left: 7%;}

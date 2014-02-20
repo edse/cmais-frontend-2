@@ -149,7 +149,7 @@ a:hover { text-decoration:underline; }
 background: ur;
 padding: 0 0 0px 36px;
 margin-bottom: -3px;
-background: url(/portal/images/bg-tudo3a.jpg) repeat-x;
+background: url(http://cmais.com.br/portal/images/bg-tudo3a.jpg) repeat-x;
 }
 #topo-cmais {
 width: 970px;
@@ -164,8 +164,8 @@ z-index: 10000;
 #menu-portal-1 .fb-like iframe{margin:6px 0 0 4px;}
 
 #menu-portal-1  #redesnovo{width:207px; height: 32px; float:right;}
-  #redesnovo .redesA{width:24px; height:30px; display:block; float:left;background:url(/portal/images/redes-topo.png) no-repeat;margin:0 0 0 3px;}
-  #redesnovo .redesB{width:17px; height:30px; display:block; float:left;background:url(/portal/images/redes-topo.png) no-repeat;}
+  #redesnovo .redesA{width:24px; height:30px; display:block; float:left;background:url(http://cmais.com.br/portal/images/redes-topo.png) no-repeat;margin:0 0 0 3px;}
+  #redesnovo .redesB{width:17px; height:30px; display:block; float:left;background:url(http://cmais.com.br/portal/images/redes-topo.png) no-repeat;}
   #redesnovo #controle-remoto{background-position: -5px 0;}
   #redesnovo #apple{background-position: -26px 0;}
   #redesnovo #google{background-position: -54px 0;}
@@ -239,7 +239,7 @@ z-index: 10000;
 #menu-portal-1 #menu-portal .m-radio .bg-Ratimbum { width:883px; height: 333px;}
 
 #menu-portal-2{width:887px; height:32px;position:absolute;left: 81px;top:-1px;z-index:1000}
-#menu-portal-2 h1 a{margin:7px 5px 5px 5px;text-indent:-9999px;width:94px; height:23px; display:block; float:left;background:url(/portal/images/logo-cmais-topo-novo.png) no-repeat;}
+#menu-portal-2 h1 a{margin:7px 5px 5px 5px;text-indent:-9999px;width:94px; height:23px; display:block; float:left;background:url(http://cmais.com.br/portal/images/logo-cmais-topo-novo.png) no-repeat;}
 #menu-portal-2 ul.abas{width:622px; float:left;background: none;}
 #menu-portal-2 li{float:left; width:auto; height: auto;}
 
@@ -248,7 +248,7 @@ z-index: 10000;
 
 #menu-portal-2 .busca-portal a { width:220px;}  
 #menu-portal-2 .busca-portal { float:right; margin:6px -4px 0 0;}
-#menu-portal-2 .busca-portal .ipt-txt { width:97px; float:left; height:22px; line-height:25px; font-size:12px; color:#333; padding-left:30px; border:1px solid #c5c5c5; border-right:none; background:#fff url(/portal/images/ico-lupa.png) no-repeat 6px 3px; }
+#menu-portal-2 .busca-portal .ipt-txt { width:97px; float:left; height:22px; line-height:25px; font-size:12px; color:#333; padding-left:30px; border:1px solid #c5c5c5; border-right:none; background:#fff url(http://cmais.com.br/portal/images/ico-lupa.png) no-repeat 6px 3px; }
 #menu-portal-2 .busca-portal .ipt-submit { width:30px;padding:3px 0 0 0;float:left; border:none; border-left:none; height:26px; background:#ff6633; color:#fff; font:bold 12px arial; padding-bottom:2px; }
 
 #facebook-cultura{width:113px;height:10px;float:left;}
@@ -265,11 +265,11 @@ z-index: 10000;
 #barra-site .redes .curtir { width:238px; float:left; margin-left:0; text-align: left; }
 #barra-site .redes ul { width:112px; float:left; }
 #barra-site .redes ul li { width:24px; float:left; margin-right:4px; }
-#barra-site .redes ul li a { background:url(/portal/images/ico-compartilhar.png) no-repeat 0 -208px; width:24px; height:24px; text-indent:-99999px; display:block; }
+#barra-site .redes ul li a { background:url(http://cmais.com.br/portal/images/ico-compartilhar.png) no-repeat 0 -208px; width:24px; height:24px; text-indent:-99999px; display:block; }
 #barra-site .redes ul li .ytb { background-position:0 -232px; }
 #barra-site .redes ul li .fb { background-position:0 -256px; }
 #barra-site .redes ul li .rss { background-position:0 -280px; }
-#barra-site .redes ul li .orkut {background:url(/portal/images/ico-orkut2.png) no-repeat;}
+#barra-site .redes ul li .orkut {background:url(http://cmais.com.br/portal/images/ico-orkut2.png) no-repeat;}
 #barra-site .fb_iframe_widget iframe {width:150px;}
 #barra-site .twitter-share-button {padding-bottom:2px; float:left;}
 .fbSendButtonLight .fbIcon { background-position:-2px -47px !important; }
@@ -291,7 +291,7 @@ z-index: 10000;
 .menu-interna li:hover {background-color:#333;}
 .menu-interna li.ativo a,
 .menu-interna li:hover a { color:#fff; text-decoration:none; }
-.menu-interna li span { width:8px; height:8px; background:url(/portal/images/ico-drop2.png) no-repeat 0 -8px; position:absolute; right:5px; top:7px; }
+.menu-interna li span { width:8px; height:8px; background:url(http://cmais.com.br/portal/images/ico-drop2.png) no-repeat 0 -8px; position:absolute; right:5px; top:7px; }
 .menu-interna li.ativo span,
 .menu-interna li:hover span { background-position:0 -136px; }
 /* /menu-interna */
@@ -312,12 +312,12 @@ z-index: 10000;
 .submenu-interna ul {width:120px;}
 .m-redes li {height:24px; margin-bottom:5px;}
 .m-redes li a:hover,
-.m-redes li a { background:url(/portal/images/ico-compartilhar.png) no-repeat 0 -256px;; height:24px; line-height:24px; padding-left:29px;}
+.m-redes li a { background:url(http://cmais.com.br/portal/images/ico-compartilhar.png) no-repeat 0 -256px;; height:24px; line-height:24px; padding-left:29px;}
 .m-redes li .twt:hover,
 .m-redes li .twt {background-position:0 -208px; }
 .m-redes li .ytb:hover,
 .m-redes li .ytb {background-position:0 -232px; }
-.m-redes li a { _background-image:url(/portal/images/ico-compartilhar.gif);}
+.m-redes li a { _background-image:url(http://cmais.com.br/portal/images/ico-compartilhar.gif);}
 ul .m-sobre .submenu-interna,
 ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 /* /submenu-interna */
@@ -348,12 +348,12 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 .box-compartilhar {  float:left; height:30px; line-height:25px; background:#333; margin-bottom:20px; }
 .box-compartilhar a { color:#fff; font-weight:bold; font-size:12px;}
 .box-compartilhar .face { float:left; margin:5px 0 0 10px; height:21px; display:block; width: auto;}
-.box-compartilhar .face a { background:url(/portal/images/ico-fb.png) no-repeat 0 8px; padding-left:20px; display:block; }
+.box-compartilhar .face a { background:url(http://cmais.com.br/portal/images/ico-fb.png) no-repeat 0 8px; padding-left:20px; display:block; }
 .box-compartilhar .face .google {display:block; float: left; margin-right: 15px;}
 .box-compartilhar .face .fb { display:block; float: left; margin-right: 0px; }
 .box-compartilhar .face .twt {display:block; float: left; text-align: left;}
 
-.box-compartilhar .comentar span { background:url(/portal/images/ico-comentar.png) no-repeat; float:left; margin:0 5px 0 0; width:22px; height:16px; }
+.box-compartilhar .comentar span { background:url(http://cmais.com.br/portal/images/ico-comentar.png) no-repeat; float:left; margin:0 5px 0 0; width:22px; height:16px; }
 .box-compartilhar .comentar { display:block; float:left; padding-right:5px; margin:8px 5px 0 5px; line-height:14px; }
 .cp-pq .btn-compartilhar { margin-right:0; }
 .cp-peq .btn-compartilhar p { margin-top:0;  }
@@ -362,10 +362,10 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 .fundo { background:#fff; }
 .btn-compartilhar { width:auto; float:right; }
 .btn-compartilhar p { color:#fff; border-right:1px dotted #fff; padding-right:5px; height:22px; line-height:22px; margin-top:5px; font-size:12px; font-weight:bold; width:74px; float:left }
-.btn-compartilhar a { background:url(/portal/images/ico-compartilhar.png) no-repeat; width:16px; height:16px; float:left; margin:7px 0 0 5px; }
+.btn-compartilhar a { background:url(http://cmais.com.br/portal/images/ico-compartilhar.png) no-repeat; width:16px; height:16px; float:left; margin:7px 0 0 5px; }
 .btn-compartilhar .fb { background-position: 0 -161px; }
 .btn-compartilhar .twt { background-position: 0 -145px;}
-.btn-compartilhar .print { background:url(/portal/images/print.png) no-repeat; width:16px; height:13px; float:left; margin-top:9px;}
+.btn-compartilhar .print { background:url(http://cmais.com.br/portal/images/print.png) no-repeat; width:16px; height:13px; float:left; margin-top:9px;}
 .box-compartilhar .btn-compartilhar {width:127px;}
 .cp-sembg a { color:#333 }
 .cp-sembg .compartilhar {border-color:#ff6633;}
@@ -376,7 +376,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 /******** BOX PADRAO ********/
 .box-padrao { overflow:hidden; text-align:left; }
 .box-padrao a { line-height:20px;}
-.box-padrao .rss { background:url(/portal/images/rss.png) no-repeat; width:19px; height:20px; display:block; float:right; margin:3px 3px 0 0; display:none; }
+.box-padrao .rss { background:url(http://cmais.com.br/portal/images/rss.png) no-repeat; width:19px; height:20px; display:block; float:right; margin:3px 3px 0 0; display:none; }
 .box-padrao .img-90x54 { width:90px; margin:5px 10px 0 0; float:left; }
 .box-padrao .txt-padrao { width:auto;   }
 .box-padrao li { margin-top:10px; border-bottom:1px dotted #666; padding-bottom:10px; width:310px; overflow:hidden; }
@@ -389,7 +389,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 .box-padrao .sem-borda li { border:none; }
 .box-padrao .conteudo { margin-top:0; }
 .box-padrao img { margin-bottom:10px; }
-.box-padrao .btn { background:url(/portal/images/btn-paginacao.png) no-repeat 0 -90px; width:16px; height:16px; display:block; float:right; margin:3px 5px 0 0; }
+.box-padrao .btn { background:url(http://cmais.com.br/portal/images/btn-paginacao.png) no-repeat 0 -90px; width:16px; height:16px; display:block; float:right; margin:3px 5px 0 0; }
 .box-padrao .proximo {background-position:0 -72px;}
 .box-padrao h5 a:hover { color:#ff6633; text-decoration:none; }
 .box-padrao h3 a { font-size:20px; line-height:24px; } 
@@ -463,7 +463,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 
 /**** topo geral ****/
 #barra-portal h1 { margin:9px 0 0 42px; float:left; width:120px; border-bottom:none; }
-#barra-portal h1 a { background:url(/portal/images/logoCMAIS.png) no-repeat; width:120px; height:30px; display:block; text-indent:-9999px; }
+#barra-portal h1 a { background:url(http://cmais.com.br/portal/images/logoCMAIS.png) no-repeat; width:120px; height:30px; display:block; text-indent:-9999px; }
 .topo-geral { height:48px; width:1054px; margin:0 auto; }
 .topo-geral .barra-menu { width:850px; float:left; }
 .topo-geral .barra-menu .busca-portal,
@@ -474,7 +474,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 #menu-portal { float:left; margin:15px 0 0 13px; width:686px; }
 #menu-portal li { float:left; width:auto; margin-right:3px; }
 #menu-portal li a { font-weight:bold; font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#fff; text-transform:uppercase;  padding:5px; text-decoration:none; position:relative; display:block; text-align:left; height:25px; }
-#menu-portal li a span { background:url(/portal/images/ico-drop.png) no-repeat; width:16px; height:16px; position:absolute; right:5px; top:5px;  }
+#menu-portal li a span { background:url(http://cmais.com.br/portal/images/ico-drop.png) no-repeat; width:16px; height:16px; position:absolute; right:5px; top:5px;  }
 #menu-portal li.ativo,
 #menu-portal li:hover{ background:#ff6633; }
 #menu-portal li.ativo span,
@@ -494,9 +494,9 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 /**** /menu portal ****/
 
 .barra-menu .busca-portal { float:right; margin-top:15px;}
-.barra-menu .busca-portal .ipt-txt { width:85px; float:left; height:22px; line-height:22px; padding-left:5px; font-size:12px; color:#333; padding-left:30px; border:1px solid #c5c5c5; border-right:none; background:#fff url(/portal/images/ico-lupa.png) no-repeat 6px 3px; }
+.barra-menu .busca-portal .ipt-txt { width:85px; float:left; height:22px; line-height:22px; padding-left:5px; font-size:12px; color:#333; padding-left:30px; border:1px solid #c5c5c5; border-right:none; background:#fff url(http://cmais.com.br/portal/images/ico-lupa.png) no-repeat 6px 3px; }
 .barra-menu .busca-portal .ipt-submit { width:31px; float:left; border:none; border-left:none; height:24px; background:#ff6633; color:#fff; font:bold 12px arial; padding-bottom:2px; }
-#menu-portal .menu-aberto { z-index:10; background:#fff url(/portal/images/bg-tudo.jpg) repeat-x; border:2px solid #ff6633; border-top:none; position:absolute; top:48px; }
+#menu-portal .menu-aberto { z-index:10; background:#fff url(http://cmais.com.br/portal/images/bg-tudo.jpg) repeat-x; border:2px solid #ff6633; border-top:none; position:absolute; top:48px; }
 #menu-portal .menu-aberto ul { margin:10px 10px 0 10px; }
 .menu-aberto a { color:#333;  }
 .barra-menu .tv { display:none; margin-left:-134px; }
@@ -523,13 +523,13 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 #menu-portal .menu-aberto .abas .neutro p { height:24px; line-height:24px;  background:#ebebeb; color:#333333; text-transform:uppercase; font-weight:bold; text-align:center; padding:0 10px; float:left; }  
 #menu-portal .menu-aberto .abas .neutro:hover p  { background:#ebebeb;}  
 #menu-portal .menu-aberto .abas .neutro:hover span,
-#menu-portal .menu-aberto .abas .neutro span {background:url(/portal/images/detalhe-menu.png) no-repeat; width:13px; height:24px; float:left}
+#menu-portal .menu-aberto .abas .neutro span {background:url(http://cmais.com.br/portal/images/detalhe-menu.png) no-repeat; width:13px; height:24px; float:left}
 #menu-portal .menu-aberto .abas { height:40px; }
 #menu-portal .menu-aberto .abas li { margin:0 0 0 67px; padding:0; height:34px; position:relative; }
 #menu-portal .menu-aberto .abas li a { text-transform:none; }
 #menu-portal .menu-aberto .abas li a span { background:none; position:absolute; bottom:0; width:12px; height:6px; }
 #menu-portal .menu-aberto .abas li.ativo span,
-#menu-portal .menu-aberto .abas li:hover span { background:url(/portal/images/bg-menu-rodape.png) no-repeat;  }
+#menu-portal .menu-aberto .abas li:hover span { background:url(http://cmais.com.br/portal/images/bg-menu-rodape.png) no-repeat;  }
 #menu-portal .menu-aberto .abas li.ativo a,
 #menu-portal .menu-aberto .abas li:hover a { background:#ff6633; }
 #menu-portal .box-logo {display:none;}
@@ -571,8 +571,8 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 #menu-portal .menu-aberto .bt-rtb a {color:#333; text-transform:uppercase; position:absolute; width:677px;}
 #radio-cocorico,
 #radio-rtb {height:316px;}
-#menu-portal .m-radio .bg-Cocorico { background:url(/portal/images/bg-radioCocorico.jpg) no-repeat; }
-#menu-portal .m-radio .bg-Ratimbum { background:url(/portal/images/bg-radioRatimbum.jpg) no-repeat; }
+#menu-portal .m-radio .bg-Cocorico { background:url(http://cmais.com.br/portal/images/bg-radioCocorico.jpg) no-repeat; }
+#menu-portal .m-radio .bg-Ratimbum { background:url(http://cmais.com.br/portal/images/bg-radioRatimbum.jpg) no-repeat; }
 #menu-portal .m-radio .bg-Cocorico,
 #menu-portal .m-radio .bg-Ratimbum { width:945px; height:333px; position:absolute; display:block;left:10px}
 #menu-portal .m-radio .abas li { margin:0 0 0 33px; } 
@@ -623,8 +623,8 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 #menu-portal .compartilhe { width:946px; margin-left:-609px; padding:10px; }
 #menu-portal .m-compartilhe a {height:15px;}
 #menu-portal .compartilhe li { width:145px; float:left; margin-left:80px; }
-#menu-portal .compartilhe a { background:url(/portal/images/ico-compartilhar.png) no-repeat; color:#333; height:23px; display:block; padding-left:50px; font-weight:bold; line-height:33px; float:left; text-transform:none; }
-#menu-portal .compartilhe a:hover { background:url(/portal/images/ico-compartilhar.png) no-repeat; text-decoration:underline; }
+#menu-portal .compartilhe a { background:url(http://cmais.com.br/portal/images/ico-compartilhar.png) no-repeat; color:#333; height:23px; display:block; padding-left:50px; font-weight:bold; line-height:33px; float:left; text-transform:none; }
+#menu-portal .compartilhe a:hover { background:url(http://cmais.com.br/portal/images/ico-compartilhar.png) no-repeat; text-decoration:underline; }
 #menu-portal .compartilhe .twitter:hover,
 #menu-portal .compartilhe .twitter { background-position:0 -33px; }
 #menu-portal .compartilhe .youtube:hover,
@@ -651,8 +651,8 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 /******** RODAPE-PORTAL ********/
 #rodape-portal { margin-top:50px; }
 .capa-voltar-topo {  width:970px; margin:0 auto; position:relative; z-index:10; margin-bottom:-15px; }
-.voltar-topo { display:block; overflow:hidden; width:96px; background:url(/portal/images/bg-voltar-topo.jpg) repeat-x; height:36px; padding:4px 0 0 4px; font-size:10px; color:#fff; line-height:16px; }
-.voltar-topo span { background:url(/portal/images/voltar-topo.png) no-repeat; width:16px; height:16px; display:block; float:left; }
+.voltar-topo { display:block; overflow:hidden; width:96px; background:url(http://cmais.com.br/portal/images/bg-voltar-topo.jpg) repeat-x; height:36px; padding:4px 0 0 4px; font-size:10px; color:#fff; line-height:16px; }
+.voltar-topo span { background:url(http://cmais.com.br/portal/images/voltar-topo.png) no-repeat; width:16px; height:16px; display:block; float:left; }
 .voltar-topo:hover { text-decoration:none; }
 .capa-rodape {  background:#333; border-top:2px solid #d3d3d3; height:470px; }
 #rodape-portal .box-rodape { width:1054px; padding-left:50px; margin:0 auto; height:470px; background:#333; position:relative;  }
@@ -667,8 +667,8 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 #rodape-portal .col-central ul { width:200px; float:left; }
 #rodape-portal .col-dir { width:120px; float:left; margin-top:20px; }
 #rodape-portal .col-dir a { text-indent:-9999px; display:block; }
-#rodape-portal .col-dir .fpa {  background:url(/portal/images/logo-fpa.png) no-repeat; width:105px; height:63px; margin-bottom:30px; }
-#rodape-portal .col-dir .cultura {  background:url(/portal/images/logo-cultura.png) no-repeat; width:61px ; height:61px; margin-left:17px; }
+#rodape-portal .col-dir .fpa {  background:url(http://cmais.com.br/portal/images/logo-fpa.png) no-repeat; width:105px; height:63px; margin-bottom:30px; }
+#rodape-portal .col-dir .cultura {  background:url(http://cmais.com.br/portal/images/logo-cultura.png) no-repeat; width:61px ; height:61px; margin-left:17px; }
 /*fxdfdsfd*/
 #rodape-portal .copyright {  margin:50px 0 20px 0; margin:0 auto; clear:both;position:absolute; right:400px; bottom:10px; }
 #rodape-portal .copyright p { font-size:10px; text-align:center; color:#fff !important; width:250px; margin:0 auto;  }
@@ -676,7 +676,7 @@ ul .m-sobre-o-programa .submenu-interna {min-width:126px;}
 /******** /RODAPE-PORTAL *********/
 
 /*exceção para o quintal*/
-.abas { background: url("/portal/images/bg-abas.png") repeat-x scroll 0 0 transparent; overflow: hidden; position: relative; z-index: 3;}
+.abas { background: url("http://cmais.com.br/portal/images/bg-abas.png") repeat-x scroll 0 0 transparent; overflow: hidden; position: relative; z-index: 3;}
 /* /exceção para o quintal*/
 
 body, html {border:none !important; margin: 0; padding:0; }
@@ -843,14 +843,14 @@ input[type=submit], input.enviar {cursor:pointer !important;}
 ::-webkit-scrollbar-corner { background: #fff;}
 
 /* box-dica de compra */
-#fundo-dica{position:relative; margin:20px auto; clear:both; margin: 0 auto;width: 990px; height: 332px; background: url(/portal/images/capaPrograma/dica-de-compra/box-home.png) no-repeat;}
+#fundo-dica{position:relative; margin:20px auto; clear:both; margin: 0 auto;width: 990px; height: 332px; background: url(http://cmais.com.br/portal/images/capaPrograma/dica-de-compra/box-home.png) no-repeat;}
 #item-dica{display:block; width:146px; height:135px; background:#e5e5e5;overflow: hidden; margin: 0 0 6px 0}
 #carrossel-dicas{width: 834px !important;top: 89px;left: 67px; text-align: left;}
-#fundo-dica.box-unico{left:-8px;width:331px; height: 327px; background: url(/portal/images/capaPrograma/dica-de-compra/box-content.png) no-repeat;}
+#fundo-dica.box-unico{left:-8px;width:331px; height: 327px; background: url(http://cmais.com.br/portal/images/capaPrograma/dica-de-compra/box-content.png) no-repeat;}
 #fundo-dica.box-unico #carrossel-dicas{width:146px !important;left: 88px;}
 #carrossel-dicas ul li{width:146px;margin-right:26px;}
-.jcarousel-prev{width:28px; height: 80px; background: url(/portal/images/capaPrograma/dica-de-compra/btn-box-dica.png) no-repeat left top; position:absolute; top:33px; left: -41px;cursor: pointer;}
-.jcarousel-next{width:28px; height: 80px; background: url(/portal/images/capaPrograma/dica-de-compra/btn-box-dica.png) no-repeat right top; position:absolute; top:33px; right:-41px;cursor: pointer;}
+.jcarousel-prev{width:28px; height: 80px; background: url(http://cmais.com.br/portal/images/capaPrograma/dica-de-compra/btn-box-dica.png) no-repeat left top; position:absolute; top:33px; left: -41px;cursor: pointer;}
+.jcarousel-next{width:28px; height: 80px; background: url(http://cmais.com.br/portal/images/capaPrograma/dica-de-compra/btn-box-dica.png) no-repeat right top; position:absolute; top:33px; right:-41px;cursor: pointer;}
 .jcarousel-prev:hover{background-position:left bottom;}
 .jcarousel-next:hover{background-position:right bottom;}
 #btn-produto{font-family: Arial, Helvetica, sans-serif; font-weight:bold;}

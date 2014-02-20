@@ -20,7 +20,7 @@
   *font-size: 12px;
 }
 #menu-portal .menu-aberto .abas li.ativo span, #menu-portal .menu-aberto .abas li:hover span {
-    *background: url("/portal/images/bg-menu-rodape.png") no-repeat scroll 0px 9px transparent;
+    *background: url("http://cmais.com.br/portal/images/bg-menu-rodape.png") no-repeat scroll 0px 9px transparent;
 }
 
 #barra-portal {

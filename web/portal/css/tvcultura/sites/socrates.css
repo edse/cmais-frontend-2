@@ -5,7 +5,7 @@
 #capa-site { margin-top:-193px !important; }
 #barra-site .topo-programa { *margin-top:-20px; }
 #chamada { margin-bottom:0; }
-body {  background:url(/portal/images/capaPrograma/socrates/bg.jpg) repeat-x;  }
+body {  background:url(http://cmais.com.br/portal/images/capaPrograma/socrates/bg.jpg) repeat-x;  }
 .bg-chamada { height:60px; z-index: 100; margin-bottom:48px;}
 #barra-site h3 {margin-top:25px;  font-size:35px; color:#fff; text-transform:uppercase; }
 /** /SOCRATES **/

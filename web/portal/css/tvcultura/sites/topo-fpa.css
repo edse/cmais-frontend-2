@@ -9,9 +9,9 @@
 /* /ESTRUTURAS BÁSICAS*/
 
 /* TOPO FPA */
-.seta-hover{z-index:10000;background: url("/portal/images/capaPrograma/fpa/ico-menu-seta_hover.png") no-repeat; width:6px; height:5px; display: block; position:absolute; bottom:-5px; left:50%; display: none;}
+.seta-hover{z-index:10000;background: url("http://cmais.com.br/portal/images/capaPrograma/fpa/ico-menu-seta_hover.png") no-repeat; width:6px; height:5px; display: block; position:absolute; bottom:-5px; left:50%; display: none;}
 .seta-hover.active{display:block !important;}
-.caret{position:absolute; bottom:8px; left: 48%; margin:0!important;  background: url("/portal/images/capaPrograma/fpa/ico-seta-down.gif") no-repeat; width: 10px; height: 4px; border:none;}
+.caret{position:absolute; bottom:8px; left: 48%; margin:0!important;  background: url("http://cmais.com.br/portal/images/capaPrograma/fpa/ico-seta-down.gif") no-repeat; width: 10px; height: 4px; border:none;}
 .caret.active{display:none;}
 .logo-fpa{*top:3px; z-index: 5000; margin:0 0 0 10px;}
 #fundo-topo{width:100%;position:relative;top:0px;left:0;z-index:1000;background-color: #ffffff;border-top:3px solid #696969;border-bottom:none;border-bottom:1px solid #d5d5d5;height: 50px;/*box-shadow: 0px 0px 10px #ccc, 0px 0px 10px #ccc*/;}
@@ -43,7 +43,7 @@
 #linha-do-tempo .navbar-fixed-top .container{position:relative;width: 980px;height:96px;}
 #linha-do-tempo .navbar-fixed-top h1,
 #linha-do-tempo .navbar-fixed-top a.decadas{font-family:"gotham_lightregular"; font-size:36px;color:#333;font-weight: normal;}
-#linha-do-tempo .navbar-fixed-top a.decadas{float: right;color: #666;background: url(/portal/images/capaPrograma/fpa/btn-fundo-anos.png) no-repeat;line-height: 57px;width: 55px;text-align: center;margin: 17px 20px 0 0;background-position: 0 -56px;}
+#linha-do-tempo .navbar-fixed-top a.decadas{float: right;color: #666;background: url(http://cmais.com.br/portal/images/capaPrograma/fpa/btn-fundo-anos.png) no-repeat;line-height: 57px;width: 55px;text-align: center;margin: 17px 20px 0 0;background-position: 0 -56px;}
 #linha-do-tempo .navbar-fixed-top a.decadas.active{background-position: 0 0;color:#FFF;background-position: 0 0;}
 #linha-do-tempo .navbar-fixed-top a.decadas:hover{color:#FFF; text-decoration: none; background-position: 0 0px; }
 /*#linha-do-tempo .navbar-fixed-top a.decadas.first{margin-right: 55px;padding: 0 0 0 3px;}*/
@@ -93,7 +93,7 @@
 .col-esquerda hr.vaga.desc.active{margin: 0 0 0 -16px;width: 110%;}
 .col-esquerda hr.vaga.hide{display:none;}
 .col-esquerda .vaga-aberta{font-size:14px; font-family: Arial, Helvetica, sans-serif; color:#4c4c4c;margin: 0;padding:15px; text-transform: none; font-weight:normal;}
-.col-esquerda .vaga-aberta .ico-trabalho{margin-right:10px;background: url(/portal/images/capaPrograma/fpa/icone-trabalhe-vaga.png) no-repeat 0 top; width:16px; height: 16px;display: block;float: left;}
+.col-esquerda .vaga-aberta .ico-trabalho{margin-right:10px;background: url(http://cmais.com.br/portal/images/capaPrograma/fpa/icone-trabalhe-vaga.png) no-repeat 0 top; width:16px; height: 16px;display: block;float: left;}
 .col-esquerda .vaga-aberta .ico-trabalho.ico-active{background-position: 0 bottom;}
 .col-esquerda .vaga-aberta .badge.vaga{background:#ffffff;color: #5C5C5C;text-shadow: none;}
 .col-esquerda .tit-desc{font-weight: bold;color: #1863B7; list-style: none !important;}

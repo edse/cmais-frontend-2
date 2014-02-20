@@ -1,8 +1,8 @@
 
 
-#capa-site {min-height: 895px;margin-top: 48px !important;width: 100%;background: url(/portal/images/capaPrograma/castelo/backCastelo.jpg) no-repeat center 0 #50579f !important;}
+#capa-site {min-height: 895px;margin-top: 48px !important;width: 100%;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/backCastelo.jpg) no-repeat center 0 #50579f !important;}
 	
-.castelo .video{width:1040px; height: 561px; background:url(/portal/images/capaPrograma/castelo/base-video.png) no-repeat !important;position: relative;}
+.castelo .video{width:1040px; height: 561px; background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/base-video.png) no-repeat !important;position: relative;}
 .castelo .video iframe{margin: 51px -252px 0px 0px;width: 639px;height: 389px;}
 
 #rodape-portal .voltar-topo {*margin-left:-340px;}

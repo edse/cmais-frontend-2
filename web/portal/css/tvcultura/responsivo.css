@@ -1,6 +1,6 @@
 /* topo*/
-.navbar-inverse .brand, .navbar-inverse .nav > li > a { background:url(/portal/images/capaPrograma/cocorico/logocmais.png) no-repeat; text-indent:-9999px; width: 120px; height:30px; padding:0; margin:8px 20px 0 0; }
-.navbar-fixed-top .nav > li > a { display: block;    height: 34px;    margin-top: 6px;    width: 34px; background:url(/portal/images/capaPrograma/cocorico/icones-menu.png) no-repeat; text-indent:-9999px; margin:5px 10px 5px 0; padding:0;}
+.navbar-inverse .brand, .navbar-inverse .nav > li > a { background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png) no-repeat; text-indent:-9999px; width: 120px; height:30px; padding:0; margin:8px 20px 0 0; }
+.navbar-fixed-top .nav > li > a { display: block;    height: 34px;    margin-top: 6px;    width: 34px; background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/icones-menu.png) no-repeat; text-indent:-9999px; margin:5px 10px 5px 0; padding:0;}
 .navbar-fixed-top .nav > .tvratimbum > a { background-position:0 -34px; }
 .navbar-fixed-top .nav > .multicultura > a { background-position:0 -68px; }
 .navbar-fixed-top .nav > .univesp > a { background-position:0 -102px; }
@@ -23,7 +23,7 @@
 #footer,
 #footer .container { background:#333; }
 #footer .container { max-width:980px; }
-#footer .voltar-topo {  background:#333 url(/portal/images/voltar-topo.png) no-repeat 5px; color:#fff; height:30px; line-height: 30px; padding:0 10px 0 30px; font-size:10px; margin:-30px 0 20px 10px; display: block; width:64px;  }
+#footer .voltar-topo {  background:#333 url(http://cmais.com.br/portal/images/voltar-topo.png) no-repeat 5px; color:#fff; height:30px; line-height: 30px; padding:0 10px 0 30px; font-size:10px; margin:-30px 0 20px 10px; display: block; width:64px;  }
 #footer ul { margin:0 0 20px 0; }
 #footer ul li { list-style:none; }
 #footer p,

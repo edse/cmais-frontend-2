@@ -10,8 +10,8 @@ a, p {color:#333333; font-size:14px; margin:0.1em 0;font-family:Helvetica, Arial
 
 #controle-remoto.container .accordion .accordion-heading a{padding:10px 20px 10px 10px;color:#333333; font-size:18px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
 #controle-remoto.container .accordion .accordion-heading a:hover{text-decoration: none;}
-#controle-remoto.container .accordion .accordion-heading .icon-chevron-right{background: url(/portal/images/capaPrograma/controleremoto/seta.png) no-repeat -3px top;}
-#controle-remoto.container .accordion .accordion-heading .icon-chevron-down{background: url(/portal/images/capaPrograma/controleremoto/seta.png) no-repeat 0px bottom;width: 16px;height: 11px;margin: 5px 0 0 0;}
+#controle-remoto.container .accordion .accordion-heading .icon-chevron-right{background: url(http://cmais.com.br/portal/images/capaPrograma/controleremoto/seta.png) no-repeat -3px top;}
+#controle-remoto.container .accordion .accordion-heading .icon-chevron-down{background: url(http://cmais.com.br/portal/images/capaPrograma/controleremoto/seta.png) no-repeat 0px bottom;width: 16px;height: 11px;margin: 5px 0 0 0;}
 
 .color-open{background-color:#efefef;border:1px solid #fff;}
 #linhaDivisoria{*height:0px;margin-bottom:10px; width:100%; border-top:1px solid #cccccc; border-bottom:1px solid #ffffff;}

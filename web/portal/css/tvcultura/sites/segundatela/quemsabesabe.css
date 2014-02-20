@@ -2,19 +2,19 @@
 @import url("geral.css");
 /* quem sabe sabe */
 .time{margin: 3% 0 10% 0;background: #5b2561;border-radius: 0;padding: 5px;text-shadow: none;font-family: arial;font-weight: lighter;}
-.seta{width: 20px;height: 20px;background: url(/portal/images/capaPrograma/segundatela/quemsabesabe/setinha.png) no-repeat top;display: block;position: absolute;right: 37px;top: 11px;}
+.seta{width: 20px;height: 20px;background: url(http://cmais.com.br/portal/images/capaPrograma/segundatela/quemsabesabe/setinha.png) no-repeat top;display: block;position: absolute;right: 37px;top: 11px;}
 .seta-hide{background-position:0px -20px;}
 .offline{color:red!important;}
 .online{color:#00fa00!important;}
 .disabled{background:#ccc!important;}
-.hero-unit {background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/bg_topo_qss.jpg) no-repeat; text-align:left;}
-.hero-unit .bgtopo { width: 240px; height:200px; background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/apresentadores_qss.png) no-repeat; float:left; margin-right:10px; }
+.hero-unit {background:url(http://cmais.com.br/portal/images/capaPrograma/segundatela/quemsabesabe/bg_topo_qss.jpg) no-repeat; text-align:left;}
+.hero-unit .bgtopo { width: 240px; height:200px; background:url(http://cmais.com.br/portal/images/capaPrograma/segundatela/quemsabesabe/apresentadores_qss.png) no-repeat; float:left; margin-right:10px; }
 .hero-unit .col-esq {margin-left: 2%;max-width: 38%;}
-.hero-unit .col-esq h1 {  background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/logo_qss.png) no-repeat; width: 200px; height:82px; margin: 10% 0 0 0;}
+.hero-unit .col-esq h1 {  background:url(http://cmais.com.br/portal/images/capaPrograma/segundatela/quemsabesabe/logo_qss.png) no-repeat; width: 200px; height:82px; margin: 10% 0 0 0;}
 .hero-unit .col-esq p {margin: 4px 0 3px 0; color:#FFF;}
 .hero-unit .col-dir {width: 37%;}
 
-.section-header{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/bg-qss.jpg) repeat center;}
+.section-header{background:url(http://cmais.com.br/portal/images/capaPrograma/segundatela/quemsabesabe/bg-qss.jpg) repeat center;}
 
 .section-login{background:#eeeeee;}
 .section-login .container{padding-bottom:20px;}
@@ -39,7 +39,7 @@
 .navbar{position:absolute; top:1000px; display:none;}
 #footer{margin-top:100px;}
 
-.avatar{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/avatares.jpg) no-repeat -8px -4px; width:56px; height:56px;display: block;float:left;}
+.avatar{background:url(http://cmais.com.br/portal/images/capaPrograma/segundatela/quemsabesabe/avatares.jpg) no-repeat -8px -4px; width:56px; height:56px;display: block;float:left;}
 .avatar-1{background-position:-8px -5px!important;}
 .avatar-2{background-position:-70px -5px!important;}
 .avatar-3{background-position:-132px -5px!important;}
@@ -83,7 +83,7 @@
 .section-body .nav-tabs > .active > a,
 .section-body .nav-tabs > li > a:hover {background-color:#d48520;}
 
-.section-body .accordion-toggle{ border:2px solid #fff;position:relative; z-index:10;margin:0 auto;min-height:68px;background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/bg-boxpergunta.jpg)!important;}
+.section-body .accordion-toggle{ border:2px solid #fff;position:relative; z-index:10;margin:0 auto;min-height:68px;background:url(http://cmais.com.br/portal/images/capaPrograma/segundatela/quemsabesabe/bg-boxpergunta.jpg)!important;}
 .section-body .accordion-body{ background:none!important;margin-bottom:20px;}
 .section-body .accordion-inner{background:none!important;}
 .accordion-inner ul {padding: 0px 18px}
@@ -97,10 +97,10 @@
 .section-body .accordion-heading p{padding:8px 39px;margin:0;}
 
 .section-body .letra{text-align: center;line-height: 32px;color: #fbdc01;font-weight: bold;font-size: 18px;}
-.section-body .cantoneira{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/cantoneiras_b.png) no-repeat; display:block; float:left;width:39px; height:38px;}
-.section-body .cantoneira-b{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/cantoneiras.png) no-repeat; display:block; float:left;}
-.section-body .cantoneira-esq-meio{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/bg-miolo.gif) 8px; display:block; float:left;}
-.section-body .cantoneira-dir-meio{background:url(/portal/images/capaPrograma/segundatela/quemsabesabe/bg-miolo.gif) 2px; display:block; float:left;}
+.section-body .cantoneira{background:url(http://cmais.com.br/portal/images/capaPrograma/segundatela/quemsabesabe/cantoneiras_b.png) no-repeat; display:block; float:left;width:39px; height:38px;}
+.section-body .cantoneira-b{background:url(http://cmais.com.br/portal/images/capaPrograma/segundatela/quemsabesabe/cantoneiras.png) no-repeat; display:block; float:left;}
+.section-body .cantoneira-esq-meio{background:url(http://cmais.com.br/portal/images/capaPrograma/segundatela/quemsabesabe/bg-miolo.gif) 8px; display:block; float:left;}
+.section-body .cantoneira-dir-meio{background:url(http://cmais.com.br/portal/images/capaPrograma/segundatela/quemsabesabe/bg-miolo.gif) 2px; display:block; float:left;}
 .section-body .accordion-heading{position:relative}
 .section-body .cant-perg-esq{width:34px; height:64px;background-position: 3px top; position: absolute; z-index:20;top:0; left:0} 
 .section-body .cant-perg-dir{width:34px; height:64px;background-position: -36px top;  position: absolute; z-index:20;top:0; right:0}

@@ -1,7 +1,7 @@
 body { background:#0172f9; }
 a:hover{text-decoration:underline!important;}
 .header-bar ul { margin:12px 0 0 0; }
-.header-bar { position:fixed; background: url(/portal/images/capaPrograma/vilasesamo2/pattern-menu-interna.jpg) repeat-x; height:81px; top:48px; width: 100%; max-width:100%; }
+.header-bar { position:fixed; background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-menu-interna.jpg) repeat-x; height:81px; top:48px; width: 100%; max-width:100%; }
 .header-bar .content { width:940px; margin:0 auto; }
 .header-bar h1 { /*background:#fff; height:76px;*/ margin:5px 0 0 0; /*width:25%;*/ }
 .header-bar h1 a { float:left; /*width:100%;*/ }
@@ -220,7 +220,7 @@ body.campanhas{background-color:#fee133!important;}
 .interna.videos .destaque-filtro.especial li { background:#fba500; }
 .interna.videos .destaque-filtro.especial li a { color:#fba500; }
 .interna.videos .interna.videos .destaque-filtro.especial li a { color:#fba500; }
-.interna.videos .destaque-filtro.especial li a { background: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal.png) repeat-x; color:#fff;}
+.interna.videos .destaque-filtro.especial li a { background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-diagonal.png) repeat-x; color:#fff;}
 .interna.videos .destaque-filtro.especial li.active a { background:#fff; color:#fba500; border:none; font-size: 25px; }
 .interna.videos .destaque-filtro.especial li.active { background:#fff; }
 .interna.videos #content .scroll h3 { border-color:#F27300; }
@@ -249,7 +249,7 @@ body.campanhas{background-color:#fee133!important;}
 .interna.atividades .destaque-filtro.especial li { background:#b16af2; }
 .interna.atividades .destaque-filtro.especial li a { color:#fba500; }
 .interna.atividades .interna.videos .destaque-filtro.especial li a { color:#fba500; }
-.interna.atividades .destaque-filtro.especial li a { background: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png) repeat-x; color:#fff;}
+.interna.atividades .destaque-filtro.especial li a { background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png) repeat-x; color:#fff;}
 .interna.atividades .destaque-filtro.especial li.active a { background:#fff; color:#883feb; border:none; font-size:25px; }
 .interna.atividades .destaque-filtro.especial li.active { background:#fff; }
 .interna.atividades #content .scroll h3 { border-color:#7732E5; }
@@ -474,10 +474,10 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .destaques .videos img {border-bottom: 2px solid #f57301;}
 .cuidadores .container-cuidadores .banner a img{width: 95%;margin: 10px 0px;}
 .cuidadores .container-cuidadores .destaques .texto {white-space: nowrap;text-overflow: ellipsis;overflow: hidden;padding: 0;font-size: 16px;font-family: 'dinmedium',Arial, Helvetica, sans-serif;}
-.cuidadores .todos-assets{height:48px;background-image: url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-artigo.png');font-size: 25px!important;overflow: hidden;float: right;width: 300px;line-height: 48px;}
+.cuidadores .todos-assets{height:48px;background-image: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-artigo.png');font-size: 25px!important;overflow: hidden;float: right;width: 300px;line-height: 48px;}
 .cuidadores .todos-assets p{margin:0!important; text-align:center!important;}
 .cuidadores .todos-assets .icone-voltar-artigo{margin:0!important;}
-.cuidadores .container-cuidadores .col-dir{padding:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat;margin-left:10px; }
+.cuidadores .container-cuidadores .col-dir{padding:10px; background:url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat;margin-left:10px; }
 /*.cuidadores #img-capa{width:100%;}*/
 .cuidadores .img-topo-asset{overflow:hidden; width: 350px;margin: 0 auto;}
 .cuidadores .img-destaque-asset{text-align:center;}
@@ -501,7 +501,7 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .na-tv .container-na-tv p a:hover{color:#00c76e;}
 .na-tv .container-na-tv .container-horarios{width: 480px;float: right;max-height: 250px;overflow: hidden;margin-top:20px;}/*era max-height: 230px ---> georgia*/
 .na-tv .container-na-tv .container-horarios .img-logo{text-align: center;margin: 10px;}
-.na-tv .container-na-tv .container-horarios .box-horario{width: 230px;float: left;margin-left: 18px;height: 240px;background: red;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px; background:url('/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat;}
+.na-tv .container-na-tv .container-horarios .box-horario{width: 230px;float: left;margin-left: 18px;height: 240px;background: red;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px; background:url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/patterns/img_pattern-diagonal-cuidadores-interna.png') repeat;}
 .na-tv .container-na-tv .container-horarios .box-horario .box-logo{display:block;width: 100%;background: #ffffff;border: #ccf4e2 1px solid;height: 130px;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;position:relative;}
 .na-tv .container-na-tv .container-horarios .box-horario h2{font-family:'din-blackregular',Arial, Helvetica, sans-serif;color:#00aa52;font-size:18px;text-align:center;line-height: 16px;margin: 20px 0 10px 0;}
 .na-tv .container-na-tv .container-horarios .box-horario p{font-size:16px;text-align:center;color:#737373; float:none;}

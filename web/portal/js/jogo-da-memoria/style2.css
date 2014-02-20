@@ -33,12 +33,12 @@ body {
 }
 */
 :-moz-full-screen {
-  background: url(/portal/images/capaPrograma/cocorico/memoria/left.png) no-repeat bottom left fixed, url(/portal/images/capaPrograma/cocorico/memoria/right.png) no-repeat bottom right fixed, -moz-linear-gradient(0, rgba(200,0,0,.5) 50%, transparent 50%), -moz-linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%), #F26522;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/left.png) no-repeat bottom left fixed, url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/right.png) no-repeat bottom right fixed, -moz-linear-gradient(0, rgba(200,0,0,.5) 50%, transparent 50%), -moz-linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%), #F26522;
   background-size: auto auto, auto auto, 50px 50px, 50px 50px, auto auto;
 }
 
 :-webkit-full-screen {
-  background: url(/portal/images/capaPrograma/cocorico/memoria/left.png) no-repeat bottom left fixed, url(portal/images/capaPrograma/cocorico/memoria//right.png) no-repeat bottom right fixed, -webkit-linear-gradient(0, rgba(200,0,0,.5) 50%, transparent 50%), -webkit-linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%),  #F26522;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/left.png) no-repeat bottom left fixed, url(portal/images/capaPrograma/cocorico/memoria//right.png) no-repeat bottom right fixed, -webkit-linear-gradient(0, rgba(200,0,0,.5) 50%, transparent 50%), -webkit-linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%),  #F26522;
   background-size: auto auto, auto auto, 50px 50px, 50px 50px, auto auto;
 }
 
@@ -247,7 +247,7 @@ body {
 #game.open #gameIntro {
   opacity: 1;
   z-index: 3;
-  background: url(/portal/images/capaPrograma/cocorico/memoria/start2.jpg) center center no-repeat;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/start2.jpg) center center no-repeat;
   /*background: url(http://moztw.org/foxmosa/game/pairs/images/start.png) center center no-repeat;*/
 }
 
@@ -255,7 +255,7 @@ body {
   opacity: 0;
   z-index: 0;
   /*background: url(http://moztw.org/foxmosa/game/pairs/images/start.png) center center no-repeat;*/
-  background: url(/portal/images/capaPrograma/cocorico/memoria/start.jpg) center center no-repeat;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/start.jpg) center center no-repeat;
 }
 
 #gamePlay {
@@ -392,7 +392,7 @@ body {
 }
 
 .front {
-  background:url(/portal/images/capaPrograma/cocorico/memoria/card.jpg) no-repeat;
+  background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/card.jpg) no-repeat;
   z-index: 10;
   border-radius: 4px;
 }
@@ -440,7 +440,7 @@ body {
   box-shadow: 0 0 30px #fff;
   
   */
-  background:url(/portal/images/capaPrograma/cocorico/memoria/acerto.png) no-repeat center;
+  background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/acerto.png) no-repeat center;
   background-clip: padding-box;
   padding: 10px 0;
   opacity: 0;
@@ -604,42 +604,42 @@ body {
   font-size: 1.5em;
   margin: .5em;
 }
-.aavo { background: url(/portal/images/capaPrograma/cocorico/memoria/aavo.jpg) no-repeat center; }
-.aavo-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/aavo-icon.jpg) no-repeat center; }
-.alipio { background: url(/portal/images/capaPrograma/cocorico/memoria/alipio.jpg) no-repeat center; }
-.alipio-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/alipio-icon.jpg) no-repeat center; }
-.astolfo { background: url(/portal/images/capaPrograma/cocorico/memoria/astolfo.jpg) no-repeat center; }
-.astolfo-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/astolfo-icon.jpg) no-repeat center; }
-.caco { background: url(/portal/images/capaPrograma/cocorico/memoria/caco.jpg) no-repeat center; }
-.caco-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/caco-icon.jpg) no-repeat center; }
-.dito { background: url(/portal/images/capaPrograma/cocorico/memoria/dito.jpg) no-repeat center; }
-.dito-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/dito-icon.jpg) no-repeat center; }
-.feito { background: url(/portal/images/capaPrograma/cocorico/memoria/feito.jpg) no-repeat center; }
-.feito-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/feito-icon.jpg) no-repeat center; }
-.joao { background: url(/portal/images/capaPrograma/cocorico/memoria/joao.jpg) no-repeat center; }
-.joao-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/joao-icon.jpg) no-repeat center; }
-.julio { background: url(/portal/images/capaPrograma/cocorico/memoria/julio.jpg) no-repeat center; }
-.julio-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/julio-icon.jpg) no-repeat center; }
-.lilica { background: url(/portal/images/capaPrograma/cocorico/memoria/lilica.jpg) no-repeat center; }
-.lilica-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/lilica-icon.jpg) no-repeat center; }
-.lola { background: url(/portal/images/capaPrograma/cocorico/memoria/lola.jpg) no-repeat center; }
-.lola-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/lola-icon.jpg) no-repeat center; }
-.mimosa { background: url(/portal/images/capaPrograma/cocorico/memoria/mimosa.jpg) no-repeat center; }
-.mimosa-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/mimosa-icon.jpg) no-repeat center; }
-.oavo { background: url(/portal/images/capaPrograma/cocorico/memoria/oavo.jpg) no-repeat center; }
-.oavo-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/oavo-icon.jpg) no-repeat center; }
-.oriba { background: url(/portal/images/capaPrograma/cocorico/memoria/oriba.jpg) no-repeat center; }
-.oriba-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/oriba-icon.jpg) no-repeat center; }
-.patavina { background: url(/portal/images/capaPrograma/cocorico/memoria/patavina.jpg) no-repeat center; }
-.patavina-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/patavina-icon.jpg) no-repeat center; }
-.patotorquato { background: url(/portal/images/capaPrograma/cocorico/memoria/patotorquato.jpg) no-repeat center; }
-.patotorquatro-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/patotorquato-icon.jpg) no-repeat center; }
-.sapomartelo { background: url(/portal/images/capaPrograma/cocorico/memoria/sapomartelo.jpg) no-repeat center; }
-.sapomartelo-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/sapomartelo-icon.jpg) no-repeat center; }
-.toquinho { background: url(/portal/images/capaPrograma/cocorico/memoria/toquinho.jpg) no-repeat center; }
-.toquinho-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/toquinho-icon.jpg) no-repeat center; }
-.zaza { background: url(/portal/images/capaPrograma/cocorico/memoria/zaza.jpg) no-repeat center; }
-.zaza-icon { background: url(/portal/images/capaPrograma/cocorico/memoria/zaza-icon.jpg) no-repeat center; }
+.aavo { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/aavo.jpg) no-repeat center; }
+.aavo-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/aavo-icon.jpg) no-repeat center; }
+.alipio { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/alipio.jpg) no-repeat center; }
+.alipio-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/alipio-icon.jpg) no-repeat center; }
+.astolfo { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/astolfo.jpg) no-repeat center; }
+.astolfo-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/astolfo-icon.jpg) no-repeat center; }
+.caco { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/caco.jpg) no-repeat center; }
+.caco-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/caco-icon.jpg) no-repeat center; }
+.dito { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/dito.jpg) no-repeat center; }
+.dito-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/dito-icon.jpg) no-repeat center; }
+.feito { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/feito.jpg) no-repeat center; }
+.feito-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/feito-icon.jpg) no-repeat center; }
+.joao { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/joao.jpg) no-repeat center; }
+.joao-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/joao-icon.jpg) no-repeat center; }
+.julio { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/julio.jpg) no-repeat center; }
+.julio-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/julio-icon.jpg) no-repeat center; }
+.lilica { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/lilica.jpg) no-repeat center; }
+.lilica-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/lilica-icon.jpg) no-repeat center; }
+.lola { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/lola.jpg) no-repeat center; }
+.lola-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/lola-icon.jpg) no-repeat center; }
+.mimosa { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/mimosa.jpg) no-repeat center; }
+.mimosa-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/mimosa-icon.jpg) no-repeat center; }
+.oavo { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/oavo.jpg) no-repeat center; }
+.oavo-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/oavo-icon.jpg) no-repeat center; }
+.oriba { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/oriba.jpg) no-repeat center; }
+.oriba-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/oriba-icon.jpg) no-repeat center; }
+.patavina { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/patavina.jpg) no-repeat center; }
+.patavina-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/patavina-icon.jpg) no-repeat center; }
+.patotorquato { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/patotorquato.jpg) no-repeat center; }
+.patotorquatro-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/patotorquato-icon.jpg) no-repeat center; }
+.sapomartelo { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/sapomartelo.jpg) no-repeat center; }
+.sapomartelo-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/sapomartelo-icon.jpg) no-repeat center; }
+.toquinho { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/toquinho.jpg) no-repeat center; }
+.toquinho-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/toquinho-icon.jpg) no-repeat center; }
+.zaza { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/zaza.jpg) no-repeat center; }
+.zaza-icon { background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/zaza-icon.jpg) no-repeat center; }
 
 /* AppCache UI */
 

@@ -1,13 +1,13 @@
 body { background:#a0d3f2; min-height: 970px; }
-#bg { background:#a0d3f2 url("/portal/images/capaPrograma/castelo/img-bg-sala.jpg") no-repeat scroll center; min-width:1000px !important; }
+#bg { background:#a0d3f2 url("http://cmais.com.br/portal/images/capaPrograma/castelo/img-bg-sala.jpg") no-repeat scroll center; min-width:1000px !important; }
 #capa-site { height:963px; }
 .tudo { height:680px; }
 .navegacao{left:40px;}
 
 .botao-penelope{position: absolute;top: 298px;width: 182px;height: 363px;right: 102px;}
-.botao-penelope-over{position: absolute;top: 259px;width: 298px;height: 796px;background: url(/portal/images/capaPrograma/castelo/img-personagem-penelope-over.png) repeat-x;right: 62px;}
-.gif-penelope{width: 84px;height: 68px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-penelope.gif) no-repeat;position: absolute;top: 34px;left: -5px;}
+.botao-penelope-over{position: absolute;top: 259px;width: 298px;height: 796px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-penelope-over.png) repeat-x;right: 62px;}
+.gif-penelope{width: 84px;height: 68px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-penelope.gif) no-repeat;position: absolute;top: 34px;left: -5px;}
 
 .ppb{width: 319px;height: 600px;position: absolute;top: -284px;left: 13px;z-index: 1;}
-.papeis-de-parede {width: 311px;height: 432px;background: url(/portal/images/capaPrograma/castelo/btn-papel-parede.jpg) no-repeat;position: absolute;top: -284px;left: 12px;}
-.papeis-de-parede-over {width: 311px;height: 583px;background: url(/portal/images/capaPrograma/castelo/btn-papel-parede-over.jpg) no-repeat;position: absolute;top: -284px;left: 12px;}
+.papeis-de-parede {width: 311px;height: 432px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/btn-papel-parede.jpg) no-repeat;position: absolute;top: -284px;left: 12px;}
+.papeis-de-parede-over {width: 311px;height: 583px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/btn-papel-parede-over.jpg) no-repeat;position: absolute;top: -284px;left: 12px;}
