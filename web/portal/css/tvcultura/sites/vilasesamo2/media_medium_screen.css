@@ -138,4 +138,23 @@ footer .relacionados h1{margin-left:5%;width: 90%;}
 footer .logos li{width: 33%;display: block;float: left;height:20%;}
 footer .copyright {height: 30px;margin-left: 2%;}
 /* footer */
+@media screen and (min-width:601px) and (max-width:979px) {
+	 #content #carrossel-interna-artigo{display: none}
+	 #content .todos-itens #container {width: 96%;margin-left: 0!important;}
+	 #content .span8 {width:100%;padding:2%}
+	 #content .todos-itens {margin: 54px auto}
+	 #content .todos-itens .element{width:29%}
+	 #content .todos-itens li img{width:100%;}
+	 #content .span8 {width:100%;padding:2%}
 
+
+}
+@media screen and (min-width:501px) and (max-width:600px) {
+	 #content #carrossel-interna-artigo{display: none}
+	 #content .todos-itens #container {width: 96%;margin-left: 0!important;}
+	 #content .span8 {width:100%;padding:2%}
+	 #content .todos-itens {margin: 54px auto}
+	 #content .todos-itens .element{width:45%}
+	 #content .todos-itens li img{width:100%;}
+
+}
