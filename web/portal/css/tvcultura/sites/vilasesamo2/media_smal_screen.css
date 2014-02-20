@@ -93,7 +93,6 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 #carrossel-personagem .slider-mask-wrap {height:108px!important}
 #carrossel-personagem .slider-nav{display:none!important;}
 
-/* index */
 
 /*acessibilidade*/
 #header-mobile{display:none;}
@@ -178,6 +177,26 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .interna.jogos .todos-assets p{background-color:#3AAAEC;}
 .interna.atividades .todos-assets p{background-color:#883feb;}
 .interna.videos .todos-assets p{background-color:#0172f9;}
+
+/*capa jogos*/
+.interna.jogos .filtro .span10 {display:none}
+.interna.jogos .filtro .span2 {display:none}
+.todos-itens .row-fluid, .campanhas .todos-itens .row-fluid {width: 100%!important; margin: 0!important;}
+.todos-itens #container li.jogos {margin:0;}
+
+
+/*pais capa*/
+.cuidadores #carrossel-interna-artigo {display:none;}
+.cuidadores #carrossel-interna-artigo .slider-mask {width:100%!important}
+.cuidadores #carrossel-interna-artigo .slider ul {width: 100%!important;}
+.cuidadores #carrossel-interna-artigo .slider li {width: 100%!important;}
+.cuidadores #carrossel-interna-artigo .slider-nav{display: none}
+.cuidadores #carrossel-interna-artigo .slider .videoorimage {width: 85%;}
+.cuidadores #carrossel-interna-artigo .slider .descritivo {}
+
+.cuidadores .span8{width: 100%!important;}
+.cuidadores .selecione .btn-group {width:100%!important}
+.cuidadores .selecione .btn-group .dropdown-toggle {width: 96%!important;}
 
 @media screen and (min-width:430px){
   .imagem-topo {width: 190px;left: 50%;margin-left: -77px;}
