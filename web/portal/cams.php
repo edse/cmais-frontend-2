@@ -36,6 +36,7 @@ if($_REQUEST["test"]){
 }
 else{
 	$content_return = array("data" => $return);
-	$content = json_encode($content_return);
-	echo $content;
+	$json = json_encode($content_return);
+  $callback = $_REQUEST['callback'];
+  echo $callback.'('. $json . ');';
 }
