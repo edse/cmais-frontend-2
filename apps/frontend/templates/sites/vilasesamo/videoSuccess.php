@@ -131,6 +131,20 @@ r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilit
 <?php echo $noscript; ?>
 <script>
     //Load player api asynchronously.
+    var widthVideo;
+    var heightVideo;
+    $(window).resize(function() {
+      if(window.innerWidth >= 980){
+        widthVideo = 900;
+        heightVideo = 675;
+      }else if(window.innerWidth >= 501 && window.innerWidth < 980){
+        widthVideo = 500;
+        heightVideo = 675;
+      }else if(window.innerWidth <= 500){
+        widthVideo = 300;
+        heightVideo = 169;
+      }
+    });
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -139,8 +153,8 @@ r<?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilit
     var player;
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          height: '675',
-          width: '900',
+          height: 675,
+          width: 900,
           videoId: '<?php echo $asset->AssetVideo->getYoutubeId() ?>',
         });
     }
