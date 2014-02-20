@@ -82,7 +82,9 @@
        */
       ?>
       <p aria-label="Atividade: <?php echo $asset->getDescription() ?>"  tabindex="0">
-      <?php if(isset($categories)): ?>
+      
+        <span aria-hidden="true"><?php echo $asset->getDescription() ?></span>
+        <?php if(isset($categories)): ?>
         <?php if(count($categories) > 0): ?>
           <?php      
             foreach($categories as $c) {
@@ -102,7 +104,6 @@
           <?php endif; ?>
         <?php endif; ?>
       <?php endif; ?>
-        <span aria-hidden="true"><?php echo $asset->getDescription() ?></span>
       </p>
       
       

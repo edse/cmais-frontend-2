@@ -22,9 +22,9 @@
         asset_id: '53430',
         url_in: 'http://tvcultura.cmais.com.br'
       },
-      dataType: 'text',
+      dataType: 'jsonp',
       success: function(data) {
-        if(data != ''){
+        if(data.data != ''){
           $('#liveStream').show();
           $('#preRecorded').hide();
         }
