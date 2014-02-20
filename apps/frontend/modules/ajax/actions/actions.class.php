@@ -2069,7 +2069,11 @@ EOT;
     }else{
       $return .= "self.location.href='".$url_out."'";
     }
-    die($return);
+
+    $a = array("data" => $return);
+    $json = json_encode($a);
+    $callback = $request->getParameter('callback');
+    die($callback.'('. $json . ');');
   }
 
 
