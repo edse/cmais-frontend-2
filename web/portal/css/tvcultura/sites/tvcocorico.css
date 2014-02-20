@@ -1,5 +1,5 @@
 
-body{background: url(/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico.jpg);}
+body{background: url(http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico.jpg);}
 #rodape-portal {margin-top: 0px;}
 
 .m01{margin:01px 0 0 0;}
@@ -21,16 +21,16 @@ body{background: url(/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico
 
 #palco{ overflow:hidden;}
 #back{max-width:976px;min-height:1065px; margin:0px auto !important; position:relative;}
-#holofote-01{width:254px;height: 344px;position: absolute;top:0px;left:-217px;background: url(/portal/images/capaPrograma/cocoricoHome/backstage1.png) no-repeat;}
-#holofote-02{width:240px;height: 513px;position: absolute;top:0px;left:-306px;background: url(/portal/images/capaPrograma/cocoricoHome/backstage2.png) no-repeat;}
-#holofote-03{width:262px;height: 418px;position: absolute;bottom:0px;left:-260px;background: url(/portal/images/capaPrograma/cocoricoHome/backstage3.png) no-repeat;}
-#holofote-04{width:342px;height: 478px;position: absolute;bottom:0px;right:-298px;background: url(/portal/images/capaPrograma/cocoricoHome/backstage4.png) no-repeat;}
-#holofote-05{width:236px;height: 334px;position: absolute;top:0px;right:-195px;background: url(/portal/images/capaPrograma/cocoricoHome/backstage5.png) no-repeat;}
-#holofote-06{width:251px;height: 280px;position: absolute;top:0px;right:-438px;background: url(/portal/images/capaPrograma/cocoricoHome/backstage6.png) no-repeat;}
+#holofote-01{width:254px;height: 344px;position: absolute;top:0px;left:-217px;background: url(http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/backstage1.png) no-repeat;}
+#holofote-02{width:240px;height: 513px;position: absolute;top:0px;left:-306px;background: url(http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/backstage2.png) no-repeat;}
+#holofote-03{width:262px;height: 418px;position: absolute;bottom:0px;left:-260px;background: url(http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/backstage3.png) no-repeat;}
+#holofote-04{width:342px;height: 478px;position: absolute;bottom:0px;right:-298px;background: url(http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/backstage4.png) no-repeat;}
+#holofote-05{width:236px;height: 334px;position: absolute;top:0px;right:-195px;background: url(http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/backstage5.png) no-repeat;}
+#holofote-06{width:251px;height: 280px;position: absolute;top:0px;right:-438px;background: url(http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/backstage6.png) no-repeat;}
 #rodape-portal {margin-top: 0px;position: relative}
 
 .capa-voltar-topo {margin: -26px auto;}
-#guitarra{position: absolute;right: -278px;width: 250px;height: 246px;background: url(/portal/images/capaPrograma/cocoricoHome/destaque-guitarra.png) no-repeat;top: 52px;}
+#guitarra{position: absolute;right: -278px;width: 250px;height: 246px;background: url(http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/destaque-guitarra.png) no-repeat;top: 52px;}
 #promocao p{color:#a81617; line-height:30px;font-size: 21px;font-weight: bolder;font-family: "Arial Rounded MT Bold",Arial, Helvetica, sans-serif !important;text-transform: uppercase;text-align:left;}
 #promocao {position: relative;z-index: 4000;clear: both;width: 520px;padding: 50px 0 0 115px;height: 350px;*padding: 30px 0 0 0 !important;*margin:0 0 20px -250px}
 #promocao label{margin:3px 0 0 0;clear:both;float:left; font-size:16px;font-weight:bold;width: 103px;text-align: right;}
@@ -44,7 +44,7 @@ body{background: url(/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico
 #promocao .t3input .idade{width: 49px;margin: 0 0 0 -2px}
 #promocao select{width:61px; border:none;background-color:#f2ba27;float:left;}
 
-#promocao .btn-enviar{color:#a81617;float: right;font-size: 18px;font-weight: bold;padding: 10px 16px;background: url(/portal/images/capaPrograma/cocoricoHome/btn-enviar.png) no-repeat;cursor: pointer;}
+#promocao .btn-enviar{color:#a81617;float: right;font-size: 18px;font-weight: bold;padding: 10px 16px;background: url(http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/btn-enviar.png) no-repeat;cursor: pointer;}
 #promocao label.error{color: #A81617;position: absolute;left: 226px;bottom: 40px;margin: 0 0 0 0 !important;font-size: 15px;background: yellow;padding: 5px;width: 305px;text-align: center;}
 #promocao .nome.error, #promocao .email.error, #promocao .cidade.error,#promocao .resposta.error,#promocao .estado.error, #promocao .mensagem.error, #promocao .idade.error{border:1px red solid !important;}
 #promocao span.verm{width:100px; height:50px; position: absolute; bottom:0px; left:0px;}
@@ -77,7 +77,7 @@ body{background: url(/portal/images/capaPrograma/cocoricoHome/pattern-tvcocorico
 #enqueteRapida .form-contato label.selected{font-weight:bolder;}
 #enqueteRapida .form-contato label.error{position: absolute;bottom: 130px;left: 52px;}
 
-#enqueteRapida .form-contato #votar{float:left; background:url("/portal/images/capaPrograma/cocoricoHome/btn-votar.png") no-repeat; width:87px; height:42px;border:none;margin: 11px 0 13px 9px;box-shadow: none;}
+#enqueteRapida .form-contato #votar{float:left; background:url("http://cmais.com.br/portal/images/capaPrograma/cocoricoHome/btn-votar.png") no-repeat; width:87px; height:42px;border:none;margin: 11px 0 13px 9px;box-shadow: none;}
 #enqueteRapida #resultadoParcial{padding:0 0 50px 30px;float: left;}
 #enqueteRapida #resultadoParcial span{font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight:normal;}
 

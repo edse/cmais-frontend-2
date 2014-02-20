@@ -4,9 +4,9 @@
 #capa-site { margin-top:-193px !important; }
 #barra-site .topo-programa { *margin-top:-20px; }
 #chamada { margin-bottom:0; }
-#barra-site { background:url(/portal/images/capaPrograma/ziraldo/personagens.png) no-repeat right; }
-body {  background:url(/portal/images/capaPrograma/ziraldo/bg.jpg) repeat-x;  }
+#barra-site { background:url(http://cmais.com.br/portal/images/capaPrograma/ziraldo/personagens.png) no-repeat right; }
+body {  background:url(http://cmais.com.br/portal/images/capaPrograma/ziraldo/bg.jpg) repeat-x;  }
 .bg-chamada { height:60px; z-index: 100; margin-bottom:48px;}
 /*
-.tit-pagina { text-indent:-9999px; background:url(/portal/images/capaPrograma/ziraldo/logo.png) no-repeat; width:219px; height:76px; }
+.tit-pagina { text-indent:-9999px; background:url(http://cmais.com.br/portal/images/capaPrograma/ziraldo/logo.png) no-repeat; width:219px; height:76px; }
 */

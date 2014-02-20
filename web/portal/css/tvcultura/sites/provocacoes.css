@@ -1,11 +1,11 @@
 /** provocacoes **/
-body { background:url(/portal/images/capaPrograma/provocacoes/bg-tudo3a.jpg) repeat-x; }  
+body { background:url(http://cmais.com.br/portal/images/capaPrograma/provocacoes/bg-tudo3a.jpg) repeat-x; }  
 #guia-topo { height:69px;}
  
 .bg-provocacoes { clear: both; display:block; }
 
 #rodape-portal,
-.bg-provocacoes{  background:url(/portal/images/capaPrograma/provocacoes/bg.jpg) repeat;}
+.bg-provocacoes{  background:url(http://cmais.com.br/portal/images/capaPrograma/provocacoes/bg.jpg) repeat;}
 
 .bg-provocacoes #barra-site .topo-programa{
   min-height: 80px!important;
@@ -544,7 +544,7 @@ body { background:url(/portal/images/capaPrograma/provocacoes/bg-tudo3a.jpg) rep
   font-size: 24px;
   font-weight: normal;
   margin-bottom: 15px;
-  padding-bottom:20px; background:url("/portal/images/capaPrograma/provocacoes/divisoria.png") no-repeat bottom;
+  padding-bottom:20px; background:url("http://cmais.com.br/portal/images/capaPrograma/provocacoes/divisoria.png") no-repeat bottom;
 }
 .sobre p,
 .apresentador p,
@@ -2076,7 +2076,7 @@ a.memRoda img{
 
 
 .box { border: 1px dotted #858585; padding:10px; overflow:hidden; }
-.fechado .icon { background:url(/portal/images/capaPrograma/provocacoes/seta-direita.jpg) no-repeat left center;  }
+.fechado .icon { background:url(http://cmais.com.br/portal/images/capaPrograma/provocacoes/seta-direita.jpg) no-repeat left center;  }
 .box .icon {  width: 400px; float:left; margin-bottom:0; padding-left:14px; cursor:pointer; }
 .aberto .icon { width:600px; }
 .fechado a { background:#666; border-radius:10px; color:#fff; float:right; padding:3px 10px; font-weight: normal; font-size:13px; }
@@ -2084,7 +2084,7 @@ a.memRoda img{
 .fechado .btn { width: 125px; height:20px; margin-bottom:0; text-align:center; }
 
 
-.aberto .icon { background:url(/portal/images/capaPrograma/provocacoes/seta-baixo.jpg) no-repeat left center; margin-bottom:10px; }
+.aberto .icon { background:url(http://cmais.com.br/portal/images/capaPrograma/provocacoes/seta-baixo.jpg) no-repeat left center; margin-bottom:10px; }
 .aberto p { clear:both;  padding-left:12px; margin-bottom:10px; }
 .msgErro,
 .msgAcerto { margin: 0 !important; background:none !important; width:610px; }
@@ -2108,8 +2108,8 @@ a.memRoda img{
 /** /prococacoes **/
 #rodape-portal.branco,
 .branco { background:#fff; }
-body.branco { background:#fff url(/portal/images/capaPrograma/provocacoes/bg-branco.jpg) repeat-x; }
-.box-compartilhar {/* background:url(/portal/images/capaPrograma/provocacoes/bg-pagRV.jpg) repeat; */}
+body.branco { background:#fff url(http://cmais.com.br/portal/images/capaPrograma/provocacoes/bg-branco.jpg) repeat-x; }
+.box-compartilhar {/* background:url(http://cmais.com.br/portal/images/capaPrograma/provocacoes/bg-pagRV.jpg) repeat; */}
 .box-compartilhar .comentar,
 .box-compartilhar a { color:#000; font-size: 12px; font-weight: bold; }
 .box-compartilhar .comentar { display:none !important; }
@@ -2134,8 +2134,8 @@ body.branco { background:#fff url(/portal/images/capaPrograma/provocacoes/bg-bra
 
 
 
-#gallery a.sugestoes { background: url("/portal/images/capaPrograma/provocacoes/bg-btn-acervo.png") repeat-x scroll 0 0 transparent;    border-radius: 10px 8px 10px 8px;    float: right;    height: 20px;    margin: 7px 0 0;    text-decoration: none;}
-#gallery a.sugestoes:hover { background-image: url("/portal/images/capaPrograma/provocacoes/bg-btn-acervoOver.png");}
+#gallery a.sugestoes { background: url("http://cmais.com.br/portal/images/capaPrograma/provocacoes/bg-btn-acervo.png") repeat-x scroll 0 0 transparent;    border-radius: 10px 8px 10px 8px;    float: right;    height: 20px;    margin: 7px 0 0;    text-decoration: none;}
+#gallery a.sugestoes:hover { background-image: url("http://cmais.com.br/portal/images/capaPrograma/provocacoes/bg-btn-acervoOver.png");}
 #gallery a.sugestoes span{  color: #fff;  float: left;  font-size: 12px;  padding: 3px 8px 0px 8px;}
 #gallery a.sugestoes:hover span{  color: #fff;}
 
@@ -2182,14 +2182,14 @@ body.branco { background:#fff url(/portal/images/capaPrograma/provocacoes/bg-bra
 .ui-icon.ui-icon-circle-triangle-w:hover,
 .ui-icon.ui-icon-circle-triangle-w,
 .ui-icon.ui-icon-circle-triangle-e:hover,
-.ui-icon.ui-icon-circle-triangle-e { background: url(/portal/images/capaPrograma/provocacoes/seta-calendario.png) no-repeat; width: 11px; height:11px; }
+.ui-icon.ui-icon-circle-triangle-e { background: url(http://cmais.com.br/portal/images/capaPrograma/provocacoes/seta-calendario.png) no-repeat; width: 11px; height:11px; }
 .ui-datepicker .ui-datepicker-next-hover span,
 .ui-icon.ui-icon-circle-triangle-e:hover,
 .ui-icon.ui-icon-circle-triangle-e { background-position:-11px 0; }
 .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { margin-top:-5px; }
 
 .menu-interna { float: right!important;}
-.menu-interna li { background: url("/portal/images/capaPrograma/provocacoes/bg-menuRV.png") repeat-x scroll 0 0 transparent; border-radius: 6px 6px 6px 6px; float: left; height: 24px; text-decoration: none;}
+.menu-interna li { background: url("http://cmais.com.br/portal/images/capaPrograma/provocacoes/bg-menuRV.png") repeat-x scroll 0 0 transparent; border-radius: 6px 6px 6px 6px; float: left; height: 24px; text-decoration: none;}
 .menu-interna li a { color: #5B5A50;   float: left;    font-size: 12px;    font-weight: bold; height:24px; line-height: 24px; }
 .submenu-interna li,
 .menu-interna .submenu-interna ul,
@@ -2197,7 +2197,7 @@ body.branco { background:#fff url(/portal/images/capaPrograma/provocacoes/bg-bra
 .menu-interna li:hover, 
 .menu-interna li.ativo,
 .menu-interna li a:hover, 
-.menu-interna li a.ativo {    background: url("/portal/images/capaPrograma/provocacoes/bg-menuRVOver.png") repeat scroll 0 0 transparent !important;}
+.menu-interna li a.ativo {    background: url("http://cmais.com.br/portal/images/capaPrograma/provocacoes/bg-menuRVOver.png") repeat scroll 0 0 transparent !important;}
 .menu-interna .submenu-interna li a,
 .menu-interna li a:hover a, 
 .menu-interna li a.ativo a { color:#fff; } 

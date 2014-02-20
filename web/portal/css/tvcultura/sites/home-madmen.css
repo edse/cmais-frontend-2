@@ -1,4 +1,4 @@
-body { background:#343434 url(/portal/images/capaPrograma/home-madmen/bg.jpg) repeat-x; }
+body { background:#343434 url(http://cmais.com.br/portal/images/capaPrograma/home-madmen/bg.jpg) repeat-x; }
 
 @font-face {
     font-family: 'daisywheelregular';
@@ -38,10 +38,10 @@ body { background:#343434 url(/portal/images/capaPrograma/home-madmen/bg.jpg) re
 #v2 .descricao a { font-size: 15px; }
 #v2 .descricao { min-height:108px; }
 .novoNoAr .enunciado,
-#conteudo-pagina { background:url(/portal/images/capaPrograma/home-madmen/bg-paper.jpg) repeat; margin-bottom:0; }
+#conteudo-pagina { background:url(http://cmais.com.br/portal/images/capaPrograma/home-madmen/bg-paper.jpg) repeat; margin-bottom:0; }
 #miolo { margin-top:0 !important; }
 .capa { margin-top:0; padding-top:20px;}
-.detalhe { width:27px; height:338px; background:url(/portal/images/capaPrograma/home-madmen/detalhe.png) no-repeat; position:absolute; z-index: -1; }
+.detalhe { width:27px; height:338px; background:url(http://cmais.com.br/portal/images/capaPrograma/home-madmen/detalhe.png) no-repeat; position:absolute; z-index: -1; }
 .detalhe.esq { top:0; left:16px; }
 .detalhe.dir { top:338px; right:16px; background-position:-27px 0;}
 #topo-destaque { text-align:left; }
@@ -67,7 +67,7 @@ body { background:#343434 url(/portal/images/capaPrograma/home-madmen/bg.jpg) re
 .box-padrao.carrossel-menu { border:solid 3px #c3262d; }
 .box-padrao.carrossel-menu .capa-titulo { margin-top:0; width:100%;}
 .box-padrao.carrossel-menu .topo { margin-bottom:0; height:19px; }
-.box-padrao.carrossel-menu .btn { background:url(/portal/images/capaPrograma/home-madmen/setas.png) no-repeat; margin-top:1px; }
+.box-padrao.carrossel-menu .btn { background:url(http://cmais.com.br/portal/images/capaPrograma/home-madmen/setas.png) no-repeat; margin-top:1px; }
 .box-padrao.carrossel-menu .proximo { background-position:-16px 0; }
 .box-padrao.carrossel-menu .txt,
 .box-padrao.carrossel-menu .titulos { padding:0 10px; width:auto; display:block;  }

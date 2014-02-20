@@ -57,8 +57,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
  /topo cmais desktop */
 
 /* topo minimizado */
-.navbar-inverse .brand, .navbar-inverse .nav > li > a { background:url(/portal/images/capaPrograma/cocorico/logocmais.png) no-repeat; text-indent:-9999px; width: 120px; height:30px; padding:0; margin:8px 20px 0 10px; }
-.navbar .nav > li > a { display: block;    height: 34px;    margin-top: 3px;    width: 34px; background:url(/portal/images/capaPrograma/cocorico/icones-menu.png) no-repeat; text-indent:-9999px; margin:5px 10px 5px 0; padding:0;}
+.navbar-inverse .brand, .navbar-inverse .nav > li > a { background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/logocmais.png) no-repeat; text-indent:-9999px; width: 120px; height:30px; padding:0; margin:8px 20px 0 10px; }
+.navbar .nav > li > a { display: block;    height: 34px;    margin-top: 3px;    width: 34px; background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/icones-menu.png) no-repeat; text-indent:-9999px; margin:5px 10px 5px 0; padding:0;}
 .navbar .nav > .tvratimbum > a { background-position:0 -34px; }
 .navbar .nav > .multicultura > a { background-position:0 -68px; }
 .navbar .nav > .univesp > a { background-position:0 -102px; }
@@ -137,13 +137,13 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .nav-pills>.active>a:hover{background-color:#F5f5f5; color:#666666}
 
 .search-culturabrasil{width: 150px;height: 29px;position: absolute;right: 0;bottom: 24px;}
-.search-culturabrasil .lupa{width: 12px;height: 11px;display: block;float: left;background: url(/portal/images/capaPrograma/culturabrasil/lupa.jpg) no-repeat; position: absolute;top: 13px;left: -10px}
+.search-culturabrasil .lupa{width: 12px;height: 11px;display: block;float: left;background: url(http://cmais.com.br/portal/images/capaPrograma/culturabrasil/lupa.jpg) no-repeat; position: absolute;top: 13px;left: -10px}
 .search-culturabrasil #term{width: 119px;border-radius: 0px;border: none;border-bottom: 1px solid #868686;box-shadow: none;padding: 5px 3px 0px 3px;}
 .search-culturabrasil .ipt-submit{border: none;background: none;margin-top: 6px;}
 /* geral */
 
 /* subsection */
-.borda-pontilhada{width:100%; height:1px; background: url(/portal/images/capaPrograma/culturabrasil/bg-dotted.png) repeat-x; margin-bottom: 10px;}
+.borda-pontilhada{width:100%; height:1px; background: url(http://cmais.com.br/portal/images/capaPrograma/culturabrasil/bg-dotted.png) repeat-x; margin-bottom: 10px;}
 .borda-menu{position: absolute;bottom: 10px;}
 .pontilhada{margin-top:-8px; }
 .breadcrumb{background: none;padding: 8px 10px;color: #333333;margin-bottom:10px;}
@@ -157,8 +157,8 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 /* home */
 .span4.twitter iframe{height:260px;}
 .carousel-control {position: absolute;top: 50%; display:none;}
-.carousel-control.left{background: url(/portal/images/capaPrograma/culturabrasil/seta-esquerda.png) no-repeat;border: none;width: 55px;height: 55px;}
-.carousel-control.right{background: url(/portal/images/capaPrograma/culturabrasil/seta-direita.png) no-repeat;border: none;width: 55px;height: 55px;}
+.carousel-control.left{background: url(http://cmais.com.br/portal/images/capaPrograma/culturabrasil/seta-esquerda.png) no-repeat;border: none;width: 55px;height: 55px;}
+.carousel-control.right{background: url(http://cmais.com.br/portal/images/capaPrograma/culturabrasil/seta-direita.png) no-repeat;border: none;width: 55px;height: 55px;}
 .carousel-caption {position: absolute;left: auto ;right: 0;bottom: 0;padding: 30px 10px 20px 20px;width: 310px;top: 0;color: white; background:none;}
 .carousel-caption h4{ font-size:24px;font-weight:normal;line-height:35px;margin: 15px 0 20px;}
 .carousel-caption h3{ margin: 0;font-weight: normal;font-size: 17px;text-transform: uppercase;}
@@ -169,7 +169,7 @@ body{background: none; padding: 0;text-align:left;position: relative;}
 .destaque-cultura span, .rodape span{text-transform:uppercase; font-size:12px; background:#666666; color:#FFFFFF; padding:0px 5px;letter-spacing: 0.1em; display: block;float:left; line-height: 20px;}
 .destaque-cultura h2{font-size:23px;font-weight: normal;margin: 0;line-height: 36px;color: #333333;}
 .destaque-cultura p{font-size:14px;}
-#accordion2 i.borda-titulo, .destaque-cultura i.borda-titulo, .rodape i.borda-titulo{ float:left;background:url(/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat  0px 0px; width:7px; height:20px; display:block;}
+#accordion2 i.borda-titulo, .destaque-cultura i.borda-titulo, .rodape i.borda-titulo{ float:left;background:url(http://cmais.com.br/portal/images/capaPrograma/culturabrasil/setacultura.png) no-repeat  0px 0px; width:7px; height:20px; display:block;}
 .destaque-cultura a:hover{text-decoration:none;}
 
 .destaque-cultura.frase h2{color:#666666; text-align:center;}
@@ -228,7 +228,7 @@ textarea{width:100%; font-size:11px;}
 .banner-culturabrasil{float:left;}
 .miolo.grade h1{font-size:22px; color:#333333;}
 .miolo.grade .destaque-playlist h1{color:#666666; font-size:18px; text-transform: none;}
-.miolo.grade .seta-grade{width:25px; height:26px;display:block; background:url(/portal/images/capaPrograma/culturabrasil/setas-grade.png) no-repeat;}
+.miolo.grade .seta-grade{width:25px; height:26px;display:block; background:url(http://cmais.com.br/portal/images/capaPrograma/culturabrasil/setas-grade.png) no-repeat;}
 .miolo.grade .data-grade{float:left; padding:3px 20px; text-align:center;font-size:18px; color:#666666;}
 .miolo.grade .data-btn{float:left; overflow: hidden;}
 .miolo.grade .box-direita{margin-top:60px;}
@@ -261,7 +261,7 @@ textarea{width:100%; font-size:11px;}
  #datepicker .ui-corner-all { -moz-border-radius:none; }
  #datepicker .ui-widget-content { background:none; border:none; }
  #datepicker .ui-widget-header {background: none;border: none;width: 205px;margin-left: 48px; }
- #datepicker .ui-widget-header .ui-icon { background:url(/portal/images/capaPrograma/culturabrasil/setas-grade.png) no-repeat 0px -28px; height:22px; width:22px; }
+ #datepicker .ui-widget-header .ui-icon { background:url(http://cmais.com.br/portal/images/capaPrograma/culturabrasil/setas-grade.png) no-repeat 0px -28px; height:22px; width:22px; }
  #datepicker .ui-datepicker-next .ui-icon { background-position:0 -5px; } 
  #datepicker table { width:310px; margin-top:15px; }
  #datepicker caption,
@@ -333,7 +333,7 @@ textarea{width:100%; font-size:11px;}
 
 /* player */
 a.jp-play,a.jp-play:hover, a.jp-pause, a.jp-pause:hover, a.jp-stop, a.jp-stop:hover, a.jp-previous, a.jp-previous:hover, a.jp-next, a.jp-next:hover, div.jp-seek-bar, div.jp-play-bar, a.jp-mute, a.jp-mute:hover, a.jp-unmute, a.jp-unmute:hover, div.jp-volume-bar, div.jp-volume-bar-value, div.jp-video div.jp-video-play, div.jp-video div.jp-video-play:hover {
-background-image: url("/portal/images/capaPrograma/culturabrasil/jplayer.png")!important;}
+background-image: url("http://cmais.com.br/portal/images/capaPrograma/culturabrasil/jplayer.png")!important;}
 div.jp-playlist, div.jp-interface, div.jp-type-playlist div.jp-playlist li { border:none!important;}
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color: #333333 !important;}
 div.jp-type-playlist div.jp-playlist li.jp-playlist-current {list-style-type: none!important; padding: 5px 0 4px 20px!important;}

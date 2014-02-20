@@ -1,4 +1,4 @@
-body { background:#fff url(/portal/images/capaPrograma/lygia/bg.jpg) repeat-x; }
+body { background:#fff url(http://cmais.com.br/portal/images/capaPrograma/lygia/bg.jpg) repeat-x; }
 #barra-site .redes { float: right; }
 #barra-site .redes,
 #barra-site h2 {margin-top:40px;}
@@ -7,5 +7,5 @@ body { background:#fff url(/portal/images/capaPrograma/lygia/bg.jpg) repeat-x; }
 #barra-site .topo-programa { margin-top:60px; }
 #capa-site { margin-top:0 !important; }
 #barra-site h2 a img { display:none; }
-#barra-site h2 a { background:url(/portal/images/capaPrograma/lygia/logolygia.png) no-repeat; width:339px; height:31px; display:block; }
+#barra-site h2 a { background:url(http://cmais.com.br/portal/images/capaPrograma/lygia/logolygia.png) no-repeat; width:339px; height:31px; display:block; }
 

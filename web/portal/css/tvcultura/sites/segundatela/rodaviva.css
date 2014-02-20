@@ -1,13 +1,13 @@
 /* rodaviva*/
 
-body { background:#fff url(/portal/images/capaPrograma/segundatela/rodaviva/bg.jpg) repeat-x; color:#000; }
-.hero-unit .bgtopo { width: 260px; height:200px; background:url(/portal/images/capaPrograma/segundatela/rodaviva/bg-topo.jpg) no-repeat; float:left; margin-right:10px; }
-.hero-unit .col-esq h1 {  background:url(/portal/images/capaPrograma/segundatela/rodaviva/logo.png) no-repeat; width: 169px; height:85px;}
+body { background:#fff url(http://cmais.com.br/portal/images/capaPrograma/segundatela/rodaviva/bg.jpg) repeat-x; color:#000; }
+.hero-unit .bgtopo { width: 260px; height:200px; background:url(http://cmais.com.br/portal/images/capaPrograma/segundatela/rodaviva/bg-topo.jpg) no-repeat; float:left; margin-right:10px; }
+.hero-unit .col-esq h1 {  background:url(http://cmais.com.br/portal/images/capaPrograma/segundatela/rodaviva/logo.png) no-repeat; width: 169px; height:85px;}
 .hero-unit .col-esq p { max-width:190px; }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media (max-width : 480px)  {
-  .hero-unit .col-esq h1 { margin:2% auto; background:url("/portal/images/capaPrograma/segundatela/rodaviva/logo2.png") no-repeat scroll 0 0 transparent; width:150px; height:75px; }
+  .hero-unit .col-esq h1 { margin:2% auto; background:url("http://cmais.com.br/portal/images/capaPrograma/segundatela/rodaviva/logo2.png") no-repeat scroll 0 0 transparent; width:150px; height:75px; }
 }
 
 @media screen and (min-width: 1025px){

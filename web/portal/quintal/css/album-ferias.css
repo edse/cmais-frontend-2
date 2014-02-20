@@ -569,19 +569,19 @@ form textarea.error{
   
 }
 
-#miolo {min-height:600px; background:url(/portal/quintal/images/bg-bastao.png) repeat-y 68px 0; margin-top:-4px;}
+#miolo {min-height:600px; background:url(http://cmais.com.br/portal/quintal/images/bg-bastao.png) repeat-y 68px 0; margin-top:-4px;}
 #miolo { *background-position:51px 0; }
-.banner { width:564px; height:91px; background:url(/portal/quintal/images/banner.png) no-repeat; margin:0 auto; display:block; }
+.banner { width:564px; height:91px; background:url(http://cmais.com.br/portal/quintal/images/banner.png) no-repeat; margin:0 auto; display:block; }
 
 .bg-album { width:100%; min-height:810px; position:relative; }
 .bg-album { *min-height:870px;}
 .img-inferior,
 .img-superior-direita,
 .img-superior-esquerda { position:absolute;}
-.img-superior-esquerda { background: url(/portal/quintal/images/img-superior-esquerda.png) no-repeat; width:353px; height:544px; left:0; top:0; }
-.img-superior-direita { background: url(/portal/quintal/images/img-superior-direita.png) no-repeat; width:425px; height:324px; right:0; top:0;}
-.img-inferior { background: url(/portal/quintal/images/img-inferior.png) no-repeat; height:290px; width:433px; right:0; bottom:0; }
-.detalhe { width:613px; height:413px; background: url(/portal/quintal/images/bg-detalhe.png) no-repeat; margin:0 auto; padding-top:6px;}
+.img-superior-esquerda { background: url(http://cmais.com.br/portal/quintal/images/img-superior-esquerda.png) no-repeat; width:353px; height:544px; left:0; top:0; }
+.img-superior-direita { background: url(http://cmais.com.br/portal/quintal/images/img-superior-direita.png) no-repeat; width:425px; height:324px; right:0; top:0;}
+.img-inferior { background: url(http://cmais.com.br/portal/quintal/images/img-inferior.png) no-repeat; height:290px; width:433px; right:0; bottom:0; }
+.detalhe { width:613px; height:413px; background: url(http://cmais.com.br/portal/quintal/images/bg-detalhe.png) no-repeat; margin:0 auto; padding-top:6px;}
 #barra-site h2 { margin-left:5px; }
 
 /*rodape2*/

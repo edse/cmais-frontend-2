@@ -1,19 +1,19 @@
 body { background:#fff687; min-height: 970px; }
-#bg { background:#fff687 url("/portal/images/capaPrograma/castelo/img-bg-cozinha.jpg") no-repeat scroll center; min-width:1000px !important; }
+#bg { background:#fff687 url("http://cmais.com.br/portal/images/capaPrograma/castelo/img-bg-cozinha.jpg") no-repeat scroll center; min-width:1000px !important; }
 .tudo { height:680px; width:1030px; position:relative; left:-60px; top:-230px; }
 #capa-site { width: 1040px; }
 #menuFloat { z-index: 10000; }
 
 .navegacao{margin-left:40px}
-.botao-bongo {z-index:0; cursor:pointer ; width:246px; height:445px; position:absolute; top:249px; left:128px; background: url(/portal/images/capaPrograma/castelo/gif-personagem-bongo.gif) no-repeat 184px 72px;}
-.botao-bongo-over {z-index:1;width:358px; height:522px; position:absolute;top:187px; left: 30px;background: url(/portal/images/capaPrograma/castelo/img-personagem-bongo-over.png) no-repeat;}
+.botao-bongo {z-index:0; cursor:pointer ; width:246px; height:445px; position:absolute; top:249px; left:128px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-bongo.gif) no-repeat 184px 72px;}
+.botao-bongo-over {z-index:1;width:358px; height:522px; position:absolute;top:187px; left: 30px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-bongo-over.png) no-repeat;}
 
-.botao-caipora {z-index:0;cursor:pointer ;width:310px; height:476px;position:absolute;top:296px; right:75px;background:url(/portal/images/capaPrograma/castelo/gif-personagem-caipora.gif) no-repeat;}
-.botao-caipora-over {z-index:1;width:467px; height:494px;position:absolute;top: 286px;right: 66px;background: url(/portal/images/capaPrograma/castelo/img-personagem-caipora-over.png) no-repeat;}
+.botao-caipora {z-index:0;cursor:pointer ;width:310px; height:476px;position:absolute;top:296px; right:75px;background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-caipora.gif) no-repeat;}
+.botao-caipora-over {z-index:1;width:467px; height:494px;position:absolute;top: 286px;right: 66px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-caipora-over.png) no-repeat;}
 
 
-.botao-dedolandia {z-index:0;cursor:pointer ;width:110px; height:177px;position:absolute;top:73px;right: 218px;background: url(/portal/images/capaPrograma/castelo/gif-dedolandia.gif) no-repeat -12px 19px;}
-.botao-dedolandia-over {z-index:1;width:283px; height:374px;position:absolute;top:-10px; right:120px; background: url(/portal/images/capaPrograma/castelo/img-dedolandia-over.png) no-repeat;}
+.botao-dedolandia {z-index:0;cursor:pointer ;width:110px; height:177px;position:absolute;top:73px;right: 218px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-dedolandia.gif) no-repeat -12px 19px;}
+.botao-dedolandia-over {z-index:1;width:283px; height:374px;position:absolute;top:-10px; right:120px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-dedolandia-over.png) no-repeat;}
 
-.botao-lavarmaos {z-index:0;cursor:pointer ;width:126px; height:75px;position:absolute;bottom: 262px; left:412px; background: url(/portal/images/capaPrograma/castelo/gif-agua-lavar-as-maos.gif) no-repeat 23px 25px;}
-.botao-lavarmaos-over {z-index:1;width:165px; height:115px;position:absolute;bottom:220px ; left:412px; background: url(/portal/images/capaPrograma/castelo/img-lavar-as-maos-over.png) no-repeat 0 45px;}
+.botao-lavarmaos {z-index:0;cursor:pointer ;width:126px; height:75px;position:absolute;bottom: 262px; left:412px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-agua-lavar-as-maos.gif) no-repeat 23px 25px;}
+.botao-lavarmaos-over {z-index:1;width:165px; height:115px;position:absolute;bottom:220px ; left:412px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-lavar-as-maos-over.png) no-repeat 0 45px;}

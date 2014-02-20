@@ -1,4 +1,4 @@
-#barra-site .topo-programa { height:160px;  background:url(/portal/images/capaPrograma/festlatinosp/detalhe.jpg) no-repeat bottom right;}
+#barra-site .topo-programa { height:160px;  background:url(http://cmais.com.br/portal/images/capaPrograma/festlatinosp/detalhe.jpg) no-repeat bottom right;}
 @media screen and (-webkit-min-device-pixel-ratio:0) { #barra-site .topo-programa { height:163px; }}
 #barra-site .redes { float: right; margin-top:100px; }
 #barra-site h2 {margin-top:0;}
@@ -6,6 +6,6 @@
 #capa-site { margin-top:-108px !important; }
 #barra-site .topo-programa { *margin-top:-20px; }
 #chamada { margin-bottom:0; }
-body {  background:#fff url(/portal/images/capaPrograma/festlatinosp/bg.jpg) repeat-x;  }
+body {  background:#fff url(http://cmais.com.br/portal/images/capaPrograma/festlatinosp/bg.jpg) repeat-x;  }
 .bg-chamada { height:60px; z-index: 100; margin-bottom:48px;}
 .bg-site { display:none; }

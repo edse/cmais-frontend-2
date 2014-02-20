@@ -1,18 +1,18 @@
 body { background:#fece7b; min-height: 970px; }
-#bg { background:#fece7b url("/portal/images/capaPrograma/castelo/img-bg-hall-arvore.jpg") no-repeat scroll center; min-width:1000px !important; }
+#bg { background:#fece7b url("http://cmais.com.br/portal/images/capaPrograma/castelo/img-bg-hall-arvore.jpg") no-repeat scroll center; min-width:1000px !important; }
 #capa-site { height:963px; }
 #capa-site { *height:993px; }
 .tudo { height:800px; margin-top:-123px; }
 #menuFloat { z-index: 10000; }
 .navegacao{margin-left: 40px;}
-.botao-celeste {z-index:0; cursor:pointer ; width:94px; height:105px; position:absolute; top: 124px; right:439px; background: url(/portal/images/capaPrograma/castelo/gif-personagem-celeste.gif) no-repeat 0 19px;}
-.botao-celeste-over {z-index:1;width:181px; height:161px;position:absolute;top: 86px; right: 390px;background: url(/portal/images/capaPrograma/castelo/img-personagem-celeste-over.png) no-repeat;}
+.botao-celeste {z-index:0; cursor:pointer ; width:94px; height:105px; position:absolute; top: 124px; right:439px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-celeste.gif) no-repeat 0 19px;}
+.botao-celeste-over {z-index:1;width:181px; height:161px;position:absolute;top: 86px; right: 390px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-celeste-over.png) no-repeat;}
 
-.botao-lanaelara {z-index:0;cursor:pointer ;width:129px; height:205px;position:absolute;top:-120px; left:271px;background: url(/portal/images/capaPrograma/castelo/gif-lustre-fadas-lana-lara.gif) no-repeat right top;}
-.botao-lanaelara-over {z-index:1;width:170px; height:246px;position:absolute;top: -127px;left: 272px;background: url(/portal/images/capaPrograma/castelo/img-lana-lara-over.png) no-repeat;}
+.botao-lanaelara {z-index:0;cursor:pointer ;width:129px; height:205px;position:absolute;top:-120px; left:271px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-lustre-fadas-lana-lara.gif) no-repeat right top;}
+.botao-lanaelara-over {z-index:1;width:170px; height:246px;position:absolute;top: -127px;left: 272px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-lana-lara-over.png) no-repeat;}
 
-.botao-joaodebarro {z-index:0;cursor:pointer ;width:76px; height:59px;position:absolute;top: 45px;right: 344px;background: url(/portal/images/capaPrograma/castelo/gif-joaodebarro-patativas-passarinho.gif) no-repeat right top ;}
-.botao-joaodebarro-over {z-index:1;width:279px; height:117px;position:absolute;top: 47px; right: 220px; background: url(/portal/images/capaPrograma/castelo/img-joaodebarro-patativas-over.gif) no-repeat;}
+.botao-joaodebarro {z-index:0;cursor:pointer ;width:76px; height:59px;position:absolute;top: 45px;right: 344px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-joaodebarro-patativas-passarinho.gif) no-repeat right top ;}
+.botao-joaodebarro-over {z-index:1;width:279px; height:117px;position:absolute;top: 47px; right: 220px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-joaodebarro-patativas-over.gif) no-repeat;}
 
-.botao-etevaldo {z-index:0;cursor:pointer ;width:231px; height:143px;position:absolute;top: 215px; left: 0;background: url(/portal/images/capaPrograma/castelo/gif-personagem-etevaldo.gif) no-repeat 45px 6px;}
-.botao-etevaldo-over {z-index:1;width:434px; height:558px;position:absolute;top: 89px; left:0; background: url(/portal/images/capaPrograma/castelo/img-personagem-etevaldo-over.png) no-repeat;}
+.botao-etevaldo {z-index:0;cursor:pointer ;width:231px; height:143px;position:absolute;top: 215px; left: 0;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-etevaldo.gif) no-repeat 45px 6px;}
+.botao-etevaldo-over {z-index:1;width:434px; height:558px;position:absolute;top: 89px; left:0; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-etevaldo-over.png) no-repeat;}

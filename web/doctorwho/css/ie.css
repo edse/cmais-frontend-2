@@ -1,6 +1,6 @@
 #topo-portal{*position: fixed;}
 #menu-portal .m-radio a {*width: 65px;*padding-bottom:13px;*font-size: 12px;}
-#menu-portal .menu-aberto .abas li.ativo span, #menu-portal .menu-aberto .abas li:hover span {*background: url("/portal/images/bg-menu-rodape.png") no-repeat scroll 0px 9px transparent;}
+#menu-portal .menu-aberto .abas li.ativo span, #menu-portal .menu-aberto .abas li:hover span {*background: url("http://cmais.com.br/portal/images/bg-menu-rodape.png") no-repeat scroll 0px 9px transparent;}
 
 #barra-portal {*height: 30px;*width: 1012px;}
 

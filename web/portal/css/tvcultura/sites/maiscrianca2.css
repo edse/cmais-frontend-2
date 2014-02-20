@@ -1,5 +1,5 @@
-body { background:#ffed5a url(/portal/images/capaPrograma/maiscrianca2/bg-portal.jpg) repeat-x ; position:relative; }
-.bg {  background:url(/portal/images/capaPrograma/maiscrianca2/bg.png) no-repeat bottom left; width:1444px; height:676px; position:absolute; bottom:474px; left:0; }
+body { background:#ffed5a url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/bg-portal.jpg) repeat-x ; position:relative; }
+.bg {  background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/bg.png) no-repeat bottom left; width:1444px; height:676px; position:absolute; bottom:474px; left:0; }
 /* TOPO PORTAL*/
 h1{ margin:0;} 
 #menu-portal-2 .busca-portal .ipt-txt { border-radius:0; margin: 0;    padding: 0 0 0 30px;}
@@ -23,7 +23,7 @@ p { color:#333; font-size: 14px;}
 .nav-tabs > li > a { border-radius: 0; height:32px; line-height: 32px; padding:0; margin:0; border:none;}
 .nav-tabs { border:none; margin-bottom:0; }
 .nav-tabs > li > a p { background:#ffe64f; color:#ff9928; text-transform:uppercase; font-weight: bold; font-size:25px; height:32px; line-height: 32px; float:left; padding:0 13px; margin:0; }
-.nav-tabs > li > a span { background:url(/portal/images/capaPrograma/maiscrianca2/detalhe.png) no-repeat; width:13px; height:32px; display:block; float:left; position:relative; }
+.nav-tabs > li > a span { background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/detalhe.png) no-repeat; width:13px; height:32px; display:block; float:left; position:relative; }
 .nav-tabs > .active > a p, 
 .nav-tabs > .active > a:hover p { background:#ffce2b; color:#ff6525; margin-left:-13px; padding-left:26px; }
 .nav-tabs > li > a:hover,
@@ -70,7 +70,7 @@ p { color:#333; font-size: 14px;}
 .destaques .h2 h2 a { font-size:30px; text-transform:uppercase; color:#ff6733; background:#ffce2b; margin:0; text-align:left; padding:0; line-height:23px; float: left; }
 .destaques.rodape .h2 h2,
 .destaques.rodape .h2 h2 a { background:none;}
-.destaques .h2 span { background:url(/portal/images/capaPrograma/maiscrianca2/detalhe2.png) no-repeat; width:71px; height: 23px; display:block; float:left; }
+.destaques .h2 span { background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/detalhe2.png) no-repeat; width:71px; height: 23px; display:block; float:left; }
 .destaques ul { clear: both; margin-left:0; }
 .destaques ul li { float:left; margin-right:21px; margin-left:0; }
 .destaques ul li.vila { margin-top:5px; }
@@ -84,7 +84,7 @@ p { color:#333; font-size: 14px;}
 #myCarousel ul { margin:0 0 0 62px; }
 #myCarousel li { margin:0 18px 0 0; }
 #myCarousel .span11 { margin-left:0; }
-.carousel-control { background:url(/portal/images/capaPrograma/maiscrianca2/seta.png) no-repeat; width: 36px; height:55px; border: none; border-radius:0; text-indent:-9999px; margin-top:-21px; }
+.carousel-control { background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/seta.png) no-repeat; width: 36px; height:55px; border: none; border-radius:0; text-indent:-9999px; margin-top:-21px; }
 .carousel-control.right { background-position:-36px 0; }
 .carousel-inner ul li img { width:90px; height:55px; }
 .destaques h3,
@@ -102,10 +102,10 @@ p { color:#333; font-size: 14px;}
 .destaques.rodape .pais h2 a { color:#333; }
 .destaques.rodape .pais a p { color:#333; }
 .destaques.rodape .pais a:hover p { color:#FF6733;}
-.destaques.rodape .span4 { background:url(/portal/images/capaPrograma/maiscrianca2/bg-branco.png) repeat; height:283px;  }
+.destaques.rodape .span4 { background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/bg-branco.png) repeat; height:283px;  }
 .destaques.rodape .pais ul { padding-bottom:10px; }
 .destaques.rodape .pais li img { float:left; margin:0 0 0 10px; }
-.destaques.rodape .pais li { margin:10px 0 0 0; padding:0 0 10px 0; background: url(/portal/images/capaPrograma/maiscrianca2/borda-noticia.png)repeat-x bottom; }
+.destaques.rodape .pais li { margin:10px 0 0 0; padding:0 0 10px 0; background: url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/borda-noticia.png)repeat-x bottom; }
 .destaques.rodape .pais li.last { padding-bottom:0; background:none; }
 .destaques.rodape .pais li a { float:left; margin:0 10px; text-align:left; color:#333333; overflow:hidden; }
 .destaques.rodape .pais li a.row-fluid { margin:0; }
@@ -114,12 +114,12 @@ p { color:#333; font-size: 14px;}
 .destaques.rodape .span4.last { margin-top:20px; }
 .naweb ul li { margin-right:6px; }
 .naweb a { display: block; }
-.naweb .quintal { background:url(/portal/images/capaPrograma/maiscrianca2/quintal.png) no-repeat -138px 0; width:127px; height:120px; }
-.naweb .tvrtb { background:url(/portal/images/capaPrograma/maiscrianca2/tvrtb.png) no-repeat -126px 0; width:121px; height:113px; }
-.naweb .cartaozinho { background:url(/portal/images/capaPrograma/maiscrianca2/cartaozinho.png) no-repeat -130px 0; width:113px; height:113px; }
-.naweb .castelortb { background:url(/portal/images/capaPrograma/maiscrianca2/castelortb.png) no-repeat -162px 0; width:150px; height:114px; }
-.naweb .vilasesamo { background:url(/portal/images/capaPrograma/maiscrianca2/vilasesamo.png) no-repeat -212px 0; width:212px; height:99px; }
-.naweb .cocorico { background:url(/portal/images/capaPrograma/maiscrianca2/cocorico.png) no-repeat -225px 0; width:213px; height:60px; }
+.naweb .quintal { background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/quintal.png) no-repeat -138px 0; width:127px; height:120px; }
+.naweb .tvrtb { background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/tvrtb.png) no-repeat -126px 0; width:121px; height:113px; }
+.naweb .cartaozinho { background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/cartaozinho.png) no-repeat -130px 0; width:113px; height:113px; }
+.naweb .castelortb { background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/castelortb.png) no-repeat -162px 0; width:150px; height:114px; }
+.naweb .vilasesamo { background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/vilasesamo.png) no-repeat -212px 0; width:212px; height:99px; }
+.naweb .cocorico { background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/cocorico.png) no-repeat -225px 0; width:213px; height:60px; }
 .naweb li a:hover { background-position:0 0;  }
 
 /* /destaques*/ 
@@ -132,7 +132,7 @@ p { color:#333; font-size: 14px;}
 .vcsabia ul li.span4 a { color:#333; text-align:left; font-size:16px; font-weight:bold; }
 .vcsabia ul li.span4 a img { margin-bottom:5px;} 
 .destaques .h2.acento { padding-top:10px;}
-.voltar { text-align:left; margin:0 0 -20px 0; color:#ff6525; padding:0; font-size:15px; text-transform:uppercase; font-weight:bold; background:url(/portal/images/capaPrograma/maiscrianca2/voltar.png) no-repeat left 4px; padding-left:15px;   }
+.voltar { text-align:left; margin:0 0 -20px 0; color:#ff6525; padding:0; font-size:15px; text-transform:uppercase; font-weight:bold; background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/voltar.png) no-repeat left 4px; padding-left:15px;   }
 .voltar:hover { color:#ff6525; }
 .voltar .icon-chevron-left { color:#ff6525; font-size:15px; margin-top:2px;  }
 
@@ -160,10 +160,10 @@ p { color:#333; font-size: 14px;}
 
 .pagination .anterior a,
 .pagination .anterior a:hover,
-.pagination ul .disabled.anterior a { background-image:url(/portal/images/capaPrograma/maiscrianca2/anterior.png); background-position:5px 8px; padding-left:20px;} 
+.pagination ul .disabled.anterior a { background-image:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/anterior.png); background-position:5px 8px; padding-left:20px;} 
 .pagination .proxima a,
 .pagination .proxima a:hover,
-.pagination ul .disabled.proxima a { background-image:url(/portal/images/capaPrograma/maiscrianca2/proxima.png); background-position:85px 8px;}
+.pagination ul .disabled.proxima a { background-image:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/proxima.png); background-position:85px 8px;}
 .pagination li a,
 .pagination ul > .disabled > span, .pagination ul > .disabled > a, .pagination ul > .disabled > a:hover {  color:#ff6525; font-size:15px; text-transform:uppercase; padding-right:20px;} 
 .pagination ul > li > a, .pagination ul > li > span { line-height:30px;} 
@@ -230,12 +230,12 @@ p { color:#333; font-size: 14px;}
 .carrossel .jcarousel-item { width:90px; height:55px; overflow:hidden; }
 .carrossel .jcarousel-item-horizontal { margin:0 10px 0 0; }
 .carrossel .jcarousel-prev,
-.carrossel .jcarousel-next {  background:url(/portal/images/capaPrograma/maiscrianca2/seta.png) no-repeat; width:36px; height:55px;  top:0;  }
+.carrossel .jcarousel-next {  background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/seta.png) no-repeat; width:36px; height:55px;  top:0;  }
 .carrossel .jcarousel-prev { left:0; }
 .carrossel .jcarousel-next { right:0; background-position:-36px 0; }
 /* /natv */
 
-.destaques.rodape .span4.last { padding:5px; background:url(/portal/images/capaPrograma/maiscrianca2/bg-branco.png) repeat; margin-left:2%; width:310px; height:260px;} 
+.destaques.rodape .span4.last { padding:5px; background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/bg-branco.png) repeat; margin-left:2%; width:310px; height:260px;} 
 .destaques .span12 .box-conteudo { text-align:left;}
 
 /* ferias*/
@@ -264,10 +264,10 @@ p { color:#333; font-size: 14px;}
 #ferias h2 {color:#ffed5a; font-size:30px; line-height:34px; text-transform:uppercase; margin-top:0;}
 #ferias p { color:#fff; } 
 #ferias .span4 p { color:#fff; max-height:285px; overflow: hidden;} 
-#ferias .barra { width: 100%; display:block; background: url(/portal/images/capaPrograma/maiscrianca2/divisa-ferias.png) repeat-x; height:4px; clear:both; }
+#ferias .barra { width: 100%; display:block; background: url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/divisa-ferias.png) repeat-x; height:4px; clear:both; }
 #menu .tab-content {  overflow: hidden;}
-#ferias .oquee { background:#dd2b7d url(/portal/images/capaPrograma/maiscrianca2/bg-pergunta.png) repeat; padding-top:0; }
-#ferias .oquee h3 {background: url(/portal/images/capaPrograma/maiscrianca2/oquee.png) no-repeat; text-indent:-9999px; margin:0; width: 524px; height:191px;} 
+#ferias .oquee { background:#dd2b7d url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/bg-pergunta.png) repeat; padding-top:0; }
+#ferias .oquee h3 {background: url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/oquee.png) no-repeat; text-indent:-9999px; margin:0; width: 524px; height:191px;} 
 #ferias .oquee p { margin:-60px 0 20px 85px;} 
 #ferias .form-contato label {color:#fff; width:49%; margin:0 2% 2% 0; float: left; font-weight:bold; text-transform:uppercase; height:24px; line-height:24px; position:relative; }
 #ferias .form-contato textarea,
@@ -279,10 +279,10 @@ p { color:#333; font-size: 14px;}
 #ferias .form-contato textarea { position:absolute; right:3px; top:0; height:96px; width: 90%;}
 #ferias .form-contato  .email { margin-right:0; float:right;} 
 #ferias .form-contato  .charada { width:100%; overflow:hidden; height:100px; padding-bottom:20px; }   
-#ferias .form-contato #enviar { background:url(/portal/images/capaPrograma/maiscrianca2/btn-enviar.png) no-repeat; width: 116px; height:29px; float:right; color:#dd2b7d;  border:none; box-shadow:none; border-radius:0; -moz-border-radius: 0; -webkit-border-radius:0; text-transform:uppercase; font-weight:bold;} 
+#ferias .form-contato #enviar { background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/btn-enviar.png) no-repeat; width: 116px; height:29px; float:right; color:#dd2b7d;  border:none; box-shadow:none; border-radius:0; -moz-border-radius: 0; -webkit-border-radius:0; text-transform:uppercase; font-weight:bold;} 
 #ferias .carrossel { padding:0; margin:0 !important; width:930px !important; } 
 #ferias .carrossel .jcarousel-prev, 
-#ferias .carrossel .jcarousel-next { background-image: url(/portal/images/capaPrograma/maiscrianca2/seta-carrossel.png); top:30px;}
+#ferias .carrossel .jcarousel-next { background-image: url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/seta-carrossel.png); top:30px;}
 #ferias .carrossel .jcarousel-clip.jcarousel-clip-horizontal { width:840px;} 
 #ferias .carrossel li a, 
 #ferias .carrossel .jcarousel-item a img, 

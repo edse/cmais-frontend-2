@@ -479,8 +479,8 @@ a.jp-unmute:hover,
 div.jp-volume-bar,
 div.jp-volume-bar-value,
 div.jp-video div.jp-video-play,
-div.jp-video div.jp-video-play:hover {background-image:url(/portal/images/jplayer.png);}
-div.jp-seeking-bg {	background-image:url(/portal/images/pbar-ani.gif);}
+div.jp-video div.jp-video-play:hover {background-image:url(http://cmais.com.br/portal/images/jplayer.png);}
+div.jp-seeking-bg {	background-image:url(http://cmais.com.br/portal/images/pbar-ani.gif);}
 div.jp-audio {width:310px;}
 div.jp-audio div.jp-type-single a.jp-play,
 div.jp-audio div.jp-type-single a.jp-pause {top:10px; left:10px;}

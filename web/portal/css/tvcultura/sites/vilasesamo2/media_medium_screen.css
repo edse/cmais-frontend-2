@@ -31,8 +31,8 @@
 #nav-tablet img{float: right;width: 35px; margin:2px 24px 0 9px;}
 .navbar-fixed-top {margin-bottom: 0;position: absolute;}
 .navbar-inverse .navbar-inner.topo-vila {background:#fff!important;height: 65px!important;padding: 4px 6px;}
-.navbar .container {width: auto;background: url(/portal/images/capaPrograma/vilasesamo2/mobile/icon_menu_mobile.png) no-repeat right;}
-.last{background: url(/portal/images/capaPrograma/vilasesamo2/mobile/icon_fecha.png) no-repeat right;}
+.navbar .container {width: auto;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/icon_menu_mobile.png) no-repeat right;}
+.last{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/icon_fecha.png) no-repeat right;}
 /*desaparece se for mobile o topo dos pais*/
 .topo-vila .nav {display: none;}
 .header-bar{display: none;}

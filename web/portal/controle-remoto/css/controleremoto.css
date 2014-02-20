@@ -39,9 +39,9 @@ body{padding:0!important;}
 .container .cr-topo h1{font-weight:normal;font-family:'TitilliumLtBold',Arial, Helvetica, sans-serif; font-size:26px; margin:0; padding:0; display:block; width:200px; float:left; color:#00bed5; letter-spacing: -0.04em;line-height:23px;}
 .container .cr-box-escolha{width:140px; position:relative;}
 .container .cr-box-escolha span{font-weight:normal;font-family:'TitilliumSemiBold', Arial, Helvetica, sans-serif; font-size:11px; color:#dedede; text-transform: uppercase;}
-.container .cr-box-escolha .cr-btn-radio{width:27px; height:25px; display:block; float:right; background:url(/portal/images/capaPrograma/culturabrasil/controleremoto/cr-btn-radios.jpg) no-repeat 0px 0px; position:absolute; top:0; right:0;}
+.container .cr-box-escolha .cr-btn-radio{width:27px; height:25px; display:block; float:right; background:url(http://cmais.com.br/portal/images/capaPrograma/culturabrasil/controleremoto/cr-btn-radios.jpg) no-repeat 0px 0px; position:absolute; top:0; right:0;}
 .container .cr-box-escolha .cr-btn-radio:hover,
-.container .cr-box-escolha .cr-btn-radio.ativo{background:url(/portal/images/capaPrograma/culturabrasil/controleremoto/cr-btn-radios.jpg) no-repeat 0px bottom;}
+.container .cr-box-escolha .cr-btn-radio.ativo{background:url(http://cmais.com.br/portal/images/capaPrograma/culturabrasil/controleremoto/cr-btn-radios.jpg) no-repeat 0px bottom;}
 .container .cr-box-escolha .cr-radios{padding: 0;margin: 0;overflow: hidden;position: absolute;top: 22px; right:-1px;z-index: 10000; *z-index: 10000; display:none;}
 .container .cr-box-escolha .cr-radios.ativo{display:block;}
 .container .cr-box-escolha .cr-radios li{list-style:none;width:100px;}
@@ -69,7 +69,7 @@ body{padding:0!important;}
 .container .cr-problemas{font-weight:normal;font-family:'TitilliumBold', Arial, Helvetica, sans-serif; color:#929c9d; font-size: 14px;padding:5px; text-align:center; display:block; margin:0 auto;}
 .container .duvidas{background:#FFFFFF; width:100%;}
 .container .cr-banner {overflow: hidden;background: #FFFFFF;padding: 10px 20px;position:relative;}
-.container .cr-links{background: url(/portal/images/capaPrograma/culturabrasil/controleremoto/cr_links.jpg) no-repeat;}
+.container .cr-links{background: url(http://cmais.com.br/portal/images/capaPrograma/culturabrasil/controleremoto/cr_links.jpg) no-repeat;}
 .container .cr-redes a{width: 20px;height: 20px;display: block;float: left;margin-right: 2px;margin-top: 4px;}
 .container .cr-logo-cultura-fm{width: 80px;height: 20px;display: block;margin-bottom: 4px; background-position:-1px -5px;}
 .container .cr-logo-cultura-brasil{width: 78px;height: 19px;display: block;margin-bottom: 4px;background-position:-1px -28px;}

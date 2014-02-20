@@ -587,7 +587,7 @@ $(function(){
       url: "http://app.cmais.com.br/portal/cams.php?s=ecovias",
       dataType: "jsonp",
       success: function(data){
-        $.each(data, function(i,data){
+        $.each(data.data, function(i,data){
           var a = new String(data.src);
           //Imigrantes
           if(a.indexOf("Imigrantes")>=0){
@@ -638,9 +638,9 @@ $(function(){
     var ayrtonsenna = 0;
     $.ajax({
       url: "http://app.cmais.com.br/portal/cams.php?fpa=1&s=ecopistas",
-      dataType: "json",
+      dataType: "jsonp",
       success: function(data){
-        $.each(data, function(i,data){
+        $.each(data.data, function(i,data){
           var a = data.title.substring(5,data.title.length);
           //Ayrton Senna
           

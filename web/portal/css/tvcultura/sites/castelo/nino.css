@@ -1,19 +1,19 @@
 body { background:#e8e687; min-height: 970px; }
-#bg { background:#e8e687 url("/portal/images/capaPrograma/castelo/img-bg-qnino.jpg") no-repeat scroll center; min-width:1000px !important; }
+#bg { background:#e8e687 url("http://cmais.com.br/portal/images/capaPrograma/castelo/img-bg-qnino.jpg") no-repeat scroll center; min-width:1000px !important; }
 #capa-site { height:950px; }
 #capa-site { *height:993px; }
 .tudo { height:680px; }
 .navegacao{margin-left: 40px; bottom:44px !important;}
-.botao-nino {z-index:0; cursor:pointer ; width:287px; height:293px; position:absolute; top:224px; right:425px; background: url(/portal/images/capaPrograma/castelo/gif-nino-pisca.gif) no-repeat  146px 139px;}
-.botao-nino-over {z-index:1;width:442px; height:524px;position:absolute;top: 141px; right: 296px;background: url(/portal/images/capaPrograma/castelo/img-personagem-nino.png) no-repeat;}
+.botao-nino {z-index:0; cursor:pointer ; width:287px; height:293px; position:absolute; top:224px; right:425px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-nino-pisca.gif) no-repeat  146px 139px;}
+.botao-nino-over {z-index:1;width:442px; height:524px;position:absolute;top: 141px; right: 296px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-nino.png) no-repeat;}
 
-.botao-zeca {z-index:0;cursor:pointer ;width:232px; height:170px;position:absolute;top:243px; right:157px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-zeca.gif) no-repeat 103px 0;}
-.botao-zeca-over {z-index:1;width:297px; height:325px;position:absolute;bottom:146px;right:111px;background: url(/portal/images/capaPrograma/castelo/img-personagem-zeca-over.png) no-repeat;}
+.botao-zeca {z-index:0;cursor:pointer ;width:232px; height:170px;position:absolute;top:243px; right:157px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-zeca.gif) no-repeat 103px 0;}
+.botao-zeca-over {z-index:1;width:297px; height:325px;position:absolute;bottom:146px;right:111px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-zeca-over.png) no-repeat;}
 
-.botao-biba {z-index:0;cursor:pointer ;width:152px; height:413px;position:absolute;top: 54px;left: 137px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-biba.gif) no-repeat  14px 17px;}
-.botao-biba-over {z-index:1;width:396px; height:526px;position:absolute;top:-44px; left:97px; background: url(/portal/images/capaPrograma/castelo/img-personagem-biba-over.png) no-repeat;}
+.botao-biba {z-index:0;cursor:pointer ;width:152px; height:413px;position:absolute;top: 54px;left: 137px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-biba.gif) no-repeat  14px 17px;}
+.botao-biba-over {z-index:1;width:396px; height:526px;position:absolute;top:-44px; left:97px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-biba-over.png) no-repeat;}
 
-.botao-telekid {z-index:0;cursor:pointer ;width:121px; height:104px;position:absolute;top: 0; left: 0;background: url(/portal/images/capaPrograma/castelo/gif-telekid.gif) no-repeat;}
-.botao-telekid-over {z-index:1;width:220px; height:297px;position:absolute;top: 0; left:0; background: url(/portal/images/capaPrograma/castelo/telekid-over.png) no-repeat;}
+.botao-telekid {z-index:0;cursor:pointer ;width:121px; height:104px;position:absolute;top: 0; left: 0;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-telekid.gif) no-repeat;}
+.botao-telekid-over {z-index:1;width:220px; height:297px;position:absolute;top: 0; left:0; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/telekid-over.png) no-repeat;}
 
 .navegacao .bolinhas{ z-index: 1000; }

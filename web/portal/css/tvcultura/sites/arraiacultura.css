@@ -11,8 +11,8 @@
 }
 
 
-body { background:#ff4512 url(/portal/images/capaPrograma/arraiacultura/img_pattern_arraiacultura.jpg) repeat-x; }
-#capa-site { background: url(/portal/images/capaPrograma/arraiacultura/img_bandeiras.png) no-repeat top; margin-top:0 !important;  }
+body { background:#ff4512 url(http://cmais.com.br/portal/images/capaPrograma/arraiacultura/img_pattern_arraiacultura.jpg) repeat-x; }
+#capa-site { background: url(http://cmais.com.br/portal/images/capaPrograma/arraiacultura/img_bandeiras.png) no-repeat top; margin-top:0 !important;  }
 #chamada{display:none;}
 /*.bg-site{margin-top:3px;}*/
 .topo-programa h3.tit-pagina span,
@@ -25,11 +25,11 @@ body { background:#ff4512 url(/portal/images/capaPrograma/arraiacultura/img_patt
 .box-interna a,
 .box-interna h3 { color:#fbed20 !important; }
 #direita .box-padrao h4 { background:#fbed20; color:#cc0b30; padding-left:10px; height:30px; padding-top:5px; line-height:30px;  }
-#direita .box-padrao h4 span { background:url(/portal/images/capaPrograma/arraiacultura/icones.png) no-repeat; width:24px; height:24px; display:block; float:left; margin-right:10px; }
+#direita .box-padrao h4 span { background:url(http://cmais.com.br/portal/images/capaPrograma/arraiacultura/icones.png) no-repeat; width:24px; height:24px; display:block; float:left; margin-right:10px; }
 #direita .box-padrao h4 .instagram { background-position:0 -24px; }
 #direita .box-padrao p { color:#fbed20; padding:10px; background:#d30b2e; margin:0 10px; }
 #direita .box-padrao { position:relative; }
-#direita .box-padrao .aba { width:10px; height:10px; background:url(/portal/images/capaPrograma/arraiacultura/icones.png) no-repeat 0 -47px; display:block; position:absolute; top:35px; right:0  }
+#direita .box-padrao .aba { width:10px; height:10px; background:url(http://cmais.com.br/portal/images/capaPrograma/arraiacultura/icones.png) no-repeat 0 -47px; display:block; position:absolute; top:35px; right:0  }
 
 /*
 #embedagram { margin-left:20px; background:#d30b2e; width: 280px; margin: 0 0 0 10px; padding-left:10px; overflow: hidden; }

@@ -1,17 +1,17 @@
 body { background:#a6b94d; min-height: 970px; }
-#bg { background:#a6b94d url("/portal/images/capaPrograma/castelo/img-bg-qmorgana.jpg") no-repeat scroll center; min-width:1000px !important; }
+#bg { background:#a6b94d url("http://cmais.com.br/portal/images/capaPrograma/castelo/img-bg-qmorgana.jpg") no-repeat scroll center; min-width:1000px !important; }
 #capa-site { height:963px; }
 .tudo { height:680px; }
 .navegacao{left:40px;}
 
 .botao-morgana{position: absolute;top: -74px;left: 389px;width: 310px;height: 622px;}
-.botao-morgana-over{position: absolute;top: -142px;left: 311px;width: 547px;height: 796px; background: url(/portal/images/capaPrograma/castelo/img-personagem-morgana-over.png) repeat-x;}
-.gif-morgana{width: 135px;height: 176px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-morgana.gif) no-repeat;position: absolute;right: 187px;top: -71px;}
+.botao-morgana-over{position: absolute;top: -142px;left: 311px;width: 547px;height: 796px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-morgana-over.png) repeat-x;}
+.gif-morgana{width: 135px;height: 176px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-morgana.gif) no-repeat;position: absolute;right: 187px;top: -71px;}
 
 .botao-adelaide{position: absolute;top: 163px;left: 32px;width: 196px;height: 282px;}
-.botao-adelaide-over{position: absolute;top: 149px;left: -4px;width: 241px;height: 311px;background: url(/portal/images/capaPrograma/castelo/img-personagem-adelaide-over.png) repeat-x;}
-.gif-adelaide{width: 55px;height: 57px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-adelaide.gif) no-repeat;position: absolute;top: 19px;left: 78px;}
+.botao-adelaide-over{position: absolute;top: 149px;left: -4px;width: 241px;height: 311px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-adelaide-over.png) repeat-x;}
+.gif-adelaide{width: 55px;height: 57px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-adelaide.gif) no-repeat;position: absolute;top: 19px;left: 78px;}
 
 .botao-valdirene{position: absolute;top: 141px;left: 249px;width: 81px;height: 334px;}
-.botao-valdirene-over{position: absolute;top: 102px;left: 219px;width: 118px;height: 383px; background: url(/portal/images/capaPrograma/castelo/img-personagem-valdirene-over.png) repeat-x;}
-.gif-valdirene{width: 97px;height: 209px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-valdirene.gif) no-repeat;top: 128px;position: absolute;left: -14px;}
+.botao-valdirene-over{position: absolute;top: 102px;left: 219px;width: 118px;height: 383px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-valdirene-over.png) repeat-x;}
+.gif-valdirene{width: 97px;height: 209px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-valdirene.gif) no-repeat;top: 128px;position: absolute;left: -14px;}

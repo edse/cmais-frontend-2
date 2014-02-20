@@ -1,13 +1,13 @@
 /* cartaoverde*/
 
-body { background:#fff url(/portal/images/capaPrograma/segundatela/cartaoverde/pattern.jpg) repeat-x; color:#000; }
-.hero-unit .bgtopo { width: 104px; height:200px; background:url(/portal/images/capaPrograma/segundatela/cartaoverde/bola.jpg) no-repeat; float:left; margin-right:10px; }
-.hero-unit .col-esq h1 {  background:url(/portal/images/capaPrograma/segundatela/cartaoverde/logocv.png) no-repeat; width: 200px; height:76px;}
+body { background:#fff url(http://cmais.com.br/portal/images/capaPrograma/segundatela/cartaoverde/pattern.jpg) repeat-x; color:#000; }
+.hero-unit .bgtopo { width: 104px; height:200px; background:url(http://cmais.com.br/portal/images/capaPrograma/segundatela/cartaoverde/bola.jpg) no-repeat; float:left; margin-right:10px; }
+.hero-unit .col-esq h1 {  background:url(http://cmais.com.br/portal/images/capaPrograma/segundatela/cartaoverde/logocv.png) no-repeat; width: 200px; height:76px;}
 
 /* Smartphones (portrait and landscape) ----------- */
 /*
 @media (max-width : 480px)  {
-  .hero-unit .col-esq h1 { margin:2% auto; background:url("/portal/images/capaPrograma/segundatela/jornaldacultura/logo-jc-small.png") no-repeat scroll 0 0 transparent }
+  .hero-unit .col-esq h1 { margin:2% auto; background:url("http://cmais.com.br/portal/images/capaPrograma/segundatela/jornaldacultura/logo-jc-small.png") no-repeat scroll 0 0 transparent }
 }
 */
 

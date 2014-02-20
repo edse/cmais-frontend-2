@@ -1,6 +1,6 @@
 .bg-chamada,
 .bg-site { background :#6e3d3c; }
-#barra-site .topo-programa { background :url(/portal/images/capaPrograma/caetano/bg.png) no-repeat right; }
+#barra-site .topo-programa { background :url(http://cmais.com.br/portal/images/capaPrograma/caetano/bg.png) no-repeat right; }
 .bg-site { top:0 !important; }
 #barra-site .redes { float: right; }
 #barra-site h2 {margin-top:30px;}

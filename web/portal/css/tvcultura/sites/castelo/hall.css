@@ -1,16 +1,16 @@
 body { background:#ffc561; min-height: 970px; }
-#bg { background:#ffc561 url("/portal/images/capaPrograma/castelo/img-bg-hall-entrada.jpg") no-repeat scroll center; min-width:1000px !important; }
+#bg { background:#ffc561 url("http://cmais.com.br/portal/images/capaPrograma/castelo/img-bg-hall-entrada.jpg") no-repeat scroll center; min-width:1000px !important; }
 #capa-site { height:963px; }
 #capa-site { *height:993px; }
 .tudo { height:680px; }
 .navegacao {position: absolute;left: 40px;}
-.botao-relogio {z-index: 0;cursor: pointer;width: 153px;height: 337px;position: absolute;top: 20px;left: 141px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-relogio.gif) no-repeat 54px 168px;}
-.botao-relogio-over {z-index:1;width:200px; height:346px;position:absolute;top: 16px; left: 136px;background: url(/portal/images/capaPrograma/castelo/img-personagem-relogio-over.png) no-repeat;}
+.botao-relogio {z-index: 0;cursor: pointer;width: 153px;height: 337px;position: absolute;top: 20px;left: 141px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-relogio.gif) no-repeat 54px 168px;}
+.botao-relogio-over {z-index:1;width:200px; height:346px;position:absolute;top: 16px; left: 136px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-relogio-over.png) no-repeat;}
 .botao-relogio-over { *top:30px; }
 .antena{top: 300px;position: absolute;right: 514px;}
 .botao-ratinho {z-index: 0;cursor: pointer;width: 134px;height: 80px;position: absolute;top: 331px;left: 336px;}
-.botao-ratinho-over {z-index: 1;width: 137px;height: 246px;position: absolute;bottom: 118px;left: 334px;background: url(/portal/images/capaPrograma/castelo/img-personagem-ratinho-over.png) no-repeat;}
+.botao-ratinho-over {z-index: 1;width: 137px;height: 246px;position: absolute;bottom: 118px;left: 334px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-ratinho-over.png) no-repeat;}
 
-.botao-godofredo {z-index: 0;cursor: pointer;width: 99px;height: 80px;position: absolute;bottom: 275px;right: 218px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-maugodofredo.gif) no-repeat -14px -12px;}
-.botao-godofredo-over {z-index:1;width:276px; height:231px;position:absolute;top: 196px; right:159px; background: url(/portal/images/capaPrograma/castelo/img-personagem-maugodofredo-over.gif) no-repeat;}
+.botao-godofredo {z-index: 0;cursor: pointer;width: 99px;height: 80px;position: absolute;bottom: 275px;right: 218px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-maugodofredo.gif) no-repeat -14px -12px;}
+.botao-godofredo-over {z-index:1;width:276px; height:231px;position:absolute;top: 196px; right:159px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-maugodofredo-over.gif) no-repeat;}
 

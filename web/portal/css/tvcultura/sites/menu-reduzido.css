@@ -2,7 +2,7 @@
 
 
 body {min-height:700px;}
-#menu-reduzido{width:100%; height: 47px; background: black; border-bottom: 2px #FE6732 solid;background:url(/portal/images/bg-tudo2.jpg) repeat;}
+#menu-reduzido{width:100%; height: 47px; background: black; border-bottom: 2px #FE6732 solid;background:url(http://cmais.com.br/portal/images/bg-tudo2.jpg) repeat;}
 #topo-contador {width:702px; margin:0 auto;height:46px;}
 #topo-contador .cmais {width:120px; height:30px; float:left; margin-top:8px;}
 
@@ -11,7 +11,7 @@ body {min-height:700px;}
 .links li {width:34px; float:left; margin-right:10px; }
 .links li:last-child { margin-right:0;}
 .links li a {display:block; width:34px; height:34px; margin-top:6px; }
-.links .barra { background:url(/portal/images/menu-reduzido/barra-lateral.png) no-repeat; }
+.links .barra { background:url(http://cmais.com.br/portal/images/menu-reduzido/barra-lateral.png) no-repeat; }
 .links .tvratimbum {background-position: 0 -34px}
 .links .multicultura {background-position: 0 -68px}
 .links .tvunivesp {background-position: 0 -102px}
@@ -20,7 +20,7 @@ body {min-height:700px;}
 .links .instangram{background-position: 0 -238px} 
 .links .google{background-position: 0 -272px} 
 .links .itunes {background-position: 0 -306px} 
-.links .curtir {background:url(/portal/images/menu-reduzido/ico-compartilhar.png) no-repeat; width:32px; height:33px; margin-top:7px;}
+.links .curtir {background:url(http://cmais.com.br/portal/images/menu-reduzido/ico-compartilhar.png) no-repeat; width:32px; height:33px; margin-top:7px;}
 .links .twitter {background-position: 0 -33px}
 .links .youtube {background-position: 0 -66px}
 .links .flickr {background-position: 0 -99px}

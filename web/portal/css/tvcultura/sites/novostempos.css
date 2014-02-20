@@ -11,7 +11,7 @@
 
 .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { max-width:980px; }
 
-.topo { background:#fff url(/portal/images/capaPrograma/novostempos/bg.gif) repeat;    color: #FFFFFF;    min-height: 420px;    position: relative; }
+.topo { background:#fff url(http://cmais.com.br/portal/images/capaPrograma/novostempos/bg.gif) repeat;    color: #FFFFFF;    min-height: 420px;    position: relative; }
 .topo .container { margin-top:45px; }
 .topo .container h1 { margin-top:20px;  }
 .redes { margin-top:30px; }
@@ -47,7 +47,7 @@
 .row-fluid a,
 .row-fluid h2 { color:#1b4a87; font-size:24px; line-height:30px; }
 .row-fluid img { margin:40px 0 20px 0; }
-i.seta { background:url(/portal/images/capaPrograma/novostempos/seta.png) no-repeat; width:12px; height:12px; display: block; float:left; margin:12px 5px 0 0; }
+i.seta { background:url(http://cmais.com.br/portal/images/capaPrograma/novostempos/seta.png) no-repeat; width:12px; height:12px; display: block; float:left; margin:12px 5px 0 0; }
 .row-fluid a { font-weight: bold; float:right; margin:10px 0;  }
 .row-fluid ul a,
 .row-fluid a.btn-voltar,
@@ -84,4 +84,4 @@ i.seta { background:url(/portal/images/capaPrograma/novostempos/seta.png) no-rep
 .row-fluid a { font-size: 20px\9; line-height: 22px\9;  }
 i.seta { margin-top:6px\9; }
 
-.row-fluid a.btn-voltar { float:left; text-decoration:none;  background:url(/portal/images/capaPrograma/novostempos/voltar.png) no-repeat left center; padding-left:17px; }
+.row-fluid a.btn-voltar { float:left; text-decoration:none;  background:url(http://cmais.com.br/portal/images/capaPrograma/novostempos/voltar.png) no-repeat left center; padding-left:17px; }

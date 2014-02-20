@@ -6,9 +6,9 @@
   font-style: normal;
 }
 
-body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat; }
+body { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat; }
 .capa-voltar-topo { height:35px; padding-top:39px; }
-#rodape-portal { background:url(/portal/images/capaPrograma/cartaozinho/matinho.png) repeat-x;  }
+#rodape-portal { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/matinho.png) repeat-x;  }
 .voltar-topo { background:#034005; height:18px; }
 #rodape-portal .box-rodape,
 .capa-rodape { border:none; background:#034005; }
@@ -28,18 +28,18 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 
 
 /* home */
-.home { background:url(/portal/images/capaPrograma/cartaozinho/bg-campo.png) no-repeat center 230px; width:1208px; min-height:1400px; margin:0 auto;}
+.home { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/bg-campo.png) no-repeat center 230px; width:1208px; min-height:1400px; margin:0 auto;}
 .home #barra-site .topo-programa { background:none; }
 .home .destaque-video { min-height:460px; width:900px; overflow:hidden; }
 .home .duas-colunas a,
 .home .duas-colunas p { display:none; }
-.home .duas-colunas { float:none; margin:0 0 0 225px; width:528px; height:427px; background:url(/portal/images/capaPrograma/cartaozinho/bg-video.png) no-repeat;  } 
+.home .duas-colunas { float:none; margin:0 0 0 225px; width:528px; height:427px; background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/bg-video.png) no-repeat;  } 
 .home .duas-colunas iframe { margin: 0 0 0 39px; }
 .home .duas-colunas .acompanhe { margin:40px 0 10px 40px; }
 .home .duas-colunas .mais-videos { display: block; float:right; margin:10px 40px 0 0; }
 .home .box-topo { height:26px; }
 
-.home .duas-colunas.enquete {margin: 41px 0 20px 193px; width: 538px; height: 485px; background:url(/portal/images/capaPrograma/cartaozinho/cartaozinho_enquete.png) no-repeat;  }
+.home .duas-colunas.enquete {margin: 41px 0 20px 193px; width: 538px; height: 485px; background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/cartaozinho_enquete.png) no-repeat;  }
 .home .duas-colunas.enquete #pergunta-cartaozinho-enquete{width: 457px; height: 462px; float: right; margin: 10px;}
 .home .duas-colunas.enquete #pergunta-cartaozinho-enquete h2{ font-family: 'Conv_Futura_Medium_Condensed_BT', Arial, Helvetica, sans-serif;text-transform: uppercase; font-size: 18px; color: #541fff; padding: 3px 0 0 29px;}
 .home .duas-colunas.enquete #pergunta-cartaozinho-enquete .txt-pergunta{font-family: 'Conv_Futura_Medium_Condensed_BT',  Arial, Helvetica, sans-serif; color: #541fff;text-align: center; font-size:30px; width: 100%; display: block; margin-bottom:10px;}
@@ -52,21 +52,21 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .home .duas-colunas.enquete #img-enquete{width:100%; margin:10px 0 0 0; text-align:center;}
 
 .personagens { width:970px; margin-top:0; }
-.personagens ul { background:url(/portal/images/capaPrograma/cartaozinho/barra.png) no-repeat 0 150px; height:320px; padding-left:100px; margin-top:20px;  }
+.personagens ul { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/barra.png) no-repeat 0 150px; height:320px; padding-left:100px; margin-top:20px;  }
 .personagens li { height:317px; float: left; margin-right:60px; cursor:pointer; width:142px; }
-.personagens .b-joao { background:url(/portal/images/capaPrograma/cartaozinho/joao.png) no-repeat; }
-.personagens .b-eric { background:url(/portal/images/capaPrograma/cartaozinho/eric.png) no-repeat;   }
-.personagens .b-pedro { background:url(/portal/images/capaPrograma/cartaozinho/pedro.png) no-repeat;  }
-.personagens .b-matheus { background:url(/portal/images/capaPrograma/cartaozinho/matheus.png) no-repeat;  }
+.personagens .b-joao { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/joao.png) no-repeat; }
+.personagens .b-eric { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/eric.png) no-repeat;   }
+.personagens .b-pedro { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/pedro.png) no-repeat;  }
+.personagens .b-matheus { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/matheus.png) no-repeat;  }
 .personagens li:hover { background-position:-142px 0;  }
 .personagens li a { display:block; width:100%; height:100%;  }
 
-.box { background:url(/portal/images/capaPrograma/cartaozinho/bg-bio.png) no-repeat 0 45px; height:430px; width:930px;  }
+.box { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/bg-bio.png) no-repeat 0 45px; height:430px; width:930px;  }
 .bio .seta { display:block; position:absolute; }
-.bio .bio-joao .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta1.png) no-repeat; width: 60px; height:89px; left:215px;  }
-.bio .bio-eric .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta2.png) no-repeat; width: 70px; height:96px; left:388px;  }
-.bio .bio-pedro .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta3.png) no-repeat; width: 69px; height:69px; right:352px;  }
-.bio .bio-matheus .seta { background:url(/portal/images/capaPrograma/cartaozinho/seta4.png) no-repeat; width: 66px; height:100px; right:183px; }
+.bio .bio-joao .seta { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/seta1.png) no-repeat; width: 60px; height:89px; left:215px;  }
+.bio .bio-eric .seta { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/seta2.png) no-repeat; width: 70px; height:96px; left:388px;  }
+.bio .bio-pedro .seta { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/seta3.png) no-repeat; width: 69px; height:69px; right:352px;  }
+.bio .bio-matheus .seta { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/seta4.png) no-repeat; width: 66px; height:100px; right:183px; }
 .bio .box { display: none; }
 .bio .brasao { width:109px; height:140px; position:relative; top:126px; left:25px; }
 .bio .texto { clear: both; height: 279px; left: 0; overflow: hidden; position: relative; text-align: left; top: 90px; width:900px; z-index: 100;}
@@ -75,18 +75,18 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .bio .texto span { color:#3c3787; }
 .bio .texto a { font-size:16px; text-decoration:underline; }
 .bio .texto .titulo { margin-bottom:10px; width: 800px; }
-.bio .fechar { width:33px; height:33px; background:url(/portal/images/capaPrograma/cartaozinho/btfechar.png) no-repeat; display:block; position:absolute; top:0; right:0; text-indent:-9999px; cursor: pointer; }
+.bio .fechar { width:33px; height:33px; background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/btfechar.png) no-repeat; display:block; position:absolute; top:0; right:0; text-indent:-9999px; cursor: pointer; }
 
-.juiza { position:absolute; top:230px; background:url(/portal/images/capaPrograma/cartaozinho/interrogacao-juiza.png) no-repeat; width:199px; height:330px; }
+.juiza { position:absolute; top:230px; background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/interrogacao-juiza.png) no-repeat; width:199px; height:330px; }
 /*.juiza:hover { background-position:-201px 0; }*/
 
 .redes-sociais { width: 244px; height:340px; position:absolute; top:91px; right:0; }
 .redes-sociais a { width: 90px; height:90px; display:block; background-repeat:no-repeat; text-indent:-9999px; position:absolute; }
-.redes-sociais .face { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-fb.png); top: 162px; left: 12px; z-index: 4;}
-.redes-sociais .twt { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-twt.png); bottom: 7px; right: 20px; z-index: 3; }
-.redes-sociais .ytb { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-ytb.png); right: 124px; top: -22px; z-index: 2; }
-.redes-sociais .int { background-image:url(/portal/images/capaPrograma/cartaozinho/btn-int.png); right: 0px; top: 69px; z-index: 1; }
-.redes-sociais .setas{display: block;width: 220px;height: 468px;position: absolute;top: -44px;left: 16px; background-image:url(/portal/images/capaPrograma/cartaozinho/setas-cartaozinho.png); z-index: 0; }
+.redes-sociais .face { background-image:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/btn-fb.png); top: 162px; left: 12px; z-index: 4;}
+.redes-sociais .twt { background-image:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/btn-twt.png); bottom: 7px; right: 20px; z-index: 3; }
+.redes-sociais .ytb { background-image:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/btn-ytb.png); right: 124px; top: -22px; z-index: 2; }
+.redes-sociais .int { background-image:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/btn-int.png); right: 0px; top: 69px; z-index: 1; }
+.redes-sociais .setas{display: block;width: 220px;height: 468px;position: absolute;top: -44px;left: 16px; background-image:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/setas-cartaozinho.png); z-index: 0; }
 
 .fb_iframe_widget iframe { position:relative; }
 .box-topo .navegacao { margin-bottom:10px; }
@@ -112,7 +112,7 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .videos .duas-colunas { background:#86D5F3; }
 .videos .duas-colunas a,
 .videos .duas-colunas p { padding:0 20px; }
-#barra-site .topo-programa { background:url(/portal/images/capaPrograma/cartaozinho/bg-topo.png) no-repeat 200px 15px; }
+#barra-site .topo-programa { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/bg-topo.png) no-repeat 200px 15px; }
 #menu-rodape .abas-conteudo { background:#86d5f3; }
 #menu-rodape .blocos a { color:#ffff00 }
 .videos .busca form .busque span,
@@ -122,26 +122,26 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .videos .paginacao .centraliza { width:auto !important; float:right; margin-right:5px;  }
 .videos .paginacao ul li a.ativo, 
 .videos .paginacao ul li a:hover { color:#ffff05; }
-.videos .abas { background-image:url(/portal/images/capaPrograma/cartaozinho/bg-abas.png); }
+.videos .abas { background-image:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/bg-abas.png); }
 .videos #menu-rodape .abas .neutro a { background:#ffff05; }
 .videos .paginacao { background:#2b8db2; }
 .videos #menu-rodape .abas .neutro:hover span,
-.videos #menu-rodape .abas .neutro span { background:url(/portal/images/capaPrograma/cartaozinho/detalhe-menu.png) no-repeat;  }
+.videos #menu-rodape .abas .neutro span { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/detalhe-menu.png) no-repeat;  }
 .videos .blocos li a.bg:hover { border-color:#ffff05;  }
 #menu-rodape .neutro a { line-height:24px; }
 .videos #menu-rodape .abas-conteudo { min-height: 500px; }
 /* /videos */
 
 /* embreve*/
-.embreve { background:url(/portal/images/capaPrograma/cartaozinho/bg-campo2.png) no-repeat center 70px; width:1208px; min-height:1000px; margin:0 auto; }
-.embreve .box { background:url(/portal/images/capaPrograma/cartaozinho/logo-embreve.png) no-repeat 70px bottom; width:534px; height:505px; margin:180px auto;  }
+.embreve { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/bg-campo2.png) no-repeat center 70px; width:1208px; min-height:1000px; margin:0 auto; }
+.embreve .box { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/logo-embreve.png) no-repeat 70px bottom; width:534px; height:505px; margin:180px auto;  }
 .embreve .box img { width:251px; height:48px; float:right; }
 .embreve .btn-curtir { width:340px; float:right; clear:both; margin-top:20px; }
 
 /* /embreve*/
 
 /* contato */
-.contato h3 { background:#2b8db2 url(/portal/images/capaPrograma/cartaozinho/tit-faleconosco.png) no-repeat 10px 7px; color:#fff; text-indent:-9999px; }
+.contato h3 { background:#2b8db2 url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/tit-faleconosco.png) no-repeat 10px 7px; color:#fff; text-indent:-9999px; }
 .contato { background:#86d5f3; }
 #form-contato { margin:0 10px; }
 .contato form .t1 { width:550px; }
@@ -155,8 +155,8 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .msgAcerto,
 .msgErro { background-color: #ffff05;  }
 .boxMsg p { color:#0a5876; }
-.msgErro .alerta { background:url(/portal/images/capaPrograma/cartaozinho/ico-erro.png) no-repeat; }
-.msgAcerto .alerta { background:url(/portal/images/capaPrograma/cartaozinho/ico-acerto.png) no-repeat; }
+.msgErro .alerta { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/ico-erro.png) no-repeat; }
+.msgAcerto .alerta { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/ico-acerto.png) no-repeat; }
 
 /* /contato */
 
@@ -195,15 +195,15 @@ body { background:url(/portal/images/capaPrograma/cartaozinho/grama.jpg) repeat;
 .box-padrao .topo h4 { font-size:16px; }
 /* /arquivo*/
 
-.contato.sugestao h3 { background: url("/portal/images/capaPrograma/cartaozinho/envie-sua-sugestao.png") no-repeat scroll 10px 5px #2B8DB2; }
+.contato.sugestao h3 { background: url("http://cmais.com.br/portal/images/capaPrograma/cartaozinho/envie-sua-sugestao.png") no-repeat scroll 10px 5px #2B8DB2; }
 .contato p { margin-left:10px; }
-/*.envie-sua-sugestao {  position:absolute; top:70px; left:54px; background:url(/portal/images/capaPrograma/cartaozinho/sugestao.png) no-repeat; width:240px; height:174px;  }*/
-.envie-sua-sugestao {  position:absolute; background:url(/portal/images/capaPrograma/cartaozinho/enquete-gabi.png) no-repeat;top: 29px;left: 218px;width: 394px;height: 118px; z-index: 100000; }
+/*.envie-sua-sugestao {  position:absolute; top:70px; left:54px; background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/sugestao.png) no-repeat; width:240px; height:174px;  }*/
+.envie-sua-sugestao {  position:absolute; background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/enquete-gabi.png) no-repeat;top: 29px;left: 218px;width: 394px;height: 118px; z-index: 100000; }
 
-.mande-seu-video { background:url(/portal/images/capaPrograma/cartaozinho/mande-seu-video.png) no-repeat; width:520px; height:156px; margin:-62px auto 0; display: block;}
+.mande-seu-video { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/mande-seu-video.png) no-repeat; width:520px; height:156px; margin:-62px auto 0; display: block;}
 .mande-seu-video p { padding-top:30px; text-transform:uppercase; color:#fafa88; font-weight:bold;  }
 .mande-seu-video:hover { text-decoration:none; }
-/*.contato.video h3 { background:#2B8DB2 url(/portal/images/capaPrograma/cartaozinho/txt-envievideo.png) no-repeat 0 0; }*/
+/*.contato.video h3 { background:#2B8DB2 url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/txt-envievideo.png) no-repeat 0 0; }*/
 .regulamento {    border: 1px solid #DFDFDF;    float: left;    height: 206px;    overflow-x: hidden;    overflow-y: scroll;    padding: 10px 0; background:#fff; }
 .rodape-cmais { background:#86D5F3; padding:10px; }
 .regulamento li ul { margin:-20px 0 20px 20px; }

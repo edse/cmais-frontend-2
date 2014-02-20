@@ -1,6 +1,6 @@
 .bg-chamada,
-.bg-site { background: url(/portal/images/capaPrograma/gil/bg.jpg) repeat; }
+.bg-site { background: url(http://cmais.com.br/portal/images/capaPrograma/gil/bg.jpg) repeat; }
 #barra-site .redes { float: right!important; }
-#barra-site .topo-programa { background: url(/portal/images/capaPrograma/gil/bandeirinhas.png) no-repeat top right; }
+#barra-site .topo-programa { background: url(http://cmais.com.br/portal/images/capaPrograma/gil/bandeirinhas.png) no-repeat top right; }
 #chamada { margin-bottom:0; }
 #barra-site h2 { margin-top:30px; }

@@ -24,14 +24,14 @@ input, textarea, select, .uneditable-input { border-radius:0; }
 .box-compartilhar .comentar:hover { color:#fff; }
 
 .capa { margin-top:70px; }
-.bg-site { background:url(/portal/images/capaPrograma/univesptv/bg-topo.jpg); height:586px; margin-top:3px; }
+.bg-site { background:url(http://cmais.com.br/portal/images/capaPrograma/univesptv/bg-topo.jpg); height:586px; margin-top:3px; }
 #barra-site .cursos-livres { float:right; margin-top:30px; font-size: 34px; text-align:left; font-weight:normal;  }
 .titulos { font-size:22px; margin-bottom:10px; text-align:left; font-weight:normal;}
 #capa-site { margin-top:-586px !important; }
 .box-destaque { margin:45px 0; border: solid 5px #ccc; width:955px; clear:both; }
 .carrossel { margin:0; clear: both; text-align:left; width:970px;}
 .carrossel .jcarousel-next,
-.carrossel .jcarousel-prev { background: url(/portal/images/capaPrograma/univesptv/seta-carrossel.png) ; bottom:0; width:20px; height:40px; top:45px; }
+.carrossel .jcarousel-prev { background: url(http://cmais.com.br/portal/images/capaPrograma/univesptv/seta-carrossel.png) ; bottom:0; width:20px; height:40px; top:45px; }
 .carrossel .jcarousel-clip{ width:880px; height:130px; left:40px;  }
 .carrossel .jcarousel-prev {left:0; }
 .carrossel .jcarousel-next { background-position:-20px 0; right:0;}
@@ -164,9 +164,9 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .erro {  border: 1px solid #ff6633;}
 .checked {  background: none;  height: 0px; }
 .msgErro {  background-color: #666;  margin:0; }
-.msgErro .alerta {  background: url(/portal/images/ico-erro.png) no-repeat;  display: block;  float: left;  margin: 20px 0 0 10px;  overflow: hidden;  text-indent: -99999px;  width: 32px;  height: 32px; }
+.msgErro .alerta {  background: url(http://cmais.com.br/portal/images/ico-erro.png) no-repeat;  display: block;  float: left;  margin: 20px 0 0 10px;  overflow: hidden;  text-indent: -99999px;  width: 32px;  height: 32px; }
 .msgAcerto {  background-color: #666;  margin: 0;  width: 300px; }
-.msgAcerto .alerta {  background: url(/portal/images/ico-acerto.png) no-repeat;  display: block;  float: left;  margin: 13px 0 0 10px;  overflow: hidden;  text-indent: -99999px;  width: 32px;  height: 32px; }
+.msgAcerto .alerta {  background: url(http://cmais.com.br/portal/images/ico-acerto.png) no-repeat;  display: block;  float: left;  margin: 13px 0 0 10px;  overflow: hidden;  text-indent: -99999px;  width: 32px;  height: 32px; }
 .boxMsg { float: left;  margin: 5px 0 5px 10px;  width: 248px; }
 .boxMsg p {  color: #fff;  font-size: 12px;  line-height: 15px; }
 .boxMsg p.aviso {  font-weight: bold; margin-bottom:5px; }
@@ -203,8 +203,8 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .dir form select { *margin-left:-20px; }
 .botoes { *width:220px; }
 
-.bg-home { background: url("/portal/images/capaPrograma/univesptv/bg-univesp.jpg") repeat-x scroll 0 0 #FFFFFF; }
-.bg-interna { background: url("/portal/images/capaPrograma/univesptv/bg-interna.jpg") repeat-x scroll 0 0 #FFFFFF; }
+.bg-home { background: url("http://cmais.com.br/portal/images/capaPrograma/univesptv/bg-univesp.jpg") repeat-x scroll 0 0 #FFFFFF; }
+.bg-interna { background: url("http://cmais.com.br/portal/images/capaPrograma/univesptv/bg-interna.jpg") repeat-x scroll 0 0 #FFFFFF; }
 
 /* scrollbar p/ chome*/
 ::-webkit-scrollbar { height: 12px;	width: 12px; background: -webkit-gradient(linear, 0% 50%, 0% 50%, from(#e4e4e4), to(white)); }

@@ -1,4 +1,4 @@
-body { background:url(/portal/images/capaPrograma/passalaemcasa/bg.jpg) repeat-x; height:100%; }
+body { background:url(http://cmais.com.br/portal/images/capaPrograma/passalaemcasa/bg.jpg) repeat-x; height:100%; }
 #miolo { background:#fff; width:1032px; padding:10px; }
 #capa-site {  margin-top:0 !important; width:1032px; }
 .duas-colunas { background:#eee; padding:10px; width:620px; margin-bottom:20px;}
@@ -17,17 +17,17 @@ body { background:url(/portal/images/capaPrograma/passalaemcasa/bg.jpg) repeat-x
 .box-padrao li { margin-top:0; }
 .menu-interna li.ativo, 
 .menu-interna li:hover { background:#9f7abf; }
-#barra-site .topo-programa { background:url(/portal/images/capaPrograma/passalaemcasa/descricao.png) no-repeat right 40px; }
+#barra-site .topo-programa { background:url(http://cmais.com.br/portal/images/capaPrograma/passalaemcasa/descricao.png) no-repeat right 40px; }
 .menu-interna li { float: right;}
 #barra-site h2 { margin-top:30px; }
 .box-topo { margin-top:-30px; }
 #barra-site .redes { display:none; }
 #chamada { margin-bottom:90px; }
-span.faixa {    background: url("/portal/images/capaPrograma/passalaemcasa/bgtitulo.jpg") repeat-x scroll 0 0 transparent;    display: block;    float: left;    height: 15px;    margin: 0 0 15px;    width: 640px;}
+span.faixa {    background: url("http://cmais.com.br/portal/images/capaPrograma/passalaemcasa/bgtitulo.jpg") repeat-x scroll 0 0 transparent;    display: block;    float: left;    height: 15px;    margin: 0 0 15px;    width: 640px;}
 #menuFloat { margin-top:10px; }
 .boxNoticia-interna { text-align:left; clear:both; }
 .noticiaTxt p { margin-bottom:20px; } 
-.comentarios p.btn-comentarios {    background: url("/portal/images/capaPrograma/passalaemcasa/bg-balao.png") no-repeat scroll 0 0 transparent;    float: left;    height: 35px;    width: 147px;}
+.comentarios p.btn-comentarios {    background: url("http://cmais.com.br/portal/images/capaPrograma/passalaemcasa/bg-balao.png") no-repeat scroll 0 0 transparent;    float: left;    height: 35px;    width: 147px;}
 .comentarios p.btn-comentarios span { color: #FFFFFF;    float: left;    font-size: 16px;    margin: 5px 0 0 19px;    text-transform: uppercase; }
 .assinatura .inf { width: 240px; }
 .cp-sembg { width: 400px; float:right; }

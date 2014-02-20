@@ -52,8 +52,8 @@
 #carrossel-mobile .slider {position: relative;zoom: 1;}
 #carrossel-mobile .slider-nav {position: absolute;zoom: 1;width: 100%;top: 0;left: 0;}
 #carrossel-mobile .arrow {width: 70px;height: 250px;position: absolute;zoom: 1;top: 0;}
-#carrossel-mobile .arrow span.back{position: absolute; top: 90px; left: 20px;width:50px; height:71px; display:block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1570px;}
-#carrossel-mobile .arrow span.next{position: absolute; right: 19px; top: 91px; width: 50px; height: 70px; display: block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1273px;}
+#carrossel-mobile .arrow span.back{position: absolute; top: 90px; left: 20px;width:50px; height:71px; display:block; background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1570px;}
+#carrossel-mobile .arrow span.next{position: absolute; right: 19px; top: 91px; width: 50px; height: 70px; display: block; background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1273px;}
 #carrossel-mobile .arrow span {display: block;width: 100%;height: 250px;cursor: pointer;}
 #carrossel-mobile .arrow.disabled {opacity: 0.3;cursor: default;}
 #carrossel-mobile .arrow-left {left: 0;}
@@ -126,8 +126,8 @@
 #carrossel-interna-personagem .slider {position: relative;zoom: 1;}
 #carrossel-interna-personagem .slider-nav {position: absolute;zoom: 1;width: 100%;top: 0;left: 0;}
 #carrossel-interna-personagem .arrow {width: 70px;height: 409px;position: absolute;zoom: 1;top: 0;}
-#carrossel-interna-personagem .arrow span.back{position: absolute; top: 90px; left: 20px;width:50px; height:71px; display:block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1570px;}
-#carrossel-interna-personagem .arrow span.next{position: absolute; right: 19px; top: 91px; width: 50px; height: 70px; display: block; background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1273px;}
+#carrossel-interna-personagem .arrow span.back{position: absolute; top: 90px; left: 20px;width:50px; height:71px; display:block; background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1570px;}
+#carrossel-interna-personagem .arrow span.next{position: absolute; right: 19px; top: 91px; width: 50px; height: 70px; display: block; background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1273px;}
 #carrossel-interna-personagem .arrow span {display: block;width: 100%;height: 250px;cursor: pointer;}
 #carrossel-interna-personagem .arrow.disabled {opacity: 0.3;cursor: default;}
 #carrossel-interna-personagem .arrow-left {left: 0;}
@@ -154,8 +154,8 @@
 #carrossel-interna-artigo .slider {position: relative;zoom: 1;}
 #carrossel-interna-artigo .slider-nav {position: absolute;zoom: 1;width: 100%;top: 0;left: 0;}
 #carrossel-interna-artigo .arrow {width: 70px;height: 409px;position: absolute;zoom: 1;top: 0;}
-#carrossel-interna-artigo .arrow span.back{position: absolute; top: 160px; left: -2px;width:50px; height:71px; display:block; /* background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1570px;*/}
-#carrossel-interna-artigo .arrow span.next{position: absolute; right: 1px; top: 160px; width: 50px; height: 70px; display: block; /* background:url(/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1273px;*/}
+#carrossel-interna-artigo .arrow span.back{position: absolute; top: 160px; left: -2px;width:50px; height:71px; display:block; /* background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1570px;*/}
+#carrossel-interna-artigo .arrow span.next{position: absolute; right: 1px; top: 160px; width: 50px; height: 70px; display: block; /* background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprite-setas.png) no-repeat 0 -1273px;*/}
 #carrossel-interna-artigo .arrow span {display: block;width: 100%;height: 250px;cursor: pointer;}
 #carrossel-interna-artigo .arrow.disabled {opacity: 0.3;cursor: default;}
 #carrossel-interna-artigo .arrow-left {left: 0;}

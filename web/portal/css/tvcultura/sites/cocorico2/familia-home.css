@@ -1,13 +1,13 @@
-.carousel-control { background-image: url("/portal/images/capaPrograma/cocorico/setas-familia.png"); }
+.carousel-control { background-image: url("http://cmais.com.br/portal/images/capaPrograma/cocorico/setas-familia.png"); }
 .carrossel-familia h2 {  border-radius:10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; }
 .carrossel-familia {  border-radius:10px ; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
 .carrossel-familia h2 { background:#e9f3f4; color:#6a747d; margin:0; height:35px; line-height: 35px; font-size:20px; margin-bottom:2px;   }
-.carrossel-familia .ico-presente { background:  url("/portal/images/capaPrograma/cocorico/ico-presente.png") no-repeat; width:20px; height:21px; float: left; margin:5px 5px 0 5px;}
+.carrossel-familia .ico-presente { background:  url("http://cmais.com.br/portal/images/capaPrograma/cocorico/ico-presente.png") no-repeat; width:20px; height:21px; float: left; margin:5px 5px 0 5px;}
 .carrossel-familia { background:#fff; padding:2px;  position:relative; overflow:hidden; margin-bottom:0;}
 #myCarousel { margin-left:0; }
-.ico-seta-titulo-grd { background:url("/portal/images/capaPrograma/cocorico/seta-titulo-grd.png") no-repeat; width:26px; height:15px; position:absolute; display:block; right:50%; z-index: 100; top:37px; }
+.ico-seta-titulo-grd { background:url("http://cmais.com.br/portal/images/capaPrograma/cocorico/seta-titulo-grd.png") no-repeat; width:26px; height:15px; position:absolute; display:block; right:50%; z-index: 100; top:37px; }
 .texto:hover,
-.texto { max-height:57px; position:absolute; display:block; bottom: 0;  background:url("/portal/images/capaPrograma/cocorico/bg-azul-transparente.png") repeat; padding:5px 10px; color:#fff; }
+.texto { max-height:57px; position:absolute; display:block; bottom: 0;  background:url("http://cmais.com.br/portal/images/capaPrograma/cocorico/bg-azul-transparente.png") repeat; padding:5px 10px; color:#fff; }
 .texto:hover { text-decoration:none; }
 .texto h3 { color:#fff; margin:0; }
 .destaques.span6 { margin-left:0; background:#c6e1e4; text-align:left; color:#6b757d; line-height:18px;}

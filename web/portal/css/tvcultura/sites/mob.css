@@ -12,9 +12,9 @@ background: -moz-linear-gradient(top,  #fff,  #e0e0e0); /* Firefox 3.6+ */
 .programa .ui-btn{padding:8px 0;}
 .progamas .programaNome{padding:0px 0!important;}
 
-.pgSelecionada{color:#FFF;background: url(/portal/images/capaPrograma/mob/pattern-laranja.gif) !important;}
+.pgSelecionada{color:#FFF;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-laranja.gif) !important;}
 
-.selected{color:#FFF;background: url(/portal/images/capaPrograma/mob/pattern-laranja-degrade.gif) !important;}
+.selected{color:#FFF;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-laranja-degrade.gif) !important;}
 
 a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 
@@ -32,17 +32,17 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .ui-body-c .ui-link:hover,
 .ui-body-c .ui-link:active { text-decoration:none; color:#fff; }
 .asset .ui-body-c .ui-link:active{color:#FFF !important; text-decoration:none;}
-.header .fio{width: 100%; height:3px; background: url(/portal/images/capaPrograma/mob/pattern-laranja.gif);} 
-.header .aovivo{background: url(/portal/images/capaPrograma/mob/pattern-laranja.gif); width:86px; height:25px; float:right; padding:6px 6px 3px 6px;margin:0px 15px 0px 0px;border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
+.header .fio{width: 100%; height:3px; background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-laranja.gif);} 
+.header .aovivo{background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-laranja.gif); width:86px; height:25px; float:right; padding:6px 6px 3px 6px;margin:0px 15px 0px 0px;border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
 .header .logo{float:left;width:134px; height:46px;margin:12px 0 10px 5px;}
 .header .botoes{width:320px; height:auto;clear:both;}
-.header .botoes a{ color:#FFF!important;text-decoration:none;z-index:0;background: url(/portal/images/capaPrograma/mob/pattern-cinza.gif);float:left;display:block;width:32%;border-top-left-radius: 5px;border-top-right-radius: 5px; padding: 7px 0 6px 0; text-shadow: none;}
+.header .botoes a{ color:#FFF!important;text-decoration:none;z-index:0;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-cinza.gif);float:left;display:block;width:32%;border-top-left-radius: 5px;border-top-right-radius: 5px; padding: 7px 0 6px 0; text-shadow: none;}
 .header .botoes a p{font-weight:300; margin:0px; font-size:0.8em;color:#FFF!important;}
 .header .botoes a img{width:99%}
 .header .botoes a:visited{color:#FFF;}
-.header .botoes a:hover{color:#FFF;background: url(/portal/images/capaPrograma/mob/pattern-laranja.gif);}
-.header .botoes a:active{color:#FFF;background: url(/portal/images/capaPrograma/mob/pattern-laranja.gif);}
-.header .fioblack{position:absolute; bottom:0; width: 100%; height:3px; background: url(/portal/images/capaPrograma/mob/pattern-cinza.gif);}
+.header .botoes a:hover{color:#FFF;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-laranja.gif);}
+.header .botoes a:active{color:#FFF;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-laranja.gif);}
+.header .fioblack{position:absolute; bottom:0; width: 100%; height:3px; background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-cinza.gif);}
 
 .header .botoes a.first{margin: 0 0 0 1.5%;}
 .header .botoes a.middle{margin: 0 4px 0 4px;}
@@ -58,10 +58,10 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 /*/BANNER*/
 
 /*HOME*/
-.progamacaoDia .gradeCompleta{padding: 8px 14px 8px 8px;text-shadow: none;top: -28px;color: white;text-decoration: none;background: url(/portal/images/capaPrograma/mob/grade-completa.png) no-repeat right;font-size: 0.9em;text-align: center;line-height: 17px;float: right !important;width: 105px;position: relative;right: 15px;border-radius: 5px;}
+.progamacaoDia .gradeCompleta{padding: 8px 14px 8px 8px;text-shadow: none;top: -28px;color: white;text-decoration: none;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/grade-completa.png) no-repeat right;font-size: 0.9em;text-align: center;line-height: 17px;float: right !important;width: 105px;position: relative;right: 15px;border-radius: 5px;}
 .progamacaoDia .grade{padding-top: 20px;}
 .progamacaoDia .grade h2 {font-size: 1.2em;margin: 6px 0 0 12px !important;text-align: left;}
-.progamacaoDia .grade .seta{border-radius:30px;margin-top:9px;margin-right:15px;width:20px; height:20px; float:right;background:url(/portal/images/capaPrograma/mob/seta-cima-baixo.png) no-repeat #979798!important;}
+.progamacaoDia .grade .seta{border-radius:30px;margin-top:9px;margin-right:15px;width:20px; height:20px; float:right;background:url(http://cmais.com.br/portal/images/capaPrograma/mob/seta-cima-baixo.png) no-repeat #979798!important;}
 /*Carrosel*/
 #destaque{background-color:#FFF; }
 #carousel-single-image {height: 350px;margin: 0 auto;background: #f0f0f0; width:100%}
@@ -95,7 +95,7 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 
 .footerLive{background-color: #ffffff;height:30px; width:100%; padding-top: 30px;}
 .footerLive a{width:110px; height:33px;}
-.footerLive .voltarLive{width:110px !important; height: 30px !important; border-top-left-radius: 5px; border-top-right-radius: 5px; background: url(/portal/images/capaPrograma/mob/pattern-laranja.gif); }
+.footerLive .voltarLive{width:110px !important; height: 30px !important; border-top-left-radius: 5px; border-top-right-radius: 5px; background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-laranja.gif); }
 .footerLive .voltarLive img{margin-top: 10px}
 /*/PG AOVIVO(LIVESUCCESS)*/
 
@@ -105,14 +105,14 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .programas .ui-link-inherit{background: #FFF;}
 .programas .ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {padding: 10px 14px 0 14px;}
 .programas .linha2 {width: 100%;border-bottom: 1px dotted #fb8f6b;margin-top: 10px;}
-.programas .ui-listview-filter{margin:13px 6px 13px 6px !important;background:url(/portal/images/capaPrograma/mob/pattern-search.jpg) repeat-x;border-bottom:1px solid #c4c4c4;}
+.programas .ui-listview-filter{margin:13px 6px 13px 6px !important;background:url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-search.jpg) repeat-x;border-bottom:1px solid #c4c4c4;}
 .programas .ui-icon .ui-icon-arrow-r .ui-icon-shadow{border-radius:0px}
 .programas .ui-listview-filter .ui-input-search{margin:10px !important;}
 .programas .divisor{font-family:"Calibri", Helvetica, sans-serif;font-size:1.3em; color:#ff6633; text-shadow:none;}
 .programas .ui-bar-b{ padding-top:2px; padding-bottom:2px;}
 .programas .ui-li, .ui-li.ui-field-contain {border-top-width: 0;}
-.programas .programaNome a{background: url(/portal/images/capaPrograma/mob/seta-list.png) no-repeat right 0 #ffffff;text-shadow: none !important; color:#333 !important; }
-.programas .programaNome a:active{background: url(/portal/images/capaPrograma/mob/seta-list.png) no-repeat right -82px #ff6633 !important; text-shadow: none !important; color:#333 !important; }
+.programas .programaNome a{background: url(http://cmais.com.br/portal/images/capaPrograma/mob/seta-list.png) no-repeat right 0 #ffffff;text-shadow: none !important; color:#333 !important; }
+.programas .programaNome a:active{background: url(http://cmais.com.br/portal/images/capaPrograma/mob/seta-list.png) no-repeat right -82px #ff6633 !important; text-shadow: none !important; color:#333 !important; }
 .programas .bordas{border-top:1px solid #c4c4c4; border-bottom: 1px solid #c4c4c4; margin-top: -2px;z-index: 10;}
 .footer.programas {margin-top:15px;}
 /*/PG PROGRAMAS*/
@@ -121,8 +121,8 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .programa .grade{padding-top:0px !important;}
 .programa ul{padding:0 12px !important; margin:0 0 20px 1px !important; background-color:#FFF; }
 .programa ul li a{text-decoration:none !important; color:#333 !important;} 
-.programa ul li a .ui-grid-a{background: url(/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center !important;}
-.programa ul li a .ui-grid-a:active{color:#ff855c !important;background: url(/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center;}
+.programa ul li a .ui-grid-a{background: url(http://cmais.com.br/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center !important;}
+.programa ul li a .ui-grid-a:active{color:#ff855c !important;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center;}
 .programa .logo img{width:140px; height: 58px; padding: 10px 0;}
 .programa .textoPrograma{border-left: 1px solid #bebebe;text-align: left;height: 44px; font-size:0.9em;}
 .programa .textoPrograma p{margin:0; font-size:0.8em; padding-left:10px;}
@@ -139,9 +139,9 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .programa .ui-block-b.video p.duracao{ float:left; text-align:right;}
 .programa p.sobre{padding:15px 0 15px 0; text-align:left; font-size:0.8em;} 
 .programa .linha2 {width: 100%; margin:2px 0 6px 0; border-bottom: 1px dotted #6B6B6B;}
-.programa .grade .ui-grid-a {margin: 0px 0 0 0;background: url(/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right;}
-.programa .gradeCompleta{border-radius:6px !important; background:url(/portal/images/capaPrograma/mob/pattern-cinza.gif);text-align: center;text-decoration: none !important;text-shadow: none;padding: 7px 10px ;line-height: 20px; font-size:1em;}
-.programa .gradeCompleta:active{background: url(/portal/images/capaPrograma/mob/pattern-laranja.gif);}
+.programa .grade .ui-grid-a {margin: 0px 0 0 0;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right;}
+.programa .gradeCompleta{border-radius:6px !important; background:url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-cinza.gif);text-align: center;text-decoration: none !important;text-shadow: none;padding: 7px 10px ;line-height: 20px; font-size:1em;}
+.programa .gradeCompleta:active{background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-laranja.gif);}
 #cmais .programa .grade{color:#FFF !important;}
 .programa #sobre li{height:auto !important;}
 .programa #sobre p{color:#333;}
@@ -152,16 +152,16 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .radio .ui-li-desc{font-size:1em !important;font-weight:bold;}
 .radio .alinha{width:100%}
 .radio .btn-escolha{height:60px; width:280px;}
-.radio .btn-escolha a{height:auto;font-family:"Calibri", Helvetica, sans-serif; font-weight:normal;text-align:center;text-decoration:none;background: url(/portal/images/capaPrograma/mob/pattern-cinza-claro-degrade.gif);float:left;display:block;width:48.5%;border-radius: 20px; padding: 5px 0 5px 0; text-shadow: none;color:#FFF;font-size:1em; margin: 15px 1px;}
-.radio .btn-escolha a:hover{color:#FFF;background: url(/portal/images/capaPrograma/mob/pattern-laranja-degrade.gif)}
+.radio .btn-escolha a{height:auto;font-family:"Calibri", Helvetica, sans-serif; font-weight:normal;text-align:center;text-decoration:none;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-cinza-claro-degrade.gif);float:left;display:block;width:48.5%;border-radius: 20px; padding: 5px 0 5px 0; text-shadow: none;color:#FFF;font-size:1em; margin: 15px 1px;}
+.radio .btn-escolha a:hover{color:#FFF;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-laranja-degrade.gif)}
 .radio ul{background-color:#FFF;}
 .radio .linha2 {width: 100%;border-bottom: 1px dotted #6B6B6B;margin-top: 10px;}
 .radio .divisor{overflow:hidden; font-family:"Calibri", Helvetica, sans-serif;font-size:1.3em; color:#828282; text-shadow:none;padding: 7px 0 7px 13px !important;}
 .radio .divisor span{display: none;}
 .radio .divisor p{width: 75%; float:left; }
 .radio .ui-bar-b{ padding-top:2px; padding-bottom:2px;}
-.radio .voltar{background:url(/portal/images/capaPrograma/mob/btn-voltar-radio.png) no-repeat; font-size: 14px;text-align: center;line-height: 28px;float: right !important;width: 60px;right: 14px; min-height: 28px !important; position: relative;}
-.radio .voltar:active{background:url(/portal/images/capaPrograma/mob/btn-voltar-radio.png) no-repeat 0 bottom;}
+.radio .voltar{background:url(http://cmais.com.br/portal/images/capaPrograma/mob/btn-voltar-radio.png) no-repeat; font-size: 14px;text-align: center;line-height: 28px;float: right !important;width: 60px;right: 14px; min-height: 28px !important; position: relative;}
+.radio .voltar:active{background:url(http://cmais.com.br/portal/images/capaPrograma/mob/btn-voltar-radio.png) no-repeat 0 bottom;}
 .radio .voltar.ui-link-inherit{margin:0px !important; padding:0px !important;}
 .radio .escolhida{margin: 0;text-decoration: none; color:#828282 !important;font-size: 0.9em !important;}
 .radio .escolhida:active{color:#333 !important;}
@@ -170,9 +170,9 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .radio .ui-li-desc img {margin: 0 5px;}
 .radio .ui-li, .ui-li.ui-field-contain {border-top-width: 0;}
 .radio .bordas{border-top:1px solid #c4c4c4; border-bottom: 1px solid #c4c4c4; margin-top:-1px;z-index: 10;}
-.radio .playlistNome a{color:#000 !important;background: url(/portal/images/capaPrograma/mob/seta-list.png) no-repeat right -41px #ffffff;text-shadow: none !important; padding:10px 15px 1px 15px !important;}
+.radio .playlistNome a{color:#000 !important;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/seta-list.png) no-repeat right -41px #ffffff;text-shadow: none !important; padding:10px 15px 1px 15px !important;}
 .radio .playlistNome a p{margin:0px !important;width:95%}
-.radio .playlistNome a:active{color: #ff855c !important; background: url(/portal/images/capaPrograma/mob/seta-list.png) no-repeat right 2px #fff!important; text-shadow: none !important; }
+.radio .playlistNome a:active{color: #ff855c !important; background: url(http://cmais.com.br/portal/images/capaPrograma/mob/seta-list.png) no-repeat right 2px #fff!important; text-shadow: none !important; }
  
 .radio .ui-link-inherit{color:#FFF !important}
 .radio .ui-body-a,.ui-dialog.ui-overlay-a{border:none !important;background:none !important;color:#333  !important;text-shadow:none !important;font-weight:normal !important;}
@@ -187,10 +187,10 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .grade h2{font-size: 1.1em; margin:0 0 13px 12px !important; text-align:left;}
 .grade .hora{font-size: 1.4em;width: 70px;float: left;font-weight: lighter !important;line-height: 36px;margin-left: -33px;}
 .grade .nome{line-height: 36px;font-size: 1em;width: 70%;float: left;font-weight: normal !important;display: block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
-.grade .seta{border-radius:30px;margin-top:6px;margin-right:15px;width:20px; height:20px; float:right;background:url(/portal/images/capaPrograma/mob/seta-cima-baixo.png) no-repeat #979798!important;}
+.grade .seta{border-radius:30px;margin-top:6px;margin-right:15px;width:20px; height:20px; float:right;background:url(http://cmais.com.br/portal/images/capaPrograma/mob/seta-cima-baixo.png) no-repeat #979798!important;}
 .grade .seta.mudaPosicao{background-position: 0 -21px !important;}
 .grade .ui-btn-icon-left .ui-icon {display:none;}
-.grade .ui-icon, .ui-icon-searchfield{background-image: url(/portal/images/capaPrograma/mob/seta-cima-baixo.png) no-repeat 0px -5px !important;}
+.grade .ui-icon, .ui-icon-searchfield{background-image: url(http://cmais.com.br/portal/images/capaPrograma/mob/seta-cima-baixo.png) no-repeat 0px -5px !important;}
 .grade .ui-collapsible-heading {margin: 0 0 0 0;}
 .grade .ui-corner-top {border-radius:0px;}
 .grade .ui-corner-bottom{border-radius:0px;}
@@ -215,7 +215,7 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .noticias ul{padding:0 12px !important; margin:0 0 15px 1px !important; background-color:#FFF; }
 .noticias ul li{list-style:none;padding: 4px 0 0 0; min-height: 16px;}
 .noticias ul li a{text-decoration:none !important; color:#333;} 
-.noticias ul li a .ui-grid-a{background: url(/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center !important;}
+.noticias ul li a .ui-grid-a{background: url(http://cmais.com.br/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center !important;}
 .noticias ul li a .ui-grid-b:active{color:#ff855c !important}
 .noticias ul li a .ui-grid-b:visited{color:#333;}
 .noticias h4{font-size:0.6em;text-align:left; margin:-3px 0px 0 8px}
@@ -227,9 +227,9 @@ a{font-family:"Calibri",Helvetica, Arial,Tahoma, sans-serif;}
 .noticias .ui-block-b p.foto{ line-height:16px;color:#333;float:left;margin:0 5px 0 5px; width:95%; text-align:left; font-size:0.9em; font-weight:bold;max-height: 56px; overflow: hidden;}
 .noticias .fotinho{width:75px; height:47px;margin:2px 0 0 10px !important;}
 /*.noticias {margin-bottom: 60px !important;}*/
-.noticias .mais{margin-top:15px;font-size:0.8em;border-radius:5px;color:#FFF !important;text-shadow:none; text-decoration:none;background: url(/portal/images/capaPrograma/mob/pattern-cinza.gif); padding:8px 8px;}
+.noticias .mais{margin-top:15px;font-size:0.8em;border-radius:5px;color:#FFF !important;text-shadow:none; text-decoration:none;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-cinza.gif); padding:8px 8px;}
 .noticias .mais:hover{color:#FFF !important;}
-.noticias .mais:active{color:#FFF !important;background: url(/portal/images/capaPrograma/mob/pattern-laranja.gif);}
+.noticias .mais:active{color:#FFF !important;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-laranja.gif);}
 .noticias a{margin-bottom:60px;}
 div.jp-audio {width: 300px !important;}
 div.jp-audio div.jp-type-single div.jp-volume-bar {left: 246px !important;}
@@ -245,8 +245,8 @@ div.jp-audio div.jp-type-single div.jp-volume-bar {left: 246px !important;}
 .videos ul{padding:0 12px !important; margin:0 0 15px 1px !important; background-color:#FFF; }
 .videos ul li{list-style:none;}
 .videos ul li a{text-decoration:none !important; color:#333 !important;} 
-.videos ul li a .ui-grid-a{padding:8px 0px; background: url(/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center !important;}
-.videos ul li a .ui-grid-a:active{color:#ff855c !important;background: url(/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center;}
+.videos ul li a .ui-grid-a{padding:8px 0px; background: url(http://cmais.com.br/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center !important;}
+.videos ul li a .ui-grid-a:active{color:#ff855c !important;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/seta-list-peq.png) no-repeat right center;}
 .videos h4{font-size:0.6em;text-align:left; margin:-3px 0px 0 8px}
 .videos .ui-block-a{width:90px}
 .videos .ui-block-b{width:65%}
@@ -255,9 +255,9 @@ div.jp-audio div.jp-type-single div.jp-volume-bar {left: 246px !important;}
 .videos .ui-block-b p.foto{ float:left;margin:0 5px 0 0px; width:95%; text-align:left; font-size:0.8em; font-weight:bold;height: 35px; overflow: hidden;}
 .videos .fotinho{width:75px; height:47px;margin:2px 0 0 10px !important;}
 .videos {margin-bottom: 60px !important;}
-.videos .mais{margin-top:15px;font-size:0.8em;border-radius:5px;color:#FFF !important;text-shadow:none; text-decoration:none;background: url(/portal/images/capaPrograma/mob/pattern-cinza.gif); padding:8px 8px;}
+.videos .mais{margin-top:15px;font-size:0.8em;border-radius:5px;color:#FFF !important;text-shadow:none; text-decoration:none;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-cinza.gif); padding:8px 8px;}
 .videos .mais:hover{color:#FFF !important;}
-.videos .mais:active{color:#FFF !important;background: url(/portal/images/capaPrograma/mob/pattern-laranja.gif);}
+.videos .mais:active{color:#FFF !important;background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-laranja.gif);}
 .videos a{margin-bottom:60px;}
 .videos .ui-block-b.video p.data{float:left;text-align:left;font-size:0.5em; color:#333 !important;width:50%; margin:0;}
 .videos .ui-block-b.video p.duracao{ float:left; text-align:right;font-size:0.5em; color:#333 !important;width:45%;margin:0;}
@@ -268,8 +268,8 @@ div.jp-audio div.jp-type-single div.jp-volume-bar {left: 246px !important;}
 .programa.degrade .head .seta{margin-top:11px}
 .programa.degrade .head .ui-block-a{width:100%;margin:0}
 .programa.degrade .ui-grid-a {margin: 0px 0 0 0;background:none;}
-.programa .voltar{background:url(/portal/images/capaPrograma/mob/btn-voltar-radio.png) no-repeat; font-size: 14px;text-align: center;line-height: 28px;float: right !important;width: 60px;right: 14px; top:-16px;min-height: 28px !important; position: relative;}
-.programa .voltar:active{background:url(/portal/images/capaPrograma/mob/btn-voltar-radio.png) no-repeat 0 bottom;}
+.programa .voltar{background:url(http://cmais.com.br/portal/images/capaPrograma/mob/btn-voltar-radio.png) no-repeat; font-size: 14px;text-align: center;line-height: 28px;float: right !important;width: 60px;right: 14px; top:-16px;min-height: 28px !important; position: relative;}
+.programa .voltar:active{background:url(http://cmais.com.br/portal/images/capaPrograma/mob/btn-voltar-radio.png) no-repeat 0 bottom;}
 .programa .loader{ }
 .programa .accordin{background:#FFF;}
 /*/VIDEOS*/
@@ -281,7 +281,7 @@ div.jp-audio div.jp-type-single div.jp-volume-bar {left: 246px !important;}
 .content .ui-block-a{width:75px;}
 .content .ui-block-b{border-left: 1px dashed #FF855C; width:65%;height: 28px;margin: 8px 0 0 0;}
 .content .ui-block-b p{line-height: 19px;padding: 0px 0px 0 9px;font-weight: bold;color: #FF855C;margin: 5px 0 0 0;}
-.content .voltar{width:49px;padding: 6px 9px 6px 12px;line-height: 45px;border-radius: 10px;background:url(/portal/images/capaPrograma/mob/voltar-asset.png) no-repeat 0 -7px; text-shadow:none; color:#FFF;}
+.content .voltar{width:49px;padding: 6px 9px 6px 12px;line-height: 45px;border-radius: 10px;background:url(http://cmais.com.br/portal/images/capaPrograma/mob/voltar-asset.png) no-repeat 0 -7px; text-shadow:none; color:#FFF;}
 .content .fotob{width:300px; margin:10px 0; padding:0 12px;}
 .content h2{font-size:1.3em !important;margin: 0 0 0 0;}
 .content .conteudo{padding: 0 12px 12px 12px; border-bottom:1px solid #e6e6e6; clear:both;}
@@ -299,8 +299,8 @@ div.jp-audio div.jp-type-single div.jp-volume-bar {left: 246px !important;}
 
 /*FOOTER CMAIS PRINCIPAL*/
 .footer .fio, 
-.footerLive .fio{width: 100%; height:3px; background: url(/portal/images/capaPrograma/mob/pattern-laranja.gif); margin-top: -2px; z-index: 38; position: absolute;}
-.footer{width:100%; height:60px; background: url(/portal/images/capaPrograma/mob/pattern-cinza.gif); position: relative;}
+.footerLive .fio{width: 100%; height:3px; background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-laranja.gif); margin-top: -2px; z-index: 38; position: absolute;}
+.footer{width:100%; height:60px; background: url(http://cmais.com.br/portal/images/capaPrograma/mob/pattern-cinza.gif); position: relative;}
 .footerBotoes p{font-size:0.9em; color: #FFF; text-shadow:none;margin:0 0 3px 0; padding: 8px 0 0px 0;}
 .footerBotoes span{font-size:1.3em; color:#5c5c5c;}
 .footerBotoes p:last-child{font-size:0.6em;}

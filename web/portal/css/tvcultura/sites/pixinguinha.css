@@ -1,10 +1,10 @@
 #barra-site .topo-programa { height:160px;}
 #barra-site .redes { float: right; margin-top:100px; }
-#barra-site h2 {margin:0 0 0 -54px; background:url(/portal/images/capaPrograma/pixinguinha/partitura.png) no-repeat; width: 494px; height:160px;}
+#barra-site h2 {margin:0 0 0 -54px; background:url(http://cmais.com.br/portal/images/capaPrograma/pixinguinha/partitura.png) no-repeat; width: 494px; height:160px;}
 #barra-site h2 a { margin:85px 0 0 -200px; display:block; }
 #capa-site { margin-top:-108px !important;   }
 #barra-site .topo-programa { *margin-top:-20px; }
 #chamada { margin-bottom:0; }
-body {  background:#fff url(/portal/images/capaPrograma/pixinguinha/bg.jpg) repeat-x;  }
+body {  background:#fff url(http://cmais.com.br/portal/images/capaPrograma/pixinguinha/bg.jpg) repeat-x;  }
 .bg-chamada { height:60px; z-index: 100; margin-bottom:48px;}
 .bg-site { display:none; }

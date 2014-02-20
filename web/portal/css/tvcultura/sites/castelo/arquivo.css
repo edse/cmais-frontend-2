@@ -1,35 +1,35 @@
 body { background:#911630; min-height: 970px; }
-#bg { background:url("/portal/images/capaPrograma/castelo/img-arquivo-bg-biblioteca.jpg") no-repeat scroll center #911630; min-width:1000px !important; }
+#bg { background:url("http://cmais.com.br/portal/images/capaPrograma/castelo/img-arquivo-bg-biblioteca.jpg") no-repeat scroll center #911630; min-width:1000px !important; }
 #capa-site { height:963px; }
 #capa-site { *height:1040px !important; }
 .tudo { height:680px;*height:709px  }
 
 .navegacao{*left:40px !important; margin-left:40px}
-.botao-arquivo1 {z-index:0; cursor:pointer ; width:65px; height:60px; position:absolute; bottom: 107px;right: 211px; background: url(/portal/images/capaPrograma/castelo/gif-arquivo-1.gif) no-repeat;}
-.botao-arquivo1-over {z-index:1;width:141px; height:100px;position:absolute;bottom: 67px;right: 156px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-1-over.png) no-repeat;}
+.botao-arquivo1 {z-index:0; cursor:pointer ; width:65px; height:60px; position:absolute; bottom: 107px;right: 211px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-arquivo-1.gif) no-repeat;}
+.botao-arquivo1-over {z-index:1;width:141px; height:100px;position:absolute;bottom: 67px;right: 156px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-arquivo-1-over.png) no-repeat;}
 
-.botao-arquivo2 {z-index:0;cursor:pointer ;width:65px; height:70px;position:absolute;bottom: 74px;right: 324px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-2.gif) no-repeat;}
-.botao-arquivo2-over {z-index:1;width:90px; height:85px;position:absolute;bottom: 59px;right: 298px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-2-over.png) no-repeat;}
+.botao-arquivo2 {z-index:0;cursor:pointer ;width:65px; height:70px;position:absolute;bottom: 74px;right: 324px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-arquivo-2.gif) no-repeat;}
+.botao-arquivo2-over {z-index:1;width:90px; height:85px;position:absolute;bottom: 59px;right: 298px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-arquivo-2-over.png) no-repeat;}
 
-.botao-arquivo3 {z-index:0;cursor:pointer ;width:60px; height:65px;position:absolute;bottom: 154px;right: 313px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-3.gif) no-repeat;}
-.botao-arquivo3-over {z-index:1;width:87px; height:106px;position:absolute;bottom: 147px;right: 284px; background: url(/portal/images/capaPrograma/castelo/gif-arquivo-3-over.png) no-repeat;}
+.botao-arquivo3 {z-index:0;cursor:pointer ;width:60px; height:65px;position:absolute;bottom: 154px;right: 313px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-arquivo-3.gif) no-repeat;}
+.botao-arquivo3-over {z-index:1;width:87px; height:106px;position:absolute;bottom: 147px;right: 284px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-arquivo-3-over.png) no-repeat;}
 
-.botao-arquivo4 {z-index:0;cursor:pointer ;width:72px; height:85px;position:absolute;bottom: 139px;left: 362px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-4.gif) no-repeat -7px 0px;}
-.botao-arquivo4-over {z-index:1;width:99px; height:125px;position:absolute;bottom: 128px;left: 357px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-4-over.png) no-repeat;}
+.botao-arquivo4 {z-index:0;cursor:pointer ;width:72px; height:85px;position:absolute;bottom: 139px;left: 362px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-arquivo-4.gif) no-repeat -7px 0px;}
+.botao-arquivo4-over {z-index:1;width:99px; height:125px;position:absolute;bottom: 128px;left: 357px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-arquivo-4-over.png) no-repeat;}
 
-.botao-arquivo5 {z-index:0;cursor:pointer ;width:65px; height:45px;position:absolute;top: 315px;right: 316px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-5.gif) no-repeat;}
-.botao-arquivo5-over {z-index:1;width:99px; height:75px;position:absolute;top: 316px;right: 294px; background: url(/portal/images/capaPrograma/castelo/gif-arquivo-5-over.png) no-repeat;}
+.botao-arquivo5 {z-index:0;cursor:pointer ;width:65px; height:45px;position:absolute;top: 315px;right: 316px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-arquivo-5.gif) no-repeat;}
+.botao-arquivo5-over {z-index:1;width:99px; height:75px;position:absolute;top: 316px;right: 294px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-arquivo-5-over.png) no-repeat;}
 
-.botao-arquivo6 {z-index:0;cursor:pointer ;width:85px; height:55px;position:absolute;bottom: 73px;left: 366px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-6.gif) no-repeat;}
-.botao-arquivo6-over {z-index:1;width:122px; height:81px;position:absolute;bottom: 48px;left: 364px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-6-over.png) no-repeat;}
+.botao-arquivo6 {z-index:0;cursor:pointer ;width:85px; height:55px;position:absolute;bottom: 73px;left: 366px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-arquivo-6.gif) no-repeat;}
+.botao-arquivo6-over {z-index:1;width:122px; height:81px;position:absolute;bottom: 48px;left: 364px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-arquivo-6-over.png) no-repeat;}
 
-.botao-arquivo7 {z-index:0;cursor:pointer ;width:85px; height:45px;position:absolute;bottom: 103px;left: 208px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-7.gif) no-repeat;}
-.botao-arquivo7-over {z-index:1;width:134px; height:92px;position:absolute;bottom: 57px;left:167px;background: url(/portal/images/capaPrograma/castelo/gif-arquivo-7-over.png) no-repeat;}
+.botao-arquivo7 {z-index:0;cursor:pointer ;width:85px; height:45px;position:absolute;bottom: 103px;left: 208px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-arquivo-7.gif) no-repeat;}
+.botao-arquivo7-over {z-index:1;width:134px; height:92px;position:absolute;bottom: 57px;left:167px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-arquivo-7-over.png) no-repeat;}
 
-.gif-olho{width:33px;height:12px;position: absolute;top: 21px;*top: 49px;left: 60px;background: url(/portal/images/capaPrograma/castelo/gif-personagem-gatopintado.gif) no-repeat;}
+.gif-olho{width:33px;height:12px;position: absolute;top: 21px;*top: 49px;left: 60px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-gatopintado.gif) no-repeat;}
 .botao-gato {z-index: 0;cursor: pointer;width: 101px;height: 96px;position: absolute;*top: 395px;top: 367px;left: 231px;}
-.botao-gato-over {z-index:1;width:139px; height:128px;position:absolute;top: 364px;*top: 392px;left: 248px;background: url(/portal/images/capaPrograma/castelo/img-personagem-gatopintado-over.png) no-repeat;}
+.botao-gato-over {z-index:1;width:139px; height:128px;position:absolute;top: 364px;*top: 392px;left: 248px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-gatopintado-over.png) no-repeat;}
 
-.gif-pedro{background:  url(/portal/images/capaPrograma/castelo/gif-personagem-pedro.gif) no-repeat; width:50px; height:56px;top: -48px;position: absolute;left: 67px;}
-.botao-pedro {z-index:0;cursor:pointer ;width:106px; height:180px;position:absolute;bottom: 155px;right: 140px;/*background: url(/portal/images/capaPrograma/castelo/img-personagem-pedro.png) no-repeat;*/}
-.botao-pedro-over {z-index:1;width:179px; height:200px;position:absolute;bottom: 151px;right: 100px;background: url(/portal/images/capaPrograma/castelo/img-personagem-pedro-over.png) no-repeat;}
+.gif-pedro{background:  url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-pedro.gif) no-repeat; width:50px; height:56px;top: -48px;position: absolute;left: 67px;}
+.botao-pedro {z-index:0;cursor:pointer ;width:106px; height:180px;position:absolute;bottom: 155px;right: 140px;/*background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-pedro.png) no-repeat;*/}
+.botao-pedro-over {z-index:1;width:179px; height:200px;position:absolute;bottom: 151px;right: 100px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-pedro-over.png) no-repeat;}

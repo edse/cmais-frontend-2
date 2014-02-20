@@ -1,13 +1,13 @@
 /** millor **/
-body {background:url(/portal/images/capaPrograma/millor/bg-tudo2.jpg) repeat-x 0 0;  }
+body {background:url(http://cmais.com.br/portal/images/capaPrograma/millor/bg-tudo2.jpg) repeat-x 0 0;  }
 .submenu-interna {width:106px;}
 .submenu-interna li a { margin-left:10px;}
 .chapeu {color:#ff6633;}
-.bg-site {height:100px; width:100%; /*background:url(/portal/images/capaPrograma/millor/bkg.gif) repeat-x;*/ position:relative; top:48px; z-index: 0; clear:both;}
+.bg-site {height:100px; width:100%; /*background:url(http://cmais.com.br/portal/images/capaPrograma/millor/bkg.gif) repeat-x;*/ position:relative; top:48px; z-index: 0; clear:both;}
 #capa-site {margin-top:-45px !important;}
 /*#capa-site {*margin-top:-100px !important;}*/
 #miolo {margin-top:28px;}
-#barra-site {height:100px; background:url(/portal/images/capaPrograma/millor/logo.png) no-repeat 50px 0; margin:0; width:1012px; }
+#barra-site {height:100px; background:url(http://cmais.com.br/portal/images/capaPrograma/millor/logo.png) no-repeat 50px 0; margin:0; width:1012px; }
 #barra-site h2 { width: 374px; }
 #barra-site h2 a { font-size:25px; color:#fff; text-transform:uppercase; text-indent:-9999px; width: 340px; height:100px; display:block; }
 .bg-site  {_margin-top:-49px !important;}

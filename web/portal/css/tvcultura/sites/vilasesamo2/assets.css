@@ -3,7 +3,7 @@
 .todos-assets:hover p { text-decoration:underline; }
 .todos-assets i { float:left; margin-right:0 !important; position:relative; margin:0px!important; }
 .interna.videos #content .filtro h3 i.sprite-btn-voltar-videos { margin-top:0; }
-.todos-assets p { background: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-jogos.png) repeat; float:left; margin:0 !important; margin-left:-15px !important; height:48px; line-height:48px; padding:0 10px 0 20px; color: #FFFFFF;font-size:25px!important;font-weight: normal;text-transform: uppercase; }
+.todos-assets p { background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-jogos.png) repeat; float:left; margin:0 !important; margin-left:-15px !important; height:48px; line-height:48px; padding:0 10px 0 20px; color: #FFFFFF;font-size:25px!important;font-weight: normal;text-transform: uppercase; }
 #content .filtro { border-bottom:none; margin-bottom:0; }
 #content .filtro h3 { padding-right:0; }
 .conteudo-asset {padding: 10px 20px 30px 20px; background:#fff; overflow: hidden; width: 900px;}
@@ -91,7 +91,7 @@ h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1
 /*.form-horizontal .anexo input { overflow:hidden; margin-left: -37px; float:left; }*/
 .form .sucesso .btn,
 .form-horizontal .span11 .btn,
-.form-horizontal .anexo a { height:36px; line-height:36px; background:url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x; display: block; padding:0 5px; color:#737373; text-transform:uppercase; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-size: 18px; text-align:center; }
+.form-horizontal .anexo a { height:36px; line-height:36px; background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x; display: block; padding:0 5px; color:#737373; text-transform:uppercase; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-size: 18px; text-align:center; }
 .form-horizontal .control-label.sprite-ico-email, 
 .form-horizontal .sprite-ico-email { margin-top:4px; }
 .form-horizontal .sprite-ico-anexo { width:28px !important; }
@@ -128,7 +128,7 @@ h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1
 /* /assets */
 
 /* atividades*/
-.interna.atividades .todos-assets p { background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png);font-size:25px!important; }
+.interna.atividades .todos-assets p { background-image: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-atividades.png);font-size:25px!important; }
 .interna.atividades .conteudo-asset h2 { color:#883feb; }
 .interna.atividades #content{background-color:#571ed9;}
 .interna.atividades #content .relacionados {background:#7732e5; border-bottom:none;}
@@ -140,7 +140,7 @@ h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1
 /* /atividades*/
 
 /* videos */
-.interna.videos .todos-assets p { background-image: url(/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-videos.png); }
+.interna.videos .todos-assets p { background-image: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-diagonal-videos.png); }
 .interna.videos .conteudo-asset h2 { color:#f27300; }
 .interna.videos #content .relacionados {background:#f57301; border:none;}
 .interna.videos #content .filtro h3 span,
@@ -214,5 +214,5 @@ h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1
 /* botao anexar */
 .form .file-wrapper {cursor: pointer;display: inline-block;overflow: hidden;position: relative;}
 .form .file-wrapper input {cursor: pointer;font-size: 100px;height: 100%;filter: alpha(opacity=1);-moz-opacity: 0.01;opacity: 0.01;position: absolute;right: 0;top: 0;}
-.form .file-wrapper .button {float:right;background: url(/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;border:none;color: #434343!important;cursor: pointer;display: inline-block;font-size: 11px;font-weight: bold;margin-right: 5px;padding: 8px 19px;text-transform: uppercase;font-family:'din-blackregular',Arial, Helvetica, sans-serif;font-size:18px;}
+.form .file-wrapper .button {float:right;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;border:none;color: #434343!important;cursor: pointer;display: inline-block;font-size: 11px;font-weight: bold;margin-right: 5px;padding: 8px 19px;text-transform: uppercase;font-family:'din-blackregular',Arial, Helvetica, sans-serif;font-size:18px;}
 .form .file-holder{clear: both;text-align: left;color: #FFF;margin: 10px 0 7px 0;padding-left: 13px;font-size: 12px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}

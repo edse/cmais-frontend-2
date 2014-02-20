@@ -11,14 +11,14 @@ font-style: normal;
 }
 
 
-body { background:#fbe9f9 url(/portal/images/capaPrograma/penarua/bg.jpg) repeat;}
+body { background:#fbe9f9 url(http://cmais.com.br/portal/images/capaPrograma/penarua/bg.jpg) repeat;}
 .menu-interna li { background:#ffda33; }
 .menu-interna li.ativo, 
 .menu-interna li:hover { background:#0c55bb; }
 #horario { display:none; }
 #barra-site .redes { float:left; margin-top:76px; }
 #capa-site {  margin-bottom:50px !important;  }
-/*#barra-site { background:url(/portal/images/capaPrograma/penarua/bg-horario.png) no-repeat right -20px; height:160px; margin-top:0;  }*/  
+/*#barra-site { background:url(http://cmais.com.br/portal/images/capaPrograma/penarua/bg-horario.png) no-repeat right -20px; height:160px; margin-top:0;  }*/  
 .contato form .linha select, 
 .contato form textarea,
 .contato form .linha input {border-color:#0c55bb !important;}
@@ -31,7 +31,7 @@ body { background:#fbe9f9 url(/portal/images/capaPrograma/penarua/bg.jpg) repeat
 .home #barra-site {height:141px !important; overflow:hidden; background:none;}
 .home #barra-site .redes {float:right; margin-top:55px;}
 .home #barra-site #horario {margin-top:10px;}
-.home .bg-tudo { background:url(/portal/images/capaPrograma/penarua/bg-tudo.png) center bottom no-repeat; height:920px; margin-bottom:-76px;min-width: 1000px !important;width: 100%; }
+.home .bg-tudo { background:url(http://cmais.com.br/portal/images/capaPrograma/penarua/bg-tudo.png) center bottom no-repeat; height:920px; margin-bottom:-76px;min-width: 1000px !important;width: 100%; }
 .home .bg-tudo { *height: 970px; }
 .home #miolo {min-height:735px;}
 .home #chamada {margin:10px 0 0 0;}
@@ -48,8 +48,8 @@ body { background:#fbe9f9 url(/portal/images/capaPrograma/penarua/bg.jpg) repeat
 .home .video a,
 .home .placas a {text-indent:-9999px; display:block;}
 .home .relogio a:hover { opacity:0.8; -moz-opacity: 0.8; filter: alpha(opacity=80);}
-.home .fale-conosco { width:92px; height:189px; background:url(/portal/images/capaPrograma/penarua/fale-conosco.png) no-repeat; bottom:340px; left:0; }
-.home .relogio { width:144px; height:363px; background:url(/portal/images/capaPrograma/penarua/relogio2.png) no-repeat; bottom:379px; left:72px; }
+.home .fale-conosco { width:92px; height:189px; background:url(http://cmais.com.br/portal/images/capaPrograma/penarua/fale-conosco.png) no-repeat; bottom:340px; left:0; }
+.home .relogio { width:144px; height:363px; background:url(http://cmais.com.br/portal/images/capaPrograma/penarua/relogio2.png) no-repeat; bottom:379px; left:72px; }
 .home .relogio .jclock { color:#fff; width:107px; height:44px; line-height:44px; margin:-2px 0 0 8px; }
 
 .home .relogio .jclock,
@@ -57,21 +57,21 @@ body { background:#fbe9f9 url(/portal/images/capaPrograma/penarua/bg.jpg) repeat
 
 .home .relogio a { width:106px; height:145px; overflow:hidden; border:1px solid #4178b0; margin:11px 8px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius: 5px; }
 .home .relogio a img {display:block; height:145px;}
-.home .horario { width:500px; height:266px; background:url(/portal/images/capaPrograma/penarua/horario.png) no-repeat; bottom:0; right:113px; }
-.home .video { width:465px; height:547px; background:url(/portal/images/capaPrograma/penarua/video.png) no-repeat; bottom:140px; right:0; padding-top:27px; }
-.home .video a { text-indent:-9999px; display:block; background:url(/portal/images/capaPrograma/penarua/mais-videos.jpg) no-repeat; width:77px; height:31px; float:right; margin-top:4px;}
-.home .video a:hover { background-image:url(/portal/images/capaPrograma/penarua/mais-videosHover.jpg); }
+.home .horario { width:500px; height:266px; background:url(http://cmais.com.br/portal/images/capaPrograma/penarua/horario.png) no-repeat; bottom:0; right:113px; }
+.home .video { width:465px; height:547px; background:url(http://cmais.com.br/portal/images/capaPrograma/penarua/video.png) no-repeat; bottom:140px; right:0; padding-top:27px; }
+.home .video a { text-indent:-9999px; display:block; background:url(http://cmais.com.br/portal/images/capaPrograma/penarua/mais-videos.jpg) no-repeat; width:77px; height:31px; float:right; margin-top:4px;}
+.home .video a:hover { background-image:url(http://cmais.com.br/portal/images/capaPrograma/penarua/mais-videosHover.jpg); }
 .home .placas { bottom:383px; left:220px; width:230px; height:234px;  }
 .home .placas div { display:block; float: left; position:absolute; }
 .home .placas a { text-indent:-9999px; width:69px; height:68px;}
-.home .pl-fq { width:69px; height:164px; background:url(/portal/images/capaPrograma/penarua/placa-fq.png) no-repeat; top:12px; left:0 }
-.home .pl-fq:hover { background-image:url(/portal/images/capaPrograma/penarua/placa-fqHover.png);  }
-.home .pl-fb { width:74px; height:168px; background:url(/portal/images/capaPrograma/penarua/placa-fb.png) no-repeat; top:-23px; left:53px }
+.home .pl-fq { width:69px; height:164px; background:url(http://cmais.com.br/portal/images/capaPrograma/penarua/placa-fq.png) no-repeat; top:12px; left:0 }
+.home .pl-fq:hover { background-image:url(http://cmais.com.br/portal/images/capaPrograma/penarua/placa-fqHover.png);  }
+.home .pl-fb { width:74px; height:168px; background:url(http://cmais.com.br/portal/images/capaPrograma/penarua/placa-fb.png) no-repeat; top:-23px; left:53px }
 .home .pl-fb a { margin:2px; }
-.home .pl-fb:hover { background-image:url(/portal/images/capaPrograma/penarua/placa-fbHover.png); }
-.home .pl-tw { width:72px; height:181px; background:url(/portal/images/capaPrograma/penarua/placa-tw.png) no-repeat; top:-65px; left:113px; }
+.home .pl-fb:hover { background-image:url(http://cmais.com.br/portal/images/capaPrograma/penarua/placa-fbHover.png); }
+.home .pl-tw { width:72px; height:181px; background:url(http://cmais.com.br/portal/images/capaPrograma/penarua/placa-tw.png) no-repeat; top:-65px; left:113px; }
 .home .pl-tw a { margin:17px 0 0 0; }
-.home .pl-tw:hover { background-image:url(/portal/images/capaPrograma/penarua/placa-twHover.png); }
+.home .pl-tw:hover { background-image:url(http://cmais.com.br/portal/images/capaPrograma/penarua/placa-twHover.png); }
 
 .home #weather_img,
 .home #weather_country,
@@ -81,7 +81,7 @@ body { background:#fbe9f9 url(/portal/images/capaPrograma/penarua/bg.jpg) repeat
 .home #weather_widget {padding:0; border:0; background:transparent; color:#fff; width:104px; height:80px; line-height40px; margin:0 0 0 9px;}
 .home #weather_temp { width:104px; height:35px; line-height:35px; margin-top:3px; }
 
-.home .carro { background:url(/portal/images/capaPrograma/penarua/carro.png) no-repeat; bottom:200px; left:43px;  }
+.home .carro { background:url(http://cmais.com.br/portal/images/capaPrograma/penarua/carro.png) no-repeat; bottom:200px; left:43px;  }
 .home .carro { width:246px; height:194px; }
 .home .carro a {display:block; text-indent:-9999px; margin:0 auto; padding:10px 0;}
 .home .carro .dica {position:relative; top:0; left:0; width:125px;} 

@@ -1,4 +1,4 @@
-body { background:#fff url("/portal/images/capaPrograma/revistavitrine/bg-vitrine.jpg") repeat-x; }
+body { background:#fff url("http://cmais.com.br/portal/images/capaPrograma/revistavitrine/bg-vitrine.jpg") repeat-x; }
 #capa-site { margin-bottom:100px; }
 #barra-site h2 { float:none; margin-top:20px; }
 #barra-site .baixar,
@@ -22,7 +22,7 @@ body { background:#fff url("/portal/images/capaPrograma/revistavitrine/bg-vitrin
 .menu-vitrine li p,
 .menu-vitrine li a.ativo { background:#e11e48; color:#fff; text-decoration:none; }
 .menu-vitrine li p { position:absolute; top:50px; text-align:left; padding:10px; }
-.icon-chevron-down { background: url("/portal/images/capaPrograma/revistavitrine/down.png") no-repeat; width:10px; height:5px; display: block; float:right; margin-left:5px; margin-top:4px; display:none}
+.icon-chevron-down { background: url("http://cmais.com.br/portal/images/capaPrograma/revistavitrine/down.png") no-repeat; width:10px; height:5px; display: block; float:right; margin-left:5px; margin-top:4px; display:none}
 .menu-vitrine li a.ativo .icon-chevron-down ,
 .menu-vitrine li a:hover .icon-chevron-down { display: block; } 
 .online .descricao { width: 320px; float:left; text-align:left; color:#4b4a4b; }
@@ -35,7 +35,7 @@ body { background:#fff url("/portal/images/capaPrograma/revistavitrine/bg-vitrin
 .issuuembed { width:630px !important; }
 
 .edicoes { clear:both; text-align:left;  }
-.edicoes .tit-edicoes { background:url(/portal/images/capaPrograma/revistavitrine/bg-tit.jpg) repeat-x bottom; height:22px; }
+.edicoes .tit-edicoes { background:url(http://cmais.com.br/portal/images/capaPrograma/revistavitrine/bg-tit.jpg) repeat-x bottom; height:22px; }
 .edicoes .tit-edicoes h3 { border-top:1px solid #7f7b7b; background:#464646; color:#fff; text-transform:uppercase; font-size:14px; display: inline; padding:3px 10px;}
 .edicoes ul img { float:left; margin-right:10px; }
 .edicoes ul .descricao { width:275px; }

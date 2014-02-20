@@ -11,7 +11,7 @@
 /*/TOPO PORTAL*/ 
 
 /* PAGINAS PADRÕES*/
-body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg) !important;}
+body{background: url(http://cmais.com.br/portal/images/capaPrograma/sic/pattern-fundo.jpg) !important;}
 
 #capa-site{overflow:visible; width:1012px; margin:0 auto; min-height: 700px; }
 #capa-site h2,#capa-site p,#capa-site span{margin:6px 0 20px 2px !important; }
@@ -19,8 +19,8 @@ body{background: url(/portal/images/capaPrograma/sic/pattern-fundo.jpg) !importa
 #capa-site h2{font-size:24px !important; text-transform:uppercase; color:#ed9f18 !important; }
 #menu-portal-2 ul.abas{margin: 0;}
 
-#risco{background: url(/portal/images/capaPrograma/sic/pattern-linha.jpg) repeat-x !important; height:2px;width:100%;float:left; margin:-1px;}
-#risco-2{background: url(/portal/images/capaPrograma/sic/pattern-linha-2.jpg) repeat-x !important; height:2px;float:left; margin:0;}
+#risco{background: url(http://cmais.com.br/portal/images/capaPrograma/sic/pattern-linha.jpg) repeat-x !important; height:2px;width:100%;float:left; margin:-1px;}
+#risco-2{background: url(http://cmais.com.br/portal/images/capaPrograma/sic/pattern-linha-2.jpg) repeat-x !important; height:2px;float:left; margin:0;}
 span.pergunta{font-size:20px; font-weight:bold;}
 .float{float:left;}
 .conteudo{padding:10px 0 0 0;}
