@@ -2164,8 +2164,8 @@ body.branco { background:#fff url(http://cmais.com.br/portal/images/capaPrograma
 .ui-datepicker { padding:0; }
 .ui-datepicker .ui-datepicker-next-hover,
 .ui-datepicker .ui-datepicker-prev-hover { background:transparent; border-color:#333; }
-.ui-datepicker .ui-datepicker-prev-hover span { background-image: url("/portal/js/jquery-ui/css/ui-lightness/images/ui-icons_ffffff_256x240.png");  }
-.ui-datepicker .ui-datepicker-next-hover span {  background-image: url("/portal/js/jquery-ui/css/ui-lightness/images/ui-icons_ffffff_256x240.png");}
+.ui-datepicker .ui-datepicker-prev-hover span { background-image: url("http://cmais.com.br/portal/js/jquery-ui/css/ui-lightness/images/ui-icons_ffffff_256x240.png");  }
+.ui-datepicker .ui-datepicker-next-hover span {  background-image: url("http://cmais.com.br/portal/js/jquery-ui/css/ui-lightness/images/ui-icons_ffffff_256x240.png");}
 .ui-datepicker th span { text-transform:uppercase; color:#333; font-size:11px; }
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { color:#333; border:none; background:#fff; }
 .ui-state-default.ui-state-highlight,

@@ -1,10 +1,10 @@
 @font-face {
   font-family: "GothamMediumRegular"; 
-  src: url("/portal/css/fontes/gotham/gotham-medium-webfont.eot");
+  src: url("http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.eot");
   src: local('ÃƒÂ¢Ã‚ËœÃ‚Âº'), 
-       url("/portal/css/fontes/gotham/gotham-medium-webfont.woff") format('woff'),
-       url("/portal/portal/css/fontes/gotham/gotham-medium-webfont.ttf") format("truetype"), 
-       url("/portal/css/fontes/gotham/gotham-medium-webfont.svg#webfont1U04CDEx") format("svg");
+       url("http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.woff") format('woff'),
+       url("http://cmais.com.br/portal/portal/css/fontes/gotham/gotham-medium-webfont.ttf") format("truetype"), 
+       url("http://cmais.com.br/portal/css/fontes/gotham/gotham-medium-webfont.svg#webfont1U04CDEx") format("svg");
   font-weight: bold;
   font-style: bold;       
 }

@@ -747,34 +747,34 @@ var drawingApp = (function () {
 
       // Load images
       crayonImage.onload = resourceLoaded;
-      crayonImage.src = "/portal/js/drawing-cocorico/images/crayon-outline.png";
+      crayonImage.src = "http://cmais.com.br/portal/js/drawing-cocorico/images/crayon-outline.png";
 
       markerImage.onload = resourceLoaded;
-      markerImage.src = "/portal/js/drawing-cocorico/images/marker-outline.png";
+      markerImage.src = "http://cmais.com.br/portal/js/drawing-cocorico/images/marker-outline.png";
 
       eraserImage.onload = resourceLoaded;
-      eraserImage.src = "/portal/js/drawing-cocorico/images/eraser-outline.png";
+      eraserImage.src = "http://cmais.com.br/portal/js/drawing-cocorico/images/eraser-outline.png";
 
       crayonBackgroundImage.onload = resourceLoaded;
-      crayonBackgroundImage.src = "/portal/js/drawing-cocorico/images/crayon-background.png";
+      crayonBackgroundImage.src = "http://cmais.com.br/portal/js/drawing-cocorico/images/crayon-background.png";
 
       markerBackgroundImage.onload = resourceLoaded;
-      markerBackgroundImage.src = "/portal/js/drawing-cocorico/images/marker-background.png";
+      markerBackgroundImage.src = "http://cmais.com.br/portal/js/drawing-cocorico/images/marker-background.png";
 
       eraserBackgroundImage.onload = resourceLoaded;
-      eraserBackgroundImage.src = "/portal/js/drawing-cocorico/images/eraser-background.png";
+      eraserBackgroundImage.src = "http://cmais.com.br/portal/js/drawing-cocorico/images/eraser-background.png";
 
       bucketBackgroundImage.onload = resourceLoaded;
-      bucketBackgroundImage.src = "/portal/js/drawing-cocorico/images/bucket-background.png";
+      bucketBackgroundImage.src = "http://cmais.com.br/portal/js/drawing-cocorico/images/bucket-background.png";
 
       crayonTextureImage.onload = function () {
         contexts.texture.drawImage(crayonTextureImage, 0, 0, drawingAreaWidth, drawingAreaHeight);
         resourceLoaded();
       };
-      crayonTextureImage.src = "/portal/js/drawing-cocorico/images/crayon-texture.png";
+      crayonTextureImage.src = "http://cmais.com.br/portal/js/drawing-cocorico/images/crayon-texture.png";
 
       swatchImage.onload = resourceLoaded;
-      swatchImage.src = "/portal/js/drawing-cocorico/images/paint-outline.png";
+      swatchImage.src = "http://cmais.com.br/portal/js/drawing-cocorico/images/paint-outline.png";
 
       outlineImage.onload = function () {
         

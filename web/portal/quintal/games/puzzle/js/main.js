@@ -21,7 +21,7 @@ init = function() {
   var tileSize = boardSize / tileCount;
 
   var img = new Image();
-  img.src = '/portal/quintal/games/puzzle/img/cocorico-pascoa-quadrado.jpg';
+  img.src = 'http://cmais.com.br/portal/quintal/games/puzzle/img/cocorico-pascoa-quadrado.jpg';
   img.addEventListener('load', drawTiles, false);
 
   setBoard();
