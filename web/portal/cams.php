@@ -34,5 +34,8 @@ if($_REQUEST["test"]){
   var_dump($return);
   print "</pre>";
 }
-else
-echo json_encode($return);
+else{
+	$content_return = array("data" => $return);
+	$content = json_encode($content_return);
+	echo $content;
+}
