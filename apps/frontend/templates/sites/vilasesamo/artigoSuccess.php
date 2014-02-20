@@ -4,9 +4,9 @@
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if IE]><!-->
 <style>
-@font-face {
 	
 @media screen and (max-width: 768px) {
+	@font-face {
     
 	  font-family: 'din-blackregular';
 	  src: url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.eot');
