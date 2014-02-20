@@ -2,25 +2,6 @@
 
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<!--[if IE]><!-->
-<style>
-	
-@media screen and (max-width: 768px) {
-	@font-face {
-    
-	  font-family: 'din-blackregular';
-	  src: url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.eot');
-	  src: url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.eot?#iefix') format('embedded-opentype'),
-	       url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.woff') format('woff'),
-	       url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.ttf') format('truetype'),
-	       url('http://cmais.com.br/portal/css/fontes/din/din-black-webfont.svg#din-blackregular') format('svg');
-	  font-weight: normal;
-	  font-style: normal;
-	}
-
-}
-</style>
-<!--<![endif]-->
 
 <link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 
