@@ -40,7 +40,8 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
 
   function redirect(d){
     //send('<?php echo $sChannel->getSlug() ?>',d);
-    self.location.href = '<?php echo $base_url ?>/'+d;
+    self.location.href = '<?php //echo $base_url ?>/'+d;
+    self.location.href = 'http://tvcultura.cmais.com.br/grade/'+d;
   }
 
   //cache the days and months
