@@ -26,7 +26,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 	</h1>
   
   <!--section -->
-  <section class="filtro row-fluid pais categorias">
+  <section id="categoria-box-pais" class="filtro row-fluid pais categorias">
     
     <!--selecione a categoria-->
     <?php
