@@ -41,7 +41,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
 
   function redirect(d){
     //send('multicultura',d);
-    self.location.href = '<?php echo $base_url ?>/'+d; 
+    self.location.href = 'http://multicultura.cmais.com.br/programacao/'+d; 
   }
 
   //cache the days and months
