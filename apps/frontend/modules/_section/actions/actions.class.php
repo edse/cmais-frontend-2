@@ -380,6 +380,22 @@ class _sectionActions extends sfActions
               $this->date = $request->getParameter('date');
             else{
               $this->date = date("Y-m-d");
+              if($this->site->getSlug() == "tvratimbum"){
+                header("Location: http://tvratimbum.cmais.com.br/grade/".date("Y-m-d"));
+                die();
+              }
+              else if($this->site->getSlug() == "univesptv"){
+                header("Location: http://univesptv.cmais.com.br/programacao/".date("Y-m-d"));
+                die();
+              }
+              else if($this->site->getSlug() == "multicultura"){
+                header("Location: http://multicultura.cmais.com.br/programacao/".date("Y-m-d"));
+                die();
+              }
+              else if($this->site->getSlug() == "tvcultura"){
+                header("Location: http://tvcultura.cmais.com.br/grade/".date("Y-m-d"));
+                die();
+              }
               /*
               if($this->section->Site->getSlug() == "culturabrasil" || $this->section->Site->getSlug() == "culturafm") {
                 $this->date = date("Y-m-d");
@@ -390,6 +406,7 @@ class _sectionActions extends sfActions
                 header("Location: http://culturafm.cmais.com.br/guia-do-ouvinte/".date("Y-m-d"));
                 die();
               }
+
               /*
               if($this->section->slug != "controleremoto"){
                 header("Location: http://tvcultura.cmais.com.br/grade/".date("Y-m-d"));
