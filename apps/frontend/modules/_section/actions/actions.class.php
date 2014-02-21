@@ -389,10 +389,12 @@ class _sectionActions extends sfActions
                 header("Location: http://culturafm.cmais.com.br/guia-do-ouvinte/".date("Y-m-d"));
                 die();
               }
+              /*
               if($this->section->slug != "controleremoto"){
                 header("Location: http://tvcultura.cmais.com.br/grade/".date("Y-m-d"));
                 die();
               }
+              */
               //}
             }
 
