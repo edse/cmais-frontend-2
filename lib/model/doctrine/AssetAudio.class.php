@@ -136,7 +136,7 @@ class AssetAudio extends BaseAssetAudio
           mp3: "http://midia.cmais.com.br/assets/audio/default/'.$this->getFile().'.mp3",
         });
       },
-      swfPath: "/js/audioplayer",
+      swfPath: "http://cmais.com.br/js/audioplayer",
       supplied: "mp3"
     });
   });

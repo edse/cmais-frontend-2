@@ -43,7 +43,7 @@ class AssetContent extends BaseAssetContent
       play: function() { // To avoid both jPlayers playing together.
         $(this).jPlayer("pauseOthers");
       },
-      swfPath: "/js/audioplayer",
+      swfPath: "http://cmais.com.br/js/audioplayer",
       supplied: "mp3",
       wmode: "window",
       cssSelectorAncestor: "#jp_container_\\2"
@@ -95,7 +95,7 @@ class AssetContent extends BaseAssetContent
       play: function() { // To avoid both jPlayers playing together.
         $(this).jPlayer("pauseOthers");
       },
-      swfPath: "/js/audioplayer",
+      swfPath: "http://cmais.com.br/js/audioplayer",
       supplied: "mp3",
       wmode: "window",
       cssSelectorAncestor: "#jp_container_\\2"
