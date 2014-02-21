@@ -274,8 +274,8 @@ if ($episode) {
                   </div>
                   <?php endif;?>
                   <?php endif;?>
-                  <?php include_partial_from_folder('sites/pedroebianca','global/share-2c')
-                  ?>
+                  <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
+                  <?php // include_partial_from_folder('sites/pedroebianca','global/share-2c') ?>
                 </div>
               </div>
               <div class="veja">
