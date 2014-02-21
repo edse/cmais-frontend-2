@@ -2,8 +2,8 @@
 $u = explode("/", $url);
 array_pop($u);
 $base_url = str_replace("/index.php", "", implode("/", $u));
-$nextDateUrl = $base_url."/".str_replace("/","-",$nextDate); 
-$prevDateUrl = $base_url."/".str_replace("/","-",$prevDate); 
+$nextDateUrl = "http://multicultura.cmais.com.br/programacao/".str_replace("/","-",$nextDate); 
+$prevDateUrl = "http://multicultura.cmais.com.br/programacao/".str_replace("/","-",$prevDate); 
 ?>
 <script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
 <script src="http://cmais.com.br/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
