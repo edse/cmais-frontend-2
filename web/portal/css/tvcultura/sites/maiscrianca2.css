@@ -120,7 +120,7 @@ p { color:#333; font-size: 14px;}
 .naweb .castelortb { background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/castelortb.png) no-repeat -162px 0; width:150px; height:114px; }
 .naweb .vilasesamo { background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/vilasesamo.png) no-repeat -212px 0; width:212px; height:99px; }
 .naweb .cocorico { background:url(http://cmais.com.br/portal/images/capaPrograma/maiscrianca2/cocorico.png) no-repeat -225px 0; width:213px; height:60px; }
-.naweb li a:hover { background-position:0 0;  }
+.naweb li a:hover { background-position: -1px 0;  }
 
 /* /destaques*/ 
 
