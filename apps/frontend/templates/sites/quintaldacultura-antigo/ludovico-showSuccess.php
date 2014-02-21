@@ -72,9 +72,9 @@ $img_b = "http://midia.cmais.com.br/assets/image/original/".$imgs[0]->AssetImage
     function sendAnswer(){
       $.ajax({
         type: "POST",
-        dataType: "json",
+        dataType: "jsonp",
         data: $("#e<?php echo $respostas[0]->Asset->getId()?>").serialize(),
-        url: "<?php //echo url_for('homepage')?>/ajax/enquetes",
+        url: "http://app.cmais.com.br/ajax/enquetes",
         beforeSend: function(){
           $('.sim, .nao').hide();
           $('#espera').fadeIn('slow');

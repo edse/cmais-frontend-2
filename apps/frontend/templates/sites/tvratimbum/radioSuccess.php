@@ -558,7 +558,7 @@
                   play: function() {
                   $(this).jPlayer("pauseOthers");
                   },
-                  swfPath: "/js/audioplayer",
+                  swfPath: "http://cmais.com.br/js/audioplayer",
                   supplied: "mp3"
                   });
                   });

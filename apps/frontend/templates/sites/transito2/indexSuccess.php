@@ -142,8 +142,8 @@
               <script>
               $(function(){
                 $.ajax({
-                  url: "http://cmais.com.br/portal/cams.php?s=ecovias",
-                  dataType: "json",
+                  url: "http://app.cmais.com.br/portal/cams.php?s=ecovias",
+                  dataType: "jsonp",
                   success: function(data){
                     $.each(data, function(i,data){
                       $('#opcao-via-1').append('<option value="'+data.src+'">'+data.title+'</option>');
@@ -151,8 +151,8 @@
                   }
                 });
                 $.ajax({
-                  url: "http://cmais.com.br/portal/cams.php?s=ecopistas",
-                  dataType: "json",
+                  url: "http://app.cmais.com.br/portal/cams.php?s=ecopistas",
+                  dataType: "jsonp",
                   success: function(data){
                     $.each(data, function(i,data){
                       $('#opcao-via-1').append('<option value="'+data.src+'">'+data.title+'</option>');

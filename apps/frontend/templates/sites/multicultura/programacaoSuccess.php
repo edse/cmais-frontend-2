@@ -5,7 +5,7 @@ $base_url = str_replace("/index.php", "", implode("/", $u));
 $nextDateUrl = "http://multicultura.cmais.com.br/programacao/".str_replace("/","-",$nextDate); 
 $prevDateUrl = "http://multicultura.cmais.com.br/programacao/".str_replace("/","-",$prevDate); 
 ?>
-<script type="text/javascript" src="/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/js/jquery-ui-1.8.7/js/jquery-ui-1.8.7.custom.min.js"></script>
 <script src="http://cmais.com.br/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/grade.css" type="text/css" />
 <link type="text/css" href="http://cmais.com.br/portal/multicultura/css/geral.css" rel="stylesheet" /> 

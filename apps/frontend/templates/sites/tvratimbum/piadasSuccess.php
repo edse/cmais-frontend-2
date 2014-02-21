@@ -313,7 +313,7 @@ $piadaAssinatura = $displays["piada-destaque-semana"][0]->getDescription();
               function sendAnswer(){
                 $.ajax({
                   type: "POST",
-                  dataType: "json",
+                  dataType: "jsonp",
                   data: $("#e<?php echo $a_piadas[0]->Asset->getId()?>").serialize(),
                   url: "http://app.cmais.com.br/ajax/enquetes",
                   beforeSend: function(){

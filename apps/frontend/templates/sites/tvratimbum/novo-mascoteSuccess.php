@@ -219,7 +219,7 @@ function computavoto(opcao){
 function sendAnswer(){
   $.ajax({
     type: "POST",
-    dataType: "json",
+    dataType: "jsonp",
     data: $('.form-votacao').serialize(),
     url: "http://app.cmais.com.br/ajax/enquetes",
     beforeSend: function(){
