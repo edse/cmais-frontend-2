@@ -238,4 +238,22 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
   
   .personagens #content .q-pers{width:22.7%;height:90px;}
 }
+@media screen and (min-width:360px) and (max-width:500px) {
+	#content #carrossel-interna-artigo{display: none}
+	#content .todos-itens #container {width: 96%;margin-left: 0!important;}
+	#content .span8 {width:100%;padding:2%}
+	#content .todos-itens {margin: 54px auto}
+	#content .todos-itens .element{width:45%}
+	#content .todos-itens li img{width:100%;}
+
+}
+@media screen and (max-width: 359px) {
+	#content #carrossel-interna-artigo{display: none}
+	#content .todos-itens #container {width: 96%;margin-left: 0!important;}
+	#content .span8 {width:100%;padding:2%}
+	#content .todos-itens {margin: 54px auto}
+	#content .todos-itens .element{width:100%}
+	#content .todos-itens li img{width:100%;}
+
+}
 
