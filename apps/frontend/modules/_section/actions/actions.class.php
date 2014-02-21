@@ -379,6 +379,7 @@ class _sectionActions extends sfActions
             elseif($request->getParameter('date'))
               $this->date = $request->getParameter('date');
             else{
+              $this->date = date("Y-m-d");
               /*
               if($this->section->Site->getSlug() == "culturabrasil" || $this->section->Site->getSlug() == "culturafm") {
                 $this->date = date("Y-m-d");
