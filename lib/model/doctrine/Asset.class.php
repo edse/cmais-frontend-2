@@ -137,13 +137,14 @@ class Asset extends BaseAsset
 
   public function retriveUrl(){
     if($this->getId() > 0){
-      return $this->Site->retriveUrl()."/".$this->getSlug();
-      /*      
-      if(count($this->Sections)>0)
-        return $this->Sections[0]->retriveUrl()."/".$this->getSlug();
+      if(count($this->Sections)>0){
+      	if(!in_array($this->Sections[0]->getSlug(), Array("home", "homepage", "index")))
+					return $this->Sections[0]->retriveUrl()."/".$this->getSlug();
+	      else
+	        return $this->Site->retriveUrl()."/".$this->getSlug();
+      }
       else
         return $this->Site->retriveUrl()."/".$this->getSlug();
-      */
     }
     else
       return "javascript:;";
