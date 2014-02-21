@@ -150,10 +150,10 @@ if(window.innerWidth > 980){
 }else{
   function charactersShow(){
     $('.inner.personagens a').each(function(i){
-      $(this).find('img').animate({top:-70, easing:"swing"},'fast');
+      $(this).find('img').animate({top:-30, easing:"swing"},'fast');
     });
   }
-  setTimeout(charactersShow,3000);
+  setTimeOut(charactersShow,3000);
 }
   
 
