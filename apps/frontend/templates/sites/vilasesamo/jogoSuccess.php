@@ -67,7 +67,7 @@
       Você está na atividade <?php echo $asset->getTitle() ?>
     </h1>
     <h1>
-      <i class="icones-sprite-interna icone-atividades-grande"></i>
+      <i class="icones-sprite-interna icone-jogos-grande"></i>
       <?php echo $section->getTitle() ?>
       <a class="todos-assets" title="voltar para todas jogos" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" target="_self" >
         <i class="icones-setas icone-voltar-jogos"></i>
@@ -87,7 +87,9 @@
        */
       ?>
       <p aria-label="Jogo: <?php echo $asset->getDescription() ?>"  tabindex="0">
-      <?php if(isset($categories)): ?>
+      
+        <span aria-hidden="true"><?php echo $asset->getDescription() ?></span>
+        <?php if(isset($categories)): ?>
         <?php if(count($categories) > 0): ?>
           <?php
             foreach($categories as $c) {
@@ -101,13 +103,12 @@
             }
           ?>
           <?php if(isset($seloImageUrl)): ?>
-        <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
-          <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
-        </a>
+            <a  href="<?php echo $seloUrl ?>" title="<?php echo $seloTitle ?>">
+              <img src="<?php echo $seloImageUrl ?>" alt="<?php echo $seloTitle ?>" />
+            </a>
           <?php endif; ?>
         <?php endif; ?>
       <?php endif; ?>
-        <span aria-hidden="true"><?php echo $asset->getDescription() ?></span>
       </p>
       
       
