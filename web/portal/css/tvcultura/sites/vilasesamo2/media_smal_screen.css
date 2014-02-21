@@ -257,7 +257,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 @media screen and (max-width: 359px) {
   #content #carrossel-interna-artigo{display: none}
   #content .todos-itens #container {width: 100%;margin-left: 0!important;}
-  #content .span8 {width:100%;padding:2%}
+  #content .span8 {width:100%;padding:0 8%}
   #content .todos-itens {margin:15px auto;}
   #content .todos-itens .element{width:100%; margin:5px 0!important}
   #content .todos-itens li img{width:100%;}
