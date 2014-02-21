@@ -2627,7 +2627,7 @@ EOT;
 				           type : "GET", 
 				           dataType: "jsonp",
 				           data: $("#page_form").serialize(),
-				           url: "http://app.cmais.com.br/index.php/ajax/radar-artista",
+				           url: "http://app.cmais.com.br/ajax/radar-artista",
 				           success: function(json){
 				             	$("#qtd_result").text(json.qtd_result);
 				             	$("#resultado_busca").html(json.data);
