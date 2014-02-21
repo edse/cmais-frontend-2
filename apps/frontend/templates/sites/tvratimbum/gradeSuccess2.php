@@ -70,7 +70,7 @@
       $.ajax({
         url: "http://app.cmais.com.br/ajax/getdays",
         data: opts,
-        dataType: "json",
+        dataType: "jsonp",
         async: false,
         success: function(data){
           // add the month to the cache

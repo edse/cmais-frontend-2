@@ -20,7 +20,8 @@ class _assetActions extends sfActions
       // asset
       $this->asset = $request->getParameter('object');
       // URI
-      $this->uri = str_replace('/index.php', '', $request->getUri());
+      //$this->uri = str_replace('/index.php', '', $request->getUri());
+      $this->uri = $this->asset->retriveUrl();
       // URL
       $this->url = @current(explode('?',$this->uri));
       // main site

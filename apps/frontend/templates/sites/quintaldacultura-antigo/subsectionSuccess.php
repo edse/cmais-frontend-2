@@ -72,7 +72,7 @@ $(function(){
       $.ajax({
         url: "/frontend_dev.php/ajax/getdays",
         data: opts,
-        dataType: "json",
+        dataType: "jsonp",
         async: false,
         success: function(data){
           // add the month to the cache

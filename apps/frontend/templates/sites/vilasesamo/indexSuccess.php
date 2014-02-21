@@ -48,16 +48,9 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               ?>
         <div class="span4 <?php echo $assetSection->getSlug() ?>">
           <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="">
-            <div class='container-image'>
+            <div class='container-image <?php if($d->Asset->AssetType->getSlug() != "video"){echo "square";}else{echo "rect";} ?>'>
             <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
-              <img class="destaque" src="<?php echo "http://midia.cmais.com.br/displays/4861c805231996d885581e83688236c2e7cb6b9d.png";?>" alt=""/>
-               
-            <?php 
-            /*
-             
-             * 
-             */
-             ?>
+              <img src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/mqdefault.jpg" alt="" />
             <?php else: ?>
               <img class="destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt=""/>
             <?php endif; ?>
@@ -139,59 +132,30 @@ $(window).on('resize', function () {
     $('#carrossel-p').responsiveCarousel('redraw');
 });
 
-var characterNumber = -1
-var whoHasGone = new Array();
-whoHasGone[0] = 0;
-var whoIsNow = new Array();
-var whichOne = 0;
-var cont = 0
-$('.inner.personagens a img').each(function(i){
-   characterNumber++   
-});
-
-
-
-setInterval(function(){checkSize()},300);
-function animation(){
-
-    while(cont < 8){
-      whichOne =Math.floor((Math.random()*characterNumber)+1);
-      alert(parseInt($('.inner.personagens a img').offsetTop))
-      if($('.inner.personagens a img').eq(0).offsetTop == 0){ 
-        $('.inner.personagens a img').eq(0).animate({top:-70, easing:"swing"},'fast');
-      }else{
-        $('.inner.personagens a img').eq(0).animate({top:0, easing:"swing"},'fast');
-      }
-      cont++
-    }
-    console.log("fui")
-    //$('.inner.personagens a img').eq(1).animate({top:-70, easing:"swing"},'fast');1000);
-
-}
-
-
-function checkSize(){
-  var screenWidth =window.innerWidth;
-  if(screenWidth >= 980){
-    $('.inner.personagens a').mouseenter(function(){
-      $(this).find('img').animate({top:-70, easing:"swing"},'fast');
+if(window.innerWidth > 980){
+  $('.inner.personagens a').mouseenter(function(){
+    $(this).find('img').animate({top:-70, easing:"swing"},'fast');
+  });
+  $('.inner.personagens a').mouseleave(function(){
+    $(this).find('img').stop();
+    $(this).find('img').animate({top:0, easing:"swing"},'fast');  
+  });
+  $('#carrossel-p').mouseenter(function(){
+    $('.arrow.personagem').fadeIn('fast');
+  });
+  
+  $('#carrossel-p').mouseleave(function(){
+    $('.arrow.personagem').fadeOut('fast');
+  });
+}else{
+  function charactersShow(){
+    $('.inner.personagens a').each(function(i){
+      $(this).find('img').animate({top:-30, easing:"swing"},'fast');
     });
-    $('.inner.personagens a').mouseleave(function(){
-      $(this).find('img').stop();
-      $(this).find('img').animate({top:0, easing:"swing"},'fast');  
-    });
-    $('#carrossel-p').mouseenter(function(){
-      $('.arrow.personagem').fadeIn('fast');
-    });
-    
-    $('#carrossel-p').mouseleave(function(){
-      $('.arrow.personagem').fadeOut('fast');
-    });
-    
   }
+  setTimeOut(charactersShow,3000);
 }
-
- 
+  
 
 </script>
 <?php echo $noscript; ?>

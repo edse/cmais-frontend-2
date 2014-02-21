@@ -26,7 +26,7 @@
                   <!-- <p class="url"><?php echo $uri ?></p> -->
                   <p>Olha só, nós não conseguimos encontrar a p&aacute;gina que voc&ecirc; procura. Por favor, tente novamente mais tarde ou use a busca do nosso site.</p>
                 </div>
-                <form id="buscaErro" method="post" action="/index.php/busca">
+                <form id="buscaErro" method="post" action="/busca">
                   <input type="text" class="texto" id="erro" name="erro" />
                   <input type="submit" class="buscar" id="buscar" value="buscar" name="buscar"/>
                 </form>
