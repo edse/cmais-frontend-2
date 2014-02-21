@@ -72,8 +72,8 @@
                 
                 $("#img-estrada").hide();
                 $.ajax({
-                  url: "../../../../portal/cams.php?s=ecovias",
-                  dataType: "json",
+                  url: "http://app.cmais.com.br/portal/cams.php?s=ecovias",
+                  dataType: "jsonp",
                   success: function(data){
                     $.each(data, function(i,data){
                       var a = new String(data.src);
