@@ -42,11 +42,11 @@
 			</script>
 			<a class="close" href="">x</a>
 			<img src="http://cmais.com.br/portal/tvratimbum/image/ico-facebookDraw.png" alt="TV R&aacute; Tim Bum" title="TV R&aacute; Tim Bum" />
-			<h2><a href="http://facebook.com/ratimbum" target="_blank">facebook.com/ratimbum</a></h2>
+			<h2><a href="https://facebook.com/tvratimbum" target="_blank">facebook.com/tvratimbum</a></h2>
 			<p>Você está sendo redirecionado para página da TV Ra-Tim-Bum no Facebook, uma rede social permitida apenas para usuários maiores de 13 anos. A nossa página no Facebook é voltada para informações aos pais.</p>
 			<div class="btn-barra">
 				<span class="pontaBarra"></span>
-				<a href="http://facebook.com/ratimbum" target="_blank">Continuar</a>
+				<a href="https://facebook.com/tvratimbum" target="_blank">Continuar</a>
 				<span class="caudaBarra"></span>
 			</div>
 		</div>

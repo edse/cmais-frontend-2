@@ -40,7 +40,8 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
 
   function redirect(d){
     //send('<?php echo $sChannel->getSlug() ?>',d);
-    self.location.href = '<?php echo $base_url ?>/'+d;
+    self.location.href = '<?php //echo $base_url ?>/'+d;
+    self.location.href = 'http://tvcultura.cmais.com.br/grade/'+d;
   }
 
   //cache the days and months
@@ -76,7 +77,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
       $.ajax({
         url: "http://app.cmais.com.br/ajax/getdays",
         data: opts,
-        dataType: "json",
+        dataType: "jsonp",
         async: false,
         success: function(data){
           // add the month to the cache
