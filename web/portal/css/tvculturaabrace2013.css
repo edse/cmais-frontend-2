@@ -174,3 +174,6 @@ body.tvculturaabrace{background:url("http://cmais.com.br/portal/images/capaProgr
 .lista-blogs a {color:#0d6104!important}
 /* /cmais abrace */
 
+/* asset */
+.noticiaTxt em{font-weight: bold;color: green;text-decoration: underline;}
+/* asset*/
