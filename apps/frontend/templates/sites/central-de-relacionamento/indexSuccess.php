@@ -907,8 +907,8 @@ $(document).ready(function(){
                     id = loc.substring(loc.indexOf('email=')+6, loc.leght);
                     $.ajax({
                       type: "POST",
-                      dataType: "json",
-                      url: "/crm-form/soap.php",
+                      dataType: "jsonp",
+                      url: "http://app.cmais.com.br/crm-form/soap.php",
                       data: "step=1&f1_email="+id,
                       beforeSend: function(){
                         $('#loader1').show();
@@ -945,8 +945,8 @@ $(document).ready(function(){
                     submitHandler: function(form){
                       $.ajax({
                         type: "POST",
-                        dataType: "json",
-                        url: "/crm-form/soap.php",
+                        dataType: "jsonp",
+                        url: "http://app.cmais.com.br/crm-form/soap.php",
                         data: $("#form1").serialize(),
                         beforeSend: function(){
                           $('#loader1').show();
@@ -1048,8 +1048,8 @@ $(document).ready(function(){
                     submitHandler: function(form){
                       $.ajax({
                         type: "POST",
-                        dataType: "json",
-                        url: "/crm-form/soap.php",
+                        dataType: "jsonp",
+                        url: "http://app.cmais.com.br/crm-form/soap.php",
                         data: $("#form2").serialize(),
                         beforeSend: function(){
                           $('#loader2').show();
@@ -1123,8 +1123,8 @@ $(document).ready(function(){
                     submitHandler: function(form){
                       $.ajax({
                         type: "POST",
-                        dataType: "json",
-                        url: "/crm-form/soap.php",
+                        dataType: "jsonp",
+                        url: "http://app.cmais.com.br/crm-form/soap.php",
                         data: $("#form3").serialize(),
                         beforeSend: function(){
                           $('#loader3').show();
@@ -1262,8 +1262,8 @@ $(document).ready(function(){
                     submitHandler: function(form){
                       $.ajax({
                         type: "POST",
-                        dataType: "json",
-                        url: "/crm-form/soap.php",
+                        dataType: "jsonp",
+                        url: "http://app.cmais.com.br/crm-form/soap.php",
                         data: $("#form4").serialize(),
                         beforeSend: function(){
                           $('#loader4').show(); 
@@ -1363,8 +1363,8 @@ $(document).ready(function(){
                 function municipios(form){
                   $.ajax({
                     type: "POST",
-                    dataType: "json",
-                    url: "/crm-form/soap.php",
+                    dataType: "jsonp",
+                    url: "http://app.cmais.com.br/crm-form/soap.php",
                     data: "action=municipios&uf="+$('#'+form+'_estado :selected').val()+"&form="+form,
                     beforeSend: function(){
                       //$('img#ajax-loader').show();
@@ -1385,8 +1385,8 @@ $(document).ready(function(){
                 function contas(){
                   $.ajax({
                     type: "POST",
-                    dataType: "json",
-                    url: "/crm-form/soap.php",
+                    dataType: "jsonp",
+                    url: "http://app.cmais.com.br/crm-form/soap.php",
                     data: "action=contas&cod_veiculo="+$('#f4_cod_veiculo :selected').val(),
                     beforeSend: function(){
                       //$('img#ajax-loader').show();
@@ -1412,8 +1412,8 @@ $(document).ready(function(){
                 function assuntos(){
                   $.ajax({
                     type: "POST",
-                    dataType: "json",
-                    url: "/crm-form/soap.php",
+                    dataType: "jsonp",
+                    url: "http://app.cmais.com.br/crm-form/soap.php",
                     data: "action=assuntos&cod_programa="+$('#f4_cod_programa :selected').val(),
                     beforeSend: function(){
                       //$('img#ajax-loader').show();
@@ -1432,8 +1432,8 @@ $(document).ready(function(){
                 function cep(cep){
                   $.ajax({
                     type: "POST",
-                    dataType: "json",
-                    url: "http://cmais.com.br/actions/cep/geraJSONendereco.php?cep="+cep,
+                    dataType: "jsonp",
+                    url: "http://app.cmais.com.br/actions/cep/geraJSONendereco.php?cep="+cep,
                     //data: "action=contas&cod_veiculo="+$('#f4_cod_veiculo :selected').val(),
                     beforeSend: function(){
                       //$('img#ajax-loader').show();

@@ -124,11 +124,17 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="")){
           $script .= '$("#email22").val(\''.$_REQUEST["f1_email"].'\');$("#f4_email2").val(\''.$_REQUEST["f1_email"].'\');$("#f4_email").val(\''.$_REQUEST["f1_email"].'\');$("#f4_nome").val("'.$usuario->nome.'");$("#f4_endereco").val(\''.$usuario->endereco.'\');$("#f4_numero").val(\''.$usuario->numero.'\');$("#f4_complemento").val(\''.$usuario->complemento.'\');$("#f4_cep").val(\''.$usuario->cep.'\');$("#f4_bairro").val(\''.$usuario->bairro.'\');$("#f4_telefone").val(\'('.$usuario->ddd.') '.$usuario->telefone.'\');$("#f4_twitter").val(\''.$usuario->twitter.'\');$("#f4_cod_faixaetaria").append(\''.$idade_options.'\');$("#f4_cod_sexo").append(\''.$sexo_options.'\');$("#f4_localexterior").val("'.$usuario->localexterior.'");$("#f4_cod_recepcaodesinal").append(\''.$recepcao_options.'\');$("#f4_estado").append(\''.$uf_options.'\');$("#f4_local").append(\''.$municipio_options.'\');$("#f4_sms").attr(\'checked\', '.$usuario->sms.');$("#f4_newsletter").attr(\'checked\', '.$usuario->newsletter.');$("#f4_convite").attr(\'checked\', '.$usuario->convite.');$("#f4_terceiros").attr(\'checked\', '.$usuario->terceiros.');$("#f4_email2").val(\''.$_REQUEST["f1_email"].'\');$("#f4_email").val(\''.$_REQUEST["f1_email"].'\');$("#row1").hide();$("#f4_cod_veiculo").children().remove();$("#f4_cod_veiculo").append(\''.$veiculo_options.'\');$("#f4_cod_programa").find("option").attr("value", "");$("#f4_mensagem").val("");toggleExterior();$("f1_email").val("");$("select").each(function(i){$("option").each(function(j){/*console.log($(this).text())*/if($(this).text()=="SIC")$(this).remove()});});$("#row4").fadeIn("fast");';
         }
         /*$script .= '$("#email22").val(\''.$_REQUEST["f1_email"].'\');$("#f4_email2").val(\''.$_REQUEST["f1_email"].'\');$("#f4_email").val(\''.$_REQUEST["f1_email"].'\');$("#f4_nome").val("'.$usuario->nome.'");$("#f4_endereco").val(\''.$usuario->endereco.'\');$("#f4_numero").val(\''.$usuario->numero.'\');$("#f4_complemento").val(\''.$usuario->complemento.'\');$("#f4_cep").val(\''.$usuario->cep.'\');$("#f4_bairro").val(\''.$usuario->bairro.'\');$("#f4_telefone").val(\'('.$usuario->ddd.') '.$usuario->telefone.'\');$("#f4_twitter").val(\''.$usuario->twitter.'\');$("#f4_cod_faixaetaria").append(\''.$idade_options.'\');$("#f4_cod_sexo").append(\''.$sexo_options.'\');$("#f4_localexterior").val("'.$usuario->localexterior.'");$("#f4_cod_recepcaodesinal").append(\''.$recepcao_options.'\');$("#f4_estado").append(\''.$uf_options.'\');$("#f4_local").append(\''.$municipio_options.'\');$("#f4_sms").attr(\'checked\', '.$usuario->sms.');$("#f4_newsletter").attr(\'checked\', '.$usuario->newsletter.');$("#f4_convite").attr(\'checked\', '.$usuario->convite.');$("#f4_terceiros").attr(\'checked\', '.$usuario->terceiros.');$("#f4_email2").val(\''.$_REQUEST["f1_email"].'\');$("#f4_email").val(\''.$_REQUEST["f1_email"].'\');$("#row1").hide();$("#row4").show();$("#f4_cod_programa").append(\''.$contas_options.'\');$("#f4_mensagem").val("");toggleExterior();$("f1_email").val("");';*/
-      echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado','msg'=>'Preencha os campos abaixo.', 'form'=>'form4'));
+      //echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado','msg'=>'Preencha os campos abaixo.', 'form'=>'form4'));
+			$json = json_encode(array('script'=>$script,'title'=>'Usuário cadastrado','msg'=>'Preencha os campos abaixo.', 'form'=>'form4'));
+		  $callback = $_REQUEST['callback'];
+		  echo $callback.'('. $json . ');';	 		
     }
     else{
       $script = '$("#row1").hide();$("#row2").hide();$("#row3").hide();$("#row5").show();$("f1_email").val("");';
-      echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado e não validado','msg'=>'Email não validado', 'form'=>'form5'));
+      //echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado e não validado','msg'=>'Email não validado', 'form'=>'form5'));
+		  $json = json_encode(array('script'=>$script,'title'=>'Usuário cadastrado e não validado','msg'=>'Email não validado', 'form'=>'form5'));
+		  $callback = $_REQUEST['callback'];
+		  echo $callback.'('. $json . ');';	 					
     }
   }else{
     //FAIXA ETARIA
@@ -172,7 +178,10 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="")){
     //if($usuario->local == "99999")
     //  $script = '$("#f2_localexterior").val(\''.$usuario->pais.'\');$("#f2_exterior").attr("checked", true);';
     $script = '$("#f2_email2").val(\''.$_REQUEST["f1_email"].'\');$("#f2_email").val(\''.$_REQUEST["f1_email"].'\');$("#f2_cod_faixaetaria").append(\''.$idade_options.'\');$("#f2_cod_sexo").append(\''.$sexo_options.'\');$("#f2_cod_recepcaodesinal").append(\''.$recepcao_options.'\');$("#f2_estado").append(\''.$uf_options.'\');$("#row1").hide();$("#row2").show();$("#f2_mensagem").val("");toggleExterior();$("f1_email").val("");$("select").each(function(i){$("option").each(function(j){/*console.log($(this).text())*/if($(this).text()=="SIC")$(this).remove()});});';
-    echo json_encode(array('script'=>$script,'title'=>'Usuário não cadastrado','msg'=>'Preencha os campos abaixo.', 'form'=>'form2'));
+		// echo json_encode(array('script'=>$script,'title'=>'Usuário não cadastrado','msg'=>'Preencha os campos abaixo.', 'form'=>'form2'));
+	  $json = json_encode(array('script'=>$script,'title'=>'Usuário não cadastrado','msg'=>'Preencha os campos abaixo.', 'form'=>'form2'));
+	  $callback = $_REQUEST['callback'];
+	  echo $callback.'('. $json . ');';	 		
   }
   die();
 }
@@ -222,11 +231,17 @@ else if(($_REQUEST["step"]==2)&&($_REQUEST["f2_nome"]!="")){
       }
       */
       $script = '$("#row1, #row2, #row3, #row4, #row5, #row6, #row8, #row9").hide();$("#row7").show();';
-      echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado','msg'=>'Email valido', 'form'=>'form5'));
+      //echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado','msg'=>'Email valido', 'form'=>'form5'));
+		  $json = json_encode(array('script'=>$script,'title'=>'Usuário cadastrado','msg'=>'Email valido', 'form'=>'form5'));
+		  $callback = $_REQUEST['callback'];
+		  echo $callback.'('. $json . ');';			
     }
     else{
       $script = '$("#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row8").hide();$("#row9").show();';
-      echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado e não validado','msg'=>'Email não validado', 'form'=>'form5'));
+      //echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado e não validado','msg'=>'Email não validado', 'form'=>'form5'));
+		  $json = json_encode(array('script'=>$script,'title'=>'Usuário cadastrado e não validado','msg'=>'Email não validado', 'form'=>'form5'));
+		  $callback = $_REQUEST['callback'];
+		  echo $callback.'('. $json . ');';
     }
   }
   die();
@@ -375,11 +390,17 @@ else if(($_REQUEST["step"]==4)&&($_REQUEST["f4_mais"]!="")){
       //$script = '$("#f4_cod_programa option").attr("value", "");$(".control-group").removeClass("error");$(".f4_cod_programa").removeAttr("selected");$(".salvar-alteracoes").hide();$("#f4_cod_veiculo, #f4_cod_assunto, #f4_mensagem").removeAttr("disabled");$("#row4, #message, .control-group.f4_mais, #row9").show();$("#f4_maisinfo, #btn5").hide();set_checked(false);$("#row9").delay(3000).slideUp("fast");$("#row4").find(".success").each(function(){$(this).removeClass("success")});$("#row4").find("label.valid").each(function(){$(this).remove()});';
       $script = '$("#f4_mais").attr("checked","false");$("#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row8").hide();$("#row9").show();';
       $title = 'Cadastro atualizado';
-      echo json_encode(array('script'=>$script,'title'=>$title,'msg'=>'Seu cadastro foi alterado com sucesso.', 'form'=>'form9'));
+      //echo json_encode(array('script'=>$script,'title'=>$title,'msg'=>'Seu cadastro foi alterado com sucesso.', 'form'=>'form9'));
+		  $json = json_encode(array('script'=>$script,'title'=>$title,'msg'=>'Seu cadastro foi alterado com sucesso.', 'form'=>'form9'));
+		  $callback = $_REQUEST['callback'];
+		  echo $callback.'('. $json . ');';	 						
     }else{
       $script = '$("#f4_mais").attr("checked","false");$("#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row9").hide();$("#row8").show();';
       $title = 'Cadastro não atualizado';
-      echo json_encode(array('script'=>$script,'title'=>$title,'msg'=>'Seu cadastro não foi alterado.', 'form'=>'form8'));
+      //echo json_encode(array('script'=>$script,'title'=>$title,'msg'=>'Seu cadastro não foi alterado.', 'form'=>'form8'));
+		  $json = json_encode(array('script'=>$script,'title'=>$title,'msg'=>'Seu cadastro não foi alterado.', 'form'=>'form8'));
+		  $callback = $_REQUEST['callback'];
+		  echo $callback.'('. $json . ');';	 			
     }
   }else{
     alert('erro! #380');
@@ -398,7 +419,10 @@ else if($_REQUEST["action"]=="municipios" && $_REQUEST["uf"]!=""){    //MUNICIPI
   }
   
   $script = '$("#'.$_REQUEST["form"].'_local").children().remove();$("#'.$_REQUEST["form"].'_local").append(\''.$municipio_options.'\');';
-  echo json_encode(array('script'=>$script));
+  //echo json_encode(array('script'=>$script));
+  $json = json_encode(array('script'=>$script));
+  $callback = $_REQUEST['callback'];
+  echo $callback.'('. $json . ');';	 	
 }
 
 else if($_REQUEST["action"]=="contas" && $_REQUEST["cod_veiculo"]!=""){    //VEICULO->CONTA
@@ -413,7 +437,10 @@ else if($_REQUEST["action"]=="contas" && $_REQUEST["cod_veiculo"]!=""){    //VEI
     }
   }
   $script = '$("#f4_cod_programa").children().remove();$("#f4_cod_programa").append(\''.$contas_options.'\');';
-  echo json_encode(array('script'=>$script));
+  //echo json_encode(array('script'=>$script));
+  $json = json_encode(array('script'=>$script));
+  $callback = $_REQUEST['callback'];
+  echo $callback.'('. $json . ');';	
 }
 else if($_REQUEST["action"]=="assuntos" && $_REQUEST["cod_programa"]!=""){    //ASSUNTOS
   //ASSUNTOS
@@ -424,5 +451,8 @@ else if($_REQUEST["action"]=="assuntos" && $_REQUEST["cod_programa"]!=""){    //
     $assunto_options .= '<option value="'.$item->codigo.'">'.$item->assunto.'</option>';
   }  
   $script = '$("#f4_cod_assunto").children().remove();$("#f4_cod_assunto").append(\''.$assunto_options.'\');';
-  echo json_encode(array('script'=>$script));
+  //echo json_encode(array('script'=>$script));
+  $json = json_encode(array('script'=>$script));
+  $callback = $_REQUEST['callback'];
+  echo $callback.'('. $json . ');';	 
 }
