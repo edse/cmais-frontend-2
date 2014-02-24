@@ -1,5 +1,7 @@
 /*header*/
-.header-mobile button.alca{margin: 0 auto;position: absolute;bottom: 0;left: 50%;background: #e5e5e5;border: none;width: 50px;margin-bottom: 5px;border-radius: 10px;height: 20px;}   
+.header--fixed {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+.bounceOutUp{top:-90px}
+
 .header-bar .header-bar-mobile{display:none}
 .header-desktop{display:none;}
 .header-tablet{display:none;}
@@ -84,7 +86,6 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 
 
 /*acessibilidade*/
-#header-mobile{display:none;}
 .acessibilidade .box-acessibilidade {width: 100%!important;}
 .acessibilidade #content .filtro h1 {font-size: 1.6em;}
 .acessibilidade .fundo-acessibilidade {width:100%!important; margin:0 auto;}
@@ -229,7 +230,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 /* bo*/
 #categoria-box-pais .pais .redes {display:none!important}
 #categoria-box-pais .pais h2.tit-box {font-size:1.2em}
-#categoria-box-pais .box-pais .dica-pai{width:95%!important;height:auto!important;}
+#categoria-box-pais .box-pais .dica-pai{width:95%!important;height:auto!important;min-height: 0;}
 #categoria-box-pais .box-pais .artigo{width:95%!important;min-height: 0!important;}
 #categoria-box-pais .box-pais .parceiros{width:95%!important;height:auto!important;}
 #categoria-box-pais .box-pais .artigo p {height:auto!important;}
@@ -257,7 +258,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 @media screen and (max-width: 359px) {
   #content #carrossel-interna-artigo{display: none}
   #content .todos-itens #container {width: 100%;margin-left: 0!important;}
-  #content .span8 {width:100%;padding:0 8%}
+  #content .span8 {width:100%;padding:2%}
   #content .todos-itens {margin:15px auto;}
   #content .todos-itens .element{width:100%; margin:5px 0!important}
   #content .todos-itens li img{width:100%;}
@@ -286,3 +287,41 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
   #page_nav{padding:0 8%;}
   #page_nav .container-ajax-loader{top:35%;left:8%;}
 }
+
+/*personagens*/
+@media screen and (min-width:321px) and (max-width:500px) {
+  .personagens .filtro .span2 {width: 98%;}
+  .personagens .filtro .filtro-personagem li {width: 21%;height: 58px;}
+  .personagens .filtro .inner {width: 100%;height: auto;}
+  .personagens #carrossel-interna-personagem {max-width: 100%;}
+  .personagens .desc-personagem {float: right;width: 100%;}
+  .personagens #content .filtro .descritivo {padding: 20px;width: 90%;float: left;}
+  .personagens #carrossel-interna-personagem .slider .videoorimage img {width: 100%;margin: 8%;}
+  .personagens #carrossel-interna-personagem .container-itens {width:100%;top: 33%;}
+  .personagens #content.dest-pers .span4.pull-left{width: 100%;padding: 0;min-height: 0}
+  .personagens .dest-pers img {width: 50%;padding: 0;}
+  .personagens .dest-pers {margin:0;padding:0;}
+}
+
+@media screen and (min-width:50px) and (max-width:320px) {
+  .personagens .filtro .span2 {width: 98%;}
+  .personagens .filtro .filtro-personagem li {width: 21%;height: 58px;}
+  .personagens .filtro .inner {width: 100%;height: auto;}
+  .personagens #carrossel-interna-personagem {max-width: 100%;max-height: 300px;}
+  .personagens .desc-personagem {float: right;width: 100%;}
+  .personagens #content .filtro .descritivo {padding: 20px;float: left;}
+  .personagens #carrossel-interna-personagem .slider li {max-width:100%}
+  .personagens #carrossel-interna-personagem .slider .videoorimage img {width: 70%;}
+  .personagens #carrossel-interna-personagem .container-itens {width:100%;top: 25%;}
+  .personagens #content .dest-pers .span4.pull-left {width: 100%;padding: 0;min-height: 0}
+  .personagens .dest-pers img {width: 50%;padding: 0;}
+  .personagens .dest-pers {margin:0;padding:0;}
+
+}
+#sfWebDebugBar{display:none!important}
+/*categorias *, habitos*/
+.campanhas #content .filtro h1 {font-size:1.6em!important;}
+.campanhas #content .container-campanhas iframe {width: 100%;margin-top: 0;}
+.campanhas #content .container-campanhas {margin-top: 40px;}
+.campanhas #content .btn-group {margin-top: 16%;width: 100%;right: 0;}
+

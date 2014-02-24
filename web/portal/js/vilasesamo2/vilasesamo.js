@@ -1,13 +1,51 @@
 $(document).ready(function() {
-    //thumbnail video quadrado destaques de todas as telas    
-    var thumbnailHeight = $('.square img').height();
-    var thumbVideo = $('rect img');
-    thumbVideo.css('height', thumbnailHeight);
-    window.onresize = function(){
-      thumbVideo.css('height', thumbnailHeight);
-    }
-    
   
+  //headroom - escondendo topo no mobile
+  setInterval(function(){
+   $('#header-tablet .logo-mobile').addClass('animated').addClass('tada'); 
+   $('#header-tablet .logo-mobile').addClass('animated').addClass('tada');
+  },7000);
+  
+  var hMobile = "#header-mobile";
+  $(hMobile).headroom({
+    "tolerance": 10,
+    "offset": 205,
+    "classes": {
+      "initial": "animated",
+      "pinned": "bounceInDown",
+      "unpinned": "bounceOutUp" ,
+      },
+      "onPin" : function() {
+        //alert(sobe);
+        setTimeout(function(){
+          $(hMobile+' .btn-menu,'+hMobile+' .imagem-topo').show();
+          $(hMobile+' .logo-mobile').addClass('animated').addClass('tada');
+          $(hMobile+' .btn-menu').addClass('animated').addClass('slideInRight');
+          $(hMobile+' .imagem-topo').addClass('animated').addClass('fadeInRight');
+        },1000)
+      },
+      "onUnpin" : function() {
+        //alert(desce);
+        $(hMobile+' .logo-mobile').removeClass('animated').removeClass('tada');
+        $(hMobile+' .btn-menu').removeClass('animated').removeClass('slideInRight');
+        $(hMobile+' .imagem-topo').removeClass('animated').removeClass('fadeInRight');
+        $(hMobile+' .btn-menu,'+hMobile+' .imagem-topo, .nav-mobile, nav-tablet').fadeOut("fast");
+      }
+  });
+
+
+  // to destroy
+  //$("#header").headroom("destroy");
+    
+  //thumbnail video quadrado destaques de todas as telas    
+  var thumbnailHeight = $('.square img').height();
+  var thumbVideo = $('.rect img');
+  thumbVideo.css('height', thumbnailHeight);
+  window.onresize=function(){
+    thumbnailHeight = $('.square img').height();
+    thumbVideo.css('height', thumbnailHeight);
+  };
+    
     /*
     * 
     * PRINT JPGS
@@ -165,7 +203,6 @@ $(document).ready(function() {
     $(this).tab('show');
   });
   
-     
 });//document.ready
 
 //impressao no ie com close ativado

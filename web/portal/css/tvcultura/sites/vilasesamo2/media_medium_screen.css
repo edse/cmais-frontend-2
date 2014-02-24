@@ -1,8 +1,10 @@
 /*section{background:blue!important;}*/
+.header--fixed {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+.bounceOutUp{top:-90px}
+
 .header-desktop{display:none;}
 .header-tablet{display:block; position: fixed;z-index: 50000;background: #fff;width: 100%;top:0;}
 .header-mobile{display:none;}
-#header-bar-mobile{display:none;}
 .imagem-topo{position: absolute;width: 220px;bottom: 0;left: 50%;margin-left: -81px;}
 .header-tablet{height: 70px;-moz-box-shadow: 0 0 30px 1px #C2C2C2;-webkit-box-shadow: 0 0 30px 1px #C2C2C2;box-shadow: 0 0 30px 1px #C2C2C2;-moz-box-shadow:inset 0 0 30px 5px #e5e5e5 ;}
 .header-tablet a.logo-mobile{margin:1px 0 0 35px;overflow: hidden;float: left;max-width:125px;display: block;left: 5%;}
@@ -205,3 +207,32 @@ footer .copyright {height: 30px;margin-left: 2%;}
   #page_nav .container-ajax-loader{float:left!important; left:8%!important}
 
 }
+
+/*personagens*/
+@media screen and (min-width:601px) and (max-width:979px){
+  .personagens .filtro .span2 {width: 98%;}
+  .personagens #content .filtro .filtro-personagem {margin-left: 3%;}
+  .personagens .filtro .filtro-personagem li {width: 10%;height: 58px;margin: 1%;}
+  .personagens .filtro .inner {width: 100%;height: auto;}
+  .personagens .desc-personagem {float: right;}
+  .personagens #carrossel-interna-personagem .container-itens {top: 36%;}
+}
+@media screen and (min-width:501px) and (max-width:600px) {
+  .personagens .filtro .span2 {width: 98%;}
+  .personagens #content .filtro .filtro-personagem {margin-left: 3%;}
+  .personagens .filtro .filtro-personagem li {width: 10%;height: 58px;margin: 1%;}
+  .personagens .filtro .inner {width: 100%;height: auto;}
+  .personagens .desc-personagem {float: right;}
+  .personagens #content .filtro .descritivo {padding: 20px;width: 90%;float: left;}
+  .personagens #carrossel-interna-personagem .container-itens {top: 36%;}
+}
+
+#sfWebDebugBar{display:none!important}
+/*categorias *, habitos*/
+
+.campanhas #content .container-campanhas iframe {width: 50%;margin-top: -12%;}
+.campanhas #content .container-campanhas img {width: 47%;}
+.campanhas #content .btn-group {width: 100%;margin: 10% 0!important;right: 0;}
+.campanhas #content .container-campanhas {margin-top: 40px;}
+
+
