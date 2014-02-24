@@ -143,11 +143,11 @@ a{text-decoration:underline!important;}
 
 .interna.jogos #content h1 .icones-sprite-interna,
 .interna.atividades #content h1 .icones-sprite-interna,
-.interna.videos #content h1 .icones-sprite-interna {margin: -18px 13px -5px 9px!important;}
+.interna.videos #content h1 .icones-sprite-interna {margin: -13px 13px -5px 9px!important;}
 
 .interna.videos .filtro .span12 h1,
 .interna.atividades .filtro .span12 h1,
-.interna.jogos .filtro .span12 h1{line-height:1em!important; font-size:1.9em!important; height:1em!important;}
+.interna.jogos .filtro .span12 h1{line-height:1.4em!important; font-size:1.9em!important; height:1.4em!important;}
 
 .interna.videos .filtro .span12 nav.span2,
 .interna.atividades .filtro .span12 nav.span2,
