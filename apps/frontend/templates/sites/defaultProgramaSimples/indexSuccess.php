@@ -62,7 +62,7 @@ $prevDateUrl = $site->retriveUrl()."/".str_replace("/","-",$prevDate);
       $.each(data.days, function(i, day){
         if(day.day!=0){
           window.cached_days.push(year_month+"-"+day.day+"");
-          console.log(window.cached_days)
+          //console.log(window.cached_days)
         }
       });
     }
