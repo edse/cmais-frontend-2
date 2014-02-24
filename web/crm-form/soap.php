@@ -124,11 +124,17 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="")){
           $script .= '$("#email22").val(\''.$_REQUEST["f1_email"].'\');$("#f4_email2").val(\''.$_REQUEST["f1_email"].'\');$("#f4_email").val(\''.$_REQUEST["f1_email"].'\');$("#f4_nome").val("'.$usuario->nome.'");$("#f4_endereco").val(\''.$usuario->endereco.'\');$("#f4_numero").val(\''.$usuario->numero.'\');$("#f4_complemento").val(\''.$usuario->complemento.'\');$("#f4_cep").val(\''.$usuario->cep.'\');$("#f4_bairro").val(\''.$usuario->bairro.'\');$("#f4_telefone").val(\'('.$usuario->ddd.') '.$usuario->telefone.'\');$("#f4_twitter").val(\''.$usuario->twitter.'\');$("#f4_cod_faixaetaria").append(\''.$idade_options.'\');$("#f4_cod_sexo").append(\''.$sexo_options.'\');$("#f4_localexterior").val("'.$usuario->localexterior.'");$("#f4_cod_recepcaodesinal").append(\''.$recepcao_options.'\');$("#f4_estado").append(\''.$uf_options.'\');$("#f4_local").append(\''.$municipio_options.'\');$("#f4_sms").attr(\'checked\', '.$usuario->sms.');$("#f4_newsletter").attr(\'checked\', '.$usuario->newsletter.');$("#f4_convite").attr(\'checked\', '.$usuario->convite.');$("#f4_terceiros").attr(\'checked\', '.$usuario->terceiros.');$("#f4_email2").val(\''.$_REQUEST["f1_email"].'\');$("#f4_email").val(\''.$_REQUEST["f1_email"].'\');$("#row1").hide();$("#f4_cod_veiculo").children().remove();$("#f4_cod_veiculo").append(\''.$veiculo_options.'\');$("#f4_cod_programa").find("option").attr("value", "");$("#f4_mensagem").val("");toggleExterior();$("f1_email").val("");$("select").each(function(i){$("option").each(function(j){/*console.log($(this).text())*/if($(this).text()=="SIC")$(this).remove()});});$("#row4").fadeIn("fast");';
         }
         /*$script .= '$("#email22").val(\''.$_REQUEST["f1_email"].'\');$("#f4_email2").val(\''.$_REQUEST["f1_email"].'\');$("#f4_email").val(\''.$_REQUEST["f1_email"].'\');$("#f4_nome").val("'.$usuario->nome.'");$("#f4_endereco").val(\''.$usuario->endereco.'\');$("#f4_numero").val(\''.$usuario->numero.'\');$("#f4_complemento").val(\''.$usuario->complemento.'\');$("#f4_cep").val(\''.$usuario->cep.'\');$("#f4_bairro").val(\''.$usuario->bairro.'\');$("#f4_telefone").val(\'('.$usuario->ddd.') '.$usuario->telefone.'\');$("#f4_twitter").val(\''.$usuario->twitter.'\');$("#f4_cod_faixaetaria").append(\''.$idade_options.'\');$("#f4_cod_sexo").append(\''.$sexo_options.'\');$("#f4_localexterior").val("'.$usuario->localexterior.'");$("#f4_cod_recepcaodesinal").append(\''.$recepcao_options.'\');$("#f4_estado").append(\''.$uf_options.'\');$("#f4_local").append(\''.$municipio_options.'\');$("#f4_sms").attr(\'checked\', '.$usuario->sms.');$("#f4_newsletter").attr(\'checked\', '.$usuario->newsletter.');$("#f4_convite").attr(\'checked\', '.$usuario->convite.');$("#f4_terceiros").attr(\'checked\', '.$usuario->terceiros.');$("#f4_email2").val(\''.$_REQUEST["f1_email"].'\');$("#f4_email").val(\''.$_REQUEST["f1_email"].'\');$("#row1").hide();$("#row4").show();$("#f4_cod_programa").append(\''.$contas_options.'\');$("#f4_mensagem").val("");toggleExterior();$("f1_email").val("");';*/
-      echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado','msg'=>'Preencha os campos abaixo.', 'form'=>'form4'));
+      //echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado','msg'=>'Preencha os campos abaixo.', 'form'=>'form4'));
+			$json = json_encode(array('script'=>$script,'title'=>'Usuário cadastrado','msg'=>'Preencha os campos abaixo.', 'form'=>'form4'));
+		  $callback = $_REQUEST['callback'];
+		  echo $callback.'('. $json . ');';	 		
     }
     else{
       $script = '$("#row1").hide();$("#row2").hide();$("#row3").hide();$("#row5").show();$("f1_email").val("");';
-      echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado e não validado','msg'=>'Email não validado', 'form'=>'form5'));
+      //echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado e não validado','msg'=>'Email não validado', 'form'=>'form5'));
+		  $json = json_encode(array('script'=>$script,'title'=>'Usuário cadastrado e não validado','msg'=>'Email não validado', 'form'=>'form5'));
+		  $callback = $_REQUEST['callback'];
+		  echo $callback.'('. $json . ');';	 					
     }
   }else{
     //FAIXA ETARIA
@@ -172,7 +178,10 @@ if(($_REQUEST["step"]==1)&&($_REQUEST["f1_email"]!="")){
     //if($usuario->local == "99999")
     //  $script = '$("#f2_localexterior").val(\''.$usuario->pais.'\');$("#f2_exterior").attr("checked", true);';
     $script = '$("#f2_email2").val(\''.$_REQUEST["f1_email"].'\');$("#f2_email").val(\''.$_REQUEST["f1_email"].'\');$("#f2_cod_faixaetaria").append(\''.$idade_options.'\');$("#f2_cod_sexo").append(\''.$sexo_options.'\');$("#f2_cod_recepcaodesinal").append(\''.$recepcao_options.'\');$("#f2_estado").append(\''.$uf_options.'\');$("#row1").hide();$("#row2").show();$("#f2_mensagem").val("");toggleExterior();$("f1_email").val("");$("select").each(function(i){$("option").each(function(j){/*console.log($(this).text())*/if($(this).text()=="SIC")$(this).remove()});});';
-    echo json_encode(array('script'=>$script,'title'=>'Usuário não cadastrado','msg'=>'Preencha os campos abaixo.', 'form'=>'form2'));
+		// echo json_encode(array('script'=>$script,'title'=>'Usuário não cadastrado','msg'=>'Preencha os campos abaixo.', 'form'=>'form2'));
+	  $json = json_encode(array('script'=>$script,'title'=>'Usuário não cadastrado','msg'=>'Preencha os campos abaixo.', 'form'=>'form2'));
+	  $callback = $_REQUEST['callback'];
+	  echo $callback.'('. $json . ');';	 		
   }
   die();
 }
@@ -222,11 +231,17 @@ else if(($_REQUEST["step"]==2)&&($_REQUEST["f2_nome"]!="")){
       }
       */
       $script = '$("#row1, #row2, #row3, #row4, #row5, #row6, #row8, #row9").hide();$("#row7").show();';
-      echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado','msg'=>'Email valido', 'form'=>'form5'));
+      //echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado','msg'=>'Email valido', 'form'=>'form5'));
+		  $json = json_encode(array('script'=>$script,'title'=>'Usuário cadastrado','msg'=>'Email valido', 'form'=>'form5'));
+		  $callback = $_REQUEST['callback'];
+		  echo $callback.'('. $json . ');';			
     }
     else{
       $script = '$("#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row8").hide();$("#row9").show();';
-      echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado e não validado','msg'=>'Email não validado', 'form'=>'form5'));
+      //echo json_encode(array('script'=>$script,'title'=>'Usuário cadastrado e não validado','msg'=>'Email não validado', 'form'=>'form5'));
+		  $json = json_encode(array('script'=>$script,'title'=>'Usuário cadastrado e não validado','msg'=>'Email não validado', 'form'=>'form5'));
+		  $callback = $_REQUEST['callback'];
+		  echo $callback.'('. $json . ');';
     }
   }
   die();
