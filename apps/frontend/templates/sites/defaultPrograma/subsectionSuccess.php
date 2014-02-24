@@ -18,7 +18,8 @@ $(function(){
   $('#datepicker').datepicker({
     beforeShowDay: dateLoading,
     onSelect: redirect,
-    <?php if((isset($date)) && ($date != "")): ?>defaultDate: new Date("<?php echo $date ?>"),<?php endif; ?>
+    <?php /* if((isset($date)) && ($date != "")): ?>defaultDate: new Date("<?php echo $date ?>"),<?php endif; */?>
+    defaultDate: new Date(),
     dateFormat: 'yy-mm-dd',
     inline: true
   });
@@ -26,8 +27,8 @@ $(function(){
 </script>
 <script type="text/javascript">
   function redirect(d){
-    //self.location.href = './<?php echo $section->getSlug() ?>?d='+d;
-    send(d);
+    self.location.href = '<?php echo $section->retriveUrl() ?>/'+d;
+    //send(d);
   }
 
   //cache the days and months
