@@ -101,7 +101,7 @@ a{text-decoration:underline!important;}
 .cuidadores .container-cuidadores .col-dir .box-ler p {color: #666;font-size: 1.1em;}
 
 /* Personagens */
-.personagens #content{margin: 10px 5%;top:0!important;min-height:0;}
+.personagens #content{margin: 100px 5%;top:0!important;min-height:0;}
 .personagens #content .conteudo-asset {width:100%;}
 .personagens #content .q-pers{width:22.8%;height:117px;}
 .personagens footer{margin:0}
@@ -118,6 +118,7 @@ a{text-decoration:underline!important;}
 .interna.atividades #content h1{font-size:30px;}
 
 .interna.videos #player{width:450px; height:270px;}
+.todos-assets {margin-top: 10px;}
 
 .interna.jogos .todos-assets p{font-size:18px!important;}
 .interna.videos .todos-assets p{font-size:18px!important;}
@@ -143,7 +144,7 @@ a{text-decoration:underline!important;}
 
 .interna.jogos #content h1 .icones-sprite-interna,
 .interna.atividades #content h1 .icones-sprite-interna,
-.interna.videos #content h1 .icones-sprite-interna {margin: -13px 13px -5px 9px!important;}
+.interna.videos #content h1 .icones-sprite-interna {margin: 4px 13px -5px 9px!important;}
 
 .interna.videos .filtro .span12 h1,
 .interna.atividades .filtro .span12 h1,

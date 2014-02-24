@@ -156,7 +156,11 @@ a{text-decoration:underline!important;}
 
 .interna.jogos #content h1,
 .interna.atividades #content h1,
-.interna.videos #content h1{ font-size: 1.9em;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height:1.4em;line-height:1.4em!important;}
+.interna.videos #content h1{font-size: 1.9em;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height:3.4em;line-height:1.4em!important;}
+
+.interna.jogos #content .span12 h1,
+.interna.atividades #content .span12 h1,
+.interna.videos #content .span12 h1{ font-size: 1.9em;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height:1.4em;line-height:1.4em!important;}
 
 .interna.jogos{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;border-radius: 13px;}
 .interna.videos{font-size: 1em!important;background-image:none!important;background-color: #f78701;display: block;border-radius: 13px;}
@@ -168,7 +172,7 @@ a{text-decoration:underline!important;}
 
 .interna.jogos .todos-assets,
 .interna.atividades .todos-assets,
-.interna.videos .todos-assets{width: 90%!important;font-size: 1em!important;margin-right: 7%;display: block;}
+.interna.videos .todos-assets{width: 90%!important;font-size: 1em!important;margin: 3% 7% 0 7%;;display: block;}
 
 .interna.jogos .todos-assets p{background:#0172f9!important;}
 .interna.atividades .todos-assets p{background:#571ed9!important;}
