@@ -57,12 +57,10 @@ $prevDateUrl = $site->retriveUrl()."/".str_replace("/","-",$prevDate);
     url: "http://app.cmais.com.br/ajax/getdays",
     async: false,
     success: function(data){
-      console.log(year_month)
       // add the month to the cache
       window.cached_months.push(year_month);
-      $.each(data.data.days, function(i, day){
+      $.each(data.days, function(i, day){
         if(day.day!=0){
-          console.log(day.day)
           window.cached_days.push(year_month+"-"+day.day+"");
           console.log(window.cached_days)
         }
@@ -106,7 +104,7 @@ $prevDateUrl = $site->retriveUrl()."/".str_replace("/","-",$prevDate);
         success: function(data){
           // add the month to the cache
           window.cached_months[window.cached_months.length] = year_month ;
-          $.each(data.data.days, function(i, day){
+          $.each(data.days, function(i, day){
             window.cached_days[window.cached_days.length]= year_month +"-"+ day.day +"";
           });
         }
