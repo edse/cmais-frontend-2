@@ -99,6 +99,7 @@ $(function(){
   
   
 //SET DATE  
+/*
 $(document).ready(function(){
 	<?php if(isset($date)): ?>
 		var newdate = new Date ("<?php echo str_replace("-", ",", $date)?>");
@@ -108,7 +109,7 @@ $(document).ready(function(){
 	
 	$("#datepicker").datepicker("setDate", newdate);  
 });  
-  
+*/  
 </script>
 
 
