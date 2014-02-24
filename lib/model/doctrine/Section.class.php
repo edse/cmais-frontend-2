@@ -76,10 +76,18 @@ class Section extends BaseSection
     if($this->getUrl() != "")
       return (string) $this->getUrl();
     else{
-      if($this->Parent->getSlug() != "")
-        return $this->Site->retriveUrl()."/".$this->Parent->getSlug()."/".$this->getSlug();
-      else
-        return $this->Site->retriveUrl()."/".$this->getSlug();
+      if($this->Parent->getSlug() != ""){
+        if(!in_array($this->getSlug(), Array("home", "homepage", "index")))
+          return $this->Site->retriveUrl()."/".$this->Parent->getSlug()."/".$this->getSlug();
+        else
+          return $this->Site->retriveUrl()."/".$this->Parent->getSlug();
+      }
+      else{
+        if(!in_array($this->getSlug(), Array("home", "homepage", "index")))
+          return $this->Site->retriveUrl()."/".$this->getSlug();
+        else
+          return $this->Site->retriveUrl();
+      }
     }
   }
 

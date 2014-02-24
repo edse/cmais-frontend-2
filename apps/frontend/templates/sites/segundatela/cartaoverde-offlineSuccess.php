@@ -68,7 +68,7 @@
               if($data->type == 'poll')   $c = 'icon-enquete';
               if($data->source){
                 $conteudo_url = file_get_contents($data->url);
-                $conteudo_url = str_replace('<script type="text/javascript" src="/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script>', "", $conteudo_url);
+                $conteudo_url = str_replace('<script type="text/javascript" src="http://cmais.com.br/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script>', "", $conteudo_url);
                 $html = '
                   <div class="accordion-group"> 
                      <div class="accordion-heading"> 

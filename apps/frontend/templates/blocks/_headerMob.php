@@ -26,7 +26,7 @@
 
   <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
   <!--CARROSSEL INDEX-->
-  <script src="/js/touchcarousel/jquery.touchcarousel-1.1.min.js"></script> 
+  <script src="http://cmais.com.br/js/touchcarousel/jquery.touchcarousel-1.1.min.js"></script> 
   <!--/CARROSSEL INDEX-->
   <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
   <script src="http://cmais.com.br/portal/js/portal.js"></script>
@@ -212,7 +212,7 @@
   };
   //alert(addToHomeConfig.autostart);
   </script>
-  <script type="application/javascript" src="/js/bubblemark/add2home.js"></script>
+  <script type="application/javascript" src="http://cmais.com.br/js/bubblemark/add2home.js"></script>
   <!--script>
   // get your button...
   var my_button = $(".my_button_class");
@@ -228,7 +228,7 @@
   });
 
   </script>
-  <script type="application/javascript" src="/js/bubblemark/add2home.js"></script-->
+  <script type="application/javascript" src="http://cmais.com.br/js/bubblemark/add2home.js"></script-->
   <!--BUBBLE BOOKMARK-->
 
 
