@@ -87,7 +87,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           
          <span class="fundo-na-tv" aria-label="Imagem do Garibaldo com a Bel dizendo: Olá!" tabindex="0">
           <span class="ola" tabindex="-1">Olá!</span>
-          <img src='/portal/images/capaPrograma/vilasesamo2/personagens/img_natv.png' alt="" tabindex="-1"/>
+          <img src='http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/img_natv.png' alt="" tabindex="-1"/>
         </span>
            
         </div>
