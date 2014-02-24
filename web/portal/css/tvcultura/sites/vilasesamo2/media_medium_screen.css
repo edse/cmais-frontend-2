@@ -1,8 +1,13 @@
 /*section{background:blue!important;}*/
+a:hover, a:visited{color:#fff!important;}
+a{text-decoration:underline!important;}
+
+.header--fixed {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+.bounceOutUp{top:-90px}
+
 .header-desktop{display:none;}
 .header-tablet{display:block; position: fixed;z-index: 50000;background: #fff;width: 100%;top:0;}
 .header-mobile{display:none;}
-#header-bar-mobile{display:none;}
 .imagem-topo{position: absolute;width: 220px;bottom: 0;left: 50%;margin-left: -81px;}
 .header-tablet{height: 70px;-moz-box-shadow: 0 0 30px 1px #C2C2C2;-webkit-box-shadow: 0 0 30px 1px #C2C2C2;box-shadow: 0 0 30px 1px #C2C2C2;-moz-box-shadow:inset 0 0 30px 5px #e5e5e5 ;}
 .header-tablet a.logo-mobile{margin:1px 0 0 35px;overflow: hidden;float: left;max-width:125px;display: block;left: 5%;}
@@ -33,7 +38,7 @@
 /* index */
 #carrossel-destaque{display:none;}
 #carrossel-destaque-mobile{display:block;}
-#carrossel-personagem .slider .nome {font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif!important; }
+#carrossel-personagem .slider .nome {color:#d71c0d!important;font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif!important; }
 #carrossel-personagem {padding: 0 20px;}
 #carrossel-personagem .slider .nome {font-size: 1.7em;}
 .mpc_ls .mpc_ls_ui .mpc_ls_ui_button.style02 {margin-top: -107px;}
@@ -44,7 +49,7 @@
 /* index */
 
 /* assets interna */
-.interna #content { top:30px!important; margin-bottom:60px!important; }
+.interna #content { top:70px!important; margin-bottom:60px!important; }
 /* assets interna */
 
 /* Acessibilidade */
@@ -56,7 +61,8 @@
 
 
 /* Na TV */
-.na-tv #content{top:20px!important; margin:0 5%;  }
+.na-tv #content{top:90px!important; margin:0 5%;  }
+.na-tv #content .filtro h1{font-size:2em;}
 .na-tv #content .fundo-na-tv{position: relative;top: 10px;margin: 0 auto;width: 81%;}
 .na-tv #content .ola{font-size:48px;}
 .na-tv #content .container-horarios{float:none; margin:10px auto!important;}
@@ -95,7 +101,7 @@
 .cuidadores .container-cuidadores .col-dir .box-ler p {color: #666;font-size: 1.1em;}
 
 /* Personagens */
-.personagens #content{margin: 10px 5%;top:0!important;min-height:0;}
+.personagens #content{margin: 100px 5%;top:0!important;min-height:0;}
 .personagens #content .conteudo-asset {width:100%;}
 .personagens #content .q-pers{width:22.8%;height:117px;}
 .personagens footer{margin:0}
@@ -112,6 +118,7 @@
 .interna.atividades #content h1{font-size:30px;}
 
 .interna.videos #player{width:450px; height:270px;}
+.todos-assets {margin-top: 10px;}
 
 .interna.jogos .todos-assets p{font-size:18px!important;}
 .interna.videos .todos-assets p{font-size:18px!important;}
@@ -135,13 +142,19 @@
 .interna.atividades .filtro .span12,
 .interna.jogos .filtro .span12{border:none!important;}
 
+.interna.jogos #content h1 .icones-sprite-interna,
+.interna.atividades #content h1 .icones-sprite-interna,
+.interna.videos #content h1 .icones-sprite-interna {margin: 4px 13px -5px 9px!important;}
+
 .interna.videos .filtro .span12 h1,
 .interna.atividades .filtro .span12 h1,
-.interna.jogos .filtro .span12 h1{line-height:60px!important;}
+.interna.jogos .filtro .span12 h1{line-height:1.4em!important; font-size:1.9em!important; height:1.4em!important;}
 
 .interna.videos .filtro .span12 nav.span2,
 .interna.atividades .filtro .span12 nav.span2,
 .interna.jogos .filtro .span12 nav.span2{display:none;}
+
+#page_nav{margin: 16% 5%!important;}
 
 /*box pais*/
 .pais .redes {display:none!important}
@@ -162,13 +175,13 @@
 #categoria-box-pais .box-pais.span12 {margin-left: 0!important;}
 
 /*footer*/
-footer {margin-top: 84px;margin-top:60px;}
+footer {margin-top: 84px;margin-top:110px;}
 footer #no-mobile{display: block;}
 footer #mobile{display: none;}
 footer .mapa{margin:2%;}
 footer .mapa .span12 {border: 1px solid #f0f0f0;}
-footer .mapa a{font-size:1.2em}
-footer #personagens-rodape{display: none!important;;}
+footer .mapa a{font-size:1.2em;color: #000!important;}
+footer #personagens-rodape{display: none!important;}
 footer .relacionados ul{display: none;}
 footer nav{display: block!important;}
 footer .relacionados-mobile{width: 96%;padding: 2%;overflow: hidden;}
@@ -205,3 +218,32 @@ footer .copyright {height: 30px;margin-left: 2%;}
   #page_nav .container-ajax-loader{float:left!important; left:8%!important}
 
 }
+
+/*personagens*/
+@media screen and (min-width:601px) and (max-width:979px){
+  .personagens .filtro .span2 {width: 98%;}
+  .personagens #content .filtro .filtro-personagem {margin-left: 3%;}
+  .personagens .filtro .filtro-personagem li {width: 10%;height: 58px;margin: 1%;}
+  .personagens .filtro .inner {width: 100%;height: auto;}
+  .personagens .desc-personagem {float: right;}
+  .personagens #carrossel-interna-personagem .container-itens {top: 36%;}
+}
+@media screen and (min-width:501px) and (max-width:600px) {
+  .personagens .filtro .span2 {width: 98%;}
+  .personagens #content .filtro .filtro-personagem {margin-left: 3%;}
+  .personagens .filtro .filtro-personagem li {width: 10%;height: 58px;margin: 1%;}
+  .personagens .filtro .inner {width: 100%;height: auto;}
+  .personagens .desc-personagem {float: right;}
+  .personagens #content .filtro .descritivo {padding: 20px;width: 90%;float: left;}
+  .personagens #carrossel-interna-personagem .container-itens {top: 36%;}
+}
+
+#sfWebDebugBar{display:none!important}
+/*categorias *, habitos*/
+
+.campanhas #content .container-campanhas iframe {width: 50%;margin-top: -12%;}
+.campanhas #content .container-campanhas img {width: 47%;}
+.campanhas #content .btn-group {width: 100%;margin: 10% 0!important;right: 0;}
+.campanhas #content .container-campanhas {margin-top: 40px;}
+
+

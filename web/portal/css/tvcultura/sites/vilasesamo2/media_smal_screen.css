@@ -1,5 +1,9 @@
 /*header*/
-.header-mobile button.alca{margin: 0 auto;position: absolute;bottom: 0;left: 50%;background: #e5e5e5;border: none;width: 50px;margin-bottom: 5px;border-radius: 10px;height: 20px;}   
+a:hover, a:visited{color:#fff!important;}
+
+.header--fixed {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+.bounceOutUp{top:-90px}
+
 .header-bar .header-bar-mobile{display:none}
 .header-desktop{display:none;}
 .header-tablet{display:none;}
@@ -14,8 +18,8 @@
 #header-bar-mobile{display:none;}
 #header-bar-mobile .content h1{width:50%;display: block;float: left;}
 #nav-mobile{width:100%;padding: 0;background: #ffffff; position: absolute;z-index: 40000;top: 70px;display:none;}
-#nav-mobile a{padding:1% 2%;text-decoration:none;font-family:'din-blackregular', Arial, Helvetica, sans-serif;width:100%;border-bottom:1px dotted #333;font-size: 1.2em; float:left; text-align:right; text-transform:uppercase;color:#333!important;line-height: 30px;}
-#nav-mobile img{float: right;width: 25px; margin:2px 15px 0 15px;}
+#nav-mobile a{padding:1% 2%;text-decoration:none;font-family:'din-blackregular', Arial, Helvetica, sans-serif;width:100%;border-bottom:1px dotted #333;font-size: 1.2em; float:left; text-align:right; text-transform:uppercase;color:#333!important;line-height: 40px;}
+#nav-mobile img{float: right;width: 25px; margin:6px 15px 0 15px;}
 #nav-mobile a:last-child{border:none}
 .navbar-fixed-top {margin-bottom: 0;position:fixed;}
 .navbar-inverse .navbar-inner.topo-vila {background:#fff!important;height: 105px!important;padding: 4px 6px;}
@@ -35,8 +39,8 @@
 /* footer{display:none;}
 #carrossel-destaque{display:none;}*/
 #no-mobile{display: none;}
-#content{top:0!important;margin-bottom:0;}
-#mobile{display: block; padding-bottom:0; }
+#content{top:70px!important;margin-bottom:0;}
+#mobile{display: block; padding-bottom:0;margin-top:80px; }
 footer{width: 100%;}
 footer .logos ul{padding:0;}
 footer .logos ul li{width:50%; float:left;height:30px; margin:10px 0}
@@ -64,6 +68,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 #carrossel-destaque{display:none}
 #carrossel-destaque-mobile{display:block!important;}
 #content h1 {font-size: 1.5em;/* padding-left:60px;*/}
+a{text-decoration:underline!important;}
 .destaques{padding:0 10px}
 .destaques > .span4{width:100%!important;margin:10px 0; position:relative;overflow: hidden;min-height: 80px;}
 .destaques > .span4 img{}
@@ -76,7 +81,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .destaques .videos .yt-menu img {max-width:800px; top:-40px!important;}
 #carrossel-personagem {padding: 0 8%; margin-top:20px!important; max-width:100%!important;}
 #carrossel-personagem h1{display:none;}
-#carrossel-personagem .slider .nome {font-size: 0.9em!important;font-family:'din-blackregular',Arial, Helvetica, sans-serif;}
+#carrossel-personagem .slider .nome {color:#d71c0d!important;font-size: 0.9em!important;font-family:'din-blackregular',Arial, Helvetica, sans-serif;}
 #carrossel-personagem .slider li{width: 80px!important; height:100px!important;}
 #carrossel-personagem .slider .inner{width:75px!important; height:75px!important; }
 #carrossel-personagem .slider-mask-wrap {height:108px!important}
@@ -84,7 +89,6 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 
 
 /*acessibilidade*/
-#header-mobile{display:none;}
 .acessibilidade .box-acessibilidade {width: 100%!important;}
 .acessibilidade #content .filtro h1 {font-size: 1.6em;}
 .acessibilidade .fundo-acessibilidade {width:100%!important; margin:0 auto;}
@@ -93,11 +97,12 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 /* na tv */
 .na-tv #content{margin:20px 5%}
 .na-tv .filtro {margin-bottom: 0!important;}
+.na-tv #content .filtro h1{font-size:1.6em;}
 .na-tv .ola{font-size: 1.4em!important;top: 5%!important;left: 3%!important;}
 .na-tv #content .fundo-na-tv {width: 70%;margin: 0 auto;position: relative;top: 35px;}
 .na-tv #content .container-na-tv .container-horarios {width:100%; max-height:500px; float:left;}
 .na-tv #content .box-horario{width:98%; margin:0 0 10px 0;}
-.na-tv footer#mobile{margin-top:-148px;}
+.na-tv footer#mobile{margin-top:-70px;}
  
 /*  Pais Artigos */
 .cuidadores #content{margin:1%;}
@@ -143,11 +148,19 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 /* assets internas (jogos, atividades, videos) */
 .interna.jogos #content,
 .interna.videos #content,
-.interna.atividades #content{margin:20px 2%;}
+.interna.atividades #content{margin:0px 5%;}
+
+.interna.jogos #content h1 .icones-sprite-interna,
+.interna.atividades #content h1 .icones-sprite-interna,
+.interna.videos #content h1 .icones-sprite-interna {margin: -10px 10px -22px 10px!important;}
 
 .interna.jogos #content h1,
 .interna.atividades #content h1,
-.interna.videos #content h1{ font-size: 2em;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height:auto}
+.interna.videos #content h1{font-size: 1.9em;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height:3.4em;line-height:1.4em!important;}
+
+.interna.jogos #content .span12 h1,
+.interna.atividades #content .span12 h1,
+.interna.videos #content .span12 h1{ font-size: 1.9em;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height:1.4em;line-height:1.4em!important;}
 
 .interna.jogos{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;border-radius: 13px;}
 .interna.videos{font-size: 1em!important;background-image:none!important;background-color: #f78701;display: block;border-radius: 13px;}
@@ -159,7 +172,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 
 .interna.jogos .todos-assets,
 .interna.atividades .todos-assets,
-.interna.videos .todos-assets{width: 90%!important;font-size: 1em!important;margin-right: 7%;display: block;}
+.interna.videos .todos-assets{width: 90%!important;font-size: 1em!important;margin: 3% 7% 0 7%;;display: block;}
 
 .interna.jogos .todos-assets p{background:#0172f9!important;}
 .interna.atividades .todos-assets p{background:#571ed9!important;}
@@ -203,6 +216,8 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .interna.atividades .filtro .span12 nav.span2,
 .interna.jogos .filtro .span12 nav.span2{display:none;}
 
+#page_nav{margin:25% auto!important;}
+
 /*pais capa*/
 .cuidadores #carrossel-interna-artigo {display:none;}
 .cuidadores #carrossel-interna-artigo .slider-mask {width:100%!important}
@@ -229,7 +244,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 /* bo*/
 #categoria-box-pais .pais .redes {display:none!important}
 #categoria-box-pais .pais h2.tit-box {font-size:1.2em}
-#categoria-box-pais .box-pais .dica-pai{width:95%!important;height:auto!important;}
+#categoria-box-pais .box-pais .dica-pai{width:95%!important;height:auto!important;min-height: 0;}
 #categoria-box-pais .box-pais .artigo{width:95%!important;min-height: 0!important;}
 #categoria-box-pais .box-pais .parceiros{width:95%!important;height:auto!important;}
 #categoria-box-pais .box-pais .artigo p {height:auto!important;}
@@ -257,7 +272,8 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 @media screen and (max-width: 359px) {
   #content #carrossel-interna-artigo{display: none}
   #content .todos-itens #container {width: 100%;margin-left: 0!important;}
-  #content .span8 {width:100%;padding:0 8%}
+  #content .span8 {width:100%;padding:8%}
+  .destaques > .span4 {margin-left:0!important;}
   #content .todos-itens {margin:15px auto;}
   #content .todos-itens .element{width:100%; margin:5px 0!important}
   #content .todos-itens li img{width:100%;}
@@ -273,12 +289,16 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 
 @media screen and (orientation:landscape){
   #nav-mobile a {width:46%}
+  
+  .destaques > .span4 {margin-left:0!important;}
+  
   .cuidadores .destaques .container-image{width: 35%!important;float: left!important;height: 50px!important;}
   .cuidadores .destaques .texto{padding-right: 4%!important;}
   .cuidadores .destaques a {line-height: 60px;}
   .cuidadores .destaques a i{margin:3% 1%!important;}
   
   .personagens #content .q-pers{width:22.7%;height:90px;}
+  .personagens #content {min-height:0;}
   
   #content .todos-itens {margin:15px auto;}
   #content .todos-itens .yt-menu,
@@ -286,3 +306,41 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
   #page_nav{padding:0 8%;}
   #page_nav .container-ajax-loader{top:35%;left:8%;}
 }
+
+/*personagens*/
+@media screen and (min-width:321px) and (max-width:500px) {
+  .personagens .filtro .span2 {width: 98%;}
+  .personagens .filtro .filtro-personagem li {width: 21%;height: 58px;}
+  .personagens .filtro .inner {width: 100%;height: auto;}
+  .personagens #carrossel-interna-personagem {max-width: 100%;}
+  .personagens .desc-personagem {float: right;width: 100%;}
+  .personagens #content .filtro .descritivo {padding: 20px;width: 90%;float: left;}
+  .personagens #carrossel-interna-personagem .slider .videoorimage img {width: 100%;margin: 8%;}
+  .personagens #carrossel-interna-personagem .container-itens {width:100%;top: 33%;}
+  .personagens #content.dest-pers .span4.pull-left{width: 100%;padding: 0;min-height: 0}
+  .personagens .dest-pers img {width: 50%;padding: 0;}
+  .personagens .dest-pers {margin:0;padding:0;}
+}
+
+@media screen and (min-width:50px) and (max-width:320px) {
+  .personagens .filtro .span2 {width: 98%;}
+  .personagens .filtro .filtro-personagem li {width: 21%;height: 58px;}
+  .personagens .filtro .inner {width: 100%;height: auto;}
+  .personagens #carrossel-interna-personagem {max-width: 100%;max-height: 300px;}
+  .personagens .desc-personagem {float: right;width: 100%;}
+  .personagens #content .filtro .descritivo {padding: 20px;float: left;}
+  .personagens #carrossel-interna-personagem .slider li {max-width:100%}
+  .personagens #carrossel-interna-personagem .slider .videoorimage img {width: 70%;}
+  .personagens #carrossel-interna-personagem .container-itens {width:100%;top: 25%;}
+  .personagens #content .dest-pers .span4.pull-left {width: 100%;padding: 0;min-height: 0}
+  .personagens .dest-pers img {width: 50%;padding: 0;}
+  .personagens .dest-pers {margin:0;padding:0;}
+
+}
+#sfWebDebugBar{display:none!important}
+/*categorias *, habitos*/
+.campanhas #content .filtro h1 {font-size:1.6em!important;}
+.campanhas #content .container-campanhas iframe {width: 100%;margin-top: 0;}
+.campanhas #content .container-campanhas {margin-top: 40px;}
+.campanhas #content .btn-group {margin-top: 16%;width: 100%;right: 0;}
+

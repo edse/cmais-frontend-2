@@ -52,7 +52,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <?php echo $noscript; ?> 
     <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">
     <?php echo $noscript; ?>
-
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/animate.css">
         
 
      
@@ -123,7 +123,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <a href="#content" aria-label="pular Menu principal e ir direto para o conteudo" class="ac-pular" tabindex="2">pular começo</a>
     
     <!--header mobile-->
-    <header id="header-mobile" class="header-mobile">  
+    <header id="header-mobile" class="header-mobile header--fixed">  
       
       <!-- Menu Mobile mapa site  -->
       <a href="#" title="Vila Sésamo" class="logo-mobile">
@@ -183,7 +183,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <!-- /header mobile -->
     
     <!-- header tablet -->
-    <header id="header-tablet" class="header-tablet">
+    <header id="header-tablet" class="header-tablet header--fixed">
       <!-- Menu Mobile mapa site  -->
       <a href="#" title="Vila Sésamo" class="logo-mobile">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/logo-mobile.png"  alt="Logo Vila Sésamo">
@@ -507,7 +507,11 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     </footer>
     <!--/footer > 640-->
     
-    
+    <!--headroom - hide header mobile-->
+    <script  type="text/javascript"  src="http://cmais.com.br/portal/js/headroom/headroom.js"></script> 
+    <?php echo $noscript; ?>     
+    <script  type="text/javascript"  src="http://cmais.com.br/portal/js/headroom/jQuery.headroom.js"></script>
+    <?php echo $noscript; ?>
     
     
     <!-- scripts -->
