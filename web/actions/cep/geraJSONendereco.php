@@ -60,7 +60,12 @@ if(!empty($_GET["cep"])){
     );
     
     //Gera o JSON
-    echo json_encode($resultados);
+    
+    //echo json_encode($resultados);
+    $json = json_encode($resultados);
+    $callback = $_REQUEST['callback'];
+    echo $callback.'('. $json . ');';		
+		
     
   }else{
     echo utf8_decode("CEP incorreto ou não encontrado!");
