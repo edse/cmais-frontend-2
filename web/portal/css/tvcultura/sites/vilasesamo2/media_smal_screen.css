@@ -1,4 +1,6 @@
 /*header*/
+a:hover, a:visited{color:#fff!important;}
+html body{background:#fee133;}
 .header--fixed {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
 .bounceOutUp{top:-90px}
 
@@ -16,8 +18,8 @@
 #header-bar-mobile{display:none;}
 #header-bar-mobile .content h1{width:50%;display: block;float: left;}
 #nav-mobile{width:100%;padding: 0;background: #ffffff; position: absolute;z-index: 40000;top: 70px;display:none;}
-#nav-mobile a{padding:1% 2%;text-decoration:none;font-family:'din-blackregular', Arial, Helvetica, sans-serif;width:100%;border-bottom:1px dotted #333;font-size: 1.2em; float:left; text-align:right; text-transform:uppercase;color:#333!important;line-height: 30px;}
-#nav-mobile img{float: right;width: 25px; margin:2px 15px 0 15px;}
+#nav-mobile a{padding:1% 2%;text-decoration:none;font-family:'din-blackregular', Arial, Helvetica, sans-serif;width:100%;border-bottom:1px dotted #333;font-size: 1.2em; float:left; text-align:right; text-transform:uppercase;color:#333!important;line-height: 40px;}
+#nav-mobile img{float: right;width: 25px; margin:6px 15px 0 15px;}
 #nav-mobile a:last-child{border:none}
 .navbar-fixed-top {margin-bottom: 0;position:fixed;}
 .navbar-inverse .navbar-inner.topo-vila {background:#fff!important;height: 105px!important;padding: 4px 6px;}
@@ -38,7 +40,7 @@
 #carrossel-destaque{display:none;}*/
 #no-mobile{display: none;}
 #content{top:70px!important;margin-bottom:0;}
-#mobile{display: block; padding-bottom:0; }
+#mobile{display: block; padding-bottom:0;margin-top:70px; }
 footer{width: 100%;}
 footer .logos ul{padding:0;}
 footer .logos ul li{width:50%; float:left;height:30px; margin:10px 0}
@@ -78,7 +80,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .destaques .videos .yt-menu img {max-width:800px; top:-40px!important;}
 #carrossel-personagem {padding: 0 8%; margin-top:20px!important; max-width:100%!important;}
 #carrossel-personagem h1{display:none;}
-#carrossel-personagem .slider .nome {font-size: 0.9em!important;font-family:'din-blackregular',Arial, Helvetica, sans-serif;}
+#carrossel-personagem .slider .nome {color:#d71c0d!important;font-size: 0.9em!important;font-family:'din-blackregular',Arial, Helvetica, sans-serif;}
 #carrossel-personagem .slider li{width: 80px!important; height:100px!important;}
 #carrossel-personagem .slider .inner{width:75px!important; height:75px!important; }
 #carrossel-personagem .slider-mask-wrap {height:108px!important}
@@ -258,7 +260,8 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 @media screen and (max-width: 359px) {
   #content #carrossel-interna-artigo{display: none}
   #content .todos-itens #container {width: 100%;margin-left: 0!important;}
-  #content .span8 {width:100%;padding:2%}
+  #content .span8 {width:100%;padding:8%}
+  .destaques > .span4 {margin-left:0!important;}
   #content .todos-itens {margin:15px auto;}
   #content .todos-itens .element{width:100%; margin:5px 0!important}
   #content .todos-itens li img{width:100%;}

@@ -203,6 +203,9 @@ $(document).ready(function() {
     $(this).tab('show');
   });
   
+  
+  
+     
 });//document.ready
 
 //impressao no ie com close ativado
