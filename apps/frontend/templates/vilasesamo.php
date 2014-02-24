@@ -34,12 +34,12 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       if(str.indexOf("iPhone") != -1 || str.indexOf("iPod") != -1 || str.indexOf("Android") != -1 && str.indexOf("Mobile") != -1 || str.indexOf("Windows Phone") != -1 && str.indexOf("IEMobile") != -1)  {
         view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />';
         view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />';
-        view += '<link rel="stylesheet" media="screen" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" />';
+        view += '<link rel="stylesheet" media="screen" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" />';
       }else{
         view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />';
         view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />';
-        view += '<link rel="stylesheet" media="only screen and (min-width:501px) and (max-width:979px)" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/media_medium_screen.css" />';
-        view += '<link rel="stylesheet" media="only screen and (min-width:50px) and (max-width:500px)" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" />';
+        view += '<link rel="stylesheet" media="only screen and (min-width:501px) and (max-width:979px)" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_medium_screen.css" />';
+        view += '<link rel="stylesheet" media="only screen and (min-width:50px) and (max-width:500px)" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" />';
       }
     }else{
       view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />';
@@ -52,7 +52,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <?php echo $noscript; ?> 
     <link href="http://cmais.com.br/portal/js/bootstrap-v2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css">
     <?php echo $noscript; ?>
-    <link rel="stylesheet" href="http://172.20.16.219/portal/css/animate.css">
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/animate.css">
         
 
      
@@ -508,14 +508,14 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <!--/footer > 640-->
     
     <!--headroom - hide header mobile-->
-    <script  type="text/javascript"  src="http://172.20.16.219/portal/js/headroom/headroom.js"></script> 
+    <script  type="text/javascript"  src="http://cmais.com.br/portal/js/headroom/headroom.js"></script> 
     <?php echo $noscript; ?>     
-    <script  type="text/javascript"  src="http://172.20.16.219/portal/js/headroom/jQuery.headroom.js"></script>
+    <script  type="text/javascript"  src="http://cmais.com.br/portal/js/headroom/jQuery.headroom.js"></script>
     <?php echo $noscript; ?>
     
     
     <!-- scripts -->
-    <script type="text/javascript" src="http://172.20.16.219/portal/js/vilasesamo2/vilasesamo.js"></script>
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/vilasesamo.js"></script>
     <?php echo $noscript; ?>
     
     <script type="text/javascript">

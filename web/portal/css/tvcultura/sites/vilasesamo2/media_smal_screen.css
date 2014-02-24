@@ -37,7 +37,7 @@
 /* footer{display:none;}
 #carrossel-destaque{display:none;}*/
 #no-mobile{display: none;}
-#content{top:0!important;margin-bottom:0;}
+#content{top:70px!important;margin-bottom:0;}
 #mobile{display: block; padding-bottom:0; }
 footer{width: 100%;}
 footer .logos ul{padding:0;}
