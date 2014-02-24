@@ -294,6 +294,7 @@ a{text-decoration:underline!important;}
   .cuidadores .destaques a i{margin:3% 1%!important;}
   
   .personagens #content .q-pers{width:22.7%;height:90px;}
+  .personagens #content {min-height:0;}
   
   #content .todos-itens {margin:15px auto;}
   #content .todos-itens .yt-menu,
