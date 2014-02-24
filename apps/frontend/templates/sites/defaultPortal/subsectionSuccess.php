@@ -177,18 +177,6 @@ if(isset($pager)){
               </div>
               <!-- / BOX PUBLICIDADE -->
               
-              <!-- CALENDARIO -->
-              <div class="box-padrao grid1">
-                <div class="topo">
-                  <span></span>
-                  <div class="capa-titulo">
-                    <h4>arquivo</h4>
-                  </div>
-                </div>
-                <div id="datepicker"></div>
-              </div>
-              <!-- /CALENDARIO -->
-              
             </div>
             <!-- /DIREITA -->
             

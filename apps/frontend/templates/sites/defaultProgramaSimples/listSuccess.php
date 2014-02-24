@@ -77,19 +77,6 @@
               
               <?php if(isset($displays["publicidade-300x250"])) include_partial_from_folder('blocks','global/banner-300x250', array('displays' => $displays["publicidade-300x250"])) ?>
               
-              <!-- ARQUIVO
-              <div class="box-padrao grid1">
-                <div class="topo claro">
-                  <span></span>
-                  <div class="capa-titulo">
-                    <h4>arquivo</h4>
-                  </div>
-                </div>
-                <div id="datepicker"></div>
-              </div>
-              -->
-              <!-- /ARQUIVO -->
-              
             </div>
             <!-- /DIREITA -->
 
