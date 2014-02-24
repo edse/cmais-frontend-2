@@ -498,7 +498,7 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .na-tv .ola{font-family:'din-blackregular',Arial, Helvetica, sans-serif; font-size:70px; color:#00aa52;position:absolute; top:9%; left:9%; display:block;z-index:1} 
 .na-tv .container-na-tv p{max-width: 690px;float: right;position: relative;z-index: 1; margin:0 auto; width: 99%;}
 .na-tv .container-na-tv p strong{font-family:'din-blackregular',Arial, Helvetica, sans-serif;color:#00aa52;}
-.na-tv .container-na-tv p a{color:#00aa52;}
+.na-tv .container-na-tv p a{color:#00aa52!important;}
 .na-tv .container-na-tv p a:hover{color:#00c76e;}
 .na-tv .container-na-tv .container-horarios{width: 480px;float: right;max-height: 250px;overflow: hidden;margin-top:20px;}/*era max-height: 230px ---> georgia*/
 .na-tv .container-na-tv .container-horarios .img-logo{text-align: center;margin: 10px;}

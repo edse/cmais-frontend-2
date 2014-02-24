@@ -1,6 +1,6 @@
 /*header*/
 a:hover, a:visited{color:#fff!important;}
-html body{background:#fee133;}
+
 .header--fixed {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
 .bounceOutUp{top:-90px}
 
@@ -40,7 +40,7 @@ html body{background:#fee133;}
 #carrossel-destaque{display:none;}*/
 #no-mobile{display: none;}
 #content{top:70px!important;margin-bottom:0;}
-#mobile{display: block; padding-bottom:0;margin-top:70px; }
+#mobile{display: block; padding-bottom:0;margin-top:80px; }
 footer{width: 100%;}
 footer .logos ul{padding:0;}
 footer .logos ul li{width:50%; float:left;height:30px; margin:10px 0}
@@ -68,6 +68,7 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 #carrossel-destaque{display:none}
 #carrossel-destaque-mobile{display:block!important;}
 #content h1 {font-size: 1.5em;/* padding-left:60px;*/}
+a{text-decoration:underline!important;}
 .destaques{padding:0 10px}
 .destaques > .span4{width:100%!important;margin:10px 0; position:relative;overflow: hidden;min-height: 80px;}
 .destaques > .span4 img{}
@@ -96,11 +97,12 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 /* na tv */
 .na-tv #content{margin:20px 5%}
 .na-tv .filtro {margin-bottom: 0!important;}
+.na-tv #content .filtro h1{font-size:1.6em;}
 .na-tv .ola{font-size: 1.4em!important;top: 5%!important;left: 3%!important;}
 .na-tv #content .fundo-na-tv {width: 70%;margin: 0 auto;position: relative;top: 35px;}
 .na-tv #content .container-na-tv .container-horarios {width:100%; max-height:500px; float:left;}
 .na-tv #content .box-horario{width:98%; margin:0 0 10px 0;}
-.na-tv footer#mobile{margin-top:-148px;}
+.na-tv footer#mobile{margin-top:-70px;}
  
 /*  Pais Artigos */
 .cuidadores #content{margin:1%;}
@@ -146,11 +148,15 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 /* assets internas (jogos, atividades, videos) */
 .interna.jogos #content,
 .interna.videos #content,
-.interna.atividades #content{margin:20px 2%;}
+.interna.atividades #content{margin:0px 5%;}
+
+.interna.jogos #content h1 .icones-sprite-interna,
+.interna.atividades #content h1 .icones-sprite-interna,
+.interna.videos #content h1 .icones-sprite-interna {margin: -16px 10px -22px 10px!important;}
 
 .interna.jogos #content h1,
 .interna.atividades #content h1,
-.interna.videos #content h1{ font-size: 2em;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height:auto}
+.interna.videos #content h1{ font-size: 1.9em;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height:1em;line-height:1em!important;}
 
 .interna.jogos{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;border-radius: 13px;}
 .interna.videos{font-size: 1em!important;background-image:none!important;background-color: #f78701;display: block;border-radius: 13px;}
@@ -205,6 +211,8 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .interna.videos .filtro .span12 nav.span2,
 .interna.atividades .filtro .span12 nav.span2,
 .interna.jogos .filtro .span12 nav.span2{display:none;}
+
+#page_nav{margin:25% auto!important;}
 
 /*pais capa*/
 .cuidadores #carrossel-interna-artigo {display:none;}
@@ -277,6 +285,9 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 
 @media screen and (orientation:landscape){
   #nav-mobile a {width:46%}
+  
+  .destaques > .span4 {margin-left:0!important;}
+  
   .cuidadores .destaques .container-image{width: 35%!important;float: left!important;height: 50px!important;}
   .cuidadores .destaques .texto{padding-right: 4%!important;}
   .cuidadores .destaques a {line-height: 60px;}
