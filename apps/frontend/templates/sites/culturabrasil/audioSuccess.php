@@ -1,24 +1,20 @@
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/contato.css" type="text/css" />
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
+<?php use_helper('I18N', 'Date') ?>
+<!-- Le styles--> 
+<link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/culturabrasil.css" rel="stylesheet" type="text/css" />
+    
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
 
-    <?php use_helper('I18N', 'Date') ?>
-    <?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site)) ?>
-    <?// php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+<?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site, 'asset'=>$asset)) ?>
 
-	 <div id="bg-site"></div>
-
-    <!-- CAPA SITE -->
-    <div id="capa-site" class="audio">
-
-           <?php include_partial_from_folder('sites/culturafm','global/newheader', array('site' => $site,'section'=>$section, 'uri' => $uri, 'program' => $program, 'siteSections'=>$siteSections)) ?>
-
-      <!-- MIOLO -->
-      <div id="miolo">
-      
-        <!-- BOX LATERAL -->
-        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
-        <!-- BOX LATERAL -->
-
+<!-- section miolo -->
+<section class="miolo">
+	
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
 
