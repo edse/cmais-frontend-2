@@ -121,6 +121,7 @@
           <div class="topo-esq"></div>
           <div class="topo">
             <a href="/imagens" class="enunciado">Imagens</a>
+            <?php /*
             <form action="" method="post" name="filter" id="filter">
               <input type="hidden" name="section_id" id="section_id" value="" />
               <select name="site_id" id="site_id" onchange="$('#filter').submit();">
@@ -129,7 +130,7 @@
                   <option value="<?php echo $s->getId()?>"<?php if($s->getId() == $site_id) echo ' selected="selected"'?>><?php echo $s->getTitle()?></option>
                 <?php endforeach; ?>
               </select>
-            </form>
+            </form> */ ?>
           </div>
 
           <?php /* 
