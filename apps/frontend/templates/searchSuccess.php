@@ -5,7 +5,7 @@
 #form-search{ z-index: 1;margin: 0 auto;display: block;background: #FFFFFF;padding-top: 20px;}
 .search-term{border: none;padding: 5px 15px;width: 400px;float: left;}
 #content-search{overflow: hidden;margin: 0 auto;display: block;width: 500px;border:1px solid #CCCCCC;}
-#search{border: none;display:block;width: 70px;height: 30px;float: left;background:#4a8cf6 url(/portal/images/lupa-azul-branca.jpg) no-repeat center center;float: left;}
+#search{border: none;display:block;width: 70px;height: 30px;float: left;background:#4a8cf6 url(http://cmais.com.br/portal/images/lupa-azul-branca.jpg) no-repeat center center;float: left;}
 </style>
     <!-- CAPA SITE -->
     <div id="capa-site">

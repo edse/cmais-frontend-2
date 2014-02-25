@@ -29,7 +29,7 @@ $('#countdown_dashboard').startCountDown();
 	margin-bottom: 15px;
 }
 .contador-box h2.metropolis{
-	background: url(/portal/images/logo-metropolis_countdown.png) no-repeat;
+	background: url(http://cmais.com.br/portal/images/logo-metropolis_countdown.png) no-repeat;
 	display: block;
 	float: left;
 	overflow: hidden;
