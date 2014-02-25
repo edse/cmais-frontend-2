@@ -102,7 +102,8 @@
 			</div>
 		</div>
       <ul>
+        <li><a class="ml-twitter" href="#dialog3" name="modal">Twitter</a></li><!--inclusão twitter fev 2014-->
         <li><a class="ml-facebook" href="#dialog2" name="modal">Facebook</a></li>
-        <li><a class="ml-youtube" href="http://www.youtube.com.br/tvratimbum">Youtube</a></li>
+        <li><a class="ml-youtube" href="http://www.youtube.com.br/tvratimbum" target="_blank">Youtube</a></li>
       </ul>
     </div>

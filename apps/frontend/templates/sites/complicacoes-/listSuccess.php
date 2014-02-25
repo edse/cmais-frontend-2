@@ -75,20 +75,14 @@
             <!-- DIREITA -->
             <div id="direita" class="grid1">
               
-              <?php if(isset($displays["publicidade-300x250"])) include_partial_from_folder('blocks','global/banner-300x250', array('displays' => $displays["publicidade-300x250"])) ?>
-              
-              <!-- ARQUIVO
-              <div class="box-padrao grid1">
-                <div class="topo claro">
-                  <span></span>
-                  <div class="capa-titulo">
-                    <h4>arquivo</h4>
-                  </div>
-                </div>
-                <div id="datepicker"></div>
+            	<!-- BOX PUBLICIDADE -->
+              <div class="box-publicidade grid1">
+                <!-- univesptv-300x250 -->
+				<script type='text/javascript'>
+				GA_googleFillSlot("univesptv-300x250");
+				</script>
               </div>
-              -->
-              <!-- /ARQUIVO -->
+              <!-- /BOX PUBLICIDADE -->
               
             </div>
             <!-- /DIREITA -->
@@ -104,4 +98,3 @@
       
     </div>
     <!-- / CAPA SITE -->
-
