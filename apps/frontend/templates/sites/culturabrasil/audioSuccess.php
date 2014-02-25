@@ -38,7 +38,7 @@
                   </div>
                   -->
 
-                  <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
+                  <?//php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
 
                 </div>
                 
@@ -146,7 +146,7 @@
           </div>
           <!-- /CAPA -->
         </div>
-        <!-- /CONTEUDO PAGINA -->
+        <!-- /CONTEUDO -->
 
       </div>
       <!-- /MIOLO -->
