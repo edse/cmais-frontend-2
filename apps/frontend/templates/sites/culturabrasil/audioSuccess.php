@@ -38,7 +38,7 @@
                   </div>
                   -->
 
-                  <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
+                  <?php include_partial_from_folder('sites/culturabrasil', 'global/signature', array('uri'=>$uri,'asset'=>$asset)) ?>
 
                 </div>
                 
@@ -57,7 +57,7 @@
                 
                 <?php include_partial_from_folder('blocks', 'global/visite-cmais',array('uri'=>$uri)) ?>
 				         <!-- comentario facebook -->
-				          <div class="container face">
+				          <div class="content-asset container face">
 				            <fb:comments href="<?php echo $uri?>" numposts="3" width="610" publish_feed="true"></fb:comments>
 				            <hr />
 				          </div>
