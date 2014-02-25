@@ -43,7 +43,7 @@
                 </div>
                 
                 <div class="texto bg-cinza">
-                  
+                  <div>
                   <?php if($asset->AssetType->getSlug() == "person"): ?>
                     <?php echo html_entity_decode($asset->AssetPerson->getBio()) ?>
                   <?php elseif($asset->AssetType->getSlug() == "audio"): ?>
@@ -51,7 +51,7 @@
                   <?php else: ?>
                     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
                   <?php endif; ?>
-                 
+                  </div>
                   <p><?php echo nl2br($asset->getDescription()) ?> </p>  
                 </div>
                 
