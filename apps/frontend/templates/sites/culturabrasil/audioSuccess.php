@@ -13,10 +13,10 @@
 <?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site, 'asset'=>$asset)) ?>
 
 <!-- section miolo -->
+<!--section miolo--> 
 <section class="miolo">
-	
-        <!-- CONTEUDO PAGINA -->
-        <div id="conteudo-pagina">
+  <!-- container miolo -->
+  <div class="container row-fluid">
 
           <!-- CAPA -->
           <div class="capa grid3">
