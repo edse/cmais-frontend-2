@@ -126,18 +126,20 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               ?>
               <div class="span4 <?php echo $assetSection->getSlug() ?> <?php if($assetSection->getSlug() != "videos"){echo "square";}else{echo "rect";}?> ">
                 <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="">
-                  <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
-                    <?php
-                    /*
-                    <div class="yt-menu">  
+                  <div class="container-image">
+                    <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
+                      <?php
+                      /*
+                      <div class="yt-menu">  
+                        <img class="destaque" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt=""/>
+                      </div>
+                       */
+                      ?>
                       <img class="destaque" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt=""/>
-                    </div>
-                     */
-                    ?>
-                    <img class="destaque" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt=""/>
-                  <?php else: ?>
-                    <img class="destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt=""/>
-                  <?php endif; ?>
+                    <?php else: ?>
+                      <img class="destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt=""/>
+                    <?php endif; ?>
+                  </div>
                   <i class="icones-sprite-interna icone-<?php echo $assetSection->getSlug() ?>-pequeno"></i>
                   <div class="texto">
                     <img class="altura"src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png" alt="" aria-label="<?php echo $assetSection->getSlug(); ?>"/>
@@ -251,149 +253,149 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 
   </section>
   <!--/content-->
-  <!--scripts e css carrossel-->
-  <script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
-  <?php echo $noscript; ?>
-  <script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script>
-  <?php echo $noscript; ?>
-  <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
-  <?php echo $noscript; ?>
-  <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script> 
-  <?php echo $noscript; ?>
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
-  <?php echo $noscript; ?>
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
-  <?php echo $noscript; ?>
-  <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
-  <?php echo $noscript; ?>
-  <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
+<!--scripts e css carrossel-->
+<script src="http://cmais.com.br/portal/js/isotope/jquery.isotope.min.js"></script>
+<?php echo $noscript; ?>
+<script src="http://cmais.com.br/portal/js/isotope/jquery.infinitescroll.min.js"></script>
+<?php echo $noscript; ?>
+<script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
+<?php echo $noscript; ?>
+<script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script> 
+<?php echo $noscript; ?>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script>
+<?php echo $noscript; ?>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script>
+<?php echo $noscript; ?>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
+<?php echo $noscript; ?>
+<link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
+
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+<!-- script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/youtubeapi.js"></script --> 
+<?php echo $noscript; ?>
   
-  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
-  <!-- script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/youtubeapi.js"></script --> 
-  <?php echo $noscript; ?>
   
+<script>
+  $(document).ready(function() {
+  //arrays para players multiplos
+  var cont = 0;
+  var player = new Array();
+  var players_ids = new Array();
+  var playing;
+  var playing_id = false;
   
-  <script>
-    $(document).ready(function() {
-    //arrays para players multiplos
-    var cont = 0;
-    var player = new Array();
-    var players_ids = new Array();
-    var playing;
-    var playing_id = false;
-    
-    onYouTubeIframeAPIReadyPlayer = function(obj, cont) {
-      //console.log("start"+cont);
-      //console.log("obj:"+obj);
-      //console.log("contador:"+cont);
-      player[cont] = new YT.Player(obj);
-      //console.log("player:"+player[cont]);
-      player[cont].addEventListener("onStateChange", function(res){
-        if(res.data == 1){
-          $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow');
-          playing = res.target;
-          //console.log('playing:'+playing.pauseVideo());
-        }
-        if(res.data == 0){
-          $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
-        }
-      });
-    }
-    
-    $('.videoorimage iframe').each(function(i){
-      if($(this).attr('src').indexOf("youtube") != -1){
-        cont++;
-        $(this).attr("id","player"+cont);
-        onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
+  onYouTubeIframeAPIReadyPlayer = function(obj, cont) {
+    //console.log("start"+cont);
+    //console.log("obj:"+obj);
+    //console.log("contador:"+cont);
+    player[cont] = new YT.Player(obj);
+    //console.log("player:"+player[cont]);
+    player[cont].addEventListener("onStateChange", function(res){
+      if(res.data == 1){
+        $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow');
+        playing = res.target;
+        //console.log('playing:'+playing.pauseVideo());
+      }
+      if(res.data == 0){
+        $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
       }
     });
+  }
+  
+  $('.videoorimage iframe').each(function(i){
+    if($(this).attr('src').indexOf("youtube") != -1){
+      cont++;
+      $(this).attr("id","player"+cont);
+      onYouTubeIframeAPIReadyPlayer("player"+cont , cont)
+    }
+  });
 
-    //carrossel
-    var total=0;
-    $('#selector-interna-personagem li').each(function(i){
-      var width = $(this).width();
-      total = width + total + 14;
-      console.log(total); 
-    });
-    
-    $('#selector-interna-personagem').css('width', total);
-    
-    $('#carrossel-interna-personagem').responsiveCarousel({
-        unitWidth:          'inherit',
-        target:             '#carrossel-interna-personagem .slider-target',
-        unitElement:        '#carrossel-interna-personagem .slider-target > li',
-        mask:               '#carrossel-interna-personagem .slider-mask',
-        arrowLeft:          '#carrossel-interna-personagem .arrow-left',
-        arrowRight:         '#carrossel-interna-personagem .arrow-right',
-        dragEvents:         true,
-        step:-1,
-        onShift:function (i) {
-            var $current = $('#selector-interna-personagem li a[rel=frame_' + i + ']');
-            $('#selector-interna-personagem li a').removeClass('current');
-            $current.addClass('current');
-        },
-        slideSpeed: 5000
-    });
+  //carrossel
+  var total=0;
+  $('#selector-interna-personagem li').each(function(i){
+    var width = $(this).width();
+    total = width + total + 14;
+    console.log(total); 
+  });
+  
+  $('#selector-interna-personagem').css('width', total);
+  
+  $('#carrossel-interna-personagem').responsiveCarousel({
+      unitWidth:          'inherit',
+      target:             '#carrossel-interna-personagem .slider-target',
+      unitElement:        '#carrossel-interna-personagem .slider-target > li',
+      mask:               '#carrossel-interna-personagem .slider-mask',
+      arrowLeft:          '#carrossel-interna-personagem .arrow-left',
+      arrowRight:         '#carrossel-interna-personagem .arrow-right',
+      dragEvents:         true,
+      step:-1,
+      onShift:function (i) {
+          var $current = $('#selector-interna-personagem li a[rel=frame_' + i + ']');
+          $('#selector-interna-personagem li a').removeClass('current');
+          $current.addClass('current');
+      },
+      slideSpeed: 5000
+  });
 
-    $('#selector-interna-personagem a').on('click', function (ev) {
-      ev.preventDefault();
-      var i = /\d/.exec($(this).attr('rel'));
-      $('#carrossel-interna-personagem').responsiveCarousel('goToSlide', i);
-      if(!$(this).hasClass('current') && playing != null){
-        //playing.pauseVideo();
-        setTimeout(function(){playing.pauseVideo()}, 500);
-      } 
-      stop();
-      slideShow(); 
-    });
+  $('#selector-interna-personagem a').on('click', function (ev) {
+    ev.preventDefault();
+    var i = /\d/.exec($(this).attr('rel'));
+    $('#carrossel-interna-personagem').responsiveCarousel('goToSlide', i);
+    if(!$(this).hasClass('current') && playing != null){
+      //playing.pauseVideo();
+      setTimeout(function(){playing.pauseVideo()}, 500);
+    } 
+    stop();
+    slideShow(); 
+  });
+
+
+  $(window).on('load', function (ev) {
+    $('.slider-target li').css('width', $('.slider-mask').width());    
+    $('#carrossel-interna-personagem').responsiveCarousel('redraw');
+    $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow'); //acessibilidade aria-hidden
+    slideShow();
+  });
   
-  
-    $(window).on('load', function (ev) {
-      $('.slider-target li').css('width', $('.slider-mask').width());    
-      $('#carrossel-interna-personagem').responsiveCarousel('redraw');
-      $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow'); //acessibilidade aria-hidden
-      slideShow();
-    });
-    
-    $(window).on('resize', function (ev) {
-      $('.slider-target li').css('width', $('.slider-mask').width());
-      $('#carrossel-interna-personagem').responsiveCarousel('redraw');
-    });  
-    //Acessibilidade ler a descrição
-    $('.descritivo').each(function(index) {
-      $(this).attr('tabindex', 0);
-    });
-    
-    slideShow = function(ev){
-      //ev.preventDefault();
-      $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
-    };
-    
-    stop = function(ev){
-      //ev.preventDefault();
-      $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow');
-    };
-  
-  
+  $(window).on('resize', function (ev) {
+    $('.slider-target li').css('width', $('.slider-mask').width());
+    $('#carrossel-interna-personagem').responsiveCarousel('redraw');
   });  
+  //Acessibilidade ler a descrição
+  $('.descritivo').each(function(index) {
+    $(this).attr('tabindex', 0);
+  });
   
+  slideShow = function(ev){
+    //ev.preventDefault();
+    $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow');
+  };
   
-  </script>
-  <?php echo $noscript; ?>
+  stop = function(ev){
+    //ev.preventDefault();
+    $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow');
+  };
+
+
+});  
+
+
+</script>
+<?php echo $noscript; ?>
   
  
       
 
     
-    <!--Acessibilidade não ler itens de "brincadeiras" 2x-->
-  <script>
-  $('.pull-right p').each(function(index) {
-    $(this).attr('tabindex', -1).attr("aria-hidden","true");
-  });
-  </script>
-  <?php echo $noscript; ?>
+<!--Acessibilidade não ler itens de "brincadeiras" 2x-->
+<script>
+$('.pull-right p').each(function(index) {
+  $(this).attr('tabindex', -1).attr("aria-hidden","true");
+});
+</script>
+<?php echo $noscript; ?>
     
-    <!--Acessibilidade não ler título do artigo 2x-->
+ <!--Acessibilidade não ler título do artigo 2x-->
 <script>
 $('.artigo h2').each(function(index) {
   $(this).attr('tabindex', -1).attr("aria-hidden","true");

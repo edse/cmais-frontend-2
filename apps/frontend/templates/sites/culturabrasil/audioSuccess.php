@@ -25,12 +25,12 @@
             <div id="esquerda" class="grid2">
 
               <!-- NOTICIA INTERNA -->
-              <div class="box-interna grid2">
+              <div class="box-interna content-asset">
                 <h3><?php echo $asset->getTitle() ?></h3>
                 
                 <div class="assinatura grid2">
-                  <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
-                  <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
+                  <!--p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
+                  <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p-->
                   <!--
                   <div class="acessibilidade">
                     <a href="#" class="zoom">+A</a>
@@ -38,7 +38,7 @@
                   </div>
                   -->
 
-                  <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
+                  <?php include_partial_from_folder('sites/culturabrasil', 'global/signature', array('uri'=>$uri,'asset'=>$asset)) ?>
 
                 </div>
                 
@@ -63,8 +63,7 @@
 				          </div>
 				          <!-- /comentario facebook -->
                 
-                <?//php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
-
+                
               </div>
               <!-- /NOTICIA INTERNA -->
               
