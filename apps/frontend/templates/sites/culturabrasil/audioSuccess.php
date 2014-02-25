@@ -25,7 +25,7 @@
             <div id="esquerda" class="grid2">
 
               <!-- NOTICIA INTERNA -->
-              <div class="box-interna grid2">
+              <div class="box-interna content-asset">
                 <h3><?php echo $asset->getTitle() ?></h3>
                 
                 <div class="assinatura grid2">
@@ -57,7 +57,7 @@
                 
                 <?php include_partial_from_folder('blocks', 'global/visite-cmais',array('uri'=>$uri)) ?>
 				         <!-- comentario facebook -->
-				          <div class="content-asset container face">
+				          <div class="container face">
 				            <fb:comments href="<?php echo $uri?>" numposts="3" width="610" publish_feed="true"></fb:comments>
 				            <hr />
 				          </div>
