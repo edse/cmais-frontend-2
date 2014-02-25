@@ -65,6 +65,7 @@
     timerRunning = true;
   }
 </script>
+<?php /*
 <script>
   function loadScroll(){
     var page = 2;
@@ -111,7 +112,7 @@
   #infinite_scroll p{margin-bottom:20px;width:600px;}
   .loading{text-align:right;margin-top:-100px;}
 </style>
-
+*/?>
 <div id="bodyWrapper">
 
   <div class="conteudoWrapper" align="center">
@@ -127,6 +128,7 @@
           <div class="topo-esq"></div>
           <div class="topo">
             <a href="" class="enunciado">Jogos</a>
+            <?php /*
             <form action="" method="post" name="filter" id="filter">
               <input type="hidden" name="section_id" id="section_id" value="" />
               <select name="site_id" id="site_id" onchange="$('#filter').submit();">
@@ -136,16 +138,17 @@
                 <?php endforeach; ?>
               </select>
             </form>
+            */ ?>
           </div>
           <hr />
           <div class="categorias">
             <ul>
               <li><a href="/jogos"><span class="pontaBarra"></span><span class="miolo">Todos</span><span class="caudaBarra"></span></a></li>
-              <li><a href="javascript: setSection('28');"><span class="pontaBarra"></span><span class="miolo">Aventura</span><span class="caudaBarra"></span></a></li>
-              <li><a href="javascript: setSection('27');"><span class="pontaBarra"></span><span class="miolo">Desafio</span><span class="caudaBarra"></span></a></li>
-              <li><a href="javascript: setSection('26');"><span class="pontaBarra"></span><span class="miolo">Esportes</span><span class="caudaBarra"></span></a></li>
-              <li><a href="javascript: setSection('29');"><span class="pontaBarra"></span><span class="miolo">Educativos</span><span class="caudaBarra"></span></a></li>
-              <li><a href="javascript: setSection('25');"><span class="pontaBarra"></span><span class="miolo">Habilidade</span><span class="caudaBarra"></span></a></li>
+              <li><a href="/jogos/aventura"><span class="pontaBarra"></span><span class="miolo">Aventura</span><span class="caudaBarra"></span></a></li>
+              <li><a href="/jogos/desafio"><span class="pontaBarra"></span><span class="miolo">Desafio</span><span class="caudaBarra"></span></a></li>
+              <li><a href="/jogos/esportes"><span class="pontaBarra"></span><span class="miolo">Esportes</span><span class="caudaBarra"></span></a></li>
+              <li><a href="/jogos/educativos"><span class="pontaBarra"></span><span class="miolo">Educativos</span><span class="caudaBarra"></span></a></li>
+              <li><a href="/jogos/habilidade"><span class="pontaBarra"></span><span class="miolo">Habilidade</span><span class="caudaBarra"></span></a></li>
             </ul>
             <hr />
           </div>
@@ -161,7 +164,7 @@
               <?php foreach($pager->getResults() as $d): ?>
                 <li><a href="<?php echo $d->retriveUrl()?>" class="aImg" title="<?php echo $d->getDescription()?>">
                 <img alt="<?php echo $d->getTitle()?>" src="<?php echo $d->retriveImageUrlByImageUsage("image-3-b")?>"></a>
-                <a href="/<?php echo $d->getSlug()?>" class="aTxt" title="<?php echo $d->Site->getTitle()?>"><span class="nomeRlacionado"><?php echo $a->getTitle()?></span>
+                <a href="/<?php echo $d->getSlug()?>" class="aTxt" title="<?php echo $d->Site->getTitle()?>"><span class="nomeRlacionado"><?php echo $d->getTitle()?></span>
                 </a></li>
               <?php endforeach; ?>
               </ul>

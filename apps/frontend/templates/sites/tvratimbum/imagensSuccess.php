@@ -59,6 +59,7 @@
     timerRunning = true;
   }
 </script>
+<?php /*
 <script>
   function loadScroll(){
     var page = 2;
@@ -104,7 +105,7 @@
   #infinite_scroll p{margin-bottom:20px;width:600px;}
   .loading{text-align:right;margin-top:-100px;}
 </style>
-
+*/ ?>
 <div id="bodyWrapper">
 
   <div class="conteudoWrapper" align="center">
@@ -137,7 +138,33 @@
           </div>
           */ ?>
 
-          <div class="lista-programas" id="infinite_scroll" style="width:632px"></div>
+          <div class="lista-programas" id="infinite_scroll" style="width:632px">
+            <?php if(count($pager) > 0): ?>
+              <?php foreach($pager->getResults() as $d): ?>
+                <li><a href="<?php echo $d->retriveUrl()?>" class="aImg" title="<?php echo $d->getDescription()?>">
+                <img alt="<?php echo $d->getTitle()?>" src="<?php echo $d->retriveImageUrlByImageUsage("image-3-b")?>"></a>
+                <a href="/<?php echo $d->getSlug()?>" class="aTxt" title="<?php echo $d->Site->getTitle()?>"><span class="nomeRlacionado"><?php echo $d->getTitle()?></span>
+                </a></li>
+              <?php endforeach; ?>
+              </ul>
+            <?php endif; ?>
+          </div>
+
+          <?php if(isset($pager)): ?>
+            <?php if($pager->haveToPaginate()): ?>
+            <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
+            <div class="paginacao">
+              <ul>
+                <li><a href="javascript: goToPage(1);" class="primeira"><span>&lt;&lt;</span>primeira</a></li>
+                <li><a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="anterior">anterior</a></li>
+                <li><span class="nPaginas">3 de 10</span></li>
+                <li><a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="proximo">próximo</a></li>
+                <li><a href="javascript: goToPage(<?php echo $pager->getLastPage() ?>);" class="ultima">última<span>&gt;&gt;</span></a></li>
+              </ul> 
+            </div>
+            <!-- PAGINACAO -->
+            <?php endif; ?>
+          <?php endif; ?>
           <hr />
           <span class="picote"></span>
         </div>

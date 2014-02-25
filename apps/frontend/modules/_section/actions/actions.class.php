@@ -462,7 +462,7 @@ class _sectionActions extends sfActions
           }
           else if(($this->section->slug == "videos")||($this->section->slug == "dica-de-hoje")){
             if(($request->getParameter('site_id') <= 0)&&($request->getParameter('busca') == '')){
-              if($this->site->getSlug() == "penarua"){
+              if($this->site->getSlug() == "penarua" || $this->site->getSlug() == "tvratimbum"){
                 $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, SectionAsset sa')
@@ -472,14 +472,17 @@ class _sectionActions extends sfActions
                 ->orderBy('sa.display_order')
                 ->limit(20);
               }else{
+                if($request->getParameter('debug') != "")
+                  print "<br>>>>OK? ".$this->section->getId();
+
                 $this->assetsQuery = Doctrine_Query::create()
                   ->select('a.*')
                   ->from('Asset a, AssetVideo av');
-                if($this->site->getId() == 3)
+                if($this->site->getId() > 0)
                   $this->assetsQuery->where('a.site_id = ?', $this->site->getId())->andWhere('av.asset_id = a.id');
                 else
-                  $this->assetsQuery->where('av.asset_id = a.id');
-                $this->assetsQuery->andWhere("av.youtube_id != ''")
+                  $this->assetsQuery->andWhere('av.asset_id = a.id')
+                  ->andWhere("av.youtube_id != ''")
                   ->andWhere('a.is_active = 1')
                   ->andWhereIn('a.asset_type_id', array(6, 7))
                   ->groupBy('a.id')
@@ -1757,6 +1760,8 @@ class _sectionActions extends sfActions
     if($this->site->Program->Channel->getSlug() == "tvratimbum") {
         if($this->section->getSlug() == "homepage")
           $pagelimit = 1;
+        else
+          $pagelimit = 60;
     }
     if($this->site->getSlug() == "educacaoemdia")
       $pagelimit = 3;
@@ -1878,7 +1883,7 @@ class _sectionActions extends sfActions
     }
 
     if(isset($this->category) && ($this->section->Parent->id > 0)){
-    	
+      
       if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug.'Success.php')){
         if($debug) print "<br1>>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug;
         $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$sectionSlug);
@@ -1895,7 +1900,7 @@ class _sectionActions extends sfActions
             if($debug) print "<br>2-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsectionColunista';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsectionColunista');
           }
-					else if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug().'Success.php')){
+          else if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug().'Success.php')){
             if($debug) print "<br>2-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug().'Success.php';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug());
           }
@@ -1922,7 +1927,7 @@ class _sectionActions extends sfActions
     }
     elseif($this->section->Parent->id > 0){
       if($this->site->getType() == "Hotsite" || $this->site->getType() == 1 || $this->site->getSlug() == "quintaldacultura"){
-      	$parentSection = $this->section->getParent();
+        $parentSection = $this->section->getParent();
         if(in_array($this->site->getSlug(), array("vilasesamo"))) {
           $this->setLayout("vilasesamo");
           if($parentSection->getSlug() == "personagens") {
@@ -1944,7 +1949,7 @@ class _sectionActions extends sfActions
             }
           }
         }
-				else if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug().'Success.php')){
+        else if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug().'Success.php')){
           if($debug) print "<br>4-0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug().'Success.php';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug());
         }
