@@ -332,7 +332,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             $('#selector-interna-personagem li a').removeClass('current');
             $current.addClass('current');
         },
-        slideSpeed: 8000
+        slideSpeed: 5000
     });
 
     $('#selector-interna-personagem a').on('click', function (ev) {
