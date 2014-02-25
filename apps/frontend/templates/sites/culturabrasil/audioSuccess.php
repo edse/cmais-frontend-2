@@ -52,16 +52,6 @@
                     <!--Player-->
 										<link href="http://cmais.com.br/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
 					          
-					            <?php
-					              $playlist = $asset->retriveRelatedAssetsByAssetTypeId(5);
-					              if(count($playlist) > 0) {
-					                $related_audios = $playlist[0]->retriveRelatedAssetsByAssetTypeId(4);
-					              }
-					              else {
-					                $related_audios = $asset->retriveRelatedAssetsByAssetTypeId(4);
-					              }
-					            ?>
-					            <?php if(count($related_audios) > 0): ?>
 					          <script type="text/javascript" src="http://cmais.com.br/portal/js/audioplayer/js/jquery.jplayer.min.js"></script>
 					          <script type="text/javascript">
 					            //<![CDATA[
@@ -198,21 +188,11 @@
 					            ?>
 					            var audioPlaylist = new Playlist("1",
 					            [
-					              <?php 
-					              $cont = 0;
-					              foreach($related_audios as $k=>$d):
-													
-					              ?>
 					              {
-					                name:"<?php echo $d->getTitle(); ?>",
-					                mp3:"http://midia.cmais.com.br/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile(); ?>"
-					              }<?php if($k < (count($related_audios) - 1)): ?>,<?php endif;?>
+					                name:"<?php echo $asset->getTitle(); ?>",
+					                mp3:"http://midia.cmais.com.br/assets/audio/default/<?php echo $asset->AssetAudio->getOriginalFile(); ?>"
+					              },
 					              
-					              <?php
-					              $cont++;
-					              endforeach;
-												
-					              ?>
 					            ],
 					            {
 					              ready: function()
@@ -277,21 +257,7 @@
 					              </div>
 					            </div>
 					            
-					          <?php endif; ?>
-  
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                  <?php else: ?>
-                    <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+                    <?php //echo html_entity_decode($asset->AssetContent->render()) ?>
                   <?php endif; ?>
                   </div>
                   <p><?php echo nl2br($asset->getDescription()) ?> </p>  
