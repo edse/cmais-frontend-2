@@ -117,6 +117,11 @@ a{text-decoration:underline!important;}
 .personagens #content #carrossel-interna-personagem {float:none; margin:0 auto;}
 .personagens #content #carrossel-interna-personagem .container-itens {top: 560px;}
 .personagens #content .desc-personagem .descritivo article{padding: 0 23px!important;}
+.personagens #content .dest-pers .span4.pull-left{display:none;}
+.personagens #content .dest-pers .span8{width: 100%;margin: 0!important;padding: 5%;}
+.personagens .dest-pers a p{width:63%!important;}
+.personagens #content #page_nav{margin:0!important;}
+.personagens #content #page_nav .container-ajax-loader{left: 5%;}
   
 /* interna assets(jogos, atividades, videos) */
 .interna.jogos #content,
