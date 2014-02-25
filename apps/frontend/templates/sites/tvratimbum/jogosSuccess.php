@@ -1,4 +1,3 @@
-
 <?php
   if(!isset($section_id)) $section_id = 12;
   if(!isset($site_id) || $site_id == "all") $site_id = "";
@@ -157,7 +156,17 @@
           </div>
           */ ?>
           
-          <div class="lista-programas" id="infinite_scroll" style="width:632px"></div>
+          <div class="lista-programas" id="infinite_scroll" style="width:632px">
+            <?php if(count($pager) > 0): ?>
+              <?php foreach($pager->getResults() as $d): ?>
+                <li><a href="<?php echo $d->retriveUrl()?>" class="aImg" title="<?php echo $d->getDescription()?>">
+                <img alt="<?php echo $d->getTitle()?>" src="<?php echo $d->retriveImageUrlByImageUsage("image-3-b")?>"></a>
+                <a href="/<?php echo $d->getSlug()?>" class="aTxt" title="<?php echo $d->Site->getTitle()?>"><span class="nomeRlacionado"><?php echo $a->getTitle()?></span>
+                </a></li>
+              <?php endforeach; ?>
+              </ul>
+            <?php endif; ?>
+          </div>
           <hr />
           <span class="picote"></span>
         </div>
