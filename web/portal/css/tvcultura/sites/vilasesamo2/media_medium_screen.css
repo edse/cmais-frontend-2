@@ -109,7 +109,15 @@ a{text-decoration:underline!important;}
 .personagens #content h1 span{margin:5px!important;}
 .personagens #content #container-personagens a {width:100%;height:100%;}
 .personagens #content #container-personagens a p { background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bg-transparente.png)  repeat; color:#d71c0d; font-size: 1.2em;font-family: 'din-blackregular',Arial, Helvetica, sans-serif!important;}
-
+.personagens #content .filtro .span2 {margin: 0!important;width: 100%;} 
+.personagens #content .filtro .inner.personagem .active img {top: -23px!important;}
+.personagens #content .filtro .inner.personagem img {top: -23px!important; opacity:1;-moz-opacity:1;-webkit-opacity:1;-ms-opacity:1;-o-opacity:1}
+.personagens #content .filtro .filtro-personagem {margin: 0 auto;width: 478px;}
+.personagens #content .filtro .filtro-personagem li {width: 50px;height: 50px;margin: 1%;}
+.personagens #content #carrossel-interna-personagem {float:none; margin:0 auto;}
+.personagens #content #carrossel-interna-personagem .container-itens {top: 560px;}
+.personagens #content .desc-personagem .descritivo article{padding: 0 23px!important;}
+  
 /* interna assets(jogos, atividades, videos) */
 .interna.jogos #content,
 .interna.atividades #content,
@@ -222,7 +230,7 @@ footer .copyright {height: 30px;margin-left: 2%;}
 /*personagens*/
 @media screen and (min-width:601px) and (max-width:979px){
   .personagens .filtro .span2 {width: 98%;}
-  .personagens #content .filtro .filtro-personagem {margin-left: 3%;}
+  .personagens #content .filtro .filtro-personagem {margin-left: 0 auto;}
   .personagens .filtro .filtro-personagem li {width: 10%;height: 58px;margin: 1%;}
   .personagens .filtro .inner {width: 100%;height: auto;}
   .personagens .desc-personagem {float: right;}
@@ -246,4 +254,22 @@ footer .copyright {height: 30px;margin-left: 2%;}
 .campanhas #content .btn-group {width: 100%;margin: 10% 0!important;right: 0;}
 .campanhas #content .container-campanhas {margin-top: 40px;}
 
+/*coleção incluir*/
+
+@media screen and (min-width:860px) and (max-width:979px) {
+  .interna.campanhas .container-campanhas{margin: 2%;}
+  .container-campanhas .texto{width:60%!important;float:left;}
+  .container-campanhas .asset{margin-top: 0!important;float: left!important;}
+  .campanhas #content .container-campanhas .asset iframe{width: 100%}
+  .btns-download {float: left;width: 100%;}
+
+}
+@media screen and (min-width:501px) and (max-width:859px) {
+  .interna.campanhas .container-campanhas{margin: 2%;}
+  .container-campanhas .texto{width:100%!important;float:left;}
+  .container-campanhas .asset{float: left!important;}
+  .campanhas #content .container-campanhas .asset iframe{width: 100%}
+  .btns-download {float: left;width: 100%;}
+
+}
 
