@@ -55,13 +55,7 @@
                   <p><?php echo nl2br($asset->getDescription()) ?> </p>  
                 </div>
                 
-                 <?php include_partial_from_folder('blocks', 'global/visite-cmais',array('uri'=>$uri)) ?>
-				         <!-- comentario facebook -->
-				          <div class="container face">
-				            <fb:comments href="<?php echo $uri?>" numposts="3" width="610" publish_feed="true"></fb:comments>
-				            <hr />
-				          </div>
-				          <!-- /comentario facebook -->
+                <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
 
               </div>
               <!-- /NOTICIA INTERNA -->
