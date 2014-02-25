@@ -38,7 +38,7 @@ body {
 }
 
 :-webkit-full-screen {
-  background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/left.png) no-repeat bottom left fixed, url(portal/images/capaPrograma/cocorico/memoria//right.png) no-repeat bottom right fixed, -webkit-linear-gradient(0, rgba(200,0,0,.5) 50%, transparent 50%), -webkit-linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%),  #F26522;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/left.png) no-repeat bottom left fixed, url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria//right.png) no-repeat bottom right fixed, -webkit-linear-gradient(0, rgba(200,0,0,.5) 50%, transparent 50%), -webkit-linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%),  #F26522;
   background-size: auto auto, auto auto, 50px 50px, 50px 50px, auto auto;
 }
 
@@ -283,7 +283,7 @@ body {
 }
 
 #gameComplete {
-  background: url(portal/images/capaPrograma/cocorico/memoria/end.jpg) center 0 no-repeat;
+  background: url(http://cmais.com.br/portal/images/capaPrograma/cocorico/memoria/end.jpg) center 0 no-repeat;
   text-align: center;
   position: absolute;
   top: 0;
