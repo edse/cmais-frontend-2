@@ -8,54 +8,6 @@
 <script src="http://cmais.com.br/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
 <script src="http://cmais.com.br/portal/tvratimbum/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
 <script src="http://cmais.com.br/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-      //carrossel
-      $(function(){
-        $('.carrossel').jcarousel({ 
-        wrap: "both"      
-        });
-       
-        // Datepicker
-
-        $('#datepicker').datepicker({
-          inline: true
-        });   
-        //hover states on the static widgets
-        $('#dialog_link, ul#icons li').hover(
-          function() { $(this).addClass('ui-state-hover'); }, 
-          function() { $(this).removeClass('ui-state-hover'); }
-        );
-      
-
-        $('a[id*="tab-"]').hover(function(){
-          $(this + ':first-chid.ponta').css("display","block");
-        });
-      
-        $('a[id*="tab-"]').click(function(){
-            //tornando o botao ativo
-            $('span').removeClass('ativo');
-            $('span').addClass('desativado');
-            $('a[id*="tab-"]').removeClass('ativo');
-            
-            $(this).addClass('ativo');
-            $(this).children('span').addClass('ativo');
-            $(this).children('span').removeClass('desativado');
-            //$('.'+ $(this).attr("name")).addClass('ativo');
-            
-            //faz sumir e aparecer conteudos
-            $('div[id*="cont-"]').hide();
-            
-            var conteudo = "#cont-" + $(this).attr("name");
-            $(conteudo).fadeIn('fast');
-            
-       });
-       
-       $('dt a').click(function(){
-          $(this).parent().next().toggle();
-       });
-     
-     });
-</script>
 <!--body Wrapper-->
 <div id="bodyWrapper" >
  

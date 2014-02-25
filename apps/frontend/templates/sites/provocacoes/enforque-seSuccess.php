@@ -1,37 +1,10 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/contato.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
-
 <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
 <script src="http://cmais.com.br/portal/js/jquery-ui-i18n.min.js" type="text/javascript"></script>
 <link type="text/css" href="http://cmais.com.br/portal/js/jquery-ui/css/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
-
-<?php /*
-<script type="text/javascript">
-
-  $(function(){ //onready
-    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
-    // Datepicker
-    $('#datepicker').datepicker({
-      beforeShowDay: dateLoading,
-      onSelect: redirect,
-      dateFormat: 'yy/mm/dd',
-      altFormat: 'yy-mm-dd',
-      <?php if(isset($date)): ?>defaultDate: new Date("<?php echo str_replace("-","/",$date) ?>"),<?php endif; ?>
-      inline: true
-    });
-    //hover states on the static widgets
-    $('#dialog_link, ul#icons li').hover(function() {
-       $(this).addClass('ui-state-hover'); 
-     },
-      function() { $(this).removeClass('ui-state-hover'); }
-    );
-  });
-</script>
- */ ?>
-<?php use_helper('I18N', 'Date')
-?>
-<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))
-?>
+<?php use_helper('I18N', 'Date')?>
+<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section))?>
 
 <div class="bg-provocacoes">
   <!-- CAPA SITE -->
@@ -244,7 +217,6 @@
                   </script>
                 </div>
                 <!--p class="btn-veja"><span>Arquivo</span></p-->
-                <div id="datepicker"></div>
               </div>
               <!-- /direita -->
             </div>
