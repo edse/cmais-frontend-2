@@ -29,8 +29,8 @@
                 <h3><?php echo $asset->getTitle() ?></h3>
                 
                 <div class="assinatura grid2">
-                  <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
-                  <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
+                  <!--p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
+                  <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p-->
                   <!--
                   <div class="acessibilidade">
                     <a href="#" class="zoom">+A</a>
