@@ -12,7 +12,7 @@
  .toggle{width:100%;}
  .lista-calendario .barra-grade .botao {position: relative; margin: 0; right: 5px; top: -22px;}
  .search-map{margin: 20px -3px 5px 20px;border: none;padding: 5px 15px;width: 400px;float: left;}
- #search{border: none;display:block;width: 70px;height: 30px;float: left;margin-top: 20px;background:#4a8cf6 url(/portal/images/lupa-azul-branca.jpg) no-repeat center center;float: left;}
+ #search{border: none;display:block;width: 70px;height: 30px;float: left;margin-top: 20px;background:#4a8cf6 url(http://cmais.com.br/portal/images/lupa-azul-branca.jpg) no-repeat center center;float: left;}
 #map-canvas{top: -40px; z-index: 0;}
 #map-canvas, #map_canvas {height: 500px;}
 @media print {

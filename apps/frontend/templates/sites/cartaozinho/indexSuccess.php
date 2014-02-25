@@ -34,8 +34,8 @@ $assets = Doctrine_Query::create()
               <style>
                 .menu-gabi{width:559px; float:right;}
                 .horario-gabi{margin-top:12px!important; margin-right:6px;}
-                .juiza-nova{display:block;width:312px; height:486px; position:absolute; top:71px; left: 0; background:url(/portal/images/capaPrograma/cartaozinho/gabi-estreia.png) no-repeat;}
-                .texto-novo{display:block; width:314px; height:66px; position:absolute; top:68px; left:277px; background:url(/portal/images/capaPrograma/cartaozinho/gabi-dona-da-bola.png) no-repeat;}
+                .juiza-nova{display:block;width:312px; height:486px; position:absolute; top:71px; left: 0; background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/gabi-estreia.png) no-repeat;}
+                .texto-novo{display:block; width:314px; height:66px; position:absolute; top:68px; left:277px; background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/gabi-dona-da-bola.png) no-repeat;}
               </style>
               
               <?php
