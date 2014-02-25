@@ -342,9 +342,15 @@ body.personagens { background:#b60401; }
 .personagens .filtro .divisa.carregar{background-color: #ee3021;clear:both;height: 20px;margin: 0;} 
 .personagens .dest-pers{margin:0px;background-color: #d71c0d;}
 .personagens .dest-pers .span8{margin: 20px 10px 15px 0px!important;}
-.personagens .jogos .dest-pers a{padding:0; border-top:2px solid #0191fb; border-bottom:2px solid #0191fb;}
-.personagens .videos .dest-pers a{padding:0; border-top:2px solid #f27300; border-bottom:2px solid #f27300;}
-.personagens .atividades .dest-pers a{padding:0; border-top:2px solid #571ed9; border-bottom:2px solid #571ed9;}
+.personagens .jogos{border-top:7px solid #02cbff;border-radius:5px;border-bottom:7px solid #02cbff;border-radius:5px;}
+.personagens .atividades{border-top:7px solid #b16af2;border-radius:5px;border-bottom:7px solid #b16af2;border-radius:5px;}
+.personagens .videos{border-top:7px solid #fba500;border-radius:5px;border-bottom:7px solid #fba500;border-radius:5px;}
+.personagens .jogos a{padding:0; border-top:2px solid #0191fb; border-bottom:2px solid #0191fb;}
+.personagens .videos a{padding:0; border-top:2px solid #f27300; border-bottom:2px solid #f27300;}
+.personagens .atividades a{padding:0; border-top:2px solid #571ed9; border-bottom:2px solid #571ed9;}
+.personagens .jogos a img{border-bottom:2px solid #0191fb;}
+.personagens .videos a img{ border-bottom:2px solid #f27300;}
+.personagens .atividades a img{ border-bottom:2px solid #571ed9;}
 .personagens .dest-pers a p{font-size:17px;font-family: 'dinmedium', Arial, Helvetica, sans-serif;line-height: 42px;overflow: hidden;width: 143px;text-overflow: ellipsis;white-space: nowrap; margin:0;}
 .personagens .dest-pers .img-destaque { position:relative; width:100%; display: block;}
 .personagens .dest-pers .span4.pull-left{min-height:275px;}
