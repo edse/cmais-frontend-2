@@ -1,61 +1,48 @@
-<!-- <?php
-$assetQuemSomos = html_entity_decode($displays["destaque-principal"][0]->Asset->AssetContent->getContent());
-?>
 <?php include_partial_from_folder('blocks', 'global/topo-fpa', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>
 <style>
-body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important;}
+body{background: url(http://cmais.com.br/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important;}
 </style>
 <!--CONTAINER-->
-<div class="container quem-somos">
+<div class="container licitacoes">
   <!--colunas-->
   <div class="row-fluid">
     <!--ESQUERDA-->
     <div class="col-esquerda span7">
-      <!--texto quemsomos-->
+      <!--texto licitacoes-->
       <h1><?php echo $section->getTitle(); ?></h1>
-      <?php echo $assetQuemSomos;?>
-      
-      <a href="http://www2.tvcultura.com.br/fpa/institucional/estatuto-fpa.pdf" class="btn btn-primary" title="Conheça o Estatuto da FPA" target="_blank">
-        <i class="icon-align-left icon-white"></i>
-        CONHEÇA O ESTATUTO DA FPA
-      </a> 
-      <div class="help-block"><span>Para fazer a leitura do material anexado é necessário possuir o programa Acrobat Reader.</span></div>
-      <a href="http://get.adobe.com/br/reader/" class="acrobat" target="_blank" title="Faça download e Instale o Adobe Acrobat Reader">Faça download e Instale o Adobe Acrobat Reader</a>
-      <!--/texto quemsomos-->
-      
+      <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p>
+      <!--/texto licitacoes-->
+      <!-- links subsecoes -->
+      <div class="span12" style="margin:0">
+        <ul>
+          <?php foreach($section->subsections() as $s): ?>
+            <?php if(count($s->getAssets())>0):?>
+              <li>
+                <a href="<?php if(count($s->getAssets())<=0){echo "#";}else{echo $s->retriveUrl();} ?>" class="btn-cat" title="<?php echo count($s->getAssets())?><?php if(count($s->getAssets())>1){echo " itens";}else{ echo " item";} ?>">
+                  <i class="icon-chevron-right"></i>
+                  <?php echo $s->getTitle() ?>
+                  <!--<span class="badge vaga pull-right"><?php echo count($s->getAssets())?></span>-->  
+                </a>
+              </li>
+            <?php endif;?>
+          <?php endforeach ?> 
+        </ul>  
+      </div>
+      <!-- /links subsecoes -->
     </div>
     <!-- /ESQUERDA-->
     
     <!--DIREITA-->
     <div class="col-direita span4">
       
-      <!--CENTRAL DE RELACIONAMENTO-->  
-      <a href="http://www2.tvcultura.com.br/faleconosco/" class="inscricao btn btn-primary btn-success" title="Central de Relacionamento." style="margin-bottom:20px;">
-        <p>FALE CONOSCO</p>
-        <hr>
-        <p>Central de Relacionamento</p>
-        <p>Entre em contato conosco.</p>
-      </a>
-      <!--/CENTRAL DE RELACIONAMENTO-->
-      
       <!--CONFIRA VAGAS-->  
-      <a href="/fpa/trabalhe-conosco" class="inscricao btn btn-primary" title="Confira aqui nossas vagas e prazos.">
-        <p>INSCREVA-SE</p>
+      <a href="http://www2.tvcultura.com.br/licitacoes/regulamento_compras_contratos.pdf" class="inscricao btn btn-primary" title="Regulamento de compras e contratos." target="_blank">
+        <p>REGULAMENTO DE COMPRAS E CONTRATOS</p>
         <hr>
-        <p>Participe do Processo Seletivo</p>
-        <p>Confira aqui nossas vagas e prazos.</p>
+        <p>Confira as Condições</p>
+        <p></p>
       </a>
       <!--/CONFIRA VAGAS-->
-      
-      <!--CONHEÇA O SIC-->  
-      <a href="http://fpa.com.br/sic/" class="conheca btn btn-sic" title="Conheça o SiC">
-        
-        <p>Conheça o SiC</p>
-        <p>O Serviço de Informações ao Cidadão da Fundação Padre Anchieta</p>
-        <i class="icone-sic"></i>
-        <!--div class="row"></div-->
-      </a>
-      <!--/CONHEÇA O SIC-->
     </div>
     <!-- /DIREITA-->
   </div>
