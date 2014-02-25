@@ -1,7 +1,8 @@
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
 <?php use_helper('I18N', 'Date') ?>
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <?php
 $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
 ?> 
@@ -123,12 +124,17 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 }
                 $preview = $d->Asset->retriveRelatedAssetsByRelationType('Preview')
               ?>
-              <div class="span4 <?php echo $assetSection->getSlug() ?>">
+              <div class="span4 <?php echo $assetSection->getSlug() ?> <?php if($assetSection->getSlug() != "videos"){echo "square";}else{echo "rect";}?> ">
                 <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="">
                   <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
-                  <div class="yt-menu">  
+                    <?php
+                    /*
+                    <div class="yt-menu">  
+                      <img class="destaque" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt=""/>
+                    </div>
+                     */
+                    ?>
                     <img class="destaque" src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt=""/>
-                  </div>
                   <?php else: ?>
                     <img class="destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt=""/>
                   <?php endif; ?>
@@ -326,7 +332,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             $('#selector-interna-personagem li a').removeClass('current');
             $current.addClass('current');
         },
-        slideSpeed: 8000
+        slideSpeed: 5000
     });
 
     $('#selector-interna-personagem a').on('click', function (ev) {
@@ -343,14 +349,16 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   
   
     $(window).on('load', function (ev) {
-      
-      //ev.preventDefault();
+      $('.slider-target li').css('width', $('.slider-mask').width());    
       $('#carrossel-interna-personagem').responsiveCarousel('redraw');
       $('#carrossel-interna-personagem').responsiveCarousel('toggleSlideShow'); //acessibilidade aria-hidden
-      //slideShow();
+      slideShow();
     });
     
-    
+    $(window).on('resize', function (ev) {
+      $('.slider-target li').css('width', $('.slider-mask').width());
+      $('#carrossel-interna-personagem').responsiveCarousel('redraw');
+    });  
     //Acessibilidade ler a descrição
     $('.descritivo').each(function(index) {
       $(this).attr('tabindex', 0);
@@ -394,3 +402,4 @@ $('.artigo h2').each(function(index) {
 <?php echo $noscript; ?>
     
 </div>
+
