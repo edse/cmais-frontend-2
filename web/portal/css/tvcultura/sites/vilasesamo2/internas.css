@@ -152,7 +152,7 @@ body.campanhas{background-color:#fee133!important;}
 /* todos itens*/
 
 .todos-itens { margin-top:20px; overflow:hidden; }
-.todos-itens a div{white-space:nowrap; text-overflow: ellipsis; overflow: hidden; padding:0 10px;max-height:302px;}
+.todos-itens a div{white-space:nowrap; text-overflow: ellipsis; overflow: hidden; padding:0 10px;max-height:302px; line-height: 42px;}
 .todos-itens a div.container-image{padding:0!important; overflow: hidden;}
 .todos-itens a {font-family: 'dinmedium';color: #FFF;font-size: 18px;text-transform: uppercase;margin: 0;line-height: 20px;vertical-align: middle;/*height: 42px;*/} 
 .todos-itens a:hover{color:#FFF;}
@@ -348,9 +348,9 @@ body.personagens { background:#b60401; }
 .personagens .jogos a{padding:0; border-top:2px solid #0191fb; border-bottom:2px solid #0191fb;}
 .personagens .videos a{padding:0; border-top:2px solid #f27300; border-bottom:2px solid #f27300;}
 .personagens .atividades a{padding:0; border-top:2px solid #571ed9; border-bottom:2px solid #571ed9;}
-.personagens .jogos a img{border-bottom:2px solid #0191fb;}
-.personagens .videos a img{ border-bottom:2px solid #f27300;}
-.personagens .atividades a img{ border-bottom:2px solid #571ed9;}
+.personagens .jogos a .container-image{border-bottom:2px solid #0191fb;}
+.personagens .videos a .container-image{ border-bottom:2px solid #f27300;}
+.personagens .atividades a .container-image{ border-bottom:2px solid #571ed9;}
 .personagens .dest-pers a p{font-size:17px;font-family: 'dinmedium', Arial, Helvetica, sans-serif;line-height: 42px;overflow: hidden;width: 143px;text-overflow: ellipsis;white-space: nowrap; margin:0;}
 .personagens .dest-pers .img-destaque { position:relative; width:100%; display: block;}
 .personagens .dest-pers .span4.pull-left{min-height:275px;}

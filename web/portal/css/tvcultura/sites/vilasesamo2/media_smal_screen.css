@@ -158,9 +158,13 @@ a{text-decoration:underline!important;}
 .personagens #content .filtro .descritivo {padding: 20px;width: 90%;float: left;}
 .personagens #carrossel-interna-personagem .container-itens {width:100%;top: 33%;}
 .personagens #content.dest-pers .span4.pull-left{width: 100%;padding: 0;min-height: 0}
-.personagens .dest-pers img {width: 50%;padding: 0;}
+.personagens .dest-pers img {width: 100%;padding: 0;border:none;}
 .personagens .dest-pers {margin:0;padding:0;}
 .personagens #carrossel-interna-personagem .slider .videoorimage {max-width: 245px!important;padding: 20px;margin: 0 auto;float: none;}
+.personagens #content .span8 {width: 100%;padding: 0;margin: 10px auto!important;}
+.personagens #content .span8 .span4{width: 90%;margin: 5%;}
+.personagens a .container-image{height:150px;overflow: hidden;}
+.personagens #page_nav{margin:0!important; padding:11px!important;}
   
 /* assets internas (jogos, atividades, videos) */
 .interna.jogos #content,
@@ -255,6 +259,7 @@ a{text-decoration:underline!important;}
 .box-pais .artigo{width:95%!important;min-height: 0!important;}
 .box-pais .parceiros{width:95%!important;height:auto!important;}
 .box-pais .artigo p {height:auto!important;}
+.box-pais a{color:#000!important;}
 .pais .fechar-toogle.ativo {width:100%!important}
 .box-pais.span12 {margin-left: 0;}
 
