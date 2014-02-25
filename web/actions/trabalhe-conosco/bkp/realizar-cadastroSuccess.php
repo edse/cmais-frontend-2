@@ -4,7 +4,7 @@
 <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.6/jquery.validate.js" ></script>
 
 <style>
-body{background: url(/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important;}
+body{background: url(http://cmais.com.br/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important;}
 </style>
 <!--CONTAINER-->
 <div class="container quem-somos">
