@@ -89,19 +89,14 @@ $(document).ready(function() {
 	
 	$('#form-consulta').validate({
     rules: {
-      fpa_cpf: {
-        required: true
-      },
       fpa_pis: {
         required: true,
         minlength: 6
       }
     },
     messages:{
-      fpa_cpf:"Digite um CPF válido!",
       fpa_data:"Digite o número do PIS!"
     },
-    
     highlight: function(label) {
       $(label).closest('.control-group').addClass('error');
       $(label).closest('.control-group').removeClass('success');
@@ -111,7 +106,6 @@ $(document).ready(function() {
       $(label).closest('.control-group').addClass('success');
       //label.addClass('valid').closest('.control-group').addClass('success');
     },
-    
     submitHandler: function(form){
 			Valida_Informe_FPA();
     }
