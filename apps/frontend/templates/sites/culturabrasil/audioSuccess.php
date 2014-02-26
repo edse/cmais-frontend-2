@@ -200,15 +200,7 @@
 					                audioPlaylist.displayPlaylist();
 					                audioPlaylist.playlistInit(false); // Parameter is a boolean for autoplay.
 					              },
-					              ended: function()
-					              {
-					              	
-					              	if(<?php echo $cont ?> <=1){
-					              		audioPlaylist.stop();
-					                }else{
-					                  audioPlaylist.playlistNext(); //vai para a proxima
-					                 }
-					              },
+
 					              play: function()
 					              {
 					                $(this).jPlayer("pauseOthers");
