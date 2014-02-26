@@ -377,7 +377,7 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#999999!import
 
 
 /*alteraçoes player fev2014*/
-div .texto .jp-playlist, div.jp-interface{background: #ECECEC}
+div .texto .jp-playlist, div.jp-interface{background: #ECECEC!important;height:60px;}
 div .texto .jp-audio h2{color: #333333;font-size: 24px;line-height: 40px}
 div .texto .jp-current-time, div.jp-duration {position: absolute;font-size: .64em!important;font-style: oblique;}
 	
