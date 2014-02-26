@@ -109,15 +109,15 @@ $(document).ready(function() {
 	
 	
 	//MÁSCARAS DOS CAMPOS
-	//$("#fpa_cpf").mask("999.999.999-99");
+	$("#fpa_cpf").mask("999.999.999-99");
 	
 	$('#form-consulta').validate({
     rules: {
       fpa_cpf: {
         required: true,
-        minlength: 11,
-        CPF: true,
-        number: true
+        //minlength: 11,
+        //CPF: true,
+        //number: true
       },
       fpa_pis: {
         required: true,
