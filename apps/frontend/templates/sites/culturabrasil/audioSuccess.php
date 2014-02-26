@@ -25,12 +25,12 @@
             <div id="esquerda" class="grid2">
 
               <!-- NOTICIA INTERNA -->
-              <div class="box-interna grid2">
+              <div class="box-interna content-asset">
                 <h3><?php echo $asset->getTitle() ?></h3>
                 
                 <div class="assinatura grid2">
-                  <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
-                  <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
+                  <!--p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
+                  <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p-->
                   <!--
                   <div class="acessibilidade">
                     <a href="#" class="zoom">+A</a>
@@ -38,17 +38,17 @@
                   </div>
                   -->
 
-                  <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
+                  <?php include_partial_from_folder('sites/culturabrasil', 'global/signature', array('uri'=>$uri,'asset'=>$asset)) ?>
 
                 </div>
                 
                 <div class="texto bg-cinza">
-                  <div class="grid1">
+                  <div>
                   <?php if($asset->AssetType->getSlug() == "person"): ?>
                     <?php echo html_entity_decode($asset->AssetPerson->getBio()) ?>
                   <?php elseif($asset->AssetType->getSlug() == "audio"): ?>
                     <?php echo html_entity_decode($asset->AssetAudio->render()) ?>
-                  <?php else: ?>
+       						<?php elseif($asset->AssetType->getSlug() == "content"): ?>
                     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
                   <?php endif; ?>
                   </div>

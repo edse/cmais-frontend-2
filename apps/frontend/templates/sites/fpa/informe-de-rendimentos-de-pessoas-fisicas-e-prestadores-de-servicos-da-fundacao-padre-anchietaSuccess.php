@@ -1,50 +1,40 @@
 <?php include_partial_from_folder('blocks', 'global/topo-fpa', array('siteSections'=>$siteSections, 'site' => $site, 'section' => $section)) ?>
-<style>
-body{background: url(http://cmais.com.br/portal/images/capaPrograma/fpa/bkg-pattern.jpg) !important;}
-</style>
 <!--CONTAINER-->
 <div class="container licitacoes">
   <!--colunas-->
   <div class="row-fluid">
     <!--ESQUERDA-->
-    <div class="col-esquerda span7">
-      <!--texto licitacoes-->
+    <div class="col-esquerda span12">
+    	
       <h1><?php echo $section->getTitle(); ?></h1>
-      <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p>
-      <!--/texto licitacoes-->
-      <!-- links subsecoes -->
-      <div class="span12" style="margin:0">
+			<p>Informe o número do CPF e o número do PIS para fazer o download do Informe de Rendimentos Pessoa Física</p>      
+      
+      <div class="msg_result" style="display: none;"></div>
+      <div class="span6" style="margin:0">
         <ul>
-          <?php foreach($section->subsections() as $s): ?>
-            <?php if(count($s->getAssets())>0):?>
-              <li>
-                <a href="<?php if(count($s->getAssets())<=0){echo "#";}else{echo $s->retriveUrl();} ?>" class="btn-cat" title="<?php echo count($s->getAssets())?><?php if(count($s->getAssets())>1){echo " itens";}else{ echo " item";} ?>">
-                  <i class="icon-chevron-right"></i>
-                  <?php echo $s->getTitle() ?>
-                  <!--<span class="badge vaga pull-right"><?php echo count($s->getAssets())?></span>-->  
-                </a>
-              </li>
-            <?php endif;?>
-          <?php endforeach ?> 
-        </ul>  
+		          <form id="form1" class="realizar-marcador">
+		            <div class="control-group span6" style="margin:0;">
+		              <label class="control-label" for="fpa_cpf">CPF</label>
+		              <div class="controls">
+		                <input type="text" id="fpa_cpf" name="fpa_cpf" value="" maxlength="11">
+		                <p class="help-block">(999.999.999-99)</p>
+		              </div>
+		            </div>
+		            <div class="control-group span6">
+		              <label class="control-label" for="fpa_data">PIS</label>
+		              <div class="controls">
+		                <input type="text" id="fpa_data" name="fpa_data" value="" maxlength="10">
+		                <p class="help-block"> (999.999.999.999)</p>
+		              </div>
+		            </div>
+		            <div class="row-fluid">
+		              <input type="submit" class="btn btn-primary pull-right" id="download-arquivo" value="VERIFICAR">
+		            </div>  
+		        	</form>
+      	</ul> 
       </div>
-      <!-- /links subsecoes -->
     </div>
     <!-- /ESQUERDA-->
-    
-    <!--DIREITA-->
-    <div class="col-direita span4">
-      
-      <!--CONFIRA VAGAS-->  
-      <a href="http://www2.tvcultura.com.br/licitacoes/regulamento_compras_contratos.pdf" class="inscricao btn btn-primary" title="Regulamento de compras e contratos." target="_blank">
-        <p>REGULAMENTO DE COMPRAS E CONTRATOS</p>
-        <hr>
-        <p>Confira as Condições</p>
-        <p></p>
-      </a>
-      <!--/CONFIRA VAGAS-->
-    </div>
-    <!-- /DIREITA-->
   </div>
   <!--colunas-->
 </div>
