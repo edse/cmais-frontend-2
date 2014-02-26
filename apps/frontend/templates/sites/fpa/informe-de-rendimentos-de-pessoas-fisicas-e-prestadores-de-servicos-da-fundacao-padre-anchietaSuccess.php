@@ -16,7 +16,7 @@
 		            <div class="control-group span4" style="margin:0;">
 		              <label class="control-label" for="fpa_cpf">CPF</label>
 		              <div class="controls">
-		                <input type="text" id="fpa_cpf" name="fpa_cpf" value="" maxlength="11">
+		                <input type="text" id="fpa_cpf" name="fpa_cpf" value="">
 		                <p class="help-block">(Digite somente os números)</p>
 		              </div>
 		            </div>
@@ -25,7 +25,7 @@
 		            <div class="control-group span4">
 		              <label class="control-label" for="fpa_data">PIS</label>
 		              <div class="controls">
-		                <input type="text" id="fpa_pis" name="fpa_pis" value="" maxlength="15">
+		                <input type="text" id="fpa_pis" name="fpa_pis" value="">
 		                <p class="help-block"> (Digite somente os números)</p>
 		              </div>
 		            </div>
