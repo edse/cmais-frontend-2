@@ -5,7 +5,7 @@
 #capa-site {margin-top: -160px !important;}
 /*#capa-site {*margin-top:-100px !important;}*/
 #miolo {margin-top:28px;}
-#barra-site {background: url(http://cmais.com.br/portal/images/capaPrograma/carnaval2014/grafismos.png); margin:0; width:1012px; }
+#barra-site {background: url(http://cmais.com.br/portal/images/capaPrograma/carnaval2014/grafismos.png); margin:0; width:1012px;height: 160px; }
 #barra-site h2 { width: 340px;}
 #barra-site h2 a { font-size:25px; color:#fff; text-transform:uppercase; text-indent:-9999px; width: 340px; height:100px; display:block; }
 .facebook {padding:0 !important;}
