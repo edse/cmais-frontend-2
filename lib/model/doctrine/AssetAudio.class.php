@@ -97,8 +97,8 @@ class AssetAudio extends BaseAssetAudio
   </script>
   <div id="jquery_jplayer_'.$this->getFile().'" class="jp-jplayer"></div>
     <div class="jp-audio">
-      <div class="jp-type-single" style="border:1px solid #ccc">
-        <div id="jp_interface_1" class="jp-interface">
+      <div class="jp-type-single" style="border:1px solid #ccc;width: 615px;">
+        <div id="jp_interface_1" class="jp-interface" style="height: 80px;">
           <ul class="jp-controls">
             <li><a href="#" class="jp-play" tabindex="1" style="left:44px;top:10px;">play</a></li>
 	          <li><a href="#" class="jp-pause" tabindex="1" style="left:44px;top:10px;">pause</a></li>
