@@ -158,7 +158,7 @@
 #carrossel-interna-artigo .slider-mask {overflow: hidden;position: relative;zoom: 1;width: 820px;margin: 0 auto;}
 #carrossel-interna-artigo .slider-target {width: 2000px;margin: 0 auto;}
 #carrossel-interna-artigo .slider ul {margin: 0;padding: 0;list-style-type: none;}
-#carrossel-interna-artigo .slider li {width: 800px;height: 390px;float: left;margin: 0;}
+#carrossel-interna-artigo .slider li {width: 980px;height: 390px;float: left;margin: 0;}
 #carrossel-interna-artigo .slider li a img{display:block; margin: 0 auto;}
 #carrossel-interna-artigo .slider .videoorimage{max-width:420px;padding:20px;}
 #carrossel-interna-artigo .slider .descritivo{ padding:20px 20px 20px 0px; }

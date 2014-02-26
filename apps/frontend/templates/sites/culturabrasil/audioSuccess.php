@@ -1,26 +1,22 @@
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/contato.css" type="text/css" />
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/culturafm.css" type="text/css" />
+<?php use_helper('I18N', 'Date') ?>
+<!-- Le styles--> 
+<link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/css/tvcultura/sites/culturabrasil.css" rel="stylesheet" type="text/css" />
+    
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="http://cmais.com.br/portal/js/bootstrap/bootstrap.js"></script>
 
-    <?php use_helper('I18N', 'Date') ?>
-    <?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site)) ?>
-    <?// php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+<?php include_partial_from_folder('sites/culturabrasil', 'global/menu', array('siteSections' => $siteSections, 'displays' => $displays, 'section'=>$section, 'site'=>$site, 'asset'=>$asset)) ?>
 
-	 <div id="bg-site"></div>
-
-    <!-- CAPA SITE -->
-    <div id="capa-site" class="audio">
-
-           <?php include_partial_from_folder('sites/culturafm','global/newheader', array('site' => $site,'section'=>$section, 'uri' => $uri, 'program' => $program, 'siteSections'=>$siteSections)) ?>
-
-      <!-- MIOLO -->
-      <div id="miolo">
-      
-        <!-- BOX LATERAL -->
-        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
-        <!-- BOX LATERAL -->
-
-        <!-- CONTEUDO PAGINA -->
-        <div id="conteudo-pagina">
+<!-- section miolo -->
+<!--section miolo--> 
+<section class="miolo">
+  <!-- container miolo -->
+  <div class="container row-fluid">
 
           <!-- CAPA -->
           <div class="capa grid3">
@@ -29,12 +25,12 @@
             <div id="esquerda" class="grid2">
 
               <!-- NOTICIA INTERNA -->
-              <div class="box-interna grid2">
+              <div class="box-interna content-asset">
                 <h3><?php echo $asset->getTitle() ?></h3>
                 
                 <div class="assinatura grid2">
-                  <p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
-                  <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p>
+                  <!--p class="sup"><?php echo $asset->AssetContent->getAuthor() ?> <span><?php echo $asset->retriveLabel() ?></span></p>
+                  <p class="inf"><?php echo format_date($asset->getCreatedAt(), "g") ?> - Atualizado em <?php echo format_date($asset->getUpdatedAt(), "g") ?></p-->
                   <!--
                   <div class="acessibilidade">
                     <a href="#" class="zoom">+A</a>
@@ -42,25 +38,32 @@
                   </div>
                   -->
 
-                  <?php include_partial_from_folder('blocks','global/share-small', array('site' => $site, 'uri' => $uri)) ?>
+                  <?php include_partial_from_folder('sites/culturabrasil', 'global/signature', array('uri'=>$uri,'asset'=>$asset)) ?>
 
                 </div>
                 
                 <div class="texto bg-cinza">
-                  <div class="grid1">
+                  <div>
                   <?php if($asset->AssetType->getSlug() == "person"): ?>
                     <?php echo html_entity_decode($asset->AssetPerson->getBio()) ?>
                   <?php elseif($asset->AssetType->getSlug() == "audio"): ?>
                     <?php echo html_entity_decode($asset->AssetAudio->render()) ?>
-                  <?php else: ?>
+       						<?php elseif($asset->AssetType->getSlug() == "content"): ?>
                     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
                   <?php endif; ?>
                   </div>
                   <p><?php echo nl2br($asset->getDescription()) ?> </p>  
                 </div>
                 
-                <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
-
+                <?php include_partial_from_folder('blocks', 'global/visite-cmais',array('uri'=>$uri)) ?>
+				         <!-- comentario facebook -->
+				          <div class="container face">
+				            <fb:comments href="<?php echo $uri?>" numposts="3" width="610" publish_feed="true"></fb:comments>
+				            <hr />
+				          </div>
+				          <!-- /comentario facebook -->
+                
+                
               </div>
               <!-- /NOTICIA INTERNA -->
               
@@ -150,7 +153,7 @@
           </div>
           <!-- /CAPA -->
         </div>
-        <!-- /CONTEUDO PAGINA -->
+        <!-- /CONTEUDO -->
 
       </div>
       <!-- /MIOLO -->

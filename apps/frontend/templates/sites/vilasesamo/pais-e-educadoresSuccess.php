@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
+
 <?php
 $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
 ?> 
@@ -19,9 +20,9 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 <div id="content">
   
   <!--Explicação acessibilidade-->
-	<h1 tabindex="0" class="ac-explicacao">
-	 <?php echo $section->getDescription(); ?>
-	</h1>
+  <h1 tabindex="0" class="ac-explicacao">
+   <?php echo $section->getDescription(); ?>
+  </h1>
   
   <!--section -->
   <section class="filtro row-fluid">
@@ -54,6 +55,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                         <img src="<?php echo $d->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $d->getTitle() ?>" />
                       </div>
                     </div>
+
                     <div class="descritivo titulo-slider">
                       <h2><?php echo $d->getTitle() ?></h2>
                       <p><?php echo $d->getDescription() ?></p>
@@ -61,6 +63,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                       <p>Por <span><?php echo $d->Asset->AssetContent->getAuthor() ?></span></p>
                       <?php endif; ?>
                     </div>
+     
                   </a>
                 </li>
                 <!--/item-->
@@ -170,7 +173,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $d->getTitle() ?>" />
                 <i class="icones-sprite-interna icone-artigo-br-pequeno"></i>
                 <div>
-                  <img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                  <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
                   <?php echo $d->getTitle() ?>
                 </div>
               </a>
@@ -241,7 +244,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   <script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script><?php echo $noscript; ?>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script><?php echo $noscript; ?>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script><?php echo $noscript; ?>
-  <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
+  <link type="text/css" rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
   
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> <?php echo $noscript; ?>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/youtubeapi.js"></script> <?php echo $noscript; ?>
@@ -280,6 +283,21 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       slideSpeed: 5000
   });
   
+  slideShow();
+  var widthLi;
+  $(window).on("load",function(){
+    widthLi = $('.slider-mask').width();
+    $('.slider-mask li').css('width', widthLi);
+    $('#carrossel-interna-artigo').responsiveCarousel('redraw');  
+  });
+  
+  $(window).on("resize",function(){
+    widthLi =  $('.slider-mask').width();
+    $('.slider-mask li').css('width', widthLi);  
+    $('#carrossel-interna-artigo').responsiveCarousel('redraw');
+  });
+  
+  
   //$('.arrow, #selector-interna-artigo  a').click(function(){
     //slideShow(); 
   //});
@@ -306,11 +324,12 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   });
   
   
-  slideShow = function(ev){
+  
+  function slideShow(ev){
     //ev.preventDefault();
     $('#carrossel-interna-artigo').responsiveCarousel('toggleSlideShow');
   };
-  stop = function(ev){
+  function stop(ev){
     ev.preventDefault();
     $('#carrossel-interna-artigo').responsiveCarousel('stopSlideShow');
   };

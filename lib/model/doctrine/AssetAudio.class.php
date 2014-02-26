@@ -78,8 +78,9 @@ class AssetAudio extends BaseAssetAudio
 
   public function render(){
 
-    return '<script type="text/javascript" src="http://cmais.com.br/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script><link href="http://cmais.com.br/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="http://cmais.com.br/js/audioplayer/jquery.jplayer.js"></script>
+    return '<script type="text/javascript" src="http://cmais.com.br/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script>
+    <link href="http://cmais.com.br/portal/js/audioplayer/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="http://cmais.com.br/portal/js/audioplayer/js/jquery.jplayer.min.js"></script>
   <script type="text/javascript">
    $(document).ready(function(){
     $("#jquery_jplayer_'.$this->getFile().'").jPlayer({
@@ -88,6 +89,7 @@ class AssetAudio extends BaseAssetAudio
           mp3: "http://midia.cmais.com.br/assets/audio/default/'.$this->getFile().'.mp3",
         }).jPlayer("play");
       },
+      solution:"flash, html",
       swfPath: "http://cmais.com.br/js/audioplayer",
       supplied: "mp3"
     });
@@ -95,25 +97,25 @@ class AssetAudio extends BaseAssetAudio
   </script>
   <div id="jquery_jplayer_'.$this->getFile().'" class="jp-jplayer"></div>
     <div class="jp-audio">
-      <div class="jp-type-single">
-        <div id="jp_interface_1" class="jp-interface">
+      <div class="jp-type-single" style="border:1px solid #ccc;width: 615px;">
+        <div id="jp_interface_1" class="jp-interface" style="height: 80px;">
           <ul class="jp-controls">
-            <li><a href="#" class="jp-play" tabindex="1">play</a></li>
-            <li><a href="#" class="jp-pause" tabindex="1">pause</a></li>
-            <li><a href="#" class="jp-stop" tabindex="1">stop</a></li>
-            <li><a href="#" class="jp-mute" tabindex="1">mute</a></li>
-            <li><a href="#" class="jp-unmute" tabindex="1">unmute</a></li>
+            <li><a href="#" class="jp-play" tabindex="1" style="left:44px;top:10px;">play</a></li>
+	          <li><a href="#" class="jp-pause" tabindex="1" style="left:44px;top:10px;">pause</a></li>
+	          <li><a href="#" class="jp-stop" tabindex="1" style="left:121px;top:16px;">stop</a></li>
+	          <li><a href="#" class="jp-mute" tabindex="1" style="left:70%;top:22px;">mute</a></li>
+	          <li><a href="#" class="jp-unmute" tabindex="1" style="left:70%;top:22px;">unmute</a></li>
           </ul>
-          <div class="jp-progress">
+          <div class="jp-progress" style="left:20px;top:56px; width: 94%;">
             <div class="jp-seek-bar">
               <div class="jp-play-bar"></div>
             </div>
           </div>
-          <div class="jp-volume-bar">
+          <div class="jp-volume-bar" style="left:73%;top:27px;width:24%">
             <div class="jp-volume-bar-value"></div>
           </div>
-          <div class="jp-current-time"></div>
-          <div class="jp-duration"></div>
+          <div class="jp-current-time" style="left:20px;top:72px;"></div>
+          <div class="jp-duration" style="left:20px;top:72px;width: 94%"></div>
         </div>
         <div id="jp_playlist_1" class="jp-playlist">
           <ul>
