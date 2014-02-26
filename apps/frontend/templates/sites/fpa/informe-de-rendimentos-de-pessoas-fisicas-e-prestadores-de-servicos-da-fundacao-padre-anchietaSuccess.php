@@ -62,7 +62,7 @@ $(document).ready(function() {
 	    type: "POST",
 	    dataType: "jsonp",
 	    data: $("#form-consulta").serialize(),
-	    url: "http://app.cmais.com.br/actions/informe-rendimentos/consulta_informe.php",
+	    url: "http://app.cmais.com.br/actions/informe-de-rendimentos/consulta_informe.php",
 	    error: function(retorno){
 	        alert("Erro na consulta do informe. Por favor, tente mais tarde!");
 	    }, 
