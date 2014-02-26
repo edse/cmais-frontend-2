@@ -5,7 +5,7 @@ $file 		= "/var/frontend/web/cache/".$link."/".$filename;
 //$file = "/var/frontend/web/cache/".$link."/".88239794556_012345678910.pdf";
 
 if(is_file($file)){
-	$return = "http:/".$link."/".$filename;
+	$return = "http://".$link."/".$filename;
 }else{
 	$return = "0";
 }
