@@ -129,6 +129,7 @@
             <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
           </fieldset> 
           
+          <!--
           <fieldset>
             <div class="codigo span3" id="captchaimage">
               <label for="captcha">Confirmação</label>
@@ -138,7 +139,8 @@
               <label class="msg" for="captcha">Digite no campo abaixo os caracteres que você vê na imagem:</label>
               <input class="caracteres span12" type="text" maxlength="6" name="captcha" id="captcha">
             </div>
-          </fieldset> 
+          </fieldset>
+          -->
           <!-- form principal -->
           
          
@@ -182,6 +184,9 @@
       $('#form-selecao').clearForm();
     })
     var validator = $('#form-selecao').validate({
+      submitHandler: function(form){
+        form.submit();
+      },/*
       submitHandler : function(form) {
         $.ajax({
           type : "POST",
@@ -211,7 +216,7 @@
             }
           }
         });
-      },
+      },*/
       rules : {
         nome : {
           required : true,
@@ -238,11 +243,11 @@
         mensagem : {
           required : true,
           minlength : 2
-        },
+        }/*,
         captcha : {
           required : true,
           remote : "http://app.cmais.com.br/portal/js/validate/demo/captcha/process.php"
-        }
+        }*/
       },
       messages : {
         nome : "Digite um nome v&aacute;lido. Este campo &eacute; obrigat&oacute;rio.",
@@ -252,7 +257,7 @@
         estado : "Este campo &eacute; obrigat&oacute;rio.",
         programa : "Este campo &eacute; obrigat&oacute;rio.",
         mensagem : "Este campo &eacute; obrigat&oacute;rio.",
-        captcha : "Digite corretamente o código que está ao lado."
+        //captcha : "Digite corretamente o código que está ao lado."
       },
       success : function(label) {
         // set &nbsp; as text for IE
@@ -261,7 +266,7 @@
     });
   });
   
-  $('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
+  //$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
   
   // Contador de Caracters
   function limitText(limitField, limitNum, textCounter) {
@@ -270,5 +275,25 @@
     else
       $(textCounter).html(limitNum - limitField.value.length);
   }
-</script> 
 
+  function getVar(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++){
+      var pair = vars[i].split("=");
+      if (pair[0] == variable) {
+        return pair[1];
+      }
+    }
+  }
+  var success = getVar("success");
+  var error = getVar("error");
+  if(success == 1){
+    $("#form-contato").hide();
+    $(".msgAcerto").show();
+  }else if(error == 1){
+    $("#form-contato").hide();
+    $(".msgErro").show();
+  }
+
+</script> 
