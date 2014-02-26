@@ -478,15 +478,15 @@ class _sectionActions extends sfActions
                 $this->assetsQuery = Doctrine_Query::create()
                   ->select('a.*')
                   ->from('Asset a, AssetVideo av');
-                if($this->site->getId() > 0)
+                if($this->site->getId() > 1)
                   $this->assetsQuery->where('a.site_id = ?', $this->site->getId())->andWhere('av.asset_id = a.id');
                 else
                   $this->assetsQuery->andWhere('av.asset_id = a.id')
                   ->andWhere("av.youtube_id != ''")
                   ->andWhere('a.is_active = 1')
                   ->andWhereIn('a.asset_type_id', array(6, 7))
-                  ->groupBy('a.id')
-                  ->orderBy('a.created_at desc')
+                  //->groupBy('a.id')
+                  ->orderBy('a.id desc')
                   ->limit(20);
               }
             }

@@ -81,7 +81,10 @@ class Site extends BaseSite
           ->orderby('p.id desc')
           ->fetchOne();
         if($programa){
-          return (string) "http://".$programa->Channel->slug.".cmais.com.br/".$this->slug;
+          if($programa->Channel->slug == "culturabrasil")
+            return (string) "http://".$programa->Channel->slug.".cmais.com.br/programas/".$this->slug;
+          else
+            return (string) "http://".$programa->Channel->slug.".cmais.com.br/".$this->slug;
         }else
           return (string) "http://cmais.com.br/".$this->getSlug();
       }
