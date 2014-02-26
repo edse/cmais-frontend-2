@@ -133,6 +133,7 @@ $uri = str_replace('/index.php', '', $uri);
          
           <?php if(count($pager) > 0): ?>
             <?php foreach($pager->getResults() as $d): ?>
+              <?php /*
               <?php if( ($section->Site->Program->Channel->getSlug() == "culturabrasil") && ($section->getSlug() == "arquivo") ): ?>
               <a href="http://culturabrasil.cmais.com.br/<?php echo $section->Site->getSlug()?>/arquivo/<?php echo $d->getSlug(); ?>" title=" <?php echo $d->getTitle(); ?>">
               <?php elseif($section->getSlug() == "entrevistas"): ?>
@@ -140,12 +141,12 @@ $uri = str_replace('/index.php', '', $uri);
               <?php else: ?>
               <a href="<?php echo $d->retriveUrl(); ?>" title=" <?php echo $d->getTitle(); ?>">
               <?php endif; ?>
-                  <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
-                  <?php if ($related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb1")): ?>
-                  <div class="row-fluid titulo">
-                    
-                  </div>
-                  <?php endif;?>
+              */ ?>
+              <a href="<?php echo $d->retriveUrl(); ?>" title=" <?php echo $d->getTitle(); ?>">
+              <?php $related = $d->retriveRelatedAssetsByAssetTypeId(2); ?>
+              <?php if ($related[0]->retriveImageUrlByImageUsage("culturabrasil-thumb1")): ?>
+              <div class="row-fluid titulo"></div>
+              <?php endif;?>
               <div class="row-fluid" style="margin-left:10px">
                 <div class="span3" style="margin-left:0px">
                   <h6><?php if ($d->AssetContent->getHeadlineShort()): ?><?php echo $d->AssetContent->getHeadlineShort(); ?><?php endif; ?>&nbsp;</h6>

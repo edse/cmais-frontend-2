@@ -146,18 +146,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <button type="submit" class="icones-sprite-menu icone-busca" title="buscar no site vila sesamo" aria-hidden="true"></button>
           </form>
         </div>
-        <a href="http://cmais.com.br/vilasesamo/pais-e-educadores" title="Site Vila Sésamo" target="_self">
-          Pais e Educadores
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pais.png">
-        </a>
-        <a href="http://cmais.com.br/vilasesamo/na-tv" title="Site Vila Sésamo" target="_self">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/natv.png">
-          Na TV
-        </a>
-        <a href="http://cmais.com.br/vilasesamo/acessibilidade" title="Site Vila Sésamo" target="_self">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/acessibilidade.png">
-          Acessibilidade
-        </a>
         <a href="http://cmais.com.br/vilasesamo/jogos" title="Site Vila Sésamo" target="_self">
           <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/jogos.png">
           Jogos
@@ -173,6 +161,18 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <a href="http://cmais.com.br/vilasesamopersonagens" title="Site Vila Sésamo" target="_self">
           <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens.png">
           Personagens
+        </a>
+        <a href="http://cmais.com.br/vilasesamo/pais-e-educadores" title="Site Vila Sésamo" target="_self">
+          Pais e Educadores
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pais.png">
+        </a>
+        <a href="http://cmais.com.br/vilasesamo/na-tv" title="Site Vila Sésamo" target="_self">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/natv.png">
+          Na TV
+        </a>
+        <a href="http://cmais.com.br/vilasesamo/acessibilidade" title="Site Vila Sésamo" target="_self">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/acessibilidade.png">
+          Acessibilidade
         </a>
         <!--a class="last"title="Site Vila Sésamo" target="_self">
           Fechar
@@ -206,18 +206,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <button type="submit" class="icones-sprite-menu icone-busca" title="buscar no site vila sesamo" aria-hidden="true"></button>
           </form>
         </div>
-        <a href="http://cmais.com.br/vilasesamo/pais-e-educadores" title="Site Vila Sésamo" target="_self">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pais.png">
-          Pais e Educadores
-        </a>
-        <a href="http://cmais.com.br/vilasesamo/na-tv" title="Site Vila Sésamo" target="_self">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/natv.png">
-          Na TV
-        </a>
-        <a href="http://cmais.com.br/vilasesamo/acessibilidade" title="Site Vila Sésamo" target="_self">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/acessibilidade.png">
-          Acessibilidade
-        </a>
         <a href="http://cmais.com.br/vilasesamo/jogos" title="Site Vila Sésamo" target="_self">
           <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/jogos.png">
           Jogos
@@ -233,6 +221,18 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <a href="http://cmais.com.br/vilasesamopersonagens" title="Site Vila Sésamo" target="_self">
           <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens.png">
           Personagens
+        </a>
+        <a href="http://cmais.com.br/vilasesamo/pais-e-educadores" title="Site Vila Sésamo" target="_self">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pais.png">
+          Pais e Educadores
+        </a>
+        <a href="http://cmais.com.br/vilasesamo/na-tv" title="Site Vila Sésamo" target="_self">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/natv.png">
+          Na TV
+        </a>
+        <a href="http://cmais.com.br/vilasesamo/acessibilidade" title="Site Vila Sésamo" target="_self">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/acessibilidade.png">
+          Acessibilidade
         </a>
         <!--a class="last"title="Site Vila Sésamo" target="_self">
           Fechar

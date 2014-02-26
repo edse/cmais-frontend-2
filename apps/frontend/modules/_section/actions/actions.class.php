@@ -486,7 +486,7 @@ class _sectionActions extends sfActions
                   ->andWhere('a.is_active = 1')
                   ->andWhereIn('a.asset_type_id', array(6, 7))
                   ->groupBy('a.id')
-                  ->orderBy('a.created_at desc')
+                  ->orderBy('a.id desc')
                   ->limit(20);
               }
             }
