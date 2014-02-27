@@ -3,7 +3,6 @@ $(document).ready(function() {
   //headroom - escondendo topo no mobile
   setInterval(function(){
    $('#header-tablet .logo-mobile').addClass('animated').addClass('tada'); 
-   $('#header-tablet .logo-mobile').addClass('animated').addClass('tada');
   },7000);
   
   var hMobile = "#header-mobile";
