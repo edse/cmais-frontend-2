@@ -1,0 +1,81 @@
+<?php
+
+if(isset($_REQUEST["payload"])){
+
+  $a = exec('cd /var/frontend');
+  $msg2 .= "\n\n".exec('git pull');
+
+  $payload = json_decode($_REQUEST["payload"]);
+  
+  $msg = "Repository:\n".$payload->repository->name."\n".$payload->repository->url."\n".$payload->repository->description;
+  $msg .= "Before:\n".$payload->before;
+  $msg .= "After:\n".$payload->after;
+  $msg .= "\nCommits:";
+  foreach($payload->commits as $c){
+    
+    foreach($c->added as $added){
+      $added = "/var/frontend/".$added;
+      $msg .= "\n\nAdd: ".$added;
+      if(strpos($added, "web/") !== false){
+        $dest = str_replace("web/", "web/cache/cmais.com.br/", $added);
+        $msg .= "\n".$dest;
+        if(copy($added, $dest))
+          $msg .= "\nfile copied";
+        else{
+          $msg .= "\nfile NOT copied";
+          $folders = explode("/", $dest);
+          $file = array_pop($folders);
+          $folder = implode("/", $folders);
+          $msg .= "\ncreating folder ($folder)";
+          mkdir($folder, 0, true);
+          if(copy($modified, $dest))
+            $msg .= "\nfile copied";
+          else
+            $msg .= "\nfile NOT removed";
+        }
+      }
+    }
+    foreach($c->modified as $modified){
+      $modified = "/var/frontend/".$modified;
+      $msg .= "\n\nModified: ".$modified;
+      if(strpos($modified, "web/") !== false){
+        $dest = str_replace("web/", "web/cache/cmais.com.br/", $modified);
+        $msg .= "\n".$dest;
+        if(copy($modified, $dest))
+          $msg .= "\nfile copied";
+        else{
+          $msg .= "\nfile NOT copied";
+          $folders = explode("/", $dest);
+          $file = array_pop($folders);
+          $folder = implode("/", $folders);
+          $msg .= "\ncreating folder ($folder)";
+          mkdir($folder, 0, true);
+          if(copy($modified, $dest))
+            $msg .= "\nfile copied";
+          else
+            $msg .= "\nfile NOT copied";
+        }
+      }
+    }
+    foreach($c->removed as $removed){
+      $removed = "/var/frontend/".$removed;
+      $msg .= "\n\nRemoved: ".$removed;
+      if(strpos($removed, "web/") !== false){
+        $dest = str_replace("web/", "web/cache/cmais.com.br/", $removed);
+        $msg .= "\n".$dest;
+        if(unlink($dest))
+          $msg .= "\nfile removed";
+        else
+          $msg .= "\nfile NOT removed";
+      }
+    }
+
+    $msg .= "\n\nURL: ".$c->url;
+    $msg .= "\nAuthor: ".$c->author->name." (".$c->author->email.")";
+    $msg .= "\nTimestamp: ".$c->timestamp;
+    $msg .= "\nMessage: ".$c->message;
+  }
+  
+  mail('emerson.estrella@gmail.com', 'Git Pulled', $msg.$msg2);
+
+}
