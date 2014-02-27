@@ -16,7 +16,7 @@ a:hover, a:visited{color:#fff!important;}
 .icone-busca:hover {background-position: 10px -310px;height: 38px;}
 .header-mobile .search-mobile form{margin: 2% 0% 2% 2%;max-width: 255px; float:right;}
 .header-mobile .search-mobile form input {width: 69%;height: 25px;font-size: 1.1em;line-height: 25px;text-align: center;}
-.imagem-topo{position: absolute;width: 125px;bottom: 0;left: 50%;margin-left: -29px;}
+.imagem-topo{position: absolute;width: 125px;bottom: 0;left: 50%;margin-left: -29px;display: none}
 #header-bar-mobile{display:none;}
 #header-bar-mobile .content h1{width:50%;display: block;float: left;}
 #nav-mobile{width:100%;padding: 0;background: #ffffff; position: absolute;z-index: 40000;top: 70px;display:none;}
