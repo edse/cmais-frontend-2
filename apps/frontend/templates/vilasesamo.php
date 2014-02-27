@@ -133,7 +133,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       <!--button id="alca" class="alca" data-header="teste">&nbsp;</button-->
       
       <div class="imagem-topo">
-        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/img_topo_mobile.png" />
+        <!--img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/img_topo_mobile.png" /-->
       </div>
       
       <a href="#" title="menu Vila Sésamo" class="btn-menu">
