@@ -8,7 +8,7 @@
     <div class="col-esquerda span12">
     	
       <h1><?php echo $section->getTitle(); ?></h1>
-			<p>Informe o número do CPF e o número do PIS para fazer o download do Informe de Rendimentos Pessoa Física:</p>      
+			<p>Informe o CPF e o número do PIS ou PASEP ou NIT para fazer o download do Informe de Rendimentos Pessoa Física:</p>      
       <div id="msg_result" style="border-radius: 5px; padding-top: 5px; padding-bottom: 10px;font-size: 14px; text-indent: 20px;margin-bottom:20px; display: none;height:15px"></div>
       <div class="span9" style="margin:0">
         <ul>
@@ -23,7 +23,7 @@
 
 
 		            <div class="control-group span4">
-		              <label class="control-label" for="fpa_data">PIS</label>
+		              <label class="control-label" for="fpa_data">PIS ou PASEP ou NIT</label>
 		              <div class="controls">
 		                <input type="text" id="fpa_pis" name="fpa_pis" value="">
 		                <p class="help-block"> (Digite somente os números)</p>
