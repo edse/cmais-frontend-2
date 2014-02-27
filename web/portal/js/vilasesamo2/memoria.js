@@ -33,7 +33,7 @@ matchingGame.deck = [
 'enio-a','enio-b',
 'garibaldo-a','garibaldo-b',
 'grover-a','grover-b',
-'grupo-a','grupo-b',
+'sivan-a','sivan-b',
 'zoe-a','zoe-b'
 ];
 
@@ -52,7 +52,7 @@ $(function(){
   loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/enio.jpg');
   loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/garibaldo.jpg');
   loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/grover.jpg');
-  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/grupo.jpg');
+  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/sivan.jpg');
   loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/zoe.jpg');
   
   
@@ -77,7 +77,6 @@ function init() {
   }
   playGame = false;
   uiPlay.click(function(e) {
-    console.log("fui2");
     e.preventDefault();
     ui.removeClass("open");
     startGame();
