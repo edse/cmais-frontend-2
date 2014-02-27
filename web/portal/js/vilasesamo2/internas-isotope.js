@@ -146,7 +146,7 @@
       if(cont != personagens){
         
         var filter_selected = "";
-        $("#filtrar-tudo").html("Deselecionar todos").attr('aria-label','botão para descelecionar todos os personagens filtros');
+        $("#filtrar-tudo").html("Desmarcar todos").attr('aria-label','botão para descelecionar todos os personagens filtros');
         $('.filtro-personagem li').addClass('ativo');
         $('.filtro-personagem li a').find('img').animate({top:-25, easing:"swing"},'fast');
         
@@ -163,7 +163,7 @@
       }else if(cont==personagens){
         cont=0;
         filter_selected = "";
-        $("#filtrar-tudo").html("Selecionar todos");
+        $("#filtrar-tudo").html("Marcar todos");
         $('.filtro-personagem li').removeClass('ativo');
         $('.filtro-personagem li a').find('img').animate({top:0, easing:"swing"},'fast');
         
