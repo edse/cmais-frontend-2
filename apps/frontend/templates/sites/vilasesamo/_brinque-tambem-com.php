@@ -296,6 +296,15 @@
                     <?php if(count($see_also_by_section) > 0): ?>
                       <?php foreach($see_also_by_section as $k=>$d): ?>
                         <?php if(!in_array($d->getId(), $assetID)): ?> 
+                          <?php
+                          $sections = $d->getSections();
+                            foreach($sections as $s) {
+                              if(in_array($s->getSlug(),array("videos","jogos","atividades"))) {
+                                $assetSection = $s;
+                                break;
+                              }
+                            }
+                          ?>
                           <?php $assetID[] = $d->getId(); ?>
                           <?php
                           $preview = $d->retriveRelatedAssetsByRelationType('Preview');
