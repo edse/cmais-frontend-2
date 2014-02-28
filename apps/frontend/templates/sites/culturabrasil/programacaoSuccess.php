@@ -1,10 +1,7 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php
-$u = explode("/", $url);
-array_pop($u);
-$base_url = str_replace("/index.php", "", implode("/", $u));
-$nextDateUrl = $base_url."/".str_replace("/","-",$nextDate); 
-$prevDateUrl = $base_url."/".str_replace("/","-",$prevDate); 
+$nextDateUrl = "http://culturabrasil.cmais.com.br/programacao/".str_replace("/","-",$nextDate); 
+$prevDateUrl = "http://culturabrasil.cmais.com.br/programacao/".str_replace("/","-",$prevDate); 
 ?>
 <!-- Le styles--> 
 <link href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -160,8 +157,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
   });
 
   function redirect(d){
-    //send('<?php echo $sChannel->getSlug() ?>',d);
-    self.location.href = '<?php echo $base_url ?>/'+d;
+    self.location.href = 'http://culturabrasil.cmais.com.br/programacao/'+d;
   }
 
   //cache the days and months

@@ -12,11 +12,9 @@ a:hover, a:visited{color:#fff!important;}
 .header-mobile a.logo-mobile{margin:1px 0 0 10px;overflow: hidden;float: left;max-width:125px;display: block;left: 5%;}
 .header-mobile a.btn-menu{margin-top:5px;overflow: hidden;float:right;margin: 11px 15px 0 0px;width:50px;}
 .header-mobile .search-mobile{background:#FCF2AE;overflow: hidden;}
-.icone-busca {background-size: 74%;height: 38px;background-position: 10px -380px;}
-.icone-busca:hover {background-position: 10px -310px;height: 38px;}
-.header-mobile .search-mobile form{margin: 2% 0% 2% 2%;max-width: 255px; float:right;}
-.header-mobile .search-mobile form input {width: 69%;height: 25px;font-size: 1.1em;line-height: 25px;text-align: center;}
-.imagem-topo{position: absolute;width: 125px;bottom: 0;left: 50%;margin-left: -29px;display: none}
+.header-mobile .search-mobile form{margin: 2% 3%;max-width: 255px; float:right;}
+.header-mobile .search-mobile form input {width: 70%;height: 25px;font-size: 1.3em;line-height: 25px;}
+.imagem-topo{position: absolute;width: 125px;bottom: 0;left: 50%;margin-left: -29px;}
 #header-bar-mobile{display:none;}
 #header-bar-mobile .content h1{width:50%;display: block;float: left;}
 #nav-mobile{width:100%;padding: 0;background: #ffffff; position: absolute;z-index: 40000;top: 70px;display:none;}
@@ -33,7 +31,7 @@ a:hover, a:visited{color:#fff!important;}
 .form-search{display: none;}
 /*desaparece o topo dos pais*/
 
-.interna #content .pais {display:none}
+
 
 /*section{background:green!important;}*/
 
@@ -43,9 +41,6 @@ a:hover, a:visited{color:#fff!important;}
 #no-mobile{display: none;}
 #content{top:70px!important;margin-bottom:0;}
 #mobile{display: block; padding-bottom:0;margin-top:80px; }
-.atividades #mobile{margin-top: 80px; }
-.videos #content{top:20px!important; }
-.videos #mobile{margin-top: 40px; }
 footer{width: 100%;}
 footer .logos ul{padding:0;}
 footer .logos ul li{width:50%; float:left;height:30px; margin:10px 0}
@@ -57,7 +52,6 @@ footer .mapa .col-central.natv-footer{width:50%;}
 footer .mapa h2, footer .mapa a {font-size:  1.8em;}    
 footer .copyright small {text-align: center;font-size: 0.9em;}
 footer .copyright {height: 30px;margin-left: 2%;} 
-footer .relacionados {display:none}
 footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto; font-size:1.3em;}
 
 .relacionados-mobile{width: 96%;padding: 2%;overflow: hidden;display: block;}
@@ -68,8 +62,6 @@ footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto
 .logos{width: 100%;}
 .logos a{width: 80%;display: block;margin:0 auto;}
 .logos a > img{width:100%;} 
-.logos .last-li{margin-top: 15px;}
-
 /* geral */
 
 /* index */
@@ -98,34 +90,27 @@ a{text-decoration:underline!important;}
 
 /*acessibilidade*/
 .acessibilidade .box-acessibilidade {width: 100%!important;}
-.acessibilidade #content .filtro h1 {font-size:1.2em;padding: 0;height: 56px;margin: 0;line-height: 56px;}
-.acessibilidade .fundo-acessibilidade {width:100%!important; margin:0 auto;display: none}
-.icone-acessibilidade{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/icones-interna.png) no-repeat top left;background-position: -125px -544px;margin: 3% 0 0 20%;width: 15%;height: 40px;}
-
+.acessibilidade #content .filtro h1 {font-size: 1.6em;}
+.acessibilidade .fundo-acessibilidade {width:100%!important; margin:0 auto;}
  
 
 /* na tv */
 .na-tv #content{margin:20px 5%}
-.na-tv #content .filtro {margin-bottom: 80px!important;}
-.na-tv #content .filtro h1{font-size:1.2em;padding: 0;height: 56px;margin: 0;line-height: 56px}
+.na-tv .filtro {margin-bottom: 0!important;}
+.na-tv #content .filtro h1{font-size:1.6em;}
 .na-tv .ola{font-size: 1.4em!important;top: 5%!important;left: 3%!important;}
-.na-tv #content .fundo-na-tv {width: 70%;margin: 0 auto;position: relative;top: 35px;display:none;}
-.na-tv #content .container-na-tv {padding-bottom:20px}
+.na-tv #content .fundo-na-tv {width: 70%;margin: 0 auto;position: relative;top: 35px;}
 .na-tv #content .container-na-tv .container-horarios {width:100%; max-height:500px; float:left;}
 .na-tv #content .box-horario{width:98%; margin:0 0 10px 0;}
-.na-tv .icone-na-tv-grande {background-position: -125px -466px;margin: -1% 0 0 28%!important;}
-.na-tv footer #mobile{margin-top:-70px;}
-
+.na-tv footer#mobile{margin-top:-70px;}
 
 /*pais capa*/
 .cuidadores .span8{width: 100%!important;}
 .cuidadores .selecione .btn-group {width:100%!important; margin-bottom:15px!important; float:left;}
-.cuidadores .selecione .btn-group .dropdown-toggle {width: 96%!important; font-size: 14px;}
+.cuidadores .selecione .btn-group .dropdown-toggle {width: 96%!important; font-size: 18px;}
 .cuidadores .divisa{width:90%; margin: 0 5%;}
-.cuidadores #content .selecione .barra-selecao h3 {font-size:1.1em}
-#content .todos-itens a{font-size:1em}
-.container-carrossel h1{height:67px!important}
-.cuidadores #content .span8{padding:0 8%}
+.container-carrossel h1{height:67px!important;}
+.cuidadores #content .span8{padding:0 8%;}
 #carrossel-interna-artigo {height: auto!important;}
 #carrossel-interna-artigo .slider-mask{width:100%!important;}
 #carrossel-interna-artigo .slider .videoorimage {width: 180px;padding: 20px;float: none;margin: 0 auto;}
@@ -137,16 +122,15 @@ a{text-decoration:underline!important;}
 #carrossel-interna-artigo .btn-carrossel:hover,
 #carrossel-interna-artigo .btn-carrossel:visited{color:#00c76e!important;text-decoration:none!important; }
 #carrossel-interna-artigo .slider .descritivo{padding:0 5%;}
-#carrossel-interna-artigo .titulo-slider h2{padding:0; margin:0;font-size: 1.2em;line-height: 1.3em; text-decoration:underline; }
-#carrossel-interna-artigo .slider .descritivo p {font-size: 1em!important;line-height: 1.3em!important;margin-top: 15px;text-decoration: none!important;}
+#carrossel-interna-artigo .titulo-slider h2{padding:0; margin:0;font-size: 2em;line-height: 1.3em; text-decoration:underline; }
+#carrossel-interna-artigo .slider .descritivo p {font-size: 1.4em!important;line-height: 1.3em!important;margin-top: 15px;text-decoration: none!important;}
 #carrossel-interna-artigo .container-itens{width: 100%!important;bottom: 0;top: auto!important;}
 
 /*  Pais Artigos */
-.cuidadores .icone-cuidadores-grande {background-position: 0 -563px;margin: -3% 0 0 13%!important;width: 16%;}
 .cuidadores #content{margin:1%;}
 .cuidadores #content h1 a{margin-top:10px;}
 .cuidadores .filtro  {margin: 20px auto!important;width: 96%;}
-.cuidadores .todos-assets p {text-align: center!important;font-size: 0.7em;line-height: 51px;}
+.cuidadores .todos-assets p {text-align: center!important;font-size: 0.9em;line-height: 51px;}
 .cuidadores .container-cuidadores .col-esq article .redes-artigo {display:none}
 .cuidadores .container-cuidadores h3 {margin:0 auto;width: 70%;}
 .cuidadores .img-topo-asset {width:90%!important}
@@ -154,9 +138,9 @@ a{text-decoration:underline!important;}
 .cuidadores .col-direita,#comente-este-artigo,.fb_iframe_widget,#div-gpt-ad-1385748525978-0{display: none!important;}
 .cuidadores .container-cuidadores .col-dir{width:100%!important;margin:0!important}
 .cuidadores .container-cuidadores .col-esq {width:100%!important; padding:5%!important;}
-.cuidadores .container-cuidadores .col-esq article p {font-size: 1em!important; line-height:1.25em;}
+.cuidadores .container-cuidadores .col-esq article p {font-size: 1.25em!important; line-height:1.25em;}
 .cuidadores .container-cuidadores .col-esq article ul{margin:0 0 10px 0;}
-.cuidadores .container-cuidadores .col-esq article ul li{font-size: 1em!important;line-height: 1.25em; font-size:1em;}
+.cuidadores .container-cuidadores .col-esq article ul li{font-size: 1.25em!important;line-height: 1.25em; font-size:1em;}
 .cuidadores .container-cuidadores .col-esq article ul li:before{content:"-"}
 .cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre {max-width:none!important;width: 100%}
 .cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre img {width: 100%}
@@ -164,12 +148,12 @@ a{text-decoration:underline!important;}
 .cuidadores .todos-assets {width: 90%!important;font-size: 1em!important;background-image:none!important;background-color: #1DC252;margin-right: 7%;display: block;border-radius: 13px;}
 .cuidadores .container-cuidadores .col-esq article section a {font-size: 1em!important}
 .cuidadores .icone-voltar-artigo {height:0px!important}
-.cuidadores #content .filtro h1 {height: 130px;font-size:1.2em!important;line-height: 3em;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;padding: 0 3%;}
+.cuidadores #content .filtro h1 {height: 130px;font-size: 1.6em;line-height: 3em;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;padding: 0 3%;}
 .artigo #content .container-image{height: 150px;overflow: hidden;} 
 .artigo #content header h1 {overflow: visible!important;white-space:normal!important;}
 .cuidadores .container-cuidadores .col-dir .box-ler p {height: 57px!important;}
 .ac-explicacao  {width: 0!important}
-.parceiros-cuidadores, .na-tv .container-na-tv,.acessibilidade .box-acessibilidade p{text-align: left;font-size:1em;line-height: 1.25em;}/*texto corrido celular*/
+.parceiros-cuidadores, .na-tv .container-na-tv,.acessibilidade .box-acessibilidade p{text-align: left;font-size:1.2em;line-height: 1.25em;}/*texto corrido celular*/
 .primeiro-p {font-size:1.2em;color:#666}/*texto corrido celular, primeiro p*/
 .cuidadores .container-cuidadores .col-dir .box-ler p {color: #666;font-size: 1.1em;}
 
@@ -205,33 +189,21 @@ a{text-decoration:underline!important;}
 .personagens #page_nav{margin:0!important; padding:11px!important;}
   
 /* assets internas (jogos, atividades, videos) */
-.interna.jogos #content section,
-.interna.videos #content section,
-.interna.atividades #content section{margin: 10px auto;}
-
-.interna.jogos #content .divisa,
-.interna.videos #content .divisa,
-.interna.atividades #content .divisa{margin: 0;}
-
 .interna.jogos #content,
 .interna.videos #content,
 .interna.atividades #content{margin:0px 5%;}
 
 .interna.jogos #content h1 .icones-sprite-interna,
 .interna.atividades #content h1 .icones-sprite-interna,
-.interna.videos #content h1 .icones-sprite-interna {margin: -7% 0 0 27%!important;}
+.interna.videos #content h1 .icones-sprite-interna {margin: -10px 10px -22px 10px!important;}
 
 .interna.jogos #content h1,
 .interna.atividades #content h1,
-.interna.videos #content h1 {font-size: 1.2em;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height:5.4em;line-height:1.4em!important;}
+.interna.videos #content h1{font-size: 1.9em;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height:3.4em;line-height:1.4em!important;}
 
 .interna.jogos #content .span12 h1,
 .interna.atividades #content .span12 h1,
-.interna.videos #content .span12 h1{ font-size: 1.2em;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height:1.4em;line-height:1.4em!important;}
-
-.interna.jogos #content .icone-jogos-grande { background-position: 0 -947px; width: 40px; height: 45px}
-.interna.atividades #content .icone-atividades-grande { background-position: 0 -371px; width: 34px; height: 55px}
-.interna.videos #content .icone-videos-grande { background-position: 0 -1732px; width: 40px; height: 50px}
+.interna.videos #content .span12 h1{ font-size: 1.9em;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height:1.4em;line-height:1.4em!important;}
 
 .interna.jogos{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;border-radius: 13px;}
 .interna.videos{font-size: 1em!important;background-image:none!important;background-color: #f78701;display: block;border-radius: 13px;}
@@ -245,9 +217,9 @@ a{text-decoration:underline!important;}
 .interna.atividades .todos-assets,
 .interna.videos .todos-assets{width: 90%!important;font-size: 1em!important;margin: 3% 7% 0 7%;;display: block;}
 
-.interna.jogos #content .todos-assets p{background:#0172f9!important;font-size: 1em!important}
-.interna.atividades #content .todos-assets p{background:#571ed9!important;font-size: 1em!important}
-.interna.videos #content .todos-assets p{background:#f36701!important;font-size: 1em!important}
+.interna.jogos .todos-assets p{background:#0172f9!important;}
+.interna.atividades .todos-assets p{background:#571ed9!important;}
+.interna.videos .todos-assets p{background:#f36701!important;}
 
 .interna.jogos .todos-assets p,
 .interna.atividades .todos-assets p,
@@ -287,7 +259,7 @@ a{text-decoration:underline!important;}
 .interna.atividades .filtro .span12 nav.span2,
 .interna.jogos .filtro .span12 nav.span2{display:none;}
 
-#page_nav{margin-top: 25%!important;margin-bottom: 10%;}
+#page_nav{margin:25% auto!important;}
 
 /*box pais*/
 .pais .redes {display:none!important}
@@ -359,7 +331,7 @@ a{text-decoration:underline!important;}
 
 @media screen and (min-width:360px) and (max-width:500px) {
   #content .todos-itens #container {width: 100%;margin-left: 0!important;}
-	#content .todos-itens {margin:15px auto;}
+  #content .todos-itens {margin:15px auto;}
   #content .todos-itens .element{width: 48%;margin: 5px 0 0 5px!important;}
   #content .todos-itens li img{width:100%;}
   #content .todos-itens .yt-menu,
@@ -367,19 +339,19 @@ a{text-decoration:underline!important;}
 }
 
 @media screen and (max-width: 359px) {
-	
-	#content .todos-itens #container {width: 100%;margin-left: 0!important;}
-	#content .span8 {width:100%;padding:8%}
-	.destaques > .span4 {margin-left:0!important;}
-	#content .todos-itens {margin:15px auto;}
-	#content .todos-itens .element{width:100%; margin:5px 0!important}
-	#content .todos-itens li img{width:100%;}
-	#content .todos-itens .yt-menu,
-	#content .todos-itens .container-image{height:150px!important; max-width:360px;}
-	#page_nav .mais{float: none!important;width: 270px!important;margin: 0 auto!important;}
-	#page_nav .container-ajax-loader{position:relative;margin:0 auto!important;top:0;left:0;}
-	
-	#carrossel-interna .slider li {width: 137px!important;float: left;}
+  
+  #content .todos-itens #container {width: 100%;margin-left: 0!important;}
+  #content .span8 {width:100%;padding:8%}
+  .destaques > .span4 {margin-left:0!important;}
+  #content .todos-itens {margin:15px auto;}
+  #content .todos-itens .element{width:100%; margin:5px 0!important}
+  #content .todos-itens li img{width:100%;}
+  #content .todos-itens .yt-menu,
+  #content .todos-itens .container-image{height:150px!important; max-width:360px;}
+  #page_nav .mais{float: none!important;width: 270px!important;margin: 0 auto!important;}
+  #page_nav .container-ajax-loader{position:relative;margin:0 auto!important;top:0;left:0;}
+  
+  #carrossel-interna .slider li {width: 137px!important;float: left;}
   #carrossel-interna .slider li a {width:122px!important;}
 
 }
