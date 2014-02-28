@@ -61,9 +61,9 @@ class mainActions extends sfActions
     
     if($this->term==""){
       $this->term = "ver todo o conteúdo";
-	  $this->verify = true;
-	}
-	
+    $this->verify = true;
+  }
+  
     if($this->term) {
       //$this->assets = Doctrine_Core::getTable('Asset')->getForLuceneQuery($query);
       //$this->query = Doctrine_Core::getTable('Asset')->getQueryFromLucene($this->term);
@@ -204,11 +204,11 @@ class mainActions extends sfActions
       $this->getResponse()->setTitle('cmais+ O portal de conteúdo da Cultura', false);
     else
       $this->getResponse()->setTitle('Resultado de busca para "'.$this->term.'" cmais+ O portal de conteúdo da Cultura', false);
-	
-	if($this->term == "ver todo o conteúdo" && !$this->verify)
-		$this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'/tudo');
-	else
-		$this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'/search');
+  
+  if($this->term == "ver todo o conteúdo" && !$this->verify)
+    $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'/tudo');
+  else
+    $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'/search');
   }
 
  /**
@@ -467,7 +467,15 @@ class mainActions extends sfActions
                   $this->getRequest()->setParameter('date', $param3);
                   $this->forwardObject($parm2Object);
                 }
-                
+                else if($parm2Object->slug == "artistas"){
+                  $this->getRequest()->setParameter('artista', $param3);
+                  $this->forwardObject($parm2Object);
+                }
+                else if($parm2Object->slug == "musicas"){
+                  $this->getRequest()->setParameter('letter', $param3);
+                  $this->forwardObject($parm2Object);
+                }
+                                
               }
               $this->forward404();
             }
