@@ -1,0 +1,295 @@
+/*section{background:blue!important;}*/
+a:hover, a:visited{color:#fff!important;}
+a{text-decoration:underline!important;}
+
+.header--fixed {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+.bounceOutUp{top:-90px}
+
+.header-desktop{display:none;}
+.header-tablet{display:block; position: fixed;z-index: 50000;background: #fff;width: 100%;top:0;}
+.header-mobile{display:none;}
+.imagem-topo{position: absolute;width: 220px;bottom: 0;left: 50%;margin-left: -81px;}
+.header-tablet{height: 70px;-moz-box-shadow: 0 0 30px 1px #C2C2C2;-webkit-box-shadow: 0 0 30px 1px #C2C2C2;box-shadow: 0 0 30px 1px #C2C2C2;-moz-box-shadow:inset 0 0 30px 5px #e5e5e5 ;}
+.header-tablet a.logo-mobile{margin:1px 0 0 35px;overflow: hidden;float: left;max-width:125px;display: block;left: 5%;}
+.header-tablet a.btn-menu{overflow: hidden;float:right!important;margin: 11px 30px 0 0px!important;width:50px!important;}
+.header-tablet .search-mobile{background:#FCF2AE;overflow: hidden;}
+.header-tablet .search-mobile form{margin: 2% 3%;max-width: 255px; float:right;}
+.header-tablet .search-mobile form input {width: 70%;height: 25px;font-size: 1.3em;line-height: 25px;}
+.header-tablet button.alca{margin: 0 auto;position: absolute;bottom: 0;left: 50%;background: #e5e5e5;border: none;width: 100px;margin-bottom: 5px;border-radius: 10px;height: 16px;display:none;}   
+
+/* menu principal geral */
+.topo-vila .container {height: 65px;}
+.navbar .container img{width: 128px;}
+#nav-tablet{width: 510px;padding:0;background: #FFFFFF;display: none; position: absolute;z-index: 40000;top: 70px;right:0px;}
+#nav-tablet a{padding: 1% 0;text-decoration: none;font-family: 'din-blackregular', Arial, Helvetica, sans-serif;width: 100%;border-bottom: 1px dotted #333;font-size: 1.2em;float: left;text-align: right;text-transform: uppercase;color: #333!important;line-height: 37px;}
+#nav-tablet a:last-child{border:none}
+#nav-tablet img{float: right;width: 35px; margin:2px 24px 0 9px;}
+.navbar-fixed-top {margin-bottom: 0;position: absolute;}
+.navbar-inverse .navbar-inner.topo-vila {background:#fff!important;height: 65px!important;padding: 4px 6px;}
+.navbar .container {width: auto;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/icon_menu_mobile.png) no-repeat right;}
+.last{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/icon_fecha.png) no-repeat right;}
+/*desaparece se for mobile o topo dos pais*/
+.topo-vila .nav {display: none;}
+.header-bar{display: none;}
+.form-search{display: none;}
+/* #content {background: #FEE132;} */
+.nav-mobile{display:none;}
+#content{top:90px!important;}
+
+/* index */
+#carrossel-destaque{display:none;}
+#carrossel-destaque-mobile{display:block;}
+#carrossel-personagem .slider .nome {color:#d71c0d!important;font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif!important; }
+#carrossel-personagem {padding: 0 20px;}
+#carrossel-personagem .slider .nome {font-size: 1.7em;}
+.mpc_ls .mpc_ls_ui .mpc_ls_ui_button.style02 {margin-top: -107px;}
+.destaques.span12{width:100%; padding: 0 20px!important;}
+.destaques.span8{width: 100%!important;padding: 0 20px;}
+.destaques.span8 > .span4{width:31.9%!important; float:left;}
+.span4.banner{display:none!important;}
+
+/* assets interna */
+.interna #content { top:70px!important; margin-bottom:60px!important; }
+
+/* Acessibilidade */
+.acessibilidade .box-acessibilidade {width:100%!important}
+.acessibilidade .fundo-acessibilidade {width:50%!important; margin:0 auto;}
+.acessibilidade #content .filtro h1 {font-size: 45px;}
+
+/* Na TV */
+.na-tv #content{top:90px!important; margin:0 5%;  }
+.na-tv #content .filtro h1{font-size:2em;}
+.na-tv #content .fundo-na-tv{position: relative;top: 10px;margin: 0 auto;width: 81%;}
+.na-tv #content .ola{font-size:48px;}
+.na-tv #content .container-horarios{float:none; margin:10px auto!important;}
+.na-tv #content .container-na-tv p {font-size:1.2em; line-height:1.25em;margin-bottom:10px;max-width: 100%!important; padding-bottom:1%;}
+.na-tv #content .container-na-tv .container-horarios .box-horario {width: 47%;}
+.na-tv #content .container-na-tv .container-horarios {width:100%;}
+.na-tv #content .filtro {margin-bottom:0!important;}
+
+/* pais capa */
+#carrossel-interna-artigo{height:auto!important;}
+#carrossel-interna-artigo .slider .videoorimage{width:200px}
+#carrossel-interna-artigo .slider-mask{width:100%!important;}
+#carrossel-interna-artigo .slider li{height:auto!important;}
+#carrossel-interna-artigo .btn-carrossel,
+#carrossel-interna-artigo .btn-carrossel:hover,
+#carrossel-interna-artigo .btn-carrossel:visited{color:#00c76e!important;text-decoration:none!important; }
+#carrossel-interna-artigo .titulo-slider h2{padding:0; margin:0;font-size: 2em;line-height: 1.3em; text-decoration:underline; }
+#carrossel-interna-artigo .slider .descritivo p {font-size: 1.2em!important;line-height: 1.3em!important;margin-top: 15px;text-decoration: none!important;}
+#carrossel-interna-artigo .arrow-left.arrow,
+#carrossel-interna-artigo .arrow-right.arrow{display:none;}
+#carrossel-interna-artigo .container-itens{width: 100%!important;bottom: 0;top: auto!important;}
+#carrossel-interna-artigo .slider .descritivo{width:90%; padding:5%!important; }
+.cuidadores .divisa{width:90%; margin: 0 5%!important;}
+.cuidadores .span8{width: 90%!important; margin:0 5%!important}
+.cuidadores .selecione .barra-selecao h3{width:220px!important;}
+.cuidadores .selecione .btn-group{margin: 0!important;width: 210px;float: right;}
+.cuidadores .selecione .dropdown-toggle{width:210px!important;}
+
+
+/* Pais Artigos */
+.cuidadores .filtro  {margin: 0 2% 20px 2%!important;width: 96%;top: 90px;}
+.cuidadores .container-cuidadores .col-esq article .redes-artigo {display:none}
+.cuidadores .container-cuidadores h3 {margin:0 auto;width: 70%;}
+.parceiros-cuidadores p{text-align:left;font-size:1.5em;padding: 10px;display: block;float: left;}
+.cuidadores .img-topo-asset {width:90%!important}
+.cuidadores .container-cuidadores .col-dir .box-ler .titulo-box, .cuidadores .container-cuidadores .col-dir .box-brincarjunto .titulo-box {width: auto!important}
+.cuidadores .col-direita,#comente-este-artigo,.fb_iframe_widget,#div-gpt-ad-1385748525978-0{display: none!important;}
+.cuidadores .container-cuidadores .col-dir{width:100%!important;margin:0!important}
+.cuidadores .container-cuidadores .col-esq {width:100%!important; padding:5%!important;}
+.cuidadores .container-cuidadores .col-esq article p {font-size: 1.25em!important; line-height:1.25em;}
+.cuidadores .container-cuidadores .col-esq article ul{margin:0 0 10px 0;}
+.cuidadores .container-cuidadores .col-esq article ul li{font-size: 1.25em!important;line-height: 1.25em; font-size:1em;}
+.cuidadores .container-cuidadores .col-esq article ul li:before{content:"-"}
+.cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre {max-width:none!important;width: 100%;bottom:}
+.cuidadores .destaques .jogos{width:32%!important;float:left;}
+.cuidadores .destaques .videos,
+.cuidadores .destaques .atividades{width:32%!important;float:left;margin-left:2%;}
+.cuidadores .container-cuidadores .col-dir .box-sobre {margin-bottom: 8%!important;min-height: 170px;}
+.cuidadores .container-cuidadores .col-dir .box-sobre .bottom-box-sobre {width: 100%;bottom: -22%!important;position: absolute;}
+.cuidadores .container-cuidadores .col-dir .box-sobre a{max-width: 95%;text-align: center;}
+.cuidadores .todos-assets {width: 41%!important;margin-top: 2%;}
+.cuidadores .todos-assets p {font-size: 0.7em!important}
+.cuidadores #content .filtro h1 {font-size: 2em!important;line-height: 63px; height:63px; padding: 0!important; margin:0!important;}
+.ac-explicacao{width: 0!important}
+.primeiro-p {font-size:1.2em;color:#666}
+.cuidadores .container-cuidadores .col-dir .box-ler p {color: #666;font-size: 1.1em;}
+
+
+/* Personagens */
+.personagens #content{margin: 100px 5%;top:0!important;min-height:0;}
+.personagens #content .conteudo-asset {width:100%;}
+.personagens #content .q-pers{width:22.8%;height:117px;}
+.personagens footer{margin:0}
+.personagens #content h1{padding:0!important; font-size: 2.9em;}
+.personagens #content h1 span{margin:5px!important;}
+.personagens #content #container-personagens a {width:100%;height:100%;}
+.personagens #content #container-personagens a p { background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/bg-transparente.png)  repeat; color:#d71c0d; font-size: 1.2em;font-family: 'din-blackregular',Arial, Helvetica, sans-serif!important;}
+.personagens #content .filtro .span2 {margin: 0!important;width: 100%;} 
+.personagens #content .filtro .inner.personagem .active img {top: -23px!important;}
+.personagens #content .filtro .inner.personagem img {top: -23px!important; opacity:1;-moz-opacity:1;-webkit-opacity:1;-ms-opacity:1;-o-opacity:1}
+.personagens #content .filtro .filtro-personagem {margin: 0 auto;width: 478px;}
+.personagens #content .filtro .filtro-personagem li {width: 50px;height: 50px;margin: 1%;}
+.personagens #content #carrossel-interna-personagem {float:none; margin:0 auto;}
+.personagens #content #carrossel-interna-personagem .container-itens {top: 560px;}
+.personagens #content .desc-personagem .descritivo article{padding: 0 23px!important;}
+.personagens #content .dest-pers .span4.pull-left{display:none;}
+.personagens #content .dest-pers .span8{width: 100%;margin: 0!important;padding: 5%;}
+.personagens .dest-pers a p{width:63%!important;}
+.personagens #content #page_nav{margin:0!important;}
+.personagens #content #page_nav .container-ajax-loader{left: 5%;}
+  
+/* interna assets(jogos, atividades, videos) */
+.interna.jogos #content,
+.interna.atividades #content,
+.interna.videos #content {top: 0;margin-bottom: 60px!important;margin: 2%;}
+
+.interna.atividades #content h1{font-size:30px;}
+
+.interna.videos #player{width:450px; height:270px;}
+.todos-assets {margin-top: 10px;}
+
+.interna.jogos .todos-assets p{font-size:18px!important;}
+.interna.videos .todos-assets p{font-size:18px!important;}
+.interna.atividades #content .todos-assets p{font-size:18px!important;}
+
+.interna.jogos .conteudo-asset p a {float: none;width: 220px;margin: 20px auto;display: block;}
+.interna.videos .conteudo-asset p a {float: none;width: 220px;margin: 20px auto;display: block;}
+.interna.atividades .conteudo-asset p a {float: none;width: 220px;margin: 20px auto;display: block;}
+
+.interna.atividades .paginas span{width:100%;}
+.interna.atividades .changePicture{float:left; margin-right:5px}
+.interna.atividades .option-assets.download{display:none;}
+.interna.atividades .option-assets.print{float:left;}
+
+/*capa jogos, atividades, videos*/
+.interna.videos .span10.destaque-filtro,
+.interna.jogos .span10.destaque-filtro,
+.interna.atividades .span10.destaque-filtro{display:none;}
+
+.interna.videos .filtro .span12,
+.interna.atividades .filtro .span12,
+.interna.jogos .filtro .span12{border:none!important;}
+
+.interna.jogos #content h1 .icones-sprite-interna,
+.interna.atividades #content h1 .icones-sprite-interna,
+.interna.videos #content h1 .icones-sprite-interna {margin: 4px 13px -5px 9px!important;}
+
+.interna.videos .filtro .span12 h1,
+.interna.atividades .filtro .span12 h1,
+.interna.jogos .filtro .span12 h1{line-height:1.4em!important; font-size:1.9em!important; height:1.4em!important;}
+
+.interna.videos .filtro .span12 nav.span2,
+.interna.atividades .filtro .span12 nav.span2,
+.interna.jogos .filtro .span12 nav.span2{display:none;}
+
+#page_nav{margin: 16% 5%!important;}
+
+/*box pais*/
+.pais .redes {display:none!important}
+.box-pais .dica-pai{width:30%!important;height:auto!important;}
+.box-pais .artigo{width:30%!important;min-height: 0!important;}
+.box-pais .parceiros{width:30%!important;height:auto!important;}
+.box-pais .artigo p {height:auto!important;}
+.pais .fechar-toogle.ativo {width:100%!important}
+.box-pais.span12 {margin-left: 0!important;}
+
+/*box pais categorias*/
+#categoria-box-pais .pais .redes {display:none!important}
+#categoria-box-pais .box-pais .dica-pai{width:30%!important;height:auto!important;}
+#categoria-box-pais .box-pais .artigo{width:30%!important;min-height: 0!important;}
+#categoria-box-pais .box-pais .parceiros{width:30%!important;height:auto!important;}
+#categoria-box-pais .box-pais .artigo p {height:auto!important;}
+#categoria-box-pais .pais .fechar-toogle.ativo {width:100%!important}
+#categoria-box-pais .box-pais.span12 {margin-left: 0!important;}
+
+
+/*categorias *, habitos*/
+.campanhas #content .container-campanhas iframe {width: 50%;margin-top: -12%;}
+.campanhas #content .container-campanhas img {width: 47%;}
+.campanhas #content .btn-group {width: 100%;margin: 10% 0!important;right: 0;}
+.campanhas #content .container-campanhas {margin-top: 40px;}
+
+/*footer*/
+footer {margin-top: 84px;margin-top:110px;}
+footer #no-mobile{display: block;}
+footer #mobile{display: none;}
+footer .mapa{margin:2%;}
+footer .mapa .span12 {border: 1px solid #f0f0f0;}
+footer .mapa a{font-size:1.2em;color: #000!important;}
+footer #personagens-rodape{display: none!important;}
+footer .relacionados ul{display: none;}
+footer nav{display: block!important;}
+footer .relacionados-mobile{width: 96%;padding: 2%;overflow: hidden;}
+footer .relacionados-mobile a{width: 23%;float:left;margin-left: 2%;}
+footer .relacionados-mobile a > img{margin:0 auto;display: block;}
+footer .logos .col-esq a {margin-left: 32%!important;}
+footer .logos .col-central a {margin: 33px 0 0 52px!important;}
+footer .logos .col-dir{border:none!important;}
+footer .logos .col-dir a {margin: 39px 0 0 22px;}
+.fifty{width:48%!important;}
+footer .relacionados h1{margin-left:5%;width: 90%;}
+footer .logos li{width: 33%;display: block;float: left;height:20%;}
+footer .copyright {height: 30px;margin-left: 2%;}
+
+@media screen and (min-width:860px) and (max-width:979px) {
+  .interna.campanhas .container-campanhas{margin: 2%;}
+  .container-campanhas .texto{width:60%!important;float:left;}
+  .container-campanhas .asset{margin-top: 0!important;float: left!important;}
+  .campanhas #content .container-campanhas .asset iframe{width: 100%}
+  .btns-download {float: left;width: 100%;}
+
+}
+
+@media screen and (min-width:501px) and (max-width:859px) {
+  .interna.campanhas .container-campanhas{margin: 2%;}
+  .container-campanhas .texto{width:100%!important;float:left;}
+  .container-campanhas .asset{float: left!important;}
+  .campanhas #content .container-campanhas .asset iframe{width: 100%}
+  .btns-download {float: left;width: 100%;}
+}
+
+@media screen and (min-width:601px) and (max-width:979px) {
+  #content .todos-itens #container {width: 100%;margin-left: 0!important;}
+  #content .todos-itens {margin:15px auto;}
+  #content .todos-itens .element{width: 48%;margin: 5px 0 0 10px!important;}
+  #content .todos-itens .yt-menu,
+  #content .todos-itens .container-image{height:200px!important; max-width:979px;}
+  #content .todos-itens .container-image img{width:100%;}
+  #content .todos-itens li .yt-menu img{max-width: 800px!important;width: 600px!important;position: relative;left: -77px!important;height: 450px!important;top: -85px!important;}
+  #page_nav .container-ajax-loader{float:left!important;}
+  
+  .personagens .filtro .span2 {width: 98%;}
+  .personagens #content .filtro .filtro-personagem {margin-left: 0 auto;}
+  .personagens .filtro .filtro-personagem li {width: 10%;height: 58px;margin: 1%;}
+  .personagens .filtro .inner {width: 100%;height: auto;}
+  .personagens .desc-personagem {float: right;}
+  .personagens #carrossel-interna-personagem .container-itens {top: 36%;}
+}
+
+@media screen and (min-width:501px) and (max-width:600px) {
+  #content .todos-itens #container {width: 100%;margin-left: 0!important;}
+  #content .todos-itens {margin:15px auto;}
+  #content .todos-itens .element{width: 48%;margin: 5px 0 0 5px!important;}
+  #content .todos-itens li img{width:100%;}
+  #content .todos-itens .yt-menu,
+  #content .todos-itens .container-image{height:150px!important; max-width:310px;}
+  #page_nav .container-ajax-loader{float:left!important; left:8%!important}
+  
+  .personagens .filtro .span2 {width: 98%;}
+  .personagens #content .filtro .filtro-personagem {margin-left: 3%;}
+  .personagens .filtro .filtro-personagem li {width: 10%;height: 58px;margin: 1%;}
+  .personagens .filtro .inner {width: 100%;height: auto;}
+  .personagens .desc-personagem {float: right;}
+  .personagens #content .filtro .descritivo {padding: 20px;width: 90%;float: left;}
+  .personagens #carrossel-interna-personagem .container-itens {top: 36%;}
+
+}
+
+#sfWebDebugBar{display:none!important}
+
+
+
+
+
