@@ -12,11 +12,11 @@ a:hover, a:visited{color:#fff!important;}
 .header-mobile a.logo-mobile{margin:1px 0 0 10px;overflow: hidden;float: left;max-width:125px;display: block;left: 5%;}
 .header-mobile a.btn-menu{margin-top:5px;overflow: hidden;float:right;margin: 11px 15px 0 0px;width:50px;}
 .header-mobile .search-mobile{background:#FCF2AE;overflow: hidden;}
-.icone-busca {background-size: 74%;height: 38px;background-position: 10px -380px;}
+.icone-busca {background-size: 74%;height: 38px;background-position: 9px -355px;width: 38px;}
 .icone-busca:hover {background-position: 10px -310px;height: 38px;}
 .header-mobile .search-mobile form{margin: 2% 0% 2% 2%;max-width: 255px; float:right;}
 .header-mobile .search-mobile form input {width: 69%;height: 25px;font-size: 1.1em;line-height: 25px;text-align: center;}
-.imagem-topo{position: absolute;width: 125px;bottom: 0;left: 50%;margin-left: -29px;display: none}
+.imagem-topo{position: absolute;width: 125px;bottom: 0;left: 50%;margin-left: -29px;}
 #header-bar-mobile{display:none;}
 #header-bar-mobile .content h1{width:50%;display: block;float: left;}
 #nav-mobile{width:100%;padding: 0;background: #ffffff; position: absolute;z-index: 40000;top: 70px;display:none;}
@@ -87,22 +87,23 @@ a{text-decoration:underline!important;}
 .destaques.span8{width:100%!important;padding:0 8%;}
 .bgtotal{padding-bottom: 10px;}
 .destaques .videos .yt-menu img {max-width:800px; top:-40px!important;}
-#carrossel-personagem {padding: 0 8%; margin-top:20px!important; max-width:100%!important;}
+#carrossel-personagem {padding: 0 8%; margin-top:10px!important; max-width:100%!important;}
 #carrossel-personagem h1{display:none;}
 #carrossel-personagem .slider .nome {color:#d71c0d!important;font-size: 0.9em!important;font-family:'din-blackregular',Arial, Helvetica, sans-serif;}
 #carrossel-personagem .slider li{width: 80px!important; height:100px!important;}
 #carrossel-personagem .slider .inner{width:75px!important; height:75px!important; }
 #carrossel-personagem .slider-mask-wrap {height:108px!important}
 #carrossel-personagem .slider-nav{display:none!important;}
+#slider-mobile{height:115px!important}
 
 
 /*acessibilidade*/
 .acessibilidade .box-acessibilidade {width: 100%!important;}
 .acessibilidade #content .filtro h1 {font-size:1.2em;padding: 0;height: 56px;margin: 0;line-height: 56px;}
 .acessibilidade .fundo-acessibilidade {width:100%!important; margin:0 auto;display: none}
-.icone-acessibilidade{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/icones-interna.png) no-repeat top left;background-position: -125px -544px;margin: 3% 0 0 20%;width: 15%;height: 40px;}
+.icone-acessibilidade{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/icones-interna.png) no-repeat top left;background-position: -125px -544px;margin: 3% 0 0 18%;width: 15%;height: 40px;}
 
- 
+
 
 /* na tv */
 .na-tv #content{margin:20px 5%}
@@ -113,7 +114,7 @@ a{text-decoration:underline!important;}
 .na-tv #content .container-na-tv {padding-bottom:20px}
 .na-tv #content .container-na-tv .container-horarios {width:100%; max-height:500px; float:left;}
 .na-tv #content .box-horario{width:98%; margin:0 0 10px 0;}
-.na-tv .icone-na-tv-grande {background-position: -125px -466px;margin: -1% 0 0 28%!important;}
+.na-tv .icone-na-tv-grande {background-position: -125px -466px;margin: -1% 0 0 33%!important;width: 44px;}
 .na-tv footer #mobile{margin-top:-70px;}
 
 
@@ -132,7 +133,7 @@ a{text-decoration:underline!important;}
 #carrossel-interna-artigo .arrow-left.arrow,
 #carrossel-interna-artigo .arrow-right.arrow{display:none;}
 #carrossel-interna-artigo .slider li{height:auto!important;}
-#carrossel-interna-artigo .slider .descritivo{width:90%; padding:5%!important; }
+#carrossel-interna-artigo .slider .descritivo{width:90%; padding: 0 5%!important; }
 #carrossel-interna-artigo .btn-carrossel,
 #carrossel-interna-artigo .btn-carrossel:hover,
 #carrossel-interna-artigo .btn-carrossel:visited{color:#00c76e!important;text-decoration:none!important; }
@@ -142,7 +143,7 @@ a{text-decoration:underline!important;}
 #carrossel-interna-artigo .container-itens{width: 100%!important;bottom: 0;top: auto!important;}
 
 /*  Pais Artigos */
-.cuidadores .icone-cuidadores-grande {background-position: 0 -563px;margin: -3% 0 0 13%!important;width: 16%;}
+.cuidadores .icone-cuidadores-grande {background-position: 0 -563px;margin: -3% 0 0 14%!important;width: 40px;}
 .cuidadores #content{margin:1%;}
 .cuidadores #content h1 a{margin-top:10px;}
 .cuidadores .filtro  {margin: 20px auto!important;width: 96%;}
@@ -164,7 +165,7 @@ a{text-decoration:underline!important;}
 .cuidadores .todos-assets {width: 90%!important;font-size: 1em!important;background-image:none!important;background-color: #1DC252;margin-right: 7%;display: block;border-radius: 13px;}
 .cuidadores .container-cuidadores .col-esq article section a {font-size: 1em!important}
 .cuidadores .icone-voltar-artigo {height:0px!important}
-.cuidadores #content .filtro h1 {height: 130px;font-size:1.2em!important;line-height: 3em;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;padding: 0 3%;}
+.cuidadores #content .filtro h1 {height: 56px!important;font-size:1.2em!important;line-height: 3em;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;padding: 0 3%;}
 .artigo #content .container-image{height: 150px;overflow: hidden;} 
 .artigo #content header h1 {overflow: visible!important;white-space:normal!important;}
 .cuidadores .container-cuidadores .col-dir .box-ler p {height: 57px!important;}
@@ -172,6 +173,10 @@ a{text-decoration:underline!important;}
 .parceiros-cuidadores, .na-tv .container-na-tv,.acessibilidade .box-acessibilidade p{text-align: left;font-size:1em;line-height: 1.25em;}/*texto corrido celular*/
 .primeiro-p {font-size:1.2em;color:#666}/*texto corrido celular, primeiro p*/
 .cuidadores .container-cuidadores .col-dir .box-ler p {color: #666;font-size: 1.1em;}
+.destques{display:none!important}
+.cuidadores #content .box-ler{display:none}
+.cuidadores #content .destaques{display:none}
+.cuidadores #content .box-sobre .links a:hover {color:#00aa52!important}
 
 /* personagens */
 .personagens #content{margin: 20px 5%;}
@@ -262,12 +267,13 @@ a{text-decoration:underline!important;}
 .interna.atividades .todos-assets i {display:none!important;}
 
 
-.interna .conteudo-asset h2{line-height: 32px;}
+.interna .conteudo-asset h2{line-height: 32px;font-size: 1.2em;}
 
 .interna.videos #player{width:270px; height:169px;}
-.interna.atividades .paginas span{width:100%;}
+.interna.atividades .paginas span{width:100%;font-size:1.2em}
 .interna.atividades .changePicture{float:left; margin-right:5px}
 .interna.atividades .option-assets.download{display:none;}
+.interna.atividades .option-assets{font-size:1.2em}
 .interna.atividades .option-assets.print{float:left;}
 
 /*capa jogos, atividades, videos*/
@@ -286,6 +292,8 @@ a{text-decoration:underline!important;}
 .interna.videos .filtro .span12 nav.span2,
 .interna.atividades .filtro .span12 nav.span2,
 .interna.jogos .filtro .span12 nav.span2{display:none;}
+
+.relacionados h2 {font-size: 1.1em}
 
 #page_nav{margin-top: 25%!important;margin-bottom: 10%;}
 
@@ -369,7 +377,7 @@ a{text-decoration:underline!important;}
 @media screen and (max-width: 359px) {
 	
 	#content .todos-itens #container {width: 100%;margin-left: 0!important;}
-	#content .span8 {width:100%;padding:8%}
+	#content .span8 {width:100%;padding:0 8%}
 	.destaques > .span4 {margin-left:0!important;}
 	#content .todos-itens {margin:15px auto;}
 	#content .todos-itens .element{width:100%; margin:5px 0!important}
@@ -383,5 +391,18 @@ a{text-decoration:underline!important;}
   #carrossel-interna .slider li a {width:122px!important;}
 
 }
+
+@media only screen and (max-width: 500px) and (min-width: 321px){
+	.interna.jogos #content h1 .icones-sprite-interna {margin: -4% 0 0 36%!important;}
+	.interna.jogos #content .span12 h1, .interna.atividades #content .span12 h1, .interna.videos #content .span12 h1{line-height: 1em!important;}
+	.interna.atividades #content h1 .icones-sprite-interna{margin: -5% 0 0 32%!important;}
+	.icone-acessibilidade{background-position: -101px -544px;}
+	.cuidadores .icone-cuidadores-grande {background-position: 0 -563px;margin: -2% 0 0 23%!important;width: 9%;}
+	.interna.videos #content h1 .icones-sprite-interna {margin: -4% 0 0 34%!important;}
+}
+
+
+
+
 
 
