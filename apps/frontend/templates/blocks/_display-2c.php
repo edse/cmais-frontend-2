@@ -70,6 +70,8 @@
                       <param name="wmode" value="opaque">
                       <embed allowfullscreen="true" allowscriptaccess="always" src="http://www.youtube.com/p/<?php echo $displays[0]->Asset->AssetVideoGallery->getYoutubeId(); ?>?version=3&amp;hl=en_US&amp;fs=1" wmode="opaque" type="application/x-shockwave-flash" width="640" height="390"></embed>
                     </object>
+                  <?php elseif($displays[0]->getHtml() != ""): ?>
+                    <?php echo html_entity_decode($displays[0]->getHtml()) ?>
                   <?php else: ?>
                   <a class="" href="<?php echo $displays[0]->retriveUrl() ?>" title="<?php echo $displays[0]->getTitle() ?>">
                   <img src="<?php echo $displays[0]->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $displays[0]->getTitle() ?>" name="<?php echo $displays[0]->getTitle() ?>" />

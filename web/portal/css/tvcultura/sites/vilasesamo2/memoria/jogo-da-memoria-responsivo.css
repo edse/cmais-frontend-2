@@ -6,9 +6,9 @@ a{outline:none;text-decoration:none;color:#DA4930}
 .conteudo p{clear:none}
 .casa-memoria{position:relative;}
 #content .conteudo-asset{width:100%;}
-#content .conteudo-asset p#gameScore{width:275px;text-transform: uppercase;text-align: left;white-space: nowrap;line-height: 47px;}
-#game{top:0;left:0;bottom:0;right:0;position:absolute; display:block;overflow:hidden;max-width:940px;min-height:687px;}
-#gameStats{width:80%;font-size:16px;height:auto; clear:both;position: absolute;top: 152px;left: 75px;}
+#content .conteudo-asset p#gameScore{text-align:right!important;width:275px;text-transform: uppercase;text-align: left;white-space: nowrap;line-height: 48px; padding-right: 30px;}
+#game{top:0;left:0;bottom:0;right:0;position:absolute; display:block;overflow:hidden;max-width:960px;min-height:687px;}
+#gameStats{width:84%;font-size:16px;height:auto; clear:both;position: absolute;top: 130px;left: 75px;}
 #qrcode{float:left;cursor:pointer;position:relative;margin-right:20px;padding:0 0 0 15px}
 #gameScore{display:none;text-align:center;height:40px;line-height:40px;float: right;margin-left: 10px;min-width: 250px;}
 #qrcode:before,#credit:before{position:absolute;content:"";width:16px;height:16px;border-radius:8px;box-shadow:inset 0 0 3px #ddd;top:2px}
@@ -24,8 +24,8 @@ a{outline:none;text-decoration:none;color:#DA4930}
 #playground{width: 100%; text-align:center;position:relative;}
 
 /*#cards{position:absolute;top:0;left:0;bottom:0;right:0;display:none;z-index:2}*/
-#cards{display:none;width:768px;height:476px;position: relative;top: 219px;left: 86px;}
-.card{-webkit-perspective:600px;-moz-perspective:600px;width:110px;height:145px;position:absolute;-moz-transition:all .3s;-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s;cursor:pointer}
+#cards{display:none;width:711px;height:476px;position: relative;top: 200px;left: 86px;}
+.card{-webkit-perspective:600px;-moz-perspective:600px;width:114px;height:149px;position:absolute;-moz-transition:all .3s;-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s;cursor:pointer}
 .reset{box-shadow:0 0 30px #fff;}
 #gameIntro{margin: 20% auto 0 auto; max-width:82%;-moz-transition:opacity 1s ease-out;-webkit-transition:opacity 1s ease-out;-o-transition:opacity 1s ease-out;transition:opacity 1s ease-out}
 #gameIntro img{padding:20px; max-height:100%; max-width:100%; width:auto;}
@@ -40,8 +40,8 @@ a{outline:none;text-decoration:none;color:#DA4930}
 .face{width:100%;height:100%;position:absolute;-webkit-transition-property:opacity, transform, box-shadow;-webkit-transition-duration:.5s;-webkit-backface-visibility:hidden;-moz-transition-property:opacity, 0 box-shadow;-moz-transition-duration:.5s;-moz-backface-visibility:hidden;-o-transition-property:opacity, 0 box-shadow;-o-transition-duration:.5s;-o-backface-visibility:hidden}
 .back{-webkit-transform:rotate3d(0,1,0,-180deg);-moz-transform:rotate3d(0,1,0,-180deg);z-index:8;border-radius:4px}
 .card:hover .face,.card-flipped .face{box-shadow:0 0 10px #ccc}
-.card-flipped .front{-webkit-transform:rotate3d(0,1,0,180deg) scale(1.1);-moz-transform:rotate3d(0,1,0,180deg) scale(1.1);-o-transform:scale(1.1);z-index:8}
-.card-flipped .back{-webkit-transform:rotate3d(0,1,0,0deg) scale(1.1);-moz-transform:rotate3d(0,1,0,0deg) scale(1.1);-o-transform:scale(1.1);z-index:10}
+.card-flipped .front{-webkit-transform:rotate3d(0,1,0,180deg) scale(1.0);-moz-transform:rotate3d(0,1,0,180deg) scale(1.0);-o-transform:scale(1.0);z-index:8}
+.card-flipped .back{-webkit-transform:rotate3d(0,1,0,0deg) scale(1.0);-moz-transform:rotate3d(0,1,0,0deg) scale(1.0);-o-transform:scale(1.0);z-index:10}
 #splash.match{top:0;bottom:0;opacity:1;-moz-transition:all .8s ease .2s;-webkit-transition:all .8s ease .2s;-o-transition:all .8s ease .2s;transition:all .8s ease .2s;-moz-transform:scale(1);-webkit-transform:scale(1);-o-transform:scale(1);transform:scale(1)}
 #splash:target{top:0;bottom:0;opacity:1}
 #splash span{position:relative;display:inline-block;max-width:100%;vertical-align:bottom;background-color:#fff;border-radius:5px;box-shadow:0 0 10px #000;pointer-events:none;margin:0 18px;padding:5px 0}
@@ -72,11 +72,47 @@ body.appcache-allinfo #appcache_info.appcache-noupdate,body.appcache-allinfo #ap
 #appcache_info.appcache-obsolete:before{content:'This website is obsolete. Reload to see new version.'}
 #appcache_info.appcache-error:before{content:'Unable to check for offline content updates.'}
 #appcache_info.appcache-cached:before{content:'Download complete. Ready to be accessed offline.'}
-#click{margin-right:20px}
-#result p{color:#00af9f;text-transform:uppercase;font-size:18px;font-family:ubuntu, sans-serif;line-height:24px;margin:40px 0}
+#click{margin-right:20px; display:inline;}
+#timer{display:inline;}
+#result p{color:#00af9f;text-transform:uppercase;font-size:18px;font-family:ubuntu, sans-serif;line-height:24px;margin: 30px 0;}
 #mute.melody:before,:fullscreen #fullscreen:before,:-moz-full-screen #fullscreen:before,:-webkit-full-screen #fullscreen:before{background-color:rgba(218,73,48,1);box-shadow:0 0 5px rgba(218,73,48,0.7)}
 #credit,#game.play #gameScore,#game.play #reset,#mute.music,#fullscreen.support,#game.play #cards,#appcache_info.appcache-updateready a,#appcache_info.appcache-obsolete a{display:block}
 #loading.loaded,#splash.disable{display:none}
 .card-removed,#splash span.matched:after{opacity:0}
 #cards { *margin-left:-760px; *margin-top:10px;}
 #game.play #gameIntro, #game.end #gameIntro { *display:none; }
+  
+@media screen and (min-width:501px) and (max-width:979px){
+  #cards{display:none;width:711px;height:476px;position: relative;top: 200px;left: 86px;margin:0 auto;}
+  .interna.jogos #content #casa{display:none}
+  .interna.jogos #content .conteudo-asset{padding:2%;}
+  .interna.jogos #content .casa-memoria{width: 100%; min-height: 500px;}
+  .interna.jogos #content #gameIntro{margin: 0% auto 0 auto;max-width: 100%;}
+  .interna.jogos #content section #playground{margin:0;}
+  .interna.jogos #content #gameStats{top:0; left:-10px; width:100%;}
+  .interna.jogos #content .conteudo-asset p#gameScore{right:-10px;font-size:1em;}
+  .interna.jogos #content #reset{width: 145px;height: 40px;background-size:100%}
+  .interna.jogos #content #gameScore{right: -10px;background: none;width: 50%;line-height: 40px;}
+  .interna.jogos #content #cards{top:47px; left:0;}
+  /*.interna.jogos #content #cards .card{width:84px;height:109px!important;}*/
+  .interna.jogos #content #splash {background-size: 70%;width: 100%;background-size: 70%;background-position: center center;}
+  .interna.jogos #content #result{margin: 52px auto 8px;width: 394px;background-size: 100%;}
+  .interna.jogos #content #game.end #gameComplete{top: 0;left: 50%;margin-left: -380px;}
+}
+
+@media screen and (max-width:500px){
+  .interna.jogos #content #casa{display:none}
+  .interna.jogos #content .conteudo-asset{padding:2%;min-height: 321px;}
+  .interna.jogos #content .casa-memoria{width: 100%; min-height: 289px;}
+  .interna.jogos #content #gameIntro{margin: 0% auto 0 auto;max-width: 100%;}
+  .interna.jogos #content section #playground{margin:0;}
+  .interna.jogos #content #gameStats{top:0; left:-10px; width:100%;}
+  .interna.jogos #content .conteudo-asset p#gameScore{right:-10px;font-size:1em;}
+  .interna.jogos #content #reset{width: 145px;height: 40px;background-size:100%}
+  .interna.jogos #content #gameScore{right: -10px;background: none;width: 50%;line-height: 40px;}
+  .interna.jogos #content #cards{top:47px; left:0;}
+  /*.interna.jogos #content #cards .card{width:62px;height:80px;}*/
+  .interna.jogos #content #splash {width: 100%;background-size: 40%;background-position: center center;}
+  .interna.jogos #content #result{margin: 52px auto 8px;width: 394px;background-size: 100%;}
+  .interna.jogos #content #game.end #gameComplete{top: -40px;left: -181px;}
+}
