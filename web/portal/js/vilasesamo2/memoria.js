@@ -26,43 +26,41 @@ var decent = styleSupport('transition');
 //create deck array
 var matchingGame = {};
 matchingGame.deck = [
-'bel-a','bel-b',
-'beto-a','beto-b',
-'comecome-a','comecome-b',
-'elmo-a','elmo-b',
-'enio-a','enio-b',
-'garibaldo-a','garibaldo-b',
-'grover-a','grover-b',
-'sivan-a','sivan-b',
-'zoe-a','zoe-b'
+/*'ie', 'ie-icon',
+'fx', 'fx-icon',
+'cr', 'cr-icon',
+'sf', 'sf-icon',
+'op', 'op-icon',
+'ns', 'ns-icon',
+'ms', 'ms-icon',
+'tb', 'tb-icon',
+'fm', 'fm-icon'
+*/
+'bel-a', 'bel-b',
+'bbeto-a', 'bbeto-b',
+'comecome-a', 'comecome-b',
+'elmo-a', 'elmo-b',
+'enio-a', 'enio-b',
+'garibaldo-a', 'garibaldo-b',
+'grover-a', 'grover-b',
+'ggrupo-a', 'ggrupo-b',
+'zoe-a', 'zoe-b'
 ];
 
 matchingGame.clone = $.extend(true, [], matchingGame.deck);
 
 //on document load the lazy way
-
 $(function(){
   var loader = new PxLoader();
 
-
-  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/bel.jpg');
-  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/beto.jpg');
-  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/comecome.jpg');
-  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/elmo.jpg');
-  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/enio.jpg');
-  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/garibaldo.jpg');
-  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/grover.jpg');
-  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/sivan.jpg');
-  loader.addImage('http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/cartas/zoe.jpg');
-  
-  
+ 
   loader.addProgressListener(function(e) {
     if (e.completedCount * 5 < 100) {
       uiPlay.text(e.completedCount * 4 + '%');
     }
   });
   loader.addCompletionListener(function() {
-    uiPlay.text('');
+    uiPlay.text('Jogar');
     ui.addClass('open');
   });
   loader.start();
@@ -71,7 +69,6 @@ $(function(){
 
 //initialise game
 function init() {
-  
   if (!decent) { //workaround for IE9
     uiSplash.addClass('disable');
   }
@@ -133,7 +130,6 @@ function init() {
 
 //start game and create cards from deck array
 function startGame() {
-  
   ui.addClass('play');
   uiTime.text("0");
   uiClick.text("0");
@@ -150,8 +146,8 @@ function startGame() {
     uiCards.children().each(function(index) {
       // align the cards to be 3x6 ourselves.
       $(this).css({
-        "left" : ($(this).width() + 20) * (index % 6),
-        "top" : ($(this).height() + 20) * Math.floor(index / 6)
+        "left" : ($(this).width() + 5) * (index % 6),
+        "top" : ($(this).height() + 5) * Math.floor(index / 6)
       });
       // get a pattern from the shuffled deck
       var pattern = matchingGame.deck.pop();
@@ -245,7 +241,7 @@ function EndGame() {
   playSound('applause');
   // Define score formula
   total_score =  ( 33/(score/60) + 66/(clicks/24) ).toFixed(2);
-  $('#score').html('Sua pontuação: ' + total_score + '<br>' + clicks + ' cliques em ' + score + ' segundos');
+  $('#score').html('Sua pontuaÃ§Ã£o: ' + total_score + '<br>' + clicks + ' cliques em ' + score + ' segundos');
   ui.addClass('end').removeClass('play');
   $('.twitter-share-button').remove();
   $('.facebook-share-button').off('click');
@@ -255,16 +251,15 @@ function EndGame() {
       name: 'MozTW Browser Pairs',
       link: document.location.href,
       caption: 'MozTW Browser Pairs',
-      description: 'æˆ‘å‰›ç”¨ #Firefox #Android çŽ© MozTW çš„ç€è¦½å™¨ç¿»ç‰ŒéŠæˆ²ï¼Œ' + total_score + 'åˆ†éŽé—œï¼Œå¿«ä¾†æŒ‘æˆ°æˆ‘å§ï¼'
+      description: 'Ã¦Ë†â€˜Ã¥â€°â€ºÃ§â€Â¨ #Firefox #Android Ã§Å½Â© MozTW Ã§Å¡â€žÃ§â‚¬ÂÃ¨Â¦Â½Ã¥â„¢Â¨Ã§Â¿Â»Ã§â€°Å’Ã©ÂÅ Ã¦Ë†Â²Ã¯Â¼Å’' + total_score + 'Ã¥Ë†â€ Ã©ÂÅ½Ã©â€”Å“Ã¯Â¼Å’Ã¥Â¿Â«Ã¤Â¾â€ Ã¦Å’â€˜Ã¦Ë†Â°Ã¦Ë†â€˜Ã¥ÂÂ§Ã¯Â¼Â'
     });
     event.stopPropagation();
     event.preventDefault();
   });
-  /*
-  $('.plurk-share-button').attr('href', 'http://www.plurk.com/m/?content=' + encodeURIComponent( 'æˆ‘å‰›ç”¨ #Firefox #Android çŽ© MozTW çš„ç€è¦½å™¨ç¿»ç‰ŒéŠæˆ²ï¼Œ'+ total_score + 'åˆ†éŽé—œï¼Œ'+ document.location.href +' (å¿«ä¾†æŒ‘æˆ°æˆ‘å§ï¼)') + '&qualifier=shares');
+  $('.plurk-share-button').attr('href', 'http://www.plurk.com/m/?content=' + encodeURIComponent( 'Ã¦Ë†â€˜Ã¥â€°â€ºÃ§â€Â¨ #Firefox #Android Ã§Å½Â© MozTW Ã§Å¡â€žÃ§â‚¬ÂÃ¨Â¦Â½Ã¥â„¢Â¨Ã§Â¿Â»Ã§â€°Å’Ã©ÂÅ Ã¦Ë†Â²Ã¯Â¼Å’'+ total_score + 'Ã¥Ë†â€ Ã©ÂÅ½Ã©â€”Å“Ã¯Â¼Å’'+ document.location.href +' (Ã¥Â¿Â«Ã¤Â¾â€ Ã¦Å’â€˜Ã¦Ë†Â°Ã¦Ë†â€˜Ã¥ÂÂ§Ã¯Â¼Â)') + '&qualifier=shares');
   if ('twttr' in window) {
     $(document.createElement('a')).attr('href', 'https://twitter.com/share')
-                                  .attr('data-text', 'æˆ‘å‰›ç”¨ #Firefox #Android çŽ© MozTW çš„ç€è¦½å™¨ç¿»ç‰ŒéŠæˆ²ï¼Œ' + total_score + 'åˆ†éŽé—œï¼Œå¿«ä¾†æŒ‘æˆ°æˆ‘å§ï¼')
+                                  .attr('data-text', 'Ã¦Ë†â€˜Ã¥â€°â€ºÃ§â€Â¨ #Firefox #Android Ã§Å½Â© MozTW Ã§Å¡â€žÃ§â‚¬ÂÃ¨Â¦Â½Ã¥â„¢Â¨Ã§Â¿Â»Ã§â€°Å’Ã©ÂÅ Ã¦Ë†Â²Ã¯Â¼Å’' + total_score + 'Ã¥Ë†â€ Ã©ÂÅ½Ã©â€”Å“Ã¯Â¼Å’Ã¥Â¿Â«Ã¤Â¾â€ Ã¦Å’â€˜Ã¦Ë†Â°Ã¦Ë†â€˜Ã¥ÂÂ§Ã¯Â¼Â')
                                   .attr('data-lang', 'zh-TW')
                                   .attr('data-hashtags', 'Firefox')
                                   .addClass('twitter-share-button')
@@ -272,7 +267,6 @@ function EndGame() {
                                   .appendTo('#share');
     twttr.widgets.load();
   }
-  */
 }
 
 //recreate the original card , stop the timer and re populate the array with class names
@@ -385,5 +379,66 @@ function mediaSupport(mimetype, container) {
     for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
     return arr;
   }
-
 })(jQuery);
+$(document).ready(function(){
+
+  setInterval(function(){
+    cardWidth = ($('.conteudo-asset').width() / 6) -8;
+    cardHeight = cardWidth * 1.33;
+    if(cardWidth >= 115) cardWidth = 115;
+    if(cardHeight >= 149) cardHeight = 149;
+    $('.card').css({
+      "width" :Math.round(cardWidth) + "px",
+      "height":Math.round(cardHeight)+ "px"
+    });
+    setSize();
+  },500);
+  
+  var width;
+  var height;  
+  function setSize(){
+    $('.card').each(function(i){
+      if( i >=0 && i <= 5){
+        if(i==0){
+          width = 0;
+          $(this).css("left","0px");
+        }else{
+          width = $('.card').width() + width + 4;
+          height = $('.card').height() + 5;
+          $(this).css("top","0px");
+          $(this).css("left",width+"px");
+        }
+      }else if(i >= 6 && i <= 11){
+        if(i==6){
+          width = 0;
+          height = $('.card').height() + 4;
+          $(this).css({
+            "top" :height+"px",
+            "left":"0px"
+          });
+        }else{
+          width = $('.card').width() + width + 4;
+          height = $('.card').height() + 5;
+          $(this).css("top",height+"px");
+          $(this).css("left",width+"px");
+        }
+      }else if(i >= 12){
+        if(i==12){
+          width = 0;
+          height = $('.card').height()*2 + 10;
+          $(this).css({
+            "top" :height+"px",
+            "left":"0px"
+          });
+        }else{
+          width = $('.card').width() + width + 4;
+          height = $('.card').height()*2 + 10;
+          $(this).css("top",height+"px");
+          $(this).css("left",width+"px");
+        }
+      }
+      
+      
+    });
+  }
+});

@@ -6,7 +6,7 @@
 /*.casa-memoria{background:#fff; max-width:872px; /* height:841px ;background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/predio.png) no-repeat center center}*/
 
 /* splash acerto */
-#splash{z-index:90;-moz-transition:all .8s ease-in 1.2s;-webkit-transition:all .8s ease-in 1.2s;-o-transition:all .8s ease-in 1.2s;transition:all .8s ease-in 1.2s;top:-300%;bottom:300%;position:fixed;width:940px;height:400px;background:url(http://172.20.16.219/portal/images/capaPrograma/vilasesamo2/memoria/acerto.png) no-repeat center;background-clip:padding-box;opacity:0;-moz-transform:scale(3);-webkit-transform:scale(3);-o-transform:scale(3);transform:scale(3);pointer-events:none;margin:auto 0;padding:10px 0;}
+#splash{z-index:90;-moz-transition:all .8s ease-in 1.2s;-webkit-transition:all .8s ease-in 1.2s;-o-transition:all .8s ease-in 1.2s;transition:all .8s ease-in 1.2s;top:-300%;bottom:300%;position:fixed;width:940px;height:400px;background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/acerto.png) no-repeat center;background-clip:padding-box;opacity:0;-moz-transform:scale(3);-webkit-transform:scale(3);-o-transform:scale(3);transform:scale(3);pointer-events:none;margin:auto 0;padding:10px 0;}
 
 /* botoes e boxs */
 #reset{display:none; cursor:pointer;background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/botoes/reinicio.jpg) no-repeat;height: 50px;width: 180px;position:absolute;top: 0px;left: 9px;}
@@ -23,8 +23,8 @@
 .front{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/verso.jpg) no-repeat;z-index:10;border-radius:4px; background-size: 100%;}
 .bel-a{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/bel.jpg) no-repeat center;background-size: 100%;}
 .bel-b{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/bel.jpg) no-repeat center;background-size: 100%;}
-.beto-a{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/beto.jpg) no-repeat center;background-size: 100%;}
-.beto-b{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/beto.jpg) no-repeat center;background-size: 100%;}
+.bbeto-a{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/beto.jpg) no-repeat center;background-size: 100%;}
+.bbeto-b{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/beto.jpg) no-repeat center;background-size: 100%;}
 .comecome-a{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/comecome.jpg) no-repeat center;background-size: 100%;}
 .comecome-b{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/comecome.jpg) no-repeat center;background-size: 100%;}
 .elmo-a{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/elmo.jpg) no-repeat center;background-size: 100%;}
@@ -35,8 +35,8 @@
 .garibaldo-b{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/garibaldo.jpg) no-repeat center;background-size: 100%;}
 .grover-a{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/grover.jpg) no-repeat center;background-size: 100%;}
 .grover-b{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/grover.jpg) no-repeat center;background-size: 100%;}
-.grupo-a{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/sivan.jpg) no-repeat center;background-size: 100%;}
-.grupo-b{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/sivan.jpg) no-repeat center;background-size: 100%;}
+.ggrupo-a{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/sivan.jpg) no-repeat center;background-size: 100%;}
+.ggrupo-b{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/sivan.jpg) no-repeat center;background-size: 100%;}
 .zoe-a{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/zoe.jpg) no-repeat center;background-size: 100%;}
 .zoe-b{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/zoe.jpg) no-repeat center;background-size: 100%;}
   
