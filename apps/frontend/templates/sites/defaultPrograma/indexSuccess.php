@@ -202,6 +202,13 @@
 
               <?php if(isset($displays["twitter"])) include_partial_from_folder('blocks','global/twitter-1c', array('site' => $site, 'uri' => $uri)) ?>
               
+              <?php  if(isset($displays["twitter-carnaval"])):
+              				foreach ($displays["twitter-carnaval"] as $k => $d): 
+												echo html_entity_decode($d->html);				        	
+					            endforeach;
+            		endif;
+            	?>
+              
               <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>
               
             </div>
