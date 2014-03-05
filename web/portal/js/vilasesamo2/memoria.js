@@ -396,7 +396,7 @@ function mediaSupport(mimetype, container) {
 })(jQuery);
 
 $(document).ready(function(){
-  
+  /*
   //aujustando cartas na tela 
   setInterval(function(){
     cardWidth = ($('.conteudo-asset').width() / 6) -8;
@@ -409,8 +409,16 @@ $(document).ready(function(){
     });
     //setSize();
   },500);
-  
+  */
   $(window).on("resize", function(){
+    cardWidth = ($('.conteudo-asset').width() / 6) -8;
+    cardHeight = cardWidth * 1.33;
+    if(cardWidth >= 115) cardWidth = 115;
+    if(cardHeight >= 149) cardHeight = 149;
+    $('.card').css({
+      "width" :Math.round(cardWidth) + "px",
+      "height":Math.round(cardHeight)+ "px"
+    });
     setSize();
   });
   
