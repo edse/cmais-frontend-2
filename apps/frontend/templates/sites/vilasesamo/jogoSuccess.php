@@ -151,7 +151,7 @@ function updateOrientation(){
   var windowWidth = window.innerWidth;
   //alert(windowWidth)
   //console.log("oiiiii");
-  if (windowWidth > 500 || window.orientation == 90 || window.orientation == -90 ) {  
+  if (windowWidth > 470 || window.orientation == 90 || window.orientation == -90 ) {  
     $('.asset').fadeIn('fast');
     $('.turn-the-cell-please').hide();
     //goTopGame('header');
