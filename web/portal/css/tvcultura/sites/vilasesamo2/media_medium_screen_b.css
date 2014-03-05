@@ -174,17 +174,17 @@ a{text-decoration:underline!important;}
 
 .interna.jogos #content h1 .icones-sprite-interna,
 .interna.atividades #content h1 .icones-sprite-interna,
-.interna.videos #content h1 .icones-sprite-interna {margin: -7px 13px -5px 9px!important;}
+.interna.videos #content h1 .icones-sprite-interna {margin: 4px 13px -5px 9px!important;}
 
 .interna.videos .filtro .span12 h1,
 .interna.atividades .filtro .span12 h1,
-.interna.jogos .filtro .span12 h1{line-height:2em!important; font-size:1.9em!important; height:2em!important;}
+.interna.jogos .filtro .span12 h1{line-height:1.4em!important; font-size:1.9em!important; height:1.4em!important;}
 
 .interna.videos .filtro .span12 nav.span2,
 .interna.atividades .filtro .span12 nav.span2,
 .interna.jogos .filtro .span12 nav.span2{display:none;}
 
-#page_nav{margin: 16% 5% -13%!important;}
+#page_nav{margin: 16% 5%!important;}
 
 /*box pais*/
 .pais .redes {display:none!important}
