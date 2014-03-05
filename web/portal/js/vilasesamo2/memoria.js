@@ -98,6 +98,13 @@ function acessibilidadeVisual(){
   setTimeout(function(){  
     $('.card').each(function(i){
       $(this).attr("tabindex", "0");
+      if(i <= 6 ){
+        $(this).attr('aria-label', "coluna:"+String.fromCharCode(66)+"Linha:1")
+      }else if(i <= 12 ){
+        
+      }else{
+        
+      }
     })
   },1000)
 }
