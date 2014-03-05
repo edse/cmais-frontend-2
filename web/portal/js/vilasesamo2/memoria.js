@@ -407,8 +407,12 @@ $(document).ready(function(){
       "width" :Math.round(cardWidth) + "px",
       "height":Math.round(cardHeight)+ "px"
     });
-    setSize();
+    //setSize();
   },500);
+  
+  $(window).on("resize", function(){
+    setSize();
+  });
   
   var width;
   var height;  
