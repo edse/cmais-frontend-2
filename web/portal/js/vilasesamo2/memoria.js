@@ -57,6 +57,30 @@ matchingGame.clone = $.extend(true, [], matchingGame.deck);
 //on document load the lazy way
 $(function(){
   var loader = new PxLoader();
+  
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/acerto.png');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/contador.png');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/pontos_final.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/predio.png');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/tela_inicial.png');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/vire-celular.png');
+  
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/botoes/botao_novamente.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/botoes/jogar.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/botoes/over_novamente.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/botoes/reinicio.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/botoes/botao_over.jpg');
+
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/bel.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/beto.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/comecome.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/elmo.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/enio.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/garibaldo.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/grover.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/sivan.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/verso.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/zoe.jpg');  
 
  
   loader.addProgressListener(function(e) {
