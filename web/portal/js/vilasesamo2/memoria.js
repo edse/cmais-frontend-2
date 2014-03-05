@@ -82,10 +82,6 @@ $(function(){
   loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/verso.jpg');
   loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/zoe.jpg');
   
-  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/02_ae_viva.mp3'); 
-  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/02_ae_viva.ogg');  
-
- 
   loader.addProgressListener(function(e) {
     if (e.completedCount * 5 < 100) {
       uiPlay.text(e.completedCount * 4 + '%');
