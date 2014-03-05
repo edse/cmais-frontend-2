@@ -184,7 +184,7 @@ a{text-decoration:underline!important;}
 .interna.atividades .filtro .span12 nav.span2,
 .interna.jogos .filtro .span12 nav.span2{display:none;}
 
-#page_nav{margin: 16% 5%!important;}
+#page_nav{margin: 16% 5% -13%!important;}
 
 /*box pais*/
 .pais .redes {display:none!important}
