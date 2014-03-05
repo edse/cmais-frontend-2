@@ -6,6 +6,11 @@ handleEvent:function(a){this.info.className=this.info.className.replace(/ ?appca
 var score;
 var cardsmatched;
 var clicks;
+var soundsCelebrating = new Array();
+var soundsError = new Array();
+var countClickWrong = 0;
+var clickWrong = new Array(0,1);
+var posWrong = clickWrong[Math.round(Math.random(clickWrong.length))];
 
 var ui = $("#game");
 var uiIntro = $("#gameIntro");
@@ -27,7 +32,7 @@ var decent = styleSupport('transition');
 var matchingGame = {};
 matchingGame.deck = [
 /*'ie', 'ie-icon',
-'fx', 'fx-icon',
+'fx', 'fx-icon', 
 'cr', 'cr-icon',
 'sf', 'sf-icon',
 'op', 'op-icon',
@@ -52,8 +57,31 @@ matchingGame.clone = $.extend(true, [], matchingGame.deck);
 //on document load the lazy way
 $(function(){
   var loader = new PxLoader();
+  
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/acerto.png');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/contador.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/pontos_final.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/predio.png');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/tela_inicial.png');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/vire-celular.png');
+  
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/botoes/botao_novamente.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/botoes/jogar.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/botoes/over_novamente.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/botoes/reinicio.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/botoes/botao_over.jpg');
 
- 
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/bel.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/beto.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/comecome.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/elmo.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/enio.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/garibaldo.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/grover.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/sivan.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/verso.jpg');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/zoe.jpg');
+  
   loader.addProgressListener(function(e) {
     if (e.completedCount * 5 < 100) {
       uiPlay.text(e.completedCount * 4 + '%');
@@ -66,7 +94,13 @@ $(function(){
   loader.start();
   init();
 });
-
+function acessibilidadeVisual(){
+  setTimeout(function(){  
+    $('.card').each(function(i){
+      $(this).attr("tabindex", "0");
+    })
+  },1000)
+}
 //initialise game
 function init() {
   if (!decent) { //workaround for IE9
@@ -99,33 +133,8 @@ function init() {
 
   document.addEventListener('keydown', closebox, false);
 
-  //Handle the melody
-  /*
-  if(mediaSupport('audio/ogg; codecs=vorbis', 'audio') ||
-    mediaSupport('audio/mpeg', 'audio')) {
-    var melody = $('#melody')[0];
-    melody.volume = 0.15;
-    melody.muted = false;
-    $('#mute').click(function() {
-      if(melody.muted) {
-      melody.muted = false;
-      $(this).addClass('melody');
-      } else {
-      melody.muted = true;
-      $(this).removeClass('melody');
-      }
-    });
-    $('#melody').on(
-      'ended',
-      function() {
-        melody.currentTime = 0;
-        melody.pause();
-        melody.play();
-      }
-    );
-    $('#mute').addClass('music').addClass('melody');
-    melody.play();
-  */
+  
+  
 }
 
 //start game and create cards from deck array
@@ -158,7 +167,8 @@ function startGame() {
       // listen the click event on each card DIV element.
       $(this).click(selectCard);
     });
-    playSound('intro');
+    acessibilidadeVisual();
+    playSound("Start_bel_ola");
     timer();
   }
 }
@@ -181,7 +191,7 @@ function selectCard() {
     return;
   }
   if(!$(this).hasClass("card-flipped")) {
-    playSound('select');
+    playSound('car_flipped');
     uiClick.text(++clicks);
     $(this).addClass("card-flipped");
   }
@@ -206,8 +216,21 @@ function checkPattern() {
     if(!decent) { //workaround for IE9
       removeTookCards();
     }
+    
+    
   } else {
+    soundsError[0] = "Error_garibaldo_tente";
+    soundsError[1] = "Error_garibaldo_opa";
+    soundsError[2] = "Error_garibaldo_tente_de_novo";
+    if(countClickWrong > posWrong){
+      playSound(soundsError[Math.round(Math.random(soundsError.length))]);
+      countClickWrong = 0;
+    }else{
+      playSound('car_flipped');
+      countClickWrong++;
+    }
     $(".card-flipped").removeClass("card-flipped");
+    console.log(countClickWrong)
   }
 }
 
@@ -226,7 +249,9 @@ function isMatchPattern() {
 
 //check to see if all cardmatched variable is less than 8 if so remove card only otherwise remove card and end game
 function removeTookCards() {
-  playSound('match');
+  soundsCelebrating[0]= "Macthing_bel_ae_viva";
+  soundsCelebrating[1]= "Macthing_garibaldo_muito_bem";
+  playSound(soundsCelebrating[Math.round(Math.random(soundsCelebrating.length))]);
   if (cardsmatched < 8){
     cardsmatched++;
     $(".card-removed").remove();
@@ -238,35 +263,17 @@ function removeTookCards() {
 
 function EndGame() {
   clearTimeout(scoreTimeout);
-  playSound('applause');
+  
   // Define score formula
   total_score =  ( 33/(score/60) + 66/(clicks/24) ).toFixed(2);
   $('#score').html('Sua pontuaÃ§Ã£o: ' + total_score + '<br>' + clicks + ' cliques em ' + score + ' segundos');
   ui.addClass('end').removeClass('play');
-  $('.twitter-share-button').remove();
-  $('.facebook-share-button').off('click');
-  $('.facebook-share-button').on('click', function(event) {
-    FB.ui( {
-      method: 'feed',
-      name: 'MozTW Browser Pairs',
-      link: document.location.href,
-      caption: 'MozTW Browser Pairs',
-      description: 'Ã¦Ë†â€˜Ã¥â€°â€ºÃ§â€Â¨ #Firefox #Android Ã§Å½Â© MozTW Ã§Å¡â€žÃ§â‚¬ÂÃ¨Â¦Â½Ã¥â„¢Â¨Ã§Â¿Â»Ã§â€°Å’Ã©ÂÅ Ã¦Ë†Â²Ã¯Â¼Å’' + total_score + 'Ã¥Ë†â€ Ã©ÂÅ½Ã©â€”Å“Ã¯Â¼Å’Ã¥Â¿Â«Ã¤Â¾â€ Ã¦Å’â€˜Ã¦Ë†Â°Ã¦Ë†â€˜Ã¥ÂÂ§Ã¯Â¼Â'
-    });
-    event.stopPropagation();
-    event.preventDefault();
-  });
-  $('.plurk-share-button').attr('href', 'http://www.plurk.com/m/?content=' + encodeURIComponent( 'Ã¦Ë†â€˜Ã¥â€°â€ºÃ§â€Â¨ #Firefox #Android Ã§Å½Â© MozTW Ã§Å¡â€žÃ§â‚¬ÂÃ¨Â¦Â½Ã¥â„¢Â¨Ã§Â¿Â»Ã§â€°Å’Ã©ÂÅ Ã¦Ë†Â²Ã¯Â¼Å’'+ total_score + 'Ã¥Ë†â€ Ã©ÂÅ½Ã©â€”Å“Ã¯Â¼Å’'+ document.location.href +' (Ã¥Â¿Â«Ã¤Â¾â€ Ã¦Å’â€˜Ã¦Ë†Â°Ã¦Ë†â€˜Ã¥ÂÂ§Ã¯Â¼Â)') + '&qualifier=shares');
-  if ('twttr' in window) {
-    $(document.createElement('a')).attr('href', 'https://twitter.com/share')
-                                  .attr('data-text', 'Ã¦Ë†â€˜Ã¥â€°â€ºÃ§â€Â¨ #Firefox #Android Ã§Å½Â© MozTW Ã§Å¡â€žÃ§â‚¬ÂÃ¨Â¦Â½Ã¥â„¢Â¨Ã§Â¿Â»Ã§â€°Å’Ã©ÂÅ Ã¦Ë†Â²Ã¯Â¼Å’' + total_score + 'Ã¥Ë†â€ Ã©ÂÅ½Ã©â€”Å“Ã¯Â¼Å’Ã¥Â¿Â«Ã¤Â¾â€ Ã¦Å’â€˜Ã¦Ë†Â°Ã¦Ë†â€˜Ã¥ÂÂ§Ã¯Â¼Â')
-                                  .attr('data-lang', 'zh-TW')
-                                  .attr('data-hashtags', 'Firefox')
-                                  .addClass('twitter-share-button')
-                                  .text('Tweet')
-                                  .appendTo('#share');
-    twttr.widgets.load();
-  }
+  
+  playSound('Final_garibaldo');
+  setTimeout(function(){
+    playSound('Final_play_again');  
+  },3500);
+  
 }
 
 //recreate the original card , stop the timer and re populate the array with class names
@@ -287,12 +294,19 @@ function closebox(ev) {
     window.location.hash = '';
 }
 
-function playSound(filename) {
-  try {
-    var index = ['intro','select','match','applause'].indexOf(filename);
-    var sound = document.querySelectorAll('audio.sound')[index];
-    sound.play();
-  } catch (err) {
+function playSound(soundFileName) {
+  if(mediaSupport('audio/ogg; codecs=vorbis', 'audio') || mediaSupport('audio/mpeg', 'audio')) {
+    //$(".tampa").css("z-index", "10");
+    $(".audio source").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".mp3").attr("type", "audio/mp3");
+    $(".audio source:last-child").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".ogg").attr("type", "audio/ogg");
+    $(".audio").trigger('load');
+    $(".audio").bind("load",function(){
+          $('.audio').trigger('play')
+      });
+    $('.audio').trigger('play')
+    $('.audio').bind("ended", function(){
+        $(".tampa").css("z-index", "-1");
+    });
   }
 }
 
@@ -380,8 +394,11 @@ function mediaSupport(mimetype, container) {
     return arr;
   }
 })(jQuery);
-$(document).ready(function(){
 
+$(document).ready(function(){
+  var cardWidth;
+  var cardHeight;
+  //ajustando cartas na tela 
   setInterval(function(){
     cardWidth = ($('.conteudo-asset').width() / 6) -8;
     cardHeight = cardWidth * 1.33;
@@ -391,8 +408,9 @@ $(document).ready(function(){
       "width" :Math.round(cardWidth) + "px",
       "height":Math.round(cardHeight)+ "px"
     });
-    setSize();
+    //setSize();
   },500);
+  
   
   var width;
   var height;  
@@ -438,7 +456,6 @@ $(document).ready(function(){
         }
       }
       
-      
     });
-  }
+  }//setSize
 });

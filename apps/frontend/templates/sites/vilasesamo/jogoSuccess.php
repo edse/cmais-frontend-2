@@ -128,9 +128,10 @@
   <!--/section-->
   
   <?php include_partial_from_folder('sites/vilasesamo', 'global/brinque-tambem-com', array("site" => $site, "section" => $section, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
-   
-  <?php //include_partial_from_folder('sites/vilasesamo', 'global/form-campanha', array("site" => $site, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
-
+  
+  <?php if(isset($_GET["m"]) && $_GET["m"] == 2143):?> 
+    <?php include_partial_from_folder('sites/vilasesamo', 'global/form-campanha', array("site" => $site, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
+  <?php endif; ?>
   <?php include_partial_from_folder('sites/vilasesamo', 'global/para-os-pais', array("site" => $site, "asset" => $asset, "categories" => $categories, "uri" => $uri)) ?>
 
 </div>
@@ -151,7 +152,7 @@ function updateOrientation(){
   var windowWidth = window.innerWidth;
   //alert(windowWidth)
   //console.log("oiiiii");
-  if (windowWidth > 500 || window.orientation == 90 || window.orientation == -90 ) {  
+  if (windowWidth > 470 || window.orientation == 90 || window.orientation == -90 ) {  
     $('.asset').fadeIn('fast');
     $('.turn-the-cell-please').hide();
     //goTopGame('header');
