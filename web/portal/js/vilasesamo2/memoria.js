@@ -59,7 +59,7 @@ $(function(){
   var loader = new PxLoader();
   
   loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/acerto.png');
-  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/contador.png');
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/contador.jpg');
   loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/pontos_final.jpg');
   loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/predio.png');
   loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/tela_inicial.png');
@@ -80,7 +80,10 @@ $(function(){
   loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/grover.jpg');
   loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/sivan.jpg');
   loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/verso.jpg');
-  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/zoe.jpg');  
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/zoe.jpg');
+  
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/02_ae_viva.mp3'); 
+  loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/02_ae_viva.ogg');  
 
  
   loader.addProgressListener(function(e) {
