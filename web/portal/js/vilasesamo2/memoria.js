@@ -94,6 +94,78 @@ $(function(){
   loader.start();
   init();
 });
+
+var cardWidth;
+var cardHeight;
+//ajustando cartas na tela 
+
+$(window).on("resize", function(){
+  cardWidth = ($('.conteudo-asset').width() / 6) -8;
+  cardHeight = cardWidth * 1.33;
+  if(cardWidth >= 115) cardWidth = 115;
+  if(cardHeight >= 149) cardHeight = 149;
+  $('.card').css({
+    "width" :Math.round(cardWidth) + "px",
+    "height":Math.round(cardHeight)+ "px"
+  });
+  setSize(); 
+});
+
+
+var width;
+var height;  
+function setSize(){
+  
+  $('.card').each(function(i){
+    if( i >=0 && i <= 5){
+      if(i==0){
+        width = 0;
+        $(this).css("left","0px");
+      }else{
+        width = $('.card').width() + width + 4;
+        height = $('.card').height() + 5;
+        $(this).css("top","0px");
+        $(this).css("left",width+"px");
+      }
+    }else if(i >= 6 && i <= 11){
+      if(i==6){
+        width = 0;
+        height = $('.card').height() + 4;
+        $(this).css({
+          "top" :height+"px",
+          "left":"0px"
+        });
+      }else{
+        width = $('.card').width() + width + 4;
+        height = $('.card').height() + 5;
+        $(this).css("top",height+"px");
+        $(this).css("left",width+"px");
+      }
+    }else if(i >= 12){
+      if(i==12){
+        width = 0;
+        height = $('.card').height()*2 + 10;
+        $(this).css({
+          "top" :height+"px",
+          "left":"0px"
+        });
+      }else{
+        width = $('.card').width() + width + 4;
+        height = $('.card').height()*2 + 10;
+        $(this).css("top",height+"px");
+        $(this).css("left",width+"px");
+      }
+    }
+    if(height){
+      if($('.conteudo-asset').width() <= 899){
+        $('.interna.jogos #content .conteudo-asset').css('height', parseInt(height*2.5)+"px");
+      }else{
+        $('.interna.jogos #content .conteudo-asset').css('height', "995px");  
+      }
+    }
+  });
+}//setSize
+  
 function acessibilidadeVisual(){
   var cont = 0;
   var line=1;
@@ -405,76 +477,3 @@ function mediaSupport(mimetype, container) {
   }
 })(jQuery);
 
-$(document).ready(function(){
-  console.log("entrei")
-  var cardWidth;
-  var cardHeight;
-  //ajustando cartas na tela 
-  
-  $(window).on("resize", function(){
-    cardWidth = ($('.conteudo-asset').width() / 6) -8;
-    cardHeight = cardWidth * 1.33;
-    if(cardWidth >= 115) cardWidth = 115;
-    if(cardHeight >= 149) cardHeight = 149;
-    $('.card').css({
-      "width" :Math.round(cardWidth) + "px",
-      "height":Math.round(cardHeight)+ "px"
-    });
-    setSize(); 
-  },500);
-  
-  
-  var width;
-  var height;  
-  function setSize(){
-    
-    $('.card').each(function(i){
-      if( i >=0 && i <= 5){
-        if(i==0){
-          width = 0;
-          $(this).css("left","0px");
-        }else{
-          width = $('.card').width() + width + 4;
-          height = $('.card').height() + 5;
-          $(this).css("top","0px");
-          $(this).css("left",width+"px");
-        }
-      }else if(i >= 6 && i <= 11){
-        if(i==6){
-          width = 0;
-          height = $('.card').height() + 4;
-          $(this).css({
-            "top" :height+"px",
-            "left":"0px"
-          });
-        }else{
-          width = $('.card').width() + width + 4;
-          height = $('.card').height() + 5;
-          $(this).css("top",height+"px");
-          $(this).css("left",width+"px");
-        }
-      }else if(i >= 12){
-        if(i==12){
-          width = 0;
-          height = $('.card').height()*2 + 10;
-          $(this).css({
-            "top" :height+"px",
-            "left":"0px"
-          });
-        }else{
-          width = $('.card').width() + width + 4;
-          height = $('.card').height()*2 + 10;
-          $(this).css("top",height+"px");
-          $(this).css("left",width+"px");
-        }
-      }
-      if(height){
-        if($('.conteudo-asset').width() <= 899){
-          $('.interna.jogos #content .conteudo-asset').css('height', parseInt(height*2.5)+"px");
-        }else{
-          $('.interna.jogos #content .conteudo-asset').css('height', "995px");  
-        }
-      }
-    });
-  }//setSize
-});
