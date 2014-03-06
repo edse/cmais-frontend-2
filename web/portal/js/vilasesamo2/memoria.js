@@ -466,8 +466,8 @@ $(document).ready(function(){
           $(this).css("left",width+"px");
         }
       }
-      if($('.card').width() <= 114){
-        $('.interna.jogos #content .conteudo-asset').css('height', (height*2)+"px");
+      if($('.conteudo-asset').width() <= 899){
+        $('.interna.jogos #content .conteudo-asset').css('height', parseInt(height*2.5)+"px");
       }else{
         $('.interna.jogos #content .conteudo-asset').css('height', "995px");  
       }
