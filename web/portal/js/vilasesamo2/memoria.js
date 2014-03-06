@@ -108,7 +108,14 @@ $(window).on("resize", function(){
     "width" :Math.round(cardWidth) + "px",
     "height":Math.round(cardHeight)+ "px"
   });
-  setSize(); 
+  var adjust = setInterval(function(){
+    setSize();   
+  },50);
+  
+  setTimeout(function(){
+    clearInterval(adjust);
+  },3000);
+  
 });
 
 
