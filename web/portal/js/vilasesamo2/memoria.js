@@ -466,9 +466,11 @@ $(document).ready(function(){
           $(this).css("left",width+"px");
         }
       }
-      if(window.innerWidth < 980){
-      $('.interna.jogos #content .conteudo-asset').css('height', (height*2)+"px");
-    }
+      if($('.card').width() <= 114){
+        $('.interna.jogos #content .conteudo-asset').css('height', (height*2)+"px");
+      }else{
+        $('.interna.jogos #content .conteudo-asset').css('height', "995px");  
+      }
     });
   }//setSize
 });
