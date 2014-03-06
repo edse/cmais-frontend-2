@@ -426,7 +426,7 @@ $(document).ready(function(){
   var height;  
   function setSize(){
     if(window.innerWidth < 980){
-      $('.interna.jogos #content .conteudo-asset').css('height', (cardHeight*5)+200+"px");
+      $('.interna.jogos #content .conteudo-asset').css('height', (cardHeight*3)+"px");
     }
     $('.card').each(function(i){
       if( i >=0 && i <= 5){
