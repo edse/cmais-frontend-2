@@ -103,7 +103,7 @@ function acessibilidadeVisual(){
       var colLetter = 65+cont;
       
       var col = String.fromCharCode(colLetter)
-      if(i==6 || i==12){
+      if(i==5 || i==11){
         cont = 0;
       }
       $(this).attr('aria-label', "coluna:"+col+" - Linha:"+line)
