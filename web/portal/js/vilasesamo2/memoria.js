@@ -466,10 +466,12 @@ $(document).ready(function(){
           $(this).css("left",width+"px");
         }
       }
-      if($('.conteudo-asset').width() <= 899){
-        $('.interna.jogos #content .conteudo-asset').css('height', parseInt(height*2.5)+"px");
-      }else{
-        $('.interna.jogos #content .conteudo-asset').css('height', "995px");  
+      if(height){
+        if($('.conteudo-asset').width() <= 899){
+          $('.interna.jogos #content .conteudo-asset').css('height', parseInt(height*2.5)+"px");
+        }else{
+          $('.interna.jogos #content .conteudo-asset').css('height', "995px");  
+        }
       }
     });
   }//setSize
