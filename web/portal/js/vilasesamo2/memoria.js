@@ -306,19 +306,14 @@ function closebox(ev) {
 function playSound(soundFileName) {
   if(mediaSupport('audio/ogg; codecs=vorbis', 'audio') || mediaSupport('audio/mpeg', 'audio')) {
     //$(".tampa").css("z-index", "10");
-    var audio = document.getElementByTagName("audio");
-    audio.creatElement("source");
-    audio.creatElement("source");
-    $(".audio source").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".mp3").attr("type", "audio/mp3");
-    $(".audio source:last-child").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".ogg").attr("type", "audio/ogg");
-    $(".audio").trigger('load');
-    $(".audio").bind("load",function(){
-          $('.audio').trigger('play')
+    $("#"+soundFileName).bind("load",function(){
+          $("#"+soundFileName).trigger('play')
       });
-    $('.audio').trigger('play')
-    $('.audio').bind("ended", function(){
+    $("#"+soundFileName).trigger('play')
+    $("#"+soundFileName).bind("ended", function(){
         $(".tampa").css("z-index", "-1");
     });
+    
   }
 }
 
