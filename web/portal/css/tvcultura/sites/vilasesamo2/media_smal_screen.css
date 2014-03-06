@@ -33,7 +33,6 @@ a:hover, a:visited{color:#fff!important;}
 .form-search{display: none;}
 /*desaparece o topo dos pais*/
 
-.interna #content .pais {display:none}
 
 /*section{background:green!important;}*/
 
@@ -417,5 +416,6 @@ a{text-decoration:underline!important;}
 .form-horizontal .span11, .form .termo {float:none!important}
 .form .control-group.span11 label {height:65px;float:left}
 
+#content .pais {display:none}
 
 
