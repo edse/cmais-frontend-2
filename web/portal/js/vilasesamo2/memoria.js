@@ -185,6 +185,7 @@ function acessibilidadeVisual(){
       var col = String.fromCharCode(colLetter)
       if(i==5 || i==11){
         cont = 0;
+        line++;
       }
       $(this).attr('aria-label', "coluna:"+col+" - Linha:"+line)
       cont++;
