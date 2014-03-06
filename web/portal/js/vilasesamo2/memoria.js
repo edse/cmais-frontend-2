@@ -177,6 +177,7 @@ function startGame() {
       // listen the click event on each card DIV element.
       $(this).click(selectCard);
     });
+    setSize(); 
     acessibilidadeVisual();
     playSound("Start_bel_ola");
     timer();
@@ -409,7 +410,8 @@ $(document).ready(function(){
   var cardWidth;
   var cardHeight;
   //ajustando cartas na tela 
-  setInterval(function(){
+  
+  $(window).on("resize", function(){
     cardWidth = ($('.conteudo-asset').width() / 6) -8;
     cardHeight = cardWidth * 1.33;
     if(cardWidth >= 115) cardWidth = 115;
