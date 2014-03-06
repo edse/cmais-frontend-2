@@ -115,6 +115,7 @@ a{text-decoration:underline!important;}
 .ac-explicacao{width: 0!important}
 .primeiro-p {font-size:1.2em;color:#666}
 .cuidadores .container-cuidadores .col-dir .box-ler p {color: #666;font-size: 1.1em;}
+.cuidadores .container-cuidadores .col-esq article section a {color: #FFFFFF;float:left;width:180px}
 
 
 /* Personagens */
