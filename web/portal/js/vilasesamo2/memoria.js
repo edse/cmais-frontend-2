@@ -88,7 +88,7 @@ $(function(){
     }
   });
   loader.addCompletionListener(function() {
-    uiPlay.text('<span>Jogar</span>');
+    uiPlay.html('<span>Jogar</span>');
     
     ui.addClass('open');
   });
