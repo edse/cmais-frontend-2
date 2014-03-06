@@ -402,7 +402,20 @@ a{text-decoration:underline!important;}
 }
 
 
+/*form campanhas*/
 
+#form-campanha  .span8{width: 100%!important;padding: 2%;}
+#form-campanha.form-horizontal .idade.span2 {}
+.form-horizontal .span8.control-group input {width: 80%!important;}
+#content section.form { padding:0!important }
+.form-horizontal .span2.estado {width: 100%;}
+.form .dk_container {margin-left:78%}
+.form-horizontal .idade.span2{width:90%!important;margin-left: 2%!important;}
+.form-horizontal .idade.span2 input {float:left!important}
+.form .file-wrapper .button {float:left!important}
+.form-horizontal .control-group textarea{width: 76%!important;}
+.form-horizontal .span11, .form .termo {float:none!important}
+.form .control-group.span11 label {height:65px;float:left}
 
 
 
