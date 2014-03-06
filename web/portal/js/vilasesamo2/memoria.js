@@ -96,17 +96,19 @@ $(function(){
 });
 function acessibilidadeVisual(){
   var cont = 0;
+  var line=1;
   setTimeout(function(){  
     $('.card').each(function(i){
       $(this).attr("tabindex", "0");
       var colLetter = 65+cont;
-      var line=1
+      
       var col = String.fromCharCode(colLetter)
       if(i%6){
         cont = 0;
         line++
       }
       $(this).attr('aria-label', "coluna:"+col+" - Linha:"+line)
+      cont++;
     })
   },1000)
 }
