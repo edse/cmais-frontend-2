@@ -42,7 +42,7 @@ a:hover, a:visited{color:#fff!important;}
 #no-mobile{display: none;}
 #content{top:70px!important;margin-bottom:0;}
 #mobile{display: block; padding-bottom:0;margin-top:80px; }
-.atividades #mobile{margin-top: 80px; }
+.atividades #mobile{margin-top: 10px; }
 /*.videos #content{top:20px!important; }*/
 .videos #mobile{margin-top: 40px; }
 footer{width: 100%;}
@@ -211,7 +211,7 @@ a{text-decoration:underline!important;}
 .personagens #page_nav{margin:0!important; height: 50px;padding: 0!important;}
 .icone-personagem-grande{ background-position: 0 -1335px; width: 39px; height: 47px;margin: -7% 0 0 23%!important;} 
 
-.icone-carregar-br-grande{ background-position: 0 -1409px; width: 29px; height: 39px; margin-top: -8%;} 
+.icone-carregar-br-grande{ background-position: 0 -1409px; width: 29px; height: 39px; margin-top: -5%!important;} 
 #content .icones-sprite-interna{margin:3px 3px 3px 10px!important;}
   
 /* assets internas (jogos, atividades, videos) */
@@ -300,7 +300,7 @@ a{text-decoration:underline!important;}
 
 .relacionados h2 {font-size: 1.1em}
 
-#page_nav{/*margin-top: 25%!important;*/margin-bottom: 10%;}
+#page_nav{margin-top: 25%!important;/* margin-bottom: 10%; */}
 
 /*box pais*/
 #content .pais {display:none}
@@ -391,7 +391,7 @@ a{text-decoration:underline!important;}
 	#content .todos-itens li img{width:100%;}
 	#content .todos-itens .yt-menu,
 	#content .todos-itens .container-image{height:150px!important; max-width:360px;}
-	#page_nav .mais{float: none!important;width: 170px!important;margin: 0 auto!important;font-size: 1.2em;line-height: 2em;}
+	#page_nav .mais{float: none!important;width: 190px!important;margin: 0 auto!important;font-size: 1.2em;line-height: 2em;}
 	#page_nav .container-ajax-loader{position:relative;margin:0 auto!important;top:0;left:0;}
 	
 	#carrossel-interna .slider li {width: 137px!important;float: left;}
