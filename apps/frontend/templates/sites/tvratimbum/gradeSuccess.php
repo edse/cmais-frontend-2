@@ -2,8 +2,8 @@
 $u = explode("/", $url);
 array_pop($u);
 $base_url = str_replace("/index.php", "", implode("/", $u));
-$nextDateUrl = $base_url."/".str_replace("/","-",$nextDate); 
-$prevDateUrl = $base_url."/".str_replace("/","-",$prevDate); 
+$nextDateUrl = "http://tvratimbum.cmais.com.br/grade/".str_replace("/","-",$nextDate); 
+$prevDateUrl = "http://tvratimbum.cmais.com.br/grade/".str_replace("/","-",$prevDate); 
 ?>
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
@@ -40,8 +40,7 @@ $prevDateUrl = $base_url."/".str_replace("/","-",$prevDate);
   });
 
   function redirect(d){
-    //send('<?php echo $sChannel->getSlug() ?>',d);
-    self.location.href = '<?php echo $base_url ?>/'+d;
+  	self.location.href = 'http://tvratimbum.cmais.com.br/grade/'+d; 
   }
 
   //cache the days and months
