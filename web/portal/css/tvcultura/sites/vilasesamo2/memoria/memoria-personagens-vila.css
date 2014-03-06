@@ -40,4 +40,4 @@
 .zoe-a{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/zoe.jpg) no-repeat center;background-size: 100%;}
 .zoe-b{background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/cartas/zoe.jpg) no-repeat center;background-size: 100%;}
 .turn-the-cell-please img{width:65%;}  
-.tampa{display: block; max-width: 800px; max-height: 700px; position: absolute; z-index: -1; opacity: 1; top: 0px; left: 0px; background-color: red; width: 100%; height: 100%;}
+.tampa{display: block; max-width: 800px; max-height: 700px; position: absolute; z-index: -1; opacity: 1; top: 0px; left: 0px;  width: 100%; height: 100%;}
