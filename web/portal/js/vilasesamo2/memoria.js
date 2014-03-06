@@ -175,12 +175,12 @@ function setSize(){
 }//setSize
   
 function acessibilidadeVisual(){
-  var cont = 0;
+  var cont = 1;
   var line=1;
   setTimeout(function(){  
     $('.card').each(function(i){
       $(this).attr("tabindex", "0");
-      var colLetter = 65+cont;
+      var colLetter = 64+cont;
       
       var col = String.fromCharCode(colLetter)
       if(i==5 || i==11){
