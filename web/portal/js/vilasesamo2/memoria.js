@@ -425,9 +425,7 @@ $(document).ready(function(){
   var width;
   var height;  
   function setSize(){
-    if(window.innerWidth < 980){
-      $('.interna.jogos #content .conteudo-asset').css('height', (cardHeight*3)+"px");
-    }
+    
     $('.card').each(function(i){
       if( i >=0 && i <= 5){
         if(i==0){
@@ -468,7 +466,9 @@ $(document).ready(function(){
           $(this).css("left",width+"px");
         }
       }
-      
+      if(window.innerWidth < 980){
+      $('.interna.jogos #content .conteudo-asset').css('height', (height*3)+"px");
+    }
     });
   }//setSize
 });
