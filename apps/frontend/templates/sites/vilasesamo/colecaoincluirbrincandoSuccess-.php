@@ -39,33 +39,34 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       
   
        
+       
+  
+       
         <div class="container-campanhas" tabindex="0" aria-label="" tabindex="0""> 
           <!-- selo -->
 
                 <img class="" src="http://midia.cmais.com.br/assets/image/original/ffe37ac4ab595d3e01c4ed5e9f5ead27a21a104e.jpg" alt="img_titulo_incluir-brincando">
 
           <!--/selo-->
-          
-          
          
-          <div class="texto col-incluir ">
+       		<div class="texto col-incluir ">
             <p>
-              Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. <br> <br>
-              Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris
-               qui num significa nadis i pareci latim. <br> <br>Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.Mussum ipsum cacilds, vidis litro abertis. 
-               Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in 
-               elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim.<br> <br>
-                Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. <br> <br>
-                Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é 
-                amistosis quis leo. <br> <br>Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia 
-                ce receita de bolis, mais bolis eu num gostis.
+             A <b style="letter-spacing: -1px;font-size: medium;"> Coleção Incluir Brincando</b> reúne materiais destinados aos profissionais que trabalham na Educação Infantil etodas as pessoas que se interessam pelos temas: desenvolvimento inclusivo, brincar e infância.<br><br>
+ 
+						Nela você encontra referenciais teóricos e práticos para promover o desenvolvimento integral das crianças, sensibilizando toda a comunidade sobre o direito à brincadeira segura e inclusiva.<br><br>
+						 
+						Os materiais da Coleção buscam estabelecer um diálogo entre os conteúdos do <b style="letter-spacing: -1px;font-size: medium;">Curso de Formação Incluir Brincando</b> e as práticas lúdicas promovidas pelos educadores no cotidiano das crianças.
+
             </p>
        
             
 					</div>
+					<div class="asset">
+						<img src="/portal/images/capaPrograma/vilasesamo2/img_incluir.jpg">
+					</div>
 					
           <div class="btns-download">
-          	<h3>Baixe os arquivos:</h3>
+          	<h3>Materiais disponíveis para download gratuito:</h3>
             	<div class="pdf pdf-incluir">
             		<a href="http://midia.cmais.com.br/assets/file/original/ac143cf466819d5d8fe00db24db62750a4825894.pdf">
 									<p>Dicas para Incluir Brincando</p>
@@ -81,7 +82,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 							
             	<div class="pdf audio-caderno">
 								<a href="">
-								<p>Audiobook Dicas + Caderno de Formação - Incluir Brincando</p>
+								<p>Audiobook Dicas + Caderno de Formação</p>
 								</a>
 							</div>
 							
@@ -94,7 +95,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 						</div>
               
         </div>
-       
+
      
            
 </div>
