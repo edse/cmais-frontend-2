@@ -95,17 +95,19 @@ $(function(){
   init();
 });
 function acessibilidadeVisual(){
+  var cont = 0;
+  var line=1;
   setTimeout(function(){  
     $('.card').each(function(i){
       $(this).attr("tabindex", "0");
-      if(i <= 6 ){
-        var col = String.fromCharCode("6"+ i)
-        $(this).attr('aria-label', "coluna:"+col+"Linha:1")
-      }else if(i <= 12 ){
-        
-      }else{
-        
+      var colLetter = 65+cont;
+      
+      var col = String.fromCharCode(colLetter)
+      if(i==5 || i==11){
+        cont = 0;
       }
+      $(this).attr('aria-label', "coluna:"+col+" - Linha:"+line)
+      cont++;
     })
   },1000)
 }
@@ -238,7 +240,6 @@ function checkPattern() {
       countClickWrong++;
     }
     $(".card-flipped").removeClass("card-flipped");
-    console.log(countClickWrong)
   }
 }
 
@@ -305,6 +306,9 @@ function closebox(ev) {
 function playSound(soundFileName) {
   if(mediaSupport('audio/ogg; codecs=vorbis', 'audio') || mediaSupport('audio/mpeg', 'audio')) {
     //$(".tampa").css("z-index", "10");
+    var audio = document.getElementByTagName("audio");
+    audio.creatElement("source");
+    audio.creatElement("source");
     $(".audio source").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".mp3").attr("type", "audio/mp3");
     $(".audio source:last-child").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".ogg").attr("type", "audio/ogg");
     $(".audio").trigger('load');
@@ -404,6 +408,7 @@ function mediaSupport(mimetype, container) {
 })(jQuery);
 
 $(document).ready(function(){
+  console.log("entrei")
   var cardWidth;
   var cardHeight;
   //ajustando cartas na tela 
@@ -416,13 +421,16 @@ $(document).ready(function(){
       "width" :Math.round(cardWidth) + "px",
       "height":Math.round(cardHeight)+ "px"
     });
-    //setSize();
+    setSize(); 
   },500);
   
   
   var width;
   var height;  
   function setSize(){
+    if(window.innerWidth < 980){
+      $('.interna.jogos #content .conteudo-asset').css('height', (cardHeight*3)+"px");
+    }
     $('.card').each(function(i){
       if( i >=0 && i <= 5){
         if(i==0){
