@@ -357,6 +357,9 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
            
           ?>
           <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt="" />
+          <div class="logotv-mobile">
+          	<img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/icon-tvcultura.png">
+          </div>
         </section>
         <!--/section-->
         <section class="relacionados" aria-label="sites relacionados" tabindex="0">
