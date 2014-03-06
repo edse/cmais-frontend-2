@@ -240,7 +240,6 @@ function checkPattern() {
       countClickWrong++;
     }
     $(".card-flipped").removeClass("card-flipped");
-    console.log(countClickWrong)
   }
 }
 
@@ -406,6 +405,7 @@ function mediaSupport(mimetype, container) {
 })(jQuery);
 
 $(document).ready(function(){
+  console.log("entrei")
   var cardWidth;
   var cardHeight;
   //ajustando cartas na tela 
