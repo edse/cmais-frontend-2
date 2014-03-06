@@ -9,7 +9,7 @@ var clicks;
 var soundsCelebrating = new Array();
 var soundsError = new Array();
 var countClickWrong = 0;
-var clickWrong = new Array(0,1);
+var clickWrong = new Array(0,2);
 var posWrong = clickWrong[Math.round(Math.random(clickWrong.length))];
 
 var ui = $("#game");
@@ -88,7 +88,8 @@ $(function(){
     }
   });
   loader.addCompletionListener(function() {
-    uiPlay.text('Jogar');
+    uiPlay.text('<span>Jogar</span>');
+    
     ui.addClass('open');
   });
   loader.start();
