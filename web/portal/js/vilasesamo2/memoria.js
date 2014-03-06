@@ -89,8 +89,8 @@ $(function(){
   });
   loader.addCompletionListener(function() {
     uiPlay.html('<span>Jogar</span>');
-    
     ui.addClass('open');
+    $('#gamePlay span').hide();
   });
   loader.start();
   init();
