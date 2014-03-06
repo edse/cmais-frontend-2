@@ -467,7 +467,7 @@ $(document).ready(function(){
         }
       }
       if(window.innerWidth < 980){
-      $('.interna.jogos #content .conteudo-asset').css('height', (height*3)+"px");
+      $('.interna.jogos #content .conteudo-asset').css('height', (height*2)+"px");
     }
     });
   }//setSize
