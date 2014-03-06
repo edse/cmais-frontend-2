@@ -306,7 +306,7 @@ function closebox(ev) {
 function playSound(soundFileName) {
   if(mediaSupport('audio/ogg; codecs=vorbis', 'audio') || mediaSupport('audio/mpeg', 'audio')) {
     //$(".tampa").css("z-index", "10");
-    var audio = document.getElementByTag("audio");
+    var audio = document.getElementByTagName("audio");
     audio.creatElement("source");
     audio.creatElement("source");
     $(".audio source").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".mp3").attr("type", "audio/mp3");
