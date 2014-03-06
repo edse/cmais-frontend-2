@@ -11,7 +11,7 @@ a:hover{text-decoration:underline!important;}
 #content { top:134px; margin-bottom:164px; }
 #content .section,
 #content section { max-width:940px; margin:20px auto; }
-#content h1 {margin: 0;font-size: 50px;height: 72px;line-height: 72px;padding: 0 0px 5px 0px;}
+#content h1 {margin: 0;font-size: 50px;height: 72px;line-height: 57px;padding: 0 0px 5px 0px;}
 .artigo #content header h1{font-size:25px;}
 /*#content h1 span,*/
 #content h1 i.icones-sprite-interna {margin: 0px 20px 0px 20!important}
@@ -553,6 +553,6 @@ body.na-tv{background-color:#feec3c;position:relative;}
 
 
 
-
+#content .incluir-brincando-colecao {overflow: hidden;min-height: 46px!important; background:#feec3c; margin:0 auto !important; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 
 
