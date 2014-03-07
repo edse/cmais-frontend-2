@@ -1534,7 +1534,12 @@ class _sectionActions extends sfActions
               header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
               die();
             }
-          } 
+          }elseif(in_array($this->section->id, Array("921", "2129"))){
+            if($request->getParameter('pergunta2')!=""){
+              header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
+              die();
+            }
+          }
           
           $email_user = strip_tags($request->getParameter('email'));
           $nome_user = strip_tags($request->getParameter('nome'));
