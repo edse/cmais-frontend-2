@@ -87,8 +87,8 @@
 body.tvculturaabrace{background:url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/bg-abrace.jpg")!important;}
 .tvculturaabrace .novoDestaque .enunciado span {background: url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/ponta-destaque-newabrace.png") no-repeat !important;}
 .tvculturaabrace #v2 li {border-right: 1px solid #3b7e14;}
-.tvculturaabrace .novoDestaque .enunciado h2 {background-color: #0d6101;color: #6fe014!important;}
-.tvculturaabrace .novoDestaque .enunciado h2 a {color: #6fe014;}
+.tvculturaabrace .novoDestaque .enunciado h2 {background-color: #0d6101;color: #fff!important;}
+.tvculturaabrace .novoDestaque .enunciado h2 a {color: #fff;}
 .tvculturaabrace #capa-site{padding: 0px 10px 50px 0px;}
 .tvculturaabrace #capa-site #miolo{margin-top: 0px;}
 .tvculturaabrace #capa-site #bg-abrace{position: absolute;background:#3b7e14 url("http://cmais.com.br/portal/images/capaPrograma/culturaabrace/tv_background.jpg") repeat-x;width: 990px;height: 102.5%;z-index: -1;left: 32px;}

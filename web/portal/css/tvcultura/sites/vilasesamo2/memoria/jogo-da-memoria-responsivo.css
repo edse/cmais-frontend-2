@@ -113,8 +113,7 @@ body.appcache-allinfo #appcache_info.appcache-noupdate,body.appcache-allinfo #ap
   .interna.jogos #content #gameScore{right: -10px;background: none;width: 50%;line-height: 40px;}
   .interna.jogos #content #cards{top:47px; left:0; margin-left:0px;}
   .interna.jogos #content .conteudo-asset .asset {margin-left:0;}
-/* margin-left: -4%; */
-}
+  /* margin-left: -4%; */
   /*.interna.jogos #content #cards .card{width:62px;height:80px;}*/
   .interna.jogos #content #splash {width: 100%;background-size: 40%;background-position: center center;}
   .interna.jogos #content #result{margin: 52px auto 8px;width: 394px;background-size: 100%;}
