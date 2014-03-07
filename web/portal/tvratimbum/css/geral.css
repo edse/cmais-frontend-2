@@ -104,6 +104,7 @@ a{
   top: 255px;
   width: 49px;
   *left: 138px;
+  z-index: 1000;
 }
 #menu-lateral ul{
   top: 310px;
