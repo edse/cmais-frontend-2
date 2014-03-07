@@ -607,7 +607,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* /top menu*/
 
 /* footer*/
-footer {width:100%;}
+footer {width:100%;background:#fff;}
 #no-mobile{display:block;}
 #mobile{display:none;}
 footer .copyright {height:30px;background:#fff; padding-bottom:4%; }

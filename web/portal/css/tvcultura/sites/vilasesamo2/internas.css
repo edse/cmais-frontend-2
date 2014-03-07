@@ -208,7 +208,7 @@ body.campanhas{background-color:#fee133!important;}
 .interna.videos .filtro .span2,
 .interna.videos .todos-itens li img,
 .interna.videos .todos-itens li h2,
-.interna.videos .filtro .span12 { border-color:#f27300; }
+.interna.videos .filtro .span12 { border-color:#f27300; background:#f27300}
 .interna.videos .todos-itens li,
 .interna.videos .filtro,
 .interna.videos .filtro h1,
@@ -237,7 +237,7 @@ body.campanhas{background-color:#fee133!important;}
 .interna.atividades .filtro h1,
 .interna.atividades .todos-itens li img,
 .interna.atividades .todos-itens li h2,
-.interna.atividades .filtro .span12 { border-color:#7732e5; }
+.interna.atividades .filtro .span12 { border-color:#7732e5; background:#7732e5}
 .interna.atividades .todos-itens li,
 .interna.atividades .filtro,
 .interna.atividades .filtro h1,
