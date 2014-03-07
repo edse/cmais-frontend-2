@@ -43,18 +43,21 @@
               <li><a class="mt-jogos <?php if($section->getSlug() == 'jogos'): ?>sel-jogos<?php endif; ?>" href="/jogos" title="Jogos">Jogos</a></li>
               <li><a class="mt-videos <?php if($section->getSlug() == 'videos'): ?>sel-videos<?php endif; ?>" href="/videos" title="Vídeos">V&iacute;deos</a></li>
               <li><a class="mt-imagens <?php if($section->getSlug() == 'imagens'): ?>sel-imagens<?php endif; ?>" href="/imagens" title="Imagens">Imagens</a></li>
-              <li><a class="mt-atividades <?php if($section->getSlug() == 'atividades'): ?>sel-atividades<?php endif; ?>" href="/atividades" title="Atividades">Atividades</a></li>
-              <li><a class="mt-baixar <?php if($section->getSlug() == 'baixar'): ?>sel-baixar<?php endif; ?>" href="/baixar" title="Baixar">Baixar</a></li>
+              <!--li><a class="mt-atividades <?php if($section->getSlug() == 'atividades'): ?>sel-atividades<?php endif; ?>" href="/atividades" title="Atividades">Atividades</a></li>
+              <li><a class="mt-baixar <?php if($section->getSlug() == 'baixar'): ?>sel-baixar<?php endif; ?>" href="/baixar" title="Baixar">Baixar</a></li-->
               <li><a class="mt-radio <?php if($section->getSlug() == 'radio'): ?>sel-radio<?php endif; ?>" href="/radio" title="Radio">R&aacute;dio</a></li>
               <li><a class="mt-agenda <?php if($section->getSlug() == 'voce-sabia'): ?>sel-agenda<?php endif; ?>" href="/voce-sabia" title="Você sabia?">Você Sabia</a></li>
-              <li><a class="mt-especial <?php if($section->getSlug() == 'especial'): ?>sel-especial<?php endif; ?>" href="/especial" title="Especial">Especial</a></li>
+              <!--li><a class="mt-especial <?php if($section->getSlug() == 'especial'): ?>sel-especial<?php endif; ?>" href="/especial" title="Especial">Especial</a></li-->
+              	<!-- Tira especiais, baixar e atividades fev 2014-->
             </ul>
           </div>
         </div>
-        <!--destaque imagem -->
-        <a href="http://tvratimbum.cmais.com.br/especial/e-aniversario-da-tv-ra-tim-bum" title="9 anos de TV Ra Tim Bum!" class="btn-destaque-topo" target="_self" style="margin:0!important">
-          <img class="destaqueTopo" src="http://cmais.com.br/portal/tvratimbum/image/topo-9anos.png" alt="A TV que cresce com você!" />
-        </a> 
+        <!--destaque imagem só se for Homepage by georgia-->
+        <?php if($section->getSlug() == 'homepage'): ?>
+	        <a href="http://www.youtube.com/watch?v=-2rFtlX91Pc" title="TV Ra Tim Bum!" class="btn-destaque-topo" target="_blank" style="margin:0!important">
+	          <img class="destaqueTopo" src="http://cmais.com.br/portal/tvratimbum/image/banner.png" alt="A TV que cresce com você!" /><!--Novo banner só na home fev 2014-->
+	        </a> 
+	      <?php endif; ?>
         <!--/destaque imagem -->
         <!-- destaque antigo ul>
         <div id="destaque-ferias">
