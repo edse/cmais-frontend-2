@@ -59,13 +59,13 @@
               <!--Expediente-->
               <h1>Equipe cmais+</h1><br/>
               
-              <!--h2>Gerência de Multiplataforma</h2>
-              <p>Paulo Garcia</p><br/-->
+              <h2>Gerência de Multimídia</h2>
+              <p>Richard Hager</p><br/>
  
               <h2>Design e Criação</h2>
               <p>
-                Ariane Corniani<br/>
                 Giuliana Xavier<br/>
+                Homero Esteves<br/>
               </p><br/>  
  
               <h2>Conteúdo</h2>
@@ -74,24 +74,24 @@
                 Felipe  Tringoni <br />
                 Juliano Nunes<br/>
                 Marília Fredini<br/>
-                Priscila Lima<br/>
-                Thábata Mondoni<br/>
+                Rita Albuquerque<br/>
+                
               </p><br/>  
 
               <h2>Desenvolvimento e Programação</h2>
               <p>
-                Cristovam Ruiz Jr.<br/>
                 Emerson Estrella<br/>
+                Georgia Catarina A. Pinto<br/>
                 Jefferson M. Doljak<br/>
                 Joseval Lima<br/>
-                Renata Noronha<br/>
               </p><br/>   
 
-              <h2>Estagiárias</h2>
+              <h2>Estagiários</h2>
               <p>
-				        Josilene Rocha<br/>
-              	Mariana Amorim<br/>
-              	Nádia Atie<br/>
+							Clarice França<br/>
+							Josilene Rocha<br/>
+							Mariana Amorim<br/>
+							Tejota Menezes<br/>
               </p><br/>
               
               <h2>Fundação Padre Anchieta</h2><br/>
