@@ -7,7 +7,7 @@ $(document).ready(function() {
   
   var hMobile = "#header-mobile";
   var hTablet = "#header-tablet";
-  $(hMobile, hTablet).headroom({
+  $("#header-mobile, #header-tablet").headroom({
     "tolerance": 10,
     "offset": 205,
     "classes": {
