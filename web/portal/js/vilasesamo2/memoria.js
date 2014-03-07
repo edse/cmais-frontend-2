@@ -56,6 +56,7 @@ matchingGame.clone = $.extend(true, [], matchingGame.deck);
 
 //on document load the lazy way
 $(function(){
+
   var loader = new PxLoader();
   
   loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/acerto.png');
@@ -101,16 +102,10 @@ var cardHeight;
 //ajustando cartas na tela 
 
 $(window).on("resize", function(){
-  cardWidth = ($('.conteudo-asset').width() / 6) -8;
-  cardHeight = cardWidth * 1.33;
-  if(cardWidth >= 115) cardWidth = 115;
-  if(cardHeight >= 149) cardHeight = 149;
-  $('.card').css({
-    "width" :Math.round(cardWidth) + "px",
-    "height":Math.round(cardHeight)+ "px"
-  });
+  setCardSize();
+  
   var adjust = setInterval(function(){
-    setSize();   
+    setPosition();   
   },50);
   
   setTimeout(function(){
@@ -121,8 +116,22 @@ $(window).on("resize", function(){
 
 
 var width;
-var height;  
-function setSize(){
+var height; 
+function setCardSize(){
+  if($('.conteudo-asset').width() < 430){
+    cardWidth = ($('.conteudo-asset').width() / 6) - 2;
+  }else{
+    cardWidth = ($('.conteudo-asset').width() / 6) - 6;
+  }
+  cardHeight = cardWidth * 1.33;
+  if(cardWidth >= 115) cardWidth = 115;
+  if(cardHeight >= 149) cardHeight = 149;
+  $('.card').css({
+    "width" :Math.round(cardWidth) + "px",
+    "height":Math.round(cardHeight)+ "px"
+  });
+} 
+function setPosition(){
   
   $('.card').each(function(i){
     if( i >=0 && i <= 5){
@@ -172,7 +181,7 @@ function setSize(){
       }
     }
   });
-}//setSize
+}//setPosition
   
 function acessibilidadeVisual(){
   var cont = 1;
@@ -258,7 +267,15 @@ function startGame() {
       // listen the click event on each card DIV element.
       $(this).click(selectCard);
     });
-    setSize(); 
+    setCardSize();
+  
+    var adjust = setInterval(function(){
+      setPosition();   
+    },50);
+    
+    setTimeout(function(){
+      clearInterval(adjust);
+    },3000); 
     acessibilidadeVisual();
     playSound("Start_bel_ola");
     timer();
@@ -357,7 +374,7 @@ function EndGame() {
   
   // Define score formula
   total_score =  ( 33/(score/60) + 66/(clicks/24) ).toFixed(2);
-  $('#score').html('Sua pontuaÃ§Ã£o: ' + total_score + '<br>' + clicks + ' cliques em ' + score + ' segundos');
+  $('#score').html('Sua pontuação amiguinho: ' + total_score + '<br>' + clicks + ' Cliques em ' + score + ' segundos');
   ui.addClass('end').removeClass('play');
   
   playSound('Final_garibaldo');
@@ -377,6 +394,9 @@ function reStartGame(){
   uiCards.html("<div class='card'><div class='face front'></div><div class='face back'></div></div>");
   clearTimeout(scoreTimeout);
   matchingGame.deck = $.extend(true, [], matchingGame.clone);
+  
+  setCardSize();
+
   startGame();
 }
 
@@ -392,9 +412,9 @@ function playSound(soundFileName) {
     $(".audio source:last-child").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".ogg").attr("type", "audio/ogg");
     $(".audio").trigger('load');
     $(".audio").bind("load",function(){
-          $('.audio').trigger('play')
-      });
-    $('.audio').trigger('play')
+      $('.audio').trigger('play')
+    });
+    $('.audio').trigger('play');
     $('.audio').bind("ended", function(){
         $(".tampa").css("z-index", "-1");
     });

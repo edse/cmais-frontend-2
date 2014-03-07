@@ -6,7 +6,8 @@ $(document).ready(function() {
   //},7000);
   
   var hMobile = "#header-mobile";
-  $(hMobile).headroom({
+  var hTablet = "#header-tablet";
+  $("#header-mobile, #header-tablet").headroom({
     "tolerance": 10,
     "offset": 205,
     "classes": {
