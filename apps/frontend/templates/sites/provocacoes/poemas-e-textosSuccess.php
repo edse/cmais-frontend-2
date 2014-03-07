@@ -135,6 +135,7 @@
                       <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
                       <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
                     </div>
+                    <textarea id="pergunta2" name="pergunta2"></textarea>
                     <div class="grd">
                       <label>Escreva um pouco sobre você</label>
                       <textarea name="escreva" id="escreva" onKeyDown="limitText(this,1000,'#textCounter2');"></textarea>
@@ -408,3 +409,8 @@
   }
 
 </script>
+<style>
+#pergunta2{
+  visibility: hidden;
+}
+</style>
