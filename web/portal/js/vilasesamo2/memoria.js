@@ -265,18 +265,6 @@ function startGame() {
       // listen the click event on each card DIV element.
       $(this).click(selectCard);
     });
-    if($('.conteudo-asset').width() < 430){
-      cardWidth = ($('.conteudo-asset').width() / 6) - 2;
-    }else{
-      cardWidth = ($('.conteudo-asset').width() / 6) - 6;
-    }
-    cardHeight = cardWidth * 1.33;
-    if(cardWidth >= 115) cardWidth = 115;
-    if(cardHeight >= 149) cardHeight = 149;
-    $('.card').css({
-      "width" :Math.round(cardWidth) + "px",
-      "height":Math.round(cardHeight)+ "px"
-    });
     setSize(); 
     acessibilidadeVisual();
     playSound("Start_bel_ola");
