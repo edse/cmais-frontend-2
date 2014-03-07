@@ -228,6 +228,9 @@ body.campanhas{background-color:#fee133!important;}
 .interna.videos #content .scroll h3 { border-color:#F27300; }
 /* videos*/
 
+/*jogos*/
+.interna.jogos .filtro h1, .interna.jogos .filtro .span2, .interna.jogos .todos-itens li img, .interna.jogos .todos-itens li h2, .interna.jogos .filtro .span12 {background:#0191fb}
+
 /* atividades*/
 .interna.atividades { background:#571ed9; }
 /*.interna.atividades .todos-itens li,*/
