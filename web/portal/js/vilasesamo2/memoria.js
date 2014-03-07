@@ -388,6 +388,8 @@ function reStartGame(){
   clearTimeout(scoreTimeout);
   matchingGame.deck = $.extend(true, [], matchingGame.clone);
   startGame();
+  setCardSize();
+  setPosition();
 }
 
 function closebox(ev) {
