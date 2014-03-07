@@ -387,9 +387,10 @@ function reStartGame(){
   uiCards.html("<div class='card'><div class='face front'></div><div class='face back'></div></div>");
   clearTimeout(scoreTimeout);
   matchingGame.deck = $.extend(true, [], matchingGame.clone);
-  startGame();
+  
   setCardSize();
   setPosition();
+  startGame();
 }
 
 function closebox(ev) {
