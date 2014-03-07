@@ -268,7 +268,14 @@ function startGame() {
       $(this).click(selectCard);
     });
     setCardSize();
-    setPosition(); 
+  
+    var adjust = setInterval(function(){
+      setPosition();   
+    },50);
+    
+    setTimeout(function(){
+      clearInterval(adjust);
+    },3000); 
     acessibilidadeVisual();
     playSound("Start_bel_ola");
     timer();
