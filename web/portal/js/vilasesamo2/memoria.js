@@ -102,6 +102,22 @@ var cardHeight;
 //ajustando cartas na tela 
 
 $(window).on("resize", function(){
+  setCardSize();
+  
+  var adjust = setInterval(function(){
+    setPosition();   
+  },50);
+  
+  setTimeout(function(){
+    clearInterval(adjust);
+  },3000);
+  
+});
+
+
+var width;
+var height; 
+function setCardSize(){
   if($('.conteudo-asset').width() < 430){
     cardWidth = ($('.conteudo-asset').width() / 6) - 2;
   }else{
@@ -114,20 +130,8 @@ $(window).on("resize", function(){
     "width" :Math.round(cardWidth) + "px",
     "height":Math.round(cardHeight)+ "px"
   });
-  var adjust = setInterval(function(){
-    setSize();   
-  },50);
-  
-  setTimeout(function(){
-    clearInterval(adjust);
-  },3000);
-  
-});
-
-
-var width;
-var height;  
-function setSize(){
+} 
+function setPosition(){
   
   $('.card').each(function(i){
     if( i >=0 && i <= 5){
@@ -177,7 +181,7 @@ function setSize(){
       }
     }
   });
-}//setSize
+}//setPosition
   
 function acessibilidadeVisual(){
   var cont = 1;
@@ -264,7 +268,7 @@ function startGame() {
       $(this).click(selectCard);
     });
     
-    setSize(); 
+    setPosition(); 
     acessibilidadeVisual();
     playSound("Start_bel_ola");
     timer();
