@@ -357,7 +357,7 @@ function EndGame() {
   
   // Define score formula
   total_score =  ( 33/(score/60) + 66/(clicks/24) ).toFixed(2);
-  $('#score').html('Sua pontuaÃ§Ã£o: ' + total_score + '<br>' + clicks + ' cliques em ' + score + ' segundos');
+  $('#score').html('Sua pontuação amiguinho: ' + total_score + '<br>' + clicks + ' Cliques em ' + score + ' segundos');
   ui.addClass('end').removeClass('play');
   
   playSound('Final_garibaldo');
