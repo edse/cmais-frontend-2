@@ -9,13 +9,13 @@
 <script src="http://cmais.com.br/portal/tvratimbum/js/jPlayer/js/jquery.jplayer.min.js" type="text/javascript"></script>
 <script type="text/javascript">
   //carrocel
-  $(function(){
+$(function(){
     $('.carrossel').jcarousel({
       wrap: "both"
     });
-    startclock();
-  })
-  var timeID=null;
+    /*startclock();*/
+  });
+  /*var timeID=null;
   var timerRunning=false;
   function stopclock (){
     if(timerRunning)
@@ -35,7 +35,7 @@
     document.clock.face.value= timeValue
     timerID = setTimeout("showtime()",1000);
     timerRunning = true;
-  }
+  }*/
 </script>
 
 <div id="bodyWrapper">
