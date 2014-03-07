@@ -7,7 +7,7 @@ a{outline:none;text-decoration:none;color:#DA4930}
 .casa-memoria{position:relative;}
 #content .conteudo-asset{width:100%;}
 #content .conteudo-asset p#gameScore{text-align:right!important;width:275px;text-transform: uppercase;text-align: left;white-space: nowrap;line-height: 48px; padding-right: 30px;}
-#game{top:0;left:0;bottom:0;right:0;position:absolute; display:block;overflow:hidden;max-width:960px;min-height:687px;}
+#game{top:0;left:0;bottom:0;right:0;position:absolute; display:block;overflow:visible;max-width:960px;min-height:687px;}
 #gameStats{width:84%;font-size:16px;height:auto; clear:both;position: absolute;top: 130px;left: 75px;}
 #qrcode{float:left;cursor:pointer;position:relative;margin-right:20px;padding:0 0 0 15px}
 #gameScore{display:none;text-align:center;height:40px;line-height:40px;float: right;margin-left: 10px;min-width: 250px;}
