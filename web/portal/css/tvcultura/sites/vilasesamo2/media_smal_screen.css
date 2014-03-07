@@ -54,8 +54,8 @@ footer .mapa .span12 {border: 1px solid #f0f0f0;margin-left: 0;clear: both;heigh
 footer .mapa .col-esq.cuidadores-footer{width:50%;}
 footer .mapa .col-central.natv-footer{width:50%;}
 footer .mapa h2, footer .mapa a {font-size:  1.8em;}    
-footer .copyright small {text-align: center;font-size: 0.9em;display:none}
-footer .copyright {height: 30px;margin-left: 2%;} 
+footer .copyright small {text-align: center;font-size: 0.9em;}
+footer .copyright {height: 30px;margin-left: 2%;display:none} 
 footer .relacionados {display:none}
 footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto; font-size:1.3em;}
 
