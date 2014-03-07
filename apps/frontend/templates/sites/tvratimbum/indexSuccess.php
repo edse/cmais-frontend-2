@@ -1,7 +1,7 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 <link href="http://cmais.com.br/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
-<link href="http://cmais.com.br/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/novoLayout-2014.css" type="text/css" rel="stylesheet">
 <link href="http://cmais.com.br/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
 <script src="http://cmais.com.br/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
 <script src="http://cmais.com.br/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
@@ -51,7 +51,7 @@
         <hr />
         <?php if(isset($displays["imagens"])) include_partial_from_folder('tvratimbum','global/display-1c-imagens', array('displays' => $displays["imagens"])) ?>
         <hr />
-        <?php if(isset($displays["baixar"])) include_partial_from_folder('tvratimbum','global/display-1c-baixar', array('displays' => $displays["baixar"])) ?>
+        <?php //if(isset($displays["baixar"])) include_partial_from_folder('tvratimbum','global/display-1c-baixar', array('displays' => $displays["baixar"])) ?>
         
         <!--hr /-->
         <?php //if(isset($displays["ta-sabendo"])) include_partial_from_folder('tvratimbum','global/display-1c-tasabendo', array('displays' => $displays["ta-sabendo"])) ?>
@@ -60,9 +60,9 @@
       <div class="coluna">
         <?php if(isset($displays["jogos"])) include_partial_from_folder('tvratimbum','global/display-1c-jogos', array('displays' => $displays["jogos"])) ?>
         <hr />
-        <?php if(isset($displays["atividades"])) include_partial_from_folder('tvratimbum','global/display-1c-atividades', array('displays' => $displays["atividades"])) ?>
+        <?php //if(isset($displays["atividades"])) include_partial_from_folder('tvratimbum','global/display-1c-atividades', array('displays' => $displays["atividades"])) ?>
         <hr />
-        <?php if(isset($displays["especial"])) include_partial_from_folder('tvratimbum','global/display-1c-especial', array('displays' => $displays["especial"])) ?>
+        <?php if(isset($displays["para-os-pais"])) include_partial_from_folder('tvratimbum','global/display-1c-paraospais') ?>
         <!--hr /-->
         <?php //if(isset($displays["agenda"])) include_partial_from_folder('tvratimbum','global/display-1c-agenda', array('displays' => $displays["agenda"])) ?>
       </div>
@@ -85,7 +85,7 @@
         <hr />
         <?php //if(isset($displays["voce-sabia"])) include_partial_from_folder('tvratimbum','global/display-1c-vocesabia', array('displays' => $displays["voce-sabia"])) ?>
         <hr />
-        <?php if(isset($displays["para-os-pais"])) include_partial_from_folder('tvratimbum','global/display-1c-paraospais') ?>
+         <?php //if(isset($displays["especial"])) include_partial_from_folder('tvratimbum','global/display-1c-especial', array('displays' => $displays["especial"])) ?>
         <hr />
         <?php /*
         <div id="box-novidades">

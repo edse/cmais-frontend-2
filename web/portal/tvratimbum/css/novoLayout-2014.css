@@ -1,0 +1,78 @@
+#bodyWrapper{background: #a7d7e5 url(http://cmais.com.br/portal/tvratimbum/image/bg.jpg) repeat-x 0 0 !important;}/*novo bg fev 2014*/
+
+.topo .destaqueTopo {margin: 0px 1px 15px 6px !important;}
+.topo .destaqueTopo {/*margin: 0px 82px !important;*/}
+.btns-redes {float: left;margin-left:18px;}
+.conteudoWrapper .internas {margin: 0px 0 0 55px;}
+.menu-programas .carrossel .jcarousel-clip {height: 62px;}
+#menu-topo .menu-secoes {width: 779px;}
+#menu-topo .menu-secoes li a.mt-programas{margin-right:3px;}
+#menu-topo .menu-secoes li a.mt-jogos,
+#menu-topo .menu-secoes li a.mt-videos,
+#menu-topo .menu-secoes li a.mt-imagens,
+#menu-topo .menu-secoes li a.mt-atividades,
+#menu-topo .menu-secoes li a.mt-radio,
+#menu-topo .menu-secoes li a.mt-agenda,
+#menu-topo .menu-secoes li a.mt-especial,
+#menu-topo .menu-secoes li a.mt-baixar {margin-right:3px;}
+
+#menu-topo .menu-secoes li a.mt-agenda {width: 96px;background-position: -565px 0;}
+#menu-topo .menu-secoes li a.mt-agenda:hover {width: 96px;background-position: -565px bottom;}
+
+#menu-topo .menu-secoes li a.mt-especial {background-position: -663px 0;width: 81px;}
+#menu-topo .menu-secoes li a.mt-especial:hover {background-position: -663px bottom;width: 81px;}
+
+#menu-rodape {margin: 20px 0 50px 70px;width: 960px;}
+#menu-rodape {*margin: 20px 0 50px 70px;}
+
+/*box-programas-home*/
+#box-voce-sabia{  background-color: #fff;  width: 640px;}
+#box-voce-sabia .topo-esq{  background: url("http://cmais.com.br/portal/tvratimbum/image/icone_vc-sabia.jpg") no-repeat;  border: 1px solid #fff;  display: block;  float: left;  width: 28px;  height: 27px;}
+#box-voce-sabia .topo{  background: url("http://cmais.com.br/portal/tvratimbum/image/bg-sprite.png") repeat-x scroll 0 -162px;  border: 1px solid #fff;  float: left;  width: 608px;  height: 27px; margin-bottom:9px;}
+#box-voce-sabia .topo a.enunciado{  color: #fff;  float: left;  font-size: 20px;  margin: 1px 0 0 10px;}
+#box-voce-sabia span.picote{  background: url(http://cmais.com.br/portal/tvratimbum/image/bg-picote.png) repeat-x;  border: none;  display: block;  height: 3px;}
+
+#box-voce-sabia .lista-escolha .imagem{width:640px; height:390px; background:#000;}
+#box-voce-sabia .lista-escolha dl{clear:both;}
+#box-voce-sabia .lista-escolha dl dt{background: url("http://cmais.com.br/portal/tvratimbum/image/pattern-titulo_asset-voce-sabia.png");  margin: 9px;}
+#box-voce-sabia .lista-escolha dl dt a{background:url("http://cmais.com.br/portal/tvratimbum/image/mais.png") no-repeat right center; text-decoration:none; display:block;padding:18px 8px; font-size:18px; font-weight: bold; color:#136388;}
+#box-voce-sabia .lista-escolha dl dt a:hover{padding:14px 8px; font-size:24px;}
+#box-voce-sabia .lista-escolha dl dt a.ativo{background:url("http://cmais.com.br/portal/tvratimbum/image/menos.png") no-repeat right center;padding:14px 8px; font-size:24px;}
+#box-voce-sabia .lista-escolha dl dd ul{margin:16px; color:#6b6b6b; font-size: 14px;}
+#box-voce-sabia .lista-escolha dl dd ul li span {font-weight:bold; color:#136388}
+
+#box-radio{ background-color: #fff;  width: 640px;}
+#box-radio .topo-esq{ background: url("http://cmais.com.br/portal/tvratimbum/image/icone_radio.jpg") no-repeat;  border: 1px solid #fff;  display: block;  float: left;  width: 28px;  height: 27px;}
+#box-radio .topo{ background: url("http://cmais.com.br/portal/tvratimbum/image/bg-sprite.png") repeat-x scroll 0 -324px;  border: 1px solid #fff;  float: left;  width: 608px;  height: 27px; margin-bottom:9px;}
+#box-radio .topo a.enunciado{color: #fff;  float: left;  font-size: 20px;  margin: 1px 0 0 10px;}
+#box-radio span.picote{background: url(http://cmais.com.br/portal/tvratimbum/image/bg-picote.png) repeat-x;  border: none;  display: block;  height: 3px;}
+#box-radio .playlist div.jp-playlist ul {background: whiteSmoke;padding: 10px 20px 20px;text-align: left;overflow: auto;height: 211px;}
+#box-radio .desenhoRadio{float:left;}
+#box-radio #container{float:left;}
+#box-radio div.jp-type-playlist div.jp-playlist a:hover {color:#9018d5;}
+#box-radio .playlist div.jp-type-playlist div.jp-playlist a:hover, .playlist div.jp-type-playlist div.jp-playlist a.jp-playlist-current {color:#9018d5 !important;} 
+#box-radio .jp-volume-bar-value{color:#9018d5 !important;}
+.btn-barra a {font-size: 13px!important; width: 238px; text-align: center;}
+.topo h2 a{margin: 10px 0 0 -25px;width: 207px;height: 210px;}
+.rodapeNovo{width:100%; height: auto; overflow: hidden;}
+
+a.jp-play, a.jp-play:hover, a.jp-pause, a.jp-pause:hover, a.jp-stop, a.jp-stop:hover, a.jp-previous, a.jp-previous:hover, a.jp-next, a.jp-next:hover, div.jp-seek-bar, div.jp-play-bar, a.jp-mute, a.jp-mute:hover, a.jp-unmute, a.jp-unmute:hover, div.jp-volume-bar, div.jp-volume-bar-value, div.jp-video div.jp-video-play, div.jp-video div.jp-video-play:hover {
+background-image: url("http://cmais.com.br/portal/tvratimbum/image/jplayer.png") !important;}
+.menu-programas .carrossel .jcarousel-item .boxPersonagens-tip img [alt]{color:red !important; background: red;}
+#box-imagens .btn-barra a {padding: 0 10px !important;}
+#box-jogos .btn-barra a {padding: 0 9px!important;}
+
+#box-baixar a span{height:30px;}
+#box-baixar a.btn-inativo{background:url("http://cmais.com.br/portal/tvratimbum/image/botao_inativo.png") no-repeat !important;}
+#box-baixar a.btn-inativo span{color:#c9c9c9 !important; padding-top: 5px !important}
+#box-baixar .btn-cinza a span {width: 146px;display: block;margin-top: -7px;height: 24px;padding-top: 11px;}
+
+#box-atividades a span{height:30px;}
+#box-atividades a.padding span{padding-top: 5px !important}
+#box-atividades .btn-cinza a span {width: 146px;display: block;margin-top: -7px;height: 24px;padding-top: 11px;}
+#box-atividades a.artes:hover{background: url("http://cmais.com.br/portal/tvratimbum/image/box-atividades_artes.jpg") no-repeat; text-indent: -9999px; overflow: hidden;}
+
+#box-especial-interna .box-especial-infotxt img{margin: 0!important;}
+.btn-destaque-topo{float: left;margin: 26px 5px 0 -83px;}
+
+.blog a{color:#0000FF}
