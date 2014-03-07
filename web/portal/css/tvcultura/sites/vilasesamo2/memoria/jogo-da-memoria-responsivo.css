@@ -105,8 +105,9 @@ body.appcache-allinfo #appcache_info.appcache-noupdate,body.appcache-allinfo #ap
   .interna.jogos #content .conteudo-asset{padding:2%;min-height: 321px;}
   .interna.jogos #content .casa-memoria{width: 100%; min-height: 289px;}
   .interna.jogos #content #gameIntro{margin: 0% auto 0 auto;max-width: 100%;}
-  .interna.jogos #content section #playground{margin:0;} 
+  .interna.jogos #content section #playground{margin:0;}
   .interna.jogos #content #gameStats{top:0; left:-10px; width:100%;}
+  .interna.jogos #content .conteudo-asset{padding-left:18px;}
   .interna.jogos #content .conteudo-asset p#gameScore{right:-10px;font-size:1em;}
   .interna.jogos #content #reset{width: 145px;height: 40px;background-size:100%}
   .interna.jogos #content #gameScore{right: -10px;background: none;width: 50%;line-height: 40px;}

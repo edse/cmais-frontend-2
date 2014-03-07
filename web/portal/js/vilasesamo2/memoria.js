@@ -267,7 +267,7 @@ function startGame() {
       // listen the click event on each card DIV element.
       $(this).click(selectCard);
     });
-    
+    setCardSize();
     setPosition(); 
     acessibilidadeVisual();
     playSound("Start_bel_ola");
