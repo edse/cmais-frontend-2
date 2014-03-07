@@ -7,7 +7,7 @@ a{outline:none;text-decoration:none;color:#DA4930}
 .casa-memoria{position:relative;}
 #content .conteudo-asset{width:100%;}
 #content .conteudo-asset p#gameScore{text-align:right!important;width:275px;text-transform: uppercase;text-align: left;white-space: nowrap;line-height: 48px; padding-right: 30px;}
-#game{top:0;left:0;bottom:0;right:0;position:absolute; display:block;overflow:hidden;max-width:960px;min-height:687px;}
+#game{top:0;left:0;bottom:0;right:0;position:absolute; display:block;overflow:visible;max-width:960px;min-height:687px;}
 #gameStats{width:84%;font-size:16px;height:auto; clear:both;position: absolute;top: 130px;left: 75px;}
 #qrcode{float:left;cursor:pointer;position:relative;margin-right:20px;padding:0 0 0 15px}
 #gameScore{display:none;text-align:center;height:40px;line-height:40px;float: right;margin-left: 10px;min-width: 250px;}
@@ -24,7 +24,7 @@ a{outline:none;text-decoration:none;color:#DA4930}
 #playground{width: 100%; text-align:center;position:relative;}
 
 /*#cards{position:absolute;top:0;left:0;bottom:0;right:0;display:none;z-index:2}*/
-#cards{display:none;width:711px;height:476px;position: relative;top: 200px;left: 86px;}
+#cards{display:none;width:711px;height:476px;position: relative;top: 200px;left: 86px;margin-left:15px;}
 .card{-webkit-perspective:600px;-moz-perspective:600px;width:114px;height:149px;position:absolute;-moz-transition:all .3s;-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s;cursor:pointer}
 .reset{box-shadow:0 0 30px #fff;}
 #gameIntro{margin: 20% auto 0 auto; max-width:82%;-moz-transition:opacity 1s ease-out;-webkit-transition:opacity 1s ease-out;-o-transition:opacity 1s ease-out;transition:opacity 1s ease-out}
@@ -111,7 +111,7 @@ body.appcache-allinfo #appcache_info.appcache-noupdate,body.appcache-allinfo #ap
   .interna.jogos #content .conteudo-asset p#gameScore{right:-10px;font-size:1em;}
   .interna.jogos #content #reset{width: 145px;height: 40px;background-size:100%}
   .interna.jogos #content #gameScore{right: -10px;background: none;width: 50%;line-height: 40px;}
-  .interna.jogos #content #cards{top:47px; left:0;}
+  .interna.jogos #content #cards{top:47px; left:0; margin-left:0px;}
   .interna.jogos #content .conteudo-asset .asset {margin-left:0;}
 /* margin-left: -4%; */
 }
