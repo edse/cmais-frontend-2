@@ -104,7 +104,7 @@ var cardHeight;
 //ajustando cartas na tela 
 
 $(window).on("resize", function(){
-  cardWidth = ($('.conteudo-asset').width() / 6);
+  cardWidth = ($('.conteudo-asset').width() / 6) - 4;
   cardHeight = cardWidth * 1.33;
   if(cardWidth >= 115) cardWidth = 115;
   if(cardHeight >= 149) cardHeight = 149;
