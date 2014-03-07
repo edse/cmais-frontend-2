@@ -56,6 +56,9 @@ matchingGame.clone = $.extend(true, [], matchingGame.deck);
 
 //on document load the lazy way
 $(function(){
+  if(mediaSupport('audio/ogg; codecs=vorbis', 'audio') || mediaSupport('audio/mpeg', 'audio')) {
+    $(".audio").trigger('load');
+  }
   var loader = new PxLoader();
   
   loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/acerto.png');
@@ -390,7 +393,6 @@ function playSound(soundFileName) {
     $(".tampa").css("z-index", "10");
     $(".audio source").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".mp3").attr("type", "audio/mp3");
     $(".audio source:last-child").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".ogg").attr("type", "audio/ogg");
-    $(".audio").trigger('load');
     $(".audio").bind("load",function(){
           $('.audio').trigger('play')
       });
