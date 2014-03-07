@@ -607,11 +607,11 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* /top menu*/
 
 /* footer*/
-footer { background:#fff url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-copyright.jpg) repeat-x; padding-bottom:4%; width:100%;}
+footer {width:100%;}
 #no-mobile{display:block;}
 #mobile{display:none;}
-footer .copyright {height:30px;}
-footer .copyright small { max-width:940px; margin:0 auto; display:block; font-size:1.0em; text-transform:uppercase; height: 25px; line-height:25px; }
+footer .copyright {height:30px;background:#fff; padding-bottom:4%; }
+footer .copyright small { max-width:940px; margin:0 auto; display:block; font-size:1.0em; text-transform:uppercase; height: 25px; line-height:25px; text-align: center;}
 footer a {display:block;}
 footer h1 a,
 footer h2 a { text-indent:-9999px; }
@@ -663,6 +663,7 @@ footer .mapa ul a:hover { text-decoration:underline; }
 footer a:hover { text-decoration:underline; }
 
 /* footer .relacionados h3 { font-weight:normal; text-transform:uppercase; font-size:14px; } */
+footer .relacionados {overflow: hidden;padding-bottom: 2%;padding-top: 2%;}
 footer .relacionados h1 {font-size: 16px;float: left;margin: 0 0 20px 0;height: 17px;line-height: 17px;width: 100%;}
 footer .relacionados ul { margin:2% 0 0 0; }
 footer .relacionados li { list-style:none; float:left; margin-right:3.79%; }
