@@ -33,10 +33,10 @@
     $('.carrossel').jcarousel({
       wrap: "both"
     });
-    startclock();
+    //startclock();
   })
   
-  var timeID=null;
+   /*var timeID=null;
   var timerRunning=false;
   function stopclock (){
     if(timerRunning)
@@ -56,7 +56,7 @@
     document.clock.face.value= timeValue
     timerID = setTimeout("showtime()",1000);
     timerRunning = true;
-  }
+  }*/
 </script>
 <?php /*
 <script>

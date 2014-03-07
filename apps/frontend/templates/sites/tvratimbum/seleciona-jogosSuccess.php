@@ -40,7 +40,7 @@ $site_id = $_GET['site_id'];
     $('.carrossel').jcarousel({
       wrap: "both"
     });
-    startclock();
+   // startclock();
   })
   
   function setSection(i){
@@ -48,7 +48,7 @@ $site_id = $_GET['site_id'];
     $('#filter').submit();
   }
   
-  var timeID=null;
+   /*var timeID=null;
   var timerRunning=false;
   function stopclock (){
     if(timerRunning)
@@ -68,7 +68,7 @@ $site_id = $_GET['site_id'];
     document.clock.face.value= timeValue
     timerID = setTimeout("showtime()",1000);
     timerRunning = true;
-  }
+  }*/
 </script>
 <script>
   function loadScroll(){

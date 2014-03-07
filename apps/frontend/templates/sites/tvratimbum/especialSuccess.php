@@ -64,7 +64,7 @@
     $('.carrossel').jcarousel({
       wrap: "both"
     });
-    startclock();
+    //startclock();
   })
   
   function setSection(i){
@@ -72,7 +72,7 @@
     $('#filter').submit();
   }
   
-  var timeID=null;
+  /*var timeID=null;
   var timerRunning=false;
   function stopclock (){
     if(timerRunning)
@@ -92,7 +92,7 @@
     document.clock.face.value= timeValue
     timerID = setTimeout("showtime()",1000);
     timerRunning = true;
-  }
+  }*/
 </script>
 
 <div id="bodyWrapper">
