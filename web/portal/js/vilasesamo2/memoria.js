@@ -107,7 +107,7 @@ $(window).on("resize", function(){
   if($('.conteudo-asset').width() < 430){
     cardWidth = ($('.conteudo-asset').width() / 6) - 2;
   }else{
-    cardWidth = ($('.conteudo-asset').width() / 6) - 4;
+    cardWidth = ($('.conteudo-asset').width() / 6) - 6;
   }
   cardHeight = cardWidth * 1.33;
   if(cardWidth >= 115) cardWidth = 115;
