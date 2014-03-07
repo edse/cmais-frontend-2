@@ -389,7 +389,7 @@ function reStartGame(){
   matchingGame.deck = $.extend(true, [], matchingGame.clone);
   
   setCardSize();
-  setPosition();
+
   startGame();
 }
 
