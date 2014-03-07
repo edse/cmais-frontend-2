@@ -56,6 +56,7 @@ matchingGame.clone = $.extend(true, [], matchingGame.deck);
 
 //on document load the lazy way
 $(function(){
+
   var loader = new PxLoader();
   
   loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/acerto.png');
@@ -101,7 +102,11 @@ var cardHeight;
 //ajustando cartas na tela 
 
 $(window).on("resize", function(){
-  cardWidth = ($('.conteudo-asset').width() / 6) -8;
+  if($('.conteudo-asset').width() < 430){
+    cardWidth = ($('.conteudo-asset').width() / 6) - 2;
+  }else{
+    cardWidth = ($('.conteudo-asset').width() / 6) - 6;
+  }
   cardHeight = cardWidth * 1.33;
   if(cardWidth >= 115) cardWidth = 115;
   if(cardHeight >= 149) cardHeight = 149;
@@ -258,6 +263,7 @@ function startGame() {
       // listen the click event on each card DIV element.
       $(this).click(selectCard);
     });
+    
     setSize(); 
     acessibilidadeVisual();
     playSound("Start_bel_ola");
@@ -392,9 +398,9 @@ function playSound(soundFileName) {
     $(".audio source:last-child").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".ogg").attr("type", "audio/ogg");
     $(".audio").trigger('load');
     $(".audio").bind("load",function(){
-          $('.audio').trigger('play')
-      });
-    $('.audio').trigger('play')
+      $('.audio').trigger('play')
+    });
+    $('.audio').trigger('play');
     $('.audio').bind("ended", function(){
         $(".tampa").css("z-index", "-1");
     });
