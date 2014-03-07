@@ -146,6 +146,7 @@ $('.sorryFlash').focus();
 setInterval(function(){
   updateOrientation();  
 },500);
+alert(navigator.platform)
 
 function updateOrientation(){  
   var screenWidth = screen.width;
