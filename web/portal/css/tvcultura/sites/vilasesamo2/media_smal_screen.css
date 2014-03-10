@@ -179,7 +179,7 @@ a{text-decoration:underline!important;}
 
 /* personagens */
 .personagens #content{margin: 20px 5%;}
-.personagens #content .conteudo-asset {width:100%;}
+.personagens #content .conteudo-asset {width:100%;margin-left:0;}
 .personagens #content h1{padding:0!important;font-size: 1.2em;height: 3em;}
 .personagens #content .q-pers{width:134px;height:134px;}
 .personagens #content #container-personagens a {width:100%;height:100%;margin-left:0;}
