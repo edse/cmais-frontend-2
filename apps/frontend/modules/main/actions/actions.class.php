@@ -238,7 +238,7 @@ class mainActions extends sfActions
     }
     if(!$param1)
       $this->forward('main', 'index');
-    elseif(($param1 == "tudo")||($param2 == "tudo")||($param1 == "busca")||($param2 == "busca") && $param1 != "culturabrasil")
+		elseif(($param1 == "tudo")||($param2 == "tudo")||($param1 == "busca")||($param2 == "busca") && $param1 != "culturabrasil" && $param1 != "vilasesamo")
       $this->forward('main', 'search');
     elseif(($param1 == "criancasdobrasil")||($param1 == "criancas-do-brasil")){
       header("Location: http://tvcultura.com.br/criancasdobrasil");
