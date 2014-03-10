@@ -114,7 +114,8 @@
 
                 <?php include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-3"])) ?>
 
-                <?php include_partial_from_folder('blocks','global/display-1c-gallery', array('displays' => $displays["destaque-5"])) ?>
+                <?php //include_partial_from_folder('blocks','global/display-1c-gallery', array('displays' => $displays["destaque-5"])) ?>
+                <?php include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-5"])) ?>
 
                 <?php include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-7"])) ?>
                 
