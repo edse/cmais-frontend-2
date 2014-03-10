@@ -243,7 +243,7 @@ $(document).ready(function(){
     $('.carousel-control').fadeOut("fast");
   });
   $('#carrossel-radar').jcarousel({
-  	 wrap: 'circular'
+  	 startAuto: true
   })
 });
 </script>  
