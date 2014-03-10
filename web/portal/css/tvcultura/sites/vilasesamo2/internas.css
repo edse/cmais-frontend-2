@@ -233,6 +233,7 @@ body.campanhas{background-color:#fee133!important;}
 
 /* atividades*/
 .interna.atividades { background:#571ed9; }
+.capa.atividades { background:#571ed9; }
 /*.interna.atividades .todos-itens li,*/
 .interna.atividades .scroll,
 .interna.atividades .filtro .span10 { border-left: 2px solid #7732e5; }
