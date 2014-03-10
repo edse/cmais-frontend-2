@@ -304,7 +304,6 @@ a{text-decoration:underline!important;}
 #page_nav{margin-top: 25%!important;/* margin-bottom: 10%; */}
 
 /*box pais*/
-#content .pais {display:none}
 
 .pais .redes {display:none!important}
 .pais h2.tit-box {font-size:1.2em}
@@ -324,7 +323,7 @@ a{text-decoration:underline!important;}
 #categoria-box-pais .box-pais .parceiros{width:95%!important;height:auto!important;}
 #categoria-box-pais .box-pais .artigo p {height:auto!important;}
 #categoria-box-pais .pais .fechar-toogle.ativo {width:100%!important}
-#categoria-box-pais .box-pais.span12 {margin-left: 0;}
+#categoria-box-pais .box-pais.span12 {margin-left: 0;display: none;}
 
 #sfWebDebugBar{display:none!important}
 /*categorias *, habitos*/
@@ -403,12 +402,13 @@ a{text-decoration:underline!important;}
 }
 
 @media only screen and (max-width: 500px) and (min-width: 321px){
-	.interna.jogos #content h1 .icones-sprite-interna {margin: -4% 0 0 36%!important;}
+	.interna.jogos #content h1 .icones-sprite-interna {margin: -5% 0 0 36%!important;}
 	.interna.jogos #content .span12 h1, .interna.atividades #content .span12 h1, .interna.videos #content .span12 h1{line-height: 1em!important;}
 	.interna.atividades #content h1 .icones-sprite-interna{margin: -5% 0 0 32%!important;}
 	.icone-acessibilidade{background-position: -101px -544px;}
 	.cuidadores .icone-cuidadores-grande {background-position: 0 -563px;margin: -2% 0 0 23%!important;width: 9%;}
 	.interna.videos #content h1 .icones-sprite-interna {margin: -5% 0 0 34%!important;}
+	.icone-personagem-grande{margin: 0 0 0 31%!important;} 
 }
 
 
