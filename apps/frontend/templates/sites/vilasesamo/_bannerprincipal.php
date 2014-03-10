@@ -198,7 +198,7 @@
           
           switch(i){
             case 0:
-              $(this).attr("aria-label", "Home do Site -  Bel acenando sorrindo comprimentando e falando - 'Olá! Bem Vindo ao nosso novo site'.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>');
+              $(this).attr("aria-label", "Baner tem novidade chegando! - a Nova personagem do Vila Sésamo sentanda numa cadeira de rodas acenando e avisando que tem novidades chegando. Com flores ao redor dela").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>');
             break;
             case 1:
               $(this).attr("aria-label", "Tela Jogos - Groover esta vestido com um capacete e uma capa vermelha convidando você a brincar com os personagens do Vila-Sésamo.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/jogos');
