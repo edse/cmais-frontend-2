@@ -42,7 +42,7 @@ a:hover, a:visited{color:#fff!important;}
 #no-mobile{display: none;}
 #content{top:70px!important;margin-bottom:0;}
 #mobile{display: block; padding-bottom:0;margin-top:80px; }
-.atividades #mobile{margin-top: 10px; }
+.atividades.interna #mobile{margin-top: 80px; }
 /*.videos #content{top:20px!important; }*/
 .videos #mobile{margin-top: 40px; }
 footer{width: 100%;}
@@ -55,7 +55,7 @@ footer .mapa .col-esq.cuidadores-footer{width:50%;}
 footer .mapa .col-central.natv-footer{width:50%;}
 footer .mapa h2, footer .mapa a {font-size:  1.8em;}    
 footer .copyright small {text-align: center;font-size: 0.9em;}
-footer .copyright {height: 30px;margin-left: 2%;} 
+footer .copyright {height: 30px;margin-left: 2%;display:none} 
 footer .relacionados {display:none}
 footer .relacionados h1 {width: 100%; text-align:center; margin:0 auto 10px auto; font-size:1.3em;}
 
@@ -373,17 +373,19 @@ a{text-decoration:underline!important;}
 }
 
 @media screen and (min-width:360px) and (max-width:500px) {
-  #content .todos-itens #container {width: 100%;margin-left: 0!important;}
+  #content .todos-itens #container {width: 100%;margin-left: 0!important}
 	#content .todos-itens {margin:15px auto;}
   #content .todos-itens .element{width: 48%;margin: 5px 0 0 5px!important;}
   #content .todos-itens li img{width:100%;}
   #content .todos-itens .yt-menu,
   #content .todos-itens .container-image{height:150px!important; max-width:310px;}
+  #page_nav .mais{float: none!important;width: 190px!important;margin: 0 auto!important;font-size: 1.2em;line-height: 2em;}
+
 }
 
 @media screen and (max-width: 359px) {
 	
-	#content .todos-itens #container {width: 100%;margin-left: 0!important;}
+	#content .todos-itens #container {width: 100%;margin-left: 0!important}
 	#content .span8 {width:100%;padding:0 8%}
 	.destaques > .span4 {margin-left:0!important;}
 	#content .todos-itens {margin:15px auto;}
@@ -400,12 +402,12 @@ a{text-decoration:underline!important;}
 }
 
 @media only screen and (max-width: 500px) and (min-width: 321px){
-	.interna.jogos #content h1 .icones-sprite-interna {margin: -5% 0 0 36%!important;}
+	.interna.jogos #content h1 .icones-sprite-interna {margin: -4% 0 0 36%!important;}
 	.interna.jogos #content .span12 h1, .interna.atividades #content .span12 h1, .interna.videos #content .span12 h1{line-height: 1em!important;}
 	.interna.atividades #content h1 .icones-sprite-interna{margin: -5% 0 0 32%!important;}
 	.icone-acessibilidade{background-position: -101px -544px;}
 	.cuidadores .icone-cuidadores-grande {background-position: 0 -563px;margin: -2% 0 0 23%!important;width: 9%;}
-	.interna.videos #content h1 .icones-sprite-interna {margin: -4% 0 0 34%!important;}
+	.interna.videos #content h1 .icones-sprite-interna {margin: -5% 0 0 34%!important;}
 }
 
 

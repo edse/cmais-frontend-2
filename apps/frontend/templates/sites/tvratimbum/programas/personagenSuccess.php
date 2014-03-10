@@ -20,7 +20,7 @@ if(!isset($displays["voce-sabia"])){
     $('.carrossel').jcarousel({
       wrap: "both"
     });
-    startclock();
+   // startclock();
   })
   
   function setSection(i){
@@ -28,7 +28,7 @@ if(!isset($displays["voce-sabia"])){
     $('#filter').submit();
   }
   
-  var timeID=null;
+ /*var timeID=null;
   var timerRunning=false;
   function stopclock (){
     if(timerRunning)
@@ -48,7 +48,7 @@ if(!isset($displays["voce-sabia"])){
     document.clock.face.value= timeValue
     timerID = setTimeout("showtime()",1000);
     timerRunning = true;
-  }
+  }*/
 </script>
 
 <div id="bodyWrapper">
