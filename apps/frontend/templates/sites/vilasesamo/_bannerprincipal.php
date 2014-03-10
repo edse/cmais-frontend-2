@@ -9,7 +9,7 @@
       <ul aria-hidden="true" tabindex="-1">
         <!--item bem vindo-->
         <li aria-hidden="true" tabindex="-1" class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/01_mar_novidade_ chegando/pattern.jpg') repeat;">
-          <div class="mpc_ls_slide_item" data-x="90" data-y="370" data-delay="800" data-duration="3500" data-easing="easeOutBounce" data-effect="slideBottom" data-fade="on">  
+          <div class="mpc_ls_slide_item" data-x="90" data-y="370" data-delay="800" data-duration="3500" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on">  
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/01_mar_novidade_ chegando/flores.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="450" data-y="40" data-delay="3500" data-duration="1500" data-easing="easeOutBack" data-effect="none" data-fade="on"> 
