@@ -45,6 +45,8 @@
 
                 </div>
                 
+                  
+                
                 <div class="texto bg-cinza">
                   <div class="grid1">
                   <?php if($asset->AssetType->getSlug() == "person"): ?>
@@ -55,8 +57,9 @@
                     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
                   <?php endif; ?>
                   </div>
-                  <p><?php echo nl2br($asset->getDescription()) ?> </p>  
                 </div>
+                
+                <p><?php echo nl2br($asset->getDescription()) ?> </p>
                 
                 <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
 
