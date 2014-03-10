@@ -87,7 +87,7 @@ body.campanhas{background-color:#fee133!important;}
 .campanhas .filtro h1{font-size:25px!important;background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important;padding: 0 40px!important;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 .campanhas .container-campanhas{background: #FFF;border-bottom: 2px solid #fbc227;padding: 20px;min-height: 245px;}
 .interna.campanhas .container-campanhas {border-bottom:none;}
-.campanhas .container-campanhas iframe{float:right;margin-top: -160px;}
+.campanhas .container-campanhas iframe{float:right;margin-top: -160px;margin-left: 20px;}
 .campanhas .container-campanhas img.img-destaque{float:right;}
 .campanhas #viewer{width:100%;text-align:center; background:#FFFFFF;border-top: 2px solid #fbc227;}
 .campanhas #viewer h2{background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important; font-size:18px!important;font-family:'dinmedium',Arial, Helvetica, sans-serif;margin: 0;text-align: left;padding-left: 10px;}
@@ -229,7 +229,7 @@ body.campanhas{background-color:#fee133!important;}
 /* videos*/
 
 /*jogos*/
-.interna.jogos .filtro h1, .interna.jogos .filtro .span2, .interna.jogos .todos-itens li img, .interna.jogos .todos-itens li h2, .interna.jogos .filtro .span12 {background:#0191fb}
+.interna.jogos .filtro h1, .interna.jogos .filtro .span2, .interna.jogos .todos-itens li img, .interna.jogos .todos-itens li h2, .interna.jogos .filtro .span12 {background:#3AAAEC;}
 
 /* atividades*/
 .interna.atividades { background:#571ed9; }
@@ -541,7 +541,7 @@ body.na-tv{background-color:#feec3c;position:relative;}
 /*coleção incluir*/
 .interna.campanhas .container-campanhas{float:left;}
 .container-campanhas .texto  {width:60%;float:left;margin-top:2%}
-.container-campanhas .asset{float: right;margin-left: 1%;margin-top: 2%;}
+.container-campanhas .asset{float: right;margin-left: 1%;margin-top: 2%;overflow: hidden;}
 .btns-download{float: left;width: 100%;}
 .pdf{margin:2%}
 .pdf p{color: #fff;font-size: 1em;text-align: center;width:165px;margin:0 auto;text-transform: uppercase;}

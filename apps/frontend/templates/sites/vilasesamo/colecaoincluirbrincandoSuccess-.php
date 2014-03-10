@@ -68,14 +68,14 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <div class="btns-download">
           	<h3>Materiais disponíveis para download gratuito:</h3>
             	<div class="pdf pdf-incluir">
-            		<a href="http://midia.cmais.com.br/assets/file/original/ac143cf466819d5d8fe00db24db62750a4825894.pdf">
+            		<a href="http://midia.cmais.com.br/assets/file/original/ac143cf466819d5d8fe00db24db62750a4825894.pdf" target="_blank">
 									<p>Dicas para Incluir Brincando</p>
 									
 								</a>
 							</div>
 							
             	<div class="pdf pdf-caderno">
-								<a href="http://midia.cmais.com.br/assets/file/original/7bb0700d26b34670ed3baef95e405c9dee83b7d9.pdf">
+								<a href="http://midia.cmais.com.br/assets/file/original/7bb0700d26b34670ed3baef95e405c9dee83b7d9.pdf" target="_blank">
 								<p>Caderno de Formação - Incluir Brincando</p>
 								</a>
 							</div>
