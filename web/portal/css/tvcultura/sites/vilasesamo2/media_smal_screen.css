@@ -43,6 +43,7 @@ a:hover, a:visited{color:#fff!important;}
 #content{top:70px!important;margin-bottom:0;}
 #mobile{display: block; padding-bottom:0;margin-top:80px; }
 .atividades.interna #mobile{margin-top: 80px; }
+.capa.interna #mobile{margin-top: 0!important; }
 /*.videos #content{top:20px!important; }*/
 .videos #mobile{margin-top: 40px; }
 footer{width: 100%;}
@@ -403,12 +404,13 @@ a{text-decoration:underline!important;}
 }
 
 @media only screen and (max-width: 500px) and (min-width: 321px){
-	.interna.jogos #content h1 .icones-sprite-interna {margin: -4% 0 0 36%!important;}
+	.interna.jogos #content h1 .icones-sprite-interna {margin: -5% 0 0 36%!important;}
 	.interna.jogos #content .span12 h1, .interna.atividades #content .span12 h1, .interna.videos #content .span12 h1{line-height: 1em!important;}
 	.interna.atividades #content h1 .icones-sprite-interna{margin: -5% 0 0 32%!important;}
 	.icone-acessibilidade{background-position: -101px -544px;}
 	.cuidadores .icone-cuidadores-grande {background-position: 0 -563px;margin: -2% 0 0 23%!important;width: 9%;}
 	.interna.videos #content h1 .icones-sprite-interna {margin: -5% 0 0 34%!important;}
+	.icone-personagem-grande{margin: 0 0 0 31%!important;} 
 }
 
 

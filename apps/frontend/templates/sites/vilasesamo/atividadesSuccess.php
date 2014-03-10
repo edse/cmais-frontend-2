@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>" ?>
 <script>
-  $("body").addClass("interna atividades");
+  $("body").addClass("capa atividades");
 </script>
 <?php echo $noscript; ?>
 <!-- HEADER -->
