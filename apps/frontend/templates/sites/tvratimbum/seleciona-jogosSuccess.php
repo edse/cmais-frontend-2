@@ -25,8 +25,8 @@ $site_id = $_GET['site_id'];
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 <link href="http://cmais.com.br/portal/tvratimbum/css/geral.css" type="text/css" rel="stylesheet">
-<link href="http://cmais.com.br/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
-<link href="http://cmais.com.br/portal/tvratimbum/css/novoLayout-2012.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/novoLayout-2014.css" type="text/css" rel="stylesheet">
+<link href="http://cmais.com.br/portal/tvratimbum/css/novoLayout-2014.css" type="text/css" rel="stylesheet">
 <link href="http://cmais.com.br/portal/tvratimbum/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" />
 <script src="http://cmais.com.br/portal/tvratimbum/js/jquery-1.4.4.min.js" type="text/javascript"></script>
 <script src="http://cmais.com.br/portal/tvratimbum/js/jquery-ui-1.8.9.min.js" type="text/javascript"></script>
@@ -40,7 +40,7 @@ $site_id = $_GET['site_id'];
     $('.carrossel').jcarousel({
       wrap: "both"
     });
-    startclock();
+   // startclock();
   })
   
   function setSection(i){
@@ -48,7 +48,7 @@ $site_id = $_GET['site_id'];
     $('#filter').submit();
   }
   
-  var timeID=null;
+   /*var timeID=null;
   var timerRunning=false;
   function stopclock (){
     if(timerRunning)
@@ -68,7 +68,7 @@ $site_id = $_GET['site_id'];
     document.clock.face.value= timeValue
     timerID = setTimeout("showtime()",1000);
     timerRunning = true;
-  }
+  }*/
 </script>
 <script>
   function loadScroll(){

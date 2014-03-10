@@ -11,7 +11,7 @@ a:hover{text-decoration:underline!important;}
 #content { top:134px; margin-bottom:164px; }
 #content .section,
 #content section { max-width:940px; margin:20px auto; }
-#content h1 {margin: 0;font-size: 50px;height: 72px;line-height: 72px;padding: 0 0px 5px 0px;}
+#content h1 {margin: 0;font-size: 50px;height: 72px;line-height: 57px;padding: 0 0px 5px 0px;}
 .artigo #content header h1{font-size:25px;}
 /*#content h1 span,*/
 #content h1 i.icones-sprite-interna {margin: 0px 20px 0px 20!important}
@@ -34,7 +34,7 @@ a:hover{text-decoration:underline!important;}
 .filtro .span2 h3 { color:#fff; text-align:center; text-transform:uppercase; margin:5px 0 4px 0; overflow:hidden; position:relative;font-size: 16px;line-height: 21px; font-family:'dinmedium',Arial, Helvetica, sans-serif; }
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
 .filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1773px; top:0; }
-.filtro .span2{ background:#d71c0d; border:1px solid #c31408; overflow:hidden; width: 175px;margin: 3px;display: block;margin-top: -2px;}
+.filtro .span2{ background:#d71c0d!important; border:1px solid #c31408; overflow:hidden; width: 175px;margin: 3px;display: block;margin-top: -2px;}
 .filtro .span10 { margin-left: 0;width: 758px;float: right;height: 425px; }
 .filtro .span12 { border-top:0px solid #0191fb; border-bottom:2px solid #0191fb; background:#EE3021;  /*border-left:2px solid #0191fb;*/  }
 .filtro .filtro-personagem { margin-left:0; overflow: hidden;}
@@ -208,7 +208,7 @@ body.campanhas{background-color:#fee133!important;}
 .interna.videos .filtro .span2,
 .interna.videos .todos-itens li img,
 .interna.videos .todos-itens li h2,
-.interna.videos .filtro .span12 { border-color:#f27300; }
+.interna.videos .filtro .span12 { border-color:#f27300; background:#f27300}
 .interna.videos .todos-itens li,
 .interna.videos .filtro,
 .interna.videos .filtro h1,
@@ -228,6 +228,9 @@ body.campanhas{background-color:#fee133!important;}
 .interna.videos #content .scroll h3 { border-color:#F27300; }
 /* videos*/
 
+/*jogos*/
+.interna.jogos .filtro h1, .interna.jogos .filtro .span2, .interna.jogos .todos-itens li img, .interna.jogos .todos-itens li h2, .interna.jogos .filtro .span12 {background:#0191fb}
+
 /* atividades*/
 .interna.atividades { background:#571ed9; }
 /*.interna.atividades .todos-itens li,*/
@@ -237,7 +240,7 @@ body.campanhas{background-color:#fee133!important;}
 .interna.atividades .filtro h1,
 .interna.atividades .todos-itens li img,
 .interna.atividades .todos-itens li h2,
-.interna.atividades .filtro .span12 { border-color:#7732e5; }
+.interna.atividades .filtro .span12 { border-color:#7732e5; background:#7732e5}
 .interna.atividades .todos-itens li,
 .interna.atividades .filtro,
 .interna.atividades .filtro h1,
@@ -537,9 +540,9 @@ body.na-tv{background-color:#feec3c;position:relative;}
 
 /*coleção incluir*/
 .interna.campanhas .container-campanhas{float:left;}
-.container-campanhas .texto  {width:65%;float:left;}
-.container-campanhas .asset{float: right;margin-left: 15px;margin-top: 11%;margin-bottom: 8%;}
-.btns-download{float: left;width: 75%;}
+.container-campanhas .texto  {width:60%;float:left;margin-top:2%}
+.container-campanhas .asset{float: right;margin-left: 1%;margin-top: 2%;}
+.btns-download{float: left;width: 100%;}
 .pdf{margin:2%}
 .pdf p{color: #fff;font-size: 1em;text-align: center;width:165px;margin:0 auto;text-transform: uppercase;}
 .pdf a:hover{text-decoration:none!important;}
@@ -548,10 +551,11 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .pdf-caderno {background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_pdf.png") no-repeat;width: 290px;height: 60px;float: left;}
 .pdf-caderno  p{margin:10px auto;}
 .audio-caderno {background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_audio.png") no-repeat;width: 290px;height: 60px;float: left;}
+.audio-caderno p {margin:10px auto;}
 .audio-descricao {background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_audio.png") no-repeat;width: 290px;height: 60px;float: left;}
 
 
 
-
+#content .incluir-brincando-colecao {overflow: hidden;min-height: 46px!important; background:#feec3c; margin:0 auto !important; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 
 

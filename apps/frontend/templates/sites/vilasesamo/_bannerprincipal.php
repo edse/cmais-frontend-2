@@ -8,28 +8,24 @@
       <!--lista-->
       <ul aria-hidden="true" tabindex="-1">
         <!--item bem vindo-->
-        <li aria-hidden="true" tabindex="-1" class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/1/img-pattern_banner_1-boasvindas.jpg') repeat;">
-          <div class="mpc_ls_slide_item" data-x="506" data-y="150" data-delay="500" data-duration="2500" data-easing="easeOutBack" data-effect="slideLeft" data-fade="on">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/1/img-balao_banner_1-boasvindas.png" alt="">
+        <li aria-hidden="true" tabindex="-1" class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/01_mar_novidade_ chegando/pattern.jpg') repeat;">
+          <div class="mpc_ls_slide_item" data-x="90" data-y="370" data-delay="800" data-duration="3500" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on">  
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/01_mar_novidade_ chegando/flores.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item" data-x="46" data-y="22" data-delay="500" data-duration="1500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on"> 
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner/1/img-personagem_banner_1-boasvindas.png" alt="">
+          <div class="mpc_ls_slide_item" data-x="450" data-y="40" data-delay="3500" data-duration="1500" data-easing="easeOutBack" data-effect="none" data-fade="on"> 
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/01_mar_novidade_ chegando/balao.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item" data-x="590" data-y="200" data-delay="2500" data-duration="800" data-easing="easeOutBack" data-effect="slideTop" data-fade="on">
-            <span class="tit-banner" style="color:#ffde00;">Olá</span>
-            <span class="tit-banner" style=" position: relative;top: -25px;left: -6px;">Olá</span>
+          <div class="mpc_ls_slide_item" data-x="520" data-y="110" data-delay="4000" data-duration="1500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on"> 
+            <span style="color: #1793cd;font-size: 51px;font-family: 'din-blackregular', Helvetica, Arial, sans-serif;text-shadow: 3px 3px 0px #ffe400;">Tem novidade</span>
           </div>
-          <div class="mpc_ls_slide_item" data-x="550" data-y="290" data-delay="3200" data-duration="1200" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">
-            <span class="desc-banner" style="color:#008d36!important">Bem-vindo</span>
+          <div class="mpc_ls_slide_item" data-x="500" data-y="170" data-delay="4500" data-duration="1500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on"> 
+            <span style="color: #1793cd;font-size: 82px;font-family: 'din-blackregular', Helvetica, Arial, sans-serif;text-shadow: 3px 3px 0px #ffe400;">chegando!</span>
           </div>
-          <div class="mpc_ls_slide_item" data-x="570" data-y="335" data-delay="3200" data-duration="1220" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">  
-            <span class="desc-banner" style="font-size:50px;">ao nosso</span>
-          </div>
-          <div class="mpc_ls_slide_item" data-x="590" data-y="380" data-delay="3200" data-duration="1240" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on">  
-            <span class="desc-banner" style="color:#008d36!important">novo site</span>
+          <div class="mpc_ls_slide_item" data-x="70" data-y="120" data-delay="500" data-duration="2500" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on"> 
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/01_mar_novidade_ chegando/sivan.png" alt="">
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="#" class="total" title="Home"></a>
+            <a href="#" class="total" title="Novidade chegando"></a>
           </div>
         </li>
         <!--/item bem vindo-->
@@ -202,7 +198,7 @@
           
           switch(i){
             case 0:
-              $(this).attr("aria-label", "Home do Site -  Bel acenando sorrindo comprimentando e falando - 'Olá! Bem Vindo ao nosso novo site'.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>');
+              $(this).attr("aria-label", "Baner tem novidade chegando! - a Nova personagem do Vila Sésamo sentanda numa cadeira de rodas acenando e avisando que tem novidades chegando. Com flores ao redor dela").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>');
             break;
             case 1:
               $(this).attr("aria-label", "Tela Jogos - Groover esta vestido com um capacete e uma capa vermelha convidando você a brincar com os personagens do Vila-Sésamo.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/jogos');
@@ -237,7 +233,7 @@
     
     $('#slider').mpcLayerSlider({
       'pauseOnHover' : false,
-      'slideshow' : false,
+      'slideshow' : true,
       'uiStyle': 'style02',
       'delay': 7800,
       'showThumbTooltip':false, 

@@ -28,7 +28,7 @@
           <!-- /menu interna -->
 
           <div class="navegacao grid3">
-            <a href="http://cmais.com.br" title="Home">Home</a>
+            <a href="http://cmais.com.br" title="cmais.com.br">cmais.com.br</a>
             <span>&gt;</span>
             <a href="http://cmais.com.br/<?php echo $section->Parent->getSlug() ?>" title="<?php echo $section->Parent->getTitle() ?>"><?php echo $section->Parent->getTitle() ?></a>
             <span>&gt;</span>

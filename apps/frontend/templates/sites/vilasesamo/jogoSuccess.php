@@ -147,12 +147,13 @@ setInterval(function(){
   updateOrientation();  
 },500);
 
+
 function updateOrientation(){  
   var screenWidth = screen.width;
   var windowWidth = window.innerWidth;
   //alert(windowWidth)
   //console.log("oiiiii");
-  if (windowWidth > 470 || window.orientation == 90 || window.orientation == -90 ) {  
+  if (windowWidth > 470 || (screenWidth > 470 && windowWidth > 470 && window.orientation == 90) || (screenWidth > 470 && windowWidth > 470 && window.orientation == -90) || navigator.platform == "Win32" || navigator.platform == "Win64") {  
     $('.asset').fadeIn('fast');
     $('.turn-the-cell-please').hide();
     //goTopGame('header');

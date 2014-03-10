@@ -1,22 +1,26 @@
 <?php $pageQuant = intval(count($pager)/9); ?>
 <?php if(intval($pager2) <= $pageQuant):?>
-<nav id="page_nav">
-  <div class="container-ajax-loader">
-    <img id="ajax-loader" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/ajax-loader.gif" alt="" style="display:none;">
-  </div>
-  <?php
-  if($section->getSlug() == "cuidadores"):
+<?php
+  if($section->getSlug() == "pais-e-educadores"):
+    $ajaxLoader = "-pais-e-educadores";
     $icone = "icone-carregar-ve-grande";
   elseif(isset($parent)):
     if($parent == "categorias"):
+      $ajaxLoader = "-categorias";
       $icone = "icone-carregar-lj-grande";
     elseif($parent=="personagens"):
+      $ajaxLoader = "-personagens";
       $icone = "icone-carregar-br-grande";
     endif;   
   else: 
+    $ajaxLoader = "-".$section->getSlug();
     $icone = "icone-carregar-br-grande";
   endif;    
-  ?>
+?>
+<nav id="page_nav">
+  <div class="container-ajax-loader">
+    <img id="ajax-loader" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/ajax-loader<?php if(isset($ajaxLoader)) echo $ajaxLoader ?>.gif" alt="" style="display:none;">
+  </div>
   <input type="hidden" class="quantidade-itens" value="">
   <input type="hidden" class="no-repeat" value="">
   <a href="javascript:vilaSesamoGetContents();" class="mais">Carregar mais<i class="icones-sprite-interna  <?php echo $icone ?>"></i></a>

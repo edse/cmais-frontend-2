@@ -104,6 +104,7 @@ a{
   top: 255px;
   width: 49px;
   *left: 138px;
+  z-index: 1000;
 }
 #menu-lateral ul{
   top: 310px;
@@ -266,7 +267,7 @@ a{
 
 
 .topo h2 a{
-  background: url(../image/logo-tvRatimbum.png) no-repeat;
+  background: url(http://cmais.com.br/portal/tvratimbum/image/logo.png) no-repeat;
   float:left;
   margin: 25px 0 0 25px;
   overflow: hidden;

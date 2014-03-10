@@ -296,7 +296,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <footer id="mobile" aria-label="você está no rodapé da pagina. com links para as páginas e sites relacionados" tabindex="0" >
       
       <div class="copyright" role="presentation" aria-hidden="true" >
-        <small>© 2013 - Vila Sésamo</small>
+        <small>© 2014 - Vila Sésamo</small>
       </div>
       
       <!--container-->
@@ -357,6 +357,10 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
            
           ?>
           <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt="" />
+          <!--Logo TV rodapé mobile-->
+          <div class="logotv-mobile">
+          	<a href="http://tvcultura.cmais.com.br/"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/icon-tvcultura.png"></a>
+          </div>
         </section>
         <!--/section-->
         <section class="relacionados" aria-label="sites relacionados" tabindex="0">
@@ -383,12 +387,9 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     
     
     <!-- Footer > 640 -->    
-    <footer id="no-mobile" aria-label="você está no rodapé da pagina. com links para as páginas e sites relacionados" tabindex="0" >
+   <footer id="no-mobile" aria-label="você está no rodapé da pagina. com links para as páginas e sites relacionados" tabindex="0" >
       
-      <div class="copyright" role="presentation" aria-hidden="true" >
-        <small>© 2013 - Vila Sésamo</small>
-      </div>
-      
+     
       <!--container-->
       <div class="container row-fluid">
         
@@ -396,7 +397,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <section aria-label="Você está entrando no rodapé da página">
           
           <!--logos-->
-          <ul class="logos">
+          <!--ul class="logos">
             <li class="col-esq">
               <a href="http://cmais.com.br/vilasesamo" title="Site Vila Sésamo" target="_self">
                 <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/vila-sesamo-mobile.jpg">
@@ -413,7 +414,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               </a>
             </li>
             <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt="" />
-          </ul>
+          </ul-->
           <!--/logos-->
           
           <!--mapa-->
@@ -488,6 +489,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <li class="cartaozinho"><a href="http://tvcultura.cmais.com.br/cartaozinho" target="_self" title="Cartãozinho"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-logo-cartao-verde.png"></a></li>
             <li class="last quintal"><a href="http://tvcultura.cmais.com.br/quintaldacultura" target="_self" title="Quintal da Cultura"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/ma-lg-quintal.png"></a></li>
           </ul>
+          
           <nav class="relacionados-mobile">
             <a href="http://tvcultura.cmais.com.br/" target="_self" title="TV Cultura"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-cultura.jpg"></a>
             <a href="http://tvratimbum.cmais.com.br/" target="_self" title="TV Rá Tim Bum"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-tv-ratimbum.jpg"></a>
@@ -500,6 +502,10 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <a href="http://tvcultura.cmais.com.br/quintaldacultura" target="_self" title="Quintal da Cultura"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/ma-lg-quintal.jpg"></a>
           </nav>
         </section>
+        <!--Copyright-->
+        <div class="copyright" role="presentation" aria-hidden="true" >
+		        <small>© 2014 - Vila Sésamo</small>
+		    </div>
       
       </div>
       <!--/container-->

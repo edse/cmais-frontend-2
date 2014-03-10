@@ -1362,8 +1362,12 @@ class _sectionActions extends sfActions
       else
         $sectionSlug = 'index';
     }
-    elseif(in_array($sectionSlug, array('noticias','linha-do-tempo')))
-      $sectionSlug = 'list';
+    elseif(in_array($sectionSlug, array('noticias','linha-do-tempo'))){
+      if($this->section->Parent->getSlug() == "arte-e-cultura")
+        $sectionSlug = "subsection";
+      else
+        $sectionSlug = 'list';
+    }
     elseif(in_array($sectionSlug, array('sobre','entrevistadores','entrevistados')))
       $sectionSlug = 'asset';
     elseif((in_array($sectionSlug, array('equipe','apresentadores','personagens'))) && ($this->site->slug != 'cocorico' && $this->site->slug != 'cocorico2') && ($this->site->slug != 'vila-sesamo' && $this->site->slug != 'vilasesamo'))
@@ -1378,7 +1382,6 @@ class _sectionActions extends sfActions
       $sectionSlug = 'programas-de-a-z';
     #elseif(in_array($sectionSlug, array('programacao')))
     #  $sectionSlug = 'grade';
-
 
     if($this->site->slug == 'cocorico' || $this->site->slug == 'cocorico2'){
       if($this->section->Parent->getSlug() == "personagens"){
@@ -1531,7 +1534,12 @@ class _sectionActions extends sfActions
               header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
               die();
             }
-          } 
+          }elseif(in_array($this->section->id, Array("921", "2129"))){
+            if($request->getParameter('pergunta2')!=""){
+              header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
+              die();
+            }
+          }
           
           $email_user = strip_tags($request->getParameter('email'));
           $nome_user = strip_tags($request->getParameter('nome'));

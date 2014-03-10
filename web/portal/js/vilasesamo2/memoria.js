@@ -9,7 +9,7 @@ var clicks;
 var soundsCelebrating = new Array();
 var soundsError = new Array();
 var countClickWrong = 0;
-var clickWrong = new Array(0,1);
+var clickWrong = new Array(0,2);
 var posWrong = clickWrong[Math.round(Math.random(clickWrong.length))];
 
 var ui = $("#game");
@@ -56,6 +56,7 @@ matchingGame.clone = $.extend(true, [], matchingGame.deck);
 
 //on document load the lazy way
 $(function(){
+
   var loader = new PxLoader();
   
   loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/acerto.png');
@@ -88,23 +89,112 @@ $(function(){
     }
   });
   loader.addCompletionListener(function() {
-    uiPlay.text('Jogar');
+    uiPlay.html('<span>Jogar</span>');
     ui.addClass('open');
+    $('#gamePlay span').hide();
   });
   loader.start();
   init();
 });
+
+var cardWidth;
+var cardHeight;
+//ajustando cartas na tela 
+
+$(window).on("resize", function(){
+  setCardSize();
+  
+  var adjust = setInterval(function(){
+    setPosition();   
+  },50);
+  
+  setTimeout(function(){
+    clearInterval(adjust);
+  },3000);
+  
+});
+
+
+var width;
+var height; 
+function setCardSize(){
+  if($('.conteudo-asset').width() < 430){
+    cardWidth = ($('.conteudo-asset').width() / 6) - 2;
+  }else{
+    cardWidth = ($('.conteudo-asset').width() / 6) - 6;
+  }
+  cardHeight = cardWidth * 1.33;
+  if(cardWidth >= 115) cardWidth = 115;
+  if(cardHeight >= 149) cardHeight = 149;
+  $('.card').css({
+    "width" :Math.round(cardWidth) + "px",
+    "height":Math.round(cardHeight)+ "px"
+  });
+} 
+function setPosition(){
+  
+  $('.card').each(function(i){
+    if( i >=0 && i <= 5){
+      if(i==0){
+        width = 0;
+        $(this).css("left","0px");
+      }else{
+        width = $('.card').width() + width + 4;
+        height = $('.card').height() + 5;
+        $(this).css("top","0px");
+        $(this).css("left",width+"px");
+      }
+    }else if(i >= 6 && i <= 11){
+      if(i==6){
+        width = 0;
+        height = $('.card').height() + 4;
+        $(this).css({
+          "top" :height+"px",
+          "left":"0px"
+        });
+      }else{
+        width = $('.card').width() + width + 4;
+        height = $('.card').height() + 5;
+        $(this).css("top",height+"px");
+        $(this).css("left",width+"px");
+      }
+    }else if(i >= 12){
+      if(i==12){
+        width = 0;
+        height = $('.card').height()*2 + 10;
+        $(this).css({
+          "top" :height+"px",
+          "left":"0px"
+        });
+      }else{
+        width = $('.card').width() + width + 4;
+        height = $('.card').height()*2 + 10;
+        $(this).css("top",height+"px");
+        $(this).css("left",width+"px");
+      }
+    }
+    if(height){
+      if($('.conteudo-asset').width() <= 899){
+        $('.interna.jogos #content .conteudo-asset').css('height', parseInt(height*2.5)+"px");
+      }else{
+        $('.interna.jogos #content .conteudo-asset').css('height', "995px");  
+      }
+    }
+  });
+}//setPosition
+  
 function acessibilidadeVisual(){
-  var cont = 0;
+  var cont = 1;
   var line=1;
   setTimeout(function(){  
     $('.card').each(function(i){
       $(this).attr("tabindex", "0");
-      var colLetter = 65+cont;
+      var colLetter = 64+cont;
       
       var col = String.fromCharCode(colLetter)
       if(i==5 || i==11){
         cont = 0;
+        line++;
       }
       $(this).attr('aria-label', "coluna:"+col+" - Linha:"+line)
       cont++;
@@ -177,6 +267,15 @@ function startGame() {
       // listen the click event on each card DIV element.
       $(this).click(selectCard);
     });
+    setCardSize();
+  
+    var adjust = setInterval(function(){
+      setPosition();   
+    },50);
+    
+    setTimeout(function(){
+      clearInterval(adjust);
+    },3000); 
     acessibilidadeVisual();
     playSound("Start_bel_ola");
     timer();
@@ -275,7 +374,7 @@ function EndGame() {
   
   // Define score formula
   total_score =  ( 33/(score/60) + 66/(clicks/24) ).toFixed(2);
-  $('#score').html('Sua pontuaÃ§Ã£o: ' + total_score + '<br>' + clicks + ' cliques em ' + score + ' segundos');
+  $('#score').html('Sua pontuação amiguinho: ' + total_score + '<br>' + clicks + ' Cliques em ' + score + ' segundos');
   ui.addClass('end').removeClass('play');
   
   playSound('Final_garibaldo');
@@ -295,6 +394,9 @@ function reStartGame(){
   uiCards.html("<div class='card'><div class='face front'></div><div class='face back'></div></div>");
   clearTimeout(scoreTimeout);
   matchingGame.deck = $.extend(true, [], matchingGame.clone);
+  
+  setCardSize();
+
   startGame();
 }
 
@@ -305,17 +407,14 @@ function closebox(ev) {
 
 function playSound(soundFileName) {
   if(mediaSupport('audio/ogg; codecs=vorbis', 'audio') || mediaSupport('audio/mpeg', 'audio')) {
-    //$(".tampa").css("z-index", "10");
-    var audio = document.getElementByTagName("audio");
-    audio.creatElement("source");
-    audio.creatElement("source");
+    $(".tampa").css("z-index", "10");
     $(".audio source").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".mp3").attr("type", "audio/mp3");
     $(".audio source:last-child").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".ogg").attr("type", "audio/ogg");
     $(".audio").trigger('load');
     $(".audio").bind("load",function(){
-          $('.audio').trigger('play')
-      });
-    $('.audio').trigger('play')
+      $('.audio').trigger('play')
+    });
+    $('.audio').trigger('play');
     $('.audio').bind("ended", function(){
         $(".tampa").css("z-index", "-1");
     });
@@ -407,71 +506,3 @@ function mediaSupport(mimetype, container) {
   }
 })(jQuery);
 
-$(document).ready(function(){
-  console.log("entrei")
-  var cardWidth;
-  var cardHeight;
-  //ajustando cartas na tela 
-  setInterval(function(){
-    cardWidth = ($('.conteudo-asset').width() / 6) -8;
-    cardHeight = cardWidth * 1.33;
-    if(cardWidth >= 115) cardWidth = 115;
-    if(cardHeight >= 149) cardHeight = 149;
-    $('.card').css({
-      "width" :Math.round(cardWidth) + "px",
-      "height":Math.round(cardHeight)+ "px"
-    });
-    setSize(); 
-  },500);
-  
-  
-  var width;
-  var height;  
-  function setSize(){
-    if(window.innerWidth < 980){
-      $('.interna.jogos #content .conteudo-asset').css('height', (cardHeight*3)+"px");
-    }
-    $('.card').each(function(i){
-      if( i >=0 && i <= 5){
-        if(i==0){
-          width = 0;
-          $(this).css("left","0px");
-        }else{
-          width = $('.card').width() + width + 4;
-          height = $('.card').height() + 5;
-          $(this).css("top","0px");
-          $(this).css("left",width+"px");
-        }
-      }else if(i >= 6 && i <= 11){
-        if(i==6){
-          width = 0;
-          height = $('.card').height() + 4;
-          $(this).css({
-            "top" :height+"px",
-            "left":"0px"
-          });
-        }else{
-          width = $('.card').width() + width + 4;
-          height = $('.card').height() + 5;
-          $(this).css("top",height+"px");
-          $(this).css("left",width+"px");
-        }
-      }else if(i >= 12){
-        if(i==12){
-          width = 0;
-          height = $('.card').height()*2 + 10;
-          $(this).css({
-            "top" :height+"px",
-            "left":"0px"
-          });
-        }else{
-          width = $('.card').width() + width + 4;
-          height = $('.card').height()*2 + 10;
-          $(this).css("top",height+"px");
-          $(this).css("left",width+"px");
-        }
-      }
-      
-    });
-  }//setSize
-});

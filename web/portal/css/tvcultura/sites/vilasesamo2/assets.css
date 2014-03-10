@@ -61,19 +61,19 @@ h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1
 #content .form input.error,
 #content .form select.error,
 #content .form textarea.error{border: #fffd2f 2px solid;color: #fffd2f!important;background: #737373;text-shadow:none;}
-.form-horizontal .control-label {text-align:left; *float:left; float:left; width:40px !important;}
+.form-horizontal .control-label {text-align:left; *float:left; float:left; width: 45px !important;}
 .form-horizontal .control-group.span12{width:100%;}
-.form-horizontal .control-group textarea { float:right\0;width: 521px;width: 508px\0; margin-left: 1%;height: 80px;margin-left: 10px;border-radius: 0px; }
+.form-horizontal .control-group textarea { float:right\0; width: 89%;width: 508px\0; margin-left: 1%;height: 80px; margin-left: 0px;border-radius: 0px; }
 
 .form-horizontal .control-group { float: left;    margin-left: 0;    margin-right: 0;    width: 91%; }
 .form-horizontal .control-group input {margin: 0; float:left;}
-#content section.form .form-horizontal .span8 { width: 380px; }
-.form-horizontal .span8.control-group input{width:330px;width:310px\0;}
-.form-horizontal .span8.control-group.cidade{width:440px!important; margin-bottom:20px;}
-.form-horizontal .span8.control-group.cidade input{width:390px;width:310px\0;}
+#content section.form .form-horizontal .span8 { /*width: 380px;*/ width: 67%; }
+.form-horizontal .span8.control-group input{width: 85%;/*width: 319px;*/}
+.form-horizontal .span8.control-group.cidade{/*width:440px!important;*/width: 78%!important; margin-bottom:20px;}
+.form-horizontal .span8.control-group.cidade input{/*width: 360px;*/width: 85%;}
 .form-horizontal .idade.span2 input,
 .form-horizontal .span8.control-group input,
-.form-horizontal .control-group a  { line-height:26px; display: block;border-radius: 0;height: 35px; float: left; padding: 15px 7px;padding: 0px 7px\0; margin: 0 0 0 10px;}
+.form-horizontal .control-group a  { line-height:26px; display: block;border-radius: 0; height: 23px; float: left;}
 .form-horizontal .estado .control-label { width:auto; }
 .form-horizontal .estado .control-group,
 .form-horizontal .estado select { width:90px; }
@@ -81,10 +81,10 @@ h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1
 .form-horizontal .estado .control-group { margin:0; }
 .form-horizontal .control-group { margin:0 0 2% 0; min-height:25px; }
 .form-horizontal .control-group.idade  .control-group { width: 66%; float:right; } 
-.form-horizontal .idade.span2 input{width: 120px;width: 100px\0; margin-left: 10px;float:right;}
-.form-horizontal .idade.span2 { width:170px; float:left; margin-left: 20px;margin-bottom:0;}
-.form-horizontal .span2.estado { width:85px; float:left; margin-left: 11px; margin-left:15px\0; }
-.form-horizontal .span2.estado select{width:85px;}
+.form-horizontal .idade.span2 input{width: 100px; margin-left: 0px;float:right;}
+.form-horizontal .idade.span2 {/* width:170px;*/width: 29%; float:left; margin-left: 20px;margin-bottom:0;}
+.form-horizontal .span2.estado { width: 20%;/*width:85px;*/ float:left; margin-left: 7px; margin-left:15px\0; }
+.form-horizontal .span2.estado select{width: 20%;width:85px;}
 .form-horizontal .span2 input { width: 75%; }
 .form-horizontal .span2 .control-group { margin-right:0; }
 .form-horizontal .anexo .control-group { overflow:hidden; width: 61% !important; }
@@ -102,7 +102,7 @@ h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1
 .form-horizontal .span11 .btn { width:100%; border:none; box-shadow:none; text-shadow:none; font-size:18px; margin-bottom: 28px; }
 .form .sucesso { float:left; margin:60px 0; }
 .form .sucesso p { font-size:18px; text-transform:uppercase; text-align:center; }
-.form .termo{width: 526px;background: #d9d9d9;float: right;height: 90px;border-radius: 5px;overflow:scroll;}
+.form .termo{width: 92%;/*width: 526px;*/background: #d9d9d9;float: right;height: 90px;border-radius: 5px;overflow:scroll;}
 .form .termo::-webkit-scrollbar {height: 12px;width: 20px;background: #d9d9d9;}
 .form .termo::-webkit-scrollbar-thumb {background:#737373;-webkit-border-radius: 0.5ex; border:2px solid #d9d9d9;}
 .form .termo::-webkit-search-results-decoration,
@@ -150,6 +150,7 @@ h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1
 .interna.videos #content .section.form,
 .interna.videos #content section.form,
 .interna.videos #content .relacionados h2 { background:#f78701; }
+.videos #content .form-horizontal .idade.span2 input, .form-horizontal .span8.control-group input, .form-horizontal .control-group a {height:35px;padding:0 2px;}
 /* /videos */
 
 /* box erros */
@@ -216,3 +217,5 @@ h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1
 .form .file-wrapper input {cursor: pointer;font-size: 100px;height: 100%;filter: alpha(opacity=1);-moz-opacity: 0.01;opacity: 0.01;position: absolute;right: 0;top: 0;}
 .form .file-wrapper .button {float:right;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;border:none;color: #434343!important;cursor: pointer;display: inline-block;font-size: 11px;font-weight: bold;margin-right: 5px;padding: 8px 19px;text-transform: uppercase;font-family:'din-blackregular',Arial, Helvetica, sans-serif;font-size:18px;}
 .form .file-holder{clear: both;text-align: left;color: #FFF;margin: 10px 0 7px 0;padding-left: 13px;font-size: 12px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+
+
