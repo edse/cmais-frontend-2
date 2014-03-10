@@ -323,7 +323,7 @@ a{text-decoration:underline!important;}
 #categoria-box-pais .box-pais .parceiros{width:95%!important;height:auto!important;}
 #categoria-box-pais .box-pais .artigo p {height:auto!important;}
 #categoria-box-pais .pais .fechar-toogle.ativo {width:100%!important}
-#categoria-box-pais .box-pais.span12 {margin-left: 0;}
+#categoria-box-pais .box-pais.span12 {margin-left: 0;display: none;}
 
 #sfWebDebugBar{display:none!important}
 /*categorias *, habitos*/
