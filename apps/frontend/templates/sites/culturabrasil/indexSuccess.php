@@ -242,6 +242,7 @@ $(document).ready(function(){
   $('#carrossel-radar').mouseleave(function(){
     $('.carousel-control').fadeOut("fast");
   });
-  $('#carrossel-radar').jcarousel({ autostart: true });
+  //$('#carrossel-radar').jcarousel({autostart: true});
+  $('#carrossel-radar').carousel({auto:1});
 });
 </script>  
