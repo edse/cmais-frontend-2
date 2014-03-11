@@ -212,7 +212,7 @@ a{text-decoration:underline!important;}
 .personagens #page_nav{margin:0!important; height: 50px;padding: 0!important;}
 .icone-personagem-grande{ background-position: 0 -1335px; width: 39px; height: 47px;margin: 0 0 0 23%!important;} 
 
-.icone-carregar-br-grande{ background-position: 0 -1409px; width: 29px; height: 39px; margin-top: -5%!important;} 
+.icone-carregar-br-grande{ background-position: 0 -1409px; width: 36px; height: 39px; margin-top: -8%!important;}  
 .icone-carregar-lj-grande {background-position: 0 -1495px;width: 39px;height: 39px;}
   
 /* assets internas (jogos, atividades, videos) */
@@ -437,3 +437,6 @@ a{text-decoration:underline!important;}
 .interna.videos #content .pais{display:none}
 
 .campanhas.categorias #mobile{margin-top: 0!important}
+
+.campanhas.categorias #page_nav{background: #fffb49;margin: 0!important;height: 50px;padding: 0!important;}
+.interna.jogos,.interna.videos,.intenas.atividades #page_nav{margin-bottom: -15%!important;}
