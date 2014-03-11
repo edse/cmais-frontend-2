@@ -1,5 +1,5 @@
 body { background:#0172f9; }
-a:hover{text-decoration:underline!important;}
+a{text-decoration:underline!important;}
 .header-bar ul { margin:12px 0 0 0; }
 .header-bar { position:fixed; background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-menu-interna.jpg) repeat-x; height:81px; top:48px; width: 100%; max-width:100%; }
 .header-bar .content { width:940px; margin:0 auto; }
@@ -82,12 +82,14 @@ body.campanhas{background-color:#fee133!important;}
 
 .campanhas .selo{margin: -9px 0 0 -16px;}
 
+.interna.campanhas.categorias #categoria-box-pais{display: block!important}
+
 .campanhas .filtro{background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: none;}
 .campanhas .filtro.escolha {background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;}
 .campanhas .filtro h1{font-size:25px!important;background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important;padding: 0 40px!important;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 .campanhas .container-campanhas{background: #FFF;border-bottom: 2px solid #fbc227;padding: 20px;min-height: 245px;}
 .interna.campanhas .container-campanhas {border-bottom:none;}
-.campanhas .container-campanhas iframe{float:right;margin-top: -160px;}
+.campanhas .container-campanhas iframe{float:right;margin-left: 20px;margin-top: 0!important;}
 .campanhas .container-campanhas img.img-destaque{float:right;}
 .campanhas #viewer{width:100%;text-align:center; background:#FFFFFF;border-top: 2px solid #fbc227;}
 .campanhas #viewer h2{background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important; font-size:18px!important;font-family:'dinmedium',Arial, Helvetica, sans-serif;margin: 0;text-align: left;padding-left: 10px;}
@@ -229,7 +231,7 @@ body.campanhas{background-color:#fee133!important;}
 /* videos*/
 
 /*jogos*/
-.interna.jogos .filtro h1, .interna.jogos .filtro .span2, .interna.jogos .todos-itens li img, .interna.jogos .todos-itens li h2, .interna.jogos .filtro .span12 {background:#0191fb}
+.interna.jogos .filtro h1, .interna.jogos .filtro .span2, .interna.jogos .todos-itens li img, .interna.jogos .todos-itens li h2, .interna.jogos .filtro .span12 {background:#3AAAEC;}
 
 /* atividades*/
 .interna.atividades { background:#571ed9; }
@@ -356,6 +358,7 @@ body.personagens { background:#b60401; }
 .personagens .atividades a .container-image{ border-bottom:2px solid #571ed9;}
 .personagens .dest-pers a p{font-size:17px;font-family: 'dinmedium', Arial, Helvetica, sans-serif;line-height: 42px;overflow: hidden;width: 143px;text-overflow: ellipsis;white-space: nowrap; margin:0;}
 .personagens .dest-pers .img-destaque { position:relative; width:100%; display: block;}
+.personagens .dest-pers .span4.pull-left img{ margin-top:15px}
 .personagens .dest-pers .span4.pull-left{min-height:275px;}
 .personagens .dest-pers .span6.jogos a img{width:200px;border-top:none; border-bottom:2px solid #008dff;border-top:none;float:left;}
 .personagens .dest-pers .span6.videos a img{width:368px;border-top:none; border-bottom:2px solid #f77400; float:left;}
@@ -541,7 +544,7 @@ body.na-tv{background-color:#feec3c;position:relative;}
 /*coleção incluir*/
 .interna.campanhas .container-campanhas{float:left;}
 .container-campanhas .texto  {width:60%;float:left;margin-top:2%}
-.container-campanhas .asset{float: right;margin-left: 1%;margin-top: 2%;}
+.container-campanhas .asset{float: right;margin-left: 1%;margin-top: 2%;overflow: hidden;}
 .btns-download{float: left;width: 100%;}
 .pdf{margin:2%}
 .pdf p{color: #fff;font-size: 1em;text-align: center;width:165px;margin:0 auto;text-transform: uppercase;}
@@ -558,4 +561,4 @@ body.na-tv{background-color:#feec3c;position:relative;}
 
 #content .incluir-brincando-colecao {overflow: hidden;min-height: 46px!important; background:#feec3c; margin:0 auto !important; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 
-
+#content.span8{width:100%!important;padding:0!important}

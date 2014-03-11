@@ -484,7 +484,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <li class="fiftypercent mais"><a href="http://cmais.com.br/maiscrianca" target="_self" title="Mais Criança"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-mais-crianca.png"></a></li>
           </ul>
           <ul>
-            <li class="cocorico"><a href="http://tvcultura.cmais.com.br/cocorico" target="_self" title="TV Cocoricó"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-cocorico.png"></a></li>
+            <li class="cocorico"><a href="http://tvcultura.cmais.com.br/cocorico" target="_self" title="TV Cocoricó"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-cocorico.png" style="margin-top: 15px"></a></li>
             <li class="castelo"><a href="http://tvcultura.cmais.com.br/castelo" target="_self" title="Castelo Rá Tim Bum"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-castelo.png"></a></li>
             <li class="cartaozinho"><a href="http://tvcultura.cmais.com.br/cartaozinho" target="_self" title="Cartãozinho"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-logo-cartao-verde.png"></a></li>
             <li class="last quintal"><a href="http://tvcultura.cmais.com.br/quintaldacultura" target="_self" title="Quintal da Cultura"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/ma-lg-quintal.png"></a></li>
@@ -493,7 +493,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <nav class="relacionados-mobile">
             <a href="http://tvcultura.cmais.com.br/" target="_self" title="TV Cultura"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-cultura.jpg"></a>
             <a href="http://tvratimbum.cmais.com.br/" target="_self" title="TV Rá Tim Bum"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-tv-ratimbum.jpg"></a>
-            <a class="fifty" href="http://cmais.com.br/maiscrianca" target="_self" title="Mais Criança"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-mais-crianca.jpg"></a>
+            <a class="fifty" href="http://cmais.com.br/maiscrianca" target="_self" title="Mais Criança"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-mais-crianca.jpg" style="margin-top: 5px"></a>
           </nav>
           <nav class="relacionados-mobile">
             <a class="cocoh" href="http://tvcultura.cmais.com.br/cocorico" target="_self" title="TV Cocoricó"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mb-lg-cocorico.jpg"></a>

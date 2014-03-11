@@ -213,7 +213,7 @@ a{text-decoration:underline!important;}
 .icone-personagem-grande{ background-position: 0 -1335px; width: 39px; height: 47px;margin: 0 0 0 23%!important;} 
 
 .icone-carregar-br-grande{ background-position: 0 -1409px; width: 29px; height: 39px; margin-top: -5%!important;} 
-
+.icone-carregar-lj-grande {background-position: 0 -1495px;width: 39px;height: 39px;}
   
 /* assets internas (jogos, atividades, videos) */
 .interna.jogos #content section,
@@ -304,7 +304,6 @@ a{text-decoration:underline!important;}
 #page_nav{margin-top: 25%!important;/* margin-bottom: 10%; */}
 
 /*box pais*/
-#content .pais {display:none}
 
 .pais .redes {display:none!important}
 .pais h2.tit-box {font-size:1.2em}
@@ -324,7 +323,7 @@ a{text-decoration:underline!important;}
 #categoria-box-pais .box-pais .parceiros{width:95%!important;height:auto!important;}
 #categoria-box-pais .box-pais .artigo p {height:auto!important;}
 #categoria-box-pais .pais .fechar-toogle.ativo {width:100%!important}
-#categoria-box-pais .box-pais.span12 {margin-left: 0;}
+#categoria-box-pais .box-pais.span12 {margin-left: 0;display: none;}
 
 #sfWebDebugBar{display:none!important}
 /*categorias *, habitos*/
@@ -375,7 +374,7 @@ a{text-decoration:underline!important;}
 
 @media screen and (min-width:360px) and (max-width:500px) {
   #content .todos-itens #container {width: 100%;margin-left: 0!important}
-	#content .todos-itens {margin:15px auto;}
+	#content .todos-itens {margin:15px auto;padding: 1%;}
   #content .todos-itens .element{width: 48%;margin: 5px 0 0 5px!important;}
   #content .todos-itens li img{width:100%;}
   #content .todos-itens .yt-menu,
@@ -387,9 +386,8 @@ a{text-decoration:underline!important;}
 @media screen and (max-width: 359px) {
 	
 	#content .todos-itens #container {width: 100%;margin-left: 0!important}
-	#content .span8 {width:100%;padding:0 8%}
 	.destaques > .span4 {margin-left:0!important;}
-	#content .todos-itens {margin:15px auto;}
+	#content .todos-itens {margin:15px auto;padding: 2%;}
 	#content .todos-itens .element{width:100%; margin:5px 0!important}
 	#content .todos-itens li img{width:100%;}
 	#content .todos-itens .yt-menu,
@@ -403,18 +401,19 @@ a{text-decoration:underline!important;}
 }
 
 @media only screen and (max-width: 500px) and (min-width: 321px){
-	.interna.jogos #content h1 .icones-sprite-interna {margin: -4% 0 0 36%!important;}
+	.interna.jogos #content h1 .icones-sprite-interna {margin: -5% 0 0 36%!important;}
 	.interna.jogos #content .span12 h1, .interna.atividades #content .span12 h1, .interna.videos #content .span12 h1{line-height: 1em!important;}
 	.interna.atividades #content h1 .icones-sprite-interna{margin: -5% 0 0 32%!important;}
 	.icone-acessibilidade{background-position: -101px -544px;}
 	.cuidadores .icone-cuidadores-grande {background-position: 0 -563px;margin: -2% 0 0 23%!important;width: 9%;}
 	.interna.videos #content h1 .icones-sprite-interna {margin: -5% 0 0 34%!important;}
+	.icone-personagem-grande{margin: 0 0 0 31%!important;} 
 }
 
 
 /*form campanhas*/
-#form-campanha .span8{width: 100%!important;padding: 2%;}
-#form-campanha .form .span12 {padding: 2%;}
+#content .form .span12{margin-bottom:20px;padding: 4%;}
+#content .form 	#content .span8 {width:100%!important;padding:0}
 #form-campanha .span4 iframe {width: 270px;}
 .form-horizontal .span8.control-group input {width: 80%!important;}
 #content section.form { padding:0!important }
@@ -432,3 +431,4 @@ a{text-decoration:underline!important;}
 .logotv-mobile{width: 17%; margin: 0 auto;padding: 2%;}
 
 
+.interna.jogos #content .pais{display:none}
