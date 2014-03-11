@@ -244,9 +244,9 @@ a{text-decoration:underline!important;}
 .interna.atividades #content .icone-atividades-grande { background-position: 0 -371px; width: 34px; height: 55px}
 .interna.videos #content .icone-videos-grande { background-position: 0 -1732px; width: 40px; height: 50px}
 
-.interna.jogos #page_nav{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;border-radius: 13px;margin-bottom: -20%;}
-.interna.videos #page_nav{font-size: 1em!important;background-image:none!important;background-color: #f78701;display: block;border-radius: 13px;;}
-.interna.atividades #page_nav{font-size: 1em!important;background-image:none!important;background-color:#571ed9 ;display: block;border-radius: 13px;margin-bottom: -20%;}
+.interna.jogos #page_nav{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;margin-bottom: -20%;}
+.interna.videos #page_nav{font-size: 1em!important;background-image:none!important;display: block;margin-bottom: -20px;}
+.interna.atividades #page_nav{font-size: 1em!important;background-image:none!important;background-color:#571ed9 ;display: block;margin-bottom: -20%;}
 
 .interna.jogos .conteudo-asset,
 .interna.atividades .conteudo-asset,
