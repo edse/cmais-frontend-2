@@ -82,6 +82,8 @@ body.campanhas{background-color:#fee133!important;}
 
 .campanhas .selo{margin: -9px 0 0 -16px;}
 
+.interna.campanhas.categorias #categoria-box-pais{display: block!important}
+
 .campanhas .filtro{background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: none;}
 .campanhas .filtro.escolha {background: #3aaaec;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;}
 .campanhas .filtro h1{font-size:25px!important;background:#feec3c;border-top: 2px solid #fbc227;border-bottom: 2px solid #fbc227; color:#434343!important;padding: 0 40px!important;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
@@ -559,4 +561,4 @@ body.na-tv{background-color:#feec3c;position:relative;}
 
 #content .incluir-brincando-colecao {overflow: hidden;min-height: 46px!important; background:#feec3c; margin:0 auto !important; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 
-.interna.jogos, .interna.atividades, .interna.videos #content.span8{width:100%!important;padding:0!important}
+#content.span8{width:100%!important;padding:0!important}

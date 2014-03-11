@@ -213,7 +213,7 @@ a{text-decoration:underline!important;}
 .icone-personagem-grande{ background-position: 0 -1335px; width: 39px; height: 47px;margin: 0 0 0 23%!important;} 
 
 .icone-carregar-br-grande{ background-position: 0 -1409px; width: 29px; height: 39px; margin-top: -5%!important;} 
-
+.icone-carregar-lj-grande {background-position: 0 -1495px;width: 39px;height: 39px;}
   
 /* assets internas (jogos, atividades, videos) */
 .interna.jogos #content section,
@@ -374,7 +374,7 @@ a{text-decoration:underline!important;}
 
 @media screen and (min-width:360px) and (max-width:500px) {
   #content .todos-itens #container {width: 100%;margin-left: 0!important}
-	#content .todos-itens {margin:15px auto;}
+	#content .todos-itens {margin:15px auto;padding: 1%;}
   #content .todos-itens .element{width: 48%;margin: 5px 0 0 5px!important;}
   #content .todos-itens li img{width:100%;}
   #content .todos-itens .yt-menu,
@@ -386,9 +386,8 @@ a{text-decoration:underline!important;}
 @media screen and (max-width: 359px) {
 	
 	#content .todos-itens #container {width: 100%;margin-left: 0!important}
-	#content .span8 {width:100%;padding:0 8%}
 	.destaques > .span4 {margin-left:0!important;}
-	#content .todos-itens {margin:15px auto;}
+	#content .todos-itens {margin:15px auto;padding: 2%;}
 	#content .todos-itens .element{width:100%; margin:5px 0!important}
 	#content .todos-itens li img{width:100%;}
 	#content .todos-itens .yt-menu,
@@ -413,8 +412,8 @@ a{text-decoration:underline!important;}
 
 
 /*form campanhas*/
-#form-campanha .span8{width: 100%!important;padding: 2%;}
-#form-campanha .form .span12 {padding: 2%;}
+#content .form .span12{margin-bottom:20px;padding: 4%;}
+#content .form 	#content .span8 {width:100%!important;padding:0}
 #form-campanha .span4 iframe {width: 270px;}
 .form-horizontal .span8.control-group input {width: 80%!important;}
 #content section.form { padding:0!important }
@@ -432,3 +431,4 @@ a{text-decoration:underline!important;}
 .logotv-mobile{width: 17%; margin: 0 auto;padding: 2%;}
 
 
+.interna.jogos #content .pais{display:none}
