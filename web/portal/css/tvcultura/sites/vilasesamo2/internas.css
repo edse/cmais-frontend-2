@@ -356,6 +356,7 @@ body.personagens { background:#b60401; }
 .personagens .atividades a .container-image{ border-bottom:2px solid #571ed9;}
 .personagens .dest-pers a p{font-size:17px;font-family: 'dinmedium', Arial, Helvetica, sans-serif;line-height: 42px;overflow: hidden;width: 143px;text-overflow: ellipsis;white-space: nowrap; margin:0;}
 .personagens .dest-pers .img-destaque { position:relative; width:100%; display: block;}
+.personagens .dest-pers .img-destaque img{ margin-top:15px}
 .personagens .dest-pers .span4.pull-left{min-height:275px;}
 .personagens .dest-pers .span6.jogos a img{width:200px;border-top:none; border-bottom:2px solid #008dff;border-top:none;float:left;}
 .personagens .dest-pers .span6.videos a img{width:368px;border-top:none; border-bottom:2px solid #f77400; float:left;}
