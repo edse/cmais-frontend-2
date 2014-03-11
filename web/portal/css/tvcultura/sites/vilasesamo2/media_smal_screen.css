@@ -40,7 +40,7 @@ a:hover, a:visited{color:#fff!important;}
 /* footer{display:none;}
 #carrossel-destaque{display:none;}*/
 #no-mobile{display: none;}
-#content{top:70px!important;margin-bottom:0;}
+#content{top:70px!important;margin-bottom:0!important;}
 #mobile{display: block; padding-bottom:0;margin-top:80px; }
 .atividades.interna #mobile{margin-top: 80px; }
 /*.videos #content{top:20px!important; }*/
@@ -212,8 +212,8 @@ a{text-decoration:underline!important;}
 .personagens #page_nav{margin:0!important; height: 50px;padding: 0!important;}
 .icone-personagem-grande{ background-position: 0 -1335px; width: 39px; height: 47px;margin: 0 0 0 23%!important;} 
 
-.icone-carregar-br-grande{ background-position: 0 -1409px; width: 29px; height: 39px; margin-top: -5%!important;} 
-
+.icone-carregar-br-grande{ background-position: 0 -1409px; width: 33px; height: 39px; margin-top: -5%!important;}    
+.icone-carregar-lj-grande {background-position: 0 -1495px;width: 39px;height: 39px;}
   
 /* assets internas (jogos, atividades, videos) */
 .interna.jogos #content section,
@@ -244,9 +244,9 @@ a{text-decoration:underline!important;}
 .interna.atividades #content .icone-atividades-grande { background-position: 0 -371px; width: 34px; height: 55px}
 .interna.videos #content .icone-videos-grande { background-position: 0 -1732px; width: 40px; height: 50px}
 
-.interna.jogos{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;border-radius: 13px;}
-.interna.videos{font-size: 1em!important;background-image:none!important;background-color: #f78701;display: block;border-radius: 13px;}
-.interna.atividades{font-size: 1em!important;background-image:none!important;background-color:#571ed9 ;display: block;border-radius: 13px;}
+.interna.jogos #page_nav{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;border-radius: 13px;margin-bottom: -20%;}
+.interna.videos #page_nav{font-size: 1em!important;background-image:none!important;background-color: #f78701;display: block;border-radius: 13px;margin-bottom: -20%;}
+.interna.atividades #page_nav{font-size: 1em!important;background-image:none!important;background-color:#571ed9 ;display: block;border-radius: 13px;margin-bottom: -20%;}
 
 .interna.jogos .conteudo-asset,
 .interna.atividades .conteudo-asset,
@@ -329,7 +329,6 @@ a{text-decoration:underline!important;}
 /*categorias *, habitos*/
 .campanhas #content .filtro h1 {font-size:1.6em!important;}
 .campanhas #content .container-campanhas iframe {width: 100%;margin-top: 0;}
-.campanhas #content .container-campanhas {margin-top: 40px;}
 .campanhas #content .btn-group {margin-top: 16%;width: 100%;right: 0;}
 
 /*coleção incluir*/
@@ -374,7 +373,7 @@ a{text-decoration:underline!important;}
 
 @media screen and (min-width:360px) and (max-width:500px) {
   #content .todos-itens #container {width: 100%;margin-left: 0!important}
-	#content .todos-itens {margin:15px auto;}
+	#content .todos-itens {margin:15px auto;padding: 1%;}
   #content .todos-itens .element{width: 48%;margin: 5px 0 0 5px!important;}
   #content .todos-itens li img{width:100%;}
   #content .todos-itens .yt-menu,
@@ -386,19 +385,18 @@ a{text-decoration:underline!important;}
 @media screen and (max-width: 359px) {
 	
 	#content .todos-itens #container {width: 100%;margin-left: 0!important}
-	#content .span8 {width:100%;padding:0 8%}
 	.destaques > .span4 {margin-left:0!important;}
-	#content .todos-itens {margin:15px auto;}
+	#content .todos-itens {margin:15px auto;padding: 2%;}
 	#content .todos-itens .element{width:100%; margin:5px 0!important}
 	#content .todos-itens li img{width:100%;}
 	#content .todos-itens .yt-menu,
 	#content .todos-itens .container-image{height:150px!important; max-width:360px;}
 	#page_nav .mais{float: none!important;width: 190px!important;margin: 0 auto!important;font-size: 1.2em;line-height: 2em;}
 	#page_nav .container-ajax-loader{position:relative;margin:0 auto!important;top:0;left:0;}
-	
+	/*
 	#carrossel-interna .slider li {width: 137px!important;float: left;}
   #carrossel-interna .slider li a {width:122px!important;}
-
+  */
 }
 
 @media only screen and (max-width: 500px) and (min-width: 321px){
@@ -413,8 +411,8 @@ a{text-decoration:underline!important;}
 
 
 /*form campanhas*/
-#form-campanha .span8{width: 100%!important;padding: 2%;}
-#form-campanha .form .span12 {padding: 2%;}
+#content .form .span12{margin-bottom:20px;padding: 4%;}
+#content .form 	#content .span8 {width:100%!important;padding:0}
 #form-campanha .span4 iframe {width: 270px;}
 .form-horizontal .span8.control-group input {width: 80%!important;}
 #content section.form { padding:0!important }
@@ -432,3 +430,11 @@ a{text-decoration:underline!important;}
 .logotv-mobile{width: 17%; margin: 0 auto;padding: 2%;}
 
 
+.interna.jogos #content .pais{display:none}
+.interna.personagens #content .pais{display:none}
+.interna.atividades #content .pais{display:none}
+.interna.videos #content .pais{display:none}
+
+.campanhas.categorias #mobile{margin-top: 0!important}
+
+.interna.jogos,.interna.videos,.intena.atividades #page_nav{margin-bottom: -20%!important;}

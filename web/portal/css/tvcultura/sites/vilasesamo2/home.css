@@ -29,7 +29,7 @@
 #carrossel-personagem .slider .inner.elmo { background:#9acd34 !important; }
 #carrossel-personagem .slider .inner.comecome { background:#9928ce !important; }
 #carrossel-personagem .slider .inner.zoe { background:#ce62cf !important;}
-
+#carrossel-personagem .slider .inner.sivan { background:#fdb2dd !important; }
 #carrossel-personagem .slider .nome { font-size:18px; color:#d71c0d; text-transform:uppercase; display:block; text-align:center; }
 #carrossel-personagem .slider li:hover .nome { font-family: 'din-blackregular', "Helvetica Neue", Helvetica, Arial, sans-serif; text-decoration:underline; }
 
