@@ -435,6 +435,6 @@ a{text-decoration:underline!important;}
 .interna.atividades #content .pais{display:none}
 .interna.videos #content .pais{display:none}
 
-.campanhas.categorias #mobile{margin-top: 0!important}
+.campanhas.categorias #page_nav{margin-bottom: -20%!important;}
 
 .interna.jogos,.interna.videos,.intena.atividades #page_nav{margin-bottom: -20%!important;}
