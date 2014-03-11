@@ -521,7 +521,7 @@ class _assetActions extends sfActions
     }
 		
     //if ($this->site->Program->getIsACourse() && $request->getParameter('test') == 1) {
-    if ($this->site->Program->getIsACourse()) {
+    if ($this->site->Program->getIsACourse() || $this->site->getSlug()=="1964") {
     	$sections = $this->asset->getSections();
 			
 			if (count($sections) > 0) {
