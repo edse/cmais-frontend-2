@@ -1219,7 +1219,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
     
     //if($request->isXmlHttpRequest()){
       $return = '';
-			$content_return = '';
+      $content_return = '';
       $start = 0;
       $items = intval($request->getParameter('items'));
       $siteId = intval($request->getParameter('siteId'));
@@ -1230,14 +1230,14 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       $site = $request->getParameter('site');
       $not_repeat = $request->getParameter('no-repeat');
       /*$not_flash = $request->getParameter('not_flash');
-	      <script>
-					if(hasflash() && user_agent == "desktop"){
-						//carrega os jogos flash e html5
-						
-					}else{
-						//carrega somente jogos em html5
-					}
-				</script>
+        <script>
+          if(hasflash() && user_agent == "desktop"){
+            //carrega os jogos flash e html5
+            
+          }else{
+            //carrega somente jogos em html5
+          }
+        </script>
       */
       
       if($page >= 1)
@@ -1245,7 +1245,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       
       
       
-      $array_not_in[] = 169128;
+      $array_not_in[] = 162891;
       
       
       $assets_novo = Doctrine_Query::create() 
@@ -1374,9 +1374,10 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             if($section == "videos"):
               $return =  '<li class="span4 element '. $printPersonagens.' '. $first .' '.' videos">';
               $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '">';
-              $return .=      '<div class="yt-menu">';
-              //$return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'" />';
+              $return .=      '<div class="yt-menu container-image">';
+              //$return .=      '<div class="container-image">';
               $return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="" aria-label="Título vídeo: '. $d->getTitle().' - '.$d->getDescription().'. Descrição Thumbnail:'.$descricaoImagem.'" />';
+              //$return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/mqdefault.jpg" alt="" aria-label="Título vídeo: '. $d->getTitle().' - '.$d->getDescription().'. Descrição Thumbnail:'.$descricaoImagem.'" />';
               $return .=      '</div>';
               $return .=      '<i class="icones-sprite-interna icone-videos-pequeno"></i>';
               $return .=        '<div aria-hidden="true" tabindex="-1">';
@@ -1386,7 +1387,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
               $return .=      '</a>';
               $return .=    '</li>';
               //echo $return;
-							$content_return.= $return;
+              $content_return.= $return;
             else:  
               
               //$related = $d->retriveRelatedAssetsByRelationType("Preview");
@@ -1420,19 +1421,27 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
                 $return .=    '<a href="/'.  $site .'/' . $section .'/'.$d->getSlug() . '" title="' . $d->getTitle() . '" aria-label=".Titulo ' . $subSectionb . ": "  . $d->getTitle() . ' - ' .$d->getDescription() .'. Descrição do Thumbnail:'. $descricaoImagem .'">';
               }            
               if($section == "pais-e-educadores"):
-                $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="" />';
+                $return .=    '<div class="container-image">';
+                $return .=    ' <img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="" />';
+                $return .=    '</div>';
                 $return .=    '<i class="icones-sprite-interna icone-artigo-br-pequeno"></i>';
               elseif($section == "jogos" || $section == "atividades"):
-                $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="" />';
+                $return .=    '<div class="container-image">';
+                $return .=    ' <img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="" />';
+                $return .=    '</div>';
                 $return .=    '<i class="icones-sprite-interna icone-'.$section.'-pequeno"></i>';
               else: 
                 if($assetSectionB == "videos"):    
-                  $return .=      '<div class="yt-menu">';
-                  $return .=        '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" />';
-                  $return .=      '</div>';
+                  $return .=      '<div class="yt-menu container-image">';
+                  //$return .=    '<div class="container-image">';
+                  $return .=      '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/0.jpg" alt="'.$d->getTitle().'" />';
+                  //$return .=      '<img src="http://img.youtube.com/vi/'.$d->AssetVideo->getYoutubeId().'/mqdefault.jpg" alt="'.$d->getTitle().'" />';
+                  $return .=    '</div>';
                 else:
+                  $return .=    '<div class="container-image">';
                   //$return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt="'. $d->getTitle().'" aria-label="'. $d->getTitle().$d->getDescription().'".Descrição do Thumbnail:"'.$related[0]->AssetImage->getHeadline().'" />';
-                  $return .=    '<img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt=""  />';
+                  $return .=    ' <img src="' . $related[0]->retriveImageUrlByImageUsage("image-13") . '" alt=""  />';
+                  $return .=    '</div>';
                 endif;
                 if($assetSectionB):
                   if($assetSectionB != "videos" && $assetSectionB != "jogos" && $assetSectionB != "atividades"):
@@ -1457,14 +1466,14 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
             endif;  
           endif;  
         endforeach;
-				
-	      $c_r = array("data" => $content_return);
-	      $json = json_encode($c_r);
-	      $callback = $request->getParameter('callback');
-	      echo $callback.'('. $json . ');';
-        die();				
-				
-				
+        
+        $c_r = array("data" => $content_return);
+        $json = json_encode($c_r);
+        $callback = $request->getParameter('callback');
+        echo $callback.'('. $json . ');';
+        die();        
+        
+        
         $outputArray = array_map("intval", explode(",", $not_repeat_base));
         $output = array_slice($outputArray, 0, 10);
         $not_repeat = implode(",", $output);
