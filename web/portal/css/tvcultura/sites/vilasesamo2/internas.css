@@ -37,7 +37,7 @@ a{text-decoration:underline!important;}
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
 .filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1773px; top:0; }
 .filtro .span2{ background:#d71c0d!important; border:1px solid #c31408; overflow:hidden; width: 175px;margin: 3px;display: block;margin-top: -2px;}
-.filtro .span10 { margin-left: 0;width: 758px;float: right;height: 425px; }
+.filtro .span10 { margin-left: 0;width: 758px;float: right;height: 477px; }
 .filtro .span12 { border-top:0px solid #0191fb; border-bottom:2px solid #0191fb; background:#EE3021;  /*border-left:2px solid #0191fb;*/  }
 .filtro .filtro-personagem { margin-left:0; overflow: hidden;}
 .filtro .filtro-personagem li { float:left; margin:2%; list-style:none;  /*width:75px; height:75px;*/  width:45.6%; overflow: hidden;/*height:45.6%;*/}
@@ -113,7 +113,7 @@ body.campanhas{background-color:#fee133!important;}
 
 /* destaque filtro */
 .destaque-filtro { background:#fff; padding:10px 10px 0 10px; }
-.destaque-filtro .img-destaque { position:relative; width:100%; display: block;}
+.destaque-filtro .img-destaque { position:relative; width:100%; display: block;margin-top:36px;}
 .todos-itens li h2 { border-bottom:2px solid #0191fb;} 
 .todos-itens li h2,
 .destaque-filtro h1 { margin:0; line-height: 32px; }
