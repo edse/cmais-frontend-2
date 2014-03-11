@@ -394,10 +394,10 @@ a{text-decoration:underline!important;}
 	#content .todos-itens .container-image{height:150px!important; max-width:360px;}
 	#page_nav .mais{float: none!important;width: 190px!important;margin: 0 auto!important;font-size: 1.2em;line-height: 2em;}
 	#page_nav .container-ajax-loader{position:relative;margin:0 auto!important;top:0;left:0;}
-	
+	/*
 	#carrossel-interna .slider li {width: 137px!important;float: left;}
   #carrossel-interna .slider li a {width:122px!important;}
-
+  */
 }
 
 @media only screen and (max-width: 500px) and (min-width: 321px){
