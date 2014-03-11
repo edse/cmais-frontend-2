@@ -212,7 +212,7 @@ a{text-decoration:underline!important;}
 .personagens #page_nav{margin:0!important; height: 50px;padding: 0!important;}
 .icone-personagem-grande{ background-position: 0 -1335px; width: 39px; height: 47px;margin: 0 0 0 23%!important;} 
 
-.icone-carregar-br-grande{ background-position: 0 -1409px; width: 29px; height: 39px; margin-top: -5%!important;} 
+.icone-carregar-br-grande{ background-position: 0 -1409px; width: 33px; height: 39px; margin-top: -5%!important;}    
 .icone-carregar-lj-grande {background-position: 0 -1495px;width: 39px;height: 39px;}
   
 /* assets internas (jogos, atividades, videos) */
@@ -244,9 +244,9 @@ a{text-decoration:underline!important;}
 .interna.atividades #content .icone-atividades-grande { background-position: 0 -371px; width: 34px; height: 55px}
 .interna.videos #content .icone-videos-grande { background-position: 0 -1732px; width: 40px; height: 50px}
 
-.interna.jogos{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;border-radius: 13px;}
-.interna.videos{font-size: 1em!important;background-image:none!important;background-color: #f78701;display: block;border-radius: 13px;}
-.interna.atividades{font-size: 1em!important;background-image:none!important;background-color:#571ed9 ;display: block;border-radius: 13px;}
+.interna.jogos #page_nav{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;border-radius: 13px;margin-bottom: -20%;}
+.interna.videos #page_nav{font-size: 1em!important;background-image:none!important;background-color: #f78701;display: block;border-radius: 13px;margin-bottom: -20%;}
+.interna.atividades #page_nav{font-size: 1em!important;background-image:none!important;background-color:#571ed9 ;display: block;border-radius: 13px;margin-bottom: -20%;}
 
 .interna.jogos .conteudo-asset,
 .interna.atividades .conteudo-asset,
@@ -329,7 +329,6 @@ a{text-decoration:underline!important;}
 /*categorias *, habitos*/
 .campanhas #content .filtro h1 {font-size:1.6em!important;}
 .campanhas #content .container-campanhas iframe {width: 100%;margin-top: 0;}
-.campanhas #content .container-campanhas {margin-top: 40px;}
 .campanhas #content .btn-group {margin-top: 16%;width: 100%;right: 0;}
 
 /*coleção incluir*/
@@ -437,3 +436,5 @@ a{text-decoration:underline!important;}
 .interna.videos #content .pais{display:none}
 
 .campanhas.categorias #mobile{margin-top: 0!important}
+
+.interna.jogos,.interna.videos,.intena.atividades #page_nav{margin-bottom: -20%!important;}

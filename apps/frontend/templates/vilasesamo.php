@@ -359,7 +359,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <img class="sombra" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sombra-rodape.jpg" alt="" />
           <!--Logo TV rodapé mobile-->
           <div class="logotv-mobile">
-          	<a href="http://tvcultura.cmais.com.br/"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/icon-tvcultura.png"></a>
+          	<a href="http://tvcultura.cmais.com.br/" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/icon-tvcultura.png"></a>
           </div>
         </section>
         <!--/section-->
