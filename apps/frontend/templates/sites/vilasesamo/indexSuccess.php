@@ -153,7 +153,7 @@ if(window.innerWidth > 980){
       $(this).find('img').animate({top:-30, easing:"swing"},'fast');
     });
   }
-  setTimeOut(charactersShow,3000);
+  setTimeout(charactersShow,3000);
 }
   
 
