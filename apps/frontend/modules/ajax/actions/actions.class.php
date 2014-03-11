@@ -1245,7 +1245,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       
       
       
-      $array_not_in[] = 162891;
+      $array_not_in[] = 169128;
       
       
       $assets_novo = Doctrine_Query::create() 
