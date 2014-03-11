@@ -139,7 +139,7 @@ $(function(){
               <div class="box-publicidade grid1">
                 <!-- cmais-assets-300x250 -->
                 <script type='text/javascript'>
-                GA_googleFillSlot("cmais-assets-300x250");
+                GA_googleFillSlot("univesptv-300x250");
                 </script>
               </div>
               <!-- / BOX PUBLICIDADE -->
