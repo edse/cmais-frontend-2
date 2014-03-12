@@ -102,8 +102,9 @@
           <div class="programa">
             <span>FRASES</span><i class="borda-titulo"></i>
           </div>
-          <h2><i class="aspas">"&nbsp;</i><?php echo $displays["frases"][0]->getTitle() ?><i class="aspas">&nbsp;"</i></h2>
+          <a href="<?php echo $displays["frases"][0]->getUrl() ?>"><h2><i class="aspas">"&nbsp;</i><?php echo $displays["frases"][0]->getTitle() ?><i class="aspas">&nbsp;"</i></h2>
           <p><?php echo $displays["frases"][0]->getDescription() ?></p>
+          </a>
         </div>
         <div class="borda-pontilhada"></div>
         <!--a href="#" title="mais frases"> 
