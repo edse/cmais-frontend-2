@@ -112,12 +112,10 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <?php endif; ?>
               <?php echo html_entity_decode($asset->AssetContent->render()) ?>
               
-              <!--sobre os autores-->
+              
+             <!--sobre os autores-->
               <?php if(count($colaboradores) > 0): ?>
-              <h2>
-                <i class="icones-sprite-interna icone-carregar-verde" style="margin:0!important;"></i>
-                sobre o autor:
-              </h2>
+              
                 <?php foreach($colaboradores as $c): ?>
                   <article class="sobre-autor" id="<?php echo $c->getSlug() ?>">
                     <div class="sombra-amarela"></div>
@@ -182,9 +180,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                   </article>
                 <?php endforeach; ?>
               <?php endif; ?>
-              
-        
-              <!--/sobre os autores-->
+              <!--/sobre os autores-->              
               
               
               <!--imprimir/baixar-->
@@ -214,81 +210,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <?php include_partial_from_folder('sites/vilasesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
               <!--/compartilhar redes-->
                
-              <!--sobre os autores-->
-              <?php/*
-              <?php if(count($colaboradores) > 0): ?>
-              <h2>
-                <i class="icones-sprite-interna icone-carregar-verde" style="margin:0!important;"></i>
-                sobre o autor:
-              </h2>
-                <?php foreach($colaboradores as $c): ?>
-                  <article class="sobre-autor" id="<?php echo $c->getSlug() ?>">
-                    <div class="sombra-amarela"></div>
-                    <div class="foto-sobre">
-                      <?php $preview = $c->retriveRelatedAssetsByRelationType("Preview") ?>
-                        <?php if($preview): ?>
-                          <?php if($preview[0]->retriveImageUrlByImageUsage("image-13")): ?>
-                            <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt="<?php echo $c->getTitle() ?>" name="<?php echo $c->getTitle() ?>">
-                          <?php endif; ?>
-                        <?php endif; ?>
-                    </div>
-                    <div class="descricao-sobre">
-                      <h3><?php echo $c->getTitle() ?></h3>
-                      <p><?php echo $c->AssetPerson->getBio() ?></p>
-                      
-                      <!--Lista de Contatos-->
-                      <?php
-                        $Web = $c->AssetPerson->getWebsiteUrl();
-                        $Facebook = $c->AssetPerson->getFacebookUrl();
-                        $Twitter = $c->AssetPerson->getTwitterUrl();
-                        $YouTube = $c->AssetPerson->getYoutubeUrl();
-                      ?>
-                      
-                      <?php if($c->AssetPerson->getHeadline() != ""): ?>
-                        <?php 
-                        $emails = explode(",", $c->AssetPerson->getHeadline());
-                        foreach($emails as $k=>$e):
-                        ?>
-                          <a href="mailto: <?php echo $e ?> " title="envie uma mensagem para <?php echo $c->getTitle() ?>"><?php echo $e ?></a>
-                          <?php if($k > 0 || $Web != "" || $Facebook != "" || $Twitter != "" || $YouTube != ""  ){ echo ", "; }else{ echo "."; } ?>
-                          
-                        <?php endforeach;?>
-                      <?php endif; ?>
-                      
-                      <?php if($Web != ""): ?>
-                        <?php 
-                        $webs = explode(",", $Web);
-                        foreach($webs as $k=>$w):
-                        ?>
-                          <a href="<?php echo $Web ?>" target="_blank" title="<?php echo $Web ?>">Site <?php echo ($k + 1) ?></a>
-                          <?php if( $k > 0 || $Facebook != "" || $Twitter != "" || $YouTube != ""  ){ echo ", "; }else{ echo "."; } ?>
-                        <?php endforeach;?>
-                      <?php endif; ?>
-                      
-                      <?php if($Facebook != ""): ?>
-                        <a href="<?php echo $Facebook ?>" target="_blank" title="">Facebook</a>
-                        <?php if( $Twitter != "" || $YouTube != ""  ){ echo ", "; }else{ echo "."; } ?>
-                      <?php endif; ?>
-                      
-                      <?php if($Twitter != ""): ?>  
-                        <a href="<?php echo $Twitter ?>" target="_blank" title="">Twitter</a>
-                        <?php if($YouTube != ""  ){ echo ", "; }else{ echo "."; } ?>
-                      <?php endif; ?>
-                      
-                      <?php if($YouTube != ""): ?>
-                        <a href="<?php echo $YouTube ?>" target="_blank" title="">Canal Youtube</a>
-                        <?php echo "."; ?>
-                      <?php endif; ?>
-                      <!--Lista de Contatos-->
-                      
-                    </div>
-                  </article>
-                <?php endforeach; ?>
-              <?php endif; ?>
-              
-        
-							 */
-							?>
               
               <div id="comente-este-artigo">              
                 <div class="divisa"></div>
