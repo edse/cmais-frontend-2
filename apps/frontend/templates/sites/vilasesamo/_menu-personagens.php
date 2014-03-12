@@ -17,7 +17,11 @@
                   ?>  
                     <div class="inner <?php echo $p->getSlug() ?>">
                       <a href="<?php echo $href; ?>" title="<?php echo $p->getTitle() ?>" target="_self" class="btn-<?php echo $p->getSlug() ?> <?php if($section->getSlug() == $p->getSlug()) echo "active"?>" data-filter=".<?php echo $p->getSlug() ?>">
-                        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem.png" alt="personagem <?php echo $p->getTitle() ?>" />
+                        <?php if($p->getSlug()=="sivan" && $section->Parent->getSlug() == "personagens"):?>
+                          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem_01.png" alt="personagem <?php echo $p->getTitle() ?>" />
+                        <?php else:?>
+                          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/botoes-carrossel/<?php echo $p->getSlug() ?>_personagem.png" alt="personagem <?php echo $p->getTitle() ?>" />
+                        <?php endif;?>
                       </a>
                     </div>
                   <?php   
