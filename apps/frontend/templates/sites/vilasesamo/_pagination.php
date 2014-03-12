@@ -4,20 +4,25 @@
   if($section->getSlug() == "pais-e-educadores"):
     $ajaxLoader = "-pais-e-educadores";
     $icone = "icone-carregar-ve-grande";
+    $sectionColor = "pais-e-educadores";
   elseif(isset($parent)):
     if($parent == "categorias"):
       $ajaxLoader = "-categorias";
       $icone = "icone-carregar-lj-grande";
+      $sectionColor = "categorias";
     elseif($parent=="personagens"):
       $ajaxLoader = "-personagens";
       $icone = "icone-carregar-br-grande";
+      $sectionColor = "personagens";
     endif;   
   else: 
     $ajaxLoader = "-".$section->getSlug();
     $icone = "icone-carregar-br-grande";
+    $sectionColor = $section->getSlug();
   endif;    
 ?>
-<a id="voltar-topo-pagina" href="#content">voltar topo</a>  
+<a id="voltar-topo-pagina" href="#" onclick="goTop();" class="<?php echo $sectionColor; ?>"><span>voltar topo</span></a>  
+
 
 <nav id="page_nav">
   <div class="container-ajax-loader">
@@ -35,13 +40,6 @@
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <?php echo $noscript ?>
 <script>
-
-	//Verify Devices
-	var gFlash = true;
-	var uAgent = navigator.userAgent;
-  if(uAgent.indexOf("iPhone") != -1 || uAgent.indexOf("iPod") != -1 || uAgent.indexOf("Android") != -1 && uAgent.indexOf("Mobile") != -1 || uAgent.indexOf("Windows Phone") != -1 && uAgent.indexOf("IEMobile") != -1)  {
-  	gFlash = false;
-  }
 
   var firstCount = 0;
   contentPage = 1;
@@ -115,11 +113,17 @@
      
   }
   
+  function goTop(){
+    $('html, body').animate({
+      scrollTop:parseInt($('#content').offset().top-110)
+    }, "slow");
+  } 
+  
   function vilaSesamoGetContents() {
     $.ajax({
       url: "http://app.cmais.com.br/ajax/vilasesamogetcontents",
       dataType: "jsonp",
-      data: "page="+contentPage+"&items=9&gflash="+gFlash+"&site=<?php echo $site->getSlug(); ?>&siteId=<?php echo (int)$site->id ?>&sectionId=<?php echo $section->getId(); ?>&section=<?php echo $section->getSlug(); ?>&sectionP=<?php echo $section->getParentSectionId(); ?>&no-repeat="+no_repeat,
+      data: "page="+contentPage+"&items=9&site=<?php echo $site->getSlug(); ?>&siteId=<?php echo (int)$site->id ?>&sectionId=<?php echo $section->getId(); ?>&section=<?php echo $section->getSlug(); ?>&sectionP=<?php echo $section->getParentSectionId(); ?>&no-repeat="+no_repeat,
       beforeSend: function(){
           $('#ajax-loader').show();
         },
