@@ -24,8 +24,9 @@ a{text-decoration:underline!important;}
 .mais i { float:right; margin-left:15px; }
 .mais:hover { color:#fff; text-decoration:underline; }
 /* filtro personagem */
-#filtrar-tudo{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/selecionar.png) no-repeat top; height:66px;}
-#filtrar-tudo:hover{background-position:bottom;}
+/*#filtrar-tudo{margin: 0 auto;display: block;margin-bottom: 4px;}*/
+#filtrar-tudo{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/selecionar.png) no-repeat top; height:53px;line-height: 20px;padding-top: 17px; color:#fff;  -moz-text-shadow:none; -webkit-text-shadow:none;text-shadow:none;}
+#filtrar-tudo:hover{background-position:-53px;}
 .todos-itens li,
 .scroll,
 .filtro { background:#3aaaec; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
@@ -36,7 +37,7 @@ a{text-decoration:underline!important;}
 .filtro .span2 p .sprite-seta-down { display: none;  position:absolute; right:10px; top:-10px; cursor:pointer; }
 .filtro .span2 p .sprite-seta-down.ativo { background-position: 0 -1773px; top:0; }
 .filtro .span2{ background:#d71c0d!important; border:1px solid #c31408; overflow:hidden; width: 175px;margin: 3px;display: block;margin-top: -2px;}
-.filtro .span10 { margin-left: 0;width: 758px;float: right;height: 425px; }
+.filtro .span10 { margin-left: 0;width: 758px;float: right;height: 484px; }
 .filtro .span12 { border-top:0px solid #0191fb; border-bottom:2px solid #0191fb; background:#EE3021;  /*border-left:2px solid #0191fb;*/  }
 .filtro .filtro-personagem { margin-left:0; overflow: hidden;}
 .filtro .filtro-personagem li { float:left; margin:2%; list-style:none;  /*width:75px; height:75px;*/  width:45.6%; overflow: hidden;/*height:45.6%;*/}
@@ -112,7 +113,7 @@ body.campanhas{background-color:#fee133!important;}
 
 /* destaque filtro */
 .destaque-filtro { background:#fff; padding:10px 10px 0 10px; }
-.destaque-filtro .img-destaque { position:relative; width:100%; display: block;}
+.destaque-filtro .img-destaque { position:relative; width:100%; display: block;margin-top:36px;}
 .todos-itens li h2 { border-bottom:2px solid #0191fb;} 
 .todos-itens li h2,
 .destaque-filtro h1 { margin:0; line-height: 32px; }
@@ -563,3 +564,7 @@ body.na-tv{background-color:#feec3c;position:relative;}
 #content .incluir-brincando-colecao {overflow: hidden;min-height: 46px!important; background:#feec3c; margin:0 auto !important; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 
 #content.span8{width:100%!important;padding:0!important}
+#voltar-topo-pagina{position:fixed;bottom:0; z-index:1000;background-color: #feec3c;width: 90%;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;border-radius: 5px;margin-bottom: 1%;text-align: center;padding: 2% 0;text-transform: uppercase;-moz-border-radius: 5px; -webkit-border-radius: 5px;display:none;}
+#voltar-topo-pagina.atividades {background-color: #8935ef;border-top: 7px solid #b16af2;border-bottom: 7px solid #b16af2;}
+#voltar-topo-pagina.jogos {background-color: #32a8ee;border-top: 7px solid #02cbff;border-bottom: 7px solid #02cbff;}
+#voltar-topo-pagina.videos {background-color: #f78701;border-top: 7px solid #fba500;border-bottom: 7px solid #fba500;}
