@@ -4,6 +4,13 @@ $(document).ready(function() {
   //setInterval(function(){
    //$('#header-tablet .logo-mobile').addClass('animated').addClass('tada'); 
   //},7000);
+  setInterval(function(){
+    if(window.innerWidth < 980 && window.pageYOffset > 80){
+      $('#voltar-topo-pagina').fadeIn("slow").addClass('animated').addClass('tada');
+    }else{
+      $('#voltar-topo-pagina').fadeOut("fast");
+    }
+  },500);
   
   var hMobile = "#header-mobile";
   var hTablet = "#header-tablet";

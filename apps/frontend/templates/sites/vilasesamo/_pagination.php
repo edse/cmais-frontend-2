@@ -17,6 +17,8 @@
     $icone = "icone-carregar-br-grande";
   endif;    
 ?>
+<a id="voltar-topo-pagina" href="#content">voltar topo</a>  
+
 <nav id="page_nav">
   <div class="container-ajax-loader">
     <img id="ajax-loader" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/ajax-loader<?php if(isset($ajaxLoader)) echo $ajaxLoader ?>.gif" alt="" style="display:none;">

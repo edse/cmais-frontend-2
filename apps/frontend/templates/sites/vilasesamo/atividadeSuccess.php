@@ -174,6 +174,7 @@
 </div>
 <!--/content-->
 
+  
 <script>
 $('.changePicture, .picture').click(function(){
   var picture = $(this).find('img').attr('src');
