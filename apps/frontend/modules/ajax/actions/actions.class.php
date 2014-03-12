@@ -1252,11 +1252,9 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           if($a->AssetVideo->getYoutubeId() == "") $array_not_in[] = $a->getId();  
         }
 				
-				/*
-				if($a->AssetType->id == 6){
+				if($a->AssetType->id == 1 || $gflash == false){
 					if($a->Asset->headline == "game flash") $array_not_in[] = $a->getId();
 				}
-				*/
       }
       
        
