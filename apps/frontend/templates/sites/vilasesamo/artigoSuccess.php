@@ -287,8 +287,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <?php endif; ?>
               
         
-              <!--/sobre os autores-->
-							 */?>
+							 */
+							?>
               
               <div id="comente-este-artigo">              
                 <div class="divisa"></div>
