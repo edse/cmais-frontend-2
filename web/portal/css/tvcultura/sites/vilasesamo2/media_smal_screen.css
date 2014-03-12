@@ -212,7 +212,7 @@ a{text-decoration:underline!important;}
 .personagens #page_nav{margin:0!important; height: 50px;padding: 0!important;}
 .icone-personagem-grande{ background-position: 0 -1335px; width: 39px; height: 47px;margin: 0 0 0 23%!important;} 
 
-.icone-carregar-br-grande{ background-position: 0 -1409px; width: 33px; height: 39px; margin-top: -5%!important;}    
+.icone-carregar-br-grande{ background-position: 0 -1409px; width: 33px; height: 39px; margin-top: -7%!important;}    
 .icone-carregar-lj-grande {background-position: 0 -1495px;width: 39px;height: 39px;}
   
 /* assets internas (jogos, atividades, videos) */
@@ -391,7 +391,7 @@ a{text-decoration:underline!important;}
 	#content .todos-itens li img{width:100%;}
 	#content .todos-itens .yt-menu,
 	#content .todos-itens .container-image{height:150px!important; max-width:360px;}
-	#page_nav .mais{float: none!important;width: 190px!important;margin: 0 auto!important;font-size: 1.2em;line-height: 2em;}
+	#page_nav .mais{float: none!important;width: 176px!important;margin: 0 auto!important;font-size: 1.2em;line-height: 2em;}
 	#page_nav .container-ajax-loader{position:relative;margin:0 auto!important;top:0;left:0;}
 	/*
 	#carrossel-interna .slider li {width: 137px!important;float: left;}

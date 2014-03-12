@@ -455,7 +455,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .container-cuidadores .col-esq .imprimir .baixar{float:right;width: 105px;}
 .cuidadores .container-cuidadores .col-esq .option-assets{float:left;}
 .cuidadores .container-cuidadores .col-esq .option-assets span{width: 125;text-transform: uppercase;line-height: 42px;}
-.cuidadores .container-cuidadores .col-esq .sobre-autor{position:relative;width: 580px;overflow: hidden;border: 1px solid #ccf4e2;margin-bottom: 10px;padding: 8px;border-radius:5px;  -moz-border-radius:5px; -webkit-border-radius:5px;}
+.cuidadores .container-cuidadores .col-esq .sobre-autor{position:relative;width: 580px;overflow: hidden;border: 1px solid #ccf4e2;margin-bottom: 10px;height:160px;padding: 8px;border-radius:5px;  -moz-border-radius:5px; -webkit-border-radius:5px;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre{width:425px;float:right;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre a{color:#00AA52;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre p{min-height: 58px;}
@@ -564,7 +564,18 @@ body.na-tv{background-color:#feec3c;position:relative;}
 #content .incluir-brincando-colecao {overflow: hidden;min-height: 46px!important; background:#feec3c; margin:0 auto !important; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
 
 #content.span8{width:100%!important;padding:0!important}
-#voltar-topo-pagina{position:fixed;bottom:0; z-index:1000;background-color: #feec3c;width: 90%;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;border-radius: 5px;margin-bottom: 1%;text-align: center;padding: 2% 0;text-transform: uppercase;-moz-border-radius: 5px; -webkit-border-radius: 5px;display:none;}
+#voltar-topo-pagina span{padding: 2% 0; }
+#voltar-topo-pagina{position:fixed;bottom:0; z-index:1000;background-color: #feec3c;width: 90%;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;border-radius: 5px;margin-bottom: 1%;text-align: center;text-transform: uppercase;-moz-border-radius: 5px; -webkit-border-radius: 5px;display:none;left:50%; margin-left:-45%;}
 #voltar-topo-pagina.atividades {background-color: #8935ef;border-top: 7px solid #b16af2;border-bottom: 7px solid #b16af2;}
 #voltar-topo-pagina.jogos {background-color: #32a8ee;border-top: 7px solid #02cbff;border-bottom: 7px solid #02cbff;}
 #voltar-topo-pagina.videos {background-color: #f78701;border-top: 7px solid #fba500;border-bottom: 7px solid #fba500;}
+#voltar-topo-pagina.personagens{background-color:#d71c0d;border-bottom: 7px solid #ee3021;border-top: 7px solid #ee3021;}
+#voltar-topo-pagina.categorias{background: #feec3c; border-bottom: 7px solid #fffb49;border-top: 7px solid #fffb49;}
+#voltar-topo-pagina.pais-e-educadores{background: #00aa52;border-top: 7px solid #00c76e;border-bottom: 7px solid #00c76e;}
+
+#voltar-topo-pagina.atividades span{border-top: 2px solid #571ed9;border-bottom: 2px solid #571ed9;}
+#voltar-topo-pagina.jogos span{border-top: 2px solid #0191fb;border-bottom: 2px solid #0191fb;}
+#voltar-topo-pagina.videos span{border-top: 2px solid #f07317;border-bottom: 2px solid #f07317;}
+#voltar-topo-pagina.personagens span{border-bottom: 2px solid #c31408;border-top: 2px solid #c31408;}
+#voltar-topo-pagina.categorias span{ border-bottom: 2px solid #fbc227;border-top: 2px solid #fbc227;}
+#voltar-topo-pagina.pais-e-educadores span{border-top: 2px solid #008d36;border-bottom: 2px solid #008d36;}
