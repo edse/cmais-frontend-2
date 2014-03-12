@@ -112,34 +112,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <?php endif; ?>
               <?php echo html_entity_decode($asset->AssetContent->render()) ?>
               
-              <!--imprimir/baixar-->
-              <!--div class="imprimir">
-                
-                <a class="option-assets" href="#" title="Imprimir" target="_blank">
-                  <i class="icones-sprite-interna icone-imprimir-verde"></i>
-                  <span>Imprimir</span>
-                </a>
-                
-                <a class="option-assets baixar" href="#" title="Baixar">
-                  <i class="icones-sprite-interna icone-baixar-verde"></i>
-                  <span>Baixar</span>
-                </a>
-                
-              </div-->
-              <!--/imprimir/baixar-->
               
-              
-            </section>
-            <!--/section-->
-           
-            <!--footer-->
-            <div class="clearboth" aria-label="Você está no rodapé do artigo... Com links para as redes sociais para curtir e compartilhar!" tabindex="0">
-           
-              <!--compartilhar redes-->
-              <?php include_partial_from_folder('sites/vilasesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
-              <!--/compartilhar redes-->
-               
-              <!--sobre os autores-->
+             <!--sobre os autores-->
               <?php if(count($colaboradores) > 0): ?>
               <h2>
                 <i class="icones-sprite-interna icone-carregar-verde" style="margin:0!important;"></i>
@@ -209,9 +183,36 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                   </article>
                 <?php endforeach; ?>
               <?php endif; ?>
+              <!--/sobre os autores-->              
               
-        
-              <!--/sobre os autores-->
+              
+              <!--imprimir/baixar-->
+              <!--div class="imprimir">
+                
+                <a class="option-assets" href="#" title="Imprimir" target="_blank">
+                  <i class="icones-sprite-interna icone-imprimir-verde"></i>
+                  <span>Imprimir</span>
+                </a>
+                
+                <a class="option-assets baixar" href="#" title="Baixar">
+                  <i class="icones-sprite-interna icone-baixar-verde"></i>
+                  <span>Baixar</span>
+                </a>
+                
+              </div-->
+              <!--/imprimir/baixar-->
+              
+              
+            </section>
+            <!--/section-->
+           
+            <!--footer-->
+            <div class="clearboth" aria-label="Você está no rodapé do artigo... Com links para as redes sociais para curtir e compartilhar!" tabindex="0">
+           
+              <!--compartilhar redes-->
+              <?php include_partial_from_folder('sites/vilasesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
+              <!--/compartilhar redes-->
+               
               
               <div id="comente-este-artigo">              
                 <div class="divisa"></div>
