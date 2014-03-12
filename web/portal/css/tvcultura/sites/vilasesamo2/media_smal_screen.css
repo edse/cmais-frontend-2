@@ -390,7 +390,7 @@ a{text-decoration:underline!important;}
 	#content .todos-itens .element{width:100%; margin:5px 0!important}
 	#content .todos-itens li img{width:100%;}
 	#content .todos-itens .yt-menu,
-	#content .todos-itens .container-image{height:150px!important; max-width:360px;}
+	#content .todos-itens .container-image{/*height:150px!important;*/ max-width:360px;}
 	#page_nav .mais{float: none!important;width: 176px!important;margin: 0 auto!important;font-size: 1.2em;line-height: 2em;}
 	#page_nav .container-ajax-loader{position:relative;margin:0 auto!important;top:0;left:0;}
 	/*
