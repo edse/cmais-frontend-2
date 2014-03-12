@@ -374,7 +374,7 @@ body.personagens { background:#b60401; }
 .personagens .filtro .descritivo p{font-size:16px;}
 .personagens .scroll, 
 .personagens .filtro  { border-color:#ee3021;border-bottom:7px solid #ee3021!important; background:#b60401; }
-.personagens #carrossel-interna-personagem .slider .descritivo h3{font-family:'din-blackregular',Arial, Helvetica, sans-serif;text-decoration: underline;}
+.personagens #carrossel-interna-personagem .slider .descritivo h3{font-family:'din-blackregular',Arial, Helvetica, sans-serif;}
 .personagens #carrossel-interna-personagem .slider .descritivo p{text-decoration: underline;}
 .personagens #content h3 span, 
 .personagens #content h3 i { margin-top:-5px; }
@@ -428,8 +428,8 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .selecione .drop-down-menu{padding: 0; margin:0;}
 .cuidadores .selecione .btn .caret{border:none; float:right; margin-top:5px;width: 50px;height: 35px;}
 .cuidadores .descritivo h3{font-family:'din-blackregular', Arial, Helvetica, sans-serif; font-size: 25px; color:#00aa52!important;} 
-.cuidadores .titulo-slider h2{font-family:'din-blackregular', Arial, Helvetica, sans-serif; font-size: 25px; color:#00aa52!important;} 
-.cuidadores .descritivo p{font-size:16px; color:#737373;}
+.cuidadores .titulo-slider h2{font-family:'din-blackregular', Arial, Helvetica, sans-serif; font-size: 25px; color:#00aa52!important;text-decoration: underline;} 
+.cuidadores .descritivo p{font-size:16px; color:#737373;text-decoration: underline;}
 .cuidadores .descritivo span.nome{color:#008d36}
 .cuidadores .todos-itens a {font-size: 16px; border-bottom:2px solid #008d36;}
 .cuidadores .todos-itens li {background: #00aa52;border-top: 7px solid #00c76e;border-bottom: 7px solid #00c76e;}
