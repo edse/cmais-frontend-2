@@ -374,7 +374,8 @@ body.personagens { background:#b60401; }
 .personagens .filtro .descritivo p{font-size:16px;}
 .personagens .scroll, 
 .personagens .filtro  { border-color:#ee3021;border-bottom:7px solid #ee3021!important; background:#b60401; }
-.personagens #carrossel-interna-personagem .slider .descritivo h3{font-family:'din-blackregular',Arial, Helvetica, sans-serif;}
+.personagens #carrossel-interna-personagem .slider .descritivo h3{font-family:'din-blackregular',Arial, Helvetica, sans-serif;text-decoration: underline;}
+.personagens #carrossel-interna-personagem .slider .descritivo p{text-decoration: underline;}
 .personagens #content h3 span, 
 .personagens #content h3 i { margin-top:-5px; }
 .personagens #container-personagens a { display: block;    height: 225px;    position: relative;    width: 225px; }
