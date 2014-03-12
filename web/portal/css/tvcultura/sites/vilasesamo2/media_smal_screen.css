@@ -439,7 +439,7 @@ a{text-decoration:underline!important;}
 
 .interna.jogos,.intena.atividades #page_nav{margin-bottom: -20%!important;}
 
-.cuidadores.sobre-autor{width:92%;}
+.cuidadores .container-cuidadores .col-esq .sobre-autor{width:92%!important;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .sombra-amarela{background: #fdea4f;width: 50%!important;height: 123px!important;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;margin: 0 auto;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre{width: 50%!important;margin: 0 auto;text-align: center;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre h3{display:none}
