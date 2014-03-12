@@ -1236,7 +1236,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         $start = ($page * $items)-$items;
       
       $array_not_in[] = 169128;
-      
+      //$array_not_in[] = 1;
       
       $assets_novo = Doctrine_Query::create() 
         ->select('a.*')
@@ -1252,8 +1252,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
           if($a->AssetVideo->getYoutubeId() == "") $array_not_in[] = $a->getId();  
         }
 				
-				if($a->AssetType->id == 1 || $gflash == false){
-					if($a->Asset->headline == "game flash") $array_not_in[] = $a->getId();
+				if($a->AssetType->id == 1 && $gflash == "false"){
+					if($a->AssetContent->headline == "game flash") $array_not_in[] = $a->getId();
 				}
       }
       
