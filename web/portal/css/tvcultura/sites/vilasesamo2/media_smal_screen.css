@@ -154,7 +154,7 @@ a{text-decoration:underline!important;}
 .cuidadores .col-direita,#comente-este-artigo,.fb_iframe_widget,#div-gpt-ad-1385748525978-0{display: none!important;}
 .cuidadores .container-cuidadores .col-dir{width:100%!important;margin:0!important}
 .cuidadores .container-cuidadores .col-esq {width:100%!important; padding:5%!important;}
-.cuidadores .container-cuidadores .col-esq article p {font-size: 1em!important; line-height:1.25em;}
+.cuidadores .container-cuidadores .col-esq article p {font-size: 1em!important; line-height:1.25em;width: 100%;overflow: hidden;}
 .cuidadores .container-cuidadores .col-esq article ul{margin:0 0 10px 0;}
 .cuidadores .container-cuidadores .col-esq article ul li{font-size: 1em!important;line-height: 1.25em; font-size:1em;}
 .cuidadores .container-cuidadores .col-esq article ul li:before{content:"-"}
@@ -440,8 +440,13 @@ a{text-decoration:underline!important;}
 .interna.jogos,.intena.atividades #page_nav{margin-bottom: -20%!important;}
 
 .cuidadores .container-cuidadores .col-esq .sobre-autor{width:92%!important;}
-.cuidadores .container-cuidadores .col-esq .sobre-autor .sombra-amarela{background: #fdea4f;width: 50%!important;height: 123px!important;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;margin: 0 auto;}
-.cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre{width: 50%!important;margin: 0 auto;text-align: center;}
-.cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre h3{display:none}
-.cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre p{display:none}
+.cuidadores .container-cuidadores .col-esq .sobre-autor .sombra-amarela{background: #fdea4f;height: 123px!important;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;margin: 0 auto;}
+.cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre{display:none}
+.cuidadores .container-cuidadores .col-esq .sobre-autor .foto-sobre{width: 68%;}
+
+@media only screen and (max-width: 500px) and (min-width: 321px){
+	.cuidadores .container-cuidadores .col-esq .sobre-autor .sombra-amarela{background: #fdea4f;height: 123px!important;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;margin: 0 auto;}
+	.cuidadores .container-cuidadores .col-esq .sobre-autor{width: 40%!important;float: left;margin: 2%;}
+
+}
 
