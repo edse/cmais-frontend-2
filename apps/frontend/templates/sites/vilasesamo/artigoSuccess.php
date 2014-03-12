@@ -213,9 +213,11 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <!--compartilhar redes-->
               <?php include_partial_from_folder('sites/vilasesamo', 'global/shareArticle', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section, 'uri'=>$uri)) ?>
               <!--/compartilhar redes-->
-               
+
+              <?php
+							  
+							 /* 
               <!--sobre os autores-->
-              <?php/*
               <?php if(count($colaboradores) > 0): ?>
               <h2>
                 <i class="icones-sprite-interna icone-carregar-verde" style="margin:0!important;"></i>
@@ -285,8 +287,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                   </article>
                 <?php endforeach; ?>
               <?php endif; ?>
-              
         
+              <!--/sobre os autores-->
 							 */
 							?>
               
