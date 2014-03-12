@@ -1229,21 +1229,11 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       $section = $request->getParameter('section');
       $site = $request->getParameter('site');
       $not_repeat = $request->getParameter('no-repeat');
-      /*$not_flash = $request->getParameter('not_flash');
-        <script>
-          if(hasflash() && user_agent == "desktop"){
-            //carrega os jogos flash e html5
-            
-          }else{
-            //carrega somente jogos em html5
-          }
-        </script>
-      */
+      $gflash = $request->getParameter('gflash');
       
+
       if($page >= 1)
         $start = ($page * $items)-$items;
-      
-      
       
       $array_not_in[] = 169128;
       
@@ -1254,13 +1244,17 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->where('sa.section_id = ?', $sectionId)
         ->andWhere('sa.asset_id = a.id')
         ->andWhere('a.is_active = ?', 1)
-        ->limit(30)
+        ->limit(40)
         ->execute();
       
       foreach ($assets_novo as $key => $a) {
         if($a->AssetType->id == 6){
           if($a->AssetVideo->getYoutubeId() == "") $array_not_in[] = $a->getId();  
         }
+				
+				if($a->AssetType->id == 1 || $gflash == false){
+					if($a->Asset->headline == "game flash") $array_not_in[] = $a->getId();
+				}
       }
       
        
