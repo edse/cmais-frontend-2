@@ -21,7 +21,7 @@
     $sectionColor = $section->getSlug();
   endif;    
 ?>
-<a id="voltar-topo-pagina" href="#content" class="<?php echo $sectionColor; ?>"><span>voltar topo</span></a>  
+<a id="voltar-topo-pagina" href="#" onclick="goTop();" class="<?php echo $sectionColor; ?>"><span>voltar topo</span></a>  
 
 
 <nav id="page_nav">
@@ -112,6 +112,12 @@
       
      
   }
+  
+  function goTop(){
+    $('html, body').animate({
+      scrollTop:parseInt($('#content').offset().top-110)
+    }, "slow");
+  } 
   
   function vilaSesamoGetContents() {
     $.ajax({

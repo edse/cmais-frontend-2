@@ -244,7 +244,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   <script type="text/javascript" src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js"></script><?php echo $noscript; ?>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/hammer.min.js"></script><?php echo $noscript; ?>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script><?php echo $noscript; ?>
-  <link type="text/css" rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
+  <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
   
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> <?php echo $noscript; ?>
   <script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/youtubeapi.js"></script> <?php echo $noscript; ?>
