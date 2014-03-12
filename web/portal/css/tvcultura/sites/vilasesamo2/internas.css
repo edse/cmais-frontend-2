@@ -25,7 +25,7 @@ a{text-decoration:underline!important;}
 .mais:hover { color:#fff; text-decoration:underline; }
 /* filtro personagem */
 /*#filtrar-tudo{margin: 0 auto;display: block;margin-bottom: 4px;}*/
-#filtrar-tudo{border: 0;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/selecionar.png) no-repeat top; height:53px;line-height: 20px;padding: 17px 0; color:#fff;  -moz-text-shadow:none; -webkit-text-shadow:none;text-shadow:none;}
+#filtrar-tudo{text-transform: uppercase;border: 0;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/selecionar.png) no-repeat top; height:53px;line-height: 20px;padding: 17px 0; color:#fff;  -moz-text-shadow:none; -webkit-text-shadow:none;text-shadow:none;}
 #filtrar-tudo:hover{background-position:0 bottom;} 
 .todos-itens li,
 .scroll,

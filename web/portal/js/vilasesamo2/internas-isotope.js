@@ -146,7 +146,7 @@
       if(cont != personagens){
         
         var filter_selected = "";
-        $("#filtrar-tudo").html("Desmarcar todos").attr('aria-label','botão para desmarcar todos os personagens filtros');
+        $("#filtrar-tudo").html("Desmarcar todos").css('font-size','0.8em').attr('aria-label','botão para desmarcar todos os personagens filtros');
         $('.filtro-personagem li').addClass('ativo');
         $('.filtro-personagem li a').find('img').animate({top:-25, easing:"swing"},'fast');
         
