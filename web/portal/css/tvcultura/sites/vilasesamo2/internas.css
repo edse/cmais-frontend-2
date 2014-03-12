@@ -574,8 +574,8 @@ body.na-tv{background-color:#feec3c;position:relative;}
 #voltar-topo-pagina.pais-e-educadores{background: #00aa52;border-top: 7px solid #00c76e;border-bottom: 7px solid #00c76e;}
 
 #voltar-topo-pagina.atividades span{border-top: 2px solid #571ed9;border-bottom: 2px solid #571ed9;}
-#voltar-topo-pagina.jogos {border-top: 2px solid #0191fb;border-bottom: 2px solid #0191fb;}
-#voltar-topo-pagina.videos {border-top: 2px solid #f07317;border-bottom: 2px solid #f07317;}
-#voltar-topo-pagina.personagens{border-bottom: 2px solid #c31408;border-top: 2px solid #c31408;}
-#voltar-topo-pagina.categorias{ border-bottom: 2px solid #fbc227;border-top: 2px solid #fbc227;}
-#voltar-topo-pagina.pais-e-educadores{border-top: 2px solid #008d36;border-bottom: 2px solid #008d36;}
+#voltar-topo-pagina.jogos span{border-top: 2px solid #0191fb;border-bottom: 2px solid #0191fb;}
+#voltar-topo-pagina.videos span{border-top: 2px solid #f07317;border-bottom: 2px solid #f07317;}
+#voltar-topo-pagina.personagens span{border-bottom: 2px solid #c31408;border-top: 2px solid #c31408;}
+#voltar-topo-pagina.categorias span{ border-bottom: 2px solid #fbc227;border-top: 2px solid #fbc227;}
+#voltar-topo-pagina.pais-e-educadores span{border-top: 2px solid #008d36;border-bottom: 2px solid #008d36;}
