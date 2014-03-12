@@ -21,7 +21,7 @@
     $sectionColor = $section->getSlug();
   endif;    
 ?>
-<a id="voltar-topo-pagina" href="#" onclick="goTop();" class="<?php echo $sectionColor; ?>"><span>voltar topo</span></a>  
+<a id="voltar-topo-pagina" href="#" onclick="goTop();" class="<?php echo $sectionColor; ?>"><span>voltar ao topo</span></a>  
 
 
 <nav id="page_nav">
