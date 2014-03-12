@@ -115,10 +115,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               
              <!--sobre os autores-->
               <?php if(count($colaboradores) > 0): ?>
-              <h2>
-                <i class="icones-sprite-interna icone-carregar-verde" style="margin:0!important;"></i>
-                sobre o autor:
-              </h2>
+              
                 <?php foreach($colaboradores as $c): ?>
                   <article class="sobre-autor" id="<?php echo $c->getSlug() ?>">
                     <div class="sombra-amarela"></div>
