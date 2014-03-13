@@ -12,8 +12,9 @@ $(document).ready(function() {
       $('#voltar-topo-pagina').fadeOut("fast"); 
     } 
   },500);
+  var obj= document.getElementById("content"); 
   $(window).scroll(function() {
-    console.log(document.style.height);
+    console.log(obj.style.height);
     console.log($('#voltar-topo-pagina').offset().top);
     if($('#voltar-topo-pagina').offset().top > window.pageYOffset - 200){
       //$('#voltar-topo-pagina').css({'position':'absolute','bottom':parseInt($('#content').height())})
