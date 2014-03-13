@@ -5,13 +5,16 @@ $(document).ready(function() {
    //$('#header-tablet .logo-mobile').addClass('animated').addClass('tada'); 
   //},7000);
   setInterval(function(){
+
     if(window.innerWidth < 980 && window.pageYOffset > 80){
       $('#voltar-topo-pagina').fadeIn("slow").addClass('animated').addClass('tada');
     }else{
-      $('#voltar-topo-pagina').fadeOut("fast");
+      $('#voltar-topo-pagina').fadeOut("fast"); 
     }
   },500);
-  
+  $(window).scroll(function() {
+    console.log($('#voltar-topo-pagina').offset().top)
+  });
   var hMobile = "#header-mobile";
   var hTablet = "#header-tablet";
   $("#header-mobile, #header-tablet").headroom({
