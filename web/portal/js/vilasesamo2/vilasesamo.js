@@ -18,9 +18,9 @@ $(document).ready(function() {
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
     //console.log(height);
     //console.log($("#mobile").height());
-    if(window.inneWidth<=500){
+    if(window.innerWidth<=500){
       console.log("mobile")
-    }else if(window.inneWidth>=501 || window.inneWidth<=979){
+    }else if(window.innerWidth>=501 || window.inneWidth<=979){
       console.log("tablet")
     }else{
       console.log("desktop")
