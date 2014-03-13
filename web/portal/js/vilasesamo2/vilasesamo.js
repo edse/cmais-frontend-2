@@ -19,8 +19,8 @@ $(document).ready(function() {
   
   setInterval(function() {
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-    stopButton = height - $("#mobile").height();
-    stopButtonTablet = height - $("#no-mobile").height(); 
+    stopButton = (height - $("#mobile").height())- $('#voltar-topo-pagina').height() - 10;
+    stopButtonTablet = (height - $("#no-mobile").height()) - $('#voltar-topo-pagina').height() - 10; 
     if(window.innerWidth<=500){
       if($('#voltar-topo-pagina').offset().top > stopButton){
         $('#voltar-topo-pagina').css({'position':'absolute','bottom':stopButton});
@@ -29,7 +29,8 @@ $(document).ready(function() {
       }
     }
     
-  },500);
+  },50);
+  
   var hMobile = "#header-mobile";
   var hTablet = "#header-tablet";
   $("#header-mobile, #header-tablet").headroom({
