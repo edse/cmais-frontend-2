@@ -6,14 +6,16 @@ $(document).ready(function() {
   //},7000);
   var obj; 
   setInterval(function(){
-    obj = $('#voltar-topo-pagina').offset()
+    obj = $('#voltar-topo-pagina').offset();
     if(window.innerWidth < 980 && window.pageYOffset > 80){
       $('#voltar-topo-pagina').fadeIn("slow").addClass('animated').addClass('tada');
     }else{
       $('#voltar-topo-pagina').fadeOut("fast");
     }
     if(obj.top > $(".todos-itens").height()){
-      $('#voltar-topo-pagina').css({"position":"absolute","bottom":"0"})
+      $('#voltar-topo-pagina').css({"position":"absolute","bottom":"-2%"});
+    }else{
+      $('#voltar-topo-pagina').css({"position":"fixed","bottom":"0"});
     }
     
     console.log(obj.top);
