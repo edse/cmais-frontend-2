@@ -4,7 +4,7 @@ $(document).ready(function() {
   //setInterval(function(){
    //$('#header-tablet .logo-mobile').addClass('animated').addClass('tada'); 
   //},7000);
-  var obj = window.pageYOffset;
+  var obj = document.getDocumentById("content");
   setInterval(function(){
 
     if(window.innerWidth < 980 && window.pageYOffset > 80){
@@ -18,7 +18,7 @@ $(document).ready(function() {
       $('#voltar-topo-pagina').css({"position":"fixed","bottom":"0"});
     }
     
-    console.log(document);
+    console.log(.pageYOffset);
     console.log("2:"+$(".todos-itens").height());
   },500);
   
