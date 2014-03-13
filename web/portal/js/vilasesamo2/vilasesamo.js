@@ -16,8 +16,15 @@ $(document).ready(function() {
   var height;
   $(window).scroll(function() {
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-    console.log(height);
-    console.log($("#mobile").height());
+    //console.log(height);
+    //console.log($("#mobile").height());
+    if(window.inneWidth<=500){
+      console.log("mobile")
+    }else if(window.inneWidth>=501 || window.inneWidth<=979){
+      console.log("tablet")
+    }else{
+      console.log("desktop")
+    }
     if($('#voltar-topo-pagina').offset().top > window.pageYOffset - 200){
       //$('#voltar-topo-pagina').css({'position':'absolute','bottom':parseInt($('#content').height())})
     }else{
