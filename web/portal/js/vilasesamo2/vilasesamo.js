@@ -15,7 +15,7 @@ $(document).ready(function() {
   $(window).scroll(function() {
     console.log(window.pageYOffset);
     console.log($("#content").height());
-    if($('#voltar-topo-pagina').offset().top > $('#content').height()){
+    if($('#voltar-topo-pagina').offset().top > window.pageYOffset - 200){
       $('#voltar-topo-pagina').css({'position':'absolute','bottom':parseInt($('#content').height())})
     }else{
       $('#voltar-topo-pagina').css({'position':'fixed','bottom':parseInt($('#content').height())})
