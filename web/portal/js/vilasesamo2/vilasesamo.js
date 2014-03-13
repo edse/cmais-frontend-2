@@ -20,7 +20,7 @@ $(document).ready(function() {
     //console.log($("#mobile").height());
     if(window.innerWidth<=500){
       console.log("mobile")
-    }else if(window.innerWidth>=501 || window.inneWidth<=979){
+    }else if(window.innerWidth>=501 || window.innerWidth<=979){
       console.log("tablet")
     }else{
       console.log("desktop")
