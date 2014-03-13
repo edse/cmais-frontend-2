@@ -28,13 +28,7 @@ $(document).ready(function() {
         $('#voltar-topo-pagina').css({'position':'fixed','bottom':'0'});  
       }
     }
-    if(window.innerWidth>500){
-      if($('#voltar-topo-pagina').offset().top > stopButtonTablet){
-        console.log("cheguei");
-      }else{
-        console.log("parti");  
-      }
-    }
+    
   },500);
   var hMobile = "#header-mobile";
   var hTablet = "#header-tablet";
