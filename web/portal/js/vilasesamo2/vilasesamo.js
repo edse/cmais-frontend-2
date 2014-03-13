@@ -36,10 +36,7 @@ $(document).ready(function() {
         console.log("parti");  
       }
     }
-    }else{
-      console.log("tablet")
-    }
-    
+        
   });
   var hMobile = "#header-mobile";
   var hTablet = "#header-tablet";
