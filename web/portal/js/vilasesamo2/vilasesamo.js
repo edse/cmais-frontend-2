@@ -18,9 +18,9 @@ $(document).ready(function() {
     
     if(window.innerWidth<=500){
       if($('#voltar-topo-pagina').offset().top > stopButton){
-        $('#voltar-topo-pagina').css({'position':'absolute !important','bottom':stopButton+" !important"});
+        $('#voltar-topo-pagina').css({'position':'absolute!important','bottom':stopButton+"!important"});
       }else{
-        $('#voltar-topo-pagina').css({'position':'fixed !important','bottom':'0 !important'});  
+        $('#voltar-topo-pagina').css({'position':'fixed!important','bottom':'0!important'});  
       }
     }
     
