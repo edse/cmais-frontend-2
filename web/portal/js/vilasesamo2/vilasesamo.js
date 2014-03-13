@@ -16,10 +16,11 @@ $(document).ready(function() {
   var height;
   var stopButton = height;
   var stopButtonTablet = height;
-  console.log(stopButton);
-  console.log(stopButtonTablet);
+  
   $(window).scroll(function() {
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+    stopButton = height;
+    stopButtonTablet = height;
     //console.log(height);
     //console.log($("#mobile").height());
     if(window.innerWidth<=500){
@@ -38,7 +39,8 @@ $(document).ready(function() {
         console.log("parti");  
       }
     }
-        
+      console.log(stopButton);
+  console.log(stopButtonTablet);  
   });
   var hMobile = "#header-mobile";
   var hTablet = "#header-tablet";
