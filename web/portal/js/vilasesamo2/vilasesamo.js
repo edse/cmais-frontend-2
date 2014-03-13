@@ -12,6 +12,8 @@ $(document).ready(function() {
   
   setInterval(function() {
     
+     $('.box-lateral').css({'position':'fixed','float':'left', 'bottom':'0'});
+     
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
     stopButton = (height - $("#mobile").height())- $('#voltar-topo-pagina').height() - 40;
     stopButtonTablet = (height - $("#no-mobile").height()) - $('#voltar-topo-pagina').height() - 40; 
