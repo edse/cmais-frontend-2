@@ -10,7 +10,7 @@ $(document).ready(function() {
     if(window.innerWidth < 980 && window.pageYOffset > 80){
       $('#voltar-topo-pagina').fadeIn("slow").addClass('animated').addClass('tada');
     }else{
-      $('#voltar-topo-pagina').fadeOut("fast");
+      $('#voltar-topo-pagina').fadeOut("fast"); 
     }
     if( obj.top > $(".todos-itens").height()){
       $('#voltar-topo-pagina').css({"position":"absolute","bottom":"-10px"});
