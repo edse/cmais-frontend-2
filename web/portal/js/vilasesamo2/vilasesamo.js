@@ -9,14 +9,12 @@ $(document).ready(function() {
   var height;
   var stopButton;
   var stopButtonTablet;
-  $('#voltar-topo-pagina').css({'position':'fixed', 'bottom':'0'});
+  
   setInterval(function() {
-    
-     $('#voltar-topo-pagina').css({'position':'fixed', 'bottom':'0'});
-     
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
     stopButton = (height - $("#mobile").height())- $('#voltar-topo-pagina').height() - 40;
     stopButtonTablet = (height - $("#no-mobile").height()) - $('#voltar-topo-pagina').height() - 40; 
+    $('#voltar-topo-pagina').css({'position':'absolute','bottom':stopButton});
     if(window.innerWidth<=500){
       if($('#voltar-topo-pagina').offset().top > stopButton){
         $('#voltar-topo-pagina').css({'position':'absolute','bottom':stopButton});
