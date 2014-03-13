@@ -11,17 +11,16 @@ $(document).ready(function() {
   var stopButtonTablet;
   var heightFooterMobile = parseInt($("#mobile").height());
   var heightFooterTablet = parseInt($("#no-mobile").height());
-  
   setInterval(function() {
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
     stopButton = (height - heightFooterMobile)- $('#voltar-topo-pagina').height() - 40;
     stopButtonTablet = (height - heightFooterMobile) - $('#voltar-topo-pagina').height() - 40; 
-    $('#voltar-topo-pagina').css({'position':'fixed','bottom':'0','top':'0'}); 
+    $('#voltar-topo-pagina').css({'position':'fixed','bottom':'0'}); 
     if(window.innerWidth<=500){
       if($('#voltar-topo-pagina').offset().top > stopButton){
-        $('#voltar-topo-pagina').css({'position':'absolute','bottom':'0','top':stopButton});
+        $('#voltar-topo-pagina').css({'position':'absolute','bottom':stopButton});
       }else{
-        $('#voltar-topo-pagina').css({'position':'fixed','bottom':'0','top':'0'});  
+        $('#voltar-topo-pagina').css({'position':'fixed','bottom':'0'});  
       }
     }
     
