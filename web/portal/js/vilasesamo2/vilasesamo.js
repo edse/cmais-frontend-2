@@ -13,8 +13,9 @@ $(document).ready(function() {
     } 
   },500);
   var body = document.body, html = document.documentElement;
-  var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+  var height;
   $(window).scroll(function() {
+    height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
     console.log(height);
     if($('#voltar-topo-pagina').offset().top > window.pageYOffset - 200){
       //$('#voltar-topo-pagina').css({'position':'absolute','bottom':parseInt($('#content').height())})
