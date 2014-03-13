@@ -12,8 +12,8 @@ $(document).ready(function() {
     }else{
       $('#voltar-topo-pagina').fadeOut("fast");
     }
-    if(obj.top > $(".todos-itens").height()){
-      $('#voltar-topo-pagina').css({"position":"absolute","bottom":"-2%"});
+    if( > $(".todos-itens").height()){
+      $('#voltar-topo-pagina').css({"position":"absolute","bottom":"-10px"});
     }else{
       $('#voltar-topo-pagina').css({"position":"fixed","bottom":"0"});
     }
