@@ -13,7 +13,7 @@ $(document).ready(function() {
     } 
   },500);
   $(window).scroll(function() {
-    if($('#voltar-topo-pagina').offset().top > $('.todos-itens').height()){
+    if($('#voltar-topo-pagina').offset().top > $('#content').height()){
       $('#voltar-topo-pagina').css({'position':'absolute','bottom':parseInt($('#content').height())})
     }else{
       $('#voltar-topo-pagina').css({'position':'fixed','bottom':parseInt($('#content').height())})
