@@ -17,7 +17,8 @@ $(document).ready(function() {
     stopButtonTablet = (height - heightFooterMobile) - $('#voltar-topo-pagina').height() - 40; 
     $('#voltar-topo-pagina').css({'position':'fixed','bottom':'0'}); 
     if(window.innerWidth<=500){
-      if($('#voltar-topo-pagina').offset().top > stopButton){
+      //if($('#voltar-topo-pagina').offset().top > stopButton){
+      if(window.innerWidth < 980 && window.pageYOffset > 80){
         $('#voltar-topo-pagina').css({'position':'absolute','bottom':stopButton});
       }else{
         $('#voltar-topo-pagina').css({'position':'fixed','bottom':'0'});  
@@ -29,6 +30,7 @@ $(document).ready(function() {
     }else{
       $('#voltar-topo-pagina').fadeOut("fast"); 
     } 
+    
     
   });
   
