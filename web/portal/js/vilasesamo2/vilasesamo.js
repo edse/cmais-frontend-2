@@ -14,8 +14,8 @@ $(document).ready(function() {
   },500);
   var body = document.body, html = document.documentElement;
   var height;
-  var stopButton = height - $("#mobile").height();
-  var stopButtonTablet = height - $("#no-mobile").height();
+  var stopButton = height - parseInt($("#mobile").height());
+  var stopButtonTablet = height - parseInt($("#no-mobile").height());
   console.log(stopButton);
   console.log(stopButtonTablet);
   $(window).scroll(function() {
