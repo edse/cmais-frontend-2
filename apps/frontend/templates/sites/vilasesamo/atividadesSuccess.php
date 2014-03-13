@@ -139,7 +139,10 @@
      */
      ?>
   </ul> 
-  <!--lista-->  
+  <!--lista--> 
+  <!--paginacao-->
+<?php include_partial_from_folder('sites/vilasesamo', 'global/pagination', array('site' => $site, 'section' => $section,'pager'=>$pager , 'pager2'=>$pager2, 'parent' => $parent)) ?>
+<!--/paginacao--> 
 </section>
 <!--/section-->
   <?php endif; ?>
@@ -151,9 +154,7 @@
 
 
 
-<!--paginacao-->
-<?php include_partial_from_folder('sites/vilasesamo', 'global/pagination', array('site' => $site, 'section' => $section,'pager'=>$pager , 'pager2'=>$pager2, 'parent' => $parent)) ?>
-<!--/paginacao-->
+
 
 <!--scripts-->
 
