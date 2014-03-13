@@ -10,10 +10,26 @@ $(document).ready(function() {
       $('#voltar-topo-pagina').fadeIn("slow").addClass('animated').addClass('tada');
     }else{
       $('#voltar-topo-pagina').fadeOut("fast"); 
-    }
+    } 
   },500);
+  var body = document.body, html = document.documentElement;
+  var height;
   $(window).scroll(function() {
-    console.log($('#voltar-topo-pagina').offset().top)
+    height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+    //console.log(height);
+    //console.log($("#mobile").height());
+    if(window.innerWidth<=500){
+      console.log("mobile")
+    }else if(window.innerWidth>=501 || window.innerWidth<=979){
+      console.log("tablet")
+    }else{
+      console.log("desktop")
+    }
+    if($('#voltar-topo-pagina').offset().top > window.pageYOffset - 200){
+      //$('#voltar-topo-pagina').css({'position':'absolute','bottom':parseInt($('#content').height())})
+    }else{
+      //$('#voltar-topo-pagina').css({'position':'fixed','bottom':parseInt($('#content').height())})
+    }
   });
   var hMobile = "#header-mobile";
   var hTablet = "#header-tablet";
