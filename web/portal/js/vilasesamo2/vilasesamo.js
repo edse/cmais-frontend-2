@@ -10,6 +10,9 @@ $(document).ready(function() {
     }else{
       $('#voltar-topo-pagina').fadeOut("fast");
     }
+    if($('#voltar-topo-pagina').pageYOffset > $(".todos-itens").height()){
+      $('#voltar-topo-pagina').css({"position":"absolute","bottom":"0"})
+    }
   },500);
   
   var hMobile = "#header-mobile";
