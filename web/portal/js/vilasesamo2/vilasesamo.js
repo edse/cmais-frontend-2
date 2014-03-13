@@ -10,10 +10,14 @@ $(document).ready(function() {
       $('#voltar-topo-pagina').fadeIn("slow").addClass('animated').addClass('tada');
     }else{
       $('#voltar-topo-pagina').fadeOut("fast"); 
-    }
+    } 
   },500);
   $(window).scroll(function() {
-    console.log($('#voltar-topo-pagina').offset().top)
+    if($('#content').offset().top > $('.todos-itens').height()){
+      $('#voltar-topo-pagina').css({'position':'absolute','bottom':parseInt($('#content').height())})
+    }else{
+      $('#voltar-topo-pagina').css({'position':'fixed','bottom':parseInt($('#content').height())})
+    }
   });
   var hMobile = "#header-mobile";
   var hTablet = "#header-tablet";
