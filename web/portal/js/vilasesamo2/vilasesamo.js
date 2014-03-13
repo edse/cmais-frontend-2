@@ -7,7 +7,7 @@ $(document).ready(function() {
   setInterval(function(){
 
     if(window.innerWidth < 980 && window.pageYOffset > 80){
-      $('#voltar-topo-pagina').fadeIn("slow").addClass('animated').addClass('tada');
+      $('#voltar-topo-pagina').fadeIn("slow");
     }else{
       $('#voltar-topo-pagina').fadeOut("fast"); 
     } 
