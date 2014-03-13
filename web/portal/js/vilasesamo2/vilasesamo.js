@@ -4,17 +4,19 @@ $(document).ready(function() {
   //setInterval(function(){
    //$('#header-tablet .logo-mobile').addClass('animated').addClass('tada'); 
   //},7000);
+  var obj; 
   setInterval(function(){
+    obj = $('#voltar-topo-pagina').offset()
     if(window.innerWidth < 980 && window.pageYOffset > 80){
       $('#voltar-topo-pagina').fadeIn("slow").addClass('animated').addClass('tada');
     }else{
       $('#voltar-topo-pagina').fadeOut("fast");
     }
-    if($('#voltar-topo-pagina').pageYOffset > $(".todos-itens").height()){
+    if($(obj.top > $(".todos-itens").height()){
       $('#voltar-topo-pagina').css({"position":"absolute","bottom":"0"})
     }
-    var obj = $('#voltar-topo-pagina').offset()
-    console.log(obj);
+    
+    console.log(obj.top);
     console.log("2:"+$(".todos-itens").height());
   },500);
   
