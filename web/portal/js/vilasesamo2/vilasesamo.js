@@ -9,8 +9,8 @@ $(document).ready(function() {
   var height;
   var stopButton;
   var stopButtonTablet;
-  var heightFooterMobile = parseInt($("#mobile").height();
-  var heightFooterTablet = parseInt($("#no-mobile").height();
+  var heightFooterMobile = parseInt($("#mobile").height());
+  var heightFooterTablet = parseInt($("#no-mobile").height());
   setInterval(function() {
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
     stopButton = (height - heightFooterMobile))- $('#voltar-topo-pagina').height() - 40;
