@@ -9,9 +9,9 @@ $(document).ready(function() {
   var height;
   var stopButton;
   var stopButtonTablet;
-  var heightPage = window.innerHeight;
+  var heightPage = window.innerHeight - $('#voltar-topo-pagina').height() - 40;
   var heightFooterMobile = parseInt($("#mobile").height());
-  var heightFooterTablet = parseInt($("#no-mobile").height() -  $('#voltar-topo-pagina').height() - 40);
+  var heightFooterTablet = parseInt($("#no-mobile").height());
   
   setInterval(function() {
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
