@@ -9,7 +9,7 @@ $(document).ready(function() {
   var height;
   var stopButton;
   var stopButtonTablet;
-  
+  $('#voltar-topo-pagina').css({'position':'fixed', 'bottom':'0'});
   setInterval(function() {
     
      $('#voltar-topo-pagina').css({'position':'fixed', 'bottom':'0'});
