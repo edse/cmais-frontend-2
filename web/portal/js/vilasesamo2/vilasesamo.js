@@ -13,7 +13,8 @@ $(document).ready(function() {
     if($('#voltar-topo-pagina').pageYOffset > $(".todos-itens").height()){
       $('#voltar-topo-pagina').css({"position":"absolute","bottom":"0"})
     }
-    console.log("1:"+$('#voltar-topo-pagina').offset());
+    var obj = $('#voltar-topo-pagina').offset()
+    console.log(obj);
     console.log("2:"+$(".todos-itens").height());
   },500);
   
