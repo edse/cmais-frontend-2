@@ -4,7 +4,7 @@ $(document).ready(function() {
   //setInterval(function(){
    //$('#header-tablet .logo-mobile').addClass('animated').addClass('tada'); 
   //},7000);
-  setInterval(function(){
+  $(window).on("resize",function(){
 
     if(window.innerWidth < 980 && window.pageYOffset > 80){
       $('#voltar-topo-pagina').show();
@@ -12,6 +12,7 @@ $(document).ready(function() {
       $('#voltar-topo-pagina').hide(); 
     } 
   },500);
+  
   var body = document.body, html = document.documentElement;
   var height;
   var stopButton;
