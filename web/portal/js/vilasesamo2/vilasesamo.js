@@ -4,33 +4,37 @@ $(document).ready(function() {
   //setInterval(function(){
    //$('#header-tablet .logo-mobile').addClass('animated').addClass('tada'); 
   //},7000);
-  setInterval(function(){
-
+  
+  var body = document.body, html = document.documentElement;
+  var height;
+  var stopButton;
+  var stopButtonTablet;
+  var heightPage = window.innerHeight - $('#voltar-topo-pagina').height() - 40;
+  var heightFooterMobile = parseInt($("#mobile").height());
+  var heightFooterTablet = parseInt($("#no-mobile").height());
+  
+  setInterval(function() {
+    height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+    stopButton = (height - heightFooterMobile)- $('#voltar-topo-pagina').height() - 40;
+    stopButtonTablet = (height - heightFooterMobile) - $('#voltar-topo-pagina').height() - 40;
+     
+    $('#voltar-topo-pagina').css({'position':'fixed','top':heightPage}); 
+    if(window.innerWidth<=500){
+      if($('#voltar-topo-pagina').offset().top > stopButton){
+        $('#voltar-topo-pagina').css({'position':'absolute','top':stopButton});
+      }else{
+        $('#voltar-topo-pagina').css({'position':'fixed','top':heightPage});  
+      }
+    }
+    
     if(window.innerWidth < 980 && window.pageYOffset > 80){
       $('#voltar-topo-pagina').fadeIn("slow").addClass('animated').addClass('tada');
     }else{
       $('#voltar-topo-pagina').fadeOut("fast"); 
     } 
-  },500);
-  var body = document.body, html = document.documentElement;
-  var height;
-  $(window).scroll(function() {
-    height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-    //console.log(height);
-    //console.log($("#mobile").height());
-    if(window.innerWidth<=500){
-      console.log("mobile")
-    }else if(window.innerWidth>=501 || window.innerWidth<=979){
-      console.log("tablet")
-    }else{
-      console.log("desktop")
-    }
-    if($('#voltar-topo-pagina').offset().top > window.pageYOffset - 200){
-      //$('#voltar-topo-pagina').css({'position':'absolute','bottom':parseInt($('#content').height())})
-    }else{
-      //$('#voltar-topo-pagina').css({'position':'fixed','bottom':parseInt($('#content').height())})
-    }
-  });
+    
+  },1);
+  
   var hMobile = "#header-mobile";
   var hTablet = "#header-tablet";
   $("#header-mobile, #header-tablet").headroom({
