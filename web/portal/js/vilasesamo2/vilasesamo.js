@@ -4,7 +4,7 @@ $(document).ready(function() {
   //setInterval(function(){
    //$('#header-tablet .logo-mobile').addClass('animated').addClass('tada'); 
   //},7000);
-  var obj = document.getElementById("content");
+  var obj = $('footer#mobile').offset();
   setInterval(function(){
 
     if(window.innerWidth < 980 && window.pageYOffset > 80){
@@ -18,8 +18,8 @@ $(document).ready(function() {
       $('#voltar-topo-pagina').css({"position":"fixed","bottom":"0"});
     }
     
-    console.log("1:"+obj.offsetTop);
-    console.log("2:"+$(".todos-itens").height());
+    console.log("1:"+obj.top);
+    //console.log("2:"+$(".todos-itens").height());
   },500);
   
   var hMobile = "#header-mobile";
