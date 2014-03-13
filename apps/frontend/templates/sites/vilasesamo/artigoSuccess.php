@@ -156,7 +156,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                         foreach($webs as $k=>$w):
                         ?>
                           <a href="<?php echo $Web ?>" target="_blank" title="<?php echo $Web ?>">Site <?php echo $c->getTitle() ?></a>
-                          <?php if( $k > 0 || $Facebook != "" || $Twitter != "" || $YouTube != ""  ){ echo ", "; }else{ echo "."; } ?>
+                          <?php if( $k > 0 || $Facebook != "" || $Twitter != "" || $YouTube != ""  ){ echo ", "; }else{ echo " "; } ?>
                         <?php endforeach;?>
                       <?php endif; ?>
                       
