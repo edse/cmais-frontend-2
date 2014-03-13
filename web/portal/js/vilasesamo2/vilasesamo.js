@@ -13,6 +13,8 @@ $(document).ready(function() {
     if($('#voltar-topo-pagina').pageYOffset > $(".todos-itens").height()){
       $('#voltar-topo-pagina').css({"position":"absolute","bottom":"0"})
     }
+    console.log($('#voltar-topo-pagina').pageYOffset);
+    console.log($(".todos-itens").height());
   },500);
   
   var hMobile = "#header-mobile";
