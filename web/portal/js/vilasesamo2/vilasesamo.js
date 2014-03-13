@@ -16,6 +16,8 @@ $(document).ready(function() {
   var height;
   var stopButton = height - $("#mobile").height();
   var stopButtonTablet = height - $("#no-mobile").height();
+  console.log(stopButton);
+  console.log(stopButtonTablet);
   $(window).scroll(function() {
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
     //console.log(height);
