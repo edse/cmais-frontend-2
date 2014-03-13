@@ -20,21 +20,15 @@ $(document).ready(function() {
   $(window).scroll(function() {
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
     stopButton = height - $("#mobile").height();
-    stopButtonTablet = height - $("#no-mobile").height();
-    //console.log(height);
-    //console.log($("#mobile").height());
+    stopButtonTablet = height - $("#no-mobile").height(); 
     if(window.innerWidth<=500){
       if($('#voltar-topo-pagina').offset().top > stopButton){
         $('#voltar-topo-pagina').css({'position':'absolute','bottom':stopButton});
-        //console.log("cheguei");
       }else{
-        //console.log("parti");
         $('#voltar-topo-pagina').css({'position':'fixed','bottom':'0'});  
       }
     }else{
-      //$('#voltar-topo-pagina').css({'position':'fixed','bottom':parseInt($('#content').height())})
       if($('#voltar-topo-pagina').offset().top > stopButtonTablet){
-        //$('#voltar-topo-pagina').css({'position':'absolute','bottom':parseInt($('#content').height())})
         console.log("cheguei");
       }else{
         console.log("parti");  
