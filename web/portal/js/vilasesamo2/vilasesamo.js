@@ -4,9 +4,9 @@ $(document).ready(function() {
   //setInterval(function(){
    //$('#header-tablet .logo-mobile').addClass('animated').addClass('tada'); 
   //},7000);
-  var obj; 
+  var obj = $(window).offset();; 
   setInterval(function(){
-    obj = window.offset();
+
     if(window.innerWidth < 980 && window.pageYOffset > 80){
       $('#voltar-topo-pagina').fadeIn("slow").addClass('animated').addClass('tada');
     }else{
