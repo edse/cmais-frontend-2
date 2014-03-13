@@ -248,7 +248,7 @@ a{text-decoration:underline!important;}
 
 .interna.jogos #page_nav{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;margin-bottom: -20%;}
 .interna.videos #page_nav{font-size: 1em!important;background-image:none!important;display: block;margin-bottom: -20px;}
-.interna.atividades #page_nav{font-size: 1em!important;background-image:none!important;background-color:#571ed9 ;display: block;/*margin-bottom: -20%;*/}
+.interna.atividades #page_nav{font-size: 1em!important;background-image:none!important;background-color:#571ed9 ;display: block;margin-bottom: -20%;}
 
 .interna.jogos .conteudo-asset,
 .interna.atividades .conteudo-asset,
@@ -303,7 +303,7 @@ a{text-decoration:underline!important;}
 
 .relacionados h2 {font-size: 1.1em}
 
-#page_nav{/* margin-top: 25%!important;margin-bottom: 10%; */}
+#page_nav{margin-top: 25%!important;/* margin-bottom: 10%; */}
 
 /*box pais*/
 
