@@ -12,10 +12,10 @@ $(document).ready(function() {
       $('#voltar-topo-pagina').fadeOut("fast"); 
     } 
   },500);
-  var obj= document.getElementById("content"); 
+  var body = document.body, html = document.documentElement;
+  var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
   $(window).scroll(function() {
-    console.log(obj.style.height);
-    console.log($('#voltar-topo-pagina').offset().top);
+    console.log(height);
     if($('#voltar-topo-pagina').offset().top > window.pageYOffset - 200){
       //$('#voltar-topo-pagina').css({'position':'absolute','bottom':parseInt($('#content').height())})
     }else{
