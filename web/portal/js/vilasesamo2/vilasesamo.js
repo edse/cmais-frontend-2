@@ -7,9 +7,9 @@ $(document).ready(function() {
   setInterval(function(){
 
     if(window.innerWidth < 980 && window.pageYOffset > 80){
-      $('#voltar-topo-pagina').fadeIn("slow");
+      $('#voltar-topo-pagina').show();
     }else{
-      $('#voltar-topo-pagina').fadeOut("fast"); 
+      $('#voltar-topo-pagina').hide(); 
     } 
   },500);
   var body = document.body, html = document.documentElement;
