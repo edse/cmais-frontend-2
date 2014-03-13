@@ -11,7 +11,7 @@ $(document).ready(function() {
     }else{
       $('#voltar-topo-pagina').hide(); 
     } 
-  },500);
+  });
   
   var body = document.body, html = document.documentElement;
   var height;
