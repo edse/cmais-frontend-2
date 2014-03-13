@@ -11,6 +11,7 @@ $(document).ready(function() {
   var stopButtonTablet;
   var heightFooterMobile = parseInt($("#mobile").height());
   var heightFooterTablet = parseInt($("#no-mobile").height());
+  $('#voltar-topo-pagina').css({'position':'fixed','bottom':'0'}); 
   setInterval(function() {
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
     stopButton = (height - heightFooterMobile)- $('#voltar-topo-pagina').height() - 40;
@@ -20,7 +21,7 @@ $(document).ready(function() {
       if($('#voltar-topo-pagina').offset().top > stopButton){
         $('#voltar-topo-pagina').css({'position':'absolute','bottom':stopButton});
       }else{
-        $('#voltar-topo-pagina').css({});  
+        $('#voltar-topo-pagina').css({'position':'fixed','bottom':'0'});  
       }
     }
     
