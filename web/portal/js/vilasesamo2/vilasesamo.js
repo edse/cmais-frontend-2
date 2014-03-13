@@ -6,7 +6,7 @@ $(document).ready(function() {
   //},7000);
   var obj; 
   setInterval(function(){
-    obj = $(document).offset();
+    obj = $(window).offset();
     if(window.innerWidth < 980 && window.pageYOffset > 80){
       $('#voltar-topo-pagina').fadeIn("slow").addClass('animated').addClass('tada');
     }else{
