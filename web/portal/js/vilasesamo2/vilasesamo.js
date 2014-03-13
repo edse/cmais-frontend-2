@@ -18,7 +18,7 @@ $(document).ready(function() {
       $('#voltar-topo-pagina').css({"position":"fixed","bottom":"0"});
     }
     
-    console.log("");
+    console.log(obj);
     console.log("2:"+$(".todos-itens").height());
   },500);
   
