@@ -27,7 +27,8 @@ $(document).ready(function() {
       }else{
         $('#voltar-topo-pagina').css({'position':'fixed','bottom':'0'});  
       }
-    }else if(window.innerWidth>500){
+    }
+    if(window.innerWidth>500){
       if($('#voltar-topo-pagina').offset().top > stopButtonTablet){
         console.log("cheguei");
       }else{
