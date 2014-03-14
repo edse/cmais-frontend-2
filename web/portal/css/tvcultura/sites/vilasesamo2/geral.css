@@ -240,6 +240,8 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-form-mensagem-erro{ background-position: 0 -948px; width: 40px; height: 40px; } 
 .icone-form-nome{ background-position: 4px -1038px; width: 30px; height: 34px; } 
 .icone-form-nome-erro{ background-position: 4px -1122px; width: 30px; height: 34px; } 
+.icone-form-nome-resp{ background-position: 4px -1038px; width: 30px; height: 34px; } 
+.icone-form-nome-resp-erro{ background-position: 4px -1122px; width: 30px; height: 34px; } 
 
 /* /icones */
 
