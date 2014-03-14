@@ -566,7 +566,7 @@ body.na-tv{background-color:#feec3c;position:relative;}
 
 #content.span8{padding:0!important}
 #voltar-topo-pagina span{padding: 5px 0; }
-#voltar-topo-pagina{height:36px!important;color:#FFF; z-index:1000;background-color: #feec3c;width: 90%;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;border-radius: 5px;margin-bottom: 1%;text-align: center;text-transform: uppercase;-moz-border-radius: 5px; -webkit-border-radius: 5px;display:none;left:50%; margin-left:-45%;}
+#voltar-topo-pagina{height:32px!important;color:#FFF; z-index:1000;background-color: #feec3c;width: 90%;border-top: 7px solid #fffb49;border-bottom: 7px solid #fffb49;border-radius: 5px;margin-bottom: 1%;text-align: center;text-transform: uppercase;-moz-border-radius: 5px; -webkit-border-radius: 5px;display:none;left:50%; margin-left:-45%;}
 #voltar-topo-pagina.atividades {background-color: #8935ef;border-top: 7px solid #b16af2;border-bottom: 7px solid #b16af2;}
 #voltar-topo-pagina.jogos {background-color: #32a8ee;border-top: 7px solid #02cbff;border-bottom: 7px solid #02cbff;}
 #voltar-topo-pagina.videos {background-color: #f78701;border-top: 7px solid #fba500;border-bottom: 7px solid #fba500;}
