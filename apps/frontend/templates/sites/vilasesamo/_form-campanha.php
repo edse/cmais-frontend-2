@@ -72,7 +72,7 @@
         <!--Nome Responsável-->
         <div class="control-group span8">
           <label class="control-label icones-form icone-form-nome-resp" for="nome-resp"></label>
-          <input type="text" id="nome-resp" value="Nome do Responsável" name="nome-resp" data-default="Nome do responsável"  placeholder="Nome do responsável">
+          <input type="text" id="resp" value="Nome do Responsável" name="resp" data-default="Nome do responsável"  placeholder="Nome do responsável">
         </div>
         <!--/Nome Responsável-->
         
@@ -239,8 +239,8 @@
             required: function(){ validate("#nome"); return true},
             minlength: 2
           },
-          nomeResp:{
-            required: function(){ validate("#nome-resp"); return true},
+          resp:{
+            required: function(){ validate("#resp"); return true},
             minlength: 2
           },
           idade:{
@@ -273,7 +273,7 @@
         },
         messages:{
           nome:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-          nomeResp:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+          resp:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
           idade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
           email:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
           cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
