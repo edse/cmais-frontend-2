@@ -40,6 +40,12 @@
 <script src="http://cmais.com.br/portal/js/vilasesamo2/internas-isotope.js"></script>
 <?php echo $noscript ?>
 <script>
+	//Verify Devices
+ 	var gFlash = true;
+ 	var uAgent = navigator.userAgent;
+  if(uAgent.indexOf("iPhone") != -1 || uAgent.indexOf("iPod") != -1 || uAgent.indexOf("Android") != -1 && uAgent.indexOf("Mobile") != -1 || uAgent.indexOf("Windows Phone") != -1 && uAgent.indexOf("IEMobile") != -1)  {
+  	gFlash = false;
+  }
 
   var firstCount = 0;
   contentPage = 1;
@@ -123,7 +129,7 @@
     $.ajax({
       url: "http://app.cmais.com.br/ajax/vilasesamogetcontents",
       dataType: "jsonp",
-      data: "page="+contentPage+"&items=9&site=<?php echo $site->getSlug(); ?>&siteId=<?php echo (int)$site->id ?>&sectionId=<?php echo $section->getId(); ?>&section=<?php echo $section->getSlug(); ?>&sectionP=<?php echo $section->getParentSectionId(); ?>&no-repeat="+no_repeat,
+      data: "page="+contentPage+"&items=9&gflash="+gFlash+"&site=<?php echo $site->getSlug(); ?>&siteId=<?php echo (int)$site->id ?>&sectionId=<?php echo $section->getId(); ?>&section=<?php echo $section->getSlug(); ?>&sectionP=<?php echo $section->getParentSectionId(); ?>&no-repeat="+no_repeat,
       beforeSend: function(){
           $('#ajax-loader').show();
         },
