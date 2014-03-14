@@ -290,9 +290,9 @@ footer .copyright {height: 30px;margin-left: 2%;}
 }
 
 #content section.form {padding:0!important }
-.interna #content .form .span8{width:100%;}
-.interna #content .form .span12{padding:2%!important}
-.interna #content .span8 form{padding:2%!important}
+#content .form .span8{width:100%;}
+#content .form .span12{padding:2%!important}
+#content .span8 form{padding:2%!important}
 
 #sfWebDebugBar{display:none!important}
 
