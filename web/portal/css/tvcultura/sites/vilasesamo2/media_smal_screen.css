@@ -430,12 +430,12 @@ a{text-decoration:underline!important;}
 
 
 #content .form .span12{margin-bottom:20px;padding: 4%;}
-#content .form .span8 {margin: 0;padding: 2% 2% 10%;width: 100%!important;}
+#content .form .span8 {margin: 0;padding: 2%;width: 100%!important;}
 #form-campanha .span4 iframe {width: 270px;}
 .form-horizontal .span8.control-group input {width: 79%!important;}
 #content section.form { padding:0!important }
 .form-horizontal .span2.estado {width: 100%;}
-.form .dk_container {margin-left: 78%;}
+.form .dk_container {margin-left: 78%!important;}
 #content.form .dk_container a {width: 99%!important;}
 #content section.form h2 {font-size: 1.2em!important;}
 .form-horizontal .idade.span2{width:90%!important;margin-left: 2%!important;}
@@ -448,7 +448,7 @@ a{text-decoration:underline!important;}
 #content section.form .span4 {width: 100%; margin: 0 auto!important;padding: 2%;/* overflow: hidden; */}
 #content section.form .span4 iframe {margin: 0 auto;display: block;}
 .form label.error{position: absolute;bottom: 253px!important;left: 6px!important;font-size: 1em!important;height: 50px!important;}
-form {margin: 0 0 54px;}
+form {margin: 0 0 54px!important;}
 .logotv-mobile{width: 17%; margin: 0 auto;padding: 2%;}
 
 
