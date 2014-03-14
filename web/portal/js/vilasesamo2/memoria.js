@@ -93,6 +93,7 @@ $(function(){
     uiPlay.html('<span>Jogar</span>');
     ui.addClass('open');
     $('#gamePlay span').hide();
+    init();
   });
   
   loader.start();
@@ -129,7 +130,7 @@ $(function(){
         uiPlay.html('<span>Jogar</span>');
         ui.addClass('open');
         $('#gamePlay span').hide();
-        init();
+        //init();
       }
   }
   //init();
