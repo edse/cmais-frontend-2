@@ -20,9 +20,16 @@ $(document).ready(function() {
      
     $('#voltar-topo-pagina').css({'position':'fixed','top':moveButton}); 
 
+    
     if(window.innerWidth<=500){
       if($('#voltar-topo-pagina').offset().top > stopButton){
         $('#voltar-topo-pagina').css({'position':'absolute','top':stopButton, "height": '36px'});
+      }else{
+        $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
+      }
+    }else{
+      if($('#voltar-topo-pagina').offset().top > stopButtonTablet){
+        $('#voltar-topo-pagina').css({'position':'absolute','top':stopButtonTablet, "height": '38px'});
       }else{
         $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
       }
