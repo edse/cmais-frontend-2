@@ -13,8 +13,7 @@ $(document).ready(function() {
   var heightFooterMobile = parseInt($("#mobile").height());
   var heightFooterTablet = parseInt($("#no-mobile").height());
   var moveButton;
-  var objOff;
-  var pos;
+ 
   setInterval(function() {
     moveButton = window.innerHeight- $('#voltar-topo-pagina').height() - 30;
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
@@ -28,23 +27,20 @@ $(document).ready(function() {
     
     
     $('#voltar-topo-pagina').css({'position':'fixed','top':moveButton}); 
-
-    
-    if(window.innerWidth<=500){
-      objOff = $('#voltar-topo-pagina').offset();
-      pos = objOff.top;
-      if(pos > stopButton){
-        $('#voltar-topo-pagina').css({'position':'absolute','top':stopButton, 'height': '36px'});
-      }else{
-        $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
-      }
-    }else if(window.innerWidth>=501 && window.innerWidth<=979){
-      objOff = $('#voltar-topo-pagina').offset();
-      pos = objOff.top;
-      if(pos > stopButtonTablet){
-        $('#voltar-topo-pagina').css({'position':'absolute','top':stopButtonTablet, 'height': '36px'});
-      }else{
-        $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
+    str = document.URL  
+    if(str.indexOf("jogos/") == -1 && str.indexOf("atividades/") == -1 || str.indexOf("videos/") == -1){
+      if(window.innerWidth<=500){
+        if($('#voltar-topo-pagina').offset().top > stopButton){
+          $('#voltar-topo-pagina').css({'position':'absolute','top':stopButton, 'height': '36px'});
+        }else{
+          $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
+        }
+      }else if(window.innerWidth>=501 && window.innerWidth<=979){
+        if($('#voltar-topo-pagina').offset().top > stopButtonTablet){
+          $('#voltar-topo-pagina').css({'position':'absolute','top':stopButtonTablet, 'height': '36px'});
+        }else{
+          $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
+        }
       }
     }
     
