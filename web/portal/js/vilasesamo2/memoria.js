@@ -112,7 +112,7 @@ $(function(){
   filesToLoad = 9;
   filesLoaded = 0;
   
-  AppLoaded();
+  //AppLoaded();
   function loadAudio(uri)
   {
       var audio = new Audio();
