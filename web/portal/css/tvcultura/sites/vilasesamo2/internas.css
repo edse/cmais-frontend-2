@@ -524,7 +524,7 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .na-tv .container-na-tv .container-horarios .box-horario .box-logo{display:block;width: 100%;background: #ffffff;border: #ccf4e2 1px solid;height: 130px;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;position:relative;}
 .na-tv .container-na-tv .container-horarios .box-horario h2{font-family:'din-blackregular',Arial, Helvetica, sans-serif;color:#00aa52;font-size:18px;text-align:center;line-height: 16px;margin: 20px 0 10px 0;}
 .na-tv .container-na-tv .container-horarios .box-horario p{font-size:16px;text-align:center;color:#737373; float:none;}
-.na-tv .fundo-na-tv{width: 527px;overflow:hidden; position:absolute;top:90px; left:10px;z-index: 0}/*width 530 era 550 / top era 53px---> georgia*/
+.na-tv .fundo-na-tv{width: 518px;overflow:hidden; position:absolute;top:90px; left:10px;z-index: 0}/*width 530 era 550 / top era 53px---> georgia*/
 /* /na tv */ 
 
 /* acessibilidade */
