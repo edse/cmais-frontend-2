@@ -303,7 +303,7 @@ footer .copyright {height: 30px;margin-left: 2%;}
 .form .dk_container {margin-left: 58px!important;}
 .form .file-wrapper .button {float:left!important;}
 .form label.error{position: absolute;/* bottom: 18px; *//* left: 37px; */font-size: 14px!important;margin: 0;}
-#content section.form .span4 {width: 100%; margin: 0 auto!important;padding: 2%;/* overflow: hidden; */}
+#content section.form .span4 {width: 100%!important; margin: 0 auto!important;padding: 2%;/* overflow: hidden; */}
 #content section.form .span4 iframe {margin: 0 auto;display: block;}
 
 #sfWebDebugBar{display:none!important}
