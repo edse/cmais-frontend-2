@@ -455,7 +455,7 @@ function playSound(soundFileName) {
     $(".audio source").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".mp3").attr("type", "audio/mp3");
     $(".audio source:last-child").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".ogg").attr("type", "audio/ogg");
     $(".audio").trigger('load');
-    (".audio").on("load",function(){
+    $(".audio").bind("load",function(){
       $('.audio').trigger('play')
     });
     $('.audio').trigger('play');
