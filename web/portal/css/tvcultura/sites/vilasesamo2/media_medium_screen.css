@@ -293,10 +293,18 @@ footer .copyright {height: 30px;margin-left: 2%;}
 #content section.form .form-horizontal .span8 {width:67%!important}
 #content section.form .span8{width:100%!important;}
 #content .form .span12{padding:2%!important}
+#content .form .span12 .msg {padding:0!important}
+.form-horizontal .span11 {float: left!important; }
+.form-horizontal .span11 .btn{margin-left: 19px!important;}
+.form .termo {float: left!important; }
+.form-horizontal .control-group textarea {float: left\0;width: 87%;width: 480px\0;}
 #content .span8 form{padding:2%!important}
 .form-horizontal .idade.span2 input {width: 120px!important;float: left!important;}
 .form .dk_container {margin-left: 58px!important;}
 .form .file-wrapper .button {float:left!important;}
+.form label.error{position: absolute;/* bottom: 18px; *//* left: 37px; */font-size: 14px!important;margin: 0;}
+#content section.form .span4 {width: 100%!important; margin: 0 auto!important;padding: 2%;/* overflow: hidden; */}
+#content section.form .span4 iframe {margin: 0 auto;display: block;}
 
 #sfWebDebugBar{display:none!important}
 

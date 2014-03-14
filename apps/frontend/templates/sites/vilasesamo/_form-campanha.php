@@ -154,7 +154,7 @@
         
         <!--enviar-->
         <div class="control-group span11">
-          <input type="submit" class="btn" id="enviar" value="enviar minha brincadeira"></input>
+          <input type="submit" class="btn" id="enviar" value="ENVIE O SEU DESENHO"></input>
         </div> 
         <!--/enviar-->
         
