@@ -20,7 +20,7 @@ $(document).ready(function() {
       if($('#voltar-topo-pagina').offset().top > stopButton){
         $('#voltar-topo-pagina').css({'position':'absolute','top':stopButton, "height": '36px'});
       }else{
-        $('#voltar-topo-pagina').css({'position':'fixed','bottom':'0', "top":'none'});  
+        $('#voltar-topo-pagina').css({'position':'fixed','bottom':'0', "top":'0'});  
       }
     }
     
