@@ -3,8 +3,9 @@ include("/var/frontend/web/actions/includes/functions.php");
 
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-  if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
-    $to = "jedoljak@gmail.com"; //"vilasesamooficial@gmail.com";
+  //if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
+    //$to = "jedoljak@gmail.com"; //"vilasesamooficial@gmail.com";
+    $to = "valclimaster@gmail.com";
     $email = strip_tags($_REQUEST['email']);
     $name = strip_tags($_REQUEST['nome']);
     $campaign = strip_tags($_REQUEST['campanha']);
@@ -55,7 +56,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
       }
     }
-  }
+  //}
 }
 
 ?>                
