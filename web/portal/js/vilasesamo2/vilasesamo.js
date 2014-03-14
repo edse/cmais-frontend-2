@@ -13,7 +13,7 @@ $(document).ready(function() {
   var heightFooterMobile = parseInt($("#mobile").height());
   var heightFooterTablet = parseInt($("#no-mobile").height());
   console.log(parseInt($("#no-mobile").height()));
-  $(window).scroll(function() {
+  setInterval(function() {
     var moveButton = window.innerHeight- $('#voltar-topo-pagina').height() - 30;
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
     stopButton = (height - heightFooterMobile)- $('#voltar-topo-pagina').height() - 40;
@@ -43,7 +43,7 @@ $(document).ready(function() {
     } 
     
     
-  });
+  }, 10);
   
   var hMobile = "#header-mobile";
   var hTablet = "#header-tablet";
