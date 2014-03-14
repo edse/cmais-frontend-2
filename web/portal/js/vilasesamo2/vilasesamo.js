@@ -12,11 +12,11 @@ $(document).ready(function() {
   
   var heightFooterMobile = parseInt($("#mobile").height());
   var heightFooterTablet = parseInt($("#no-mobile").height());
-  console.log(parseInt($("#no-mobile").height()));
   var moveButton;
   var objOffset = $('#voltar-topo-pagina').offset();
   $('#voltar-topo-pagina').css('height','36px');
   $('#voltar-topo-pagina span').css('height','22px');
+  console.log(abjOffset)
   setInterval(function() {
     moveButton = window.innerHeight- $('#voltar-topo-pagina').height() - 30;
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
