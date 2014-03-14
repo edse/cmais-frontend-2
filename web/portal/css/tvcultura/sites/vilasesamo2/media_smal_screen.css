@@ -414,7 +414,7 @@ a{text-decoration:underline!important;}
 
 /*form campanhas*/
 #content .form .span12{margin-bottom:20px;padding: 4%;}
-#content .form.span8 {width:100%!important;padding:0}
+#content .form .span8 {margin: 0;padding: 2%;}width: 100%!important;}
 #form-campanha .span4 iframe {width: 270px;}
 .form-horizontal .span8.control-group input {width: 80%!important;}
 #content section.form { padding:0!important }
