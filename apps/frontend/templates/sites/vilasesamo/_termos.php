@@ -40,7 +40,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
 3.4 A simples participação neste evento de incentivo à criatividade implica no total conhecimento e aceitação irrestrita deste regulamento.
  <br/>
  
-3.5 Os desenhos poderão ser publicados no site http://cmais.com.br/vilasesamo e os melhores poderão ser exibidos na programação da TV Cultura/Sesame Workshop.
+3.5 Os desenhos poderão ser publicados no site <a href="http://cmais.com.br/vilasesamo" target="_blank" >Site Vila Sésamo</a>e os melhores poderão ser exibidos na programação da TV Cultura/Sesame Workshop.
 <br/>
  
 
