@@ -28,9 +28,9 @@ $(document).ready(function() {
     
     $('#voltar-topo-pagina').css({'position':'fixed','top':moveButton}); 
 
-    
+    var objOff = $('#voltar-topo-pagina').offset();
     if(window.innerWidth<=500){
-      if($('#voltar-topo-pagina').offset().top > stopButton){
+      if(objOff.top > stopButton){
         $('#voltar-topo-pagina').css({'position':'absolute','top':stopButton, 'height': '36px'});
       }else{
         $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
