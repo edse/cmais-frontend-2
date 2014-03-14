@@ -137,7 +137,7 @@
         <div class="control-group span11">
           <label class="radio">
             <input type="radio" name="concordo" id="concordo" value="concordo">
-            Declaro que li e estou de acordo com os Termos e Condições acima .
+            Declaro que li e estou de acordo com os Termos e Condições abaixo .
           </label>
         </div>
         <!--/concorda-->
