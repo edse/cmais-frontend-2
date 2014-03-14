@@ -13,9 +13,6 @@ $(document).ready(function() {
   var heightFooterMobile = parseInt($("#mobile").height());
   var heightFooterTablet = parseInt($("#no-mobile").height());
   var moveButton;
-  var objOffset;
-  $('#voltar-topo-pagina').css('height','36px');
-  $('#voltar-topo-pagina span').css('height','22px');
  
   setInterval(function() {
     moveButton = window.innerHeight- $('#voltar-topo-pagina').height() - 30;
