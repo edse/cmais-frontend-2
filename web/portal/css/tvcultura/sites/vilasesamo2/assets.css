@@ -61,7 +61,7 @@ h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1
 #content .form input.error,
 #content .form select.error,
 #content .form textarea.error{border: #fffd2f 2px solid;color: #fffd2f!important;background: #737373;text-shadow:none;}
-.form-horizontal .control-label {text-align:left; *float:left; float:left; width: 58px !important;}
+.form-horizontal .control-label {text-align:left; *float:left; float:left; width: 58px}
 .form-horizontal .control-group.span12{width:100%;}
 .form-horizontal .control-group textarea { float:right\0; width: 89%;width: 508px\0; margin-left: 1%;height: 80px; margin-left: 0px;border-radius: 0px; }
 

@@ -414,7 +414,13 @@ a{text-decoration:underline!important;}
 
 /*form campanhas*/
 /*icones*/
-.icone-form-nome {background-position: 10px -1076px;}
+.icone-form-nome {background-position: 10px -1076px;width: 44px!important;}
+.icone-form-idade {background-position: 10px -719px;width: 44px!important;height:31px;}
+.form-horizontal .idade.span2 input{width: 30%!important;float:left;}
+.icone-form-nome-resp{ background-position: 1px -1643px; width: 46px!important; height: 34px; } 
+.icone-form-cidade{ background-position: 11px -382px; width: 44px!important; height: 40px; } 
+.icone-form-email{ background-position: 10px -550px; width: 44px!important; height: 30px; } 
+.icone-form-datafile{ background-position: 13px -202px; width: 44px!important; height: 40px; } 
 
 
 #content .form .span12{margin-bottom:20px;padding: 4%;}
@@ -423,7 +429,7 @@ a{text-decoration:underline!important;}
 .form-horizontal .span8.control-group input {width: 80%!important;}
 #content section.form { padding:0!important }
 .form-horizontal .span2.estado {width: 100%;}
-.form .dk_container {width: 100%;}
+.form .dk_container {margin-left: 78%;}
 #content.form .dk_container a {width: 99%!important;}
 #content section.form h2 {font-size: 1.2em;}
 .form-horizontal .idade.span2{width:90%!important;margin-left: 2%!important;}
