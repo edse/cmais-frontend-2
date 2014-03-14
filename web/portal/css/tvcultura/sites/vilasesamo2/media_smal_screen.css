@@ -419,9 +419,11 @@ a{text-decoration:underline!important;}
 .form-horizontal .span8.control-group input {width: 80%!important;}
 #content section.form { padding:0!important }
 .form-horizontal .span2.estado {width: 100%;}
-.form .dk_container {margin-left:78%}
+.form .dk_container {width: 100%;}
+#content.form .dk_container a {width: 99%!important;}
+#content section.form h2 {font-size: 1.2em;}
 .form-horizontal .idade.span2{width:90%!important;margin-left: 2%!important;}
-.form-horizontal .idade.span2 input {float:left!important}
+.form-horizontal .idade.span2 input{width: 75%; /* margin-left: 0px; */float:right;}
 .form .file-wrapper .button {float:left!important}
 .form-horizontal .control-group textarea{width: 76%!important;}
 .form-horizontal .span11, .form .termo {float:none!important}
