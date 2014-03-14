@@ -121,7 +121,7 @@
         <!--Email-->
         <div class="control-group span8">
           <label class="control-label icones-form icone-form-email" for="email"></label>
-          <input type="text" id="email"  value="Email" name="email" placeholder="Email">
+          <input type="text" id="email"  value="Email" name="email" placeholder="E-mail de contato">
         </div>
         <!--/Email-->
 
@@ -134,10 +134,10 @@
         <!--/Anexo-->
         
         <!--Msg-->
-        <div class="control-group span12 msg">
+        <!--div class="control-group span12 msg">
           <label class="control-label icones-form icone-form-msg" for="mensagem"></label>
           <textarea id="mensagem" name="mensagem" data-default="Mensagem"  placeholder="Mensagem">Mensagem</textarea>
-        </div>
+        </div-->
         <!--/Msg-->
         
         <!--concorda-->
