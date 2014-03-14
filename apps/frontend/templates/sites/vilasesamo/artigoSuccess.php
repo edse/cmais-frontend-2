@@ -101,8 +101,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <!--section-->
             <section>
               <p><?php echo $asset->getDescription() ?></p>
-              <?
-              /*
+              
+              
               <?php $preview = $asset->retriveRelatedAssetsByRelationType("Preview") ?>
               <?php if(count($preview) > 0): ?>
               <div class="img-topo-asset">  
@@ -112,8 +112,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 </p>
               </div>
               <?php endif; ?>
-               */
-               ?> 
+              
+           
               <?php echo html_entity_decode($asset->AssetContent->render()) ?>
               
               
