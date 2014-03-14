@@ -294,9 +294,8 @@ footer .copyright {height: 30px;margin-left: 2%;}
 #content section.form .span8{width:100%!important;}
 #content .form .span12{padding:2%!important}
 #content .span8 form{padding:2%!important}
-.form-horizontal .idade.span2 input {width: 120px!important;}
-.form .dk_container {width: 162px!important;}
-.form .dk_container a {width: 160px!important;}
+.form-horizontal .idade.span2 input {width: 120px!important;float: left!important;}
+.form .dk_container {margin-left: 58px!important;}
 
 #sfWebDebugBar{display:none!important}
 
