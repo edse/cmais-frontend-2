@@ -28,15 +28,15 @@ $(document).ready(function() {
     
     $('#voltar-topo-pagina').css({'position':'fixed','top':moveButton}); 
 
-    
+    var objOff = $('#voltar-topo-pagina').offset();
     if(window.innerWidth<=500){
-      if($('#voltar-topo-pagina').offset().top > stopButton){
+      if(objOff.top > stopButton){
         $('#voltar-topo-pagina').css({'position':'absolute','top':stopButton, 'height': '36px'});
       }else{
         $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
       }
     }else if(window.innerWidth>=501 && window.innerWidth<=979){
-      if($('#voltar-topo-pagina').offset().top > stopButtonTablet){
+      if(objOff.top > stopButtonTablet){
         $('#voltar-topo-pagina').css({'position':'absolute','top':stopButtonTablet, 'height': '36px'});
       }else{
         $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
