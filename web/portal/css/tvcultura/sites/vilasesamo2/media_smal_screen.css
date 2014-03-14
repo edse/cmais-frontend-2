@@ -427,7 +427,8 @@ a{text-decoration:underline!important;}
 .form-horizontal .span11, .form .termo {float:none!important}
 .form .control-group.span11 label {height:65px;float:left}
 .conteudo-asset .asset {margin-left:-4%}
-#content section.form .span4 {width: 286px!important; padding: 2%;}
+#content section.form .span4 {width: 100%; margin: 0 auto!important;padding: 2%;/* overflow: hidden; */}
+#content section.form .span4 iframe {margin: 0 auto;display: block;}
 
 .logotv-mobile{width: 17%; margin: 0 auto;padding: 2%;}
 
