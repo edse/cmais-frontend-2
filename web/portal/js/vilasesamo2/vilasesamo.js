@@ -18,7 +18,7 @@ $(document).ready(function() {
     moveButton = window.innerHeight- $('#voltar-topo-pagina').height() - 30;
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
     stopButton = (height - heightFooterMobile)- $('#voltar-topo-pagina').height() - 40;
-    stopButtonTablet = (height - heightFooterMobile) - $('#voltar-topo-pagina').height()*2 - 40;
+    stopButtonTablet = (height - heightFooterMobile) - $('#voltar-topo-pagina').height()*3 - 40;
     if($('#page_nav').is(':visible')){
       posStop = $('content').height() + $('#page_nav').height();  
     }else{
