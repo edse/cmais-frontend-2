@@ -418,7 +418,7 @@ a{text-decoration:underline!important;}
 .icone-form-nome-erro {background-position: 10px -1158px;width: 44px!important;}
 .icone-form-idade {background-position: 10px -719px;width: 44px!important;height:31px;}
 .icone-form-idade-erro {background-position: 10px -811px;width: 44px!important;height:31px;}
-.form-horizontal .idade.span2 input{width: 30%!important;float:left;}
+.form-horizontal .idade.span2 input{width: 30%!important;float: left!important;}
 .icone-form-nome-resp{ background-position: 1px -1643px; width: 46px!important; height: 34px; } 
 .icone-form-nome-resp-erro{ background-position: 1px -1356px; width: 46px!important; height: 34px; } 
 .icone-form-cidade{ background-position: 11px -382px; width: 44px!important; height: 40px; } 
