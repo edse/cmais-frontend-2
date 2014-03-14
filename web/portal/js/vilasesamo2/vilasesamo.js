@@ -28,7 +28,7 @@ $(document).ready(function() {
     
     $('#voltar-topo-pagina').css({'position':'fixed','top':moveButton}); 
     str = document.URL  
-    if(str.indexOf("jogos/") == -1 && str.indexOf("atividades/") == -1 || str.indexOf("videos/") == -1){
+    if(str.indexOf("jogos/") == -1 && || str.indexOf("atividades/") == -1 || str.indexOf("videos/") == -1){
       if(window.innerWidth<=500){
         if($('#voltar-topo-pagina').offset().top > stopButton){
           $('#voltar-topo-pagina').css({'position':'absolute','top':stopButton, 'height': '36px'});
