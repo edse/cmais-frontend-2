@@ -290,7 +290,8 @@ footer .copyright {height: 30px;margin-left: 2%;}
 }
 
 #content section.form {padding:0!important;width: 100%; }
-#content section.form .span8{width:100%;}
+#content section.form .form-horizontal .span8 {width:60%!important}
+#content section.form .span8{width:100%!important;}
 #content .form .span12{padding:2%!important}
 #content .span8 form{padding:2%!important}
 
