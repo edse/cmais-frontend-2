@@ -124,6 +124,7 @@
       <?php endif; ?>
       
     </div>
+    <span id="voltar-topo-pagina" aria-hidden="true" ></span>
   </section>
   <!--/section-->
   
