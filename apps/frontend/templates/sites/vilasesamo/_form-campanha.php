@@ -72,7 +72,7 @@
         <!--Nome Responsável-->
         <div class="control-group span8">
           <label class="control-label icones-form icone-form-nome-resp" for="nome-resp"></label>
-          <input type="text" id="resp" value="Nome do Responsável" name="resp" data-default="Nome do responsável"  placeholder="Nome do responsável">
+          <input type="text" id="resp" value="Nome do Responsável" name="resp" data-default="Nome do Responsável"  placeholder="Nome do Responsável">
         </div>
         <!--/Nome Responsável-->
         
@@ -217,6 +217,8 @@
       
   	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
   	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});
+  	  $('#resp').focus(function(){ 		if($(this).val() == "Nome do Responsável") {  $(this).val(''); }; 	});
+  	  $('#resp').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome do Responsável'); 	};	});
   	  $('#idade').focus(function(){ 	if($(this).val() == "Idade") {  $(this).val(''); }; });
   	  $('#idade').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Idade'); 	 };	});	  
   	  $('#cidade').focus(function(){ 	if($(this).val() == "Cidade") {  $(this).val(''); }; });
