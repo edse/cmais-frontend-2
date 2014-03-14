@@ -25,10 +25,9 @@ $(document).ready(function() {
       posStop = $('content').height();
     }
     
-    
-    $('#voltar-topo-pagina').css({'position':'fixed','top':moveButton}); 
-    str = document.URL  
-    if(str.indexOf("jogos/") == -1 && || str.indexOf("atividades/") == -1 || str.indexOf("videos/") == -1){
+    if($("#voltar-topo-pagina")){
+      $('#voltar-topo-pagina').css({'position':'fixed','top':moveButton}); 
+      
       if(window.innerWidth<=500){
         if($('#voltar-topo-pagina').offset().top > stopButton){
           $('#voltar-topo-pagina').css({'position':'absolute','top':stopButton, 'height': '36px'});
@@ -42,14 +41,13 @@ $(document).ready(function() {
           $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
         }
       }
+    
+      if(window.innerWidth < 980 && window.pageYOffset > 80){
+        $('#voltar-topo-pagina').fadeIn("slow").addClass('animated').addClass('tada');
+      }else{
+        $('#voltar-topo-pagina').fadeOut("fast"); 
+      } 
     }
-    
-    if(window.innerWidth < 980 && window.pageYOffset > 80){
-      $('#voltar-topo-pagina').fadeIn("slow").addClass('animated').addClass('tada');
-    }else{
-      $('#voltar-topo-pagina').fadeOut("fast"); 
-    } 
-    
     
   }, 10);
   
