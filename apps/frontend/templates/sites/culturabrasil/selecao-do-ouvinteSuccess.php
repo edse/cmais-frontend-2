@@ -177,7 +177,7 @@ $(document).ready(function() {
   	var validator = $('#form-selecao').validate({
       submitHandler: function(form){
         form.submit();
-      }
+      },
     	
     	/*
       $.ajax({
