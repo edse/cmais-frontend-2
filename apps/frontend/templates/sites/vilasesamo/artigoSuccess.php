@@ -101,6 +101,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <!--section-->
             <section>
               <p><?php echo $asset->getDescription() ?></p>
+              <?
+              /*
               <?php $preview = $asset->retriveRelatedAssetsByRelationType("Preview") ?>
               <?php if(count($preview) > 0): ?>
               <div class="img-topo-asset">  
@@ -110,6 +112,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 </p>
               </div>
               <?php endif; ?>
+               */
+               ?> 
               <?php echo html_entity_decode($asset->AssetContent->render()) ?>
               
               
@@ -236,6 +240,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <?php
             $tags = array();
             $sections = $asset->getSections();
+            /*
             foreach($sections as $s) { // pega as categorias (seções-filhas da seção "categorias") pra utilizar como se fossem tags
               if($s->getParentSectionId() > 0) {
                 $parentSection = Doctrine::getTable('Section')->findOneById($s->getParentSectionId());
@@ -243,7 +248,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                   $tags[] = $s->getTitle();
                 }
               }
-            }  
+            } 
+            */ 
             if(count($asset->getTags())>0){
               foreach($asset->getTags() as $t) {
                 $tags[] = $t;
