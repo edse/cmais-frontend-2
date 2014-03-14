@@ -289,9 +289,11 @@ footer .copyright {height: 30px;margin-left: 2%;}
 
 }
 
+/*formulario campanhas*/
 #content section.form {padding:0!important;width: 100%; }
 #content section.form .form-horizontal .span8 {width:67%!important}
 #content section.form .span8{width:100%!important;}
+.form-horizontal .span8.control-group.cidade input{width:79%}
 #content .form .span12{padding:2%!important}
 #content .form .span12.msg {padding:0!important}
 .form-horizontal .span11 {float: left!important; }
@@ -301,8 +303,8 @@ footer .copyright {height: 30px;margin-left: 2%;}
 #content .span8 form{padding:2%!important}
 .form-horizontal .idade.span2 input {width: 88px!important;float: left!important;}
 .form .dk_container {margin-left: 58px!important;}
-.form .file-wrapper .button {float:left!important;}
-.form label.error{position: absolute;/* bottom: 18px; *//* left: 37px; */font-size: 14px!important;margin: 0;}
+.form .file-wrapper .button {float:left!important;padding: 8px 5px!important;}
+.form label.error{position: absolute;bottom: 259px!important;font-size: 14px!important;margin: 0;}
 #content section.form .span4 {width: 100%!important; margin: 0 auto!important;padding: 2%;/* overflow: hidden; */}
 #content section.form .span4 iframe {margin: 0 auto;display: block;}
 

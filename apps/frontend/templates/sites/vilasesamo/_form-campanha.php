@@ -71,7 +71,7 @@
         
         <!--Nome Responsável-->
         <div class="control-group span8">
-          <label class="control-label icones-form icone-form-nome-resp" for="nome-resp"></label>
+          <label class="control-label icones-form icone-form-nome-resp" for="resp"></label>
           <input type="text" id="resp" value="Nome do Responsável" name="resp" data-default="Nome do Responsável"  placeholder="Nome do Responsável">
         </div>
         <!--/Nome Responsável-->
