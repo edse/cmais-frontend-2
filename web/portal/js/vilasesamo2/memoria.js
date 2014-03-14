@@ -88,13 +88,51 @@ $(function(){
       uiPlay.text(e.completedCount * 4 + '%');
     }
   });
+  /*
   loader.addCompletionListener(function() {
     uiPlay.html('<span>Jogar</span>');
     ui.addClass('open');
     $('#gamePlay span').hide();
   });
+  */
   loader.start();
-  init();
+  
+  //loadSound
+  sound01 = loadAudio('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/Macthing_garibaldo_muito_bem.mp3');
+  sound02 = loadAudio('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/Macthing_garibaldo_muito_bem.ogg');
+  sound03 = loadAudio('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/car_flipped.mp3');
+  sound04 = loadAudio('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/car_flipped.ogg');
+  sound05 = loadAudio('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/Error_garibaldo_tente.mp3');
+  sound06 = loadAudio('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/Error_garibaldo_tente.ogg');
+  sound07 = loadAudio('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/Final_garibaldo.mp3');
+  sound08 = loadAudio('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/Final_garibaldo.ogg');
+  sound09 = loadAudio('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/Final_play_again.mp3');
+  sound10 = loadAudio('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/Final_play_again.ogg');
+  
+  filesToLoad = 9;
+  filesLoaded = 0;
+  
+  AppLoaded();
+  function loadAudio(uri)
+  {
+      var audio = new Audio();
+      //audio.onload = isAppLoaded; // It doesn't works!
+      audio.addEventListener('canplaythrough', isAppLoaded, false); // It works!!
+      audio.src = uri;
+      return audio;
+  }
+  
+  function isAppLoaded()
+  {
+      filesLoaded++;
+      if (filesLoaded >= filesToLoad){
+        uiPlay.html('<span>Jogar</span>');
+        ui.addClass('open');
+        $('#gamePlay span').hide();
+        init();
+      }
+  }
+  //init();
 });
 
 var cardWidth;
@@ -277,7 +315,7 @@ function startGame() {
       clearInterval(adjust);
     },3000); 
     acessibilidadeVisual();
-    playSound("Start_bel_ola");
+    //playSound("Start_bel_ola");
     timer();
   }
 }
@@ -328,16 +366,21 @@ function checkPattern() {
     
     
   } else {
+    /*
     soundsError[0] = "Error_garibaldo_tente";
     soundsError[1] = "Error_garibaldo_opa";
     soundsError[2] = "Error_garibaldo_tente_de_novo";
     if(countClickWrong > posWrong){
-      playSound(soundsError[Math.round(Math.random(soundsError.length))]);
+      //playSound(soundsError[Math.round(Math.random(soundsError.length))]);
+      playSound("Error_garibaldo_tente");
       countClickWrong = 0;
     }else{
       playSound('car_flipped');
       countClickWrong++;
     }
+    */
+    playSound('car_flipped');
+    playSound("Error_garibaldo_tente");
     $(".card-flipped").removeClass("card-flipped");
   }
 }
@@ -359,7 +402,8 @@ function isMatchPattern() {
 function removeTookCards() {
   soundsCelebrating[0]= "Macthing_bel_ae_viva";
   soundsCelebrating[1]= "Macthing_garibaldo_muito_bem";
-  playSound(soundsCelebrating[Math.round(Math.random(soundsCelebrating.length))]);
+  //playSound(soundsCelebrating[Math.round(Math.random(soundsCelebrating.length))]);
+  playSound("Macthing_garibaldo_muito_bem");
   if (cardsmatched < 8){
     cardsmatched++;
     $(".card-removed").remove();
@@ -410,10 +454,10 @@ function playSound(soundFileName) {
     $(".tampa").css("z-index", "10");
     $(".audio source").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".mp3").attr("type", "audio/mp3");
     $(".audio source:last-child").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".ogg").attr("type", "audio/ogg");
-    $(".audio").trigger('load');
-    $(".audio").bind("load",function(){
-      $('.audio').trigger('play')
-    });
+    //$(".audio").trigger('load');
+    //$(".audio").bind("load",function(){
+      //$('.audio').trigger('play')
+    //});
     $('.audio').trigger('play');
     $('.audio').bind("ended", function(){
         $(".tampa").css("z-index", "-1");
