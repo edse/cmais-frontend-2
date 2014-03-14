@@ -36,7 +36,7 @@ $(document).ready(function() {
     }
     
     if(window.innerWidth < 980 && window.pageYOffset > 80){
-      $('#voltar-topo-pagina').fadeIn("slow").addClass('animated').addClass('tada').css({'position':'fixed','top':moveButton});
+      $('#voltar-topo-pagina').fadeIn("slow").addClass('animated').addClass('tada');
     }else{
       $('#voltar-topo-pagina').fadeOut("fast"); 
     } 
