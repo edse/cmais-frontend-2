@@ -293,7 +293,7 @@ footer .copyright {height: 30px;margin-left: 2%;}
 #content section.form .form-horizontal .span8 {width:67%!important}
 #content section.form .span8{width:100%!important;}
 #content .form .span12{padding:2%!important}
-#content .form .span12 .msg {padding:0!important}
+#content .form .span12.msg {padding:0!important}
 .form-horizontal .span11 {float: left!important; }
 .form-horizontal .span11 .btn{margin-left: 19px!important;}
 .form .termo {float: left!important; }
