@@ -13,7 +13,8 @@ $(document).ready(function() {
   var heightFooterMobile = parseInt($("#mobile").height());
   var heightFooterTablet = parseInt($("#no-mobile").height());
   var moveButton;
- 
+  var objOff;
+  var pos;
   setInterval(function() {
     moveButton = window.innerHeight- $('#voltar-topo-pagina').height() - 30;
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
@@ -28,15 +29,16 @@ $(document).ready(function() {
     
     $('#voltar-topo-pagina').css({'position':'fixed','top':moveButton}); 
 
-    var objOff = $('#voltar-topo-pagina').offset();
+    objOff = $('#voltar-topo-pagina').offset();
+    pos = objOff.top;
     if(window.innerWidth<=500){
-      if(objOff.top > stopButton){
+      if(pos > stopButton){
         $('#voltar-topo-pagina').css({'position':'absolute','top':stopButton, 'height': '36px'});
       }else{
         $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
       }
     }else if(window.innerWidth>=501 && window.innerWidth<=979){
-      if(objOff.top > stopButtonTablet){
+      if(pos > stopButtonTablet){
         $('#voltar-topo-pagina').css({'position':'absolute','top':stopButtonTablet, 'height': '36px'});
       }else{
         $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
