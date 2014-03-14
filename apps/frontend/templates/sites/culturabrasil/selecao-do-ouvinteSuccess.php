@@ -209,7 +209,6 @@ $(document).ready(function() {
         }
       });
       */
-    },
     rules : {
       nome : {
         required : true,
