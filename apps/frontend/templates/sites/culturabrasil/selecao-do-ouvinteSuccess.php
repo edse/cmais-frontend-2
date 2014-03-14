@@ -170,8 +170,16 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-  var validator = $('#form-selecao').validate({
-    submitHandler : function(form) {
+  	$('input#enviar').click(function(){
+  	  $(".msgAcerto, .msgErro").hide();
+  	});
+  	
+  	var validator = $('#form-selecao').validate({
+      submitHandler: function(form){
+        form.submit();
+      }
+    	
+    	/*
       $.ajax({
         type : "POST",
         dataType : "text",
@@ -200,6 +208,7 @@ $(document).ready(function() {
           }
         }
       });
+      */
     },
     rules : {
       nome : {
