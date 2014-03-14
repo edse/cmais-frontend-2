@@ -14,6 +14,7 @@ $(document).ready(function() {
   var heightFooterTablet = parseInt($("#no-mobile").height());
   console.log(parseInt($("#no-mobile").height()));
   var moveButton;
+  var objOffset = $('#voltar-topo-pagina').offset();
   $('#voltar-topo-pagina').css('height','36px');
   $('#voltar-topo-pagina span').css('height','22px');
   setInterval(function() {
@@ -32,13 +33,13 @@ $(document).ready(function() {
 
     
     if(window.innerWidth<=500){
-      if($('#voltar-topo-pagina').offset().top > stopButton){
+      if(objOffset.top > stopButton){
         $('#voltar-topo-pagina').css({'position':'absolute','top':stopButton, 'height': '36px'});
       }else{
         $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
       }
     }else if(window.innerWidth>=501 && window.innerWidth<=979){
-      if($('#voltar-topo-pagina').offset().top > stopButtonTablet){
+      if(objOffset.top > stopButtonTablet){
         $('#voltar-topo-pagina').css({'position':'absolute','top':stopButtonTablet, 'height': '36px'});
       }else{
         $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
