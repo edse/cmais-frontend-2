@@ -12,12 +12,13 @@ $(document).ready(function() {
   
   var heightFooterMobile = parseInt($("#mobile").height());
   var heightFooterTablet = parseInt($("#no-mobile").height());
-  $(window).scroll(function() {
+  console.log(parseInt($("#no-mobile").height()));
+  setInterval(function() {
     var moveButton = window.innerHeight- $('#voltar-topo-pagina').height() - 30;
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
     stopButton = (height - heightFooterMobile)- $('#voltar-topo-pagina').height() - 40;
     stopButtonTablet = (height - heightFooterMobile) - $('#voltar-topo-pagina').height() - 40;
-     
+    $('#voltar-topo-pagina span').css('height','22px');
     $('#voltar-topo-pagina').css({'position':'fixed','top':moveButton}); 
 
     
@@ -29,7 +30,7 @@ $(document).ready(function() {
       }
     }else{
       if($('#voltar-topo-pagina').offset().top > stopButtonTablet){
-        $('#voltar-topo-pagina').css({'position':'absolute','top':stopButtonTablet, "height": '38px'});
+        $('#voltar-topo-pagina').css({'position':'absolute','top':stopButtonTablet, "height": '36px'});
       }else{
         $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
       }
@@ -42,7 +43,7 @@ $(document).ready(function() {
     } 
     
     
-  });
+  }, 10);
   
   var hMobile = "#header-mobile";
   var hTablet = "#header-tablet";
