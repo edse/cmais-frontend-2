@@ -22,7 +22,7 @@
               Sua brincadeira foi enviada com sucesso<br/>
               e em breve estará em nossa galeria de brincadeiras!
             </p>
-            <a class="btn" href="/<?php echo $site->getSlug(); ?>/campanhas/brincar-e-um-direito-da-crianca" title="visitar a galeria de brincadeiras">visitar a galeria de brincadeiras</a>
+            <!--a class="btn" href="/<?php echo $site->getSlug(); ?>/campanhas/brincar-e-um-direito-da-crianca" title="visitar a galeria de brincadeiras">visitar a galeria de brincadeiras</a-->
           </div>
         <?php endif; ?>
       <?php endif;?> 
