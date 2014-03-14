@@ -27,8 +27,8 @@ $(document).ready(function() {
       }
     }
     
-    if(window.innerWidth>=501 || window.innerWidth<=980){
-      if($('#voltar-topo-pagina').offset().top > stopButton){
+    if(window.innerWidth>=501 || window.innerWidth<=979){
+      if($('#voltar-topo-pagina').offset().top > stopButtonTablet){
         $('#voltar-topo-pagina').css({'position':'absolute','top':stopButtonTablet, "height": '36px'});
       }else{
         $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
