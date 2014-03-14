@@ -37,7 +37,7 @@ $(document).ready(function() {
       }else{
         $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
       }
-    }else{
+    }else if(window.innerWidth>=501 && window.innerWidth>=501){
       if($('#voltar-topo-pagina').offset().top > stopButtonTablet){
         $('#voltar-topo-pagina').css({'position':'absolute','top':stopButtonTablet, 'height': '36px'});
       }else{
