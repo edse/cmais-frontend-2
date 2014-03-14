@@ -19,17 +19,17 @@ $(document).ready(function() {
     stopButtonTablet = (height - heightFooterMobile) - $('#voltar-topo-pagina').height() - 40;
      
     $('#voltar-topo-pagina').css({'position':'fixed','top':moveButton}); 
-    if(window.innerWidth<=500){
-      if($('#voltar-topo-pagina').offset().top > stopButton){
-        $('#voltar-topo-pagina').css({'position':'absolute','top':stopButton, "height": '36px'});
+    if(window.innerWidth>=501 || window.innerWidth<=979){
+      if($('#voltar-topo-pagina').offset().top > stopButtonTablet){
+        $('#voltar-topo-pagina').css({'position':'absolute','top':stopButtonTablet, "height": '38px'});
       }else{
         $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
       }
     }
     
-    if(window.innerWidth>=501 || window.innerWidth<=979){
-      if($('#voltar-topo-pagina').offset().top > stopButtonTablet){
-        $('#voltar-topo-pagina').css({'position':'absolute','top':stopButtonTablet, "height": '36px'});
+    if(window.innerWidth<=500){
+      if($('#voltar-topo-pagina').offset().top > stopButton){
+        $('#voltar-topo-pagina').css({'position':'absolute','top':stopButton, "height": '36px'});
       }else{
         $('#voltar-topo-pagina').css({'position':'fixed', "top":moveButton});  
       }
