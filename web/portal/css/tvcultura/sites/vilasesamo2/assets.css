@@ -68,7 +68,7 @@ h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1
 .form-horizontal .control-group { float: left;    margin-left: 0;    margin-right: 0;    width: 91%; }
 .form-horizontal .control-group input {margin: 0; float:left;}
 #content section.form .form-horizontal .span8 { /*width: 380px;*/ width: 67%; }
-.form-horizontal .span8.control-group input{width: 83%;/*width: 319px;*/}
+.form-horizontal .span8.control-group input{width: 81%;/*width: 319px;*/}
 .form-horizontal .span8.control-group.cidade{/*width:440px!important;*/width: 78%!important;margin-top: 5px!important;}
 .form-horizontal .span8.control-group.cidade input{/*width: 360px;*/width: 85%;}
 .form-horizontal .idade.span2 input,

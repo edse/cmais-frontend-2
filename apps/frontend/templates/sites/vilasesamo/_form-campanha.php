@@ -239,6 +239,10 @@
             required: function(){ validate("#nome"); return true},
             minlength: 2
           },
+          nomeResp:{
+            required: function(){ validate("#nome-resp"); return true},
+            minlength: 2
+          },
           idade:{
             required: function(){ validate("#idade"); return true},
             number: true
@@ -269,6 +273,7 @@
         },
         messages:{
           nome:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+          nomeResp:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
           idade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
           email:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
           cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
