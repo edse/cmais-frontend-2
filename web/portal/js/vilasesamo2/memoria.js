@@ -88,13 +88,13 @@ $(function(){
       uiPlay.text(e.completedCount * 4 + '%');
     }
   });
-  /*
+  
   loader.addCompletionListener(function() {
     uiPlay.html('<span>Jogar</span>');
     ui.addClass('open');
     $('#gamePlay span').hide();
   });
-  */
+  
   loader.start();
   
   //loadSound
