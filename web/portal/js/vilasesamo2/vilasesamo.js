@@ -16,7 +16,7 @@ $(document).ready(function() {
   var objOffset = $('#voltar-topo-pagina').offset();
   $('#voltar-topo-pagina').css('height','36px');
   $('#voltar-topo-pagina span').css('height','22px');
-  console.log(abjOffset)
+  console.log(objOffset)
   setInterval(function() {
     moveButton = window.innerHeight- $('#voltar-topo-pagina').height() - 30;
     height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
