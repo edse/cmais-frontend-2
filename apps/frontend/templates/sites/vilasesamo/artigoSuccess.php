@@ -234,8 +234,9 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   
           <!--tags-->
           <?php
-          /*
+          
             $tags = array();
+            /*
             $sections = $asset->getSections();
             foreach($sections as $s) { // pega as categorias (seções-filhas da seção "categorias") pra utilizar como se fossem tags
               if($s->getParentSectionId() > 0) {
@@ -244,13 +245,14 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                   $tags[] = $s->getTitle();
                 }
               }
-            }  
+            }
+            */  
             if(count($asset->getTags())>0){
               foreach($asset->getTags() as $t) {
                 $tags[] = $t;
               }
             }
-          */ 
+          
           ?>
           <?php if(count($tags) > 0): ?>
           <div class="box-sobre" aria-label="Links relacionados à matéria" tabindex="0">
