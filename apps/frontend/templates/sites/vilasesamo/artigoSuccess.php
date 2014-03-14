@@ -245,7 +245,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                   $tags[] = $s->getTitle();
                 }
               }
-            }
+            } 
             */  
             if(count($asset->getTags())>0){
               foreach($asset->getTags() as $t) {
