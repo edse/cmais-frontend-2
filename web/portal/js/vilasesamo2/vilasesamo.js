@@ -4,7 +4,8 @@ $(document).ready(function() {
   //setInterval(function(){
    //$('#header-tablet .logo-mobile').addClass('animated').addClass('tada'); 
   //},7000);
-  if($("#voltar-topo-pagina")){
+  var objGet = document.getElementById("#voltar-topo-pagina");
+  if(objGet){
     var body = document.body, html = document.documentElement;
     var height;
     var stopButton;
