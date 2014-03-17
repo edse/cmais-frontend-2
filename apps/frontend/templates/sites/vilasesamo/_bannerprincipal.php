@@ -104,7 +104,7 @@
           <div class="mpc_ls_slide_item tit-atividades" data-x="40" data-y="200" data-delay="1500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
             <span>Atividades</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="280" data-delay="1300" data-duration="2000" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="40" data-y="270" data-delay="1300" data-duration="2000" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>Veja as novas</span>
           </div>
           <div class="mpc_ls_slide_item par" data-x="40" data-y="325" data-delay="1400" data-duration="2200" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
