@@ -649,7 +649,7 @@ footer .logos .col-dir a { margin: 5% 6%; }
 footer .mapa a,
 footer .logos li { height:83px; }
 footer .mapa h2,
-footer .mapa a { font-size:22px; text-transform:uppercase; color:#434343;  }
+footer .mapa a { font-size: 1.4em;; text-transform:uppercase; color:#434343;  }
 footer .mapa { border:2px solid #f0f0f0; clear:both; overflow: hidden; background:#fffb49;  }
 footer .mapa .span12 { border-bottom:1px solid #f0f0f0; margin-left:0;  clear:both; height: 83px;  }
 footer .mapa h3  {height:83px; line-height:83px; padding-left:2.1%; margin:0; font-weight:normal;float: left;color: #434343;}

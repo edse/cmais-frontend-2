@@ -459,7 +459,10 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                   <a href="http://cmais.com.br/vilasesamo/personagens/come-come" title="Come-Come" target="_self" aria-hidden="true" tabindex="-1">Come-Come</a><span>,</span>
                 </li>
                 <li>
-                  <a href="http://cmais.com.br/vilasesamo/personagens/zoe" title="Zoe" target="_self" aria-hidden="true" tabindex="-1">Zoe</a>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/zoe" title="Zoe" target="_self" aria-hidden="true" tabindex="-1">Zoe</a><span>,</span>
+                </li>
+                <li>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/sivan" title="Sivan" target="_self" aria-hidden="true" tabindex="-1">Sivan</a>
                 </li>
               </ul>
             </nav> 
