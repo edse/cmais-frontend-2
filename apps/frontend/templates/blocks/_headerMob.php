@@ -190,7 +190,7 @@
         </script>
         
   <!--BUBBLE BOOKMARK-->
-  <link rel="stylesheet" href="/js/bubblemark/css/add2home.css">
+  <link rel="stylesheet" href="http://cmais.com.br/js/bubblemark/css/add2home.css">
   <link rel="apple-touch-icon" href="http://cmais.com.br/portal/images/capaPrograma/mob/ico-cmais-mobile.png">
   <script type="text/javascript">
   /*

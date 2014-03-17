@@ -64,8 +64,8 @@ function auto_discovery_link_tag($type = 'rss', $url = '', $tag_options = array(
  *
  * <b>Note:</b> The asset name can be supplied as a...
  * - full path, like "/my_js/myscript.css"
- * - file name, like "myscript.js", that gets expanded to "/js/myscript.js"
- * - file name without extension, like "myscript", that gets expanded to "/js/myscript.js"
+ * - file name, like "myscript.js", that gets expanded to "http://cmais.com.br/js/myscript.js"
+ * - file name without extension, like "myscript", that gets expanded to "http://cmais.com.br/js/myscript.js"
  *
  * @param string $source   asset name
  * @param bool   $absolute return absolute path ?
@@ -84,9 +84,9 @@ function javascript_path($source, $absolute = false)
  * <b>Examples:</b>
  * <code>
  *  echo javascript_include_tag('xmlhr');
- *    => <script language="JavaScript" type="text/javascript" src="/js/xmlhr.js"></script>
+ *    => <script language="JavaScript" type="text/javascript" src="http://cmais.com.br/js/xmlhr.js"></script>
  *  echo javascript_include_tag('common.javascript', '/elsewhere/cools');
- *    => <script language="JavaScript" type="text/javascript" src="/js/common.javascript"></script>
+ *    => <script language="JavaScript" type="text/javascript" src="http://cmais.com.br/js/common.javascript"></script>
  *       <script language="JavaScript" type="text/javascript" src="/elsewhere/cools.js"></script>
  * </code>
  *
