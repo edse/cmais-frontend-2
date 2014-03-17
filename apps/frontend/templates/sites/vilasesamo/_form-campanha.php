@@ -312,16 +312,20 @@
 	  if(success == 2){
 	    $(".msgAcerto").show();
 	    $("#form-contato").hide();
-	    $(".msgAcerto").html("<p> Sua brincadeira foi enviada com sucesso<br/> e em breve estará em nossa galeria de brincadeiras!</p>").scrollTo('#statusMsg_0');
+	    $(".msgAcerto").html("<p> Sua brincadeira foi enviada com sucesso<br/> e em breve estará em nossa galeria de brincadeiras!</p>");
+	   // $(".msgAcerto").scrollTo('#statusMsg_0');
 	  }else if(error == 1){
 	    $(".msgErro").show();
 	    $(".msgErro").html("<p>Erro inesperado<br/>Por favor, tente mais tarde!</p>");
+	   // $(".msgErro").scrollTo("statusMsg_1");
 	  }else if(error == 2){
 	    $(".msgErro").show();
 	    $(".msgErro").html("<p>Formato de imagem inválido<br/> Por favor, tente com JPG, PNG ou GIF!</p>");
+	    //$(".msgErro").scrollTo("statusMsg_1");
 	  }else if(error == 3){
 	    $(".msgErro").show();
 	    $(".msgErro").html("<p>Arquivo muito grande<br/> Por favor, tente com um arquivo de até 15 MB!</p>");
+	    //$(".msgErro").scrollTo("statusMsg_1");
 	  }
 
   });
@@ -360,6 +364,7 @@
           $(this).prev().removeClass('icone-form-'+campo+'-erro');
         }
       });
+      
       $('#concordo').delay(100, function(){
         if($(this).hasClass('error')){
           $(this).parent().css('color', 'yellow');
@@ -367,10 +372,15 @@
           $(this).parent().css('color', 'white');
         }
       });
+      
       if($('#estado').hasClass('error')){
         $('.dk_toggle').addClass('error');
       }else{
         $('.dk_toggle').removeClass('error');
+      }
+      //testa erro button
+      if($('.icone-form-datafile').hasClass('icone-form-datafile-erro')){
+      	$(".button").addClass('button-erro');
       }
     }, 100);
       
