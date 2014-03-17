@@ -84,10 +84,10 @@
           <div class="mpc_ls_slide_item par" data-x="650" data-y="260" data-delay="1500" data-duration="2500" data-easing="easeOutBounce" data-effect="slideBottom" data-fade="on"> 
             <span>Você sabe</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="650" data-y="300" data-delay="1500" data-duration="2500" data-easing="easeOutBounce" data-effect="slideBottom" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="650" data-y="300" data-delay="1800" data-duration="2700" data-easing="easeOutBounce" data-effect="slideBottom" data-fade="on"> 
             <span style="margin-left: -20px">o que é direito</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="650" data-y="340" data-delay="1500" data-duration="2500" data-easing="easeOutBounce" data-effect="slideBottom" data-fade="on">
+          <div class="mpc_ls_slide_item par" data-x="650" data-y="350" data-delay="2000" data-duration="2900" data-easing="easeOutBounce" data-effect="slideBottom" data-fade="on">
              <span style="margin-left: -40px;">de brincar? </span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
