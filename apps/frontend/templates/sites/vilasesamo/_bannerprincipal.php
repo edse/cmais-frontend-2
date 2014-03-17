@@ -105,7 +105,7 @@
             <span>você imprimir! </span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="http://cmais.com.br/vilasesamo/atividades" class="total" title="Novidade chegando"></a>
+            <a href="http://cmais.com.br/vilasesamo/atividades/brincando-no-parque-1#form-campanha" class="total" title="Novidade chegando"></a>
           </div>
         </li>
         <!--/item atividades-->
