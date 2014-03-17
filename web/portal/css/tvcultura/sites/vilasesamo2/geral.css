@@ -243,7 +243,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-form-resp{ background-position: 1px -1541px; width: 44px; height: 34px; } 
 .icone-form-resp-erro{ background-position:0px -1454px; width: 30px; height: 34px; } 
 
-.button.button-erro {float:right;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;border:none;color: #F30000!important;cursor: pointer;display: inline-block;font-size: 11px;font-weight: bold;margin-right: 5px;padding: 8px 12px;text-transform: uppercase;font-family:'din-blackregular',Arial, Helvetica, sans-serif;font-size:18px;border: 1px solid red;}
+.button.button-erro {float:right;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;border:none;color: #F30000!important;cursor: pointer;display: inline-block;font-size: 11px;font-weight: bold;margin-right: 5px;padding: 8px 12px;text-transform: uppercase;font-family:'din-blackregular',Arial, Helvetica, sans-serif;font-size:18px;border: 1px solid red!important;}
 
 /* /icones */
 
