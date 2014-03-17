@@ -92,6 +92,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 <!--/video ou imagem-->
            <?php if($section->getSlug()=="incluir-brincando"):?>
             	<br/>
+            	<br/>
              <p>
               INCLUIR BRINCANDO é um projeto voltado para o fortalecimento da consciência sobre o direito do brincar seguro e inclusivo, da diversidade e do estímulo aos hábitos saudáveis, com ênfase na inclusão de crianças com deficiências. 
             </p>
