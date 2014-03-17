@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/qss-site.css" type="text/css" />
 
 <script type="text/javascript" src="http://cmais.com.br/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script>
-<link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<link href="http://cmais.com.br/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="http://cmais.com.br/js/audioplayer/jplayer_min.js"></script>
 
 <?php use_helper('I18N', 'Date') ?>

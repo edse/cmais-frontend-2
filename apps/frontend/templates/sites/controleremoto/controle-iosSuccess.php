@@ -32,7 +32,7 @@
     </script>
     <!-- /banner-->
     <script src="http://cmais.com.br/portal/js/bootstrap/jquery.js"></script>
-    <link href="/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+    <link href="http://cmais.com.br/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="http://cmais.com.br/js/audioplayer/jquery.jplayer.min.js"></script>
     
   </head>

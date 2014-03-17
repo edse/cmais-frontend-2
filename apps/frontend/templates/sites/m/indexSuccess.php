@@ -3,11 +3,11 @@
 <!--/header-->
 
 <!--Carousel-->
-<link rel="stylesheet" href="/js/touchcarousel/touchcarousel.css" />
-<link rel="stylesheet" href="/js/touchcarousel/minimal-light-skin/minimal-light-skin.css" />  
-<link rel="stylesheet" href="/js/touchcarousel/three-d-skin/three-d-skin.css" />
-<link rel="stylesheet" href="/js/touchcarousel/black-and-white-skin/black-and-white-skin.css" />
-<link rel="stylesheet" href="/js/touchcarousel/grey-blue-skin/grey-blue-skin.css" />
+<link rel="stylesheet" href="http://cmais.com.br/js/touchcarousel/touchcarousel.css" />
+<link rel="stylesheet" href="http://cmais.com.br/js/touchcarousel/minimal-light-skin/minimal-light-skin.css" />  
+<link rel="stylesheet" href="http://cmais.com.br/js/touchcarousel/three-d-skin/three-d-skin.css" />
+<link rel="stylesheet" href="http://cmais.com.br/js/touchcarousel/black-and-white-skin/black-and-white-skin.css" />
+<link rel="stylesheet" href="http://cmais.com.br/js/touchcarousel/grey-blue-skin/grey-blue-skin.css" />
 <!--/Carousel-->
 
 <!--PAGINA INDEX-->
