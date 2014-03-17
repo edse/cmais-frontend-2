@@ -5,6 +5,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 ?>
 <html lang="pt-br"> 
   <head>
+  	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="HandheldFriendly" content="true"/>
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
@@ -63,7 +64,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
        <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/cocorico/ie.css" />
      <![endif]-->
     
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store" />
     <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
