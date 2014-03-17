@@ -31,13 +31,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     //die($file_mime_type);
     if (!in_array($file_mime_type, array("image/gif", "image/png", "image/jpg"))) {
       if (unlink($_FILES['datafile']['tmp_name'])) {
-        header("Location: ".$_REQUEST['urlElement']."?error=2#statusMsg_1");
+        header("Location: ".$_REQUEST['urlElement']."?error=2#carrossel-interna");
         //die("1");
       }
     }
     else if ($file_size > 15728640) { // 15MB
       if (unlink($_FILES['datafile']['tmp_name'])) {
-        header("Location: ".$_REQUEST['urlElement']."?error=3#statusMsg_1");
+        header("Location: ".$_REQUEST['urlElement']."?error=3#carrossel-interna");
         //die("2");
       }
     }
@@ -45,13 +45,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       
       if(sendMailAtt($to, $from, $subject, $message, $attach)) {
         if (unlink($_FILES['datafile']['tmp_name'])) {
-          header("Location: ".$_REQUEST['urlElement']."?success=2#statusMsg_0");
+          header("Location: ".$_REQUEST['urlElement']."?success=2#carrossel-interna");
           //die("0");
         }
       }
       else{
         if (unlink($_FILES['datafile']['tmp_name'])) {
-          header("Location: ".$_REQUEST['urlElement']."?error=1#statusMsg_1");
+          header("Location: ".$_REQUEST['urlElement']."?error=1#carrossel-interna");
           //die("3");
         }
       }
