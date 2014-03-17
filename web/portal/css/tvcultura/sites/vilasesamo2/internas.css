@@ -558,8 +558,8 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .pdf-caderno  p{margin:10px auto;}
 .audio-caderno {background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_audio.png") no-repeat;width: 290px;height: 60px;float: left;text-decoration:none!important;}
 .audio-caderno p {margin:10px auto;}
-.audio-descricao {background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_audio.png") no-repeat;width: 290px;height: 60px;float: left;text-decoration:none!important;}
-
+.audio-descricao {background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_audio.png") no-repeat;width: 290px;height: 60px;float: left;}
+.audio-descricao {text-decoration:none!important;}
 
 
 #content .incluir-brincando-colecao {overflow: hidden;min-height: 46px!important; background:#feec3c; margin:0 auto !important; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }
