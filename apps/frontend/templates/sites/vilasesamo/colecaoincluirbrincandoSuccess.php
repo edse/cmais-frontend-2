@@ -92,7 +92,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 								</a>
 							</div>
 							 
-						</div>
+						</div> 
               
         </div>
 
