@@ -50,7 +50,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <a href="/<?php echo $site->getSlug() ?>/<?php echo $assetSection->getSlug() ?>/<?php echo $d->Asset->getSlug() ?>" title="">
             <div class='container-image <?php if($d->Asset->AssetType->getSlug() != "video"){echo "square";}else{echo "rect";} ?>'>
             <?php if($d->Asset->AssetType->getSlug() == "video"): ?>
-              <img src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/mqdefault.jpg" alt="" />
+              <img src="http://img.youtube.com/vi/<?php echo $d->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="" />
             <?php else: ?>
               <img class="destaque" src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt=""/>
             <?php endif; ?>
