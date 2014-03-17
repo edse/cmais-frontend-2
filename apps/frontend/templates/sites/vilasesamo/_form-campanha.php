@@ -364,6 +364,7 @@
           $(this).prev().removeClass('icone-form-'+campo+'-erro');
         }
       });
+      
       $('#concordo').delay(100, function(){
         if($(this).hasClass('error')){
           $(this).parent().css('color', 'yellow');
@@ -371,10 +372,15 @@
           $(this).parent().css('color', 'white');
         }
       });
+      
       if($('#estado').hasClass('error')){
         $('.dk_toggle').addClass('error');
       }else{
         $('.dk_toggle').removeClass('error');
+      }
+      //testa erro button
+      if($('.icone-form-datafile').hasClass('icone-form-datafile-erro')){
+      	$(this).next().next().next('span').addClass('.button-erro');
       }
     }, 100);
       
