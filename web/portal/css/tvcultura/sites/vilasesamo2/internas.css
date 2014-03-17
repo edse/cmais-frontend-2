@@ -29,7 +29,7 @@ a{text-decoration:underline!important;}
 #filtrar-tudo:hover{background-position:0 top;} 
 .todos-itens li,
 .scroll,
-.filtro { background:#3aaaec; border-top:7px solid #02cbff; border-bottom:7px solid #02cbff; }
+.filtro { background:#3aaaec; border-top:7px solid #02cbff; /*border-bottom:7px solid #02cbff;*/ }
 .filtro h1 { border-bottom:2px solid #0191fb; border-top:2px solid #0191fb; background:#3AAAEC; }
 #content .filtro h1 { padding-top:10px;  }
 .filtro .span2 { margin-left:0; background: #ee3021; width:19.14%; padding:0 0.6%;}
@@ -373,7 +373,7 @@ body.personagens { background:#b60401; }
 .personagens .filtro .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:25px;}
 .personagens .filtro .descritivo p{font-size:16px;}
 .personagens .scroll, 
-.personagens .filtro  { border-color:#ee3021;border-bottom:7px solid #ee3021!important; background:#b60401; }
+.personagens .filtro  { border-color:#ee3021;/*border-bottom:7px solid #ee3021!important;*/ background:#b60401; }
 .personagens #carrossel-interna-personagem .slider .descritivo h3{font-family:'din-blackregular',Arial, Helvetica, sans-serif;}
 .personagens #carrossel-interna-personagem .slider .descritivo p{text-decoration: underline;}
 .personagens #content h3 span, 
@@ -384,6 +384,7 @@ body.personagens { background:#b60401; }
 .personagens .span8 .span6 {border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
 .personagens #container-personagens{}
 .personagens .conteudo-asset {padding: 0;width: 940px;}
+.personagens .conteudo-asset span {width: 70%;float: left;}
 .personagens .q-pers{float:left; width: 225px; height:225px; margin:5px; border-radius:5px;  -moz-border-radius:5px; -webkit-border-radius: 5px; border:none;}
 
 
