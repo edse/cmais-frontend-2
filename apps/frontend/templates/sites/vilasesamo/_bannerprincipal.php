@@ -82,7 +82,7 @@
              <span style="margin-left: -40px;">de brincar? </span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="http://cmais.com.br/vilasesamo/videos/brincar-e-um-direito-da-crianca-acessivel" class="total" title=""></a>
+            <a href="http://cmais.com.br/vilasesamo/videos/brincar-e-um-direito-da-crianca" class="total" title=""></a>
           </div>
         </li>
         <!--/item videos-->
