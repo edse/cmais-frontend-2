@@ -35,7 +35,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <!--container conteudo-->
     <div class="b-verde borda-arredonda">
       <h1>
-        <span class="icone-acessibilidade"></span>
+        <span class="icone-historia"></span>
         <?php echo $section->getTitle() ?>
       </h1>
       
@@ -53,8 +53,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         
          <!--Explicação acessibilidade visite o site da Laramara-->
       <a href="http://laramara.org.br/" tabindex="0" class="ac-link" aria-label="Visite o site da LARAMARA"></a>
-      <span class="fundo-acessibilidade" aria-label="Imagem da Bel e Groove felizes por terem um site acessível" tabindex="0">
-        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/img_acessibilidade.png" />
+      <span class="fundo-acessibilidade" aria-label="Brasil Disco" tabindex="0">
+        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/historia_brasil_disco.jpg" />
       </span>
          
       </div>
