@@ -380,7 +380,7 @@
       }
       //testa erro button
       if($('.icone-form-datafile').hasClass('icone-form-datafile-erro')){
-      	$(this).next().next().next('span').addClass('button-erro');
+      	$(".button").addClass('button-erro');
       }
     }, 100);
       
