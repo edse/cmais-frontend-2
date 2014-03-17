@@ -10,7 +10,6 @@
     .tit-atividades{font-size:50px;text-shadow:3px 3px 3px #0C859C}
     .tit-pais{font-size:50px;text-shadow:3px 3px 3px #017005}
     .tit-personagens{font-size:50px;text-shadow:3px 3px 3px #5105A3}
-    
    </style>
    
   <!-- carrossel desktop-->
@@ -34,7 +33,7 @@
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/02_mar_entrada/txt_2.png" alt="">
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">  
-            <a href="#" class="total" title="Novidade chegando"></a>
+            <a href="http://cmais.com.br/vilasesamo/pais-e-educadores/incluir-brincando" class="total" title="Novidade chegando"></a>
           </div>
         </li>
         <!--/item incluir brincando-->
@@ -56,9 +55,6 @@
           <div class="mpc_ls_slide_item" data-x="370" data-y="160" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/03_mar_ogo/come_come.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="#" class="total" title="Novidade chegando"></a>
-          </div>
           <div class="mpc_ls_slide_item tit-jogos" data-x="40" data-y="200" data-delay="500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>Novo Jogo</span>
           </div>
@@ -70,6 +66,9 @@
           </div>
           <div class="mpc_ls_slide_item par" data-x="40" data-y="340" data-delay="1000" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>divirta-se</span>
+          </div>
+          <div class="mpc_ls_slide_item total" data-fade="on">
+            <a href="http://cmais.com.br/vilasesamo/jogos/jogo-da-memoria-vila-sesamo" class="total" title="Teste a sua memória e divirta-se"></a>
           </div>
         </li>
         <!--/item ogo-->
@@ -92,7 +91,7 @@
              <span style="margin-left: -40px;">de brincar? </span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="#" class="total" title="Novidade chegando"></a>
+            <a href="http://cmais.com.br/vilasesamo/videos/brincar-e-um-direito-da-crianca-acessivelhttp://cmais.com.br/d.php/vilasesamo/videos/brincar-e-um-direito-da-crianca-acessivel" class="total" title=""></a>
           </div>
         </li>
         <!--/item videos-->
@@ -115,7 +114,7 @@
             <span>você imprimir! </span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="#" class="total" title="Novidade chegando"></a>
+            <a href="http://cmais.com.br/vilasesamo/atividades" class="total" title="Novidade chegando"></a>
           </div>
         </li>
         <!--/item atividades-->
@@ -135,7 +134,7 @@
             <span>a Sivan? </span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="#" class="total" title="Novidade chegando"></a>
+            <a href="http://cmais.com.br/vilasesamo/personagens/sivan" class="total" title="Novidade chegando"></a>
           </div>
         </li>
         <!--/item personagens-->
@@ -155,7 +154,7 @@
             <span>Incluir Bricando.</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="#" class="total" title="Novidade chegando"></a>
+            <a href="http://cmais.com.br/vilasesamo/pais-e-educadores" class="total" title="Novidade chegando"></a>
           </div>
         </li>
         <!--/item personagens-->
@@ -203,22 +202,22 @@
           
           switch(i){
             case 0:
-              $(this).attr("aria-label", "Baner tem novidade chegando! - a Nova personagem do Vila Sésamo sentanda numa cadeira de rodas acenando e avisando que tem novidades chegando. Com flores ao redor dela").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>');
+              $(this).attr("aria-label", "Incluir Brincando - Garibaldo, Bel e Sivan estão acenando para o povo.").attr('data-href','http://cmais.com.br/vilasesamo/pais-e-educadores/incluir-brincando');
             break;
             case 1:
-              $(this).attr("aria-label", "Tela Jogos - Groover esta vestido com um capacete e uma capa vermelha convidando você a brincar com os personagens do Vila-Sésamo.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/jogos');
+              $(this).attr("aria-label", "Novo Jogo Teste a sua memória e divirta-se - Groover esta pensativo com uma bolacha na mão.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/jogos/jogo-da-memoria-vila-sesamo');
             break;
             case 2:
-              $(this).attr("aria-label", "Tela vídeos - Come-Come esta comendo um rolo de filme cinematográfico e falando de boca cheia - 'Músicas e histórias para você curtir'.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/videos')
+              $(this).attr("aria-label", "Bel está lhe perguntando se você sabe o que é direito de brincar.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/videos/brincar-e-um-direito-da-crianca')
             break;
             case 3:
-              $(this).attr("aria-label", "Tela atividades - Beto esta segurando um recorte de uma máscara convidando você a brincar com as atividades'. ").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/atividades')
+              $(this).attr("aria-label", "elmo está convidando você a conhecer as novas atividades de imprimir'. ").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/atividades')
             break;
             case 4:
-              $(this).attr("aria-label", "Persanagens - Elmo esta brincando de econde-esconde. Venha conhecer a turma toda do Vila Sésamo.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/personagens');
+              $(this).attr("aria-label", "Persanagens - Você já conhece a Sivan?").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/personagens/sivan');
             break;
             case 5:
-              $(this).attr("aria-label", "Pais e Educadores - Garibaldo sorrindo convida pais e educadores a conhecer dicas, conteúdos. Leia, participe, compartilhe.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/pais-e-educadores')
+              $(this).attr("aria-label", "Elmo esta sentado em frente ao notebook com a sua mãe.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/pais-e-educadores')
             break;
           }  
           
