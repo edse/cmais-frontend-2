@@ -52,35 +52,7 @@
         <?php endif; ?>
       <?php endif; */?>
       
-      <script>
-			  function getVar(variable) {
-			    var query = window.location.search.substring(1);
-			    var vars = query.split("&");
-			    for (var i=0;i<vars.length;i++){
-			      var pair = vars[i].split("=");
-			      if (pair[0] == variable) {
-			        return pair[1];
-			      }
-			    }
-			  }
 
-			  var success = getVar("success");
-			  var error = getVar("error");
-
-			  if(success == 2){
-			    $(".msgAcerto").show();
-			    $(".msgAcerto").html("<p> Sua brincadeira foi enviada com sucesso<br/> e em breve estará em nossa galeria de brincadeiras!</p>");
-			  }else if(error == 1){
-			    $(".msgErro").show();
-			    $(".msgErro").html("<p>Erro inesperado<br/>Por favor, tente mais tarde!</p>");
-			  }else if(error == 2){
-			    $(".msgErro").show();
-			    $(".msgErro").html("<p>Formato de imagem inválido<br/> Por favor, tente com JPG, PNG ou GIF!</p>");
-			  }else if(error == 3){
-			    $(".msgErro").show();
-			    $(".msgErro").html("<p>Arquivo muito grande<br/> Por favor, tente com um arquivo de até 15 MB!</p>");
-			  }
-			</script>
       
       <div class="msgAcerto" id="statusMsg_0" style="display:none"> </div>
 			<div class="msgErro" id="statusMsg_1" style="display:none"> </div>
@@ -326,6 +298,31 @@
         verifyKey();
       });
     }
+    
+
+		function getURLParameter(name) {
+			return decodeURI(
+		        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+		    );
+		}
+		
+	  var success = getURLParameter("success");
+	  var error = getURLParameter("error");
+
+	  if(success == 2){
+	    $(".msgAcerto").show();
+	    $(".msgAcerto").html("<p> Sua brincadeira foi enviada com sucesso<br/> e em breve estará em nossa galeria de brincadeiras!</p>");
+	  }else if(error == 1){
+	    $(".msgErro").show();
+	    $(".msgErro").html("<p>Erro inesperado<br/>Por favor, tente mais tarde!</p>");
+	  }else if(error == 2){
+	    $(".msgErro").show();
+	    $(".msgErro").html("<p>Formato de imagem inválido<br/> Por favor, tente com JPG, PNG ou GIF!</p>");
+	  }else if(error == 3){
+	    $(".msgErro").show();
+	    $(".msgErro").html("<p>Arquivo muito grande<br/> Por favor, tente com um arquivo de até 15 MB!</p>");
+	  }
+
   });
   var SITE = SITE || {};
 
@@ -351,7 +348,7 @@
     if($(obj).val()==$(obj).attr("data-default"))
       $(obj).val('');
       //$(obj).addClass("error");
-  } 
+  }
   function verifyKey(){
     setTimeout(function() {
       $('input, textarea').not('#concordo').each(function(){
