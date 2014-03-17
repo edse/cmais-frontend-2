@@ -368,7 +368,7 @@ body.personagens { background:#b60401; }
 .personagens .dest-pers .span8{clear:none;}
 .personagens .dest-pers .mais-brincadeiras{margin: 0;text-align: left;height: 30px;padding-left: 15px;}
 .personagens .dest-pers .mais-brincadeiras p{color: #fff;text-transform: uppercase;line-height: 31px;}
-.personagens .desc-personagem{overflow: hidden; background: #FFF;}
+.personagens .desc-personagem{overflow: hidden; background: #FFF;padding:30px 0;}
 .personagens .filtro .descritivo{ padding:20px 20px 20px 0px; }
 .personagens .filtro .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:25px;}
 .personagens .filtro .descritivo p{font-size:16px;}
