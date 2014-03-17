@@ -3,7 +3,7 @@
   
   <span class="divisa carregar"></span>
   <!--section-->
-  <section class="form row-fluid">
+  <section id="form-campanha" class="form row-fluid">
     
     <!--span12-->
     <div class="span12">
