@@ -61,10 +61,10 @@
           <div class="mpc_ls_slide_item par" data-x="40" data-y="260" data-delay="1000" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>Teste a sua</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="300" data-delay="1000" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="40" data-y="300" data-delay="1200" data-duration="2400" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>memória e</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="340" data-delay="1000" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="40" data-y="340" data-delay="1400" data-duration="2600" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>divirta-se</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
@@ -81,13 +81,13 @@
           <div class="mpc_ls_slide_item tit-videos" data-x="650" data-y="200" data-delay="500" data-duration="2500" data-easing="easeOutBounce" data-effect="slideTop" data-fade="on"> 
             <span>Vídeos</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="650" data-y="260" data-delay="1500" data-duration="2500" data-easing="easeOutBounce" data-effect="slideBottom" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="650" data-y="260" data-delay="1500" data-duration="2500" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on"> 
             <span>Você sabe</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="650" data-y="300" data-delay="1800" data-duration="2700" data-easing="easeOutBounce" data-effect="slideBottom" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="650" data-y="310" data-delay="1800" data-duration="2700" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on"> 
             <span style="margin-left: -20px">o que é direito</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="650" data-y="350" data-delay="2000" data-duration="2900" data-easing="easeOutBounce" data-effect="slideBottom" data-fade="on">
+          <div class="mpc_ls_slide_item par" data-x="650" data-y="350" data-delay="2000" data-duration="2900" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on">
              <span style="margin-left: -40px;">de brincar? </span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
