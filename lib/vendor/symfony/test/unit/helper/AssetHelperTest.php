@@ -107,10 +107,10 @@ $t->is(stylesheet_tag('style', array('condition' => 'IE 6')),
 // javascript_include_tag()
 $t->diag('javascript_include_tag()');
 $t->is(javascript_include_tag('xmlhr'),
-  '<script type="text/javascript" src="/js/xmlhr.js"></script>'."\n", 
+  '<script type="text/javascript" src="http://cmais.com.br/js/xmlhr.js"></script>'."\n", 
   'javascript_include_tag() takes a javascript name as its first argument');
 $t->is(javascript_include_tag('common.javascript', '/elsewhere/cools'),
-  '<script type="text/javascript" src="/js/common.javascript"></script>'."\n".
+  '<script type="text/javascript" src="http://cmais.com.br/js/common.javascript"></script>'."\n".
   '<script type="text/javascript" src="/elsewhere/cools.js"></script>'."\n",
   'javascript_include_tag() can takes n javascript file names as its arguments');
 $t->is(javascript_include_tag('xmlhr', array('absolute' => true)),
@@ -120,10 +120,10 @@ $t->is(javascript_include_tag('xmlhr', array('raw_name' => true)),
   '<script type="text/javascript" src="xmlhr"></script>'."\n", 
   'javascript_include_tag() can take a raw_name option to bypass file name decoration');
 $t->is(javascript_include_tag('xmlhr', array('defer' => 'defer')),
-  '<script type="text/javascript" src="/js/xmlhr.js" defer="defer"></script>'."\n", 
+  '<script type="text/javascript" src="http://cmais.com.br/js/xmlhr.js" defer="defer"></script>'."\n", 
   'javascript_include_tag() can take additional html options like defer');
 $t->is(javascript_include_tag('xmlhr', array('condition' => 'IE 6')),
-  '<!--[if IE 6]><script type="text/javascript" src="/js/xmlhr.js"></script><![endif]-->'."\n",
+  '<!--[if IE 6]><script type="text/javascript" src="http://cmais.com.br/js/xmlhr.js"></script><![endif]-->'."\n",
   'javascript_include_tag() can take a condition option');
 
 // javascript_path()
@@ -151,7 +151,7 @@ $t->is(image_path('img.jpg', true), 'http://localhost/images/img.jpg', 'image_pa
 $t->diag('use_javascript() get_javascripts()');
 use_javascript('xmlhr');
 $t->is(get_javascripts(),
-  '<script type="text/javascript" src="/js/xmlhr.js"></script>'."\n", 
+  '<script type="text/javascript" src="http://cmais.com.br/js/xmlhr.js"></script>'."\n", 
   'get_javascripts() returns a javascript previously added by use_javascript()');
 use_javascript('xmlhr', '', array('raw_name' => true));
 $t->is(get_javascripts(),
@@ -164,7 +164,7 @@ $t->is(get_javascripts(),
 use_javascript('xmlhr');
 use_javascript('xmlhr2');
 $t->is(get_javascripts(),
-  '<script type="text/javascript" src="/js/xmlhr.js"></script>'."\n".'<script type="text/javascript" src="/js/xmlhr2.js"></script>'."\n", 
+  '<script type="text/javascript" src="http://cmais.com.br/js/xmlhr.js"></script>'."\n".'<script type="text/javascript" src="http://cmais.com.br/js/xmlhr2.js"></script>'."\n", 
   'get_javascripts() returns all the javascripts previously added by use_javascript()');
 
 // use_stylesheet() get_stylesheets()
