@@ -45,7 +45,7 @@
           <?php if($section->getSlug() == "atividades" || $section->getSlug() == "videos" || $section->getSlug() == "jogos"):?>
             <li>
               <div class="inner">
-                <a id="filtrar-tudo" class="btn" tabindex="0" aria-label="botão para selecionar todos os personagens filtro">Marcar todos.</a>
+                <a id="filtrar-tudo" class="btn" tabindex="0" aria-label="botão para selecionar todos os personagens filtro">Marcar todos</a>
               </div>
             </li> 
           <?php endif; ?>

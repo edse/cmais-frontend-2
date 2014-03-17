@@ -128,14 +128,14 @@ else { // senão traz pela semelhança de tags com o asset em questão
             
             
               <!--link artigo dica-->
-              <a href="#" title="">
+             
                 <h2 class="tit-dicas">
                   <i class="sprite-aspa-esquerda"></i>
                   <?php echo $dicaRelacionada[0]->getTitle(); ?>
                 </h2>
                 <p class="ellipsis"><?php echo utf8_encode(html_entity_decode($dicaRelacionada[0]->AssetContent->render())) ?></p>
                 <i class="sprite-aspa-direita"></i>
-              </a>
+             
               <!--/link artigo dica-->
               <?php $download = $dicaRelacionada[0]->retriveRelatedAssetsByRelationType("Download") ?>
               <?php if(count($download) > 0): ?>
@@ -157,14 +157,14 @@ else { // senão traz pela semelhança de tags com o asset em questão
             <?php if(count($displays['dicas']) > 0): ?>
               
                 <!--link artigo dica-->
-                <a href="#" title="">
+                
                   <h2 class="tit-dicas">
                     <i class="sprite-aspa-esquerda"></i>
                     <?php echo $displays['dicas'][0]->getTitle(); ?>
                   </h2>
                   <p class="ellipsis"><?php echo utf8_encode(html_entity_decode($displays['dicas'][0]->Asset->AssetContent->render())) ?></p>
                   <i class="sprite-aspa-direita"></i>
-                </a>
+               
                 <?php $download = $displays['dicas'][0]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
                 <?php if(count($download) > 0): ?>
                   <?php if($download[0]->AssetType->getSlug() == "file"): ?>
@@ -198,14 +198,14 @@ else { // senão traz pela semelhança de tags com o asset em questão
             
             
               <!--link artigo dica-->
-              <a href="#" title="">
+              
                 <h2 class="tit-dicas">
                   <i class="sprite-aspa-esquerda"></i>
                   <?php echo $displays['dicas'][1]->getTitle(); ?>
                 </h2>
                 <p class="ellipsis"><?php echo utf8_encode(html_entity_decode($displays['dicas'][1]->Asset->AssetContent->render())) ?></p>
                 <i class="sprite-aspa-direita"></i>
-              </a>
+             
               <!--/link artigo dica-->
               <?php $download = $displays['dicas'][1]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
               <?php if(count($download) > 0): ?>
@@ -226,14 +226,14 @@ else { // senão traz pela semelhança de tags com o asset em questão
           <?php if(count($dicaRelacionada) > 0): ?>
             <!--box-dica-->
             
-              <a href="#" title="">
+            
                 <h2 class="tit-dicas">
                   <i class="sprite-aspa-esquerda"></i>
                   <?php echo $dica[0]->getTitle(); ?>
                 </h2>
                 <p class="ellipsis"><?php echo utf8_encode(html_entity_decode($dicaRelacionada[0]->AssetContent->render())) ?></p>
                 <i class="sprite-aspa-direita"></i>
-              </a>
+            
               <?php $download = $dica[0]->retriveRelatedAssetsByRelationType("Download") ?>
               <?php if(count($download) > 0): ?>
                 <?php if($download[0]->AssetType->getSlug() == "file"): ?>
@@ -248,14 +248,14 @@ else { // senão traz pela semelhança de tags com o asset em questão
           <div class="span4 dica-pai">
           <?php if(isset($dica[0])): ?>
             
-              <a href="#" title="">
+             
                 <h2 class="tit-dicas">
                   <i class="sprite-aspa-esquerda"></i>
                   <?php echo $dica[0]->getTitle(); ?>
                 </h2>
                 <p class="ellipsis"><?php echo utf8_encode(html_entity_decode($dica[0]->AssetContent->render())) ?></p>
                 <i class="sprite-aspa-direita"></i>
-              </a>
+         
               <?php $download = $dica[0]->retriveRelatedAssetsByRelationType("Download") ?>
               <?php if(count($download) > 0): ?>
                 <?php if($download[0]->AssetType->getSlug() == "file"): ?>

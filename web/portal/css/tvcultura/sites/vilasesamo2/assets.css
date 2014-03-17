@@ -215,7 +215,7 @@ h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1
 /* botao anexar */
 .form .file-wrapper {cursor: pointer;display: inline-block;overflow: hidden;position: relative;}
 .form .file-wrapper input {cursor: pointer;font-size: 100px;height: 100%;filter: alpha(opacity=1);-moz-opacity: 0.01;opacity: 0.01;position: absolute;right: 0;top: 0;}
-.form .file-wrapper .button {float:right;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;border:none;color: #434343!important;cursor: pointer;display: inline-block;font-size: 11px;font-weight: bold;margin-right: 5px;padding: 8px 13px;text-transform: uppercase;font-family:'din-blackregular',Arial, Helvetica, sans-serif;font-size:18px;}
+.form .file-wrapper .button {float:right;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;border:none;color: #434343;cursor: pointer;display: inline-block;font-size: 11px;font-weight: bold;margin-right: 5px;padding: 8px 12px;text-transform: uppercase;font-family:'din-blackregular',Arial, Helvetica, sans-serif;font-size:18px;}
 .form .file-holder{clear: both;text-align: left;color: #FFF;margin: 10px 0 7px 0;padding-left: 13px;font-size: 12px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 
 
