@@ -470,7 +470,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             
             <!--nav-->
             <nav class="span12">
-              <a href="/vilasesamo/historia" class="col-um " title=""><i class="icones-rodape icone-triangulo-escuro"></i>História</a><!--cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
+              <a href="/vilasesamo/historia" class="col-um " title="">História</a><i class="icones-rodape icone-triangulo-escuro"></i><!--cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
               <a href="/vilasesamo/pais-e-educadores" class="col-dois " title=""></i>Pais e Educadores</a><!--cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
               <a href="/vilasesamo/na-tv" class="col-tres" title=""><i class="icones-rodape icone-triangulo-claro"></i>Na TV</a><!-- natv-footer - cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
               <a href="/vilasesamo/acessibilidade" class="col-quatro" title=""><i class="icones-rodape icone-triangulo-medio"></i>Acessibilidade</a>
