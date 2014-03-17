@@ -81,18 +81,18 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 							</div>
 							
             	<div class="pdf audio-caderno">
-								<a href="http://midia.cmais.com.br/assets/file/original/945ffa02895b94c75c1311479b69859e83d073ab.zip.zip">
+								<a href="http://midia.cmais.com.br/assets/file/original/945ffa02895b94c75c1311479b69859e83d073ab.zip">
 								<p>Audiobook Dicas + Caderno de Formação</p>
 								</a>
 							</div>
 							
             	<div class="pdf audio-descricao">
-								<a href="http://midia.cmais.com.br/assets/file/original/5d38a77908836e8983ea066dcda6dee430a5ae08.zip.zip">
+								<a href="http://midia.cmais.com.br/assets/file/original/5d38a77908836e8983ea066dcda6dee430a5ae08.zip">
 								<p>Áudiodescrição dos Personagens: Bel, Garibaldo e Sivan</p>
 								</a>
 							</div>
 							 
-						</div>
+						</div> 
               
         </div>
 
