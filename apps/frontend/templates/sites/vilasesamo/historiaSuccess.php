@@ -35,7 +35,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <!--container conteudo-->
     <div class="b-verde borda-arredonda">
       <h1>
-        <span class="icone-historia-grande"></span>
+        <span class=" icones-sprite-interna icone-historia-grande"></span>
         <?php echo $section->getTitle() ?>
       </h1>
       
