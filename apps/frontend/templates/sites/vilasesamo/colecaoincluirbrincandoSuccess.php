@@ -80,7 +80,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 								</a>
 							</div>
 							
-            	<div class="pdf audio-caderno">
+            	<!--div class="pdf audio-caderno">
 								<a href="">
 								<p>Audiobook Dicas + Caderno de Formação</p>
 								</a>
@@ -90,7 +90,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 								<a href="">
 								<p>Áudiodescrição dos Personagens: Bel, Garibaldo e Sivan</p>
 								</a>
-							</div>
+							</div-->
 							
 						</div>
               
