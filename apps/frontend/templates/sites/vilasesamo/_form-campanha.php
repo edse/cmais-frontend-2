@@ -311,6 +311,7 @@
 
 	  if(success == 2){
 	    $(".msgAcerto").show();
+	    $("#form-contato").hide();
 	    $(".msgAcerto").html("<p> Sua brincadeira foi enviada com sucesso<br/> e em breve estará em nossa galeria de brincadeiras!</p>");
 	  }else if(error == 1){
 	    $(".msgErro").show();
