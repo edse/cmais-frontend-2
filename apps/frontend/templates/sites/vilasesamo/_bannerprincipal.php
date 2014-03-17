@@ -20,7 +20,7 @@
           <div class="mpc_ls_slide_item" data-x="120" data-y="230" data-delay="500" data-duration="2500" data-easing="easeOutBounce" data-effect="slideLeft" data-fade="on"> 
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/02_mar_entrada/txt_1.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item" data-x="420" data-y="250" data-delay="500" data-duration="2500" data-easing="easeOutBounce" data-effect="slideRight" data-fade="on"> 
+          <div class="mpc_ls_slide_item" data-x="420" data-y="255" data-delay="500" data-duration="2500" data-easing="easeOutBounce" data-effect="slideRight" data-fade="on"> 
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/02_mar_entrada/txt_2.png" alt="">
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">  
