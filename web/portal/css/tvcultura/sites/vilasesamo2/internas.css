@@ -25,7 +25,7 @@ a{text-decoration:underline!important;}
 .mais:hover { color:#fff; text-decoration:underline; }
 /* filtro personagem */
 /*#filtrar-tudo{margin: 0 auto;display: block;margin-bottom: 4px;}*/
-#filtrar-tudo{text-transform: uppercase;border: 0;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/selecionar.png) no-repeat top; height:53px;line-height: 20px;padding: 17px 0; color:#fff;  -moz-text-shadow:none; -webkit-text-shadow:none;text-shadow:none;}
+#filtrar-tudo{text-transform: uppercase;border: 0;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/selecionar.png) no-repeat top; height:40px;line-height: 20px;padding: 17px 0; color:#fff;  -moz-text-shadow:none; -webkit-text-shadow:none;text-shadow:none;}
 #filtrar-tudo:hover{background-position:0 bottom;} 
 .todos-itens li,
 .scroll,
@@ -168,7 +168,7 @@ body.campanhas{background-color:#fee133!important;}
 .todos-itens #container li{margin:0 0 0 20px!important;}*/
 .todos-itens .row-fluid .span4 {width: 300px;}
 .todos-itens li h2 a { color:#fff; padding:0 10px; }
-.todos-itens li img { border-bottom:2px solid #0191fb; border-top:2px solid #0191fb; width:300px; height:300px; }
+.todos-itens li img { border-bottom:2px solid #0191fb; border-top:2px solid #0191fb; width:300px; /*height:300px;*/ }
 .todos-itens li:hover img { -moz-opacity: 0.50;-khtml-opacity: 0.50;opacity: 0.50;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);filter:alpha(opacity=50); }
 .todos-itens li a { display:block; }
 .todos-itens li h2 a { background:none; }
@@ -368,7 +368,7 @@ body.personagens { background:#b60401; }
 .personagens .dest-pers .span8{clear:none;}
 .personagens .dest-pers .mais-brincadeiras{margin: 0;text-align: left;height: 30px;padding-left: 15px;}
 .personagens .dest-pers .mais-brincadeiras p{color: #fff;text-transform: uppercase;line-height: 31px;}
-.personagens .desc-personagem{overflow: hidden; background: #FFF;}
+.personagens .desc-personagem{overflow: hidden; background: #FFF;padding:30px 0;}
 .personagens .filtro .descritivo{ padding:20px 20px 20px 0px; }
 .personagens .filtro .descritivo h3{color:#d71c0d;line-height: 18px;margin-top: 0px; font-size:25px;}
 .personagens .filtro .descritivo p{font-size:16px;}
@@ -414,7 +414,7 @@ body.cuidadores{background-color:#feec3c;}
 .cuidadores .autores{color: #00AA52!important; text-decoration:underline;}
 .cuidadores .todos-itens #container{width:820px; margin-left: -10px!important;*margin-left:-10px;}
 .cuidadores .todos-itens .element{width:200px; margin-left: 10px!important;}
-.cuidadores .todos-itens li img{border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;width: 200px;height: 200px;}
+.cuidadores .todos-itens li img{border-bottom: 2px solid #008d36;border-top: 2px solid #008d36;/*width: 200px;height: 200px;*/}
 .cuidadores .selecione .barra-selecao{ height: 40px;}
 .cuidadores .selecione .barra-selecao h3{color:#FFF; font-size:18px;width:270px; float:left;padding: 0px 10px; text-transform: uppercase; margin:0;}
 .cuidadores .google-banner{width: 287px;height: 250px;margin: 20px 0;}

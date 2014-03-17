@@ -15,7 +15,7 @@
     <!--span8-->
     <div class="span8">
       
-      <?php if(isset($_GET["success"])):?>
+      <?php /*if(isset($_GET["success"])):?>
         <?php if($_GET["success"] == 2): ?>
           <div class="msgAcerto" id="statusMsg_0">
             <p>
@@ -50,7 +50,13 @@
             </p>
           </div>
         <?php endif; ?>
-      <?php endif; ?>
+      <?php endif; */?>
+      
+
+      
+      <div class="msgAcerto" id="statusMsg_0" style="display:none"> </div>
+			<div class="msgErro" id="statusMsg_1" style="display:none"> </div>
+			
       <!--form-->  
        
       <form class="form-horizontal" id="form-contato" action="http://app.cmais.com.br/actions/vilasesamo/campanhas/brincar-e-um-direito-da-crianca.php" method="post" enctype="multipart/form-data" <?php if(isset($_GET["success"]))echo 'style="display:none;"' ?> >
@@ -292,6 +298,32 @@
         verifyKey();
       });
     }
+    
+
+		function getURLParameter(name) {
+			return decodeURI(
+		        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+		    );
+		}
+		
+	  var success = getURLParameter("success");
+	  var error = getURLParameter("error");
+
+	  if(success == 2){
+	    $(".msgAcerto").show();
+	    $("#form-contato").hide();
+	    $(".msgAcerto").html("<p> Sua brincadeira foi enviada com sucesso<br/> e em breve estará em nossa galeria de brincadeiras!</p>");
+	  }else if(error == 1){
+	    $(".msgErro").show();
+	    $(".msgErro").html("<p>Erro inesperado<br/>Por favor, tente mais tarde!</p>");
+	  }else if(error == 2){
+	    $(".msgErro").show();
+	    $(".msgErro").html("<p>Formato de imagem inválido<br/> Por favor, tente com JPG, PNG ou GIF!</p>");
+	  }else if(error == 3){
+	    $(".msgErro").show();
+	    $(".msgErro").html("<p>Arquivo muito grande<br/> Por favor, tente com um arquivo de até 15 MB!</p>");
+	  }
+
   });
   var SITE = SITE || {};
 
@@ -317,7 +349,7 @@
     if($(obj).val()==$(obj).attr("data-default"))
       $(obj).val('');
       //$(obj).addClass("error");
-  } 
+  }
   function verifyKey(){
     setTimeout(function() {
       $('input, textarea').not('#concordo').each(function(){

@@ -40,9 +40,9 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       <section id="container-na-tv"><!--só leu qndo tirei o aria-hidden e o tabindex -1-->
         <div class="container-na-tv">
           
-          <?php if(isset($displays['historia'])): ?>
-            <?php if(count($displays['historia']) > 0): ?>
-              <?php echo html_entity_decode($displays['historia'][0]->Asset->AssetContent->render()) ?>
+          <?php if(isset($displays['NA-TV'])): ?>
+            <?php if(count($displays['NA-TV']) > 0): ?>
+              <?php echo html_entity_decode($displays['NA-TV'][0]->Asset->AssetContent->render()) ?>
             <?php endif; ?>
           <?php endif; ?>
           <!--Explicação acessibilidade visite o site da Vila Sesamo nos EUA-->

@@ -21,9 +21,9 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 <div id="content">
   
   <!--Explicação acessibilidade-->
-	<h1 tabindex="0" class="ac-explicacao">
-	 <?php echo $section->getDescription(); ?>
-	</h1>
+  <h1 tabindex="0" class="ac-explicacao">
+   <?php echo $section->getDescription(); ?>
+  </h1>
   
   <!--section -->
   <section id="categoria-box-pais" class="filtro row-fluid pais categorias">
@@ -67,6 +67,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <?php endif; ?>
           <!--/selo-->
           
+          
+         
           <!--destaque-principal-->
           <?php if(isset($displays['destaque-principal'])): ?>
             <?php if(count($displays['destaque-principal']) > 0): ?>    
@@ -74,15 +76,13 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 <!--video ou imagem-->
                 <?php if($displays["destaque-principal"][0]->Asset->AssetType->getSlug() == "video"): ?>
                 
-     						 <!-- Inserindo o player para acessibilidade -->   
-								      <div class="asset">
-								        <div id="player" style="margin-top: -160px;"></div>
-								        <a href="#" class="play" aria-label="Iniciar o vídeo"></a>
-								        <a href="#" class="pause" aria-label="Pausar o vídeo"></a>
-								        <a href="#" class="stop" aria-label="Parar o vídeo"></a>
-								      </div>
-								   
-                
+                 <!-- Inserindo o player para acessibilidade -->   
+                  <div class="asset">
+                    <div id="player"></div>
+                    <a href="#" class="play" aria-label="Iniciar o vídeo"></a>
+                    <a href="#" class="pause" aria-label="Pausar o vídeo"></a>
+                    <a href="#" class="stop" aria-label="Parar o vídeo"></a>
+                  </div>
                 <!--iframe width="300" height="246" src="http://www.youtube.com/embed/<?php echo $displays["destaque-principal"][0]->Asset->AssetVideo->getYoutubeId() ?>?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe-->
                 
                 
@@ -90,91 +90,53 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 <img tabindex="0" class="img-destaque" src="<?php echo $displays["destaque-principal"][0]->retriveImageUrlByImageUsage("image-3-b") ?>" alt="<?php echo $displays["destaque-principal"][0]->getTitle() ?>" />
                 <?php endif; ?>
                 <!--/video ou imagem-->
-                
+           <?php if($section->getSlug()=="incluir-brincando"):?>
+            
+             <p>
+              INCLUIR BRINCANDO é um projeto voltado para o fortalecimento da consciência sobre o direito do brincar seguro e inclusivo, da diversidade e do estímulo aos hábitos saudáveis, com ênfase na inclusão de crianças com deficiências.
+            </p>
+            <p>Saiba mais sobre o projeto e tenha acesso a todo o conteúdo digital desta iniciativa clicando nos links abaixo.</p>
+            
+            <?php else:?>  
               <p>  
                 <!--descricao-->    
                 <?php echo $displays['destaque-principal'][0]->getDescription() ?>
                 <!--/descricao-->
               </p>
+             <?php endif;?>
            <?php endif; ?>
           <?php endif; ?>
-          <!--/destaque-principal--->    
+          <!--/destaque-principal--->
+          
+          
+              
         </div>
        
       <div class="divisa"></div>
       
       <div class="row-fluid span12 box-pais">
-        
+       <!--/box pais habitos-saudaveis--> 
+       <?php if($section->getSlug() == "habitos-saudaveis"):?>
         <!--box-dica-->
-        <?php if(isset($displays['dicas'])): ?>
-          <?php if(count($displays['dicas']) > 0): ?> 
-            <div class="span4 dica-pai">
-              
-              <!--link artigo dica-->
-              <a href="#" title="">
-                <h2 class="tit-dicas">
-                  <i class="sprite-aspa-esquerda"></i>
-                  <?php echo $displays['dicas'][0]->getTitle(); ?>
-                </h2>
-                <p class="ellipsis">
-                  <?php echo html_entity_decode($displays['dicas'][0]->Asset->AssetContent->render()) ?>
-                </p>
-                <i class="sprite-aspa-direita"></i>
-              </a>
-              <!--link artigo dica-->
-              
-              <!--botao baixa dica-->
-              <?php $download = $displays['dicas'][0]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
-              <?php if(count($download) > 0): ?>
-                <?php if($download[0]->AssetType->getSlug() == "file"): ?>
-                  <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</a>
-                <?php endif; ?>
-              <?php endif; ?>
-              <!--botao baixa dica-->
-              
-            </div>
-          <?php endif; ?>
-        <?php endif; ?>
-        <!--/box-dica-->
-        <?php
-          // Pega o bloco "parceiros" da seção "para os pais"
-          $forParents = Doctrine::getTable('Section')->findOneById(2399);
-          $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($forParents->getId(), "parceiros");
-          if ($block) {
-            $_displays["parceiros"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceiros"
-          }    
-        ?>
-        <!--box artigo-->
-        <?php if(count($displays['artigos']) > 0): ?>
-          <?php $preview = $displays['artigos'][0]->Asset->retriveRelatedAssetsByRelationType("Preview") ?>
-          <div class="span4 artigo">
-            <a href="http://cmais.com.br/<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $displays['artigos'][0]->Asset->getSlug() ?>" title="<?php echo $displays['artigos'][0]->getTitle() ?>">
-              <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt"<?php echo $displays['artigos'][0]->getTitle() ?>"/>
-              <h2 class="tit-artigo"><?php echo $displays['artigos'][0]->getTitle() ?></h2> 
-              <p><?php echo $displays['artigos'][0]->getDescription() ?></p>
-            </a>
-          </div>
-        <?php else: // senão existir artigo, tenta pegar um segundo destaque do bloco "dicas" pra preencher o espaço ?>
-          
-          <!--box-dica-->
-          <?php if(isset($displays['dicas'][1])): ?>
+          <?php if(isset($displays['dicas'])): ?>
+            <?php if(count($displays['dicas']) > 0): ?> 
               <div class="span4 dica-pai">
                 
                 <!--link artigo dica-->
                 <a href="#" title="">
                   <h2 class="tit-dicas">
                     <i class="sprite-aspa-esquerda"></i>
-                    <?php echo $displays['dicas'][1]->getTitle(); ?>
+                    <?php echo $displays['dicas'][0]->getTitle(); ?>
                   </h2>
                   <p class="ellipsis">
-                    <?php echo html_entity_decode($displays['dicas'][1]->Asset->AssetContent->render()) ?>
+                    <?php echo html_entity_decode($displays['dicas'][0]->Asset->AssetContent->render()) ?>
                   </p>
                   <i class="sprite-aspa-direita"></i>
                 </a>
                 <!--link artigo dica-->
                 
                 <!--botao baixa dica-->
-                <?php $download = $displays['dicas'][1]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
+                <?php $download = $displays['dicas'][0]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
                 <?php if(count($download) > 0): ?>
                   <?php if($download[0]->AssetType->getSlug() == "file"): ?>
                     <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</a>
@@ -183,32 +145,123 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 <!--botao baixa dica-->
                 
               </div>
+            <?php endif; ?>
           <?php endif; ?>
           <!--/box-dica-->
-          
-        <?php endif; ?>
-        <!--/box artigo-->
-        
-        <!--box-parceiros-->
-        
-        <?php if(isset($_displays['parceiros']) > 0): ?>
-          <?php if(count($_displays['parceiros']) > 0): ?>
-            <div class="span4">
-              <p style="margin: 20px 0 12px 0;">Conheça nossos parceiros:</p>
-              <a href="<?php echo $_displays['parceiros'][0]->retriveUrl() ?>" title="<?php echo $_displays['parceiros'][0]->getTitle() ?>">
-                <img src="<?php echo $_displays['parceiros'][0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $_displays['parceiros'][0]->getTitle() ?>" />
+          <?php
+            // Pega o bloco "parceiros" da seção "para os pais"
+            $forParents = Doctrine::getTable('Section')->findOneById(2399);
+            $block = Doctrine::getTable('Block')->findOneBySectionIdAndSlug($forParents->getId(), "parceiros");
+            if ($block) {
+              $_displays["parceiros"] = $block->retriveDisplays(); // Pega os destaques do bloco "parceiros"
+            }    
+          ?>
+          <!--box artigo-->
+          <?php if(count($displays['artigos']) > 0): ?>
+            <?php $preview = $displays['artigos'][0]->Asset->retriveRelatedAssetsByRelationType("Preview") ?>
+            <div class="span4 artigo">
+              <a href="http://cmais.com.br/<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $displays['artigos'][0]->Asset->getSlug() ?>" title="<?php echo $displays['artigos'][0]->getTitle() ?>">
+                <img src="<?php echo $preview[0]->retriveImageUrlByImageUsage("image-13") ?>" alt"<?php echo $displays['artigos'][0]->getTitle() ?>"/>
+                <h2 class="tit-artigo"><?php echo $displays['artigos'][0]->getTitle() ?></h2> 
+                <p><?php echo $displays['artigos'][0]->getDescription() ?></p>
               </a>
             </div>
+          <?php else: // senão existir artigo, tenta pegar um segundo destaque do bloco "dicas" pra preencher o espaço ?>
+            
+            <!--box-dica-->
+            <?php if(isset($displays['dicas'][1])): ?>
+                <div class="span4 dica-pai">
+                  
+                  <!--link artigo dica-->
+                  <a href="#" title="">
+                    <h2 class="tit-dicas">
+                      <i class="sprite-aspa-esquerda"></i>
+                      <?php echo $displays['dicas'][1]->getTitle(); ?>
+                    </h2>
+                    <p class="ellipsis">
+                      <?php echo html_entity_decode($displays['dicas'][1]->Asset->AssetContent->render()) ?>
+                    </p>
+                    <i class="sprite-aspa-direita"></i>
+                  </a>
+                  <!--link artigo dica-->
+                  
+                  <!--botao baixa dica-->
+                  <?php $download = $displays['dicas'][1]->Asset->retriveRelatedAssetsByRelationType("Download") ?>
+                  <?php if(count($download) > 0): ?>
+                    <?php if($download[0]->AssetType->getSlug() == "file"): ?>
+                      <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</a>
+                    <?php endif; ?>
+                  <?php endif; ?>
+                  <!--botao baixa dica-->
+                  
+                </div>
+            <?php endif; ?>
+            <!--/box-dica-->
+            
           <?php endif; ?>
-        <?php endif; ?>
-        <!--/box-parceiros-->
-      <?php else: // senão ela se torna uma categoria comum e pega somente a descrição da seção ?>
+          <!--/box artigo-->
+          
+          <!--box-parceiros-->
+          
+          <?php if(isset($_displays['parceiros']) > 0): ?>
+            <?php if(count($_displays['parceiros']) > 0): ?>
+              <div class="span4 parceiros">
+                <p style="margin: 20px 0 12px 0;">Conheça nossos parceiros:</p>
+                <a href="<?php echo $_displays['parceiros'][0]->retriveUrl() ?>" title="<?php echo $_displays['parceiros'][0]->getTitle() ?>">
+                  <img src="<?php echo $_displays['parceiros'][0]->retriveImageUrlByImageUsage("image-13-b") ?>" alt="<?php echo $_displays['parceiros'][0]->getTitle() ?>" />
+                </a>
+              </div>
+            <?php endif; ?>
+          <?php endif; ?>
+          <!--/box-parceiros-->
+        <?php else: // senão ela se torna uma categoria comum e pega somente a descrição da seção ?>
+  
+          <!--destaque-principal-->
+          <?php echo $section->getDescription() ?>
+          <!--/destaque-principal-->
+         
+      <?php endif; ?> 
+    <?php endif; ?> 
+    <!--/box pais habitos-saudaveis-->
+    
+    <!--/box pais incluir-brincando-->
+    <?php if($section->getSlug()=="incluir-brincando"):?>
+      
 
-        <!--destaque-principal-->
-        <?php echo $section->getDescription() ?>
-        <!--/destaque-principal-->
-       
-    <?php endif; ?>  
+      <div class="row-fluid">
+        <!--artigo 1-->
+        <div class="span4 artigo" style="margin-left:0px!important;">
+          <a href="http://cmais.com.br/vilasesamo/pais-e-educadores/incluir-brincando" title="O Projeto">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/01.jpg" alt"">
+            <h2 class="tit-artigo">O PROJETO</h2> 
+            <p>Saiba mais sobre o Incluir Brincando</p>
+          </a>
+        </div>
+        <!--/artigo 1-->
+        
+        <!--artigo 2-->
+        <div class="span4 artigo">
+          <a href="http://cmais.com.br/vilasesamo/pais-e-educadores/parceiros-vila-sesamo" title="Os Parceiros">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/02.jpg" alt"">
+            <h2 class="tit-artigo">OS PARCEIROS</h2> 
+            <p>O trabalho em conjunto é fundamental para o sucesso do projeto</p>
+          </a>
+        </div>
+        <!--/artigo 2-->
+        
+        <!--artigo 3-->
+        <div class="span4 artigo">
+          <a href="http://cmais.com.br/vilasesamo/colecaoincluirbrincando" title="Coleção Incluir Brincando">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/04.jpg" alt"">
+            <h2 class="tit-artigo">COLEÇÃO INCLUIR BRINCANDO</h2> 
+            <p>Tenha acesso aos materiais de formação dos professores</p>
+          </a>
+        </div>
+        <!--/artigo 3-->
+      </div>
+      
+    <?php endif;?> 
+    <!--/box pais incluir-brincando-->
     </div>
     <!--/container conteudo-->
     
@@ -263,7 +316,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               ?>
               <i class="icones-sprite-interna icone-<?php echo $AssetSection; ?>-pequeno"></i>
               <div>
-                <img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"/>
+                <img class="altura" src="/portal/images/capaPrograma/vilasesamo2/altura.png"/>
                 <?php echo $d->getTitle() ?>
               </div>
             </a>

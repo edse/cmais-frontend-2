@@ -25,26 +25,24 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     }
     var view="";
     var html = "";
-    
-    if(getURLParameter("m") == "2143"){
       
-      //verificando navegador
-      $userAgent = navigator.userAgent;
-      var str = $userAgent;
-      if(str.indexOf("iPhone") != -1 || str.indexOf("iPod") != -1 || str.indexOf("Android") != -1 && str.indexOf("Mobile") != -1 || str.indexOf("Windows Phone") != -1 && str.indexOf("IEMobile") != -1)  {
-        view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />';
-        view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />';
-        view += '<link rel="stylesheet" media="screen" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" />';
-      }else{
-        view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />';
-        view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />';
-        view += '<link rel="stylesheet" media="only screen and (min-width:501px) and (max-width:979px)" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_medium_screen.css" />';
-        view += '<link rel="stylesheet" media="only screen and (min-width:50px) and (max-width:500px)" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" />';
-      }
+    //verificando navegador
+    $userAgent = navigator.userAgent;
+    var str = $userAgent;
+    if(str.indexOf("iPhone") != -1 || str.indexOf("iPod") != -1 || str.indexOf("Android") != -1 && str.indexOf("Mobile") != -1 || str.indexOf("Windows Phone") != -1 && str.indexOf("IEMobile") != -1)  {
+      view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />';
+      view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />';
+      view += '<link rel="stylesheet" media="screen" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" />';
     }else{
       view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />';
       view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />';
+      view += '<link rel="stylesheet" media="only screen and (min-width:501px) and (max-width:979px)" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_medium_screen.css" />';
+      view += '<link rel="stylesheet" media="only screen and (min-width:50px) and (max-width:500px)" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/media_smal_screen.css" />';
     }
+
+    //view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />';
+    //view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/geral.css" type="text/css" />';
+  
     $('head').prepend(view);
     </script>
     <?php echo $noscript; ?> 
