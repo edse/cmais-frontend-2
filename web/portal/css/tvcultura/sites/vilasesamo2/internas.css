@@ -384,7 +384,7 @@ body.personagens { background:#b60401; }
 .personagens .span8 .span6 {border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
 .personagens #container-personagens{}
 .personagens .conteudo-asset {padding: 0;width: 940px;}
-.personagens .conteudo-asset span {width: 70%;float: left;}
+.personagens .conteudo-asset p span {width: 70%;float: left;}
 .personagens .q-pers{float:left; width: 225px; height:225px; margin:5px; border-radius:5px;  -moz-border-radius:5px; -webkit-border-radius: 5px; border:none;}
 
 
