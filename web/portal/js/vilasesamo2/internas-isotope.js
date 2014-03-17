@@ -205,6 +205,9 @@
 
       
     }
+    $( document ).ready(function() {
+    $('#container').isotope();
+    
     /*lista destaque small
      $('.todos-itens li').each(function(i){
        el = $(this);
@@ -218,6 +221,7 @@
        }
      });*/
     
+  	});
   });
   
  
