@@ -11,7 +11,7 @@
       <ul aria-hidden="true" tabindex="-1">
         <!--item incluir brincando-->
         <li aria-hidden="true" tabindex="-1" class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/01_mar_novidade_ chegando/pattern.jpg') repeat;">
-          <div class="mpc_ls_slide_item" data-x="480" data-y="80" data-delay="1200" data-duration="3500" data-easing="easeOutExpo" data-effect="slideBottom" data-fade="on">  
+          <div class="mpc_ls_slide_item" data-x="478" data-y="80" data-delay="1200" data-duration="3500" data-easing="easeOutExpo" data-effect="slideBottom" data-fade="on">  
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/02_mar_entrada/bel.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="45" data-y="0" data-delay="500" data-duration="1500" data-easing="easeOutBack" data-effect="slideLeft" data-fade="on"> 
@@ -20,7 +20,7 @@
           <div class="mpc_ls_slide_item" data-x="120" data-y="230" data-delay="500" data-duration="2500" data-easing="easeOutBounce" data-effect="slideLeft" data-fade="on"> 
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/02_mar_entrada/txt_1.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item" data-x="420" data-y="245" data-delay="500" data-duration="2500" data-easing="easeOutBounce" data-effect="slideRight" data-fade="on"> 
+          <div class="mpc_ls_slide_item" data-x="420" data-y="242" data-delay="500" data-duration="2500" data-easing="easeOutBounce" data-effect="slideRight" data-fade="on"> 
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/02_mar_entrada/txt_2.png" alt="">
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">  
@@ -82,7 +82,7 @@
              <span style="margin-left: -40px;">de brincar? </span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="http://cmais.com.br/vilasesamo/videos/brincar-e-um-direito-da-crianca-acessivelhttp://cmais.com.br/d.php/vilasesamo/videos/brincar-e-um-direito-da-crianca-acessivel" class="total" title=""></a>
+            <a href="http://cmais.com.br/vilasesamo/videos/brincar-e-um-direito-da-crianca-acessivel" class="total" title=""></a>
           </div>
         </li>
         <!--/item videos-->
