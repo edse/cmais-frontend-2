@@ -261,11 +261,17 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 <a class="btn-na-tv-topo" href="http://cmais.com.br/vilasesamo/na-tv" title="Na TV" target="_self" aria-label="Na TV. Resuminho da história do Vila Sésamo e seus horários de exibição no Canal TV Cultura e TV Rá-Tim-Bum">Na TV</a>
                 <span class="sprite-menu-ball"></span>
               </li>
-              <li>  
+               <li>  
                 <i class="icones-sprite-menu icone-acessibilidade-pqno-verde"></i>
                 <a class="btn-acessibilidade-topo" href="http://cmais.com.br/vilasesamo/acessibilidade" title="Acessibilidade" target="_self" aria-label="Acessibilidade. Explicação do que estamos fazendo para deixar a cada dia o site do Vila Sésamo mais e mais acessível">Acessibilidade</a>
+                <span class="sprite-menu-ball"></span>
+              </li>  
+              <li>  
+                <i class="icones-sprite-menu icone-historia-pqno-verde"></i>
+                <a class="btn-historia-topo" href="http://cmais.com.br/vilasesamo/historia" title="Historia" target="_self" aria-label="História. Conheça um pouco mais sobre a história do Vila Sésamo">História</a>
                 <!--span class="sprite-menu-ball"></span-->
               </li>  
+             
               <!--li>
                 <a href="/vilasesamo2/historia" title="História" target="_self">História</a>
               </li-->            
