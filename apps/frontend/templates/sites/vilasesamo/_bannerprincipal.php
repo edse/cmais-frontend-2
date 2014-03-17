@@ -87,7 +87,7 @@
           <div class="mpc_ls_slide_item par" data-x="650" data-y="310" data-delay="1800" data-duration="2700" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on"> 
             <span style="margin-left: -20px">o que é direito</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="650" data-y="350" data-delay="2000" data-duration="2900" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on">
+          <div class="mpc_ls_slide_item par" data-x="650" data-y="360" data-delay="2000" data-duration="2900" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on">
              <span style="margin-left: -40px;">de brincar? </span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
@@ -98,19 +98,19 @@
         
         <!--item atividades-->
         <li aria-hidden="true" tabindex="-1" class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/05_mar_atividades/pattern.jpg') repeat;">
-          <div class="mpc_ls_slide_item" data-x="450" data-y="18" data-delay="800" data-duration="3500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">  
+          <div class="mpc_ls_slide_item" data-x="450" data-y="18" data-delay="800" data-duration="2500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">  
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/05_mar_atividades/atividades.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item tit-atividades" data-x="40" data-y="200" data-delay="500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
+          <div class="mpc_ls_slide_item tit-atividades" data-x="40" data-y="200" data-delay="1500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
             <span>Atividades</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="280" data-delay="500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideBottom" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="40" data-y="280" data-delay="1300" data-duration="2000" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>Veja as novas</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="320" data-delay="500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideBottom" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="40" data-y="325" data-delay="1400" data-duration="2200" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>brincadeiras para  </span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="360" data-delay="500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideBottom" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="40" data-y="370" data-delay="1600" data-duration="2400" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>você imprimir! </span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
