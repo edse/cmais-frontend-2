@@ -124,13 +124,13 @@
           <div class="mpc_ls_slide_item" data-x="100" data-y="20" data-delay="800" data-duration="3500" data-easing="easeOutBack" data-effect="slideLeft" data-fade="on">  
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/06_mar_personagens/sivan.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item tit-personagens" data-x="530" data-y="120" data-delay="3400" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item tit-personagens" data-x="530" data-y="120" data-delay="3000" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>Personagens</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="530" data-y="180" data-delay="3500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideRight" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="530" data-y="180" data-delay="3200" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideRight" data-fade="on"> 
             <span>Você já conhece </span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="530" data-y="220" data-delay="3600" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideRight" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="530" data-y="230" data-delay="3400" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>a Sivan? </span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
@@ -144,13 +144,13 @@
           <div class="mpc_ls_slide_item" data-x="500" data-y="80" data-delay="800" data-duration="3500" data-easing="easeOutBack" data-effect="slideLeft" data-fade="on">  
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/07_mar_pais_e_educadores/pais_professores.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item tit-pais" data-x="40" data-y="200" data-delay="500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideBottom" data-fade="on"> 
+          <div class="mpc_ls_slide_item tit-pais" data-x="40" data-y="200" data-delay="1200" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideBottom" data-fade="on"> 
             <span>Pais e educadores</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="260" data-delay="500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="40" data-y="260" data-delay="1400" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
             <span>Conheça o projeto</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="300" data-delay="500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="40" data-y="310" data-delay="1500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
             <span>Incluir Bricando.</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
