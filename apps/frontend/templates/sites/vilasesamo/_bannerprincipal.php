@@ -2,15 +2,6 @@
     $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
     ?> 
     
-   <style type="text/css">
-    .mpc_ls_slide_item{color:#fff;font-family: 'din-blackregular', Arial, Helvetica, sans-serif;}
-    .tit-jogos{font-size:50px;text-shadow:5px 5px 5px #A00505;}
-    .par{font-size:46px;}
-    .tit-videos{font-size:50px;text-shadow:3px 3px 3px #D82A1B;}
-    .tit-atividades{font-size:50px;text-shadow:3px 3px 3px #0C859C}
-    .tit-pais{font-size:50px;text-shadow:3px 3px 3px #017005}
-    .tit-personagens{font-size:50px;text-shadow:3px 3px 3px #5105A3}
-   </style>
    
   <!-- carrossel desktop-->
   <section id="carrossel-destaque" aria-label="seção com 6 baners">
@@ -29,7 +20,7 @@
           <div class="mpc_ls_slide_item" data-x="120" data-y="230" data-delay="500" data-duration="2500" data-easing="easeOutBounce" data-effect="slideLeft" data-fade="on"> 
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/02_mar_entrada/txt_1.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item" data-x="420" data-y="230" data-delay="500" data-duration="2500" data-easing="easeOutBounce" data-effect="slideRight" data-fade="on"> 
+          <div class="mpc_ls_slide_item" data-x="420" data-y="250" data-delay="500" data-duration="2500" data-easing="easeOutBounce" data-effect="slideRight" data-fade="on"> 
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/02_mar_entrada/txt_2.png" alt="">
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">  

@@ -10,6 +10,14 @@
 #carrossel-destaque .slide05 .tit-banner.sombra{color:#fbb926;}
 #carrossel-destaque .slide06 .tit-banner.sombra{color:#018e30;}
 
+#carrossel-destaque .mpc_ls_slide_item{color:#fff;font-family: 'din-blackregular', Arial, Helvetica, sans-serif;}
+#carrossel-destaque .tit-jogos{font-size:50px;text-shadow:5px 5px 5px #A00505;}
+#carrossel-destaque .par{font-size:46px;}
+#carrossel-destaque .tit-videos{font-size:50px;text-shadow:3px 3px 3px #D82A1B;}
+#carrossel-destaque .tit-atividades{font-size:50px;text-shadow:3px 3px 3px #0C859C}
+#carrossel-destaque .tit-pais{font-size:50px;text-shadow:3px 3px 3px #017005}
+#carrossel-destaque .tit-personagens{font-size:50px;text-shadow:3px 3px 3px #5105A3}
+
 /*carrossel personagens vila sesamo*/
 #carrossel-p{max-width: 940px;margin: 0 auto; border-radius:8px;}
 #carrossel-personagem{max-width:980px;margin:30px auto;}
