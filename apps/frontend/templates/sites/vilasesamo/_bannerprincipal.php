@@ -33,7 +33,7 @@
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/02_mar_entrada/txt_2.png" alt="">
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">  
-            <a href="http://cmais.com.br/vilasesamo/pais-e-educadores/incluir-brincando" class="total" title="Novidade chegando"></a>
+            <a href="http://cmais.com.br/vilasesamo/categorias/incluir-brincando" class="total" title="Novidade chegando"></a>
           </div>
         </li>
         <!--/item incluir brincando-->
@@ -202,7 +202,7 @@
           
           switch(i){
             case 0:
-              $(this).attr("aria-label", "Incluir Brincando - Garibaldo, Bel e Sivan estão acenando para o povo.").attr('data-href','http://cmais.com.br/vilasesamo/pais-e-educadores/incluir-brincando');
+              $(this).attr("aria-label", "Incluir Brincando - Garibaldo, Bel e Sivan estão acenando para o povo.").attr('data-href','http://cmais.com.br/vilasesamo/categorias/incluir-brincando');
             break;
             case 1:
               $(this).attr("aria-label", "Novo Jogo Teste a sua memória e divirta-se - Groover esta pensativo com uma bolacha na mão.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/jogos/jogo-da-memoria-vila-sesamo');
