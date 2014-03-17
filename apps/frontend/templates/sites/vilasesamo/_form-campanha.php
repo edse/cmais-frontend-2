@@ -312,7 +312,7 @@
 	  if(success == 2){
 	    $(".msgAcerto").show();
 	    $("#form-contato").hide();
-	    $(".msgAcerto").html("<p> Sua brincadeira foi enviada com sucesso<br/> e em breve estará em nossa galeria de brincadeiras!</p>");
+	    $(".msgAcerto").html("<p> Sua brincadeira foi enviada com sucesso<br/> e em breve estará em nossa galeria de brincadeiras!</p>").scrollTo('#statusMsg_0');
 	  }else if(error == 1){
 	    $(".msgErro").show();
 	    $(".msgErro").html("<p>Erro inesperado<br/>Por favor, tente mais tarde!</p>");
