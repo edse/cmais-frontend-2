@@ -150,10 +150,12 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-cuidadores{ background-position: 0 -922px; width: 36px; height: 36px; float: left; margin-top: -9px;}
 .icone-natv-peqno-verde{ background-position: 0 -1058px; width: 36px; height: 36px;float:left; margin-top: -9px;} 
 .icone-acessibilidade-pqno-verde{ background-position: 0 -1194px; width: 36px; height: 36px; float:left;margin-top: -9px; }
+.icone-historia-pqno-verde{ background-position: 0 -1194px; width: 36px; height: 36px; float:left;margin-top: -9px; }
 .btn-cuidadores-topo{padding-left:10px!important;float:left;}
 .btn-na-tv-topo{padding-left:10px!important;float:left;}
 .btn-acessibilidade-topo{padding-left:10px!important;float:left;}
 .btn-cuidadores-topo.active,
+.btn-historia-topo.active,
 .btn-na-tv-topo.active,
 .btn-acessibilidade-topo.active{color:#737373;font-family:'din-blackregular', Arial, Helvetica, sans-serif; font-weight: normal !important; text-decoration:underline!important; }
 
@@ -475,7 +477,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .topo-vila nav { float:right; margin-right:0;  }
 .topo-vila .nav,
 .topo-vila nav form { float:right; }
-.topo-vila .nav { height:20px; padding:0 10px; margin-top:18px!important; width:490px; float:left; }
+.topo-vila .nav { height:20px; padding:0 10px; margin-top:18px!important; width:560px; float:left; }
 .topo-vila .nav li a { padding:0!important; float:left!important; text-transform:uppercase; text-shadow:none!important; color:#737373!important; font-weight: normal;}
 .topo-vila .nav li a:hover { color:#737373; background:none !important; font-weight: normal !important; }
 .topo-vila .nav li .sprite-menu-ball {  display: block; margin:7px 5px 0 10px; float:left; }
