@@ -470,9 +470,10 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             
             <!--nav-->
             <nav class="span12">
-              <a href="/vilasesamo/pais-e-educadores" class="col-esq " title="">Pais e Educadores</a><!--cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
-              <a href="/vilasesamo/na-tv" class="col-central" title=""><i class="icones-rodape icone-triangulo-claro"></i>Na TV</a><!-- natv-footer - cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
-              <a href="/vilasesamo/acessibilidade" class="col-dir" title=""><i class="icones-rodape icone-triangulo-medio"></i>Acessibilidade</a>
+              <a href="/vilasesamo/pais-e-educadores" class="col-um " title=""><i class="icones-rodape icone-triangulo-escuro"></i>História</a><!--cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
+              <a href="/vilasesamo/pais-e-educadores" class="col-dois " title=""></i>Pais e Educadores</a><!--cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
+              <a href="/vilasesamo/na-tv" class="col-tres" title=""><i class="icones-rodape icone-triangulo-claro"></i>Na TV</a><!-- natv-footer - cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
+              <a href="/vilasesamo/acessibilidade" class="col-quatro" title=""><i class="icones-rodape icone-triangulo-medio"></i>Acessibilidade</a>
               <!--a href="/vilasesamo2/atividades" class="col-dir" title=""><span class="sprite-destalhe-amarelo1"></span>História</a-->
             </nav>
             <!--/nav-->
