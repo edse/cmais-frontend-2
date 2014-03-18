@@ -52,10 +52,10 @@
           <div class="mpc_ls_slide_item par" data-x="40" data-y="260" data-delay="1000" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>Teste a sua</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="300" data-delay="1200" data-duration="2400" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="50" data-y="310" data-delay="1200" data-duration="2400" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>memória e</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="340" data-delay="1400" data-duration="2600" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="60" data-y="360" data-delay="1400" data-duration="2600" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>divirta-se</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
@@ -124,7 +124,7 @@
           <div class="mpc_ls_slide_item par" data-x="530" data-y="180" data-delay="3200" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideRight" data-fade="on"> 
             <span>Você já conhece </span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="530" data-y="230" data-delay="3400" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="560" data-y="230" data-delay="3400" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>a Sivan? </span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
@@ -144,7 +144,7 @@
           <div class="mpc_ls_slide_item par" data-x="40" data-y="260" data-delay="1400" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
             <span>Conheça o projeto</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="310" data-delay="1500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="60" data-y="310" data-delay="1500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
             <span>Incluir Bricando.</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
