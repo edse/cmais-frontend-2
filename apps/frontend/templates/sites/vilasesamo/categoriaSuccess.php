@@ -91,12 +91,14 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 <?php endif; ?>
                 <!--/video ou imagem-->
            <?php if($section->getSlug()=="incluir-brincando"):?>
-            
+            	<br/>
+            	<br/>
              <p>
-              INCLUIR BRINCANDO é um projeto voltado para o fortalecimento da consciência sobre o direito do brincar seguro e inclusivo, da diversidade e do estímulo aos hábitos saudáveis, com ênfase na inclusão de crianças com deficiências.
+              INCLUIR BRINCANDO é um projeto voltado para o fortalecimento da consciência sobre o direito do brincar seguro e inclusivo, da diversidade e do estímulo aos hábitos saudáveis, com ênfase na inclusão de crianças com deficiências. 
             </p>
-            <p>Saiba mais sobre o projeto e tenha acesso a todo o conteúdo digital desta iniciativa clicando nos links abaixo.</p>
-            
+            <p>O projeto é uma iniciativa da TV Cultura e da Sesame Workshop, com o apoio da Fundação MetLife, parceria estratégica do UNICEF e parceria institucional da Associação Laramara, do Instituto Rodrigo Mendes, da Efeito Visual Serigrafia e da Iguale Comunicação de Acessibilidade.</p>
+            <p>Conheça melhor o projeto e os conteúdos digitais da Campanha Transmídia e da Coleção Incluir Brincando, clicando nos links abaixo.
+            </p>
             <?php else:?>  
               <p>  
                 <!--descricao-->    

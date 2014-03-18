@@ -105,7 +105,6 @@ a{text-decoration:underline!important;}
 .icone-acessibilidade{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/icones-interna.png) no-repeat top left;background-position: -125px -544px;margin: 3% 0 0 18%;width: 15%;height: 40px;}
 
 
-
 /* na tv */
 .na-tv #content{margin:20px 5%}
 .na-tv #content .filtro {margin-bottom: 80px!important;}
@@ -409,6 +408,7 @@ a{text-decoration:underline!important;}
 	.cuidadores .icone-cuidadores-grande {background-position: 0 -563px;margin: -2% 0 0 23%!important;width: 9%;}
 	.interna.videos #content h1 .icones-sprite-interna {margin: -5% 0 0 34%!important;}
 	.icone-personagem-grande{margin: 0 0 0 31%!important;} 
+	.icone-historia-grande{ background-position: -112px -662px; margin: 0% 0 0 31%!important; width: 60px; height: 50px; } 
 }
 
 
@@ -427,6 +427,10 @@ a{text-decoration:underline!important;}
 .icone-form-email-erro{ background-position: 10px -628px; width: 46px!important; height: 30px; } 
 .icone-form-datafile{ background-position: 13px -202px; width: 46px!important; height: 40px; } 
 .icone-form-datafile-erro{ background-position: 13px -292px; width: 46px!important; height: 40px; } 
+
+/*História*/
+.icone-historia-grande{ background-position: -112px -662px; margin: 0% 0 0 19%!important; width: 60px; height: 50px; } 
+
 
 
 #content .form .span12{margin-bottom:20px;padding: 4%;}

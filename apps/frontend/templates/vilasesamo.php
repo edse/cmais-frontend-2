@@ -261,11 +261,17 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                 <a class="btn-na-tv-topo" href="http://cmais.com.br/vilasesamo/na-tv" title="Na TV" target="_self" aria-label="Na TV. Resuminho da história do Vila Sésamo e seus horários de exibição no Canal TV Cultura e TV Rá-Tim-Bum">Na TV</a>
                 <span class="sprite-menu-ball"></span>
               </li>
-              <li>  
+               <li>  
                 <i class="icones-sprite-menu icone-acessibilidade-pqno-verde"></i>
                 <a class="btn-acessibilidade-topo" href="http://cmais.com.br/vilasesamo/acessibilidade" title="Acessibilidade" target="_self" aria-label="Acessibilidade. Explicação do que estamos fazendo para deixar a cada dia o site do Vila Sésamo mais e mais acessível">Acessibilidade</a>
+                <span class="sprite-menu-ball"></span>
+              </li>  
+              <li>  
+                <i class="icones-sprite-menu icone-historia-pqno-verde"></i>
+                <a class="btn-historia-topo" href="http://cmais.com.br/vilasesamo/historia" title="Historia" target="_self" aria-label="História. Conheça um pouco mais sobre a história do Vila Sésamo">História</a>
                 <!--span class="sprite-menu-ball"></span-->
               </li>  
+             
               <!--li>
                 <a href="/vilasesamo2/historia" title="História" target="_self">História</a>
               </li-->            
@@ -453,7 +459,10 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                   <a href="http://cmais.com.br/vilasesamo/personagens/come-come" title="Come-Come" target="_self" aria-hidden="true" tabindex="-1">Come-Come</a><span>,</span>
                 </li>
                 <li>
-                  <a href="http://cmais.com.br/vilasesamo/personagens/zoe" title="Zoe" target="_self" aria-hidden="true" tabindex="-1">Zoe</a>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/zoe" title="Zoe" target="_self" aria-hidden="true" tabindex="-1">Zoe</a><span>,</span>
+                </li>
+                <li>
+                  <a href="http://cmais.com.br/vilasesamo/personagens/sivan" title="Sivan" target="_self" aria-hidden="true" tabindex="-1">Sivan</a>
                 </li>
               </ul>
             </nav> 
@@ -461,9 +470,10 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             
             <!--nav-->
             <nav class="span12">
-              <a href="/vilasesamo/pais-e-educadores" class="col-esq " title="">Pais e Educadores</a><!--cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
-              <a href="/vilasesamo/na-tv" class="col-central" title=""><i class="icones-rodape icone-triangulo-claro"></i>Na TV</a><!-- natv-footer - cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
-              <a href="/vilasesamo/acessibilidade" class="col-dir" title=""><i class="icones-rodape icone-triangulo-medio"></i>Acessibilidade</a>
+              <a href="/vilasesamo/historia" class="col-um " title="">História</a><i class="icones-rodape icone-triangulo-escuro"></i><!--cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
+              <a href="/vilasesamo/pais-e-educadores" class="col-dois " title=""></i>Pais e Educadores</a><!--cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
+              <a href="/vilasesamo/na-tv" class="col-tres" title=""><i class="icones-rodape icone-triangulo-claro"></i>Na TV</a><!-- natv-footer - cuidadores-footer - classe criada para quando tiver somente dois itens na lista -->
+              <a href="/vilasesamo/acessibilidade" class="col-quatro" title=""><i class="icones-rodape icone-triangulo-medio"></i>Acessibilidade</a>
               <!--a href="/vilasesamo2/atividades" class="col-dir" title=""><span class="sprite-destalhe-amarelo1"></span>História</a-->
             </nav>
             <!--/nav-->
