@@ -52,10 +52,10 @@
           <div class="mpc_ls_slide_item par" data-x="40" data-y="260" data-delay="1000" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>Teste a sua</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="300" data-delay="1200" data-duration="2400" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="50" data-y="310" data-delay="1200" data-duration="2400" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>memória e</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="340" data-delay="1400" data-duration="2600" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="60" data-y="360" data-delay="1400" data-duration="2600" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>divirta-se</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
@@ -92,17 +92,20 @@
           <div class="mpc_ls_slide_item" data-x="450" data-y="18" data-delay="800" data-duration="2500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">  
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/05_mar_atividades/atividades.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item tit-atividades" data-x="40" data-y="200" data-delay="1500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
+          <div class="mpc_ls_slide_item tit-atividades" data-x="10" data-y="180" data-delay="1500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
             <span>Atividades</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="270" data-delay="1300" data-duration="2000" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
-            <span>Veja as novas</span>
+          <div class="mpc_ls_slide_item par" data-x="20" data-y="250" data-delay="1300" data-duration="2000" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+            <span>Qual é a sua</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="325" data-delay="1400" data-duration="2200" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
-            <span>brincadeiras para  </span>
+          <div class="mpc_ls_slide_item par" data-x="30" data-y="300" data-delay="1400" data-duration="2000" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+            <span>brincadeira favorita? </span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="370" data-delay="1600" data-duration="2400" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
-            <span>você imprimir! </span>
+          <div class="mpc_ls_slide_item par" data-x="40" data-y="350" data-delay="1800" data-duration="2200" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+            <span>Faça um desenho</span>
+          </div>
+          <div class="mpc_ls_slide_item par" data-x="50" data-y="400" data-delay="2000" data-duration="2200" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+            <span>e envie pra gente!</span> 
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
             <a href="http://cmais.com.br/vilasesamo/atividades/brincando-no-parque-1#form-campanha" class="total" title="Novidade chegando"></a>
@@ -121,7 +124,7 @@
           <div class="mpc_ls_slide_item par" data-x="530" data-y="180" data-delay="3200" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideRight" data-fade="on"> 
             <span>Você já conhece </span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="530" data-y="230" data-delay="3400" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="560" data-y="230" data-delay="3400" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>a Sivan? </span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
@@ -141,7 +144,7 @@
           <div class="mpc_ls_slide_item par" data-x="40" data-y="260" data-delay="1400" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
             <span>Conheça o projeto</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="310" data-delay="1500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="60" data-y="310" data-delay="1500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
             <span>Incluir Bricando.</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
@@ -193,7 +196,7 @@
           
           switch(i){
             case 0:
-              $(this).attr("aria-label", "Incluir Brincando - Garibaldo, Bel e Sivan estão acenando para o povo.").attr('data-href','http://cmais.com.br/vilasesamo/categorias/incluir-brincando');
+              $(this).attr("aria-label", "Incluir Brincando - Garibaldo, Bel e Sivan estão acenando para o povo.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/categorias/incluir-brincando');
             break;
             case 1:
               $(this).attr("aria-label", "Novo Jogo Teste a sua memória e divirta-se - Groover esta pensativo com uma bolacha na mão.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/jogos/jogo-da-memoria-vila-sesamo');
@@ -202,7 +205,7 @@
               $(this).attr("aria-label", "Bel está lhe perguntando se você sabe o que é direito de brincar.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/videos/brincar-e-um-direito-da-crianca')
             break;
             case 3:
-              $(this).attr("aria-label", "elmo está convidando você a conhecer as novas atividades de imprimir'. ").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/atividades')
+              $(this).attr("aria-label", "elmo está perguntando: Qual é a sua brincadeira favorita? Faça um desenho e envie pra gente!'. ").attr('data-href','hhttp://cmais.com.br/<?php echo $site->getSlug(); ?>/atividades/brincando-no-parque-1')
             break;
             case 4:
               $(this).attr("aria-label", "Persanagens - Você já conhece a Sivan?").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/personagens/sivan');
