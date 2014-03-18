@@ -45,8 +45,6 @@
 							<?php if (count($displays['destaque-principal']) > 0): ?>      
 			      <div id="destaque" class="destaque destaque-3c grid3">
 			        <ul class="abas-conteudo conteudo">
-			          
-
 								<?php foreach($displays['destaque-principal'] as $k=>$d): ?>
 			          <li style="display: block;" id="bloco<?php echo $k ?>" class="filho">
 			          	<a class="media" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
@@ -56,8 +54,6 @@
 			          	
 			         	</li>
 			        	<?php endforeach; ?>
-
-                 
 			        </ul>
 			        <ul class="abas-menu pag-bola destaque1">
 			        	<?php foreach($displays['destaque-principal'] as $k=>$d): ?>
@@ -123,11 +119,6 @@
 			               lang: "http://cmais.com.br/portal/js/timeline/pt-br.js",
 			               js: "http://cmais.com.br/portal/js/timeline/timeline-min.js"
 			              }
-			              $(function() {
-                      $('.carrossel').jcarousel({
-                        scroll : 1
-                      });
-                    });
 			            </script>
 			            <script type="text/javascript" src="http://cmais.com.br/portal/js/timeline/storyjs-embed.js"></script>
 		            </div>
