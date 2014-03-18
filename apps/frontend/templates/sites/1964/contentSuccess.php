@@ -21,7 +21,7 @@ $(function(){
 
       <!-- BARRA SITE -->
   		<div id="barra-site" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
-					<a href="<?php echo $site->retriveUrl() ?>"><img src="http://cmais.com.br/portal/images/timeline/topo.png"></a>
+						<a href="<?php echo $site->retriveUrl() ?>"><img src="http://cmais.com.br/portal/images/timeline/topo.png"></a>
 					
 				
 				<!-- TOPO -->
