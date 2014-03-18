@@ -98,14 +98,14 @@
           <div class="mpc_ls_slide_item par" data-x="40" data-y="270" data-delay="1300" data-duration="2000" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>Qual é a sua</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="300" data-delay="1400" data-duration="2000" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="40" data-y="310" data-delay="1400" data-duration="2000" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>brincadeira favorita? </span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="325" data-delay="1800" data-duration="2200" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="40" data-y="350" data-delay="1800" data-duration="2200" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>Faça um desenho</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="335" data-delay="2000" data-duration="2200" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
-            <span>e envie pra gente!</span>
+          <div class="mpc_ls_slide_item par" data-x="40" data-y="390" data-delay="2000" data-duration="2200" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+            <span>e envie pra gente!</span> 
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
             <a href="http://cmais.com.br/vilasesamo/atividades/brincando-no-parque-1#form-campanha" class="total" title="Novidade chegando"></a>
