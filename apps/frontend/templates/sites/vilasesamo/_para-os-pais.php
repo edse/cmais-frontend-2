@@ -126,7 +126,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
             <div class="span4 dica-pai">
           <?php if(isset($dicaRelacionada)): ?>
             
-            
+            estou aqui
               <!--link artigo dica-->
              
                 <h2 class="tit-dicas">
