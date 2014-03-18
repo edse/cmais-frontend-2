@@ -27,13 +27,9 @@
   }
      
 ?>
-<script>
-  var $objFlash = document.getElementsByTagName("object");
-  if($objFlash){
-    document.getElementsByTagName("object").style.height="460px";
-  }
-</script>
-<?php echo $noscript; ?>
+<style>
+object{height:460px!important;}
+</style>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
