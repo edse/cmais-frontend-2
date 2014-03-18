@@ -22,7 +22,7 @@ if(isset($pager)){
       <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
 
   		<div id="barra-site" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
-					<a href="#"><img src="http://cmais.com.br/portal/images/timeline/topo.png"></a>
+						<a href="<?php echo $site->retriveUrl() ?>"><img src="http://cmais.com.br/portal/images/timeline/topo.png"></a>
 					
 				
 				<!-- TOPO -->
