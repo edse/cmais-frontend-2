@@ -362,7 +362,7 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .subs h2{color:#fff;bottom: 0;font-family: Arial;text-align: left;font-size: 41px;line-height:120px;padding-left:15px;}
 
 .box-interna h2{font-size:30px;line-height:50px;}
-
+.menu-interna li {padding: 0 5px 0 5px!important;} 
 .btn { background:#8A991E; color:#fff; text-transform:uppercase; box-shadow:none; border:none; border-radius:0; text-shadow:none;font-size:20px;padding: 4px;}
 .btn:hover { background:#666; color:#fff; text-decoration:none; }
 .botoes { margin:10px auto 20px; width:300px; }
