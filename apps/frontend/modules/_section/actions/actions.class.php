@@ -640,7 +640,7 @@ class _sectionActions extends sfActions
           }
         }
         else{
-          if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes")){
+          if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes")&&($this->site->getSlug() != "1964")){
             $this->siteSections = Doctrine_Query::create()
               ->select('s.*')
               ->from('Section s')
