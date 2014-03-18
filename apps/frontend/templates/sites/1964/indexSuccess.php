@@ -46,10 +46,12 @@
 			      <div id="destaque" class="destaque destaque-3c grid3">
 			        <ul class="abas-conteudo conteudo">
 								<?php foreach($displays['destaque-principal'] as $k=>$d): ?>
+								<?php $related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>  
 			          <li style="display: block;" id="bloco<?php echo $k ?>" class="filho">
 			          	<a class="media" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
 			          		<div class="subs"><h2><?php echo $d->getTitle() ?></h2></div>
-			          		<img src="" alt="<?php echo $d->getTitle() ?>">
+			          		<?php //<img src="<?php echo $d->retriveImageUrlByImageUsage('image-10-b') " alt="<?php //echo $d->getTitle() ?>"> 
+			          		<img src="http://img.youtube.com/vi/<?php echo $related[0]->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
 			          	</a>
 			          	
 			         	</li>
