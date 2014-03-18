@@ -99,7 +99,7 @@
           <?php endif; ?>
         <?php endif; ?>
       <?php endif; ?>
-       <span aria-hidden="true"><?php echo utf8_encode(html_entity_decode($asset->getDescription())) ?></span>
+       <span aria-hidden="true"><?php echo html_entity_decode($asset->getDescription()) ?></span>
       </p>
       
       <?php if(isset($asset)): ?>
