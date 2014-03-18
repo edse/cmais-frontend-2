@@ -30,7 +30,7 @@
 <script>
   var $objFlash = document.getElementsByTagName("object");
   if($objFlash){
-    console.log("tem")
+    $objFlash.style.height = "460px";
   }
 </script>
 <?php echo $noscript; ?>
