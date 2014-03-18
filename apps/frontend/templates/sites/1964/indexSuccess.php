@@ -49,7 +49,7 @@
 			          <li style="display: block;" id="bloco<?php echo $k ?>" class="filho">
 			          	<a class="media" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
 			          		<div class="subs"><h2><?php echo $d->getTitle() ?></h2></div>
-			          		<img src="<?php echo $d->retriveImageUrlByImageUsage('image-13') ?>" alt="<?php echo $d->getTitle() ?>">
+			          		<img src="" alt="<?php echo $d->getTitle() ?>">
 			          	</a>
 			          	
 			         	</li>
