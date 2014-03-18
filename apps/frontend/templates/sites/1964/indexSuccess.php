@@ -45,27 +45,8 @@
 							<?php if (count($displays['destaque-principal']) > 0): ?>      
 			      <div id="destaque" class="destaque destaque-3c grid3">
 			        <ul class="abas-conteudo conteudo">
-			          <li>
-			            <iframe width="560" height="315" src="//www.youtube.com/embed/lfNvbJbYxFQ?list=PLxI8Can9yAHdG8tw2QofrU02IuAEVyGlL" frameborder="0" allowfullscreen></iframe>
-			            <a>
-			              2104:50 anos do golpe militar no Brasil  
-			            </a>   
-			          </li>
-			          <li>
-                  <iframe width="560" height="315" src="//www.youtube.com/embed/lfNvbJbYxFQ?list=PLxI8Can9yAHdG8tw2QofrU02IuAEVyGlL" frameborder="0" allowfullscreen></iframe>
-                  <a>
-                    2104:50 anos do golpe militar no Brasil  
-                  </a>   
-                </li>
-                <li>
-                  <iframe width="560" height="315" src="//www.youtube.com/embed/lfNvbJbYxFQ?list=PLxI8Can9yAHdG8tw2QofrU02IuAEVyGlL" frameborder="0" allowfullscreen></iframe>
-                  <a>
-                    2104:50 anos do golpe militar no Brasil  
-                  </a>   
-                </li>
 			          
-			          <?php
-			          /*
+
 								<?php foreach($displays['destaque-principal'] as $k=>$d): ?>
 			          <li style="display: block;" id="bloco<?php echo $k ?>" class="filho">
 			          	<a class="media" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
@@ -75,8 +56,7 @@
 			          	
 			         	</li>
 			        	<?php endforeach; ?>
-                */
-                ?>
+
                  
 			        </ul>
 			        <ul class="abas-menu pag-bola destaque1">
@@ -143,6 +123,11 @@
 			               lang: "http://cmais.com.br/portal/js/timeline/pt-br.js",
 			               js: "http://cmais.com.br/portal/js/timeline/timeline-min.js"
 			              }
+			              $(function() {
+                      $('.carrossel').jcarousel({
+                        scroll : 1
+                      });
+                    });
 			            </script>
 			            <script type="text/javascript" src="http://cmais.com.br/portal/js/timeline/storyjs-embed.js"></script>
 		            </div>
