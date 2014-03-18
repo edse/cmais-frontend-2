@@ -56,7 +56,7 @@
             <span>memória e</span>
           </div>
           <div class="mpc_ls_slide_item par" data-x="60" data-y="360" data-delay="1400" data-duration="2600" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
-            <span>divirta-se</span>
+            <span>divirta-se!</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
             <a href="http://cmais.com.br/vilasesamo/jogos/jogo-da-memoria-vila-sesamo" class="total" title="Teste a sua memória e divirta-se"></a>
