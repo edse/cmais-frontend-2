@@ -381,6 +381,8 @@
       //testa erro button
       if($('.icone-form-datafile').hasClass('icone-form-datafile-erro')){
       	$(".button").addClass('button-erro');
+      }else{
+        $(".button").addClass('button-erro');
       }
     }, 100);
       
