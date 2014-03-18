@@ -51,6 +51,18 @@
 			              2104:50 anos do golpe militar no Brasil  
 			            </a>   
 			          </li>
+			          <li>
+                  <iframe width="560" height="315" src="//www.youtube.com/embed/lfNvbJbYxFQ?list=PLxI8Can9yAHdG8tw2QofrU02IuAEVyGlL" frameborder="0" allowfullscreen></iframe>
+                  <a>
+                    2104:50 anos do golpe militar no Brasil  
+                  </a>   
+                </li>
+                <li>
+                  <iframe width="560" height="315" src="//www.youtube.com/embed/lfNvbJbYxFQ?list=PLxI8Can9yAHdG8tw2QofrU02IuAEVyGlL" frameborder="0" allowfullscreen></iframe>
+                  <a>
+                    2104:50 anos do golpe militar no Brasil  
+                  </a>   
+                </li>
 			          
 			          <?php
 			          /*
