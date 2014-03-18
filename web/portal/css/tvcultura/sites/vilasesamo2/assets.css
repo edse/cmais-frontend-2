@@ -11,8 +11,7 @@ h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1
 #content p { font-size:1.143em; float:left;margin-bottom: 20px; }
 .conteudo-asset .asset p{width:100%;}
 .conteudo-asset p{width:100%;}
-.conteudo-asset p a { float:right; width: 220px; margin-left:2%; margin-top:2%; }
-.interna.conteudo-asset p a { float:right; width: 220px; margin:0; }
+.conteudo-asset p a { float:right; width: 220px; margin-left:2%;}
 
 
 .conteudo-asset .asset { text-align:center;clear: both;}
