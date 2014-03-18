@@ -112,7 +112,7 @@ a{text-decoration:underline!important;}
 .na-tv .ola{font-size: 1.4em!important;top: 5%!important;left: 3%!important;}
 .na-tv #content .fundo-na-tv {width: 70%;margin: 0 auto;position: relative;top: 35px;display:none;}
 .na-tv #content .container-na-tv {padding-bottom:20px}
-.na-tv #content .container-na-tv .container-horarios {width:100%; float:left;}
+.na-tv #content .container-na-tv .container-horarios {width:100%; max-height: none; float:left;}
 .na-tv #content .box-horario{width:98%; margin:0 0 10px 0;}
 .na-tv .icone-na-tv-grande {background-position: -125px -466px;margin: -1% 0 0 33%!important;width: 44px;}
 .na-tv footer #mobile{margin-top:-70px;}
