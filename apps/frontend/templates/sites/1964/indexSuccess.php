@@ -11,7 +11,7 @@
     <!-- CAPA SITE -->
 	<div id="capa-site" class="a1964">
      	<!-- BARRA SITE -->
-  		<div id="barra-site" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
+  		<div id="barra-site">
 					<a href="<?php echo $site->retriveUrl() ?>"><img src="http://cmais.com.br/portal/images/timeline/topo.png"></a>
 					
 				
@@ -19,7 +19,7 @@
 		    <div class="topo-programa">
 		    	
 	    		<!-- MENU -->
-					<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections))?>
+					<?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
 					<!--/ MENU -->
 					
 		    <!-- / TOPO -->  
