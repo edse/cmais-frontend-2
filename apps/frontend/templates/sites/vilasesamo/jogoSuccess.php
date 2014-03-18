@@ -27,8 +27,13 @@
   }
      
 ?>
-
-
+<script>
+  $objFlash = document.getElementByTagName("object");
+  if($objFlash){
+    console.log("tem")
+  }
+</script>
+<?php echo $noscript; ?>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 
