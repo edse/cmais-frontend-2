@@ -92,19 +92,19 @@
           <div class="mpc_ls_slide_item" data-x="450" data-y="18" data-delay="800" data-duration="2500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">  
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/05_mar_atividades/atividades.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item tit-atividades" data-x="10" data-y="180" data-delay="1500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
+          <div class="mpc_ls_slide_item tit-atividades" data-x="10" data-y="160" data-delay="1500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
             <span>Atividades</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="20" data-y="250" data-delay="1300" data-duration="2000" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="20" data-y="210" data-delay="1300" data-duration="2000" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>Qual é a sua</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="30" data-y="300" data-delay="1400" data-duration="2000" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="30" data-y="260" data-delay="1400" data-duration="2000" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>brincadeira favorita? </span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="40" data-y="350" data-delay="1800" data-duration="2200" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="40" data-y="310" data-delay="1800" data-duration="2200" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>Faça um desenho</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="50" data-y="400" data-delay="2000" data-duration="2200" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item par" data-x="50" data-y="360" data-delay="2000" data-duration="2200" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>e envie pra gente!</span> 
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
