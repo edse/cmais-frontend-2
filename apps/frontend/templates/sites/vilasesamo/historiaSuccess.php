@@ -54,7 +54,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
          <!--Explicação acessibilidade visite o site da Laramara-->
       <a href="http://laramara.org.br/" tabindex="0" class="ac-link" aria-label="Visite o site da LARAMARA"></a>
       <span class="fundo-acessibilidade" aria-label="Brasil Disco" tabindex="0">
-        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/historia_brasil_disco.jpg" />
+        <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens/historia.jpg" />
       </span>
          
       </div>
