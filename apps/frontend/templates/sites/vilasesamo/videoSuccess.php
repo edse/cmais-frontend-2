@@ -78,7 +78,7 @@
        * Todas as categorias tem este bloco, mas somente as marcadas como "is homepage" serão consideradas como especiais, tais como "Incluir Brincando" e "Hábitos Saudáveis".
        */
       ?>
-      <p aria-label="Vídeo: <?php echo $asset->getDescription() ?>"  tabindex="0">
+      <p aria-label="Vídeo: <?php echo utf8_encode(html_entity_decode($asset->getDescription())) ?>"  tabindex="0">
       <?php if(isset($categories)): ?>
         <?php if(count($categories) > 0): ?>
           <?php      
