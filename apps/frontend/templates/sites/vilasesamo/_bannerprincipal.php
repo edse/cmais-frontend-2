@@ -92,7 +92,7 @@
           <div class="mpc_ls_slide_item" data-x="450" data-y="18" data-delay="800" data-duration="2500" data-easing="easeOutBack" data-effect="slideRight" data-fade="on">  
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/05_mar_atividades/atividades.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item tit-atividades" data-x="10" data-y="200" data-delay="1500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
+          <div class="mpc_ls_slide_item tit-atividades" data-x="10" data-y="180" data-delay="1500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
             <span>Atividades</span>
           </div>
           <div class="mpc_ls_slide_item par" data-x="20" data-y="250" data-delay="1300" data-duration="2000" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
