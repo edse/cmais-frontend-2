@@ -11,7 +11,7 @@
     <!-- CAPA SITE -->
 	<div id="capa-site" class="a1964">
      	<!-- BARRA SITE -->
-  		<div id="barra-site" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
+  		<div id="barra-site">
 					<a href="<?php echo $site->retriveUrl() ?>"><img src="http://cmais.com.br/portal/images/timeline/topo.png"></a>
 					
 				
@@ -19,8 +19,51 @@
 		    <div class="topo-programa">
 		    	
 	    		<!-- MENU -->
-					<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections))?>
-					<!--/ MENU -->
+					          <?php if(count($siteSections) > 0): ?>
+          <!-- menu interna -->
+          <ul class="menu-interna grid3">
+            <?php foreach($siteSections as $s): ?>
+              <?php if($s->getSlug() == "programasNAO"): ?>
+                <?php 
+                $programs = Doctrine_Query::create()
+                  ->select('p.*')
+                  ->from('Program p, ChannelProgram cp, Site s')
+                  ->where('p.id = cp.program_id AND s.id = p.site_id')
+                  ->andWhere('cp.channel_id = ?', (int)6)
+                  ->andWhere('p.is_in_menu = 1')
+                  ->orderBy('p.title')
+                  ->execute();
+                ?>
+                <li class="m-<?php echo $s->getSlug() ?> span"><a href="http://culturafm.cmais.com.br/<?php echo $s->getSlug()?>" class="abre-menu" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?><span></span></a>
+                  <div class="submenu-interna toggle-menu" style="display:none; width: auto;">
+                    <ul style="display:block;">
+                    <?php foreach($programs as $p): ?>
+                      <li><a href="http://culturafm.cmais.com.br/<?php echo $p->getSlug()?>"><?php echo $p->getTitle()?></a></li>
+                    <?php endforeach; ?>
+                    </ul>
+                  </div>
+                </li>
+              <?php else: ?>
+                <?php $subsections = $s->subsections(); ?>
+                <?php if(count($subsections) > 0): ?>
+                  <li class="m-<?php echo $s->getSlug() ?> span"><a href="#" class="abre-menu" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?><span></span></a>
+                    <div class="submenu-interna toggle-menu" style="display:none; width: auto;">
+                      <ul style="display:block;">
+                      <?php foreach($subsections as $s): ?>
+                        <li><a href="<?php echo $s->retriveUrl()?>"><?php echo $s->getTitle()?></a></li>
+                      <?php endforeach; ?>
+                      </ul>
+                    </div>
+                  </li>
+                <?php else: ?>
+                  <li class="m-<?php echo $s->getSlug() ?>"><a href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?></a></li>
+                <?php endif; ?>
+              <?php endif; ?>
+            <?php endforeach; ?>
+          </ul>
+          <!-- /menu interna -->
+          <?php endif; ?>
+
 					
 		    <!-- / TOPO -->  
 		    </div>
