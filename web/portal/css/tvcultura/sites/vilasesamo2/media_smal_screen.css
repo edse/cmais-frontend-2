@@ -452,7 +452,7 @@ a{text-decoration:underline!important;}
 .conteudo-asset .asset {margin-left:-4%}
 #content section.form .span4 {width: 100%; margin: 0 auto!important;padding: 2%;/* overflow: hidden; */}
 #content section.form .span4 iframe {margin: 0 auto;display: block;}
-.form label.error{position: absolute;bottom: 253px!important;left: 6px!important;font-size: 1em!important;height: 50px!important;}
+.form-horizontal.form label.error{position: absolute;bottom: 253px!important;left: 6px!important;font-size: 1em!important;height: 50px!important;}
 form {margin: 0 0 54px!important;}
 .logotv-mobile{width: 17%; margin: 0 auto;padding: 2%;}
 
