@@ -1727,7 +1727,7 @@ class _sectionActions extends sfActions
           ->orderBy('sa.display_order');
         if($request->getParameter('busca') != '')
           $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
-        if(($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes"))
+        if(($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes")||($this->site->getSlug() == "1964"))
           $this->assetsQuery->limit(60);
       }
       else{
@@ -1751,7 +1751,7 @@ class _sectionActions extends sfActions
         }
       }
       $pagelimit = 1;
-      if(($this->site->getSlug() == "inglescommusica")||($this->site->getSlug() == "complicacoes"))
+      if(($this->site->getSlug() == "inglescommusica")||($this->site->getSlug() == "complicacoes")||($this->site->getSlug() == "1964"))
         $pagelimit = 9;
             
     }
