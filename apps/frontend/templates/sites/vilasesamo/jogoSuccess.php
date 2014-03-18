@@ -28,7 +28,7 @@
      
 ?>
 <script>
-  $objFlash = document.getElementByTagName("object");
+  var $objFlash = document.getElementsByTagName("object");
   if($objFlash){
     console.log("tem")
   }
