@@ -47,7 +47,7 @@
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/03_mar_ogo/come_come.png" alt="">
           </div>
           <div class="mpc_ls_slide_item tit-jogos" data-x="40" data-y="200" data-delay="500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
-            <span>Novo Jogo</span>
+            <span>NOVO JOGO</span>
           </div>
           <div class="mpc_ls_slide_item par" data-x="40" data-y="260" data-delay="1000" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
             <span>Teste a sua</span>
