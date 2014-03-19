@@ -1,7 +1,7 @@
 .submenu-interna {width:106px;}
 .submenu-interna li a { margin-left:10px;}
 .chapeu {color:#ff6633;}
-.bg-site {background:url(http://cmais.com.br/portal/images/capaPrograma/dorivalcaymmi/bg-caymmi.jpg) repeat-x;height:162px}
+.bg-site {background:url(http://cmais.com.br/portal/images/capaPrograma/dorivalcaymmi/bg-caymmi.jpg) height:162px}
 #capa-site {margin-top: -160px !important;}
 /*#capa-site {*margin-top:-100px !important;}*/
 #miolo {margin-top:28px;}
@@ -13,6 +13,6 @@
 #chamada { width:970px; margin:0 auto; float:none; margin-top:20px; margin-bottom:20px;}
 .noticia .img-video { margin-top:0; }
 #barra-site .redes ul {display:none;}
-#barra-site .redes { float:right; }
-#barra-site .topo-programa img { float: left;}
+#barra-site .redes { float:right; margin: 80px 0 0;}
+#barra-site .topo-programa img { float: left;margin-top: 70px;}
 #direita iframe #twitter-widget-3 {height:300px}
