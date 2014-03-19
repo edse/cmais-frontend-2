@@ -478,7 +478,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .topo-vila nav { float:right; margin-right:0;  }
 .topo-vila .nav,
 .topo-vila nav form { float:right; }
-.topo-vila .nav { height:20px; padding:0 10px; margin-top:18px!important; /*width:560px; */float:left; }
+.topo-vila .nav { height:20px; padding:0 10px; margin-top:18px!important; width:590px; float:left; }
 .topo-vila .nav li a { padding:0!important; float:left!important; text-transform:uppercase; text-shadow:none!important; color:#737373!important; font-weight: normal;}
 .topo-vila .nav li a:hover { color:#737373; background:none !important; font-weight: normal !important; }
 .topo-vila .nav li .sprite-menu-ball {  display: block; margin:7px 5px 0 10px; float:left; }
