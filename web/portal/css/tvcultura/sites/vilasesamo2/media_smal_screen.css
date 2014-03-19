@@ -450,10 +450,10 @@ a{text-decoration:underline!important;}
 .form-horizontal .span11, .form .termo {float:none!important}
 .form .control-group.span11 label {height:65px;float:left}
 .conteudo-asset .asset {margin-left:-4%}
-#content section.form .span4 {width: 100%; margin: 0 auto!important;padding: 2%;/* overflow: hidden; */}
+#content section.form .span4 {width: 100%!important; margin: 0 auto!important;padding: 2%;/* overflow: hidden; */}
 #content section.form .span4 iframe {margin: 0 auto;display: block;}
 .form-horizontal.form label.error{position: absolute;bottom: 253px!important;left: 6px!important;font-size: 1em!important;height: 50px!important;}
-form {margin: 0 0 54px!important;}
+.form .span8 form {margin: 0 0 54px!important;}
 .logotv-mobile{width: 17%; margin: 0 auto;padding: 2%;}
 
 
