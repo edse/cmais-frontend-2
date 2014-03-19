@@ -490,7 +490,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .topo-vila .form-search:focus .btn,
 .topo-vila .form-search .btn:hover,
 .topo-vila .form-search .btn:focus {  background-position: 0 -560px; -moz-transition:none; }
-/* /topo vila */
+/* /topo vila */ 
 
 /* menu site */
 .header-bar { position:relative; z-index: 100;  }
