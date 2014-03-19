@@ -19,7 +19,7 @@
 		    <div class="topo-programa">
 		    	
 	    		<!-- MENU -->
-					<?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
+					<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections))?>
 					<!--/ MENU -->
 					
 		    <!-- / TOPO -->  
