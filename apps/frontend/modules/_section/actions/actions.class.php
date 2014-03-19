@@ -640,7 +640,7 @@ class _sectionActions extends sfActions
           }
         }
         else{
-          if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes")){
+          if(($this->site->Program->Channel->getSlug() == "univesptv")&&($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes")&&($this->site->getSlug() != "1964")){
             $this->siteSections = Doctrine_Query::create()
               ->select('s.*')
               ->from('Section s')
@@ -783,7 +783,7 @@ class _sectionActions extends sfActions
                 $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
               $this->assetsQuery->orderBy('a.created_at desc');
             }
-            else if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class", "manha-cultura", "entrelinhas-fm", "entrelinhas-1", "cd-da-semana", "arquivo-vivo", "interprete","radiometropolis", "diario-da-manha","de-volta-pra-casa"))){
+            else if(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class", "manha-cultura", "entrelinhas-fm", "entrelinhas-1", "cd-da-semana", "arquivo-vivo", "interprete","radiometropolis", "diario-da-manha","de-volta-pra-casa", "pianissimo"))){
               $this->assetsQuery = Doctrine_Query::create()
                 ->select('a.*')
                 ->from('Asset a, SectionAsset sa')
@@ -1727,7 +1727,7 @@ class _sectionActions extends sfActions
           ->orderBy('sa.display_order');
         if($request->getParameter('busca') != '')
           $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
-        if(($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes"))
+        if(($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes")||($this->site->getSlug() == "1964"))
           $this->assetsQuery->limit(60);
       }
       else{
@@ -1751,7 +1751,7 @@ class _sectionActions extends sfActions
         }
       }
       $pagelimit = 1;
-      if(($this->site->getSlug() == "inglescommusica")||($this->site->getSlug() == "complicacoes"))
+      if(($this->site->getSlug() == "inglescommusica")||($this->site->getSlug() == "complicacoes")||($this->site->getSlug() == "1964"))
         $pagelimit = 9;
             
     }
@@ -2145,7 +2145,7 @@ class _sectionActions extends sfActions
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/culturabrasil/subsection');
           }
         }
-        elseif(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class","manha-cultura", "entrelinhas-fm", "entrelinhas-1", "cd-da-semana", "arquivo-vivo", "interprete","radiometropolis", "diario-da-manha", "de-volta-pra-casa", "cultura-agora", "metropolitan"))){
+        elseif(in_array($this->site->getSlug(), array("cultura-jazz","estudio-cultura", "espirais", "brasilis", "novos-acordes", "super-8", "paralelos", "master-class","manha-cultura", "entrelinhas-fm", "entrelinhas-1", "cd-da-semana", "arquivo-vivo", "interprete","radiometropolis", "diario-da-manha", "de-volta-pra-casa", "cultura-agora", "metropolitan", "pianissimo"))){
 
           if($debug) print "<br>13-e>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new';
           $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultProgramaRadio/index-new'); 
