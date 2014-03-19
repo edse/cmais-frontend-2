@@ -89,7 +89,7 @@ object{height:460px!important;}
       ?>
       <p aria-label="Jogo: <?php echo $asset->getDescription() ?>"  tabindex="0">
       
-        <span aria-hidden="true"><?php echo $asset->getDescription() ?></span>
+        <span aria-hidden="true" style="width: 70%;float: left;"><?php echo $asset->getDescription() ?></span>
         <?php if(isset($categories)): ?>
         <?php if(count($categories) > 0): ?>
           <?php

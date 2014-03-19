@@ -81,9 +81,9 @@
        * Todas as categorias tem este bloco, mas somente as marcadas como "is homepage" serão consideradas como especiais, tais como "Incluir Brincando" e "Hábitos Saudáveis".
        */
       ?>
-      <p aria-label="Atividade: <?php echo $asset->getDescription() ?>"  tabindex="0">
+      <p aria-label="Atividade: <?php echo $asset->getDescription() ?>"  tabindex="0" >
       
-        <span aria-hidden="true"><?php echo $asset->getDescription() ?></span>
+        <span aria-hidden="true" style="width: 70%;float: left;"><?php echo $asset->getDescription() ?></span>
         <?php if(isset($categories)): ?>
         <?php if(count($categories) > 0): ?>
           <?php      
