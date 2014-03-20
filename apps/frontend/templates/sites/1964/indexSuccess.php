@@ -114,7 +114,7 @@
 			               width: "100%",
 			               height: "100%",
 			               source: "http://univesptv.cmais.com.br/1964/linha-do-tempo.jsonp",
-			               star_at_slide: 1, //start_at_end: true,começa do ultimo asset
+			               star_at_slide: 0, //start_at_end: true,começa do ultimo asset
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
 			               css: "http://cmais.com.br/portal/js/timeline/1964.css",
