@@ -233,7 +233,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           Acessibilidade
         </a>
         <a href="http://cmais.com.br/vilasesamo/historia" title="Site Vila Sésamo" target="_self">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/icon_mobile_historia.png">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/icon-mobile-historia.png">
           História
         </a>
         <!--a class="last"title="Site Vila Sésamo" target="_self">
