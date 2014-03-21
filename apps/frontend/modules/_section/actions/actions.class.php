@@ -1535,7 +1535,7 @@ class _sectionActions extends sfActions
               die();
             }
           }elseif(in_array($this->section->id, Array("921", "2129"))){
-            if($request->getParameter('pergunta2')!=""){
+            if($request->getParameter('pergunta2')!="" || $request->getParameter('campo_de_email')!="" || $request->getParameter('email_verify')!="" || $request->getParameter('teste_contato')!=""){
               header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
               die();
             }
