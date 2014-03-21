@@ -130,6 +130,7 @@
           </fieldset> 
            
           <!--
+          	teste
           <fieldset>
             <div class="codigo span3" id="captchaimage">
               <label for="captcha">Confirmação</label>
