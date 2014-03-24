@@ -466,7 +466,7 @@ a{text-decoration:underline!important;}
 
 .interna.jogos,.intena.atividades #page_nav{margin-bottom: -20%!important;}
 
-.cuidadores .container-cuidadores .col-esq .sobre-autor{width: 90%!important;margin: 0 auto;height: 300px!important;}
+.cuidadores #content .container-cuidadores .col-esq .sobre-autor{width: 90%!important;margin: 0 auto;height: 300px;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .sombra-amarela{background: #fdea4f;height: 123px!important;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;margin: 0 auto}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre{margin-top: 60%;width: 100%!important;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .foto-sobre{width: 68%;}
@@ -474,6 +474,6 @@ a{text-decoration:underline!important;}
 @media only screen and (max-width: 500px) and (min-width: 321px){
 	.cuidadores .container-cuidadores .col-esq .sobre-autor .sombra-amarela{background: #fdea4f;height: 123px!important;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;margin: 0 auto;}
 	.cuidadores .container-cuidadores .col-esq .sobre-autor{width: 90%!important;float: left;margin: 2%;}
-	.cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre {display: block;width: 55%!important;}
+	.cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre {display: block;width: 55%!important;margin: 0;}
 
 }
