@@ -275,6 +275,7 @@ a{text-decoration:underline!important;}
 
 
 .interna .conteudo-asset h2{line-height: 32px;font-size: 1.2em;}
+.interna .conteudo-asset p span{width:100%!important}
 
 .interna.videos #player{width:270px; height:169px;}
 .interna.atividades .paginas span{width:100%;font-size:1.2em}
