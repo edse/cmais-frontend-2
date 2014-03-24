@@ -130,6 +130,8 @@ body { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho
 .videos .blocos li a.bg:hover { border-color:#ffff05;  }
 #menu-rodape .neutro a { line-height:24px; }
 .videos #menu-rodape .abas-conteudo { min-height: 500px; }
+.box-listao .box-texto {width: 496px;}
+.paginacao{width:100%}
 /* /videos */
 
 /* embreve*/
