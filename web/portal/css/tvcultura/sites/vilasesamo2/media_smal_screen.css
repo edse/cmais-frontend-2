@@ -478,4 +478,4 @@ a{text-decoration:underline!important;}
 
 }
 
-.campanhas .categorias #voltar-topo-pagina{color:#00aa52}
+#voltar-topo-pagina.categorias span{ border-bottom: 2px solid #fbc227;border-top: 2px solid #fbc227; color: #00aa52; text-decoration: underline;}
