@@ -135,7 +135,10 @@
                       <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
                       <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
                     </div>
-                    <textarea id="pergunta2" name="pergunta2"></textarea>
+	                   <textarea id="pergunta2" name="pergunta2"></textarea>
+	                    <input type="text" name="campo_de_email" id="campo_de_email" style="display:none"/>
+	                    <input type="hidden" name="email_verify" id="email_verify"/>
+	                    <input type="hidden" name="teste_contato" id="teste_contato"/>
                     <div class="grd">
                       <label>Escreva um pouco sobre você</label>
                       <textarea name="escreva" id="escreva" onKeyDown="limitText(this,1000,'#textCounter2');"></textarea>
