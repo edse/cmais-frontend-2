@@ -149,7 +149,7 @@ a{text-decoration:underline!important;}
 .cuidadores .filtro  {margin: 20px auto!important;width: 96%;}
 .cuidadores .todos-assets p {text-align: center!important;font-size: 0.7em;line-height: 51px;}
 .cuidadores .container-cuidadores .col-esq article .redes-artigo {display:none}
-.cuidadores .container-cuidadores h3 {margin:0 auto;width: 70%;}
+.cuidadores .container-cuidadores h3 {margin:0 auto;/* width: 70%; */}
 .cuidadores .img-topo-asset {width:90%!important}
 .cuidadores .container-cuidadores .col-dir .box-ler .titulo-box, .cuidadores .container-cuidadores .col-dir .box-brincarjunto .titulo-box {width: auto!important}
 .cuidadores .col-direita,#comente-este-artigo,.fb_iframe_widget,#div-gpt-ad-1385748525978-0{display: none!important;}
@@ -466,9 +466,9 @@ a{text-decoration:underline!important;}
 
 .interna.jogos,.intena.atividades #page_nav{margin-bottom: -20%!important;}
 
-.cuidadores .container-cuidadores .col-esq .sobre-autor{width: 60%!important;margin: 0 auto;height:130px!important}
-.cuidadores .container-cuidadores .col-esq .sobre-autor .sombra-amarela{background: #fdea4f;height: 123px!important;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;margin: 0 auto;}
-.cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre{display:none}
+.cuidadores .container-cuidadores .col-esq .sobre-autor{width: 90%!important;margin: 0 auto;height:130px!important}
+.cuidadores .container-cuidadores .col-esq .sobre-autor .sombra-amarela{background: #fdea4f;height: 123px!important;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;margin: 0 auto}
+.cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre{display: block;width: 100%!important;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .foto-sobre{width: 68%;}
 
 @media only screen and (max-width: 500px) and (min-width: 321px){
@@ -476,4 +476,3 @@ a{text-decoration:underline!important;}
 	.cuidadores .container-cuidadores .col-esq .sobre-autor{width: 40%!important;float: left;margin: 2%;}
 
 }
-
