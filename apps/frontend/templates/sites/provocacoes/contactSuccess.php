@@ -151,6 +151,10 @@
                       <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
                       <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
                     </div>
+                    <textarea id="pergunta2" name="pergunta2"></textarea>
+                    <input type="text" name="campo_de_email" id="campo_de_email" style="display:none"/>
+                    <input type="hidden" name="email_verify" id="email_verify"/>
+                    <input type="hidden" name="teste_contato" id="teste_contato"/>
                     <!--
                     <div class="codigo" id="captchaimage">
                       <label for="captcha">Confirmação</label>
@@ -307,3 +311,8 @@
 
 
 </script>
+<style>
+#pergunta2{
+  visibility: hidden;
+}
+</style>
