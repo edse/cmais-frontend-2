@@ -1,5 +1,5 @@
 /*header*/
-a:hover, a:visited{color:#fff!important;}
+/*a:hover, a:visited{color:#fff!important;}*/
 
 .header--fixed {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
 .bounceOutUp{top:-90px}
@@ -149,7 +149,7 @@ a{text-decoration:underline!important;}
 .cuidadores .filtro  {margin: 20px auto!important;width: 96%;}
 .cuidadores .todos-assets p {text-align: center!important;font-size: 0.7em;line-height: 51px;}
 .cuidadores .container-cuidadores .col-esq article .redes-artigo {display:none}
-.cuidadores .container-cuidadores h3 {margin:0 auto;width: 70%;}
+.cuidadores .container-cuidadores h3 {margin:0 auto;/* width: 70%; */}
 .cuidadores .img-topo-asset {width:90%!important}
 .cuidadores .container-cuidadores .col-dir .box-ler .titulo-box, .cuidadores .container-cuidadores .col-dir .box-brincarjunto .titulo-box {width: auto!important}
 .cuidadores .col-direita,#comente-este-artigo,.fb_iframe_widget,#div-gpt-ad-1385748525978-0{display: none!important;}
@@ -214,7 +214,7 @@ a{text-decoration:underline!important;}
 .icone-personagem-grande{ background-position: 0 -1335px; width: 39px; height: 47px;margin: 0 0 0 23%!important;} 
 
 .icone-carregar-br-grande{ background-position: 0 -1409px; width: 33px; height: 39px; margin-top: -7%!important;}    
-.icone-carregar-lj-grande {background-position: 0 -1495px;width: 39px;height: 39px;}
+.icone-carregar-lj-grande {background-position: 0 -1495px;width: 32px;height: 39px;}
   
 /* assets internas (jogos, atividades, videos) */
 .interna.jogos #content section,
@@ -275,6 +275,7 @@ a{text-decoration:underline!important;}
 
 
 .interna .conteudo-asset h2{line-height: 32px;font-size: 1.2em;}
+.interna .conteudo-asset p span{width:100%!important}
 
 .interna.videos #player{width:270px; height:169px;}
 .interna.atividades .paginas span{width:100%;font-size:1.2em}
@@ -328,7 +329,7 @@ a{text-decoration:underline!important;}
 
 #sfWebDebugBar{display:none!important}
 /*categorias *, habitos*/
-.campanhas #content .filtro h1 {font-size:1.6em!important;}
+.campanhas #content .filtro h1 {font-size: 1.2em!important;padding: 0!important;width: 90%;margin: 0 auto;text-align: center;}
 .campanhas #content .container-campanhas iframe {width: 100%;margin-top: 0;}
 .campanhas #content .btn-group {margin-top: 16%;width: 100%;right: 0;}
 
@@ -466,14 +467,16 @@ a{text-decoration:underline!important;}
 
 .interna.jogos,.intena.atividades #page_nav{margin-bottom: -20%!important;}
 
-.cuidadores .container-cuidadores .col-esq .sobre-autor{width: 60%!important;margin: 0 auto;height:130px!important}
-.cuidadores .container-cuidadores .col-esq .sobre-autor .sombra-amarela{background: #fdea4f;height: 123px!important;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;margin: 0 auto;}
-.cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre{display:none}
+.cuidadores #content .container-cuidadores .col-esq .sobre-autor{width: 90%!important;margin: 0 auto;height: 300px;}
+.cuidadores .container-cuidadores .col-esq .sobre-autor .sombra-amarela{background: #fdea4f;height: 123px!important;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;margin: 0 auto}
+.cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre{margin-top: 60%;width: 100%!important;}
 .cuidadores .container-cuidadores .col-esq .sobre-autor .foto-sobre{width: 68%;}
 
 @media only screen and (max-width: 500px) and (min-width: 321px){
 	.cuidadores .container-cuidadores .col-esq .sobre-autor .sombra-amarela{background: #fdea4f;height: 123px!important;border-radius:10px;  -moz-border-radius:10px; -webkit-border-radius:10px;margin: 0 auto;}
-	.cuidadores .container-cuidadores .col-esq .sobre-autor{width: 40%!important;float: left;margin: 2%;}
+	.cuidadores .container-cuidadores .col-esq .sobre-autor{width: 90%!important;float: left;margin: 2%;height: 170px!important;}
+	.cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre {display: block;width: 55%!important;margin: 0;}
 
 }
 
+#voltar-topo-pagina.categorias span{ border-bottom: 2px solid #fbc227;border-top: 2px solid #fbc227; color: #00aa52; text-decoration: underline;}
