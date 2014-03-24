@@ -23,7 +23,7 @@
 <!--GUIA TOPO-->
 <div id="guia-topo" class="menu-tvculturaabrace" align="center">
   <?php #if( isset($asset) || $site->getSlug() != "tvcultura" && $section->getSlug()!="homepage" || $site->getSlug() == "cmais" && $section->getSlug()=="homepage" || $site->getSlug() == "tvratimbum" && $section->getSlug()=="homepage"):?>
-  <?php if(isset($section) && ($section->Site->getSlug() == "tvcultura" && $section->getSlug() == "homepage")||($site->getSlug() == "carnaval2014" && $section->getSlug() == "home")):?>
+  <?php if(isset($section) && (($section->Site->getSlug() == "tvcultura" && $section->getSlug() == "homepage")||($site->getSlug() == "carnaval2014" && $section->getSlug() == "home"))):?>
   <?php else: ?> 
     <div class="abrace-infinito-direito"></div>
   <?php endif; ?> 
@@ -83,7 +83,7 @@
     
     
     <!--menu parte 1-->
-  <?php if(isset($section) && ($section->Site->getSlug() == "tvcultura" && $section->getSlug() == "homepage")||($site->getSlug() == "carnaval2014" && $section->getSlug() == "home")):?>
+  <?php if(isset($section) && (($section->Site->getSlug() == "tvcultura" && $section->getSlug() == "homepage")||($site->getSlug() == "carnaval2014" && $section->getSlug() == "home"))):?>
     <div id="menu-portal-1">    
       <?php $classFloat = ""?> 
       <!--FACEBOOK-->
@@ -192,7 +192,7 @@
         <!-- /Menu ao Vivo -->
 
       </ul>
-      <?php if(isset($section) && ($section->Site->getSlug() == "tvcultura" && $section->getSlug() == "homepage")||($site->getSlug() == "carnaval2014" && $section->getSlug() == "home")):?>
+      <?php if(isset($section) && (($section->Site->getSlug() == "tvcultura" && $section->getSlug() == "homepage")||($site->getSlug() == "carnaval2014" && $section->getSlug() == "home"))):?>
         <!--redes sociais-->
         <div id="redesnovo">
           <a href="javascript:;" id="controle-remoto" class="redesB" title="controle-remoto" target="_blank"></a>
