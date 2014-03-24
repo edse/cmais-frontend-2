@@ -9,9 +9,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 
 <script>
   $("body").addClass("interna campanhas categorias");
-  if (window.location.pathname == "vilasesamo/categorias/incluir-brincando") {
-  	$("#categoria-box-pais .box-pais.span12").css("display","block");
-  };
+ 
 </script>
 <?php echo $noscript; ?>
 
