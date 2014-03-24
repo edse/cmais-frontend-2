@@ -1,5 +1,5 @@
 /*header*/
-a:hover, a:visited{color:#fff!important;}
+/*a:hover, a:visited{color:#fff!important;}*/
 
 .header--fixed {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
 .bounceOutUp{top:-90px}
@@ -477,3 +477,5 @@ a{text-decoration:underline!important;}
 	.cuidadores .container-cuidadores .col-esq .sobre-autor .descricao-sobre {display: block;width: 55%!important;margin: 0;}
 
 }
+
+.campanhas .categorias #voltar-topo-pagina{color:#00aa52}
