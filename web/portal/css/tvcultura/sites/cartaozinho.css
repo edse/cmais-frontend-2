@@ -109,7 +109,7 @@ body { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho
 .videos .duas-colunas { background:#86D5F3; }
 .videos .duas-colunas a,
 .videos .duas-colunas p { padding:0 20px; }
-.box-listao .box-texto {width: 496px;}
+.box-listao .box-texto {width: 496px!important;}
 #barra-site .topo-programa { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/bg-topo.png) no-repeat 200px 15px; }
 #menu-rodape .abas-conteudo { background:#86d5f3; }
 #menu-rodape .blocos a { color:#ffff00 }
@@ -128,7 +128,7 @@ body { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho
 .videos .blocos li a.bg:hover { border-color:#ffff05;  }
 #menu-rodape .neutro a { line-height:24px; }
 .videos #menu-rodape .abas-conteudo { min-height: 500px; }
-.paginacao{width:100%;}
+.paginacao{width:100%!important;}
 /* /videos */
 
 /* embreve*/
