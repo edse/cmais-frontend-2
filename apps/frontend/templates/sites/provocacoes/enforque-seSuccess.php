@@ -340,9 +340,11 @@
   if(success == 1){
     $("#form-contato").hide();
     $(".msgAcerto").show();
+    $(".msg").show();
   }else if(error == 1){
     $("#form-contato").hide();
     $(".msgErro").show();
+    $(".msg").show();
   }
 
 </script>

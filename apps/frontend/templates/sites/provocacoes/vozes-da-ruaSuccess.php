@@ -134,6 +134,11 @@
                       <textarea name="mensagem" id="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
                       <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
                     </div>
+											<textarea id="pergunta2" name="pergunta2"></textarea>
+	                    <input type="text" name="campo_de_email" id="campo_de_email" style="display:none"/>
+	                    <input type="hidden" name="email_verify" id="email_verify"/>
+	                    <input type="hidden" name="teste_contato" id="teste_contato"/>                    
+                    
                     <div class="grd">
                       <label>Escreva um pouco sobre você</label>
                       <textarea name="escreva" id="escreva" onKeyDown="limitText(this,1000,'#textCounter2');"></textarea>
@@ -171,13 +176,13 @@
                       <input type="checkbox" class="check" name="concordo" id="concordo">
                       <label for="concordo">Declaro que li e concordo com o regulamento</label>
                     </div>
-                    <div class="codigo" id="captchaimage">
+                    <!--div class="codigo" id="captchaimage">
                       <label for="captcha">Confirmação</label>
                       <br />
                       <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código"> <img src="http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" /> </a>
                       <label class="msg" for="captcha">Digite no campo abaixo os caracteres que você vê na imagem:</label>
                       <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
-                    </div>
+                    </div-->
                     <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                     <input type="submit" value="confirmar" id="enviar" name="enviar" class="btn">
                     <input type="submit" value="cancelar" id="cancelar" name="cancelar" class="btn">
@@ -393,8 +398,15 @@
   if(success == 1){
     $("#form-contato").hide();
     $(".msgAcerto").show();
+    $(".msg").show();
   }else if(error == 1){
     $("#form-contato").hide();
     $(".msgErro").show();
+    $(".msg").show();
   }
 </script>
+<style>
+#pergunta2{
+  visibility: hidden;
+}
+</style>
