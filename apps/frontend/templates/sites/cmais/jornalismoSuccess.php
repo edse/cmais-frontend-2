@@ -64,7 +64,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
 <!--MENU-PROGRAMAS-->
 <div id="menu-programas">
   <div class="menu-programas">
-    <h1>Jornalismo</h1>
+    <a href="http://cmais.com.br/jornalismo"><h1>Jornalismo</h1></a>
 		<?php if(isset($displays["destaque-menu-programas"])): ?>
 			<ul>
 				<?php foreach ($displays["destaque-menu-programas"] as $k => $d): ?>

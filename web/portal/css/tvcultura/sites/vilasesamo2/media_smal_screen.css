@@ -230,8 +230,9 @@ a{text-decoration:underline!important;}
 .interna.atividades #content{margin:0px 5%;}
 
 .interna.jogos #content h1 .icones-sprite-interna,
-.interna.atividades #content h1 .icones-sprite-interna,
-.interna.videos #content h1 .icones-sprite-interna {margin: -7% 0 0 27%!important;}
+.interna.videos #content h1 .icones-sprite-interna {margin: -8% 0 0 35%!important;}
+
+.interna.atividades #content h1 .icones-sprite-interna{margin:-8% 0 0 28%!important;}
 
 .interna.jogos #content h1,
 .interna.atividades #content h1,
