@@ -114,9 +114,5 @@
         </div>
       </div>
     </div>
-    <?php include_partial_from_folder('blocks', 'global/footer')    ?>
-
-    <div id="miolo"></div>
-    <div class="box-lateral"></div>
   </body>
 </html>
