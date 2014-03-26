@@ -264,7 +264,7 @@ function init() {
   
   uiPlay.on("keydown", function(event){
     if(event.which == 13) {
-      event.preventDefault();
+      //event.preventDefault();
       console.log("começo");
       uiPlay.attr('aria-hidden', 'true').attr('tabindex', '-1');
       ui.removeClass("open");
@@ -277,7 +277,7 @@ function init() {
   });
   uiAgain.on("keydown",function(event){
     if(event.which == 13) {
-      event.preventDefault();
+      //event.preventDefault();
       console.log("reinicio");
       reStartGame();
     } 
@@ -297,7 +297,7 @@ function init() {
   });
   uiReset.on("keydown",function(event){
     if(event.which == 13) {
-      event.preventDefault();
+      //event.preventDefault();
       console.log("restart");
       reStartGame();
       $('.card').addClass('reset');
@@ -356,7 +356,7 @@ function startGame() {
       $(this).click(selectCard);
       $(this).on("keydown", function( event ) {
         if ( event.which == 13 ) {
-          event.preventDefault();
+          //event.preventDefault();
           console.log("seleciono");
           switch($(this).attr('data-pattern')){
             case "be":
