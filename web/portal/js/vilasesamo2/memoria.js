@@ -401,7 +401,7 @@ function startGame() {
             setTimeout(function(){
               $('.characther').focus();
               console.log("foquei 3");
-            },1500);
+            },800);
             //$(this).find('.back').attr('tab-index','-1').attr('aria-hidden', 'true');  
           }
           // check the pattern of both flipped card 0.7s later.
