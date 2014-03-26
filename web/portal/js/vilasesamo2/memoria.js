@@ -27,6 +27,8 @@ var uiTimer = $("#timer");
 var uiSplash = $("#splash");
 var uiFullscreen = $("#fullscreen");
 var decent = styleSupport('transition');
+var character;
+var position;
 
 //create deck array
 var matchingGame = {};
@@ -90,9 +92,14 @@ $(function(){
   });
   
   loader.addCompletionListener(function() {
-    uiPlay.html('<span>Jogar</span>');
+    console.log("entrei loaderCompletition");
+    uiPlay.html('<span aria-hidden="true" tabindex="-1">Jogar</span>');
     ui.addClass('open');
     $('#gamePlay span').hide();
+        
+    setTimeout(function(){
+      $('#gamePlay').focus();
+    },500);
     init();
   });
   
@@ -116,6 +123,7 @@ $(function(){
   //AppLoaded();
   function loadAudio(uri)
   {
+      console.log("entrei audio");
       var audio = new Audio();
       //audio.onload = isAppLoaded; // It doesn't works!
       audio.addEventListener('canplaythrough', isAppLoaded, false); // It works!!
@@ -125,9 +133,10 @@ $(function(){
   
   function isAppLoaded()
   {
+      console.log("entrei AppLoaded");
       filesLoaded++;
       if (filesLoaded >= filesToLoad){
-        uiPlay.html('<span>Jogar</span>');
+        uiPlay.html('<span aria-hidden="true" tabindex="-1">Jogar</span>');
         ui.addClass('open');
         $('#gamePlay span').hide();
         //init();
@@ -221,7 +230,7 @@ function setPosition(){
     }
   });
 }//setPosition
-  
+
 function acessibilidadeVisual(){
   var cont = 1;
   var line=1;
@@ -233,13 +242,16 @@ function acessibilidadeVisual(){
       var col = String.fromCharCode(colLetter)
       if(i==5 || i==11){
         cont = 0;
+      }
+      if(i==6 || i==12){
         line++;
       }
-      $(this).attr('aria-label', "coluna:"+col+" - Linha:"+line)
+      $(this).attr('aria-label',"Coluna: "+ col+". Linha:"+line)
       cont++;
     })
   },1000)
 }
+  
 //initialise game
 function init() {
   if (!decent) { //workaround for IE9
@@ -251,6 +263,29 @@ function init() {
     ui.removeClass("open");
     startGame();
   });
+  
+  
+  uiPlay.on("keydown", function(event){
+    if(event.which == 13) {
+      //event.preventDefault();
+      console.log("começo");
+      uiPlay.attr('aria-hidden', 'true').attr('tabindex', '-1');
+      ui.removeClass("open");
+      startGame();
+      $('#gameStats').prepend("<p id='ex-jogo' style='font-size:1px; text-indent:-999999' aria-label='Oi, espalhamos dezoito cartas.Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou para carta anterior a esquerda. enter = viro carta e leio qual personagem que é.' tabindex='0'>Oi, espalhamos dezoito cartas.Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou para carta anterior a esquerda. enter = viro carta e leio qual personagem que é.  </p>");
+      setTimeout(function(){
+        $('#ex-jogo').focus();
+      },1000);
+    } 
+  });
+  uiAgain.on("keydown",function(event){
+    if(event.which == 13) {
+      //event.preventDefault();
+      console.log("reinicio");
+      reStartGame();
+    } 
+  });
+  
   uiAgain.click(function(e) {
     e.preventDefault();
     reStartGame();
@@ -263,6 +298,18 @@ function init() {
       $('.reset').removeClass('reset');
     });
   });
+  uiReset.on("keydown",function(event){
+    if(event.which == 13) {
+      //event.preventDefault();
+      console.log("restart");
+      reStartGame();
+      $('.card').addClass('reset');
+      $('.reset').bind("webkitTransitionEnd transitionend oTransitionEnd", function(){
+        $('.reset').removeClass('reset');
+      });
+    } 
+  });
+  
   if (typeof document.cancelFullScreen != 'undefined' ||
     typeof document.mozCancelFullScreen != 'undefined' ||
     typeof document.webkitCancelFullScreen != 'undefined') {
@@ -290,24 +337,82 @@ function startGame() {
     for(var i=0;i<17;i++){
       $(".card:first-child").clone().appendTo("#cards");
     }
+    
     // initialize each card's position
-    uiCards.children().each(function(index) {
+    uiCards.children().each(function(index) { 
+      
+      
       // align the cards to be 3x6 ourselves.
       $(this).css({
         "left" : ($(this).width() + 5) * (index % 6),
         "top" : ($(this).height() + 5) * Math.floor(index / 6)
       });
+      
       // get a pattern from the shuffled deck
       var pattern = matchingGame.deck.pop();
       // visually apply the pattern on the card's back side.
       $(this).find(".back").addClass(pattern);
       // embed the pattern data into the DOM element.
       $(this).attr("data-pattern",pattern.substr(0,2));
+      
       // listen the click event on each card DIV element.
       $(this).click(selectCard);
+      $(this).on("keydown", function( event ) {
+        if ( event.which == 13 ) {
+          //event.preventDefault();
+          console.log("seleciono");
+          switch($(this).attr('data-pattern')){
+            case "be":
+              character = "carta com a bel";
+            break;
+            case "bb":
+              character = "carta com o beto";
+            break;
+            case "co":
+              character = "carta com o come-come";
+            break;
+            case "el":
+              character = "carta com o elmo";
+            break;
+            case "en":
+              character = "carta com o ênio";
+            break;
+            case "ga":
+              character = "carta com o garibaldo";
+            break;
+            case "gr":
+              character = "carta com o groover";
+            break;
+            case "gg":
+              character = "carta com a sivan";
+            break;
+            case "zo":
+              character = "carta com a zoe";
+            break;
+          }
+          if ($(".card-flipped").size() > 1) {
+            return;
+          }
+          if(!$(this).hasClass("card-flipped")) {
+            playSound('car_flipped');
+            uiClick.text(++clicks);
+            position = $(this).index();
+            $(this).addClass("card-flipped").append('<span id="characther" class="characther" aria-label="'+character+'" tabindex="0">'+character+'</span>');
+            setTimeout(function(){
+              $('.characther').focus();
+              console.log("foquei 2");
+            },1000);
+            //$(this).find('.back').attr('tab-index','-1').attr('aria-hidden', 'true');  
+          }
+          // check the pattern of both flipped card 0.7s later.
+          if ($(".card-flipped").size() == 2) {
+            setTimeout(checkPattern,1200);
+          }
+        } 
+      });
     });
     setCardSize();
-  
+    
     var adjust = setInterval(function(){
       setPosition();   
     },50);
@@ -351,6 +456,14 @@ function selectCard() {
 
 //if pattern is same remove cards otherwise flip back
 function checkPattern() {
+  $('.characther').remove();
+  setTimeout(function(){
+    if($('.card').eq(position)){
+      $('.card').eq(position).focus();
+    }else{
+      $('.card').eq(0).focus();
+    }
+  },1000);
   var pattern = isMatchPattern();
   if (pattern) {
     uiSplash.addClass('match');
@@ -358,6 +471,31 @@ function checkPattern() {
     $('#' + pattern).addClass('matched current');
     $('.match').bind("webkitTransitionEnd transitionend oTransitionEnd", function(){
       uiSplash.removeClass('match');
+      var quant = 0;
+      $('.card').each(function(i){
+        quant = i
+      });
+      
+      var pairs = (quant+1)/2;
+      var pares = "";
+      if(pairs==1){
+        pares="par";
+      }else{
+        pares="pares";
+      }
+      if(pairs >= 1){
+        $('#ex-jogo').attr('aria-label','Parabéns! você acertou. agora você tem mais '+pairs+' '+ pares+'  para econtrar. Vamos lá?. Ajude o Garibaldo .');
+        $('#ex-jogo').html('Parabéns! você acertou. agora você tem mais '+pairs+' '+ pares+'  para econtrar. Vamos lá?. Ajude o Garibaldo .');
+      }else{
+        $('#ex-jogo').remove();
+        
+      }
+      setTimeout(function(){
+        $('#ex-jogo').focus();
+        setTimeout(function(){
+          $('.card').eq(0).focus();
+        },9000);
+      },1000);
     });
     $(".card-flipped").removeClass("card-flipped").addClass("card-removed");
     $(".card-removed").bind("webkitTransitionEnd transitionend oTransitionEnd", removeTookCards);
@@ -381,7 +519,9 @@ function checkPattern() {
     }
     */
     playSound('car_flipped');
-    playSound("Error_garibaldo_tente");
+    setTimeout(function(){
+      playSound("Error_garibaldo_tente");
+    },2500);
     $(".card-flipped").removeClass("card-flipped");
   }
 }
@@ -395,7 +535,7 @@ function isMatchPattern() {
   if (pattern == anotherPattern) {
     return pattern;
   } else {
-    return false;
+   // return false;
   }
 }
 
@@ -404,7 +544,9 @@ function removeTookCards() {
   soundsCelebrating[0]= "Macthing_bel_ae_viva";
   soundsCelebrating[1]= "Macthing_garibaldo_muito_bem";
   //playSound(soundsCelebrating[Math.round(Math.random(soundsCelebrating.length))]);
-  playSound("Macthing_garibaldo_muito_bem");
+  setTimeout(function(){
+    playSound("Macthing_garibaldo_muito_bem");
+  },1500);
   if (cardsmatched < 8){
     cardsmatched++;
     $(".card-removed").remove();
@@ -419,13 +561,17 @@ function EndGame() {
   
   // Define score formula
   total_score =  ( 33/(score/60) + 66/(clicks/24) ).toFixed(2);
-  $('#score').html('Sua pontuação amiguinho: ' + total_score + '<br>' + clicks + ' Cliques em ' + score + ' segundos');
+  $('#score').attr('aria-live', 'Sua pontuação amiguinho: ' + total_score + '<br>' + clicks + ' Cliques em ' + score + ' segundos').html('Sua pontuação amiguinho: ' + total_score + '<br>' + clicks + ' Cliques em ' + score + ' segundos');
   ui.addClass('end').removeClass('play');
-  
-  playSound('Final_garibaldo');
   setTimeout(function(){
-    playSound('Final_play_again');  
-  },3500);
+    playSound('Final_garibaldo');
+    setTimeout(function(){
+      playSound('Final_play_again');
+      setTimeout(function(){
+        $('#score').focus();
+      },4000);  
+    },3500);
+  },2000);
   
 }
 
@@ -439,7 +585,11 @@ function reStartGame(){
   uiCards.html("<div class='card'><div class='face front'></div><div class='face back'></div></div>");
   clearTimeout(scoreTimeout);
   matchingGame.deck = $.extend(true, [], matchingGame.clone);
-  
+  $('#ex-jogo').remove();
+  $('#gameStats').prepend("<p id='ex-jogo' style='font-size:1px; text-indent:-999999' aria-label='Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou para carta anterior a esquerda. enter = viro carta e leio qual personagem que é.' tabindex='0'>Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou para carta anterior a esquerda. enter = viro carta e leio qual personagem que é.</p>");
+  setTimeout(function(){
+    $('#ex-jogo').focus();
+  }, 1000);
   setCardSize();
 
   startGame();
