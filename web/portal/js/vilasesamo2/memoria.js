@@ -347,35 +347,35 @@ function startGame() {
         "left" : ($(this).width() + 5) * (index % 6),
         "top" : ($(this).height() + 5) * Math.floor(index / 6)
       });
-      switch($(this).attr('data-pattern')){
-            case "be":
-              character = "carta com a bel";
-            break;
-            case "bb":
-              character = "carta com o beto";
-            break;
-            case "co":
-              character = "carta com o come-come";
-            break;
-            case "el":
-              character = "carta com o elmo";
-            break;
-            case "en":
-              character = "carta com o ênio";
-            break;
-            case "ga":
-              character = "carta com o garibaldo";
-            break;
-            case "gr":
-              character = "carta com o groover";
-            break;
-            case "gg":
-              character = "carta com a sivan";
-            break;
-            case "zo":
-              character = "carta com a zoe";
-            break;
-          }
+      switch($(this).parent().attr('data-pattern')){
+        case "be":
+          character = "carta com a bel";
+        break;
+        case "bb":
+          character = "carta com o beto";
+        break;
+        case "co":
+          character = "carta com o come-come";
+        break;
+        case "el":
+          character = "carta com o elmo";
+        break;
+        case "en":
+          character = "carta com o ênio";
+        break;
+        case "ga":
+          character = "carta com o garibaldo";
+        break;
+        case "gr":
+          character = "carta com o groover";
+        break;
+        case "gg":
+          character = "carta com a sivan";
+        break;
+        case "zo":
+          character = "carta com a zoe";
+        break;
+      }
       $(this).append(" <p id='characther"+index+"' class='characther' aria-live='polite' aria-label='"+character+ "' tabindex='-1'>"+character+ "</p>")
       // get a pattern from the shuffled deck
       var pattern = matchingGame.deck.pop();
