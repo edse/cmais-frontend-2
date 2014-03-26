@@ -341,7 +341,7 @@ function startGame() {
     // initialize each card's position
     uiCards.children().each(function(index) { 
       
-      
+      $(this).append("<p id='characther"+index+"' class='characther' aria-live='polite' aria-label='' tabindex='0'></p>");
       // align the cards to be 3x6 ourselves.
       $(this).css({
         "left" : ($(this).width() + 5) * (index % 6),
@@ -584,7 +584,7 @@ function reStartGame(){
   uiSplash.removeClass('matchend');
   uiSplash.find('span').removeClass('matched');
   playGame = false;
-  uiCards.html("<div class='card'><div class='face front'></div><div class='face back'></div><p id='characther"+index+"' class='characther' aria-live='polite' aria-label='' tabindex='0'></p></div>");
+  uiCards.html("<div class='card'><div class='face front'></div><div class='face back'></div></div>");
   clearTimeout(scoreTimeout);
   matchingGame.deck = $.extend(true, [], matchingGame.clone);
   $('#ex-jogo').remove();
