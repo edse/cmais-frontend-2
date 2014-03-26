@@ -399,7 +399,7 @@ function startGame() {
             position = $(this).index();
             $(this).addClass("card-flipped").append('<p id="characther" class="characther" aria-live="polite" aria-label="'+character+'" tabindex="0">'+character+'</p> ');
             setTimeout(function(){
-              //$('.characther').focus();
+              $('.characther').focus();
               console.log("foquei 3");
             },1500);
             //$(this).find('.back').attr('tab-index','-1').attr('aria-hidden', 'true');  
