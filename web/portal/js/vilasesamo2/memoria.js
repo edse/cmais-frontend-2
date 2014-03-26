@@ -397,7 +397,9 @@ function startGame() {
             playSound('car_flipped');
             uiClick.text(++clicks);
             position = $(this).index();
-            $(this).addClass("card-flipped").append('<p id="characther" class="characther" aria-live="polite" aria-label="'+character+'" tabindex="0">'+character+'</p> ');
+            //$(this).addClass("card-flipped").append('<p id="characther" class="characther" aria-live="polite" aria-label="'+character+'" tabindex="0">'+character+'</p> ');
+            $(this).addClass("card-flipped");
+            $(this).find('.character').attr("aria-label",character).html(character);
             setTimeout(function(){
               $('.characther').focus();
               console.log("foquei 3");
@@ -582,7 +584,7 @@ function reStartGame(){
   uiSplash.removeClass('matchend');
   uiSplash.find('span').removeClass('matched');
   playGame = false;
-  uiCards.html("<div class='card'><div class='face front'></div><div class='face back'></div></div>");
+  uiCards.html("<div class='card'><div class='face front'></div><div class='face back'></div><p id='characther"+index+"' class='characther' aria-live='polite' aria-label='' tabindex='0'></p></div>");
   clearTimeout(scoreTimeout);
   matchingGame.deck = $.extend(true, [], matchingGame.clone);
   $('#ex-jogo').remove();
