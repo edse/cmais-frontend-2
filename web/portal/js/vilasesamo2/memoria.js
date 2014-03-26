@@ -347,21 +347,7 @@ function startGame() {
         "left" : ($(this).width() + 5) * (index % 6),
         "top" : ($(this).height() + 5) * Math.floor(index / 6)
       });
-      
-      // get a pattern from the shuffled deck
-      var pattern = matchingGame.deck.pop();
-      // visually apply the pattern on the card's back side.
-      $(this).find(".back").addClass(pattern);
-      // embed the pattern data into the DOM element.
-      $(this).attr("data-pattern",pattern.substr(0,2));
-      
-      // listen the click event on each card DIV element.
-      $(this).click(selectCard);
-      $(this).on("keydown", function( event ) {
-        if ( event.which == 13 ) {
-          //event.preventDefault();
-          console.log("seleciono");
-          switch($(this).attr('data-pattern')){
+      switch($(this).attr('data-pattern')){
             case "be":
               character = "carta com a bel";
             break;
@@ -390,6 +376,21 @@ function startGame() {
               character = "carta com a zoe";
             break;
           }
+      $(this).append(" <p id='characther"+index+"' class='characther' aria-live='polite' aria-label='"+character+ "' tabindex='-1'>"+character+ "</p>")
+      // get a pattern from the shuffled deck
+      var pattern = matchingGame.deck.pop();
+      // visually apply the pattern on the card's back side.
+      $(this).find(".back").addClass(pattern);
+      // embed the pattern data into the DOM element.
+      $(this).attr("data-pattern",pattern.substr(0,2));
+      
+      // listen the click event on each card DIV element.
+      $(this).click(selectCard);
+      $(this).on("keydown", function( event ) {
+        if ( event.which == 13 ) {
+          //event.preventDefault();
+          console.log("seleciono");
+          
           if ($(".card-flipped").size() > 1) {
             return;
           }
@@ -398,7 +399,7 @@ function startGame() {
             uiClick.text(++clicks);
             position = $(this).index();
             $(this).addClass("card-flipped")
-            $(".character").attr("aria-label=",character).html(character);
+            $(this).find(".character").attr("tabindex", "0");
             setTimeout(function(){
               $('.characther').focus();
               console.log("foquei 3");
@@ -457,7 +458,7 @@ function selectCard() {
 
 //if pattern is same remove cards otherwise flip back
 function checkPattern() {
-  $('.characther').remove();
+  $('.characther').attr("tabindex","-1");
   setTimeout(function(){
     if($('.card').eq(position)){
       $('.card').eq(position).focus();
@@ -583,7 +584,7 @@ function reStartGame(){
   uiSplash.removeClass('matchend');
   uiSplash.find('span').removeClass('matched');
   playGame = false;
-  uiCards.html("<div class='card'><div class='face front'></div><div class='face back'><p id='characther' class='characther' aria-live='polite' aria-label='' tabindex='0'></p> </div></div>");
+  uiCards.html("<div class='card'><div class='face front'></div><div class='face back'></div></div>");
   clearTimeout(scoreTimeout);
   matchingGame.deck = $.extend(true, [], matchingGame.clone);
   $('#ex-jogo').remove();
