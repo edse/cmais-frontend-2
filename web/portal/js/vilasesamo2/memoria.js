@@ -399,6 +399,7 @@ function startGame() {
             position = $(this).index();
             $(this).addClass("card-flipped").append('<span id="characther" class="characther" aria-label="'+character+'" tabindex="0">'+character+'</span>');
             setTimeout(function(){
+              console.log("foquei");
               $('.characther').focus();
             },1000);
             //$(this).find('.back').attr('tab-index','-1').attr('aria-hidden', 'true');  
