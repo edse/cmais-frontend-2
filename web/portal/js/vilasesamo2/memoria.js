@@ -357,7 +357,7 @@ function startGame() {
       $(this).on("keydown", function( event ) {
         if ( event.which == 13 ) {
           event.preventDefault();
-          alert("seleciono");
+          console.log("seleciono");
           switch($(this).attr('data-pattern')){
             case "be":
               character = "carta com a bel";
