@@ -458,7 +458,7 @@ function selectCard() {
 
 //if pattern is same remove cards otherwise flip back
 function checkPattern() {
-  $('.characther').attr("aria-label", "");
+  $('.characther').attr("aria-label", "").html("");
   setTimeout(function(){
     if($('.card').eq(position)){
       $('.card').eq(position).focus();
