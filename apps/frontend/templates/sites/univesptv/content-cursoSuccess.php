@@ -159,7 +159,7 @@
                       </div>
                       <hr />
                     </div>
-                    <form id="bloco-notas" class="form-horizontal">
+                    <form id="bloco-notas" class="form-horizontal" action="<?php echo str_replace("univesptv.", "app.", $asset->retriveUrl())?>" method="POST">
                     	<input type="hidden" name="bloco-de-notas" id="bloco-de-notas" value="1" />
                       <fieldset>
                         <div class="control-group">
@@ -396,8 +396,11 @@
 		$('#anotacoes').keypress(function() {
 			$(".msgAcerto, .msgErro").hide();
 		});
+  	
 		var validator = $('#bloco-notas').validate({
 			submitHandler : function(form) {
+            form.submit();
+       },  /*   		
 				$.ajax({
 					type : "POST",
 					dataType : "text",
@@ -422,6 +425,7 @@
 					}
 				});
 			},
+			*/
 			rules : {
 				anotacoes : {
 					required : true
@@ -444,6 +448,26 @@
 			}
 		});
 	});
+
+  function getVar(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++){
+      var pair = vars[i].split("=");
+      if (pair[0] == variable) {
+        return pair[1];
+      }
+    }
+  }
+  var success = getVar("success");
+  var error = getVar("error");
+  if(success == 1){
+    $("#bloco-notas").hide();
+    $(".msgAcerto").show();
+  }else if(error == 1){
+    $("#bloco-notas").hide();
+    $(".msgErro").show();
+  }
 
 </script>
 <!-- scripts //-->
