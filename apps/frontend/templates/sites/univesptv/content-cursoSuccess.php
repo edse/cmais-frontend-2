@@ -400,7 +400,7 @@
 		var validator = $('#bloco-notas').validate({
 			submitHandler : function(form) {
             form.submit();
-         /*   		
+       },  /*   		
 				$.ajax({
 					type : "POST",
 					dataType : "text",
