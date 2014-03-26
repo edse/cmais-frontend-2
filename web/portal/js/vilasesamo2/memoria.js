@@ -348,7 +348,6 @@ function startGame() {
         "top" : ($(this).height() + 5) * Math.floor(index / 6)
       });
       
-      $(this).append(" <p id='characther"+index+"' class='characther' aria-live='polite' aria-label='' tabindex='-1'></p>")
       // get a pattern from the shuffled deck
       var pattern = matchingGame.deck.pop();
       // visually apply the pattern on the card's back side.
@@ -391,7 +390,6 @@ function startGame() {
               character = "carta com a zoe";
             break;
           }
-          $(this).find('character').attr('aria-live',character).attr("tabindex", "0");
           if ($(".card-flipped").size() > 1) {
             return;
           }
@@ -399,10 +397,9 @@ function startGame() {
             playSound('car_flipped');
             uiClick.text(++clicks);
             position = $(this).index();
-            $(this).addClass("card-flipped")
-            $(this).find(".character").attr("tabindex", "0");
+            $(this).addClass("card-flipped").append('<p id="characther" class="characther" aria-live="polite" aria-label="'+character+'" tabindex="0">'+character+'</p> ');
             setTimeout(function(){
-              $('.characther').focus();
+              //$('.characther').focus();
               console.log("foquei 3");
             },1500);
             //$(this).find('.back').attr('tab-index','-1').attr('aria-hidden', 'true');  
@@ -459,7 +456,7 @@ function selectCard() {
 
 //if pattern is same remove cards otherwise flip back
 function checkPattern() {
-  $('.characther').attr("tabindex","-1");
+  $('.characther').remove();
   setTimeout(function(){
     if($('.card').eq(position)){
       $('.card').eq(position).focus();
