@@ -397,7 +397,7 @@ function startGame() {
             playSound('car_flipped');
             uiClick.text(++clicks);
             position = $(this).index();
-            $(this).addClass("card-flipped").append('<h1 id="characther" class="characther" aria-polite="'+character+'" tabindex="0">'+character+'</h1>');
+            $(this).addClass("card-flipped").append('<h1 id="characther" class="characther" aria-polite="'+character+'" tabindex="0">'+character+'</h1> ');
             setTimeout(function(){
               $('.characther').focus();
               console.log("foquei 2");
