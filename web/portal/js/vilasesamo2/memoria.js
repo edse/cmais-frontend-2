@@ -397,11 +397,11 @@ function startGame() {
             playSound('car_flipped');
             uiClick.text(++clicks);
             position = $(this).index();
-            $(this).addClass("card-flipped").append('<h1 id="characther" class="characther" aria-polite="'+character+'" tabindex="0">'+character+'</h1> ');
+            $(this).addClass("card-flipped").append('<p id="characther" class="characther" aria-polite="'+character+'" tabindex="0">'+character+'</p> ');
             setTimeout(function(){
               $('.characther').focus();
               console.log("foquei 2");
-            },1000);
+            },1500);
             //$(this).find('.back').attr('tab-index','-1').attr('aria-hidden', 'true');  
           }
           // check the pattern of both flipped card 0.7s later.
