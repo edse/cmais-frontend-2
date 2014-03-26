@@ -27,8 +27,9 @@ a{outline:none;text-decoration:none;color:#DA4930}
 /*#cards{position:absolute;top:0;left:0;bottom:0;right:0;display:none;z-index:2}*/
 #cards{display:none;width:711px;height:476px;position: relative;top: 200px;left: 86px;margin-left:15px;}
 .card{-webkit-perspective:600px;-moz-perspective:600px;width:114px;height:149px;position:absolute;-moz-transition:all .3s;-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s;cursor:pointer}
-.reset{box-shadow:0 0 30px #fff; text-indent: -999999; font-size:1px}
-#ex-jogo{text-indent:-999999; font-size:1px;}
+.reset{box-shadow:0 0 30px #fff; text-indent: -999999px; font-size:1px}
+.character{font-size:1px; text-indent:-999999px}
+#ex-jogo{text-indent:-999999px; font-size:1px;}
 #gameIntro{margin: 20% auto 0 auto; max-width:82%;-moz-transition:opacity 1s ease-out;-webkit-transition:opacity 1s ease-out;-o-transition:opacity 1s ease-out;transition:opacity 1s ease-out}
 #gameIntro img{padding:20px; max-height:100%; max-width:100%; width:auto;}
 #game.open #gameIntro{opacity:1;z-index:3;}
