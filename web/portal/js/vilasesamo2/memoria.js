@@ -92,6 +92,7 @@ $(function(){
   });
   
   loader.addCompletionListener(function() {
+    console.log("entrei loaderCompletition");
     uiPlay.html('<span aria-hidden="true" tabindex="-1">Jogar</span>');
     ui.addClass('open');
     $('#gamePlay span').hide();
@@ -122,6 +123,7 @@ $(function(){
   //AppLoaded();
   function loadAudio(uri)
   {
+      console.log("entrei audio");
       var audio = new Audio();
       //audio.onload = isAppLoaded; // It doesn't works!
       audio.addEventListener('canplaythrough', isAppLoaded, false); // It works!!
@@ -131,6 +133,7 @@ $(function(){
   
   function isAppLoaded()
   {
+      console.log("entrei AppLoaded");
       filesLoaded++;
       if (filesLoaded >= filesToLoad){
         uiPlay.html('<span aria-hidden="true" tabindex="-1">Jogar</span>');
