@@ -399,12 +399,17 @@ function startGame() {
             position = $(this).index();
             //$(this).addClass("card-flipped").append('<p id="characther" class="characther" aria-live="polite" aria-label="'+character+'" tabindex="0">'+character+'</p> ');
             $(this).addClass("card-flipped");
-            $(this).find('.characther').attr("aria-label",character);
+            
             var whichCard = 0;
             $('.card-flipped').each(function(){
               whichCard += i;
             }); 
-            console.log(whichCard);
+            
+            if(whichCard==17){
+              $(this).find('.characther').attr("aria-label",character).html("Selecione a próxima carta");
+            }else if(whichCard == 34){
+              $(this).find('.characther').attr("aria-label",character).html("vamos ver se acertou?");
+            }
             var charPos = $(this).attr("data-position");
             setTimeout(function(){
               $('#characther'+charPos).focus();
