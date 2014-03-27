@@ -599,7 +599,9 @@ function reStartGame(){
   clearTimeout(scoreTimeout);
   matchingGame.deck = $.extend(true, [], matchingGame.clone);
   $('#ex-jogo').remove();
-  $('#gameStats').prepend("<p id='ex-jogo' style='font-size:1px; text-indent:-999999' aria-label='Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou para carta anterior a esquerda. enter = viro carta e leio qual personagem que é.' tabindex='0'>Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou para carta anterior a esquerda. enter = viro carta e leio qual personagem que é.</p>");
+  var enterHelp;
+  
+  $('#gameStats').prepend("<p id='ex-jogo' style='font-size:1px; text-indent:-999999' aria-label='Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou para carta anterior a esquerda. enter = viro carta e leio qual personagem que é.' tabindex='0'>Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = volto uma carta para esquerda. "+ enterHelp +" = viro carta e leio qual personagem que é.</p>");
   setTimeout(function(){
     $('#ex-jogo').focus();
   }, 1000);
