@@ -367,6 +367,7 @@ function startGame() {
         if ( event.which == 13 ) {
           //event.preventDefault();
           console.log("seleciono");
+          $('#ex-jogo').html("").attr("aria-label","");
           switch($(this).attr('data-pattern')){
             case "be":
               character = "carta com a bel";
@@ -489,32 +490,34 @@ function checkPattern() {
     uiSplash.addClass('match');
     $('.matched').removeClass('current');
     $('#' + pattern).addClass('matched current');
-    $('.match').bind("webkitTransitionEnd transitionend oTransitionEnd", function(){
-      uiSplash.removeClass('match');
-      var quant = 0;
-      $('.card').each(function(i){
-        quant = i
-      });
-      
-      var pairs = (quant+1)/2;
-      var pares = "";
-      if(pairs==1){
-        pares="par";
-      }else{
-        pares="pares";
-      }
-      if(pairs >= 1){
-        $('#ex-jogo').attr('aria-label','Parabéns! você acertou. agora você tem mais '+pairs+' '+ pares+'  para econtrar. Vamos lá?. Ajude o Garibaldo .');
-        $('#ex-jogo').html('Parabéns! você acertou. agora você tem mais '+pairs+' '+ pares+'  para econtrar. Vamos lá?. Ajude o Garibaldo .');
-      }else{
-        $('#ex-jogo').remove();
-      }
+    var quant = 0;
+    $('.card').each(function(i){
+      quant = i
+    });
+    var pairs = (quant-1)/2;
+    var pares = "";
+    if(pairs==1){
+      pares="par";
+    }else{
+      pares="pares";
+    }
+    if(pairs >= 1){
+      $('#ex-jogo').attr('aria-label','Parabéns! você acertou. agora você tem mais '+pairs+' '+ pares+'  para econtrar. Vamos lá?. Ajude o Garibaldo .');
+      $('#ex-jogo').html('Parabéns! você acertou. agora você tem mais '+pairs+' '+ pares+'  para econtrar. Vamos lá?. Ajude o Garibaldo .');
       setTimeout(function(){
         $('#ex-jogo').focus();
-        setTimeout(function(){
-          $('.card').eq(0).focus();
-        },7000);
-      },1000);
+      },800);
+    }else{
+      $('#ex-jogo').remove();
+    }
+
+      
+    setTimeout(function(){
+      $('.card').eq(0).focus();
+    },7000);
+
+    $('.match').bind("webkitTransitionEnd transitionend oTransitionEnd", function(){
+      uiSplash.removeClass('match');
     });
     $(".card-flipped").removeClass("card-flipped").addClass("card-removed");
     $(".card-removed").bind("webkitTransitionEnd transitionend oTransitionEnd", removeTookCards);
