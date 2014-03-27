@@ -340,7 +340,7 @@ function startGame() {
     
     // initialize each card's position
     uiCards.children().each(function(index) { 
-      
+      $(this).attr("data-position",index);
       $(this).append("<p id='characther"+index+"' class='characther' aria-live='polite' aria-label='' tabindex='0'></p>");
       // align the cards to be 3x6 ourselves.
       $(this).css({
@@ -400,8 +400,9 @@ function startGame() {
             //$(this).addClass("card-flipped").append('<p id="characther" class="characther" aria-live="polite" aria-label="'+character+'" tabindex="0">'+character+'</p> ');
             $(this).addClass("card-flipped");
             $(this).find('.characther').attr("aria-label",character).html(character);
+            var charPos = $(this).attr("data-position")
             setTimeout(function(){
-              $('.characther').focus();
+              $('#characther'+charPos).focus();
               console.log("foquei 3");
             },800);
             //$(this).find('.back').attr('tab-index','-1').attr('aria-hidden', 'true');  
