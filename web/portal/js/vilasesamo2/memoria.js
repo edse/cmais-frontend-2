@@ -583,7 +583,7 @@ function EndGame() {
   
   // Define score formula
   total_score =  ( 33/(score/60) + 66/(clicks/24) ).toFixed(2);
-  $('#score').attr('aria-label', 'Sua pontuação amiguinho: ' + parseInt(total_score) +". Com " + clicks + ' Cliques em ' + score + ' segundos');
+  $('#score').attr('aria-label', 'Sua pontuação amiguinho: ' + parseInt(total_score) +". Com " + clicks + ' Cliques em ' + score + ' segundos').html('Sua pontuação amiguinho: ' + parseInt(total_score) +".<br>Com "+ clicks + ' Cliques em ' + score + ' segundos');
   ui.addClass('end').removeClass('play');
   setTimeout(function(){
     playSound('Final_garibaldo');
@@ -591,9 +591,9 @@ function EndGame() {
       playSound('Final_play_again');
       setTimeout(function(){
         $('#score').focus();
-      },8000);  
+      },6000);  
     },3500);
-  },5000);
+  },2000);
   
 }
 
