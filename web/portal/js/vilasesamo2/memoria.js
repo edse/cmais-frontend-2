@@ -64,6 +64,7 @@ matchingGame.clone = $.extend(true, [], matchingGame.deck);
 //on document load the lazy way
 $(function(){
   $('#gamePlay').attr("aria-label", "você está no meio da página, no botão Jogar, aperte "+enterHelp+" pra começar o jogo da memória amiguinho!");
+  $('#reset').attr("aria-label", "botão resete, aperte "+enterHelp+ "caso queria reiniciar o jogo.");
   var loader = new PxLoader();
   
   loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/acerto.png');
