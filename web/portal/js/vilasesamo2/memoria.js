@@ -29,7 +29,12 @@ var uiFullscreen = $("#fullscreen");
 var decent = styleSupport('transition');
 var character;
 var position;
-
+var enterHelp;
+if(str.indexOf("iPhone") != -1 || str.indexOf("iPod") != -1 || str.indexOf("Mac OS") != -1){
+  enterHelp = "enter";
+}else{
+  enterHelp = "NVDA + enter";
+}
 //create deck array
 var matchingGame = {};
 matchingGame.deck = [
@@ -272,7 +277,7 @@ function init() {
       uiPlay.attr('aria-hidden', 'true').attr('tabindex', '-1');
       ui.removeClass("open");
       startGame();
-      $('#gameStats').prepend("<p id='ex-jogo' style='font-size:1px; text-indent:-999999' aria-label='Oi, espalhamos dezoito cartas.Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou para carta anterior a esquerda. enter = viro carta e leio qual personagem que é.' tabindex='0'>Oi, espalhamos dezoito cartas.Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou para carta anterior a esquerda. enter = viro carta e leio qual personagem que é.  </p>");
+      $('#gameStats').prepend("<p id='ex-jogo' style='font-size:1px; text-indent:-999999' aria-label='Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte "+ enterHelp +" em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou uma carta para a esquerda. "+ enterHelp +" = viro carta e leio qual personagem que é.' tabindex='0'>Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte "+ enterHelp +" em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = volto uma carta para esquerda. "+ enterHelp +" = viro carta e leio qual personagem que é.</p>");
       setTimeout(function(){
         $('#ex-jogo').focus();
       },1000);
@@ -599,12 +604,7 @@ function reStartGame(){
   clearTimeout(scoreTimeout);
   matchingGame.deck = $.extend(true, [], matchingGame.clone);
   $('#ex-jogo').remove();
-  var enterHelp;
-  if(str.indexOf("iPhone") != -1 || str.indexOf("iPod") != -1 || str.indexOf("Mac OS") != -1){
-    enterHelp = "enter";
-  }else{
-    enterHelp = "NVDA + enter";
-  }
+  
   $('#gameStats').prepend("<p id='ex-jogo' style='font-size:1px; text-indent:-999999' aria-label='Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte "+ enterHelp +" em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou uma carta para a esquerda. "+ enterHelp +" = viro carta e leio qual personagem que é.' tabindex='0'>Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte "+ enterHelp +" em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = volto uma carta para esquerda. "+ enterHelp +" = viro carta e leio qual personagem que é.</p>");
   setTimeout(function(){
     $('#ex-jogo').focus();
