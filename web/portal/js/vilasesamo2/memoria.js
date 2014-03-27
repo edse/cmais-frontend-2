@@ -400,7 +400,7 @@ function startGame() {
             //$(this).addClass("card-flipped").append('<p id="characther" class="characther" aria-live="polite" aria-label="'+character+'" tabindex="0">'+character+'</p> ');
             $(this).addClass("card-flipped");
             $(this).find('.characther').attr("aria-label",character).html(character);
-            var charPos = $(this).attr("data-position")
+            var charPos = $(this).attr("data-position");
             setTimeout(function(){
               $('#characther'+charPos).focus();
               console.log("foquei 3");
@@ -563,7 +563,7 @@ function EndGame() {
   
   // Define score formula
   total_score =  ( 33/(score/60) + 66/(clicks/24) ).toFixed(2);
-  $('#score').attr('aria-live', 'Sua pontuação amiguinho: ' + total_score + '<br>' + clicks + ' Cliques em ' + score + ' segundos').html('Sua pontuação amiguinho: ' + total_score + '<br>' + clicks + ' Cliques em ' + score + ' segundos');
+  $('#score').attr('aria-label', 'Sua pontuação amiguinho: ' + total_score + clicks + ' Cliques em ' + score + ' segundos').html('Sua pontuação amiguinho: ' + total_score + clicks + ' Cliques em ' + score + ' segundos');
   ui.addClass('end').removeClass('play');
   setTimeout(function(){
     playSound('Final_garibaldo');
