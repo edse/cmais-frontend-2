@@ -402,7 +402,7 @@ function startGame() {
             $(this).find('.characther').attr("aria-label",character);
             var whichCard = 0;
             $('.card-flipped').each(function(){
-              whichcard += i;
+              whichCard += i;
             }); 
             console.log(whichCard);
             var charPos = $(this).attr("data-position").html("");
