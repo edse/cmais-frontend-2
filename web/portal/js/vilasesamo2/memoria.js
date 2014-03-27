@@ -503,15 +503,16 @@ function checkPattern() {
     if(pairs >= 1){
       $('#ex-jogo').attr('aria-label','Parabéns! você acertou. agora você tem mais '+pairs+' '+ pares+'  para econtrar. Vamos lá?. Ajude o Garibaldo .');
       $('#ex-jogo').html('Parabéns! você acertou. agora você tem mais '+pairs+' '+ pares+'  para econtrar. Vamos lá?. Ajude o Garibaldo .');
+      $('#ex-jogo').focus();
     }else{
       $('#ex-jogo').remove();
     }
+
+      
     setTimeout(function(){
-      $('#ex-jogo').focus();
-      setTimeout(function(){
-        $('.card').eq(0).focus();
-      },7000);
-    },1500);
+      $('.card').eq(0).focus();
+    },7000);
+
     $('.match').bind("webkitTransitionEnd transitionend oTransitionEnd", function(){
       uiSplash.removeClass('match');
     });
