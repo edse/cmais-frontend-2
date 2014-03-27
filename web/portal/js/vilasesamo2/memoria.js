@@ -412,9 +412,9 @@ function startGame() {
             }); 
             
             if(whichCard==17){
-              $(this).find('.characther').html(character+". Selecione a próxima carta");
+              $(this).find('.characther').attr("aria-label",character+". Selecione a próxima carta").html(".");
             }else if(whichCard == 34){
-              $(this).find('.characther').html(character+". Vamos ver se acertou?");
+              $(this).find('.characther').attr("aria-label",character+". Vamos ver se acertou?").html(".");;
             }
             var charPos = $(this).attr("data-position");
             setTimeout(function(){
