@@ -215,18 +215,7 @@
             </div>
             <!-- /DIREITA -->
             
-          </div>
-          <!-- /CAPA -->
-          
-					<?php if (isset($displays["rodape-interno"])): ?>
-          <!--APOIO-->
-          <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
-          <!--/APOIO-->
-          <?php endif; ?>
-          
-        </div>
-        <!-- /CONTEUDO PAGINA -->
-              <div class="box-interna grid2">
+            <div class="box-interna grid2">
 			   	   <h2>Linha do Tempo</h2>
 		   	   	 </div>
 		   	   	 <!--TITULO-->
@@ -249,10 +238,23 @@
 			            </script>
 			            <script type="text/javascript" src="http://cmais.com.br/portal/js/timeline/storyjs-embed.js"></script>
 		            </div>
+		            <!-- /FIM TIMELINE -->
+            
+          </div>
+          <!-- /CAPA -->
+          
+					<?php if (isset($displays["rodape-interno"])): ?>
+          <!--APOIO-->
+          <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
+          <!--/APOIO-->
+          <?php endif; ?>
+          
+        </div>
+        <!-- /CONTEUDO PAGINA -->
+        
       </div>
       <!-- /MIOLO -->
-
-		            <!-- /FIM TIMELINE -->
+    				
     </div>
     <!-- /CAPA SITE -->
     
