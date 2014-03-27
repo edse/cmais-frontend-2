@@ -241,7 +241,7 @@
 			              var timeline_config = {
 			               width: "100%",
 			               height: "100%",
-			               source: "http://univesptv.cmais.com.br/1964/linha-do-tempo.jsonp",
+			               source: "http://cmais.com.br/anchieta/linha-do-tempo.jsonp",
 			               start_at_end: true, //start_at_end: true,começa do ultimo asset
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
