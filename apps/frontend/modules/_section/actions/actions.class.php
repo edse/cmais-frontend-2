@@ -1730,7 +1730,6 @@ class _sectionActions extends sfActions
           $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
         if(($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes")||($this->site->getSlug() == "1964")){
           $this->assetsQuery->limit(60);
-          die("1");
         }
       }
       else{
