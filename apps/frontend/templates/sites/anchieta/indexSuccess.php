@@ -1,107 +1,235 @@
-<link type="text/css" href="http://cmais.com.br/portal/univesptv/css/geral.css" rel="stylesheet" />
-<!--link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css">
-<link rel="stylesheet" href="http://cmais.com.br/portal/univesptv/css/cursos.css" /-->
-<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
-
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
+<div class="bg-chamada">
+  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+</div>
+<div class="bg-site">
+</div>
+
     <!-- CAPA SITE -->
-	<div id="capa-site" class="a1964">
-     	<!-- BARRA SITE -->
-  		<div id="barra-site">
-					<a href="<?php echo $site->retriveUrl() ?>"><img src="http://cmais.com.br/portal/images/timeline/topo.png"></a>
-					
-				
-				<!-- TOPO -->
-		    <div class="topo-programa">
-		    	
-	    		<!-- MENU -->
-					<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections))?>
-					<!--/ MENU -->
-					
-		    <!-- / TOPO -->  
-		    </div>
-		  <!-- /BARRA SITE -->  
-      </div>
-       
-      <!-- MIOLO -->
-   	  <div id="miolo">
-   	   	
-   	    <!-- BOX LATERAL -->
-        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
-        <!-- BOX LATERAL -->
+    <div id="capa-site">      
+
+      <!-- BARRA SITE -->
+      <div id="barra-site">
+        <div class="topo-programa">
+          <?php if(isset($program) && $program->id > 0): ?>
+          <h2>
+            <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
+              <?php if($program->getImageThumb() != ""): ?>
+                <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
+              <?php else: ?>
+                <h3 class="tit-pagina grid1"><?php echo $program->getTitle() ?></h3>
+              <?php endif; ?>
+            </a>
+          </h2>
+          <?php else: ?>
+          <h2>
+            <a href="<?php echo $site->retriveUrl() ?>" style="text-decoration: none;">
+              <?php if($site->getImageThumb() != ""): ?>
+                <img src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>" alt="<?php echo $site->getTitle() ?>" title="<?php echo $site->getTitle() ?>" />
+              <?php else: ?>
+                <h3 class="tit-pagina grid1"><?php echo $site->getTitle() ?></h3>
+              <?php endif; ?>
+            </a>
+          </h2>
+          <?php endif; ?>
+
+          <?php if(isset($program) && $program->id > 0): ?>
+          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
+          <?php endif; ?>
+          
+          <?php if(isset($program) && $program->id > 0): ?>
+          <!-- horario -->
+          <div id="horario">
+            <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
+          </div>
+          <!-- /horario -->
+          <?php endif; ?>
+        </div>
+
+        <!-- box-topo -->
+        <div class="box-topo grid3">
+
+          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
+
+          <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
+          <div class="navegacao txt-10">
+            <a href="../" title="Home">Home</a>
+            <span>&gt;</span>
+            <a href="<?php echo $section->retriveUrl()?>" title="<?php echo $section->getTitle()?>"><?php echo $section->getTitle()?></a>
+          </div>
+          <?php endif; ?>
+
+        </div>
+        <!-- /box-topo -->
         
-        <!--CONTEUDO-->
+      </div>
+      <!-- /BARRA SITE -->
+
+      <!-- MIOLO -->
+      <div id="miolo">
+        
+        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
+
+        <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
-	         
-	         <!-- CAPA 3-->
-         	 <div class="capa grid3">
-         	 	
-         	 	<!-- DESTAQUES -->
-						<?php if (isset($displays['destaque-principal'])): ?>      
-							<?php if (count($displays['destaque-principal']) > 0): ?>      
-			      <div id="destaque" class="destaque destaque-3c grid3">
-			        <ul class="abas-conteudo conteudo">
-								<?php foreach($displays['destaque-principal'] as $k=>$d): ?>
-								<?php //$related = $d->retriveRelatedAssetsByAssetTypeId(6); ?>  
-			          <li style="display: block;" id="bloco<?php echo $k ?>" class="filho">
-			          	<a class="media" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
-			          		<div class="subs"><h2><?php echo $d->getTitle() ?></h2></div>
-			          		<?php //<img src="<?php echo $d->retriveImageUrlByImageUsage('image-10-b') " alt="<?php //echo $d->getTitle() ?> 
-			          		<img src="http://img.youtube.com/vi/<?php echo $displays['destaque-principal'][$k]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
-			          	</a>
-			          	
-			         	</li>
-			        	<?php endforeach; ?>
-			        </ul>
-			        <ul class="abas-menu pag-bola destaque1">
-			        	<?php foreach($displays['destaque-principal'] as $k=>$d): ?>
-			        		<?php if($k==0): ?>
-			          <li class="ativo">
-			          	<?php else: ?>
-			          <li>
-			          	<?php endif; ?>
-			          	<a href="#bloco<?php echo $k ?>" title="<?php echo $d->getTitle() ?>"></a>
-			          </li>
-			          <?php endforeach; ?>
-			        </ul>
-			      </div>
-			      	<?php endif; ?>
-			      <?php endif; ?>
-		      <!-- /DESTAQUES -->
-		      
-		      <div class="conteudo-box">
-		      	
-		      <!-- /DESTAQUES HOME SEÇÕES -->
-  				<?php if (isset($displays['destaque-home-secoes'])): ?>
-	            	<?php if (count($displays['destaque-home-secoes']) > 0): ?>
-	            <div class="span10 cursos">
-	              <ul class="thumbnails">
-	              	<?php foreach($displays['destaque-home-secoes'] as $k=>$d): ?>
-	                <li class="span3">
-	                <div class="thumbnail">
-	                  <a href="<?php echo $d->retriveUrl(); ?>" title="<?php echo $d->getTitle(); ?>">
-	                  	<img alt="<?php echo $d->getTitle(); ?>" src="<?php echo $d->retriveImageUrlByImageUsage('image-13') ?>">
-	                  </a>
-	                  <div class="caption">
-	                    <h5><a href="<?php echo $d->retriveUrl(); ?>" title="<?php echo $d->getTitle(); ?>"><?php echo $d->getTitle(); ?></a></h5>
-	                    <a href="<?php echo $d->retriveUrl(); ?>"><?php echo $d->getDescription(); ?></a>
-	                  </div>
-	                </div>
-	                </li>
-	                <?php endforeach; ?>
-	              </ul>
-	            </div>
-	            	<?php endif; ?>          
-	            <?php endif; ?>
-		      <!-- /DESTAQUES HOME SEÇÕES-->
-		      
-         	 	</div>
-         	 	<!--TITULO-->
-		   	   	 <div class="box-interna grid2">
+          
+          <!-- CAPA -->
+          <div class="capa grid3">
+            
+            <!-- ESQUERDA -->
+            <div id="esquerda" class="grid2">
+            	
+              
+              <?php include_partial_from_folder('blocks','global/display-2c', array('displays' => $displays["destaque-principal"])) ?>
+
+              <?php include_partial_from_folder('blocks','global/share-2c-close', array('site' => $site, 'uri' => $uri)) ?>
+
+              <?php include_partial_from_folder('blocks','global/display-2c-playlist', array('displays' => $displays["destaque-playlist"])) ?>
+				
+				<style type="text/css">
+            		#esquerda .box-compartilhar .comentar { text-indent:-9999px; }
+            		#esquerda .box-compartilhar .comentar span {display:none;}  
+            		#esquerda .btn-compartilhar {float:left;}
+            	</style>
+            	
+              <!-- col-esq -->
+              <div class="col-esq grid1">
+              	
+                <!-- BOX PADRAO Enquete -->
+                <?php if(isset($displays["destaque-enquete-1"])) include_partial_from_folder('blocks','global/display-1c-poll', array('displays' => $displays["destaque-enquete-1"])) ?>
+                <!-- /BOX PADRAO Enquete -->
+                
+                <?php include_partial_from_folder('blocks','global/display-1c-host', array('displays' => $displays["destaque-apresentador"])) ?>
+                
+                <?php include_partial_from_folder('blocks','global/display-1c-hosts', array('displays' => $displays["destaque-apresentadores"])) ?>
+
+                <?php include_partial_from_folder('blocks','global/display-1c-gallery', array('displays' => $displays["destaque-galeria-1"])) ?>
+
+                <?php include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-1"])) ?>
+
+                <?php include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-3"])) ?>
+
+                <?php //include_partial_from_folder('blocks','global/display-1c-gallery', array('displays' => $displays["destaque-5"])) ?>
+                <?php include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-5"])) ?>
+
+                <?php include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-7"])) ?>
+                
+                <?php if(isset($displays["destaque-padrao-1"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-1"])) ?>
+            
+            	<?php if(isset($displays["destaque-padrao-3"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-3"])) ?>
+              </div>
+              <!-- /col-esq -->
+              
+              <!-- col-dir -->
+              <div class="col-dir grid1">
+                
+                <?php if(isset($displays["destaque-multiplo-1"])): ?>
+                <!-- BOX PADRAO Mais recentes -->
+                <div class="box-padrao grid1">
+                  <div class="topo claro">
+                    <span></span>
+                    <div class="capa-titulo">
+                      <h4><?php if($site->getSlug() == "mostra") echo "Próximos Filmes"; else echo "Conte&uacute;dos + recentes"; ?></h4>
+                      <a href="/<?php echo $site->getSlug() ?>/feed" class="rss" title="rss" style="display: block"></a>
+                    </div>
+                  </div>
+                  <?php if(isset($displays["destaque-multiplo-1"])) include_partial_from_folder('blocks','global/recent-news', array('displays' => $displays["destaque-multiplo-1"])) ?>
+                </div>
+                <!-- BOX PADRAO Mais recentes -->
+                <?php endif; ?>
+                
+                <?php if(isset($displays["destaque-apresentador-2"])) include_partial_from_folder('blocks','global/display-1c-host', array('displays' => $displays["destaque-apresentador-2"])) ?>
+
+                <?php if(isset($displays["destaque-apresentador-3"])) include_partial_from_folder('blocks','global/display-1c-host', array('displays' => $displays["destaque-apresentador-3"])) ?>
+                	
+                <?php include_partial_from_folder('blocks','global/display-1c-poll', array('displays' => $displays["destaque-enquete"])) ?>
+
+                <?php include_partial_from_folder('blocks','global/display-1c-gallery', array('displays' => $displays["destaque-galeria-2"])) ?>
+                
+                <?php include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-2"])) ?>
+
+                <?php include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-4"])) ?>
+
+                <?php include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-6"])) ?>
+
+                <?php include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-8"])) ?>
+                
+                <?php if(isset($displays["destaque-padrao-2"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-2"])) ?>
+            
+            	<?php if(isset($displays["destaque-padrao-4"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-4"])) ?>
+
+              </div>
+              <!-- /col-dir -->
+              
+            </div>
+            <!-- /ESQUERDA -->
+            
+            <!-- DIREITA -->
+            <div id="direita" class="grid1">
+              
+              <?php include_partial_from_folder('blocks','global/display-1c-vertical-multiple', array('displays' => $displays["destaque-secundario"])) ?>
+
+              <!-- BOX PUBLICIDADE -->
+              <div class="box-publicidade grid1">
+                <!-- programas-homepage-300x250 -->
+                <script type='text/javascript'>
+                <?php if($site->slug == "classicos"): ?>
+                	GA_googleFillSlot("culturafm-300x250");
+                <?php else: ?>
+                	GA_googleFillSlot("cmais-assets-300x250");
+                <?php endif;?>
+                </script>
+              </div>                                        
+              <!-- / BOX PUBLICIDADE -->
+
+              <?php if(isset($displays["destaque-links"])): ?>
+                <!-- BOX PADRAO + Visitados -->
+                <div class="box-padrao mais-visitados grid1">
+                  <div class="topo">
+                    <span></span>
+                    <div class="capa-titulo">
+                      <h4><?php if(isset($displays["destaque-links"])) echo $displays["destaque-links"][0]->Block->getTitle() ?></h4>
+                    </div>
+                  </div>
+                  <?php if(isset($displays["destaque-links"])) include_partial_from_folder('blocks','global/popular-news', array('displays' => $displays["destaque-links"])) ?>
+                </div>
+                <!-- /BOX PADRAO + Visitados -->
+              <?php endif; ?> 
+
+              <?php if(isset($displays["twitter"])) include_partial_from_folder('blocks','global/twitter-1c', array('site' => $site, 'uri' => $uri)) ?>
+              
+              <?php  if(isset($displays["twitter-carnaval"])):
+              				foreach ($displays["twitter-carnaval"] as $k => $d): 
+												echo html_entity_decode($d->html);				        	
+					            endforeach;
+            		endif;
+            	?>
+              
+              <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>
+              
+            </div>
+            <!-- /DIREITA -->
+            
+          </div>
+          <!-- /CAPA -->
+          
+					<?php if (isset($displays["rodape-interno"])): ?>
+          <!--APOIO-->
+          <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
+          <!--/APOIO-->
+          <?php endif; ?>
+          
+        </div>
+        <!-- /CONTEUDO PAGINA -->
+        
+      </div>
+      <!-- /MIOLO -->
+      <div class="box-interna grid2">
 			   	   <h2>Linha do Tempo</h2>
 		   	   	 </div>
 		   	   	 <!--TITULO-->
@@ -125,28 +253,6 @@
 			            <script type="text/javascript" src="http://cmais.com.br/portal/js/timeline/storyjs-embed.js"></script>
 		            </div>
 		            <!-- /FIM TIMELINE -->
-	            		         
-     		</div><!--/CAPA-->
-             <!-- APOIO -->
-	          <ul id="apoio" class="grid3">
-	              <li><a href="http://www.desenvolvimento.sp.gov.br" class="governoSp"><img src="http://cmais.com.br/portal/univesptv/images/logo-goversoSp.jpg" alt="Governo do Estado de S&atilde;o Paulo" /></a></li>
-	              <li><a href="http://www.fapesp.br" class="fapesp"><img src="http://cmais.com.br/portal/univesptv/images/logo-fapesp.png" alt="FAPESP" /></a></li>
-	              <li><a href="http://www.unicamp.br" class="unicamp"><img src="http://cmais.com.br/portal/univesptv/images/logo-unicamp.png" alt="UNICAMP" /></a></li>
-	              <li><a href="http://www.unesp.br" class="unesp"><img src="http://cmais.com.br/portal/univesptv/images/logo-unesp.png" alt="UNESP" /></a></li>
-	              <li><a href="http://www.usp.br" class="usp"><img src="http://cmais.com.br/portal/univesptv/images/logo-usp.png" alt="USP" /></a></li>
-	              <li><a href="http://www.fundap.sp.gov.br" class="fundap"><img src="http://cmais.com.br/portal/univesptv/images/logo-fundap.jpg" alt="FUNDAP" /></a></li>
-	              <li><a href="http://www.centropaulasouza.sp.gov.br" class="cps"><img src="http://cmais.com.br/portal/univesptv/images/logo-cps.png" alt="Centro Paula Souza" /></a></li>
-	          </ul>
-         	 <!-- APOIO -->
-
-   			 <!--?php include_partial_from_folder('sites/univesptv', 'global/apoio') ?-->
-	         <!-- APOIO -->
-         	
-        </div><!--/CONTEUDO-->
-        
-      </div><!--/MIOLO -->
-      
-    </div><!-- /CAPA SITE -->
-
-
- 
+    </div>
+    <!-- /CAPA SITE -->
+    
