@@ -553,21 +553,19 @@ function isMatchPattern() {
 
 //check to see if all cardmatched variable is less than 8 if so remove card only otherwise remove card and end game
 function removeTookCards() {
-  setTimeout(function(){
-    if (cardsmatched < 8){
-      cardsmatched++;
-      $(".card-removed").remove();
-    } else {
-      $(".card-removed").remove();
-      EndGame();
-    }
-  },1000);
   soundsCelebrating[0]= "Macthing_bel_ae_viva";
   soundsCelebrating[1]= "Macthing_garibaldo_muito_bem";
   //playSound(soundsCelebrating[Math.round(Math.random(soundsCelebrating.length))]);
   setTimeout(function(){
     playSound("Macthing_garibaldo_muito_bem");
-  },1800);
+  },1500);
+  if (cardsmatched < 8){
+    cardsmatched++;
+    $(".card-removed").remove();
+  } else {
+    $(".card-removed").remove();
+    EndGame();
+  }
 }
 
 function EndGame() {
@@ -575,7 +573,7 @@ function EndGame() {
   
   // Define score formula
   total_score =  ( 33/(score/60) + 66/(clicks/24) ).toFixed(2);
-  $('#score').attr('aria-label', 'Sua pontuação amiguinho: ' + total_score + clicks + ' Cliques em ' + score + ' segundos').html('Sua pontuação amiguinho: ' + total_score + clicks + ' Cliques em ' + score + ' segundos');
+  $('#score').attr('aria-label', 'Sua pontuação amiguinho: ' + parseInt(total_score) + clicks + ' Cliques em ' + score + ' segundos').html('Sua pontuação amiguinho: ' + parseInt(total_score) + clicks + ' Cliques em ' + score + ' segundos');
   ui.addClass('end').removeClass('play');
   setTimeout(function(){
     playSound('Final_garibaldo');
