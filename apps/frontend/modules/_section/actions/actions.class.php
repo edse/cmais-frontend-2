@@ -1724,6 +1724,7 @@ class _sectionActions extends sfActions
           ->from('Asset a, SectionAsset sa')
           ->where('sa.section_id = ?', $this->section->id)
           ->andWhere('sa.asset_id = a.id')
+          ->andWhere('a.is_active=?',1)
           ->orderBy('sa.display_order');
         if($request->getParameter('busca') != '')
           $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
