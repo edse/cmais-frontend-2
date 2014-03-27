@@ -401,7 +401,7 @@ function startGame() {
             $(this).addClass("card-flipped");
             $(this).find('.characther').attr("aria-label",character).html(character);
             setTimeout(function(){
-              $(this).find('.characther').focus();
+              $(this).children('.characther').focus();
               console.log("foquei 3");
             },800);
             //$(this).find('.back').attr('tab-index','-1').attr('aria-hidden', 'true');  
