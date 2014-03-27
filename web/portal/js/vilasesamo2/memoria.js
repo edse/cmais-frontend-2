@@ -591,7 +591,7 @@ function EndGame() {
       playSound('Final_play_again');
       setTimeout(function(){
         $('#score').focus();
-      },4000);  
+      },6000);  
     },3500);
   },2000);
   
