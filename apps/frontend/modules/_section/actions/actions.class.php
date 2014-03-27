@@ -1275,7 +1275,17 @@ class _sectionActions extends sfActions
       $this->assetsQuery->orderBy('sa.display_order');
       $test = $this->assetsQuery->execute();
     }    
-
+		
+		
+   if($this->section->Parent->getSlug() == "jornalismo" && $this->site->id == 1){
+   		
+      $this->assetsQuery = Doctrine_Query::create()
+        ->select('a.*')
+        ->from('Asset a, SectionAsset sa')
+        ->where('sa.asset_id = a.id')
+        ->andWhere('sa.section_id = ?', $this->section->id)
+        ->andWhere('a.is_active = ?', 1);
+    }  
       // program
       $this->program = $this->site->Program;
       // main site
@@ -1724,11 +1734,13 @@ class _sectionActions extends sfActions
           ->from('Asset a, SectionAsset sa')
           ->where('sa.section_id = ?', $this->section->id)
           ->andWhere('sa.asset_id = a.id')
+          ->andWhere('a.is_active=?',1)
           ->orderBy('sa.display_order');
         if($request->getParameter('busca') != '')
           $this->assetsQuery->andWhere("a.title like '%".$request->getParameter('busca')."%' OR a.description like '%".$request->getParameter('busca')."%'");               
-        if(($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes")||($this->site->getSlug() == "1964"))
+        if(($this->site->getSlug() != "inglescommusica")&&($this->site->getSlug() != "complicacoes")||($this->site->getSlug() == "1964")){
           $this->assetsQuery->limit(60);
+        }
       }
       else{
         if($request->getParameter('debug') != "")
@@ -1912,6 +1924,10 @@ class _sectionActions extends sfActions
           if($this->site->getSlug()=="culturafm" && $parentSection->getSlug() == "colunistas") {
             if($debug) print "<br>2-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsectionColunista';
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/subsectionColunista');
+          }
+					else if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug().'Success.php') && $parentSection->getSlug() == "jornalismo"){
+            if($debug) print "<br>2-3-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/noticias-jornalismoSuccess.php';
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/noticias-jornalismo');
           }
           else if(is_file(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug().'Success.php')){
             if($debug) print "<br>2-3>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$parentSection->getSlug().'Success.php';
