@@ -476,7 +476,7 @@ function checkPattern() {
     }else{
       $('.card').eq(0).focus();
     }
-  },1000);
+  },1300);
   var pattern = isMatchPattern();
   if (pattern) {
     uiSplash.addClass('match');
@@ -506,7 +506,7 @@ function checkPattern() {
         $('#ex-jogo').focus();
         setTimeout(function(){
           $('.card').eq(0).focus();
-        },9000);
+        },7000);
       },1000);
     });
     $(".card-flipped").removeClass("card-flipped").addClass("card-removed");
@@ -553,19 +553,21 @@ function isMatchPattern() {
 
 //check to see if all cardmatched variable is less than 8 if so remove card only otherwise remove card and end game
 function removeTookCards() {
+  setTimeout(function(){
+    if (cardsmatched < 8){
+      cardsmatched++;
+      $(".card-removed").remove();
+    } else {
+      $(".card-removed").remove();
+      EndGame();
+    }
+  },1000);
   soundsCelebrating[0]= "Macthing_bel_ae_viva";
   soundsCelebrating[1]= "Macthing_garibaldo_muito_bem";
   //playSound(soundsCelebrating[Math.round(Math.random(soundsCelebrating.length))]);
   setTimeout(function(){
     playSound("Macthing_garibaldo_muito_bem");
-  },1500);
-  if (cardsmatched < 8){
-    cardsmatched++;
-    $(".card-removed").remove();
-  } else {
-    $(".card-removed").remove();
-    EndGame();
-  }
+  },1800);
 }
 
 function EndGame() {
