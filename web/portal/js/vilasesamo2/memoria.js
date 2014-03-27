@@ -600,7 +600,11 @@ function reStartGame(){
   matchingGame.deck = $.extend(true, [], matchingGame.clone);
   $('#ex-jogo').remove();
   var enterHelp;
-  
+  if(str.indexOf("iPhone") != -1 || str.indexOf("iPod") != -1 || str.indexOf("Mac OS") != -1){
+    enterHelp = "enter";
+  }else{
+    enterHelp = "NVDA + enter";
+  }
   $('#gameStats').prepend("<p id='ex-jogo' style='font-size:1px; text-indent:-999999' aria-label='Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou para carta anterior a esquerda. enter = viro carta e leio qual personagem que é.' tabindex='0'>Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = volto uma carta para esquerda. "+ enterHelp +" = viro carta e leio qual personagem que é.</p>");
   setTimeout(function(){
     $('#ex-jogo').focus();
