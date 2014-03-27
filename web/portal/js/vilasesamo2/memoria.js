@@ -401,7 +401,7 @@ function startGame() {
             $(this).addClass("card-flipped");
             $(this).find('.characther').attr("aria-label",character).html(character);
             setTimeout(function(){
-              $('#characther'+position).focus();
+              $(this).find('.characther').focus();
               console.log("foquei 3");
             },800);
             //$(this).find('.back').attr('tab-index','-1').attr('aria-hidden', 'true');  
@@ -490,7 +490,6 @@ function checkPattern() {
         $('#ex-jogo').html('Parabéns! você acertou. agora você tem mais '+pairs+' '+ pares+'  para econtrar. Vamos lá?. Ajude o Garibaldo .');
       }else{
         $('#ex-jogo').remove();
-        
       }
       setTimeout(function(){
         $('#ex-jogo').focus();
