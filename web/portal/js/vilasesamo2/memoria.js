@@ -476,7 +476,7 @@ function checkPattern() {
     }else{
       $('.card').eq(0).focus();
     }
-  },1300);
+  },1600);
   var pattern = isMatchPattern();
   if (pattern) {
     uiSplash.addClass('match');
@@ -558,7 +558,7 @@ function removeTookCards() {
   //playSound(soundsCelebrating[Math.round(Math.random(soundsCelebrating.length))]);
   setTimeout(function(){
     playSound("Macthing_garibaldo_muito_bem");
-  },1500);
+  },2000);
   if (cardsmatched < 8){
     cardsmatched++;
     $(".card-removed").remove();
