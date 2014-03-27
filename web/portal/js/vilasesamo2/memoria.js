@@ -347,7 +347,7 @@ function startGame() {
     // initialize each card's position
     uiCards.children().each(function(index) { 
       $(this).attr("data-position",index);
-      $(this).append("<p id='characther"+index+"' class='characther' aria-live='polite' aria-label='' tabindex='0'></p>");
+      $(this).append("<p id='characther"+index+"' class='characther' aria-live='polite' aria-label='' tabindex='-1'></p>");
       // align the cards to be 3x6 ourselves.
       $(this).css({
         "left" : ($(this).width() + 5) * (index % 6),
@@ -413,9 +413,9 @@ function startGame() {
             }); 
             
             if(whichCard==17){
-              $(this).find('.characther').attr("aria-label",character+". Selecione a próxima carta").html(".");
+              $(this).find('.characther').attr("aria-label",character+". Selecione a próxima carta").html(".").attr("tabindex","0");
             }else if(whichCard == 34){
-              $(this).find('.characther').attr("aria-label",character+". Vamos ver se acertou?").html(".");;
+              $(this).find('.characther').attr("aria-label",character+". Vamos ver se acertou?").html(".").attr("tabindex","0");
             }
             var charPos = $(this).attr("data-position");
             setTimeout(function(){
