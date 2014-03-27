@@ -405,7 +405,7 @@ function startGame() {
               whichCard += i;
             }); 
             console.log(whichCard);
-            var charPos = $(this).attr("data-position").html("");
+            var charPos = $(this).attr("data-position");
             setTimeout(function(){
               $('#characther'+charPos).focus();
               console.log("foquei 3");
