@@ -226,10 +226,7 @@
           
         </div>
         <!-- /CONTEUDO PAGINA -->
-        
-      </div>
-      <!-- /MIOLO -->
-      <div class="box-interna grid2">
+              <div class="box-interna grid2">
 			   	   <h2>Linha do Tempo</h2>
 		   	   	 </div>
 		   	   	 <!--TITULO-->
@@ -252,6 +249,9 @@
 			            </script>
 			            <script type="text/javascript" src="http://cmais.com.br/portal/js/timeline/storyjs-embed.js"></script>
 		            </div>
+      </div>
+      <!-- /MIOLO -->
+
 		            <!-- /FIM TIMELINE -->
     </div>
     <!-- /CAPA SITE -->
