@@ -404,15 +404,15 @@ function startGame() {
             $('.card-flipped').each(function(){
               whichCard += i;
             }); 
-            $(this).find('.characther').attr("aria-label",character);
+            
+            if(whichCard==17){
+              $(this).find('.characther').attr("aria-label",character+". Selecione a próxima carta");
+            }else if(whichCard == 34){
+              $(this).find('.characther').attr("aria-label",character+". Vamos ver se acertou?");
+            }
             var charPos = $(this).attr("data-position");
             setTimeout(function(){
-              if(whichCard==17){
-              $('#characther'+charPos).html("Selecione a próxima carta").focus();
-            }else if(whichCard == 34){
-              $('#characther'+charPos).html("vamos ver se acertou?").focus();
-            }
-              ;
+              $('#characther'+charPos).focus();
               console.log("foquei 3");
             },800);
             //$(this).find('.back').attr('tab-index','-1').attr('aria-hidden', 'true');  
