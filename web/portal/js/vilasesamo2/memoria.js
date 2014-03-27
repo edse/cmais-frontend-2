@@ -511,7 +511,7 @@ function checkPattern() {
       setTimeout(function(){
         $('.card').eq(0).focus();
       },7000);
-    },1000);
+    },1500);
     $('.match').bind("webkitTransitionEnd transitionend oTransitionEnd", function(){
       uiSplash.removeClass('match');
     });
