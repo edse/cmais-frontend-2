@@ -493,7 +493,7 @@ function checkPattern() {
     $('.card').each(function(i){
       quant = i
     });
-    var pairs = (quant+1)/2;
+    var pairs = (quant)/2;
     var pares = "";
     if(pairs==1){
       pares="par";
