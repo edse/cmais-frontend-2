@@ -367,6 +367,7 @@ function startGame() {
         if ( event.which == 13 ) {
           //event.preventDefault();
           console.log("seleciono");
+          $('#ex-jogo').html("").attr("aria-label","");
           switch($(this).attr('data-pattern')){
             case "be":
               character = "carta com a bel";
