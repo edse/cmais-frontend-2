@@ -159,7 +159,7 @@
                       </div>
                       <hr />
                     </div>
-                    <form id="bloco-notas" class="form-horizontal" action="<?php echo str_replace("univesptv.", "app.", $asset->retriveUrl())?>" method="POST">
+                    <form id="bloco-notas" class="form-horizontal" action="<?php echo str_replace("http://univesptv.cmais.com.br/", "http://app.cmais.com.br/index.php/", $asset->retriveUrl())?>" method="POST">
                     	<input type="hidden" name="bloco-de-notas" id="bloco-de-notas" value="1" />
                       <fieldset>
                         <div class="control-group">
