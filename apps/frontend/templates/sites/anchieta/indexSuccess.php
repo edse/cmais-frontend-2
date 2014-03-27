@@ -245,7 +245,7 @@
 			               start_at_end: true, //start_at_end: true,começa do ultimo asset
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
-			               css: "http://cmais.com.br/portal/js/timeline/1964.css",
+			               css: "http://cmais.com.br/portal/css/tvcultura/sites/anchieta.css",
 			               lang: "http://cmais.com.br/portal/js/timeline/pt-br.js",
 			               js: "http://cmais.com.br/portal/js/timeline/timeline-min.js"
 			              }
