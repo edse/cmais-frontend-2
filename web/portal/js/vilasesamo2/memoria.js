@@ -470,15 +470,16 @@ function selectCard() {
 //if pattern is same remove cards otherwise flip back
 function checkPattern() {
   $('.characther').attr("aria-label", "").html("").attr("tabindex", "-1");
-  setTimeout(function(){
-    if($('.card').eq(position)){
-      $('.card').eq(position).focus();
-    }else{
-      $('.card').eq(0).focus();
-    }
-  },1600);
+  
   var pattern = isMatchPattern();
   if (pattern) {
+    setTimeout(function(){
+      if($('.card').eq(position)){
+        $('.card').eq(position).focus();
+      }else{
+        $('.card').eq(0).focus();
+      }
+    },1800);
     uiSplash.addClass('match');
     $('.matched').removeClass('current');
     $('#' + pattern).addClass('matched current');
@@ -613,7 +614,7 @@ function closebox(ev) {
 }
 
 function playSound(soundFileName) {
-  if(mediaSupport('audio/ogg; codecs=vorbis', 'audio') || mediaSupport('audio/mpeg', 'audio')) {
+  if(mediaSupport('audio/ogg; codecs=vorbis', 'audio') || mediaSupport('audio/mp3', 'audio')) {
     $(".tampa").css("z-index", "10");
     $(".audio source").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".mp3").attr("type", "audio/mp3");
     $(".audio source:last-child").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".ogg").attr("type", "audio/ogg");
