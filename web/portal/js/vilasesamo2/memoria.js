@@ -29,7 +29,12 @@ var uiFullscreen = $("#fullscreen");
 var decent = styleSupport('transition');
 var character;
 var position;
-
+var enterHelp;
+if(str.indexOf("iPhone") != -1 || str.indexOf("iPod") != -1 || str.indexOf("Mac OS") != -1){
+  enterHelp = "enter";
+}else{
+  enterHelp = "NVDA + enter";
+}
 //create deck array
 var matchingGame = {};
 matchingGame.deck = [
@@ -58,7 +63,8 @@ matchingGame.clone = $.extend(true, [], matchingGame.deck);
 
 //on document load the lazy way
 $(function(){
-
+  $('#gamePlay').attr("aria-label", "você está no meio da página, no botão Jogar, aperte "+enterHelp+" pra começar o jogo da memória amiguinho!");
+  $('#reset').html("botão resete, aperte "+enterHelp+ "caso queria reiniciar o jogo.");
   var loader = new PxLoader();
   
   loader.addImage('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/acerto.png');
@@ -272,7 +278,7 @@ function init() {
       uiPlay.attr('aria-hidden', 'true').attr('tabindex', '-1');
       ui.removeClass("open");
       startGame();
-      $('#gameStats').prepend("<p id='ex-jogo' style='font-size:1px; text-indent:-999999' aria-label='Oi, espalhamos dezoito cartas.Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou para carta anterior a esquerda. enter = viro carta e leio qual personagem que é.' tabindex='0'>Oi, espalhamos dezoito cartas.Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou para carta anterior a esquerda. enter = viro carta e leio qual personagem que é.  </p>");
+      $('#gameStats').prepend("<p id='ex-jogo' style='font-size:1px; text-indent:-999999' aria-label='Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte "+ enterHelp +" em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou uma carta para a esquerda. "+ enterHelp +" = viro carta e leio qual personagem que é.' tabindex='0'>Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte "+ enterHelp +" em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = volto uma carta para esquerda. "+ enterHelp +" = viro carta e leio qual personagem que é.</p>");
       setTimeout(function(){
         $('#ex-jogo').focus();
       },1000);
@@ -340,8 +346,8 @@ function startGame() {
     
     // initialize each card's position
     uiCards.children().each(function(index) { 
-      
-      
+      $(this).attr("data-position",index);
+      $(this).append("<p id='characther"+index+"' class='characther' aria-live='polite' aria-label='' tabindex='0'></p>");
       // align the cards to be 3x6 ourselves.
       $(this).css({
         "left" : ($(this).width() + 5) * (index % 6),
@@ -397,11 +403,24 @@ function startGame() {
             playSound('car_flipped');
             uiClick.text(++clicks);
             position = $(this).index();
-            $(this).addClass("card-flipped").append('<span id="characther" class="characther" aria-label="'+character+'" tabindex="0">'+character+'</span>');
+            //$(this).addClass("card-flipped").append('<p id="characther" class="characther" aria-live="polite" aria-label="'+character+'" tabindex="0">'+character+'</p> ');
+            $(this).addClass("card-flipped");
+            
+            var whichCard = 0;
+            $('.card-flipped').each(function(){
+              whichCard += i;
+            }); 
+            
+            if(whichCard==17){
+              $(this).find('.characther').attr("aria-label",character+". Selecione a próxima carta").html(".");
+            }else if(whichCard == 34){
+              $(this).find('.characther').attr("aria-label",character+". Vamos ver se acertou?").html(".");;
+            }
+            var charPos = $(this).attr("data-position");
             setTimeout(function(){
-              $('.characther').focus();
-              console.log("foquei 2");
-            },1000);
+              $('#characther'+charPos).focus();
+              console.log("foquei 3");
+            },800);
             //$(this).find('.back').attr('tab-index','-1').attr('aria-hidden', 'true');  
           }
           // check the pattern of both flipped card 0.7s later.
@@ -456,45 +475,44 @@ function selectCard() {
 
 //if pattern is same remove cards otherwise flip back
 function checkPattern() {
-  $('.characther').remove();
-  setTimeout(function(){
-    if($('.card').eq(position)){
-      $('.card').eq(position).focus();
-    }else{
-      $('.card').eq(0).focus();
-    }
-  },1000);
+  $('.characther').attr("aria-label", "").html("").attr("tabindex", "-1");
+  
   var pattern = isMatchPattern();
   if (pattern) {
+    setTimeout(function(){
+      if($('.card').eq(position)){
+        $('.card').eq(position).focus();
+      }else{
+        $('.card').eq(0).focus();
+      }
+    },1800);
     uiSplash.addClass('match');
     $('.matched').removeClass('current');
     $('#' + pattern).addClass('matched current');
+    var quant = 0;
+    $('.card').each(function(i){
+      quant = i
+    });
+    var pairs = (quant-1)/2;
+    var pares = "";
+    if(pairs==1){
+      pares="par";
+    }else{
+      pares="pares";
+    }
+    if(pairs >= 1){
+      $('#ex-jogo').attr('aria-label','Parabéns! você acertou. agora você tem mais '+pairs+' '+ pares+'  para econtrar. Vamos lá?. Ajude o Garibaldo .');
+      $('#ex-jogo').html('Parabéns! você acertou. agora você tem mais '+pairs+' '+ pares+'  para econtrar. Vamos lá?. Ajude o Garibaldo .');
+    }else{
+      $('#ex-jogo').remove();
+    }
     $('.match').bind("webkitTransitionEnd transitionend oTransitionEnd", function(){
       uiSplash.removeClass('match');
-      var quant = 0;
-      $('.card').each(function(i){
-        quant = i
-      });
-      
-      var pairs = (quant+1)/2;
-      var pares = "";
-      if(pairs==1){
-        pares="par";
-      }else{
-        pares="pares";
-      }
-      if(pairs >= 1){
-        $('#ex-jogo').attr('aria-label','Parabéns! você acertou. agora você tem mais '+pairs+' '+ pares+'  para econtrar. Vamos lá?. Ajude o Garibaldo .');
-        $('#ex-jogo').html('Parabéns! você acertou. agora você tem mais '+pairs+' '+ pares+'  para econtrar. Vamos lá?. Ajude o Garibaldo .');
-      }else{
-        $('#ex-jogo').remove();
-        
-      }
       setTimeout(function(){
         $('#ex-jogo').focus();
         setTimeout(function(){
           $('.card').eq(0).focus();
-        },9000);
+        },7000);
       },1000);
     });
     $(".card-flipped").removeClass("card-flipped").addClass("card-removed");
@@ -546,7 +564,7 @@ function removeTookCards() {
   //playSound(soundsCelebrating[Math.round(Math.random(soundsCelebrating.length))]);
   setTimeout(function(){
     playSound("Macthing_garibaldo_muito_bem");
-  },1500);
+  },2000);
   if (cardsmatched < 8){
     cardsmatched++;
     $(".card-removed").remove();
@@ -561,7 +579,7 @@ function EndGame() {
   
   // Define score formula
   total_score =  ( 33/(score/60) + 66/(clicks/24) ).toFixed(2);
-  $('#score').attr('aria-live', 'Sua pontuação amiguinho: ' + total_score + '<br>' + clicks + ' Cliques em ' + score + ' segundos').html('Sua pontuação amiguinho: ' + total_score + '<br>' + clicks + ' Cliques em ' + score + ' segundos');
+  $('#score').attr('aria-label', 'Sua pontuação amiguinho: ' + parseInt(total_score) +". Com " + clicks + ' Cliques em ' + score + ' segundos').html('Sua pontuação amiguinho: ' + parseInt(total_score) +".<br>Com "+ clicks + ' Cliques em ' + score + ' segundos');
   ui.addClass('end').removeClass('play');
   setTimeout(function(){
     playSound('Final_garibaldo');
@@ -586,7 +604,8 @@ function reStartGame(){
   clearTimeout(scoreTimeout);
   matchingGame.deck = $.extend(true, [], matchingGame.clone);
   $('#ex-jogo').remove();
-  $('#gameStats').prepend("<p id='ex-jogo' style='font-size:1px; text-indent:-999999' aria-label='Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou para carta anterior a esquerda. enter = viro carta e leio qual personagem que é.' tabindex='0'>Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte Enter em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou para carta anterior a esquerda. enter = viro carta e leio qual personagem que é.</p>");
+  
+  $('#gameStats').prepend("<p id='ex-jogo' style='font-size:1px; text-indent:-999999' aria-label='Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte "+ enterHelp +" em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = vou uma carta para a esquerda. "+ enterHelp +" = viro carta e leio qual personagem que é.' tabindex='0'>Oi, espalhamos dezoito cartas. Com tres linhas com seis colunas, ajude o garibaldo a encontrar os pares. Aperte "+ enterHelp +" em cada carta e falarei o personagem da carta. Comandos navegação - tab = vou para próxima carta a direita. shift+tab = volto uma carta para esquerda. "+ enterHelp +" = viro carta e leio qual personagem que é.</p>");
   setTimeout(function(){
     $('#ex-jogo').focus();
   }, 1000);
@@ -601,7 +620,7 @@ function closebox(ev) {
 }
 
 function playSound(soundFileName) {
-  if(mediaSupport('audio/ogg; codecs=vorbis', 'audio') || mediaSupport('audio/mpeg', 'audio')) {
+  if(mediaSupport('audio/ogg; codecs=vorbis', 'audio') || mediaSupport('audio/mp3', 'audio')) {
     $(".tampa").css("z-index", "10");
     $(".audio source").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".mp3").attr("type", "audio/mp3");
     $(".audio source:last-child").attr("src", "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/memoria/audio/"+soundFileName+".ogg").attr("type", "audio/ogg");
