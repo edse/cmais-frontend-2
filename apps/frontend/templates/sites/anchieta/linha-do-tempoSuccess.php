@@ -42,7 +42,7 @@ storyjs_jsonp_data = {
                     "media":"<?php echo $src?>",
                     "thumbnail":"<?php echo $thumb?>",
                     "credit":"cmais+ o portal de conteúdo da Cultura",
-                    "caption":"UnivespTV - Especial 1964"
+                    "caption":"Anchieta"
                 }
             },
           <?php
