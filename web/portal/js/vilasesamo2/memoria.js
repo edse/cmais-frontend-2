@@ -400,7 +400,12 @@ function startGame() {
             //$(this).addClass("card-flipped").append('<p id="characther" class="characther" aria-live="polite" aria-label="'+character+'" tabindex="0">'+character+'</p> ');
             $(this).addClass("card-flipped");
             $(this).find('.characther').attr("aria-label",character);
-            var charPos = $(this).attr("data-position");
+            var whichCard = 0;
+            $('.card-flipped').each(function(){
+              whichcard += i;
+            }); 
+            console.log(whichCard);
+            var charPos = $(this).attr("data-position").html("");
             setTimeout(function(){
               $('#characther'+charPos).focus();
               console.log("foquei 3");
