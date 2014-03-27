@@ -341,7 +341,7 @@ function startGame() {
     // initialize each card's position
     uiCards.children().each(function(index) { 
       $(this).attr("data-position",index);
-      $(this).append("<p id='characther"+index+"' class='characther' aria-live='polite' aria-label='' tabindex='0'></p>");
+      $(this).append("<p id='characther"+index+"' class='characther' aria-live='polite' aria-label='' tabindex='0'>.</p>");
       // align the cards to be 3x6 ourselves.
       $(this).css({
         "left" : ($(this).width() + 5) * (index % 6),
