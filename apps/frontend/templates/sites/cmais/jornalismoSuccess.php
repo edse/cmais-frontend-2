@@ -130,7 +130,7 @@ $btn_live = '<span class="live"><i class="ico-setas ico-seta-cima"></i>AO VIVO</
     <!--Impostometro-->
     
     	<!--div style="margin-bottom: 10px;float: left;">
-          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
+          <?php //include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
        </div-->
     
     <!--coluna esquerda-->
