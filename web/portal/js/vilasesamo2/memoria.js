@@ -489,6 +489,10 @@ function checkPattern() {
     uiSplash.addClass('match');
     $('.matched').removeClass('current');
     $('#' + pattern).addClass('matched current');
+    var quant = 0;
+    $('.card').each(function(i){
+      quant = i
+    });
     var pairs = (quant+1)/2;
     var pares = "";
     if(pairs==1){
@@ -504,12 +508,6 @@ function checkPattern() {
     }
     $('.match').bind("webkitTransitionEnd transitionend oTransitionEnd", function(){
       uiSplash.removeClass('match');
-      var quant = 0;
-      $('.card').each(function(i){
-        quant = i
-      });
-        
-      
       setTimeout(function(){
         $('#ex-jogo').focus();
         setTimeout(function(){
