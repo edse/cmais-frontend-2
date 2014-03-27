@@ -29,6 +29,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       
     //verificando navegador
     $userAgent = navigator.userAgent;
+    //console.log($userAgent);
     var str = $userAgent;
     if(str.indexOf("iPhone") != -1 || str.indexOf("iPod") != -1 || str.indexOf("Android") != -1 && str.indexOf("Mobile") != -1 || str.indexOf("Windows Phone") != -1 && str.indexOf("IEMobile") != -1)  {
       view += '<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/acessibilidade.css" type="text/css" />';
