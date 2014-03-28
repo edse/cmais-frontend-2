@@ -98,6 +98,24 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <p>O projeto é uma iniciativa da TV Cultura e da Sesame Workshop, com o apoio da Fundação MetLife, parceria estratégica do UNICEF e parceria institucional da Associação Laramara, do Instituto Rodrigo Mendes, da Efeito Visual Serigrafia e da Iguale Comunicação de Acessibilidade.</p>
             <p>Conheça melhor o projeto e os conteúdos digitais da Campanha Transmídia e da Coleção Incluir Brincando, clicando nos links abaixo.
             </p>
+            <?php elseif($section->getSlug()=="incluir-brincando"):?>
+              <br/>
+              <br/>
+              <p>
+                O Projeto Hábitos para uma Vida Saudável busca modificar de forma positiva o
+                conhecimento e as atitudes das crianças com relação à alimentação saudável,
+                à prática de atividades físicas e à saúde sócio-emocional. Todos os conteúdos (vídeos, jogos digitais e atividades)
+                foram criados para estimular o aprendizado sobre os hábitos saudáveis por meio do uso de recursos e tecnologias disponíveis em casa ou nas escolas.
+              </p>
+              <p>  
+                Um projeto piloto foi realizado no primeiro semestre de 2012 a partir
+                 da parceria entre UNESCO, Sesame Workshop, MSD Brasil, TV Cultura e Secretaria Municipal
+                  de Educação de São Paulo, e contemplou as 43 Escolas  Municipais de Educação Infantil 
+                  da Diretoria Regional de Educação de Itaquera.
+              </p>
+              <p>    
+                  Saiba mais sobre o projeto, nossos parceiros e acesse todos os conteúdos digitais clicando nos links abaixo.
+              </p>  
             <?php else:?>  
               <p>  
                 <!--descricao-->    
@@ -226,7 +244,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <!--/box pais habitos-saudaveis-->
     
     <!--/box pais incluir-brincando-->
-    <?php if($section->getSlug()=="incluir-brincando"):?>
+    <?php if($section->getSlug()=="incluir-brincando" || $section->getSlug()=="habitos-saudaveis"):?>
       
 
       <div class="row-fluid">
