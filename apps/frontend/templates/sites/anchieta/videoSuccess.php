@@ -165,7 +165,7 @@ $(function(){
           <!-- /CAPA -->
 
           <!-- MENU-RODAPE -->
-          <?php include_partial_from_folder('blocks','global/display-3c-last-videos', array('displays' => $vid2)) ?>
+          <?php// include_partial_from_folder('blocks','global/display-3c-last-videos', array('displays' => $vid2)) ?>
           <!-- /MENU-RODAPE -->
 
           <!-- BOX PUBLICIDADE 2 -->
