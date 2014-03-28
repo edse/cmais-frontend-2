@@ -1,5 +1,5 @@
 body { background:#0172f9; }
-a{text-decoration:underline!important;}
+a{text-decoration:underline!important;color: #434343;}
 .header-bar ul { margin:12px 0 0 0; }
 .header-bar { position:fixed; background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-menu-interna.jpg) repeat-x; height:81px; top:48px; width: 100%; max-width:100%; }
 .header-bar .content { width:940px; margin:0 auto; }
