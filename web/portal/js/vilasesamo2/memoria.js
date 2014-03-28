@@ -98,7 +98,7 @@ $(function(){
   });
   
   loader.addCompletionListener(function() {
-    console.log("entrei loaderCompletition");
+    //console.log("entrei loaderCompletition");
     uiPlay.html('<span aria-hidden="true" tabindex="-1">Jogar</span>');
     ui.addClass('open');
     $('#gamePlay span').hide();
@@ -129,7 +129,7 @@ $(function(){
   //AppLoaded();
   function loadAudio(uri)
   {
-      console.log("entrei audio");
+      //console.log("entrei audio");
       var audio = new Audio();
       //audio.onload = isAppLoaded; // It doesn't works!
       audio.addEventListener('canplaythrough', isAppLoaded, false); // It works!!
@@ -139,7 +139,7 @@ $(function(){
   
   function isAppLoaded()
   {
-      console.log("entrei AppLoaded");
+      //console.log("entrei AppLoaded");
       filesLoaded++;
       if (filesLoaded >= filesToLoad){
         uiPlay.html('<span aria-hidden="true" tabindex="-1">Jogar</span>');
@@ -274,7 +274,7 @@ function init() {
   uiPlay.on("keydown", function(event){
     if(event.which == 13) {
       //event.preventDefault();
-      console.log("começo");
+      //console.log("começo");
       uiPlay.attr('aria-hidden', 'true').attr('tabindex', '-1');
       ui.removeClass("open");
       startGame();
@@ -287,7 +287,7 @@ function init() {
   uiAgain.on("keydown",function(event){
     if(event.which == 13) {
       //event.preventDefault();
-      console.log("reinicio");
+      //console.log("reinicio");
       reStartGame();
     } 
   });
@@ -307,7 +307,7 @@ function init() {
   uiReset.on("keydown",function(event){
     if(event.which == 13) {
       //event.preventDefault();
-      console.log("restart");
+      //console.log("restart");
       reStartGame();
       $('.card').addClass('reset');
       $('.reset').bind("webkitTransitionEnd transitionend oTransitionEnd", function(){
@@ -366,7 +366,7 @@ function startGame() {
       $(this).on("keydown", function( event ) {
         if ( event.which == 13 ) {
           //event.preventDefault();
-          console.log("seleciono");
+          //console.log("seleciono");
           $('#ex-jogo').html("").attr("aria-label","");
           switch($(this).attr('data-pattern')){
             case "be":
@@ -420,7 +420,7 @@ function startGame() {
             var charPos = $(this).attr("data-position");
             setTimeout(function(){
               $('#characther'+charPos).focus();
-              console.log("foquei 3");
+              //console.log("foquei 3");
             },800);
             //$(this).find('.back').attr('tab-index','-1').attr('aria-hidden', 'true');  
           }
