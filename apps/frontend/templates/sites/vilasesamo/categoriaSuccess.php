@@ -248,7 +248,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
    ?>
    <?php endif; ?>
     <!--/box pais incluir-brincando-->
-    <?php if($section->getSlug()=="incluir-brincando" || $section->getSlug()=="habitos-saudaveis"):?>
+    <?php if($section->getSlug()=="incluir-brincando"):?>
       
 
       <div class="row-fluid">
@@ -285,6 +285,45 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
      
     <?php endif;?> 
     <!--/box pais incluir-brincando-->
+    
+    <!--/box pais habitos-saudaveis-->
+    <?php if($section->getSlug()=="habitos-saudaveis"):?>
+      
+
+      <div class="row-fluid">
+        <!--artigo 1-->
+        <div class="span4 artigo" style="margin-left:0px!important;">
+          <a href="http://cmais.com.br/vilasesamo/pais-e-educadores/incluir-brincando" title="O Projeto">
+            <img src="http://midia.cmais.com.br/assets/image/image-13/7bb2bead8613c6fd74a67576e88e1061a6582b0f.jpg" alt="Come-comecom um cacho de banana na mão">
+            <h2 class="tit-artigo">O PROJETO</h2> 
+            <p>Saiba mais sobre o Hábitos para uma vida saudável</p>
+          </a>
+        </div>
+        <!--/artigo 1-->
+        
+        <!--artigo 2-->
+        <div class="span4 artigo">
+          <a href="http://cmais.com.br/vilasesamo/pais-e-educadores/parceiros-vila-sesamo" title="Os Parceiros">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/habitos/parceiros-habitos.jpg" alt"Groover, Elmo e Bel abraçados">
+            <h2 class="tit-artigo">OS PARCEIROS</h2> 
+            <p>Conheça quem trabalhou conosco neste projeto</p>
+          </a>
+        </div>
+        <!--/artigo 2-->
+        
+        <!--artigo 3-->
+        <div class="span4 artigo">
+          <a href="http://midia.cmais.com.br/assets/file/original/91cf67e6f87ed766ae4d754db7dab36034a8668a.pdf" title="Coleção Incluir Brincando">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/habitos/guia-habitos.jpg" alt"Garibaldo e Bel sentados acenando.">
+            <h2 class="tit-artigo">GUIA PARA PROFESSORES</h2> 
+            <p>Faça aqui o download do material de formação de professores "Hábitos para uma Vida Saudável"</p>
+          </a>
+        </div>
+        <!--/artigo 3-->
+      </div>
+     
+    <?php endif;?> 
+    <!--/box pais habitos-saudaveis-->
     </div>
     <!--/container conteudo-->
     
