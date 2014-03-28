@@ -98,6 +98,24 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <p>O projeto é uma iniciativa da TV Cultura e da Sesame Workshop, com o apoio da Fundação MetLife, parceria estratégica do UNICEF e parceria institucional da Associação Laramara, do Instituto Rodrigo Mendes, da Efeito Visual Serigrafia e da Iguale Comunicação de Acessibilidade.</p>
             <p>Conheça melhor o projeto e os conteúdos digitais da Campanha Transmídia e da Coleção Incluir Brincando, clicando nos links abaixo.
             </p>
+            <?php elseif($section->getSlug()=="habitos-saudaveis"):?>
+              <br/>
+              <br/>
+              <p>
+                O Projeto Hábitos para uma Vida Saudável busca modificar de forma positiva o
+                conhecimento e as atitudes das crianças com relação à alimentação saudável,
+                à prática de atividades físicas e à saúde sócio-emocional. Todos os conteúdos (vídeos, jogos digitais e atividades)
+                foram criados para estimular o aprendizado sobre os hábitos saudáveis por meio do uso de recursos e tecnologias disponíveis em casa ou nas escolas.
+              </p>
+              <p>  
+                Um projeto piloto foi realizado no primeiro semestre de 2012 a partir
+                 da parceria entre UNESCO, Sesame Workshop, MSD Brasil, TV Cultura e Secretaria Municipal
+                  de Educação de São Paulo, e contemplou as 43 Escolas  Municipais de Educação Infantil 
+                  da Diretoria Regional de Educação de Itaquera.
+              </p>
+              <p>    
+                  Saiba mais sobre o projeto, nossos parceiros e acesse todos os conteúdos digitais clicando nos links abaixo.
+              </p>  
             <?php else:?>  
               <p>  
                 <!--descricao-->    
@@ -114,8 +132,10 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         </div>
        
       <div class="divisa"></div>
-      
+
       <div class="row-fluid span12 box-pais">
+        <?php
+        /*
        <!--/box pais habitos-saudaveis--> 
        <?php if($section->getSlug() == "habitos-saudaveis"):?>
         <!--box-dica-->
@@ -222,18 +242,20 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <!--/destaque-principal-->
          
       <?php endif; ?> 
-    <?php endif; ?> 
+     
     <!--/box pais habitos-saudaveis-->
-    
+    */
+   ?>
+   <?php endif; ?>
     <!--/box pais incluir-brincando-->
-    <?php if($section->getSlug()=="incluir-brincando"):?>
+    <?php if($section->getSlug()=="incluir-brincando" || $section->getSlug()=="habitos-saudaveis"):?>
       
 
       <div class="row-fluid">
         <!--artigo 1-->
         <div class="span4 artigo" style="margin-left:0px!important;">
           <a href="http://cmais.com.br/vilasesamo/pais-e-educadores/incluir-brincando" title="O Projeto">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/01.jpg" alt"">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/01.jpg" alt"Garibaldo, Sivan e Bel estão sorrindo e acendo.">
             <h2 class="tit-artigo">O PROJETO</h2> 
             <p>Saiba mais sobre o Incluir Brincando</p>
           </a>
@@ -243,7 +265,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <!--artigo 2-->
         <div class="span4 artigo">
           <a href="http://cmais.com.br/vilasesamo/pais-e-educadores/parceiros-vila-sesamo" title="Os Parceiros">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/02.jpg" alt"">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/02.jpg" alt"Beto e ênio estão abraçados">
             <h2 class="tit-artigo">OS PARCEIROS</h2> 
             <p>O trabalho em conjunto é fundamental para o sucesso do projeto</p>
           </a>
@@ -253,14 +275,14 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <!--artigo 3-->
         <div class="span4 artigo">
           <a href="http://cmais.com.br/vilasesamo/colecaoincluirbrincando" title="Coleção Incluir Brincando">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/04.jpg" alt"">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/04.jpg" alt"descrição do thumbnail: Um livro com capa azul, rodeado por um lápis, uma borboleta e estrela azuis.">
             <h2 class="tit-artigo">COLEÇÃO INCLUIR BRINCANDO</h2> 
             <p>Tenha acesso aos materiais de formação dos professores</p>
           </a>
         </div>
         <!--/artigo 3-->
       </div>
-      
+     
     <?php endif;?> 
     <!--/box pais incluir-brincando-->
     </div>
