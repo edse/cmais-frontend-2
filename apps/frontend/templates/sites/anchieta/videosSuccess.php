@@ -78,6 +78,7 @@ $(function(){
 
         <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
+        	<?php/*
           <div id="menu-rodape" class="grid3">
           	
           	<ul class="abas">
@@ -231,7 +232,7 @@ $(function(){
 			</div>
 		  </div>
 		
-		  <!-- BOX PUBLICIDADE 2 -->
+*/?>		  <!-- BOX PUBLICIDADE 2 -->
 		  <div class="box-publicidade pub-grd grid3">
 		    <!-- programas-assets-728x90 -->
 		    <script type='text/javascript'>
