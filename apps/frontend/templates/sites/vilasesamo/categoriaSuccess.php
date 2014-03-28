@@ -132,7 +132,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         </div>
        
       <div class="divisa"></div>
-      
+      <?php
+      /*
       <div class="row-fluid span12 box-pais">
        <!--/box pais habitos-saudaveis--> 
        <?php if($section->getSlug() == "habitos-saudaveis"):?>
@@ -278,7 +279,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         </div>
         <!--/artigo 3-->
       </div>
-      
+     */
+   ?> 
     <?php endif;?> 
     <!--/box pais incluir-brincando-->
     </div>
