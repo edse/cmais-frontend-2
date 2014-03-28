@@ -1,6 +1,6 @@
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/videos.css" type="text/css" />
-<link type="text/css" href="http://cmais.com.br/portal/univesptv/css/geral.css" rel="stylesheet" />
-<link rel="stylesheet" href="http://cmais.com.br/portal/js/timeline/<?php echo $site->getSlug() ?>.css" type="text/css" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
 <script type="text/javascript">
 $(function(){
   //carrossel
@@ -15,6 +15,9 @@ $(function(){
     });
 });
 </script>
+<style type="text/css">
+  .rodape-cmais { display:none; }
+</style>
 
 <?php
   $vid1 = Doctrine_Query::create()
@@ -47,27 +50,62 @@ $(function(){
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
-    <!-- / CAPA SITE -->
-    <div id="capa-site" class="a1964">
+	<div class="bg-chamada">
+	  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+	</div>
+	<div class="bg-site"></div>
 
-     <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+    <!-- / CAPA SITE -->
+    <div id="capa-site">
 
       <!-- BARRA SITE -->
-	  		<div id="barra-site" title="<?php echo $section->getTitle() . "  ". $section->getDescription() ?>">
-						<a href="<?php echo $site->retriveUrl() ?>"><img src="http://cmais.com.br/portal/images/timeline/topo.png"></a>
-					
-				
-				<!-- TOPO -->
-		    <div class="topo-programa">
-		    	
-	    		<!-- MENU -->
-					<?php include_partial_from_folder('blocks','global/sections-menu2', array('siteSections' => $siteSections))?>
-					<!--/ MENU -->
-					
-		    <!-- / TOPO -->  
-		    </div>
-		  <!-- /BARRA SITE -->  
+      <div id="barra-site">
+        <div class="topo-programa">
+          <?php if(isset($program) && $program->id > 0): ?>
+          <h2>
+            <a href="<?php echo $program->retriveUrl() ?>">
+              <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
+            </a>
+          </h2>
+          <?php endif; ?>
+
+          <?php if(isset($program) && $program->id > 0): ?>
+          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
+          <?php endif; ?>
+          
+          <?php if(isset($program) && $program->id > 0): ?>
+          <!-- horario -->
+          <div id="horario">
+            <p><?php echo html_entity_decode($program->getSchedule()) ?></p>
+          </div>
+          <!-- /horario -->
+          <?php endif; ?>
+        </div>
+
+        <?php if(isset($siteSections)): ?>
+        <!-- box-topo -->
+        <div class="box-topo grid3">
+          
+          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
+
+          <?php if(isset($section->slug)): ?>
+            <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
+            <div class="navegacao txt-10">
+              <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
+              <span>&gt;</span>
+              <a href="<?php echo $site->retriveUrl() ?>/videos" title="Vídeos">Vídeos</a>
+              <span>&gt;</span>
+              <a href="<?php echo $asset->retriveUrl()?>" title="<?php echo $asset->getTitle()?>"><?php echo $asset->getTitle()?></a>
+            </div>
+            <?php endif; ?>
+          <?php endif; ?>
+
+        </div>
+        <!-- /box-topo -->
+        <?php endif; ?>
+        
       </div>
+      <!-- /BARRA SITE -->
 
       <!-- MIOLO -->
       <div id="miolo">
@@ -81,46 +119,27 @@ $(function(){
           <div class="capa grid3">
 
             <!-- ESQUERDA -->
-              <!-- NOTICIA INTERNA -->
-              <div class="box-interna grid2">
-              	<ul class="breadcrumb">
-		              <li><a href="/<?php echo $site->getSlug() ?>"><?php echo $site->getTitle() ?></a><span class="divider">&gt;</span></li>
-             			<li class="active"> <?php echo $asset->getTitle() ?> </li>
-		            </ul>
-		              
-             	 <p class="titulos"><?php echo $asset->getTitle() ?> </p>
-              <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $asset)) ?>
-              
-								<!-- BOTÕES -->
-								<?php if(isset($assetPrev) && isset($assetNext)): ?>
-			              <div class="botoes">
-			               	<a href="<?php echo $assetPrev->retriveUrl() ?>" class="btn" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
-			                <a href="<?php echo $assetNext->retriveUrl() ?>" class="btn" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
-			              </div>
-										<?php else: ?>
-			              <div class="botoes">
-											<?php if(isset($assetPrev)): ?>              	
-			                	<a href="<?php echo $assetPrev->retriveUrl() ?>" class="btn" title="Anterior"><i class="icon-chevron-left icon-white"></i> Anterior</a>
-			                <?php endif; ?>
-											<?php if(isset($assetNext)): ?>              	
-			                <a href="<?php echo $assetNext->retriveUrl() ?>" class="btn" title="Próximo">Próximo<i class="icon-chevron-right icon-white"></i></a>
-			                <?php endif; ?>
-			              </div>
-			          <?php endif; ?>
-			          <!--/ BOTÕES -->
+            <div id="esquerda" class="grid2">
+
+              <?php include_partial_from_folder('blocks','global/asset-2c-video', array('asset' => $asset, 'ipad' => $ipad)) ?>
+
               <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
-							
+
             </div>
             <!-- /ESQUERDA -->
 
             <!-- DIREITA -->
             <div id="direita" class="grid1">
 
+              <?php include_partial_from_folder('blocks','global/display-1c-list-carrossel', array('displays' => $vid1)) ?>
+
+              <?php //include_partial_from_folder('blocks','global/display-1c-list-carrossel', array('displays' => $vid1)) ?>
+              
               <!-- BOX PUBLICIDADE -->
               <div class="box-publicidade grid1">
                 <!-- programas-assets-300x250 -->
                 <script type='text/javascript'>
-                GA_googleFillSlot("univesptv-300x250");
+                GA_googleFillSlot("cmais-assets-300x250");
                 </script>
               </div>
               <!-- / BOX PUBLICIDADE -->
@@ -144,22 +163,30 @@ $(function(){
             <!-- /DIREITA -->
           </div>
           <!-- /CAPA -->
-				  <!-- APOIO -->
-					<ul id="apoio" class="grid3">
-              <li><a href="http://www.desenvolvimento.sp.gov.br" class="governoSp"><img src="http://cmais.com.br/portal/univesptv/images/logo-goversoSp.jpg" alt="Governo do Estado de S&atilde;o Paulo" /></a></li>
-              <li><a href="http://www.fapesp.br" class="fapesp"><img src="http://cmais.com.br/portal/univesptv/images/logo-fapesp.png" alt="FAPESP" /></a></li>
-              <li><a href="http://www.unicamp.br" class="unicamp"><img src="http://cmais.com.br/portal/univesptv/images/logo-unicamp.png" alt="UNICAMP" /></a></li>
-              <li><a href="http://www.unesp.br" class="unesp"><img src="http://cmais.com.br/portal/univesptv/images/logo-unesp.png" alt="UNESP" /></a></li>
-              <li><a href="http://www.usp.br" class="usp"><img src="http://cmais.com.br/portal/univesptv/images/logo-usp.png" alt="USP" /></a></li>
-              <li><a href="http://www.fundap.sp.gov.br" class="fundap"><img src="http://cmais.com.br/portal/univesptv/images/logo-fundap.jpg" alt="FUNDAP" /></a></li>
-              <li><a href="http://www.centropaulasouza.sp.gov.br" class="cps"><img src="http://cmais.com.br/portal/univesptv/images/logo-cps.png" alt="Centro Paula Souza" /></a></li>
-          </ul>
-					<!-- /APOIO -->
+
+          <!-- MENU-RODAPE -->
+          <?php include_partial_from_folder('blocks','global/display-3c-last-videos', array('displays' => $vid2)) ?>
+          <!-- /MENU-RODAPE -->
+
+          <!-- BOX PUBLICIDADE 2 -->
+          <div class="box-publicidade pub-grd grid3">
+            <!-- programas-assets-728x90 -->
+            <script type='text/javascript'>
+            GA_googleFillSlot("cmais-assets-728x90");
+            </script>
+          </div>
+          <!-- / BOX PUBLICIDADE 2 -->
+          
+					<?php if (isset($displays["rodape-interno"])): ?>
+          <!--APOIO-->
+          <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
+          <!--/APOIO-->
+          <?php endif; ?>
+          
         </div>
         <!-- /CONTEUDO PAGINA -->
       </div>
       <!-- /MIOLO -->
     </div>
     <!-- / CAPA SITE -->
-
 
