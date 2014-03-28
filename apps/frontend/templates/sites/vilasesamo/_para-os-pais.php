@@ -120,8 +120,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
       <div class="row-fluid span12 box-pais">
        
       <?php if(isset($specialCategory)): ?>
-        <?php
-        /* 
+         
         <?php if(count($dicaRelacionada) > 0): ?>
           <!--box-dica--> 
             <div class="span4 dica-pai 1">
@@ -268,16 +267,8 @@ else { // senão traz pela semelhança de tags com o asset em questão
             
           <?php endif; ?>
           </div>
-        <?php endif; ?> 
-        */
-        ?>     
-      <div class="span4 artigo">
-        <a href="http://cmais.com.br/vilasesamo/colecaoincluirbrincando" title="Coleção Incluir Brincando">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/04.jpg" alt"descrição do thumbnail: Um livro com capa azul, rodeado por um lápis, uma borboleta e estrela azuis.">
-          <h2 class="tit-artigo">COLEÇÃO INCLUIR BRINCANDO</h2> 
-          <p>Tenha acesso aos materiais de formação dos professores</p>
-        </a>
-      </div>
+        <?php endif; ?>      
+    
       <?php if($artigo): ?>
         <?php $preview = $artigo->retriveRelatedAssetsByRelationType("Preview") ?>
         <div class="span4 artigo">
