@@ -293,7 +293,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
       <div class="row-fluid">
         <!--artigo 1-->
         <div class="span4 artigo" style="margin-left:0px!important;">
-          <a href="http://cmais.com.br/vilasesamo/pais-e-educadores/incluir-brincando" title="O Projeto">
+          <a href="http://cmais.com.br/vilasesamo/pais-e-educadores/habitos-para-uma-vida-mais-saudavel" title="O Projeto">
             <img src="http://midia.cmais.com.br/assets/image/image-13/7bb2bead8613c6fd74a67576e88e1061a6582b0f.jpg" alt="Come-comecom um cacho de banana na mão">
             <h2 class="tit-artigo">O PROJETO</h2> 
             <p>Saiba mais sobre o Hábitos para uma vida saudável</p>
