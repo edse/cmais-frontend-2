@@ -235,9 +235,9 @@ else { // senão traz pela semelhança de tags com o asset em questão
       
       <?php else: ?>
       
-        <?php if(count($dicaRelacionada) > 0): ?>
+        <?php if(isset($dicaRelacionada)): ?>
           <div class="span4 dica-pai 4">
-          <?php if(isset($dicaRelacionada)):  ?>
+          <?php  if(count($dicaRelacionada) > 0): ?>
             estou aqui
             <!--box-dica-->
             
@@ -262,8 +262,17 @@ else { // senão traz pela semelhança de tags com o asset em questão
         <?php else: ?>
           <div class="span4 dica-pai 5">
           <?php if(isset($dica[0])): ?>
-            
-             
+             <!--artigo 3-->
+            <div class="span4 artigo">
+              <a href="http://cmais.com.br/vilasesamo/colecaoincluirbrincando" title="Coleção Incluir Brincando">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/04.jpg" alt"descrição do thumbnail: Um livro com capa azul, rodeado por um lápis, uma borboleta e estrela azuis.">
+                <h2 class="tit-artigo">COLEÇÃO INCLUIR BRINCANDO</h2> 
+                <p>Tenha acesso aos materiais de formação dos professores</p>
+              </a>
+            </div>
+            <!--/artigo 3--> 
+             <?php
+             /*
                 <h2 class="tit-dicas">
                   <i class="sprite-aspa-esquerda"></i>
                   <?php echo $dica[0]->getTitle(); ?>
@@ -277,7 +286,9 @@ else { // senão traz pela semelhança de tags com o asset em questão
                   <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</a>
                 <?php endif; ?>
               <?php endif; ?>
-            
+              * */
+              
+            ?>
           <?php endif; ?>
           </div>
         <?php endif; ?>      
