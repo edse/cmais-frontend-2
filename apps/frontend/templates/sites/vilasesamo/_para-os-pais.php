@@ -151,7 +151,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
         <?php else: ?>
           
           <?php if(isset($displays['dicas'])): ?>
-            <?php die("1"); ?>
+            
             <!--box-dica-->
               <div class="span4 dica-pai">
             <?php if(count($displays['dicas']) > 0): ?>
@@ -179,6 +179,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
         <?php endif; //$specialCategory?>
        
         <?php if(isset($displays['artigos']) > 0): ?>
+          <?php die("1"); ?>
           <?php if(count($displays['artigos']) > 0): ?>
             <?php $preview = $displays['artigos'][0]->Asset->retriveRelatedAssetsByRelationType("Preview") ?>
               <!--box artigo-->
