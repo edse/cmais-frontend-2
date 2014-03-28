@@ -223,7 +223,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
       <?php else: ?>
       
         <?php if(isset($dicaRelacionada)): ?>
-          <div class="span4 dica-pai">
+          <div class="span4 dica-pai 4">
           <?php if(count($dicaRelacionada) > 0): ?>
             estou aqui
             <!--box-dica-->
