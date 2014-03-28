@@ -313,7 +313,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         
         <!--artigo 3-->
         <div class="span4 artigo">
-          <a href="http://midia.cmais.com.br/assets/file/original/91cf67e6f87ed766ae4d754db7dab36034a8668a.pdf" title="Coleção Incluir Brincando">
+          <a href="http://midia.cmais.com.br/assets/file/original/91cf67e6f87ed766ae4d754db7dab36034a8668a.pdf" title="Coleção Incluir Brincando" target="_blank">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/habitos/guia-habitos.jpg" alt"Garibaldo e Bel sentados acenando.">
             <h2 class="tit-artigo">GUIA PARA PROFESSORES</h2> 
             <p>Faça aqui o download do material de formação de professores "Hábitos para uma Vida Saudável"</p>
