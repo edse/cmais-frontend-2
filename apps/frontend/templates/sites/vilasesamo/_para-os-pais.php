@@ -123,7 +123,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
          
         <?php if(count($dicaRelacionada) > 0): ?>
           <!--box-dica--> 
-            <div class="span4 dica-pai">
+            <div class="span4 dica-pai 1">
           <?php if(isset($dicaRelacionada)): ?>
             
               <!--link artigo dica-->
@@ -153,7 +153,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
           <?php if(isset($displays['dicas'])): ?>
             
             <!--box-dica-->
-              <div class="span4 dica-pai">
+              <div class="span4 dica-pai 2">
             <?php if(count($displays['dicas']) > 0): ?>
               
                 <!--link artigo dica-->
@@ -179,7 +179,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
         <?php endif; //$specialCategory?>
        
         <?php if(isset($displays['artigos']) > 0): ?>
-          <?php die("1"); ?>
+          
           <?php if(count($displays['artigos']) > 0): ?>
             <?php $preview = $displays['artigos'][0]->Asset->retriveRelatedAssetsByRelationType("Preview") ?>
               <!--box artigo-->
@@ -194,7 +194,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
           <?php endif; ?>
         <?php else: // senão existir artigo, tenta pegar um segundo destaque do bloco "dicas" pra preencher o espaço ?>
           <!--box-dica--> 
-            <div class="span4 dica-pai">
+            <div class="span4 dica-pai 3">
           <?php if(isset($displays['dicas'][1])): ?>
             
             
@@ -247,7 +247,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
           <?php endif; ?>
           </div>
         <?php else: ?>
-          <div class="span4 dica-pai">
+          <div class="span4 dica-pai 5">
           <?php if(isset($dica[0])): ?>
             
              
@@ -280,7 +280,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
           </a>
         </div>
       <?php else: ?>
-        <div class="span4 dica-pai">
+        <div class="span4 dica-pai 6">
         <?php if(isset($dica[1])): ?>
           
             <a href="#" title="">
