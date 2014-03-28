@@ -1284,7 +1284,8 @@ class _sectionActions extends sfActions
         ->from('Asset a, SectionAsset sa')
         ->where('sa.asset_id = a.id')
         ->andWhere('sa.section_id = ?', $this->section->id)
-        ->andWhere('a.is_active = ?', 1);
+        ->andWhere('a.is_active = ?', 1)
+				->orderBy('a.id desc');
     }  
       // program
       $this->program = $this->site->Program;
