@@ -255,7 +255,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <!--artigo 1-->
         <div class="span4 artigo" style="margin-left:0px!important;">
           <a href="http://cmais.com.br/vilasesamo/pais-e-educadores/incluir-brincando" title="O Projeto">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/01.jpg" alt"">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/01.jpg" alt"Garibaldo, Sivan e Bel estão sorrindo e acendo.">
             <h2 class="tit-artigo">O PROJETO</h2> 
             <p>Saiba mais sobre o Incluir Brincando</p>
           </a>
@@ -265,7 +265,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <!--artigo 2-->
         <div class="span4 artigo">
           <a href="http://cmais.com.br/vilasesamo/pais-e-educadores/parceiros-vila-sesamo" title="Os Parceiros">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/02.jpg" alt"">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/02.jpg" alt"Beto e ênio estão abraçados">
             <h2 class="tit-artigo">OS PARCEIROS</h2> 
             <p>O trabalho em conjunto é fundamental para o sucesso do projeto</p>
           </a>
@@ -275,7 +275,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         <!--artigo 3-->
         <div class="span4 artigo">
           <a href="http://cmais.com.br/vilasesamo/colecaoincluirbrincando" title="Coleção Incluir Brincando">
-            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/04.jpg" alt"">
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/04.jpg" alt"descrição do thumbnail: Um livro com capa azul, rodeado por um lápis, uma borboleta e estrela azuis.">
             <h2 class="tit-artigo">COLEÇÃO INCLUIR BRINCANDO</h2> 
             <p>Tenha acesso aos materiais de formação dos professores</p>
           </a>
