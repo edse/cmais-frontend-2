@@ -42,7 +42,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
        
   
        
-        <div class="container-campanhas" tabindex="0" aria-label="" tabindex="0""> 
+        <div class="container-campanhas" tabindex="0" aria-label="" tabindex="0"> 
           <!-- selo -->
 
                 <img class="" src="http://midia.cmais.com.br/assets/image/original/ffe37ac4ab595d3e01c4ed5e9f5ead27a21a104e.jpg" alt="img_titulo_incluir-brincando">
@@ -82,7 +82,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 							
             	<div class="pdf audio-caderno">
 								<a href="http://midia.cmais.com.br/assets/file/original/945ffa02895b94c75c1311479b69859e83d073ab.zip">
-								<p>Audiobook Dicas + Caderno de Formação</p>
+								<!--p>Audiobook Dicas + Caderno de Formação</p-->
+								<p>Audiobook - Dicas<br>para Incluir Brincando</p>
 								</a>
 							</div>
 							

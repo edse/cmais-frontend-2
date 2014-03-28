@@ -151,6 +151,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
         <?php else: ?>
           
           <?php if(isset($displays['dicas'])): ?>
+            <?php die("1"); ?>
             <!--box-dica-->
               <div class="span4 dica-pai">
             <?php if(count($displays['dicas']) > 0): ?>
@@ -324,7 +325,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
           ?>        
           <?php if(isset($allCategories)): ?>
             <?php if(count($allCategories) > 0): ?>
-          <p tabindex="0">Você também pode escolher o jogo de acordo com as preferências da criança:</p>
+          <p tabindex="0">Você também pode escolher uma brincadeira de acordo com as preferências da criança:</p>
           <div class="btn-group">
             <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Selecione a categoria <span class="caret icones-setas icone-cat-abrir"></span> </a>
             <ul class="dropdown-menu" aria-haspopup="true">
