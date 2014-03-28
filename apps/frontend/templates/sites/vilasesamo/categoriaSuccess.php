@@ -98,7 +98,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <p>O projeto é uma iniciativa da TV Cultura e da Sesame Workshop, com o apoio da Fundação MetLife, parceria estratégica do UNICEF e parceria institucional da Associação Laramara, do Instituto Rodrigo Mendes, da Efeito Visual Serigrafia e da Iguale Comunicação de Acessibilidade.</p>
             <p>Conheça melhor o projeto e os conteúdos digitais da Campanha Transmídia e da Coleção Incluir Brincando, clicando nos links abaixo.
             </p>
-            <?php elseif($section->getSlug()=="incluir-brincando"):?>
+            <?php elseif($section->getSlug()=="habitos-saudaveis"):?>
               <br/>
               <br/>
               <p>
