@@ -70,7 +70,11 @@ if(isset($pager)){
         <!-- ESQUERDA -->
         <div id="esquerda" class="grid2">
 
-					<h2>Todas as notícias</h2>
+				<?php if($section->slug != "noticias-jornalismo"):?>
+						<h2><?php echo $section->getTitle() ?></h2>
+				<?php else:?>
+						<h2>Todas as notícias</h2>
+				<?php endif;?>
 					
 	        <?php if(count($pager) > 0): ?>
 	          <!-- BOX LISTAO -->
