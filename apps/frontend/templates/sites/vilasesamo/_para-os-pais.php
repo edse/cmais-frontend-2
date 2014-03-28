@@ -151,7 +151,17 @@ else { // senão traz pela semelhança de tags com o asset em questão
         <?php else: ?>
           
           <?php if(isset($displays['dicas'])): ?>
-            
+            <!--artigo 3-->
+            <div class="span4 artigo">
+              <a href="http://cmais.com.br/vilasesamo/colecaoincluirbrincando" title="Coleção Incluir Brincando">
+                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/incluirbrincando/04.jpg" alt"descrição do thumbnail: Um livro com capa azul, rodeado por um lápis, uma borboleta e estrela azuis.">
+                <h2 class="tit-artigo">COLEÇÃO INCLUIR BRINCANDO</h2> 
+                <p>Tenha acesso aos materiais de formação dos professores</p>
+              </a>
+            </div>
+            <!--/artigo 3-->
+            <?php
+            /*
             <!--box-dica-->
               <div class="span4 dica-pai 2">
             <?php if(count($displays['dicas']) > 0): ?>
@@ -174,6 +184,9 @@ else { // senão traz pela semelhança de tags com o asset em questão
              
             <?php endif; ?>
              </div>
+             * 
+             */
+             ?>
           <?php endif; ?>
           
         <?php endif; //$specialCategory?>
