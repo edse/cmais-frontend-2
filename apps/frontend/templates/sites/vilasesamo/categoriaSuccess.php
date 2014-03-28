@@ -303,7 +303,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
         
         <!--artigo 2-->
         <div class="span4 artigo">
-          <a href="http://cmais.com.br/vilasesamo/pais-e-educadores/parceiros-vila-sesamo" title="Os Parceiros">
+          <a href="http://cmais.com.br/vilasesamo/pais-e-educadores/parceiros-do-projeto-habitos-para-uma-vida-mais-saudavel" title="Os Parceiros">
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/habitos/parceiros-habitos.jpg" alt"Groover, Elmo e Bel abraçados">
             <h2 class="tit-artigo">OS PARCEIROS</h2> 
             <p>Conheça quem trabalhou conosco neste projeto</p>
