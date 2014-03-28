@@ -39,7 +39,7 @@ $(function(){
 <!--MENU-PROGRAMAS-->
 <div id="menu-programas">
   <div class="menu-programas">
-    <h1>Jornalismo</h1>
+    <a href="http://cmais.com.br/jornalismo"><h1>Jornalismo</h1></a>
 		<?php if(isset($displays1["destaque-menu-programas"])): ?>
 			<ul>
 				<?php foreach ($displays1["destaque-menu-programas"] as $k => $d): ?>
