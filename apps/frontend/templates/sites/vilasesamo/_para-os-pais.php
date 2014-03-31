@@ -119,7 +119,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
       <!--box-pais -->
       <div class="row-fluid span12 box-pais">
        
-      <?php if(isset($specialCategory)): ?>
+      <?php //if(isset($specialCategory)): ?>
         
         
         <?php
@@ -319,7 +319,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
         </div>
       <?php endif; ?>
        
-    <?php endif; ?>
+    <?php //endif; ?>
     
       <!--box-parceiros-->  
       <div class="span4 parceiros">
