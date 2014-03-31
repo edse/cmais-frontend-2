@@ -433,7 +433,8 @@
                   <input type="text" name="link2" id="link2" />
                 </div>
                 
-
+              </div>
+              
               <!--Anexar Currículo-->
               <div class="linha t7">
                 
