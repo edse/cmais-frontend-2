@@ -36,6 +36,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
   }
   if(isset($tags)) {
     if(count($tags) > 0) {
+      /*
       $dica = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa, tag t, tagging tg')
@@ -49,7 +50,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
         ->andWhere('a.asset_type_id = ?', 1)
         ->limit(2)
         ->execute();
-        
+      */  
       $artigo = Doctrine_Query::create()
         ->select('a.*')
         ->from('Asset a, SectionAsset sa, tag t, tagging tg')
