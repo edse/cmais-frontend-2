@@ -18,6 +18,7 @@
 #carrossel-destaque .tit-atividades{font-size:50px;text-shadow:3px 3px 3px #0C859C;  text-transform:uppercase;}
 #carrossel-destaque .tit-pais{font-size:50px;text-shadow:3px 3px 3px #017005;  text-transform:uppercase;}
 #carrossel-destaque .tit-personagens{font-size:50px;text-shadow:3px 3px 3px #5105A3; text-transform:uppercase;}
+#carrossel-destaque .tit-banner1{font-size:50px;text-shadow:3px 3px 3px 5px 5px 5px #A0058D; text-transform:uppercase;}
 
 /*carrossel personagens vila sesamo*/
 #carrossel-p{max-width: 940px;margin: 0 auto; border-radius:8px;}
