@@ -6,7 +6,7 @@
     $icone = "icone-carregar-ve-grande";
     $sectionColor = "pais-e-educadores";
   elseif(isset($parent)):
-    if($parent == "categorias"):
+    if($parent == "categorias" || $parent == "campanhas"):
       $ajaxLoader = "-categorias";
       $icone = "icone-carregar-lj-grande";
       $sectionColor = "categorias";

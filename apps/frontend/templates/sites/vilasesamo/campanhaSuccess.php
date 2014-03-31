@@ -124,9 +124,10 @@
 
 <input type="hidden" id="filter-choice" value="">
 
-<nav id="page_nav">
-  <a href="/testes/vilasesamo2/pages/2.html" class="mais">Carregar mais<i class="icones-sprite-interna icone-carregar-lr-grande"></i></a>
-</nav>
+<!--paginacao-->
+<?php //include_partial_from_folder('sites/vilasesamo', 'global/pagination', array('site' => $site, 'section' => $section,'pager'=>$pager , 'pager2'=>$pager2, 'parent' => $parent)) ?>
+<!--/paginacao-->
+
 <script>
   function viewer(url,alt) {
     goTop();
