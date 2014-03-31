@@ -125,7 +125,7 @@
               
               <!--campo instrumento -->
               <div class="linha t5">
-                <label>Instumento</label>
+                <label>Instrumento</label>
                 <input type="text" name="instrumento" id="instrumento" />
               </div>
               <!--/campo instrumento -->
