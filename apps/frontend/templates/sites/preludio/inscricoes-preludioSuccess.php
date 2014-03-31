@@ -70,7 +70,7 @@
             
             <?php if(isset($_GET["msg"])=="error"):?>            
               <!--Mensagem Erro-->
-              <div class="msgErro" style="display:none">
+              <div class="msgErro">
                 <span class="alerta"></span>
                 <div class="boxMsg">
                   <p class="aviso">Sua mensagem não pode ser enviada.</p>
@@ -82,7 +82,7 @@
             <?php endif; ?>
             <?php if(isset($_GET["msg"])=="success"):?>
               <!--Mensagem Acerto-->
-              <div class="msgAcerto" style="display:none">
+              <div class="msgAcerto">
                 <span class="alerta"></span>
                 <div class="boxMsg">
                   <p class="aviso">Mensagem enviada com sucesso!</p>
