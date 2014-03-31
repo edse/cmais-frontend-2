@@ -79,8 +79,7 @@
                 <hr />
               </div>
               <!--/Mensagem Erro-->
-            <?php endif; ?>
-            <?php if(isset($_GET["msg"])=="success"):?>
+            <?php elseif(isset($_GET["msg"])=="success"):?>
               <!--Mensagem Acerto-->
               <div class="msgAcerto">
                 <span class="alerta"></span>
