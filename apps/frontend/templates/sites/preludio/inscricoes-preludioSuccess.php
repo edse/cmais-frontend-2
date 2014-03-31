@@ -68,7 +68,7 @@
             <h3 class="tit-pagina grid3"><?php echo $section->getTitle()?></h3>
             <p><?php echo $section->getDescription()?></p>
             
-            <?php if(isset($_GET["msg"])=="error"):?>            
+            <?php if(isset($_GET["msg"]) && $_GET["msg"]=="error"):?>            
               <!--Mensagem Erro-->
               <div class="msgErro">
                 <span class="alerta"></span>
@@ -79,7 +79,7 @@
                 <hr />
               </div>
               <!--/Mensagem Erro-->
-            <?php elseif(isset($_GET["msg"])=="success"):?>
+            <?php elseif(isset($_GET["msg"]) && $_GET["msg"]=="success"):?>
               <!--Mensagem Acerto-->
               <div class="msgAcerto">
                 <span class="alerta"></span>
