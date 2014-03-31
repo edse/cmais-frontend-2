@@ -67,41 +67,42 @@
             
             <h3 class="tit-pagina grid3"><?php echo $section->getTitle()?></h3>
             <p><?php echo $section->getDescription()?></p>
-                        
-            <!--Mensagem Erro-->
-            <div class="msgErro" style="display:none">
-              <span class="alerta"></span>
-              <div class="boxMsg">
-                <p class="aviso">Sua mensagem não pode ser enviada.</p>
-                <p>Confirme se todos os campos foram preenchidos corretamente e verifique seus dados. Você pode ter esquecido de preencher algum campo ou errado alguma informação.</p>
-              </div>
-              <hr />
-            </div>
-            <!--/Mensagem Erro-->
             
-            <!--Mensagem Acerto-->
-            <div class="msgAcerto" style="display:none">
-              <span class="alerta"></span>
-              <div class="boxMsg">
-                <p class="aviso">Mensagem enviada com sucesso!</p>
-                <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+            <?php if(isset($_GET["msg"]) && $_GET["msg"]=="error"):?>            
+              <!--Mensagem Erro-->
+              <div class="msgErro">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">Sua mensagem não pode ser enviada.</p>
+                  <p>Confirme se todos os campos foram preenchidos corretamente e verifique seus dados. Você pode ter esquecido de preencher algum campo ou errado alguma informação.</p>
+                </div>
+                <hr />
               </div>
-              <hr />
-            </div>
-            <!--/Mensagem Acerto-->
-            
+              <!--/Mensagem Erro-->
+            <?php elseif(isset($_GET["msg"]) && $_GET["msg"]=="success"):?>
+              <!--Mensagem Acerto-->
+              <div class="msgAcerto">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">Mensagem enviada com sucesso!</p>
+                  <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+                </div>
+                <hr />
+              </div>
+              <!--/Mensagem Acerto-->
+            <?php endif; ?>
 <!--form-contato-solista-->
-            <form id="form-contato-solista" method="post" action="/actions/preestreia/submit.php" enctype="multipart/form-data">
+            <form id="form-contato-solista" method="post" action="/actions/preludio2014/submit.php" enctype="multipart/form-data">
               
               <input type="hidden" name="tipo" value="Solista" />
               <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/inscricao-efetuada-com-sucesso" />
               
               <!--Campo Nome-->
-              <div class="linha t7">
+              <!--div class="linha t7">
                 <br/>
                 <label>Escolha sua categoria: Solista</label>
                 <br/>
-               </div> 
+               </div--> 
                <div class="linha t5">
                 <label>Nome Completo</label>
                 <input type="text" name="nome" id="nome-completo" />
@@ -121,6 +122,13 @@
                 </select>
               </div>
               <!--/Campo Sexo-->
+              
+              <!--campo instrumento -->
+              <div class="linha t5">
+                <label>Instrumento</label>
+                <input type="text" name="instrumento" id="instrumento" />
+              </div>
+              <!--/campo instrumento -->
               
               <!--Campo RG, Nome Artistico, Nome Pai-->
                <div class="linha t5">
@@ -336,98 +344,27 @@
               
               <!--Outras-->
               <div class="outrasinfo" style="display:none;">
-              <!--Instrumento-->
-              <div class="linha t7">
-                
-                <label>Instrumento</label>
-                <input type="text" name="instrumento" id="instrumento" />
-                
-              </div>
-              <!--Instrumento-->
+
               
               <!--tempo-->
               <div class="linha t7">
                 
-                <label>Há quanto tempo estuda música?</label>
+                <label>Onde Estuda?</label>
                 <input type="text" name="tempo" id="tempo" />
                 
               </div>
               <!--tempo-->
               
-              <!--escola-->
-              <div class="linha t7">
-                
-                <label>Qual sua escola de música?</label>
-                <input type="text" name="escola" id="escola" />
-                
-              </div>
-              <!--/escola-->
-              
-              <!--professor1-->
-              <div class="linha t7">
-                
-                <label>Qual o nome de seu professor atual? <br>(Preencher o nome de apenas um professor, ele poderá ser premiado no final do concurso.)</label>
-                <input type="text" name="professor" id="professor" />
-                
-              </div>
-              <!--/professor1-->
-              
-              
-              <!--participa-->
-              <div class="linha t7">
-                
-                <label>Você participa de alguma orquestra ou coro e/ou grupos de câmara? Em caso afirmativo, quais?</label>
-                <input type="text" name="participacao" id="participacao" />
-                
-              </div>
-              <!--/participa-->
-              
-              <!--participou-->
-              <div class="linha t7">
-                
-                <label>Você já participou de outros concursos? Em caso afirmativo, quais?</label>
-                <input type="text" name="concursos" id="concursos" />
-                
-              </div>
-              <!--/participou-->
-              
               <!--como soube-->
               <div class="linha t7">
                 
-                <label>Como soube do Pré-estreia?</label>
+                <label>Como soube do Preludio?</label>
                 <input type="text" name="comosoube" id="comosoube" />
                 
               </div>
               <!--/como soube-->
               
-              <!--curso-->
-              <div class="linha t7">
-                
-                <label>Você cursa escola regular? Em caso afirmativo, quais?</label>
-                <input type="text" name="outraescola" id="outraescola" />
               
-              </div>
-              <!--/curso-->
-              
-              <!--ano-->
-              <div class="linha t7">
-                
-                <label>Em que ano você está?</label>
-                <input type="text" name="ano" id="ano" />
-              
-              </div>
-              <!--ano-->
-              
-              <!--Anexar Currículo-->
-              <div class="linha t7">
-                
-                <label>Currículo artístico com apenas uma lauda</label>
-                <textarea name="curriculo" id="curriculo" class="w100" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
-                <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
-
-                
-              </div>
-              <!--/Anexar Currículo-->
               </div>
               <!--Outras-->
               
@@ -438,7 +375,7 @@
               
               <div class="sugestao-repertorio"  style="display:none;">
               <div class="linha t7">
-                <label>Indique abaixo 8 opções de obras contrastantes a serem executadas nas eliminatórias e na semifinal do concurso. Essas obras devem ter a duração mínima de 3 minutos e máxima de 5 minutos. É muito importante preencher os dados corretamente, conforme o exemplo.</label>
+                <label>Informe aqui as obras que deseja apresentar no programa e os links de seus vídeos tocando essas obras:</label>
               </div>
               
               <!--Sugestoes-->
@@ -463,7 +400,12 @@
                   <label>Duração</label><br/>
                   <input type="text" name="duracao1" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-1" />
                 </div>
-              
+                
+                <div class="linha t5 link">  
+                  <label>Link</label><br/>
+                  <input type="text" name="link1" id="link1" />
+                </div>
+                
               <a class="t7 titulo laranja" >2ª Opção</a>
                            
                 <div class="linha t6" >
@@ -486,307 +428,25 @@
                   <input type="text" name="duracao2" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-2" />
                 </div>
                 
-              <a class="t7 titulo laranja" >3ª Opção</a>
-                           
-                <div class="linha t6" >
-                  <label>Compositor</label><br/>
-                  <input type="text" name="compositor3" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-3" />
-                </div>
-               
-                <div class="linha t9">  
-                  <label>Obra</label><br/>
-                  <input type="text" name="obra3" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-3" />
-                </div>
-                
-                <div class="linha t10 m10 w136">
-                  <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos3" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-3" />
-                </div>
-                
-                <div class="linha t2 m10">  
-                  <label>Duração</label><br/>
-                  <input type="text" name="duracao3" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-3" />
-                </div>
-                
-              <a class="t7 titulo laranja" >4ª Opção</a>
-                           
-                <div class="linha t6" >
-                  <label>Compositor</label><br/>
-                  <input type="text" name="compositor4" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-4" />
-                </div>
-               
-                <div class="linha t9">  
-                  <label>Obra</label><br/>
-                  <input type="text" name="obra4" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-4" />
-                </div>
-                
-                <div class="linha t10 m10 w136">
-                  <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos4" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-4" />
-                </div>
-                
-                <div class="linha t2 m10">  
-                  <label>Duração</label><br/>
-                  <input type="text" name="duracao4" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-4" />
-                </div>
-                
-              <a class="t7 titulo laranja" >5ª Opção</a>
-                           
-                <div class="linha t6" >
-                  <label>Compositor</label><br/>
-                  <input type="text" name="compositor5" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-5" />
-                </div>
-               
-                <div class="linha t9">  
-                  <label>Obra</label><br/>
-                  <input type="text" name="obra5" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-5" />
-                </div>
-                
-                <div class="linha t10 m10 w136">
-                  <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos5" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-5" />
-                </div>
-                
-                <div class="linha t2 m10">  
-                  <label>Duração</label><br/>
-                  <input type="text" name="duracao5" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-5" />
-                </div>
-                
-              <a class="t7 titulo laranja" >6ª Opção</a>
-                           
-                <div class="linha t6" >
-                  <label>Compositor</label><br/>
-                  <input type="text" name="compositor6" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-6" />
-                </div>
-               
-                <div class="linha t9">  
-                  <label>Obra</label><br/>
-                  <input type="text" name="obra6" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-6" />
-                </div>
-                
-                <div class="linha t10 m10 w136">
-                  <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos6" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-6" />
-                </div>
-                
-                <div class="linha t2 m10">  
-                  <label>Duração</label><br/>
-                  <input type="text" name="duracao6" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-6" />
-                </div>
-                
-                
-              <a class="t7 titulo laranja" >7ª Opção</a>
-                           
-                <div class="linha t6" >
-                  <label>Compositor</label><br/>
-                  <input type="text" name="compositor7" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-7" />
-                </div>
-               
-                <div class="linha t9">  
-                  <label>Obra</label><br/>
-                  <input type="text" name="obra7" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-7" />
-                </div>
-                
-                <div class="linha t10 m10 w136">
-                  <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos7" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-7" />
-                </div>
-                
-                <div class="linha t2 m10">  
-                  <label>Duração</label><br/>
-                  <input type="text" name="duracao7" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-7" />
-                </div> 
-                       
-              <a class="t7 titulo laranja" >8ª Opção</a>
-                           
-                <div class="linha t6" >
-                  <label>Compositor</label><br/>
-                  <input type="text" name="compositor8" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-8" />
-                </div>
-               
-                <div class="linha t9">  
-                  <label>Obra</label><br/>
-                  <input type="text" name="obra8" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-8" />
-                </div>
-                
-                <div class="linha t10 m10 w136">
-                  <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos8" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-8" />
-                </div>
-                
-                <div class="linha t2 m10">  
-                  <label>Duração</label><br/>
-                  <input type="text" name="duracao8" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-8" />
-                </div>
-                  
-              <!--/Sugestões-->
-              
-              <!--Sugestões Final-->
-              <div class="linha t7">
-                <label>Indique abaixo 4 opções de obras contrastantes a serem executadas na final do concurso. Essas obras devem ter duração mínima de 7 minutos e máxima de 10 minutos, e serão apresentadas com acompanhamento de orquestra. É muito importante preencher os dados corretamente, conforme o exemplo.</label>
-              </div>
-              
-              <a class="t7 titulo laranja" >9ª Opção</a>
-                           
-                <div class="linha t6" >
-                  <label>Compositor</label><br/>
-                  <input type="text" name="compositor9" data-default="Ex.: F. Liszt" value="Ex.: F. Liszt" id="compositor-9" />
-                </div>
-               
-                <div class="linha t9">  
-                  <label>Obra</label><br/>
-                  <input type="text" name="obra9" data-default="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" value="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" id="obra-9" />
-                </div>
-                
-                <div class="linha t10 m10 w136">
-                  <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos9" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-9" class="mov" />
-                </div>
-                
-                <div class="linha t2 m10">  
-                  <label>Duração</label><br/>
-                  <input type="text" name="duracao9" data-default="Ex.: 9:41" value="Ex.: 9:41" id="duracao-9" />
-                </div>
-              
-              <a class="t7 titulo laranja" >10ª Opção</a>
-                           
-                <div class="linha t6" >
-                  <label>Compositor</label><br/>
-                  <input type="text" name="compositor10" data-default="Ex.: F. Liszt" value="Ex.: F. Liszt" id="compositor-10" />
-                </div>
-               
-                <div class="linha t9">  
-                  <label>Obra</label><br/>
-                  <input type="text" name="obra10" data-default="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" value="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" id="obra-10" />
-                </div>
-                
-                <div class="linha t10 m10 w136">
-                  <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos10" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-10" class="mov"/>
-                </div>
-                
-                <div class="linha t2 m10">  
-                  <label>Duração</label><br/>
-                  <input type="text" name="duracao10" data-default="Ex.: 9:41" value="Ex.: 9:41" id="duracao-10" />
-                </div>
-              
-              <a class="t7 titulo laranja" >11ª Opção</a>
-                           
-                <div class="linha t6" >
-                  <label>Compositor</label><br/>
-                  <input type="text" name="compositor11" data-default="Ex.: F. Liszt" value="Ex.: F. Liszt" id="compositor-11" />
-                </div>
-               
-                <div class="linha t9">  
-                  <label>Obra</label><br/>
-                  <input type="text" name="obra11" data-default="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" value="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" id="obra-11" />
-                </div>
-                
-                <div class="linha t10 m10 w136">
-                  <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos11" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-11" class="mov"/>
-                </div>
-                
-                <div class="linha t2 m10">  
-                  <label>Duração</label><br/>
-                  <input type="text" name="duracao11" data-default="Ex.: 9:41" value="Ex.: 9:41" id="duracao-11" />
-                </div>
-              
-              <a class="t7 titulo laranja" >12ª Opção</a>
-                           
-                <div class="linha t6" >
-                  <label>Compositor</label><br/>
-                  <input type="text" name="compositor12" data-default="Ex.: F. Liszt" value="Ex.: F. Liszt" id="compositor-12" />
-                </div>
-               
-                <div class="linha t9">  
-                  <label>Obra</label><br/>
-                  <input type="text" name="obra12" data-default="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" value="Ex.: Concerto para piano No. 1 em Mi Bemol Maior" id="obra-12" />
-                </div> 
-                
-                <div class="linha t10 m10 w136">
-                  <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos12" data-default="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" value="Ex.: I-Allegro Maestoso/ III-Allegro Marziale-Animato-Presto" id="movimentos-12" class="mov"/>
-                </div>
-                 
-                <div class="linha t2 m10">  
-                  <label>Duração</label><br/>
-                  <input type="text" name="duracao12" data-default="Ex.: 9:41" value="Ex.: 9:41" id="duracao-12" />
-                </div>
-              <!--/Sugestões Final-->
-              
-              <!--Links Videos-->
-
-              <div class="linha t7">
-                <label>Informe aqui o link dos vídeos em que toca as obras requisitadas para seleção. Esses vídeos precisam ser de 3 das obras indicadas para a fase eliminatória. Marque no campo opção a qual obra o link se refere.</label>
-              </div>
-
-              <div class="linha">
-                <div class="linha t2">
-                  <label>Opção:</label><br />
-                  <select class="estado required opcao_correspondente" id="opcao_correspondente1" name="opcao_correspondente1" data-order="0" >
-                    <option value="">--</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                  </select>
-                </div>
-                 
-                <div class="linha t5 link">  
-                  <label>Link</label><br/>
-                  <input type="text" name="link1" id="link1" />
-                </div>
-              </div>
-              <div class="linha">
-                <div class="linha t2">
-                  <label>Opção:</label><br />
-                  <select class="estado required opcao_correspondente" id="opcao_correspondente2" name="opcao_correspondente2" data-order="1">
-                    <option value="">--</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                  </select>
-                </div>
-                 
                 <div class="linha t5 link">  
                   <label>Link</label><br/>
                   <input type="text" name="link2" id="link2" />
                 </div>
-              </div>
-              <div class="linha">  
-                <div class="linha t2">
-                  <label>Opção:</label><br />
-                  <select class="estado required opcao_correspondente" id="opcao_correspondente3" name="opcao_correspondente3" data-order="2">
-                    <option value="">--</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                  </select>
-                </div>
                 
-                <div class="linha t5 link">  
-                  <label>Link</label><br/>
-                  <input type="text" name="link3" id="link3" />
-                </div>
               </div>
-              <!--/Links Videos-->
+              
+              <!--Anexar Currículo-->
+              <div class="linha t7">
+                
+                <label>Currículo artístico com apenas uma lauda</label>
+                <textarea name="curriculo" id="curriculo" class="w100" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
+                <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
+
+                
               </div>
-                            <!--Anexar Foto-->
+              <!--/Anexar Currículo-->
+              
+              <!--Anexar Foto-->
               <div class="linha t7">
                 
                 <label>Anexar RG (se for menor de idade anexar o RG do responsável)(Formato JPG):</label>
@@ -799,7 +459,7 @@
               <div class="linha t7">
                 
                 <label>Anexar foto(max 5mb)(Formato JPG):</label>
-                <input type="file" name="new_photo" id="anexofoto" />
+                <input type="file" name="new_photo2" id="anexofoto" />
                 
               </div>
               <!--/Anexar Foto-->
@@ -809,16 +469,16 @@
               <div class="linha t1 regulamento">
                 
                <ul>
-                <li class="bold">Pré-estreia 2013</li>
+                <li class="bold">Prelúdio 2014 regulamento</li>
                                       
-                <li>‘Pré-estreia 2013’ é um concurso musical que apresentará ao público jovens talentos da música clássica. No ‘Pré-estreia 2013’, músicos de até 24 anos, praticantes de qualquer instrumento, e cantores de até 28 anos terão a oportunidade de se apresentar como solistas ou em conjuntos de câmara de até 8 instrumentistas ou cantores ou mistos de instrumentistas e cantores.</li>
+                <!--li>‘Prelúdio 2014’ é um concurso musical que apresentará ao público jovens talentos da música clássica. No ‘Prelúdio 2014’, músicos de até 24 anos, praticantes de qualquer instrumento, e cantores de até 28 anos terão a oportunidade de se apresentar como solistas ou em conjuntos de câmara de até 8 instrumentistas ou cantores ou mistos de instrumentistas e cantores.</li>
                 <p>
-                <li class="bold">‘Pré-estreia 2013’</li>
+                <li class="bold">‘Prelúdio 2014’</li>
                 <li>Concurso para músicos instrumentistas, cantores líricos e conjuntos de câmara.</li>
-                <li>Conheça o regulamento que define as regras e orienta os músicos interessados em participar do programa Pré-estreia 2013, a realizar-se entre agosto e dezembro de 2013.</li>
+                <li>Conheça o regulamento que define as regras e orienta os músicos interessados em participar do programa Prelúdio 2014, a realizar-se entre agosto e dezembro de 2013.</li>
                 <p>
                 <li class="bold">REGULAMENTO</li>
-                <li>A Fundação Padre Anchieta – Centro Paulista de Rádio e TV Educativas, através de sua emissora de televisão TV Cultura – Canal 2, promove o Pré-estreia 2013 - Concurso para músicos instrumentistas, cantores líricos e conjuntos de câmara, que será regido por este regulamento, cujas disposições declaram os candidatos, após a devida leitura, aceitar por ocasião da submissão de sua respectiva ficha de inscrição.</li>
+                <li>A Fundação Padre Anchieta – Centro Paulista de Rádio e TV Educativas, através de sua emissora de televisão TV Cultura – Canal 2, promove o Prelúdio 2014 - Concurso para músicos instrumentistas, cantores líricos e conjuntos de câmara, que será regido por este regulamento, cujas disposições declaram os candidatos, após a devida leitura, aceitar por ocasião da submissão de sua respectiva ficha de inscrição.</li>
                 <p>
                 <li class="bold">I - DOS OBJETIVOS:</li>
                 <li>O presente Concurso tem a finalidade incentivar jovens instrumentistas, cantores líricos e conjuntos de câmara de 3 (três) a 8 (oito) instrumentistas ou cantores ou mistos de instrumentistas e cantores. Os candidatos deverão ser brasileiros ou estrangeiros residentes no país. Os quatro instrumentistas, cantores líricos ou conjuntos de câmara que obtiverem a melhor colocação ao longo das provas eliminatórias, semifinais e final serão premiados de acordo com as normas do presente regulamento. Os professores dos primeiros colocados em cada categoria, indicados na ficha de inscrição, também serão premiados com uma viagem ao exterior (passagem aérea e hospedagem para duas pessoas).</li>
@@ -906,7 +566,7 @@
                 <li>CONSIDERAÇÕES FINAIS</li>
                 <li>A Fundação Padre Anchieta – Centro Paulista de Rádio e TV Educativas reserva para si o direito de modificar, alterar e/ou cancelar qualquer item do presente Regulamento e a dar divulgação ao mesmo da maneira que julgar conveniente.</li>
                 <li>Os casos omissos por este Regulamento serão decididos pela Comissão Organizadora do Concurso.</li>
-                <li class="bold">São Paulo, março de 2013.</li>
+                <li class="bold">São Paulo, março de 2013.</li-->
              </ul>
               <p>      
               </div>
@@ -951,7 +611,7 @@
           <div class="box-publicidade grid1">
             <!-- programas-assets-300x250 -->
             <script type='text/javascript'>
-        GA_googleFillSlot("cmais-assets-300x250");
+              GA_googleFillSlot("cmais-assets-300x250");
 
             </script>
           </div>
@@ -1014,7 +674,6 @@ $(document).ready(function(){
     $('.sugestao-repertorio').toggle();    
   });
   $('#form-contato-solista input#enviar').click(function(){
-    $(".msgAcerto, .msgErro").hide();
     $(".menorForm, .outrasinfo, .sugestao-repertorio").show();
   });
   $('.sugestao-repertorio input').attr("style","color:#ccc");
@@ -1029,56 +688,15 @@ $(document).ready(function(){
     */
   });
   
-  var selected = new Array(0,0,0);
-  $(".opcao_correspondente").change(function(){
-    var optionSelected = $("#"+$(this).attr("id")+" option:selected").attr("value");
-    var number = $(this).attr("data-order");
-    selected[number]=optionSelected;
-    
-    $(".opcao_correspondente").not($(this)).each(function(){
-      $(this).find("option").each(function(){
-        $(this).removeAttr("disabled")
-        for(var i=0;i<selected.length; i++){
-          if($(this).attr("value") == selected[i])
-            $(this).attr("disabled","disabled");
-        }
-      });
-      $(this).find("option:selected").removeAttr('disabled', 'disabled')
-    });
-  });
       
   //validacao solista
   var validator = $('#form-contato-solista').validate({
-    /*
-      submitHandler: function(form){
-          $.ajax({
-            type: "POST",
-            dataType: "text",
-            data: $("#form-contato-solista").serialize(),                 
-            beforeSend: function(){
-                $('input#enviar').attr('disabled','disabled');
-                $(".msgAcerto").hide();
-                $(".msgErro").hide();
-                $('img#ajax-loader').show();
-            },
-            
-            success: function(data){
-              $('input#enviar').removeAttr('disabled');
-              window.location.href="#";
-              if(data == "1"){
-                  $("#form-contato-solista").clearForm();
-                  $(".msgAcerto").show();
-                  $('img#ajax-loader').hide();
-              }else {
-                  $(".msgErro").show();
-                  $('img#ajax-loader').hide();
-                }
-              }
-            });
-          },
-          */
           rules:{
             nome:{
+             required: true,
+             minlength: 2
+            },
+            instrumento:{
              required: true,
              minlength: 2
             },
@@ -1143,27 +761,7 @@ $(document).ready(function(){
               required: true,
               minlength: 8
             },
-            instrumento:{
-              required: true,
-              minlength: 2
-            },
             tempo:{
-              required: true,
-              minlength: 2
-            },
-            escola:{
-              required: true,
-              minlength: 2
-            },
-            professor:{
-              required: true,
-              minlength: 2
-            },
-            professoroutro:{
-              required: true,
-              minlength: 2
-            },
-            participacao:{
               required: true,
               minlength: 2
             },
@@ -1179,31 +777,12 @@ $(document).ready(function(){
               required: true,
               minlength: 2
             },
-            sugestao3:{
-              required: true,
-              minlength: 2
-            },
-            sugestao4:{
-              required: true,
-              minlength: 2
-            },
-            sugestao5:{
-              required: true,
-              minlength: 2
-            },
-            sugestao6:{
-              required: true,
-              minlength: 2
-            },
-            sugestaofinal1:{
-              required: true,
-              minlength: 2
-            },
-            sugestaofinal2:{
-              required: true,
-              minlength: 2
-            },
+            
             link1:{
+              required: true,
+              minlength: 2
+            },
+            link2:{
               required: true,
               minlength: 2
             },
@@ -1227,66 +806,6 @@ $(document).ready(function(){
                 },
               minlength: 2
             },
-            compositor3:{
-              required:function(){
-                validate('#compositor-3');
-                },
-              minlength: 2
-            },
-            compositor4:{
-              required:function(){
-                validate('#compositor-4');
-                },
-              minlength: 2
-            },
-            compositor5:{
-              required:function(){
-                validate('#compositor-5');
-                },
-              minlength: 2
-            },
-            compositor6:{
-              required:function(){
-                validate('#compositor-6');
-                },
-              minlength: 2
-            },
-            compositor7:{
-              required:function(){
-                validate('#compositor-7');
-                },
-              minlength: 2
-            },
-            compositor8:{
-              required:function(){
-                validate('#compositor-8');
-                },
-              minlength: 2
-            },
-            compositor9:{
-              required:function(){
-                validate('#compositor-9');
-                },
-              minlength: 2
-            },
-            compositor10:{
-              required:function(){
-                validate('#compositor-10');
-                },
-              minlength: 2
-            },
-            compositor11:{
-              required:function(){
-                validate('#compositor-11');
-                },
-              minlength: 2
-            },
-            compositor12:{
-              required:function(){
-                validate('#compositor-12');
-                },
-              minlength: 2
-            },
             obra1:{
               required:function(){
                 validate('#obra-1');
@@ -1295,56 +814,6 @@ $(document).ready(function(){
             obra2:{
              required:function(){
                 validate('#obra-2');
-              }
-            },
-            obra3:{
-              required:function(){
-                validate('#obra-3');
-              }
-            },
-            obra4:{
-              required:function(){
-                validate('#obra-4');
-              }
-            },
-            obra5:{
-              required:function(){
-                validate('#obra-5');
-              }
-            },
-            obra6:{
-              required:function(){
-                validate('#obra-6');
-              }
-            },
-            obra7:{
-              required:function(){
-                validate('#obra-7');
-              }
-            },
-            obra8:{
-              required:function(){
-                validate('#obra-8');
-              }
-            },
-            obra9:{
-              required:function(){
-                validate('#obra-9');
-              }
-            },
-            obra10:{
-              required:function(){
-                validate('#obra-10');
-              }
-            },
-            obra11:{
-              required:function(){
-                validate('#obra-11');
-              }
-            },
-            obra12:{
-              required:function(){
-                validate('#obra-12');
               }
             },
             duracao1:{
@@ -1357,56 +826,6 @@ $(document).ready(function(){
                 validate('#duracao-2');
                }
             },
-            duracao3:{
-              required:function(){
-                validate('#duracao-3');
-              }
-            },
-            duracao4:{
-              required:function(){
-                validate('#duracao-4');
-              }
-            },
-            duracao5:{
-             required:function(){
-                validate('#duracao-5');
-              }
-            },
-            duracao6:{
-             required:function(){
-                validate('#duracao-6');
-              }
-            },
-            duracao7:{
-            required:function(){
-                validate('#duracao-7');
-              } 
-            },
-            duracao8:{
-              required:function(){
-                validate('#duracao-8');
-              } 
-            },
-            duracao9:{
-              required:function(){
-                validate('#duracao-9');
-              }
-            },
-            duracao10:{
-             required:function(){
-                validate('#duracao-10');
-              } 
-            },
-            duracao11:{
-              required:function(){
-                validate('#duracao-11');
-              } 
-            },
-            duracao12:{
-             required:function(){
-                validate('#duracao-12');
-              } 
-            },
             opcao_correspondente1:{
               required:function(){
                 validate('#opcao_correspondente1');
@@ -1417,16 +836,6 @@ $(document).ready(function(){
                 validate('#opcao_correspondente2');
               }
             },
-            opcao_correspondente3:{
-               required:function(){
-                validate('#opcao_correspondente3');
-              }
-            },
-            opcao_correspondente4:{
-               required:function(){
-                validate('#opcao_correspondente4');
-              }
-            },
             link1:{
                required:function(){
                 validate('#link1');
@@ -1435,16 +844,6 @@ $(document).ready(function(){
             link2:{
               required:function(){
                 validate('#link2');
-              }
-            },
-            link3:{
-              required:function(){
-                validate('#link3');
-              }
-            },
-            link4:{
-              required:function(){
-                validate('#link4');
               }
             },
             captcha:{
@@ -1471,6 +870,11 @@ $(document).ready(function(){
               required:function(){
                 validate('#anexo_foto');
               } 
+            },
+            new_photo2:{
+              required:function(){
+                validate('#anexo_foto');
+              } 
             }
           },
           
@@ -1494,75 +898,21 @@ $(document).ready(function(){
             telcelular: "Campo obrigat&oacute;rio",
             instrumento: "Campo obrigat&oacute;rio",
             tempo: "Campo obrigat&oacute;rio",
-            escola: "Campo obrigat&oacute;rio",
-            professor: "Campo obrigat&oacute;rio",
-            professoroutro: "Campo obrigat&oacute;rio",
-            participacao: "Campo obrigat&oacute;rio",
             comosoube: "Campo obrigat&oacute;rio",
             compositor1: "Campo obrigat&oacute;rio",
             compositor2: "Campo obrigat&oacute;rio",
-            compositor3: "Campo obrigat&oacute;rio",
-            compositor4: "Campo obrigat&oacute;rio",
-            compositor5: "Campo obrigat&oacute;rio",
-            compositor6: "Campo obrigat&oacute;rio",
-            compositor7: "Campo obrigat&oacute;rio",
-            compositor8: "Campo obrigat&oacute;rio",
-            compositor9: "Campo obrigat&oacute;rio",
-            compositor10: "Campo obrigat&oacute;rio",
-            compositor11: "Campo obrigat&oacute;rio",
-            compositor12: "Campo obrigat&oacute;rio",
             obra1: "Campo obrigat&oacute;rio",
             obra2: "Campo obrigat&oacute;rio",
-            obra3: "Campo obrigat&oacute;rio",
-            obra4: "Campo obrigat&oacute;rio",
-            obra5: "Campo obrigat&oacute;rio",
-            obra6: "Campo obrigat&oacute;rio",
-            obra7: "Campo obrigat&oacute;rio",
-            obra8: "Campo obrigat&oacute;rio",
-            obra9: "Campo obrigat&oacute;rio",
-            obra10: "Campo obrigat&oacute;rio",
-            obra11: "Campo obrigat&oacute;rio",
-            obra12: "Campo obrigat&oacute;rio",
             movimentos1: "Campo obrigat&oacute;rio",
             movimentos2: "Campo obrigat&oacute;rio",
-            movimentos3: "Campo obrigat&oacute;rio",
-            movimentos4: "Campo obrigat&oacute;rio",
-            movimentos5: "Campo obrigat&oacute;rio",
-            movimentos6: "Campo obrigat&oacute;rio",
-            movimentos7: "Campo obrigat&oacute;rio",
-            movimentos8: "Campo obrigat&oacute;rio",
-            movimentos9: "Campo obrigat&oacute;rio",
-            movimentos10: "Campo obrigat&oacute;rio",
-            movimentos11: "Campo obrigat&oacute;rio",
-            movimentos12: "Campo obrigat&oacute;rio",
             duracao1: "Campo obrigat&oacute;rio",
             duracao2: "Campo obrigat&oacute;rio",
-            duracao3: "Campo obrigat&oacute;rio",
-            duracao4: "Campo obrigat&oacute;rio",
-            duracao5: "Campo obrigat&oacute;rio",
-            duracao6: "Campo obrigat&oacute;rio",
-            duracao7: "Campo obrigat&oacute;rio",
-            duracao8: "Campo obrigat&oacute;rio",
-            duracao9: "Campo obrigat&oacute;rio",
-            duracao10: "Campo obrigat&oacute;rio",
-            duracao11: "Campo obrigat&oacute;rio",
-            duracao12: "Campo obrigat&oacute;rio",
             opcao_correspondente1: "Campo obrigat&oacute;rio",
             opcao_correspondente2: "Campo obrigat&oacute;rio",
-            opcao_correspondente3: "Campo obrigat&oacute;rio",
-            opcao_correspondente4: "Campo obrigat&oacute;rio",
             sugestao1: "Campo obrigat&oacute;rio",
             sugestao2: "Campo obrigat&oacute;rio",
-            sugestao3: "Campo obrigat&oacute;rio",
-            sugestao4: "Campo obrigat&oacute;rio",
-            sugestao5: "Campo obrigat&oacute;rio",
-            sugestao6: "Campo obrigat&oacute;rio",
-            sugestaofinal1: "Campo obrigat&oacute;rio",
-            sugestaofinal2: "Campo obrigat&oacute;rio",
             link1: "Campo obrigat&oacute;rio",
             link2: "Campo obrigat&oacute;rio",
-            link3: "Campo obrigat&oacute;rio",
-            link4: "Campo obrigat&oacute;rio",
             anexofoto: "Campo obrigat&oacute;rio",
             curriculo: "Campo obrigat&oacute;rio",
             captcha: "Campo obrigat&oacute;rio",
@@ -1576,7 +926,6 @@ $(document).ready(function(){
           },
           success: function(label){
             // set &nbsp; as text for IE
-            
             label.html("&nbsp;").addClass("checked");
           }
       });
