@@ -286,7 +286,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
         </div>
         <!--/artigo 3-->
         
-      <?php if(isset($artigo)): ?>
+      <?php //if(isset($artigo)): ?>
         <?php $preview = $artigo->retriveRelatedAssetsByRelationType("Preview") ?>
         <div class="span4 artigo">
           <a href="/<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $artigo->getSlug() ?>" title="<?php echo $artigo->getTitle() ?>"-->
@@ -296,19 +296,21 @@ else { // senão traz pela semelhança de tags com o asset em questão
             <p><?php echo $artigo->getDescription() ?></p>
           </a>
         </div>
+      <?php
+      /*  
       <?php else: ?>
         <div class="span4 dica-pai 6">
-        <?php if(isset($dica[0])): ?>
+        <?php if(isset($dica[1])): ?>
           
             <a href="#" title="">
               <h2 class="tit-dicas">
                 <i class="sprite-aspa-esquerda"></i>
-                <?php echo $dica[0]->getTitle(); ?>
+                <?php echo $dica[1]->getTitle(); ?>
               </h2>
               <p class="ellipsis"><?php echo utf8_encode(html_entity_decode($dica[1]->AssetContent->render()) ) ?></p>
               <i class="sprite-aspa-direita"></i>
             </a>
-            <?php $download = $dica[0]->retriveRelatedAssetsByRelationType("Download") ?>
+            <?php $download = $dica[1]->retriveRelatedAssetsByRelationType("Download") ?>
             <?php if(count($download) > 0): ?>
               <?php if($download[0]->AssetType->getSlug() == "file"): ?>
                 <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</a>
@@ -320,7 +322,10 @@ else { // senão traz pela semelhança de tags com o asset em questão
       <?php endif; ?>
        
     <?php //endif; ?>
-    
+      
+       * 
+       */
+       ?>
       <!--box-parceiros-->  
       <div class="span4 parceiros">
         <?php
