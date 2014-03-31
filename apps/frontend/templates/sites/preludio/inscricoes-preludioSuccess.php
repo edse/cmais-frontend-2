@@ -91,17 +91,17 @@
             <!--/Mensagem Acerto-->
             
 <!--form-contato-solista-->
-            <form id="form-contato-solista" method="post" action="/actions/preestreia/submit.php" enctype="multipart/form-data">
+            <form id="form-contato-solista" method="post" action="/actions/preludio2014/submit.php" enctype="multipart/form-data">
               
               <input type="hidden" name="tipo" value="Solista" />
               <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/inscricao-efetuada-com-sucesso" />
               
               <!--Campo Nome-->
-              <div class="linha t7">
+              <!--div class="linha t7">
                 <br/>
                 <label>Escolha sua categoria: Solista</label>
                 <br/>
-               </div> 
+               </div--> 
                <div class="linha t5">
                 <label>Nome Completo</label>
                 <input type="text" name="nome" id="nome-completo" />
@@ -121,6 +121,13 @@
                 </select>
               </div>
               <!--/Campo Sexo-->
+              
+              <!--campo instrumento -->
+              <div class="linha t5">
+                <label>Instumento</label>
+                <input type="text" name="instrumento" id="instrumento" />
+              </div>
+              <!--/campo instrumento -->
               
               <!--Campo RG, Nome Artistico, Nome Pai-->
                <div class="linha t5">
@@ -1079,6 +1086,10 @@ $(document).ready(function(){
           */
           rules:{
             nome:{
+             required: true,
+             minlength: 2
+            },
+            instrumento:{
              required: true,
              minlength: 2
             },
