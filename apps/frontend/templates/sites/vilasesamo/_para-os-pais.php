@@ -286,7 +286,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
         </div>
         <!--/artigo 3-->
         
-      <?php if($artigo): ?>
+      <?php if(isset($artigo)): ?>
         <?php $preview = $artigo->retriveRelatedAssetsByRelationType("Preview") ?>
         <div class="span4 artigo">
           <a href="/<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $artigo->getSlug() ?>" title="<?php echo $artigo->getTitle() ?>"-->
