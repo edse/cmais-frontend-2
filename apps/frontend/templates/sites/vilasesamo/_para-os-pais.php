@@ -34,8 +34,8 @@ else { // senão traz pela semelhança de tags com o asset em questão
         $tags[] = $t;
     }
   }
-  if(isset($tags)) {
-    if(count($tags) > 0) {
+  //if(isset($tags)) {
+    //if(count($tags) > 0) {
       /*
       $dica = Doctrine_Query::create()
         ->select('a.*')
@@ -63,7 +63,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
         ->andWhereIn('t.name', $tags)
         ->andWhere('a.asset_type_id = ?', 1)
         ->fetchOne();
-    }
+   /* }
   }
   else {
     $dica = Doctrine_Query::create()
@@ -87,6 +87,8 @@ else { // senão traz pela semelhança de tags com o asset em questão
       ->andWhere('a.asset_type_id = ?', 1)
       ->fetchOne();
   }
+    */ 
+   
 }
 
 ?>
