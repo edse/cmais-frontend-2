@@ -67,29 +67,31 @@
             
             <h3 class="tit-pagina grid3"><?php echo $section->getTitle()?></h3>
             <p><?php echo $section->getDescription()?></p>
-                        
-            <!--Mensagem Erro-->
-            <div class="msgErro" style="display:none">
-              <span class="alerta"></span>
-              <div class="boxMsg">
-                <p class="aviso">Sua mensagem não pode ser enviada.</p>
-                <p>Confirme se todos os campos foram preenchidos corretamente e verifique seus dados. Você pode ter esquecido de preencher algum campo ou errado alguma informação.</p>
-              </div>
-              <hr />
-            </div>
-            <!--/Mensagem Erro-->
             
-            <!--Mensagem Acerto-->
-            <div class="msgAcerto" style="display:none">
-              <span class="alerta"></span>
-              <div class="boxMsg">
-                <p class="aviso">Mensagem enviada com sucesso!</p>
-                <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+            <?php if(isset($_GET["msg"])=="error"):?>            
+              <!--Mensagem Erro-->
+              <div class="msgErro" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">Sua mensagem não pode ser enviada.</p>
+                  <p>Confirme se todos os campos foram preenchidos corretamente e verifique seus dados. Você pode ter esquecido de preencher algum campo ou errado alguma informação.</p>
+                </div>
+                <hr />
               </div>
-              <hr />
-            </div>
-            <!--/Mensagem Acerto-->
-            
+              <!--/Mensagem Erro-->
+            <?php endif; ?>
+            <?php if(isset($_GET["msg"])=="success"):?>
+              <!--Mensagem Acerto-->
+              <div class="msgAcerto" style="display:none">
+                <span class="alerta"></span>
+                <div class="boxMsg">
+                  <p class="aviso">Mensagem enviada com sucesso!</p>
+                  <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
+                </div>
+                <hr />
+              </div>
+              <!--/Mensagem Acerto-->
+            <?php endif; ?>
 <!--form-contato-solista-->
             <form id="form-contato-solista" method="post" action="/actions/preludio2014/submit.php" enctype="multipart/form-data">
               
