@@ -298,17 +298,17 @@ else { // senão traz pela semelhança de tags com o asset em questão
         </div>
       <?php else: ?>
         <div class="span4 dica-pai 6">
-        <?php if(isset($dica[1])): ?>
+        <?php if(isset($dica[0])): ?>
           
             <a href="#" title="">
               <h2 class="tit-dicas">
                 <i class="sprite-aspa-esquerda"></i>
-                <?php echo $dica[1]->getTitle(); ?>
+                <?php echo $dica[0]->getTitle(); ?>
               </h2>
               <p class="ellipsis"><?php echo utf8_encode(html_entity_decode($dica[1]->AssetContent->render()) ) ?></p>
               <i class="sprite-aspa-direita"></i>
             </a>
-            <?php $download = $dica[1]->retriveRelatedAssetsByRelationType("Download") ?>
+            <?php $download = $dica[0]->retriveRelatedAssetsByRelationType("Download") ?>
             <?php if(count($download) > 0): ?>
               <?php if($download[0]->AssetType->getSlug() == "file"): ?>
                 <a class="btn" href="http://midia.cmais.com.br/assets/file/original/<?php echo $download[0]->AssetFile->getFile() ?>" title="Baixar" target="_blank">baixar</a>
