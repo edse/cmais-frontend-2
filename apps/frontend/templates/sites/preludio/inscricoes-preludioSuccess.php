@@ -285,6 +285,24 @@
               </div>
               <!--Campo Telefone Celular-->
               
+              <!--tempo-->
+              <div class="linha t7">
+                
+                <label>Onde Estuda?</label>
+                <input type="text" name="tempo" id="tempo" />
+                
+              </div>
+              <!--tempo-->
+              
+              <!--como soube-->
+              <div class="linha t7">
+                
+                <label>Como soube do Preludio?</label>
+                <input type="text" name="comosoube" id="comosoube" />
+                
+              </div>
+              <!--/como soube-->
+              
               <!--Campo Menor de Idade-->
  
               <a href="javascript:;"class="t7 titulo menor">
@@ -329,23 +347,7 @@
               
               <!--/menor Form-->
 
-              <!--tempo-->
-              <div class="linha t7">
-                
-                <label>Onde Estuda?</label>
-                <input type="text" name="tempo" id="tempo" />
-                
-              </div>
-              <!--tempo-->
               
-              <!--como soube-->
-              <div class="linha t7">
-                
-                <label>Como soube do Preludio?</label>
-                <input type="text" name="comosoube" id="comosoube" />
-                
-              </div>
-              <!--/como soube-->
               
 
               
@@ -377,12 +379,12 @@
                     <input type="text" name="movimentos1" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-1" />
                   </div>
                   
-                  <div class="linha t2 m10">  
+                  <div class="linha t2">  
                     <label>Duração</label><br/>
                     <input type="text" name="duracao1" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-1" />
                   </div>
                   
-                  <div class="linha t5 link">  
+                  <div class="linha t5">  
                     <label>Link</label><br/>
                     <input type="text" name="link1" id="link1" />
                   </div>
@@ -392,27 +394,27 @@
                 <div style="display: hidden;">
                   <div class="linha t5">  
                     <label>Nome da Obra</label><br/>
-                    <input type="text" name="obra1" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-1" />
+                    <input type="text" name="obra2" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-2" />
                   </div>
                                
                   <div class="linha t5" >
                     <label>Compositor</label><br/>
-                    <input type="text" name="compositor1" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-1" />
+                    <input type="text" name="compositor2" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-2" />
                   </div>
                  
                   <div class="linha t5">
                     <label>Movimentos</label><br/>
-                    <input type="text" name="movimentos1" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-1" />
+                    <input type="text" name="movimentos2" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-2" />
                   </div>
                   
-                  <div class="linha t2 m10">  
+                  <div class="linha t2">  
                     <label>Duração</label><br/>
-                    <input type="text" name="duracao1" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-1" />
+                    <input type="text" name="duracao2" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-2" />
                   </div>
                   
-                  <div class="linha t5 link">  
+                  <div class="linha t5">  
                     <label>Link</label><br/>
-                    <input type="text" name="link1" id="link1" />
+                    <input type="text" name="link2" id="link2" />
                   </div>
                 </div>
               </div>
