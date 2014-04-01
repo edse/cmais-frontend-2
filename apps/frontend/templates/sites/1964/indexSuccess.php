@@ -108,13 +108,13 @@
 		   	   	  <?php
                 $sectionAssets = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"linha-do-tempo");
                 $assetsCount = $sectionAssets->getAssets();
-                $quant = 0;
+                $quant = -1;
                 $lastDateShow = "";
                 //echo count($assetsCount) . ">>>>>>>>><br>";
                 foreach($assetsCount as $a){
                   $showOn = $a->is_active.">>>>>>><br>";
                   $dateShow = $a->AssetContent->getSource();
-                  if($showOn == 1){
+                  if($showOn == 1){ 
                     if($dateShow != $lastDateShow){
                       $quant++;
                       if(substr($dateShow, 0, 5) == (string)date("d/m")){
