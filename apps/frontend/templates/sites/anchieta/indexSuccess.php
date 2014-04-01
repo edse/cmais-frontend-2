@@ -61,11 +61,11 @@
               <?php $subsections = $s->subsections(); ?>
               <?php if(count($subsections) > 0): ?>
                 <li class="m-<?php echo $s->getSlug() ?> span"><a href="#" class="abre-menu" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?><span></span></a>
-                	 <li class="m-ancora"><a href="#timeline" title="Linha do tempo"</a>Linha do Tempo</li>
                   <div class="submenu-interna toggle-menu" style="display:none; width: auto;">
                     <ul style="display:block;">
                     <?php foreach($subsections as $s): ?>
                       <li><a href="<?php echo $s->retriveUrl()?>"><?php echo $s->getTitle()?></a></li>
+                       <li class="m-ancora"><a href="#timeline" title="Linha do tempo">Linha do Tempo</a></li>
                     <?php endforeach; ?>
                     </ul>
                   </div>
