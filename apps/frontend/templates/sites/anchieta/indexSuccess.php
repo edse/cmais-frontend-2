@@ -54,7 +54,14 @@
         <!-- box-topo -->
         <div class="box-topo grid3">
 
-          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
+         <?php if(count($siteSections) > 0): ?>
+          <!-- menu interna -->
+          <ul class="menu-interna grid3 menu-gabi">
+					  <li class="m-videos"><a href="http://cmais.com.br/anchieta/videos" title="Vídeos">Vídeos</a></li>
+					  <li class="m-videos"><a href="#timeline" title="timeline">Linha do Tempo</a></li>
+					</ul>
+          <!-- /menu interna -->
+          <?php endif; ?>
 
           <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
           <div class="navegacao txt-10">
@@ -215,7 +222,7 @@
             </div>
             <!-- /DIREITA -->
             
-            <div class="box-interna grid2">
+            <div id="timeline" class="box-interna grid2">
 			   	   <h2>Linha do Tempo</h2>
 		   	   	 </div>
 		   	   	 <!--TITULO-->
