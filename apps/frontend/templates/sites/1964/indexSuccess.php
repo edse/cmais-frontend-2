@@ -105,7 +105,23 @@
 			   	   <h2>Linha do Tempo</h2>
 		   	   	 </div>
 		   	   	 <!--TITULO-->
-		   	   	
+		   	   	  <?php
+                $sectionAssets = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"linha-do-tempo");
+                $assetsCount = $sectionAssets->getAssets();
+                $quant = 0;
+                $lastDateShow = "";
+                echo count($assetsCount) . ">>>>>>>>><br>";
+                foreach($assetsCount as $a){
+                  $dateShow = $a->AssetContent->getSource();
+                  if($dateShow != $lastDateShow){
+                    $quant++;
+                    if(substr($dateShow, 0, 5) == (string)date("d/m")){
+                      break;
+                    }
+                  }
+                  $lastDateShow = $a->AssetContent->getSource();
+                }
+                ?>  
 		          <!-- INICIO TIMELINE -->
 		          <div class="timeline">
 			            <div id="tvcultura-embed"></div>
@@ -114,7 +130,8 @@
 			               width: "100%",
 			               height: "100%",
 			               source: "http://univesptv.cmais.com.br/1964/linha-do-tempo.jsonp",
-			               start_at_end: true, //start_at_end: true,começa do ultimo asset
+			               start_at_slide:<?php echo $quant?>,
+			               //start_at_end: true, //start_at_end: true,começa do ultimo asset
 			               start_zoom_adjust: 2,
 			               embed_id: "tvcultura-embed",
 			               css: "http://cmais.com.br/portal/js/timeline/1964.css",
