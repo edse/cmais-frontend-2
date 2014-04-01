@@ -72,7 +72,6 @@
                 </li>
               <?php else: ?>
                 <li class="m-<?php echo $s->getSlug() ?>"><a href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?></a></li>
-                <li class="m-ancora"><a href="#timeline" title="Linha do tempo"</a></li>
               <?php endif; ?>
             <?php endforeach; ?>
           </ul>
