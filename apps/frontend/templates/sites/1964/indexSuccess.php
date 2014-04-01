@@ -110,7 +110,7 @@
                 $assetsCount = $sectionAssets->getAssets();
                 $quant = 0;
                 $lastDateShow = "";
-                echo count($assetsCount) . ">>>>>>>>><br>";
+                //echo count($assetsCount) . ">>>>>>>>><br>";
                 foreach($assetsCount as $a){
                   $dateShow = $a->AssetContent->getSource();
                   if($dateShow != $lastDateShow){
