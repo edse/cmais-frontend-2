@@ -285,6 +285,93 @@
               </div>
               <!--Campo Telefone Celular-->
               
+              <!--tempo-->
+              <div class="linha t5">
+                
+                <label>Onde Estuda?</label>
+                <input type="text" name="tempo" id="tempo" />
+                
+              </div>
+              <!--tempo-->
+              
+              <!--como soube-->
+              <div class="linha t5">
+                
+                <label>Como soube do Preludio?</label>
+                <input type="text" name="comosoube" id="comosoube" />
+                
+              </div>
+              <!--/como soube-->
+              
+              <!--Sugestoes-->
+              <a href="javascript:;"class="t7 titulo repertorio" style="margin-top:0!important;">
+                Repertório [Clique aqui]
+              </a>
+              
+              <div class="sugestao-repertorio"  style="display:none;">
+                <div class="linha t7">
+                  <label>Informe aqui as obras que deseja apresentar no programa e os links de seus vídeos tocando essas obras:</label>
+                </div>
+                
+                <!--Sugestoes-->
+                <a class="t7 titulo laranja" >1ª Opção</a>
+                <div  style="display: hidden;">
+                  <div class="linha t5">  
+                    <label>Nome da Obra</label><br/>
+                    <input type="text" name="obra1" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-1" />
+                  </div>
+                               
+                  <div class="linha t5" >
+                    <label>Compositor</label><br/>
+                    <input type="text" name="compositor1" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-1" />
+                  </div>
+                 
+                  <div class="linha t5">
+                    <label>Movimentos</label><br/>
+                    <input type="text" name="movimentos1" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-1" />
+                  </div>
+                  
+                  <div class="linha t2">  
+                    <label>Duração</label><br/>
+                    <input type="text" name="duracao1" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-1" />
+                  </div>
+                  
+                  <div class="linha t5">  
+                    <label>Link</label><br/>
+                    <input type="text" name="link1" id="link1" />
+                  </div>
+                </div>
+                
+                <a class="t7 titulo laranja" >2ª Opção</a>
+                <div style="display: hidden;">
+                  <div class="linha t5">  
+                    <label>Nome da Obra</label><br/>
+                    <input type="text" name="obra2" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-2" />
+                  </div>
+                               
+                  <div class="linha t5" >
+                    <label>Compositor</label><br/>
+                    <input type="text" name="compositor2" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-2" />
+                  </div>
+                 
+                  <div class="linha t5">
+                    <label>Movimentos</label><br/>
+                    <input type="text" name="movimentos2" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-2" />
+                  </div>
+                  
+                  <div class="linha t2">  
+                    <label>Duração</label><br/>
+                    <input type="text" name="duracao2" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-2" />
+                  </div>
+                  
+                  <div class="linha t5">  
+                    <label>Link</label><br/>
+                    <input type="text" name="link2" id="link2" />
+                  </div>
+                </div>
+              </div>
+              <!--Sugestões-->
+              
               <!--Campo Menor de Idade-->
  
               <a href="javascript:;"class="t7 titulo menor">
@@ -323,117 +410,11 @@
                 </div>
                 <!--/Campo CPF-->
                 
-                <!--Campo Naturalidade-->
-                <div class="linha t5 mb30 204">
-                  
-                  <label>Naturalidade</label>
-                  <input type="text" name="naturalidaderesp" id="naturalidaderesp" />
                 
-                </div>
-                <!--/Campo Naturalidade-->
                 
               </div>
               
               <!--/menor Form-->
-              
-              <!--Outras Informaçoes-->
-              <a href="javascript:;"class="t7 titulo outras">
-                Formação Musical [Clique aqui]
-              </a>
-
-              
-              <!--Outras-->
-              <div class="outrasinfo" style="display:none;">
-
-              
-              <!--tempo-->
-              <div class="linha t7">
-                
-                <label>Onde Estuda?</label>
-                <input type="text" name="tempo" id="tempo" />
-                
-              </div>
-              <!--tempo-->
-              
-              <!--como soube-->
-              <div class="linha t7">
-                
-                <label>Como soube do Preludio?</label>
-                <input type="text" name="comosoube" id="comosoube" />
-                
-              </div>
-              <!--/como soube-->
-              
-              
-              </div>
-              <!--Outras-->
-              
-              <!--Sugestoes-->
-              <a href="javascript:;"class="t7 titulo repertorio">
-                Repertório [Clique aqui]
-              </a>
-              
-              <div class="sugestao-repertorio"  style="display:none;">
-              <div class="linha t7">
-                <label>Informe aqui as obras que deseja apresentar no programa e os links de seus vídeos tocando essas obras:</label>
-              </div>
-              
-              <!--Sugestoes-->
-              <a class="t7 titulo laranja" >1ª Opção</a>
-                           
-                <div class="linha t6" >
-                  <label>Compositor</label><br/>
-                  <input type="text" name="compositor1" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-1" />
-                </div>
-               
-                <div class="linha t9">  
-                  <label>Obra</label><br/>
-                  <input type="text" name="obra1" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-1" />
-                </div>
-                
-                <div class="linha t10 m10 w136">
-                  <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos1" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-1" />
-                </div>
-                
-                <div class="linha t2 m10">  
-                  <label>Duração</label><br/>
-                  <input type="text" name="duracao1" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-1" />
-                </div>
-                
-                <div class="linha t5 link">  
-                  <label>Link</label><br/>
-                  <input type="text" name="link1" id="link1" />
-                </div>
-                
-              <a class="t7 titulo laranja" >2ª Opção</a>
-                           
-                <div class="linha t6" >
-                  <label>Compositor</label><br/>
-                  <input type="text" name="compositor2" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-2" />
-                </div>
-               
-                <div class="linha t9">  
-                  <label>Obra</label><br/>
-                  <input type="text" name="obra2" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-2" />
-                </div>
-                
-                <div class="linha t10 m10 w136">
-                  <label>Movimentos</label><br/>
-                  <input type="text" name="movimentos2" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-2" />
-                </div>
-                
-                <div class="linha t2 m10">  
-                  <label>Duração</label><br/>
-                  <input type="text" name="duracao2" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-2" />
-                </div>
-                
-                <div class="linha t5 link">  
-                  <label>Link</label><br/>
-                  <input type="text" name="link2" id="link2" />
-                </div>
-                
-              </div>
               
               <!--Anexar Currículo-->
               <div class="linha t7">
@@ -666,6 +647,9 @@
 $(document).ready(function(){  
   $('a.menor').click(function(){
     $('.menorForm').toggle();
+  });
+  $('a.titulo.laranja').click(function(){
+    $(this).next().toggle();
   });
   $('a.outras').click(function(){
     $('.outrasinfo').toggle();
