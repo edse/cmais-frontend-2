@@ -112,16 +112,19 @@
                 $lastDateShow = "";
                 //echo count($assetsCount) . ">>>>>>>>><br>";
                 foreach($assetsCount as $a){
+                  $showOn = $a->is_active.">>>>>>><br>";
                   $dateShow = $a->AssetContent->getSource();
-                  if($dateShow != $lastDateShow){
-                    $quant++;
-                    if(substr($dateShow, 0, 5) == (string)date("d/m")){
-                      break;
+                  if($showOn == 1){
+                    if($dateShow != $lastDateShow){
+                      $quant++;
+                      if(substr($dateShow, 0, 5) == (string)date("d/m")){
+                        break;
+                      }
                     }
                   }
                   $lastDateShow = $a->AssetContent->getSource();
                 }
-                ?>  
+                ?>   
 		          <!-- INICIO TIMELINE -->
 		          <div class="timeline">
 			            <div id="tvcultura-embed"></div>
