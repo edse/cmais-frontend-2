@@ -18,7 +18,14 @@
 #carrossel-destaque .tit-atividades{font-size:50px;text-shadow:3px 3px 3px #0C859C;  text-transform:uppercase;}
 #carrossel-destaque .tit-pais{font-size:50px;text-shadow:3px 3px 3px #017005;  text-transform:uppercase;}
 #carrossel-destaque .tit-personagens{font-size:50px;text-shadow:3px 3px 3px #5105A3; text-transform:uppercase;}
-#carrossel-destaque .tit-banner1{font-size:50px;text-shadow:3px 3px 3px 5px 5px 5px #A0058D; text-transform:uppercase;}
+
+/*abril style*/
+#carrossel-destaque .par38{font-size:38px;}
+#carrossel-destaque .par-desenho{font-size:40px;text-shadow:3px 3px 3px #D87D1B; text-transform:uppercase;}
+#carrossel-destaque .tit-jogoabril{text-shadow: 3px 3px 3px #3872BD;font-size:50px}
+#carrossel-destaque .tit-banner1{font-size:35px;text-shadow:3px 3px 3px #751EAF; text-transform:uppercase;}
+#carrossel-destaque .tit-desenho{font-size:50px}
+
 
 /*carrossel personagens vila sesamo*/
 #carrossel-p{max-width: 940px;margin: 0 auto; border-radius:8px;}

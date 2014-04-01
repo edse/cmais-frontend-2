@@ -285,13 +285,13 @@
 #barra-site{background-image:url();background-repeat: no-repeat;height: 230px;margin:0 0 180px 42px!important;}
 #barra-site .topo-timeline{width: 970px;min-height: 56px !important;}
 #barra-site img{position: relative;}
-#barra-site .topo-programa {width: 970px;min-height: 100px !important;position: absolute;top: 0;}
+
 .a1964 .menu-interna {float: right;width:670px;background:url(http://cmais.com.br/portal/images/timeline/menu.png) no-repeat !important;height: 60px}
 .a1964 .menu-interna li {background:none;color:#854d01!important;margin:0;color:#854d01}
 .a1964 .menu-interna a{font-size: 12px;color:#854d01;display: block;float: left;margin: 17px 0 0 7px;text-transform: uppercase;font-weight: bolder;}
 .a1964 .menu-interna a:hover{color:#a9664c;background:none;}
 .menu-interna li.ativo a, .menu-interna li:hover a {color:#a9664c!important;}
-.menu-interna li.ativo, .menu-interna li:hover {background:none!important;}
+
 
 
 
@@ -371,7 +371,7 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .breadcrumb .divider { color:#333; font-size:11px;}
 .breadcrumb .active { font-size: 11px; color:#a9664c; }
 .breadcrumb li {display: inline-block;text-shadow: 0 1px 0 #ffffff;}
-.titulos {font-size: 22px;margin-bottom: 10px;text-align: left;font-weight: normal;}
+.titulos {font-size: 16px;margin-bottom: 10px;text-align: left;font-weight: bold;}
 .descricao {margin: 20px 0 50px 0;}
 .span7.esq { margin-left:0; width: 640px; float:left; }
 .span3.dir {margin-left: -11px;width: 310px;float: left;}
