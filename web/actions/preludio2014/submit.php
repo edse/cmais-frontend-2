@@ -50,7 +50,8 @@ function multi_attach_mail($to, $files, $form_data, $file_name, $sendermail) {
   // email fields: to, from, subject, and so on
   $from = "Files attach <" . $sendermail . ">";
   $subject = date("d.M H:i") . " F=" . count($files);
-  $headers = "From: $from";
+  //$headers = "From: $from";
+  $headers = "From: Cadastro Inscrição Preludio 2014";
   $message = date("Y.m.d H:i:s") . "\n" . count($files) . " attachments\n\n";
   foreach($form_data as $k=>$v){
     $message .= "\n".$k.": ".$v;
