@@ -224,6 +224,7 @@
             
             <div id="timeline" class="box-interna grid2">
 			   	   <h2>Linha do Tempo</h2>
+			   	   <p>Fonte: Folha de S.Paulo</p>
 		   	   	 </div>
 		   	   	 <!--TITULO-->
 		   	   	
