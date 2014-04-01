@@ -286,7 +286,7 @@
               <!--Campo Telefone Celular-->
               
               <!--tempo-->
-              <div class="linha t7">
+              <div class="linha t5">
                 
                 <label>Onde Estuda?</label>
                 <input type="text" name="tempo" id="tempo" />
@@ -295,61 +295,13 @@
               <!--tempo-->
               
               <!--como soube-->
-              <div class="linha t7">
+              <div class="linha t5">
                 
                 <label>Como soube do Preludio?</label>
                 <input type="text" name="comosoube" id="comosoube" />
                 
               </div>
               <!--/como soube-->
-              
-              <!--Campo Menor de Idade-->
- 
-              <a href="javascript:;"class="t7 titulo menor">
-                Para candidatos menores de 18 anos favor preencher: [Clique aqui]
-              </a>
-    
-              <!--/Campo Menor de Idade-->
-              
-              <!--Campo menor Form-->
-              <div class="menorForm" style="display:none;">
-              
-                <!--Campo Nome Responsável-->
-                <div class="linha t5">
-                  
-                  <label>Nome (pai, mãe ou responsável)</label>
-                  <input type="text" name="nomeresp" id="nomeresp" />
-                
-                </div>
-                <!--/Campo Nome Responsável-->
-
-                <!--Campo RG-->
-                <div class="linha t9 w204">
-                  
-                  <label>RG</label>
-                  <input type="text" name="rgresp" id="rgresp" class="rg" />
-                
-                </div>
-                <!--/Campo RG-->
-                
-                <!--Campo CPF-->
-                <div class="linha t9 m10 w204">
-                  
-                  <label>CPF</label>
-                  <input type="text" name="cpfresp" id="cpfresp" class="cpf" />
-                  
-                </div>
-                <!--/Campo CPF-->
-                
-                
-                
-              </div>
-              
-              <!--/menor Form-->
-
-              
-              
-
               
               <!--Sugestoes-->
               <a href="javascript:;"class="t7 titulo repertorio">
@@ -419,6 +371,50 @@
                 </div>
               </div>
               <!--Sugestões-->
+              
+              <!--Campo Menor de Idade-->
+ 
+              <a href="javascript:;"class="t7 titulo menor">
+                Para candidatos menores de 18 anos favor preencher: [Clique aqui]
+              </a>
+    
+              <!--/Campo Menor de Idade-->
+              
+              <!--Campo menor Form-->
+              <div class="menorForm" style="display:none;">
+              
+                <!--Campo Nome Responsável-->
+                <div class="linha t5">
+                  
+                  <label>Nome (pai, mãe ou responsável)</label>
+                  <input type="text" name="nomeresp" id="nomeresp" />
+                
+                </div>
+                <!--/Campo Nome Responsável-->
+
+                <!--Campo RG-->
+                <div class="linha t9 w204">
+                  
+                  <label>RG</label>
+                  <input type="text" name="rgresp" id="rgresp" class="rg" />
+                
+                </div>
+                <!--/Campo RG-->
+                
+                <!--Campo CPF-->
+                <div class="linha t9 m10 w204">
+                  
+                  <label>CPF</label>
+                  <input type="text" name="cpfresp" id="cpfresp" class="cpf" />
+                  
+                </div>
+                <!--/Campo CPF-->
+                
+                
+                
+              </div>
+              
+              <!--/menor Form-->
               
               <!--Anexar Currículo-->
               <div class="linha t7">
