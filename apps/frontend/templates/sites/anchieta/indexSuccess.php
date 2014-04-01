@@ -54,7 +54,29 @@
         <!-- box-topo -->
         <div class="box-topo grid3">
 
-          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
+         <?php if(count($siteSections) > 0): ?>
+          <!-- menu interna -->
+          <ul class="menu-interna grid3 menu-gabi">
+            <?php foreach($siteSections as $s): ?>
+              <?php $subsections = $s->subsections(); ?>
+              <?php if(count($subsections) > 0): ?>
+                <li class="m-<?php echo $s->getSlug() ?> span"><a href="#" class="abre-menu" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?><span></span></a>
+                  <div class="submenu-interna toggle-menu" style="display:none; width: auto;">
+                    <ul style="display:block;">
+                    <?php foreach($subsections as $s): ?>
+                      <li><a href="<?php echo $s->retriveUrl()?>"><?php echo $s->getTitle()?></a></li>
+                    <?php endforeach; ?>
+                    </ul>
+                  </div>
+                </li>
+              <?php else: ?>
+                <li class="m-<?php echo $s->getSlug() ?>"><a href="<?php echo $s->retriveUrl()?>" title="<?php echo $s->getTitle() ?>"><?php echo $s->getTitle() ?></a></li>
+                <li class="m-ancora"><a href="#timeline" title="Linha do tempo"</a></li>
+              <?php endif; ?>
+            <?php endforeach; ?>
+          </ul>
+          <!-- /menu interna -->
+          <?php endif; ?>
 
           <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
           <div class="navegacao txt-10">
