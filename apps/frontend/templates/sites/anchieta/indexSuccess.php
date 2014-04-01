@@ -222,13 +222,13 @@
             </div>
             <!-- /DIREITA -->
             
-            <div class="box-interna grid2">
+            <div id="timeline" class="box-interna grid2">
 			   	   <h2>Linha do Tempo</h2>
 		   	   	 </div>
 		   	   	 <!--TITULO-->
 		   	   	
 		          <!-- INICIO TIMELINE -->
-		          <div id="timeline" class="timeline">
+		          <div class="timeline">
 			            <div id="tvcultura-embed"></div>
 			            <script type="text/javascript">
 			              var timeline_config = {
