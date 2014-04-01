@@ -112,7 +112,7 @@
                 $lastDateShow = "";
                 //echo count($assetsCount) . ">>>>>>>>><br>";
                 foreach($assetsCount as $a){
-                  $showOn = $a->is_active.">>>>>>><br>";
+                  $showOn = $a->is_active;
                   $dateShow = $a->AssetContent->getSource();
                   if($showOn == 1){ 
                     if($dateShow != $lastDateShow){
