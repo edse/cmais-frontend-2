@@ -58,7 +58,7 @@
           <!-- menu interna -->
           <ul class="menu-interna grid3 menu-gabi">
 					  <li class="m-videos"><a href="http://cmais.com.br/anchieta/videos" title="Vídeos">Vídeos</a></li>
-					  <li class="m-videos"><a href="#tvculura-embed" title="timeline">Linha do Tempo</a></li>
+					  <li class="m-videos"><a href="#timeline" title="timeline">Linha do Tempo</a></li>
 					</ul>
           <!-- /menu interna -->
           <?php endif; ?>
@@ -228,7 +228,7 @@
 		   	   	 <!--TITULO-->
 		   	   	
 		          <!-- INICIO TIMELINE -->
-		          <div class="timeline">
+		          <div id="timeline" class="timeline">
 			            <div id="tvcultura-embed"></div>
 			            <script type="text/javascript">
 			              var timeline_config = {
