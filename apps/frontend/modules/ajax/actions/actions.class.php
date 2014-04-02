@@ -1271,7 +1271,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->andWhere('a.is_active = ?', 1)
         //->orderBy('a.id desc')
         //->orderBy('rand()')
-        ->orderBy('sa.display_order asc')
+        ->orderBy('sa.display_order desc')
         ->limit($items)
         ->offset($start)
         ->execute();
