@@ -67,7 +67,13 @@
             
             <h3 class="tit-pagina grid3"><?php echo $section->getTitle()?></h3>
             <p><?php echo $section->getDescription()?></p>
-            
+            <script>
+              function getURLParameter(name){
+                return decodeURI((RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]);
+              }
+              
+              console.log(getURLParameter(name))
+            </script>
             <?php if(isset($_GET["msg"]) && $_GET["msg"]=="error"):?>            
               <!--Mensagem Erro-->
               <div class="msgErro">
