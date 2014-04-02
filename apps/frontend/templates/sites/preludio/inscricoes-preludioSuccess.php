@@ -303,12 +303,9 @@
               </div>
               <!--/como soube-->
               
-              <!--Sugestoes-->
-              <a href="javascript:;"class="t7 titulo repertorio" style="margin-top:0!important;">
-                Repertório [Clique aqui]
-              </a>
+
               
-              <div class="sugestao-repertorio"  style="display:none;">
+
                 <div class="linha t7">
                   <label>Informe aqui as obras que deseja apresentar no programa e os links de seus vídeos tocando essas obras:</label>
                 </div>
@@ -368,9 +365,7 @@
                     <label>Link</label><br/>
                     <input type="text" name="link2" id="link2" />
                   </div>
-                </div>
-              </div>
-              <!--Sugestões-->
+
               
               <!--Campo Menor de Idade-->
  
