@@ -1244,6 +1244,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->where('sa.section_id = ?', $sectionId)
         ->andWhere('sa.asset_id = a.id')
         ->andWhere('a.is_active = ?', 1)
+        ->orderBy('sa.display_order desc')
         ->limit(40)
         ->execute();
       
@@ -1269,7 +1270,6 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         ->andWhere('sa.asset_id = a.id')
         ->andWhereNotIn('a.id', $array_not_in)
         ->andWhere('a.is_active = ?', 1)
-        ->orderBy('sa.display_order desc')
         //->orderBy('a.id desc')
         //->orderBy('rand()')
         ->limit($items)
