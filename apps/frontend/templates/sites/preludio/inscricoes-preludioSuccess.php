@@ -643,9 +643,6 @@ $(document).ready(function(){
   $('a.menor').click(function(){
     $('.menorForm').toggle();
   });
-  $('a.titulo.laranja').click(function(){
-    $(this).next().toggle();
-  });
   $('a.outras').click(function(){
     $('.outrasinfo').toggle();
   });
