@@ -72,32 +72,40 @@
                 return decodeURI((RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]);
               }
               
-              console.log(getURLParameter(name))
+              if(getURLParameter(name)=="success"){
+                
+                success = '<!--Mensagem Acerto-->';
+                success += '<div class="msgAcerto">';
+                success += '  <span class="alerta"></span>';
+                success += '  <div class="boxMsg">';
+                success += '    <p class="aviso">Mensagem enviada com sucesso!</p>';
+                success += '     <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>';
+                success += '  </div>';
+                success += '  <hr />';
+                success += '</div>';
+                success += '<!--/Mensagem Acerto-->';
+                
+                $('.contato').append(success);
+                  
+              }else if(getURLParameter(name)=="error"){
+                
+                error = '<!--Mensagem Erro-->';
+                error += '<div class="msgErro">';
+                error += '  <span class="alerta"></span>';
+                error += '  <div class="boxMsg">';
+                error += '    <p class="aviso">Sua mensagem não pode ser enviada.</p>';
+                error += '    <p>Confirme se todos os campos foram preenchidos corretamente e verifique seus dados. Você pode ter esquecido de preencher algum campo ou errado alguma informação.</p>';
+                error += '  </div>';
+                error += ' <hr />';
+                error += '</div>';
+                error += '<!--/Mensagem Erro-->';
+                
+                $('.contato').append(error);
+                
+              }
             </script>
-            <?php if(isset($_GET["msg"]) && $_GET["msg"]=="error"):?>            
-              <!--Mensagem Erro-->
-              <div class="msgErro">
-                <span class="alerta"></span>
-                <div class="boxMsg">
-                  <p class="aviso">Sua mensagem não pode ser enviada.</p>
-                  <p>Confirme se todos os campos foram preenchidos corretamente e verifique seus dados. Você pode ter esquecido de preencher algum campo ou errado alguma informação.</p>
-                </div>
-                <hr />
-              </div>
-              <!--/Mensagem Erro-->
-            <?php elseif(isset($_GET["msg"]) && $_GET["msg"]=="success"):?>
-              <!--Mensagem Acerto-->
-              <div class="msgAcerto">
-                <span class="alerta"></span>
-                <div class="boxMsg">
-                  <p class="aviso">Mensagem enviada com sucesso!</p>
-                  <p>Obrigado por entrar em contato com nosso programa. Em breve retornaremos sua mensagem.</p>
-                </div>
-                <hr />
-              </div>
-              <!--/Mensagem Acerto-->
-            <?php endif; ?>
-<!--form-contato-solista-->
+            
+            <!--form-contato-solista-->
             <form id="form-contato-solista" method="post" action="/actions/preludio2014/submit.php" enctype="multipart/form-data">
               
               <input type="hidden" name="tipo" value="Solista" />
