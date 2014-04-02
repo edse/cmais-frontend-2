@@ -21,7 +21,7 @@ if($_FILES["new_photo"]){
     }
     else{
       if(is_file($_FILES["new_photo"]["tmp_name"])){
-        if(multi_attach_mail("jedoljak@gmail.com", array($_FILES["new_photo"]["tmp_name"], $_FILES["new_photo2"]["tmp_name"]), $_POST, $_FILES["new_photo"]["name"], "nao-responda@tvcultura.com.br")){
+        if(multi_attach_mail("jeffersondoljak@tvcultura.com.br", array($_FILES["new_photo"]["tmp_name"], $_FILES["new_photo2"]["tmp_name"]), $_POST, $_FILES["new_photo"]["name"], "nao-responda@tvcultura.com.br")){
           unlink($_FILES["new_photo"]["tmp_name"]);
           header("Location: http://tvcultura.cmais.com.br/preludio/inscricoes-preludio?msg=success");
           //echo ">>>>OK!";
@@ -51,7 +51,7 @@ function multi_attach_mail($to, $files, $form_data, $file_name, $sendermail) {
   $from = "Files attach <" . $sendermail . ">";
   $subject = date("d.M H:i") . " F=" . count($files);
   //$headers = "From: $from";
-  $headers = "From: Cadastro Inscrição Preludio 2014";
+  $headers = "From: Inscrição Preludio 2014";
   $message = date("Y.m.d H:i:s") . "\n" . count($files) . " attachments\n\n";
   foreach($form_data as $k=>$v){
     $message .= "\n".$k.": ".$v;
