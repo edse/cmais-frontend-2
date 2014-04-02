@@ -340,7 +340,7 @@
                 </div>
                 
                 <a class="t7 titulo laranja" >2ª Opção</a>
-                <div style="display: hidden;">
+
                   <div class="linha t5">  
                     <label>Nome da Obra</label><br/>
                     <input type="text" name="obra2" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-2" />
@@ -366,7 +366,6 @@
                     <input type="text" name="link2" id="link2" />
                   </div>
 
-              
               <!--Campo Menor de Idade-->
  
               <a href="javascript:;"class="t7 titulo menor">
