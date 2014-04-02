@@ -1,23 +1,23 @@
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/programaBlog.css" type="text/css" />
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/anchieta.css" type="text/css">
-<script type="text/javascript">
-$(function(){
-  //hover states on the static widgets
-  $('#dialog_link, ul#icons li').hover(
-    function() { $(this).addClass('ui-state-hover'); }, 
-    function() { $(this).removeClass('ui-state-hover'); }
-  );
-  $('.comentario-fb').show();
-});
-</script> 
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $asset->Site->getSlug() ?>.css" type="text/css" />
+
+<script type="text/javascript" src="http://cmais.com.br/js/jquery-ui-1.8.7/jquery-1.4.4.min.js"></script>
+<link href="http://cmais.com.br/js/audioplayer/jPlayer.Blue.Monday.2.0.0/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://cmais.com.br/js/audioplayer/jplayer_min.js"></script>
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
+	<div class="bg-chamada">
+	  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+	</div>
+	<div class="bg-site"></div>
+
     <!-- CAPA SITE -->
     <div id="capa-site">
 
-      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+      
 
       <!-- BARRA SITE -->
       <div id="barra-site">
@@ -25,14 +25,12 @@ $(function(){
         <div class="topo-programa">
           <?php if(isset($program) && $program->id > 0): ?>
           <h2>
-            <a href="<?php echo $program->retriveUrl() ?>">
-              <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
-            </a>
-          </h2>
-          <?php else: ?>
-          <h2>
-            <a href="<?php echo $site->retriveUrl() ?>">
-              <img src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>" alt="<?php echo $site->getTitle() ?>" title="<?php echo $site->getTitle() ?>" />
+            <a href="<?php echo $program->retriveUrl() ?>" style="text-decoration: none;">
+              <?php if($program->getImageThumb() != ""): ?>
+                <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
+              <?php else: ?>
+                <h3 class="tit-pagina grid1"><?php echo $program->getTitle() ?></h3>
+              <?php endif; ?>
             </a>
           </h2>
           <?php endif; ?>
@@ -40,7 +38,7 @@ $(function(){
           <?php if(isset($program) && $program->id > 0): ?>
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
           <?php endif; ?>
-          
+
           <?php if(isset($program) && $program->id > 0): ?>
             <!-- horario -->
             <div id="horario">
@@ -53,10 +51,10 @@ $(function(){
         <?php if(isset($siteSections) && $site->getType() != "Portal"): ?>
         <!-- box-topo -->
         <div class="box-topo grid3">
-          
+
           <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
 
-          <?php if(isset($section)): ?>
+          <?php if(isset($section->slug)): ?>
             <?php if(!in_array(strtolower($section->getSlug()), array('home','homepage','home-page','index'))): ?>
             <div class="navegacao txt-10">
               <a href="<?php echo $site->retriveUrl() ?>" title="Home">Home</a>
@@ -108,38 +106,41 @@ $(function(){
                 </div>
                 
                 <div class="texto">
-                  <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+                  <?php if($asset->AssetType->getSlug() == "person"): ?>
+                    <?php echo html_entity_decode($asset->AssetPerson->getBio()) ?>
+                  <?php else: ?>
+                    <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+                  <?php endif; ?>
                 </div>
                 
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
                 <?php if(count($relacionados) > 0): ?>
-                  <!-- BOX PADRAO Mais recentes -->
-                  <div class="box-padrao grid1" style="margin-bottom: 20px;">
-                    <div class="topo claro">
-                      <span></span>
-                      <div class="capa-titulo">
-                        <h4>saiba +</h4>
-                        <a href="#" class="rss" title="rss"></a>
-                      </div>
-                    </div>
+                	
+                	
+                  <!-- SAIBA MAIS -->
+                  <div class="box-padrao grid2" style="margin-bottom: 20px;">
+                  	<div id="saibamais">                                                            
+                  	<h4>saiba +</h4>                                                            
                     <ul class="conteudo">
                       <?php foreach($relacionados as $k=>$d): ?>
                         <li style="width: auto;">
                           <a class="titulos" href="<?php echo $d->retriveUrl()?>" style="width: auto;"><?php echo $d->getTitle()?></a>
-                          <!--<?php if($d->retriveImageUrlByImageUsage("image-1") != ""): ?>
+                          <!--
+                          <?php if($d->retriveImageUrlByImageUsage("image-1") != ""): ?>
                             <a href="<?php echo $d->retriveUrl()?>" class="img-90x54" style="width: auto">
                               <img src="<?php echo $d->retriveImageUrlByImageUsage("image-1-b") ?>" alt="<?php echo $d->getTitle() ?>" title="<?php echo $d->getTitle() ?>" style="width: auto" />
                             </a>
                           <?php endif; ?>
-                         -->
-                          <p><?php echo $d->getDescription()?></p>
+                          -->
+                          <!--p><?php echo $d->getDescription()?></p-->
                         </li>
                       <?php endforeach; ?>
                     </ul>
+                   </div>
                   </div>
-                  <!-- BOX PADRAO Mais recentes -->
+                  <!-- SAIBA MAIS -->
                 <?php endif; ?>
-
+                
                 <?php include_partial_from_folder('blocks','global/share-2c', array('site' => $site, 'uri' => $uri, 'asset' => $asset)) ?>
 
               </div>
@@ -157,15 +158,19 @@ $(function(){
               
               <!-- BOX PUBLICIDADE -->
               <div class="box-publicidade grid1">
-                <!-- cmais-assets-300x250 -->
+                <!-- programas-assets-300x250 -->
                 <script type='text/javascript'>
-                GA_googleFillSlot("cmais-assets-300x250");
+                <?php if($site->slug == "classicos"): ?>
+                	GA_googleFillSlot("culturafm-300x250");
+                <?php else: ?>
+                	GA_googleFillSlot("cmais-assets-300x250");
+                <?php endif;?>
                 </script>
               </div>
               <!-- / BOX PUBLICIDADE -->
 
-              <?php //$relacionados = array(); if($asset) $relacionados = $asset->retriveRelatedAssets2(); ?>
-              <?php $relacionados = $relatedAssets; if(count($relacionados) > 0): ?>
+              <?php $relacionados = array(); if($asset) $relacionados = $asset->retriveRelatedAssets2(); ?>
+              <?php if(count($relacionados) > 0): ?>
               <!-- BOX PADRAO Mais recentes -->
               <div class="box-padrao grid1">
                 <div class="topo claro">
@@ -187,7 +192,7 @@ $(function(){
                   <span></span>
                   <div class="capa-titulo">
                     <h4>+ recentes</h4>
-                    <a href="/feed" class="rss" title="rss" style="display: block"></a>
+                    <a href="<?php echo $site->getSlug() ?>/feed" class="rss" title="rss" style="display: block"></a>
                   </div>
                 </div>
                 <?php if(isset($displays["destaque-noticias-recentes"])) include_partial_from_folder('blocks','global/recent-news', array('displays' => $displays["destaque-noticias-recentes"])) ?>
@@ -226,10 +231,31 @@ $(function(){
               <!-- /BOX PADRAO + Visitados -->
               <?php endif; ?>
 
+              <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'url' => $url)) ?>
+
+            </div>
+            <!-- /DIREITA -->
+
             </div>
             <!-- /DIREITA -->
           </div>
           <!-- /CAPA -->
+          
+					<?php if (isset($displays["rodape-interno"])): ?>
+          <!--APOIO-->
+          <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
+          <!--/APOIO-->
+          <?php endif; ?>
+          
+          <!-- BOX PUBLICIDADE 2 -->
+          <div class="box-publicidade pub-grd grid3">
+            <!-- programas-assets-728x90 -->
+            <script type='text/javascript'>
+            GA_googleFillSlot("cmais-assets-728x90");
+            </script>
+          </div>
+          <!-- / BOX PUBLICIDADE 2 -->
+          
         </div>
         <!-- /CONTEUDO PAGINA -->
 
@@ -237,5 +263,4 @@ $(function(){
       <!-- /MIOLO -->
     </div>
     <!-- / CAPA SITE -->
-    
 
