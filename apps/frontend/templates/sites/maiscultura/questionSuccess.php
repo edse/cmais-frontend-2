@@ -96,7 +96,7 @@
             <!--div id="esquerda" class="grid2"-->
             <div>
               <!-- NOTICIA INTERNA -->
-              <div class="box-interna grid2">
+              <div class="box-interna">
                 <h3><?php echo $asset->getTitle() ?></h3>
                 <p><br /><?php echo $asset->getDescription() ?></p>
                 
