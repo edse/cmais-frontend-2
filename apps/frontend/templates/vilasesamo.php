@@ -125,7 +125,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <header id="header-mobile" class="header-mobile header--fixed">  
       
       <!-- Menu Mobile mapa site  -->
-      <a href="#" title="Vila Sésamo" class="logo-mobile">
+      <a href="http://cmais.com.br/vilasesamo" title="Vila Sésamo" class="logo-mobile">
         <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/mobile/logo-mobile.png"  alt="Logo Vila Sésamo">
       </a>
       
@@ -157,7 +157,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/atividades.png">
           Atividades
         </a>
-        <a href="http://cmais.com.br/vilasesamopersonagens" title="Site Vila Sésamo" target="_self">
+        <a href="http://cmais.com.br/vilasesamo/personagens" title="Site Vila Sésamo" target="_self">
           <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens.png">
           Personagens
         </a>
@@ -221,7 +221,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/atividades.png">
           Atividades
         </a>
-        <a href="http://cmais.com.br/vilasesamopersonagens" title="Site Vila Sésamo" target="_self">
+        <a href="http://cmais.com.br/vilasesamo/personagens" title="Site Vila Sésamo" target="_self">
           <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens.png">
           Personagens
         </a>
