@@ -1,0 +1,46 @@
+#menuFloat {    margin-left: 0;  }
+#menu-portal-2 h1 {    margin: 0;  }
+#menu-portal-2 .busca-portal input {    margin: 0 !important;    -moz-transition: none;    box-shadow: none;  }
+#menu-portal-2 ul.abas {    margin: 0 !important;  } 
+#lista-videos {    width: 100%;    overflow: hidden;    margin: 0;  }
+#lista-videos li {    width: 310px;    float: left;    list-style: none;    margin: 0 10px 0 0;  }
+#lista-videos li iframe {    margin-bottom: 5px;  }
+#votar {    width: 100%;    background: #333;    color: #fff;    text-transform: uppercase;    border: none;    margin-top: 20px;    height: 20px;    line-height: 20px;  }
+#menu-portal-2 .busca-portal .ipt-txt {    padding: 0 0 0 30px;    border-radius: 0;    height: 24px;  }
+#resultado-video li {    list-style: none;    margin-left: 0;    position: relative; margin-top:20px; }
+#resultado-video .classificacao {    margin-left: 0;  }
+#resultado-video li span {    position: absolute;    right: 0;    top: 0; font-size:18px; }
+input.form-contato {    float: left;    margin-right: 5px;    margin-left: 1px;    width: 14px;  }
+#resultado-video p {    margin-bottom: 5px;  font-size:20px;  }
+
+#barra-site .redes .curtir {    width: auto;  } 
+#menu-portal-2 .abas li {    float: right;  }
+#resultado-video h2,
+.box-interna h3 { padding:20px 0 0 10px; font-size:25px; line-height: 27px; margin-bottom:0; margin-top:0; }
+.box-interna h3 { padding:10px; }
+.box-interna p { margin-bottom:0 }
+.box-interna .texto img { padding:0; width:195px; overflow:hidden;} 
+/* .box-interna .texto img { padding:0; width:300px;  height:180px; overflow:hidden;} pra 2 itens por linha */
+#lista-videos li { width:195px; position:relative; padding-bottom:20px;}
+/* #lista-videos li { width:300px; position:relative; padding-bottom:20px;} pra 3 itens por linha */
+#lista-videos { margin-left:5px; }
+#lista-videos .form-contato { margin-right:5px; }
+.box-compartilhar { margin-left:-10px; }
+#votar { background:#FFFF05; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; color:#333; font-weight: bold; }
+.rodape-cmais { display: none; }
+.box-interna .texto { padding-bottom:20px; min-height:400px; }
+#lista-videos label.error { position:absolute; bottom:0; color:red; }
+.box-interna .texto p { padding:0; }
+#resultado-video h2 { padding:0; }
+#lista-videos input { margin-left:1px; }
+#lista-videos { *margin-left:0 }
+.box-interna h3 { *width:640px !important; *height:40px !important; *line-height: 40px !important; *padding:0 20px !important;  }
+#lista-videos img { margin-bottom:5px; }
+
+#votar,
+.form-votacao p,
+#lista-videos label { font-size:18px; }
+.progress { margin-bottom:0; }
+
+/* relacionadas */
+.box-padrao.content .conteudo {margin: 0;}
