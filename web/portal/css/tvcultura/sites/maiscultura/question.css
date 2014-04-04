@@ -21,7 +21,7 @@ input.form-contato {    float: left;    margin-right: 5px;    margin-left: 1px; 
 .box-interna p { margin-bottom:0 }
 .box-interna .texto img { padding:0; width:195px; overflow:hidden;} 
 /* .box-interna .texto img { padding:0; width:300px;  height:180px; overflow:hidden;} pra 2 itens por linha */
-#lista-videos li { width:195px; position:relative; padding-bottom:20px;}
+#lista-videos li { width:313px; position:relative; padding-bottom:20px;}
 /* #lista-videos li { width:300px; position:relative; padding-bottom:20px;} pra 3 itens por linha */
 #lista-videos { margin-left:5px; }
 #lista-videos .form-contato { margin-right:5px; }
