@@ -142,11 +142,11 @@
           <div class="mpc_ls_slide_item par" data-x="600" data-y="300" data-delay="1800" data-duration="2700" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on"> 
             <span style="margin-left: -20px">fala das suas</span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="600" data-y="340" data-delay="2000" data-duration="2900" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on">
+          <div class="mpc_ls_slide_item par" data-x="600" data-y="350" data-delay="2000" data-duration="2900" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on">
              <span style="margin-left: -40px;">brincadeiras </span>
           </div>
-          <div class="mpc_ls_slide_item par" data-x="600" data-y="380" data-delay="2000" data-duration="2900" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on">
-             <span style="margin-left: -40px;">favoritas </span>
+          <div class="mpc_ls_slide_item par" data-x="600" data-y="400" data-delay="2000" data-duration="2900" data-easing="easeOutBack" data-effect="slideBottom" data-fade="on">
+             <span style="margin-left: -60px;">favoritas </span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
             <a href="http://cmais.com.br/vilasesamo/videos/vila-sesamo-incluir-brincando-promo-adulta" class="total" title=""></a>
