@@ -134,13 +134,13 @@
                     </ul>
                     <?php endif;?>
 
-                    <div class="votacao">
+                    <!--div class="votacao"-->
                       <input id="votar" type="submit" value="votar" />
                       <div id="enviando-voto" align="center"style="display:none">
                         <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none;" width="16px" height="16px" id="ajax-loader-b">
                         Registrando voto, aguarde um momentinho...
                       </div>
-                    </div>
+                    <!--/div-->
                   </form>
                   <!--/LISTA-Videos-->
                   <!--RESULTADO PARCIAL-->
