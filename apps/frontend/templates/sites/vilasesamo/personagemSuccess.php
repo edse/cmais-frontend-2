@@ -373,7 +373,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     
     function stop(ev){
       //ev.preventDefault();
-      $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow');
+      $('#carrossel-interna-personagem').responsiveCarousel('stopSlideShow'); 
     };
   
   

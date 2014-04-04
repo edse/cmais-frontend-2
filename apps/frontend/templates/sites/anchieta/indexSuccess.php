@@ -126,9 +126,13 @@
 
                 <?php include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-7"])) ?>
                 
+                <?php if(isset($displays["destaque-padrao-6"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-6"])) ?>
+                
                 <?php if(isset($displays["destaque-padrao-1"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-1"])) ?>
             
             	<?php if(isset($displays["destaque-padrao-3"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-3"])) ?>
+            	
+            	 
               </div>
               <!-- /col-esq -->
               
@@ -153,6 +157,8 @@
                 <?php if(isset($displays["destaque-apresentador-2"])) include_partial_from_folder('blocks','global/display-1c-host', array('displays' => $displays["destaque-apresentador-2"])) ?>
 
                 <?php if(isset($displays["destaque-apresentador-3"])) include_partial_from_folder('blocks','global/display-1c-host', array('displays' => $displays["destaque-apresentador-3"])) ?>
+                
+               
                 	
                 <?php include_partial_from_folder('blocks','global/display-1c-poll', array('displays' => $displays["destaque-enquete"])) ?>
 
@@ -166,9 +172,14 @@
 
                 <?php include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-8"])) ?>
                 
+                  <?php if(isset($displays["destaque-padrao-5"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-5"])) ?>
+                
+                
                 <?php if(isset($displays["destaque-padrao-2"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-2"])) ?>
             
             	<?php if(isset($displays["destaque-padrao-4"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-4"])) ?>
+            	
+            
 
               </div>
               <!-- /col-dir -->
