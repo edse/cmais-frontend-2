@@ -5,7 +5,7 @@
 #lista-videos {    width: 100%;    overflow: hidden;    margin: 0;  }
 #lista-videos li {    width: 310px;    float: left;    list-style: none;    margin: 0 10px 0 0;  }
 #lista-videos li iframe {    margin-bottom: 5px;  }
-#votar {    width: 100%;    background: blue!important;    color: #fff!important;    text-transform: uppercase;    border: none; line-height: 20px;  }
+#votar {    width: 33%;    background: blue!important;    color: #fff!important;    text-transform: uppercase;    border: none; line-height: 45px;  }
 #menu-portal-2 .busca-portal .ipt-txt {    padding: 0 0 0 30px;    border-radius: 0;    height: 24px;  }
 #resultado-video li {    list-style: none;    margin-left: 0;    position: relative; margin-top:20px; }
 #resultado-video .classificacao {    margin-left: 0;  }
