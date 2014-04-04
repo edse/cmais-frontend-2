@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css">
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 
-<!--link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/cartaozinho/question.css" type="text/css" /-->
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/cartaozinho/question.css" type="text/css" />
 
 
 <?php use_helper('I18N', 'Date') ?>
