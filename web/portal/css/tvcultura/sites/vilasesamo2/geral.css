@@ -141,6 +141,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 /* topo site */
 .container a.logo-mobile{overflow: hidden;display:none;}
 .icones-sprite-menu{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/icones-topo-site.png) no-repeat top left;}
+.icone-btn-participe{ background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_participe.png) no-repeat center; width: 60px; height: 60px; }
 .icone-btn-atividades{ background-position: 0 0; width: 60px; height: 60px; } 
 .icone-btn-jogos{ background-position: 0 -160px; width: 60px; height: 60px; } 
 .icone-btn-personagens{ background-position: 0 -320px; width: 60px; height: 60px; } 
@@ -503,10 +504,12 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .header-bar li i { position:absolute; left:0; top:0; }
 .header-bar li a span.fundo{width:66px; height:66px; position:absolute; top:-1px; left:-1px;display:block;z-index:-3;display:none;}
 .header-bar li a span.fundo-jogos{background:#0191fb;}
+.header-bar li a span.fundo-participe{background:#84b910;}
 .header-bar li a span.fundo-atividades{background:#7732e5;}
 .header-bar li a span.fundo-videos{background:#f57301;}
 .header-bar li a span.fundo-personagens{background:#c31408;}
 .header-bar li a span.borda{width:5px; height:100%; display: block; background:black; position:absolute; top:0; right:0;z-index:-1; display:none;}
+.header-bar li a span.borda-participe{background: #84b910;border-left:2px solid  #84b910;}
 .header-bar li a span.borda-jogos{background:#02cbff;border-left:2px solid #0191fb;}
 .header-bar li a span.borda-atividades{background:#b16af2;border-left:2px solid #7732e5;}
 .header-bar li a span.borda-videos{background:#f9a41b; border-left:2px solid #f07317;}
