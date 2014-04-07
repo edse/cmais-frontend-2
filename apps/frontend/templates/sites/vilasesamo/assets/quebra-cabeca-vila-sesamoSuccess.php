@@ -117,8 +117,10 @@ object{height:460px!important;}
       </div>
    
       <div class="asset" style="display:none;">
-        <?php echo html_entity_decode($asset->AssetContent->render()) ?>
-        teste2
+        <!--Aqui vai o jogo -->
+        <?//php echo html_entity_decode($asset->AssetContent->render()) ?>
+        
+        <!--Aqui vai o jogo -->
       </div>
       <input class="top" type="hidden" value="false">
       <?php endif; ?>
