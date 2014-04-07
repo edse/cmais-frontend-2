@@ -199,6 +199,7 @@ section { max-width:980px; margin:0 auto; clear:both;}
 .icone-carregar-br-grande{ background-position: -106px -168px; width: 60px; height: 60px; } 
 .icone-carregar-lj-grande{ background-position: -106px -278px; width: 60px; height: 60px; } 
 .icone-carregar-ve-grande{ background-position: -106px -388px; width: 60px; height: 60px; color:green!important;}  
+.icone-participe-pequeno{ background-position: -129px -828px; width: 36px; height: 36px;}  
 
 /* setas */
 .icones-setas{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/icone-setas.png) no-repeat top left; float:left;margin:6px 3px 3px 10px;}
