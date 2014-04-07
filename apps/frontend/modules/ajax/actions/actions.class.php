@@ -1235,7 +1235,7 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
       if($page >= 1)
         $start = ($page * $items)-$items;
       
-      $array_not_in[] = 180586;
+      $array_not_in[] = 180604; 
       //$array_not_in[] = 1; 
       
       $assets_novo = Doctrine_Query::create() 
