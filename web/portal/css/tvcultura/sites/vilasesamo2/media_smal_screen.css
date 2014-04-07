@@ -411,7 +411,7 @@ a{text-decoration:underline!important;}
 	.interna.videos #content h1 .icones-sprite-interna {margin: -5% 0 0 34%!important;}
 	.icone-personagem-grande{margin: 0 0 0 31%!important;} 
 	.icone-historia-grande{ background-position: -112px -662px; margin: 0% 0 0 31%!important; width: 60px; height: 50px; } 
-	.todos-itens #container li.jogos a, .todos-itens #container li.atividades a, .todos-itens #container li.videos a {min-height: 248px;}
+	.todos-itens #container li.jogos a, .todos-itens #container li.atividades a, .todos-itens #container li.videos a {min-height: 248px!important;}
 }
 
 
