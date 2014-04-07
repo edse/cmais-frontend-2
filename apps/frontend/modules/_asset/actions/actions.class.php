@@ -1063,7 +1063,7 @@ class _assetActions extends sfActions
 			    }
           if ($this->site->getSlug() == "vilasesamo" || $this->asset->id == 180586) {// para o shape puzzle
             //if($this->asset->id != 148169) // id do asset somente para teste, retirar assim que puderem!
-            
+              die("1");
               $this->setLayout("vilasesamo");
             $sections = $this->asset->getSections();
             foreach($sections as $s) {
