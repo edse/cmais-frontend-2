@@ -394,13 +394,13 @@ body.personagens { background:#b60401; }
 .todos-itens #container li.jogos{background-color:#32a8ee;border-top: 7px solid #02cbff;border-bottom: 7px solid #02cbff;}
 
 .todos-itens #container li.atividades img{border-bottom-color:#7825e9;border-top:none;}
-.todos-itens #container li.atividades a{border-bottom:#7825e9 2px solid;border-top:#7825e9  2px solid;}
+.todos-itens #container li.atividades a{border-bottom:#7825e9 2px solid;border-top:#7825e9  2px solid;min-height: 348px;}
 
 .todos-itens #container li.videos img{border-top:none;border-bottom:#f77400 2px solid}
-.todos-itens #container li.videos a{border-bottom:#f77400 2px solid;border-top:#f77400  2px solid;}
+.todos-itens #container li.videos a{border-bottom:#f77400 2px solid;border-top:#f77400  2px solid;min-height: 348px;}
 
 .todos-itens #container li.jogos img{border-bottom-color:#008dff;border-top:none;}
-.todos-itens #container li.jogos a{border-bottom:#008dff 2px solid;border-top:#008dff  2px solid;}
+.todos-itens #container li.jogos a{border-bottom:#008dff 2px solid;border-top:#008dff  2px solid;min-height: 348px;}
 
 
 /* cuidadores */
