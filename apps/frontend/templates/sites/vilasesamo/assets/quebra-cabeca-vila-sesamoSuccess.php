@@ -9,9 +9,11 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <meta name="HandheldFriendly" content="true"/>
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
-    <meta name="apple-mobile-web-app-capable" content="true">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-      
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <!--META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"-->
    
     <?php include_title() ?>
@@ -117,7 +119,9 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   </head>
   
   <body>
-    
+    <!--[if lt IE 10]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
     <!--Pular navegação-->
     <a href="#content" aria-label="pular Menu principal e ir direto para o conteudo" class="ac-pular" tabindex="2">pular começo</a>
     
@@ -304,6 +308,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <!-- /header --> 
     
     <!--conteudo Game -->
+    <?php
     /*
    * Pega a campanha (seção filha de "campanhas") e as categorias (seçao filha de "categorias") as quais o asset pertence
    */
@@ -432,11 +437,11 @@ object{height:460px!important;}
       </section>
       <!--/section-->
     
+      <?php include_partial_from_folder('sites/vilasesamo', 'global/form-campanha', array("site" => $site, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
+  
+      <?php include_partial_from_folder('sites/vilasesamo', 'global/brinque-tambem-com', array("site" => $site, "section" => $section, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
       
-      
-      
-      
-      <?php include_partial_from_folder('sites/vilasesamo', 'global/para-os-pais', array("site" => $site, "asset" => $asset, "uri" => $uri)) ?>
+      <?php include_partial_from_folder('sites/vilasesamo', 'global/para-os-pais', array("site" => $site, "asset" => $asset, "categories" => $categories, "uri" => $uri)) ?>
     
     </div>
     <!--/content-->
