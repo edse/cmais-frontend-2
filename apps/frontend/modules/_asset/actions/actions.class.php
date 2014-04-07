@@ -1063,11 +1063,7 @@ class _assetActions extends sfActions
 			    }
           if ($this->site->getSlug() == "vilasesamo") {// para o shape puzzle
             //if($this->asset->id != 148169) // id do asset somente para teste, retirar assim que puderem!
-            if($this->asset->id == 180586){
-              $this->setLayout(false);
-            }else{
-              $this->setLayout("vilasesamo");
-            }
+            
             $this->setLayout("vilasesamo");
             $sections = $this->asset->getSections();
             foreach($sections as $s) {
@@ -1117,11 +1113,7 @@ class _assetActions extends sfActions
           
           if ($this->site->getSlug() == "vilasesamo") {// para o shape puzzle
             //if($this->asset->id != 148169) // id do asset somente para teste, retirar assim que puderem!
-            if($this->asset->id == 180586){
-              $this->setLayout(false);
-            }else{
-              $this->setLayout("vilasesamo");
-            }
+
             $this->setLayout("vilasesamo");
             $sections = $this->asset->getSections();
             foreach($sections as $s) {
