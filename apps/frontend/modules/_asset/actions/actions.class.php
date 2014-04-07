@@ -55,6 +55,9 @@ class _assetActions extends sfActions
         }
         */
       }
+      if(in_array($this->asset->Site->getSlug(), array("vilasesamo"))) {
+        $this->setLayout('vilasesamo');
+      }
       /*
       if(in_array($this->asset->getSlug(), array("cadastro-de-tutor-melhor-gestao-melhor-ensino"))) {
         if (preg_match("/^172\.20\.(\d+)\.(\d+)/", $_SERVER['REMOTE_ADDR']) == 0) {
@@ -1061,11 +1064,9 @@ class _assetActions extends sfActions
 			        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
 			      }
 			    }
-          if($this->asset->id == 180604){
-            $this->setLayout("vilasesamo");
-          }
-          if ($this->site->getSlug() == "vilasesamo") {
+          if ($this->site->getSlug() == "vilasesamo") {// para o shape puzzle
             //if($this->asset->id != 148169) // id do asset somente para teste, retirar assim que puderem!
+            
             $this->setLayout("vilasesamo");
             $sections = $this->asset->getSections();
             foreach($sections as $s) {
@@ -1112,9 +1113,7 @@ class _assetActions extends sfActions
             if($debug) print "<br>3-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultHotsite/'.$this->asset->AssetType->getSlug();
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultHotsite/'.$this->asset->AssetType->getSlug());
           }
-          if($this->asset->id == 180604){
-            $this->setLayout("vilasesamo");
-          }
+          
           if ($this->site->getSlug() == "vilasesamo") {
             //if($this->asset->id != 148169) // id do asset somente para teste, retirar assim que puderem!
 
