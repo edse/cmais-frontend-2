@@ -1061,9 +1061,11 @@ class _assetActions extends sfActions
 			        $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
 			      }
 			    }
-          if ($this->site->getSlug() == "vilasesamo") {// para o shape puzzle
+          if($this->asset->id == 180604){
+            $this->setLayout("vilasesamo");
+          }
+          if ($this->site->getSlug() == "vilasesamo") {
             //if($this->asset->id != 148169) // id do asset somente para teste, retirar assim que puderem!
-            
             $this->setLayout("vilasesamo");
             $sections = $this->asset->getSections();
             foreach($sections as $s) {
@@ -1110,7 +1112,9 @@ class _assetActions extends sfActions
             if($debug) print "<br>3-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultHotsite/'.$this->asset->AssetType->getSlug();
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultHotsite/'.$this->asset->AssetType->getSlug());
           }
-          
+          if($this->asset->id == 180604){
+            $this->setLayout("vilasesamo");
+          }
           if ($this->site->getSlug() == "vilasesamo") {
             //if($this->asset->id != 148169) // id do asset somente para teste, retirar assim que puderem!
 
