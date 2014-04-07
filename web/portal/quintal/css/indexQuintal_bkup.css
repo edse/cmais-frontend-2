@@ -1,0 +1,13 @@
+.rodape .menuRodape {margin-top:0;}
+.conteudoWrapper {height: auto;}
+
+#menu-quintal-principal{position:relative; width:986px; height:1198px; z-index:3000; margin:0 auto;}
+.over{position:absolute;z-index:5000;}
+
+
+#over-osorio{top:80px;left:8px;}
+#over-teobaldo{left: 372px;top: 14px;}
+#over-quelonio{bottom: 51px;    right: 74px;}
+#over-filomena {right:20px; top:0px; }
+#over-doroteia{right: 160px; top: 344px; }
+#over-ludovico{ bottom: 63px; left: 174px;}
