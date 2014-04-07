@@ -428,7 +428,8 @@ object{height:460px!important;}
           </div>
        
           <div class="asset" style="display:none;">
-            <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+            <?php //echo html_entity_decode($asset->AssetContent->render()) ?>
+            teste3
           </div>
           <input class="top" type="hidden" value="false">
           <?php endif; ?>
@@ -747,7 +748,8 @@ object{height:460px!important;}
       {lang: 'pt-BR'}
     </script>
     <?php echo $noscript; ?>
- 
+    
+    
       
        
   </body>
