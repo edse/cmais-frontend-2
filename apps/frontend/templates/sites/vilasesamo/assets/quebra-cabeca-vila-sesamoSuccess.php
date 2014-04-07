@@ -35,8 +35,6 @@ object{height:460px!important;}
 
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
 <?php echo $noscript; ?>
-<script src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
-<?php echo $noscript; ?>
 <script src="http://cmais.com.br/portal/js/hammer.min.js" type="text/javascript"></script>
 <?php echo $noscript; ?>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
@@ -69,8 +67,8 @@ object{height:460px!important;}
     </h1>
     <h1>
       <i class="icones-sprite-interna icone-jogos-grande"></i>
-      <?php echo $section->getTitle() ?>
-      <a class="todos-assets" title="voltar para todas jogos" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" target="_self" >
+      Jogos
+      <a class="todos-assets" title="voltar para todas jogos" href="/<?php echo $site->getSlug()?>/jogos" target="_self" >
         <i class="icones-setas icone-voltar-jogos"></i>
         <p aria-hidden="true" tabindex="-1">todos os jogos</p>
       </a>
@@ -120,6 +118,7 @@ object{height:460px!important;}
    
       <div class="asset" style="display:none;">
         <?php echo html_entity_decode($asset->AssetContent->render()) ?>
+        teste2
       </div>
       <input class="top" type="hidden" value="false">
       <?php endif; ?>
