@@ -55,6 +55,9 @@ class _assetActions extends sfActions
         }
         */
       }
+			 if(in_array($this->asset->Site->getSlug(), array("vilasesamo"))){
+        $this->setLayout('vilasesamo');
+      }
       if(in_array($this->asset->id, array(180604))) {
         $this->setLayout(false);
       }
