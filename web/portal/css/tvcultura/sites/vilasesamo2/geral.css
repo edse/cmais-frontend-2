@@ -817,7 +817,7 @@ footer .relacionados li { *margin-right:3% }
 
 /*Campanha*/
 .campanhasuccess{margin: 0 auto!important;}
-
+.fancybox-title {	visibility: hidden;font-family: 'dinmedium', "Helvetica Neue", Helvetica, Arial, sans-serif!important;font-size:14px	;	position: relative;	text-shadow: none;	z-index: 8050;}
 
 
 
