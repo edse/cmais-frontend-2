@@ -114,7 +114,13 @@ endforeach;
 
 <script type="text/javascript">
 		$(document).ready(function() {
-			$('.fancybox').fancybox();
+			$(".fancybox").fancybox({
+			    helpers : {
+			        title: {
+			            type: 'over'
+			        }
+			    }
+			});
 		});
 
   var colors=["interna jogos","interna atividades","interna videos"];
