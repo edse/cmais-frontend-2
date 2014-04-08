@@ -116,10 +116,10 @@ endforeach;
 <script type="text/javascript">
 		$(document).ready(function() {
 			$(".fancybox").fancybox({
-			    helpers : {
-			        title: {
-			            type: 'over'
-			        }
+		    helpers : {
+		        title: {
+		            type: 'over'
+		        }
 			    }
 			});
 		});
