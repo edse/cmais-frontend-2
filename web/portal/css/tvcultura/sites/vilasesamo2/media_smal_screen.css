@@ -246,7 +246,7 @@ a{text-decoration:underline!important;}
 .interna.jogos #content .icone-jogos-grande { background-position: 0 -947px; width: 40px; height: 45px}
 .interna.atividades #content .icone-atividades-grande { background-position: 0 -371px; width: 34px; height: 55px}
 .interna.videos #content .icone-videos-grande { background-position: 0 -1732px; width: 40px; height: 50px}
-.interna #content .icone-participe-grande { background-position: -135px -829px;width: 36px;height: 36px;}
+.interna #content .icone-participe-grande {background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/icones-interna.png) no-repeat top left; float:left;background-position: -135px -829px;width: 36px;height: 36px;}
 
 .interna.jogos #page_nav{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;margin-bottom: -20%;}
 .interna.videos #page_nav{font-size: 1em!important;background-image:none!important;display: block;margin-bottom: -20px;}
