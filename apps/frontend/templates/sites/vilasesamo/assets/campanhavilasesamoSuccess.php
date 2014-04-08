@@ -92,7 +92,7 @@ endforeach;
 		  <?php if(count($displays_enviados['enviados']) > 0): ?>
 		  		<?php foreach($displays_enviados['enviados'] as $ai): ?>
 			    <li class="span4 element" style="position: absolute; left: 0px; top: 0px; opacity: 1; -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);">
-			    	<a class="fancybox" href="<?php echo $ai->Asset->retriveImageUrlByImageUsage('original'); ?>" title="<?php echo $ai->Asset->getDescription() ?>" aria-label="<?php echo $ai->Asset->AssetImage->getHeadline() ?>">
+			    	<a class="fancybox" href="<?php echo $ai->Asset->retriveImageUrlByImageUsage('original'); ?>" title="<?php echo $ai->Asset->getTitle()." - ". $ai->Asset->getDescription() ?>" aria-label="<?php echo $ai->Asset->AssetImage->getHeadline() ?>">
 			    		<div class="container-image"> 
 			    			<img src="<?php echo $ai->Asset->retriveImageUrlByImageUsage('image-13'); ?>" alt="<?php echo $ai->getTitle(); ?>">
 			    		</div>
