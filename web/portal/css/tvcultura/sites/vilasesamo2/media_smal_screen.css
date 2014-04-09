@@ -230,21 +230,23 @@ a{text-decoration:underline!important;}
 .interna.atividades #content{margin:0px 5%;}
 
 .interna.jogos #content h1 .icones-sprite-interna,
-.interna.videos #content h1 .icones-sprite-interna {margin: -8% 0 0 35%!important;}
+.interna.videos #content h1 .icones-sprite-interna {margin: -8% 0 0 35%}
 
-.interna.atividades #content h1 .icones-sprite-interna{margin:-8% 0 0 28%!important;}
+.interna.atividades #content h1 .icones-sprite-interna{margin:-8% 0 0 28%}
 
 .interna.jogos #content h1,
 .interna.atividades #content h1,
 .interna.videos #content h1 {font-size: 1.2em;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height:5.4em;line-height:1.4em!important;}
+.campanhasuccess #content h1{height:2em!important;line-height:1.4em!important;}
 
 .interna.jogos #content .span12 h1,
 .interna.atividades #content .span12 h1,
 .interna.videos #content .span12 h1{ font-size: 1.2em;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height:1.4em;line-height:1.4em!important;}
 
-.interna.jogos #content .icone-jogos-grande { background-position: 0 -947px; width: 40px; height: 45px}
-.interna.atividades #content .icone-atividades-grande { background-position: 0 -371px; width: 34px; height: 55px}
-.interna.videos #content .icone-videos-grande { background-position: 0 -1732px; width: 40px; height: 50px}
+.interna.jogos #content .icone-jogos-grande { background-position: 0 -947px; width: 40px; height: 45px;margin: -8% 0 0 35%!important;}
+.interna.atividades #content .icone-atividades-grande { background-position: 0 -371px; width: 34px; height: 55px;margin: -8% 0 0 28%!important;}
+.interna.videos #content .icone-videos-grande { background-position: 0 -1732px; width: 40px; height: 50px;margin: -8% 0 0 35%!important;}
+.campanhasuccess #content .icone-participe-grande {background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/sprites/icones-interna.png) no-repeat top left; float:left;background-position: -135px -829px;width: 36px;height: 36px;margin: -3% 0 0 30%!important;}
 
 .interna.jogos #page_nav{font-size: 1em!important;background-image:none!important;background-color: #0172f9;display: block;margin-bottom: -20%;}
 .interna.videos #page_nav{font-size: 1em!important;background-image:none!important;display: block;margin-bottom: -20px;}
@@ -403,12 +405,13 @@ a{text-decoration:underline!important;}
 }
 
 @media only screen and (max-width: 500px) and (min-width: 321px){
-	.interna.jogos #content h1 .icones-sprite-interna {margin: -5% 0 0 36%!important;}
+	.interna.jogos #content h1 .icone-jogos-grande {margin: -5% 0 0 36%!important;}
+	.interna.videos #content h1 .icone-videos-grande {margin: -5% 0 0 36%!important;}
+	.interna.atividades #content h1 .icone-atividades-grande{margin: -5% 0 0 32%!important;}
+	.campanhasuccess #content .icone-participe-grande {margin: -2% 0 0 36%!important;}
 	.interna.jogos #content .span12 h1, .interna.atividades #content .span12 h1, .interna.videos #content .span12 h1{line-height: 1em!important;}
-	.interna.atividades #content h1 .icones-sprite-interna{margin: -5% 0 0 32%!important;}
 	.icone-acessibilidade{background-position: -101px -544px;}
 	.cuidadores .icone-cuidadores-grande {background-position: 0 -563px;margin: -2% 0 0 23%!important;width: 9%;}
-	.interna.videos #content h1 .icones-sprite-interna {margin: -5% 0 0 34%!important;}
 	.icone-personagem-grande{margin: 0 0 0 31%!important;} 
 	.icone-historia-grande{ background-position: -112px -662px; margin: 0% 0 0 31%!important; width: 60px; height: 50px; } 
 	.todos-itens #container li.jogos a, .todos-itens #container li.atividades a, .todos-itens #container li.videos a {min-height: 248px!important;}

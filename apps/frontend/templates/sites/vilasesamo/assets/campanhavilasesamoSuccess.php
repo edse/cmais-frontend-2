@@ -34,6 +34,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 <!-- Add fancyBox main JS and CSS files -->
 	<script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox2.1.5/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox2.1.5/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 	<link rel="stylesheet" type="text/css" href="http://cmais.com.br/portal/js/fancybox2.1.5/jquery.fancybox.css?v=2.1.5" media="screen" />
 
 
@@ -91,7 +92,7 @@ endforeach;
 		  <?php if(count($displays_enviados['enviados']) > 0): ?>
 		  		<?php foreach($displays_enviados['enviados'] as $ai): ?>
 			    <li class="span4 element" style="position: absolute; left: 0px; top: 0px; opacity: 1; -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);">
-			    	<a class="fancybox" href="<?php echo $ai->Asset->retriveImageUrlByImageUsage('original'); ?>" title="<?php echo $ai->Asset->getDescription() ?>" aria-label="<?php echo $ai->Asset->AssetImage->getHeadline() ?>">
+			    	<a class="fancybox" href="<?php echo $ai->Asset->retriveImageUrlByImageUsage('original'); ?>" title="<?php echo $ai->Asset->getTitle()." - ". $ai->Asset->getDescription() ?>" aria-label="<?php echo $ai->Asset->AssetImage->getHeadline() ?>">
 			    		<div class="container-image"> 
 			    			<img src="<?php echo $ai->Asset->retriveImageUrlByImageUsage('image-13'); ?>" alt="<?php echo $ai->getTitle(); ?>">
 			    		</div>
@@ -114,7 +115,13 @@ endforeach;
 
 <script type="text/javascript">
 		$(document).ready(function() {
-			$('.fancybox').fancybox();
+			$(".fancybox").fancybox({
+		    helpers : {
+		        title: {
+		            type: 'over'
+		        }
+			    }
+			});
 		});
 
   var colors=["interna jogos","interna atividades","interna videos"];
