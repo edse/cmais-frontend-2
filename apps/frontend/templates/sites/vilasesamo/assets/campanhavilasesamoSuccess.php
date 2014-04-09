@@ -87,7 +87,7 @@ foreach($displays_enviados['enviados'] as $ai):
 endforeach;
 ?>
 <section class="todos-itens ">
-		<ul id="container" class="row-fluid" style="position: relative; overflow: hidden; height: 764px;">
+		<ul id="container" class="row-fluid">
 		<?php if(isset($displays_enviados['enviados'])): ?>
 		  <?php if(count($displays_enviados['enviados']) > 0): ?>
 		  		<?php foreach($displays_enviados['enviados'] as $ai): ?>
@@ -124,13 +124,13 @@ endforeach;
 			});
 		});
 
-  var colors=["interna jogos","interna atividades","interna videos"];
+ /* var colors=["interna jogos","interna atividades","interna videos"];
   var quant = colors.length;
   var which = Math.round(Math.random()*quant);
   if(which > 3){
-    which = 3;
-  }
+    which = 3;*/
+  
 
-  $("body").addClass(colors[which]).addClass("campanhasuccess");
-  $("#container li").addClass(colors[which]);
+  $("body").addClass("interna campanhasuccess");
+  $(".todos-itens li").addClass("campanhasuccess");
 </script>
