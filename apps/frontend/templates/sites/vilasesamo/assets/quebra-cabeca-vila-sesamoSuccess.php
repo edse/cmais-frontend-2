@@ -430,7 +430,6 @@ object{height:460px!important;}
           <div class="asset" style="display:none;">
             <?php //echo html_entity_decode($asset->AssetContent->render()) ?>
             <!--GAME-->
-            
             <!--GAME-->
             teste3
           </div>
