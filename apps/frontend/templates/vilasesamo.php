@@ -74,7 +74,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <meta property="fb:admins" content="100000889563712"/>
     <meta property="fb:app_id" content="124792594261614"/>
     
-    <!-- Fav and touch icons -->
+    <!-- Fav and touch icons >
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://cmais.com.br/portal/images/icon/cmais-favico_144.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://cmais.com.br/portal/images/icon/cmais-favico_114.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png">
@@ -82,6 +82,15 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
     <link rel="apple-touch-icon" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png" />
     <link rel="image_src" href="http://cmais.com.br/portal/images/icon/cmais-favico_72.png" />
     <link rel="SHORTCUT ICON" href="http://cmais.com.br/portal/images/icon/favicon.ico" type="image/x-icon">
+    -->
+    
+    <link rel="shortcut icon" href="http://kms-a.akamaihd.net/5.0.108/public/build0/theme/sesame/favicon.png" type="image/x-icon"><link rel="icon" type="image/x-icon" href="http://kms-a.akamaihd.net/5.0.108/public/build0/theme/sesame/favicon.png"
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://kms-a.akamaihd.net/5.0.108/public/build0/theme/sesame/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://kms-a.akamaihd.net/5.0.108/public/build0/theme/sesame/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://kms-a.akamaihd.net/5.0.108/public/build0/theme/sesame/favicon.png">
+    
+    <link rel="apple-touch-icon" href="http://kms-a.akamaihd.net/5.0.108/public/build0/theme/sesame/favicon.png" />
+    <link rel="image_src" href="http://kms-a.akamaihd.net/5.0.108/public/build0/theme/sesame/favicon.png" />
     
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
