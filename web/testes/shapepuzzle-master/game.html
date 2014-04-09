@@ -1,0 +1,171 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  
+  <meta http-equiv="expires" content="0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>HTML5 Shape Puzzle - learning the new HTML5 technologies</title>
+  <meta name="title" content="HTML5 Shape Puzzle - learning the new HTML5 technologies" />
+  <meta name="description" content="This is a learning tool for the new HTML5 technologies" />
+  <meta name="keywords" content="html, css, html5, css3, canvas, animation, requestanimationframe, fullscreen, fullscreen api, cache, application cache, application cache api, appcache, audio, audio api, video, video api, modernizr" />
+  <meta name="author" content="Emerson Estrella">
+  <link type="text/plain" rel="author" href="humans.txt" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    .sidebar-nav {
+      padding: 9px 0;
+    }
+  </style>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/libs/modernizr.custom.01885.js?asdf=123"></script>
+</head>
+<body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+    <a href="https://github.com/edse/shapepuzzle" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0; margin-top: 40px;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+    <div class="navbar navbar-fixed-top">
+      
+      <div class="navbar-inner">
+        <div class="container">
+          
+          
+<div id="ad">
+<script type="text/javascript">
+google_ad_client = "ca-pub-6794644097825747";
+/* New Leader */
+google_ad_slot = "5326073161";
+google_ad_width = 728;
+google_ad_height = 90;
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+
+          
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="./">HTML5 Shape Puzzle</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li id="home" class="active"><a href="./"><i class="icon-home icon-white"></i> Home</a></li>
+              <li id="play"><a href="javascript: start();"><i class="icon-play icon-white"></i> Play</a></li>
+              <li id="pause" class="control"><a href="javascript: pause();"><i class="icon-pause icon-white"></i> Pause</a></li>
+              <li id="restart" class="control"><a href="javascript: restart();"><i class="icon-repeat icon-white"></i> Restart</a></li>
+              <li id="fullscreen" class="control"><a href="javascript: window.m.fullscreen();"><i class="icon-resize-full icon-white"></i> Fullscreen</a></li>
+              <li id="exitfullscreen" class="control"><a href="javascript: window.m.exitfullscreen();"><i class="icon-resize-small icon-white"></i> Exit Fullscreen</a></li>
+              <li id="bgm" class="control"><a href="javascript: window.m.startBGM();"><i class="icon-volume-up icon-white"></i> BGM On</a></li>
+              <li id="bgmoff" class="control"><a href="javascript: window.m.stopBGM();"><i class="icon-volume-off icon-white"></i> BGM Off</a></li>
+              <li id="sfx" class="control"><a href="javascript: window.m.startSFX();"><i class="icon-volume-up icon-white"></i> SFX On</a></li>
+              <li id="sfxoff" class="control"><a href="javascript: window.m.stopSFX();"><i class="icon-volume-off icon-white"></i> SFX Off</a></li>
+              <li id="autosnap" class="control"><a href="javascript: window.m.autoSnap();"><i class="icon-remove icon-white"></i> Auto-Snap On</a></li>
+              <li id="autosnapoff" class="control"><a href="javascript: window.m.autoSnapOff();"><i class="icon-ok icon-white"></i> Auto-Snap Off</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+  <div id="modal-success" class="alert" style="display:none; background-color: white; border-radius: 15px; position:absolute; top:45px; right:5px; z-index: 12; opacity: 0.97">
+    <button class="close" onclick="$('#modal-success').fadeOut();">×</button>
+    <h4>Yes, you did it!</h4>
+    <div class="span2" style="padding-top: 10px; margin:0;">
+      <p><span id="stage" class="label label-success">Stage 1 completed!</span></p>
+      <p><span id="pieces" class="label label-warning">4 pieces in 30s</span></p>
+      <hr />
+      <div class="btn-toolbar">
+        <div class="btn-group">
+          <a href="#" class="btn btn-small btn-primary" id="btn_voice">Voice</a>
+          <a href="#" class="btn btn-small btn-primary" id="btn_sound">Sound</a>
+          <a href="#" class="btn btn-small btn-danger" id="next">Next</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- Game canvas -->
+    <div id="game">
+      <canvas id="canvas" style="display:none"></canvas>
+      <canvas id="canvas_bg" style="display:none"></canvas>
+    </div>
+    <!-- DEBUG -->
+    <div id="debug" style="display:none">
+      <div>
+        pieces: <input type="text" name="p" id="p" />
+        pieces placed: <input type="text" name="pp" id="pp" />
+        lines: <input type="text" name="l" id="l" />
+        Pieces width: <input type="text" name="pw" id="pw" />
+        Pieces height: <input type="text" name="ph" id="ph" />
+      </div>
+      <div>
+        moving: <input type="text" name="moving" id="moving" />
+        over: <input type="text" name="over" id="over" />
+        selected: <input type="text" name="selected" id="selected" />
+      </div>
+      <div>
+        x: <input type="text" name="mx" id="mx" />
+        y: <input type="text" name="my" id="my" />
+      </div>
+      <div>
+        p1 x: <input type="text" name="px" id="px" />
+        p1 y: <input type="text" name="py" id="py" />
+      </div>
+      <div>
+        h1 x: <input type="text" name="hx" id="hx" />
+        h1 y: <input type="text" name="hy" id="hy" />
+      </div>
+      <div>
+        h2 x: <input type="text" name="hx2" id="hx2" />
+        h2 y: <input type="text" name="hy2" id="hy2" />
+      </div>
+    </div>
+    <!-- /DEBUG -->
+
+
+<script type="text/javascript">
+  var _gaq=[['_setAccount','UA-31138932-1'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script src="js/libs/jquery-1.7.2.min.js"></script>
+<script src="js/libs/bootstrap/bootstrap.min.js"></script>
+
+<!-- 
+<script src="js/script.js"></script>
+<script>
+  var _gaq=[['_setAccount','UA-31138932-1'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+ -->
+ 
+<!-- Game scripts -->
+<script src="./js/mouse.js"></script>
+<script src="./js/point2D.js"></script>
+<script src="./js/piece.js"></script>
+<script src="./js/holder.js"></script>
+<script src="./js/puzzle.js"></script>
+<script src="./js/game.js"></script>
+<script src="./js/init.js"></script>
+
+
+</body>
+</html>
