@@ -821,12 +821,12 @@ footer .relacionados li { *margin-right:3% }
 
 
 /*Pagina devolutiva Campanha*/
-.campanhasuccess{background:#84b910}
-.campanhasuccess	#content .filtro{background:#9acf36;border-color:#b5e853}
+.campanhasuccess{background:#73a303}
+.campanhasuccess	#content .filtro{background:#8dc11e;border-color:#b5e853}
 .campanhasuccess .filtro h1,
-.campanhasuccess .scroll { border-color:#b5e853;background:#9acf36 }
-.campanhasuccess #content section.form { background:#9acf36 }
-.campanhasuccess .todos-itens li, .scroll, .filtro{ border-top:7px solid #b5e853;background:#9acf36;border-bottom:7px solid #b5e853 }
+.campanhasuccess .scroll { border-color:#b5e853;background:#8dc11e }
+.campanhasuccess #content section.form { background:#8dc11e }
+.campanhasuccess .todos-itens li, .scroll, .filtro{ border-top:7px solid #b5e853;background:#8dc11e;border-bottom:7px solid #b5e853 }
 .campanhasuccess .todos-itens li img { border-bottom:2px solid #b5e853; border-top:2px solid #b5e853; width:300px; /*height:300px;*/ }
 .campanhasuccess .todos-itens #container li a{border-bottom:#84b910 2px solid;border-top:#84b910 2px solid;min-height: 348px;}
 
