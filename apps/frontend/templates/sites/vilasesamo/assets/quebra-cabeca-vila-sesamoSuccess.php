@@ -36,6 +36,8 @@
 
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
 <?php echo $noscript; ?>
+<script src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
+<?php echo $noscript; ?>
 <script src="http://cmais.com.br/portal/js/hammer.min.js" type="text/javascript"></script>
 <?php echo $noscript; ?>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
