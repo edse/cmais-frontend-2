@@ -139,7 +139,7 @@
     
     </div>
     <!--/content-->
-   <?php echo $noscript ?>  
+     
     
     <script>
     setInterval(function(){
@@ -171,7 +171,7 @@
       
     }
     </script>
-    <?php echo $noscript; ?>
+    
     <!--conteudo Game -->
     
        
