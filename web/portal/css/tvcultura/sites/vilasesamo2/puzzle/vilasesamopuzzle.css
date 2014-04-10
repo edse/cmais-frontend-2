@@ -23,7 +23,7 @@
 .fase{color:#2F5BAA;text-transform: uppercase;font-weight: bolder;font-size: 20px;float:left}
 .logo{	width:210px;	height: 175px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/logo.png) no-repeat;float:right}
 #modal-success{background:#0172f9;z-index:99999999999999999;width: 100%;}
-
+.modal{position: fixed; top: 0; left: 0;border: none;border-radius: 0;margin:0;}
 /*background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/final.png) no-repeat; background-size:90%;*/
 
 @media screen and (max-width: 500px) {
