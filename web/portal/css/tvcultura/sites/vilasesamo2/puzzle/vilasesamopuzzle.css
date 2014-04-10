@@ -1,4 +1,4 @@
-#canvas{position: static; top:0; left:0; z-index:9;width:100%; height:100%;}
+#canvas{position:fixed; top:0; left:0; z-index:999;width:100%; height:100%;}
 .modal-dialog {width: 70%;margin: 30px auto;overflow: hidden;}
 .modal-content{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/pattern_bg.jpg);border-radius: 40px;border: 0px;height:100%;max-height:999999;box-shadow:none}
 
