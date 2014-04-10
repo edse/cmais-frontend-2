@@ -1,4 +1,4 @@
-  
+  <?php  $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página</noscript>"; ?>
     <!--conteudo Game -->
     <?php
     /*
