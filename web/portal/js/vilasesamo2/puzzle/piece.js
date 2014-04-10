@@ -102,11 +102,11 @@ Piece.prototype.draw = function() {
         if(!iOS){
           //if(game.drip.currentTime != 0)
             //game.drip.currentTime = 0;
-          game.drip.src = "http://cmais.com.br/testes/shape3/audio/drip.mp3";
+          game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/drip.mp3";
           game.drip.play();
           //game.drip.play();
         }else{
-          game.drip.src = "http://cmais.com.br/testes/shape3/audio/drip.mp3";
+          game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/drip.mp3";
           game.drip.play();
         }
         //alert('drip')
