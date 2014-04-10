@@ -25,7 +25,7 @@ function Game(canvas) {
   //this.canvas.width = Math.round(window.innerWidth);
   this.canvas.height = 100%;
   //this.canvas.height = Math.round(window.innerHeight);
-  console.log("canvas: "+this.canvas.width+", "+this.canvas.height)
+  console.log("canvas: "+this.canvas.width+", "+this.canvas.height);
   this.original_width = this.canvas.width;
   this.original_height = this.canvas.height;
 
