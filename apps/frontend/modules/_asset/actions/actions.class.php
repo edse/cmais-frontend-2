@@ -58,9 +58,7 @@ class _assetActions extends sfActions
 			 if(in_array($this->asset->Site->getSlug(), array("vilasesamo"))){
         $this->setLayout('vilasesamo');
       }
-      if(in_array($this->asset->id, array(180604))) {
-        $this->setLayout(false);
-      }
+
       /*
       if(in_array($this->asset->getSlug(), array("cadastro-de-tutor-melhor-gestao-melhor-ensino"))) {
         if (preg_match("/^172\.20\.(\d+)\.(\d+)/", $_SERVER['REMOTE_ADDR']) == 0) {
