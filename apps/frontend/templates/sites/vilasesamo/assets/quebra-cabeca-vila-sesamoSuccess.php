@@ -138,7 +138,7 @@
               </div>
             </div>
             
-            <!--ul class="nav nav-pills abs">
+            <ul class="nav nav-pills abs">
               <li id="home">
                 <button id="btn-home" type="button" class="btn btn-xs btn-default"> <span class="glyphicon glyphicon-home"></span> Home</button>
               </li>
@@ -172,7 +172,7 @@
               <li id="autosnapoff" class="control">
                 <button id="btn-autosnap-off" type="button" class="btn btn-xs btn-default"> <span class="glyphicon glyphicon-ok"></span> Auto-Snap Off</button>
               </li>
-            </ul-->
+            </ul>
 
             <!-- Game modal -->
             <div id="modal-success" class="modal show" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
