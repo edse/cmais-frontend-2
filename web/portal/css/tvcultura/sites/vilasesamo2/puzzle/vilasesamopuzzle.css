@@ -8,7 +8,7 @@
     background-size: 100%; 
     margin: 0 auto;;
 }
-.btn-play-sesame-street{	width: 175px;	height: 175px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/entry/play_game.png) no-repeat;}
+.btn-play-sesame-street{	width: 170px;	height: 170px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/entry/play_game.png) no-repeat;box-shadow: none;transition:none;}
 .btn-play-sesame-street:hover{background-position: 0 -171px;background-color: transparent;}
 
 
