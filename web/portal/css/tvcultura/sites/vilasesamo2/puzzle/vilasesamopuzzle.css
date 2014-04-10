@@ -1,3 +1,9 @@
+@media screen and (max-width: 500px) {
+   .back-entry-sesame-street {
+        height:300px;
+    }
+}  
+
 #canvas{position:fixed; top:0; left:0; z-index:9999999;}
 .container {max-width:100%;}
 .back-entry-sesame-street{background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/entry/entry_puzzle.jpg") no-repeat;width: 95%; height:675px;position: relative;background-size: 100%;margin: 0 auto;}
@@ -24,8 +30,3 @@
 
 /*background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/final.png) no-repeat; background-size:90%;*/
 
-@media screen and (max-width: 500px) {
-   .back-entry-sesame-street {
-        height:300px;
-    }
-}  
