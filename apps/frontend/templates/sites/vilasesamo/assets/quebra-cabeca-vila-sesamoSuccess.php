@@ -36,8 +36,6 @@
 
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
 <?php echo $noscript; ?>
-<script src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
-<?php echo $noscript; ?>
 <script src="http://cmais.com.br/portal/js/hammer.min.js" type="text/javascript"></script>
 <?php echo $noscript; ?>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/responsive-carousel/script.js"></script>
@@ -47,7 +45,7 @@
 <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
 <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
 <?php echo $noscript; ?>
-<script src="scripts/modernizr.custom.01885.js"></script>
+<script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/modernizr.custom.01885.js"></script>
 <?php echo $noscript; ?>
 <script>
   $("body").addClass("interna jogos");
