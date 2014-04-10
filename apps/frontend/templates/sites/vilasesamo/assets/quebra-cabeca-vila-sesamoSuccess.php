@@ -31,7 +31,7 @@
 
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
-<!--link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/puzzle/main.css"-->
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/puzzle/main.css">
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/puzzle/vilasesamopuzzle.css">
 
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
