@@ -190,8 +190,8 @@
                   </div>
                   <div class="modal-footer">
                       <div class="btn-group">
-                      <button type="button" class="botoes btn-pxfase" id="next"></button>
-                      <button type="button" class="botoes" id=""> <p><span id="stage" class="fase">Fase 1 completa!</span></p></button>
+	                      <button type="button" class="botoes btn-pxfase" id="next"></button>
+	                      <button type="button" class="botoes btn-restart" id="restart"> </button>
                       
                     </div>
                   </div>
