@@ -124,8 +124,8 @@ Piece.prototype.draw = function() {
     if(this.position.x > this.game.scale){
       this.position.x = window.innerWidth;
     }
-    if(this.position.y+this.img.height/2 > window.innerHeight - this.img.height){ 
-      this.position.y = window.innerHeight - this.img.height;
+    if(this.position.y > window.innerHeight - this.img.height){ 
+      this.position.y = window.innerHeight;
     }
     this.game.context.drawImage(this.img, this.position.x, this.position.y);
     
