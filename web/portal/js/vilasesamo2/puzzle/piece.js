@@ -116,10 +116,10 @@ Piece.prototype.draw = function() {
     //draw
     this.game.context.beginPath();
     if(this.position.x<0){
-      console.log("<0x");
+      this.position.x = 0;
     }
     if(this.position.y<0){
-      console.log("<0y");
+      this.position.y = 0;
     }
     //if(this.position.x+this.img.width > window.innerWidth){
       console.log("imagem:"+this.img.width);
