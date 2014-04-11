@@ -43,7 +43,7 @@ Mouse.prototype.isOverBall = function(ball) {
     ((this.y >= (ball.y - ball.radius)) && (this.y <= (ball.y + ball.radius)))){
       r = true;
       if(this.game.debug==true){
-        console.log('over '+this.x+' '+this.y);
+        //console.log('over '+this.x+' '+this.y);
       }
     }
   }
@@ -58,7 +58,7 @@ Mouse.prototype.isOverBall = function(ball) {
  *****/
 Mouse.prototype.isOverPiece = function(piece) {
   if(this.game.debug==true)
-    console.log('over '+piece.id)
+    //console.log('over '+piece.id)
   var poly = new Array();
   poly[0]= new Point2D(piece.position.x, piece.position.y);
   poly[1]= new Point2D(piece.position.x+piece.img.width, piece.position.y);
@@ -119,7 +119,7 @@ Mouse.prototype.onPointerMove = function(e) {
   this.event = e;
   
   if(this.game.debug==true){
-    console.log('move: '+this.x+', '+this.y);
+    //console.log('move: '+this.x+', '+this.y);
   }
 
 }
@@ -150,7 +150,7 @@ Mouse.prototype.onPointerDown = function(e) {
   //test
   var over = false;
   if(this.game.debug==true)
-    console.log(this.game.puzzle.pieces.length);
+    //console.log(this.game.puzzle.pieces.length);
 
   for(var i = 0; i < this.game.puzzle.pieces.length; i++){
     piece = this.game.puzzle.pieces[i];
@@ -165,7 +165,7 @@ Mouse.prototype.onPointerDown = function(e) {
   }
 
   if(this.game.debug==true){
-    console.log('down ('+this.game.over.id+') '+this.x+', '+this.y);
+    //console.log('down ('+this.game.over.id+') '+this.x+', '+this.y);
   }
 }
 
@@ -227,7 +227,7 @@ Mouse.prototype.onPointerUp = function(e) {
   this.game.selected = null;
 
   if(this.game.debug==true){
-    console.log('up');
+    //console.log('up');
   }
 
 }
