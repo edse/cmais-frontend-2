@@ -121,11 +121,11 @@ Piece.prototype.draw = function() {
     if(this.position.y<0){
       this.position.y = 0;
     }
-    if(this.position.x > window.innerWidth - this.img.width/2){
-      this.position.x = window.innerWidth - this.img.width/2;
+    if(this.position.x > window.innerWidth - (this.position.y +this.img.width)/2){
+      this.position.x = window.innerWidth - (this.position.y + this.img.width)/2;
     }
-    if(this.position.y > window.innerHeight - this.img.height/2){ 
-      this.position.y = window.innerHeight - this.img.height/2;
+    if(this.position.y > window.innerHeight - (this.position.y + this.img.height)/2){ 
+      this.position.y = window.innerHeight - (this.position.y + this.img.height/2);
     }
     this.game.context.drawImage(this.img, this.position.x, this.position.y);
     
