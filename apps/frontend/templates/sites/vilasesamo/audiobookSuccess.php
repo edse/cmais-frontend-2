@@ -1,4 +1,4 @@
 <?php
-header('Location:http://cmais.com.br/d.php/vilasesamo/colecaoincluirbrincando');
+header('Location:http://cmais.com.br/vilasesamo/colecaoincluirbrincando');
 exit;
 ?>
