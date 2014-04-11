@@ -333,7 +333,11 @@ Game.prototype.restart = function() {
 
 Game.prototype.nextStage = function() {
   if(this.puzzles.length < this.stage+1){
-    location.reload();
+    this.is_over = false;
+    this.stage;
+    this.num_lines;
+    this.init();
+    startGame();
     /*
     this.is_over = true;
     this.solved = true;
