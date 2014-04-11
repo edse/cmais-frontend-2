@@ -16,7 +16,7 @@
 .modal-footer{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/acerto.png) no-repeat transparent bottom right;border:none;height:465px;border-radius: 0 0 40px 40px;border: 0px;box-shadow:none;padding:0;}
 
 
-.btn-group, .btn-group-vertical{bottom: 4%;left: 15%;position: absolute;padding: 2%;}
+.btn-group, .btn-group-vertical{bottom: 4%;left: 3%;position: absolute;padding: 2%;}
 .btn-group .botoes{float:none;border:none}
 .btn-pxfase{	width: 175px;	height: 175px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_fase.png) no-repeat;}
 .btn-pxfase:hover{width: 175px;	height: 175px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_fase_over.png) no-repeat;}
