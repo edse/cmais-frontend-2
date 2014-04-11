@@ -331,6 +331,7 @@ Game.prototype.nextStage = function() {
   if(this.puzzles.length < this.stage+1){
     this.is_over = true;
     this.solved = true;
+    this.puzzles[1];
     this.init();
     startGame();
     /*
