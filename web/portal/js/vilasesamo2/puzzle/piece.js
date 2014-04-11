@@ -121,7 +121,7 @@ Piece.prototype.draw = function() {
     if(this.position.y<0){
       this.position.y = 0;
     }
-    if(this.position.x+this.img.width/2 > window.innerWidth - this.img.width){
+    if(this.position.x+this.img.width/2 > window.innerWidth){
       this.position.x = window.innerWidth - this.img.width;
     }
     if(this.position.y+this.img.height/2 > window.innerHeight - this.img.height){ 
