@@ -116,7 +116,7 @@ Piece.prototype.draw = function() {
     //draw
     this.game.context.beginPath();
     //this.game.context.drawImage(this.img, this.position.x, this.position.y);
-    this.game.context.drawImage(this.img, 500, 500);
+    this.game.context.drawImage(this.img, 0, 0);
     
     this.game.context.closePath();
     this.game.context.restore();
