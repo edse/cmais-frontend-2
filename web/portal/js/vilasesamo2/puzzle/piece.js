@@ -121,12 +121,14 @@ Piece.prototype.draw = function() {
     if(this.position.y<0){
       console.log("<0y");
     }
-    if(this.position.x+this.img.width > window.innerWidth){
-      console.log(">0x");
-    }
-    if(this.position.y+this.img.height > window.innerWidth){
-      console.log(">0y");
-    }
+    //if(this.position.x+this.img.width > window.innerWidth){
+      console.log("imagem:"+this.img.width);
+      console.log("pos:"+ this.position.x);
+      //console.log(">0x");
+    //}
+    //if(this.position.y+this.img.height > window.innerWidth){
+      //console.log(">0y");
+    //}
     this.game.context.drawImage(this.img, this.position.x, this.position.y);
     
     this.game.context.closePath();
