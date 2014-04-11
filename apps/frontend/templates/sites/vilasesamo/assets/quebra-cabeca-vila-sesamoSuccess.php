@@ -273,7 +273,7 @@
     <!-- endbuild -->
             
             <!--GAME-->
-            teste3
+           
           </div>
           <input class="top" type="hidden" value="false">
           <?php endif; ?>
