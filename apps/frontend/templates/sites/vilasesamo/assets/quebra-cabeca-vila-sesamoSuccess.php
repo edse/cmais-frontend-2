@@ -191,8 +191,8 @@
                   <div class="modal-footer">
                       <div class="btn-group">
                       <button type="button" class="botoes btn-pxfase" id="next"></button>
-                      <button type="button" class="botoes btn-fullscreen" id=""> Fullscreen</button>
-                      <p><span id="stage" class="fase">Fase 1 completa!</span></p>
+                      <button type="button" class="botoes" id=""> <p><span id="stage" class="fase">Fase 1 completa!</span></p></button>
+                      
                     </div>
                   </div>
                 </div><!-- /.modal-content -->

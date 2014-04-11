@@ -181,7 +181,7 @@ Puzzle.prototype.draw = function(){
         this.sound.addEventListener('ended', function(){
           $("#modal-success").css("top", "0px");
           $("#modal-success").css("display", "block");
-          $('#modal-success').addClass("show");
+          $('#modal-success').addClass("show").addClass("height",altura);
         });
         game.puzzle.voice.play();
       }
