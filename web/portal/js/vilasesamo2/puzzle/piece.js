@@ -122,7 +122,7 @@ Piece.prototype.draw = function() {
       this.position.y = 0;
     }
     //if(this.position.x+this.img.width > window.innerWidth){
-      console.log("imagem:"+this.img.width);
+      console.log("imagem:"+this.img.width); 
       console.log("pos:"+ this.position.x);
       //console.log(">0x");
     //}
