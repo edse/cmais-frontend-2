@@ -115,6 +115,12 @@ Piece.prototype.draw = function() {
   
     //draw
     this.game.context.beginPath();
+    if(this.position.x<0){
+      console.log("<0x");
+    }
+    if(this.position.y<0){
+      console.log("<0x");
+    }
     this.game.context.drawImage(this.img, this.position.x, this.position.y);
     
     this.game.context.closePath();
