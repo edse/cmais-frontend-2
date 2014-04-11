@@ -31,7 +31,7 @@
    .modal-dialog{margin:10px auto;}
    .modal-header{background-size: 40%;height: 140px;}
    .modal-body{height: 140px;}
-   .modal-footer{background-size: 40%;}
+   .modal-footer{background-size: 40%;height: 140px;}
    .btn-group, .btn-group-vertical{width:20%;}
    .btn-pxfase,.btn-pxfase:hover{width:134px;background-size: 50%;}
    .logo{background-size: 50%;background-position: right top;}
