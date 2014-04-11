@@ -329,9 +329,10 @@ Game.prototype.restart = function() {
 
 Game.prototype.nextStage = function() {
   if(this.puzzles.length < this.stage+1){
+    this.stage-2
     this.is_over = true;
     this.solved = true;
-    this.stage--;
+    this.init();
     startGame();
     /*
     this.is_over = true;
