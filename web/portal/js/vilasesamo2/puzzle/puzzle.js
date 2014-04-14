@@ -274,6 +274,7 @@ Puzzle.prototype.draw = function(){
       //this.game.context.drawImage(this.img, (this.game.canvas.width/this.game.scale/2)-(this.img.width/2), (this.game.canvas.height/this.game.scale/2)-(this.img.height/2));
       //$("#modal-success .modal-body").html(this.game.context.drawImage(this.img, (this.game.canvas.width/this.game.scale/2)-(this.img.width/2), (this.game.canvas.height/this.game.scale/2)-(this.img.height/2)));
       $("#modal-success .modal-content").append("<img src='http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/00"+ this.game.stage + "/00"+this.game.stage+".png' style='width: 55%;position: absolute;top: 50%;left: 50%;margin-left: -30%;margin-top: -20%;' />");
+      $(".modal-dialog").css("margin-top", "-"+$(".modal-dialog").height()/2+"px").css("margin-left", "-"+$(".modal-dialog").width()/2+"px");
       pauseGame();
     }
   
