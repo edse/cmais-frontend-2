@@ -122,10 +122,12 @@ Piece.prototype.draw = function() {
       this.position.y = 0;
     }
     if(this.position.x+this.img.width > window.innerWidth){
-      this.position.x = window.innerWidth- this.img.width;
+      console.log("x maior");
+      //this.position.x = window.innerWidth- this.img.width; 
     }
     if(this.position.y+this.img.height > window.innerHeight){ 
-      this.position.y = window.innerHeight - this.img.height;
+      console.log("y maior");
+      //this.position.y = window.innerHeight - this.img.height;
     }
     this.game.context.drawImage(this.img, this.position.x, this.position.y);
     
