@@ -104,13 +104,13 @@ Game.prototype.init = function(){
       new Point2D(-127,191),
       new Point2D(-284,130))),
     new Puzzle("002", this, "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/002/002.png", new Array("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/002/p01.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/002/p02.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/002/p03.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/002/p04.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/002/p05.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/002/p06.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/002/p07.png"), new Array("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/002/h01.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/002/h02.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/002/h03.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/002/h04.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/002/h05.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/002/h06.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/002/h07.png"), {has_voice: false, has_sound: false}, {width: 298, height: 400}, new Point2D((this.canvas.width/2-306/2), (this.canvas.height/2-347/2)), new Array(
-      new Point2D(-2,-151),
-      new Point2D(-340,-135),
-      new Point2D(-339,179),
-      new Point2D(-216,174),
-      new Point2D(162,283),
-      new Point2D(83,125),
-      new Point2D(297,-141))),
+      new Point2D(20,-151),
+      new Point2D(-320,-135),
+      new Point2D(-319,179),
+      new Point2D(-196,174),
+      new Point2D(182,283),
+      new Point2D(103,125),
+      new Point2D(317,-141))),
     new Puzzle("003", this, "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/003.png", new Array("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p01.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p02.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p03.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p04.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p05.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p06.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p07.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p08.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p09.png"), new Array("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h01.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h02.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h03.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h04.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h05.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h06.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h07.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h08.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h09.png"), {has_voice: false, has_sound: false}, {width: 298, height: 400}, new Point2D((this.canvas.width/2-306/2), (this.canvas.height/2-347/2)), new Array(
       new Point2D(-300,-150),
       new Point2D(-299,60),
@@ -292,8 +292,8 @@ Game.prototype.apply_scale = function(){
   var h = this.original_height;
   
   if(game.puzzle.width != undefined){
-    w = game.puzzle.width*3;
-    h = game.puzzle.height*3;
+    w = game.puzzle.width*3.2;
+    h = game.puzzle.height*3.2;
   }
 
   document.getElementById('canvas').width = window.innerWidth;
