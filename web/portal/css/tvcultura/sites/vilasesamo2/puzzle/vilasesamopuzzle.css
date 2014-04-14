@@ -54,6 +54,6 @@
    #content h1 {font-size: 2.5em;}
    .modal-header{background-size: 30%;}
    .modal-footer{background-size: 35%;height: 285px;}
-   .btn-group, .btn-group-vertical {bottom: 6%;left: 3%;position: absolute;padding: 2%;}
+   .btn-group, .btn-group-vertical {float: left;margin-top: 7%;position: relative;padding: 2%;}
    .logo{background-size: 80%;background-position: right top;}
 }
