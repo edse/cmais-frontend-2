@@ -6,7 +6,7 @@
 .btn-play-sesame-street{	width: 170px;	height: 170px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/entry/play_game.png) no-repeat;box-shadow: none;transition:none;}
 .btn-play-sesame-street:hover{background-position: 0 -171px;background-color: transparent;transition:none;}
 
-#modal-success{height:100%}
+#modal-success{height:100%!important;}
 .modal-dialog {width: 90%; overflow: hidden;position:absolute; top:50%; left:50%}
 .modal-content{position:relative;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/pattern_bg.jpg);border-radius: 40px;border: 0px;height:100%;max-height:999999;box-shadow:none}
 .modal.show{display:block!important;}
