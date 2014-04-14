@@ -56,9 +56,11 @@
             <!--p class="breadcrumb"><a href="/">cmais</a> &gt;&gt; Quintal da Cultura</p-->
             <!--CONTEUDO WRAPPER-->
             <div class="conteudoWrapper">
+            	<!-- Tira Rosa choque
             	<div  class="rosachoque">
           			<a href="quintaldacultura/look-rosachoque" class="titulos"><img src="http://cmais.com.br/portal/quintal/images/destaque-lookrosachoque.png"></a>
           		</div>
+          		-->
               <!--ITENS BACKGROUND-->
               <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground')              ?>
               <!--/ITENS BACKGROUND-->
