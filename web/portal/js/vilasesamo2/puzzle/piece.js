@@ -122,8 +122,8 @@ Piece.prototype.draw = function() {
       this.position.y = 0;
     }
     if(this.position.y > this.game.canvas.width){
-      //console.log("x maior");
-      this.position.y = this.game.canvas.width - this.img.width; 
+      console.log("y maior");
+      this.position.y = this.game.canvas.width; 
     }
     //if(this.position.x > this.game.canvas.height){ 
       //console.log("y maior");
