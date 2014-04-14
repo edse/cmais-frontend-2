@@ -53,7 +53,7 @@
 @media screen and (min-width: 501px) and (max-width:1024px) {
    #content h1 {font-size: 2.5em;}
    .modal-header{background-size: 30%;}
-   .modal-footer{background-size: 35%;height: 285px;}
-   .btn-group, .btn-group-vertical {float: left;margin-top: 7%;position: relative;padding: 2%;}
+   .modal-footer{background-size: 30%;height: 230px;}
+   .btn-group, .btn-group-vertical {float: left;position: relative;padding: 2%;}
    .logo{background-size: 80%;background-position: right top;}
 }
