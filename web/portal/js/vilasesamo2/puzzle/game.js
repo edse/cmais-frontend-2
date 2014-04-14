@@ -331,6 +331,7 @@ Game.prototype.nextStage = function() {
     this.stage = this.stage-2;
     this.is_over = true;
     this.solved = true;
+    $(".modal-dialog").find('img').remove();
     this.init();
     startGame();
     /*
