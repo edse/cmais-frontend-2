@@ -120,7 +120,7 @@ Game.prototype.init = function(){
       new Point2D(346,36),
       new Point2D(87,60),
       new Point2D(66,-148),
-      new Point2D(384,-148)))
+      new Point2D(384,-145)))
   ];
 
   this.puzzle = this.puzzles[this.stage-1];
