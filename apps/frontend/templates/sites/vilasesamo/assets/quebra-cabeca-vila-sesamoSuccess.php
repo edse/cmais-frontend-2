@@ -192,8 +192,9 @@
                       <div class="btn-group">
                       <button type="button" class="botoes btn-pxfase" id="next"></button>
                       <button type="button" class="botoes btn-restart" id="restart"> </button>
-                      <p><span id="stage" class="fase">Fase 1 completa!</span></p>
                       <button type="button" class="botoes btn-inicio" id="inicio"> </button>
+                      <p><span id="stage" class="fase">Fase 1 completa!</span></p>
+                      
                       
                     </div>
                   </div>
