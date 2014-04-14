@@ -112,17 +112,15 @@ Game.prototype.init = function(){
       new Point2D(118,125),
       new Point2D(332,-141))),
     new Puzzle("003", this, "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/003.png", new Array("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p01.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p02.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p03.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p04.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p05.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p06.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p07.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p08.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/p09.png"), new Array("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h01.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h02.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h03.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h04.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h05.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h06.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h07.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h08.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/003/h09.png"), {has_voice: false, has_sound: false}, {width: 298, height: 400}, new Point2D((this.canvas.width/2-306/2), (this.canvas.height/2-347/2)), new Array(
-      new Point2D(-270,-150),
+      new Point2D(-270,-149),
       new Point2D(-269,60),
       new Point2D(-323,293),
       new Point2D(-12,226),
-      new Point2D(270,213),
-      new Point2D(347,39),
+      new Point2D(277,214),
+      new Point2D(346,33),
       new Point2D(87,60),
-      new Point2D(66,-149),
-      new Point2D(381,-149)))
-      
-    
+      new Point2D(66,-148),
+      new Point2D(384,-148)))
   ];
 
   this.puzzle = this.puzzles[this.stage-1];
