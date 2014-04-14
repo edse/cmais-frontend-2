@@ -119,11 +119,11 @@ Piece.prototype.draw = function() {
       this.position.x = 0;
     }
     if(this.position.y<0){
-      //this.position.y = 0;
+      this.position.y = 0;
     }
     if(this.position.y > this.game.canvas.width){
       //console.log("x maior");
-      this.position.y = this.game.canvas.width + this.img.width; 
+      this.position.y = this.game.canvas.width - this.img.width; 
     }
     //if(this.position.x > this.game.canvas.height){ 
       //console.log("y maior");
