@@ -119,7 +119,7 @@ Piece.prototype.draw = function() {
       this.position.x = 0;
     }
     if(this.position.y<0){
-      this.position.y = 0;
+      //this.position.y = 0;
     }
     if(this.position.y > this.game.canvas.width){
       //console.log("x maior");
