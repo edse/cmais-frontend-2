@@ -52,8 +52,8 @@
 }
 @media screen and (min-width: 501px) and (max-width:1024px) {
    #content h1 {font-size: 2.5em;}
-   .modal-header{background-size: 40%;}
-   .modal-footer{background-size: 40%;height: 365px;}
+   .modal-header{background-size: 30%;}
+   .modal-footer{background-size: 35%;height: 285px;}
    .btn-group, .btn-group-vertical {bottom: 14%;left: 3%;position: absolute;padding: 2%;}
    .logo{background-size: 80%;background-position: right top;}
 }
