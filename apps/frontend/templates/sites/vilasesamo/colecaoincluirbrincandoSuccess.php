@@ -67,6 +67,20 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
 					
           <div class="btns-download">
           	<h3>Materiais disponíveis para download gratuito:</h3>
+          	<div class="pdf txt">
+            		<a href="http://cmais.com.br/portal/materiais_acessiveis/caderno_de_formacao_versao_acessivel.txt" target="_blank">
+									<p>CADERNO DE FORMAÇÃO - INCLUIR BRINCANDO– VERSÃO ACESSÍVEL</p>
+									
+								</a>
+							</div>
+							
+            	<div class="pdf txt">
+            		<a href="http://cmais.com.br/portal/materiais_acessiveis/dicas_para_incluir_brincando_vesao_acessivel.txt" target="_blank">
+									<p>DICAS PARA INCLUIR BRINCANDO – VERSÃO ACESSÍVEL</p>
+									
+								</a>
+							</div>
+          		
             	<div class="pdf pdf-incluir">
             		<a href="http://midia.cmais.com.br/assets/file/original/ac143cf466819d5d8fe00db24db62750a4825894.pdf" target="_blank">
 									<p>Dicas para Incluir Brincando</p>
