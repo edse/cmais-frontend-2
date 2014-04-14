@@ -54,8 +54,9 @@
    #content h1 {font-size: 2.5em;}
    .modal-header{background-size: 30%;}
    .modal-footer{background-size: 30%;height: 230px;}
-   .btn-group, .btn-group-vertical {float: left;position: relative;padding: 2%;}
+   .btn-group, .btn-group-vertical {float: left;position: relative;padding: 2%;margin-top:0}
    .logo{background-size: 80%;background-position: right top;}
+   .fase{width: 330px;}
 }
 @media screen and (min-width: 501px) and (max-width:800px) {
    #content h1 {font-size: 2.5em;}
@@ -69,5 +70,5 @@
    .btn-inicio{background-size: 86%;height:34px;}
    .logo{background-size: 90%;width:160px;}
    .tempo{font-size: 1.7em;}
-  }
+  
 }
