@@ -206,7 +206,7 @@
       <canvas id="canvas" style="display:none"></canvas>
       <canvas id="canvas_bg" style="display:none"></canvas>
     </div>
-
+    
     <!-- DEBUG -->
     <div id="debug" style="display:none">
       <div>
@@ -303,7 +303,7 @@
     function updateOrientation(){  
       var screenWidth = screen.width;
       var windowWidth = window.innerWidth;
-      //alert(windowWidth)
+      //alert(windowWidth);
       //console.log("oiiiii");
       if (windowWidth > 470 || (screenWidth > 470 && windowWidth > 470 && window.orientation == 90) || (screenWidth > 470 && windowWidth > 470 && window.orientation == -90) || navigator.platform == "Win32" || navigator.platform == "Win64") {  
         $('.asset').fadeIn('fast');

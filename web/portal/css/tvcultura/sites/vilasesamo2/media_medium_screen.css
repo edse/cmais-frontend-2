@@ -261,6 +261,7 @@ footer .copyright {height: 30px;margin-left: 2%;}
   #content .todos-itens .container-image img{width:100%;}
   #content .todos-itens li .yt-menu img{max-width: 800px!important;width: 600px!important;position: relative;left: -77px!important;height: 450px!important;top: -85px!important;}
   #page_nav .container-ajax-loader{float:left!important;}
+  footer .mapa .col-quatro { width: 24%; }
   
   .personagens .filtro .span2 {width: 98%;}
   .personagens #content .filtro .filtro-personagem {margin-left: 0 auto;}
@@ -278,6 +279,8 @@ footer .copyright {height: 30px;margin-left: 2%;}
   #content .todos-itens .yt-menu,
   #content .todos-itens .container-image{height:150px!important; max-width:310px;}
   #page_nav .container-ajax-loader{float:left!important; left:8%!important}
+  footer .mapa .col-quatro { width: 23%; }
+  footer .mapa a { font-size:0.9em }
   
   .personagens .filtro .span2 {width: 98%;}
   .personagens #content .filtro .filtro-personagem {margin-left: 3%;}
@@ -290,7 +293,7 @@ footer .copyright {height: 30px;margin-left: 2%;}
 }
 @media screen and (min-width:501px) and (max-width:768px) {
   .todos-itens #container li.jogos a, .todos-itens #container li.atividades a, .todos-itens #container li.videos a {min-height: 250px!important;}
-
+	
 }
 
 /*formulario campanhas*/

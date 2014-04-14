@@ -551,18 +551,16 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .container-campanhas .texto  {width:60%;float:left;margin-top:2%}
 .container-campanhas .asset{float: right;margin-left: 1%;margin-top: 2%;overflow: hidden;}
 .btns-download{float: left;width: 100%;}
+.btns-download a{text-decoration:underline;color:#fff;}
 .pdf{margin:2%}
 .pdf p{color: #fff;font-size: 1em;text-align: center;width:165px;margin:0 auto;text-transform: uppercase;}
-.pdf a:hover{text-decoration:none!important;}
 .pdf-incluir {background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_pdf.png") no-repeat;width: 290px;height: 60px;float: left;}
+.txt {background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_txt.png") no-repeat;width: 290px;height: 60px;float: left;}
 .pdf-incluir p{margin:10px auto;}
 .pdf-caderno {background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_pdf.png") no-repeat;width: 290px;height: 60px;float: left;}
 .pdf-caderno  p{margin:10px auto;}
-.audio-caderno {background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_audio.png") no-repeat;width: 290px;height: 60px;float: left;text-decoration:none!important;}
-.audio-caderno p {margin:10px auto;}
-.audio-caderno a{text-decoration:none!important;}
+.audio-caderno {background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_audio.png") no-repeat;width: 290px;height: 60px;float: left;}
 .audio-descricao {background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_audio.png") no-repeat;width: 290px;height: 60px;float: left;}
-.audio-descricao a{text-decoration:none!important;}
 
 
 #content .incluir-brincando-colecao {overflow: hidden;min-height: 46px!important; background:#feec3c; margin:0 auto !important; position:relative; border-bottom:7px solid #fffb49;  border-radius:0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; }

@@ -118,9 +118,9 @@ Mouse.prototype.onPointerMove = function(e) {
   this.y = yy;
   this.event = e;
   
-  if(this.game.debug==true){
-    console.log('move: '+this.x+', '+this.y);
-  }
+  //if(this.game.debug==true){
+    //console.log('move: '+this.x+', '+this.y);
+  //}
 
 }
 

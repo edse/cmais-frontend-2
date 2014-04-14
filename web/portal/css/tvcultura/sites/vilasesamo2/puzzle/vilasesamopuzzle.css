@@ -16,7 +16,7 @@
 .modal-footer{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/acerto.png) no-repeat transparent bottom right;border:none;height:465px;border-radius: 0 0 40px 40px;border: 0px;box-shadow:none;padding:0;}
 
 
-.btn-group, .btn-group-vertical{bottom: 4%;left: 3%;position: absolute;padding: 2%;}
+.btn-group, .btn-group-vertical{float: left;position: relative;padding: 2%;width: 21%;margin-top: 10%;}
 .btn-group .botoes{float:none;border:none}
 .btn-pxfase{	width: 175px;	height: 175px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_fase.png) no-repeat;}
 .btn-pxfase:hover{width: 175px;	height: 175px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_fase_over.png) no-repeat;}
@@ -32,7 +32,7 @@
 #modal-success{background:#0172f9;z-index:99999999999999999;width: 100%;}
 .modal{position: fixed; top: 0; left: 0;border: none;border-radius: 0;margin:0;}
 /*background:url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/final.png) no-repeat; background-size:90%;*/
- 
+#grid-size{width: 100%;height: 100%;display: block!important;position: absolute;} 
 @media screen and (max-width: 500px) {
    .back-entry-sesame-street { height:300px; }
    .modal-dialog{margin:10px auto;}
@@ -44,16 +44,30 @@
    .logo{background-size: 50%;background-position: right top;}
    .tempo{font-size:1.6em;}
 } 
-@media screen and (min-width: 601px) and (max-width:1024px) {
-   .back-entry-sesame-street {height:515px;}
+@media screen and (min-width: 601px) and (max-width:800px) {
+   .back-entry-sesame-street {height:540px;}
 }
 @media screen and (min-width: 501px) and (max-width:600px) {
    .back-entry-sesame-street {height:400px;}
 }
-@media screen and (min-width: 501px) and (max-width:1024px) {
+@media screen and (min-width: 801px) and (max-width:1280px) {
    #content h1 {font-size: 2.5em;}
-   .modal-header{background-size: 40%;}
-   .modal-footer{background-size: 40%;height: 365px;}
-   .btn-group, .btn-group-vertical {bottom: 14%;left: 3%;position: absolute;padding: 2%;}
+   .modal-header{background-size: 30%;}
+   .modal-footer{background-size: 30%;height: 230px;}
+   .btn-group, .btn-group-vertical {float: left;position: relative;padding: 2%;}
    .logo{background-size: 80%;background-position: right top;}
+}
+@media screen and (min-width: 501px) and (max-width:800px) {
+   #content h1 {font-size: 2.5em;}
+   .modal-header{background-size: 30%;height: 270px;}
+   .modal-footer{background-size: 30%;height: 230px;}
+   .btn-group, .btn-group-vertical {float: left;position: relative;padding: 2%;width: 30%;margin-top: 14%;}
+   .btn-pxfase {width: 100px;height: 90px;background-size: 90%;}
+   .btn-pxfase:hover {width: 100px;height: 90px;background-size: 90%;}
+   .btn-restart {width: 100px;height: 90px;background-size: 90%;}
+   .btn-restart:hover {background-position: 0 -88px;}
+   .btn-inicio{background-size: 86%;height:34px;}
+   .logo{background-size: 90%;width:160px;}
+   .tempo{font-size: 1.7em;}
+  }
 }
