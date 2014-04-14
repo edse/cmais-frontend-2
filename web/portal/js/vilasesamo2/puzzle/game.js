@@ -98,7 +98,7 @@ Game.prototype.init = function(){
   
   this.puzzles = [
     new Puzzle("001", this, "http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/001/001.png", new Array("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/001/p01.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/001/p02.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/001/p03.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/001/p04.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/001/p05.png"), new Array("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/001/h01.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/001/h02.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/001/h03.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/001/h04.png","http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/001/h05.png"), {has_voice: false, has_sound: false}, {width: 298, height: 400}, new Point2D((this.canvas.width/2-306/2), (this.canvas.height/2-347/2)), new Array(
-      new Point2D(-200,-100),
+      new Point2D(-200,0),
       new Point2D(118,-78),
       new Point2D(100,249),
       new Point2D(-227,191),
