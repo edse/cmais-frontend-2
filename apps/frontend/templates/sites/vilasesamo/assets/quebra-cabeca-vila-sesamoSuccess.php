@@ -206,7 +206,7 @@
       <canvas id="canvas" style="display:none"></canvas>
       <canvas id="canvas_bg" style="display:none"></canvas>
     </div>
-
+    <div id="grid-size"></div>
     <!-- DEBUG -->
     <div id="debug" style="display:none">
       <div>
