@@ -123,7 +123,7 @@ Piece.prototype.draw = function() {
     }
     if(this.position.y + this.img.height > window.innerHeight){
       console.log("y maior");
-      this.position.y = window.innerHeight - this.img.height/2; 
+      this.position.y = window.innerHeight - this.img.height; 
     }
 
     this.game.context.drawImage(this.img, this.position.x, this.position.y);
