@@ -227,7 +227,7 @@ Game.prototype.draw_bg = function() {
 	this.context.drawImage(img, 1580, 50, 200, 100);
 	
 	
-  }
+  };
   /*
   var width = this.canvas.width, 
     height = this.canvas.height, 
