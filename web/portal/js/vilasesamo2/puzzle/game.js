@@ -1,4 +1,5 @@
 function Game(canvas) {
+  $('body').append('<div id="grid-size"></div>')
   this.started = false;
   this.stage = 1;
   this.num_lines = 2;
