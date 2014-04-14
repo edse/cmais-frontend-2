@@ -121,13 +121,13 @@ Piece.prototype.draw = function() {
     if(this.position.y<0){
       this.position.y = 0;
     }
-    if(this.position.y > this.game.canvas.width - this.img.width){
+    if(this.position.y > this.game.canvas.width){
       //console.log("x maior");
-      this.position.y = this.game.canvas.width - this.img.width; 
+      this.position.y = this.game.canvas.width; 
     }
-    if(this.position.x > this.game.canvas.height - this.img.height){ 
+    if(this.position.x > this.game.canvas.height){ 
       //console.log("y maior");
-      this.position.x = this.game.canvas.height - this.img.height;
+      this.position.x = this.game.canvas.height;
     }
     this.game.context.drawImage(this.img, this.position.x, this.position.y);
     
