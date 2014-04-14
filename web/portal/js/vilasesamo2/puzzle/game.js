@@ -327,11 +327,11 @@ Game.prototype.restart = function() {
 };
 
 Game.prototype.nextStage = function() {
+  $(".modal-dialog").find('img').remove();
   if(this.puzzles.length < this.stage+1){
     this.stage = this.stage-2;
     this.is_over = true;
     this.solved = true;
-    $(".modal-dialog").find('img').remove();
     this.init();
     startGame();
     /*
