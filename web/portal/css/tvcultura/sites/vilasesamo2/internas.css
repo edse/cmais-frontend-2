@@ -555,6 +555,7 @@ body.na-tv{background-color:#feec3c;position:relative;}
 .pdf{margin:2%}
 .pdf p{color: #fff;font-size: 1em;text-align: center;width:165px;margin:0 auto;text-transform: uppercase;}
 .pdf-incluir {background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_pdf.png") no-repeat;width: 290px;height: 60px;float: left;}
+.txt {background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_txt.png") no-repeat;width: 290px;height: 60px;float: left;}
 .pdf-incluir p{margin:10px auto;}
 .pdf-caderno {background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_pdf.png") no-repeat;width: 290px;height: 60px;float: left;}
 .pdf-caderno  p{margin:10px auto;}
