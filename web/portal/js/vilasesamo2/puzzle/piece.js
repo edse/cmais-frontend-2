@@ -121,7 +121,7 @@ Piece.prototype.draw = function() {
     if(this.position.y<0){
       this.position.y = 0;
     }
-    if(this.position.y + this.img.height > $("#grid-size").height() - this.img.height/4){
+    if(this.game.selected.holder.position.y > $("#grid-size").height() - this.img.height/4){
       console.log("y maior");
       this.position.y = $("#grid-size").height() - this.img.height/4; 
     }
