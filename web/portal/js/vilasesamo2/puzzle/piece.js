@@ -122,8 +122,8 @@ Piece.prototype.draw = function() {
       this.position.y = 0;
     }
     if(this.position.y > $("#grid-size").height()){
-      //console.log("y maior");
-      this.position.y = $("#grid-size").height(); 
+      console.log("y maior");
+      this.position.y = $("#grid-size").height() - this.img.height/2; 
     }
 
     this.game.context.drawImage(this.img, this.position.x, this.position.y);
