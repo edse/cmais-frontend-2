@@ -121,7 +121,7 @@ Piece.prototype.draw = function() {
     if(this.position.y<0){
       this.position.y = 0;
     }
-    if(this.position.y + this.img.height/2 > window.innerHeight){
+    if(this.position.y + this.img.height/2 > $("#canvas").height()){
       console.log("y maior");
       this.position.y = this.game.canvas.height - this.img.height/2; 
     }
