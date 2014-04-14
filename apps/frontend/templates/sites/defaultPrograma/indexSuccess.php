@@ -212,6 +212,20 @@
               
               <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>
               
+		           <?php if(isset($displays["destaque-noticias-recentes"])): ?>
+		     						<!-- BOX PADRAO Mais recentes -->	
+		                <div class="box-padrao grid1">
+		                  <div class="topo claro">
+		                    <span></span>
+		                    <div class="capa-titulo">
+		                      <h4>Conte&uacute;dos + recentes</h4>
+		                      <a href="/feed" class="rss" title="rss" style="display: block"></a>
+		                    </div>
+		                  </div>
+		                  <?php if(isset($displays["destaque-noticias-recentes"])) include_partial_from_folder('blocks','global/recent-news', array('displays' => $displays["destaque-noticias-recentes"])) ?>
+		                </div>
+		                <!-- BOX PADRAO Mais recentes -->              
+		              <?php endif;?>
             </div>
             <!-- /DIREITA -->
             
