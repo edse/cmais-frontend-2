@@ -272,7 +272,7 @@ Puzzle.prototype.draw = function(){
     
     }else{
       //this.game.context.drawImage(this.img, (this.game.canvas.width/this.game.scale/2)-(this.img.width/2), (this.game.canvas.height/this.game.scale/2)-(this.img.height/2));
-      $("#modal-success .modal-body").append("este é o estagio "+this.game.stage);
+      $("#modal-success .modal-body").html("este é o estagio :"+this.game.stage);
       pauseGame();
     }
   
