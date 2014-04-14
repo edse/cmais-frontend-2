@@ -123,8 +123,8 @@ Piece.prototype.draw = function() {
     }
     console.log("win width: "+window.innerWidth);
     console.log("win height: "+window.innerHeight);
-    console.log("win width: "+this.position.x);
-    console.log("win width: "+this.position.y);
+    console.log("posX: "+this.position.x);
+    console.log("posY: "+this.position.y);
     //if(this.position.x+this.img.width > window.innerWidth){
       //console.log("x maior");
       //this.position.x = window.innerWidth- this.img.width; 
