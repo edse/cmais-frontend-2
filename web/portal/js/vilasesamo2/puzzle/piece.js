@@ -123,12 +123,12 @@ Piece.prototype.draw = function() {
     }
     if(this.position.y > this.game.canvas.width){
       //console.log("x maior");
-      this.position.y = this.game.canvas.width; 
+      this.position.y = this.game.canvas.width + this.img.width; 
     }
-    if(this.position.x > this.game.canvas.height){ 
+    //if(this.position.x > this.game.canvas.height){ 
       //console.log("y maior");
-      this.position.x = this.game.canvas.height;
-    }
+      //this.position.x = this.game.canvas.height;
+    //}
     this.game.context.drawImage(this.img, this.position.x, this.position.y);
     
     this.game.context.closePath();
