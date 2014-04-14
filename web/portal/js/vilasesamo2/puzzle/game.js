@@ -117,7 +117,7 @@ Game.prototype.init = function(){
       new Point2D(-323,293),
       new Point2D(-12,226),
       new Point2D(277,214),
-      new Point2D(346,42),
+      new Point2D(346,44),
       new Point2D(87,60),
       new Point2D(66,-148),
       new Point2D(380,-148)))
