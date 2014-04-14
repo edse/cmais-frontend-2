@@ -123,11 +123,11 @@ Piece.prototype.draw = function() {
     }
     if(this.position.x+this.img.width > window.innerWidth){
       //console.log("x maior");
-      this.position.x = this.position.x - this.img.width; 
+      this.position.x = this.game.canvas.width - this.img.width; 
     }
     if(this.position.y+this.img.height > window.innerHeight){ 
       //console.log("y maior");
-      this.position.y = this.position.y  - this.img.height;
+      this.position.y = this.game.canvas.height  - this.img.height;
     }
     this.game.context.drawImage(this.img, this.position.x, this.position.y);
     
