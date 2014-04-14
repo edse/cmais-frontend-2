@@ -292,8 +292,8 @@ Game.prototype.apply_scale = function(){
   var h = this.original_height;
   
   if(game.puzzle.width != undefined){
-    w = game.puzzle.width*2.5;
-    h = game.puzzle.height*2.5;
+    w = game.puzzle.width*3;
+    h = game.puzzle.height*3;
   }
 
   document.getElementById('canvas').width = window.innerWidth;
