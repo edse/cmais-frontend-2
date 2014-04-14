@@ -127,7 +127,7 @@ Piece.prototype.draw = function() {
     }
     if(this.position.y+this.img.height > this.game.canvas.height - this.img.height){ 
       //console.log("y maior");
-      this.position.y = this.game.canvas.height - this.img.height;
+      this.position.y = this.game.canvas.height;
     }
     this.game.context.drawImage(this.img, this.position.x, this.position.y);
     
