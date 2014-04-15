@@ -329,22 +329,22 @@
                 <div  style="display: hidden;">
                   <div class="linha t5">  
                     <label>Nome da Obra</label><br/>
-                    <input type="text" name="obra1" data-default="" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-1" />
+                    <input type="text" name="obra1" data-default="" value="" id="obra-1" />
                   </div>
                                
                   <div class="linha t5" >
                     <label>Compositor</label><br/>
-                    <input type="text" name="compositor1" data-default="" value="Ex.: J.S. Bach" id="compositor-1" />
+                    <input type="text" name="compositor1" data-default="" value="" />
                   </div>
                  
                   <div class="linha t5">
                     <label>Movimentos</label><br/>
-                    <input type="text" name="movimentos1" data-default="" value="Ex.: IV - Minueto" id="movimentos-1" />
+                    <input type="text" name="movimentos1" data-default="" value="" />
                   </div>
                   
                   <div class="linha t2">  
                     <label>Duração</label><br/>
-                    <input type="text" name="duracao1" data-default="" value="Ex.: 4:07" id="duracao-1" />
+                    <input type="text" name="duracao1" data-default="" value="" id="duracao-1" />
                   </div>
                   
                   <div class="linha t5">  
@@ -357,22 +357,22 @@
 
                   <div class="linha t5">  
                     <label>Nome da Obra</label><br/>
-                    <input type="text" name="obra2" data-default="" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-2" />
+                    <input type="text" name="obra2" data-default="" value="" id="obra-2" />
                   </div>
                                
                   <div class="linha t5" >
                     <label>Compositor</label><br/>
-                    <input type="text" name="compositor2" data-default="" value="Ex.: J.S. Bach" id="compositor-2" />
+                    <input type="text" name="compositor2" data-default="" value="" id="compositor-2" />
                   </div>
                  
                   <div class="linha t5">
                     <label>Movimentos</label><br/>
-                    <input type="text" name="movimentos2" data-default="" value="Ex.: IV - Minueto" id="movimentos-2" />
+                    <input type="text" name="movimentos2" data-default="" value="" id="movimentos-2" />
                   </div>
                   
                   <div class="linha t2">  
                     <label>Duração</label><br/>
-                    <input type="text" name="duracao2" data-default="" value="Ex.: 4:07" id="duracao-2" />
+                    <input type="text" name="duracao2" data-default="" value="" id="duracao-2" />
                   </div>
                   
                   <div class="linha t5">  
