@@ -124,7 +124,6 @@ Puzzle.prototype.placePiece = function(id, img, holder){
     console.log(this.holders.length);
     x = this.game.canvas.width*0.20+this.img.width;
     y = 30;
-    older
   }
   
   /*
