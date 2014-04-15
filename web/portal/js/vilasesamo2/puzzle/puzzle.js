@@ -120,7 +120,7 @@ Puzzle.prototype.placePiece = function(id, img, holder){
   //y = Math.floor(Math.random()*(this.game.canvas.height/this.game.scale-img.height));
   x = lastposition + 60;
   y = 50;
-  var lastposition = x 
+  lastposition = x 
   /*
   if(y<80) y += 80;
   if(y>this.game.canvas.height-20) y -= 80;
