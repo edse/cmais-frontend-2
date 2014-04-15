@@ -219,10 +219,10 @@ Game.prototype.draw_bg = function() {
 	 var img = new Image();
 	  img.src = 'http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/logo.png';
   if(!this.scale) this.scale = 1;
-  this.context.fillStyle = "rgba(1, 114, 249, 1)";
+  //this.context.fillStyle = "rgba(1, 114, 249, 1)";
 	this.context.beginPath();
 	this.context.rect(10, 50, 200, 100);
-	this.context.fill();
+	//this.context.fill();
 	this.context.lineWidth = 5;
 	this.context.strokeStyle = 'black';
 	this.context.drawImage(img, 10, 50, 200, 100);
