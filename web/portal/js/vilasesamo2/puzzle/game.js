@@ -29,7 +29,8 @@ function Game(canvas) {
   this.original_height = this.canvas.height;
 
   //size  
-  this.font_size = Math.round(this.canvas.width/20);
+  //this.font_size = Math.round(this.canvas.width/20);
+  this.font_size = 40;
   this.scaled_width = (this.canvas.width/this.scale)/2;
   this.scaled_height = (this.canvas.height/this.scale)/2;
   console.log('scaled_width: '+this.scaled_width);
@@ -213,21 +214,22 @@ Game.prototype.draw_bg = function() {
     this.context.fillRect(0,0,this.canvas.width/this.scale, this.canvas.height/this.scale);
     this.context.restore();
   }
+};
   
-  Game.prototype.draw_logo = function() {
+Game.prototype.draw_logo = function() {
 	 var img = new Image();
 	  img.src = 'http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/logo.png';
   if(!this.scale) this.scale = 1;
-  this.context.fillStyle = "rgba(1, 114, 249, 1)";
+  //this.context.fillStyle = "rgba(1, 114, 249, 1)";
 	this.context.beginPath();
-	this.context.rect(0, 50, 200, 100);
-	this.context.fill();
+	this.context.rect(10, 50, 200, 100);
+	//this.context.fill();
 	this.context.lineWidth = 5;
 	this.context.strokeStyle = 'black';
-	this.context.drawImage(img, 0, 50, 200, 100);
+	this.context.drawImage(img, 10, 50, 200, 100);
 	
 	
-  };
+};
   /*
   var width = this.canvas.width, 
     height = this.canvas.height, 
@@ -259,7 +261,7 @@ Game.prototype.draw_bg = function() {
   this.context.globalAlpha = 0.2;
   this.context.drawImage(this.img, offsetx, offsety, this.img_width, this.img_height);
   */
-};
+//};
 
 Game.prototype.draw_remaining = function() {
   this.context.save();
@@ -274,11 +276,11 @@ Game.prototype.draw_remaining = function() {
   this.context.font = "bold "+this.font_size+"px Arial";
   this.context.textBaseline = 'top';
   this.context.textAlign = 'left';
-  this.context.strokeText(this.puzzle.remaining_time, 10, 150);
-  this.context.fillText(this.puzzle.remaining_time, 10, 150);
-  var metrics = this.context.measureText(this.stage+"/"+this.puzzles.length+"Tempo: ");
-  this.context.strokeText(this.stage+"/"+this.puzzles.length, this.canvas.width/this.scale-metrics.width, 40);
-  this.context.fillText(this.stage+"/"+this.puzzles.length, this.canvas.width/this.scale-metrics.width, 40);
+  this.context.strokeText("Tempo: "+this.puzzle.remaining_time, 10, 150);
+  this.context.fillText("Tempo: "+this.puzzle.remaining_time, 10, 150);
+  var metrics = this.context.measureText(this.stage+"/"+this.puzzles.length+" ");
+  this.context.strokeText(this.stage+"/"+this.puzzles.length, this.canvas.width/this.scale-metrics.width, 80,80);
+  this.context.fillText(this.stage+"/"+this.puzzles.length, this.canvas.width/this.scale-metrics.width, 80,80);
   this.context.restore();
 };
 
