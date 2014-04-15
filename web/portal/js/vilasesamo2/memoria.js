@@ -486,7 +486,7 @@ function checkPattern() {
       }else{
         $('.card').eq(0).focus();
       }
-    },1800);
+    },3800);
     uiSplash.addClass('match');
     $('.matched').removeClass('current');
     $('#' + pattern).addClass('matched current');
