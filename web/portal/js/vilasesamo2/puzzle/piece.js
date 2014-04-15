@@ -32,10 +32,7 @@ function Piece(id, game, img, holder, position, initial, moveble, placed) {
   //for animation
   this.m = (holder.position.y - this.y)/(holder.position.x - this.x);
   this.b = holder.position.y - (this.m * holder.position.x);
-  if(Math.random() >= 0.5)
-    this.p = 0.1;
-  else
-    this.p = -0.1;
+  
 
   this.tolerance = 550;
   this.moveble = true;
@@ -124,8 +121,7 @@ Piece.prototype.draw = function() {
     //console.log(this.position.y);
     //console.log($("#grid-size").height());
 
-    //this.game.context.drawImage(this.img, this.position.x, this.position.y);
-    this.game.context.drawImage(this.img, this.initial.x, 100);
+    this.game.context.drawImage(this.img, this.position.x, this.position.y);
     
     this.game.context.closePath();
     this.game.context.restore();
