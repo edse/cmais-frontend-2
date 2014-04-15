@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
     if ($current_time < $expiration_time) {
     
-      $to = "georgia.catarina@gmail.com, jedoljak@gmail.com";
+      $to = "georgia.catarina@gmail.com, jedoljak@gmail.com";//quintal.tv@gmail.com
       //$to = "maiscriancatvcultura@gmail.com";
       $email = strip_tags($_REQUEST['email']);
       $name = strip_tags($_REQUEST['nome']);
