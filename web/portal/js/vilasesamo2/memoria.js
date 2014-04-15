@@ -421,7 +421,7 @@ function startGame() {
             setTimeout(function(){
               $('#characther'+charPos).focus();
               //console.log("foquei 3");
-            },800);
+            },8000);
             //$(this).find('.back').attr('tab-index','-1').attr('aria-hidden', 'true');  
           }
           // check the pattern of both flipped card 0.7s later.
@@ -486,7 +486,7 @@ function checkPattern() {
       }else{
         $('.card').eq(0).focus();
       }
-    },3800);
+    },1800);
     uiSplash.addClass('match');
     $('.matched').removeClass('current');
     $('#' + pattern).addClass('matched current');
