@@ -121,8 +121,8 @@ Puzzle.prototype.placePiece = function(id, img, holder){
   for(var i = 0; i<this.holders.length; i++){
     console.log(i);
     console.log(this.holders.length);
-    x = img.width * i;
-    y = img.height;
+    x = 60 + img.width * i;
+    y = 30;
   }
   
   /*
