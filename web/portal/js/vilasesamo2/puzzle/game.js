@@ -214,8 +214,9 @@ Game.prototype.draw_bg = function() {
     this.context.fillRect(0,0,this.canvas.width/this.scale, this.canvas.height/this.scale);
     this.context.restore();
   }
+};
   
-  Game.prototype.draw_logo = function() {
+Game.prototype.draw_logo = function() {
 	 var img = new Image();
 	  img.src = 'http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/logo.png';
   if(!this.scale) this.scale = 1;
@@ -228,7 +229,7 @@ Game.prototype.draw_bg = function() {
 	this.context.drawImage(img, 10, 50, 200, 100);
 	
 	
-  };
+};
   /*
   var width = this.canvas.width, 
     height = this.canvas.height, 
@@ -260,7 +261,7 @@ Game.prototype.draw_bg = function() {
   this.context.globalAlpha = 0.2;
   this.context.drawImage(this.img, offsetx, offsety, this.img_width, this.img_height);
   */
-};
+//};
 
 Game.prototype.draw_remaining = function() {
   this.context.save();
