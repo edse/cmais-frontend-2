@@ -459,80 +459,76 @@
                 
                <ul>
                 <li class="bold">Prelúdio 2014 regulamento</li>
-                                      
-                REGULAMENTO - PRELÚDIO 2014
+                <p>A Fundação Padre Anchieta – Centro Paulista de Rádio e TV Educativas, doravante Fundação Padre Anchieta, através de sua emissora de televisão TV Cultura – Canal 2, promove o PRELÚDIO 2014 - concurso para solistas e cantores de até 28 anos - que será regido por este regulamento, cujas disposições declaram os candidatos, após a devida leitura, aceitar por ocasião da submissão de sua respectiva ficha de inscrição. </p>
 
-							A Fundação Padre Anchieta – Centro Paulista de Rádio e TV Educativas, doravante Fundação Padre Anchieta, através de sua emissora de televisão TV Cultura – Canal 2, promove o PRELÚDIO 2014 - concurso para solistas e cantores de até 28 anos - que será regido por este regulamento, cujas disposições declaram os candidatos, após a devida leitura, aceitar por ocasião da submissão de sua respectiva ficha de inscrição. 
-							
-							I - DOS OBJETIVOS E DOS REQUISITOS: 
-							
-							O presente Concurso tem a finalidade de incentivar jovens instrumentistas e cantores.
-							
-							Os candidatos deverão ser brasileiros ou estrangeiros residentes no país e deverão ter até 28 (vinte e oito) anos de idade completos até a data de inscrição do Concurso. 
-							
-							Eventuais faltas e atrasos do Candidato nas fases do Concurso, poderão ser considerados pela Fundação Padre Anchieta como motivo justo para desclassificação do Concurso, a seu exclusivo critério.
-							
-							O candidato que obtiver a melhor colocação ao longo das provas eliminatórias, semifinais e final será premiado de acordo com as normas do presente regulamento. 
-							
-							
-							II - DO CRONOGRAMA: 
-							
-							1. Após a seleção, os candidatos se apresentarão com orquestra em 6 (seis) eliminatórias, 2 (duas) semifinais e uma final na Sala SP. 
-							
-							2. As datas das apresentações públicas que compõem o Concurso serão definidas e previamente divulgadas pela Comissão Organizadora. Os ensaios e a realização das provas ocorrerão entre os meses de maio e dezembro de 2014. 
-							
-							3.A premiação será concedida ao vencedor quando da prova final do Concurso, em que participarão os quatro selecionados nas provas semifinais. 
-							
-							4.O candidato responderá pela veracidade das informações enviadas. O fornecimento de informações falsas, imprecisas ou dúbias, ou inautenticidade do material gravado ou de imagem, resultará na desclassificação sumária e inapelável do candidato. A não observância de qualquer dos requisitos estipulados neste regulamento acarretará o cancelamento automático da inscrição, sem apreciação do trabalho.
-							
-							5.A inscrição do candidato para participar do Concurso implica na aceitação de todos os itens deste regulamento. 
-							
-							
-							III. DO PROCESSO SELETIVO E ELIMINATÓRIO 
-							
-							1. Serão escolhidos 24 (vinte e quatro) candidatos finalistas. Em cada programa da etapa classificatória concorrerão até 4 (quatro) participantes, cuja ordem de apresentação obedecerá a critérios da direção do programa. 
-							
-							2. Em todas as provas os candidatos serão acompanhados por orquestra.
-							
-							3. Pelo julgamento inapelável e irrecorrível de Comissão Julgadora designada pela Fundação Padre Anchieta, será classificado um candidato por eliminatória, totalizando seis semifinalistas. Para as duas semifinais participarão oito candidatos: seis deles escolhidos pelos jurados durante as eliminatórias e outros dois selecionados através de repescagem dentre os que não venceram a fase eliminatória. Dos oito semifinalistas sairão quatro candidatos (dois em cada semifinal). Na fase Final dos quatro candidatos finalistas sairá apenas um vencedor. 
-							
-							4. O dia e a ordem de apresentação dos participantes classificados para as provas eliminatórias, semifinais e final serão estabelecidos pela Comissão Organizadora do programa. 
-							
-							5. O concorrente inscrito que não respeitar o presente Regulamento Geral do Concurso ou provocar em qualquer fase atos que possam prejudicar seu andamento poderá, a critério da Comissão Organizadora do programa, ser desclassificado em caráter inapelável e irrecorrível. 
-							
-							IV. DA PREMIAÇÃO 
-							
-							Ao vencedor final, que será escolhido na etapa final do Concurso, será concedido um prêmio não passível de transferência para terceiros, qual seja:
-							- uma bolsa de estudos de alemão na Alemanha com validade até dezembro de 2015, oferecida pelo Instituto Goethe, que inclui as despesas de transporte aéreo e acomodação.
-							Não será permitida a troca do prêmio por qualquer outro bem. Caso o Participante Ganhador venha a ter qualquer problema que o impeça de receber o prêmio, não será possível a reclamação de qualquer indenização ou compensação pela perda do prêmio.
-							
-							V. DAS GRAVAÇÕES E DIREITOS DE IMAGEM, NOME, VOZ E INTERPRETAÇÃO 
-							
-							1. As apresentações do Concurso serão transmitidas pela TV Cultura, emissora da Fundação Padre Anchieta e poderão também ser videogravadas, audiogravadas, filmadas ou fotografadas por quem esta indicar para posterior reprodução e a seu critério. 
-							
-							2. Ficam cientes os candidatos escolhidos que serão objeto de entrevistas e reportagens a serem realizadas em suas casas, escolas e comunidade para exibição em TV aberta, através da TV Cultura, parceiras, afiliadas, retransmissoras ou emissoras a ela conveniadas, independentemente do número de exibições realizadas ou de território de abrangência e que a adesão ao presente concurso implicará em expressa e automática autorização de captação, divulgação e reprodução de sua imagem, nome, voz, interpretação e demais elementos de personalidade. 
-							
-							3. O(s) Candidato(s) individual e coletivamente autoriza(m) à Fundação gratuitamente, em caráter exclusivo, irrevogável, irretratável, definitivo e universal a divulgação e o uso de seu(s) nome(s), imagem(ns) e voz(es) e de suas interpretações nos Programas por ela produzidos e exibidos e em quaisquer obras audiovisuais por ela produzidas, podendo a Fundação, portanto, a seu exclusivo critério, diretamente ou através de terceiros por ela autorizados, utilizar as referidas obras audiovisuais livremente, bem como seus extratos, trechos ou partes, podendo, exemplificativamente, adaptá-las para fins de produção de obras audiovisuais novas, obras audiovisuais para fins de exibição em circuito cinematográfico, obras literárias, peças teatrais e/ou peças publicitárias, utilizá-las, para produção de matéria promocional em qualquer tipo de mídia, inclusive impressa, seja para fins de divulgação das obras audiovisuais, para a composição de qualquer produto ligado às mesmas (tais como, mas não limitados a capas de CD, DVD, Blu-Ray, “homevideo”, DAT, entre outros), assim como produção do “making of” das obras audiovisuais; fixá-las em qualquer tipo de suporte material, tais como películas cinematográficas de qualquer bitola, CD (“compact disc”), CD ROM, CD-I (“compact-disc” interativo), “homevideo”, DAT (“digital audio tape”), DVD (“digital vídeo disc”), Blu-ray e suportes de computação gráfica em geral, ou armazená-las em banco de dados, exibi-las através de projeção em tela em casa de frequência coletiva ou em locais públicos, com ou sem ingresso pago, transmiti-la via rádio e/ou televisão de qualquer espécie (televisão aberta ou televisão por assinatura, através de todas as formas de transporte de sinal existentes, exemplificativamente UHF (Ultra High Frequency), VHF (Very High Frequency), cabo, MMDS (Serviços de Distribuição Multiponto Multicanal), IPTV e satélite, bem como independentemente da modalidade de comercialização empregada, incluindo “pay tv”, “pay per view”, “near vídeo on demand” ou “vídeo on demand”, independentemente das características e atributos do sistema de distribuição, abrangendo plataformas analógicas ou digitais, com atributos de interatividade, ou não); comercializá-las ou alugá-las ao público em qualquer suporte material existente, promover ações de merchandising ou veicular propaganda, bem como desenvolver qualquer atividade de licenciamento de produtos e/ou serviços derivados das obras audiovisuais, disseminá-los através da Internet e/ou telefonia, fixa e/ou móvel, circuito interno, ceder os direitos autorais sobre as obras audiovisuais a terceiros, para qualquer espécie de utilização, ou ainda dar-lhes qualquer outra utilização que proporcione à Fundação Padre Anchieta qualquer espécie de vantagem econômica. 
-							  4. Nenhuma dessas utilizações previstas anteriormente tem limitação de tempo ou de número de vezes, podendo ocorrer no Brasil e/ou no exterior, sem que seja devido ao Candidato qualquer remuneração ou compensação. 
-							 5. A autorização ora concedida pelo Candidato para a Fundação Padre Anchieta entra em vigor no ato da inscrição do Candidato, e assim perdurará por todo o prazo de proteção da obra audiovisual. Entende-se por prazo de proteção legal da obra aquele estabelecido na Lei 9.610/98. 
-							 6. Todo o material enviado à Fundação Padre Anchieta não será devolvido. 
-							
-							7. A Fundação Padre Anchieta fica autorizada a executar livremente a montagem do Concurso e do Programa, proceder aos cortes e às fixações e reproduções necessárias.
-							
-							
-							VI. CONSIDERAÇÕES FINAIS 
-							
-							A Fundação Padre Anchieta reserva para si o direito de modificar, alterar e/ou cancelar qualquer item do presente Regulamento e a dar divulgação ao mesmo da maneira que julgar conveniente. 
-							
-							Os casos omissos por este Regulamento serão decididos pela Comissão Organizadora do Concurso. 
-							
-							A Fundação Padre Anchieta poderá, a seu exclusivo critério e a qualquer tempo, suspender e/ou cancelar definitivamente o Concurso, sem que seja devido ao Candidato qualquer compensação.
-							O presente Regulamento será regido e interpretado pelas leis brasileiras, ficando eleito o Foro Central de São Paulo, para dirimir eventuais dúvidas oriundas do presente, com renúncia de qualquer outro, por mais privilegiado que venha a ser.
-							
-							
-							São Paulo, 15 de abril de 2014.
+<p>I - DOS OBJETIVOS E DOS REQUISITOS: </p>
+
+<p>O presente Concurso tem a finalidade de incentivar jovens instrumentistas e cantores.</p>
+
+<p>Os candidatos deverão ser brasileiros ou estrangeiros residentes no país e deverão ter até 28 (vinte e oito) anos de idade completos até a data de inscrição do Concurso. </p>
+
+<p>Eventuais faltas e atrasos do Candidato nas fases do Concurso, poderão ser considerados pela Fundação Padre Anchieta como motivo justo para desclassificação do Concurso, a seu exclusivo critério.</p>
+
+<p>O candidato que obtiver a melhor colocação ao longo das provas eliminatórias, semifinais e final será premiado de acordo com as normas do presente regulamento. </p>
 
 
+<p>II - DO CRONOGRAMA: </p>
+
+<p>1. Após a seleção, os candidatos se apresentarão com orquestra em 6 (seis) eliminatórias, 2 (duas) semifinais e uma final na Sala SP. </p>
+
+<p>2. As datas das apresentações públicas que compõem o Concurso serão definidas e previamente divulgadas pela Comissão Organizadora. Os ensaios e a realização das provas ocorrerão entre os meses de maio e dezembro de 2014. </p>
+
+<p>3.A premiação será concedida ao vencedor quando da prova final do Concurso, em que participarão os quatro selecionados nas provas semifinais.</p> 
+
+<p>4.O candidato responderá pela veracidade das informações enviadas. O fornecimento de informações falsas, imprecisas ou dúbias, ou inautenticidade do material gravado ou de imagem, resultará na desclassificação sumária e inapelável do candidato. A não observância de qualquer dos requisitos estipulados neste regulamento acarretará o cancelamento automático da inscrição, sem apreciação do trabalho.</p>
+
+<p>.5.A inscrição do candidato para participar do Concurso implica na aceitação de todos os itens deste regulamento. </p>
+
+
+<p>III. DO PROCESSO SELETIVO E ELIMINATÓRIO </p>
+
+<p>1. Serão escolhidos 24 (vinte e quatro) candidatos finalistas. Em cada programa da etapa classificatória concorrerão até 4 (quatro) participantes, cuja ordem de apresentação obedecerá a critérios da direção do programa. </p>
+
+<p.2. Em todas as provas os candidatos serão acompanhados por orquestra.</p>
+
+<p.3. Pelo julgamento inapelável e irrecorrível de Comissão Julgadora designada pela Fundação Padre Anchieta, será classificado um candidato por eliminatória, totalizando seis semifinalistas. Para as duas semifinais participarão oito candidatos: seis deles escolhidos pelos jurados durante as eliminatórias e outros dois selecionados através de repescagem dentre os que não venceram a fase eliminatória. Dos oito semifinalistas sairão quatro candidatos (dois em cada semifinal). Na fase Final dos quatro candidatos finalistas sairá apenas um vencedor. </p>
+
+<p>4. O dia e a ordem de apresentação dos participantes classificados para as provas eliminatórias, semifinais e final serão estabelecidos pela Comissão Organizadora do programa. </p>
+
+<p>5. O concorrente inscrito que não respeitar o presente Regulamento Geral do Concurso ou provocar em qualquer fase atos que possam prejudicar seu andamento poderá, a critério da Comissão Organizadora do programa, ser desclassificado em caráter inapelável e irrecorrível. </p>
+
+<p>IV. DA PREMIAÇÃO </p>
+
+<p>Ao vencedor final, que será escolhido na etapa final do Concurso, será concedido um prêmio não passível de transferência para terceiros, qual seja:
+<br>- uma bolsa de estudos de alemão na Alemanha com validade até dezembro de 2015, oferecida pelo Instituto Goethe, que inclui as despesas de transporte aéreo e acomodação.</p>
+<p>Não será permitida a troca do prêmio por qualquer outro bem. Caso o Participante Ganhador venha a ter qualquer problema que o impeça de receber o prêmio, não será possível a reclamação de qualquer indenização ou compensação pela perda do prêmio.</p>
+
+<p>V. DAS GRAVAÇÕES E DIREITOS DE IMAGEM, NOME, VOZ E INTERPRETAÇÃO </p>
+
+<p>1. As apresentações do Concurso serão transmitidas pela TV Cultura, emissora da Fundação Padre Anchieta e poderão também ser videogravadas, audiogravadas, filmadas ou fotografadas por quem esta indicar para posterior reprodução e a seu critério. </p>
+
+<p>2. Ficam cientes os candidatos escolhidos que serão objeto de entrevistas e reportagens a serem realizadas em suas casas, escolas e comunidade para exibição em TV aberta, através da TV Cultura, parceiras, afiliadas, retransmissoras ou emissoras a ela conveniadas, independentemente do número de exibições realizadas ou de território de abrangência e que a adesão ao presente concurso implicará em expressa e automática autorização de captação, divulgação e reprodução de sua imagem, nome, voz, interpretação e demais elementos de personalidade. </p>
+
+<p>3. O(s) Candidato(s) individual e coletivamente autoriza(m) à Fundação gratuitamente, em caráter exclusivo, irrevogável, irretratável, definitivo e universal a divulgação e o uso de seu(s) nome(s), imagem(ns) e voz(es) e de suas interpretações nos Programas por ela produzidos e exibidos e em quaisquer obras audiovisuais por ela produzidas, podendo a Fundação, portanto, a seu exclusivo critério, diretamente ou através de terceiros por ela autorizados, utilizar as referidas obras audiovisuais livremente, bem como seus extratos, trechos ou partes, podendo, exemplificativamente, adaptá-las para fins de produção de obras audiovisuais novas, obras audiovisuais para fins de exibição em circuito cinematográfico, obras literárias, peças teatrais e/ou peças publicitárias, utilizá-las, para produção de matéria promocional em qualquer tipo de mídia, inclusive impressa, seja para fins de divulgação das obras audiovisuais, para a composição de qualquer produto ligado às mesmas (tais como, mas não limitados a capas de CD, DVD, Blu-Ray, “homevideo”, DAT, entre outros), assim como produção do “making of” das obras audiovisuais; fixá-las em qualquer tipo de suporte material, tais como películas cinematográficas de qualquer bitola, CD (“compact disc”), CD ROM, CD-I (“compact-disc” interativo), “homevideo”, DAT (“digital audio tape”), DVD (“digital vídeo disc”), Blu-ray e suportes de computação gráfica em geral, ou armazená-las em banco de dados, exibi-las através de projeção em tela em casa de frequência coletiva ou em locais públicos, com ou sem ingresso pago, transmiti-la via rádio e/ou televisão de qualquer espécie (televisão aberta ou televisão por assinatura, através de todas as formas de transporte de sinal existentes, exemplificativamente UHF (Ultra High Frequency), VHF (Very High Frequency), cabo, MMDS (Serviços de Distribuição Multiponto Multicanal), IPTV e satélite, bem como independentemente da modalidade de comercialização empregada, incluindo “pay tv”, “pay per view”, “near vídeo on demand” ou “vídeo on demand”, independentemente das características e atributos do sistema de distribuição, abrangendo plataformas analógicas ou digitais, com atributos de interatividade, ou não); comercializá-las ou alugá-las ao público em qualquer suporte material existente, promover ações de merchandising ou veicular propaganda, bem como desenvolver qualquer atividade de licenciamento de produtos e/ou serviços derivados das obras audiovisuais, disseminá-los através da Internet e/ou telefonia, fixa e/ou móvel, circuito interno, ceder os direitos autorais sobre as obras audiovisuais a terceiros, para qualquer espécie de utilização, ou ainda dar-lhes qualquer outra utilização que proporcione à Fundação Padre Anchieta qualquer espécie de vantagem econômica. </p>
+  <p>4. Nenhuma dessas utilizações previstas anteriormente tem limitação de tempo ou de número de vezes, podendo ocorrer no Brasil e/ou no exterior, sem que seja devido ao Candidato qualquer remuneração ou compensação.</p> 
+ <p>5. A autorização ora concedida pelo Candidato para a Fundação Padre Anchieta entra em vigor no ato da inscrição do Candidato, e assim perdurará por todo o prazo de proteção da obra audiovisual. Entende-se por prazo de proteção legal da obra aquele estabelecido na Lei 9.610/98. </p>
+ <p>6. Todo o material enviado à Fundação Padre Anchieta não será devolvido. </p>
+
+<p>7. A Fundação Padre Anchieta fica autorizada a executar livremente a montagem do Concurso e do Programa, proceder aos cortes e às fixações e reproduções necessárias.</p>
+
+
+<p>VI. CONSIDERAÇÕES FINAIS </p>
+
+<p>A Fundação Padre Anchieta reserva para si o direito de modificar, alterar e/ou cancelar qualquer item do presente Regulamento e a dar divulgação ao mesmo da maneira que julgar conveniente. </p>
+
+<p>Os casos omissos por este Regulamento serão decididos pela Comissão Organizadora do Concurso. </p>
+
+<p>A Fundação Padre Anchieta poderá, a seu exclusivo critério e a qualquer tempo, suspender e/ou cancelar definitivamente o Concurso, sem que seja devido ao Candidato qualquer compensação.</p>
+<p>O presente Regulamento será regido e interpretado pelas leis brasileiras, ficando eleito o Foro Central de São Paulo, para dirimir eventuais dúvidas oriundas do presente, com renúncia de qualquer outro, por mais privilegiado que venha a ser.</p>
+
+
+<p>São Paulo, 15 de abril de 2014.</p>                      
+                
              </ul>
               <p>      
               </div>
