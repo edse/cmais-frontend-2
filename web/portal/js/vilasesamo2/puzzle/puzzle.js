@@ -116,13 +116,16 @@ Puzzle.prototype.init = function(){
 };
 
 Puzzle.prototype.placePiece = function(id, img, holder){
-  x = Math.floor(Math.random()*(this.game.canvas.width/this.game.scale-img.width));
-  y = Math.floor(Math.random()*(this.game.canvas.height/this.game.scale-img.height));
+  //x = Math.floor(Math.random()*(this.game.canvas.width/this.game.scale-img.width));
+  //y = Math.floor(Math.random()*(this.game.canvas.height/this.game.scale-img.height));
+  x = img.width;
+  y = img.height;
+  /*
   if(y<80) y += 80;
   if(y>this.game.canvas.height-20) y -= 80;
   if(x<80) x += 80;
   if(x>this.game.canvas.width-80) x -= 80;
-  
+  */
   temp = new Piece(
     id,
     this.game,
