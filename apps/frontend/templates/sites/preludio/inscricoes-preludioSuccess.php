@@ -106,7 +106,7 @@
             </script>
             
             <!--form-contato-solista-->
-            <form id="form-contato-solista" method="post" action="/actions/preludio2014/submit.php" enctype="multipart/form-data">
+            <form id="form-contato-solista" method="post" action="http://app.cmais.com.br/actions/preludio2014/submit.php" enctype="multipart/form-data">
               
               <input type="hidden" name="tipo" value="Solista" />
               <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/inscricao-efetuada-com-sucesso" />
