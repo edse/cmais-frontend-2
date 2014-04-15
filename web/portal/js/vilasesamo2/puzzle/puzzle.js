@@ -114,14 +114,14 @@ Puzzle.prototype.init = function(){
   this.loaded = true;
   this.solved = false;
 };
-
-Puzzle.prototype.placePiece = function(id, img, holder){
-  //x = Math.floor(Math.random()*(this.game.canvas.width/this.game.scale-img.width));
-  //y = Math.floor(Math.random()*(this.game.canvas.height/this.game.scale-img.height));
-  for(var i = 0; i< this.pieces.length; i++){
+for(var i = 0; i< this.pieces.length; i++){
     x = img.width * i;
     y = img.height + 30;
   }
+Puzzle.prototype.placePiece = function(id, img, holder){
+  //x = Math.floor(Math.random()*(this.game.canvas.width/this.game.scale-img.width));
+  //y = Math.floor(Math.random()*(this.game.canvas.height/this.game.scale-img.height));
+  
   /*
   if(y<80) y += 80;
   if(y>this.game.canvas.height-20) y -= 80;
