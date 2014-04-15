@@ -121,9 +121,10 @@ Puzzle.prototype.placePiece = function(id, img, holder){
   for(var i = 0; i<this.holders.length; i++){
     console.log(i);
     console.log(this.holders.length);
+    x = img.width * i;
+    y = img.height * i;
   }
-  x = img.width;
-  y = img.height;
+  
   /*
   if(y<80) y += 80;
   if(y>this.game.canvas.height-20) y -= 80;
