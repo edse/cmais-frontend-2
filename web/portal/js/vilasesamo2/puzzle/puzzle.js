@@ -118,10 +118,11 @@ Puzzle.prototype.init = function(){
 Puzzle.prototype.placePiece = function(id, img, holder){
   //x = Math.floor(Math.random()*(this.game.canvas.width/this.game.scale-img.width));
   //y = Math.floor(Math.random()*(this.game.canvas.height/this.game.scale-img.height));
+  var positionsX = [100,200, 300, 500 , 800 ,900]
   for(var i = 0; i<this.holders.length; i++){
     console.log(i);
     console.log(this.holders.length);
-    x = Math.floor(this.game.canvas.width/this.game.scale-img.width);
+    x = this.game.canvas.width*0.10
     y = 30;
   }
   
