@@ -118,8 +118,9 @@ Puzzle.prototype.init = function(){
 Puzzle.prototype.placePiece = function(id, img, holder){
   //x = Math.floor(Math.random()*(this.game.canvas.width/this.game.scale-img.width));
   //y = Math.floor(Math.random()*(this.game.canvas.height/this.game.scale-img.height));
-  x = 10;
+  x = lastposition + 60;
   y = 50;
+  var lastposition = x 
   /*
   if(y<80) y += 80;
   if(y>this.game.canvas.height-20) y -= 80;
