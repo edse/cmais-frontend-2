@@ -17,17 +17,17 @@
 
 
 .btn-group, .btn-group-vertical{float: left;position: relative;padding: 2%;width: 21%;margin-top: 10%;}
-.btn-group .botoes{float:none;border:none}
+.btn-group .botoes{float:left;border:none}
 .btn-pxfase{	width: 175px;	height: 175px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_fase.png) no-repeat;}
 .btn-pxfase:hover{width: 175px;	height: 175px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_fase_over.png) no-repeat;}
 .btn-restart{	width: 170px;	height: 170px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_restart.png) no-repeat 0 1px;box-shadow: none;transition:none;}
 .btn-restart:hover{background-position: 0 -167px;background-color: transparent;transition:none;}
-.btn-inicio{	width: 101px;	height: 40px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_inicio.png) no-repeat 0 top;box-shadow: none;transition:none;position: absolute;left: 98%;	bottom: 34%;}
+.btn-inicio{	width: 175px;	height: 40px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_sair.png) no-repeat 0 top;box-shadow: none;transition:none;position: absolute;left: 48%;bottom: 17%;}
 .btn-inicio:hover{background-position: 0 bottom;background-color: transparent;transition:none;}
 .btn-fullscreen{display:none;width: 250px;	height: 32px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/fullscreen.png) no-repeat;position: absolute;left: 40%;color:#2F5BAA;text-transform: uppercase;font-weight: bolder;font-size: 20px;}
 
 .tempo{color:#FCE90E;font-size:40px;font-weight: bold;text-shadow: 3px 1px 3px #5074E5;line-height:normal;}
-.fase{color:#2F5BAA;text-transform: uppercase;font-weight: bolder;font-size: 20px;}
+.fase{color:#2F5BAA;text-transform: uppercase;font-weight: bolder;font-size: 20px;text-align: center;width: 153px;}
 .logo{	width:210px;	height: 175px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/logo.png) no-repeat;float:right}
 #modal-success{background:#0172f9;z-index:99999999999999999;width: 100%;}
 .modal{position: fixed; top: 0; left: 0;border: none;border-radius: 0;margin:0;}
@@ -54,9 +54,10 @@
    #content h1 {font-size: 2.5em;}
    .modal-header{background-size: 30%;}
    .modal-footer{background-size: 30%;height: 230px;}
-   .btn-group, .btn-group-vertical {float: left;position: relative;padding: 2%;margin-top:0}
+   .btn-group, .btn-group-vertical {float: left;position: relative;padding: 2%;margin-top:0;width:18%;}
    .logo{background-size: 80%;background-position: right top;}
-   .fase{width: 280px;}
+   .fase{text-align: center;}
+   .btn_inicio{left: 76%;bottom: 13%}
 }
 @media screen and (min-width: 501px) and (max-width:800px) {
    #content h1 {font-size: 2.5em;}
@@ -67,7 +68,7 @@
    .btn-pxfase:hover {width: 100px;height: 90px;background-size: 90%;}
    .btn-restart {width: 100px;height: 90px;background-size: 90%;}
    .btn-restart:hover {background-position: 0 -88px;}
-   .btn-inicio{background-size: 86%;height:34px;}
+   .btn-inicio{background-size: 86%;height:36px;}
    .logo{background-size: 90%;width:160px;}
    .tempo{font-size: 1.7em;}
   

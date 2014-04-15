@@ -131,6 +131,7 @@ Game.prototype.init = function(){
 Game.prototype.render = function() {
   
   this.draw_bg();
+  this.draw_logo();
     
   //LOADING
   if(!this.loaded){
@@ -213,6 +214,20 @@ Game.prototype.draw_bg = function() {
     this.context.restore();
   }
   
+  Game.prototype.draw_logo = function() {
+	 var img = new Image();
+	  img.src = 'http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/logo.png';
+  if(!this.scale) this.scale = 1;
+  this.context.fillStyle = "rgba(1, 114, 249, 1)";
+	this.context.beginPath();
+	this.context.rect(1580, 50, 200, 100); // desenha o retângulo
+	this.context.fill();
+	this.context.lineWidth = 5;
+	this.context.strokeStyle = 'black';
+	this.context.drawImage(img, 1580, 50, 200, 100);
+	
+	
+  };
   /*
   var width = this.canvas.width, 
     height = this.canvas.height, 
@@ -253,7 +268,7 @@ Game.prototype.draw_remaining = function() {
     this.alpha = -1;
   else if(this.fade1 <= 0.2)
     this.alpha = 1;
-  //this.context.fillStyle = "rgba(255, 255, 255, "+this.fade1+")";
+  this.context.fillStyle = "rgba(255, 220, 40, 0.9)";
   this.context.strokeStyle = "rgba(0, 0, 0, 0.5)";
   this.context.lineWidth = 2;
   this.context.font = "bold "+this.font_size+"px Arial";
