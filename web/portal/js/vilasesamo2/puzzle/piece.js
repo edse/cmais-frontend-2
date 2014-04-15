@@ -32,7 +32,10 @@ function Piece(id, game, img, holder, position, initial, moveble, placed) {
   //for animation
   this.m = (holder.position.y - this.y)/(holder.position.x - this.x);
   this.b = holder.position.y - (this.m * holder.position.x);
-  
+  if(Math.random() >= 0.5)
+    this.p = 0.1;
+  else
+    this.p = -0.1;
 
   this.tolerance = 550;
   this.moveble = true;
