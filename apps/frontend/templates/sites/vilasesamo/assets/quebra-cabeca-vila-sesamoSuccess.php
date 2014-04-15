@@ -183,9 +183,7 @@
                     <p><span id="tempodojogo" class="tempo">4 peças em 30s</span></p>
                     <span id="logo" class="logo"></span>
                   </div>
-                  <div class="modal-body">
-                   
-                
+                  <div class="modal-body">      
                     
                   </div>
                   <div class="modal-footer">
