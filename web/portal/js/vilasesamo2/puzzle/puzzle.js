@@ -122,7 +122,7 @@ Puzzle.prototype.placePiece = function(id, img, holder){
     console.log(i);
     console.log(this.holders.length);
     x = img.width * i;
-    //y = img.height * i;
+    y = img.height;
   }
   
   /*
