@@ -220,11 +220,11 @@ Game.prototype.draw_bg = function() {
   if(!this.scale) this.scale = 1;
   this.context.fillStyle = "rgba(1, 114, 249, 1)";
 	this.context.beginPath();
-	this.context.rect(1580, 50, 200, 100); // desenha o retângulo
+	this.context.rect(0, 50, 200, 100);
 	this.context.fill();
 	this.context.lineWidth = 5;
 	this.context.strokeStyle = 'black';
-	this.context.drawImage(img, 1580, 50, 200, 100);
+	this.context.drawImage(img, 0, 50, 200, 100);
 	
 	
   };
