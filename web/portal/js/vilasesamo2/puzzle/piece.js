@@ -125,7 +125,7 @@ Piece.prototype.draw = function() {
     //console.log($("#grid-size").height());
 
     //this.game.context.drawImage(this.img, this.position.x, this.position.y);
-    this.game.context.drawImage(this.img, 60 + this.img.height, this.position.x);
+    this.game.context.drawImage(this.img, this.initial.x, 100);
     
     this.game.context.closePath();
     this.game.context.restore();
