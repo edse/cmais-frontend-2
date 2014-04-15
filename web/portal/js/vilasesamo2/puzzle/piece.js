@@ -125,6 +125,7 @@ Piece.prototype.draw = function() {
       this.position.x = 0;
       console.log("passei")
     }
+    console.log(this.position.x);
     //console.log(this.position.y);
     //console.log($("#grid-size").height());
 
