@@ -328,7 +328,7 @@ function resizeGame() {
 
 function resizeGame() {  
   console.log("window: " + window.innerWidth + ", " + window.innerHeight);
-  var modal = document.getElementById('modal-dialog'); 
+  var modal = document.getElementById("modal-dialog").style.height; 
   var mh =  modal.style.height;
   var mw =  modal.style.width;
   console.log(mw +" - "+ mh)
