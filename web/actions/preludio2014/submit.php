@@ -21,7 +21,7 @@ if($_FILES["new_photo"]){
     }
     else{
       if(is_file($_FILES["new_photo"]["tmp_name"])){
-        if(multi_attach_mail("preludio@tvcultura.com.br", array($_FILES["new_photo"]["tmp_name"], $_FILES["new_photo2"]["tmp_name"]), $_POST, $_FILES["new_photo"]["name"], "nao-responda@tvcultura.com.br")){
+        if(multi_attach_mail("josevallima@tvcultura.com.br", array($_FILES["new_photo"]["tmp_name"], $_FILES["new_photo2"]["tmp_name"]), $_POST, $_FILES["new_photo"]["name"], "nao-responda@tvcultura.com.br")){
           unlink($_FILES["new_photo"]["tmp_name"]);
           header("Location: http://tvcultura.cmais.com.br/preludio/inscricoes-preludio?msg=success");
           //echo ">>>>OK!";
@@ -51,7 +51,7 @@ function multi_attach_mail($to, $files, $form_data, $file_name, $sendermail) {
   $from = "Files attach <" . $sendermail . ">";
   $subject = date("d.M H:i") . " F=" . count($files);
   //$headers = "From: $from";
-  $headers = "From: Inscrição Preludio 2014";
+  $headers = "From: Inscrição Preludio 2014<inscricao@tvcultura.com.br>";
   $message = date("Y.m.d H:i:s") . "\n" . count($files) . " attachments\n\n";
   foreach($form_data as $k=>$v){
     $message .= "\n".$k.": ".$v;
@@ -65,7 +65,7 @@ function multi_attach_mail($to, $files, $form_data, $file_name, $sendermail) {
   $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\"";
 
   // multipart boundary
-  $message = "--{$mime_boundary}\n" . "Content-Type: text/plain; charset=\"iso-8859-1\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message . "\n\n";
+  $message = "--{$mime_boundary}\n" . "Content-Type: text/plain; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message . "\n\n";
 
   // preparing attachments
   for ($i = 0; $i < count($files); $i++) {
