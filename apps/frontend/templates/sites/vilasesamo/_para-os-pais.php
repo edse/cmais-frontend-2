@@ -304,9 +304,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
               <!--/box artigo-->
           <?php endif; ?>  
       <?php elseif(isset($artigo)): ?>
-        <?php if(isset($artigo->retriveRelatedAssetsByRelationType("Preview"))):?>
-          <?php $preview = $artigo->retriveRelatedAssetsByRelationType("Preview") ?>
-        <?php endif; ?>
+        <?php $preview = $artigo->retriveRelatedAssetsByRelationType("Preview") ?>
         <div class="span4 artigo">
           <a href="/<?php echo $site->getSlug() ?>/<?php echo $forParents->getSlug() ?>/<?php echo $artigo->getSlug() ?>" title="<?php echo $artigo->getTitle() ?>"-->
           <!-- a href="<?php echo $artigo->retriveUrl() ?>" title="<?php echo $artigo->getTitle() ?>"--> 
