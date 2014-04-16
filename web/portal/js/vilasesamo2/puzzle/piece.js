@@ -122,10 +122,10 @@ Piece.prototype.draw = function() {
       this.position.y = 0;
     }
     if(this.position.x + this.img.width > this.game.canvas.width/this.game.scale){
-      console.log("foi")
+      this.position.x = this.game.canvas.width/this.game.scale - this.img.width;
     }
     if(this.position.y + this.img.height > this.game.canvas.height/this.game.scale){
-      console.log("tb foi")
+      this.position.y = this.game.canvas.height/this.game.scale - this.img.height
     }
     //if(this.position.x/this.game.scale)
     //console.log(this.position.x/this.game.scale);
