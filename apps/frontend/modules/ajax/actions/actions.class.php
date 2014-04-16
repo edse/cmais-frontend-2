@@ -2782,6 +2782,9 @@ EOT;
   public function executeGingaxml(sfWebRequest $request){
     $this->setLayout(false);
 
+	//NÃO LISTAR SITES
+	$site_not = array(5,1009,1011,1060,1119,189,914,201,184,1175,186,187,190,1124, 1253, 1215, 1143, 1329, 1330,103, 189, 67,1117, 1343);
+
     //SELECIONAR ÚLTIMOS 30 ASSETS
 	$asset = Doctrine_Query::create()
 		->select("a.*")
