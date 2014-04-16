@@ -234,7 +234,7 @@ Game.prototype.draw_logo = function() {
 };
 Game.prototype.draw_bac2 = function() {
   this.context.fillStyle = "#ffffff";
-  this.context.fillRect(0,0,this.canvas.width,30); 
+  this.context.fillRect(0,0,this.canvas.width/this.scale,300); 
 };
   /*
   var width = this.canvas.width, 
