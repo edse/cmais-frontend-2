@@ -186,9 +186,9 @@
                   <div class="modal-body">   
                   	 <div class="btn-group fasedownload"> 
                   	   <h2>Clique para <br>a atividade!</h2>  
-                  	 	 <button type="button" class="botoes btn-download1" id="fase1" style="display:none;"></button>
-                  	 	 <button type="button" class="botoes btn-download2" id="fase2" style="display:none;"></button>
-                  	 	 <button type="button" class="botoes btn-download3" id="fase3" style="display:none;"></button>
+                  	 	 <a href="http://cmai.com.br/vilasesamo/atividades/quebra-cabeca-vila-sesamo-fase-01" target="_blank" class="botoes btn-download1" id="fase1" style="display:none;"></a>
+                  	 	 <a href="http://cmai.com.br/vilasesamo/atividades/quebra-cabeca-vila-sesamo-fase-02" target="_blank" class="botoes btn-download2" id="fase2" style="display:none;"></a>
+                  	 	 <a href="http://cmai.com.br/vilasesamo/atividades/quebra-cabeca-vila-sesamo-fase-03" target="_blank" class="botoes btn-download3" id="fase3" style="display:none;"></a>
 
                      </div>
                   </div>
