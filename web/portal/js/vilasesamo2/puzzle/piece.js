@@ -121,7 +121,8 @@ Piece.prototype.draw = function() {
     if(this.position.y<0){
       this.position.y = 0;
     }
-    console.log(this.position.x/this.game.scale);
+    //if(this.position.x/this.game.scale)
+    //console.log(this.position.x/this.game.scale);
     
     //console.log(this.position.y);
     //console.log($("#grid-size").height());
