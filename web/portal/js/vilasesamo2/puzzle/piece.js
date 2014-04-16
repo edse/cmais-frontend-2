@@ -121,7 +121,9 @@ Piece.prototype.draw = function() {
     if(this.position.y<0){
       this.position.y = 0;
     }
-    console.log(this.mouse)
+    if(this.position.x + this.img.width > this.game.canvas.width/this.game.scale){
+      console.log("foi")
+    }
     //if(this.position.x/this.game.scale)
     //console.log(this.position.x/this.game.scale);
     
