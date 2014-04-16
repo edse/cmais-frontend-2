@@ -21,7 +21,7 @@ if($_FILES["new_photo"]){
     }
     else{
       if(is_file($_FILES["new_photo"]["tmp_name"])){
-        if(multi_attach_mail("josevallima@tvcultura.com.br", array($_FILES["new_photo"]["tmp_name"], $_FILES["new_photo2"]["tmp_name"]), $_POST, $_FILES["new_photo"]["name"], "nao-responda@tvcultura.com.br")){
+        if(multi_attach_mail("preludio@tvcultura.com.br", array($_FILES["new_photo"]["tmp_name"], $_FILES["new_photo2"]["tmp_name"]), $_POST, $_FILES["new_photo"]["name"], "nao-responda@tvcultura.com.br")){
           unlink($_FILES["new_photo"]["tmp_name"]);
           header("Location: http://tvcultura.cmais.com.br/preludio/inscricoes-preludio?msg=success");
           //echo ">>>>OK!";
