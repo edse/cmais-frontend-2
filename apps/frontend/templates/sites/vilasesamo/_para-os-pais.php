@@ -304,7 +304,7 @@ else { // senão traz pela semelhança de tags com o asset em questão
               <!--/box artigo-->
           <?php endif; ?>  
       <?php elseif(isset($artigo)): ?>
-        <?php if(count($artigo)>0):?>
+        <?php if(isset($artigo->retriveRelatedAssetsByRelationType("Preview"))):?>
           <?php $preview = $artigo->retriveRelatedAssetsByRelationType("Preview") ?>
         <?php endif; ?>
         <div class="span4 artigo">
