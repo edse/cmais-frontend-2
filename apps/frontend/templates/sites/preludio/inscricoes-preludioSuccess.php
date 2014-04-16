@@ -489,9 +489,9 @@
 
 <p>1. Serão escolhidos 24 (vinte e quatro) candidatos finalistas. Em cada programa da etapa classificatória concorrerão até 4 (quatro) participantes, cuja ordem de apresentação obedecerá a critérios da direção do programa. </p>
 
-<p.2. Em todas as provas os candidatos serão acompanhados por orquestra.</p>
+<p>2. Em todas as provas os candidatos serão acompanhados por orquestra.</p>
 
-<p.3. Pelo julgamento inapelável e irrecorrível de Comissão Julgadora designada pela Fundação Padre Anchieta, será classificado um candidato por eliminatória, totalizando seis semifinalistas. Para as duas semifinais participarão oito candidatos: seis deles escolhidos pelos jurados durante as eliminatórias e outros dois selecionados através de repescagem dentre os que não venceram a fase eliminatória. Dos oito semifinalistas sairão quatro candidatos (dois em cada semifinal). Na fase Final dos quatro candidatos finalistas sairá apenas um vencedor. </p>
+<p>3. Pelo julgamento inapelável e irrecorrível de Comissão Julgadora designada pela Fundação Padre Anchieta, será classificado um candidato por eliminatória, totalizando seis semifinalistas. Para as duas semifinais participarão oito candidatos: seis deles escolhidos pelos jurados durante as eliminatórias e outros dois selecionados através de repescagem dentre os que não venceram a fase eliminatória. Dos oito semifinalistas sairão quatro candidatos (dois em cada semifinal). Na fase Final dos quatro candidatos finalistas sairá apenas um vencedor. </p>
 
 <p>4. O dia e a ordem de apresentação dos participantes classificados para as provas eliminatórias, semifinais e final serão estabelecidos pela Comissão Organizadora do programa. </p>
 
