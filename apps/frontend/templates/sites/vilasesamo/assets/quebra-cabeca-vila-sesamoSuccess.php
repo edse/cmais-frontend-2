@@ -183,16 +183,14 @@
                     <p><span id="tempodojogo" class="tempo">4 peças em 30s</span></p>
                     <span id="logo" class="logo"></span>
                   </div>
-                  <div class="modal-body">
-                   
-                
+                  <div class="modal-body">      
                     
                   </div>
                   <div class="modal-footer">
                       <div class="btn-group">
+                      <button type="button" class="botoes btn-inicio" id="inicio"> </button>
                       <button type="button" class="botoes btn-pxfase" id="next"></button>
                       <button type="button" class="botoes btn-pxfase" id="restart" style="display: none;"> </button>
-                      <button type="button" class="botoes btn-inicio" id="inicio"> </button>
                       <p><span id="stage" class="fase">Fase 1 completa!</span></p>
                       
                       

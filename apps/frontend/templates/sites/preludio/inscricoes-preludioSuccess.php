@@ -106,7 +106,7 @@
             </script>
             
             <!--form-contato-solista-->
-            <form id="form-contato-solista" method="post" action="/actions/preludio2014/submit.php" enctype="multipart/form-data">
+            <form id="form-contato-solista" method="post" action="http://app.cmais.com.br/actions/preludio2014/submit.php" enctype="multipart/form-data">
               
               <input type="hidden" name="tipo" value="Solista" />
               <input type="hidden" name="return_url" value="http://tvcultura.cmais.com.br/preestreia/inscricao-efetuada-com-sucesso" />
@@ -329,22 +329,22 @@
                 <div  style="display: hidden;">
                   <div class="linha t5">  
                     <label>Nome da Obra</label><br/>
-                    <input type="text" name="obra1" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-1" />
+                    <input type="text" name="obra1" data-default="" value="" id="obra-1" />
                   </div>
                                
                   <div class="linha t5" >
                     <label>Compositor</label><br/>
-                    <input type="text" name="compositor1" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-1" />
+                    <input type="text" name="compositor1" data-default="" value="" />
                   </div>
                  
                   <div class="linha t5">
                     <label>Movimentos</label><br/>
-                    <input type="text" name="movimentos1" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-1" />
+                    <input type="text" name="movimentos1" data-default="" value="" />
                   </div>
                   
                   <div class="linha t2">  
                     <label>Duração</label><br/>
-                    <input type="text" name="duracao1" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-1" />
+                    <input type="text" name="duracao1" data-default="" value="" id="duracao-1" />
                   </div>
                   
                   <div class="linha t5">  
@@ -357,22 +357,22 @@
 
                   <div class="linha t5">  
                     <label>Nome da Obra</label><br/>
-                    <input type="text" name="obra2" data-default="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" value="Ex.: Partita No. 3 em Mi Maior - BWV: 1006" id="obra-2" />
+                    <input type="text" name="obra2" data-default="" value="" id="obra-2" />
                   </div>
                                
                   <div class="linha t5" >
                     <label>Compositor</label><br/>
-                    <input type="text" name="compositor2" data-default="Ex.: J.S. Bach" value="Ex.: J.S. Bach" id="compositor-2" />
+                    <input type="text" name="compositor2" data-default="" value="" id="compositor-2" />
                   </div>
                  
                   <div class="linha t5">
                     <label>Movimentos</label><br/>
-                    <input type="text" name="movimentos2" data-default="Ex.: IV - Minueto" value="Ex.: IV - Minueto" id="movimentos-2" />
+                    <input type="text" name="movimentos2" data-default="" value="" id="movimentos-2" />
                   </div>
                   
                   <div class="linha t2">  
                     <label>Duração</label><br/>
-                    <input type="text" name="duracao2" data-default="Ex.: 4:07" value="Ex.: 4:07" id="duracao-2" />
+                    <input type="text" name="duracao2" data-default="" value="" id="duracao-2" />
                   </div>
                   
                   <div class="linha t5">  
@@ -459,103 +459,76 @@
                 
                <ul>
                 <li class="bold">Prelúdio 2014 regulamento</li>
-                                      
-                <!--li>‘Prelúdio 2014’ é um concurso musical que apresentará ao público jovens talentos da música clássica. No ‘Prelúdio 2014’, músicos de até 24 anos, praticantes de qualquer instrumento, e cantores de até 28 anos terão a oportunidade de se apresentar como solistas ou em conjuntos de câmara de até 8 instrumentistas ou cantores ou mistos de instrumentistas e cantores.</li>
-                <p>
-                <li class="bold">‘Prelúdio 2014’</li>
-                <li>Concurso para músicos instrumentistas, cantores líricos e conjuntos de câmara.</li>
-                <li>Conheça o regulamento que define as regras e orienta os músicos interessados em participar do programa Prelúdio 2014, a realizar-se entre agosto e dezembro de 2013.</li>
-                <p>
-                <li class="bold">REGULAMENTO</li>
-                <li>A Fundação Padre Anchieta – Centro Paulista de Rádio e TV Educativas, através de sua emissora de televisão TV Cultura – Canal 2, promove o Prelúdio 2014 - Concurso para músicos instrumentistas, cantores líricos e conjuntos de câmara, que será regido por este regulamento, cujas disposições declaram os candidatos, após a devida leitura, aceitar por ocasião da submissão de sua respectiva ficha de inscrição.</li>
-                <p>
-                <li class="bold">I - DOS OBJETIVOS:</li>
-                <li>O presente Concurso tem a finalidade incentivar jovens instrumentistas, cantores líricos e conjuntos de câmara de 3 (três) a 8 (oito) instrumentistas ou cantores ou mistos de instrumentistas e cantores. Os candidatos deverão ser brasileiros ou estrangeiros residentes no país. Os quatro instrumentistas, cantores líricos ou conjuntos de câmara que obtiverem a melhor colocação ao longo das provas eliminatórias, semifinais e final serão premiados de acordo com as normas do presente regulamento. Os professores dos primeiros colocados em cada categoria, indicados na ficha de inscrição, também serão premiados com uma viagem ao exterior (passagem aérea e hospedagem para duas pessoas).</li>
-                <p>
-                <li class="bold">II - DO PÚBLICO ALVO:</li>
-                <li>O concurso tem como público-alvo jovens instrumentistas de até 24 anos ou cantores de até 28 anos de idade. Não serão aceitas inscrições de instrumentistas que completem 25 anos ou cantores que completem 29 anos antes de 08 de dezembro de 2013.</li>
-                <li>Parágrafo único: Não será admitida, em hipótese alguma, a participação no Concurso de funcionários da instituição promotora – Fundação Padre Anchieta, membros da Comissão Organizadora e candidatos que tenham grau de parentesco ou sociedade com qualquer membro da referida Comissão.</li>
-                <p>
-                <li class="bold">III - DO CRONOGRAMA:</li>
-                <li>1. As inscrições deverão ser realizadas entre os dias 15 de abril e 24 de maio de 2013. Em não havendo o número mínimo de candidatos inscritos até a data de 24 de maio de 2013, a exclusivo critério da Fundação Padre Anchieta, as inscrições poderão ser prorrogadas até o dia 31 de maio de 2013. Nesta hipótese, será devidamente divulgada a prorrogação do prazo de inscrição. Os candidatos selecionados serão contatados diretamente pela equipe de produção do Concurso. O material enviado para o programa não será devolvido.</li>
-                <li>2. Após a seleção dos candidatos, que será feita por meio da análise de vídeos, o Concurso terá início e contará com 11 (onze) etapas de apresentações públicas. Serão 8 (oito) provas eliminatórias, sendo 6 (seis) eliminatórias de solistas e  2 (duas) eliminatórias de conjuntos; 2 (duas) provas semifinais e 1 (uma) prova final. As datas das apresentações públicas que compõem o Concurso serão definidas e previamente divulgadas pela Comissão Organizadora. Os ensaios e a realização das provas ocorrerão entre os meses de agosto e dezembro de 2013.</li>
-                <li>3. A premiação será concedida aos vencedores quando da prova final do Concurso, em que participarão os quatro candidatos selecionados nas provas eliminatórias e semifinais.</li>
-                <p>
-                <li class="bold">IV - DA INSCRIÇÃO E ENVIO DE MATERIAL</li>
-                <li>1. As inscrições serão feitas por meio de fichas disponíveis para esse fim no site do Concurso: cmais.com.br/preestreia.</li> 
-                <li>2. Junto com a ficha de inscrição, os candidatos deverão anexar uma foto recente, um currículo artístico de apenas uma lauda, a cópia de documento de identidade, com foto. Na ficha de inscrição os candidatos deverão indicar 3 (três) links que darão acesso aos vídeos contendo as gravações de 3 (três) obras diferentes. Estas 3 (três) obras devem integrar a lista de 8 (oito) obras que integram o repertório a ser apresentado das etapas eliminatória e semifinal do Concurso. Não serão aceitos vídeos de peças inscritas para a etapa final do concurso.</li> 
-                <li>3. Cada candidato deverá gravar 3 (três) vídeos contendo 3 (três) obras de até 5 (cinco) minutos cada e de estilos diferentes para que melhor se avalie o candidato. Cada obra deverá ter a duração mínima de 3 (três) minutos e  máxima de 5 (cinco) minutos. As 3 (três) obras poderão, no caso de instrumentistas solistas ou cantores, ter acompanhamento de piano ou serem escritas para instrumento / voz solo. Os conjuntos de câmara – vocais ou instrumentais ou mistos – também deverão apresentar 3 (três) obras que deverão ter, cada uma, a duração mínima de 3 (três) minutos e máxima de 5 (cinco) minutos  e deverão ser de estilos diferentes para que melhor se avalie seu desempenho. As obras indicadas na ficha de inscrição deverão obrigatoriamente corresponder àquelas gravadas em vídeo. As 3 (três) obras gravadas deverão estar incluídas na relação de obras que o candidato executará, se escolhido, nas provas eliminatórias e/ou semifinais.</li>  
-                <li>4. Os vídeos especificados no item 3 devem ser postados no Youtube. Não serão aceitos vídeos em DVD ou em outro formato. </li> 
-                <li>5. Será considerada válida a inscrição enviada completa (ficha de inscrição preenchida, foto, currículo, cópia de documento e links de acesso à gravação) até o dia 24 de maio de 2013. Não serão aceitas inscrições enviadas com qualquer um dos itens faltantes. Também não serão permitidos envios posteriores de materiais ou requisitos complementares.</li>
-                <li>6. Os instrumentistas ou cantores solistas deverão indicar na ficha de inscrição 12 (doze) obras diferentes, sendo:</li>
-                <li>a)  8 (oito) obras (ou movimentos de obras), de estilos contrastantes para candidatos instrumentistas, ou 8 (oito) obras ou árias, de estilos contrastantes para os candidatos cantores, com duração mínima de 3 (três) minutos e máxima de 5 (cinco) minutos cada, das quais 2 (duas)  serão apresentadas pelos candidatos na fase eliminatória do Concurso e 2 (duas) serão apresentadas na fase semifinal. As peças a serem apresentadas no Concurso serão escolhidas pela Comissão de Seleção e comunicadas a cada um dos candidatos. O repertório escolhido, se originalmente escrito com acompanhamento de orquestra, será apresentado com redução para piano.</li>
-                <li>b)  4 (quatro) obras (ou movimentos de concertos), de estilos contrastantes, para candidatos instrumentistas, ou 4 (quatro) árias ou obras, de estilos contrastantes,  para os candidatos cantores, com a duração mínima de 7 (sete) minutos e máxima de 10 minutos cada, a serem interpretadas pelo candidato, na prova final, que será feita com a Orquestra do Conservatório de Tatuí. O repertório a ser apresentado na etapa final será escolhido pela Comissão de Seleção.
-                <br>Na prova final, os candidatos instrumentistas poderão fazer combinações de dois ou mais movimentos do mesmo concerto, e os candidatos cantores poderão fazer combinações de duas ou mais árias ou canções de um ciclo para atingir o total de minutos estipulado. Cada uma dessas combinações representará uma das 4 opções a serem preenchidas.</li>
-                <li>7. Na prova semifinal, o candidato cantor ou instrumentista deverá interpretar duas obras diferentes daquelas apresentadas na prova eliminatória, escolhidas dentre as 8 (oito) indicadas no ato da inscrição. Em todas as etapas, a escolha do repertório será feita pela Comissão de Seleção.</li>
-                <li>8. Os conjuntos de câmara – vocais, instrumentais ou mistos – deverão indicar na ficha de inscrição 12 (doze) obras diferentes, sendo:</li>
-                <li>a) 8 (oito) obras(ou movimentos de obras), de estilos contrastantes, com duração de no mínimo 3 (três) minutos e no máximo 5 (cinco) minutos cada, das quais 2 (duas)  serão apresentadas pelos candidatos na fase eliminatória do Concurso. As 2 (duas) obras serão escolhidas pela Comissão de Seleção e comunicadas a cada um dos candidatos.</li>
-                <li>b) 4 (quatro)  obras instrumentais ou vocais ou mistas contrastantes com duração mínima de 7 (sete) minutos e máxima de 10 minutos cada a serem interpretadas pelo conjunto concorrente na prova final. O movimento ou obra a ser apresentado pelo candidato na prova final, escolhido entre os 4 (quatro) sugeridos pelo candidato, será definido pela Comissão de Seleção.</li>
-                <br>Na prova final, os conjuntos poderão fazer combinações de dois ou mais movimentos do mesmo concerto ou obra para atingir o total de minutos estipulado. Cada uma dessas combinações representará uma das 4 opções a serem preenchidas.
-                <br>Os conjuntos de câmara deverão se apresentar na Final do Concurso sem a participação da Orquestra. 
-                <li>9. O candidato responderá pela veracidade das informações enviadas. O fornecimento de informações falsas, imprecisas ou dúbias, ou inautenticidade do material gravado ou de imagem, resultará na desclassificação sumária e inapelável do candidato. A não observância de qualquer dos requisitos estipulados neste regulamento acarretará o cancelamento automático da inscrição, sem apreciação do trabalho.</li>
-                <li>10. É necessário muita atenção ao preencher a ficha de inscrição: todos os itens devem ser preenchidos corretamente. As informações contidas na ficha de inscrição serão utilizadas para divulgação e premiação. Os dados não poderão ser alterados após o término do prazo de inscrição.</li>
-                <li>11. Será aceita somente uma inscrição por candidato.</li>
-                <li>12. Não será necessário pagamento de taxa de inscrição.</li>
-                <li>13. No caso do candidato ser menor de 18 anos, deverão ser preenchidos na ficha de inscrição, os dados do responsável legal no campo destinado à isso.</li>
-                <li>14. 14. A inscrição de um músico para participar do Concurso implica na aceitação de todos os itens deste regulamento e na assinatura do Termo de Compromisso que regulará a participação no evento.</li>
-                <p>
-                <li class="bold">V. DO PROCESSO SELETIVO E ELIMINATÓRIO</li>
-                <li>1. A escolha dos músicos que se apresentarão no Concurso, bem como o repertório a ser apresentado pelos candidatos será efetuada pelo critério inapelável e irrecorrível da Comissão de Seleção, previamente designada pela direção do programa, não cabendo qualquer tipo de recurso. Os profissionais que integrarão tal Comissão serão conhecidos até o dia 30 de abril de 2013 e terão seus nomes divulgados no site do programa.</li>
-                <li>2. Serão escolhidos 24 (vinte e quatro) candidatos finalistas. Em cada programa da etapa classificatória concorrerão até 3 (três) participantes, cuja ordem de apresentação obedecerá a critérios da direção do programa. Os participantes poderão ser solistas (instrumentistas ou cantores) ou conjuntos de câmara (instrumentais ou vocais) com de 3 (três) até 8 (oito) integrantes.</li>
-                <li>3. Nas provas eliminatórias e semifinais os candidatos instrumentistas e cantores serão acompanhados por pianistas que serão oferecidos pela Comissão Organizadora. Serão afixados ensaios em número suficiente para que haja entrosamento entre os candidatos e os pianistas acompanhadores.</li>
-                <li>4. A equipe de produção do programa entrará em contato com os candidatos selecionados para informar as obras a serem executadas na prova eliminatória. A partir dessa data, os candidatos terão prazo de até 10 (dez) dias para enviar por correio ou por e-mail cópia das partes do pianista acompanhador. A lista dos classificados será publicada no site do programa até o dia 10 de julho.</li>
-                <li>5. Pelo julgamento inapelável e irrecorrível de Comissão Julgadora designada pela Fundação Padre Anchieta, apenas um candidato de cada uma das modalidades elencadas no item I do presente regulamento (solistas ou conjuntos de câmaras) será escolhido em cada etapa eliminatória. Os candidatos da categoria solistas selecionados na fase eliminatória participarão das semifinais. De cada uma destas, será escolhido um candidato que concorrerá na Final. Os candidatos da categoria conjuntos de câmara, selecionados na fase eliminatória, passam para a fase Final. Não haverá semifinal para os conjuntos de câmara.</li>
-                <li>6. O dia e a ordem de apresentação dos participantes classificados para as provas eliminatórias, semifinais e final serão estabelecidos pela Comissão Organizadora do programa.</li>
-                <li>7. Os resultados finais do Concurso serão determinados pelo julgamento inapelável e irrecorrível de Comissão Julgadora, designada pela direção da Fundação Padre Anchieta.</li>
-                <li>8. Os músicos, acompanhantes e os critérios para a apresentação dos participantes classificados serão determinados exclusivamente pela direção do programa.</li>
-                <li>9. Em todas as etapas e fases do Concurso, os concorrentes deverão dirigir-se diretamente à Comissão Organizadora do programa para qualquer providência que disser respeito à sua participação, não sendo aceitos intermediários, ainda que por procuração, exceção feita aos participantes menores de 18 anos.</li>
-                <li>10. Em havendo necessidade de transporte aéreo e hospedagem dos concorrentes, assim como de um acompanhante, no caso de candidatos menores de 18 anos, este será providenciado pela produção do programa.</li>
-                <li>11. O concorrente inscrito que não respeitar o presente Regulamento Geral do Concurso ou provocar em qualquer fase atos que possam prejudicar seu andamento poderá, a critério da Comissão Organizadora do programa, ser desclassificado em caráter inapelável e irrecorrível.</li>
-                <p>
-                <li>VI. DA PREMIAÇÃO</li>
-                <li>1. Serão concedidos prêmios aos quatro finalistas. Os valores dos prêmios são os seguintes: (*)</li>
-                <li class="bold">Categoria solista:</li>
-                <p>
-                <li class="bold">1º colocado:</li> 
-                <li>a)  R$ 40.000,00 (quarenta mil reais)*;</li>
-                <li>b)  5 (cinco) concertos na Temporada de Concertos de 2014 nos Teatros do Sesi São Paulo.</li>
-                <p>
-                <li class="bold">2º colocado: </li>
-                <li>a)  R$ 20.000,00 (vinte mil reais)*;</li>
-                <li>b)  2 (dois) concertos na Temporada de Concertos de 2014 nos Teatros do Sesi São Paulo.</li>
-                <p>
-                <li class="bold">Categoria conjunto:</li>
-                <p>                       
-                 <li class="bold">1º colocado:</li> 
-                <li>a)  R$ 40.000,00 (quarenta mil reais)*;</li>
-                <li>b)  5 (cinco) concertos na Temporada de Concertos de 2014 nos Teatros do Sesi São Paulo.</li>
-                <p>
-                <li class="bold">2º colocado: </li>
-                <li>a) R$ 20.000,00 (vinte mil reais)*;</li>
-                <li>b) 2 (dois) concertos na Temporada de Concertos de 2014 nos Teatros do Sesi São Paulo.</li>    
-                <li>(*) dos valores atribuídos aos quatro vencedores serão descontados os impostos previstos em lei.</li>
-                 <p>
-                <li>2. Serão concedidos prêmios aos professores dos primeiros colocados em cada categoria, desde que indicados na ficha de inscrição e até a data final desta, 24 de maio de 2013 ou até 31 de maio de 2013, caso tenha havido a prorrogação do prazo de inscrição pela Fundação Padre Anchieta</li>
-                <li>Ao professor do 1º colocado na categoria solista, cujo nome tenha sido indicado na ficha de inscrição, serão concedidas 2 (duas) passagens aéreas de ida e volta a Nova York ou Londres (professor e acompanhante) e o valor correspondente a 6 (seis) diárias de hotel na cidade escolhida. As despesas relativas à obtenção de vistos (se necessários), transporte local e alimentação serão cobertas pelo próprio premiado.</li>
-                <li>Ao professor do 1º colocado na categoria conjunto de câmara, cujo nome tenha sido indicado na ficha de inscrição, serão concedidas 2 (duas) passagens aéreas de ida e volta a Nova York ou Londres (professor e acompanhante) e o valor correspondente a 6 (seis) diárias de hotel na cidade escolhida. As despesas relativas à obtenção de vistos (se necessários), transporte local e alimentação serão cobertas pelo próprio premiado.</li>
-                <li>As passagens aéreas serão emitidas em dezembro de 2013 e deverão ser utilizadas até junho de 2014.</li>
-                <li>O valor correspondente às 6 (seis) diárias de hotel será determinado pela Comissão Organizadora e será concedido ao professor no mês de dezembro de 2013</li>
-                <li>Os professores contemplados poderão escolher dentre as duas opções acima, a cidade de destino.</li>
-                <li>(*) dos valores atribuídos aos quatro vencedores serão descontados os impostos previstos em lei. </li>
+                <p>A Fundação Padre Anchieta – Centro Paulista de Rádio e TV Educativas, doravante Fundação Padre Anchieta, através de sua emissora de televisão TV Cultura – Canal 2, promove o PRELÚDIO 2014 - concurso para solistas e cantores de até 28 anos - que será regido por este regulamento, cujas disposições declaram os candidatos, após a devida leitura, aceitar por ocasião da submissão de sua respectiva ficha de inscrição. </p>
 
-                <li class="bold">VII. DAS GRAVAÇÕES E DIREITOS DE IMAGEM, NOME, VOZ E INTERPRETAÇÃO</li>
-                <li>1. As apresentações do Concurso serão transmitidas pela TV Cultura, emissora da Fundação Padre Anchieta – Centro Paulista de Rádio e TV Educativas e poderão também ser videogravadas, audiogravadas, filmadas ou fotografadas por quem esta indicar para posterior reprodução e a seu critério.</li>
-                <li>2. Ficam cientes os candidatos escolhidos que serão objeto de entrevistas e reportagens a serem realizadas em suas casas, escolas e comunidade  para exibição em TV aberta, através da TV Cultura, parceiras, afiliadas, retransmissoras ou emissoras a ela conveniadas, independentemente do número de exibições realizadas ou de território de abrangência e que a adesão ao presente concurso implicará em expressa e automática autorização de captação, divulgação e reprodução de sua imagem, nome, voz, interpretação e demais elementos de personalidade.</li>
-                <p>
-                <li>CONSIDERAÇÕES FINAIS</li>
-                <li>A Fundação Padre Anchieta – Centro Paulista de Rádio e TV Educativas reserva para si o direito de modificar, alterar e/ou cancelar qualquer item do presente Regulamento e a dar divulgação ao mesmo da maneira que julgar conveniente.</li>
-                <li>Os casos omissos por este Regulamento serão decididos pela Comissão Organizadora do Concurso.</li>
-                <li class="bold">São Paulo, março de 2013.</li-->
+<p>I - DOS OBJETIVOS E DOS REQUISITOS: </p>
+
+<p>O presente Concurso tem a finalidade de incentivar jovens instrumentistas e cantores.</p>
+
+<p>Os candidatos deverão ser brasileiros ou estrangeiros residentes no país e deverão ter até 28 (vinte e oito) anos de idade completos até a data de inscrição do Concurso. </p>
+
+<p>Eventuais faltas e atrasos do Candidato nas fases do Concurso, poderão ser considerados pela Fundação Padre Anchieta como motivo justo para desclassificação do Concurso, a seu exclusivo critério.</p>
+
+<p>O candidato que obtiver a melhor colocação ao longo das provas eliminatórias, semifinais e final será premiado de acordo com as normas do presente regulamento. </p>
+
+
+<p>II - DO CRONOGRAMA: </p>
+
+<p>1. Após a seleção, os candidatos se apresentarão com orquestra em 6 (seis) eliminatórias, 2 (duas) semifinais e uma final na Sala SP. </p>
+
+<p>2. As datas das apresentações públicas que compõem o Concurso serão definidas e previamente divulgadas pela Comissão Organizadora. Os ensaios e a realização das provas ocorrerão entre os meses de maio e dezembro de 2014. </p>
+
+<p>3.A premiação será concedida ao vencedor quando da prova final do Concurso, em que participarão os quatro selecionados nas provas semifinais.</p> 
+
+<p>4.O candidato responderá pela veracidade das informações enviadas. O fornecimento de informações falsas, imprecisas ou dúbias, ou inautenticidade do material gravado ou de imagem, resultará na desclassificação sumária e inapelável do candidato. A não observância de qualquer dos requisitos estipulados neste regulamento acarretará o cancelamento automático da inscrição, sem apreciação do trabalho.</p>
+
+<p>.5.A inscrição do candidato para participar do Concurso implica na aceitação de todos os itens deste regulamento. </p>
+
+
+<p>III. DO PROCESSO SELETIVO E ELIMINATÓRIO </p>
+
+<p>1. Serão escolhidos 24 (vinte e quatro) candidatos finalistas. Em cada programa da etapa classificatória concorrerão até 4 (quatro) participantes, cuja ordem de apresentação obedecerá a critérios da direção do programa. </p>
+
+<p.2. Em todas as provas os candidatos serão acompanhados por orquestra.</p>
+
+<p.3. Pelo julgamento inapelável e irrecorrível de Comissão Julgadora designada pela Fundação Padre Anchieta, será classificado um candidato por eliminatória, totalizando seis semifinalistas. Para as duas semifinais participarão oito candidatos: seis deles escolhidos pelos jurados durante as eliminatórias e outros dois selecionados através de repescagem dentre os que não venceram a fase eliminatória. Dos oito semifinalistas sairão quatro candidatos (dois em cada semifinal). Na fase Final dos quatro candidatos finalistas sairá apenas um vencedor. </p>
+
+<p>4. O dia e a ordem de apresentação dos participantes classificados para as provas eliminatórias, semifinais e final serão estabelecidos pela Comissão Organizadora do programa. </p>
+
+<p>5. O concorrente inscrito que não respeitar o presente Regulamento Geral do Concurso ou provocar em qualquer fase atos que possam prejudicar seu andamento poderá, a critério da Comissão Organizadora do programa, ser desclassificado em caráter inapelável e irrecorrível. </p>
+
+<p>IV. DA PREMIAÇÃO </p>
+
+<p>Ao vencedor final, que será escolhido na etapa final do Concurso, será concedido um prêmio não passível de transferência para terceiros, qual seja:
+<br>- uma bolsa de estudos de alemão na Alemanha com validade até dezembro de 2015, oferecida pelo Instituto Goethe, que inclui as despesas de transporte aéreo e acomodação.</p>
+<p>Não será permitida a troca do prêmio por qualquer outro bem. Caso o Participante Ganhador venha a ter qualquer problema que o impeça de receber o prêmio, não será possível a reclamação de qualquer indenização ou compensação pela perda do prêmio.</p>
+
+<p>V. DAS GRAVAÇÕES E DIREITOS DE IMAGEM, NOME, VOZ E INTERPRETAÇÃO </p>
+
+<p>1. As apresentações do Concurso serão transmitidas pela TV Cultura, emissora da Fundação Padre Anchieta e poderão também ser videogravadas, audiogravadas, filmadas ou fotografadas por quem esta indicar para posterior reprodução e a seu critério. </p>
+
+<p>2. Ficam cientes os candidatos escolhidos que serão objeto de entrevistas e reportagens a serem realizadas em suas casas, escolas e comunidade para exibição em TV aberta, através da TV Cultura, parceiras, afiliadas, retransmissoras ou emissoras a ela conveniadas, independentemente do número de exibições realizadas ou de território de abrangência e que a adesão ao presente concurso implicará em expressa e automática autorização de captação, divulgação e reprodução de sua imagem, nome, voz, interpretação e demais elementos de personalidade. </p>
+
+<p>3. O(s) Candidato(s) individual e coletivamente autoriza(m) à Fundação gratuitamente, em caráter exclusivo, irrevogável, irretratável, definitivo e universal a divulgação e o uso de seu(s) nome(s), imagem(ns) e voz(es) e de suas interpretações nos Programas por ela produzidos e exibidos e em quaisquer obras audiovisuais por ela produzidas, podendo a Fundação, portanto, a seu exclusivo critério, diretamente ou através de terceiros por ela autorizados, utilizar as referidas obras audiovisuais livremente, bem como seus extratos, trechos ou partes, podendo, exemplificativamente, adaptá-las para fins de produção de obras audiovisuais novas, obras audiovisuais para fins de exibição em circuito cinematográfico, obras literárias, peças teatrais e/ou peças publicitárias, utilizá-las, para produção de matéria promocional em qualquer tipo de mídia, inclusive impressa, seja para fins de divulgação das obras audiovisuais, para a composição de qualquer produto ligado às mesmas (tais como, mas não limitados a capas de CD, DVD, Blu-Ray, “homevideo”, DAT, entre outros), assim como produção do “making of” das obras audiovisuais; fixá-las em qualquer tipo de suporte material, tais como películas cinematográficas de qualquer bitola, CD (“compact disc”), CD ROM, CD-I (“compact-disc” interativo), “homevideo”, DAT (“digital audio tape”), DVD (“digital vídeo disc”), Blu-ray e suportes de computação gráfica em geral, ou armazená-las em banco de dados, exibi-las através de projeção em tela em casa de frequência coletiva ou em locais públicos, com ou sem ingresso pago, transmiti-la via rádio e/ou televisão de qualquer espécie (televisão aberta ou televisão por assinatura, através de todas as formas de transporte de sinal existentes, exemplificativamente UHF (Ultra High Frequency), VHF (Very High Frequency), cabo, MMDS (Serviços de Distribuição Multiponto Multicanal), IPTV e satélite, bem como independentemente da modalidade de comercialização empregada, incluindo “pay tv”, “pay per view”, “near vídeo on demand” ou “vídeo on demand”, independentemente das características e atributos do sistema de distribuição, abrangendo plataformas analógicas ou digitais, com atributos de interatividade, ou não); comercializá-las ou alugá-las ao público em qualquer suporte material existente, promover ações de merchandising ou veicular propaganda, bem como desenvolver qualquer atividade de licenciamento de produtos e/ou serviços derivados das obras audiovisuais, disseminá-los através da Internet e/ou telefonia, fixa e/ou móvel, circuito interno, ceder os direitos autorais sobre as obras audiovisuais a terceiros, para qualquer espécie de utilização, ou ainda dar-lhes qualquer outra utilização que proporcione à Fundação Padre Anchieta qualquer espécie de vantagem econômica. </p>
+  <p>4. Nenhuma dessas utilizações previstas anteriormente tem limitação de tempo ou de número de vezes, podendo ocorrer no Brasil e/ou no exterior, sem que seja devido ao Candidato qualquer remuneração ou compensação.</p> 
+ <p>5. A autorização ora concedida pelo Candidato para a Fundação Padre Anchieta entra em vigor no ato da inscrição do Candidato, e assim perdurará por todo o prazo de proteção da obra audiovisual. Entende-se por prazo de proteção legal da obra aquele estabelecido na Lei 9.610/98. </p>
+ <p>6. Todo o material enviado à Fundação Padre Anchieta não será devolvido. </p>
+
+<p>7. A Fundação Padre Anchieta fica autorizada a executar livremente a montagem do Concurso e do Programa, proceder aos cortes e às fixações e reproduções necessárias.</p>
+
+
+<p>VI. CONSIDERAÇÕES FINAIS </p>
+
+<p>A Fundação Padre Anchieta reserva para si o direito de modificar, alterar e/ou cancelar qualquer item do presente Regulamento e a dar divulgação ao mesmo da maneira que julgar conveniente. </p>
+
+<p>Os casos omissos por este Regulamento serão decididos pela Comissão Organizadora do Concurso. </p>
+
+<p>A Fundação Padre Anchieta poderá, a seu exclusivo critério e a qualquer tempo, suspender e/ou cancelar definitivamente o Concurso, sem que seja devido ao Candidato qualquer compensação.</p>
+<p>O presente Regulamento será regido e interpretado pelas leis brasileiras, ficando eleito o Foro Central de São Paulo, para dirimir eventuais dúvidas oriundas do presente, com renúncia de qualquer outro, por mais privilegiado que venha a ser.</p>
+
+
+<p>São Paulo, 15 de abril de 2014.</p>                      
+                
              </ul>
               <p>      
               </div>
@@ -609,7 +582,7 @@
         <!-- /DIREITA -->
         <!-- rodape preestreia-->
         <div class="grid3 apoio">
-          <img src="http://cmais.com.br/portal/images/capaPrograma/preestreia/rodape_preestreia.jpg" />  
+          <img src="http://midia.cmais.com.br/displays/d79e3a6ca8284083bd5aaec356dbf2f6e81783fe.jpg" alt="cartela de logos">
          </div>
          <!-- /rodape preestreia-->
         
