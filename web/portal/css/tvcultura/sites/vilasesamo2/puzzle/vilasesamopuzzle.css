@@ -31,9 +31,12 @@
 .btn-download1,
 .btn-download2,
 .btn-download3{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_download.png) no-repeat;width: 85px;height: 83px}
-.btn-download1{}
-.btn-download2{}
-.btn-download3{}
+.btn-download1{background-position: 0 0;}
+.btn-download1:hover{background-position: -84px 0;}
+.btn-download2{background-position: 1px -82px}
+.btn-download2:hover{background-position: -84px -82px;}
+.btn-download3{background-position: 1px -166px;}
+.btn-download3:hover{background-position: -84px -166px;}
 
 .tempo{color:#FCE90E;font-size:40px;font-weight: bold;text-shadow: 3px 1px 3px #5074E5;line-height:normal;}
 .fase{color:#2F5BAA;text-transform: uppercase;font-weight: bolder;font-size: 40px;text-align: left;width: 89px;padding: 0;margin-top: -45px;display: block;}
