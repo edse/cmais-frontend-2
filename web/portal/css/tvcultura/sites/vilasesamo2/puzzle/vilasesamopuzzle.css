@@ -27,7 +27,7 @@
 .btn-inicio{	width: 92px;	height: 83px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_inicio.png) no-repeat 0 top;box-shadow: none;transition:none;}
 .btn-inicio:hover{background-position: 0 bottom;background-color: transparent;transition:none;}
 .btn-fullscreen{display:none;width: 250px;	height: 32px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/fullscreen.png) no-repeat;position: absolute;left: 40%;color:#2F5BAA;text-transform: uppercase;font-weight: bolder;font-size: 20px;}
-.fasedownload{}
+.fasedownload{width:85px}
 .btn-download1,
 .btn-download2,
 .btn-download3{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_download.png) no-repeat;width: 85px;height: 83px}
