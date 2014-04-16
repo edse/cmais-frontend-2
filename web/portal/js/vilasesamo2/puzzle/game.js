@@ -33,7 +33,7 @@ function Game(canvas) {
   this.font_size = 40;
   this.scaled_width = (this.canvas.width/this.scale)/2;
   this.scaled_height = (this.canvas.height/this.scale)/2;
-  console.log('scaled_widtha: '+this.scaled_width*this.scale);
+  console.log('scaled_widtha: '+this.scaled_width*this.scale*3.2);
   console.log('scaled_height: '+this.scaled_height);
 
   
