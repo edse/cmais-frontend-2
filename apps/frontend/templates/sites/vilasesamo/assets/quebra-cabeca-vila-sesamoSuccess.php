@@ -185,7 +185,7 @@
                   </div>
                   <div class="modal-body">   
                   	 <div class="btn-group fasedownload"> 
-                  	 	<h2>Clique para ir para a<br> atividade e imprimir!</h2>  
+                  	 	<h2>Clique para<br>a atividade!</h2>  
                   	 	 <button type="button" class="botoes btn-download1" id="fase1"></button>
                   	 	 <button type="button" class="botoes btn-download2" id="fase2"></button>
                   	 	 <button type="button" class="botoes btn-download3" id="fase3"></button>
