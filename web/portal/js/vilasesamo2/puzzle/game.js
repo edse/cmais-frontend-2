@@ -132,8 +132,9 @@ Game.prototype.init = function(){
 Game.prototype.render = function() {
   
   this.draw_bg();
-  this.draw_logo();
   this.draw_bac2();
+  this.draw_logo();
+  
     
   //LOADING
   if(!this.loaded){
@@ -233,8 +234,14 @@ Game.prototype.draw_logo = function() {
 	
 };
 Game.prototype.draw_bac2 = function() {
-  this.context.fillStyle = "#ffffff";
-  this.context.fillRect(0,0,this.canvas.width/this.scale,300); 
+   var img = new Image();
+    img.src = 'http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/logo.png';
+  if(!this.scale) this.scale = 1;
+  this.context.beginPath();
+  this.context.rect(0, 0, 200, 100);
+  this.context.lineWidth = 5;
+  this.context.strokeStyle = 'black';
+  this.context.drawImage(img, 0, 0, 200, 100);
 };
   /*
   var width = this.canvas.width, 
