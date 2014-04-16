@@ -51,7 +51,7 @@ function multi_attach_mail($to, $files, $form_data, $file_name, $sendermail) {
   $from = "Files attach <" . $sendermail . ">";
   $subject = date("d.M H:i") . " F=" . count($files);
   //$headers = "From: $from";
-  $headers = "From: Inscrição Preludio 2014";
+  $headers = "From: Inscrição Preludio 2014<inscricao@tvcultura.com.br>";
   $message = date("Y.m.d H:i:s") . "\n" . count($files) . " attachments\n\n";
   foreach($form_data as $k=>$v){
     $message .= "\n".$k.": ".$v;
@@ -65,7 +65,7 @@ function multi_attach_mail($to, $files, $form_data, $file_name, $sendermail) {
   $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\"";
 
   // multipart boundary
-  $message = "--{$mime_boundary}\n" . "Content-Type: text/plain; charset=\"iso-8859-1\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message . "\n\n";
+  $message = "--{$mime_boundary}\n" . "Content-Type: text/plain; charset=\"utf-8\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message . "\n\n";
 
   // preparing attachments
   for ($i = 0; $i < count($files); $i++) {
