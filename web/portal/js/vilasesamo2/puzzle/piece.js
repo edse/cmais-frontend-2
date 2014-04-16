@@ -37,7 +37,7 @@ function Piece(id, game, img, holder, position, initial, moveble, placed) {
   else
     this.p = -0.1;
 
-  this.tolerance = 550;
+  this.tolerance = 850;
   this.moveble = true;
   this.moving = false;
   this.placed = false;
