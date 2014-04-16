@@ -280,11 +280,11 @@ Puzzle.prototype.draw = function(){
       $(".modal-dialog").css("margin-top", "-"+$(".modal-dialog").height()/2+"px").css("margin-left", "-"+$(".modal-dialog").width()/2+"px");
       
       if(this.game.stage == this.game.puzzles.length){
-        $(".btn-pxfase").hide();
-        $(".btn-restart").show();
+        $("#next").hide();
+        $("#restart").show();
       }else{
-        $(".btn-restart").hide();
-        $(".btn-pxfase").show();
+        $("#restart").hide();
+        $("#next").show();
       }
       pauseGame();
     }
