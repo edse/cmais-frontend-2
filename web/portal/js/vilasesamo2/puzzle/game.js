@@ -162,6 +162,7 @@ Game.prototype.render = function() {
 
   //DEBUG
   if(this.debug){
+    /*
     if(this.mouse != undefined){
       document.getElementById('mx').value = this.mouse.x;
       document.getElementById('my').value = this.mouse.y;
@@ -177,7 +178,7 @@ Game.prototype.render = function() {
       document.getElementById('py').value = this.puzzle.pieces[0].position.y;
       document.getElementById('p').value = this.puzzle.num_pieces;
     }
-  
+    */
     if(this.over)
       document.getElementById('over').value = this.over.id;
     else
