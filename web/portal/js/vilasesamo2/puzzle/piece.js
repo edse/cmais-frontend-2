@@ -121,7 +121,7 @@ Piece.prototype.draw = function() {
     if(this.position.y<0){
       this.position.y = 0;
     }
-    if(this.position.x>$("#grid-size").width()){
+    if(this.mouse.x>$("#grid-size").width()){
       this.position.x = 0;
       console.log("passei")
     }
