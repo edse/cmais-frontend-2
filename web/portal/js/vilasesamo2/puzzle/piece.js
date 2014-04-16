@@ -121,6 +121,7 @@ Piece.prototype.draw = function() {
     if(this.position.y<0){
       this.position.y = 0;
     }
+    console.log(this.mouse)
     //if(this.position.x/this.game.scale)
     //console.log(this.position.x/this.game.scale);
     
