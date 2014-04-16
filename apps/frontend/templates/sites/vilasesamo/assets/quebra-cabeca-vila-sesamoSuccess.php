@@ -176,7 +176,7 @@
 
             <!-- Game modal -->
             <div id="modal-success" class="modal show" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
+              <div id="modal-dialog" class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     
@@ -185,15 +185,16 @@
                   </div>
                   <div class="modal-body">   
                   	 <div class="btn-group fasedownload"> 
-                  	 	<h2>Clique para ir para a<br> atividade e imprimir!</h2>  
-                  	 	 <button type="button" class="botoes btn-download1" id="fase1"></button>
-                  	 	 <button type="button" class="botoes btn-download2" id="fase2"></button>
-                  	 	 <button type="button" class="botoes btn-download3" id="fase3"></button>
+                  	   <h2>Clique para ir para a<br> atividade e imprimir!</h2>  
+                  	 	 <button type="button" class="botoes btn-download1" id="fase1" style="display:none;"></button>
+                  	 	 <button type="button" class="botoes btn-download2" id="fase2" style="display:none;"></button>
+                  	 	 <button type="button" class="botoes btn-download3" id="fase3" style="display:none;"></button>
+
                      </div>
                   </div>
                   <div class="modal-footer">
                       <div class="btn-group">
-                      <button type="button" class="botoes btn-inicio" id="inicio"> </button>
+                      <a href="http://cmais.com.br/vilasesamo/jogos/quebra-cabeca-vila-sesamo" class="botoes btn-inicio" id="inicio"> </a>
                       <button type="button" class="botoes btn-pxfase" id="next"></button>
                       <button type="button" class="botoes btn-restart" id="restart" style="display: none;"> </button>
                       <p><span id="stage" class="fase">Fase 1 completa!</span></p>

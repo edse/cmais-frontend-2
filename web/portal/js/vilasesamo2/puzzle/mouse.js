@@ -119,7 +119,7 @@ Mouse.prototype.onPointerMove = function(e) {
   this.event = e;
   
   //if(this.game.debug==true){
-    console.log('move: '+this.x+', '+this.y);
+    //console.log('move: '+this.x+', '+this.y);
   //}
 
 }
