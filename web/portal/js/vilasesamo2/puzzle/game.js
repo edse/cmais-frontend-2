@@ -198,10 +198,9 @@ Game.prototype.render = function() {
 
 Game.prototype.draw_bg = function() {
   if(!this.scale) this.scale = 1;
-  //this.context.fillStyle = "rgba(1, 114, 249, 1)";
-  //this.context.fillRect(0,0,this.canvas.width/this.scale,this.canvas.height/this.scale);
-  this.context.clearRect(0,0,this.canvas.width/this.scale,this.canvas.height/this.scale);
-
+  this.context.fillStyle = "rgba(1, 114, 249, 1)";
+  this.context.fillRect(0,0,this.canvas.width/this.scale,this.canvas.height/this.scale);
+ 
   if(this.placed_pieces){
     this.context.save();
     grad = this.context.createRadialGradient(this.canvas.width/this.scale/2, this.canvas.height/this.scale/2, 0, this.canvas.width/this.scale/2, this.canvas.height/this.scale/2, this.canvas.width/this.scale);
@@ -231,6 +230,10 @@ Game.prototype.draw_logo = function() {
 	this.context.drawImage(img, 10, 50, 200, 100);
 	
 	
+};
+Game.prototype.draw_bac2 = function() {
+  this.context.fillStyle = "#ffffff";
+  this.context.fillRect(0,0,this.canvas.width,30); 
 };
   /*
   var width = this.canvas.width, 
