@@ -1,4 +1,4 @@
-$('body').prepend('<div id="grid-size"></div>')
+//$('body').prepend('<div id="grid-size"></div>')
 function Game(canvas) {
   this.started = false;
   this.stage = 1;

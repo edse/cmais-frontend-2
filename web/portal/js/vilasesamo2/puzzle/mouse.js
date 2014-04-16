@@ -121,6 +121,7 @@ Mouse.prototype.onPointerMove = function(e) {
   //if(this.game.debug==true){
     console.log('move: '+this.x+', '+this.y);
     console.log(touch.x/this.game.scale);
+    //console.log(this.)
   //}
 
 }
