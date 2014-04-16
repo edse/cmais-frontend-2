@@ -324,10 +324,7 @@ Game.prototype.apply_scale = function(){
   this.context.scale(this.scale,this.scale);
   //console.log('scale: '+this.scale+' pw: '+w+' cw:'+document.getElementById('canvas').width);  
   this.resized = false;
-  var mh =  document.getElementById('modal-dialog').style.height;
-  var mw =  document.getElementById('modal-dialog').style.width;
-  console.log(mw +" - "+ mh)
-  //$(".modal-dialog").css("margin-top", "-"+$(".modal-dialog").height()/2+"px").css("margin-left", "-"+$(".modal-dialog").width()/2+"px");
+  
   //alert('scale: '+this.scale)
 };
 
