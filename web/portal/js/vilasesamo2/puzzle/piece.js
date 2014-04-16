@@ -17,6 +17,7 @@ function Piece(id, game, img, holder, position, initial, moveble, placed) {
     this.position = position;
     this.initial = initial;
     this.holder = holder;
+    this.mouse = mouse;
   }
   else{
     this.id = 0;
@@ -27,6 +28,7 @@ function Piece(id, game, img, holder, position, initial, moveble, placed) {
     this.target = null;
     this.holder = null;
     this.moveble = false;
+    this.mouse = null;
   }
   
   //for animation
@@ -121,6 +123,7 @@ Piece.prototype.draw = function() {
     if(this.position.y<0){
       this.position.y = 0;
     }
+    console.log(this.mouse)
     //if(this.position.x/this.game.scale)
     //console.log(this.position.x/this.game.scale);
     
