@@ -198,8 +198,8 @@ Game.prototype.render = function() {
 
 Game.prototype.draw_bg = function() {
   if(!this.scale) this.scale = 1;
-  //this.context.fillStyle = "rgba(1, 114, 249, 1)";
-  //this.context.fillRect(0,0,this.canvas.width/this.scale,this.canvas.height/this.scale);
+  this.context.fillStyle = "rgba(1, 114, 249, 1)";
+  this.context.fillRect(0,0,this.canvas.width*0.90/this.scale,this.canvas.height*0.90/this.scale);
 
   if(this.placed_pieces){
     this.context.save();
