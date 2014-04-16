@@ -2809,10 +2809,10 @@ EOT;
 			<id>".$a->id."</id>
 			<title><![CDATA[".$a->title."]]></title>
 			<description><![CDATA[".$a->description."]]></description>
-			<content><![CDATA[".$a->AssetContent->content."]]></content>
 			<image><![CDATA[".$image."]]></image>
 		</asset>
 		";
+		//<content><![CDATA[".$a->AssetContent->content."]]></content>
 	}
 	
 	$content.= "</tvcultura>";
