@@ -2778,4 +2778,45 @@ EOT;
 	die();	
   }
 
+
+  public function executeGingaxml(sfWebRequest $request){
+    $this->setLayout(false);
+
+	//NÃO LISTAR SITES
+	$site_not = array(5,1009,1011,1060,1119,189,914,201,184,1175,186,187,190,1124, 1253, 1215, 1143, 1329, 1330,103, 189, 67,1117, 1343);
+
+    //SELECIONAR ÚLTIMOS 30 ASSETS
+	$asset = Doctrine_Query::create()
+		->select("a.*")
+		->from("Asset a, Site s")
+		->where("s.id = a.site_id")
+		->addWhere("a.is_active = 1")
+		->addWhere("a.asset_type_id = 1")
+		->andWhereNotIn("s.id", $site_not)
+		->orderBy("a.id desc")
+		->limit(10)
+		->execute();
+	
+	//echo $asset[1]->retriveImageUrlByImageUsage("image-4-b");
+	
+	$content = '<?xml version="1.0" encoding="utf-8"?>
+		<tvcultura>
+	';
+	foreach ($asset as $key => $a) {
+		$image = $a->retriveImageUrlByImageUsage("image-4-b");
+		$content.= "
+		<asset>
+			<id>".$a->id."</id>
+			<title><![CDATA[".$a->title."]]></title>
+			<description><![CDATA[".$a->description."]]></description>
+			<image><![CDATA[".$image."]]></image>
+		</asset>
+		";
+		//<content><![CDATA[".$a->AssetContent->content."]]></content>
+	}
+	
+	$content.= "</tvcultura>";
+	die($content);
+	}
+
 }
