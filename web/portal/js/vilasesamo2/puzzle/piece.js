@@ -124,6 +124,9 @@ Piece.prototype.draw = function() {
     if(this.position.x + this.img.width > this.game.canvas.width/this.game.scale){
       console.log("foi")
     }
+    if(this.position.y + this.img.height > this.game.canvas.heght/this.game.scale){
+      console.log("tb foi")
+    }
     //if(this.position.x/this.game.scale)
     //console.log(this.position.x/this.game.scale);
     
