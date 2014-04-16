@@ -120,7 +120,7 @@ Mouse.prototype.onPointerMove = function(e) {
   
   //if(this.game.debug==true){
     console.log('move: '+this.x+', '+this.y);
-    console.log('scale:'+document.getElementById('canvas').width / this.game.original_width*3.2)
+    console.log('scale:'+document.getElementById('canvas').width / (this.game.original_width*3.2))
     //console.log(this.)
   //}
 
