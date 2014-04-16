@@ -120,7 +120,6 @@ Mouse.prototype.onPointerMove = function(e) {
   
   //if(this.game.debug==true){
     console.log('move: '+this.x+', '+this.y);
-    //console.log(this.)
   //}
 
 }
