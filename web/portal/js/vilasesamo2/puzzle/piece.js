@@ -17,7 +17,6 @@ function Piece(id, game, img, holder, position, initial, moveble, placed) {
     this.position = position;
     this.initial = initial;
     this.holder = holder;
-    this.mouse = mouse;
   }
   else{
     this.id = 0;
@@ -28,7 +27,6 @@ function Piece(id, game, img, holder, position, initial, moveble, placed) {
     this.target = null;
     this.holder = null;
     this.moveble = false;
-    this.mouse = null;
   }
   
   //for animation
