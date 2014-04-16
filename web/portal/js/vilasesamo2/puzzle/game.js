@@ -178,7 +178,7 @@ Game.prototype.render = function() {
       document.getElementById('py').value = this.puzzle.pieces[0].position.y;
       document.getElementById('p').value = this.puzzle.num_pieces;
     }
-    */
+    
     if(this.over)
       document.getElementById('over').value = this.over.id;
     else
@@ -190,7 +190,7 @@ Game.prototype.render = function() {
   
     if(this.loaded)
       document.getElementById('pp').value = this.placed_pieces.length;
-    
+    */
   }
 
 };
@@ -324,7 +324,7 @@ Game.prototype.apply_scale = function(){
   this.context.scale(this.scale,this.scale);
   //console.log('scale: '+this.scale+' pw: '+w+' cw:'+document.getElementById('canvas').width);  
   this.resized = false;
-  
+  $(".modal-dialog").css("margin-top", "-"+$(".modal-dialog").height()/2+"px").css("margin-left", "-"+$(".modal-dialog").width()/2+"px");
   //alert('scale: '+this.scale)
 };
 
