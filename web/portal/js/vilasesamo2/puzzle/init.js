@@ -5,9 +5,6 @@ if( p === 'iPad' || p === 'iPhone' || p === 'iPhone Simulator' || p === 'iPod' )
   iOS = true;
 console.log("iOS? "+iOS);
 
-var modal = document.getElementById("modal-dialog"); 
-var mh =  modal.style.height;
-var mw =  modal.style.width;
 // polyfill for animation frame
 ( function() {
   
@@ -331,7 +328,10 @@ function resizeGame() {
 
 function resizeGame() {  
   console.log("window: " + window.innerWidth + ", " + window.innerHeight);
-  
+  $( window ).resize(function() {
+    var mh = $(".modal-dialog").height();
+    var mw = $(".modal-dialog").width();
+  });
   console.log(mw +" - "+ mh)
   //$(".modal-dialog").css("margin-top", "-"+$(".modal-dialog").height()/2+"px").css("margin-left", "-"+$(".modal-dialog").width()/2+"px");
   if(game.started){

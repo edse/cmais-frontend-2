@@ -176,7 +176,7 @@
 
             <!-- Game modal -->
             <div id="modal-success" class="modal show" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div id="modal-dialog" class="modal-dialog" style="display: block!important">
+              <div id="modal-dialog" class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     
