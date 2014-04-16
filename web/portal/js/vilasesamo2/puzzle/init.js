@@ -365,7 +365,7 @@ $(function() {
   
   //$('#modal-success').modal();
     
-  $("#next").click(function() {
+  $("#next, #restart").click(function() {
     if(!iOS){
       if(game.puzzle.has_voice){
         game.puzzle.voice.pause();
