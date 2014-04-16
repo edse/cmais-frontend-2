@@ -224,10 +224,10 @@ Game.prototype.draw_logo = function() {
 	  img.src = 'http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/logo.png';
   if(!this.scale) this.scale = 1;
 	this.context.beginPath();
-	this.context.rect(this.canvas.width/this.scale - 50); 
+	this.context.rect(this.canvas.width/this.scale - 50, 50, 200, 100); 
 	this.context.lineWidth = 5;
 	this.context.strokeStyle = 'black';
-	this.context.drawImage(img, 10, 50, 200, 100);
+	this.context.drawImage(img, this.canvas.width/this.scale - 50, 50, 200, 100);
 	
 	
 };
