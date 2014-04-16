@@ -25,7 +25,7 @@ function Game(canvas) {
   this.canvas.width = Math.round(window.innerWidth);
   this.canvas.height = Math.round(window.innerHeight);
   console.log("canvas: "+this.canvas.width+", "+this.canvas.height);
-  this.original_width = this.canvas.width*3.2;
+  this.original_width = this.canvas.width;
   this.original_height = this.canvas.height;
 
   //size  
@@ -33,7 +33,7 @@ function Game(canvas) {
   this.font_size = 40;
   this.scaled_width = (this.canvas.width/this.scale)/2;
   this.scaled_height = (this.canvas.height/this.scale)/2;
-  console.log('scaled_width: '+this.scaled_width);
+  console.log('scaled_width: '+this.scaled_width*3.2);
   console.log('scaled_height: '+this.scaled_height);
 
   
