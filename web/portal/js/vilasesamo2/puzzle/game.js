@@ -286,9 +286,9 @@ Game.prototype.draw_remaining = function() {
   this.context.lineWidth = 2;
   this.context.font = "bold "+this.font_size+"px Arial";
   this.context.textBaseline = 'top';
-  this.context.textAlign = 'center';
-  this.context.strokeText("Tempo"+this.puzzle.remaining_time, 10, 150);
-  this.context.fillText("Tempo"+this.puzzle.remaining_time, 10, 150);
+  this.context.textAlign = 'left';
+  this.context.strokeText("Tempo"+ " \\n " +this.puzzle.remaining_time, 10, 150);
+  this.context.fillText("Tempo"+ " \\n " +this.puzzle.remaining_time, 10, 150);
   var metrics = this.context.measureText(this.stage+"/"+this.puzzles.length+" ");
   this.context.strokeText(this.stage+"/"+this.puzzles.length, this.canvas.width/this.scale-metrics.width, 80,80);
   this.context.fillText(this.stage+"/"+this.puzzles.length, this.canvas.width/this.scale-metrics.width, 80,80);
