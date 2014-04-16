@@ -133,7 +133,7 @@ Game.prototype.render = function() {
   
   this.draw_bg();
   this.draw_logo();
-  this.draw_logo();
+  this.draw_bac2();
     
   //LOADING
   if(!this.loaded){
