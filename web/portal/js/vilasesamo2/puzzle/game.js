@@ -303,7 +303,7 @@ Game.prototype.draw_loading = function() {
 };
 
 Game.prototype.apply_scale = function(){
-
+  console.log("resize efetuado");
   var w = this.original_width;
   var h = this.original_height;
   
