@@ -278,9 +278,13 @@ Puzzle.prototype.draw = function(){
       $("#fase1,#fase2,#fase3").hide();
       $("#fase"+this.game.stage).show();
       $(".modal-dialog").css("margin-top", "-"+$(".modal-dialog").height()/2+"px").css("margin-left", "-"+$(".modal-dialog").width()/2+"px");
-      console.log(this.game.puzzles.length)
-      if(this.game.stage == 3){
-        
+      
+      if(this.game.stage == this.game.puzzles.length){
+        $(".btn-pxfase").hide();
+        $(".btn-restart").show();
+      }else{
+        $(".btn-restart").hide();
+        $(".btn-pxfase").show();
       }
       pauseGame();
     }
