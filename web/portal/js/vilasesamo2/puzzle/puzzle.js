@@ -106,7 +106,7 @@ Puzzle.prototype.loadAssets = function() {
 };
 
 Puzzle.prototype.init = function(){
-  console.log('initing puzzle...');
+  //console.log('initing puzzle...');
   this.loaded = false;
   this.loadAssets();
   
@@ -168,14 +168,14 @@ Puzzle.prototype.draw = function(){
     $('#tempodojogo').html("Tempo <br> "+this.remaining_time);//aqui eu setei para aparecer o tempo que falta
     this.solved = false;
     
-    console.log("window:"+window.innerHeight);
-    console.log("canvas:"+$('#canvas').height());
+    //console.log("window:"+window.innerHeight);
+    //console.log("canvas:"+$('#canvas').height());
     var altura = $('#canvas').height();
     
     pauseClock();
     if(!iOS){
       if(this.has_voice && this.has_sound){
-        console.log("voice & sound");      
+        //console.log("voice & sound");      
         this.voice.addEventListener('ended', function(){
           game.puzzle.sound.play();
         });
@@ -187,7 +187,7 @@ Puzzle.prototype.draw = function(){
         game.puzzle.voice.play();
       }
       else if(this.has_voice && !this.has_sound){
-        console.log("voice only");
+        //console.log("voice only");
         this.voice.addEventListener('ended', function(){
           $("#modal-success").css("top", "0px");
           $('#modal-success').addClass("show");
@@ -196,13 +196,13 @@ Puzzle.prototype.draw = function(){
       }
       else{
         game.chimes.play();
-        console.log("none");
+        //console.log("none");
         $("#modal-success").css("top", "0px");
         $('#modal-success').addClass("show");
       }
     }
     else{
-      console.log("iOS");
+      //console.log("iOS");
       $("#modal-success").css("top", "0px");
       $('#modal-success').addClass("show");
     }
