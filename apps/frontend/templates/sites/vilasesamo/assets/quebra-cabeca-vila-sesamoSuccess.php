@@ -205,7 +205,7 @@
                 </div><!-- /.modal-content -->
               </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
-    
+    				<a href="http://cmais.com.br/vilasesamo/jogos/quebra-cabeca-vila-sesamo" class="botoes btn-inicio" id="inicio_canvas"> </a>
     <!-- Game canvas -->
     <div id="game">
       <canvas id="canvas" style="display:none"></canvas>
