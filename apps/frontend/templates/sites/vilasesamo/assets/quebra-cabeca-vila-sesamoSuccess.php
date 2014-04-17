@@ -205,7 +205,7 @@
     				
     <!-- Game canvas -->
     <div id="game">
-    	<a href="http://cmais.com.br/vilasesamo/jogos/quebra-cabeca-vila-sesamo" class="botoes btn-inicio" id="inicio_canvas"> </a>
+    	<a href="http://cmais.com.br/vilasesamo/jogos/quebra-cabeca-vila-sesamo" class="botoes btn-inicio" id="inicio_canvas" style="display: none;"> </a>
       <canvas id="canvas" style="display:none"></canvas>
       <canvas id="canvas_bg" style="display:none"></canvas>
     </div>
@@ -324,7 +324,6 @@
       $('html, body').animate({
         scrollTop:parseInt($(el).offset().top)
       }, "fast");
-      
     }
     </script>
     

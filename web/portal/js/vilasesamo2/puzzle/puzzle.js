@@ -73,7 +73,7 @@ Puzzle.prototype.loadAssets = function() {
     p.onload = this.loaded_items++;
     this.placePiece(i, p, holder);
   }
-  
+  $("#inicio_canvas").show();
   //VOICE & SOUNDS
   var sounds = [];
   if(this.has_voice){
