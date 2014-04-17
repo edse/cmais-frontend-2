@@ -18,7 +18,7 @@
 .modal-footer{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/acerto.png) no-repeat transparent bottom right;border:none;height:465px;border-radius: 0 0 40px 40px;border: 0px;box-shadow:none;padding:0;}
 
 #inicio_canvas{position:fixed;z-index:99999999;right: 2%;bottom: 2%;}
-#volta_canvas{position:fixed;z-index:99999999;right: 2%;top: 12%;}
+#volta_canvas{position:fixed;z-index:99999999;right: 2%;top: 16%;}
 
 .btn-group, .btn-group-vertical{float: left;position: relative;padding: 2%;width: 21%;margin-top: 10%;}
 .btn-group .botoes{float:left;border:none}
@@ -28,9 +28,9 @@
 .btn-restart:hover{background-position: 0 -167px;background-color: transparent;transition:none;}
 .btn-inicio{	width: 92px;	height: 83px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_inicio.png) no-repeat 0 top;box-shadow: none;transition:none;}
 .btn-inicio:hover{background-position: 0 bottom;background-color: transparent;transition:none;}
-.btn-volta-canvas{	width: 92px;	height: 83px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_voltar.png) no-repeat 0 top;box-shadow: none;transition:none;}
+.btn-volta-canvas{	width: 115px;height: 114px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_voltar.png) no-repeat 0 top;box-shadow: none;transition:none;}
 .btn-volta-canvas:hover{background-position: 0 bottom;background-color: transparent;transition:none;}
-.btn-inicio-canvas{	width: 170px;	height: 170px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_inicio_canvas.png) no-repeat 0 top;box-shadow: none;transition:none;}
+.btn-inicio-canvas{	width: 170px;	height: 166px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_inicio_canvas.png) no-repeat 0 top;box-shadow: none;transition:none;}
 .btn-inicio-canvas:hover{background-position: 0 bottom;background-color: transparent;transition:none;}
 .btn-fullscreen{display:none;width: 250px;	height: 32px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/fullscreen.png) no-repeat;position: absolute;left: 40%;color:#2F5BAA;text-transform: uppercase;font-weight: bolder;font-size: 20px;}
 .fasedownload{width:85px;margin-top:25%;}
