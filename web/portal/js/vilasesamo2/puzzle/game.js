@@ -292,8 +292,8 @@ Game.prototype.draw_remaining = function() {
   this.context.strokeText(this.puzzle.remaining_time, 10, 150);
   this.context.fillText(this.puzzle.remaining_time, 10, 150);
   var metrics = this.context.measureText(this.stage+"/"+this.puzzles.length+" ");
-  this.context.strokeText(this.stage+"/"+this.puzzles.length, this.canvas.width/this.scale-metrics.width, 80,500);
-  this.context.fillText(this.stage+"/"+this.puzzles.length, this.canvas.width/this.scale-metrics.width, 80,500);
+  this.context.strokeText(this.stage+"/"+this.puzzles.length, this.canvas.width/this.scale-metrics.width-200, 80,80);
+  this.context.fillText(this.stage+"/"+this.puzzles.length, this.canvas.width/this.scale-metrics.width-200, 80,80);
   this.context.restore();
 };
 
