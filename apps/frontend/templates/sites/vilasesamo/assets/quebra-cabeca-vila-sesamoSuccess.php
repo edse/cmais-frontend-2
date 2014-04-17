@@ -184,7 +184,7 @@
                     <span id="logo" class="logo"></span>
                   </div>
                   <div class="modal-body">   
-                  	 <div class="btn-group fasedownload"> 
+                  	 <div class="btn-group fasedownload" style="display:none;"> 
                   	   <h2>Clique para <br>a atividade!</h2>  
                   	 	 <a href="http://cmais.com.br/vilasesamo/atividades/quebra-cabeca-vila-sesamo-fase-01" target="_blank" class="botoes btn-download1" id="fase1" style="display:none;"></a>
                   	 	 <a href="http://cmais.com.br/vilasesamo/atividades/quebra-cabeca-vila-sesamo-fase-02" target="_blank" class="botoes btn-download2" id="fase2" style="display:none;"></a>
