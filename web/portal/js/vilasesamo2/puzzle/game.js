@@ -200,9 +200,9 @@ Game.prototype.render = function() {
 
 Game.prototype.draw_bg = function() {
 	var gradienteamarelo = this.context.createRadialGradient(680, 250, 20, 680, 250, 60);   
-    gradient6.addColorStop(0, '#F4F201'); 
-    gradient6.addColorStop(0.8, '#E4C700');
-    gradient6.addColorStop(1, 'rgba(228,199,0,0)');
+    gradienteamarelo.addColorStop(0, '#F4F201'); 
+    gradienteamarelo.addColorStop(0.8, '#E4C700');
+    gradienteamarelo.addColorStop(1, 'rgba(228,199,0,0)');
     
   if(!this.scale) this.scale = 1;
   this.context.fillStyle = gradienteamarelo;
