@@ -207,8 +207,8 @@ Game.prototype.draw_bg = function() {
     this.context.save();
     grad = this.context.createRadialGradient(this.canvas.width/this.scale/2, this.canvas.height/this.scale/2, 0, this.canvas.width/this.scale/2, this.canvas.height/this.scale/2, this.canvas.width/this.scale);
     if(this.puzzle.num_pieces > this.placed_pieces.length){
-      grad.addColorStop(1, ['rgb(', 256, ', ', 256, ', ', 256, ')'].join(''));
-      grad.addColorStop(0, ['rgb(', 100, ', ', 100, ', ', 100, ')'].join(''));
+      grad.addColorStop(1, ['rgb(', 256, ', ', 256, ', ', 50, ')'].join(''));
+      grad.addColorStop(0, ['rgb(', 100, ', ', 100, ', ', 0, ')'].join(''));
     }else{
       grad.addColorStop(0, ['rgb(', 256, ', ', 256, ', ', 256, ')'].join(''));
       grad.addColorStop(1, ['rgb(', 100, ', ', 100, ', ', 100, ')'].join(''));
