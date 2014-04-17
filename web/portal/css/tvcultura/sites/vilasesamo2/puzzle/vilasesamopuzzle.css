@@ -90,8 +90,8 @@
    .fase{text-align: center;font-size: 24px;}
    .btn-pxfase {width: 134px;height: 134px;background-size: 88%;}
    .btn-pxfase:hover {width: 134px;height: 134px;background-size: 88%;}
-   .btn-restart {width: 134px;height: 134px;background-size: 88%;}
-   .btn-restart:hover {width: 134px;height: 134px;background-size: 88%;}
+   .btn-restart {width: 100px;height: 90px;background-size: 90%;}
+   .btn-restart:hover {background-position: 0 -88px;}
    .btn-group.fasedownload {margin-top: 40%;width: 60px;}
    .btn-download1, .btn-download2, .btn-download3 {background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_download.png) no-repeat;width: 50px;height: 49px;background-size: 197%;}
    .btn-download2 {background-position: 1px -48px;}
