@@ -227,7 +227,7 @@ Game.prototype.draw_logo = function() {
 	this.context.rect(this.canvas.width/this.scale - 200, 50, 200, 100); 
 	this.context.lineWidth = 5;
 	this.context.strokeStyle = 'black';
-	this.context.drawImage(img, this.canvas.width/this.scale - 300, 50, 200, 100);
+	this.context.drawImage(img, this.canvas.width/this.scale - 300, 50, 250, 150);
 	
 	
 };
