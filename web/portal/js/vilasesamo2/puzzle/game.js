@@ -199,13 +199,8 @@ Game.prototype.render = function() {
 
 
 Game.prototype.draw_bg = function() {
-	var gradienteamarelo = this.context.createRadialGradient(0,0,this.canvas.width/this.scale,this.canvas.height/this.scale);   
-    gradienteamarelo.addColorStop(0, '#F4F201'); 
-    gradienteamarelo.addColorStop(0.8, '#E4C700');
-    gradienteamarelo.addColorStop(1, 'rgba(228,199,0,0)');
-    
   if(!this.scale) this.scale = 1;
-  this.context.fillStyle = gradienteamarelo;
+  this.context.fillStyle = "rgba(1, 114, 249, 1)";
   this.context.fillRect(0,0,this.canvas.width/this.scale,this.canvas.height/this.scale);
  
   if(this.placed_pieces){
@@ -244,7 +239,7 @@ Game.prototype.draw_bac2 = function() {
   this.context.rect(0, 0, 200, 200);
   this.context.lineWidth = 5;
   this.context.strokeStyle = 'black';
-  this.context.drawImage(img, 0, 0, 200, 200);
+  this.context.drawImage(img, 0, 0, 200, 300);
 };
   /*
   var width = this.canvas.width, 
