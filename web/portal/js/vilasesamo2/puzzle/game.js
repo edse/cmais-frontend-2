@@ -239,7 +239,7 @@ Game.prototype.draw_bac2 = function() {
   this.context.rect(0, 0, 200, 200);
   this.context.lineWidth = 5;
   this.context.strokeStyle = 'black';
-  this.context.drawImage(img, 0, 0, 200, 300);
+  this.context.drawImage(img, 0, 0, 300, 300);
 };
   /*
   var width = this.canvas.width, 
