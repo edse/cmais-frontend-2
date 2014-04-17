@@ -125,7 +125,7 @@ $(document).ready(function() {
   
   //botao inicial da tela aberto
   for(var i=0; i<urlArray.length; i++){
-    if(urlArray[i].indexOf("jogos")!=-1 || urlArray[i].indexOf("videos")!=-1 || urlArray[i].indexOf("atividades")!=-1 || urlArray[i].indexOf("personagens")!=-1 || urlArray[i].indexOf("campanhavilasesamo")!=-1){
+    if(urlArray[i].indexOf("campanhavilasesamo")!=-1 || urlArray[i].indexOf("jogos")!=-1 || urlArray[i].indexOf("videos")!=-1 || urlArray[i].indexOf("atividades")!=-1 || urlArray[i].indexOf("personagens")!=-1 || urlArray[i].indexOf("campanhavilasesamo")!=-1){
       var urlElement = urlArray[i];
       $(".btn-"+urlElement+" .fundo").show();
       $(".btn-"+urlElement+" .borda").show();
