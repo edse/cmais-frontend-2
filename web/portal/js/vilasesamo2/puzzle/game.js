@@ -199,7 +199,7 @@ Game.prototype.render = function() {
 
 
 Game.prototype.draw_bg = function() {
-	var gradienteamarelo = this.context.createRadialGradient(this.canvas.width/this.scale);   
+	var gradienteamarelo = this.context.createRadialGradient(0,0,this.canvas.width/this.scale,this.canvas.height/this.scale);   
     gradienteamarelo.addColorStop(0, '#F4F201'); 
     gradienteamarelo.addColorStop(0.8, '#E4C700');
     gradienteamarelo.addColorStop(1, 'rgba(228,199,0,0)');
