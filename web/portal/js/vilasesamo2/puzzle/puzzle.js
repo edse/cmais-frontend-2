@@ -283,6 +283,7 @@ Puzzle.prototype.draw = function(){
         mobile = true;
       
       if(!mobile){
+        $('.fasedownload').show();
         $("#fase1,#fase2,#fase3").hide();
         $("#fase"+this.game.stage).show();  
       } 
