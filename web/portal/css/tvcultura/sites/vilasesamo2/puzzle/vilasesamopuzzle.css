@@ -17,7 +17,7 @@
 .modal-header p{display: block!important;float: left!important;width: 13%!important;}
 .modal-footer{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/acerto.png) no-repeat transparent bottom right;border:none;height:465px;border-radius: 0 0 40px 40px;border: 0px;box-shadow:none;padding:0;}
 
-#inicio_canvas{position:fixed;z-index:9999999999;}
+#inicio_canvas{position:fixed;z-index:9999999999;right: 0;bottom: 0;}
 
 .btn-group, .btn-group-vertical{float: left;position: relative;padding: 2%;width: 21%;margin-top: 10%;}
 .btn-group .botoes{float:left;border:none}
