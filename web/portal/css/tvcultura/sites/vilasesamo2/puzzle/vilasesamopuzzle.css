@@ -123,6 +123,7 @@
    .btn-download1:hover {background-position: -49px 0;}
    .btn-download3 {background-position: 1px -97px;}
    .btn-download3:hover {background-position: -49px -97px}
+   #volta_canvas{right: 4%;}
    .btn-inicio-canvas {width: 90px;height: 91px;background-size:100%;}
    .btn-volta-canvas {width: 90px;height: 91px;background-size:100%;}
 }
