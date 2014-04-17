@@ -580,11 +580,11 @@
           <!-- / BOX PUBLICIDADE -->
         </div>
         <!-- /DIREITA -->
-        <!-- rodape preestreia-->
+        <!-- rodape preludio-->
         <div class="grid3 apoio">
           <img src="http://midia.cmais.com.br/displays/d79e3a6ca8284083bd5aaec356dbf2f6e81783fe.jpg" alt="cartela de logos">
          </div>
-         <!-- /rodape preestreia-->
+        <!-- /rodape preludio-->
         
       </div>
       <!-- /CAPA -->

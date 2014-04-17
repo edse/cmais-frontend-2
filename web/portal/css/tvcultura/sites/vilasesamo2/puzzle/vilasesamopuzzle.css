@@ -17,7 +17,8 @@
 .modal-header p{display: block!important;float: left!important;width: 13%!important;}
 .modal-footer{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/acerto.png) no-repeat transparent bottom right;border:none;height:465px;border-radius: 0 0 40px 40px;border: 0px;box-shadow:none;padding:0;}
 
-#inicio_canvas{position:fixed;z-index:9999999999;right: 0;bottom: 0;}
+#inicio_canvas{position:fixed;z-index:99999999;right: 2%;bottom: 2%;}
+#volta_canvas{position:fixed;z-index:99999999;right: 2%;top: 16%;}
 
 .btn-group, .btn-group-vertical{float: left;position: relative;padding: 2%;width: 21%;margin-top: 10%;}
 .btn-group .botoes{float:left;border:none}
@@ -27,6 +28,10 @@
 .btn-restart:hover{background-position: 0 -167px;background-color: transparent;transition:none;}
 .btn-inicio{	width: 92px;	height: 83px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_inicio.png) no-repeat 0 top;box-shadow: none;transition:none;}
 .btn-inicio:hover{background-position: 0 bottom;background-color: transparent;transition:none;}
+.btn-volta-canvas{	width: 115px;height: 114px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_voltar.png) no-repeat 0 top;box-shadow: none;transition:none;}
+.btn-volta-canvas:hover{background-position: 0 bottom;background-color: transparent;transition:none;}
+.btn-inicio-canvas{	width: 170px;	height: 166px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_inicio_canvas.png) no-repeat 0 top;box-shadow: none;transition:none;}
+.btn-inicio-canvas:hover{background-position: 0 bottom;background-color: transparent;transition:none;}
 .btn-fullscreen{display:none;width: 250px;	height: 32px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/fullscreen.png) no-repeat;position: absolute;left: 40%;color:#2F5BAA;text-transform: uppercase;font-weight: bolder;font-size: 20px;}
 .fasedownload{width:85px;margin-top:25%;}
 .fasedownload h2{font-size:15px;}
@@ -55,17 +60,20 @@
    .modal-footer{background-size: 40%;height: 140px;}
    .btn-group, .btn-group-vertical{width: 55%;height: 80px;margin-top: 8%;}
    .btn-pxfase,.btn-pxfase:hover{width: 61px;background-size: 100%;height: 61px;}
+   .btn-restart,.btn-restart:hover{width: 61px;background-size: 100%;height: 61px;}
    .fase{font-size: 20px;margin-top: -25px;text-align: right;}
    .btn-inicio {width: 53px;height: 53px;box-shadow: none;transition: none;background-size: 101%;}
    .logo{background-size: 50%;background-position: right top;}
    .tempo{font-size:1.6em;}
    .btn-group.fasedownload {margin-top: 20%;width: 60px;display:none }
-   .btn-download1, .btn-download2, .btn-download3 {background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_download.png) no-repeat;width: 50px;height: 49px;background-size: 197%;}
+   .btn-inicio-canvas {width: 70px;height: 70px;background-size:100%;}
+   .btn-volta-canvas {width: 64px;height: 65px;background-size:100%;}
+   /*.btn-download1, .btn-download2, .btn-download3 {background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_download.png) no-repeat;width: 50px;height: 49px;background-size: 197%;}
    .btn-download2 {background-position: 1px -48px;}
    .btn-download2:hover {background-position: -49px -48px;}
    .btn-download1:hover {background-position: -49px 0;}
    .btn-download3 {background-position: 1px -97px;}
-   .btn-download3:hover {background-position: -49px -97px}
+   .btn-download3:hover {background-position: -49px -97px}*/
 } 
 @media screen and (min-width: 601px) and (max-width:800px) {
    .back-entry-sesame-street {height:540px;}
@@ -82,6 +90,8 @@
    .fase{text-align: center;font-size: 24px;}
    .btn-pxfase {width: 134px;height: 134px;background-size: 88%;}
    .btn-pxfase:hover {width: 134px;height: 134px;background-size: 88%;}
+   .btn-restart {width: 134px;height: 134px;background-size: 88%;}
+   .btn-restart:hover {width: 134px;height: 134px;background-size: 88%;}
    .btn-group.fasedownload {margin-top: 40%;width: 60px;}
    .btn-download1, .btn-download2, .btn-download3 {background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_download.png) no-repeat;width: 50px;height: 49px;background-size: 197%;}
    .btn-download2 {background-position: 1px -48px;}
@@ -89,6 +99,8 @@
    .btn-download1:hover {background-position: -49px 0;}
    .btn-download3 {background-position: 1px -97px;}
    .btn-download3:hover {background-position: -49px -97px}
+   #volta_canvas{right: 6%;}
+   .btn-inicio-canvas {width: 90px;height: 91px;background-size:100%;}
    
 }
 @media screen and (min-width: 501px) and (max-width:800px) {
@@ -111,6 +123,8 @@
    .btn-download1:hover {background-position: -49px 0;}
    .btn-download3 {background-position: 1px -97px;}
    .btn-download3:hover {background-position: -49px -97px}
+   .btn-inicio-canvas {width: 90px;height: 91px;background-size:100%;}
+   .btn-volta-canvas {width: 90px;height: 91px;background-size:100%;}
 }
 @media screen and (min-width: 481px) and (max-width:568px) {
    #content h1 {font-size: 2.5em;}
