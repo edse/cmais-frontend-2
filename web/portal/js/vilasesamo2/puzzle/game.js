@@ -207,11 +207,11 @@ Game.prototype.draw_bg = function() {
     this.context.save();
     grad = this.context.createRadialGradient(this.canvas.width/this.scale/2, this.canvas.height/this.scale/2, 0, this.canvas.width/this.scale/2, this.canvas.height/this.scale/2, this.canvas.width/this.scale);
     if(this.puzzle.num_pieces > this.placed_pieces.length){
-      grad.addColorStop(0, ['rgb(', 155, ', ', 155, ', ', 50, ')'].join(''));
-      grad.addColorStop(1, ['rgb(', 256, ', ', 256, ', ', 0, ')'].join(''));
+      grad.addColorStop(1, ['rgb(', 256, ', ', 256, ', ', 256, ')'].join(''));
+      grad.addColorStop(0, ['rgb(', 100, ', ', 100, ', ', 100, ')'].join(''));
     }else{
-      grad.addColorStop(0, ['rgb(', 155, ', ', 155, ', ', 50, ')'].join(''));
-      grad.addColorStop(1, ['rgb(', 256, ', ', 256, ', ', 0, ')'].join(''));
+      grad.addColorStop(0, ['rgb(', 256, ', ', 256, ', ', 256, ')'].join(''));
+      grad.addColorStop(1, ['rgb(', 100, ', ', 100, ', ', 100, ')'].join(''));
     }
     //this.context.fillStyle = grad;
     this.context.fillRect(0,0,this.canvas.width/this.scale, this.canvas.height/this.scale);
@@ -236,10 +236,10 @@ Game.prototype.draw_bac2 = function() {
     img.src = 'http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/corner.png';
   if(!this.scale) this.scale = 1;
   this.context.beginPath();
-  this.context.rect(0, 0, 200, 100);
+  this.context.rect(0, 0, 200, 200);
   this.context.lineWidth = 5;
   this.context.strokeStyle = 'black';
-  this.context.drawImage(img, 0, 0, 200, 100);
+  this.context.drawImage(img, 0, 0, 200, 200);
 };
   /*
   var width = this.canvas.width, 
