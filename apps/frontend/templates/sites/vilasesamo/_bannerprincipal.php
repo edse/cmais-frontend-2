@@ -123,7 +123,7 @@
             <span>quebra-cabeça?</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="http://cmais.com.br/vilasesamo/jogos/quebra-cabeca-vila-sesamo" class="total" title="Teste a sua memória e divirta-se"></a>
+            <a href="http://cmais.com.br/vilasesamo/jogos/quebra-cabeca-vila-sesamo" class="total" title="Teste a sua memória e divirta-se"></a> 
           </div>
         </li>
         <!--/item jogo abril-->
