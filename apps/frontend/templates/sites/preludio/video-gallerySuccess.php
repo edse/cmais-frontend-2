@@ -170,7 +170,7 @@ $(function(){
             </div>
         <!-- rodape preludio-->
         <div class="grid3 apoio">
-          <img src="http://midia.cmais.com.br/displays/d79e3a6ca8284083bd5aaec356dbf2f6e81783fe.jpg" alt="cartela de logos">
+          <img src="http://midia.cmais.com.br/displays/c607ee5756023227d05f4bbfa9c3565eee887a72.jpg" alt="cartela de logos">
          </div>
         <!-- /rodape preludio-->            
             
