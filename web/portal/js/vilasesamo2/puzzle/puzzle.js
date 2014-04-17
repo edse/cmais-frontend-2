@@ -294,6 +294,7 @@ Puzzle.prototype.draw = function(){
       }else{
         $("#restart").hide();
         $("#next").show();
+        $("#inicio_canvas").show();
       }
       pauseGame();
     }
