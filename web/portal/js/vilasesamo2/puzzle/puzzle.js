@@ -74,6 +74,7 @@ Puzzle.prototype.loadAssets = function() {
     this.placePiece(i, p, holder);
   }
   $("#inicio_canvas").show();
+  $("#volta_canvas").show();
   //VOICE & SOUNDS
   var sounds = [];
   if(this.has_voice){
