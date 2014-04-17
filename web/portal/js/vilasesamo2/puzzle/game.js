@@ -292,7 +292,7 @@ Game.prototype.draw_remaining = function() {
   this.context.strokeText(this.puzzle.remaining_time, 30, 100);
   this.context.fillText(this.puzzle.remaining_time, 30, 100);
   var metrics = this.context.measureText(this.stage+"/"+this.puzzles.length+" ");
-  this.context.fillStyle = "rgba(0, 51, 205, 0.9)";
+  this.context.fillStyle = "rgba(0, 95, 220, 0.9)";
   this.context.strokeStyle = "rgba(0, 0, 0, 0.5)";
   this.context.strokeText(this.stage+"/"+this.puzzles.length,50,1150 );
   this.context.fillText(this.stage+"/"+this.puzzles.length, 50,1150);
