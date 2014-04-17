@@ -309,8 +309,8 @@ Game.prototype.draw_loading = function() {
   this.context.textBaseline = 'middle';
   this.context.textAlign = 'center';
   this.context.lineWidth = 5;
-  this.context.strokeText("LOADING", (this.canvas.width/this.scale)/2, (this.canvas.height/this.scale)/2);
-  this.context.fillText("LOADING", (this.canvas.width/this.scale)/2, (this.canvas.height/this.scale)/2);
+  this.context.strokeText("LOADING", (this.canvas.width/this.scale), (this.canvas.height/this.scale)/5);
+  this.context.fillText("LOADING", (this.canvas.width/this.scale), (this.canvas.height/this.scale)/5);
   //console.log('loading...');
 };
 
