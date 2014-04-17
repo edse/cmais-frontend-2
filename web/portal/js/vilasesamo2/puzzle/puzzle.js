@@ -73,7 +73,7 @@ Puzzle.prototype.loadAssets = function() {
     p.onload = this.loaded_items++;
     this.placePiece(i, p, holder);
   }
-  
+  $("#inicio_canvas").show();
   //VOICE & SOUNDS
   var sounds = [];
   if(this.has_voice){
@@ -283,6 +283,7 @@ Puzzle.prototype.draw = function(){
         mobile = true;
       
       if(!mobile){
+        $('.fasedownload').show();
         $("#fase1,#fase2,#fase3").hide();
         $("#fase"+this.game.stage).show();  
       } 

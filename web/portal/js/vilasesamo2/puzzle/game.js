@@ -132,7 +132,9 @@ Game.prototype.init = function(){
 Game.prototype.render = function() {
   
   this.draw_bg();
+  this.draw_bac2();
   this.draw_logo();
+  
     
   //LOADING
   if(!this.loaded){
@@ -200,18 +202,18 @@ Game.prototype.draw_bg = function() {
   if(!this.scale) this.scale = 1;
   this.context.fillStyle = "rgba(1, 114, 249, 1)";
   this.context.fillRect(0,0,this.canvas.width/this.scale,this.canvas.height/this.scale);
-
+ 
   if(this.placed_pieces){
     this.context.save();
     grad = this.context.createRadialGradient(this.canvas.width/this.scale/2, this.canvas.height/this.scale/2, 0, this.canvas.width/this.scale/2, this.canvas.height/this.scale/2, this.canvas.width/this.scale);
     if(this.puzzle.num_pieces > this.placed_pieces.length){
-      grad.addColorStop(1, ['rgb(', 256, ', ', 256, ', ', 256, ')'].join(''));
-      grad.addColorStop(0, ['rgb(', 100, ', ', 100, ', ', 100, ')'].join(''));
+      grad.addColorStop(1, ['rgb(', 228, ', ', 199, ', ', 0, ')'].join(''));
+      grad.addColorStop(0, ['rgb(', 256, ', ', 256, ', ', 0, ')'].join(''));
     }else{
       grad.addColorStop(0, ['rgb(', 256, ', ', 256, ', ', 256, ')'].join(''));
       grad.addColorStop(1, ['rgb(', 100, ', ', 100, ', ', 100, ')'].join(''));
     }
-    //this.context.fillStyle = grad;
+    this.context.fillStyle = grad;
     this.context.fillRect(0,0,this.canvas.width/this.scale, this.canvas.height/this.scale);
     this.context.restore();
   }
@@ -221,15 +223,23 @@ Game.prototype.draw_logo = function() {
 	 var img = new Image();
 	  img.src = 'http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/logo.png';
   if(!this.scale) this.scale = 1;
-  //this.context.fillStyle = "rgba(1, 114, 249, 1)";
 	this.context.beginPath();
-	this.context.rect(10, 50, 200, 100);
-	//this.context.fill();
+	this.context.rect(this.canvas.width/this.scale - 200, 50, 200, 100); 
 	this.context.lineWidth = 5;
 	this.context.strokeStyle = 'black';
-	this.context.drawImage(img, 10, 50, 200, 100);
+	this.context.drawImage(img, this.canvas.width/this.scale - 300, 50, 250, 150);
 	
 	
+};
+Game.prototype.draw_bac2 = function() {
+   var img = new Image();
+    img.src = 'http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/corner.png';
+  if(!this.scale) this.scale = 1;
+  this.context.beginPath();
+  this.context.rect(0, 0, 200, 200);
+  this.context.lineWidth = 5;
+  this.context.strokeStyle = 'black';
+  this.context.drawImage(img, 0, 0, 300, 300);
 };
   /*
   var width = this.canvas.width, 
@@ -277,11 +287,15 @@ Game.prototype.draw_remaining = function() {
   this.context.font = "bold "+this.font_size+"px Arial";
   this.context.textBaseline = 'top';
   this.context.textAlign = 'left';
-  this.context.strokeText("Tempo: "+this.puzzle.remaining_time, 10, 150);
-  this.context.fillText("Tempo: "+this.puzzle.remaining_time, 10, 150);
+  this.context.strokeText("Tempo", 10, 50);
+  this.context.fillText("Tempo", 10, 50);
+  this.context.strokeText(this.puzzle.remaining_time, 30, 100);
+  this.context.fillText(this.puzzle.remaining_time, 30, 100);
   var metrics = this.context.measureText(this.stage+"/"+this.puzzles.length+" ");
-  this.context.strokeText(this.stage+"/"+this.puzzles.length, this.canvas.width/this.scale-metrics.width, 80,80);
-  this.context.fillText(this.stage+"/"+this.puzzles.length, this.canvas.width/this.scale-metrics.width, 80,80);
+  this.context.fillStyle = "rgba(0, 95, 220, 0.9)";
+  this.context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+  this.context.strokeText(this.stage+"/"+this.puzzles.length,50,1150 );
+  this.context.fillText(this.stage+"/"+this.puzzles.length, 50,1150);
   this.context.restore();
 };
 

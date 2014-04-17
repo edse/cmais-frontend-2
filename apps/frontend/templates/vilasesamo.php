@@ -170,6 +170,10 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
           <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/personagens.png">
           Personagens
         </a>
+        <a href="http://cmais.com.br/vilasesamo/campanhavilasesamo" title="Site Vila Sésamo" target="_self">
+          <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/btn_participe.png">
+          Participe
+        </a>
         <a href="http://cmais.com.br/vilasesamo/pais-e-educadores" title="Site Vila Sésamo" target="_self">
           Pais e Educadores
           <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pais.png">

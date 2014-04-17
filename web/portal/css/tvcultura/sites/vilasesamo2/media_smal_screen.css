@@ -237,7 +237,9 @@ a{text-decoration:underline!important;}
 .interna.jogos #content h1,
 .interna.atividades #content h1,
 .interna.videos #content h1 {font-size: 1.2em;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; height:5.4em;line-height:1.4em!important;}
-.campanhasuccess #content h1{height:2em!important;line-height:1.4em!important;}
+.campanhasuccess #content h1{height:2em!important;line-height:1.4em!important;font-size: 1.2em;}
+.campanhasuccess #content {margin: 0px 5%;}
+.campanhasuccess .todos-itens #container li a {min-height: 325px;}
 
 .interna.jogos #content .span12 h1,
 .interna.atividades #content .span12 h1,

@@ -66,13 +66,10 @@
   
   <!--section -->
   <section class="filtro row-fluid">
-    <h1 tabindex="0" class="ac-explicacao">
-      Você está na atividade <?php echo $asset->getTitle() ?>
-    </h1>
     <h1>
       <i class="icones-sprite-interna icone-jogos-grande"></i>
-      <?php echo $section->getTitle() ?>
-      <a class="todos-assets" title="voltar para todas jogos" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" target="_self" >
+      JOGOS
+      <a class="todos-assets" title="voltar para todas jogos" href="/<?php echo $site->getSlug()?>/jogos" target="_self" >
         <i class="icones-setas icone-voltar-jogos"></i>
         <p aria-hidden="true" tabindex="-1">todos os jogos</p>
       </a>
@@ -184,11 +181,11 @@
                     <span id="logo" class="logo"></span>
                   </div>
                   <div class="modal-body">   
-                  	 <div class="btn-group fasedownload"> 
+                  	 <div class="btn-group fasedownload" style="display:none;"> 
                   	   <h2>Clique para <br>a atividade!</h2>  
-                  	 	 <button type="button" class="botoes btn-download1" id="fase1" style="display:none;"></button>
-                  	 	 <button type="button" class="botoes btn-download2" id="fase2" style="display:none;"></button>
-                  	 	 <button type="button" class="botoes btn-download3" id="fase3" style="display:none;"></button>
+                  	 	 <a href="http://cmais.com.br/vilasesamo/atividades/quebra-cabeca-vila-sesamo-fase-01" target="_blank" class="botoes btn-download1" id="fase1" style="display:none;"></a>
+                  	 	 <a href="http://cmais.com.br/vilasesamo/atividades/quebra-cabeca-vila-sesamo-fase-02" target="_blank" class="botoes btn-download2" id="fase2" style="display:none;"></a>
+                  	 	 <a href="http://cmais.com.br/vilasesamo/atividades/quebra-cabeca-vila-sesamo-fase-03" target="_blank" class="botoes btn-download3" id="fase3" style="display:none;"></a>
 
                      </div>
                   </div>
@@ -205,9 +202,10 @@
                 </div><!-- /.modal-content -->
               </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
-    
+    				
     <!-- Game canvas -->
     <div id="game">
+    	<a href="http://cmais.com.br/vilasesamo/jogos/quebra-cabeca-vila-sesamo" class="botoes btn-inicio" id="inicio_canvas" style="display: none;"> </a>
       <canvas id="canvas" style="display:none"></canvas>
       <canvas id="canvas_bg" style="display:none"></canvas>
     </div>
@@ -326,7 +324,6 @@
       $('html, body').animate({
         scrollTop:parseInt($(el).offset().top)
       }, "fast");
-      
     }
     </script>
     
