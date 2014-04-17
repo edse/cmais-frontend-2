@@ -67,8 +67,8 @@
         <!--/lista item-->
         
         <!--lista item-->
-        <li class="btn-participe" data-width="220" data-time="400" data-back="200">
-          <a href="http://cmais.com.br/vilasesamo/campanhavilasesamo" title="Jogos">
+        <li class="btn-participe" data-width="220" data-time="500" data-back="200">
+          <a href="http://cmais.com.br/vilasesamo/campanhavilasesamo" title="campanhavilasesamo">
             <span class="texto">Participe</span>
             <i class="icones-sprite-menu icone-btn-participe"></i>
             <span class="fundo fundo-participe"></span>
