@@ -327,7 +327,6 @@
       $('html, body').animate({
         scrollTop:parseInt($(el).offset().top)
       }, "fast");
-      
     }
     </script>
     
