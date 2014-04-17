@@ -233,13 +233,13 @@ Game.prototype.draw_logo = function() {
 };
 Game.prototype.draw_bac2 = function() {
    var img = new Image();
-    img.src = 'http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/logo.png';
+    img.src = 'http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/corner.png';
   if(!this.scale) this.scale = 1;
   this.context.beginPath();
-  this.context.rect(0, 0, 200, 100);
+  this.context.rect(0, 0, 200, 200);
   this.context.lineWidth = 5;
   this.context.strokeStyle = 'black';
-  this.context.drawImage(img, 0, 0, 200, 100);
+  this.context.drawImage(img, 0, 0, 300, 300);
 };
   /*
   var width = this.canvas.width, 
