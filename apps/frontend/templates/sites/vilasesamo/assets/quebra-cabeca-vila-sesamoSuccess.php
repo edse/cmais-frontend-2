@@ -66,13 +66,10 @@
   
   <!--section -->
   <section class="filtro row-fluid">
-    <h1 tabindex="0" class="ac-explicacao">
-      Você está na atividade <?php echo $asset->getTitle() ?>
-    </h1>
     <h1>
       <i class="icones-sprite-interna icone-jogos-grande"></i>
-      <?php echo $section->getTitle() ?>
-      <a class="todos-assets" title="voltar para todas jogos" href="/<?php echo $site->getSlug()?>/<?php echo $section->getSlug()?>" target="_self" >
+      JOGOS
+      <a class="todos-assets" title="voltar para todas jogos" href="/<?php echo $site->getSlug()?>/jogos" target="_self" >
         <i class="icones-setas icone-voltar-jogos"></i>
         <p aria-hidden="true" tabindex="-1">todos os jogos</p>
       </a>
