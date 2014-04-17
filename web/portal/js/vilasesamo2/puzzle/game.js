@@ -213,7 +213,7 @@ Game.prototype.draw_bg = function() {
       grad.addColorStop(0, ['rgb(', 256, ', ', 256, ', ', 256, ')'].join(''));
       grad.addColorStop(1, ['rgb(', 100, ', ', 100, ', ', 100, ')'].join(''));
     }
-    //this.context.fillStyle = grad;
+    this.context.fillStyle = grad;
     this.context.fillRect(0,0,this.canvas.width/this.scale, this.canvas.height/this.scale);
     this.context.restore();
   }
