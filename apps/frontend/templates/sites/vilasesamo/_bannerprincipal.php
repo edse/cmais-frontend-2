@@ -68,7 +68,7 @@
         <!--/item desenho-->
         
         <!--item ogo-->
-        <li aria-hidden="true" tabindex="-1" class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/03_mar_ogo/pattern.jpg') repeat;">
+        <!--li aria-hidden="true" tabindex="-1" class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/03_mar_ogo/pattern.jpg') repeat;">
           <div class="mpc_ls_slide_item" data-x="400" data-y="0" data-delay="3500" data-duration="3500" data-easing="easeOutBack" data-effect="none" data-fade="on">  
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_marco/03_mar_ogo/01.png" alt="">
           </div>
@@ -99,11 +99,11 @@
           <div class="mpc_ls_slide_item total" data-fade="on">
             <a href="http://cmais.com.br/vilasesamo/jogos/jogo-da-memoria-vila-sesamo" class="total" title="Teste a sua memória e divirta-se"></a>
           </div>
-        </li>
+        </li-->
         <!--/item ogo-->
         
         <!--item jogo abril-->
-        <!--li aria-hidden="true" tabindex="-1" class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/03_abr_jogo/bg_pattern.png') repeat;">
+        <li aria-hidden="true" tabindex="-1" class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/03_abr_jogo/bg_pattern.png') repeat;">
           <div class="mpc_ls_slide_item" data-x="320" data-y="20" data-delay="1500" data-duration="1500" data-easing="easeOutBack" data-effect="none" data-fade="on">  
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/03_abr_jogo/puzzle.png" alt="">
           </div>
@@ -123,9 +123,9 @@
             <span>quebra-cabeça?</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="http://cmais.com.br/vilasesamo/jogos/jogo-da-memoria-vila-sesamo" class="total" title="Teste a sua memória e divirta-se"></a>
+            <a href="http://cmais.com.br/vilasesamo/jogos/qebra-cabeca-vila-sesamo" class="total" title="Teste a sua memória e divirta-se"></a>
           </div>
-        </li-->
+        </li>
         <!--/item jogo abril-->
         
         <!--item videos-->
@@ -266,8 +266,13 @@
               $(this).attr("aria-label", "Beto e Enio mostram o desenho de sua brincadeira favorita: telefone de lata.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/atividades/brincando-no-parque-1')
             break;
             case 2:
-              $(this).attr("aria-label", "Novo Jogo Teste a sua memória e divirta-se - Groover esta pensativo com uma bolacha na mão.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/jogos/jogo-da-memoria-vila-sesamo');
+              $(this).attr("aria-label", "Novo Jogo Quebra Cabeça - Garibaldo esta montando um quebra cabeça, ele esta com uma peça na mão.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/jogos/quebra-cabeca-vila-sesamo');
             break;
+            
+            //case 2:
+              //$(this).attr("aria-label", "Novo Jogo Teste a sua memória e divirta-se - Groover esta pensativo com uma bolacha na mão.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/jogos/jogo-da-memoria-vila-sesamo');
+           // break;
+            
             case 3:
               $(this).attr("aria-label", "Bel está com o atleta paralímpico Daniel Dias que fala sobre suas brincadeiras favoritas.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/videos/vila-sesamo-incluir-brincando-promo-adulta')
             break;
