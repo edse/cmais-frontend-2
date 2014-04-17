@@ -200,7 +200,7 @@ Game.prototype.render = function() {
 
 Game.prototype.draw_bg = function() {
   if(!this.scale) this.scale = 1;
-  this.context.fillStyle = "rgba(255, 255, 50, 0.1)";
+  this.context.fillStyle = "rgba(1, 114, 249, 1)";
   this.context.fillRect(0,0,this.canvas.width/this.scale,this.canvas.height/this.scale);
  
   if(this.placed_pieces){
@@ -236,10 +236,10 @@ Game.prototype.draw_bac2 = function() {
     img.src = 'http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/corner.png';
   if(!this.scale) this.scale = 1;
   this.context.beginPath();
-  this.context.rect(0, 10, 200, 100);
+  this.context.rect(0, 0, 200, 100);
   this.context.lineWidth = 5;
   this.context.strokeStyle = 'black';
-  this.context.drawImage(img, 0, 10, 200, 100);
+  this.context.drawImage(img, 0, 0, 200, 100);
 };
   /*
   var width = this.canvas.width, 
