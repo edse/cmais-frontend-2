@@ -199,8 +199,13 @@ Game.prototype.render = function() {
 
 
 Game.prototype.draw_bg = function() {
+	var gradienteamarelo = this.context.createRadialGradient(680, 250, 20, 680, 250, 60);   
+    gradient6.addColorStop(0, '#F4F201'); 
+    gradient6.addColorStop(0.8, '#E4C700');
+    gradient6.addColorStop(1, 'rgba(228,199,0,0)');
+    
   if(!this.scale) this.scale = 1;
-  this.context.fillStyle = "rgba(1, 114, 249, 1)";
+  this.context.fillStyle = gradienteamarelo;
   this.context.fillRect(0,0,this.canvas.width/this.scale,this.canvas.height/this.scale);
  
   if(this.placed_pieces){
