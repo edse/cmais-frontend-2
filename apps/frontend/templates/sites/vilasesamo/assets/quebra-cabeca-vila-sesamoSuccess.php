@@ -121,11 +121,12 @@
             <?php //echo html_entity_decode($asset->AssetContent->render()) ?>
             <!--GAME-->
             
-            <!--[if lt IE 10]>
-                <p style="color:red; background:yellow; width:80%; overflow:hidden; font-weight:bold; font-size: 20px; text-align:center;padding: 10px; margin:20px auto; border:3px dashed red;">Você está usando um navegador antigo. Recomendamos <a href="http://browsehappy.com/" style="color:blue;font-size:20px; text-decoration:underline!important;">que atualize seu navegador</a> para você ter uma expêriencia melhor.</p>
-            <![endif]-->
+            
             
             <div class="container">
+              <!--[if lt IE 10]>
+                <p style="color:red; background:yellow; width:80%; overflow:hidden; font-weight:bold; font-size: 20px; text-align:center;padding: 10px; margin:20px auto; border:3px dashed red;">Você está usando um navegador antigo. Recomendamos <a href="http://browsehappy.com/" style="color:blue;font-size:20px; text-decoration:underline!important;">que atualize seu navegador</a> para você ter uma expêriencia melhor.</p>
+              <![endif]-->
               <div class="jumbotron back-entry-sesame-street">
                 <p>
                   <button id="play-btn-lg" type="button" class="btn btn-success btn-lg btn-play-sesame-street">
