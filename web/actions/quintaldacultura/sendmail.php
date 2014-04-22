@@ -7,7 +7,7 @@ $expiration_time = "2013-08-30 00:00:00";
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
     if ($current_time < $expiration_time) {
-    
+      
       $to = "georgia.catarina@gmail.com, jedoljak@gmail.com";//quintal.tv@gmail.com
       //$to = "maiscriancatvcultura@gmail.com";
       $email = strip_tags($_REQUEST['email']);
@@ -30,8 +30,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $headers .= "From: ".$from;
 
         if(mail($to, $subject, $message, $headers)) {
+          die("1");
           header("Location: http://172.20.16.219/quintaldacultura?success=1");
         }else{
+          die("2");
           header("Location: http://172.20.16.219/quintaldacultura?error=2");
         }
       }
@@ -61,7 +63,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         if(sendMailAtt($to, $from, $subject, $message, $attach)) {
           if (unlink($_FILES['datafile']['tmp_name'])) {
             header("Location: http://172.20.16.219/quintaldacultura?success=2");
-            die();
+            die("3");
           }
         }
         else{
