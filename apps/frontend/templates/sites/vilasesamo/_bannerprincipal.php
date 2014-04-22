@@ -38,7 +38,7 @@
         <!--/item incluir brincando-->
         <!--item desenho-->
         <li aria-hidden="true" tabindex="-1" class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/bg_pattern.jpg') repeat;">
-          <div class="mpc_ls_slide_item" data-x="160" data-y="100" data-delay="1000" data-duration="500" data-easing="easeOutBack" data-effect="none" data-fade="on">  
+          <div class="mpc_ls_slide_item" data-x="160" data-y="90" data-delay="1000" data-duration="500" data-easing="easeOutBack" data-effect="none" data-fade="on">  
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/splash.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="70" data-y="210" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
