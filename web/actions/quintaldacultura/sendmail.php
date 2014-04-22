@@ -30,10 +30,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $headers .= "From: ".$from;
 
         if(mail($to, $subject, $message, $headers)) {
-          die("1");
           header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?success=1");
         }else{
-          die("2");
           header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?error=2");
         }
       }
@@ -63,7 +61,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         if(sendMailAtt($to, $from, $subject, $message, $attach)) {
           if (unlink($_FILES['datafile']['tmp_name'])) {
             header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?success=2");
-            die("3");
+            die();
           }
         }
         else{
@@ -76,9 +74,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     else {
       if (unlink($_FILES['datafile']['tmp_name'])) {
-        //header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?error=4");
-        echo $_SERVER['HTTP_REFERER'].">>>>";
-        echo $_SERVER['SERVER_NAME'].">>>><<<<<<<<<";
+        header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?error=4");
         die();
       }
     }
