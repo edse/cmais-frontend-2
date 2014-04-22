@@ -212,11 +212,11 @@
   				          <span class="button">Anexar</span>
                   </div-->
                   <!--Anexo-->
-                   <div class="control-group file-wrapper">
-                    <label class="sprite-ico-anexo" for="datafile"></label>
-                    <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile">
-                    <span class="button">Anexar</span>
-                  </div>
+               		<div class="form file-wrapper">
+					          <label class="sprite-ico-anexo" for="datafile"></label>
+					          <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile">
+					          <span class="button">Anexar</span>
+					        </div>
                   <!--/Anexo-->
                   <label class="concordo"><input type="radio" id="concordo" name="concordo" />Estou ciente e de acordo com os Termos e Condições abaixo:</label>
                   <textarea id="termo" name="termo">
