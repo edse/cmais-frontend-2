@@ -280,8 +280,8 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
 		<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 		<script type="text/javascript">
     $(document).ready(function(){
-      //if($('#form-contato').is(':visible')){
-        //$('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
+    if($('#form-contato').is(':visible')){
+      $('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
   
       
   	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
@@ -360,7 +360,14 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
     }
     
 
-		
+		function getURLParameter(name) {
+			return decodeURI(
+		        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+		    );
+		}
+		var testep = getURLParameter("testep");
+	  var success = getURLParameter("success");
+	  var error = getURLParameter("error");
     
     if(testep == 1){
       $('#destaque').show();
@@ -383,10 +390,8 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
 	    $(".msgErro").html("<p>Arquivo muito grande<br/> Por favor, tente com um arquivo de até 15 MB!</p>");
 	    //$(".msgErro").scrollTo("statusMsg_1");
 	  }
+
   });
-  var testep = getURLParameter("testep");
-  var success = getURLParameter("success");
-  var error = getURLParameter("error");
   var SITE = SITE || {};
 
   SITE.fileInputs = function() {
@@ -406,12 +411,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
     }
   }
 
-  function getURLParameter(name) {
-    return decodeURI(
-          (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
-      );
-  }
-  
+
   function validate(obj){
     if($(obj).val()==$(obj).attr("data-default"))
       $(obj).val('');
@@ -439,8 +439,6 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
     }, 100);
       
   }
-  
-  
 </script>  
     
   </body>
