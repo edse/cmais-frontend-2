@@ -206,12 +206,18 @@
                   <label class="idade"><span class="sprite-ico-aniversario"></span> 
                     <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade" data-default="Idade"  placeholder="Idade">
                   </label>
-                  <div  class="bucha">
+                  <!--div  class="bucha">
                     <label class="sprite-ico-anexo" for="datafile">
   				          <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile"></label>
   				          <span class="button">Anexar</span>
+                  </div-->
+                  <!--Anexo-->
+                   <div class="control-group span2 idade anexo file-wrapper">
+                    <label class="control-label icones-form icone-form-datafile" for="datafile"></label>
+                    <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile">
+                    <span class="button">Anexar</span>
                   </div>
-                  
+                  <!--/Anexo-->
                   <label class="concordo"><input type="radio" id="concordo" name="concordo" />Estou ciente e de acordo com os Termos e Condições abaixo:</label>
                   <textarea id="termo" name="termo">
 Participação:
@@ -284,7 +290,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
     $(document).ready(function(){
     if($('#form-contato').is(':visible')){
       //$('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
-      $('.bucha input[type=file]').bind('change focus click', function(){
+      $('.file-wrapper input[type=file]').bind('change focus click', function(){
         alert('to nele');
       });
   
