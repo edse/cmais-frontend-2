@@ -151,13 +151,18 @@ body { background:#0ab015 url(http://cmais.com.br/portal/quintal/images/bg-quint
 .sprite-ico-cidade,
 .sprite-ico-email,
 .sprite-ico-nome,
-.sprite-ico-responsavel{  background:url(http://cmais.com.br/portal/quintal/images/sprite-ico-form.png) no-repeat;} 
+.sprite-ico-responsavel,
+.sprite-ico-anexo{  background:url(http://cmais.com.br/portal/quintal/images/icon_form.png) no-repeat;} 
 
 .sprite-ico-aniversario{ background-position: 0 0; width: 20px; height: 22px; } 
-.sprite-ico-cidade{ background-position: 0 -72px; width: 12px; height: 19px; } 
+.sprite-ico-cidade{ background-position: 0 -72px; width: 15px; height: 19px; } 
 .sprite-ico-email{ background-position: 0 -141px; width: 20px; height: 13px; } 
 .sprite-ico-nome{ background-position: 0 -204px; width: 20px; height: 19px; } 
 .sprite-ico-responsavel{ background-position: 0 -273px; width: 27px; height: 17px; } 
+.sprite-ico-anexo{ background-position: 4px -349px; width: 27px!important; height: 19px; } 
+
+.button{background:#f16000;color: #e4f527 !important;padding: 2px 10px;display: block;border: none;box-shadow: none;font-weight: bold;text-transform: uppercase;float: right;cursor: pointer;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;}
+.file-wrapper{cursor: pointer;font-size: 100px;filter: alpha(opacity=1);-moz-opacity: 0.01;opacity: 0.01;position: absolute;width: 20%!important;	}
 
 /* horario */
 #horario {  margin: 0; width: 750px;float: right; overflow:hidden;}
