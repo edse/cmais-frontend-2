@@ -391,7 +391,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
 	    //$(".msgErro").scrollTo("statusMsg_1");
 	  }
 
-  });
+  
   var SITE = SITE || {};
 
   SITE.fileInputs = function() {
@@ -439,6 +439,8 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
     }, 100);
       
   }
+  
+  });
 </script>  
     
   </body>
