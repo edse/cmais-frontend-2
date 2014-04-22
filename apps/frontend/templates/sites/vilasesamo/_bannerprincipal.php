@@ -38,10 +38,10 @@
         <!--/item incluir brincando-->
         <!--item desenho-->
         <li aria-hidden="true" tabindex="-1" class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/bg_pattern.jpg') repeat;">
-          <div class="mpc_ls_slide_item" data-x="160" data-y="90" data-delay="1000" data-duration="500" data-easing="easeOutBack" data-effect="none" data-fade="on">  
+          <div class="mpc_ls_slide_item" data-x="160" data-y="100" data-delay="1000" data-duration="500" data-easing="easeOutBack" data-effect="none" data-fade="on">  
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/splash.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item" data-x="70" data-y="210" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item" data-x="60" data-y="210" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/grover.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="240" data-y="273" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
@@ -50,7 +50,7 @@
           <div class="mpc_ls_slide_item" data-x="370" data-y="50" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/garibaldo.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item" data-x="670" data-y="280" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item" data-x="650" data-y="280" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/comecome.png" alt="">
           </div>
           <div class="mpc_ls_slide_item par38" data-x="220" data-y="150" data-delay="500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
