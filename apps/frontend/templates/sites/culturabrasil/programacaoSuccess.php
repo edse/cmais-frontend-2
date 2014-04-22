@@ -80,7 +80,11 @@ $prevDateUrl = "http://culturabrasil.cmais.com.br/programacao/".str_replace("/",
               <div class="accordion-inner">
                 <p><?php echo $d->retriveTitle() ?><br><br>
                 <?php echo $d->retriveDescription() ?></p>
-                <a href="<?php echo $d->retriveUrl() ?>" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
+                
+                <?php if($d->retriveTitle() != "Programação musical" && $d->retriveTitle() !="DiscoTeca"): ?>
+                	<a href="<?php echo $d->retriveUrl() ?>" class="btn-body" title="">acesse o site<i class="borda-titulo borda-grade"></i></a>
+                <?php endif;?>
+                
                 <a href="#" class="btn-body controle-remoto" title="">ouça ao vivo pela web<i class="borda-titulo borda-grade"></i></a>
               </div>
             </div>
