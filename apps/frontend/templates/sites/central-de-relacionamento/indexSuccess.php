@@ -648,7 +648,7 @@ $(document).ready(function(){
                         </div>
                       </div>
                       <div class="control-group f4">
-                        <label class="control-label" for="f4_cod_programa">Programa / Interesse</label>
+                        <label class="control-label" for="f4_cod_programa">Selecione</label>
                         <div class="controls">
                           <select name="f4_cod_programa" id="f4_cod_programa" onchange="assuntos();">
                             <option value="--" selected="selected">--</option>
@@ -1395,9 +1395,11 @@ $(document).ready(function(){
                       if(data.script != ""){
                         eval(data.script);
                         if($('#f4_cod_veiculo :selected').val() == "10"){
-                          $('#f4_cod_veiculo').parent().prev().html('Área');  
+                          $('#f4_cod_veiculo').parent().prev().html('Área');
+                          $('#f4_cod_assunto').parent().prev().html('Interesse');  
                         }else{
                           $('#f4_cod_veiculo').parent().prev().html('Emissora');
+                          $('#f4_cod_assunto').parent().prev().html('Programa');
                         }
                         
                         if($('#f4_cod_programa option').size()<=1){
