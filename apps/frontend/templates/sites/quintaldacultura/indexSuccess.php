@@ -197,7 +197,7 @@
               <div class="col-dir">
               	<div class="msgAcerto" id="statusMsg_0" style="display:none"> </div>
 								<div class="msgErro" id="statusMsg_1" style="display:none"> </div>
-                <form id="form-contato" action="http://app.cmais.com.br/actions/quintaldacultura/sendmail.php"  method="post" enctype="multipart/form-data" <?php if(isset($_GET["success"]))echo 'style="display:none;"' ?> >
+                <form id="form-contato" class="form" action="http://app.cmais.com.br/actions/quintaldacultura/sendmail.php"  method="post" enctype="multipart/form-data" <?php if(isset($_GET["success"]))echo 'style="display:none;"' ?> >
                   <label><span class="sprite-ico-nome"></span> <input type="text" id="nome" name="nome" value="Nome" data-default="Nome" /></label>
                   <label><span class="sprite-ico-responsavel"></span> <input type="text" id="responsavel" name="responsavel" value="Nome do Responsável" data-default="Nome do Responsável" /> </label>
                   <label class="cidade"><span class="sprite-ico-cidade"></span> <input type="text" id="cidade" name="cidade" value="Cidade" data-default="Cidade" /> </label>
@@ -212,11 +212,11 @@
   				          <span class="button">Anexar</span>
                   </div-->
                   <!--Anexo-->
-                   <div class="control-group file-wrapper">
-                    <label class="sprite-ico-anexo" for="datafile"></label>
-                    <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile">
-                    <span class="button">Anexar</span>
-                  </div>
+               		<div class=" file-wrapper">
+					          <label class="sprite-ico-anexo" for="datafile"></label>
+					          <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile">
+					          <span class="button">Anexar</span>
+					        </div>
                   <!--/Anexo-->
                   <label class="concordo"><input type="radio" id="concordo" name="concordo" />Estou ciente e de acordo com os Termos e Condições abaixo:</label>
                   <textarea id="termo" name="termo">
