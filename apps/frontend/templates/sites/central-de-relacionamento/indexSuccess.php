@@ -1396,10 +1396,10 @@ $(document).ready(function(){
                         eval(data.script);
                         if($('#f4_cod_veiculo :selected').val() == "10"){
                           $('#f4_cod_veiculo').parent().prev().html('Área');
-                          $('#f4_cod_assunto').parent().prev().html('Interesse');  
+                          $('#f4_cod_programa').parent().prev().html('Interesse');  
                         }else{
                           $('#f4_cod_veiculo').parent().prev().html('Emissora');
-                          $('#f4_cod_assunto').parent().prev().html('Programa');
+                          $('#f4_cod_programa').parent().prev().html('Programa');
                         }
                         
                         if($('#f4_cod_programa option').size()<=1){
