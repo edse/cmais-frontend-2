@@ -417,7 +417,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
         $button = $this.siblings('.button'),
         $fakeFile = $this.siblings('.file-holder');
     if(newVal !== '') {
-      $button.text('teste');
+      $button.text('Anexar');
       if($fakeFile.length === 0) {
         $button.after('<span class="file-holder">' + newVal + '</span>');
       } else {
