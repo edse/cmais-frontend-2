@@ -360,11 +360,6 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
     }
     
 
-		function getURLParameter(name) {
-			return decodeURI(
-		        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
-		    );
-		}
 		var testep = getURLParameter("testep");
 	  var success = getURLParameter("success");
 	  var error = getURLParameter("error");
@@ -411,7 +406,12 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
     }
   }
 
-
+  function getURLParameter(name) {
+    return decodeURI(
+          (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+      );
+  }
+  
   function validate(obj){
     if($(obj).val()==$(obj).attr("data-default"))
       $(obj).val('');
