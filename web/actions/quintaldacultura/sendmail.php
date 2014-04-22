@@ -3,7 +3,7 @@ include("../includes/functions.php");
 
 $current_time = date("Y-m-d H:i:s", time()); 
 $expiration_time = "2013-08-30 00:00:00";
-
+die("1");
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
     if ($current_time < $expiration_time) {
