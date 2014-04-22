@@ -212,8 +212,8 @@
   				          <span class="button">Anexar</span>
                   </div-->
                   <!--Anexo-->
-                   <div class="control-group span2 idade anexo file-wrapper">
-                    <label class="control-label icones-form icone-form-datafile" for="datafile"></label>
+                   <div class="control-group file-wrapper">
+                    <label class="sprite-ico-anexo" for="datafile"></label>
                     <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile">
                     <span class="button">Anexar</span>
                   </div>
