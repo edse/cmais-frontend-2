@@ -192,48 +192,70 @@
            <?php endif;?>
         <?php endif;?>   
             
-            <?php
-            /*
             <!-- FORM DESTAQUE -->
-            <div id="destaque">
-              <div class="minhoquias"></div>
+            <div id="destaque" style="display:none;">
               <div class="col-dir">
-                <form id="form-contato">
-                  <label><span class="sprite-ico-nome"></span> <input type="text" id="nome" name="nome" value="Seu nome" data-default="Seu nome" /> </label>
-                  <label class="cidade"><span class="sprite-ico-cidade"></span> <input type="text" id="cidade" name="cidade" value="Sua cidade" data-default="Sua cidade" /> </label>
+              	<div class="msgAcerto" id="statusMsg_0" style="display:none"> </div>
+								<div class="msgErro" id="statusMsg_1" style="display:none"> </div>
+                <form id="form-contato" action="http://app.cmais.com.br/actions/quintaldacultura/sendmail.php"  method="post" enctype="multipart/form-data" <?php if(isset($_GET["success"]))echo 'style="display:none;"' ?> >
+                  <label><span class="sprite-ico-nome"></span> <input type="text" id="nome" name="nome" value="Nome" data-default="Nome" /></label>
+                  <label><span class="sprite-ico-responsavel"></span> <input type="text" id="responsavel" name="responsavel" value="Nome do Responsável" data-default="Nome do Responsável" /> </label>
+                  <label class="cidade"><span class="sprite-ico-cidade"></span> <input type="text" id="cidade" name="cidade" value="Cidade" data-default="Cidade" /> </label>
                   <label class="estado"><input type="text" id="estado" name="estado" value="UF" data-default="UF" maxlength="2" /></label>
-                  <label><span class="sprite-ico-responsavel"></span> <input type="text" id="responsavel" name="responsavel" value="Nome do responsável" data-default="Nome do responsável" /> </label>
                   <label><span class="sprite-ico-email"></span> <input type="text" id="email" name="email" value="Email para contato" data-default="Email para contato" /> </label>
-                  <label class="data"><span class="sprite-ico-aniversario"></span> 
-                    <input type="text" id="dia" name="dia" value="DD" data-default="DD" maxlength="2" /><span>/</span> 
-                    <input type="text" id="mes" name="mes" value="MM" data-default="MM" maxlength="2" /><span>/</span> 
-                    <input type="text" id="ano" name="ano" value="AA" data-default="AA" maxlength="2" />(Preencha com a data do seu nascimento) 
+                  <label class="idade"><span class="sprite-ico-aniversario"></span> 
+                    <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade" data-default="Idade"  placeholder="Idade">
                   </label>
-                  <!--
+                  <label class="sprite-ico-anexo" for="datafile">
+				          <input id="datafile" class="file-wrapper" accept="png|jpe?g|gif" type="file" name="datafile"></label>
+				          <span class="button">Anexar</span>
+                  
                   <label class="concordo"><input type="radio" id="concordo" name="concordo" />Estou ciente e de acordo com os Termos e Condições abaixo:</label>
-                  <textarea id="termo" name="termo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibul um at sapien orci, at placerat turpis. Phasellus ligula nulla, rhoncus nec adipiscing sit amet, congue eget nisi. Suspendisse semper leo ac nunc consectetur eu adipiscing dui cras amet.</textarea>
-                  -->
-                  <button class="enviar" name="enviar" id="enviar">Enviar</button>
-                  <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none; position: absolute;bottom: 12px;right: 40px;" width="16px" height="16px" id="ajax-loader" />
-                  <div class="msgAcerto">acerto</div>
-                  <div class="msgErro">erro</div>
+                  <textarea id="termo" name="termo">
+Participação:
+Este é um programa de caráter exclusivamente cultural, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. A participação é aberta a crianças representadas por seus pais ou responsáveis legais.
+ 
+Para participar, o interessado (com autorização de pais ou responsáveis) deve enviar um desenho de sua casa, bichinho de estimação, um passeio com amigos ou paisagem. Não há restrições temáticas, desde que o texto seja livre de preconceitos, palavras obscenas ou conteúdo inadequado ao público infantil. O desenho deve ser encaminhado pelo site: http://cmais.com.br/quintaldacultura
+ 
+1.1 Os desenhos deverão ser enviados acompanhados dos dados pessoais do participante, utilizando o formulário da página. Caso o participante seja menor de 18 (dezoito) anos, deverá necessariamente ter autorização dos seus pais ou responsáveis, bem como preencher os dados dos seus representantes legais: nome e e-mail. Cada pessoa pode participar com quantos desenhos desejar.
+ 
+1.2. A Fundação Padre Anchieta não se responsabiliza por eventuais falhas no envio do material.
+ 
+2. Critérios de Seleção:
+ 
+2.1 A seleção dos desenhos será feita pela equipe de Produção da TV Cultura e será baseada na observação dos seguintescritérios e pela ordem: criatividade, originalidade e adequação à faixa etária.
+ 
+2.2 Serão desconsiderados os textos com dados incorretos; os que fujam da adequação à faixa etária (público infantil); que tenham conteúdo inadequado.
+ 
+2.3 Cada criança poderá participar enviando quantos desenhos desejar.
+ 
+3. Considerações Gerais:
+ 
+3.1 Os participantes representados por seus pais ou responsáveis legais, declaram, desde já, a autorização de seu nome e cidade onde moram para publicação na programação da TV Cultura e transferem à Fundação Padre Anchieta Centro Paulista de Rádio e TV Educativas, sem qualquer ônus para esta e, em caráter definitivo, plena e totalmente, todos os direitos autorais sobre o referido trabalho, para qualquer tipo de utilização, publicação, reprodução por qualquer meio ou técnica, especialmente na divulgação do resultado.
+ 
+3.2 A FPA não aceitará qualquer desenho que contenha exposição de pessoas em situações vexatórias, incitando o preconceito, violência e que contenham apelo sexual ou ao consumismo exacerbado.
+ 
+3.3 Quaisquer dúvidas, divergências ou situações não previstas neste regulamento serão apreciadas e decididas pela Produção da TV Cultura referida no item 2.1 deste Regulamento.
+ 
+3.4 A simples participação neste evento de incentivo à criatividade implica no total conhecimento e aceitação irrestrita deste regulamento.
+ 
+3.5 Os desenhos poderão ser publicados no site http://cmais.com.br/quintaldacultura e os melhores poderão ser exibidos na programação da TV Cultura/Quintal da Cultura.
+                  	
+                  </textarea>
+                 
+                  <div class="enviar">
+					          <input type="submit" class="enviar" name="enviar" id="enviar" value="ENVIAR"></input>
+					        </div> 
+                <input type="hidden" id="urlElement" name="urlElement" value="">
                 </form>
               </div>
+              
               <div class="col-esq">
-                <p>o <span>quintal da cultura</span></p>
-                <p>tem um presente de</p>
-                <p>aniversário especial</p>
-                <p>para você!</p>
-                <br/><br/>
-                <p>Preencha os campos</p>
-                <p>ao lado e descubra</p>
-                <p>a <span>supresa</span>!</p>
+               
               </div>
             </div>
             <!-- FORM DESTAQUE -->
-            */
-            ?>
-            
+         
             <!--DESTAQUE JOGUINHOS -->
             <?php //include_partial_from_folder('sites/quintaldacultura', 'global/destaque-joguinhos')            ?>
             <!--DESTAQUE JOGUINHOS -->
@@ -252,174 +274,172 @@
       <!--/FOOTER-->
     </div>
     <!--/ALLWRAPPER-->
-        <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
-    <script>
-    //valida form
-    var validator = $('.form-voto').validate({
-      submitHandler: function(form){
-        sendAnswer()
-      },
-      rules:{
-          opcao:{
+
+ 		<script src="http://cmais.com.br/portal/js/ajaxFileUpload/ajaxfileupload.js" type="text/javascript"></script>
+		<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
+		<script type="text/javascript">
+    $(document).ready(function(){
+    if($('#form-contato').is(':visible')){
+      $('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
+  
+      
+  	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
+  	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});
+  	  $('#responsavel').focus(function(){ 		if($(this).val() == "Nome do Responsável") {  $(this).val(''); }; 	});
+  	  $('#responsavel').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome do Responsável'); 	};	});
+  	  $('#idade').focus(function(){ 	if($(this).val() == "Idade") {  $(this).val(''); }; });
+  	  $('#idade').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Idade'); 	 };	});	  
+  	  $('#cidade').focus(function(){ 	if($(this).val() == "Cidade") {  $(this).val(''); }; });
+  	  $('#cidade').focusout(function(){ if($(this).val() == ''){ $(this).val('Cidade');   }; });
+  	  $('#estado').focus(function(){ 	if($(this).val() == "UF") {  $(this).val(''); }; });
+  	  $('#estado').focusout(function(){ if($(this).val() == ''){ $(this).val('UF');   }; });
+  	  $('#email').focus(function(){ 	if($(this).val() == "Email") {  $(this).val(''); }; });
+  	  $('#email').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Email'); 	 };	});
+  	  $('#mensagem').focus(function(){ 	if($(this).val() == "Mensagem") {  $(this).val(''); };	});
+  	  $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Mensagem'); };	});
+    	
+      var validator = $('#form-contato').validate({
+        
+        submitHandler: function(form){
+          //resgatando a página que a pessoa
+          url = window.location;
+          $('#urlElement').attr('value',url.href);
+        	form.submit();
+        },
+        rules:{
+          nome:{
+            required: function(){ validate("#nome"); return true},
+            minlength: 2
+          },
+          responsavel:{
+            required: function(){ validate("#responsavel"); return true},
+            minlength: 2
+          },
+          idade:{
+            required: function(){ validate("#idade"); return true},
+            number: true
+          },
+          email:{
+            required: true,
+            email: true
+          },
+          cidade:{
+            required: function(){ validate("#cidade"); return true},
+            minlength: 3
+          },
+          uf:{
+            required: function(){ validate("#estado"); return true},
+            minlength: 2
+          },
+         concordo:{
             required: true
           }
+          
         },
-      messages:{
-        opcao: ""
-      }
-    });    
-    
-    
-    //enviar voto
-    function sendAnswer(){
-      $.ajax({
-        type: "POST",
-        dataType: "jsonp", 
-        data: $("#e<?php echo $displays["enquete"][0]->Asset->getId()?>").serialize(),
-        url: "http://app.cmais.com.br/ajax/enquetes",
-        beforeSend: function(){
-    
+        onkeyup:function(e){
+          verifyKey();
         },
-        success: function(data){
-          $(".form-voto").hide();
-          //if(data == 1){
-            $(".inativo").fadeIn("fast");
-            
-            $.each(data, function(key, val) {
-              $('.inativo').append('<div class="div-choice"><label for=".resposta'+key+'">'+val.answer+' - ' + parseFloat(val.votes) + '%</label></div>');
-  
-            });
-          //}else{
-            //$(".msg_error").fadeIn("fast");
-          //}
+        messages:{
+          nome:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+          responsavel:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+          idade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+          email:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+          cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+          uf:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+          concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
+        }, 
+        
+        success: function(label){
         }
       });
-    }
-    </script>
-    <?php
-    /*
-        <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('input#enviar').click(function(){
-          $(".msgAcerto, .msgErro").hide();
-        });
-        
-        var validator = $('#form-contato').validate({
-          submitHandler: function(form){
-            $.ajax({
-              type: "POST",
-              dataType: "text",
-              data: $("#form-contato").serialize(),
-              beforeSend: function(){
-                $("input#enviar, .msgAcerto, .msgErro").hide();
-                $('img#ajax-loader').show();
-              },
-              success: function(data){
-              $('input#enviar').removeAttr('disabled');
-                window.location.href="javascript:;";
-                if(data == "1"){
-                  $("#form-contato").clearForm();
-                  $(".msgAcerto").show();
-                  $('img#ajax-loader').hide();
-                }
-                else {
-                  $(".msgErro").show();
-                  $('img#ajax-loader').hide();
-                }
-              }
-            });         
-          },
-          rules:{
-            nome:{
-              required: function(){
-                validate('#nome');
-              },
-              minlength: 2
-            },
-            cidade:{
-              required: function(){
-                validate('#cidade');
-              },
-              minlength: 3
-            },
-            estado:{
-              required: function(){
-                validate('#estado');
-              },
-              minlength: 2
-            },
-            responsavel:{
-              required: function(){
-                validate('#responsavel');
-              },
-              minlength: 2
-            },
-            email:{
-              required: true,
-              email: true
-            },            
-            dia:{
-              required: function(){
-                validate('#dia');
-              },
-              minlength: 2
-            },
-            mes:{
-              required: function(){
-                validate('#mes');
-              },
-              minlength: 2
-            },
-            ano:{
-              required: function(){
-                validate('#ano');
-              },
-              minlength: 2
-            }
-            /*concordo:{
-              required: true
-            },
-            termo:{
-              required: true,
-              minlength: 2
-            }            
-          },
-          messages:{
-            nome: "Todos os campos são obrigatórios1.",
-            cidade: "Todos os campos são obrigatórios2.",
-            estado: "Todos os campos são obrigatórios3.",
-            responsavel: "Todos os campos são obrigatórios4.",
-            email: "Todos os campos são obrigatórios5.",
-            dia: "Todos os campos são obrigatórios6.",
-            mes: "Todos os campos são obrigatórios7.",
-            ano: "Todos os campos são obrigatórios8."
-            /*concordo: "Este campo &eacute; Obrigat&oacute;rio.",
-            termo: "Este campo &eacute; Obrigat&oacute;rio."
-            
-          },
-          
-          success: function(label){
-            // set &nbsp; as text for IE
-            label.html("&nbsp;").addClass("checked");
-          }
-        });
+      
+      $('#enviar').click(function(){
+        verifyKey();
       });
-      function validate(obj){
-        if($(obj).val()==$(obj).attr("data-default"))
-          $(obj).val('');
-      }    
-      // Contador de Caracters
-      function limitText (limitField, limitNum, textCounter)
-      {
-        if (limitField.value.length > limitNum)
-          limitField.value = limitField.value.substring(0, limitNum);
-        else
-          $(textCounter).html(limitNum - limitField.value.length);
+    }
+    
+
+		function getURLParameter(name) {
+			return decodeURI(
+		        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+		    );
+		}
+		var testep = getURLParameter("testep");
+	  var success = getURLParameter("success");
+	  var error = getURLParameter("error");
+    
+    if(testep == 1){
+      $('#destaque').show();
+    }
+	  if(success == 1){
+	    $(".msgAcerto").show();
+	    $("#form-contato").hide();
+	    $(".msgAcerto").html("<p> Seu desenho foi enviado com sucesso!<br/> Em breve estará em nossa galeria!</p>");
+	   // $(".msgAcerto").scrollTo('#statusMsg_0');
+	  }else if(error == 1){
+	    $(".msgErro").show();
+	    $(".msgErro").html("<p>Erro inesperado<br/>Por favor, tente mais tarde!</p>");
+	   // $(".msgErro").scrollTo("statusMsg_1");
+	  }else if(error == 2){
+	    $(".msgErro").show();
+	    $(".msgErro").html("<p>Formato de imagem inválido<br/> Por favor, tente com JPG, PNG ou GIF!</p>");
+	    //$(".msgErro").scrollTo("statusMsg_1");
+	  }else if(error == 3){
+	    $(".msgErro").show();
+	    $(".msgErro").html("<p>Arquivo muito grande<br/> Por favor, tente com um arquivo de até 15 MB!</p>");
+	    //$(".msgErro").scrollTo("statusMsg_1");
+	  }
+
+  });
+  var SITE = SITE || {};
+
+  SITE.fileInputs = function() {
+    var $this = $(this),
+        $val = $this.val(),
+        valArray = $val.split('\\'),
+        newVal = valArray[valArray.length-1],
+        $button = $this.siblings('.button'),
+        $fakeFile = $this.siblings('.file-holder');
+    if(newVal !== '') {
+      $button.text('Anexar');
+      if($fakeFile.length === 0) {
+        $button.after('<span class="file-holder">' + newVal + '</span>');
+      } else {
+        $fakeFile.text('Anexo: '+ newVal);
       }
-    </script>
-    */
-    ?>
+    }
+  }
+
+
+  function validate(obj){
+    if($(obj).val()==$(obj).attr("data-default"))
+      $(obj).val('');
+      //$(obj).addClass("error");
+  }
+  function verifyKey(){
+    setTimeout(function() {
+      $('input, textarea').not('#concordo').each(function(){
+        var campo = $(this).attr('id');
+        if($(this).hasClass('error')){
+          $(this).prev().addClass('icone-form-'+campo+'-erro');
+        }else{
+          $(this).prev().removeClass('icone-form-'+campo+'-erro');
+        }
+      });
+      
+      $('#concordo').delay(100, function(){
+        if($(this).hasClass('error')){
+          $(this).parent().css('color', 'yellow');
+        }else{
+          $(this).parent().css('color', 'white');
+        }
+      });
+
+    }, 100);
+      
+  }
+</script>  
     
   </body>
 </html>

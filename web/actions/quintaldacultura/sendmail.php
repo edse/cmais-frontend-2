@@ -31,10 +31,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if(mail($to, $subject, $message, $headers)) {
           //die("1");
-          header("Location: http://172.20.16.219/quintaldacultura?success=1");
+          header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?success=1");
         }else{
           //die("2");
-          header("Location: http://172.20.16.219/quintaldacultura?error=2");
+          header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?error=2");
         }
       }
 
@@ -48,13 +48,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
           
       if (!in_array($file_mime_type, array("image/gif", "image/png", "image/jpg"))) {
         if (unlink($_FILES['datafile']['tmp_name'])) {
-          header("Location: http://172.20.16.219/quintaldacultura?error=2");
+          header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?error=2");
           die();
         }
       }
       else if ($file_size > 15728640) { // 15MB
         if (unlink($_FILES['datafile']['tmp_name'])) {
-          header("Location: http://172.20.16.219/quintaldacultura?error=3");
+          header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?error=3");
           die();
         }
       }
@@ -62,13 +62,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         if(sendMailAtt($to, $from, $subject, $message, $attach)) {
           if (unlink($_FILES['datafile']['tmp_name'])) {
-            header("Location: http://172.20.16.219/quintaldacultura?success=2");
+            header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?success=2");
             die("3");
           }
         }
         else{
           if (unlink($_FILES['datafile']['tmp_name'])) {
-            header("Location: http://172.20.16.219/quintaldacultura?error=1");
+            header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?error=1");
             die();
           }
         }
@@ -76,7 +76,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     else {
       if (unlink($_FILES['datafile']['tmp_name'])) {
-        header("Location: http://172.20.16.219/quintaldacultura?error=4");
+        header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?error=4");
         die();
       }
     }
