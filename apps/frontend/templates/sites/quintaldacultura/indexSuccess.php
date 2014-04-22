@@ -206,11 +206,18 @@
                   <label class="idade"><span class="sprite-ico-aniversario"></span> 
                     <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade" data-default="Idade"  placeholder="Idade">
                   </label>
-                  <label class="sprite-ico-anexo" for="datafile">
-				          <input id="datafile" class="file-wrapper" accept="png|jpe?g|gif" type="file" name="datafile"></label>
-				          <span class="button">Anexar</span>
-                  <span class="file-holder"></span>
-                  
+                  <!--div  class="bucha">
+                    <label class="sprite-ico-anexo" for="datafile">
+  				          <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile"></label>
+  				          <span class="button">Anexar</span>
+                  </div-->
+                  <!--Anexo-->
+                   <div class="control-group file-wrapper">
+                    <label class="sprite-ico-anexo" for="datafile"></label>
+                    <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile">
+                    <span class="button">Anexar</span>
+                  </div>
+                  <!--/Anexo-->
                   <label class="concordo"><input type="radio" id="concordo" name="concordo" />Estou ciente e de acordo com os Termos e Condições abaixo:</label>
                   <textarea id="termo" name="termo">
 Participação:
@@ -281,8 +288,11 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
 		<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 		<script type="text/javascript">
     $(document).ready(function(){
-    //if($('#form-contato').is(':visible')){
-      $('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
+    if($('#form-contato').is(':visible')){
+      //$('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
+      $('.file-wrapper input[type=file]').bind('change focus click', function(){
+        alert('to nele');
+      });
   
       
   	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
@@ -358,7 +368,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
       $('#enviar').click(function(){
         verifyKey();
       });
-    //}
+    }
     
     
 		function getURLParameter(name) {
