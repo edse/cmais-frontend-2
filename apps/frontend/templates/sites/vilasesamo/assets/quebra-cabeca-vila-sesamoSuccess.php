@@ -127,7 +127,7 @@
               
               <div class="jumbotron back-entry-sesame-street">
                 <!--[if lt IE 10]>
-                  <p style="color:red; background:yellow; width:80%; overflow:hidden; font-weight:bold; font-size: 20px; text-align:center;padding: 10px; margin:20px auto; border:3px dashed red;">Você está usando um navegador antigo. Recomendamos <a href="http://browsehappy.com/" style="color:blue;font-size:20px; text-decoration:underline!important;">que atualize seu navegador</a> para você ter uma expêriencia melhor.</p>
+                  <p style="color:red; background:yellow; width:80%; overflow:hidden; font-weight:bold; font-size: 20px; text-align:center;padding: 10px; margin:20px auto; border:3px dashed red;">Você está usando um navegador antigo. Recomendamos <a href="http://browsehappy.com/" style="color:blue;font-size:20px; text-decoration:underline!important; display:inline-block">que atualize seu navegador</a> para você ter uma expêriencia melhor.</p>
                 <![endif]-->
                 <p>
                   <button id="play-btn-lg" type="button" class="btn btn-success btn-lg btn-play-sesame-street">
