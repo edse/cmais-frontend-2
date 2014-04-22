@@ -281,7 +281,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
 		<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 		<script type="text/javascript">
     $(document).ready(function(){
-    //if($('#form-contato').is(':visible')){
+    if($('#form-contato').is(':visible')){
       //$('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
       $('.file-wrapper input[type=file]').bind('change focus click', function(){
         alert('to nele');
@@ -361,7 +361,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
       $('#enviar').click(function(){
         verifyKey();
       });
-    //}
+    }
     
     
 		function getURLParameter(name) {
