@@ -206,7 +206,7 @@
                   <label class="idade"><span class="sprite-ico-aniversario"></span> 
                     <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade" data-default="Idade"  placeholder="Idade">
                   </label>
-                  <div  class="file-wrapper">
+                  <div  class="bucha">
                     <label class="sprite-ico-anexo" for="datafile">
   				          <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile"></label>
   				          <span class="button">Anexar</span>
@@ -284,7 +284,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
     $(document).ready(function(){
     if($('#form-contato').is(':visible')){
       //$('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
-      $('.file-wrapper input[type=file]').bind('change focus click', function(){
+      $('.bucha input[type=file]').bind('change focus click', function(){
         alert('to nele');
       });
   
