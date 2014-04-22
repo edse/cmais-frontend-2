@@ -360,9 +360,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
     }
     
 
-		var testep = getURLParameter("testep");
-	  var success = getURLParameter("success");
-	  var error = getURLParameter("error");
+		
     
     if(testep == 1){
       $('#destaque').show();
@@ -386,7 +384,9 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
 	    //$(".msgErro").scrollTo("statusMsg_1");
 	  }
   });
-  
+  var testep = getURLParameter("testep");
+  var success = getURLParameter("success");
+  var error = getURLParameter("error");
   var SITE = SITE || {};
 
   SITE.fileInputs = function() {
