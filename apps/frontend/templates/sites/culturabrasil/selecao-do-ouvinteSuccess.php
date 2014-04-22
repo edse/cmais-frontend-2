@@ -40,7 +40,7 @@
       <div class="row-fluid">
         
         <!--form-->
-        <form id="form-selecao" action="" method="post" >
+        <form id="form-selecao" method="post" action="http://app.cmais.com.br/index.php/culturabrasil/selecao-do-ouvinte">
           <div class="box msg">
             <div class="msgErro" style="display:none">
               <p class="aviso">Sua mensagem não pode ser enviada.</p>
