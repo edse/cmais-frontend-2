@@ -5,9 +5,9 @@ $current_time = date("Y-m-d H:i:s", time());
 $expiration_time = "2014-08-30 00:00:00";
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-  if(strpos($_SERVER['HTTP_REFERER'], "http://".$_SERVER['SERVER_NAME']) > 0) {
+  //if(strpos($_SERVER['HTTP_REFERER'], "http://".$_SERVER['SERVER_NAME']) > 0) {
     //if ($current_time > $expiration_time) {
-      die("1");
+      
       $to = "georgia.catarina@gmail.com, jedoljak@gmail.com";//quintal.tv@gmail.com
       //$to = "maiscriancatvcultura@gmail.com";
       $email = strip_tags($_REQUEST['email']);
@@ -30,10 +30,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $headers .= "From: ".$from;
 
         if(mail($to, $subject, $message, $headers)) {
-          //die("1");
           header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?success=1");
         }else{
-          //die("2");
           header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?error=2");
         }
       }
@@ -63,7 +61,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         if(sendMailAtt($to, $from, $subject, $message, $attach)) {
           if (unlink($_FILES['datafile']['tmp_name'])) {
             header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?success=2");
-            die("3");
+            die();
           }
         }
         else{
@@ -76,13 +74,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     else {
       if (unlink($_FILES['datafile']['tmp_name'])) {
-        //header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?error=4");
-        echo $_SERVER['HTTP_REFERER'].">>>>";
-        echo $_SERVER['SERVER_NAME'].">>>><<<<<<<<<";
+        header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?error=4");
         die();
       }
     }
-  }
+  //}
 //}
 
 ?>                

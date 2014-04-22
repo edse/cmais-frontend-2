@@ -209,6 +209,7 @@
                   <label class="sprite-ico-anexo" for="datafile">
 				          <input id="datafile" class="file-wrapper" accept="png|jpe?g|gif" type="file" name="datafile"></label>
 				          <span class="button">Anexar</span>
+                  <span class="file-holder"></span>
                   
                   <label class="concordo"><input type="radio" id="concordo" name="concordo" />Estou ciente e de acordo com os Termos e Condições abaixo:</label>
                   <textarea id="termo" name="termo">
@@ -281,7 +282,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
 		<script type="text/javascript">
     $(document).ready(function(){
     //if($('#form-contato').is(':visible')){
-      //$('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
+      $('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
   
       
   	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
@@ -396,6 +397,8 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
   var SITE = SITE || {};
 
   SITE.fileInputs = function() {
+    console.log("entrei");
+    console.log($(this));
     var $this = $(this),
         $val = $this.val(),
         valArray = $val.split('\\'),
