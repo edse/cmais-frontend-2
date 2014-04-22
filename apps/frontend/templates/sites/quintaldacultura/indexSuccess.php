@@ -390,7 +390,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
 	    $(".msgErro").html("<p>Arquivo muito grande<br/> Por favor, tente com um arquivo de até 15 MB!</p>");
 	    //$(".msgErro").scrollTo("statusMsg_1");
 	  }
-
+  });
   
   var SITE = SITE || {};
 
@@ -440,7 +440,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
       
   }
   
-  });
+  
 </script>  
     
   </body>
