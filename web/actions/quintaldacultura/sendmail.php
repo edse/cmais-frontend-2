@@ -30,10 +30,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $headers .= "From: ".$from;
 
         if(mail($to, $subject, $message, $headers)) {
-          die("1");
+          //die("1");
           header("Location: http://172.20.16.219/quintaldacultura?success=1");
         }else{
-          die("2");
+          //die("2");
           header("Location: http://172.20.16.219/quintaldacultura?error=2");
         }
       }
