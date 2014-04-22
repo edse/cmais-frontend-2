@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
     if ($current_time < $expiration_time) {
     
-      $to = "georgia.catarina@gmail.com, jedoljak@gmail.com";//quintal.tv@gmail.com
+      $to = "georgia.catarina@gmail.com";//quintal.tv@gmail.com
       //$to = "maiscriancatvcultura@gmail.com";
       $email = strip_tags($_REQUEST['email']);
       $name = strip_tags($_REQUEST['nome']);
@@ -30,9 +30,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $headers .= "From: ".$from;
 
         if(mail($to, $subject, $message, $headers)) {
-          header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?success=1");
+          header("Location: http://tvcultura.cmais.com.br/quintaldacultura?success=1");
         }else{
-          header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=2");
+          header("Location: http://tvcultura.cmais.com.br/quintaldacultura?error=2");
         }
       }
 
@@ -46,13 +46,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
           
       if (!in_array($file_mime_type, array("image/gif", "image/png", "image/jpg"))) {
         if (unlink($_FILES['datafile']['tmp_name'])) {
-          header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=2");
+          header("Location: http://tvcultura.cmais.com.br/quintaldacultura?error=2");
           die();
         }
       }
       else if ($file_size > 15728640) { // 15MB
         if (unlink($_FILES['datafile']['tmp_name'])) {
-          header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=3");
+          header("Location: http://tvcultura.cmais.com.br/quintaldacultura?error=3");
           die();
         }
       }
@@ -60,13 +60,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         if(sendMailAtt($to, $from, $subject, $message, $attach)) {
           if (unlink($_FILES['datafile']['tmp_name'])) {
-            header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?success=2");
+            header("Location: http://tvcultura.cmais.com.br/quintaldacultura?success=2");
             die();
           }
         }
         else{
           if (unlink($_FILES['datafile']['tmp_name'])) {
-            header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=1");
+            header("Location: http://tvcultura.cmais.com.br/quintaldacultura?error=1");
             die();
           }
         }
@@ -74,7 +74,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     else {
       if (unlink($_FILES['datafile']['tmp_name'])) {
-        header("Location: http://tvcultura.cmais.com.br/cocorico/receitinhas?error=4");
+        header("Location: http://tvcultura.cmais.com.br/quintaldacultura?error=4");
         die();
       }
     }
