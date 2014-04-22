@@ -198,9 +198,9 @@
               	<div class="msgAcerto" id="statusMsg_0" style="display:none"> </div>
 								<div class="msgErro" id="statusMsg_1" style="display:none"> </div>
                 <form id="form-contato" action="http://app.cmais.com.br/actions/quintaldacultura/sendmail.php"  method="post" enctype="multipart/form-data" <?php if(isset($_GET["success"]))echo 'style="display:none;"' ?> >
-                  <label><span class="sprite-ico-nome"></span> <input type="text" id="nome" name="nome" value="Seu nome" data-default="Seu nome" /></label>
-                  <label><span class="sprite-ico-responsavel"></span> <input type="text" id="responsavel" name="responsavel" value="Nome do responsável" data-default="Nome do responsável" /> </label>
-                  <label class="cidade"><span class="sprite-ico-cidade"></span> <input type="text" id="cidade" name="cidade" value="Sua cidade" data-default="Sua cidade" /> </label>
+                  <label><span class="sprite-ico-nome"></span> <input type="text" id="nome" name="nome" value="Nome" data-default="Nome" /></label>
+                  <label><span class="sprite-ico-responsavel"></span> <input type="text" id="responsavel" name="responsavel" value="Nome do Responsável" data-default="Nome do Responsável" /> </label>
+                  <label class="cidade"><span class="sprite-ico-cidade"></span> <input type="text" id="cidade" name="cidade" value="Cidade" data-default="Cidade" /> </label>
                   <label class="estado"><input type="text" id="estado" name="estado" value="UF" data-default="UF" maxlength="2" /></label>
                   <label><span class="sprite-ico-email"></span> <input type="text" id="email" name="email" value="Email para contato" data-default="Email para contato" /> </label>
                   <label class="idade"><span class="sprite-ico-aniversario"></span> 
