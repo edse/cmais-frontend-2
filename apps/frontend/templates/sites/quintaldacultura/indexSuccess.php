@@ -202,7 +202,7 @@
                   <label><span class="sprite-ico-responsavel"></span> <input type="text" id="responsavel" name="responsavel" value="Nome do Responsável" data-default="Nome do Responsável" /> </label>
                   <label class="cidade"><span class="sprite-ico-cidade"></span> <input type="text" id="cidade" name="cidade" value="Cidade" data-default="Cidade" /> </label>
                   <label class="estado"><input type="text" id="estado" name="estado" value="UF" data-default="UF" maxlength="2" /></label>
-                  <label><span class="sprite-ico-email"></span> <input type="text" id="email" name="email" value="Email para contato" data-default="Email para contato" /> </label>
+                  <label><span class="sprite-ico-email"></span> <input type="text" id="email" name="email" value="Email" data-default="Email" /> </label>
                   <label class="idade"><span class="sprite-ico-aniversario"></span> 
                     <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade" data-default="Idade"  placeholder="Idade">
                   </label>
