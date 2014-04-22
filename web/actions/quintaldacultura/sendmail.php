@@ -7,7 +7,7 @@ $expiration_time = "2014-08-30 00:00:00";
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   //if(strpos($_SERVER['HTTP_REFERER'], "http://".$_SERVER['SERVER_NAME']) > 0) {
     //if ($current_time > $expiration_time) {
-      die("1");
+      
       $to = "georgia.catarina@gmail.com, jedoljak@gmail.com";//quintal.tv@gmail.com
       //$to = "maiscriancatvcultura@gmail.com";
       $email = strip_tags($_REQUEST['email']);
@@ -30,10 +30,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $headers .= "From: ".$from;
 
         if(mail($to, $subject, $message, $headers)) {
-          //die("1");
+          die("1");
           header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?success=1");
         }else{
-          //die("2");
+          die("2");
           header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?error=2");
         }
       }
