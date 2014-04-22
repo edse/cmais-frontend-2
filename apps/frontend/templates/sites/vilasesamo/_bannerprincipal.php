@@ -1,8 +1,10 @@
     <?php
     $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Javascript, habilite-o e recarregue a página para o banner aparecer.</noscript>"
     ?> 
-    
-   
+    <style>
+    #carrossel-destaque .par38{font-size:32px;}
+    #carrossel-destaque .par39{font-size:30px;-webkit-text-shadow: 3px 3px 3px #3872BD;-moz-text-shadow: 3px 3px 3px #3872BD;text-shadow: 3px 3px 3px #3872BD;}
+    </style>
   <!-- carrossel desktop-->
   <section id="carrossel-destaque" aria-label="seção com 6 baners">
     <!--Inicio-->
@@ -34,8 +36,50 @@
           </div>
         </li>
         <!--/item incluir brincando-->
-        
         <!--item desenho-->
+        <li aria-hidden="true" tabindex="-1" class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/bg_pattern.jpg') repeat;">
+          <div class="mpc_ls_slide_item" data-x="160" data-y="100" data-delay="1000" data-duration="500" data-easing="easeOutBack" data-effect="none" data-fade="on">  
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/splash.png" alt="">
+          </div>
+          <div class="mpc_ls_slide_item" data-x="70" data-y="250" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/grover.png" alt="">
+          </div>
+          <div class="mpc_ls_slide_item" data-x="240" data-y="273" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/elmo.png" alt="">
+          </div>
+          <div class="mpc_ls_slide_item" data-x="370" data-y="50" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/garibaldo.png" alt="">
+          </div>
+          <div class="mpc_ls_slide_item" data-x="670" data-y="280" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
+            <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/comecome.png" alt="">
+          </div>
+          <div class="mpc_ls_slide_item par38" data-x="220" data-y="150" data-delay="500" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+            <span>QUAL É A SUA</span>
+          </div>
+          <div class="mpc_ls_slide_item par38" data-x="215" data-y="190" data-delay="1000" data-duration="2500" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+            <span>BRINCADEIRA</span>
+          </div>
+          <div class="mpc_ls_slide_item par38" data-x="230" data-y="230" data-delay="1200" data-duration="2400" data-easing="easeInOutElastic" data-effect="slideLeft" data-fade="on"> 
+            <span>FAVORITA?</span>
+          </div>
+          <div class="mpc_ls_slide_item par39" data-x="620" data-y="120" data-delay="1800" data-duration="2000" data-easing="easeInOutElastic" data-effect="slideRight" data-fade="on"> 
+            <span>Vejam só quantos</span>
+          </div>
+          <div class="mpc_ls_slide_item par39" data-x="620" data-y="160" data-delay="2000" data-duration="2400" data-easing="easeInOutElastic" data-effect="slideRight" data-fade="on"> 
+            <span>desenhos legais nós</span>
+          </div>
+          <div class="mpc_ls_slide_item par39" data-x="620" data-y="200" data-delay="2200" data-duration="2800" data-easing="easeInOutElastic" data-effect="slideRight" data-fade="on"> 
+            <span>já recebemos</span>
+          </div>
+          <div class="mpc_ls_slide_item par39" data-x="620" data-y="240" data-delay="3000" data-duration="2800" data-easing="easeInOutElastic" data-effect="slideTop" data-fade="on"> 
+            <span style="color:purple!important">ENVIE O SEU TAMBÉM!</span>
+          </div>
+          <div class="mpc_ls_slide_item total" data-fade="on">
+            <a href="http://cmais.com.br/vilasesamo/campanhavilasesamo" class="total" title="Teste a sua memória e divirta-se"></a>
+          </div>
+        </li>
+        <!--/item desenho-->
+        <!--item desenho>
         <li aria-hidden="true" tabindex="-1" class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/bg_pattern.jpg') repeat;">
           <div class="mpc_ls_slide_item" data-x="40" data-y="300" data-delay="3200" data-duration="500" data-easing="easeOutBack" data-effect="none" data-fade="on">  
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/splash.png" alt="">
