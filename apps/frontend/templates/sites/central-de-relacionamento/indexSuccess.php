@@ -1394,7 +1394,8 @@ $(document).ready(function(){
                     success: function(data){
                       if(data.script != ""){
                         eval(data.script);
-                        if($('#f4_cod_veiculo option').val() == "Institucional"){
+                        console.log($(this).val());
+                        if($(this).val() == "Institucional"){
                           $('#f4_cod_veiculo').parent().prev().html('Área');  
                         }else{
                           $('#f4_cod_veiculo').parent().prev().html('Emissora');
