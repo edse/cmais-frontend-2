@@ -47,7 +47,7 @@
           <div class="mpc_ls_slide_item" data-x="240" data-y="273" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/elmo.png" alt="">
           </div>
-          <div class="mpc_ls_slide_item" data-x="370" data-y="50" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
+          <div class="mpc_ls_slide_item" data-x="350" data-y="50" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/02_abr_desenho/garibaldo.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="650" data-y="280" data-delay="500" data-duration="1200" data-easing="easeOutExpo" data-effect="slideLeft" data-fade="on"> 
