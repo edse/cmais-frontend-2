@@ -397,6 +397,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
   var SITE = SITE || {};
 
   SITE.fileInputs = function() {
+    console.log("entrei");
     console.log($(this));
     var $this = $(this),
         $val = $this.val(),
