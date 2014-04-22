@@ -387,7 +387,8 @@ body { background:#0ab015 url(http://cmais.com.br/portal/quintal/images/bg-quint
 #musicas div.jp-type-playlist div.jp-playlist a:hover { color:#793785 !important; }
 #musicas div.jp-type-playlist div.jp-playlist li { border-bottom:1px solid #c7e51f; }
 #musicas .jp-audio { overflow:hidden; }
-* home */
+
+
 #destaque { width:960px; height:407px; background:url(http://cmais.com.br/portal/quintal/images/bg_form.png) no-repeat no-repeat; position:relative; }
 #destaque .minhoquias { width:290px; height:400px; background:url(http://cmais.com.br/portal/quintal/images/minhoquias.png) no-repeat; position:absolute; top:-75px; left:-35px; }
 #destaque .col-esq { width: 306px; margin:35px 10px 0 0; text-align:center;  }
