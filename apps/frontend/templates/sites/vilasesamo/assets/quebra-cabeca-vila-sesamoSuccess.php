@@ -122,7 +122,7 @@
             <!--GAME-->
             
             <!--[if lt IE 10]>
-                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                <p style="color:red; background:yellow; width:80%; overflow:hidden; font-weight:bold; font-size: 20px; text-align:center;padding: 10px; margin:20px auto; border:3px dashed red;">Você está usando um navegador antigo. Recomendamos <a href="http://browsehappy.com/" style="color:cyan;font-size:20px; text-transform:underline!important;">que atualize seu navegador</a> para você ter uma expêriencia melhor.</p>
             <![endif]-->
             
             <div class="container">
