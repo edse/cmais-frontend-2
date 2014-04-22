@@ -3,10 +3,9 @@ include("../includes/functions.php");
 
 $current_time = date("Y-m-d H:i:s", time()); 
 $expiration_time = "2014-08-30 00:00:00";
-echo $_SERVER['HTTP_REFERER'].">>>>";
-echo $_SERVER['SERVER_NAME'].">>>><<<<<<<<<";
+
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-  if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
+  if(strpos($_SERVER['HTTP_REFERER'], "http://".$_SERVER['SERVER_NAME']) > 0) {
     //if ($current_time > $expiration_time) {
       die("1");
       $to = "georgia.catarina@gmail.com, jedoljak@gmail.com";//quintal.tv@gmail.com
@@ -77,7 +76,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     else {
       if (unlink($_FILES['datafile']['tmp_name'])) {
-        header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?error=4");
+        //header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?error=4");
+        echo $_SERVER['HTTP_REFERER'].">>>>";
+        echo $_SERVER['SERVER_NAME'].">>>><<<<<<<<<";
         die();
       }
     }
