@@ -193,7 +193,7 @@
         <?php endif;?>   
             
             <!-- FORM DESTAQUE -->
-            <div id="destaque" style="display:none;" class="file-wrapper">
+            <div id="destaque" style="display:none;">
               <div class="col-dir">
               	<div class="msgAcerto" id="statusMsg_0" style="display:none"> </div>
 								<div class="msgErro" id="statusMsg_1" style="display:none"> </div>
@@ -206,10 +206,11 @@
                   <label class="idade"><span class="sprite-ico-aniversario"></span> 
                     <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade" data-default="Idade"  placeholder="Idade">
                   </label>
-                  <label class="sprite-ico-anexo" for="datafile">
-				          <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile"></label>
-				          <span class="button">Anexar</span>
-     
+                  <div  class="file-wrapper">
+                    <label class="sprite-ico-anexo" for="datafile">
+  				          <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile"></label>
+  				          <span class="button">Anexar</span>
+                  </div>
                   
                   <label class="concordo"><input type="radio" id="concordo" name="concordo" />Estou ciente e de acordo com os Termos e Condições abaixo:</label>
                   <textarea id="termo" name="termo">
