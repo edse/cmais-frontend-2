@@ -357,7 +357,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
       $('#enviar').click(function(){
         verifyKey();
       });
-    }
+    //}
     
     /*
 		function getURLParameter(name) {
