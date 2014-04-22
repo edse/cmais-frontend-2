@@ -13,7 +13,7 @@
       <ul aria-hidden="true" tabindex="-1">
         <!--item incluir brincando-->
         <li aria-hidden="true" tabindex="-1" class="slide01" data-easing="easeInExpo" data-transition="slideLeft" style="background: url('http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/01_abr_entrada/pattern.jpg') repeat;">
-          <div class="mpc_ls_slide_item" data-x="478" data-y="80" data-delay="1200" data-duration="3500" data-easing="easeOutExpo" data-effect="slideBottom" data-fade="on">  
+          <div class="mpc_ls_slide_item" data-x="478" data-y="120" data-delay="1200" data-duration="3500" data-easing="easeOutExpo" data-effect="slideBottom" data-fade="on">  
             <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/banner_abril/01_abr_entrada/sivan_grover.png" alt="">
           </div>
           <div class="mpc_ls_slide_item" data-x="95" data-y="270" data-delay="500" data-duration="1500" data-easing="easeOutBack" data-effect="slideLeft" data-fade="on"> 
