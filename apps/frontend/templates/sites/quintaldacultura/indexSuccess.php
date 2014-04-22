@@ -193,7 +193,7 @@
         <?php endif;?>   
             
             <!-- FORM DESTAQUE -->
-            <div id="destaque" style="display:none;">
+            <div id="destaque" style="display:none;" class="file-wrapper">
               <div class="col-dir">
               	<div class="msgAcerto" id="statusMsg_0" style="display:none"> </div>
 								<div class="msgErro" id="statusMsg_1" style="display:none"> </div>
@@ -207,9 +207,9 @@
                     <input type="text" id="idade" value="Idade" placeholder="Idade" name="idade" data-default="Idade"  placeholder="Idade">
                   </label>
                   <label class="sprite-ico-anexo" for="datafile">
-				          <input id="datafile" class="file-wrapper" accept="png|jpe?g|gif" type="file" name="datafile"></label>
+				          <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile"></label>
 				          <span class="button">Anexar</span>
-                  <span class="file-holder"></span>
+     
                   
                   <label class="concordo"><input type="radio" id="concordo" name="concordo" />Estou ciente e de acordo com os Termos e Condições abaixo:</label>
                   <textarea id="termo" name="termo">
@@ -282,7 +282,10 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
 		<script type="text/javascript">
     $(document).ready(function(){
     //if($('#form-contato').is(':visible')){
-      $('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
+      //$('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
+      $('.file-wrapper input[type=file]').bind('change focus click', function(){
+        alert('to nele');
+      });
   
       
   	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
