@@ -640,7 +640,7 @@ $(document).ready(function(){
                       <div id="message">
                       
                       <div class="control-group">
-                        <label class="control-label" for="f4_cod_veiculo">Emissora</label>
+                        <label class="control-label" for="f4_cod_veiculo">Área / Emissora</label>
                         <div class="controls">
                           <select name="f4_cod_veiculo" id="f4_cod_veiculo" onchange="contas();">
                             <option value="--"></option>
@@ -648,7 +648,7 @@ $(document).ready(function(){
                         </div>
                       </div>
                       <div class="control-group f4">
-                        <label class="control-label" for="f4_cod_programa">Programa</label>
+                        <label class="control-label" for="f4_cod_programa">Programa / Interesse</label>
                         <div class="controls">
                           <select name="f4_cod_programa" id="f4_cod_programa" onchange="assuntos();">
                             <option value="--" selected="selected">--</option>
