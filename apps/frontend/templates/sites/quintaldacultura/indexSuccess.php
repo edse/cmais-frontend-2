@@ -209,6 +209,7 @@
                   <label class="sprite-ico-anexo" for="datafile">
 				          <input id="datafile" class="file-wrapper" accept="png|jpe?g|gif" type="file" name="datafile"></label>
 				          <span class="button">Anexar</span>
+                  <span class="file-holder"></span>
                   
                   <label class="concordo"><input type="radio" id="concordo" name="concordo" />Estou ciente e de acordo com os Termos e Condições abaixo:</label>
                   <textarea id="termo" name="termo">
