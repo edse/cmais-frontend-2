@@ -445,9 +445,9 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
       
       $('#concordo').delay(100, function(){
         if($(this).hasClass('error')){
-          $(this).parent().css('color', 'yellow');
+          $(this).parent().css('color', 'red');
         }else{
-          $(this).parent().css('color', 'white');
+          $(this).parent().css('color', '#f16000');
         }
       });
 
