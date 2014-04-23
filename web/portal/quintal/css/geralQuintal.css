@@ -427,7 +427,7 @@ input.error{border: #FF2F2F 2px solid!important;}
 .menuRodape ul li{  margin: 0 10px 0 0\9; padding-right:16px\9;}
 .menuRodape ul { margin-left:30px\9; }
 
-#destaque #form-contato label.error{ position: absolute;left:0; top: 60%; color: #FD0000;background-color:#ffdf0b; width: 100%;text-align: center;text-transform: uppercase; margin: 0; font-weight:bold;}
+#destaque #form-contato label.error{ position: absolute;left:0; top: 61%; color: #FD0000;background-color:#ffdf0b; width: 100%;text-align: center;text-transform: uppercase; margin: 0; font-weight:bold;}
 #destaque #form-contato label.error.checked{display:none!important;}
 
 .btn-formats {margin:10px 20px 0px 0px; background: url(http://cmais.com.br/portal/quintal/images/bg-amarelo.png) repeat;height: 45px;line-height: 45px;text-transform: uppercase;width: 216px;text-align: center;font-size: 20px; float:left!important;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;}
