@@ -60,7 +60,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         if(sendMailAtt($to, $from, $subject, $message, $attach)) {
           if (unlink($_FILES['datafile']['tmp_name'])) {
-            header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?success=2");
+            header("Location: http://tvcultura.cmais.com.br/d.php/quintaldacultura?success=1");
             die();
           }
         }
