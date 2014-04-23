@@ -449,7 +449,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
       });
       $("label[for='datafile']").not('#concordo').each(function(){
         if($(this).hasClass('error')){
-          $(this).css('top', '111%');
+          $(this).css('top', '111%').css('margin-top',' 15px');
         }else{
           $(this).parent().css('color', '#f16000');
         }
