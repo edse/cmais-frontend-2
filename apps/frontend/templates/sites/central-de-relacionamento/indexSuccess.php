@@ -13,6 +13,9 @@ $(document).ready(function(){
   <?php include_partial_from_folder('sites/central-de-relacionamento', 'global/topo', array('site' => $site,'siteSections' => $siteSections, 'section' => $section)) ?>
   <!--colunas-->
   <div class="row-fluid">
+    <!--[if lt IE 10]>
+        <p style="color:red; background:yellow; width:80%; overflow:hidden; font-weight:bold; font-size: 20px; text-align:center;padding: 10px; margin:20px auto; border:3px dashed red;">Você está usando um navegador antigo. Recomendamos <a href="http://browsehappy.com/" style="color:blue;font-size:20px; text-decoration:underline!important;">que atualize seu navegador</a> para você ter uma expêriencia melhor.</p>
+    <![endif]-->
     <!--coluna esquerda-->
     <div class="col-esquerda span5" style="margin:0;">
       <!--destaque principal-->
@@ -648,7 +651,7 @@ $(document).ready(function(){
                         </div>
                       </div>
                       <div class="control-group f4">
-                        <label class="control-label" for="f4_cod_programa">Programa / Interesse</label>
+                        <label class="control-label" for="f4_cod_programa">Selecione</label>
                         <div class="controls">
                           <select name="f4_cod_programa" id="f4_cod_programa" onchange="assuntos();">
                             <option value="--" selected="selected">--</option>
@@ -1394,6 +1397,14 @@ $(document).ready(function(){
                     success: function(data){
                       if(data.script != ""){
                         eval(data.script);
+                        if($('#f4_cod_veiculo :selected').val() == "10"){
+                          $('#f4_cod_veiculo').parent().prev().html('Área');
+                          $('#f4_cod_programa').parent().prev().html('Interesse');  
+                        }else{
+                          $('#f4_cod_veiculo').parent().prev().html('Emissora');
+                          $('#f4_cod_programa').parent().prev().html('Programa');
+                        }
+                        
                         if($('#f4_cod_programa option').size()<=1){
                             $('#f4_cod_programa option').attr("value","sem programa").html("sem programa").attr('selected','selected');
                             $('#f4_cod_assunto').html('<option value="19">Elogio</option><option value="21">Crítica</option><option value="23">Comentário</option><option value="24">Pedido de Informação</option>');
