@@ -712,6 +712,9 @@ class _sectionActions extends sfActions
               $this->assetsQuery->orderBy('sa.display_order');
             else
               $this->assetsQuery->orderBy('a.id desc');
+              
+            if($this->site->getSlug() == "maiscultura") 
+              $this->assetsQuery->orderBy('sa.display_order desc');							
           }
           elseif (in_array($this->site->getSlug(), array('rodaviva','provocacoes','metropolis'))) {
 
