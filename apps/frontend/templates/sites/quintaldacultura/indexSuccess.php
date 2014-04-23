@@ -447,7 +447,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
           $(this).prev().removeClass('icone-form-'+campo+'-erro');
         }
       });
-      $("label[for='datafile']").delay(0, function(){
+      $("label[for='datafile']").not('#concordo').each(function(){
         if($(this).hasClass('error')){
           $(this).css('top', '111%');
         }else{
