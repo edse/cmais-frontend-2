@@ -360,7 +360,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
             cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
             uf:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
             concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-            datafile:'POR FAVOR INSIRA UM ARQUIVO DE IMAGEM VÁLIDO:JPEG,GIF OU PNG'
+            datafile:'FORMATO INVÁLIDO'
           }, 
           
           success: function(label){
