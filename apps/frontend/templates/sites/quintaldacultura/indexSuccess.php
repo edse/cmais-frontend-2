@@ -447,14 +447,6 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
           $(this).prev().removeClass('icone-form-'+campo+'-erro');
         }
       });
-      
-      $('#concordo').delay(100, function(){
-        if($(this).hasClass('error')){
-          $(this).parent().css('color', 'red');
-        }else{
-          $(this).parent().css('color', '#f16000');
-        }
-      });
       $("label[for='datafile']").delay(0, function(){
         if($(this).hasClass('error')){
           $(this).css('top', '111%');
@@ -463,6 +455,14 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
         }
       });
 
+      $('#concordo').delay(100, function(){
+        if($(this).hasClass('error')){
+          $(this).parent().css('color', 'red');
+        }else{
+          $(this).parent().css('color', '#f16000');
+        }
+      });
+      
     }, 100);
       
   }
