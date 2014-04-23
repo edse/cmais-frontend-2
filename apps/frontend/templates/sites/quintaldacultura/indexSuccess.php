@@ -192,6 +192,7 @@
            <?php endif;?>
         <?php endif;?>   
             
+     
             <!-- FORM DESTAQUE -->
             <div id="destaque" style="display:none;">
               <div class="col-dir">
@@ -360,7 +361,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
             cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
             uf:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
             concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-            //datafile:'FORMATO INVÁLIDO'
+            datafile:'ARQUIVO INVÁLIDO'
           }, 
           
           success: function(label){
@@ -449,7 +450,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
       });
       $("label[for='datafile']").not('#concordo').each(function(){
         if($(this).hasClass('error')){
-          $(this).css('top', '111%').css('margin-top',' 15px');
+          $(this).css('top', '56%');
         }else{
           $(this).parent().css('color', '#f16000');
         }
@@ -457,9 +458,9 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
 
       $('#concordo').delay(100, function(){
         if($(this).hasClass('error')){
-          $(this).parent().css('color', 'red');
+          $(this).parent().css('color', 'red').css('margin-top', '0');
         }else{
-          $(this).parent().css('color', '#f16000');
+          $(this).parent().css('color', '#f16000').css('margin-top', '0');
         }
       });
       
@@ -469,4 +470,3 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
 </script>  
     
   </body>
-</html>
