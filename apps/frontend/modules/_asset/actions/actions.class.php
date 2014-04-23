@@ -531,6 +531,7 @@ class _assetActions extends sfActions
 			if (count($sections) > 0) {
 				$this->section = $sections[0];
         $start = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2) ,substr($this->date,0,4)));
+        echo date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2) ,substr($this->date,0,4)));
 				//$this->assets = $this->section->getAssets();
 				$this->assets = Doctrine_Query::create()
 					->select('a.*')
