@@ -13,6 +13,9 @@ $(document).ready(function(){
   <?php include_partial_from_folder('sites/central-de-relacionamento', 'global/topo', array('site' => $site,'siteSections' => $siteSections, 'section' => $section)) ?>
   <!--colunas-->
   <div class="row-fluid">
+    <!--[if lt IE 10]>
+        <p style="color:red; background:yellow; width:80%; overflow:hidden; font-weight:bold; font-size: 20px; text-align:center;padding: 10px; margin:20px auto; border:3px dashed red;">Você está usando um navegador antigo. Recomendamos <a href="http://browsehappy.com/" style="color:blue;font-size:20px; text-decoration:underline!important;">que atualize seu navegador</a> para você ter uma expêriencia melhor.</p>
+    <![endif]-->
     <!--coluna esquerda-->
     <div class="col-esquerda span5" style="margin:0;">
       <!--destaque principal-->

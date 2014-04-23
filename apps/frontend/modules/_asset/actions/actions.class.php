@@ -530,6 +530,7 @@ class _assetActions extends sfActions
 			
 			if (count($sections) > 0) {
 				$this->section = $sections[0];
+        //$start = date("Y/m/d", mktime(0,0,0, substr($this->date,5,2), substr($this->date,8,2) ,substr($this->date,0,4)));
 				//$this->assets = $this->section->getAssets();
 				$this->assets = Doctrine_Query::create()
 					->select('a.*')
@@ -538,6 +539,7 @@ class _assetActions extends sfActions
 					->andWhere('sa.section_id = ?', $this->section->id)
 					->andWhere('a.site_id = ?', $this->site->id)
 					->andWhere('a.is_active = ?', 1)
+          //->andWhere('a.date_start >= ?', array($start.' 00:00:00'))
 					->orderBy('sa.display_order')
 					->execute();
 					

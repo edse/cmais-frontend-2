@@ -288,120 +288,121 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
 		<script type="text/javascript" src="http://cmais.com.br/portal/js/validate/additional-methods.js"></script>
 		<script type="text/javascript">
     $(document).ready(function(){
-    if($('#form-contato').is(':visible')){
-      //$('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
-      $('.file-wrapper input[type=file]').bind('change focus click', function(){
-        alert('to nele');
-      });
-  
-      
-  	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
-  	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});
-  	  $('#responsavel').focus(function(){ 		if($(this).val() == "Nome do Responsável") {  $(this).val(''); }; 	});
-  	  $('#responsavel').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome do Responsável'); 	};	});
-  	  $('#idade').focus(function(){ 	if($(this).val() == "Idade") {  $(this).val(''); }; });
-  	  $('#idade').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Idade'); 	 };	});	  
-  	  $('#cidade').focus(function(){ 	if($(this).val() == "Cidade") {  $(this).val(''); }; });
-  	  $('#cidade').focusout(function(){ if($(this).val() == ''){ $(this).val('Cidade');   }; });
-  	  $('#estado').focus(function(){ 	if($(this).val() == "UF") {  $(this).val(''); }; });
-  	  $('#estado').focusout(function(){ if($(this).val() == ''){ $(this).val('UF');   }; });
-  	  $('#email').focus(function(){ 	if($(this).val() == "Email") {  $(this).val(''); }; });
-  	  $('#email').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Email'); 	 };	});
-  	  $('#mensagem').focus(function(){ 	if($(this).val() == "Mensagem") {  $(this).val(''); };	});
-  	  $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Mensagem'); };	});
-    	
-      var validator = $('#form-contato').validate({
+     // if($('#form-contato').is(':visible')){
+        $('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
+        /*
+        $('.file-wrapper input[type=file]').bind('change focus click', function(){
+          alert('to nele');
+        });
+        */
         
-        submitHandler: function(form){
-          //resgatando a página que a pessoa
-          url = window.location;
-          $('#urlElement').attr('value',url.href);
-        	form.submit();
-        },
-        rules:{
-          nome:{
-            required: function(){ validate("#nome"); return true},
-            minlength: 2
-          },
-          responsavel:{
-            required: function(){ validate("#responsavel"); return true},
-            minlength: 2
-          },
-          idade:{
-            required: function(){ validate("#idade"); return true},
-            number: true
-          },
-          email:{
-            required: true,
-            email: true
-          },
-          cidade:{
-            required: function(){ validate("#cidade"); return true},
-            minlength: 3
-          },
-          uf:{
-            required: function(){ validate("#estado"); return true},
-            minlength: 2
-          },
-         concordo:{
-            required: true
-          }
+    	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
+    	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});
+    	  $('#responsavel').focus(function(){ 		if($(this).val() == "Nome do Responsável") {  $(this).val(''); }; 	});
+    	  $('#responsavel').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome do Responsável'); 	};	});
+    	  $('#idade').focus(function(){ 	if($(this).val() == "Idade") {  $(this).val(''); }; });
+    	  $('#idade').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Idade'); 	 };	});	  
+    	  $('#cidade').focus(function(){ 	if($(this).val() == "Cidade") {  $(this).val(''); }; });
+    	  $('#cidade').focusout(function(){ if($(this).val() == ''){ $(this).val('Cidade');   }; });
+    	  $('#estado').focus(function(){ 	if($(this).val() == "UF") {  $(this).val(''); }; });
+    	  $('#estado').focusout(function(){ if($(this).val() == ''){ $(this).val('UF');   }; });
+    	  $('#email').focus(function(){ 	if($(this).val() == "Email") {  $(this).val(''); }; });
+    	  $('#email').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Email'); 	 };	});
+    	  $('#mensagem').focus(function(){ 	if($(this).val() == "Mensagem") {  $(this).val(''); };	});
+    	  $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Mensagem'); };	});
+      	
+        var validator = $('#form-contato').validate({
           
-        },
-        onkeyup:function(e){
-          verifyKey();
-        },
-        messages:{
-          nome:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-          responsavel:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-          idade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-          email:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-          cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-          uf:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-          concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
-        }, 
+          submitHandler: function(form){
+            //resgatando a página que a pessoa
+            url = window.location;
+            $('#urlElement').attr('value',url.href);
+          	form.submit();
+          },
+          rules:{
+            nome:{
+              required: function(){ validate("#nome"); return true},
+              minlength: 2
+            },
+            responsavel:{
+              required: function(){ validate("#responsavel"); return true},
+              minlength: 2
+            },
+            idade:{
+              required: function(){ validate("#idade"); return true},
+              number: true
+            },
+            email:{
+              required: true,
+              email: true
+            },
+            cidade:{
+              required: function(){ validate("#cidade"); return true},
+              minlength: 3
+            },
+            uf:{
+              required: function(){ validate("#estado"); return true},
+              minlength: 2
+            },
+           concordo:{
+              required: true
+            }
+            
+          },
+          onkeyup:function(e){
+            verifyKey();
+          },
+          messages:{
+            nome:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+            responsavel:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+            idade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+            email:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+            cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+            uf:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+            concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
+          }, 
+          
+          success: function(label){
+          }
+        });
         
-        success: function(label){
-        }
-      });
+        $('#enviar').click(function(){
+          verifyKey();
+        });
+      //}
       
-      $('#enviar').click(function(){
-        verifyKey();
-      });
-    }
-    
-    
-		function getURLParameter(name) {
-			return decodeURI(
-		        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
-		    );
-		}
-		
-		var testep = getURLParameter("testep");
-	  var success = getURLParameter("success");
-	  var error = getURLParameter("error");
-    
-    if(testep == 1){
-      $('#destaque').show();
-    }
-	  if(success == 1){
-	    $(".msgAcerto").show();
-	    $("#form-contato").hide();
-	    $(".msgAcerto").html("<p> Seu desenho foi enviado com sucesso!<br/> Em breve estará em nossa galeria!</p>");
-	   // $(".msgAcerto").scrollTo('#statusMsg_0');
-	  }else if(error == 1){
-	    $(".msgErro").show();
-	    $(".msgErro").html("<p>Erro inesperado<br/>Por favor, tente mais tarde!</p>");
-	   // $(".msgErro").scrollTo("statusMsg_1");
-	  }else if(error == 2){
-	    $(".msgErro").show();
-	    $(".msgErro").html("<p>Formato de imagem inválido<br/> Por favor, tente com JPG, PNG ou GIF!</p>");
-	    //$(".msgErro").scrollTo("statusMsg_1");
-	  }else if(error == 3){
-	    $(".msgErro").show();
-	    $(".msgErro").html("<p>Arquivo muito grande<br/> Por favor, tente com um arquivo de até 15 MB!</p>");
-	    //$(".msgErro").scrollTo("statusMsg_1");
-	  }
+      
+  		function getURLParameter(name) {
+  			return decodeURI(
+  		        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+  		    );
+  		}
+  		
+  		var testep = getURLParameter("testep");
+  	  var success = getURLParameter("success");
+  	  var error = getURLParameter("error");
+      
+      if(testep == 1){
+        $('#destaque').show();
+      }
+  	  if(success == 1){
+  	    $(".msgAcerto").show();
+  	    $("#form-contato").hide();
+  	    $(".msgAcerto").html("<p> Seu desenho foi enviado com sucesso!<br/> Em breve estará em nossa galeria!</p>");
+  	   // $(".msgAcerto").scrollTo('#statusMsg_0');
+  	  }else if(error == 1){
+  	    $(".msgErro").show();
+  	    $(".msgErro").html("<p>Erro inesperado<br/>Por favor, tente mais tarde!</p>");
+  	   // $(".msgErro").scrollTo("statusMsg_1");
+  	  }else if(error == 2){
+  	    $(".msgErro").show();
+  	    $(".msgErro").html("<p>Formato de imagem inválido<br/> Por favor, tente com JPG, PNG ou GIF!</p>");
+  	    //$(".msgErro").scrollTo("statusMsg_1");
+  	  }else if(error == 3){
+  	    $(".msgErro").show();
+  	    $(".msgErro").html("<p>Arquivo muito grande<br/> Por favor, tente com um arquivo de até 15 MB!</p>");
+  	    //$(".msgErro").scrollTo("statusMsg_1");
+  	  }
 
   });
   var SITE = SITE || {};
