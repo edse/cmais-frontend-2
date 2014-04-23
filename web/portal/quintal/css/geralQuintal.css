@@ -417,7 +417,7 @@ body { background:#0ab015 url(http://cmais.com.br/portal/quintal/images/bg-quint
 #destaque .col-dir .idade span,
 #destaque .col-dir .concordo { color: #f16000; }
 #destaque .col-dir .concordo input { width:13px; float:left; margin:0 7px 0 3px; }
-#destaque .col-dir textarea { width: 95%; padding:10px; height: 70px; overflow-x:hidden; overflow-y: scroll; background:#d0e229; box-shadow:none; border:none; color:#6a747d !important; line-height: 18px; margin-bottom: 2%;}
+#destaque .col-dir textarea { width: 95%; padding:10px; height: 70px; overflow-x:hidden; overflow-y: scroll; background:#fff; box-shadow:none; border:none; color:#6a747d !important; line-height: 18px; margin-bottom: 2%;}
 #destaque .col-dir .enviar { background:#f16000; color:#e4f527 !important; padding:2px 15px 4px 8px; display: block; border: none; box-shadow: none; font-weight:bold; text-transform:uppercase;float:right; cursor: pointer;}
 
 #destaque .msgAcerto p {margin: 0 10px 0;text-align: center;clear: both;overflow: hidden;font-size: 16px;}
