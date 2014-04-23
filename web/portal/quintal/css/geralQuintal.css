@@ -165,7 +165,7 @@ body { background:#0ab015 url(http://cmais.com.br/portal/quintal/images/bg-quint
 .form .file-wrapper {cursor: pointer;display: inline-block;overflow: hidden;position: relative;}
 .form .file-wrapper input {cursor: pointer;font-size: 100px;height: 100%;filter: alpha(opacity=1);-moz-opacity: 0.01;opacity: 0.01;position: absolute;right: 0;top: 0;}
 .form .file-wrapper .button {background:#f16000;color: #e4f527 !important;padding: 2px 10px;display: block;border: none;box-shadow: none;font-weight: bold;text-transform: uppercase;float: right;cursor: pointer;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;}
-.form .file-holder{clear: both;text-align: left;color: #f16000;margin: 10px 0 7px 0;padding-left: 13px;font-size: 12px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.form .file-holder{clear: both;text-align: left;color: #f16000;margin: -15px 0 7px 0;padding-left: 13px;font-size: 12px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 
 /* horario */
 #horario {  margin: 0; width: 750px;float: right; overflow:hidden;}
@@ -400,7 +400,7 @@ body { background:#0ab015 url(http://cmais.com.br/portal/quintal/images/bg-quint
 #destaque { width:960px; height:407px; background:url(http://cmais.com.br/portal/quintal/images/bg_form.png) no-repeat no-repeat; position:relative; }
 #destaque .minhoquias { width:290px; height:400px; background:url(http://cmais.com.br/portal/quintal/images/minhoquias.png) no-repeat; position:absolute; top:-75px; left:-35px; }
 #destaque .col-esq { width: 306px; margin:35px 10px 0 0; text-align:center;  }
-#destaque .col-dir { width: 445px; margin:12px 10px 0 0; background:#ffdf0b; padding:10px; }
+#destaque .col-dir { width: 445px; margin: 5px 10px 0 0; background:#ffdf0b; padding:10px; }
 #destaque .col-esq,
 #destaque .col-dir { float:right; position: relative; }
 #destaque .col-esq p { font-size:20px; line-height:28px; display:inline; background:#cb35a4; color:#fff !important; text-transform:uppercase; margin-bottom:20px; clear:both; padding:3px 5px;  }
