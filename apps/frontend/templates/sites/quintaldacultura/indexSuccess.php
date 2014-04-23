@@ -380,13 +380,13 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
   		    );
   		}
   		
-  		//var testep = getURLParameter("testep");
+  		var testep = getURLParameter("testep");
   	  var success = getURLParameter("success");
   	  var error = getURLParameter("error");
   	  
-			/*if(testep == 1){
+			if(testep == 1){
         $('#destaque').show();
-      }*/
+      }
   	  if(success == 1){
   	    $(".msgAcerto").show();
   	    $("#form-contato").hide();
