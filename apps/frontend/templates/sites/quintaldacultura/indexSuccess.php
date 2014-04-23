@@ -219,7 +219,7 @@
 					        </div>
                   <!--/Anexo-->
                   <label class="concordo"><input type="radio" id="concordo" name="concordo" />Estou ciente e de acordo com os Termos e Condições abaixo:</label>
-                  <textarea id="termo" name="termo">
+                  <textarea id="termo" name="">
 Participação:
 Este é um programa de caráter exclusivamente cultural, sem qualquer modalidade de sorteio ou pagamento, nem vinculado à aquisição ou uso de qualquer bem, direito ou serviço, nos termos da Lei 5.768/71 e do Decreto n° 70.951/72, e que é realizado pela Fundação Padre Anchieta Centro Paulista de Rádio e TVs Educativas. A participação é aberta a crianças representadas por seus pais ou responsáveis legais.
  
@@ -254,7 +254,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
                   <div class="enviar">
 					          <input type="submit" class="enviar" name="enviar" id="enviar" value="ENVIAR"></input>
 					        </div> 
-                <input type="hidden" id="urlElement" name="urlElement" value="">
+                <input type="hidden" id="urlElement" name="" value="">
                 </form>
               </div>
               
@@ -359,7 +359,8 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
             email:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
             cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
             uf:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-            concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!'
+            concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
+            
           }, 
           
           success: function(label){
@@ -446,6 +447,13 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
       $('#concordo').delay(100, function(){
         if($(this).hasClass('error')){
           $(this).parent().css('color', 'red');
+        }else{
+          $(this).parent().css('color', '#f16000');
+        }
+      });
+      $("label[for='datafile']").delay(0, function(){
+        if($(this).hasClass('error')){
+          $(this).css('top', '111%');
         }else{
           $(this).parent().css('color', '#f16000');
         }
