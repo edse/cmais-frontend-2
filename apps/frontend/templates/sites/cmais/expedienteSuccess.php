@@ -80,7 +80,6 @@
 
               <h2>Desenvolvimento e Programação</h2>
               <p>
-                Emerson Estrella<br/>
                 Georgia Catarina A. Pinto<br/>
                 Jefferson M. Doljak<br/>
                 Joseval Lima<br/>
@@ -90,7 +89,6 @@
               <p>
 							Clarice França<br/>
 							Josilene Rocha<br/>
-							Mariana Amorim<br/>
 							Tejota Menezes<br/>
               </p><br/>
               
