@@ -61,6 +61,7 @@ class _sectionActions extends sfActions
       if($request->getParameter('debug') != "")
         print "<br>>>>".$this->section->getId();
 
+			//CMAIS.COM.BR/INFANTIL ---> CMAIS.COM.BR/MAISCRIANCA
       if($this->section->getId() == 113){
         header("Location: /maiscrianca");
         die();
