@@ -1,0 +1,59 @@
+2013-07-30 16:33:30 [info] Server created
+
+
+ ---- Keep alive (16:33:30) ---- 
+
+2013-07-30 16:33:34 [info] [client 200.136.27.146:58536] Connected
+2013-07-30 16:33:34 [info] [client 200.136.27.146:58536] Performing handshake
+2013-07-30 16:33:34 [info] [client 200.136.27.146:58536] Handshake sent
+
+
+ Calling: _actionGodofredo
+
+
+
+ Calling: _actionAddcontents
+
+
+
+ Calling: _actionAddquestions
+
+
+
+ Calling: _actionAddcontents
+
+
+
+ Calling: _actionAddquestions
+
+
+
+ Calling: _actionAddcontents
+
+
+
+ Calling: _actionAddquestions
+
+
+
+ ---- Keep alive (16:34:01) ---- 
+
+
+
+ Calling: _actionAddquestions
+
+
+
+ ---- Keep alive (16:34:32) ---- 
+
+
+
+ ---- Keep alive (16:35:03) ---- 
+
+2013-07-30 16:35:04 [info] [client 179.235.37.97:50282] Connected
+2013-07-30 16:35:05 [info] [client 179.235.37.97:50282] Performing handshake
+2013-07-30 16:35:05 [info] [client 179.235.37.97:50282] Handshake sent
+
+
+ Calling: _actionToken
+
