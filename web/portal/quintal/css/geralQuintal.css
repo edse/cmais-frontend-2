@@ -413,7 +413,7 @@ body { background:#0ab015 url(http://cmais.com.br/portal/quintal/images/bg-quint
 #destaque .col-dir .idade { float: left; margin:0 0 20px 0; width: 50%;}
 #destaque .col-dir .idade input { width: 25%; float:left; margin-right:5px; text-align:center; padding:0;  }  
 #destaque .col-dir .idade span { float: left; display:block; margin:0 5px 0 0; }
-#destaque .col-dir .idade .sprite-ico-aniversario { margin:0 17px 0 0; }
+#destaque .col-dir .idade .sprite-ico-aniversario { margin:0 10px 0 0; }
 #destaque .col-dir .idade span,
 #destaque .col-dir .concordo { color: #f16000; }
 #destaque .col-dir .concordo input { width:13px; float:left; margin:0 7px 0 3px; }
