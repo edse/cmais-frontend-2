@@ -360,7 +360,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
             cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
             uf:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
             concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-            
+            //datafile:'FORMATO INVÁLIDO'
           }, 
           
           success: function(label){
@@ -382,8 +382,8 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
   		var testep = getURLParameter("testep");
   	  var success = getURLParameter("success");
   	  var error = getURLParameter("error");
-      
-      if(testep == 1){
+  	  
+			if(testep == 1){
         $('#destaque').show();
       }
   	  if(success == 1){
@@ -403,14 +403,18 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
   	    $(".msgErro").show();
   	    $(".msgErro").html("<p>Arquivo muito grande<br/> Por favor, tente com um arquivo de até 15 MB!</p>");
   	    //$(".msgErro").scrollTo("statusMsg_1");
+  	  }else if(error == 4){
+  	    $(".msgErro").show();
+  	    $(".msgErro").html("<p>Mensagem não enviada<br/> Por favor, tente mais tarde!</p>");
+  	    //$(".msgErro").scrollTo("statusMsg_1");
   	  }
 
   });
   var SITE = SITE || {};
 
   SITE.fileInputs = function() {
-    console.log("entrei");
-    console.log($(this));
+   // console.log("entrei");
+    //console.log($(this));
     var $this = $(this),
         $val = $this.val(),
         valArray = $val.split('\\'),
@@ -443,7 +447,14 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
           $(this).prev().removeClass('icone-form-'+campo+'-erro');
         }
       });
-      
+      $("label[for='datafile']").not('#concordo').each(function(){
+        if($(this).hasClass('error')){
+          $(this).css('top', '111%').css('margin-top',' 15px');
+        }else{
+          $(this).parent().css('color', '#f16000');
+        }
+      });
+
       $('#concordo').delay(100, function(){
         if($(this).hasClass('error')){
           $(this).parent().css('color', 'red');
@@ -451,14 +462,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
           $(this).parent().css('color', '#f16000');
         }
       });
-      $("label[for='datafile']").delay(0, function(){
-        if($(this).hasClass('error')){
-          $(this).css('top', '111%');
-        }else{
-          $(this).parent().css('color', '#f16000');
-        }
-      });
-
+      
     }, 100);
       
   }

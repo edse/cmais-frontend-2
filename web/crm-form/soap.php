@@ -5,7 +5,7 @@ ini_set('display_errors','On');
 //turn off WSDP caching if not in a production environment
 $ini = ini_set("soap.wsdl_cache_enabled","0");
 //instantiate the SOAP client
-//$client = new SoapClient("http://intranet3/crm_webservices/crm.asmx?WSDL"); - url antiga
+//$client = new SoapClient("http://intranet3/crm_webservices/crm.asmx?WSDL");
 $client = new SoapClient("http://intranet.tvcultura.com.br/crm_webservices/crm.asmx?WSDL");
 
 if(!isset($_REQUEST["step"]))

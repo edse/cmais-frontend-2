@@ -9,7 +9,8 @@ if(!$_REQUEST["id"]){
 //turn off WSDP caching if not in a production environment
 $ini = ini_set("soap.wsdl_cache_enabled","0");
 //instantiate the SOAP client
-$client = new SoapClient("http://intranet3/crm_webservices/crm.asmx?WSDL");
+//$client = new SoapClient("http://intranet3/crm_webservices/crm.asmx?WSDL");
+$client = new SoapClient("http://intranet.tvcultura.com.br/crm_webservices/crm.asmx?WSDL");
 
 //CHECK EMAIL
 $result = $client->valida_usuario(array('id'=>$_REQUEST["id"]));
@@ -19,6 +20,6 @@ if($result->valida_usuarioResult != " " && $result->valida_usuarioResult != ""){
 }
 else{
   /*header("Location: http://172.20.18.133/crm-form/form.html?erro=1");*/
-  header("Location: http://http://cmais.com.br/central-de-relacionamento?erro=1");
+  header("Location: http://cmais.com.br/central-de-relacionamento?erro=1");
 }
 die();

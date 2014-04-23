@@ -162,7 +162,7 @@ body { background:#0ab015 url(http://cmais.com.br/portal/quintal/images/bg-quint
 .sprite-ico-anexo{ background-position: 4px -349px; width: 27px!important; height: 19px; } 
 
 /* botao anexar */
-.form .file-wrapper {cursor: pointer;display: inline-block;overflow: hidden;position: relative;}
+.form .file-wrapper {cursor: pointer;display: inline-block;position: relative;width: 50%;}
 .form .file-wrapper input {cursor: pointer;font-size: 100px;height: 100%;filter: alpha(opacity=1);-moz-opacity: 0.01;opacity: 0.01;position: absolute;right: 0;top: 0;}
 .form .file-wrapper .button {background:#f16000;color: #e4f527 !important;padding: 2px 10px;display: block;border: none;box-shadow: none;font-weight: bold;text-transform: uppercase;float: right;cursor: pointer;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;}
 .form .file-holder{clear: both;text-align: left;color: #f16000;margin: -15px 0 7px 0;padding-left: 13px;font-size: 12px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
@@ -413,7 +413,7 @@ body { background:#0ab015 url(http://cmais.com.br/portal/quintal/images/bg-quint
 #destaque .col-dir .idade { float: left; margin:0 0 20px 0; width: 50%;}
 #destaque .col-dir .idade input { width: 25%; float:left; margin-right:5px; text-align:center; padding:0;  }  
 #destaque .col-dir .idade span { float: left; display:block; margin:0 5px 0 0; }
-#destaque .col-dir .idade .sprite-ico-aniversario { margin:0 17px 0 0; }
+#destaque .col-dir .idade .sprite-ico-aniversario { margin:0 10px 0 0; }
 #destaque .col-dir .idade span,
 #destaque .col-dir .concordo { color: #f16000; }
 #destaque .col-dir .concordo input { width:13px; float:left; margin:0 7px 0 3px; }
@@ -427,7 +427,7 @@ input.error{border: #FF2F2F 2px solid!important;}
 .menuRodape ul li{  margin: 0 10px 0 0\9; padding-right:16px\9;}
 .menuRodape ul { margin-left:30px\9; }
 
-#destaque #form-contato label.error{ position: absolute;left:0; top: 60%; color: #FD0000;background-color:#ffdf0b; width: 100%;text-align: center;text-transform: uppercase; margin: 0; font-weight:bold;}
+#destaque #form-contato label.error{ position: absolute;left:0; top: 61%; color: #FD0000;background-color:#ffdf0b; width: 100%;text-align: center;text-transform: uppercase; margin: 0; font-weight:bold;}
 #destaque #form-contato label.error.checked{display:none!important;}
 
 .btn-formats {margin:10px 20px 0px 0px; background: url(http://cmais.com.br/portal/quintal/images/bg-amarelo.png) repeat;height: 45px;line-height: 45px;text-transform: uppercase;width: 216px;text-align: center;font-size: 20px; float:left!important;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;}
