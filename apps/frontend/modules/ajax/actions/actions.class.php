@@ -2781,6 +2781,7 @@ EOT;
 
 
   public function executeGingaxml(sfWebRequest $request){
+  	header('Content-Type: text/xml'); 
     $this->setLayout(false);
 
 	//NÃO LISTAR SITES
