@@ -193,8 +193,8 @@
         <?php endif;?>   
             
      
-            <!-- FORM DESTAQUE -->
-            <div id="destaque" style="display:none;">
+              <!-- FORM DESTAQUE -->
+            <div id="destaque">
               <div class="col-dir">
               	<div class="msgAcerto" id="statusMsg_0" style="display:none"> </div>
 								<div class="msgErro" id="statusMsg_1" style="display:none"> </div>
@@ -384,13 +384,12 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
   	  var success = getURLParameter("success");
   	  var error = getURLParameter("error");
   	  
-			if(testep == 1){
-        $('#destaque').show();
-      }
+			
   	  if(success == 1){
   	    $(".msgAcerto").show();
   	    $("#form-contato").hide();
   	    $(".msgAcerto").html("<p> Seu desenho foi enviado com sucesso!<br/> Em breve estará em nossa galeria!</p>");
+  	    $(".col-dir").css('margin','180px 10px 0 0');
   	   // $(".msgAcerto").scrollTo('#statusMsg_0');
   	  }else if(error == 1){
   	    $(".msgErro").show();
@@ -470,3 +469,4 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
 </script>  
     
   </body>
+</html>
