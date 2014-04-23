@@ -538,6 +538,7 @@ class _assetActions extends sfActions
 					->andWhere('sa.section_id = ?', $this->section->id)
 					->andWhere('a.site_id = ?', $this->site->id)
 					->andWhere('a.is_active = ?', 1)
+          ->andWhere('a.date_start >= ?', array(date("Y/m/d").' 00:00:00'))
 					->orderBy('sa.display_order')
 					->execute();
 					
