@@ -1,6 +1,6 @@
 <?php
 // mail sender
-$email_site = "emerson.estrella@gmail.com, franciscofernandes@tvcultura.com.br, pedronakano@tvcultura.com.br, cristovamruizjr@gmail.com";
+$email_site = "emerson.estrella@gmail.com, franciscofernandes@tvcultura.com.br, pedronakano@tvcultura.com.br, valclimaster@gmail.com";
 //$email_site = "radar.email@tvcultura.com.br";
 
 if(isset($email_site)) {
