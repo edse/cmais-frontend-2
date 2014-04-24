@@ -72,7 +72,6 @@
               <p>
                 Ana Carolina Surita<br/>
                 Felipe  Tringoni <br />
-                Juliano Nunes<br/>
                 Marília Fredini<br/>
                 Rita Albuquerque<br/>
                 
