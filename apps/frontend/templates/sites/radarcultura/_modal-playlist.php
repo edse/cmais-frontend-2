@@ -1,3 +1,22 @@
+        <script>
+        		function limita(campo,limite){
+						  var texto 	= $("#"+campo).val();
+						  var tamanho = texto.length;
+						  var restante = limite - tamanho;
+							
+							if(restante < 0){
+								$("#"+campo+"_contador").text("0 caracteres restantes");
+							}else{
+								$("#"+campo+"_contador").text(restante+" caracteres restantes");
+							}
+								  
+						  if (tamanho>=5) {
+						     $("#"+campo).val(texto.substring(0,limite));
+						  }
+						  return true; 
+						}
+        </script>           
+            
             <!-- Modal -->
             <div id="modal" class="modal playlist hide fade">
               <div class="modal-header">
@@ -68,7 +87,8 @@
                     </div>
                     <div class="control-group">
                       <label>Descrição</label>
-                      <textarea name="descricao" class="required" rows="8"></textarea>
+                      <textarea name="descricao" id="descricao" class="required" rows="8" onkeypress="javascript:limita('descricao', 400);" onblur="javascript:limita('descricao',  400);"></textarea>
+              				<p id="descricao_contador" style="font-family: Arial, Helvetica, sans-serif;font-size: 10pt;text-align: right;padding: 3px;float: right;margin: 0px;">400 caracteres</p>                      
                     </div>
                   </div>
                   <div class="row-fluid">
@@ -147,7 +167,7 @@
               },
               submitHandler: function(form){
                 $.ajax({
-                  type: "POST",
+                  type: "GET",
                   dataType: "jsonp",
                   url: "http://app.cmais.com.br/actions/radarcultura/playlist.php",
                   data: $("#form-indicacao-playlist").serialize(),
