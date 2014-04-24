@@ -516,7 +516,7 @@ $(document).ready(function(){
                           </div>
                         </div>
                         <div class="control-group">
-                          <label class="control-label" for="f4_cod_recepcaodesinal">Recepção do sinal</label>
+                          <label class="control-label" for="f4_cod_recepcaodesinal">Como recebe sinal da TV Cultura SP</label>
                           <div class="controls">
                             <select id="f4_cod_recepcaodesinal" name="f4_cod_recepcaodesinal"></select>
                           </div>
