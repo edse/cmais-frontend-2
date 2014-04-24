@@ -162,7 +162,7 @@ body { background:#0ab015 url(http://cmais.com.br/portal/quintal/images/bg-quint
 .sprite-ico-anexo{ background-position: 4px -349px; width: 27px!important; height: 19px; } 
 
 /* botao anexar */
-.form .file-wrapper {cursor: pointer;display: inline-block;overflow: hidden;position: relative;}
+.form .file-wrapper {cursor: pointer;display: inline-block;position: relative;width: 50%;}
 .form .file-wrapper input {cursor: pointer;font-size: 100px;height: 100%;filter: alpha(opacity=1);-moz-opacity: 0.01;opacity: 0.01;position: absolute;right: 0;top: 0;}
 .form .file-wrapper .button {background:#f16000;color: #e4f527 !important;padding: 2px 10px;display: block;border: none;box-shadow: none;font-weight: bold;text-transform: uppercase;float: right;cursor: pointer;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;}
 .form .file-holder{clear: both;text-align: left;color: #f16000;margin: -15px 0 7px 0;padding-left: 13px;font-size: 12px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
@@ -417,8 +417,11 @@ body { background:#0ab015 url(http://cmais.com.br/portal/quintal/images/bg-quint
 #destaque .col-dir .idade span,
 #destaque .col-dir .concordo { color: #f16000; }
 #destaque .col-dir .concordo input { width:13px; float:left; margin:0 7px 0 3px; }
-#destaque .col-dir textarea { width: 95%; padding:10px; height: 70px; overflow-x:hidden; overflow-y: scroll; background:#d0e229; box-shadow:none; border:none; color:#6a747d !important; line-height: 18px; margin-bottom: 2%;}
+#destaque .col-dir textarea { width: 95%; padding:10px; height: 70px; overflow-x:hidden; overflow-y: scroll; background:#fff; box-shadow:none; border:none; color:#6a747d !important; line-height: 18px; margin-bottom: 2%;}
 #destaque .col-dir .enviar { background:#f16000; color:#e4f527 !important; padding:2px 15px 4px 8px; display: block; border: none; box-shadow: none; font-weight:bold; text-transform:uppercase;float:right; cursor: pointer;}
+
+#destaque .msgAcerto p {margin: 0 10px 0;text-align: center;clear: both;overflow: hidden;font-size: 16px;}
+#destaque .msgErro p {margin: 0 10px 0;text-align: center;clear: both;overflow: hidden;font-size: 16px;color: #FD0000;font-weight:bold;}
 
 input.error{border: #FF2F2F 2px solid!important;}
 

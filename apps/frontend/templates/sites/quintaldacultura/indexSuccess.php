@@ -192,8 +192,9 @@
            <?php endif;?>
         <?php endif;?>   
             
-            <!-- FORM DESTAQUE -->
-            <div id="destaque" style="display:none;">
+     
+              <!-- FORM DESTAQUE -->
+            <div id="destaque">
               <div class="col-dir">
               	<div class="msgAcerto" id="statusMsg_0" style="display:none"> </div>
 								<div class="msgErro" id="statusMsg_1" style="display:none"> </div>
@@ -360,7 +361,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
             cidade:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
             uf:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
             concordo:'*TODOS OS CAMPOS SÃO DE PREENCHIMENTO OBRIGATÓRIO!',
-            datafile:'POR FAVOR INSIRA UM ARQUIVO DE IMAGEM VÁLIDO:JPEG,GIF OU PNG'
+            datafile:'ARQUIVO INVÁLIDO'
           }, 
           
           success: function(label){
@@ -383,13 +384,12 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
   	  var success = getURLParameter("success");
   	  var error = getURLParameter("error");
   	  
-			if(testep == 1){
-        $('#destaque').show();
-      }
+			
   	  if(success == 1){
   	    $(".msgAcerto").show();
   	    $("#form-contato").hide();
   	    $(".msgAcerto").html("<p> Seu desenho foi enviado com sucesso!<br/> Em breve estará em nossa galeria!</p>");
+  	    $(".col-dir").css('margin','180px 10px 0 0');
   	   // $(".msgAcerto").scrollTo('#statusMsg_0');
   	  }else if(error == 1){
   	    $(".msgErro").show();
@@ -449,7 +449,7 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
       });
       $("label[for='datafile']").not('#concordo').each(function(){
         if($(this).hasClass('error')){
-          $(this).css('top', '111%');
+          $(this).css('top', '56%');
         }else{
           $(this).parent().css('color', '#f16000');
         }
@@ -457,9 +457,9 @@ Para participar, o interessado (com autorização de pais ou responsáveis) deve
 
       $('#concordo').delay(100, function(){
         if($(this).hasClass('error')){
-          $(this).parent().css('color', 'red');
+          $(this).parent().css('color', 'red').css('margin-top', '0');
         }else{
-          $(this).parent().css('color', '#f16000');
+          $(this).parent().css('color', '#f16000').css('margin-top', '0');
         }
       });
       
