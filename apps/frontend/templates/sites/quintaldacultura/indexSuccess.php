@@ -56,9 +56,10 @@
             <!--p class="breadcrumb"><a href="/">cmais</a> &gt;&gt; Quintal da Cultura</p-->
             <!--CONTEUDO WRAPPER-->
             <div class="conteudoWrapper">
-            	<!-- Tira Rosa choque
-            	<div  class="rosachoque">
-          			<a href="quintaldacultura/look-rosachoque" class="titulos"><img src="http://cmais.com.br/portal/quintal/images/destaque-lookrosachoque.png"></a>
+            	
+            	<!--Destaque ações Home-->
+            	<!--<div  class="destaque-home">
+          			<a href="quintaldacultura/invernolegal" class="titulos"><img src="http://cmais.com.br/portal/quintal/images/banner-invernolegal.png"></a>
           		</div>
           		-->
               <!--ITENS BACKGROUND-->
