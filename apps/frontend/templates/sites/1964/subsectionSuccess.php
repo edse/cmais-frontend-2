@@ -6,7 +6,7 @@ if(isset($pager)){
   }  
 } 
 ?>
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css">
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/<?php echo $section->Parent->getSlug() ?>.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/js/timeline/1964.css" type="text/css" />
 <link type="text/css" href="http://cmais.com.br/portal/univesptv/css/geral.css" rel="stylesheet" />
@@ -106,7 +106,7 @@ if(isset($pager)){
             <?php if(isset($pager)): ?>
               <?php if($pager->haveToPaginate()): ?>
               <!-- PAGINACAO <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?> -->
-              <div class="paginacao grid2">
+              <div class="paginacao pag3 grid2">
                 <p class="txt-12">P&aacute;gina <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></p>
                 <a href="javascript: goToPage(<?php echo $pager->getNextPage() ?>);" class="btn proximo"></a>
                 <a href="javascript: goToPage(<?php echo $pager->getPreviousPage() ?>);" class="btn anterior"></a>
