@@ -99,7 +99,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               $(this.cssSelector.playlist + " ul").empty();
               for (i=0; i < this.playlist.length; i++) {
                 var listItem = (i === this.playlist.length-1) ? "<li class='jp-playlist-last'>" : "<li>";
-                listItem += "<a href='#' id='" + this.cssId.playlist + this.instance + "_item_" + i +"' tabindex='"+(18+i)+"'>"+ this.playlist[i].name +"</a>";
+                listItem += "<a href='#' id='" + this.cssId.playlist + this.instance + "_item_" + i +"' tabindex='"+(18+i)+"'>0"+ this.playlist[i].name +"</a>";
                 // Create links to free media
                 if(this.playlist[i].free) {
                   var first = true;
@@ -111,7 +111,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                     } else {
                       listItem += " | ";
                     }
-                    listItem += "<a id='" + self.cssId.playlist + self.instance + "_item_" + i + "_" + property + "' href='" + value + "' tabindex='"+(18+i)+"'>0" + property + "</a>";
+                    listItem += "<a id='" + self.cssId.playlist + self.instance + "_item_" + i + "_" + property + "' href='" + value + "' tabindex='"+(18+i)+"'>" + property + "</a>";
                  }
                 });
                 listItem += ")</span>";
