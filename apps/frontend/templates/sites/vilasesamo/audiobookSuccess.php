@@ -111,7 +111,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
                     } else {
                       listItem += " | ";
                     }
-                    listItem += "<a id='" + self.cssId.playlist + self.instance + "_item_" + i + "_" + property + "' href='" + value + "' tabindex='"+(18+i)+"'>" + property + "</a>";
+                    listItem += "<a id='" + self.cssId.playlist + self.instance + "_item_" + i + "_" + property + "' href='" + value + "' tabindex='"+(18+i)+"'>0" + property + "</a>";
                  }
                 });
                 listItem += ")</span>";
