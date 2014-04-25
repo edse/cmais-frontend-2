@@ -99,7 +99,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               $(this.cssSelector.playlist + " ul").empty();
               for (i=0; i < this.playlist.length; i++) {
                 var listItem = (i === this.playlist.length-1) ? "<li class='jp-playlist-last'>" : "<li>";
-                listItem += "<a href='#' id='" + this.cssId.playlist + this.instance + "_item_" + i +"' tabindex='"+(18+i)+"'>0"+ this.playlist[i].name +"</a>";
+                listItem += "<a href='#' id='" + this.cssId.playlist + this.instance + "_item_" + i +"' tabindex='"+(18+i)+"'>"+ this.playlist[i].name +"</a>";
                 // Create links to free media
                 if(this.playlist[i].free) {
                   var first = true;
@@ -178,8 +178,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
               <?php $i = 1; ?>
                 <?php //foreach($pager->getResults() as $d): ?>
                 <?php foreach($section->getAssets() as $d): ?>
-                  {name:"<?php echo $i."-".$d->getTitle()?>",
-                description:"<?php echo $i."-".$d->getTitle()?>",
+                  {name:"<?php $d->getTitle()?>",
+                description:"<?php $d->getTitle()?>",
                 mp3:"/uploads/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile() ?>"},
               <?php endforeach; ?>       
           <?php //endif; ?> 
