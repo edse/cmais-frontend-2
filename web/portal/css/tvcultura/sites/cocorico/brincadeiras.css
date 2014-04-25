@@ -29,7 +29,7 @@
 .curtir.disabled { background-position: -108px -40px; }
 
 .conteudo .alerta { margin-bottom:20px; color:#ec342f; text-transform:uppercase; height:41px; line-height: 41px; background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/pontilhado-vermelho.png) repeat; }
-.conteudo .alerta span { width:23px; height:19px; background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/ico-alerta.png) no-repeat; display: block; float:left; margin:10px 10px 10px 115px; }
+.conteudo .alerta span { width:23px; height:19px; background:url(http://cmais.com.br/portal/images/capaPrograma/cocorico/ico-alerta.png) no-repeat; display: block; float:left; margin: 10px 10px 10px 15px; }
 .conteudo h3 {font-weight:bold; text-transform: uppercase; font-size:14px; line-height: 18px; margin-bottom:0;}
 .conteudo ul { margin-left:0; }
 .receita ul a { color:#f2722f; font-weight:bold; text-decoration:underline; }
