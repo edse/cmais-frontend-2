@@ -375,3 +375,15 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .descricao {margin: 20px 0 50px 0;}
 .span7.esq { margin-left:0; width: 640px; float:left; }
 .span3.dir {margin-left: -11px;width: 310px;float: left;}
+
+.paginacao .btn {float:left; background:none; color:#fff; margin:0; padding:0; width:auto; font-size:12px; font-weight:bold;}					
+.paginacao .anterior { margin:0 20px 0 10px;}
+.paginacao .proxima {margin:0 10px 0 20px;}
+.paginacao ul {display:block; float:left; width:auto; margin:0;} 
+.paginacao ul li {float:left; width:17px; text-align:center;}
+.paginacao ul li a {background:none; color:#fff; font-size:12px; font-weight:bold; margin:0;}
+.paginacao ul li a.ativo,
+.paginacao ul li a:hover {color:#2c9700;}/*#ff6633*/
+.paginacao .btn-prox { background-position: 0 -72px; float:left;}
+.paginacao .btn-ante {float:left;}
+.paginacao .centraliza {width:365px; margin:0 auto;}
