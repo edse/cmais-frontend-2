@@ -174,14 +174,14 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             var audioPlaylist = new Playlist("1", 
             [
             
-            <?php if(count($pager) > 0): ?>
+            <?php //if(count($pager) > 0): ?>
               <?php $i = 1; ?>
                 <?php foreach($pager->getResults() as $d): ?>
                   {name:"<?php echo $i."-".$d->getTitle()?>",
                 description:"<?php echo $i."-".$d->getTitle()?>",
                 mp3:"/uploads/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile() ?>"},
               <?php endforeach; ?>       
-          <?php endif; ?> 
+          <?php //endif; ?> 
             
             ], {
             ready: function() {
