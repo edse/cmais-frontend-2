@@ -583,7 +583,7 @@ body.na-tv{background-color:#feec3c;position:relative;}
 /*#voltar-topo-pagina.pais-e-educadores span{border-top: 2px solid #008d36;border-bottom: 2px solid #008d36;}*/
 
 #radio{margin: 30px auto;display: block;overflow: hidden;width: 311px;}
-#jp_playlist_1 ul{height: 300px;overflow: scroll;background:#eeeeee;}
+#jp_playlist_1 ul{overflow: scroll;background:#eeeeee;}
 #jp_playlist_1 li{padding:5px!important;text-align:left;}
 a.jp-play,
 a.jp-play:hover,
