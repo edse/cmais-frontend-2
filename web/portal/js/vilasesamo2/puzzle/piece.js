@@ -46,8 +46,8 @@ function Piece(id, game, img, holder, position, initial, moveble, placed) {
 
 Piece.prototype.draw = function() {
   if((!this.moveble)&&(!this.placed)){
-    this.position.x = this.initial.x;
-    this.position.y = this.initial.y;
+    //this.position.x = this.initial.x;
+    //this.position.y = this.initial.y;
     this.moveble = true;
 
     /*

@@ -205,10 +205,12 @@ Mouse.prototype.onPointerUp = function(e) {
     this.game.selected.placed = false;
     //sfx
     if(!iOS){
-      game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/twang.mp3";
+      game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/drip.mp3";
+      //game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/twang.mp3";
       game.drip.play();
     }else{
-      game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/twang.mp3";
+      game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/drip.mp3";
+      //game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/twang.mp3";
       game.drip.play();
     }
     /*
