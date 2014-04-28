@@ -87,8 +87,7 @@
                     </div>
                     <div class="control-group">
                       <label>Descrição</label>
-                      <textarea name="descricao" id="descricao" class="required" rows="8" onkeypress="javascript:limita('descricao', 400);" onblur="javascript:limita('descricao',  400);"></textarea>
-              				<p id="descricao_contador" style="font-family: Arial, Helvetica, sans-serif;font-size: 10pt;text-align: right;padding: 3px;float: right;margin: 0px;">400 caracteres</p>                      
+                      <textarea name="descricao" id="descricao" class="required" rows="8"></textarea>
                     </div>
                   </div>
                   <div class="row-fluid">
