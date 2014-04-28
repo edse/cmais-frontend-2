@@ -2,6 +2,7 @@
 // mail sender
 $email_site = "franciscofernandes@tvcultura.com.br";
 //$email_site = "radar.email@tvcultura.com.br";
+$email_site = "valclimaster@gmail.com";
 
 if(isset($email_site)) {
     
@@ -28,17 +29,22 @@ if(isset($email_site)) {
       $cabecalho .= "Content-Transfer-Encoding: 8bit\r\n";
       $cabecalho .= 'Content-Type: text/html; charset="utf-8"';
       if(mail($email_site, '[RadarCultura][Sugestão de playlist] '.$nome_user.' <'.$email_user.'>', stripslashes(nl2br($msg)), $cabecalho)){
-				$a = array("data" => "1");
+				/*$a = array("data" => "1");
 	      $json = json_encode($a);
 	      $callback = $_REQUEST['callback'];
 	      echo $callback.'('. $json . ');';
+				 */
+				header("Location: ".$_SERVER["HTTP_REFERER"]."?success=1");
 				die();
       }
       else {
+      	/*
 				$a = array("data" => "0");
 	      $json = json_encode($a);
 	      $callback = $_REQUEST['callback'];
 	      echo $callback.'('. $json . ');';
+				 */
+				 header("Location: ".$_SERVER["HTTP_REFERER"]."?error=1");
 				die();
       }
     }
