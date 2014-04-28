@@ -23,7 +23,7 @@
                 <button type="button" class="close btn-fechar" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h2>Crie sua playlist</h2>
               </div>
-              <form action="http://app.cmais.com.br/index.php/radarcultura/playlists" method="post" id="form-indicacao-playlist">
+              <form action="http://app.cmais.com.br/actions/radarcultura/playlist.php" method="post" id="form-indicacao-playlist">
                 <div class="row-fluid">
                   <div class="span6">
                     <legend>Dados Pessoais</legend>
