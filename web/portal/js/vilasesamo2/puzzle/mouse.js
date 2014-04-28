@@ -199,18 +199,12 @@ Mouse.prototype.onPointerUp = function(e) {
     if(this.game.drip.currentTime != 0)
       this.game.drip.currentTime = 0;
     this.game.drip.play();
-  }else if((this.game.selected)&&(!this.game.selected.near())){
+  }/*else if((this.game.selected)&&(!this.game.selected.near())){
     this.game.selected.p = 0
     this.game.selected.moveble = false;
     this.game.selected.placed = false;
     //sfx
-    if(!iOS){
-      game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/twang.mp3";
-      game.drip.play();
-    }else{
-      game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/twang.mp3";
-      game.drip.play();
-    }
+    
     /*
     if(!window.m.iOS){
       if(window.m.game.twang.currentTime != 0)
@@ -220,9 +214,17 @@ Mouse.prototype.onPointerUp = function(e) {
       window.m.game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/twang.mp3";
       window.m.game.drip.play();
     }
-    */
+    
+  }*/
+  if(!iOS){
+    game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/drip.mp3";
+    //game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/twang.mp3";
+    game.drip.play();
+  }else{
+    game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/drip.mp3";
+    //game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/twang.mp3";
+    game.drip.play();
   }
-
   //unselect
   this.game.selected = null;
 
