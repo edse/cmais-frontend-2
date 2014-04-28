@@ -73,12 +73,15 @@ Piece.prototype.draw = function() {
   else{
     this.game.context.save();
     //this.game.context.translate(this.game.canvas.width/2, this.game.canvas.height/2)
+    /*
     if(this.placed)
       this.game.context.globalAlpha = 1
     else if(!this.game.is_over)
       this.game.context.globalAlpha = 0.8
     else
       this.game.context.globalAlpha = 1
+    */  
+    this.game.context.globalAlpha = 1  
     /*
     this.game.context.fillStyle = "rgba(255, 255, 255, 0.5)";
   
