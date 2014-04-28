@@ -240,7 +240,7 @@ Puzzle.prototype.draw = function(){
       
       //NOT PLACED PIECES  
       for(var i = 0; i < not_placed.length; i++){
-        not_placed[i].draw();
+        //not_placed[i].draw();
       }
       if(this.game.selected)
         this.game.selected.draw();
