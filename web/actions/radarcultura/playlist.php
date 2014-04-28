@@ -2,7 +2,7 @@
 // mail sender
 $email_site = "franciscofernandes@tvcultura.com.br";
 //$email_site = "radar.email@tvcultura.com.br";
-$email_site = "valclimaster@gmail.com";
+//$email_site = "valclimaster@gmail.com";
 
 if(isset($email_site)) {
     
