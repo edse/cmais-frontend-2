@@ -68,7 +68,7 @@ Piece.prototype.draw = function() {
     //this.game.context.translate(this.game.canvas.width/2, this.game.canvas.height/2)
     this.game.context.globalAlpha = 1;
     this.game.context.beginPath();
-    //this.game.context.drawImage(this.img, this.position.x/this.game.scale, this.position.y/this.game.scale);
+    this.game.context.drawImage(this.img, this.position.x/this.game.scale, this.position.y/this.game.scale);
   }
   else{
     this.game.context.save();

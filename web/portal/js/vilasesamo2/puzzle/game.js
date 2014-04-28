@@ -157,7 +157,7 @@ Game.prototype.render = function() {
       this.puzzle.draw();
       
       //REMAINING TIME
-      this.draw_remaining();
+      //this.draw_remaining();
     }
   
   }

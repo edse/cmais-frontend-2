@@ -166,7 +166,7 @@ Puzzle.prototype.draw = function(){
   if(this.solved){    
     $('#stage').html(this.game.stage+" / 3"); //aqui coloquei a fase que o cara está
     //$('#pieces').html(this.num_pieces+" peças em "+(this.time_to_complete-this.remaining_time)+"s");//portugues
-    $('#tempodojogo').html("Tempo <br> "+this.remaining_time);//aqui eu setei para aparecer o tempo que falta
+    //$('#tempodojogo').html("Tempo <br> "+this.remaining_time);//aqui eu setei para aparecer o tempo que falta
     this.solved = false;
     
     //console.log("window:"+window.innerHeight);
