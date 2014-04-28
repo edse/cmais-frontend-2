@@ -58,10 +58,10 @@
             <div class="conteudoWrapper">
             	
             	<!--Destaque ações Home-->
-            	<!--<div  class="destaque-home">
+            	<div  class="destaque-home">
           			<a href="quintaldacultura/invernolegal" class="titulos"><img src="http://cmais.com.br/portal/quintal/images/banner-invernolegal.png"></a>
           		</div>
-          		-->
+          		
               <!--ITENS BACKGROUND-->
               <?php include_partial_from_folder('sites/quintaldacultura', 'global/itensBackground')              ?>
               <!--/ITENS BACKGROUND-->
