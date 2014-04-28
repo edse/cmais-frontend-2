@@ -154,6 +154,8 @@ Mouse.prototype.onPointerDown = function(e) {
 
   for(var i = 0; i < this.game.puzzle.pieces.length; i++){
     piece = this.game.puzzle.pieces[i];
+    over = true;
+    /*
     if(!piece.placed){
       if(!over && this.isOverPiece(piece))
         over = true;
@@ -162,6 +164,7 @@ Mouse.prototype.onPointerDown = function(e) {
         this.game.selected = this.game.over
       }
     }
+    */
   }
 
   if(this.game.debug==true){
