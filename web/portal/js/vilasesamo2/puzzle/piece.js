@@ -46,8 +46,8 @@ function Piece(id, game, img, holder, position, initial, moveble, placed) {
 
 Piece.prototype.draw = function() {
   if((!this.moveble)&&(!this.placed)){
-    this.position.x = this.initial.x;
-    this.position.y = this.initial.y;
+    //this.position.x = this.initial.x;
+    //this.position.y = this.initial.y;
     this.moveble = true;
 
     /*
@@ -68,18 +68,20 @@ Piece.prototype.draw = function() {
     //this.game.context.translate(this.game.canvas.width/2, this.game.canvas.height/2)
     this.game.context.globalAlpha = 1;
     this.game.context.beginPath();
-    //this.game.context.drawImage(this.img, this.position.x/this.game.scale, this.position.y/this.game.scale);
-    this.game.context.drawImage(this.img, 500, 500);
+    this.game.context.drawImage(this.img, this.position.x/this.game.scale, this.position.y/this.game.scale);
   }
   else{
     this.game.context.save();
     //this.game.context.translate(this.game.canvas.width/2, this.game.canvas.height/2)
+    /*
     if(this.placed)
       this.game.context.globalAlpha = 1
     else if(!this.game.is_over)
       this.game.context.globalAlpha = 0.8
     else
       this.game.context.globalAlpha = 1
+    */  
+    this.game.context.globalAlpha = 1  
     /*
     this.game.context.fillStyle = "rgba(255, 255, 255, 0.5)";
   

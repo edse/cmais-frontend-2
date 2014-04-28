@@ -23,7 +23,7 @@
                 <button type="button" class="close btn-fechar" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h2>Crie sua playlist</h2>
               </div>
-              <form action="" method="post" id="form-indicacao-playlist">
+              <form action="http://app.cmais.com.br/actions/radarcultura/playlist.php" method="post" id="form-indicacao-playlist">
                 <div class="row-fluid">
                   <div class="span6">
                     <legend>Dados Pessoais</legend>
@@ -87,8 +87,7 @@
                     </div>
                     <div class="control-group">
                       <label>Descrição</label>
-                      <textarea name="descricao" id="descricao" class="required" rows="8" onkeypress="javascript:limita('descricao', 400);" onblur="javascript:limita('descricao',  400);"></textarea>
-              				<p id="descricao_contador" style="font-family: Arial, Helvetica, sans-serif;font-size: 10pt;text-align: right;padding: 3px;float: right;margin: 0px;">400 caracteres</p>                      
+                      <textarea name="descricao" id="descricao" class="required" rows="8"></textarea>
                     </div>
                   </div>
                   <div class="row-fluid">
@@ -137,8 +136,12 @@
         <script src="http://cmais.com.br/portal/js/messages_ptbr.js" type="text/javascript"></script>
         <script type="text/javascript">
           $(document).ready(function(){
-
-            var validator = $('#form-indicacao-playlist').validate({
+			    
+			    var validator = $('#form-indicacao-playlist').validate({
+			      submitHandler: function(form){
+			        form.submit();
+        		},
+          //  var validator = $('#form-indicacao-playlist').validate({
               rules:{
                 nome:{
                   required: true,
@@ -164,7 +167,8 @@
                 label
                   .text('OK!').addClass('valid')
                   .closest('.control-group').addClass('success');
-              },
+              }
+              /*,
               submitHandler: function(form){
                 $.ajax({
                   type: "GET",
@@ -193,6 +197,7 @@
                   }
                 });
               }
+              */
             });
           });
       </script>

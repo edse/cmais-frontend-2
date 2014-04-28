@@ -16,7 +16,7 @@ function Puzzle(id, game, image, imgp, imgh, sound, size, pos, positions) {
   this.pos = pos;
   this.positions = positions;
   this.num_pieces = positions.length;
-  this.remaining_time = this.num_pieces*30;
+  this.remaining_time = 999999999999; //this.num_pieces*30;
   this.time_to_complete = this.remaining_time;
   this.items_to_load = this.num_pieces*2+1;
   this.loaded_items = 0;
@@ -166,7 +166,7 @@ Puzzle.prototype.draw = function(){
   if(this.solved){    
     $('#stage').html(this.game.stage+" / 3"); //aqui coloquei a fase que o cara está
     //$('#pieces').html(this.num_pieces+" peças em "+(this.time_to_complete-this.remaining_time)+"s");//portugues
-    $('#tempodojogo').html("Tempo <br> "+this.remaining_time);//aqui eu setei para aparecer o tempo que falta
+    //$('#tempodojogo').html("Tempo <br> "+this.remaining_time);//aqui eu setei para aparecer o tempo que falta
     this.solved = false;
     
     //console.log("window:"+window.innerHeight);

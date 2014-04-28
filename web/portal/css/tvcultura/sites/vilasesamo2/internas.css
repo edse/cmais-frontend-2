@@ -581,3 +581,34 @@ body.na-tv{background-color:#feec3c;position:relative;}
 #voltar-topo-pagina.personagens span{border-bottom: 2px solid #c31408;border-top: 2px solid #c31408;}
 #voltar-topo-pagina.categorias span{ border-bottom: 2px solid #fbc227;border-top: 2px solid #fbc227;}
 /*#voltar-topo-pagina.pais-e-educadores span{border-top: 2px solid #008d36;border-bottom: 2px solid #008d36;}*/
+
+#radio{margin: 30px auto;display: block;overflow: hidden;width: 311px;}
+#jp_playlist_1 ul{overflow: scroll;background:#eeeeee;}
+#jp_playlist_1 li{padding:5px!important;text-align:left;}
+a.jp-play,
+a.jp-play:hover,
+a.jp-pause,
+a.jp-pause:hover,
+a.jp-stop,
+a.jp-stop:hover,
+a.jp-previous,
+a.jp-previous:hover,
+a.jp-next,
+a.jp-next:hover,
+div.jp-seek-bar,
+div.jp-play-bar,
+a.jp-mute,
+a.jp-mute:hover,
+a.jp-unmute,
+a.jp-unmute:hover,
+div.jp-volume-bar,
+div.jp-volume-bar-value,
+div.jp-video div.jp-video-play,
+div.jp-video div.jp-video-play:hover {background-image: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/jplayer.png)!important;}
+div.jp-interface {background: #ffe302!important;}
+div.jp-playlist, div.jp-interface{border:none!important;}
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current,
+div.jp-type-playlist div.jp-playlist a:hover {color: #0093d9!important;}
+div.jp-type-playlist div.jp-playlist a{text-align:left;}
+#txt-leitor{float:left; margin:30px 0;}
+#txt-leitor ul li{margin:0 0 30px 0;}

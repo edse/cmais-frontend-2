@@ -196,5 +196,26 @@
         $("#page").val("");
         $("#page_form").submit();
       }
+      
+      function getVar(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++){
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+      }
+      var success = getVar("success");
+      var error = getVar("error");
+      if(success == 1){
+        $("#socialAlertOk").show();
+         setTimeout('$("#socialAlertOk").hide();', 10000);
+      }else if(error == 1){
+        $("#socialAlertError").show();
+         setTimeout('$("#socialAlertError").hide();', 10000);
+      }
+      
     </script>
     <!--/form paginacao-->  
