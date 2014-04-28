@@ -23,7 +23,7 @@
                 <button type="button" class="close btn-fechar" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h2>Crie sua playlist</h2>
               </div>
-              <form action="" method="post" id="form-indicacao-playlist">
+              <form action="http://app.cmais.com.br/index.php/radarcultura/playlists" method="post" id="form-indicacao-playlist">
                 <div class="row-fluid">
                   <div class="span6">
                     <legend>Dados Pessoais</legend>
@@ -137,8 +137,12 @@
         <script src="http://cmais.com.br/portal/js/messages_ptbr.js" type="text/javascript"></script>
         <script type="text/javascript">
           $(document).ready(function(){
-
-            var validator = $('#form-indicacao-playlist').validate({
+			    
+			    var validator = $('#form-indicacao-playlist').validate({
+			      submitHandler: function(form){
+			        form.submit();
+        		},
+          //  var validator = $('#form-indicacao-playlist').validate({
               rules:{
                 nome:{
                   required: true,
@@ -164,7 +168,8 @@
                 label
                   .text('OK!').addClass('valid')
                   .closest('.control-group').addClass('success');
-              },
+              }
+              /*,
               submitHandler: function(form){
                 $.ajax({
                   type: "GET",
@@ -193,6 +198,7 @@
                   }
                 });
               }
+              */
             });
           });
       </script>
