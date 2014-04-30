@@ -23,6 +23,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
    
       
       if(sendMailAtt($to, $from, $subject, $message)) {
+      	die(">>>>3<<<<<");
         if (unlink($_FILES['datafile']['tmp_name'])) {
           header("Location: ".$_REQUEST['urlElement']."?success=2#carrossel-interna");
           //die("0");
