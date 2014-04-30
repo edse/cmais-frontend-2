@@ -131,19 +131,21 @@
         </div>
         <!--/Email-->
 
+       
         <!--Anexo-->
-         <div class="control-group span2 idade anexo file-wrapper">
+         <!--div class="control-group span2 idade anexo file-wrapper">
           <label class="control-label icones-form icone-form-datafile" for="datafile"></label>
           <input id="datafile" class="required" accept="png|jpe?g|gif" type="file" name="datafile">
           <span class="button">Anexar</span>
-        </div>
+        </div-->
         <!--/Anexo-->
         
         <!--Msg-->
-        <!--div class="control-group span12 msg">
-          <label class="control-label icones-form icone-form-msg" for="mensagem"></label>
-          <textarea id="mensagem" name="mensagem" data-default="Mensagem"  placeholder="Mensagem">Mensagem</textarea>
-        </div-->
+        <div class="control-group span12 msg">
+          <label class="control-label icones-form icone-form-mensagem" for="mensagem"></label>         
+          <textarea id="mensagem" name="mensagem" data-default="Escreva aqui um texto sobre as brincadeiras de sua infância."  placeholder="Mensagem" onKeyDown="limitText(this,1000,'#textCounter');">Escreva aqui um texto sobre as brincadeiras de sua infância.</textarea>
+      		<p><span id="textCounter">1000</span> caracteres restantes</p>
+        </div>
         <!--/Msg-->
         
         <!--concorda-->
@@ -167,7 +169,7 @@
         
         <!--enviar-->
         <div class="control-group span11">
-          <input type="submit" class="btn" id="enviar" value="ENVIE O SEU DESENHO"></input>
+          <input type="submit" class="btn" id="enviar" value="ENVIE O SEU TEXTO"></input>
         </div> 
         <!--/enviar-->
         
@@ -221,26 +223,26 @@
           }
       });
       
-  	  $('#nome').focus(function(){ 		if($(this).val() == "Nome") {  $(this).val(''); }; 	});
-  	  $('#nome').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome'); 	};	});
-  	  $('#resp').focus(function(){ 		if($(this).val() == "Nome do Responsável") {  $(this).val(''); }; 	});
-  	  $('#resp').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Nome do Responsável'); 	};	});
-  	  $('#idade').focus(function(){ 	if($(this).val() == "Idade") {  $(this).val(''); }; });
-  	  $('#idade').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Idade'); 	 };	});	  
-  	  $('#cidade').focus(function(){ 	if($(this).val() == "Cidade") {  $(this).val(''); }; });
-  	  $('#cidade').focusout(function(){ if($(this).val() == ''){ $(this).val('Cidade');   }; });
-  	  $('#email').focus(function(){ 	if($(this).val() == "Email") {  $(this).val(''); }; });
-  	  $('#email').focusout(function(){ 	if($(this).val() == ''){ $(this).val('Email'); 	 };	});
-  	  $('#mensagem').focus(function(){ 	if($(this).val() == "Mensagem") {  $(this).val(''); };	});
-  	  $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Mensagem'); };	});
-    	
+      $('#nome').focus(function(){    if($(this).val() == "Nome") {  $(this).val(''); };  });
+      $('#nome').focusout(function(){   if($(this).val() == ''){ $(this).val('Nome');   };  });
+      $('#resp').focus(function(){    if($(this).val() == "Nome do Responsável") {  $(this).val(''); };   });
+      $('#resp').focusout(function(){   if($(this).val() == ''){ $(this).val('Nome do Responsável');  };  });
+      $('#idade').focus(function(){   if($(this).val() == "Idade") {  $(this).val(''); }; });
+      $('#idade').focusout(function(){  if($(this).val() == ''){ $(this).val('Idade');   }; });   
+      $('#cidade').focus(function(){  if($(this).val() == "Cidade") {  $(this).val(''); }; });
+      $('#cidade').focusout(function(){ if($(this).val() == ''){ $(this).val('Cidade');   }; });
+      $('#email').focus(function(){   if($(this).val() == "Email") {  $(this).val(''); }; });
+      $('#email').focusout(function(){  if($(this).val() == ''){ $(this).val('Email');   }; });
+      $('#mensagem').focus(function(){  if($(this).val() == "Escreva aqui um texto sobre as brincadeiras de sua infância.") {  $(this).val(''); };  });
+      $('#mensagem').focusout(function(){ if($(this).val() == ''){ $(this).val('Escreva aqui um texto sobre as brincadeiras de sua infância.'); };  });
+      
       var validator = $('#form-contato').validate({
         
         submitHandler: function(form){
           //resgatando a página que a pessoa
           url = window.location;
           $('#urlElement').attr('value',url.href);
-        	form.submit();
+          form.submit();
         },
         rules:{
           nome:{
@@ -299,36 +301,42 @@
       });
     }
     
+		 
+    function getURLParameter(name) {
+      return decodeURI(
+            (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+        );
+    }
+    
+    var success = getURLParameter("success");
+    var error = getURLParameter("error");
 
-		function getURLParameter(name) {
-			return decodeURI(
-		        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
-		    );
-		}
-		
-	  var success = getURLParameter("success");
-	  var error = getURLParameter("error");
-
-	  if(success == 2){
-	    $(".msgAcerto").show();
-	    $("#form-contato").hide();
-	    $(".msgAcerto").html("<p> Sua brincadeira foi enviada com sucesso<br/> e em breve estará em nossa galeria de brincadeiras!</p>");
-	   // $(".msgAcerto").scrollTo('#statusMsg_0');
-	  }else if(error == 1){
-	    $(".msgErro").show();
-	    $(".msgErro").html("<p>Erro inesperado<br/>Por favor, tente mais tarde!</p>");
-	   // $(".msgErro").scrollTo("statusMsg_1");
-	  }else if(error == 2){
-	    $(".msgErro").show();
-	    $(".msgErro").html("<p>Formato de imagem inválido<br/> Por favor, tente com JPG, PNG ou GIF!</p>");
-	    //$(".msgErro").scrollTo("statusMsg_1");
-	  }else if(error == 3){
-	    $(".msgErro").show();
-	    $(".msgErro").html("<p>Arquivo muito grande<br/> Por favor, tente com um arquivo de até 15 MB!</p>");
-	    //$(".msgErro").scrollTo("statusMsg_1");
-	  }
+    if(success == 2){
+      $(".msgAcerto").show();
+      $("#form-contato").hide();
+      $(".msgAcerto").html("<p> Seu texto foi enviado com sucesso<br/> e em breve estará em nossa galeria!</p>");
+     // $(".msgAcerto").scrollTo('#statusMsg_0');
+    }else if(error == 1){
+      $(".msgErro").show();
+      $(".msgErro").html("<p>Erro inesperado<br/>Por favor, tente mais tarde!</p>");
+     // $(".msgErro").scrollTo("statusMsg_1");
+    }else if(error == 2){
+      $(".msgErro").show();
+      $(".msgErro").html("<p>Formato de imagem inválido<br/> Por favor, tente com JPG, PNG ou GIF!</p>");
+      //$(".msgErro").scrollTo("statusMsg_1");
+    }else if(error == 3){
+      $(".msgErro").show();
+      $(".msgErro").html("<p>Arquivo muito grande<br/> Por favor, tente com um arquivo de até 15 MB!</p>");
+      //$(".msgErro").scrollTo("statusMsg_1");
+    }
 
   });
+  	function limitText(limitField, limitNum, textCounter) {
+			if(limitField.value.length > limitNum)
+				limitField.value = limitField.value.substring(0, limitNum);
+			else
+				$(textCounter).html(limitNum - limitField.value.length);
+		}
   var SITE = SITE || {};
 
   SITE.fileInputs = function() {
@@ -380,7 +388,7 @@
       }
       //testa erro button
       if($('.icone-form-datafile').hasClass('icone-form-datafile-erro')){
-      	$(".button").addClass('button-erro');
+        $(".button").addClass('button-erro');
       }else{
         $(".button").addClass('button-erro');
       }

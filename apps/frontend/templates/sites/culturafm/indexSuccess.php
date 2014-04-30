@@ -76,7 +76,7 @@
       <!--classicos na tv cultura-->
       <div class="destaque c-classicos">
         <i class="seta2"></i>
-          <h2>Clássicos na TV Cultura</h2>
+          <h2>TV Cultura</h2>
 		<?php if(isset($displays["destaque-classicos"])): ?>
 			<?php foreach ($displays["destaque-classicos"] as $k => $d): ?>
 		        <a href="<?php echo str_replace("/home/","/",$d->retriveUrl()) ?>" title="<?php echo $d->getTitle() ?>">
