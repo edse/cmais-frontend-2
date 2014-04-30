@@ -250,7 +250,7 @@
               $(this).attr("aria-label", "Incluir Brincando - Bel, pais de Elmo, Elmo e Sivan, dizendo: É divertido brincar em família!").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/categorias/incluir-brincando');
             break;
             case 1:
-              $(this).attr("aria-label", "Elmo está sentado com seu pai lendo um livro").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/campanhavilasesamo')
+              $(this).attr("aria-label", "Elmo está sentado com seu pai lendo um livro").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/atividades/desenhe-sua-familia-1')
             break;
             case 2:
               $(this).attr("aria-label", "Novo Jogo Quebra Cabeça - Garibaldo está montando um quebra cabeça, ele está com uma peça na mão.").attr('data-href','http://cmais.com.br/<?php echo $site->getSlug() ?>/jogos/quebra-cabeca-vila-sesamo');
