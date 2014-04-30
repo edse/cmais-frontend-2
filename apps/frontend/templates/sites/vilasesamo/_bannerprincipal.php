@@ -84,7 +84,7 @@
             <span>ESSA ÉPOCA!</span>
           </div>
           <div class="mpc_ls_slide_item total" data-fade="on">
-            <a href="http://cmais.com.br/vilasesamo/campanhavilasesamo" class="total" title="Envie histórias de sua infancia"></a>
+            <a href="http://cmais.com.br/vilasesamo/vilasesamo/atividades/desenhe-sua-familia-1" class="total" title="Envie histórias de sua infancia"></a>
           </div>
         </li>
         <!--/item desenho-->
