@@ -143,8 +143,8 @@
         <!--Msg-->
         <div class="control-group span12 msg">
           <label class="control-label icones-form icone-form-mensagem" for="mensagem"></label>         
-          <textarea id="mensagem" name="mensagem" data-default="Escreva aqui um texto sobre as brincadeiras de sua infância."  placeholder="Mensagem" onKeyDown="limitText(this,500,'#textCounter');">Escreva aqui um texto sobre as brincadeiras de sua infância.</textarea>
-      		<p><span id="textCounter">500</span> caracteres restantes</p>
+          <textarea id="mensagem" name="mensagem" data-default="Escreva aqui um texto sobre as brincadeiras de sua infância."  placeholder="Mensagem" onKeyDown="limitText(this,1000,'#textCounter');">Escreva aqui um texto sobre as brincadeiras de sua infância.</textarea>
+      		<p><span id="textCounter">1000</span> caracteres restantes</p>
         </div>
         <!--/Msg-->
         
@@ -301,17 +301,18 @@
       });
     }
     
+		function limitText(limitField, limitNum, textCounter) {
+			if(limitField.value.length > limitNum)
+				limitField.value = limitField.value.substring(0, limitNum);
+			else
+				$(textCounter).html(limitNum - limitField.value.length);
+		}
     function getURLParameter(name) {
       return decodeURI(
             (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
         );
     }
-    function limitText(limitField, limitNum, textCounter) {
-		if(limitField.value.length > limitNum)
-			limitField.value = limitField.value.substring(0, limitNum);
-		else
-			$(textCounter).html(limitNum - limitField.value.length);
-		}
+    
     var success = getURLParameter("success");
     var error = getURLParameter("error");
 
