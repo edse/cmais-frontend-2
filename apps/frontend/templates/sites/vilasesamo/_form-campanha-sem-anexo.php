@@ -296,13 +296,6 @@
         }
       });
       
-      function limitText(limitField, limitNum, textCounter) {
-			if(limitField.value.length > limitNum)
-				limitField.value = limitField.value.substring(0, limitNum);
-			else
-				$(textCounter).html(limitNum - limitField.value.length);
-		}
-      
       $('#enviar').click(function(){
         verifyKey();
       });
@@ -313,7 +306,12 @@
             (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
         );
     }
-    
+    function limitText(limitField, limitNum, textCounter) {
+		if(limitField.value.length > limitNum)
+			limitField.value = limitField.value.substring(0, limitNum);
+		else
+			$(textCounter).html(limitNum - limitField.value.length);
+		}
     var success = getURLParameter("success");
     var error = getURLParameter("error");
 
