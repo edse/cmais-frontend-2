@@ -14,10 +14,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $subject = '[Vila Sésamo][' . $campaign . '] '.$name.' <'.$email.'>';
     
     $message = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
-    while(list($field, $value) = each($_REQUEST)) {
+    /*while(list($field, $value) = each($_REQUEST)) {
       if(!in_array(ucwords($field), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
         $message .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
-    }
+    }*/
+    die(">>>>2<<<<<");
     
    
       
