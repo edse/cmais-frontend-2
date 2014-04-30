@@ -216,14 +216,6 @@ Mouse.prototype.onPointerUp = function(e) {
     }
     
   }*/
-  this.down = true;
-  this.up = false;
-  this.event = e;
-  
-  //select
-  if(this.game.over){
-    this.game.selected = this.game.over;
-  }
   if(!iOS){
     game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/drip.mp3";
     //game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/twang.mp3";
