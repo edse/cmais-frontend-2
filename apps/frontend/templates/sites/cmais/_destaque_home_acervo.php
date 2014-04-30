@@ -2,9 +2,9 @@
 <?php if(count($displays)>0): ?>
 <div class="box-padrao noticia grid1">
   
-  <?php /* if($displays[0]->retriveLabel() != ""): ?>
+  <?php  if($displays[0]->retriveLabel() != ""): ?>
   <p class="chapeu<?php if($displays[0]->Asset->Category->slug): ?><?php echo " ".$displays[0]->Asset->Category->getSlug() ?><?php endif; ?>"><?php echo $displays[0]->retriveLabel() ?></p>
-  <?php endif;*/ ?>
+  <?php endif; ?>
   
   	<?php  if($displays[0]->image != ""): ?>	
       <a href="<?php echo $displays[0]->retriveUrl() ?>" title="<?php echo $displays[0]->getTitle() ?>">
