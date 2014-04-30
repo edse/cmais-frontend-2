@@ -54,7 +54,7 @@
   </section>
   <!--section-->
   <section  class="campanhasuccess" >
-   <?php include_partial_from_folder('sites/vilasesamo', 'global/form-campanha_anexo', array("site" => $site, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
+   <?php include_partial_from_folder('sites/vilasesamo', 'global/form-campanha', array("site" => $site, "asset" => $asset, "campaign" => $campaign, "categories" => $categories)) ?>
 	
   </section>
   <!--section-->
