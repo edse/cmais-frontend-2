@@ -3,6 +3,7 @@ include("/var/frontend/web/actions/includes/functions.php");
 
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
+	die("1");
   //if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) > 0) {
     $to = "jedoljak@gmail.com"; "georgia.catarina@gmail.com";
     //$to = "vilasesamooficial@gmail.com";
