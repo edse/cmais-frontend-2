@@ -13,6 +13,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $subject = '[Vila Sésamo][' . $campaign . '] '.$name.' <'.$email.'>';
     
     $message = "Formulário Preenchido em " . date("d/m/Y") . " as " . date("H:i:s") . ", seguem abaixo os dados:<br><br>";
+		 
+    if(sendMailAtt($to, $from, $subject, $message)) {
+        header("Location: ".$_REQUEST['urlElement']."?success=2#carrossel-interna");
+		}else{
+    	header("Location: ".$_REQUEST['urlElement']."?error=1#carrossel-interna");
+        //die("3");
+      
+    }
+    
     while(list($field, $value) = each($_REQUEST)) {
       if(!in_array(ucwords($field), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
         $message .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
