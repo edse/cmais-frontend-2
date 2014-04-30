@@ -142,8 +142,9 @@
         
         <!--Msg-->
         <div class="control-group span12 msg">
-          <label class="control-label icones-form icone-form-mensagem" for="mensagem"></label>
-          <textarea id="mensagem" name="mensagem" data-default="Escreva aqui um texto sobre as brincadeiras de sua infância."  placeholder="Mensagem">Escreva aqui um texto sobre as brincadeiras de sua infância.</textarea>
+          <label class="control-label icones-form icone-form-mensagem" for="mensagem"></label>         
+          <textarea id="mensagem" name="mensagem" data-default="Escreva aqui um texto sobre as brincadeiras de sua infância."  placeholder="Mensagem" onKeyDown="limitText(this,500,'#textCounter');">Escreva aqui um texto sobre as brincadeiras de sua infância.</textarea>
+      		<p><span id="textCounter">500</span> caracteres restantes</p>
         </div>
         <!--/Msg-->
         
@@ -168,7 +169,7 @@
         
         <!--enviar-->
         <div class="control-group span11">
-          <input type="submit" class="btn" id="enviar" value="ENVIE O SEU DESENHO"></input>
+          <input type="submit" class="btn" id="enviar" value="ENVIE O SEU TEXTO"></input>
         </div> 
         <!--/enviar-->
         
@@ -300,7 +301,12 @@
       });
     }
     
-
+		function limitText(limitField, limitNum, textCounter) {
+			if(limitField.value.length > limitNum)
+				limitField.value = limitField.value.substring(0, limitNum);
+			else
+				$(textCounter).html(limitNum - limitField.value.length);
+		}
     function getURLParameter(name) {
       return decodeURI(
             (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
@@ -313,7 +319,7 @@
     if(success == 2){
       $(".msgAcerto").show();
       $("#form-contato").hide();
-      $(".msgAcerto").html("<p> Sua brincadeira foi enviada com sucesso<br/> e em breve estará em nossa galeria de brincadeiras!</p>");
+      $(".msgAcerto").html("<p> Seu texto foi enviado com sucesso<br/> e em breve estará em nossa galeria!</p>");
      // $(".msgAcerto").scrollTo('#statusMsg_0');
     }else if(error == 1){
       $(".msgErro").show();
