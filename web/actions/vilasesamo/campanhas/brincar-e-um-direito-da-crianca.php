@@ -18,7 +18,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       if(!in_array(ucwords($field), array('Form_action', 'X', 'Y', 'Enviar', 'Undefinedform_action')))
         $message .= "<b>" . ucwords($field) . ":</b> " . strip_tags($value) . "<br>";
     }*/
-    die(">>>>2<<<<<");
+    
     
    
       
