@@ -35,7 +35,8 @@ tr, td {
   border-style: solid;
   border-width: 1px 1px 0;
   box-shadow: none;
-  height: 459px;
+  /*height: 459px;*/
+  height: 237px;
   width:493px;
   *width:493px;
   *height:400px;
@@ -60,12 +61,14 @@ tr, td {
   border-radius: 4px;
   display:block;
   overflow:hidden;
-  height:395px;
+  /*height:395px;*/
+  height:202px;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1) inset;
   overflow-wrap: break-word;
 }
 #chat-content{
-  height:393px;
+  /*height:393px;*/
+  height:198px;
   width:100%;
   display: block;
   overflow: scroll\0;
