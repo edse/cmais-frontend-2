@@ -67,8 +67,21 @@
         </div>
       </div>
       <!--/share-->
+      
+     
     </div>
-    <div class="span6">
+     <div class="page-header" style="margin:0;">
+        <h4>Bate Papo</h4>
+      </div>
+      <iframe src="http://cmais.com.br/chat/culturabrasil" scrolling="no" height="380px" width="493px" frameborder="0" allowtransparency="true"></iframe>
+     <!--iframe width='520' height='2000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-google.html' style="overflow:hidden;"></iframe-->
+    
+  </div>
+
+ 
+     <div class="row-fluid container" style="margin-top:25px;">
+    <div class="span6" style="*margin-left:0px;">    
+      <div class="span6">
       
       <div class="page-header ao-vivo">
         <h4>Facebook</h4>
@@ -76,17 +89,7 @@
       <iframe width='490' height='340' frameborder='0' src='http://cmais.com.br/widgets/culturabrasil/iframe-facebook.html' ></iframe>
       
     </div>
-  </div>
-
- 
-     <div class="row-fluid container" style="margin-top:25px;">
-    <div class="span6" style="*margin-left:0px;">    
-     
-      <div class="page-header" style="margin:0;">
-        <h4>Bate Papo</h4>
-      </div>
-      <iframe src="http://cmais.com.br/chat/culturabrasil" scrolling="no" height="680px" width="493px" frameborder="0" allowtransparency="true"></iframe>
-     <!--iframe width='520' height='2000' frameborder='0' src='http://cmais.com.br/culturabrasil/iframe-google.html' style="overflow:hidden;"></iframe-->
+      
     </div>
 
    
@@ -109,7 +112,7 @@
 
 <script>
   //TIMER TRANSMISSAO
-  
+ 
   function timer1(){
     var request = $.ajax({
       data: {
@@ -119,6 +122,7 @@
       dataType: 'jsonp',
       success: function(data) {
         eval(data.data);
+        //console.log(data.data)
       },
       url: 'http://app.cmais.com.br/ajax/timer'
     });
