@@ -97,17 +97,10 @@
                 -->
                 <!-- BOX PADRAO Previsao -->
 
-                <!-- BOX PADRAO GALERIA -->
-                <div class="box-padrao grid1">
-                  <div class="topo">
-                    <span></span>
-                    <div class="capa-titulo">
-                      <h4>fotos recentes</h4>
-                    </div>
-                  </div>
-                  <?php if(isset($displays["destaque-imagens-recentes"])) include_partial_from_folder('blocks','global/display-1c-images-grid', array('displays' => $displays["destaque-imagens-recentes"])) ?>
-                </div>
-                <!-- /BOX PADRAO GALERIA -->
+                <?php if(isset($displays["destaque-padrao-6"])) include_partial_from_folder('sites/cmais','global/destaque_home_acervo', array('displays' => $displays["destaque-padrao-6"])) ?>
+                
+                <?php if(isset($displays["destaque-padrao-7"])) include_partial_from_folder('sites/cmais','global/destaque_home_acervo', array('displays' => $displays["destaque-padrao-7"])) ?>
+                
               </div>
               <!-- /col-dir -->
             </div>
