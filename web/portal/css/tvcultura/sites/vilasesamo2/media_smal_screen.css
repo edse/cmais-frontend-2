@@ -3,7 +3,7 @@
 
 .header--fixed {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
 .bounceOutUp{top:-90px}
-.campanhasuccess #content .todos-itens .row-fluid { margin-left:0; width: 100%; }
+.campanhasuccess #content .todos-itens .row-fluid {margin-left: 0!important; width: 100%; }
 .header-bar .header-bar-mobile{display:none}
 .header-desktop{display:none;}
 .header-tablet{display:none;}
