@@ -91,7 +91,7 @@
           <!--/primeiro grupo - ativo no mes -->
       
       
-      <h2>Aproveite e veja nossas campanhas passadas:</h2>    
+      <h2>Aproveite e veja as galerias das campanhas passadas:</h2>    
       <!--grupo - arquivo -->
       <?php
       //pegando campanhas->subsections pra listar blocos enviados
@@ -107,11 +107,11 @@
             ->andWhere('b.slug = ?', 'enviados') 
             ->andWhere('s.site_id = ?', $site->id)
             ->execute();
-        if(isset($blocks)){
+        if(isset($blocks)):
           if(count($blocks) > 0):
             $displays_enviados['enviados'] = $blocks[0]->retriveDisplays();
           endif;    
-        }
+        endif;
         ?>
         <?php 
           if(isset($displays_enviados['enviados'])):
