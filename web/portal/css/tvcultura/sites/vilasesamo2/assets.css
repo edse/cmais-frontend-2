@@ -220,5 +220,8 @@ h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1
 .form .file-holder{clear: both;text-align: left;color: #FFF;margin: 10px 0 7px 0;padding-left: 13px;font-size: 12px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 
 /* pagina campanha */
-.campanhasuccess .accordion-inner{padding:20px 0!important;} 
+.campanhasuccess #content section.form {border-radius:7px; border-bottom:11px solid #b5e853; }
+.campanhasuccess h2{color:#FFF!important; margin:20px 0 10px 0;}
+.campanhasuccess .accordion-inner{padding:20px 0!important;border-top:none!important;}
+.campanhasuccess .accordion-group {border-left:none; border-right:none; -webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;background: #84C917;border-top: 7px solid #b5e853;border-bottom: 7px solid #b5e853;}
 /* pagina campanha */

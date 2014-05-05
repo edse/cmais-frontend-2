@@ -3,7 +3,7 @@
 
 .header--fixed {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
 .bounceOutUp{top:-90px}
-
+.campanhasuccess #content .todos-itens .row-fluid {margin-left: 0!important; width: 100%; }
 .header-bar .header-bar-mobile{display:none}
 .header-desktop{display:none;}
 .header-tablet{display:none;}
@@ -337,6 +337,7 @@ a{text-decoration:underline!important;}
 .campanhas #content .filtro h1 {font-size: 1.2em!important;padding: 0!important;width: 90%;margin: 0 auto;text-align: center;}
 .campanhas #content .container-campanhas iframe {width: 100%;margin-top: 0;}
 .campanhas #content .btn-group {margin-top: 16%;width: 100%;right: 0;}
+.campanhasuccess .todos-itens a div {max-width: 200px;}
 
 /*coleção incluir*/
 .interna.campanhas .container-campanhas{margin: 2%;padding: 2%;}
@@ -417,6 +418,7 @@ a{text-decoration:underline!important;}
 	.icone-personagem-grande{margin: 0 0 0 31%!important;} 
 	.icone-historia-grande{ background-position: -112px -662px; margin: 0% 0 0 31%!important; width: 60px; height: 50px; } 
 	.todos-itens #container li.jogos a, .todos-itens #container li.atividades a, .todos-itens #container li.videos a {min-height: 248px!important;}
+	
 }
 
 /*form campanhas*/
@@ -434,6 +436,9 @@ a{text-decoration:underline!important;}
 .icone-form-email-erro{ background-position: 10px -628px; width: 46px!important; height: 30px; } 
 .icone-form-datafile{ background-position: 13px -202px; width: 46px!important; height: 40px; } 
 .icone-form-datafile-erro{ background-position: 13px -292px; width: 46px!important; height: 40px; } 
+.icone-form-mensagem{ background-position: 5px -989px; width: 46px!important; height: 40px; } 
+.icone-form-mensagem-erro{ background-position: 5px -900px; width: 46px!important; height: 40px; } 
+.campanhasuccess #content .icone-participe-pequeno {background-position: -110px -828px;width: 66px;height: 36px;}
 
 /*História*/
 .icone-historia-grande{ background-position: -112px -662px; margin: 0% 0 0 19%!important; width: 60px; height: 50px; } 
