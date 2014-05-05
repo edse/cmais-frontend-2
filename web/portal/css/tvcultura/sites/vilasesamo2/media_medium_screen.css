@@ -36,7 +36,7 @@ a{text-decoration:underline!important;}
 .nav-mobile{display:none;}
 #content{top: 70px!important;}
 .interna .todos-itens .row-fluid,
-.campanhasuccess #content .todos-itens .row-fluid { margin-left:0; width: 100%; }
+.campanhasuccess #content .todos-itens .row-fluid { margin-left:0!important; width: 100%; }
 
 /* index */
 #carrossel-destaque{display:none;}
@@ -256,7 +256,7 @@ footer .copyright {height: 30px;margin-left: 2%;}
 
 @media screen and (min-width:601px) and (max-width:979px) {
   #content .todos-itens #container {width: 100%;margin-left: 0!important;}
-  #content .todos-itens {margin:15px auto;}
+  #content .todos-itens {margin:15px;}
   #content .todos-itens .element{width: 48%;margin: 5px 0 0 10px!important;}
   #content .todos-itens .yt-menu,
   #content .todos-itens .container-image{height:200px!important; max-width:979px;}
