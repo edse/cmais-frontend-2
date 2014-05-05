@@ -331,6 +331,8 @@ footer .copyright {height: 30px;margin-left: 2%;}
 .icone-form-email-erro{ background-position: 10px -628px; width: 46px!important; height: 30px; } 
 .icone-form-datafile{ background-position: 13px -202px; width: 46px!important; height: 40px; } 
 .icone-form-datafile-erro{ background-position: 13px -292px; width: 46px!important; height: 40px; } 
+.icone-form-mensagem{ background-position: 5px -989px; width: 46px!important; height: 40px; } 
+.icone-form-mensagem-erro{ background-position: 5px -900px; width: 46px!important; height: 40px; } 
 
 #sfWebDebugBar{display:none!important}
 
