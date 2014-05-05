@@ -337,6 +337,7 @@ a{text-decoration:underline!important;}
 .campanhas #content .filtro h1 {font-size: 1.2em!important;padding: 0!important;width: 90%;margin: 0 auto;text-align: center;}
 .campanhas #content .container-campanhas iframe {width: 100%;margin-top: 0;}
 .campanhas #content .btn-group {margin-top: 16%;width: 100%;right: 0;}
+.campanhasuccess .todos-itens a div {max-width: 200px;}
 
 /*coleção incluir*/
 .interna.campanhas .container-campanhas{margin: 2%;padding: 2%;}
@@ -417,7 +418,7 @@ a{text-decoration:underline!important;}
 	.icone-personagem-grande{margin: 0 0 0 31%!important;} 
 	.icone-historia-grande{ background-position: -112px -662px; margin: 0% 0 0 31%!important; width: 60px; height: 50px; } 
 	.todos-itens #container li.jogos a, .todos-itens #container li.atividades a, .todos-itens #container li.videos a {min-height: 248px!important;}
-	.campanhasuccess .todos-itens a div {max-width: 200px;}
+	
 }
 
 /*form campanhas*/
