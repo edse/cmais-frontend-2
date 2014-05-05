@@ -417,6 +417,8 @@ a{text-decoration:underline!important;}
 	.icone-personagem-grande{margin: 0 0 0 31%!important;} 
 	.icone-historia-grande{ background-position: -112px -662px; margin: 0% 0 0 31%!important; width: 60px; height: 50px; } 
 	.todos-itens #container li.jogos a, .todos-itens #container li.atividades a, .todos-itens #container li.videos a {min-height: 248px!important;}
+	.icone-participe-pequeno {background-position: -110px -828px;width: 66px;height: 36px;}
+	.campanhasuccess .todos-itens a div {max-width: 200px;}
 }
 
 /*form campanhas*/
@@ -434,6 +436,8 @@ a{text-decoration:underline!important;}
 .icone-form-email-erro{ background-position: 10px -628px; width: 46px!important; height: 30px; } 
 .icone-form-datafile{ background-position: 13px -202px; width: 46px!important; height: 40px; } 
 .icone-form-datafile-erro{ background-position: 13px -292px; width: 46px!important; height: 40px; } 
+.icone-form-mensagem{ background-position: 5px -989px; width: 46px!important; height: 40px; } 
+.icone-form-mensagem-erro{ background-position: 5px -900px; width: 46px!important; height: 40px; } 
 
 /*História*/
 .icone-historia-grande{ background-position: -112px -662px; margin: 0% 0 0 19%!important; width: 60px; height: 50px; } 

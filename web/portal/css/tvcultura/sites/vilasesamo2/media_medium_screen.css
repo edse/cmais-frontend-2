@@ -35,6 +35,8 @@ a{text-decoration:underline!important;}
 /* #content {background: #FEE132;} */
 .nav-mobile{display:none;}
 #content{top: 70px!important;}
+.interna .todos-itens .row-fluid,
+.campanhasuccess .todos-itens .row-fluid { margin-left:0; width: 100%; }
 
 /* index */
 #carrossel-destaque{display:none;}
