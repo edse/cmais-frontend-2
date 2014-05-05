@@ -1,3 +1,10 @@
+  <?php 
+  if(isset($campaign)): 
+    $campaign = $campaign;
+  elseif(isset($parent)): 
+    $campaign = $parent;  
+  endif;
+ ?>
   <?php if($campaign): ?>
   <script src="http://cmais.com.br/portal/js/dropkick-master/jquery.dropkick-min.js"></script>
   
