@@ -219,4 +219,7 @@ h2 { font-size:1.225em; line-height:22px; margin:0; font-weight:normal; color:#1
 .form .file-wrapper .button {float:right;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/pattern-botao.jpg) repeat-x;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;border:none;color: #434343;cursor: pointer;display: inline-block;font-size: 11px;font-weight: bold;margin-right: 5px;padding: 8px 12px;text-transform: uppercase;font-family:'din-blackregular',Arial, Helvetica, sans-serif;font-size:18px;}
 .form .file-holder{clear: both;text-align: left;color: #FFF;margin: 10px 0 7px 0;padding-left: 13px;font-size: 12px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 
-
+/* pagina campanha */
+.content.campanhaSuccess .accordion-inner{padding:0; margin:15px 0;}
+.content.campanhaSuccess .todos-itens .row-fluid .span4{max-width:298px;}
+/* pagina campanha */
