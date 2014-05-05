@@ -40,9 +40,9 @@
 .btn-download3{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_download.png) no-repeat;width: 104px;height: 103px}
 .btn-download1{background-position: 0 0;}
 .btn-download1:hover{background-position: 0 bottom;}
-.btn-download2{background-position: 1px -82px}
+.btn-download2{background-position: 0 0}
 .btn-download2:hover{background-position:  0 bottom;}
-.btn-download3{background-position: 1px -166px;}
+.btn-download3{background-position: 0 0;}
 .btn-download3:hover{background-position:  0 bottom;}
 
 .tempo{color:#FCE90E;font-size:40px;font-weight: bold;text-shadow: 3px 1px 3px #5074E5;line-height:normal;}
