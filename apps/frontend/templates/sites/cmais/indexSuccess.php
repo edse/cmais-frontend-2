@@ -150,7 +150,11 @@ GA_googleFillSlot("Ipad-300x250");
 			
               </div>
               <!-- / BOX PUBLICIDADE -->
-              
+              <div class="box-publicidade grid1">
+                <script type='text/javascript'>
+                GA_googleFillSlot("home-infantil");   
+                </script>
+              </div>
               <!-- BOX NOTICIA VIDEO -->
               <?php if(isset($displays["destaque-videos"])) include_partial_from_folder('blocks','global/display-1c-videos-carrossel', array('displays' => $displays["destaque-videos"])) ?>
               <!-- /BOX NOTICIA VIDEO --> 
@@ -192,4 +196,10 @@ GA_googleFillSlot("Ipad-300x250");
       
     </div>
     <!-- / CAPA SITE -->
-
+    <script>
+    $(document).ready(function(){
+      setTimeout(function(){
+        $('#___plusone_0').css('width', '75px');
+      },1000);
+    });
+    </script>
