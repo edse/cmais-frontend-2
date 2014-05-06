@@ -206,8 +206,17 @@
 				            $('#livestream2').show();
 				            var interval = setTimeout('checkStreamingEnd()', 6000);
 									</script>
-									<a class="titulos" href="http://cmais.com.br/aovivo"><?php echo $schedules[0]->title?></a>
-									<p><?php echo substr($schedules[0]->description_short, 0, 170)?>...</p>
+									<a class="titulos" href="http://cmais.com.br/aovivo">
+										<?php 
+											if(isset($schedules[0]->title))
+												echo $schedules[0]->title;
+											else
+												echo $schedules[0]->program;
+										?>
+									</a>
+									<p>
+										<?php if(isset($schedules[0]->description_short)) echo substr($schedules[0]->description_short, 0, 170)."...";?>
+									</p>
 								</div>
 								<div id="videos_div" style="display: none">
 									<p class="chapeu jornalismo">Assista Agora </p>
