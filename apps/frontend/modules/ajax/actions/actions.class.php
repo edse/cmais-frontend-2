@@ -2788,7 +2788,9 @@ EOT;
 
 
   public function executeGingaxml(sfWebRequest $request){
-  	header('Content-Type: text/xml'); 
+  	//header('Content-Type: text/xml'); 
+		header("Content-Type: application/xml; charset=ISO-8859-1");
+		
     $this->setLayout(false);
 
 	//NÃO LISTAR SITES
