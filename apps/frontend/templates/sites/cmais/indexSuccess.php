@@ -20,9 +20,9 @@
 	      	$('#videos_div').show();	//MOSTRA A DIV DE VÍDEOS
 	      	$('#live_div').remove();  //REMOVE A DIV
 	      	desativar = true;		    	//DESATIVA A CHECAGEM DO STREAMING	
-	    	}else{
-	    		console.log("Ainda Ativo");
-	    	}
+	    	}//else{
+	    		//console.log("Ainda Ativo");
+	    	//}
 	    },
 	    url: '/ajax/streamingend'
 	  });
@@ -208,14 +208,14 @@
 									</script>
 									<a class="titulos" href="http://cmais.com.br/aovivo">
 										<?php 
-											if(isset($schedules[0]->title))
+											if($schedules[0]->title != "")
 												echo $schedules[0]->title;
 											else
-												echo $schedules[0]->program;
+												echo $schedules[0]->Program;
 										?>
 									</a>
 									<p>
-										<?php if(isset($schedules[0]->description_short)) echo substr($schedules[0]->description_short, 0, 170)."...";?>
+										<?php if($schedules[0]->description_short != "") echo substr($schedules[0]->description_short, 0, 170)."...";?>
 									</p>
 								</div>
 								<div id="videos_div" style="display: none">
