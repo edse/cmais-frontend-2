@@ -26,11 +26,9 @@
 	    },
 	    url: '/ajax/streamingend'
 	  });
-	  if(desativar == false) var interval = setTimeout('checkStreamingEnd()', 6000);
+	  if(desativar == false) var interval = setTimeout('checkStreamingEnd()', 120000); //2 minutos
 	}
-  //$(window).load(function(){
-    //te=setInterval("checkStreamingEnd()",5000); 
-  //});
+  var timeout = setTimeout("location.reload(true);",600000); //10 minutos 
 </script>
 
     <!-- CAPA SITE -->
@@ -204,7 +202,7 @@
 				            so.addParam('wmode','transparent'); 
 				            so.write('livestream2');
 				            $('#livestream2').show();
-				            var interval = setTimeout('checkStreamingEnd()', 6000);
+				            var interval = setTimeout('checkStreamingEnd()', 120000); // 2 minutos
 									</script>
 									<a class="titulos" href="http://cmais.com.br/aovivo">
 										<?php 
