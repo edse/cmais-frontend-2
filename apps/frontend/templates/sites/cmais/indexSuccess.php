@@ -173,7 +173,7 @@
               </div>
               <!-- / BOX PUBLICIDADE -->
 
-              <div class="box-publicidade grid1">
+              <div class="box-publicidade grid1" style="display:none">
                 <script type='text/javascript'>
                 GA_googleFillSlot("home-infantil");   
                 </script>
