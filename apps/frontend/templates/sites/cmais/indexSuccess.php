@@ -211,7 +211,7 @@
 											if($schedules[0]->title != "")
 												echo $schedules[0]->title;
 											else
-												echo $schedules[0]->program;
+												echo $schedules[0]->Program;
 										?>
 									</a>
 									<p>
