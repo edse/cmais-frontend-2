@@ -20,9 +20,9 @@
 	      	$('#videos_div').show();	//MOSTRA A DIV DE VÍDEOS
 	      	$('#live_div').remove();  //REMOVE A DIV
 	      	desativar = true;		    	//DESATIVA A CHECAGEM DO STREAMING	
-	    	}else{
-	    		console.log("Ainda Ativo");
-	    	}
+	    	}//else{
+	    		//console.log("Ainda Ativo");
+	    	//}
 	    },
 	    url: '/ajax/streamingend'
 	  });
