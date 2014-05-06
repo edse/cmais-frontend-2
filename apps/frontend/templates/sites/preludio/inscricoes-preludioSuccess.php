@@ -438,7 +438,7 @@
               <!--Anexar Foto-->
               <div class="linha t7">
                 
-                <label>Anexar RG (se for menor de idade anexar o RG do responsável)(Formato JPG):</label>
+                <label>Anexar RG (se for menor de idade anexar o RG do responsável)(Formato JPG/PDF/PNG):</label>
                 <input type="file" name="new_photo" id="anexofotorg" />
                 
               </div>
