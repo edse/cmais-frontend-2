@@ -7,7 +7,7 @@ ini_set("upload_max_filesize", "21M");
 ini_set("post_max_size", "22M");
 ini_set("memory_limit", "30M");
 
-$allowedExts = array("jpg", "jpeg", "gif", "png");
+$allowedExts = array("jpg", "jpeg", "gif", "png", "pdf");
 
 if($_FILES["new_photo"]){
   echo "Upload: " . $_FILES["new_photo"]["name"] . "<br>";
@@ -15,13 +15,13 @@ if($_FILES["new_photo"]){
   echo "Size: " . ($_FILES["new_photo"]["size"] / 1024) . " kB<br>";
   echo "Temp file: " . $_FILES["new_photo"]["tmp_name"] . "<br>";
   $extension = end(explode(".", $_FILES["new_photo"]["name"]));
-  if((($_FILES["new_photo"]["type"] == "image/gif") || ($_FILES["new_photo"]["type"] == "image/jpeg") || ($_FILES["new_photo"]["type"] == "image/jpeg") || ($_FILES["new_photo"]["type"] == "image/png") || ($_FILES["new_photo"]["type"] == "image/pjpeg")) && ($_FILES["new_photo"]["size"] < 20554432) && in_array($extension, $allowedExts)){
+  if((($_FILES["new_photo"]["type"] == "image/gif") || ($_FILES["new_photo"]["type"] == "image/jpeg") || ($_FILES["new_photo"]["type"] == "image/jpeg") || ($_FILES["new_photo"]["type"] == "image/png")|| ($_FILES["new_photo"]["type"] == "application/pdf") || ($_FILES["new_photo"]["type"] == "image/pjpeg")) && ($_FILES["new_photo"]["size"] < 20554432) && in_array($extension, $allowedExts)){
     if($_FILES["new_photo"]["error"] > 0){
       die("Return Code: " . $_FILES["new_photo"]["error"] . "<br>");
     }
     else{
       if(is_file($_FILES["new_photo"]["tmp_name"])){
-        if(multi_attach_mail("preludio@tvcultura.com.br", array($_FILES["new_photo"]["tmp_name"], $_FILES["new_photo2"]["tmp_name"]), $_POST, $_FILES["new_photo"]["name"], "nao-responda@tvcultura.com.br")){
+        if(multi_attach_mail("preludio@tvcultura.com.br", array($_FILES["new_photo"]["tmp_name"], $_FILES["new_photo2"]["tmp_name"]), $_POST, array($_FILES["new_photo"]["name"], $_FILES["new_photo2"]["name"]), "nao-responda@tvcultura.com.br")){
           unlink($_FILES["new_photo"]["tmp_name"]);
           header("Location: http://tvcultura.cmais.com.br/preludio/inscricoes-preludio?msg=success");
           //echo ">>>>OK!";
@@ -70,6 +70,12 @@ function multi_attach_mail($to, $files, $form_data, $file_name, $sendermail) {
   // preparing attachments
   for ($i = 0; $i < count($files); $i++) {
     if (is_file($files[$i])) {
+    	if($i == 0){
+    		$file_name = $_FILES["new_photo"]["name"];
+    	}else{
+    		$file_name = $_FILES["new_photo2"]["name"];
+    	}
+			
       $message .= "--{$mime_boundary}\n";
       $fp = @fopen($files[$i], "rb");
       $data = @fread($fp, filesize($files[$i]));
