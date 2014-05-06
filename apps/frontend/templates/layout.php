@@ -87,7 +87,6 @@
     GA_googleAddSlot("ca-pub-6681834746443470", "provocacoes-728x90");
     GA_googleAddSlot("ca-pub-6681834746443470", "reisdarua-728x90");
     */
-    GA_googleAddSlot("ca-pub-6681834746443470", "home-infantil");
     GA_googleAddSlot("ca-pub-6681834746443470", "tvcultura-homepage-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "univesptv-728x90");
     GA_googleAddSlot("ca-pub-6681834746443470", "univesptv-300x250");
@@ -146,6 +145,7 @@
     <script type='text/javascript'>
     googletag.cmd.push(function() {
     googletag.defineSlot('/4079539/cmais-jornalismo', [200, 200], 'div-gpt-ad-1385981907491-0').addService(googletag.pubads());
+    googletag.defineSlot('/4079539/home-infantil', [320, 250], 'div-gpt-ad-1399413784142-0').addService(googletag.pubads());
     googletag.defineSlot('/4079539/cmais-jornalismo-200x200-b', [200, 200], 'div-gpt-ad-1385985503345-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();

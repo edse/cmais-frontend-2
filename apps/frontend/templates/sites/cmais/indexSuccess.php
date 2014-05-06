@@ -173,9 +173,10 @@
               </div>
               <!-- / BOX PUBLICIDADE -->
 
-              <div class="box-publicidade grid1" style="display:none">
+              <!-- home-infantil -->
+              <div id='div-gpt-ad-1399413835300-0' style='display:none;' class="box-publicidade grid1">
                 <script type='text/javascript'>
-                GA_googleFillSlot("home-infantil");   
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1399413835300-0'); });
                 </script>
               </div>
                
