@@ -2789,7 +2789,8 @@ EOT;
 
   public function executeGingaxml(sfWebRequest $request){
   	//header('Content-Type: text/xml'); 
-		header("Content-Type: application/xml; charset=ISO-8859-1");
+		header("Content-Type: text/xml; charset=utf-8");
+		
 		
     $this->setLayout(false);
 
