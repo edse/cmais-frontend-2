@@ -21,7 +21,7 @@ if($_FILES["new_photo"]){
     }
     else{
       if(is_file($_FILES["new_photo"]["tmp_name"])){
-        if(multi_attach_mail("georgia.catarina@gmail.com", array($_FILES["new_photo"]["tmp_name"], $_FILES["new_photo2"]["tmp_name"]), $_POST, $_FILES["new_photo"]["name"], "nao-responda@tvcultura.com.br")){
+        if(multi_attach_mail("georgia.catarina@gmail.com", array($_FILES["new_photo"]["tmp_name"], $_FILES["new_photo2"]["tmp_name"]), $_POST,  array($_FILES["new_photo"]["name"], $_FILES["new_photo2"]["name"]), "nao-responda@tvcultura.com.br")){
           unlink($_FILES["new_photo"]["tmp_name"]);
           header("Location: http://tvcultura.cmais.com.br/preludio/inscricoes-preludio?msg=success");
           //echo ">>>>OK!";
@@ -71,11 +71,7 @@ function multi_attach_mail($to, $files, $form_data, $file_name, $sendermail) {
   for ($i = 0; $i < count($files); $i++) {
     if (is_file($files[$i])) {
       $message .= "--{$mime_boundary}\n";
-      if(($_FILES["new_photo"]["type"] == "application/pdf")){
-      	 $fp = @fopen("teste", "rb");
-      }else{
-      	$fp = @fopen($files[$i], "rb");
-      }
+      $fp = @fopen($files[$i], "rb");
       $data = @fread($fp, filesize($files[$i]));
       @fclose($fp);
       $data = chunk_split(base64_encode($data));
