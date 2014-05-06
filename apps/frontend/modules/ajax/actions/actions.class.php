@@ -2810,7 +2810,7 @@ EOT;
 		->execute();
 	
 		$pub_date = date("d M Y H:i:s")." GMT"; 
-		$content = '<?xml version="1.0" encoding="ISO-8859-1"?>
+		$content = '<?xml version="1.0" encoding="UTF-8"?>
 									<rss version="2.0">
 									<channel>
 										<title>Notícias Portal Cmais</title>
