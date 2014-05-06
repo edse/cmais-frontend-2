@@ -173,7 +173,7 @@
               </div>
               <!-- / BOX PUBLICIDADE -->
 
-              <div class="box-publicidade grid1">
+              <div class="box-publicidade grid1" style="display:none">
                 <script type='text/javascript'>
                 GA_googleFillSlot("home-infantil");   
                 </script>
@@ -278,6 +278,7 @@
     $(document).ready(function(){
       setTimeout(function(){
         $('#___plusone_0').css('width', '75px');
+        $('#twitter-widget-0').css({'width':'203px','float':'right'});
       },1000);
     });
     </script>
