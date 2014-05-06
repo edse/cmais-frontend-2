@@ -279,6 +279,7 @@
       setInterval(function(){
         $('#___plusone_0').css('width', '75px');
         $('#twitter-widget-0').css({'width':'203px','float':'right'});
+        $('.pam').css('padding-left', '18px');
       },500);
     });
     </script>
