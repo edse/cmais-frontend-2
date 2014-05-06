@@ -87,6 +87,7 @@
     GA_googleAddSlot("ca-pub-6681834746443470", "provocacoes-728x90");
     GA_googleAddSlot("ca-pub-6681834746443470", "reisdarua-728x90");
     */
+    GA_googleAddSlot("ca-pub-6681834746443470", "home-infantil");
     GA_googleAddSlot("ca-pub-6681834746443470", "tvcultura-homepage-300x250");
     GA_googleAddSlot("ca-pub-6681834746443470", "univesptv-728x90");
     GA_googleAddSlot("ca-pub-6681834746443470", "univesptv-300x250");

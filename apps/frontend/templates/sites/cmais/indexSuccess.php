@@ -172,6 +172,14 @@
 							?>
               </div>
               <!-- / BOX PUBLICIDADE -->
+
+              <div class="box-publicidade grid1">
+                <script type='text/javascript'>
+                GA_googleFillSlot("home-infantil");   
+                </script>
+              </div>
+               
+
               
    					<?php //SE TIVER UM PROGRAMA == LIVE 
 				      $schedules = Doctrine_Query::create()
@@ -228,6 +236,7 @@
 	            
 	            <?php endif;?>
 
+
               <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'url' => $url)) ?>
               <?php //include_partial_from_folder('blocks','global/twitter-1c', array('site' => $site)) ?>
         	  
@@ -265,4 +274,10 @@
       
     </div>
     <!-- / CAPA SITE -->
-
+    <script>
+    $(document).ready(function(){
+      setTimeout(function(){
+        $('#___plusone_0').css('width', '75px');
+      },1000);
+    });
+    </script>

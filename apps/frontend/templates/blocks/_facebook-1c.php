@@ -2,7 +2,7 @@
               <div class="box-padrao facebook" style="background-color: white; width:300px; margin:0 0 20px 0; float:left;">
                   <?php if($site->getSlug()!="culturalivre"):?>
                     <g:plusone></g:plusone>
-                    <br /><br />
+                    
                     <a href="<?php if($site->twitter_url!=""): ?><?php echo $site->twitter_url ?><?php else: ?>http://twitter.com/tvcultura<?php endif; ?>" class="twitter-follow-button">Siga @<?php echo $site->title ?></a>                  
                   <?php else: ?>
                     <br /><br />
