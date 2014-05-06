@@ -37,7 +37,7 @@ function Piece(id, game, img, holder, position, initial, moveble, placed) {
   else
     this.p = -0.1;
 
-  this.tolerance = 850;
+  this.tolerance = 7000;
   this.moveble = true;
   this.moving = false;
   this.placed = false;
@@ -102,6 +102,7 @@ Piece.prototype.draw = function() {
         this.game.selected.moveble = false;
         this.game.placed_pieces.push(this.game.selected);
         //sfx
+        /*
         if(!iOS){
           //if(game.drip.currentTime != 0)
             //game.drip.currentTime = 0;
@@ -112,6 +113,7 @@ Piece.prototype.draw = function() {
           game.drip.src = "http://cmais.com.br/portal/audio/vilasesamo/puzzle/drip.mp3";
           game.drip.play();
         }
+        */
         //alert('drip')
       }
     }

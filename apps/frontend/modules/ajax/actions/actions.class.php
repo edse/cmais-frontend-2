@@ -2796,28 +2796,34 @@ EOT;
 		->addWhere("a.asset_type_id = 1")
 		->andWhereNotIn("s.id", $site_not)
 		->orderBy("a.id desc")
-		->limit(10)
+		->limit(100)
 		->execute();
 	
-	//echo $asset[1]->retriveImageUrlByImageUsage("image-4-b");
+		$pub_date = date("d M Y H:i:s")." GMT"; 
+		$content = '<?xml version="1.0" encoding="utf-8"?>
+									<rss version="2.0">
+									<channel>
+										<title>Notícias Portal Cmais</title>
+										<link>ajax/gingaxml</link> 
+										<description> -- rss description -- </description> 
+										<language>pt_BR</language> 
+										<lastBuildDate>'.$pub_date.'</lastBuildDate> 
+										<pubDate>'.$pub_date.'</pubDate> 
+										<copyright>© All rights reserved.</copyright>';
 	
-	$content = '<?xml version="1.0" encoding="utf-8"?>
-		<tvcultura>
-	';
 	foreach ($asset as $key => $a) {
-		$image = $a->retriveImageUrlByImageUsage("image-4-b");
+		//$image = $a->retriveImageUrlByImageUsage("image-4-b");
 		$content.= "
-		<asset>
-			<id>".$a->id."</id>
-			<title><![CDATA[".$a->title."]]></title>
-			<description><![CDATA[".$a->description."]]></description>
-			<image><![CDATA[".$image."]]></image>
-		</asset>
+			<item>
+				<title><![CDATA[".$a->title."]]></title>
+				<link><![CDATA[".$a->retriveURL()."]]></link>
+				<pubDate><![CDATA[".$a->created_at."]]></pubDate>
+			</item>
 		";
 		//<content><![CDATA[".$a->AssetContent->content."]]></content>
 	}
 	
-	$content.= "</tvcultura>";
+	$content.= "</channel></rss>";
 	die($content);
 	}
 

@@ -3,8 +3,8 @@
 #canvas{position:fixed; top:0; left:0; z-index:9999999;}
 .container {max-width:100%;}
 .back-entry-sesame-street{background: url("http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/entry/entry_puzzle.jpg") no-repeat;width: 95%; height:675px;position: relative;background-size: 100%;margin: 0 auto;}
-.btn-play-sesame-street{	width: 170px;	height: 170px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/entry/play_game.png) no-repeat;box-shadow: none;transition:none;}
-.btn-play-sesame-street:hover{background-position: 0 -171px;background-color: transparent;transition:none;}
+.btn-play-sesame-street{	width: 170px;	height: 168px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/entry/play_game.png) no-repeat;box-shadow: none;transition:none;}
+.btn-play-sesame-street:hover{background-position: 0 bottom;background-color: transparent;transition:none;}
 
 #btn-pause,#btn-fullscreen,#btn-exitfullscreen,#btn-bmg-on,#btn-bmg-off,#btn-sfx-on,#btn-sfx-off,#btn-autosnap-on,#btn-autosnap-off{display: none}
 
@@ -26,24 +26,24 @@
 .btn-pxfase:hover{width: 175px;	height: 175px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_fase_over.png) no-repeat;}
 .btn-restart{	width: 170px;	height: 170px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_restart.png) no-repeat 0 1px;box-shadow: none;transition:none;}
 .btn-restart:hover{background-position: 0 -167px;background-color: transparent;transition:none;}
-.btn-inicio{	width: 92px;	height: 83px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_inicio.png) no-repeat 0 top;box-shadow: none;transition:none;}
+.btn-inicio{	width: 103px;	height: 102px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_inicio.png) no-repeat 0 top;box-shadow: none;transition:none;}
 .btn-inicio:hover{background-position: 0 bottom;background-color: transparent;transition:none;}
-.btn-volta-canvas{	width: 115px;height: 114px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_voltar.png) no-repeat 0 top;box-shadow: none;transition:none;}
-.btn-volta-canvas:hover{background-position: 0 bottom;background-color: transparent;transition:none;}
+.btn-volta-canvas{	width: 115px;height: 117px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_voltar.png) no-repeat 0 top;box-shadow: none;transition:none;}
+/*btn-volta-canvas:hover{background-position: 0 bottom;background-color: transparent;transition:none;}*/
 .btn-inicio-canvas{	width: 170px;	height: 166px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_inicio_canvas.png) no-repeat 0 top;box-shadow: none;transition:none;}
 .btn-inicio-canvas:hover{background-position: 0 bottom;background-color: transparent;transition:none;}
 .btn-fullscreen{display:none;width: 250px;	height: 32px;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/fullscreen.png) no-repeat;position: absolute;left: 40%;color:#2F5BAA;text-transform: uppercase;font-weight: bolder;font-size: 20px;}
-.fasedownload{width:85px;margin-top:25%;}
+.fasedownload{width:106px;margin-top:23%;}
 .fasedownload h2{font-size:15px;}
 .btn-download1,
 .btn-download2,
-.btn-download3{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_download.png) no-repeat;width: 85px;height: 83px}
+.btn-download3{background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/puzzle/icones/btn_download.png) no-repeat;width: 104px;height: 103px}
 .btn-download1{background-position: 0 0;}
-.btn-download1:hover{background-position: -84px 0;}
-.btn-download2{background-position: 1px -82px}
-.btn-download2:hover{background-position: -84px -82px;}
-.btn-download3{background-position: 1px -166px;}
-.btn-download3:hover{background-position: -84px -166px;}
+.btn-download1:hover{background-position: 0 bottom;}
+.btn-download2{background-position: 0 0}
+.btn-download2:hover{background-position:  0 bottom;}
+.btn-download3{background-position: 0 0;}
+.btn-download3:hover{background-position:  0 bottom;}
 
 .tempo{color:#FCE90E;font-size:40px;font-weight: bold;text-shadow: 3px 1px 3px #5074E5;line-height:normal;}
 .fase{color:#2F5BAA;text-transform: uppercase;font-weight: bolder;font-size: 40px;text-align: left;width: 89px;padding: 0;margin-top: -45px;display: block;}
