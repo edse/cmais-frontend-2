@@ -276,9 +276,9 @@
     <!-- / CAPA SITE -->
     <script>
     $(document).ready(function(){
-      setTimeout(function(){
+      setInterval(function(){
         $('#___plusone_0').css('width', '75px');
         $('#twitter-widget-0').css({'width':'203px','float':'right'});
-      },1000);
+      },500);
     });
     </script>
