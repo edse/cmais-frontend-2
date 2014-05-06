@@ -71,7 +71,11 @@ function multi_attach_mail($to, $files, $form_data, $file_name, $sendermail) {
   for ($i = 0; $i < count($files); $i++) {
     if (is_file($files[$i])) {
       $message .= "--{$mime_boundary}\n";
-      $fp = @fopen($files[$i], "rb");
+      if(($_FILES["new_photo"]["type"] == "application/pdf")){
+      	 $fp = @fopen("teste", "rb");
+      }else{
+      	$fp = @fopen($files[$i], "rb");
+      }
       $data = @fread($fp, filesize($files[$i]));
       @fclose($fp);
       $data = chunk_split(base64_encode($data));
