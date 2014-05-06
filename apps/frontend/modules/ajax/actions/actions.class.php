@@ -402,8 +402,15 @@ class ajaxActions extends sfActions
         ->execute();
       if((isset($schedules)) && (count($schedules) > 0)){
         $return .= "";
+        if($request->getParameter('destaque_home') == "home"){
+        	$return = 1;
+       }          
+				
       }else{
         $return .= "$('#livestream2').html('');";
+        if($request->getParameter('destaque_home') == "home"){
+        	$return = 2;
+       } 				
       }
     //}
     //echo $return;
@@ -2800,7 +2807,7 @@ EOT;
 		->execute();
 	
 		$pub_date = date("d M Y H:i:s")." GMT"; 
-		$content = '<?xml version="1.0" encoding="utf-8"?>
+		$content = '<?xml version="1.0" encoding="ISO-8859-1"?>
 									<rss version="2.0">
 									<channel>
 										<title>Notícias Portal Cmais</title>
