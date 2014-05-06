@@ -402,8 +402,15 @@ class ajaxActions extends sfActions
         ->execute();
       if((isset($schedules)) && (count($schedules) > 0)){
         $return .= "";
+        if($request->getParameter('destaque_home') == "home"){
+        	$return = 1;
+       }          
+				
       }else{
         $return .= "$('#livestream2').html('');";
+        if($request->getParameter('destaque_home') == "home"){
+        	$return = 2;
+       } 				
       }
     //}
     //echo $return;

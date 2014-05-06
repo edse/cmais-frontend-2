@@ -1,11 +1,40 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/cmais.css" type="text/css" />
 <script type="text/javascript" src="http://cmais.com.br/portal/js/swfobject/swfobject.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
 <!--script type="text/javascript" src="http://cmais.com.br/portal/js/redirect_mobile.js"></script-->
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
+<script>
+	var te = null;
+	var interval = null;
+	var desativar = false;
+	
+	function checkStreamingEnd(){
+		var request = $.ajax({
+	    dataType: 'jsonp',
+	    data: "destaque_home=home",
+	    success: function(data) {
+	    	if(data.data == 2){
+					$('#live_div').html('');	//APAGA O CONTEUDO HTML
+	      	$('#videos_div').show();	//MOSTRA A DIV DE VÍDEOS
+	      	$('#live_div').remove();  //REMOVE A DIV
+	      	desativar = true;		    	//DESATIVA A CHECAGEM DO STREAMING	
+	    	}else{
+	    		console.log("Ainda Ativo");
+	    	}
+	    },
+	    url: '/ajax/streamingend'
+	  });
+	  if(desativar == false) var interval = setTimeout('checkStreamingEnd()', 6000);
+	}
+  //$(window).load(function(){
+    //te=setInterval("checkStreamingEnd()",5000); 
+  //});
+</script>
+
     <!-- CAPA SITE -->
-    <div id="capa-site"><!-- teste -->
+    <div id="capa-site">
       
       <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
       
@@ -113,47 +142,84 @@
               <div class="box-publicidade grid1">
                  <!-- home-geral300x250 -->
                  <?php 
-	function detectMobile() {
-	$devices = array('android' => 'android', 'blackberry' => 'blackberry', 'iphone' => '(iphone|ipod|ipad)', 'opera' => '(opera mini|opera mobi)', 'palm' => '(avantgo|blazer|elaine|hiptop|palm|plucker|xiino)', 'windows' => 'windows ce; (iemobile|ppc|smartphone)', 'generic' => '(kindle|mobile|mmp|midp|o2|pda|pocket|psp|symbian|smartphone|treo|up.browser|up.link|vodafone|wap)');
- 
-	$useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
-	$accept = strtolower($_SERVER['HTTP_ACCEPT']);
-	$mobile = false;
- 
-	if (isset($_SERVER['HTTP_X_WAP_PROFILE']) || isset($_SERVER['HTTP_PROFILE']) || strpos($accept, "application/vnd.wap.xhtml+xml") > 0 || strpos($accept, "text/vnd.wap.wml") > 0) {
-			$mobile = "WAP";
-	} else {
-		foreach ($devices as $device => $keys) {
-			if(preg_match("/$keys/i", $useragent)) {
-				$mobile = $device;
-			}
-		}
-	}
- 
-	return $mobile;
-}
- 
-if(detectMobile()) {
-?>
-<script type='text/javascript'>
-GA_googleFillSlot("Ipad-300x250");
-</script>
-<?php
-} else {
-?>
-	<script type='text/javascript'>
-	GA_googleFillSlot("home-geral300x250");
-	</script>
-<?php	
-}
-?>
-			
+									function detectMobile() {
+										$devices = array('android' => 'android', 'blackberry' => 'blackberry', 'iphone' => '(iphone|ipod|ipad)', 'opera' => '(opera mini|opera mobi)', 'palm' => '(avantgo|blazer|elaine|hiptop|palm|plucker|xiino)', 'windows' => 'windows ce; (iemobile|ppc|smartphone)', 'generic' => '(kindle|mobile|mmp|midp|o2|pda|pocket|psp|symbian|smartphone|treo|up.browser|up.link|vodafone|wap)');
+										$useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
+										$accept = strtolower($_SERVER['HTTP_ACCEPT']);
+										$mobile = false;
+										if(isset($_SERVER['HTTP_X_WAP_PROFILE']) || isset($_SERVER['HTTP_PROFILE']) || strpos($accept, "application/vnd.wap.xhtml+xml") > 0 || strpos($accept, "text/vnd.wap.wml") > 0) {
+												$mobile = "WAP";
+										}else{
+											foreach ($devices as $device => $keys) {
+												if(preg_match("/$keys/i", $useragent)) {
+													$mobile = $device;
+												}
+											}
+										}
+										return $mobile;
+									}
+								if(detectMobile()) {
+								?>
+								<script type='text/javascript'>
+									GA_googleFillSlot("Ipad-300x250");
+								</script>
+								<?php
+								}else {
+									?>
+									<script type='text/javascript'>
+										GA_googleFillSlot("home-geral300x250");
+									</script>
+									<?php	
+								}
+							?>
               </div>
               <!-- / BOX PUBLICIDADE -->
               
-              <!-- BOX NOTICIA VIDEO -->
-              <?php if(isset($displays["destaque-videos"])) include_partial_from_folder('blocks','global/display-1c-videos-carrossel', array('displays' => $displays["destaque-videos"])) ?>
-              <!-- /BOX NOTICIA VIDEO --> 
+   					<?php //SE TIVER UM PROGRAMA == LIVE 
+				      $schedules = Doctrine_Query::create()
+				        ->select('s.*')
+				        ->from('Schedule s')
+				        ->where('s.is_live = ?', 1)
+				        ->andWhere('s.date_start < ?', date('Y-m-d H:i:s'))
+				        ->andWhere('s.date_end > ?', date('Y-m-d H:i:s'))
+				        ->andWhere('s.channel_id = ?', 1)
+				        ->orderBy('s.date_start asc')
+				        ->limit('1')
+				        ->execute();
+							
+							if((isset($schedules)) && (count($schedules) > 0)): 
+	              //MOSTRA O FLASH ENCODER ?>
+	           	<div class="box-padrao noticia grid1" id="live_div">
+	              <p class="chapeu jornalismo">Ao Vivo </p>		
+								<div id="livestream2" style="display: none;"><p>Seu browser não suporta Flash.</p></div>
+			        		<script> 
+				        		var so = new SWFObject('http://cmais.com.br/portal/js/mediaplayer/player.swf','mpl','310','205','9');
+				            so.addVariable('controlbar', 'over');
+				            so.addVariable('autostart', 'false');
+				            so.addVariable('streamer', 'rtmp://200.136.27.12/livepkgr');
+				            so.addVariable('file', 'tvcultura4?adbe-live-event=liveevent');
+				            so.addVariable('type', 'video');
+				            so.addParam('allowscriptaccess','always');
+				            so.addParam('allowfullscreen','true');
+				            so.addParam('wmode','transparent'); 
+				            so.write('livestream2');
+				            $('#livestream2').show();
+				            var interval = setTimeout('checkStreamingEnd()', 6000);
+									</script>
+									<a class="titulos" href="http://cmais.com.br/aovivo"><?php echo $schedules[0]->title?></a>
+									<p><?php echo substr($schedules[0]->description_short, 0, 170)?>...</p>
+								</div>
+								<div id="videos_div" style="display: none">
+									<p class="chapeu jornalismo">Assista Agora </p>
+									<?php if(isset($displays["destaque-videos"])) include_partial_from_folder('blocks','global/display-1c-videos-carrossel', array('displays' => $displays["destaque-videos"])) ?>
+								</div>
+              <?php //SE NÃO TIVER, CARREGA O BLOCO DE VÍDEO ABAIXO  
+              	else:?>
+	              <!-- BOX NOTICIA VIDEO -->
+	              	<?php if(isset($displays["destaque-videos"])) include_partial_from_folder('blocks','global/display-1c-videos-carrossel', array('displays' => $displays["destaque-videos"])) ?>
+	              <!-- /BOX NOTICIA VIDEO -->               									
+	            
+	            <?php endif;?>
 
               <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'url' => $url)) ?>
               <?php //include_partial_from_folder('blocks','global/twitter-1c', array('site' => $site)) ?>
@@ -161,9 +227,9 @@ GA_googleFillSlot("Ipad-300x250");
           	  <!-- BOX PUBLICIDADE -->
               <div class="box-publicidade grid1">
                 <!-- home-geral2-300x250 -->
-				<script type='text/javascript'>
-				GA_googleFillSlot("home-geral2-300x250");
-				</script>
+								<script type='text/javascript'>
+								GA_googleFillSlot("home-geral2-300x250");
+								</script>
               </div>
               <!-- / BOX PUBLICIDADE -->
 
