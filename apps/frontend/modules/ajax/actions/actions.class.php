@@ -2788,7 +2788,10 @@ EOT;
 
 
   public function executeGingaxml(sfWebRequest $request){
-  	header('Content-Type: text/xml'); 
+  	//header('Content-Type: text/xml'); 
+		header("Content-Type: text/xml; charset=utf-8");
+		
+		
     $this->setLayout(false);
 
 	//NÃO LISTAR SITES
@@ -2803,34 +2806,36 @@ EOT;
 		->addWhere("a.asset_type_id = 1")
 		->andWhereNotIn("s.id", $site_not)
 		->orderBy("a.id desc")
-		->limit(100)
+		->limit(10)
 		->execute();
 	
 		$pub_date = date("d M Y H:i:s")." GMT"; 
 		$content = '<?xml version="1.0" encoding="ISO-8859-1"?>
-									<rss version="2.0">
-									<channel>
-										<title>Notícias Portal Cmais</title>
-										<link>ajax/gingaxml</link> 
-										<description> -- rss description -- </description> 
-										<language>pt_BR</language> 
-										<lastBuildDate>'.$pub_date.'</lastBuildDate> 
-										<pubDate>'.$pub_date.'</pubDate> 
-										<copyright>© All rights reserved.</copyright>';
+<rss version="2.0">
+<channel>
+	<title>Notícias Portal Cmais</title>
+	<link>ajax/gingaxml</link> 
+	<description> -- rss description -- </description> 
+	<language>pt_BR</language> 
+	<lastBuildDate>'.$pub_date.'</lastBuildDate> 
+	<pubDate>'.$pub_date.'</pubDate> 
+	<copyright> Todos os direitos reservados.</copyright>';
 	
 	foreach ($asset as $key => $a) {
 		//$image = $a->retriveImageUrlByImageUsage("image-4-b");
 		$content.= "
-			<item>
-				<title><![CDATA[".$a->title."]]></title>
-				<link><![CDATA[".$a->retriveURL()."]]></link>
-				<pubDate><![CDATA[".$a->created_at."]]></pubDate>
-			</item>
+	<item>
+		<title><![CDATA[".$a->title."]]></title>
+		<link><![CDATA[".$a->retriveURL()."]]></link>
+		<pubDate><![CDATA[".$a->created_at."]]></pubDate>
+	</item>
 		";
 		//<content><![CDATA[".$a->AssetContent->content."]]></content>
 	}
 	
-	$content.= "</channel></rss>";
+	$content.= "
+</channel>
+</rss>";
 	die($content);
 	}
 

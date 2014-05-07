@@ -172,6 +172,10 @@
 							?>
               </div>
               <!-- / BOX PUBLICIDADE -->
+
+              
+               
+
               
    					<?php //SE TIVER UM PROGRAMA == LIVE 
 				      $schedules = Doctrine_Query::create()
@@ -228,6 +232,7 @@
 	            
 	            <?php endif;?>
 
+
               <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'url' => $url)) ?>
               <?php //include_partial_from_folder('blocks','global/twitter-1c', array('site' => $site)) ?>
         	  
@@ -265,4 +270,12 @@
       
     </div>
     <!-- / CAPA SITE -->
-
+    <script>
+    $(document).ready(function(){
+      setInterval(function(){
+        $('#___plusone_0').css('width', '75px');
+        $('#twitter-widget-0').css({'width':'203px','float':'right'});
+        $('.pam').css('padding-left', '18px!important'); 
+      },500);
+    });
+    </script>
