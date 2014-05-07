@@ -145,13 +145,14 @@
     <script type='text/javascript'>
     googletag.cmd.push(function() {
     googletag.defineSlot('/4079539/cmais-jornalismo', [200, 200], 'div-gpt-ad-1385981907491-0').addService(googletag.pubads());
-    googletag.defineSlot('/4079539/home-infantil', [320, 250], 'div-gpt-ad-1399413784142-0').addService(googletag.pubads());
+    googletag.defineSlot('/4079539/home-infantil', [320, 250], 'div-gpt-ad-1399460666735-0').addService(googletag.pubads());
     googletag.defineSlot('/4079539/cmais-jornalismo-200x200-b', [200, 200], 'div-gpt-ad-1385985503345-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
     });
     </script>
     <!--/script google double-click-->
+
     
   </head>
   <body>
