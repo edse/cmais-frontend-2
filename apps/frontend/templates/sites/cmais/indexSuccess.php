@@ -174,7 +174,7 @@
               <!-- / BOX PUBLICIDADE -->
 
               <!-- home-infantil -->
-              <div id='div-gpt-ad-1399460794901-0' style='display:none;' class="box-publicidade grid1">
+              <div style='display:none;' class="box-publicidade grid1">
                 <!-- home-infantil -->
                 <script type='text/javascript'>
                 googletag.cmd.push(function() { googletag.display('div-gpt-ad-1399460794901-0'); });
