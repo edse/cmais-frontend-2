@@ -2815,7 +2815,7 @@ EOT;
 <channel>
 	<title>Notícias Portal Cmais</title>
 	<link>ajax/gingaxml</link> 
-	<description> -- rss description -- </description> 
+	<description> Descrição </description> 
 	<language>pt_BR</language> 
 	<lastBuildDate>'.$pub_date.'</lastBuildDate> 
 	<pubDate>'.$pub_date.'</pubDate> 
