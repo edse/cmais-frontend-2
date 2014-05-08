@@ -39,8 +39,8 @@
 	         
 	         <!-- CAPA 3-->
          	 <div class="capa grid3">
-					
-						<!-- DESTAQUES -->
+         	 	
+         	 	<!-- DESTAQUES -->
 						<?php if (isset($displays['destaque-principal'])): ?>      
 							<?php if (count($displays['destaque-principal']) > 0): ?>      
 			      <div id="destaque" class="destaque destaque-3c grid3">
@@ -51,7 +51,7 @@
 			          	<a class="media" href="<?php echo $d->retriveUrl() ?>" title="<?php echo $d->getTitle() ?>">
 			          		<div class="subs"><h2><?php echo $d->getTitle() ?></h2></div>
 			          		<?php //<img src="<?php echo $d->retriveImageUrlByImageUsage('image-10-b') " alt="<?php //echo $d->getTitle() ?> 
-			          		<img src="http://midia.cmais.com.br/displays/<?php echo $d->image ?>" alt="<?php echo $d->getTitle() ?>">
+			          		<img src="http://img.youtube.com/vi/<?php echo $displays['destaque-principal'][$k]->Asset->AssetVideo->getYoutubeId() ?>/0.jpg" alt="<?php echo $d->getTitle() ?>">
 			          	</a>
 			          	
 			         	</li>
