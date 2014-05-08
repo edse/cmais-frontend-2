@@ -73,9 +73,22 @@ $(window).load(function() {
 });
 </script>
 
-<div class="base">  	
-		<!--CONTAINER ASSSET -->
-		<div class="container">
+<!--CASTELO-->
+<div >
+  
+    <!-- CAPA SITE -->
+    <div id="capa-site">      
+
+      <!-- BARRA SITE -->
+      <div id="barra-site">
+        <div class="topo-programa">
+          
+          <h2>
+            <a href="http://cmais.com.br/castelo" style="text-decoration: none;">
+          
+                <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/img-logo-castelo.png" class="logo" alt="Castelo Ra Tim Bum" />
+              
+            </a>
 			
 			<!-- GALERIA DE FOTOS -->
 			<div class="container galeriaNew" style="float: left; margin-bottom: 10px; width: 640px;">
@@ -149,6 +162,8 @@ $(window).load(function() {
 
 
   
+</div>
+</div>
 </div>
 </body>
 </html>
