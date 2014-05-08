@@ -15,20 +15,21 @@ if($_FILES["new_photo"]){
   echo "Size: " . ($_FILES["new_photo"]["size"] / 1024) . " kB<br>";
   echo "Temp file: " . $_FILES["new_photo"]["tmp_name"] . "<br>";
   $extension = end(explode(".", $_FILES["new_photo"]["name"]));
-  if((($_FILES["new_photo"]["type"] == "image/gif") || ($_FILES["new_photo"]["type"] == "image/jpeg") || ($_FILES["new_photo"]["type"] == "image/jpeg") || ($_FILES["new_photo"]["type"] == "image/png")|| ($_FILES["new_photo"]["type"] == "application/pdf") || ($_FILES["new_photo"]["type"] == "image/pjpeg")) && ($_FILES["new_photo"]["size"] < 20554432) && in_array($extension, $allowedExts)){
+  //if((($_FILES["new_photo"]["type"] == "image/gif") || ($_FILES["new_photo"]["type"] == "image/jpeg") || ($_FILES["new_photo"]["type"] == "image/jpg") || ($_FILES["new_photo"]["type"] == "image/png")|| ($_FILES["new_photo"]["type"] == "application/pdf") || ($_FILES["new_photo"]["type"] == "image/pjpeg")) && ($_FILES["new_photo"]["size"] < 20554432) && in_array($extension, $allowedExts)){
+  if((($_FILES["new_photo"]["type"] == "image/gif") || ($_FILES["new_photo"]["type"] == "image/jpeg") || ($_FILES["new_photo"]["type"] == "image/jpg") || ($_FILES["new_photo"]["type"] == "image/png")|| ($_FILES["new_photo"]["type"] == "application/pdf"))){
     if($_FILES["new_photo"]["error"] > 0){
       die("Return Code: " . $_FILES["new_photo"]["error"] . "<br>");
     }
     else{
       if(is_file($_FILES["new_photo"]["tmp_name"])){
-        if(multi_attach_mail("georgia.catarina@gmail.com, jedoljak@gmail.com, valclimaster@gmail.com, jeffersondoljak@tvcultura.com.br, richardhager@tvcultura.com.br, preludio@tvcultura.com.br", array($_FILES["new_photo"]["tmp_name"], $_FILES["new_photo2"]["tmp_name"]), $_POST, array($_FILES["new_photo"]["name"], $_FILES["new_photo2"]["name"]), "nao-responda@tvcultura.com.br")){
+        if(multi_attach_mail("preludio@tvcultura.com.br", array($_FILES["new_photo"]["tmp_name"], $_FILES["new_photo2"]["tmp_name"]), $_POST, array($_FILES["new_photo"]["name"], $_FILES["new_photo2"]["name"]), "nao-responda@tvcultura.com.br")){
           unlink($_FILES["new_photo"]["tmp_name"]);
           header("Location: http://tvcultura.cmais.com.br/preludio/inscricoes-preludio?msg=success");
           //echo ">>>>OK!";
           die();
         }else{
           unlink($_FILES["new_photo"]["tmp_name"]);
-          header("Location: http://tvcultura.cmais.com.br/preludio/inscricoes-preludio?msg=error");
+          header("Location: http://tvcultura.cmais.com.br/preludio/inscricoes-preludio?msg=error&var=1");
           //echo ">>>>ERRO!";
           die();
         }
@@ -36,7 +37,7 @@ if($_FILES["new_photo"]){
     }
   }
   else{
-    header("Location: http://tvcultura.cmais.com.br/preludio/inscricoes-preludio?msg=error");
+    header("Location: http://tvcultura.cmais.com.br/preludio/inscricoes-preludio?msg=error&var=2");
     //echo "Invalid file";
     die();
   }
