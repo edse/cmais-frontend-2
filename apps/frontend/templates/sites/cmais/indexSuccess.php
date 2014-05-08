@@ -137,7 +137,8 @@
             <div id="direita" class="grid1">
               
               <!-- BOX PUBLICIDADE -->
-              <div class="box-publicidade grid1">
+              <!--div class="box-publicidade grid1"-->
+              <div id='div-gpt-ad-1399575363196-0' class="box-publicidade grid1">
                  <!-- home-geral300x250 -->
                  <?php 
 									function detectMobile() {
@@ -164,9 +165,19 @@
 								<?php
 								}else {
 									?>
+									<!-- home-geral300x250 -->
+                  
+                  <script type='text/javascript'>
+                  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1399575363196-0'); });
+                  </script>
+                  <?php
+                  /*
 									<script type='text/javascript'>
 										GA_googleFillSlot("home-geral300x250");
 									</script>
+                   */
+                   ?>
+                    
 									<?php	
 								}
 							?>
