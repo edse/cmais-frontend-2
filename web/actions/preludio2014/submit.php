@@ -16,7 +16,7 @@ if($_FILES["new_photo"]){
   echo "Temp file: " . $_FILES["new_photo"]["tmp_name"] . "<br>";
   $extension = end(explode(".", $_FILES["new_photo"]["name"]));
   //if((($_FILES["new_photo"]["type"] == "image/gif") || ($_FILES["new_photo"]["type"] == "image/jpeg") || ($_FILES["new_photo"]["type"] == "image/jpg") || ($_FILES["new_photo"]["type"] == "image/png")|| ($_FILES["new_photo"]["type"] == "application/pdf") || ($_FILES["new_photo"]["type"] == "image/pjpeg")) && ($_FILES["new_photo"]["size"] < 20554432) && in_array($extension, $allowedExts)){
-  if((($_FILES["new_photo"]["type"] == "image/gif") || ($_FILES["new_photo"]["type"] == "image/jpeg") || ($_FILES["new_photo"]["type"] == "image/jpg") || ($_FILES["new_photo"]["type"] == "image/png")|| ($_FILES["new_photo"]["type"] == "application/pdf") || ($_FILES["new_photo"]["type"] == "image/pjpeg")) && ($_FILES["new_photo"]["size"] < 20554432) && in_array($extension, $allowedExts)){
+  if((($_FILES["new_photo"]["type"] == "image/gif") || ($_FILES["new_photo"]["type"] == "image/jpeg") || ($_FILES["new_photo"]["type"] == "image/jpg") || ($_FILES["new_photo"]["type"] == "image/png")|| ($_FILES["new_photo"]["type"] == "application/pdf"))){
     if($_FILES["new_photo"]["error"] > 0){
       die("Return Code: " . $_FILES["new_photo"]["error"] . "<br>");
     }
