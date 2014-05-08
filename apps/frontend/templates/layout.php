@@ -148,6 +148,7 @@
     googletag.defineSlot('/4079539/cmais-jornalismo-200x200-b', [200, 200], 'div-gpt-ad-1385985503345-0').addService(googletag.pubads());
     googletag.defineSlot('/4079539/home-infantil', [300, 250], 'div-gpt-ad-1399463717883-0').addService(googletag.pubads());
     googletag.defineSlot('/4079539/home-geral2-300x250', [300, 250], 'div-gpt-ad-1399560781907-0').addService(googletag.pubads());
+    googletag.defineSlot('/4079539/home-geral300x250', [300, 250], 'div-gpt-ad-1399575363196-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
     });

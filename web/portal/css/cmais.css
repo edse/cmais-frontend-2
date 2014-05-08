@@ -65,7 +65,7 @@ body{background:url(../images/bg-tudo3a.jpg) repeat-x !important;}
 .galeria .tooltip span {background-position: 0 -4px;}
 .uma-coluna .conteudo li,
 .carrossel-videos { background:#fff; }
-.carrossel-videos { margin-bottom: 20px; position: relative; }
+.carrossel-videos { /*margin-bottom: 20px;*/ margin-bottom: 0px; position: relative; }
 .lista-blogs a {font-weight:bold; color:#333; margin-bottom:10px; display:block; margin-bottom:10px; width:200px; height:120px; overflow:hidden;}
 .lista-blogs a:hover {text-decoration:none;}
 .lista-blogs li:last-child { margin-right:0;}
