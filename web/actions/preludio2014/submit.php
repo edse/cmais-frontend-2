@@ -28,7 +28,7 @@ if($_FILES["new_photo"]){
           die();
         }else{
           unlink($_FILES["new_photo"]["tmp_name"]);
-          header("Location: http://tvcultura.cmais.com.br/preludio/inscricoes-preludio?msg=error");
+          header("Location: http://tvcultura.cmais.com.br/preludio/inscricoes-preludio?msg=error&var=1");
           //echo ">>>>ERRO!";
           die();
         }
@@ -36,7 +36,7 @@ if($_FILES["new_photo"]){
     }
   }
   else{
-    header("Location: http://tvcultura.cmais.com.br/preludio/inscricoes-preludio?msg=error");
+    header("Location: http://tvcultura.cmais.com.br/preludio/inscricoes-preludio?msg=error&var=2");
     //echo "Invalid file";
     die();
   }
