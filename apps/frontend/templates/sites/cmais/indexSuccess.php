@@ -237,12 +237,25 @@
               <?php //include_partial_from_folder('blocks','global/twitter-1c', array('site' => $site)) ?>
         	  
           	  <!-- BOX PUBLICIDADE -->
-              <div class="box-publicidade grid1">
+              
+                <?php
+                /*
+                <div class="box-publicidade grid1">
+                  <!-- home-geral2-300x250 -->
+                  <script type='text/javascript'>
+                  GA_googleFillSlot("home-geral2-300x250");
+                  </script>
+                </div>
+                * 
+                */
+                ?>
                 <!-- home-geral2-300x250 -->
-								<script type='text/javascript'>
-								GA_googleFillSlot("home-geral2-300x250");
-								</script>
-              </div>
+                <div id='div-gpt-ad-1399560781907-0' class="box-publicidade grid1">
+                  <script type='text/javascript'>
+                  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1399560781907-0'); });
+                  </script>
+                </div>
+             
               <!-- / BOX PUBLICIDADE -->
 
             </div>
