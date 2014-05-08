@@ -63,9 +63,7 @@
               <!-- col-esq -->
               <div class="col-esq grid1">
                 
-                <!-- BOX PUBLICIDADE 3 -->
-                <?php if(isset($displays["publicidade-300x50"])) include_partial_from_folder('blocks','global/banner-300x50', array('displays' => $displays["publicidade-300x50"])) ?>
-                <!-- / BOX PUBLICIDADE 3 -->
+                
 
                 <!-- BOX PADRAO Noticia -->
                 <?php if(isset($displays["destaque-padrao-1"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-1"])) ?>
@@ -87,6 +85,10 @@
                   <?php if(isset($displays["destaque-noticias-recentes"])) include_partial_from_folder('blocks','global/recent-news', array('displays' => $displays["destaque-noticias-recentes"])) ?>
                 </div>
                 <!-- BOX PADRAO Mais recentes -->
+                
+                <!-- BOX PUBLICIDADE 3 -->
+                <?php if(isset($displays["publicidade-300x50"])) include_partial_from_folder('blocks','global/banner-300x50', array('displays' => $displays["publicidade-300x50"])) ?>
+                <!-- / BOX PUBLICIDADE 3 -->
                 
               </div>
               <!-- /col-esq -->
@@ -184,7 +186,13 @@
               </div>
               <!-- / BOX PUBLICIDADE -->
 
-              
+              <!-- home-infantil -->
+              <div id='div-gpt-ad-1399463717883-0' class="box-publicidade grid1">
+                <!-- home-infantil -->
+                <script type='text/javascript'>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1399463717883-0'); });
+                </script>
+              </div>
                
 
               
@@ -242,6 +250,7 @@
               <?php //SE NÃO TIVER, CARREGA O BLOCO DE VÍDEO ABAIXO  
               	else:?>
 	              <!-- BOX NOTICIA VIDEO -->
+	              <p class="chapeu jornalismo">Vídeo </p> 
 	              	<?php if(isset($displays["destaque-videos"])) include_partial_from_folder('blocks','global/display-1c-videos-carrossel', array('displays' => $displays["destaque-videos"])) ?>
 	              <!-- /BOX NOTICIA VIDEO -->               									
 	            
