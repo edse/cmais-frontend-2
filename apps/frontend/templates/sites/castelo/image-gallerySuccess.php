@@ -62,7 +62,6 @@
 <script src="http://cmais.com.br/portal/js/orbit/jquery.orbit-1.2.3.min.js" type="text/javascript"></script>
 <link type="text/css" href="http://cmais.com.br/portal/js/orbit/orbit-1.2.3.css" rel="stylesheet">
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
-<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/castelo/interna.css" type="text/css" />
 
 <script type="text/javascript">
 $(window).load(function() {
@@ -73,22 +72,9 @@ $(window).load(function() {
 });
 </script>
 
-<!--CASTELO-->
-<div >
-  
-    <!-- CAPA SITE -->
-    <div id="capa-site">      
-
-      <!-- BARRA SITE -->
-      <div id="barra-site">
-        <div class="topo-programa">
-          
-          <h2>
-            <a href="http://cmais.com.br/castelo" style="text-decoration: none;">
-          
-                <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/img-logo-castelo.png" class="logo" alt="Castelo Ra Tim Bum" />
-              
-            </a>
+<div class="base">  	
+		<!--CONTAINER ASSSET -->
+		<div class="container">
 			
 			<!-- GALERIA DE FOTOS -->
 			<div class="container galeriaNew" style="float: left; margin-bottom: 10px; width: 640px;">
@@ -162,8 +148,6 @@ $(window).load(function() {
 
 
   
-</div>
-</div>
 </div>
 </body>
 </html>
