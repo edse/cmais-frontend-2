@@ -217,7 +217,11 @@
 										?>
 									</a>
 									<p>
-										<?php if($schedules[0]->description_short != "") echo substr($schedules[0]->description_short, 0, 170)."...";?>
+										<?php if($schedules[0]->description_short != ""){
+												echo substr($schedules[0]->description_short, 0, 180);
+												if(strlen($schedules[0]->description_short) > 180) echo "...";
+											}
+										?>
 									</p>
 								</div>
 								<div id="videos_div" style="display: none">

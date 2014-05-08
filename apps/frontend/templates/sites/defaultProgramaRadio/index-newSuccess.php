@@ -80,12 +80,12 @@
                   <?php foreach($pager->getResults() as $d): ?>
                     <li>
                       <?php if($d->retriveImageUrlByImageUsage("image-1") != ""): ?>
-                      <a class="img" href="/<?php echo $d->Site->getSlug() ?>/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
+                      <a class="img" href="/<?php echo $d->Site->getSlug() ?><?php if(isset($section) && $section->slug != "home") echo "/".$section->getSlug() ?>/<?php echo $d->getSlug() ?>" title="<?php echo $d->getTitle() ?>">
                         <img src="<?php echo $d->retriveImageUrlByImageUsage("image-1") ?>" alt="<?php echo $d->getTitle() ?>" name="<?php echo $d->getTitle() ?>" style="width: 90px" />
                       </a>
                       <?php endif; ?>
                       <div class="box-texto grid2">
-                        <a href="/<?php echo $d->Site->getSlug() ?>/<?php echo $d->getSlug() ?>" class="titulos"><span class="<?php echo $d->AssetType->getSlug() ?>"></span><?php echo $d->getTitle() ?></a>
+                        <a href="/<?php echo $d->Site->getSlug() ?><?php if(isset($section) && $section->slug != "home") echo "/".$section->getSlug() ?>/<?php echo $d->getSlug() ?>" class="titulos"><span class="<?php echo $d->AssetType->getSlug() ?>"></span><?php echo $d->getTitle() ?></a>
                         <p><?php echo $d->getDescription() ?></p>
                         <p class="fonte"><a href="#"><?php echo $d->retriveLabel() ?></a> | <?php echo format_datetime($d->getCreatedAt(),"P") ?> | <?php echo format_datetime($d->getCreatedAt(),"t") ?></p>
                       </div>

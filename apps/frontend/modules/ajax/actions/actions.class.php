@@ -2789,7 +2789,7 @@ EOT;
 
   public function executeGingaxml(sfWebRequest $request){
   	//header('Content-Type: text/xml'); 
-		header("Content-Type: text/xml; charset=utf-8");
+		header("Content-Type: text/xml; charset=ISO-8859-1");
 		
 		
     $this->setLayout(false);
@@ -2815,7 +2815,7 @@ EOT;
 <channel>
 	<title>Notícias Portal Cmais</title>
 	<link>ajax/gingaxml</link> 
-	<description> -- rss description -- </description> 
+	<description> Descrição </description> 
 	<language>pt_BR</language> 
 	<lastBuildDate>'.$pub_date.'</lastBuildDate> 
 	<pubDate>'.$pub_date.'</pubDate> 
