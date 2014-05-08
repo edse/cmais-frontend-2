@@ -63,9 +63,7 @@
               <!-- col-esq -->
               <div class="col-esq grid1">
                 
-                <!-- BOX PUBLICIDADE 3 -->
-                <?php if(isset($displays["publicidade-300x50"])) include_partial_from_folder('blocks','global/banner-300x50', array('displays' => $displays["publicidade-300x50"])) ?>
-                <!-- / BOX PUBLICIDADE 3 -->
+                
 
                 <!-- BOX PADRAO Noticia -->
                 <?php if(isset($displays["destaque-padrao-1"])) include_partial_from_folder('blocks','global/display1c-news', array('displays' => $displays["destaque-padrao-1"])) ?>
@@ -87,6 +85,10 @@
                   <?php if(isset($displays["destaque-noticias-recentes"])) include_partial_from_folder('blocks','global/recent-news', array('displays' => $displays["destaque-noticias-recentes"])) ?>
                 </div>
                 <!-- BOX PADRAO Mais recentes -->
+                
+                <!-- BOX PUBLICIDADE 3 -->
+                <?php if(isset($displays["publicidade-300x50"])) include_partial_from_folder('blocks','global/banner-300x50', array('displays' => $displays["publicidade-300x50"])) ?>
+                <!-- / BOX PUBLICIDADE 3 -->
                 
               </div>
               <!-- /col-esq -->
@@ -136,6 +138,66 @@
             <!-- DIREITA -->
             <div id="direita" class="grid1">
               
+              <?php //SE TIVER UM PROGRAMA == LIVE 
+              $schedules = Doctrine_Query::create()
+                ->select('s.*')
+                ->from('Schedule s')
+                ->where('s.is_live = ?', 1)
+                ->andWhere('s.date_start < ?', date('Y-m-d H:i:s'))
+                ->andWhere('s.date_end > ?', date('Y-m-d H:i:s'))
+                ->andWhere('s.channel_id = ?', 1)
+                ->orderBy('s.date_start asc')
+                ->limit('1')
+                ->execute();
+              
+              if((isset($schedules)) && (count($schedules) > 0)): 
+                //MOSTRA O FLASH ENCODER ?>
+              <div class="box-padrao noticia grid1" id="live_div">
+                <p class="chapeu jornalismo">Ao Vivo </p>   
+                <div id="livestream2" style="display: none;"><p>Seu browser não suporta Flash.</p></div>
+                  <script> 
+                    var so = new SWFObject('http://cmais.com.br/portal/js/mediaplayer/player.swf','mpl','310','205','9');
+                    so.addVariable('controlbar', 'over');
+                    so.addVariable('autostart', 'false');
+                    so.addVariable('streamer', 'rtmp://200.136.27.12/livepkgr');
+                    so.addVariable('file', 'tvcultura4?adbe-live-event=liveevent');
+                    so.addVariable('type', 'video');
+                    so.addParam('allowscriptaccess','always');
+                    so.addParam('allowfullscreen','true');
+                    so.addParam('wmode','transparent'); 
+                    so.write('livestream2');
+                    $('#livestream2').show();
+                    var interval = setTimeout('checkStreamingEnd()', 120000); // 2 minutos
+                  </script>
+                  <a class="titulos" href="http://cmais.com.br/aovivo">
+                    <?php 
+                      if($schedules[0]->title != "")
+                        echo $schedules[0]->title;
+                      else
+                        echo $schedules[0]->Program;
+                    ?>
+                  </a>
+                  <p>
+                    <?php if($schedules[0]->description_short != ""){
+                        echo substr($schedules[0]->description_short, 0, 180);
+                        if(strlen($schedules[0]->description_short) > 180) echo "...";
+                      }
+                    ?>
+                  </p>
+                </div>
+                <div id="videos_div" style="display: none">
+                  <p class="chapeu jornalismo">Assista Agora </p>
+                  <?php if(isset($displays["destaque-videos"])) include_partial_from_folder('blocks','global/display-1c-videos-carrossel', array('displays' => $displays["destaque-videos"])) ?>
+                </div>
+              <?php //SE NÃO TIVER, CARREGA O BLOCO DE VÍDEO ABAIXO  
+                else:?>
+                <!-- BOX NOTICIA VIDEO -->
+                <p class="chapeu jornalismo">Vídeo </p> 
+                  <?php if(isset($displays["destaque-videos"])) include_partial_from_folder('blocks','global/display-1c-videos-carrossel', array('displays' => $displays["destaque-videos"])) ?>
+                <!-- /BOX NOTICIA VIDEO -->                                 
+              
+              <?php endif;?>
+              
               <!-- BOX PUBLICIDADE -->
               <!--div class="box-publicidade grid1"-->
               <div id='div-gpt-ad-1399575363196-0' class="box-publicidade grid1">
@@ -184,70 +246,14 @@
               </div>
               <!-- / BOX PUBLICIDADE -->
 
-              
+              <!-- home-infantil -->
+              <div id='div-gpt-ad-1399463717883-0' class="box-publicidade grid1">
+                <!-- home-infantil -->
+                <script type='text/javascript'>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1399463717883-0'); });
+                </script>
+              </div>
                
-
-              
-   					<?php //SE TIVER UM PROGRAMA == LIVE 
-				      $schedules = Doctrine_Query::create()
-				        ->select('s.*')
-				        ->from('Schedule s')
-				        ->where('s.is_live = ?', 1)
-				        ->andWhere('s.date_start < ?', date('Y-m-d H:i:s'))
-				        ->andWhere('s.date_end > ?', date('Y-m-d H:i:s'))
-				        ->andWhere('s.channel_id = ?', 1)
-				        ->orderBy('s.date_start asc')
-				        ->limit('1')
-				        ->execute();
-							
-							if((isset($schedules)) && (count($schedules) > 0)): 
-	              //MOSTRA O FLASH ENCODER ?>
-	           	<div class="box-padrao noticia grid1" id="live_div">
-	              <p class="chapeu jornalismo">Ao Vivo </p>		
-								<div id="livestream2" style="display: none;"><p>Seu browser não suporta Flash.</p></div>
-			        		<script> 
-				        		var so = new SWFObject('http://cmais.com.br/portal/js/mediaplayer/player.swf','mpl','310','205','9');
-				            so.addVariable('controlbar', 'over');
-				            so.addVariable('autostart', 'false');
-				            so.addVariable('streamer', 'rtmp://200.136.27.12/livepkgr');
-				            so.addVariable('file', 'tvcultura4?adbe-live-event=liveevent');
-				            so.addVariable('type', 'video');
-				            so.addParam('allowscriptaccess','always');
-				            so.addParam('allowfullscreen','true');
-				            so.addParam('wmode','transparent'); 
-				            so.write('livestream2');
-				            $('#livestream2').show();
-				            var interval = setTimeout('checkStreamingEnd()', 120000); // 2 minutos
-									</script>
-									<a class="titulos" href="http://cmais.com.br/aovivo">
-										<?php 
-											if($schedules[0]->title != "")
-												echo $schedules[0]->title;
-											else
-												echo $schedules[0]->Program;
-										?>
-									</a>
-									<p>
-										<?php if($schedules[0]->description_short != ""){
-												echo substr($schedules[0]->description_short, 0, 180);
-												if(strlen($schedules[0]->description_short) > 180) echo "...";
-											}
-										?>
-									</p>
-								</div>
-								<div id="videos_div" style="display: none">
-									<p class="chapeu jornalismo">Assista Agora </p>
-									<?php if(isset($displays["destaque-videos"])) include_partial_from_folder('blocks','global/display-1c-videos-carrossel', array('displays' => $displays["destaque-videos"])) ?>
-								</div>
-              <?php //SE NÃO TIVER, CARREGA O BLOCO DE VÍDEO ABAIXO  
-              	else:?>
-	              <!-- BOX NOTICIA VIDEO -->
-	              	<?php if(isset($displays["destaque-videos"])) include_partial_from_folder('blocks','global/display-1c-videos-carrossel', array('displays' => $displays["destaque-videos"])) ?>
-	              <!-- /BOX NOTICIA VIDEO -->               									
-	            
-	            <?php endif;?>
-
-
               <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'url' => $url)) ?>
               <?php //include_partial_from_folder('blocks','global/twitter-1c', array('site' => $site)) ?>
         	  
