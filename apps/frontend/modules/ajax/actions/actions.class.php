@@ -2824,9 +2824,9 @@ EOT;
 	
 	foreach ($asset as $key => $a) {
 		//$image = $a->retriveImageUrlByImageUsage("image-4-b");
-		$dia = substr($a->created_at, 0, 4);
-		$mes = substr($a->created_at, 5, 7);
-		$ano = substr($a->created_at, 9, 11);
+		$ano = substr($a->created_at, 0, 4);
+		$mes = substr($a->created_at, 5, 6);
+		$ano = substr($a->created_at, 7, 9);
 		
 		$content.= "
 	<item>
