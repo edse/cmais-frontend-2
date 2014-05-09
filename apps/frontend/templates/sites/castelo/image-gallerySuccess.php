@@ -54,12 +54,49 @@
       <!-- MIOLO -->
       <div id="miolo">
         
+<script src="http://cmais.com.br/portal/js/orbit/jquery.orbit-1.2.3.min.js" type="text/javascript"></script>
+<link type="text/css" href="http://cmais.com.br/portal/js/orbit/orbit-1.2.3.css" rel="stylesheet">
 
+<script type="text/javascript">
+$(window).load(function() {
+	$('#featured').orbit({
+		'bullets' : true,   
+		'bulletThumbs': true
+	});
+});
 
        <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
-
-					<?php echo "Conteúdo"; ?>        	
+				<!-- /GALERIA DE FOTOS -->
+			<div class="container galeriaNew" style="float: left; margin-bottom: 10px; width: 640px;">
+			  <div id="featured">
+				 <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+	      <?php if(count($related)>0): ?>
+	      	<?php foreach($related as $d): ?>
+			    <img src="<?php echo $d->retriveImageUrlByImageUsage('image-6') ?>" alt="<?php echo $d->getTitle() ?>" data-thumb="<?php echo $d->retriveImageUrlByImageUsage('image-1') ?>" data-caption="#html<?php echo $d->getSlug() ?>" />
+          <?php endforeach; ?>
+        <?php endif; ?>
+			  </div>
+			
+			  <!-- THUMBNAILS -->
+	      <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
+	      <?php if(count($related)>0): ?>
+	      	<?php foreach($related as $d): ?>
+	      		<?php $related_content = $d->retriveRelatedAssetsByAssetTypeId(1); ?>
+			  <span class="orbit-caption" id="html<?php echo $d->getSlug() ?>">
+			    <span class="espaco">
+	          <?php echo $d->getDescription() ?><?php if($d->AssetImage->getHeadline()!="") echo "<br>".$d->AssetImage->getHeadline() ?><?php if($d->AssetImage->getAuthor()!="") echo "<br>Foto: ".$d->AssetImage->getAuthor() ?>
+	          <?php if(count($related_content)>0): ?>
+	          <br /><a href="<?php echo $related_content[0]->retriveUrl()?>" target="_blank">Saiba mais</a>
+	          <?php endif; ?>
+			    </span>
+			  </span>
+          <?php endforeach; ?>
+        <?php endif; ?>
+			  <!-- THUMBNAILS -->
+			</div>
+			<!-- /GALERIA DE FOTOS -->
+				     	
         </div>
         <!-- /CONTEUDO PAGINA -->
         
