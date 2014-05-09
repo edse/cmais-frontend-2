@@ -94,7 +94,7 @@
                 <div class="gif-valdirene"></div>
               </div>
               <!--a href="http://tvratimbum.cmais.com.br/casteloratimbum/carinhas-castelo-ra-tim-bum-1" target="_blank" title="Carinhas - Castelo Ra Tim Bum" class="botao-valdirene-over" name="over-valdirene" style="display:none"></a-->
-              <a href="#" target="_blank" title="Carinhas - Castelo Ra Tim Bum" class="botao-valdirene-over" name="over-valdirene" style="display:none"></a>  
+              <a href="#pro" target="_blank" title="Carinhas - Castelo Ra Tim Bum" class="botao-valdirene-over" name="over-valdirene" style="display:none"></a>  
             <!--/valdirene-->
                        
             </div> 
