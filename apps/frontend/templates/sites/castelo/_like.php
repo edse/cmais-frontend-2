@@ -1,3 +1,5 @@
+			    <?php
+			    /*
 			    <div id="fb-root"></div>
 			    <script>
 			      window.fbAsyncInit = function() {
@@ -24,3 +26,5 @@
             </div>
           </div>
           <!-- /curtir -->
+          */
+          ?>  

@@ -26,12 +26,13 @@ body { background:#f58220 url(http://cmais.com.br/portal/images/capaPrograma/cas
 
 /*HOME*/
 #topo-portal{width:100% !important;margin: 0 !important; padding:0 !important;}
-#barra-site .redes {margin: 20px 0 0 7px;}
+#barra-site .redes {margin: 20px 0 0 -96px;}
+#barra-site .redes .curtir {width: 195px!important;}
 #castelo {background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-home-bg-castelo.jpg) no-repeat center 0 #f58220 !important; height: 962px;min-width:1000px !important; width:100%}
 
 .twitter{top: 0;left: 0;position: absolute;}
 .instangram{top: 0;left: 42px;position: absolute;}
-.menu-interna {margin: 5px 0;position: absolute;top: -259px;left: 403px;}
+.menu-interna {margin: 5px 0;position: absolute;top: -259px;left: 231px;}
 .menu-interna li{padding:0px;background: none;}
 .menu-interna li:hover{background: none;}
 .menu-interna li a{ background: #f4821f; border:1px solid #e17223;color:#f7e55d;padding:0px 7px; border-radius:5px;}

@@ -36,7 +36,14 @@
           
           <div class="castelo18">
 
-           <a href="https://twitter.com/#!/search/realtime/castelo18anos" target="_blank"><img class="twitter" src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-menu-twitter.png" alt="Twitter"></a>
-           <a href="http://statigr.am/viewer.php#/tag/castelo18anos/" target="_blank"><img class="instangram" src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-menu-instagram.png" alt="Instangram"></a>
-
+           <!--a href="https://twitter.com/#!/search/realtime/castelo18anos" target="_blank"><img class="twitter" src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-menu-twitter.png" alt="Twitter"></a-->
+           <!--a href="http://statigr.am/viewer.php#/tag/castelo18anos/" target="_blank"><img class="instangram" src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-menu-instagram.png" alt="Instangram"></a-->
+            <!-- curtir -->
+          <div class="redes">
+            <div class="curtir">
+              <fb:like href="<?php if($section->Site->getFacebookUrl()): ?><?php echo $section->Site->getFacebookUrl() ?><?php else: ?><?php echo $uri ?><?php endif; ?>" layout="button_count" show_faces="false" send="true" width="160"></fb:like>
+            </div>
+            <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php if($section->Site->getTwitterAccount()): ?><?php echo $section->Site->getTwitterAccount() ?><?php else: ?>tvcultura<?php endif; ?>">Tweet</a>
+          </div>
+          <!-- /curtir -->
          </div>
