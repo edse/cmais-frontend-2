@@ -31,7 +31,7 @@ body { background:#f58220 url(http://cmais.com.br/portal/images/capaPrograma/cas
 
 .twitter{top: 0;left: 0;position: absolute;}
 .instangram{top: 0;left: 42px;position: absolute;}
-.menu-interna {margin: 5px 0;position: absolute;top: -259px;left: 403px;}
+.menu-interna {margin: 5px 0;position: absolute;top: -259px;left: 330px;}
 .menu-interna li{padding:0px;background: none;}
 .menu-interna li:hover{background: none;}
 .menu-interna li a{ background: #f4821f; border:1px solid #e17223;color:#f7e55d;padding:0px 7px; border-radius:5px;}
