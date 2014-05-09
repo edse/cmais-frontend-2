@@ -68,7 +68,7 @@ $(window).load(function() {
        <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
 				<!-- /GALERIA DE FOTOS -->
-			<div class="container galeriaNew" style="float: left; margin-bottom: 10px; width: 640px;">
+			<div class="container galeriaNew" style="float: right; margin-bottom: 10px; width: 640px;">
 			  <div id="featured">
 				 <?php $related = $asset->retriveRelatedAssetsByAssetTypeId(2); ?>
 	      <?php if(count($related)>0): ?>
