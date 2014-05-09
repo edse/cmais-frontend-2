@@ -70,13 +70,13 @@ if (!isset($asset)) {
         </div>
         <!-- /CONTEUDO PAGINA -->
         
-        
-        
-      </div>
-      <!-- /MIOLO -->
          <!-- MENU NAVEGAÇÃO-->
 	         <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site, 'section'=>$section)) ?> 
 	        <!--/MENU NAVEGAÇÃO-->
+        
+      </div>
+      <!-- /MIOLO -->
+        
     </div>
     <!-- /CAPA SITE -->
     
