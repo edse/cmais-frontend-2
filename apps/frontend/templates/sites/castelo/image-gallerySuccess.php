@@ -3,8 +3,21 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/todos-videos.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/castelo/interna.css" type="text/css" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store" />
+<meta http-equiv="Pragma" content="no-cache, no-store" />
+<meta http-equiv="expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<?php include_title() ?>
+<?php include_metas() ?>
+<meta property="og:title" content="<?php echo $asset->getTitle(); ?> - <?php echo $site->getTitle(); ?> - cmais+ O portal de conteúdo da Cultura" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="<?php echo $asset->getDescription(); ?>" />
+<meta property="og:url" content="<?php echo $asset->retriveUrl(); ?>" />
+<meta property="og:site_name" content="<?php echo $site->getTitle(); ?>" />
+<meta property="og:image" content="http://cmais.com.br/portal/images/capaPrograma/castelo/ratimbum-icon.jpg"/>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
