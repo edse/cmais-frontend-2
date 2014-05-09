@@ -6,6 +6,7 @@ $section = Doctrine_Query::create()
   ->andWhere('s.slug = ?', 'creditos2')
   ->fetchOne();
 ?>
+
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/castelo/interna.css" type="text/css" />
@@ -44,7 +45,7 @@ $section = Doctrine_Query::create()
         <!-- box-topo -->
         <div class="box-topo grid3">
 
-          <?php //include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $section)) ?>
+          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'asset' => $asset->getSections())) ?>
 
          
         </div>
