@@ -6,7 +6,18 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
+<script src="http://cmais.com.br/portal/js/orbit/jquery.orbit-1.2.3.min.js" type="text/javascript"></script>
+<link type="text/css" href="http://cmais.com.br/portal/js/orbit/orbit-1.2.3.css" rel="stylesheet">
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/castelo/geral.css" type="text/css" />
 
+<script type="text/javascript">
+$(window).load(function() {
+	$('#featured').orbit({
+		'bullets' : true,   
+		'bulletThumbs': true
+	});
+});
+</script>
 
 <div class="bg-site">
 </div>
