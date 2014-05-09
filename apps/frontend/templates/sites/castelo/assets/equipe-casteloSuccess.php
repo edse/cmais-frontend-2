@@ -45,7 +45,7 @@ $section = Doctrine_Query::create()
         <!-- box-topo -->
         <div class="box-topo grid3">
 
-          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $asset->Section)) ?>
+          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $asset)) ?>
 
          
         </div>
