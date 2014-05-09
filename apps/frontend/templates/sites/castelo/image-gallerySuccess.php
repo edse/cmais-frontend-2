@@ -64,7 +64,7 @@ $(window).load(function() {
 		'bulletThumbs': true
 	});
 });
-
+</script>
        <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
 				<!-- /GALERIA DE FOTOS -->
