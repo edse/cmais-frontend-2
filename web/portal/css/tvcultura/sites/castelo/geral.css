@@ -27,6 +27,7 @@ body { background:#f58220 url(http://cmais.com.br/portal/images/capaPrograma/cas
 /*HOME*/
 #topo-portal{width:100% !important;margin: 0 !important; padding:0 !important;}
 #barra-site .redes {margin: 20px 0 0 -96px;}
+#barra-site .redes .curtir {width: 195px;}
 #castelo {background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-home-bg-castelo.jpg) no-repeat center 0 #f58220 !important; height: 962px;min-width:1000px !important; width:100%}
 
 .twitter{top: 0;left: 0;position: absolute;}
