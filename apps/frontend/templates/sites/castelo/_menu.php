@@ -41,7 +41,7 @@
             <!-- curtir -->
           <div class="redes">
             <div class="curtir">
-              <fb:like href="<?php if($section->Site->getFacebookUrl()): ?><?php echo $secion->Site->getFacebookUrl() ?><?php else: ?><?php echo $uri ?><?php endif; ?>" layout="button_count" show_faces="false" send="true" width="160"></fb:like>
+              <fb:like href="<?php if($section->Site->getFacebookUrl()): ?><?php echo $section->Site->getFacebookUrl() ?><?php else: ?><?php echo $uri ?><?php endif; ?>" layout="button_count" show_faces="false" send="true" width="160"></fb:like>
             </div>
             <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php if($section->Site->getTwitterAccount()): ?><?php echo $section->Site->getTwitterAccount() ?><?php else: ?>tvcultura<?php endif; ?>">Tweet</a>
           </div>
