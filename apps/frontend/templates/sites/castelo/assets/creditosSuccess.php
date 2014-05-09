@@ -12,7 +12,7 @@ $section = Doctrine_Query::create()
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/castelo/creditos.css" type="text/css" />
 
 <?php use_helper('I18N', 'Date') ?>
-<?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
+<?php //include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
 <div class="bg-site">
 </div>
@@ -44,7 +44,7 @@ $section = Doctrine_Query::create()
         <!-- box-topo -->
         <div class="box-topo grid3">
 
-          <?php //include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $section)) ?>
+          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $section)) ?>
 
          
         </div>
