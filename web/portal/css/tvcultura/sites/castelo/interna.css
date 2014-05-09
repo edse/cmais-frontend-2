@@ -21,7 +21,7 @@ body { background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/pat
 .paginacao ul li a.ativo,
 .paginacao ul li a:hover { color:#f7e55e; }
 #galeria-videos .blocos { width:970px; }
-#conteudo-pagina { min-height:600px; margin-bottom:100px; overflow:hidden; }
+#conteudo-pagina {border-radius: 5px;min-height: 600px;margin-bottom: 100px;overflow: hidden;background: #fda61b;float: right;width: 648px;}
 .bg-video { width:1042px; height:650px; position:absolute; top:0; background:url("http://cmais.com.br/portal/images/capaPrograma/castelo/bg-video.png") no-repeat 44px 80px; }
 .bg-video { *background-image:url("http://cmais.com.br/portal/images/capaPrograma/castelo/bg-video.gif"); }
 .embed-video {  width:640px; float:right; height: 506px; text-align:left; overflow:hidden; }
