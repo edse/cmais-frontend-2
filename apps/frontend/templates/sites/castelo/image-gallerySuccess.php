@@ -56,7 +56,7 @@
        <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
 
-					<?php include_partial_from_folder('blocks','global/_display-1c-images-grid.php') ?>        	
+					<?php include_partial_from_folder('blocks','global/display-1c-images-grid.php') ?>        	
         </div>
         <!-- /CONTEUDO PAGINA -->
         
