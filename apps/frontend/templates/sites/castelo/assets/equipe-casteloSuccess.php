@@ -74,7 +74,7 @@ $section = Doctrine_Query::create()
         </div>
         <!-- /CONTEUDO PAGINA -->
         <!-- MENU NAVEGAÇÃO-->
-         <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site, 'section'=>$section)) ?> 
+         <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('siteSections' => $siteSections, 'section' => $asset)) ?> 
         <!--/MENU NAVEGAÇÃO-->
         
       </div>
