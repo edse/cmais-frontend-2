@@ -20,7 +20,7 @@ $sections = Doctrine_Query::create()
       $(this).fancybox()
     });
     
-    $("a[class*=botao]").not('.botao-porteiro-over, .botao-valdirene-over').fancybox({
+    $("a[class*=botao], .m-galeria-de-imagens a").not('.botao-porteiro-over, .botao-valdirene-over').fancybox({
       
        'transitionIn' : 'fadein',
       'transitionOut' : 'fadeout',
