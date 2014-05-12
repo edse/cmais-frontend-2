@@ -1153,14 +1153,14 @@ class _assetActions extends sfActions
             if($debug) print "<br>3-6>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
           }
-        }
+        }elseif($this->site->getSlug() == "castelo" && $this->asset->AssetType->getSlug() == "video"){
+            if($debug) print "<br>4-2-0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
+            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
+          }
         elseif(($this->site->getType() == "Portal" || $this->site->getType() == 2)&&($this->site->getSlug() != "tvratimbum")){
           if(in_array($this->asset->getId(), array(121120, 121117, 120858, 121146, 121145, 122440, 127638,127974,130827,131375,131368,131702,139908,140033,140035))){
             if($debug) print "<br>4-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/cmais/tutores-content'; 
             $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/cmais/tutores-content');
-          }elseif($this->site->getSlug() == "castelo" && $this->asset->AssetType->getSlug() == "video"){
-            if($debug) print "<br>4-2-0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
-            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
           }
           else {
             if($debug) print "<br>4-2>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/defaultPortal/'.$this->asset->AssetType->getSlug();
