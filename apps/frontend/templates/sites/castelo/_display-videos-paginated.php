@@ -1,11 +1,3 @@
-<?php
-$section = Doctrine_Query::create()
-  ->select('s.*')
-  ->from('Section s')
-  ->where('s.site_id = 976')
-  ->andWhere('s.slug = ?', 'episodios')
-  ->fetchOne();
-?>
 			<?php if(isset($pager)): ?>
 				<?php if(count($pager) > 0): ?>
           <div id="menu-rodape" class="grid3">
