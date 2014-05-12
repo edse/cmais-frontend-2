@@ -1,3 +1,11 @@
+<?php
+$section = Doctrine_Query::create()
+  ->select('s.*')
+  ->from('Section s')
+  ->where('s.site_id = 976')
+  ->andWhere('s.slug = ?', 'video')
+  ->fetchOne();
+?>
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css?nocache=1234" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/todos-videos.css" type="text/css" />
@@ -8,12 +16,7 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
 <?php
-
-$assets = $pager->getResults();
-if (!isset($asset)) {
-  $asset = $assets[0];
-}
-
+$section = $pager->getResults();
 ?> 
 
 <div class="bg-site">
