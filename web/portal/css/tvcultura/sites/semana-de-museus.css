@@ -73,6 +73,7 @@ body{background:#EBEBEB }
 .a1964 .menu-interna a{font-size: 14px;color:#2c9700;display: block;float: left;padding: 16px 34px;text-transform: uppercase;font-weight: bolder;}
 .a1964 .menu-interna li.ativo, .a1964 .menu-interna li:hover {width: 120px;height: 54px;background-color: transparent;}
 .timeline{height: 500px;float: left;width: 100%;padding-top: 20px;}
+#barra-site .redes {width: 394px;float: right;margin: 60px 0 0 30px;}
 
 /* /AJUSTES ARTES TOPO E MENU */
 
