@@ -7,6 +7,13 @@
 <?php use_helper('I18N', 'Date') ?> 
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
+<?php
+$assets = $pager->getResults();
+if (!isset($asset)) {
+  $asset = $assets[0];
+}
+?>
+
 <div class="bg-site">
 </div>
 
