@@ -58,13 +58,15 @@
 }
 
 
-body{background:url(http://cmais.com.br/portal/images/qualidade/bg-tudo.jpg) repeat-x!important;}
+body{background:#EBEBEB }
 
 /* AJUSTES ARTES TOPO E MENU */
+.topo-tudo{background:#fff url(http://cmais.com.br/portal/images/capaPrograma/semana-de-museus/topo.jpg)no-repeat center!important;width:100%;height:170px;}
+#capa-site.museus {margin-top: -156px !important;}
 #barra-site{background:url();height: 170px;margin:0 0 0 42px!important;cursor:pointer}
 #barra-site .topo-timeline{width: 970px;min-height: 56px !important;}
 #barra-site img{margin: 23px 0 0 -214px;}
-#barra-site h2{font-family: 'GothamMediumRegular';color: #fff;font-size: 26px;text-align:left;line-height: 38px;margin: 30px 0 0 -5px;font-weight: lighter;}
+#barra-site h2{font-family: 'GothamMediumRegular';color: #000;font-size: 26px;text-align:left;line-height: 38px;margin: 30px 0 0 -5px;font-weight: lighter;}
 .a1964 .menu-interna {float: right;width: auto ;}
 .a1964 .menu-interna li {width: 120px;height: 54px;background-color: transparent;}
 .a1964 .menu-interna a{font-size: 14px;color:#2c9700;display: block;float: left;padding: 16px 34px;text-transform: uppercase;font-weight: bolder;}
@@ -134,7 +136,7 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .subs{background-color: rgba(0, 0, 0, 0.8);background: rgba(0, 0, 0, 0.8);color: rgba(0, 0, 0, 0.8);width:960px;position: absolute;margin-left: 5px;bottom: 4px;}
 .subs h2{color:#fff;bottom: 0;font-family: Arial;text-align: left;font-size: 41px;line-height:120px;padding-left:15px;}
 
-.box-interna h2{font-size:13px;background: #2c9700;color: #fff;padding: 1px 13px 1px 12px;text-transform: uppercase;font-family: 'gotham_boldregular';width: 96%;}
+.box-interna h2{font-size:13px;background:#ff0000;color: #fff;padding: 1px 13px 1px 12px;text-transform: uppercase;font-family: 'gotham_boldregular';width: 96%;}
 .box-interna p{font-size:14px;line-height: 25px;}
 .box-thumbs{width:593px;margin:0 auto;}
 .box-playlist li {width: 114px;float: left;margin-right: 4px;text-align: left;height: auto;}
@@ -144,9 +146,9 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .box-playlist .img:hover {border-color: #2c9700;height: 82px;width:110px;}
 #direita{float: right;text-align: left;}
 #direita p{font-size:13px;line-height:17px}
-.jcarousel-prev{width:20px; height: 80px; background: url(http://cmais.com.br/portal/images/qualidade/seta.png) no-repeat left top; position:absolute; top: 25%; left: -3%;cursor: pointer;}
+.jcarousel-prev{width:20px; height: 80px; background: url(http://cmais.com.br/portal/images/capaPrograma/semana-de-museus/seta_1.png) no-repeat left top; position:absolute; top: 25%; left: -3%;cursor: pointer;}
 .jcarousel-prev:hover {background-position:left top}
-.jcarousel-next{width:20px; height: 80px; background: url(http://cmais.com.br/portal/images/qualidade/seta.png) no-repeat left bottom; position:absolute; top: 25%; right: -5%;cursor: pointer;transform: rotate(180deg); -ms-transform: rotate(180deg); /* IE 9 */ -webkit-transform: rotate(180deg); /* Safari and Chrome */;}
+.jcarousel-next{width:20px; height: 80px; background: url(http://cmais.com.br/portal/images/capaPrograma/semana-de-museus/seta_2.png) no-repeat left bottom; position:absolute; top: -18%; right: -5%;cursor: pointer;}
 .jcarousel-next:hover {background-position:right bottom;}
 .box-confira{background-color: #F0EEEE;padding: 8px;overflow: hidden;}
 .box-confira h2{font-size:14px;}
@@ -162,6 +164,5 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .box-instagram a{ display: block; height: 122px; width: 122px;float: left; padding:5px 0px 0px 5px}
 .box-instagram a img{width: 122px; height: 122px;}
 .box-padrao{margin-top:20px;}
-.box-padrao h4 {background: #ff0000;color: #fff;padding-left: 10px;height: 30px;padding-top: 5px;line-height: 30px;width: 630px;margin-left: 10px;margin-bottom: 5px;text-transform: none;}
-
-
+.box-padrao h4 {background: #ff0000;color: #fff;padding-left: 10px;height: 25px;padding-top: 5px;line-height: 20px;width: 630px;margin-left: 10px;margin-bottom: 5px;text-transform: none;}
+.box-padrao h4 span {background: url(http://cmais.com.br/portal/images/capaPrograma/semana-de-museus/instagram_icon.png) no-repeat;width: 24px;height: 24px;display: block;float: left;margin-right: 10px;}

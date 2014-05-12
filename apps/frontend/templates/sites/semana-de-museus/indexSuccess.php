@@ -9,16 +9,18 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
+	<div class="topo-tudo">
+	</div>
     <!-- CAPA SITE -->
-	<div id="capa-site" class="a1964">
-     	
+	<div id="capa-site" class="museus">
+     	  
      	<!-- BARRA SITE -->
   		<div id="barra-site" >
 						<h2>Cultura também é Museu: <br>onde fantasias se tornam realidade</h2>
 				
-		
+		</div>
 		  <!-- /BARRA SITE -->  
-      </div>
+
        
       <!-- MIOLO -->
    	  <div id="miolo">
@@ -79,6 +81,25 @@
 									
 									<!--Players-->
 								</div>
+					<!-- BOX PADRAO instagram -->
+       		 <div class="box-padrao grid3">
+            <span class="aba"></span>
+            <h4><span class="instagram"></span>instagram #CompartilheCultura</h4>
+            <div class="box-instagram">
+              
+              <!--embedagram-->
+              <!--ul id="embedagram"></ul-->
+              <!--/embedagram-->
+              
+              <div class="instagram-box"></div>
+              
+              <!-- SnapWidget -->
+              <!--iframe src="http://snapwidget.com/in/?h=YXJyYWlhY3VsdHVyYXxpbnwxMzB8MnwzfGQzMGIyZXxub3wxMHxub25l" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:280px; height: 420px" ></iframe-->
+            </div> 
+            
+            
+          </div>
+          <!-- BOX PADRAO instagram-->
 								
 		   	   	 </div>
 		   	   		<div id="direita"class="grid1">
@@ -145,7 +166,7 @@ $(document).ready(function(){
 var url = new Array;
 var href = new Array;
 $(".instagram-box").instagram({
-  hash: 'arraiacultura',
+  hash: 'CompartilheCultura',
   clientId: 'acc3ed4dfcd14106b4805f0248604b8c',
   show : 6,
   onComplete:function(){
@@ -180,5 +201,4 @@ $('.fancybox-media').fancybox({
 
   });
 </script>
- 
  
