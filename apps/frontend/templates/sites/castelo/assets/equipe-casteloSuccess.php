@@ -3,7 +3,7 @@ $section = Doctrine_Query::create()
   ->select('s.*')
   ->from('Section s')
   ->where('s.site_id = 976')
-  ->andWhere('s.slug = ?', 'creditos2')
+  ->andWhere('s.slug = ?', 'creditos')
   ->fetchOne();
 ?>
 
@@ -45,7 +45,7 @@ $section = Doctrine_Query::create()
         <!-- box-topo -->
         <div class="box-topo grid3">
 
-          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $asset)) ?>
+          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $section)) ?>
 
          
         </div>
@@ -74,7 +74,7 @@ $section = Doctrine_Query::create()
         </div>
         <!-- /CONTEUDO PAGINA -->
         <!-- MENU NAVEGAÇÃO-->
-         <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('siteSections' => $siteSections, 'section' => $asset)) ?> 
+         <?php //include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('site'=>$site, 'siteSections' => $siteSections, 'section' => $section)) ?> 
         <!--/MENU NAVEGAÇÃO-->
         
       </div>
@@ -83,3 +83,27 @@ $section = Doctrine_Query::create()
     <!-- /CAPA SITE -->
 </div>   
 <!--/CASTELO-->
+
+<!--FANCYBOX-->
+<script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js" ></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<!--/FANCYBOX-->
+<!--FANCYBOX-->
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#fancybox-content a').live('hover', function(){
+    $(this).fancybox()
+  });
+  
+  $("a[class*=botao], .m-galeria-de-imagens a").not('.botao-porteiro-over, .botao-valdirene-over').fancybox({
+    
+     'transitionIn' : 'fadein',
+    'transitionOut' : 'fadeout',
+          'speedIn' : 600, 
+         'speedOut' : 200, 
+      'overlayShow' : true,
+             'type' : 'iframe'
+  });
+});
+</script>
+<!--FANCYBOX-->

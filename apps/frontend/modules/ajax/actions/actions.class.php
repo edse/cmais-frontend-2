@@ -2807,7 +2807,7 @@ EOT;
 		->addWhere("a.asset_type_id = 1")
 		->andWhereNotIn("s.id", $site_not)
 		->orderBy("a.id desc")
-		->limit(10)
+		->limit(40)
 		->execute();
 	
 		$pub_date = date("d M Y H:i:s")." GMT"; 
@@ -2816,29 +2816,35 @@ EOT;
 <channel>
 	<title>Notícias Portal Cmais</title>
 	<link>ajax/gingaxml</link> 
-	<description> Descrição </description> 
+	<description> Envio de notícias recentes via aplicação interativa em Ginga-Lua, através da integração entre o IFN e o banco de dados do site cmais.com.br </description> 
 	<language>pt_BR</language> 
 	<lastBuildDate>'.$pub_date.'</lastBuildDate> 
 	<pubDate>'.$pub_date.'</pubDate> 
 	<copyright> Todos os direitos reservados.</copyright>';
 	
+	$cont = 1;
 	foreach ($asset as $key => $a) {
-		//$image = $a->retriveImageUrlByImageUsage("image-4-b");
+		$image = $a->retriveImageUrlByImageUsage("image-4-b");
 		
-		$dia = substr($a->created_at, 8, 2);
-		$mes = substr($a->created_at, 5, 2);
-		$ano = substr($a->created_at, 0, 4);
-		
-		
-		
-		$content.= "
-	<item>
-		<title><![CDATA[".$a->title."]]></title>
-		<link><![CDATA[".$a->retriveURL()."]]></link>
-		<pubDate><![CDATA[".$dia."/".$mes."/".$ano."]]></pubDate>
-	</item>
-		";
-		//<content><![CDATA[".$a->AssetContent->content."]]></content>
+		if($image != "" && $cont < 20){
+			$dia = substr($a->created_at, 8, 2);
+			$mes = substr($a->created_at, 5, 2);
+			$ano = substr($a->created_at, 0, 4);
+			
+			$hora = substr($a->created_at, 11, 5);
+			
+			$content.= "
+		<item>
+			<title><![CDATA[".$a->title."]]></title>
+			<description><![CDATA[".$a->description."]]></description>
+			<link><![CDATA[".$a->retriveURL()."]]></link>
+			<image><![CDATA[".$image."]]></image>
+			<pubDate><![CDATA[".$dia."/".$mes."/".$ano." ".$hora."]]></pubDate>
+		</item>
+			";
+			//<content><![CDATA[".$a->AssetContent->content."]]></content>
+			$cont++;
+		}
 	}
 	
 	$content.= "

@@ -54,3 +54,9 @@ body { background:url(http://cmais.com.br/portal/images/capaPrograma/castelo/pat
 #chat2 .duas-colunas a,
 #chat2 .duas-colunas p { margin:10px; }
 /* /chat2*/
+
+/* episodios */
+#todas.blocos .capa ul{width:680px; background:#fda61b;}
+#todas.blocos .capa ul li{margin-left:2px;}
+
+/* /episodios */
