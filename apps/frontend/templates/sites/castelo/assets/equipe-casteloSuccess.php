@@ -3,7 +3,7 @@ $section = Doctrine_Query::create()
   ->select('s.*')
   ->from('Section s')
   ->where('s.site_id = 976')
-  ->andWhere('s.slug = ?', 'equipe')
+  ->andWhere('s.slug = ?', 'creditos')
   ->fetchOne();
 ?>
 
