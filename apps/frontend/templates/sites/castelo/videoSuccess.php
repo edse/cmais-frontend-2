@@ -6,7 +6,16 @@
 
 <?php use_helper('I18N', 'Date') ?> 
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
-
+<?php
+$section = Doctrine_Query::create()
+  ->select('s.*')
+  ->from('Section s')
+  ->where('s.site_id = 976')
+  ->andWhere('s.slug = ?', 'episodios')
+  ->fetchOne();
+?>
+ 
+<?php echo $section->getSlug() . ">>>>>>>";?>
 <div class="bg-site">
 </div>
 
@@ -60,7 +69,8 @@
        <!-- CONTEUDO PAGINA -->
         <div id="conteudo-pagina">
 					
-					<?php include_partial_from_folder('sites/castelo','global/asset-2c-video', array('asset' => $asset, 'ipad' => $ipad)) ?>        	
+					<?php include_partial_from_folder('sites/castelo','global/asset-2c-video', array('asset' => $asset, 'ipad' => $ipad)) ?> 
+					<?php include_partial_from_folder('sites/castelo','global/display-videos-paginated', array('pager' => $pager)) ?>       	
           
         </div>
         <!-- /CONTEUDO PAGINA -->
