@@ -2823,7 +2823,7 @@ EOT;
 	<copyright> Todos os direitos reservados.</copyright>';
 	
 	foreach ($asset as $key => $a) {
-		//$image = $a->retriveImageUrlByImageUsage("image-4-b");
+		$image = $a->retriveImageUrlByImageUsage("image-4-b");
 		
 		$dia = substr($a->created_at, 8, 2);
 		$mes = substr($a->created_at, 5, 2);
@@ -2834,7 +2834,9 @@ EOT;
 		$content.= "
 	<item>
 		<title><![CDATA[".$a->title."]]></title>
+		<description><![CDATA[".$a->description."]]></description>
 		<link><![CDATA[".$a->retriveURL()."]]></link>
+		<image><![CDATA[".$image."]]></image>
 		<pubDate><![CDATA[".$dia."/".$mes."/".$ano." ".$hora."]]></pubDate>
 	</item>
 		";
