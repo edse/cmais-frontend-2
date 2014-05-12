@@ -66,7 +66,8 @@ body{background:#EBEBEB }
 #barra-site{background:url();height: 170px;margin:0 0 0 42px!important;cursor:pointer}
 #barra-site .topo-timeline{width: 970px;min-height: 56px !important;}
 #barra-site img{margin: 23px 0 0 -214px;}
-#barra-site h2{font-family: 'GothamMediumRegular';color: #000;font-size: 26px;text-align:left;line-height: 38px;margin: 30px 0 0 -5px;font-weight: lighter;}
+#barra-site h2{font-family: 'GothamMediumRegular';color: #000;font-size: 40px;text-align:left;line-height: 38px;margin: 45px 0 0 -5px;font-weight: lighter;}
+#barra-site p{font-family: 'GothamMediumRegular';color: #000;font-size: 20px;text-align:left;font-weight: lighter;}
 .a1964 .menu-interna {float: right;width: auto ;}
 .a1964 .menu-interna li {width: 120px;height: 54px;background-color: transparent;}
 .a1964 .menu-interna a{font-size: 14px;color:#2c9700;display: block;float: left;padding: 16px 34px;text-transform: uppercase;font-weight: bolder;}
@@ -143,7 +144,7 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .box-playlist a img {width:110px;}
 .box-thumbs h4 {color:#000;}
 .box-playlist .img {width:110px;height: 82px}
-.box-playlist .img:hover {border-color: #2c9700;height: 82px;width:110px;}
+.box-playlist .img:hover {border-color: #a74887;height: 82px;width:110px;}
 #direita{float: right;text-align: left;}
 #direita p{font-size:13px;line-height:17px}
 .jcarousel-prev{width:20px; height: 80px; background: url(http://cmais.com.br/portal/images/capaPrograma/semana-de-museus/seta_1.png) no-repeat left top; position:absolute; top: 25%; left: -3%;cursor: pointer;}
