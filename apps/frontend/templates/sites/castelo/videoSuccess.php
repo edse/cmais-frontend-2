@@ -37,13 +37,13 @@
         <!-- box-topo -->
         <div class="box-topo grid3">
 
-          <?php include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
-
-         <div class="castelo18">
+          <?php //include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
+          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $asset)) ?>
+         <!--div class="castelo18">
            <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/img-menu-hashtag.png" alt="#castelo18anos">
            <a href="https://twitter.com/#!/search/realtime/castelo18anos" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-menu-twitter.png" alt="Twitter"></a>
            <a href="#" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-menu-instagram.png" alt="Instangram"></a>
-         </div>
+         </div-->
          
         </div>
         <!-- /box-topo -->
@@ -61,7 +61,7 @@
         <div id="conteudo-pagina">
 					
 					<?php include_partial_from_folder('sites/castelo','global/asset-2c-video', array('asset' => $asset, 'ipad' => $ipad)) ?>        	
-          
+          <?php include_partial_from_folder('sites/castelo','global/display-videos-paginated', array('pager' => $pager)) ?>
         </div>
         <!-- /CONTEUDO PAGINA -->
       </div>
