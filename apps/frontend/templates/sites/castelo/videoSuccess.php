@@ -14,9 +14,7 @@ $section = Doctrine_Query::create()
   ->andWhere('s.slug = ?', 'episodios')
   ->fetchOne();
 ?>
-<?php
-$section = $pager->getResults();
-?> 
+ 
 
 <div class="bg-site">
 </div>
