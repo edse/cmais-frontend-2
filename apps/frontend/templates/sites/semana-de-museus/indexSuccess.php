@@ -16,7 +16,7 @@
      	  
      	<!-- BARRA SITE -->
   		<div id="barra-site" >
-						<h2>Cultura também é Museu:</h2> <p>onde fantasias se tornam realidade</p>
+						<h2>Cultura também é Museu: <p>onde fantasias se tornam realidade</p></h2>
 				
 		</div>
 		  <!-- /BARRA SITE -->  

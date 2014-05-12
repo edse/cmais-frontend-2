@@ -66,7 +66,7 @@ body{background:#EBEBEB }
 #barra-site{background:url();height: 170px;margin:0 0 0 42px!important;cursor:pointer}
 #barra-site .topo-timeline{width: 970px;min-height: 56px !important;}
 #barra-site img{margin: 23px 0 0 -214px;}
-#barra-site h2{font-family: 'GothamMediumRegular';color: #000;font-size: 40px;text-align:left;line-height: 38px;margin: 45px 0 0 -5px;font-weight: lighter;}
+#barra-site h2{font-family: 'GothamMediumRegular';color: #000;font-size: 40px;text-align:left;line-height: 38px;margin: 45px 0 0 -5px;font-weight: bolder;}
 #barra-site p{font-family: 'GothamMediumRegular';color: #000;font-size: 20px;text-align:left;font-weight: lighter;}
 .a1964 .menu-interna {float: right;width: auto ;}
 .a1964 .menu-interna li {width: 120px;height: 54px;background-color: transparent;}
