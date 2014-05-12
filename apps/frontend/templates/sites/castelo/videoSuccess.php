@@ -15,7 +15,7 @@ $section = Doctrine_Query::create()
   ->fetchOne();
 ?>
  
-<?php echo $section->getTitle() . ">>>>>>>";?>
+<?php echo $section->getSlug() . ">>>>>>>";?>
 <div class="bg-site">
 </div>
 
