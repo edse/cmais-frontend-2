@@ -82,3 +82,26 @@ if (!isset($asset)) {
     
 </div>   
 <!--/CASTELO-->
+<!--FANCYBOX-->
+<script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js" ></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<!--/FANCYBOX--> 
+<!--FANCYBOX-->
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#fancybox-content a').live('hover', function(){
+    $(this).fancybox()
+  });
+  
+  $("a[class*=botao], .m-galeria-de-imagens a").not('.botao-porteiro-over, .botao-valdirene-over').fancybox({
+    
+     'transitionIn' : 'fadein',
+    'transitionOut' : 'fadeout',
+          'speedIn' : 600, 
+         'speedOut' : 200, 
+      'overlayShow' : true,
+             'type' : 'iframe'
+  });
+});
+</script>
+<!--FANCYBOX-->
