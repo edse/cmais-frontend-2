@@ -17,9 +17,9 @@
      	<!-- BARRA SITE -->
   		<div id="barra-site" >
 						<h2>Cultura também é Museu: <p>onde fantasias se tornam realidade</p></h2>
-					<?php if(isset($program) && $program->id > 0): ?>
+				
           <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
+    
 		</div>
 		  <!-- /BARRA SITE -->  
 
