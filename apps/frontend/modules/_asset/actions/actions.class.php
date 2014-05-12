@@ -1106,11 +1106,7 @@ class _assetActions extends sfActions
 				}
       }
       else{
-        if($this->site->getSlug() == "castelo" && $this->asset->AssetType->getSlug() == "video"){
-            if($debug) print "<br>4-2-0>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug();
-            $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/'.$this->asset->AssetType->getSlug());
-        } 
-        elseif($this->site->getType() == "Hotsite" || $this->site->getType() == 1){
+        if($this->site->getType() == "Hotsite" || $this->site->getType() == 1){
           
           if(in_array($this->site->getSlug(), array("revistavitrine","revistavitrine2"))) {
             if($debug) print "<br>3-1>>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/online';
