@@ -1,5 +1,5 @@
           <?php if(count($siteSections) > 0): ?>
-            <?php echo $section->Site->getFacebookUrl() ?>
+            <?php echo $asset->Site->getFacebookUrl(). ">>>>>>" ?>
           <!-- menu interna -->
           <ul class="menu-interna grid3">
             <?php foreach($siteSections as $s): ?>
