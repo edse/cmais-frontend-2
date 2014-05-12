@@ -11,7 +11,7 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section)) ?>
 
 <?php
-
+echo count($pager->getResults());
 $assets = $pager->getResults();
 if (!isset($asset)) {
 	$asset = $assets[0];
