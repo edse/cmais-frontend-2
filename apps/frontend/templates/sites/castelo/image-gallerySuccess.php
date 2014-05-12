@@ -31,6 +31,10 @@
     <script type="text/javascript" src="http://cmais.com.br/portal/js/portal.js"></script>
     <script type="text/javascript" src="http://cmais.com.br/portal/js/jcarousel/lib/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+     <!--FANCYBOX-->
+    <script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox/jquery.fancybox-1.3.4.pack.js" ></script>
+    <link rel="stylesheet" href="http://cmais.com.br/portal/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+    <!--/FANCYBOX-->     
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
       {lang: 'pt-BR'}
     </script>
