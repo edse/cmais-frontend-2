@@ -1100,7 +1100,7 @@ class _assetActions extends sfActions
             }
 					}
           else {
-            if($this->site->getSlug() == "castelo" && $this->section->getSlug() == "episodios") {
+            if($this->site->getSlug() == "castelo" && $this->asset->AssetType->getSlug() == "videos") {
               if ($debug) print "<br>castelo-2-4 >>".sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodios';
               $this->setTemplate(sfConfig::get('sf_app_template_dir').DIRECTORY_SEPARATOR.'sites/'.$this->site->getSlug().'/episodios');
             }else{
