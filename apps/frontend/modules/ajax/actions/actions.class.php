@@ -2816,7 +2816,7 @@ EOT;
 <channel>
 	<title>Notícias Portal Cmais</title>
 	<link>ajax/gingaxml</link> 
-	<description> Descrição </description> 
+	<description> Envio de notícias recentes via aplicação interativa em Ginga-Lua, através da integração entre o IFN e o banco de dados do site cmais.com.br </description> 
 	<language>pt_BR</language> 
 	<lastBuildDate>'.$pub_date.'</lastBuildDate> 
 	<pubDate>'.$pub_date.'</pubDate> 
