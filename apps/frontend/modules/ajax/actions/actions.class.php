@@ -2829,13 +2829,13 @@ EOT;
 		$mes = substr($a->created_at, 5, 2);
 		$ano = substr($a->created_at, 0, 4);
 		
-		
+		$hora = substr($a->created_at, 11, 5);
 		
 		$content.= "
 	<item>
 		<title><![CDATA[".$a->title."]]></title>
 		<link><![CDATA[".$a->retriveURL()."]]></link>
-		<pubDate><![CDATA[".$dia."/".$mes."/".$ano."]]></pubDate>
+		<pubDate><![CDATA[".$dia."/".$mes."/".$ano." ".$hora."]]></pubDate>
 	</item>
 		";
 		//<content><![CDATA[".$a->AssetContent->content."]]></content>
