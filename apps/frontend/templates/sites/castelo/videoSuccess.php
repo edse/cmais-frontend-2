@@ -15,7 +15,7 @@ $section = Doctrine_Query::create()
   ->fetchOne();
 ?>
  
-<?php echo $section->getSlug() . ">>>>>>>";?>
+<?php echo count($pager) . ">>>>>>>";?>
 <div class="bg-site">
 </div>
 
