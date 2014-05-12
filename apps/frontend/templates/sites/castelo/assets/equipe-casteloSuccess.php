@@ -3,7 +3,7 @@ $section = Doctrine_Query::create()
   ->select('s.*')
   ->from('Section s')
   ->where('s.site_id = 976')
-  ->andWhere('s.slug = ?', 'creditos2')
+  ->andWhere('s.slug = ?', 'creditos')
   ->fetchOne();
 ?>
 
@@ -45,7 +45,7 @@ $section = Doctrine_Query::create()
         <!-- box-topo -->
         <div class="box-topo grid3">
 
-          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $asset)) ?>
+          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $section)) ?>
 
          
         </div>
@@ -74,7 +74,7 @@ $section = Doctrine_Query::create()
         </div>
         <!-- /CONTEUDO PAGINA -->
         <!-- MENU NAVEGAÇÃO-->
-         <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('siteSections' => $siteSections, 'section' => $asset)) ?> 
+         <?php include_partial_from_folder('sites/castelo','global/casteloMenuInternas', array('siteSections' => $siteSections, 'section' => $section)) ?> 
         <!--/MENU NAVEGAÇÃO-->
         
       </div>
