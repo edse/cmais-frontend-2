@@ -14,8 +14,7 @@ $section = Doctrine_Query::create()
   ->andWhere('s.slug = ?', 'episodios')
   ->fetchOne();
 ?>
-<?php echo count($section->getAssets());?>
-<?php echo count($pager) . ">>>>>>>";?>
+
 <div class="bg-site">
 </div>
 
