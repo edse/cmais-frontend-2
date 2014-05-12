@@ -46,7 +46,7 @@ $section = Doctrine_Query::create()
         <div class="box-topo grid3">
 
           <?php //include_partial_from_folder('blocks','global/sections-menu', array('siteSections' => $siteSections)) ?>
-          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $asset)) ?>
+          <?php include_partial_from_folder('sites/castelo','global/menu', array('siteSections' => $siteSections, 'section' => $asset, 'site'=>$site )) ?>
          <!--div class="castelo18">
            <img src="http://cmais.com.br/portal/images/capaPrograma/castelo/img-menu-hashtag.png" alt="#castelo18anos">
            <a href="https://twitter.com/#!/search/realtime/castelo18anos" target="_blank"><img src="http://cmais.com.br/portal/images/capaPrograma/castelo/btn-menu-twitter.png" alt="Twitter"></a>
