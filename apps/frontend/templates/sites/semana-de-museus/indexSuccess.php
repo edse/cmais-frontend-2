@@ -1,8 +1,9 @@
 <link type="text/css" href="http://cmais.com.br/portal/css/geral.css" rel="stylesheet" />
-<link rel="stylesheet" href="http://172.20.16.219/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
-<!--link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css">
-<link rel="stylesheet" href="http://cmais.com.br/portal/univesptv/css/cursos.css" /-->
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
+<!--FANCYBOX-->
+<script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox2.1.4/jquery.fancybox.pack.js" ></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/fancybox2.1.4/helpers/jquery.fancybox-media.js" ></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/js/fancybox2.1.4/jquery.fancybox.css" type="text/css" media="screen" />
 <script type="text/javascript" src="http://cmais.com.br/portal/js/mediaplayer/swfobject.js"></script>
 
 <?php use_helper('I18N', 'Date') ?>
@@ -33,9 +34,9 @@
          	 <div class="capa grid3">
 	         	 	
 		   	   	 <div class="box-interna grid2">
-				   	   	<?php  $asset_quality = Doctrine::getTable('Asset')->findOneById(160756); ?> <!-- trocar o numero do asset explicação do topo-->
-								<h2><?php //echo $asset_quality->getTitle();?>TV Cultura abre suas portas para o público conhecer seu acervo e história</h2>
-								<p><?php // echo $asset_quality->getDescription();?>Visita faz parte do programa especial que a emissora preparou para a 12ª Semana Nacional de Museus, com exposição exclusiva do programa Castelo Rá-Tim-Bum</p>
+				   	   	<?php  $asset_quality = Doctrine::getTable('Asset')->findOneById(189607); ?> <!-- trocar o numero do asset explicação do topo-->
+								<h2><?php echo $asset_quality->getTitle();?></h2>
+								<p><?php echo $asset_quality->getDescription();?></p>
 
 				   	   	<?php  $asset_x = Doctrine::getTable('Asset')->findOneById(162068); ?> <!-- numero do asset video gallery-->
    							<?php $relacionados = $asset_x->retriveRelatedAssets(); ?>
@@ -120,7 +121,7 @@
       </div><!--/MIOLO -->
       
     </div><!-- /CAPA SITE -->
-
+ <script type="text/javascript" src="http://cmais.com.br/portal/js/jquery-instagram/jquery.instagram.js"></script>
 <script>
 
 $(document).ready(function(){
@@ -139,8 +140,43 @@ $(document).ready(function(){
       wrap: "both",
       scroll: 5
     });
-    
-    
+
+
+var url = new Array;
+var href = new Array;
+$(".instagram-box").instagram({
+  hash: 'arraiacultura',
+  clientId: 'acc3ed4dfcd14106b4805f0248604b8c',
+  show : 6,
+  onComplete:function(){
+    console.log();
+    $('.instagram-box a').addClass('fancybox-media').attr('rel','instagram');
+    $('.instagram-box a img').each(function(i){
+      href[i] = $(this).attr("src");
+      url = href[i].split("_");
+      href[i] = url[0] + "_7.jpg";  
+      console.log(href[i]);     
+    });
+    $('.instagram-box a').each(function(i){
+      var linkImg = href[i];
+      $(this).attr('href', linkImg);
+    })
+  }
+});
+
+$('.fancybox-media').fancybox({
+  openEffect  : 'none',
+  closeEffect : 'none',
+  nextEffect  : 'none',
+  prevEffect  : 'none', 
+  padding : 0,
+  helpers : {
+    title : {
+      type : 'float'
+    },
+    media : {}
+  }
+}); 
 
   });
 </script>
