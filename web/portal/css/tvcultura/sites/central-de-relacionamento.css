@@ -86,7 +86,7 @@ strong{font-weight:bold;}
 #email-central .cancelar{color:#333 !important;text-decoration:none;}
 #email-central .control-group.success .help-block{margin-top:10px;}
 #email-central .form-horizontal .control-label{max-width:115px;}
-#email-central .form-horizontal .controls{margin-left:122px;width: 240px;}
+#email-central .form-horizontal .controls{margin-left:122px;width: 250px;}
 #email-central .row, #maisinfo, #f4_maisinfo, #f3_maisinfo, #f2_maisinfo {display: none;}
 #email-central label.valid {max-width: 24px; height: 24px; background: url(http://cmais.com.br/portal/images/valid.png) center center no-repeat; display: inline-block; text-indent: -9999px;}
 #email-central label.error {font-weight: bold; overflow:hidden; padding: 2px 8px;font-size: 11px;margin: -2px 0 -3px -7px}

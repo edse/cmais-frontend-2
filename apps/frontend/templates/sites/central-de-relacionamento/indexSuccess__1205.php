@@ -118,7 +118,7 @@ $(document).ready(function(){
                       <label class="control-label" for="f2_email2">E-mail</label>
                       <div class="controls">
                         <input type="text" class="input-xlarge disabled" id="f2_email2" name="f2_email2" placeholder="" disabled="disabled">
-                        <div class="alert alert-block" style="margin: 10px 0 10px 0;padding: 5px;">
+                        <div class="alert alert-block" style="margin: 10px 131px 10px 0;padding: 5px;">
                           <p class="help-block">Você receberá uma mensagem de confirmação para validar este e-mail após enviar o cadastro preenchido.</p>
                         </div>
                         <span class="atencao">* Campos obrigatórios</span>
@@ -473,7 +473,7 @@ $(document).ready(function(){
                           <?php else: ?>
                             <input type="text" class="input-xlarge disabled" id="f4_email2" name="f4_email2" placeholder="" disabled="disabled">
                           <?php endif;?>
-                          <div class="alert alert-block" style="margin: 10px 0 10px 0;padding: 5px;">
+                          <div class="alert alert-block" style="margin: 10px 131px 10px 0;padding: 5px;">
                             <p class="help-block">E-mail cadastrado e validado.</p>
                           </div>
                         </div>
@@ -812,15 +812,7 @@ $(document).ready(function(){
                 <script src="http://cmais.com.br/portal/js/jquery.maskedinput-1.3.min.js"></script>
                 <script>
                 
-                
-                var datas = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s"];
                 $(document).ready(function(){
-              		$(".control-group select").each(function(index){
-              			$(this).parent().append('<i class=" icon-question-sign example" data-toggle="tooltip" data-placement="right" title="'+datas[index]+'" data-original-title="'+datas[index]+'"></i>');
-              			$(".example").tooltip();
-              		})
-
-
                   var email = '';
                   $("#f4_cod_programa").find("option").attr("value", "--");
                   
