@@ -177,7 +177,11 @@ $(".instagram-box").instagram({
     $('.instagram-box a img').each(function(i){
       href[i] = $(this).attr("src");
       url = href[i].split("_");
-      href[i] = url[0] + "_7.jpg";  
+      if(window.location.indexOf("origin")<=0){
+      	href[i] = url[0] + "_o.jpg";  
+      }else{
+      	href[i] = url[0] + "_7.jpg";  
+      }
       console.log(href[i]);     
     });
     $('.instagram-box a').each(function(i){
@@ -186,6 +190,7 @@ $(".instagram-box").instagram({
     })
   }
 });
+
 
 $('.fancybox-media').fancybox({
   openEffect  : 'none',
