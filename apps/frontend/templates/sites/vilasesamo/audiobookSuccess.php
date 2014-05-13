@@ -6,7 +6,6 @@
       ->andWhere('s.id = sa.section_id')
       ->andWhere('s.slug = "audiobook"')
       ->andWhere('a.site_id = ?', (int)$site->id)
-      ->andWhere('a.asset_type_id = 1')
       ->groupBy('sa.asset_id')
       ->orderBy('sa.display_order')
       ->limit(30)
