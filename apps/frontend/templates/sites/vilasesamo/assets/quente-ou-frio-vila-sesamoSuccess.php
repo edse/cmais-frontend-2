@@ -31,8 +31,12 @@
 
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
-<link rel="stylesheet" href="http://cmais.com.br/portal/jogos-vila-sesamo/qf/Base/GameFrame/css/stylesheet.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/puzzle/main.css">
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/puzzle/vilasesamopuzzle.css">
+
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
+<?php echo $noscript; ?>
+<script src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
 <?php echo $noscript; ?>
 <script src="http://cmais.com.br/portal/js/hammer.min.js" type="text/javascript"></script>
 <?php echo $noscript; ?>
@@ -41,7 +45,9 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/paiseeducadores.js"></script>
 <?php echo $noscript; ?>
 <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
-<script data-main="src/Main" src="http://cmais.com.br/portal/jogos-vila-sesamo/qf/Base/lib/require.js"></script>
+<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
+<?php echo $noscript; ?>
+<script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/modernizr.custom.01885.js"></script>
 <?php echo $noscript; ?>
 <script>
   $("body").addClass("interna jogos");
@@ -114,18 +120,8 @@
           <div class="asset" style="display:none;">
             <?php //echo html_entity_decode($asset->AssetContent->render()) ?>
             <!--GAME-->
-            <div class="container">
-              
-              <div class="jumbotron back-entry-sesame-street">
-                <!--[if lt IE 10]>
-                  <p style="color:red; background:yellow; width:80%; overflow:hidden; font-weight:bold; font-size: 20px; text-align:center;padding: 10px; margin:20px auto; border:3px dashed red;">Você está usando um navegador antigo. Recomendamos <a href="http://browsehappy.com/" style="color:blue;font-size:20px; text-decoration:underline!important; display:inline-block">que atualize seu navegador</a> para você ter uma expêriencia melhor.</p>
-                <![endif]-->
-                <p>
-                  <div id="game"></div>
-                  <div id="orientation"></div>
-                </p>
-              </div>
-            </div>
+teste
+            
             <!--GAME-->
            
           </div>
