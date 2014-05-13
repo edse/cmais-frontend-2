@@ -42,7 +42,7 @@
 								<h2><?php echo $asset_quality->getTitle();?></h2>
 								<p><?php echo $asset_quality->getDescription();?></p>
 
-				   	   	<?php  $asset_x = Doctrine::getTable('Asset')->findOneById(162068); ?> <!-- numero do asset video gallery-->
+				   	   	<?php  $asset_x = Doctrine::getTable('Asset')->findOneById(191730); ?> <!-- numero do asset video gallery-->
    							<?php $relacionados = $asset_x->retriveRelatedAssets(); ?>
 
 
