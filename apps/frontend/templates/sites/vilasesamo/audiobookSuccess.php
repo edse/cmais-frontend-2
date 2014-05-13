@@ -8,7 +8,7 @@
       ->andWhere('a.site_id = ?', (int)$site->id)
       ->andWhere('a.asset_type_id = 1')
       ->groupBy('sa.asset_id')
-      ->orderBy('a.id display_order')
+      ->orderBy('a.display_order')
       ->limit(30)
       ->execute();
       
