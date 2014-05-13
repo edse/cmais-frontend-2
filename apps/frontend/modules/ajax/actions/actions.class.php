@@ -2790,7 +2790,7 @@ EOT;
 
   public function executeGingaxml(sfWebRequest $request){
   	//header('Content-Type: text/xml'); 
-		header("Content-Type: text/xml; charset=utf-8");
+		header("Content-Type: text/xml; charset=ISO-8859-1");
 		
 		
     $this->setLayout(false);
@@ -2807,7 +2807,7 @@ EOT;
 		->addWhere("a.asset_type_id = 1")
 		->andWhereNotIn("s.id", $site_not)
 		->orderBy("a.id desc")
-		->limit(40)
+		->limit(50)
 		->execute();
 	
 		$pub_date = date("d M Y H:i:s")." GMT"; 
@@ -2825,13 +2825,14 @@ EOT;
 	$cont = 1;
 	foreach ($asset as $key => $a) {
 		$image = $a->retriveImageUrlByImageUsage("image-4-b");
-		
-		if($image != "" && $cont < 20){
-			$dia = substr($a->created_at, 8, 2);
-			$mes = substr($a->created_at, 5, 2);
-			$ano = substr($a->created_at, 0, 4);
-			
-			$hora = substr($a->created_at, 11, 5);
+				
+		if($image != "" && $cont <= 20){
+			exec("wget --user-agent=\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4\" -O /var/frontend/web/cache/app.cmais.com.br/ginga/midia/noticias/".$cont.".jpg ".$image) ;
+			$image_local = $cont.".jpg";
+			$dia 	= substr($a->created_at, 8, 2);
+			$mes 	= substr($a->created_at, 5, 2);
+			$ano 	= substr($a->created_at, 0, 4);
+		  $hora = substr($a->created_at, 11, 5);
 			
 			$content.= "
 		<item>
@@ -2839,6 +2840,7 @@ EOT;
 			<description><![CDATA[".$a->description."]]></description>
 			<link><![CDATA[".$a->retriveURL()."]]></link>
 			<image><![CDATA[".$image."]]></image>
+			<image_local><![CDATA[".$image_local."]]></image_local>
 			<pubDate><![CDATA[".$dia."/".$mes."/".$ano." ".$hora."]]></pubDate>
 		</item>
 			";
@@ -2850,6 +2852,13 @@ EOT;
 	$content.= "
 </channel>
 </rss>";
+
+	$content = utf8_decode($content);
+	
+	file_put_contents("/var/frontend/web/cache/app.cmais.com.br/ginga/midia/rss.xml", $content);
+	chdir("/var/frontend/web/cache/app.cmais.com.br/ginga/");
+	exec("zip -r /var/frontend/web/cache/app.cmais.com.br/ginga/ginga.zip midia");
+	
 	die($content);
 	}
 
