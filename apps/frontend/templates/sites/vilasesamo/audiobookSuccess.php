@@ -1,7 +1,19 @@
 <?php
-//header('Location:http://cmais.com.br/vilasesamo/colecaoincluirbrincando');
-//exit;
-?>
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a, SectionAsset sa, Section s')
+      ->where('a.id = sa.asset_id')
+      ->andWhere('s.id = sa.section_id')
+      ->andWhere('s.slug = "audiobook"')
+      ->andWhere('a.site_id = ?', (int)$site->id)
+      ->groupBy('sa.asset_id')
+      ->orderBy('sa.display_order')
+      ->limit(30)
+      ->execute();
+      
+      
+  ?>
+  
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
@@ -177,7 +189,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <?php //if(count($pager) > 0): ?>
               <?php $i = 1; ?>
                 <?php //foreach($pager->getResults() as $d): ?>
-                <?php foreach($section->getAssets() as $d): ?>
+                <?php //foreach($section->getAssets() as $d): ?>
+                <?php foreach($assets as $d): ?>
                   {name:"<?php echo $d->getTitle()?>",
                 description:"<?php echo $d->getTitle()?>",
                 mp3:"/uploads/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile() ?>"},

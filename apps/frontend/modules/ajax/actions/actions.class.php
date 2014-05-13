@@ -10,7 +10,7 @@
  */
 class ajaxActions extends sfActions
 {
-
+  
  /**
   * Executes index action
   *
