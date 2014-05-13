@@ -120,9 +120,6 @@
           <div class="asset" style="display:none;">
             <?php //echo html_entity_decode($asset->AssetContent->render()) ?>
             <!--GAME-->
-            
-            
-            
             <div class="container">
               
               <div class="jumbotron back-entry-sesame-street">
@@ -135,62 +132,6 @@
                 </p>
               </div>
             </div>
-            
-            
-
-            
-            
-    <!-- Game canvas -->
-    <div id="game">
-      <a href="http://cmais.com.br/vilasesamo/jogos/quebra-cabeca-vila-sesamo" class="botoes btn-inicio-canvas" id="inicio_canvas" style="display: none;"></a>
-      <a href="http://cmais.com.br/vilasesamo" class="botoes btn-volta-canvas" id="volta_canvas" style="display: none;"> </a>
-      <canvas id="canvas" style="display:none"></canvas>
-      <canvas id="canvas_bg" style="display:none"></canvas>
-    </div>
-    
-    <!-- DEBUG -->
-    <div id="debug" style="display:none">
-      <div>
-        pieces: <input type="text" name="p" id="p" />
-        pieces placed: <input type="text" name="pp" id="pp" />
-        lines: <input type="text" name="l" id="l" />
-        Pieces width: <input type="text" name="pw" id="pw" />
-        Pieces height: <input type="text" name="ph" id="ph" />
-      </div>
-      <div>
-        moving: <input type="text" name="moving" id="moving" />
-        over: <input type="text" name="over" id="over" />
-        selected: <input type="text" name="selected" id="selected" />
-      </div>
-      <div>
-        x: <input type="text" name="mx" id="mx" />
-        y: <input type="text" name="my" id="my" />
-      </div>
-      <div>
-        p1 x: <input type="text" name="px" id="px" />
-        p1 y: <input type="text" name="py" id="py" />
-      </div>
-      <div>
-        h1 x: <input type="text" name="hx" id="hx" />
-        h1 y: <input type="text" name="hy" id="hy" />
-      </div>
-      <div>
-        h2 x: <input type="text" name="hx2" id="hx2" />
-        h2 y: <input type="text" name="hy2" id="hy2" />
-      </div>
-    </div>
-    <!-- /DEBUG -->
-
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <!--script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/bower_components/jquery/jquery.js"></script-->
-    <!-- endbower -->
-    <!-- endbuild -->
-
-  
-
-
-            
             <!--GAME-->
            
           </div>
