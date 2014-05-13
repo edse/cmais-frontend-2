@@ -2824,7 +2824,7 @@ EOT;
 	
 	$cont = 1;
 	foreach ($asset as $key => $a) {
-		$image = $a->retriveImageUrlByImageUsage("image-4-b");
+		$image = $a->retriveImageUrlByImageUsage("image-4");
 				
 		if($image != "" && $cont <= 20){
 			exec("wget --user-agent=\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4\" -O /var/frontend/web/cache/app.cmais.com.br/ginga/midia/noticias/".$cont.".jpg ".$image) ;
