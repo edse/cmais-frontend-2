@@ -1,7 +1,20 @@
 <?php
-//header('Location:http://cmais.com.br/vilasesamo/colecaoincluirbrincando');
-//exit;
-?>
+    $assets = Doctrine_Query::create()
+      ->select('a.*')
+      ->from('Asset a, SectionAsset sa, Section s')
+      ->where('a.id = sa.asset_id')
+      ->andWhere('s.id = sa.section_id')
+      ->andWhere('s.slug = "audiobook"')
+      ->andWhere('a.site_id = ?', (int)$site->id)
+      ->andWhere('a.asset_type_id = 1')
+      ->groupBy('sa.asset_id')
+      ->orderBy('a.id display_order')
+      ->limit(30)
+      ->execute();
+      
+      echo count($assets);
+  ?>
+  
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
