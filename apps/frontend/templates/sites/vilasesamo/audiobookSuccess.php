@@ -39,7 +39,6 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   <!--Explicação acessibilidade-->
   <h1 tabindex="0" class="ac-explicacao">
    <?php echo $section->getDescription(); ?>
-   <?php echo count($assets)."teste3>>>>>>>>>>";  ?>
   </h1>
   
   <!--section -->
@@ -190,7 +189,8 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
             <?php //if(count($pager) > 0): ?>
               <?php $i = 1; ?>
                 <?php //foreach($pager->getResults() as $d): ?>
-                <?php foreach($section->getAssets() as $d): ?>
+                <?php //foreach($section->getAssets() as $d): ?>
+                <?php foreach($assets as $d): ?>
                   {name:"<?php echo $d->getTitle()?>",
                 description:"<?php echo $d->getTitle()?>",
                 mp3:"/uploads/assets/audio/default/<?php echo $d->AssetAudio->getOriginalFile() ?>"},
