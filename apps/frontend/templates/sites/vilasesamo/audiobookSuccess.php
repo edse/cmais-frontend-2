@@ -40,7 +40,7 @@ $noscript = "  <noscript>Desculpe mas no seu navegador não esta habilitado o Ja
   <!--Explicação acessibilidade-->
   <h1 tabindex="0" class="ac-explicacao">
    <?php echo $section->getDescription(); ?>
-   <?php echo count($assets)."teste>>>>>>>>>>"; ?>
+   <?php echo count($assets)."teste>>>>>>>>>>";  ?>
   </h1>
   
   <!--section -->
