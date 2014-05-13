@@ -12,7 +12,7 @@
       ->limit(30)
       ->execute();
       
-      echo count($assets).">>>>>>>>>>";
+      echo count($assets)."teste>>>>>>>>>>";
   ?>
   
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
