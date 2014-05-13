@@ -151,7 +151,6 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .jcarousel-prev{width:20px; height: 80px; background: url(http://cmais.com.br/portal/images/capaPrograma/semana-de-museus/seta_1.png) no-repeat left top; position:absolute; top: 25%; left: -3%;cursor: pointer;}
 .jcarousel-prev:hover {background-position:left top}
 .jcarousel-next{width:20px; height: 80px; background: url(http://cmais.com.br/portal/images/capaPrograma/semana-de-museus/seta_2.png) no-repeat left bottom; position:absolute; top: -18%; right: -5%;cursor: pointer;}
-.jcarousel-next:hover {background-position:right bottom;}
 .box-confira{background-color: #F0EEEE;padding: 8px;overflow: hidden;}
 .box-confira h2{font-size:14px;}
 .btn-confira{background-color: #2c9700;width: 140px;margin: 2px;height: 29px;float: left;}
