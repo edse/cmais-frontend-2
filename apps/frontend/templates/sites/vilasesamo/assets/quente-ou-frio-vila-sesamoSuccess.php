@@ -189,31 +189,7 @@
 
   
 
-    <!-- build:js scripts/plugins.js -->
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/bower_components/bootstrap/js/affix.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/bower_components/bootstrap/js/alert.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/bower_components/bootstrap/js/dropdown.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/bower_components/bootstrap/js/tooltip.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/bower_components/bootstrap/js/modal.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/bower_components/bootstrap/js/transition.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/bower_components/bootstrap/js/button.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/bower_components/bootstrap/js/popover.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/bower_components/bootstrap/js/carousel.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/bower_components/bootstrap/js/scrollspy.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/bower_components/bootstrap/js/collapse.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/bower_components/bootstrap/js/tab.js"></script>
-    <!-- endbuild -->
 
-    <!-- build:js({app,.tmp}) scripts/main.js -->
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/extend.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/mouse.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/point2D.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/piece.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/holder.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/game.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/puzzle.js"></script>
-    <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/init.js"></script>
-    <!-- endbuild -->
             
             <!--GAME-->
            
