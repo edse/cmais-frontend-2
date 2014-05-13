@@ -170,7 +170,7 @@ var href = new Array;
 $(".instagram-box").instagram({
   hash: 'CompartilheCultura',
   clientId: 'acc3ed4dfcd14106b4805f0248604b8c',
-  show : 6,
+  show : 10,
   onComplete:function(){
     console.log();
     $('.instagram-box a').addClass('fancybox-media').attr('rel','instagram');
