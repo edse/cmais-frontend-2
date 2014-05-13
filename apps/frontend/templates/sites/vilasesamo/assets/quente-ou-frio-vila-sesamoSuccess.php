@@ -32,11 +32,7 @@
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/jogos-vila-sesamo/qf/Base/GameFrame/css/stylesheet.css" type="text/css" charset="utf-8" />
-<script data-main="src/Main" src="http://cmais.com.br/portal/jogos-vila-sesamo/qf/Base/lib/require.js"></script>
-
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
-<?php echo $noscript; ?>
-<script src="http://cmais.com.br/portal/js/modernizr/modernizr.min.js" type="text/javascript"></script>
 <?php echo $noscript; ?>
 <script src="http://cmais.com.br/portal/js/hammer.min.js" type="text/javascript"></script>
 <?php echo $noscript; ?>
@@ -48,6 +44,8 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
 <?php echo $noscript; ?>
 <script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/modernizr.custom.01885.js"></script>
+<?php echo $noscript; ?>
+<script data-main="src/Main" src="http://cmais.com.br/portal/jogos-vila-sesamo/qf/Base/lib/require.js"></script>
 <?php echo $noscript; ?>
 <script>
   $("body").addClass("interna jogos");
