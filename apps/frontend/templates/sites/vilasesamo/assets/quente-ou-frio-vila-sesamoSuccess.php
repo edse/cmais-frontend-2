@@ -47,7 +47,7 @@
 <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
 
 <link rel="stylesheet" href="http://cmais.com.br/portal/jogos-vila-sesamo/qf/Base/GameFrame/css/stylesheet.css" type="text/css" charset="utf-8" />
-<script data-main="src/Main" src="http://cmais.com.br/portal/jogos-vila-sesamo/qf/Base/lib/require.js"></script>
+<script data-main="http://cmais.com.br/portal/jogos-vila-sesamo/qf/QuenteOuFrio/src/Main" src="http://cmais.com.br/portal/jogos-vila-sesamo/qf/Base/lib/require.js"></script>
 <?php echo $noscript; ?>
 
 <script>
