@@ -31,8 +31,8 @@
 
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/internas.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/assets.css" type="text/css" />
-<link rel="stylesheet" href="../Base/GameFrame/css/stylesheet.css" type="text/css" charset="utf-8" />
-<script data-main="src/Main" src="../Base/lib/require.js"></script>
+<link rel="stylesheet" href="http://cmais.com.br/portal/jogos-vila-sesamo/qf/Base/GameFrame/css/stylesheet.css" type="text/css" charset="utf-8" />
+<script data-main="src/Main" src="http://cmais.com.br/portal/jogos-vila-sesamo/qf/Base/lib/require.js"></script>
 
 <script src="http://cmais.com.br/portal/js/jquery-ui/js/jquery-ui-1.8.11.custom.min.js"></script>
 <?php echo $noscript; ?>
@@ -136,73 +136,9 @@
               </div>
             </div>
             
-            <ul class="nav nav-pills abs">
-              <li id="home">
-                <button id="btn-home" type="button" class="btn btn-xs btn-default"> <span class="glyphicon glyphicon-home"></span> Home</button>
-              </li>
-              <li id="play">
-                <button id="btn-play" type="button" class="btn btn-xs btn-default"> <span class="glyphicon glyphicon-play"></span> Play</button>
-              </li>
-              <li id="pause" class="control">
-                <button id="btn-pause" type="button" class="btn btn-xs btn-default"> <span class="glyphicon glyphicon-pause"></span> Pause</button>
-              </li>
-              <li id="fullscreen" class="control">
-                <button id="btn-fullscreen" type="button" class="btn btn-xs btn-default"> <span class="glyphicon glyphicon-fullscreen"></span> Fullscreen</button>
-              </li>
-              <li id="exitfullscreen" class="control">
-                <button id="btn-exitfullscreen" type="button" class="btn btn-xs btn-default"> <span class="glyphicon glyphicon-resize-small"></span> Exit Fullscreen</button>
-              </li>
-              <li id="bgm" class="control">
-                <button id="btn-bmg-on" type="button" class="btn btn-xs btn-default"> <span class="glyphicon glyphicon-volume-up"></span> BGM On</button>
-              </li>
-              <li id="bgmoff" class="control">
-                <button id="btn-bmg-off" type="button" class="btn btn-xs btn-default"> <span class="glyphicon glyphicon-volume-off"></span> BGM Off</button>
-              </li>
-              <li id="sfx" class="control">
-                <button id="btn-sfx-on" type="button" class="btn btn-xs btn-default"> <span class="glyphicon glyphicon-volume-up"></span> SFX On</button>
-              </li>
-              <li id="sfxoff" class="control">
-                <button id="btn-sfx-off" type="button" class="btn btn-xs btn-default"> <span class="glyphicon glyphicon-volume-off"></span> SFX Off</button>
-              </li>
-              <li id="autosnap" class="control">
-                <button id="btn-autosnap-on" type="button" class="btn btn-xs btn-default"> <span class="glyphicon glyphicon-remove"></span> Auto-Snap On</button>
-              </li>
-              <li id="autosnapoff" class="control">
-                <button id="btn-autosnap-off" type="button" class="btn btn-xs btn-default"> <span class="glyphicon glyphicon-ok"></span> Auto-Snap Off</button>
-              </li>
-            </ul>
+            
 
-            <!-- Game modal -->
-            <div id="modal-success" class="modal show" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div id="modal-dialog" class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    
-                    <!--p><span id="tempodojogo" class="tempo">4 peças em 30s</span></p-->
-                    <span id="logo" class="logo"></span>
-                  </div>
-                  <div class="modal-body">   
-                     <div class="btn-group fasedownload" style="display:none;"> 
-                       <h2>Clique para <br>a atividade!</h2>  
-                       <a href="http://cmais.com.br/vilasesamo/atividades/quebra-cabeca-vila-sesamo-fase-01" target="_blank" class="botoes btn-download1" id="fase1" style="display:none;"></a>
-                       <a href="http://cmais.com.br/vilasesamo/atividades/quebra-cabeca-vila-sesamo-fase-02" target="_blank" class="botoes btn-download2" id="fase2" style="display:none;"></a>
-                       <a href="http://cmais.com.br/vilasesamo/atividades/quebra-cabeca-vila-sesamo-fase-03" target="_blank" class="botoes btn-download3" id="fase3" style="display:none;"></a>
-
-                     </div>
-                  </div>
-                  <div class="modal-footer">
-                      <div class="btn-group">
-                      <a href="http://cmais.com.br/vilasesamo/jogos/quebra-cabeca-vila-sesamo" class="botoes btn-inicio" id="inicio"> </a>
-                      <button type="button" class="botoes btn-pxfase" id="next"></button>
-                      <button type="button" class="botoes btn-restart" id="restart" style="display: none;"> </button>
-                      <p><span id="stage" class="fase">Fase 1 completa!</span></p>
-                      
-                      
-                    </div>
-                  </div>
-                </div><!-- /.modal-content -->
-              </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
+            
             
     <!-- Game canvas -->
     <div id="game">
