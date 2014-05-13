@@ -45,10 +45,8 @@
 <script type="text/javascript" src="http://cmais.com.br/portal/js/vilasesamo2/paiseeducadores.js"></script>
 <?php echo $noscript; ?>
 <link type="text/css" rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/vilasesamo2/responsive-carousel/style-vilasesamo.css"/>
-<script type="text/javascript" src="http://cmais.com.br/portal/js/bootstrap/bootstrap-fileupload.js"></script>
-<?php echo $noscript; ?>
-<script src="http://cmais.com.br/portal/js/vilasesamo2/puzzle/modernizr.custom.01885.js"></script>
-<?php echo $noscript; ?>
+
+
 <script>
   $("body").addClass("interna jogos");
 </script>
@@ -120,8 +118,8 @@
           <div class="asset" style="display:none;">
             <?php //echo html_entity_decode($asset->AssetContent->render()) ?>
             <!--GAME-->
-teste
-            
+            <div id="game"></div>
+            <div id="orientation"></div>
             <!--GAME-->
            
           </div>
