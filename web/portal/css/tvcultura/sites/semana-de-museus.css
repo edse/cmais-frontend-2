@@ -166,4 +166,4 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .box-instagram a img{width: 122px; height: 122px;}
 .box-padrao{margin-top:20px;}
 .box-padrao h4 {background: #ff0000;color: #fff;padding-left: 10px;height: 25px;padding-top: 5px;line-height: 20px;width: 630px;margin-left: 10px;margin-bottom: 5px;text-transform: none;}
-.box-padrao h4 span {background: url(http://cmais.com.br/portal/images/capaPrograma/semana-de-museus/instagram_icon.png) no-repeat;width: 20px;height: 24px;display: block;float: left;margin-right: 5px;}
+.box-padrao h4 span {background: url(http://cmais.com.br/portal/images/capaPrograma/semana-de-museus/instagram_icon.png) no-repeat;width: 20px;height: 24px;display: block;float: left;margin-right:5px;}
