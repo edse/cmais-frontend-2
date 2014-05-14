@@ -105,7 +105,7 @@
 								
 		   	   	 </div>
 		   	   		<div id="direita"class="grid1">
-								<?php//	echo $asset_quality->AssetContent->render(); ?>
+								<?php //	echo $asset_quality->AssetContent->render(); ?>
 							
 								<div class="texto">
                   <p><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">Entre 12 e 16 de maio, a <a href="http://cmais.com.br"><strong>TV Cultura</strong></a> participa da 12ª Semana de Museus, organizada pelo IBRAM (Instituto Brasileiro de Museus) e realizada em diversas instituições culturais do Brasil. O tema escolhido pela Fundação Padre Anchieta – mantenedora da TV Cultura, Rádios Cultura AM e FM e TV Rá Tim Bum! – para esta edição é </span><strong style="font-family: arial, helvetica, sans-serif; font-size: 14px;"><b>Cultura também é Museu: onde fantasias se tornam realidade</b>. </strong><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">Durante cinco dias, a emissora abrirá as portas para aqueles que desejam conhecer sua história e saber como é o dia a dia de uma televisão.</span><br>
