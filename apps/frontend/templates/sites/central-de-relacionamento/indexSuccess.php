@@ -119,7 +119,8 @@ $(document).ready(function(){
                       <div class="controls">
                         <input type="text" class="input-xlarge disabled" id="f2_email2" name="f2_email2" placeholder="" disabled="disabled">
                         <div class="alert alert-block" style="margin: 10px 0 10px 0;padding: 5px;">
-                          <p class="help-block">Você receberá uma mensagem de confirmação para validar este e-mail após enviar o cadastro preenchido.</p>
+                          <!--p class="help-block">Você receberá uma mensagem de confirmação para validar este e-mail após enviar o cadastro preenchido.</p-->
+                          <p class="help-block">Preencha o cadastro abaixo e envie para validar seu e-mail.</p>
                         </div>
                         <span class="atencao">* Campos obrigatórios</span>
                       </div>
@@ -725,8 +726,10 @@ $(document).ready(function(){
                     <p><span class="label label-success">Usuário cadastrado com sucesso</span></p> 
                   </div>
                   <div class="alert alert-block fade in">
-                    <h4 class="alert-heading" style="color: red;">SEU CADASTRO FOI EFETUADO COM SUCESSO!</h4>
-                    <p>Para validar seu e-mail e ativar seu cadastro, verifique agora a mensagem enviada para sua Caixa de Entrada.</p>
+                    <!--h4 class="alert-heading" style="color: red;">SEU CADASTRO FOI EFETUADO COM SUCESSO!</h4-->
+                    <h4 class="alert-heading" style="color: red;">E-MAIL PARA VALIDAÇÃO FOI ENVIADO!</h4>
+                    <p>Mensagem enviada para seu e-mail. Ative seu cadastro e envie sua mensagem!</p>
+                    <!--p>Para validar seu e-mail e ativar seu cadastro, verifique agora a mensagem enviada para sua Caixa de Entrada.</p-->
                   </div>
                 </div>
                 <!-- /row7 -->
@@ -813,7 +816,26 @@ $(document).ready(function(){
                 <script>
                 
                 
-                var datas = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s"];
+                var datas = [
+                "Institucional -  Escolha para contatar áreas de interesse: Atendimento Central, Área Técnica, Venda de Produtos, Área de Afiliadas, Recrutamento e Seleção.<br/>Emissora (TV ou Rádio) – Use para contato com programas da grade de programação.<br/>Portal Cmais – Contato e relatar problemas nos sites do portal.",
+                "Escolha nas listas:  interesse ou  programa",
+                "Categorize o  assunto",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "l",
+                "m",
+                "n",
+                "o",
+                "p",
+                "q",
+                "r",
+                "s"];
                 $(document).ready(function(){
               		$("#form4 .control-group select").each(function(index){
               		  if(index>=5){
