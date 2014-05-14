@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/defaultPrograma.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/videos.css" type="text/css" />
 <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $site->getSlug() ?>.css" type="text/css" />
 <script type="text/javascript">
@@ -14,6 +15,9 @@ $(function(){
     });
 });
 </script>
+<style type="text/css">
+  .rodape-cmais { display:none; }
+</style>
 
 <?php
   $vid1 = Doctrine_Query::create()
@@ -46,10 +50,13 @@ $(function(){
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
+	<div class="bg-chamada">
+	  <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
+	</div>
+	<div class="bg-site"></div>
+
     <!-- / CAPA SITE -->
     <div id="capa-site">
-
-      <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
 
       <!-- BARRA SITE -->
       <div id="barra-site">
@@ -58,12 +65,6 @@ $(function(){
           <h2>
             <a href="<?php echo $program->retriveUrl() ?>">
               <img src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>" alt="<?php echo $program->getTitle() ?>" title="<?php echo $program->getTitle() ?>" />
-            </a>
-          </h2>
-          <?php else: ?>
-          <h2>
-            <a href="<?php echo $site->retriveUrl() ?>">
-              <img src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>" alt="<?php echo $site->getTitle() ?>" title="<?php echo $site->getTitle() ?>" />
             </a>
           </h2>
           <?php endif; ?>
@@ -175,13 +176,17 @@ $(function(){
             </script>
           </div>
           <!-- / BOX PUBLICIDADE 2 -->
-
+          
+					<?php if (isset($displays["rodape-interno"])): ?>
+          <!--APOIO-->
+          <?php include_partial_from_folder('blocks','global/support', array('displays' => $displays["rodape-interno"])) ?>
+          <!--/APOIO-->
+          <?php endif; ?>
+          
         </div>
         <!-- /CONTEUDO PAGINA -->
       </div>
       <!-- /MIOLO -->
     </div>
     <!-- / CAPA SITE -->
-
-
 
