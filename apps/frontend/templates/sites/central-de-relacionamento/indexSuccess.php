@@ -816,8 +816,10 @@ $(document).ready(function(){
                 var datas = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s"];
                 $(document).ready(function(){
               		$("#form4 .control-group select").each(function(index){
-              			$(this).parent().append('<i class=" icon-question-sign example" data-toggle="tooltip" data-placement="right" title="'+datas[index]+'" data-original-title="'+datas[index]+'"></i>');
-              			$(".example").tooltip();
+              		  if(index>=5){
+                			$(this).parent().append('<i class=" icon-question-sign example" data-toggle="tooltip" data-placement="right" title="'+datas[index]+'" data-original-title="'+datas[index]+'"></i>');
+                			$(".example").tooltip();
+              			}
               		})
 
 
