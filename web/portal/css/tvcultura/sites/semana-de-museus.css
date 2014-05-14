@@ -148,6 +148,7 @@ select { background:#f3f3f3; border-color:#c5c5c5; border-radius:0; }
 .box-playlist .img:hover {border-color: #a74887;height: 82px;width:110px;}
 #direita{float: right;text-align: left;}
 #direita p{font-size:13px;line-height:17px}
+#direita img{display:none}
 .jcarousel-prev{width:20px; height: 80px; background: url(http://cmais.com.br/portal/images/capaPrograma/semana-de-museus/seta_1.png) no-repeat left top; position:absolute; top: 25%; left: -3%;cursor: pointer;}
 .jcarousel-prev:hover {background-position:left top}
 .jcarousel-next{width:20px; height: 80px; background: url(http://cmais.com.br/portal/images/capaPrograma/semana-de-museus/seta_2.png) no-repeat left bottom; position:absolute; top: -18%; right: -5%;cursor: pointer;}

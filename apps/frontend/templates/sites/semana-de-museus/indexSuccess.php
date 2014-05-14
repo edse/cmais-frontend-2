@@ -105,34 +105,7 @@
 								
 		   	   	 </div>
 		   	   		<div id="direita"class="grid1">
-								<?php //	echo $asset_quality->AssetContent->render(); ?>
-							
-								<div class="texto">
-                  <p><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">Entre 12 e 16 de maio, a <a href="http://cmais.com.br"><strong>TV Cultura</strong></a> participa da 12ª Semana de Museus, organizada pelo IBRAM (Instituto Brasileiro de Museus) e realizada em diversas instituições culturais do Brasil. O tema escolhido pela Fundação Padre Anchieta – mantenedora da TV Cultura, Rádios Cultura AM e FM e TV Rá Tim Bum! – para esta edição é </span><strong style="font-family: arial, helvetica, sans-serif; font-size: 14px;"><b>Cultura também é Museu: onde fantasias se tornam realidade</b>. </strong><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">Durante cinco dias, a emissora abrirá as portas para aqueles que desejam conhecer sua história e saber como é o dia a dia de uma televisão.</span><br>
-									<br>
-									<span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">O evento conta com duas exposições exclusivas. Uma dela é </span><b>Castelo Rá-Tim-Bum 20 anos</b><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">, composta por figurinos, material cenográfico e documentação da atração infanto-juvenil. A outra é </span><em style="font-family: arial, helvetica, sans-serif; font-size: 14px;">Também sou cultura</b><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">, formada pelo acervo de artes visuais. A TV Cultura também irá prestar homenagem aos seus funcionários e celebrar os 45 anos de sua trajetória.</span><br>
-									<br>
-									<span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">O visitante também terá a oportunidade de conhecer não só as obras de arte que constituem o acervo Fundação como também diversas áreas da emissora, como as redações do jornalismo e da rádio, os estúdios, o prédio administrativo e as salas de controle de exibição.</span><br>
-									<br>
-									<span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">A duração de cada visita é de aproximadamente duas horas. Serão realizadas em dois horários: 11h e 16h (com exceção da sexta-feira, dia 16, que terá visitação somente no período da manhã).</span><br>
-									<br>
-									<span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">Inscrições encerradas!</span><br>
-									<br>
-									<b style="font-family: arial, helvetica, sans-serif; font-size: 14px;">Serviço</b	></p>
-								<p>
-									<span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">TV Cultura – Semana Nacional de Museus</span></span></p>
-								<p>
-									<span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">De 12 a 16 de maio de 2014 (no dia 16 haverá visita somente no período da manhã).</span></span></p>
-								<p>
-									<span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Horários: 11h e 16h</span></span></p>
-								<p>
-									<span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Dúvidas: mandar um e-mail para: <a href="mailto:semanademuseus@tvcultura.com.br" title="mailto:semanademuseus@tvcultura.com.br"><span title="mailto:semanademuseus@tvcultura.com.br">semanademuseus@tvcultura.com.br</span></a></span></span></p>
-								<p>
-									<span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Informações: 2182-3222</span></span></p>
-								<p></p>
-                </div>
-								
-								
+								<?php	echo $asset_quality->AssetContent->render(); ?>
 
 							</div>
 
