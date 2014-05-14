@@ -105,8 +105,8 @@
 								
 		   	   	 </div>
 		   	   		<div id="direita"class="grid1">
-								<?php	echo $asset_quality->AssetContent->render(); ?>
-								<?php/*	
+								<?php//	echo $asset_quality->AssetContent->render(); ?>
+							
 								<div class="texto">
                   <p><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">Entre 12 e 16 de maio, a <a href="http://cmais.com.br"><strong>TV Cultura</strong></a> participa da 12ª Semana de Museus, organizada pelo IBRAM (Instituto Brasileiro de Museus) e realizada em diversas instituições culturais do Brasil. O tema escolhido pela Fundação Padre Anchieta – mantenedora da TV Cultura, Rádios Cultura AM e FM e TV Rá Tim Bum! – para esta edição é </span><strong style="font-family: arial, helvetica, sans-serif; font-size: 14px;"><b>Cultura também é Museu: onde fantasias se tornam realidade</b>. </strong><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">Durante cinco dias, a emissora abrirá as portas para aqueles que desejam conhecer sua história e saber como é o dia a dia de uma televisão.</span><br>
 									<br>
@@ -116,7 +116,7 @@
 									<br>
 									<span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">A duração de cada visita é de aproximadamente duas horas. Serão realizadas em dois horários: 11h e 16h (com exceção da sexta-feira, dia 16, que terá visitação somente no período da manhã).</span><br>
 									<br>
-									<span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">Para participar, os interessados devem encaminhar um e-mail para o endereço </span><a href="mailto:semanademuseus@tvcultura.com.br" style="font-family: arial, helvetica, sans-serif; font-size: 14px;" title="mailto:semanademuseus@tvcultura.com.br"><span title="mailto:semanademuseus@tvcultura.com.br">semanademuseus@tvcultura.com.br</span></a><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">. Vagas e horários de visitação são limitados.</span><br>
+									<span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">Inscrições encerradas!</span><br>
 									<br>
 									<b style="font-family: arial, helvetica, sans-serif; font-size: 14px;">Serviço</b	></p>
 								<p>
@@ -126,12 +126,12 @@
 								<p>
 									<span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Horários: 11h e 16h</span></span></p>
 								<p>
-									<span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Inscrições: mandar um e-mail para: <a href="mailto:semanademuseus@tvcultura.com.br" title="mailto:semanademuseus@tvcultura.com.br"><span title="mailto:semanademuseus@tvcultura.com.br">semanademuseus@tvcultura.com.br</span></a></span></span></p>
+									<span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Dúvidas: mandar um e-mail para: <a href="mailto:semanademuseus@tvcultura.com.br" title="mailto:semanademuseus@tvcultura.com.br"><span title="mailto:semanademuseus@tvcultura.com.br">semanademuseus@tvcultura.com.br</span></a></span></span></p>
 								<p>
 									<span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Informações: 2182-3222</span></span></p>
 								<p></p>
                 </div>
-								*/?>
+								
 								
 
 							</div>
