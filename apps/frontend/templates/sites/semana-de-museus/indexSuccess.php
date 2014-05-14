@@ -42,7 +42,7 @@
 								<h2><?php echo $asset_quality->getTitle();?></h2>
 								<p><?php echo $asset_quality->getDescription();?></p>
 
-				   	   	<?php  $asset_x = Doctrine::getTable('Asset')->findOneById(162068); ?> <!-- numero do asset video gallery-->
+				   	   	<?php  $asset_x = Doctrine::getTable('Asset')->findOneById(191730); ?> <!-- numero do asset video gallery-->
    							<?php $relacionados = $asset_x->retriveRelatedAssets(); ?>
 
 
@@ -105,8 +105,8 @@
 								
 		   	   	 </div>
 		   	   		<div id="direita"class="grid1">
-								<?php	//echo $asset_quality->AssetContent->render(); AQUI PODE COLOCAR A DESCIÇÃO DO ASSET DO TOPO ?>
-									
+								<?php	echo $asset_quality->AssetContent->render(); ?>
+								<?php/*	
 								<div class="texto">
                   <p><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">Entre 12 e 16 de maio, a <a href="http://cmais.com.br"><strong>TV Cultura</strong></a> participa da 12ª Semana de Museus, organizada pelo IBRAM (Instituto Brasileiro de Museus) e realizada em diversas instituições culturais do Brasil. O tema escolhido pela Fundação Padre Anchieta – mantenedora da TV Cultura, Rádios Cultura AM e FM e TV Rá Tim Bum! – para esta edição é </span><strong style="font-family: arial, helvetica, sans-serif; font-size: 14px;"><b>Cultura também é Museu: onde fantasias se tornam realidade</b>. </strong><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">Durante cinco dias, a emissora abrirá as portas para aqueles que desejam conhecer sua história e saber como é o dia a dia de uma televisão.</span><br>
 									<br>
@@ -131,7 +131,7 @@
 									<span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Informações: 2182-3222</span></span></p>
 								<p></p>
                 </div>
-								
+								*/?>
 								
 
 							</div>
@@ -177,7 +177,11 @@ $(".instagram-box").instagram({
     $('.instagram-box a img').each(function(i){
       href[i] = $(this).attr("src");
       url = href[i].split("_");
-      href[i] = url[0] + "_7.jpg";  
+      if(window.location.indexOf("origin")<=0){
+      	href[i] = url[0] + "_o.jpg";  
+      }else{
+      	href[i] = url[0] + "_7.jpg";  
+      }
       console.log(href[i]);     
     });
     $('.instagram-box a').each(function(i){
@@ -186,6 +190,7 @@ $(".instagram-box").instagram({
     })
   }
 });
+
 
 $('.fancybox-media').fancybox({
   openEffect  : 'none',

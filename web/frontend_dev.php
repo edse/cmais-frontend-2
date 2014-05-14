@@ -15,6 +15,6 @@ if (!in_array(@$_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1', '172.20.18.133
 */
 require_once(dirname(__FILE__).'/../config/ProjectConfiguration.class.php');
 
-$configuration = ProjectConfiguration::getApplicationConfiguration('frontend', 'prod', true);
+$configuration = ProjectConfiguration::getApplicationConfiguration('frontend', 'dev', false);
 sfContext::createInstance($configuration)->dispatch();
  
