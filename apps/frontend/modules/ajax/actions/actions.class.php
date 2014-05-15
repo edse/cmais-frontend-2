@@ -2856,9 +2856,10 @@ EOT;
 
 	$content = utf8_decode($content);
 	
-	file_put_contents("/var/frontend/web/cache/app.cmais.com.br/ginga/midia/rss.xml", $content);
+	file_put_contents("/var/frontend/web/cache/app.cmais.com.br/ginga/rss.xml", $content);
 	chdir("/var/frontend/web/cache/app.cmais.com.br/ginga/");
-	exec("zip -r /var/frontend/web/cache/app.cmais.com.br/ginga/ginga.zip midia");
+	exec("rm ginga.zip");
+	exec("zip -r /var/frontend/web/cache/app.cmais.com.br/ginga/ginga.zip ./");
 	
 	die($content);
 	}
