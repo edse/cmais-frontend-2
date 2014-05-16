@@ -33,7 +33,7 @@
 								
 						?>
 						<div class="aovivoDescricao">
-	           	<p> <?php echo $schedules[0]->title;?></p>
+	           	<h2> <?php echo $schedules[0]->title;?></h2>
 	           	<p><?php echo $schedules[0]->description;?></p>
             </div>	
               <!-- contador -->
