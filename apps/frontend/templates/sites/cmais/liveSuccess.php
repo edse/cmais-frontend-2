@@ -93,7 +93,24 @@
             <!-- ESQUERDA -->
             <div id="esquerda" class="grid2">
               
-              <div id="livestream2" style="display: none;"><p>Seu browser não suporta Flash.</p></div>
+              <div id="livestream2" style="display: none;"><p>Seu browser não suporta Flash.</p>
+              	
+                  <p>
+                    <?php 
+                      if($schedules[0]->title != "")
+                        echo $schedules[0]->title;
+                      else
+                        echo $schedules[0]->Program;
+                    ?>
+                  </p>
+                  <p>
+                    <?php if($schedules[0]->description_short != ""){
+                        echo substr($schedules[0]->description_short, 0, 180);
+                        if(strlen($schedules[0]->description_short) > 180) echo "...";
+                      }
+                    ?>
+                  </p>
+              </div>
 
               <!-- lista calendario -->
               <?php include_partial_from_folder('blocks','global/display-2c-broadcast2', array('live_id' => $schedules[0]->id)) ?>
