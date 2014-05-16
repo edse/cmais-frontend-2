@@ -62,7 +62,7 @@
 																			}
 																		</script>
 																		<div class="box-thumbs">
-																			<h4>Assista todos os vídeos</h4>
+																			<h4>Assista a todos os vídeos</h4>
 																			<ul class="box-playlist grid2 carrossel">			                  			
 				                  	<?php else:?>
 				                  		<?php if($d->getId() != 164212):?>
