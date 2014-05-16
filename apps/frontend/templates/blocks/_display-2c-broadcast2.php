@@ -53,6 +53,25 @@
                
               </div>
               <!-- /contador -->
+          <?php //SE TIVER UM PROGRAMA == LIVE 
+              $schedules = Doctrine_Query::create()
+                ->select('s.*')
+                ->from('Schedule s')
+                ->where('s.is_live = ?', 1)
+                ->andWhere('s.date_start < ?', date('Y-m-d H:i:s'))
+                ->andWhere('s.date_end > ?', date('Y-m-d H:i:s'))
+                ->andWhere('s.channel_id = ?', 1)
+                ->orderBy('s.date_start asc')
+                ->limit('1')
+                ->execute();
+								
+						?>
+            <?php 
+              if($schedules[0]->title != "")
+                echo $schedules[0]->title;
+              else
+                echo $schedules[0]->description;
+            ?>
 
               <ul class="lista-calendario grid2">
               <?php foreach($displays as $k=>$d): ?>
