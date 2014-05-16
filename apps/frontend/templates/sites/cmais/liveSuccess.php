@@ -51,6 +51,19 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
+<?php //SE TIVER UM PROGRAMA == LIVE 
+    $schedules = Doctrine_Query::create()
+      ->select('s.*')
+      ->from('Schedule s')
+      ->where('s.is_live = ?', 1)
+      ->andWhere('s.date_start < ?', date('Y-m-d H:i:s'))
+      ->andWhere('s.date_end > ?', date('Y-m-d H:i:s'))
+      ->andWhere('s.channel_id = ?', 1)
+      ->orderBy('s.date_start asc')
+      ->limit('1')
+      ->execute();
+?>
+
     <!-- CAPA SITE -->
     <div id="capa-site">
 
