@@ -109,19 +109,10 @@
               <div id="livestream2" style="display: none;"><p>Seu browser não suporta Flash.</p>
               	
                   <p>
-                    <?php 
-                      if($schedules[0]->title != "")
-                        echo $schedules[0]->title;
-                      else
-                        echo $schedules[0]->Program;
-                    ?>
+                    <?php echo $schedules[0]->title; ?>
                   </p>
                   <p>
-                    <?php if($schedules[0]->description_short != ""){
-                        echo substr($schedules[0]->description_short, 0, 180);
-                        if(strlen($schedules[0]->description_short) > 180) echo "...";
-                      }
-                    ?>
+                    <?php  echo substr($schedules[0]->description_short, 0, 180);?>
                   </p>
               </div>
 
