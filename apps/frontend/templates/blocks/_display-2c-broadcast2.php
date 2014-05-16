@@ -32,9 +32,10 @@
                 ->execute();
 								
 						?>
-           	<p> <?php echo $schedules[0]->title;?></p>
-           	<p><?php echo $schedules[0]->description;?></p>
-              	
+						<div class="aovivoDescricao">
+	           	<p> <?php echo $schedules[0]->title;?></p>
+	           	<p><?php echo $schedules[0]->description;?></p>
+            </div>	
               <!-- contador -->
               <div class="contador">
                 <p style="margin-bottom: 10px;">Faltam...</p>
