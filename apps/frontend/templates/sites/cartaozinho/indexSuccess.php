@@ -5,7 +5,6 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
 ?>
 <?php
-if($assets[0]->is_active): 
 $assets = Doctrine_Query::create()
   ->select('a.*')
   ->from('Asset a, SectionAsset sa, Section s')
@@ -16,14 +15,11 @@ $assets = Doctrine_Query::create()
   ->andWhere('a.asset_type_id = 10')
   ->orderBy('a.id desc')
   ->execute();
-endif;
 ?>
-<?php /*
 <div class="bg-chamada">
   <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"]))
   ?>
 </div>
- * */?>
 <div class="bg-site home">
   <!-- CAPA SITE -->
   <div id="capa-site" >
@@ -90,7 +86,7 @@ endif;
     <!-- /BARRA SITE -->
     <!-- MIOLO -->
     <div id="miolo">
-      <?php include_partial_from_folder('blocks','global/shortcuts') ?>
+      <?php// include_partial_from_folder('blocks','global/shortcuts') ?>
 
       <!-- CONTEUDO PAGINA -->
       <div id="conteudo-pagina">
@@ -184,7 +180,7 @@ endif;
           
           
           
-          <?php /*
+          <?php 
           if(date('d')>=21){
             if(date("H:i") >= "14:10"){
               
@@ -192,7 +188,7 @@ endif;
           }else{
             //echo "<div class='juiza'></div>";
           } 
-         */?>
+          ?>
           
           <div class="redes-sociais">
             <a href="https://www.facebook.com/Cartaozinho" class="face" name"Facebook" title="Facebook" target="_blank">Facebook</a>
