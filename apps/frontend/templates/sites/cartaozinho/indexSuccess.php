@@ -86,9 +86,7 @@ $assets = Doctrine_Query::create()
     <!-- /BARRA SITE -->
     <!-- MIOLO -->
     <div id="miolo">
-       <!-- BOX LATERAL -->
-        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
-        <!-- BOX LATERAL -->
+      <?php include_partial_from_folder('blocks','global/shortcuts') ?>
 
       <!-- CONTEUDO PAGINA -->
       <div id="conteudo-pagina">
