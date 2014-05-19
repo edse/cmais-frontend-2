@@ -338,40 +338,43 @@ $assets = Doctrine_Query::create()
 <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script>
 <script>
 //valida form
-var validator = $('.form-voto').validate({
-  submitHandler: function(form){
-    sendAnswer()
-  },
-  rules:{
-      opcao:{
-        required: true
-      }
-    },
-  messages:{
-    opcao: ""
-  }
-});
-
-//enviar voto
-function sendAnswer(){
-  $.ajax({
-    type: "POST",
-    dataType: "jsonp", 
-    data: $("#e<?php echo $displays["enquete"][0]->Asset->getId()?>").serialize(),
-    url: "http://app.cmais.com.br/ajax/enquetes",
-    beforeSend: function(){
-
-    },
-    success: function(data){
-      $(".form-voto").hide();
-      $("form.inativo").fadeIn("fast");
-      var i=0;
-      $.each(data, function(key, val) {
-        $('.resposta'+i).html(parseFloat(val.votes)+"%");
-        i++;
-      });
-    }
-  });
-  
+if($(".form-voto")){
+	
+	var validator = $('.form-voto').validate({
+	  submitHandler: function(form){
+	    sendAnswer()
+	  },
+	  rules:{
+	      opcao:{
+	        required: true
+	      }
+	    },
+	  messages:{
+	    opcao: ""
+	  }
+	});
+	
+	//enviar voto
+	function sendAnswer(){
+	  $.ajax({
+	    type: "POST",
+	    dataType: "jsonp", 
+	    data: $("#e<?php echo $displays["enquete"][0]->Asset->getId()?>").serialize(),
+	    url: "http://app.cmais.com.br/ajax/enquetes",
+	    beforeSend: function(){
+	
+	    },
+	    success: function(data){
+	      $(".form-voto").hide();
+	      $("form.inativo").fadeIn("fast");
+	      var i=0;
+	      $.each(data, function(key, val) {
+	        $('.resposta'+i).html(parseFloat(val.votes)+"%");
+	        i++;
+	      });
+	    }
+	  });
+	  
+	}
 }
 </script>
