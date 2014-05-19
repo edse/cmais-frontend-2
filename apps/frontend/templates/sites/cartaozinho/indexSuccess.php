@@ -182,7 +182,7 @@ $assets = Doctrine_Query::create()
           
           
           
-          <?php 
+          <?php /*
           if(date('d')>=21){
             if(date("H:i") >= "14:10"){
               
@@ -190,7 +190,7 @@ $assets = Doctrine_Query::create()
           }else{
             //echo "<div class='juiza'></div>";
           } 
-          ?>
+         */?>
           
           <div class="redes-sociais">
             <a href="https://www.facebook.com/Cartaozinho" class="face" name"Facebook" title="Facebook" target="_blank">Facebook</a>
