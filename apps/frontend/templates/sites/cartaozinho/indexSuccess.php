@@ -5,6 +5,7 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'section' => $section))
 ?>
 <?php
+if($assets[0]->is_active): 
 $assets = Doctrine_Query::create()
   ->select('a.*')
   ->from('Asset a, SectionAsset sa, Section s')
@@ -15,6 +16,7 @@ $assets = Doctrine_Query::create()
   ->andWhere('a.asset_type_id = 10')
   ->orderBy('a.id desc')
   ->execute();
+endif;
 ?>
 <?php /*
 <div class="bg-chamada">
