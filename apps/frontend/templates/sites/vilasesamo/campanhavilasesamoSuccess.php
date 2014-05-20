@@ -65,14 +65,13 @@
                   <ul id="container" class="row-fluid">
                     
                           <?php foreach($displays_enviados['enviados'] as $ai): ?>
-                          <li class="span4 element">
-                            <a class="fancybox" rel="gallery1" href="#" title="<?php echo $ai->Asset->getTitle()." - ". $ai->Asset->getDescription() ?>" aria-label="<?php echo $ai->Asset->AssetImage->getHeadline() ?>">
+                          <li class="span4 element" style="position: absolute; left: 0px; top: 0px; opacity: 1; -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);">
+                            <a class="fancybox" rel="gallery1" href="<?php echo $ai->Asset->retriveImageUrlByImageUsage('original'); ?>" title="<?php echo $ai->Asset->getTitle()." - ". $ai->Asset->getDescription() ?>" aria-label="<?php echo $ai->Asset->AssetImage->getHeadline() ?>">
                               <div class="container-image"> 
                                 <img src="<?php echo $ai->Asset->retriveImageUrlByImageUsage('image-13'); ?>" alt="<?php echo $ai->getTitle(); ?>">
                               </div>
                               <i class="icones-sprite-interna icone-participe-pequeno"></i>
                               <div><img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"><?php echo $ai->getTitle(); ?></div>
-                              <div id="conteudoTexto"><?php echo ($ai->Asset->AssetContent->render()) ?></div>
                             </a>
                           </li>
                         <?php endforeach; ?>
@@ -92,7 +91,7 @@
           <!--/primeiro grupo - ativo no mes -->
       
       
-      <h2>Aproveite e veja nossas campanhas passadas:</h2>    
+      <h2>Aproveite e veja as galerias das campanhas passadas:</h2>    
       <!--grupo - arquivo -->
       <?php
       //pegando campanhas->subsections pra listar blocos enviados
@@ -108,11 +107,11 @@
             ->andWhere('b.slug = ?', 'enviados') 
             ->andWhere('s.site_id = ?', $site->id)
             ->execute();
-        if(isset($blocks)){
+        if(isset($blocks)):
           if(count($blocks) > 0):
             $displays_enviados['enviados'] = $blocks[0]->retriveDisplays();
           endif;    
-        }
+        endif;
         ?>
         <?php 
           if(isset($displays_enviados['enviados'])):
@@ -167,8 +166,11 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".fancybox").fancybox({
-      	
-       	content:   $('#conteudoTexto').show()
+        helpers : {
+            title: {
+                type: 'over'
+            }
+          }
       });
     });
 
