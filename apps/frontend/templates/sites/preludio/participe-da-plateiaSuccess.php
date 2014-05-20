@@ -4,6 +4,10 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('channels' => $channels, 'live' => $live, 'editorials' => $editorials, 'site' => $site, 'mainSite' => $mainSite, 'coming' => $coming, 'important' => $important)) ?>
 
+<style>
+table, td, th, tfoot {border:solid 1px #000; padding:5px;text-align:left}
+</style>
+
   <!--  CAPA SITE -->
   <div id="capa-site">
     
@@ -95,13 +99,41 @@
                     <hr />
                   </div>
                   <div class="linha t1">
-                    <p>As gravações acontecerão no Centro Cultural São Paulo nos dias 02, 09, 23, 30 de outubro:<br><br>  
- 
-                    Site: <a href="http://www.centrocultural.sp.gov.br/" target="_blank" title="Centro Cultural" style="color: #ff6633; font-weight: bold;">http://www.centrocultural.sp.gov.br/</a><br>
-                    Endereço: R. Vergueiro, 1000 - Paraíso  São Paulo, 01504-000 – Perto da estação do Metrô.<br>
-                    Telefone: (11) 3397-4002<br>
-                    A plateia deve estar no local às <strong>16h30</strong>
-                    </p>
+                    <p>Prelúdio, o show de calouros de música clássica da TV brasileira, está de volta!<br>
+											O programa une a música erudita ao tradicional formato de show de calouros: instrumentistas e cantores têm a oportunidade de apresentar seu talento como solista de uma orquestra profissional regida pelo maestro e diretor artístico Júlio Medaglia.<br><br>
+											 
+											Venha participar da plateia! Confira abaixo as datas:<br> 
+										</p>
+											<table border="2">
+											<tr>
+												<td>1ª e 2ª eliminatórias</td>
+												<td>21 de junho (sábado) – Theatro São Pedro</td>
+											</tr>
+											<tr>
+												<td> 3ª e 4ª eliminatórias</td>
+												<td>27 de julho (domingo) – Theatro São Pedro </td>
+											</tr>
+											<tr>
+												<td> 5ª e 6ª eliminatórias</td>
+												<td>23 de agosto (sábado) – Theatro São Pedro</td>
+											</tr>
+											<tr>
+												<td>1ª e 2ª semifinais</td>
+												<td>18 de outubro (sábado) – Theatro São Pedro</td>
+											</tr>
+											<tr>
+												<td> Final</td>
+												<td>30 de novembro (domingo) – Sala SP </td>
+											</tr>
+											</table>
+											<br><br>
+											<p>
+											<b>Endereços:</b><br>
+											<b>Theatro São Pedro:</b> Rua Albuquerque Lins, 207 | Campos Elíseos |São Paulo-SP| CEP: 01152-000<br>
+											<b>Sala São Paulo:</b> Praça Júlio Prestes, nº 16 | Luz | São Paulo-SP| CEP 01218-020
+											</p>
+ 											
+                    
                   </div>                  
                   <form id="form-contato" name="form-contato" method="post" action="">
                   <!-- <input type="hidden" name="email" value="<?php echo $section->Site->getContactEmail() ?>"> -->
