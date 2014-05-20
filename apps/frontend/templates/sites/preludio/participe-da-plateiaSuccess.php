@@ -135,7 +135,7 @@ table, td, th, tfoot {border:solid 1px #000; padding:5px;text-align:left}
  											
                     
                   </div>                  
-                  <form id="form-contato" name="form-contato" method="post" action="">
+                  <form id="form-contato" method="post" action="http://app.cmais.com.br/index.php/<?php echo $program->Channel->getSlug()?>/<?php echo $section->Site->getSlug()?>/<?php echo $section->getSlug()?>">
                   <!-- <input type="hidden" name="email" value="<?php echo $section->Site->getContactEmail() ?>"> -->
                   <div class="linha t1">
                     <label>nome</label>
@@ -240,10 +240,14 @@ table, td, th, tfoot {border:solid 1px #000; padding:5px;text-align:left}
     <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script> 
     <script type="text/javascript">
       $(document).ready(function(){
-        $('input#enviar').click(function(){
-          $(".msgAcerto, .msgErro").hide();
-        });
-        
+      	$('input#enviar').click(function(){
+      	  $(".msgAcerto, .msgErro").hide();
+      	});
+      	
+      	var validator = $('#form-contato').validate({
+          submitHandler: function(form){
+            form.submit();
+          },/*
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
             $.ajax({
@@ -270,7 +274,7 @@ table, td, th, tfoot {border:solid 1px #000; padding:5px;text-align:left}
                 }
               }
             });
-          },
+          },*/
           rules:{
             nome:{
               required: true,
@@ -298,7 +302,7 @@ table, td, th, tfoot {border:solid 1px #000; padding:5px;text-align:left}
             email: "Digite um e-mail válido. Este campo é obrigatório.",
             cidade: "Este campo é obrigatório.",
             estado: "Este campo é obrigatório.",
-            captcha: "Digite corretamente o código que está ao lado."
+            //captcha: "Digite corretamente o código que está ao lado."
           },
           // set this class to error-labels to indicate valid fields
           success: function(label){
@@ -307,7 +311,7 @@ table, td, th, tfoot {border:solid 1px #000; padding:5px;text-align:left}
           }
         });
         
-        $('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
+        //$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
         
       });
       
@@ -318,6 +322,25 @@ table, td, th, tfoot {border:solid 1px #000; padding:5px;text-align:left}
           limitField.value = limitField.value.substring(0, limitNum);
         else
           $(textCounter).html(limitNum - limitField.value.length);
+      }
+      function getVar(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++){
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+      }
+      var success = getVar("success");
+      var error = getVar("error");
+      if(success == 1){
+        $("#form-contato").hide();
+        $(".msgAcerto").show();
+      }else if(error == 1){
+        $("#form-contato").hide();
+        $(".msgErro").show();
       }
         </script>
     <!-- scripts //-->
