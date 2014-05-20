@@ -91,7 +91,7 @@
           <!--/primeiro grupo - ativo no mes -->
       
       
-      <h2>Aproveite e veja as galerias das campanhas passadas:</h2>    
+      <h2>Aproveite e veja nossas campanhas passadas:</h2>    
       <!--grupo - arquivo -->
       <?php
       //pegando campanhas->subsections pra listar blocos enviados
@@ -107,11 +107,11 @@
             ->andWhere('b.slug = ?', 'enviados') 
             ->andWhere('s.site_id = ?', $site->id)
             ->execute();
-        if(isset($blocks)):
+        if(isset($blocks)){
           if(count($blocks) > 0):
             $displays_enviados['enviados'] = $blocks[0]->retriveDisplays();
           endif;    
-        endif;
+        }
         ?>
         <?php 
           if(isset($displays_enviados['enviados'])):
@@ -132,6 +132,7 @@
                               <div class="container-image"> 
                                 <img src="<?php echo $ai->Asset->retriveImageUrlByImageUsage('image-13'); ?>" alt="<?php echo $ai->getTitle(); ?>">
                               </div>
+                              <div id="teste"><?php echo testestestes ?></div>
                               <i class="icones-sprite-interna icone-participe-pequeno"></i>
                               <div><img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"><?php echo $ai->getTitle(); ?></div>
                             </a>
@@ -166,11 +167,7 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".fancybox").fancybox({
-        helpers : {
-            title: {
-                type: 'over'
-            }
-          }
+       content:   $('#teste').show()
       });
     });
 

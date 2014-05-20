@@ -4,6 +4,10 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial_from_folder('blocks', 'global/menu', array('channels' => $channels, 'live' => $live, 'editorials' => $editorials, 'site' => $site, 'mainSite' => $mainSite, 'coming' => $coming, 'important' => $important)) ?>
 
+<style>
+table, td, th, tfoot {border:solid 1px #000; padding:5px;text-align:left}
+</style>
+
   <!--  CAPA SITE -->
   <div id="capa-site">
     
@@ -95,15 +99,43 @@
                     <hr />
                   </div>
                   <div class="linha t1">
-                    <p>As gravações acontecerão no Centro Cultural São Paulo nos dias 02, 09, 23, 30 de outubro:<br><br>  
- 
-                    Site: <a href="http://www.centrocultural.sp.gov.br/" target="_blank" title="Centro Cultural" style="color: #ff6633; font-weight: bold;">http://www.centrocultural.sp.gov.br/</a><br>
-                    Endereço: R. Vergueiro, 1000 - Paraíso  São Paulo, 01504-000 – Perto da estação do Metrô.<br>
-                    Telefone: (11) 3397-4002<br>
-                    A plateia deve estar no local às <strong>16h30</strong>
-                    </p>
+                    <p>Prelúdio, o show de calouros de música clássica da TV brasileira, está de volta!<br>
+											O programa une a música erudita ao tradicional formato de show de calouros: instrumentistas e cantores têm a oportunidade de apresentar seu talento como solista de uma orquestra profissional regida pelo maestro e diretor artístico Júlio Medaglia.<br><br>
+											 
+											Venha participar da plateia! Confira abaixo as datas:<br> 
+										</p>
+											<table border="2">
+											<tr>
+												<td>1ª e 2ª eliminatórias</td>
+												<td>21 de junho (sábado) – Theatro São Pedro</td>
+											</tr>
+											<tr>
+												<td> 3ª e 4ª eliminatórias</td>
+												<td>27 de julho (domingo) – Theatro São Pedro </td>
+											</tr>
+											<tr>
+												<td> 5ª e 6ª eliminatórias</td>
+												<td>23 de agosto (sábado) – Theatro São Pedro</td>
+											</tr>
+											<tr>
+												<td>1ª e 2ª semifinais</td>
+												<td>18 de outubro (sábado) – Theatro São Pedro</td>
+											</tr>
+											<tr>
+												<td> Final</td>
+												<td>30 de novembro (domingo) – Sala SP </td>
+											</tr>
+											</table>
+											<br><br>
+											<p>
+											<b>Endereços:</b><br>
+											<b>Theatro São Pedro:</b> Rua Albuquerque Lins, 207 | Campos Elíseos |São Paulo-SP| CEP: 01152-000<br>
+											<b>Sala São Paulo:</b> Praça Júlio Prestes, nº 16 | Luz | São Paulo-SP| CEP 01218-020
+											</p>
+ 											
+                    
                   </div>                  
-                  <form id="form-contato" name="form-contato" method="post" action="">
+                  <form id="form-contato" method="post" action="http://app.cmais.com.br/index.php/<?php echo $program->Channel->getSlug()?>/<?php echo $section->Site->getSlug()?>/<?php echo $section->getSlug()?>">
                   <!-- <input type="hidden" name="email" value="<?php echo $section->Site->getContactEmail() ?>"> -->
                   <div class="linha t1">
                     <label>nome</label>
@@ -159,20 +191,22 @@
                     <textarea name="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
                                         <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
                   </div>
+                  <!--
                   <div class="linha t3 codigo" id="captchaimage">
-                    <label for="captcha">
-                      Confirmação
-                    </label>
+                    <label for="captcha">Confirma&ccedil;&atilde;o</label>
                     <br />
-                                        <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
-                                          <img src="http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
-                                        </a>
-                    <label class="msg" for="captcha">
-                      Digite no campo abaixo os caracteres que você vê na imagem:
-                    </label>
+                    <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
+                      <img src="http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
+                    </a>
+                    <label class="msg" for="captcha">Digite no campo abaixo os caracteres que voc&ecirc; v&ecirc; na imagem:</label>
                     <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
-                    <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                     <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
+                    <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                  </div>
+                  -->
+                  <div class="linha t3 codigo" id="captchaimage">
+                    <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
+                    <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                   </div>
                     
                 </form>
@@ -208,10 +242,14 @@
     <script type="text/javascript" src="http://cmais.com.br/portal/js/validate/jquery.validate.js"></script> 
     <script type="text/javascript">
       $(document).ready(function(){
-        $('input#enviar').click(function(){
-          $(".msgAcerto, .msgErro").hide();
-        });
-        
+      	$('input#enviar').click(function(){
+      	  $(".msgAcerto, .msgErro").hide();
+      	});
+      	
+      	var validator = $('#form-contato').validate({
+          submitHandler: function(form){
+            form.submit();
+          },/*
         var validator = $('#form-contato').validate({
           submitHandler: function(form){
             $.ajax({
@@ -238,7 +276,7 @@
                 }
               }
             });
-          },
+          },*/
           rules:{
             nome:{
               required: true,
@@ -266,7 +304,7 @@
             email: "Digite um e-mail válido. Este campo é obrigatório.",
             cidade: "Este campo é obrigatório.",
             estado: "Este campo é obrigatório.",
-            captcha: "Digite corretamente o código que está ao lado."
+            //captcha: "Digite corretamente o código que está ao lado."
           },
           // set this class to error-labels to indicate valid fields
           success: function(label){
@@ -275,7 +313,7 @@
           }
         });
         
-        $('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
+        //$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date);
         
       });
       
@@ -286,6 +324,25 @@
           limitField.value = limitField.value.substring(0, limitNum);
         else
           $(textCounter).html(limitNum - limitField.value.length);
+      }
+      function getVar(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++){
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+      }
+      var success = getVar("success");
+      var error = getVar("error");
+      if(success == 1){
+        $("#form-contato").hide();
+        $(".msgAcerto").show();
+      }else if(error == 1){
+        $("#form-contato").hide();
+        $(".msgErro").show();
       }
         </script>
     <!-- scripts //-->
