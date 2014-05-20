@@ -109,6 +109,8 @@ body.campanhas{background-color:#fee133!important;}
 .campanhas .btn-group a{font-size:12px!important; color: #434343!important; text-shadow:none; font-family:'dinmedium',Arial, Helvetica, sans-serif;}
 .campanhas .btn-group a:hover{text-decoration:underline;color: #434343!important;}
 .campanhas .btn-group a span{margin: 7px 0 0 0!important;}
+
+#conteudoTexto{display:none;width:400px;height:550px;}
 /* /campanhas */
 
 /* destaque filtro */
