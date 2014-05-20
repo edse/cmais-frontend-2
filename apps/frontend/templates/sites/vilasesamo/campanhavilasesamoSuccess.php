@@ -132,7 +132,7 @@
                               <div class="container-image"> 
                                 <img src="<?php echo $ai->Asset->retriveImageUrlByImageUsage('image-13'); ?>" alt="<?php echo $ai->getTitle(); ?>">
                               </div>
-                              <div id="teste"><?php echo html_entity_decode($ai->Asset->AssetContent->render()) ?></div>
+                              <div id="teste"><?php echo testestestes ?></div>
                               <i class="icones-sprite-interna icone-participe-pequeno"></i>
                               <div><img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"><?php echo $ai->getTitle(); ?></div>
                             </a>
