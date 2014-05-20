@@ -191,20 +191,22 @@ table, td, th, tfoot {border:solid 1px #000; padding:5px;text-align:left}
                     <textarea name="mensagem" onKeyDown="limitText(this,1000,'#textCounter');"></textarea>
                                         <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
                   </div>
+                  <!--
                   <div class="linha t3 codigo" id="captchaimage">
-                    <label for="captcha">
-                      Confirmação
-                    </label>
+                    <label for="captcha">Confirma&ccedil;&atilde;o</label>
                     <br />
-                                        <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
-                                          <img src="http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
-                                        </a>
-                    <label class="msg" for="captcha">
-                      Digite no campo abaixo os caracteres que você vê na imagem:
-                    </label>
+                    <a class="img" href="javascript:;" onclick="$('#captcha_image').attr('src', 'http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?'+new Date)" id="refreshimg" title="Clique para gerar outro código">
+                      <img src="http://app.cmais.com.br/portal/js/validate/demo/captcha/images/image.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" id="captcha_image" />
+                    </a>
+                    <label class="msg" for="captcha">Digite no campo abaixo os caracteres que voc&ecirc; v&ecirc; na imagem:</label>
                     <input class="caracteres" type="text" maxlength="6" name="captcha" id="captcha" />
-                    <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                     <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
+                    <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
+                  </div>
+                  -->
+                  <div class="linha t3 codigo" id="captchaimage">
+                    <input class="enviar" type="submit" name="enviar" id="enviar" value="enviar mensagem" style="cursor:pointer" />
+                    <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="enviando..." style="display:none" width="16px" height="16px" id="ajax-loader" />
                   </div>
                     
                 </form>
