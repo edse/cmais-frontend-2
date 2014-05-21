@@ -314,7 +314,7 @@
           $('#twitter-widget-0').css({'width':'203px','float':'right'});
           $('.pam').css('padding-left', '18px!important'); 
         },500);
-     })
+     
   
   
       //controle youtube
@@ -367,5 +367,5 @@
          playing.pauseVideo();
       });
       */  
-    
+    });
 </script>
