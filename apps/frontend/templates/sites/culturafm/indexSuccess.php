@@ -239,9 +239,9 @@
 		<?php 
 			if(isset($displays["destaque-mais-ouvidos"])):
 				foreach ($displays["destaque-mais-ouvidos"] as $k => $d): 
-					if($k < 3):
+					if($k < 2):
 						$letra = "A";
-					elseif($k < 8):					
+					elseif($k < 9):					
 						$letra = "B";
 					else:
 						$letra = "C";
