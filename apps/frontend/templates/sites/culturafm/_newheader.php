@@ -9,7 +9,7 @@
         <?php if($site->getSlug() == "culturafm"): ?>
         	<img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $program->getImageThumb() ?>">
         <?php else: ?>
-        	<img title="Rádio Cultura FM - 103,3" alt="Rádio Cultura FM - 103,3" src="http://midia.cmais.com.br/programs/11db72b2054660f3393cffc7eda03b80ef3255c6.png">	
+        	<img title="Rádio Cultura FM - 103,3" alt="Rádio Cultura FM - 103,3" src="http://midia.cmais.com.br/programs/018fa5cb9997add140dc5054e96339a523566867.png">	
        	<?php endif; ?> 	
       </a>
     </h1>
