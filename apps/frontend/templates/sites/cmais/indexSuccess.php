@@ -153,7 +153,7 @@
               if((isset($schedules)) && (count($schedules) > 0)): 
                 //MOSTRA O FLASH ENCODER ?>
               <div class="box-padrao noticia grid1" id="live_div">
-                <p class="chapeu jornalismo">Ao Vivo </p>   
+                <p class="chapeu jornalismo">No ar </p>   
                 <div id="livestream2" style="display: none;"><p>Seu browser não suporta Flash.</p></div>
                   <script> 
                     var so = new SWFObject('http://cmais.com.br/portal/js/mediaplayer/player.swf','mpl','310','205','9');

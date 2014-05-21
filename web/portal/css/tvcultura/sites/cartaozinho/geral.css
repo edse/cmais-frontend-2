@@ -81,7 +81,7 @@ body { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho
 /*.juiza:hover { background-position:-201px 0; }*/
 
 .redes-sociais { width: 244px; height:340px; position:absolute; top:91px; right:0; }
-.redes-sociais a { width: 90px; height:90px; display:block; background-repeat:no-repeat; text-indent:-9999px; position:absolute; }
+.redes-sociais a { width: 93px; height:90px; display:block; background-repeat:no-repeat; text-indent:-9999px; position:absolute; }
 .redes-sociais .face { background-image:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/btn-fb.png); top: 162px; left: 12px; z-index: 4;}
 .redes-sociais .twt { background-image:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/btn-twt.png); bottom: 7px; right: 20px; z-index: 3; }
 .redes-sociais .ytb { background-image:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/btn-ytb.png); right: 124px; top: -22px; z-index: 2; }

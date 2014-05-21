@@ -2827,8 +2827,9 @@ EOT;
 		$image = $a->retriveImageUrlByImageUsage("image-4");
 				
 		if($image != "" && $cont <= 20){
-			exec("wget --user-agent=\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4\" -O /var/frontend/web/cache/app.cmais.com.br/ginga/midia/noticias/".$cont.".jpg ".$image) ;
-			$image_local = $cont.".jpg";
+			exec("wget --user-agent=\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4\" -O /var/frontend/web/cache/app.cmais.com.br/ginga/media/images/".$cont.".jpg ".$image) ;
+			$image_local = "media/images/".$cont.".jpg";
+			imagejpeg(imagecreatefromstring(file_get_contents("/var/frontend/web/cache/app.cmais.com.br/ginga/media/images/".$cont.".jpg")), "/var/frontend/web/cache/app.cmais.com.br/ginga/media/images/".$cont.".jpg", 90);
 			$dia 	= substr($a->created_at, 8, 2);
 			$mes 	= substr($a->created_at, 5, 2);
 			$ano 	= substr($a->created_at, 0, 4);
@@ -2855,9 +2856,10 @@ EOT;
 
 	$content = utf8_decode($content);
 	
-	file_put_contents("/var/frontend/web/cache/app.cmais.com.br/ginga/midia/rss.xml", $content);
+	file_put_contents("/var/frontend/web/cache/app.cmais.com.br/ginga/rss.xml", $content);
 	chdir("/var/frontend/web/cache/app.cmais.com.br/ginga/");
-	exec("zip -r /var/frontend/web/cache/app.cmais.com.br/ginga/ginga.zip midia");
+	exec("rm ginga.zip");
+	exec("zip -r /var/frontend/web/cache/app.cmais.com.br/ginga/ginga.zip ./");
 	
 	die($content);
 	}

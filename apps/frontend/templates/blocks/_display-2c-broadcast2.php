@@ -18,6 +18,24 @@
           <?php if(isset($displays)): ?>
             <?php if(count($displays) > 0): ?>
               <?php if(strtotime($displays[0]->getDateStart()) >= strtotime(date('Y-m-d H:i:s'))): ?>
+              	
+	          <?php //SE TIVER UM PROGRAMA == LIVE 
+              $schedules = Doctrine_Query::create()
+                ->select('s.*')
+                ->from('Schedule s')
+                ->where('s.is_live = ?', 1)
+                ->andWhere('s.date_start < ?', date('Y-m-d H:i:s'))
+                ->andWhere('s.date_end > ?', date('Y-m-d H:i:s'))
+                ->andWhere('s.channel_id = ?', 1)
+                ->orderBy('s.date_start asc')
+                ->limit('1')
+                ->execute();
+								
+						?>
+						<div class="aovivoDescricao">
+	           	<h2> <?php echo $schedules[0]->title;?></h2>
+	           	<p><?php echo $schedules[0]->description;?></p>
+            </div>	
               <!-- contador -->
               <div class="contador">
                 <p style="margin-bottom: 10px;">Faltam...</p>
@@ -53,6 +71,7 @@
                
               </div>
               <!-- /contador -->
+
 
               <ul class="lista-calendario grid2">
               <?php foreach($displays as $k=>$d): ?>
