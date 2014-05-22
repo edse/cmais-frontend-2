@@ -111,6 +111,38 @@
                   <?php else: ?>
                     <?php echo html_entity_decode($asset->AssetContent->render()) ?>
                   <?php endif; ?>
+                  
+                  
+                  
+		                <?php
+		                	//Pega todas as seções do Asset
+											$all_sections = $asset->getSections();
+											
+											//Verifica se uma delas o slug de uma das seções é do site "imprensa"
+											foreach ($all_sections as $key => $secao):
+												//Pega todos os assets relacionados do tipo Download e exibe o link	
+												if($secao->Site->getSlug() == "imprensa") $asset_true_image = $asset->retriveRelatedAssetsByRelationType('Download');
+											endforeach;
+										?>
+										
+										<?php	
+											//Se sim, exibe o link para download da imagem original (High Quality)
+											if(count($asset_true_image) > 0):
+												foreach ($asset_true_image as $key => $image):
+													//Se o asset relacionado for do tipo imagem, exibe a imagem 
+													if($image->AssetType->id == 2):
+														//echo $image->AssetImage->original_file;
+														//echo "<a href=".$image->retriveImageUrlByImageUsage("original")."><img src=".$image->retriveImageUrlByImageUsage("image-3-b")." alt=". $image->getTitle() ." title=". $image->getTitle() ." style=\"width: auto\" /></a>";
+										?>
+													<p><a href="<?php echo $image->retriveImageUrlByImageUsage("original")?>" title="<?php echo $image->getTitle() ?>"> Clique aqui para baixar a imagem de divulgação</a></p>
+													
+										<?php				
+													endif;
+												endforeach;
+											endif;
+										?> 
+                  
+                  
                 </div>
                 
                 <?php $relacionados = $asset->retriveRelatedAssetsByRelationType('Asset Relacionado'); ?>
