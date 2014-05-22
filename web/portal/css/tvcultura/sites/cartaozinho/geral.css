@@ -16,7 +16,7 @@ body { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho
 #barra-site .topo-programa { height:147px; }
 #barra-site h2 { margin-top:10px; }
 #barra-site .redes { float:right; }
-#barra-site #horario { clear:both; margin-top:-60px; width:160px; }
+#barra-site #horario { clear:both; margin-top:-60px; width:420px; }
 #barra-site #horario p {color:#ebf819;}
 #miolo { margin-top:0; }
 .capa { margin-top:-10px; }
@@ -226,7 +226,6 @@ body { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho
 }
 
 #barra-site .redes .curtir {
-    width: 207px;
     float: left;
     margin-left: 0;
     text-align: left;
