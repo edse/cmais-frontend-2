@@ -131,7 +131,7 @@ $(function(){
 													//echo $image->AssetImage->original_file;
 													//echo "<a href=".$image->retriveImageUrlByImageUsage("original")."><img src=".$image->retriveImageUrlByImageUsage("image-3-b")." alt=". $image->getTitle() ." title=". $image->getTitle() ." style=\"width: auto\" /></a>";
 									?>
-												<p><a href="<?php echo $image->retriveImageUrlByImageUsage("original")?>" title="<?php echo $image->getTitle() ?>"> Clique aqui para baixar a imagem desta notícia </a></p>
+												<p><a href="<?php echo $image->retriveImageUrlByImageUsage("original")?>" title="<?php echo $image->getTitle() ?>"> Clique aqui para baixar a imagem de divulgação</a></p>
 												
 									<?php				
 												endif;
