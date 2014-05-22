@@ -6,28 +6,28 @@
 <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
 
 <script>
-	var te = null;
-	var interval = null;
-	var desativar = false;
-	
-	function checkStreamingEnd(){
-		var request = $.ajax({
-	    dataType: 'jsonp',
-	    data: "destaque_home=home",
-	    success: function(data) {
-	    	if(data.data == 2){
-					$('#live_div').html('');	//APAGA O CONTEUDO HTML
-	      	$('#videos_div').show();	//MOSTRA A DIV DE VÍDEOS
-	      	$('#live_div').remove();  //REMOVE A DIV
-	      	desativar = true;		    	//DESATIVA A CHECAGEM DO STREAMING	
-	    	}//else{
-	    		//console.log("Ainda Ativo");
-	    	//}
-	    },
-	    url: '/ajax/streamingend'
-	  });
-	  if(desativar == false) var interval = setTimeout('checkStreamingEnd()', 120000); //2 minutos
-	}
+  var te = null;
+  var interval = null;
+  var desativar = false;
+  
+  function checkStreamingEnd(){
+    var request = $.ajax({
+      dataType: 'jsonp',
+      data: "destaque_home=home",
+      success: function(data) {
+        if(data.data == 2){
+          $('#live_div').html('');  //APAGA O CONTEUDO HTML
+          $('#videos_div').show();  //MOSTRA A DIV DE VÍDEOS
+          $('#live_div').remove();  //REMOVE A DIV
+          desativar = true;         //DESATIVA A CHECAGEM DO STREAMING  
+        }//else{
+          //console.log("Ainda Ativo");
+        //}
+      },
+      url: '/ajax/streamingend'
+    });
+    if(desativar == false) var interval = setTimeout('checkStreamingEnd()', 120000); //2 minutos
+  }
   var timeout = setTimeout("location.reload(true);",600000); //10 minutos 
 </script>
 
@@ -153,7 +153,7 @@
               if((isset($schedules)) && (count($schedules) > 0)): 
                 //MOSTRA O FLASH ENCODER ?>
               <div class="box-padrao noticia grid1" id="live_div">
-                <p class="chapeu jornalismo">No ar </p>   
+                <p class="chapeu jornalismo">Ao Vivo </p>   
                 <div id="livestream2" style="display: none;"><p>Seu browser não suporta Flash.</p></div>
                   <script> 
                     var so = new SWFObject('http://cmais.com.br/portal/js/mediaplayer/player.swf','mpl','310','205','9');
@@ -203,46 +203,46 @@
               <div id='div-gpt-ad-1399575363196-0' class="box-publicidade grid1">
                  <!-- home-geral300x250 -->
                  <?php 
-									function detectMobile() {
-										$devices = array('android' => 'android', 'blackberry' => 'blackberry', 'iphone' => '(iphone|ipod|ipad)', 'opera' => '(opera mini|opera mobi)', 'palm' => '(avantgo|blazer|elaine|hiptop|palm|plucker|xiino)', 'windows' => 'windows ce; (iemobile|ppc|smartphone)', 'generic' => '(kindle|mobile|mmp|midp|o2|pda|pocket|psp|symbian|smartphone|treo|up.browser|up.link|vodafone|wap)');
-										$useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
-										$accept = strtolower($_SERVER['HTTP_ACCEPT']);
-										$mobile = false;
-										if(isset($_SERVER['HTTP_X_WAP_PROFILE']) || isset($_SERVER['HTTP_PROFILE']) || strpos($accept, "application/vnd.wap.xhtml+xml") > 0 || strpos($accept, "text/vnd.wap.wml") > 0) {
-												$mobile = "WAP";
-										}else{
-											foreach ($devices as $device => $keys) {
-												if(preg_match("/$keys/i", $useragent)) {
-													$mobile = $device;
-												}
-											}
-										}
-										return $mobile;
-									}
-								if(detectMobile()) {
-								?>
-								<script type='text/javascript'>
-									GA_googleFillSlot("Ipad-300x250");
-								</script>
-								<?php
-								}else {
-									?>
-									<!-- home-geral300x250 -->
+                  function detectMobile() {
+                    $devices = array('android' => 'android', 'blackberry' => 'blackberry', 'iphone' => '(iphone|ipod|ipad)', 'opera' => '(opera mini|opera mobi)', 'palm' => '(avantgo|blazer|elaine|hiptop|palm|plucker|xiino)', 'windows' => 'windows ce; (iemobile|ppc|smartphone)', 'generic' => '(kindle|mobile|mmp|midp|o2|pda|pocket|psp|symbian|smartphone|treo|up.browser|up.link|vodafone|wap)');
+                    $useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
+                    $accept = strtolower($_SERVER['HTTP_ACCEPT']);
+                    $mobile = false;
+                    if(isset($_SERVER['HTTP_X_WAP_PROFILE']) || isset($_SERVER['HTTP_PROFILE']) || strpos($accept, "application/vnd.wap.xhtml+xml") > 0 || strpos($accept, "text/vnd.wap.wml") > 0) {
+                        $mobile = "WAP";
+                    }else{
+                      foreach ($devices as $device => $keys) {
+                        if(preg_match("/$keys/i", $useragent)) {
+                          $mobile = $device;
+                        }
+                      }
+                    }
+                    return $mobile;
+                  }
+                if(detectMobile()) {
+                ?>
+                <script type='text/javascript'>
+                  GA_googleFillSlot("Ipad-300x250");
+                </script>
+                <?php
+                }else {
+                  ?>
+                  <!-- home-geral300x250 -->
                   
                   <script type='text/javascript'>
                   googletag.cmd.push(function() { googletag.display('div-gpt-ad-1399575363196-0'); });
                   </script>
                   <?php
                   /*
-									<script type='text/javascript'>
-										GA_googleFillSlot("home-geral300x250");
-									</script>
+                  <script type='text/javascript'>
+                    GA_googleFillSlot("home-geral300x250");
+                  </script>
                    */
                    ?>
                     
-									<?php	
-								}
-							?>
+                  <?php 
+                }
+              ?>
               </div>
               <!-- / BOX PUBLICIDADE -->
 
@@ -256,8 +256,8 @@
                
               <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'url' => $url)) ?>
               <?php //include_partial_from_folder('blocks','global/twitter-1c', array('site' => $site)) ?>
-        	  
-          	  <!-- BOX PUBLICIDADE -->
+            
+              <!-- BOX PUBLICIDADE -->
               
                 <?php
                 /*
@@ -304,5 +304,69 @@
       
     </div>
     <!-- / CAPA SITE -->
+    <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> 
+    <script>
+    $(document).ready(function(){
+      
+      //centralizando as redes
+      setInterval(function(){
+        $('#___plusone_0').css('width', '75px');
+        $('#twitter-widget-0').css({'width':'203px','float':'right'});
+        $('.pam').css('padding-left', '18px!important'); 
+      },500);
+   })
 
+
+    //controle youtube
+    
+     
+    var cont = 0;
+    var player = new Array();
+    var players_ids = new Array();
+    var player;
+    var playing;
+    
+    
+    $('.carrossel-videos .capa-video').remove();
+    setTimeout(function(){
+      $('.carrossel-videos .video iframe').each(function(i){
+        if($(this).attr('src').indexOf("youtube") != -1){
+          cont++;
+          $(this).attr("id","player"+cont);
+          onYouTubeIframeAPIReadyCmais("player"+cont , cont)
+          //console.log($(this).attr('id'));
+         }
+      });
+    },3000);
+    
+    onYouTubeIframeAPIReadyCmais = function(obj, cont) { 
+      console.log("start"+cont);
+      //console.log("obj:"+obj);
+      //console.log("contador:"+cont);
+      player[cont] = new YT.Player(obj);
+      console.log("player:"+player[cont]);
+       
+      player[cont].addEventListener("onStateChange", function(res){
+        if(res.data == 1){
+          playing = res.target;
+          console.log('playing:'+playing);
+          alert('playing');
+        }
+        if(res.data == 0){
+          alert("stop");
+        }
+      });
+            
+      
+    }
+    
+    //pausando o video
+    /*
+    $('.carrossel-videos .pag-bola').click(function() {
+      if(playing)
+       playing.pauseVideo();
+    });
+    */  
+    
 </script>
+

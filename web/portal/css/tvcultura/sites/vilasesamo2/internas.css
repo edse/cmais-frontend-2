@@ -110,7 +110,7 @@ body.campanhas{background-color:#fee133!important;}
 .campanhas .btn-group a:hover{text-decoration:underline;color: #434343!important;}
 .campanhas .btn-group a span{margin: 7px 0 0 0!important;}
 
-#conteudoTexto{display:none;width:400px;height:550px;}
+#conteudoTexto{display:none;width:300px;height:550px;margin:0 auto}
 /* /campanhas */
 
 /* destaque filtro */

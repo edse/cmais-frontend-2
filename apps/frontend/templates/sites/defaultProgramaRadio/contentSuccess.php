@@ -394,6 +394,7 @@ $(function(){
       </div>
       <!-- /MIOLO -->
     </div>
-    <!-- / CAPA SITE -->
     
+    <!-- / CAPA SITE -->
+  </div>
 
