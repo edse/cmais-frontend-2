@@ -817,7 +817,7 @@ $(document).ready(function(){
                 
                 
                 var datas = [
-                "<strong style='color:yellow'>Institucional</strong> - Atendimento Central, Área Técnica, Venda de Produtos, Área de Afiliadas, Recrutamento e Seleção.<br/><strong style='color:yellow'>Emissora (TV ou Rádio)</strong> – Use para contato com programas da grade de programação.<br/><strong style='color:yellow'>Portal Cmais</strong> – Contato e relatar problemas nos sites do portal.",
+                "<strong>Institucional</strong> - Atendimento Central, Área Técnica, Venda de Produtos, Área de Afiliadas, Recrutamento e Seleção.<br/><strong>Emissora (TV ou Rádio)</strong> – Use para contato com programas da grade de programação.<br/><strong>Portal Cmais</strong> – Contato e relatar problemas nos sites do portal.",
                 "Escolha nas listas:  interesse ou  programa",
                 "Categorize o  assunto",
                 "d",
@@ -840,9 +840,7 @@ $(document).ready(function(){
               		$("#form4 .control-group select").each(function(index){
               		  if(index>=5){
               		    $(this).parent().append('<i class=" icon-question-sign example" data-toggle="tooltip" data-placement="right" title="'+datas[index - 5]+'" data-original-title="'+datas[index]+'"></i>');
-                			$(".example").tooltip({
-                      delay: { show: 500, hide: 200000000 }
-                    });
+                			$(".example").tooltip();
               			}
               		})
 
