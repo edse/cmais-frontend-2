@@ -8,7 +8,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $to = "georgia.catarina@gmail.com";
     $email = strip_tags($_REQUEST['email']);
     $name = strip_tags($_REQUEST['nome']);
-    $campaign = strip_tags($_REQUEST['campanha']);
     $from = "{$name} <{$email}>";
     $subject = '[Cartãozinho][Copa] '.$name.' <'.$email.'>';
     
@@ -61,9 +60,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	    }
 	  }else{
 	   	if(sendMailAtt($to, $from, $subject, $message)) {
-	        header("Location: ".$_REQUEST['urlElement']."?success=2#carrossel-interna");
+	        header("Location: ".$_REQUEST['urlElement']."?success=2#esquerda");
 			}else{
-	    	header("Location: ".$_REQUEST['urlElement']."?error=1#carrossel-interna");
+	    	header("Location: ".$_REQUEST['urlElement']."?error=1#esquerda");
 	        //die("3");
 	      
 	    }
