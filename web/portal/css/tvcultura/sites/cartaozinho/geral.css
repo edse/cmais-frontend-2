@@ -203,11 +203,11 @@ body { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho
 /*.envie-sua-sugestao {  position:absolute; top:70px; left:54px; background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/sugestao.png) no-repeat; width:240px; height:174px;  }*/
 .envie-sua-sugestao {  position:absolute; background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/enquete-gabi.png) no-repeat;top: 29px;left: 218px;width: 394px;height: 118px; z-index: 100000; }
 
-.mande-seu-video { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/mande-sua-foto.png) no-repeat; width: 525px; height:156px; margin: 78px 223px 0; display: block;}
+.mande-seu-video { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/mande-sua-foto.png) no-repeat; width: 535px; height:156px; margin: 78px 223px 0; display: block;}
 .mande-seu-video p { padding-top:30px; text-transform:uppercase; color:#fafa88; font-weight:bold;  }
 .mande-seu-video:hover { text-decoration:none; }
 
-.mande-sua-foto-interna {background: url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/mande-sua-foto.png) no-repeat;width: 525px;height: 156px;margin: 1% 9% 2%;display: block;}
+.mande-sua-foto-interna {background: url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/mande-sua-foto.png) no-repeat;width: 535px;height: 156px;margin: 1% 9% 2%;display: block;}
 
 /*.contato.video h3 { background:#2B8DB2 url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/txt-envievideo.png) no-repeat 0 0; }*/
 .regulamento {    border: 1px solid #DFDFDF;    float: left;    height: 206px;    overflow-x: hidden;    overflow-y: scroll;    padding: 10px 0; background:#fff; }
