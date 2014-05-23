@@ -47,8 +47,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	      
 	      if(sendMailAtt($to, $from, $subject, $message, $attach)) {
 	        if (unlink($_FILES['datafile']['tmp_name'])) {
-	          header("Location: ".$_REQUEST['urlElement']."?success=2#esquerda");
-	          die("0");
+	        	die("Location: ".$_REQUEST['urlElement']."?success=1#esquerda");
+	          header("Location: ".$_REQUEST['urlElement']."?success=1#esquerda");
+	          
 	        }
 	      }
 	      else{
@@ -60,8 +61,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	    }
 	  }else{
 	   	if(sendMailAtt($to, $from, $subject, $message)) {
+	   			die("Location: ".$_REQUEST['urlElement']."?success=2#esquerda");
 	        header("Location: ".$_REQUEST['urlElement']."?success=2#esquerda");
-				die("2");
+				
 			}else{
 	    	header("Location: ".$_REQUEST['urlElement']."?error=1#esquerda");
 	        die("3");
