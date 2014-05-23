@@ -70,7 +70,7 @@
 
       <!-- MIOLO -->
       <div id="miolo">
-      	<a href="http://cmais.com.br/cartaozinho/mande-sua-foto" title="mande sua foto" class="mande-sua-foto-interna">
+      	<a href="/cartaozinho/mande-sua-foto" title="mande sua foto" class="mande-sua-foto-interna">
          <!--p>Entre para a torcida do Cartãozinho</p-->
         </a>
         

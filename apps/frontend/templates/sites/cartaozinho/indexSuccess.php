@@ -157,7 +157,7 @@ $assets = Doctrine_Query::create()
          <?php if(isset($displays["enquete"])):?>
           <?php if(count($displays["enquete"])==0):?>
           	
-          	 <a href="http://cmais.com.br/cartaozinho/mande-sua-foto" title="Mande sua Foto" class="mande-seu-video">
+          	 <a href="/cartaozinho/mande-sua-foto" title="Mande sua Foto" class="mande-seu-video">
          		 	<!--p>Entre para a torcida do Cartãozinho</p-->
          		 </a>
           
