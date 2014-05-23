@@ -47,6 +47,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	      
 	      if(sendMailAtt($to, $from, $subject, $message, $attach)) {
 	        if (unlink($_FILES['datafile']['tmp_name'])) {
+	        	echo "Location: ".$_REQUEST['urlElement']."?success=1#esquerda";
 	          header("Location: ".$_REQUEST['urlElement']."?success=1#esquerda");
 	          //die("0");
 	        }
