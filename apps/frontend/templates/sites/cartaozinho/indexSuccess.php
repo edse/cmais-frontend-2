@@ -34,7 +34,7 @@ $assets = Doctrine_Query::create()
               <style>
                 .menu-gabi{width:559px; float:right;}
                 .horario-gabi{margin-top:12px!important; margin-right:6px;}
-                .juiza-nova{display:block;width:312px; height:486px; position:absolute; top:71px; left: 0; background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/gabi-estreia.png) no-repeat;}
+                .juiza-nova{display:block;width:312px; height:486px; position:absolute; top:71px; left: 0; background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/gabi-estreia-copa.png) no-repeat;}
                 .texto-novo{display:block; width:314px; height:66px; position:absolute; top:68px; left:277px; background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/gabi-dona-da-bola.png) no-repeat;}
               </style>
               
@@ -156,6 +156,10 @@ $assets = Doctrine_Query::create()
               
          <?php if(isset($displays["enquete"])):?>
           <?php if(count($displays["enquete"])==0):?>
+          	
+          	 <a href="http://cmais.com.br/cartaozinho/album-da-torcida" title="Álbum da torcida" class="mande-seu-video">
+         		 	<!--p>Entre para a torcida do Cartãozinho</p-->
+         		 </a>
           
             <?php if(isset($displays["destaque-principal"])): ?>
               <?php if(count($displays["destaque-principal"])>0): ?>
@@ -170,13 +174,12 @@ $assets = Doctrine_Query::create()
             <?php endif;?>
           </div>
           
-          <a href="/cartaozinho/mande-seu-video" title="Mande seu vídeo" class="mande-seu-video">
-          <p>entre em campo no cartãozinho:</p>
+         
          
          <?php endif;?>
         <?php endif;?>
         
-          </a>
+       
           
           
           
