@@ -47,8 +47,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	      
 	      if(sendMailAtt($to, $from, $subject, $message, $attach)) {
 	        if (unlink($_FILES['datafile']['tmp_name'])) {
-	        	die("Location: ".$_REQUEST['urlElement']."?success=1#esquerda");
-	          header("Location: ".$_REQUEST['urlElement']."?success=1#esquerda");
+	        	//die("Location: http://172.20.16.219/cartaozinho/mande-sua-foto?success=1#esquerda");
+	          header("Location:http://172.20.16.219/cartaozinho/mande-sua-foto?success=1#esquerda");
 	          
 	        }
 	      }
