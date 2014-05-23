@@ -33,13 +33,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	    //die($file_mime_type);
 	    if (!in_array($file_mime_type, array("image/gif", "image/png", "image/jpg"))) {
 	      if (unlink($_FILES['datafile']['tmp_name'])) {
-	        header("Location: ".$_REQUEST['urlElement']."?error=2#esquerda");
+	        header("Location:http://cmais.com.br/cartaozinho/mande-sua-foto?error=2#esquerda");
 	        //die("1");
 	      }
 	    }
 	    else if ($file_size > 15728640) { // 15MB
 	      if (unlink($_FILES['datafile']['tmp_name'])) {
-	        header("Location: ".$_REQUEST['urlElement']."?error=3#esquerda");
+	        header("Location:http://cmais.com.br/cartaozinho/mande-sua-foto?error=3#esquerda");
 	        //die("2");
 	      }
 	    }
@@ -48,24 +48,24 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	      if(sendMailAtt($to, $from, $subject, $message, $attach)) {
 	        if (unlink($_FILES['datafile']['tmp_name'])) {
 	        	//die("Location: http://172.20.16.219/cartaozinho/mande-sua-foto?success=1#esquerda");
-	          header("Location:http://172.20.16.219/cartaozinho/mande-sua-foto?success=2#esquerda");
+	          header("Location:http://cmais.com.br/cartaozinho/mande-sua-foto?success=2#esquerda");
 	          
 	        }
 	      }
 	      else{
 	        if (unlink($_FILES['datafile']['tmp_name'])) {
-	          header("Location: ".$_REQUEST['urlElement']."?error=1#esquerda");
+	          header("Location:http://cmais.com.br/cartaozinho/mande-sua-foto?error=1#esquerda");
 	          //die("3");
 	        }
 	      }
 	    }
 	  }else{
 	   	if(sendMailAtt($to, $from, $subject, $message)) {
-	   			die("Location: ".$_REQUEST['urlElement']."?success=2#esquerda");
-	        header("Location: ".$_REQUEST['urlElement']."?success=2#esquerda");
+	   			die("Location:http://cmais.com.br/cartaozinho/mande-sua-foto?success=2#esquerda");
+	        header("Location:http://cmais.com.br/cartaozinho/mande-sua-foto?success=2#esquerda");
 				
 			}else{
-	    	header("Location: ".$_REQUEST['urlElement']."?error=1#esquerda");
+	    	header("Location:http://cmais.com.br/cartaozinho/mande-sua-foto?error=1#esquerda");
 	        die("3");
 	      
 	    }
