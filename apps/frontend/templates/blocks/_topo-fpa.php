@@ -81,7 +81,7 @@
         <b class="seta-hover <?php echo $ativo?>"></b>
         <ul class="dropdown-menu ">
          <li><a href="/cedoc" title="CEDOC">CEDOC</a></li>
-         <li><a href="/fpa/decada-60" title="Linha do Tempo">Linha do Tempo</a></li>
+         <!--li><a href="/fpa/decada-60" title="Linha do Tempo">Linha do Tempo</a></li-->
         </ul>
       </li>
       <li class="dropdown " id="emissoras">
