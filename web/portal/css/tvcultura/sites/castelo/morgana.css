@@ -13,5 +13,5 @@ body { background:#a6b94d; min-height: 970px; }
 .gif-adelaide{width: 55px;height: 57px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-adelaide.gif) no-repeat;position: absolute;top: 19px;left: 78px;}
 
 .botao-valdirene{position: absolute;top: 141px;left: 249px;width: 81px;height: 334px;}
-.botao-valdirene-over{position: absolute;top: 102px;left: 219px;width: 118px;height: 383px; background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-valdirene-over.png) repeat-x;}
+.botao-valdirene-over{position: absolute;top: 102px;left: 219px;width: 118px;height: 383px; /*background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/img-personagem-valdirene-over.png) repeat-x;*/}
 .gif-valdirene{width: 97px;height: 209px;background: url(http://cmais.com.br/portal/images/capaPrograma/castelo/gif-personagem-valdirene.gif) no-repeat;top: 128px;position: absolute;left: -14px;}
