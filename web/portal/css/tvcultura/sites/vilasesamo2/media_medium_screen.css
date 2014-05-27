@@ -271,6 +271,8 @@ footer .copyright {height: 30px;margin-left: 2%;}
   .personagens .filtro .inner {width: 100%;height: auto;}
   .personagens .desc-personagem {float: right;}
   .personagens #carrossel-interna-personagem .container-itens {top: 36%;}
+  .fancybox-skin.c1 {background-size: 80%!important;}
+  .campanhasuccess .todos-itens #container li a, .todos-itens #container li.jogos a, .todos-itens #container li.atividades a, .todos-itens #container li.videos a {min-height: 250px!important;}
 }
 
 @media screen and (min-width:501px) and (max-width:600px) {
@@ -294,7 +296,7 @@ footer .copyright {height: 30px;margin-left: 2%;}
 
 }
 @media screen and (min-width:501px) and (max-width:768px) {
-  .todos-itens #container li.jogos a, .todos-itens #container li.atividades a, .todos-itens #container li.videos a {min-height: 250px!important;}
+  .campanhasuccess .todos-itens #container li a, .todos-itens #container li.jogos a, .todos-itens #container li.atividades a, .todos-itens #container li.videos a {min-height: 250px!important;}
 	
 }
 

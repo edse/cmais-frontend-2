@@ -112,7 +112,7 @@ body.campanhas{background-color:#fee133!important;}
 
 .conteudoTexto{display:none;width:300px;margin:40% 5%;height: 300px;}
 .conteudoTexto p{/* display:none; */width: 95%;margin:40% 5%;height: 300px;}
-.fancybox-skin.c1  {position: relative;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/folha.png) no-repeat center!important;box-shadow: none!important;height: 540px!important;width:360px!important;}
+.fancybox-skin.c1  {position: relative;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/folha.png) no-repeat center;box-shadow: none!important;height: 540px;width:360px;}
 .fancybox-outer, .fancybox-inner {position: relative;padding: 0;margin: 0 auto!important;width: 95%!important;}
 /* /campanhas */
 
