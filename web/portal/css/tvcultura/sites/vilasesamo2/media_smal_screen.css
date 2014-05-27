@@ -491,3 +491,14 @@ a{text-decoration:underline!important;}
 }
 
 #voltar-topo-pagina.categorias span{ border-bottom: 2px solid #fbc227;border-top: 2px solid #fbc227; color: #00aa52; text-decoration: underline;}
+
+
+.conteudoTexto{display:none;width: 270px;}
+.conteudoTexto p{line-height: 20px;margin:20% auto;width: 100%;}
+
+.fancybox-skin.c1  {position: relative;background: url(http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/folha.png) no-repeat center!important;box-shadow: none!important;background-size: 94%!important;height: 340px!important;}
+
+.fancybox-nav span {top: 40%!important;}
+
+
+

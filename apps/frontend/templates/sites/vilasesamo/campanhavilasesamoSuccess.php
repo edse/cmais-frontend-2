@@ -64,17 +64,43 @@
                 <div class="accordion-inner">
                   <ul id="container" class="row-fluid">
                     
-                          <?php foreach($displays_enviados['enviados'] as $ai): ?>
-                          <li class="span4 element" style="position: absolute; left: 0px; top: 0px; opacity: 1; -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);">
-                            <a class="fancybox" rel="gallery1" href="<?php echo $ai->Asset->retriveImageUrlByImageUsage('original'); ?>" title="<?php echo $ai->Asset->getTitle()." - ". $ai->Asset->getDescription() ?>" aria-label="<?php echo $ai->Asset->AssetImage->getHeadline() ?>">
+                         <?php foreach($displays_enviados['enviados'] as $k=>$ai): ?>
+                          <li class="span4 element">
+                            <a id="texto<?php echo $k ?>" data-number="<?php echo $k?>" class="fancybox texto" rel="gallery1" href="#" title="<?php echo $ai->Asset->getDescription() ?>" aria-label="<?php echo $ai->Asset->getDescription() ?>">
                               <div class="container-image"> 
-                                <img src="<?php echo $ai->Asset->retriveImageUrlByImageUsage('image-13'); ?>" alt="<?php echo $ai->getTitle(); ?>">
+                                <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/thumb.jpg" alt="">
                               </div>
                               <i class="icones-sprite-interna icone-participe-pequeno"></i>
                               <div><img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"><?php echo $ai->getTitle(); ?></div>
+                              <div class="conteudoTexto"><?php echo $ai->Asset->AssetContent->render()?></div>
                             </a>
                           </li>
+                          
                         <?php endforeach; ?>
+                        
+			                <script>
+											  //$(".fancybox").fancybox();
+											  setTimeout(function(){
+											  	$('.fancybox.texto').each(function(i){
+											      var $i = $('#texto'+i+' .conteudoTexto');
+											      console.log($('#texto'+i+' .conteudoTexto'));
+														  $("#texto"+i).fancybox({
+													       	content: $i,
+													       	beforeShow : function() {
+													         $('.fancybox-skin').addClass('c1');
+													   		 },
+													   		 helpers : {
+													            title: {
+													                type: 'over'
+													            }
+													          }
+													      });
+														});
+														
+														console.log("fancy aplicado");
+											    },3000); 
+											     
+											</script>
                       
                   </ul>
                 </div>
@@ -91,7 +117,7 @@
           <!--/primeiro grupo - ativo no mes -->
       
       
-      <h2>Aproveite e veja as galerias das campanhas passadas:</h2>    
+      <h2>Aproveite e veja nossas campanhas passadas:</h2>    
       <!--grupo - arquivo -->
       <?php
       //pegando campanhas->subsections pra listar blocos enviados
@@ -107,11 +133,11 @@
             ->andWhere('b.slug = ?', 'enviados') 
             ->andWhere('s.site_id = ?', $site->id)
             ->execute();
-        if(isset($blocks)):
+        if(isset($blocks)){
           if(count($blocks) > 0):
             $displays_enviados['enviados'] = $blocks[0]->retriveDisplays();
           endif;    
-        endif;
+        }
         ?>
         <?php 
           if(isset($displays_enviados['enviados'])):
@@ -124,11 +150,12 @@
                 </a>
               </div>
               <div id="collapse<?php echo $k ?>" class="accordion-body collapse" style="height: 0px;">
-                <div class="accordion-inner">
+                <div class="accordion-inner ">
                   <ul id="container<?php echo $k ?>" class="row-fluid">
                           <?php foreach($displays_enviados['enviados'] as $ai): ?>
-                          <li class="span4 element" style="position: absolute; left: 0px; top: 0px; opacity: 1; -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);">
-                            <a class="fancybox" rel="gallery1" href="<?php echo $ai->Asset->retriveImageUrlByImageUsage('original'); ?>" title="<?php echo $ai->Asset->getTitle()." - ". $ai->Asset->getDescription() ?>" aria-label="<?php echo $ai->Asset->AssetImage->getHeadline() ?>">
+                          	
+                          <li class="span4 element" >
+                            <a class="fancybox2" rel="gallery1" href="<?php echo $ai->Asset->retriveImageUrlByImageUsage('original'); ?>" title="<?php echo $ai->Asset->getTitle()." - ". $ai->Asset->getDescription() ?>" aria-label="<?php echo $ai->Asset->AssetImage->getHeadline() ?>">
                               <div class="container-image"> 
                                 <img src="<?php echo $ai->Asset->retriveImageUrlByImageUsage('image-13'); ?>" alt="<?php echo $ai->getTitle(); ?>">
                               </div>
@@ -164,15 +191,20 @@
 <!--/content-->
           
 <script type="text/javascript">
-    $(document).ready(function() {
-      $(".fancybox").fancybox({
+		  
+      $(".fancybox2").fancybox({
+      	beforeShow : function() {
+         $('.fancybox-skin').css({'background' :'#fff'});
+   		 },
         helpers : {
             title: {
                 type: 'over'
             }
           }
       });
-    });
+      //$(".todos-itens li").addClass("campanhasuccess");
+      
+
 
     var $containerA = $("#container0, #container1, #container2, #container3, #container4, #container5, #container6, #container7");
    
